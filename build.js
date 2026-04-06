@@ -371,7 +371,40 @@ async function main() {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>日语语法笔记 – N5→N2</title>
+<title>Japanese Grammar Notes | 日语语法笔记 – N5→N2 in 8 Weeks</title>
+<meta name="description" content="Free structured Japanese grammar notes from N5 to N2 in 8 weeks. Bilingual (Japanese + Chinese) with conjugation rules, example sentences, and spaced repetition.">
+<meta name="keywords" content="Japanese grammar, JLPT N2, N5, N4, N3, 日语语法, 日本語文法, grammar notes, spaced repetition, 语法笔记">
+<link rel="canonical" href="https://ralphbupt.github.io/japanese-grammar/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Japanese Grammar Notes | 日语语法笔记 – N5→N2">
+<meta property="og:description" content="Free structured Japanese grammar notes from N5 to N2 in 8 weeks. Bilingual with examples and spaced repetition.">
+<meta property="og:url" content="https://ralphbupt.github.io/japanese-grammar/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Japanese Grammar Notes | 日语语法笔记 – N5→N2">
+<meta name="twitter:description" content="Free structured Japanese grammar notes from N5 to N2 in 8 weeks.">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Japanese Grammar Notes – N5 to N2",
+  "description": "Free structured Japanese grammar notes covering JLPT N5 to N2 in 8 weeks, with bilingual explanations, example sentences, and spaced repetition.",
+  "provider": { "@type": "Person", "name": "Ralphbupt" },
+  "inLanguage": ["ja", "zh-CN"],
+  "educationalLevel": "Beginner to Intermediate",
+  "about": { "@type": "Thing", "name": "Japanese Language Grammar" },
+  "isAccessibleForFree": true,
+  "url": "https://ralphbupt.github.io/japanese-grammar/"
+}
+</script>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1KNQTFN1R"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D1KNQTFN1R');</script>
 <style>
@@ -446,7 +479,33 @@ Allow: /
 Sitemap: ${SITE}sitemap.xml
 `, "utf-8");
 
-  console.log(`Done! Output: ${OUT}, sitemap.xml, robots.txt`);
+  fs.writeFileSync(path.join(__dirname, "dist/llms.txt"), `# Japanese Grammar Notes
+
+> Free, structured Japanese grammar notes covering JLPT N5 to N2 in 8 weeks.
+> Bilingual: Japanese + Chinese. Includes conjugation rules, 3+ example sentences per grammar point, comparison with similar grammar, and spaced repetition tracking.
+
+## URL
+https://ralphbupt.github.io/japanese-grammar/
+
+## Content Overview
+- Week 1-2: N5 grammar (basic sentence patterns, verb conjugation, て form, ない form, た form, adjectives, conditionals, potential/passive/volitional, conjecture)
+- Week 3-4: N4 grammar (causative, giving/receiving, ように, ことにする/なる, ばかり/ところ/てしまう, passive details, わけだ/ものだ)
+- Week 5-6: N3 grammar (in progress)
+- Week 7-8: N2 grammar (in progress)
+
+## Format
+Single-page static site. Each grammar point includes:
+- Conjugation rules (接続)
+- Example sentences (例句)
+- Comparison with similar grammar (辨析)
+- Practice exercises
+- Spaced repetition checklist
+
+## License
+CC BY 4.0
+`, "utf-8");
+
+  console.log(`Done! Output: ${OUT}, sitemap.xml, robots.txt, llms.txt`);
 }
 
 // ─── CSS ───
