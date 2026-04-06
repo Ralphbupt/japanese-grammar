@@ -425,7 +425,28 @@ ${JS}
 
   fs.mkdirSync(path.join(__dirname, "dist"), { recursive: true });
   fs.writeFileSync(path.join(__dirname, OUT), fullHtml, "utf-8");
-  console.log(`Done! Output: ${OUT}`);
+
+  const SITE = "https://ralphbupt.github.io/japanese-grammar/";
+  const today = new Date().toISOString().slice(0, 10);
+
+  fs.writeFileSync(path.join(__dirname, "dist/sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>${SITE}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
+`, "utf-8");
+
+  fs.writeFileSync(path.join(__dirname, "dist/robots.txt"), `User-agent: *
+Allow: /
+
+Sitemap: ${SITE}sitemap.xml
+`, "utf-8");
+
+  console.log(`Done! Output: ${OUT}, sitemap.xml, robots.txt`);
 }
 
 // ─── CSS ───
