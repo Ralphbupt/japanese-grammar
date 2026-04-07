@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const { execSync } = require("child_process");
 const { Marked } = require("marked");
 const KuroshiroMod = require("kuroshiro");
 const Kuroshiro = KuroshiroMod.default || KuroshiroMod;
@@ -38,6 +39,13 @@ const JA_TITLES = {
 };
 
 // ─── Helpers ───
+function gitLastMod(filePath) {
+  try {
+    const date = execSync(`git log -1 --format=%aI -- "${filePath}"`, { encoding: "utf-8" }).trim();
+    return date ? date.slice(0, 10) : null;
+  } catch { return null; }
+}
+
 function discoverFiles() {
   const groups = [];
   for (const { dir, label } of GRAMMAR_DIRS) {
@@ -363,7 +371,7 @@ async function main() {
       articlesHtml.push(
         `<article id="${file.id}" class="lesson">${html}</article>`
       );
-      lessonPages.push({ id: file.id, title, sidebarTitle, html, jaTitle: jaTitle || shortTitle });
+      lessonPages.push({ id: file.id, title, sidebarTitle, html, jaTitle: jaTitle || shortTitle, filePath: file.path });
     }
   }
 
@@ -579,17 +587,19 @@ var disqus_config = function () {
   }
 
   // ─── Sitemap ───
+  const homeMod = gitLastMod("schedule.md") || today;
   const sitemapUrls = [`  <url>
     <loc>${SITE}</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>daily</changefreq>
+    <lastmod>${homeMod}</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>`];
   for (const lesson of lessonPages) {
+    const mod = gitLastMod(lesson.filePath) || today;
     sitemapUrls.push(`  <url>
     <loc>${SITE}${lesson.id}/</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>${mod}</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>`);
   }
