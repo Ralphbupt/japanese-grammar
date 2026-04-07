@@ -431,6 +431,7 @@ ${CSS}
 </nav>
 <main id="content">
   ${articlesHtml.join("\n  ")}
+  <div id="disqus_thread"></div>
 </main>
 <nav id="toc-panel"></nav>
 <div id="bottom-controls">
@@ -459,6 +460,18 @@ ${CSS}
 </div>
 <script>
 ${JS}
+</script>
+<script>
+var disqus_config = function () {
+  this.page.url = 'https://ralphbupt.github.io/japanese-grammar/';
+  this.page.identifier = 'japanese-grammar-main';
+};
+(function() {
+  var d = document, s = d.createElement('script');
+  s.src = 'https://japanese-4.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
 </script>
 </body>
 </html>`;
@@ -653,6 +666,7 @@ body.sidebar-collapsed #content {
 }
 .lesson { display: none; }
 .lesson.active { display: block; }
+#disqus_thread { margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border); }
 
 /* Right TOC */
 #toc-panel {
