@@ -38,6 +38,28 @@ const JA_TITLES = {
   day20: "N4文法総復習",
 };
 
+// SEO keywords per lesson (Japanese, Chinese, English)
+const LESSON_KEYWORDS = {
+  day00: "五十音図, 五十音图, hiragana, katakana, Japanese alphabet, 平仮名, 片仮名, 日语入门",
+  day01: "です, は, が, 助詞, 基础句型, Japanese particles, desu, basic sentence patterns, JLPT N5",
+  day02: "ます形, て形, 动词变形, masu form, te form, verb conjugation, 音便, 一类动词, JLPT N5",
+  day03: "ないで, なくて, なければならない, ない形, negative form, てください, てもいい, てはいけない, JLPT N5",
+  day04: "た形, 形容词活用, い形容词, な形容词, ta form, adjective conjugation, より, 比較, JLPT N5",
+  day05: "と, ば, たら, なら, 条件表現, conditional, Japanese conditionals, もし, JLPT N5",
+  day06: "可能形, 受身形, 意向形, potential form, passive form, volitional form, られる, JLPT N5",
+  day07: "でしょう, そうだ, ようだ, らしい, 推測, conjecture, hearsay, appearance, JLPT N5",
+  day08: "N5文法, N5 grammar review, 総復習, JLPT N5 summary",
+  day12: "使役形, 使役受身形, させる, させられる, causative, causative passive, JLPT N4",
+  day13: "あげる, もらう, くれる, 授受表現, てあげる, てもらう, てくれる, giving receiving, JLPT N4",
+  day14: "ようにする, ようになる, ように, ないようにする, so that, JLPT N4",
+  day15: "ことにする, ことになる, はずだ, decide to, expected to, JLPT N4",
+  day16: "ばかり, ところだ, てしまう, ておく, てある, just did, about to, JLPT N4",
+  day17: "受身形, という, ということ, passive detailed, called, indirect passive, JLPT N4",
+  day18: "て以来, にかけて, において, since, from to, in terms of, JLPT N4 N3",
+  day19: "わけだ, ものだ, わけがない, ものではない, naturally, used to, JLPT N4 N3",
+  day20: "N4文法, N4 grammar review, 総復習, JLPT N4 summary",
+};
+
 // ─── Helpers ───
 function gitLastMod(filePath) {
   try {
@@ -507,6 +529,7 @@ var disqus_config = function () {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${lessonTitle}</title>
 <meta name="description" content="${lessonDesc.replace(/"/g, '&quot;')}">
+<meta name="keywords" content="${LESSON_KEYWORDS[lesson.id] || ''}">
 <link rel="canonical" href="${lessonUrl}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="${lessonTitle}">
