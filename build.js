@@ -302,6 +302,7 @@ async function main() {
 
   const sidebarHtml = [];
   const articlesHtml = [];
+  const lessonPages = []; // for individual page generation
   let firstId = null;
 
   for (const group of groups) {
@@ -362,6 +363,7 @@ async function main() {
       articlesHtml.push(
         `<article id="${file.id}" class="lesson">${html}</article>`
       );
+      lessonPages.push({ id: file.id, title, sidebarTitle, html, jaTitle: jaTitle || shortTitle });
     }
   }
 
@@ -482,14 +484,118 @@ var disqus_config = function () {
   const SITE = "https://ralphbupt.github.io/japanese-grammar/";
   const today = new Date().toISOString().slice(0, 10);
 
-  fs.writeFileSync(path.join(__dirname, "dist/sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
+  // ─── Generate individual lesson pages ───
+  for (const lesson of lessonPages) {
+    const lessonDir = path.join(__dirname, "dist", lesson.id);
+    fs.mkdirSync(lessonDir, { recursive: true });
+    const lessonUrl = `${SITE}${lesson.id}/`;
+    const lessonTitle = `${lesson.jaTitle} | Japanese Grammar Notes`;
+    const lessonDesc = `${lesson.title} – Free Japanese grammar lesson with conjugation rules, example sentences, and practice exercises.`;
+
+    const lessonHtml = `<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${lessonTitle}</title>
+<meta name="description" content="${lessonDesc.replace(/"/g, '&quot;')}">
+<link rel="canonical" href="${lessonUrl}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="${lessonTitle}">
+<meta property="og:description" content="${lessonDesc.replace(/"/g, '&quot;')}">
+<meta property="og:url" content="${lessonUrl}">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="${lessonTitle}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "name": "${lesson.jaTitle.replace(/"/g, '\\"')}",
+  "description": "${lessonDesc.replace(/"/g, '\\"')}",
+  "inLanguage": ["ja", "zh-CN"],
+  "isAccessibleForFree": true,
+  "url": "${lessonUrl}",
+  "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N2", "url": "${SITE}" }
+}
+</script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D1KNQTFN1R"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D1KNQTFN1R');</script>
+<style>
+${CSS}
+#sidebar, #menu-toggle, #toc-panel, #settings-toggle, #settings-overlay { display: none !important; }
+#content { margin-left: 0 !important; margin-right: 0 !important; max-width: 800px; margin: 0 auto; }
+.back-link { display: block; margin-bottom: 1.5rem; color: var(--accent); text-decoration: none; font-size: 0.9rem; }
+.back-link:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<main id="content">
+  <a class="back-link" href="${SITE}">← All Lessons / 返回目录</a>
+  <article class="lesson active">${lesson.html}</article>
+  <div id="disqus_thread"></div>
+</main>
+<div id="bottom-controls">
+  <div id="furigana-toggle">
+    <label><input type="checkbox" id="ruby-toggle" checked> 显示读音</label>
+  </div>
+  <div id="lang-toggle">
+    <button id="lang-btn">EN</button>
+  </div>
+</div>
+<script>
+(function(){
+  var rubyToggle = document.getElementById('ruby-toggle');
+  var langBtn = document.getElementById('lang-btn');
+  var STORE_KEY = 'jp_grammar_prefs';
+  function loadPrefs() { try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch(e) { return {}; } }
+  function savePrefs(patch) { var p = loadPrefs(); for (var k in patch) p[k] = patch[k]; localStorage.setItem(STORE_KEY, JSON.stringify(p)); }
+  var prefs = loadPrefs();
+  if (prefs.hideRuby) { rubyToggle.checked = false; document.body.classList.add('hide-ruby'); }
+  var isEn = prefs.isEn || false;
+  if (isEn) { document.body.classList.add('lang-en'); langBtn.textContent = '中'; }
+  rubyToggle.addEventListener('change', function(){ var hide = !this.checked; document.body.classList.toggle('hide-ruby', hide); savePrefs({ hideRuby: hide }); });
+  langBtn.addEventListener('click', function(){ isEn = !isEn; document.body.classList.toggle('lang-en', isEn); langBtn.textContent = isEn ? '中' : 'EN'; savePrefs({ isEn: isEn }); });
+})();
+</script>
+<script>
+var disqus_config = function () {
+  this.page.url = '${lessonUrl}';
+  this.page.identifier = '${lesson.id}';
+};
+(function() {
+  var d = document, s = d.createElement('script');
+  s.src = 'https://japanese-4.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
+</script>
+</body>
+</html>`;
+
+    fs.writeFileSync(path.join(lessonDir, "index.html"), lessonHtml, "utf-8");
+  }
+
+  // ─── Sitemap ───
+  const sitemapUrls = [`  <url>
     <loc>${SITE}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-  </url>
+  </url>`];
+  for (const lesson of lessonPages) {
+    sitemapUrls.push(`  <url>
+    <loc>${SITE}${lesson.id}/</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>`);
+  }
+  fs.writeFileSync(path.join(__dirname, "dist/sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapUrls.join("\n")}
 </urlset>
 `, "utf-8");
 
