@@ -405,6 +405,13 @@ async function main() {
 }
 </script>
 
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1a1a2e">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="日语文法">
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1KNQTFN1R"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D1KNQTFN1R');</script>
 <style>
@@ -505,7 +512,43 @@ Single-page static site. Each grammar point includes:
 CC BY 4.0
 `, "utf-8");
 
-  console.log(`Done! Output: ${OUT}, sitemap.xml, robots.txt, llms.txt`);
+  fs.writeFileSync(path.join(__dirname, "dist/manifest.json"), JSON.stringify({
+    name: "日语语法笔记 – N5→N2",
+    short_name: "日语文法",
+    start_url: "/japanese-grammar/",
+    scope: "/japanese-grammar/",
+    display: "standalone",
+    background_color: "#fafaf8",
+    theme_color: "#1a1a2e",
+    icons: [
+      { src: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>", sizes: "any", type: "image/svg+xml" }
+    ]
+  }, null, 2), "utf-8");
+
+  fs.writeFileSync(path.join(__dirname, "dist/404.html"), `<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 – 日语语法笔记</title>
+<style>
+  body { font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; background: #fafaf8; color: #333; }
+  .box { text-align: center; }
+  h1 { font-size: 4rem; margin: 0; }
+  p { font-size: 1.2rem; margin: 1rem 0; }
+  a { color: #e94560; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="box">
+  <h1>404</h1>
+  <p>ページが見つかりません</p>
+  <a href="/japanese-grammar/">← ホームに戻る</a>
+</div>
+</body>
+</html>`, "utf-8");
+
+  console.log(`Done! Output: ${OUT}, sitemap.xml, robots.txt, llms.txt, manifest.json, 404.html`);
 }
 
 // ─── CSS ───
