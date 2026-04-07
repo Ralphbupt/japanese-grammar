@@ -801,6 +801,13 @@ body.sidebar-collapsed #menu-toggle { display: block; }
   #sidebar { transform: translateX(-100%); width: var(--sidebar-w); }
   #sidebar.collapsed { width: var(--sidebar-w); }
   #sidebar.open { transform: translateX(0); }
+  #sidebar.open .nav-header,
+  #sidebar.open .nav-group,
+  #sidebar.open .nav-item,
+  #sidebar.open .nav-footer {
+    opacity: 1;
+    pointer-events: auto;
+  }
   #content { margin-left: 0 !important; margin-right: 0; padding: 3rem 1rem 4rem; }
   #menu-toggle { display: block !important; }
 }
