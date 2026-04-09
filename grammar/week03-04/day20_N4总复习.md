@@ -283,7 +283,7 @@ N3语法的特点：
 3. **更复杂的复合语法**：からには、以上は等
 4. **更多的固定搭配**：てたまらない、てならない等
 
-你已经在Day 18-19学了一些N3级别的语法（わけだ系列、もの系列等），所以过渡应该比较顺利。
+你已经在Day 17学了一些N3级别的语法（わけだ系列、もの系列等），书面助词（において、に対して等）已移到N3阶段，过渡应该比较顺利。
 :::
 :::en
 There is no sharp boundary between N4 and N3. If you've mastered 80% or more of the grammar above, you're ready to move into N3.
@@ -294,7 +294,7 @@ Characteristics of N3 grammar:
 3. **More complex compound grammar**: からには, 以上は, etc.
 4. **More fixed collocations**: てたまらない, てならない, etc.
 
-You've already covered some N3-level grammar in Days 18–19 (the わけだ series, もの series, etc.), so the transition should be relatively smooth.
+You've already covered some N3-level grammar in Day 17 (the わけだ series, もの series, etc.), and formal particles (において, に対して, etc.) have been moved to the N3 stage, so the transition should be relatively smooth.
 :::
 
 ---

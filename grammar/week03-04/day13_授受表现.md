@@ -193,9 +193,11 @@ This is the key point! These forms don't just express giving things — they exp
 :::zh
 接续：动词て形 + あげる
 
-- 友達に日本語を教え**てあげた**。（我教了朋友日语。→ 为朋友做）
-- 重い荷物を持っ**てあげた**。（我帮忙拿了重行李。）
-- 駅まで送っ**てあげましょうか**。（要不要我送你到车站？）
+1. 友達に日本語を教え**てあげた**。（我教了朋友日语。→ 为朋友做）
+2. 重い荷物を持っ**てあげた**。（我帮忙拿了重行李。）
+3. 駅まで送っ**てあげましょうか**。（要不要我送你到车站？）
+4. 弟に自転車の乗り方を教え**てあげた**。（教了弟弟骑自行车。）
+5. おばあさんの荷物を持っ**てあげた**。（帮老奶奶拿了行李。）
 
 > **注意**：对上级说「〜てあげる」很失礼！因为暗示"我施恩于你"。
 > ❌ 先生に教えてあげた → 太傲慢
@@ -205,9 +207,11 @@ This is the key point! These forms don't just express giving things — they exp
 :::en
 Conjugation: verb て-form + あげる
 
-- 友達に日本語を教え**てあげた**。(I taught my friend Japanese. → doing it for them)
-- 重い荷物を持っ**てあげた**。(I carried the heavy luggage for them.)
-- 駅まで送っ**てあげましょうか**。(Shall I walk you to the station?)
+1. 友達に日本語を教え**てあげた**。(I taught my friend Japanese. → doing it for them)
+2. 重い荷物を持っ**てあげた**。(I carried the heavy luggage for them.)
+3. 駅まで送っ**てあげましょうか**。(Shall I walk you to the station?)
+4. 弟に自転車の乗り方を教え**てあげた**。(I taught my brother how to ride a bicycle.)
+5. おばあさんの荷物を持っ**てあげた**。(I carried the old lady's bags for her.)
 
 > **Caution**: Saying 「〜てあげる」 to a superior is rude! It implies "I am bestowing a favor upon you."
 > ❌ 先生に教えてあげた → Too arrogant
@@ -219,9 +223,11 @@ Conjugation: verb て-form + あげる
 :::zh
 接续：动词て形 + もらう
 
-- 友達に日本語を教え**てもらった**。（请朋友教了我日语。）
-- 先生に作文を直し**てもらった**。（请老师改了作文。）
-- 写真を撮っ**てもらえますか**。（能请你帮我拍照吗？→ 委婉请求）
+1. 友達に日本語を教え**てもらった**。（请朋友教了我日语。）
+2. 先生に作文を直し**てもらった**。（请老师改了作文。）
+3. 写真を撮っ**てもらえますか**。（能请你帮我拍照吗？→ 委婉请求）
+4. 美容院で髪を切っ**てもらった**。（在美发店让人剪了头发。→ 专业服务也用てもらう）
+5. 父に駅まで送っ**てもらった**。（让爸爸送我到了车站。）
 
 > 「〜てもらえますか」「〜てもらえませんか」是非常实用的委婉请求表达。
 :::
@@ -229,9 +235,11 @@ Conjugation: verb て-form + あげる
 :::en
 Conjugation: verb て-form + もらう
 
-- 友達に日本語を教え**てもらった**。(I had my friend teach me Japanese.)
-- 先生に作文を直し**てもらった**。(I had my teacher correct my essay.)
-- 写真を撮っ**てもらえますか**。(Could you take a photo for me? → polite request)
+1. 友達に日本語を教え**てもらった**。(I had my friend teach me Japanese.)
+2. 先生に作文を直し**てもらった**。(I had my teacher correct my essay.)
+3. 写真を撮っ**てもらえますか**。(Could you take a photo for me? → polite request)
+4. 美容院で髪を切っ**てもらった**。(I had my hair cut at the salon. → professional services also use てもらう)
+5. 父に駅まで送っ**てもらった**。(I had my father drive me to the station.)
 
 > 「〜てもらえますか」 and 「〜てもらえませんか」 are very practical polite request expressions.
 :::
@@ -241,10 +249,12 @@ Conjugation: verb て-form + もらう
 :::zh
 接续：动词て形 + くれる
 
-- 友達が日本語を教え**てくれた**。（朋友教了我日语。→ 感谢）
-- 母がお弁当を作っ**てくれた**。（妈妈给我做了便当。→ 感谢）
-- 先生が丁寧に説明し**てくれた**。（老师仔细地给我解释了。→ 感谢）
-- ちょっと手伝っ**てくれない**？（能帮我一下吗？→ 朋友间的请求）
+1. 友達が日本語を教え**てくれた**。（朋友教了我日语。→ 感谢）
+2. 母がお弁当を作っ**てくれた**。（妈妈给我做了便当。→ 感谢）
+3. 先生が丁寧に説明し**てくれた**。（老师仔细地给我解释了。→ 感谢）
+4. ちょっと手伝っ**てくれない**？（能帮我一下吗？→ 朋友间的请求）
+5. 彼が道を教え**てくれた**。（他告诉了我路怎么走。→ 感谢）
+6. 同僚が代わりにやっ**てくれた**。（同事替我做了。→ 感谢）
 
 > 「〜てくれる」自带感谢/感激的语气，日语中使用频率极高。
 :::
@@ -252,10 +262,12 @@ Conjugation: verb て-form + もらう
 :::en
 Conjugation: verb て-form + くれる
 
-- 友達が日本語を教え**てくれた**。(My friend taught me Japanese. → grateful)
-- 母がお弁当を作っ**てくれた**。(My mom made me a bento lunch. → grateful)
-- 先生が丁寧に説明し**てくれた**。(My teacher explained it carefully for me. → grateful)
-- ちょっと手伝っ**てくれない**？(Can you help me a bit? → casual request between friends)
+1. 友達が日本語を教え**てくれた**。(My friend taught me Japanese. → grateful)
+2. 母がお弁当を作っ**てくれた**。(My mom made me a bento lunch. → grateful)
+3. 先生が丁寧に説明し**てくれた**。(My teacher explained it carefully for me. → grateful)
+4. ちょっと手伝っ**てくれない**？(Can you help me a bit? → casual request between friends)
+5. 彼が道を教え**てくれた**。(He showed me the way. → grateful)
+6. 同僚が代わりにやっ**てくれた**。(My colleague did it for me instead. → grateful)
 
 > 「〜てくれる」 naturally carries a thankful/appreciative nuance and is used extremely frequently in Japanese.
 :::
@@ -349,6 +361,39 @@ The concept of in-group (うち) and out-group (そと) is important in Japanese
 
 ---
 
+## 6. 常见错误||Common Mistakes
+
+:::zh
+| 错误 | 正确 | 原因 |
+|------|------|------|
+| ❌ 先生が教えてあげた | ✅ 先生が教えてくださった | 对上级不能用あげる（居高临下） |
+| ❌ 母に料理を作ってあげた | ✅ 母に料理を作ってあげた ✅ | 对妈妈可以用（家人间OK） |
+| ❌ 友達は私に本をくれた | ✅ 友達**が**私に本をくれた | くれる的主语用が（新信息/感谢对象） |
+| ❌ 先生にてもらった | ✅ 先生**に**教え**てもらった** | 中间要有动词て形 |
+| ❌ 私が友達に本をくれた | ✅ 私が友達に本を**あげた** | くれる只能是"别人给我"，我给别人用あげる |
+
+> **最易混淆的一点**：
+> くれる = 别人→我（主语是别人）
+> あげる = 我→别人（主语是我/我方）
+> **绝对不能反过来！**
+:::
+:::en
+| Wrong | Correct | Reason |
+|------|------|------|
+| ❌ 先生が教えてあげた | ✅ 先生が教えてくださった | Can't use あげる toward superiors (condescending) |
+| ❌ 母に料理を作ってあげた | ✅ 母に料理を作ってあげた ✅ | OK with family members |
+| ❌ 友達は私に本をくれた | ✅ 友達**が**私に本をくれた | Subject of くれる uses が (new info / focus of gratitude) |
+| ❌ 先生にてもらった | ✅ 先生**に**教え**てもらった** | Need a verb in て-form between |
+| ❌ 私が友達に本をくれた | ✅ 私が友達に本を**あげた** | くれる is only "others give to me" — for "I give to others" use あげる |
+
+> **The most common confusion:**
+> くれる = Others → Me (subject is the other person)
+> あげる = Me → Others (subject is me/my side)
+> **Never reverse them!**
+:::
+
+---
+
 ## 今日练习||Today's Practice
 
 ### A. 选择あげる/もらう/くれる||A. Choose あげる/もらう/くれる
@@ -397,12 +442,58 @@ The concept of in-group (うち) and out-group (そと) is important in Japanese
 :::
 
 <details>
-<summary>答案</summary>
+<summary>答案 / Answers</summary>
 
 1. 弟に数学を教えてあげた。
 2. 友達が荷物を運んでくれた。
 3. 写真を撮ってもらえますか。
 4. 母が毎日朝ご飯を作ってくれる。
+
+</details>
+
+### C. 改错||C. Error Correction
+
+:::zh
+1. 私は友達に本をくれた。（想表达"我给了朋友书"）
+2. 先生が説明してあげた。（想表达"老师为我讲解了"）
+3. 友達は道を教えてくれた。（助词问题）
+4. 母にてもらった。（想表达"请妈妈做了"）
+:::
+
+<details>
+<summary>答案 / Answers</summary>
+
+:::zh
+1. ❌ くれた → ✅ **あげた**（我给别人用あげる，不能用くれる）
+2. ❌ あげた → ✅ **くれた/くださった**（老师为我做，要用くれる/尊敬语くださる）
+3. ❌ 友達は → ✅ 友達**が**（くれる的主语用が）
+4. ❌ にてもらった → ✅ 母に**作って**もらった（缺少动词て形）
+:::
+
+</details>
+
+### D. 场景选择||D. Situation-Based Choice
+
+:::zh
+选择最合适的表达（てあげる/てもらう/てくれる）：
+
+1. （你很感激）田中さんが宿題を手伝っ（　　）。
+2. （你主动帮忙）迷っている人に道を教え（　　）。
+3. （你请求别人）美容院で髪を切っ（　　）。
+4. （妈妈的好意）母が毎日弁当を作っ（　　）。
+5. （你让朋友帮忙）友達に引っ越しを手伝っ（　　）。
+:::
+
+<details>
+<summary>答案 / Answers</summary>
+
+:::zh
+1. **てくれた**（别人为我做，感谢）
+2. **てあげた**（我为别人做）
+3. **てもらった**（请专业人士为我服务）
+4. **てくれる**（别人为我做，感谢）
+5. **てもらった**（请别人为我做）
+:::
 
 </details>
 
