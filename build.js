@@ -9,55 +9,93 @@ const KuromojiAnalyzer = KuromojiMod.default || KuromojiMod;
 
 // ─── Config ───
 const GRAMMAR_DIRS = [
-  { dir: "grammar/week01-02", label: "N5（第1〜2週）" },
-  { dir: "grammar/week03-04", label: "N4（第3〜4週）" },
-  { dir: "grammar/week05-06", label: "N3（第5〜6週）" },
-  { dir: "grammar/week07-08", label: "N2（第7〜8週）" },
+  { dir: "grammar/N5", label: "N5" },
+  { dir: "grammar/N4", label: "N4" },
+  { dir: "grammar/N3", label: "N3" },
+  { dir: "grammar/N2", label: "N2" },
 ];
 const OUT = "dist/index.html";
 
 // Japanese sidebar titles (keyed by file id)
 const JA_TITLES = {
+  N5_grammar_list: "N5 文法チェックリスト",
+  N4_grammar_list: "N4 文法チェックリスト",
+  N3_grammar_list: "N3 文法チェックリスト",
+  N2_grammar_list: "N2 文法チェックリスト",
   day00: "五十音図（参考）",
-  day01: "基礎文型 — です・は/が・助詞",
-  day02: "動詞ます形とて形",
-  day03: "て形応用・ない形・義務表現",
-  day04: "た形・形容詞活用・比較表現",
-  day05: "条件表現 — と/ば/たら/なら",
-  day06: "可能形・受身形・意向形",
-  day07: "推測と様態 — でしょう/そうだ/ようだ/らしい",
-  day08: "N5補充文法＋総復習",
-  day12: "使役形・使役受身形",
-  day13: "授受表現 — あげる/もらう/くれる",
-  day14: "ように系列 — ようにする/ようになる",
-  day15: "ことにする/ことになる/はずだ",
-  day16: "ばかり/ところだ/てしまう/ておく/てある",
-  day17: "受身形詳解・という/ということ",
-  day18: "N4補充文法 — て以来/にかけて/において",
-  day19: "わけだ/ものだ — N4→N3過渡文法",
-  day20: "N4文法総復習",
+  day01: "判断句・は/が・基礎助詞",
+  day02: "核心助詞 — に・で・へ・と・から・まで",
+  day03: "動詞分類とます形",
+  day04: "て形（最重要な動詞活用）",
+  day05: "て形応用 — ている・てください・てもいい",
+  day06: "ない形と義務表現",
+  day07: "た形・経験・列挙表現",
+  day08: "形容詞活用と比較表現",
+  day09: "条件表現 — と・ば",
+  day10: "条件表現 — たら・なら",
+  day11: "可能形と受身形",
+  day12: "意向形と願望表現",
+  day13: "推測 — でしょう・かもしれない・そうだ",
+  day14: "様態 — ようだ・らしい・みたいだ・っぽい",
+  day15: "N5補充文法 — ことができる・のだ・のに",
+  day16: "N5補充文法＋総復習",
+  day18: "使役形 — させる・させてあげる",
+  day19: "受身形詳解・使役受身形",
+  day20: "授受表現 — あげる/もらう/くれる",
+  day21: "ように系列 — ようにする/ようになる",
+  day22: "ことにする/ことになる/はずだ",
+  day23: "ばかり/ところだ/てしまう",
+  day24: "ておく/てある/て以来/にかけて",
+  day25: "という/ということ/というより",
+  day26: "わけだ/ものだ",
+  day27: "N4文法総復習",
+  day28: "〜ても/〜てほしい/〜ていく・てくる",
+  day29: "〜すぎる/〜やすい・にくい/〜ことはない",
+  day17: "N5補充文法② — がある・に行く・のが好き",
+  day30: "引用・思考・比況 — と思う・かどうか・のように",
+  day31: "時間と場面 — あいだ・までに・場合は",
+  day32: "N3書面助詞 — において/に対して",
 };
 
 // SEO keywords per lesson (Japanese, Chinese, English)
 const LESSON_KEYWORDS = {
+  N5_grammar_list: "N5文法一覧, N5语法列表, JLPT N5 grammar list, checklist, 文法チェックリスト",
+  N4_grammar_list: "N4文法一覧, N4语法列表, JLPT N4 grammar list, checklist, 文法チェックリスト",
+  N3_grammar_list: "N3文法一覧, N3语法列表, JLPT N3 grammar list, checklist, 文法チェックリスト",
+  N2_grammar_list: "N2文法一覧, N2语法列表, JLPT N2 grammar list, checklist, 文法チェックリスト",
   day00: "五十音図, 五十音图, hiragana, katakana, Japanese alphabet, 平仮名, 片仮名, 日语入门",
   day01: "です, は, が, 助詞, 基础句型, Japanese particles, desu, basic sentence patterns, JLPT N5",
-  day02: "ます形, て形, 动词变形, masu form, te form, verb conjugation, 音便, 一类动词, JLPT N5",
-  day03: "ないで, なくて, なければならない, ない形, negative form, てください, てもいい, てはいけない, JLPT N5",
-  day04: "た形, 形容词活用, い形容词, な形容词, ta form, adjective conjugation, より, 比較, JLPT N5",
-  day05: "と, ば, たら, なら, 条件表現, conditional, Japanese conditionals, もし, JLPT N5",
-  day06: "可能形, 受身形, 意向形, potential form, passive form, volitional form, られる, JLPT N5",
-  day07: "でしょう, そうだ, ようだ, らしい, 推測, conjecture, hearsay, appearance, JLPT N5",
-  day08: "N5文法, N5 grammar review, 総復習, JLPT N5 summary",
-  day12: "使役形, 使役受身形, させる, させられる, causative, causative passive, JLPT N4",
-  day13: "あげる, もらう, くれる, 授受表現, てあげる, てもらう, てくれる, giving receiving, JLPT N4",
-  day14: "ようにする, ようになる, ように, ないようにする, so that, JLPT N4",
-  day15: "ことにする, ことになる, はずだ, decide to, expected to, JLPT N4",
-  day16: "ばかり, ところだ, てしまう, ておく, てある, just did, about to, JLPT N4",
-  day17: "受身形, という, ということ, passive detailed, called, indirect passive, JLPT N4",
-  day18: "て以来, にかけて, において, since, from to, in terms of, JLPT N4 N3",
-  day19: "わけだ, ものだ, わけがない, ものではない, naturally, used to, JLPT N4 N3",
-  day20: "N4文法, N4 grammar review, 総復習, JLPT N4 summary",
+  day02: "に, で, へ, と, から, まで, 助词详解, core particles, JLPT N5",
+  day03: "ます形, 动词分类, masu form, verb groups, 一类动词, 二类动词, 三类动词, JLPT N5",
+  day04: "て形, te form, verb conjugation, 音便, te form rules, 动词变形, JLPT N5",
+  day05: "ている, てください, てもいい, てはいけない, て形応用, te form usage, JLPT N5",
+  day06: "ない形, なければならない, なくてもいい, negative form, obligation, JLPT N5",
+  day07: "た形, たことがある, たり, たばかり, ta form, experience, JLPT N5",
+  day08: "い形容词, な形容词, より, 一番, adjective conjugation, comparison, JLPT N5",
+  day09: "と, ば, 条件表現, conditional と, conditional ば, JLPT N5",
+  day10: "たら, なら, 条件表現, conditional たら, conditional なら, JLPT N5",
+  day11: "可能形, 受身形, potential form, passive form, られる, JLPT N5",
+  day12: "意向形, つもり, 予定, たい, volitional form, intention, desire, JLPT N5",
+  day13: "でしょう, かもしれない, そうだ, 推測, conjecture, hearsay, JLPT N5",
+  day14: "ようだ, らしい, みたいだ, っぽい, 様態, appearance, seems like, JLPT N5",
+  day15: "ことができる, のだ, のに, ので, N5補充, supplementary grammar, JLPT N5",
+  day16: "N5文法, N5 grammar review, 総復習, すぎる, やすい, にくい, ながら, JLPT N5",
+  day18: "使役形, させる, させてあげる, させてもらう, causative, JLPT N4",
+  day19: "受身形, 使役受身形, させられる, passive, causative passive, JLPT N4",
+  day20: "あげる, もらう, くれる, 授受表現, てあげる, てもらう, てくれる, giving receiving, JLPT N4",
+  day21: "ようにする, ようになる, ように, ないようにする, so that, JLPT N4",
+  day22: "ことにする, ことになる, はずだ, decide to, expected to, JLPT N4",
+  day23: "ばかり, ところだ, てしまう, ちゃう, just did, about to, regret, JLPT N4",
+  day24: "ておく, てある, て以来, にかけて, advance preparation, result state, JLPT N4",
+  day25: "という, ということ, というより, といえば, called, means that, JLPT N4",
+  day26: "わけだ, ものだ, わけがない, わけではない, ものだから, JLPT N4",
+  day27: "N4文法, N4 grammar review, 総復習, JLPT N4 summary",
+  day28: "ても, てほしい, ていく, てくる, がる, even if, want someone to, JLPT N4",
+  day29: "すぎる, やすい, にくい, ことはない, 方, 出す, 始める, too much, easy to, JLPT N4",
+  day17: "がある, がいる, に行く, のが好き, くらい, だけ, や, existence, JLPT N5",
+  day30: "と思う, かどうか, のように, なさい, がする, 必要がある, I think, whether, JLPT N4",
+  day31: "あいだ, までに, おきに, 場合は, たらどう, てよかった, during, by, in case, JLPT N4",
+  day32: "において, に対して, について, によって, 書面助詞, formal particles, JLPT N3",
 };
 
 // ─── Helpers ───
@@ -377,6 +415,16 @@ async function main() {
         (match) => match.replace("<table>", '<table class="word-table">')
       );
 
+      // Enable checklist checkboxes (remove disabled, add data attributes)
+      let checkIdx = 0;
+      html = html.replace(
+        /<input (checked="" )?disabled="" type="checkbox">/g,
+        (match, checked) => {
+          const idx = checkIdx++;
+          return `<input type="checkbox" data-lesson="${file.id}" data-idx="${idx}"${checked ? ' checked' : ''}>`;
+        }
+      );
+
       // Add furigana (kana-based detection)
       console.log(`  Processing ${file.id}...`);
       html = await addFurigana(kuro, html);
@@ -385,7 +433,7 @@ async function main() {
       const dayNum = dayMatch ? dayMatch[1] : "";
       const jaTitle = JA_TITLES[file.id];
       const sidebarTitle = jaTitle
-        ? `Day ${dayNum} – ${jaTitle}`
+        ? (dayNum ? `Day ${dayNum} – ${jaTitle}` : jaTitle)
         : shortTitle;
       sidebarHtml.push(
         `<a class="nav-item" href="#${file.id}" data-target="${file.id}">${sidebarTitle}</a>`
@@ -996,6 +1044,36 @@ table.word-table { border-left: 4px solid var(--word-border); }
 table.word-table th { background: var(--word-bg); }
 table.word-table td:first-child { font-size: 1.2rem; font-weight: 500; }
 
+/* Checklist */
+.checklist-progress {
+  background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px;
+  padding: .8rem 1.2rem; margin: 1rem 0 1.5rem; display: flex; align-items: center; gap: 1rem;
+  font-size: .9rem; color: #666; position: sticky; top: 0; z-index: 5;
+}
+.checklist-progress .progress-bar {
+  flex: 1; height: 8px; background: #e8e8e8; border-radius: 4px; overflow: hidden;
+}
+.checklist-progress .progress-fill {
+  height: 100%; background: var(--accent); border-radius: 4px; transition: width .3s;
+}
+.checklist-progress .progress-text { white-space: nowrap; font-weight: 500; min-width: 80px; text-align: right; }
+ul:has(input[type="checkbox"]) {
+  list-style: none; padding-left: 0;
+}
+ul:has(input[type="checkbox"]) li {
+  padding: .4rem .6rem; border-radius: 6px; margin: .2rem 0;
+  transition: background .2s;
+}
+ul:has(input[type="checkbox"]) li:hover { background: #f5f5f5; }
+ul:has(input[type="checkbox"]) li.checked {
+  text-decoration: line-through; color: #aaa;
+}
+ul:has(input[type="checkbox"]) li.checked input[type="checkbox"] { accent-color: var(--accent); }
+input[type="checkbox"] {
+  width: 1.1em; height: 1.1em; margin-right: .5em; cursor: pointer;
+  vertical-align: middle; accent-color: var(--accent);
+}
+
 /* Code */
 pre {
   background: var(--code-bg); padding: 1rem; border-radius: 6px;
@@ -1438,11 +1516,71 @@ const JS = `
     savePrefs({ isEn: isEn });
   });
 
+  // ─── Checklist persistence ───
+  var CHECK_KEY = 'jp_grammar_checks';
+  function loadChecks() {
+    try { return JSON.parse(localStorage.getItem(CHECK_KEY)) || {}; } catch(e) { return {}; }
+  }
+  function saveChecks(data) { localStorage.setItem(CHECK_KEY, JSON.stringify(data)); }
+
+  function initChecklists() {
+    var checks = loadChecks();
+    var boxes = document.querySelectorAll('input[type="checkbox"][data-lesson]');
+    boxes.forEach(function(cb) {
+      var key = cb.getAttribute('data-lesson') + ':' + cb.getAttribute('data-idx');
+      if (checks[key]) { cb.checked = true; cb.parentElement.classList.add('checked'); }
+      else { cb.checked = false; cb.parentElement.classList.remove('checked'); }
+      cb.addEventListener('change', function() {
+        var c = loadChecks();
+        var k = this.getAttribute('data-lesson') + ':' + this.getAttribute('data-idx');
+        if (this.checked) { c[k] = 1; this.parentElement.classList.add('checked'); }
+        else { delete c[k]; this.parentElement.classList.remove('checked'); }
+        saveChecks(c);
+        updateProgress(this.getAttribute('data-lesson'));
+      });
+    });
+  }
+
+  function updateProgress(lessonId) {
+    var article = document.getElementById(lessonId);
+    if (!article) return;
+    var bar = article.querySelector('.progress-fill');
+    var text = article.querySelector('.progress-text');
+    if (!bar || !text) return;
+    var boxes = article.querySelectorAll('input[type="checkbox"][data-lesson]');
+    var total = boxes.length;
+    var done = 0;
+    boxes.forEach(function(cb) { if (cb.checked) done++; });
+    var pct = total > 0 ? Math.round(done / total * 100) : 0;
+    bar.style.width = pct + '%';
+    text.textContent = done + ' / ' + total + ' (' + pct + '%)';
+  }
+
+  function insertProgressBars() {
+    var checkLessons = {};
+    document.querySelectorAll('input[type="checkbox"][data-lesson]').forEach(function(cb) {
+      checkLessons[cb.getAttribute('data-lesson')] = true;
+    });
+    Object.keys(checkLessons).forEach(function(lid) {
+      var article = document.getElementById(lid);
+      if (!article || article.querySelector('.checklist-progress')) return;
+      var h1 = article.querySelector('h1');
+      if (!h1) return;
+      var div = document.createElement('div');
+      div.className = 'checklist-progress';
+      div.innerHTML = '<div class="progress-bar"><div class="progress-fill"></div></div><span class="progress-text">0 / 0</span>';
+      h1.after(div);
+      updateProgress(lid);
+    });
+  }
+
   // Init
   updateDayDates();
   var hash = location.hash.slice(1);
   var first = items[0] ? items[0].getAttribute('data-target') : null;
   show(hash || first);
+  initChecklists();
+  insertProgressBars();
 })();
 `;
 
