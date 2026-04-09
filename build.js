@@ -407,23 +407,31 @@ async function main() {
 <meta name="description" content="Free structured Japanese grammar notes from N5 to N2 in 8 weeks. Bilingual (Japanese + Chinese) with conjugation rules, example sentences, and spaced repetition.">
 <meta name="keywords" content="Japanese grammar, JLPT N2, N5, N4, N3, 日语语法, 日本語文法, grammar notes, spaced repetition, 语法笔记">
 <link rel="canonical" href="https://ralphbupt.github.io/japanese-grammar/">
+<link rel="alternate" hreflang="ja" href="https://ralphbupt.github.io/japanese-grammar/">
+<link rel="alternate" hreflang="zh" href="https://ralphbupt.github.io/japanese-grammar/">
+<link rel="alternate" hreflang="x-default" href="https://ralphbupt.github.io/japanese-grammar/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Japanese Grammar Notes | 日语语法笔记 – N5→N2">
 <meta property="og:description" content="Free structured Japanese grammar notes from N5 to N2 in 8 weeks. Bilingual with examples and spaced repetition.">
 <meta property="og:url" content="https://ralphbupt.github.io/japanese-grammar/">
+<meta property="og:image" content="https://ralphbupt.github.io/japanese-grammar/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:locale:alternate" content="zh_CN">
 
 <!-- Twitter Card -->
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Japanese Grammar Notes | 日语语法笔记 – N5→N2">
 <meta name="twitter:description" content="Free structured Japanese grammar notes from N5 to N2 in 8 weeks.">
+<meta name="twitter:image" content="https://ralphbupt.github.io/japanese-grammar/og-image.png">
 
 <!-- Structured Data -->
+<meta http-equiv="Content-Language" content="ja, zh-CN">
 <script type="application/ld+json">
-{
+[{
   "@context": "https://schema.org",
   "@type": "Course",
   "name": "Japanese Grammar Notes – N5 to N2",
@@ -433,8 +441,22 @@ async function main() {
   "educationalLevel": "Beginner to Intermediate",
   "about": { "@type": "Thing", "name": "Japanese Language Grammar" },
   "isAccessibleForFree": true,
-  "url": "https://ralphbupt.github.io/japanese-grammar/"
-}
+  "image": "https://ralphbupt.github.io/japanese-grammar/og-image.png",
+  "url": "https://ralphbupt.github.io/japanese-grammar/",
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "courseWorkload": "P8W"
+  },
+  "numberOfLessons": ${lessonPages.length}
+},
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "日语语法笔记 – Japanese Grammar Notes",
+  "url": "https://ralphbupt.github.io/japanese-grammar/",
+  "inLanguage": ["ja", "zh-CN"]
+}]
 </script>
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
@@ -515,12 +537,24 @@ var disqus_config = function () {
   const today = new Date().toISOString().slice(0, 10);
 
   // ─── Generate individual lesson pages ───
-  for (const lesson of lessonPages) {
+  for (let li = 0; li < lessonPages.length; li++) {
+    const lesson = lessonPages[li];
+    const prevLesson = li > 0 ? lessonPages[li - 1] : null;
+    const nextLesson = li < lessonPages.length - 1 ? lessonPages[li + 1] : null;
     const lessonDir = path.join(__dirname, "dist", lesson.id);
     fs.mkdirSync(lessonDir, { recursive: true });
     const lessonUrl = `${SITE}${lesson.id}/`;
     const lessonTitle = `${lesson.jaTitle} | Japanese Grammar Notes`;
     const lessonDesc = `${lesson.title} – Free Japanese grammar lesson with conjugation rules, example sentences, and practice exercises.`;
+    const ogImageUrl = `${SITE}og-image.png`;
+
+    // Prev/next navigation HTML
+    const prevHtml = prevLesson
+      ? `<a class="pn-link pn-prev" href="${SITE}${prevLesson.id}/">← ${prevLesson.jaTitle}</a>`
+      : `<span class="pn-link pn-prev"></span>`;
+    const nextHtml = nextLesson
+      ? `<a class="pn-link pn-next" href="${SITE}${nextLesson.id}/">${nextLesson.jaTitle} →</a>`
+      : `<span class="pn-link pn-next"></span>`;
 
     const lessonHtml = `<!DOCTYPE html>
 <html lang="ja">
@@ -531,25 +565,43 @@ var disqus_config = function () {
 <meta name="description" content="${lessonDesc.replace(/"/g, '&quot;')}">
 <meta name="keywords" content="${LESSON_KEYWORDS[lesson.id] || ''}">
 <link rel="canonical" href="${lessonUrl}">
+<link rel="alternate" hreflang="ja" href="${lessonUrl}">
+<link rel="alternate" hreflang="zh" href="${lessonUrl}">
+<link rel="alternate" hreflang="x-default" href="${lessonUrl}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="${lessonTitle}">
 <meta property="og:description" content="${lessonDesc.replace(/"/g, '&quot;')}">
 <meta property="og:url" content="${lessonUrl}">
+<meta property="og:image" content="${ogImageUrl}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:locale:alternate" content="zh_CN">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${lessonTitle}">
+<meta name="twitter:image" content="${ogImageUrl}">
 <script type="application/ld+json">
-{
+[{
   "@context": "https://schema.org",
   "@type": "Article",
   "name": "${lesson.jaTitle.replace(/"/g, '\\"')}",
+  "headline": "${lesson.jaTitle.replace(/"/g, '\\"')}",
   "description": "${lessonDesc.replace(/"/g, '\\"')}",
   "inLanguage": ["ja", "zh-CN"],
   "isAccessibleForFree": true,
   "url": "${lessonUrl}",
+  "image": "${ogImageUrl}",
+  "author": { "@type": "Person", "name": "Ralphbupt" },
   "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N2", "url": "${SITE}" }
-}
+},
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "日语语法笔记", "item": "${SITE}" },
+    { "@type": "ListItem", "position": 2, "name": "${lesson.jaTitle.replace(/"/g, '\\"')}", "item": "${lessonUrl}" }
+  ]
+}]
 </script>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1KNQTFN1R"></script>
@@ -560,12 +612,28 @@ ${CSS}
 #content { margin-left: 0 !important; margin-right: 0 !important; max-width: 800px; margin: 0 auto; }
 .back-link { display: block; margin-bottom: 1.5rem; color: var(--accent); text-decoration: none; font-size: 0.9rem; }
 .back-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.85rem; color: #888; margin-bottom: 0.5rem; }
+.breadcrumb a { color: var(--accent); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb .sep { margin: 0 0.4em; }
+.prev-next { display: flex; justify-content: space-between; align-items: flex-start; margin: 2.5rem 0 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); gap: 1rem; }
+.pn-link { font-size: 0.9rem; color: var(--accent); text-decoration: none; max-width: 48%; }
+.pn-link:hover { text-decoration: underline; }
+.pn-prev { text-align: left; }
+.pn-next { text-align: right; margin-left: auto; }
 </style>
 </head>
 <body>
 <main id="content">
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <a href="${SITE}">日语语法笔记</a><span class="sep">›</span><span>${lesson.jaTitle}</span>
+  </nav>
   <a class="back-link" href="${SITE}">← All Lessons / 返回目录</a>
   <article class="lesson active">${lesson.html}</article>
+  <nav class="prev-next" aria-label="lesson navigation">
+    ${prevHtml}
+    ${nextHtml}
+  </nav>
   <div id="disqus_thread"></div>
 </main>
 <div id="bottom-controls">
@@ -585,7 +653,7 @@ ${CSS}
   function savePrefs(patch) { var p = loadPrefs(); for (var k in patch) p[k] = patch[k]; localStorage.setItem(STORE_KEY, JSON.stringify(p)); }
   var prefs = loadPrefs();
   if (prefs.hideRuby) { rubyToggle.checked = false; document.body.classList.add('hide-ruby'); }
-  var isEn = prefs.isEn || false;
+  var isEn = ('isEn' in prefs) ? prefs.isEn : !/^zh/i.test(navigator.language || '');
   if (isEn) { document.body.classList.add('lang-en'); langBtn.textContent = '中'; }
   rubyToggle.addEventListener('change', function(){ var hide = !this.checked; document.body.classList.toggle('hide-ruby', hide); savePrefs({ hideRuby: hide }); });
   langBtn.addEventListener('click', function(){ isEn = !isEn; document.body.classList.toggle('lang-en', isEn); langBtn.textContent = isEn ? '中' : 'EN'; savePrefs({ isEn: isEn }); });
@@ -700,7 +768,52 @@ CC BY 4.0
 </body>
 </html>`, "utf-8");
 
-  console.log(`Done! Output: ${OUT}, sitemap.xml, robots.txt, llms.txt, manifest.json, 404.html`);
+  // ─── OG Image (SVG) ───
+  // Social platforms prefer PNG, but SVG works as fallback.
+  // To generate a proper PNG: open dist/og-image.html in a browser and screenshot at 1200x630,
+  // or use: npx capture-website-cli dist/og-image.html --output dist/og-image.png --width 1200 --height 630
+  const ogSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="40" y="40" width="1120" height="550" rx="20" fill="none" stroke="#e94560" stroke-width="2" opacity="0.3"/>
+  <text x="600" y="220" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="96" fill="#ffffff" font-weight="bold">日语语法笔记</text>
+  <text x="600" y="320" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="42" fill="#c8c8d8">Japanese Grammar Notes</text>
+  <text x="600" y="400" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="36" fill="#e94560">N5 → N4 → N3 → N2</text>
+  <text x="600" y="470" text-anchor="middle" font-family="sans-serif" font-size="24" fill="#888888">Free · Bilingual · 8 Weeks · Spaced Repetition</text>
+  <text x="600" y="550" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#666666">ralphbupt.github.io/japanese-grammar</text>
+</svg>`;
+  fs.writeFileSync(path.join(__dirname, "dist/og-image.svg"), ogSvg, "utf-8");
+
+  // Also generate an HTML version for easy PNG conversion
+  const ogHtml = `<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; }
+body { width: 1200px; height: 630px; background: linear-gradient(135deg, #1a1a2e, #16213e); display: flex; align-items: center; justify-content: center; font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; }
+.card { width: 1120px; height: 550px; border: 2px solid rgba(233,69,96,0.3); border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; }
+h1 { font-size: 96px; color: #fff; font-weight: bold; }
+h2 { font-size: 42px; color: #c8c8d8; font-weight: normal; }
+.levels { font-size: 36px; color: #e94560; }
+.tagline { font-size: 24px; color: #888; }
+.url { font-size: 20px; color: #666; }
+</style></head>
+<body><div class="card">
+<h1>日语语法笔记</h1>
+<h2>Japanese Grammar Notes</h2>
+<div class="levels">N5 → N4 → N3 → N2</div>
+<div class="tagline">Free · Bilingual · 8 Weeks · Spaced Repetition</div>
+<div class="url">ralphbupt.github.io/japanese-grammar</div>
+</div></body></html>`;
+  fs.writeFileSync(path.join(__dirname, "dist/og-image.html"), ogHtml, "utf-8");
+
+  console.log(`Done! Output: ${OUT}, sitemap.xml, robots.txt, llms.txt, manifest.json, 404.html, og-image.svg/html`);
+  console.log(`NOTE: Convert og-image to PNG for best social sharing support:`);
+  console.log(`  npx capture-website-cli dist/og-image.html --output dist/og-image.png --width 1200 --height 630`);
 }
 
 // ─── CSS ───
@@ -1253,7 +1366,7 @@ const JS = `
 
   // Language toggle
   var langBtn = document.getElementById('lang-btn');
-  var isEn = prefs.isEn || false;
+  var isEn = ('isEn' in prefs) ? prefs.isEn : !/^zh/i.test(navigator.language || '');
   if (isEn) {
     document.body.classList.add('lang-en');
     langBtn.textContent = '中';

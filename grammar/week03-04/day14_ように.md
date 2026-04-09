@@ -318,7 +318,7 @@ Expresses a **natural change of state** — "gradually come to be able to do som
 4. 忘れない（　　）、ノートに書いた。
 
 <details>
-<summary>答案</summary>
+<summary>答案 / Answers</summary>
 
 :::zh
 1. **ために**（健康是名词+のために）
@@ -332,6 +332,58 @@ Expresses a **natural change of state** — "gradually come to be able to do som
 2. **ように** (上手になる is a non-volitional change)
 3. **ために** (留学する is a volitional verb)
 4. **ように** (忘れない is a negative form)
+:::
+
+</details>
+
+### C. 翻译||C. Translation
+
+:::zh
+1. 为了不迟到，早起了。
+2. 孩子变得会自己穿衣服了。
+3. 我注意每天喝水。（正在持续的习惯）
+4. 老师叫学生不要在走廊跑。
+5. 为了能看日语电影，每天学日语。
+6. 以前不能吃的东西，现在变得能吃了。
+:::
+:::en
+1. I got up early so as not to be late.
+2. The child has come to be able to dress themselves.
+3. I make a point of drinking water every day. (ongoing habit)
+4. The teacher told the students not to run in the hallway.
+5. I study Japanese every day so that I can watch Japanese movies.
+6. Things I couldn't eat before, I can eat now.
+:::
+
+<details>
+<summary>答案 / Answers</summary>
+
+1. 遅刻しないように、早く起きた。
+2. 子供が一人で服を着られるようになった。
+3. 毎日水を飲むようにしている。
+4. 先生は学生に廊下を走らないように言った。
+5. 日本語の映画が見られるように、毎日日本語を勉強している。
+6. 前は食べられなかったものが、食べられるようになった。
+
+</details>
+
+### D. 改错||D. Error Correction
+
+:::zh
+1. 日本語を話すために、毎日練習している。（想表达"为了能说日语"）
+2. 子供が一人で食べられるようにした。（想表达"孩子自然变得能吃了"）
+3. 先生に静かにするように言ってあげた。（想表达"被老师说要安静"）
+4. 忘れないために、メモした。
+:::
+
+<details>
+<summary>答案 / Answers</summary>
+
+:::zh
+1. △ 没有语法错误，但「话せる」是可能形 → ✅ 日本語が**話せる**ように、毎日練習している。（ように更准确表达"为了能够"）
+2. ❌ ようにした = 有意识地做到 → ✅ ようになった（自然变化用なる不用する）
+3. ❌ 言ってあげた = 我帮老师说 → ✅ 先生に静かにするように**言われた**（被老师说→受身形）
+4. △ 不算错，但忘れない是非意志性 → ✅ 忘れない**ように**、メモした。（ように更标准）
 :::
 
 </details>

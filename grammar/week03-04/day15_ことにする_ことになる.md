@@ -321,7 +321,7 @@ For now, mastering はずだ is enough.
 3. 今日届く（　　）のに、まだ届かない。
 
 <details>
-<summary>答案</summary>
+<summary>答案 / Answers</summary>
 
 :::zh
 1. **はずだ**（他出差中，按理不在公司）
@@ -332,6 +332,58 @@ For now, mastering はずだ is enough.
 1. **はずだ** (He's on a business trip, so logically he shouldn't be at the office.)
 2. **はず** (はずがない = there's no way it's that simple)
 3. **はずだった** (It was supposed to arrive today → はずだったのに)
+:::
+
+</details>
+
+### C. 翻译||C. Translation
+
+:::zh
+1. 我决定从明天起不吃甜食。（自己的决心）
+2. 被决定要调去大阪。（公司决定的）
+3. 这个学校规定穿校服。（规定/惯例）
+4. 包裹应该已经到了。（根据逻辑判断）
+5. 本应该3点见面的，但他没来。
+6. 我规定自己晚上11点前睡觉。（自律习惯）
+:::
+:::en
+1. I decided not to eat sweets starting tomorrow. (my own decision)
+2. It was decided that I'd transfer to Osaka. (company's decision)
+3. At this school, students are required to wear uniforms. (rule/custom)
+4. The package should have already arrived. (logical judgment)
+5. We were supposed to meet at 3, but he didn't come.
+6. I make it a rule to sleep before 11pm. (self-imposed habit)
+:::
+
+<details>
+<summary>答案 / Answers</summary>
+
+1. 明日から甘いものを食べないことにした。
+2. 大阪に転勤することになった。
+3. この学校では制服を着ることになっている。
+4. 荷物はもう届いているはずだ。
+5. 3時に会うはずだったのに、彼は来なかった。
+6. 夜11時前に寝ることにしている。
+
+</details>
+
+### D. 改错||D. Error Correction
+
+:::zh
+1. 会社を辞めることにした。（想表达"被公司辞退了"）
+2. 毎日運動するはずだ。（想表达"我规定自己每天运动"）
+3. 彼は来るはずがない。約束したから。（想表达"他应该会来"）
+4. 日本に行くことになった。（想表达"我自己决定去日本"）
+:::
+
+<details>
+<summary>答案 / Answers</summary>
+
+:::zh
+1. ❌ ことにした = 自己决定辞职 → ✅ 会社を辞める**ことになった**（外部决定/被辞退）
+2. ❌ はずだ = 按道理应该（推测） → ✅ 運動する**ことにしている**（自律的习惯规定）
+3. ❌ はずがない = 不可能来 → ✅ 来る**はずだ**（应该会来。因为约好了）
+4. ❌ ことになった = 被安排/外部决定 → ✅ 日本に行く**ことにした**（自己的决定）
 :::
 
 </details>
