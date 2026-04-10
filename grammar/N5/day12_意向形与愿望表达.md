@@ -1,6 +1,32 @@
 # Day 12 – 意向形与愿望表达
 
-## 4. 意向形（意志/邀请）||4. Volitional Form (Intent/Invitation)
+## 本课单词表
+
+| 单词 | 读音 | 含义 |
+|------|------|------|
+| 漢字 | かんじ | 汉字//kanji |
+| 海 | うみ | 大海//sea |
+| 叱る | しかる | 训斥//to scold |
+| 踏む | ふむ | 踩//to step on |
+| 盗む | ぬすむ | 偷//to steal |
+| 財布 | さいふ | 钱包//wallet |
+| 運動 | うんどう | 运动//exercise |
+| 休憩 | きゅうけい | 休息//break |
+| 引っ越す | ひっこす | 搬家//to move |
+| 大学院 | だいがくいん | 研究生院//graduate school |
+| 出張 | しゅっちょう | 出差//business trip |
+| 会議 | かいぎ | 会议//meeting |
+| 始まる | はじまる | 开始（自动）//to begin |
+| 工事 | こうじ | 施工//construction |
+| 終わる | おわる | 结束//to end |
+| 転職 | てんしょく | 跳槽//job change |
+| 荷物 | にもつ | 行李//luggage |
+| 留学 | りゅうがく | 留学//study abroad |
+| 妹 | いもうと | 妹妹//younger sister |
+| おもちゃ | おもちゃ | 玩具//toy |
+| 予定 | よてい | 计划/预定//plan |
+
+## 1. 意向形（意志/邀请）||1. Volitional Form (Intent/Invitation)
 
 ### 含义
 
@@ -116,7 +142,7 @@ Volitional form + と思う = express a plan or intention
 
 ---
 
-## 5. 〜つもりだ（打算/计划）||5. 〜つもりだ (Intention/Plan)
+## 2. 〜つもりだ（打算/计划）||2. 〜つもりだ (Intention/Plan)
 
 ### 接续
 
@@ -182,7 +208,7 @@ Volitional form + と思う = express a plan or intention
 
 ---
 
-## 6. 〜予定だ（预定/安排）||6. 〜予定だ (Schedule/Arrangement)
+## 3. 〜予定だ（预定/安排）||3. 〜予定だ (Schedule/Arrangement)
 
 ### 接続
 
@@ -230,7 +256,7 @@ Volitional form + と思う = express a plan or intention
 
 ---
 
-## 7. つもり vs 予定 vs ようと思う 比较表||7. Comparison: つもり vs 予定 vs ようと思う
+## 4. つもり vs 予定 vs ようと思う 比较表||4. Comparison: つもり vs 予定 vs ようと思う
 
 :::zh
 | 表达 | 确定度 | 语感 | 场景 | 例 |
@@ -288,7 +314,7 @@ Volitional form + と思う = express a plan or intention
 
 ---
 
-## 8. 〜ましょう / 〜ましょうか（提议/提供帮助）||8. 〜ましょう / 〜ましょうか (Suggestions/Offering Help)
+## 5. 〜ましょう / 〜ましょうか（提议/提供帮助）||5. 〜ましょう / 〜ましょうか (Suggestions/Offering Help)
 
 ### ましょう = 意向形的敬体||ましょう = Polite form of the volitional
 
@@ -360,7 +386,7 @@ Volitional form + と思う = express a plan or intention
 
 ---
 
-## 9. 〜たい / 〜たがる / 〜ほしい（愿望表达）||9. 〜たい / 〜たがる / 〜ほしい (Expressing Desires)
+## 6. 〜たい / 〜たがる / 〜ほしい（愿望表达）||6. 〜たい / 〜たがる / 〜ほしい (Expressing Desires)
 
 ### 〜たい（我想做……）||〜たい (I want to do…)
 

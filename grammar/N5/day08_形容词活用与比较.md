@@ -1,6 +1,30 @@
 # Day 8 – 形容词活用与比较表达
 
-## 5. い形容词 完整活用表||5. い-adjective Full Conjugation Table
+## 本课单词表
+
+| 单词 | 读音 | 含义 |
+|------|------|------|
+| 大きい | おおきい | 大//big |
+| 高い | たかい | 高/贵//tall; expensive |
+| 安い | やすい | 便宜//cheap |
+| 寒い | さむい | 冷//cold |
+| 速い | はやい | 快//fast |
+| 楽しい | たのしい | 快乐//fun |
+| 気持ちいい | きもちいい | 舒服//pleasant |
+| 上手 | じょうず | 擅长//skilled |
+| 元気 | げんき | 有精神//energetic |
+| 簡単 | かんたん | 简单//simple |
+| 嫌い | きらい | 讨厌//dislike |
+| きれい | きれい | 漂亮/干净//pretty; clean |
+| 掃除 | そうじ | 打扫//cleaning |
+| 医者 | いしゃ | 医生//doctor |
+| 大人 | おとな | 大人//adult |
+| 将来 | しょうらい | 将来//future |
+| 飲み物 | のみもの | 饮料//beverage |
+| 背 | せ | 身高/背//height; back |
+| 紅茶 | こうちゃ | 红茶//black tea |
+
+## 1. い形容词 完整活用表||1. い-adjective Full Conjugation Table
 
 ### 基本规则：去い，加各种后缀||Basic rule: drop い, add the appropriate suffix
 
@@ -88,7 +112,7 @@
 
 ---
 
-## 6. な形容词 完整活用表||6. な-adjective Full Conjugation Table
+## 2. な形容词 完整活用表||2. な-adjective Full Conjugation Table
 
 ### 基本规则：本质上接「だ」的活用||Basic rule: conjugates via 「だ」
 
@@ -186,7 +210,7 @@ These look like い-adjectives but are actually な-adjectives:
 
 ---
 
-## 7. 比较表达||7. Comparison expressions
+## 3. 比较表达||3. Comparison expressions
 
 ### ① AはBより〜（A比B更……）||① AはBより〜 (A is more … than B)
 
@@ -342,7 +366,7 @@ Both … and …:          AもBも〜 / どちらも〜
 
 ---
 
-## 8. 形容词副词化||8. Adverbialisation of adjectives
+## 4. 形容词副词化||4. Adverbialisation of adjectives
 
 :::zh
 副词化（い→く、な→に）在日常表达中极其常用。

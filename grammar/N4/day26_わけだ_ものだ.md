@@ -1,6 +1,26 @@
 # Day 26 – わけだ・ものだ
 
-## 4. 〜わけだ（难怪/当然/也就是说）||4. 〜わけだ (No wonder / Of course / In other words)
+## 本课单词表
+
+| 单词 | 读音 | 含义 |
+|------|------|------|
+| 道理で | どうりで | 难怪//no wonder |
+| エアコン | エアコン | 空调//air conditioner |
+| 犯人 | はんにん | 犯人//culprit |
+| 節約 | せつやく | 节约//saving |
+| 反対 | はんたい | 反对//opposition |
+| 計画 | けいかく | 计划//plan |
+| 秘密 | ひみつ | 秘密//secret |
+| 勝手に | かってに | 擅自//without permission |
+| 人生 | じんせい | 人生//life |
+| 経つ | たつ | 经过（时间）//to pass (time) |
+| 川 | かわ | 河//river |
+| 年上 | としうえ | 年长//older |
+| 敬語 | けいご | 敬语//polite speech |
+| 悪口 | わるぐち | 坏话//bad-mouthing |
+| 守る | まもる | 遵守/保护//to keep/protect |
+
+## 1. 〜わけだ（难怪/当然/也就是说）||1. 〜わけだ (No wonder / Of course / In other words)
 
 ### 接続||Conjugation
 :::zh
@@ -65,7 +85,7 @@ Plain form + わけだ
 
 ---
 
-## 5. 〜わけがない / わけではない / わけにはいかない||5. わけ Series — Three Negative Patterns
+## 2. 〜わけがない / わけではない / わけにはいかない||2. わけ Series — Three Negative Patterns
 
 ### ① わけがない（不可能……）||① わけがない (There's no way…)
 
@@ -167,7 +187,7 @@ Due to social norms, morality, or obligations:
 
 ---
 
-## 6. 〜ものだ（感慨/回忆/应该）||6. 〜ものだ (Exclamation / Nostalgia / "One should…")
+## 3. 〜ものだ（感慨/回忆/应该）||3. 〜ものだ (Exclamation / Nostalgia / "One should…")
 
 ### 接続||Conjugation
 :::zh
@@ -255,7 +275,7 @@ Used with「〜た＋ものだ」to express nostalgia:
 
 ---
 
-## 7. 〜ものだから / 〜もので（因为……——辩解语气）||7. 〜ものだから / 〜もので (Because… — excuse tone)
+## 4. 〜ものだから / 〜もので（因为……——辩解语气）||4. 〜ものだから / 〜もので (Because… — excuse tone)
 
 ### 接続||Conjugation
 :::zh
@@ -308,7 +328,7 @@ Plain form + ものだから / もので
 
 ---
 
-## 8. わけだ vs ものだ 总区分||8. わけだ vs ものだ — Key Differences
+## 5. わけだ vs ものだ 总区分||5. わけだ vs ものだ — Key Differences
 
 :::zh
 | | わけだ | ものだ |

@@ -1,6 +1,23 @@
 # Day 10 – 条件表达 たら・なら
 
-## 4. 〜なら（话题条件）||4. 〜なら (Topic-based condition)
+## 本课单词表
+
+| 单词 | 读音 | 含义 |
+|------|------|------|
+| 春 | はる | 春天//spring |
+| 秋 | あき | 秋天//autumn |
+| 冬 | ふゆ | 冬天//winter |
+| 咲く | さく | 开（花）//to bloom |
+| 氷 | こおり | 冰//ice |
+| 酒 | さけ | 酒//alcohol |
+| 押す | おす | 按/推//to push |
+| 駅 | えき | 车站//station |
+| 試合 | しあい | 比赛//match |
+| 中止 | ちゅうし | 中止//cancellation |
+| 電気 | でんき | 电灯//light |
+| 相談する | そうだんする | 商量//to consult |
+
+## 1. 〜なら（话题条件）||1. 〜なら (Topic-based condition)
 
 ### 接続||Conjugation
 
@@ -124,7 +141,7 @@
 
 ---
 
-## 5. 四种条件 対比总結||5. Summary comparison of all four conditionals
+## 2. 四种条件 対比总結||2. Summary comparison of all four conditionals
 
 :::zh
 | | と | ば | たら | なら |
@@ -204,7 +221,7 @@ Picking up a topic / giving advice → なら
 
 ---
 
-## 6. よくある間違い（常见错误）||6. よくある間違い (Common mistakes)
+## 3. よくある間違い（常见错误）||3. よくある間違い (Common mistakes)
 
 ### 错误1：と后面接请求/命令||Mistake 1: following と with a request or command
 
@@ -306,7 +323,7 @@ Picking up a topic / giving advice → なら
 
 ---
 
-## 7. 今日练习||7. Today's practice
+## 4. 今日练习||4. Today's practice
 
 ### A. 选择と/ば/たら/なら||A. Choose と / ば / たら / なら
 
