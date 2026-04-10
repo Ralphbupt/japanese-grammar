@@ -1,6 +1,30 @@
 # Day 6 – ない形与义务表达
 
-## 6. ない形（否定形）||ない Form (Negative Form)
+## 本课单词表
+
+| 单词 | 读音 | 含义 |
+|------|------|------|
+| 結婚 | けっこん | 结婚//marriage |
+| 漢字 | かんじ | 汉字//kanji |
+| 心配 | しんぱい | 担心//worry |
+| 辞書 | じしょ | 字典//dictionary |
+| 授業 | じゅぎょう | 课//class |
+| 宿題 | しゅくだい | 作业//homework |
+| 弟 | おとうと | 弟弟//younger brother |
+| 会う | あう | 见面//to meet |
+| 歌う | うたう | 唱歌//to sing |
+| 薬 | くすり | 药//medicine |
+| レポート | レポート | 报告//report |
+| 書類 | しょるい | 文件//document |
+| 大事 | だいじ | 重要//important |
+| 試験 | しけん | 考试//exam |
+| 靴 | くつ | 鞋//shoes |
+| 傘 | かさ | 伞//umbrella |
+| 電気 | でんき | 电灯/电//electricity |
+| 遅刻 | ちこく | 迟到//being late |
+| 準備 | じゅんび | 准备//preparation |
+
+## 1. ない形（否定形）||ない Form (Negative Form)
 
 ### 含義||Meaning
 
@@ -113,7 +137,7 @@ This is the only verb with an irregular ない form.
 
 ---
 
-## 7. 〜なければならない / 〜なければいけない（必須）||〜なければならない / 〜なければいけない (Must / Have to)
+## 2. 〜なければならない / 〜なければいけない（必須）||〜なければならない / 〜なければいけない (Must / Have to)
 
 ### 接続||Conjugation
 
@@ -223,7 +247,7 @@ The two are almost identical in meaning; the difference is subtle:
 
 ---
 
-## 8. 〜なくてもいい（不必）||〜なくてもいい (Don't have to)
+## 3. 〜なくてもいい（不必）||〜なくてもいい (Don't have to)
 
 ### 接続||Conjugation
 
@@ -285,7 +309,7 @@ These two are **exact opposites**:
 
 ---
 
-## 9. 义务与许可 完整对照表||Complete Permission & Obligation Reference
+## 4. 义务与许可 完整对照表||Complete Permission & Obligation Reference
 
 :::zh
 | 表达 | 含义 | 例句 |
@@ -324,7 +348,7 @@ Obligation  なければならない      なくてもいい
 
 ---
 
-## 10. 〜ないで vs 〜なくて（ない形的两种て形）||〜ないで vs 〜なくて (Two て forms of the ない form)
+## 5. 〜ないで vs 〜なくて（ない形的两种て形）||〜ないで vs 〜なくて (Two て forms of the ない form)
 
 ### 接続||Conjugation
 

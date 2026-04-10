@@ -1,6 +1,21 @@
 # Day 19 – 受身形详解与使役受身形
 
-## 2. 受身形详解（N4深化）||2. Passive Form — In Depth (N4 Level)
+## 本课单词表
+
+| 单词 | 读音 | 含义 |
+|------|------|------|
+| 残業 | ざんぎょう | 加班//overtime |
+| 野菜 | やさい | 蔬菜//vegetables |
+| 上司 | じょうし | 上司//boss |
+| 練習 | れんしゅう | 练习//practice |
+| 大量 | たいりょう | 大量//large amount |
+| 命令 | めいれい | 命令//command |
+| 教室 | きょうしつ | 教室//classroom |
+| 小説 | しょうせつ | 小说//novel |
+| 建物 | たてもの | 建筑//building |
+| 泣く | なく | 哭//to cry |
+
+## 1. 受身形详解（N4深化）||1. Passive Form — In Depth (N4 Level)
 
 :::zh
 Day 8学了受身形入门，现在深化四种被动的用法。
@@ -188,7 +203,7 @@ In formal writing and news, the passive is often used to **describe events objec
 
 ---
 
-## 3. 使役受身形（被迫做……）||3. Causative-Passive Form (Being Forced To Do...)
+## 2. 使役受身形（被迫做……）||2. Causative-Passive Form (Being Forced To Do...)
 
 ### 含义||Meaning
 
@@ -274,7 +289,7 @@ Spoken form: 書か**される** (3 syllables — concise!)
 
 ---
 
-## 4. 使役 vs 受身 vs 使役受身 三者对比||4. Causative vs. Passive vs. Causative-Passive — Three-Way Comparison
+## 3. 使役 vs 受身 vs 使役受身 三者对比||3. Causative vs. Passive vs. Causative-Passive — Three-Way Comparison
 
 :::zh
 | | 使役 | 受身 | 使役受身 |
@@ -334,7 +349,7 @@ Spoken form: 書か**される** (3 syllables — concise!)
 
 ---
 
-## 5. 动词变形 总结对照表||5. Verb Conjugation Master Reference Table
+## 4. 动词变形 总结对照表||4. Verb Conjugation Master Reference Table
 
 :::zh
 到此为止学过的所有动词变形：

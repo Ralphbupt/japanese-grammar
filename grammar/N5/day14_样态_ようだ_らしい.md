@@ -1,6 +1,23 @@
 # Day 14 – 样态表达 ようだ・らしい・みたいだ・っぽい
 
-## 5. 〜ようだ / 〜ように（推断）||5. 〜ようだ / 〜ように (Inference)
+## 本课单词表
+
+| 单词 | 读音 | 含义 |
+|------|------|------|
+| 空 | そら | 天空//sky |
+| 病気 | びょうき | 生病//illness |
+| 上がる | あがる | 上升//to rise |
+| 事故 | じこ | 事故//accident |
+| 発想 | はっそう | 想法//idea |
+| 行動 | こうどう | 行动//action |
+| 白い | しろい | 白色//white |
+| 性格 | せいかく | 性格//personality |
+| 具合 | ぐあい | 身体状况//condition |
+| 迷子 | まいご | 迷路的孩子//lost child |
+| 景色 | けしき | 景色//scenery |
+| 優しい | やさしい | 温柔//gentle |
+
+## 1. 〜ようだ / 〜ように（推断）||1. 〜ようだ / 〜ように (Inference)
 
 ### 接続
 
@@ -90,7 +107,7 @@
 
 ---
 
-## 6. 〜みたいだ（口语推断）||6. 〜みたいだ (Casual Inference)
+## 2. 〜みたいだ（口语推断）||2. 〜みたいだ (Casual Inference)
 
 ### 接続
 
@@ -170,7 +187,7 @@
 
 ---
 
-## 7. 〜らしい（似乎/听说/典型）||7. 〜らしい (Apparently / Hearsay / Typical)
+## 3. 〜らしい（似乎/听说/典型）||3. 〜らしい (Apparently / Hearsay / Typical)
 
 ### 接続
 
@@ -270,7 +287,7 @@ Noun + らしい = having the qualities expected of that noun:
 
 ---
 
-## 8. 〜っぽい（口语 — "有点像/容易……"）||8. 〜っぽい (Colloquial — "Kind of like / tends to…")
+## 4. 〜っぽい（口语 — "有点像/容易……"）||4. 〜っぽい (Colloquial — "Kind of like / tends to…")
 
 ### 接続
 
@@ -352,7 +369,7 @@ Colloquial expression meaning "kind of gives the feeling of…" or "tends to…"
 
 ---
 
-## 9. 全部推测表达 总对比||9. Complete Comparison of All Inference Expressions
+## 5. 全部推测表达 总对比||5. Complete Comparison of All Inference Expressions
 
 :::zh
 | 表达 | 例句 | 场景 | 判断根据 |
@@ -382,7 +399,7 @@ Colloquial expression meaning "kind of gives the feeling of…" or "tends to…"
 
 ---
 
-## 10. 同一场景的不同表达||10. Different Expressions for the Same Scenario
+## 6. 同一场景的不同表达||6. Different Expressions for the Same Scenario
 
 ### 场景A：朋友好像生病了||Scene A: A Friend Seems to Be Sick
 

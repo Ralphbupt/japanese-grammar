@@ -1,6 +1,52 @@
 # Day 2 – 核心助词详解（に・で・へ・と・から・まで）
 
-## 5. 基础助词详解||5. Core Particles — Detailed Guide
+## 本课单词表
+
+| 单词 | 读音 | 含义 |
+|------|------|------|
+| 私 | わたし | 我//I |
+| 彼 | かれ | 他//he |
+| 彼女 | かのじょ | 她//she |
+| 母 | はは | 妈妈（说自己的）//mother |
+| 学生 | がくせい | 学生//student |
+| 先生 | せんせい | 老师//teacher |
+| 本 | ほん | 书//book |
+| 映画 | えいが | 电影//movie |
+| 難しい | むずかしい | 难//difficult |
+| 猫 | ねこ | 猫//cat |
+| 犬 | いぬ | 狗//dog |
+| 雨 | あめ | 雨//rain |
+| 道 | みち | 路//road |
+| 木 | き | 树//tree |
+| 机 | つくえ | 桌子//desk |
+| 箸 | はし | 筷子//chopsticks |
+| 風邪 | かぜ | 感冒//cold |
+| 店 | みせ | 店//shop |
+| 町 | まち | 城镇//town |
+| 山 | やま | 山//mountain |
+| 象 | ぞう | 大象//elephant |
+| 鼻 | はな | 鼻子//nose |
+| 図書館 | としょかん | 图书馆//library |
+| 大学 | だいがく | 大学//university |
+| 世界 | せかい | 世界//world |
+| 料理 | りょうり | 料理/做菜//cooking |
+| 勉強 | べんきょう | 学习//study |
+| 誰 | だれ | 谁//who |
+| 何 | なに | 什么//what |
+| 昨日 | きのう | 昨天//yesterday |
+| 明日 | あした | 明天//tomorrow |
+| 今日 | きょう | 今天//today |
+| 毎朝 | まいあさ | 每天早上//every morning |
+| 食べる | たべる | 吃//eat |
+| 飲む | のむ | 喝//drink |
+| 読む | よむ | 读//read |
+| 歩く | あるく | 走路//walk |
+| 住む | すむ | 住//live |
+| 降る | ふる | 下（雨/雪）//fall |
+| 作る | つくる | 做/制作//make |
+| 卒業する | そつぎょうする | 毕业//graduate |
+
+## 1. 基础助词详解||1. Core Particles — Detailed Guide
 
 ---
 
@@ -763,7 +809,7 @@ Similar to に, but emphasizes direction of movement.
 
 ---
 
-## 6. 敬体与简体的切换规则||6. Switching Between Polite and Plain Forms
+## 2. 敬体与简体的切换规则||2. Switching Between Polite and Plain Forms
 
 :::zh
 这个在阅读和听力中非常重要：
