@@ -17,7 +17,137 @@
 | 電気 | でんき | 电灯//light |
 | 相談する | そうだんする | 商量//to consult |
 
-## 1. 〜なら（话题条件）||1. 〜なら (Topic-based condition)
+## 1. 〜たら（万能条件・完成后）||1. 〜たら (All-purpose conditional / after completion)
+
+### 接続||Conjugation
+
+:::zh
+- 动词た形 + ら：行った → 行ったら、食べた → 食べたら
+- い形容词 去い + かったら：寒い → 寒かったら、高い → 高かったら
+- な形容词 + だったら：暇 → 暇だったら、元気 → 元気だったら
+- 名词 + だったら：雨 → 雨だったら、学生 → 学生だったら
+- 否定：动词なかったら / 名・な形 じゃなかったら / い形 くなかったら
+:::
+
+:::en
+- Verb た-form + ら: 行った → 行ったら, 食べた → 食べたら
+- い-adjective drop い + かったら: 寒い → 寒かったら
+- な-adjective + だったら: 暇 → 暇だったら
+- Noun + だったら: 雨 → 雨だったら
+- Negative: 動詞 なかったら / 名・な形 じゃなかったら / い形 くなかったら
+:::
+
+### 核心語感||Core nuance
+
+:::zh
+**"等A发生了之后……"** 或 **"万一A的话……"**
+たら 是四种条件里最**万能、最常用**的一个 — 当你不确定该用哪个时，用 たら 通常都对。
+:::
+
+:::en
+**"After A happens…"** or **"If A should happen…"**
+たら is the **most versatile and commonly used** of the four conditionals — when in doubt, たら is usually safe.
+:::
+
+### 三大用法||Three main uses
+
+:::zh
+**用法 ①：完成条件（A 完成后做 B）— 最常用**
+- 宿題が終わっ**たら**、遊びに行く。（作业写完之后去玩。）
+- 駅に着い**たら**、電話してください。（到了车站请打电话。）
+- 18 歳になっ**たら**、お酒が飲める。（满 18 岁就能喝酒。）
+
+**用法 ②：假设条件（如果 A 发生的话）— 万一/可能性**
+- 雨が降っ**たら**、試合は中止です。（如果下雨，比赛中止。）
+- お金があっ**たら**、車を買いたい。（有钱的话想买车。）
+- 困っ**たら**、いつでも相談してください。（如果有困难，随时找我商量。）
+
+**用法 ③：过去意外发现（"……一看，结果……"）— 后句必须是过去时**
+- 家に帰っ**たら**、誰もいなかった。（回到家一看，没有人。）
+- 窓を開け**たら**、雪が降っていた。（打开窗户一看，下雪了。）
+- ボタンを押し**たら**、電気がついた。（按了按钮，灯就亮了。）
+:::
+
+:::en
+**Use ①: Completion (after A is done, do B) — most common**
+- 宿題が終わっ**たら**、遊びに行く。（After I finish my homework, I'll go play.）
+- 駅に着い**たら**、電話してください。（Please call when you arrive at the station.）
+- 18 歳になっ**たら**、お酒が飲める。（Once you turn 18, you can drink alcohol.）
+
+**Use ②: Hypothetical (if A happens) — possibility**
+- 雨が降っ**たら**、試合は中止です。（If it rains, the match is cancelled.）
+- お金があっ**たら**、車を買いたい。（If I had money, I'd buy a car.）
+- 困っ**たら**、いつでも相談してください。（If you have trouble, consult me any time.）
+
+**Use ③: Past discovery / unexpected ("when I did A, I found B") — second clause must be past tense**
+- 家に帰っ**たら**、誰もいなかった。（When I got home, no one was there.）
+- 窓を開け**たら**、雪が降っていた。（When I opened the window, it was snowing.）
+- ボタンを押し**たら**、電気がついた。（When I pressed the button, the light came on.）
+:::
+
+### 例句||Example sentences
+
+:::zh
+1. 春になっ**たら**、桜が咲きます。（到了春天，樱花就开。）
+2. 安かっ**たら**、買います。（便宜的话就买。）
+3. 暇だっ**たら**、映画を見に行こう。（有空的话去看电影吧。）
+4. 食事が終わっ**たら**、薬を飲んでください。（吃完饭后请吃药。）
+5. もし宝くじが当たっ**たら**、何をしますか。（如果中了彩票，你会做什么？）
+6. 駅に着い**たら**、メールします。（到车站后我发邮件。）
+7. 起き**たら**、もう 10 時だった。（一起床发现已经 10 点了。）
+8. 冷蔵庫を開け**たら**、ビールがなかった。（打开冰箱一看，没有啤酒了。）
+:::
+
+:::en
+1. 春になっ**たら**、桜が咲きます。（When spring comes, the cherry blossoms bloom.）
+2. 安かっ**たら**、買います。（If it's cheap, I'll buy it.）
+3. 暇だっ**たら**、映画を見に行こう。（If you're free, let's go see a movie.）
+4. 食事が終わっ**たら**、薬を飲んでください。（After your meal, please take the medicine.）
+5. もし宝くじが当たっ**たら**、何をしますか。（If you won the lottery, what would you do?）
+6. 駅に着い**たら**、メールします。（I'll email you when I arrive at the station.）
+7. 起き**たら**、もう 10 時だった。（When I woke up, it was already 10 o'clock.）
+8. 冷蔵庫を開け**たら**、ビールがなかった。（When I opened the fridge, there was no beer.）
+:::
+
+### たら的特点||Characteristics of たら
+
+:::zh
+- **最万能**：几乎所有条件场景都能用，不知道用哪个就用たら
+- 后句可以接**意志、请求、命令、建议**：「終わったら教えて」「着いたら電話して」
+- 前后主语可以不同
+- 用法 ③（过去意外）是たら独有的特殊用法
+- **「もし」可以加在前面强调假设**：「もし時間があったら、来てください」
+:::
+
+:::en
+- **Most versatile**: works for almost any conditional situation; when unsure, use たら
+- The second clause can be **volition, request, command, or advice**: 「終わったら教えて」「着いたら電話して」
+- The two clauses can have different subjects
+- Use ③ (past discovery) is unique to たら
+- **「もし」 can be added in front for emphasis on hypothesis**: 「もし時間があったら、来てください」
+:::
+
+### 辨析：たら vs 其他三種||Comparison: たら vs the other three
+
+:::zh
+| 比较 | 区别 |
+|------|------|
+| **たら vs と** | と强调必然/反复/自然规律；たら强调一次性的"完成后"或"万一"。「春になると花が咲く」（每年都这样）vs「春になったら旅行しよう」（具体一次） |
+| **たら vs ば** | ば偏书面/谚语/逻辑假设；たら更口语/具体。「努力すれば成功する」（书面）vs「努力したら成功する」（口语） |
+| **たら vs なら** | たら要 A→B 时间顺序；なら不要求顺序，可 B 先于 A。「日本に行ったら、写真を撮る」（去了之后拍）vs「日本に行くなら、カメラを買う」（去之前买相机） |
+:::
+
+:::en
+| Comparison | Difference |
+|------|------|
+| **たら vs と** | と stresses inevitability/repetition/natural law; たら stresses a one-off "after completion" or "what if". 「春になると花が咲く」(every year) vs 「春になったら旅行しよう」(this specific time) |
+| **たら vs ば** | ば leans literary / proverbial / logical hypothesis; たら is more conversational and concrete. 「努力すれば成功する」(formal) vs 「努力したら成功する」(spoken) |
+| **たら vs なら** | たら requires A→B time order; なら does not — B can precede A. 「日本に行ったら、写真を撮る」(take photos after going) vs 「日本に行くなら、カメラを買う」(buy a camera before going) |
+:::
+
+---
+
+## 2. 〜なら（话题条件）||2. 〜なら (Topic-based condition)
 
 ### 接続||Conjugation
 
@@ -141,7 +271,7 @@
 
 ---
 
-## 2. 四种条件 対比总結||2. Summary comparison of all four conditionals
+## 3. 四种条件 対比总結||3. Summary comparison of all four conditionals
 
 :::zh
 | | と | ば | たら | なら |
@@ -221,7 +351,7 @@ Picking up a topic / giving advice → なら
 
 ---
 
-## 3. よくある間違い（常见错误）||3. よくある間違い (Common mistakes)
+## 4. よくある間違い（常见错误）||4. よくある間違い (Common mistakes)
 
 ### 错误1：と后面接请求/命令||Mistake 1: following と with a request or command
 
@@ -323,7 +453,7 @@ Picking up a topic / giving advice → なら
 
 ---
 
-## 4. 今日练习||4. Today's practice
+## 5. 今日练习||5. Today's practice
 
 ### A. 选择と/ば/たら/なら||A. Choose と / ば / たら / なら
 
