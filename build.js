@@ -522,6 +522,33 @@ async function main() {
           grammarPoints.push(gpName);
         }
       }
+      // Clean grammar points: strip "1. " numbering and "（中文释义）" parens.
+      // Only keep entries that look like real grammar patterns:
+      //   - Contains 〜/～ (tilde marks a grammar pattern)
+      //   - OR is short kana-mostly text like "て形", "ます形"
+      // Reject section titles like "て形的基本用法", "今日练习", "本课单词表".
+      const cleanPoints = grammarPoints
+        .map(p => p.replace(/^\d+[.、．]\s*/, "").replace(/（[^）]*）/g, "").trim())
+        .filter(p => {
+          if (p.length === 0) return false;
+          if (/[〜～]/.test(p)) return true;
+          // Allow short kana-dominant patterns (≤8 chars, mostly kana, no Chinese explainer words)
+          if (p.length > 8) return false;
+          if (/[的与和及或]/.test(p)) return false;
+          if (/(用法|应用|练习|总结|单词|计划|复习|基本|形式)/.test(p)) return false;
+          const kanaCount = (p.match(/[぀-ゟ゠-ヿ]/g) || []).length;
+          return kanaCount >= 1 && kanaCount >= p.length / 2;
+        });
+
+      // SEO lead paragraph: keyword-rich summary inserted after h1 (#B)
+      const groupLevel = group.label;
+      if (cleanPoints.length > 0) {
+        const leadPoints = cleanPoints.slice(0, 6);
+        const pointsZh = leadPoints.map(p => `<strong>${p}</strong>`).join("、");
+        const seoLead = `<p class="seo-lead">本课讲解 ${groupLevel} 语法 ${pointsZh} 的接续规则、含义、例句辨析与易错点对比，配套练习题与 JLPT ${groupLevel} 备考要点。</p>`;
+        // Insert after the first </h1>
+        html = html.replace(/(<\/h1>)/, `$1\n${seoLead}`);
+      }
 
       // Add id attributes to h2 elements for direct linking (#5)
       html = html.replace(/<h2([^>]*)>([\s\S]*?)<\/h2>/gi, (match, attrs, content) => {
@@ -554,7 +581,7 @@ async function main() {
       articlesHtml.push(
         `<article id="${file.id}" class="lesson">${html}</article>`
       );
-      lessonPages.push({ id: file.id, title, sidebarTitle, html, jaTitle: jaTitle || shortTitle, filePath: file.path, grammarPoints, level: group.label, md });
+      lessonPages.push({ id: file.id, title, sidebarTitle, html, jaTitle: jaTitle || shortTitle, filePath: file.path, grammarPoints, cleanPoints, level: group.label, md });
     }
   }
 
@@ -757,11 +784,39 @@ var disqus_config = function () {
     const lessonDir = path.join(__dirname, "dist", lesson.id);
     fs.mkdirSync(lessonDir, { recursive: true });
     const lessonUrl = `${SITE}${lesson.id}/`;
-    const lessonTitle = `${lesson.jaTitle} | Japanese Grammar Notes`;
-    // #4: Auto-generate more specific descriptions using grammar points
-    const lessonDesc = lesson.grammarPoints && lesson.grammarPoints.length > 0
-      ? `Learn ${lesson.grammarPoints.slice(0, 4).join(", ")} – Free Japanese grammar lesson with examples.`
-      : `${lesson.title} – Free Japanese grammar lesson with conjugation rules, example sentences, and practice exercises.`;
+    // SEO-friendly Chinese-first title & description targeting long-tail searches
+    const lessonLevel = lesson.level || "";
+    const cleanPoints = lesson.cleanPoints || [];
+    let lessonTitle, lessonDesc;
+    if (cleanPoints.length >= 2) {
+      // Comparison-type title: "X / Y 用法详解 | 日语 N3 语法 区别+例句"
+      const titlePoints = cleanPoints.slice(0, 2).join(" / ");
+      lessonTitle = `${titlePoints} 用法详解 | 日语 ${lessonLevel} 语法 区别+例句`;
+      lessonDesc = `日语 ${lessonLevel} 语法 ${cleanPoints.slice(0, 4).join("、")} 的接续、含义、例句、辨析与易错点对比。JLPT ${lessonLevel} 备考笔记，含练习题与答案。`;
+    } else if (cleanPoints.length === 1) {
+      lessonTitle = `${cleanPoints[0]} 用法详解 | 日语 ${lessonLevel} 语法 例句+易错点`;
+      lessonDesc = `深入讲解日语 ${lessonLevel} 语法 ${cleanPoints[0]} 的接续规则、用法、例句与易错点。JLPT ${lessonLevel} 备考必看笔记。`;
+    } else {
+      // Fallback for grammar list / overview pages
+      lessonTitle = `${lesson.jaTitle} | 日语 ${lessonLevel} 语法笔记 - JLPT 备考`;
+      lessonDesc = `${lesson.title} - 日语 ${lessonLevel} 语法笔记，含接续规则、例句、辨析与练习。免费 JLPT 备考资源。`;
+    }
+
+    // Auto-generate Chinese-first keywords (override hardcoded LESSON_KEYWORDS)
+    const autoKeywords = [
+      `日语 ${lessonLevel} 语法`,
+      `JLPT ${lessonLevel}`,
+      `${lessonLevel} 文法`,
+      ...cleanPoints.slice(0, 4).flatMap(p => [`${p} 用法`, `${p} 例句`]),
+      cleanPoints.length >= 2 ? `${cleanPoints[0]} ${cleanPoints[1]} 区别` : null,
+      cleanPoints.length >= 2 ? `${cleanPoints[0]} vs ${cleanPoints[1]}` : null,
+      "日语语法笔记",
+      "Japanese grammar",
+    ].filter(Boolean);
+    // Combine with existing English keywords for coverage, but lead with Chinese
+    const existingKw = LESSON_KEYWORDS[lesson.id] || "";
+    const lessonKeywords = [...autoKeywords, existingKw].filter(Boolean).join(", ");
+
     const ogImageUrl = `${SITE}${lesson.id}/og-image.png`;
 
     // Prev/next navigation HTML
@@ -803,7 +858,7 @@ var disqus_config = function () {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${lessonTitle}</title>
 <meta name="description" content="${lessonDesc.replace(/"/g, '&quot;')}">
-<meta name="keywords" content="${LESSON_KEYWORDS[lesson.id] || ''}">
+<meta name="keywords" content="${lessonKeywords.replace(/"/g, '&quot;')}">
 <link rel="canonical" href="${lessonUrl}">
 <link rel="alternate" hreflang="ja" href="${lessonUrl}">
 <link rel="alternate" hreflang="zh" href="${lessonUrl}">
@@ -1318,6 +1373,16 @@ code {
   font-size: .88em;
 }
 pre code { background: none; padding: 0; }
+
+/* SEO lead paragraph (keyword-rich summary after h1) */
+.seo-lead {
+  font-size: .95rem; color: #555;
+  background: #fafaf2; border-left: 3px solid var(--word-border);
+  padding: .7rem 1rem; margin: 0 0 1.5rem;
+  border-radius: 0 6px 6px 0;
+  line-height: 1.7;
+}
+.seo-lead strong { color: var(--accent); font-weight: 600; }
 
 /* Cross-links */
 .related-grammar {
