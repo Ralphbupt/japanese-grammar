@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const { execSync } = require("child_process");
 const { Marked } = require("marked");
+const sharp = require("sharp");
 const KuroshiroMod = require("kuroshiro");
 const Kuroshiro = KuroshiroMod.default || KuroshiroMod;
 const KuromojiMod = require("kuroshiro-analyzer-kuromoji");
@@ -471,8 +472,10 @@ async function main() {
       // Parse markdown to HTML
       let html = await marked.parse(bilingualMd);
 
-      // Convert language markers to divs
-      html = html.replace(/<!--lang:(zh|en):start-->/g, '<div class="lang-$1">');
+      // Convert language markers to divs (with lang attribute for SEO)
+      html = html.replace(/<!--lang:(zh|en):start-->/g, (_, lang) =>
+        lang === "zh" ? '<div class="lang-zh" lang="zh-CN">' : '<div class="lang-en" lang="en">'
+      );
       html = html.replace(/<!--lang:(zh|en):end-->/g, '</div>');
 
       // Bilingual headings: <h2>中文||English</h2>
@@ -505,6 +508,36 @@ async function main() {
         }
       );
 
+      // Extract grammar points from h2 headings in the original markdown for SEO descriptions
+      const grammarPoints = [];
+      const mdH2Regex = /^##\s+(.+)$/gm;
+      let mdH2Match;
+      while ((mdH2Match = mdH2Regex.exec(md)) !== null) {
+        let headingText = mdH2Match[1].replace(/[#*`]/g, "").trim();
+        // Grammar points must contain 〜/～ OR Japanese kana (hiragana/katakana)
+        // This excludes pure Chinese headings like "本课单词表" or "练习"
+        if (/[〜～]/.test(headingText) || /[\u3040-\u309f\u30a0-\u30ff]/.test(headingText)) {
+          // Use text before || if bilingual heading
+          const gpName = headingText.includes("||") ? headingText.split("||")[0].trim() : headingText;
+          grammarPoints.push(gpName);
+        }
+      }
+
+      // Add id attributes to h2 elements for direct linking (#5)
+      html = html.replace(/<h2([^>]*)>([\s\S]*?)<\/h2>/gi, (match, attrs, content) => {
+        // If bilingual (has lang-zh span), use only the zh text for slug
+        const zhMatch = content.match(/<span class="lang-zh">([\s\S]*?)<\/span>/);
+        let slugSource;
+        if (zhMatch) {
+          slugSource = zhMatch[1].replace(/<[^>]+>/g, "").trim();
+        } else {
+          slugSource = content.replace(/<[^>]+>/g, "").trim();
+        }
+        // Generate a clean id from the text
+        const slug = slugSource.replace(/[\s\u3000]+/g, "_").replace(/[<>"'&]/g, "");
+        return `<h2${attrs} id="${slug}">${content}</h2>`;
+      });
+
       // Add furigana (kana-based detection)
       console.log(`  Processing ${file.id}...`);
       html = await addFurigana(kuro, html);
@@ -521,8 +554,59 @@ async function main() {
       articlesHtml.push(
         `<article id="${file.id}" class="lesson">${html}</article>`
       );
-      lessonPages.push({ id: file.id, title, sidebarTitle, html, jaTitle: jaTitle || shortTitle, filePath: file.path });
+      lessonPages.push({ id: file.id, title, sidebarTitle, html, jaTitle: jaTitle || shortTitle, filePath: file.path, grammarPoints, level: group.label, md });
     }
+  }
+
+  // ─── Cross-link related grammar points between lessons ───
+  // Build an index: grammar term → { lessonId, slug }
+  const grammarIndex = new Map(); // term → [{ id, slug }]
+  for (const lesson of lessonPages) {
+    // Extract h2 ids from the lesson HTML
+    const h2Regex = /<h2[^>]*id="([^"]*)"[^>]*>([\s\S]*?)<\/h2>/gi;
+    let h2Match;
+    while ((h2Match = h2Regex.exec(lesson.html)) !== null) {
+      const slug = h2Match[1];
+      const content = h2Match[2].replace(/<[^>]+>/g, "").trim();
+      // Extract the grammar pattern (〜xxx or Japanese term)
+      const patterns = content.match(/[〜～]?[\u3040-\u309f\u30a0-\u30ffー\u4e00-\u9fff]+/g) || [];
+      for (const pat of patterns) {
+        const term = pat.replace(/^[〜～]/, "");
+        if (term.length < 2) continue;
+        if (!grammarIndex.has(term)) grammarIndex.set(term, []);
+        grammarIndex.get(term).push({ id: lesson.id, slug });
+      }
+    }
+  }
+
+  // Insert cross-links: for each lesson, find references to grammar in other lessons
+  for (let li = 0; li < lessonPages.length; li++) {
+    let html = lessonPages[li].html;
+    // Add "related grammar" links at the end of each h2 section
+    // We look for grammar terms that appear in this lesson's text but are defined in OTHER lessons
+    const relatedLinks = new Set();
+    for (const [term, locations] of grammarIndex) {
+      const otherLocs = locations.filter(l => l.id !== lessonPages[li].id);
+      if (otherLocs.length === 0) continue;
+      // Check if this term appears in the lesson text (outside of its own h2 headings)
+      const plainText = html.replace(/<h2[\s\S]*?<\/h2>/g, "").replace(/<[^>]+>/g, "");
+      if (plainText.includes(term) && relatedLinks.size < 8) {
+        const loc = otherLocs[0];
+        relatedLinks.add(`<a href="#${loc.id}" class="cross-link" data-target="${loc.id}" data-scroll="${loc.slug}">${term}</a>`);
+      }
+    }
+    if (relatedLinks.size > 0) {
+      const relatedHtml = `<div class="related-grammar"><span class="related-label">関連文法:</span> ${[...relatedLinks].join(" ")}</div>`;
+      // Insert before the last section (review schedule) or at the end
+      const reviewIdx = html.lastIndexOf('<h2');
+      if (reviewIdx > 0) {
+        html = html.slice(0, reviewIdx) + relatedHtml + html.slice(reviewIdx);
+      } else {
+        html += relatedHtml;
+      }
+    }
+    lessonPages[li].html = html;
+    articlesHtml[li] = `<article id="${lessonPages[li].id}" class="lesson">${html}</article>`;
   }
 
   // ─── Assemble ───
@@ -588,6 +672,7 @@ async function main() {
 </script>
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+<link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="https://ralphbupt.github.io/japanese-grammar/feed.xml">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#1a1a2e">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -673,8 +758,11 @@ var disqus_config = function () {
     fs.mkdirSync(lessonDir, { recursive: true });
     const lessonUrl = `${SITE}${lesson.id}/`;
     const lessonTitle = `${lesson.jaTitle} | Japanese Grammar Notes`;
-    const lessonDesc = `${lesson.title} – Free Japanese grammar lesson with conjugation rules, example sentences, and practice exercises.`;
-    const ogImageUrl = `${SITE}og-image.png`;
+    // #4: Auto-generate more specific descriptions using grammar points
+    const lessonDesc = lesson.grammarPoints && lesson.grammarPoints.length > 0
+      ? `Learn ${lesson.grammarPoints.slice(0, 4).join(", ")} – Free Japanese grammar lesson with examples.`
+      : `${lesson.title} – Free Japanese grammar lesson with conjugation rules, example sentences, and practice exercises.`;
+    const ogImageUrl = `${SITE}${lesson.id}/og-image.png`;
 
     // Prev/next navigation HTML
     const prevHtml = prevLesson
@@ -683,6 +771,30 @@ var disqus_config = function () {
     const nextHtml = nextLesson
       ? `<a class="pn-link pn-next" href="${SITE}${nextLesson.id}/">${nextLesson.jaTitle} →</a>`
       : `<span class="pn-link pn-next"></span>`;
+
+    // #3: rel prev/next links
+    const prevLink = prevLesson ? `\n<link rel="prev" href="${SITE}${prevLesson.id}/">` : "";
+    const nextLink = nextLesson ? `\n<link rel="next" href="${SITE}${nextLesson.id}/">` : "";
+
+    // FAQ Schema: extract Q&A from exercises (### heading as question, <details> as answer)
+    const faqItems = [];
+    const faqRegex = /### ([^\n]+)\n[\s\S]*?<details>\s*<summary>[^<]*<\/summary>([\s\S]*?)<\/details>/g;
+    let faqMatch;
+    while ((faqMatch = faqRegex.exec(lesson.md)) !== null) {
+      const question = faqMatch[1].replace(/\|\|.*$/, "").trim(); // use Chinese side
+      let answer = faqMatch[2].replace(/^:::(zh|en)\s*\n/gm, "").replace(/^:::\s*$/gm, "").trim();
+      answer = answer.replace(/\*\*/g, "").replace(/\n/g, " ").slice(0, 300);
+      if (question && answer) {
+        faqItems.push({ q: question, a: answer });
+      }
+    }
+    const faqSchema = faqItems.length > 0 ? `,\n{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [${faqItems.slice(0, 5).map(f => `
+    {"@type": "Question", "name": "${f.q.replace(/"/g, '\\"')}", "acceptedAnswer": {"@type": "Answer", "text": "${f.a.replace(/"/g, '\\"')}"}}`).join(",")}
+  ]
+}` : "";
 
     const lessonHtml = `<!DOCTYPE html>
 <html lang="ja">
@@ -695,7 +807,7 @@ var disqus_config = function () {
 <link rel="canonical" href="${lessonUrl}">
 <link rel="alternate" hreflang="ja" href="${lessonUrl}">
 <link rel="alternate" hreflang="zh" href="${lessonUrl}">
-<link rel="alternate" hreflang="x-default" href="${lessonUrl}">
+<link rel="alternate" hreflang="x-default" href="${lessonUrl}">${prevLink}${nextLink}
 <meta property="og:type" content="article">
 <meta property="og:title" content="${lessonTitle}">
 <meta property="og:description" content="${lessonDesc.replace(/"/g, '&quot;')}">
@@ -707,6 +819,7 @@ var disqus_config = function () {
 <meta property="og:locale:alternate" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${lessonTitle}">
+<meta name="twitter:description" content="${lessonDesc.replace(/"/g, '&quot;')}">
 <meta name="twitter:image" content="${ogImageUrl}">
 <script type="application/ld+json">
 [{
@@ -729,8 +842,9 @@ var disqus_config = function () {
     { "@type": "ListItem", "position": 1, "name": "日语语法笔记", "item": "${SITE}" },
     { "@type": "ListItem", "position": 2, "name": "${lesson.jaTitle.replace(/"/g, '\\"')}", "item": "${lessonUrl}" }
   ]
-}]
+}${faqSchema}]
 </script>
+<link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1KNQTFN1R"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D1KNQTFN1R');</script>
@@ -834,6 +948,34 @@ Allow: /
 Sitemap: ${SITE}sitemap.xml
 `, "utf-8");
 
+  // ─── RSS Feed ───
+  const rssItems = lessonPages.map(lesson => {
+    const mod = gitLastMod(lesson.filePath) || today;
+    const pubDate = new Date(mod + "T00:00:00Z").toUTCString();
+    const lessonDescRss = lesson.grammarPoints && lesson.grammarPoints.length > 0
+      ? `Learn ${lesson.grammarPoints.slice(0, 4).join(", ")} – Japanese grammar lesson with examples.`
+      : `${lesson.title} – Japanese grammar lesson with conjugation rules and examples.`;
+    return `    <item>
+      <title>${lesson.jaTitle.replace(/&/g, "&amp;").replace(/</g, "&lt;")}</title>
+      <link>${SITE}${lesson.id}/</link>
+      <description>${lessonDescRss.replace(/&/g, "&amp;").replace(/</g, "&lt;")}</description>
+      <pubDate>${pubDate}</pubDate>
+      <guid>${SITE}${lesson.id}/</guid>
+    </item>`;
+  });
+  fs.writeFileSync(path.join(__dirname, "dist/feed.xml"), `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Japanese Grammar Notes | 日语语法笔记</title>
+    <link>${SITE}</link>
+    <description>Free structured Japanese grammar notes from N5 to N2 in 8 weeks. Bilingual with examples and spaced repetition.</description>
+    <language>ja</language>
+    <atom:link href="${SITE}feed.xml" rel="self" type="application/rss+xml"/>
+${rssItems.join("\n")}
+  </channel>
+</rss>
+`, "utf-8");
+
   fs.writeFileSync(path.join(__dirname, "dist/llms.txt"), `# Japanese Grammar Notes
 
 > Free, structured Japanese grammar notes covering JLPT N5 to N2 in 8 weeks.
@@ -843,13 +985,14 @@ Sitemap: ${SITE}sitemap.xml
 https://ralphbupt.github.io/japanese-grammar/
 
 ## Content Overview
+- 72 lessons covering all 4 JLPT levels (N5, N4, N3, N2) — complete
 - Week 1-2: N5 grammar (basic sentence patterns, verb conjugation, て form, ない form, た form, adjectives, conditionals, potential/passive/volitional, conjecture)
 - Week 3-4: N4 grammar (causative, giving/receiving, ように, ことにする/なる, ばかり/ところ/てしまう, passive details, わけだ/ものだ)
-- Week 5-6: N3 grammar (in progress)
-- Week 7-8: N2 grammar (in progress)
+- Week 5-6: N3 grammar (formal particles, cause/reason, concession, degree/extent, tendency, conjecture, actions, addition, time, state, expression, negation, compound expressions)
+- Week 7-8: N2 grammar (advanced concession, cause/reason, degree/limitation, time/occasion, assertion/judgment, contrast, topic/stance, emotion, formal written, conditionals, results, emphasis, conjunctions, high-frequency suffixes)
 
 ## Format
-Single-page static site. Each grammar point includes:
+Single-page static site with ${lessonPages.length} individual lesson pages. Each grammar point includes:
 - Conjugation rules (接続)
 - Example sentences (例句)
 - Comparison with similar grammar (辨析)
@@ -896,10 +1039,7 @@ CC BY 4.0
 </body>
 </html>`, "utf-8");
 
-  // ─── OG Image (SVG) ───
-  // Social platforms prefer PNG, but SVG works as fallback.
-  // To generate a proper PNG: open dist/og-image.html in a browser and screenshot at 1200x630,
-  // or use: npx capture-website-cli dist/og-image.html --output dist/og-image.png --width 1200 --height 630
+  // ─── OG Image (SVG → PNG via sharp) ───
   const ogSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -917,31 +1057,43 @@ CC BY 4.0
 </svg>`;
   fs.writeFileSync(path.join(__dirname, "dist/og-image.svg"), ogSvg, "utf-8");
 
-  // Also generate an HTML version for easy PNG conversion
-  const ogHtml = `<!DOCTYPE html>
-<html><head><meta charset="UTF-8">
-<style>
-* { margin: 0; padding: 0; }
-body { width: 1200px; height: 630px; background: linear-gradient(135deg, #1a1a2e, #16213e); display: flex; align-items: center; justify-content: center; font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; }
-.card { width: 1120px; height: 550px; border: 2px solid rgba(233,69,96,0.3); border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; }
-h1 { font-size: 96px; color: #fff; font-weight: bold; }
-h2 { font-size: 42px; color: #c8c8d8; font-weight: normal; }
-.levels { font-size: 36px; color: #e94560; }
-.tagline { font-size: 24px; color: #888; }
-.url { font-size: 20px; color: #666; }
-</style></head>
-<body><div class="card">
-<h1>日语语法笔记</h1>
-<h2>Japanese Grammar Notes</h2>
-<div class="levels">N5 → N4 → N3 → N2</div>
-<div class="tagline">Free · Bilingual · 8 Weeks · Spaced Repetition</div>
-<div class="url">ralphbupt.github.io/japanese-grammar</div>
-</div></body></html>`;
-  fs.writeFileSync(path.join(__dirname, "dist/og-image.html"), ogHtml, "utf-8");
+  // Convert main OG SVG to PNG using sharp (#1)
+  await sharp(Buffer.from(ogSvg))
+    .resize(1200, 630)
+    .png()
+    .toFile(path.join(__dirname, "dist/og-image.png"));
+  console.log("  Generated dist/og-image.png (1200x630)");
 
-  console.log(`Done! Output: ${OUT}, sitemap.xml, robots.txt, llms.txt, manifest.json, 404.html, og-image.svg/html`);
-  console.log(`NOTE: Convert og-image to PNG for best social sharing support:`);
-  console.log(`  npx capture-website-cli dist/og-image.html --output dist/og-image.png --width 1200 --height 630`);
+  // ─── Per-lesson OG Images (#7) ───
+  console.log("Generating per-lesson OG images...");
+  for (const lesson of lessonPages) {
+    const lessonDir = path.join(__dirname, "dist", lesson.id);
+    fs.mkdirSync(lessonDir, { recursive: true });
+    // Escape special XML characters in text
+    const escJaTitle = (lesson.jaTitle || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    const level = lesson.level || "N5";
+    const lessonOgSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="40" y="40" width="1120" height="550" rx="20" fill="none" stroke="#e94560" stroke-width="2" opacity="0.3"/>
+  <text x="600" y="180" text-anchor="middle" font-family="sans-serif" font-size="48" fill="#e94560" font-weight="bold">JLPT ${level}</text>
+  <text x="600" y="310" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="64" fill="#ffffff" font-weight="bold">${escJaTitle}</text>
+  <text x="600" y="430" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="32" fill="#c8c8d8">Japanese Grammar Notes</text>
+  <text x="600" y="550" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#666666">ralphbupt.github.io/japanese-grammar</text>
+</svg>`;
+    await sharp(Buffer.from(lessonOgSvg))
+      .resize(1200, 630)
+      .png()
+      .toFile(path.join(lessonDir, "og-image.png"));
+  }
+  console.log(`  Generated ${lessonPages.length} per-lesson OG images`);
+
+  console.log(`Done! Output: ${OUT}, sitemap.xml, robots.txt, feed.xml, llms.txt, manifest.json, 404.html, og-image.png`);
 }
 
 // ─── CSS ───
@@ -1044,8 +1196,8 @@ body {
 body.sidebar-collapsed #content {
   margin-left: 48px;
 }
-.lesson { display: none; }
-.lesson.active { display: block; }
+.lesson { display: none; content-visibility: auto; contain-intrinsic-size: 0 500px; }
+.lesson.active { display: block; content-visibility: visible; }
 #disqus_thread { margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border); }
 
 /* Right TOC */
@@ -1166,6 +1318,19 @@ code {
   font-size: .88em;
 }
 pre code { background: none; padding: 0; }
+
+/* Cross-links */
+.related-grammar {
+  background: #f0f8ff; border: 1px solid #d0e8f8; border-radius: 8px;
+  padding: .6rem 1rem; margin: 1.5rem 0; font-size: .85rem;
+}
+.related-label { font-weight: 600; color: #666; margin-right: .5rem; }
+.cross-link {
+  display: inline-block; background: #e8f4fd; color: var(--accent);
+  padding: .1rem .5rem; border-radius: 4px; margin: .15rem .2rem;
+  text-decoration: none; font-size: .82rem;
+}
+.cross-link:hover { background: var(--accent); color: #fff; }
 
 /* Details */
 details {
@@ -1502,6 +1667,23 @@ const JS = `
       show(id);
       history.replaceState(null,null,'#'+id);
     });
+  });
+
+  // Cross-link navigation
+  document.addEventListener('click', function(e) {
+    var link = e.target.closest('.cross-link');
+    if (!link) return;
+    e.preventDefault();
+    var targetId = link.getAttribute('data-target');
+    var scrollTo = link.getAttribute('data-scroll');
+    show(targetId);
+    history.replaceState(null, null, '#' + targetId);
+    if (scrollTo) {
+      setTimeout(function() {
+        var el = document.getElementById(scrollTo);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 50);
+    }
   });
 
   toggle.addEventListener('click', function(){
