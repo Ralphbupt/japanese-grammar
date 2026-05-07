@@ -646,9 +646,6 @@ async function main() {
 <meta name="description" content="Free structured Japanese grammar notes from N5 to N2 in 8 weeks. Bilingual (Japanese + Chinese) with conjugation rules, example sentences, and spaced repetition.">
 <meta name="keywords" content="Japanese grammar, JLPT N2, N5, N4, N3, 日语语法, 日本語文法, grammar notes, spaced repetition, 语法笔记">
 <link rel="canonical" href="https://ralphbupt.github.io/japanese-grammar/">
-<link rel="alternate" hreflang="ja" href="https://ralphbupt.github.io/japanese-grammar/">
-<link rel="alternate" hreflang="zh" href="https://ralphbupt.github.io/japanese-grammar/">
-<link rel="alternate" hreflang="x-default" href="https://ralphbupt.github.io/japanese-grammar/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
@@ -859,10 +856,7 @@ var disqus_config = function () {
 <title>${lessonTitle}</title>
 <meta name="description" content="${lessonDesc.replace(/"/g, '&quot;')}">
 <meta name="keywords" content="${lessonKeywords.replace(/"/g, '&quot;')}">
-<link rel="canonical" href="${lessonUrl}">
-<link rel="alternate" hreflang="ja" href="${lessonUrl}">
-<link rel="alternate" hreflang="zh" href="${lessonUrl}">
-<link rel="alternate" hreflang="x-default" href="${lessonUrl}">${prevLink}${nextLink}
+<link rel="canonical" href="${lessonUrl}">${prevLink}${nextLink}
 <meta property="og:type" content="article">
 <meta property="og:title" content="${lessonTitle}">
 <meta property="og:description" content="${lessonDesc.replace(/"/g, '&quot;')}">
@@ -974,6 +968,164 @@ var disqus_config = function () {
     fs.writeFileSync(path.join(lessonDir, "index.html"), lessonHtml, "utf-8");
   }
 
+  // ─── Level overview pages (/N5/, /N4/, /N3/, /N2/) ───
+  const LEVEL_INTRO = {
+    N5: "JLPT N5 是日语入门级别，覆盖基础句型、助词、动词三类、ます形/て形/ない形/た形、形容词活用、条件表达、可能/受身/意向形与基础推测样态。",
+    N4: "JLPT N4 在 N5 基础上深化使役、受身、使役受身、授受表现、ように系列、ことにする/なる、ばかり/ところ/てしまう、ておく/てある、わけだ/ものだ 等核心日常语法。",
+    N3: "JLPT N3 是日语进阶分水岭，覆盖书面助词（において/に対して/について）、原因理由、逆接让步、程度范围、动作相关、并列添加、状态样态、否定与复合表达等约 100 个语法点。",
+    N2: "JLPT N2 是商务/学术级别语法，覆盖高阶逆接（からといって/つつも）、程度限定（に過ぎない/はもとより）、判断主张（わけがない/ということだ）、对比关系、感情不可抗、书面表达、仮定条件等高频考点。",
+  };
+  const LEVEL_KEYWORDS = {
+    N5: "JLPT N5 语法清单, 日语 N5 语法总结, N5 文法一覧, N5 grammar list, 日语入门语法, JLPT N5 备考",
+    N4: "JLPT N4 语法清单, 日语 N4 语法总结, N4 文法一覧, N4 grammar list, JLPT N4 备考, 日语进阶语法",
+    N3: "JLPT N3 语法清单, 日语 N3 语法总结, N3 文法一覧, N3 grammar list, JLPT N3 备考, 日语进阶语法, N3 语法速查",
+    N2: "JLPT N2 语法清单, 日语 N2 语法总结, N2 文法一覧, N2 grammar list, JLPT N2 备考, 日语商务语法, N2 语法速查",
+  };
+  const lessonsByLevel = { N5: [], N4: [], N3: [], N2: [] };
+  for (const lesson of lessonPages) {
+    if (lessonsByLevel[lesson.level]) lessonsByLevel[lesson.level].push(lesson);
+  }
+  const levelPageIds = [];
+  for (const level of ["N5", "N4", "N3", "N2"]) {
+    const lessons = lessonsByLevel[level].filter(l => /^day\d+/.test(l.id));
+    if (lessons.length === 0) continue;
+    const totalPoints = lessons.reduce((sum, l) => sum + (l.cleanPoints || []).length, 0);
+    const levelDir = path.join(__dirname, "dist", level);
+    fs.mkdirSync(levelDir, { recursive: true });
+    const levelUrl = `${SITE}${level}/`;
+
+    const ovTitle = `JLPT ${level} 语法清单 | ${lessons.length} 课 ${totalPoints}+ 语法点速查 - 日语 ${level} 语法总结`;
+    const ovDesc = `日语 JLPT ${level} 全部语法点速查清单，含 ${lessons.length} 课、${totalPoints}+ 语法点的接续、含义、例句与辨析。免费 JLPT ${level} 备考笔记。`;
+    const ovOgImage = `${SITE}og-image.png`;
+
+    // Lesson cards: each shows day, title, grammar points, link
+    const cardsHtml = lessons.map(l => {
+      const dayMatch = l.id.match(/^day(\d+)/);
+      const dayLabel = dayMatch ? `Day ${dayMatch[1]}` : l.id;
+      const points = (l.cleanPoints || []).slice(0, 4);
+      const pointsHtml = points.length > 0
+        ? `<div class="overview-points">${points.map(p => `<span class="grammar-pill">${p}</span>`).join("")}</div>`
+        : "";
+      return `<a class="overview-card" href="${SITE}${l.id}/">
+        <div class="overview-card-head">
+          <span class="overview-day">${dayLabel}</span>
+          <span class="overview-title">${l.jaTitle}</span>
+        </div>
+        ${pointsHtml}
+      </a>`;
+    }).join("\n");
+
+    // Full grammar points table for fast lookup
+    const tableRows = [];
+    for (const l of lessons) {
+      const dayMatch = l.id.match(/^day(\d+)/);
+      const dayLabel = dayMatch ? `Day ${dayMatch[1]}` : l.id;
+      for (const point of (l.cleanPoints || [])) {
+        tableRows.push(`<tr><td><a href="${SITE}${l.id}/">${point}</a></td><td>${dayLabel}</td><td>${l.jaTitle}</td></tr>`);
+      }
+    }
+    const tableHtml = tableRows.length > 0
+      ? `<h2 id="grammar-index">${level} 全部语法点速查表</h2>
+<table class="overview-table">
+<thead><tr><th>语法点</th><th>课次</th><th>课题</th></tr></thead>
+<tbody>${tableRows.join("\n")}</tbody>
+</table>`
+      : "";
+
+    const ovHtml = `<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${ovTitle}</title>
+<meta name="description" content="${ovDesc.replace(/"/g, '&quot;')}">
+<meta name="keywords" content="${LEVEL_KEYWORDS[level]}">
+<link rel="canonical" href="${levelUrl}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="${ovTitle}">
+<meta property="og:description" content="${ovDesc.replace(/"/g, '&quot;')}">
+<meta property="og:url" content="${levelUrl}">
+<meta property="og:image" content="${ovOgImage}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${ovTitle}">
+<meta name="twitter:description" content="${ovDesc.replace(/"/g, '&quot;')}">
+<meta name="twitter:image" content="${ovOgImage}">
+<script type="application/ld+json">
+[{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "JLPT ${level} 语法清单",
+  "description": "${ovDesc.replace(/"/g, '\\"')}",
+  "url": "${levelUrl}",
+  "inLanguage": ["zh-CN", "ja"],
+  "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N2", "url": "${SITE}" },
+  "hasPart": [${lessons.map(l => `{"@type": "Article", "name": "${l.jaTitle.replace(/"/g, '\\"')}", "url": "${SITE}${l.id}/"}`).join(",")}]
+},
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "日语语法笔记", "item": "${SITE}" },
+    { "@type": "ListItem", "position": 2, "name": "JLPT ${level}", "item": "${levelUrl}" }
+  ]
+}]
+</script>
+<link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D1KNQTFN1R"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D1KNQTFN1R');</script>
+<style>
+${CSS}
+#sidebar, #menu-toggle, #toc-panel, #settings-toggle, #settings-overlay, #bottom-controls { display: none !important; }
+#content { margin-left: 0 !important; margin-right: 0 !important; max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+.breadcrumb { font-size: .85rem; color: #888; margin-bottom: 1rem; }
+.breadcrumb a { color: var(--accent); text-decoration: none; }
+.breadcrumb .sep { margin: 0 .4em; }
+.overview-intro { font-size: 1rem; line-height: 1.8; color: #444; margin: 1rem 0 2rem; padding: 1rem 1.2rem; background: #fafaf2; border-left: 3px solid var(--word-border); border-radius: 0 6px 6px 0; }
+.overview-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0 2.5rem; }
+.overview-card { display: block; padding: 1rem 1.2rem; background: #fff; border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: inherit; transition: all .15s; }
+.overview-card:hover { border-color: var(--accent); box-shadow: 0 2px 12px rgba(233,69,96,.1); transform: translateY(-1px); }
+.overview-card-head { display: flex; align-items: baseline; gap: .6rem; margin-bottom: .5rem; }
+.overview-day { font-size: .75rem; font-weight: 700; color: var(--accent); white-space: nowrap; }
+.overview-title { font-size: .95rem; font-weight: 600; color: #1a1a2e; }
+.overview-points { display: flex; flex-wrap: wrap; gap: .3rem; }
+.grammar-pill { font-size: .75rem; background: #f4f4f4; color: #555; padding: .15rem .5rem; border-radius: 4px; }
+.overview-table { width: 100%; border-collapse: collapse; margin: 1rem 0 2rem; font-size: .9rem; }
+.overview-table th { background: var(--word-bg); font-weight: 600; padding: .5rem .8rem; text-align: left; border: 1px solid var(--border); }
+.overview-table td { padding: .4rem .8rem; border: 1px solid var(--border); }
+.overview-table td:first-child { font-weight: 500; }
+.overview-table a { color: var(--accent); text-decoration: none; }
+.overview-table a:hover { text-decoration: underline; }
+.level-stats { display: flex; gap: 2rem; margin: 1rem 0; padding: 1rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.level-stat strong { display: block; font-size: 1.6rem; color: var(--accent); }
+.level-stat span { font-size: .8rem; color: #888; }
+</style>
+</head>
+<body>
+<main id="content">
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <a href="${SITE}">日语语法笔记</a><span class="sep">›</span><span>JLPT ${level} 语法清单</span>
+  </nav>
+  <h1>JLPT ${level} 语法清单 - ${lessons.length} 课 ${totalPoints}+ 语法点速查</h1>
+  <p class="overview-intro">${LEVEL_INTRO[level]}</p>
+  <div class="level-stats">
+    <div class="level-stat"><strong>${lessons.length}</strong><span>课</span></div>
+    <div class="level-stat"><strong>${totalPoints}+</strong><span>语法点</span></div>
+    <div class="level-stat"><strong>免费</strong><span>双语笔记</span></div>
+  </div>
+  <h2>分课目录</h2>
+  <div class="overview-grid">${cardsHtml}</div>
+  ${tableHtml}
+</main>
+</body>
+</html>`;
+    fs.writeFileSync(path.join(levelDir, "index.html"), ovHtml, "utf-8");
+    levelPageIds.push(level);
+  }
+  console.log(`  Generated ${levelPageIds.length} level overview pages: ${levelPageIds.join(", ")}`);
+
   // ─── Sitemap ───
   const homeMod = gitLastMod("schedule.md") || today;
   const sitemapUrls = [`  <url>
@@ -982,6 +1134,15 @@ var disqus_config = function () {
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>`];
+  // Level overview pages (high priority — major landing pages)
+  for (const level of levelPageIds) {
+    sitemapUrls.push(`  <url>
+    <loc>${SITE}${level}/</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>`);
+  }
   for (const lesson of lessonPages) {
     const mod = gitLastMod(lesson.filePath) || today;
     sitemapUrls.push(`  <url>
