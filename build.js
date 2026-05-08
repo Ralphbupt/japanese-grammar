@@ -16,6 +16,7 @@ const GRAMMAR_DIRS = [
   { dir: "grammar/N2", label: "N2" },
 ];
 const OUT = "dist/index.html";
+const SITE = "https://ralphbupt.github.io/japanese-grammar/";
 
 // Japanese sidebar titles (keyed by file id)
 const JA_TITLES = {
@@ -455,7 +456,7 @@ async function main() {
   let firstId = null;
 
   for (const group of groups) {
-    sidebarHtml.push(`<div class="nav-group">${group.label}</div>`);
+    sidebarHtml.push(`<a class="nav-group nav-group-link" href="${group.label}/">${group.label}</a>`);
     for (const file of group.files) {
       const md = fs.readFileSync(file.path, "utf-8");
       const title = extractTitle(md);
@@ -576,7 +577,7 @@ async function main() {
         ? (dayNum ? `Day ${dayNum} – ${jaTitle}` : jaTitle)
         : shortTitle;
       sidebarHtml.push(
-        `<a class="nav-item" href="#${file.id}" data-target="${file.id}">${sidebarTitle}</a>`
+        `<a class="nav-item" href="${file.id}/" data-target="${file.id}">${sidebarTitle}</a>`
       );
       articlesHtml.push(
         `<article id="${file.id}" class="lesson">${html}</article>`
@@ -619,7 +620,7 @@ async function main() {
       const plainText = html.replace(/<h2[\s\S]*?<\/h2>/g, "").replace(/<[^>]+>/g, "");
       if (plainText.includes(term) && relatedLinks.size < 8) {
         const loc = otherLocs[0];
-        relatedLinks.add(`<a href="#${loc.id}" class="cross-link" data-target="${loc.id}" data-scroll="${loc.slug}">${term}</a>`);
+        relatedLinks.add(`<a href="${SITE}${loc.id}/#${loc.slug}" class="cross-link" data-target="${loc.id}" data-scroll="${loc.slug}">${term}</a>`);
       }
     }
     if (relatedLinks.size > 0) {
@@ -770,7 +771,6 @@ var disqus_config = function () {
   fs.mkdirSync(path.join(__dirname, "dist"), { recursive: true });
   fs.writeFileSync(path.join(__dirname, OUT), fullHtml, "utf-8");
 
-  const SITE = "https://ralphbupt.github.io/japanese-grammar/";
   const today = new Date().toISOString().slice(0, 10);
 
   // ─── Generate individual lesson pages ───
@@ -1384,10 +1384,13 @@ body {
   white-space: nowrap;
 }
 .nav-group {
+  display: block;
   font-size: .75rem; text-transform: uppercase; letter-spacing: .08em;
   color: var(--accent); padding: .8rem 1.2rem .3rem;
   font-weight: 700; white-space: nowrap;
+  text-decoration: none;
 }
+.nav-group-link:hover { color: #fff; }
 .nav-item {
   display: block; padding: .3rem 1rem;
   color: var(--sidebar-text); text-decoration: none;
@@ -1886,8 +1889,13 @@ const JS = `
     }
   }
 
+  function isModifiedClick(e) {
+    return e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey;
+  }
+
   items.forEach(function(item){
     item.addEventListener('click', function(e){
+      if (isModifiedClick(e)) return;
       e.preventDefault();
       var id = this.getAttribute('data-target');
       show(id);
@@ -1899,8 +1907,10 @@ const JS = `
   document.addEventListener('click', function(e) {
     var link = e.target.closest('.cross-link');
     if (!link) return;
-    e.preventDefault();
+    if (isModifiedClick(e)) return;
     var targetId = link.getAttribute('data-target');
+    if (!document.getElementById(targetId)) return;
+    e.preventDefault();
     var scrollTo = link.getAttribute('data-scroll');
     show(targetId);
     history.replaceState(null, null, '#' + targetId);
