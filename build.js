@@ -1041,7 +1041,7 @@ ${CSS}
    keep the sidebar — it works on hover via pure CSS and links are root-
    relative so they navigate from any standalone page. */
 #menu-toggle, #toc-panel, #settings-toggle, #settings-overlay { display: none !important; }
-#content { margin: 0 auto !important; max-width: 800px; }
+#content { margin: 0 auto !important; max-width: 1000px; }
 .back-link { display: block; margin-bottom: 1.5rem; color: var(--accent); text-decoration: none; font-size: 0.9rem; }
 .back-link:hover { text-decoration: underline; }
 .breadcrumb { font-size: 0.85rem; color: #888; margin-bottom: 0.5rem; }
@@ -1222,7 +1222,7 @@ var disqus_config = function () {
 ${CSS}
 /* Keep sidebar (pure-CSS hover navigation); hide JS-dependent chrome. */
 #menu-toggle, #toc-panel, #settings-toggle, #settings-overlay, #bottom-controls { display: none !important; }
-#content { margin: 0 auto !important; max-width: 900px; padding: 2rem 1.5rem 4rem; }
+#content { margin: 0 auto !important; max-width: 1100px; padding: 2rem 1.5rem 4rem; }
 .breadcrumb { font-size: .85rem; color: #888; margin-bottom: 1rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
 .breadcrumb .sep { margin: 0 .4em; }
@@ -1486,7 +1486,7 @@ const CSS = `
   --code-bg: #f4f4f4;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { font-size: 18px; }
+html { font-size: 19px; }
 body {
   font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "PingFang SC", sans-serif;
   background: var(--bg);
@@ -1567,7 +1567,7 @@ body {
   margin-left: var(--sidebar-w);
   margin-right: 220px;
   padding: 2rem 3rem 4rem;
-  max-width: 900px;
+  max-width: 1050px;
   transition: margin-left .25s;
 }
 body.sidebar-collapsed #content {
@@ -1839,7 +1839,7 @@ body.sidebar-collapsed #menu-toggle { display: block; }
 body:has(#content.home) #toc-panel { display: none; }
 #content.home,
 body.sidebar-collapsed #content.home {
-  max-width: 1000px;
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
 }
