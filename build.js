@@ -1325,7 +1325,22 @@ ${sidebarMarkupHtml}
   let aboutPageGenerated = false;
   if (fs.existsSync(aboutMdPath)) {
     const aboutMd = fs.readFileSync(aboutMdPath, "utf-8");
-    const aboutHtml = await marked.parse(aboutMd);
+    // Process :::zh / :::en bilingual blocks (same pattern as lesson md).
+    const aboutMdBilingual = aboutMd.replace(
+      /^:::(zh|en)\s*\n([\s\S]*?)^:::\s*$/gm,
+      (_, lang, content) => `<!--lang:${lang}:start-->\n${content.trim()}\n<!--lang:${lang}:end-->`
+    );
+    let aboutHtml = await marked.parse(aboutMdBilingual);
+    aboutHtml = aboutHtml.replace(/<!--lang:(zh|en):start-->/g, (_, lang) =>
+      lang === "zh" ? '<div class="lang-zh" lang="zh-CN">' : '<div class="lang-en" lang="en">'
+    );
+    aboutHtml = aboutHtml.replace(/<!--lang:(zh|en):end-->/g, '</div>');
+    // Bilingual headings: <h2>中文||English</h2>
+    aboutHtml = aboutHtml.replace(
+      /(<h[1-6][^>]*>)(.+?)\|\|(.+?)(<\/h[1-6]>)/g,
+      (_, open, zh, en, close) =>
+        `${open}<span class="lang-zh">${zh.trim()}</span><span class="lang-en">${en.trim()}</span>${close}`
+    );
     const aboutUrl = `${SITE}about/`;
     const aboutDir = path.join(__dirname, "dist/about");
     fs.mkdirSync(aboutDir, { recursive: true });
@@ -1384,8 +1399,8 @@ ${sidebarMarkupHtml}
 ${GTAG_DEFERRED}
 <style>
 ${CSS}
-/* Keep sidebar (pure-CSS hover); hide JS-dependent chrome. */
-#menu-toggle, #toc-panel, #settings-toggle, #settings-overlay, #bottom-controls { display: none !important; }
+/* Keep sidebar (pure-CSS hover) + lang toggle; hide other JS-dependent chrome. */
+#menu-toggle, #toc-panel, #settings-toggle, #settings-overlay, #furigana-toggle { display: none !important; }
 #content { margin: 0 auto !important; max-width: 800px; padding: 2rem 2rem 4rem; }
 .breadcrumb { font-size: .85rem; color: #666; margin-bottom: 1rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
@@ -1411,10 +1426,27 @@ ${CSS}
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
-    <a href="${SITE}">日语语法笔记</a><span class="sep">›</span><span>关于本站</span>
+    <a href="${SITE}">日语语法笔记</a><span class="sep">›</span><span><span class="lang-zh">关于本站</span><span class="lang-en">About</span></span>
   </nav>
   <article class="about-content">${aboutHtml}</article>
 </main>
+<div id="bottom-controls">
+  <div id="lang-toggle">
+    <button id="lang-btn">EN</button>
+  </div>
+</div>
+<script>
+(function(){
+  var langBtn = document.getElementById('lang-btn');
+  var STORE_KEY = 'jp_grammar_prefs';
+  function loadPrefs() { try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch(e) { return {}; } }
+  function savePrefs(patch) { var p = loadPrefs(); for (var k in patch) p[k] = patch[k]; localStorage.setItem(STORE_KEY, JSON.stringify(p)); }
+  var prefs = loadPrefs();
+  var isEn = ('isEn' in prefs) ? prefs.isEn : !/^zh/i.test(navigator.language || '');
+  if (isEn) { document.body.classList.add('lang-en'); langBtn.textContent = '中'; }
+  langBtn.addEventListener('click', function(){ isEn = !isEn; document.body.classList.toggle('lang-en', isEn); langBtn.textContent = isEn ? '中' : 'EN'; savePrefs({ isEn: isEn }); });
+})();
+</script>
 </body>
 </html>`;
     fs.writeFileSync(path.join(aboutDir, "index.html"), aboutPageHtml, "utf-8");
@@ -1505,31 +1537,48 @@ ${rssItems.join("\n")}
 </rss>
 `, "utf-8");
 
-  fs.writeFileSync(path.join(__dirname, "dist/llms.txt"), `# Japanese Grammar Notes
+  fs.writeFileSync(path.join(__dirname, "dist/llms.txt"), `# Japanese Grammar Notes / 日语语法笔记
 
-> Free, structured Japanese grammar notes covering JLPT N5 to N2 in 8 weeks.
-> Bilingual: Japanese + Chinese. Includes conjugation rules, 3+ example sentences per grammar point, comparison with similar grammar, and spaced repetition tracking.
+> Free, structured Japanese grammar notes covering JLPT N5 → N2 in an 8-week curriculum. Bilingual: Chinese explanations + Japanese examples with furigana annotations. ${lessonPages.length} lessons, 400+ grammar points, each with conjugation rules, 3+ example sentences, comparisons between easily confused patterns, and spaced-repetition checklists.
 
-## URL
-${SITE}
+Site: ${SITE}
+Author: Ralphbupt (https://github.com/Ralphbupt)
+License: CC BY 4.0 — attribution required, no full-site mirroring
 
-## Content Overview
-- 72 lessons covering all 4 JLPT levels (N5, N4, N3, N2) — complete
-- Week 1-2: N5 grammar (basic sentence patterns, verb conjugation, て form, ない form, た form, adjectives, conditionals, potential/passive/volitional, conjecture)
-- Week 3-4: N4 grammar (causative, giving/receiving, ように, ことにする/なる, ばかり/ところ/てしまう, passive details, わけだ/ものだ)
-- Week 5-6: N3 grammar (formal particles, cause/reason, concession, degree/extent, tendency, conjecture, actions, addition, time, state, expression, negation, compound expressions)
-- Week 7-8: N2 grammar (advanced concession, cause/reason, degree/limitation, time/occasion, assertion/judgment, contrast, topic/stance, emotion, formal written, conditionals, results, emphasis, conjunctions, high-frequency suffixes)
+## Main pages
 
-## Format
-Single-page static site with ${lessonPages.length} individual lesson pages. Each grammar point includes:
+- [Home / 主页](${SITE}): Site overview, level cards, getting started.
+- [About / 关于](${SITE}about/): Author bio, content sources, methodology, contact, license details.
+
+## JLPT levels (lesson groups)
+
+- [N5 overview / N5 级别概览](${SITE}N5/): Basic sentence patterns, particles, verb groups, て-form, ない-form, た-form, adjectives, conditionals, potential, passive, volitional, conjecture. ${levelCounts.N5} lessons.
+- [N4 overview / N4 级别概览](${SITE}N4/): Causative, passive, giving/receiving, ように, ことにする/なる, わけだ/ものだ. ${levelCounts.N4} lessons.
+- [N3 overview / N3 级别概览](${SITE}N3/): Formal particles, cause/reason, concession, degree/extent, state, negation, compound expressions. ${levelCounts.N3} lessons.
+- [N2 overview / N2 级别概览](${SITE}N2/): Advanced concession, degree/limitation, judgment, contrast, written-formal grammar. ${levelCounts.N2} lessons.
+
+## Grammar checklists (full point-by-point listings)
+
+- [N5 grammar list / N5 文法チェックリスト](${SITE}N5_grammar_list/): All ~70 N5 grammar points with progress checkboxes.
+- [N4 grammar list / N4 文法チェックリスト](${SITE}N4_grammar_list/): All ~74 N4 grammar points (excluding N5 overlap).
+- [N3 grammar list / N3 文法チェックリスト](${SITE}N3_grammar_list/): All ~150 N3 grammar points.
+- [N2 grammar list / N2 文法チェックリスト](${SITE}N2_grammar_list/): All ~130 N2 grammar points.
+
+## Feeds and metadata
+
+- [RSS feed](${SITE}feed.xml): Lesson update feed.
+- [Sitemap](${SITE}sitemap.xml): Full list of indexable URLs.
+- [Source code](https://github.com/Ralphbupt/japanese-grammar): Markdown content and build scripts (Node.js + marked + kuroshiro).
+
+## Lesson page structure
+
+Each \`/dayNN/\` page contains:
 - Conjugation rules (接続)
-- Example sentences (例句)
+- Meaning / usage (含义 / 用法)
+- 3+ example sentences with furigana (例句)
 - Comparison with similar grammar (辨析)
-- Practice exercises
-- Spaced repetition checklist
-
-## License
-CC BY 4.0
+- Common mistakes for Chinese-native speakers (易错点)
+- Spaced-repetition checklist (复习计划)
 `, "utf-8");
 
   fs.writeFileSync(path.join(__dirname, "dist/manifest.json"), JSON.stringify({
@@ -2057,7 +2106,8 @@ body.sidebar-collapsed #content.home {
 .level-tag {
   display: inline-block;
   padding: .2rem .65rem;
-  background: var(--accent); color: #fff;
+  /* Slightly darker than --accent so #fff text passes AA 4.5:1 contrast. */
+  background: #d6354c; color: #fff;
   font-size: .82rem; font-weight: 700;
   border-radius: 4px; letter-spacing: .05em;
   margin-bottom: .9rem;
@@ -2075,9 +2125,10 @@ body.sidebar-collapsed #content.home {
   margin: .6rem 0;
 }
 .home-howto a {
-  color: var(--accent); text-decoration: none;
+  color: var(--accent); text-decoration: underline;
+  text-underline-offset: 2px;
 }
-.home-howto a:hover { text-decoration: underline; }
+.home-howto a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
 
 /* ─── Dark mode (follows OS preference) ───
    The site already uses CSS variables for most colors, so overriding
@@ -2100,6 +2151,9 @@ body.sidebar-collapsed #content.home {
   .seo-lead strong, .home-intro strong { color: #ff7088; }
   /* .breadcrumb is defined on each page; override gray contrast for dark. */
   .breadcrumb { color: #999 !important; }
+  /* .related-label gray on the (red-tinted) related-grammar box was 4.46
+     in dark mode (just under AA 4.5). Lighten to clear the bar. */
+  .related-label { color: #a8a8b8; }
   body { color: #d4d4dc; }
   h1 { color: #f0f0f5; }
   h2 { color: #e4e4ec; }
