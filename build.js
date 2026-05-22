@@ -1244,6 +1244,12 @@ ${CSS}
 .level-stats { display: flex; gap: 2rem; margin: 1rem 0; padding: 1rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .level-stat strong { display: block; font-size: 1.6rem; color: var(--accent); }
 .level-stat span { font-size: .8rem; color: #888; }
+@media (prefers-color-scheme: dark) {
+  .overview-intro { background: #1f1f2e; color: #c8c8d4; }
+  .overview-card { background: #1f1f2e; }
+  .overview-title { color: #f0f0f5; }
+  .grammar-pill { background: #25253a; color: #c8c8d4; }
+}
 </style>
 </head>
 <body class="sidebar-collapsed">
@@ -1910,6 +1916,68 @@ body.sidebar-collapsed #content.home {
   color: var(--accent); text-decoration: none;
 }
 .home-howto a:hover { text-decoration: underline; }
+
+/* ─── Dark mode (follows OS preference) ───
+   The site already uses CSS variables for most colors, so overriding
+   them here flips the palette without touching individual rules. The
+   accent red (#e94560) and ruby furigana color stay — they read well
+   on both light and dark backgrounds. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14141e;
+    --sidebar-bg: #0a0a14;
+    --sidebar-text: #b8b8c4;
+    --card-bg: #1f1f2e;
+    --border: #2d2d44;
+    --word-bg: #2a2618;
+    --word-border: #5a4920;
+    --code-bg: #1f1f2e;
+  }
+  body { color: #d4d4dc; }
+  h1 { color: #f0f0f5; }
+  h2 { color: #e4e4ec; }
+  h3, h4 { color: #d8d8e0; }
+
+  th { background: #25253a; color: #e4e4ec; }
+  tr:nth-child(even) { background: rgba(255, 255, 255, 0.025); }
+  blockquote { background: rgba(233, 69, 96, 0.08); }
+  details { background: #1f1f2e; }
+
+  ul:has(input[type="checkbox"]) li:hover { background: #1f1f2e; }
+  ul:has(input[type="checkbox"]) li.checked { color: #6a6a78; }
+
+  .seo-lead { background: #1f1f2e; color: #c8c8d4; }
+  .related-grammar { background: #1a223a; border-color: #2a3a55; }
+  .cross-link { background: #1f3548; color: #ff7088; }
+  .cross-link:hover { background: var(--accent); color: #fff; }
+
+  .checklist-progress { background: #1f1f2e; color: #b8b8c4; }
+  .checklist-progress .progress-bar { background: #2d2d44; }
+
+  #settings-panel { background: #1f1f2e; color: #d4d4dc; }
+  .settings-header { border-bottom-color: #2d2d44; }
+  .settings-header button { color: #888; }
+  .settings-label { color: #c8c8d4; }
+  .settings-hint { color: #888; }
+  #start-date-input {
+    background: #14141e; color: #d4d4dc; border-color: #2d2d44;
+  }
+  #start-date-input::-webkit-calendar-picker-indicator { filter: invert(0.7); }
+
+  /* Home page */
+  .home-hero h1 { color: #f0f0f5; }
+  .home-intro { color: #b8b8c4; }
+  .home-stat span { color: #888; }
+  .home-levels h2, .home-howto h2 { color: #e4e4ec; }
+  .level-card { background: #1f1f2e; }
+  .level-card h3 { color: #f0f0f5; }
+  .level-card p { color: #b8b8c4; }
+  .home-howto p { color: #b8b8c4; }
+
+  /* Code */
+  code { color: #f0a0b0; }
+  pre code { color: #d4d4dc; }
+}
 `;
 
 // ─── JS ───
