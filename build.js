@@ -595,6 +595,13 @@ async function main() {
         (match) => match.replace("<table>", '<table class="word-table">')
       );
 
+      // a11y: marked emits <th> without scope, which Lighthouse flags on
+      // large tables. All lesson tables are column-major (header row),
+      // so scope="col" is always correct.
+      html = html.replace(/<th(\s[^>]*)?>/g, (m, attrs) =>
+        attrs && /\bscope=/.test(attrs) ? m : `<th${attrs || ""} scope="col">`
+      );
+
       // Enable checklist checkboxes (remove disabled, add data attributes)
       let checkIdx = 0;
       html = html.replace(
@@ -1072,7 +1079,7 @@ ${CSS}
 #content { margin: 0 auto !important; max-width: 1000px; }
 .back-link { display: block; margin-bottom: 1.5rem; color: var(--accent); text-decoration: none; font-size: 0.9rem; }
 .back-link:hover { text-decoration: underline; }
-.breadcrumb { font-size: 0.85rem; color: #888; margin-bottom: 0.5rem; }
+.breadcrumb { font-size: 0.85rem; color: #666; margin-bottom: 0.5rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
 .breadcrumb a:hover { text-decoration: underline; }
 .breadcrumb .sep { margin: 0 0.4em; }
@@ -1188,7 +1195,7 @@ ${sidebarMarkupHtml}
     const tableHtml = tableRows.length > 0
       ? `<h2 id="grammar-index">${level} 全部语法点速查表</h2>
 <table class="overview-table">
-<thead><tr><th>语法点</th><th>课次</th><th>课题</th></tr></thead>
+<thead><tr><th scope="col">语法点</th><th scope="col">课次</th><th scope="col">课题</th></tr></thead>
 <tbody>${tableRows.join("\n")}</tbody>
 </table>`
       : "";
@@ -1241,7 +1248,7 @@ ${CSS}
 /* Keep sidebar (pure-CSS hover navigation); hide JS-dependent chrome. */
 #menu-toggle, #toc-panel, #settings-toggle, #settings-overlay, #bottom-controls { display: none !important; }
 #content { margin: 0 auto !important; max-width: 1100px; padding: 2rem 1.5rem 4rem; }
-.breadcrumb { font-size: .85rem; color: #888; margin-bottom: 1rem; }
+.breadcrumb { font-size: .85rem; color: #666; margin-bottom: 1rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
 .breadcrumb .sep { margin: 0 .4em; }
 .overview-intro { font-size: 1rem; line-height: 1.8; color: #444; margin: 1rem 0 2rem; padding: 1rem 1.2rem; background: #fafaf2; border-left: 3px solid var(--word-border); border-radius: 0 6px 6px 0; }
@@ -1261,7 +1268,7 @@ ${CSS}
 .overview-table a:hover { text-decoration: underline; }
 .level-stats { display: flex; gap: 2rem; margin: 1rem 0; padding: 1rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .level-stat strong { display: block; font-size: 1.6rem; color: var(--accent); }
-.level-stat span { font-size: .8rem; color: #888; }
+.level-stat span { font-size: .8rem; color: #666; }
 @media (prefers-color-scheme: dark) {
   .overview-intro { background: #1f1f2e; color: #c8c8d4; }
   .overview-card { background: #1f1f2e; }
@@ -1361,7 +1368,7 @@ ${CSS}
 /* Keep sidebar (pure-CSS hover); hide JS-dependent chrome. */
 #menu-toggle, #toc-panel, #settings-toggle, #settings-overlay, #bottom-controls { display: none !important; }
 #content { margin: 0 auto !important; max-width: 800px; padding: 2rem 2rem 4rem; }
-.breadcrumb { font-size: .85rem; color: #888; margin-bottom: 1rem; }
+.breadcrumb { font-size: .85rem; color: #666; margin-bottom: 1rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
 .breadcrumb .sep { margin: 0 .4em; }
 .about-content h1 { font-size: 2rem; margin: 0 0 1.5rem; border-bottom: 2px solid var(--accent); padding-bottom: .6rem; }
@@ -1808,7 +1815,7 @@ ul:has(input[type="checkbox"]) li {
 }
 ul:has(input[type="checkbox"]) li:hover { background: #f5f5f5; }
 ul:has(input[type="checkbox"]) li.checked {
-  text-decoration: line-through; color: #aaa;
+  text-decoration: line-through; color: #7a7a7a;
 }
 ul:has(input[type="checkbox"]) li.checked input[type="checkbox"] { accent-color: var(--accent); }
 input[type="checkbox"] {
@@ -1924,7 +1931,7 @@ summary {
   width: 100%; padding: .5rem; border: 1px solid #ccc; border-radius: 6px;
   font-size: .95rem;
 }
-.settings-hint { font-size: .8rem; color: #888; margin-top: .4rem; }
+.settings-hint { font-size: .8rem; color: #666; margin-top: .4rem; }
 
 /* Day date badges in sidebar */
 .nav-item .day-date {
@@ -2002,7 +2009,7 @@ body.sidebar-collapsed #content.home {
   display: block; font-size: 1.7rem; color: var(--accent);
   font-weight: 700; line-height: 1.1;
 }
-.home-stat span { font-size: .78rem; color: #888; }
+.home-stat span { font-size: .78rem; color: #666; }
 .home-levels h2, .home-howto h2 {
   font-size: 1.35rem; margin: 2rem 0 1rem; color: #1a1a2e;
 }
