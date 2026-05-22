@@ -1032,7 +1032,7 @@ var disqus_config = function () {
 <style>
 ${CSS}
 #sidebar, #menu-toggle, #toc-panel, #settings-toggle, #settings-overlay { display: none !important; }
-#content { margin-left: 0 !important; margin-right: 0 !important; max-width: 800px; margin: 0 auto; }
+#content { margin: 0 auto !important; max-width: 800px; }
 .back-link { display: block; margin-bottom: 1.5rem; color: var(--accent); text-decoration: none; font-size: 0.9rem; }
 .back-link:hover { text-decoration: underline; }
 .breadcrumb { font-size: 0.85rem; color: #888; margin-bottom: 0.5rem; }
@@ -1211,7 +1211,7 @@ var disqus_config = function () {
 <style>
 ${CSS}
 #sidebar, #menu-toggle, #toc-panel, #settings-toggle, #settings-overlay, #bottom-controls { display: none !important; }
-#content { margin-left: 0 !important; margin-right: 0 !important; max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+#content { margin: 0 auto !important; max-width: 900px; padding: 2rem 1.5rem 4rem; }
 .breadcrumb { font-size: .85rem; color: #888; margin-bottom: 1rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
 .breadcrumb .sep { margin: 0 .4em; }
