@@ -1,5 +1,13 @@
 # Day 23 – ばかり・ところだ・てしまう
 
+:::zh
+「ばかり」表示"刚刚……"或"全是……"，「ところだ」按前接形式表示"正要 / 正在 / 刚刚"，「てしまう」表示"做完了"或带有"糟糕了"的遗憾语气。本课把日语里和**时间感和心情**相关的三个高频语法摆在一起讲清楚。
+:::
+
+:::en
+「ばかり」 = "just did" or "nothing but…", 「ところだ」 = about to / in the middle of / just finished depending on the preceding form, 「てしまう」 = completion or "oh no I did it." Three high-frequency patterns tied to **time-feel and emotion**, side by side.
+:::
+
 ## 本课单词表
 
 | 单词 | 读音 | 含义 |

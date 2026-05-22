@@ -1,5 +1,13 @@
 # N5 文法チェックリスト
 
+:::zh
+N5 全部约 70 个语法点的清单速查表。可以打印贴在桌上，也可以当复习时勾选的进度追踪。每个语法点都对应到具体的课次，点开就是详细笔记。
+:::
+
+:::en
+A full cheatsheet of all ~70 N5 grammar points. Print it for your desk or use it as a review checklist — each point links to the lesson where it's taught.
+:::
+
 > JLPT N5 核心语法约 70 条。掌握这些就能应付日常基础交流。
 
 ## 基本句型

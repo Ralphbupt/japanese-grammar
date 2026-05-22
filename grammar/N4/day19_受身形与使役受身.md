@@ -1,5 +1,13 @@
 # Day 19 – 受身形详解与使役受身形
 
+:::zh
+受身形「られる」表示"被…"，但日语的受身比中文多一种用法：**「迷惑の受身」**表示"被某事影响而觉得困扰"。再加上把"使役 + 受身"合体的 **「させられる」**（被迫做），这一课是 N4 公认的难度天花板。
+:::
+
+:::en
+The passive 「られる」 means "to be …," but Japanese has an extra use Chinese / English don't: the **suffering passive** (迷惑の受身) — "affected adversely." Combined with the causative-passive **「させられる」** (forced to do), this is N4's notorious ceiling.
+:::
+
 ## 本课单词表
 
 | 单词 | 读音 | 含义 |
