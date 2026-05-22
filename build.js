@@ -1813,8 +1813,15 @@ body.sidebar-collapsed #menu-toggle { display: block; }
   #menu-toggle { display: block !important; }
 }
 
-/* Home page landing layout (no lesson articles inlined) */
-#content.home { max-width: 1000px; }
+/* Home page landing layout (no lesson articles inlined).
+   Hide the right-hand TOC panel (no lessons to navigate within) and
+   release the reserved right margin so the directory feels centered
+   instead of pushed against the empty TOC space. */
+body:has(#content.home) #toc-panel { display: none; }
+#content.home {
+  max-width: 1000px;
+  margin-right: auto;
+}
 .home-hero {
   text-align: center;
   padding: 2.5rem 1rem 1.8rem;
