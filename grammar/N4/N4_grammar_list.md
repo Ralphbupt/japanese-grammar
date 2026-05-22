@@ -1,5 +1,13 @@
 # N4 文法チェックリスト
 
+:::zh
+N4 全部约 74 个语法点的清单（不含 N5 重复内容）。N4 是从"能说基本句子"到"能讲清楚自己想法"的转折点——这份清单帮你定位每个语法学到哪一课、复习到哪一步。
+:::
+
+:::en
+A full cheatsheet of ~74 N4 grammar points (excluding overlap with N5). N4 is the pivot from "basic sentences" to "expressing your own thoughts" — use this list to locate each point and track your review progress.
+:::
+
 > JLPT N4 核心语法约 74 条（不含 N5 已讲内容）。在 N5 基础上扩展使役、被动、授受等复杂表达。
 
 ## 条件表达（N5 で学んだ ば/たら/なら の応用）

@@ -1,5 +1,13 @@
 # Day 27（5/3）：N4语法总复习||N4 Grammar Comprehensive Review
 
+:::zh
+N4 阶段最后一课，把前 9 课讲过的核心语法——**使役、受身、授受、ように系列、ことにする系列、てしまう、わけだ / ものだ**——一次性串起来。学完就有资格去刷 N4 真题了。
+:::
+
+:::en
+The closing lesson of N4, weaving together all 9 previous lessons — **causative, passive, giving/receiving, ように, ことにする, てしまう, わけだ / ものだ**. After this, you're ready to grind N4 mock exams.
+:::
+
 ---
 
 ## N4全部核心语法清单||N4 Complete Core Grammar Checklist

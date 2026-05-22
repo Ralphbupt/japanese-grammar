@@ -1,5 +1,13 @@
 # Day 8 – 形容词活用与比较表达
 
+:::zh
+日语形容词不是简单的「いい / 不いい」，分 **い形容词**和**な形容词**两类，过去形和否定形按完全不同规则变。本课同时讲比较表达「より / 一番」——形容词加比较句型，才能讲出"A 比 B 更…"。
+:::
+
+:::en
+Japanese adjectives split into **い-type** and **な-type**, with completely different past and negative conjugation rules. This lesson also covers comparison (より / 一番) — adjectives plus comparison let you finally say "A is more X than B."
+:::
+
 ## 本课单词表
 
 | 单词 | 读音 | 含义 |

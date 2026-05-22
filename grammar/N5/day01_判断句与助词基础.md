@@ -1,5 +1,13 @@
 # Day 1 – 判断句・は/が・基础助词
 
+:::zh
+学日语的人都会先学「です」，但「は」和「が」的区别才是真正贯穿整个学习生涯的难题。本课打下整个日语判断句和**主题 vs 主语**的基础，搞清楚这两个助词，N5 后面所有的句型才有意义。
+:::
+
+:::en
+Every Japanese learner starts with です, but **は vs が** is the question that haunts you for years. This lesson lays the foundation for sentence structure and the topic-vs-subject distinction — every later N5 pattern builds on it.
+:::
+
 ## 本课单词表
 
 | 单词 | 读音 | 含义 |

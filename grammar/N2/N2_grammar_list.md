@@ -1,5 +1,13 @@
 # N2 文法チェックリスト
 
+:::zh
+N2 全部约 130 个语法点的清单。N2 是考研、商务、留学最常要求的语法级别——这份表覆盖高阶逆接（からといって、つつも）、限定（に過ぎない、はもとより）、判断（わけがない）、对比、感情、书面表达等全部考点。
+:::
+
+:::en
+A full cheatsheet of ~130 N2 grammar points. N2 is the level demanded by graduate exams, business roles, and study-abroad applications — covers advanced concession, limitation, judgment, contrast, emotion, and written-formal categories.
+:::
+
 > JLPT N2 核心语法约 130 条。正式书面语和复杂表达，考试重点级别。
 
 ## 逆接・让步

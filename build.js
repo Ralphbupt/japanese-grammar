@@ -17,6 +17,9 @@ const GRAMMAR_DIRS = [
 ];
 const OUT = "dist/index.html";
 const SITE = "https://ralphbupt.github.io/japanese-grammar/";
+// Derived from SITE — change SITE in one place to migrate domains.
+const SITE_PATH = new URL(SITE).pathname;             // "/japanese-grammar/" or "/"
+const SITE_HOST = SITE.replace(/^https?:\/\//, "").replace(/\/$/, ""); // "ralphbupt.github.io/japanese-grammar" or "jpnotes.dev"
 
 // Japanese sidebar titles (keyed by file id)
 const JA_TITLES = {
@@ -213,6 +216,56 @@ function discoverFiles() {
 function extractTitle(md) {
   const m = md.match(/^#\s+(.+)/m);
   return m ? m[1].replace(/[#*]/g, "").trim() : "Untitled";
+}
+
+// Extract top-of-file :::zh block (before any ## heading).
+// Used as the unique per-lesson SEO lead + meta description, replacing the
+// templated "本课讲解 X 的接续规则…" boilerplate that triggers Google's
+// "已抓取-未编入索引" judgement.
+function extractTopLead(md) {
+  const beforeH2 = md.split(/^## /m)[0];
+  const m = beforeH2.match(/^:::zh\s*\n([\s\S]*?)^:::\s*$/m);
+  if (!m) return null;
+  return m[1].trim();
+}
+
+// For lessons without a hand-written top :::zh, fall back to the first
+// prose :::zh block inside the first real grammar-point section. Each
+// grammar point has a "接续/Conjugation" subsection with bullet-point
+// rules — we skip those since they make awful meta descriptions. We
+// also skip "本课单词表"-style vocabulary headings. What remains is
+// usually the meaning/usage paragraph, which is unique per lesson.
+function extractFirstMeaningZh(md) {
+  const sections = md.split(/^## /m);
+  for (let i = 1; i < sections.length; i++) {
+    const sec = sections[i];
+    const headerLine = sec.split("\n")[0];
+    if (/单词表|単語表|Vocabulary/i.test(headerLine)) continue;
+    const subSections = sec.split(/^### /m);
+    for (let j = 1; j < subSections.length; j++) {
+      const sub = subSections[j];
+      const subHeader = sub.split("\n")[0];
+      if (/^(接[续続]|Conjugation)/i.test(subHeader)) continue;
+      const m = sub.match(/^:::zh\s*\n([\s\S]*?)^:::\s*$/m);
+      if (m) return m[1].trim();
+    }
+  }
+  return null;
+}
+
+// Strip markdown formatting from extracted lead text for meta description use.
+// Strips a leading "接续：…" line that some lessons put inside their first
+// :::zh block before the actual examples/meaning.
+function leadToPlainText(text, maxLen = 160) {
+  let s = text;
+  s = s.replace(/^\s*接[续続][:：][^\n]*\n+/, "");
+  s = s
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/[*_`]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  if (s.length > maxLen) s = s.slice(0, maxLen - 1) + "…";
+  return s;
 }
 
 // ─── Furigana via kuroshiro ───
@@ -461,6 +514,8 @@ async function main() {
       const md = fs.readFileSync(file.path, "utf-8");
       const title = extractTitle(md);
       const shortTitle = title.length > 40 ? title.slice(0, 38) + "…" : title;
+      const topLead = extractTopLead(md);
+      const firstMeaningZh = topLead ? null : extractFirstMeaningZh(md);
       if (!firstId) firstId = file.id;
 
       // Pre-process bilingual blocks: :::zh ... ::: / :::en ... :::
@@ -541,13 +596,26 @@ async function main() {
           return kanaCount >= 1 && kanaCount >= p.length / 2;
         });
 
-      // SEO lead paragraph: keyword-rich summary inserted after h1 (#B)
+      // SEO lead paragraph: keyword-rich summary inserted after h1.
+      // If the lesson markdown has its own top-of-file :::zh / :::en block,
+      // mark those rendered divs with the seo-lead class instead of adding
+      // a templated paragraph — this prevents 73 pages from starting with
+      // near-identical "本课讲解 X 的接续规则…" boilerplate, which is what
+      // makes Google flag pages as 已抓取-未编入索引.
       const groupLevel = group.label;
-      if (cleanPoints.length > 0) {
+      if (topLead) {
+        html = html.replace(
+          /(<div class=")lang-zh(" lang="zh-CN">)/,
+          "$1lang-zh seo-lead$2"
+        );
+        html = html.replace(
+          /(<div class=")lang-en(" lang="en">)/,
+          "$1lang-en seo-lead$2"
+        );
+      } else if (cleanPoints.length > 0) {
         const leadPoints = cleanPoints.slice(0, 6);
         const pointsZh = leadPoints.map(p => `<strong>${p}</strong>`).join("、");
         const seoLead = `<p class="seo-lead">本课讲解 ${groupLevel} 语法 ${pointsZh} 的接续规则、含义、例句辨析与易错点对比，配套练习题与 JLPT ${groupLevel} 备考要点。</p>`;
-        // Insert after the first </h1>
         html = html.replace(/(<\/h1>)/, `$1\n${seoLead}`);
       }
 
@@ -582,7 +650,7 @@ async function main() {
       articlesHtml.push(
         `<article id="${file.id}" class="lesson">${html}</article>`
       );
-      lessonPages.push({ id: file.id, title, sidebarTitle, html, jaTitle: jaTitle || shortTitle, filePath: file.path, grammarPoints, cleanPoints, level: group.label, md });
+      lessonPages.push({ id: file.id, title, sidebarTitle, html, jaTitle: jaTitle || shortTitle, filePath: file.path, grammarPoints, cleanPoints, level: group.label, md, topLead, firstMeaningZh });
     }
   }
 
@@ -637,6 +705,61 @@ async function main() {
     articlesHtml[li] = `<article id="${lessonPages[li].id}" class="lesson">${html}</article>`;
   }
 
+  // ─── Home page main content ───
+  // Don't inline all 73 lesson articles into index.html (3.98MB → ~50KB).
+  // Replace with a landing-page layout: hero + level cards + how-to.
+  // Sidebar links already point to standalone /dayXX/ pages.
+  const levelCounts = { N5: 0, N4: 0, N3: 0, N2: 0 };
+  let totalPoints = 0;
+  let totalLessons = 0;
+  for (const l of lessonPages) {
+    totalPoints += (l.cleanPoints || []).length;
+    if (/^day\d+/.test(l.id) && levelCounts.hasOwnProperty(l.level)) {
+      levelCounts[l.level]++;
+      totalLessons++;
+    }
+  }
+  const homeMainHtml = `<header class="home-hero">
+    <h1>日语语法笔记 — N5 到 N2，8 周完整体系</h1>
+    <p class="home-intro">免费、双语（中文 + 日语）的日语语法笔记，从 N5 入门到 N2 进阶共 <strong>${totalLessons} 课、${totalPoints}+ 语法点</strong>，每课配接续规则、例句、辨析、练习题与间隔复习勾选清单。</p>
+    <div class="home-stats">
+      <div class="home-stat"><strong>${totalLessons}</strong><span>课</span></div>
+      <div class="home-stat"><strong>${totalPoints}+</strong><span>语法点</span></div>
+      <div class="home-stat"><strong>4</strong><span>JLPT 级别</span></div>
+      <div class="home-stat"><strong>免费</strong><span>双语</span></div>
+    </div>
+  </header>
+  <section class="home-levels">
+    <h2>按级别学习</h2>
+    <div class="level-grid">
+      <a class="level-card" href="N5/">
+        <span class="level-tag">N5</span>
+        <h3>入门基础</h3>
+        <p>判断句、助词、动词分类、て形、ない形、た形、形容词、条件、可能/受身。共 ${levelCounts.N5} 课。</p>
+      </a>
+      <a class="level-card" href="N4/">
+        <span class="level-tag">N4</span>
+        <h3>日常进阶</h3>
+        <p>使役、受身、授受表现、ように系列、ことにする/なる、わけだ/ものだ 等核心日常语法。共 ${levelCounts.N4} 课。</p>
+      </a>
+      <a class="level-card" href="N3/">
+        <span class="level-tag">N3</span>
+        <h3>书面分水岭</h3>
+        <p>书面助词、原因理由、逆接让步、程度范围、状态样态、否定与复合表达。共 ${levelCounts.N3} 课。</p>
+      </a>
+      <a class="level-card" href="N2/">
+        <span class="level-tag">N2</span>
+        <h3>商务・学术</h3>
+        <p>高阶逆接、程度限定、判断主张、对比关系、感情表达、书面专用语法。共 ${levelCounts.N2} 课。</p>
+      </a>
+    </div>
+  </section>
+  <section class="home-howto">
+    <h2>使用方法</h2>
+    <p>每节课包含 <strong>接续 / 含义 / 例句 / 辨析 / 易错点</strong> 五个部分，配套练习题与按间隔复习的勾选清单（当天 → 1 天 → 4 天 → 7 天 → 14 天 → 30 天）。</p>
+    <p>从级别概览页（<a href="N5/">N5</a> · <a href="N4/">N4</a> · <a href="N3/">N3</a> · <a href="N2/">N2</a>）查看完整语法清单，或从侧栏直接进入任意一课。</p>
+  </section>`;
+
   // ─── Assemble ───
   const fullHtml = `<!DOCTYPE html>
 <html lang="ja">
@@ -646,14 +769,14 @@ async function main() {
 <title>Japanese Grammar Notes | 日语语法笔记 – N5→N2 in 8 Weeks</title>
 <meta name="description" content="Free structured Japanese grammar notes from N5 to N2 in 8 weeks. Bilingual (Japanese + Chinese) with conjugation rules, example sentences, and spaced repetition.">
 <meta name="keywords" content="Japanese grammar, JLPT N2, N5, N4, N3, 日语语法, 日本語文法, grammar notes, spaced repetition, 语法笔记">
-<link rel="canonical" href="https://ralphbupt.github.io/japanese-grammar/">
+<link rel="canonical" href="${SITE}">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Japanese Grammar Notes | 日语语法笔记 – N5→N2">
 <meta property="og:description" content="Free structured Japanese grammar notes from N5 to N2 in 8 weeks. Bilingual with examples and spaced repetition.">
-<meta property="og:url" content="https://ralphbupt.github.io/japanese-grammar/">
-<meta property="og:image" content="https://ralphbupt.github.io/japanese-grammar/og-image.png">
+<meta property="og:url" content="${SITE}">
+<meta property="og:image" content="${SITE}og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="ja_JP">
@@ -663,7 +786,7 @@ async function main() {
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Japanese Grammar Notes | 日语语法笔记 – N5→N2">
 <meta name="twitter:description" content="Free structured Japanese grammar notes from N5 to N2 in 8 weeks.">
-<meta name="twitter:image" content="https://ralphbupt.github.io/japanese-grammar/og-image.png">
+<meta name="twitter:image" content="${SITE}og-image.png">
 
 <!-- Structured Data -->
 <meta http-equiv="Content-Language" content="ja, zh-CN">
@@ -678,8 +801,8 @@ async function main() {
   "educationalLevel": "Beginner to Intermediate",
   "about": { "@type": "Thing", "name": "Japanese Language Grammar" },
   "isAccessibleForFree": true,
-  "image": "https://ralphbupt.github.io/japanese-grammar/og-image.png",
-  "url": "https://ralphbupt.github.io/japanese-grammar/",
+  "image": "${SITE}og-image.png",
+  "url": "${SITE}",
   "hasCourseInstance": {
     "@type": "CourseInstance",
     "courseMode": "online",
@@ -691,13 +814,13 @@ async function main() {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "日语语法笔记 – Japanese Grammar Notes",
-  "url": "https://ralphbupt.github.io/japanese-grammar/",
+  "url": "${SITE}",
   "inLanguage": ["ja", "zh-CN"]
 }]
 </script>
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
-<link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="https://ralphbupt.github.io/japanese-grammar/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#1a1a2e">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -721,9 +844,8 @@ ${CSS}
     <a href="https://github.com/Ralphbupt" target="_blank">GitHub</a>
   </div>
 </nav>
-<main id="content">
-  ${articlesHtml.join("\n  ")}
-  <div id="disqus_thread"></div>
+<main id="content" class="home">
+  ${homeMainHtml}
 </main>
 <nav id="toc-panel"></nav>
 <div id="bottom-controls">
@@ -755,7 +877,7 @@ ${JS}
 </script>
 <script>
 var disqus_config = function () {
-  this.page.url = 'https://ralphbupt.github.io/japanese-grammar/';
+  this.page.url = '${SITE}';
   this.page.identifier = 'japanese-grammar-main';
 };
 (function() {
@@ -786,16 +908,26 @@ var disqus_config = function () {
     const cleanPoints = lesson.cleanPoints || [];
     let lessonTitle, lessonDesc;
     if (cleanPoints.length >= 2) {
-      // Comparison-type title: "X / Y 用法详解 | 日语 N3 语法 区别+例句"
       const titlePoints = cleanPoints.slice(0, 2).join(" / ");
       lessonTitle = `${titlePoints} 用法详解 | 日语 ${lessonLevel} 语法 区别+例句`;
-      lessonDesc = `日语 ${lessonLevel} 语法 ${cleanPoints.slice(0, 4).join("、")} 的接续、含义、例句、辨析与易错点对比。JLPT ${lessonLevel} 备考笔记，含练习题与答案。`;
     } else if (cleanPoints.length === 1) {
       lessonTitle = `${cleanPoints[0]} 用法详解 | 日语 ${lessonLevel} 语法 例句+易错点`;
+    } else {
+      lessonTitle = `${lesson.jaTitle} | 日语 ${lessonLevel} 语法笔记 - JLPT 备考`;
+    }
+    // Prefer the lesson's hand-written :::zh lead for meta description.
+    // Fall back to the first 含义 section's :::zh content (auto-extracted,
+    // still unique because each lesson covers a different grammar point).
+    // Only use the templated description as a last resort.
+    if (lesson.topLead) {
+      lessonDesc = leadToPlainText(lesson.topLead, 160);
+    } else if (lesson.firstMeaningZh) {
+      lessonDesc = leadToPlainText(lesson.firstMeaningZh, 160);
+    } else if (cleanPoints.length >= 2) {
+      lessonDesc = `日语 ${lessonLevel} 语法 ${cleanPoints.slice(0, 4).join("、")} 的接续、含义、例句、辨析与易错点对比。JLPT ${lessonLevel} 备考笔记，含练习题与答案。`;
+    } else if (cleanPoints.length === 1) {
       lessonDesc = `深入讲解日语 ${lessonLevel} 语法 ${cleanPoints[0]} 的接续规则、用法、例句与易错点。JLPT ${lessonLevel} 备考必看笔记。`;
     } else {
-      // Fallback for grammar list / overview pages
-      lessonTitle = `${lesson.jaTitle} | 日语 ${lessonLevel} 语法笔记 - JLPT 备考`;
       lessonDesc = `${lesson.title} - 日语 ${lessonLevel} 语法笔记，含接续规则、例句、辨析与练习。免费 JLPT 备考资源。`;
     }
 
@@ -1164,6 +1296,14 @@ Allow: /
 Sitemap: ${SITE}sitemap.xml
 `, "utf-8");
 
+  // CNAME for GitHub Pages custom domain. Skipped while SITE points at
+  // *.github.io (no custom domain in use); written automatically once
+  // SITE is changed to e.g. https://jpnotes.dev/.
+  const cnameHost = new URL(SITE).hostname;
+  if (!cnameHost.endsWith(".github.io")) {
+    fs.writeFileSync(path.join(__dirname, "dist/CNAME"), cnameHost + "\n", "utf-8");
+  }
+
   // ─── RSS Feed ───
   const rssItems = lessonPages.map(lesson => {
     const mod = gitLastMod(lesson.filePath) || today;
@@ -1198,7 +1338,7 @@ ${rssItems.join("\n")}
 > Bilingual: Japanese + Chinese. Includes conjugation rules, 3+ example sentences per grammar point, comparison with similar grammar, and spaced repetition tracking.
 
 ## URL
-https://ralphbupt.github.io/japanese-grammar/
+${SITE}
 
 ## Content Overview
 - 72 lessons covering all 4 JLPT levels (N5, N4, N3, N2) — complete
@@ -1222,8 +1362,8 @@ CC BY 4.0
   fs.writeFileSync(path.join(__dirname, "dist/manifest.json"), JSON.stringify({
     name: "日语语法笔记 – N5→N2",
     short_name: "日语文法",
-    start_url: "/japanese-grammar/",
-    scope: "/japanese-grammar/",
+    start_url: SITE_PATH,
+    scope: SITE_PATH,
     display: "standalone",
     background_color: "#fafaf8",
     theme_color: "#1a1a2e",
@@ -1250,7 +1390,7 @@ CC BY 4.0
 <div class="box">
   <h1>404</h1>
   <p>ページが見つかりません</p>
-  <a href="/japanese-grammar/">← ホームに戻る</a>
+  <a href="${SITE_PATH}">← ホームに戻る</a>
 </div>
 </body>
 </html>`, "utf-8");
@@ -1269,7 +1409,7 @@ CC BY 4.0
   <text x="600" y="320" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="42" fill="#c8c8d8">Japanese Grammar Notes</text>
   <text x="600" y="400" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="36" fill="#e94560">N5 → N4 → N3 → N2</text>
   <text x="600" y="470" text-anchor="middle" font-family="sans-serif" font-size="24" fill="#888888">Free · Bilingual · 8 Weeks · Spaced Repetition</text>
-  <text x="600" y="550" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#666666">ralphbupt.github.io/japanese-grammar</text>
+  <text x="600" y="550" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#666666">${SITE_HOST}</text>
 </svg>`;
   fs.writeFileSync(path.join(__dirname, "dist/og-image.svg"), ogSvg, "utf-8");
 
@@ -1300,7 +1440,7 @@ CC BY 4.0
   <text x="600" y="180" text-anchor="middle" font-family="sans-serif" font-size="48" fill="#e94560" font-weight="bold">JLPT ${level}</text>
   <text x="600" y="310" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="64" fill="#ffffff" font-weight="bold">${escJaTitle}</text>
   <text x="600" y="430" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="32" fill="#c8c8d8">Japanese Grammar Notes</text>
-  <text x="600" y="550" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#666666">ralphbupt.github.io/japanese-grammar</text>
+  <text x="600" y="550" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#666666">${SITE_HOST}</text>
 </svg>`;
     await sharp(Buffer.from(lessonOgSvg))
       .resize(1200, 630)
@@ -1672,6 +1812,82 @@ body.sidebar-collapsed #menu-toggle { display: block; }
   #content { margin-left: 0 !important; margin-right: 0; padding: 3rem 1rem 4rem; }
   #menu-toggle { display: block !important; }
 }
+
+/* Home page landing layout (no lesson articles inlined) */
+#content.home { max-width: 1000px; }
+.home-hero {
+  text-align: center;
+  padding: 2.5rem 1rem 1.8rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2.2rem;
+}
+.home-hero h1 {
+  font-size: 2rem; margin: 0 0 1rem;
+  border: none; padding: 0; color: #1a1a2e;
+}
+.home-intro {
+  font-size: 1rem; color: #555;
+  max-width: 680px; margin: 0 auto 1.6rem;
+  line-height: 1.75;
+}
+.home-intro strong { color: var(--accent); font-weight: 600; }
+.home-stats {
+  display: flex; justify-content: center; gap: 2.2rem;
+  flex-wrap: wrap;
+  margin: 1rem 0 .3rem;
+}
+.home-stat { text-align: center; }
+.home-stat strong {
+  display: block; font-size: 1.7rem; color: var(--accent);
+  font-weight: 700; line-height: 1.1;
+}
+.home-stat span { font-size: .78rem; color: #888; }
+.home-levels h2, .home-howto h2 {
+  font-size: 1.35rem; margin: 2rem 0 1rem; color: #1a1a2e;
+}
+.level-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2.4rem;
+}
+.level-card {
+  display: block;
+  padding: 1.1rem 1.3rem;
+  background: #fff; border: 1px solid var(--border);
+  border-radius: 10px;
+  text-decoration: none; color: inherit;
+  transition: all .2s;
+}
+.level-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 18px rgba(233,69,96,.12);
+  transform: translateY(-2px);
+}
+.level-tag {
+  display: inline-block;
+  padding: .15rem .55rem;
+  background: var(--accent); color: #fff;
+  font-size: .7rem; font-weight: 700;
+  border-radius: 4px; letter-spacing: .05em;
+  margin-bottom: .8rem;
+}
+.level-card h3 {
+  font-size: 1.1rem; margin: .2rem 0 .5rem;
+  color: #1a1a2e;
+}
+.level-card p {
+  font-size: .85rem; color: #666;
+  line-height: 1.6; margin: 0;
+}
+.home-howto p {
+  color: #555; line-height: 1.75;
+  margin: .6rem 0;
+}
+.home-howto a {
+  color: var(--accent); text-decoration: none;
+}
+.home-howto a:hover { text-decoration: underline; }
 `;
 
 // ─── JS ───
@@ -1896,6 +2112,9 @@ const JS = `
   items.forEach(function(item){
     item.addEventListener('click', function(e){
       if (isModifiedClick(e)) return;
+      // Home page has no inline lesson articles — let the browser follow
+      // the link to the standalone /dayXX/ page instead of intercepting.
+      if (lessons.length === 0) return;
       e.preventDefault();
       var id = this.getAttribute('data-target');
       show(id);

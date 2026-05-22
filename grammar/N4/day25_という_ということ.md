@@ -1,5 +1,13 @@
 # Day 25 – という・ということ
 
+:::zh
+「という」字面上是"被称为"，但实际承担了 **引用、定义、归纳** 三种功能。「ということ」更进一步，把整件事打包成一个名词来谈论。这是日语写作里出现频率最高的"工具词"之一，掌握它就能让句子瞬间从口语跳到书面。
+:::
+
+:::en
+「という」 literally means "called," but in practice it handles **quoting, defining, and summarizing**. 「ということ」 goes further, packaging an entire matter into a noun for further discussion — one of the highest-frequency tool words in written Japanese.
+:::
+
 ## 本课单词表
 
 | 单词 | 读音 | 含义 |

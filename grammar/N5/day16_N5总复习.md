@@ -1,5 +1,13 @@
 # Day 16 – N5 补充语法与总复习
 
+:::zh
+N5 阶段的最后一课，把前面没单独讲的零散语法（**疑问词 + か / も / でも**、**〜すぎる**、**〜やすい / 〜にくい**、**〜ながら**）一次性串起来，并对整个 N5 范围做总盘点。学完这一课，就有资格去刷 N5 真题了。
+:::
+
+:::en
+The closing lesson of N5, weaving together loose ends (**question words + か / も / でも**, **〜すぎる**, **〜やすい / 〜にくい**, **〜ながら**) and a full N5 review. Finish this and you're ready to grind N5 mock exams.
+:::
+
 ## 7. 疑问词 + か/も/でも||7. Question Words + か/も/でも
 
 ### 疑問词 + か = "某……"（不確定）||Question word + か = "some…" (unspecified)

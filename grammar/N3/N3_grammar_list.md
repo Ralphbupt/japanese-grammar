@@ -1,5 +1,13 @@
 # N3 文法チェックリスト
 
+:::zh
+N3 全部约 150 个语法点的清单。N3 是从"日常对话"跨入"书面正式语"的**分水岭**——这份表覆盖书面助词、原因理由、逆接让步、程度范围、状态样态、否定与复合表达等所有主要范畴。
+:::
+
+:::en
+A full cheatsheet of ~150 N3 grammar points. N3 is the **watershed** from daily conversation to formal written Japanese — covers formal particles, cause / reason, concession, degree / extent, state, negation, and compound expressions.
+:::
+
 > JLPT N3 核心语法约 150 条。从日常口语过渡到书面表达，开始接触正式用语。
 
 ## 书面助词（で/に 的正式替换）
