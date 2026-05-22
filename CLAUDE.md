@@ -8,7 +8,7 @@ This is a Japanese language learning project (not a code repo). It contains stru
 
 ## Website
 
-The grammar notes are published as a static site at **https://ralphbupt.github.io/japanese-grammar/**.
+The grammar notes are published as a static site at **https://jpnotes.dev/** (custom domain on GitHub Pages, migrated from ralphbupt.github.io/japanese-grammar/).
 
 - **Build**: `npm run build` → runs `build.js` → outputs `dist/index.html`
 - **Stack**: marked (markdown→HTML), kuroshiro + kuromoji (furigana generation)
