@@ -21,6 +21,26 @@ const SITE = "https://jpnotes.dev/";
 const SITE_PATH = new URL(SITE).pathname;             // "/japanese-grammar/" or "/"
 const SITE_HOST = SITE.replace(/^https?:\/\//, "").replace(/\/$/, ""); // "ralphbupt.github.io/japanese-grammar" or "jpnotes.dev"
 
+// Giscus comments — backed by this repo's GitHub Discussions. Replaces
+// Disqus: no third-party cookies, no ads, lazy-loaded via IntersectionObserver
+// (data-loading="lazy"), and comments are stored in your own repo.
+const GISCUS_SCRIPT = `<script src="https://giscus.app/client.js"
+        data-repo="Ralphbupt/japanese-grammar"
+        data-repo-id="R_kgDOR7OzbA"
+        data-category="Comments"
+        data-category-id="DIC_kwDOR7OzbM4C9me3"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>`;
+
 // Deferred Google Analytics loader — fires 1.5s after the load event.
 // Async loading is fine for parsing but Lighthouse still penalises any
 // third-party script in the critical path. Deferring until idle moves
@@ -902,18 +922,6 @@ ${sidebarMarkupHtml}
 <script>
 ${JS}
 </script>
-<script>
-var disqus_config = function () {
-  this.page.url = '${SITE}';
-  this.page.identifier = 'japanese-grammar-main';
-};
-(function() {
-  var d = document, s = d.createElement('script');
-  s.src = 'https://japanese-4.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-})();
-</script>
 </body>
 </html>`;
 
@@ -1087,7 +1095,10 @@ ${sidebarMarkupHtml}
     ${prevHtml}
     ${nextHtml}
   </nav>
-  <div id="disqus_thread"></div>
+  <section class="comments-section" aria-label="评论">
+    <h2 class="comments-heading">评论 · Comments</h2>
+    ${GISCUS_SCRIPT}
+  </section>
 </main>
 <div id="bottom-controls">
   <div id="furigana-toggle">
@@ -1110,18 +1121,6 @@ ${sidebarMarkupHtml}
   if (isEn) { document.body.classList.add('lang-en'); langBtn.textContent = '中'; }
   rubyToggle.addEventListener('change', function(){ var hide = !this.checked; document.body.classList.toggle('hide-ruby', hide); savePrefs({ hideRuby: hide }); });
   langBtn.addEventListener('click', function(){ isEn = !isEn; document.body.classList.toggle('lang-en', isEn); langBtn.textContent = isEn ? '中' : 'EN'; savePrefs({ isEn: isEn }); });
-})();
-</script>
-<script>
-var disqus_config = function () {
-  this.page.url = '${lessonUrl}';
-  this.page.identifier = '${lesson.id}';
-};
-(function() {
-  var d = document, s = d.createElement('script');
-  s.src = 'https://japanese-4.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
 })();
 </script>
 </body>
@@ -1705,7 +1704,11 @@ body.sidebar-collapsed #content {
 }
 .lesson { display: none; content-visibility: auto; contain-intrinsic-size: 0 500px; }
 .lesson.active { display: block; content-visibility: visible; }
-#disqus_thread { margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border); }
+.comments-section { margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border); }
+.comments-heading { font-size: 1.2rem; margin: 0 0 1rem; color: #666; font-weight: 600; }
+@media (prefers-color-scheme: dark) {
+  .comments-heading { color: #999; }
+}
 
 /* Right TOC */
 #toc-panel {
