@@ -1815,11 +1815,14 @@ body.sidebar-collapsed #menu-toggle { display: block; }
 
 /* Home page landing layout (no lesson articles inlined).
    Hide the right-hand TOC panel (no lessons to navigate within) and
-   release the reserved right margin so the directory feels centered
-   instead of pushed against the empty TOC space. */
+   center the directory horizontally. Sidebar is position: fixed and
+   doesn't occupy flow, so margin: 0 auto centers cleanly across the
+   viewport on wide screens. */
 body:has(#content.home) #toc-panel { display: none; }
-#content.home {
+#content.home,
+body.sidebar-collapsed #content.home {
   max-width: 1000px;
+  margin-left: auto;
   margin-right: auto;
 }
 .home-hero {
