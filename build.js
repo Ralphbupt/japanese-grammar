@@ -41,25 +41,32 @@ const GISCUS_SCRIPT = `<script src="https://giscus.app/client.js"
         async>
 </script>`;
 
-// Deferred Google Analytics loader — fires 1.5s after the load event.
+// Deferred Google Analytics loader — fires 1.5s after the load event,
+// and bails out entirely for headless browsers / crawlers / Lighthouse
+// runs (so they don't pollute GA's "new users" count with fake sessions).
 // Async loading is fine for parsing but Lighthouse still penalises any
 // third-party script in the critical path. Deferring until idle moves
 // the gtag fetch out of LCP / TTI measurements without meaningfully
-// hurting analytics accuracy (users who close the tab in <1.5s aren't
-// useful sessions anyway).
+// hurting analytics accuracy.
 const GTAG_DEFERRED = `<script>
-window.addEventListener('load', function() {
-  setTimeout(function() {
-    var s = document.createElement('script');
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-D1KNQTFN1R';
-    document.head.appendChild(s);
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function(){ dataLayer.push(arguments); };
-    gtag('js', new Date());
-    gtag('config', 'G-D1KNQTFN1R');
-  }, 1500);
-});
+(function() {
+  var ua = navigator.userAgent || '';
+  // Skip GA for automation / crawlers / SEO tools — they all match here.
+  if (navigator.webdriver) return;
+  if (/HeadlessChrome|Lighthouse|PhantomJS|Puppeteer|Playwright|crawler|spider|bot|Slurp|facebookexternalhit/i.test(ua)) return;
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-D1KNQTFN1R';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function(){ dataLayer.push(arguments); };
+      gtag('js', new Date());
+      gtag('config', 'G-D1KNQTFN1R');
+    }, 1500);
+  });
+})();
 </script>`;
 
 // Japanese sidebar titles (keyed by file id)
