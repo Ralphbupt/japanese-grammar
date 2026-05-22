@@ -16,7 +16,7 @@ const GRAMMAR_DIRS = [
   { dir: "grammar/N2", label: "N2" },
 ];
 const OUT = "dist/index.html";
-const SITE = "https://ralphbupt.github.io/japanese-grammar/";
+const SITE = "https://jpnotes.dev/";
 // Derived from SITE — change SITE in one place to migrate domains.
 const SITE_PATH = new URL(SITE).pathname;             // "/japanese-grammar/" or "/"
 const SITE_HOST = SITE.replace(/^https?:\/\//, "").replace(/\/$/, ""); // "ralphbupt.github.io/japanese-grammar" or "jpnotes.dev"
