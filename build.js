@@ -602,6 +602,25 @@ async function main() {
         attrs && /\bscope=/.test(attrs) ? m : `<th${attrs || ""} scope="col">`
       );
 
+      // a11y: dual-header tables — when the first <th> in <thead> is empty,
+      // the first <td> in each <tbody> row is actually a row label
+      // (e.g. "现在"/"过去" in conjugation tables). Promote those to
+      // <th scope="row"> so screen readers can associate body cells with
+      // both the column and row header.
+      html = html.replace(/<table\b[^>]*>[\s\S]*?<\/table>/g, (tableHtml) => {
+        const thead = tableHtml.match(/<thead>([\s\S]*?)<\/thead>/);
+        if (!thead) return tableHtml;
+        const firstTh = thead[1].match(/<th[^>]*>([\s\S]*?)<\/th>/);
+        if (!firstTh || firstTh[1].trim() !== "") return tableHtml;
+        return tableHtml.replace(/<tbody>([\s\S]*?)<\/tbody>/, (m, body) => {
+          const newBody = body.replace(
+            /<tr>(\s*)<td(\s[^>]*)?>([\s\S]*?)<\/td>/g,
+            (mm, ws, attrs, content) => `<tr>${ws}<th scope="row"${attrs || ""}>${content}</th>`
+          );
+          return `<tbody>${newBody}</tbody>`;
+        });
+      });
+
       // Enable checklist checkboxes (remove disabled, add data attributes)
       let checkIdx = 0;
       html = html.replace(
@@ -2075,7 +2094,12 @@ body.sidebar-collapsed #content.home {
     --word-bg: #2a2618;
     --word-border: #5a4920;
     --code-bg: #1f1f2e;
+    --ruby-color: #ff7088;  /* lighter than --accent so furigana stays readable on dark blockquote tints */
   }
+  /* Accent-colored strong text fails 4.5:1 on dark card surfaces; brighten. */
+  .seo-lead strong, .home-intro strong { color: #ff7088; }
+  /* .breadcrumb is defined on each page; override gray contrast for dark. */
+  .breadcrumb { color: #999 !important; }
   body { color: #d4d4dc; }
   h1 { color: #f0f0f5; }
   h2 { color: #e4e4ec; }
