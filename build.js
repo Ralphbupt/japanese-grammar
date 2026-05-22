@@ -21,6 +21,27 @@ const SITE = "https://jpnotes.dev/";
 const SITE_PATH = new URL(SITE).pathname;             // "/japanese-grammar/" or "/"
 const SITE_HOST = SITE.replace(/^https?:\/\//, "").replace(/\/$/, ""); // "ralphbupt.github.io/japanese-grammar" or "jpnotes.dev"
 
+// Deferred Google Analytics loader — fires 1.5s after the load event.
+// Async loading is fine for parsing but Lighthouse still penalises any
+// third-party script in the critical path. Deferring until idle moves
+// the gtag fetch out of LCP / TTI measurements without meaningfully
+// hurting analytics accuracy (users who close the tab in <1.5s aren't
+// useful sessions anyway).
+const GTAG_DEFERRED = `<script>
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-D1KNQTFN1R';
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function(){ dataLayer.push(arguments); };
+    gtag('js', new Date());
+    gtag('config', 'G-D1KNQTFN1R');
+  }, 1500);
+});
+</script>`;
+
 // Japanese sidebar titles (keyed by file id)
 const JA_TITLES = {
   N5_grammar_list: "N5 文法チェックリスト",
@@ -715,6 +736,7 @@ async function main() {
   ${sidebarHtml.join("\n  ")}
   </div>
   <div class="nav-footer">
+    <a href="${SITE_PATH}about/">关于</a>
     <a href="https://github.com/Ralphbupt" target="_blank">GitHub</a>
   </div>
 </nav>`;
@@ -841,8 +863,7 @@ async function main() {
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="日语文法">
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D1KNQTFN1R"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D1KNQTFN1R');</script>
+${GTAG_DEFERRED}
 <style>
 ${CSS}
 </style>
@@ -1033,8 +1054,7 @@ var disqus_config = function () {
 </script>
 <link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D1KNQTFN1R"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D1KNQTFN1R');</script>
+${GTAG_DEFERRED}
 <style>
 ${CSS}
 /* Hide chrome that requires JS (menu toggle, TOC, settings overlay) but
@@ -1216,8 +1236,7 @@ var disqus_config = function () {
 </script>
 <link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D1KNQTFN1R"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D1KNQTFN1R');</script>
+${GTAG_DEFERRED}
 <style>
 ${CSS}
 /* Keep sidebar (pure-CSS hover navigation); hide JS-dependent chrome. */
@@ -1276,6 +1295,108 @@ ${sidebarMarkupHtml}
   }
   console.log(`  Generated ${levelPageIds.length} level overview pages: ${levelPageIds.join(", ")}`);
 
+  // ─── About page (E-E-A-T signal: who built this and why) ───
+  const aboutMdPath = path.join(__dirname, "pages/about.md");
+  let aboutPageGenerated = false;
+  if (fs.existsSync(aboutMdPath)) {
+    const aboutMd = fs.readFileSync(aboutMdPath, "utf-8");
+    const aboutHtml = await marked.parse(aboutMd);
+    const aboutUrl = `${SITE}about/`;
+    const aboutDir = path.join(__dirname, "dist/about");
+    fs.mkdirSync(aboutDir, { recursive: true });
+    const aboutTitle = "关于本站 - 日语语法笔记 | 作者、内容来源与开源协议";
+    const aboutDesc = "了解日语语法笔记是谁做的、为什么做、参考了哪些资料、如何反馈错误。免费、开源、CC BY 4.0 许可的 JLPT N5-N2 学习笔记。";
+    const aboutKeywords = "日语语法笔记关于, 作者, jpnotes.dev, 日语学习, JLPT 自学, 中文母语者";
+    const aboutOgImage = `${SITE}og-image.png`;
+
+    const aboutPageHtml = `<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${aboutTitle}</title>
+<meta name="description" content="${aboutDesc.replace(/"/g, '&quot;')}">
+<meta name="keywords" content="${aboutKeywords}">
+<link rel="canonical" href="${aboutUrl}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="${aboutTitle}">
+<meta property="og:description" content="${aboutDesc.replace(/"/g, '&quot;')}">
+<meta property="og:url" content="${aboutUrl}">
+<meta property="og:image" content="${aboutOgImage}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${aboutTitle}">
+<meta name="twitter:description" content="${aboutDesc.replace(/"/g, '&quot;')}">
+<meta name="twitter:image" content="${aboutOgImage}">
+<script type="application/ld+json">
+[{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "关于日语语法笔记",
+  "description": "${aboutDesc.replace(/"/g, '\\"')}",
+  "url": "${aboutUrl}",
+  "isPartOf": { "@type": "WebSite", "name": "日语语法笔记", "url": "${SITE}" },
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Ralphbupt",
+    "url": "https://github.com/Ralphbupt",
+    "email": "pengcheng199@gmail.com",
+    "sameAs": ["https://github.com/Ralphbupt"]
+  }
+},
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "日语语法笔记", "item": "${SITE}" },
+    { "@type": "ListItem", "position": 2, "name": "关于本站", "item": "${aboutUrl}" }
+  ]
+}]
+</script>
+<link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+${GTAG_DEFERRED}
+<style>
+${CSS}
+/* Keep sidebar (pure-CSS hover); hide JS-dependent chrome. */
+#menu-toggle, #toc-panel, #settings-toggle, #settings-overlay, #bottom-controls { display: none !important; }
+#content { margin: 0 auto !important; max-width: 800px; padding: 2rem 2rem 4rem; }
+.breadcrumb { font-size: .85rem; color: #888; margin-bottom: 1rem; }
+.breadcrumb a { color: var(--accent); text-decoration: none; }
+.breadcrumb .sep { margin: 0 .4em; }
+.about-content h1 { font-size: 2rem; margin: 0 0 1.5rem; border-bottom: 2px solid var(--accent); padding-bottom: .6rem; }
+.about-content h2 { font-size: 1.4rem; margin: 2.2rem 0 .9rem; color: #1a1a2e; }
+.about-content p, .about-content li { line-height: 1.85; }
+.about-content ul { margin: .6rem 0 .6rem 1.4rem; }
+.about-content li { margin: .3rem 0; }
+.about-content blockquote { background: rgba(233,69,96,.04); border-left: 3px solid var(--accent); padding: .7rem 1.1rem; margin: 1rem 0; color: #555; }
+.about-content a { color: var(--accent); text-decoration: none; }
+.about-content a:hover { text-decoration: underline; }
+.about-content code { background: var(--code-bg); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+.about-content strong { color: #1a1a2e; }
+@media (prefers-color-scheme: dark) {
+  .about-content h2 { color: #e4e4ec; }
+  .about-content strong { color: #f0f0f5; }
+  .about-content blockquote { background: rgba(233,69,96,.08); color: #b8b8c4; }
+}
+</style>
+</head>
+<body class="sidebar-collapsed">
+${sidebarMarkupHtml}
+<main id="content">
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <a href="${SITE}">日语语法笔记</a><span class="sep">›</span><span>关于本站</span>
+  </nav>
+  <article class="about-content">${aboutHtml}</article>
+</main>
+</body>
+</html>`;
+    fs.writeFileSync(path.join(aboutDir, "index.html"), aboutPageHtml, "utf-8");
+    aboutPageGenerated = true;
+    console.log("  Generated dist/about/index.html");
+  }
+
   // ─── Sitemap ───
   const homeMod = gitLastMod("schedule.md") || today;
   const sitemapUrls = [`  <url>
@@ -1284,6 +1405,15 @@ ${sidebarMarkupHtml}
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>`];
+  // About page (E-E-A-T page, lower priority since not browsed often)
+  if (aboutPageGenerated) {
+    sitemapUrls.push(`  <url>
+    <loc>${SITE}about/</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>`);
+  }
   // Level overview pages (high priority — major landing pages)
   for (const level of levelPageIds) {
     sitemapUrls.push(`  <url>
