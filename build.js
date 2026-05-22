@@ -1897,19 +1897,19 @@ body.sidebar-collapsed #content.home {
 }
 .level-tag {
   display: inline-block;
-  padding: .15rem .55rem;
+  padding: .2rem .65rem;
   background: var(--accent); color: #fff;
-  font-size: .7rem; font-weight: 700;
+  font-size: .82rem; font-weight: 700;
   border-radius: 4px; letter-spacing: .05em;
-  margin-bottom: .8rem;
+  margin-bottom: .9rem;
 }
 .level-card h3 {
-  font-size: 1.1rem; margin: .2rem 0 .5rem;
+  font-size: 1.25rem; margin: .2rem 0 .6rem;
   color: #1a1a2e;
 }
 .level-card p {
-  font-size: .85rem; color: #666;
-  line-height: 1.6; margin: 0;
+  font-size: 1rem; color: #666;
+  line-height: 1.65; margin: 0;
 }
 .home-howto p {
   color: #555; line-height: 1.75;
