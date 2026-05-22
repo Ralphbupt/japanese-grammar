@@ -1875,13 +1875,16 @@ body.sidebar-collapsed #content.home {
 }
 .level-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
   margin: 1rem 0 2.4rem;
+}
+@media (max-width: 640px) {
+  .level-grid { grid-template-columns: 1fr; }
 }
 .level-card {
   display: block;
-  padding: 1.1rem 1.3rem;
+  padding: 1.4rem 1.6rem;
   background: #fff; border: 1px solid var(--border);
   border-radius: 10px;
   text-decoration: none; color: inherit;
