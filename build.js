@@ -509,7 +509,7 @@ async function main() {
   let firstId = null;
 
   for (const group of groups) {
-    sidebarHtml.push(`<a class="nav-group nav-group-link" href="${group.label}/">${group.label}</a>`);
+    sidebarHtml.push(`<a class="nav-group nav-group-link" href="${SITE_PATH}${group.label}/">${group.label}</a>`);
     for (const file of group.files) {
       const md = fs.readFileSync(file.path, "utf-8");
       const title = extractTitle(md);
@@ -645,7 +645,7 @@ async function main() {
         ? (dayNum ? `Day ${dayNum} – ${jaTitle}` : jaTitle)
         : shortTitle;
       sidebarHtml.push(
-        `<a class="nav-item" href="${file.id}/" data-target="${file.id}">${sidebarTitle}</a>`
+        `<a class="nav-item" href="${SITE_PATH}${file.id}/" data-target="${file.id}">${sidebarTitle}</a>`
       );
       articlesHtml.push(
         `<article id="${file.id}" class="lesson">${html}</article>`
@@ -704,6 +704,20 @@ async function main() {
     lessonPages[li].html = html;
     articlesHtml[li] = `<article id="${lessonPages[li].id}" class="lesson">${html}</article>`;
   }
+
+  // ─── Shared sidebar markup ───
+  // Used on home, lesson, and level pages so the directory is reachable
+  // from anywhere. Sidebar links are root-relative so they work from any
+  // subpath (e.g. clicking from /day01/ correctly navigates to /day05/).
+  const sidebarMarkupHtml = `<nav id="sidebar" class="collapsed">
+  <div class="nav-scroll">
+  <div class="nav-header"><a href="${SITE_PATH}" style="color:inherit;text-decoration:none;">日语语法笔记</a></div>
+  ${sidebarHtml.join("\n  ")}
+  </div>
+  <div class="nav-footer">
+    <a href="https://github.com/Ralphbupt" target="_blank">GitHub</a>
+  </div>
+</nav>`;
 
   // ─── Home page main content ───
   // Don't inline all 73 lesson articles into index.html (3.98MB → ~50KB).
@@ -835,15 +849,7 @@ ${CSS}
 </head>
 <body class="sidebar-collapsed">
 <button id="menu-toggle" aria-label="Toggle menu">☰</button>
-<nav id="sidebar" class="collapsed">
-  <div class="nav-scroll">
-  <div class="nav-header">日语语法笔记</div>
-  ${sidebarHtml.join("\n  ")}
-  </div>
-  <div class="nav-footer">
-    <a href="https://github.com/Ralphbupt" target="_blank">GitHub</a>
-  </div>
-</nav>
+${sidebarMarkupHtml}
 <main id="content" class="home">
   ${homeMainHtml}
 </main>
@@ -1031,7 +1037,10 @@ var disqus_config = function () {
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D1KNQTFN1R');</script>
 <style>
 ${CSS}
-#sidebar, #menu-toggle, #toc-panel, #settings-toggle, #settings-overlay { display: none !important; }
+/* Hide chrome that requires JS (menu toggle, TOC, settings overlay) but
+   keep the sidebar — it works on hover via pure CSS and links are root-
+   relative so they navigate from any standalone page. */
+#menu-toggle, #toc-panel, #settings-toggle, #settings-overlay { display: none !important; }
 #content { margin: 0 auto !important; max-width: 800px; }
 .back-link { display: block; margin-bottom: 1.5rem; color: var(--accent); text-decoration: none; font-size: 0.9rem; }
 .back-link:hover { text-decoration: underline; }
@@ -1046,7 +1055,8 @@ ${CSS}
 .pn-next { text-align: right; margin-left: auto; }
 </style>
 </head>
-<body>
+<body class="sidebar-collapsed">
+${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
     <a href="${SITE}">日语语法笔记</a><span class="sep">›</span><span>${lesson.jaTitle}</span>
@@ -1210,7 +1220,8 @@ var disqus_config = function () {
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D1KNQTFN1R');</script>
 <style>
 ${CSS}
-#sidebar, #menu-toggle, #toc-panel, #settings-toggle, #settings-overlay, #bottom-controls { display: none !important; }
+/* Keep sidebar (pure-CSS hover navigation); hide JS-dependent chrome. */
+#menu-toggle, #toc-panel, #settings-toggle, #settings-overlay, #bottom-controls { display: none !important; }
 #content { margin: 0 auto !important; max-width: 900px; padding: 2rem 1.5rem 4rem; }
 .breadcrumb { font-size: .85rem; color: #888; margin-bottom: 1rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
@@ -1235,7 +1246,8 @@ ${CSS}
 .level-stat span { font-size: .8rem; color: #888; }
 </style>
 </head>
-<body>
+<body class="sidebar-collapsed">
+${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
     <a href="${SITE}">日语语法笔记</a><span class="sep">›</span><span>JLPT ${level} 语法清单</span>
