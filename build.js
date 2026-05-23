@@ -1104,7 +1104,7 @@ ${JS}
 <script type="application/ld+json">
 [{
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": ["Article", "LearningResource"],
   "name": "${lesson.jaTitle.replace(/"/g, '\\"')}",
   "headline": "${lesson.jaTitle.replace(/"/g, '\\"')}",
   "description": "${lessonDesc.replace(/"/g, '\\"')}",
@@ -1115,6 +1115,16 @@ ${JS}
   "datePublished": "${lesson.firstMod}",
   "dateModified": "${lesson.lastMod}",
   "timeRequired": "PT${lesson.readingMin}M",
+  "learningResourceType": "Lesson",
+  "educationalLevel": "JLPT ${lessonLevel}",
+  "educationalAlignment": {
+    "@type": "AlignmentObject",
+    "alignmentType": "educationalLevel",
+    "educationalFramework": "JLPT",
+    "targetName": "${lessonLevel}"
+  },
+  "teaches": [${cleanPoints.slice(0, 5).map(p => `"${p.replace(/"/g, '\\"')}"`).join(", ") || '""'}],
+  "audience": { "@type": "EducationalAudience", "educationalRole": "student" },
   "author": { "@type": "Person", "name": "Ralphbupt", "url": "https://github.com/Ralphbupt" },
   "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N2", "url": "${SITE}" }
 },
