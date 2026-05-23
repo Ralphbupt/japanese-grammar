@@ -1,2 +1,10 @@
 node_modules/
 dist/
+
+# Local Lighthouse reports
+*.report.html
+*.report.json
+.DS_Store
+
+# Drafts
+pages/drafts/
