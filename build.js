@@ -768,32 +768,60 @@ async function main() {
     let h2Match;
     while ((h2Match = h2Regex.exec(lesson.html)) !== null) {
       const slug = h2Match[1];
-      const content = h2Match[2].replace(/<[^>]+>/g, "").trim();
+      // Prefer Chinese variant when bilingual heading (<span class="lang-zh">).
+      let rawContent = h2Match[2];
+      const zhSpan = rawContent.match(/<span class="lang-zh">([\s\S]*?)<\/span>/);
+      const content = (zhSpan ? zhSpan[1] : rawContent).replace(/<[^>]+>/g, "").trim();
+      // Description: first parenthesized note, used as anchor text suffix.
+      const descMatch = content.match(/[（(]([^）)]+)[）)]/);
+      const description = descMatch ? descMatch[1].trim() : null;
       // Extract the grammar pattern (〜xxx or Japanese term)
       const patterns = content.match(/[〜～]?[\u3040-\u309f\u30a0-\u30ffー\u4e00-\u9fff]+/g) || [];
       for (const pat of patterns) {
+        const hadTilde = /^[〜～]/.test(pat);
         const term = pat.replace(/^[〜～]/, "");
         if (term.length < 2) continue;
+        // Filter to actual grammar terms: must have 〜 OR contain kana.
+        // Pure-kanji words like "辨析" / "将来" / "状态" are noise — they're
+        // Chinese vocabulary the page happens to use, not Japanese grammar.
+        const hasKana = /[぀-ゟ゠-ヿ]/.test(term);
+        if (!hadTilde && !hasKana) continue;
+        // Skip generic section labels that show up across every lesson.
+        if (/^(辨析|含义|用法|接続|接续|例句|練習|练习|本课|总结|计划|易错点)$/.test(term)) continue;
         if (!grammarIndex.has(term)) grammarIndex.set(term, []);
-        grammarIndex.get(term).push({ id: lesson.id, slug });
+        grammarIndex.get(term).push({ id: lesson.id, slug, description, level: lesson.level });
       }
     }
   }
 
-  // Insert cross-links: for each lesson, find references to grammar in other lessons
+  // Insert cross-links: for each lesson, find references to grammar in other
+  // lessons. Cap at 25 per lesson (up from 8) for denser internal linking —
+  // Google's SEO guide treats internal links as a primary discovery signal.
   for (let li = 0; li < lessonPages.length; li++) {
     let html = lessonPages[li].html;
-    // Add "related grammar" links at the end of each h2 section
-    // We look for grammar terms that appear in this lesson's text but are defined in OTHER lessons
     const relatedLinks = new Set();
+    const seenTerms = new Set();
     for (const [term, locations] of grammarIndex) {
+      if (seenTerms.has(term)) continue;
       const otherLocs = locations.filter(l => l.id !== lessonPages[li].id);
       if (otherLocs.length === 0) continue;
-      // Check if this term appears in the lesson text (outside of its own h2 headings)
       const plainText = html.replace(/<h2[\s\S]*?<\/h2>/g, "").replace(/<[^>]+>/g, "");
-      if (plainText.includes(term) && relatedLinks.size < 8) {
+      if (plainText.includes(term) && relatedLinks.size < 25) {
         const loc = otherLocs[0];
-        relatedLinks.add(`<a href="${SITE}${loc.id}/#${loc.slug}" class="cross-link" data-target="${loc.id}" data-scroll="${loc.slug}">${term}</a>`);
+        // Descriptive anchor: pattern + (description + level tag) so the
+        // link text tells readers and Google what the target page contains.
+        const levelTag = loc.level ? `<span class="cross-link-level">${loc.level}</span>` : "";
+        const descShort = loc.description && loc.description.length > 14
+          ? loc.description.slice(0, 13) + "…"
+          : loc.description;
+        const descPart = descShort
+          ? `<span class="cross-link-desc">${descShort}</span>`
+          : "";
+        const titleAttr = (loc.description
+          ? `${loc.description} — ${loc.level || ""} ${loc.id}`
+          : `${loc.level || ""} ${loc.id}`).trim();
+        relatedLinks.add(`<a href="${SITE}${loc.id}/#${loc.slug}" class="cross-link" data-target="${loc.id}" data-scroll="${loc.slug}" title="${titleAttr.replace(/"/g, "&quot;")}"><span class="cross-link-term">${term}</span>${descPart}${levelTag}</a>`);
+        seenTerms.add(term);
       }
     }
     if (relatedLinks.size > 0) {
@@ -823,7 +851,27 @@ async function main() {
     <a href="${SITE_PATH}about/">关于</a>
     <a href="https://github.com/Ralphbupt" target="_blank">GitHub</a>
   </div>
-</nav>`;
+</nav>
+<script>
+// On lesson / level / about pages, mark the current sidebar entry as active
+// and scroll the sidebar so the user doesn't have to hunt down their place
+// in a 77-item list when they hover the collapsed sidebar.
+(function() {
+  var path = location.pathname.replace(/\\/$/, '');
+  var slug = path.split('/').pop();
+  if (!slug) return;
+  var item = document.querySelector('#sidebar a[data-target="' + slug + '"]')
+          || document.querySelector('#sidebar a[href$="/' + slug + '/"]');
+  if (!item) return;
+  item.classList.add('active');
+  var scroll = document.querySelector('#sidebar .nav-scroll');
+  if (scroll) {
+    // Center the active item in the visible scroll viewport.
+    var center = item.offsetTop - scroll.clientHeight / 2 + item.offsetHeight / 2;
+    scroll.scrollTop = Math.max(0, center);
+  }
+})();
+</script>`;
 
   // ─── Home page main content ───
   // Don't inline all 73 lesson articles into index.html (3.98MB → ~50KB).
@@ -1980,10 +2028,23 @@ pre code { background: none; padding: 0; }
 .related-label { font-weight: 600; color: #666; margin-right: .5rem; }
 .cross-link {
   display: inline-block; background: #e8f4fd; color: var(--accent);
-  padding: .1rem .5rem; border-radius: 4px; margin: .15rem .2rem;
+  padding: .15rem .55rem; border-radius: 4px; margin: .15rem .2rem;
   text-decoration: none; font-size: .82rem;
+  line-height: 1.5;
 }
 .cross-link:hover { background: var(--accent); color: #fff; }
+.cross-link:hover .cross-link-desc,
+.cross-link:hover .cross-link-level { color: rgba(255,255,255,.9); background: rgba(255,255,255,.18); }
+.cross-link-term { font-weight: 600; }
+.cross-link-desc { opacity: .8; font-size: .88em; margin-left: .35em; }
+.cross-link-desc::before { content: "· "; opacity: .55; }
+.cross-link-level {
+  display: inline-block; margin-left: .4em;
+  font-size: .68em; font-weight: 700; letter-spacing: .03em;
+  background: rgba(233,69,96,.13); color: var(--accent);
+  padding: .05em .4em; border-radius: 3px;
+  vertical-align: 1px;
+}
 
 /* Details */
 details {
