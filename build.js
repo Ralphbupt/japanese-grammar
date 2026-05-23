@@ -239,6 +239,27 @@ function gitLastMod(filePath) {
   } catch { return null; }
 }
 
+// First commit date for a file (when it was added). Used as datePublished
+// for Schema.org Article — Google differentiates published vs modified.
+function gitFirstMod(filePath) {
+  try {
+    const log = execSync(`git log --format=%aI -- "${filePath}"`, { encoding: "utf-8" }).trim();
+    if (!log) return null;
+    const dates = log.split("\n");
+    return dates[dates.length - 1].slice(0, 10);
+  } catch { return null; }
+}
+
+// Estimate reading time in minutes from HTML content. Counts CJK characters
+// only (Chinese + hiragana + katakana + CJK ext) — Latin tokens contribute
+// little to reading load on a Chinese-language Japanese grammar page.
+// 250 chars/min is a conservative pace for educational content with kanji.
+function computeReadingTime(html) {
+  const text = html.replace(/<[^>]+>/g, "");
+  const cjk = (text.match(/[一-鿿぀-ヿ㐀-䶿]/g) || []).length;
+  return Math.max(1, Math.ceil(cjk / 250));
+}
+
 function discoverFiles() {
   const groups = [];
   for (const { dir, label } of GRAMMAR_DIRS) {
@@ -670,6 +691,16 @@ async function main() {
           return kanaCount >= 1 && kanaCount >= p.length / 2;
         });
 
+      // Lesson meta line: last-updated date + reading time. Inserted right
+      // after H1 so the freshness signal is visible to readers and Google
+      // can extract it for the SERP snippet. Also fuels datePublished /
+      // dateModified in the Article schema below.
+      const lessonLastMod = gitLastMod(file.path) || today;
+      const lessonFirstMod = gitFirstMod(file.path) || lessonLastMod;
+      const readingMin = computeReadingTime(html);
+      const lessonMetaHtml = `<div class="lesson-meta"><span class="lang-zh">📅 最后更新 <time datetime="${lessonLastMod}">${lessonLastMod}</time> · ⏱ 阅读约 ${readingMin} 分钟</span><span class="lang-en">📅 Updated <time datetime="${lessonLastMod}">${lessonLastMod}</time> · ⏱ ${readingMin} min read</span></div>`;
+      html = html.replace(/(<\/h1>)/, `$1\n${lessonMetaHtml}`);
+
       // SEO lead paragraph: keyword-rich summary inserted after h1.
       // If the lesson markdown has its own top-of-file :::zh / :::en block,
       // mark those rendered divs with the seo-lead class instead of adding
@@ -724,7 +755,7 @@ async function main() {
       articlesHtml.push(
         `<article id="${file.id}" class="lesson">${html}</article>`
       );
-      lessonPages.push({ id: file.id, title, sidebarTitle, html, jaTitle: jaTitle || shortTitle, filePath: file.path, grammarPoints, cleanPoints, level: group.label, md, topLead, firstMeaningZh });
+      lessonPages.push({ id: file.id, title, sidebarTitle, html, jaTitle: jaTitle || shortTitle, filePath: file.path, grammarPoints, cleanPoints, level: group.label, md, topLead, firstMeaningZh, lastMod: lessonLastMod, firstMod: lessonFirstMod, readingMin });
     }
   }
 
@@ -1081,7 +1112,10 @@ ${JS}
   "isAccessibleForFree": true,
   "url": "${lessonUrl}",
   "image": "${ogImageUrl}",
-  "author": { "@type": "Person", "name": "Ralphbupt" },
+  "datePublished": "${lesson.firstMod}",
+  "dateModified": "${lesson.lastMod}",
+  "timeRequired": "PT${lesson.readingMin}M",
+  "author": { "@type": "Person", "name": "Ralphbupt", "url": "https://github.com/Ralphbupt" },
   "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N2", "url": "${SITE}" }
 },
 {
@@ -1921,6 +1955,13 @@ pre code { background: none; padding: 0; }
 }
 .seo-lead strong { color: var(--accent); font-weight: 600; }
 
+/* Lesson meta line (last-updated, reading time) — sits between h1 and seo-lead */
+.lesson-meta {
+  font-size: .82rem; color: #666;
+  margin: -.6rem 0 1.2rem;
+}
+.lesson-meta time { color: #555; }
+
 /* Cross-links */
 .related-grammar {
   background: #f0f8ff; border: 1px solid #d0e8f8; border-radius: 8px;
@@ -2175,6 +2216,8 @@ body.sidebar-collapsed #content.home {
   ul:has(input[type="checkbox"]) li.checked { color: #6a6a78; }
 
   .seo-lead { background: #1f1f2e; color: #c8c8d4; }
+  .lesson-meta { color: #a8a8b8; }
+  .lesson-meta time { color: #b8b8c4; }
   .related-grammar { background: #1a223a; border-color: #2a3a55; }
   .cross-link { background: #1f3548; color: #ff7088; }
   .cross-link:hover { background: var(--accent); color: #fff; }
