@@ -1,4 +1,4 @@
-# Day 0：五十音图（参考速查）||Day 0: The Japanese Syllabary (Reference Chart)
+# Lesson 00 – 五十音图（参考速查）||Day 0: The Japanese Syllabary (Reference Chart)
 
 :::zh
 学语法之前的基础工具，随时查阅。

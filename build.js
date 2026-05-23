@@ -41,6 +41,50 @@ const GISCUS_SCRIPT = `<script src="https://giscus.app/client.js"
         async>
 </script>`;
 
+// Theme init script — runs synchronously in <head> before CSS evaluates,
+// so the saved theme class is on <html> before paint (no flash of wrong theme).
+// Default (no class) follows @media (prefers-color-scheme: dark).
+const THEME_INIT_SCRIPT = `<script>
+(function() {
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'dark') document.documentElement.classList.add('theme-dark');
+    else if (t === 'light') document.documentElement.classList.add('theme-light');
+  } catch (e) {}
+})();
+</script>`;
+
+// Theme toggle button + click handler. Three-state cycle:
+// auto (no class, follows system) → dark → light → auto.
+const THEME_TOGGLE_HTML = `<div id="theme-toggle"><button id="theme-btn" aria-label="切换主题 / Toggle theme">🌓</button></div>`;
+const THEME_TOGGLE_JS = `(function(){
+  var btn = document.getElementById('theme-btn');
+  if (!btn) return;
+  var html = document.documentElement;
+  function current() {
+    if (html.classList.contains('theme-dark')) return 'dark';
+    if (html.classList.contains('theme-light')) return 'light';
+    return 'auto';
+  }
+  function paintIcon() {
+    var c = current();
+    btn.textContent = c === 'dark' ? '🌙' : c === 'light' ? '☀️' : '🌓';
+    btn.title = c === 'dark' ? '当前: 深色 (点击切浅色)' : c === 'light' ? '当前: 浅色 (点击切自动)' : '当前: 跟随系统 (点击切深色)';
+  }
+  paintIcon();
+  btn.addEventListener('click', function() {
+    var next = { auto: 'dark', dark: 'light', light: 'auto' }[current()];
+    html.classList.remove('theme-dark', 'theme-light');
+    if (next === 'dark') html.classList.add('theme-dark');
+    else if (next === 'light') html.classList.add('theme-light');
+    try {
+      if (next === 'auto') localStorage.removeItem('theme');
+      else localStorage.setItem('theme', next);
+    } catch (e) {}
+    paintIcon();
+  });
+})();`;
+
 // Deferred Google Analytics loader — fires 1.5s after the load event,
 // and bails out entirely for headless browsers / crawlers / Lighthouse
 // runs (so they don't pollute GA's "new users" count with fake sessions).
@@ -1046,6 +1090,7 @@ async function main() {
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="日语文法">
 
+${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 <style>
 ${CSS}
@@ -1062,6 +1107,7 @@ ${sidebarMarkupHtml}
   <div id="settings-toggle">
     <button id="settings-btn">⚙</button>
   </div>
+  ${THEME_TOGGLE_HTML}
   <div id="furigana-toggle">
     <label><input type="checkbox" id="ruby-toggle" checked> 显示读音</label>
   </div>
@@ -1236,6 +1282,7 @@ ${JS}
 </script>
 <link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 <style>
 ${CSS}
@@ -1275,6 +1322,7 @@ ${sidebarMarkupHtml}
   </section>
 </main>
 <div id="bottom-controls">
+  ${THEME_TOGGLE_HTML}
   <div id="furigana-toggle">
     <label><input type="checkbox" id="ruby-toggle" checked> 显示读音</label>
   </div>
@@ -1283,6 +1331,7 @@ ${sidebarMarkupHtml}
   </div>
 </div>
 <script>
+${THEME_TOGGLE_JS}
 (function(){
   var rubyToggle = document.getElementById('ruby-toggle');
   var langBtn = document.getElementById('lang-btn');
@@ -1409,11 +1458,13 @@ ${sidebarMarkupHtml}
 </script>
 <link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 <style>
 ${CSS}
-/* Keep sidebar (pure-CSS hover navigation); hide JS-dependent chrome. */
-#menu-toggle, #toc-panel, #settings-toggle, #settings-overlay, #bottom-controls { display: none !important; }
+/* Keep sidebar (pure-CSS hover navigation) + theme toggle; hide other JS-dependent chrome. */
+#menu-toggle, #toc-panel, #settings-toggle, #settings-overlay { display: none !important; }
+#bottom-controls #furigana-toggle, #bottom-controls #lang-toggle { display: none !important; }
 #content { margin: 0 auto !important; max-width: 1100px; padding: 2rem 1.5rem 4rem; }
 .breadcrumb { font-size: .85rem; color: #666; margin-bottom: 1rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
@@ -1442,6 +1493,12 @@ ${CSS}
   .overview-title { color: #f0f0f5; }
   .grammar-pill { background: #25253a; color: #c8c8d4; }
 }
+
+/* Manual dark override (toggled via JS, mirrors media query rules) */
+html.theme-dark .overview-intro { background: #1f1f2e; color: #c8c8d4; }
+html.theme-dark .overview-card { background: #1f1f2e; }
+html.theme-dark .overview-title { color: #f0f0f5; }
+html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
 </style>
 </head>
 <body class="sidebar-collapsed">
@@ -1461,6 +1518,10 @@ ${sidebarMarkupHtml}
   <div class="overview-grid">${cardsHtml}</div>
   ${tableHtml}
 </main>
+<div id="bottom-controls">${THEME_TOGGLE_HTML}</div>
+<script>
+${THEME_TOGGLE_JS}
+</script>
 </body>
 </html>`;
     fs.writeFileSync(path.join(levelDir, "index.html"), ovHtml, "utf-8");
@@ -1544,6 +1605,7 @@ ${sidebarMarkupHtml}
 </script>
 <link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 <style>
 ${CSS}
@@ -1568,6 +1630,11 @@ ${CSS}
   .about-content strong { color: #f0f0f5; }
   .about-content blockquote { background: rgba(233,69,96,.08); color: #b8b8c4; }
 }
+
+/* Manual dark override (toggled via JS, mirrors media query rules) */
+html.theme-dark .about-content h2 { color: #e4e4ec; }
+html.theme-dark .about-content strong { color: #f0f0f5; }
+html.theme-dark .about-content blockquote { background: rgba(233,69,96,.08); color: #b8b8c4; }
 </style>
 </head>
 <body class="sidebar-collapsed">
@@ -1579,11 +1646,13 @@ ${sidebarMarkupHtml}
   <article class="about-content">${aboutHtml}</article>
 </main>
 <div id="bottom-controls">
+  ${THEME_TOGGLE_HTML}
   <div id="lang-toggle">
     <button id="lang-btn">EN</button>
   </div>
 </div>
 <script>
+${THEME_TOGGLE_JS}
 (function(){
   var langBtn = document.getElementById('lang-btn');
   var STORE_KEY = 'jp_grammar_prefs';
@@ -1961,6 +2030,9 @@ body.sidebar-collapsed #content {
   .comments-heading { color: #999; }
 }
 
+/* Manual dark override (toggled via JS, mirrors media query rules) */
+html.theme-dark .comments-heading { color: #999; }
+
 /* Right TOC */
 #toc-panel {
   position: fixed; top: 0; right: 0; bottom: 0;
@@ -2138,7 +2210,7 @@ summary {
   position: fixed; bottom: 1.2rem; right: 1.2rem;
   display: flex; gap: .5rem; z-index: 200;
 }
-#furigana-toggle, #lang-toggle {
+#furigana-toggle, #lang-toggle, #theme-toggle {
   background: var(--sidebar-bg); color: #fff;
   padding: .5rem 1rem; border-radius: 20px;
   font-size: .8rem;
@@ -2146,11 +2218,13 @@ summary {
 }
 #furigana-toggle label { cursor: pointer; }
 #furigana-toggle input { margin-right: .3rem; }
-#lang-btn {
+#lang-btn, #theme-btn {
   background: none; border: none; color: #fff;
-  font-size: .8rem; font-weight: 700; cursor: pointer;
-  padding: 0;
+  font-size: 1rem; cursor: pointer;
+  padding: 0; line-height: 1;
 }
+#lang-btn { font-size: .8rem; font-weight: 700; }
+#theme-btn { font-size: 1.05rem; }
 
 /* Sidebar footer */
 .nav-footer {
@@ -2397,10 +2471,70 @@ body.sidebar-collapsed #content.home {
   code { color: #f0a0b0; }
   pre code { color: #d4d4dc; }
 }
+
+/* Manual dark override (toggled via JS, mirrors media query rules) */
+html.theme-dark {
+    --bg: #14141e;
+    --sidebar-bg: #0a0a14;
+    --sidebar-text: #b8b8c4;
+    --card-bg: #1f1f2e;
+    --border: #2d2d44;
+    --word-bg: #2a2618;
+    --word-border: #5a4920;
+    --code-bg: #1f1f2e;
+    --ruby-color: #ff7088;  /* lighter than --accent so furigana stays readable on dark blockquote tints */
+  }
+/* Accent-colored strong text fails 4.5:1 on dark card surfaces; brighten. */
+html.theme-dark .seo-lead strong, .home-intro strong { color: #ff7088; }
+/* .breadcrumb is defined on each page; override gray contrast for dark. */
+html.theme-dark .breadcrumb { color: #999 !important; }
+/* .related-label gray on the (red-tinted) related-grammar box was 4.46
+     in dark mode (just under AA 4.5). Lighten to clear the bar. */
+html.theme-dark .related-label { color: #a8a8b8; }
+html.theme-dark body { color: #d4d4dc; }
+html.theme-dark h1 { color: #f0f0f5; }
+html.theme-dark h2 { color: #e4e4ec; }
+html.theme-dark h3, h4 { color: #d8d8e0; }
+html.theme-dark th { background: #25253a; color: #e4e4ec; }
+html.theme-dark tr:nth-child(even) { background: rgba(255, 255, 255, 0.025); }
+html.theme-dark blockquote { background: rgba(233, 69, 96, 0.08); }
+html.theme-dark details { background: #1f1f2e; }
+html.theme-dark ul:has(input[type="checkbox"]) li:hover { background: #1f1f2e; }
+html.theme-dark ul:has(input[type="checkbox"]) li.checked { color: #6a6a78; }
+html.theme-dark .seo-lead { background: #1f1f2e; color: #c8c8d4; }
+html.theme-dark .lesson-meta { color: #a8a8b8; }
+html.theme-dark .lesson-meta time { color: #b8b8c4; }
+html.theme-dark .related-grammar { background: #1a223a; border-color: #2a3a55; }
+html.theme-dark .cross-link { background: #1f3548; color: #ff7088; }
+html.theme-dark .cross-link:hover { background: var(--accent); color: #fff; }
+html.theme-dark .checklist-progress { background: #1f1f2e; color: #b8b8c4; }
+html.theme-dark .checklist-progress .progress-bar { background: #2d2d44; }
+html.theme-dark #settings-panel { background: #1f1f2e; color: #d4d4dc; }
+html.theme-dark .settings-header { border-bottom-color: #2d2d44; }
+html.theme-dark .settings-header button { color: #888; }
+html.theme-dark .settings-label { color: #c8c8d4; }
+html.theme-dark .settings-hint { color: #888; }
+html.theme-dark #start-date-input {
+    background: #14141e; color: #d4d4dc; border-color: #2d2d44;
+  }
+html.theme-dark #start-date-input::-webkit-calendar-picker-indicator { filter: invert(0.7); }
+/* Home page */
+html.theme-dark .home-hero h1 { color: #f0f0f5; }
+html.theme-dark .home-intro { color: #b8b8c4; }
+html.theme-dark .home-stat span { color: #888; }
+html.theme-dark .home-levels h2, .home-howto h2 { color: #e4e4ec; }
+html.theme-dark .level-card { background: #1f1f2e; }
+html.theme-dark .level-card h3 { color: #f0f0f5; }
+html.theme-dark .level-card p { color: #b8b8c4; }
+html.theme-dark .home-howto p { color: #b8b8c4; }
+/* Code */
+html.theme-dark code { color: #f0a0b0; }
+html.theme-dark pre code { color: #d4d4dc; }
 `;
 
 // ─── JS ───
 const JS = `
+${THEME_TOGGLE_JS}
 (function(){
   var items = document.querySelectorAll('.nav-item');
   var lessons = document.querySelectorAll('.lesson');
