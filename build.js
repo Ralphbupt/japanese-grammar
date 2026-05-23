@@ -865,11 +865,24 @@ async function main() {
   if (!item) return;
   item.classList.add('active');
   var scroll = document.querySelector('#sidebar .nav-scroll');
-  if (scroll) {
-    // Center the active item in the visible scroll viewport.
-    var center = item.offsetTop - scroll.clientHeight / 2 + item.offsetHeight / 2;
-    scroll.scrollTop = Math.max(0, center);
+  if (!scroll) return;
+  function centerItem() {
+    // item.offsetTop is relative to the offsetParent (.nav-scroll),
+    // so we don't need a getBoundingClientRect subtraction here.
+    var top = item.offsetTop;
+    var navH = scroll.clientHeight;
+    var itemH = item.offsetHeight;
+    if (navH <= 0) {
+      // Layout not ready yet — try again next frame.
+      requestAnimationFrame(centerItem);
+      return;
+    }
+    var target = top - navH / 2 + itemH / 2;
+    scroll.scrollTop = Math.max(0, target);
   }
+  // rAF defers until layout is computed (flex children sometimes have
+  // clientHeight = 0 if measured before the first layout pass).
+  requestAnimationFrame(centerItem);
 })();
 </script>`;
 
