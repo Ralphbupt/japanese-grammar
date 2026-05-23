@@ -10,10 +10,10 @@ Structured grammar notes for JLPT N2 in 8 weeks.
 
 ```
 grammar/
-  week01-02/   N5 (day00-day08)
-  week03-04/   N4 (day12-day20)
-  week05-06/   N3 (WIP)
-  week07-08/   N2 (WIP)
+  N5/   lesson00-lesson17  (week 1-2)
+  N4/   lesson18-lesson34  (week 3-4, includes lesson27/28/29 keigo)
+  N3/   lesson35-lesson58  (week 5-6)
+  N2/   lesson59-lesson75  (week 7-8)
 schedule.md    8-week master schedule
 review/        Spaced repetition tracking
 ```

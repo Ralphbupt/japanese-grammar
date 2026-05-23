@@ -69,85 +69,117 @@ const GTAG_DEFERRED = `<script>
 })();
 </script>`;
 
+// Old /dayNN/ → new /lessonNN/ map for redirect stubs. Used to generate
+// meta-refresh pages at the old URLs so previously-shared / Google-indexed
+// /dayNN/ links continue to work after the rename. Google treats <meta
+// http-equiv="refresh" content="0;url="> as a 301 equivalent.
+const DAY_TO_LESSON = {
+  day00:"lesson00",day01:"lesson01",day02:"lesson02",day03:"lesson03",
+  day04:"lesson04",day05:"lesson05",day06:"lesson06",day07:"lesson07",
+  day08:"lesson08",day09:"lesson09",day10:"lesson10",day11:"lesson11",
+  day12:"lesson12",day13:"lesson13",day14:"lesson14",day15:"lesson15",
+  day16:"lesson16",day17:"lesson17",day18:"lesson18",day19:"lesson19",
+  day20:"lesson20",day21:"lesson21",day22:"lesson22",day23:"lesson23",
+  day24:"lesson24",day25:"lesson25",day26:"lesson26",
+  // N4 reordered: review moved to end, supplementary content gets sequential ids
+  day27:"lesson34",day28:"lesson30",day29:"lesson31",day30:"lesson32",day31:"lesson33",
+  // N3 shifted +3 to make room for new keigo lessons in N4
+  day32:"lesson35",day33:"lesson36",day34:"lesson37",day35:"lesson38",
+  day36:"lesson39",day37:"lesson40",day38:"lesson41",day39:"lesson42",
+  day40:"lesson43",day41:"lesson44",day42:"lesson45",day43:"lesson46",
+  day44:"lesson47",day45:"lesson48",day46:"lesson49",day47:"lesson50",
+  day48:"lesson51",day49:"lesson52",day50:"lesson53",day51:"lesson54",
+  day52:"lesson55",day53:"lesson56",day54:"lesson57",day55:"lesson58",
+  // N2 shifted +3
+  day56:"lesson59",day57:"lesson60",day58:"lesson61",day59:"lesson62",
+  day60:"lesson63",day61:"lesson64",day62:"lesson65",day63:"lesson66",
+  day64:"lesson67",day65:"lesson68",day66:"lesson69",day67:"lesson70",
+  day68:"lesson71",day69:"lesson72",day70:"lesson73",day71:"lesson74",
+  day72:"lesson75",
+};
+
 // Japanese sidebar titles (keyed by file id)
 const JA_TITLES = {
   N5_grammar_list: "N5 文法チェックリスト",
   N4_grammar_list: "N4 文法チェックリスト",
   N3_grammar_list: "N3 文法チェックリスト",
   N2_grammar_list: "N2 文法チェックリスト",
-  day00: "五十音図（参考）",
-  day01: "判断句・は/が・基礎助詞",
-  day02: "核心助詞 — に・で・へ・と・から・まで",
-  day03: "動詞分類とます形",
-  day04: "て形（最重要な動詞活用）",
-  day05: "て形応用 — ている・てください・てもいい",
-  day06: "ない形と義務表現",
-  day07: "た形・経験・列挙表現",
-  day08: "形容詞活用と比較表現",
-  day09: "条件表現 — と・ば",
-  day10: "条件表現 — たら・なら",
-  day11: "可能形と受身形",
-  day12: "意向形と願望表現",
-  day13: "推測 — でしょう・かもしれない・そうだ",
-  day14: "様態 — ようだ・らしい・みたいだ・っぽい",
-  day15: "N5補充文法 — ことができる・のだ・のに",
-  day16: "N5補充文法＋総復習",
-  day18: "使役形 — させる・させてあげる",
-  day19: "受身形詳解・使役受身形",
-  day20: "授受表現 — あげる/もらう/くれる",
-  day21: "ように系列 — ようにする/ようになる",
-  day22: "ことにする/ことになる/はずだ",
-  day23: "ばかり/ところだ/てしまう",
-  day24: "ておく/てある/て以来/にかけて",
-  day25: "という/ということ/というより",
-  day26: "わけだ/ものだ",
-  day27: "N4文法総復習",
-  day28: "〜ても/〜てほしい/〜ていく・てくる",
-  day29: "〜すぎる/〜やすい・にくい/〜ことはない",
-  day17: "N5補充文法② — がある・に行く・のが好き",
-  day30: "引用・思考・比況 — と思う・かどうか・のように",
-  day31: "時間と場面 — あいだ・までに・場合は",
-  day32: "N3書面助詞 — において/に対して",
-  day33: "書面助詞② — に関して/にとって/に基づいて",
-  day34: "原因・理由 — おかげで/せいで/からには",
-  day35: "逆接・譲歩① — にもかかわらず/くせに",
-  day36: "逆接・譲歩② — ものの/とはいえ/どころか",
-  day37: "程度・範囲① — ほど/さえ〜ば",
-  day38: "程度・範囲② — ばかりか/に限らず",
-  day39: "傾向・状態 — がちだ/つつある/一方だ",
-  day40: "判断・推量 — に違いない/おそれがある",
-  day41: "動作関連① — ようとする/ざるを得ない",
-  day42: "動作関連② — きる/得る/っこない",
-  day43: "並列・添加 — 上に/とともに/に伴い",
-  day44: "話題・立場 — として/にしては/向け",
-  day45: "時間 — たとたんに/次第/うちに/際に",
-  day46: "状態・様態 — まま/だらけ/っぱなし",
-  day47: "附加・対比 — 代わりに/たびに/て初めて",
-  day48: "表現方式① — というより/といっても/とおり",
-  day49: "表現方式② — こそ/ふりをする/ごとに",
-  day50: "否定関連 — ずにはいられない/めったに〜ない",
-  day51: "助言・複合① — たらいい/〜込む/〜合う",
-  day52: "複合表現 — からこそ/とは限らない",
-  day53: "常用文法① — べきだ/わけにはいかない",
-  day54: "常用文法② — てたまらない/てならない",
-  day55: "N3文法総復習",
-  day56: "逆接 — からといって/つつも/にしろ",
-  day57: "原因・理由 — あまり/ばこそ/だけに",
-  day58: "程度・限定① — に過ぎない/にほかならない",
-  day59: "程度・限定② — はもとより/のみならず",
-  day60: "時間 — にあたって/に先立って/を機に",
-  day61: "主張・判断① — わけがない/はずがない",
-  day62: "主張・判断② — ということだ/ないものか",
-  day63: "対比・関係 — に反して/一方で/につれて",
-  day64: "話題・立場 — をめぐって/を問わず/に応じて",
-  day65: "感情・不可抗 — てしょうがない/てはいられない",
-  day66: "書面表現 — に沿って/を踏まえて/上で",
-  day67: "仮定・条件 — ものなら/ことだ/に越したことはない",
-  day68: "関係・結果 — あげくに/ところだった",
-  day69: "強調・限定 — だけのことはある/まい",
-  day70: "接続・転折 — それにしても/したがって",
-  day71: "高頻出 — げ/抜く/次第/きり/ぶりに",
-  day72: "N2文法総復習",
+  lesson00: "五十音図（参考）",
+  lesson01: "判断句・は/が・基礎助詞",
+  lesson02: "核心助詞 — に・で・へ・と・から・まで",
+  lesson03: "動詞分類とます形",
+  lesson04: "て形（最重要な動詞活用）",
+  lesson05: "て形応用 — ている・てください・てもいい",
+  lesson06: "ない形と義務表現",
+  lesson07: "た形・経験・列挙表現",
+  lesson08: "形容詞活用と比較表現",
+  lesson09: "条件表現 — と・ば",
+  lesson10: "条件表現 — たら・なら",
+  lesson11: "可能形と受身形",
+  lesson12: "意向形と願望表現",
+  lesson13: "推測 — でしょう・かもしれない・そうだ",
+  lesson14: "様態 — ようだ・らしい・みたいだ・っぽい",
+  lesson15: "N5補充文法 — ことができる・のだ・のに",
+  lesson16: "N5補充文法＋総復習",
+  lesson18: "使役形 — させる・させてあげる",
+  lesson19: "受身形詳解・使役受身形",
+  lesson20: "授受表現 — あげる/もらう/くれる",
+  lesson21: "ように系列 — ようにする/ようになる",
+  lesson22: "ことにする/ことになる/はずだ",
+  lesson23: "ばかり/ところだ/てしまう",
+  lesson24: "ておく/てある/て以来/にかけて",
+  lesson25: "という/ということ/というより",
+  lesson26: "わけだ/ものだ",
+  lesson27: "敬語入門 — 尊敬語",
+  lesson28: "敬語入門 — 謙譲語",
+  lesson29: "敬語実用 — 商務シーン",
+  lesson34: "N4文法総復習",
+  lesson30: "〜ても/〜てほしい/〜ていく・てくる",
+  lesson31: "〜すぎる/〜やすい・にくい/〜ことはない",
+  lesson17: "N5補充文法② — がある・に行く・のが好き",
+  lesson32: "引用・思考・比況 — と思う・かどうか・のように",
+  lesson33: "時間と場面 — あいだ・までに・場合は",
+  lesson35: "N3書面助詞 — において/に対して",
+  lesson36: "書面助詞② — に関して/にとって/に基づいて",
+  lesson37: "原因・理由 — おかげで/せいで/からには",
+  lesson38: "逆接・譲歩① — にもかかわらず/くせに",
+  lesson39: "逆接・譲歩② — ものの/とはいえ/どころか",
+  lesson40: "程度・範囲① — ほど/さえ〜ば",
+  lesson41: "程度・範囲② — ばかりか/に限らず",
+  lesson42: "傾向・状態 — がちだ/つつある/一方だ",
+  lesson43: "判断・推量 — に違いない/おそれがある",
+  lesson44: "動作関連① — ようとする/ざるを得ない",
+  lesson45: "動作関連② — きる/得る/っこない",
+  lesson46: "並列・添加 — 上に/とともに/に伴い",
+  lesson47: "話題・立場 — として/にしては/向け",
+  lesson48: "時間 — たとたんに/次第/うちに/際に",
+  lesson49: "状態・様態 — まま/だらけ/っぱなし",
+  lesson50: "附加・対比 — 代わりに/たびに/て初めて",
+  lesson51: "表現方式① — というより/といっても/とおり",
+  lesson52: "表現方式② — こそ/ふりをする/ごとに",
+  lesson53: "否定関連 — ずにはいられない/めったに〜ない",
+  lesson54: "助言・複合① — たらいい/〜込む/〜合う",
+  lesson55: "複合表現 — からこそ/とは限らない",
+  lesson56: "常用文法① — べきだ/わけにはいかない",
+  lesson57: "常用文法② — てたまらない/てならない",
+  lesson58: "N3文法総復習",
+  lesson59: "逆接 — からといって/つつも/にしろ",
+  lesson60: "原因・理由 — あまり/ばこそ/だけに",
+  lesson61: "程度・限定① — に過ぎない/にほかならない",
+  lesson62: "程度・限定② — はもとより/のみならず",
+  lesson63: "時間 — にあたって/に先立って/を機に",
+  lesson64: "主張・判断① — わけがない/はずがない",
+  lesson65: "主張・判断② — ということだ/ないものか",
+  lesson66: "対比・関係 — に反して/一方で/につれて",
+  lesson67: "話題・立場 — をめぐって/を問わず/に応じて",
+  lesson68: "感情・不可抗 — てしょうがない/てはいられない",
+  lesson69: "書面表現 — に沿って/を踏まえて/上で",
+  lesson70: "仮定・条件 — ものなら/ことだ/に越したことはない",
+  lesson71: "関係・結果 — あげくに/ところだった",
+  lesson72: "強調・限定 — だけのことはある/まい",
+  lesson73: "接続・転折 — それにしても/したがって",
+  lesson74: "高頻出 — げ/抜く/次第/きり/ぶりに",
+  lesson75: "N2文法総復習",
 };
 
 // SEO keywords per lesson (Japanese, Chinese, English)
@@ -156,79 +188,82 @@ const LESSON_KEYWORDS = {
   N4_grammar_list: "N4文法一覧, N4语法列表, JLPT N4 grammar list, checklist, 文法チェックリスト",
   N3_grammar_list: "N3文法一覧, N3语法列表, JLPT N3 grammar list, checklist, 文法チェックリスト",
   N2_grammar_list: "N2文法一覧, N2语法列表, JLPT N2 grammar list, checklist, 文法チェックリスト",
-  day00: "五十音図, 五十音图, hiragana, katakana, Japanese alphabet, 平仮名, 片仮名, 日语入门",
-  day01: "です, は, が, 助詞, 基础句型, Japanese particles, desu, basic sentence patterns, JLPT N5",
-  day02: "に, で, へ, と, から, まで, 助词详解, core particles, JLPT N5",
-  day03: "ます形, 动词分类, masu form, verb groups, 一类动词, 二类动词, 三类动词, JLPT N5",
-  day04: "て形, te form, verb conjugation, 音便, te form rules, 动词变形, JLPT N5",
-  day05: "ている, てください, てもいい, てはいけない, て形応用, te form usage, JLPT N5",
-  day06: "ない形, なければならない, なくてもいい, negative form, obligation, JLPT N5",
-  day07: "た形, たことがある, たり, たばかり, ta form, experience, JLPT N5",
-  day08: "い形容词, な形容词, より, 一番, adjective conjugation, comparison, JLPT N5",
-  day09: "と, ば, 条件表現, conditional と, conditional ば, JLPT N5",
-  day10: "たら, なら, 条件表現, conditional たら, conditional なら, JLPT N5",
-  day11: "可能形, 受身形, potential form, passive form, られる, JLPT N5",
-  day12: "意向形, つもり, 予定, たい, volitional form, intention, desire, JLPT N5",
-  day13: "でしょう, かもしれない, そうだ, 推測, conjecture, hearsay, JLPT N5",
-  day14: "ようだ, らしい, みたいだ, っぽい, 様態, appearance, seems like, JLPT N5",
-  day15: "ことができる, のだ, のに, ので, N5補充, supplementary grammar, JLPT N5",
-  day16: "N5文法, N5 grammar review, 総復習, すぎる, やすい, にくい, ながら, JLPT N5",
-  day18: "使役形, させる, させてあげる, させてもらう, causative, JLPT N4",
-  day19: "受身形, 使役受身形, させられる, passive, causative passive, JLPT N4",
-  day20: "あげる, もらう, くれる, 授受表現, てあげる, てもらう, てくれる, giving receiving, JLPT N4",
-  day21: "ようにする, ようになる, ように, ないようにする, so that, JLPT N4",
-  day22: "ことにする, ことになる, はずだ, decide to, expected to, JLPT N4",
-  day23: "ばかり, ところだ, てしまう, ちゃう, just did, about to, regret, JLPT N4",
-  day24: "ておく, てある, て以来, にかけて, advance preparation, result state, JLPT N4",
-  day25: "という, ということ, というより, といえば, called, means that, JLPT N4",
-  day26: "わけだ, ものだ, わけがない, わけではない, ものだから, JLPT N4",
-  day27: "N4文法, N4 grammar review, 総復習, JLPT N4 summary",
-  day28: "ても, てほしい, ていく, てくる, がる, even if, want someone to, JLPT N4",
-  day29: "すぎる, やすい, にくい, ことはない, 方, 出す, 始める, too much, easy to, JLPT N4",
-  day17: "がある, がいる, に行く, のが好き, くらい, だけ, や, existence, JLPT N5",
-  day30: "と思う, かどうか, のように, なさい, がする, 必要がある, I think, whether, JLPT N4",
-  day31: "あいだ, までに, おきに, 場合は, たらどう, てよかった, during, by, in case, JLPT N4",
-  day32: "において, に対して, について, によって, 書面助詞, formal particles, JLPT N3",
-  day33: "に関して, にとって, に基づいて, にかけて, にわたって, 書面助詞, formal particles, JLPT N3",
-  day34: "おかげで, せいで, ために, 以上は, からには, ことから, 原因理由, cause reason, JLPT N3",
-  day35: "にもかかわらず, ながらも, くせに, としても, 逆接, 譲歩, concession, JLPT N3",
-  day36: "にしても, ものの, とはいえ, どころか, 逆接, concession, nevertheless, JLPT N3",
-  day37: "ほど, くらい, ば〜ほど, さえ〜ば, 程度, 範囲, degree extent, JLPT N3",
-  day38: "だけ, しか〜ない, ばかりか, に限って, に限らず, 程度, 限定, only, not limited to, JLPT N3",
-  day39: "がちだ, っぽい, 気味, つつある, 一方だ, かけ, 傾向, tendency, state, JLPT N3",
-  day40: "に違いない, に決まっている, おそれがある, っけ, ものか, 判断, 推量, must be, JLPT N3",
-  day41: "ようとする, ようがない, ざるを得ない, かねる, かねない, 動作, action, JLPT N3",
-  day42: "きる, きれない, っこない, 得る, 得ない, 可能, possibility, completely, JLPT N3",
-  day43: "上に, だけでなく, はもちろん, をはじめ, とともに, に伴い, 並列, addition, JLPT N3",
-  day44: "として, にしては, 割に, 向け, 向き, 話題, 立場, as, considering, JLPT N3",
-  day45: "たとたんに, 次第, うちに, 最中に, 際に, 時間, time, as soon as, JLPT N3",
-  day46: "まま, だらけ, っぱなし, ずに, ように見える, 状態, 様態, state, appearance, JLPT N3",
-  day47: "代わりに, ついでに, に比べて, によると, たびに, て初めて, 対比, comparison, JLPT N3",
-  day48: "というより, といっても, というと, といえば, とおり, 表現, expression, rather than, JLPT N3",
-  day49: "ふりをする, こそ, ことに, ごとに, 表現, emphasis, every, pretend, JLPT N3",
-  day50: "ないことはない, ずにはいられない, そうもない, 決して〜ない, めったに〜ない, 否定, negation, JLPT N3",
-  day51: "たらいい, ばいい, ばよかった, てごらん, 込む, 合う, 助言, advice, compound verb, JLPT N3",
-  day52: "からこそ, ことは〜が, ことになっている, ような気がする, とは限らない, ところが, 複合, compound, JLPT N3",
-  day53: "わけにはいかない, しかない, ことはない, べきだ, べきではない, ものだ, 義務, should, JLPT N3",
-  day54: "ことか, てたまらない, てならない, てもかまわない, ことがある, 結果, feeling, JLPT N3",
-  day55: "N3文法, N3 grammar review, 総復習, JLPT N3 summary",
-  day56: "からといって, つつも, にしろ, にせよ, たところで, どころではない, 逆接, concession, JLPT N2",
-  day57: "あまり, ばこそ, だけに, だけあって, ものだから, 原因, cause, precisely because, JLPT N2",
-  day58: "に過ぎない, にほかならない, に限る, もかまわず, をものともせず, 程度, 限定, merely, JLPT N2",
-  day59: "はもとより, のみならず, 程度, 限定, not only, let alone, JLPT N2",
-  day60: "にあたって, に先立って, を機に, をきっかけに, 時間, occasion, prior to, JLPT N2",
-  day61: "ないわけにはいかない, に相違ない, わけがない, はずがない, 主張, 判断, impossible, JLPT N2",
-  day62: "ということだ, ないものか, としては, としても, 主張, 判断, it means, JLPT N2",
-  day63: "に反して, 一方で, 反面, につれて, にしたがって, 対比, contrast, as, JLPT N2",
-  day64: "にしても〜にしても, はともかく, をめぐって, を問わず, を中心に, に応じて, 話題, topic, JLPT N2",
-  day65: "てしょうがない, てはいられない, ないことには, てからでないと, 感情, 不可抗, unbearable, JLPT N2",
-  day66: "に沿って, を踏まえて, を除いて, に加えて, 上で, 末に, 書面, formal written, JLPT N2",
-  day67: "ものなら, ようものなら, ことだ, に越したことはない, 仮定, 条件, if, best to, JLPT N2",
-  day68: "にかけては, に当たらない, あげくに, ことなく, ずに済む, ところだった, 結果, result, JLPT N2",
-  day69: "だけのことはある, だけは, だけまし, まい, 強調, 限定, worth, at least, JLPT N2",
-  day70: "それにしても, それなのに, しかも, したがって, すなわち, 接続, 転折, however, therefore, JLPT N2",
-  day71: "げ, 抜く, 次第だ, 次第で, きり, ぶりに, つき, 高頻出, suffix, JLPT N2",
-  day72: "N2文法, N2 grammar review, 総復習, JLPT N2 summary",
+  lesson00: "五十音図, 五十音图, hiragana, katakana, Japanese alphabet, 平仮名, 片仮名, 日语入门",
+  lesson01: "です, は, が, 助詞, 基础句型, Japanese particles, desu, basic sentence patterns, JLPT N5",
+  lesson02: "に, で, へ, と, から, まで, 助词详解, core particles, JLPT N5",
+  lesson03: "ます形, 动词分类, masu form, verb groups, 一类动词, 二类动词, 三类动词, JLPT N5",
+  lesson04: "て形, te form, verb conjugation, 音便, te form rules, 动词变形, JLPT N5",
+  lesson05: "ている, てください, てもいい, てはいけない, て形応用, te form usage, JLPT N5",
+  lesson06: "ない形, なければならない, なくてもいい, negative form, obligation, JLPT N5",
+  lesson07: "た形, たことがある, たり, たばかり, ta form, experience, JLPT N5",
+  lesson08: "い形容词, な形容词, より, 一番, adjective conjugation, comparison, JLPT N5",
+  lesson09: "と, ば, 条件表現, conditional と, conditional ば, JLPT N5",
+  lesson10: "たら, なら, 条件表現, conditional たら, conditional なら, JLPT N5",
+  lesson11: "可能形, 受身形, potential form, passive form, られる, JLPT N5",
+  lesson12: "意向形, つもり, 予定, たい, volitional form, intention, desire, JLPT N5",
+  lesson13: "でしょう, かもしれない, そうだ, 推測, conjecture, hearsay, JLPT N5",
+  lesson14: "ようだ, らしい, みたいだ, っぽい, 様態, appearance, seems like, JLPT N5",
+  lesson15: "ことができる, のだ, のに, ので, N5補充, supplementary grammar, JLPT N5",
+  lesson16: "N5文法, N5 grammar review, 総復習, すぎる, やすい, にくい, ながら, JLPT N5",
+  lesson18: "使役形, させる, させてあげる, させてもらう, causative, JLPT N4",
+  lesson19: "受身形, 使役受身形, させられる, passive, causative passive, JLPT N4",
+  lesson20: "あげる, もらう, くれる, 授受表現, てあげる, てもらう, てくれる, giving receiving, JLPT N4",
+  lesson21: "ようにする, ようになる, ように, ないようにする, so that, JLPT N4",
+  lesson22: "ことにする, ことになる, はずだ, decide to, expected to, JLPT N4",
+  lesson23: "ばかり, ところだ, てしまう, ちゃう, just did, about to, regret, JLPT N4",
+  lesson24: "ておく, てある, て以来, にかけて, advance preparation, result state, JLPT N4",
+  lesson25: "という, ということ, というより, といえば, called, means that, JLPT N4",
+  lesson26: "わけだ, ものだ, わけがない, わけではない, ものだから, JLPT N4",
+  lesson27: "敬語, 尊敬語, いらっしゃる, 召し上がる, ご覧になる, お〜になる, られる, honorific Japanese, JLPT N4",
+  lesson28: "敬語, 謙譲語, 参る, 申す, 拝見する, お〜する, 〜せていただく, humble Japanese, JLPT N4",
+  lesson29: "敬語実用, 商務日本語, ビジネス敬語, 商务日语, business Japanese keigo, JLPT N4",
+  lesson34: "N4文法, N4 grammar review, 総復習, JLPT N4 summary",
+  lesson30: "ても, てほしい, ていく, てくる, がる, even if, want someone to, JLPT N4",
+  lesson31: "すぎる, やすい, にくい, ことはない, 方, 出す, 始める, too much, easy to, JLPT N4",
+  lesson17: "がある, がいる, に行く, のが好き, くらい, だけ, や, existence, JLPT N5",
+  lesson32: "と思う, かどうか, のように, なさい, がする, 必要がある, I think, whether, JLPT N4",
+  lesson33: "あいだ, までに, おきに, 場合は, たらどう, てよかった, during, by, in case, JLPT N4",
+  lesson35: "において, に対して, について, によって, 書面助詞, formal particles, JLPT N3",
+  lesson36: "に関して, にとって, に基づいて, にかけて, にわたって, 書面助詞, formal particles, JLPT N3",
+  lesson37: "おかげで, せいで, ために, 以上は, からには, ことから, 原因理由, cause reason, JLPT N3",
+  lesson38: "にもかかわらず, ながらも, くせに, としても, 逆接, 譲歩, concession, JLPT N3",
+  lesson39: "にしても, ものの, とはいえ, どころか, 逆接, concession, nevertheless, JLPT N3",
+  lesson40: "ほど, くらい, ば〜ほど, さえ〜ば, 程度, 範囲, degree extent, JLPT N3",
+  lesson41: "だけ, しか〜ない, ばかりか, に限って, に限らず, 程度, 限定, only, not limited to, JLPT N3",
+  lesson42: "がちだ, っぽい, 気味, つつある, 一方だ, かけ, 傾向, tendency, state, JLPT N3",
+  lesson43: "に違いない, に決まっている, おそれがある, っけ, ものか, 判断, 推量, must be, JLPT N3",
+  lesson44: "ようとする, ようがない, ざるを得ない, かねる, かねない, 動作, action, JLPT N3",
+  lesson45: "きる, きれない, っこない, 得る, 得ない, 可能, possibility, completely, JLPT N3",
+  lesson46: "上に, だけでなく, はもちろん, をはじめ, とともに, に伴い, 並列, addition, JLPT N3",
+  lesson47: "として, にしては, 割に, 向け, 向き, 話題, 立場, as, considering, JLPT N3",
+  lesson48: "たとたんに, 次第, うちに, 最中に, 際に, 時間, time, as soon as, JLPT N3",
+  lesson49: "まま, だらけ, っぱなし, ずに, ように見える, 状態, 様態, state, appearance, JLPT N3",
+  lesson50: "代わりに, ついでに, に比べて, によると, たびに, て初めて, 対比, comparison, JLPT N3",
+  lesson51: "というより, といっても, というと, といえば, とおり, 表現, expression, rather than, JLPT N3",
+  lesson52: "ふりをする, こそ, ことに, ごとに, 表現, emphasis, every, pretend, JLPT N3",
+  lesson53: "ないことはない, ずにはいられない, そうもない, 決して〜ない, めったに〜ない, 否定, negation, JLPT N3",
+  lesson54: "たらいい, ばいい, ばよかった, てごらん, 込む, 合う, 助言, advice, compound verb, JLPT N3",
+  lesson55: "からこそ, ことは〜が, ことになっている, ような気がする, とは限らない, ところが, 複合, compound, JLPT N3",
+  lesson56: "わけにはいかない, しかない, ことはない, べきだ, べきではない, ものだ, 義務, should, JLPT N3",
+  lesson57: "ことか, てたまらない, てならない, てもかまわない, ことがある, 結果, feeling, JLPT N3",
+  lesson58: "N3文法, N3 grammar review, 総復習, JLPT N3 summary",
+  lesson59: "からといって, つつも, にしろ, にせよ, たところで, どころではない, 逆接, concession, JLPT N2",
+  lesson60: "あまり, ばこそ, だけに, だけあって, ものだから, 原因, cause, precisely because, JLPT N2",
+  lesson61: "に過ぎない, にほかならない, に限る, もかまわず, をものともせず, 程度, 限定, merely, JLPT N2",
+  lesson62: "はもとより, のみならず, 程度, 限定, not only, let alone, JLPT N2",
+  lesson63: "にあたって, に先立って, を機に, をきっかけに, 時間, occasion, prior to, JLPT N2",
+  lesson64: "ないわけにはいかない, に相違ない, わけがない, はずがない, 主張, 判断, impossible, JLPT N2",
+  lesson65: "ということだ, ないものか, としては, としても, 主張, 判断, it means, JLPT N2",
+  lesson66: "に反して, 一方で, 反面, につれて, にしたがって, 対比, contrast, as, JLPT N2",
+  lesson67: "にしても〜にしても, はともかく, をめぐって, を問わず, を中心に, に応じて, 話題, topic, JLPT N2",
+  lesson68: "てしょうがない, てはいられない, ないことには, てからでないと, 感情, 不可抗, unbearable, JLPT N2",
+  lesson69: "に沿って, を踏まえて, を除いて, に加えて, 上で, 末に, 書面, formal written, JLPT N2",
+  lesson70: "ものなら, ようものなら, ことだ, に越したことはない, 仮定, 条件, if, best to, JLPT N2",
+  lesson71: "にかけては, に当たらない, あげくに, ことなく, ずに済む, ところだった, 結果, result, JLPT N2",
+  lesson72: "だけのことはある, だけは, だけまし, まい, 強調, 限定, worth, at least, JLPT N2",
+  lesson73: "それにしても, それなのに, しかも, したがって, すなわち, 接続, 転折, however, therefore, JLPT N2",
+  lesson74: "げ, 抜く, 次第だ, 次第で, きり, ぶりに, つき, 高頻出, suffix, JLPT N2",
+  lesson75: "N2文法, N2 grammar review, 総復習, JLPT N2 summary",
 };
 
 // ─── Helpers ───
@@ -273,7 +308,7 @@ function discoverFiles() {
     groups.push({
       label,
       files: files.map((f) => ({
-        id: f.replace(/\.md$/, "").replace(/^(day\d+).*/, "$1"),
+        id: f.replace(/\.md$/, "").replace(/^(lesson\d+).*/, "$1"),
         path: path.join(abs, f),
       })),
     });
@@ -569,6 +604,7 @@ async function main() {
   const kuro = await initKuroshiro();
   console.log("Kuroshiro ready.");
 
+  const today = new Date().toISOString().slice(0, 10);
   const groups = discoverFiles();
   const marked = new Marked({ gfm: true, breaks: false });
 
@@ -743,11 +779,11 @@ async function main() {
       console.log(`  Processing ${file.id}...`);
       html = await addFurigana(kuro, html);
 
-      const dayMatch = file.id.match(/^day(\d+)/);
-      const dayNum = dayMatch ? dayMatch[1] : "";
+      const lessonMatch = file.id.match(/^lesson(\d+)/);
+      const lessonNum = lessonMatch ? lessonMatch[1] : "";
       const jaTitle = JA_TITLES[file.id];
       const sidebarTitle = jaTitle
-        ? (dayNum ? `Day ${dayNum} – ${jaTitle}` : jaTitle)
+        ? (lessonNum ? `Lesson ${lessonNum} – ${jaTitle}` : jaTitle)
         : shortTitle;
       sidebarHtml.push(
         `<a class="nav-item" href="${SITE_PATH}${file.id}/" data-target="${file.id}">${sidebarTitle}</a>`
@@ -897,7 +933,7 @@ async function main() {
   let totalLessons = 0;
   for (const l of lessonPages) {
     totalPoints += (l.cleanPoints || []).length;
-    if (/^day\d+/.test(l.id) && levelCounts.hasOwnProperty(l.level)) {
+    if (/^lesson\d+/.test(l.id) && levelCounts.hasOwnProperty(l.level)) {
       levelCounts[l.level]++;
       totalLessons++;
     }
@@ -1054,8 +1090,6 @@ ${JS}
 
   fs.mkdirSync(path.join(__dirname, "dist"), { recursive: true });
   fs.writeFileSync(path.join(__dirname, OUT), fullHtml, "utf-8");
-
-  const today = new Date().toISOString().slice(0, 10);
 
   // ─── Generate individual lesson pages ───
   for (let li = 0; li < lessonPages.length; li++) {
@@ -1288,7 +1322,7 @@ ${sidebarMarkupHtml}
   }
   const levelPageIds = [];
   for (const level of ["N5", "N4", "N3", "N2"]) {
-    const lessons = lessonsByLevel[level].filter(l => /^day\d+/.test(l.id));
+    const lessons = lessonsByLevel[level].filter(l => /^lesson\d+/.test(l.id));
     if (lessons.length === 0) continue;
     const totalPoints = lessons.reduce((sum, l) => sum + (l.cleanPoints || []).length, 0);
     const levelDir = path.join(__dirname, "dist", level);
@@ -1301,8 +1335,8 @@ ${sidebarMarkupHtml}
 
     // Lesson cards: each shows day, title, grammar points, link
     const cardsHtml = lessons.map(l => {
-      const dayMatch = l.id.match(/^day(\d+)/);
-      const dayLabel = dayMatch ? `Day ${dayMatch[1]}` : l.id;
+      const lessonMatch = l.id.match(/^lesson(\d+)/);
+      const dayLabel = lessonMatch ? `Lesson ${lessonMatch[1]}` : l.id;
       const points = (l.cleanPoints || []).slice(0, 4);
       const pointsHtml = points.length > 0
         ? `<div class="overview-points">${points.map(p => `<span class="grammar-pill">${p}</span>`).join("")}</div>`
@@ -1319,8 +1353,8 @@ ${sidebarMarkupHtml}
     // Full grammar points table for fast lookup
     const tableRows = [];
     for (const l of lessons) {
-      const dayMatch = l.id.match(/^day(\d+)/);
-      const dayLabel = dayMatch ? `Day ${dayMatch[1]}` : l.id;
+      const lessonMatch = l.id.match(/^lesson(\d+)/);
+      const dayLabel = lessonMatch ? `Lesson ${lessonMatch[1]}` : l.id;
       for (const point of (l.cleanPoints || [])) {
         tableRows.push(`<tr><td><a href="${SITE}${l.id}/">${point}</a></td><td>${dayLabel}</td><td>${l.jaTitle}</td></tr>`);
       }
@@ -1568,6 +1602,34 @@ ${sidebarMarkupHtml}
     console.log("  Generated dist/about/index.html");
   }
 
+  // ─── Redirect stubs for old /dayNN/ URLs ───
+  // After renaming day → lesson, previously-indexed /dayNN/ URLs would 404.
+  // Generate a tiny page at each /dayNN/ that meta-refreshes to /lessonNN/.
+  // Google's docs explicitly call <meta http-equiv="refresh" content="0;url=">
+  // a 301-equivalent — old links and search results transition cleanly.
+  let stubCount = 0;
+  for (const [oldId, newId] of Object.entries(DAY_TO_LESSON)) {
+    const newUrl = `${SITE}${newId}/`;
+    const stubDir = path.join(__dirname, "dist", oldId);
+    fs.mkdirSync(stubDir, { recursive: true });
+    fs.writeFileSync(path.join(stubDir, "index.html"), `<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="0;url=${newUrl}">
+<link rel="canonical" href="${newUrl}">
+<meta name="robots" content="noindex">
+<title>已移动 — ${newUrl}</title>
+</head>
+<body>
+<p>本页已迁移至 <a href="${newUrl}">${newUrl}</a></p>
+<script>location.replace(${JSON.stringify(newUrl)})</script>
+</body>
+</html>`, "utf-8");
+    stubCount++;
+  }
+  console.log(`  Generated ${stubCount} day → lesson redirect stubs`);
+
   // ─── Sitemap ───
   const homeMod = gitLastMod("schedule.md") || today;
   const sitemapUrls = [`  <url>
@@ -1686,7 +1748,7 @@ License: CC BY 4.0 — attribution required, no full-site mirroring
 
 ## Lesson page structure
 
-Each \`/dayNN/\` page contains:
+Each \`/lessonNN/\` page contains:
 - Conjugation rules (接続)
 - Meaning / usage (含义 / 用法)
 - 3+ example sentences with furigana (例句)
@@ -2456,7 +2518,7 @@ const JS = `
   var startDateInput = document.getElementById('start-date-input');
 
   function getDayNumber(lessonId) {
-    var m = lessonId.match(/^day(\\d+)/);
+    var m = lessonId.match(/^lesson(\\d+)/);
     return m ? parseInt(m[1], 10) : -1;
   }
 
