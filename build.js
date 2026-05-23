@@ -877,7 +877,9 @@ async function main() {
       requestAnimationFrame(centerItem);
       return;
     }
-    var target = top - navH / 2 + itemH / 2;
+    // Position active item ~40% from top — slightly above center, so the
+    // user sees the current lesson plus upcoming lessons below it.
+    var target = top - navH * 0.4 + itemH / 2;
     scroll.scrollTop = Math.max(0, target);
   }
   // rAF defers until layout is computed (flex children sometimes have
