@@ -253,7 +253,7 @@ async function main() {
     <span class="anki-level">${s.level}</span>
     <span class="anki-title"><span class="lang-zh">JLPT ${s.level} 文法卡组</span><span class="lang-en">JLPT ${s.level} Grammar Deck</span></span>
     <span class="anki-count"><span class="lang-zh">${s.count} 张卡</span><span class="lang-en">${s.count} cards</span></span>
-    <a class="anki-dl anki-dl-primary" href="jpnotes-${s.level}.apkg" download>⬇ <span class="lang-zh">下载 .apkg（推荐 / 手机一键导入）</span><span class="lang-en">Download .apkg (recommended / one-tap import on mobile)</span></a>
+    <a class="anki-dl anki-dl-primary" href="jpnotes-${s.level}.apkg">⬇ <span class="lang-zh">下载 .apkg（推荐 / 手机一键导入）</span><span class="lang-en">Download .apkg (recommended / one-tap import on mobile)</span></a>
     <a class="anki-dl anki-dl-alt" href="jpnotes-${s.level}.txt" download><span class="lang-zh">或下载 .txt（TSV 格式）</span><span class="lang-en">or .txt (TSV fallback)</span></a>
   </div>`
     )
