@@ -343,11 +343,21 @@ body.lang-en div.lang-en, body.lang-en p.lang-en, body.lang-en li.lang-en, body.
 ${cardCellsEn}
   </div>
 
-  <h2><span class="lang-zh">手机直接导入（最快）</span><span class="lang-en">Mobile direct import (fastest)</span></h2>
+  <h2><span class="lang-zh">手机导入（2 步）</span><span class="lang-en">Mobile import (2 steps)</span></h2>
   <ol>
-    <li><span class="lang-zh">手机浏览器访问本页，点对应级别的红色 <strong>下载 .apkg</strong> 按钮</span><span class="lang-en">Open this page in your phone browser, tap the red <strong>Download .apkg</strong> button for the level you want</span></li>
-    <li><span class="lang-zh"><strong>iOS</strong>：弹出"在 Anki 中打开" → 点 Anki → 一键导入完成<br><strong>Android</strong>：弹出"用 AnkiDroid 打开" → 点 AnkiDroid → 确认导入</span><span class="lang-en"><strong>iOS</strong>: tap "Open in Anki" → AnkiMobile imports automatically<br><strong>Android</strong>: tap "Open with AnkiDroid" → confirm import</span></li>
-    <li><span class="lang-zh">卡组叫 <code>日语语法 N5 · jpnotes.dev</code>，可以直接开始刷</span><span class="lang-en">Deck is named <code>日语语法 N5 · jpnotes.dev</code> — ready to study</span></li>
+    <li><span class="lang-zh">点红色 <strong>下载 .apkg</strong> 按钮 → 文件保存到手机"下载"文件夹</span><span class="lang-en">Tap the red <strong>Download .apkg</strong> button → file saves to your phone's Downloads</span></li>
+    <li>
+      <span class="lang-zh">
+        <strong>Android</strong>：浏览器底部弹下载完成提示 → 点 "打开" → 选 AnkiDroid → 导入完成<br>
+        <em>如果没弹提示：打开文件管理器 → 下载 → 找到 jpnotes-XX.apkg → 点击 → 选 AnkiDroid</em><br>
+        <strong>iOS</strong>：Safari 右上角 ↓ 下载图标 → 点刚下好的 .apkg → 右上角分享 → "拷贝到 Anki"
+      </span>
+      <span class="lang-en">
+        <strong>Android</strong>: Chrome shows download notification → tap "Open" → pick AnkiDroid → done<br>
+        <em>If no notification: open Files → Downloads → tap jpnotes-XX.apkg → pick AnkiDroid</em><br>
+        <strong>iOS</strong>: Safari ↓ icon (top-right) → tap the .apkg → Share → "Copy to Anki"
+      </span>
+    </li>
   </ol>
   <p>
     <span class="lang-zh"><strong>需要 Anki app</strong>：<a href="https://apps.apple.com/app/ankimobile-flashcards/id373493387">AnkiMobile</a>（iOS，付费）或 <a href="https://play.google.com/store/apps/details?id=com.ichi2.anki">AnkiDroid</a>（Android，免费）。</span>
