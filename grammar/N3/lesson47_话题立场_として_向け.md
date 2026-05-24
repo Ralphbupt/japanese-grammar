@@ -310,6 +310,48 @@ E.g.: 大人**向き**の映画, 初心者**向き**の本
 
 ---
 
+## 6. 〜など / 〜なんか / 〜なんて（举例・轻视・惊讶）||6. 〜など / 〜なんか / 〜なんて (Such as / Stuff like / How could~)
+
+### 接続||Conjugation
+:::zh
+- 名詞 + など / なんか / なんて
+- 動詞普通形 + なんて
+:::
+:::en
+- Noun + など / なんか / なんて
+- Verb plain form + なんて
+:::
+
+### 含義||Meaning
+:::zh
+- **など**："……等""之类的"，正式用语，用于列举或谦逊。
+- **なんか**："……什么的""……之类的"，口语，有时带轻视或谦虚语气。
+- **なんて**："……什么的""居然……"，口语，表示惊讶、意外或轻视。
+:::
+:::en
+- **など**: "such as / etc." — formal; used for listing examples or being modest.
+- **なんか**: "stuff like / things like" — casual; sometimes dismissive or self-deprecating.
+- **なんて**: "something like / how could" — casual; expresses surprise, disbelief, or dismissal.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 本や雑誌**など**を読む。（读书和杂志等。→ 正式列举）
+2. 私**なんか**にはできません。（我这种人做不了。→ 谦虚/自我贬低）
+3. こんなところで会う**なんて**！（居然在这种地方见面！→ 惊讶）
+4. 嘘をつく**なんて**、ひどい。（居然说谎，太过分了。→ 意外+批评）
+5. お酒**なんか**飲みたくない。（什么酒我才不想喝呢。→ 轻视）
+:::
+:::en
+1. 本や雑誌**など**を読む。(I read books, magazines, and the like. → formal listing)
+2. 私**なんか**にはできません。(Someone like me can't do that. → humble/self-deprecating)
+3. こんなところで会う**なんて**！(Running into you at a place like this! → surprise)
+4. 嘘をつく**なんて**、ひどい。(To think you'd lie — that's awful. → surprise + criticism)
+5. お酒**なんか**飲みたくない。(I don't want to drink stuff like alcohol. → dismissive)
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

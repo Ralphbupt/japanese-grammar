@@ -235,6 +235,52 @@ Two meanings: ① Each time something happens. ② At regular intervals.
 
 ---
 
+## 5. 〜かのようだ / 〜かのように（仿佛……似的）||5. 〜かのようだ / 〜かのように (As if~ / As though~)
+
+### 接続||Conjugation
+:::zh
+- 動詞普通形 + かのようだ / かのように
+- い形容詞普通形 + かのようだ / かのように
+- な形容詞である + かのようだ / かのように
+- 名詞である + かのようだ / かのように
+
+※ 常与「まるで」搭配使用。
+:::
+:::en
+- Verb plain form + かのようだ / かのように
+- い-adjective plain form + かのようだ / かのように
+- な-adjective である + かのようだ / かのように
+- Noun である + かのようだ / かのように
+
+※ Often used together with 「まるで」.
+:::
+
+### 含義||Meaning
+:::zh
+"仿佛……似的""好像……一样"，用于比喻或虚拟的描写。比「みたいだ」更文学化、更戏剧性。
+:::
+:::en
+"As if..." / "As though..." — used for metaphorical or figurative descriptions. More literary and dramatic than 「みたいだ」.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. まるで夢を見ている**かのようだ**。（仿佛在做梦一样。）
+2. 何も知らない**かのように**振る舞った。（表现得好像什么都不知道一样。）
+3. 彼女は天使である**かのように**美しい。（她美得仿佛天使一般。）
+4. まるで時間が止まった**かのような**静けさだった。（安静得仿佛时间停止了一样。）
+5. 彼はまるで自分が王様である**かのように**命令する。（他就好像自己是国王一样发号施令。）
+:::
+:::en
+1. まるで夢を見ている**かのようだ**。(It's as if I'm dreaming.)
+2. 何も知らない**かのように**振る舞った。(I acted as though I knew nothing.)
+3. 彼女は天使である**かのように**美しい。(She is beautiful as though she were an angel.)
+4. まるで時間が止まった**かのような**静けさだった。(It was so quiet, as if time had stopped.)
+5. 彼はまるで自分が王様である**かのように**命令する。(He gives orders as if he were a king.)
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

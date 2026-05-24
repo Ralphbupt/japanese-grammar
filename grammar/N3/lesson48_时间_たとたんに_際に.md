@@ -357,6 +357,68 @@ This lesson covers N3 grammar related to "timing." 「たとたん（に）」 i
 
 ---
 
+## 6. 〜か〜ないかのうちに（刚……就……）||6. 〜か〜ないかのうちに (No sooner had… than…)
+
+### 接続||Conjugation
+:::zh
+動詞辞書形 + か + 動詞ない形 + かのうちに
+
+例：入る**か**入ら**ないかのうちに**、終わる**か**終わら**ないかのうちに**
+:::
+:::en
+Verb dictionary form + か + Verb nai-form + かのうちに
+
+E.g.: 入る**か**入ら**ないかのうちに**, 終わる**か**終わら**ないかのうちに**
+:::
+
+### 含義||Meaning
+:::zh
+"几乎同时发生——还没来得及判断A是否发生，B就已经发生了"。比「たとたんに」更强调瞬间性，速度更快。
+:::
+:::en
+"Almost simultaneously — before you could even tell if A happened, B already happened." Even faster and more instantaneous than 「たとたんに」.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. ベッドに入る**か**入ら**ないかのうちに**、眠ってしまった。（刚上床还没躺好就睡着了。）
+2. 授業が終わる**か**終わら**ないかのうちに**、教室を飛び出した。（课刚一结束就冲出了教室。）
+3. 座る**か**座ら**ないかのうちに**、電話が鳴った。（刚一坐下电话就响了。）
+4. 目を閉じる**か**閉じ**ないかのうちに**、眠りに落ちた。（刚一闭眼就睡着了。）
+5. 食べ始める**か**始め**ないかのうちに**、もう食べ終わっていた。（刚开始吃就已经吃完了。）
+:::
+:::en
+1. ベッドに入る**か**入ら**ないかのうちに**、眠ってしまった。(No sooner had I gotten into bed than I fell asleep.)
+2. 授業が終わる**か**終わら**ないかのうちに**、教室を飛び出した。(No sooner had class ended than I dashed out of the classroom.)
+3. 座る**か**座ら**ないかのうちに**、電話が鳴った。(No sooner had I sat down than the phone rang.)
+4. 目を閉じる**か**閉じ**ないかのうちに**、眠りに落ちた。(No sooner had I closed my eyes than I fell asleep.)
+5. 食べ始める**か**始め**ないかのうちに**、もう食べ終わっていた。(No sooner had I started eating than I'd already finished.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 速度 |
+|------|------|------|
+| か〜ないかのうちに | 还没来得及…就… | ★★★ 最快（几乎同时） |
+| たとたん（に） | 刚一……就 | ★★ 很快（瞬间） |
+| とすぐに | ……之后马上 | ★ 快（紧接着） |
+
+> 「ベッドに入るか入らないかのうちに眠った」= 几乎同时  
+> 「ベッドに入ったとたん眠った」= 刚一躺下
+:::
+:::en
+| Expression | Meaning | Speed |
+|------|------|------|
+| か〜ないかのうちに | before even… already | ★★★ Fastest (almost simultaneous) |
+| たとたん（に） | the moment… | ★★ Very fast (instantaneous) |
+| とすぐに | right after… | ★ Fast (immediately following) |
+
+> 「ベッドに入るか入らないかのうちに眠った」= almost simultaneously  
+> 「ベッドに入ったとたん眠った」= the moment I got in
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

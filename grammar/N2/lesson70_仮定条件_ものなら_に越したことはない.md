@@ -301,6 +301,44 @@ This lesson covers N2 grammar for "hypothetical conditions" and "advice." 「も
 
 ---
 
+## 5. 〜ものがある（有一种……的感觉）||5. 〜ものがある (There is something~ / It has a quality of~)
+
+### 接続||Conjugation
+:::zh
+- 動詞普通形 + ものがある
+- い形容詞普通形 + ものがある
+:::
+:::en
+- Verb plain form + ものがある
+- i-adjective plain form + ものがある
+:::
+
+### 含義||Meaning
+:::zh
+"有一种……的感觉""让人觉得……"，表达说话人主观的、感性的印象或感受。多用于正面评价。
+:::
+:::en
+"There is something (about it)..." / "It has a quality of..." — expresses the speaker's subjective, emotional impression. Often used for positive evaluations.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 彼の演奏には感動する**ものがある**。（他的演奏有一种令人感动的东西。）
+2. この映画にはどこか懐かしい**ものがある**。（这部电影有一种令人怀念的感觉。）
+3. 独りで旅するのも、いい**ものがある**。（一个人旅行也有一种别样的好。）
+4. 彼女の歌声には人を引きつける**ものがある**。（她的歌声有一种吸引人的东西。）
+5. この風景には心を落ち着かせる**ものがある**。（这片风景有一种让人心静的感觉。）
+:::
+:::en
+1. 彼の演奏には感動する**ものがある**。(There is something deeply moving about his performance.)
+2. この映画にはどこか懐かしい**ものがある**。(There is something nostalgic about this movie.)
+3. 独りで旅するのも、いい**ものがある**。(Traveling alone has something good about it too.)
+4. 彼女の歌声には人を引きつける**ものがある**。(There is something captivating about her singing voice.)
+5. この風景には心を落ち着かせる**ものがある**。(There is something calming about this scenery.)
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

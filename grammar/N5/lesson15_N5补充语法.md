@@ -744,3 +744,67 @@ Plain form + し
 :::
 
 ---
+
+## 9. 〜とき（……的时候）||9. 〜とき (When / At the time of)
+
+### 接続||Conjugation
+
+:::zh
+- 動詞普通形 + とき（辞書形/た形/ない形/ている形）
+- い形容詞 + とき
+- な形容詞**な** + とき
+- 名詞**の** + とき
+:::
+
+:::en
+- Verb plain form + とき (dictionary form / ta-form / nai-form / te-iru form)
+- い-adjective + とき
+- な-adjective + **な** + とき
+- Noun + **の** + とき
+:::
+
+### 含義||Meaning
+
+:::zh
+"……的时候"，表示某个时间点或时间段。
+
+**重要：辞書形+とき vs た形+とき 的区别**
+- 辞書形+とき → 动作**之前/还没完成**时
+- た形+とき → 动作**之后/已经完成**时
+
+例：
+- 日本に**行く**とき、カメラを買った。（去日本之前买了相机。→ 还没去）
+- 日本に**行った**とき、富士山を見た。（去日本的时候看到了富士山。→ 已经到了日本）
+:::
+
+:::en
+"When..." — indicates a point in time or time period.
+
+**Key distinction: dictionary form + とき vs ta-form + とき**
+- Dictionary form + とき → **before / not yet completed** the action
+- Ta-form + とき → **after / already completed** the action
+
+Example:
+- 日本に**行く**とき、カメラを買った。(I bought a camera before going to Japan. → hadn't gone yet)
+- 日本に**行った**とき、富士山を見た。(When I went to Japan, I saw Mt. Fuji. → already in Japan)
+:::
+
+### 例句||Example Sentences
+
+:::zh
+1. 日本に行っ**たとき**、富士山を見た。（去日本的时候看到了富士山。）
+2. 困っ**たとき**、いつでも相談してください。（有困难的时候随时来商量。）
+3. 暇な**とき**、映画を見る。（有空的时候看电影。）
+4. 子供の**とき**、よくこの公園で遊んだ。（小时候经常在这个公园玩。）
+5. 寝る**とき**、いつも音楽を聴く。（睡觉的时候总是听音乐。）
+:::
+
+:::en
+1. 日本に行っ**たとき**、富士山を見た。(When I went to Japan, I saw Mt. Fuji.)
+2. 困っ**たとき**、いつでも相談してください。(Whenever you're in trouble, feel free to ask for advice.)
+3. 暇な**とき**、映画を見る。(When I'm free, I watch movies.)
+4. 子供の**とき**、よくこの公園で遊んだ。(When I was a child, I often played in this park.)
+5. 寝る**とき**、いつも音楽を聴く。(When I go to sleep, I always listen to music.)
+:::
+
+---
