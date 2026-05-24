@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "version": 1,
+    "description": "Hand-curated Anki card data. Each card = one grammar point. build-anki.js reads this file instead of parsing markdown.",
+    "fields": "id, term, level, lesson, description, meaning_zh, meaning_en, conjugation, examples[]{ ja, zh, en }"
+  },
+  "cards": [
+    {
+      "id": "n5_01_desu",
+      "term": "〜です / 〜ではありません",
+      "level": "N5",
+      "lesson": "01",
+      "description": "名词判断句",
+      "meaning_zh": "表示"是……"。です是敬体（丁寧語），简体是「だ」。否定：ではありません（简体：じゃない）。",
+      "meaning_en": "Copula: 'is / am / are.' です is polite; plain form is だ. Negative: ではありません (plain: じゃない).",
+      "conjugation": "名词 / な形容词 + です",
+      "examples": [
+        { "ja": "私は田中です。", "zh": "我是田中。", "en": "I'm Tanaka." },
+        { "ja": "これは本ではありません。", "zh": "这不是书。", "en": "This isn't a book." },
+        { "ja": "昨日は暇でした。", "zh": "昨天很闲。", "en": "I was free yesterday." }
+      ]
+    },
+    {
+      "id": "n5_01_wa",
+      "term": "は",
+      "level": "N5",
+      "lesson": "01",
+      "description": "主题助词",
+      "meaning_zh": ""说到……的话"——提示话题。は不是主语标记，是话题标记。一个句子里出现两个は时，带有对比意味。",
+      "meaning_en": "'As for…' — marks the topic. は is NOT a subject marker; it's a topic marker. Two は in one sentence implies contrast.",
+      "conjugation": "名词 + は",
+      "examples": [
+        { "ja": "東京はにぎやかです。", "zh": "东京很热闹。", "en": "Tokyo is lively." },
+        { "ja": "コーヒーは飲みますが、紅茶は飲みません。", "zh": "咖啡喝，红茶不喝。", "en": "I drink coffee, but not tea. (contrast)" },
+        { "ja": "この店はラーメンが有名です。", "zh": "这家店的拉面很有名。", "en": "This shop is famous for ramen." }
+      ]
+    },
+    {
+      "id": "n5_01_ga",
+      "term": "が",
+      "level": "N5",
+      "lesson": "01",
+      "description": "主格助词",
+      "meaning_zh": ""就是这个！"——标记动作/状态的主体，带有指认或聚焦的感觉。新出场的事物用が，第二次提到切换为は。",
+      "meaning_en": "'It's THIS one!' — marks the subject with a sense of identification or focus. Use が for first mention; switch to は for subsequent reference.",
+      "conjugation": "名词 + が",
+      "examples": [
+        { "ja": "雨が降っています。", "zh": "在下雨。", "en": "It's raining." },
+        { "ja": "あ、バスが来た！", "zh": "啊，公交车来了！", "en": "Oh, the bus came!" },
+        { "ja": "誰が食べましたか。", "zh": "谁吃了？", "en": "Who ate it?" }
+      ]
+    },
+    {
+      "id": "n5_02_wo",
+      "term": "を",
+      "level": "N5",
+      "lesson": "02",
+      "description": "宾语助词",
+      "meaning_zh": "标记动作的宾语（对象）。读音是「お」但写作「を」。也用于表示离开、经过的场所。",
+      "meaning_en": "Marks the direct object of an action. Pronounced 'o' but written を. Also marks departure/passage through a place.",
+      "conjugation": "名词 + を + 他动词",
+      "examples": [
+        { "ja": "本を読みます。", "zh": "读书。", "en": "I read a book." },
+        { "ja": "朝ごはんを食べました。", "zh": "吃了早饭。", "en": "I ate breakfast." },
+        { "ja": "公園を散歩します。", "zh": "在公园散步。", "en": "I take a walk through the park." }
+      ]
+    },
+    {
+      "id": "n5_02_ni",
+      "term": "に",
+      "level": "N5",
+      "lesson": "02",
+      "description": "多功能助词",
+      "meaning_zh": "六大用法：存在位置（に いる/ある）、时间点（7時に）、动作目标（友達に あげる）、移动目的地（学校に 行く）、目的（買い物に 行く）、变化结果（医者に なる）。",
+      "meaning_en": "Six uses: location (にいる/ある), time point (7時に), target (友達にあげる), destination (学校に行く), purpose (買い物に行く), result of change (医者になる).",
+      "conjugation": "名词 + に",
+      "examples": [
+        { "ja": "学校に行きます。", "zh": "去学校。", "en": "I go to school." },
+        { "ja": "7時に起きます。", "zh": "7点起床。", "en": "I wake up at 7." },
+        { "ja": "友達にプレゼントをあげました。", "zh": "给了朋友礼物。", "en": "I gave a present to my friend." }
+      ]
+    },
+    {
+      "id": "n5_02_de",
+      "term": "で",
+      "level": "N5",
+      "lesson": "02",
+      "description": "手段/场所助词",
+      "meaning_zh": "三大用法：动作发生的地点（カフェで勉強する）、手段/工具（バスで行く、箸で食べる）、原因/范围（病気で休む、3人で食べる）。",
+      "meaning_en": "Three uses: place of action (カフェで勉強する), means/tool (バスで行く), cause/scope (病気で休む, 3人で食べる).",
+      "conjugation": "名词 + で",
+      "examples": [
+        { "ja": "図書館で勉強します。", "zh": "在图书馆学习。", "en": "I study at the library." },
+        { "ja": "バスで学校に行きます。", "zh": "坐公交去学校。", "en": "I go to school by bus." },
+        { "ja": "日本語で話してください。", "zh": "请用日语说。", "en": "Please speak in Japanese." }
+      ]
+    },
+    {
+      "id": "n5_02_ni_vs_de",
+      "term": "に vs で",
+      "level": "N5",
+      "lesson": "02",
+      "description": "存在/动作场所辨析",
+      "meaning_zh": "に = 静态存在的场所（猫がソファにいる）。で = 动作发生的场所（ソファで寝る）。区别：に着重"在哪里"，で着重"在哪里做事"。",
+      "meaning_en": "に = location of existence (the cat IS on the sofa). で = place of action (sleeping ON the sofa). に focuses on 'where something is'; で focuses on 'where something happens.'",
+      "conjugation": "に + いる/ある（存在） ↔ で + 动词（动作）",
+      "examples": [
+        { "ja": "猫はソファにいます。", "zh": "猫在沙发上（存在）。", "en": "The cat is on the sofa. (existence)" },
+        { "ja": "ソファで本を読みます。", "zh": "在沙发上看书（动作）。", "en": "I read on the sofa. (action)" },
+        { "ja": "東京に住んでいます。東京で働いています。", "zh": "住在东京（存在）。在东京工作（动作）。", "en": "I live in Tokyo. I work in Tokyo." }
+      ]
+    },
+    {
+      "id": "n5_02_e",
+      "term": "へ",
+      "level": "N5",
+      "lesson": "02",
+      "description": "方向助词",
+      "meaning_zh": "表示移动的方向。读音是「え」不是「へ」。跟に的区别：へ强调方向感（"朝着那个方向"），に强调到达目的地。日常口语两者几乎可以互换。",
+      "meaning_en": "Marks direction of movement. Pronounced 'e' not 'he.' Difference from に: へ emphasizes direction ('toward'), に emphasizes arrival. In daily speech, nearly interchangeable.",
+      "conjugation": "場所 + へ + 移動動詞",
+      "examples": [
+        { "ja": "日本へ行きたいです。", "zh": "想去日本。", "en": "I want to go to Japan." },
+        { "ja": "右へ曲がってください。", "zh": "请向右拐。", "en": "Please turn right." },
+        { "ja": "北海道へ旅行に行きます。", "zh": "去北海道旅行。", "en": "I'm going on a trip to Hokkaido." }
+      ]
+    },
+    {
+      "id": "n5_02_kara_made",
+      "term": "から / まで",
+      "level": "N5",
+      "lesson": "02",
+      "description": "起点 / 终点",
+      "meaning_zh": "から = 从（时间/空间的起点）。まで = 到（时间/空间的终点）。常搭配使用：9時から5時まで（从9点到5点）。",
+      "meaning_en": "から = from (starting point in time/space). まで = to/until (ending point). Often paired: 9時から5時まで (from 9 to 5).",
+      "conjugation": "名词 + から ／ 名词 + まで",
+      "examples": [
+        { "ja": "9時から5時まで働きます。", "zh": "从9点工作到5点。", "en": "I work from 9 to 5." },
+        { "ja": "東京から大阪まで新幹線で3時間です。", "zh": "从东京到大阪坐新干线3小时。", "en": "It's 3 hours from Tokyo to Osaka by bullet train." },
+        { "ja": "朝から晩まで勉強しました。", "zh": "从早到晚都在学习。", "en": "I studied from morning to night." }
+      ]
+    },
+    {
+      "id": "n5_02_to",
+      "term": "と",
+      "level": "N5",
+      "lesson": "02",
+      "description": "并列/引用/共同",
+      "meaning_zh": "三大用法：并列（AとB = A和B）、引用（〜と言う = 说"〜"）、一起做（友達と行く = 跟朋友去）。",
+      "meaning_en": "Three uses: listing (AとB = A and B), quotation (〜と言う = say '〜'), together (友達と行く = go with a friend).",
+      "conjugation": "名词 + と + 名词 ／ 〜と言う ／ 人 + と + 動詞",
+      "examples": [
+        { "ja": "犬と猫が好きです。", "zh": "喜欢狗和猫。", "en": "I like dogs and cats." },
+        { "ja": "友達と映画を見ました。", "zh": "和朋友看了电影。", "en": "I watched a movie with a friend." },
+        { "ja": "「おはよう」と言いました。", "zh": "说了"早上好"。", "en": "I said 'good morning.'" }
+      ]
+    }
+  ]
+}
