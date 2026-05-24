@@ -353,6 +353,70 @@ Can be used for both positive and negative situations.
 
 ---
 
+## 6. 〜ばかりに（就因为……导致坏结果）||6. 〜ばかりに (Just because~ [with negative result])
+
+### 接続||Conjugation
+:::zh
+- 動詞普通形 + ばかりに
+- い形容詞普通形 + ばかりに
+- な形容詞な/である + ばかりに
+- 名詞である + ばかりに
+:::
+:::en
+- Verb plain form + ばかりに
+- i-adjective plain form + ばかりに
+- na-adjective な/である + ばかりに
+- Noun である + ばかりに
+:::
+
+### 含義||Meaning
+:::zh
+"就因为……（导致了不好的结果）"。强调只有一个原因，却因此引发了令人遗憾的负面后果。带有后悔、遗憾的语气。
+:::
+:::en
+"Just because… (a bad outcome resulted)" — emphasizes that a single reason led to an unfortunate negative result. Carries a tone of regret or remorse.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 一言余計なことを言った**ばかりに**、彼女に嫌われた。（就因为多说了一句，被她讨厌了。）
+2. お金がない**ばかりに**、留学を諦めた。（就因为没有钱，放弃了留学。）
+3. 嘘をついた**ばかりに**、信用を失った。（就因为说了谎，失去了信用。）
+4. 道を間違えた**ばかりに**、大幅に遅刻してしまった。（就因为走错了路，大幅迟到了。）
+5. 確認しなかった**ばかりに**、大きなミスをしてしまった。（就因为没有确认，犯了大错。）
+:::
+:::en
+1. 一言余計なことを言った**ばかりに**、彼女に嫌われた。(Just because I said one unnecessary thing, she ended up disliking me.)
+2. お金がない**ばかりに**、留学を諦めた。(Just because I didn't have money, I gave up studying abroad.)
+3. 嘘をついた**ばかりに**、信用を失った。(Just because I lied, I lost people's trust.)
+4. 道を間違えた**ばかりに**、大幅に遅刻してしまった。(Just because I took the wrong road, I ended up being very late.)
+5. 確認しなかった**ばかりに**、大きなミスをしてしまった。(Just because I didn't double-check, I made a serious mistake.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| ばかりに | 就因为……（后悔） | 一个原因→坏结果，遗憾语气 |
+| ものだから | 因为……（辩解） | 为自己辩解，不一定后悔 |
+| あまり | 由于过度…… | 强调程度极端 |
+
+> 「嘘をついたばかりに」= 就因为说谎了（后悔）
+> 「嘘をついたものだから」= 因为说谎了嘛（辩解）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| ばかりに | just because (regret) | One cause → bad result; tone of remorse |
+| ものだから | because (excuse) | Justifying oneself; not necessarily regretful |
+| あまり | due to excess | Emphasizes extreme degree |
+
+> 「嘘をついたばかりに」= just because I lied (regretful)
+> 「嘘をついたものだから」= because I lied, you see (justification)
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

@@ -357,6 +357,48 @@ Describes a **third person's** externally displayed feelings or desires. In Japa
 
 ---
 
+## 5. 〜てみる（试着做做看）||5. 〜てみる (Try doing~)
+
+### 接続||Conjugation
+
+:::zh
+動詞て形 + みる
+:::
+
+:::en
+Verb て-form + みる
+:::
+
+### 含義||Meaning
+
+:::zh
+"试着做做看"，表示做某事来看看结果如何。不是"努力尝试"，而是"体验性地做一下"。
+:::
+
+:::en
+"Try doing ~ (and see what happens)" — indicates doing something to see what it's like. Not "attempt" (effort), but "try it out" (experiential).
+:::
+
+### 例句||Example Sentences
+
+:::zh
+1. この料理を食べ**てみて**ください。（请试着吃吃看这道菜。）
+2. 一度日本に行っ**てみたい**。（想试着去一次日本。）
+3. この服を着**てみても**いいですか。（可以试穿一下这件衣服吗？）
+4. 新しいアプリを使っ**てみた**が、あまり便利じゃなかった。（试着用了新的app，不太方便。）
+5. 分からなかったら、先生に聞い**てみよう**。（不明白的话，去问问老师看看。）
+:::
+
+:::en
+1. この料理を食べ**てみて**ください。(Please try eating this dish.)
+2. 一度日本に行っ**てみたい**。(I want to try going to Japan once.)
+3. この服を着**てみても**いいですか。(May I try on this outfit?)
+4. 新しいアプリを使っ**てみた**が、あまり便利じゃなかった。(I tried using the new app, but it wasn't very convenient.)
+5. 分からなかったら、先生に聞い**てみよう**。(If you don't understand, let's try asking the teacher.)
+:::
+
+---
+
 ## 今日练习||Today's Practice
 
 ### A. 〜ても：正确变形||A. 〜ても: Correct Conjugation

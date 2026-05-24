@@ -490,6 +490,82 @@ Expresses a command, but softer than 「〜ろ」. Mainly used in **top-down** s
 
 ---
 
+## 7. 命令形 / 禁止形（命令と禁止）||7. Imperative Form / Prohibitive Form
+
+### 接続||Conjugation
+
+:::zh
+**命令形（做！）：**
+
+| 动词类型 | 规则 | 例 |
+|----------|------|-----|
+| 五段动词（1類） | う段 → え段 | 飲む → 飲**め**、書く → 書**け**、行く → 行**け** |
+| 一段动词（2類） | る → ろ | 食べる → 食べ**ろ**、起きる → 起き**ろ** |
+| カ変（来る） | 来い（**こい**） | — |
+| サ変（する） | **しろ** | — |
+
+**禁止形（不许做！）：**
+- 動詞辞書形 + な
+- 飲む**な**、食べる**な**、来る**な**、する**な**
+:::
+
+:::en
+**Imperative (Do it!):**
+
+| Verb type | Rule | Example |
+|-----------|------|---------|
+| Godan (Group 1) | u-row → e-row | 飲む → 飲**め**, 書く → 書**け**, 行く → 行**け** |
+| Ichidan (Group 2) | る → ろ | 食べる → 食べ**ろ**, 起きる → 起き**ろ** |
+| Ka-irregular (来る) | 来い (**こい**) | — |
+| Sa-irregular (する) | **しろ** | — |
+
+**Prohibitive (Don't do it!):**
+- Verb dictionary form + な
+- 飲む**な**, 食べる**な**, 来る**な**, する**な**
+:::
+
+### 含義||Meaning
+
+:::zh
+命令形：直接命令对方做某事。语气非常强硬、粗鲁。
+禁止形：直接命令对方不许做某事。
+
+**使用场合**：紧急情况、体育加油、漫画/动漫台词、标识（立入禁止 等）。
+**注意**：非常粗鲁/男性化的表达，绝对不能对上级或不熟悉的人使用。
+:::
+
+:::en
+Imperative: Directly orders someone to do something. Very strong and rough in tone.
+Prohibitive: Directly orders someone not to do something.
+
+**Where it's used**: emergencies, sports cheering, manga/anime dialogue, signs (立入禁止 etc.).
+**Caution**: Very rough/masculine — never use toward superiors or people you don't know well.
+:::
+
+### 例句||Example Sentences
+
+:::zh
+1. 早く起き**ろ**！（快起来！）
+2. 走る**な**！（不许跑！）
+3. 頑張**れ**！（加油！→ 体育加油常用）
+4. 諦める**な**！（不要放弃！）
+5. ここに座**れ**。（坐这里。）
+6. 静かにし**ろ**。（给我安静。）
+7. 触る**な**！危ない！（别碰！危险！→ 紧急情况）
+:::
+
+:::en
+1. 早く起き**ろ**！(Get up already!)
+2. 走る**な**！(Don't run!)
+3. 頑張**れ**！(Go for it! → common in sports cheering)
+4. 諦める**な**！(Don't give up!)
+5. ここに座**れ**。(Sit here.)
+6. 静かにし**ろ**。(Be quiet.)
+7. 触る**な**！危ない！(Don't touch! It's dangerous! → emergency)
+:::
+
+---
+
 ## 今日练习||Today's Practice
 
 ### A. と思う vs と思っている — 选择正确形式||A. と思う vs と思っている — Choose the Correct Form

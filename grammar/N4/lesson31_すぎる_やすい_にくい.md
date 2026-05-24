@@ -571,6 +571,54 @@ Verb masu-stem + 出す / 始める / 続ける
 
 ---
 
+## 6. 〜さ（形容詞→名詞化：-ness）||6. 〜さ (Adjective → Noun: -ness)
+
+### 接続||Conjugation
+
+:::zh
+- い形容詞：い → さ（高い → 高**さ** = 高度、深い → 深**さ** = 深度）
+- な形容詞：語幹 + さ（便利 → 便利**さ** = 便利性、大切 → 大切**さ** = 重要性）
+:::
+
+:::en
+- い-adjective: い → さ (高い → 高**さ** = height, 深い → 深**さ** = depth)
+- な-adjective: stem + さ (便利 → 便利**さ** = convenience, 大切 → 大切**さ** = importance)
+:::
+
+### 含義||Meaning
+
+:::zh
+把形容词变成名词，表示"……的程度"。变成名词后可以做主语、宾语，接助词が/を/は/の等。
+
+> **注意**：并非所有形容词都能加「さ」。有些な形容词（如きれい）加さ虽然不算错，但使用频率较低，听起来不太自然。
+:::
+
+:::en
+Turns an adjective into a noun meaning "the degree of ~." As a noun, it can serve as subject or object, taking particles like が/を/は/の.
+
+> **Note**: Not all adjectives naturally take 「さ」. Some な-adjectives (e.g. きれい → きれいさ) are marginal — not strictly wrong but uncommon and can sound unnatural.
+:::
+
+### 例句||Example Sentences
+
+:::zh
+1. このビルの高**さ**は100メートルです。（这栋楼的高度是100米。）
+2. 日本語の難し**さ**を実感した。（真切感受到了日语的难度。）
+3. 便利**さ**と安全**さ**、どちらが大切？（便利性和安全性，哪个更重要？）
+4. この川の深**さ**はどのくらいですか。（这条河的深度有多少？）
+5. 彼の優し**さ**に感動した。（被他的温柔感动了。）
+:::
+
+:::en
+1. このビルの高**さ**は100メートルです。(The height of this building is 100 meters.)
+2. 日本語の難し**さ**を実感した。(I truly felt the difficulty of Japanese.)
+3. 便利**さ**と安全**さ**、どちらが大切？(Convenience and safety — which is more important?)
+4. この川の深**さ**はどのくらいですか。(How deep is this river?)
+5. 彼の優し**さ**に感動した。(I was moved by his kindness.)
+:::
+
+---
+
 ## 今日练习||Today's Practice
 
 ### A. すぎる造句||A. Make sentences with すぎる

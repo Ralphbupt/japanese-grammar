@@ -283,6 +283,62 @@ Only after doing something did one realize or experience something for the first
 
 ---
 
+## 7. 〜に代わって / 〜に代わり（代替~）||7. 〜に代わって / 〜に代わり (In place of~ / Instead of~)
+
+### 接続||Conjugation
+:::zh
+名詞 + に代わって / に代わり
+:::
+:::en
+Noun + に代わって / に代わり
+:::
+
+### 含義||Meaning
+:::zh
+"代替A做某事""取代A"。比「代わりに」更正式，更强调"作为替代者"的角色。
+:::
+:::en
+"In place of A" / "instead of A" — more formal than 「代わりに」, with stronger emphasis on the role of the substitute.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 社長**に代わって**、部長が挨拶した。（代替社长，部长致辞了。）
+2. 手紙**に代わって**、メールが主流になった。（取代书信，电子邮件成为主流了。）
+3. 母**に代わって**料理を作った。（代替母亲做了饭。）
+4. 先生**に代わり**、私が説明いたします。（代替老师，由我来说明。）
+5. 人間**に代わって**、ロボットが作業を行う時代になった。（取代人类，已进入机器人进行作业的时代。）
+:::
+:::en
+1. 社長**に代わって**、部長が挨拶した。(The department head gave the greeting in place of the president.)
+2. 手紙**に代わって**、メールが主流になった。(Email has become mainstream, replacing letters.)
+3. 母**に代わって**料理を作った。(I cooked in place of my mother.)
+4. 先生**に代わり**、私が説明いたします。(I will explain in place of the teacher.)
+5. 人間**に代わって**、ロボットが作業を行う時代になった。(We've entered an era where robots work in place of humans.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| 代わりに | 代替/作为交换 | 日常用法，也可表"交换条件" |
+| に代わって | 代替（正式） | 更正式，强调"替代者"角色 |
+
+- 社長の**代わりに**部長が出席した → 日常
+- 社長**に代わって**部長が出席した → 正式
+:::
+:::en
+| Expression | Meaning | Difference |
+|------------|---------|------------|
+| 代わりに | instead of / in exchange | Everyday usage; can also mean "in exchange" |
+| に代わって | in place of (formal) | More formal; emphasizes the substitute's role |
+
+- 社長の**代わりに**部長が出席した → everyday
+- 社長**に代わって**部長が出席した → formal
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh
