@@ -253,7 +253,7 @@ async function main() {
     <span class="anki-level">${s.level}</span>
     <span class="anki-title"><span class="lang-zh">JLPT ${s.level} 文法卡组</span><span class="lang-en">JLPT ${s.level} Grammar Deck</span></span>
     <span class="anki-count"><span class="lang-zh">${s.count} 张卡</span><span class="lang-en">${s.count} cards</span></span>
-    <a class="anki-dl anki-dl-primary" href="jpnotes-${s.level}.apkg">⬇ <span class="lang-zh">下载 .apkg（推荐 / 手机一键导入）</span><span class="lang-en">Download .apkg (recommended / one-tap import on mobile)</span></a>
+    <a class="anki-dl anki-dl-primary" href="jpnotes-${s.level}.apkg" onclick="return shareApkg(this, 'jpnotes-${s.level}.apkg')">⬇ <span class="lang-zh">下载 .apkg（推荐 / 手机一键导入）</span><span class="lang-en">Download .apkg (recommended / one-tap import on mobile)</span></a>
     <a class="anki-dl anki-dl-alt" href="jpnotes-${s.level}.txt" download><span class="lang-zh">或下载 .txt（TSV 格式）</span><span class="lang-en">or .txt (TSV fallback)</span></a>
   </div>`
     )
@@ -404,6 +404,29 @@ ${cardCellsEn}
   <div id="lang-toggle"><button id="lang-btn">EN</button></div>
 </div>
 <script>
+// Web Share API: share the .apkg file via the system share sheet so
+// AnkiDroid / AnkiMobile appears as a target — avoids the "save to
+// Files / Google Drive" dialog that doesn't offer Anki as an option.
+function shareApkg(link, filename) {
+  // Only intercept on mobile (desktop should just download normally)
+  if (!navigator.share || !navigator.canShare) return true;
+  fetch(link.href)
+    .then(function(r) { return r.blob(); })
+    .then(function(blob) {
+      var file = new File([blob], filename, { type: 'application/octet-stream' });
+      if (!navigator.canShare({ files: [file] })) {
+        window.location.href = link.href;
+        return;
+      }
+      return navigator.share({ files: [file], title: filename });
+    })
+    .catch(function() {
+      // If share fails, fallback to regular download
+      window.location.href = link.href;
+    });
+  return false; // prevent default <a> navigation
+}
+
 (function(){
   var btn = document.getElementById('theme-btn');
   if (btn) {
