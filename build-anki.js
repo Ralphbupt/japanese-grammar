@@ -254,6 +254,7 @@ async function main() {
     <span class="anki-title"><span class="lang-zh">JLPT ${s.level} 文法卡组</span><span class="lang-en">JLPT ${s.level} Grammar Deck</span></span>
     <span class="anki-count"><span class="lang-zh">${s.count} 张卡</span><span class="lang-en">${s.count} cards</span></span>
     <a class="anki-dl anki-dl-primary" href="jpnotes-${s.level}.apkg" onclick="return shareApkg(this, 'jpnotes-${s.level}.apkg')">⬇ <span class="lang-zh">下载 .apkg（推荐 / 手机一键导入）</span><span class="lang-en">Download .apkg (recommended / one-tap import on mobile)</span></a>
+    <button class="anki-dl anki-copy" onclick="copyLink('${SITE}anki/jpnotes-${s.level}.apkg', this)"><span class="lang-zh">📋 复制 .apkg 链接（粘贴到 AnkiDroid "从URL导入"）</span><span class="lang-en">📋 Copy .apkg link (paste into AnkiDroid "Import from URL")</span></button>
     <a class="anki-dl anki-dl-alt" href="jpnotes-${s.level}.txt" download><span class="lang-zh">或下载 .txt（TSV 格式）</span><span class="lang-en">or .txt (TSV fallback)</span></a>
   </div>`
     )
@@ -306,6 +307,9 @@ h2 { font-size: 1.3rem; margin: 2rem 0 1rem; }
 .anki-dl { color: var(--accent); font-size: .85rem; font-weight: 600; text-decoration: none; display: block; margin-top: .4rem; }
 .anki-dl-primary { background: #d6354c; color: #fff; padding: .5rem .8rem; border-radius: 6px; text-align: center; }
 .anki-dl-primary:hover { background: #c2304a; }
+.anki-copy { border: 1px dashed var(--border); background: var(--card-bg); color: var(--muted); padding: .4rem .8rem; border-radius: 6px; cursor: pointer; font-size: .8rem; text-align: center; }
+.anki-copy:hover { border-color: var(--accent); color: var(--accent); }
+.anki-copy.copied { border-color: #4caf50; color: #4caf50; }
 .anki-dl-alt { color: var(--muted); font-weight: 400; font-size: .8rem; }
 .anki-dl-alt:hover { color: var(--accent); }
 ol, ul { padding-left: 1.4rem; }
@@ -401,6 +405,22 @@ ${cardCellsEn}
   <div id="lang-toggle"><button id="lang-btn">EN</button></div>
 </div>
 <script>
+// Copy link to clipboard for "AnkiDroid → Import from URL" flow.
+function copyLink(url, btn) {
+  navigator.clipboard.writeText(url).then(function() {
+    btn.classList.add('copied');
+    var zh = btn.querySelector('.lang-zh');
+    var en = btn.querySelector('.lang-en');
+    if (zh) zh.textContent = '✓ 已复制！打开 AnkiDroid → 导入 → 从URL';
+    if (en) en.textContent = '✓ Copied! Open AnkiDroid → Import → From URL';
+    setTimeout(function() {
+      btn.classList.remove('copied');
+      if (zh) zh.textContent = '📋 复制 .apkg 链接（粘贴到 AnkiDroid "从URL导入"）';
+      if (en) en.textContent = '📋 Copy .apkg link (paste into AnkiDroid "Import from URL")';
+    }, 4000);
+  });
+}
+
 // Web Share API: share the .apkg file via the system share sheet so
 // AnkiDroid / AnkiMobile appears as a target — avoids the "save to
 // Files / Google Drive" dialog that doesn't offer Anki as an option.
