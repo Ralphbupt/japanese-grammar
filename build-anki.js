@@ -12,10 +12,33 @@
 
 const fs = require("fs");
 const path = require("path");
+const KuroshiroMod = require("kuroshiro");
+const Kuroshiro = KuroshiroMod.default || KuroshiroMod;
+const KuromojiMod = require("kuroshiro-analyzer-kuromoji");
+const KuromojiAnalyzer = KuromojiMod.default || KuromojiMod;
 
 const SITE = "https://jpnotes.dev/";
 const OUT_DIR = path.join(__dirname, "dist", "anki");
 const LEVELS = ["N5", "N4", "N3", "N2"];
+
+// Kuroshiro furigana — same engine as build.js so card readings match
+// the website's. Init once, reuse for every example sentence.
+let kuro = null;
+async function initKuroshiro() {
+  kuro = new Kuroshiro();
+  await kuro.init(new KuromojiAnalyzer());
+}
+
+const HAS_KANJI = /[一-龯㐀-䶿]/;
+
+async function withFurigana(text) {
+  if (!text || !HAS_KANJI.test(text)) return text;
+  try {
+    return await kuro.convert(text, { to: "hiragana", mode: "furigana" });
+  } catch {
+    return text;
+  }
+}
 
 // ─── Markdown parsing ───
 
@@ -104,23 +127,26 @@ function escapeHtml(s) {
     .replace(/"/g, "&quot;");
 }
 
-function formatExamples(text) {
+async function formatExamples(text) {
   if (!text) return "";
   const stripped = stripMd(text);
   const lines = stripped.split("\n").filter(l => l.trim());
   if (lines.length === 0) return "";
-  const items = lines
-    .map(line => {
+  const items = await Promise.all(
+    lines.map(async line => {
       const m = line.match(/^\d+[.、．]\s*(.+)$/);
       const content = m ? m[1] : line.replace(/^[\-•・]\s*/, "");
       const splitMatch = content.match(/^([\s\S]+?)[（(]([^）)]+)[）)]\s*$/);
       if (splitMatch) {
-        return `<li>${escapeHtml(splitMatch[1].trim())}<br><span style="color:#888;font-size:.88em;">${escapeHtml(splitMatch[2].trim())}</span></li>`;
+        // Japanese half gets furigana; Chinese parenthetical translation stays plain.
+        const jaWithRuby = await withFurigana(splitMatch[1].trim());
+        return `<li>${jaWithRuby}<br><span style="color:#888;font-size:.88em;">${escapeHtml(splitMatch[2].trim())}</span></li>`;
       }
-      return `<li>${escapeHtml(content)}</li>`;
+      const withRuby = await withFurigana(content);
+      return `<li>${withRuby}</li>`;
     })
-    .join("");
-  return `<ol style="padding-left:1.4em;margin:.4em 0;">${items}</ol>`;
+  );
+  return `<ol style="padding-left:1.4em;margin:.4em 0;">${items.join("")}</ol>`;
 }
 
 function makeFront(term, level, lessonNum) {
@@ -130,7 +156,7 @@ function makeFront(term, level, lessonNum) {
 </div>`;
 }
 
-function makeBack(term, description, meaning, examples, lessonNum, lessonUrl) {
+async function makeBack(term, description, meaning, examples, lessonNum, lessonUrl) {
   const descBlock = description
     ? `<div style="color:#555;font-size:.95em;margin:.2em 0 .6em;">${escapeHtml(description)}</div>`
     : "";
@@ -138,7 +164,7 @@ function makeBack(term, description, meaning, examples, lessonNum, lessonUrl) {
     ? `<div style="margin:.6em 0;">${escapeHtml(stripMd(meaning)).replace(/\n+/g, "<br>")}</div>`
     : "";
   const examplesBlock = examples
-    ? `<div style="font-weight:700;color:#1a1a2e;margin:1em 0 .3em;font-size:.9em;">例句</div>${formatExamples(examples)}`
+    ? `<div style="font-weight:700;color:#1a1a2e;margin:1em 0 .3em;font-size:.9em;">例句</div>${await formatExamples(examples)}`
     : "";
   return `<div style="font-family:-apple-system,sans-serif;line-height:1.7;padding:.5em 1em;">
 <div style="font-size:1.6em;color:#e94560;font-weight:700;">${escapeHtml(term)}</div>
@@ -156,10 +182,17 @@ function tsvField(html) {
 
 // ─── Main ───
 
-function main() {
+async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
+  console.log("Initializing kuroshiro for example-sentence furigana...");
+  await initKuroshiro();
+  console.log("Kuroshiro ready.");
+
   let total = 0;
   const summary = [];
+  // Card cache for the Python .apkg pass — avoids re-parsing markdown
+  // and re-running furigana from a separate language runtime.
+  const cardCache = {};
 
   for (const level of LEVELS) {
     const dir = path.join(__dirname, "grammar", level);
@@ -170,11 +203,6 @@ function main() {
       .sort();
 
     // Anki's import format: comments / headers prefixed with `#`
-    // - #separator:tab        — tab between fields
-    // - #html:true            — fields contain HTML, don't escape
-    // - #deck:Name            — target deck name
-    // - #notetype:Name        — note type
-    // - #columns:Front\tBack  — field names
     const rows = [
       "#separator:tab",
       "#html:true",
@@ -184,6 +212,7 @@ function main() {
     ];
 
     let count = 0;
+    cardCache[level] = [];
     for (const f of files) {
       const md = fs.readFileSync(path.join(dir, f), "utf-8");
       const lessonMatch = f.match(/^lesson(\d+)/);
@@ -192,9 +221,10 @@ function main() {
       const lessonUrl = `${SITE}lesson${lessonNum}/`;
       const sections = parseGrammarSections(md);
       for (const s of sections) {
-        const front = tsvField(makeFront(s.term, level, lessonNum));
-        const back = tsvField(makeBack(s.term, s.description, s.meaning, s.examples, lessonNum, lessonUrl));
-        rows.push(`${front}\t${back}`);
+        const front = makeFront(s.term, level, lessonNum);
+        const back = await makeBack(s.term, s.description, s.meaning, s.examples, lessonNum, lessonUrl);
+        rows.push(`${tsvField(front)}\t${tsvField(back)}`);
+        cardCache[level].push({ front, back });
         count++;
       }
     }
@@ -396,8 +426,20 @@ ${cardCellsEn}
 </html>`;
   fs.writeFileSync(path.join(OUT_DIR, "index.html"), landingHtml, "utf-8");
 
+  // Cache the front/back HTML for build-anki.py to reuse — avoids
+  // running kuroshiro from two language runtimes and guarantees the
+  // .apkg cards have identical content to the .txt cards.
+  fs.writeFileSync(
+    path.join(OUT_DIR, ".cards.json"),
+    JSON.stringify(cardCache),
+    "utf-8"
+  );
+
   console.log(`\nTotal: ${total} cards across ${LEVELS.length} files.`);
   console.log(`Output: ${OUT_DIR}/`);
 }
 
-main();
+main().catch(e => {
+  console.error(e);
+  process.exit(1);
+});
