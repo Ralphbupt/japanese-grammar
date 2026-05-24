@@ -219,12 +219,13 @@ function main() {
     .join("\n");
   const cardCellsEn = summary
     .map(
-      s => `  <a class="anki-card" href="jpnotes-${s.level}.txt" download>
+      s => `  <div class="anki-card">
     <span class="anki-level">${s.level}</span>
     <span class="anki-title"><span class="lang-zh">JLPT ${s.level} 文法卡组</span><span class="lang-en">JLPT ${s.level} Grammar Deck</span></span>
     <span class="anki-count"><span class="lang-zh">${s.count} 张卡</span><span class="lang-en">${s.count} cards</span></span>
-    <span class="anki-dl">⬇ jpnotes-${s.level}.txt</span>
-  </a>`
+    <a class="anki-dl anki-dl-primary" href="jpnotes-${s.level}.apkg" download>⬇ <span class="lang-zh">下载 .apkg（推荐 / 手机一键导入）</span><span class="lang-en">Download .apkg (recommended / one-tap import on mobile)</span></a>
+    <a class="anki-dl anki-dl-alt" href="jpnotes-${s.level}.txt" download><span class="lang-zh">或下载 .txt（TSV 格式）</span><span class="lang-en">or .txt (TSV fallback)</span></a>
+  </div>`
     )
     .join("\n");
   const landingHtml = `<!DOCTYPE html>
@@ -272,7 +273,11 @@ h2 { font-size: 1.3rem; margin: 2rem 0 1rem; }
 .anki-level { display: inline-block; padding: .2rem .65rem; background: #d6354c; color: #fff; font-size: .82rem; font-weight: 700; border-radius: 4px; align-self: flex-start; margin-bottom: .8rem; }
 .anki-title { font-size: 1.1rem; font-weight: 600; margin-bottom: .3rem; }
 .anki-count { color: var(--muted); font-size: .9rem; margin-bottom: .6rem; }
-.anki-dl { color: var(--accent); font-size: .85rem; font-weight: 600; }
+.anki-dl { color: var(--accent); font-size: .85rem; font-weight: 600; text-decoration: none; display: block; margin-top: .4rem; }
+.anki-dl-primary { background: #d6354c; color: #fff; padding: .5rem .8rem; border-radius: 6px; text-align: center; }
+.anki-dl-primary:hover { background: #c2304a; }
+.anki-dl-alt { color: var(--muted); font-weight: 400; font-size: .8rem; }
+.anki-dl-alt:hover { color: var(--accent); }
 ol, ul { padding-left: 1.4rem; }
 ol li, ul li { margin: .5rem 0; }
 code { background: var(--card-bg); border: 1px solid var(--border); padding: .1rem .35rem; border-radius: 3px; font-size: .9em; }
@@ -308,24 +313,29 @@ body.lang-en div.lang-en, body.lang-en p.lang-en, body.lang-en li.lang-en, body.
 ${cardCellsEn}
   </div>
 
-  <h2><span class="lang-zh">手机端怎么导入（最简流程）</span><span class="lang-en">Mobile: how to import (easiest path)</span></h2>
+  <h2><span class="lang-zh">手机直接导入（最快）</span><span class="lang-en">Mobile direct import (fastest)</span></h2>
   <ol>
-    <li><span class="lang-zh">先在桌面 Anki <code>File → Import</code> 导入 <code>.txt</code> 文件</span><span class="lang-en">First import the <code>.txt</code> on desktop Anki: <code>File → Import</code></span></li>
-    <li><span class="lang-zh">桌面 Anki 顶部点 <code>Sync</code>，注册免费的 <a href="https://ankiweb.net/">AnkiWeb</a> 账号</span><span class="lang-en">Click <code>Sync</code> in desktop Anki and create a free <a href="https://ankiweb.net/">AnkiWeb</a> account</span></li>
-    <li><span class="lang-zh">手机装 <strong>AnkiDroid</strong>（Android，免费）或 <strong>AnkiMobile</strong>（iOS，付费）</span><span class="lang-en">Install <strong>AnkiDroid</strong> (Android, free) or <strong>AnkiMobile</strong> (iOS, paid)</span></li>
-    <li><span class="lang-zh">手机端登录同一 AnkiWeb 账号 → Sync → 自动同步全部卡组</span><span class="lang-en">Log in with the same AnkiWeb account on mobile → Sync → all decks appear automatically</span></li>
+    <li><span class="lang-zh">手机浏览器访问本页，点对应级别的红色 <strong>下载 .apkg</strong> 按钮</span><span class="lang-en">Open this page in your phone browser, tap the red <strong>Download .apkg</strong> button for the level you want</span></li>
+    <li><span class="lang-zh"><strong>iOS</strong>：弹出"在 Anki 中打开" → 点 Anki → 一键导入完成<br><strong>Android</strong>：弹出"用 AnkiDroid 打开" → 点 AnkiDroid → 确认导入</span><span class="lang-en"><strong>iOS</strong>: tap "Open in Anki" → AnkiMobile imports automatically<br><strong>Android</strong>: tap "Open with AnkiDroid" → confirm import</span></li>
+    <li><span class="lang-zh">卡组叫 <code>日语语法 N5 · jpnotes.dev</code>，可以直接开始刷</span><span class="lang-en">Deck is named <code>日语语法 N5 · jpnotes.dev</code> — ready to study</span></li>
   </ol>
-  <p class="lang-zh"><strong>这是 Anki 标准用法</strong>——桌面是源，手机是消费端。一次设置永久同步。</p>
-  <p class="lang-en"><strong>This is the canonical Anki workflow</strong> — desktop is the source, mobile is the reader. Configure once and sync forever.</p>
+  <p>
+    <span class="lang-zh"><strong>需要 Anki app</strong>：<a href="https://apps.apple.com/app/ankimobile-flashcards/id373493387">AnkiMobile</a>（iOS，付费）或 <a href="https://play.google.com/store/apps/details?id=com.ichi2.anki">AnkiDroid</a>（Android，免费）。</span>
+    <span class="lang-en"><strong>You'll need an Anki app</strong>: <a href="https://apps.apple.com/app/ankimobile-flashcards/id373493387">AnkiMobile</a> (iOS, paid) or <a href="https://play.google.com/store/apps/details?id=com.ichi2.anki">AnkiDroid</a> (Android, free).</span>
+  </p>
 
-  <h2><span class="lang-zh">桌面 Anki 直接导入</span><span class="lang-en">Desktop Anki direct import</span></h2>
+  <h2><span class="lang-zh">桌面 + 跨设备同步（推荐长期用）</span><span class="lang-en">Desktop + cross-device sync (best for long-term)</span></h2>
   <ol>
-    <li><span class="lang-zh">下载上面对应级别的 <code>.txt</code> 文件</span><span class="lang-en">Download the <code>.txt</code> file for the level you want</span></li>
-    <li><span class="lang-zh">打开 Anki 桌面版 → <code>File → Import</code></span><span class="lang-en">Open desktop Anki → <code>File → Import</code></span></li>
-    <li><span class="lang-zh">导入对话框确认 <strong>Type</strong> = <code>Basic</code>、<strong>Field 1</strong> → Front、<strong>Field 2</strong> → Back</span><span class="lang-en">In the import dialog confirm <strong>Type</strong> = <code>Basic</code>, <strong>Field 1</strong> → Front, <strong>Field 2</strong> → Back</span></li>
-    <li><span class="lang-zh">勾选 <strong>"Allow HTML in fields"</strong></span><span class="lang-en">Tick <strong>"Allow HTML in fields"</strong></span></li>
-    <li><span class="lang-zh">Import 完成，卡组自动叫 <code>日语语法 N5 · jpnotes.dev</code></span><span class="lang-en">Click Import — the deck is named <code>日语语法 N5 · jpnotes.dev</code> automatically</span></li>
+    <li><span class="lang-zh">桌面 Anki <code>File → Import</code> 选 <code>.apkg</code></span><span class="lang-en">Desktop Anki: <code>File → Import</code> → select the <code>.apkg</code></span></li>
+    <li><span class="lang-zh">桌面 Anki 顶部点 <code>Sync</code>，注册免费的 <a href="https://ankiweb.net/">AnkiWeb</a> 账号</span><span class="lang-en">Click <code>Sync</code> in desktop Anki and create a free <a href="https://ankiweb.net/">AnkiWeb</a> account</span></li>
+    <li><span class="lang-zh">手机端登录同一 AnkiWeb 账号 → Sync → 自动同步全部卡组 + 复习进度</span><span class="lang-en">Log in with the same AnkiWeb account on mobile → Sync → decks and review progress sync automatically</span></li>
   </ol>
+
+  <h2><span class="lang-zh">.txt 备选格式（无 Anki app 时用）</span><span class="lang-en">.txt fallback (when you can't run the .apkg)</span></h2>
+  <p>
+    <span class="lang-zh">每张卡片的 TSV 文件。Anki 桌面 <code>File → Import</code> 也支持，但需要手动选 Type=Basic、Field 映射、勾选 Allow HTML。</span>
+    <span class="lang-en">TSV file with the same cards. Anki Desktop <code>File → Import</code> supports it, but you'll need to set Type=Basic, map fields, and check Allow HTML manually.</span>
+  </p>
 
   <div class="note">
     <p class="lang-zh"><strong>提示</strong>：所有内容来自 <a href="${SITE}">jpnotes.dev</a>，CC BY 4.0 许可。可以自由分享、改编、用于教学，但请标注来源。卡组每周可能更新，回这里看更新日期。</p>
