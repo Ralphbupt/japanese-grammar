@@ -344,21 +344,18 @@ ${cardCellsEn}
   </div>
 
   <h2><span class="lang-zh">手机导入（2 步）</span><span class="lang-en">Mobile import (2 steps)</span></h2>
-  <ol>
-    <li><span class="lang-zh">点红色 <strong>下载 .apkg</strong> 按钮 → 文件保存到手机"下载"文件夹</span><span class="lang-en">Tap the red <strong>Download .apkg</strong> button → file saves to your phone's Downloads</span></li>
-    <li>
-      <span class="lang-zh">
-        <strong>Android</strong>：浏览器底部弹下载完成提示 → 点 "打开" → 选 AnkiDroid → 导入完成<br>
-        <em>如果没弹提示：打开文件管理器 → 下载 → 找到 jpnotes-XX.apkg → 点击 → 选 AnkiDroid</em><br>
-        <strong>iOS</strong>：Safari 右上角 ↓ 下载图标 → 点刚下好的 .apkg → 右上角分享 → "拷贝到 Anki"
-      </span>
-      <span class="lang-en">
-        <strong>Android</strong>: Chrome shows download notification → tap "Open" → pick AnkiDroid → done<br>
-        <em>If no notification: open Files → Downloads → tap jpnotes-XX.apkg → pick AnkiDroid</em><br>
-        <strong>iOS</strong>: Safari ↓ icon (top-right) → tap the .apkg → Share → "Copy to Anki"
-      </span>
-    </li>
-  </ol>
+  <div class="note">
+    <p class="lang-zh"><strong>第 1 步</strong>：点红色 <strong>下载 .apkg</strong> 按钮 → 弹出"保存到哪"对话框 → 选 <strong>文件极客</strong>（Google Files）/ 本地存储（不要选云端硬盘）→ 文件保存到手机下载文件夹。</p>
+    <p class="lang-en"><strong>Step 1</strong>: Tap the red <strong>Download .apkg</strong> button → save dialog appears → choose <strong>Files</strong> (Google Files) / local storage (not Google Drive) → file saves to phone's Downloads.</p>
+  </div>
+  <div class="note">
+    <p class="lang-zh"><strong>第 2 步</strong>：打开手机的<strong>文件管理器</strong>（Files / 文件极客 / 我的文件）→ 找到"下载"文件夹 → 点击 <code>jpnotes-XX.apkg</code> → 系统弹出"<strong>用什么打开</strong>" → 选 <strong>AnkiDroid</strong> → 自动导入完成。</p>
+    <p class="lang-en"><strong>Step 2</strong>: Open your phone's <strong>file manager</strong> (Files / My Files) → navigate to Downloads → tap <code>jpnotes-XX.apkg</code> → system asks "<strong>Open with…</strong>" → pick <strong>AnkiDroid</strong> → imported.</p>
+  </div>
+  <p>
+    <span class="lang-zh"><strong>⚠️ 为什么需要 2 步</strong>：手机浏览器出于安全策略，不能直接把下载的文件交给 AnkiDroid。必须先保存到本地，再从文件管理器打开。这是 <strong>所有 Anki 卡组</strong>（包括 AnkiWeb 共享卡组）的标准导入流程。</span>
+    <span class="lang-en"><strong>⚠️ Why 2 steps</strong>: Mobile browsers can't hand downloaded files directly to AnkiDroid (security policy). You must save first, then open from the file manager. This is the standard import flow for <strong>all Anki decks</strong>, including AnkiWeb shared decks.</span>
+  </p>
   <p>
     <span class="lang-zh"><strong>需要 Anki app</strong>：<a href="https://apps.apple.com/app/ankimobile-flashcards/id373493387">AnkiMobile</a>（iOS，付费）或 <a href="https://play.google.com/store/apps/details?id=com.ichi2.anki">AnkiDroid</a>（Android，免费）。</span>
     <span class="lang-en"><strong>You'll need an Anki app</strong>: <a href="https://apps.apple.com/app/ankimobile-flashcards/id373493387">AnkiMobile</a> (iOS, paid) or <a href="https://play.google.com/store/apps/details?id=com.ichi2.anki">AnkiDroid</a> (Android, free).</span>
