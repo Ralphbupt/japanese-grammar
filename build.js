@@ -983,45 +983,69 @@ async function main() {
     }
   }
   const homeMainHtml = `<header class="home-hero">
-    <h1>日语语法笔记 — N5 到 N2，8 周完整体系</h1>
-    <p class="home-intro">免费、双语（中文 + 日语）的日语语法笔记，从 N5 入门到 N2 进阶共 <strong>${totalLessons} 课、${totalPoints}+ 语法点</strong>，每课配接续规则、例句、辨析、练习题与间隔复习勾选清单。</p>
+    <h1><span class="lang-zh">日语语法笔记 — N5 到 N2，8 周完整体系</span><span class="lang-en">Japanese Grammar Notes — JLPT N5 to N2 in 8 Weeks</span></h1>
+    <p class="home-intro">
+      <span class="lang-zh">免费、双语（中文 + 日语）的日语语法笔记，从 N5 入门到 N2 进阶共 <strong>${totalLessons} 课、${totalPoints}+ 语法点</strong>，每课配接续规则、例句、辨析、练习题与间隔复习勾选清单。</span>
+      <span class="lang-en">Free, bilingual (Chinese + Japanese) grammar notes covering JLPT N5 → N2 in <strong>${totalLessons} lessons, ${totalPoints}+ grammar points</strong>. Each lesson has conjugation rules, example sentences, side-by-side comparisons of confusable patterns, practice questions, and a spaced-repetition checklist.</span>
+    </p>
     <div class="home-stats">
-      <div class="home-stat"><strong>${totalLessons}</strong><span>课</span></div>
-      <div class="home-stat"><strong>${totalPoints}+</strong><span>语法点</span></div>
-      <div class="home-stat"><strong>4</strong><span>JLPT 级别</span></div>
-      <div class="home-stat"><strong>免费</strong><span>双语</span></div>
+      <div class="home-stat"><strong>${totalLessons}</strong><span class="lang-zh">课</span><span class="lang-en">lessons</span></div>
+      <div class="home-stat"><strong>${totalPoints}+</strong><span class="lang-zh">语法点</span><span class="lang-en">grammar points</span></div>
+      <div class="home-stat"><strong>4</strong><span class="lang-zh">JLPT 级别</span><span class="lang-en">JLPT levels</span></div>
+      <div class="home-stat"><strong><span class="lang-zh">免费</span><span class="lang-en">Free</span></strong><span class="lang-zh">双语</span><span class="lang-en">bilingual</span></div>
     </div>
   </header>
   <section class="home-levels">
-    <h2>按级别学习</h2>
+    <h2><span class="lang-zh">按级别学习</span><span class="lang-en">Browse by JLPT level</span></h2>
     <div class="level-grid">
       <a class="level-card" href="N5/">
         <span class="level-tag">N5</span>
-        <h3>入门基础</h3>
-        <p>判断句、助词、动词分类、て形、ない形、た形、形容词、条件、可能/受身。共 ${levelCounts.N5} 课。</p>
+        <h3><span class="lang-zh">入门基础</span><span class="lang-en">Beginner foundations</span></h3>
+        <p>
+          <span class="lang-zh">判断句、助词、动词分类、て形、ない形、た形、形容词、条件、可能/受身。共 ${levelCounts.N5} 课。</span>
+          <span class="lang-en">Copula sentences, particles, verb groups, て-form, ない-form, た-form, adjectives, conditionals, potential/passive. ${levelCounts.N5} lessons.</span>
+        </p>
       </a>
       <a class="level-card" href="N4/">
         <span class="level-tag">N4</span>
-        <h3>日常进阶</h3>
-        <p>使役、受身、授受表现、ように系列、ことにする/なる、わけだ/ものだ 等核心日常语法。共 ${levelCounts.N4} 课。</p>
+        <h3><span class="lang-zh">日常进阶</span><span class="lang-en">Everyday intermediate</span></h3>
+        <p>
+          <span class="lang-zh">使役、受身、授受表现、ように系列、ことにする/なる、わけだ/ものだ 等核心日常语法。共 ${levelCounts.N4} 课。</span>
+          <span class="lang-en">Causative, passive, giving/receiving, ように patterns, ことにする/なる, わけだ/ものだ, and other daily-use grammar. ${levelCounts.N4} lessons.</span>
+        </p>
       </a>
       <a class="level-card" href="N3/">
         <span class="level-tag">N3</span>
-        <h3>书面分水岭</h3>
-        <p>书面助词、原因理由、逆接让步、程度范围、状态样态、否定与复合表达。共 ${levelCounts.N3} 课。</p>
+        <h3><span class="lang-zh">书面分水岭</span><span class="lang-en">Written-Japanese watershed</span></h3>
+        <p>
+          <span class="lang-zh">书面助词、原因理由、逆接让步、程度范围、状态样态、否定与复合表达。共 ${levelCounts.N3} 课。</span>
+          <span class="lang-en">Formal particles, cause/reason, concession, degree/range, state/appearance, negation, and compound expressions. ${levelCounts.N3} lessons.</span>
+        </p>
       </a>
       <a class="level-card" href="N2/">
         <span class="level-tag">N2</span>
-        <h3>商务・学术</h3>
-        <p>高阶逆接、程度限定、判断主张、对比关系、感情表达、书面专用语法。共 ${levelCounts.N2} 课。</p>
+        <h3><span class="lang-zh">商务・学术</span><span class="lang-en">Business · academic</span></h3>
+        <p>
+          <span class="lang-zh">高阶逆接、程度限定、判断主张、对比关系、感情表达、书面专用语法。共 ${levelCounts.N2} 课。</span>
+          <span class="lang-en">Advanced concession, degree/limit, assertion, contrast, emotional expressions, and written-only grammar. ${levelCounts.N2} lessons.</span>
+        </p>
       </a>
     </div>
   </section>
   <section class="home-howto">
-    <h2>使用方法</h2>
-    <p>每节课包含 <strong>接续 / 含义 / 例句 / 辨析 / 易错点</strong> 五个部分，配套练习题与按间隔复习的勾选清单（当天 → 1 天 → 4 天 → 7 天 → 14 天 → 30 天）。</p>
-    <p>从级别概览页（<a href="N5/">N5</a> · <a href="N4/">N4</a> · <a href="N3/">N3</a> · <a href="N2/">N2</a>）查看完整语法清单，或从侧栏直接进入任意一课。</p>
-    <p>用 Anki 复习？下载 <a href="anki/">免费 JLPT N5-N2 文法卡组</a>（共 372 张，原生 TSV 一键导入）。</p>
+    <h2><span class="lang-zh">使用方法</span><span class="lang-en">How to use</span></h2>
+    <p>
+      <span class="lang-zh">每节课包含 <strong>接续 / 含义 / 例句 / 辨析 / 易错点</strong> 五个部分，配套练习题与按间隔复习的勾选清单（当天 → 1 天 → 4 天 → 7 天 → 14 天 → 30 天）。</span>
+      <span class="lang-en">Each lesson covers <strong>conjugation / meaning / examples / comparisons / common mistakes</strong>, plus practice questions and a spaced-repetition checklist (day 0 → 1 → 4 → 7 → 14 → 30).</span>
+    </p>
+    <p>
+      <span class="lang-zh">从级别概览页（<a href="N5/">N5</a> · <a href="N4/">N4</a> · <a href="N3/">N3</a> · <a href="N2/">N2</a>）查看完整语法清单，或从侧栏直接进入任意一课。</span>
+      <span class="lang-en">Browse the per-level index pages (<a href="N5/">N5</a> · <a href="N4/">N4</a> · <a href="N3/">N3</a> · <a href="N2/">N2</a>) for the full grammar list, or jump to any lesson via the sidebar.</span>
+    </p>
+    <p>
+      <span class="lang-zh">用 Anki 复习？下载 <a href="anki/">免费 JLPT N5-N2 文法卡组</a>（共 372 张，原生 TSV 一键导入）。</span>
+      <span class="lang-en">Use Anki for review? Download the <a href="anki/">free JLPT N5–N2 grammar decks</a> (372 cards, native TSV one-click import).</span>
+    </p>
   </section>`;
 
   // ─── Assemble ───
