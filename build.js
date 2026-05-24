@@ -90,25 +90,53 @@ const THEME_TOGGLE_JS = `(function(){
 // aloud via the browser's built-in speech synthesis (Web Speech API).
 // Chinese translations in parens are stripped before speaking.
 const TTS_JS = `document.addEventListener('DOMContentLoaded', function(){
-  if (!window.speechSynthesis) return;
-  function speakJa(text) {
-    speechSynthesis.cancel();
-    // Strip Chinese in parens and non-speech chars
-    var clean = text
+  // Audio manifest (lazy-loaded on first 🔊 click)
+  var audioMap = null;
+  function loadAudioMap(cb) {
+    if (audioMap) { cb(); return; }
+    fetch('/audio/manifest.json')
+      .then(function(r) { return r.json(); })
+      .then(function(m) { audioMap = m; cb(); })
+      .catch(function() { audioMap = {}; cb(); });
+  }
+
+  function getCleanJapanese(el) {
+    var clone = el.cloneNode(true);
+    clone.querySelectorAll('rt, rp, .speak-btn').forEach(function(r) { r.remove(); });
+    return (clone.textContent || '')
       .replace(/[（(][^）)]*[）)]/g, '')
       .replace(/[→❌✓✗⚠️📖↑↓←→●■□▶︎•·…]/g, '')
       .replace(/\\s+/g, ' ')
       .trim();
-    if (!clean) return;
-    var u = new SpeechSynthesisUtterance(clean);
+  }
+
+  function speakBrowserTTS(text) {
+    if (!window.speechSynthesis) return;
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
     u.lang = 'ja-JP';
     u.rate = 0.85;
     speechSynthesis.speak(u);
   }
-  // Inject 🔊 button into data-ja <li> and data-ja <p> that look like examples
+
+  function playAudio(el) {
+    var clean = getCleanJapanese(el);
+    if (!clean) return;
+    loadAudioMap(function() {
+      var file = audioMap[clean];
+      if (file) {
+        var audio = new Audio('/audio/' + file);
+        audio.onerror = function() { speakBrowserTTS(clean); };
+        audio.play().catch(function() { speakBrowserTTS(clean); });
+      } else {
+        speakBrowserTTS(clean);
+      }
+    });
+  }
+
+  // Inject 🔊 button into data-ja <li> and <p> that look like examples
   document.querySelectorAll('[data-ja]').forEach(function(el) {
     if (el.tagName !== 'LI' && el.tagName !== 'P') return;
-    // Skip very short elements (not real sentences) and word-table cells
     var text = el.textContent || '';
     if (text.length < 6) return;
     if (el.closest('.word-table')) return;
@@ -120,12 +148,7 @@ const TTS_JS = `document.addEventListener('DOMContentLoaded', function(){
     btn.addEventListener('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
-      // Get text, strip ruby <rt> (TTS engine handles kanji pronunciation)
-      var clone = el.cloneNode(true);
-      clone.querySelectorAll('rt, rp').forEach(function(r) { r.remove(); });
-      // Also remove the speak button text itself
-      clone.querySelectorAll('.speak-btn').forEach(function(b) { b.remove(); });
-      speakJa(clone.textContent);
+      playAudio(el);
     });
     el.style.position = 'relative';
     el.appendChild(btn);
