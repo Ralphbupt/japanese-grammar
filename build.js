@@ -109,35 +109,20 @@ const TTS_JS = `document.addEventListener('DOMContentLoaded', function(){
     speechSynthesis.speak(u);
   }
 
-  function playAudio(el) {
-    // data-audio is set at build time by matching the element's cleaned
-    // Japanese text against audio/manifest.json. Only elements with a
-    // matching pre-generated .mp3 have this attribute.
+  // Inject 🔊 button ONLY on sentences with pre-generated Edge TTS audio.
+  // No browser TTS fallback — quality is too poor to show.
+  document.querySelectorAll('li[data-audio]').forEach(function(el) {
     var audioId = el.getAttribute('data-audio');
-    if (audioId) {
-      var audio = new Audio('/audio/' + audioId + '.mp3');
-      audio.onerror = function() { speakBrowserTTS(getCleanJapanese(el)); };
-      audio.play().catch(function() { speakBrowserTTS(getCleanJapanese(el)); });
-    } else {
-      // No pre-generated audio → fall back to browser TTS
-      speakBrowserTTS(getCleanJapanese(el));
-    }
-  }
-
-  // Inject 🔊 button into data-ja <li> that look like example sentences
-  document.querySelectorAll('li[data-ja]').forEach(function(el) {
-    var text = el.textContent || '';
-    if (text.length < 8) return;
-    if (el.closest('.word-table')) return;
     var btn = document.createElement('button');
     btn.className = 'speak-btn';
     btn.textContent = '🔊';
-    btn.title = el.hasAttribute('data-audio') ? '高品質音声で朗読' : '朗読 (ブラウザTTS)';
+    btn.title = '朗読';
     btn.setAttribute('aria-label', 'Read aloud');
     btn.addEventListener('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
-      playAudio(el);
+      var audio = new Audio('/audio/' + audioId + '.mp3');
+      audio.play();
     });
     el.appendChild(btn);
   });
