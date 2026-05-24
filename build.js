@@ -89,7 +89,7 @@ const THEME_TOGGLE_JS = `(function(){
 // button to every data-ja <li> element. Click reads the Japanese text
 // aloud via the browser's built-in speech synthesis (Web Speech API).
 // Chinese translations in parens are stripped before speaking.
-const TTS_JS = `(function(){
+const TTS_JS = `document.addEventListener('DOMContentLoaded', function(){
   if (!window.speechSynthesis) return;
   function speakJa(text) {
     speechSynthesis.cancel();
@@ -130,7 +130,7 @@ const TTS_JS = `(function(){
     el.style.position = 'relative';
     el.appendChild(btn);
   });
-})();`;
+});`;
 
 // Deferred Google Analytics loader — fires 1.5s after the load event,
 // and bails out entirely for headless browsers / crawlers / Lighthouse
