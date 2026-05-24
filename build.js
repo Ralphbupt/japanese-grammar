@@ -1021,6 +1021,7 @@ async function main() {
     <h2>使用方法</h2>
     <p>每节课包含 <strong>接续 / 含义 / 例句 / 辨析 / 易错点</strong> 五个部分，配套练习题与按间隔复习的勾选清单（当天 → 1 天 → 4 天 → 7 天 → 14 天 → 30 天）。</p>
     <p>从级别概览页（<a href="N5/">N5</a> · <a href="N4/">N4</a> · <a href="N3/">N3</a> · <a href="N2/">N2</a>）查看完整语法清单，或从侧栏直接进入任意一课。</p>
+    <p>用 Anki 复习？下载 <a href="anki/">免费 JLPT N5-N2 文法卡组</a>（共 372 张，原生 TSV 一键导入）。</p>
   </section>`;
 
   // ─── Assemble ───
@@ -1716,6 +1717,13 @@ ${THEME_TOGGLE_JS}
     <priority>0.5</priority>
   </url>`);
   }
+  // Anki landing page (downloadable flashcards)
+  sitemapUrls.push(`  <url>
+    <loc>${SITE}anki/</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>`);
   // Level overview pages (high priority — major landing pages)
   for (const level of levelPageIds) {
     sitemapUrls.push(`  <url>
