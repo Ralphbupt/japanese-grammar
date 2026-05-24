@@ -867,27 +867,25 @@ async function main() {
       console.log(`  Processing ${file.id}...`);
       html = await addFurigana(kuro, html);
 
-      // Tag example sentences with sequential audio IDs: l{NN}.{NNN}
-      // Only <li data-ja> inside <ol> with sentence-ending punctuation.
+      // Tag ALL <li data-ja> with audio IDs (not just inside <ol>).
+      // Covers numbered examples, bullet examples, and unnumbered lists.
       let audioSeq = 0;
-      html = html.replace(/<ol>([\s\S]*?)<\/ol>/g, (olMatch, olContent) => {
-        const newOl = olContent.replace(/<li data-ja([^>]*)>([\s\S]*?)<\/li>/g, (match, attrs, content) => {
-          const plain = content
-            .replace(/<ruby>([^<]*)<rp>[^<]*<\/rp><rt>[^<]*<\/rt><rp>[^<]*<\/rp><\/ruby>/g, "$1")
-            .replace(/<[^>]+>/g, "")
-            .replace(/[（(][^）)]*[）)]/g, "")
-            .replace(/[→❌✓✗⚠️📖↑↓←→●■□▶︎•·…]/g, "")
-            .replace(/\s+/g, " ")
-            .trim();
-          if (plain.length < 10 || !/[。！？]/.test(plain)) return match;
-          if (!/[぀-ゟ゠-ヿ]/.test(plain)) return match;
-          audioSeq++;
-          const lnum = (file.id.match(/\d+/) || ["0"])[0];
-          const audioId = `l${lnum}.${String(audioSeq).padStart(3, "0")}`;
-          audioRequests.push({ id: audioId, text: plain });
-          return `<li data-ja${attrs} data-audio="${audioId}">${content}</li>`;
-        });
-        return `<ol>${newOl}</ol>`;
+      const lnum = (file.id.match(/\d+/) || ["0"])[0];
+      html = html.replace(/<li data-ja([^>]*)>([\s\S]*?)<\/li>/g, (match, attrs, content) => {
+        if (/word-table/.test(attrs)) return match;
+        const plain = content
+          .replace(/<ruby>([^<]*)<rp>[^<]*<\/rp><rt>[^<]*<\/rt><rp>[^<]*<\/rp><\/ruby>/g, "$1")
+          .replace(/<[^>]+>/g, "")
+          .replace(/[（(][^）)]*[）)]/g, "")
+          .replace(/[→❌✓✗⚠️📖↑↓←→●■□▶︎•·…]/g, "")
+          .replace(/\s+/g, " ")
+          .trim();
+        if (plain.length < 10 || !/[。！？]/.test(plain)) return match;
+        if (!/[぀-ゟ゠-ヿ]/.test(plain)) return match;
+        audioSeq++;
+        const audioId = `l${lnum}.${String(audioSeq).padStart(3, "0")}`;
+        audioRequests.push({ id: audioId, text: plain });
+        return `<li data-ja${attrs} data-audio="${audioId}">${content}</li>`;
       });
 
       const lessonMatch = file.id.match(/^lesson(\d+)/);
