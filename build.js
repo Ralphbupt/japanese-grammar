@@ -85,6 +85,53 @@ const THEME_TOGGLE_JS = `(function(){
   });
 })();`;
 
+// TTS (Text-to-Speech) for Japanese example sentences. Adds a small 🔊
+// button to every data-ja <li> element. Click reads the Japanese text
+// aloud via the browser's built-in speech synthesis (Web Speech API).
+// Chinese translations in parens are stripped before speaking.
+const TTS_JS = `(function(){
+  if (!window.speechSynthesis) return;
+  function speakJa(text) {
+    speechSynthesis.cancel();
+    // Strip Chinese in parens and non-speech chars
+    var clean = text
+      .replace(/[（(][^）)]*[）)]/g, '')
+      .replace(/[→❌✓✗⚠️📖↑↓←→●■□▶︎•·…]/g, '')
+      .replace(/\\s+/g, ' ')
+      .trim();
+    if (!clean) return;
+    var u = new SpeechSynthesisUtterance(clean);
+    u.lang = 'ja-JP';
+    u.rate = 0.85;
+    speechSynthesis.speak(u);
+  }
+  // Inject 🔊 button into data-ja <li> and data-ja <p> that look like examples
+  document.querySelectorAll('[data-ja]').forEach(function(el) {
+    if (el.tagName !== 'LI' && el.tagName !== 'P') return;
+    // Skip very short elements (not real sentences) and word-table cells
+    var text = el.textContent || '';
+    if (text.length < 6) return;
+    if (el.closest('.word-table')) return;
+    var btn = document.createElement('button');
+    btn.className = 'speak-btn';
+    btn.textContent = '🔊';
+    btn.title = '朗読 / Read aloud';
+    btn.setAttribute('aria-label', 'Read aloud');
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      // Get text, strip ruby <rt> (TTS engine handles kanji pronunciation)
+      var clone = el.cloneNode(true);
+      clone.querySelectorAll('rt, rp').forEach(function(r) { r.remove(); });
+      // Also remove the speak button text itself
+      clone.querySelectorAll('.speak-btn').forEach(function(b) { b.remove(); });
+      speakJa(clone.textContent);
+    });
+    el.style.position = 'relative';
+    el.appendChild(btn);
+  });
+})();`;
+
 // Deferred Google Analytics loader — fires 1.5s after the load event,
 // and bails out entirely for headless browsers / crawlers / Lighthouse
 // runs (so they don't pollute GA's "new users" count with fake sessions).
@@ -966,6 +1013,7 @@ async function main() {
   // clientHeight = 0 if measured before the first layout pass).
   requestAnimationFrame(centerItem);
 })();
+${TTS_JS}
 </script>`;
 
   // ─── Home page main content ───
@@ -2200,6 +2248,24 @@ pre code { background: none; padding: 0; }
   margin: -.6rem 0 1.2rem;
 }
 .lesson-meta time { color: #555; }
+
+/* TTS speak button on example sentences */
+.speak-btn {
+  display: inline-block;
+  background: none; border: 1px solid var(--border);
+  border-radius: 50%; width: 1.6em; height: 1.6em;
+  font-size: .75rem; line-height: 1.5em;
+  cursor: pointer; margin-left: .4em;
+  vertical-align: middle; padding: 0;
+  opacity: .5; transition: opacity .2s, border-color .2s;
+}
+.speak-btn:hover { opacity: 1; border-color: var(--accent); }
+@media (prefers-color-scheme: dark) {
+  :root:not(.theme-light) .speak-btn { border-color: #3a3a55; }
+  :root:not(.theme-light) .speak-btn:hover { border-color: var(--accent); }
+}
+html.theme-dark .speak-btn { border-color: #3a3a55; }
+html.theme-dark .speak-btn:hover { border-color: var(--accent); }
 
 /* Cross-links */
 .related-grammar {
