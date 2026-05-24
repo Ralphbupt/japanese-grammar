@@ -31,11 +31,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - run: pip install genanki edge-tts
+      - run: pip install genanki
 
       - run: npm ci
       - run: npm run build
-      - run: python build-audio.py
+      - run: cp -r audio dist/audio
       - run: python build-anki.py
 
       - uses: actions/upload-pages-artifact@v3
