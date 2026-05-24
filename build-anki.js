@@ -221,6 +221,12 @@ async function main() {
       const lessonUrl = `${SITE}lesson${lessonNum}/`;
       const sections = parseGrammarSections(md);
       for (const s of sections) {
+        // Filter out non-grammar cards:
+        // 1. Must have examples (section overviews and summaries don't)
+        // 2. Must not be a generic section heading (練習, 総結, etc.)
+        if (!s.examples) continue;
+        const NOISE = /基本用法|常见错误|总结|総結|対比|对比|知識点|练习|練習|今日|辨析|详解|概论|入门|変形|动词分类|分类|副词化|用法总览|全部|总览|間違い|よくある|同一场景|切换规则/;
+        if (NOISE.test(s.term)) continue;
         const front = makeFront(s.term, level, lessonNum);
         const back = await makeBack(s.term, s.description, s.meaning, s.examples, lessonNum, lessonUrl);
         rows.push(`${tsvField(front)}\t${tsvField(back)}`);
