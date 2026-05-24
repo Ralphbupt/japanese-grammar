@@ -1488,10 +1488,10 @@ ${CSS}
 .level-stat strong { display: block; font-size: 1.6rem; color: var(--accent); }
 .level-stat span { font-size: .8rem; color: #666; }
 @media (prefers-color-scheme: dark) {
-  .overview-intro { background: #1f1f2e; color: #c8c8d4; }
-  .overview-card { background: #1f1f2e; }
-  .overview-title { color: #f0f0f5; }
-  .grammar-pill { background: #25253a; color: #c8c8d4; }
+  :root:not(.theme-light) .overview-intro { background: #1f1f2e; color: #c8c8d4; }
+  :root:not(.theme-light) .overview-card { background: #1f1f2e; }
+  :root:not(.theme-light) .overview-title { color: #f0f0f5; }
+  :root:not(.theme-light) .grammar-pill { background: #25253a; color: #c8c8d4; }
 }
 
 /* Manual dark override (toggled via JS, mirrors media query rules) */
@@ -1626,9 +1626,9 @@ ${CSS}
 .about-content code { background: var(--code-bg); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
 .about-content strong { color: #1a1a2e; }
 @media (prefers-color-scheme: dark) {
-  .about-content h2 { color: #e4e4ec; }
-  .about-content strong { color: #f0f0f5; }
-  .about-content blockquote { background: rgba(233,69,96,.08); color: #b8b8c4; }
+  :root:not(.theme-light) .about-content h2 { color: #e4e4ec; }
+  :root:not(.theme-light) .about-content strong { color: #f0f0f5; }
+  :root:not(.theme-light) .about-content blockquote { background: rgba(233,69,96,.08); color: #b8b8c4; }
 }
 
 /* Manual dark override (toggled via JS, mirrors media query rules) */
@@ -2027,7 +2027,7 @@ body.sidebar-collapsed #content {
 .comments-section { margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border); }
 .comments-heading { font-size: 1.2rem; margin: 0 0 1rem; color: #666; font-weight: 600; }
 @media (prefers-color-scheme: dark) {
-  .comments-heading { color: #999; }
+  :root:not(.theme-light) .comments-heading { color: #999; }
 }
 
 /* Manual dark override (toggled via JS, mirrors media query rules) */
@@ -2406,7 +2406,7 @@ body.sidebar-collapsed #content.home {
    accent red (#e94560) and ruby furigana color stay — they read well
    on both light and dark backgrounds. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not(.theme-light) {
     --bg: #14141e;
     --sidebar-bg: #0a0a14;
     --sidebar-text: #b8b8c4;
@@ -2418,58 +2418,51 @@ body.sidebar-collapsed #content.home {
     --ruby-color: #ff7088;  /* lighter than --accent so furigana stays readable on dark blockquote tints */
   }
   /* Accent-colored strong text fails 4.5:1 on dark card surfaces; brighten. */
-  .seo-lead strong, .home-intro strong { color: #ff7088; }
+  :root:not(.theme-light) .seo-lead strong, :root:not(.theme-light) .home-intro strong { color: #ff7088; }
   /* .breadcrumb is defined on each page; override gray contrast for dark. */
-  .breadcrumb { color: #999 !important; }
+  :root:not(.theme-light) .breadcrumb { color: #999 !important; }
   /* .related-label gray on the (red-tinted) related-grammar box was 4.46
      in dark mode (just under AA 4.5). Lighten to clear the bar. */
-  .related-label { color: #a8a8b8; }
-  body { color: #d4d4dc; }
-  h1 { color: #f0f0f5; }
-  h2 { color: #e4e4ec; }
-  h3, h4 { color: #d8d8e0; }
-
-  th { background: #25253a; color: #e4e4ec; }
-  tr:nth-child(even) { background: rgba(255, 255, 255, 0.025); }
-  blockquote { background: rgba(233, 69, 96, 0.08); }
-  details { background: #1f1f2e; }
-
-  ul:has(input[type="checkbox"]) li:hover { background: #1f1f2e; }
-  ul:has(input[type="checkbox"]) li.checked { color: #6a6a78; }
-
-  .seo-lead { background: #1f1f2e; color: #c8c8d4; }
-  .lesson-meta { color: #a8a8b8; }
-  .lesson-meta time { color: #b8b8c4; }
-  .related-grammar { background: #1a223a; border-color: #2a3a55; }
-  .cross-link { background: #1f3548; color: #ff7088; }
-  .cross-link:hover { background: var(--accent); color: #fff; }
-
-  .checklist-progress { background: #1f1f2e; color: #b8b8c4; }
-  .checklist-progress .progress-bar { background: #2d2d44; }
-
-  #settings-panel { background: #1f1f2e; color: #d4d4dc; }
-  .settings-header { border-bottom-color: #2d2d44; }
-  .settings-header button { color: #888; }
-  .settings-label { color: #c8c8d4; }
-  .settings-hint { color: #888; }
-  #start-date-input {
+  :root:not(.theme-light) .related-label { color: #a8a8b8; }
+  :root:not(.theme-light) body { color: #d4d4dc; }
+  :root:not(.theme-light) h1 { color: #f0f0f5; }
+  :root:not(.theme-light) h2 { color: #e4e4ec; }
+  :root:not(.theme-light) h3, :root:not(.theme-light) h4 { color: #d8d8e0; }
+  :root:not(.theme-light) th { background: #25253a; color: #e4e4ec; }
+  :root:not(.theme-light) tr:nth-child(even) { background: rgba(255, 255, 255, 0.025); }
+  :root:not(.theme-light) blockquote { background: rgba(233, 69, 96, 0.08); }
+  :root:not(.theme-light) details { background: #1f1f2e; }
+  :root:not(.theme-light) ul:has(input[type="checkbox"]) li:hover { background: #1f1f2e; }
+  :root:not(.theme-light) ul:has(input[type="checkbox"]) li.checked { color: #6a6a78; }
+  :root:not(.theme-light) .seo-lead { background: #1f1f2e; color: #c8c8d4; }
+  :root:not(.theme-light) .lesson-meta { color: #a8a8b8; }
+  :root:not(.theme-light) .lesson-meta time { color: #b8b8c4; }
+  :root:not(.theme-light) .related-grammar { background: #1a223a; border-color: #2a3a55; }
+  :root:not(.theme-light) .cross-link { background: #1f3548; color: #ff7088; }
+  :root:not(.theme-light) .cross-link:hover { background: var(--accent); color: #fff; }
+  :root:not(.theme-light) .checklist-progress { background: #1f1f2e; color: #b8b8c4; }
+  :root:not(.theme-light) .checklist-progress .progress-bar { background: #2d2d44; }
+  :root:not(.theme-light) #settings-panel { background: #1f1f2e; color: #d4d4dc; }
+  :root:not(.theme-light) .settings-header { border-bottom-color: #2d2d44; }
+  :root:not(.theme-light) .settings-header button { color: #888; }
+  :root:not(.theme-light) .settings-label { color: #c8c8d4; }
+  :root:not(.theme-light) .settings-hint { color: #888; }
+  :root:not(.theme-light) #start-date-input {
     background: #14141e; color: #d4d4dc; border-color: #2d2d44;
   }
-  #start-date-input::-webkit-calendar-picker-indicator { filter: invert(0.7); }
-
+  :root:not(.theme-light) #start-date-input::-webkit-calendar-picker-indicator { filter: invert(0.7); }
   /* Home page */
-  .home-hero h1 { color: #f0f0f5; }
-  .home-intro { color: #b8b8c4; }
-  .home-stat span { color: #888; }
-  .home-levels h2, .home-howto h2 { color: #e4e4ec; }
-  .level-card { background: #1f1f2e; }
-  .level-card h3 { color: #f0f0f5; }
-  .level-card p { color: #b8b8c4; }
-  .home-howto p { color: #b8b8c4; }
-
+  :root:not(.theme-light) .home-hero h1 { color: #f0f0f5; }
+  :root:not(.theme-light) .home-intro { color: #b8b8c4; }
+  :root:not(.theme-light) .home-stat span { color: #888; }
+  :root:not(.theme-light) .home-levels h2, :root:not(.theme-light) .home-howto h2 { color: #e4e4ec; }
+  :root:not(.theme-light) .level-card { background: #1f1f2e; }
+  :root:not(.theme-light) .level-card h3 { color: #f0f0f5; }
+  :root:not(.theme-light) .level-card p { color: #b8b8c4; }
+  :root:not(.theme-light) .home-howto p { color: #b8b8c4; }
   /* Code */
-  code { color: #f0a0b0; }
-  pre code { color: #d4d4dc; }
+  :root:not(.theme-light) code { color: #f0a0b0; }
+  :root:not(.theme-light) pre code { color: #d4d4dc; }
 }
 
 /* Manual dark override (toggled via JS, mirrors media query rules) */
