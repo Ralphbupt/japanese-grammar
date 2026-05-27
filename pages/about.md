@@ -124,6 +124,16 @@ Tech stack:
 Pure **static site** — no backend, no database, no cookies. Every push to main triggers a GitHub Actions build and deploy.
 :::
 
+## 播客||Podcast
+
+:::zh
+**[Japanese Daily News](https://podcast.jpnotes.dev/)** 是本站的姊妹播客——慢速日语新闻 + 英语解说，帮助学习者边听边学。网站上提供逐句精听、transcript 和 furigana 标注，Spotify / Apple Podcasts 同步更新。
+:::
+
+:::en
+**[Japanese Daily News](https://podcast.jpnotes.dev/)** is our companion podcast — slow Japanese news with English commentary, designed for learners. The website offers sentence-by-sentence listening, transcripts with furigana, while episodes are also available on Spotify / Apple Podcasts.
+:::
+
 ## 反馈与贡献||Feedback and contributions
 
 :::zh
