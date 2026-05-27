@@ -993,6 +993,7 @@ async function main() {
   ${sidebarHtml.join("\n  ")}
   </div>
   <div class="nav-footer">
+    <a href="https://podcast.jpnotes.dev/" target="_blank">Podcast</a>
     <a href="${SITE_PATH}about/">关于</a>
     <a href="https://github.com/Ralphbupt" target="_blank">GitHub</a>
   </div>
@@ -1111,6 +1112,10 @@ ${TTS_JS}
     <p>
       <span class="lang-zh">用 Anki 复习？下载 <a href="anki/">免费 JLPT N5-N2 文法卡组</a>（共 372 张，原生 TSV 一键导入）。</span>
       <span class="lang-en">Use Anki for review? Download the <a href="anki/">free JLPT N5–N2 grammar decks</a> (372 cards, native TSV one-click import).</span>
+    </p>
+    <p>
+      <span class="lang-zh">想练听力？试试 <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News 播客</a>——慢速日语新闻 + 英语解说，配套逐句精听与 transcript。</span>
+      <span class="lang-en">Want listening practice? Try the <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News podcast</a> — slow Japanese news with English commentary, plus sentence-by-sentence listening and transcripts.</span>
     </p>
   </section>`;
 
