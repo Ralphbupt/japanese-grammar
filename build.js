@@ -1200,28 +1200,12 @@ ${sidebarMarkupHtml}
 </main>
 <nav id="toc-panel"></nav>
 <div id="bottom-controls">
-  <div id="settings-toggle">
-    <button id="settings-btn">⚙</button>
-  </div>
   ${THEME_TOGGLE_HTML}
   <div id="furigana-toggle">
     <label><input type="checkbox" id="ruby-toggle" checked> 显示读音</label>
   </div>
   <div id="lang-toggle">
     <button id="lang-btn">EN</button>
-  </div>
-</div>
-<div id="settings-overlay" class="hidden">
-  <div id="settings-panel">
-    <div class="settings-header">
-      <span>设置</span>
-      <button id="settings-close">✕</button>
-    </div>
-    <div class="settings-body">
-      <label class="settings-label">学习开始日期</label>
-      <input type="date" id="start-date-input">
-      <p class="settings-hint">设置你的学习起始日，侧栏将显示对应的日期</p>
-    </div>
   </div>
 </div>
 <script>
@@ -1394,7 +1378,7 @@ ${CSS}
 /* Hide chrome that requires JS (menu toggle, TOC, settings overlay) but
    keep the sidebar — it works on hover via pure CSS and links are root-
    relative so they navigate from any standalone page. */
-#menu-toggle, #toc-panel, #settings-toggle, #settings-overlay { display: none !important; }
+#menu-toggle, #toc-panel { display: none !important; }
 #content { margin: 0 auto !important; max-width: 1000px; }
 .back-link { display: block; margin-bottom: 1.5rem; color: var(--accent); text-decoration: none; font-size: 0.9rem; }
 .back-link:hover { text-decoration: underline; }
@@ -1568,7 +1552,7 @@ ${GTAG_DEFERRED}
 <style>
 ${CSS}
 /* Keep sidebar (pure-CSS hover navigation) + theme toggle; hide other JS-dependent chrome. */
-#menu-toggle, #toc-panel, #settings-toggle, #settings-overlay { display: none !important; }
+#menu-toggle, #toc-panel { display: none !important; }
 #bottom-controls #furigana-toggle, #bottom-controls #lang-toggle { display: none !important; }
 #content { margin: 0 auto !important; max-width: 1100px; padding: 2rem 1.5rem 4rem; }
 .breadcrumb { font-size: .85rem; color: #666; margin-bottom: 1rem; }
@@ -1715,7 +1699,7 @@ ${GTAG_DEFERRED}
 <style>
 ${CSS}
 /* Keep sidebar (pure-CSS hover) + lang toggle; hide other JS-dependent chrome. */
-#menu-toggle, #toc-panel, #settings-toggle, #settings-overlay, #furigana-toggle { display: none !important; }
+#menu-toggle, #toc-panel, #furigana-toggle { display: none !important; }
 #content { margin: 0 auto !important; max-width: 800px; padding: 2rem 2rem 4rem; }
 .breadcrumb { font-size: .85rem; color: #666; margin-bottom: 1rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
@@ -2335,21 +2319,22 @@ summary {
   padding: .2rem 0;
 }
 
-/* Bottom controls */
+/* Top controls */
 #bottom-controls {
-  position: fixed; bottom: 1.2rem; right: 1.2rem;
-  display: flex; gap: .5rem; z-index: 200;
+  position: fixed; top: .8rem; right: 1.2rem;
+  display: flex; align-items: center; gap: .5rem; z-index: 200;
 }
 #furigana-toggle, #lang-toggle, #theme-toggle {
-  background: var(--sidebar-bg); color: #fff;
-  padding: .5rem 1rem; border-radius: 20px;
+  background: var(--card-bg); color: var(--text, #333);
+  padding: .4rem .8rem; border-radius: 6px;
   font-size: .8rem;
-  box-shadow: 0 2px 10px rgba(0,0,0,.2);
+  border: 1px solid var(--border);
+  box-shadow: 0 1px 4px rgba(0,0,0,.08);
 }
 #furigana-toggle label { cursor: pointer; }
 #furigana-toggle input { margin-right: .3rem; }
 #lang-btn, #theme-btn {
-  background: none; border: none; color: #fff;
+  background: none; border: none; color: inherit;
   font-size: 1rem; cursor: pointer;
   padding: 0; line-height: 1;
 }
@@ -2369,43 +2354,6 @@ summary {
   opacity: .7; transition: opacity .15s;
 }
 .nav-footer a:hover { opacity: 1; color: #fff; }
-
-/* Settings */
-#settings-btn {
-  background: none; border: none; color: #fff;
-  font-size: 1rem; cursor: pointer; padding: 0;
-}
-#settings-overlay {
-  position: fixed; inset: 0; z-index: 500;
-  background: rgba(0,0,0,.5);
-  display: flex; align-items: center; justify-content: center;
-}
-#settings-overlay.hidden { display: none; }
-#settings-panel {
-  background: #fff; border-radius: 12px;
-  width: min(400px, 90vw); box-shadow: 0 8px 30px rgba(0,0,0,.25);
-}
-.settings-header {
-  display: flex; justify-content: space-between; align-items: center;
-  padding: 1rem 1.2rem; border-bottom: 1px solid #eee;
-  font-weight: 700; font-size: 1rem;
-}
-.settings-header button {
-  background: none; border: none; font-size: 1.2rem; cursor: pointer; color: #666;
-}
-.settings-body { padding: 1.2rem; }
-.settings-label { display: block; font-weight: 600; margin-bottom: .4rem; color: #333; }
-#start-date-input {
-  width: 100%; padding: .5rem; border: 1px solid #ccc; border-radius: 6px;
-  font-size: .95rem;
-}
-.settings-hint { font-size: .8rem; color: #666; margin-top: .4rem; }
-
-/* Day date badges in sidebar */
-.nav-item .day-date {
-  display: block; font-size: .65rem; opacity: .5; margin-top: 1px;
-}
-.nav-item.today-lesson { background: rgba(255,255,255,.12); border-left: 3px solid #ffd700; }
 
 /* Menu button */
 #menu-toggle {
@@ -2572,15 +2520,6 @@ body.sidebar-collapsed #content.home {
   :root:not(.theme-light) .cross-link:hover { background: var(--accent); color: #fff; }
   :root:not(.theme-light) .checklist-progress { background: #1f1f2e; color: #b8b8c4; }
   :root:not(.theme-light) .checklist-progress .progress-bar { background: #2d2d44; }
-  :root:not(.theme-light) #settings-panel { background: #1f1f2e; color: #d4d4dc; }
-  :root:not(.theme-light) .settings-header { border-bottom-color: #2d2d44; }
-  :root:not(.theme-light) .settings-header button { color: #888; }
-  :root:not(.theme-light) .settings-label { color: #c8c8d4; }
-  :root:not(.theme-light) .settings-hint { color: #888; }
-  :root:not(.theme-light) #start-date-input {
-    background: #14141e; color: #d4d4dc; border-color: #2d2d44;
-  }
-  :root:not(.theme-light) #start-date-input::-webkit-calendar-picker-indicator { filter: invert(0.7); }
   /* Home page */
   :root:not(.theme-light) .home-hero h1 { color: #f0f0f5; }
   :root:not(.theme-light) .home-intro { color: #b8b8c4; }
@@ -2617,7 +2556,7 @@ html.theme-dark .related-label { color: #a8a8b8; }
 html.theme-dark body { color: #d4d4dc; }
 html.theme-dark h1 { color: #f0f0f5; }
 html.theme-dark h2 { color: #e4e4ec; }
-html.theme-dark h3, h4 { color: #d8d8e0; }
+html.theme-dark h3, html.theme-dark h4 { color: #d8d8e0; }
 html.theme-dark th { background: #25253a; color: #e4e4ec; }
 html.theme-dark tr:nth-child(even) { background: rgba(255, 255, 255, 0.025); }
 html.theme-dark blockquote { background: rgba(233, 69, 96, 0.08); }
@@ -2632,15 +2571,6 @@ html.theme-dark .cross-link { background: #1f3548; color: #ff7088; }
 html.theme-dark .cross-link:hover { background: var(--accent); color: #fff; }
 html.theme-dark .checklist-progress { background: #1f1f2e; color: #b8b8c4; }
 html.theme-dark .checklist-progress .progress-bar { background: #2d2d44; }
-html.theme-dark #settings-panel { background: #1f1f2e; color: #d4d4dc; }
-html.theme-dark .settings-header { border-bottom-color: #2d2d44; }
-html.theme-dark .settings-header button { color: #888; }
-html.theme-dark .settings-label { color: #c8c8d4; }
-html.theme-dark .settings-hint { color: #888; }
-html.theme-dark #start-date-input {
-    background: #14141e; color: #d4d4dc; border-color: #2d2d44;
-  }
-html.theme-dark #start-date-input::-webkit-calendar-picker-indicator { filter: invert(0.7); }
 /* Home page */
 html.theme-dark .home-hero h1 { color: #f0f0f5; }
 html.theme-dark .home-intro { color: #b8b8c4; }
@@ -2769,75 +2699,6 @@ ${THEME_TOGGLE_JS}
         a.classList.toggle('active', a.getAttribute('data-toc') === current);
       });
     }, 30);
-  });
-
-  // ─── Start date & day-date display ───
-  var startDateInput = document.getElementById('start-date-input');
-
-  function getDayNumber(lessonId) {
-    var m = lessonId.match(/^lesson(\\d+)/);
-    return m ? parseInt(m[1], 10) : -1;
-  }
-
-  function formatDate(d) {
-    return (d.getMonth()+1) + '/' + d.getDate();
-  }
-
-  function updateDayDates() {
-    var startStr = loadPrefs().startDate;
-    if (!startStr) {
-      items.forEach(function(item) {
-        var badge = item.querySelector('.day-date');
-        if (badge) badge.remove();
-        item.classList.remove('today-lesson');
-      });
-      return;
-    }
-    var start = new Date(startStr + 'T00:00:00');
-    var today = new Date(); today.setHours(0,0,0,0);
-
-    items.forEach(function(item) {
-      var id = item.getAttribute('data-target');
-      var dayNum = getDayNumber(id);
-      if (dayNum < 0) return;
-
-      var lessonDate = new Date(start);
-      lessonDate.setDate(lessonDate.getDate() + dayNum);
-      var dateStr = formatDate(lessonDate);
-
-      var badge = item.querySelector('.day-date');
-      if (!badge) {
-        badge = document.createElement('span');
-        badge.className = 'day-date';
-        item.appendChild(badge);
-      }
-      badge.textContent = dateStr;
-
-      var isToday = lessonDate.getTime() === today.getTime();
-      item.classList.toggle('today-lesson', isToday);
-    });
-  }
-
-  // ─── Settings panel ───
-  var settingsBtn = document.getElementById('settings-btn');
-  var settingsOverlay = document.getElementById('settings-overlay');
-  var settingsClose = document.getElementById('settings-close');
-
-  settingsBtn.addEventListener('click', function() {
-    var p = loadPrefs();
-    startDateInput.value = p.startDate || '';
-    settingsOverlay.classList.remove('hidden');
-  });
-  settingsClose.addEventListener('click', function() {
-    settingsOverlay.classList.add('hidden');
-  });
-  settingsOverlay.addEventListener('click', function(e) {
-    if (e.target === settingsOverlay) settingsOverlay.classList.add('hidden');
-  });
-
-  startDateInput.addEventListener('change', function() {
-    savePrefs({ startDate: this.value });
-    updateDayDates();
   });
 
   function show(id) {
@@ -3058,7 +2919,6 @@ ${THEME_TOGGLE_JS}
   }
 
   // Init
-  updateDayDates();
   var hash = location.hash.slice(1);
   var first = items[0] ? items[0].getAttribute('data-target') : null;
   show(hash || first);
