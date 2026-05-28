@@ -2325,7 +2325,7 @@ summary {
   display: flex; align-items: center; gap: .5rem; z-index: 200;
 }
 #furigana-toggle, #lang-toggle, #theme-toggle {
-  background: var(--card-bg); color: var(--text, #333);
+  background: var(--card-bg); color: inherit;
   padding: .4rem .8rem; border-radius: 6px;
   font-size: .8rem;
   border: 1px solid var(--border);
@@ -2547,7 +2547,7 @@ html.theme-dark {
     --ruby-color: #ff7088;  /* lighter than --accent so furigana stays readable on dark blockquote tints */
   }
 /* Accent-colored strong text fails 4.5:1 on dark card surfaces; brighten. */
-html.theme-dark .seo-lead strong, .home-intro strong { color: #ff7088; }
+html.theme-dark .seo-lead strong, html.theme-dark .home-intro strong { color: #ff7088; }
 /* .breadcrumb is defined on each page; override gray contrast for dark. */
 html.theme-dark .breadcrumb { color: #999 !important; }
 /* .related-label gray on the (red-tinted) related-grammar box was 4.46
@@ -2575,7 +2575,7 @@ html.theme-dark .checklist-progress .progress-bar { background: #2d2d44; }
 html.theme-dark .home-hero h1 { color: #f0f0f5; }
 html.theme-dark .home-intro { color: #b8b8c4; }
 html.theme-dark .home-stat span { color: #888; }
-html.theme-dark .home-levels h2, .home-howto h2 { color: #e4e4ec; }
+html.theme-dark .home-levels h2, html.theme-dark .home-howto h2 { color: #e4e4ec; }
 html.theme-dark .level-card { background: #1f1f2e; }
 html.theme-dark .level-card h3 { color: #f0f0f5; }
 html.theme-dark .level-card p { color: #b8b8c4; }
