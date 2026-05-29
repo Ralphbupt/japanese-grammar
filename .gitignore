@@ -10,3 +10,14 @@ __pycache__/
 
 # Drafts
 pages/drafts/
+
+# Local experiments (TTS voice samples + podcast WIP — not part of the site build)
+/test_*.mp3
+/test_*.wav
+/podcast-demo.py
+/podcast-kokoro-demo.py
+/gen-podcast-demo.py
+/gen-podcast-ep.py
+/build-podcast.js
+/data/podcast-scripts/
+/.fix-content.js
