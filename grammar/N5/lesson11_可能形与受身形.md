@@ -1,4 +1,4 @@
-# Lesson 11 – 可能形与受身形
+# Lesson 11 – 可能形与受身形||Potential & Passive Forms
 
 ## 本课单词表
 
@@ -393,3 +393,12 @@ Group 2 verbs and 来る have identical potential and passive forms — use thes
 :::
 
 ---
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天

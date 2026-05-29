@@ -267,3 +267,12 @@ Now look at「飲む」— む is in **row ま, column う**:
 
 > **This is why Group 1 verbs are called "godan" (五段) verbs** — they hop across all five columns of the syllabary!
 :::
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天

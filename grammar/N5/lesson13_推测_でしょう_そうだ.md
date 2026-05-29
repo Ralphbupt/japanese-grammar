@@ -1,4 +1,4 @@
-# Lesson 13 – 推测表达 でしょう・かもしれない・そうだ
+# Lesson 13 – 推测表达 でしょう・かもしれない・そうだ||Conjecture: でしょう・かもしれない・そうだ
 
 :::zh
 这一课内容多，合并两天。这组语法全都表达"不确定的判断"，是N5-N4的重要考点。
@@ -8,7 +8,7 @@
 This lesson covers a lot of ground and is spread over two days. All of these grammar points express "uncertain judgments" and are key exam topics for N5–N4.
 :::
 
-## 本课単词表
+## 本课单词表
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
@@ -432,3 +432,12 @@ A judgment based on **visible appearance or immediate signs**: "looks like…", 
 :::
 
 ---
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天

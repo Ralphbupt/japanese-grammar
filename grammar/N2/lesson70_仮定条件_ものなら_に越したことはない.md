@@ -1,4 +1,4 @@
-# Lesson 70 – 仮定・条件 — ものなら/ようものなら/ことだ/に越したことはない
+# Lesson 70 – 仮定・条件 — ものなら/ようものなら/ことだ/に越したことはない||Hypothesis & Condition — ものなら/ようものなら/ことだ/に越したことはない
 
 :::zh
 这一课学习表示"假定条件"和"建议"的N2语法。「ものなら」表达不太可能实现的愿望，「ようものなら」警告万一做了某事会有严重后果，「ことだ」用于给出建议，「に越したことはない」表示"最好……没有比……更好的"。这组语法在N2考试中是高频考点。
@@ -375,3 +375,12 @@ This lesson covers N2 grammar for "hypothetical conditions" and "advice." 「も
 9. It's best to bring an umbrella when going out. (Use に越したことはない)
 10. If this wish could come true, I'd do anything. (Use ものなら)
 :::
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天

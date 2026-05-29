@@ -1,4 +1,4 @@
-# Lesson 57 – 常用語法② — ことか/てたまらない/てならない/てもかまわない/ことがある/結果
+# Lesson 57 – 常用語法② — ことか/てたまらない/てならない/てもかまわない/ことがある/結果||Common Grammar ② — ことか/てたまらない/てならない/てもかまわない/ことがある/結果
 
 :::zh
 这一课学习N3阶段的第二组常用语法。「ことか」表示感叹，「てたまらない」和「てならない」都表示某种感觉强烈到无法控制，「てもかまわない」表示允许/不介意，「ことがある」表示有时会发生的习惯，「結果」表示事情的结果。这些语法在日常会话和N3考试中都非常实用。
@@ -437,3 +437,12 @@ This lesson covers the second set of commonly used N3 grammar. 「ことか」 e
 9. As a result of careful thought, I decided to quit my job. (Use 結果)
 10. How many times I read this manga as a child! (Use ことか)
 :::
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天

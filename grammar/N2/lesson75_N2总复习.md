@@ -1,4 +1,4 @@
-# Lesson 75 – N2総復習 — N2文法まとめ
+# Lesson 75 – N2総復習 — N2文法まとめ||N2 Comprehensive Review — N2 Grammar Summary
 
 :::zh
 这是N2语法的总复习课。我们将按功能分类回顾Day 56-71涵盖的全部N2语法，通过总结表格、重点辨析和综合练习，帮助你系统梳理、查漏补缺，为N2考试做最后准备。
@@ -602,3 +602,12 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
 
 20. 年を取るに対して、体力が落ちる。
 :::
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天

@@ -1,4 +1,4 @@
-# Lesson 55 – 复合表达 — からこそ/ことは〜が/ことになっている/ような気がする/とは限らない/ところが
+# Lesson 55 – 复合表达 — からこそ/ことは〜が/ことになっている/ような気がする/とは限らない/ところが||Compound Expressions — からこそ/ことは〜が/ことになっている/ような気がする/とは限らない/ところが
 
 :::zh
 这一课的语法都是"复合表达"——由基础语法组合而成的固定句型。它们在N3考试中出现频率很高，也是日常会话和阅读中的常客。重点掌握每个句型的语气和使用场景。
@@ -418,3 +418,12 @@ This lesson covers "compound expressions" — fixed patterns formed by combining
 9. The rule is that employees must not be late. (Use ことになっている)
 10. It is expensive, but the taste is great. (Use ことは〜が)
 :::
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天

@@ -1,4 +1,4 @@
-# Lesson 67 – 話題・立場 — にしても〜にしても/はともかく/をめぐって/を問わず/を中心に/に応じて
+# Lesson 67 – 話題・立場 — にしても〜にしても/はともかく/をめぐって/を問わず/を中心に/に応じて||Topic & Standpoint — にしても〜にしても/はともかく/をめぐって/を問わず/を中心に/に応じて
 
 :::zh
 这一课学习围绕"话题""立场""条件"的N2语法。「にしても〜にしても」「はともかく」表示不论哪种情况，「をめぐって」「を問わず」「を中心に」限定话题范围，「に応じて」表示根据条件灵活对应。这些在议论文和新闻中非常常见。
@@ -364,3 +364,12 @@ This lesson covers N2 grammar related to "topics," "standpoints," and "condition
 9. Appearance aside, the functionality is excellent. (Use はともかく)
 10. Whether you agree or disagree, please state your reasons. (Use にしても〜にしても)
 :::
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天

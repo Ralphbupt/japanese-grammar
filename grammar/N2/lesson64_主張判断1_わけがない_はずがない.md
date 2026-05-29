@@ -1,4 +1,4 @@
-# Lesson 64 – 主張・判断① — ないわけにはいかない/に相違ない/わけがない/はずがない
+# Lesson 64 – 主張・判断① — ないわけにはいかない/に相違ない/わけがない/はずがない||Assertion & Judgment ① — ないわけにはいかない/に相違ない/わけがない/はずがない
 
 :::zh
 这一课学习N2级别的主张・判断表达。「ないわけにはいかない」表示"不能不……"，「に相違ない」表示"一定是……（书面断定）"，「わけがない」和「はずがない」都表示"不可能……"但语气和侧重不同。这组语法在N2读解中非常常见，也是选择题的高频考点。
@@ -343,3 +343,12 @@ This lesson covers N2-level expressions for assertion and judgment. 「ないわ
 9. Since I was invited, I have no choice but to go. (Use ないわけにはいかない)
 10. There's no way someone who tries this hard would fail. (Use わけがない)
 :::
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天

@@ -1,4 +1,4 @@
-# Lesson 62 – 程度・限定② — はもとより/のみならず
+# Lesson 62 – 程度・限定② — はもとより/のみならず||Degree & Limitation ② — はもとより/のみならず
 
 :::zh
 这一课深入学习两个N2级别的递进表达。「はもとより」表示"自不必说"，「のみならず」表示"不仅……（而且）"。两者都是书面语，在N2阅读中出现频率很高，特别是在新闻、评论、论述文中。本课只有两个语法点，因此会更详细地讲解用法和辨析，配合大量例句帮助彻底掌握。
@@ -311,3 +311,12 @@ The two have exactly the same meaning; the only difference is register:
 13. Not to mention adults, even children and the elderly enjoy this park. (Use はもとより)
 14. Smoking is harmful not only to oneself, but to those around as well. (Use のみならず)
 :::
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天

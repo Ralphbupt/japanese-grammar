@@ -1,4 +1,4 @@
-# Lesson 43 – 判断・推量 — に違いない/に決まっている/おそれがある/っけ/ものか
+# Lesson 43 – 判断・推量 — に違いない/に決まっている/おそれがある/っけ/ものか||Judgment & Conjecture — に違いない/に決まっている/おそれがある/っけ/ものか
 
 :::zh
 这一课学习表示"判断""推测""反问"的语法。「に違いない」「に決まっている」表示强烈的判断，「おそれがある」表示对负面结果的担忧，「っけ」用于回忆确认，「ものか」用于强烈否定。
@@ -397,3 +397,12 @@ This lesson covers grammar for "judgment," "conjecture," and "rhetorical questio
 9. What was the name of that restaurant again? (Use っけ)
 10. It's this delicious — of course it sold out. (Use に決まっている)
 :::
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天

@@ -1,4 +1,4 @@
-# Lesson 01 – 判断句・は/が・基础助词
+# Lesson 01 – 判断句・は/が・基础助词||Copula, は/が & Basic Particles
 
 :::zh
 学日语的人都会先学「です」，但「は」和「が」的区别才是真正贯穿整个学习生涯的难题。本课打下整个日语判断句和**主题 vs 主语**的基础，搞清楚这两个助词，N5 后面所有的句型才有意义。
@@ -451,3 +451,12 @@ When a clause is embedded inside a larger sentence, the inner subject uses が:
 :::
 
 ---
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天

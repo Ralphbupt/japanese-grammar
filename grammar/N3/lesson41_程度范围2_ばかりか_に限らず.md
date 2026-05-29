@@ -1,4 +1,4 @@
-# Lesson 41 – 程度・範囲② — だけ/しか〜ない/ばかりか/に限って/に限らず
+# Lesson 41 – 程度・範囲② — だけ/しか〜ない/ばかりか/に限って/に限らず||Degree & Extent ② — だけ/しか〜ない/ばかりか/に限って/に限らず
 
 :::zh
 这一课学习表示"限定范围"和"超出范围"的语法。「だけ」「しか〜ない」限定范围，「ばかりか」「に限らず」表示范围比预想的更广。这些语法在N3阅读中经常以干扰项出现，需要准确区分。
@@ -363,3 +363,12 @@ This lesson covers grammar for "limiting scope" and "exceeding scope." 「だけ
 9. Not limited to students — working adults can also participate. (Use に限らず)
 10. Please answer in Japanese as much as possible. (Use だけ)
 :::
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天
