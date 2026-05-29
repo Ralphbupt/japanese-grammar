@@ -82,6 +82,7 @@ const THEME_TOGGLE_JS = `(function(){
       else localStorage.setItem('theme', next);
     } catch (e) {}
     paintIcon();
+    if (window.gaEvent) window.gaEvent('theme_toggle', { to: next });
   });
 })();`;
 
@@ -123,6 +124,7 @@ const TTS_JS = `document.addEventListener('DOMContentLoaded', function(){
       e.stopPropagation();
       var audio = new Audio('/audio/' + audioId + '.mp3');
       audio.play();
+      if (window.gaEvent) window.gaEvent('audio_play', { audio_id: audioId, page_path: location.pathname });
     });
     el.appendChild(btn);
   });
@@ -153,6 +155,13 @@ const GTAG_DEFERRED = `<script>
       gtag('config', 'G-D1KNQTFN1R');
     }, 1500);
   });
+  // Safe event helper — silently no-ops if gtag hasn't loaded yet (first 1.5s
+  // after load, or for users who block analytics). Callers don't need to
+  // guard their calls. Buffers nothing intentionally; the first 1.5s of
+  // interactions are a rounding error.
+  window.gaEvent = function(name, params) {
+    if (typeof window.gtag === 'function') window.gtag('event', name, params || {});
+  };
 })();
 </script>`;
 
@@ -1431,8 +1440,18 @@ ${THEME_TOGGLE_JS}
   if (prefs.hideRuby) { rubyToggle.checked = false; document.body.classList.add('hide-ruby'); }
   var isEn = ('isEn' in prefs) ? prefs.isEn : !/^zh/i.test(navigator.language || '');
   if (isEn) { document.body.classList.add('lang-en'); langBtn.textContent = '中'; }
-  rubyToggle.addEventListener('change', function(){ var hide = !this.checked; document.body.classList.toggle('hide-ruby', hide); savePrefs({ hideRuby: hide }); });
-  langBtn.addEventListener('click', function(){ isEn = !isEn; document.body.classList.toggle('lang-en', isEn); langBtn.textContent = isEn ? '中' : 'EN'; savePrefs({ isEn: isEn }); });
+  rubyToggle.addEventListener('change', function(){ var hide = !this.checked; document.body.classList.toggle('hide-ruby', hide); savePrefs({ hideRuby: hide }); if (window.gaEvent) window.gaEvent('furigana_toggle', { visible: !hide }); });
+  langBtn.addEventListener('click', function(){ isEn = !isEn; document.body.classList.toggle('lang-en', isEn); langBtn.textContent = isEn ? '中' : 'EN'; savePrefs({ isEn: isEn }); if (window.gaEvent) window.gaEvent('language_toggle', { to: isEn ? 'en' : 'zh' }); });
+  // Learning-progression events: prev/next lesson + cross-link clicks. These
+  // capture real reading/exploration behavior, unlike the toggle events above.
+  document.addEventListener('click', function(e) {
+    var prev = e.target.closest && e.target.closest('.pn-prev');
+    var next = e.target.closest && e.target.closest('.pn-next');
+    var cross = e.target.closest && e.target.closest('.cross-link');
+    if (next && next.href && window.gaEvent) window.gaEvent('next_lesson', { from: location.pathname, to: new URL(next.href).pathname });
+    else if (prev && prev.href && window.gaEvent) window.gaEvent('prev_lesson', { from: location.pathname, to: new URL(prev.href).pathname });
+    else if (cross && cross.href && window.gaEvent) window.gaEvent('cross_link_click', { from: location.pathname, to: new URL(cross.href).pathname, term: (cross.querySelector('.cross-link-term') || {}).textContent || '' });
+  });
 })();
 </script>
 </body>
@@ -1469,7 +1488,7 @@ ${THEME_TOGGLE_JS}
 
     const ovTitle = `JLPT ${level} 语法清单 | ${lessons.length} 课 ${totalPoints}+ 语法点速查 - 日语 ${level} 语法总结`;
     const ovDesc = `日语 JLPT ${level} 全部语法点速查清单，含 ${lessons.length} 课、${totalPoints}+ 语法点的接续、含义、例句与辨析。免费 JLPT ${level} 备考笔记。`;
-    const ovOgImage = `${SITE}og-image.png`;
+    const ovOgImage = `${SITE}${level}/og-image.png`;
 
     // Lesson cards: each shows day, title, grammar points, link
     const cardsHtml = lessons.map(l => {
@@ -1645,7 +1664,7 @@ ${THEME_TOGGLE_JS}
     const aboutTitle = "关于本站 - 日语语法笔记 | 作者、内容来源与开源协议";
     const aboutDesc = "了解日语语法笔记是谁做的、为什么做、参考了哪些资料、如何反馈错误。免费、开源、CC BY 4.0 许可的 JLPT N5-N2 学习笔记。";
     const aboutKeywords = "日语语法笔记关于, 作者, jpnotes.dev, 日语学习, JLPT 自学, 中文母语者";
-    const aboutOgImage = `${SITE}og-image.png`;
+    const aboutOgImage = `${SITE}about/og-image.png`;
 
     const aboutPageHtml = `<!DOCTYPE html>
 <html lang="zh-CN">
@@ -1750,7 +1769,7 @@ ${THEME_TOGGLE_JS}
   var prefs = loadPrefs();
   var isEn = ('isEn' in prefs) ? prefs.isEn : !/^zh/i.test(navigator.language || '');
   if (isEn) { document.body.classList.add('lang-en'); langBtn.textContent = '中'; }
-  langBtn.addEventListener('click', function(){ isEn = !isEn; document.body.classList.toggle('lang-en', isEn); langBtn.textContent = isEn ? '中' : 'EN'; savePrefs({ isEn: isEn }); });
+  langBtn.addEventListener('click', function(){ isEn = !isEn; document.body.classList.toggle('lang-en', isEn); langBtn.textContent = isEn ? '中' : 'EN'; savePrefs({ isEn: isEn }); if (window.gaEvent) window.gaEvent('language_toggle', { to: isEn ? 'en' : 'zh' }); });
 })();
 </script>
 </body>
@@ -2011,6 +2030,47 @@ Each \`/lessonNN/\` page contains:
       .toFile(path.join(lessonDir, "og-image.png"));
   }
   console.log(`  Generated ${lessonPages.length} per-lesson OG images`);
+
+  // ─── Index-page OG Images (N5/N4/N3/N2 level pages, about, anki) ───
+  // Each shareable index page gets a tailored 1200×630 social preview so a
+  // share to XHS / X / Threads / WeChat surfaces a distinctive image rather
+  // than the generic site-wide one.
+  const ogLevelCounts = { N5: 0, N4: 0, N3: 0, N2: 0 };
+  for (const lp of lessonPages) {
+    if (lp.level && ogLevelCounts.hasOwnProperty(lp.level)) ogLevelCounts[lp.level]++;
+  }
+  const indexOgPages = [
+    { slug: "N5", topLabel: "JLPT N5", mainTitle: "N5 文法チェックリスト", sub: `${ogLevelCounts.N5} 课 · 53+ 语法点`, accent: "#e94560" },
+    { slug: "N4", topLabel: "JLPT N4", mainTitle: "N4 文法チェックリスト", sub: `${ogLevelCounts.N4} 课 · 54+ 语法点`, accent: "#e94560" },
+    { slug: "N3", topLabel: "JLPT N3", mainTitle: "N3 文法チェックリスト", sub: `${ogLevelCounts.N3} 课 · 100+ 语法点`, accent: "#e94560" },
+    { slug: "N2", topLabel: "JLPT N2", mainTitle: "N2 文法チェックリスト", sub: `${ogLevelCounts.N2} 课 · 75+ 语法点`, accent: "#e94560" },
+    { slug: "about", topLabel: "About · 关于", mainTitle: "日语语法笔记", sub: "N5 → N2 · 8 Weeks · Free", accent: "#e94560" },
+    { slug: "anki", topLabel: "Anki Decks", mainTitle: "JLPT 文法 卡组", sub: "N5 · N4 · N3 · N2 · 297 张卡", accent: "#e94560" },
+  ];
+  for (const p of indexOgPages) {
+    const dir = path.join(__dirname, "dist", p.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    const esc = (s) => (s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="40" y="40" width="1120" height="550" rx="20" fill="none" stroke="${p.accent}" stroke-width="2" opacity="0.3"/>
+  <text x="600" y="200" text-anchor="middle" font-family="sans-serif" font-size="48" fill="${p.accent}" font-weight="bold">${esc(p.topLabel)}</text>
+  <text x="600" y="330" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="80" fill="#ffffff" font-weight="bold">${esc(p.mainTitle)}</text>
+  <text x="600" y="430" text-anchor="middle" font-family="sans-serif" font-size="32" fill="#c8c8d8">${esc(p.sub)}</text>
+  <text x="600" y="550" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#666666">${SITE_HOST}</text>
+</svg>`;
+    await sharp(Buffer.from(svg))
+      .resize(1200, 630)
+      .png()
+      .toFile(path.join(dir, "og-image.png"));
+  }
+  console.log(`  Generated ${indexOgPages.length} index-page OG images (N5/N4/N3/N2/about/anki)`);
 
   console.log(`Done! Output: ${OUT}, sitemap.xml, robots.txt, feed.xml, llms.txt, manifest.json, 404.html, og-image.png`);
 }
@@ -2760,6 +2820,7 @@ ${THEME_TOGGLE_JS}
     var scrollTo = link.getAttribute('data-scroll');
     show(targetId);
     history.replaceState(null, null, '#' + targetId);
+    if (window.gaEvent) window.gaEvent('cross_link_click', { from: currentLesson || '', to: targetId, term: (link.querySelector('.cross-link-term') || {}).textContent || '' });
     if (scrollTo) {
       setTimeout(function() {
         var el = document.getElementById(scrollTo);
@@ -2784,6 +2845,7 @@ ${THEME_TOGGLE_JS}
     var hide = !this.checked;
     document.body.classList.toggle('hide-ruby', hide);
     savePrefs({ hideRuby: hide });
+    if (window.gaEvent) window.gaEvent('furigana_toggle', { visible: !hide });
   });
 
   // Language toggle
@@ -2858,6 +2920,7 @@ ${THEME_TOGGLE_JS}
     langBtn.textContent = isEn ? '中' : 'EN';
     translateHeadings(isEn);
     savePrefs({ isEn: isEn });
+    if (window.gaEvent) window.gaEvent('language_toggle', { to: isEn ? 'en' : 'zh' });
   });
 
   // ─── Checklist persistence ───
