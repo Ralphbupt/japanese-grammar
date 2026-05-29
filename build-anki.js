@@ -276,7 +276,7 @@ async function main() {
 <meta property="og:title" content="Anki 卡组下载 / Anki Decks — jpnotes.dev">
 <meta property="og:description" content="免费 JLPT 文法 Anki 卡组 / Free JLPT grammar Anki decks (${total} cards), covering N5–N2.">
 <meta property="og:url" content="${SITE}anki/">
-<meta property="og:image" content="${SITE}og-image.png">
+<meta property="og:image" content="${SITE}anki/og-image.png">
 <script>
 (function() {
   try {
