@@ -20,6 +20,9 @@ const SITE = "https://jpnotes.dev/";
 // Derived from SITE — change SITE in one place to migrate domains.
 const SITE_PATH = new URL(SITE).pathname;             // "/japanese-grammar/" or "/"
 const SITE_HOST = SITE.replace(/^https?:\/\//, "").replace(/\/$/, ""); // "ralphbupt.github.io/japanese-grammar" or "jpnotes.dev"
+// IndexNow key — proves domain ownership to Bing/Yandex/etc. MUST stay stable
+// (changing it breaks verification). Kept in sync with indexnow.mjs (CI ping).
+const INDEXNOW_KEY = "b5c13368abbfcdaf25ed104808caeca9";
 
 // Giscus comments — backed by this repo's GitHub Discussions. Replaces
 // Disqus: no third-party cookies, no ads, lazy-loaded via IntersectionObserver
@@ -837,7 +840,7 @@ async function main() {
       // SEO lead paragraph: keyword-rich summary inserted after h1.
       // If the lesson markdown has its own top-of-file :::zh / :::en block,
       // mark those rendered divs with the seo-lead class instead of adding
-      // a templated paragraph — this prevents 73 pages from starting with
+      // a templated paragraph — this prevents lesson pages from starting with
       // near-identical "本课讲解 X 的接续规则…" boilerplate, which is what
       // makes Google flag pages as 已抓取-未编入索引.
       const groupLevel = group.label;
@@ -1045,7 +1048,7 @@ ${TTS_JS}
 </script>`;
 
   // ─── Home page main content ───
-  // Don't inline all 73 lesson articles into index.html (3.98MB → ~50KB).
+  // Don't inline every lesson article into index.html (3.98MB → ~50KB).
   // Replace with a landing-page layout: hero + level cards + how-to.
   // Sidebar links already point to standalone /dayXX/ pages.
   const levelCounts = { N5: 0, N4: 0, N3: 0, N2: 0 };
@@ -1119,8 +1122,8 @@ ${TTS_JS}
       <span class="lang-en">Browse the per-level index pages (<a href="N5/">N5</a> · <a href="N4/">N4</a> · <a href="N3/">N3</a> · <a href="N2/">N2</a>) for the full grammar list, or jump to any lesson via the sidebar.</span>
     </p>
     <p>
-      <span class="lang-zh">用 Anki 复习？下载 <a href="anki/">免费 JLPT N5-N2 文法卡组</a>（共 372 张，原生 TSV 一键导入）。</span>
-      <span class="lang-en">Use Anki for review? Download the <a href="anki/">free JLPT N5–N2 grammar decks</a> (372 cards, native TSV one-click import).</span>
+      <span class="lang-zh">用 Anki 复习？下载 <a href="anki/">免费 JLPT N5-N2 文法卡组</a>（共 {{ANKI_CARDS}} 张，原生 TSV 一键导入）。</span>
+      <span class="lang-en">Use Anki for review? Download the <a href="anki/">free JLPT N5–N2 grammar decks</a> ({{ANKI_CARDS}} cards, native TSV one-click import).</span>
     </p>
     <p>
       <span class="lang-zh">想练听力？试试 <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News 播客</a>——慢速日语新闻 + 英语解说，配套逐句精听与 transcript。</span>
@@ -1464,7 +1467,7 @@ ${THEME_TOGGLE_JS}
   const LEVEL_INTRO = {
     N5: "JLPT N5 是日语入门级别，覆盖基础句型、助词、动词三类、ます形/て形/ない形/た形、形容词活用、条件表达、可能/受身/意向形与基础推测样态。",
     N4: "JLPT N4 在 N5 基础上深化使役、受身、使役受身、授受表现、ように系列、ことにする/なる、ばかり/ところ/てしまう、ておく/てある、わけだ/ものだ 等核心日常语法。",
-    N3: "JLPT N3 是日语进阶分水岭，覆盖书面助词（において/に対して/について）、原因理由、逆接让步、程度范围、动作相关、并列添加、状态样态、否定与复合表达等约 100 个语法点。",
+    N3: "JLPT N3 是日语进阶分水岭，覆盖书面助词（において/に対して/について）、原因理由、逆接让步、程度范围、动作相关、并列添加、状态样态、否定与复合表达等核心语法点。",
     N2: "JLPT N2 是商务/学术级别语法，覆盖高阶逆接（からといって/つつも）、程度限定（に過ぎない/はもとより）、判断主张（わけがない/ということだ）、对比关系、感情不可抗、书面表达、仮定条件等高频考点。",
   };
   const LEVEL_KEYWORDS = {
@@ -1860,6 +1863,10 @@ Allow: /
 
 Sitemap: ${SITE}sitemap.xml
 `, "utf-8");
+
+  // IndexNow ownership key — must be reachable at https://<host>/<key>.txt and
+  // contain exactly the key. CI (indexnow.mjs) submits URLs referencing it.
+  fs.writeFileSync(path.join(__dirname, `dist/${INDEXNOW_KEY}.txt`), INDEXNOW_KEY + "\n", "utf-8");
 
   // CNAME for GitHub Pages custom domain. Skipped while SITE points at
   // *.github.io (no custom domain in use); written automatically once

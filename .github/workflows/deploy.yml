@@ -44,3 +44,10 @@ jobs:
 
       - id: deployment
         uses: actions/deploy-pages@v4
+
+      # Notify Bing/Yandex/etc. of the current URL set (Google ignores IndexNow).
+      # Runs after deploy so the key file at /<key>.txt is already live for
+      # verification. Non-fatal: a ping failure must never block the deploy.
+      - name: Ping IndexNow
+        continue-on-error: true
+        run: node indexnow.mjs
