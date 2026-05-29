@@ -1,4 +1,4 @@
-# Lesson 02 – 核心助词详解（に・で・へ・と・から・まで）
+# Lesson 02 – 核心助词详解（に・で・へ・と・から・まで）||Core Particles (に・で・へ・と・から・まで)
 
 ## 本课单词表
 
@@ -46,11 +46,35 @@
 | 作る | つくる | 做/制作//make |
 | 卒業する | そつぎょうする | 毕业//graduate |
 
-## 1. 基础助词详解||1. Core Particles — Detailed Guide
+## 1. を（宾语助词）||を — Object Particle
 
----
+### 含義||Meaning
 
-### を — 宾语助词||を — Object Particle
+:::zh
+を标记动作的**直接对象**（"把什么……"）；和移动动词搭配时标记**经过的场所**或**离开的场所**。原则：一个句子里通常只能出现一个を。
+:::
+:::en
+を marks the **direct object** of an action ("do something to X"). With movement verbs it marks the **space traversed** or the **place departed from**. Rule of thumb: a sentence usually contains only one を.
+:::
+
+### 例句||Example Sentences
+
+:::zh
+1. 本**を**読む。（读书。）
+2. コーヒー**を**飲む。（喝咖啡。）
+3. 道**を**歩く。（沿着路走。→ 经过的场所）
+4. 公園**を**走る。（穿过公园跑。→ 经过的场所）
+5. 大学**を**卒業する。（大学毕业。→ 离开的场所）
+6. 家**を**出る。（出门。→ 离开的场所）
+:::
+:::en
+1. 本**を**読む。(Read a book.)
+2. コーヒー**を**飲む。(Drink coffee.)
+3. 道**を**歩く。(Walk along the road. → space traversed)
+4. 公園**を**走る。(Run through the park. → space traversed)
+5. 大学**を**卒業する。(Graduate from university. → place departed)
+6. 家**を**出る。(Leave the house. → place departed)
+:::
 
 #### 用法①：他动词的直接宾语（最基本）||Usage ①: Direct object of a transitive verb (most basic)
 
@@ -135,13 +159,34 @@ With verbs of leaving (出る, 卒業する, 降りる, etc.), を marks the pla
 
 ---
 
-### に — 多功能助词（最难的助词！）||に — Multi-function Particle (The Trickiest One!)
+## 2. に（多功能助词）||に — Multi-function Particle (The Trickiest One!)
+
+### 含義||Meaning
 
 :::zh
-に有很多用法，但核心语感是**"指向某个点"**——时间的点、空间的点、对象的点。
+に有很多用法，但核心语感是**"指向某个点"**——时间的点、空间的点、对象的点。常见用法：存在的场所、具体时间点、目的地、动作对象、目的、变化的结果。
 :::
 :::en
-に has many uses, but the core feeling is **"pointing to a specific point"** — a point in time, a point in space, or a target/recipient.
+に has many uses, but the core feeling is **"pointing to a specific point"** — a point in time, a point in space, or a target/recipient. Common uses: location of existence, specific time point, destination, target of an action, purpose, and result of a change.
+:::
+
+### 例句||Example Sentences
+
+:::zh
+1. 東京**に**住んでいます。（住在东京。→ 存在场所）
+2. 7時**に**起きます。（7点起床。→ 时间点）
+3. 学校**に**行きます。（去学校。→ 目的地）
+4. 友達**に**会う。（见朋友。→ 对象）
+5. 映画を見**に**行く。（去看电影。→ 目的）
+6. 医者**に**なる。（成为医生。→ 变化结果）
+:::
+:::en
+1. 東京**に**住んでいます。(I live in Tokyo. → location of existence)
+2. 7時**に**起きます。(Wake up at 7. → time point)
+3. 学校**に**行きます。(Go to school. → destination)
+4. 友達**に**会う。(Meet a friend. → target)
+5. 映画を見**に**行く。(Go to watch a movie. → purpose)
+6. 医者**に**なる。(Become a doctor. → result of change)
 :::
 
 #### 用法①：存在的场所 — "在哪里有/住"||Usage ①: Location of existence — "where something is/lives"
@@ -304,13 +349,34 @@ Used with なる/する.
 
 ---
 
-### で — 手段/场所/原因助词||で — Means / Venue / Cause Particle
+## 3. で（手段・场所・原因）||で — Means / Venue / Cause Particle
+
+### 含義||Meaning
 
 :::zh
-核心语感是**"在某个范围/条件下进行动作"**。
+核心语感是**"在某个范围/条件下进行动作"**——动作发生的场所、手段/工具、原因/理由、范围、数量或期限的限度。
 :::
 :::en
-Core feeling: **"performing an action within a certain scope or condition."**
+Core feeling: **"performing an action within a certain scope or condition"** — the venue of an action, means/instrument, cause/reason, scope, and quantity/time limit.
+:::
+
+### 例句||Example Sentences
+
+:::zh
+1. 図書館**で**勉強する。（在图书馆学习。→ 动作场所）
+2. 箸**で**食べる。（用筷子吃。→ 手段）
+3. バス**で**行く。（坐公交去。→ 手段）
+4. 風邪**で**休みました。（因为感冒请假了。→ 原因）
+5. 世界**で**一番大きい。（世界上最大。→ 范围）
+6. 30分**で**できる。（30分钟能做完。→ 限度）
+:::
+:::en
+1. 図書館**で**勉強する。(Study at the library. → venue)
+2. 箸**で**食べる。(Eat with chopsticks. → means)
+3. バス**で**行く。(Go by bus. → means)
+4. 風邪**で**休みました。(Took a day off because of a cold. → cause)
+5. 世界**で**一番大きい。(The biggest in the world. → scope)
+6. 30分**で**できる。(Can finish in 30 minutes. → limit)
 :::
 
 #### 用法①：动作发生的场所 — "在哪里做"||Usage ①: Venue of an action — "doing something where"
@@ -447,13 +513,34 @@ Key distinction from に: で emphasizes **actively doing something there**.
 
 ---
 
-### の — 连接助词||の — Linking Particle
+## 4. の（连接助词）||の — Linking Particle
+
+### 含義||Meaning
 
 :::zh
-核心功能是**连接两个名词**，表示各种关系。
+核心功能是**连接两个名词**，表示所属、类别、材质、同位等关系；也可以**代替名词**避免重复（"……的那个"）。
 :::
 :::en
-Core function: **linking two nouns** to express various relationships.
+Core function: **linking two nouns** to express possession, category, material, or apposition; の can also **substitute for a noun** to avoid repetition ("the … one").
+:::
+
+### 例句||Example Sentences
+
+:::zh
+1. 私**の**本（我的书。→ 所属）
+2. 日本語**の**先生（日语老师。→ 类别）
+3. 木**の**机（木桌子。→ 材质）
+4. 友達**の**田中さん（朋友田中。→ 同位）
+5. 赤い**の**がほしい。（想要红色的。→ 代替名词）
+6. 昨日買った**の**はどこ？（昨天买的那个在哪？→ 代替名词）
+:::
+:::en
+1. 私**の**本 (my book. → possession)
+2. 日本語**の**先生 (a teacher of Japanese. → category)
+3. 木**の**机 (a wooden desk. → material)
+4. 友達**の**田中さん (my friend Tanaka. → apposition)
+5. 赤い**の**がほしい。(I want the red one. → noun substitute)
+6. 昨日買った**の**はどこ？(Where is the one I bought yesterday? → noun substitute)
 :::
 
 #### 用法①：所属 — "……的"||Usage ①: Possession — "…'s"
@@ -525,7 +612,35 @@ Core function: **linking two nouns** to express various relationships.
 
 ---
 
-### も — "也" / 全否定 / 强調||も — "Also" / Total Negation / Emphasis
+## 5. も（也・全否定・强調）||も — "Also" / Total Negation / Emphasis
+
+### 含義||Meaning
+
+:::zh
+も表示**"也"**（添加同类）；**疑问词 + も + 否定**＝全否定（什么都/谁都……不）；**数量 + も**＝强调"多/久"。
+:::
+:::en
+も means **"also"** (adding something of the same kind); **question word + も + negative** = total negation ("nothing / nobody …"); **number + も** = emphasizing "a lot / a long time."
+:::
+
+### 例句||Example Sentences
+
+:::zh
+1. 私**も**学生です。（我也是学生。→ 也）
+2. これ**も**美味しい。（这个也好吃。→ 也）
+3. 何**も**食べなかった。（什么都没吃。→ 全否定）
+4. 誰**も**来なかった。（谁都没来。→ 全否定）
+5. 3時間**も**待った。（等了足足3个小时。→ 强调多）
+6. 一度**も**行ったことがない。（一次都没去过。→ 一次都不）
+:::
+:::en
+1. 私**も**学生です。(I am also a student. → also)
+2. これ**も**美味しい。(This is also delicious. → also)
+3. 何**も**食べなかった。(Didn't eat anything. → total negation)
+4. 誰**も**来なかった。(Nobody came. → total negation)
+5. 3時間**も**待った。(Waited for a whole 3 hours. → emphasis)
+6. 一度**も**行ったことがない。(Have never gone even once. → not even once)
+:::
 
 #### 用法①：也（肯定句）||Usage ①: "Also" (affirmative)
 
@@ -583,7 +698,35 @@ Core function: **linking two nouns** to express various relationships.
 
 ---
 
-### から / まで — 起点/终点||から / まで — Starting Point / Endpoint
+## 6. から・まで（起点・终点）||から / まで — Starting Point / Endpoint
+
+### 含義||Meaning
+
+:::zh
+から表示**起点**（时间/空间/来源），まで表示**终点**；**から〜まで**＝"从……到……"；**までに**＝截止期限（在……之前完成）。注意区分まで（持续到）和までに（最迟在……之前）。
+:::
+:::en
+から marks the **starting point** (time/space/source); まで marks the **endpoint**; **から〜まで** = "from … to …"; **までに** = a deadline ("by …"). Note the contrast between まで (continuing until) and までに (no later than).
+:::
+
+### 例句||Example Sentences
+
+:::zh
+1. 9時**から**始まります。（从9点开始。→ 时间起点）
+2. 東京**から**来ました。（从东京来的。→ 空间起点）
+3. 5時**まで**働きます。（工作到5点。→ 时间终点）
+4. 駅**まで**歩いた。（走到车站。→ 空间终点）
+5. 9時**から**5時**まで**働きます。（从9点工作到5点。）
+6. 明日**までに**出してください。（请在明天之前交。→ 截止期限）
+:::
+:::en
+1. 9時**から**始まります。(Starts from 9. → time start)
+2. 東京**から**来ました。(Came from Tokyo. → spatial start)
+3. 5時**まで**働きます。(Work until 5. → time end)
+4. 駅**まで**歩いた。(Walked to the station. → spatial end)
+5. 9時**から**5時**まで**働きます。(Work from 9 to 5.)
+6. 明日**までに**出してください。(Please submit it by tomorrow. → deadline)
+:::
 
 #### から = 从（起点）||から = From (starting point)
 
@@ -645,34 +788,59 @@ Note the distinction between まで and までに:
 
 ---
 
-### へ — 方向助词||へ — Direction Particle
+## 7. へ（方向助词）||へ — Direction Particle
+
+### 含義||Meaning
 
 :::zh
-和に类似，表示移动的方向。
-
-- 学校**へ**行く。（去学校。→ 朝学校的方向）
-- 日本**へ**来た。（来了日本。）
-
-> に vs へ：
-> - に = 强调**到达点**（到了那里）
-> - へ = 强调**方向感**（朝那个方向）
-> - 日常几乎可以互换，用に更多。但「〜への」（名词修饰）只能用へ：日本**への**旅行（去日本的旅行）
+和に类似，表示移动的方向。に强调**到达点**，へ强调**方向感**，日常几乎可以互换、用に更多。但「〜への」（名词修饰）只能用へ。
 :::
 :::en
-Similar to に, but emphasizes direction of movement.
+Similar to に, but emphasizes the direction of movement. に stresses **the arrival point**, へ stresses **the direction**; they are nearly interchangeable in daily use (に is more common). But 「〜への」 (noun-modifying) can only use へ.
+:::
 
-- 学校**へ**行く。(Go toward school.)
-- 日本**へ**来た。(Came to Japan.)
+### 例句||Example Sentences
 
-> に vs へ:
-> - に = emphasizes **the arrival point** (got there)
-> - へ = emphasizes **the direction** (heading that way)
-> - Nearly interchangeable in daily use; に is more common. But 「〜への」(noun-modifying) can only use へ: 日本**への**旅行 (a trip to Japan)
+:::zh
+1. 学校**へ**行く。（去学校。→ 朝学校的方向）
+2. 日本**へ**来た。（来了日本。）
+3. 日本**への**旅行（去日本的旅行。→ 名词修饰只能用へ）
+:::
+:::en
+1. 学校**へ**行く。(Go toward school.)
+2. 日本**へ**来た。(Came to Japan.)
+3. 日本**への**旅行 (a trip to Japan. → noun-modifying へ only)
 :::
 
 ---
 
-### と — 並列/引用/共同||と — Together / Quotation / Listing
+## 8. と（並列・引用・共同）||と — Together / Quotation / Listing
+
+### 含義||Meaning
+
+:::zh
+と表示**"和……一起"**（共同动作）、**全部列举**（A和B和C，就这些）、以及**引用**（说/想/听说……）。列举对比：と＝全部列举，や＝部分列举。
+:::
+:::en
+と expresses **"together with …"** (joint action), **exhaustive listing** (A and B and C, that's all), and **quotation** (said/thought/heard that …). Compare listing: と = exhaustive, や = partial.
+:::
+
+### 例句||Example Sentences
+
+:::zh
+1. 友達**と**映画を見た。（和朋友看了电影。→ 共同）
+2. 彼**と**結婚する。（和他结婚。→ 共同）
+3. りんご**と**みかん**と**バナナを買った。（买了苹果、橘子和香蕉。→ 全部列举）
+4. 「おはよう」**と**言った。（说了"早上好"。→ 引用）
+5. 明日は雨だ**と**思う。（我觉得明天下雨。→ 引用）
+:::
+:::en
+1. 友達**と**映画を見た。(Watched a movie with a friend. → together)
+2. 彼**と**結婚する。(Marry him. → together)
+3. りんご**と**みかん**と**バナナを買った。(Bought apples, oranges, and bananas. → exhaustive list)
+4. 「おはよう」**と**言った。(Said "good morning." → quotation)
+5. 明日は雨だ**と**思う。(I think it will rain tomorrow. → quotation)
+:::
 
 #### 用法①：和……一起||Usage ①: Together with…
 
@@ -719,7 +887,33 @@ Similar to に, but emphasizes direction of movement.
 
 ---
 
-### よ / ね / な / わ — 语气助词||よ / ね / な / わ — Sentence-final Particles
+## 9. 语气助词（よ・ね・な・わ）||よ / ね / な / わ — Sentence-final Particles
+
+### 含義||Meaning
+
+:::zh
+句末语气助词传达说话人的态度：**よ**＝告知对方不知道的信息/提醒；**ね**＝寻求共鸣或确认；**よね**＝告知+确认；**な**＝自言自语/感叹（男性多用）；**わ**＝柔和的主张（女性多用，现代男性也用）。
+:::
+:::en
+Sentence-final particles convey the speaker's attitude: **よ** = informing/alerting (you don't know this); **ね** = seeking agreement or confirmation; **よね** = informing + confirming; **な** = talking to oneself / exclaiming (more masculine); **わ** = soft assertion (more feminine, also used by modern men).
+:::
+
+### 例句||Example Sentences
+
+:::zh
+1. 明日は雨です**よ**。（明天要下雨哦。→ 告知/提醒）
+2. いい天気です**ね**。（天气真好呢。→ 寻求共鸣）
+3. 難しいです**よね**。（很难对吧。→ 告知+确认）
+4. 美味しい**な**。（好好吃啊。→ 自言自语）
+5. 私も行く**わ**。（我也去。→ 柔和主张）
+:::
+:::en
+1. 明日は雨です**よ**。(It's going to rain tomorrow, you know. → informing)
+2. いい天気です**ね**。(Nice weather, isn't it. → seeking agreement)
+3. 難しいです**よね**。(It's hard, right? → informing + confirming)
+4. 美味しい**な**。(This is really good. → to oneself)
+5. 私も行く**わ**。(I'll go too. → gentle assertion)
+:::
 
 #### よ = 告知（我知道你不知道）||よ = Informing (I know something you don't)
 
@@ -809,7 +1003,7 @@ Similar to に, but emphasizes direction of movement.
 
 ---
 
-## 2. 敬体与简体的切换规则||2. Switching Between Polite and Plain Forms
+## 10. 敬体与简体的切换规则||10. Switching Between Polite and Plain Forms
 
 :::zh
 这个在阅读和听力中非常重要：

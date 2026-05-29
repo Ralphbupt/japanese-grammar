@@ -1,4 +1,4 @@
-# Lesson 18 – 使役形（させる）
+# Lesson 18 – 使役形（させる）||Causative Form (させる)
 
 ## 本课单词表
 
@@ -57,7 +57,7 @@ Expresses "making someone do something" or "letting/allowing someone do somethin
 - **Permission**: allowing/letting someone do something freely
 :::
 
-### 变形规则||Conjugation Rules
+### 接続||Conjugation Rules
 
 :::zh
 | 类别 | 规则 | 例子 |
@@ -159,6 +159,30 @@ Expresses "making someone do something" or "letting/allowing someone do somethin
 > In short: **One sentence cannot have two を.**
 :::
 
+### 例句||Example Sentences
+
+:::zh
+1. 部長は部下に残業**させた**。（部长让下属加班了。→ 强制）
+2. 親は子供にピアノを習わ**せている**。（父母让孩子学钢琴。→ 强制）
+3. 先生は学生を廊下に立た**せた**。（老师罚学生站在走廊。→ 强制）
+4. 子供を自由に遊ば**せている**。（让孩子自由玩耍。→ 允许）
+5. 学生に好きな本を選ば**せた**。（让学生自己选喜欢的书。→ 允许）
+6. 考え**させてください**。（请让我想想。→ 请求）
+7. 自己紹介**させていただきます**。（请允许我做自我介绍。→ 商务请求）
+8. 先に帰ら**せてもらえませんか**。（可以让我先回去吗？→ 请求）
+:::
+
+:::en
+1. 部長は部下に残業**させた**。(The manager made the subordinate work overtime. → coercion)
+2. 親は子供にピアノを習わ**せている**。(The parents are making their child learn piano. → coercion)
+3. 先生は学生を廊下に立た**せた**。(The teacher made the student stand in the hallway. → coercion)
+4. 子供を自由に遊ば**せている**。(I let the children play freely. → permission)
+5. 学生に好きな本を選ば**せた**。(I let the students choose whatever book they liked. → permission)
+6. 考え**させてください**。(Please let me think about it. → request)
+7. 自己紹介**させていただきます**。(Please allow me to introduce myself. → business request)
+8. 先に帰ら**せてもらえませんか**。(Would it be possible for me to leave early? → request)
+:::
+
 ### 用法①：强制（命令/要求）||Usage ①: Coercion (Command / Demand)
 
 :::zh
@@ -253,6 +277,26 @@ A very common polite request meaning "please allow me to...":
 
 :::en
 The combination of causative form with giving/receiving expressions is extremely common in daily life. Understanding this combination is key to mastering the causative form.
+:::
+
+### 例句||Example Sentences
+
+:::zh
+1. 子供に好きなおもちゃを買わ**せてあげた**。（让孩子买了喜欢的玩具。→ 我施恩）
+2. 疲れている部下を早く帰ら**せてあげた**。（让疲惫的下属早点回去了。→ 我施恩）
+3. ちょっと休ま**せてもらっても**いいですか。（可以让我休息一下吗？→ 我感恩）
+4. 留学**させてもらって**、親に感謝している。（父母让我去留学了，我很感激。→ 我感恩）
+5. 母は好きなことを**させてくれた**。（妈妈让我做了喜欢的事。→ 别人真好）
+6. 友達が車を運転**させてくれた**。（朋友让我开了他的车。→ 别人真好）
+:::
+
+:::en
+1. 子供に好きなおもちゃを買わ**せてあげた**。(I let the child buy the toy they wanted. → I grant a favor)
+2. 疲れている部下を早く帰ら**せてあげた**。(I let the tired subordinate go home early. → I grant a favor)
+3. ちょっと休ま**せてもらっても**いいですか。(Would it be alright if I took a short break? → I'm grateful)
+4. 留学**させてもらって**、親に感謝している。(My parents let me study abroad, and I'm grateful. → I'm grateful)
+5. 母は好きなことを**させてくれた**。(Mom let me do what I liked. → how kind of them)
+6. 友達が車を運転**させてくれた**。(My friend let me drive their car. → how kind of them)
 :::
 
 ### ① 〜させてあげる（让某人做 = 对他好）||させてあげる (Letting someone do = a favor to them)
