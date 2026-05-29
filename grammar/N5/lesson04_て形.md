@@ -1,4 +1,4 @@
-# Lesson 04 – て形（最重要的动词变形）
+# Lesson 04 – て形（最重要的动词变形）||The て-form (the most important conjugation)
 
 ## 本课单词表
 

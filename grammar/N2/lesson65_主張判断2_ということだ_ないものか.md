@@ -1,4 +1,4 @@
-# Lesson 65 – 主張・判断② — ということだ/ないものか/としては・としても
+# Lesson 65 – 主張・判断② — ということだ/ないものか/としては・としても||Assertion & Judgment ② — ということだ/ないものか/としては・としても
 
 :::zh
 这一课继续学习N2级别的主张・判断表达。「ということだ」有"也就是说"和"据说"两个意思，「ないものか」表示"能不能呢"（期望），「としては」「としても」表示"作为……来说"。这些语法在N2的阅读和听力中非常重要，尤其是在理解文章逻辑和观点时。
@@ -315,3 +315,12 @@ Relays information heard from others or the news. Equivalent to 「〜そうだ 
 9. Isn't there some way to shorten the meeting time? (Use ないものか)
 10. For an international student, his Japanese is very fluent. (Use としては)
 :::
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天

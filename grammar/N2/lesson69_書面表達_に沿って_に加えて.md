@@ -1,4 +1,4 @@
-# Lesson 69 – 書面表達 — に沿って/を踏まえて/を除いて/に加えて/上で/末に
+# Lesson 69 – 書面表達 — に沿って/を踏まえて/を除いて/に加えて/上で/末に||Written Expression — に沿って/を踏まえて/を除いて/に加えて/上で/末に
 
 :::zh
 这一课学习用于书面表达和正式场合的N2语法。「に沿って」「を踏まえて」表示依据或参照，「を除いて」「に加えて」表示排除或追加，「上で」「末に」表示先后关系或经过某过程的结果。这些在商务日语和论说文中非常重要。
@@ -411,3 +411,12 @@ Both meanings convey "moving along a line or direction."
 9. After years of effort, the dream was finally realized. (Use 末に)
 10. In addition to English, IT skills are also needed. (Use に加えて)
 :::
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天

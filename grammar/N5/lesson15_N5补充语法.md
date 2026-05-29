@@ -1,4 +1,4 @@
-# Lesson 15 – N5 补充语法（ことができる・のだ・のに・ので）
+# Lesson 15 – N5 补充语法（ことができる・のだ・のに・ので）||N5 Supplementary Grammar (ことができる・のだ・のに・ので)
 
 :::zh
 收尾课，补充前面没有覆盖到的N5常用语法，并进行总复习。
@@ -8,7 +8,7 @@
 The closing lesson of N5 — covering commonly used N5 grammar not yet addressed, followed by a full review.
 :::
 
-## 本课単词表
+## 本课单词表
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
@@ -808,3 +808,12 @@ Example:
 :::
 
 ---
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天

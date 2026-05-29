@@ -1,4 +1,4 @@
-# Lesson 03 – 动词分类与ます形
+# Lesson 03 – 动词分类与ます形||Verb Groups & the ます-form
 
 ## 本课单词表
 
@@ -617,3 +617,12 @@ Beyond polite speech, **the ます stem** (ます form minus ます) is the base
 :::
 
 ---
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天

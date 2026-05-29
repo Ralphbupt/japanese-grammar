@@ -1,4 +1,4 @@
-# Lesson 66 – 対比・関係 — に反して/一方（で）/反面/につれて/にしたがって
+# Lesson 66 – 対比・関係 — に反して/一方（で）/反面/につれて/にしたがって||Contrast & Relation — に反して/一方（で）/反面/につれて/にしたがって
 
 :::zh
 这一课学习表示"对比"和"相关变化"的N2语法。「に反して」「一方（で）」「反面」用于表达对比或相反的两面，「につれて」「にしたがって」用于描述两个事物的联动变化。这组语法在N2阅读和听力中出现频率极高。
@@ -399,3 +399,12 @@ This lesson covers N2 grammar for expressing "contrast" and "correlated change."
 9. Please act according to company regulations. (Use にしたがって)
 10. This restaurant is delicious, but on the flip side, it's expensive. (Use 反面)
 :::
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天

@@ -1,4 +1,4 @@
-# Lesson 35 – N3 书面助词 — において/に対して/について/によって/を通じて/をもとに
+# Lesson 35 – N3 书面助词 — において/に対して/について/によって/を通じて/をもとに||N3 Written-Language Particles — において/に対して/について/によって/を通じて/をもとに
 
 :::zh
 这些语法是书面正式表达，本质上是助词「で」「に」的升级版。口语中用简单助词就够了，但阅读和考试中大量出现。
@@ -230,3 +230,12 @@ Noun + に対して / に対する + Noun
 
 > These are essentially formal, written upgrades of 「で」 and 「に」. Simple particles suffice in speech, but these appear frequently in reading and exams.
 :::
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天

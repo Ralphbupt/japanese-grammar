@@ -1,4 +1,4 @@
-# Lesson 74 – 高頻考点 — げ/抜く/次第だ/きり/ぶりに/つき
+# Lesson 74 – 高頻考点 — げ/抜く/次第だ/きり/ぶりに/つき||High-Frequency Points — げ/抜く/次第だ/きり/ぶりに/つき
 
 :::zh
 这一课汇集N2考试中频率极高的6个语法点。「げ」表示外观样子，「抜く」表示坚持到底，「次第だ/次第で」表示取决于或缘由，「きり」表示限定或持续状态，「ぶりに」表示时隔，「つき」表示原因或单位比率。这些都是N2文法选择题的常客。
@@ -483,3 +483,12 @@ This lesson brings together 6 grammar points that appear very frequently on the 
 9. I met an old friend for the first time in 5 years. (Use ぶりに)
 10. Limited to two per person. (Use につき)
 :::
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天

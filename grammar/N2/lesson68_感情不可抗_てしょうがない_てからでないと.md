@@ -1,4 +1,4 @@
-# Lesson 68 – 感情・不可抗 — てしょうがない/てしかたがない/てはいられない/ないことには/てからでないと
+# Lesson 68 – 感情・不可抗 — てしょうがない/てしかたがない/てはいられない/ないことには/てからでないと||Emotion & Inevitability — てしょうがない/てしかたがない/てはいられない/ないことには/てからでないと
 
 :::zh
 这一课学习表示"无法控制的感情"和"不得不/非……不可"的N2语法。「てしょうがない」「てしかたがない」表达无法抑制的感受，「てはいられない」表示不能继续某状态，「ないことには」「てからでないと」表示前提条件不可或缺。这些语法在JLPT N2语法选择题中频繁出现。
@@ -327,3 +327,12 @@ This lesson covers N2 grammar for "uncontrollable emotions" and "necessary preco
 9. You can't get the certificate until you pass the exam first. (Use てからでないと)
 10. It's so hot I can't stand it. (Use てしょうがない)
 :::
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天

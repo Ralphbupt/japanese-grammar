@@ -1,4 +1,4 @@
-# Lesson 60 – 原因・理由 — あまり/ばこそ/だけに/だけあって/ものだから
+# Lesson 60 – 原因・理由 — あまり/ばこそ/だけに/だけあって/ものだから||Cause & Reason — あまり/ばこそ/だけに/だけあって/ものだから
 
 :::zh
 这一课学习N2级别表示原因・理由的高级语法。「あまり」表示由于过度导致的结果，「ばこそ」强调正因为某原因才产生某结果，「だけに」「だけあって」表示"正因为/不愧是"，「ものだから」用于辩解式说明原因。这些语法比N3的「から」「ので」更加细腻，是N2考试的重点。
@@ -453,3 +453,12 @@ Can be used for both positive and negative situations.
 9. Because the train was delayed, I was late. (Use ものだから)
 10. Precisely because expectations were high, the disappointment was even greater. (Use だけに)
 :::
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天

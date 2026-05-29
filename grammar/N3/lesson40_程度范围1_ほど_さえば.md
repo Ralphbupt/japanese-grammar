@@ -1,4 +1,4 @@
-# Lesson 40 – 程度・範囲① — ほど/くらい・ぐらい/ば〜ほど/さえ〜ば
+# Lesson 40 – 程度・範囲① — ほど/くらい・ぐらい/ば〜ほど/さえ〜ば||Degree & Extent ① — ほど/くらい・ぐらい/ば〜ほど/さえ〜ば
 
 :::zh
 这一课学习表示"程度"和"条件极限"的语法。「ほど」「くらい」表示程度，「ば〜ほど」表示递进关系，「さえ〜ば」表示最低限度条件。这些是N3阅读理解中的高频考点。
@@ -332,3 +332,12 @@ Indicates degree — "to the extent that…" or "so much that…". Often used in
 9. It takes about 2 hours. (Use くらい)
 10. The food was so delicious it was moving. (Use ほど)
 :::
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天

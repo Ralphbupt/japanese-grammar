@@ -1,4 +1,4 @@
-# Lesson 17 – N5 补充语法②（がある・にいく・のが好き・くらい）
+# Lesson 17 – N5 补充语法②（がある・にいく・のが好き・くらい）||N5 Supplementary Grammar ② (がある・にいく・のが好き・くらい)
 
 :::zh
 补充N5阶段尚未覆盖的基础语法：存在表达、目的移动、动词名词化、大约数量、部分列举和限定表达。
@@ -8,7 +8,7 @@
 Supplementary N5 grammar not yet covered: existence expressions, purpose of movement, verb nominalization, approximation, partial listing, and limitation.
 :::
 
-## 本课単词表
+## 本课单词表
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
@@ -886,3 +886,12 @@ Example: 水だけ飲んだ。 → 水しか飲まなかった。
 - [ ] +7天
 - [ ] +14天
 - [ ] +30天
+
+## 复习计划||Review Schedule
+
+- [ ] 当天
+- [ ] +1 天
+- [ ] +4 天
+- [ ] +7 天
+- [ ] +14 天
+- [ ] +30 天
