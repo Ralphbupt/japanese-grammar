@@ -133,35 +133,67 @@ const TTS_JS = `document.addEventListener('DOMContentLoaded', function(){
   });
 });`;
 
-// Deferred Google Analytics loader — fires 1.5s after the load event,
-// and bails out entirely for headless browsers / crawlers / Lighthouse
-// runs (so they don't pollute GA's "new users" count with fake sessions).
-// Async loading is fine for parsing but Lighthouse still penalises any
-// third-party script in the critical path. Deferring until idle moves
-// the gtag fetch out of LCP / TTI measurements without meaningfully
-// hurting analytics accuracy.
+// Engagement-gated Google Analytics loader. GA is NOT loaded on page load;
+// it is loaded only once the visitor produces a human engagement signal —
+// the first real scroll / pointer / key / touch interaction, OR ~3s of
+// continuous foreground visibility. Headless crawlers that fake their UA
+// and load-and-leave (sub-second, never scrolling) never trip any of these,
+// so they stop inflating GA's user / session / page_view counts. This also
+// keeps third-party JS out of the LCP/TTI critical path for Lighthouse.
 const GTAG_DEFERRED = `<script>
 (function() {
   var ua = navigator.userAgent || '';
   // Skip GA for automation / crawlers / SEO tools — they all match here.
   if (navigator.webdriver) return;
   if (/HeadlessChrome|Lighthouse|PhantomJS|Puppeteer|Playwright|crawler|spider|bot|Slurp|facebookexternalhit/i.test(ua)) return;
-  window.addEventListener('load', function() {
-    setTimeout(function() {
-      var s = document.createElement('script');
-      s.async = true;
-      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-D1KNQTFN1R';
-      document.head.appendChild(s);
-      window.dataLayer = window.dataLayer || [];
-      window.gtag = function(){ dataLayer.push(arguments); };
-      gtag('js', new Date());
-      gtag('config', 'G-D1KNQTFN1R');
-    }, 1500);
-  });
-  // Safe event helper — silently no-ops if gtag hasn't loaded yet (first 1.5s
-  // after load, or for users who block analytics). Callers don't need to
-  // guard their calls. Buffers nothing intentionally; the first 1.5s of
-  // interactions are a rounding error.
+
+  var loaded = false;
+  function loadGA() {
+    if (loaded) return;
+    loaded = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-D1KNQTFN1R';
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function(){ dataLayer.push(arguments); };
+    gtag('js', new Date());
+    gtag('config', 'G-D1KNQTFN1R');
+  }
+
+  // Engagement gate: arm interaction listeners + a foreground-visibility
+  // timer; whichever fires first loads GA, then everything is torn down.
+  function arm() {
+    var fired = false;
+    var opts = { once: true, passive: true };
+    var timer = null;
+    function stopTimer() { if (timer) { clearTimeout(timer); timer = null; } }
+    function startTimer() { if (!document.hidden && !timer) timer = setTimeout(trigger, 3000); }
+    function trigger() {
+      if (fired) return;
+      fired = true;
+      window.removeEventListener('scroll', trigger, opts);
+      window.removeEventListener('pointerdown', trigger, opts);
+      window.removeEventListener('keydown', trigger, opts);
+      window.removeEventListener('touchstart', trigger, opts);
+      stopTimer();
+      loadGA();
+    }
+    window.addEventListener('scroll', trigger, opts);
+    window.addEventListener('pointerdown', trigger, opts);
+    window.addEventListener('keydown', trigger, opts);
+    window.addEventListener('touchstart', trigger, opts);
+    document.addEventListener('visibilitychange', function() {
+      if (document.hidden) stopTimer(); else startTimer();
+    });
+    startTimer();
+  }
+  if (document.readyState === 'complete') arm();
+  else window.addEventListener('load', arm);
+
+  // Safe event helper — silently no-ops until GA has actually loaded (i.e.
+  // before the visitor has engaged, or for users who block analytics).
+  // Callers don't need to guard their calls.
   window.gaEvent = function(name, params) {
     if (typeof window.gtag === 'function') window.gtag('event', name, params || {});
   };
@@ -1399,6 +1431,7 @@ ${CSS}
 .breadcrumb a:hover { text-decoration: underline; }
 .breadcrumb .sep { margin: 0 0.4em; }
 .prev-next { display: flex; justify-content: space-between; align-items: flex-start; margin: 2.5rem 0 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); gap: 1rem; }
+.prev-next-top { margin: 0 0 1.75rem; padding: 0 0 1rem; border-top: none; border-bottom: 1px solid var(--border); }
 .pn-link { font-size: 0.9rem; color: var(--accent); text-decoration: none; max-width: 48%; }
 .pn-link:hover { text-decoration: underline; }
 .pn-prev { text-align: left; }
@@ -1412,6 +1445,10 @@ ${sidebarMarkupHtml}
     <a href="${SITE}">日语语法笔记</a><span class="sep">›</span><span>${lesson.jaTitle}</span>
   </nav>
   <a class="back-link" href="${SITE}">← All Lessons / 返回目录</a>
+  <nav class="prev-next prev-next-top" aria-label="lesson navigation top">
+    ${prevHtml}
+    ${nextHtml}
+  </nav>
   <article class="lesson active">${lesson.html}</article>
   <nav class="prev-next" aria-label="lesson navigation">
     ${prevHtml}
