@@ -129,7 +129,11 @@ const TTS_JS = `document.addEventListener('DOMContentLoaded', function(){
       audio.play();
       if (window.gaEvent) window.gaEvent('audio_play', { audio_id: audioId, page_path: location.pathname });
     });
-    el.appendChild(btn);
+    // Loose-list items wrap their text in a <p>; appending to the <li> would
+    // drop the inline button below that block. Append inside the trailing <p>
+    // so the 🔊 sits inline at the end of the sentence.
+    var last = el.lastElementChild;
+    (last && last.tagName === 'P' ? last : el).appendChild(btn);
   });
 });`;
 
