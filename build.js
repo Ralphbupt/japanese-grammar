@@ -955,10 +955,12 @@ async function main() {
   // ─── Cross-link related grammar points between lessons ───
   // Build an index: grammar term → { lessonId, slug }
   const grammarIndex = new Map(); // term → [{ id, slug }]
+  const searchPoints = [];        // one entry per grammar-point section (for search)
   for (const lesson of lessonPages) {
     // Extract h2 ids from the lesson HTML
     const h2Regex = /<h2[^>]*id="([^"]*)"[^>]*>([\s\S]*?)<\/h2>/gi;
     let h2Match;
+    let lessonPointCount = 0;
     while ((h2Match = h2Regex.exec(lesson.html)) !== null) {
       const slug = h2Match[1];
       // Prefer Chinese variant when bilingual heading (<span class="lang-zh">).
@@ -968,6 +970,18 @@ async function main() {
       // Description: first parenthesized note, used as anchor text suffix.
       const descMatch = content.match(/[（(]([^）)]+)[）)]/);
       const description = descMatch ? descMatch[1].trim() : null;
+      // Grammar-point sections start with "N." per the lesson template.
+      // Index each as one searchable point that deep-links to its anchor.
+      if (/^\d+[.\．、]/.test(content)) {
+        searchPoints.push({
+          id: lesson.id,
+          s: slug,
+          t: content.replace(/^\d+[.\．、]\s*/, ""),
+          l: lesson.level || "",
+          c: lesson.jaTitle || "",
+        });
+        lessonPointCount++;
+      }
       // Extract the grammar pattern (〜xxx or Japanese term)
       const patterns = content.match(/[〜～]?[\u3040-\u309f\u30a0-\u30ffー\u4e00-\u9fff]+/g) || [];
       for (const pat of patterns) {
@@ -984,6 +998,11 @@ async function main() {
         if (!grammarIndex.has(term)) grammarIndex.set(term, []);
         grammarIndex.get(term).push({ id: lesson.id, slug, description, level: lesson.level });
       }
+    }
+    // Lessons with no numbered points (checklists, 五十音, 总复习) stay
+    // findable as a single lesson-level entry that jumps to the page top.
+    if (lessonPointCount === 0) {
+      searchPoints.push({ id: lesson.id, s: "", t: lesson.jaTitle || lesson.id, l: lesson.level || "", c: "" });
     }
   }
 
@@ -1030,6 +1049,108 @@ async function main() {
     lessonPages[li].html = html;
     articlesHtml[li] = `<article id="${lessonPages[li].id}" class="lesson">${html}</article>`;
   }
+
+  // ─── Site search (command palette) ───
+  // A 🔍 button (injected into #bottom-controls on every page) and the "/"
+  // shortcut open a modal that lazy-fetches search-index.json and filters
+  // lessons by title / grammar-point term / level. Self-contained; relies
+  // only on window.gaEvent (optional) and the prebuilt index.
+  const SEARCH_JS = `<script>
+(function() {
+  var PATH = ${JSON.stringify(SITE_PATH)};
+  var idx = null, loading = false, overlay, input, results, sel = -1;
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function ensureIndex() {
+    if (idx || loading) return;
+    loading = true;
+    fetch(PATH + 'search-index.json').then(function(r){ return r.json(); })
+      .then(function(d){ idx = d; loading = false; if (overlay && !overlay.hidden) render(input.value); })
+      .catch(function(){ loading = false; });
+  }
+  function buildUI() {
+    overlay = document.createElement('div');
+    overlay.id = 'search-overlay';
+    overlay.hidden = true;
+    overlay.innerHTML = '<div id="search-box" role="dialog" aria-modal="true" aria-label="搜索课程">' +
+      '<input id="search-input" type="search" autocomplete="off" spellcheck="false" placeholder="搜索语法点或课程… / Search grammar or lessons…" aria-label="搜索">' +
+      '<ul id="search-results"></ul>' +
+      '<div id="search-hint">↑↓ 选择 · Enter 打开 · Esc 关闭</div></div>';
+    document.body.appendChild(overlay);
+    input = overlay.querySelector('#search-input');
+    results = overlay.querySelector('#search-results');
+    overlay.addEventListener('click', function(e){ if (e.target === overlay) close(); });
+    input.addEventListener('input', function(){ render(input.value); });
+    input.addEventListener('keydown', onKey);
+    results.addEventListener('click', function(e){
+      var a = e.target.closest && e.target.closest('a');
+      if (a && window.gaEvent) window.gaEvent('search_select', { to: new URL(a.href).pathname });
+    });
+  }
+  function render(q) {
+    q = (q || '').trim().toLowerCase();
+    sel = -1;
+    if (!idx) { results.innerHTML = '<li class="search-empty">加载中… / Loading…</li>'; return; }
+    var m;
+    if (!q) { m = idx.slice(0, 12); }
+    else {
+      // Rank point-title (and level) hits above parent-lesson-context hits,
+      // so the exact grammar point leads and its siblings follow.
+      var inT = [], inC = [];
+      for (var i = 0; i < idx.length; i++) {
+        var r = idx[i];
+        if ((r.t + ' ' + r.l).toLowerCase().indexOf(q) !== -1) inT.push(r);
+        else if ((r.c || '').toLowerCase().indexOf(q) !== -1) inC.push(r);
+      }
+      m = inT.concat(inC).slice(0, 40);
+    }
+    if (!m.length) { results.innerHTML = '<li class="search-empty">无结果 / No results</li>'; return; }
+    results.innerHTML = m.map(function(r){
+      return '<li><a href="' + PATH + r.id + '/' + (r.s ? '#' + r.s : '') + '">' +
+        '<span class="sr-lvl">' + esc(r.l) + '</span>' +
+        '<span class="sr-title">' + esc(r.t) + '</span>' +
+        (r.c ? '<span class="sr-pts">' + esc(r.c) + '</span>' : '') + '</a></li>';
+    }).join('');
+  }
+  function setSel(n) {
+    var as = results.querySelectorAll('a');
+    if (!as.length) return;
+    sel = (n + as.length) % as.length;
+    for (var i=0;i<as.length;i++) as[i].classList.toggle('sel', i===sel);
+    as[sel].scrollIntoView({ block: 'nearest' });
+  }
+  function onKey(e) {
+    if (e.key === 'Escape') close();
+    else if (e.key === 'ArrowDown') { e.preventDefault(); setSel(sel+1); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); setSel(sel-1); }
+    else if (e.key === 'Enter') { var as = results.querySelectorAll('a'); var a = sel >= 0 ? as[sel] : as[0]; if (a) location.href = a.href; }
+  }
+  function open() {
+    if (!overlay) buildUI();
+    ensureIndex();
+    overlay.hidden = false;
+    document.body.classList.add('search-open');
+    input.value = ''; render('');
+    setTimeout(function(){ input.focus(); }, 0);
+    if (window.gaEvent) window.gaEvent('search_open', {});
+  }
+  function close() { if (overlay) { overlay.hidden = true; document.body.classList.remove('search-open'); } }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === '/' && !/^(input|textarea|select)$/i.test(e.target.tagName || '') && !e.target.isContentEditable) { e.preventDefault(); open(); }
+  });
+  function addBtn() {
+    var host = document.getElementById('bottom-controls');
+    if (!host) return;
+    var b = document.createElement('button');
+    b.id = 'search-btn'; b.type = 'button';
+    b.setAttribute('aria-label', '搜索 / Search'); b.title = '搜索 / Search ( / )';
+    b.textContent = '🔍';
+    b.addEventListener('click', open);
+    host.insertBefore(b, host.firstChild);
+  }
+  if (document.readyState !== 'loading') addBtn();
+  else document.addEventListener('DOMContentLoaded', addBtn);
+})();
+</script>`;
 
   // ─── Shared sidebar markup ───
   // Used on home, lesson, and level pages so the directory is reachable
@@ -1081,7 +1202,8 @@ async function main() {
   requestAnimationFrame(centerItem);
 })();
 ${TTS_JS}
-</script>`;
+</script>
+${SEARCH_JS}`;
 
   // ─── Home page main content ───
   // Don't inline every lesson article into index.html (3.98MB → ~50KB).
@@ -1273,6 +1395,17 @@ ${JS}
     "utf-8"
   );
   console.log(`  Tagged ${audioRequests.length} sentences with audio IDs.`);
+
+  // ─── Search index ───
+  // Lazy-fetched by the search modal on first open (keeps every page light).
+  // One record per grammar point: id + slug (deep-link anchor), point title,
+  // level, and the parent lesson title as context. Built in the h2 loop above.
+  fs.writeFileSync(
+    path.join(__dirname, "dist", "search-index.json"),
+    JSON.stringify(searchPoints),
+    "utf-8"
+  );
+  console.log(`  Wrote search-index.json (${searchPoints.length} grammar points).`);
 
   // ─── Generate individual lesson pages ───
   for (let li = 0; li < lessonPages.length; li++) {
@@ -2691,6 +2824,24 @@ html.theme-dark .home-howto p { color: #b8b8c4; }
 /* Code */
 html.theme-dark code { color: #f0a0b0; }
 html.theme-dark pre code { color: #d4d4dc; }
+
+/* ─── Search (command palette) ─── */
+#search-btn { background: none; border: none; color: inherit; font-size: 1.05rem; cursor: pointer; padding: 0; line-height: 1; }
+#search-overlay { position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,.45); display: flex; align-items: flex-start; justify-content: center; padding: 12vh 1rem 1rem; }
+#search-overlay[hidden] { display: none; }
+#search-box { width: 100%; max-width: 560px; max-height: 70vh; display: flex; flex-direction: column; overflow: hidden; background: var(--card-bg); color: inherit; border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,.3); }
+#search-input { border: none; outline: none; background: transparent; color: inherit; font-size: 1.05rem; padding: 1rem 1.2rem; border-bottom: 1px solid var(--border); }
+#search-results { list-style: none; margin: 0; padding: .4rem; overflow-y: auto; }
+#search-results a { display: flex; align-items: baseline; gap: .6rem; padding: .55rem .7rem; border-radius: 8px; text-decoration: none; color: inherit; }
+#search-results a.sel, #search-results a:hover { background: var(--accent); color: #fff; }
+#search-results a.sel .sr-lvl, #search-results a:hover .sr-lvl { background: rgba(255,255,255,.25); }
+.sr-lvl { flex-shrink: 0; font-size: .7rem; font-weight: 700; background: var(--accent); color: #fff; padding: .1rem .4rem; border-radius: 4px; }
+.sr-title { font-weight: 600; }
+.sr-pts { font-size: .8rem; opacity: .6; margin-left: auto; text-align: right; }
+.search-empty { padding: 1rem 1.2rem; opacity: .6; }
+#search-hint { font-size: .72rem; opacity: .55; padding: .5rem 1.2rem; border-top: 1px solid var(--border); }
+@media (max-width: 600px) { #search-hint { display: none; } #search-overlay { padding: 6vh .6rem 1rem; } }
+html.theme-dark #search-box { background: #1f1f2e; }
 `;
 
 // ─── JS ───
