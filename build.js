@@ -831,37 +831,56 @@ async function main() {
         }
       );
 
-      // Extract grammar points from h2 headings in the original markdown for SEO descriptions
+      // Extract grammar points from h2 headings — feeds the per-level 速查表,
+      // lesson pills, RSS descriptions, and SEO titles/descriptions.
+      //
+      // A heading "## N. <name>（中文释义）||English" becomes a grammar point
+      // when its <name> (numbering + （…） gloss stripped) is one of:
+      //   (a) a 〜/～ tilde pattern — the canonical grammar-pattern marker;
+      //   (b) a standard conjugation-form name written in kanji
+      //       (使役形 / 受身形 / 可能形 …) — these carry no kana of their own,
+      //       so the old tilde/kana test silently dropped whole lessons
+      //       (N4 18–20, N5 11, …) from the 速查表;
+      //   (c) a kana 文型 tucked inside the （…） gloss
+      //       (e.g. 动作的授受（〜てあげる/てもらう/てくれる）);
+      //   (d) a short kana-dominant pattern like て形 / ます形.
+      // Boilerplate / non-grammar sections (单词表・练习・复习计划・辨析・对比・
+      // 图解・模板 …) are rejected via SECTION_NOISE. Tilde patterns are kept
+      // unconditionally so a noise word in their gloss never drops them.
+      const FORM_TERMS = /(使役受身形|使役形|受身形|受動形|可能形|意向形|意志形|命令形|禁止形|形容词副词化|形容詞副詞化)/;
+      const SECTION_NOISE = /(单词表|本课单词|今日|练习|練習|复习计划|复习|总复习|总復習|总结|总览|総覧|辨析|对照表|对照|对比|三者|\bvs\b|图解|常见错误|整理|汇总|卡片|模板|套路|清单|策略|过渡指南|考点|考试策略|切换规则|不同表达|完整活用表|高頻)/i;
       const grammarPoints = [];
+      const cleanPoints = [];
       const mdH2Regex = /^##\s+(.+)$/gm;
       let mdH2Match;
       while ((mdH2Match = mdH2Regex.exec(md)) !== null) {
-        let headingText = mdH2Match[1].replace(/[#*`]/g, "").trim();
-        // Grammar points must contain 〜/～ OR Japanese kana (hiragana/katakana)
-        // This excludes pure Chinese headings like "本课单词表" or "练习"
-        if (/[〜～]/.test(headingText) || /[\u3040-\u309f\u30a0-\u30ff]/.test(headingText)) {
-          // Use text before || if bilingual heading
-          const gpName = headingText.includes("||") ? headingText.split("||")[0].trim() : headingText;
-          grammarPoints.push(gpName);
+        const headingText = mdH2Match[1].replace(/[#*`]/g, "").trim();
+        // Use text before || on bilingual headings, then strip "1. " numbering.
+        const rawName = (headingText.includes("||") ? headingText.split("||")[0] : headingText).trim();
+        const name = rawName.replace(/^\d+[.、．]\s*/, "").trim();
+        if (!name) continue;
+        const outside = name.replace(/（[^）]*）/g, "").replace(/\([^)]*\)/g, "").trim();
+        const parenKana = name.match(/[（(]\s*([^（）()]*[〜～][^（）()]*?)\s*[）)]/);
+        let label = null;
+        if (/[〜～]/.test(outside)) {
+          label = outside;                                  // (a) tilde pattern
+        } else if (SECTION_NOISE.test(name)) {
+          continue;                                         // boilerplate / non-grammar section
+        } else if (FORM_TERMS.test(outside)) {
+          label = outside;                                  // (b) kanji conjugation-form name
+        } else if (parenKana) {
+          label = parenKana[1].trim();                      // (c) kana 文型 lifted from （…）
+        } else if (outside.length <= 8) {                   // (d) short kana-dominant pattern
+          const kanaCount = (outside.match(/[぀-ゟ゠-ヿ]/g) || []).length;
+          if (kanaCount >= 1 && kanaCount >= outside.length / 2 &&
+              !/[的与和及或]/.test(outside) && !/(用法|应用|基本|形式)/.test(outside)) {
+            label = outside;
+          }
         }
+        if (!label) continue;
+        grammarPoints.push(name);
+        cleanPoints.push(label);
       }
-      // Clean grammar points: strip "1. " numbering and "（中文释义）" parens.
-      // Only keep entries that look like real grammar patterns:
-      //   - Contains 〜/～ (tilde marks a grammar pattern)
-      //   - OR is short kana-mostly text like "て形", "ます形"
-      // Reject section titles like "て形的基本用法", "今日练习", "本课单词表".
-      const cleanPoints = grammarPoints
-        .map(p => p.replace(/^\d+[.、．]\s*/, "").replace(/（[^）]*）/g, "").trim())
-        .filter(p => {
-          if (p.length === 0) return false;
-          if (/[〜～]/.test(p)) return true;
-          // Allow short kana-dominant patterns (≤8 chars, mostly kana, no Chinese explainer words)
-          if (p.length > 8) return false;
-          if (/[的与和及或]/.test(p)) return false;
-          if (/(用法|应用|练习|总结|单词|计划|复习|基本|形式)/.test(p)) return false;
-          const kanaCount = (p.match(/[぀-ゟ゠-ヿ]/g) || []).length;
-          return kanaCount >= 1 && kanaCount >= p.length / 2;
-        });
 
       // Lesson meta line: last-updated date + reading time. Inserted right
       // after H1 so the freshness signal is visible to readers and Google
