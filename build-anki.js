@@ -86,6 +86,48 @@ function parseGrammarSections(md) {
       const fallback = extractBilingual(content);
       meaning = fallback.zh;
     }
+    // Fallback: some lessons embed example sentences under 用法①②③ (or similar)
+    // subsections instead of a dedicated ### 例句 header. Those points still
+    // deserve cards — harvest the numbered example sentences from the zh blocks,
+    // merging dialogue continuation lines (e.g. "1. A：…" + "B：…（译）") into one.
+    if (!examples) {
+      const exItems = [];
+      for (let i = 1; i < subSections.length; i++) {
+        const sub = subSections[i];
+        const headerLine = sub.split("\n")[0];
+        if (/^(接[续続]|Conjugation)/i.test(headerLine)) continue;
+        if (/例句|例文|Example/i.test(headerLine)) continue;
+        const zhText = extractBilingual(sub.split("\n").slice(1).join("\n")).zh;
+        if (!zhText) continue;
+        let cur = null;
+        for (const raw of zhText.split("\n")) {
+          const line = raw.trim();
+          if (/^\d+[.、．]/.test(line)) {
+            if (cur) exItems.push(cur);
+            cur = line;
+          } else if (cur && line && /[぀-ヿ一-鿿]/.test(line)) {
+            cur += " " + line;
+          } else if (cur && !line) {
+            exItems.push(cur);
+            cur = null;
+          }
+        }
+        if (cur) exItems.push(cur);
+      }
+      const jp = exItems.filter(s => /[぀-ヿ一-鿿]/.test(s));
+      if (jp.length) examples = jp.join("\n");
+    }
+    if (meaning) {
+      // A point whose only meaning-ish subsection is 用法① yields a "meaning"
+      // that is actually example lines. Strip numbered example lines; fall back
+      // to the heading's parenthetical description (e.g. ものだ→「感慨/回忆/应该」).
+      const cleaned = meaning
+        .split("\n")
+        .filter(l => !/^\d+[.、．]\s*.*[぀-ヿ一-鿿]/.test(l.trim()))
+        .join("\n")
+        .trim();
+      meaning = cleaned || current.description || null;
+    }
     if (meaning) {
       sections.push({ ...current, meaning, examples });
     }

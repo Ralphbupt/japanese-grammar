@@ -275,60 +275,7 @@ Used with「〜た＋ものだ」to express nostalgia:
 
 ---
 
-## 4. 〜ものだから / 〜もので（因为……——辩解语气）||4. 〜ものだから / 〜もので (Because… — excuse tone)
-
-### 接続||Conjugation
-:::zh
-简体 + ものだから / もので
-:::
-:::en
-Plain form + ものだから / もので
-:::
-
-### 含义||Meaning
-:::zh
-"因为……（所以没办法）"，带有**辩解/借口**的语气。
-:::
-:::en
-"Because… (and so it couldn't be helped)" — carries a tone of **making excuses or apologizing**.
-:::
-
-### 例句||Example Sentences
-:::zh
-1. 電車が遅れた**ものですから**、遅刻してしまいました。（因为电车延误了，所以迟到了。）
-2. 初めて**なもので**、よくわからないんです。（因为是第一次，不太明白。）
-3. 急いでいた**ものだから**、忘れ物をしてしまった。（因为太着急了，忘了东西。）
-4. あまりにも美味しかった**ものだから**、全部食べてしまった。（因为太好吃了，全吃完了。）
-5. 道がわからなかった**もので**、遅くなってしまいました。（因为不认路，来晚了。）
-:::
-:::en
-1. 電車が遅れた**ものですから**、遅刻してしまいました。(Because the train was delayed, I ended up being late.)
-2. 初めて**なもので**、よくわからないんです。(Because it's my first time, I don't quite understand.)
-3. 急いでいた**ものだから**、忘れ物をしてしまった。(Because I was in a hurry, I forgot something.)
-4. あまりにも美味しかった**ものだから**、全部食べてしまった。(Because it was so delicious, I ended up eating it all.)
-5. 道がわからなかった**もので**、遅くなってしまいました。(Because I didn't know the way, I was late.)
-:::
-
-### ものだから vs から/ので||ものだから vs から/ので
-
-:::zh
-| | から | ので | ものだから |
-|---|---|---|---|
-| 语气 | 直接给理由 | 客观说明理由 | 辩解/借口 |
-| 暗示 | — | — | "我也没办法" |
-| 场合 | 通用 | 稍礼貌 | 解释迟到/失误时 |
-:::
-:::en
-| | から | ので | ものだから |
-|---|---|---|---|
-| Tone | Direct reason | Objective explanation | Excuse / apology |
-| Implication | — | — | "I couldn't help it" |
-| Situation | General | Slightly polite | Explaining tardiness / mistakes |
-:::
-
----
-
-## 5. わけだ vs ものだ 总区分||5. わけだ vs ものだ — Key Differences
+## 4. わけだ vs ものだ 总区分||4. わけだ vs ものだ — Key Differences
 
 :::zh
 | | わけだ | ものだ |
@@ -470,18 +417,16 @@ Plain form + ものだから / もので
 :::zh
 1. 虽说会做饭，也就是煮个泡面的水平。
 2. 小时候经常和朋友在公园里玩。（怀旧语气）
-3. 因为是第一次来，不太认路。（辩解语气）
-4. 难怪他日语说得好——原来在日本住了10年。
-5. 并不是不想去，只是没时间。
-6. 既然答应了，就不能不做。
+3. 难怪他日语说得好——原来在日本住了10年。
+4. 并不是不想去，只是没时间。
+5. 既然答应了，就不能不做。
 :::
 :::en
 1. Even though I say I can cook, it's just instant noodles level.
 2. I used to play in the park with friends when I was a kid. (nostalgic)
-3. Because it's my first time here, I don't know the way well. (excuse tone)
-4. No wonder his Japanese is good — he lived in Japan for 10 years.
-5. It's not that I don't want to go, I just don't have the time.
-6. Since I promised, I can't not do it.
+3. No wonder his Japanese is good — he lived in Japan for 10 years.
+4. It's not that I don't want to go, I just don't have the time.
+5. Since I promised, I can't not do it.
 :::
 
 <details>
@@ -490,18 +435,16 @@ Plain form + ものだから / もので
 :::zh
 1. 料理ができるといっても、インスタントラーメンを作るぐらいだ。
 2. 子供の頃、よく友達と公園で遊んだものだ。
-3. 初めて来たもので、道がよくわからないんです。
-4. 道理で日本語が上手なわけだ。10年も日本に住んでいたんだから。
-5. 行きたくないわけではない。ただ時間がないだけだ。
-6. 約束したんだから、やらないわけにはいかない。
+3. 道理で日本語が上手なわけだ。10年も日本に住んでいたんだから。
+4. 行きたくないわけではない。ただ時間がないだけだ。
+5. 約束したんだから、やらないわけにはいかない。
 :::
 :::en
 1. 料理ができるといっても、インスタントラーメンを作るぐらいだ。
 2. 子供の頃、よく友達と公園で遊んだものだ。
-3. 初めて来たもので、道がよくわからないんです。
-4. 道理で日本語が上手なわけだ。10年も日本に住んでいたんだから。
-5. 行きたくないわけではない。ただ時間がないだけだ。
-6. 約束したんだから、やらないわけにはいかない。
+3. 道理で日本語が上手なわけだ。10年も日本に住んでいたんだから。
+4. 行きたくないわけではない。ただ時間がないだけだ。
+5. 約束したんだから、やらないわけにはいかない。
 :::
 
 </details>

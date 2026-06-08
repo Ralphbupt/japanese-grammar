@@ -226,43 +226,7 @@ Used to define or explain meaning: "What we call… means…"
 
 ---
 
-## 4. 〜というより（与其说……不如说……）||4. 〜というより (Rather than saying… / More like…)
-
-### 接続||Conjugation
-:::zh
-名词/形容词/动词普通形 + というより
-:::
-:::en
-Noun / Adjective / Verb (plain form) + というより
-:::
-
-### 含义||Meaning
-:::zh
-"与其说是A，不如说更接近B"，用来修正或更精确地描述。
-:::
-:::en
-"Rather than A, it's more like B" — used to correct or give a more precise description.
-:::
-
-### 例句||Example Sentences
-:::zh
-1. 彼は天才**というより**、努力家だと思う。（与其说他是天才，不如说是个努力的人。）
-2. この料理は辛い**というより**、しょっぱい。（与其说这道菜辣，不如说咸。）
-3. 好き**というより**、尊敬している。（与其说喜欢，不如说是尊敬。）
-4. 怒っている**というより**、悲しんでいるようだ。（与其说在生气，不如说在伤心。）
-5. あの映画は面白い**というより**、考えさせられる作品だ。（与其说那部电影有趣，不如说是让人深思的作品。）
-:::
-:::en
-1. 彼は天才**というより**、努力家だと思う。(Rather than a genius, I'd say he's a hard worker.)
-2. この料理は辛い**というより**、しょっぱい。(Rather than spicy, this dish is more salty.)
-3. 好き**というより**、尊敬している。(Rather than liking him, I respect him.)
-4. 怒っている**というより**、悲しんでいるようだ。(Rather than angry, she seems sad.)
-5. あの映画は面白い**というより**、考えさせられる作品だ。(Rather than entertaining, that movie is thought-provoking.)
-:::
-
----
-
-## 5. 〜といえば（说到……）||5. 〜といえば (Speaking of… / When it comes to…)
+## 4. 〜といえば（说到……）||4. 〜といえば (Speaking of… / When it comes to…)
 
 ### 接続||Conjugation
 :::zh
@@ -298,47 +262,7 @@ Noun + といえば
 
 ---
 
-## 6. 〜といっても（虽说……但是）||6. 〜といっても (Even though I say… / Sure, but…)
-
-### 接続||Conjugation
-:::zh
-简体 + といっても
-:::
-:::en
-Plain form + といっても
-:::
-
-### 含义||Meaning
-:::zh
-"虽说是……，但实际上并没有那么……"，修正对方可能的误解。
-:::
-:::en
-"Even though I say… / Sure, but in reality it's not that…" — used to correct a possible misunderstanding.
-:::
-
-### 例句||Example Sentences
-:::zh
-1. 料理ができる**といっても**、卵焼きぐらいだ。（虽说会做菜，但也就煎鸡蛋的程度。）
-2. 日本語ができる**といっても**、簡単な会話だけだ。（虽说会日语，但只是简单对话。）
-3. 運動している**といっても**、週に一回歩くだけだ。（虽说在运动，但只是每周走一次。）
-4. 広い**といっても**、6畳しかない。（虽说宽敞，但也只有6张榻榻米大。）
-5. 近い**といっても**、歩いて30分かかる。（虽说近，但走路要30分钟。）
-6. 安い**といっても**、5000円はする。（虽说便宜，但也要5000日元。）
-7. 日本に住んでいた**といっても**、3ヶ月だけだ。（虽说在日本住过，但只有3个月。）
-:::
-:::en
-1. 料理ができる**といっても**、卵焼きぐらいだ。(Sure, I can cook, but only something like tamagoyaki.)
-2. 日本語ができる**といっても**、簡単な会話だけだ。(Even though I say I can speak Japanese, it's only basic conversation.)
-3. 運動している**といっても**、週に一回歩くだけだ。(Sure, I exercise, but it's just walking once a week.)
-4. 広い**といっても**、6畳しかない。(Even though I say it's spacious, it's only 6 tatami mats.)
-5. 近い**といっても**、歩いて30分かかる。(Even though I say it's close, it's a 30-minute walk.)
-6. 安い**といっても**、5000円はする。(Even though I say it's cheap, it still costs 5000 yen.)
-7. 日本に住んでいた**といっても**、3ヶ月だけだ。(Sure, I lived in Japan, but it was only 3 months.)
-:::
-
----
-
-## 7. という vs って vs と言っていた 比较表||7. という vs って vs と言っていた — Comparison
+## 5. という vs って vs と言っていた 比较表||5. という vs って vs と言っていた — Comparison
 
 :::zh
 | 表达 | 语体 | 用法 | 例句 |
@@ -415,19 +339,15 @@ Plain form + といっても
 
 :::zh
 1. 所谓"居酒屋"，就是大家下班后喝酒聊天的地方。
-2. 与其说他内向，不如说他很细腻。
-3. 说到京都，就想到寺庙和红叶。
-4. 虽说住在东京，但其实在郊外。
-5. 据说那家拉面店下个月要关了。
-6. 没收到回复，也就是说被拒绝了吧。
+2. 说到京都，就想到寺庙和红叶。
+3. 据说那家拉面店下个月要关了。
+4. 没收到回复，也就是说被拒绝了吧。
 :::
 :::en
 1. What we call an "izakaya" is a place where people drink and chat after work.
-2. Rather than introverted, he's more like delicate/sensitive.
-3. When it comes to Kyoto, I think of temples and autumn leaves.
-4. Even though I say I live in Tokyo, it's actually the suburbs.
-5. Apparently that ramen shop is closing next month.
-6. I didn't get a reply, which means I was probably turned down.
+2. When it comes to Kyoto, I think of temples and autumn leaves.
+3. Apparently that ramen shop is closing next month.
+4. I didn't get a reply, which means I was probably turned down.
 :::
 
 <details>
@@ -435,19 +355,15 @@ Plain form + といっても
 
 :::zh
 1. 「居酒屋」**というのは**、仕事の後にみんなでお酒を飲んだり話したりする場所の**ことだ**。
-2. 彼は内向的**というより**、繊細な人だと思う。
-3. 京都**といえば**、お寺と紅葉を思い出す。
-4. 東京に住んでいる**といっても**、実は郊外だ。
-5. あのラーメン屋は来月閉まる**ということだ**。
-6. 返事が来なかった**ということは**、断られた**ということだ**ろう。
+2. 京都**といえば**、お寺と紅葉を思い出す。
+3. あのラーメン屋は来月閉まる**ということだ**。
+4. 返事が来なかった**ということは**、断られた**ということだ**ろう。
 :::
 :::en
 1. 「居酒屋」**というのは**、仕事の後にみんなでお酒を飲んだり話したりする場所の**ことだ**。
-2. 彼は内向的**というより**、繊細な人だと思う。
-3. 京都**といえば**、お寺と紅葉を思い出す。
-4. 東京に住んでいる**といっても**、実は郊外だ。
-5. あのラーメン屋は来月閉まる**ということだ**。
-6. 返事が来なかった**ということは**、断られた**ということだ**ろう。
+2. 京都**といえば**、お寺と紅葉を思い出す。
+3. あのラーメン屋は来月閉まる**ということだ**。
+4. 返事が来なかった**ということは**、断られた**ということだ**ろう。
 :::
 
 </details>
@@ -458,15 +374,11 @@ Plain form + といっても
 1. 「たこ焼き」ということ食べ物を食べたことがありますか。（想表达"叫做章鱼烧的食物"）
 2. 彼が合格したのということは嬉しいニュースだ。（想表达"他合格了这件事"）
 3. 日本というば、寿司が有名だ。（想表达"说到日本"）
-4. あの映画は怖いと言うより、つまらない。（想表达"与其说可怕不如说无聊"）
-5. 正直というても、全部は言えない。（想表达"虽说要诚实"）
 :::
 :::en
 1. 「たこ焼き」ということ食べ物を食べたことがありますか。(intending "a food called takoyaki")
 2. 彼が合格したのということは嬉しいニュースだ。(intending "the fact that he passed")
 3. 日本というば、寿司が有名だ。(intending "speaking of Japan")
-4. あの映画は怖いと言うより、つまらない。(intending "rather than scary, boring")
-5. 正直というても、全部は言えない。(intending "even though I say honestly")
 :::
 
 <details>
@@ -479,10 +391,6 @@ Plain form + といっても
    → 彼が合格した**ということ**は嬉しいニュースだ。
 3. ❌ というば → ✅ **といえば**（"说到"是と+いえば，不是と+いうば）
    → 日本**といえば**、寿司が有名だ。
-4. ❌ と言うより → ✅ **というより**（固定搭配写成一个词，不分开写と言う）
-   → あの映画は怖い**というより**、つまらない。
-5. ❌ というても → ✅ **といっても**（促音っ不能漏，是といっても）
-   → 正直だ**といっても**、全部は言えない。
 :::
 :::en
 1. ❌ ということ → ✅ **という** (For naming/defining, use という + noun, not ということ)
@@ -491,10 +399,6 @@ Plain form + といっても
    → 彼が合格した**ということ**は嬉しいニュースだ。
 3. ❌ というば → ✅ **といえば** (The form is と + いえば, not と + いうば)
    → 日本**といえば**、寿司が有名だ。
-4. ❌ と言うより → ✅ **というより** (Fixed expression written as one unit, not split as と言う)
-   → あの映画は怖い**というより**、つまらない。
-5. ❌ というても → ✅ **といっても** (Needs the small っ; the form is といっても)
-   → 正直だ**といっても**、全部は言えない。
 :::
 
 </details>
@@ -504,24 +408,16 @@ Plain form + といっても
 :::zh
 **场景1**：你的朋友问你"JLPT是什么？"，请用「〜というのは〜ことだ」回答。
 
-**场景2**：有人夸你"日语说得很好"，请用「〜といっても」谦虚地回应。
+**场景2**：你和朋友聊天，朋友说"最近很忙"。你没收到他的回复，推理他可能没空。请用「〜ということは〜ということだ」表达。
 
-**场景3**：你和朋友聊天，朋友说"最近很忙"。你没收到他的回复，推理他可能没空。请用「〜ということは〜ということだ」表达。
-
-**场景4**：有人说一个同事"很冷淡"，但你觉得不是。请用「〜というより」更正这个描述。
-
-**场景5**：你们正在聊旅行，话题转到了冲绳。请用「〜といえば」自然地引出联想。
+**场景3**：你们正在聊旅行，话题转到了冲绳。请用「〜といえば」自然地引出联想。
 :::
 :::en
 **Scenario 1**: Your friend asks "What is JLPT?" — Answer using 「〜というのは〜ことだ」.
 
-**Scenario 2**: Someone compliments your Japanese. Respond modestly using 「〜といっても」.
+**Scenario 2**: Your friend said "I've been busy." You didn't get a reply from him and want to reason why. Use 「〜ということは〜ということだ」.
 
-**Scenario 3**: Your friend said "I've been busy." You didn't get a reply from him and want to reason why. Use 「〜ということは〜ということだ」.
-
-**Scenario 4**: Someone says a coworker is "cold," but you disagree. Correct the description using 「〜というより」.
-
-**Scenario 5**: You're chatting about travel and the topic turns to Okinawa. Naturally bring up an association using 「〜といえば」.
+**Scenario 3**: You're chatting about travel and the topic turns to Okinawa. Naturally bring up an association using 「〜といえば」.
 :::
 
 <details>
@@ -529,17 +425,13 @@ Plain form + といっても
 
 :::zh
 1. 「JLPT」**というのは**、日本語の能力を測る試験の**ことです**。（所谓JLPT，就是测试日语能力的考试。）
-2. 日本語ができる**といっても**、まだN4レベルだけです。（虽说会日语，但还只是N4水平。）
-3. 返事が来ない**ということは**、忙しくて時間がない**ということだ**ろう。（没收到回复，大概是忙得没时间吧。）
-4. あの人は冷たい**というより**、人見知りなだけだと思う。（与其说冷淡，不如说只是怕生。）
-5. 沖縄**といえば**、きれいな海とゴーヤチャンプルーですね。（说到冲绳，就是美丽的大海和苦瓜杂炒。）
+2. 返事が来ない**ということは**、忙しくて時間がない**ということだ**ろう。（没收到回复，大概是忙得没时间吧。）
+3. 沖縄**といえば**、きれいな海とゴーヤチャンプルーですね。（说到冲绳，就是美丽的大海和苦瓜杂炒。）
 :::
 :::en
 1. 「JLPT」**というのは**、日本語の能力を測る試験の**ことです**。(What we call "JLPT" is a test that measures Japanese language ability.)
-2. 日本語ができる**といっても**、まだN4レベルだけです。(Even though I say I can speak Japanese, I'm still only at N4 level.)
-3. 返事が来ない**ということは**、忙しくて時間がない**ということだ**ろう。(No reply probably means he's too busy.)
-4. あの人は冷たい**というより**、人見知りなだけだと思う。(Rather than cold, I think he's just shy around strangers.)
-5. 沖縄**といえば**、きれいな海とゴーヤチャンプルーですね。(Speaking of Okinawa, it's the beautiful ocean and goya champuru.)
+2. 返事が来ない**ということは**、忙しくて時間がない**ということだ**ろう。(No reply probably means he's too busy.)
+3. 沖縄**といえば**、きれいな海とゴーヤチャンプルーですね。(Speaking of Okinawa, it's the beautiful ocean and goya champuru.)
 :::
 
 </details>

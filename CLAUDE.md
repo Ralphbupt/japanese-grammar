@@ -37,7 +37,7 @@ Key concepts:
 2. **Sidebar titles**: `JA_TITLES` maps file IDs (e.g. `lesson01`) to Japanese sidebar labels
 3. **SEO keywords**: `LESSON_KEYWORDS` maps file IDs to per-lesson keyword strings
 4. **Furigana**: kuroshiro adds ruby annotations to `data-ja` elements. Chinese text inside （…） is protected
-5. **Audio tagging**: Reads `audio/manifest.json`, matches cleaned Japanese text to pre-generated .mp3 files, adds `data-audio` attributes to matching `<li>` elements
+5. **Audio tagging**: Assigns **positional** `data-audio="l{lessonNum}.{seq}"` IDs to audio-eligible `<li data-ja>` elements in document order, and writes the id→text list to `dist/.audio-requests.json` (consumed by `build-audio.py`). ⚠️ IDs are positional, so inserting/removing examples shifts every later ID in that lesson — its mp3s must be regenerated. (`audio/manifest.json` is legacy and no longer read by the build.)
 6. **TTS JS**: Injects 🔊 buttons on elements with `data-audio`, plays `/audio/{id}.mp3` on click
 7. **Old URL redirects**: `DAY_TO_LESSON` map generates meta-refresh stubs at `/dayNN/` → `/lessonNN/`
 8. **CNAME**: Auto-generates `dist/CNAME` when `SITE` points to a non-github.io domain
