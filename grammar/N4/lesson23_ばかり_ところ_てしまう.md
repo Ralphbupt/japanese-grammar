@@ -372,144 +372,6 @@ Something that shouldn't have happened, or an unfortunate event.
 
 ---
 
-## 4. 〜ておく（事先准备/放置）||4. 〜ておく (Do in advance / Leave as is)
-
-### 接续||Conjugation
-:::zh
-动词て形 + おく
-:::
-:::en
-Verb て form + おく
-:::
-
-### 含义①：事先/提前做好准备||Meaning ①: Do something in advance / prepare ahead
-:::zh
-"先把……做好"，为将来做准备。
-
-1. 旅行の前にホテルを予約し**ておいた**。（旅行前事先预约了酒店。）
-2. 会議の資料をコピーし**ておいてください**。（请事先把会议资料复印好。）
-3. パーティーの前に部屋を掃除し**ておこう**。（派对前先把房间打扫好吧。）
-4. 明日のために早く寝**ておいたほうがいい**。（为了明天最好早点睡。）
-:::
-:::en
-"Get something done first" — preparing for the future.
-
-1. 旅行の前にホテルを予約し**ておいた**。（I reserved a hotel in advance before the trip.）
-2. 会議の資料をコピーし**ておいてください**。（Please copy the meeting materials ahead of time.）
-3. パーティーの前に部屋を掃除し**ておこう**。（Let's clean the room before the party.）
-4. 明日のために早く寝**ておいたほうがいい**。（You should go to bed early to prepare for tomorrow.）
-:::
-
-### 含义②：保持某个状态/放置不管||Meaning ②: Leave something in a certain state
-:::zh
-"就那样放着"。
-
-5. 窓を開け**ておいてください**。（请让窗户开着。→ 保持开的状态）
-6. エアコンはつけ**ておいて**。（空调开着就好。）
-7. その問題はとりあえず置い**ておこう**。（那个问题暂且先放着吧。）
-:::
-:::en
-"Leave it as is."
-
-5. 窓を開け**ておいてください**。（Please leave the window open. → Maintain the open state.）
-6. エアコンはつけ**ておいて**。（Leave the air conditioner on.）
-7. その問題はとりあえず置い**ておこう**。（Let's leave that problem aside for now.）
-:::
-
-### 口语缩略形||Colloquial contracted forms
-
-:::zh
-| 书面 | 口语 |
-|------|------|
-| 〜ておく | 〜**とく** |
-| 〜ておいた | 〜**といた** |
-| 〜ておいて | 〜**といて** |
-
-- 買っておく → 買っ**とく**
-- 調べておいた → 調べ**といた**
-- やっておいて → やっ**といて**
-:::
-:::en
-| Written | Spoken |
-|------|------|
-| 〜ておく | 〜**とく** |
-| 〜ておいた | 〜**といた** |
-| 〜ておいて | 〜**といて** |
-
-- 買っておく → 買っ**とく**
-- 調べておいた → 調べ**といた**
-- やっておいて → やっ**といて**
-:::
-
----
-
-## 5. 〜てある（结果状态 — 有人做了且保持着）||5. 〜てある (Resultant state — someone did it and it remains)
-
-### 接续||Conjugation
-:::zh
-他动词て形 + ある
-:::
-:::en
-Transitive verb て form + ある
-:::
-
-### 含义||Meaning
-:::zh
-"（有人已经做了某事，其结果）……着"。强调**有意为之的结果状态**。
-:::
-:::en
-"(Someone has already done something and) it remains that way." Emphasizes a **purposefully created resultant state**.
-:::
-
-### 和ている的区别||Difference from ている
-
-:::zh
-| | ている | てある |
-|---|---|---|
-| 例 | 窓が開い**ている** | 窓が開け**てある** |
-| 含义 | 窗户开着（单纯状态） | 窗户（被人特意）打开着 |
-| 暗示 | 不知道为什么开着 | 有人为了某个目的特意开的 |
-| 动词 | 自动词也行 | 只能他动词 |
-:::
-:::en
-| | ている | てある |
-|---|---|---|
-| Example | 窓が開い**ている** | 窓が開け**てある** |
-| Meaning | The window is open (simple state) | The window has been (intentionally) opened |
-| Implication | Unknown why it's open | Someone opened it for a purpose |
-| Verb type | Intransitive verbs also OK | Transitive verbs only |
-:::
-
-### 例句||Example Sentences
-:::zh
-1. 壁にカレンダーが貼っ**てある**。（墙上贴着日历。→ 有人贴的）
-2. テーブルの上に花が置い**てある**。（桌上放着花。→ 有人放的）
-3. もう予約し**てあります**。（已经预约好了。→ 提前做好了准备）
-4. 名前が書い**てある**。（名字写着呢。→ 有人写的）
-5. 会議の資料はコピーし**てあります**。（会议资料已经复印好了。→ 准备完毕）
-:::
-:::en
-1. 壁にカレンダーが貼っ**てある**。（A calendar is posted on the wall. → Someone put it there.）
-2. テーブルの上に花が置い**てある**。（Flowers are placed on the table. → Someone placed them.）
-3. もう予約し**てあります**。（I've already made a reservation. → Prepared in advance.）
-4. 名前が書い**てある**。（A name is written there. → Someone wrote it.）
-5. 会議の資料はコピーし**てあります**。（The meeting materials have been copied. → All set.）
-:::
-
-### てある vs ておいた||てある vs ておいた
-:::zh
-两者都有"事先做好"的意思，但：
-- ておいた = 强调**做的动作**（我事先做了）
-- てある = 强调**做完后的状态**（现在处于做好的状态）
-:::
-:::en
-Both carry the sense of "done in advance," but:
-- ておいた = emphasizes the **act of doing** (I did it in advance)
-- てある = emphasizes the **state after doing** (it is currently in the done state)
-:::
-
----
-
 ## 练习问题||Practice Exercises
 
 ### 练习1: 选择合适的语法||Exercise 1: Choose the correct grammar
@@ -648,46 +510,38 @@ Convert these sentences to colloquial contracted forms (ちゃう/じゃう seri
 ### 练习4: 综合填空||Exercise 4: Comprehensive fill-in-the-blank
 
 :::zh
-选择最合适的语法填入括号：てしまった / たところだ / たばかりだ / ておいた / てある
+选择最合适的语法填入括号：てしまった / たところだ / たばかりだ
 
 1. A:「もう夕飯食べた？」B:「うん、今食べ（　　　）。」→ 刚刚此刻吃完
 2. パスポートをなくし（　　　）！どうしよう。→ 遗憾
-3. 出張の前に、飛行機のチケットを買っ（　　　）。→ 事先准备
-4. 壁にポスターが貼っ（　　　）。→ 结果状态
-5. この会社に入っ（　　　）で、まだ何もわからない。→ 刚进公司
-6. 地震で家が壊れ（　　　）。→ 遗憾/不幸
+3. この会社に入っ（　　　）で、まだ何もわからない。→ 刚进公司
+4. 地震で家が壊れ（　　　）。→ 遗憾/不幸
 
 <details>
 <summary>答案</summary>
 
 1. 今食べ**たところだ**。（刚此刻吃完 → たところだ）
 2. パスポートをなくし**てしまった**。（遗憾 → てしまった）
-3. 飛行機のチケットを買っ**ておいた**。（事先准备 → ておいた）
-4. 壁にポスターが貼っ**てある**。（有人贴的结果状态 → てある）
-5. この会社に入っ**たばかり**で、まだ何もわからない。（主观感觉"刚" → たばかり）
-6. 地震で家が壊れ**てしまった**。（不幸的事 → てしまった）
+3. この会社に入っ**たばかり**で、まだ何もわからない。（主观感觉"刚" → たばかり）
+4. 地震で家が壊れ**てしまった**。（不幸的事 → てしまった）
 
 </details>
 :::
 :::en
-Choose the best grammar: てしまった / たところだ / たばかりだ / ておいた / てある
+Choose the best grammar: てしまった / たところだ / たばかりだ
 
 1. A: "Have you eaten dinner?" B: "Yeah, I just finished eating（　　　）." → Just now, this moment
 2. I lost my passport（　　　）! What should I do? → Regret
-3. Before the business trip, I bought the plane ticket（　　　）. → Prepared in advance
-4. A poster is stuck on the wall（　　　）. → Resultant state
-5. I just joined this company（　　　）and don't know anything yet. → Recently joined
-6. The house was destroyed in the earthquake（　　　）. → Unfortunate event
+3. I just joined this company（　　　）and don't know anything yet. → Recently joined
+4. The house was destroyed in the earthquake（　　　）. → Unfortunate event
 
 <details>
 <summary>Answers</summary>
 
 1. 今食べ**たところだ**。（Just finished this moment → たところだ）
 2. パスポートをなくし**てしまった**。（Regret → てしまった）
-3. 飛行機のチケットを買っ**ておいた**。（Prepared in advance → ておいた）
-4. 壁にポスターが貼っ**てある**。（Resultant state from someone's action → てある）
-5. この会社に入っ**たばかり**で、まだ何もわからない。（Subjective "just" → たばかり）
-6. 地震で家が壊れ**てしまった**。（Unfortunate event → てしまった）
+3. この会社に入っ**たばかり**で、まだ何もわからない。（Subjective "just" → たばかり）
+4. 地震で家が壊れ**てしまった**。（Unfortunate event → てしまった）
 
 </details>
 :::

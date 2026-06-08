@@ -1,4 +1,4 @@
-# Lesson 24 – ておく・てある・て以来・にかけて||ておく・てある・て以来・にかけて
+# Lesson 24 – ておく・てある・て以来||ておく・てある・て以来
 
 ## 本课单词表
 
@@ -366,70 +366,7 @@ Verb て-form + 以来
 
 ---
 
-## 8. 〜にかけて（从……到……期間）||8. 〜にかけて (Spanning from… to…)
-
-### 接続||Conjugation
-:::zh
-名词 + から + 名词 + にかけて
-:::
-:::en
-Noun + から + Noun + にかけて
-:::
-
-### 含义||Meaning
-:::zh
-"从……到……（的期间）"，表示一段连续的范围或时间，**边界模糊**。
-:::
-:::en
-"From … to …" — expresses a continuous range of time or space, with **vague endpoints**.
-:::
-
-### 例句||Example Sentences
-:::zh
-1. 今夜から明日の朝**にかけて**、雨が降るでしょう。（从今晚到明天早上，大概会下雨。）
-2. 関東から東北**にかけて**、地震がありました。（从关东到东北地区发生了地震。）
-3. 来週から再来週**にかけて**、出張の予定です。（从下周到下下周预定出差。）
-4. 秋から冬**にかけて**、気温が下がる。（从秋天到冬天气温下降。）
-5. 午後から夕方**にかけて**、天気が崩れるらしい。（从下午到傍晚天气好像会变差。）
-6. 3月から4月**にかけて**、桜が咲く。（从三月到四月，樱花盛开。）
-7. 1980年代から90年代**にかけて**、日本経済は急成長した。（从80年代到90年代，日本经济急速增长。）
-8. 明け方から朝**にかけて**、霧が出るでしょう。（从黎明到早上大概会有雾。）
-:::
-:::en
-1. 今夜から明日の朝**にかけて**、雨が降るでしょう。(It will probably rain from tonight through tomorrow morning.)
-2. 関東から東北**にかけて**、地震がありました。(There was an earthquake spanning from Kanto to Tohoku.)
-3. 来週から再来週**にかけて**、出張の予定です。(I'm scheduled for a business trip from next week through the week after.)
-4. 秋から冬**にかけて**、気温が下がる。(Temperatures drop from autumn through winter.)
-5. 午後から夕方**にかけて**、天気が崩れるらしい。(The weather is supposed to deteriorate from afternoon into evening.)
-6. 3月から4月**にかけて**、桜が咲く。(Cherry blossoms bloom from March through April.)
-7. 1980年代から90年代**にかけて**、日本経済は急成長した。(From the 1980s through the 1990s, the Japanese economy grew rapidly.)
-8. 明け方から朝**にかけて**、霧が出るでしょう。(There will probably be fog from dawn through morning.)
-:::
-
-### 辨析：にかけて vs まで||Comparison: にかけて vs まで
-
-:::zh
-| | にかけて | まで |
-|---|---|---|
-| 边界 | 模糊（大概到那个范围） | 精确（到那个点为止） |
-| 例 | 9月から10月にかけて（9月到10月左右） | 10月まで（到10月为止） |
-| 用途 | 天气预报、地理范围 | 时间限制、截止日 |
-
-> **注意：** にかけて前面一定有「から」，表示起点到终点的模糊范围。まで可以单独用。
-:::
-:::en
-| | にかけて | まで |
-|---|---|---|
-| Boundary | Vague (approximately that range) | Precise (up to that exact point) |
-| Example | 9月から10月にかけて (around Sept to Oct) | 10月まで (until October) |
-| Usage | Weather forecasts, geographic ranges | Time limits, deadlines |
-
-> **Note:** にかけて always requires から before it, expressing a vague span from start to end. まで can be used alone.
-:::
-
----
-
-## 9. 时间表达总对比||9. Time Expressions — Complete Comparison
+## 8. 时间表达总对比||8. Time Expressions — Complete Comparison
 
 :::zh
 | 表达 | 时间点 | 含义 | 例 |
@@ -439,7 +376,6 @@ Noun + から + Noun + にかけて
 | ているところだ | ─●─ | 正在做 | 食べているところだ |
 | るところだ | →● | 正要做 | 出かけるところだ |
 | て以来 | ●───→ | 自从做了一直…… | 来て以来ずっと |
-| にかけて | ●〜〜● | 从A到B的模糊范围 | 秋から冬にかけて |
 :::
 :::en
 | Expression | Time point | Meaning | Example |
@@ -449,7 +385,6 @@ Noun + から + Noun + にかけて
 | ているところだ | ─●─ | In the middle of | 食べているところだ |
 | るところだ | →● | About to | 出かけるところだ |
 | て以来 | ●───→ | Ever since (continuing) | 来て以来ずっと |
-| にかけて | ●〜〜● | Vague span from A to B | 秋から冬にかけて |
 :::
 
 ---
@@ -567,16 +502,13 @@ Convert the following to colloquial form:
 
 </details>
 
-### D. て以来/にかけて 填空||D. Fill in: て以来 / にかけて
+### D. て以来 填空||D. Fill in: て以来
 
 :::zh
 1. 大学を卒業し（　　）、一度も母校に帰っていない。
-2. 今夜から明日の朝（　　）、雪が降るでしょう。
-3. 日本に来（　　）、ずっと東京に住んでいる。
-4. 関東から東北（　　）、台風の被害が大きかった。
-5. あの映画を見（　　）、日本語の勉強を始めた。
-6. 6月から7月（　　）、梅雨で雨が多い。
-7. 転職し（　　）、毎日が充実している。
+2. 日本に来（　　）、ずっと東京に住んでいる。
+3. あの映画を見（　　）、日本語の勉強を始めた。
+4. 転職し（　　）、毎日が充実している。
 :::
 
 <details>
@@ -584,12 +516,9 @@ Convert the following to colloquial form:
 
 :::zh
 1. **て以来**（自从毕业后一直没回）
-2. **にかけて**（从今晚到明早的模糊范围）
-3. **て以来**（自从来了日本一直住着）
-4. **にかけて**（从关东到东北的地理范围）
-5. **て以来**（自从看了那部电影后）
-6. **にかけて**（从6月到7月的模糊时间范围）
-7. **て以来**（自从换工作后一直很充实）
+2. **て以来**（自从来了日本一直住着）
+3. **て以来**（自从看了那部电影后）
+4. **て以来**（自从换工作后一直很充实）
 :::
 
 </details>
@@ -602,11 +531,9 @@ Convert the following to colloquial form:
 3. 桌上放着一封信。（有人放的）
 4. 弟弟净是打游戏，不学习。（不满）
 5. 自从开始这份工作，每天都很忙。
-6. 从12月到1月，会很冷。
-7. 我事先把明天的便当做好了。
-8. 花瓶里插着花。（有人插的）
-9. 自从搬到东京，一直很开心。
-10. 从昨晚到今天早上一直在下雨。
+6. 我事先把明天的便当做好了。
+7. 花瓶里插着花。（有人插的）
+8. 自从搬到东京，一直很开心。
 :::
 :::en
 1. I accidentally lost my phone. (regret)
@@ -614,11 +541,9 @@ Convert the following to colloquial form:
 3. There is a letter placed on the table. (someone put it there)
 4. My brother does nothing but play games and doesn't study. (dissatisfaction)
 5. Ever since I started this job, I've been busy every day.
-6. From December through January, it will be cold.
-7. I made tomorrow's lunch box in advance.
-8. Flowers have been arranged in the vase. (someone put them there)
-9. Ever since moving to Tokyo, I've been happy.
-10. It has been raining from last night through this morning.
+6. I made tomorrow's lunch box in advance.
+7. Flowers have been arranged in the vase. (someone put them there)
+8. Ever since moving to Tokyo, I've been happy.
 :::
 
 <details>
@@ -629,11 +554,9 @@ Convert the following to colloquial form:
 3. テーブルの上に手紙が置いてある。
 4. 弟はゲームをしてばかりいて、勉強しない。
 5. この仕事を始めて以来、毎日忙しい。
-6. 12月から1月にかけて、寒くなる。
-7. 明日のお弁当を作っておいた。（口语：作っといた）
-8. 花瓶に花が飾ってある。
-9. 東京に引っ越して以来、ずっと楽しい。
-10. 昨夜から今朝にかけて、雨が降っていた。
+6. 明日のお弁当を作っておいた。（口语：作っといた）
+7. 花瓶に花が飾ってある。
+8. 東京に引っ越して以来、ずっと楽しい。
 
 </details>
 
@@ -645,7 +568,6 @@ Convert the following to colloquial form:
 3. 弟はゲームばかりする。（想表达"净是在打游戏"的不满）
 4. さっき食べたところだ。（想表达"刚来日本不久"的意思用ばかり）
 5. ビールが冷やしておいた。（想表达"我事先冰好了啤酒"）
-6. 9月10月にかけて暑い。（想表达"从9月到10月都很热"）
 :::
 
 <details>
@@ -657,7 +579,6 @@ Convert the following to colloquial form:
 3. △ 语法没错但不满语气不够 → ✅ ゲームをし**てばかりいる**（てばかりいる更强调持续的不满）
 4. ❌ 题目和意思不匹配 → ✅ 日本に来た**ばかり**だ。（ところだ更即时，ばかり更主观"不久前"）
 5. ❌ が → ✅ ビール**を**冷やしておいた（ておく用「を」标记宾语，てある才用「が」）
-6. ❌ 9月10月 → ✅ 9月**から**10月にかけて（にかけて前面必须有「から」表示起点）
 :::
 :::en
 1. ❌ 開けている → ✅ 開け**てある** (Use てある for intentional resultant state)
@@ -665,7 +586,6 @@ Convert the following to colloquial form:
 3. △ Grammar is okay but lacks nuance → ✅ ゲームをし**てばかりいる** (てばかりいる emphasizes ongoing dissatisfaction)
 4. ❌ Mismatch between form and meaning → ✅ 日本に来た**ばかり**だ (ところだ is more immediate; ばかり is more subjective "not long ago")
 5. ❌ が → ✅ ビール**を**冷やしておいた (ておく uses を for the object; てある uses が)
-6. ❌ 9月10月 → ✅ 9月**から**10月にかけて (にかけて requires から to mark the starting point)
 :::
 
 </details>

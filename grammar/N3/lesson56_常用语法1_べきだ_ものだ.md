@@ -1,11 +1,15 @@
-# Lesson 56 – 常用语法1 — わけにはいかない/しかない/ことはない/べきだ/べきではない/ものだ||Common Grammar 1 — わけにはいかない/しかない/ことはない/べきだ/べきではない/ものだ
+# Lesson 56 – 常用语法1 — わけにはいかない/しかない/べきだ/べきではない/ものだ||Common Grammar 1 — わけにはいかない/しかない/べきだ/べきではない/ものだ
 
 :::zh
 这一课集中学习"义务/必要性/一般论"相关的语法。这些表达在日常生活和工作中使用频率极高，也是N3考试的重点。它们的共同点是都表达说话人对"应该/不应该/只能/没必要"的判断。
+
+> 注：「〜ことはない（没必要~）」已在 Lesson 31 详细讲解，本课不再重复，仅在练习中作为复习出现。
 :::
 
 :::en
 This lesson focuses on grammar related to "obligation / necessity / general truths." These expressions are extremely common in daily life and work, and are key N3 exam points. They share the theme of expressing the speaker's judgment about "should / shouldn't / can only / no need to."
+
+> Note: 「〜ことはない (there's no need to)」 is covered in detail in Lesson 31, so it is not repeated here — it appears only as review in the practice.
 :::
 
 ## 本课单词表||Vocabulary
@@ -135,47 +139,7 @@ This lesson focuses on grammar related to "obligation / necessity / general trut
 
 ---
 
-## 3. 〜ことはない（没必要~）||3. 〜ことはない (There's no need to… / You don't have to…)
-
-### 接続||Conjugation
-:::zh
-| 接続 | 形式 |
-|------|------|
-| 動詞辞書形 | + ことはない |
-:::
-:::en
-| Conjugation | Form |
-|------|------|
-| Verb dictionary form | + ことはない |
-:::
-
-### 含义||Meaning
-:::zh
-"没必要做~"、"不用做~"。安慰对方"你不需要那样做"。语气比「〜なくてもいい」稍强。
-:::
-:::en
-"There's no need to…" / "You don't have to…" Used to reassure someone that an action is unnecessary. Slightly stronger than 「〜なくてもいい」.
-:::
-
-### 例句||Example Sentences
-:::zh
-1. そんなに心配する**ことはない**よ。（不用那么担心。）
-2. 急ぐ**ことはない**。ゆっくりでいいよ。（不用着急，慢慢来就好。）
-3. わざわざ来る**ことはない**。メールで十分だ。（不用特地来，邮件就够了。）
-4. 泣く**ことはない**。大したことじゃない。（不用哭，没什么大不了的。）
-5. 遠慮する**ことはない**。好きなだけ食べてください。（不用客气，想吃多少吃多少。）
-:::
-:::en
-1. そんなに心配する**ことはない**よ。(There's no need to worry so much.)
-2. 急ぐ**ことはない**。ゆっくりでいいよ。(No need to hurry. Take your time.)
-3. わざわざ来る**ことはない**。メールで十分だ。(You don't need to come all the way here. An email is enough.)
-4. 泣く**ことはない**。大したことじゃない。(There's no need to cry. It's no big deal.)
-5. 遠慮する**ことはない**。好きなだけ食べてください。(No need to hold back. Eat as much as you like.)
-:::
-
----
-
-## 4. 〜べきだ（应该~）||4. 〜べきだ (Should… / Ought to…)
+## 3. 〜べきだ（应该~）||3. 〜べきだ (Should… / Ought to…)
 
 ### 接続||Conjugation
 :::zh
@@ -217,7 +181,7 @@ This lesson focuses on grammar related to "obligation / necessity / general trut
 
 ---
 
-## 5. 〜べきではない（不应该~）||5. 〜べきではない (Should not… / Ought not to…)
+## 4. 〜べきではない（不应该~）||4. 〜べきではない (Should not… / Ought not to…)
 
 ### 接続||Conjugation
 :::zh
@@ -281,7 +245,7 @@ This lesson focuses on grammar related to "obligation / necessity / general trut
 
 ---
 
-## 6. 〜ものだ（就是这样的 一般论）||6. 〜ものだ (That's how it is / It's natural that…)
+## 5. 〜ものだ（就是这样的 一般论）||5. 〜ものだ (That's how it is / It's natural that…)
 
 ### 接続||Conjugation
 :::zh
