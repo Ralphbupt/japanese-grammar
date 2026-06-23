@@ -507,6 +507,33 @@ function leadToPlainText(text, maxLen = 160) {
   return s;
 }
 
+// Build a unique, keyword-bearing supplement from a lesson's actual grammar
+// points + level. Used to lengthen meta descriptions that would otherwise be
+// too short for SEO (Bing flags very short descriptions). Stays unique per
+// page because every lesson covers different grammar points.
+function buildDescSupplement(cleanPoints, level) {
+  if (cleanPoints.length >= 2) {
+    return `本课系统讲解日语 ${level} 语法 ${cleanPoints.slice(0, 4).join("、")} 的接续、含义、例句与易错辨析，并附 JLPT ${level} 练习题与答案。`;
+  }
+  if (cleanPoints.length === 1) {
+    return `本课系统讲解日语 ${level} 语法 ${cleanPoints[0]} 的接续规则、含义、用法与例句，并附 JLPT ${level} 备考练习与答案。`;
+  }
+  return `日语 ${level} 语法笔记，系统讲解接续规则、含义用法、例句与易错辨析，并附练习题与答案。免费开源 JLPT ${level} 备考资源，配套单词表与 TTS 发音音频。`;
+}
+
+// Combine a (possibly short) hand-written hook with the templated supplement so
+// the final meta description is descriptive enough for SEO without losing the
+// unique lead. A hook already long enough is kept as-is; otherwise the
+// supplement is appended. Capped at maxLen with an ellipsis.
+function buildLessonDesc(hook, cleanPoints, level, minLen = 110, maxLen = 158) {
+  const cap = (s) => (s.length > maxLen ? s.slice(0, maxLen - 1) + "…" : s);
+  const supp = buildDescSupplement(cleanPoints, level);
+  if (!hook) return cap(supp);
+  if (hook.length >= minLen) return cap(hook);
+  const sep = /[。！？!?…：:、，,—\-)）」』】]$/.test(hook) ? "" : "。";
+  return cap(hook + sep + supp);
+}
+
 // ─── Furigana via kuroshiro ───
 async function initKuroshiro() {
   const k = new Kuroshiro();
@@ -1446,21 +1473,16 @@ ${JS}
     } else {
       lessonTitle = `${lesson.jaTitle} | 日语 ${lessonLevel} 语法笔记 - JLPT 备考`;
     }
-    // Prefer the lesson's hand-written :::zh lead for meta description.
-    // Fall back to the first 含义 section's :::zh content (auto-extracted,
-    // still unique because each lesson covers a different grammar point).
-    // Only use the templated description as a last resort.
-    if (lesson.topLead) {
-      lessonDesc = leadToPlainText(lesson.topLead, 160);
-    } else if (lesson.firstMeaningZh) {
-      lessonDesc = leadToPlainText(lesson.firstMeaningZh, 160);
-    } else if (cleanPoints.length >= 2) {
-      lessonDesc = `日语 ${lessonLevel} 语法 ${cleanPoints.slice(0, 4).join("、")} 的接续、含义、例句、辨析与易错点对比。JLPT ${lessonLevel} 备考笔记，含练习题与答案。`;
-    } else if (cleanPoints.length === 1) {
-      lessonDesc = `深入讲解日语 ${lessonLevel} 语法 ${cleanPoints[0]} 的接续规则、用法、例句与易错点。JLPT ${lessonLevel} 备考必看笔记。`;
-    } else {
-      lessonDesc = `${lesson.title} - 日语 ${lessonLevel} 语法笔记，含接续规则、例句、辨析与练习。免费 JLPT 备考资源。`;
-    }
+    // Prefer the lesson's hand-written :::zh lead as the unique hook, then
+    // fall back to the first 含义 section's :::zh content. Whichever we get is
+    // lengthened with a per-lesson templated supplement when it would be too
+    // short for SEO — Bing flags very short meta descriptions.
+    const descHook = lesson.topLead
+      ? leadToPlainText(lesson.topLead, 158)
+      : lesson.firstMeaningZh
+      ? leadToPlainText(lesson.firstMeaningZh, 158)
+      : "";
+    lessonDesc = buildLessonDesc(descHook, cleanPoints, lessonLevel);
 
     // Auto-generate Chinese-first keywords (override hardcoded LESSON_KEYWORDS)
     const autoKeywords = [
@@ -1683,7 +1705,7 @@ ${THEME_TOGGLE_JS}
     const levelUrl = `${SITE}${level}/`;
 
     const ovTitle = `JLPT ${level} 语法清单 | ${lessons.length} 课 ${totalPoints}+ 语法点速查 - 日语 ${level} 语法总结`;
-    const ovDesc = `日语 JLPT ${level} 全部语法点速查清单，含 ${lessons.length} 课、${totalPoints}+ 语法点的接续、含义、例句与辨析。免费 JLPT ${level} 备考笔记。`;
+    const ovDesc = `日语 JLPT ${level} 全部语法点速查清单，系统覆盖 ${lessons.length} 课、${totalPoints}+ 语法点的接续规则、含义用法、例句与易错辨析。免费 JLPT ${level} 备考笔记，适合零基础系统学习与考前冲刺复习，每课均含练习题与答案。`;
     const ovOgImage = `${SITE}${level}/og-image.png`;
 
     // Lesson cards: each shows day, title, grammar points, link
@@ -1858,7 +1880,7 @@ ${THEME_TOGGLE_JS}
     const aboutDir = path.join(__dirname, "dist/about");
     fs.mkdirSync(aboutDir, { recursive: true });
     const aboutTitle = "关于本站 - 日语语法笔记 | 作者、内容来源与开源协议";
-    const aboutDesc = "了解日语语法笔记是谁做的、为什么做、参考了哪些资料、如何反馈错误。免费、开源、CC BY 4.0 许可的 JLPT N5-N2 学习笔记。";
+    const aboutDesc = "了解 jpnotes.dev 日语语法笔记是谁做的、为什么做、参考了哪些资料、如何反馈错误与参与贡献。这是一份免费、开源、采用 CC BY 4.0 许可的 JLPT N5-N2 语法学习笔记，含接续规则、例句、辨析与练习。";
     const aboutKeywords = "日语语法笔记关于, 作者, jpnotes.dev, 日语学习, JLPT 自学, 中文母语者";
     const aboutOgImage = `${SITE}about/og-image.png`;
 
