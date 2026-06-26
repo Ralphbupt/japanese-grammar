@@ -1262,6 +1262,20 @@ async function main() {
 (function() {
   var sidebar = document.getElementById('sidebar');
   if (!sidebar) return;
+
+  // Initial state: expanded on wide screens (>=1100px); collapsed on the home
+  // page (its hero owns the layout) and on narrower screens. A manual toggle
+  // is remembered across pages. HTML ships collapsed, so this only ever opens.
+  try {
+    var sbPref = localStorage.getItem('sb');          // '1' = collapsed, '0' = open
+    var isHome = !!document.querySelector('#content.home');
+    var startCollapsed = sbPref === null
+      ? (isHome || window.innerWidth < 1100)
+      : sbPref === '1';
+    sidebar.classList.toggle('collapsed', startCollapsed);
+    document.body.classList.toggle('sidebar-collapsed', startCollapsed);
+  } catch (e) {}
+
   var wraps = sidebar.querySelectorAll('.nav-group-wrap');
   var path = location.pathname.replace(/\\/$/, '');
   var slug = path.split('/').pop();
@@ -1298,6 +1312,7 @@ async function main() {
       var collapse = !sidebar.classList.contains('collapsed');
       sidebar.classList.toggle('collapsed', collapse);
       document.body.classList.toggle('sidebar-collapsed', collapse);
+      try { localStorage.setItem('sb', collapse ? '1' : '0'); } catch (e) {}
     } else {
       sidebar.classList.toggle('open');
     }
@@ -2540,7 +2555,7 @@ input:focus-visible, summary:focus-visible {
 }
 .nav-header {
   font-size: 1.2rem; font-weight: 700; color: #fff;
-  padding: .8rem 1.2rem 1rem;
+  padding: .8rem 1.2rem 1rem 3.2rem;
   border-bottom: 1px solid rgba(255,255,255,.08);
   margin-bottom: .5rem;
   white-space: nowrap;
@@ -2834,6 +2849,9 @@ summary {
   display: none;
 }
 body.sidebar-collapsed #menu-toggle { display: block; }
+/* On desktop the toggle is always available — even when the sidebar is
+   expanded — so users can collapse it back to the slim hover rail. */
+@media (min-width: 769px) { #menu-toggle { display: block; } }
 
 /* Hide right TOC on narrower screens */
 @media (max-width: 900px) {
