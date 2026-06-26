@@ -998,7 +998,11 @@ async function main() {
           .replace(/[→❌✓✗⚠️📖↑↓←→●■□▶︎•·…]/g, "")
           .replace(/\s+/g, " ")
           .trim();
-        if (plain.length < 10 || !/[。！？]/.test(plain)) return match;
+        // Eligible = a real Japanese sentence: ends with sentence punctuation
+        // (。！？) and contains kana (checked below). No length floor beyond a
+        // degenerate guard — short sentences like 「走るな！」「本を読む。」are
+        // valid examples and must get audio too.
+        if (plain.length < 2 || !/[。！？]/.test(plain)) return match;
         if (!/[぀-ゟ゠-ヿ]/.test(plain)) return match;
         audioSeq++;
         const audioId = `l${lnum}.${String(audioSeq).padStart(3, "0")}`;
