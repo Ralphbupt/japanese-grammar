@@ -89,6 +89,30 @@ const THEME_TOGGLE_JS = `(function(){
   });
 })();`;
 
+// Language preference (zh/en) — applies the saved isEn pref and wires the
+// EN/中 toggle button. Shared by lesson, level-overview and about pages so a
+// language choice persists across every page. Stores under the same
+// 'jp_grammar_prefs' key the homepage SPA uses.
+const LANG_PREF_JS = `(function(){
+  var langBtn = document.getElementById('lang-btn');
+  var STORE_KEY = 'jp_grammar_prefs';
+  function loadPrefs() { try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch(e) { return {}; } }
+  function savePrefs(patch) { var p = loadPrefs(); for (var k in patch) p[k] = patch[k]; localStorage.setItem(STORE_KEY, JSON.stringify(p)); }
+  var prefs = loadPrefs();
+  var isEn = ('isEn' in prefs) ? prefs.isEn : !/^zh/i.test(navigator.language || '');
+  if (isEn) document.body.classList.add('lang-en');
+  if (langBtn) {
+    langBtn.textContent = isEn ? '中' : 'EN';
+    langBtn.addEventListener('click', function(){
+      isEn = !isEn;
+      document.body.classList.toggle('lang-en', isEn);
+      langBtn.textContent = isEn ? '中' : 'EN';
+      savePrefs({ isEn: isEn });
+      if (window.gaEvent) window.gaEvent('language_toggle', { to: isEn ? 'en' : 'zh' });
+    });
+  }
+})();`;
+
 // TTS (Text-to-Speech) for Japanese example sentences. Adds a small 🔊
 // button to every data-ja <li> element. Click reads the Japanese text
 // aloud via the browser's built-in speech synthesis (Web Speech API).
@@ -777,7 +801,7 @@ async function main() {
   let firstId = null;
 
   for (const group of groups) {
-    sidebarHtml.push(`<a class="nav-group nav-group-link" href="${SITE_PATH}${group.label}/">${group.label}</a>`);
+    const groupItems = [];
     for (const file of group.files) {
       const md = fs.readFileSync(file.path, "utf-8");
       const title = extractTitle(md);
@@ -988,7 +1012,7 @@ async function main() {
       const sidebarTitle = jaTitle
         ? (lessonNum ? `Lesson ${lessonNum} – ${jaTitle}` : jaTitle)
         : shortTitle;
-      sidebarHtml.push(
+      groupItems.push(
         `<a class="nav-item" href="${SITE_PATH}${file.id}/" data-target="${file.id}">${sidebarTitle}</a>`
       );
       articlesHtml.push(
@@ -996,6 +1020,18 @@ async function main() {
       );
       lessonPages.push({ id: file.id, title, sidebarTitle, html, jaTitle: jaTitle || shortTitle, filePath: file.path, grammarPoints, cleanPoints, level: group.label, md, topLead, firstMeaningZh, lastMod: lessonLastMod, firstMod: lessonFirstMod, readingMin });
     }
+    // Accordion group: clickable level header toggles its lesson list. The
+    // first item is an "overview" link to the per-level /N{level}/ page (the
+    // direct level link the old flat nav-group used to be).
+    sidebarHtml.push(
+      `<div class="nav-group-wrap" data-level="${group.label}">
+    <button type="button" class="nav-group" aria-expanded="false"><span class="nav-group-label">${group.label}</span><span class="nav-caret" aria-hidden="true">▸</span></button>
+    <div class="nav-group-items">
+      <a class="nav-item nav-overview" href="${SITE_PATH}${group.label}/"><span class="lang-zh">${group.label} 总览</span><span class="lang-en">${group.label} Overview</span></a>
+      ${groupItems.join("\n      ")}
+    </div>
+  </div>`
+    );
   }
 
   // ─── Cross-link related grammar points between lessons ───
@@ -1202,7 +1238,8 @@ async function main() {
   // Used on home, lesson, and level pages so the directory is reachable
   // from anywhere. Sidebar links are root-relative so they work from any
   // subpath (e.g. clicking from /day01/ correctly navigates to /day05/).
-  const sidebarMarkupHtml = `<nav id="sidebar" class="collapsed">
+  const sidebarMarkupHtml = `<button id="menu-toggle" aria-label="Toggle menu">☰</button>
+<nav id="sidebar" class="collapsed">
   <div class="nav-scroll">
   <div class="nav-header"><a href="${SITE_PATH}" style="color:inherit;text-decoration:none;">日语语法笔记</a></div>
   ${sidebarHtml.join("\n  ")}
@@ -1214,38 +1251,66 @@ async function main() {
   </div>
 </nav>
 <script>
-// On lesson / level / about pages, mark the current sidebar entry as active
-// and scroll the sidebar so the user doesn't have to hunt down their place
-// in a 77-item list when they hover the collapsed sidebar.
+// Shared sidebar behaviour (runs on every page): level accordion, active-item
+// highlight + auto-scroll, and the menu toggle. The home page's own SPA script
+// owns the menu toggle there, so we skip that part on home to avoid binding it
+// twice.
 (function() {
+  var sidebar = document.getElementById('sidebar');
+  if (!sidebar) return;
+  var wraps = sidebar.querySelectorAll('.nav-group-wrap');
   var path = location.pathname.replace(/\\/$/, '');
   var slug = path.split('/').pop();
-  if (!slug) return;
-  var item = document.querySelector('#sidebar a[data-target="' + slug + '"]')
-          || document.querySelector('#sidebar a[href$="/' + slug + '/"]');
-  if (!item) return;
-  item.classList.add('active');
-  var scroll = document.querySelector('#sidebar .nav-scroll');
-  if (!scroll) return;
-  function centerItem() {
-    // item.offsetTop is relative to the offsetParent (.nav-scroll),
-    // so we don't need a getBoundingClientRect subtraction here.
-    var top = item.offsetTop;
-    var navH = scroll.clientHeight;
-    var itemH = item.offsetHeight;
-    if (navH <= 0) {
-      // Layout not ready yet — try again next frame.
-      requestAnimationFrame(centerItem);
-      return;
-    }
-    // Position active item ~40% from top — slightly above center, so the
-    // user sees the current lesson plus upcoming lessons below it.
-    var target = top - navH * 0.4 + itemH / 2;
-    scroll.scrollTop = Math.max(0, target);
+
+  // Mark the current lesson/level entry active.
+  var item = slug ? (sidebar.querySelector('a[data-target="' + slug + '"]')
+          || sidebar.querySelector('a[href$="/' + slug + '/"]')) : null;
+  if (item) item.classList.add('active');
+
+  function setExpanded(w, on) {
+    w.classList.toggle('expanded', on);
+    var btn = w.querySelector('.nav-group');
+    if (btn) btn.setAttribute('aria-expanded', on ? 'true' : 'false');
   }
-  // rAF defers until layout is computed (flex children sometimes have
-  // clientHeight = 0 if measured before the first layout pass).
-  requestAnimationFrame(centerItem);
+  // Open the group holding the active item; else the level named in the URL
+  // (/N5/ or N5_grammar_list); else the first group.
+  var activeWrap = item ? item.closest('.nav-group-wrap') : null;
+  if (!activeWrap) {
+    var lvl = (path.match(/\\/(N[2-5])(?=\\b|\\/|_)/) || [])[1] || (slug && (slug.match(/^(N[2-5])/) || [])[1]);
+    if (lvl) activeWrap = sidebar.querySelector('.nav-group-wrap[data-level="' + lvl + '"]');
+  }
+  if (!activeWrap && wraps.length) activeWrap = wraps[0];
+  wraps.forEach(function(w){ setExpanded(w, w === activeWrap); });
+  wraps.forEach(function(w){
+    var btn = w.querySelector('.nav-group');
+    if (btn) btn.addEventListener('click', function(){ setExpanded(w, !w.classList.contains('expanded')); });
+  });
+
+  // Menu toggle: pin open on desktop / slide-in on mobile. Sole owner across
+  // every page (the home page's SPA script no longer binds this).
+  var toggle = document.getElementById('menu-toggle');
+  if (toggle) toggle.addEventListener('click', function(){
+    if (window.innerWidth > 768) {
+      var collapse = !sidebar.classList.contains('collapsed');
+      sidebar.classList.toggle('collapsed', collapse);
+      document.body.classList.toggle('sidebar-collapsed', collapse);
+    } else {
+      sidebar.classList.toggle('open');
+    }
+  });
+
+  // Center the active item so the user lands on their place in a long list.
+  if (item) {
+    var scroll = sidebar.querySelector('.nav-scroll');
+    if (scroll) {
+      (function centerItem() {
+        var navH = scroll.clientHeight;
+        if (navH <= 0) { requestAnimationFrame(centerItem); return; }
+        var top = item.getBoundingClientRect().top - scroll.getBoundingClientRect().top + scroll.scrollTop;
+        scroll.scrollTop = Math.max(0, top - navH * 0.4 + item.offsetHeight / 2);
+      })();
+    }
+  }
 })();
 ${TTS_JS}
 </script>
@@ -1409,7 +1474,6 @@ ${CSS}
 </style>
 </head>
 <body class="sidebar-collapsed">
-<button id="menu-toggle" aria-label="Toggle menu">☰</button>
 ${sidebarMarkupHtml}
 <main id="content" class="home">
   ${homeMainHtml}
@@ -1600,7 +1664,7 @@ ${CSS}
 /* Hide chrome that requires JS (menu toggle, TOC, settings overlay) but
    keep the sidebar — it works on hover via pure CSS and links are root-
    relative so they navigate from any standalone page. */
-#menu-toggle, #toc-panel { display: none !important; }
+#toc-panel { display: none !important; }
 #content { margin: 0 auto !important; max-width: 1000px; }
 .back-link { display: block; margin-bottom: 1.5rem; color: var(--accent); text-decoration: none; font-size: 0.9rem; }
 .back-link:hover { text-decoration: underline; }
@@ -1620,9 +1684,8 @@ ${CSS}
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
-    <a href="${SITE}">日语语法笔记</a><span class="sep">›</span><span>${lesson.jaTitle}</span>
+    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><a href="${SITE}${lesson.level}/">JLPT ${lesson.level}</a><span class="sep">›</span><span>${lesson.jaTitle}</span>
   </nav>
-  <a class="back-link" href="${SITE}">← All Lessons / 返回目录</a>
   <nav class="prev-next prev-next-top" aria-label="lesson navigation top">
     ${prevHtml}
     ${nextHtml}
@@ -1671,6 +1734,47 @@ ${THEME_TOGGLE_JS}
     else if (cross && cross.href && window.gaEvent) window.gaEvent('cross_link_click', { from: location.pathname, to: new URL(cross.href).pathname, term: (cross.querySelector('.cross-link-term') || {}).textContent || '' });
   });
 })();
+// Checklist persistence — the spaced-repetition / mastery checkboxes are
+// keyed by 'lesson:idx' and stored under CHECK_KEY so a tick survives page
+// reloads and navigation. A small progress bar is inserted after the H1.
+(function(){
+  var CHECK_KEY = 'jp_grammar_checks';
+  function loadChecks() { try { return JSON.parse(localStorage.getItem(CHECK_KEY)) || {}; } catch(e) { return {}; } }
+  function saveChecks(data) { try { localStorage.setItem(CHECK_KEY, JSON.stringify(data)); } catch(e) {} }
+  var boxes = document.querySelectorAll('input[type="checkbox"][data-lesson]');
+  if (!boxes.length) return;
+  function updateProgress() {
+    var bar = document.querySelector('.progress-fill');
+    var text = document.querySelector('.progress-text');
+    if (!bar || !text) return;
+    var done = 0;
+    boxes.forEach(function(cb){ if (cb.checked) done++; });
+    var pct = boxes.length ? Math.round(done / boxes.length * 100) : 0;
+    bar.style.width = pct + '%';
+    text.textContent = done + ' / ' + boxes.length + ' (' + pct + '%)';
+  }
+  var checks = loadChecks();
+  boxes.forEach(function(cb){
+    var key = cb.getAttribute('data-lesson') + ':' + cb.getAttribute('data-idx');
+    if (checks[key]) { cb.checked = true; cb.parentElement.classList.add('checked'); }
+    cb.addEventListener('change', function(){
+      var c = loadChecks();
+      var k = this.getAttribute('data-lesson') + ':' + this.getAttribute('data-idx');
+      if (this.checked) { c[k] = 1; this.parentElement.classList.add('checked'); }
+      else { delete c[k]; this.parentElement.classList.remove('checked'); }
+      saveChecks(c);
+      updateProgress();
+    });
+  });
+  var h1 = document.querySelector('#content h1');
+  if (h1 && !document.querySelector('.checklist-progress')) {
+    var div = document.createElement('div');
+    div.className = 'checklist-progress';
+    div.innerHTML = '<div class="progress-bar"><div class="progress-fill"></div></div><span class="progress-text">0 / 0</span>';
+    h1.after(div);
+  }
+  updateProgress();
+})();
 </script>
 </body>
 </html>`;
@@ -1684,6 +1788,12 @@ ${THEME_TOGGLE_JS}
     N4: "JLPT N4 在 N5 基础上深化使役、受身、使役受身、授受表现、ように系列、ことにする/なる、ばかり/ところ/てしまう、ておく/てある、わけだ/ものだ 等核心日常语法。",
     N3: "JLPT N3 是日语进阶分水岭，覆盖书面助词（において/に対して/について）、原因理由、逆接让步、程度范围、动作相关、并列添加、状态样态、否定与复合表达等核心语法点。",
     N2: "JLPT N2 是商务/学术级别语法，覆盖高阶逆接（からといって/つつも）、程度限定（に過ぎない/はもとより）、判断主张（わけがない/ということだ）、对比关系、感情不可抗、书面表达、仮定条件等高频考点。",
+  };
+  const LEVEL_INTRO_EN = {
+    N5: "JLPT N5 is the beginner level — basic sentence patterns, particles, the three verb groups, ます/て/ない/た forms, adjective conjugation, conditionals, and the potential/passive/volitional forms plus basic conjecture and appearance expressions.",
+    N4: "Building on N5, JLPT N4 deepens causative, passive, causative-passive, giving/receiving expressions, the ように series, ことにする/なる, ばかり/ところ/てしまう, ておく/てある, and わけだ/ものだ — the core grammar of everyday Japanese.",
+    N3: "JLPT N3 is the watershed into advanced Japanese — written-language particles (において/に対して/について), cause and reason, concession, degree and range, action-related patterns, addition, state and appearance, negation, and compound expressions.",
+    N2: "JLPT N2 is business/academic-level grammar — advanced concession (からといって/つつも), degree and limitation (に過ぎない/はもとより), judgment and assertion (わけがない/ということだ), contrast, involuntary emotion, written expression, and hypothetical conditionals — all high-frequency exam points.",
   };
   const LEVEL_KEYWORDS = {
     N5: "JLPT N5 语法清单, 日语 N5 语法总结, N5 文法一覧, N5 grammar list, 日语入门语法, JLPT N5 备考",
@@ -1735,9 +1845,9 @@ ${THEME_TOGGLE_JS}
       }
     }
     const tableHtml = tableRows.length > 0
-      ? `<h2 id="grammar-index">${level} 全部语法点速查表</h2>
+      ? `<h2 id="grammar-index"><span class="lang-zh">${level} 全部语法点速查表</span><span class="lang-en">All ${level} grammar points</span></h2>
 <table class="overview-table">
-<thead><tr><th scope="col">语法点</th><th scope="col">课次</th><th scope="col">课题</th></tr></thead>
+<thead><tr><th scope="col"><span class="lang-zh">语法点</span><span class="lang-en">Grammar point</span></th><th scope="col"><span class="lang-zh">课次</span><span class="lang-en">Lesson</span></th><th scope="col"><span class="lang-zh">课题</span><span class="lang-en">Topic</span></th></tr></thead>
 <tbody>${tableRows.join("\n")}</tbody>
 </table>`
       : "";
@@ -1789,8 +1899,8 @@ ${GTAG_DEFERRED}
 <style>
 ${CSS}
 /* Keep sidebar (pure-CSS hover navigation) + theme toggle; hide other JS-dependent chrome. */
-#menu-toggle, #toc-panel { display: none !important; }
-#bottom-controls #furigana-toggle, #bottom-controls #lang-toggle { display: none !important; }
+#toc-panel { display: none !important; }
+#bottom-controls #furigana-toggle { display: none !important; }
 #content { margin: 0 auto !important; max-width: 1100px; padding: 2rem 1.5rem 4rem; }
 .breadcrumb { font-size: .85rem; color: #666; margin-bottom: 1rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
@@ -1831,22 +1941,28 @@ html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
-    <a href="${SITE}">日语语法笔记</a><span class="sep">›</span><span>JLPT ${level} 语法清单</span>
+    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><span>JLPT ${level}</span>
   </nav>
-  <h1>JLPT ${level} 语法清单 - ${lessons.length} 课 ${totalPoints}+ 语法点速查</h1>
-  <p class="overview-intro">${LEVEL_INTRO[level]}</p>
+  <h1><span class="lang-zh">JLPT ${level} 语法清单 - ${lessons.length} 课 ${totalPoints}+ 语法点速查</span><span class="lang-en">JLPT ${level} Grammar List — ${lessons.length} lessons, ${totalPoints}+ points</span></h1>
+  <p class="overview-intro"><span class="lang-zh">${LEVEL_INTRO[level]}</span><span class="lang-en">${LEVEL_INTRO_EN[level]}</span></p>
   <div class="level-stats">
-    <div class="level-stat"><strong>${lessons.length}</strong><span>课</span></div>
-    <div class="level-stat"><strong>${totalPoints}+</strong><span>语法点</span></div>
-    <div class="level-stat"><strong>免费</strong><span>双语笔记</span></div>
+    <div class="level-stat"><strong>${lessons.length}</strong><span><span class="lang-zh">课</span><span class="lang-en">lessons</span></span></div>
+    <div class="level-stat"><strong>${totalPoints}+</strong><span><span class="lang-zh">语法点</span><span class="lang-en">points</span></span></div>
+    <div class="level-stat"><strong><span class="lang-zh">免费</span><span class="lang-en">Free</span></strong><span><span class="lang-zh">双语笔记</span><span class="lang-en">bilingual</span></span></div>
   </div>
-  <h2>分课目录</h2>
+  <h2><span class="lang-zh">分课目录</span><span class="lang-en">Lessons</span></h2>
   <div class="overview-grid">${cardsHtml}</div>
   ${tableHtml}
 </main>
-<div id="bottom-controls">${THEME_TOGGLE_HTML}</div>
+<div id="bottom-controls">
+  ${THEME_TOGGLE_HTML}
+  <div id="lang-toggle">
+    <button id="lang-btn">EN</button>
+  </div>
+</div>
 <script>
 ${THEME_TOGGLE_JS}
+${LANG_PREF_JS}
 </script>
 </body>
 </html>`;
@@ -1936,7 +2052,7 @@ ${GTAG_DEFERRED}
 <style>
 ${CSS}
 /* Keep sidebar (pure-CSS hover) + lang toggle; hide other JS-dependent chrome. */
-#menu-toggle, #toc-panel, #furigana-toggle { display: none !important; }
+#toc-panel, #furigana-toggle { display: none !important; }
 #content { margin: 0 auto !important; max-width: 800px; padding: 2rem 2rem 4rem; }
 .breadcrumb { font-size: .85rem; color: #666; margin-bottom: 1rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
@@ -2368,14 +2484,23 @@ body {
   margin-bottom: .5rem;
   white-space: nowrap;
 }
+/* Accordion level header (a <button> spanning the row) */
 .nav-group {
-  display: block;
+  display: flex; align-items: center; justify-content: space-between; gap: .5rem;
+  width: 100%; box-sizing: border-box;
+  background: none; border: none; text-align: left; cursor: pointer;
+  font-family: inherit;
   font-size: .75rem; text-transform: uppercase; letter-spacing: .08em;
-  color: var(--accent); padding: .8rem 1.2rem .3rem;
+  color: var(--accent); padding: .8rem 1.2rem .4rem;
   font-weight: 700; white-space: nowrap;
-  text-decoration: none;
 }
-.nav-group-link:hover { color: #fff; }
+.nav-group:hover { color: #fff; }
+.nav-caret { font-size: .65rem; opacity: .75; transition: transform .15s; }
+.nav-group-wrap.expanded .nav-caret { transform: rotate(90deg); }
+.nav-group-items { display: none; }
+.nav-group-wrap.expanded .nav-group-items { display: block; }
+.nav-overview { font-style: italic; opacity: .8; }
+.nav-overview.active, .nav-overview:hover { font-style: normal; }
 .nav-item {
   display: block; padding: .3rem 1rem;
   color: var(--sidebar-text); text-decoration: none;
@@ -2639,9 +2764,11 @@ summary {
 
 /* Menu button */
 #menu-toggle {
-  position: fixed; top: .6rem; left: .6rem;
-  z-index: 200; background: var(--sidebar-bg); color: #fff;
-  border: none; border-radius: 6px; padding: .4rem .7rem;
+  position: fixed; top: 0; left: 0;
+  z-index: 200; background: transparent; color: #fff;
+  border: none; border-radius: 0;
+  width: 48px; height: 48px; padding: 0; line-height: 48px;
+  text-align: center;
   font-size: 1.2rem; cursor: pointer;
   display: none;
 }
@@ -2666,7 +2793,13 @@ body.sidebar-collapsed #menu-toggle { display: block; }
     pointer-events: auto;
   }
   #content { margin-left: 0 !important; margin-right: 0; padding: 3rem 1rem 4rem; }
-  #menu-toggle { display: block !important; }
+  #menu-toggle {
+    display: block !important;
+    top: .6rem; left: .6rem;
+    width: auto; height: auto; line-height: 1;
+    padding: .4rem .7rem;
+    background: var(--sidebar-bg); border-radius: 6px;
+  }
 }
 
 /* Home page landing layout (no lesson articles inlined).
@@ -3069,17 +3202,8 @@ ${THEME_TOGGLE_JS}
     }
   });
 
-  toggle.addEventListener('click', function(){
-    if (window.innerWidth > 768) {
-      if (sidebar.classList.contains('collapsed')) {
-        expandSidebar();
-      } else {
-        collapseSidebar();
-      }
-    } else {
-      sidebar.classList.toggle('open');
-    }
-  });
+  // Menu toggle is bound once by the shared sidebar script (runs on every
+  // page), so we don't bind it again here — doing so would fire twice.
 
   rubyToggle.addEventListener('change', function(){
     var hide = !this.checked;
