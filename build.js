@@ -102,11 +102,11 @@ const LANG_PREF_JS = `(function(){
   var isEn = ('isEn' in prefs) ? prefs.isEn : !/^zh/i.test(navigator.language || '');
   if (isEn) document.body.classList.add('lang-en');
   if (langBtn) {
-    langBtn.textContent = isEn ? '中' : 'EN';
+    langBtn.textContent = isEn ? '中文' : 'EN';
     langBtn.addEventListener('click', function(){
       isEn = !isEn;
       document.body.classList.toggle('lang-en', isEn);
-      langBtn.textContent = isEn ? '中' : 'EN';
+      langBtn.textContent = isEn ? '中文' : 'EN';
       savePrefs({ isEn: isEn });
       if (window.gaEvent) window.gaEvent('language_toggle', { to: isEn ? 'en' : 'zh' });
     });
@@ -1482,7 +1482,7 @@ ${sidebarMarkupHtml}
 <div id="bottom-controls">
   ${THEME_TOGGLE_HTML}
   <div id="furigana-toggle">
-    <label><input type="checkbox" id="ruby-toggle" checked> 显示读音</label>
+    <label><input type="checkbox" id="ruby-toggle" checked> <span class="lang-zh">显示读音</span><span class="lang-en">Furigana</span></label>
   </div>
   <div id="lang-toggle">
     <button id="lang-btn">EN</button>
@@ -1703,7 +1703,7 @@ ${sidebarMarkupHtml}
 <div id="bottom-controls">
   ${THEME_TOGGLE_HTML}
   <div id="furigana-toggle">
-    <label><input type="checkbox" id="ruby-toggle" checked> 显示读音</label>
+    <label><input type="checkbox" id="ruby-toggle" checked> <span class="lang-zh">显示读音</span><span class="lang-en">Furigana</span></label>
   </div>
   <div id="lang-toggle">
     <button id="lang-btn">EN</button>
@@ -1720,9 +1720,9 @@ ${THEME_TOGGLE_JS}
   var prefs = loadPrefs();
   if (prefs.hideRuby) { rubyToggle.checked = false; document.body.classList.add('hide-ruby'); }
   var isEn = ('isEn' in prefs) ? prefs.isEn : !/^zh/i.test(navigator.language || '');
-  if (isEn) { document.body.classList.add('lang-en'); langBtn.textContent = '中'; }
+  if (isEn) { document.body.classList.add('lang-en'); langBtn.textContent = '中文'; }
   rubyToggle.addEventListener('change', function(){ var hide = !this.checked; document.body.classList.toggle('hide-ruby', hide); savePrefs({ hideRuby: hide }); if (window.gaEvent) window.gaEvent('furigana_toggle', { visible: !hide }); });
-  langBtn.addEventListener('click', function(){ isEn = !isEn; document.body.classList.toggle('lang-en', isEn); langBtn.textContent = isEn ? '中' : 'EN'; savePrefs({ isEn: isEn }); if (window.gaEvent) window.gaEvent('language_toggle', { to: isEn ? 'en' : 'zh' }); });
+  langBtn.addEventListener('click', function(){ isEn = !isEn; document.body.classList.toggle('lang-en', isEn); langBtn.textContent = isEn ? '中文' : 'EN'; savePrefs({ isEn: isEn }); if (window.gaEvent) window.gaEvent('language_toggle', { to: isEn ? 'en' : 'zh' }); });
   // Learning-progression events: prev/next lesson + cross-link clicks. These
   // capture real reading/exploration behavior, unlike the toggle events above.
   document.addEventListener('click', function(e) {
@@ -2102,8 +2102,8 @@ ${THEME_TOGGLE_JS}
   function savePrefs(patch) { var p = loadPrefs(); for (var k in patch) p[k] = patch[k]; localStorage.setItem(STORE_KEY, JSON.stringify(p)); }
   var prefs = loadPrefs();
   var isEn = ('isEn' in prefs) ? prefs.isEn : !/^zh/i.test(navigator.language || '');
-  if (isEn) { document.body.classList.add('lang-en'); langBtn.textContent = '中'; }
-  langBtn.addEventListener('click', function(){ isEn = !isEn; document.body.classList.toggle('lang-en', isEn); langBtn.textContent = isEn ? '中' : 'EN'; savePrefs({ isEn: isEn }); if (window.gaEvent) window.gaEvent('language_toggle', { to: isEn ? 'en' : 'zh' }); });
+  if (isEn) { document.body.classList.add('lang-en'); langBtn.textContent = '中文'; }
+  langBtn.addEventListener('click', function(){ isEn = !isEn; document.body.classList.toggle('lang-en', isEn); langBtn.textContent = isEn ? '中文' : 'EN'; savePrefs({ isEn: isEn }); if (window.gaEvent) window.gaEvent('language_toggle', { to: isEn ? 'en' : 'zh' }); });
 })();
 </script>
 </body>
@@ -3217,7 +3217,7 @@ ${THEME_TOGGLE_JS}
   var isEn = ('isEn' in prefs) ? prefs.isEn : !/^zh/i.test(navigator.language || '');
   if (isEn) {
     document.body.classList.add('lang-en');
-    langBtn.textContent = '中';
+    langBtn.textContent = '中文';
   }
   var headingMap = {
     '接续': 'Conjugation', '含义': 'Meaning', '例句': 'Examples',
@@ -3281,7 +3281,7 @@ ${THEME_TOGGLE_JS}
   langBtn.addEventListener('click', function(){
     isEn = !isEn;
     document.body.classList.toggle('lang-en', isEn);
-    langBtn.textContent = isEn ? '中' : 'EN';
+    langBtn.textContent = isEn ? '中文' : 'EN';
     translateHeadings(isEn);
     savePrefs({ isEn: isEn });
     if (window.gaEvent) window.gaEvent('language_toggle', { to: isEn ? 'en' : 'zh' });
