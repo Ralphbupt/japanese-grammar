@@ -516,6 +516,34 @@ function extractFirstMeaningZh(md) {
   return null;
 }
 
+// English counterparts of the two extractors above. The site targets English
+// learners for SEO, so the meta description hook is taken from the lesson's
+// :::en lead (or the first grammar point's :::en meaning) rather than :::zh.
+function extractTopLeadEn(md) {
+  const beforeH2 = md.split(/^## /m)[0];
+  const m = beforeH2.match(/^:::en\s*\n([\s\S]*?)^:::\s*$/m);
+  if (!m) return null;
+  return m[1].trim();
+}
+
+function extractFirstMeaningEn(md) {
+  const sections = md.split(/^## /m);
+  for (let i = 1; i < sections.length; i++) {
+    const sec = sections[i];
+    const headerLine = sec.split("\n")[0];
+    if (/单词表|単語表|Vocabulary/i.test(headerLine)) continue;
+    const subSections = sec.split(/^### /m);
+    for (let j = 1; j < subSections.length; j++) {
+      const sub = subSections[j];
+      const subHeader = sub.split("\n")[0];
+      if (/^(接[续続]|Conjugation)/i.test(subHeader)) continue;
+      const m = sub.match(/^:::en\s*\n([\s\S]*?)^:::\s*$/m);
+      if (m) return m[1].trim();
+    }
+  }
+  return null;
+}
+
 // Strip markdown formatting from extracted lead text for meta description use.
 // Strips a leading "接续：…" line that some lessons put inside their first
 // :::zh block before the actual examples/meaning.
@@ -537,25 +565,41 @@ function leadToPlainText(text, maxLen = 160) {
 // page because every lesson covers different grammar points.
 function buildDescSupplement(cleanPoints, level) {
   if (cleanPoints.length >= 2) {
-    return `本课系统讲解日语 ${level} 语法 ${cleanPoints.slice(0, 4).join("、")} 的接续、含义、例句与易错辨析，并附 JLPT ${level} 练习题与答案。`;
+    return `This lesson covers JLPT ${level} grammar ${cleanPoints.slice(0, 4).join("、")}: conjugation, meaning, example sentences, and how to tell similar forms apart, with practice questions.`;
   }
   if (cleanPoints.length === 1) {
-    return `本课系统讲解日语 ${level} 语法 ${cleanPoints[0]} 的接续规则、含义、用法与例句，并附 JLPT ${level} 备考练习与答案。`;
+    return `This lesson explains the JLPT ${level} grammar point ${cleanPoints[0]} — its conjugation, meaning, and usage with example sentences, plus practice questions and answers.`;
   }
-  return `日语 ${level} 语法笔记，系统讲解接续规则、含义用法、例句与易错辨析，并附练习题与答案。免费开源 JLPT ${level} 备考资源，配套单词表与 TTS 发音音频。`;
+  return `Free JLPT ${level} Japanese grammar notes covering conjugation rules, meaning, usage, example sentences, and commonly confused points, with practice questions and answers.`;
+}
+
+// Generic, keyword-rich tail appended only when the combined description is
+// still too short for SEO (Bing flags short descriptions). Leads with site
+// features (单词表 / TTS 音频 / 间隔复习 / 在线学习) and the level so even lessons
+// with one or two short grammar points reach Bing's recommended length. The
+// unique hook + per-lesson supplement still carry the page's uniqueness.
+function buildDescTail(level) {
+  return `Includes a vocabulary list, native TTS audio on every example, and a spaced-repetition review plan — study JLPT ${level} Japanese grammar online for free.`;
 }
 
 // Combine a (possibly short) hand-written hook with the templated supplement so
 // the final meta description is descriptive enough for SEO without losing the
 // unique lead. A hook already long enough is kept as-is; otherwise the
-// supplement is appended. Capped at maxLen with an ellipsis.
-function buildLessonDesc(hook, cleanPoints, level, minLen = 110, maxLen = 158) {
+// supplement is appended. If the result is still below targetMin (Bing flags
+// short meta descriptions), a keyword-rich tail is appended. Capped at maxLen
+// with an ellipsis.
+function buildLessonDesc(hook, cleanPoints, level, minLen = 110, maxLen = 158, targetMin = 135) {
   const cap = (s) => (s.length > maxLen ? s.slice(0, maxLen - 1) + "…" : s);
+  // English-first separator: add ". " unless the hook already ends with
+  // sentence-ending punctuation (English or CJK, since hooks may quote 日本語).
+  const join = (a, b) => a + (/[.!?。！？…:：]$/.test(a) ? " " : ". ") + b;
   const supp = buildDescSupplement(cleanPoints, level);
-  if (!hook) return cap(supp);
-  if (hook.length >= minLen) return cap(hook);
-  const sep = /[。！？!?…：:、，,—\-)）」』】]$/.test(hook) ? "" : "。";
-  return cap(hook + sep + supp);
+  let out;
+  if (!hook) out = supp;
+  else if (hook.length >= minLen) out = hook;
+  else out = join(hook, supp);
+  if (out.length < targetMin) out = join(out, buildDescTail(level));
+  return cap(out);
 }
 
 // ─── Furigana via kuroshiro ───
@@ -808,6 +852,9 @@ async function main() {
       const shortTitle = title.length > 40 ? title.slice(0, 38) + "…" : title;
       const topLead = extractTopLead(md);
       const firstMeaningZh = topLead ? null : extractFirstMeaningZh(md);
+      // English equivalents, used for the English-first SEO meta description.
+      const topLeadEn = extractTopLeadEn(md);
+      const firstMeaningEn = topLeadEn ? null : extractFirstMeaningEn(md);
       if (!firstId) firstId = file.id;
 
       // Pre-process bilingual blocks: :::zh ... ::: / :::en ... :::
@@ -1022,7 +1069,7 @@ async function main() {
       articlesHtml.push(
         `<article id="${file.id}" class="lesson">${html}</article>`
       );
-      lessonPages.push({ id: file.id, title, sidebarTitle, html, jaTitle: jaTitle || shortTitle, filePath: file.path, grammarPoints, cleanPoints, level: group.label, md, topLead, firstMeaningZh, lastMod: lessonLastMod, firstMod: lessonFirstMod, readingMin });
+      lessonPages.push({ id: file.id, title, sidebarTitle, html, jaTitle: jaTitle || shortTitle, filePath: file.path, grammarPoints, cleanPoints, level: group.label, md, topLead, firstMeaningZh, topLeadEn, firstMeaningEn, lastMod: lessonLastMod, firstMod: lessonFirstMod, readingMin });
     }
     // Accordion group: clickable level header toggles its lesson list. The
     // first item is an "overview" link to the per-level /N{level}/ page (the
@@ -1544,41 +1591,49 @@ ${JS}
     const lessonDir = path.join(__dirname, "dist", lesson.id);
     fs.mkdirSync(lessonDir, { recursive: true });
     const lessonUrl = `${SITE}${lesson.id}/`;
-    // SEO-friendly Chinese-first title & description targeting long-tail searches
+    // SEO-friendly English-first title & description targeting English-speaking
+    // JLPT learners. The Japanese grammar terms (cleanPoints) are kept verbatim
+    // since learners search them directly (e.g. "おかげで grammar"); the wrapper
+    // copy around them is English.
     const lessonLevel = lesson.level || "";
     const cleanPoints = lesson.cleanPoints || [];
+    // English side of the bilingual "日本語||English" H1, for the no-points title.
+    const enTitle = (lesson.title.includes("||")
+      ? lesson.title.split("||").pop()
+      : lesson.jaTitle).replace(/^Lesson\s+\d+\s*[–—-]\s*/i, "").trim();
     let lessonTitle, lessonDesc;
     if (cleanPoints.length >= 2) {
-      const titlePoints = cleanPoints.slice(0, 2).join(" / ");
-      lessonTitle = `${titlePoints} 用法详解 | 日语 ${lessonLevel} 语法 区别+例句`;
+      const titlePoints = cleanPoints.slice(0, 2).join(", ");
+      lessonTitle = `${titlePoints} — JLPT ${lessonLevel} Japanese Grammar | Usage & Examples`;
     } else if (cleanPoints.length === 1) {
-      lessonTitle = `${cleanPoints[0]} 用法详解 | 日语 ${lessonLevel} 语法 例句+易错点`;
+      lessonTitle = `${cleanPoints[0]} — JLPT ${lessonLevel} Japanese Grammar Explained with Examples`;
     } else {
-      lessonTitle = `${lesson.jaTitle} | 日语 ${lessonLevel} 语法笔记 - JLPT 备考`;
+      lessonTitle = `${enTitle} | JLPT ${lessonLevel} Japanese Grammar Notes`;
     }
-    // Prefer the lesson's hand-written :::zh lead as the unique hook, then
-    // fall back to the first 含义 section's :::zh content. Whichever we get is
+    // Prefer the lesson's hand-written :::en lead as the unique hook, then
+    // fall back to the first Meaning section's :::en content. Whichever we get is
     // lengthened with a per-lesson templated supplement when it would be too
     // short for SEO — Bing flags very short meta descriptions.
-    const descHook = lesson.topLead
-      ? leadToPlainText(lesson.topLead, 158)
-      : lesson.firstMeaningZh
-      ? leadToPlainText(lesson.firstMeaningZh, 158)
+    const descHook = lesson.topLeadEn
+      ? leadToPlainText(lesson.topLeadEn, 158)
+      : lesson.firstMeaningEn
+      ? leadToPlainText(lesson.firstMeaningEn, 158)
       : "";
     lessonDesc = buildLessonDesc(descHook, cleanPoints, lessonLevel);
 
-    // Auto-generate Chinese-first keywords (override hardcoded LESSON_KEYWORDS)
+    // Auto-generate English-first keywords (override hardcoded LESSON_KEYWORDS).
+    // Japanese grammar terms are retained as keywords — learners search them.
     const autoKeywords = [
-      `日语 ${lessonLevel} 语法`,
+      `JLPT ${lessonLevel} grammar`,
+      `${lessonLevel} grammar`,
       `JLPT ${lessonLevel}`,
-      `${lessonLevel} 文法`,
-      ...cleanPoints.slice(0, 4).flatMap(p => [`${p} 用法`, `${p} 例句`]),
-      cleanPoints.length >= 2 ? `${cleanPoints[0]} ${cleanPoints[1]} 区别` : null,
+      `learn Japanese ${lessonLevel}`,
+      ...cleanPoints.slice(0, 4).flatMap(p => [`${p} grammar`, `${p} meaning`, `${p} examples`]),
       cleanPoints.length >= 2 ? `${cleanPoints[0]} vs ${cleanPoints[1]}` : null,
-      "日语语法笔记",
       "Japanese grammar",
+      "Japanese grammar notes",
     ].filter(Boolean);
-    // Combine with existing English keywords for coverage, but lead with Chinese
+    // Append any hand-curated English keywords for extra coverage.
     const existingKw = LESSON_KEYWORDS[lesson.id] || "";
     const lessonKeywords = [...autoKeywords, existingKw].filter(Boolean).join(", ");
 
