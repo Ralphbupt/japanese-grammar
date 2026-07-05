@@ -319,13 +319,28 @@ async function main() {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anki 卡组下载 / Anki Decks — 日语语法笔记 · jpnotes.dev</title>
-<meta name="description" content="免费下载 JLPT N5/N4/N3/N2 文法 Anki 卡组（共 ${total} 张）/ Free JLPT N5–N2 grammar Anki decks (${total} cards total). Each card: grammar point + meaning + examples + link to jpnotes.dev lesson.">
+<title>日语语法 Anki 卡组下载（.apkg / TSV）| JLPT N5–N2 Japanese Grammar Anki Decks — jpnotes.dev</title>
+<meta name="description" content="免费下载 JLPT N5/N4/N3/N2 日语语法 Anki 卡组：.apkg 一键导入（支持 AnkiDroid / AnkiMobile），共 ${total} 张。Free JLPT N5–N2 Japanese grammar Anki decks (.apkg &amp; TSV, ${total} cards, works with AnkiDroid &amp; AnkiMobile). Grammar + meaning + examples on every card.">
 <link rel="canonical" href="${SITE}anki/">
-<meta property="og:title" content="Anki 卡组下载 / Anki Decks — jpnotes.dev">
-<meta property="og:description" content="免费 JLPT 文法 Anki 卡组 / Free JLPT grammar Anki decks (${total} cards), covering N5–N2.">
+<meta property="og:title" content="日语语法 Anki 卡组下载（.apkg）| JLPT N5–N2 Grammar Anki Decks">
+<meta property="og:description" content="免费 JLPT 日语语法 Anki 卡组 / Free JLPT Japanese grammar Anki decks (.apkg, ${total} cards), covering N5–N2.">
 <meta property="og:url" content="${SITE}anki/">
 <meta property="og:image" content="${SITE}anki/og-image.png">
+<script type="application/ld+json">
+${JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  name: "JLPT N5–N2 日语语法 Anki 卡组 / Japanese Grammar Anki Decks",
+  description: `Free JLPT Japanese grammar Anki flashcard decks (${total} cards, N5–N2). Each card has the grammar point, meaning and example sentences, linked to the full lesson on jpnotes.dev.`,
+  url: `${SITE}anki/`,
+  license: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  creator: { "@type": "Organization", name: "jpnotes.dev", url: SITE },
+  distribution: summary.flatMap(s => [
+    { "@type": "DataDownload", name: `JLPT ${s.level} Grammar Anki Deck (.apkg)`, contentUrl: `${SITE}anki/jpnotes-${s.level}.apkg`, encodingFormat: "application/x-anki-package" },
+    { "@type": "DataDownload", name: `JLPT ${s.level} Grammar Anki Deck (TSV)`, contentUrl: `${SITE}anki/jpnotes-${s.level}.txt`, encodingFormat: "text/tab-separated-values" },
+  ]),
+}, null, 1)}
+</script>
 <script>
 (function() {
   try {
@@ -391,10 +406,10 @@ body.lang-en div.lang-en, body.lang-en p.lang-en, body.lang-en li.lang-en, body.
     <a href="${SITE}">日语语法笔记</a> ›
     <span class="lang-zh">Anki 卡组</span><span class="lang-en">Anki Decks</span>
   </nav>
-  <h1><span class="lang-zh">Anki 卡组下载</span><span class="lang-en">Anki Flashcard Decks</span></h1>
+  <h1><span class="lang-zh">日语语法 Anki 卡组下载</span><span class="lang-en">Japanese Grammar Anki Decks</span></h1>
   <p class="subtitle">
-    <span class="lang-zh">JLPT N5 → N2 共 ${total} 张卡 · 每张语法点配含义、例句和跳回 jpnotes.dev 详细讲解的链接</span>
-    <span class="lang-en">JLPT N5 → N2, ${total} cards in total · each card has the grammar point, its meaning, examples, and a link back to the full lesson on jpnotes.dev</span>
+    <span class="lang-zh">JLPT N5 → N2 共 ${total} 张卡 · .apkg / TSV 格式，支持 AnkiDroid、AnkiMobile · 每张语法点配含义、例句和跳回 jpnotes.dev 详细讲解的链接</span>
+    <span class="lang-en">JLPT N5 → N2, ${total} cards in total · .apkg / TSV, works with AnkiDroid &amp; AnkiMobile · each card has the grammar point, its meaning, examples, and a link back to the full lesson on jpnotes.dev</span>
   </p>
 
   <h2><span class="lang-zh">选择级别下载</span><span class="lang-en">Pick a level to download</span></h2>
