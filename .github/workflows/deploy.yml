@@ -21,6 +21,11 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Full history: gitLastMod()/gitFirstMod() in build.js derive per-page
+          # lastmod, "last updated" meta and Article datePublished from git log.
+          # A shallow clone makes every file report the same (HEAD) date.
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:

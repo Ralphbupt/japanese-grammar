@@ -2227,23 +2227,25 @@ ${THEME_TOGGLE_JS}
   if (aboutPageGenerated) {
     sitemapUrls.push(`  <url>
     <loc>${SITE}about/</loc>
-    <lastmod>${today}</lastmod>
+    <lastmod>${gitLastMod("pages/about.md") || today}</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>`);
   }
-  // Anki landing page (downloadable flashcards)
+  // Anki landing page (downloadable flashcards). Decks are derived from lesson
+  // content, so the page effectively changes when any lesson last changed.
   sitemapUrls.push(`  <url>
     <loc>${SITE}anki/</loc>
-    <lastmod>${today}</lastmod>
+    <lastmod>${gitLastMod("grammar") || today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>`);
-  // Level overview pages (high priority — major landing pages)
+  // Level overview pages (high priority — major landing pages). Each aggregates
+  // its level's lessons, so its lastmod is the level directory's last commit.
   for (const level of levelPageIds) {
     sitemapUrls.push(`  <url>
     <loc>${SITE}${level}/</loc>
-    <lastmod>${today}</lastmod>
+    <lastmod>${gitLastMod(`grammar/${level}`) || today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>`);
