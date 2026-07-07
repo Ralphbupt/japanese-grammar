@@ -37,20 +37,31 @@ AUDIO_DIR = os.path.join(ROOT, "audio")
 CACHE_PATH = os.path.join(OUT_DIR, ".cards.json")
 
 # Stable IDs — re-importing a regenerated deck updates existing cards
-# rather than duplicating.
+# rather than duplicating. Each language edition is a fully separate deck
+# family with its own IDs and GUID namespace.
 MODEL_ID = 1729384756
 CLOZE_MODEL_ID = 1729384757
-DECK_IDS = {
-    "N5": 1729384701,
-    "N4": 1729384702,
-    "N3": 1729384703,
-    "N2": 1729384704,
-}
-CLOZE_DECK_IDS = {
-    "N5": 1729384711,
-    "N4": 1729384712,
-    "N3": 1729384713,
-    "N2": 1729384714,
+EDITIONS = {
+    "zh": {
+        "deck_ids": {"N5": 1729384701, "N4": 1729384702, "N3": 1729384703, "N2": 1729384704},
+        "cloze_deck_ids": {"N5": 1729384711, "N4": 1729384712, "N3": 1729384713, "N2": 1729384714},
+        "deck_name": "日语语法 {level} · jpnotes.dev",
+        "cloze_subdeck": "挖空练习",
+        "guid_ns": "jpnotes",
+        "cloze_guid_ns": "jpnotes-cloze",
+        "file_suffix": "",
+        "trans_key": "zh",
+    },
+    "en": {
+        "deck_ids": {"N5": 1729384721, "N4": 1729384722, "N3": 1729384723, "N2": 1729384724},
+        "cloze_deck_ids": {"N5": 1729384731, "N4": 1729384732, "N3": 1729384733, "N2": 1729384734},
+        "deck_name": "Japanese Grammar {level} · jpnotes.dev",
+        "cloze_subdeck": "Cloze Practice",
+        "guid_ns": "jpnotes-en",
+        "cloze_guid_ns": "jpnotes-cloze-en",
+        "file_suffix": "-en",
+        "trans_key": "en",
+    },
 }
 
 DECK_CSS = """
@@ -88,22 +99,25 @@ def term_variants(term):
     return sorted(out, key=len, reverse=True)
 
 
-def make_cloze_note(model, card):
+def make_cloze_note(model, card, edition):
     """Build one production (cloze) note per grammar point, or None.
 
     Uses the first example whose plain text contains the term verbatim.
-    Front: sentence with the grammar point blanked + 中文译文 as the prompt.
-    Back extra: furigana sentence, audio, and a link to the full lesson.
+    Front: sentence with the grammar point blanked + the edition's
+    translation as the prompt. Back extra: furigana sentence, audio, and
+    a link to the full lesson.
     """
     variants = term_variants(card["term"])
+    trans_key = edition["trans_key"]
     for ex in card["examples"]:
         for v in variants:
             if v in ex["jp"]:
                 text = ex["jp"].replace(v, "{{c1::%s}}" % v, 1)
-                if ex.get("zh"):
+                trans = ex.get(trans_key) or ex.get("zh")
+                if trans:
                     text += (
                         '<br><span style="color:#888;font-size:.9em;">%s</span>'
-                        % ex["zh"]
+                        % trans
                     )
                 extra_parts = [ex["jpHtml"]]
                 if ex.get("audio"):
@@ -119,7 +133,7 @@ def make_cloze_note(model, card):
                 note = genanki.Note(
                     model=model,
                     fields=[text, "".join(extra_parts)],
-                    guid=genanki.guid_for("jpnotes-cloze", card["level"], card["lessonNum"], card["term"]),
+                    guid=genanki.guid_for(edition["cloze_guid_ns"], card["level"], card["lessonNum"], card["term"]),
                 )
                 return note, ex.get("audio")
     return None
@@ -167,63 +181,63 @@ def main():
     total = 0
     total_cloze = 0
     for level in LEVELS:
-        cards = cache.get(level, [])
-        if not cards:
-            continue
+        level_cache = cache.get(level, {})
+        for lang, edition in EDITIONS.items():
+            cards = level_cache.get(lang, [])
+            if not cards:
+                continue
 
-        deck = genanki.Deck(
-            DECK_IDS[level],
-            f"日语语法 {level} · jpnotes.dev",
-        )
-        cloze_deck = genanki.Deck(
-            CLOZE_DECK_IDS[level],
-            f"日语语法 {level} · jpnotes.dev::挖空练习",
-        )
-
-        media = set()
-        cloze_count = 0
-        for card in cards:
-            note = genanki.Note(
-                model=model,
-                fields=[card["front"], card.get("backApkg") or card["back"]],
-                guid=genanki.guid_for("jpnotes", card["level"], card["lessonNum"], card["term"]),
+            deck_name = edition["deck_name"].format(level=level)
+            deck = genanki.Deck(edition["deck_ids"][level], deck_name)
+            cloze_deck = genanki.Deck(
+                edition["cloze_deck_ids"][level],
+                f"{deck_name}::{edition['cloze_subdeck']}",
             )
-            deck.add_note(note)
-            for ex in card.get("examples", []):
-                if ex.get("audio"):
-                    media.add(ex["audio"])
 
-            cloze = make_cloze_note(cloze_model, card)
-            if cloze:
-                cloze_note, cloze_audio = cloze
-                cloze_deck.add_note(cloze_note)
-                cloze_count += 1
-                if cloze_audio:
-                    media.add(cloze_audio)
+            media = set()
+            cloze_count = 0
+            for card in cards:
+                note = genanki.Note(
+                    model=model,
+                    fields=[card["front"], card.get("backApkg") or card["back"]],
+                    guid=genanki.guid_for(edition["guid_ns"], card["level"], card["lessonNum"], card["term"]),
+                )
+                deck.add_note(note)
+                for ex in card.get("examples", []):
+                    if ex.get("audio"):
+                        media.add(ex["audio"])
 
-        media_files = []
-        missing = 0
-        for name in sorted(media):
-            p = os.path.join(AUDIO_DIR, name)
-            if os.path.exists(p):
-                media_files.append(p)
-            else:
-                missing += 1
+                cloze = make_cloze_note(cloze_model, card, edition)
+                if cloze:
+                    cloze_note, cloze_audio = cloze
+                    cloze_deck.add_note(cloze_note)
+                    cloze_count += 1
+                    if cloze_audio:
+                        media.add(cloze_audio)
 
-        out_path = os.path.join(OUT_DIR, f"jpnotes-{level}.apkg")
-        pkg = genanki.Package([deck, cloze_deck])
-        pkg.media_files = media_files
-        pkg.write_to_file(out_path)
-        size_mb = os.path.getsize(out_path) / 1024 / 1024
-        print(
-            f"  Generated {out_path} ({len(cards)} cards + {cloze_count} cloze, "
-            f"{len(media_files)} audio files, {size_mb:.1f} MB)"
-            + (f" — {missing} mp3 missing" if missing else "")
-        )
-        total += len(cards)
-        total_cloze += cloze_count
+            media_files = []
+            missing = 0
+            for name in sorted(media):
+                p = os.path.join(AUDIO_DIR, name)
+                if os.path.exists(p):
+                    media_files.append(p)
+                else:
+                    missing += 1
 
-    print(f"\nTotal: {total} cards + {total_cloze} cloze across {len(LEVELS)} .apkg decks.")
+            out_path = os.path.join(OUT_DIR, f"jpnotes-{level}{edition['file_suffix']}.apkg")
+            pkg = genanki.Package([deck, cloze_deck])
+            pkg.media_files = media_files
+            pkg.write_to_file(out_path)
+            size_mb = os.path.getsize(out_path) / 1024 / 1024
+            print(
+                f"  Generated {out_path} ({len(cards)} cards + {cloze_count} cloze, "
+                f"{len(media_files)} audio files, {size_mb:.1f} MB)"
+                + (f" — {missing} mp3 missing" if missing else "")
+            )
+            total += len(cards)
+            total_cloze += cloze_count
+
+    print(f"\nTotal: {total} cards + {total_cloze} cloze across {2 * len(LEVELS)} .apkg decks (中文 + English editions).")
     print(f"Output: {OUT_DIR}/")
 
 
