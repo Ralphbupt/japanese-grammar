@@ -97,12 +97,57 @@ function parseGrammarSections(md) {
   let current = null;
   let buffer = [];
 
+  // Harvest numbered example lines from 用法①②③-style subsections when a
+  // point has no dedicated ### 例句 header, merging dialogue continuation
+  // lines (e.g. "1. A：…" + "B：…（译）") into one.
+  function harvestExamples(subSections, lang) {
+    const exItems = [];
+    for (let i = 1; i < subSections.length; i++) {
+      const sub = subSections[i];
+      const headerLine = sub.split("\n")[0];
+      if (/^(接[续続]|Conjugation)/i.test(headerLine)) continue;
+      if (/例句|例文|Example/i.test(headerLine)) continue;
+      const text = extractBilingual(sub.split("\n").slice(1).join("\n"))[lang];
+      if (!text) continue;
+      let cur = null;
+      for (const raw of text.split("\n")) {
+        const line = raw.trim();
+        if (/^\d+[.、．]/.test(line)) {
+          if (cur) exItems.push(cur);
+          cur = line;
+        } else if (cur && line && /[぀-ヿ一-鿿]/.test(line)) {
+          cur += " " + line;
+        } else if (cur && !line) {
+          exItems.push(cur);
+          cur = null;
+        }
+      }
+      if (cur) exItems.push(cur);
+    }
+    const jp = exItems.filter(s => /[぀-ヿ一-鿿]/.test(s));
+    return jp.length ? jp.join("\n") : null;
+  }
+
+  // Strip numbered example lines that leak into a meaning harvested from a
+  // 用法① subsection; fall back to the heading's parenthetical description.
+  function cleanMeaning(meaning, fallbackDesc) {
+    if (!meaning) return null;
+    const cleaned = meaning
+      .split("\n")
+      .filter(l => !/^\d+[.、．]\s*.*[぀-ヿ一-鿿]/.test(l.trim()))
+      .join("\n")
+      .trim();
+    return cleaned || fallbackDesc || null;
+  }
+
   function flush() {
     if (!current) return;
     const content = buffer.join("\n");
     const subSections = content.split(/^### /m);
     let meaning = null;
+    let meaningEn = null;
     let examples = null;
+    let examplesEn = null;
     for (let i = 1; i < subSections.length; i++) {
       const sub = subSections[i];
       const headerLine = sub.split("\n")[0];
@@ -111,65 +156,30 @@ function parseGrammarSections(md) {
       const bilingual = extractBilingual(subBody);
       if (!meaning && /含义|含意|用法|核心|意味|Meaning|Usage|Nuance/i.test(headerLine)) {
         meaning = bilingual.zh || bilingual.en;
+        meaningEn = bilingual.en;
       } else if (!examples && /例句|例文|Example/i.test(headerLine)) {
         examples = bilingual.zh || bilingual.en;
+        examplesEn = bilingual.en;
       }
     }
     if (!meaning) {
       const fallback = extractBilingual(content);
       meaning = fallback.zh;
+      meaningEn = meaningEn || fallback.en;
     }
-    // Fallback: some lessons embed example sentences under 用法①②③ (or similar)
-    // subsections instead of a dedicated ### 例句 header. Those points still
-    // deserve cards — harvest the numbered example sentences from the zh blocks,
-    // merging dialogue continuation lines (e.g. "1. A：…" + "B：…（译）") into one.
-    if (!examples) {
-      const exItems = [];
-      for (let i = 1; i < subSections.length; i++) {
-        const sub = subSections[i];
-        const headerLine = sub.split("\n")[0];
-        if (/^(接[续続]|Conjugation)/i.test(headerLine)) continue;
-        if (/例句|例文|Example/i.test(headerLine)) continue;
-        const zhText = extractBilingual(sub.split("\n").slice(1).join("\n")).zh;
-        if (!zhText) continue;
-        let cur = null;
-        for (const raw of zhText.split("\n")) {
-          const line = raw.trim();
-          if (/^\d+[.、．]/.test(line)) {
-            if (cur) exItems.push(cur);
-            cur = line;
-          } else if (cur && line && /[぀-ヿ一-鿿]/.test(line)) {
-            cur += " " + line;
-          } else if (cur && !line) {
-            exItems.push(cur);
-            cur = null;
-          }
-        }
-        if (cur) exItems.push(cur);
-      }
-      const jp = exItems.filter(s => /[぀-ヿ一-鿿]/.test(s));
-      if (jp.length) examples = jp.join("\n");
-    }
+    if (!examples) examples = harvestExamples(subSections, "zh");
+    if (!examplesEn) examplesEn = harvestExamples(subSections, "en");
+    meaning = cleanMeaning(meaning, current.description);
+    meaningEn = cleanMeaning(meaningEn, current.descriptionEn);
     if (meaning) {
-      // A point whose only meaning-ish subsection is 用法① yields a "meaning"
-      // that is actually example lines. Strip numbered example lines; fall back
-      // to the heading's parenthetical description (e.g. ものだ→「感慨/回忆/应该」).
-      const cleaned = meaning
-        .split("\n")
-        .filter(l => !/^\d+[.、．]\s*.*[぀-ヿ一-鿿]/.test(l.trim()))
-        .join("\n")
-        .trim();
-      meaning = cleaned || current.description || null;
-    }
-    if (meaning) {
-      sections.push({ ...current, meaning, examples });
+      sections.push({ ...current, meaning, meaningEn, examples, examplesEn });
     }
     current = null;
     buffer = [];
   }
 
   for (const line of lines) {
-    const h2 = line.match(/^## (\d+)\.\s*(.+?)(?:\|\|.*)?$/);
+    const h2 = line.match(/^## (\d+)\.\s*(.+?)(?:\|\|(.*))?$/);
     if (h2) {
       flush();
       const headingText = h2[2].trim();
@@ -179,7 +189,16 @@ function parseGrammarSections(md) {
       const term = termMatch ? termMatch[1].trim() : headingText;
       const descMatch = headingText.match(/[（(]([^）)]+)[）)]/);
       const description = descMatch ? descMatch[1].trim() : null;
-      current = { term, description };
+      // English description from the English heading half. Two formats exist:
+      //   "…||1. 〜はもとより (Not to mention…)"   → trailing parenthetical
+      //   "…||を — Object Particle"                → em-dash separated
+      const enHeading = (h2[3] || "").replace(/^\d+\.\s*/, "").trim();
+      let descriptionEn = null;
+      const descEnParen = enHeading.match(/[（(]([^（）()]+)[）)]\s*$/);
+      const descEnDash = enHeading.match(/\s[—–-]\s*(.+)$/);
+      if (descEnParen) descriptionEn = descEnParen[1].trim();
+      else if (descEnDash) descriptionEn = descEnDash[1].trim();
+      current = { term, description, descriptionEn };
       continue;
     }
     if (line.startsWith("## ") && current) {
@@ -230,25 +249,45 @@ function parseExampleLine(line) {
 }
 
 // Build both the structured example list and its rendered HTML.
-// `withAudio` renders [sound:...] tags (only meaningful inside .apkg).
-function renderExamples(items, withAudio) {
+// `lang` picks which translation to show; `withAudio` renders [sound:...]
+// tags (only meaningful inside .apkg).
+function renderExamples(items, lang, withAudio) {
   const lis = items.map(it => {
     const sound = withAudio && it.audio ? `[sound:${it.audio}]` : "";
-    const trans = it.zh
-      ? `<br><span style="color:#888;font-size:.88em;">${escapeHtml(it.zh)}</span>`
+    const trans = lang === "en" ? it.en : it.zh;
+    const transHtml = trans
+      ? `<br><span style="color:#888;font-size:.88em;">${escapeHtml(trans)}</span>`
       : "";
-    return `<li>${it.jpHtml}${sound}${trans}</li>`;
+    return `<li>${it.jpHtml}${sound}${transHtml}</li>`;
   });
   return `<ol style="padding-left:1.4em;margin:.4em 0;">${lis.join("")}</ol>`;
 }
 
-async function buildExamples(text) {
-  if (!text) return { items: [] };
+function parseExampleLines(text) {
   const items = [];
+  if (!text) return items;
   for (const line of stripMd(text).split("\n")) {
     if (!line.trim()) continue;
     const parsed = parseExampleLine(line.trim());
     if (parsed) items.push(parsed);
+  }
+  return items;
+}
+
+// The zh block is canonical (always present); the en block repeats the same
+// Japanese sentences with English translations. Merge the English in by
+// matching on the Japanese text so one item carries both translations.
+async function buildExamples(textZh, textEn) {
+  const items = parseExampleLines(textZh);
+  const enItems = parseExampleLines(textEn || "");
+  if (items.length === 0 && enItems.length) {
+    // zh-less section (rare): base the cards on the en block instead.
+    for (const it of enItems) items.push({ jp: it.jp, zh: null, en: it.zh });
+  } else {
+    const enMap = new Map(enItems.map(it => [it.jp.replace(/\s+/g, ""), it.zh]));
+    for (const it of items) {
+      it.en = enMap.get(it.jp.replace(/\s+/g, "")) || null;
+    }
   }
   for (const it of items) {
     it.jpHtml = await withFurigana(it.jp);
@@ -263,15 +302,16 @@ function makeFront(term, level, lessonNum) {
 </div>`;
 }
 
-function makeBack(term, description, meaning, examplesHtml, lessonNum, lessonUrl) {
+function makeBack(term, description, meaning, examplesHtml, lessonNum, lessonUrl, lang) {
   const descBlock = description
     ? `<div style="color:#555;font-size:.95em;margin:.2em 0 .6em;">${escapeHtml(description)}</div>`
     : "";
   const meaningBlock = meaning
     ? `<div style="margin:.6em 0;">${escapeHtml(stripMd(meaning)).replace(/\n+/g, "<br>")}</div>`
     : "";
+  const exLabel = lang === "en" ? "Examples" : "例句";
   const examplesBlock = examplesHtml
-    ? `<div style="font-weight:700;color:#1a1a2e;margin:1em 0 .3em;font-size:.9em;">例句</div>${examplesHtml}`
+    ? `<div style="font-weight:700;color:#1a1a2e;margin:1em 0 .3em;font-size:.9em;">${exLabel}</div>${examplesHtml}`
     : "";
   return `<div style="font-family:-apple-system,sans-serif;line-height:1.7;padding:.5em 1em;">
 <div style="font-size:1.6em;color:#e94560;font-weight:700;">${escapeHtml(term)}</div>
@@ -318,6 +358,7 @@ async function main() {
   const audioDir = path.join(__dirname, "audio");
   let audioHits = 0;
   let audioMisses = 0;
+  let enMeaningFallbacks = 0;
 
   for (const level of LEVELS) {
     const dir = path.join(__dirname, "grammar", level);
@@ -328,16 +369,18 @@ async function main() {
       .sort();
 
     // Anki's import format: comments / headers prefixed with `#`
-    const rows = [
+    const tsvHeader = deckName => [
       "#separator:tab",
       "#html:true",
-      `#deck:日语语法 ${level} · jpnotes.dev`,
+      `#deck:${deckName}`,
       "#notetype:Basic",
       "#columns:Front\tBack",
     ];
+    const rows = tsvHeader(`日语语法 ${level} · jpnotes.dev`);
+    const rowsEn = tsvHeader(`Japanese Grammar ${level} · jpnotes.dev`);
 
     let count = 0;
-    cardCache[level] = [];
+    cardCache[level] = { zh: [], en: [] };
     for (const f of files) {
       const md = fs.readFileSync(path.join(dir, f), "utf-8");
       const lessonMatch = f.match(/^lesson(\d+)/);
@@ -351,10 +394,10 @@ async function main() {
       const termCount = {};
       for (const s of sections) termCount[s.term] = (termCount[s.term] || 0) + 1;
       for (const s of sections) {
-        s.displayTerm =
-          termCount[s.term] > 1 && s.description
-            ? `${s.term}（${s.description}）`
-            : s.term;
+        const dup = termCount[s.term] > 1;
+        s.displayTerm = dup && s.description ? `${s.term}（${s.description}）` : s.term;
+        const descEn = s.descriptionEn || s.description;
+        s.displayTermEn = dup && descEn ? `${s.term} (${descEn})` : s.term;
       }
       let lessonCards = 0;
       for (const s of sections) {
@@ -362,9 +405,9 @@ async function main() {
         // 1. Must have examples (section overviews and summaries don't)
         // 2. Must not be a generic section heading (練習, 総結, etc.)
         const NOISE = /基本用法|常见错误|总结|総結|対比|对比|知識点|练习|練習|今日|辨析|详解|概论|入门|変形|动词分类|分类|副词化|用法总览|全部|总览|間違い|よくある|同一场景|切换规则/;
-        if (!s.examples) continue;
+        if (!s.examples && !s.examplesEn) continue;
         if (NOISE.test(s.term)) continue;
-        const ex = await buildExamples(s.examples);
+        const ex = await buildExamples(s.examples, s.examplesEn);
         // 3. Must have at least one REAL Japanese example after filtering —
         //    conjugation-table lessons whose "examples" are Chinese prose or
         //    table cells produce none, and a card without examples is noise.
@@ -378,27 +421,47 @@ async function main() {
             audioMisses++;
           }
         }
+        const exampleData = ex.items.map(it => ({
+          jp: it.jp,
+          jpHtml: it.jpHtml,
+          zh: it.zh || null,
+          en: it.en || null,
+          audio: it.audio || null,
+        }));
+        const shared = { level, lessonNum, term: s.term, url: lessonUrl, examples: exampleData };
+
+        // 中文版
         const front = makeFront(s.displayTerm, level, lessonNum);
-        const back = makeBack(s.displayTerm, s.description, s.meaning, renderExamples(ex.items, false), lessonNum, lessonUrl);
-        const backApkg = makeBack(s.displayTerm, s.description, s.meaning, renderExamples(ex.items, true), lessonNum, lessonUrl);
+        const back = makeBack(s.displayTerm, s.description, s.meaning, renderExamples(ex.items, "zh", false), lessonNum, lessonUrl, "zh");
+        const backApkg = makeBack(s.displayTerm, s.description, s.meaning, renderExamples(ex.items, "zh", true), lessonNum, lessonUrl, "zh");
         rows.push(`${tsvField(front)}\t${tsvField(back)}`);
-        cardCache[level].push({
+        cardCache[level].zh.push({
+          ...shared,
           front,
           back,
           backApkg,
-          level,
-          lessonNum,
-          term: s.term,
           displayTerm: s.displayTerm,
           description: s.description || null,
-          url: lessonUrl,
-          examples: ex.items.map(it => ({
-            jp: it.jp,
-            jpHtml: it.jpHtml,
-            zh: it.zh || null,
-            audio: it.audio || null,
-          })),
         });
+
+        // English edition — English meaning/description, falling back to the
+        // Chinese text when a lesson lacks the :::en block (counted below).
+        const meaningEn = s.meaningEn || s.meaning;
+        if (!s.meaningEn) enMeaningFallbacks++;
+        const descEn = s.descriptionEn || s.description;
+        const frontEn = makeFront(s.displayTermEn, level, lessonNum);
+        const backEn = makeBack(s.displayTermEn, descEn, meaningEn, renderExamples(ex.items, "en", false), lessonNum, lessonUrl, "en");
+        const backEnApkg = makeBack(s.displayTermEn, descEn, meaningEn, renderExamples(ex.items, "en", true), lessonNum, lessonUrl, "en");
+        rowsEn.push(`${tsvField(frontEn)}\t${tsvField(backEn)}`);
+        cardCache[level].en.push({
+          ...shared,
+          front: frontEn,
+          back: backEn,
+          backApkg: backEnApkg,
+          displayTerm: s.displayTermEn,
+          description: descEn || null,
+        });
+
         count++;
         lessonCards++;
       }
@@ -410,31 +473,24 @@ async function main() {
 
     const outPath = path.join(OUT_DIR, `jpnotes-${level}.txt`);
     fs.writeFileSync(outPath, rows.join("\n"), "utf-8");
-    console.log(`  Generated ${outPath} (${count} cards)`);
+    const outPathEn = path.join(OUT_DIR, `jpnotes-${level}-en.txt`);
+    fs.writeFileSync(outPathEn, rowsEn.join("\n"), "utf-8");
+    console.log(`  Generated ${outPath} + -en.txt (${count} cards each)`);
     summary.push({ level, count });
     total += count;
   }
 
   // Landing page at /anki/ for users browsing jpnotes.dev/anki/
-  const cardCells = summary
-    .map(
-      s => `  <a class="anki-card" href="jpnotes-${s.level}.txt" download>
-    <span class="anki-level">${s.level}</span>
-    <span class="anki-title">JLPT ${s.level} 文法卡组</span>
-    <span class="anki-count">${s.count} 张卡</span>
-    <span class="anki-dl">⬇ jpnotes-${s.level}.txt</span>
-  </a>`
-    )
-    .join("\n");
   const cardCellsEn = summary
     .map(
       s => `  <div class="anki-card">
     <span class="anki-level">${s.level}</span>
     <span class="anki-title"><span class="lang-zh">JLPT ${s.level} 文法卡组</span><span class="lang-en">JLPT ${s.level} Grammar Deck</span></span>
-    <span class="anki-count"><span class="lang-zh">${s.count} 张卡</span><span class="lang-en">${s.count} cards</span></span>
-    <a class="anki-dl anki-dl-primary" href="jpnotes-${s.level}.apkg" onclick="return shareApkg(this, 'jpnotes-${s.level}.apkg')">⬇ <span class="lang-zh">下载 .apkg（推荐 / 手机一键导入）</span><span class="lang-en">Download .apkg (recommended / one-tap import on mobile)</span></a>
-    <button class="anki-dl anki-copy" onclick="copyLink('${SITE}anki/jpnotes-${s.level}.apkg', this)"><span class="lang-zh">📋 复制 .apkg 链接（粘贴到 AnkiDroid "从URL导入"）</span><span class="lang-en">📋 Copy .apkg link (paste into AnkiDroid "Import from URL")</span></button>
-    <a class="anki-dl anki-dl-alt" href="jpnotes-${s.level}.txt" download><span class="lang-zh">或下载 .txt（TSV 格式）</span><span class="lang-en">or .txt (TSV fallback)</span></a>
+    <span class="anki-count"><span class="lang-zh">${s.count} 张卡 × 中文/English 两版 · 🔊 含音频+挖空</span><span class="lang-en">${s.count} cards × 中文/English editions · 🔊 audio + cloze</span></span>
+    <a class="anki-dl anki-dl-primary" href="jpnotes-${s.level}.apkg" onclick="trackDl('${s.level}','apkg','zh');return shareApkg(this, 'jpnotes-${s.level}.apkg')">⬇ <span class="lang-zh">.apkg 中文版（推荐 / 手机一键导入）</span><span class="lang-en">.apkg Chinese edition (one-tap import)</span></a>
+    <a class="anki-dl anki-dl-primary anki-dl-en" href="jpnotes-${s.level}-en.apkg" onclick="trackDl('${s.level}','apkg','en');return shareApkg(this, 'jpnotes-${s.level}-en.apkg')">⬇ <span class="lang-zh">.apkg English 版（英文释义）</span><span class="lang-en">.apkg English edition (recommended)</span></a>
+    <button class="anki-dl anki-copy" onclick="trackDl('${s.level}','apkg-link','zh');copyLink('${SITE}anki/jpnotes-${s.level}.apkg', this)"><span class="lang-zh">📋 复制 .apkg 链接（粘贴到 AnkiDroid "从URL导入"）</span><span class="lang-en">📋 Copy .apkg link (paste into AnkiDroid "Import from URL")</span></button>
+    <span class="anki-dl-alt-row"><a class="anki-dl anki-dl-alt" href="jpnotes-${s.level}.txt" download onclick="trackDl('${s.level}','tsv','zh')"><span class="lang-zh">.txt 中文</span><span class="lang-en">.txt Chinese</span></a> · <a class="anki-dl anki-dl-alt" href="jpnotes-${s.level}-en.txt" download onclick="trackDl('${s.level}','tsv','en')"><span class="lang-zh">.txt English</span><span class="lang-en">.txt English</span></a></span>
   </div>`
     )
     .join("\n");
@@ -460,8 +516,10 @@ ${JSON.stringify({
   license: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
   creator: { "@type": "Organization", name: "jpnotes.dev", url: SITE },
   distribution: summary.flatMap(s => [
-    { "@type": "DataDownload", name: `JLPT ${s.level} Grammar Anki Deck (.apkg)`, contentUrl: `${SITE}anki/jpnotes-${s.level}.apkg`, encodingFormat: "application/x-anki-package" },
-    { "@type": "DataDownload", name: `JLPT ${s.level} Grammar Anki Deck (TSV)`, contentUrl: `${SITE}anki/jpnotes-${s.level}.txt`, encodingFormat: "text/tab-separated-values" },
+    { "@type": "DataDownload", name: `JLPT ${s.level} Grammar Anki Deck, Chinese edition (.apkg)`, contentUrl: `${SITE}anki/jpnotes-${s.level}.apkg`, encodingFormat: "application/x-anki-package" },
+    { "@type": "DataDownload", name: `JLPT ${s.level} Grammar Anki Deck, English edition (.apkg)`, contentUrl: `${SITE}anki/jpnotes-${s.level}-en.apkg`, encodingFormat: "application/x-anki-package" },
+    { "@type": "DataDownload", name: `JLPT ${s.level} Grammar Anki Deck, Chinese edition (TSV)`, contentUrl: `${SITE}anki/jpnotes-${s.level}.txt`, encodingFormat: "text/tab-separated-values" },
+    { "@type": "DataDownload", name: `JLPT ${s.level} Grammar Anki Deck, English edition (TSV)`, contentUrl: `${SITE}anki/jpnotes-${s.level}-en.txt`, encodingFormat: "text/tab-separated-values" },
   ]),
 }, null, 1)}
 </script>
@@ -501,6 +559,10 @@ h2 { font-size: 1.3rem; margin: 2rem 0 1rem; }
 .anki-dl { color: var(--accent); font-size: .85rem; font-weight: 600; text-decoration: none; display: block; margin-top: .4rem; }
 .anki-dl-primary { background: #d6354c; color: #fff; padding: .5rem .8rem; border-radius: 6px; text-align: center; }
 .anki-dl-primary:hover { background: #c2304a; }
+.anki-dl-en { background: transparent; color: #d6354c; border: 1.5px solid #d6354c; }
+.anki-dl-en:hover { background: rgba(214,53,76,.08); }
+.anki-dl-alt-row { font-size: .8rem; color: var(--muted); margin-top: .4rem; }
+.anki-dl-alt-row .anki-dl-alt { display: inline; }
 .anki-copy { border: 1px dashed var(--border); background: var(--card-bg); color: var(--muted); padding: .4rem .8rem; border-radius: 6px; cursor: pointer; font-size: .8rem; text-align: center; }
 .anki-copy:hover { border-color: var(--accent); color: var(--accent); }
 .anki-copy.copied { border-color: #4caf50; color: #4caf50; }
@@ -532,8 +594,8 @@ body.lang-en div.lang-en, body.lang-en p.lang-en, body.lang-en li.lang-en, body.
   </nav>
   <h1><span class="lang-zh">日语语法 Anki 卡组下载</span><span class="lang-en">Japanese Grammar Anki Decks</span></h1>
   <p class="subtitle">
-    <span class="lang-zh">JLPT N5 → N2 共 ${total} 张卡 · .apkg 版含 🔊 例句日语音频 + 挖空练习子卡组 · 支持 AnkiDroid、AnkiMobile · 每张语法点配含义、例句和跳回 jpnotes.dev 详细讲解的链接</span>
-    <span class="lang-en">JLPT N5 → N2, ${total} cards in total · .apkg includes 🔊 native-style TTS audio on examples + a cloze-practice subdeck · works with AnkiDroid &amp; AnkiMobile · each card has the grammar point, its meaning, examples, and a link back to the full lesson on jpnotes.dev</span>
+    <span class="lang-zh">JLPT N5 → N2 共 ${total} 张卡 · 中文版 / English 版两套独立卡组 · .apkg 版含 🔊 例句日语音频 + 挖空练习子卡组 · 支持 AnkiDroid、AnkiMobile · 每张语法点配含义、例句和跳回 jpnotes.dev 详细讲解的链接</span>
+    <span class="lang-en">JLPT N5 → N2, ${total} cards · separate Chinese and English editions · .apkg includes 🔊 native-style TTS audio on examples + a cloze-practice subdeck · works with AnkiDroid &amp; AnkiMobile · each card has the grammar point, its meaning, examples, and a link back to the full lesson on jpnotes.dev</span>
   </p>
 
   <h2><span class="lang-zh">选择级别下载</span><span class="lang-en">Pick a level to download</span></h2>
@@ -599,6 +661,36 @@ ${cardCellsEn}
   <div id="lang-toggle"><button id="lang-btn">EN</button></div>
 </div>
 <script>
+// GA4, same property as the main site. The gtag stub queues events into
+// dataLayer immediately, so download clicks fired before the (deferred)
+// script loads are not lost. Mark anki_download as a key event in GA4 admin.
+window.dataLayer = window.dataLayer || [];
+window.gtag = function(){ dataLayer.push(arguments); };
+gtag('js', new Date());
+gtag('config', 'G-D1KNQTFN1R');
+(function() {
+  if (/bot|crawl|spider|headless|lighthouse/i.test(navigator.userAgent)) return;
+  var loaded = false;
+  function load() {
+    if (loaded) return;
+    loaded = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-D1KNQTFN1R';
+    document.head.appendChild(s);
+  }
+  ['pointerdown','scroll','keydown','touchstart'].forEach(function(ev) {
+    window.addEventListener(ev, load, { once: true, passive: true });
+  });
+  setTimeout(load, 3000);
+})();
+
+function trackDl(deck, format, lang) {
+  try {
+    gtag('event', 'anki_download', { deck_level: deck, file_format: format, deck_lang: lang });
+  } catch (e) {}
+}
+
 // Copy link to clipboard for "AnkiDroid → Import from URL" flow.
 function copyLink(url, btn) {
   navigator.clipboard.writeText(url).then(function() {
@@ -679,8 +771,11 @@ function shareApkg(link, filename) {
     "utf-8"
   );
 
-  console.log(`\nTotal: ${total} cards across ${LEVELS.length} files.`);
+  console.log(`\nTotal: ${total} cards × 2 editions (中文/English) across ${LEVELS.length} levels.`);
   console.log(`Audio: ${audioHits}/${audioHits + audioMisses} example sentences matched a pre-generated TTS mp3.`);
+  if (enMeaningFallbacks) {
+    console.log(`English edition: ${enMeaningFallbacks} cards fell back to the Chinese meaning (lesson lacks :::en block).`);
+  }
   console.log(`Output: ${OUT_DIR}/`);
 
   if (skippedNoExamples.length) {
