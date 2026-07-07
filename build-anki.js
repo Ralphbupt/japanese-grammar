@@ -31,6 +31,36 @@ async function initKuroshiro() {
 
 const HAS_KANJI = /[一-龯㐀-䶿]/;
 
+// Simplified-Chinese-only characters (same set as build.js) — these never
+// appear in Japanese text. An "example" line whose Japanese half contains
+// any of them is actually Chinese prose (explanation paragraphs, table
+// labels) and must not be furigana-annotated or turned into a card example.
+const SC_CHARS = new Set(
+  "词讲语调证试诉该详请谢议论识记设访许评读写书" +
+  "买卖贵费资质购赢赶趣够辑辩辨边达远连运近" +
+  "闪闭闻间阅队阳阶际陆险随难须频颜飘馆驾验骑" +
+  "问题马头车东两关门见贝页鱼鸟齿风飞鞋韩" +
+  "进发现实应虽选择认输环让错绝谓释练确义务" +
+  "则规变对称赞类纯陈述简罗辑处叹做并" +
+  "组粗细网终编继续绍纷绕缘缺缩织" +
+  "当将独获奖妆庄严丧" +
+  "从给过还这没为着到被说" +
+  "们它哪怎谁的了吗呢吧啊哦嘛呀嗯啦么" +
+  "举护坏态惯样欢决热经结据动听观传师预报转" +
+  "离单复图场园约计长换历准办银铁镇脑较亲价" +
+  "强录厅婴宽异弯张扬杂笔脸构标松灭虑综级" +
+  "岁属带怀戏执担坚叶杀产仅优储兰创势华币" +
+  "响团块奋妇宁宝宪审岛帐广庆径恼悬惊愿战" +
+  "扩拟拥拨择损摇撑权枪"
+);
+
+function hasSC(text) {
+  for (const ch of text) {
+    if (SC_CHARS.has(ch)) return true;
+  }
+  return false;
+}
+
 async function withFurigana(text) {
   if (!text || !HAS_KANJI.test(text)) return text;
   try {
@@ -44,6 +74,9 @@ async function withFurigana(text) {
 
 function stripMd(text) {
   return text
+    .replace(/^#{1,6}\s+.*$/gm, "")
+    .replace(/^\s*\|.*$/gm, "")
+    .replace(/^\s*[-=—]{3,}\s*$/gm, "")
     .replace(/\*\*([^*]+)\*\*/g, "$1")
     .replace(/[*_`]/g, "")
     .trim();
@@ -169,26 +202,58 @@ function escapeHtml(s) {
     .replace(/"/g, "&quot;");
 }
 
-async function formatExamples(text) {
-  if (!text) return "";
-  const stripped = stripMd(text);
-  const lines = stripped.split("\n").filter(l => l.trim());
-  if (lines.length === 0) return "";
-  const items = await Promise.all(
-    lines.map(async line => {
-      const m = line.match(/^\d+[.、．]\s*(.+)$/);
-      const content = m ? m[1] : line.replace(/^[\-•・]\s*/, "");
-      const splitMatch = content.match(/^([\s\S]+?)[（(]([^）)]+)[）)]\s*$/);
-      if (splitMatch) {
-        // Japanese half gets furigana; Chinese parenthetical translation stays plain.
-        const jaWithRuby = await withFurigana(splitMatch[1].trim());
-        return `<li>${jaWithRuby}<br><span style="color:#888;font-size:.88em;">${escapeHtml(splitMatch[2].trim())}</span></li>`;
-      }
-      const withRuby = await withFurigana(content);
-      return `<li>${withRuby}</li>`;
-    })
-  );
-  return `<ol style="padding-left:1.4em;margin:.4em 0;">${items.join("")}</ol>`;
+// Parse one example line into { jp, zh } — or null when the line is not a
+// Japanese example sentence (table rows, headings, Chinese prose paragraphs
+// from conjugation-table lessons). Only the Japanese half may be sent to
+// kuroshiro; annotating Chinese produces garbage readings like 英(かずひで).
+function parseExampleLine(line) {
+  const m = line.match(/^\d+[.、．]\s*(.+)$/);
+  const content = (m ? m[1] : line.replace(/^[\-•・]\s*/, "")).trim();
+  if (!content || content.includes("|")) return null;
+  // Split off the trailing （中文译文）; greedy jp match targets the LAST
+  // paren pair so Japanese parentheticals earlier in the sentence survive.
+  // Any tail after the paren (e.g. "→ 经过的场所") joins the translation.
+  let jp = content;
+  let zh = null;
+  const split = content.match(/^([\s\S]+)[（(]([^（）()]+)[）)](.*)$/);
+  if (split) {
+    const cand = split[2].trim();
+    // A translation is Chinese: no kana, or contains simplified-only chars.
+    if (!/[぀-ゟ゠-ヿ]/.test(cand) || hasSC(cand)) {
+      jp = split[1].trim();
+      zh = cand + (split[3].trim() ? " " + split[3].trim() : "");
+    }
+  }
+  // The Japanese half must actually look Japanese.
+  if (!/[぀-ゟ゠-ヿ]/.test(jp) || hasSC(jp)) return null;
+  return { jp, zh };
+}
+
+// Build both the structured example list and its rendered HTML.
+// `withAudio` renders [sound:...] tags (only meaningful inside .apkg).
+function renderExamples(items, withAudio) {
+  const lis = items.map(it => {
+    const sound = withAudio && it.audio ? `[sound:${it.audio}]` : "";
+    const trans = it.zh
+      ? `<br><span style="color:#888;font-size:.88em;">${escapeHtml(it.zh)}</span>`
+      : "";
+    return `<li>${it.jpHtml}${sound}${trans}</li>`;
+  });
+  return `<ol style="padding-left:1.4em;margin:.4em 0;">${lis.join("")}</ol>`;
+}
+
+async function buildExamples(text) {
+  if (!text) return { items: [] };
+  const items = [];
+  for (const line of stripMd(text).split("\n")) {
+    if (!line.trim()) continue;
+    const parsed = parseExampleLine(line.trim());
+    if (parsed) items.push(parsed);
+  }
+  for (const it of items) {
+    it.jpHtml = await withFurigana(it.jp);
+  }
+  return { items };
 }
 
 function makeFront(term, level, lessonNum) {
@@ -198,15 +263,15 @@ function makeFront(term, level, lessonNum) {
 </div>`;
 }
 
-async function makeBack(term, description, meaning, examples, lessonNum, lessonUrl) {
+function makeBack(term, description, meaning, examplesHtml, lessonNum, lessonUrl) {
   const descBlock = description
     ? `<div style="color:#555;font-size:.95em;margin:.2em 0 .6em;">${escapeHtml(description)}</div>`
     : "";
   const meaningBlock = meaning
     ? `<div style="margin:.6em 0;">${escapeHtml(stripMd(meaning)).replace(/\n+/g, "<br>")}</div>`
     : "";
-  const examplesBlock = examples
-    ? `<div style="font-weight:700;color:#1a1a2e;margin:1em 0 .3em;font-size:.9em;">例句</div>${await formatExamples(examples)}`
+  const examplesBlock = examplesHtml
+    ? `<div style="font-weight:700;color:#1a1a2e;margin:1em 0 .3em;font-size:.9em;">例句</div>${examplesHtml}`
     : "";
   return `<div style="font-family:-apple-system,sans-serif;line-height:1.7;padding:.5em 1em;">
 <div style="font-size:1.6em;color:#e94560;font-weight:700;">${escapeHtml(term)}</div>
@@ -237,6 +302,23 @@ async function main() {
   // and re-running furigana from a separate language runtime.
   const cardCache = {};
 
+  // Example text → pre-generated TTS id. dist/.audio-requests.json is
+  // rewritten by build.js on every run, so it always matches current lesson
+  // content; matching by text (not position) keeps this immune to the
+  // positional-ID shifting that plagues the site's data-audio attributes.
+  const audioMap = new Map();
+  try {
+    const reqs = JSON.parse(
+      fs.readFileSync(path.join(__dirname, "dist", ".audio-requests.json"), "utf-8")
+    );
+    for (const { id, text } of reqs) audioMap.set(text.replace(/\s+/g, ""), id);
+  } catch {
+    console.log("  (dist/.audio-requests.json missing — building decks without audio)");
+  }
+  const audioDir = path.join(__dirname, "audio");
+  let audioHits = 0;
+  let audioMisses = 0;
+
   for (const level of LEVELS) {
     const dir = path.join(__dirname, "grammar", level);
     if (!fs.existsSync(dir)) continue;
@@ -263,6 +345,17 @@ async function main() {
       const lessonNum = lessonMatch[1];
       const lessonUrl = `${SITE}lesson${lessonNum}/`;
       const sections = parseGrammarSections(md);
+      // Same-term points within one lesson (e.g. そうだ 样态 vs 传闻) would
+      // produce identical fronts — ambiguous at review time and merged by
+      // Anki's duplicate detection. Suffix the parenthetical description.
+      const termCount = {};
+      for (const s of sections) termCount[s.term] = (termCount[s.term] || 0) + 1;
+      for (const s of sections) {
+        s.displayTerm =
+          termCount[s.term] > 1 && s.description
+            ? `${s.term}（${s.description}）`
+            : s.term;
+      }
       let lessonCards = 0;
       for (const s of sections) {
         // Filter out non-grammar cards:
@@ -271,10 +364,41 @@ async function main() {
         const NOISE = /基本用法|常见错误|总结|総結|対比|对比|知識点|练习|練習|今日|辨析|详解|概论|入门|変形|动词分类|分类|副词化|用法总览|全部|总览|間違い|よくある|同一场景|切换规则/;
         if (!s.examples) continue;
         if (NOISE.test(s.term)) continue;
-        const front = makeFront(s.term, level, lessonNum);
-        const back = await makeBack(s.term, s.description, s.meaning, s.examples, lessonNum, lessonUrl);
+        const ex = await buildExamples(s.examples);
+        // 3. Must have at least one REAL Japanese example after filtering —
+        //    conjugation-table lessons whose "examples" are Chinese prose or
+        //    table cells produce none, and a card without examples is noise.
+        if (ex.items.length === 0) continue;
+        for (const it of ex.items) {
+          const id = audioMap.get(it.jp.replace(/\s+/g, ""));
+          if (id && fs.existsSync(path.join(audioDir, `${id}.mp3`))) {
+            it.audio = `${id}.mp3`;
+            audioHits++;
+          } else {
+            audioMisses++;
+          }
+        }
+        const front = makeFront(s.displayTerm, level, lessonNum);
+        const back = makeBack(s.displayTerm, s.description, s.meaning, renderExamples(ex.items, false), lessonNum, lessonUrl);
+        const backApkg = makeBack(s.displayTerm, s.description, s.meaning, renderExamples(ex.items, true), lessonNum, lessonUrl);
         rows.push(`${tsvField(front)}\t${tsvField(back)}`);
-        cardCache[level].push({ front, back });
+        cardCache[level].push({
+          front,
+          back,
+          backApkg,
+          level,
+          lessonNum,
+          term: s.term,
+          displayTerm: s.displayTerm,
+          description: s.description || null,
+          url: lessonUrl,
+          examples: ex.items.map(it => ({
+            jp: it.jp,
+            jpHtml: it.jpHtml,
+            zh: it.zh || null,
+            audio: it.audio || null,
+          })),
+        });
         count++;
         lessonCards++;
       }
@@ -320,7 +444,7 @@ async function main() {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>日语语法 Anki 卡组下载（.apkg / TSV）| JLPT N5–N2 Japanese Grammar Anki Decks — jpnotes.dev</title>
-<meta name="description" content="免费下载 JLPT N5/N4/N3/N2 日语语法 Anki 卡组：.apkg 一键导入（支持 AnkiDroid / AnkiMobile），共 ${total} 张。Free JLPT N5–N2 Japanese grammar Anki decks (.apkg &amp; TSV, ${total} cards, works with AnkiDroid &amp; AnkiMobile). Grammar + meaning + examples on every card.">
+<meta name="description" content="免费下载 JLPT N5/N4/N3/N2 日语语法 Anki 卡组：.apkg 一键导入，含例句日语音频和挖空练习（支持 AnkiDroid / AnkiMobile），共 ${total} 张。Free JLPT N5–N2 Japanese grammar Anki decks with example audio &amp; cloze practice (.apkg &amp; TSV, ${total} cards, works with AnkiDroid &amp; AnkiMobile).">
 <link rel="canonical" href="${SITE}anki/">
 <meta property="og:title" content="日语语法 Anki 卡组下载（.apkg）| JLPT N5–N2 Grammar Anki Decks">
 <meta property="og:description" content="免费 JLPT 日语语法 Anki 卡组 / Free JLPT Japanese grammar Anki decks (.apkg, ${total} cards), covering N5–N2.">
@@ -408,8 +532,8 @@ body.lang-en div.lang-en, body.lang-en p.lang-en, body.lang-en li.lang-en, body.
   </nav>
   <h1><span class="lang-zh">日语语法 Anki 卡组下载</span><span class="lang-en">Japanese Grammar Anki Decks</span></h1>
   <p class="subtitle">
-    <span class="lang-zh">JLPT N5 → N2 共 ${total} 张卡 · .apkg / TSV 格式，支持 AnkiDroid、AnkiMobile · 每张语法点配含义、例句和跳回 jpnotes.dev 详细讲解的链接</span>
-    <span class="lang-en">JLPT N5 → N2, ${total} cards in total · .apkg / TSV, works with AnkiDroid &amp; AnkiMobile · each card has the grammar point, its meaning, examples, and a link back to the full lesson on jpnotes.dev</span>
+    <span class="lang-zh">JLPT N5 → N2 共 ${total} 张卡 · .apkg 版含 🔊 例句日语音频 + 挖空练习子卡组 · 支持 AnkiDroid、AnkiMobile · 每张语法点配含义、例句和跳回 jpnotes.dev 详细讲解的链接</span>
+    <span class="lang-en">JLPT N5 → N2, ${total} cards in total · .apkg includes 🔊 native-style TTS audio on examples + a cloze-practice subdeck · works with AnkiDroid &amp; AnkiMobile · each card has the grammar point, its meaning, examples, and a link back to the full lesson on jpnotes.dev</span>
   </p>
 
   <h2><span class="lang-zh">选择级别下载</span><span class="lang-en">Pick a level to download</span></h2>
@@ -556,6 +680,7 @@ function shareApkg(link, filename) {
   );
 
   console.log(`\nTotal: ${total} cards across ${LEVELS.length} files.`);
+  console.log(`Audio: ${audioHits}/${audioHits + audioMisses} example sentences matched a pre-generated TTS mp3.`);
   console.log(`Output: ${OUT_DIR}/`);
 
   if (skippedNoExamples.length) {
