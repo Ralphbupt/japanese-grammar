@@ -573,8 +573,10 @@ ol li, ul li { margin: .5rem 0; }
 code { background: var(--card-bg); border: 1px solid var(--border); padding: .1rem .35rem; border-radius: 3px; font-size: .9em; }
 a { color: var(--accent); }
 .note { background: rgba(233,69,96,.04); border-left: 3px solid var(--accent); padding: .8rem 1.1rem; margin: 1.2rem 0; border-radius: 0 6px 6px 0; }
-/* Bilingual visibility: same rules as the rest of jpnotes.dev */
-.lang-en { display: none; }
+/* Bilingual visibility: same rules as the rest of jpnotes.dev.
+   :not(body) is load-bearing — the toggle puts .lang-en on <body> itself,
+   and a bare .lang-en rule would display:none the whole page. */
+:not(body).lang-en { display: none; }
 body.lang-en .lang-zh { display: none; }
 body.lang-en span.lang-en { display: inline; }
 body.lang-en div.lang-en, body.lang-en p.lang-en, body.lang-en li.lang-en, body.lang-en h2.lang-en { display: block; }
