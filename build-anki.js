@@ -580,10 +580,11 @@ a { color: var(--accent); }
 body.lang-en .lang-zh { display: none; }
 body.lang-en span.lang-en { display: inline; }
 body.lang-en div.lang-en, body.lang-en p.lang-en, body.lang-en li.lang-en, body.lang-en h2.lang-en { display: block; }
-/* Bottom toggles (theme + lang) — mirror the main site's bottom-controls */
-#bottom-controls { position: fixed; bottom: 1.2rem; right: 1.2rem; display: flex; gap: .5rem; z-index: 200; }
-#lang-toggle, #theme-toggle { background: #1a1a2e; color: #fff; padding: .5rem 1rem; border-radius: 20px; font-size: .8rem; box-shadow: 0 2px 10px rgba(0,0,0,.2); }
-#lang-btn, #theme-btn { background: none; border: none; color: #fff; cursor: pointer; padding: 0; line-height: 1; }
+/* Toggles (theme + lang) — same top-right placement and pill look as the
+   main site's #bottom-controls (the name is legacy; it sits top-right). */
+#bottom-controls { position: fixed; top: .8rem; right: 1.2rem; display: flex; align-items: center; gap: .5rem; z-index: 200; }
+#lang-toggle, #theme-toggle { background: var(--card-bg); color: inherit; padding: .4rem .8rem; border-radius: 8px; font-size: .8rem; border: 1px solid var(--border); box-shadow: 0 2px 10px rgba(0,0,0,.12); }
+#lang-btn, #theme-btn { background: none; border: none; color: inherit; cursor: pointer; padding: 0; line-height: 1; }
 #lang-btn { font-size: .8rem; font-weight: 700; }
 #theme-btn { font-size: 1.05rem; }
 </style>
