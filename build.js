@@ -2265,8 +2265,14 @@ ${sitemapUrls.join("\n")}
 </urlset>
 `, "utf-8");
 
+  // The /anki/ download assets are data files, not pages: crawlers fetch the
+  // text/plain TSVs, find no <title>, and report them as broken HTML pages.
+  // The TSV content also duplicates the lesson pages, so there is nothing to
+  // gain from having them indexed.
   fs.writeFileSync(path.join(__dirname, "dist/robots.txt"), `User-agent: *
 Allow: /
+Disallow: /anki/*.txt$
+Disallow: /anki/*.apkg$
 
 Sitemap: ${SITE}sitemap.xml
 `, "utf-8");
