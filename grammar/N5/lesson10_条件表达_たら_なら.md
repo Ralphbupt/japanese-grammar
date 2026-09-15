@@ -127,22 +127,12 @@
 - **「もし」 can be added in front for emphasis on hypothesis**: 「もし時間があったら、来てください」
 :::
 
-### 辨析：たら vs 其他三種||Comparison: たら vs the other three
-
 :::zh
-| 比较 | 区别 |
-|------|------|
-| **たら vs と** | と强调必然/反复/自然规律；たら强调一次性的"完成后"或"万一"。「春になると花が咲く」（每年都这样）vs「春になったら旅行しよう」（具体一次） |
-| **たら vs ば** | ば偏书面/谚语/逻辑假设；たら更口语/具体。「努力すれば成功する」（书面）vs「努力したら成功する」（口语） |
-| **たら vs なら** | たら要 A→B 时间顺序；なら不要求顺序，可 B 先于 A。「日本に行ったら、写真を撮る」（去了之后拍）vs「日本に行くなら、カメラを買う」（去之前买相机） |
+> たら 与 と・ば・なら 的逐项区别，统一放在本课 [第 3 节「四种条件対比总結」](#3._四种条件_対比总結)，学完 なら 之后一次看清。
 :::
 
 :::en
-| Comparison | Difference |
-|------|------|
-| **たら vs と** | と stresses inevitability/repetition/natural law; たら stresses a one-off "after completion" or "what if". 「春になると花が咲く」(every year) vs 「春になったら旅行しよう」(this specific time) |
-| **たら vs ば** | ば leans literary / proverbial / logical hypothesis; たら is more conversational and concrete. 「努力すれば成功する」(formal) vs 「努力したら成功する」(spoken) |
-| **たら vs なら** | たら requires A→B time order; なら does not — B can precede A. 「日本に行ったら、写真を撮る」(take photos after going) vs 「日本に行くなら、カメラを買う」(buy a camera before going) |
+> How たら differs from と, ば and なら point by point is collected in [§3 "Summary comparison of all four conditionals"](#3._四种条件_対比总結) below — read it once you've learned なら.
 :::
 
 ---
@@ -251,24 +241,6 @@
 - **Important**: the second clause of なら can happen before the first. 「東京に行くなら、お土産を買ってきて」（If you're going to Tokyo, bring me back a souvenir.）— the request is made before the trip even starts
 :::
 
-### 辨析：なら vs 其他三種||Comparison: なら vs the other three
-
-:::zh
-| 比较 | 区别 |
-|------|------|
-| **なら vs と** | なら用于建议/判断；と用于自然/必然。「寒いなら、窓を閉めて」✅ 「寒いと、窓を閉めて」❌ |
-| **なら vs ば** | なら接别人话题；ば自己假设。「行くなら」=你要去的话（对方提了）；「行けば」=假设去了的话 |
-| **なら vs たら** | なら不要求时间顺序；たら要A→B。「買うなら早く」=要买趁早（建议先于动作）；「買ったら教えて」=买了之后告诉我 |
-:::
-
-:::en
-| Comparison | Difference |
-|------|------|
-| **なら vs と** | なら is for advice/judgment; と is for natural/inevitable results. 「寒いなら、窓を閉めて」✅ 「寒いと、窓を閉めて」❌ |
-| **なら vs ば** | なら responds to someone else's topic; ば proposes a hypothesis yourself. 「行くなら」= if you're going (topic raised by other person); 「行けば」= hypothetically, if one goes |
-| **なら vs たら** | なら requires no time order; たら requires A→B order. 「買うなら早く」= if you're buying, do it soon (advice precedes action); 「買ったら教えて」= tell me after you've bought it |
-:::
-
 ---
 
 ## 3. 四种条件 対比总結||3. Summary comparison of all four conditionals
@@ -283,6 +255,9 @@
 | 给建议 | ❌ | ✅ | ✅ | ✅最适合 |
 | 反复/习惯 | ✅最适合 | ✅ | △ | ❌ |
 | 意外发现 | ✅ | ❌ | ✅ | ❌ |
+| 时间顺序 | A→B | A→B | A→B（必须） | 不限，B 可先于 A |
+| 假设来自谁 | — | 自己提出的假设 | 自己提出的假设 | 承接对方说过的话 |
+| 语体倾向 | 中性、说明性 | 偏书面、谚语、逻辑 | 偏口语、日常会话 | 口语、对话应答 |
 | 万能度 | ★★ | ★★★ | ★★★★★ | ★★★ |
 :::
 
@@ -296,6 +271,9 @@
 | Giving advice | ❌ | ✅ | ✅ | ✅ best |
 | Habitual / repeated | ✅ best | ✅ | △ | ❌ |
 | Unexpected discovery | ✅ | ❌ | ✅ | ❌ |
+| Time order | A→B | A→B | A→B (required) | Free — B may precede A |
+| Whose hypothesis | — | Your own | Your own | Picks up what the other person said |
+| Register | Neutral, expository | Literary, proverbial, logical | Colloquial, everyday speech | Spoken, conversational reply |
 | Versatility | ★★ | ★★★ | ★★★★★ | ★★★ |
 :::
 

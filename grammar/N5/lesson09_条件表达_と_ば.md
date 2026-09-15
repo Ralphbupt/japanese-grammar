@@ -56,7 +56,7 @@ This is **one of the biggest challenges** in N5-N4. All four conditional forms c
 | と | 辞书形/ない形+と | 自然/必然（一…就…） |
 | ば | 假定形+ば | 假设前提（如果…的话） |
 | たら | た形+ら | 完成后/万一（…了之后/如果…的话） |
-| なら | 名词/简体+なら | 话题假设（如果说是…的话） |
+| なら | 名词/简体+なら | 话题假设（如果说是…的话）→ Lesson 10 |
 :::
 
 :::en
@@ -65,7 +65,7 @@ This is **one of the biggest challenges** in N5-N4. All four conditional forms c
 | と | dictionary / ない form + と | Natural / inevitable (once A, B always follows) |
 | ば | conditional form + ば | Hypothetical premise (if A, then B) |
 | たら | た form + ら | After completion / what if (after A / in case A) |
-| なら | noun / plain form + なら | Topic-based hypothesis (if we're talking about A…) |
+| なら | noun / plain form + なら | Topic-based hypothesis (if we're talking about A…) → Lesson 10 |
 :::
 
 ---
@@ -194,24 +194,6 @@ This is **one of the biggest challenges** in N5-N4. All four conditional forms c
 > ✅ 暇だったら、来てください。（If you have free time, please come.）
 :::
 
-### 辨析：と vs 其他三种||Comparison: と vs the other three
-
-:::zh
-| 比较 | 区别 |
-|------|------|
-| **と vs たら** | と强调"每次都必然"；たら只说"那一次"。「家に帰ると寝る」=每次回家都睡；「家に帰ったら寝る」=今天回家后睡 |
-| **と vs ば** | と是客观必然；ば是假设条件。「春になると桜が咲く」=陈述事实；「春になれば桜が咲く」=假设到了春天的话 |
-| **と vs なら** | と不能接建议；なら专门接建议。想给建议时绝对不要用と |
-:::
-
-:::en
-| Comparison | Difference |
-|------|------|
-| **と vs たら** | と stresses "always, every time"; たら refers to a single instance. 「家に帰ると寝る」= every time I get home I sleep; 「家に帰ったら寝る」= I'll sleep when I get home today |
-| **と vs ば** | と is objective inevitability; ば is a hypothetical condition. 「春になると桜が咲く」= stating a fact; 「春になれば桜が咲く」= hypothetically, if spring comes |
-| **と vs なら** | と cannot lead into advice; なら is specifically for giving advice. Never use と when you want to make a suggestion |
-:::
-
 ---
 
 ## 2. 〜ば（假定条件）||2. 〜ば (Hypothetical condition)
@@ -324,24 +306,6 @@ This is **one of the biggest challenges** in N5-N4. All four conditional forms c
 > ✅ 時間があれば、友達に会います。（If I have time, I'll see my friend. → natural）
 :::
 
-### 辨析：ば vs 其他三种||Comparison: ば vs the other three
-
-:::zh
-| 比较 | 区别 |
-|------|------|
-| **ば vs と** | ば是假设"如果"；と是客观"每次都"。「ボタンを押せば開く」=假设按的话；「ボタンを押すと開く」=按了就会开 |
-| **ば vs たら** | ば偏"一般条件/道理"；たら偏"具体一次的情况"。「安ければ買う」=一般论；「安かったら買う」=那次便宜的话就买 |
-| **ば vs なら** | ば是自己提假设；なら是接别人的话。「行けば分かる」=假设去了就明白；「行くなら早く」=你要去的话快点 |
-:::
-
-:::en
-| Comparison | Difference |
-|------|------|
-| **ば vs と** | ば is a hypothetical "if"; と is objective "every time". 「ボタンを押せば開く」= hypothetically if you press it; 「ボタンを押すと開く」= press it and it opens |
-| **ば vs たら** | ば leans toward general rules/principles; たら leans toward a specific single instance. 「安ければ買う」= as a general rule; 「安かったら買う」= if that particular one is cheap |
-| **ば vs なら** | ば proposes a hypothetical yourself; なら picks up on what the other person said. 「行けば分かる」= if you go you'll understand; 「行くなら早く」= if you're going to go, hurry up |
-:::
-
 ---
 
 ## 3. 〜たら（完成条件 / 万一）||3. 〜たら (Completion condition / what if)
@@ -450,22 +414,54 @@ Verb た-form + ら (straightforward!)
 > In everyday conversation, たら is the conditional Japanese people use most often.
 :::
 
-### 辨析：たら vs 其他三种||Comparison: たら vs the other three
+---
+
+## 4. と・ば・たら 三者速览||4. と / ば / たら at a glance
 
 :::zh
-| 比较 | 区别 |
-|------|------|
-| **たら vs と** | たら可以接请求/意志，と不行。「着いたら連絡して」✅ 「着くと連絡して」❌ |
-| **たら vs ば** | たら偏具体/一次性；ば偏一般论/道理。「安かったら買う」=那个便宜就买；「安ければ買う」=一般来说便宜就买 |
-| **たら vs なら** | たら是"A完成后B"，时间顺序A→B；なら可以B先于A。「東京に行ったら買ってきて」=到了东京再买；「東京に行くなら新幹線がいい」=要去的话坐新干线（建议在前） |
+本课三个形式的差异一次看清。第四个 **なら** 以及四者的完整对比，见 [Lesson 10 条件表达：たら・なら](/lesson10/)。
+
+| | と | ば | たら |
+|---|---|---|---|
+| 核心语感 | 必然、每次都这样 | 假设前提、一般道理 | 完成之后、万一，指具体一次 |
+| 后接意志/请求/命令 | ❌ 不可 | △ 限制多（同主语意志动作生硬） | ✅ 自由 |
+| 自然规律、机械操作 | ✅ 最适合 | ✅ 可以 | △ 不自然 |
+| 反复、习惯 | ✅ 最适合 | ✅ 可以 | △ 少用 |
+| 过去的意外发现 | ✅ 可以 | ❌ 不可 | ✅ 最常用 |
+| 语体倾向 | 中性、说明性 | 偏书面、谚语、逻辑 | 偏口语、日常会话 |
+
+**同一句话的三种说法：**
+
+| 想表达 | と | ば | たら |
+|---|---|---|---|
+| 一按按钮就开 | ✅ ボタンを押すと開く。（陈述事实） | ✅ ボタンを押せば開く。（假设） | △ ボタンを押したら開く。（说那一次） |
+| 便宜的话就买 | ❌ 安いと買う。 | ✅ 安ければ買う。（一般论） | ✅ 安かったら買う。（那件便宜就买） |
+| 到了请联系我 | ❌ 着くと連絡して。 | △ 着けば連絡して。（生硬） | ✅ 着いたら連絡して。（最自然） |
+
+> **一句话记住**：说道理用 **ば**，说规律用 **と**，其余一律用 **たら**。
 :::
 
 :::en
-| Comparison | Difference |
-|------|------|
-| **たら vs と** | たら can be followed by requests/volition; と cannot. 「着いたら連絡して」✅ 「着くと連絡して」❌ |
-| **たら vs ば** | たら leans toward specific/one-time; ば leans toward general rules. 「安かったら買う」= I'll buy that one if it's cheap; 「安ければ買う」= in general, if it's cheap I buy |
-| **たら vs なら** | たら follows A→B order; なら allows B to precede A. 「東京に行ったら買ってきて」= buy it once you're in Tokyo; 「東京に行くなら新幹線がいい」= if you're going to Tokyo, the Shinkansen is best (advice given before departure) |
+A single view of how this lesson's three forms differ. The fourth form, **なら**, and the full four-way comparison are in [Lesson 10 – Conditionals: たら / なら](/lesson10/).
+
+| | と | ば | たら |
+|---|---|---|---|
+| Core nuance | Inevitable, happens every time | Hypothetical premise, general principle | After completion / what if — one specific occasion |
+| Followed by volition / request / command | ❌ No | △ Heavily restricted (stiff with same-subject volition) | ✅ Freely |
+| Natural laws, machine operation | ✅ Best fit | ✅ Works | △ Unnatural |
+| Habitual / repeated action | ✅ Best fit | ✅ Works | △ Rare |
+| Past unexpected discovery | ✅ Works | ❌ No | ✅ Most common |
+| Register | Neutral, expository | Literary, proverbial, logical | Colloquial, everyday speech |
+
+**The same sentence in all three forms:**
+
+| Intended meaning | と | ば | たら |
+|---|---|---|---|
+| Press the button and it opens | ✅ ボタンを押すと開く。(stating a fact) | ✅ ボタンを押せば開く。(hypothetical) | △ ボタンを押したら開く。(that one time) |
+| I'll buy it if it's cheap | ❌ 安いと買う。 | ✅ 安ければ買う。(as a rule) | ✅ 安かったら買う。(if that one is cheap) |
+| Call me when you arrive | ❌ 着くと連絡して。 | △ 着けば連絡して。(stiff) | ✅ 着いたら連絡して。(most natural) |
+
+> **One line to remember**: use **ば** for principles, **と** for laws of nature, and **たら** for everything else.
 :::
 
 ---
