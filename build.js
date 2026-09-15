@@ -694,6 +694,67 @@ async function furiganaText(kuro, text) {
   }
 }
 
+// Context-sensitive reading corrections.
+//
+// kuromoji picks the wrong reading for a handful of words even with the whole
+// sentence for context — 行った as おこなった, 後で as のちで, 来られる as
+// きたられる. Each entry rewrites one <ruby> whose kanji, current reading and
+// surrounding plain text all match; `before`/`after` see the text with tags
+// and readings stripped, so a neighbouring ruby reads as its bare kanji.
+const RUBY_FIXES = [
+  // 行って/行った is いって/いった — except after を (調査を行った = おこなった).
+  { kanji: "行", from: /^(おこな|くだり|ゆ)$/, after: /^っ[たて]/, before: /[^を]$/, to: "い" },
+  // 〜た後で / 〜の後で is あとで, never のちで.
+  { kanji: "後", from: /^のち$/, after: /^で/, to: "あと" },
+  // 来られる = こられる, 来る = くる.
+  { kanji: "来", from: /^きた$/, after: /^られ/, to: "こ" },
+  { kanji: "来", from: /^きた$/, after: /^る/, to: "く" },
+  // 勝てる/勝った is か-, not かち-.
+  { kanji: "勝", from: /^かち$/, after: /^[てた]/, to: "か" },
+  // 雨/雪が降る is ふる (kuromoji reaches for 降りる).
+  { kanji: "降", from: /^お$/, before: /[雨雪]が$/, after: /^[りるら]/, to: "ふ" },
+  // Every 辛 in these lessons means "spicy" (からい), never つらい.
+  { kanji: "辛", from: /^(つら|からし)$/, to: "から" },
+];
+
+// Adjacent single-kanji rubies kuromoji should have kept as one word.
+const RUBY_MERGES = [["彼", "女", "かのじょ"]];
+
+const RUBY_TAG = /<ruby>([^<]*)<rp>\(<\/rp><rt>([^<]*)<\/rt><rp>\)<\/rp><\/ruby>/g;
+
+function ruby(kanji, reading) {
+  return `<ruby>${kanji}<rp>(</rp><rt>${reading}</rt><rp>)</rp></ruby>`;
+}
+
+// Plain text (no tags, no readings) around a position, for fix context.
+function plainAround(str, start, end) {
+  const strip = (s) => s.replace(/<rp>[^<]*<\/rp>|<rt>[^<]*<\/rt>/g, "").replace(/<[^>]+>/g, "");
+  return {
+    before: strip(str.slice(Math.max(0, start - 200), start)).slice(-16),
+    after: strip(str.slice(end, end + 80)).slice(0, 16),
+  };
+}
+
+function fixReadings(html) {
+  for (const [a, b, reading] of RUBY_MERGES) {
+    const pair = new RegExp(
+      `${ruby(a, "[^<]*")}${ruby(b, "[^<]*")}`.replace(/[()]/g, "\\$&"),
+      "g"
+    );
+    html = html.replace(pair, ruby(a + b, reading));
+  }
+  return html.replace(RUBY_TAG, (m, kanji, reading, offset, str) => {
+    const ctx = plainAround(str, offset, offset + m.length);
+    for (const f of RUBY_FIXES) {
+      if (f.kanji !== kanji || !f.from.test(reading)) continue;
+      if (f.after && !f.after.test(ctx.after)) continue;
+      if (f.before && !f.before.test(ctx.before)) continue;
+      return ruby(kanji, f.to);
+    }
+    return m;
+  });
+}
+
 // Strip ruby from Chinese text inside full-width parens （…）
 function stripParensChinese(html) {
   return html.replace(/（([\s\S]*?)）/g, (match, inner) => {
@@ -713,139 +774,132 @@ async function addFurigana(kuro, html) {
   // Step 1: tag elements
   html = tagElements(html);
 
-  // Step 2: add furigana only inside data-ja elements
+  // Step 2: add furigana only inside data-ja elements.
+  //
+  // Text nodes and <strong> tags are buffered into "runs" and converted as a
+  // single unit, then the bold ranges are re-applied on top of the result.
+  // Converting each fragment separately would let a bold marker split a word
+  // from its okurigana — 話**せます** tokenizes as the noun 話（はなし）plus
+  // せます, instead of the verb 話せます（はなせます）. Any other tag (<br>,
+  // <a>, <em>, a nested list) ends the current run, so nothing is reordered
+  // or dropped.
   const parts = html.split(/(<[^>]+>)/);
   const result = [];
   let jaDepth = 0;    // > 0 = inside a data-ja element
   let skipDepth = 0;  // > 0 = inside code/pre/rt/word-table/heading
+  let run = [];       // buffered text nodes + <strong> tags
 
-  // Pre-scan: for td/th cells that contain <strong>, collect their content
-  // so we can process them as a whole unit (strip bold → furigana → re-bold).
-  // Maps cell-open index → { endIdx, plainText }
-  const strongCells = new Map();
-  for (let i = 0; i < parts.length; i++) {
-    if (/^<(td|th)\b/i.test(parts[i])) {
-      let hasStrong = false;
-      let endIdx = -1;
-      for (let j = i + 1; j < parts.length; j++) {
-        if (/^<\/(td|th)>/i.test(parts[j])) { endIdx = j; break; }
-        if (/^<strong\b/i.test(parts[j])) hasStrong = true;
+  // Convert the buffered run as one unit and re-apply its bold ranges.
+  async function flushRun() {
+    if (!run.length) return;
+    const chunk = run;
+    run = [];
+
+    // Flatten to plain text, remembering which character offsets were bold.
+    // Offsets are UTF-16 units throughout (here and in the walker below) so
+    // surrogate pairs stay intact.
+    let plain = "";
+    const boldChars = new Set();
+    let inBold = false;
+    for (const p of chunk) {
+      if (/^<strong\b/i.test(p)) { inBold = true; continue; }
+      if (/^<\/strong>/i.test(p)) { inBold = false; continue; }
+      for (let c = 0; c < p.length; c++) {
+        if (inBold) boldChars.add(plain.length + c);
       }
-      if (hasStrong && endIdx > 0) {
-        // Extract plain text (strip all tags)
-        let plain = "";
-        for (let j = i + 1; j < endIdx; j++) {
-          if (!/^</.test(parts[j])) plain += parts[j];
+      plain += p;
+    }
+
+    // No kanji → nothing to annotate, keep the original markup untouched.
+    if (!/[一-龯㐀-䶿]/.test(plain)) {
+      result.push(...chunk);
+      return;
+    }
+
+    const furiganaHtml = await furiganaText(kuro, plain);
+
+    // Walk the furigana HTML and wrap the bold ranges in <strong> again.
+    // A ruby whose kanji overlaps a bold range is bolded as a whole.
+    let finalHtml = "";
+    let srcIdx = 0;
+    let fi = 0;
+    while (fi < furiganaHtml.length) {
+      const rubyMatch = furiganaHtml.slice(fi).match(/^<ruby>([\s\S]*?)<rp>\(<\/rp><rt>([\s\S]*?)<\/rt><rp>\)<\/rp><\/ruby>/);
+      if (rubyMatch) {
+        const kanji = rubyMatch[1];
+        const reading = rubyMatch[2];
+        let anyBold = false;
+        for (let k = 0; k < kanji.length; k++) {
+          if (boldChars.has(srcIdx + k)) anyBold = true;
         }
-        strongCells.set(i, { endIdx, plainText: plain });
+        if (anyBold) {
+          finalHtml += `<strong><ruby>${kanji}<rp>(</rp><rt>${reading}</rt><rp>)</rp></ruby></strong>`;
+        } else {
+          finalHtml += rubyMatch[0];
+        }
+        srcIdx += kanji.length;
+        fi += rubyMatch[0].length;
+      } else if (furiganaHtml[fi] === "<") {
+        // Some other tag, pass through
+        const tagEnd = furiganaHtml.indexOf(">", fi);
+        finalHtml += furiganaHtml.slice(fi, tagEnd + 1);
+        fi = tagEnd + 1;
+      } else if (boldChars.has(srcIdx)) {
+        // Collect consecutive bold chars
+        let boldRun = "";
+        while (fi < furiganaHtml.length && furiganaHtml[fi] !== "<" && boldChars.has(srcIdx)) {
+          boldRun += furiganaHtml[fi];
+          srcIdx++; fi++;
+        }
+        finalHtml += `<strong>${boldRun}</strong>`;
+      } else {
+        finalHtml += furiganaHtml[fi];
+        srcIdx++; fi++;
       }
     }
+    // Each bolded ruby gets its own wrapper above; collapse the seams.
+    result.push(finalHtml.replace(/<\/strong><strong>/g, ""));
   }
 
-  for (let i = 0; i < parts.length; i++) {
-    const part = parts[i];
+  for (const part of parts) {
+    const isTag = /^</.test(part);
+
     // Skip zones
-    if (/^<(code|pre|rt|h[1-6])\b/i.test(part)) {
-      skipDepth++; result.push(part);
-    } else if (/^<\/(code|pre|rt|h[1-6])>/i.test(part)) {
-      skipDepth--; result.push(part);
-    } else if (/^<table\b[^>]*class="word-table"/i.test(part)) {
-      skipDepth++; result.push(part);
-    } else if (skipDepth > 0 && /^<\/table>/i.test(part)) {
-      skipDepth--; result.push(part);
+    if (isTag && /^<(code|pre|rt|h[1-6])\b/i.test(part)) {
+      await flushRun(); skipDepth++; result.push(part);
+    } else if (isTag && /^<\/(code|pre|rt|h[1-6])>/i.test(part)) {
+      await flushRun(); skipDepth--; result.push(part);
+    } else if (isTag && /^<table\b[^>]*class="word-table"/i.test(part)) {
+      await flushRun(); skipDepth++; result.push(part);
+    } else if (isTag && skipDepth > 0 && /^<\/table>/i.test(part)) {
+      await flushRun(); skipDepth--; result.push(part);
     }
-    // data-ja td/th with <strong>: process whole cell as one unit
-    else if (/\bdata-ja\b/.test(part) && /^<(td|th)\b/i.test(part) && strongCells.has(i)) {
-      const cell = strongCells.get(i);
-      // Get furigana for the plain text (without bold tags breaking words)
-      const furiganaHtml = await furiganaText(kuro, cell.plainText);
-      // Now re-apply <strong> by matching bold ranges from original parts
-      // Collect which character ranges were bold
-      let charIdx = 0;
-      let inBold = false;
-      const boldChars = new Set();
-      for (let j = i + 1; j < cell.endIdx; j++) {
-        if (/^<strong\b/i.test(parts[j])) { inBold = true; continue; }
-        if (/^<\/strong>/i.test(parts[j])) { inBold = false; continue; }
-        if (/^</.test(parts[j])) continue;
-        // text node
-        for (const ch of parts[j]) {
-          if (inBold) boldChars.add(charIdx);
-          charIdx++;
-        }
-      }
-      // Walk through furigana HTML and wrap bold characters with <strong>
-      // Characters inside <ruby>...<rt>...</rt></ruby> need careful handling
-      let finalHtml = "";
-      let srcIdx = 0;
-      let fi = 0;
-      while (fi < furiganaHtml.length) {
-        // Check for ruby tag
-        const rubyMatch = furiganaHtml.slice(fi).match(/^<ruby>([\s\S]*?)<rp>\(<\/rp><rt>([\s\S]*?)<\/rt><rp>\)<\/rp><\/ruby>/);
-        if (rubyMatch) {
-          const kanji = rubyMatch[1];
-          const reading = rubyMatch[2];
-          // Check if any char in this kanji range is bold
-          let anyBold = false;
-          for (let k = 0; k < kanji.length; k++) {
-            if (boldChars.has(srcIdx + k)) anyBold = true;
-          }
-          if (anyBold) {
-            finalHtml += `<strong><ruby>${kanji}<rp>(</rp><rt>${reading}</rt><rp>)</rp></ruby></strong>`;
-          } else {
-            finalHtml += rubyMatch[0];
-          }
-          srcIdx += kanji.length;
-          fi += rubyMatch[0].length;
-        } else if (furiganaHtml[fi] === "<") {
-          // Some other tag, pass through
-          const tagEnd = furiganaHtml.indexOf(">", fi);
-          finalHtml += furiganaHtml.slice(fi, tagEnd + 1);
-          fi = tagEnd + 1;
-        } else {
-          // Plain character
-          if (boldChars.has(srcIdx)) {
-            // Collect consecutive bold chars
-            let boldRun = "";
-            while (fi < furiganaHtml.length && furiganaHtml[fi] !== "<" && boldChars.has(srcIdx)) {
-              boldRun += furiganaHtml[fi];
-              srcIdx++; fi++;
-            }
-            finalHtml += `<strong>${boldRun}</strong>`;
-          } else {
-            finalHtml += furiganaHtml[fi];
-            srcIdx++; fi++;
-          }
-        }
-      }
-      result.push(part);  // opening <td>
-      result.push(finalHtml);
-      // Skip all original parts inside this cell
-      i = cell.endIdx;    // will be the </td>
-      result.push(parts[i]);
+    // data-ja zones
+    else if (isTag && /\bdata-ja\b/.test(part) && /^<(li|p|td|th|blockquote|summary|dt|dd)\b/i.test(part)) {
+      await flushRun(); jaDepth++; result.push(part);
+    } else if (isTag && jaDepth > 0 && /^<\/(li|p|td|th|blockquote|summary|dt|dd)>/i.test(part)) {
+      await flushRun(); jaDepth--; result.push(part);
     }
-    // data-ja zones (non-strong td/th and other elements)
-    else if (/\bdata-ja\b/.test(part) && /^<(li|p|td|th|blockquote|summary|dt|dd)\b/i.test(part)) {
-      jaDepth++; result.push(part);
-    } else if (jaDepth > 0 && /^<\/(li|p|td|th|blockquote|summary|dt|dd)>/i.test(part)) {
-      jaDepth--; result.push(part);
+    // <strong> inside a data-ja zone: buffer it with the surrounding text
+    else if (isTag && jaDepth > 0 && skipDepth === 0 && /^<\/?strong\b/i.test(part)) {
+      run.push(part);
     }
-    // Other tags
-    else if (/^</.test(part)) {
-      result.push(part);
+    // Any other tag ends the current run
+    else if (isTag) {
+      await flushRun(); result.push(part);
     }
     // Text nodes
-    else if (skipDepth > 0) {
-      result.push(part);
-    } else if (jaDepth > 0 && /[\u4e00-\u9faf\u3400-\u4dbf]/.test(part)) {
-      result.push(await furiganaText(kuro, part));
+    else if (jaDepth > 0 && skipDepth === 0) {
+      run.push(part);
     } else {
       result.push(part);
     }
   }
+  await flushRun();
 
-  // Step 3: strip ruby from parenthetical Chinese
-  return stripParensChinese(result.join(""));
+  // Step 3: patch known kuromoji misreadings, then strip ruby from
+  // parenthetical Chinese
+  return stripParensChinese(fixReadings(result.join("")));
 }
 
 // ─── Build ───
