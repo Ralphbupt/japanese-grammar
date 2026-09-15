@@ -119,13 +119,14 @@ Endings are all う-row sounds: u/ku/su/tsu/nu/bu/mu/ru.
       │
       ├─ る前面是え段音（え/け/せ/て/ね/べ/め/れ）？
       │   → 大概率二类：食べる、寝る、出る、教える
+      │   → 但有一类例外：帰る、減る、滑る
       │
       ├─ る前面是い段音（い/き/し/ち/に/び/み/り）？
       │   → 可能是二类：見る、起きる、借りる、降りる
       │   → 但也可能是一类（例外！）：知る、入る、切る、走る
       │
       └─ る前面是あ/う/お段音？
-          → 一定是一类：帰る（かえる）、作る（つくる）、乗る（のる）
+          → 一定是一类：作る（つくる）、乗る（のる）、分かる（わかる）、終わる（おわる）
 ```
 :::
 :::en
@@ -141,13 +142,14 @@ Dictionary form
       │
       ├─ Sound before る is an え-row kana (え/け/せ/て/ね/べ/め/れ)?
       │   → Likely Group 2: 食べる、寝る、出る、教える
+      │   → But Group 1 exceptions exist: 帰る、減る、滑る
       │
       ├─ Sound before る is an い-row kana (い/き/し/ち/に/び/み/り)?
       │   → May be Group 2: 見る、起きる、借りる、降りる
       │   → But may be Group 1 (exceptions!): 知る、入る、切る、走る
       │
       └─ Sound before る is an あ/う/お-row kana?
-          → Definitely Group 1: 帰る（かえる）、作る（つくる）、乗る（のる）
+          → Definitely Group 1: 作る（つくる）, 乗る（のる）, 分かる（わかる）, 終わる（おわる）
 ```
 :::
 
@@ -183,18 +185,46 @@ These must be memorized — they look like Group 2 but are actually Group 1:
 :::
 
 :::zh
-> **怎么判断？** 没有100%的规则，最可靠的方法是变成ます形看看：
-> - 知る → 知**り**ます（り在い段？不，り是一类动词る→ります的变化）
-> - 見る → 見**ます**（直接去る加ます → 二类）
-> 
-> 如果ます前面是「り」，那就是一类动词。如果直接去る加ます，就是二类。
+> **⚠️ 注意一个常见的错误说法**
+>
+> 很多教材说"变成ます形看看：出现「り」就是一类，直接去る就是二类"。**这个方法是循环论证** —— 你必须先知道它是一类动词，才知道该变成「知ります」而不是「知ます」。已经知道答案了，测试就没意义了。
+>
+> 而且反过来也推不出：光给你一个 **借ります**，它既可能来自二类的 **借りる**，也可能来自一类的 **借る**。两者的ます形完全一样，无法区分。
+>
+> **真相是**：一类还是二类，是这个词本身的属性，**必须和单词一起记**，就像记名词的性别一样。辞书形的样子只能给你概率，给不了证明。
+
+**那到底能确定什么？**
+
+| 看到的形态 | 能否确定 | 结论 |
+|---|---|---|
+| 辞书形不以る结尾（書く・飲む・話す） | ✅ 能 | 一定是一类 |
+| 辞书形る前面是あ/う/お段（作る・乗る・分かる・終わる） | ✅ 能 | 一定是一类 |
+| 辞书形る前面是い/え段（見る・食べる・知る・帰る） | ❌ **不能** | 大概率二类，但有一批一类例外，见上表 |
+| ます形词干以**え段**结尾（食**べ**ます・寝ます・教**え**ます） | ✅ 能 | 一定是二类（一类动词的词干永远不会落在え段） |
+| ます形词干以**い段**结尾（借**り**ます・見ます・聞**き**ます） | ❌ **不能** | 一类二类都可能，必须回查辞书形 |
+
+> **实用建议**：背单词时就把辞书形和ます形一起背（知る／知ります、見る／見ます），不要指望靠规则推。那张"陷阱动词"表里的 8 个词覆盖了 N5 绝大多数踩坑场景，优先记那 8 个。
 :::
 :::en
-> **How to tell?** There's no perfect rule. The most reliable method is to try making the ます form:
-> - 知る → 知**り**ます (a り appears → Group 1)
-> - 見る → 見**ます** (る is dropped directly → Group 2)
-> 
-> If り appears before ます, it's Group 1. If る is simply dropped and ます added, it's Group 2.
+> **⚠️ A common but circular claim**
+>
+> Many textbooks say: "make the ます form and look — if a り shows up it's Group 1, if る is simply dropped it's Group 2." **This is circular reasoning.** You have to already know the verb is Group 1 in order to produce 知ります rather than 知ます. If you already know the answer, the test tells you nothing.
+>
+> It doesn't work in reverse either. Given only **借ります**, it could come from Group 2 **借りる** or from Group 1 **借る** — both produce the identical ます form.
+>
+> **The truth**: group membership is a property of the word itself and **must be memorized along with the word**, the way you memorize gender with a noun. The shape of the dictionary form gives you odds, not proof.
+
+**So what *can* you determine for certain?**
+
+| What you see | Decidable? | Conclusion |
+|---|---|---|
+| Dictionary form doesn't end in る (書く, 飲む, 話す) | ✅ Yes | Definitely Group 1 |
+| Dictionary form: あ/う/お-row kana before る (作る, 乗る) | ✅ Yes | Definitely Group 1 |
+| Dictionary form: い/え-row kana before る (見る, 食べる, 知る, 帰る) | ❌ **No** | Probably Group 2, but there's a set of Group 1 exceptions — see the table above |
+| ます stem ends in an **え-row** kana (食**べ**ます, 寝ます, 教**え**ます) | ✅ Yes | Definitely Group 2 (a Group 1 stem can never land on the え row) |
+| ます stem ends in an **い-row** kana (借**り**ます, 見ます, 聞**き**ます) | ❌ **No** | Could be either — you must check the dictionary form |
+
+> **Practical advice**: learn the dictionary form and the ます form together as a pair (知る／知ります, 見る／見ます) rather than hoping to derive one from the other. The 8 "trap" verbs in the table above cover almost every N5 pitfall — memorize those 8 first.
 :::
 
 ### 实际判断练习||Practice: Identifying Verb Groups
