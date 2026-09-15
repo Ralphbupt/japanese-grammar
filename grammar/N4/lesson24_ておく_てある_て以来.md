@@ -139,105 +139,67 @@ Transitive verb て-form + ある
 
 ---
 
-## 3. ておく vs てある 核心区别||3. ておく vs てある — Core Distinction
+## 3. ている / てある / ておく / てしまう 四者対比||3. ている / てある / ておく / てしまう — the four compared
 
 :::zh
-| | ておく | てある |
-|---|---|---|
-| **视角** | **动作者视角**（我做了某事） | **观察者视角**（看到某个状态） |
-| **助词** | を（宾语） | が（主语） |
-| **侧重** | "为了……而提前做" | "有人做了，结果还在" |
-| **例** | ビールを冷やし**ておいた** | ビールが冷やし**てある** |
-| **翻译** | 我事先冰好了啤酒 | 啤酒被冰好了（有人冰的） |
+这四个都是「て形 + 補助動詞」，是 N4 最容易混的一组。ている 在 [Lesson 5 て形应用](/lesson05/) 学过，てしまう 在 [Lesson 23 ばかり・ところだ・てしまう](/lesson23/) 学过，这里一次分清。
 
-> **关键：同一件事，两种说法：**
-> - 私がビールを冷やし**ておいた**。（我提前冰好了啤酒。→ 动作者的角度）
-> - ビールが冷やし**てある**。（啤酒冰好了。→ 看到结果的角度）
-:::
-:::en
-| | ておく | てある |
-|---|---|---|
-| **Perspective** | **Actor's view** (I did something) | **Observer's view** (I see a state) |
-| **Particle** | を (object) | が (subject) |
-| **Focus** | "Do in advance for a purpose" | "Someone did it; the result remains" |
-| **Example** | ビールを冷やし**ておいた** | ビールが冷やし**てある** |
-| **Translation** | I chilled the beer ahead of time | The beer has been chilled (by someone) |
+| | ている | てある | ておく | てしまう |
+|---|---|---|---|---|
+| 核心语义 | 状态持续／正在进行 | 有意为之的结果状态 | 事先准备／暂时放置 | 完了／遗憾 |
+| 动词类型 | 自动词 or 他动词 | **只接他动词** | 自动词 or 他动词 | 自动词 or 他动词 |
+| 助词 | が（自）／を（他） | **が** | **を** | を |
+| 有意性 | 不一定有意 | **一定有人为意图** | **一定有目的** | 常含非本意 |
+| 视角 | 单纯描述状态 | **观察者**（看到结果） | **动作者**（我做的） | 动作者 |
 
-> **Key: Same situation, two ways to say it:**
-> - 私がビールを冷やし**ておいた**。(I chilled the beer in advance. → From the actor's viewpoint)
-> - ビールが冷やし**てある**。(The beer has been chilled. → From the observer's viewpoint)
-:::
-
----
-
-## 4. ている vs てある vs ておく 详细对比||4. ている vs てある vs ておく — Detailed Comparison
-
-:::zh
-| | ている | てある | ておく |
-|---|---|---|---|
-| **核心语义** | 状态持续 / 正在进行 | 有意为之的结果状态 | 事先准备 / 放置不管 |
-| **动词类型** | 自动词 or 他动词 | **只接他动词** | 自动词 or 他动词 |
-| **助词** | が（自）/ を（他） | が | を |
-| **有意性** | 不一定有意 | **一定有人为意图** | **一定有目的** |
-| **侧重点** | 单纯描述状态 | 强调结果状态 | 强调事先行为 |
-
-**窗户系列对比：**
-
-| 说法 | 含义 | 场景 |
-|------|------|------|
-| 窓が開い**ている** | 窗户开着（单纯状态描述） | 只是看到窗户是开的 |
-| 窓が開け**てある** | 窗户被特意打开着（有人开了） | 强调有人故意开了窗 |
-| 窓を開け**ておいた** | 我事先把窗户打开了（准备） | 因为等下要通风所以先开了 |
-| 窓を開け**ておく** | 先把窗户开着（维持） | 暂时不关，保持打开 |
-
-**电灯系列对比：**
+**同一扇窗，四种说法：**
 
 | 说法 | 含义 |
-|------|------|
-| 電気がつい**ている** | 灯亮着（单纯事实） |
-| 電気がつけ**てある** | 灯被人打开着（有人开的） |
-| 電気をつけ**ておいた** | 我事先把灯开了（为了某个目的） |
+|---|---|
+| 窓が開い**ている** | 窗户开着（单纯状态描述） |
+| 窓が開け**てある** | 窗户被特意开着（有人开的） |
+| 窓を開け**ておく** | 先把窗户开着（为之后做准备） |
+| 窓を閉め**てしまった** | 把窗户关掉了（可能不该关） |
 
-> **记忆口诀：**
-> - ている → "就那样"（自然状态）
-> - てある → "有人搞的"（人为结果）
-> - ておく → "我先搞好"（提前准备）
+> **最难的一组是 ておく 和 てある —— 它们是同一件事的两个角度：**
+> - 私がビールを冷やし**ておいた**。（我提前冰好了啤酒。→ 动作者视角，用 **を**）
+> - ビールが冷やし**てある**。（啤酒冰好了。→ 观察者视角，用 **が**）
+
+> **四字口诀**
+> ている「就那样」／てある「有人搞的」／ておく「我先搞好」／てしまう「搞完了或搞砸了」
 :::
+
 :::en
-| | ている | てある | ておく |
-|---|---|---|---|
-| **Core meaning** | Ongoing state / in progress | Intentional resultant state | Advance preparation / leave as is |
-| **Verb type** | Intransitive or transitive | **Transitive only** | Intransitive or transitive |
-| **Particle** | が (intrans.) / を (trans.) | が | を |
-| **Intentionality** | Not necessarily intentional | **Always implies human intent** | **Always purposeful** |
-| **Focus** | Simply describes a state | Emphasizes the resulting state | Emphasizes the advance action |
+All four are "て-form + auxiliary verb", and they are the easiest group in N4 to confuse. ている was covered in [Lesson 5 – Using the て form](/lesson05/) and てしまう in [Lesson 23 – ばかり・ところだ・てしまう](/lesson23/); this table separates all four at once.
 
-**Window series comparison:**
+| | ている | てある | ておく | てしまう |
+|---|---|---|---|---|
+| Core meaning | Ongoing state / in progress | Intentional resultant state | Advance preparation / leave as is | Completion / regret |
+| Verb type | Intransitive or transitive | **Transitive only** | Intransitive or transitive | Intransitive or transitive |
+| Particle | が (intrans.) / を (trans.) | **が** | **を** | を |
+| Intentionality | Not necessarily intentional | **Always implies human intent** | **Always purposeful** | Often unintended |
+| Perspective | Simply describes a state | **Observer** (sees the result) | **Actor** (I did it) | Actor |
 
-| Expression | Meaning | Scene |
-|------|------|------|
-| 窓が開い**ている** | The window is open (simple state) | Just observing it's open |
-| 窓が開け**てある** | The window has been purposely opened | Emphasizing someone opened it on purpose |
-| 窓を開け**ておいた** | I opened the window in advance | Opened it ahead of time for ventilation |
-| 窓を開け**ておく** | Leave the window open for now | Keep it open, don't close it yet |
-
-**Light series comparison:**
+**The same window, four ways:**
 
 | Expression | Meaning |
-|------|------|
-| 電気がつい**ている** | The light is on (simple fact) |
-| 電気がつけ**てある** | The light has been turned on (by someone) |
-| 電気をつけ**ておいた** | I turned the light on in advance (for a purpose) |
+|---|---|
+| 窓が開い**ている** | The window is open (simple state) |
+| 窓が開け**てある** | The window has been purposely opened (someone opened it) |
+| 窓を開け**ておく** | Open the window ahead of time (preparing for later) |
+| 窓を閉め**てしまった** | I ended up closing the window (maybe I shouldn't have) |
 
-> **Memory aid:**
-> - ている → "It just is" (natural state)
-> - てある → "Someone did it" (human result)
-> - ておく → "I'll get it ready" (advance prep)
+> **The hardest pair is ておく vs てある — they are two angles on the same event:**
+> - 私がビールを冷やし**ておいた**。(I chilled the beer in advance. → actor's view, takes **を**)
+> - ビールが冷やし**てある**。(The beer has been chilled. → observer's view, takes **が**)
+
+> **Memory aid**
+> ている "it just is" / てある "someone did it" / ておく "I'll get it ready" / てしまう "done, or done for"
 :::
 
 ---
 
-## 5. ておく・てある 常见错误||5. ておく・てある — Common Mistakes
+## 4. ておく・てある 常见错误||4. ておく・てある — Common Mistakes
 
 :::zh
 | ❌ 错误 | ✅ 正确 | 说明 |
@@ -258,46 +220,7 @@ Transitive verb て-form + ある
 
 ---
 
-## 6. 全组对比：ている / てある / ておく / てしまう||6. Full Group Comparison: ている / てある / ておく / てしまう
-
-:::zh
-| 表达 | 核心 | 例（窗户相关） |
-|------|------|--------------|
-| ている | 状态/进行 | 窓が開いている（窗户开着） |
-| てある | 有意为之的结果状态 | 窓が開けてある（窗户被特意打开着） |
-| ておく | 事先准备/放置 | 窓を開けておく（先把窗户打开） |
-| てしまう | 完了/遗憾 | 窓を閉めてしまった（把窗户关了→可能不该关） |
-
-**更多场景对比（料理篇）：**
-
-| 表达 | 例 | 含义 |
-|------|---|------|
-| ている | ケーキが置い**ている** | ❌（置く是他动词，自动词状态用ある） |
-| てある | ケーキが作っ**てある** | 蛋糕做好了（有人做的） |
-| ておく | ケーキを作っ**ておいた** | 我事先做好了蛋糕 |
-| てしまう | ケーキを食べ**てしまった** | 把蛋糕吃掉了（遗憾/全吃了） |
-:::
-:::en
-| Expression | Core meaning | Example (window-related) |
-|------|------|--------------|
-| ている | State / ongoing action | 窓が開いている (The window is open) |
-| てある | Intentional resultant state | 窓が開けてある (The window has been purposely opened) |
-| ておく | Do in advance / leave as is | 窓を開けておく (Open the window ahead of time) |
-| てしまう | Completion / regret | 窓を閉めてしまった (I ended up closing the window → maybe I shouldn't have) |
-
-**More scenario comparisons (cooking theme):**
-
-| Expression | Example | Meaning |
-|------|---|------|
-| ている | ケーキが置い**ている** | ❌ (置く is transitive; for state use ある) |
-| てある | ケーキが作っ**てある** | The cake has been made (someone made it) |
-| ておく | ケーキを作っ**ておいた** | I made the cake in advance |
-| てしまう | ケーキを食べ**てしまった** | I ended up eating the cake (regret / ate it all) |
-:::
-
----
-
-## 7. 〜て以来（自从……以来）||7. 〜て以来 (Ever since…)
+## 5. 〜て以来（自从……以来）||5. 〜て以来 (Ever since…)
 
 ### 接続||Conjugation
 :::zh
@@ -366,7 +289,7 @@ Verb て-form + 以来
 
 ---
 
-## 8. 时间表达总对比||8. Time Expressions — Complete Comparison
+## 6. 时间表达总対比||6. Time Expressions — Complete Comparison
 
 :::zh
 | 表达 | 时间点 | 含义 | 例 |
