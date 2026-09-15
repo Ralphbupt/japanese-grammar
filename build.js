@@ -713,6 +713,12 @@ const RUBY_FIXES = [
   { kanji: "勝", from: /^かち$/, after: /^[てた]/, to: "か" },
   // 雨/雪が降る is ふる (kuromoji reaches for 降りる).
   { kanji: "降", from: /^お$/, before: /[雨雪]が$/, after: /^[りるら]/, to: "ふ" },
+  // 〜方がいい is ほうがいい (the comparative), …
+  { kanji: "方", from: /^かた$/, after: /^が(いい|よ|良)/, to: "ほう" },
+  // …while the honorific 方 = "person" is かた. Restricted to 方 followed by
+  // a non-が particle: every comparative 方 in these lessons takes が, and a
+  // topic-contrast 「〜の方は」(ほう) would need an exception here.
+  { kanji: "方", from: /^ほう$/, after: /^[はをにもで、。]/, to: "かた" },
   // Every 辛 in these lessons means "spicy" (からい), never つらい.
   { kanji: "辛", from: /^(つら|からし)$/, to: "から" },
 ];
