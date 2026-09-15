@@ -370,6 +370,16 @@ Something that shouldn't have happened, or an unfortunate event.
 > **Note on conjugation**: ちゃう is itself a verb and conjugates: ちゃう (present) → ちゃった (past) → ちゃいけない (must not) → ちゃおう (let's finish it)
 :::
 
+:::zh
+> **てしまう 和 ている・てある・ておく 怎么分？** 这四个同属「て形 + 補助動詞」，是 N4 最易混的一组。
+> 等学完下一课的 ておく・てある，[Lesson 24 §3 四者対比](/lesson24/#3._ている_/_てある_/_ておく_/_てしまう_四者対比) 会把它们一次分清。本课先把 てしまう 单独吃透。
+:::
+
+:::en
+> **How does てしまう differ from ている, てある and ておく?** All four are "て-form + auxiliary verb" — the easiest group in N4 to confuse.
+> Once you've met ておく and てある in the next lesson, [Lesson 24 §3](/lesson24/#3._ている_/_てある_/_ておく_/_てしまう_四者対比) separates all four at once. For now, focus on てしまう alone.
+:::
+
 ---
 
 ## 练习问题||Practice Exercises

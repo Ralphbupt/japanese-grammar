@@ -304,6 +304,78 @@ Used with「〜た＋ものだ」to express nostalgia:
 
 ---
 
+## 5. 形式名词収尾対比：こと・の・という・ところ・はず・わけ・もの||5. Formal nouns wrapped up: こと・の・という・ところ・はず・わけ・もの
+
+:::zh
+到这一课为止，N4 的形式名词就齐了。它们分散在好几课里学，**放在一起看才分得清**——这里是唯一的汇总出口。
+
+**先分两类。混淆通常发生在类内，不发生在类间。**
+
+**A 类 · 纯名词化**（把句子变成名词，本身不带判断）
+
+| | 作用 | 典型搭配 | 学于 |
+|---|---|---|---|
+| **の** | 名词化，偏**具体、可感知**的事 | 〜のが好き／〜のを見る | [Lesson 17](/lesson17/) |
+| **こと** | 名词化，偏**抽象、概念**的事 | 〜ことができる／〜ことがある | [Lesson 22](/lesson22/) |
+| **ということ** | 把**一段话或消息**整个打包 | 〜ということだ（据说／也就是说） | [Lesson 25](/lesson25/) |
+
+> 辨别 の 和 こと：**看得见、听得见的用 の**（歌うのを聞いた＝听见在唱），**规则、能力、经验用 こと**（歌うことができる＝会唱）。
+
+**B 类 · 带判断的形式名词**（名词化之外还附加说话人的态度）
+
+| | 说话人在做什么 | 依据 | 例 | 学于 |
+|---|---|---|---|---|
+| **ところ** | 指出**动作处在哪个时间阶段** | 时间轴 | 食べるところだ（正要吃） | [Lesson 23](/lesson23/) |
+| **はず** | **根据道理推断**，有把握 | 逻辑、证据 | 来るはずだ（按理该来） | [Lesson 22](/lesson22/) |
+| **わけ** | **顺着原因得出结论**，恍然大悟 | 已知的原因 | 暑いわけだ（难怪热） | 本课 §1 |
+| **もの** | **感慨或讲本质**，不做推理 | 常识、回忆 | 暑いものだ（夏天就是热啊） | 本课 §3 |
+
+**最容易混的两组：**
+
+| 组 | 区别 | 对照 |
+|---|---|---|
+| はず vs わけ | **はず 朝前推**（还没发生，我推断会如此）；**わけ 朝后推**（已经发生，我找到了原因） | 来る**はず**だ（该来了）／来ない**わけ**だ、熱があるから（难怪不来，他发烧了） |
+| わけ vs もの | **わけ 有推理**；**もの 无推理，只是感慨** | エアコンが壊れた、暑い**わけ**だ（有因果）／夏は暑い**もの**だ（没因果） |
+
+> **一句话定位**：要说"**是什么事**"用 の・こと；要说"**到哪一步了**"用 ところ；要说"**我判断会怎样**"用 はず；要说"**我明白为什么了**"用 わけ；要说"**本来就这样啊**"用 もの。
+:::
+
+:::en
+With this lesson, the N4 formal nouns are complete. They are taught across several lessons, and **only become distinguishable when lined up side by side** — this is the single place that does that.
+
+**Two classes first. Confusion happens within a class, almost never across.**
+
+**Class A · Pure nominalizers** (turn a clause into a noun, carry no judgment of their own)
+
+| | Function | Typical frames | Taught in |
+|---|---|---|---|
+| **の** | Nominalizes; leans **concrete, perceivable** | 〜のが好き / 〜のを見る | [Lesson 17](/lesson17/) |
+| **こと** | Nominalizes; leans **abstract, conceptual** | 〜ことができる / 〜ことがある | [Lesson 22](/lesson22/) |
+| **ということ** | Packages **a whole statement or piece of news** | 〜ということだ (they say… / meaning…) | [Lesson 25](/lesson25/) |
+
+> Telling の from こと: **use の for what you can see or hear** (歌うのを聞いた = I heard someone singing); **use こと for rules, abilities, experiences** (歌うことができる = I can sing).
+
+**Class B · Formal nouns carrying judgment** (nominalize *and* add the speaker's stance)
+
+| | What the speaker is doing | Based on | Example | Taught in |
+|---|---|---|---|---|
+| **ところ** | Marking **which phase an action is in** | The timeline | 食べるところだ (about to eat) | [Lesson 23](/lesson23/) |
+| **はず** | **Inferring from reason**, with confidence | Logic, evidence | 来るはずだ (ought to come) | [Lesson 22](/lesson22/) |
+| **わけ** | **Arriving at a conclusion from a cause** | A cause now known | 暑いわけだ (no wonder it's hot) | This lesson, §1 |
+| **もの** | **Exclaiming or stating a nature**, no reasoning | Common sense, memory | 暑いものだ (summers just are hot) | This lesson, §3 |
+
+**The two pairs that actually get confused:**
+
+| Pair | Difference | Side by side |
+|---|---|---|
+| はず vs わけ | **はず points forward** (hasn't happened; I predict it will); **わけ points backward** (it happened; I've found the reason) | 来る**はず**だ (he ought to come) / 来ない**わけ**だ、熱があるから (no wonder he isn't coming — he has a fever) |
+| わけ vs もの | **わけ involves reasoning**; **もの involves none, just a remark** | エアコンが壊れた、暑い**わけ**だ (cause and effect) / 夏は暑い**もの**だ (no cause, just how it is) |
+
+> **One line each**: for "**what thing**" use の・こと; for "**what stage**" use ところ; for "**what I expect**" use はず; for "**why, now I see**" use わけ; for "**that's just how it is**" use もの.
+:::
+
+---
+
 ## 今日练习||Today's Practice
 
 ### A. という/ということ 填空||A. Fill in: という / ということ

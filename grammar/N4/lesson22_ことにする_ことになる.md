@@ -254,27 +254,16 @@ Expresses "it is the rule / it is customary that":
 - 3時に会う**はずだったのに**、彼は来なかった。（We were supposed to meet at 3, but he didn't come.）
 :::
 
----
-
-## 6. はずだ vs べきだ vs わけだ（预告）||6. はずだ vs べきだ vs わけだ (Preview)
-
 :::zh
-| 表达 | 含义 | 根据 |
-|------|------|------|
-| はずだ | 应该…… | 逻辑/证据 → 确信 |
-| べきだ | 应该…… | 道德/义务 → 建议（N3学） |
-| わけだ | 难怪/当然…… | 推理得出结论（N3学） |
-
-现阶段先掌握はずだ就够了。
+> **はずだ 和 わけだ・べきだ 有什么不同？** 它们分属不同的判断类型，放在一起讲反而更乱。
+> わけだ 在 [Lesson 26 わけだ・ものだ](/lesson26/) 与 ものだ 一并讲解，べきだ 在 N3 [Lesson 56](/lesson56/)。
+> 本课先把 はずだ 一个吃透即可。
 :::
-:::en
-| Expression | Meaning | Basis |
-|------|------|------|
-| はずだ | Should be… | Logic / evidence → confident judgment |
-| べきだ | Should… | Morality / obligation → advice (studied at N3) |
-| わけだ | No wonder / Of course… | Reaching a conclusion from reasoning (studied at N3) |
 
-For now, mastering はずだ is enough.
+:::en
+> **How does はずだ differ from わけだ and べきだ?** They belong to different types of judgment, and lumping them together here only muddies all three.
+> わけだ is covered alongside ものだ in [Lesson 26 – わけだ・ものだ](/lesson26/), and べきだ at N3 in [Lesson 56](/lesson56/).
+> For this lesson, getting はずだ alone solid is enough.
 :::
 
 ---
