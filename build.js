@@ -137,6 +137,17 @@ const TTS_JS = `document.addEventListener('DOMContentLoaded', function(){
     speechSynthesis.speak(u);
   }
 
+  // Only one sentence plays at a time. Clicking a second button stops the
+  // first; clicking the button that is already playing stops it (toggle),
+  // so repeated clicks never stack up overlapping playback.
+  var current = null;      // the Audio currently playing
+  var currentBtn = null;   // the button that started it
+
+  function stopCurrent() {
+    if (current) { current.pause(); current = null; }
+    if (currentBtn) { currentBtn.classList.remove('playing'); currentBtn = null; }
+  }
+
   // Inject 🔊 button ONLY on sentences with pre-generated Edge TTS audio.
   // No browser TTS fallback — quality is too poor to show.
   document.querySelectorAll('li[data-audio]').forEach(function(el) {
@@ -149,8 +160,17 @@ const TTS_JS = `document.addEventListener('DOMContentLoaded', function(){
     btn.addEventListener('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
+      if (currentBtn === btn) { stopCurrent(); return; }
+      stopCurrent();
       var audio = new Audio('/audio/' + audioId + '.mp3');
-      audio.play();
+      current = audio;
+      currentBtn = btn;
+      btn.classList.add('playing');
+      function done() { if (current === audio) stopCurrent(); }
+      audio.addEventListener('ended', done);
+      audio.addEventListener('error', done);
+      var p = audio.play();
+      if (p && p.catch) p.catch(done);
       if (window.gaEvent) window.gaEvent('audio_play', { audio_id: audioId, page_path: location.pathname });
     });
     // Loose-list items wrap their text in a <p>; appending to the <li> would
@@ -2822,6 +2842,7 @@ pre code { background: none; padding: 0; }
   opacity: .5; transition: opacity .2s, border-color .2s;
 }
 .speak-btn:hover { opacity: 1; border-color: var(--accent); }
+.speak-btn.playing { opacity: 1; border-color: var(--accent); }
 @media (prefers-color-scheme: dark) {
   :root:not(.theme-light) .speak-btn { border-color: #3a3a55; }
   :root:not(.theme-light) .speak-btn:hover { border-color: var(--accent); }
