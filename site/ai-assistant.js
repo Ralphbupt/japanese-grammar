@@ -110,6 +110,7 @@
       if (!raw.provider || !PROVIDERS[raw.provider]) return null;
       var pr = {}; pr[raw.provider] = { base: raw.base, key: raw.key || '', model: raw.model };
       raw = { v: 2, active: raw.provider, profiles: pr, effort: raw.effort || '', session: !!raw.session };
+      saveCfg(raw);
     }
     if (!raw.profiles || !raw.profiles[raw.active]) return null;
     return raw;
@@ -338,7 +339,10 @@
   function httpError(res) {
     return res.text().then(function (txt) {
       var msg = txt;
-      try { var j = JSON.parse(txt); msg = (j.error && (j.error.message || j.error.type)) || j.message || txt; } catch (e) {}
+      try {
+        var j = JSON.parse(txt); if (Array.isArray(j)) j = j[0] || {};
+        msg = (j.error && (typeof j.error === 'string' ? j.error : j.error.message || j.error.type)) || j.message || (j.detail && (j.detail.message || j.detail)) || txt;
+      } catch (e) {}
       throw new Error('HTTP ' + res.status + ' – ' + String(msg).slice(0, 400));
     });
   }
@@ -393,7 +397,18 @@
     var req = p.kind === 'anthropic'
       ? fetch(base + '/v1/messages', { method: 'POST', headers: anthropicHeaders(c), body: JSON.stringify({ model: c.model, max_tokens: 8, messages: [{ role: 'user', content: 'hi' }] }) })
       : fetch(base + '/chat/completions', { method: 'POST', headers: openaiHeaders(c), body: JSON.stringify({ model: c.model, max_tokens: 8, messages: [{ role: 'user', content: 'hi' }] }) });
-    return req.then(function (res) { if (!res.ok) return httpError(res); return res.json(); }).then(function (j) { if (j && j.error) throw new Error(j.error.message || JSON.stringify(j.error)); });
+    return req.then(function (res) { if (!res.ok) return httpError(res); return res.json(); }).then(function (j) { if (j && j.error) throw new Error(j.error.message || JSON.stringify(j.error)); })
+      .catch(function (e) {
+        var msg = String(e && e.message);
+        if (p.kind !== 'openai' || !/Failed to fetch|NetworkError|Load failed/i.test(msg)) throw e;
+        // OpenAI's error responses to a bad key carry no CORS headers, so the
+        // browser cannot read them; the models endpoint does, so probe it to
+        // tell "wrong key" from "cannot reach the provider at all".
+        return fetch(base + '/models', { headers: openaiHeaders(c) }).then(function (res) {
+          if (res.ok) throw new Error('HTTP 404 – ' + t('模型 ' + c.model + ' 不可用', 'model ' + c.model + ' is not available'));
+          return httpError(res);
+        }, function () { throw e; });
+      });
   }
 
   /* ── markdown-ish rendering ──
@@ -499,7 +514,7 @@
     msgsEl = panel.querySelector('.ai-msgs');
     settingsEl = panel.querySelector('.ai-settings');
     inputEl = panel.querySelector('textarea');
-    sendBtn = panel.querySelector('.ai-input button');
+    sendBtn = panel.querySelector('.ai-input button[type=submit]');
     modelLabel = panel.querySelector('.ai-model');
     scopeSel = panel.querySelector('.ai-scope');
 
