@@ -416,8 +416,13 @@
    * so answers look like the lesson text (and obey the furigana toggle). */
   var PRE = String.fromCharCode(0) + 'PRE', PRE_END = String.fromCharCode(0);
   var PRE_RE = new RegExp('^' + PRE + '(.*)' + PRE_END + '$');
+  // Handles both 雨（あめ） and 降られた（ふられた）: when the reading ends with
+  // the okurigana that follows the kanji, the ruby covers only the kanji.
   function ruby(s) {
-    return s.replace(/([一-鿿㐀-䶿々〆ヶ]+)[（(]([ぁ-ゖァ-ヺー]+)[）)]/g, '<ruby>$1<rp>(</rp><rt>$2</rt><rp>)</rp></ruby>');
+    return s.replace(/([\u4e00-\u9fff\u3400-\u4dbf々〆ヶ]+)([ぁ-ゖ]*)[（(]([ぁ-ゖァ-ヺー]+)[）)]/g, function (m, kanji, oku, yomi) {
+      if (oku) { if (yomi.length <= oku.length || yomi.slice(-oku.length) !== oku) return m; yomi = yomi.slice(0, -oku.length); }
+      return '<ruby>' + kanji + '<rp>(</rp><rt>' + yomi + '</rt><rp>)</rp></ruby>' + oku;
+    });
   }
   function md(src) {
     var s = esc(src);
