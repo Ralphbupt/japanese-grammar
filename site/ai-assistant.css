@@ -34,6 +34,13 @@ body.ai-open #ai-panel { transform: none; visibility: visible; transition: trans
 .ai-menu-item.sel { color: var(--accent); font-weight: 600; }
 .ai-menu-item.sel::before { content: '✓ '; }
 .ai-menu-sep { border-top: 1px solid var(--border); margin: .3rem 0; }
+.ai-effort-row { display: flex; gap: .3rem; padding: .1rem .4rem .3rem; }
+.ai-effort, .ai-effort-opt { flex: 1; text-align: center; font: inherit; font-size: .8rem; font-weight: 400; padding: .35rem .4rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); color: inherit; cursor: pointer; }
+.ai-effort:hover, .ai-effort-opt:hover { border-color: var(--accent); }
+.ai-effort.sel, .ai-effort-opt:has(input:checked) { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.ai-effort-opt input { position: absolute; opacity: 0; width: 0; height: 0; }
+.ai-effort-settings { padding: 0; margin-bottom: .3rem; }
+.ai-effort-settings .ai-effort-opt { display: block; }
 html.theme-dark .ai-model-menu { background: #1f1f2e; }
 .ai-head-btns { display: flex; gap: .1rem; flex-shrink: 0; }
 .ai-head-btns button {
