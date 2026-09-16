@@ -2653,6 +2653,8 @@ const CSS = `
   --card-bg: #fff;
   --border: #e2e2e2;
   --ruby-color: #e94560;
+  --selection-bg: #b8d4fb;
+  --selection-fg: #1a1a2e;
   --word-bg: #fffbe6;
   --word-border: #f5c842;
   --code-bg: #f4f4f4;
@@ -2882,6 +2884,16 @@ rt {
   -webkit-user-select: none; user-select: none;
 }
 rp { -webkit-user-select: none; user-select: none; }
+/* Chrome paints a selected ruby base as tall as base + annotation, but plain
+   text only as tall as the line box, so the bar stepped up over every kanji.
+   Give furigana lines enough line-height for the annotation to fit inside the
+   line box; then both rects share one top edge. rt line-height: 1 keeps the
+   annotation box tight so 2.2 is enough. */
+li[data-ja], p[data-ja], td[data-ja], th[data-ja], blockquote[data-ja], dt[data-ja], dd[data-ja], summary[data-ja] { line-height: 2.2; }
+rt { line-height: 1; }
+/* Opaque selection colour: Chrome's translucent default double-paints where
+   the ruby rect and its neighbour overlap, leaving a bright 1px seam. */
+::selection { background: var(--selection-bg); color: var(--selection-fg); }
 body.hide-ruby rt { visibility: hidden; }
 body.hide-ruby ruby:hover rt { visibility: visible; }
 
@@ -2971,6 +2983,7 @@ pre code { background: none; padding: 0; }
   cursor: pointer; margin-left: .4em;
   vertical-align: middle; padding: 0;
   opacity: .5; transition: opacity .2s, border-color .2s;
+  -webkit-user-select: none; user-select: none;  /* keep 🔊 out of selections and copies */
 }
 .speak-btn:hover { opacity: 1; border-color: var(--accent); }
 .speak-btn.playing { opacity: 1; border-color: var(--accent); }
@@ -3203,6 +3216,8 @@ body.sidebar-collapsed #content.home {
     --word-border: #5a4920;
     --code-bg: #1f1f2e;
     --ruby-color: #ff7088;  /* lighter than --accent so furigana stays readable on dark blockquote tints */
+    --selection-bg: #3b6fd6;
+    --selection-fg: #fff;
   }
   /* Accent-colored strong text fails 4.5:1 on dark card surfaces; brighten. */
   :root:not(.theme-light) .seo-lead strong, :root:not(.theme-light) .home-intro strong { color: #ff7088; }
@@ -3254,6 +3269,8 @@ html.theme-dark {
     --word-border: #5a4920;
     --code-bg: #1f1f2e;
     --ruby-color: #ff7088;  /* lighter than --accent so furigana stays readable on dark blockquote tints */
+    --selection-bg: #3b6fd6;
+    --selection-fg: #fff;
   }
 /* Accent-colored strong text fails 4.5:1 on dark card surfaces; brighten. */
 html.theme-dark .seo-lead strong, html.theme-dark .home-intro strong { color: #ff7088; }
