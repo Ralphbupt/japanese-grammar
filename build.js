@@ -2876,7 +2876,12 @@ ruby { ruby-align: center; }
 rt {
   font-size: .6em; color: var(--ruby-color);
   font-weight: 400;
+  /* Furigana is decoration, not content: keep it out of text selection so
+     highlighting a sentence paints one clean bar instead of a row of detached
+     boxes floating above the kanji. Copied text stays reading-free too. */
+  -webkit-user-select: none; user-select: none;
 }
+rp { -webkit-user-select: none; user-select: none; }
 body.hide-ruby rt { visibility: hidden; }
 body.hide-ruby ruby:hover rt { visibility: visible; }
 
