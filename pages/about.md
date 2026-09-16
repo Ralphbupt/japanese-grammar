@@ -124,6 +124,36 @@ Tech stack:
 Pure **static site** — no backend, no database, no cookies. Every push to main triggers a GitHub Actions build and deploy.
 :::
 
+<a id="ai-privacy"></a>
+
+## 「问 AI」功能的隐私与安全||"Ask AI" privacy & security
+
+:::zh
+课程页右上角的 🤖「问 AI」侧栏可以把当前课的内容连同你的问题发给一个大模型。它的设计原则是：**本站永远拿不到你的密钥，也看不到你的对话。**
+
+- **没有服务器。** 整站是 GitHub Pages 上的静态 HTML，没有后端、没有数据库。你填的 API key 只存在你这台设备的浏览器里（默认 localStorage；勾选「只在本次会话保存」则关闭标签页即清除）。
+- **请求直连服务商。** 提问时，你的浏览器把这一课的正文和你的问题直接发到你选的服务商（Anthropic、OpenAI、DeepSeek、通义千问……或你本机的 Ollama）。中间没有任何中转。
+- **浏览器层面的白名单。** 每个页面都带有 Content-Security-Policy 的 `connect-src` 规则，只允许连接本站、Google Analytics、预设的服务商域名，以及 localhost / 127.0.0.1。即使页面上某段脚本被篡改，浏览器也会拒绝把数据发往白名单之外的任何地址。
+- **明文保护。** 设置里只接受 https:// 或本机地址；把服务商地址改成非官方域名时会显示醒目警告。
+- **自行验证。** 按 F12 打开开发者工具的 Network 面板，再提一个问题：你只会看到对该服务商域名的请求。侧栏的[全部源码](https://github.com/Ralphbupt/japanese-grammar/blob/main/site/ai-assistant.js)只有一个文件，欢迎审阅。
+- **本地方案。** 想完全不出本机，用 Ollama / LM Studio 跑本地模型即可，浏览器只会访问 localhost。
+
+费用由你和服务商结算，本站不参与、不抽成。
+:::
+
+:::en
+The 🤖 "Ask AI" side panel on lesson pages sends the current lesson plus your question to a large language model. Its design rule: **this site never receives your key and never sees your conversation.**
+
+- **No server.** The whole site is static HTML on GitHub Pages: no backend, no database. Your API key exists only in your browser on your device (localStorage by default; tick "keep for this tab only" and it is cleared when the tab closes).
+- **Direct to the provider.** When you ask, your browser sends the lesson text and your question straight to the provider you picked (Anthropic, OpenAI, DeepSeek, Qwen… or Ollama on your own machine). Nothing sits in between.
+- **A browser-enforced allowlist.** Every page ships a Content-Security-Policy `connect-src` rule that only permits connections to this site, Google Analytics, the preset provider hosts, and localhost / 127.0.0.1. Even if a script on the page were tampered with, the browser would refuse to send data anywhere else.
+- **No plain-text keys.** Settings accept only https:// or local URLs, and changing a provider's host to a non-official domain shows a prominent warning.
+- **Verify it yourself.** Open DevTools (F12) → Network and ask a question: the only requests you will see go to that provider's domain. The panel's [entire source](https://github.com/Ralphbupt/japanese-grammar/blob/main/site/ai-assistant.js) is one file; reviews welcome.
+- **Fully local option.** To keep everything on your machine, run a local model with Ollama or LM Studio; the browser then only talks to localhost.
+
+Billing is between you and the provider; this site takes no part and no cut.
+:::
+
 ## 播客||Podcast
 
 :::zh

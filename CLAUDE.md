@@ -25,6 +25,8 @@ The grammar notes are published as a static site at **https://jpnotes.dev/** (cu
 - SEO: unique meta descriptions, Article+LearningResource schema, FAQ schema
 - Giscus comments (GitHub Discussions-backed)
 - Anki flashcard decks (TSV + .apkg downloads at `/anki/`)
+- 🤖 Ask-AI side panel on lesson pages (`site/ai-assistant.{js,css}`, copied to `dist/ai-assistant.js`): reader supplies their own API key (localStorage only), browser calls the provider directly; 19 presets grouped 国际/国内/本地/聚合 (Anthropic, OpenAI, Gemini, xAI, Mistral, Groq, DeepSeek, Qwen, Kimi, GLM, 豆包, MiniMax, 混元, 文心, Ollama, LM Studio, OpenRouter, SiliconFlow, custom) plus a ⟳ button that fetches `{base}/models` live. Lesson text (active UI language) is sent as the system prompt; selecting text shows a 「问 AI」 chip
+- Security for the AI panel: every page carries a `<meta http-equiv="Content-Security-Policy">` with a `connect-src` allowlist (self, GA, provider hosts parsed from `site/ai-assistant.js`, localhost/127.0.0.1). Adding a provider = adding its `base:` URL in the JS; the CSP picks it up at build time. Settings only accept https or local base URLs, warn on non-official hosts, and offer session-only key storage. Privacy explanation lives in `pages/about.md` (#ai-privacy)
 - Lighthouse 100/100 on all 4 categories
 
 ## Build System Architecture
