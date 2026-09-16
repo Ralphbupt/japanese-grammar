@@ -44,6 +44,25 @@ const GISCUS_SCRIPT = `<script src="https://giscus.app/client.js"
         async>
 </script>`;
 
+// AI tutor side panel (问 AI / Ask AI) — reader-supplied API key, browser
+// calls the provider directly. Source lives in site/ai-assistant.{js,css};
+// the CSS is inlined with the rest, the JS is copied to dist/ and loaded
+// with defer on lesson pages only (the panel needs an article.lesson).
+const AI_CSS = fs.readFileSync(path.join(__dirname, "site", "ai-assistant.css"), "utf-8");
+const AI_JS_HASH = require("crypto").createHash("md5").update(fs.readFileSync(path.join(__dirname, "site", "ai-assistant.js"))).digest("hex").slice(0, 8);
+const AI_SCRIPT = `<script src="${SITE_PATH}ai-assistant.js?v=${AI_JS_HASH}" defer></script>`;  // ?v= busts browser caches on every change
+// Content-Security-Policy connect-src allowlist. This is the technical
+// guarantee behind the "your key never leaves your browser except to the
+// provider you picked" promise: the browser itself refuses fetch/XHR/beacon
+// to any origin not listed here, even if a script on the page were compromised.
+// Provider hosts are parsed from site/ai-assistant.js so the two stay in sync;
+// localhost/127.0.0.1 on any port covers Ollama, LM Studio and local relays.
+const AI_PROVIDER_HOSTS = [...new Set(
+  [...fs.readFileSync(path.join(__dirname, "site", "ai-assistant.js"), "utf-8").matchAll(/base: '(https?:\/\/[^'/]+)/g)]
+    .map(m => m[1]).filter(h => !/localhost|127\.0\.0\.1/.test(h))
+)];
+const CSP_META = `<meta http-equiv="Content-Security-Policy" content="connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com ${AI_PROVIDER_HOSTS.join(" ")} http://localhost:* https://localhost:* http://127.0.0.1:* https://127.0.0.1:*">`;
+
 // Theme init script — runs synchronously in <head> before CSS evaluates,
 // so the saved theme class is on <html> before paint (no flash of wrong theme).
 // Default (no class) follows @media (prefers-color-scheme: dark).
@@ -1654,6 +1673,7 @@ ${SEARCH_JS}`;
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="日语文法">
 
+${CSP_META}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 <style>
@@ -1703,6 +1723,7 @@ ${JS}
     "utf-8"
   );
   console.log(`  Wrote search-index.json (${searchPoints.length} grammar points).`);
+  fs.copyFileSync(path.join(__dirname, "site", "ai-assistant.js"), path.join(__dirname, "dist", "ai-assistant.js"));
 
   // ─── Generate individual lesson pages ───
   for (let li = 0; li < lessonPages.length; li++) {
@@ -1852,6 +1873,7 @@ ${JS}
 </script>
 <link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+${CSP_META}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 <style>
@@ -1895,6 +1917,7 @@ ${sidebarMarkupHtml}
     ${GISCUS_SCRIPT}
   </section>
 </main>
+${AI_SCRIPT}
 <div id="bottom-controls">
   ${THEME_TOGGLE_HTML}
   <div id="furigana-toggle">
@@ -2089,6 +2112,7 @@ ${THEME_TOGGLE_JS}
 </script>
 <link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+${CSP_META}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 <style>
@@ -2242,6 +2266,7 @@ ${LANG_PREF_JS}
 </script>
 <link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+${CSP_META}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 <style>
@@ -3280,7 +3305,7 @@ html.theme-dark pre code { color: #d4d4dc; }
 #search-hint { font-size: .72rem; opacity: .55; padding: .5rem 1.2rem; border-top: 1px solid var(--border); }
 @media (max-width: 600px) { #search-hint { display: none; } #search-overlay { padding: 6vh .6rem 1rem; } }
 html.theme-dark #search-box { background: #1f1f2e; }
-`;
+` + AI_CSS;
 
 // ─── JS ───
 const JS = `
