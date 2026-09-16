@@ -650,7 +650,8 @@ const SC_CHARS = new Set(
   "强录厅婴宽异弯张扬杂笔脸构标松灭虑综级" +
   "岁属带怀戏执担坚叶杀产仅优储兰创势华币" +
   "响团块奋妇宁宝宪审岛帐广庆径恼悬惊愿战" +
-  "扩拟拥拨择损摇撑权枪"
+  "扩拟拥拨择损摇撑权枪" +
+  "另啤貌"
 );
 
 function hasSC(text) {
@@ -719,6 +720,40 @@ const RUBY_FIXES = [
   // a non-が particle: every comparative 方 in these lessons takes が, and a
   // topic-contrast 「〜の方は」(ほう) would need an exception here.
   { kanji: "方", from: /^ほう$/, after: /^[はをにもで、。]/, to: "かた" },
+  // Grammar-term 〜形 is けい (ますけい, てけい, ないけい). kuromoji offers
+  // がた or かたち; the real 「形」 (shape) keeps かたち because no form name
+  // precedes it — 星の形, した。形.
+  {
+    kanji: "形",
+    from: /^(がた|かたち)$/,
+    before: /(ます|ない|たり|辞[書书]|可能|使役|受身|受け身|命令|意[向志]|普通|丁寧|仮定|条件|連用|基本|否定|原|ている|でいる|[VＶ]|[たてばないなイい])$/,
+    to: "けい",
+  },
+  // 来させる/来させられる is こさせる.
+  { kanji: "来", from: /^きた$/, after: /^させ/, to: "こ" },
+  { kanji: "雨", from: /^う$/, to: "あめ" },
+  { kanji: "薬", from: /^やく$/, to: "くすり" },
+  { kanji: "水", from: /^すい$/, to: "みず" },
+  { kanji: "店", from: /^てん$/, to: "みせ" },
+  { kanji: "際", from: /^きわ$/, to: "さい" },
+  { kanji: "嫌", from: /^ぎら$/, to: "きら" },
+  // お腹/店が空く is すく; 席が空く (あく) would need an exception here.
+  { kanji: "空", from: /^あ$/, before: /[腹店]/, after: /^い[たてる]/, to: "す" },
+  // 〜た後だ / 〜の後に is あと. 後ほど (のちほど) is left alone.
+  { kanji: "後", from: /^のち$/, after: /^[だにで、。]/, to: "あと" },
+  { kanji: "熱", from: /^ねっ$/, after: /^そう/, to: "あつ" },
+  { kanji: "難", from: /^かた$/, after: /^し/, to: "むずか" },
+  { kanji: "書", from: /^が$/, before: /お$/, to: "か" },
+  { kanji: "話", from: /^ばなし$/, after: /^[さしすせ]/, to: "はな" },
+  // ピアノを弾く is ひく.
+  { kanji: "弾", from: /^はじ$/, after: /^[けい]/, to: "ひ" },
+  // A digit in front makes 時/歳 a counter: 10時 = じゅうじ, 18歳 = じゅうはっさい.
+  { kanji: "時", from: /^とき$/, before: /[0-9０-９]\s*$/, to: "じ" },
+  { kanji: "歳", from: /^とし$/, before: /[0-9０-９]\s*$/, to: "さい" },
+  { kanji: "帰", from: /^き$/, after: /^[てた]/, to: "かえ" },
+  { kanji: "美味", from: /^うま$/, to: "おい" },
+  { kanji: "買", from: /^がい$/, to: "か" },
+  { kanji: "見", from: /^みる$/, to: "み" },
   // Every 辛 in these lessons means "spicy" (からい), never つらい.
   { kanji: "辛", from: /^(つら|からし)$/, to: "から" },
 ];
@@ -727,6 +762,7 @@ const RUBY_FIXES = [
 const RUBY_MERGES = [["彼", "女", "かのじょ"]];
 
 const RUBY_TAG = /<ruby>([^<]*)<rp>\(<\/rp><rt>([^<]*)<\/rt><rp>\)<\/rp><\/ruby>/g;
+const RUBY_KANA = /^[ぁ-んァ-ヶーゔ・]+$/;
 
 function ruby(kanji, reading) {
   return `<ruby>${kanji}<rp>(</rp><rt>${reading}</rt><rp>)</rp></ruby>`;
@@ -749,6 +785,11 @@ function fixReadings(html) {
     );
     html = html.replace(pair, ruby(a + b, reading));
   }
+  // kuroshiro echoes text it cannot read — a Chinese gloss that slipped into a
+  // data-ja element comes back annotated with itself (刚(刚)). Keep the text,
+  // drop the ruby.
+  html = html.replace(RUBY_TAG, (m, kanji, reading) => (RUBY_KANA.test(reading) ? m : kanji));
+
   return html.replace(RUBY_TAG, (m, kanji, reading, offset, str) => {
     const ctx = plainAround(str, offset, offset + m.length);
     for (const f of RUBY_FIXES) {
