@@ -25,48 +25,48 @@
   // settings fetches the live list from {base}/models.
   var PROVIDERS = {
     anthropic: { group: 'intl', name: 'Claude (Anthropic)', kind: 'anthropic', needsKey: true,
-      base: 'https://api.anthropic.com', model: 'claude-opus-5', models: ['claude-opus-5', 'claude-sonnet-5', 'claude-haiku-4-5', 'claude-fable-5-1', 'claude-opus-4-8', 'claude-opus-4-7', 'claude-opus-4-6', 'claude-sonnet-4-6'],
+      base: 'https://api.anthropic.com', model: 'claude-opus-5', models: ['claude-opus-5', 'claude-sonnet-5', 'claude-fable-5-1', 'claude-haiku-4-5', 'claude-opus-4-8', 'claude-sonnet-4-6'],
       hintZh: '在 console.anthropic.com 创建 API key（按用量付费，与 claude.ai 订阅无关）。',
       hintEn: 'Create an API key at console.anthropic.com (pay-as-you-go; separate from a claude.ai subscription).' },
     openai: { group: 'intl', name: 'OpenAI (GPT)', kind: 'openai', needsKey: true,
-      base: 'https://api.openai.com/v1', model: 'gpt-5', models: ['gpt-5', 'gpt-5-mini', 'gpt-5-nano', 'gpt-4.1', 'gpt-4.1-mini', 'o3', 'o4-mini'],
+      base: 'https://api.openai.com/v1', model: 'gpt-5.6', models: ['gpt-6-astra', 'gpt-5.6', 'gpt-5.5', 'gpt-5.6-terra', 'gpt-5.4', 'gpt-5.4-mini', 'gpt-5.6-luna'],
       hintZh: '在 platform.openai.com 创建 API key。', hintEn: 'Create an API key at platform.openai.com.' },
     gemini: { group: 'intl', name: 'Google Gemini', kind: 'openai', needsKey: true,
-      base: 'https://generativelanguage.googleapis.com/v1beta/openai', model: 'gemini-2.5-pro', models: ['gemini-2.5-pro', 'gemini-2.5-flash', 'gemini-2.5-flash-lite', 'gemini-2.0-flash'],
+      base: 'https://generativelanguage.googleapis.com/v1beta/openai', model: 'gemini-3.1-pro-preview', models: ['gemini-3.1-pro-preview', 'gemini-3.8-flash', 'gemini-2.5-pro', 'gemini-2.5-flash', 'gemini-3.5-flash-lite', 'gemini-3.1-flash-lite', 'gemini-2.5-flash-lite'],
       hintZh: '在 aistudio.google.com 创建 API key（有免费额度）。', hintEn: 'Create an API key at aistudio.google.com (free tier available).' },
     xai: { group: 'intl', name: 'xAI Grok', kind: 'openai', needsKey: true,
-      base: 'https://api.x.ai/v1', model: 'grok-4', models: ['grok-4', 'grok-4-fast', 'grok-3', 'grok-3-mini'],
+      base: 'https://api.x.ai/v1', model: 'grok-4.6', models: ['grok-4.6', 'grok-4.5', 'grok-4.3', 'grok-4.20-0309-reasoning'],
       hintZh: '在 console.x.ai 创建 API key。', hintEn: 'Create an API key at console.x.ai.' },
     mistral: { group: 'intl', name: 'Mistral', kind: 'openai', needsKey: true,
-      base: 'https://api.mistral.ai/v1', model: 'mistral-large-latest', models: ['mistral-large-latest', 'mistral-medium-latest', 'mistral-small-latest', 'magistral-medium-latest', 'codestral-latest'],
+      base: 'https://api.mistral.ai/v1', model: 'mistral-medium-latest', models: ['mistral-medium-latest', 'mistral-large-latest', 'mistral-small-latest', 'mistral-medium-3-5', 'mistral-large-2512', 'mistral-small-2603', 'ministral-14b-2512'],
       hintZh: '在 console.mistral.ai 创建 API key。', hintEn: 'Create an API key at console.mistral.ai.' },
     groq: { group: 'intl', name: 'Groq', kind: 'openai', needsKey: true,
-      base: 'https://api.groq.com/openai/v1', model: 'llama-3.3-70b-versatile', models: ['llama-3.3-70b-versatile', 'llama-3.1-8b-instant', 'openai/gpt-oss-120b', 'openai/gpt-oss-20b', 'qwen/qwen3-32b', 'moonshotai/kimi-k2-instruct'],
+      base: 'https://api.groq.com/openai/v1', model: 'openai/gpt-oss-120b', models: ['openai/gpt-oss-120b', 'qwen/qwen3.8-27b', 'openai/gpt-oss-20b', 'groq/compound', 'groq/compound-mini'],
       hintZh: '在 console.groq.com 创建 API key（速度快，有免费额度）。', hintEn: 'Create an API key at console.groq.com (fast, free tier available).' },
 
     deepseek: { group: 'cn', name: 'DeepSeek', kind: 'openai', needsKey: true,
-      base: 'https://api.deepseek.com/v1', model: 'deepseek-chat', models: ['deepseek-chat', 'deepseek-reasoner'],
-      hintZh: '在 platform.deepseek.com 创建 API key。', hintEn: 'Create an API key at platform.deepseek.com.' },
+      base: 'https://api.deepseek.com/v1', model: 'deepseek-v4-pro', models: ['deepseek-v4-pro', 'deepseek-flash'],
+      hintZh: '在 platform.deepseek.com 创建 API key。deepseek-chat / deepseek-reasoner 已于 2026-07 停服。', hintEn: 'Create an API key at platform.deepseek.com. deepseek-chat / deepseek-reasoner were retired in 2026-07.' },
     qwen: { group: 'cn', name: '通义千问 Qwen (阿里云百炼)', kind: 'openai', needsKey: true,
-      base: 'https://dashscope.aliyuncs.com/compatible-mode/v1', model: 'qwen-plus', models: ['qwen-plus', 'qwen-max', 'qwen-turbo', 'qwen-flash', 'qwen-long', 'qwen3-235b-a22b', 'qwen3-32b'],
+      base: 'https://dashscope.aliyuncs.com/compatible-mode/v1', model: 'qwen3.8-max', models: ['qwen3.8-max', 'qwen3.7-plus', 'qwen3.8-flash', 'qwen3.7-max', 'qwen3.8-27b', 'qwen-plus', 'qwen-flash'],
       hintZh: '在阿里云百炼 bailian.console.aliyun.com 创建 API key。', hintEn: 'Create an API key in Alibaba Cloud Model Studio (bailian.console.aliyun.com).' },
     kimi: { group: 'cn', name: 'Kimi (月之暗面)', kind: 'openai', needsKey: true,
-      base: 'https://api.moonshot.cn/v1', model: 'kimi-k2-turbo-preview', models: ['kimi-k2-turbo-preview', 'kimi-k2-0905-preview', 'kimi-k2-thinking', 'moonshot-v1-8k', 'moonshot-v1-32k', 'moonshot-v1-128k'],
+      base: 'https://api.moonshot.cn/v1', model: 'kimi-k3', models: ['kimi-k3', 'kimi-k2.6', 'kimi-k2.7-code'],
       hintZh: '在 platform.moonshot.cn 创建 API key。', hintEn: 'Create an API key at platform.moonshot.cn.' },
     zhipu: { group: 'cn', name: '智谱 GLM', kind: 'openai', needsKey: true,
-      base: 'https://open.bigmodel.cn/api/paas/v4', model: 'glm-4.6', models: ['glm-4.6', 'glm-4.5', 'glm-4.5-air', 'glm-4.5-flash', 'glm-4-plus'],
+      base: 'https://open.bigmodel.cn/api/paas/v4', model: 'glm-5.3', models: ['glm-5.3', 'glm-5.2', 'glm-5.1', 'glm-5-turbo', 'glm-5.3-flash', 'glm-4.7', 'glm-4.7-flash', 'glm-4.5-flash'],
       hintZh: '在 open.bigmodel.cn 创建 API key。', hintEn: 'Create an API key at open.bigmodel.cn.' },
     doubao: { group: 'cn', name: '豆包 (火山方舟)', kind: 'openai', needsKey: true,
-      base: 'https://ark.cn-beijing.volces.com/api/v3', model: 'doubao-seed-1-6-250615', models: ['doubao-seed-1-6-250615', 'doubao-seed-1-6-flash-250615', 'doubao-seed-1-6-thinking-250615', 'doubao-1-5-pro-32k-250115'],
+      base: 'https://ark.cn-beijing.volces.com/api/v3', model: 'doubao-seed-2-1-pro-260628', models: ['doubao-seed-2-1-pro-260628', 'doubao-seed-2-1-turbo-260628', 'doubao-seed-2-0-lite-260428', 'doubao-seed-2-0-mini-260428', 'doubao-seed-evolving'],
       hintZh: '在火山方舟 console.volcengine.com/ark 创建 API key，模型填模型 ID 或接入点 ID。', hintEn: 'Create an API key in Volcengine Ark; use the model ID or endpoint ID as the model.' },
-    minimax: { group: 'cn', name: 'MiniMax', kind: 'openai', needsKey: true,
-      base: 'https://api.minimaxi.com/v1', model: 'MiniMax-M2', models: ['MiniMax-M2', 'MiniMax-M1', 'MiniMax-Text-01'],
-      hintZh: '在 platform.minimaxi.com 创建 API key（海外版用 api.minimax.io/v1）。', hintEn: 'Create an API key at platform.minimax.io (global base: api.minimax.io/v1).' },
-    hunyuan: { group: 'cn', name: '腾讯混元', kind: 'openai', needsKey: true,
-      base: 'https://api.hunyuan.cloud.tencent.com/v1', model: 'hunyuan-turbos-latest', models: ['hunyuan-turbos-latest', 'hunyuan-t1-latest', 'hunyuan-lite'],
-      hintZh: '在腾讯云控制台创建混元 API key。', hintEn: 'Create a Hunyuan API key in the Tencent Cloud console.' },
+    minimax: { group: 'cn', name: 'MiniMax', kind: 'openai', needsKey: true, altBase: 'https://api.minimax.io/v1',
+      base: 'https://api.minimaxi.cn/v1', model: 'MiniMax-M3', models: ['MiniMax-M3', 'MiniMax-M2.7', 'MiniMax-M2.7-highspeed', 'MiniMax-M2.5'],
+      hintZh: '在 platform.minimax.cn 创建 API key；国际版把 Base URL 改成 https://api.minimax.io/v1。', hintEn: 'Create an API key at platform.minimax.io and set the base URL to https://api.minimax.io/v1 (China: api.minimaxi.cn).' },
+    hunyuan: { group: 'cn', name: '腾讯混元 (TokenHub)', kind: 'openai', needsKey: true, altBase: 'https://api.hunyuan.cloud.tencent.com/v1',
+      base: 'https://tokenhub.tencentmaas.com/v1', model: 'hy4-preview', models: ['hy4-preview', 'hy3', 'hy3-preview', 'hunyuan-2.0-thinking-20251109', 'hunyuan-2.0-instruct-20251111'],
+      hintZh: '新模型 (hy4/hy3) 在 TokenHub 平台，去 tokenhub.tencentmaas.com 创建 key。旧平台 api.hunyuan.cloud.tencent.com/v1 的 key 不通用，用旧平台请改 Base URL。', hintEn: 'New models (hy4/hy3) live on TokenHub; create the key at tokenhub.tencentmaas.com. Keys for the legacy api.hunyuan.cloud.tencent.com/v1 endpoint are separate.' },
     qianfan: { group: 'cn', name: '百度文心 (千帆)', kind: 'openai', needsKey: true,
-      base: 'https://qianfan.baidubce.com/v2', model: 'ernie-4.5-turbo-128k', models: ['ernie-4.5-turbo-128k', 'ernie-4.5-turbo-32k', 'ernie-x1-turbo-32k', 'ernie-4.0-8k'],
+      base: 'https://qianfan.baidubce.com/v2', model: 'ernie-5.1', models: ['ernie-5.1', 'ernie-5.0', 'ernie-5.0-thinking-latest', 'ernie-4.5-turbo-128k', 'ernie-4.5-turbo-32k'],
       hintZh: '在百度千帆控制台创建 API key（bce-v3/… 格式）。', hintEn: 'Create an API key in the Baidu Qianfan console.' },
 
     ollama: { group: 'local', name: 'Ollama 本地 / Local', kind: 'openai', needsKey: false,
@@ -78,10 +78,10 @@
       hintZh: '在 LM Studio 里启动本地服务器并开启 CORS，然后点 ⟳ 获取已加载的模型。', hintEn: 'Start the LM Studio local server with CORS enabled, then click ⟳ to list loaded models.' },
 
     openrouter: { group: 'relay', name: 'OpenRouter (聚合)', kind: 'openai', needsKey: true,
-      base: 'https://openrouter.ai/api/v1', model: 'anthropic/claude-sonnet-4.5', models: ['anthropic/claude-sonnet-4.5', 'anthropic/claude-opus-4.1', 'openai/gpt-5', 'openai/gpt-5-mini', 'google/gemini-2.5-pro', 'google/gemini-2.5-flash', 'deepseek/deepseek-chat-v3.1', 'qwen/qwen3-235b-a22b', 'moonshotai/kimi-k2', 'x-ai/grok-4', 'openrouter/auto'],
+      base: 'https://openrouter.ai/api/v1', model: 'openrouter/auto', models: ['openrouter/auto', 'anthropic/claude-opus-5', 'anthropic/claude-sonnet-5', 'openai/gpt-6-astra', 'openai/gpt-5.6-sol', 'google/gemini-3.1-pro-preview', 'google/gemini-3.8-flash', 'deepseek/deepseek-v4-pro', 'qwen/qwen3.8-max-0902', 'moonshotai/kimi-k3', 'z-ai/glm-5.3', 'x-ai/grok-4.6', 'minimax/minimax-m3'],
       hintZh: '一个 key 用所有模型，在 openrouter.ai 创建；明确支持浏览器直连。', hintEn: 'One key for every model; create it at openrouter.ai. Browser calls are officially supported.' },
     siliconflow: { group: 'relay', name: '硅基流动 SiliconFlow (聚合)', kind: 'openai', needsKey: true,
-      base: 'https://api.siliconflow.cn/v1', model: 'Qwen/Qwen3-235B-A22B', models: ['Qwen/Qwen3-235B-A22B', 'Qwen/Qwen3-32B', 'deepseek-ai/DeepSeek-V3.1', 'deepseek-ai/DeepSeek-R1', 'moonshotai/Kimi-K2-Instruct', 'zai-org/GLM-4.5'],
+      base: 'https://api.siliconflow.cn/v1', model: 'deepseek-ai/DeepSeek-V4-Pro', models: ['deepseek-ai/DeepSeek-V4-Pro', 'deepseek-ai/DeepSeek-V4-Flash', 'zai-org/GLM-5.3', 'Qwen/Qwen3.8-27B', 'moonshotai/Kimi-K2.7-Code', 'Pro/moonshotai/Kimi-K2.6', 'zai-org/GLM-5.2', 'Qwen/Qwen3.6-35B-A3B', 'tencent/Hy4-preview'],
       hintZh: '在 cloud.siliconflow.cn 创建 API key。', hintEn: 'Create an API key at cloud.siliconflow.cn.' },
     custom: { group: 'relay', name: '自定义本地服务 / Custom local', kind: 'openai', needsKey: false,
       base: 'http://localhost:8000/v1', model: '', models: [],
@@ -162,15 +162,55 @@
     var txt = (clone.textContent || '').replace(/[ \t]+\n/g, '\n').replace(/\n{3,}/g, '\n\n').trim();
     return txt.length > MAX_CONTEXT_CHARS ? txt.slice(0, MAX_CONTEXT_CHARS) + '\n…(truncated)' : txt;
   }
+  // "Thinking depth": '' (standard) sends nothing so each provider's default
+  // applies; 'low' / 'high' map onto the provider's own knob where one is known
+  // to exist for that model family, and otherwise only shape the prompt. Unknown
+  // combos deliberately send nothing rather than risk a 400.
+  var EFFORTS = [['low', '快速', 'Quick'], ['', '标准', 'Standard'], ['high', '深入', 'Deep']];
+  function effortLabel(e) { var r = EFFORTS.filter(function (x) { return x[0] === (e || ''); })[0]; return r ? (isEn() ? r[2] : r[1]) : ''; }
+  function effortParams(c) {
+    var e = c.effort || '', m = c.model || '', k = c.provider;
+    if (!e) return {};
+    if (k === 'anthropic') return /haiku|sonnet-4-5|opus-4-[0-5]|claude-3/.test(m) ? {} : { output_config: { effort: e } };
+    if (k === 'openai') return /^(gpt-[5-9]|o\d)/.test(m) ? { reasoning_effort: e } : {};
+    if (k === 'gemini') return /^gemini-(2\.5|3)/.test(m) ? { reasoning_effort: e } : {};
+    if (k === 'xai') return /^grok-4\.[2-9]|^grok-[5-9]/.test(m) ? { reasoning_effort: e } : {};
+    if (k === 'mistral') return /medium|small/.test(m) ? { reasoning_effort: e === 'high' ? 'high' : 'none' } : {};
+    if (k === 'groq') return /gpt-oss|qwen3/.test(m) ? { reasoning_effort: e } : {};
+    if (k === 'openrouter') return { reasoning: { effort: e } };
+    if (k === 'zhipu') {
+      if (/^glm-5\.3/.test(m)) return { thinking: { type: 'enabled' }, reasoning_effort: e };   // 5.3 cannot disable thinking
+      return /^glm-(4\.[5-9]|[5-9])/.test(m) ? { thinking: { type: e === 'low' ? 'disabled' : 'enabled' } } : {};
+    }
+    if (k === 'qwen') return /^qwen3|^qwen-(plus|turbo|flash)/.test(m) ? { enable_thinking: e === 'high' } : {};
+    if (k === 'deepseek') return e === 'low' ? { thinking: { type: 'disabled' } } : { thinking: { type: 'enabled' }, reasoning_effort: 'high' };
+    if (k === 'kimi') {
+      if (/^kimi-k3/.test(m)) return { reasoning_effort: e };
+      return /^kimi-k2\.6/.test(m) ? { thinking: { type: e === 'low' ? 'disabled' : 'enabled' } } : {};
+    }
+    if (k === 'doubao') return { thinking: { type: e === 'low' ? 'disabled' : 'enabled' } };
+    if (k === 'minimax') return /M3/i.test(m) && e === 'low' ? { thinking: { type: 'disabled' } } : {};
+    if (k === 'hunyuan') return /^hy[34]|thinking/.test(m) ? { thinking: { type: e === 'low' ? 'disabled' : 'enabled' } } : {};
+    if (k === 'qianfan') return { enable_thinking: e === 'high' };
+    if (k === 'siliconflow') return /DeepSeek-V4|Qwen3|GLM-5|Kimi-K2\.6|Hy4/i.test(m) ? { enable_thinking: e === 'high' } : {};
+    return {};
+  }
+  function effortPrompt(c) {
+    var e = c.effort || '';
+    if (e === 'low') return isEn() ? ' Keep answers short: 3–5 sentences, conclusion first.' : ' 回答尽量简短，3–5 句，先给结论。';
+    if (e === 'high') return isEn() ? ' Feel free to go deep: more examples, side-by-side comparisons with similar grammar, and common mistakes.' : ' 可以详细展开：多给例句，和相近语法对比辨析，并指出易错点。';
+    return '';
+  }
+  function assign(a, b) { for (var k in b) a[k] = b[k]; return a; }
   function systemPrompt() {
     var lesson = lessonText();
     if (!isEn()) {
       return '你是一位日语语法老师，正在辅导一位备考 JLPT 的中文母语学习者。学习者此刻正在阅读下面这一课的笔记（网址 ' + location.href + '）。' +
-        '请优先基于笔记内容回答；补充笔记之外的知识时请说明。回答用中文，日语例句请附上假名读音和中文翻译。回答简洁、多用例句、少说套话。' +
+        '请优先基于笔记内容回答；补充笔记之外的知识时请说明。回答用中文，日语例句请附上假名读音和中文翻译。回答简洁、多用例句、少说套话。' + effortPrompt(cfg) +
         '\n\n<lesson>\n' + lesson + '\n</lesson>';
     }
     return 'You are a Japanese grammar tutor helping a JLPT learner. The learner is currently reading the lesson notes below (' + location.href + '). ' +
-      'Answer primarily from the notes and say so when you add outside knowledge. Reply in English; give Japanese examples with kana readings and English translations. Be concise, example-heavy, no filler.' +
+      'Answer primarily from the notes and say so when you add outside knowledge. Reply in English; give Japanese examples with kana readings and English translations. Be concise, example-heavy, no filler.' + effortPrompt(cfg) +
       '\n\n<lesson>\n' + lesson + '\n</lesson>';
   }
 
@@ -212,7 +252,7 @@
         'anthropic-version': '2023-06-01',
         'anthropic-dangerous-direct-browser-access': 'true'
       },
-      body: JSON.stringify({ model: c.model, max_tokens: 8192, stream: true, system: sys, messages: msgs })
+      body: JSON.stringify(assign({ model: c.model, max_tokens: 8192, stream: true, system: sys, messages: msgs }, effortParams(c)))
     }).then(function (res) {
       if (!res.ok) return httpError(res);
       return readSSE(res, function (j) {
@@ -227,7 +267,7 @@
     if (c.key) headers.Authorization = 'Bearer ' + c.key;
     return fetch(c.base.replace(/\/+$/, '') + '/chat/completions', {
       method: 'POST', signal: signal, headers: headers,
-      body: JSON.stringify({ model: c.model, stream: true, messages: [{ role: 'system', content: sys }].concat(msgs) })
+      body: JSON.stringify(assign({ model: c.model, stream: true, messages: [{ role: 'system', content: sys }].concat(msgs) }, effortParams(c)))
     }).then(function (res) {
       if (!res.ok) return httpError(res);
       return readSSE(res, function (j) {
@@ -300,10 +340,15 @@
       menu.innerHTML = '<div class="ai-menu-head">' + esc((PROVIDERS[cfg.provider] || { name: cfg.provider }).name) + '</div>' +
         items.map(function (m) { return '<button type="button" class="ai-menu-item' + (m === cfg.model ? ' sel' : '') + '" data-m="' + esc(m) + '">' + esc(m) + '</button>'; }).join('') +
         '<div class="ai-menu-sep"></div>' +
+        '<div class="ai-menu-head">' + esc(t('思考深度', 'Thinking depth')) + '</div>' +
+        '<div class="ai-effort-row">' + EFFORTS.map(function (x) { return '<button type="button" class="ai-effort' + ((cfg.effort || '') === x[0] ? ' sel' : '') + '" data-e="' + x[0] + '">' + esc(isEn() ? x[2] : x[1]) + '</button>'; }).join('') + '</div>' +
+        '<div class="ai-menu-sep"></div>' +
         '<button type="button" class="ai-menu-item ai-menu-settings">⚙ ' + esc(t('更多模型 / 换服务商…', 'More models / change provider…')) + '</button>';
       menu.hidden = false;
     });
     menu.addEventListener('click', function (e) {
+      var eb = e.target.closest && e.target.closest('.ai-effort');
+      if (eb) { e.stopPropagation(); cfg.effort = eb.getAttribute('data-e'); saveCfg(cfg); track('ai_effort', { effort: cfg.effort || 'standard', via: 'menu' }); renderAll(); menu.hidden = true; return; }
       var b = e.target.closest && e.target.closest('.ai-menu-item');
       if (!b) return;
       menu.hidden = true;
@@ -337,7 +382,8 @@
     if (!settingsEl || settingsEl.hidden) return null;
     var f = settingsEl;
     return { provider: f.querySelector('[name=provider]').value, base: f.querySelector('[name=base]').value, key: f.querySelector('[name=key]').value,
-             model: f.querySelector('[name=model]').value, session: f.querySelector('[name=session]').checked };
+             model: f.querySelector('[name=model]').value, session: f.querySelector('[name=session]').checked,
+             effort: (f.querySelector('[name=effort]:checked') || {}).value || '' };
   }
   function relocalize() {
     if (!panel) return;
@@ -354,7 +400,7 @@
   function autosize() { inputEl.style.height = 'auto'; inputEl.style.height = Math.min(inputEl.scrollHeight + 2, window.innerHeight * 0.4) + 'px'; }
 
   function renderAll() {
-    modelLabel.textContent = cfg ? (PROVIDERS[cfg.provider] || { name: cfg.provider }).name.split(' ')[0] + ' · ' + cfg.model + ' ▾' : t('未设置 ▾', 'not set ▾');
+    modelLabel.textContent = cfg ? (PROVIDERS[cfg.provider] || { name: cfg.provider }).name.split(' ')[0] + ' · ' + cfg.model + (cfg.effort ? ' · ' + effortLabel(cfg.effort) : '') + ' ▾' : t('未设置 ▾', 'not set ▾');
     msgsEl.innerHTML = '';
     if (!cfg) {
       msgsEl.innerHTML = '<div class="ai-note">' + esc(t('先在 ⚙ 设置里填入你的 API key。密钥只保存在本机浏览器，请求由浏览器直接发送给模型服务商，本站不经手。',
@@ -462,6 +508,9 @@
         '<div class="ai-model-menu ai-settings-menu" hidden></div></span></label>' +
       '<p class="ai-hint"></p>' +
       '<p class="ai-hint ai-hostwarn" hidden></p>' +
+      '<label>' + esc(t('思考深度', 'Thinking depth')) + '<span class="ai-effort-row ai-effort-settings">' +
+        EFFORTS.map(function (x) { return '<label class="ai-effort-opt"><input type="radio" name="effort" value="' + x[0] + '"' + ((cur.effort || '') === x[0] ? ' checked' : '') + '> ' + esc(isEn() ? x[2] : x[1]) + '</label>'; }).join('') +
+      '</span><span class="ai-hint">' + esc(t('快速 = 短答、少思考、更便宜；深入 = 允许模型多想、多举例。有推理开关的模型（GPT-5、Claude、Gemini、GLM、Qwen3 等）会同时调节推理强度。', 'Quick = short answers, little reasoning, cheaper; Deep = let the model think longer and give more examples. On models with a reasoning knob (GPT-5, Claude, Gemini, GLM, Qwen3…) it also sets reasoning effort.')) + '</span></label>' +
       '<label class="ai-check"><input type="checkbox" name="session"' + (cur.session ? ' checked' : '') + '> ' +
         esc(t('只在本次会话保存密钥（关闭标签页后自动清除，公用电脑请勾选）', 'Keep the key for this tab only (cleared when the tab closes; use on shared computers)')) + '</label>' +
       '<div class="ai-privacy"><b>🔒 ' + esc(t('隐私与安全', 'Privacy & security')) + '</b><ul>' +
@@ -511,7 +560,7 @@
       if (v && !/^https:\/\//i.test(v) && !isLocalUrl(v)) {
         fatalMsg = true;
         msg = t('⚠ 只允许 https:// 或本机 (localhost / 127.0.0.1) 地址，否则密钥会以明文在网络上传输。', '⚠ Only https:// or local (localhost / 127.0.0.1) URLs are allowed; anything else would send your key in plain text.');
-      } else if (v && preset && h && h !== preset && !isLocalUrl(v)) {
+      } else if (v && preset && h && h !== preset && h !== hostOf(p.altBase || '') && !isLocalUrl(v)) {
         msg = t('⚠ 你的 API key 将发送到 ' + h + '，而不是 ' + p.name + ' 的官方地址 ' + preset + '。请确认你信任这个地址。', '⚠ Your API key will be sent to ' + h + ', not to ' + p.name + '\u2019s official host ' + preset + '. Make sure you trust it.');
       }
       warn.textContent = msg; warn.hidden = !msg;
@@ -545,7 +594,8 @@
     settingsEl.onsubmit = function (e) {
       e.preventDefault();
       var p = PROVIDERS[sel.value];
-      var next = { provider: sel.value, base: base.value.trim(), key: key.value.trim(), model: model.value.trim(), session: settingsEl.querySelector('[name=session]').checked };
+      var next = { provider: sel.value, base: base.value.trim(), key: key.value.trim(), model: model.value.trim(), session: settingsEl.querySelector('[name=session]').checked,
+                   effort: (settingsEl.querySelector('[name=effort]:checked') || {}).value || '' };
       if (!next.base || !next.model || (p.needsKey && !next.key)) { hint.textContent = t('请填写完整。', 'Please fill in every field.'); hint.classList.add('ai-hint-err'); return; }
       if (!checkHost()) return;
       var first = !cfg, changed = !cfg || cfg.provider !== next.provider || cfg.model !== next.model;

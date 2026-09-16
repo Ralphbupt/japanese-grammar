@@ -58,7 +58,7 @@ const AI_SCRIPT = `<script src="${SITE_PATH}ai-assistant.js?v=${AI_JS_HASH}" def
 // Provider hosts are parsed from site/ai-assistant.js so the two stay in sync;
 // localhost/127.0.0.1 on any port covers Ollama, LM Studio and local relays.
 const AI_PROVIDER_HOSTS = [...new Set(
-  [...fs.readFileSync(path.join(__dirname, "site", "ai-assistant.js"), "utf-8").matchAll(/base: '(https?:\/\/[^'/]+)/g)]
+  [...fs.readFileSync(path.join(__dirname, "site", "ai-assistant.js"), "utf-8").matchAll(/(?:base|altBase): '(https?:\/\/[^'/]+)/g)]
     .map(m => m[1]).filter(h => !/localhost|127\.0\.0\.1/.test(h))
 )];
 const CSP_META = `<meta http-equiv="Content-Security-Policy" content="connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com ${AI_PROVIDER_HOSTS.join(" ")} http://localhost:* https://localhost:* http://127.0.0.1:* https://127.0.0.1:*">`;
