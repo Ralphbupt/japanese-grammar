@@ -433,12 +433,48 @@
     return out.join('');
   }
 
+  /* ── panel width (drag the left edge; remembered per browser) ── */
+  var WIDTH_KEY = 'jp_ai_w';
+  function clampWidth(w) { return Math.max(340, Math.min(Math.round(window.innerWidth * 0.6), 760, Math.round(w))); }
+  function applyWidth(w) { document.documentElement.style.setProperty('--ai-w', clampWidth(w) + 'px'); }
+  function resetWidth() { document.documentElement.style.removeProperty('--ai-w'); try { localStorage.removeItem(WIDTH_KEY); } catch (e) {} }
+  (function () { try { var w = +localStorage.getItem(WIDTH_KEY); if (w) applyWidth(w); } catch (e) {} })();
+  function initResize(handle) {
+    var startX = 0, startW = 0, dragging = false;
+    function move(e) {
+      if (!dragging) return;
+      var x = e.touches ? e.touches[0].clientX : e.clientX;
+      applyWidth(startW + (startX - x));
+    }
+    function up() {
+      if (!dragging) return;
+      dragging = false; document.body.classList.remove('ai-resizing');
+      var w = clampWidth(parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--ai-w')));
+      try { localStorage.setItem(WIDTH_KEY, String(w)); } catch (e) {}
+      track('ai_resize', { width: w });
+      window.removeEventListener('mousemove', move); window.removeEventListener('mouseup', up);
+      window.removeEventListener('touchmove', move); window.removeEventListener('touchend', up);
+    }
+    function down(e) {
+      startX = e.touches ? e.touches[0].clientX : e.clientX;
+      startW = panel.getBoundingClientRect().width;
+      dragging = true; document.body.classList.add('ai-resizing');
+      window.addEventListener('mousemove', move); window.addEventListener('mouseup', up);
+      window.addEventListener('touchmove', move, { passive: true }); window.addEventListener('touchend', up);
+      e.preventDefault();
+    }
+    handle.addEventListener('mousedown', down);
+    handle.addEventListener('touchstart', down, { passive: false });
+    handle.addEventListener('dblclick', resetWidth);
+  }
+
   /* ── UI ── */
   function build() {
     panel = document.createElement('aside');
     panel.id = 'ai-panel';
     panel.setAttribute('aria-label', 'AI tutor');
     panel.innerHTML =
+      '<div class="ai-resize" title="' + esc(t('拖动调整宽度，双击恢复默认', 'Drag to resize, double-click to reset')) + '"></div>' +
       '<div class="ai-head">' +
         '<span class="ai-title">🤖 <span class="lang-zh">问 AI</span><span class="lang-en">Ask AI</span> ' +
           '<button type="button" class="ai-model" title="' + esc(t('切换模型', 'Switch model')) + '"></button></span>' +
@@ -468,6 +504,7 @@
     scopeSel = panel.querySelector('.ai-scope');
 
     panel.querySelector('.ai-close').addEventListener('click', close);
+    initResize(panel.querySelector('.ai-resize'));
     var menu = panel.querySelector('.ai-model-menu');
     modelLabel.addEventListener('click', function (e) {
       e.stopPropagation();
@@ -932,8 +969,26 @@
   }
 
   /* ── open / close ── */
+  // Sidebar (230) + lesson column (1000) + panel do not fit below ~1700px, so
+  // opening the panel folds the sidebar (it still expands on hover) and closing
+  // restores it — only if we were the ones who folded it.
+  var foldedSidebar = false;
+  function foldSidebar() {
+    var sb = document.getElementById('sidebar');
+    if (!sb || window.innerWidth <= 768 || sb.classList.contains('collapsed')) return;
+    var aiW = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--ai-w')) || 440;
+    if (window.innerWidth - aiW - 230 >= 1000 + 96) return;
+    sb.classList.add('collapsed'); document.body.classList.add('sidebar-collapsed'); foldedSidebar = true;
+  }
+  function unfoldSidebar() {
+    if (!foldedSidebar) return;
+    foldedSidebar = false;
+    var sb = document.getElementById('sidebar');
+    if (sb) { sb.classList.remove('collapsed'); document.body.classList.remove('sidebar-collapsed'); }
+  }
   function open(prefill) {
     if (!panel) build();
+    foldSidebar();
     document.body.classList.add('ai-open');
     panel.removeAttribute('aria-hidden');
     if (prefill) { inputEl.value = prefill; autosize(); }
@@ -942,6 +997,7 @@
   }
   function close() {
     document.body.classList.remove('ai-open');
+    unfoldSidebar();
     if (panel) panel.setAttribute('aria-hidden', 'true');
   }
 
