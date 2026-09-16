@@ -140,12 +140,29 @@ html.theme-dark .ai-model-menu { background: #1f1f2e; }
 #ai-sel-chip[hidden] { display: none; }
 #ai-sel-chip:hover { background: var(--accent); }
 
-/* On wide screens the lesson text slides left so the panel never covers it;
-   the top controls move with it. Narrower screens get an overlay instead. */
-@media (min-width: 1300px) {
-  body.ai-open #content { margin-right: calc(var(--ai-w) + 2rem) !important; }
+/* While the panel is open the lesson column is centred in the space that is
+   left between the sidebar and the panel (it is normally centred in the whole
+   viewport, which would push it under the panel or squash it against it).
+   When that space is narrower than the column's 1000px max width, the column
+   hugs the sidebar and shrinks. The top controls move with the panel. */
+@media (min-width: 1100px) {
+  body.ai-open #content {
+    margin-left: max(calc(var(--sidebar-w) + 1rem), calc((100vw - var(--ai-w) - 1000px) / 2)) !important;
+    margin-right: calc(var(--ai-w) + 1rem) !important;
+    transition: margin-left .25s, margin-right .25s;
+  }
+  body.ai-open.sidebar-collapsed #content {
+    margin-left: max(64px, calc((100vw - var(--ai-w) - 1000px) / 2)) !important;
+  }
   body.ai-open #bottom-controls { right: calc(var(--ai-w) + 1.2rem); }
 }
+/* Drag the panel's left edge to resize; double-click resets. */
+.ai-resize { position: absolute; top: 0; left: -4px; width: 9px; height: 100%; cursor: col-resize; z-index: 2; }
+.ai-resize::after { content: ''; position: absolute; top: 0; bottom: 0; left: 4px; width: 1px; background: transparent; transition: background .15s; }
+.ai-resize:hover::after, body.ai-resizing .ai-resize::after { background: var(--accent); }
+body.ai-resizing { cursor: col-resize; user-select: none; }
+body.ai-resizing #ai-panel, body.ai-resizing #content { transition: none !important; }
+@media (max-width: 1099px) { .ai-resize { display: none; } }
 html.theme-dark #ai-panel { background: #1f1f2e; }
 html.theme-dark .ai-assistant, html.theme-dark .ai-quick, html.theme-dark .ai-input textarea,
 html.theme-dark .ai-settings input, html.theme-dark .ai-settings select { background: #17172a; }
