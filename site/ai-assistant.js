@@ -44,13 +44,13 @@
       hintZh: '在 aistudio.google.com 创建 API key。Flash / Flash-Lite 有免费额度（Flash-Lite 每天更多次），Pro 需付费。', hintEn: 'Create an API key at aistudio.google.com. Flash / Flash-Lite have a free tier (Flash-Lite allows more requests per day); Pro is paid only.' },
     xai: { keyUrl: 'https://console.x.ai/', group: 'intl', name: 'xAI Grok', kind: 'openai', needsKey: true,
       base: 'https://api.x.ai/v1', model: 'grok-4.6', models: ['grok-4.6', 'grok-4.5', 'grok-4.3', 'grok-4.20-0309-reasoning'],
-      hintZh: '在 console.x.ai 创建 API key。', hintEn: 'Create an API key at console.x.ai.' },
+      hintZh: '在 console.x.ai 创建 API key（付费）。这是马斯克的 Grok；免费、秒回的 Groq 是列表里另一项。', hintEn: 'Create an API key at console.x.ai (paid). This is xAI\u2019s Grok; the free, fast Groq is a separate entry in the list.' },
     mistral: { keyUrl: 'https://console.mistral.ai/api-keys', group: 'intl', name: 'Mistral', kind: 'openai', needsKey: true,
       base: 'https://api.mistral.ai/v1', model: 'mistral-medium-latest', models: ['mistral-medium-latest', 'mistral-large-latest', 'mistral-small-latest', 'mistral-medium-3-5', 'mistral-large-2512', 'mistral-small-2603', 'ministral-14b-2512'],
       hintZh: '在 console.mistral.ai 创建 API key。', hintEn: 'Create an API key at console.mistral.ai.' },
-    groq: { keyUrl: 'https://console.groq.com/keys', freeZh: '有免费额度，回答极快', freeEn: 'Free tier, very fast answers', group: 'intl', name: 'Groq', kind: 'openai', needsKey: true,
+    groq: { keyUrl: 'https://console.groq.com/keys', freeZh: '免费、秒回；Google 或 GitHub 账号登录即可，不绑卡', freeEn: 'Free and instant; sign in with Google or GitHub, no card', group: 'intl', name: 'Groq', kind: 'openai', needsKey: true,
       base: 'https://api.groq.com/openai/v1', model: 'openai/gpt-oss-120b', models: ['openai/gpt-oss-120b', 'qwen/qwen3.8-27b', 'openai/gpt-oss-20b', 'groq/compound', 'groq/compound-mini'],
-      hintZh: '在 console.groq.com 创建 API key（速度快，有免费额度）。', hintEn: 'Create an API key at console.groq.com (fast, free tier available).' },
+      hintZh: '在 console.groq.com 创建 API key（Google / GitHub 登录即可）。免费档每分钟 8000 token，整课提问一次约 5–6k，所以约一分钟一问；把 📎 范围缩到某一节就能连续提问。注意：这不是马斯克的 xAI Grok。', hintEn: 'Create an API key at console.groq.com (sign in with Google / GitHub). The free tier allows 8,000 tokens per minute and a whole-lesson question uses 5–6k, so about one question a minute; narrow the 📎 scope to one grammar point to ask continuously. Not to be confused with xAI\u2019s Grok.' },
 
     deepseek: { keyUrl: 'https://platform.deepseek.com/api_keys', freeZh: '便宜好用，需充值（几元够用很久）', freeEn: 'Cheap and good; needs a small top-up', group: 'cn', name: 'DeepSeek', kind: 'openai', needsKey: true,
       base: 'https://api.deepseek.com/v1', model: 'deepseek-v4-pro', models: ['deepseek-v4-pro', 'deepseek-flash'],
@@ -98,7 +98,7 @@
   };
 
   var GROUPS = [['intl', '国际 / International'], ['cn', '国内 / China'], ['local', '本地 / Local'], ['relay', '聚合与自定义 / Relays & custom']];
-  var RECOMMEND = { zh: ['siliconflow', 'zhipu', 'deepseek'], en: ['gemini', 'groq', 'openrouter'] };
+  var RECOMMEND = { zh: ['groq', 'zhipu', 'siliconflow'], en: ['groq', 'gemini', 'openrouter'] };
 
   /* ── config (several providers, one active) ── */
   // cfg.session = true → stored in sessionStorage (gone when the tab closes).
@@ -159,6 +159,7 @@
   function isLocalUrl(url) { return /^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?(\/|$)/i.test(url); }
   var SOURCE_URL = 'https://github.com/Ralphbupt/japanese-grammar/blob/main/site/ai-assistant.js';
   var PRIVACY_URL = '/about/#ai-privacy';
+  var GUIDE_URL = '/about/#ai-setup';
 
   /* ── history (per lesson, survives tab close) ── */
   function loadHist() {
@@ -204,7 +205,9 @@
    * numbered grammar point (index into sections()). Selecting text inside a
    * grammar point narrows the scope to it automatically; the 📎 row above the
    * input shows the current choice and lets the reader change it. */
-  var scope = -1, sectionCache = null;
+  // scope: -2 = auto (the grammar point currently on screen; whole lesson when
+  // none is), -1 = whole lesson, n = section index.
+  var scope = -2, sectionCache = null;
   function headingText(h) {
     var s = h.querySelector(isEn() ? '.lang-en' : '.lang-zh');
     return (s || h).textContent.trim();
@@ -242,16 +245,24 @@
     var txt = (root.textContent || '').replace(/[ \t]+\n/g, '\n').replace(/\n{3,}/g, '\n\n').trim();
     return txt.length > MAX_CONTEXT_CHARS ? txt.slice(0, MAX_CONTEXT_CHARS) + '\n…(truncated)' : txt;
   }
+  // The section whose heading is the last one above the upper third of the
+  // viewport, i.e. what the reader is looking at. -1 above the first heading.
+  function autoSection() {
+    var secs = sections(), y = window.innerHeight * 0.35, best = -1;
+    for (var i = 0; i < secs.length; i++) if (secs[i].h.getBoundingClientRect().top <= y) best = i; else break;
+    return best;
+  }
+  function effectiveScope() { return scope === -2 ? autoSection() : scope; }
   var wholeCache = null;
   function wholeText() {
     if (wholeCache === null || wholeCache.en !== isEn()) wholeCache = { en: isEn(), txt: textOf(article.cloneNode(true)) };
     return wholeCache.txt;
   }
-  function contextText() {
-    if (scope < 0 || !sections()[scope]) return wholeText();
+  function contextText(sc) {
+    if (sc < 0 || !sections()[sc]) return wholeText();
     var box = document.createElement('div'), h1 = article.querySelector('h1');
     if (h1) box.appendChild(h1.cloneNode(true));
-    sections()[scope].nodes.forEach(function (n) { box.appendChild(n.cloneNode(true)); });
+    sections()[sc].nodes.forEach(function (n) { box.appendChild(n.cloneNode(true)); });
     return textOf(box);
   }
   function contextChars(i) {
@@ -302,16 +313,16 @@
     if (e === 'high') return isEn() ? ' Feel free to go deep: more examples, side-by-side comparisons with similar grammar, and common mistakes.' : ' 可以详细展开：多给例句，和相近语法对比辨析，并指出易错点。';
     return '';
   }
-  function systemPrompt() {
-    var ctx = contextText(), scoped = scope >= 0 && sections()[scope];
+  function systemPrompt(sc) {
+    var ctx = contextText(sc), scoped = sc >= 0 && sections()[sc];
     if (!isEn()) {
       return '你是一位日语语法老师，正在辅导一位备考 JLPT 的中文母语学习者。学习者此刻正在阅读' +
-        (scoped ? '下面这一课中「' + sectionTitle(scope) + '」这一节' : '下面这一课的笔记') + '（网址 ' + location.href + '）。' +
+        (scoped ? '下面这一课中「' + sectionTitle(sc) + '」这一节' : '下面这一课的笔记') + '（网址 ' + location.href + '）。' +
         '请优先基于笔记内容回答；补充笔记之外的知识时请说明。回答用中文。日语例句里的汉字请紧跟全角括号标注假名读音，格式如「雨（あめ）に降（ふ）られた」，并附中文翻译。回答简洁、多用例句、少说套话。' + effortPrompt(cfg) +
         '\n\n<lesson>\n' + ctx + '\n</lesson>';
     }
     return 'You are a Japanese grammar tutor helping a JLPT learner. The learner is currently reading ' +
-      (scoped ? 'the section "' + sectionTitle(scope) + '" of the lesson notes below' : 'the lesson notes below') + ' (' + location.href + '). ' +
+      (scoped ? 'the section "' + sectionTitle(sc) + '" of the lesson notes below' : 'the lesson notes below') + ' (' + location.href + '). ' +
       'Answer primarily from the notes and say so when you add outside knowledge. Reply in English. In Japanese examples, put the kana reading right after each kanji word in full-width parentheses, e.g. 雨（あめ）に降（ふ）られた, and add an English translation. Be concise, example-heavy, no filler.' + effortPrompt(cfg) +
       '\n\n<lesson>\n' + ctx + '\n</lesson>';
   }
@@ -576,6 +587,9 @@
       if (e.key === 'Enter' && !e.shiftKey && !e.isComposing) { e.preventDefault(); if (!busy) send(inputEl.value); }
     });
     inputEl.addEventListener('input', function () { autosize(); if (!inputEl.value.trim()) pendingSource = 'typed'; });
+    panel.addEventListener('mouseenter', refreshAuto);
+    inputEl.addEventListener('focus', refreshAuto);
+    scopeSel.addEventListener('mousedown', refreshAuto);
     scopeSel.addEventListener('change', function () { scope = +scopeSel.value; track('ai_scope', { scope: scope < 0 ? 'lesson' : 'section', via: 'select' }); renderScope(); });
     msgsEl.addEventListener('click', function (e) {
       var b = e.target.closest && e.target.closest('button');
@@ -590,16 +604,36 @@
   }
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && panel && document.body.classList.contains('ai-open') && !settingsEl.contains(document.activeElement)) close(); });
 
+  function autoLabel() {
+    var a = autoSection();
+    return t('跟随阅读位置 · 现在是', 'follow my reading · now') + (a >= 0 ? ' ' + sectionTitle(a) + ' · ~' + kChars(contextChars(a)) : t(' 整课 · 约 ', ' whole lesson · ~') + kChars(contextChars(-1)));
+  }
   function renderScope() {
     if (!scopeSel) return;
     var secs = sections();
-    scopeSel.innerHTML = '<option value="-1">' + esc(t('整课 · 约 ', 'whole lesson · ~') + kChars(contextChars(-1)) + t(' 字', ' chars')) + '</option>' +
+    scopeSel.innerHTML = '<option value="-2">' + esc(autoLabel()) + '</option>' +
+      '<option value="-1">' + esc(t('整课 · 约 ', 'whole lesson · ~') + kChars(contextChars(-1)) + t(' 字', ' chars')) + '</option>' +
       secs.map(function (s, i) { return '<option value="' + i + '">' + esc(t('仅 ', 'only ') + sectionTitle(i) + ' · ~' + kChars(contextChars(i))) + '</option>'; }).join('');
-    if (scope >= secs.length) scope = -1;
+    if (scope >= secs.length) scope = -2;
     scopeSel.value = String(scope);
     scopeSel.classList.toggle('ai-scope-narrow', scope >= 0);
-    inputEl.placeholder = scope >= 0 ? t('问关于「' + sectionTitle(scope) + '」的问题…', 'Ask about "' + sectionTitle(scope) + '"…') : t('问关于这一课的任何问题…', 'Ask anything about this lesson…');
+    var sc = effectiveScope();
+    inputEl.placeholder = sc >= 0 ? t('问关于「' + sectionTitle(sc) + '」的问题…', 'Ask about "' + sectionTitle(sc) + '"…') : t('问关于这一课的任何问题…', 'Ask anything about this lesson…');
   }
+  // Keep the "follow my reading" label current: on scroll, and again whenever
+  // the reader comes back to the panel (scroll events can be throttled).
+  function refreshAuto() {
+    if (scope !== -2 || !scopeSel) return;
+    scopeSel.options[0].text = autoLabel();
+    var sc = effectiveScope();
+    inputEl.placeholder = sc >= 0 ? t('问关于「' + sectionTitle(sc) + '」的问题…', 'Ask about "' + sectionTitle(sc) + '"…') : t('问关于这一课的任何问题…', 'Ask anything about this lesson…');
+  }
+  var scrollTimer = 0;
+  window.addEventListener('scroll', function () {
+    if (!document.body.classList.contains('ai-open')) return;
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(refreshAuto, 250);
+  }, { passive: true });
 
   // Every label is produced by t() at render time, so when the reader flips
   // 中/EN we rebuild the panel in the new language, keeping the open state,
@@ -640,6 +674,12 @@
       return;
     }
     history.forEach(function (m, i) { appendMsg(m.role, m.content, i === history.length - 1); });
+    if (history[history.length - 1].role === 'user') {
+      var un = document.createElement('div');
+      un.className = 'ai-msg ai-error';
+      un.innerHTML = '<p>' + esc(t('上一个问题没有收到回答。', 'The last question got no answer.')) + '</p><div class="ai-actions"><button type="button" class="ai-retry">↻ ' + esc(t('重试', 'Retry')) + '</button></div>';
+      msgsEl.appendChild(un);
+    }
     scrollBottom();
   }
   function appendMsg(role, content, last) {
@@ -674,6 +714,10 @@
         : t('（网络错误：通常是服务商不允许浏览器直连 (CORS)、base URL 写错，或网络不通。可改用 OpenRouter / 硅基流动等中转。）', '(Network error: usually the provider blocks browser calls (CORS), the base URL is wrong, or you are offline. A relay like OpenRouter works around CORS.)');
     } else if (/401|403|authentication|invalid.*key/i.test(msg)) {
       hint = t('（请检查 API key。）', '(Check your API key.)');
+    } else if (/^HTTP 429|rate limit|too many requests/i.test(msg)) {
+      var w = msg.match(/try again in ([\d.]+)\s*(ms|s|m)\b/i), secs = w ? Math.ceil(+w[1] * (w[2] === 'ms' ? 0.001 : w[2] === 'm' ? 60 : 1)) : 0;
+      hint = t('（请求太频繁或超出本分钟的免费额度' + (secs ? '，约 ' + secs + ' 秒后可再试' : '') + '。把下方 📎 范围缩小到某一节，每次发送的字数会少很多。）',
+        '(Too many requests, or this minute\u2019s free quota is used up' + (secs ? '; try again in about ' + secs + ' s' : '') + '. Narrowing the 📎 scope below to one grammar point sends far fewer tokens each time.)');
     } else if (/HTTP 402|insufficient|balance|quota|billing/i.test(msg)) {
       hint = t('（账户余额或额度不足。）', '(Out of credit or quota on this account.)');
     } else if (/^HTTP 404/.test(msg) && p && p.group === 'local') {
@@ -739,9 +783,10 @@
       if (!raf) raf = requestAnimationFrame(function () { raf = 0; render(); scrollBottom(); });
     }
     var msgs = history.slice(-SEND_TURNS * 2).map(function (m) { return { role: m.role, content: m.content }; });
-    var sys = systemPrompt();
+    var sc = source === 'quick' ? -1 : effectiveScope();
+    var sys = systemPrompt(sc);
     var call = prov.kind === 'anthropic' ? callAnthropic : callOpenAI;
-    track('ai_ask', { source: source, turn: Math.ceil(history.length / 2), lesson_chars: sys.length, scope: scope < 0 ? 'lesson' : 'section' });
+    track('ai_ask', { source: source, turn: Math.ceil(history.length / 2), lesson_chars: sys.length, scope: scope === -2 ? 'auto' : scope < 0 ? 'lesson' : 'section' });
     call(c, sys, msgs, onDelta, abort.signal).then(function () {
       track('ai_answer', { source: source, ms: Date.now() - t0, chars: reply.length });
     }, function (e) {
@@ -780,7 +825,7 @@
             return '<button type="button" class="ai-wiz-card" data-p="' + k + '"><b>' + esc(p.name) + '</b><span>' + esc(isEn() ? p.freeEn : p.freeZh) + '</span></button>';
           }).join('') + '</div>' +
           '<button type="button" class="ai-wiz-more">' + esc(t('其他服务商 / 本地 Ollama / OpenAI / Claude…', 'Other providers / local Ollama / OpenAI / Claude…')) + '</button>' +
-          '<p class="ai-wiz-priv"><a href="' + PRIVACY_URL + '" target="_blank" rel="noopener">' + esc(t('隐私说明', 'Privacy')) + '</a> · <a href="' + SOURCE_URL + '" target="_blank" rel="noopener">' + esc(t('源码', 'Source')) + '</a></p>' +
+          '<p class="ai-wiz-priv"><a href="' + GUIDE_URL + '" target="_blank" rel="noopener">' + esc(t('图文设置指南', 'Setup guide')) + '</a> · <a href="' + PRIVACY_URL + '" target="_blank" rel="noopener">' + esc(t('隐私说明', 'Privacy')) + '</a> · <a href="' + SOURCE_URL + '" target="_blank" rel="noopener">' + esc(t('源码', 'Source')) + '</a></p>' +
         '</div>';
       msgsEl.querySelector('.ai-wiz-cards').addEventListener('click', function (e) {
         var b = e.target.closest('.ai-wiz-card'); if (!b) return;
@@ -1010,6 +1055,7 @@
     if (!panel) build();
     foldSidebar();
     document.body.classList.add('ai-open');
+    refreshAuto();
     panel.removeAttribute('aria-hidden');
     if (prefill) { inputEl.value = prefill; autosize(); }
     if (cfg) setTimeout(function () { inputEl.focus(); inputEl.selectionStart = inputEl.selectionEnd = inputEl.value.length; }, 260);
