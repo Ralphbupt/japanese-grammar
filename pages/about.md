@@ -124,6 +124,58 @@ Tech stack:
 Pure **static site** — no backend, no database, no cookies. Every push to main triggers a GitHub Actions build and deploy.
 :::
 
+<a id="ai-setup"></a>
+
+## 「问 AI」两分钟上手||"Ask AI" in two minutes
+
+:::zh
+课程页右上角的 🤖 按钮会打开一个侧栏，AI 已经读过这一课，可以直接问；在正文里选中一句例句再点「问 AI」，它会针对那一节回答。它需要你自己的一个模型服务商 API key，推荐 **Groq**：免费、不用绑卡、回答基本秒出。
+
+1. 打开 [console.groq.com/keys](https://console.groq.com/keys)，用 Google 或 GitHub 账号登录。
+2. 点 **Create API Key**，起个名字，复制生成的 key（以 `gsk_` 开头）。
+3. 回到任意课程页，点右上 🤖，选「Groq」，粘贴 key，点「连接并开始」。
+
+注意别选成 **xAI Grok**，那是马斯克家的付费模型，名字只差一个字母。
+
+**其他免费选择**
+
+- 在国内：**智谱 GLM** 的 glm-4.7-flash 永久免费、不限量，在 [open.bigmodel.cn](https://open.bigmodel.cn/usercenter/proj-mgmt/apikeys) 创建 key。
+- **Google Gemini**：Flash 系列有免费额度，在 [aistudio.google.com](https://aistudio.google.com/apikey) 创建 key。
+- 完全不出本机：装 [Ollama](https://ollama.com)，`ollama pull qwen3:14b`，然后按设置里的提示用 `OLLAMA_ORIGINS=https://jpnotes.dev ollama serve` 启动。本地 14B 模型一个问题要等 30 秒左右，设置里选「快速」可以跳过思考。
+
+**常见问题**
+
+- *提示 429 / rate limit*：Groq 免费档每分钟 8000 token，整课提问一次要 5–6k，所以约一分钟只能问一次。输入框上方的 📎 默认「跟随阅读位置」，只发送你正在看的那一节，字数少得多；也可以手动选某一节。
+- *提示 Failed to fetch*：服务商不允许浏览器直连，或本地 Ollama 没有带 OLLAMA_ORIGINS 启动。换 Groq / OpenRouter 这类明确支持浏览器直连的服务商即可。
+- *换服务商或模型*：点侧栏标题里的模型名，已配置的几家都在菜单里，随时切换；「思考深度」三档也在那里。
+
+密钥只存在你的浏览器里，本站没有服务器，详见下面的隐私说明。
+:::
+
+:::en
+The 🤖 button on every lesson page opens a side panel; the AI has already read the lesson, so just ask. Select an example sentence in the text and click "Ask AI" to ask about that grammar point specifically. It needs your own API key from a model provider. **Groq** is the easy choice: free, no card, answers in about a second.
+
+1. Open [console.groq.com/keys](https://console.groq.com/keys) and sign in with Google or GitHub.
+2. Click **Create API Key**, give it a name and copy the key (it starts with `gsk_`).
+3. Back on any lesson page, click 🤖, pick "Groq", paste the key and click "Connect and start".
+
+Do not pick **xAI Grok** by mistake; that is Elon Musk’s paid model, one letter apart.
+
+**Other free options**
+
+- **Google Gemini**: the Flash models have a free tier; create a key at [aistudio.google.com](https://aistudio.google.com/apikey).
+- **OpenRouter**: one key for every model; models ending in `:free` cost nothing (50 requests a day).
+- Fully local: install [Ollama](https://ollama.com), run `ollama pull qwen3:14b`, then start it as the settings hint says with `OLLAMA_ORIGINS=https://jpnotes.dev ollama serve`. A local 14B model takes about 30 s per question; the Quick setting skips its thinking phase.
+
+**Troubleshooting**
+
+- *429 / rate limit*: Groq’s free tier allows 8,000 tokens a minute and a whole-lesson question uses 5–6k, so roughly one question per minute. The 📎 selector above the input defaults to "follow my reading", which sends only the grammar point on screen and uses far fewer tokens; you can also pick a section by hand.
+- *Failed to fetch*: the provider blocks browser calls, or local Ollama was started without OLLAMA_ORIGINS. Switch to a provider that supports browser calls, such as Groq or OpenRouter.
+- *Switching providers or models*: click the model name in the panel header; every provider you have configured is in that menu, along with the three thinking-depth settings.
+
+Your key never leaves your browser; this site has no server. See the privacy section below.
+:::
+
 <a id="ai-privacy"></a>
 
 ## 「问 AI」功能的隐私与安全||"Ask AI" privacy & security
