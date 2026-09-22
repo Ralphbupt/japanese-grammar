@@ -1,8 +1,11 @@
 /* ─── AI tutor side panel (问 AI / Ask AI) ─── */
 :root { --ai-w: 440px; }
 @media (min-width: 1800px) { :root { --ai-w: 500px; } }
-#ai-btn { background: none; border: none; color: inherit; font-size: 1.05rem; cursor: pointer; padding: 0; line-height: 1; }
-body.ai-open #ai-btn { filter: drop-shadow(0 0 3px var(--accent)); }
+body.ai-open #ai-btn {
+  color: var(--accent);
+  background: rgba(233,69,96,.15);
+  filter: drop-shadow(0 0 3px var(--accent));
+}
 
 #ai-panel {
   position: fixed; top: 0; right: 0; height: 100vh; height: 100dvh;
@@ -152,9 +155,8 @@ html.theme-dark .ai-model-menu { background: #1f1f2e; }
     transition: margin-left .25s, margin-right .25s;
   }
   body.ai-open.sidebar-collapsed #content {
-    margin-left: max(64px, calc((100vw - var(--ai-w) - 1000px) / 2)) !important;
+    margin-left: max(0px, calc((100vw - var(--ai-w) - 1000px) / 2)) !important;
   }
-  body.ai-open #bottom-controls { right: calc(var(--ai-w) + 1.2rem); }
 }
 /* Drag the panel's left edge to resize; double-click resets. */
 .ai-resize { position: absolute; top: 0; left: -4px; width: 9px; height: 100%; cursor: col-resize; z-index: 2; }
