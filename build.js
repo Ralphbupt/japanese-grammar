@@ -51,6 +51,8 @@ const GISCUS_SCRIPT = `<script src="https://giscus.app/client.js"
 const AI_CSS = fs.readFileSync(path.join(__dirname, "site", "ai-assistant.css"), "utf-8");
 const AI_JS_HASH = require("crypto").createHash("md5").update(fs.readFileSync(path.join(__dirname, "site", "ai-assistant.js"))).digest("hex").slice(0, 8);
 const AI_SCRIPT = `<script src="${SITE_PATH}ai-assistant.js?v=${AI_JS_HASH}" defer></script>`;  // ?v= busts browser caches on every change
+const SETTINGS_JS_HASH = require("crypto").createHash("md5").update(fs.readFileSync(path.join(__dirname, "site", "settings-modal.js"))).digest("hex").slice(0, 8);
+const SETTINGS_SCRIPT = `<script src="${SITE_PATH}settings-modal.js?v=${SETTINGS_JS_HASH}" defer></script>`;
 // Content-Security-Policy connect-src allowlist. This is the technical
 // guarantee behind the "your key never leaves your browser except to the
 // provider you picked" promise: the browser itself refuses fetch/XHR/beacon
@@ -131,6 +133,39 @@ const LANG_PREF_JS = `(function(){
     });
   }
 })();`;
+
+// Apply saved furigana + language prefs without toggle UI (non-settings pages).
+const APP_PREFS_JS = `(function(){
+  var STORE_KEY = 'jp_grammar_prefs';
+  function loadPrefs() { try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch(e) { return {}; } }
+  var prefs = loadPrefs();
+  if (prefs.hideRuby) document.body.classList.add('hide-ruby');
+  var isEn = ('isEn' in prefs) ? prefs.isEn : !/^zh/i.test(navigator.language || '');
+  if (isEn) document.body.classList.add('lang-en');
+})();`;
+
+const RUBY_PREF_JS = `(function(){
+  var rubyToggle = document.getElementById('ruby-toggle');
+  if (!rubyToggle) return;
+  var STORE_KEY = 'jp_grammar_prefs';
+  function loadPrefs() { try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch(e) { return {}; } }
+  function savePrefs(patch) { var p = loadPrefs(); for (var k in patch) p[k] = patch[k]; localStorage.setItem(STORE_KEY, JSON.stringify(p)); }
+  var prefs = loadPrefs();
+  if (prefs.hideRuby) { rubyToggle.checked = false; document.body.classList.add('hide-ruby'); }
+  rubyToggle.addEventListener('change', function(){
+    var hide = !this.checked;
+    document.body.classList.toggle('hide-ruby', hide);
+    savePrefs({ hideRuby: hide });
+    if (window.gaEvent) window.gaEvent('furigana_toggle', { visible: !hide });
+  });
+})();`;
+
+function loadIcon(file) {
+  return fs.readFileSync(path.join(__dirname, "assets/icons", file), "utf-8")
+    .replace(/\s*class="[^"]*"/g, "")
+    .replace(/\s*width="24"/g, "")
+    .replace(/\s*height="24"/g, "");
+}
 
 // TTS (Text-to-Speech) for Japanese example sentences. Adds a small 🔊
 // button to every data-ja <li> element. Click reads the Japanese text
@@ -1324,10 +1359,10 @@ async function main() {
   }
 
   // ─── Site search (command palette) ───
-  // A 🔍 button (injected into #bottom-controls on every page) and the "/"
-  // shortcut open a modal that lazy-fetches search-index.json and filters
-  // lessons by title / grammar-point term / level. Self-contained; relies
-  // only on window.gaEvent (optional) and the prebuilt index.
+  // The #search-btn in the sidebar toolbar and the "/" shortcut open a modal
+  // that lazy-fetches search-index.json and filters lessons by title /
+  // grammar-point term / level. Self-contained; relies only on window.gaEvent
+  // (optional) and the prebuilt index.
   const SEARCH_JS = `<script>
 (function() {
   var PATH = ${JSON.stringify(SITE_PATH)};
@@ -1398,6 +1433,7 @@ async function main() {
     else if (e.key === 'Enter') { var as = results.querySelectorAll('a'); var a = sel >= 0 ? as[sel] : as[0]; if (a) location.href = a.href; }
   }
   function open() {
+    if (window.jpnotesCloseSettings) window.jpnotesCloseSettings();
     if (!overlay) buildUI();
     ensureIndex();
     overlay.hidden = false;
@@ -1410,27 +1446,32 @@ async function main() {
   document.addEventListener('keydown', function(e) {
     if (e.key === '/' && !/^(input|textarea|select)$/i.test(e.target.tagName || '') && !e.target.isContentEditable) { e.preventDefault(); open(); }
   });
-  function addBtn() {
-    var host = document.getElementById('bottom-controls');
-    if (!host) return;
-    var b = document.createElement('button');
-    b.id = 'search-btn'; b.type = 'button';
-    b.setAttribute('aria-label', '搜索 / Search'); b.title = '搜索 / Search ( / )';
-    b.textContent = '🔍';
+  function bindBtn() {
+    var b = document.getElementById('search-btn');
+    if (!b) return;
     b.addEventListener('click', open);
-    host.insertBefore(b, host.firstChild);
   }
-  if (document.readyState !== 'loading') addBtn();
-  else document.addEventListener('DOMContentLoaded', addBtn);
+  if (document.readyState !== 'loading') bindBtn();
+  else document.addEventListener('DOMContentLoaded', bindBtn);
 })();
 </script>`;
+
+  const ICON_SIDEBAR = loadIcon("sidebar.svg");
+  const ICON_SEARCH = loadIcon("search.svg");
+  const ICON_CHAT = loadIcon("chat.svg");
+  const ICON_SETTINGS = loadIcon("settings.svg");
 
   // ─── Shared sidebar markup ───
   // Used on home, lesson, and level pages so the directory is reachable
   // from anywhere. Sidebar links are root-relative so they work from any
   // subpath (e.g. clicking from /day01/ correctly navigates to /day05/).
-  const sidebarMarkupHtml = `<button id="menu-toggle" aria-label="Toggle menu">☰</button>
-<nav id="sidebar" class="collapsed">
+  const sidebarMarkupHtml = `<nav id="sidebar" class="collapsed">
+  <div class="nav-tools">
+    <button id="menu-toggle" type="button" class="nav-tool-btn" aria-label="显示/收起侧栏 / Toggle sidebar" title="显示/收起侧栏 / Toggle sidebar">${ICON_SIDEBAR}</button>
+    <button id="search-btn" type="button" class="nav-tool-btn nav-tool-extra" aria-label="搜索 / Search" title="搜索 / Search ( / )">${ICON_SEARCH}</button>
+    <button id="ai-btn" type="button" class="nav-tool-btn nav-tool-extra nav-tool-ai" aria-label="问 AI / Ask AI" title="问 AI / Ask AI">${ICON_CHAT}</button>
+    <button id="settings-btn" type="button" class="nav-tool-btn nav-tool-extra" aria-label="设置 / Settings" title="设置 / Settings">${ICON_SETTINGS}</button>
+  </div>
   <div class="nav-scroll">
   <div class="nav-header"><a href="${SITE_PATH}" style="color:inherit;text-decoration:none;">日语语法笔记</a></div>
   ${sidebarHtml.join("\n  ")}
@@ -1491,18 +1532,13 @@ async function main() {
     if (btn) btn.addEventListener('click', function(){ setExpanded(w, !w.classList.contains('expanded')); });
   });
 
-  // Menu toggle: pin open on desktop / slide-in on mobile. Sole owner across
-  // every page (the home page's SPA script no longer binds this).
+  // Menu toggle: expand/collapse sidebar + toolbar (same on desktop and mobile).
   var toggle = document.getElementById('menu-toggle');
   if (toggle) toggle.addEventListener('click', function(){
-    if (window.innerWidth > 768) {
-      var collapse = !sidebar.classList.contains('collapsed');
-      sidebar.classList.toggle('collapsed', collapse);
-      document.body.classList.toggle('sidebar-collapsed', collapse);
-      try { localStorage.setItem('sb', collapse ? '1' : '0'); } catch (e) {}
-    } else {
-      sidebar.classList.toggle('open');
-    }
+    var collapse = !sidebar.classList.contains('collapsed');
+    sidebar.classList.toggle('collapsed', collapse);
+    document.body.classList.toggle('sidebar-collapsed', collapse);
+    try { localStorage.setItem('sb', collapse ? '1' : '0'); } catch (e) {}
   });
 
   // Center the active item so the user lands on their place in a long list.
@@ -1520,7 +1556,8 @@ async function main() {
 })();
 ${TTS_JS}
 </script>
-${SEARCH_JS}`;
+${SEARCH_JS}
+${SETTINGS_SCRIPT}`;
 
   // ─── Home page main content ───
   // Don't inline every lesson article into index.html (3.98MB → ~50KB).
@@ -1686,16 +1723,8 @@ ${sidebarMarkupHtml}
   ${homeMainHtml}
 </main>
 <nav id="toc-panel"></nav>
-<div id="bottom-controls">
-  ${THEME_TOGGLE_HTML}
-  <div id="furigana-toggle">
-    <label><input type="checkbox" id="ruby-toggle" checked> <span class="lang-zh">显示读音</span><span class="lang-en">Furigana</span></label>
-  </div>
-  <div id="lang-toggle">
-    <button id="lang-btn">EN</button>
-  </div>
-</div>
 <script>
+${APP_PREFS_JS}
 ${JS}
 </script>
 </body>
@@ -1724,6 +1753,7 @@ ${JS}
   );
   console.log(`  Wrote search-index.json (${searchPoints.length} grammar points).`);
   fs.copyFileSync(path.join(__dirname, "site", "ai-assistant.js"), path.join(__dirname, "dist", "ai-assistant.js"));
+  fs.copyFileSync(path.join(__dirname, "site", "settings-modal.js"), path.join(__dirname, "dist", "settings-modal.js"));
 
   // ─── Generate individual lesson pages ───
   for (let li = 0; li < lessonPages.length; li++) {
@@ -1918,31 +1948,10 @@ ${sidebarMarkupHtml}
   </section>
 </main>
 ${AI_SCRIPT}
-<div id="bottom-controls">
-  ${THEME_TOGGLE_HTML}
-  <div id="furigana-toggle">
-    <label><input type="checkbox" id="ruby-toggle" checked> <span class="lang-zh">显示读音</span><span class="lang-en">Furigana</span></label>
-  </div>
-  <div id="lang-toggle">
-    <button id="lang-btn">EN</button>
-  </div>
-</div>
 <script>
-${THEME_TOGGLE_JS}
+${APP_PREFS_JS}
 (function(){
-  var rubyToggle = document.getElementById('ruby-toggle');
-  var langBtn = document.getElementById('lang-btn');
-  var STORE_KEY = 'jp_grammar_prefs';
-  function loadPrefs() { try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch(e) { return {}; } }
-  function savePrefs(patch) { var p = loadPrefs(); for (var k in patch) p[k] = patch[k]; localStorage.setItem(STORE_KEY, JSON.stringify(p)); }
-  var prefs = loadPrefs();
-  if (prefs.hideRuby) { rubyToggle.checked = false; document.body.classList.add('hide-ruby'); }
-  var isEn = ('isEn' in prefs) ? prefs.isEn : !/^zh/i.test(navigator.language || '');
-  if (isEn) { document.body.classList.add('lang-en'); langBtn.textContent = '中文'; }
-  rubyToggle.addEventListener('change', function(){ var hide = !this.checked; document.body.classList.toggle('hide-ruby', hide); savePrefs({ hideRuby: hide }); if (window.gaEvent) window.gaEvent('furigana_toggle', { visible: !hide }); });
-  langBtn.addEventListener('click', function(){ isEn = !isEn; document.body.classList.toggle('lang-en', isEn); langBtn.textContent = isEn ? '中文' : 'EN'; savePrefs({ isEn: isEn }); if (window.gaEvent) window.gaEvent('language_toggle', { to: isEn ? 'en' : 'zh' }); });
-  // Learning-progression events: prev/next lesson + cross-link clicks. These
-  // capture real reading/exploration behavior, unlike the toggle events above.
+  // Learning-progression events: prev/next lesson + cross-link clicks.
   document.addEventListener('click', function(e) {
     var prev = e.target.closest && e.target.closest('.pn-prev');
     var next = e.target.closest && e.target.closest('.pn-next');
@@ -2117,9 +2126,8 @@ ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 <style>
 ${CSS}
-/* Keep sidebar (pure-CSS hover navigation) + theme toggle; hide other JS-dependent chrome. */
+/* Keep sidebar (pure-CSS hover navigation); hide other JS-dependent chrome. */
 #toc-panel { display: none !important; }
-#bottom-controls #furigana-toggle { display: none !important; }
 #content { margin: 0 auto !important; max-width: 1100px; padding: 2rem 1.5rem 4rem; }
 .breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 1rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
@@ -2173,15 +2181,8 @@ ${sidebarMarkupHtml}
   <div class="overview-grid">${cardsHtml}</div>
   ${tableHtml}
 </main>
-<div id="bottom-controls">
-  ${THEME_TOGGLE_HTML}
-  <div id="lang-toggle">
-    <button id="lang-btn">EN</button>
-  </div>
-</div>
 <script>
-${THEME_TOGGLE_JS}
-${LANG_PREF_JS}
+${APP_PREFS_JS}
 </script>
 </body>
 </html>`;
@@ -2271,8 +2272,8 @@ ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 <style>
 ${CSS}
-/* Keep sidebar (pure-CSS hover) + lang toggle; hide other JS-dependent chrome. */
-#toc-panel, #furigana-toggle { display: none !important; }
+/* Keep sidebar (pure-CSS hover); hide other JS-dependent chrome. */
+#toc-panel { display: none !important; }
 #content { margin: 0 auto !important; max-width: 800px; padding: 2rem 2rem 4rem; }
 .breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 1rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
@@ -2307,24 +2308,8 @@ ${sidebarMarkupHtml}
   </nav>
   <article class="about-content">${aboutHtml}</article>
 </main>
-<div id="bottom-controls">
-  ${THEME_TOGGLE_HTML}
-  <div id="lang-toggle">
-    <button id="lang-btn">EN</button>
-  </div>
-</div>
 <script>
-${THEME_TOGGLE_JS}
-(function(){
-  var langBtn = document.getElementById('lang-btn');
-  var STORE_KEY = 'jp_grammar_prefs';
-  function loadPrefs() { try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch(e) { return {}; } }
-  function savePrefs(patch) { var p = loadPrefs(); for (var k in patch) p[k] = patch[k]; localStorage.setItem(STORE_KEY, JSON.stringify(p)); }
-  var prefs = loadPrefs();
-  var isEn = ('isEn' in prefs) ? prefs.isEn : !/^zh/i.test(navigator.language || '');
-  if (isEn) { document.body.classList.add('lang-en'); langBtn.textContent = '中文'; }
-  langBtn.addEventListener('click', function(){ isEn = !isEn; document.body.classList.toggle('lang-en', isEn); langBtn.textContent = isEn ? '中文' : 'EN'; savePrefs({ isEn: isEn }); if (window.gaEvent) window.gaEvent('language_toggle', { to: isEn ? 'en' : 'zh' }); });
-})();
+${APP_PREFS_JS}
 </script>
 </body>
 </html>`;
@@ -2333,7 +2318,25 @@ ${THEME_TOGGLE_JS}
     console.log("  Generated dist/about/index.html");
   }
 
-  // ─── Redirect stubs for old /dayNN/ URLs ───
+  // Settings used to be a standalone page; it is now a modal on every page.
+  const settingsStubDir = path.join(__dirname, "dist", "settings");
+  fs.mkdirSync(settingsStubDir, { recursive: true });
+  fs.writeFileSync(path.join(settingsStubDir, "index.html"), `<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="0;url=${SITE}">
+<link rel="canonical" href="${SITE}">
+<meta name="robots" content="noindex">
+<title>设置已移至弹窗 — ${SITE}</title>
+</head>
+<body>
+<p>设置已改为页面内弹窗，正在跳转到 <a href="${SITE}">首页</a>…</p>
+<script>location.replace(${JSON.stringify(SITE)})</script>
+</body>
+</html>`, "utf-8");
+
+  // After renaming day → lesson, previously-indexed /dayNN/ URLs would 404.
   // After renaming day → lesson, previously-indexed /dayNN/ URLs would 404.
   // Generate a tiny page at each /dayNN/ that meta-refreshes to /lessonNN/.
   // Google's docs explicitly call <meta http-equiv="refresh" content="0;url=">
@@ -2646,8 +2649,12 @@ const CSS = `
 :root {
   --sidebar-w: 230px;
   --bg: #fafaf8;
-  --sidebar-bg: #1a1a2e;
-  --sidebar-text: #c8c8d8;
+  --sidebar-bg: #fff;
+  --sidebar-text: #5a5a6a;
+  --sidebar-heading: var(--text-strong);
+  --sidebar-border: var(--border);
+  --sidebar-hover-bg: rgba(0,0,0,.05);
+  --sidebar-hover-text: var(--text-strong);
   --accent: #e94560;
   --accent-soft: rgba(233,69,96,.12);
   --card-bg: #fff;
@@ -2733,41 +2740,102 @@ input:focus-visible, summary:focus-visible {
   overflow: hidden;
   display: flex; flex-direction: column;
   z-index: 100;
-  transition: width .25s, transform .25s;
+  transition: width var(--transition-slow);
+}
+.nav-tools {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 201;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-shrink: 0;
+  height: 48px;
+  padding: 4px;
+  width: var(--sidebar-w);
+  box-sizing: border-box;
+  transition: width var(--transition-slow);
+}
+#sidebar:not(.collapsed) .nav-tools {
+  background: var(--sidebar-bg);
+}
+#sidebar.collapsed .nav-tools {
+  width: 48px;
+}
+.nav-tool-extra {
+  overflow: hidden;
+  max-width: 40px;
+  opacity: 1;
+  transition: max-width var(--transition-slow), opacity var(--transition-slow);
+}
+#sidebar.collapsed .nav-tool-extra {
+  max-width: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+#menu-toggle {
+  background: var(--sidebar-bg);
+  box-shadow: var(--shadow-md);
+}
+#sidebar:not(.collapsed) #menu-toggle {
+  background: transparent;
+  box-shadow: none;
+}
+.nav-tool-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--sidebar-text);
+  cursor: pointer;
+  text-decoration: none;
+  flex-shrink: 0;
+  line-height: 0;
+}
+.nav-tool-btn svg {
+  width: 20px;
+  height: 20px;
+}
+.nav-tool-btn:hover,
+.nav-tool-btn.active {
+  color: var(--sidebar-hover-text);
+  background: var(--sidebar-hover-bg);
+}
+body.settings-open #settings-btn {
+  color: var(--accent);
+  background: rgba(233,69,96,.15);
+}
+body.ai-open #ai-btn {
+  color: var(--accent);
+  background: rgba(233,69,96,.15);
+  filter: drop-shadow(0 0 3px var(--accent));
+}
+body:not(:has(article.lesson)) .nav-tool-ai {
+  display: none;
 }
 #sidebar .nav-scroll {
   flex: 1; overflow-y: auto; overflow-x: hidden;
-  padding: 1rem 0;
+  padding-top: 48px;
 }
 #sidebar.collapsed {
-  width: 48px;
+  width: 0;
+  min-width: 0;
   overflow: hidden;
 }
-#sidebar.collapsed:hover {
-  width: var(--sidebar-w);
-}
-#sidebar.collapsed:hover .nav-scroll {
-  overflow-y: auto;
-}
-#sidebar.collapsed .nav-header,
-#sidebar.collapsed .nav-group,
-#sidebar.collapsed .nav-item,
+#sidebar.collapsed .nav-scroll,
 #sidebar.collapsed .nav-footer {
-  opacity: 0;
   pointer-events: none;
-  transition: opacity var(--transition);
-}
-#sidebar.collapsed:hover .nav-header,
-#sidebar.collapsed:hover .nav-group,
-#sidebar.collapsed:hover .nav-item,
-#sidebar.collapsed:hover .nav-footer {
-  opacity: 1;
-  pointer-events: auto;
 }
 .nav-header {
-  font-size: 1.2rem; font-weight: 700; color: #fff;
-  padding: .8rem 1.2rem 1rem 3.2rem;
-  border-bottom: 1px solid rgba(255,255,255,.08);
+  font-size: 1.2rem; font-weight: 700; color: var(--sidebar-heading);
+  padding: .8rem 1.2rem 1rem;
+  border-bottom: 1px solid var(--sidebar-border);
   margin-bottom: .5rem;
   white-space: nowrap;
 }
@@ -2781,7 +2849,7 @@ input:focus-visible, summary:focus-visible {
   color: var(--accent); padding: .8rem 1.2rem .4rem;
   font-weight: 700; white-space: nowrap;
 }
-.nav-group:hover { color: #fff; }
+.nav-group:hover { color: var(--sidebar-hover-text); }
 .nav-caret { font-size: .65rem; opacity: .75; transition: transform var(--transition); }
 .nav-group-wrap.expanded .nav-caret { transform: rotate(90deg); }
 .nav-group-items { display: none; }
@@ -2795,9 +2863,9 @@ input:focus-visible, summary:focus-visible {
   transition: all var(--transition);
   line-height: 1.4;
 }
-.nav-item:hover { color: #fff; background: rgba(255,255,255,.06); }
+.nav-item:hover { color: var(--sidebar-hover-text); background: var(--sidebar-hover-bg); }
 .nav-item.active {
-  color: #fff; background: rgba(233,69,96,.15);
+  color: var(--sidebar-hover-text); background: rgba(233,69,96,.15);
   border-left-color: var(--accent);
 }
 
@@ -2807,10 +2875,11 @@ input:focus-visible, summary:focus-visible {
   margin-right: 220px;
   padding: 2rem 3rem 4rem;
   max-width: 1050px;
-  transition: margin-left .25s;
+  transition: margin-left var(--transition-slow);
 }
 body.sidebar-collapsed #content {
-  margin-left: 48px;
+  margin-left: 0;
+  padding-top: 3.5rem;
 }
 .lesson { display: none; content-visibility: auto; contain-intrinsic-size: 0 500px; }
 .lesson.active { display: block; content-visibility: visible; }
@@ -3030,33 +3099,11 @@ summary {
   padding: .2rem 0;
 }
 
-/* Top controls */
-#bottom-controls {
-  position: fixed; top: .8rem; right: 1.2rem;
-  display: flex; align-items: center; gap: .5rem; z-index: 200;
-}
-#furigana-toggle, #lang-toggle, #theme-toggle {
-  background: var(--card-bg); color: inherit;
-  padding: .4rem .8rem; border-radius: var(--radius);
-  font-size: .8rem;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-sm);
-}
-#furigana-toggle label { cursor: pointer; }
-#furigana-toggle input { margin-right: .3rem; }
-#lang-btn, #theme-btn {
-  background: none; border: none; color: inherit;
-  font-size: 1rem; cursor: pointer;
-  padding: 0; line-height: 1;
-}
-#lang-btn { font-size: .8rem; font-weight: 700; }
-#theme-btn { font-size: 1.05rem; }
-
 /* Sidebar footer */
 .nav-footer {
   flex-shrink: 0;
   padding: .6rem 1.2rem;
-  border-top: 1px solid rgba(255,255,255,.08);
+  border-top: 1px solid var(--sidebar-border);
   display: flex; gap: .8rem;
   font-size: .75rem;
 }
@@ -3064,22 +3111,7 @@ summary {
   color: var(--sidebar-text); text-decoration: none;
   opacity: .7; transition: opacity var(--transition);
 }
-.nav-footer a:hover { opacity: 1; color: #fff; }
-
-/* Menu button */
-#menu-toggle {
-  position: fixed; top: 0; left: 0;
-  z-index: 200; background: transparent; color: #fff;
-  border: none; border-radius: 0;
-  width: 48px; height: 48px; padding: 0; line-height: 48px;
-  text-align: center;
-  font-size: 1.2rem; cursor: pointer;
-  display: none;
-}
-body.sidebar-collapsed #menu-toggle { display: block; }
-/* On desktop the toggle is always available — even when the sidebar is
-   expanded — so users can collapse it back to the slim hover rail. */
-@media (min-width: 769px) { #menu-toggle { display: block; } }
+.nav-footer a:hover { opacity: 1; color: var(--sidebar-hover-text); }
 
 /* Hide right TOC on narrower screens */
 @media (max-width: 900px) {
@@ -3087,26 +3119,12 @@ body.sidebar-collapsed #menu-toggle { display: block; }
   #content { margin-right: 0; }
 }
 
-/* Mobile */
+/* Mobile: sidebar expands as overlay; content stays full width. */
 @media (max-width: 768px) {
-  #sidebar { transform: translateX(-100%); width: var(--sidebar-w); }
-  #sidebar.collapsed { width: var(--sidebar-w); }
-  #sidebar.open { transform: translateX(0); }
-  #sidebar.open .nav-header,
-  #sidebar.open .nav-group,
-  #sidebar.open .nav-item,
-  #sidebar.open .nav-footer {
-    opacity: 1;
-    pointer-events: auto;
+  #sidebar:not(.collapsed) {
+    box-shadow: 2px 0 16px rgba(0,0,0,.25);
   }
-  #content { margin-left: 0 !important; margin-right: 0; padding: 3rem 1rem 4rem; }
-  #menu-toggle {
-    display: block !important;
-    top: .6rem; left: .6rem;
-    width: auto; height: auto; line-height: 1;
-    padding: .4rem .7rem;
-    background: var(--sidebar-bg); border-radius: var(--radius);
-  }
+  #content { margin-left: 0 !important; margin-right: 0; padding: 3.5rem 1rem 4rem; }
 }
 
 /* Home page landing layout (no lesson articles inlined).
@@ -3210,8 +3228,16 @@ body.sidebar-collapsed #content.home {
     --bg: #14141e;
     --sidebar-bg: #0a0a14;
     --sidebar-text: #b8b8c4;
+    --sidebar-heading: #f0f0f5;
+    --sidebar-border: rgba(255,255,255,.08);
+    --sidebar-hover-bg: rgba(255,255,255,.06);
+    --sidebar-hover-text: #fff;
     --card-bg: #1f1f2e;
     --border: #2d2d44;
+    --text: #d4d4dc;
+    --text-strong: #f0f0f5;
+    --text-muted: #a8a8b8;
+    --text-subtle: #888;
     --word-bg: #2a2618;
     --word-border: #5a4920;
     --code-bg: #1f1f2e;
@@ -3263,8 +3289,16 @@ html.theme-dark {
     --bg: #14141e;
     --sidebar-bg: #0a0a14;
     --sidebar-text: #b8b8c4;
+    --sidebar-heading: #f0f0f5;
+    --sidebar-border: rgba(255,255,255,.08);
+    --sidebar-hover-bg: rgba(255,255,255,.06);
+    --sidebar-hover-text: #fff;
     --card-bg: #1f1f2e;
     --border: #2d2d44;
+    --text: #d4d4dc;
+    --text-strong: #f0f0f5;
+    --text-muted: #a8a8b8;
+    --text-subtle: #888;
     --word-bg: #2a2618;
     --word-border: #5a4920;
     --code-bg: #1f1f2e;
@@ -3311,7 +3345,6 @@ html.theme-dark code { color: #f0a0b0; }
 html.theme-dark pre code { color: #d4d4dc; }
 
 /* ─── Search (command palette) ─── */
-#search-btn { background: none; border: none; color: inherit; font-size: 1.05rem; cursor: pointer; padding: 0; line-height: 1; }
 #search-overlay { position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,.45); display: flex; align-items: flex-start; justify-content: center; padding: 12vh 1rem 1rem; }
 #search-overlay[hidden] { display: none; }
 #search-box { width: 100%; max-width: 560px; max-height: 70vh; display: flex; flex-direction: column; overflow: hidden; background: var(--card-bg); color: inherit; border: 1px solid var(--border); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); }
@@ -3327,17 +3360,32 @@ html.theme-dark pre code { color: #d4d4dc; }
 #search-hint { font-size: .72rem; opacity: .55; padding: .5rem 1.2rem; border-top: 1px solid var(--border); }
 @media (max-width: 600px) { #search-hint { display: none; } #search-overlay { padding: 6vh .6rem 1rem; } }
 html.theme-dark #search-box { background: #1f1f2e; }
+
+/* Settings modal */
+#settings-overlay { position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,.45); display: flex; align-items: flex-start; justify-content: center; padding: 10vh 1rem 1rem; }
+#settings-overlay[hidden] { display: none; }
+#settings-box { width: 100%; max-width: 520px; max-height: 80vh; overflow-y: auto; background: var(--card-bg); color: inherit; border: 1px solid var(--border); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); padding: 1.2rem 1.4rem 1rem; }
+.settings-head h2 { margin: 0 0 .35rem; font-size: var(--text-xl); border: none; padding: 0; color: var(--text-strong); }
+.settings-lead { margin: 0 0 1.2rem; color: var(--text-muted); font-size: .9rem; line-height: 1.6; }
+.settings-list { list-style: none; margin: 0; padding: 0; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; background: var(--bg); }
+.settings-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .9rem 1rem; border-bottom: 1px solid var(--border); }
+.settings-row:last-child { border-bottom: none; }
+.settings-label { font-weight: 600; color: var(--text-strong); font-size: .95rem; }
+.settings-desc { font-size: .8rem; color: var(--text-muted); margin-top: .2rem; line-height: 1.45; }
+.settings-control label { cursor: pointer; display: flex; align-items: center; gap: .35rem; white-space: nowrap; }
+#settings-box #theme-btn, #settings-box #lang-btn { background: var(--card-bg); border: 1px solid var(--border); color: inherit; border-radius: var(--radius); padding: .4rem .85rem; cursor: pointer; font-size: .9rem; min-width: 5rem; }
+#settings-box #theme-btn { font-size: 1.05rem; min-width: 2.8rem; }
+.settings-preview { margin-top: 1.2rem; padding: .9rem 1rem; background: var(--word-bg); border-radius: var(--radius-lg); border: 1px solid var(--border); line-height: 2.2; }
+.settings-preview-title { font-size: .72rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: .05em; margin-bottom: .5rem; }
+@media (max-width: 600px) { #settings-overlay { padding: 5vh .6rem 1rem; } }
 ` + AI_CSS;
 
 // ─── JS ───
 const JS = `
-${THEME_TOGGLE_JS}
 (function(){
   var items = document.querySelectorAll('.nav-item');
   var lessons = document.querySelectorAll('.lesson');
-  var toggle = document.getElementById('menu-toggle');
   var sidebar = document.getElementById('sidebar');
-  var rubyToggle = document.getElementById('ruby-toggle');
 
   // ─── localStorage helpers ───
   var STORE_KEY = 'jp_grammar_prefs';
@@ -3350,6 +3398,9 @@ ${THEME_TOGGLE_JS}
     localStorage.setItem(STORE_KEY, JSON.stringify(prefs));
   }
   var prefs = loadPrefs();
+  var isEn = ('isEn' in prefs) ? prefs.isEn : !/^zh/i.test(navigator.language || '');
+  if (isEn) document.body.classList.add('lang-en');
+  if (prefs.hideRuby) document.body.classList.add('hide-ruby');
 
   // ─── Scroll position memory ───
   var SCROLL_KEY = 'jp_grammar_scroll';
@@ -3371,12 +3422,6 @@ ${THEME_TOGGLE_JS}
       if (currentLesson) saveScrollPosition(currentLesson, window.scrollY);
     }, 300);
   });
-
-  // ─── Restore ruby preference ───
-  if (prefs.hideRuby) {
-    rubyToggle.checked = false;
-    document.body.classList.add('hide-ruby');
-  }
 
   function collapseSidebar() {
     sidebar.classList.add('collapsed');
@@ -3469,11 +3514,7 @@ ${THEME_TOGGLE_JS}
       window.scrollTo(0, 0);
     }
 
-    if (window.innerWidth > 768) {
-      collapseSidebar();
-    } else {
-      sidebar.classList.remove('open');
-    }
+    collapseSidebar();
   }
 
   function isModifiedClick(e) {
@@ -3516,20 +3557,6 @@ ${THEME_TOGGLE_JS}
   // Menu toggle is bound once by the shared sidebar script (runs on every
   // page), so we don't bind it again here — doing so would fire twice.
 
-  rubyToggle.addEventListener('change', function(){
-    var hide = !this.checked;
-    document.body.classList.toggle('hide-ruby', hide);
-    savePrefs({ hideRuby: hide });
-    if (window.gaEvent) window.gaEvent('furigana_toggle', { visible: !hide });
-  });
-
-  // Language toggle
-  var langBtn = document.getElementById('lang-btn');
-  var isEn = ('isEn' in prefs) ? prefs.isEn : !/^zh/i.test(navigator.language || '');
-  if (isEn) {
-    document.body.classList.add('lang-en');
-    langBtn.textContent = '中文';
-  }
   var headingMap = {
     '接续': 'Conjugation', '含义': 'Meaning', '例句': 'Examples',
     '辨析': 'Comparison', '易错点': 'Common Mistakes', '今日练习': 'Practice',
@@ -3588,15 +3615,6 @@ ${THEME_TOGGLE_JS}
       if (h) a.textContent = headingText(h);
     });
   }
-
-  langBtn.addEventListener('click', function(){
-    isEn = !isEn;
-    document.body.classList.toggle('lang-en', isEn);
-    langBtn.textContent = isEn ? '中文' : 'EN';
-    translateHeadings(isEn);
-    savePrefs({ isEn: isEn });
-    if (window.gaEvent) window.gaEvent('language_toggle', { to: isEn ? 'en' : 'zh' });
-  });
 
   // ─── Checklist persistence ───
   var CHECK_KEY = 'jp_grammar_checks';
