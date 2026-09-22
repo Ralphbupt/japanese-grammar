@@ -12,12 +12,14 @@
 
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 const KuroshiroMod = require("kuroshiro");
 const Kuroshiro = KuroshiroMod.default || KuroshiroMod;
 const KuromojiMod = require("kuroshiro-analyzer-kuromoji");
 const KuromojiAnalyzer = KuromojiMod.default || KuromojiMod;
 
 const SITE = "https://jpnotes.dev/";
+const SETTINGS_JS_HASH = crypto.createHash("md5").update(fs.readFileSync(path.join(__dirname, "site", "settings-modal.js"))).digest("hex").slice(0, 8);
 const OUT_DIR = path.join(__dirname, "dist", "anki");
 const LEVELS = ["N5", "N4", "N3", "N2"];
 
@@ -548,6 +550,9 @@ h1 { font-size: 1.8rem; margin: 0 0 .5rem; border-bottom: 2px solid var(--accent
 .subtitle { color: var(--muted); margin-bottom: 2rem; }
 .breadcrumb { font-size: .85rem; color: var(--muted); margin-bottom: 1rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
+.page-tools { display: flex; justify-content: flex-end; margin-bottom: 1rem; }
+.page-settings-btn { background: none; border: 1px solid var(--border); color: var(--muted); font-size: .85rem; padding: .35rem .75rem; border-radius: 6px; cursor: pointer; }
+.page-settings-btn:hover { color: var(--accent); border-color: var(--accent); }
 h2 { font-size: 1.3rem; margin: 2rem 0 1rem; }
 .anki-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; margin: 1.5rem 0 2rem; }
 @media (max-width: 540px) { .anki-grid { grid-template-columns: 1fr; } }
@@ -580,13 +585,6 @@ a { color: var(--accent); }
 body.lang-en .lang-zh { display: none; }
 body.lang-en span.lang-en { display: inline; }
 body.lang-en div.lang-en, body.lang-en p.lang-en, body.lang-en li.lang-en, body.lang-en h2.lang-en { display: block; }
-/* Toggles (theme + lang) — same top-right placement and pill look as the
-   main site's #bottom-controls (the name is legacy; it sits top-right). */
-#bottom-controls { position: fixed; top: .8rem; right: 1.2rem; display: flex; align-items: center; gap: .5rem; z-index: 200; }
-#lang-toggle, #theme-toggle { background: var(--card-bg); color: inherit; padding: .4rem .8rem; border-radius: 8px; font-size: .8rem; border: 1px solid var(--border); box-shadow: 0 2px 10px rgba(0,0,0,.12); }
-#lang-btn, #theme-btn { background: none; border: none; color: inherit; cursor: pointer; padding: 0; line-height: 1; }
-#lang-btn { font-size: .8rem; font-weight: 700; }
-#theme-btn { font-size: 1.05rem; }
 </style>
 </head>
 <body>
@@ -595,6 +593,7 @@ body.lang-en div.lang-en, body.lang-en p.lang-en, body.lang-en li.lang-en, body.
     <a href="${SITE}">日语语法笔记</a> ›
     <span class="lang-zh">Anki 卡组</span><span class="lang-en">Anki Decks</span>
   </nav>
+  <p class="page-tools"><button type="button" id="settings-btn" class="page-settings-btn"><span class="lang-zh">⚙ 设置</span><span class="lang-en">⚙ Settings</span></button></p>
   <h1><span class="lang-zh">日语语法 Anki 卡组下载</span><span class="lang-en">Japanese Grammar Anki Decks</span></h1>
   <p class="subtitle">
     <span class="lang-zh">JLPT N5 → N2 共 ${total} 张卡 · 中文版 / English 版两套独立卡组 · .apkg 版含 🔊 例句日语音频 + 挖空练习子卡组 · 支持 AnkiDroid、AnkiMobile · 每张语法点配含义、例句和跳回 jpnotes.dev 详细讲解的链接</span>
@@ -659,11 +658,14 @@ ${cardCellsEn}
   </p>
 </div>
 
-<div id="bottom-controls">
-  <div id="theme-toggle"><button id="theme-btn" aria-label="切换主题 / Toggle theme">🌓</button></div>
-  <div id="lang-toggle"><button id="lang-btn">EN</button></div>
-</div>
 <script>
+(function(){
+  var STORE_KEY = 'jp_grammar_prefs';
+  function loadPrefs() { try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch(e) { return {}; } }
+  var prefs = loadPrefs();
+  var isEn = ('isEn' in prefs) ? prefs.isEn : !/^zh/i.test(navigator.language || '');
+  if (isEn) document.body.classList.add('lang-en');
+})();
 // GA4, same property as the main site. The gtag stub queues events into
 // dataLayer immediately, so download clicks fired before the (deferred)
 // script loads are not lost. Mark anki_download as a key event in GA4 admin.
@@ -732,35 +734,8 @@ function shareApkg(link, filename) {
     });
   return false; // prevent default <a> navigation
 }
-
-(function(){
-  var btn = document.getElementById('theme-btn');
-  if (btn) {
-    var html = document.documentElement;
-    function current() { return html.classList.contains('theme-dark') ? 'dark' : html.classList.contains('theme-light') ? 'light' : 'auto'; }
-    function paintIcon() { var c = current(); btn.textContent = c === 'dark' ? '🌙' : c === 'light' ? '☀️' : '🌓'; btn.title = c === 'dark' ? '当前: 深色 (点击切浅色)' : c === 'light' ? '当前: 浅色 (点击切自动)' : '当前: 跟随系统 (点击切深色)'; }
-    paintIcon();
-    btn.addEventListener('click', function() {
-      var next = { auto: 'dark', dark: 'light', light: 'auto' }[current()];
-      html.classList.remove('theme-dark', 'theme-light');
-      if (next === 'dark') html.classList.add('theme-dark');
-      else if (next === 'light') html.classList.add('theme-light');
-      try { if (next === 'auto') localStorage.removeItem('theme'); else localStorage.setItem('theme', next); } catch (e) {}
-      paintIcon();
-    });
-  }
-  var langBtn = document.getElementById('lang-btn');
-  if (langBtn) {
-    var STORE_KEY = 'jp_grammar_prefs';
-    function loadPrefs() { try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch(e) { return {}; } }
-    function savePrefs(patch) { var p = loadPrefs(); for (var k in patch) p[k] = patch[k]; localStorage.setItem(STORE_KEY, JSON.stringify(p)); }
-    var prefs = loadPrefs();
-    var isEn = ('isEn' in prefs) ? prefs.isEn : !/^zh/i.test(navigator.language || '');
-    if (isEn) { document.body.classList.add('lang-en'); langBtn.textContent = '中'; }
-    langBtn.addEventListener('click', function(){ isEn = !isEn; document.body.classList.toggle('lang-en', isEn); langBtn.textContent = isEn ? '中' : 'EN'; savePrefs({ isEn: isEn }); });
-  }
-})();
 </script>
+<script src="${SITE}settings-modal.js?v=${SETTINGS_JS_HASH}" defer></script>
 </body>
 </html>`;
   fs.writeFileSync(path.join(OUT_DIR, "index.html"), landingHtml, "utf-8");

@@ -1034,26 +1034,8 @@
   }
 
   /* ── open / close ── */
-  // Sidebar (230) + lesson column (1000) + panel do not fit below ~1700px, so
-  // opening the panel folds the sidebar (it still expands on hover) and closing
-  // restores it — only if we were the ones who folded it.
-  var foldedSidebar = false;
-  function foldSidebar() {
-    var sb = document.getElementById('sidebar');
-    if (!sb || window.innerWidth <= 768 || sb.classList.contains('collapsed')) return;
-    var aiW = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--ai-w')) || 440;
-    if (window.innerWidth - aiW - 230 >= 1000 + 96) return;
-    sb.classList.add('collapsed'); document.body.classList.add('sidebar-collapsed'); foldedSidebar = true;
-  }
-  function unfoldSidebar() {
-    if (!foldedSidebar) return;
-    foldedSidebar = false;
-    var sb = document.getElementById('sidebar');
-    if (sb) { sb.classList.remove('collapsed'); document.body.classList.remove('sidebar-collapsed'); }
-  }
   function open(prefill) {
     if (!panel) build();
-    foldSidebar();
     document.body.classList.add('ai-open');
     refreshAuto();
     panel.removeAttribute('aria-hidden');
@@ -1063,20 +1045,14 @@
   }
   function close() {
     document.body.classList.remove('ai-open');
-    unfoldSidebar();
     if (panel) panel.setAttribute('aria-hidden', 'true');
   }
 
-  /* ── 🤖 button in the top controls ── */
+  /* ── sidebar chat button ── */
   function addBtn() {
-    var host = document.getElementById('bottom-controls');
-    if (!host) return;
-    var b = document.createElement('button');
-    b.id = 'ai-btn'; b.type = 'button';
-    b.setAttribute('aria-label', '问 AI / Ask AI'); b.title = '问 AI / Ask AI';
-    b.textContent = '🤖';
+    var b = document.getElementById('ai-btn');
+    if (!b) return;
     b.addEventListener('click', function () { document.body.classList.contains('ai-open') ? close() : open(); });
-    host.insertBefore(b, host.firstChild);
   }
 
   /* ── selection chip: select text in the lesson → 「问 AI」 ──
