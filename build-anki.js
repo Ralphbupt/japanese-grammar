@@ -550,9 +550,11 @@ h1 { font-size: 1.8rem; margin: 0 0 .5rem; border-bottom: 2px solid var(--accent
 .subtitle { color: var(--muted); margin-bottom: 2rem; }
 .breadcrumb { font-size: .85rem; color: var(--muted); margin-bottom: 1rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
-.page-tools { display: flex; justify-content: flex-end; margin-bottom: 1rem; }
-.page-settings-btn { background: none; border: 1px solid var(--border); color: var(--muted); font-size: .85rem; padding: .35rem .75rem; border-radius: 6px; cursor: pointer; }
-.page-settings-btn:hover { color: var(--accent); border-color: var(--accent); }
+/* Theme + language pills, top right (injected by settings-modal.js). */
+#top-controls { position: fixed; top: .8rem; right: 1.2rem; display: flex; align-items: center; gap: .5rem; z-index: 200; }
+.tc-pill { background: var(--card-bg); color: inherit; font: inherit; font-size: .8rem; padding: .4rem .8rem; border-radius: 8px; border: 1px solid var(--border); box-shadow: 0 2px 10px rgba(0,0,0,.12); cursor: pointer; line-height: 1.2; }
+.tc-icon { font-size: 1rem; padding: .32rem .6rem; }
+.tc-lang { font-weight: 700; }
 h2 { font-size: 1.3rem; margin: 2rem 0 1rem; }
 .anki-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; margin: 1.5rem 0 2rem; }
 @media (max-width: 540px) { .anki-grid { grid-template-columns: 1fr; } }
@@ -593,8 +595,7 @@ body.lang-en div.lang-en, body.lang-en p.lang-en, body.lang-en li.lang-en, body.
     <a href="${SITE}">日语语法笔记</a> ›
     <span class="lang-zh">Anki 卡组</span><span class="lang-en">Anki Decks</span>
   </nav>
-  <p class="page-tools"><button type="button" id="settings-btn" class="page-settings-btn"><span class="lang-zh">⚙ 设置</span><span class="lang-en">⚙ Settings</span></button></p>
-  <h1><span class="lang-zh">日语语法 Anki 卡组下载</span><span class="lang-en">Japanese Grammar Anki Decks</span></h1>
+    <h1><span class="lang-zh">日语语法 Anki 卡组下载</span><span class="lang-en">Japanese Grammar Anki Decks</span></h1>
   <p class="subtitle">
     <span class="lang-zh">JLPT N5 → N2 共 ${total} 张卡 · 中文版 / English 版两套独立卡组 · .apkg 版含 🔊 例句日语音频 + 挖空练习子卡组 · 支持 AnkiDroid、AnkiMobile · 每张语法点配含义、例句和跳回 jpnotes.dev 详细讲解的链接</span>
     <span class="lang-en">JLPT N5 → N2, ${total} cards · separate Chinese and English editions · .apkg includes 🔊 native-style TTS audio on examples + a cloze-practice subdeck · works with AnkiDroid &amp; AnkiMobile · each card has the grammar point, its meaning, examples, and a link back to the full lesson on jpnotes.dev</span>

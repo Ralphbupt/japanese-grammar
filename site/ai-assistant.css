@@ -154,6 +154,7 @@ html.theme-dark .ai-model-menu { background: #1f1f2e; }
     margin-right: calc(var(--ai-w) + 1rem) !important;
     transition: margin-left .25s, margin-right .25s;
   }
+  body.ai-open #top-controls { right: calc(var(--ai-w) + 1.2rem); }
   body.ai-open.sidebar-collapsed #content {
     margin-left: max(0px, calc((100vw - var(--ai-w) - 1000px) / 2)) !important;
   }

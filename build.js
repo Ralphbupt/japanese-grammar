@@ -3361,6 +3361,27 @@ html.theme-dark pre code { color: #d4d4dc; }
 @media (max-width: 600px) { #search-hint { display: none; } #search-overlay { padding: 6vh .6rem 1rem; } }
 html.theme-dark #search-box { background: #1f1f2e; }
 
+/* Desktop top-right quick controls (injected by settings-modal.js). On
+   mobile the sidebar toolbar + settings modal take over, so the bar hides and
+   the toolbar's search / AI / settings buttons only show there. */
+#top-controls {
+  position: fixed; top: .8rem; right: 1.2rem;
+  display: flex; align-items: center; gap: .5rem; z-index: 200;
+}
+.tc-pill {
+  background: var(--card-bg); color: inherit; font: inherit; font-size: .8rem;
+  padding: .4rem .8rem; border-radius: var(--radius);
+  border: 1px solid var(--border); box-shadow: var(--shadow-sm);
+  cursor: pointer; line-height: 1.2;
+}
+.tc-pill:hover { border-color: var(--accent); }
+.tc-pill input { margin: 0 .3rem 0 0; vertical-align: -1px; }
+.tc-icon { font-size: 1rem; padding: .32rem .6rem; }
+.tc-lang { font-weight: 700; }
+body.ai-open #tc-ai { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
+@media (min-width: 769px) { .nav-tool-extra { display: none; } }
+@media (max-width: 768px) { #top-controls { display: none; } }
+
 /* Settings modal */
 #settings-overlay { position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,.45); display: flex; align-items: flex-start; justify-content: center; padding: 10vh 1rem 1rem; }
 #settings-overlay[hidden] { display: none; }
@@ -3373,8 +3394,8 @@ html.theme-dark #search-box { background: #1f1f2e; }
 .settings-label { font-weight: 600; color: var(--text-strong); font-size: .95rem; }
 .settings-desc { font-size: .8rem; color: var(--text-muted); margin-top: .2rem; line-height: 1.45; }
 .settings-control label { cursor: pointer; display: flex; align-items: center; gap: .35rem; white-space: nowrap; }
-#settings-box #theme-btn, #settings-box #lang-btn { background: var(--card-bg); border: 1px solid var(--border); color: inherit; border-radius: var(--radius); padding: .4rem .85rem; cursor: pointer; font-size: .9rem; min-width: 5rem; }
-#settings-box #theme-btn { font-size: 1.05rem; min-width: 2.8rem; }
+#settings-box .js-theme-btn, #settings-box .js-lang-btn { background: var(--card-bg); border: 1px solid var(--border); color: inherit; border-radius: var(--radius); padding: .4rem .85rem; cursor: pointer; font-size: .9rem; min-width: 5rem; }
+#settings-box .js-theme-btn { font-size: 1.05rem; min-width: 2.8rem; }
 .settings-preview { margin-top: 1.2rem; padding: .9rem 1rem; background: var(--word-bg); border-radius: var(--radius-lg); border: 1px solid var(--border); line-height: 2.2; }
 .settings-preview-title { font-size: .72rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: .05em; margin-bottom: .5rem; }
 @media (max-width: 600px) { #settings-overlay { padding: 5vh .6rem 1rem; } }
@@ -3592,6 +3613,7 @@ const JS = `
     return text;
   }
 
+  document.addEventListener('jpnotes:lang', function(e){ isEn = e.detail.isEn; translateHeadings(isEn); });
   function translateHeadings(toEn) {
     var active = document.querySelector('.lesson.active');
     if (!active) return;
