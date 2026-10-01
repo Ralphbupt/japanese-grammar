@@ -21,3 +21,7 @@ pages/drafts/
 /build-podcast.js
 /data/podcast-scripts/
 /.fix-content.js
+
+# Worker local secrets
+/worker/.dev.vars
+/worker/.wrangler/

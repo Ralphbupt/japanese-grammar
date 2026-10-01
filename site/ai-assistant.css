@@ -225,3 +225,5 @@ html.theme-dark .ai-settings input, html.theme-dark .ai-settings select { backgr
 .ai-settings-btns .ai-remove { color: var(--text-muted); }
 .ai-settings-btns .ai-remove[hidden] { display: none; }
 html.theme-dark .ai-wiz-card, html.theme-dark .ai-wiz-form input[type=password] { background: #17172a; }
+.ai-free-note { margin-top: .9rem; }
+.ai-own-key { background: none; border: none; padding: 0; font: inherit; color: var(--accent); cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }

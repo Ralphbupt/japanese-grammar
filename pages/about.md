@@ -129,11 +129,13 @@ Pure **static site** — no backend, no database, no cookies. Every push to main
 ## 「问 AI」两分钟上手||"Ask AI" in two minutes
 
 :::zh
-课程页右上角的 🤖 按钮会打开一个侧栏，AI 已经读过这一课，可以直接问；在正文里选中一句例句再点「问 AI」，它会针对那一节回答。它需要你自己的一个模型服务商 API key，推荐 **Groq**：免费、不用绑卡、回答基本秒出。
+课程页右上角的 🤖 按钮会打开一个侧栏，AI 已经读过这一课，可以直接问；在正文里选中一句例句再点「问 AI」，它会针对那一节回答。
+
+**打开就能用**：默认使用本站提供的免费模型（OpenAI 的开源模型 gpt-oss-120b，运行在 Cloudflare 上），不用注册、不用 key，每人每天 20 次。想不限次数或换更强的模型，可以用你自己的 API key，推荐 **Groq**：免费、不用绑卡、回答基本秒出。
 
 1. 打开 [console.groq.com/keys](https://console.groq.com/keys)，用 Google 或 GitHub 账号登录。
 2. 点 **Create API Key**，起个名字，复制生成的 key（以 `gsk_` 开头）。
-3. 回到任意课程页，点右上 🤖，选「Groq」，粘贴 key，点「连接并开始」。
+3. 回到任意课程页，点右上 🤖，点「用自己的 API key」，选「Groq」，粘贴 key，点「连接并开始」。
 
 注意别选成 **xAI Grok**，那是马斯克家的付费模型，名字只差一个字母。
 
@@ -149,15 +151,17 @@ Pure **static site** — no backend, no database, no cookies. Every push to main
 - *提示 Failed to fetch*：服务商不允许浏览器直连，或本地 Ollama 没有带 OLLAMA_ORIGINS 启动。换 Groq / OpenRouter 这类明确支持浏览器直连的服务商即可。
 - *换服务商或模型*：点侧栏标题里的模型名，已配置的几家都在菜单里，随时切换；「思考深度」三档也在那里。
 
-密钥只存在你的浏览器里，本站没有服务器，详见下面的隐私说明。
+你自己的密钥只存在你的浏览器里，不会经过本站，详见下面的隐私说明。
 :::
 
 :::en
-The 🤖 button on every lesson page opens a side panel; the AI has already read the lesson, so just ask. Select an example sentence in the text and click "Ask AI" to ask about that grammar point specifically. It needs your own API key from a model provider. **Groq** is the easy choice: free, no card, answers in about a second.
+The 🤖 button on every lesson page opens a side panel; the AI has already read the lesson, so just ask. Select an example sentence in the text and click "Ask AI" to ask about that grammar point specifically.
+
+**It works out of the box**: by default it uses a free model this site provides (OpenAI's open-weight gpt-oss-120b, running on Cloudflare), with no sign-up and no key, 20 questions per reader per day. For no daily limit or a stronger model, use your own API key. **Groq** is the easy choice: free, no card, answers in about a second.
 
 1. Open [console.groq.com/keys](https://console.groq.com/keys) and sign in with Google or GitHub.
 2. Click **Create API Key**, give it a name and copy the key (it starts with `gsk_`).
-3. Back on any lesson page, click 🤖, pick "Groq", paste the key and click "Connect and start".
+3. Back on any lesson page, click 🤖, click "Use your own API key", pick "Groq", paste the key and click "Connect and start".
 
 Do not pick **xAI Grok** by mistake; that is Elon Musk’s paid model, one letter apart.
 
@@ -173,7 +177,7 @@ Do not pick **xAI Grok** by mistake; that is Elon Musk’s paid model, one lette
 - *Failed to fetch*: the provider blocks browser calls, or local Ollama was started without OLLAMA_ORIGINS. Switch to a provider that supports browser calls, such as Groq or OpenRouter.
 - *Switching providers or models*: click the model name in the panel header; every provider you have configured is in that menu, along with the three thinking-depth settings.
 
-Your key never leaves your browser; this site has no server. See the privacy section below.
+Your own key never leaves your browser and never passes through this site. See the privacy section below.
 :::
 
 <a id="ai-privacy"></a>
@@ -181,29 +185,31 @@ Your key never leaves your browser; this site has no server. See the privacy sec
 ## 「问 AI」功能的隐私与安全||"Ask AI" privacy & security
 
 :::zh
-课程页右上角的 🤖「问 AI」侧栏可以把当前课的内容连同你的问题发给一个大模型。它的设计原则是：**本站永远拿不到你的密钥，也看不到你的对话。**
+课程页右上角的 🤖「问 AI」侧栏可以把当前课的内容连同你的问题发给一个大模型。它的设计原则是：**本站永远拿不到你的密钥，也不保存你的对话。**
 
-- **没有服务器。** 整站是 GitHub Pages 上的静态 HTML，没有后端、没有数据库。你填的 API key 只存在你这台设备的浏览器里（默认 localStorage；勾选「只在本次会话保存」则关闭标签页即清除）。
-- **请求直连服务商。** 提问时，你的浏览器把这一课的正文和你的问题直接发到你选的服务商（Anthropic、OpenAI、DeepSeek、通义千问……或你本机的 Ollama）。中间没有任何中转。
+- **默认的免费模型经过本站中转。** 「本站免费」这一项由一个 Cloudflare Worker（ai.jpnotes.dev）把你的问题和这一课的正文交给 Cloudflare Workers AI 上的模型，再把回答传回来。它不记录问题、回答，也不开启请求日志；为了每天限次，它只保存 IP 的加盐哈希，按天计数，两天后自动删除。[中转源码](https://github.com/Ralphbupt/japanese-grammar/blob/main/worker/src/index.js)同样公开。不想经过本站，就用你自己的 key。
+- **你自己的 key 不经过本站。** 网站本身是 GitHub Pages 上的静态 HTML。你填的 API key 只存在你这台设备的浏览器里（默认 localStorage；勾选「只在本次会话保存」则关闭标签页即清除）。
+- **用自己的 key 时请求直连服务商。** 提问时，你的浏览器把这一课的正文和你的问题直接发到你选的服务商（Anthropic、OpenAI、DeepSeek、通义千问……或你本机的 Ollama）。中间没有任何中转。
 - **浏览器层面的白名单。** 每个页面都带有 Content-Security-Policy 的 `connect-src` 规则，只允许连接本站、Google Analytics、预设的服务商域名，以及 localhost / 127.0.0.1。即使页面上某段脚本被篡改，浏览器也会拒绝把数据发往白名单之外的任何地址。
 - **明文保护。** 设置里只接受 https:// 或本机地址；把服务商地址改成非官方域名时会显示醒目警告。
-- **自行验证。** 按 F12 打开开发者工具的 Network 面板，再提一个问题：你只会看到对该服务商域名的请求。侧栏的[全部源码](https://github.com/Ralphbupt/japanese-grammar/blob/main/site/ai-assistant.js)只有一个文件，欢迎审阅。
+- **自行验证。** 按 F12 打开开发者工具的 Network 面板，再提一个问题：用自己的 key 时你只会看到对该服务商域名的请求。侧栏的[全部源码](https://github.com/Ralphbupt/japanese-grammar/blob/main/site/ai-assistant.js)只有一个文件，欢迎审阅。
 - **本地方案。** 想完全不出本机，用 Ollama / LM Studio 跑本地模型即可，浏览器只会访问 localhost。
 
-费用由你和服务商结算，本站不参与、不抽成。
+免费模型的费用为零，由本站承担额度；用自己的 key 时费用由你和服务商结算，本站不参与、不抽成。
 :::
 
 :::en
-The 🤖 "Ask AI" side panel on lesson pages sends the current lesson plus your question to a large language model. Its design rule: **this site never receives your key and never sees your conversation.**
+The 🤖 "Ask AI" side panel on lesson pages sends the current lesson plus your question to a large language model. Its design rule: **this site never receives your key and never stores your conversation.**
 
-- **No server.** The whole site is static HTML on GitHub Pages: no backend, no database. Your API key exists only in your browser on your device (localStorage by default; tick "keep for this tab only" and it is cleared when the tab closes).
-- **Direct to the provider.** When you ask, your browser sends the lesson text and your question straight to the provider you picked (Anthropic, OpenAI, DeepSeek, Qwen… or Ollama on your own machine). Nothing sits in between.
+- **The default free model goes through this site's relay.** The "Free" option uses a Cloudflare Worker (ai.jpnotes.dev) that passes your question and the lesson text to a model on Cloudflare Workers AI and streams the answer back. It does not log questions or answers and has request logging turned off; to enforce the daily limit it keeps only a salted hash of your IP, counted per day and deleted after two days. The [relay source](https://github.com/Ralphbupt/japanese-grammar/blob/main/worker/src/index.js) is public too. To bypass the site entirely, use your own key.
+- **Your own key never touches this site.** The site itself is static HTML on GitHub Pages. Your API key exists only in your browser on your device (localStorage by default; tick "keep for this tab only" and it is cleared when the tab closes).
+- **With your own key, requests go straight to the provider.** When you ask, your browser sends the lesson text and your question straight to the provider you picked (Anthropic, OpenAI, DeepSeek, Qwen… or Ollama on your own machine). Nothing sits in between.
 - **A browser-enforced allowlist.** Every page ships a Content-Security-Policy `connect-src` rule that only permits connections to this site, Google Analytics, the preset provider hosts, and localhost / 127.0.0.1. Even if a script on the page were tampered with, the browser would refuse to send data anywhere else.
 - **No plain-text keys.** Settings accept only https:// or local URLs, and changing a provider's host to a non-official domain shows a prominent warning.
-- **Verify it yourself.** Open DevTools (F12) → Network and ask a question: the only requests you will see go to that provider's domain. The panel's [entire source](https://github.com/Ralphbupt/japanese-grammar/blob/main/site/ai-assistant.js) is one file; reviews welcome.
+- **Verify it yourself.** Open DevTools (F12) → Network and ask a question: with your own key, the only requests you will see go to that provider's domain. The panel's [entire source](https://github.com/Ralphbupt/japanese-grammar/blob/main/site/ai-assistant.js) is one file; reviews welcome.
 - **Fully local option.** To keep everything on your machine, run a local model with Ollama or LM Studio; the browser then only talks to localhost.
 
-Billing is between you and the provider; this site takes no part and no cut.
+The free model costs you nothing; with your own key, billing is between you and the provider, and this site takes no part and no cut.
 :::
 
 ## 播客||Podcast
