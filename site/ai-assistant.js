@@ -1,8 +1,10 @@
 /* AI tutor side panel — "问 AI / Ask AI".
  *
- * A right-hand drawer on every lesson page. The reader supplies their own
- * API key (stored only in this browser); the browser calls the model provider
- * directly, nothing goes through jpnotes.dev. The current lesson's text (or
+ * A right-hand drawer on every lesson page. Out of the box it uses the site's
+ * free relay (ai.jpnotes.dev, see worker/), which serves a free GLM model with
+ * per-reader daily limits. Readers can instead add their own API key (stored
+ * only in this browser); the browser then calls that provider directly and
+ * nothing goes through jpnotes.dev. The current lesson's text (or
  * just the grammar point being read, see "context") is sent as the system
  * prompt, so questions can be asked "in place" — including by selecting any
  * text in the lesson and clicking the floating 问 AI chip.
@@ -32,6 +34,9 @@
   // /chat/completions-compatible endpoint). Model names drift; the ⟳ button in
   // settings fetches the live list from {base}/models.
   var PROVIDERS = {
+    jpnotes: { group: 'site', name: '本站免费 jpnotes', kind: 'openai', needsKey: false,
+      base: 'https://ai.jpnotes.dev/v1', model: 'gpt-oss-120b', models: ['gpt-oss-120b'],
+      hintZh: '本站提供的免费模型（OpenAI gpt-oss-120b，运行在 Cloudflare 上），不用 key，每人每天 20 次。问题经本站的中转服务转给模型，不记录内容。', hintEn: 'A free model provided by this site (OpenAI gpt-oss-120b, running on Cloudflare): no key, 20 questions per reader per day. Questions pass through the site\u2019s relay and are not logged.' },
     anthropic: { keyUrl: 'https://console.anthropic.com/settings/keys', group: 'intl', name: 'Claude (Anthropic)', kind: 'anthropic', needsKey: true,
       base: 'https://api.anthropic.com', model: 'claude-opus-5', models: ['claude-opus-5', 'claude-sonnet-5', 'claude-fable-5-1', 'claude-haiku-4-5', 'claude-opus-4-8', 'claude-sonnet-4-6'],
       hintZh: '在 console.anthropic.com 创建 API key（按用量付费，与 claude.ai 订阅无关）。',
@@ -97,7 +102,7 @@
       hintEn: 'Any OpenAI-compatible server on this machine (vLLM, llama.cpp, your own relay…). To protect your key, the page security policy only allows the listed providers and localhost / 127.0.0.1.' }
   };
 
-  var GROUPS = [['intl', '国际 / International'], ['cn', '国内 / China'], ['local', '本地 / Local'], ['relay', '聚合与自定义 / Relays & custom']];
+  var GROUPS = [['site', '本站免费 / Free'], ['intl', '国际 / International'], ['cn', '国内 / China'], ['local', '本地 / Local'], ['relay', '聚合与自定义 / Relays & custom']];
   var RECOMMEND = { zh: ['groq', 'zhipu', 'siliconflow'], en: ['groq', 'gemini', 'openrouter'] };
 
   /* ── config (several providers, one active) ── */
@@ -115,6 +120,8 @@
     if (!raw.profiles || !raw.profiles[raw.active]) return null;
     return raw;
   }
+  // No saved config → the site's free relay, so the panel works with no setup.
+  function defaultCfg() { return { v: 2, active: 'jpnotes', profiles: { jpnotes: { base: PROVIDERS.jpnotes.base, key: '', model: PROVIDERS.jpnotes.model } }, effort: '', session: false }; }
   function saveCfg(c) {
     try {
       (c.session ? sessionStorage : localStorage).setItem(CFG_KEY, JSON.stringify(c));
@@ -131,6 +138,7 @@
     if (makeActive) cfg.active = provider;
     saveCfg(cfg);
   }
+  function ownKeys() { return configuredProviders().some(function (k) { return k !== 'jpnotes'; }); }
   function configuredProviders() { return cfg ? Object.keys(cfg.profiles).filter(function (k) { return PROVIDERS[k]; }) : []; }
 
   function loadModelCache() { try { return JSON.parse(localStorage.getItem(MODELS_KEY)) || {}; } catch (e) { return {}; } }
@@ -195,7 +203,7 @@
   }
   var pendingSource = 'typed';   // 'typed' | 'quick' | 'selection' | 'retry' — set before send()
 
-  var cfg = loadCfg();
+  var cfg = loadCfg() || defaultCfg();
   var history = loadHist();      // [{role:'user'|'assistant', content}]
   var busy = false, abort = null;
   var panel, msgsEl, inputEl, sendBtn, settingsEl, modelLabel, scopeSel;
@@ -539,7 +547,6 @@
     var menu = panel.querySelector('.ai-model-menu');
     modelLabel.addEventListener('click', function (e) {
       e.stopPropagation();
-      if (!cfg) { showSettings(true); return; }
       if (!menu.hidden) { menu.hidden = true; return; }
       renderMenu();
       configuredProviders().forEach(function (k) {
@@ -660,17 +667,20 @@
   function autosize() { inputEl.style.height = 'auto'; inputEl.style.height = Math.min(inputEl.scrollHeight + 2, window.innerHeight * 0.4) + 'px'; }
 
   function renderAll() {
-    modelLabel.textContent = cfg ? (PROVIDERS[cfg.active] || { name: cfg.active }).name.split(' ')[0] + ' · ' + active().model + (cfg.effort ? ' · ' + effortLabel(cfg.effort) : '') + ' ▾' : t('未设置 ▾', 'not set ▾');
+    modelLabel.textContent = (PROVIDERS[cfg.active] || { name: cfg.active }).name.split(' ')[0] + ' · ' + active().model + (cfg.effort ? ' · ' + effortLabel(cfg.effort) : '') + ' ▾';
     msgsEl.innerHTML = '';
-    panel.querySelector('.ai-input').hidden = !cfg;
+    panel.querySelector('.ai-input').hidden = false;
     panel.querySelector('.ai-clear').hidden = !history.length;
-    if (!cfg) { renderWizard(); return; }
     if (!history.length) {
       var quick = isEn()
         ? ['Explain the hardest grammar point in this lesson simply', 'Give me 5 fresh example sentences using this lesson’s grammar', 'Quiz me with 5 multiple-choice questions', 'How do the grammar points in this lesson differ from each other?']
         : ['用最简单的话解释这一课最难的语法点', '用这一课的语法再造 5 个新例句', '出 5 道选择题考考我', '这一课的几个语法点之间有什么区别？'];
       msgsEl.innerHTML = '<div class="ai-note">' + esc(t('AI 已读过这一课的内容，可以直接提问；也可以在正文里选中一段文字后点「问 AI」。', 'The AI has read this lesson. Ask away, or select any text in the lesson and click "Ask AI".')) + '</div>' +
-        '<div class="ai-quicks">' + quick.map(function (q) { return '<button type="button" class="ai-quick" data-q="' + esc(q) + '">' + esc(q) + '</button>'; }).join('') + '</div>';
+        '<div class="ai-quicks">' + quick.map(function (q) { return '<button type="button" class="ai-quick" data-q="' + esc(q) + '">' + esc(q) + '</button>'; }).join('') + '</div>' +
+        (cfg.active === 'jpnotes' ? '<p class="ai-note ai-free-note">' + esc(t('现在用的是本站提供的免费模型（每人每天 20 次）。想用更强的模型？', 'You are on the free model this site provides (20 questions a day). Want a stronger model? ')) +
+          '<button type="button" class="ai-own-key">' + esc(t('用自己的 API key', 'Use your own API key')) + '</button></p>' : '');
+      var own = msgsEl.querySelector('.ai-own-key');
+      if (own) own.addEventListener('click', function () { track('ai_wizard', { step: 'start' }); renderWizard(); });
       return;
     }
     history.forEach(function (m, i) { appendMsg(m.role, m.content, i === history.length - 1); });
@@ -708,7 +718,10 @@
     var el = document.createElement('div');
     el.className = 'ai-msg ai-error';
     var hint = '', p = cfg && PROVIDERS[cfg.active];
-    if (/Failed to fetch|NetworkError|Load failed/i.test(msg)) {
+    if (cfg.active === 'jpnotes') {
+      // The relay's own messages already say what to do; only a dead connection needs a word.
+      if (/Failed to fetch|NetworkError|Load failed/i.test(msg)) hint = t('（连不上本站的 AI 服务，请稍后再试，或在设置里填自己的 API key。）', '(Cannot reach the site\u2019s AI relay; try again later, or add your own API key in settings.)');
+    } else if (/Failed to fetch|NetworkError|Load failed/i.test(msg)) {
       hint = p && p.group === 'local'
         ? t('（连不上本地服务：确认它在运行、Chrome 已允许访问本地网络，且是用 OLLAMA_ORIGINS=' + location.origin + ' 启动的。）', '(Cannot reach the local server: make sure it is running, Chrome allowed local-network access, and it was started with OLLAMA_ORIGINS=' + location.origin + '.)')
         : t('（网络错误：通常是服务商不允许浏览器直连 (CORS)、base URL 写错，或网络不通。可改用 OpenRouter / 硅基流动等中转。）', '(Network error: usually the provider blocks browser calls (CORS), the base URL is wrong, or you are offline. A relay like OpenRouter works around CORS.)');
@@ -748,7 +761,6 @@
   function send(text) {
     text = (text || '').trim();
     if (!text || busy) return;
-    if (!cfg) { pendingSource = 'typed'; renderAll(); return; }
     var source = pendingSource, t0 = Date.now();
     pendingSource = 'typed';
     if (!history.length) msgsEl.innerHTML = '';
@@ -818,13 +830,14 @@
     if (!pick) {
       msgsEl.innerHTML =
         '<div class="ai-wiz">' +
-          '<p class="ai-wiz-lead">' + esc(t('要用 AI 问答，需要一个模型服务商的 API key（一般几分钟就能创建）。密钥只存在你的浏览器里，本站没有服务器。', 'Asking the AI needs an API key from a model provider (usually takes a couple of minutes to create). The key stays in your browser; this site has no server.')) + '</p>' +
+          '<p class="ai-wiz-lead">' + esc(t('用自己的模型服务商 API key（一般几分钟就能创建），就不受本站免费额度限制，也能选更强的模型。密钥只存在你的浏览器里，浏览器直接连服务商，不经过本站。', 'With your own API key from a model provider (usually a couple of minutes to create) you skip the site\u2019s free limits and can pick stronger models. The key stays in your browser, which talks to the provider directly, not through this site.')) + '</p>' +
           '<p class="ai-wiz-step">' + esc(t('1 · 选一家开始', '1 · Pick a provider')) + '</p>' +
           '<div class="ai-wiz-cards">' + recs.map(function (k) {
             var p = PROVIDERS[k];
             return '<button type="button" class="ai-wiz-card" data-p="' + k + '"><b>' + esc(p.name) + '</b><span>' + esc(isEn() ? p.freeEn : p.freeZh) + '</span></button>';
           }).join('') + '</div>' +
           '<button type="button" class="ai-wiz-more">' + esc(t('其他服务商 / 本地 Ollama / OpenAI / Claude…', 'Other providers / local Ollama / OpenAI / Claude…')) + '</button>' +
+          '<button type="button" class="ai-wiz-more ai-wiz-cancel">' + esc(t('← 返回', '← Back')) + '</button>' +
           '<p class="ai-wiz-priv"><a href="' + GUIDE_URL + '" target="_blank" rel="noopener">' + esc(t('图文设置指南', 'Setup guide')) + '</a> · <a href="' + PRIVACY_URL + '" target="_blank" rel="noopener">' + esc(t('隐私说明', 'Privacy')) + '</a> · <a href="' + SOURCE_URL + '" target="_blank" rel="noopener">' + esc(t('源码', 'Source')) + '</a></p>' +
         '</div>';
       msgsEl.querySelector('.ai-wiz-cards').addEventListener('click', function (e) {
@@ -833,6 +846,8 @@
         renderWizard(b.getAttribute('data-p'));
       });
       msgsEl.querySelector('.ai-wiz-more').addEventListener('click', function () { track('ai_wizard', { step: 'more' }); showSettings(true); });
+      msgsEl.querySelector('.ai-wiz-cancel').addEventListener('click', renderAll);
+      panel.querySelector('.ai-input').hidden = true;
       return;
     }
     var p = PROVIDERS[pick];
@@ -859,9 +874,8 @@
       var c = { provider: pick, base: p.base, key: key, model: p.model, effort: '' };
       form.querySelector('.ai-save').disabled = true; msg.classList.remove('ai-hint-err'); msg.textContent = t('正在测试连接…', 'Testing the connection…');
       testConnection(c).then(function () {
-        cfg = { v: 2, active: pick, profiles: {}, effort: '', session: form.querySelector('[name=session]').checked };
-        cfg.profiles[pick] = { base: p.base, key: key, model: p.model };
-        saveCfg(cfg);
+        cfg.session = form.querySelector('[name=session]').checked;
+        setProfile(pick, { base: p.base, key: key, model: p.model }, true);
         track('ai_setup', { first: true, session_only: cfg.session, custom_host: false, via: 'wizard' });
         renderAll();
         setTimeout(function () { inputEl.focus(); }, 0);
@@ -879,15 +893,15 @@
   function showSettings(on, draft) {
     settingsEl.hidden = !on;
     msgsEl.hidden = on;
-    panel.querySelector('.ai-input').hidden = on || !cfg;
-    if (on) renderSettings(draft); else if (!cfg) renderAll();
+    panel.querySelector('.ai-input').hidden = on;
+    if (on) renderSettings(draft);
   }
   function profileFor(k) {
     var p = PROVIDERS[k], saved = cfg && cfg.profiles[k];
     return saved ? { provider: k, base: saved.base, key: saved.key || '', model: saved.model } : { provider: k, base: p.base, key: '', model: p.model };
   }
   function renderSettings(draft) {
-    var cur = draft || (cfg ? assign(profileFor(cfg.active), { session: cfg.session, effort: cfg.effort || '' }) : assign(profileFor(RECOMMEND[isEn() ? 'en' : 'zh'][0]), { session: false, effort: '' }));
+    var cur = draft || assign(profileFor(cfg.active === 'jpnotes' ? RECOMMEND[isEn() ? 'en' : 'zh'][0] : cfg.active), { session: cfg.session, effort: cfg.effort || '' });
     var configured = configuredProviders();
     settingsEl.innerHTML =
       '<label>' + esc(t('服务商', 'Provider')) + '<select name="provider">' +
@@ -912,8 +926,9 @@
       '<label class="ai-check"><input type="checkbox" name="session"' + (cur.session ? ' checked' : '') + '> ' +
         esc(t('只在本次会话保存密钥（关闭标签页后自动清除，公用电脑请勾选）', 'Keep keys for this tab only (cleared when the tab closes; use on shared computers)')) + '</label>' +
       '<div class="ai-privacy"><b>🔒 ' + esc(t('隐私与安全', 'Privacy & security')) + '</b><ul>' +
-        '<li>' + esc(t('本站是纯静态页面，没有服务器。密钥只存在你这台设备的浏览器里，不会上传。', 'This site is static HTML with no server. Your keys live only in this browser on this device and are never uploaded.')) + '</li>' +
-        '<li>' + esc(t('提问时，浏览器把笔记内容和你的问题直接发给你选的服务商。页面设有安全策略 (CSP) 白名单，浏览器会拦截发往任何其他域名的请求。', 'When you ask, your browser sends the notes and your question straight to the provider you chose. A Content-Security-Policy allowlist makes the browser block requests to any other domain.')) + '</li>' +
+        '<li>' + esc(t('你自己的密钥只存在你这台设备的浏览器里，不会上传到本站。', 'Your own keys live only in this browser on this device and are never sent to this site.')) + '</li>' +
+        '<li>' + esc(t('用自己的 key 提问时，浏览器把笔记内容和你的问题直接发给你选的服务商。页面设有安全策略 (CSP) 白名单，浏览器会拦截发往任何其他域名的请求。', 'With your own key, your browser sends the notes and your question straight to the provider you chose. A Content-Security-Policy allowlist makes the browser block requests to any other domain.')) + '</li>' +
+        '<li>' + esc(t('只有「本站免费」这一项经过本站的中转服务 (ai.jpnotes.dev，运行在 Cloudflare)；它不记录问题和回答。', 'Only the "Free" option goes through the site\u2019s relay (ai.jpnotes.dev, on Cloudflare); it does not log questions or answers.')) + '</li>' +
         '<li>' + esc(t('自行验证：按 F12 打开 Network 面板再提问，只会看到对服务商域名的请求。', 'Verify it yourself: open DevTools (F12) → Network and ask a question; only requests to the provider’s domain appear.')) + '</li>' +
         '<li><a href="' + SOURCE_URL + '" target="_blank" rel="noopener">' + esc(t('查看源码', 'Read the source')) + '</a> · <a href="' + PRIVACY_URL + '" target="_blank" rel="noopener">' + esc(t('详细说明', 'Full explanation')) + '</a></li>' +
       '</ul></div>' +
@@ -921,7 +936,7 @@
         '<button type="submit" class="ai-save">' + esc(t('测试并保存', 'Test and save')) + '</button>' +
         '<button type="button" class="ai-cancel">' + esc(t('取消', 'Cancel')) + '</button>' +
         '<button type="button" class="ai-remove" hidden>' + esc(t('删除这家', 'Remove this one')) + '</button>' +
-        (cfg ? '<button type="button" class="ai-forget">' + esc(t('清除全部密钥', 'Forget all keys')) + '</button>' : '') +
+        (ownKeys() ? '<button type="button" class="ai-forget">' + esc(t('清除全部密钥', 'Forget all keys')) + '</button>' : '') +
       '</div>';
     var sel = settingsEl.querySelector('[name=provider]'), base = settingsEl.querySelector('[name=base]'),
         key = settingsEl.querySelector('[name=key]'), model = settingsEl.querySelector('[name=model]'),
@@ -1002,7 +1017,7 @@
       if (!checkHost()) return;
       saveBtn.disabled = true; hint.classList.remove('ai-hint-err'); hint.textContent = t('正在测试连接…', 'Testing the connection…');
       testConnection(next).then(function () {
-        var first = !cfg, changed = !cfg || cfg.active !== next.provider || active().model !== next.model;
+        var first = !ownKeys(), changed = cfg.active !== next.provider || active().model !== next.model;
         setProfile(next.provider, { base: next.base, key: next.key, model: next.model }, true);
         cfg.session = session; cfg.effort = effort; saveCfg(cfg);
         if (changed) track('ai_setup', { first: first, session_only: session, custom_host: hostOf(next.base) !== hostOf(p.base), via: 'settings' });
@@ -1020,7 +1035,7 @@
       if (!cfg || !cfg.profiles[sel.value]) return;
       delete cfg.profiles[sel.value];
       var left = configuredProviders();
-      if (!left.length) { forgetCfg(); cfg = null; showSettings(false); return; }
+      if (!left.length) { forgetCfg(); cfg = defaultCfg(); showSettings(false); renderAll(); return; }
       if (cfg.active === sel.value) cfg.active = left[0];
       saveCfg(cfg); track('ai_forget', { one: true });
       showSettings(false); renderAll();
@@ -1028,8 +1043,8 @@
     var forget = settingsEl.querySelector('.ai-forget');
     if (forget) forget.addEventListener('click', function () {
       track('ai_forget', {});
-      forgetCfg(); cfg = null;
-      showSettings(false);
+      forgetCfg(); cfg = defaultCfg();
+      showSettings(false); renderAll();
     });
   }
 
@@ -1040,8 +1055,8 @@
     refreshAuto();
     panel.removeAttribute('aria-hidden');
     if (prefill) { inputEl.value = prefill; autosize(); }
-    if (cfg) setTimeout(function () { inputEl.focus(); inputEl.selectionStart = inputEl.selectionEnd = inputEl.value.length; }, 260);
-    track('ai_open', { configured: !!cfg });
+    setTimeout(function () { inputEl.focus(); inputEl.selectionStart = inputEl.selectionEnd = inputEl.value.length; }, 260);
+    track('ai_open', { configured: ownKeys() });
   }
   function close() {
     document.body.classList.remove('ai-open');

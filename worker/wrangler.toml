@@ -1,0 +1,23 @@
+name = "jpnotes-ai"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+workers_dev = false
+routes = [{ pattern = "ai.jpnotes.dev", custom_domain = true }]
+
+# No request logging: questions and IPs never land in Cloudflare logs.
+[observability]
+enabled = false
+
+[ai]
+binding = "AI"
+
+[[durable_objects.bindings]]
+name = "QUOTA"
+class_name = "Quota"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Quota"]
+
+# Secrets (set once, never committed):
+#   npx wrangler secret put IP_SALT      # any random string
