@@ -118,6 +118,8 @@
       saveCfg(raw);
     }
     if (!raw.profiles || !raw.profiles[raw.active]) return null;
+    // Configs saved before the free relay existed: offer it in the model menu too.
+    if (!raw.profiles.jpnotes) raw.profiles.jpnotes = defaultCfg().profiles.jpnotes;
     return raw;
   }
   // No saved config → the site's free relay, so the panel works with no setup.
