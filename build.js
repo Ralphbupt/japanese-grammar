@@ -1480,6 +1480,7 @@ async function main() {
     <a href="https://podcast.jpnotes.dev/" target="_blank">Podcast</a>
     <a href="${SITE_PATH}about/">关于</a>
     <a href="https://github.com/Ralphbupt" target="_blank">GitHub</a>
+    <a href="https://liko.page/" target="_blank" rel="author">liko.page</a>
   </div>
 </nav>
 <script>
