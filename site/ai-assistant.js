@@ -25,6 +25,7 @@
   var MAX_CONTEXT_CHARS = 30000;
   var MAX_HISTORY_MSGS = 24;          // kept per lesson (12 turns); older ones are dropped
   var SEND_TURNS = 6;                 // turns sent with each request
+  var FREE_SEND_TURNS = 2;            // fewer on the site's free model: earlier answers are the bulk of a follow-up's tokens
 
   // group: 'intl' | 'cn' | 'local' | 'relay'. kind: 'anthropic' | 'openai' (any
   // /chat/completions-compatible endpoint). Model names drift; the ⟳ button in
@@ -796,7 +797,7 @@
       if (isThinking) think += chunk; else reply += chunk;
       if (!raf) raf = requestAnimationFrame(function () { raf = 0; render(); scrollBottom(); });
     }
-    var msgs = history.slice(-SEND_TURNS * 2).map(function (m) { return { role: m.role, content: m.content }; });
+    var msgs = history.slice(-(cfg.active === 'jpnotes' ? FREE_SEND_TURNS : SEND_TURNS) * 2).map(function (m) { return { role: m.role, content: m.content }; });
     var sc = source === 'quick' ? -1 : effectiveScope();
     var sys = systemPrompt(sc);
     var call = prov.kind === 'anthropic' ? callAnthropic : callOpenAI;
