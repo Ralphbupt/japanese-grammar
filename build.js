@@ -1651,14 +1651,14 @@ ${SETTINGS_SCRIPT}`;
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Japanese Grammar Notes | 日语语法笔记 – N5→N2 in 8 Weeks</title>
-<meta name="description" content="Free structured Japanese grammar notes from N5 to N2 in 8 weeks. Bilingual (Japanese + Chinese) with conjugation rules, example sentences, and spaced repetition.">
+<meta name="description" content="免费的日语语法笔记，8 周从 JLPT N5 学到 N2：每个语法点都有接续规则、例句、例句发音和辨析，附 Anki 卡组。Free JLPT N5–N2 Japanese grammar notes in Chinese and English.">
 <meta name="keywords" content="Japanese grammar, JLPT N2, N5, N4, N3, 日语语法, 日本語文法, grammar notes, spaced repetition, 语法笔记">
 <link rel="canonical" href="${SITE}">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Japanese Grammar Notes | 日语语法笔记 – N5→N2">
-<meta property="og:description" content="Free structured Japanese grammar notes from N5 to N2 in 8 weeks. Bilingual with examples and spaced repetition.">
+<meta property="og:description" content="免费的日语语法笔记，8 周从 JLPT N5 学到 N2：接续规则、例句、发音和 Anki 卡组。Free JLPT N5–N2 grammar notes.">
 <meta property="og:url" content="${SITE}">
 <meta property="og:image" content="${SITE}og-image.png">
 <meta property="og:image:width" content="1200">
@@ -1669,7 +1669,7 @@ ${SETTINGS_SCRIPT}`;
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Japanese Grammar Notes | 日语语法笔记 – N5→N2">
-<meta name="twitter:description" content="Free structured Japanese grammar notes from N5 to N2 in 8 weeks.">
+<meta name="twitter:description" content="免费的日语语法笔记，8 周从 JLPT N5 学到 N2。Free JLPT N5–N2 grammar notes.">
 <meta name="twitter:image" content="${SITE}og-image.png">
 
 <!-- Structured Data -->
