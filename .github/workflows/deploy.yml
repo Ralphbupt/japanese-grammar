@@ -43,6 +43,12 @@ jobs:
       - run: cp -r audio dist/audio
       - run: python build-anki.py
 
+      # Snapshot the sitemap that is live right now, before this deploy replaces
+      # it, so indexnow.mjs can submit only the URLs whose lastmod changed.
+      - name: Save live sitemap
+        continue-on-error: true
+        run: curl -sf https://jpnotes.dev/sitemap.xml -o prev-sitemap.xml || rm -f prev-sitemap.xml
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
@@ -50,7 +56,7 @@ jobs:
       - id: deployment
         uses: actions/deploy-pages@v4
 
-      # Notify Bing/Yandex/etc. of the current URL set (Google ignores IndexNow).
+      # Notify Bing/Yandex/etc. of pages changed by this deploy (Google ignores IndexNow).
       # Runs after deploy so the key file at /<key>.txt is already live for
       # verification. Non-fatal: a ping failure must never block the deploy.
       - name: Ping IndexNow
