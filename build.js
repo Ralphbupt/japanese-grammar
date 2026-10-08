@@ -501,9 +501,16 @@ const LESSON_KEYWORDS = {
 
 // ─── Helpers ───
 function gitLastMod(filePath) {
+  const t = gitLastModTime(filePath);
+  return t ? t.slice(0, 10) : null;
+}
+
+// Full ISO timestamp of the last commit. The sitemap uses this rather than the
+// bare date so indexnow.mjs can tell a second edit on the same day apart from
+// no edit at all when it diffs the new sitemap against the deployed one.
+function gitLastModTime(filePath) {
   try {
-    const date = execSync(`git log -1 --format=%aI -- "${filePath}"`, { encoding: "utf-8" }).trim();
-    return date ? date.slice(0, 10) : null;
+    return execSync(`git log -1 --format=%aI -- "${filePath}"`, { encoding: "utf-8" }).trim() || null;
   } catch { return null; }
 }
 
@@ -2366,7 +2373,7 @@ ${APP_PREFS_JS}
   console.log(`  Generated ${stubCount} day → lesson redirect stubs`);
 
   // ─── Sitemap ───
-  const homeMod = gitLastMod("schedule.md") || today;
+  const homeMod = gitLastModTime("schedule.md") || today;
   const sitemapUrls = [`  <url>
     <loc>${SITE}</loc>
     <lastmod>${homeMod}</lastmod>
@@ -2377,7 +2384,7 @@ ${APP_PREFS_JS}
   if (aboutPageGenerated) {
     sitemapUrls.push(`  <url>
     <loc>${SITE}about/</loc>
-    <lastmod>${gitLastMod("pages/about.md") || today}</lastmod>
+    <lastmod>${gitLastModTime("pages/about.md") || today}</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>`);
@@ -2386,7 +2393,7 @@ ${APP_PREFS_JS}
   // content, so the page effectively changes when any lesson last changed.
   sitemapUrls.push(`  <url>
     <loc>${SITE}anki/</loc>
-    <lastmod>${gitLastMod("grammar") || today}</lastmod>
+    <lastmod>${gitLastModTime("grammar") || today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>`);
@@ -2395,13 +2402,13 @@ ${APP_PREFS_JS}
   for (const level of levelPageIds) {
     sitemapUrls.push(`  <url>
     <loc>${SITE}${level}/</loc>
-    <lastmod>${gitLastMod(`grammar/${level}`) || today}</lastmod>
+    <lastmod>${gitLastModTime(`grammar/${level}`) || today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>`);
   }
   for (const lesson of lessonPages) {
-    const mod = gitLastMod(lesson.filePath) || today;
+    const mod = gitLastModTime(lesson.filePath) || today;
     sitemapUrls.push(`  <url>
     <loc>${SITE}${lesson.id}/</loc>
     <lastmod>${mod}</lastmod>
