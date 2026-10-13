@@ -723,6 +723,16 @@ function hasSC(text) {
   return false;
 }
 
+// Japanese = has kana and no simplified-Chinese chars. A Chinese note that
+// only quotes Japanese — 常与「たとえ」搭配 — has its kana inside 「」 and
+// kanji (but no kana) outside them, so it doesn't count.
+function isJapaneseText(text) {
+  const kana = /[\u3040-\u309f\u30a0-\u30ff]/;
+  if (!kana.test(text) || hasSC(text)) return false;
+  const outsideQuotes = text.replace(/「[^」]*」|『[^』]*』/g, "");
+  return !(/[\u4e00-\u9fff]/.test(outsideQuotes) && !kana.test(outsideQuotes));
+}
+
 // Tag block elements as data-ja if their content (outside parens) is Japanese.
 // Japanese = has kana + no SC chars (after removing parenthetical Chinese).
 function tagElements(html) {
@@ -734,15 +744,10 @@ function tagElements(html) {
       const plain = content.replace(/<[^>]+>/g, "");
       // Remove text inside （…） for language detection
       const outsideParens = plain.replace(/（[^）]*）/g, "");
-      const hasKana = /[\u3040-\u309f\u30a0-\u30ff]/.test(outsideParens);
-      const hasSimplifiedChinese = hasSC(outsideParens);
-      // A Chinese note that only quotes Japanese — 常与「たとえ」搭配 — has
-      // its kana inside 「」 and kanji (but no kana) outside them.
-      const outsideQuotes = outsideParens.replace(/「[^」]*」|『[^』]*』/g, "");
-      const chineseAroundQuotes =
-        /[\u4e00-\u9fff]/.test(outsideQuotes) && !/[\u3040-\u309f\u30a0-\u30ff]/.test(outsideQuotes);
-
-      if (hasKana && !hasSimplifiedChinese && !chineseAroundQuotes) {
+      // Japanese if any =/→/： segment is Japanese: 「これはつまらないだった。
+      // → ❌ 错！…」 keeps its furigana; stripChineseSegments later drops the
+      // readings from the Chinese segment.
+      if (outsideParens.split(/[=＝→：]/).some(isJapaneseText)) {
         // Japanese element → tag it
         const tagged = openTag.replace(/^<(\w+)/, '<$1 data-ja');
         return tagged + content + closeTag;
@@ -861,6 +866,8 @@ const RUBY_FIXES = [
   // Japanese at all: no reading.
   { kanji: "去", from: /^さ$/, after: /^(る|い)?\s*[+＋]|^ます/, to: "" },
   { kanji: "去", from: /^さ$/, before: /ます$/, to: "" },
+  // ひとし is a name reading; 等 in these notes is Chinese "etc.".
+  { kanji: "等", from: /^ひとし$/, to: "" },
   // Rain/snow 降り続ける, 降りそう — ふる, not おりる.
   { kanji: "降", from: /^お$/, before: /[雨雪][がはも][^。]*$/, after: /^[りるら]/, to: "ふ" },
 ];
@@ -954,21 +961,43 @@ function stripParensChinese(html) {
   });
 }
 
-// Strip ruby from Chinese glosses inside a Japanese element: the segment
-// after =, → or ： that has kanji but no kana (ようにしている = 一直在注意,
-// → 不用早起). Quoted 「…」 Japanese doesn't count as kana.
-const GLOSS_SPLIT = /(\s*[=＝→：]\s*)(?![^<]*>)/;
+// Split on =, →, ： outside （…）/(…) and outside tags. Delimiters are kept
+// as their own (odd-index) entries.
+function splitGloss(str) {
+  const out = [];
+  let depth = 0, inTag = false, cur = "";
+  for (const ch of str) {
+    if (cur.endsWith("<rp>")) { cur += ch; continue; }  // ruby's own (…)
+    if (ch === "<") inTag = true;
+    else if (ch === ">") inTag = false;
+    else if (!inTag && (ch === "（" || ch === "(")) depth++;
+    else if (!inTag && (ch === "）" || ch === ")")) depth = Math.max(0, depth - 1);
+    else if (!inTag && depth === 0 && "=＝→：".includes(ch)) {
+      out.push(cur, ch);
+      cur = "";
+      continue;
+    }
+    cur += ch;
+  }
+  out.push(cur);
+  return out;
+}
+
+// Strip ruby from Chinese glosses inside a Japanese element: a segment after
+// =, → or ： that is Chinese (ようにしている = 一直在注意, → ❌ 错！…).
+// Quoted 「…」 Japanese doesn't count as kana.
 function stripChineseSegments(html) {
   return html.replace(/(<(li|p|td|th|dd|dt|blockquote|summary)\b[^>]*\bdata-ja\b[^>]*>)([\s\S]*?)(<\/\2>)/g,
     (m, open, tag, content, close) => {
-      if (!GLOSS_SPLIT.test(content)) return m;
-      const out = content.split(GLOSS_SPLIT).map((seg, i) => {
+      const parts = splitGloss(content);
+      if (parts.length === 1) return m;
+      const out = parts.map((seg, i) => {
         if (i % 2) return seg;
         const plain = seg
           .replace(/<rt>[^<]*<\/rt>|<rp>[^<]*<\/rp>/g, "")
           .replace(/<[^>]+>/g, "")
-          .replace(/（[^）]*）|「[^」]*」|『[^』]*』/g, "");
-        if (/[\u4e00-\u9fff]/.test(plain) && !/[\u3040-\u309f\u30a0-\u30ff]/.test(plain)) {
+          .replace(/（[^）]*）|\([^)]*\)|「[^」]*」|『[^』]*』/g, "");
+        if (/[\u4e00-\u9fff]/.test(plain) && (hasSC(plain) || !/[\u3040-\u309f\u30a0-\u30ff]/.test(plain))) {
           return seg.replace(/<ruby>([^<]*)<rp>\(<\/rp><rt>[^<]*<\/rt><rp>\)<\/rp><\/ruby>/g, "$1");
         }
         return seg;
@@ -1151,6 +1180,7 @@ function audioText(content) {
   ) return "";
   const plain = outside
     .replace(/(^|\s)[A-ZＡ-Ｚ][：:]\s*/g, "$1")  // dialogue labels A： B：
+    .replace(/^[\u4e00-\u9fff]{1,4}[：:]\s*/, "")  // scene labels 面接：
     .replace(/[→❌✓✗⚠️📖↑↓←→●■□▶︎•·…✅⭕○◯]/g, "")
     .replace(/\s+/g, " ")
     .trim();
