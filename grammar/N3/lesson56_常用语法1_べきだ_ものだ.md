@@ -117,14 +117,14 @@ This lesson focuses on grammar related to "obligation / necessity / general trut
 
 ### 辨析||Comparison
 :::zh
-| 表达 | 意味 | ニュアンス |
+| 表达 | 含义 | 语感 |
 |------|------|-----------|
 | しかない | 只能做~ | 无奈、别无选择 |
 | ほかない | 只能做~（书面） | 同「しかない」，更正式 |
 | わけにはいかない | 不能做~ | 道义上不允许 |
 
 > 「歩くしかない」→ 只能走（没别的办法）
-> 「歩くわけにはいかない」→ 不能走（比如受伤了不应该走）
+> 「歩くわけにはいかない」→ 不能走着去（不是走不动，而是出于情理/责任不能这样做，比如要陪着客人）
 :::
 :::en
 | Expression | Meaning | Nuance |
@@ -134,7 +134,7 @@ This lesson focuses on grammar related to "obligation / necessity / general trut
 | わけにはいかない | Can't do… | Morally/socially unacceptable |
 
 > 「歩くしかない」→ can only walk (no other way)
-> 「歩くわけにはいかない」→ can't walk (e.g., injured, shouldn't walk)
+> 「歩くわけにはいかない」→ can't (in good conscience) go on foot — not a physical inability, but circumstances or duty rule it out (e.g., you're escorting a guest)
 :::
 
 ---
@@ -157,10 +157,10 @@ This lesson focuses on grammar related to "obligation / necessity / general trut
 
 ### 含义||Meaning
 :::zh
-"应该做~"。表达说话人认为这是正确的做法、义务或责任。语气较强，带有道德判断。不用于个人喜好（不能说「ケーキを食べるべきだ」）。
+"应该做~"。表达说话人认为这是正确的做法、义务或责任。语气较强，带有道德判断。一般不用于单纯的个人喜好（想吃蛋糕时说「ケーキを食べたい」，不说「ケーキを食べるべきだ」；后者只在强烈推荐时才用）。
 :::
 :::en
-"Should…" / "Ought to…" Expresses the speaker's belief that something is the right thing to do — a duty or responsibility. Strong tone with moral judgment. Not used for personal preferences (you can't say 「ケーキを食べるべきだ」).
+"Should…" / "Ought to…" Expresses the speaker's belief that something is the right thing to do — a duty or responsibility. Strong tone with moral judgment. Not normally used for mere personal preferences (if you want cake you say 「ケーキを食べたい」, not 「ケーキを食べるべきだ」 — the latter only works as a strong recommendation).
 :::
 
 ### 例句||Example Sentences
@@ -335,8 +335,8 @@ Multiple meanings:
 3. そんなに緊張する（　）よ。大丈夫。
    a. わけにはいかない　b. べきではない　c. ことはない
 
-4. 嘘をつく（　）。
-   a. べきではない　b. しかない　c. ことはない
+4. どんな理由があっても、嘘をつく（　）。
+   a. べきではない　b. しかない　c. ものだ
 
 5. 人間は誰でも間違える（　）。
    a. べきだ　b. ものだ　c. しかない
@@ -361,8 +361,8 @@ Multiple meanings:
 3. そんなに緊張する（　）よ。大丈夫。
    a. わけにはいかない　b. べきではない　c. ことはない
 
-4. 嘘をつく（　）。
-   a. べきではない　b. しかない　c. ことはない
+4. どんな理由があっても、嘘をつく（　）。
+   a. べきではない　b. しかない　c. ものだ
 
 5. 人間は誰でも間違える（　）。
    a. べきだ　b. ものだ　c. しかない

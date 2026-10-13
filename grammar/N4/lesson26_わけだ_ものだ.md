@@ -1,6 +1,6 @@
 # Lesson 26 – わけだ・ものだ||わけだ・ものだ
 
-## 本课单词表
+## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
@@ -140,9 +140,10 @@ Strongly denies a possibility — "There's no way" / "It's impossible":
 3. 人のものを勝手に使う**わけにはいかない**。（不能擅自用别人的东西。）
 
 **不能不做 = 必须做**（ない形+わけにはいかない）：
+
 4. 明日は試験だから、勉強しない**わけにはいかない**。（明天考试，不能不学习。）
 5. 約束したんだから、行かない**わけにはいかない**。（既然约好了，不能不去。）
-6. 体調が悪いが、今日は休む**わけにはいかない**。（虽然不舒服，但今天不能请假。）
+6. 体調が悪いが、大事な会議があるから、出社しない**わけにはいかない**。（虽然不舒服，但有重要的会，不能不去公司。）
 :::
 :::en
 Due to social norms, morality, or obligations:
@@ -153,9 +154,10 @@ Due to social norms, morality, or obligations:
 3. 人のものを勝手に使う**わけにはいかない**。(I can't just use other people's things without permission.)
 
 **Cannot not do = Must do** (ない-form + わけにはいかない):
+
 4. 明日は試験だから、勉強しない**わけにはいかない**。(I have an exam tomorrow, so I can't skip studying.)
 5. 約束したんだから、行かない**わけにはいかない**。(I made a promise, so I can't not go.)
-6. 体調が悪いが、今日は休む**わけにはいかない**。(I feel sick, but I can't take today off.)
+6. 体調が悪いが、大事な会議があるから、出社しない**わけにはいかない**。(I feel sick, but there's an important meeting, so I can't not go in to the office.)
 :::
 
 ### わけ系列总对比||わけ Series — Complete Comparison

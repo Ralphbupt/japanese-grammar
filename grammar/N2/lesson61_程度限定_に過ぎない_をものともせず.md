@@ -124,17 +124,17 @@ This lesson covers N2-level grammar for degree and limitation. 「に過ぎな�
 ### 例句||Example Sentences
 :::zh
 1. 今回の成功は、チーム全員の努力の結果**にほかならない**。（这次成功正是全队努力的结果。）
-2. 環境問題は、人間の活動が原因である**にほかならない**。（环境问题不外乎是人类活动造成的。）
-3. 彼がここまで成長できたのは、両親の支え**にほかならない**。（他能成长到这个程度，正是因为父母的支持。）
+2. 環境問題の原因は、人間の活動**にほかならない**。（环境问题的原因不外乎是人类活动。）
+3. 彼がここまで成長できたのは、両親の支えがあった**からにほかならない**。（他能成长到这个程度，正是因为父母的支持。）
 4. この法律が作られたのは、市民の安全を守るため**にほかならない**。（制定这部法律正是为了保护市民的安全。）
-5. 彼女が合格できたのは、日々の積み重ね**にほかならない**。（她能合格正是日积月累的结果。）
+5. 彼女が合格できたのは、日々の積み重ねがあった**からにほかならない**。（她能合格正是因为日积月累的努力。）
 :::
 :::en
 1. 今回の成功は、チーム全員の努力の結果**にほかならない**。(This success is none other than the result of the entire team's effort.)
-2. 環境問題は、人間の活動が原因である**にほかならない**。(Environmental problems are none other than the result of human activity.)
-3. 彼がここまで成長できたのは、両親の支え**にほかならない**。(That he could grow this much is none other than thanks to his parents' support.)
+2. 環境問題の原因は、人間の活動**にほかならない**。(The cause of environmental problems is none other than human activity.)
+3. 彼がここまで成長できたのは、両親の支えがあった**からにほかならない**。(That he could grow this much is precisely because he had his parents' support.)
 4. この法律が作られたのは、市民の安全を守るため**にほかならない**。(This law was created for none other than the purpose of protecting citizens' safety.)
-5. 彼女が合格できたのは、日々の積み重ね**にほかならない**。(Her passing is none other than the result of daily accumulation of effort.)
+5. 彼女が合格できたのは、日々の積み重ねがあった**からにほかならない**。(She passed precisely because of the effort she built up day by day.)
 :::
 
 ---
@@ -237,14 +237,14 @@ This lesson covers N2-level grammar for degree and limitation. 「に過ぎな�
 2. 周囲の反対**もかまわず**、彼は会社を辞めた。（不顾周围人的反对，他辞了职。）
 3. 雨に濡れるの**もかまわず**、子供たちは外で遊んでいた。（不在乎被雨淋湿，孩子们在外面玩。）
 4. 服が汚れるの**もかまわず**、彼は泥の中に飛び込んだ。（不顾衣服会脏，他跳进了泥里。）
-5. 深夜だという**のもかまわず**、隣の部屋から大きな音楽が聞こえてくる。（不顾已是深夜，隔壁房间传来很大的音乐声。）
+5. 深夜だという**のもかまわず**、隣の人が大音量で音楽を流している。（隔壁的人不顾已是深夜，把音乐放得很大声。）
 :::
 :::en
 1. 人目**もかまわず**、大声で泣いた。(Without caring about people watching, I cried out loud.)
 2. 周囲の反対**もかまわず**、彼は会社を辞めた。(Regardless of opposition from those around him, he quit his job.)
 3. 雨に濡れるの**もかまわず**、子供たちは外で遊んでいた。(Not caring about getting wet in the rain, the children played outside.)
 4. 服が汚れるの**もかまわず**、彼は泥の中に飛び込んだ。(Without caring about getting his clothes dirty, he jumped into the mud.)
-5. 深夜だという**のもかまわず**、隣の部屋から大きな音楽が聞こえてくる。(Regardless of the fact that it's late at night, loud music is coming from the next room.)
+5. 深夜だという**のもかまわず**、隣の人が大音量で音楽を流している。(Without caring that it's late at night, the neighbor is playing music at full volume.)
 :::
 
 ---

@@ -100,7 +100,7 @@ Double negative → "It's not that I can't…" or "not impossible" — expresses
 - 動詞ない形（去ない）+ ずにはいられない
 - 「する」→「せずにはいられない」
 
-※ 注意：不用「ないではいられない」也可以，两者同义。
+※ 注意：也可以说「ないではいられない」，两者同义。
 :::
 :::en
 - Verb nai-stem (drop ない) + ずにはいられない
@@ -120,14 +120,14 @@ Double negative → "It's not that I can't…" or "not impossible" — expresses
 ### 例句||Example Sentences
 :::zh
 1. あの映画は感動的で、泣か**ずにはいられなかった**。（那部电影太感人了，忍不住哭了。）
-2. 彼の冗談を聞いて、笑わ**ずにはいられない**。（听了他的笑话忍不住笑。）
+2. 彼の冗談を聞いて、笑わ**ずにはいられなかった**。（听了他的笑话，忍不住笑了。）
 3. こんなひどいことを言われたら、怒ら**ずにはいられない**。（被说了这么过分的话，忍不住生气。）
 4. おいしそうなケーキを見ると、食べ**ずにはいられない**。（看到好吃的蛋糕忍不住想吃。）
 5. 不正を見たら、文句を言わ**ずにはいられない**性格だ。（看到不公正的事就忍不住要抱怨的性格。）
 :::
 :::en
 1. あの映画は感動的で、泣か**ずにはいられなかった**。(That movie was so moving, I couldn't help but cry.)
-2. 彼の冗談を聞いて、笑わ**ずにはいられない**。(Hearing his joke, I can't help but laugh.)
+2. 彼の冗談を聞いて、笑わ**ずにはいられなかった**。(Hearing his joke, I couldn't help but laugh.)
 3. こんなひどいことを言われたら、怒ら**ずにはいられない**。(Being told something this terrible, I can't help but get angry.)
 4. おいしそうなケーキを見ると、食べ**ずにはいられない**。(When I see a delicious-looking cake, I can't resist eating it.)
 5. 不正を見たら、文句を言わ**ずにはいられない**性格だ。(I have a personality where I can't help but complain when I see injustice.)
@@ -342,7 +342,7 @@ Double negative → "It's not that I can't…" or "not impossible" — expresses
 ### 接続||Conjugation
 :::zh
 - めったに + 動詞ない形
-- めったに + ない（形容词/名詞述語）
+- めったに + ない（形容词/名词谓语）
 
 ※ 汉字写作「滅多に」，但一般用假名。
 :::
@@ -409,10 +409,10 @@ Double negative → "It's not that I can't…" or "not impossible" — expresses
 **一、选择正确的语法**
 
 1. この映画を見たら、泣か（　　）。 a. ずにはいられない b. そうもない c. ないことはない
-2. 彼は（　　）嘘をつかない人だ。 a. 別に b. 決して c. めったに
+2. 彼は（　　）嘘をつかない人だ。 a. 別に b. 決して c. たまに
 3. 雨がやみ（　　）ね。傘を持って行こう。 a. ないことはない b. そうにない c. ずにはいられない
 4. 辛い物は食べられ（　　）が、あまり好きじゃない。 a. そうもない b. ないことはない c. ずにはいられない
-5. うちの猫は（　　）外に出ない。 a. 決して b. 別に c. めったに
+5. うちの猫は（　　）外に出ない。 a. たまに b. 別に c. めったに
 
 **二、用括号内的语法改写句子**
 
@@ -429,10 +429,10 @@ Double negative → "It's not that I can't…" or "not impossible" — expresses
 **Part 1: Choose the correct grammar**
 
 1. この映画を見たら、泣か（　　）。 a. ずにはいられない b. そうもない c. ないことはない
-2. 彼は（　　）嘘をつかない人だ。 a. 別に b. 決して c. めったに
+2. 彼は（　　）嘘をつかない人だ。 a. 別に b. 決して c. たまに
 3. 雨がやみ（　　）ね。傘を持って行こう。 a. ないことはない b. そうにない c. ずにはいられない
 4. 辛い物は食べられ（　　）が、あまり好きじゃない。 a. そうもない b. ないことはない c. ずにはいられない
-5. うちの猫は（　　）外に出ない。 a. 決して b. 別に c. めったに
+5. うちの猫は（　　）外に出ない。 a. たまに b. 別に c. めったに
 
 **Part 2: Rewrite using the grammar in parentheses**
 

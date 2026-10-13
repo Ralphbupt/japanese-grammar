@@ -613,7 +613,7 @@ Plain form + し
 5. ご飯を食べた**後で**、散歩します。（吃完饭之后散步。）
 6. 仕事が終わった**後で**、友達に会いました。（工作结束之后见了朋友。）
 7. 映画を見た**後で**、感想を話し合いました。（看完电影之后讨论了感想。）
-8. 卒業の**後で**、日本で働きたいです。（毕业之后想在日本工作。）
+8. 授業の**後で**、先生に質問しました。（下课之后向老师提了问题。）
 :::
 
 :::en
@@ -624,7 +624,7 @@ Plain form + し
 5. ご飯を食べた**後で**、散歩します。(I take a walk after eating.)
 6. 仕事が終わった**後で**、友達に会いました。(I met a friend after work ended.)
 7. 映画を見た**後で**、感想を話し合いました。(We discussed our impressions after watching the movie.)
-8. 卒業の**後で**、日本で働きたいです。(I want to work in Japan after graduation.)
+8. 授業の**後で**、先生に質問しました。(I asked the teacher a question after class.)
 :::
 
 ### 辨析：前に vs 後で vs てから||Contrast: 前に vs 後で vs てから
@@ -690,7 +690,7 @@ Plain form + し
 :::zh
 1. 日本語を勉強する**ために**、日本に来ました。（为了学日语来了日本。）
 2. 健康の**ために**、毎日運動しています。（为了健康每天运动。）
-3. 試験に合格する**ために**、一生懸命勉強しています。（为了考试合格在拼命学习。）
+3. 日本の大学に留学する**ために**、一生懸命勉強しています。（为了去日本的大学留学在拼命学习。）
 4. 家を買う**ために**、お金を貯めています。（为了买房在存钱。）
 5. 将来の**ために**、今から準備したほうがいい。（为了将来，最好现在就开始准备。）
 6. 家族の**ために**、毎日頑張って働いています。（为了家人每天努力工作。）
@@ -699,7 +699,7 @@ Plain form + し
 :::en
 1. 日本語を勉強する**ために**、日本に来ました。(I came to Japan in order to study Japanese.)
 2. 健康の**ために**、毎日運動しています。(I exercise every day for my health.)
-3. 試験に合格する**ために**、一生懸命勉強しています。(I'm studying hard in order to pass the exam.)
+3. 日本の大学に留学する**ために**、一生懸命勉強しています。(I'm studying hard in order to study abroad at a Japanese university.)
 4. 家を買う**ために**、お金を貯めています。(I'm saving money in order to buy a house.)
 5. 将来の**ために**、今から準備したほうがいい。(You should start preparing now for the future.)
 6. 家族の**ために**、毎日頑張って働いています。(I work hard every day for my family.)

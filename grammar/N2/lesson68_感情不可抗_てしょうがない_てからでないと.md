@@ -128,14 +128,14 @@ This lesson covers N2 grammar for "uncontrollable emotions" and "necessary preco
 1. 締め切りが近いので、のんびりし**てはいられない**。（截止日期快到了，不能再悠闲了。）
 2. みんなが頑張っているのに、自分だけ黙っ**てはいられない**。（大家都在努力，自己不能光坐着不说话。）
 3. こんな結果を見て、我慢し**てはいられない**。（看到这种结果，不能再忍了。）
-4. 問題がこれだけ深刻なら、何もしないでい**てはいられない**。（问题这么严重，不能什么都不做。）
+4. 問題がこれだけ深刻なら、何もせずに待っ**てはいられない**。（问题这么严重，不能什么都不做干等着。）
 5. 子供が泣いているのを見て、笑っ**てはいられなく**なった。（看到孩子在哭，笑不出来了。）
 :::
 :::en
 1. 締め切りが近いので、のんびりし**てはいられない**。(The deadline is approaching, so I can't just take it easy.)
 2. みんなが頑張っているのに、自分だけ黙っ**てはいられない**。(Everyone is working hard — I can't just stay silent.)
 3. こんな結果を見て、我慢し**てはいられない**。(Seeing results like these, I can't just endure it any longer.)
-4. 問題がこれだけ深刻なら、何もしないでい**てはいられない**。(If the problem is this serious, we can't just do nothing.)
+4. 問題がこれだけ深刻なら、何もせずに待っ**てはいられない**。(If the problem is this serious, we can't just sit and wait doing nothing.)
 5. 子供が泣いているのを見て、笑っ**てはいられなく**なった。(Seeing the child crying, I could no longer just stand there laughing.)
 :::
 
@@ -147,7 +147,7 @@ This lesson covers N2 grammar for "uncontrollable emotions" and "necessary preco
 | わけにはいかない | 不能…… | 道义/社会上不允许 |
 | ないわけにはいかない | 不能不…… | 双重否定，必须做 |
 
-> 「のんびりしてはいられない」= 客观上没时间悠闲了  
+> 「のんびりしてはいられない」= 说话人觉得情况紧迫，不能再悠闲了（主观的焦急感）  
 > 「のんびりするわけにはいかない」= 道义上不该悠闲
 :::
 :::en
@@ -157,7 +157,7 @@ This lesson covers N2 grammar for "uncontrollable emotions" and "necessary preco
 | わけにはいかない | can't (do) | Morally/socially not permissible |
 | ないわけにはいかない | must (do) | Double negative; have to do it |
 
-> 「のんびりしてはいられない」= objectively no time to relax  
+> 「のんびりしてはいられない」= the speaker feels it's too urgent to keep relaxing (subjective urgency)  
 > 「のんびりするわけにはいかない」= morally shouldn't relax
 :::
 

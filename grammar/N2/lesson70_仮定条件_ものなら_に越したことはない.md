@@ -128,14 +128,14 @@ This lesson covers N2 grammar for "hypothetical conditions" and "advice." 「も
 ### 例句||Example Sentences
 :::zh
 1. 上司に逆ら**おうものなら**、すぐにクビになるだろう。（要是胆敢违抗上司，马上就会被炒。）
-2. 一日でも遅刻し**ようものなら**、厳しく叱られる。（万一迟到哪怕一天，都会被严厉批评。）
+2. 一度でも遅刻し**ようものなら**、厳しく叱られる。（哪怕迟到一次，都会被严厉批评。）
 3. この秘密が漏れ**ようものなら**、会社は大変なことになる。（这个秘密万一泄露，公司就要出大事了。）
 4. 無断で欠勤し**ようものなら**、信頼を完全に失う。（要是擅自缺勤，会完全失去信任。）
 5. 約束を破ろ**うものなら**、二度と許してもらえないだろう。（要是敢违约，恐怕再也得不到原谅了。）
 :::
 :::en
 1. 上司に逆ら**おうものなら**、すぐにクビになるだろう。(If you dare defy your boss, you'll be fired on the spot.)
-2. 一日でも遅刻し**ようものなら**、厳しく叱られる。(If you're even one day late, you'll be scolded severely.)
+2. 一度でも遅刻し**ようものなら**、厳しく叱られる。(If you're late even once, you'll be scolded severely.)
 3. この秘密が漏れ**ようものなら**、会社は大変なことになる。(Should this secret leak, the company will be in serious trouble.)
 4. 無断で欠勤し**ようものなら**、信頼を完全に失う。(If you dare to be absent without notice, you'll completely lose trust.)
 5. 約束を破ろ**うものなら**、二度と許してもらえないだろう。(If you dare break your promise, you'll probably never be forgiven.)
@@ -238,14 +238,14 @@ This lesson covers N2 grammar for "hypothetical conditions" and "advice." 「も
 - 動詞辞書形 + に越したことはない
 - 動詞ない形 + に越したことはない
 - い形容詞 + に越したことはない
-- な形容詞 + な/である + に越したことはない
+- な形容詞語幹 / な形容詞である + に越したことはない
 - 名詞 + に越したことはない
 :::
 :::en
 - Verb dictionary form + に越したことはない
 - Verb nai-form + に越したことはない
 - i-adjective + に越したことはない
-- na-adjective + な/である + に越したことはない
+- na-adjective stem / na-adjective である + に越したことはない
 - Noun + に越したことはない
 :::
 
@@ -313,7 +313,7 @@ This lesson covers N2 grammar for "hypothetical conditions" and "advice." 「も
 - i-adjective plain form + ものがある
 :::
 
-### 含義||Meaning
+### 含义||Meaning
 :::zh
 "有一种……的感觉""让人觉得……"，表达说话人主观的、感性的印象或感受。多用于正面评价。
 :::
@@ -348,7 +348,7 @@ This lesson covers N2 grammar for "hypothetical conditions" and "advice." 「も
 2. 遅刻し（　　）、部長にひどく怒られる。
 3. 日本語がうまくなりたいなら、毎日話す（　　）。
 4. 旅行には、保険に入っておく（　　）。
-5. あの人に嘘をつ（　　）、もう信じてもらえないだろう。
+5. あの人を裏切るようなことをし（　　）、もう信じてもらえないだろう。
 
 **二、翻译成日语**
 
@@ -365,7 +365,7 @@ This lesson covers N2 grammar for "hypothetical conditions" and "advice." 「も
 2. 遅刻し（　　）、部長にひどく怒られる。
 3. 日本語がうまくなりたいなら、毎日話す（　　）。
 4. 旅行には、保険に入っておく（　　）。
-5. あの人に嘘をつ（　　）、もう信じてもらえないだろう。
+5. あの人を裏切るようなことをし（　　）、もう信じてもらえないだろう。
 
 **Part 2: Translate into Japanese**
 

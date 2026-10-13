@@ -50,14 +50,14 @@
 
 | 后面接什么 | 含义 | 什么时候学 |
 |-----------|------|-----------|
-| て + いる | 正在做/状态 | Day 5 |
-| て + ください | 请做…… | Day 5 |
-| て + もいい | 可以做…… | Day 5 |
-| て + はいけない | 不可以做…… | Day 5 |
-| て + から | 做完之后…… | Day 5 |
-| て + しまう | 做完了/遗憾 | Day 16 |
-| て + おく | 事先做好 | Day 16 |
-| て + あげる/もらう/くれる | 帮忙做 | Day 13 |
+| て + いる | 正在做/状态 | Lesson 05 |
+| て + ください | 请做…… | Lesson 05 |
+| て + もいい | 可以做…… | Lesson 05 |
+| て + はいけない | 不可以做…… | Lesson 05 |
+| て + から | 做完之后…… | Lesson 05 |
+| て + しまう | 做完了/遗憾 | Lesson 23 |
+| て + おく | 事先做好 | Lesson 24 |
+| て + あげる/もらう/くれる | 帮忙做 | Lesson 20 |
 
 所以**て形变对了，后面一大堆语法都自动会了**。
 :::
@@ -66,14 +66,14 @@ The て form cannot end a sentence on its own, but it is the **shared base for d
 
 | What follows | Meaning | When you'll learn it |
 |-----------|------|-----------|
-| て + いる | doing / state | Day 5 |
-| て + ください | please do… | Day 5 |
-| て + もいい | may do… | Day 5 |
-| て + はいけない | must not do… | Day 5 |
-| て + から | after doing… | Day 5 |
-| て + しまう | ended up doing / regret | Day 16 |
-| て + おく | do in advance | Day 16 |
-| て + あげる/もらう/くれる | do as a favor | Day 13 |
+| て + いる | doing / state | Lesson 05 |
+| て + ください | please do… | Lesson 05 |
+| て + もいい | may do… | Lesson 05 |
+| て + はいけない | must not do… | Lesson 05 |
+| て + から | after doing… | Lesson 05 |
+| て + しまう | ended up doing / regret | Lesson 23 |
+| て + おく | do in advance | Lesson 24 |
+| て + あげる/もらう/くれる | do as a favor | Lesson 20 |
 
 So **master the て form, and a huge number of grammar patterns come for free**.
 :::
@@ -154,13 +154,13 @@ Try saying them aloud:
 - 「かいて」→ smooth, i-t transition flows naturally
 :::
 
-#### 分组记忆法||Group memorization method
+#### 分组记忆法||Memorize by sets
 
 :::zh
 把9种结尾分成**4组**，每组的变化相同：
 :::
 :::en
-Group the 9 possible endings into **4 groups**, each with the same change pattern:
+Sort the 9 possible endings into **4 sets** (not to be confused with verb Groups 1–3), each with the same change pattern:
 :::
 
 ---
@@ -181,7 +181,7 @@ Group the 9 possible endings into **4 groups**, each with the same change patter
 > **超级例外**：行く → 行**って**（不是行いて！这是唯一不遵守规则的，死记。）
 :::
 :::en
-**Group 1: く→いて、ぐ→いで**
+**Set 1: く→いて、ぐ→いで**
 
 | Dictionary | て form | Change |
 |--------|------|---------|
@@ -211,7 +211,7 @@ Group the 9 possible endings into **4 groups**, each with the same change patter
 > 这组最好记：す全部变して。
 :::
 :::en
-**Group 2: す→して**
+**Set 2: す→して**
 
 | Dictionary | て form | Change |
 |--------|------|---------|
@@ -246,7 +246,7 @@ Group the 9 possible endings into **4 groups**, each with the same change patter
 > 记忆法：**つ、る、う** → 都变 **って**。可以记成"つるう三兄弟，都变って"。
 :::
 :::en
-**Group 3: つ→って、る→って、う→って (geminate consonant)**
+**Set 3: つ→って、る→って、う→って (geminate consonant)**
 
 Three different endings, all change to **っ+て**:
 
@@ -286,10 +286,10 @@ Three different endings, all change to **っ+て**:
 
 > 记忆法：**ぬ、ぶ、む** → 都变 **んで**。可以记成"ぬぶむ三兄弟，都变んで"。
 
-> 注意：这组是**で**不是て。和第1组的ぐ→いで一样，ぶ和む的浊音性质导致用了で。
+> 注意：这组是**で**不是て。和第1组的ぐ→いで一样都用で：ぶ是浊音，ぬ・む是鼻音，拨音「ん」后面的て也要浊化成で。
 :::
 :::en
-**Group 4: ぬ→んで、ぶ→んで、む→んで (nasal consonant)**
+**Set 4: ぬ→んで、ぶ→んで、む→んで (nasal consonant)**
 
 Three different endings, all change to **ん+で**:
 
@@ -306,7 +306,7 @@ Three different endings, all change to **ん+で**:
 
 > Memory trick: **ぬ, ぶ, む** → all become **んで**. Remember them as "the ぬぶむ trio, all change to んで".
 
-> Note: this group uses **で** not て. Same as Group 1's ぐ→いで — the voiced nature of ぶ and む causes で.
+> Note: this group uses **で** not て. Same as Set 1's ぐ→いで: ぶ is a voiced (濁音) sound, ぬ/む are nasals, and て after the nasal 「ん」 becomes で.
 :::
 
 ---
@@ -353,7 +353,7 @@ Three different endings, all change to **ん+で**:
 | 三类 | 来る | 来て（きて） | 死记 |
 :::
 :::en
-| Type | Dictionary | て form | Group |
+| Type | Dictionary | て form | Set |
 |------|--------|------|---------|
 | Group 1 | 書く | 書いて | ① く→いて |
 | Group 1 | 泳ぐ | 泳いで | ① ぐ→いで |
@@ -416,7 +416,7 @@ Three different endings, all change to **ん+で**:
 | する | し**て** | し**た** |
 | 来る | 来**て** | 来**た** |
 
-> **所以学会了て形 = 自动学会了た形。** て→た、で→だ，就这么简单。这个在Day 4会详细学。
+> **所以学会了て形 = 自动学会了た形。** て→た、で→だ，就这么简单。这个在 Lesson 07 会详细学。
 :::
 :::en
 You may have noticed: the て form change rules are almost identical to the **た form** (plain past tense) — just replace て/で with た/だ:
@@ -432,7 +432,7 @@ You may have noticed: the て form change rules are almost identical to the **�
 | する | し**て** | し**た** |
 | 来る | 来**て** | 来**た** |
 
-> **So mastering て form = automatically mastering た form.** て→た、で→だ — that simple. This will be covered in detail on Day 4.
+> **So mastering て form = automatically mastering た form.** て→た、で→だ — that simple. This will be covered in detail in Lesson 07.
 :::
 
 ---
@@ -647,7 +647,7 @@ The most basic use of て form is chaining multiple actions together — like "a
 | ❌ 食べる → 食べって | ✅ 食べる → 食べて | 食べる是**二类**，直接去る加て |
 | ❌ 見る → 見って | ✅ 見る → 見て | 見る是**二类**，不需要促音 |
 
-> **防错口诀**：先判断类别，再决定规则。如果不确定，查ます形——有り就是一类。
+> **防错口诀**：先判断类别，再决定规则。如果不确定，查词典确认类别（ます形里有「り」不一定是一类，如借ります是二类）。
 :::
 :::en
 | Wrong | Correct | Reason |
@@ -657,7 +657,7 @@ The most basic use of て form is chaining multiple actions together — like "a
 | ❌ 食べる → 食べって | ✅ 食べる → 食べて | 食べる is **Group 2** — just drop る and add て |
 | ❌ 見る → 見って | ✅ 見る → 見て | 見る is **Group 2** — no geminate consonant needed |
 
-> **Prevention tip**: Identify the group first, then apply the rule. If unsure, check the ます form — if り appears, it's Group 1.
+> **Prevention tip**: Identify the group first, then apply the rule. If unsure, check a dictionary (a り in the ます form doesn't prove Group 1 — 借ります is Group 2).
 :::
 
 ### 错误2：行く的て形||Mistake 2: て form of 行く
@@ -686,7 +686,7 @@ The most basic use of て form is chaining multiple actions together — like "a
 | ❌ 泳ぐ → 泳いて | ✅ 泳ぐ → 泳い**で** | ぐ结尾用で不用て |
 | ❌ 遊ぶ → 遊んて | ✅ 遊ぶ → 遊ん**で** | ぶ结尾用で不用て |
 
-> **规律**：浊音结尾（ぐ、ぶ、む、ぬ）→ 用**で**；清音结尾（く、す、つ、る、う）→ 用**て**。
+> **规律**：浊音ぐ・ぶ 和鼻音む・ぬ 结尾 → 用**で**；く、す、つ、る、う 结尾 → 用**て**。
 :::
 :::en
 | Wrong | Correct | Reason |
@@ -695,7 +695,7 @@ The most basic use of て form is chaining multiple actions together — like "a
 | ❌ 泳ぐ → 泳いて | ✅ 泳ぐ → 泳い**で** | ぐ-ending uses で not て |
 | ❌ 遊ぶ → 遊んて | ✅ 遊ぶ → 遊ん**で** | ぶ-ending uses で not て |
 
-> **Rule**: Voiced endings (ぐ、ぶ、む、ぬ) → use **で**; unvoiced endings (く、す、つ、る、う) → use **て**.
+> **Rule**: Endings ぐ/ぶ (voiced 濁音) and む/ぬ (nasals) → use **で**; endings く、す、つ、る、う → use **て**.
 :::
 
 ### 错误4：ます形和て形混在一起||Mistake 4: Mixing ます form and て form
@@ -722,7 +722,7 @@ The most basic use of て form is chaining multiple actions together — like "a
 
 > **Key understanding**: ます form and て form are **two completely independent sets of rules** — don't mix them.
 > - ます form: consistent rule (う-row → い-row + ます)
-> - て form: four groups of sound change rules
+> - て form: four sets of sound change rules
 >
 > Never think "first make the ます form, then swap ます for て" — this only works by coincidence for Group 2 and す-ending Group 1 verbs; everything else comes out wrong.
 :::
@@ -868,20 +868,20 @@ Identify whether each verb is Group 1, Group 2, or Group 3:
 14. 洗って（う→って，第3组）
 :::
 :::en
-1. 読んで (む→んで, Group 4)
-2. 書いて (く→いて, Group 1)
+1. 読んで (む→んで, Set 4)
+2. 書いて (く→いて, Set 1)
 3. 食べて (Group 2, drop る+て)
 4. 行って (**Exception!** Not 行いて)
-5. 話して (す→して, Group 2)
-6. 飲んで (む→んで, Group 4)
-7. 遊んで (ぶ→んで, Group 4)
-8. 帰って (る→って, Group 3. **Note: this is Group 1!**)
+5. 話して (す→して, Set 2)
+6. 飲んで (む→んで, Set 4)
+7. 遊んで (ぶ→んで, Set 4)
+8. 帰って (る→って, Set 3. **Note: this is a Group 1 verb!**)
 9. して (する→して, Group 3)
 10. 来て/きて (来る→来て, Group 3)
-11. 待って (つ→って, Group 3)
-12. 泳いで (ぐ→いで, Group 1. **Note: で not て!**)
+11. 待って (つ→って, Set 3)
+12. 泳いで (ぐ→いで, Set 1. **Note: で not て!**)
 13. 見て (Group 2, drop る+て)
-14. 洗って (う→って, Group 3)
+14. 洗って (う→って, Set 3)
 :::
 
 </details>
@@ -1006,7 +1006,7 @@ Find the error and correct it:
 2. ❌ 行いて → ✅ 行**って** (行く is the only exception, doesn't follow く→いて rule)
 3. ❌ 飲みて → ✅ 飲**んで** (て form is NOT ます stem + て! む→んで)
 4. ❌ いくて → ✅ **よくて** (all conjugations of いい start from よ)
-5. ❌ 泳いて → ✅ 泳い**で** (ぐ is voiced, use で not て)
+5. ❌ 泳いて → ✅ 泳い**で** (ぐ is voiced (濁音), use で not て)
 6. ❌ 食べって → ✅ 食べ**て** (食べる is Group 2, simply drop る+て, no geminate consonant)
 :::
 
@@ -1026,7 +1026,7 @@ Find the error and correct it:
 
 5. 起床后洗脸。
 6. 这家店又便宜又好吃。（安い = やすい、美味しい = おいしい）
-7. 下雨了，所以没去公园。（雨が降る = あめがふる）
+7. 下雨了，所以没能去公园。（雨が降る = あめがふる）
 :::
 :::en
 Translate using ます form:
@@ -1040,7 +1040,7 @@ Translate using て form:
 
 5. After getting up, I wash my face.
 6. This shop is cheap and delicious. (安い = やすい、美味しい = おいしい)
-7. It rained, so I didn't go to the park. (雨が降る = あめがふる)
+7. It rained, so I couldn't go to the park. (雨が降る = あめがふる)
 :::
 
 <details>
@@ -1052,7 +1052,7 @@ Translate using て form:
 4. 週末は何を**しますか**。
 5. 起き**て**、顔を洗います。
 6. この店は安**くて**、美味しいです。
-7. 雨が降っ**て**、公園に行きませんでした。
+7. 雨が降っ**て**、公園に行けませんでした。
 
 </details>
 

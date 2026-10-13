@@ -61,14 +61,14 @@ This lesson covers N2-level expressions for assertion and judgment. 「ないわ
 
 ### 例句||Example Sentences
 :::zh
-1. 上司に頼まれたら、断ら**ないわけにはいかない**。（被上司拜托了，不能不答应。）
+1. 上司に頼まれたら、引き受け**ないわけにはいかない**。（被上司拜托了，不能不答应。）
 2. 明日は大事な会議だから、出席し**ないわけにはいかない**。（明天是重要会议，不能不出席。）
 3. 約束した以上、守ら**ないわけにはいかない**。（既然约定了，就不能不遵守。）
 4. お世話になった人だから、挨拶に行か**ないわけにはいかない**。（是照顾过我的人，不能不去打招呼。）
 5. 社員として、会社のルールに従わ**ないわけにはいかない**。（作为员工，不能不遵守公司的规定。）
 :::
 :::en
-1. 上司に頼まれたら、断ら**ないわけにはいかない**。(If my boss asks me, I can't refuse.)
+1. 上司に頼まれたら、引き受け**ないわけにはいかない**。(If my boss asks me, I have no choice but to accept.)
 2. 明日は大事な会議だから、出席し**ないわけにはいかない**。(Tomorrow's meeting is important, so I must attend.)
 3. 約束した以上、守ら**ないわけにはいかない**。(Since I made a promise, I must keep it.)
 4. お世話になった人だから、挨拶に行か**ないわけにはいかない**。(Since they've taken care of me, I must go pay my respects.)

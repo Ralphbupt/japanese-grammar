@@ -1,14 +1,14 @@
 # Lesson 19 – 受身形详解与使役受身形||Passive & Causative-Passive Forms
 
 :::zh
-受身形「られる」表示"被…"，但日语的受身比中文多一种用法：**「迷惑の受身」**表示"被某事影响而觉得困扰"。再加上把"使役 + 受身"合体的 **「させられる」**（被迫做），这一课是 N4 公认的难度天花板。
+受身形「られる」表示"被…"，但日语的受身比中文多一种用法：「**迷惑の受身**」表示"被某事影响而觉得困扰"。再加上把"使役 + 受身"合体的 **「させられる」**（被迫做），这一课是 N4 公认的难度天花板。
 :::
 
 :::en
 The passive 「られる」 means "to be …," but Japanese has an extra use Chinese / English don't: the **suffering passive** (迷惑の受身) — "affected adversely." Combined with the causative-passive **「させられる」** (forced to do), this is N4's notorious ceiling.
 :::
 
-## 本课单词表
+## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
@@ -26,10 +26,10 @@ The passive 「られる」 means "to be …," but Japanese has an extra use Chi
 ## 1. 受身形详解（N4深化）||1. Passive Form — In Depth (N4 Level)
 
 :::zh
-Day 8学了受身形入门，现在深化四种被动的用法。
+Lesson 11学了受身形入门，现在深化四种被动的用法。
 :::
 :::en
-Day 8 introduced the passive form. Now we deepen the four types of passive usage.
+Lesson 11 introduced the passive form. Now we deepen the four types of passive usage.
 :::
 
 ### 复习：变形规则||Review: Conjugation Rules
@@ -246,8 +246,8 @@ In formal writing and news, the passive is often used to **describe events objec
 ### 一类动词的缩略形（口语超常用！）||Group 1 Verb Contracted Forms (Very Common in Speech!)
 
 :::zh
-书面：書かせ**られる**（5个音节，太长了）
-口语：書か**される**（3个音节，简洁！）
+书面：書か**せられる**（かかせられる，6拍，偏长）
+口语：書か**される**（かかされる，5拍，更简洁！）
 
 | 书面 | 口语缩略 |
 |------|---------|
@@ -260,8 +260,8 @@ In formal writing and news, the passive is often used to **describe events objec
 :::
 
 :::en
-Written form: 書かせ**られる** (5 syllables — too long)
-Spoken form: 書か**される** (3 syllables — concise!)
+Written form: 書か**せられる** (かかせられる, 6 morae — a bit long)
+Spoken form: 書か**される** (かかされる, 5 morae — more concise!)
 
 | Written form | Contracted spoken form |
 |--------------|------------------------|
@@ -278,7 +278,7 @@ Spoken form: 書か**される** (3 syllables — concise!)
 :::zh
 1. 毎日野菜を食べ**させられた**。（每天被迫吃蔬菜。）
 2. 上司に残業**させられた**。（被上司逼着加班了。）
-3. 子供の頃、ピアノを習わ**させられた**。（小时候被迫学钢琴。→ 口语：習わされた）
+3. 子供の頃、ピアノを習わ**せられた**。（小时候被迫学钢琴。→ 口语：習わされた）
 4. 1時間も待た**せられた** / 待た**された**。（被迫等了1个小时。）
 5. 嫌いな歌を歌わ**せられた**。（被逼唱了不喜欢的歌。）
 6. 大量のレポートを書か**せられた** / 書か**された**。（被迫写了大量报告。）
@@ -288,7 +288,7 @@ Spoken form: 書か**される** (3 syllables — concise!)
 :::en
 1. 毎日野菜を食べ**させられた**。(I was forced to eat vegetables every day.)
 2. 上司に残業**させられた**。(I was forced to work overtime by my boss.)
-3. 子供の頃、ピアノを習わ**させられた**。(As a child I was made to learn piano. → colloquial: 習わされた)
+3. 子供の頃、ピアノを習わ**せられた**。(As a child I was made to learn piano. → colloquial: 習わされた)
 4. 1時間も待た**せられた** / 待た**された**。(I was made to wait for a whole hour.)
 5. 嫌いな歌を歌わ**せられた**。(I was forced to sing a song I disliked.)
 6. 大量のレポートを書か**せられた** / 書か**された**。(I was made to write a huge number of reports.)

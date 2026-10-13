@@ -1,11 +1,11 @@
 # Lesson 34 – N4语法总复习||N4 Grammar Comprehensive Review
 
 :::zh
-N4 阶段最后一课，把前 9 课讲过的核心语法——**使役、受身、授受、ように系列、ことにする系列、てしまう、わけだ / ものだ**——一次性串起来。学完就有资格去刷 N4 真题了。
+N4 阶段最后一课，把本阶段 Lesson 18–33 讲过的核心语法——**使役、受身、授受、ように系列、ことにする系列、てしまう、わけだ / ものだ**——一次性串起来。学完就有资格去刷 N4 真题了。
 :::
 
 :::en
-The closing lesson of N4, weaving together all 9 previous lessons — **causative, passive, giving/receiving, ように, ことにする, てしまう, わけだ / ものだ**. After this, you're ready to grind N4 mock exams.
+The closing lesson of N4, weaving together the core grammar of Lessons 18–33 — **causative, passive, giving/receiving, ように, ことにする, てしまう, わけだ / ものだ**. After this, you're ready to grind N4 mock exams.
 :::
 
 ---
@@ -116,7 +116,7 @@ The closing lesson of N4, weaving together all 9 previous lessons — **causativ
 - [ ] といっても (although / even though I say…)
 :::
 
-### 书面助词表达||Formal Particle Expressions
+### 书面助词表达（除て以来外均为 N3 预习，Lesson 35–36 详讲）||Formal Particle Expressions (apart from て以来, an N3 preview — covered in Lessons 35–36)
 :::zh
 - [ ] て以来（自从以来）
 - [ ] にかけて（从…到…期间）
@@ -291,7 +291,7 @@ N3语法的特点：
 3. **更复杂的复合语法**：からには、以上は等
 4. **更多的固定搭配**：てたまらない、てならない等
 
-你已经在Day 17学了一些N3级别的语法（わけだ系列、もの系列等），书面助词（において、に対して等）已移到N3阶段，过渡应该比较顺利。
+你已经在Lesson 26学了一些N3级别的语法（わけだ系列、もの系列等），书面助词（において、に対して等）已移到N3阶段，过渡应该比较顺利。
 :::
 :::en
 There is no sharp boundary between N4 and N3. If you've mastered 80% or more of the grammar above, you're ready to move into N3.
@@ -302,7 +302,7 @@ Characteristics of N3 grammar:
 3. **More complex compound grammar**: からには, 以上は, etc.
 4. **More fixed collocations**: てたまらない, てならない, etc.
 
-You've already covered some N3-level grammar in Day 17 (the わけだ series, もの series, etc.), and formal particles (において, に対して, etc.) have been moved to the N3 stage, so the transition should be relatively smooth.
+You've already covered some N3-level grammar in Lesson 26 (the わけだ series, もの series, etc.), and formal particles (において, に対して, etc.) have been moved to the N3 stage, so the transition should be relatively smooth.
 :::
 
 ---

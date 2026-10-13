@@ -8,7 +8,7 @@
 Japanese "giving" and "receiving" is not like Chinese where a single word covers it all — instead, the language splits into **three systems based on direction and perspective**. This is one of the core challenges of Japanese.
 :::
 
-## 本课单词表
+## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
@@ -368,7 +368,7 @@ The concept of in-group (うち) and out-group (そと) is important in Japanese
 |------|------|------|
 | ❌ 先生が教えてあげた | ✅ 先生が教えてくださった | 对上级不能用あげる（居高临下） |
 | △ 母に料理を作ってあげた | ✅ 母に料理を作った / 母のために作った | 对长辈用あげる显得居高临下，家人间勉强OK但最好避免 |
-| ❌ 友達は私に本をくれた | ✅ 友達**が**私に本をくれた | くれる的主语用が（新信息/感谢对象） |
+| △ 友達は私に本をくれた | ✅ 友達**が**私に本をくれた | 两句都正确：は把朋友当话题，が强调"是谁给的"（新信息/感谢对象） |
 | ❌ 先生にてもらった | ✅ 先生**に**教え**てもらった** | 中间要有动词て形 |
 | ❌ 私が友達に本をくれた | ✅ 私が友達に本を**あげた** | くれる只能是"别人给我"，我给别人用あげる |
 
@@ -382,7 +382,7 @@ The concept of in-group (うち) and out-group (そと) is important in Japanese
 |------|------|------|
 | ❌ 先生が教えてあげた | ✅ 先生が教えてくださった | Can't use あげる toward superiors (condescending) |
 | △ 母に料理を作ってあげた | ✅ 母に料理を作った / 母のために作った | あげる toward elders sounds condescending — OK-ish with family but better avoided |
-| ❌ 友達は私に本をくれた | ✅ 友達**が**私に本をくれた | Subject of くれる uses が (new info / focus of gratitude) |
+| △ 友達は私に本をくれた | ✅ 友達**が**私に本をくれた | Both are correct: は makes the friend the topic, が highlights who gave it (new info / focus of gratitude) |
 | ❌ 先生にてもらった | ✅ 先生**に**教え**てもらった** | Need a verb in て-form between |
 | ❌ 私が友達に本をくれた | ✅ 私が友達に本を**あげた** | くれる is only "others give to me" — for "I give to others" use あげる |
 

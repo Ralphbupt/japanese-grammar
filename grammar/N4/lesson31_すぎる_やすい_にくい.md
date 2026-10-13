@@ -1,11 +1,11 @@
 # Lesson 31 – 〜すぎる / 〜やすい・にくい / 〜ことはない / 〜方（かた）/ 复合动词（〜出す・始める・続ける）||〜すぎる / 〜やすい・にくい / 〜ことはない / 〜方 / Compound Verbs (〜出す・始める・続ける)
 
 :::zh
-本课学习五组与动词/形容词结合的重要语法。这些语法的共同点是都接在**动词ます形词干**（或形容词词干）后面，构成新的表达。掌握这些之后，表达能力会大幅提升。
+本课学习六组与动词/形容词结合的重要语法。这些语法的共同点是都接在**动词ます形词干**（或形容词词干）后面，构成新的表达。掌握这些之后，表达能力会大幅提升。
 :::
 
 :::en
-This lesson covers five groups of important grammar that combine with verbs and adjectives. They all attach to the **verb masu-stem** (or adjective stem), forming new expressions. Mastering these will greatly expand your expressive ability.
+This lesson covers six groups of important grammar that combine with verbs and adjectives. They all attach to the **verb masu-stem** (or adjective stem), forming new expressions. Mastering these will greatly expand your expressive ability.
 :::
 
 ## 本课单词表||Vocabulary
@@ -56,7 +56,7 @@ This lesson covers five groups of important grammar that combine with verbs and 
 
 > **特殊变化**：
 > - いい → **よ**すぎる（不是いすぎる）
-> - ない → **なさ**すぎる（不是なすぎる、なさ是ない的连用形）
+> - ない → **なさ**すぎる（不是なすぎる；ない接すぎる时要插入「さ」）
 :::
 
 :::en
@@ -68,7 +68,7 @@ This lesson covers five groups of important grammar that combine with verbs and 
 
 > **Irregular forms**:
 > - いい → **よ**すぎる (not いすぎる)
-> - ない → **なさ**すぎる (not なすぎる — なさ is the continuative form of ない)
+> - ない → **なさ**すぎる (not なすぎる — ない inserts さ before すぎる)
 :::
 
 ### 含义||Meaning
@@ -124,13 +124,13 @@ Expresses excess — "too …". It implies going beyond an appropriate degree, u
 :::zh
 - この料理は味が**なさすぎる**。（这道菜味道太淡了。→ ない→なさすぎる）
 - あの店は**よすぎる**くらいのサービスだ。（那家店的服务好得过分了。→ いい→よすぎる）
-- 何も食べ**なさすぎる**のも体に悪い。（什么都不吃也对身体不好。→ 食べない→食べなさすぎる）
+- 食べ**なさすぎる**のも体に悪い。（吃得太少也对身体不好。→ 食べない→食べなさすぎる）
 :::
 
 :::en
 - この料理は味が**なさすぎる**。(This dish has too little flavor. → ない → なさすぎる)
 - あの店は**よすぎる**くらいのサービスだ。(That shop's service is excessively good. → いい → よすぎる)
-- 何も食べ**なさすぎる**のも体に悪い。(Eating too little is also bad for your health. → 食べない → 食べなさすぎる)
+- 食べ**なさすぎる**のも体に悪い。(Eating too little is also bad for your health. → 食べない → 食べなさすぎる)
 :::
 
 ---
@@ -200,7 +200,7 @@ The resulting word conjugates as an **い-adjective**:
 4. ガラスは割れ**やすい**から、気をつけて。（玻璃容易碎，小心点。）
 5. この道は雨の日に滑り**やすい**。（这条路下雨天容易滑。）
 6. 彼の説明は分かり**にくい**。（他的说明很难懂。）
-7. この薬は飲み**にくい**。もっと小さければいいのに。（这个药不好吃。要是再小点就好了。）
+7. この薬は飲み**にくい**。もっと小さければいいのに。（这个药不好咽。要是再小点就好了。）
 8. 慣れないと、箸は使い**にくい**。（不习惯的话筷子很难用。）
 :::
 
@@ -223,7 +223,7 @@ The resulting word conjugates as an **い-adjective**:
 | 含义 | 做起来困难（客观） | 做起来痛苦/难受（主观） | 几乎不可能（书面） |
 | 语感 | 物理上/客观上难 | 心理上/身体上难受 | 难以实现/难以接受 |
 | 例 | 読みにくい（字小，难读） | 言いづらい（难以启齿） | 信じがたい（难以置信） |
-| 例2 | 食べにくい（形状不好吃） | 食べづらい（有人看着不好意思吃） | 想像しがたい（难以想象） |
+| 例2 | 食べにくい（形状不好入口） | 食べづらい（有人看着不好意思吃） | 想像しがたい（难以想象） |
 | 使用场景 | 日常通用 | 日常口语 | 书面/正式 |
 
 > **总结**：客观难 → にくい，主观难受 → づらい，几乎不可能 → がたい
@@ -741,7 +741,7 @@ Change the word in parentheses to the appropriate すぎる form:
 
 :::zh
 1. 赤ちゃんが急に泣き（　　）た。
-2. 来月からジョギングを走り（　　）ようと思う。
+2. 来月から毎朝公園を走り（　　）ようと思う。
 3. 雨が降り（　　）たから、傘を持っていこう。
 4. 彼は10年間日本語を勉強し（　　）ている。
 5. 突然彼女が笑い（　　）た。何がおかしいんだろう。
@@ -750,7 +750,7 @@ Change the word in parentheses to the appropriate すぎる form:
 
 :::en
 1. 赤ちゃんが急に泣き（　　）た。(The baby suddenly...)
-2. 来月からジョギングを走り（　　）ようと思う。(I plan to start next month...)
+2. 来月から毎朝公園を走り（　　）ようと思う。(Starting next month, I plan to... run in the park every morning)
 3. 雨が降り（　　）たから、傘を持っていこう。(It suddenly started raining...)
 4. 彼は10年間日本語を勉強し（　　）ている。(He has been studying for 10 years...)
 5. 突然彼女が笑い（　　）た。何がおかしいんだろう。(She suddenly burst out laughing...)

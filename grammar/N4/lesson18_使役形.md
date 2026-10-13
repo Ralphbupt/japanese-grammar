@@ -1,6 +1,6 @@
 # Lesson 18 – 使役形（させる）||Causative Form (させる)
 
-## 本课单词表
+## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
@@ -330,9 +330,9 @@ The combination of causative form with giving/receiving expressions is extremely
 :::zh
 "别人允许我做某事"→ 我心怀感激。
 
-1. 今日は早く帰ら**させてもらいます**。（今天请允许我早点回去。→ 客气）
-2. この件について意見を言わ**させてもらいます**。（关于这件事请允许我发表意见。）
-3. ちょっと休ま**させてもらっても**いいですか。（可以让我休息一下吗？）
+1. 今日は早く帰ら**せてもらいます**。（今天请允许我早点回去。→ 客气）
+2. この件について意見を言わ**せてもらいます**。（关于这件事请允许我发表意见。）
+3. ちょっと休ま**せてもらっても**いいですか。（可以让我休息一下吗？）
 4. 先輩のおかげで、いい経験を**させてもらった**。（多亏前辈，让我获得了好的经验。）
 5. 留学**させてもらって**、親に感謝している。（父母让我去留学了，我很感激。）
 
@@ -342,9 +342,9 @@ The combination of causative form with giving/receiving expressions is extremely
 :::en
 "Someone allows me to do something" → I am grateful.
 
-1. 今日は早く帰ら**させてもらいます**。(I'll take the liberty of going home early today. → polite)
-2. この件について意見を言わ**させてもらいます**。(Allow me to share my opinion on this matter.)
-3. ちょっと休ま**させてもらっても**いいですか。(Would it be alright if I took a short break?)
+1. 今日は早く帰ら**せてもらいます**。(I'll take the liberty of going home early today. → polite)
+2. この件について意見を言わ**せてもらいます**。(Allow me to share my opinion on this matter.)
+3. ちょっと休ま**せてもらっても**いいですか。(Would it be alright if I took a short break?)
 4. 先輩のおかげで、いい経験を**させてもらった**。(Thanks to my senior, I was given the chance to have a great experience.)
 5. 留学**させてもらって**、親に感謝している。(My parents let me study abroad, and I'm grateful.)
 
@@ -357,8 +357,8 @@ The combination of causative form with giving/receiving expressions is extremely
 "别人让我做某事"→ 别人真好。
 
 1. 母は好きなことを**させてくれた**。（妈妈让我做了喜欢的事。→ 感谢妈妈）
-2. 先生は自由に意見を言わ**させてくれる**。（老师让我们自由发表意见。→ 好老师）
-3. 会社は海外で働か**させてくれた**。（公司让我在海外工作了。→ 感谢公司）
+2. 先生は自由に意見を言わ**せてくれる**。（老师让我们自由发表意见。→ 好老师）
+3. 会社は海外で働か**せてくれた**。（公司让我在海外工作了。→ 感谢公司）
 4. 友達が車を運転**させてくれた**。（朋友让我开了他的车。）
 5. 彼は私に好きなように決め**させてくれた**。（他让我按自己喜欢的方式决定。）
 
@@ -369,8 +369,8 @@ The combination of causative form with giving/receiving expressions is extremely
 "Someone lets me do something" → How kind of them.
 
 1. 母は好きなことを**させてくれた**。(Mom let me do what I liked. → grateful to Mom)
-2. 先生は自由に意見を言わ**させてくれる**。(The teacher lets us speak our minds freely. → a good teacher)
-3. 会社は海外で働か**させてくれた**。(The company let me work overseas. → grateful to the company)
+2. 先生は自由に意見を言わ**せてくれる**。(The teacher lets us speak our minds freely. → a good teacher)
+3. 会社は海外で働か**せてくれた**。(The company let me work overseas. → grateful to the company)
 4. 友達が車を運転**させてくれた**。(My friend let me drive their car.)
 5. 彼は私に好きなように決め**させてくれた**。(He let me decide however I wanted.)
 
@@ -665,7 +665,7 @@ Determine whether each sentence expresses "coercion" or "permission," and explai
 2. ❌ 两个を → ✅ 母は子供**に**ピアノを習わせた。（同理）
 3. ❌ 辞书形+させる不对 → ✅ 私に**行かせて**ください。（行く→行かせる）
 4. ❌ 罚学生跑步用てあげた（恩惠）不合适 → ✅ 先生は学生を走ら**せた**。（强制不加てあげる）
-5. ❌ 残業させた是自动词用法（加班），但场景是"写报告"（他动词） → ✅ 上司は私**に**残業の報告書**を**書かせた。/ 或如果只是"让我加班"→ 上司は私**に**残業させた。（残業する的人用に）
+5. ❌ 残業させた只表示"让我加班"，与场景"写报告"（他动词）不符 → ✅ 上司は私**に**残業の報告書**を**書かせた。/ 如果只是"让我加班"，原句 上司は私**を**残業させた。本身就对（残業する是自动词，强制时人用を最常见）
 6. ❌ 混用了两种敬语 → ✅ 確認**させていただきます**。或 確認**させてください**。（选一个）
 :::
 :::en
@@ -673,7 +673,7 @@ Determine whether each sentence expresses "coercion" or "permission," and explai
 2. ❌ Two を → ✅ 母は子供**に**ピアノを習わせた。(Same reason)
 3. ❌ Dictionary form + させる is wrong → ✅ 私に**行かせて**ください。(行く → 行かせる)
 4. ❌ Using てあげた (favor) for punishment is inappropriate → ✅ 先生は学生を走ら**せた**。(Coercion doesn't use てあげる)
-5. ❌ 残業させた uses intransitive pattern but the context is "write reports" (transitive) → ✅ 上司は私**に**残業の報告書**を**書かせた。/ Or if just "made me work overtime" → 上司は私**に**残業させた。(残業する takes person with に)
+5. ❌ 残業させた only means "made me work overtime", which doesn't match the context "write reports" (transitive) → ✅ 上司は私**に**残業の報告書**を**書かせた。/ If it's just "made me work overtime", the original 上司は私**を**残業させた。is already correct (残業する is intransitive; for coercion the person most often takes を)
 6. ❌ Mixed two keigo forms → ✅ 確認**させていただきます**。or 確認**させてください**。(Pick one)
 :::
 

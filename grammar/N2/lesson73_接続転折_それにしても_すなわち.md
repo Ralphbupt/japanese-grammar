@@ -1,4 +1,4 @@
-# Lesson 73 – 接続・転折 — それにしても/それなのに/しかも/したがって/すなわち||Connectives & Transition — それにしても/それなのに/しかも/したがって/すなわち
+# Lesson 73 – 接続・逆接 — それにしても/それなのに/しかも/したがって/すなわち||Connectives & Transition — それにしても/それなのに/しかも/したがって/すなわち
 
 :::zh
 这一课学习N2级别的接续词和转折表达。「それにしても」「それなのに」表示转折，「しかも」表示递进，「したがって」「すなわち」是书面接续词。掌握这些接续词能提高阅读理解和写作的逻辑表达能力，也是N2读解的关键词。
@@ -13,7 +13,7 @@ This lesson covers N2-level conjunctions and transitional expressions. 「それ
 | 单词 | 读音 | 含义 |
 |------|------|------|
 | 接続詞 | せつぞくし | 接续词//conjunction |
-| 転折 | てんせつ | 转折//transition |
+| 逆接 | ぎゃくせつ | 转折//adversative connection |
 | 結論 | けつろん | 结论//conclusion |
 | 要するに | ようするに | 总之//in short |
 | 予報 | よほう | 预报//forecast |
@@ -164,14 +164,14 @@ This lesson covers N2-level conjunctions and transitional expressions. 「それ
 1. この店は美味しい。**しかも**、値段も安い。（这家店好吃，而且价格还便宜。）
 2. 彼は英語が話せる。**しかも**、中国語もペラペラだ。（他会说英语，而且中文也说得很溜。）
 3. 電車が遅れた。**しかも**、タクシーもつかまらなかった。（电车晚了，而且出租车也打不到。）
-4. 今回のプロジェクトは成功した。**しかも**、予算以下で完成した。（这次项目成功了，况且还在预算以内完成了。）
+4. 今回のプロジェクトは成功した。**しかも**、予算内で完成した。（这次项目成功了，况且还在预算以内完成了。）
 5. 試験に合格した。**しかも**、クラスで一番だった。（考试合格了，而且是班里第一名。）
 :::
 :::en
 1. この店は美味しい。**しかも**、値段も安い。(This restaurant is delicious. What's more, it's cheap.)
 2. 彼は英語が話せる。**しかも**、中国語もペラペラだ。(He speaks English. Moreover, his Chinese is fluent too.)
 3. 電車が遅れた。**しかも**、タクシーもつかまらなかった。(The train was late. On top of that, I couldn't get a taxi either.)
-4. 今回のプロジェクトは成功した。**しかも**、予算以下で完成した。(This project succeeded. What's more, it was completed under budget.)
+4. 今回のプロジェクトは成功した。**しかも**、予算内で完成した。(This project succeeded. What's more, it was completed under budget.)
 5. 試験に合格した。**しかも**、クラスで一番だった。(I passed the exam. Moreover, I was first in the class.)
 :::
 

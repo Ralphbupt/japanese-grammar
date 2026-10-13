@@ -1,11 +1,11 @@
 # Lesson 58 – N3総復習 — N3文法まとめ||N3 Comprehensive Review — N3 Grammar Summary
 
 :::zh
-这是N3语法的总复习课。我们从Day 32到Day 54，学习了书面助词、原因理由、逆接让步、程度范围、倾向状态、判断推量、动作相关、并列添加、话题立场、时间表达、状态样态、附加对比、表达方式、否定相关、建议复合、复合表达、常用语法等大量N3核心语法。这节课将按功能分类总结，重点对比容易混淆的语法，并通过综合练习进行巩固。
+这是N3语法的总复习课。我们从Lesson 35到Lesson 57，学习了书面助词、原因理由、逆接让步、程度范围、倾向状态、判断推量、动作相关、并列添加、话题立场、时间表达、状态样态、附加对比、表达方式、否定相关、建议复合、复合表达、常用语法等大量N3核心语法。这节课将按功能分类总结，重点对比容易混淆的语法，并通过综合练习进行巩固。
 :::
 
 :::en
-This is the comprehensive N3 grammar review lesson. From Day 32 to Day 54, we covered formal particles, cause/reason, concession, degree/scope, tendencies/states, judgment/conjecture, action-related grammar, addition/listing, topic/standpoint, time expressions, states/appearances, supplementary/contrast, expressions, negation, suggestions/compounds, compound expressions, and common grammar. This lesson summarizes everything by function, focuses on easily confused grammar pairs, and consolidates learning through mixed exercises.
+This is the comprehensive N3 grammar review lesson. From Lesson 35 to Lesson 57, we covered formal particles, cause/reason, concession, degree/scope, tendencies/states, judgment/conjecture, action-related grammar, addition/listing, topic/standpoint, time expressions, states/appearances, supplementary/contrast, expressions, negation, suggestions/compounds, compound expressions, and common grammar. This lesson summarizes everything by function, focuses on easily confused grammar pairs, and consolidates learning through mixed exercises.
 :::
 
 ## 本课单词表||Vocabulary
@@ -33,7 +33,7 @@ This is the comprehensive N3 grammar review lesson. From Day 32 to Day 54, we co
 
 ---
 
-## 1. 書面助詞（Day 32–33）||1. Formal Particles (Day 32–33)
+## 1. 書面助詞（Lesson 35–36）||1. Formal Particles (Lesson 35–36)
 
 :::zh
 | 语法 | 接続 | 含义 | 例句 |
@@ -62,7 +62,7 @@ This is the comprehensive N3 grammar review lesson. From Day 32 to Day 54, we co
 
 ---
 
-## 2. 原因・理由（Day 34）||2. Cause & Reason (Day 34)
+## 2. 原因・理由（Lesson 37）||2. Cause & Reason (Lesson 37)
 
 :::zh
 | 语法 | 接続 | 含义 | 好/坏 | 例句 |
@@ -87,7 +87,7 @@ This is the comprehensive N3 grammar review lesson. From Day 32 to Day 54, we co
 
 ---
 
-## 3. 逆接・譲歩（Day 35–36）||3. Concession (Day 35–36)
+## 3. 逆接・譲歩（Lesson 38–39）||3. Concession (Lesson 38–39)
 
 :::zh
 | 语法 | 接続 | 含义 | 语气 | 例句 |
@@ -114,7 +114,7 @@ This is the comprehensive N3 grammar review lesson. From Day 32 to Day 54, we co
 
 ---
 
-## 4. 程度・範囲（Day 37–38）||4. Degree & Scope (Day 37–38)
+## 4. 程度・範囲（Lesson 40–41）||4. Degree & Scope (Lesson 40–41)
 
 :::zh
 | 语法 | 接続 | 含义 | 例句 |
@@ -139,7 +139,7 @@ This is the comprehensive N3 grammar review lesson. From Day 32 to Day 54, we co
 
 ---
 
-## 5. 傾向・状態（Day 39）||5. Tendencies & States (Day 39)
+## 5. 傾向・状態（Lesson 42）||5. Tendencies & States (Lesson 42)
 
 :::zh
 | 语法 | 接続 | 含义 | 例句 |
@@ -164,7 +164,7 @@ This is the comprehensive N3 grammar review lesson. From Day 32 to Day 54, we co
 
 ---
 
-## 6. 判断・推量（Day 40）||6. Judgment & Conjecture (Day 40)
+## 6. 判断・推量（Lesson 43）||6. Judgment & Conjecture (Lesson 43)
 
 :::zh
 | 语法 | 接続 | 含义 | 确信度 | 例句 |
@@ -187,7 +187,7 @@ This is the comprehensive N3 grammar review lesson. From Day 32 to Day 54, we co
 
 ---
 
-## 7. 動作関連（Day 41–42）||7. Action-Related (Day 41–42)
+## 7. 動作関連（Lesson 44–45, 56）||7. Action-Related (Lesson 44–45, 56)
 
 :::zh
 | 语法 | 接続 | 含义 | 例句 |
@@ -212,7 +212,7 @@ This is the comprehensive N3 grammar review lesson. From Day 32 to Day 54, we co
 
 ---
 
-## 8. 時間表現（Day 45）||8. Time Expressions (Day 45)
+## 8. 時間表現（Lesson 48）||8. Time Expressions (Lesson 48)
 
 :::zh
 | 语法 | 接続 | 含义 | 例句 |
@@ -235,7 +235,7 @@ This is the comprehensive N3 grammar review lesson. From Day 32 to Day 54, we co
 
 ---
 
-## 9. 状態・様態（Day 46）||9. States & Appearances (Day 46)
+## 9. 状態・様態（Lesson 49）||9. States & Appearances (Lesson 49)
 
 :::zh
 | 语法 | 接続 | 含义 | 例句 |
@@ -254,7 +254,7 @@ This is the comprehensive N3 grammar review lesson. From Day 32 to Day 54, we co
 
 ---
 
-## 10. 否定関連（Day 50）||10. Negation-Related (Day 50)
+## 10. 否定関連（Lesson 53）||10. Negation-Related (Lesson 53)
 
 :::zh
 | 语法 | 接続 | 含义 | 例句 |
@@ -279,7 +279,7 @@ This is the comprehensive N3 grammar review lesson. From Day 32 to Day 54, we co
 
 ---
 
-## 11. その他の重要文法（Day 43–44, 47–54）||11. Other Important Grammar (Day 43–44, 47–54)
+## 11. その他の重要文法（Lesson 46–47, 50–57）||11. Other Important Grammar (Lesson 46–47, 50–57)
 
 :::zh
 | 语法 | 含义 | 例句 |
@@ -334,7 +334,7 @@ This is the comprehensive N3 grammar review lesson. From Day 32 to Day 54, we co
 
 ## 重点辨析||Key Comparisons
 
-### A. おかげで vs せいで（Day 34）||A. おかげで vs せいで (Day 34)
+### A. おかげで vs せいで（Lesson 37）||A. おかげで vs せいで (Lesson 37)
 
 :::zh
 | 语法 | 结果 | 用法 |
@@ -353,7 +353,7 @@ This is the comprehensive N3 grammar review lesson. From Day 32 to Day 54, we co
 > Sarcastic usage: 「あなたのおかげで大変だった」= It's all "thanks" to you (ironic)
 :::
 
-### B. ものの vs くせに（Day 35–36）||B. ものの vs くせに (Day 35–36)
+### B. ものの vs くせに（Lesson 38–39）||B. ものの vs くせに (Lesson 38–39)
 
 :::zh
 | 语法 | 语气 | 用法 |
@@ -372,7 +372,7 @@ This is the comprehensive N3 grammar review lesson. From Day 32 to Day 54, we co
 > 「ものの」 is neutral/objective; 「くせに」 carries strong emotion.
 :::
 
-### C. に違いない vs に決まっている（Day 40）||C. に違いない vs に決まっている (Day 40)
+### C. に違いない vs に決まっている（Lesson 43）||C. に違いない vs に決まっている (Lesson 43)
 
 :::zh
 | 语法 | 含义 | 区别 |
@@ -393,7 +393,7 @@ This is the comprehensive N3 grammar review lesson. From Day 32 to Day 54, we co
 > 「犯人は彼に決まっている」= I just know it's definitely him
 :::
 
-### D. がちだ vs っぽい vs 気味（Day 39）||D. がちだ vs っぽい vs 気味 (Day 39)
+### D. がちだ vs っぽい vs 気味（Lesson 42）||D. がちだ vs っぽい vs 気味 (Lesson 42)
 
 :::zh
 | 语法 | 含义 | 特点 |
@@ -418,7 +418,7 @@ This is the comprehensive N3 grammar review lesson. From Day 32 to Day 54, we co
 > 「風邪気味」= slight cold (mild symptom)
 :::
 
-### E. てたまらない vs てならない vs てしょうがない（Day 54）||E. てたまらない vs てならない vs てしょうがない (Day 54)
+### E. てたまらない vs てならない vs てしょうがない（Lesson 57）||E. てたまらない vs てならない vs てしょうがない (Lesson 57)
 
 :::zh
 | 语法 | 含义 | 区别 |
@@ -439,7 +439,7 @@ This is the comprehensive N3 grammar review lesson. From Day 32 to Day 54, we co
 > The three are often interchangeable, but 「てならない」 emphasizes "involuntariness."
 :::
 
-### F. ざるを得ない vs ずにはいられない vs わけにはいかない（Day 41, 50）||F. ざるを得ない vs ずにはいられない vs わけにはいかない (Day 41, 50)
+### F. ざるを得ない vs ずにはいられない vs わけにはいかない（Lesson 44, 53, 56）||F. ざるを得ない vs ずにはいられない vs わけにはいかない (Lesson 44, 53, 56)
 
 :::zh
 | 语法 | 含义 | 驱动力 |
@@ -473,12 +473,12 @@ This is the comprehensive N3 grammar review lesson. From Day 32 to Day 54, we co
 
 1. 先生の（　　）、日本語が上手になった。 a. おかげで b. せいで c. ばかりに
 2. 約束を守らない（　　）、信用を失った。 a. おかげで b. せいで c. ものの
-3. 買った（　　）、一度も使っていない。 a. くせに b. ものの c. どころか
-4. 彼は知っている（　　）、教えてくれない。 a. ものの b. くせに c. にもかかわらず
-5. あの人は犯人（　　）。証拠がたくさんある。 a. に決まっている b. に違いない c. はずがない
+3. 買った（　　）、一度も使っていない。 a. おかげで b. ものの c. どころか
+4. 彼は知っている（　　）、教えてくれない。 a. おかげで b. くせに c. どころか
+5. あの人は犯人（　　）。証拠がたくさんある。 a. ものか b. に違いない c. はずがない
 6. 最近、仕事を休み（　　）だ。 a. っぽい b. がち c. 気味
-7. ちょっと風邪（　　）なので、早く寝よう。 a. がち b. 気味 c. っぽい
-8. 暑く（　　）。エアコンをつけたい。 a. てならない b. てたまらない c. てもかまわない
+7. ちょっと風邪（　　）なので、早く寝よう。 a. がち b. 気味 c. だらけ
+8. 暑く（　　）。エアコンをつけたい。 a. てはいけない b. てたまらない c. てもかまわない
 9. 届き（　　）、ご連絡いたします。 a. とたん b. 次第 c. うちに
 10. 窓を開けた（　　）、猫が飛び出した。 a. 次第 b. 最中に c. とたん
 
@@ -513,12 +513,12 @@ A. てしょうがない　B. ないこともない　C. たらすぐ　D. に�
 
 1. 先生の（　　）、日本語が上手になった。 a. おかげで b. せいで c. ばかりに
 2. 約束を守らない（　　）、信用を失った。 a. おかげで b. せいで c. ものの
-3. 買った（　　）、一度も使っていない。 a. くせに b. ものの c. どころか
-4. 彼は知っている（　　）、教えてくれない。 a. ものの b. くせに c. にもかかわらず
-5. あの人は犯人（　　）。証拠がたくさんある。 a. に決まっている b. に違いない c. はずがない
+3. 買った（　　）、一度も使っていない。 a. おかげで b. ものの c. どころか
+4. 彼は知っている（　　）、教えてくれない。 a. おかげで b. くせに c. どころか
+5. あの人は犯人（　　）。証拠がたくさんある。 a. ものか b. に違いない c. はずがない
 6. 最近、仕事を休み（　　）だ。 a. っぽい b. がち c. 気味
-7. ちょっと風邪（　　）なので、早く寝よう。 a. がち b. 気味 c. っぽい
-8. 暑く（　　）。エアコンをつけたい。 a. てならない b. てたまらない c. てもかまわない
+7. ちょっと風邪（　　）なので、早く寝よう。 a. がち b. 気味 c. だらけ
+8. 暑く（　　）。エアコンをつけたい。 a. てはいけない b. てたまらない c. てもかまわない
 9. 届き（　　）、ご連絡いたします。 a. とたん b. 次第 c. うちに
 10. 窓を開けた（　　）、猫が飛び出した。 a. 次第 b. 最中に c. とたん
 

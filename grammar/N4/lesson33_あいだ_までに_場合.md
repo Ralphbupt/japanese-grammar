@@ -1,6 +1,14 @@
 # Lesson 33 – 時間と場面 — あいだ・までに・おきに・場合は・たらどう・てよかった・てすみません||Time & Situations — あいだ・までに・おきに・場合は・たらどう・てよかった・てすみません
 
-## 本课单词表
+:::zh
+本课学习与时间和场景相关的表达：あいだ／あいだに、までに、おきに、場合は，以及建议、庆幸和道歉的句型（たらどう・てよかった・てすみません）。
+:::
+
+:::en
+This lesson covers expressions of time and situation — あいだ / あいだに, までに, おきに, 場合は — plus patterns for suggesting, feeling relieved, and apologizing (たらどう, てよかった, てすみません).
+:::
+
+## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
@@ -23,7 +31,7 @@
 
 ---
 
-## 1. 〜あいだ / 〜あいだに（……期间 / ……期间内）||〜あいだ / 〜あいだに (During~ / While~)
+## 1. 〜あいだ / 〜あいだに（……期间 / ……期间内）||1. 〜あいだ / 〜あいだに (During~ / While~)
 
 ### 接续||Conjugation
 
@@ -63,7 +71,7 @@
 3. 留守の**あいだに**、泥棒が入った。（不在家的时候，小偷进来了。→ 某一时点发生）
 4. 夏休みの**あいだ**、毎日プールに行った。（暑假的整段时间里，每天去游泳池。→ 整个期间）
 5. 電車に乗っている**あいだ**、音楽を聴いていた。（坐电车的整段时间里，在听音乐。→ 同时持续）
-6. 若い**あいだに**、たくさん旅行したい。（趁年轻的时候，想多旅行。→ 期间内做某事）
+6. 学生の**あいだに**、たくさん旅行したい。（趁还是学生的时候，想多旅行。→ 期间内做某事）
 7. 日本にいる**あいだに**、富士山に登りたい。（在日本的期间内，想爬富士山。→ 期间内完成）
 :::
 
@@ -73,7 +81,7 @@
 3. 留守の**あいだに**、泥棒が入った。(While I was away, a thief broke in. → event at a point)
 4. 夏休みの**あいだ**、毎日プールに行った。(Throughout summer vacation, I went to the pool every day. → entire period)
 5. 電車に乗っている**あいだ**、音楽を聴いていた。(The whole time I was on the train, I was listening to music. → both continuous)
-6. 若い**あいだに**、たくさん旅行したい。(While I'm still young, I want to travel a lot. → within the period)
+6. 学生の**あいだに**、たくさん旅行したい。(While I'm still a student, I want to travel a lot. → within the period)
 7. 日本にいる**あいだに**、富士山に登りたい。(While I'm in Japan, I want to climb Mt. Fuji. → within the period)
 :::
 
@@ -107,7 +115,7 @@
 |---|---|---|
 | 语感 | 中性，客观地描述期间 | 含有"赶紧趁现在"的紧迫感 |
 | 例 | 休みのあいだに旅行した（假期期间旅行了） | 若いうちに旅行したい（趁年轻赶紧旅行） |
-| 例 | 母が買い物のあいだに掃除した（妈妈买东西期间打扫了） | 暗くならないうちに帰ろう（趁天还没黑快回去） |
+| 例 | 母が買い物に行っているあいだに掃除した（妈妈去买东西期间，我打扫了） | 暗くならないうちに帰ろう（趁天还没黑快回去） |
 :::
 
 :::en
@@ -115,12 +123,12 @@
 |---|---|---|
 | Nuance | Neutral, objectively describes the period | Carries urgency: "before it's too late" |
 | Ex. | 休みのあいだに旅行した (I traveled during the break) | 若いうちに旅行したい (I want to travel while I'm still young) |
-| Ex. | 母が買い物のあいだに掃除した (I cleaned while mom was shopping) | 暗くならないうちに帰ろう (Let's go home before it gets dark) |
+| Ex. | 母が買い物に行っているあいだに掃除した (I cleaned while mom was out shopping) | 暗くならないうちに帰ろう (Let's go home before it gets dark) |
 :::
 
 ---
 
-## 2. 〜までに（在……之前 / 截止……）||〜までに (By~ / Before the Deadline)
+## 2. 〜までに（在……之前 / 截止……）||2. 〜までに (By~ / Before the Deadline)
 
 ### 接续||Conjugation
 
@@ -186,7 +194,7 @@ Expresses a **deadline** — "by (a certain time), something must be done." The 
 
 ---
 
-## 3. 〜おきに（每隔……）||〜おきに (Every~ / At Intervals Of~)
+## 3. 〜おきに（每隔……）||3. 〜おきに (Every~ / At Intervals Of~)
 
 ### 接续||Conjugation
 
@@ -214,7 +222,7 @@ Expresses a **deadline** — "by (a certain time), something must be done." The 
 1. この薬は4時間**おきに**飲んでください。（请每隔4小时吃一次这个药。）
 2. 2メートル**おきに**木を植えた。（每隔2米种了一棵树。）
 3. 30分**おきに**休憩する。（每隔30分钟休息一次。）
-4. オリンピックは4年**おきに**行われる。（奥运会每隔4年举行一次。）
+4. 1日**おきに**ジムに通っている。（隔一天去一次健身房。）
 5. 1ページ**おきに**写真がある。（每隔一页有一张照片。）
 :::
 
@@ -222,7 +230,7 @@ Expresses a **deadline** — "by (a certain time), something must be done." The 
 1. この薬は4時間**おきに**飲んでください。(Please take this medicine every 4 hours.)
 2. 2メートル**おきに**木を植えた。(Trees were planted every 2 meters.)
 3. 30分**おきに**休憩する。(I take a break every 30 minutes.)
-4. オリンピックは4年**おきに**行われる。(The Olympics are held every 4 years.)
+4. 1日**おきに**ジムに通っている。(I go to the gym every other day.)
 5. 1ページ**おきに**写真がある。(There is a photo every other page.)
 :::
 
@@ -252,7 +260,7 @@ Expresses a **deadline** — "by (a certain time), something must be done." The 
 
 ---
 
-## 4. 〜場合は（……的情况下）||〜場合は (In the Case Of~ / If~)
+## 4. 〜場合は（……的情况下）||4. 〜場合は (In the Case Of~ / If~)
 
 ### 接续||Conjugation
 
@@ -318,7 +326,7 @@ Expresses a **deadline** — "by (a certain time), something must be done." The 
 
 ---
 
-## 5. 〜たらどう（ですか）（……怎么样？）||〜たらどう(ですか) (How About Doing~?)
+## 5. 〜たらどう（ですか）（……怎么样？）||5. 〜たらどう(ですか) (How About Doing~?)
 
 ### 接续||Conjugation
 
@@ -380,7 +388,7 @@ Expresses a **deadline** — "by (a certain time), something must be done." The 
 
 ---
 
-## 6. 〜てよかった / 〜なくてよかった（做了……真好 / 没做……真好）||〜てよかった / 〜なくてよかった (Glad I Did / Glad I Didn't)
+## 6. 〜てよかった / 〜なくてよかった（做了……真好 / 没做……真好）||6. 〜てよかった / 〜なくてよかった (Glad I Did / Glad I Didn't)
 
 ### 接续||Conjugation
 
@@ -470,7 +478,7 @@ Negative: 〜なければよかった = "I wish I hadn't done…" (regret doing 
 
 ---
 
-## 7. 〜てすみません / 〜なくてすみません（做了……对不起 / 没做……对不起）||〜てすみません / 〜なくてすみません (Sorry for Doing / Sorry for Not Doing)
+## 7. 〜てすみません / 〜なくてすみません（做了……对不起 / 没做……对不起）||7. 〜てすみません / 〜なくてすみません (Sorry for Doing / Sorry for Not Doing)
 
 ### 接续||Conjugation
 
@@ -580,7 +588,7 @@ Fill in the blank with あいだ or あいだに.
 
 1. 3時（　　）ここで待っていてください。
 2. 3時（　　）ここに来てください。
-3. 来月（　　）にこの本を返してください。
+3. 来月（　　）この本を返してください。
 4. 雨がやむ（　　）、図書館にいよう。
 :::
 
@@ -589,7 +597,7 @@ Fill in with まで or までに.
 
 1. 3時（　　）ここで待っていてください。(Please wait here until 3.)
 2. 3時（　　）ここに来てください。(Please come here by 3.)
-3. 来月（　　）にこの本を返してください。(Please return this book by next month.)
+3. 来月（　　）この本を返してください。(Please return this book by next month.)
 4. 雨がやむ（　　）、図書館にいよう。(Let's stay in the library until the rain stops.)
 :::
 
@@ -653,7 +661,7 @@ Translate into Japanese.
 <details>
 <summary>答案 / Answers</summary>
 
-1. 若いあいだに、たくさん勉強したい。
+1. 若いうちに、たくさん勉強したい。
 2. 金曜日までに宿題を出してください。
 3. この薬は6時間おきに飲んでください。
 4. そんなに疲れたなら、早く寝たらどうですか。

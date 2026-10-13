@@ -281,22 +281,24 @@ When something appears for the first time in the discourse, mark it with が.
 #### 用法③：感情・能力・愿望的对象||Usage ③: Object of emotion, ability, or desire
 
 :::zh
-这类动词/形容词的对象固定用が，不用を：
+这类动词/形容词的对象一般用が，不用を：
 - 日本語**が**好きです。（喜欢日语。）
 - 英語**が**わかります。（懂英语。）
 - 水**が**飲みたいです。（想喝水。）
 - ピアノ**が**弾けます。（会弹钢琴。）
 
 > 常见搭配：好き/嫌い/怖い/欲しい/〜たい/わかる/できる/見える/聞こえる + が
+> 注意：〜たい 的对象用が或を都可以（水**を**飲みたい 也正确）。
 :::
 :::en
-These verbs/adjectives take が for their object — not を:
+These verbs/adjectives normally take が for their object — not を:
 - 日本語**が**好きです。(I like Japanese.)
 - 英語**が**わかります。(I understand English.)
 - 水**が**飲みたいです。(I want to drink water.)
 - ピアノ**が**弾けます。(I can play the piano.)
 
 > Common collocations: 好き/嫌い/怖い/欲しい/〜たい/わかる/できる/見える/聞こえる + が
+> Note: the object of 〜たい can take either が or を (水**を**飲みたい is also correct).
 :::
 
 #### 用法④：从句中的主语用が||Usage ④: Subject inside a subordinate clause uses が
@@ -439,7 +441,7 @@ When a clause is embedded inside a larger sentence, the inner subject uses が:
 | ❌ 誰は来ましたか | ✅ 誰が来ましたか | 疑问词做主语必须用が |
 | ❌ 私が学生です（自我介绍） | ✅ 私は学生です | 自我介绍时"我"是话题 |
 | ❌ 富士山がきれいです（一般陈述） | ✅ 富士山はきれいです | 一般评述某事物用は |
-| ❌ 水は飲みたい | ✅ 水が飲みたい | 〜たい的对象用が |
+| ❌ 英語をわかります | ✅ 英語がわかります | わかる的对象用が |
 :::
 :::en
 | Wrong | Correct | Reason |
@@ -447,7 +449,7 @@ When a clause is embedded inside a larger sentence, the inner subject uses が:
 | ❌ 誰は来ましたか | ✅ 誰が来ましたか | Question-word subjects must use が |
 | ❌ 私が学生です (self-introduction) | ✅ 私は学生です | In self-introductions, "I" is the topic |
 | ❌ 富士山がきれいです (general statement) | ✅ 富士山はきれいです | General descriptions of things use は |
-| ❌ 水は飲みたい | ✅ 水が飲みたい | Object of 〜たい takes が |
+| ❌ 英語をわかります | ✅ 英語がわかります | The object of わかる takes が |
 :::
 
 ---

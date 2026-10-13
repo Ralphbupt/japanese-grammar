@@ -84,7 +84,7 @@ This lesson covers N2 grammar for expressing "contrast" and "correlated change."
 | にもかかわらず | 尽管…… | 表让步，不强调"相反" |
 
 > 「予想に反して」= 与预想相反（结果和预想方向不同）  
-> 「予想に対して」= 相对于预想（客观对比）
+> 「兄が活発なのに対して、弟はおとなしい」= 哥哥活泼，相对地弟弟很文静（客观对比两者）
 :::
 :::en
 | Expression | Meaning | Difference |
@@ -94,7 +94,7 @@ This lesson covers N2 grammar for expressing "contrast" and "correlated change."
 | にもかかわらず | despite | Concessive; doesn't emphasize "opposite" |
 
 > 「予想に反して」= contrary to prediction (result went the other way)  
-> 「予想に対して」= compared to prediction (objective comparison)
+> 「兄が活発なのに対して、弟はおとなしい」= the older brother is lively, whereas the younger one is quiet (objective contrast)
 :::
 
 ---
@@ -273,20 +273,20 @@ This lesson covers N2 grammar for expressing "contrast" and "correlated change."
 |------|------|------|
 | につれて | 随着…… | 前后都是渐变，书面/口语均可 |
 | にしたがって | 随着…… / 按照…… | 有两个意思，稍正式 |
-| にともなって | 伴随…… | 更书面，常用于客观描述 |
-| とともに | 与……一起 / 随着…… | 最书面，有"同时"义 |
+| にともなって | 伴随…… | 最书面，常用于客观描述 |
+| とともに | 与……一起 / 随着…… | 书面，有"同时"义 |
 
-> 四者表示"随着"时基本可互换，正式度：とともに > にともなって > にしたがって > につれて
+> 四者表示"随着"时基本可互换，正式度：にともなって > とともに > にしたがって > につれて
 :::
 :::en
 | Expression | Meaning | Difference |
 |------|------|------|
 | につれて | as… | Both sides change gradually; speech or writing |
 | にしたがって | as… / according to | Two meanings; slightly more formal |
-| にともなって | accompanying… | More written; often for objective descriptions |
-| とともに | together with / as… | Most formal; also means "at the same time" |
+| にともなって | accompanying… | Most written; often for objective descriptions |
+| とともに | together with / as… | Written; also means "at the same time" |
 
-> When expressing "as…," all four are largely interchangeable. Formality: とともに > にともなって > にしたがって > につれて
+> When expressing "as…," all four are largely interchangeable. Formality: にともなって > とともに > にしたがって > につれて
 :::
 
 ---
@@ -341,7 +341,7 @@ This lesson covers N2 grammar for expressing "contrast" and "correlated change."
 |------|------|------|
 | にしたがって① | 随着…… | = につれて，强调同步变化 |
 | にしたがって② | 按照…… | = にそって / とおりに，表遵从 |
-| に沿って | 沿着…… / 按照…… | 物理路线或方针，Day 66详述 |
+| に沿って | 沿着…… / 按照…… | 物理路线或方针，Lesson 69详述 |
 | とおりに | 按照…… | 完全照做，最口语化 |
 
 > 看到「にしたがって」先判断是"随着"还是"按照"：  
@@ -353,7 +353,7 @@ This lesson covers N2 grammar for expressing "contrast" and "correlated change."
 |------|------|------|
 | にしたがって① | as… | = につれて; synchronized change |
 | にしたがって② | according to | = にそって / とおりに; compliance |
-| に沿って | along / according to | Physical route or policy; see Day 66 |
+| に沿って | along / according to | Physical route or policy; see Lesson 69 |
 | とおりに | exactly as | Do exactly as told; most colloquial |
 
 > When you see 「にしたがって」, first determine if it means "as…" or "according to":  

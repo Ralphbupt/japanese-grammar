@@ -284,7 +284,7 @@ The subject directly receives the action, equivalent to "to be done" in English.
 表示"别人做了某事，我因此受到了（不好的）影响"。中文翻不出来的"被"。
 
 1. 雨**に**降**られた**。（被雨淋了。→ 下雨这件事让我困扰）
-2. 電車の中で足を踏ま**れた**。（在电车里脚被踩了。）
+2. 急に友達**に**来**られて**、困った。（朋友突然来了，我很为难。→ 朋友来这件事让我困扰）
 3. 隣の人**に**タバコを吸わ**れて**、嫌だった。（旁边的人抽烟，我很不爽。）
 4. 彼女**に**泣か**れて**、困った。（她哭了，我很为难。→ 她哭这件事让我困扰）
 5. 夜中に赤ちゃん**に**泣か**れて**、眠れなかった。（半夜被孩子哭得睡不着。）
@@ -298,7 +298,7 @@ The subject directly receives the action, equivalent to "to be done" in English.
 Expresses "someone did something, and as a result I was adversely affected." There is no direct equivalent in English or Chinese.
 
 1. 雨**に**降**られた**。(The rain came down on me. → The rain caused me inconvenience.)
-2. 電車の中で足を踏ま**れた**。(My foot was stepped on in the train.)
+2. 急に友達**に**来**られて**、困った。(A friend showed up unexpectedly, and I was put out. → The friend's visit inconvenienced me.)
 3. 隣の人**に**タバコを吸わ**れて**、嫌だった。(The person next to me smoked, and I was bothered.)
 4. 彼女**に**泣か**れて**、困った。(She cried on me and I didn't know what to do. → Her crying inconvenienced me.)
 5. 夜中に赤ちゃん**に**泣か**れて**、眠れなかった。(The baby cried in the middle of the night and I couldn't sleep.)

@@ -252,7 +252,7 @@ Indicates that after doing something, it was left unattended, or a state continu
 |------|------|
 | 动词普通形 | 泣いている + ように見える |
 | い形容词 | 若い + ように見える |
-| な形容词 | 元気な / 元気の + ように見える |
+| な形容词 | 元気な + ように見える |
 | 名词の | 学生の + ように見える |
 :::
 :::en
@@ -260,7 +260,7 @@ Indicates that after doing something, it was left unattended, or a state continu
 |------|------|
 | Verb plain form | 泣いている + ように見える |
 | い-adjective | 若い + ように見える |
-| な-adjective | 元気な / 元気の + ように見える |
+| な-adjective | 元気な + ように見える |
 | Noun の | 学生の + ように見える |
 :::
 
@@ -274,15 +274,15 @@ Making a judgment based on appearance or impression. "Looks like..." / "Appears 
 
 ### 例句||Example Sentences
 :::zh
-1. 彼女は若く**見える**けど、実は40歳だ。（她看起来年轻，其实40岁了。）
-2. 彼は幸せそうに**見える**が、実は悩んでいる。（他看起来很幸福，其实在烦恼。）
+1. 彼女は若い**ように見える**けど、実は40歳だ。（她看起来年轻，其实40岁了。）
+2. 彼は幸せな**ように見える**が、実は悩んでいる。（他看起来很幸福，其实在烦恼。）
 3. この絵は写真の**ように見える**。（这幅画看起来像照片。）
 4. 彼は何も食べていない**ように見える**。（他看起来什么都没吃。）
 5. あの建物は新しい**ように見える**が、実は築50年だ。（那栋建筑看起来很新，其实有50年了。）
 :::
 :::en
-1. 彼女は若く**見える**けど、実は40歳だ。(She looks young, but she's actually 40.)
-2. 彼は幸せそうに**見える**が、実は悩んでいる。(He appears happy, but he's actually troubled.)
+1. 彼女は若い**ように見える**けど、実は40歳だ。(She looks young, but she's actually 40.)
+2. 彼は幸せな**ように見える**が、実は悩んでいる。(He appears happy, but he's actually troubled.)
 3. この絵は写真の**ように見える**。(This painting looks like a photograph.)
 4. 彼は何も食べていない**ように見える**。(He looks like he hasn't eaten anything.)
 5. あの建物は新しい**ように見える**が、実は築50年だ。(That building looks new, but it's actually 50 years old.)

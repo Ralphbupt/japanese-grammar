@@ -137,16 +137,16 @@ Emphasizes a specific word, indicating "it is precisely this" or "this is what m
 :::zh
 | 接续 | 形式 |
 |------|------|
-| い形容词 | 驚いた + ことに |
+| い形容词 | 嬉しい + ことに |
 | な形容词な | 残念な + ことに |
-| 动词た形 | 困った + ことに |
+| 动词た形 | 驚いた / 困った + ことに |
 :::
 :::en
 | Conjugation | Form |
 |------|------|
-| い-adjective | 驚いた + ことに |
+| い-adjective | 嬉しい + ことに |
 | な-adjective な | 残念な + ことに |
-| Verb た-form | 困った + ことに |
+| Verb た-form | 驚いた / 困った + ことに |
 :::
 
 ### 含义||Meaning
@@ -170,7 +170,7 @@ Expresses the speaker's emotion or evaluation at the beginning of a sentence, fo
 2. **嬉しいことに**、全員合格した。(To my delight, everyone passed.)
 3. **悲しいことに**、あの店は閉店してしまった。(Sadly, that shop has closed down.)
 4. **残念なことに**、試合は中止になった。(Unfortunately, the match was cancelled.)
-5. **困ったことに**、パスポートをなくしてしまった。(To make matters worse, I lost my passport.)
+5. **困ったことに**、パスポートをなくしてしまった。(Annoyingly, I've lost my passport.)
 :::
 
 ---
@@ -230,7 +230,7 @@ Two meanings: ① Each time something happens. ② At regular intervals.
 |------|------|------|
 | ごとに | Every / each | Attaches to nouns and verbs; emphasizes regularity or individuality |
 | たびに | Every time | Only with verbs / Noun の; emphasizes consistent occurrence |
-| おきに | At intervals of | Only for numerical intervals (3日おきに = every 3 days) |
+| おきに | At intervals of | Only for numerical intervals (3日おきに = every fourth day, i.e. with 3 days in between) |
 :::
 
 ---
@@ -289,7 +289,7 @@ Two meanings: ① Each time something happens. ② At regular intervals.
 1. 彼は知っている（　　）をして、質問に答えなかった。
 2. 今度（　　）、N3に合格するぞ！
 3. 驚いた（　　）、彼はもう結婚していた。
-4. この電車は3分（　　）に来ます。
+4. この電車は3分（　　）来ます。
 
 **二、用「ふりをする」造句：**
 
@@ -307,7 +307,7 @@ Two meanings: ① Each time something happens. ② At regular intervals.
 **五、用「ごとに」还是「たびに」？**
 
 9. 日本に行く（　　）、お土産を買ってくる。
-10. このバスは15分（　　）に来る。
+10. このバスは15分（　　）来る。
 :::
 :::en
 **I. Fill in with the appropriate grammar (ふりをする, こそ, ことに, ごとに):**
@@ -315,7 +315,7 @@ Two meanings: ① Each time something happens. ② At regular intervals.
 1. 彼は知っている（　　）をして、質問に答えなかった。
 2. 今度（　　）、N3に合格するぞ！
 3. 驚いた（　　）、彼はもう結婚していた。
-4. この電車は3分（　　）に来ます。
+4. この電車は3分（　　）来ます。
 
 **II. Make a sentence using ふりをする:**
 
@@ -333,7 +333,7 @@ Two meanings: ① Each time something happens. ② At regular intervals.
 **V. ごとに or たびに?**
 
 9. 日本に行く（　　）、お土産を買ってくる。
-10. このバスは15分（　　）に来る。
+10. このバスは15分（　　）来る。
 :::
 
 ## 复习计划||Review Schedule

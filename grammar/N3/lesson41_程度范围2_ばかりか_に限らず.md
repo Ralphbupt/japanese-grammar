@@ -129,14 +129,14 @@ This lesson covers grammar for "limiting scope" and "exceeding scope." 「だけ
 2. このことは田中さん**しか**知らない。（这件事只有田中知道。）
 3. あと3日**しか**ない。（只剩3天了。）
 4. 日本語でメールを書く**しか**方法がない。（只有用日语写邮件这个办法了。）
-5. 私には彼を信じる**しか**できない。（我只能相信他。）
+5. 今は彼を信じる**しか**ない。（现在只能相信他了。）
 :::
 :::en
 1. 財布に1000円**しか**ない。(I only have 1,000 yen in my wallet.)
 2. このことは田中さん**しか**知らない。(Only Tanaka knows about this.)
 3. あと3日**しか**ない。(There are only 3 days left.)
 4. 日本語でメールを書く**しか**方法がない。(The only option is to write the email in Japanese.)
-5. 私には彼を信じる**しか**できない。(All I can do is believe in him.)
+5. 今は彼を信じる**しか**ない。(All I can do now is believe in him.)
 :::
 
 ---
@@ -291,14 +291,14 @@ This lesson covers grammar for "limiting scope" and "exceeding scope." 「だけ
 :::zh
 1. この問題は日本**に限らず**、世界中で起きている。（这个问题不限于日本，全世界都在发生。）
 2. 若者**に限らず**、お年寄りもスマホを使っている。（不限于年轻人，老年人也在用智能手机。）
-3. 年齢**に限らず**、誰でも参加できます。（不限年龄，谁都可以参加。）
+3. 子供**に限らず**、大人も楽しめる映画だ。（不限于孩子，大人也能乐在其中的电影。）
 4. 男女**に限らず**、どなたでも歓迎です。（不限男女，欢迎任何人。）
 5. 平日**に限らず**、休日も営業しています。（不限平日，休息日也营业。）
 :::
 :::en
 1. この問題は日本**に限らず**、世界中で起きている。(This problem is not limited to Japan — it's happening worldwide.)
 2. 若者**に限らず**、お年寄りもスマホを使っている。(Not only young people, but the elderly also use smartphones.)
-3. 年齢**に限らず**、誰でも参加できます。(Regardless of age, anyone can participate.)
+3. 子供**に限らず**、大人も楽しめる映画だ。(A movie that not only children but adults can enjoy too.)
 4. 男女**に限らず**、どなたでも歓迎です。(Regardless of gender, everyone is welcome.)
 5. 平日**に限らず**、休日も営業しています。(We're open not only on weekdays but also on holidays.)
 :::
@@ -333,9 +333,9 @@ This lesson covers grammar for "limiting scope" and "exceeding scope." 「だけ
 **一、选择正确的语法（だけ・しか〜ない・ばかりか・に限って・に限らず）**
 
 1. 冷蔵庫に卵が3つ（　　）残っていない。
-2. 日本語（　　）、英語も話せるようになりたい。
+2. この店は値段が高い（　　）、味もよくない。
 3. 本日（　　）、送料無料です。
-4. 国籍（　　）、誰でも応募できます。
+4. このアプリは若者（　　）、幅広い世代に人気がある。
 5. 知っている（　　）話してください。
 
 **二、翻译成日语**
@@ -350,9 +350,9 @@ This lesson covers grammar for "limiting scope" and "exceeding scope." 「だけ
 **Part 1: Choose the correct grammar (だけ / しか〜ない / ばかりか / に限って / に限らず)**
 
 1. 冷蔵庫に卵が3つ（　　）残っていない。
-2. 日本語（　　）、英語も話せるようになりたい。
+2. この店は値段が高い（　　）、味もよくない。
 3. 本日（　　）、送料無料です。
-4. 国籍（　　）、誰でも応募できます。
+4. このアプリは若者（　　）、幅広い世代に人気がある。
 5. 知っている（　　）話してください。
 
 **Part 2: Translate into Japanese**

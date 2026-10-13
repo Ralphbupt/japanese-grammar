@@ -106,7 +106,7 @@
 1. 一緒に食べ**よう**。(Let's eat together. → plain form / between friends)
 2. 映画を見に行**こう**よ。(Let's go watch a movie.)
 3. 休憩し**ましょう**。(Let's take a break. → polite form)
-4. そろそろ始め**よう**か。(Shall we get started?）
+4. そろそろ始め**よう**か。(Shall we get started?)
 5. みんなで写真を撮**ろう**。(Let's all take a photo together.)
 :::
 

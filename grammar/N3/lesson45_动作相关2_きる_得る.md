@@ -77,7 +77,7 @@ Additionally, 「〜きった」 can express an extreme state: 疲れ**きった
 3. やると決めたら、やり**きる**つもりだ。（既然决定了就打算做到底。）
 4. 彼は長時間働いて、疲れ**きっている**。（他长时间工作，筋疲力尽。）
 5. 数え**きれない**ほどの星が見えた。（看到了数不清的星星。）
-6. このプロジェクトは一週間で終わら**せきれない**。（这个项目一周内做不完。）
+6. このプロジェクトは一週間ではやり**きれない**。（这个项目一周内做不完。）
 :::
 :::en
 1. マラソンを最後まで走り**きった**。(I ran the entire marathon to the end.)
@@ -85,7 +85,7 @@ Additionally, 「〜きった」 can express an extreme state: 疲れ**きった
 3. やると決めたら、やり**きる**つもりだ。(Once I decide to do it, I intend to see it through.)
 4. 彼は長時間働いて、疲れ**きっている**。(He worked long hours and is completely exhausted.)
 5. 数え**きれない**ほどの星が見えた。(I could see more stars than I could count.)
-6. このプロジェクトは一週間で終わら**せきれない**。(This project cannot be finished within a week.)
+6. このプロジェクトは一週間ではやり**きれない**。(This project cannot be finished within a week.)
 :::
 
 ### 辨析||Comparison
@@ -140,14 +140,14 @@ E.g.: できっこない, わかりっこない, 勝てっこない
 2. 一日で全部覚えるなんて、でき**っこない**。（一天全记住什么的，不可能。）
 3. 彼に勝て**っこない**。（绝对赢不了他。）
 4. 今からじゃ間に合い**っこない**。（从现在开始绝对来不及。）
-5. こんな量、食べ**っこない**よ。（这么多量，绝对吃不完。）
+5. こんな量、食べきれ**っこない**よ。（这么多量，绝对吃不完。）
 :::
 :::en
 1. そんな難しい試験、受かり**っこない**よ。(An exam that hard — there's no way I'd pass.)
 2. 一日で全部覚えるなんて、でき**っこない**。(Memorize everything in one day? No way.)
 3. 彼に勝て**っこない**。(There's absolutely no way to beat him.)
 4. 今からじゃ間に合い**っこない**。(Starting now, there's no way we'll make it in time.)
-5. こんな量、食べ**っこない**よ。(This much food — no way I can eat all that.)
+5. こんな量、食べきれ**っこない**よ。(This much food — no way I can eat all that.)
 :::
 
 ### 辨析||Comparison
@@ -212,7 +212,7 @@ Verb masu-stem + 得る (うる/える) / 得ない (えない)
 :::zh
 1. そんなことはあり**えない**。（那种事不可能。）
 2. 地震はいつでも起こり**うる**。（地震随时都有可能发生。）
-3. 彼女が嘘をつくなんて、考え**えない**。（她说谎什么的，不可想象。）
+3. 彼女が嘘をつくなんて、想像し**えない**。（她说谎什么的，无法想象。）
 4. 人間なら誰でもミスをし**うる**。（是人就都有可能犯错。）
 5. この方法で成功し**うる**と思う。（我觉得用这个方法有可能成功。）
 6. 予想し**えない**事態が起きた。（发生了无法预想的事态。）
@@ -220,7 +220,7 @@ Verb masu-stem + 得る (うる/える) / 得ない (えない)
 :::en
 1. そんなことはあり**えない**。(That's impossible.)
 2. 地震はいつでも起こり**うる**。(Earthquakes can happen at any time.)
-3. 彼女が嘘をつくなんて、考え**えない**。(It's unthinkable that she would lie.)
+3. 彼女が嘘をつくなんて、想像し**えない**。(It's unthinkable that she would lie.)
 4. 人間なら誰でもミスをし**うる**。(Any human can make mistakes.)
 5. この方法で成功し**うる**と思う。(I think it's possible to succeed with this method.)
 6. 予想し**えない**事態が起きた。(An unforeseeable situation occurred.)
@@ -268,7 +268,7 @@ Verb masu-stem + 得る (うる/える) / 得ない (えない)
    a) きる　b) っこない　c) うる
 
 5. そんなこと、あり＿＿！
-   a) きれない　b) えない　c) っこない
+   a) きれない　b) えない　c) きる
 
 **二、翻译成日语**
 
@@ -283,7 +283,8 @@ Verb masu-stem + 得る (うる/える) / 得ない (えない)
 10. 发生了无法想象的事情。
 
 **答案**
-1. a　2. b　3. b　4. c　5. b
+1\. a　2. b　3. b　4. c　5. b
+
 6. あんなにたくさんの料理は一人で食べきれない。
 7. 一日で全部覚えるなんて、できっこない。
 8. 誰でもミスをしうる。
@@ -306,7 +307,7 @@ Verb masu-stem + 得る (うる/える) / 得ない (えない)
    a) きる　b) っこない　c) うる
 
 5. そんなこと、あり＿＿！
-   a) きれない　b) えない　c) っこない
+   a) きれない　b) えない　c) きる
 
 **Part 2: Translate into Japanese**
 
@@ -321,7 +322,8 @@ Verb masu-stem + 得る (うる/える) / 得ない (えない)
 10. Something unimaginable happened.
 
 **Answers**
-1. a　2. b　3. b　4. c　5. b
+1\. a　2. b　3. b　4. c　5. b
+
 6. あんなにたくさんの料理は一人で食べきれない。
 7. 一日で全部覚えるなんて、できっこない。
 8. 誰でもミスをしうる。

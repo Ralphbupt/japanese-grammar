@@ -1,6 +1,6 @@
 # Lesson 21 – ように系列 — ようにする/ようになる/ように（目的）||The ように Family — ようにする/ようになる/ように (purpose)
 
-## 本课单词表
+## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
@@ -287,14 +287,14 @@ Expresses a **natural change of state** — "gradually come to be able to do som
 ### A. 选择ようにする或ようになる||A. Choose ようにする or ようになる
 
 :::zh
-1. 毎日運動（　　）います。（一直注意每天运动）
+1. 毎日運動する（　　）います。（一直注意每天运动）
 2. 赤ちゃんが歩ける（　　）。（婴儿变得会走了）
 3. 甘いものを食べない（　　）ください。（请注意不要吃甜食）
 4. 前は読めなかった漢字が、読める（　　）。（变得能读了）
 :::
 
 :::en
-1. 毎日運動（　　）います。(I have been making a point of exercising every day)
+1. 毎日運動する（　　）います。(I have been making a point of exercising every day)
 2. 赤ちゃんが歩ける（　　）。(The baby has come to be able to walk)
 3. 甘いものを食べない（　　）ください。(Please be careful not to eat sweets)
 4. 前は読めなかった漢字が、読める（　　）。(Kanji I couldn't read before, I've come to be able to read)
@@ -380,7 +380,7 @@ Expresses a **natural change of state** — "gradually come to be able to do som
 <summary>答案 / Answers</summary>
 
 :::zh
-1. △ 没有语法错误，但「话せる」是可能形 → ✅ 日本語が**話せる**ように、毎日練習している。（ように更准确表达"为了能够"）
+1. △ 没有语法错误，但「話せる」是可能形 → ✅ 日本語が**話せる**ように、毎日練習している。（ように更准确表达"为了能够"）
 2. ❌ ようにした = 有意识地做到 → ✅ ようになった（自然变化用なる不用する）
 3. ❌ 言ってあげた = 我帮老师说 → ✅ 先生に静かにするように**言われた**（被老师说→受身形）
 4. △ 不算错，但忘れない是非意志性 → ✅ 忘れない**ように**、メモした。（ように更标准）

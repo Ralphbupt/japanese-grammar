@@ -50,10 +50,10 @@ This lesson covers grammar expressing "degree" and "conditional extremes." 「�
 
 ### 含义||Meaning
 :::zh
-表示程度，"到……的地步""……得（不得了）"。常用于夸张表达。否定时「〜ほど〜ない」表示"没有比……更……的"。
+表示程度，"到……的地步""……得（不得了）"。常用于夸张表达。否定句有两种：「AはBほど〜ない」表示"A没有B那么……"；「Bほど〜Nはない」表示"没有比B更……的N"（例3）。
 :::
 :::en
-Indicates degree — "to the extent that…" or "so much that…". Often used in exaggerated expressions. In the negative pattern 「〜ほど〜ない」, it means "nothing is more… than…".
+Indicates degree — "to the extent that…" or "so much that…". Often used in exaggerated expressions. There are two negative patterns: 「AはBほど〜ない」 "A is not as … as B", and 「Bほど〜Nはない」 "there is no N more … than B" (example 3).
 :::
 
 ### 例句||Example Sentences
@@ -168,14 +168,14 @@ Indicates degree — "to the extent that…" or "so much that…". Often used in
 :::zh
 - 動詞ば形 + 動詞辞書形 + ほど
 - い形容詞：～ければ ～い + ほど
-- な形容詞：～であれば ～な + ほど
+- な形容詞：～なら ～な + ほど（书面也说 ～であれば ～である + ほど）
 
 ※ 同一个词重复两次。
 :::
 :::en
 - Verb ba-form + verb dictionary form + ほど
 - i-adjective: ～ければ ～い + ほど
-- na-adjective: ～であれば ～な + ほど
+- na-adjective: ～なら ～な + ほど (formal: ～であれば ～である + ほど)
 
 ※ The same word is repeated twice.
 :::
@@ -195,7 +195,7 @@ Indicates degree — "to the extent that…" or "so much that…". Often used in
 3. この本は読め**ば**読む**ほど**面白い。（这本书越读越有意思。）
 4. 給料は高けれ**ば**高い**ほど**いい。（工资越高越好。）
 5. 試験が近づけ**ば**近づく**ほど**緊張する。（考试越近越紧张。）
-6. 複雑であれ**ば**複雑な**ほど**やりがいがある。（越复杂越有干劲。）
+6. 複雑**なら**複雑な**ほど**やりがいがある。（越复杂越有干劲。）
 :::
 :::en
 1. 練習すれ**ば**する**ほど**上手になる。(The more you practice, the better you get.)
@@ -203,7 +203,7 @@ Indicates degree — "to the extent that…" or "so much that…". Often used in
 3. この本は読め**ば**読む**ほど**面白い。(The more you read this book, the more interesting it gets.)
 4. 給料は高けれ**ば**高い**ほど**いい。(The higher the salary, the better.)
 5. 試験が近づけ**ば**近づく**ほど**緊張する。(The closer the exam gets, the more nervous I become.)
-6. 複雑であれ**ば**複雑な**ほど**やりがいがある。(The more complex it is, the more rewarding it feels.)
+6. 複雑**なら**複雑な**ほど**やりがいがある。(The more complex it is, the more rewarding it feels.)
 :::
 
 ### 辨析||Comparison
@@ -259,7 +259,7 @@ Indicates degree — "to the extent that…" or "so much that…". Often used in
 3. 電気**さえ**あれ**ば**、この機械は動く。（只要有电，这台机器就能运转。）
 4. 努力し**さえ**すれ**ば**、合格できる。（只要努力就能及格。）
 5. あなた**さえ**よけれ**ば**、一緒に行きましょう。（只要你愿意，一起去吧。）
-6. 天気が良く**さえ**あれ**ば**、ピクニックに行ける。（只要天气好就能去野餐。）
+6. 部屋が広く**さえ**あれ**ば**、駅から遠くてもいい。（只要房间宽敞，离车站远也没关系。）
 :::
 :::en
 1. 健康で**さえ**あれ**ば**、それで十分だ。(As long as I'm healthy, that's enough.)
@@ -267,7 +267,7 @@ Indicates degree — "to the extent that…" or "so much that…". Often used in
 3. 電気**さえ**あれ**ば**、この機械は動く。(This machine runs as long as there is electricity.)
 4. 努力し**さえ**すれ**ば**、合格できる。(If you just make the effort, you can pass.)
 5. あなた**さえ**よけれ**ば**、一緒に行きましょう。(If it's fine with you, let's go together.)
-6. 天気が良く**さえ**あれ**ば**、ピクニックに行ける。(As long as the weather is good, we can go on a picnic.)
+6. 部屋が広く**さえ**あれ**ば**、駅から遠くてもいい。(As long as the room is spacious, I don't mind if it's far from the station.)
 :::
 
 ### 辨析||Comparison

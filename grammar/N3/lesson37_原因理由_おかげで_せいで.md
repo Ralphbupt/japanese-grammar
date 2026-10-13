@@ -61,14 +61,14 @@ This lesson focuses on N3 grammar for expressing cause and reason. These express
 :::zh
 1. 先生の**おかげで**、試験に合格できた。（多亏了老师，考试合格了。）
 2. 毎日練習した**おかげで**、上手になった。（多亏每天练习，变厉害了。）
-3. 天気がいい**おかげで**、遠足が楽しかった。（多亏天气好，远足很开心。）
+3. 天気がよかった**おかげで**、遠足が楽しかった。（多亏天气好，远足很开心。）
 4. みんなの応援の**おかげで**、優勝できた。（多亏大家的支持，获得了冠军。）
 5. 薬を飲んだ**おかげで**、熱が下がった。（多亏吃了药，退烧了。）
 :::
 :::en
 1. 先生の**おかげで**、試験に合格できた。(Thanks to the teacher, I passed the exam.)
 2. 毎日練習した**おかげで**、上手になった。(Thanks to practicing every day, I improved.)
-3. 天気がいい**おかげで**、遠足が楽しかった。(Thanks to the good weather, the field trip was fun.)
+3. 天気がよかった**おかげで**、遠足が楽しかった。(Thanks to the good weather, the field trip was fun.)
 4. みんなの応援の**おかげで**、優勝できた。(Thanks to everyone's support, we won the championship.)
 5. 薬を飲んだ**おかげで**、熱が下がった。(Thanks to taking the medicine, the fever went down.)
 :::
@@ -104,14 +104,14 @@ This lesson focuses on N3 grammar for expressing cause and reason. These express
 ### 例句||Example Sentences
 :::zh
 1. 渋滞の**せいで**、遅刻してしまった。（都怪堵车，迟到了。）
-2. 不注意の**せいで**、事故を起こした。（都怪不注意，出了事故。）
+2. 不注意の**せいで**、事故を起こした。（都怪不小心，引发了事故。）
 3. 夜更かしした**せいで**、朝起きられなかった。（都怪熬夜，早上起不来。）
 4. 年の**せいか**、最近疲れやすい。（也许是因为年龄，最近容易累。）
 5. 緊張した**せいか**、うまく話せなかった。（也许是因为紧张，没能好好说话。）
 :::
 :::en
 1. 渋滞の**せいで**、遅刻してしまった。(Because of the traffic jam, I ended up being late.)
-2. 不注意の**せいで**、事故を起こした。(Because of carelessness, an accident happened.)
+2. 不注意の**せいで**、事故を起こした。(I caused an accident because I was careless.)
 3. 夜更かしした**せいで**、朝起きられなかった。(Because I stayed up late, I couldn't wake up in the morning.)
 4. 年の**せいか**、最近疲れやすい。(Perhaps because of my age, I get tired easily lately.)
 5. 緊張した**せいか**、うまく話せなかった。(Perhaps because I was nervous, I couldn't speak well.)
@@ -247,7 +247,7 @@ Verb (ta-form / plain form) + 上は
 
 ### 含义||Meaning
 :::zh
-"既然……"，与「以上は」几乎同义，但更书面化。表达强烈的决心和覚悟。
+"既然……"，与「以上は」几乎同义，但更书面化。表达强烈的决心和觉悟。
 :::
 :::en
 "Now that…" — nearly synonymous with 「以上は」 but more literary. Expresses strong determination and resolve.
@@ -275,10 +275,12 @@ Verb (ta-form / plain form) + 上は
 
 ### 接続||Conjugation
 :::zh
-動詞普通形 + からには
+動詞・い形容詞普通形 + からには
+な形容詞・名詞 + である + からには
 :::
 :::en
-Verb (plain form) + からには
+Verb / い-adjective (plain form) + からには
+な-adjective / Noun + である + からには
 :::
 
 ### 含义||Meaning
@@ -398,7 +400,8 @@ Verb (plain form) + からには
 10. 由于形状像猫，这座山被叫做"猫山"。
 
 ### 答案
-1. b　2. b　3. b　4. c　5. b
+1\. b　2. b　3. b　4. c　5. b
+
 6. あなたが手伝ってくれたおかげで、締め切りに間に合った。
 7. 雨のせいで、運動会が中止になった。
 8. 留学すると決めたからには、しっかり準備しよう。
@@ -432,7 +435,8 @@ Verb (plain form) + からには
 10. Because its shape resembles a cat, this mountain is called "Cat Mountain."
 
 ### Answers
-1. b　2. b　3. b　4. c　5. b
+1\. b　2. b　3. b　4. c　5. b
+
 6. あなたが手伝ってくれたおかげで、締め切りに間に合った。
 7. 雨のせいで、運動会が中止になった。
 8. 留学すると決めたからには、しっかり準備しよう。
