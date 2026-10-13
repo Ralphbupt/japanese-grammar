@@ -78,21 +78,21 @@ This lesson covers N2 grammar related to "topics," "standpoints," and "condition
 | 表达 | 含义 | 区别 |
 |------|------|------|
 | にしても〜にしても | 无论……还是…… | 列举两个极端情况 |
-| にしろ〜にしろ | 无论……还是…… | 同义，稍随意 |
+| にしろ〜にしろ | 无论……还是…… | 同义，比にしても稍硬 |
 | にせよ〜にせよ | 无论……还是…… | 同义，较书面 |
 | であれ〜であれ | 无论……还是…… | 最书面 |
 
-> 四者基本同义，正式度：であれ > にせよ > にしても > にしろ
+> 四者基本同义，正式度：であれ > にせよ > にしろ > にしても
 :::
 :::en
 | Expression | Meaning | Difference |
 |------|------|------|
 | にしても〜にしても | whether… or… | Lists two extremes |
-| にしろ〜にしろ | whether… or… | Same meaning; slightly more casual |
+| にしろ〜にしろ | whether… or… | Same meaning; a bit stiffer than にしても |
 | にせよ〜にせよ | whether… or… | Same meaning; more formal |
 | であれ〜であれ | whether… or… | Most formal |
 
-> All four are essentially synonymous. Formality: であれ > にせよ > にしても > にしろ
+> All four are essentially synonymous. Formality: であれ > にせよ > にしろ > にしても
 :::
 
 ---
@@ -214,7 +214,6 @@ This lesson covers N2 grammar related to "topics," "standpoints," and "condition
 | を問わず | 不论…… | 正式，公告文体 |
 | にかかわらず | 不论…… | 同义，稍口语化 |
 | によらず | 不论…… | 较少见，书面 |
-| を問わず | 不论…… | 前面多为对立名词（男女、有無等） |
 
 > 「を問わず」前面经常是对立概念：男女を問わず、昼夜を問わず、有無を問わず
 :::

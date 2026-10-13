@@ -55,7 +55,7 @@
 **用法 ①：完成条件（A 完成后做 B）— 最常用**
 - 宿題が終わっ**たら**、遊びに行く。（作业写完之后去玩。）
 - 駅に着い**たら**、電話してください。（到了车站请打电话。）
-- 18 歳になっ**たら**、お酒が飲める。（满 18 岁就能喝酒。）
+- 20 歳になっ**たら**、お酒が飲める。（满 20 岁就能喝酒。）
 
 **用法 ②：假设条件（如果 A 发生的话）— 万一/可能性**
 - 雨が降っ**たら**、試合は中止です。（如果下雨，比赛中止。）
@@ -72,7 +72,7 @@
 **Use ①: Completion (after A is done, do B) — most common**
 - 宿題が終わっ**たら**、遊びに行く。（After I finish my homework, I'll go play.）
 - 駅に着い**たら**、電話してください。（Please call when you arrive at the station.）
-- 18 歳になっ**たら**、お酒が飲める。（Once you turn 18, you can drink alcohol.）
+- 20 歳になっ**たら**、お酒が飲める。（Once you turn 20, you can drink alcohol.）
 
 **Use ②: Hypothetical (if A happens) — possibility**
 - 雨が降っ**たら**、試合は中止です。（If it rains, the match is cancelled.）
@@ -115,7 +115,7 @@
 - **最万能**：几乎所有条件场景都能用，不知道用哪个就用たら
 - 后句可以接**意志、请求、命令、建议**：「終わったら教えて」「着いたら電話して」
 - 前后主语可以不同
-- 用法 ③（过去意外）是たら独有的特殊用法
+- 用法 ③（过去意外）最常用たら（と也可以，ば不行）
 - **「もし」可以加在前面强调假设**：「もし時間があったら、来てください」
 :::
 
@@ -123,7 +123,7 @@
 - **Most versatile**: works for almost any conditional situation; when unsure, use たら
 - The second clause can be **volition, request, command, or advice**: 「終わったら教えて」「着いたら電話して」
 - The two clauses can have different subjects
-- Use ③ (past discovery) is unique to たら
+- Use ③ (past discovery) is most commonly expressed with たら (と also works; ば does not)
 - **「もし」 can be added in front for emphasis on hypothesis**: 「もし時間があったら、来てください」
 :::
 
@@ -468,7 +468,7 @@ Picking up a topic / giving advice → なら
 5. す**れば** / し**たら**（假设条件，两个都可以）
 6. 終わっ**たら**（完成后+请求，必须用たら）
 7. なる**と**（自然规律用と）
-8. 持ってい**れば** / 持っていっ**たら**（一般条件，ば或たら都可以）
+8. 持ってい**れば** / 持ってい**たら**（一般条件，ば或たら都可以）
 :::
 
 :::en
@@ -479,7 +479,7 @@ Picking up a topic / giving advice → なら
 5. す**れば** / し**たら** (hypothetical, both work)
 6. 終わっ**たら** (after completion + request → must use たら)
 7. なる**と** (natural law → use と)
-8. 持ってい**れば** / 持っていっ**たら** (general condition, ば or たら both fine)
+8. 持ってい**れば** / 持ってい**たら** (general condition, ば or たら both fine)
 :::
 
 </details>

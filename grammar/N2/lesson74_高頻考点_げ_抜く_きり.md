@@ -1,11 +1,11 @@
-# Lesson 74 – 高頻考点 — げ/抜く/次第だ/きり/ぶりに/つき||High-Frequency Points — げ/抜く/次第だ/きり/ぶりに/つき
+# Lesson 74 – 高頻考点 — げ/抜く/次第だ/きり/ぶりに/につき||High-Frequency Points — げ/抜く/次第だ/きり/ぶりに/につき
 
 :::zh
-这一课汇集N2考试中频率极高的6个语法点。「げ」表示外观样子，「抜く」表示坚持到底，「次第だ/次第で」表示取决于或缘由，「きり」表示限定或持续状态，「ぶりに」表示时隔，「つき」表示原因或单位比率。这些都是N2文法选择题的常客。
+这一课汇集N2考试中频率极高的6个语法点。「げ」表示外观样子，「抜く」表示坚持到底，「次第だ/次第で」表示取决于或缘由，「きり」表示限定或持续状态，「ぶりに」表示时隔，「につき」表示原因或单位比率。这些都是N2文法选择题的常客。
 :::
 
 :::en
-This lesson brings together 6 grammar points that appear very frequently on the N2 exam. 「げ」 describes outward appearance, 「抜く」 means "to do completely," 「次第だ/次第で」 means "depends on" or "circumstances," 「きり」 means "since" or "only," 「ぶりに」 means "for the first time in," and 「つき」 means "because of" or "per." These are staples in N2 grammar questions.
+This lesson brings together 6 grammar points that appear very frequently on the N2 exam. 「げ」 describes outward appearance, 「抜く」 means "to do completely," 「次第だ/次第で」 means "depends on" or "circumstances," 「きり」 means "since" or "only," 「ぶりに」 means "for the first time in," and 「につき」 means "because of" or "per." These are staples in N2 grammar questions.
 :::
 
 ## 本课单词表||Vocabulary
@@ -134,7 +134,7 @@ This lesson brings together 6 grammar points that appear very frequently on the 
 3. 長い不況を乗り越え、会社は生き**抜いた**。（度过长期不景气，公司挺过来了。）
 4. 彼女は一人で子供を育て**抜いた**。（她一个人把孩子养大了。）
 5. この問題を考え**抜いた**結果、答えが見つかった。（彻底思考了这个问题后，找到了答案。）
-6. 困難な状況でも、信念を貫き**抜いた**。（即使在困难的状况中，也坚持了自己的信念到底。）
+6. 困難な状況でも、信念を守り**抜いた**。（即使在困难的状况中，也坚持了自己的信念到底。）
 :::
 :::en
 1. 42キロのマラソンを走り**抜いた**。(I ran the entire 42km marathon.)
@@ -142,7 +142,7 @@ This lesson brings together 6 grammar points that appear very frequently on the 
 3. 長い不況を乗り越え、会社は生き**抜いた**。(Overcoming the long recession, the company survived.)
 4. 彼女は一人で子供を育て**抜いた**。(She raised her children all by herself.)
 5. この問題を考え**抜いた**結果、答えが見つかった。(After thinking it through completely, I found the answer.)
-6. 困難な状況でも、信念を貫き**抜いた**。(Even in difficult circumstances, he held firm to his beliefs.)
+6. 困難な状況でも、信念を守り**抜いた**。(Even in difficult circumstances, he held firm to his beliefs.)
 :::
 
 ### 辨析||Comparison
@@ -229,7 +229,7 @@ This lesson brings together 6 grammar points that appear very frequently on the 
 |------|------|------|
 | 次第だ（名詞＋） | 取决于 | 结果随条件变化 |
 | 次第です（動詞＋） | 缘由是/因此 | 解释经过，正式 |
-| ます形＋次第 | 一……就…… | 表示之后立刻做（Day 62） |
+| ます形＋次第 | 一……就…… | 表示之后立刻做（Lesson 48） |
 | によって | 根据/因为 | 更通用的"根据" |
 
 > 「努力次第だ」= 取决于努力（名词+次第）
@@ -240,7 +240,7 @@ This lesson brings together 6 grammar points that appear very frequently on the 
 |------|------|------|
 | 次第だ (Noun +) | depends on | Result varies with conditions |
 | 次第です (Verb +) | the reason is | Explains circumstances; formal |
-| masu-stem + 次第 | as soon as… | Immediate follow-up action (Day 62) |
+| masu-stem + 次第 | as soon as… | Immediate follow-up action (Lesson 48) |
 | によって | depending on / because of | More general "depending on" |
 
 > 「努力次第だ」= depends on effort (noun + 次第)
@@ -369,12 +369,12 @@ This lesson brings together 6 grammar points that appear very frequently on the 
 
 ---
 
-## 6. 〜つき（因为…… / 每……）||6. 〜つき (Due to… / Per…)
+## 6. 〜につき（因为…… / 每……）||6. 〜につき (Due to… / Per…)
 
 ### 接続||Conjugation
 :::zh
 **A. 因为/关于（附带说明）：**
-- 名詞 + つき
+- 名詞 + につき
 
 **B. 每/per：**
 - 数量詞 + につき
@@ -383,7 +383,7 @@ This lesson brings together 6 grammar points that appear very frequently on the 
 :::
 :::en
 **A. Due to / regarding (attached note):**
-- Noun + つき
+- Noun + につき
 
 **B. Per:**
 - Counter + につき
@@ -450,10 +450,10 @@ This lesson brings together 6 grammar points that appear very frequently on the 
 ## 练习||Practice
 
 :::zh
-**一、选择正确的语法（げ・抜く・次第だ/次第で・きり・ぶりに・つき）**
+**一、选择正确的语法（げ・抜く・次第だ/次第で・きり・ぶりに・につき）**
 
 1. 彼女は悲し（　　）な目で私を見た。
-2. この困難を乗り越え（　　）ことができた。
+2. 苦しい練習を最後までやり（　　）ことができた。
 3. 合格できるかどうかは本人の努力（　　）。
 4. 祖母は寝た（　　）、起きてこない。
 5. 20年（　　）に故郷に帰った。
@@ -467,10 +467,10 @@ This lesson brings together 6 grammar points that appear very frequently on the 
 10. 每人限购两个。（につき）
 :::
 :::en
-**Part 1: Choose the correct grammar (げ / 抜く / 次第だ・次第で / きり / ぶりに / つき)**
+**Part 1: Choose the correct grammar (げ / 抜く / 次第だ・次第で / きり / ぶりに / につき)**
 
 1. 彼女は悲し（　　）な目で私を見た。
-2. この困難を乗り越え（　　）ことができた。
+2. 苦しい練習を最後までやり（　　）ことができた。
 3. 合格できるかどうかは本人の努力（　　）。
 4. 祖母は寝た（　　）、起きてこない。
 5. 20年（　　）に故郷に帰った。

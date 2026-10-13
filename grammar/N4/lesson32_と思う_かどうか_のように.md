@@ -1,6 +1,14 @@
 # Lesson 32 – 引用・思考・比況（と思う・かどうか・のように・なさい）||Quotation, Thought & Likeness (と思う・かどうか・のように・なさい)
 
-## 本课单词表
+:::zh
+本课学习引用与思考（と思う・かどうか）、比喻（のように）、感官（がする）、必要（必要がある）以及命令与禁止（なさい・命令形・禁止形）的表达。
+:::
+
+:::en
+This lesson covers quoting and thinking (と思う, かどうか), likeness (のように), the senses (がする), necessity (必要がある), and commands and prohibitions (なさい, imperative and prohibitive forms).
+:::
+
+## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
@@ -22,7 +30,7 @@
 
 ---
 
-## 1. 〜と思う / 〜と思っている（我觉得……/一直认为……）||〜と思う / 〜と思っている (I Think That... / I've Been Thinking...)
+## 1. 〜と思う / 〜と思っている（我觉得……/一直认为……）||1. 〜と思う / 〜と思っている (I Think That... / I've Been Thinking...)
 
 ### 接续||Conjugation
 
@@ -120,7 +128,7 @@ Key distinction:
 
 ---
 
-## 2. 〜かどうか（是否……）||〜かどうか (Whether or Not...)
+## 2. 〜かどうか（是否……）||2. 〜かどうか (Whether or Not...)
 
 ### 接续||Conjugation
 
@@ -192,7 +200,7 @@ Key distinction:
 
 ---
 
-## 3. 〜のように / 〜のような（像……一样）||〜のように / 〜のような (Like... / Similar To...)
+## 3. 〜のように / 〜のような（像……一样）||3. 〜のように / 〜のような (Like... / Similar To...)
 
 ### 接续||Conjugation
 
@@ -266,7 +274,7 @@ Key distinction:
 
 ---
 
-## 4. 〜なさい（做……！——命令）||〜なさい (Do...! — Command)
+## 4. 〜なさい（做……！——命令）||4. 〜なさい (Do...! — Command)
 
 ### 接续||Conjugation
 
@@ -340,7 +348,7 @@ Expresses a command, but softer than 「〜ろ」. Mainly used in **top-down** s
 
 ---
 
-## 5. 〜がする（感觉到……——五感）||〜がする (Sense / Feel... — Five Senses)
+## 5. 〜がする（感觉到……——五感）||5. 〜がする (Sense / Feel... — Five Senses)
 
 ### 接续||Conjugation
 
@@ -381,7 +389,7 @@ Expresses a command, but softer than 「〜ろ」. Mainly used in **top-down** s
 2. このスープはちょっと変な**味がする**。（这碗汤有点奇怪的味道。）
 3. 隣の部屋から**音がする**。（隔壁房间传来声音。）
 4. 誰かが来た**気がする**。（感觉好像有人来了。）
-5. この町は不思議な**雰囲気がする**。（这个城市有种不可思议的氛围。）
+5. この町は不思議な**感じがする**。（这个城市给人一种不可思议的感觉。）
 6. 外から子供の**声がする**。（从外面传来小孩的声音。）
 7. このケーキはレモンの**味がする**。（这个蛋糕有柠檬的味道。）
 :::
@@ -391,7 +399,7 @@ Expresses a command, but softer than 「〜ろ」. Mainly used in **top-down** s
 2. このスープはちょっと変な**味がする**。(This soup tastes a bit strange.)
 3. 隣の部屋から**音がする**。(I hear a sound from the next room.)
 4. 誰かが来た**気がする**。(I have a feeling someone came.)
-5. この町は不思議な**雰囲気がする**。(This town has a mysterious atmosphere.)
+5. この町は不思議な**感じがする**。(This town has a mysterious feel to it.)
 6. 外から子供の**声がする**。(I hear children's voices from outside.)
 7. このケーキはレモンの**味がする**。(This cake tastes like lemon.)
 :::
@@ -414,7 +422,7 @@ Expresses a command, but softer than 「〜ろ」. Mainly used in **top-down** s
 
 ---
 
-## 6. 〜必要がある / 〜必要はない（有必要……/没有必要……）||〜必要がある / 〜必要はない (Need To... / No Need To...)
+## 6. 〜必要がある / 〜必要はない（有必要……/没有必要……）||6. 〜必要がある / 〜必要はない (Need To... / No Need To...)
 
 ### 接续||Conjugation
 
@@ -530,7 +538,7 @@ Expresses a command, but softer than 「〜ろ」. Mainly used in **top-down** s
 命令形：直接命令对方做某事。语气非常强硬、粗鲁。
 禁止形：直接命令对方不许做某事。
 
-**使用场合**：紧急情况、体育加油、漫画/动漫台词、标识（立入禁止 等）。
+**使用场合**：紧急情况、体育加油、漫画/动漫台词、标识（止まれ、入るな 等）。
 **注意**：非常粗鲁/男性化的表达，绝对不能对上级或不熟悉的人使用。
 :::
 
@@ -538,7 +546,7 @@ Expresses a command, but softer than 「〜ろ」. Mainly used in **top-down** s
 Imperative: Directly orders someone to do something. Very strong and rough in tone.
 Prohibitive: Directly orders someone not to do something.
 
-**Where it's used**: emergencies, sports cheering, manga/anime dialogue, signs (立入禁止 etc.).
+**Where it's used**: emergencies, sports cheering, manga/anime dialogue, signs (止まれ, 入るな, etc.).
 **Caution**: Very rough/masculine — never use toward superiors or people you don't know well.
 :::
 

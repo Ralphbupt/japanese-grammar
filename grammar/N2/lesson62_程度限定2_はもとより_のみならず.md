@@ -39,7 +39,7 @@ This lesson provides an in-depth study of two N2-level progressive expressions. 
 :::zh
 - 名詞 + はもとより
 
-※ 也可写作「はもとより」「は元より」。  
+※ 也可写作「は元より」。  
 ※ 类似表达「はもちろん」可互换使用，但「はもとより」更书面化。  
 ※ 后半句常接「も」「さえ」「まで」等助词，表示连更进一步的对象也包含在内。
 :::
@@ -82,8 +82,8 @@ This is a progressive expression, expanding from the known to a wider scope.
 7. この問題は経済**はもとより**、環境にも大きな影響を与える。（这个问题对经济自不必说，对环境也有很大影响。）
 :::
 :::en
-1. この映画は日本**はもとより**、海外でも高い評価を受けている。(This film has received high praise not to mention in Japan, but overseas as well.)
-2. 彼女は英語**はもとより**、フランス語やドイツ語も話せる。(She can speak not to mention English, but French and German too.)
+1. この映画は日本**はもとより**、海外でも高い評価を受けている。(This film is highly acclaimed overseas, not to mention in Japan.)
+2. 彼女は英語**はもとより**、フランス語やドイツ語も話せる。(She can speak French and German, not to mention English.)
 3. このレストランは味**はもとより**、サービスも素晴らしい。(This restaurant has wonderful service, not to mention the taste.)
 4. 大人**はもとより**、子供にも人気のあるアニメだ。(It's an anime popular with children, not to mention adults.)
 5. 都市部**はもとより**、地方でもインターネットが普及している。(The internet has spread even to rural areas, not to mention urban areas.)
@@ -181,8 +181,8 @@ Structure: 「A のみならず、B も〜」
 2. 彼は学業**のみならず**、スポーツでも優れた成績を収めている。（他不仅学业出色，在体育方面也取得了优异成绩。）
 3. この政策は企業**のみならず**、個人にも影響がある。（这项政策不仅影响企业，也影响个人。）
 4. 喫煙は本人**のみならず**、周囲の人の健康にも害を及ぼす。（吸烟不仅对本人，对周围人的健康也有害。）
-5. 身体**のみならず**、精神的にも疲れている。（不仅身体，精神上也很疲惫。）
-6. あの歌手は歌が上手な**のみならず**、ダンスも一流だ。（那个歌手不仅歌唱得好，舞蹈也是一流的。）
+5. 身体**のみならず**、精神も疲れ切っている。（不仅身体，精神上也疲惫不堪。）
+6. あの歌手は歌が上手である**のみならず**、ダンスも一流だ。（那个歌手不仅歌唱得好，舞蹈也是一流的。）
 7. この問題は一つの地域**のみならず**、社会全体で考えるべきだ。（这个问题不仅是一个地区的事，应该全社会来思考。）
 :::
 :::en
@@ -190,8 +190,8 @@ Structure: 「A のみならず、B も〜」
 2. 彼は学業**のみならず**、スポーツでも優れた成績を収めている。(He has achieved excellent results not only in academics, but in sports as well.)
 3. この政策は企業**のみならず**、個人にも影響がある。(This policy affects not only corporations, but individuals as well.)
 4. 喫煙は本人**のみならず**、周囲の人の健康にも害を及ぼす。(Smoking is harmful not only to the smoker, but to the health of those around them.)
-5. 身体**のみならず**、精神的にも疲れている。(I'm tired not only physically, but mentally as well.)
-6. あの歌手は歌が上手な**のみならず**、ダンスも一流だ。(That singer is not only a great singer, but also a first-rate dancer.)
+5. 身体**のみならず**、精神も疲れ切っている。(Not only my body but my mind is worn out as well.)
+6. あの歌手は歌が上手である**のみならず**、ダンスも一流だ。(That singer is not only a great singer, but also a first-rate dancer.)
 7. この問題は一つの地域**のみならず**、社会全体で考えるべきだ。(This issue should be considered by society as a whole, not only by one region.)
 :::
 
@@ -224,8 +224,8 @@ Structure: 「A のみならず、B も〜」
 - 作文/报告/新闻 →「のみならず」
 - 日常对话/一般文章 →「だけでなく」
 
-> ✕ 日常对话中说「お酒のみならずビールも好きだ」→ 太正式，不自然  
-> ○ 日常对话中说「お酒だけでなくビールも好きだ」→ 自然
+> ✕ 日常对话中说「ワインのみならずビールも好きだ」→ 太正式，不自然  
+> ○ 日常对话中说「ワインだけでなくビールも好きだ」→ 自然
 :::
 :::en
 | Expression | Meaning | Register | Difference |
@@ -255,8 +255,8 @@ The two have exactly the same meaning; the only difference is register:
 - Essays/reports/news → 「のみならず」
 - Daily conversation/general writing → 「だけでなく」
 
-> ✕ In daily conversation: 「お酒のみならずビールも好きだ」 → too formal, unnatural  
-> ○ In daily conversation: 「お酒だけでなくビールも好きだ」 → natural
+> ✕ In daily conversation: 「ワインのみならずビールも好きだ」 → too formal, unnatural  
+> ○ In daily conversation: 「ワインだけでなくビールも好きだ」 → natural
 :::
 
 ---
@@ -307,7 +307,7 @@ The two have exactly the same meaning; the only difference is register:
 
 10. This book is a bestseller not only in Japan, but worldwide. (Use のみならず)
 11. He excels not only in academics, but in sports as well. (Use のみならず)
-12. Needless to say the price, the quality is also excellent. (Use はもとより)
+12. Not to mention the price, the quality is also excellent. (Use はもとより)
 13. Not to mention adults, even children and the elderly enjoy this park. (Use はもとより)
 14. Smoking is harmful not only to oneself, but to those around as well. (Use のみならず)
 :::

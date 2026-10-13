@@ -164,7 +164,7 @@ Japanese society distinguishes **the listener's status + the formality of the si
 **注意**：
 
 - 1 类、2 类动词都适用此模板
-- **3 类动词**（来る／する）和**单音节动词**（見る／着る／寝る）不能套——这些必须用特殊敬语动词
+- **3 类动词**（来る／する）和**ます形词干只有一拍的动词**（見る→見、着る→着、寝る→寝）不能套——这些必须用特殊敬语动词
 - 漢語动词用「ご～」，和語动词用「お～」——这个规律 90% 适用，10% 例外（如「お電話」）需要单独记
 :::
 
@@ -179,7 +179,7 @@ Japanese society distinguishes **the listener's status + the formality of the si
 **Notes**:
 
 - Works for Type 1 and Type 2 verbs
-- **Doesn't work** for Type 3 (来る / する) or single-mora verbs (見る / 着る / 寝る) — those need special honorific verbs
+- **Doesn't work** for Type 3 (来る / する) or verbs whose masu-stem is a single mora (見る→見, 着る→着, 寝る→寝) — those need special honorific verbs
 - Native verbs use 「お〜」, Sino-Japanese verbs use 「ご〜」 — 90% rule with ~10% exceptions (like お電話)
 :::
 
@@ -300,7 +300,7 @@ Special honorifics > お〜になる > 〜(ら)れる > 丁寧語
 ```
 部長が手紙を書かれました。
   ① 部长写了信（尊敬：部长的动作）— 99%
-  ② 部长写的信被(谁)读了（受身：极罕见）— 1%
+  ② 部长被(某人)写了信（间接受身：别人写信（如投诉信）给部长带来影响，极罕见）— 1%
 ```
 
 只有当语境**明显**是"被某人做了某事"时才理解为受身。日常对话里看到这种结构，**默认按尊敬理解**。
@@ -309,7 +309,11 @@ Special honorifics > お〜になる > 〜(ら)れる > 丁寧語
 :::en
 **〜(ら)れる as sonkeigo vs. passive**: disambiguate by **context only**.
 
-(example)
+```
+部長が手紙を書かれました。
+  ① The department head wrote a letter (sonkeigo: the manager's own action) — 99%
+  ② The department head had a letter written (about/to him) by someone (indirect passive: someone else's letter, e.g. a complaint, affects him; very rare) — 1%
+```
 
 Default interpretation: sonkeigo (99% of cases). Read as passive only when context clearly demands it.
 :::

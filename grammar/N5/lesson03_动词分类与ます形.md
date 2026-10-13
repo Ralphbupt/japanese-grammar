@@ -75,7 +75,7 @@ Before learning any verb conjugation, you must understand the three verb groups.
 書く（ku）、飲む（mu）、話す（su）、食べる（ru）、見る（ru）……
 ```
 
-结尾都是 u/ku/su/tsu/nu/bu/mu/ru 这些う段的音。
+结尾都是 u/ku/gu/su/tsu/nu/bu/mu/ru 这些う段的音。
 :::
 :::en
 Dictionary form = the base/plain form = what you look up in a dictionary. All verbs in dictionary form end with a う-row sound:
@@ -84,7 +84,7 @@ Dictionary form = the base/plain form = what you look up in a dictionary. All ve
 書く（ku）、飲む（mu）、話す（su）、食べる（ru）、見る（ru）……
 ```
 
-Endings are all う-row sounds: u/ku/su/tsu/nu/bu/mu/ru.
+Endings are all う-row sounds: u/ku/gu/su/tsu/nu/bu/mu/ru.
 :::
 
 ### 三类动词||Three Verb Groups
@@ -412,9 +412,9 @@ Note: compound verbs with 〜する follow the same pattern:
 | ます形 | 帰**り**ます | 食べます |
 | 差别 | る→**り**+ます（多了个り） | 去る+ます（直接加） |
 
-> 如果你不确定某个る结尾的动词是一类还是二类，看ます形：
-> - 有「り」→ 一类（帰**り**ます、走**り**ます、知**り**ます）
-> - 没有「り」→ 二类（食べます、見ます、起きます）
+> 注意：这张表只是帮你记住两类的**变法**差别，不能反过来用ます形判断类别（见上文⚠️）：
+> - 一类：る→「り」（帰**り**ます、走**り**ます、知**り**ます）
+> - 二类：直接去る（食べます、見ます、起きます）——但以「りる」结尾的二类动词，ます形里同样有「り」（借**り**ます、降**り**ます）
 :::
 :::en
 Worth emphasizing because it's easy to confuse:
@@ -425,9 +425,9 @@ Worth emphasizing because it's easy to confuse:
 | ます form | 帰**り**ます | 食べます |
 | Difference | る→**り**+ます (a り appears) | Drop る+ます (add directly) |
 
-> If you're unsure whether a る-ending verb is Group 1 or 2, check the ます form:
-> - Has 「り」 → Group 1 (帰**り**ます、走**り**ます、知**り**ます)
-> - No 「り」 → Group 2 (食べます、見ます、起きます)
+> Note: this table only shows how the two groups **conjugate** differently — you can't use the ます form in reverse to decide the group (see the ⚠️ above):
+> - Group 1: る→「り」 (帰**り**ます、走**り**ます、知**り**ます)
+> - Group 2: just drop る (食べます、見ます、起きます) — but Group 2 verbs ending in 「りる」 also show a 「り」 in the ます form (借**り**ます、降**り**ます)
 :::
 
 ### ます形的四种活用||Four conjugations of ます form
@@ -506,7 +506,7 @@ This is one of the most confusing things for beginners. Both forms express the s
 | 跟老师说话 | ます形 | 明日、映画を**見ます**。（明天看电影。） |
 | 跟店员说话 | ます形 | これを**買います**。（我买这个。） |
 | 跟同龄同事说话 | 一开始ます形，熟了以后辞书形 | 今日は何を**食べますか**？→ 今日何**食べる**？ |
-| 写日记 | 辞書形 | 今日は公園で**走った**。 |
+| 写日记 | 普通形（た形） | 今日は公園で**走った**。 |
 | 发工作邮件 | ます形 | 資料を**送ります**。（发送资料。） |
 :::
 :::en
@@ -516,7 +516,7 @@ This is one of the most confusing things for beginners. Both forms express the s
 | Talking with a teacher | ます form | 明日、映画を**見ます**。(I'll watch a movie tomorrow.) |
 | Talking with a shop clerk | ます form | これを**買います**。(I'll take this.) |
 | With a same-age coworker | Start with ます, switch when comfortable | 今日は何を**食べますか**？→ 今日何**食べる**？ |
-| Writing a diary | Dictionary form | 今日は公園で**走った**。 |
+| Writing a diary | Plain form (た-form) | 今日は公園で**走った**。 |
 | Work email | ます form | 資料を**送ります**。(I will send the documents.) |
 :::
 
@@ -607,17 +607,20 @@ Beyond polite speech, **the ます stem** (ます form minus ます) is the base
 4. 週末はよく本を**読みます**。（周末经常看书。→ 习惯）
 
 **过去**
+
 5. 昨日は何も**食べませんでした**。（昨天什么都没吃。→ 过去否定）
 6. 昨日友達に**会いました**。（昨天见了朋友。→ 会う一类，う→い）
 7. 去年の夏、海で**泳ぎました**。（去年夏天在海里游了泳。→ 过去肯定）
 8. 先週は全然**勉強しませんでした**。（上周完全没学习。→ する过去否定）
 
 **将来/意志**
+
 9. 明日、東京に**行きます**。（明天去东京。→ 将来）
 10. 来月から日本語を**勉強します**。（从下个月开始学日语。→ 意志）
 11. 今夜は早く**寝ます**。（今晚早睡。→ 意志）
 
 **疑问**
+
 12. 週末は何を**しますか**。（周末做什么？→ する→します）
 13. 先生は英語を**話しますか**。（老师说英语吗？）
 14. 何時に**帰りますか**。（几点回去？→ 帰る一类，る→り）
@@ -630,17 +633,20 @@ Beyond polite speech, **the ます stem** (ます form minus ます) is the base
 4. 週末はよく本を**読みます**。(I often read on weekends. → habit)
 
 **Past**
+
 5. 昨日は何も**食べませんでした**。(I didn't eat anything yesterday. → past negative)
 6. 昨日友達に**会いました**。(I met a friend yesterday. → 会う Group 1, う→い)
 7. 去年の夏、海で**泳ぎました**。(I swam in the sea last summer. → past affirmative)
 8. 先週は全然**勉強しませんでした**。(I didn't study at all last week. → する past negative)
 
 **Future/Intention**
+
 9. 明日、東京に**行きます**。(I'm going to Tokyo tomorrow. → future)
 10. 来月から日本語を**勉強します**。(I'll start studying Japanese from next month. → intention)
 11. 今夜は早く**寝ます**。(I'll go to bed early tonight. → intention)
 
 **Questions**
+
 12. 週末は何を**しますか**。(What are you doing this weekend? → する→します)
 13. 先生は英語を**話しますか**。(Does the teacher speak English?)
 14. 何時に**帰りますか**。(What time will you go home? → 帰る Group 1, る→り)

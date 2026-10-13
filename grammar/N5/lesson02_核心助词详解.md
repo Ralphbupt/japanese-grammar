@@ -489,8 +489,8 @@ Key distinction from に: で emphasizes **actively doing something there**.
 ### 容易搞混的例子||Easy-to-Confuse Examples
 
 :::zh
-- 椅子**に**座る。（坐在椅子上。→ に，因为座る表示"存在于某位置"的结果）
-- 椅子**で**本を読む。（坐在椅子上看书。→ で，因为重点是"在那里做事"）
+- ベンチ**に**座る。（坐在长椅上。→ に，因为座る表示"存在于某位置"的结果）
+- ベンチ**で**本を読む。（在长椅上看书。→ で，因为重点是"在那里做事"）
 
 - 壁**に**絵を描く。（在墙上画画。→ に，画的结果附着在墙上）
 - 紙**で**飛行機を作る。（用纸做飞机。→ で，纸是材料/手段）
@@ -500,8 +500,8 @@ Key distinction from に: で emphasizes **actively doing something there**.
 > - **で** = 动态的场/条件（在哪里做事/用什么做/因为什么）
 :::
 :::en
-- 椅子**に**座る。(Sit in the chair. → に, because 座る implies settling into a position)
-- 椅子**で**本を読む。(Read a book sitting in the chair. → で, because the focus is doing something there)
+- ベンチ**に**座る。(Sit on the bench. → に, because 座る implies settling into a position)
+- ベンチ**で**本を読む。(Read a book on the bench. → で, because the focus is doing something there)
 
 - 壁**に**絵を描く。(Draw a picture on the wall. → に, the result of drawing is attached to the wall)
 - 紙**で**飛行機を作る。(Make a paper airplane. → で, paper is the material/means)

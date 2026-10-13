@@ -107,14 +107,14 @@ This lesson covers grammar for "judgment," "conjecture," and "rhetorical questio
 :::zh
 - 動詞普通形 + に決まっている
 - い形容詞 + に決まっている
-- な形容詞（+ だ）+ に決まっている
-- 名詞（+ だ）+ に決まっている
+- な形容詞語幹 + に決まっている
+- 名詞 + に決まっている（不加「だ」）
 :::
 :::en
 - Verb plain form + に決まっている
 - i-adjective + に決まっている
-- na-adjective (+ だ) + に決まっている
-- Noun (+ だ) + に決まっている
+- na-adjective stem + に決まっている
+- Noun + に決まっている (no 「だ」)
 :::
 
 ### 含义||Meaning
@@ -232,7 +232,7 @@ This lesson covers grammar for "judgment," "conjecture," and "rhetorical questio
 - な形容詞 + だったっけ
 - 名詞 + だったっけ
 
-※ 也可接「でしたっけ」（丁寧形）
+※ 非过去也可以：名詞・な形容詞 + だっけ，動詞・い形容詞普通形 + んだっけ（明日は休みだっけ？／何時に出るんだっけ？）。也可接「でしたっけ」「ましたっけ」（丁寧形）
 :::
 :::en
 - Verb ta-form + っけ
@@ -240,7 +240,7 @@ This lesson covers grammar for "judgment," "conjecture," and "rhetorical questio
 - na-adjective + だったっけ
 - Noun + だったっけ
 
-※ Can also use 「でしたっけ」 (polite form)
+※ Non-past works too: Noun / na-adjective + だっけ, verb / i-adjective plain form + んだっけ (明日は休みだっけ？ / 何時に出るんだっけ？). Can also use 「でしたっけ」「ましたっけ」 (polite form)
 :::
 
 ### 含义||Meaning
@@ -370,7 +370,7 @@ This lesson covers grammar for "judgment," "conjecture," and "rhetorical questio
 2. 台風で飛行機が欠航する（　　）。
 3. すみません、会議は何時からでした（　　）？
 4. あんなやつに負ける（　　）！
-5. 彼女が犯人だなんて、そんなはずはない。でも、証拠から見ると彼女（　　）。
+5. 信じたくないが、証拠から見ると犯人は彼女（　　）。
 
 **二、翻译成日语**
 
@@ -387,7 +387,7 @@ This lesson covers grammar for "judgment," "conjecture," and "rhetorical questio
 2. 台風で飛行機が欠航する（　　）。
 3. すみません、会議は何時からでした（　　）？
 4. あんなやつに負ける（　　）！
-5. 彼女が犯人だなんて、そんなはずはない。でも、証拠から見ると彼女（　　）。
+5. 信じたくないが、証拠から見ると犯人は彼女（　　）。
 
 **Part 2: Translate into Japanese**
 
@@ -395,7 +395,7 @@ This lesson covers grammar for "judgment," "conjecture," and "rhetorical questio
 7. He must be lying. (Use に違いない)
 8. If no measures are taken, there is a risk of a serious accident. (Use おそれがある)
 9. What was the name of that restaurant again? (Use っけ)
-10. It's this delicious — of course it sold out. (Use に決まっている)
+10. It's this delicious — of course it'll sell out. (Use に決まっている)
 :::
 
 ## 复习计划||Review Schedule

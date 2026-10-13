@@ -104,12 +104,12 @@ The plain negative form of verbs, meaning "don't do…" / "won't do…". It is t
 :::zh
 ある → **ない**（不是あらない！直接变成ない）
 
-这是唯一一个ない形不规则的动词。
+这是一类动词中唯一ない形不规则的（する→しない、来る→こない 属于三类不规则动词，另记）。
 :::
 :::en
 ある → **ない** (NOT あらない! It becomes ない directly)
 
-This is the only verb with an irregular ない form.
+This is the only Group 1 verb with an irregular ない form (する→しない and 来る→こない are Group 3 irregulars, memorized separately).
 :::
 
 ### ない形活用||ない form conjugations
@@ -382,14 +382,14 @@ Obligation  なければならない      なくてもいい
 
 :::zh
 1. 時間がなく**て**、行けなかった。（因为没时间，所以没能去。→ 原因）
-2. 安く**なくて**、高い。（不便宜，很贵。→ 并列）
+2. この店は高く**なくて**、おいしい。（这家店不贵，而且好吃。→ 并列）
 3. わからなく**て**、困っています。（因为不明白，很困扰。→ 原因）
 4. お金がなく**て**、買えなかった。（因为没钱，买不了。→ 原因）
 5. 漢字が読め**なくて**、困った。（因为不会读汉字，很为难。→ 原因）
 :::
 :::en
 1. 時間がなく**て**、行けなかった。(I couldn't go because I had no time. → reason)
-2. 安く**なくて**、高い。(It's not cheap — it's expensive. → parallel)
+2. この店は高く**なくて**、おいしい。(This shop isn't expensive, and the food is good. → parallel)
 3. わからなく**て**、困っています。(I'm in trouble because I don't understand. → reason)
 4. お金がなく**て**、買えなかった。(I couldn't buy it because I had no money. → reason)
 5. 漢字が読め**なくて**、困った。(I was troubled because I couldn't read the kanji. → reason)

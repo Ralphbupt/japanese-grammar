@@ -39,14 +39,14 @@ This lesson covers N3 grammar for concession ("although / even though"). These e
 :::zh
 - 動詞普通形 + にもかかわらず
 - い形容詞 + にもかかわらず
-- な形容詞 + （な/である）+ にもかかわらず
-- 名詞 + （な/である/の）+ にもかかわらず
+- な形容詞 + である + にもかかわらず
+- 名詞 + （である）+ にもかかわらず
 :::
 :::en
 - Verb (plain form) + にもかかわらず
 - i-adjective + にもかかわらず
-- na-adjective + (な/である) + にもかかわらず
-- Noun + (な/である/の) + にもかかわらず
+- na-adjective + である + にもかかわらず
+- Noun + (である) + にもかかわらず
 :::
 
 ### 含义||Meaning
@@ -79,7 +79,7 @@ This lesson covers N3 grammar for concession ("although / even though"). These e
 |------|-------------|
 | 口语・书面都用 | 主要书面语 |
 | 带有不满/遗憾 | 客观陈述矛盾 |
-| 约束した**のに**来なかった | 約束した**にもかかわらず**来なかった |
+| 約束した**のに**来なかった | 約束した**にもかかわらず**来なかった |
 :::
 :::en
 | のに | にもかかわらず |
@@ -180,7 +180,7 @@ This lesson covers N3 grammar for concession ("although / even though"). These e
 1. 知らない**くせに**、知っているふりをする。（明明不知道，却装作知道。）
 2. 自分でできない**くせに**、人に文句を言う。（明明自己做不到，却对别人发牢骚。）
 3. 子供の**くせに**、偉そうな態度を取る。（明明是小孩，却摆出一副了不起的态度。）
-4. 約束したの**くせに**、来なかった。（明明约好了，却没来。）
+4. 約束した**くせに**、来なかった。（明明约好了，却没来。）
 5. お金がない**くせに**、高いものばかり買う。（明明没钱，却尽买贵的东西。）
 :::
 :::en
@@ -197,7 +197,7 @@ This lesson covers N3 grammar for concession ("although / even though"). These e
 |------|-------|
 | 中性～轻微不满 | 强烈不满/轻蔑 |
 | 可以用于自己 | 不用于自己 |
-| 書面・口语都行 | 主要口语 |
+| 书面・口语都行 | 主要口语 |
 | せっかく来た**のに** | 来た**くせに**何もしない |
 :::
 :::en
@@ -300,7 +300,8 @@ This lesson covers N3 grammar for concession ("although / even though"). These e
 10. 尽管困难很多，项目还是成功了。
 
 ### 答案
-1. a　2. b　3. b　4. c　5. a
+1\. a　2. b　3. b　4. c　5. a
+
 6. 何度も説明したにもかかわらず、彼は理解しなかった。
 7. 彼は答えを知っていながら、教えてくれなかった。
 8. 新人のくせに、先輩の話を聞かない。
@@ -334,7 +335,8 @@ This lesson covers N3 grammar for concession ("although / even though"). These e
 10. Despite many difficulties, the project was successful.
 
 ### Answers
-1. a　2. b　3. b　4. c　5. a
+1\. a　2. b　3. b　4. c　5. a
+
 6. 何度も説明したにもかかわらず、彼は理解しなかった。
 7. 彼は答えを知っていながら、教えてくれなかった。
 8. 新人のくせに、先輩の話を聞かない。

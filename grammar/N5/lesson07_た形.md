@@ -116,11 +116,11 @@ The plain past tense of verbs, meaning "did …" or "have done …".
 | する | して | し**た** |
 
 :::zh
-> 你只要会て形，た形就自动会了。这就是为什么Day 2花了大量时间在て形上。
+> 你只要会て形，た形就自动会了。这就是为什么 Lesson 04 花了大量时间在て形上。
 :::
 
 :::en
-> Once you know the て-form, you automatically know the た-form. That's why Day 2 spent so much time on て-form.
+> Once you know the て-form, you automatically know the た-form. That's why Lesson 04 spent so much time on て-form.
 :::
 
 ### た形的用途||Uses of た-form

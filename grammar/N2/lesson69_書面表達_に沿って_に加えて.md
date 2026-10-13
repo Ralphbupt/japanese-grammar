@@ -355,7 +355,7 @@ Both meanings convey "moving along a line or direction."
 |------|------|------|
 | 末に | 经过……最终 | 强调过程艰辛/漫长 |
 | 結果 | 结果…… | 客观叙述结果 |
-| あげく（に） | 最终…… | 负面结果居多，Day 68详述 |
+| あげく（に） | 最终…… | 负面结果居多，Lesson 71详述 |
 | た上で | 在……之后 | 强调慎重，不强调过程漫长 |
 
 > 「悩んだ末に」= 经过长期苦恼后（过程漫长）  
@@ -366,7 +366,7 @@ Both meanings convey "moving along a line or direction."
 |------|------|------|
 | 末に | after much… finally | Emphasizes long/difficult process |
 | 結果 | as a result | Objectively states the result |
-| あげく（に） | in the end | Mostly negative outcomes; see Day 68 |
+| あげく（に） | in the end | Mostly negative outcomes; see Lesson 71 |
 | た上で | after…ing | Emphasizes deliberation, not duration |
 
 > 「悩んだ末に」= after long agonizing (long process)  

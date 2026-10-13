@@ -24,7 +24,7 @@ This group provides nuanced ways of expressing viewpoints: correcting a statemen
 | 予定 | よてい | 预定//schedule |
 | 説明 | せつめい | 说明//explanation |
 | レシピ | レシピ | 菜谱//recipe |
-| 思い出す | おもいだす | 想起//to recall |
+| 思い浮かべる | おもいうかべる | 想到，联想到//to picture, to think of |
 | 得意 | とくい | 擅长//good at |
 | 趣味 | しゅみ | 兴趣//hobby |
 | 春 | はる | 春天//spring |
@@ -88,7 +88,7 @@ Corrects the preceding statement to offer a more accurate expression. "Rather th
 | 动词普通形 | 勉強したといっても |
 | い形容词 | 広いといっても |
 | な形容词 | 有名だといっても |
-| 名词 | 日本語ができるといっても |
+| 名词 | 高級レストランといっても |
 :::
 :::en
 | Conjugation | Form |
@@ -96,7 +96,7 @@ Corrects the preceding statement to offer a more accurate expression. "Rather th
 | Verb plain form | 勉強したといっても |
 | い-adjective | 広いといっても |
 | な-adjective | 有名だといっても |
-| Noun | 日本語ができるといっても |
+| Noun | 高級レストランといっても |
 :::
 
 ### 含义||Meaning
@@ -161,14 +161,14 @@ Upon hearing a topic, naturally associating related things. "Speaking of..." / "
 
 ### 例句||Example Sentences
 :::zh
-1. 日本**というと**、寿司と富士山を思い出す。（说到日本，就想起寿司和富士山。）
+1. 日本**というと**、寿司と富士山を思い浮かべる。（说到日本，就想起寿司和富士山。）
 2. 春**といえば**、やっぱり桜だね。（说到春天，果然是樱花啊。）
 3. 京都**といえば**、お寺と紅葉が有名だ。（说到京都，以寺庙和红叶闻名。）
 4. 趣味**というと**、読書とゲームかな。（说到兴趣爱好，是读书和游戏吧。）
 5. 北海道**といえば**、温泉とラーメンだ。（说到北海道，就是温泉和拉面。）
 :::
 :::en
-1. 日本**というと**、寿司と富士山を思い出す。(Speaking of Japan, I think of sushi and Mt. Fuji.)
+1. 日本**というと**、寿司と富士山を思い浮かべる。(Speaking of Japan, I think of sushi and Mt. Fuji.)
 2. 春**といえば**、やっぱり桜だね。(Speaking of spring, it's definitely cherry blossoms.)
 3. 京都**といえば**、お寺と紅葉が有名だ。(Speaking of Kyoto, it's famous for temples and autumn leaves.)
 4. 趣味**というと**、読書とゲームかな。(When you ask about hobbies, reading and games I suppose.)
@@ -261,13 +261,13 @@ The actual situation matches what was stated. "Just as..." / "According to..."
 **一、选择合适的语法填空（というより・といっても・というと/といえば・とおりに）：**
 
 1. 彼は天才（　　）、努力家だと思う。
-2. 日本料理（　　）、何を思い出しますか。
+2. 日本料理（　　）、何を思い浮かべますか。
 3. 私が言った（　　）にやれば、大丈夫です。
 4. マラソンを走った（　　）、5キロだけだよ。
 
 **二、用「というより」改写：**
 
-5. この店は安い。→（おいしいというよりのパターンで）
+5. この店はおいしいとは言えないが、安い。→（用「というより」改写成一句）
 
 **三、用「といっても」完成句子：**
 
@@ -290,13 +290,13 @@ The actual situation matches what was stated. "Just as..." / "According to..."
 **I. Fill in with the appropriate grammar (というより, といっても, というと/といえば, とおりに):**
 
 1. 彼は天才（　　）、努力家だと思う。
-2. 日本料理（　　）、何を思い出しますか。
+2. 日本料理（　　）、何を思い浮かべますか。
 3. 私が言った（　　）にやれば、大丈夫です。
 4. マラソンを走った（　　）、5キロだけだよ。
 
 **II. Rewrite using というより:**
 
-5. この店は安い。→ (Use the というより pattern)
+5. この店はおいしいとは言えないが、安い。→ (Combine into one sentence using というより)
 
 **III. Complete the sentence using といっても:**
 

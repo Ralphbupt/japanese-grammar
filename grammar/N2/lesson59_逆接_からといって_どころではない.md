@@ -84,7 +84,7 @@ This lesson covers N2-level concessive and contradictory expressions. 「から�
 |------|------|------|
 | からといって | 虽说……但不能因此 | 反驳理由→结论的逻辑 |
 | からには | 既然……就…… | 既然如此就应该做 |
-| からこそ | 正因为……才 | 强调原因的积极面 |
+| からこそ | 正因为……才 | 强调"正是这个原因"（不限积极） |
 
 > 「金持ちだからといって幸せとは限らない」= 反驳"有钱→幸福"  
 > 「金持ちだからこそ苦労がある」= 正因为有钱才有烦恼
@@ -94,7 +94,7 @@ This lesson covers N2-level concessive and contradictory expressions. 「から�
 |------|------|------|
 | からといって | just because… doesn't mean | Refutes a reason→conclusion logic |
 | からには | since/now that… must | Since it's so, one should act accordingly |
-| からこそ | precisely because | Emphasizes the positive side of the reason |
+| からこそ | precisely because | Stresses "this very reason" (not only positive) |
 
 > 「金持ちだからといって幸せとは限らない」= refutes "rich → happy"  
 > 「金持ちだからこそ苦労がある」= precisely because one is rich, there are hardships
@@ -375,7 +375,7 @@ More formal than 「ても」; often used in writing and formal situations. 「�
 2. 体に悪いと分かり（　　）、毎日コーヒーを3杯飲んでしまう。
 3. 先生だ（　　）、すべてを知っているわけではない。
 4. 試験が来週なので、アルバイト（　　）。
-5. 結果が良くても悪くても、やる（　　）やらない（　　）、自分で決めなさい。
+5. やる（　　）やらない（　　）、自分で決めなさい。
 
 **二、翻译成日语**
 
@@ -392,7 +392,7 @@ More formal than 「ても」; often used in writing and formal situations. 「�
 2. 体に悪いと分かり（　　）、毎日コーヒーを3杯飲んでしまう。
 3. 先生だ（　　）、すべてを知っているわけではない。
 4. 試験が来週なので、アルバイト（　　）。
-5. 結果が良くても悪くても、やる（　　）やらない（　　）、自分で決めなさい。
+5. やる（　　）やらない（　　）、自分で決めなさい。
 
 **Part 2: Translate into Japanese**
 

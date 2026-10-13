@@ -39,15 +39,15 @@ This lesson covers "compound expressions" — fixed patterns formed by combining
 | 接続 | 形式 |
 |------|------|
 | 普通形 | + からこそ |
-| な形容詞（だ/な） | + からこそ |
-| 名詞（だ） | + からこそ |
+| な形容詞 + だ | + からこそ |
+| 名詞 + だ | + からこそ |
 :::
 :::en
 | Conjugation | Form |
 |------|------|
 | Plain form | + からこそ |
-| な-adjective (だ/な) | + からこそ |
-| Noun (だ) | + からこそ |
+| な-adjective + だ | + からこそ |
+| Noun + だ | + からこそ |
 :::
 
 ### 含义||Meaning
@@ -84,14 +84,14 @@ This lesson covers "compound expressions" — fixed patterns formed by combining
 |------|------|
 | 動詞普通形 | + ことは + 同じ動詞 + が |
 | い形容詞 | + ことは + 同じ形容詞 + が |
-| な形容詞（だ→な） | + ことは + 同じ形容詞（だ→な） + が |
+| な形容詞 + な | + ことは + 同じ形容詞 + だ + が |
 :::
 :::en
 | Conjugation | Form |
 |------|------|
 | Verb plain form | + ことは + same verb + が |
 | い-adjective | + ことは + same adjective + が |
-| な-adjective (だ→な) | + ことは + same adjective (だ→な) + が |
+| な-adjective + な | + ことは + same adjective + だ + が |
 :::
 
 ### 含义||Meaning

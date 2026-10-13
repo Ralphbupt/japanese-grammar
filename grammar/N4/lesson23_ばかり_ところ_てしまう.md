@@ -8,7 +8,7 @@
 「ばかり」 = "just did" or "nothing but…", 「ところだ」 = about to / in the middle of / just finished depending on the preceding form, 「てしまう」 = completion or "oh no I did it." Three high-frequency patterns tied to **time-feel and emotion**, side by side.
 :::
 
-## 本课单词表
+## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
 |------|------|------|

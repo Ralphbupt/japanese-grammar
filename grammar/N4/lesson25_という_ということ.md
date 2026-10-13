@@ -8,7 +8,7 @@
 「という」 literally means "called," but in practice it handles **quoting, defining, and summarizing**. 「ということ」 goes further, packaging an entire matter into a noun for further discussion — one of the highest-frequency tool words in written Japanese.
 :::
 
-## 本课单词表
+## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
 |------|------|------|

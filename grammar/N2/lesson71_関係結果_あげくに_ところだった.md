@@ -102,13 +102,13 @@ This lesson covers N2 grammar for "expertise," "results," and "near-misses." 「
 - 名詞 + に当たらない / に当たりません
 - 動詞辞書形 + に当たらない
 
-※ 常见搭配：驚くに当たらない、非難するに当たらない、称賛に当たらない
+※ 常见搭配：驚くに当たらない、非難するに当たらない、心配するに当たらない
 :::
 :::en
 - Noun + に当たらない / に当たりません
 - Verb dictionary form + に当たらない
 
-※ Common collocations: 驚くに当たらない, 非難するに当たらない, 称賛に当たらない
+※ Common collocations: 驚くに当たらない, 非難するに当たらない, 心配するに当たらない
 :::
 
 ### 含义||Meaning
@@ -125,14 +125,14 @@ This lesson covers N2 grammar for "expertise," "results," and "near-misses." 「
 2. 彼女が怒ったのは当然で、非難する**に当たらない**。（她生气是理所当然的，不值得指责。）
 3. この程度のミスは、騒ぐ**に当たらない**。（这种程度的失误，不值得大惊小怪。）
 4. 初めてなのだから、失敗しても恥じる**に当たらない**。（因为是第一次，即使失败也不用感到羞耻。）
-5. 努力した結果なのだから、称賛**に当たらない**とは言えない。（因为是努力的结果，不能说不值得称赞。）
+5. 検査の結果はただの風邪だったので、心配する**に当たらない**。（检查结果只是普通感冒，用不着担心。）
 :::
 :::en
 1. 彼が成功したのは、驚く**に当たらない**。(His success is not surprising — it doesn't warrant surprise.)
 2. 彼女が怒ったのは当然で、非難する**に当たらない**。(Her anger was justified; it doesn't warrant criticism.)
 3. この程度のミスは、騒ぐ**に当たらない**。(A mistake of this magnitude doesn't warrant making a fuss.)
 4. 初めてなのだから、失敗しても恥じる**に当たらない**。(Since it's your first time, failure is nothing to be ashamed of.)
-5. 努力した結果なのだから、称賛**に当たらない**とは言えない。(Since it's the result of hard work, you can't say it doesn't deserve praise.)
+5. 検査の結果はただの風邪だったので、心配する**に当たらない**。(The test showed it's just a cold, so there's no need to worry.)
 :::
 
 ---
@@ -242,7 +242,7 @@ This lesson covers N2 grammar for "expertise," "results," and "near-misses." 「
 | ずに | 没有……就 | 比ないで稍书面 |
 
 > 「諦めることなく」= 始终没有放弃（书面，强调持续性）  
-> 「諦めないで」= 不要放弃（口语）  
+> 「諦めないで」= 不放弃地（通用，偏口语；单独用时也可表请求"别放弃"）  
 > 「諦めずに」= 没有放弃地（稍书面）
 :::
 :::en
@@ -253,7 +253,7 @@ This lesson covers N2 grammar for "expertise," "results," and "near-misses." 「
 | ずに | without…ing | Slightly more written than ないで |
 
 > 「諦めることなく」= without ever giving up (written; emphasizes continuity)  
-> 「諦めないで」= don't give up (spoken)  
+> 「諦めないで」= without giving up (general, leans spoken; on its own also a request: "don't give up")  
 > 「諦めずに」= without giving up (slightly formal)
 :::
 
@@ -316,6 +316,7 @@ This lesson covers N2 grammar for "expertise," "results," and "near-misses." 「
 | ずに済む | get by without | Fortunately avoided; slightly formal |
 | ないで済む | get by without | Same meaning; slightly colloquial |
 | なくて済む | get by without | Same meaning; most colloquial |
+| ずにすむ | get by without | Kana spelling of 「済む」 |
 
 > 「ずに済む」 carries the nuance of "it might have been necessary, but fortunately wasn't."
 :::

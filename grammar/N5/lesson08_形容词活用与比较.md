@@ -334,7 +334,7 @@ Negative comparison, meaning "not to the degree of B":
 
 :::zh
 ```
-A比B厉害：     AはBより〜
+A比B更〜：     AはBより〜
 比起A，B更：   AよりBのほうが〜
 哪个更：       AとBと、どちらが〜？
 最：           〜の中で、〜が一番〜

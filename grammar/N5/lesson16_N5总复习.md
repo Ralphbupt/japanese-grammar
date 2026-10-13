@@ -8,7 +8,7 @@ N5 阶段的最后一课，把前面没单独讲的零散语法（**疑问词 + 
 The closing lesson of N5, weaving together loose ends (**question words + か / も / でも**, **〜すぎる**, **〜やすい / 〜にくい**, **〜ながら**) and a full N5 review. Finish this and you're ready to grind N5 mock exams.
 :::
 
-## 7. 疑问词 + か/も/でも||7. Question Words + か/も/でも
+## 1. 疑问词 + か/も/でも||1. Question Words + か/も/でも
 
 ### 疑問词 + か = "某……"（不確定）||Question word + か = "some…" (unspecified)
 
@@ -76,7 +76,7 @@ The closing lesson of N5, weaving together loose ends (**question words + か / 
 
 ---
 
-## 8. 〜すぎる（過度）||8. 〜すぎる (Excess)
+## 2. 〜すぎる（過度）||2. 〜すぎる (Excess)
 
 ### 接続
 
@@ -148,7 +148,7 @@ The closing lesson of N5, weaving together loose ends (**question words + か / 
 
 ---
 
-## 9. 〜やすい / 〜にくい（容易/難以）||9. 〜やすい / 〜にくい (Easy to / Hard to)
+## 3. 〜やすい / 〜にくい（容易/難以）||3. 〜やすい / 〜にくい (Easy to / Hard to)
 
 ### 接続
 
@@ -218,7 +218,7 @@ Verb ます-stem + やすい / にくい
 
 ---
 
-## 10. 〜ながら（同時）||10. 〜ながら (Simultaneous Actions)
+## 4. 〜ながら（同時）||4. 〜ながら (Simultaneous Actions)
 
 ### 接続
 
@@ -292,7 +292,7 @@ Verb ます-stem + ながら
 
 ---
 
-## 11. 〜方（かた）（做法/方法）||11. 〜方（かた）(How to / Method)
+## 5. 〜方（かた）（做法/方法）||5. 〜方（かた）(How to / Method)
 
 ### 接続
 
@@ -670,7 +670,7 @@ The following is the complete list of N5 core grammar. Confirm you have mastered
 ### 十二、综合問題：选择合適的語法填空
 
 1. せっかく作った＿＿＿、誰も食べなかった。（のに / ので）
-2. 日本語は難しい＿＿＿、楽しい＿＿＿、毎日勉強している。（し / から）
+2. 日本語は面白い＿＿＿、役に立つ＿＿＿、毎日勉強している。（し / から）
 3. あの映画は長＿＿＿。3時間もあった。（すぎる / やすい）
 4. 料理を作り＿＿＿、音楽を聴いている。（ながら / 方）
 5. 明日試験がある＿＿＿、今日は早く寝ます。（ので / のに）
@@ -683,7 +683,7 @@ The following is the complete list of N5 core grammar. Confirm you have mastered
 
 :::zh
 1. のに（明明特意做了却没人吃→不满）
-2. し、し（又难又有趣→列举多个理由）
+2. し、し（又有趣又有用→列举多个理由）
 3. すぎる（太长了→过度）
 4. ながら（一边做饭一边听音乐→同时）
 5. ので（因为明天有考试→解释原因）
@@ -694,7 +694,7 @@ The following is the complete list of N5 core grammar. Confirm you have mastered
 
 :::en
 1. のに (even though I made it specially, no one ate it → dissatisfaction)
-2. し、し (both difficult and fun → listing multiple reasons)
+2. し、し (both interesting and useful → listing multiple reasons)
 3. すぎる (too long → excessive)
 4. ながら (listening to music while cooking → simultaneous)
 5. ので (because there's an exam tomorrow → explaining reason)

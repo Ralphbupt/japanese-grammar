@@ -435,7 +435,7 @@ Verb た-form + ら (straightforward!)
 | 想表达 | と | ば | たら |
 |---|---|---|---|
 | 一按按钮就开 | ✅ ボタンを押すと開く。（陈述事实） | ✅ ボタンを押せば開く。（假设） | △ ボタンを押したら開く。（说那一次） |
-| 便宜的话就买 | ❌ 安いと買う。 | ✅ 安ければ買う。（一般论） | ✅ 安かったら買う。（那件便宜就买） |
+| 便宜的话就买 | △ 安いと買う。（只能表习惯：一便宜就会买） | ✅ 安ければ買う。（一般论） | ✅ 安かったら買う。（那件便宜就买） |
 | 到了请联系我 | ❌ 着くと連絡して。 | △ 着けば連絡して。（生硬） | ✅ 着いたら連絡して。（最自然） |
 
 > **一句话记住**：说道理用 **ば**，说规律用 **と**，其余一律用 **たら**。
@@ -458,7 +458,7 @@ A single view of how this lesson's three forms differ. The fourth form, **なら
 | Intended meaning | と | ば | たら |
 |---|---|---|---|
 | Press the button and it opens | ✅ ボタンを押すと開く。(stating a fact) | ✅ ボタンを押せば開く。(hypothetical) | △ ボタンを押したら開く。(that one time) |
-| I'll buy it if it's cheap | ❌ 安いと買う。 | ✅ 安ければ買う。(as a rule) | ✅ 安かったら買う。(if that one is cheap) |
+| I'll buy it if it's cheap | △ 安いと買う。(habit only: "whenever it's cheap, I buy it") | ✅ 安ければ買う。(as a rule) | ✅ 安かったら買う。(if that one is cheap) |
 | Call me when you arrive | ❌ 着くと連絡して。 | △ 着けば連絡して。(stiff) | ✅ 着いたら連絡して。(most natural) |
 
 > **One line to remember**: use **ば** for principles, **と** for laws of nature, and **たら** for everything else.

@@ -199,7 +199,7 @@ This lesson continues with concession grammar. These four expressions are more l
 |-------|---------|
 | "虽然A，但困扰/意外" | "话虽如此A，但要注意B" |
 | 侧重主观感受 | 侧重客观补充 |
-| 書面語 | 書面語，也可用于口语 |
+| 书面语 | 书面语，也可用于口语 |
 | 買ったものの使ってない | 安いとはいえ、買いすぎだ |
 :::
 :::en
@@ -219,22 +219,22 @@ This lesson continues with concession grammar. These four expressions are more l
 :::zh
 - 動詞普通形 + どころか
 - い形容詞 + どころか
-- な形容詞 + な / である + どころか
+- な形容詞語幹 / 語幹 + な + どころか
 - 名詞 + どころか
 :::
 :::en
 - Verb (plain form) + どころか
 - i-adjective + どころか
-- na-adjective + な / である + どころか
+- na-adjective stem / stem + な + どころか
 - Noun + どころか
 :::
 
 ### 含义||Meaning
 :::zh
-"哪里是A，简直是B"，"不但不A，反而B"。强烈否定前项的预期，实际情况与预期完全相反，而且程度更极端。
+有两种用法：① "哪里是A，简直是B"，"不但不A，反而B"——强烈否定前项的预期，实际情况与预期完全相反（例1、2、3、5、6）；② 「AどころかBも〜ない」"别说A了，连B都……"——A是更难的事，连更容易的B都做不到（例4）。
 :::
 :::en
-"Far from A, it's actually B" / "Not only not A, but in fact B" — strongly negates the expectation of the preceding, with reality being the complete opposite and more extreme.
+Two uses: ① "Far from A, it's actually B" / "Not only not A, but in fact B" — strongly negates the expectation, with reality being the complete opposite (examples 1, 2, 3, 5, 6); ② 「AどころかBも〜ない」 "let alone A, not even B" — A is the harder thing, and even the easier B is not possible (example 4).
 :::
 
 ### 例句||Example Sentences
@@ -260,7 +260,7 @@ This lesson continues with concession grammar. These four expressions are more l
 | ばかりか / だけでなく | どころか |
 |-------------------|---------|
 | "不仅A，而且B"（追加） | "哪里是A，简直是B"（否定+反转） |
-| A和B方向一致 | A和B方向相反 |
+| A和B方向一致 | A和B方向相反（或"别说A，连B都不"） |
 | 日本語**だけでなく**中国語もできる | 日本語**どころか**英語もできない |
 | 积极追加 | 强烈否定 |
 :::
@@ -268,7 +268,7 @@ This lesson continues with concession grammar. These four expressions are more l
 | ばかりか / だけでなく | どころか |
 |-------------------|---------|
 | "Not only A, but also B" (addition) | "Far from A, actually B" (negation + reversal) |
-| A and B in same direction | A and B in opposite directions |
+| A and B in same direction | A and B in opposite directions (or "let alone A, not even B") |
 | 日本語**だけでなく**中国語もできる | 日本語**どころか**英語もできない |
 | Positive addition | Strong negation |
 :::
@@ -293,7 +293,7 @@ This lesson continues with concession grammar. These four expressions are more l
    a. ものの　b. とはいえ　c. どころか
 
 5. 安い（　　）、毎日外食するのは体に良くない。
-   a. にしても　b. ものの　c. どころか
+   a. にしても　b. おかげで　c. どころか
 
 ### 二、翻译成日语
 
@@ -304,7 +304,8 @@ This lesson continues with concession grammar. These four expressions are more l
 10. 虽说便宜，但买了5个也太多了。
 
 ### 答案
-1. b　2. a　3. b　4. c　5. a
+1\. b　2. a　3. b　4. c　5. a
+
 6. 辞めるにしても、次の仕事を見つけてからにしてください。
 7. 申し込んだものの、あまり自信がない。
 8. 大人であるとはいえ、甘えたくなる時もある。
@@ -327,7 +328,7 @@ This lesson continues with concession grammar. These four expressions are more l
    a. ものの　b. とはいえ　c. どころか
 
 5. 安い（　　）、毎日外食するのは体に良くない。
-   a. にしても　b. ものの　c. どころか
+   a. にしても　b. おかげで　c. どころか
 
 ### Part 2: Translate into Japanese
 
@@ -338,7 +339,8 @@ This lesson continues with concession grammar. These four expressions are more l
 10. Although it's cheap, buying five is too many.
 
 ### Answers
-1. b　2. a　3. b　4. c　5. a
+1\. b　2. a　3. b　4. c　5. a
+
 6. 辞めるにしても、次の仕事を見つけてからにしてください。
 7. 申し込んだものの、あまり自信がない。
 8. 大人であるとはいえ、甘えたくなる時もある。

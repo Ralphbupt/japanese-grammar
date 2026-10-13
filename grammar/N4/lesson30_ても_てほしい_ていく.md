@@ -1,6 +1,14 @@
 # Lesson 30 – 〜ても / 〜てほしい / 〜ていく・てくる / 〜がる||〜ても / 〜てほしい / 〜ていく・てくる / 〜がる
 
-## 本课单词表
+:::zh
+本课学习五个接在动词て形（或形容词）后的常用表达：〜ても（即使……也）、〜てほしい（希望别人做）、〜ていく／〜てくる（变化的方向）、〜がる（第三人称的感情外露）和〜てみる（试着做）。
+:::
+
+:::en
+This lesson covers five common patterns built on the て-form (or adjectives): 〜ても (even if), 〜てほしい (want someone to do), 〜ていく / 〜てくる (direction of change), 〜がる (third-person feelings), and 〜てみる (try doing).
+:::
+
+## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
@@ -23,7 +31,7 @@
 
 ---
 
-## 1. 〜ても（即使……也……）||〜ても (Even If... / Even Though...)
+## 1. 〜ても（即使……也……）||1. 〜ても (Even If... / Even Though...)
 
 ### 接续||Conjugation
 
@@ -103,7 +111,7 @@
 
 ---
 
-## 2. 〜てほしい（希望别人做……）||〜てほしい (Want Someone To Do...)
+## 2. 〜てほしい（希望别人做……）||2. 〜てほしい (Want Someone To Do...)
 
 ### 接续||Conjugation
 
@@ -181,7 +189,7 @@
 
 ---
 
-## 3. 〜ていく / 〜てくる（渐变方向）||〜ていく / 〜てくる (Gradual Change — Going / Coming)
+## 3. 〜ていく / 〜てくる（渐变方向）||3. 〜ていく / 〜てくる (Gradual Change — Going / Coming)
 
 ### 接续||Conjugation
 
@@ -279,7 +287,7 @@ This is a key N4 usage!
 
 ---
 
-## 4. 〜がる（第三人称感情外露）||〜がる (Show Signs of Feeling — Third Person)
+## 4. 〜がる（第三人称感情外露）||4. 〜がる (Show Signs of Feeling — Third Person)
 
 ### 接续||Conjugation
 
@@ -311,7 +319,7 @@ Describes a **third person's** externally displayed feelings or desires. In Japa
 1. 弟はいつも新しいゲームを欲し**がる**。（弟弟总是想要新游戏。）
 2. 子供が犬を怖**がっている**。（孩子害怕狗。→ 表现出害怕的样子）
 3. 妹はケーキを食べた**がっている**。（妹妹想吃蛋糕。→ 外在表现）
-4. 彼はプレゼントをもらって、とても嬉し**がっていた**。（他收到礼物后，表现得非常高兴。）
+4. 子供はプレゼントをもらって、とても嬉し**がっていた**。（孩子收到礼物后，表现得非常高兴。）
 5. 彼女は海外旅行に行きた**がっている**。（她想去海外旅行。→ 第三人称）
 6. みんなが彼の成功を羨まし**がった**。（大家都羡慕他的成功。）
 :::
@@ -320,7 +328,7 @@ Describes a **third person's** externally displayed feelings or desires. In Japa
 1. 弟はいつも新しいゲームを欲し**がる**。(My younger brother always shows he wants new games.)
 2. 子供が犬を怖**がっている**。(The child is scared of dogs. → showing signs of fear)
 3. 妹はケーキを食べた**がっている**。(My younger sister wants to eat cake. → externally showing)
-4. 彼はプレゼントをもらって、とても嬉し**がっていた**。(He seemed very happy after receiving the gift.)
+4. 子供はプレゼントをもらって、とても嬉し**がっていた**。(The child seemed very happy after receiving the gift.)
 5. 彼女は海外旅行に行きた**がっている**。(She wants to go on a trip abroad. → third person)
 6. みんなが彼の成功を羨まし**がった**。(Everyone envied his success.)
 :::
@@ -472,7 +480,7 @@ Complete the sentences using 「〜てほしい」 or 「〜ないでほしい�
 1. これから日本語をもっと勉強し（　　）つもりだ。（今后打算继续学日语）
 2. 最近、物の値段が上がっ（　　）。（最近物价一直在涨）
 3. 傘を持っ（　　）ほうがいいよ。（把伞带去比较好）
-4. だんだん暗く**なっ（　　）**ね。（渐渐变暗了呢）
+4. だんだん暗くなっ（　　）ね。（渐渐变暗了呢）
 5. これから人口は減っ（　　）だろう。（今后人口会减少吧）
 6. ちょっとコーヒーを買っ（　　）。（我去买杯咖啡过来）
 :::
@@ -483,7 +491,7 @@ Choose the correct answer (ていく / てくる):
 1. これから日本語をもっと勉強し（　　）つもりだ。(I plan to continue studying Japanese from now on)
 2. 最近、物の値段が上がっ（　　）。(Prices have been going up recently)
 3. 傘を持っ（　　）ほうがいいよ。(You should take an umbrella with you)
-4. だんだん暗く**なっ（　　）**ね。(It's been getting darker, hasn't it?)
+4. だんだん暗くなっ（　　）ね。(It's been getting darker, hasn't it?)
 5. これから人口は減っ（　　）だろう。(The population will probably decrease from now on)
 6. ちょっとコーヒーを買っ（　　）。(I'll go buy some coffee and come back)
 :::
@@ -613,7 +621,7 @@ Translate the following into Japanese:
 
 :::zh
 1. ✅ 雨が降っ**ても**、行きます。（动词要先变て形再加も，不是辞书形+ても）
-2. ✅ 先生**に**日本語で話してほしい。（てほしい的对象用「に」不用「が」）
+2. ✅ 先生**に**日本語で話してほしい。（标准用法是对象用「に」；口语里「〜が〜てほしい」也能听到，但考试按「に」）
 3. ✅ 妹はケーキ**を**食べ**たがっている**。（第三人称用たがる，助词用を）
 4. ✅ 最近、暖かくなっ**てきた**。（到现在为止的变化用てくる，不是ていく）
 5. ✅ この映画は怖**くても**、見たい。（い形容词 → くても，不是い+でも）
@@ -621,7 +629,7 @@ Translate the following into Japanese:
 
 :::en
 1. ✅ 雨が降っ**ても** (Verb must be in て-form + も, not dictionary form + ても)
-2. ✅ 先生**に** (てほしい marks the target with に, not が)
+2. ✅ 先生**に** (The standard pattern marks the person with に; 「〜が〜てほしい」 is also heard in speech, but use に on the exam)
 3. ✅ 妹はケーキ**を**食べ**たがっている** (Third person uses たがる; particle を)
 4. ✅ 最近、暖かくなっ**てきた** (Change up to now uses てくる, not ていく)
 5. ✅ この映画は怖**くても** (い-adjective → くても, not い + でも)

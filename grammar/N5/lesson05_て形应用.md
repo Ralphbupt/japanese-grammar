@@ -101,22 +101,22 @@ Used with verbs that describe a continuous process (食べる, 読む, 走る, e
 ### 用法②：結果状態（瞬間動詞）||Use ②: Resultant state (instantaneous verbs)
 
 :::zh
-用于"一瞬间就完成"的动词（死ぬ、結婚する、知る、住む等），表示**动作完成后的持续状态**。
+用于"一瞬间就完成"的动词（死ぬ、結婚する、知る等），表示**动作完成后的持续状态**。
 
 1. 彼はもう死ん**でいる**。（他已经死了。→ 不是"正在死"）
 2. 田中さんは結婚し**ている**。（田中已经结婚了。→ 结婚后的状态）
-3. 東京に住ん**でいます**。（住在东京。→ 搬来之后的状态）
+3. 東京に住ん**でいます**。（住在东京。→ 住む 不是瞬间动词，但表示"住在某地"时习惯用ている形）
 4. あ、窓が開い**ている**。（啊，窗户开着呢。→ 打开后的状态）
 5. この言葉を知っ**ています**。（知道这个词。→ 知道了之后的状态）
 6. 電気が消え**ている**。（灯灭着呢。→ 灭了之后的状态）
 7. 彼はもう座っ**ている**。（他已经坐下了。→ 坐着的状态）
 :::
 :::en
-Used with verbs that complete instantaneously (死ぬ, 結婚する, 知る, 住む, etc.) to express **the continuing state after the action is complete**.
+Used with verbs that complete instantaneously (死ぬ, 結婚する, 知る, etc.) to express **the continuing state after the action is complete**.
 
 1. 彼はもう死ん**でいる**。(He is already dead. → NOT "currently dying")
 2. 田中さんは結婚し**ている**。(Tanaka is married. → the state of being married)
-3. 東京に住ん**でいます**。(I live in Tokyo. → the state after moving there)
+3. 東京に住ん**でいます**。(I live in Tokyo. → 住む isn't instantaneous, but "living somewhere" is normally expressed with ている)
 4. あ、窓が開い**ている**。(Oh, the window is open. → the state after being opened)
 5. この言葉を知っ**ています**。(I know this word. → the state of knowing)
 6. 電気が消え**ている**。(The light is off. → the state after being turned off)

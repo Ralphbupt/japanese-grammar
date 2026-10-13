@@ -516,7 +516,7 @@ Colloquial expression meaning "kind of gives the feeling of…" or "tends to…"
 5. 明日は晴れ（　　）。（天气预报的推测语气）
 6. この料理は辛（　　）。でも食べてみないとわからない。
 7. 電気が消えている。誰もいない（　　）。
-8. あの子はいつも泣いている。泣き（　　）子だ。
+8. あの人はすぐ怒る。怒り（　　）人だ。
 
 <details>
 <summary>答案</summary>
@@ -524,23 +524,23 @@ Colloquial expression meaning "kind of gives the feeling of…" or "tends to…"
 :::zh
 1. 美味し**そう**（样态：自己看到外观）
 2. **そう**（传闻：田中さんから聞いた＝有明确来源）
-3. **かもしれない** / **そうだ**（样态）（都可以。かもしれない＝也许会下；降りそうだ＝看天色快下了）
+3. **かもしれない**（也许会下。注意：空格前是辞书形降る，不能接样态そうだ；要用样态须说「降り**そうだ**」＝看天色快下了）
 4. 男**らしい**（典型性：褒义，有男子气概）
 5. **でしょう**（推测：天气预报常用表达）
 6. 辛**そうだ**（样态：看外观判断）／辛い**かもしれない**（也许辣→不确定）
 7. **ようだ** / **みたいだ** / **らしい**（根据证据推断）
-8. 泣き**っぽい**（容易哭→っぽい表示"容易做某事"）
+8. 怒り**っぽい**（容易生气→っぽい表示"容易做某事"）
 :::
 
 :::en
 1. 美味し**そう** (appearance: you're looking at it right now)
 2. **そう** (hearsay: 田中さんから聞いた = clear source)
-3. **かもしれない** / **そうだ** (appearance) (both work: かもしれない = maybe it'll rain; 降りそうだ = sky looks like it's about to)
+3. **かもしれない** (maybe it'll rain. Note: the blank follows the dictionary form 降る, so appearance そうだ doesn't fit; for that you'd say 「降り**そうだ**」 = the sky looks like it's about to rain)
 4. 男**らしい** (typicality: positive, truly manly)
 5. **でしょう** (conjecture: standard tone for weather forecasts)
 6. 辛**そうだ** (appearance: judging by looks) / 辛い**かもしれない** (maybe spicy → uncertain)
 7. **ようだ** / **みたいだ** / **らしい** (inferring from evidence)
-8. 泣き**っぽい** (tends to cry → っぽい expresses a tendency)
+8. 怒り**っぽい** (gets angry easily → っぽい expresses a tendency)
 :::
 
 </details>
@@ -595,7 +595,7 @@ Colloquial expression meaning "kind of gives the feeling of…" or "tends to…"
 
 1. 彼女は怒っている**かもしれない**。
 2. あの試験は難しい**そうだ**。（传闻）
-3. 彼は優し**そうだ**。（样态：自己看到）
+3. 彼は優しい**ようだ**。/ 彼は優しい**みたいだ**。（根据他的言行推断）
 4. 彼は優しい**そうだ**。（传闻：听说的）/ 彼は優しい**らしい**。
 5. 彼女は女**らしい**。（典型性：褒义）
 6. あのかばんは高**そうだ**。（样态：看外观）

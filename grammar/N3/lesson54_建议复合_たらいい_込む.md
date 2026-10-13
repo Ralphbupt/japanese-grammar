@@ -178,9 +178,9 @@ Offers gentle advice or expresses a wish: "It would be good if…" / "You should
 
 ### 辨析||Comparison
 :::zh
-| 表达 | 時制 | 気持ち |
+| 表达 | 时态 | 语气 |
 |------|------|--------|
-| ばいい | 現在/未来 | 建议・解决方案 |
+| ばいい | 现在/未来 | 建议・解决方案 |
 | ばよかった | 过去 | 后悔 |
 | たらよかった | 过去 | 后悔（意思基本同ばよかった） |
 
@@ -345,14 +345,14 @@ A compound verb suffix with two core meanings: ① physically "entering inside" 
 :::zh
 **一、选择正确的语法填空**
 
-1. 迷ったら、お母さんに相談（　）。
-   a. たらいい　b. てごらん　c. ばよかった
+1. 迷ったら、お母さんに相談し（　）。
+   a. たらいい　b. ばよかった　c. ればいい
 
 2. あの時もっと早く出発（　）。
    a. すればいい　b. すればよかった　c. するといい
 
 3. この薬、飲ん（　）。すぐ楽になるよ。
-   a. でごらん　b. だらいい　c. ばいい
+   a. でごらん　b. ばよかった　c. ばいい
 
 4. どこに申し（　）ばいいですか。
    a. 込め　b. 合え　c. 出せ
@@ -371,14 +371,14 @@ A compound verb suffix with two core meanings: ① physically "entering inside" 
 :::en
 **Part 1: Fill in the blank with the correct grammar**
 
-1. 迷ったら、お母さんに相談（　）。
-   a. たらいい　b. てごらん　c. ばよかった
+1. 迷ったら、お母さんに相談し（　）。
+   a. たらいい　b. ばよかった　c. ればいい
 
 2. あの時もっと早く出発（　）。
    a. すればいい　b. すればよかった　c. するといい
 
 3. この薬、飲ん（　）。すぐ楽になるよ。
-   a. でごらん　b. だらいい　c. ばいい
+   a. でごらん　b. ばよかった　c. ばいい
 
 4. どこに申し（　）ばいいですか。
    a. 込め　b. 合え　c. 出せ

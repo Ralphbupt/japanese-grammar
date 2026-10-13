@@ -175,14 +175,14 @@ This lesson covers N2-level expressions for time and occasion. 「にあたっ�
 - 動詞た形 + のを機に/のをきっかけに
 
 ※ 「を機に」比「をきっかけに」更正式、更书面。  
-※ 「を機に」也可写作「を契機に」，更加书面化。
+※ 意思相近的「を契機に」是另一个表达（不是同一词的另一种写法），更加书面化。
 :::
 :::en
 - Noun + を機に/をきっかけに
 - Verb ta-form + のを機に/のをきっかけに
 
 ※ 「を機に」 is more formal/written than 「をきっかけに」.  
-※ 「を機に」 can also be written as 「を契機に」, which is even more literary.
+※ The similar 「を契機に」 is a separate expression (not just another spelling) and is even more literary.
 :::
 
 ### 含义||Meaning

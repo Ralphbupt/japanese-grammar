@@ -77,24 +77,24 @@ This lesson covers N3 grammar related to "timing." 「たとたん（に）」 i
 |------|------|------|
 | たとたん（に） | 刚……就（意外） | B必须是意外发生的事 |
 | たら | 做了A之后B | 一般条件，无意外含义 |
-| と | 一……就 | 习惯/自然结果，无意外感 |
+| と | 一……就 | 习惯/自然结果；接过去式时叙述一次性的先后发生 |
 | 次第 | 一……就立刻 | B是说话人主动的行为 |
 
 > 「ドアを開けたとたん、犬が飛び出した」= 意外！  
 > 「ドアを開けたら、犬がいた」= 单纯发现  
-> 「ドアを開けると、犬が走ってきた」= 每次都这样
+> 「ドアを開けると、犬が走ってきた」= 叙述先后发生（と + 过去式表示一次性的连续动作/发现，不是"每次"）
 :::
 :::en
 | Expression | Meaning | Difference |
 |------|------|------|
 | たとたん（に） | the moment… (unexpected) | B must be unexpected |
 | たら | after doing A, B | General condition, no surprise nuance |
-| と | whenever A, B | Habitual/natural result, no surprise |
+| と | whenever A, B / when A, B | Habitual/natural result; with past tense, narrates a one-time sequence |
 | 次第 | as soon as… (intentional) | B is the speaker's deliberate action |
 
 > 「ドアを開けたとたん、犬が飛び出した」= Surprise!  
 > 「ドアを開けたら、犬がいた」= Simple discovery  
-> 「ドアを開けると、犬が走ってきた」= Happens every time
+> 「ドアを開けると、犬が走ってきた」= Narrates one event following another (と + past tense describes a one-time sequence/discovery, not "every time")
 :::
 
 ---
@@ -385,14 +385,14 @@ E.g.: 入る**か**入ら**ないかのうちに**, 終わる**か**終わら**�
 2. 授業が終わる**か**終わら**ないかのうちに**、教室を飛び出した。（课刚一结束就冲出了教室。）
 3. 座る**か**座ら**ないかのうちに**、電話が鳴った。（刚一坐下电话就响了。）
 4. 目を閉じる**か**閉じ**ないかのうちに**、眠りに落ちた。（刚一闭眼就睡着了。）
-5. 食べ始める**か**始め**ないかのうちに**、もう食べ終わっていた。（刚开始吃就已经吃完了。）
+5. 家に着く**か**着か**ないかのうちに**、雨が降り出した。（刚一到家，雨就下起来了。）
 :::
 :::en
 1. ベッドに入る**か**入ら**ないかのうちに**、眠ってしまった。(No sooner had I gotten into bed than I fell asleep.)
 2. 授業が終わる**か**終わら**ないかのうちに**、教室を飛び出した。(No sooner had class ended than I dashed out of the classroom.)
 3. 座る**か**座ら**ないかのうちに**、電話が鳴った。(No sooner had I sat down than the phone rang.)
 4. 目を閉じる**か**閉じ**ないかのうちに**、眠りに落ちた。(No sooner had I closed my eyes than I fell asleep.)
-5. 食べ始める**か**始め**ないかのうちに**、もう食べ終わっていた。(No sooner had I started eating than I'd already finished.)
+5. 家に着く**か**着か**ないかのうちに**、雨が降り出した。(No sooner had I arrived home than it started to rain.)
 :::
 
 ### 辨析||Comparison

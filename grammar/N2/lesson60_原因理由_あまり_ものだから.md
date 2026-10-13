@@ -129,14 +129,14 @@ This lesson covers advanced N2-level cause/reason expressions. 「あまり」 i
 :::zh
 1. あなたのことを思え**ばこそ**、厳しいことを言うのだ。（正因为为你着想，才说严厉的话。）
 2. 健康であれ**ばこそ**、仕事ができる。（正因为健康，才能工作。）
-3. 努力すれ**ばこそ**、成功がある。（正因为努力，才有成功。）
+3. 努力すれ**ばこそ**、成功できるのだ。（正因为努力，才能成功。）
 4. 信頼関係があれ**ばこそ**、本音が言える。（正因为有信赖关系，才能说真心话。）
 5. 苦しい経験をすれ**ばこそ**、人は成長する。（正因为经历了痛苦，人才会成长。）
 :::
 :::en
 1. あなたのことを思え**ばこそ**、厳しいことを言うのだ。(It is precisely because I care about you that I say harsh things.)
 2. 健康であれ**ばこそ**、仕事ができる。(It is precisely because one is healthy that one can work.)
-3. 努力すれ**ばこそ**、成功がある。(It is precisely because of effort that success comes.)
+3. 努力すれ**ばこそ**、成功できるのだ。(It is precisely because you make an effort that you can succeed.)
 4. 信頼関係があれ**ばこそ**、本音が言える。(It is precisely because there is a relationship of trust that one can speak honestly.)
 5. 苦しい経験をすれ**ばこそ**、人は成長する。(It is precisely because one goes through hard experiences that one grows.)
 :::
@@ -369,7 +369,7 @@ Can be used for both positive and negative situations.
 - Noun である + ばかりに
 :::
 
-### 含義||Meaning
+### 含义||Meaning
 :::zh
 "就因为……（导致了不好的结果）"。强调只有一个原因，却因此引发了令人遗憾的负面后果。带有后悔、遗憾的语气。
 :::

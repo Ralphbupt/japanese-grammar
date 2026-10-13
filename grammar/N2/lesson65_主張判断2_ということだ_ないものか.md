@@ -73,6 +73,7 @@ Relays information heard from others or the news. Equivalent to 「〜そうだ 
 3. 返事がない**ということは**、興味がない**ということだ**。（没有回复，也就是说没兴趣。）
 
 **【意思2：据说】**
+
 4. ニュースによると、来週は台風が来る**ということだ**。（据新闻说，下周有台风来。）
 5. 会議は延期になった**ということだ**。（据说会议延期了。）
 6. 来年から消費税が上がる**ということだ**。（据说明年消费税要上调。）
@@ -84,6 +85,7 @@ Relays information heard from others or the news. Equivalent to 「〜そうだ 
 3. 返事がない**ということは**、興味がない**ということだ**。(No reply means there's no interest.)
 
 **[Meaning 2: I heard that]**
+
 4. ニュースによると、来週は台風が来る**ということだ**。(According to the news, a typhoon is coming next week.)
 5. 会議は延期になった**ということだ**。(I heard the meeting has been postponed.)
 6. 来年から消費税が上がる**ということだ**。(They say the consumption tax will go up starting next year.)
@@ -128,7 +130,7 @@ Relays information heard from others or the news. Equivalent to 「〜そうだ 
 - 動詞ない形 + ものか/ものだろうか
 
 ※ 「ないものだろうか」比「ないものか」更委婉。  
-※ 也有肯定形式「〜ないものか」→「〜れないものか」（可能形否定）。
+※ 也常用可能形的否定「〜れないものか」。
 :::
 :::en
 - Verb nai-form + ものか/ものだろうか
@@ -229,8 +231,9 @@ Relays information heard from others or the news. Equivalent to 「〜そうだ 
 5. 日本語を始めて半年**としては**、とても上手だ。（学日语才半年来说，非常棒了。）
 
 **【としても】**
+
 6. 個人**としても**、会社**としても**、この問題は無視できない。（无论作为个人还是作为公司，这个问题都不能忽视。）
-7. 先生**としても**、答えられない質問はある。（即使作为老师，也有回答不了的问题。）
+7. 学校側**としても**、この問題は放っておけない。（即使站在学校的立场，这个问题也不能放任不管。）
 :::
 :::en
 **[としては]**
@@ -241,8 +244,9 @@ Relays information heard from others or the news. Equivalent to 「〜そうだ 
 5. 日本語を始めて半年**としては**、とても上手だ。(For someone who started Japanese only six months ago, you're very good.)
 
 **[としても]**
+
 6. 個人**としても**、会社**としても**、この問題は無視できない。(Both as an individual and as a company, this issue cannot be ignored.)
-7. 先生**としても**、答えられない質問はある。(Even as a teacher, there are questions one can't answer.)
+7. 学校側**としても**、この問題は放っておけない。(Even from the school's standpoint, this problem can't be left alone.)
 :::
 
 ### 辨析||Comparison

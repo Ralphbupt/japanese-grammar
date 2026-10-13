@@ -55,14 +55,14 @@ Noun + において (before a verb) / における (before a noun)
 1. 会議は3階の会議室**において**行われます。（会议在3楼会议室举行。）
 2. この分野**において**、彼は第一人者だ。（在这个领域，他是第一人。）
 3. 現代社会**における**最大の問題は環境問題だ。（现代社会中最大的问题是环境问题。）
-4. 日本の歴史**において**、重要な出来事だ。（在日本历史上，是重要事件。）
+4. これは日本の歴史**において**重要な出来事だ。（这在日本历史上是重要事件。）
 5. 国際会議**における**彼の発言は注目された。（他在国际会议上的发言受到了关注。）
 :::
 :::en
 1. 会議は3階の会議室**において**行われます。(The meeting will be held in the conference room on the 3rd floor.)
 2. この分野**において**、彼は第一人者だ。(In this field, he is the foremost expert.)
 3. 現代社会**における**最大の問題は環境問題だ。(The biggest problem in modern society is environmental issues.)
-4. 日本の歴史**において**、重要な出来事だ。(It is an important event in Japanese history.)
+4. これは日本の歴史**において**重要な出来事だ。(This is an important event in Japanese history.)
 5. 国際会議**における**彼の発言は注目された。(His remarks at the international conference drew attention.)
 :::
 

@@ -1,11 +1,11 @@
 # Lesson 75 – N2総復習 — N2文法まとめ||N2 Comprehensive Review — N2 Grammar Summary
 
 :::zh
-这是N2语法的总复习课。我们将按功能分类回顾Day 56-71涵盖的全部N2语法，通过总结表格、重点辨析和综合练习，帮助你系统梳理、查漏补缺，为N2考试做最后准备。
+这是N2语法的总复习课。我们将按功能分类回顾Lesson 59–74涵盖的全部N2语法，通过总结表格、重点辨析和综合练习，帮助你系统梳理、查漏补缺，为N2考试做最后准备。
 :::
 
 :::en
-This is the comprehensive N2 grammar review. We will review all N2 grammar covered in Days 56-71, organized by function with summary tables, key comparisons, and mixed exercises to help you systematically consolidate your knowledge and prepare for the N2 exam.
+This is the comprehensive N2 grammar review. We will review all N2 grammar covered in Lessons 59–74, organized by function with summary tables, key comparisons, and mixed exercises to help you systematically consolidate your knowledge and prepare for the N2 exam.
 :::
 
 ## 本课单词表||Vocabulary
@@ -119,7 +119,7 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
 :::zh
 | 语法 | 接続 | 含义 | 例句 |
 |------|------|------|------|
-| に対して | 名詞＋に対して | 对于……/与……相反 | 兄に対して、弟はおとなしい。 |
+| に対して | 名詞＋に対して | 对于……/与……相反 | 兄が活発なのに対して、弟はおとなしい。 |
 | に反して | 名詞＋に反して | 与……相反 | 予想に反して、合格した。 |
 | 一方（で） | 普通形＋一方（で） | 另一方面 | 収入が増えた一方で、支出も増えた。 |
 | につれて | 動詞辞書形/名詞＋につれて | 随着…… | 年を取るにつれて、体力が落ちる。 |
@@ -129,7 +129,7 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
 :::en
 | Grammar | Conjugation | Meaning | Example |
 |------|------|------|------|
-| に対して | Noun + に対して | toward / in contrast to | 兄に対して、弟はおとなしい。 |
+| に対して | Noun + に対して | toward / in contrast to | 兄が活発なのに対して、弟はおとなしい。 |
 | に反して | Noun + に反して | contrary to | 予想に反して、合格した。 |
 | 一方(で) | Plain + 一方(で) | on the other hand | 収入が増えた一方で、支出も増えた。 |
 | につれて | Dict form/Noun + につれて | as… | 年を取るにつれて、体力が落ちる。 |
@@ -187,7 +187,7 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
 
 ---
 
-## 7. 接続・転折||7. Conjunctions / Transitions
+## 7. 接続・逆接||7. Conjunctions / Transitions
 
 :::zh
 | 语法 | 接続 | 含义 | 例句 |
@@ -220,7 +220,7 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
 | 次第だ/次第で | 名詞＋次第だ | 取决于 | 努力次第だ。 |
 | きり | た形＋きり＋否定 | 自从……就一直 | 出かけたきり戻らない。 |
 | ぶりに | 期間＋ぶりに | 时隔 | 10年ぶりに帰国した。 |
-| つき | 名詞＋につき | 因为/每 | 工事中につき通行止め。 |
+| につき | 名詞＋につき | 因为/每 | 工事中につき通行止め。 |
 | まい | 辞書形＋まい | 不会/决不 | 二度と来るまい。 |
 :::
 :::en
@@ -231,7 +231,7 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
 | 次第だ/次第で | Noun + 次第だ | depends on | 努力次第だ。 |
 | きり | ta-form + きり + negative | since… | 出かけたきり戻らない。 |
 | ぶりに | Period + ぶりに | for the first time in | 10年ぶりに帰国した。 |
-| つき | Noun + につき | due to / per | 工事中につき通行止め。 |
+| につき | Noun + につき | due to / per | 工事中につき通行止め。 |
 | まい | Dict form + まい | won't / never | 二度と来るまい。 |
 :::
 
@@ -244,24 +244,24 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
 :::zh
 | 表达 | 含义 | 用法 |
 |------|------|------|
-| わけがない | 不可能……（道理上不成立） | 基于常识/逻辑判断。"从道理上说不可能" |
-| はずがない | 不应该……（预期上不成立） | 基于信息/经验判断。"按理说不应该" |
+| わけがない | 不可能……（根本不成立） | 语气强烈，常带说话人的情绪和主观否定。"怎么可能！" |
+| はずがない | 不可能……（按依据推断不成立） | 基于事实/信息冷静推断。"按理说不会" |
 
-> **彼が犯人のわけがない。** → 他不可能是犯人。（逻辑上不成立：他当时不在场）
-> **彼が犯人のはずがない。** → 他不应该是犯人。（我了解他，按理说不会）
+> **彼が犯人のわけがない。** → 他怎么可能是犯人！（强烈否定：我相信他）
+> **彼が犯人のはずがない。** → 他不可能是犯人。（依据事实推断：他当时不在场）
 
-**判断方法**：如果是客观逻辑推理→わけがない；如果是主观信念/期待→はずがない。
+**判断方法**：有具体依据、冷静推断→はずがない；带感情的强烈否定→わけがない。
 :::
 :::en
 | Expression | Meaning | Usage |
 |------|------|------|
-| わけがない | impossible (logically) | Based on common sense/logic. "It's impossible by reason" |
-| はずがない | shouldn't be (by expectation) | Based on information/experience. "It shouldn't be" |
+| わけがない | impossible (no way at all) | Strong, often emotional/subjective denial. "No way!" |
+| はずがない | can't be (by inference) | Calm inference from facts/information. "It can't be, given…" |
 
-> **彼が犯人のわけがない。** → He can't possibly be the culprit. (Logically impossible: he wasn't there)
-> **彼が犯人のはずがない。** → He shouldn't be the culprit. (I know him; it shouldn't be the case)
+> **彼が犯人のわけがない。** → No way he's the culprit! (Strong denial: I believe in him)
+> **彼が犯人のはずがない。** → He can't be the culprit. (Inference from facts: he wasn't there)
 
-**How to decide**: Objective logical reasoning → わけがない; subjective belief/expectation → はずがない.
+**How to decide**: Calm inference from concrete evidence → はずがない; strong, emotional denial → わけがない.
 :::
 
 ### 9-2. に過ぎない vs にほかならない||9-2. に過ぎない vs にほかならない
@@ -416,7 +416,7 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
 
 **4. 意思相近的语法看接续**
 - 「につれて」「にしたがって」「に伴って」意思接近时，看前面是名词还是动词
-- 「わけがない」「はずがない」意思接近时，看是逻辑推理还是主观判断
+- 「わけがない」「はずがない」意思接近时，看是依据推断（はず）还是强烈否定（わけ）
 
 **5. 读解题的接续词**
 - 看到空格在段落开头 → 大概率是接续词（したがって、それにしても等）
@@ -455,7 +455,7 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
 
 **4. Similar grammar — check conjugation**
 - 「につれて」「にしたがって」「に伴って」 when meaning is similar, check if preceded by noun or verb
-- 「わけがない」「はずがない」 when meaning is similar, check logical reasoning vs subjective judgment
+- 「わけがない」「はずがない」 when meaning is similar, check inference from evidence (はず) vs strong denial (わけ)
 
 **5. Conjunctions in reading passages**
 - Blank at paragraph start → likely a conjunction (したがって, それにしても, etc.)
@@ -483,7 +483,7 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
 :::zh
 **一、填入最恰当的语法**
 
-1. 忙しい（　　）、メールの返信ぐらいしてほしい。
+1. 忙しい（　　）、メールの返信もしないのはよくない。
    a. からには　b. からといって　c. ものの　d. 以上は
 
 2. 心配の（　　）、一晩中眠れなかった。
@@ -496,7 +496,7 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
    a. 過ぎない　b. 限る　c. ほかならない　d. 対して
 
 5. 年を取る（　　）、物忘れが増える。
-   a. に伴って　b. につれて　c. に反して　d. に応じて
+   a. に際して　b. につれて　c. に反して　d. に応じて
 
 6. 指示（　　）、作業を進めてください。
    a. につれて　b. に伴って　c. にしたがって　d. に対して
@@ -505,7 +505,7 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
    a. っぽい　b. がち　c. げ　d. 気味
 
 8. 3年間の闘病生活を耐え（　　）。
-   a. 切った　b. 抜いた　c. 終えた　d. かけた
+   a. 込んだ　b. 抜いた　c. 終えた　d. かけた
 
 **二、选择正确的选项**
 
@@ -544,7 +544,7 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
 :::en
 **Part 1: Fill in the most appropriate grammar**
 
-1. 忙しい（　　）、メールの返信ぐらいしてほしい。
+1. 忙しい（　　）、メールの返信もしないのはよくない。
    a. からには　b. からといって　c. ものの　d. 以上は
 
 2. 心配の（　　）、一晩中眠れなかった。
@@ -557,7 +557,7 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
    a. 過ぎない　b. 限る　c. ほかならない　d. 対して
 
 5. 年を取る（　　）、物忘れが増える。
-   a. に伴って　b. につれて　c. に反して　d. に応じて
+   a. に際して　b. につれて　c. に反して　d. に応じて
 
 6. 指示（　　）、作業を進めてください。
    a. につれて　b. に伴って　c. にしたがって　d. に対して
@@ -566,7 +566,7 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
    a. っぽい　b. がち　c. げ　d. 気味
 
 8. 3年間の闘病生活を耐え（　　）。
-   a. 切った　b. 抜いた　c. 終えた　d. かけた
+   a. 込んだ　b. 抜いた　c. 終えた　d. かけた
 
 **Part 2: Choose the correct option**
 

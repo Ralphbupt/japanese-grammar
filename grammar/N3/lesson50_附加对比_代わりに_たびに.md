@@ -178,14 +178,14 @@ Citing a source of information. "According to..."
 1. 天気予報**によると**、明日は雨だそうだ。（据天气预报说，明天下雨。）
 2. 新聞**によると**、来月から物価が上がるらしい。（据报纸说，下个月物价要涨。）
 3. 先生**によると**、テストは来週だそうだ。（据老师说，考试在下周。）
-4. 警察の報告**によると**、事故の原因はスピードだったとのことだ。（据警方报告，事故原因是超速。）
+4. 警察の報告**によると**、事故の原因はスピードの出しすぎだったとのことだ。（据警方报告，事故原因是超速。）
 5. ニュース**によれば**、新しい法律が来年施行されるそうだ。（据新闻说，新法律明年实施。）
 :::
 :::en
 1. 天気予報**によると**、明日は雨だそうだ。(According to the weather forecast, it will rain tomorrow.)
 2. 新聞**によると**、来月から物価が上がるらしい。(According to the newspaper, prices will apparently rise next month.)
 3. 先生**によると**、テストは来週だそうだ。(According to the teacher, the test is next week.)
-4. 警察の報告**によると**、事故の原因はスピードだったとのことだ。(According to the police report, the cause of the accident was speeding.)
+4. 警察の報告**によると**、事故の原因はスピードの出しすぎだったとのことだ。(According to the police report, the cause of the accident was speeding.)
 5. ニュース**によれば**、新しい法律が来年施行されるそうだ。(According to the news, a new law will take effect next year.)
 :::
 

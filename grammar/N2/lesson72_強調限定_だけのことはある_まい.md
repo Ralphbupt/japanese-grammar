@@ -12,7 +12,6 @@ This lesson covers N2 grammar for "emphatic evaluation" and "negative conjecture
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 不愧 | ふき | 不愧//as expected of |
 | 値段 | ねだん | 价格//price |
 | 評判 | ひょうばん | 评价、口碑//reputation |
 | さすが | さすが | 不愧、果然//as expected |
@@ -134,14 +133,14 @@ This lesson covers N2 grammar for "emphatic evaluation" and "negative conjecture
 1. やる**だけは**やった。後悔はない。（至少做了该做的，没有遗憾。）
 2. 試験前に勉強する**だけは**した。あとは結果を待つだけだ。（考前至少学了，剩下就等结果了。）
 3. 聞く**だけは**聞いてみたが、やはりだめだった。（至少问了一下，但果然不行。）
-4. 努力した**だけは**したから、悔いはない。（至少努力过了，不留遗憾。）
+4. 努力する**だけは**したから、悔いはない。（至少努力过了，不留遗憾。）
 5. 申し込む**だけは**申し込んだが、受かるかどうかわからない。（至少报名了，能不能考上不知道。）
 :::
 :::en
 1. やる**だけは**やった。後悔はない。(I did what I could. No regrets.)
 2. 試験前に勉強する**だけは**した。あとは結果を待つだけだ。(I at least studied before the exam. Now I just wait for the results.)
 3. 聞く**だけは**聞いてみたが、やはりだめだった。(I at least tried asking, but it was no good after all.)
-4. 努力した**だけは**したから、悔いはない。(I at least put in the effort, so I have no regrets.)
+4. 努力する**だけは**したから、悔いはない。(I at least put in the effort, so I have no regrets.)
 5. 申し込む**だけは**申し込んだが、受かるかどうかわからない。(I at least applied, but I don't know if I'll pass.)
 :::
 
@@ -255,12 +254,12 @@ This lesson covers N2 grammar for "emphatic evaluation" and "negative conjecture
 
 ### 例句||Example Sentences
 :::zh
-1. あの人は二度と来る**まい**。（那个人大概不会再来了。）〔推测〕
-2. こんな過ちは二度と繰り返す**まい**。（这样的错误决不再犯。）〔决心〕
-3. 彼はこのことを知る**まい**。（他大概不知道这件事吧。）〔推测〕
-4. もう絶対に遅刻する**まい**と心に誓った。（我发誓决不再迟到。）〔决心〕
-5. こんな高いレストランには二度と来る**まい**。（这么贵的餐厅再也不来了。）〔决心〕
-6. あの怪しい店には誰も行く**まい**。（那家可疑的店大概没人会去吧。）〔推测〕
+1. あの人は二度と来る**まい**。（那个人大概不会再来了。）（推测）
+2. こんな過ちは二度と繰り返す**まい**。（这样的错误决不再犯。）（决心）
+3. 彼はこのことを知る**まい**。（他大概不知道这件事吧。）（推测）
+4. もう絶対に遅刻する**まい**と心に誓った。（我发誓决不再迟到。）（决心）
+5. こんな高いレストランには二度と来る**まい**。（这么贵的餐厅再也不来了。）（决心）
+6. あの怪しい店には誰も行く**まい**。（那家可疑的店大概没人会去吧。）（推测）
 :::
 :::en
 1. あの人は二度と来る**まい**。(That person probably won't come again.) [conjecture]
@@ -309,7 +308,7 @@ This lesson covers N2 grammar for "emphatic evaluation" and "negative conjecture
 **一、选择正确的语法（だけのことはある・だけは・だけまし・まい）**
 
 1. さすが有名なシェフが作った料理（　　）。本当に美味しい。
-2. 試験に落ちたが、あと1点（　　）。次は受かるだろう。
+2. 財布を落としたが、カードが無事だった（　　）だ。
 3. やる（　　）やったから、後悔はない。
 4. あんなひどい目に遭ったのだから、二度と行く（　　）。
 5. 高かったが、買った（　　）。毎日使っている。
@@ -329,7 +328,7 @@ This lesson covers N2 grammar for "emphatic evaluation" and "negative conjecture
 **Part 1: Choose the correct grammar (だけのことはある / だけは / だけまし / まい)**
 
 1. さすが有名なシェフが作った料理（　　）。本当に美味しい。
-2. 試験に落ちたが、あと1点（　　）。次は受かるだろう。
+2. 財布を落としたが、カードが無事だった（　　）だ。
 3. やる（　　）やったから、後悔はない。
 4. あんなひどい目に遭ったのだから、二度と行く（　　）。
 5. 高かったが、買った（　　）。毎日使っている。
