@@ -39,7 +39,7 @@ Key concepts:
 2. **Sidebar titles**: `JA_TITLES` maps file IDs (e.g. `lesson01`) to Japanese sidebar labels
 3. **SEO keywords**: `LESSON_KEYWORDS` maps file IDs to per-lesson keyword strings
 4. **Furigana**: kuroshiro adds ruby annotations to `data-ja` elements. Chinese text inside （…） is protected
-5. **Audio tagging**: Assigns **positional** `data-audio="l{lessonNum}.{seq}"` IDs to audio-eligible `<li data-ja>` elements in document order, and writes the id→text list to `dist/.audio-requests.json` (consumed by `build-audio.py`). ⚠️ IDs are positional, so inserting/removing examples shifts every later ID in that lesson — its mp3s must be regenerated. (`audio/manifest.json` is legacy and no longer read by the build.)
+5. **Audio tagging**: Example `<li data-ja>` sentences get `data-audio="s{sha1(text)[:12]}"` — the ID is a hash of the spoken text, so editing/reordering examples never misaligns audio, and zh/en copies of a sentence share one mp3. Practice/answer sections (h2/h3 matching `PRACTICE_HEADING`) and non-model lines (blanks, ❌/△, →/=/+, a–d options, English, Chinese) get no audio (`audioText()`). The 🔊 attribute is only emitted when `audio/{id}.mp3` exists; every eligible sentence is still written to `dist/.audio-requests.json` for `build-audio.py`. (`audio/manifest.json` is legacy and no longer read by the build.)
 6. **TTS JS**: Injects 🔊 buttons on elements with `data-audio`, plays `/audio/{id}.mp3` on click
 7. **Old URL redirects**: `DAY_TO_LESSON` map generates meta-refresh stubs at `/dayNN/` → `/lessonNN/`
 8. **CNAME**: Auto-generates `dist/CNAME` when `SITE` points to a non-github.io domain
@@ -101,7 +101,7 @@ data/
   anki-cards.json         (curated Anki card data, WIP)
 audio/
   manifest.json           (text → filename mapping for TTS)
-  l{NN}.{NNN}.mp3         (5522 pre-generated TTS files, ~134MB)
+  s{hash}.mp3             (pre-generated TTS, one file per distinct sentence)
 build.js                  (main static site generator)
 build-anki.js             (Anki TSV + landing page generator)
 build-anki.py             (Anki .apkg generator, reads .cards.json)
@@ -131,7 +131,8 @@ Filename convention: `lessonNN_topic.md`
 - Each grammar point needs: meaning, conjugation rules, 3+ example sentences, and comparison with easily confused grammar
 - Example sentences should have both Chinese and English translations in parens
 - New lessons: add `lessonNN_topic.md` in `grammar/N{level}/`, update `JA_TITLES` and `LESSON_KEYWORDS` in `build.js`
-- After adding lessons with new examples: run `build-audio.py` locally to generate TTS audio, commit `audio/` directory
+- After adding/editing examples: `npm run build:site` then `python build-audio.py` to generate the missing mp3s, commit `audio/`. Stale mp3s (no longer requested) can be deleted.
+- Furigana misreadings are patched in `build.js` (`RUBY_FIXES`, `RUBY_MERGES`); Chinese-line detection uses `SC_CHARS` (simplified-only chars — never add a kanji used in Japanese) plus the 「」/gloss-segment rules
 
 ## Domain & SEO
 

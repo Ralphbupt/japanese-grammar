@@ -2,8 +2,8 @@
 """Generate TTS audio (.mp3) for Japanese example sentences.
 
 Reads dist/.audio-requests.json (written by build.js) which contains
-{ id, text } entries with deterministic IDs matching the data-audio
-attributes in the built HTML. No text-matching needed at runtime.
+{ id, text } entries; the id is a hash of the text (see audioIdFor in
+build.js), so an existing file is always the right audio for its id.
 
 Output: audio/{id}.mp3 (committed to repo, copied to dist/audio/ by CI)
 """
@@ -19,6 +19,17 @@ except ImportError:
     print("ERROR: edge-tts not installed. Run: pip install edge-tts", file=sys.stderr)
     sys.exit(1)
 
+# Since 2026-10 Microsoft refuses the old readaloud endpoint (403) in some
+# regions, Japan included; Edge itself now talks to api.msedgeservices.com,
+# which accepts the same client key and Sec-MS-GEC token. Drop this override
+# once edge-tts ships the new endpoint.
+import edge_tts.communicate
+from edge_tts.constants import TRUSTED_CLIENT_TOKEN
+edge_tts.communicate.WSS_URL = (
+    "wss://api.msedgeservices.com/tts/cognitiveservices/websocket/v1"
+    f"?Ocp-Apim-Subscription-Key={TRUSTED_CLIENT_TOKEN}"
+)
+
 VOICE = "ja-JP-NanamiNeural"
 OUT_DIR = os.path.join(os.path.dirname(__file__), "audio")
 REQUESTS_PATH = os.path.join(os.path.dirname(__file__), "dist", ".audio-requests.json")
@@ -32,6 +43,10 @@ async def generate_one(text, filepath, semaphore):
             await communicate.save(filepath)
             return True
         except Exception as e:
+            # save() creates the file before streaming; don't leave an empty
+            # mp3 that the next run would skip as "already generated".
+            if os.path.exists(filepath):
+                os.remove(filepath)
             print(f"  WARN: failed '{text[:30]}...': {e}", file=sys.stderr)
             return False
 

@@ -696,23 +696,24 @@ async function initKuroshiro() {
 // Simplified Chinese characters not used in Japanese (JP has different kanji).
 // Shared chars like 点画声断残温条礼 are NOT here.
 const SC_CHARS = new Set(
-  "词讲语调证试诉该详请谢议论识记设访许评读写书" +
-  "买卖贵费资质购赢赶趣够辑辩辨边达远连运近" +
-  "闪闭闻间阅队阳阶际陆险随难须频颜飘馆驾验骑" +
+  "词讲语调证试诉该详请谢议论识记设访许评读书" +
+  "买卖贵费资质购赢赶够辑辩辨边达远连运" +
+  "闪闭闻间阅队阳阶际陆险难须频颜飘馆驾验骑" +
   "问题马头车东两关门见贝页鱼鸟齿风飞鞋韩" +
   "进发现实应虽选择认输环让错绝谓释练确义务" +
-  "则规变对称赞类纯陈述简罗辑处叹做并" +
-  "组粗细网终编继续绍纷绕缘缺缩织" +
-  "当将独获奖妆庄严丧" +
-  "从给过还这没为着到被说" +
-  "们它哪怎谁的了吗呢吧啊哦嘛呀嗯啦么" +
-  "举护坏态惯样欢决热经结据动听观传师预报转" +
-  "离单复图场园约计长换历准办银铁镇脑较亲价" +
-  "强录厅婴宽异弯张扬杂笔脸构标松灭虑综级" +
-  "岁属带怀戏执担坚叶杀产仅优储兰创势华币" +
-  "响团块奋妇宁宝宪审岛帐广庆径恼悬惊愿战" +
+  "则规变对赞类纯陈简罗辑处叹做并" +
+  "组细网终编继续绍纷绕缘缺缩织" +
+  "获奖妆庄严丧" +
+  "从给过还这为说" +
+  "们它哪怎谁吗呢吧啊哦嘛呀嗯啦么" +
+  "举护坏态惯样欢决热经结动听观传师预报转" +
+  "离单复图场园约计长换历办银铁镇脑较亲价" +
+  "强录厅婴宽异弯张扬杂笔脸构标灭虑综级" +
+  "岁带怀戏执坚杀产仅优储兰创势华币" +
+  "响团块奋妇宁宪审岛帐广庆恼悬惊愿战" +
   "扩拟拥拨择损摇撑权枪" +
-  "另啤貌"
+  "另啤" +
+  "吃刚觉满别开时个种习气负况针划于也掉罚适跑步过后只译搭填或看很"
 );
 
 function hasSC(text) {
@@ -735,8 +736,13 @@ function tagElements(html) {
       const outsideParens = plain.replace(/（[^）]*）/g, "");
       const hasKana = /[\u3040-\u309f\u30a0-\u30ff]/.test(outsideParens);
       const hasSimplifiedChinese = hasSC(outsideParens);
+      // A Chinese note that only quotes Japanese — 常与「たとえ」搭配 — has
+      // its kana inside 「」 and kanji (but no kana) outside them.
+      const outsideQuotes = outsideParens.replace(/「[^」]*」|『[^』]*』/g, "");
+      const chineseAroundQuotes =
+        /[\u4e00-\u9fff]/.test(outsideQuotes) && !/[\u3040-\u309f\u30a0-\u30ff]/.test(outsideQuotes);
 
-      if (hasKana && !hasSimplifiedChinese) {
+      if (hasKana && !hasSimplifiedChinese && !chineseAroundQuotes) {
         // Japanese element → tag it
         const tagged = openTag.replace(/^<(\w+)/, '<$1 data-ja');
         return tagged + content + closeTag;
@@ -817,10 +823,71 @@ const RUBY_FIXES = [
   { kanji: "見", from: /^みる$/, to: "み" },
   // Every 辛 in these lessons means "spicy" (からい), never つらい.
   { kanji: "辛", from: /^(つら|からし)$/, to: "から" },
+  // 日本 is にほん in ordinary speech (日本語/日本人 already are).
+  { kanji: "日本", from: /^にっぽん$/, to: "にほん" },
+  // Month names: 3月 / 何月 = さんがつ / なんがつ.
+  { kanji: "月", from: /^つき$/, before: /[0-9０-９何〇○]$/, to: "がつ" },
+  { kanji: "何", from: /^なに$/, after: /^(月|の|て|って)/, to: "なん" },
+  { kanji: "何時", from: /^いつ$/, to: "なんじ" },
+  // 絵を描く = かく (the lessons' vocab lists give かく).
+  { kanji: "描", from: /^えが$/, to: "か" },
+  { kanji: "夜中", from: /^やちゅう$/, to: "よなか" },
+  { kanji: "怒", from: /^いか$/, after: /^り[っ（]/, to: "おこ" },
+  { kanji: "今", from: /^こん$/, to: "いま" },
+  { kanji: "手数", from: /^てかず$/, to: "てすう" },
+  { kanji: "召", from: /^めし$/, after: /^し/, to: "め" },
+  // Grammar terms: 疑問詞, 数量詞, 助詞 … are 〜し.
+  { kanji: "詞", from: /^ことば$/, to: "し" },
+  // Suffix 〜気味 is ぎみ; 気味が悪い keeps きみ.
+  { kanji: "気味", from: /^きみ$/, after: /^(?![がの悪])/, to: "ぎみ" },
+  // 間に = あいだに ("during"); 間に合う stays まにあう.
+  { kanji: "間", from: /^ま$/, after: /^に(?![合あ])/, to: "あいだ" },
+  { kanji: "間", from: /^ま$/, before: /長い$/, to: "あいだ" },
+  { kanji: "末", from: /^まつ$/, after: /^に/, to: "すえ" },
+  { kanji: "大事", from: /^だいじ$/, after: /^にならず/, to: "おおごと" },
+  { kanji: "角", from: /^かく$/, after: /^を曲/, to: "かど" },
+  { kanji: "杯", from: /^はい$/, before: /[3３]$/, to: "ばい" },
+  { kanji: "世論", from: /^せろん$/, to: "よろん" },
+  // 来（く）れば / 来（こ）ない: the reading is spelled out right after.
+  { kanji: "来", from: /^き$/, after: /^（く）/, to: "く" },
+  { kanji: "来", from: /^き$/, after: /^（こ）/, to: "こ" },
+  { kanji: "名", from: /^な$/, after: /^・な/, to: "めい" },
+  { kanji: "長", from: /^ちょう$/, after: /^＿/, to: "なが" },
+  { kanji: "出", from: /^で$/, after: /^さ（/, to: "だ" },
+  { kanji: "刃", from: /^は$/, before: /鬼滅の$/, to: "やいば" },
+  // A door/window opening by itself is あく.
+  { kanji: "開", from: /^ひら$/, before: /(ドア|窓|戸|扉|門|店|鍵|開け|押すと|押せば|押したら)(?![^。]*を$)[^。]*$/, after: /^[かきくけい]/, to: "あ" },
+  // Chinese 去 ("drop") in conjugation notes — 去る+ます, ます去ます — isn't
+  // Japanese at all: no reading.
+  { kanji: "去", from: /^さ$/, after: /^(る|い)?\s*[+＋]|^ます/, to: "" },
+  { kanji: "去", from: /^さ$/, before: /ます$/, to: "" },
+  // Rain/snow 降り続ける, 降りそう — ふる, not おりる.
+  { kanji: "降", from: /^お$/, before: /[雨雪][がはも][^。]*$/, after: /^[りるら]/, to: "ふ" },
 ];
 
-// Adjacent single-kanji rubies kuromoji should have kept as one word.
-const RUBY_MERGES = [["彼", "女", "かのじょ"]];
+// Runs of adjacent rubies kuromoji should have read as one word. Each part is
+// "kanji" or "kanji:reading" (the reading must match too).
+const RUBY_MERGES = [
+  [["彼", "女"], "かのじょ"],
+  [["一", "人"], "ひとり"],
+  [["二", "人"], "ふたり"],
+  [["一", "日", "中"], "いちにちじゅう"],
+  [["一", "晩", "中"], "ひとばんじゅう"],
+  [["今日", "中"], "きょうじゅう"],
+  [["今年", "中"], "ことしじゅう"],
+  [["一", "回"], "いっかい"],
+  [["一", "週間"], "いっしゅうかん"],
+  [["一", "匹"], "いっぴき"],
+  [["一", "通:つう"], "いっつう"],
+  [["一", "泊", "二", "日"], "いっぱくふつか"],
+  [["夜", "更"], "よふ"],
+  [["疑問", "詞"], "ぎもんし"],
+  [["空", "所"], "くうしょ"],
+  [["鬼", "滅"], "きめつ"],
+];
+
+// 3日 / 3日間: kuromoji reads the digit and 日 separately (にち).
+const DAY_COUNTS = { 2: "ふつか", 3: "みっか", 4: "よっか", 5: "いつか", 6: "むいか", 7: "なのか", 8: "ようか", 9: "ここのか", 10: "とおか", 20: "はつか" };
 
 const RUBY_TAG = /<ruby>([^<]*)<rp>\(<\/rp><rt>([^<]*)<\/rt><rp>\)<\/rp><\/ruby>/g;
 const RUBY_KANA = /^[ぁ-んァ-ヶーゔ・]+$/;
@@ -839,13 +906,26 @@ function plainAround(str, start, end) {
 }
 
 function fixReadings(html) {
-  for (const [a, b, reading] of RUBY_MERGES) {
-    const pair = new RegExp(
-      `${ruby(a, "[^<]*")}${ruby(b, "[^<]*")}`.replace(/[()]/g, "\\$&"),
+  for (const [parts, reading] of RUBY_MERGES) {
+    const kanji = parts.map((p) => p.split(":")[0]).join("");
+    const re = new RegExp(
+      parts.map((p) => { const [k, r] = p.split(":"); return ruby(k, r || "[^<]*"); }).join("").replace(/[()]/g, "\\$&"),
       "g"
     );
-    html = html.replace(pair, ruby(a + b, reading));
+    html = html.replace(re, ruby(kanji, reading));
   }
+  // 昔々 = むかしむかし (kuromoji leaves 々 bare).
+  html = html.replace(new RegExp(ruby("昔", "むかし").replace(/[()]/g, "\\$&") + "々", "g"), ruby("昔々", "むかしむかし"));
+  // Digit + 日 / 日間 counts days: 3日 = みっか, 3日間 = みっかかん.
+  html = html.replace(
+    /(^|[^0-9０-９])([0-9０-９]{1,2})<ruby>(日|日間)<rp>\(<\/rp><rt>にち(?:かん)?<\/rt><rp>\)<\/rp><\/ruby>/g,
+    (m, pre, num, kanji) => {
+      const n = Number(num.replace(/[０-９]/g, (d) => String.fromCharCode(d.charCodeAt(0) - 0xfee0)));
+      const r = DAY_COUNTS[n];
+      if (!r) return m;
+      return pre + ruby(num + kanji, r + (kanji === "日間" ? "かん" : ""));
+    }
+  );
   // kuroshiro echoes text it cannot read — a Chinese gloss that slipped into a
   // data-ja element comes back annotated with itself (刚(刚)). Keep the text,
   // drop the ruby.
@@ -857,7 +937,7 @@ function fixReadings(html) {
       if (f.kanji !== kanji || !f.from.test(reading)) continue;
       if (f.after && !f.after.test(ctx.after)) continue;
       if (f.before && !f.before.test(ctx.before)) continue;
-      return ruby(kanji, f.to);
+      return f.to ? ruby(kanji, f.to) : kanji;
     }
     return m;
   });
@@ -872,6 +952,29 @@ function stripParensChinese(html) {
     );
     return "（" + stripped + "）";
   });
+}
+
+// Strip ruby from Chinese glosses inside a Japanese element: the segment
+// after =, → or ： that has kanji but no kana (ようにしている = 一直在注意,
+// → 不用早起). Quoted 「…」 Japanese doesn't count as kana.
+const GLOSS_SPLIT = /(\s*[=＝→：]\s*)(?![^<]*>)/;
+function stripChineseSegments(html) {
+  return html.replace(/(<(li|p|td|th|dd|dt|blockquote|summary)\b[^>]*\bdata-ja\b[^>]*>)([\s\S]*?)(<\/\2>)/g,
+    (m, open, tag, content, close) => {
+      if (!GLOSS_SPLIT.test(content)) return m;
+      const out = content.split(GLOSS_SPLIT).map((seg, i) => {
+        if (i % 2) return seg;
+        const plain = seg
+          .replace(/<rt>[^<]*<\/rt>|<rp>[^<]*<\/rp>/g, "")
+          .replace(/<[^>]+>/g, "")
+          .replace(/（[^）]*）|「[^」]*」|『[^』]*』/g, "");
+        if (/[\u4e00-\u9fff]/.test(plain) && !/[\u3040-\u309f\u30a0-\u30ff]/.test(plain)) {
+          return seg.replace(/<ruby>([^<]*)<rp>\(<\/rp><rt>[^<]*<\/rt><rp>\)<\/rp><\/ruby>/g, "$1");
+        }
+        return seg;
+      });
+      return open + out.join("") + close;
+    });
 }
 
 // Process HTML:
@@ -1007,7 +1110,54 @@ async function addFurigana(kuro, html) {
 
   // Step 3: patch known kuromoji misreadings, then strip ruby from
   // parenthetical Chinese
-  return stripParensChinese(fixReadings(result.join("")));
+  return stripChineseSegments(stripParensChinese(fixReadings(result.join(""))));
+}
+
+// ─── Audio eligibility ───
+
+// Audio files are named after a hash of the sentence they speak, so editing
+// or reordering examples never points a 🔊 at the wrong mp3, and a sentence
+// shared by the zh and en blocks has one file.
+function audioIdFor(text) {
+  return "s" + require("crypto").createHash("sha1").update(text).digest("hex").slice(0, 12);
+}
+const AUDIO_FILES = new Set(
+  (fs.existsSync(path.join(__dirname, "audio")) ? fs.readdirSync(path.join(__dirname, "audio")) : [])
+    .filter((f) => f.endsWith(".mp3"))
+    .map((f) => f.slice(0, -4))
+);
+
+// h2/h3 titles of practice/answer sections: their items get no audio.
+const PRACTICE_HEADING = /练习|練習|Practice|Quiz|测验|改错|Error Correction|填空|Fill in|翻译|Translat|答案|Answers|选择|(?<!How to )Choose/i;
+
+// The text to speak for an example <li>, or "" if it isn't a model Japanese
+// sentence. Translations in （…）/(…) are dropped.
+function audioText(content) {
+  const raw = content
+    .replace(/<ruby>([^<]*)<rp>[^<]*<\/rp><rt>[^<]*<\/rt><rp>[^<]*<\/rp><\/ruby>/g, "$1")
+    .replace(/<[^>]+>/g, "")
+    .replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&amp;/g, "&");
+  // Fill-in blanks.
+  if (/（[\s　]*）|\([\s　]*\)|＿|_{2,}/.test(raw)) return "";
+  const outside = raw
+    .replace(/（[^）]*）|\([^)]*\)|\[[^\]]*\]/g, "")
+    .replace(/^\s*[A-Za-z][A-Za-z ]*[:：]\s*/, "");  // "Plain past: …"
+  if (
+    /[❌✗✕×△]/.test(outside) ||               // wrong / questionable examples
+    /[→⇒=＝+＋]/.test(outside) ||              // glosses, answers, formulas
+    /[a-z]{3,}/.test(outside) ||               // English notes (ABC, SNS are fine)
+    /(^|\s)[a-dａ-ｄ][.．)）]/.test(outside) || // a. b. c. options
+    hasSC(outside)                            // Chinese
+  ) return "";
+  const plain = outside
+    .replace(/(^|\s)[A-ZＡ-Ｚ][：:]\s*/g, "$1")  // dialogue labels A： B：
+    .replace(/[→❌✓✗⚠️📖↑↓←→●■□▶︎•·…✅⭕○◯]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  // A real sentence: ends in 。！？ and has kana.
+  if (plain.length < 2 || !/[。！？]/.test(plain)) return "";
+  if (!/[぀-ゟ゠-ヿ]/.test(plain)) return "";
+  return plain;
 }
 
 // ─── Build ───
@@ -1023,6 +1173,7 @@ async function main() {
   const sidebarHtml = [];
   const articlesHtml = [];
   const audioRequests = [];
+  const audioSeen = new Set();
   const lessonPages = []; // for individual page generation
   let firstId = null;
 
@@ -1214,28 +1365,27 @@ async function main() {
       console.log(`  Processing ${file.id}...`);
       html = await addFurigana(kuro, html);
 
-      // Tag ALL <li data-ja> with audio IDs (not just inside <ol>).
-      // Covers numbered examples, bullet examples, and unnumbered lists.
-      let audioSeq = 0;
-      const lnum = (file.id.match(/\d+/) || ["0"])[0];
-      html = html.replace(/<li data-ja([^>]*)>([\s\S]*?)<\/li>/g, (match, attrs, content) => {
-        if (/word-table/.test(attrs)) return match;
-        const plain = content
-          .replace(/<ruby>([^<]*)<rp>[^<]*<\/rp><rt>[^<]*<\/rt><rp>[^<]*<\/rp><\/ruby>/g, "$1")
-          .replace(/<[^>]+>/g, "")
-          .replace(/[（(][^）)]*[）)]/g, "")
-          .replace(/[→❌✓✗⚠️📖↑↓←→●■□▶︎•·…]/g, "")
-          .replace(/\s+/g, " ")
-          .trim();
-        // Eligible = a real Japanese sentence: ends with sentence punctuation
-        // (。！？) and contains kana (checked below). No length floor beyond a
-        // degenerate guard — short sentences like 「走るな！」「本を読む。」are
-        // valid examples and must get audio too.
-        if (plain.length < 2 || !/[。！？]/.test(plain)) return match;
-        if (!/[぀-ゟ゠-ヿ]/.test(plain)) return match;
-        audioSeq++;
-        const audioId = `l${lnum}.${String(audioSeq).padStart(3, "0")}`;
-        audioRequests.push({ id: audioId, text: plain });
+      // Tag <li data-ja> example sentences with audio IDs. Practice sections
+      // (and anything that isn't a model sentence: blanks, ❌ examples,
+      // options, glosses, formulas, English) get no audio.
+      let practiceH2 = false, practiceH3 = false;
+      html = html.replace(/<h([23])\b[^>]*>([\s\S]*?)<\/h\1>|<li data-ja([^>]*)>([\s\S]*?)<\/li>/g, (match, hLevel, hContent, attrs, content) => {
+        if (hLevel) {
+          const isPractice = PRACTICE_HEADING.test(hContent.replace(/<[^>]+>/g, ""));
+          if (hLevel === "2") { practiceH2 = isPractice; practiceH3 = false; }
+          else practiceH3 = isPractice;
+          return match;
+        }
+        if (/word-table/.test(attrs) || practiceH2 || practiceH3) return match;
+        const plain = audioText(content);
+        if (!plain) return match;
+        const audioId = audioIdFor(plain);
+        if (!audioSeen.has(audioId)) {
+          audioSeen.add(audioId);
+          audioRequests.push({ id: audioId, text: plain });
+        }
+        // Only show 🔊 once the mp3 exists (build-audio.py fills the gaps).
+        if (!AUDIO_FILES.has(audioId)) return match;
         return `<li data-ja${attrs} data-audio="${audioId}">${content}</li>`;
       });
 
