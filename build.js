@@ -251,7 +251,26 @@ const TTS_JS = `document.addEventListener('DOMContentLoaded', function(){
     // drop the inline button below that block. Append inside the trailing <p>
     // so the 🔊 sits inline at the end of the sentence.
     var last = el.lastElementChild;
-    (last && last.tagName === 'P' ? last : el).appendChild(btn);
+    var box = last && last.tagName === 'P' ? last : el;
+    // Glue the 🔊 to the sentence's last character, so a full line wraps the
+    // two together instead of leaving the button alone on the next line.
+    var tw = document.createTreeWalker(box, NodeFilter.SHOW_TEXT, { acceptNode: function(n) {
+      return /\\S/.test(n.data) && !n.parentNode.closest('rt, rp') ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+    } });
+    var tail = null, n;
+    while ((n = tw.nextNode())) tail = n;
+    if (!tail) { box.appendChild(btn); return; }
+    var ruby = tail.parentNode.closest('ruby');
+    if (ruby) tail = ruby;
+    else {
+      tail.data = tail.data.replace(/\\s+$/, '');
+      if (tail.data.length > 1) tail = tail.splitText(tail.data.length - 1);
+    }
+    var glue = document.createElement('span');
+    glue.style.whiteSpace = 'nowrap';
+    tail.parentNode.insertBefore(glue, tail);
+    glue.appendChild(tail);
+    glue.appendChild(btn);
   });
 });`;
 

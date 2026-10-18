@@ -28,6 +28,12 @@ body.ai-open #ai-panel { transform: none; visibility: visible; transition: trans
 .ai-title { font-weight: 700; color: inherit; white-space: nowrap; display: flex; align-items: center; gap: .3rem; min-width: 0; flex: 1; }
 .ai-title .ai-model { font: inherit; font-weight: 400; color: var(--text-muted); font-size: .72rem; margin-left: .3rem; background: none; border: 1px solid transparent; border-radius: var(--radius-sm); padding: .1rem .35rem; cursor: pointer; flex: 0 1 auto; min-width: 3rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .ai-title .ai-model:hover { border-color: var(--border); color: inherit; }
+/* Phones: the panel fills the screen, so a "‹ 课文" back link replaces the title */
+.ai-back { display: none; font: inherit; font-weight: 600; color: var(--accent); background: none; border: none; padding: .2rem .3rem .2rem 0; cursor: pointer; }
+@media (max-width: 760px) {
+  .ai-back { display: inline-block; }
+  .ai-name { display: none; }
+}
 .ai-head { position: relative; }
 .ai-model-menu { position: absolute; top: calc(100% - .3rem); left: 1rem; z-index: 3; min-width: 15rem; max-width: calc(100% - 2rem); max-height: 60vh; overflow-y: auto; background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); padding: .3rem; }
 .ai-model-menu[hidden] { display: none; }
@@ -61,7 +67,7 @@ html.theme-dark .ai-model-menu { background: #1f1f2e; }
 }
 .ai-quick:hover { border-color: var(--accent); color: var(--accent); }
 
-.ai-msg { max-width: 100%; border-radius: var(--radius-xl); padding: .6rem .9rem; overflow-wrap: anywhere; }
+.ai-msg { max-width: 100%; border-radius: var(--radius-xl); padding: .6rem .9rem; overflow-wrap: anywhere; line-height: 1.9; }  /* room for ruby, so lines don't grow when a reading appears */
 .ai-msg p { margin: 0 0 .4em; }
 .ai-msg p:last-child, .ai-msg ul:last-child, .ai-msg ol:last-child { margin-bottom: 0; }
 .ai-msg ul, .ai-msg ol { margin: 0 0 .5em; padding-left: 1.3em; }
@@ -133,6 +139,20 @@ html.theme-dark .ai-model-menu { background: #1f1f2e; }
 .ai-settings-btns .ai-save { background: var(--accent); color: #fff; border-color: var(--accent); font-weight: 600; }
 .ai-settings-btns .ai-forget { margin-left: auto; color: var(--text-muted); }
 
+/* 讲解 button after each example sentence's 🔊: faint until the sentence is hovered */
+.ai-ex-btn {
+  display: inline-flex; align-items: center; vertical-align: middle; margin-left: .3em; padding: 0 .55em;
+  font: inherit; font-size: .7rem; line-height: 1; height: 1.75em; box-sizing: border-box;
+  background: none; color: inherit; border: 1px solid var(--border); border-radius: var(--radius-pill);
+  cursor: pointer; opacity: .35; transition: opacity .2s, border-color .2s, color .2s;
+  -webkit-user-select: none; user-select: none;
+}
+li:hover .ai-ex-btn { opacity: .8; }
+html .ai-ex-btn.ai-ex-btn:hover { opacity: 1; border-color: var(--accent); color: var(--accent); }
+@media (hover: none) { .ai-ex-btn { opacity: .6; } }
+html.theme-dark .ai-ex-btn { border-color: #3a3a55; }
+@media (prefers-color-scheme: dark) { :root:not(.theme-light) .ai-ex-btn { border-color: #3a3a55; } }
+
 /* Floating chip shown over a text selection inside the lesson */
 #ai-sel-chip {
   position: absolute; z-index: 940;
@@ -195,7 +215,7 @@ html.theme-dark .ai-settings input, html.theme-dark .ai-settings select { backgr
 .ai-msg th, .ai-msg td { border: 1px solid var(--border); padding: .25em .5em; text-align: left; vertical-align: top; }
 .ai-msg th { background: var(--bg); }
 .ai-msg ruby { ruby-align: center; }
-.ai-msg rt { font-size: .55em; color: var(--ruby-color, var(--accent)); }
+.ai-msg rt { font-size: .55em; line-height: 1; color: var(--ruby-color, var(--accent)); }
 .ai-wiz { display: flex; flex-direction: column; gap: .6rem; font-size: .88rem; }
 .ai-wiz-lead { margin: 0; color: var(--text-muted); font-size: .82rem; }
 .ai-wiz-step { margin: .3rem 0 0; font-size: .74rem; font-weight: 700; color: var(--text-muted); }
