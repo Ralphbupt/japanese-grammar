@@ -24,32 +24,66 @@ const SITE_HOST = SITE.replace(/^https?:\/\//, "").replace(/\/$/, ""); // "ralph
 // (changing it breaks verification). Kept in sync with indexnow.mjs (CI ping).
 const INDEXNOW_KEY = "b5c13368abbfcdaf25ed104808caeca9";
 
+// Conservative CSS minifier for the inline stylesheet: drops comments and
+// collapses whitespace around { } ; , — never touches ':' or '>' (descendant
+// selectors like ".a :not(.b)" depend on that space).
+function minifyCss(css) {
+  return css
+    .replace(/\/\*[\s\S]*?\*\//g, "")
+    .replace(/\s+/g, " ")
+    .replace(/\s*([{};,])\s*/g, "$1")
+    .replace(/;}/g, "}")
+    .trim();
+}
+
 // Giscus comments — backed by this repo's GitHub Discussions. Replaces
-// Disqus: no third-party cookies, no ads, lazy-loaded via IntersectionObserver
-// (data-loading="lazy"), and comments are stored in your own repo.
-const GISCUS_SCRIPT = `<script src="https://giscus.app/client.js"
-        data-repo="Ralphbupt/japanese-grammar"
-        data-repo-id="R_kgDOR7OzbA"
-        data-category="Comments"
-        data-category-id="DIC_kwDOR7OzbM4C9me3"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="preferred_color_scheme"
-        data-lang="zh-CN"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
+// Disqus: no third-party cookies, no ads, and comments are stored in your own
+// repo. giscus.app/client.js is only fetched once the comments section comes
+// within ~800px of the viewport, so readers who never scroll that far make no
+// third-party connection at all.
+const GISCUS_ATTRS = {
+  repo: "Ralphbupt/japanese-grammar",
+  "repo-id": "R_kgDOR7OzbA",
+  category: "Comments",
+  "category-id": "DIC_kwDOR7OzbM4C9me3",
+  mapping: "pathname",
+  strict: "0",
+  "reactions-enabled": "1",
+  "emit-metadata": "0",
+  "input-position": "top",
+  theme: "preferred_color_scheme",
+  lang: "zh-CN",
+  loading: "lazy",
+};
+const GISCUS_SCRIPT = `<script>
+(function() {
+  var sec = document.currentScript.parentNode;
+  function load() {
+    var s = document.createElement('script');
+    s.src = 'https://giscus.app/client.js';
+    s.crossOrigin = 'anonymous';
+    s.async = true;
+    var a = ${JSON.stringify(GISCUS_ATTRS)};
+    for (var k in a) s.setAttribute('data-' + k, a[k]);
+    sec.appendChild(s);
+  }
+  if (!('IntersectionObserver' in window)) return load();
+  var io = new IntersectionObserver(function(es) {
+    if (es[0].isIntersecting) { io.disconnect(); load(); }
+  }, { rootMargin: '800px 0px' });
+  io.observe(sec);
+})();
 </script>`;
 
 // AI tutor side panel (问 AI / Ask AI) — reader-supplied API key, browser
 // calls the provider directly. Source lives in site/ai-assistant.{js,css};
-// the CSS is inlined with the rest, the JS is copied to dist/ and loaded
+// the build prepends the CSS to the JS (as an injected <style>), so its ~16 KB
+// ships once in the cached script instead of inline on every page. Loaded
 // with defer on lesson pages only (the panel needs an article.lesson).
+const AI_JS_SRC = fs.readFileSync(path.join(__dirname, "site", "ai-assistant.js"), "utf-8");
 const AI_CSS = fs.readFileSync(path.join(__dirname, "site", "ai-assistant.css"), "utf-8");
-const AI_JS_HASH = require("crypto").createHash("md5").update(fs.readFileSync(path.join(__dirname, "site", "ai-assistant.js"))).digest("hex").slice(0, 8);
+const AI_JS_BUNDLE = `(function(){if(!document.querySelector('article.lesson'))return;var s=document.createElement('style');s.textContent=${JSON.stringify(minifyCss(AI_CSS))};document.head.appendChild(s);})();\n` + AI_JS_SRC;
+const AI_JS_HASH = require("crypto").createHash("md5").update(AI_JS_BUNDLE).digest("hex").slice(0, 8);
 const AI_SCRIPT = `<script src="${SITE_PATH}ai-assistant.js?v=${AI_JS_HASH}" defer></script>`;  // ?v= busts browser caches on every change
 const SETTINGS_JS_HASH = require("crypto").createHash("md5").update(fs.readFileSync(path.join(__dirname, "site", "settings-modal.js"))).digest("hex").slice(0, 8);
 const SETTINGS_SCRIPT = `<script src="${SITE_PATH}settings-modal.js?v=${SETTINGS_JS_HASH}" defer></script>`;
@@ -60,10 +94,10 @@ const SETTINGS_SCRIPT = `<script src="${SITE_PATH}settings-modal.js?v=${SETTINGS
 // Provider hosts are parsed from site/ai-assistant.js so the two stay in sync;
 // localhost/127.0.0.1 on any port covers Ollama, LM Studio and local relays.
 const AI_PROVIDER_HOSTS = [...new Set(
-  [...fs.readFileSync(path.join(__dirname, "site", "ai-assistant.js"), "utf-8").matchAll(/(?:base|altBase): '(https?:\/\/[^'/]+)/g)]
+  [...AI_JS_SRC.matchAll(/(?:base|altBase): '(https?:\/\/[^'/]+)/g)]
     .map(m => m[1]).filter(h => !/localhost|127\.0\.0\.1/.test(h))
 )];
-const CSP_META = `<meta http-equiv="Content-Security-Policy" content="connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com ${AI_PROVIDER_HOSTS.join(" ")} http://localhost:* https://localhost:* http://127.0.0.1:* https://127.0.0.1:*">`;
+const CSP_META = `<meta http-equiv="Content-Security-Policy" content="connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com ${AI_PROVIDER_HOSTS.join(" ")} http://localhost:* https://localhost:* http://127.0.0.1:* https://127.0.0.1:*">`;
 
 // Theme init script — runs synchronously in <head> before CSS evaluates,
 // so the saved theme class is on <html> before paint (no flash of wrong theme).
@@ -167,30 +201,11 @@ function loadIcon(file) {
     .replace(/\s*height="24"/g, "");
 }
 
-// TTS (Text-to-Speech) for Japanese example sentences. Adds a small 🔊
-// button to every data-ja <li> element. Click reads the Japanese text
-// aloud via the browser's built-in speech synthesis (Web Speech API).
-// Chinese translations in parens are stripped before speaking.
+// TTS for Japanese example sentences: adds a 🔊 button to every <li> that has
+// a pre-generated Edge TTS mp3 (data-audio). The mp3 starts downloading when
+// the pointer reaches the button (hover, or the touch itself), so playback
+// starts almost as soon as the click lands.
 const TTS_JS = `document.addEventListener('DOMContentLoaded', function(){
-  function getCleanJapanese(el) {
-    var clone = el.cloneNode(true);
-    clone.querySelectorAll('rt, rp, .speak-btn').forEach(function(r) { r.remove(); });
-    return (clone.textContent || '')
-      .replace(/[（(][^）)]*[）)]/g, '')
-      .replace(/[→❌✓✗⚠️📖↑↓←→●■□▶︎•·…]/g, '')
-      .replace(/\\s+/g, ' ')
-      .trim();
-  }
-
-  function speakBrowserTTS(text) {
-    if (!window.speechSynthesis) return;
-    speechSynthesis.cancel();
-    var u = new SpeechSynthesisUtterance(text);
-    u.lang = 'ja-JP';
-    u.rate = 0.85;
-    speechSynthesis.speak(u);
-  }
-
   // Only one sentence plays at a time. Clicking a second button stops the
   // first; clicking the button that is already playing stops it (toggle),
   // so repeated clicks never stack up overlapping playback.
@@ -211,12 +226,17 @@ const TTS_JS = `document.addEventListener('DOMContentLoaded', function(){
     btn.textContent = '🔊';
     btn.title = '朗読';
     btn.setAttribute('aria-label', 'Read aloud');
+    var ready = null;   // Audio already loading from a hover, consumed by the next click
+    btn.addEventListener('pointerenter', function() {
+      if (!ready) { ready = new Audio('/audio/' + audioId + '.mp3'); ready.preload = 'auto'; }
+    });
     btn.addEventListener('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
       if (currentBtn === btn) { stopCurrent(); return; }
       stopCurrent();
-      var audio = new Audio('/audio/' + audioId + '.mp3');
+      var audio = ready || new Audio('/audio/' + audioId + '.mp3');
+      ready = null;
       current = audio;
       currentBtn = btn;
       btn.classList.add('playing');
@@ -235,13 +255,19 @@ const TTS_JS = `document.addEventListener('DOMContentLoaded', function(){
   });
 });`;
 
-// Engagement-gated Google Analytics loader. GA is NOT loaded on page load;
-// it is loaded only once the visitor produces a human engagement signal —
-// the first real scroll / pointer / key / touch interaction, OR ~3s of
-// continuous foreground visibility. Headless crawlers that fake their UA
-// and load-and-leave (sub-second, never scrolling) never trip any of these,
-// so they stop inflating GA's user / session / page_view counts. This also
-// keeps third-party JS out of the LCP/TTI critical path for Lighthouse.
+// Lightweight GA4 hit sender — replaces gtag.js (~200 KB gzip / 600 KB of JS
+// that every visitor used to download and parse). Hits go straight to GA4's
+// /g/collect endpoint, the same one gtag.js uses, so page_view, referrer,
+// custom events (window.gaEvent) and the GSC link keep working; sessions and
+// engagement time are tracked here (30-min idle session, visible-time _et).
+// The client id is reused from an existing gtag `_ga` cookie, so returning
+// visitors are not counted as new users after the switch.
+//
+// Hits are still engagement-gated: nothing is sent until the first real
+// scroll / pointer / key / touch, or ~3s of continuous foreground visibility.
+// Headless crawlers that fake their UA and load-and-leave never trip it, so
+// they don't inflate user / session / page_view counts. Add ?ga_debug to a
+// URL to see its hits in GA4 DebugView.
 const GTAG_DEFERRED = `<script>
 (function() {
   var ua = navigator.userAgent || '';
@@ -249,57 +275,129 @@ const GTAG_DEFERRED = `<script>
   if (navigator.webdriver) return;
   if (/HeadlessChrome|Lighthouse|PhantomJS|Puppeteer|Playwright|crawler|spider|bot|Slurp|facebookexternalhit/i.test(ua)) return;
 
-  var loaded = false;
-  function loadGA() {
-    if (loaded) return;
-    loaded = true;
-    var s = document.createElement('script');
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-D1KNQTFN1R';
-    document.head.appendChild(s);
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function(){ dataLayer.push(arguments); };
-    gtag('js', new Date());
-    gtag('config', 'G-D1KNQTFN1R');
+  var TID = 'G-D1KNQTFN1R', URL_ = 'https://www.google-analytics.com/g/collect';
+  var debug = /[?&]ga_debug\\b/.test(location.search);
+  function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } }
+  function rnd() { return Math.floor(Math.random() * 2147483647); }
+  var now = function() { return Date.now(); };
+
+  // Client id: existing gtag cookie (GA1.1.<rand>.<ts>) → ours → new.
+  var cid = store('jp_ga_cid'), firstVisit = false;
+  if (!cid) {
+    var m = document.cookie.match(/(?:^|; )_ga=GA\\d\\.\\d\\.(\\d+\\.\\d+)/);
+    cid = m ? m[1] : rnd() + '.' + Math.floor(now() / 1000);
+    firstVisit = !m;
+    store('jp_ga_cid', cid);
+  }
+  // Session: new after 30 min without a hit. s = { id, n (count), t (last hit), pv }.
+  var sess; try { sess = JSON.parse(store('jp_ga_sess')); } catch (e) {}
+  var newSession = !sess || now() - sess.t > 30 * 60 * 1000;
+  if (newSession) sess = { id: Math.floor(now() / 1000), n: ((sess && sess.n) || 0) + 1, t: 0, pv: 0 };
+
+  var seq = 0, pageId = rnd(), started = false, queue = [];
+  var visibleSince = document.hidden || document.prerendering ? 0 : now(), engagedMs = 0;
+  function takeEngaged() {
+    if (visibleSince) { engagedMs += now() - visibleSince; visibleSince = document.hidden ? 0 : now(); }
+    var e = engagedMs; engagedMs = 0; return e;
+  }
+  function send(name, params, extra) {
+    var q = {
+      v: 2, tid: TID, cid: cid, sid: sess.id, sct: sess.n, _p: pageId, _s: ++seq,
+      seg: sess.pv > 1 || engagedMs + (visibleSince ? now() - visibleSince : 0) > 10000 ? 1 : 0,
+      dl: location.href, dt: document.title, ul: (navigator.language || '').toLowerCase(),
+      sr: screen.width + 'x' + screen.height, en: name
+    };
+    if (document.referrer && seq === 1) q.dr = document.referrer;
+    if (debug) q._dbg = 1;
+    for (var k in extra) q[k] = extra[k];
+    for (var p in params) {
+      var v = params[p];
+      if (v === undefined || v === null) continue;
+      q[(typeof v === 'number' ? 'epn.' : 'ep.') + p] = typeof v === 'number' ? v : String(v);
+    }
+    var url = URL_ + '?' + Object.keys(q).map(function(k) { return encodeURIComponent(k) + '=' + encodeURIComponent(q[k]); }).join('&');
+    sess.t = now(); store('jp_ga_sess', JSON.stringify(sess));
+    if (!(navigator.sendBeacon && navigator.sendBeacon(url))) {
+      try { fetch(url, { method: 'POST', keepalive: true, mode: 'no-cors' }).catch(function() {}); } catch (e) {}
+    }
+  }
+
+  function start() {
+    if (started) return;
+    started = true;
+    sess.pv++;
+    var extra = {};
+    if (newSession) extra._ss = 1;
+    if (firstVisit) extra._fv = 1;
+    send('page_view', {}, extra);
+    queue.forEach(function(e) { send(e[0], e[1], { _et: takeEngaged() }); });
+    queue = null;
+    // Report foreground time when the page is hidden or left.
+    function flush() {
+      var et = takeEngaged();
+      if (et > 0) send('user_engagement', {}, { _et: et });
+    }
+    document.addEventListener('visibilitychange', function() {
+      if (document.hidden) flush(); else visibleSince = now();
+    });
+    window.addEventListener('pagehide', flush);
   }
 
   // Engagement gate: arm interaction listeners + a foreground-visibility
-  // timer; whichever fires first loads GA, then everything is torn down.
+  // timer; whichever fires first starts sending, then everything is torn down.
   function arm() {
-    var fired = false;
     var opts = { once: true, passive: true };
     var timer = null;
     function stopTimer() { if (timer) { clearTimeout(timer); timer = null; } }
-    function startTimer() { if (!document.hidden && !timer) timer = setTimeout(trigger, 3000); }
+    function startTimer() { if (!document.hidden && !document.prerendering && !timer) timer = setTimeout(trigger, 3000); }
     function trigger() {
-      if (fired) return;
-      fired = true;
+      if (started) return;
       window.removeEventListener('scroll', trigger, opts);
       window.removeEventListener('pointerdown', trigger, opts);
       window.removeEventListener('keydown', trigger, opts);
       window.removeEventListener('touchstart', trigger, opts);
       stopTimer();
-      loadGA();
+      start();
     }
     window.addEventListener('scroll', trigger, opts);
     window.addEventListener('pointerdown', trigger, opts);
     window.addEventListener('keydown', trigger, opts);
     window.addEventListener('touchstart', trigger, opts);
     document.addEventListener('visibilitychange', function() {
-      if (document.hidden) stopTimer(); else startTimer();
+      if (started) return;
+      if (document.hidden) { stopTimer(); } else { if (!visibleSince) visibleSince = now(); startTimer(); }
     });
+    // A prerendered page (Speculation Rules) is only "viewed" once activated.
+    document.addEventListener('prerenderingchange', function() { visibleSince = now(); startTimer(); });
     startTimer();
   }
   if (document.readyState === 'complete') arm();
   else window.addEventListener('load', arm);
 
-  // Safe event helper — silently no-ops until GA has actually loaded (i.e.
-  // before the visitor has engaged, or for users who block analytics).
-  // Callers don't need to guard their calls.
+  // Event helper — callers don't need to guard their calls. Events fired
+  // before the gate opens are queued and sent right after the page_view.
   window.gaEvent = function(name, params) {
-    if (typeof window.gtag === 'function') window.gtag('event', name, params || {});
+    if (queue) queue.push([name, params || {}]);
+    else send(name, params || {}, { _et: takeEngaged() });
   };
 })();
+</script>`;
+
+// Speculation Rules (Chromium; ignored elsewhere): prefetch an internal page
+// once the reader hovers a link for ~200ms, and prerender it on pointerdown,
+// so the next lesson usually opens instantly. File URLs (audio, Anki decks,
+// feed) are excluded — only directory-style pages are fetched.
+// Service worker (site/sw.js → dist/sw.js): long-lived caching for audio and
+// versioned scripts, plus offline reading of pages already visited.
+const SW_REGISTER = `<script>
+if ('serviceWorker' in navigator) window.addEventListener('load', function() {
+  navigator.serviceWorker.register('/sw.js').catch(function() {});
+});
+</script>`;
+
+const SPECULATION_RULES = `<script type="speculationrules">
+{"prefetch":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/*.*"}}]},"eagerness":"moderate"}],
+ "prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/*.*"}}]},"eagerness":"conservative"}]}
 </script>`;
 
 // Old /dayNN/ → new /lessonNN/ map for redirect stubs. Used to generate
@@ -1637,6 +1735,7 @@ async function main() {
     var b = document.getElementById('search-btn');
     if (!b) return;
     b.addEventListener('click', open);
+    b.addEventListener('pointerenter', ensureIndex);
   }
   if (document.readyState !== 'loading') bindBtn();
   else document.addEventListener('DOMContentLoaded', bindBtn);
@@ -1672,9 +1771,7 @@ async function main() {
 </nav>
 <script>
 // Shared sidebar behaviour (runs on every page): level accordion, active-item
-// highlight + auto-scroll, and the menu toggle. The home page's own SPA script
-// owns the menu toggle there, so we skip that part on home to avoid binding it
-// twice.
+// highlight + auto-scroll, and the menu toggle.
 (function() {
   var sidebar = document.getElementById('sidebar');
   if (!sidebar) return;
@@ -1684,7 +1781,7 @@ async function main() {
   // is remembered across pages. HTML ships collapsed, so this only ever opens.
   try {
     var sbPref = localStorage.getItem('sb');          // '1' = collapsed, '0' = open
-    var isHome = !!document.querySelector('#content.home');
+    var isHome = location.pathname === '${SITE_PATH}';   // <main> isn't parsed yet here
     var startCollapsed = sbPref === null
       ? (isHome || window.innerWidth < 1100)
       : sbPref === '1';
@@ -1901,6 +1998,8 @@ ${SETTINGS_SCRIPT}`;
 ${CSP_META}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
+${SPECULATION_RULES}
+${SW_REGISTER}
 <style>
 ${CSS}
 </style>
@@ -1910,10 +2009,8 @@ ${sidebarMarkupHtml}
 <main id="content" class="home">
   ${homeMainHtml}
 </main>
-<nav id="toc-panel"></nav>
 <script>
 ${APP_PREFS_JS}
-${JS}
 </script>
 </body>
 </html>`;
@@ -1940,8 +2037,9 @@ ${JS}
     "utf-8"
   );
   console.log(`  Wrote search-index.json (${searchPoints.length} grammar points).`);
-  fs.copyFileSync(path.join(__dirname, "site", "ai-assistant.js"), path.join(__dirname, "dist", "ai-assistant.js"));
+  fs.writeFileSync(path.join(__dirname, "dist", "ai-assistant.js"), AI_JS_BUNDLE, "utf-8");
   fs.copyFileSync(path.join(__dirname, "site", "settings-modal.js"), path.join(__dirname, "dist", "settings-modal.js"));
+  fs.copyFileSync(path.join(__dirname, "site", "sw.js"), path.join(__dirname, "dist", "sw.js"));
 
   // ─── Generate individual lesson pages ───
   for (let li = 0; li < lessonPages.length; li++) {
@@ -2094,12 +2192,13 @@ ${JS}
 ${CSP_META}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
+${SPECULATION_RULES}
+${SW_REGISTER}
 <style>
 ${CSS}
-/* Hide chrome that requires JS (menu toggle, TOC, settings overlay) but
+/* Hide chrome that requires JS (menu toggle, settings overlay) but
    keep the sidebar — it works on hover via pure CSS and links are root-
    relative so they navigate from any standalone page. */
-#toc-panel { display: none !important; }
 #content { margin: 0 auto !important; max-width: 1000px; }
 .back-link { display: block; margin-bottom: 1.5rem; color: var(--accent); text-decoration: none; font-size: 0.9rem; }
 .back-link:hover { text-decoration: underline; }
@@ -2312,10 +2411,11 @@ ${APP_PREFS_JS}
 ${CSP_META}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
+${SPECULATION_RULES}
+${SW_REGISTER}
 <style>
 ${CSS}
 /* Keep sidebar (pure-CSS hover navigation); hide other JS-dependent chrome. */
-#toc-panel { display: none !important; }
 #content { margin: 0 auto !important; max-width: 1100px; padding: 2rem 1.5rem 4rem; }
 .breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 1rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
@@ -2458,10 +2558,11 @@ ${APP_PREFS_JS}
 ${CSP_META}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
+${SPECULATION_RULES}
+${SW_REGISTER}
 <style>
 ${CSS}
 /* Keep sidebar (pure-CSS hover); hide other JS-dependent chrome. */
-#toc-panel { display: none !important; }
 #content { margin: 0 auto !important; max-width: 800px; padding: 2rem 2rem 4rem; }
 .breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 1rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
@@ -2833,7 +2934,7 @@ Each \`/lessonNN/\` page contains:
 }
 
 // ─── CSS ───
-const CSS = `
+const CSS = minifyCss(`
 :root {
   --sidebar-w: 230px;
   --bg: #fafaf8;
@@ -3080,34 +3181,6 @@ body.sidebar-collapsed #content {
 /* Manual dark override (toggled via JS, mirrors media query rules) */
 html.theme-dark .comments-heading { color: #999; }
 
-/* Right TOC */
-#toc-panel {
-  position: fixed; top: 0; right: 0; bottom: 0;
-  width: 210px;
-  padding: 1.5rem .8rem 2rem;
-  overflow-y: auto;
-  font-size: .78rem;
-  line-height: 1.6;
-  border-left: 1px solid var(--border);
-  background: var(--bg);
-}
-#toc-panel .toc-title {
-  font-weight: 700; font-size: .8rem; margin-bottom: .5rem;
-  color: #999; text-transform: uppercase; letter-spacing: .05em;
-}
-#toc-panel a {
-  color: #777; text-decoration: none;
-  display: block; padding: .15rem 0 .15rem .6rem;
-  border-left: 2px solid transparent;
-  transition: all var(--transition);
-}
-#toc-panel a:hover { color: var(--accent); }
-#toc-panel a.active {
-  color: var(--accent); border-left-color: var(--accent);
-  font-weight: 600;
-}
-#toc-panel a.toc-h3 { padding-left: 1.2rem; font-size: .73rem; }
-
 /* Bilingual toggle */
 :not(body).lang-en { display: none; }
 body.lang-en .lang-zh { display: none; }
@@ -3301,9 +3374,8 @@ summary {
 }
 .nav-footer a:hover { opacity: 1; color: var(--sidebar-hover-text); }
 
-/* Hide right TOC on narrower screens */
+/* Narrow screens: no right margin on content */
 @media (max-width: 900px) {
-  #toc-panel { display: none; }
   #content { margin-right: 0; }
 }
 
@@ -3320,7 +3392,6 @@ summary {
    center the directory horizontally. Sidebar is position: fixed and
    doesn't occupy flow, so margin: 0 auto centers cleanly across the
    viewport on wide screens. */
-body:has(#content.home) #toc-panel { display: none; }
 #content.home,
 body.sidebar-collapsed #content.home {
   max-width: 1100px;
@@ -3587,311 +3658,9 @@ body.ai-open #tc-ai { border-color: var(--accent); box-shadow: 0 0 0 2px var(--a
 .settings-preview { margin-top: 1.2rem; padding: .9rem 1rem; background: var(--word-bg); border-radius: var(--radius-lg); border: 1px solid var(--border); line-height: 2.2; }
 .settings-preview-title { font-size: .72rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: .05em; margin-bottom: .5rem; }
 @media (max-width: 600px) { #settings-overlay { padding: 5vh .6rem 1rem; } }
-` + AI_CSS;
+`);
 
 // ─── JS ───
-const JS = `
-(function(){
-  var items = document.querySelectorAll('.nav-item');
-  var lessons = document.querySelectorAll('.lesson');
-  var sidebar = document.getElementById('sidebar');
-
-  // ─── localStorage helpers ───
-  var STORE_KEY = 'jp_grammar_prefs';
-  function loadPrefs() {
-    try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch(e) { return {}; }
-  }
-  function savePrefs(patch) {
-    var prefs = loadPrefs();
-    for (var k in patch) prefs[k] = patch[k];
-    localStorage.setItem(STORE_KEY, JSON.stringify(prefs));
-  }
-  var prefs = loadPrefs();
-  var isEn = ('isEn' in prefs) ? prefs.isEn : !/^zh/i.test(navigator.language || '');
-  if (isEn) document.body.classList.add('lang-en');
-  if (prefs.hideRuby) document.body.classList.add('hide-ruby');
-
-  // ─── Scroll position memory ───
-  var SCROLL_KEY = 'jp_grammar_scroll';
-  function loadScrollPositions() {
-    try { return JSON.parse(localStorage.getItem(SCROLL_KEY)) || {}; } catch(e) { return {}; }
-  }
-  function saveScrollPosition(lessonId, pos) {
-    var sp = loadScrollPositions();
-    sp[lessonId] = pos;
-    localStorage.setItem(SCROLL_KEY, JSON.stringify(sp));
-  }
-  var currentLesson = null;
-
-  // Save scroll position periodically
-  var scrollSaveTimer;
-  window.addEventListener('scroll', function() {
-    clearTimeout(scrollSaveTimer);
-    scrollSaveTimer = setTimeout(function() {
-      if (currentLesson) saveScrollPosition(currentLesson, window.scrollY);
-    }, 300);
-  });
-
-  function collapseSidebar() {
-    sidebar.classList.add('collapsed');
-    document.body.classList.add('sidebar-collapsed');
-  }
-  function expandSidebar() {
-    sidebar.classList.remove('collapsed');
-    document.body.classList.remove('sidebar-collapsed');
-  }
-
-  var tocPanel = document.getElementById('toc-panel');
-  var tocData = {};
-
-  function headingText(el) {
-    var s = isEn ? el.querySelector('.lang-en') : el.querySelector('.lang-zh');
-    return s ? s.textContent : el.textContent;
-  }
-
-  lessons.forEach(function(lesson) {
-    var headings = lesson.querySelectorAll('h2, h3');
-    var entries = [];
-    var counter = 0;
-    headings.forEach(function(h) {
-      var id = lesson.id + '-s' + (counter++);
-      h.id = id;
-      entries.push({ id: id, level: h.tagName });
-    });
-    tocData[lesson.id] = entries;
-  });
-
-  function buildToc(lessonId) {
-    var entries = tocData[lessonId] || [];
-    if (entries.length < 2) { tocPanel.innerHTML = ''; return; }
-    var html = '<div class="toc-title">目录</div>';
-    entries.forEach(function(e) {
-      var h = document.getElementById(e.id);
-      var text = h ? headingText(h) : '';
-      var cls = e.level === 'H3' ? ' class="toc-h3"' : '';
-      html += '<a href="#' + e.id + '"' + cls + ' data-toc="' + e.id + '">' + text + '</a>';
-    });
-    tocPanel.innerHTML = html;
-    tocPanel.querySelectorAll('a').forEach(function(a) {
-      a.addEventListener('click', function(ev) {
-        ev.preventDefault();
-        document.getElementById(a.getAttribute('data-toc')).scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  }
-
-  // Scroll spy
-  var scrollTimer;
-  window.addEventListener('scroll', function() {
-    clearTimeout(scrollTimer);
-    scrollTimer = setTimeout(function() {
-      var active = document.querySelector('.lesson.active');
-      if (!active) return;
-      var entries = tocData[active.id] || [];
-      var current = '';
-      for (var i = 0; i < entries.length; i++) {
-        var el = document.getElementById(entries[i].id);
-        if (el && el.getBoundingClientRect().top <= 80) current = entries[i].id;
-      }
-      tocPanel.querySelectorAll('a').forEach(function(a) {
-        a.classList.toggle('active', a.getAttribute('data-toc') === current);
-      });
-    }, 30);
-  });
-
-  function show(id) {
-    // Save scroll position of previous lesson
-    if (currentLesson) saveScrollPosition(currentLesson, window.scrollY);
-
-    lessons.forEach(function(l){ l.classList.remove('active'); });
-    items.forEach(function(i){ i.classList.remove('active'); });
-    var target = document.getElementById(id);
-    if(target) target.classList.add('active');
-    var link = document.querySelector('[data-target="'+id+'"]');
-    if(link) link.classList.add('active');
-    buildToc(id);
-    translateHeadings(isEn);
-
-    currentLesson = id;
-
-    // Restore scroll position
-    var sp = loadScrollPositions();
-    var savedY = sp[id];
-    if (savedY && savedY > 0) {
-      requestAnimationFrame(function() { window.scrollTo(0, savedY); });
-    } else {
-      window.scrollTo(0, 0);
-    }
-
-    collapseSidebar();
-  }
-
-  function isModifiedClick(e) {
-    return e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey;
-  }
-
-  items.forEach(function(item){
-    item.addEventListener('click', function(e){
-      if (isModifiedClick(e)) return;
-      // Home page has no inline lesson articles — let the browser follow
-      // the link to the standalone /dayXX/ page instead of intercepting.
-      if (lessons.length === 0) return;
-      e.preventDefault();
-      var id = this.getAttribute('data-target');
-      show(id);
-      history.replaceState(null,null,'#'+id);
-    });
-  });
-
-  // Cross-link navigation
-  document.addEventListener('click', function(e) {
-    var link = e.target.closest('.cross-link');
-    if (!link) return;
-    if (isModifiedClick(e)) return;
-    var targetId = link.getAttribute('data-target');
-    if (!document.getElementById(targetId)) return;
-    e.preventDefault();
-    var scrollTo = link.getAttribute('data-scroll');
-    show(targetId);
-    history.replaceState(null, null, '#' + targetId);
-    if (window.gaEvent) window.gaEvent('cross_link_click', { from: currentLesson || '', to: targetId, term: (link.querySelector('.cross-link-term') || {}).textContent || '' });
-    if (scrollTo) {
-      setTimeout(function() {
-        var el = document.getElementById(scrollTo);
-        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, 50);
-    }
-  });
-
-  // Menu toggle is bound once by the shared sidebar script (runs on every
-  // page), so we don't bind it again here — doing so would fire twice.
-
-  var headingMap = {
-    '接续': 'Conjugation', '含义': 'Meaning', '例句': 'Examples',
-    '辨析': 'Comparison', '易错点': 'Common Mistakes', '今日练习': 'Practice',
-    '复习计划': 'Review Schedule', '本课单词表': 'Vocabulary',
-    '活用表（敬体）': 'Conjugation Table (Polite)',
-    '活用表（简体/常体）': 'Conjugation Table (Plain)',
-    '总览': 'Overview', '用法': 'Usage', '用法详解': 'Usage Details',
-    '核心语感': 'Core Nuance', '例': 'Example', '注意点': 'Notes',
-    '口语缩略': 'Casual Forms', '对比总结': 'Summary', '答案': 'Answers',
-    '单词': 'Word', '读音': 'Reading', '含义': 'Meaning',
-  };
-  var cellMap = {
-    '肯定': 'Affirmative', '否定': 'Negative',
-    '现在': 'Present', '过去': 'Past',
-    '现在肯定': 'Present +', '现在否定': 'Present −',
-    '过去肯定': 'Past +', '过去否定': 'Past −',
-    '接续': 'Form', '例子': 'Example', '规则': 'Rule',
-    '词类': 'Type', '形式': 'Form', '含义': 'Meaning',
-    '表达': 'Expression', '场景': 'Context', '语感': 'Nuance',
-    '根据': 'Basis', '确定度': 'Certainty', '语气': 'Tone',
-    '书面': 'Written', '口语': 'Spoken',
-  };
-  var originalHeadings = new Map();
-
-  var reChinese = /[\u4e00-\u9fff\u3400-\u4dbf]/;
-
-  function autoTranslateHeading(text) {
-    if (headingMap[text]) return headingMap[text];
-    var m = text.match(/^用法([①②③④⑤⑥⑦⑧])/);
-    if (m) return 'Usage ' + m[1];
-    var stripped = text.replace(/（[^）]*）/g, '').trim();
-    if (!reChinese.test(stripped)) return stripped;
-    return text;
-  }
-
-  document.addEventListener('jpnotes:lang', function(e){ isEn = e.detail.isEn; translateHeadings(isEn); });
-  function translateHeadings(toEn) {
-    var active = document.querySelector('.lesson.active');
-    if (!active) return;
-    active.querySelectorAll('h2, h3, h4, summary').forEach(function(el) {
-      if (el.querySelector('.lang-zh')) return;
-      var orig = el.getAttribute('data-orig') || el.textContent.trim();
-      if (!el.getAttribute('data-orig')) el.setAttribute('data-orig', orig);
-      el.textContent = toEn ? autoTranslateHeading(orig) : orig;
-    });
-    active.querySelectorAll('th').forEach(function(el) {
-      var orig = el.getAttribute('data-orig') || el.textContent.trim();
-      if (!el.getAttribute('data-orig')) el.setAttribute('data-orig', orig);
-      if (toEn && cellMap[orig]) {
-        el.textContent = cellMap[orig];
-      } else if (!toEn) {
-        el.textContent = orig;
-      }
-    });
-    tocPanel.querySelectorAll('a[data-toc]').forEach(function(a) {
-      var h = document.getElementById(a.getAttribute('data-toc'));
-      if (h) a.textContent = headingText(h);
-    });
-  }
-
-  // ─── Checklist persistence ───
-  var CHECK_KEY = 'jp_grammar_checks';
-  function loadChecks() {
-    try { return JSON.parse(localStorage.getItem(CHECK_KEY)) || {}; } catch(e) { return {}; }
-  }
-  function saveChecks(data) { localStorage.setItem(CHECK_KEY, JSON.stringify(data)); }
-
-  function initChecklists() {
-    var checks = loadChecks();
-    var boxes = document.querySelectorAll('input[type="checkbox"][data-lesson]');
-    boxes.forEach(function(cb) {
-      var key = cb.getAttribute('data-lesson') + ':' + cb.getAttribute('data-idx');
-      if (checks[key]) { cb.checked = true; cb.parentElement.classList.add('checked'); }
-      else { cb.checked = false; cb.parentElement.classList.remove('checked'); }
-      cb.addEventListener('change', function() {
-        var c = loadChecks();
-        var k = this.getAttribute('data-lesson') + ':' + this.getAttribute('data-idx');
-        if (this.checked) { c[k] = 1; this.parentElement.classList.add('checked'); }
-        else { delete c[k]; this.parentElement.classList.remove('checked'); }
-        saveChecks(c);
-        updateProgress(this.getAttribute('data-lesson'));
-      });
-    });
-  }
-
-  function updateProgress(lessonId) {
-    var article = document.getElementById(lessonId);
-    if (!article) return;
-    var bar = article.querySelector('.progress-fill');
-    var text = article.querySelector('.progress-text');
-    if (!bar || !text) return;
-    var boxes = article.querySelectorAll('input[type="checkbox"][data-lesson]');
-    var total = boxes.length;
-    var done = 0;
-    boxes.forEach(function(cb) { if (cb.checked) done++; });
-    var pct = total > 0 ? Math.round(done / total * 100) : 0;
-    bar.style.width = pct + '%';
-    text.textContent = done + ' / ' + total + ' (' + pct + '%)';
-  }
-
-  function insertProgressBars() {
-    var checkLessons = {};
-    document.querySelectorAll('input[type="checkbox"][data-lesson]').forEach(function(cb) {
-      checkLessons[cb.getAttribute('data-lesson')] = true;
-    });
-    Object.keys(checkLessons).forEach(function(lid) {
-      var article = document.getElementById(lid);
-      if (!article || article.querySelector('.checklist-progress')) return;
-      var h1 = article.querySelector('h1');
-      if (!h1) return;
-      var div = document.createElement('div');
-      div.className = 'checklist-progress';
-      div.innerHTML = '<div class="progress-bar"><div class="progress-fill"></div></div><span class="progress-text">0 / 0</span>';
-      h1.after(div);
-      updateProgress(lid);
-    });
-  }
-
-  // Init
-  var hash = location.hash.slice(1);
-  var first = items[0] ? items[0].getAttribute('data-target') : null;
-  show(hash || first);
-  initChecklists();
-  insertProgressBars();
-})();
-`;
 
 main().catch((e) => {
   console.error(e);

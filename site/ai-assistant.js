@@ -1052,8 +1052,20 @@
   }
 
   /* ── open / close ── */
+  // Warm up DNS + TLS to the active provider while the reader is still typing,
+  // so the first question doesn't pay for the handshake. Once per origin.
+  var warmed = {};
+  function preconnect() {
+    var a = active(), m = a && /^https?:\/\/[^/]+/.exec(a.base || '');
+    if (!m || warmed[m[0]]) return;
+    warmed[m[0]] = true;
+    var l = document.createElement('link');
+    l.rel = 'preconnect'; l.href = m[0]; l.crossOrigin = 'anonymous';
+    document.head.appendChild(l);
+  }
   function open(prefill) {
     if (!panel) build();
+    preconnect();
     document.body.classList.add('ai-open');
     refreshAuto();
     panel.removeAttribute('aria-hidden');
