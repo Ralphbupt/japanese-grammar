@@ -7,7 +7,8 @@
  * nothing goes through jpnotes.dev. The current lesson's text (or
  * just the grammar point being read, see "context") is sent as the system
  * prompt, so questions can be asked "in place" — including by selecting any
- * text in the lesson and clicking the floating 问 AI chip.
+ * text in the lesson and clicking the floating 💬 问 AI chip, or the 讲解
+ * button after any example sentence.
  *
  * Providers: Anthropic Claude (Messages API), and any OpenAI-compatible
  * /chat/completions endpoint (OpenAI, DeepSeek, Qwen/DashScope, local Ollama,
@@ -37,7 +38,7 @@
   var PROVIDERS = {
     jpnotes: { group: 'site', name: '本站免费 jpnotes', kind: 'openai', needsKey: false,
       base: 'https://ai.jpnotes.dev/v1', model: 'gpt-oss-120b', models: ['gpt-oss-120b'],
-      hintZh: '本站提供的免费模型（OpenAI gpt-oss-120b，运行在 Cloudflare 上），不用 key，每人每天 20 次。问题经本站的中转服务转给模型，不记录内容。', hintEn: 'A free model provided by this site (OpenAI gpt-oss-120b, running on Cloudflare): no key, 20 questions per reader per day. Questions pass through the site\u2019s relay and are not logged.' },
+      hintZh: '本站提供的免费模型（OpenAI gpt-oss-120b，运行在 Cloudflare 上），不用 key，每人每天 50 次。问题经本站的中转服务转给模型，不记录内容。', hintEn: 'A free model provided by this site (OpenAI gpt-oss-120b, running on Cloudflare): no key, 50 questions per reader per day. Questions pass through the site\u2019s relay and are not logged.' },
     anthropic: { keyUrl: 'https://console.anthropic.com/settings/keys', group: 'intl', name: 'Claude (Anthropic)', kind: 'anthropic', needsKey: true,
       base: 'https://api.anthropic.com', model: 'claude-opus-5', models: ['claude-opus-5', 'claude-sonnet-5', 'claude-fable-5-1', 'claude-haiku-4-5', 'claude-opus-4-8', 'claude-sonnet-4-6'],
       hintZh: '在 console.anthropic.com 创建 API key（按用量付费，与 claude.ai 订阅无关）。',
@@ -204,7 +205,7 @@
     if (/HTTP 5\d\d/.test(msg)) return 'http_5xx';
     return 'other';
   }
-  var pendingSource = 'typed';   // 'typed' | 'quick' | 'selection' | 'retry' — set before send()
+  var pendingSource = 'typed';   // 'typed' | 'quick' | 'selection' | 'example' | 'retry' — set before send()
 
   var cfg = loadCfg() || defaultCfg();
   var history = loadHist();      // [{role:'user'|'assistant', content}]
@@ -242,7 +243,7 @@
     return -1;
   }
   function textOf(root) {
-    root.querySelectorAll('rt, rp, .speak-btn, .lesson-meta, .related-grammar, .checklist-progress, script, style, input').forEach(function (n) { n.remove(); });
+    root.querySelectorAll('rt, rp, .speak-btn, .ai-ex-btn, .lesson-meta, .related-grammar, .checklist-progress, script, style, input').forEach(function (n) { n.remove(); });
     root.querySelectorAll(isEn() ? '.lang-zh' : '.lang-en').forEach(function (n) { n.remove(); });
     root.querySelectorAll('tr').forEach(function (tr) {
       var cells = [].map.call(tr.querySelectorAll('td, th'), function (c) { return c.textContent.trim(); });
@@ -328,12 +329,12 @@
     var ctx = contextText(sc), scoped = sc >= 0 && sections()[sc];
     if (!isEn()) {
       return '你是一位日语语法老师，正在辅导一位备考 JLPT 的中文母语学习者。学习者此刻正在阅读' +
-        (scoped ? '下面这一课中「' + sectionTitle(sc) + '」这一节' : '下面这一课的笔记') + '（网址 ' + location.href + '）。' +
+        (scoped ? '下面这一课中「' + sectionTitle(sc) + '」这一节' : '下面这一课的笔记') + '（网址 ' + location.origin + location.pathname + '）。' +
         '请优先基于笔记内容回答；补充笔记之外的知识时请说明。回答用中文。日语例句里的汉字请紧跟全角括号标注假名读音，格式如「雨（あめ）に降（ふ）られた」，并附中文翻译。回答简洁、多用例句、少说套话。' + effortPrompt(cfg) +
         '\n\n<lesson>\n' + ctx + '\n</lesson>';
     }
     return 'You are a Japanese grammar tutor helping a JLPT learner. The learner is currently reading ' +
-      (scoped ? 'the section "' + sectionTitle(sc) + '" of the lesson notes below' : 'the lesson notes below') + ' (' + location.href + '). ' +
+      (scoped ? 'the section "' + sectionTitle(sc) + '" of the lesson notes below' : 'the lesson notes below') + ' (' + location.origin + location.pathname + '). ' +
       'Answer primarily from the notes and say so when you add outside knowledge. Reply in English. In Japanese examples, put the kana reading right after each kanji word in full-width parentheses, e.g. 雨（あめ）に降（ふ）られた, and add an English translation. Be concise, example-heavy, no filler.' + effortPrompt(cfg) +
       '\n\n<lesson>\n' + ctx + '\n</lesson>';
   }
@@ -446,6 +447,17 @@
       return '<ruby>' + kanji + '<rp>(</rp><rt>' + yomi + '</rt><rp>)</rp></ruby>' + oku;
     });
   }
+  // While a reply streams in, hold back the parts of the last line that
+  // would change shape once complete — a half table row, an unclosed
+  // （reading） that becomes ruby, unfinished **bold** — so text does not
+  // jump around.
+  function settled(s) {
+    var i = s.lastIndexOf('\n'), head = s.slice(0, i + 1), tail = s.slice(i + 1);
+    if (/^\s*\|/.test(tail)) return head;
+    tail = tail.replace(/[（(][ぁ-ゖァ-ヺー]*$/, '');
+    if ((tail.match(/\*\*/g) || []).length % 2) tail = tail.slice(0, tail.lastIndexOf('**'));   // "**1. 拆" would briefly render as a list
+    return head + tail;
+  }
   function md(src) {
     var s = esc(src);
     s = s.replace(/```[\w-]*\n?([\s\S]*?)```/g, function (m, c) { return PRE + btoa(unescape(encodeURIComponent(c))) + PRE_END; });
@@ -518,7 +530,8 @@
     panel.innerHTML =
       '<div class="ai-resize" title="' + esc(t('拖动调整宽度，双击恢复默认', 'Drag to resize, double-click to reset')) + '"></div>' +
       '<div class="ai-head">' +
-        '<span class="ai-title">🤖 <span class="lang-zh">问 AI</span><span class="lang-en">Ask AI</span> ' +
+        '<span class="ai-title"><button type="button" class="ai-back"><span class="lang-zh">‹ 课文</span><span class="lang-en">‹ Lesson</span></button>' +
+          '<span class="ai-name">🤖 <span class="lang-zh">问 AI</span><span class="lang-en">Ask AI</span></span> ' +
           '<button type="button" class="ai-model" title="' + esc(t('切换模型', 'Switch model')) + '"></button></span>' +
         '<div class="ai-model-menu" hidden></div>' +
         '<span class="ai-head-btns">' +
@@ -545,7 +558,8 @@
     modelLabel = panel.querySelector('.ai-model');
     scopeSel = panel.querySelector('.ai-scope');
 
-    panel.querySelector('.ai-close').addEventListener('click', close);
+    panel.querySelector('.ai-close').addEventListener('click', function () { close(); });
+    panel.querySelector('.ai-back').addEventListener('click', function () { close(); });
     initResize(panel.querySelector('.ai-resize'));
     var menu = panel.querySelector('.ai-model-menu');
     modelLabel.addEventListener('click', function (e) {
@@ -678,9 +692,9 @@
       var quick = isEn()
         ? ['Explain the hardest grammar point in this lesson simply', 'Give me 5 fresh example sentences using this lesson’s grammar', 'Quiz me with 5 multiple-choice questions', 'How do the grammar points in this lesson differ from each other?']
         : ['用最简单的话解释这一课最难的语法点', '用这一课的语法再造 5 个新例句', '出 5 道选择题考考我', '这一课的几个语法点之间有什么区别？'];
-      msgsEl.innerHTML = '<div class="ai-note">' + esc(t('AI 已读过这一课的内容，可以直接提问；也可以在正文里选中一段文字后点「问 AI」。', 'The AI has read this lesson. Ask away, or select any text in the lesson and click "Ask AI".')) + '</div>' +
+      msgsEl.innerHTML = '<div class="ai-note">' + esc(t('AI 已读过这一课的内容，可以直接提问；点例句后面的「讲解」可以讲解那一句的语法；选中正文里的文字再点「💬 问 AI」，可以就那段内容提问。', 'The AI has read this lesson. Ask away. Click "Explain" after any example sentence for a quick grammar breakdown, or select text in the lesson and click "💬 Ask AI" to ask about it.')) + '</div>' +
         '<div class="ai-quicks">' + quick.map(function (q) { return '<button type="button" class="ai-quick" data-q="' + esc(q) + '">' + esc(q) + '</button>'; }).join('') + '</div>' +
-        (cfg.active === 'jpnotes' ? '<p class="ai-note ai-free-note">' + esc(t('现在用的是本站提供的免费模型（每人每天 20 次）。想用更强的模型？', 'You are on the free model this site provides (20 questions a day). Want a stronger model? ')) +
+        (cfg.active === 'jpnotes' ? '<p class="ai-note ai-free-note">' + esc(t('现在用的是本站提供的免费模型（每人每天 50 次）。想用更强的模型？', 'You are on the free model this site provides (50 questions a day). Want a stronger model? ')) +
           '<button type="button" class="ai-own-key">' + esc(t('用自己的 API key', 'Use your own API key')) + '</button></p>' : '');
       var own = msgsEl.querySelector('.ai-own-key');
       if (own) own.addEventListener('click', function () { track('ai_wizard', { step: 'start' }); renderWizard(); });
@@ -787,15 +801,22 @@
     scrollBottom();
     busy = true; sendBtn.textContent = t('停止 ■', 'Stop ■'); sendBtn.classList.add('ai-stop');
     abort = new AbortController();
-    function render() {
+    function render(done) {
       var html = '';
-      if (think) html += '<details class="ai-think"' + (reply ? '' : ' open') + '><summary>' + (reply ? t('已思考', 'Thought') : t('思考中…', 'Thinking…')) + ' (' + think.length + ')</summary><p>' + esc(think).replace(/\n+/g, '<br>') + '</p></details>';
-      el.innerHTML = html + md(reply);
+      // Collapsed from the start: opening it while thinking and closing it when the answer starts made the reply jump.
+      if (think) html += '<details class="ai-think"><summary>' + (reply ? t('已思考', 'Thought') : t('思考中…', 'Thinking…')) + ' (' + think.length + ')</summary><p>' + esc(think).replace(/\n+/g, '<br>') + '</p></details>';
+      el.innerHTML = html + md(done ? reply : settled(reply));
     }
     function onDelta(chunk, isThinking) {
       gotBytes = true;
       if (isThinking) think += chunk; else reply += chunk;
-      if (!raf) raf = requestAnimationFrame(function () { raf = 0; render(); scrollBottom(); });
+      if (!raf) raf = requestAnimationFrame(function () {
+        raf = 0;
+        // Follow the stream only while the reader is at the bottom, so
+        // scrolling up to reread is not yanked back on every frame.
+        var atBottom = msgsEl.scrollHeight - msgsEl.scrollTop - msgsEl.clientHeight < 40;
+        render(); if (atBottom) scrollBottom();
+      });
     }
     var msgs = history.slice(-(cfg.active === 'jpnotes' ? FREE_SEND_TURNS : SEND_TURNS) * 2).map(function (m) { return { role: m.role, content: m.content }; });
     var sc = source === 'quick' ? -1 : effectiveScope();
@@ -812,7 +833,7 @@
     }).then(function () {
       clearTimeout(slowTimer);
       cancelAnimationFrame(raf); raf = 0;
-      render();
+      render(true);
       el.classList.remove('ai-streaming');
       if (reply) { history.push({ role: 'assistant', content: reply }); el.setAttribute('data-raw', reply); el.appendChild(actionsFor(true)); }
       else el.remove();
@@ -1071,12 +1092,22 @@
     panel.removeAttribute('aria-hidden');
     if (prefill) { inputEl.value = prefill; autosize(); }
     setTimeout(function () { inputEl.focus(); inputEl.selectionStart = inputEl.selectionEnd = inputEl.value.length; }, 260);
+    // On a phone the panel covers the lesson, and the back button / edge swipe
+    // would leave the page. A history entry makes "back" close the panel.
+    if (FULL_SCREEN.matches && !(window.history.state && window.history.state.aiPanel)) window.history.pushState(assign(assign({}, window.history.state), { aiPanel: true }), '');
     track('ai_open', { configured: ownKeys() });
   }
-  function close() {
+  function close(fromHistory) {
     document.body.classList.remove('ai-open');
     if (panel) panel.setAttribute('aria-hidden', 'true');
+    if (!fromHistory && window.history.state && window.history.state.aiPanel) window.history.back();   // drop the entry open() added
   }
+  var FULL_SCREEN = window.matchMedia('(max-width: 760px)');
+  window.addEventListener('popstate', function () {
+    if (document.body.classList.contains('ai-open') && !(window.history.state && window.history.state.aiPanel)) close(true);
+  });
+  // A reload keeps the entry's state; clear it so the panel's entry is not mistaken for an open panel.
+  if (window.history.state && window.history.state.aiPanel) window.history.replaceState(assign(assign({}, window.history.state), { aiPanel: false }), '');
 
   /* ── sidebar chat button ── */
   function addBtn() {
@@ -1085,17 +1116,18 @@
     b.addEventListener('click', function () { document.body.classList.contains('ai-open') ? close() : open(); });
   }
 
-  /* ── selection chip: select text in the lesson → 「问 AI」 ──
+  /* ── selection chip: select text in the lesson → 💬 问 AI ──
    * The quoted text is taken from the DOM range, not Selection.toString(), so
-   * furigana (rt) and the 🔊 button never leak in. If the selection runs past
-   * the end of an example sentence into its translation, only the Japanese
-   * sentence is quoted. The grammar point containing the selection becomes
-   * the context scope. */
+   * furigana (rt) and the 🔊 / 讲解 buttons never leak in. If the selection
+   * runs past the end of an example sentence into its translation, only the
+   * Japanese sentence is quoted. The grammar point containing the selection
+   * becomes the context scope. The chip only fills the input box: explaining
+   * a whole example sentence is the 讲解 button's job. */
   var chip = null;
   function plain(node) {
     var c = node.cloneNode(true), box = document.createElement('div');
     if (c.querySelectorAll) box.appendChild(c); else box.textContent = c.textContent;
-    box.querySelectorAll('rt, rp, .speak-btn').forEach(function (n) { n.remove(); });
+    box.querySelectorAll('rt, rp, .speak-btn, .ai-ex-btn').forEach(function (n) { n.remove(); });
     return box.textContent.replace(/🔊/g, '').replace(/\s+/g, ' ').trim();
   }
   function japanesePart(s) { var m = s.match(/^(.*?[。！？!?])\s*[（(]/); return m ? m[1] : s; }
@@ -1109,6 +1141,18 @@
       if (/[（(]/.test(text) && text.length > jp.length / 2) text = jp;   // ran into the translation → quote the sentence
     }
     return { text: text.slice(0, 400), sec: sectionOf(ex || node) };
+  }
+  function explainPrompt(s) {
+    return t('「' + s + '」\n简明讲解这句话的语法，不要用表格，整体 300 字以内：\n' +
+        '1. 拆解：按意群切开，只解释关键的活用和助词\n' +
+        '2. 语法点：本句的重点语法，说明接续和意思；本课讲过的请标出\n' +
+        '3. 翻译：自然的中文\n' +
+        '4. 易错点：有的话一句话说明，没有就省略',
+      '"' + s + '"\nBriefly explain the grammar of this sentence, no tables, under 150 words:\n' +
+        '1. Breakdown: split it into chunks and explain only the key conjugations and particles\n' +
+        '2. Grammar points: the main patterns, with how they attach and what they mean; mark the ones taught in this lesson\n' +
+        '3. Translation: a natural one\n' +
+        '4. Pitfalls: one sentence if there is one, otherwise skip');
   }
   function hideChip() { if (chip) chip.hidden = true; }
   function onSelect() {
@@ -1126,12 +1170,12 @@
         if (!panel) build();
         if (sec >= 0 && sec !== scope) { scope = sec; renderScope(); }
         pendingSource = 'selection';
-        track('ai_select', { chars: q.length, scoped: sec >= 0 });
-        open(t('「' + q + '」\n这里怎么理解？', '"' + q + '"\nCan you explain this?'));
+        track('ai_select', { chars: q.length, scoped: sec >= 0, mode: 'ask' });
+        open(t('「' + q + '」\n', '"' + q + '"\n'));
       });
       document.body.appendChild(chip);
     }
-    chip.textContent = '✨ ' + t('问 AI', 'Ask AI');
+    chip.textContent = '💬 ' + t('问 AI', 'Ask AI');
     chip.setAttribute('data-text', info.text);
     chip.setAttribute('data-sec', info.sec);
     // Translation extensions (Google Translate, 划词翻译, DeepL…) drop their
@@ -1158,6 +1202,37 @@
   document.addEventListener('touchend', function () { setTimeout(onSelect, 0); });
   document.addEventListener('selectionchange', function () { var s = window.getSelection(); if (!s || s.isCollapsed) hideChip(); });
 
-  if (document.readyState !== 'loading') addBtn();
-  else document.addEventListener('DOMContentLoaded', addBtn);
+  /* ── 讲解 button on every example sentence ──
+   * Sits right after the sentence's 🔊 (inside the same no-wrap span), so
+   * only model sentences with audio get one. One click sends a fixed
+   * whole-sentence grammar breakdown; identical requests across readers mean
+   * the free relay can answer repeats from its cache. */
+  function explainSentence(li) {
+    var sentence = japanesePart(plain(li)), sec = sectionOf(li);
+    if (!sentence) return;
+    if (!panel) build();
+    if (sec >= 0 && sec !== scope) { scope = sec; renderScope(); }
+    pendingSource = 'example';
+    track('ai_select', { chars: sentence.length, scoped: sec >= 0, mode: 'button' });
+    if (!busy) { open(); send(explainPrompt(sentence)); }
+    else open(explainPrompt(sentence));
+  }
+  function addExplainBtns() {
+    article.querySelectorAll('li[data-audio]').forEach(function (li) {
+      var speak = li.querySelector('.speak-btn');
+      if (!speak || li.querySelector('.ai-ex-btn')) return;
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'ai-ex-btn';
+      b.innerHTML = '<span class="lang-zh">讲解</span><span class="lang-en">Explain</span>';
+      b.title = t('让 AI 讲解这句的语法', 'Ask the AI to explain this sentence\u2019s grammar');
+      b.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); explainSentence(li); });
+      speak.parentNode.insertBefore(b, speak.nextSibling);
+    });
+  }
+
+  // The 🔊 buttons are added on DOMContentLoaded by the page's TTS script;
+  // wait a tick so they exist before the 讲解 buttons go in next to them.
+  function init() { addBtn(); setTimeout(addExplainBtns, 0); }
+  if (document.readyState !== 'loading') init();
+  else document.addEventListener('DOMContentLoaded', init);
 })();

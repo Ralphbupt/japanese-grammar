@@ -129,9 +129,9 @@ Pure **static site** — no backend, no database, no cookies. Every push to main
 ## 「问 AI」两分钟上手||"Ask AI" in two minutes
 
 :::zh
-课程页右上角的 🤖 按钮会打开一个侧栏，AI 已经读过这一课，可以直接问；在正文里选中一句例句再点「问 AI」，它会针对那一节回答。
+课程页右上角的 🤖 按钮会打开一个侧栏，AI 已经读过这一课，可以直接问；点任意例句后面的「讲解」，它会简明地拆解这句的语法、给出翻译和易错点；在正文里选中一段文字再点「💬 问 AI」，会把这段放进输入框，问什么由你自己写。
 
-**打开就能用**：默认使用本站提供的免费模型（OpenAI 的开源模型 gpt-oss-120b，运行在 Cloudflare 上），不用注册、不用 key，每人每天 20 次。想不限次数或换更强的模型，可以用你自己的 API key，推荐 **Groq**：免费、不用绑卡、回答基本秒出。
+**打开就能用**：默认使用本站提供的免费模型（OpenAI 的开源模型 gpt-oss-120b，运行在 Cloudflare 上），不用注册、不用 key，每人每天 50 次。想不限次数或换更强的模型，可以用你自己的 API key，推荐 **Groq**：免费、不用绑卡、回答基本秒出。
 
 1. 打开 [console.groq.com/keys](https://console.groq.com/keys)，用 Google 或 GitHub 账号登录。
 2. 点 **Create API Key**，起个名字，复制生成的 key（以 `gsk_` 开头）。
@@ -155,9 +155,9 @@ Pure **static site** — no backend, no database, no cookies. Every push to main
 :::
 
 :::en
-The 🤖 button on every lesson page opens a side panel; the AI has already read the lesson, so just ask. Select an example sentence in the text and click "Ask AI" to ask about that grammar point specifically.
+The 🤖 button on every lesson page opens a side panel; the AI has already read the lesson, so just ask. Click "Explain" after any example sentence for a short grammar breakdown with translation and pitfalls, or select any text and click "💬 Ask AI" to put it in the input box and ask your own question.
 
-**It works out of the box**: by default it uses a free model this site provides (OpenAI's open-weight gpt-oss-120b, running on Cloudflare), with no sign-up and no key, 20 questions per reader per day. For no daily limit or a stronger model, use your own API key. **Groq** is the easy choice: free, no card, answers in about a second.
+**It works out of the box**: by default it uses a free model this site provides (OpenAI's open-weight gpt-oss-120b, running on Cloudflare), with no sign-up and no key, 50 questions per reader per day. For no daily limit or a stronger model, use your own API key. **Groq** is the easy choice: free, no card, answers in about a second.
 
 1. Open [console.groq.com/keys](https://console.groq.com/keys) and sign in with Google or GitHub.
 2. Click **Create API Key**, give it a name and copy the key (it starts with `gsk_`).

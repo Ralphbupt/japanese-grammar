@@ -33,7 +33,7 @@ const MODEL_NAME = 'gpt-oss-120b';
 const MAX_BODY = 120000;                              // bytes; a whole lesson as context is ~30k chars
 const MAX_TOKENS = 2048;
 const PER_MINUTE = 6;
-const PER_DAY = 30;
+const PER_DAY = 50;
 const DAILY_NEURONS = 9500;                           // Free plan allows 10,000/day; keep a margin so readers get our message, not an upstream error
 const CACHE_TTL = 3 * 86400;
 
