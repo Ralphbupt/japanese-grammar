@@ -11,6 +11,11 @@ enabled = false
 [ai]
 binding = "AI"
 
+# Usage counter only (button, outcome, neurons) — no IPs, no text.
+[[analytics_engine_datasets]]
+binding = "USAGE"
+dataset = "jpnotes_ai_usage"
+
 [[durable_objects.bindings]]
 name = "QUOTA"
 class_name = "Quota"

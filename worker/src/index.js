@@ -25,7 +25,11 @@
  *     produce identical requests across readers. Cache hits cost nothing and
  *     do not count against anyone's limit.
  *
- * Nothing is logged: no questions, answers or IPs.
+ * Nothing is logged: no questions, answers or IPs. The only record is a
+ * usage counter in Analytics Engine (dataset jpnotes_ai_usage), one row per
+ * request: which button sent it (the panel's `source`), first question or
+ * follow-up, what happened (cache / model / limited / error) and the neurons
+ * spent.
  */
 
 const MODEL = '@cf/openai/gpt-oss-120b';
@@ -66,6 +70,9 @@ export default {
     // Only the fields the panel sends; anything else in the request is dropped.
     const messages = body.messages.map((m) => ({ role: m.role === 'assistant' ? 'assistant' : m.role === 'system' ? 'system' : 'user', content: String(m.content || '') }));
     const stream = !!body.stream;
+    const source = /^(typed|quick|selection|example|retry)$/.test(body.source) ? body.source : 'other';
+    const turn = messages.filter((m) => m.role === 'user').length > 1 ? 'followup' : 'first';
+    const count = (outcome, neurons) => { try { env.USAGE && env.USAGE.writeDataPoint({ indexes: [source], blobs: [source, turn, outcome], doubles: [1, neurons || 0] }); } catch (e) {} };
     const cacheable = stream && messages.length === 2 && messages[0].role === 'system' && messages[1].role === 'user';
     const cacheKey = cacheable ? new Request('https://ai.jpnotes.dev/cache/' + await sha256(MODEL + '\n' + JSON.stringify(messages))) : null;
     const headers = new Headers(cors);
@@ -74,13 +81,13 @@ export default {
 
     if (cacheKey) {
       const hit = await caches.default.match(cacheKey);
-      if (hit) return new Response(replay(await hit.json()), { status: 200, headers });
+      if (hit) { count('cache'); return new Response(replay(await hit.json()), { status: 200, headers }); }
     }
 
     const ip = req.headers.get('CF-Connecting-IP') || '0.0.0.0';
     const quota = env.QUOTA.get(env.QUOTA.idFromName(new Date().toISOString().slice(0, 10)));
     const verdict = await (await quota.fetch('https://quota/take', { method: 'POST', body: await hashIp(ip, env) })).json();
-    if (!verdict.ok) return json({ error: { message: verdict.message } }, 429, cors);
+    if (!verdict.ok) { count('limited'); return json({ error: { message: verdict.message } }, 429, cors); }
 
     const params = { messages, stream, max_tokens: Math.min(+body.max_tokens || MAX_TOKENS, MAX_TOKENS) };
     let result;
@@ -89,15 +96,19 @@ export default {
       catch (e) { if (quotaGone(e)) throw e; result = await env.AI.run(MODEL, params); }   // in case the knob is ever rejected
     } catch (e) {
       const gone = quotaGone(e);
+      count(gone ? 'limited' : 'error');
       return json({ error: { message: gone ? QUOTA_GONE : '免费模型现在出错了，请过一会儿再试。 / The free model failed; please try again shortly.' } }, gone ? 429 : 503, cors);
     }
     const spend = (neurons) => quota.fetch('https://quota/spend', { method: 'POST', body: String(neurons) });
     if (!stream) {
       const out = toCompletion(result);
-      ctx.waitUntil(spend((result && result.usage && result.usage.neurons) || 0));
+      const neurons = (result && result.usage && result.usage.neurons) || 0;
+      count('model', neurons);
+      ctx.waitUntil(spend(neurons));
       return new Response(JSON.stringify(out), { status: 200, headers });
     }
     return new Response(result.pipeThrough(toChunks((done) => {
+      count('model', done.neurons);
       ctx.waitUntil(spend(done.neurons));
       if (cacheKey && done.content && done.finished) {
         ctx.waitUntil(caches.default.put(cacheKey, new Response(JSON.stringify({ content: done.content, reasoning: done.reasoning }), { headers: { 'Cache-Control': 'public, max-age=' + CACHE_TTL } })));

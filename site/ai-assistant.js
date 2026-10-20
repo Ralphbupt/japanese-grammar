@@ -392,11 +392,11 @@
       });
     });
   }
-  function callOpenAI(c, sys, msgs, onDelta, signal) {
+  function callOpenAI(c, sys, msgs, onDelta, signal, extra) {
     var inThink = false;   // older servers inline <think>…</think> in content
     return fetch(c.base.replace(/\/+$/, '') + '/chat/completions', {
       method: 'POST', signal: signal, headers: openaiHeaders(c),
-      body: JSON.stringify(assign({ model: c.model, stream: true, messages: [{ role: 'system', content: sys }].concat(msgs) }, effortParams(c)))
+      body: JSON.stringify(assign(assign({ model: c.model, stream: true, messages: [{ role: 'system', content: sys }].concat(msgs) }, effortParams(c)), extra || {}))
     }).then(function (res) {
       if (!res.ok) return httpError(res);
       return readSSE(res, function (j) {
@@ -823,7 +823,8 @@
     var sys = systemPrompt(sc);
     var call = prov.kind === 'anthropic' ? callAnthropic : callOpenAI;
     track('ai_ask', { source: source, turn: Math.ceil(history.length / 2), lesson_chars: sys.length, scope: scope === -2 ? 'auto' : scope < 0 ? 'lesson' : 'section' });
-    call(c, sys, msgs, onDelta, abort.signal).then(function () {
+    // Only our relay gets the source (it counts which button was used); real providers reject unknown fields.
+    call(c, sys, msgs, onDelta, abort.signal, cfg.active === 'jpnotes' ? { source: source } : null).then(function () {
       track('ai_answer', { source: source, ms: Date.now() - t0, chars: reply.length });
     }, function (e) {
       if (e && e.name === 'AbortError') { track('ai_stop', { ms: Date.now() - t0, chars: reply.length }); return; }
