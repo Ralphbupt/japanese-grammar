@@ -818,7 +818,9 @@
         render(); if (atBottom) scrollBottom();
       });
     }
-    var msgs = history.slice(-(cfg.active === 'jpnotes' ? FREE_SEND_TURNS : SEND_TURNS) * 2).map(function (m) { return { role: m.role, content: m.content }; });
+    // A 讲解 button press stands alone: earlier turns would only muddle it, cost more,
+    // and keep the relay from answering it from cache (same sentence = same request).
+    var msgs = (source === 'example' ? history.slice(-1) : history.slice(-(cfg.active === 'jpnotes' ? FREE_SEND_TURNS : SEND_TURNS) * 2)).map(function (m) { return { role: m.role, content: m.content }; });
     var sc = source === 'quick' ? -1 : effectiveScope();
     var sys = systemPrompt(sc);
     var call = prov.kind === 'anthropic' ? callAnthropic : callOpenAI;
