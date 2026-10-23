@@ -310,6 +310,13 @@ const GTAG_DEFERRED = `<script>
   var TID = 'G-D1KNQTFN1R', URL_ = 'https://www.google-analytics.com/g/collect';
   var debug = /[?&]ga_debug\\b/.test(location.search);
   function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } }
+  // Own visits stay out of the numbers: only the live host counts (localhost
+  // previews don't, unless ?ga_debug), and ?ga_off opts this browser out for
+  // good (?ga_on undoes it).
+  if (location.hostname !== '${new URL(SITE).hostname}' && !debug) return;
+  if (/[?&]ga_off\\b/.test(location.search)) store('jp_ga_off', '1');
+  if (/[?&]ga_on\\b/.test(location.search)) store('jp_ga_off', '0');
+  if (store('jp_ga_off') === '1') { if (/[?&]ga_off\\b/.test(location.search)) console.info('GA: this browser is opted out (?ga_on to undo)'); return; }
   function rnd() { return Math.floor(Math.random() * 2147483647); }
   var now = function() { return Date.now(); };
 
