@@ -21,6 +21,9 @@ The grammar notes are published as a static site at **https://jpnotes.dev/** (cu
 - Dark mode (3-state: auto/light/dark) with `theme-dark`/`theme-light` classes on `<html>`
 - 🔊 TTS audio on example sentences (pre-generated Edge TTS, fallback: none)
 - Cross-links between related grammar points (25 per page, descriptive anchor text)
+- Guides (`grammar/guides/*.md` → `/<slug>/`, hub at `/guides/`, sidebar group 专题): A-vs-B comparison pages (は vs が, から vs ので …) and the JLPT exam guide (`jlpt-*` sorts first). Same markdown format as lessons; prev/next stay inside the group; not read by build-anki.js
+- `/zh/<page>/` Chinese-only copy of every lesson / checklist / guide: English blocks stripped inside `<main>` (`localizeZh()`), Chinese `<title>`/description, internal links rewritten to `/zh/`, `data-force-lang="zh"` (switching to English in settings navigates to the bilingual page). hreflang en / zh-Hans / x-default on both pages and in the sitemap; giscus thread and AI chat history are shared with the bilingual page
+- SEO titles: `seo-titles.js` maps page id → `{ en, zh, desc?, descZh?, level? }`, phrased like real searches (pattern + romaji + vs/meaning; zh: 区别/用法). Pages without an entry fall back to the template. `python3 tools/gsc-report.py` lists high-impression / low-click pages and their queries — the pages worth retitling
 - Per-lesson meta: last-updated date + reading time
 - SEO: unique meta descriptions, Article+LearningResource schema, FAQ schema
 - Giscus comments (GitHub Discussions-backed)
@@ -46,10 +49,13 @@ Key concepts:
 7. **Old URL redirects**: `DAY_TO_LESSON` map generates meta-refresh stubs at `/dayNN/` → `/lessonNN/`
 8. **CNAME**: Auto-generates `dist/CNAME` when `SITE` points to a non-github.io domain
 
-When adding a new lesson file, update **three things** in `build.js`:
-- Add entry in `JA_TITLES` (Japanese sidebar title)
-- Add entry in `LESSON_KEYWORDS` (SEO keywords)
+When adding a new lesson file, update **four things**:
+- Add entry in `JA_TITLES` in `build.js` (Japanese sidebar title)
+- Add entry in `LESSON_KEYWORDS` in `build.js` (SEO keywords)
+- Add `{ en, zh }` titles in `seo-titles.js`
 - The file itself in the appropriate `grammar/N{level}/` directory
+
+A new guide: the file in `grammar/guides/`, a `JA_TITLES` entry, and a `seo-titles.js` entry with `desc` / `descZh` / `level` (they feed the `/guides/` hub card).
 
 ### build-anki.js — Anki flashcard generator
 
@@ -96,6 +102,7 @@ grammar/
   N4/   lesson18-lesson34  (17 lessons incl. keigo 27/28/29, week 3-4)
   N3/   lesson35-lesson58  (24 lessons, week 5-6)
   N2/   lesson59-lesson75  (17 lessons, week 7-8)
+  guides/ comparison pages + JLPT exam guide (not a level)
 pages/
   about.md               (bilingual About page source)
   drafts/                 (work-in-progress lesson drafts)
@@ -108,6 +115,8 @@ build.js                  (main static site generator)
 build-anki.js             (Anki TSV + landing page generator)
 build-anki.py             (Anki .apkg generator, reads .cards.json)
 build-audio.py            (Edge TTS audio generator)
+seo-titles.js             (hand-written <title>s per page, en + zh)
+tools/gsc-report.py       (Search Console report: what to retitle next)
 ```
 
 ## Lesson File Format

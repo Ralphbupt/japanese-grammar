@@ -21,7 +21,7 @@
   if (!article || !window.fetch || !window.ReadableStream) return;
 
   var CFG_KEY = 'jp_ai_cfg';          // v2: { v, active, profiles: { provider: { base, key, model } }, effort, session }
-  var HIST_KEY = 'jp_ai_hist:' + location.pathname;
+  var HIST_KEY = 'jp_ai_hist:' + location.pathname.replace(/^\/zh\//, '/');  // /zh/ copy shares the lesson's history
   var MODELS_KEY = 'jp_ai_models';
   var MAX_CONTEXT_CHARS = 30000;
   var MAX_HISTORY_MSGS = 24;          // kept per lesson (12 turns); older ones are dropped

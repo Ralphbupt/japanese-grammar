@@ -14,7 +14,16 @@ const GRAMMAR_DIRS = [
   { dir: "grammar/N4", label: "N4" },
   { dir: "grammar/N3", label: "N3" },
   { dir: "grammar/N2", label: "N2" },
+  // Standalone topic pages (A vs B comparisons, exam guides). Served at the
+  // site root like lessons (/wa-vs-ga/), with a hub at /guides/. Not a JLPT
+  // level: build-anki.js only reads grammar/N*, so no flashcards come from here.
+  { dir: "grammar/guides", label: "guides" },
 ];
+// Display names for non-level groups (sidebar header, breadcrumb, hub page).
+const GROUP_NAMES = { guides: { zh: "专题", en: "Guides" } };
+const groupName = (label, lang) => (GROUP_NAMES[label] ? GROUP_NAMES[label][lang] : label);
+// Hand-written per-page <title>s (and optional descriptions) — see seo-titles.js.
+const SEO_TITLES = require("./seo-titles");
 const OUT = "dist/index.html";
 const SITE = "https://jpnotes.dev/";
 // Derived from SITE — change SITE in one place to migrate domains.
@@ -64,6 +73,9 @@ const GISCUS_SCRIPT = `<script>
     s.crossOrigin = 'anonymous';
     s.async = true;
     var a = ${JSON.stringify(GISCUS_ATTRS)};
+    // The /zh/ copy of a page joins the thread of the bilingual page
+    // (giscus' pathname term is the path without its leading slash).
+    if (location.pathname.indexOf('/zh/') === 0) { a.mapping = 'specific'; a.term = location.pathname.slice(4); }
     for (var k in a) s.setAttribute('data-' + k, a[k]);
     sec.appendChild(s);
   }
@@ -174,7 +186,8 @@ const APP_PREFS_JS = `(function(){
   function loadPrefs() { try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch(e) { return {}; } }
   var prefs = loadPrefs();
   if (prefs.hideRuby) document.body.classList.add('hide-ruby');
-  var isEn = ('isEn' in prefs) ? prefs.isEn : !/^zh/i.test(navigator.language || '');
+  var forced = document.documentElement.getAttribute('data-force-lang');  // /zh/ pages
+  var isEn = forced ? forced === 'en' : ('isEn' in prefs) ? prefs.isEn : !/^zh/i.test(navigator.language || '');
   if (isEn) document.body.classList.add('lang-en');
 })();`;
 
@@ -454,6 +467,18 @@ const JA_TITLES = {
   N4_grammar_list: "N4 文法チェックリスト",
   N3_grammar_list: "N3 文法チェックリスト",
   N2_grammar_list: "N2 文法チェックリスト",
+  // guides (grammar/guides/)
+  "wa-vs-ga": "は vs が",
+  "jlpt-december-2026": "JLPT 12月 考前指南",
+  "ni-vs-de": "に vs で",
+  "kara-vs-node": "から vs ので",
+  "to-ba-tara-nara": "と・ば・たら・なら",
+  "you-da-rashii-sou-da-mitai": "ようだ・らしい・そうだ・みたいだ",
+  "ageru-kureru-morau": "あげる・くれる・もらう",
+  "teiru-vs-tearu": "ている・てある・ておく",
+  "tame-ni-vs-you-ni": "ために vs ように",
+  "hazu-vs-wake": "はずだ vs わけだ",
+  "aida-ni-vs-uchi-ni": "あいだ vs あいだに vs うちに",
   lesson00: "五十音図（参考）",
   lesson01: "判断句・は/が・基礎助詞",
   lesson02: "核心助詞 — に・で・へ・と・から・まで",
@@ -660,7 +685,9 @@ function discoverFiles() {
     const files = fs
       .readdirSync(abs)
       .filter((f) => f.endsWith(".md"))
-      .sort();
+      // Plain code-unit order (lessons, then N*_grammar_list), except that
+      // exam guides (jlpt-*) lead the guides group.
+      .sort((a, b) => (/^jlpt-/.test(b) - /^jlpt-/.test(a)) || (a < b ? -1 : a > b ? 1 : 0));
     if (files.length === 0) continue;
     groups.push({
       label,
@@ -798,6 +825,59 @@ function buildLessonDesc(hook, cleanPoints, level, minLen = 110, maxLen = 158, t
   else out = join(hook, supp);
   if (out.length < targetMin) out = join(out, buildDescTail(level));
   return cap(out);
+}
+
+// Chinese <title> for a /zh/ page that has no hand-written seo-titles.js entry.
+function buildLessonTitleZh(lesson, cleanPoints, level) {
+  if (cleanPoints.length >= 2) return `${cleanPoints.slice(0, 2).join("・")} 用法与区别 | JLPT ${level} 日语语法`;
+  if (cleanPoints.length === 1) return `${cleanPoints[0]} 用法详解 | JLPT ${level} 日语语法`;
+  const zh = lesson.title.split("||")[0].replace(/^Lesson\s+\d+\s*[–—-]\s*/i, "").trim();
+  return `${zh} | JLPT ${level} 日语语法笔记`;
+}
+
+// Chinese meta description: the lesson's own :::zh lead (or first meaning
+// paragraph), topped up with a templated sentence when it runs short.
+function buildLessonDescZh(lesson, cleanPoints, level) {
+  const src = lesson.topLead || lesson.firstMeaningZh || "";
+  let out = src ? leadToPlainText(src, 110) : "";
+  if (out.length < 60) {
+    const pts = cleanPoints.slice(0, 4).join("、");
+    const supp = pts
+      ? `本课讲解 JLPT ${level} 语法 ${pts} 的接续、含义、例句与易混辨析，附练习题和答案。`
+      : `JLPT ${level} 日语语法笔记：接续规则、例句、辨析与练习题，免费在线学习。`;
+    out = out ? out.replace(/[。.]?$/, "。") + supp : supp;
+  }
+  return out.length > 120 ? out.slice(0, 119) + "…" : out;
+}
+
+// Remove every element whose class list has `lang-<lang>`, matching nested
+// tags of the same name so a <div class="lang-en"> takes its inner <div>s
+// with it. Only call it on content markup, not on <script> bodies.
+function stripLangBlocks(html, lang) {
+  const open = new RegExp(`<(span|div|p)\\b[^>]*\\bclass="(?:[^"]*\\s)?lang-${lang}(?:\\s[^"]*)?"[^>]*>`, "g");
+  let out = "", i = 0, m;
+  while ((m = open.exec(html))) {
+    const tags = new RegExp(`<${m[1]}\\b[^>]*>|</${m[1]}>`, "g");
+    tags.lastIndex = m.index + m[0].length;
+    let depth = 1, t;
+    while (depth && (t = tags.exec(html))) depth += t[0][1] === "/" ? -1 : 1;
+    if (depth) break; // unbalanced markup: leave the rest untouched
+    out += html.slice(i, m.index);
+    i = open.lastIndex = tags.lastIndex;
+  }
+  return out + html.slice(i);
+}
+
+// Turn a rendered bilingual lesson page into its /zh/ copy: drop the English
+// blocks inside <main>, and point links to other pages that have a zh copy at
+// /zh/… so readers (and crawlers) stay on the Chinese side.
+function localizeZh(html, zhIds) {
+  const a = html.indexOf('<main id="content">');
+  const b = html.indexOf("</main>", a);
+  if (a >= 0 && b > a) html = html.slice(0, a) + stripLangBlocks(html.slice(a, b), "en") + html.slice(b);
+  const origin = SITE.replace(/^(https?:\/\/[^/]+).*$/, "$1").replace(/[.]/g, "\\.");
+  const link = new RegExp(`(<a\\b[^>]*?\\bhref=")(?:${origin})?${SITE_PATH}([A-Za-z0-9_-]+)/(?=[#"])`, "g");
+  return html.replace(link, (m, pre, id) => (zhIds.has(id) ? `${pre}${SITE_PATH}zh/${id}/` : m));
 }
 
 // ─── Furigana via kuroshiro ───
@@ -1555,9 +1635,9 @@ async function main() {
     // direct level link the old flat nav-group used to be).
     sidebarHtml.push(
       `<div class="nav-group-wrap" data-level="${group.label}">
-    <button type="button" class="nav-group" aria-expanded="false"><span class="nav-group-label">${group.label}</span><span class="nav-caret" aria-hidden="true">▸</span></button>
+    <button type="button" class="nav-group" aria-expanded="false"><span class="nav-group-label">${GROUP_NAMES[group.label] ? `<span class="lang-zh">${groupName(group.label, "zh")}</span><span class="lang-en">${groupName(group.label, "en")}</span>` : group.label}</span><span class="nav-caret" aria-hidden="true">▸</span></button>
     <div class="nav-group-items">
-      <a class="nav-item nav-overview" href="${SITE_PATH}${group.label}/"><span class="lang-zh">${group.label} 总览</span><span class="lang-en">${group.label} Overview</span></a>
+      <a class="nav-item nav-overview" href="${SITE_PATH}${group.label}/"><span class="lang-zh">${groupName(group.label, "zh")} 总览</span><span class="lang-en">${groupName(group.label, "en")} Overview</span></a>
       ${groupItems.join("\n      ")}
     </div>
   </div>`
@@ -1938,6 +2018,10 @@ ${SETTINGS_SCRIPT}`;
       <span class="lang-en">Browse the per-level index pages (<a href="N5/">N5</a> · <a href="N4/">N4</a> · <a href="N3/">N3</a> · <a href="N2/">N2</a>) for the full grammar list, or jump to any lesson via the sidebar.</span>
     </p>
     <p>
+      <span class="lang-zh">总分不清 <a href="wa-vs-ga/">は和が</a>、<a href="kara-vs-node/">から和ので</a>？<a href="guides/">专题页</a>把最容易混的语法放在一起对比；12 月考试前看 <a href="jlpt-december-2026/">JLPT 考前指南</a>。</span>
+      <span class="lang-en">Mixing up <a href="wa-vs-ga/">は vs が</a> or <a href="kara-vs-node/">から vs ので</a>? The <a href="guides/">guides</a> put confusable patterns side by side; sitting the December exam? See the <a href="jlpt-december-2026/">JLPT exam guide</a>.</span>
+    </p>
+    <p>
       <span class="lang-zh">用 Anki 复习？下载 <a href="anki/">免费 JLPT N5-N2 文法卡组</a>（共 {{ANKI_CARDS}} 张，原生 TSV 一键导入）。</span>
       <span class="lang-en">Use Anki for review? Download the <a href="anki/">free JLPT N5–N2 grammar decks</a> ({{ANKI_CARDS}} cards, native TSV one-click import).</span>
     </p>
@@ -2061,10 +2145,13 @@ ${APP_PREFS_JS}
   fs.copyFileSync(path.join(__dirname, "site", "sw.js"), path.join(__dirname, "dist", "sw.js"));
 
   // ─── Generate individual lesson pages ───
+  const zhPageIds = new Set(lessonPages.map(l => l.id));
   for (let li = 0; li < lessonPages.length; li++) {
     const lesson = lessonPages[li];
-    const prevLesson = li > 0 ? lessonPages[li - 1] : null;
-    const nextLesson = li < lessonPages.length - 1 ? lessonPages[li + 1] : null;
+    // Prev/next stay inside the course or inside the guides, never across.
+    const sameKind = (l) => l && (l.level === "guides") === (lesson.level === "guides");
+    const prevLesson = sameKind(lessonPages[li - 1]) ? lessonPages[li - 1] : null;
+    const nextLesson = sameKind(lessonPages[li + 1]) ? lessonPages[li + 1] : null;
     const lessonDir = path.join(__dirname, "dist", lesson.id);
     fs.mkdirSync(lessonDir, { recursive: true });
     const lessonUrl = `${SITE}${lesson.id}/`;
@@ -2078,8 +2165,13 @@ ${APP_PREFS_JS}
     const enTitle = (lesson.title.includes("||")
       ? lesson.title.split("||").pop()
       : lesson.jaTitle).replace(/^Lesson\s+\d+\s*[–—-]\s*/i, "").trim();
+    const seo = SEO_TITLES[lesson.id] || {};
+    // Guides aren't a JLPT level; their seo entry may name the level they target.
+    const schemaLevel = seo.level || (GROUP_NAMES[lessonLevel] ? "N5–N2" : lessonLevel);
     let lessonTitle, lessonDesc;
-    if (cleanPoints.length >= 2) {
+    if (seo.en) {
+      lessonTitle = seo.en;
+    } else if (cleanPoints.length >= 2) {
       const titlePoints = cleanPoints.slice(0, 2).join(", ");
       lessonTitle = `${titlePoints} — JLPT ${lessonLevel} Japanese Grammar | Usage & Examples`;
     } else if (cleanPoints.length === 1) {
@@ -2096,15 +2188,15 @@ ${APP_PREFS_JS}
       : lesson.firstMeaningEn
       ? leadToPlainText(lesson.firstMeaningEn, 158)
       : "";
-    lessonDesc = buildLessonDesc(descHook, cleanPoints, lessonLevel);
+    lessonDesc = seo.desc || buildLessonDesc(descHook, cleanPoints, schemaLevel);
 
     // Auto-generate English-first keywords (override hardcoded LESSON_KEYWORDS).
     // Japanese grammar terms are retained as keywords — learners search them.
     const autoKeywords = [
-      `JLPT ${lessonLevel} grammar`,
-      `${lessonLevel} grammar`,
-      `JLPT ${lessonLevel}`,
-      `learn Japanese ${lessonLevel}`,
+      `JLPT ${schemaLevel} grammar`,
+      `${schemaLevel} grammar`,
+      `JLPT ${schemaLevel}`,
+      `learn Japanese ${schemaLevel}`,
       ...cleanPoints.slice(0, 4).flatMap(p => [`${p} grammar`, `${p} meaning`, `${p} examples`]),
       cleanPoints.length >= 2 ? `${cleanPoints[0]} vs ${cleanPoints[1]}` : null,
       "Japanese grammar",
@@ -2148,27 +2240,27 @@ ${APP_PREFS_JS}
   ]
 }` : "";
 
-    const lessonHtml = `<!DOCTYPE html>
-<html lang="ja">
+    const renderLessonPage = (v) => `<!DOCTYPE html>
+<html lang="${v.htmlLang}"${v.htmlAttrs}>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${lessonTitle}</title>
-<meta name="description" content="${lessonDesc.replace(/"/g, '&quot;')}">
-<meta name="keywords" content="${lessonKeywords.replace(/"/g, '&quot;')}">
-<link rel="canonical" href="${lessonUrl}">${prevLink}${nextLink}
+<title>${v.title}</title>
+<meta name="description" content="${v.desc.replace(/"/g, '&quot;')}">
+<meta name="keywords" content="${v.keywords.replace(/"/g, '&quot;')}">
+<link rel="canonical" href="${v.url}">${v.headLinks}
 <meta property="og:type" content="article">
-<meta property="og:title" content="${lessonTitle}">
-<meta property="og:description" content="${lessonDesc.replace(/"/g, '&quot;')}">
-<meta property="og:url" content="${lessonUrl}">
+<meta property="og:title" content="${v.title}">
+<meta property="og:description" content="${v.desc.replace(/"/g, '&quot;')}">
+<meta property="og:url" content="${v.url}">
 <meta property="og:image" content="${ogImageUrl}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:locale" content="ja_JP">
-<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale" content="${v.ogLocale}">
+<meta property="og:locale:alternate" content="${v.ogLocaleAlt}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="${lessonTitle}">
-<meta name="twitter:description" content="${lessonDesc.replace(/"/g, '&quot;')}">
+<meta name="twitter:title" content="${v.title}">
+<meta name="twitter:description" content="${v.desc.replace(/"/g, '&quot;')}">
 <meta name="twitter:image" content="${ogImageUrl}">
 <script type="application/ld+json">
 [{
@@ -2176,21 +2268,21 @@ ${APP_PREFS_JS}
   "@type": ["Article", "LearningResource"],
   "name": "${lesson.jaTitle.replace(/"/g, '\\"')}",
   "headline": "${lesson.jaTitle.replace(/"/g, '\\"')}",
-  "description": "${lessonDesc.replace(/"/g, '\\"')}",
-  "inLanguage": ["ja", "zh-CN"],
+  "description": "${v.desc.replace(/"/g, '\\"')}",
+  "inLanguage": ${v.inLanguage},
   "isAccessibleForFree": true,
-  "url": "${lessonUrl}",
+  "url": "${v.url}",
   "image": "${ogImageUrl}",
   "datePublished": "${lesson.firstMod}",
   "dateModified": "${lesson.lastMod}",
   "timeRequired": "PT${lesson.readingMin}M",
   "learningResourceType": "Lesson",
-  "educationalLevel": "JLPT ${lessonLevel}",
+  "educationalLevel": "JLPT ${schemaLevel}",
   "educationalAlignment": {
     "@type": "AlignmentObject",
     "alignmentType": "educationalLevel",
     "educationalFramework": "JLPT",
-    "targetName": "${lessonLevel}"
+    "targetName": "${schemaLevel}"
   },
   "teaches": [${cleanPoints.slice(0, 5).map(p => `"${p.replace(/"/g, '\\"')}"`).join(", ") || '""'}],
   "audience": { "@type": "EducationalAudience", "educationalRole": "student" },
@@ -2202,7 +2294,7 @@ ${APP_PREFS_JS}
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "日语语法笔记", "item": "${SITE}" },
-    { "@type": "ListItem", "position": 2, "name": "${lesson.jaTitle.replace(/"/g, '\\"')}", "item": "${lessonUrl}" }
+    { "@type": "ListItem", "position": 2, "name": "${lesson.jaTitle.replace(/"/g, '\\"')}", "item": "${v.url}" }
   ]
 }${faqSchema}]
 </script>
@@ -2225,6 +2317,7 @@ ${CSS}
 .breadcrumb a { color: var(--accent); text-decoration: none; }
 .breadcrumb a:hover { text-decoration: underline; }
 .breadcrumb .sep { margin: 0 0.4em; }
+.breadcrumb .alt-lang { float: right; font-size: 0.8rem; }
 .prev-next { display: flex; justify-content: space-between; align-items: flex-start; margin: 2.5rem 0 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); gap: 1rem; }
 .prev-next-top { margin: 0 0 1.75rem; padding: 0 0 1rem; border-top: none; border-bottom: 1px solid var(--border); }
 .pn-link { font-size: 0.9rem; color: var(--accent); text-decoration: none; max-width: 48%; }
@@ -2237,7 +2330,7 @@ ${CSS}
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
-    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><a href="${SITE}${lesson.level}/">JLPT ${lesson.level}</a><span class="sep">›</span><span class="breadcrumb-current" title="${lesson.jaTitle.replace(/"/g, '&quot;')}">${lesson.jaTitle}</span>
+    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><a href="${SITE}${lesson.level}/">${GROUP_NAMES[lesson.level] ? `<span class="lang-zh">${groupName(lesson.level, "zh")}</span><span class="lang-en">${groupName(lesson.level, "en")}</span>` : `JLPT ${lesson.level}`}</a><span class="sep">›</span><span class="breadcrumb-current" title="${lesson.jaTitle.replace(/"/g, '&quot;')}">${lesson.jaTitle}</span>${v.altLangLink}
   </nav>
   <nav class="prev-next prev-next-top" aria-label="lesson navigation top">
     ${prevHtml}
@@ -2312,7 +2405,35 @@ ${APP_PREFS_JS}
 </body>
 </html>`;
 
+    // Two URLs per page: /lessonNN/ (bilingual, English-first <title> for
+    // Google) and /zh/lessonNN/ (Chinese only, Chinese <title> for Bing China),
+    // tied together with hreflang. The zh copy drops the English blocks so the
+    // two are genuinely different documents rather than near-duplicates.
+    const zhUrl = `${SITE}zh/${lesson.id}/`;
+    const hreflangLinks = `\n<link rel="alternate" hreflang="en" href="${lessonUrl}">\n<link rel="alternate" hreflang="zh-Hans" href="${zhUrl}">\n<link rel="alternate" hreflang="x-default" href="${lessonUrl}">`;
+    const zhTitle = seo.zh || buildLessonTitleZh(lesson, cleanPoints, schemaLevel);
+    const zhDesc = seo.descZh || buildLessonDescZh(lesson, cleanPoints, schemaLevel);
+    const lessonHtml = renderLessonPage({
+      htmlLang: "ja", htmlAttrs: "", title: lessonTitle, desc: lessonDesc,
+      keywords: lessonKeywords, url: lessonUrl, headLinks: prevLink + nextLink + hreflangLinks,
+      ogLocale: "ja_JP", ogLocaleAlt: "zh_CN", inLanguage: '["ja", "zh-CN", "en"]',
+      altLangLink: `<a class="alt-lang" href="${zhUrl}" hreflang="zh-Hans" lang="zh-CN">纯中文版</a>`,
+    });
     fs.writeFileSync(path.join(lessonDir, "index.html"), lessonHtml, "utf-8");
+
+    const zhRel = (rel, l) => (l ? `\n<link rel="${rel}" href="${SITE}zh/${l.id}/">` : "");
+    const zhKeywords = [...cleanPoints.slice(0, 4).flatMap(p => [`${p} 用法`, `${p} 意思`]),
+      cleanPoints.length >= 2 ? `${cleanPoints[0]}和${cleanPoints[1]}的区别` : null,
+      `JLPT ${schemaLevel} 语法`, `日语 ${schemaLevel} 语法总结`, "日语语法笔记"].filter(Boolean).join(", ");
+    const zhHtml = localizeZh(renderLessonPage({
+      htmlLang: "zh-CN", htmlAttrs: ` data-force-lang="zh" data-alt-en="${SITE_PATH}${lesson.id}/"`, title: zhTitle, desc: zhDesc,
+      keywords: zhKeywords, url: zhUrl, headLinks: zhRel("prev", prevLesson) + zhRel("next", nextLesson) + hreflangLinks,
+      ogLocale: "zh_CN", ogLocaleAlt: "ja_JP", inLanguage: '["zh-CN", "ja"]',
+      altLangLink: `<a class="alt-lang" href="${lessonUrl}" hreflang="en" lang="en">English</a>`,
+    }), zhPageIds);
+    const zhDir = path.join(__dirname, "dist", "zh", lesson.id);
+    fs.mkdirSync(zhDir, { recursive: true });
+    fs.writeFileSync(path.join(zhDir, "index.html"), zhHtml, "utf-8");
   }
 
   // ─── Level overview pages (/N5/, /N4/, /N3/, /N2/) ───
@@ -2334,6 +2455,43 @@ ${APP_PREFS_JS}
     N3: "JLPT N3 语法清单, 日语 N3 语法总结, N3 文法一覧, N3 grammar list, JLPT N3 备考, 日语进阶语法, N3 语法速查",
     N2: "JLPT N2 语法清单, 日语 N2 语法总结, N2 文法一覧, N2 grammar list, JLPT N2 备考, 日语商务语法, N2 语法速查",
   };
+  // Shared by the level overview pages and the /guides/ hub.
+  const OVERVIEW_CSS = `/* Keep sidebar (pure-CSS hover navigation); hide other JS-dependent chrome. */
+#content { margin: 0 auto !important; max-width: 1100px; padding: 2rem 1.5rem 4rem; }
+.breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 1rem; }
+.breadcrumb a { color: var(--accent); text-decoration: none; }
+.breadcrumb .sep { margin: 0 .4em; }
+.overview-intro { font-size: 1rem; line-height: 1.8; color: var(--text); margin: 1rem 0 2rem; padding: 1rem 1.2rem; background: #fafaf2; border-left: 3px solid var(--word-border); border-radius: 0 var(--radius) var(--radius) 0; }
+.overview-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0 2.5rem; }
+.overview-card { display: block; padding: 1rem 1.2rem; background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); text-decoration: none; color: inherit; transition: all var(--transition); }
+.overview-card:hover { border-color: var(--accent); box-shadow: var(--shadow-hover); transform: translateY(-1px); }
+.overview-card-head { display: flex; align-items: baseline; gap: .6rem; margin-bottom: .5rem; }
+.overview-day { font-size: .75rem; font-weight: 700; color: var(--accent); white-space: nowrap; }
+.overview-title { font-size: .95rem; font-weight: 600; color: var(--text-strong); }
+.overview-points { display: flex; flex-wrap: wrap; gap: .3rem; }
+.grammar-pill { font-size: .75rem; background: #f4f4f4; color: var(--text-muted); padding: .15rem .5rem; border-radius: var(--radius-sm); }
+.overview-table { width: 100%; border-collapse: collapse; margin: 1rem 0 2rem; font-size: .9rem; }
+.overview-table th { background: var(--word-bg); font-weight: 600; padding: .5rem .8rem; text-align: left; border: 1px solid var(--border); }
+.overview-table td { padding: .4rem .8rem; border: 1px solid var(--border); }
+.overview-table td:first-child { font-weight: 500; }
+.overview-table a { color: var(--accent); text-decoration: none; }
+.overview-table a:hover { text-decoration: underline; }
+.level-stats { display: flex; gap: 2rem; margin: 1rem 0; padding: 1rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.level-stat strong { display: block; font-size: 1.6rem; color: var(--accent); }
+.level-stat span { font-size: .8rem; color: var(--text-muted); }
+@media (prefers-color-scheme: dark) {
+  :root:not(.theme-light) .overview-intro { background: #1f1f2e; color: #c8c8d4; }
+  :root:not(.theme-light) .overview-card { background: #1f1f2e; }
+  :root:not(.theme-light) .overview-title { color: #f0f0f5; }
+  :root:not(.theme-light) .grammar-pill { background: #25253a; color: #c8c8d4; }
+}
+
+/* Manual dark override (toggled via JS, mirrors media query rules) */
+html.theme-dark .overview-intro { background: #1f1f2e; color: #c8c8d4; }
+html.theme-dark .overview-card { background: #1f1f2e; }
+html.theme-dark .overview-title { color: #f0f0f5; }
+html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
+`;
   const lessonsByLevel = { N5: [], N4: [], N3: [], N2: [] };
   for (const lesson of lessonPages) {
     if (lessonsByLevel[lesson.level]) lessonsByLevel[lesson.level].push(lesson);
@@ -2434,41 +2592,7 @@ ${SPECULATION_RULES}
 ${SW_REGISTER}
 <style>
 ${CSS}
-/* Keep sidebar (pure-CSS hover navigation); hide other JS-dependent chrome. */
-#content { margin: 0 auto !important; max-width: 1100px; padding: 2rem 1.5rem 4rem; }
-.breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 1rem; }
-.breadcrumb a { color: var(--accent); text-decoration: none; }
-.breadcrumb .sep { margin: 0 .4em; }
-.overview-intro { font-size: 1rem; line-height: 1.8; color: var(--text); margin: 1rem 0 2rem; padding: 1rem 1.2rem; background: #fafaf2; border-left: 3px solid var(--word-border); border-radius: 0 var(--radius) var(--radius) 0; }
-.overview-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0 2.5rem; }
-.overview-card { display: block; padding: 1rem 1.2rem; background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); text-decoration: none; color: inherit; transition: all var(--transition); }
-.overview-card:hover { border-color: var(--accent); box-shadow: var(--shadow-hover); transform: translateY(-1px); }
-.overview-card-head { display: flex; align-items: baseline; gap: .6rem; margin-bottom: .5rem; }
-.overview-day { font-size: .75rem; font-weight: 700; color: var(--accent); white-space: nowrap; }
-.overview-title { font-size: .95rem; font-weight: 600; color: var(--text-strong); }
-.overview-points { display: flex; flex-wrap: wrap; gap: .3rem; }
-.grammar-pill { font-size: .75rem; background: #f4f4f4; color: var(--text-muted); padding: .15rem .5rem; border-radius: var(--radius-sm); }
-.overview-table { width: 100%; border-collapse: collapse; margin: 1rem 0 2rem; font-size: .9rem; }
-.overview-table th { background: var(--word-bg); font-weight: 600; padding: .5rem .8rem; text-align: left; border: 1px solid var(--border); }
-.overview-table td { padding: .4rem .8rem; border: 1px solid var(--border); }
-.overview-table td:first-child { font-weight: 500; }
-.overview-table a { color: var(--accent); text-decoration: none; }
-.overview-table a:hover { text-decoration: underline; }
-.level-stats { display: flex; gap: 2rem; margin: 1rem 0; padding: 1rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-.level-stat strong { display: block; font-size: 1.6rem; color: var(--accent); }
-.level-stat span { font-size: .8rem; color: var(--text-muted); }
-@media (prefers-color-scheme: dark) {
-  :root:not(.theme-light) .overview-intro { background: #1f1f2e; color: #c8c8d4; }
-  :root:not(.theme-light) .overview-card { background: #1f1f2e; }
-  :root:not(.theme-light) .overview-title { color: #f0f0f5; }
-  :root:not(.theme-light) .grammar-pill { background: #25253a; color: #c8c8d4; }
-}
-
-/* Manual dark override (toggled via JS, mirrors media query rules) */
-html.theme-dark .overview-intro { background: #1f1f2e; color: #c8c8d4; }
-html.theme-dark .overview-card { background: #1f1f2e; }
-html.theme-dark .overview-title { color: #f0f0f5; }
-html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
+${OVERVIEW_CSS}
 </style>
 </head>
 <body class="sidebar-collapsed">
@@ -2497,6 +2621,98 @@ ${APP_PREFS_JS}
     levelPageIds.push(level);
   }
   console.log(`  Generated ${levelPageIds.length} level overview pages: ${levelPageIds.join(", ")}`);
+
+  // ─── Guides hub (/guides/) ───
+  // Cards for every page in grammar/guides/, exam guides first, then the
+  // A-vs-B comparison pages. Card copy comes from the seo-titles.js entry.
+  const guidePages = lessonPages.filter(l => l.level === "guides");
+  if (guidePages.length > 0) {
+    const guidesUrl = `${SITE}guides/`;
+    const guidesDir = path.join(__dirname, "dist", "guides");
+    fs.mkdirSync(guidesDir, { recursive: true });
+    const esc = (t) => (t || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+    const card = (l) => {
+      const seo = SEO_TITLES[l.id] || {};
+      const tag = seo.level ? `JLPT ${seo.level}` : "JLPT";
+      return `<a class="overview-card" href="${SITE}${l.id}/">
+        <div class="overview-card-head"><span class="overview-day">${tag}</span><span class="overview-title">${l.jaTitle}</span></div>
+        <p class="guide-card-desc"><span class="lang-zh">${esc(seo.descZh)}</span><span class="lang-en">${esc(seo.desc)}</span></p>
+      </a>`;
+    };
+    const examGuides = guidePages.filter(l => /^jlpt-/.test(l.id));
+    const compareGuides = guidePages.filter(l => !/^jlpt-/.test(l.id));
+    const guidesTitle = "Japanese Grammar Comparisons & JLPT Exam Guide | 日语易混语法对比";
+    const guidesDesc = `Side-by-side guides to the Japanese grammar pairs learners mix up most (は vs が, に vs で, から vs ので, ように vs ために …) plus a JLPT December exam-day guide. ${compareGuides.length} comparison pages, free.`;
+    const guidesHtml = `<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${guidesTitle}</title>
+<meta name="description" content="${esc(guidesDesc)}">
+<link rel="canonical" href="${guidesUrl}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="${esc(guidesTitle)}">
+<meta property="og:description" content="${esc(guidesDesc)}">
+<meta property="og:url" content="${guidesUrl}">
+<meta property="og:image" content="${SITE}guides/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+[{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "${guidesTitle.replace(/"/g, '\\"')}",
+  "description": "${guidesDesc.replace(/"/g, '\\"')}",
+  "url": "${guidesUrl}",
+  "inLanguage": ["zh-CN", "en", "ja"],
+  "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N2", "url": "${SITE}" },
+  "hasPart": [${guidePages.map(l => `{"@type": "Article", "name": "${l.jaTitle.replace(/"/g, '\\"')}", "url": "${SITE}${l.id}/"}`).join(",")}]
+},
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "日语语法笔记", "item": "${SITE}" },
+    { "@type": "ListItem", "position": 2, "name": "专题 Guides", "item": "${guidesUrl}" }
+  ]
+}]
+</script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+${CSP_META}
+${THEME_INIT_SCRIPT}
+${GTAG_DEFERRED}
+${SPECULATION_RULES}
+${SW_REGISTER}
+<style>
+${CSS}
+${OVERVIEW_CSS}
+.guide-card-desc { font-size: .85rem; line-height: 1.6; color: var(--text-muted); margin: .3rem 0 0; }
+</style>
+</head>
+<body class="sidebar-collapsed">
+${sidebarMarkupHtml}
+<main id="content">
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><span><span class="lang-zh">专题</span><span class="lang-en">Guides</span></span>
+  </nav>
+  <h1><span class="lang-zh">专题：易混语法对比 &amp; JLPT 考试指南</span><span class="lang-en">Guides: Confusable Grammar Pairs &amp; the JLPT Exam</span></h1>
+  <p class="overview-intro"><span class="lang-zh">课程是按级别一课一课讲的；这里换个角度——把最容易混的几组语法放在同一页里对比，配判断口诀和自测题，再加一份 12 月 JLPT 考前指南。</span><span class="lang-en">The lessons go level by level; these pages cut across them. Each puts one set of easily confused patterns side by side with a rule of thumb and a self-test, plus a guide to the December JLPT.</span></p>
+  ${examGuides.length ? `<h2><span class="lang-zh">考试指南</span><span class="lang-en">Exam guide</span></h2>
+  <div class="overview-grid">${examGuides.map(card).join("\n")}</div>` : ""}
+  <h2><span class="lang-zh">易混语法对比</span><span class="lang-en">Grammar comparisons</span></h2>
+  <div class="overview-grid">${compareGuides.map(card).join("\n")}</div>
+</main>
+<script>
+${APP_PREFS_JS}
+</script>
+</body>
+</html>`;
+    fs.writeFileSync(path.join(guidesDir, "index.html"), guidesHtml, "utf-8");
+    levelPageIds.push("guides");
+    console.log(`  Generated /guides/ hub (${guidePages.length} pages)`);
+  }
 
   // ─── About page (E-E-A-T signal: who built this and why) ───
   const aboutMdPath = path.join(__dirname, "pages/about.md");
@@ -2709,15 +2925,22 @@ ${APP_PREFS_JS}
   }
   for (const lesson of lessonPages) {
     const mod = gitLastModTime(lesson.filePath) || today;
-    sitemapUrls.push(`  <url>
-    <loc>${SITE}${lesson.id}/</loc>
+    // Each page and its /zh/ copy list both language versions (hreflang).
+    const alternates = `
+    <xhtml:link rel="alternate" hreflang="en" href="${SITE}${lesson.id}/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="${SITE}zh/${lesson.id}/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${lesson.id}/"/>`;
+    for (const loc of [`${SITE}${lesson.id}/`, `${SITE}zh/${lesson.id}/`]) {
+      sitemapUrls.push(`  <url>
+    <loc>${loc}</loc>
     <lastmod>${mod}</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.8</priority>${alternates}
   </url>`);
+    }
   }
   fs.writeFileSync(path.join(__dirname, "dist/sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${sitemapUrls.join("\n")}
 </urlset>
 `, "utf-8");
@@ -2800,6 +3023,15 @@ License: CC BY 4.0 — attribution required, no full-site mirroring
 - [N4 grammar list / N4 文法チェックリスト](${SITE}N4_grammar_list/): All ~74 N4 grammar points (excluding N5 overlap).
 - [N3 grammar list / N3 文法チェックリスト](${SITE}N3_grammar_list/): All ~150 N3 grammar points.
 - [N2 grammar list / N2 文法チェックリスト](${SITE}N2_grammar_list/): All ~130 N2 grammar points.
+
+## Guides (comparisons and exam prep)
+
+- [Guides hub / 专题](${SITE}guides/): All comparison pages and the JLPT exam guide.
+${lessonPages.filter(l => l.level === "guides").map(l => `- [${l.jaTitle}](${SITE}${l.id}/): ${(SEO_TITLES[l.id] || {}).desc || ""}`).join("\n")}
+
+## Chinese-only copies
+
+Every lesson, checklist and guide also exists at \`${SITE}zh/<page>/\` with the English text removed and a Chinese title (hreflang zh-Hans). The bilingual page is canonical for English.
 
 ## Feeds and metadata
 
@@ -2886,7 +3118,8 @@ Each \`/lessonNN/\` page contains:
     fs.mkdirSync(lessonDir, { recursive: true });
     // Escape special XML characters in text
     const escJaTitle = (lesson.jaTitle || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-    const level = lesson.level || "N5";
+    const ogSeo = SEO_TITLES[lesson.id] || {};
+    const level = GROUP_NAMES[lesson.level] ? (ogSeo.level || "Guide") : (lesson.level || "N5");
     const lessonOgSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -2923,6 +3156,7 @@ Each \`/lessonNN/\` page contains:
     { slug: "N2", topLabel: "JLPT N2", mainTitle: "N2 文法チェックリスト", sub: `${ogLevelCounts.N2} 课 · 75+ 语法点`, accent: "#e94560" },
     { slug: "about", topLabel: "About · 关于", mainTitle: "日语语法笔记", sub: "N5 → N2 · 8 Weeks · Free", accent: "#e94560" },
     { slug: "anki", topLabel: "Anki Decks", mainTitle: "JLPT 文法 卡组", sub: "N5 · N4 · N3 · N2 · 297 张卡", accent: "#e94560" },
+    { slug: "guides", topLabel: "Guides · 专题", mainTitle: "易混語法 対比", sub: "は vs が · から vs ので · JLPT 12月", accent: "#e94560" },
   ];
   for (const p of indexOgPages) {
     const dir = path.join(__dirname, "dist", p.slug);
