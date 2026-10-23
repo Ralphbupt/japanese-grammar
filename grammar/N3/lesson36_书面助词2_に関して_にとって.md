@@ -141,10 +141,10 @@ Noun (person/standpoint) + にとって (+は/も/の)
 
 ### 接続||Conjugation
 :::zh
-名词 + に基づいて（动词前）/ に基づく / に基づいた + 名词（修饰名词）
+名词 + に基づいて（修饰谓语）/ に基づく / に基づいた + 名词（修饰名词）
 :::
 :::en
-Noun + に基づいて (before a verb) / に基づく / に基づいた + Noun (modifying a noun)
+Noun + に基づいて (modifying the predicate) / に基づく / に基づいた + Noun (modifying a noun)
 :::
 
 ### 含义||Meaning
@@ -245,10 +245,10 @@ Noun (start) + から + Noun (end) + にかけて
 
 ### 接続||Conjugation
 :::zh
-名词（期间/范围）+ にわたって（动词前）/ にわたる / にわたった + 名词（修饰名词）
+名词（期间/范围）+ にわたって（修饰谓语）/ にわたる / にわたった + 名词（修饰名词）
 :::
 :::en
-Noun (period/scope) + にわたって (before a verb) / にわたる / にわたった + Noun (modifying a noun)
+Noun (period/scope) + にわたって (modifying the predicate) / にわたる / にわたった + Noun (modifying a noun)
 :::
 
 ### 含义||Meaning
