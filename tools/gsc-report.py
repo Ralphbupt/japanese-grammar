@@ -33,7 +33,9 @@ import urllib.request
 SA = os.environ.get(
     "JPNOTES_GA_SA",
     "jpnotes-analytics@gen-lang-client-0593149740.iam.gserviceaccount.com")
-SITE = os.environ.get("JPNOTES_GSC_SITE", "https://jpnotes.dev/")
+# The property is domain-level (DNS-verified), so its API id is sc-domain:…
+SITE = os.environ.get("JPNOTES_GSC_SITE", "sc-domain:jpnotes.dev")
+ORIGIN = "https://jpnotes.dev"
 SCOPE = "https://www.googleapis.com/auth/webmasters.readonly"
 
 # Rough organic CTR by position for a small informational site. Only used to
@@ -87,7 +89,7 @@ def totals(rows):
 
 
 def short(page):
-    return page.replace(SITE, "/")
+    return page[len(ORIGIN):] if page.startswith(ORIGIN + "/") else page
 
 
 def main():
@@ -139,10 +141,17 @@ def main():
         for q in sorted(by_page.get(page, []), key=lambda q: -q["impressions"])[:5]:
             print(f"      {q['impressions']:>4.0f} impr  pos {q['position']:>5.1f}  {q['keys'][1]}")
 
-    zh = [r for r in pages if "/zh/" in r["keys"][0]]
-    main_pages = [r for r in pages if "/zh/" not in r["keys"][0]]
-    print("\nBilingual pages vs /zh/ copies")
-    for label, rows in (("bilingual", main_pages), ("/zh/", zh)):
+    # The domain property also covers podcast.jpnotes.dev — keep it apart.
+    def bucket(page):
+        if not page.startswith(ORIGIN + "/"):
+            return "other host"
+        return "/zh/" if page.startswith(ORIGIN + "/zh/") else "bilingual"
+    groups = {}
+    for r in pages:
+        groups.setdefault(bucket(r["keys"][0]), []).append(r)
+    print("\nBilingual pages vs /zh/ copies (other host = podcast.jpnotes.dev etc.)")
+    for label in ("bilingual", "/zh/", "other host"):
+        rows = groups.get(label, [])
         c, i, ctr, pos = totals(rows)
         print(f"  {label:<10} pages {len(rows):>3}  clicks {c:>5.0f}  impr {i:>6.0f}  "
               f"CTR {ctr:.2%}  pos {pos:.1f}")

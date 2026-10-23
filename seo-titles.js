@@ -54,7 +54,7 @@ module.exports = {
     zh: "たら和なら的区别 — と・ば・たら・なら 条件句总结 | JLPT",
   },
   lesson11: {
-    en: "Potential Form & Passive Form (られる) Conjugation | JLPT N5",
+    en: "可能形 Potential & 受身形 Passive Form (られる) Conjugation | JLPT N5",
     zh: "可能形与受身形（被动）变形规则和用法 | JLPT N5 语法",
   },
   lesson12: {
@@ -86,12 +86,12 @@ module.exports = {
     zh: "使役形（させる）变形规则与用法 | JLPT N4 日语语法",
   },
   lesson19: {
-    en: "Passive vs Causative-Passive (rareru / saserareru) | JLPT N4",
+    en: "受身形 Passive vs Causative-Passive (rareru / saserareru) | JLPT N4",
     zh: "受身形与使役受身形（させられる）详解 | JLPT N4 语法",
   },
   lesson20: {
-    en: "あげる vs くれる vs もらう (ageru / kureru / morau) | JLPT N4",
-    zh: "あげる・くれる・もらう 授受动词的区别 | JLPT N4 语法",
+    en: "てあげる・てくれる・てもらう (ageru / kureru / morau) | JLPT N4",
+    zh: "てあげる・てくれる・てもらう 授受动词的区别 | JLPT N4 语法",
   },
   lesson21: {
     en: "ようにする vs ようになる (you ni suru / you ni naru) | JLPT N4",
@@ -154,8 +154,8 @@ module.exports = {
     zh: "JLPT N4 语法清单 — 全部 N4 语法点一览（可打勾）",
   },
   lesson35: {
-    en: "において, に対して, について, によって (ni oite) | JLPT N3",
-    zh: "において・に対して・について・によって 的区别 | JLPT N3",
+    en: "において / における, に対して, について, によって | JLPT N3",
+    zh: "において・における・に対して・について・によって 的区别 | JLPT N3",
   },
   lesson36: {
     en: "に関して, にとって, に基づいて, にわたって | JLPT N3 Grammar",
@@ -166,7 +166,7 @@ module.exports = {
     zh: "おかげで和せいで的区别・ために・からには | JLPT N3 语法",
   },
   lesson38: {
-    en: "にもかかわらず vs のに, ながらも, くせに (kuse ni) | JLPT N3",
+    en: "“Although” in Japanese — にもかかわらず, ながらも, くせに | JLPT N3",
     zh: "にもかかわらず・ながらも・くせに・としても 的区别 | JLPT N3",
   },
   lesson39: {
@@ -226,7 +226,7 @@ module.exports = {
     zh: "ふりをする・こそ・ことに・ごとに 用法 | JLPT N3 语法",
   },
   lesson53: {
-    en: "ないことはない, ずにはいられない, めったに〜ない | JLPT N3",
+    en: "“Never” & “Rarely” in Japanese — 決して〜ない, めったに〜ない | JLPT N3",
     zh: "ないことはない・ずにはいられない・そうもない | JLPT N3",
   },
   lesson54: {
