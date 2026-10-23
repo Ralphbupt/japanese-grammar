@@ -65,8 +65,16 @@
 
   function toggleLang() {
     var isEn = !isEnUi();
-    document.body.classList.toggle('lang-en', isEn);
     savePrefs({ isEn: isEn });
+    // /zh/ pages carry no English text: switching to English means going to
+    // the bilingual page, which picks the saved preference up.
+    var altEn = document.documentElement.getAttribute('data-alt-en');
+    if (isEn && altEn) {
+      if (window.gaEvent) window.gaEvent('language_toggle', { to: 'en' });
+      location.href = altEn;
+      return;
+    }
+    document.body.classList.toggle('lang-en', isEn);
     sync();
     // The home page's SPA script translates the active lesson's headings.
     document.dispatchEvent(new CustomEvent('jpnotes:lang', { detail: { isEn: isEn } }));
