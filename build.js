@@ -2250,7 +2250,7 @@ ${APP_PREFS_JS}
 <meta name="keywords" content="${v.keywords.replace(/"/g, '&quot;')}">
 <link rel="canonical" href="${v.url}">${v.headLinks}
 <meta property="og:type" content="article">
-<meta property="og:title" content="${v.title}">
+<meta property="og:title" content="${v.title.replace(/"/g, '&quot;')}">
 <meta property="og:description" content="${v.desc.replace(/"/g, '&quot;')}">
 <meta property="og:url" content="${v.url}">
 <meta property="og:image" content="${ogImageUrl}">
@@ -2259,7 +2259,7 @@ ${APP_PREFS_JS}
 <meta property="og:locale" content="${v.ogLocale}">
 <meta property="og:locale:alternate" content="${v.ogLocaleAlt}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="${v.title}">
+<meta name="twitter:title" content="${v.title.replace(/"/g, '&quot;')}">
 <meta name="twitter:description" content="${v.desc.replace(/"/g, '&quot;')}">
 <meta name="twitter:image" content="${ogImageUrl}">
 <script type="application/ld+json">
@@ -2553,14 +2553,14 @@ html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
 <meta name="keywords" content="${LEVEL_KEYWORDS[level]}">
 <link rel="canonical" href="${levelUrl}">
 <meta property="og:type" content="website">
-<meta property="og:title" content="${ovTitle}">
+<meta property="og:title" content="${ovTitle.replace(/"/g, '&quot;')}">
 <meta property="og:description" content="${ovDesc.replace(/"/g, '&quot;')}">
 <meta property="og:url" content="${levelUrl}">
 <meta property="og:image" content="${ovOgImage}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="${ovTitle}">
+<meta name="twitter:title" content="${ovTitle.replace(/"/g, '&quot;')}">
 <meta name="twitter:description" content="${ovDesc.replace(/"/g, '&quot;')}">
 <meta name="twitter:image" content="${ovOgImage}">
 <script type="application/ld+json">
