@@ -36,10 +36,10 @@ These grammar points are formal written expressions — essentially upgraded ver
 
 ### 接続||Conjugation
 :::zh
-名词 + において（动词前）/ における（名词前）
+名词 + において + 谓语（修饰后面的句子，相当于「で」）/ 名词 + における + 名词（修饰名词，相当于「での」）
 :::
 :::en
-Noun + において (before a verb) / における (before a noun)
+Noun + において + predicate (modifies the rest of the sentence, like 「で」) / Noun + における + Noun (modifies a noun, like 「での」)
 :::
 
 ### 含义||Meaning
