@@ -152,4 +152,4 @@ Filename convention: `lessonNN_topic.md`
 - Google Search Console: domain-level property verified via DNS TXT
 - Bing Webmaster Tools: configured
 - Sitemap: auto-generated at `/sitemap.xml`
-- GA: `G-D1KNQTFN1R` — no gtag.js; `GTAG_DEFERRED` in build.js is a ~3 KB sender that posts hits to GA4 `/g/collect` (engagement-gated, bot-filtered, reuses old `_ga` cookie client id, `?ga_debug` → DebugView). `window.gaEvent(name, params)` is the event API
+- GA: `G-D1KNQTFN1R` — no gtag.js; `GTAG_DEFERRED` in build.js is a ~3 KB sender that posts hits to GA4 `/g/collect` (engagement-gated, bot-filtered, reuses old `_ga` cookie client id, `?ga_debug` → DebugView; sends only on jpnotes.dev — localhost only with `?ga_debug`; `?ga_off` opts a browser out for good, `?ga_on` undoes it). `window.gaEvent(name, params)` is the event API
