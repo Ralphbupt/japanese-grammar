@@ -4,56 +4,56 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 子供 | こども | 孩子//child |
-| 外 | そと | 外面//outside |
-| 結婚 | けっこん | 结婚//marriage |
-| 窓 | まど | 窗户//window |
-| 開く | ひらく | 打开（自动）//to open |
-| 開ける | あける | 打开（手动）//to open |
-| 言葉 | ことば | 语言/词//word |
-| 父 | ちち | 爸爸（说自己的）//father |
-| 銀行 | ぎんこう | 银行//bank |
-| 働く | はたらく | 工作//to work |
-| 漢字 | かんじ | 汉字//kanji |
-| 教える | おしえる | 教//to teach |
-| 名前 | なまえ | 名字//name |
-| 写真 | しゃしん | 照片//photo |
-| 撮る | とる | 拍//to take |
-| 心配 | しんぱい | 担心//worry |
-| 吸う | すう | 吸（烟）//to smoke |
-| 辞書 | じしょ | 字典//dictionary |
-| 授業 | じゅぎょう | 课//class |
-| 嘘 | うそ | 谎话//lie |
-| つく | つく | （谎）说出//to tell |
-| 手 | て | 手//hand |
-| 宿題 | しゅくだい | 作业//homework |
-| 返事 | へんじ | 回复//reply |
-| 考える | かんがえる | 思考//to think |
-| 弟 | おとうと | 弟弟//younger brother |
-| 会う | あう | 见面//to meet |
-| 歌う | うたう | 唱歌//to sing |
-| 薬 | くすり | 药//medicine |
-| レポート | レポート | 报告//report |
-| 出す | だす | 提交/拿出//to submit |
-| 書類 | しょるい | 文件//document |
-| 覚える | おぼえる | 记住//to memorize |
-| 大事 | だいじ | 重要//important |
-| 試験 | しけん | 考试//exam |
-| 急ぐ | いそぐ | 赶紧//to hurry |
-| 靴 | くつ | 鞋//shoes |
-| 脱ぐ | ぬぐ | 脱//to take off |
-| 傘 | かさ | 伞//umbrella |
-| 持つ | もつ | 拿/持有//to hold |
-| 困る | こまる | 困扰//to be troubled |
-| 電気 | でんき | 电灯/电//electricity |
-| 消す | けす | 关（灯）/消除//to turn off |
-| 座る | すわる | 坐//to sit |
-| 触る | さわる | 触摸//to touch |
-| 走る | はしる | 跑//to run |
-| 遅刻 | ちこく | 迟到//being late |
-| 準備 | じゅんび | 准备//preparation |
-| シャワー | シャワー | 淋浴//shower |
-| 浴びる | あびる | 淋/浴//to take (shower) |
+| 子供 | こども | 孩子；儿童（名）//(n) child; kid — both children in general and one's own children; kodomoppoi = childish |
+| 外 | そと | 外面；户外（名）//(n) outside; outdoors — "play outside" is soto de asobu |
+| 結婚 | けっこん | 结婚（名、可作动词）//(n, suru-verb) marriage; getting married — "marry X" is X to kekkon suru; "be married" is kekkon shite iru |
+| 窓 | まど | 窗户（名）//(n) window — madoguchi = service counter (at a bank or city hall) |
+| 開く | ひらく | 开；打开（自他动词）——门等自己开，也可打开书本等//(v, intrans./trans.) to open — doa ga hiraku = the door opens; hon o hiraku = open a book; compare akeru |
+| 開ける | あける | 打开（他动词）——人去打开门窗等//(v, trans.) to open (something) — mado o akeru = open the window; intransitive pair: aku (it opens) |
+| 言葉 | ことば | 词语；语言（名）//(n) word; language; what someone says — a single word or someone's words |
+| 父 | ちち | （自己的）父亲；爸爸（名）——只用于向外人提自己的父亲//(n) (my) father — humble: only for your own father to outsiders; someone else's is otousan |
+| 銀行 | ぎんこう | 银行（名）//(n) bank |
+| 働く | はたらく | 工作；劳动（自动词）//(v, intrans.) to work; to labor — the workplace takes de: ginkou de hataraku |
+| 漢字 | かんじ | 汉字（名）//(n) kanji; Chinese characters |
+| 教える | おしえる | 教；告诉（他动词）//(v, trans.) to teach; to tell; to show (the way) — also "tell me": denwa bangou o oshiete |
+| 名前 | なまえ | 名字（名）//(n) name — "your name" politely is o-namae |
+| 写真 | しゃしん | 照片（名）//(n) photo; photograph — "take a photo" is shashin o toru |
+| 撮る | とる | 拍（照片）（他动词）//(v, trans.) to take (a photo); to film — same sound as toru (take), written with another kanji |
+| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）//(n, suru-verb, na-adj) worry; concern; anxiety — X o shinpai suru = worry about X; shinpai shinaide = don't worry |
+| 吸う | すう | 吸（烟）；吸气（他动词）//(v, trans.) to smoke; to breathe in; to suck — "smoke a cigarette" is tabako o suu |
+| 辞書 | じしょ | 词典；字典（名）//(n) dictionary — "look up in a dictionary" is jisho o hiku |
+| 授業 | じゅぎょう | 课；上课（名）——不是“传授职业”//(n) class; lesson — a session taught at school, not the subject itself; jugyouryou = tuition |
+| 嘘 | うそ | 谎话；谎言（名）//(n) lie; falsehood — uso o tsuku = tell a lie; uso! = no way! (surprise, not an accusation) |
+| つく | つく | 说（谎）（他动词）//(v, trans.) to tell (a lie) — fixed phrase: uso o tsuku |
+| 手 | て | 手（名）//(n) hand — te o arau = wash your hands; also "a way, a means" (ii te = a good idea) |
+| 宿題 | しゅくだい | 作业（名）//(n) homework; assignment — shukudai o suru = do homework |
+| 返事 | へんじ | 回复；回答（名、可作动词）//(n, suru-verb) reply; answer; response — to letters and messages, or answering hai when your name is called |
+| 考える | かんがえる | 思考；考虑（他动词）//(v, trans.) to think (about); to consider — deliberate thinking; opinions often use omou instead |
+| 弟 | おとうと | 弟弟（名）//(n) younger brother — someone else's is otoutosan |
+| 会う | あう | 见面；遇见（自动词）——见的对象不作宾语//(v, intrans.) to meet; to see (someone) — the person takes ni (or to), not o |
+| 歌う | うたう | 唱（歌）（他动词）//(v, trans.) to sing — song takes o |
+| 薬 | くすり | 药（名）//(n) medicine; drug — you "drink" it: kusuri o nomu, even for pills |
+| レポート | レポート | 报告；（学生的）论文（名）//(n) report; paper (school assignment) — typical university coursework; "hand it in" is dasu |
+| 出す | だす | 提交；拿出；寄出（他动词）//(v, trans.) to submit; to take out; to send — very broad: hand in, put out, mail, show |
+| 書類 | しょるい | 文件；资料（名）//(n) documents; papers; paperwork — official forms, not computer files |
+| 覚える | おぼえる | 记住；学会（他动词）//(v, trans.) to memorize; to remember; to learn — "I remember" is oboete iru |
+| 大事 | だいじ | 重要；珍惜（形容动词）//(na-adj) important; precious; valuable — o-daiji ni = get well soon (said to someone sick) |
+| 試験 | しけん | 考试（名）//(n) exam; test — "take an exam" is shiken o ukeru |
+| 急ぐ | いそぐ | 赶紧；急忙（自动词）//(v, intrans.) to hurry; to rush — te-form isoide; isoide! = hurry up! |
+| 靴 | くつ | 鞋（名）//(n) shoes — taken off at the entrance of Japanese homes: kutsu o nugu |
+| 脱ぐ | ぬぐ | 脱（衣服、鞋）（他动词）//(v, trans.) to take off (clothes, shoes) — opposite depends on the item: kiru, haku |
+| 傘 | かさ | 伞（名）//(n) umbrella — "open an umbrella" is kasa o sasu |
+| 持つ | もつ | 拿；带；持有（他动词）//(v, trans.) to hold; to carry; to have — "have with you" is motte iru |
+| 困る | こまる | 为难；困扰（自动词）//(v, intrans.) to be in trouble; to be at a loss — komatta = I'm stuck; komarimasu = please don't (polite objection) |
+| 電気 | でんき | 电；电灯（名）——口语中常指“灯”//(n) electricity; (electric) light — in daily speech often "the lights": denki o tsukeru / kesu = turn the lights on / off |
+| 消す | けす | 关掉；删除；擦掉（他动词）//(v, trans.) to turn off; to erase; to delete — lights, TV, data or writing on a board; denki o kesu = turn off the light |
+| 座る | すわる | 坐（自动词）//(v, intrans.) to sit; to sit down — the seat takes ni: isu ni suwaru |
+| 触る | さわる | 摸；触碰（自动词）//(v, intrans.) to touch — the object takes ni: "don't touch" is sawaranaide |
+| 走る | はしる | 跑；奔跑（自动词）//(v, intrans.) to run — also of vehicles (trains run); godan despite ending in -iru: hashirimasu, hashitte |
+| 遅刻 | ちこく | 迟到（名、可作动词）//(n, suru-verb) being late — for school, work or an appointment; said of people, while trains okureru (run late) |
+| 準備 | じゅんび | 准备（名、可作动词）//(n, suru-verb) preparation; getting ready — for events, trips or meals; junbi suru = prepare |
+| シャワー | シャワー | 淋浴（名）//(n) shower — "take a shower" is shawaa o abiru |
+| 浴びる | あびる | 淋；浴（他动词）//(v, trans.) to take (a shower); to bathe in — ichidan verb; also figurative: hinan o abiru = come under fire |
 
 ---
 

@@ -4,18 +4,18 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 春 | はる | 春天//spring |
-| 秋 | あき | 秋天//autumn |
-| 冬 | ふゆ | 冬天//winter |
-| 咲く | さく | 开（花）//to bloom |
-| 氷 | こおり | 冰//ice |
-| 酒 | さけ | 酒//alcohol |
-| 押す | おす | 按/推//to push |
-| 駅 | えき | 车站//station |
-| 試合 | しあい | 比赛//match |
-| 中止 | ちゅうし | 中止//cancellation |
-| 電気 | でんき | 电灯//light |
-| 相談する | そうだんする | 商量//to consult |
+| 春 | はる | 春天（名）//(n) spring (season) — also the start of the school and business year (April) |
+| 秋 | あき | 秋天（名）//(n) autumn; fall |
+| 冬 | ふゆ | 冬天（名）//(n) winter |
+| 咲く | さく | （花）开（自动词）//(v, intrans.) to bloom; to blossom — sakura ga saku; mankai = full bloom |
+| 氷 | こおり | 冰（名）//(n) ice |
+| 酒 | さけ | 酒；日本酒（名）//(n) alcohol; sake (Japanese rice wine) — can mean drinks in general or sake specifically |
+| 押す | おす | 按；推（他动词）//(v, trans.) to push; to press (a button) — opposite of hiku (pull) |
+| 駅 | えき | 车站（名）//(n) station (train) — bus stops are basu-tei |
+| 試合 | しあい | 比赛（名）//(n) match; game; bout — a sports match between opponents; a whole tournament is taikai |
+| 中止 | ちゅうし | 中止；取消（名、可作动词）——指取消不办，或中途停止//(n, suru-verb) cancellation; calling off; suspension — an event cancelled beforehand or stopped midway, e.g. ame de chuushi (rained off) |
+| 電気 | でんき | 电；电灯（名）——口语中常指“灯”//(n) electricity; (electric) light — in daily speech often "the lights": denki o tsukeru / kesu = turn the lights on / off |
+| 相談する | そうだんする | 商量；咨询（自他动词）//(v, intrans./trans.) to consult; to talk over; to ask advice — the person consulted takes ni |
 
 ## 1. 〜たら（万能条件・完成后）||1. 〜たら (All-purpose conditional / after completion)
 

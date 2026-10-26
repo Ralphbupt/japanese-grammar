@@ -12,24 +12,24 @@ This lesson continues with concession grammar. These four expressions are more l
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 賛成 | さんせい | 赞成//agreement |
-| 条件 | じょうけん | 条件//condition |
-| 購入 | こうにゅう | 购入//purchase |
-| 景気 | けいき | 景气//economy |
-| 回復 | かいふく | 恢复//recovery |
-| 油断 | ゆだん | 大意//carelessness |
-| 社長 | しゃちょう | 社长//company president |
-| 若い | わかい | 年轻的//young |
-| 決断力 | けつだんりょく | 决断力//decisiveness |
-| 落ち着く | おちつく | 冷静//to calm down |
-| 感謝 | かんしゃ | 感谢//gratitude |
-| 不満 | ふまん | 不满//dissatisfaction |
-| 休暇 | きゅうか | 假期//vacation |
-| 余裕 | よゆう | 余裕//room/margin |
-| 減る | へる | 减少//to decrease |
-| 増える | ふえる | 增加//to increase |
-| 忙しい | いそがしい | 忙的//busy |
-| 手伝う | てつだう | 帮忙//to help |
+| 賛成 | さんせい | 赞成；同意（名、可作动词）//(n, suru-verb) agreement; approval; being in favor — ni sansei suru = agree with (a plan or opinion); opposite of hantai |
+| 条件 | じょうけん | 条件（名）//(n) condition; terms; requirement — job conditions, contract terms, prerequisites |
+| 購入 | こうにゅう | 购买（名、可作动词）——书面语//(n, suru-verb) purchase; buying — formal or written version of kau (to buy) |
+| 景気 | けいき | 经济形势；景气（名）//(n) the economy; business conditions — how business is doing; keiki ga ii = the economy is booming |
+| 回復 | かいふく | 恢复；康复（名、可作动词）//(n, suru-verb) recovery; restoration; getting better — health, economy, weather or trust recovering |
+| 油断 | ゆだん | 大意；疏忽（名、可作动词）//(n, suru-verb) carelessness; letting one's guard down — relaxing too early; yudan taiteki = never let your guard down |
+| 社長 | しゃちょう | （公司）总经理；社长（名）——指公司最高负责人//(n) company president; head of a company — the top executive; also used alone as a title to address them |
+| 若い | わかい | 年轻的（形容词）//(i-adj) young; youthful; inexperienced — of people; a lower number is also wakai (wakai bangou) |
+| 決断力 | けつだんりょく | 果断；决断力（名）//(n) decisiveness; ability to make decisions — a quality of good leaders: ketsudanryoku ga aru |
+| 落ち着く | おちつく | 冷静下来；平静；安定（自动词）//(v, intrans.) to calm down; to settle down; to settle in — of people, situations or places; ochitsuita = calm, composed |
+| 感謝 | かんしゃ | 感谢；感激（名、可作动词）——比口语道谢更郑重//(n, suru-verb) gratitude; thanks; appreciation — more formal than arigatou; kansha shite imasu |
+| 不満 | ふまん | 不满（名、形容动词）//(n, na-adj) dissatisfaction; discontent; complaint — fuman ga aru = be unhappy (about); bunku is the voiced complaint |
+| 休暇 | きゅうか | 休假；假期（名）//(n) vacation; holiday; leave (from work) — formal; paid leave = yuukyuu kyuuka |
+| 余裕 | よゆう | 富余；余地；从容（名）//(n) room to spare (time, money); leeway; composure — yoyuu ga aru = have time or money to spare; yoyuu ga nai = stretched thin |
+| 減る | へる | 减少（自动词）//(v, intrans.) to decrease; to go down — numbers, amounts; transitive pair: herasu; onaka ga heru = get hungry |
+| 増える | ふえる | 增加（自动词）//(v, intrans.) to increase; to grow (in number) — population, weight, numbers; transitive pair: fuyasu |
+| 忙しい | いそがしい | 忙的（形容词）//(i-adj) busy; hectic — of people or schedules; isogashii tokoro = while you're busy (polite) |
+| 手伝う | てつだう | 帮忙；帮助（他动词）//(v, trans.) to help (with a task); to assist — hands-on help with work or chores; tasukeru = rescue or help someone in trouble |
 
 ---
 

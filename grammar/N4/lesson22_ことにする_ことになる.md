@@ -4,14 +4,14 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 引き受ける | ひきうける | 接受/承担//to undertake |
-| お菓子 | おかし | 零食/点心//snacks |
-| 転勤 | てんきん | 调职//job transfer |
-| ルール | ルール | 规则//rule |
-| 制服 | せいふく | 制服//uniform |
-| 届く | とどく | 送到//to arrive |
-| 届ける | とどける | 送去//to deliver |
-| 説明書 | せつめいしょ | 说明书//manual |
+| 引き受ける | ひきうける | 承担；接受（他动词）——接下请求或任务//(v, trans.) to take on; to accept (a job or request); to undertake — agreeing to do work someone asks of you, often reluctantly |
+| お菓子 | おかし | 点心；零食（名）//(n) sweets; snacks; confectionery — cakes, cookies, candy, chips |
+| 転勤 | てんきん | 调动工作；调职（名、可作动词）//(n, suru-verb) job transfer — being moved to another office or city by the same company |
+| ルール | ルール | 规则；规定（名）//(n) rule — the casual everyday word; formal written rules are kisoku |
+| 制服 | せいふく | 制服；校服（名）//(n) uniform (school or work) — standard in Japanese middle and high schools |
+| 届く | とどく | 送到；到达；够得着（自动词）//(v, intrans.) to arrive; to reach — mail, parcels or messages arriving; also "can reach" (a shelf); transitive pair: todokeru |
+| 届ける | とどける | 送到；递交；报告（他动词）//(v, trans.) to deliver; to take (something) to; to report — also hand in a lost item to the police (keisatsu ni todokeru) |
+| 説明書 | せつめいしょ | 说明书（名）//(n) instruction manual; instructions |
 
 ---
 

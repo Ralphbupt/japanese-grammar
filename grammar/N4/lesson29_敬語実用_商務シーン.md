@@ -12,25 +12,25 @@ After learning sonkeigo and kenjogo, the hard part isn't the grammar — it's **
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 担当 | たんとう | 负责//in charge of |
-| 失礼 | しつれい | 失礼//excuse me; impolite |
-| 恐れ入る | おそれいる | 不好意思（恐縮）//I'm sorry to trouble you |
-| 早速 | さっそく | 立刻//immediately |
-| 取り急ぎ | とりいそぎ | 先匆匆（邮件套路，"先简单告知"）//in haste (for now) |
-| 承知 | しょうち | 知道了//acknowledge |
-| かしこまる | かしこまる | 知道了（更恭敬）//understood (more formal) |
-| 検討 | けんとう | 研讨//consider |
-| 改めて | あらためて | 改天再//on another occasion |
-| 後日 | ごじつ | 改日//another day |
-| 御社 | おんしゃ | 贵公司（口语）//your company (spoken) |
-| 弊社 | へいしゃ | 敝公司（自己公司）//our company (humble) |
-| 貴社 | きしゃ | 贵公司（书面）//your company (written) |
-| 御中 | おんちゅう | （收件人单位敬称）//(addressee formal) |
-| 様 | さま | 先生／女士（敬称）//Mr./Ms. (formal) |
-| 件 | けん | 关于...的事//matter; regarding |
-| 用件 | ようけん | 事情//business; purpose |
-| 都合 | つごう | 方便（时间）//convenience |
-| 申し訳ない | もうしわけない | 非常抱歉//deeply sorry |
+| 担当 | たんとう | 负责；担任（名、可作动词）//(n, suru-verb) being in charge (of); the person in charge — tantousha = the person handling it; tantou wa dare? = who's handling this? |
+| 失礼 | しつれい | 失礼；不礼貌；告辞（名、形容动词）//(n, na-adj) rudeness; impolite; excuse me — also said when entering or leaving a room |
+| 恐れ入る | おそれいる | 不好意思；过意不去（自动词）//(v, intrans.) to be very sorry (to trouble you); to be grateful — osoreirimasu ga = sorry to trouble you, but… |
+| 早速 | さっそく | 立刻；马上（副词）//(adv) immediately; right away; without delay — acting promptly on something just received or decided |
+| 取り急ぎ | とりいそぎ | （邮件用语）先简单告知（副词）//(adv) in haste; for now — email set phrase: toriisogi go-renraku made = just a quick note for now |
+| 承知 | しょうち | 知道；明白（名、可作动词）//(n, suru-verb) knowing; understanding; consent — shouchi shimashita = understood (to a client or superior), politer than wakarimashita |
+| かしこまる | かしこまる | 明白了；遵命（自动词、谦让语）//(v, intrans., humble) to acknowledge (a request) — kashikomarimashita = certainly, said by staff to customers or to a superior |
+| 検討 | けんとう | 研究；考虑（名、可作动词）——不是“检讨（反省）”；商务中也常是委婉拒绝//(n, suru-verb) consideration; examination; looking into — kentou shimasu (we'll consider it) is often a polite no in business |
+| 改めて | あらためて | 重新；改天再（副词）//(adv) again; anew; on another occasion — aratamete go-renraku shimasu = I'll contact you again later |
+| 後日 | ごじつ | 日后；改天（名、副词）//(n, adv) later; at a later date — formal, common in business |
+| 御社 | おんしゃ | 贵公司（口语）（名）//(n) your company (polite) — used in speech; in writing use kisha |
+| 弊社 | へいしゃ | 敝公司（名）//(n) our company (humble) — in business speech and writing |
+| 貴社 | きしゃ | 贵公司（书面）（名）//(n) your company (polite) — used in writing (letters, applications) |
+| 御中 | おんちゅう | （写给机构、部门的）敬启（接尾词）//(suffix) to; attention of — added after a company or department name on envelopes; not for a person |
+| 様 | さま | 先生；女士（敬称）（接尾词）//(suffix) Mr.; Ms. — more formal than san; for customers and on addresses |
+| 件 | けん | 事情；事项（名）//(n) matter; case; issue — kono ken = this matter; also counts cases (goken = five cases) |
+| 用件 | ようけん | 事情；要办的事（名）//(n) business; the matter one is calling about — on the phone: go-youken wa? = may I ask what it's regarding? |
+| 都合 | つごう | 方便与否；情况（名）——问时间是否方便//(n) convenience; circumstances — whether a time suits you; tsugou ga ii / warui = it suits / doesn't suit me |
+| 申し訳ない | もうしわけない | 非常抱歉；对不起（形容词）//(i-adj) inexcusable; I'm terribly sorry — moushiwake gozaimasen is far more formal than sumimasen |
 
 ---
 

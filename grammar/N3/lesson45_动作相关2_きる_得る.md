@@ -12,23 +12,23 @@ This group revolves around whether an action can be completed or is possible. �
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 走る | はしる | 跑//to run |
-| 使う | つかう | 使用//to use |
-| 疲れる | つかれる | 累//to get tired |
-| 信じる | しんじる | 相信//to believe |
-| 食べ残す | たべのこす | 吃剩//to leave food uneaten |
-| 満足 | まんぞく | 满足//satisfaction |
-| マラソン | マラソン | 马拉松//marathon |
-| 全力 | ぜんりょく | 全力//full power |
-| 予想 | よそう | 预想//prediction |
-| 充分 | じゅうぶん | 充分//sufficient |
-| ありえない | ありえない | 不可能//impossible |
-| 成功 | せいこう | 成功//success |
-| 失敗 | しっぱい | 失败//failure |
-| 起こる | おこる | 发生//to occur |
-| 数える | かぞえる | 数//to count |
-| 理解 | りかい | 理解//understanding |
-| 想像 | そうぞう | 想象//imagination |
+| 走る | はしる | 跑；奔跑（自动词）//(v, intrans.) to run — also of vehicles (trains run); godan despite ending in -iru: hashirimasu, hashitte |
+| 使う | つかう | 使用；用（他动词）//(v, trans.) to use; to spend (time, money) — the general word for using things, tools, money or language |
+| 疲れる | つかれる | 累；疲劳（自动词）//(v, intrans.) to get tired; to be exhausted — "I'm tired" is the past form tsukareta (a state you have reached) |
+| 信じる | しんじる | 相信；信任（他动词）//(v, trans.) to believe; to trust — believe a story, trust a person; shinjirarenai = unbelievable |
+| 食べ残す | たべのこす | 吃剩；没吃完（他动词）//(v, trans.) to leave food uneaten; to leave leftovers — tabenokoshi = leftovers on the plate |
+| 満足 | まんぞく | 满足；满意（名、形容动词、可作动词）//(n, na-adj, suru-verb) satisfaction; being satisfied — ni manzoku suru = be satisfied with; manzoku ni = properly (with a negative) |
+| マラソン | マラソン | 马拉松（名）//(n) marathon — also used loosely for long-distance running |
+| 全力 | ぜんりょく | 全力（名）//(n) all one's strength; full effort; one's best — zenryoku de = with all one's might |
+| 予想 | よそう | 预料；预测（名、可作动词）//(n, suru-verb) expectation; prediction; forecast — yosougai = unexpected; yosou-doori = as predicted |
+| 充分 | じゅうぶん | 充分；足够（形容动词、副词）//(na-adj, adv) enough; sufficient; plenty — variant spelling of juubun; same meaning |
+| ありえない | ありえない | 不可能；不可能有的（形容词）//(i-adj) impossible; unthinkable; can't be (true) — also slang for "no way!"; negative of arieru (could happen) |
+| 成功 | せいこう | 成功（名、可作动词）//(n, suru-verb) success — ni seikou suru = succeed in; daiseikou = a huge success |
+| 失敗 | しっぱい | 失败；失误（名、可作动词）//(n, suru-verb) failure; mistake; blunder — from small slip-ups to big failures; a factual error is usually machigai |
+| 起こる | おこる | 发生（自动词）//(v, intrans.) to happen; to occur; to break out — accidents, problems or events; transitive pair: okosu (cause) |
+| 数える | かぞえる | 数；计算（他动词）//(v, trans.) to count — counting numbers or items; kazoekirenai = countless |
+| 理解 | りかい | 理解（名、可作动词）//(n, suru-verb) understanding; comprehension — more formal than wakaru; also sympathetic understanding of others |
+| 想像 | そうぞう | 想象（名、可作动词）//(n, suru-verb) imagination; picturing — souzou ijou = beyond what one imagined; souzou mo tsukanai = unimaginable |
 
 ---
 

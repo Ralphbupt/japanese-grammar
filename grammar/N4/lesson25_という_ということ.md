@@ -12,41 +12,41 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 小説 | しょうせつ | 小说//novel |
-| 漫画 | まんが | 漫画//manga |
-| 知らせ | しらせ | 通知//notice |
-| 返事 | へんじ | 回复//reply |
-| 断る | ことわる | 拒绝//to refuse |
-| 卵焼き | たまごやき | 煎蛋//fried egg |
-| 畳 | たたみ | 榻榻米//tatami |
-| 道理で | どうりで | 难怪//no wonder |
-| エアコン | エアコン | 空调//air conditioner |
-| 壊れる | こわれる | 坏掉//to break |
-| 犯人 | はんにん | 犯人//culprit |
-| 節約 | せつやく | 节约//saving |
-| 反対 | はんたい | 反对//opposition |
-| 計画 | けいかく | 计划//plan |
-| 秘密 | ひみつ | 秘密//secret |
-| 勝手に | かってに | 擅自//without permission |
-| 人生 | じんせい | 人生//life |
-| 経つ | たつ | 经过（时间）//to pass (time) |
-| 川 | かわ | 河//river |
-| 年上 | としうえ | 年长//older |
-| 敬語 | けいご | 敬语//polite speech |
-| 悪口 | わるぐち | 坏话//bad-mouthing |
-| 守る | まもる | 遵守/保护//to keep/protect |
-| 値上げ | ねあげ | 涨价//price increase |
-| 所謂 | いわゆる | 所谓的//so-called |
-| 積極的 | せっきょくてき | 积极的//proactive |
-| 消極的 | しょうきょくてき | 消极的//passive |
-| 天才 | てんさい | 天才//genius |
-| 努力家 | どりょくか | 努力的人//hard worker |
-| 温泉 | おんせん | 温泉//hot spring |
-| 紅葉 | もみじ | 红叶//autumn leaves |
-| 居酒屋 | いざかや | 居酒屋//Japanese pub |
-| 伝統 | でんとう | 传统//tradition |
-| 正直 | しょうじき | 老实说//honestly |
-| 繊細 | せんさい | 细腻的//delicate |
+| 小説 | しょうせつ | 小说（名）//(n) novel; fiction — shousetsuka = novelist |
+| 漫画 | まんが | 漫画（名）//(n) manga; comic; cartoon |
+| 知らせ | しらせ | 通知；消息（名）//(n) notice; news; notification — o-shirase = notice, a common heading; ii shirase = good news |
+| 返事 | へんじ | 回复；回答（名、可作动词）//(n, suru-verb) reply; answer; response — to letters and messages, or answering hai when your name is called |
+| 断る | ことわる | 拒绝；谢绝（他动词）//(v, trans.) to refuse; to decline; to turn down — invitations or requests, usually indirectly; also to give notice in advance (kotowatte oku) |
+| 卵焼き | たまごやき | 日式煎蛋卷（名）//(n) rolled omelette (Japanese-style) — sweet or savory, common in bento |
+| 畳 | たたみ | 榻榻米（名）//(n) tatami mat — rooms are measured in mats (rokujou = a six-mat room) |
+| 道理で | どうりで | 怪不得；难怪（副词）//(adv) no wonder; that explains it — said when you learn the reason for something |
+| エアコン | エアコン | 空调（名）//(n) air conditioner — usually heats as well as cools |
+| 壊れる | こわれる | 坏；损坏（自动词）//(v, intrans.) to break; to stop working — machines and objects; breaking it yourself is kowasu |
+| 犯人 | はんにん | 罪犯；作案者（名）——指作案者，不是中文“犯人”（服刑者）//(n) culprit; criminal; perpetrator — whoever committed the crime, caught or not, not a prisoner; jokingly, whoever did it |
+| 節約 | せつやく | 节约；节省（名、可作动词）//(n, suru-verb) saving; economizing — cutting spending on money, electricity or water |
+| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）//(n, suru-verb, na-adj) opposition; objection; the opposite — ni hantai suru = be against; also the reverse side or direction (hantai-gawa) |
+| 計画 | けいかく | 计划（名、可作动词）//(n, suru-verb) plan; project; scheme — a deliberate, detailed plan; more formal than yotei (an arrangement); keikaku-doori = according to plan |
+| 秘密 | ひみつ | 秘密（名）//(n) secret; secrecy — himitsu o mamoru = keep a secret; himitsu da yo = it's a secret |
+| 勝手に | かってに | 擅自；随便（副词）//(adv) without permission; as one pleases — usually negative: doing something without asking |
+| 人生 | じんせい | 人生（名）//(n) (one's) life — life as a whole journey; daily life is seikatsu |
+| 経つ | たつ | （时间）经过；流逝（自动词）//(v, intrans.) to pass; to go by (of time) — ichinen ga tatsu = a year passes; only for time |
+| 川 | かわ | 河；河流（名）//(n) river; stream |
+| 年上 | としうえ | 年长；年纪大（名）//(n) older; senior (in age) — someone older than you; opposite: toshishita |
+| 敬語 | けいご | 敬语（名）//(n) keigo; honorific language — umbrella term for polite, respectful (sonkeigo) and humble (kenjougo) speech |
+| 悪口 | わるぐち | 坏话（名）//(n) bad-mouthing; speaking ill of someone — warukuchi o iu, usually behind their back |
+| 守る | まもる | 遵守；保护（他动词）//(v, trans.) to keep (a promise, rule); to obey; to protect — rules, promises, deadlines, or protecting people |
+| 値上げ | ねあげ | 涨价；提价（名、可作动词）//(n, suru-verb) price increase; price hike — a seller raising prices; opposite: nesage |
+| 所謂 | いわゆる | 所谓的（连体词）//(pre-noun) so-called; what is known as — usually written in kana; can carry a hint of irony |
+| 積極的 | せっきょくてき | 积极的；主动的（形容动词）//(na-adj) proactive; active — taking initiative; not "positive" in the sense of optimistic |
+| 消極的 | しょうきょくてき | 消极的；被动的（形容动词）——指不主动，不是“悲观”//(na-adj) passive; reluctant; half-hearted — lacking initiative, not "pessimistic" |
+| 天才 | てんさい | 天才（名）//(n) genius; natural talent |
+| 努力家 | どりょくか | 勤奋的人（名）//(n) hard worker; diligent person — a compliment for someone who works hard, not naturally gifted |
+| 温泉 | おんせん | 温泉（名）//(n) hot spring; onsen — natural hot-spring baths, and the resort towns built around them |
+| 紅葉 | もみじ | 红叶；枫叶（名）//(n) autumn leaves; Japanese maple — the same kanji read kouyou is the general word for autumn colors |
+| 居酒屋 | いざかや | 居酒屋；日式小酒馆（名）//(n) izakaya; Japanese-style pub — drinks with small shared dishes |
+| 伝統 | でんとう | 传统（名）//(n) tradition — dentou-teki = traditional; dentou geinou = traditional performing arts |
+| 正直 | しょうじき | 诚实；老实说（名、形容动词、副词）//(n, na-adj, adv) honesty; honest; frankly — at the start of a sentence, "to be honest…"; shoujiki ni iu to = honestly speaking |
+| 繊細 | せんさい | 细腻；敏感（形容动词）//(na-adj) delicate; sensitive; subtle — fine flavors or craft, or an easily hurt person |
 
 ---
 

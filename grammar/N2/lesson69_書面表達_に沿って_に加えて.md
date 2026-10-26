@@ -12,24 +12,24 @@ This lesson covers N2 grammar for written and formal expression. 「に沿って
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 方針 | ほうしん | 方针//policy |
-| 計画 | けいかく | 计划//plan |
-| 予定 | よてい | 预定//schedule |
-| 意見 | いけん | 意见//opinion |
-| 反省 | はんせい | 反省//reflection |
-| 成果 | せいか | 成果//result |
-| 契約 | けいやく | 合同//contract |
-| 交渉 | こうしょう | 谈判//negotiation |
-| 例外 | れいがい | 例外//exception |
-| 祝日 | しゅくじつ | 节日//public holiday |
-| 悩む | なやむ | 烦恼//to worry |
-| 話し合う | はなしあう | 讨论//to discuss |
-| 相談 | そうだん | 商量//consultation |
-| 慎重 | しんちょう | 慎重//cautious |
-| 決断 | けつだん | 决断//decision |
-| 散々 | さんざん | 彻底地//thoroughly (negative) |
-| 長年 | ながねん | 多年//many years |
-| 研究 | けんきゅう | 研究//research |
+| 方針 | ほうしん | 方针；方向（名）//(n) policy; course of action; guiding principle — a company or government's basic direction |
+| 計画 | けいかく | 计划（名、可作动词）//(n, suru-verb) plan; project; scheme — a deliberate, detailed plan; more formal than yotei (an arrangement); keikaku-doori = according to plan |
+| 予定 | よてい | 计划；安排（名、可作动词）——指已定的日程，不是“预订”//(n, suru-verb) plan; schedule; arrangement — something already decided; ~yotei desu = I plan to; booking a room is yoyaku |
+| 意見 | いけん | 意见；看法（名）——中性的“看法”，不一定是批评//(n) opinion; view — neutral, not criticism; iken o iu = give one's opinion; iken suru can mean "admonish" |
+| 反省 | はんせい | 反省；检讨（名、可作动词）//(n, suru-verb) reflection; self-examination; lessons learned — reflecting on one's mistakes; common in Japanese work culture |
+| 成果 | せいか | 成果；成绩（名）//(n) results; fruits (of effort); achievement — concrete outcomes of work or research |
+| 契約 | けいやく | 合同；契约（名、可作动词）//(n, suru-verb) contract; agreement — "sign a contract"; employment contract |
+| 交渉 | こうしょう | 谈判；交涉（名、可作动词）//(n, suru-verb) negotiation; bargaining — business, diplomatic or salary talks with another party |
+| 例外 | れいがい | 例外（名）//(n) exception — "without exception"; "no exceptions" |
+| 祝日 | しゅくじつ | 法定假日；节日（名）//(n) national holiday; public holiday — official holidays on the calendar |
+| 悩む | なやむ | 烦恼；苦恼（自动词）//(v, intrans.) to be troubled; to agonize (over); to worry — ni nayamu = be troubled by; deeper and longer-lasting than shinpai |
+| 話し合う | はなしあう | 商量；讨论（自他动词）//(v, intrans./trans.) to discuss; to talk (something) over — two or more people talking to reach agreement; hanashiai = a discussion |
+| 相談 | そうだん | 商量；咨询（名、可作动词）——不只是商量，也指找人咨询//(n, suru-verb) consultation; talking over; asking for advice — ni soudan suru = ask someone's advice; not only discussing as equals |
+| 慎重 | しんちょう | 慎重；谨慎（形容动词）//(na-adj) careful; cautious; prudent — "cautiously" as adverb; careful decisions |
+| 決断 | けつだん | 决断；决定（名、可作动词）//(n, suru-verb) decision; resolution; decisiveness — a firm, often hard decision |
+| 散々 | さんざん | 狠狠地；反复地（副词、形容动词）//(adv, na-adj) thoroughly; severely; at great length (negative) — sanzan mayotta = agonized for ages; sanzan datta = it was a disaster |
+| 長年 | ながねん | 多年；长年（名、副词）//(n, adv) many years; long years — "for many years", years of research |
+| 研究 | けんきゅう | 研究（名、可作动词）//(n, suru-verb) research; study — academic research; "researcher" is a compound |
 
 ---
 

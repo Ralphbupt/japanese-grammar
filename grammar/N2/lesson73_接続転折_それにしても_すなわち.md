@@ -12,24 +12,24 @@ This lesson covers N2-level conjunctions and transitional expressions. 「それ
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 接続詞 | せつぞくし | 接续词//conjunction |
-| 逆接 | ぎゃくせつ | 转折//adversative connection |
-| 結論 | けつろん | 结论//conclusion |
-| 要するに | ようするに | 总之//in short |
-| 予報 | よほう | 预报//forecast |
-| 渋滞 | じゅうたい | 堵车//traffic jam |
-| 合格 | ごうかく | 合格//passing (exam) |
-| 不合格 | ふごうかく | 不合格//failing (exam) |
-| 実験 | じっけん | 实验//experiment |
-| 証明 | しょうめい | 证明//proof |
-| 仮説 | かせつ | 假说//hypothesis |
-| 定義 | ていぎ | 定义//definition |
-| 成果 | せいか | 成果//results |
-| 優勝 | ゆうしょう | 冠军//championship |
-| 節約 | せつやく | 节约//saving |
-| 無駄遣い | むだづかい | 浪费//wasteful spending |
-| 原因 | げんいん | 原因//cause |
-| 規則 | きそく | 规则//rule |
+| 接続詞 | せつぞくし | 连词；接续词（名）//(n) conjunction (part of speech) — words linking sentences, like "however" |
+| 逆接 | ぎゃくせつ | 转折（名）//(n) adversative connection (like "but" or "although") — grammar term for clauses whose result goes against expectation |
+| 結論 | けつろん | 结论（名）//(n) conclusion — "reach a conclusion"; "in conclusion" |
+| 要するに | ようするに | 总之；简而言之（副词）//(adv) in short; in a word; basically — sums up what was just said, conversational and written |
+| 予報 | よほう | 预报（名、可作动词）//(n, suru-verb) forecast (esp. weather) — weather forecast |
+| 渋滞 | じゅうたい | 堵车；交通拥堵（名、可作动词）//(n, suru-verb) traffic jam; congestion — on roads; juutai ni makikomareru = get stuck in traffic, the classic excuse for being late |
+| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取//(n, suru-verb) passing (an exam); being accepted (to a school) — shiken ni goukaku suru = pass an exam; mainly exams and admissions |
+| 不合格 | ふごうかく | 不合格；不及格（名）//(n) failing (an exam); disqualification — failing an entrance exam or inspection |
+| 実験 | じっけん | 实验（名、可作动词）//(n, suru-verb) experiment; test — scientific experiments |
+| 証明 | しょうめい | 证明（名、可作动词）//(n, suru-verb) proof; demonstration; certification — prove a theory; ID certificate |
+| 仮説 | かせつ | 假说；假设（名）//(n) hypothesis — "verify a hypothesis" |
+| 定義 | ていぎ | 定义（名、可作动词）//(n, suru-verb) definition — define a term |
+| 成果 | せいか | 成果；成绩（名）//(n) results; fruits (of effort); achievement — concrete outcomes of work or research |
+| 優勝 | ゆうしょう | 夺冠；获得冠军（名、可作动词）——是动作，不是“冠军”本人//(n, suru-verb) winning (a championship); taking first place — the win itself; the winner is yuushousha |
+| 節約 | せつやく | 节约；节省（名、可作动词）//(n, suru-verb) saving; economizing — cutting spending on money, electricity or water |
+| 無駄遣い | むだづかい | 浪费；乱花钱（名、可作动词）//(n, suru-verb) wasting money; wasteful spending; squandering |
+| 原因 | げんいん | 原因（名）//(n) cause; origin; source — the cause of an event or accident; riyuu is a reason or motive |
+| 規則 | きそく | 规则；规定（名）//(n) rule; regulation — written rules of a school, company or game; follow them = mamoru |
 
 ---
 

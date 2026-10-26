@@ -12,24 +12,24 @@ This lesson brings together 6 grammar points that appear very frequently on the 
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 寂しい | さびしい | 寂寞的//lonely |
-| 悲しい | かなしい | 悲伤的//sad |
-| 嬉しい | うれしい | 高兴的//happy |
-| 不安 | ふあん | 不安//anxiety |
-| 自信 | じしん | 自信//confidence |
-| 完走 | かんそう | 跑完全程//completing a run |
-| マラソン | まらそん | 马拉松//marathon |
-| 走り抜く | はしりぬく | 跑到底//to run through |
-| 事情 | じじょう | 事情//circumstances |
-| 経緯 | けいい | 经过//background |
-| 結果 | けっか | 结果//result |
-| 天候 | てんこう | 天气//weather |
-| 同窓会 | どうそうかい | 同学会//class reunion |
-| 故郷 | こきょう | 故乡//hometown |
-| 久しぶり | ひさしぶり | 好久不见//long time no see |
-| 定員 | ていいん | 限定人数//capacity |
-| 駐車場 | ちゅうしゃじょう | 停车场//parking lot |
-| 一台 | いちだい | 一台//one (vehicle/machine) |
+| 寂しい | さびしい | 寂寞的；孤单的（形容词）//(i-adj) lonely; lonesome; desolate — missing someone; also of places: deserted |
+| 悲しい | かなしい | 悲伤的；伤心的（形容词）//(i-adj) sad; sorrowful — sadness itself; sabishii is loneliness |
+| 嬉しい | うれしい | 高兴；开心（形容词）//(i-adj) happy; glad; pleased — about something good that happens to you; tanoshii is enjoying an activity, shiawase lasting happiness |
+| 不安 | ふあん | 不安；担心（名、形容动词）//(n, na-adj) anxiety; unease; insecurity — a vague worry about the future; shinpai is concern about a specific thing |
+| 自信 | じしん | 自信；信心（名）//(n) confidence; self-confidence — "have confidence", "lack confidence" |
+| 完走 | かんそう | 跑完全程（名、可作动词）//(n, suru-verb) finishing a race; running the full course — marathon finishers |
+| マラソン | まらそん | 马拉松（名）//(n) marathon |
+| 走り抜く | はしりぬく | 跑完全程；坚持跑到底（自动词）//(v, intrans.) to run all the way; to run to the finish — -nuku stresses pushing through hardship to the end |
+| 事情 | じじょう | 情况；缘由（名）——不是“事情（事儿）”//(n) circumstances; situation; reasons — "due to circumstances"; personal reasons |
+| 経緯 | けいい | 原委；经过（名）//(n) background; how something came about; course of events — formal; explaining the background |
+| 結果 | けっか | 结果（名）//(n) result; outcome; consequence — exam results or the outcome of a cause; kekka-teki ni = as a result |
+| 天候 | てんこう | 天气；气候（名）//(n) weather (conditions) — formal; "depending on the weather" |
+| 同窓会 | どうそうかい | 同学会；校友会（名）//(n) class reunion; alumni association |
+| 故郷 | こきょう | 故乡；家乡（名）//(n) hometown; birthplace; home — emotional, literary word |
+| 久しぶり | ひさしぶり | 好久不见；隔了很久（名、形容动词）//(n, na-adj) a long time since last; long time no see — o-hisashiburi desu = it's been a while; hisashiburi ni = for the first time in ages |
+| 定員 | ていいん | 定员；名额（名）//(n) capacity; maximum number (of people) — seat or enrollment limit |
+| 駐車場 | ちゅうしゃじょう | 停车场（名）//(n) parking lot; car park |
+| 一台 | いちだい | 一辆；一台（数量词）//(counter) one (vehicle or machine) — counter for cars, machines, computers |
 
 ---
 

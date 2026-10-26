@@ -12,21 +12,21 @@ Japanese "giving" and "receiving" is not like Chinese where a single word covers
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| プレゼント | プレゼント | 礼物//present |
-| 花 | はな | 花//flower |
-| 服 | ふく | 衣服//clothes |
-| アドバイス | アドバイス | 建议//advice |
-| 差し上げる | さしあげる | 给（谦让）//to give (humble) |
-| いただく | いただく | 收到（谦让）//to receive (humble) |
-| くださる | くださる | 给（尊敬）//to give (honorific) |
-| 推薦状 | すいせんじょう | 推荐信//recommendation letter |
-| 丁寧 | ていねい | 礼貌//polite |
-| 説明 | せつめい | 说明//explanation |
-| 送る | おくる | 送//to send |
-| 引っ越し | ひっこし | 搬家//moving house |
-| 手伝う | てつだう | 帮忙//to help |
-| 運ぶ | はこぶ | 搬运//to carry |
-| 弁当 | べんとう | 便当//bento |
+| プレゼント | プレゼント | 礼物（名、可作动词）//(n, suru-verb) present; gift — casual; a formal or seasonal gift is okurimono |
+| 花 | はな | 花（名）//(n) flower; blossom — in spring often means cherry blossoms; hana (nose) is a homophone with different pitch |
+| 服 | ふく | 衣服（名）//(n) clothes; clothing — mostly Western-style clothes; traditional Japanese clothing is wafuku |
+| アドバイス | アドバイス | 建议；忠告（名、可作动词）//(n, suru-verb) advice; tip — adobaisu o suru = give advice; the formal word is jogen |
+| 差し上げる | さしあげる | 给（他动词、谦让语）——给上级或长辈//(v, trans., humble) to give — giving to a superior; offering a favor to their face (~te sashiageru) can sound condescending |
+| いただく | いただく | 收到；领受；吃；喝（他动词、谦让语）//(v, trans., humble) to receive; to eat; to drink — humble "receive"; itadakimasu before meals; ~te itadaku = have someone kindly do |
+| くださる | くださる | （上级）给我（他动词、尊敬语）//(v, trans., honorific) to give (me) — when a superior gives to you or your side; ~te kudasaru = kindly do for me |
+| 推薦状 | すいせんじょう | 推荐信（名）//(n) letter of recommendation — for school, scholarship or job applications |
+| 丁寧 | ていねい | 礼貌；细心；仔细（形容动词）——日语常指周到细致//(na-adj) polite; careful; thorough — describes both polite manners and careful, detailed work |
+| 説明 | せつめい | 说明；解释（名、可作动词）//(n, suru-verb) explanation; description — "explain X" is X o setsumei suru; setsumeisho = instruction manual |
+| 送る | おくる | 寄；送；送行（他动词）//(v, trans.) to send; to see (someone) off; to spend (time) — mail, email, or walking someone home |
+| 引っ越し | ひっこし | 搬家（名、可作动词）//(n, suru-verb) moving house; relocation — the move itself, packing included; the plain verb is hikkosu |
+| 手伝う | てつだう | 帮忙；帮助（他动词）//(v, trans.) to help (with a task); to assist — hands-on help with work or chores; tasukeru = rescue or help someone in trouble |
+| 運ぶ | はこぶ | 搬运；运送（他动词）//(v, trans.) to carry; to transport — moving heavy or many things from one place to another |
+| 弁当 | べんとう | 盒饭；便当（名）//(n) boxed lunch; bento — homemade or bought at a convenience store |
 
 ---
 

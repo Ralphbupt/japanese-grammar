@@ -12,23 +12,23 @@ This group describes states and appearances: maintaining a condition, being cove
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 電気 | でんき | 电灯//light; electricity |
-| 靴 | くつ | 鞋//shoes |
-| 窓 | まど | 窗户//window |
-| 泥 | どろ | 泥//mud |
-| 傷 | きず | 伤痕//wound; scratch |
-| 間違い | まちがい | 错误//mistake |
-| 蛇口 | じゃぐち | 水龙头//faucet |
-| 出しっぱなし | だしっぱなし | 一直开着//left running |
-| 若い | わかい | 年轻的//young |
-| 健康 | けんこう | 健康//health |
-| 幸せ | しあわせ | 幸福//happiness |
-| 朝食 | ちょうしょく | 早餐//breakfast |
-| 出勤 | しゅっきん | 上班//going to work |
-| ほこり | ほこり | 灰尘//dust |
-| 散らかる | ちらかる | 乱七八糟//to be messy |
-| 元気 | げんき | 精神好//energetic |
-| 不安 | ふあん | 不安//anxiety |
+| 電気 | でんき | 电；电灯（名）——口语中常指“灯”//(n) electricity; (electric) light — in daily speech often "the lights": denki o tsukeru / kesu = turn the lights on / off |
+| 靴 | くつ | 鞋（名）//(n) shoes — taken off at the entrance of Japanese homes: kutsu o nugu |
+| 窓 | まど | 窗户（名）//(n) window — madoguchi = service counter (at a bank or city hall) |
+| 泥 | どろ | 泥（名）//(n) mud — doro darake = covered in mud |
+| 傷 | きず | 伤；划痕（名）//(n) wound; injury; scratch — also scratches on objects; kizu darake = scratched all over |
+| 間違い | まちがい | 错误；差错（名）//(n) mistake; error — machigai nai = definitely, no doubt about it; the verb is machigaeru (make a mistake) |
+| 蛇口 | じゃぐち | 水龙头（名）//(n) faucet; tap — jaguchi o shimeru = turn off the tap |
+| 出しっぱなし | だしっぱなし | 开着不关；放着不管（名）//(n) left running (of water); left out — dasu + -ppanashi (left as is, negative nuance) |
+| 若い | わかい | 年轻的（形容词）//(i-adj) young; youthful; inexperienced — of people; a lower number is also wakai (wakai bangou) |
+| 健康 | けんこう | 健康（名、形容动词）//(n, na-adj) health; healthy — physical health; kenkou ni ii = good for your health |
+| 幸せ | しあわせ | 幸福；幸运（形容动词、名）——指持久的幸福感//(na-adj, n) happy; happiness; good fortune — lasting well-being, not a one-off thrill (that is ureshii); koufuku is the formal equivalent |
+| 朝食 | ちょうしょく | 早餐（名）//(n) breakfast; morning meal — formal or written; everyday speech says asagohan |
+| 出勤 | しゅっきん | 上班（名、可作动词）//(n, suru-verb) going to work; reporting for work — arriving at the office; taikin = leaving work |
+| ほこり | ほこり | 灰尘（名）//(n) dust — hokori darake = covered in dust; homophone: pride (different kanji) |
+| 散らかる | ちらかる | 凌乱；乱七八糟（自动词）//(v, intrans.) to be messy; to be cluttered; to be scattered — of a room; transitive: chirakasu (make a mess) |
+| 元気 | げんき | 精神；健康（形容动词、名）//(na-adj, n) healthy; energetic; well — o-genki desu ka = how are you?; genki ga nai = feeling down |
+| 不安 | ふあん | 不安；担心（名、形容动词）//(n, na-adj) anxiety; unease; insecurity — a vague worry about the future; shinpai is concern about a specific thing |
 
 ---
 

@@ -12,25 +12,25 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 参る | まいる | 去／来（謙譲）//go/come (humble) |
-| 申す | もうす | 说（謙譲）//say (humble) |
-| 申し上げる | もうしあげる | 说（更谦虚）//say (more humble) |
-| 拝見する | はいけんする | 看（謙譲）//look (humble) |
-| 拝借する | はいしゃくする | 借（謙譲）//borrow (humble) |
-| いたす | いたす | 做（謙譲）//do (humble) |
-| いただく | いただく | 收／吃／喝（謙譲）//receive/eat/drink (humble) |
-| 存じる | ぞんじる | 知道（謙譲）//know (humble) |
-| うかがう | うかがう | 拜访／问（謙譲）//visit/ask (humble) |
-| お目にかかる | おめにかかる | 见面（謙譲）//meet (humble) |
-| かしこまる | かしこまる | 知道了（謙譲）//understood (humble) |
-| 担当 | たんとう | 负责//in charge of |
-| 名刺 | めいし | 名片//business card |
-| 後ほど | のちほど | 稍后//later |
-| 早速 | さっそく | 立刻//immediately |
-| 確認 | かくにん | 确认//confirmation |
-| 用意 | ようい | 准备//preparation |
-| 説明 | せつめい | 说明//explanation |
-| 案内 | あんない | 引导/向导//guide |
+| 参る | まいる | 去；来（自动词、谦让语）//(v, intrans., humble) to go; to come — humble of iku / kuru, for your own side's movement |
+| 申す | もうす | 说；叫（他动词、谦让语）//(v, trans., humble) to say; to be called — humble of iu; ~to moushimasu = my name is ~ |
+| 申し上げる | もうしあげる | 说；讲（他动词、谦让语）——更恭敬的谦让说法//(v, trans., humble) to say; to tell — humbler than mousu, toward the listener; set phrases like o-rei moushiagemasu |
+| 拝見する | はいけんする | 看；拜读（他动词、谦让语）//(v, trans., humble) to see; to look at — humble of miru; for documents, tickets or someone's work |
+| 拝借する | はいしゃくする | 借（他动词、谦让语）//(v, trans., humble) to borrow — humble of kariru; very formal |
+| いたす | いたす | 做（他动词、谦让语）//(v, trans., humble) to do — humble of suru; very common in business (o-okuri itashimasu) |
+| いただく | いただく | 收到；领受；吃；喝（他动词、谦让语）//(v, trans., humble) to receive; to eat; to drink — humble "receive"; itadakimasu before meals; ~te itadaku = have someone kindly do |
+| 存じる | ぞんじる | 知道；认为（他动词、谦让语）//(v, trans., humble) to know; to think — humble of shiru / omou; zonjimasen = I don't know (politely) |
+| うかがう | うかがう | 拜访；请教；听说（他动词、谦让语）//(v, trans., humble) to visit; to ask; to hear — humble of houmon suru / kiku |
+| お目にかかる | おめにかかる | 见面；拜会（自动词、谦让语）//(v, intrans., humble) to meet — humble of au, meeting someone of higher status |
+| かしこまる | かしこまる | 明白了；遵命（自动词、谦让语）//(v, intrans., humble) to acknowledge (a request) — kashikomarimashita = certainly, said by staff to customers or to a superior |
+| 担当 | たんとう | 负责；担任（名、可作动词）//(n, suru-verb) being in charge (of); the person in charge — tantousha = the person handling it; tantou wa dare? = who's handling this? |
+| 名刺 | めいし | 名片（名）//(n) business card — exchanged with both hands at first meetings |
+| 後ほど | のちほど | 稍后；回头（副词）//(adv) later (on) — polite version of ato de; nochihodo o-denwa shimasu = I'll call you later |
+| 早速 | さっそく | 立刻；马上（副词）//(adv) immediately; right away; without delay — acting promptly on something just received or decided |
+| 確認 | かくにん | 确认；核实（名、可作动词）//(n, suru-verb) confirmation; checking; verification — double-checking facts, schedules or documents; constant at work |
+| 用意 | ようい | 准备（名、可作动词）//(n, suru-verb) preparation; getting (something) ready — concrete things like meals or documents; junbi is broader |
+| 説明 | せつめい | 说明；解释（名、可作动词）//(n, suru-verb) explanation; description — "explain X" is X o setsumei suru; setsumeisho = instruction manual |
+| 案内 | あんない | 引导；带路；介绍（名、可作动词）//(n, suru-verb) guidance; showing (someone) around; information — guiding people, or an information notice |
 
 ---
 

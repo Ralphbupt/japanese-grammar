@@ -12,24 +12,24 @@ This group expresses "not only A but also B" or "A and B simultaneously." From s
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 成績 | せいせき | 成绩//grades |
-| 優秀 | ゆうしゅう | 优秀//excellent |
-| スポーツ | スポーツ | 运动//sports |
-| 得意 | とくい | 擅长//good at |
-| 国内 | こくない | 国内//domestic |
-| 海外 | かいがい | 海外//overseas |
-| 活躍 | かつやく | 活跃//active role |
-| 人口 | じんこう | 人口//population |
-| 高齢化 | こうれいか | 老龄化//aging society |
-| 進む | すすむ | 推进//to advance |
-| 技術 | ぎじゅつ | 技术//technology |
-| 発展 | はってん | 发展//development |
-| 経済 | けいざい | 经济//economy |
-| 変化 | へんか | 变化//change |
-| 科学 | かがく | 科学//science |
-| 大臣 | だいじん | 大臣//minister |
-| 関係者 | かんけいしゃ | 相关人员//people involved |
-| 景気 | けいき | 景气//economic conditions |
+| 成績 | せいせき | 成绩（名）//(n) grades; results; performance — school grades or results in work and sports |
+| 優秀 | ゆうしゅう | 优秀（形容动词）//(na-adj) excellent; outstanding; highly capable — praise for students, staff or results |
+| スポーツ | スポーツ | 运动；体育（名）//(n) sports — organized sports; undou is exercise in general |
+| 得意 | とくい | 擅长；拿手（形容动词、名）——可以用来说自己//(na-adj, n) good at; one's strong point — fine to say about yourself, unlike jouzu; tokui ryouri = one's best dish |
+| 国内 | こくない | 国内（名）//(n) domestic; within the country — kokunai-sen = domestic flights; opposite of kaigai (overseas) |
+| 海外 | かいがい | 海外；国外（名）//(n) overseas; abroad — the everyday word for "abroad" in island Japan; kaigai ryokou = a trip abroad |
+| 活躍 | かつやく | 大显身手；表现活跃（名、可作动词）——不是“性格活泼”//(n, suru-verb) being active (and successful); playing an active role — doing well in a field or role, not being lively |
+| 人口 | じんこう | 人口（名）//(n) population — of a country or city; jinkou ga heru = the population is shrinking |
+| 高齢化 | こうれいか | 老龄化（名）//(n) aging (of the population) — shoushi koureika = falling birthrate and aging population, a staple N2 reading topic |
+| 進む | すすむ | 前进；进展；加剧（自动词）//(v, intrans.) to advance; to progress; to move forward — also trends getting worse: aging progresses; clocks running fast |
+| 技術 | ぎじゅつ | 技术（名）//(n) technology; technique; skill — both industrial technology and personal skill |
+| 発展 | はってん | 发展（名、可作动词）//(n, suru-verb) development; growth; expansion — of countries, cities, economies or technology |
+| 経済 | けいざい | 经济（名）//(n) economy; economics — the national economy; keizai-teki = economic, or economical (thrifty) |
+| 変化 | へんか | 变化（名、可作动词）//(n, suru-verb) change; variation; shift — also verb conjugation in grammar |
+| 科学 | かがく | 科学（名）//(n) science — natural science; chemistry is a homophone, kagaku, written with another kanji |
+| 大臣 | だいじん | 大臣；部长（名）——日本内阁的部长级官员//(n) (government) minister; cabinet member — e.g. Minister of Foreign Affairs; Prime Minister is souri daijin |
+| 関係者 | かんけいしゃ | 相关人员（名）//(n) people involved; parties concerned; insiders — kankeisha igai = authorized personnel only |
+| 景気 | けいき | 经济形势；景气（名）//(n) the economy; business conditions — how business is doing; keiki ga ii = the economy is booming |
 
 ---
 

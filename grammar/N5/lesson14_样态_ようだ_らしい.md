@@ -4,18 +4,18 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 空 | そら | 天空//sky |
-| 病気 | びょうき | 生病//illness |
-| 上がる | あがる | 上升//to rise |
-| 事故 | じこ | 事故//accident |
-| 発想 | はっそう | 想法//idea |
-| 行動 | こうどう | 行动//action |
-| 白い | しろい | 白色//white |
-| 性格 | せいかく | 性格//personality |
-| 具合 | ぐあい | 身体状况//condition |
-| 迷子 | まいご | 迷路的孩子//lost child |
-| 景色 | けしき | 景色//scenery |
-| 優しい | やさしい | 温柔//gentle |
+| 空 | そら | 天空（名）//(n) sky — the same kanji read kara means "empty" |
+| 病気 | びょうき | 病；疾病（名）//(n) illness; sickness; disease — byouki ni naru = get sick |
+| 上がる | あがる | 上升；上涨（自动词）//(v, intrans.) to go up; to rise — prices, temperature; also "come in" to a house |
+| 事故 | じこ | 事故（名）//(n) accident; incident — traffic or industrial accidents; jiko ni au = have an accident |
+| 発想 | はっそう | 想法；创意（名）//(n) idea; way of thinking; concept — a creative angle on something |
+| 行動 | こうどう | 行动；行为（名、可作动词）//(n, suru-verb) action; behavior; conduct — what someone actually does |
+| 白い | しろい | 白；白色的（形容词）//(i-adj) white — the noun is shiro |
+| 性格 | せいかく | 性格；脾气（名）//(n) personality; character; nature — seikaku ga ii = good-natured; seikaku ga awanai = we don't get along |
+| 具合 | ぐあい | （身体）情况；状态（名）//(n) condition; state (of health, a machine) — "feel unwell" is guai ga warui |
+| 迷子 | まいご | 走失的孩子；迷路（名）//(n) lost child; getting lost — "get lost" is maigo ni naru (also adults, jokingly) |
+| 景色 | けしき | 景色；风景（名）//(n) scenery; view; landscape — natural or city views, e.g. from a mountain top or a window |
+| 優しい | やさしい | 温柔；和善（形容词）//(i-adj) kind; gentle; tender — about personality; easy is a homophone with another kanji |
 
 ## 1. 〜ようだ / 〜ように（推断）||1. 〜ようだ / 〜ように (Inference)
 

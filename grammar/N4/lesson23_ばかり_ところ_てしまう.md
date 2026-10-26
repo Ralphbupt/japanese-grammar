@@ -12,34 +12,34 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 文句 | もんく | 抱怨//complaint |
-| 太る | ふとる | 变胖//to gain weight |
-| 出かける | でかける | 出门//to go out |
-| なくす | なくす | 弄丢//to lose |
-| データ | データ | 数据//data |
-| 消す | けす | 删除/关掉//to delete / turn off |
-| 乗り遅れる | のりおくれる | 没赶上车//to miss (a ride) |
-| つい | つい | 不由得//unintentionally |
-| ホテル | ホテル | 酒店//hotel |
-| 予約 | よやく | 预约//reservation |
-| 資料 | しりょう | 资料//materials |
-| コピー | コピー | 复印//copy |
-| 壁 | かべ | 墙//wall |
-| 貼る | はる | 贴//to paste / stick |
-| 置く | おく | 放//to put / place |
-| 印刷 | いんさつ | 打印//printing |
-| 寝坊 | ねぼう | 睡过头//oversleeping |
-| ポスター | ポスター | 海报//poster |
-| 地震 | じしん | 地震//earthquake |
-| 気温 | きおん | 气温//temperature |
-| 出張 | しゅっちょう | 出差//business trip |
-| 調子 | ちょうし | 状态//condition |
-| 母校 | ぼこう | 母校//alma mater |
-| 割る | わる | 打碎//to break |
-| 漫画 | まんが | 漫画//manga |
-| 告白 | こくはく | 告白//confession |
-| 振る | ふる | 甩（人）//to dump (someone) |
-| 上司 | じょうし | 上司//boss |
+| 文句 | もんく | 抱怨；牢骚（名）//(n) complaint; grumbling; objection — monku o iu = complain; monku nashi = perfect, no complaints |
+| 太る | ふとる | 发胖；变胖（自动词）//(v, intrans.) to gain weight; to get fat — "is fat" is futotte iru, the progressive form |
+| 出かける | でかける | 出门；外出（自动词）//(v, intrans.) to go out; to leave (the house) — going out somewhere, without naming the destination |
+| なくす | なくす | 弄丢；丢失（他动词）//(v, trans.) to lose (something); to get rid of — losing an item; losing a game is makeru |
+| データ | データ | 数据；资料（名）//(n) data — files, figures, saved information |
+| 消す | けす | 关掉；删除；擦掉（他动词）//(v, trans.) to turn off; to erase; to delete — lights, TV, data or writing on a board; denki o kesu = turn off the light |
+| 乗り遅れる | のりおくれる | 没赶上（车、飞机）（自动词）//(v, intrans.) to miss (a train, bus, flight) — arriving too late to board |
+| つい | つい | 不由得；不小心（副词）//(adv) without meaning to; by habit — usually with ~te shimau (tsui tabete shimatta), implying regret |
+| ホテル | ホテル | 酒店；宾馆（名）//(n) hotel — Western-style; a traditional Japanese inn is a ryokan |
+| 予約 | よやく | 预约；预订（名、可作动词）//(n, suru-verb) reservation; booking; appointment — restaurants, hotels, doctors, tickets |
+| 資料 | しりょう | 资料；材料（名）//(n) materials; documents — handouts or reference documents for a meeting or research |
+| コピー | コピー | 复印；复制（名、可作动词）//(n, suru-verb) photocopy; copy — mainly photocopying paper |
+| 壁 | かべ | 墙；墙壁；障碍（名）//(n) wall; obstacle; barrier — figuratively too: kabe ni butsukaru = hit a wall |
+| 貼る | はる | 贴；粘贴（他动词）//(v, trans.) to stick; to paste; to put up — posters, stamps, stickers |
+| 置く | おく | 放；放置（他动词）//(v, trans.) to put; to place; to leave (somewhere) — ~te oku = do in advance, built on this verb |
+| 印刷 | いんさつ | 打印；印刷（名、可作动词）//(n, suru-verb) printing — both office printing and printing presses |
+| 寝坊 | ねぼう | 睡过头；睡懒觉（名、可作动词）//(n, suru-verb) oversleeping — waking up too late by accident; the standard excuse for being late |
+| ポスター | ポスター | 海报（名）//(n) poster |
+| 地震 | じしん | 地震（名）//(n) earthquake — jishin ga okiru = an earthquake happens; small ones are often just yureta (it shook) |
+| 気温 | きおん | 气温（名）//(n) (air) temperature — outdoor air only; body temperature is taion, water temperature suion |
+| 出張 | しゅっちょう | 出差（名、可作动词）//(n, suru-verb) business trip — shucchou ni iku = go on a business trip; the destination takes ni |
+| 調子 | ちょうし | 状态；情况（名）//(n) condition; (physical) shape — of one's body, a machine or work; choushi ga ii / warui = going well / off |
+| 母校 | ぼこう | 母校（名）//(n) alma mater; one's old school — any school you graduated from |
+| 割る | わる | 打碎；打破；分开（他动词）//(v, trans.) to break; to split; to divide — glass or dishes; also dividing numbers |
+| 漫画 | まんが | 漫画（名）//(n) manga; comic; cartoon |
+| 告白 | こくはく | 表白；坦白（名、可作动词）//(n, suru-verb) confession (of love); confession — mostly telling someone you like them; also admitting a secret |
+| 振る | ふる | 甩（恋人）；挥；摇（他动词）//(v, trans.) to dump (a partner); to wave; to shake — furareta = got dumped (passive); te o furu = wave |
+| 上司 | じょうし | 上司；上级（名）//(n) boss; superior (at work) — anyone above you in rank, not only your direct manager |
 
 ---
 

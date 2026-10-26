@@ -4,25 +4,25 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 結婚 | けっこん | 结婚//marriage |
-| 漢字 | かんじ | 汉字//kanji |
-| 心配 | しんぱい | 担心//worry |
-| 辞書 | じしょ | 字典//dictionary |
-| 授業 | じゅぎょう | 课//class |
-| 宿題 | しゅくだい | 作业//homework |
-| 弟 | おとうと | 弟弟//younger brother |
-| 会う | あう | 见面//to meet |
-| 歌う | うたう | 唱歌//to sing |
-| 薬 | くすり | 药//medicine |
-| レポート | レポート | 报告//report |
-| 書類 | しょるい | 文件//document |
-| 大事 | だいじ | 重要//important |
-| 試験 | しけん | 考试//exam |
-| 靴 | くつ | 鞋//shoes |
-| 傘 | かさ | 伞//umbrella |
-| 電気 | でんき | 电灯/电//electricity |
-| 遅刻 | ちこく | 迟到//being late |
-| 準備 | じゅんび | 准备//preparation |
+| 結婚 | けっこん | 结婚（名、可作动词）//(n, suru-verb) marriage; getting married — "marry X" is X to kekkon suru; "be married" is kekkon shite iru |
+| 漢字 | かんじ | 汉字（名）//(n) kanji; Chinese characters |
+| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）//(n, suru-verb, na-adj) worry; concern; anxiety — X o shinpai suru = worry about X; shinpai shinaide = don't worry |
+| 辞書 | じしょ | 词典；字典（名）//(n) dictionary — "look up in a dictionary" is jisho o hiku |
+| 授業 | じゅぎょう | 课；上课（名）——不是“传授职业”//(n) class; lesson — a session taught at school, not the subject itself; jugyouryou = tuition |
+| 宿題 | しゅくだい | 作业（名）//(n) homework; assignment — shukudai o suru = do homework |
+| 弟 | おとうと | 弟弟（名）//(n) younger brother — someone else's is otoutosan |
+| 会う | あう | 见面；遇见（自动词）——见的对象不作宾语//(v, intrans.) to meet; to see (someone) — the person takes ni (or to), not o |
+| 歌う | うたう | 唱（歌）（他动词）//(v, trans.) to sing — song takes o |
+| 薬 | くすり | 药（名）//(n) medicine; drug — you "drink" it: kusuri o nomu, even for pills |
+| レポート | レポート | 报告；（学生的）论文（名）//(n) report; paper (school assignment) — typical university coursework; "hand it in" is dasu |
+| 書類 | しょるい | 文件；资料（名）//(n) documents; papers; paperwork — official forms, not computer files |
+| 大事 | だいじ | 重要；珍惜（形容动词）//(na-adj) important; precious; valuable — o-daiji ni = get well soon (said to someone sick) |
+| 試験 | しけん | 考试（名）//(n) exam; test — "take an exam" is shiken o ukeru |
+| 靴 | くつ | 鞋（名）//(n) shoes — taken off at the entrance of Japanese homes: kutsu o nugu |
+| 傘 | かさ | 伞（名）//(n) umbrella — "open an umbrella" is kasa o sasu |
+| 電気 | でんき | 电；电灯（名）——口语中常指“灯”//(n) electricity; (electric) light — in daily speech often "the lights": denki o tsukeru / kesu = turn the lights on / off |
+| 遅刻 | ちこく | 迟到（名、可作动词）//(n, suru-verb) being late — for school, work or an appointment; said of people, while trains okureru (run late) |
+| 準備 | じゅんび | 准备（名、可作动词）//(n, suru-verb) preparation; getting ready — for events, trips or meals; junbi suru = prepare |
 
 ## 1. ない形（否定形）||ない Form (Negative Form)
 

@@ -12,24 +12,24 @@ This lesson covers N2 grammar related to "topics," "standpoints," and "condition
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 賛成 | さんせい | 赞成//agreement |
-| 反対 | はんたい | 反对//opposition |
-| 議論 | ぎろん | 讨论//debate |
-| 問題 | もんだい | 问题//problem |
-| 性別 | せいべつ | 性别//gender |
-| 年齢 | ねんれい | 年龄//age |
-| 国籍 | こくせき | 国籍//nationality |
-| 能力 | のうりょく | 能力//ability |
-| 需要 | じゅよう | 需求//demand |
-| 地域 | ちいき | 地区//region |
-| 環境 | かんきょう | 环境//environment |
-| 開発 | かいはつ | 开发//development |
-| 政策 | せいさく | 政策//policy |
-| 待遇 | たいぐう | 待遇//treatment |
-| 対応 | たいおう | 应对//response |
-| 見直す | みなおす | 重新审视//to review |
-| 検討 | けんとう | 讨论//consideration |
-| 採用 | さいよう | 录用//hiring |
+| 賛成 | さんせい | 赞成；同意（名、可作动词）//(n, suru-verb) agreement; approval; being in favor — ni sansei suru = agree with (a plan or opinion); opposite of hantai |
+| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）//(n, suru-verb, na-adj) opposition; objection; the opposite — ni hantai suru = be against; also the reverse side or direction (hantai-gawa) |
+| 議論 | ぎろん | 争论；讨论（名、可作动词）//(n, suru-verb) debate; argument; discussion — exchange of views, often formal; not a quarrel |
+| 問題 | もんだい | 问题；题目（名）//(n) problem; issue; question (on a test) — both social issues and exam questions |
+| 性別 | せいべつ | 性别（名）//(n) gender; sex — common on forms; seibetsu o towazu = regardless of gender |
+| 年齢 | ねんれい | 年龄（名）//(n) age (of a person) — formal, used on forms and in rules; everyday speech says toshi; nenrei seigen = age limit |
+| 国籍 | こくせき | 国籍（名）//(n) nationality; citizenship — common on forms; kokuseki o towazu = regardless of nationality |
+| 能力 | のうりょく | 能力（名）//(n) ability; capability; competence — "according to ability", language ability |
+| 需要 | じゅよう | 需求（名）——不是中文动词“需要”//(n) demand (economics); need — paired with supply: juyou to kyoukyuu |
+| 地域 | ちいき | 地区；区域（名）——常指当地社区//(n) region; area; local community — chiiki shakai = the local community; more formal than chihou |
+| 環境 | かんきょう | 环境（名）——既指自然环境，也指工作、学习环境//(n) environment; surroundings; setting — both nature (kankyou mondai = environmental issues) and one's work or study setting |
+| 開発 | かいはつ | 开发；研发（名、可作动词）//(n, suru-verb) development — of land, products or technology; also software development |
+| 政策 | せいさく | 政策（名）//(n) policy (government) — government or party policy; economic policy |
+| 待遇 | たいぐう | 待遇（名）//(n) treatment; pay and working conditions — salary and benefits of a job |
+| 対応 | たいおう | 应对；处理（名、可作动词）//(n, suru-verb) response; dealing with; handling — customers, problems or requests; also "compatible with" (taiou shite iru) |
+| 見直す | みなおす | 重新审视；重新评估（他动词）//(v, trans.) to review; to reconsider; to see in a new light — re-examine a plan or policy; also to think better of a person |
+| 検討 | けんとう | 研究；考虑（名、可作动词）——不是“检讨（反省）”；商务中也常是委婉拒绝//(n, suru-verb) consideration; examination; looking into — kentou shimasu (we'll consider it) is often a polite no in business |
+| 採用 | さいよう | 录用；采用（名、可作动词）//(n, suru-verb) hiring; employment; adoption — hiring staff, adopting an idea or proposal |
 
 ---
 

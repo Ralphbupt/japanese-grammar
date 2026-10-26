@@ -12,22 +12,22 @@ This group covers pretending, emphasis, emotional evaluation, and intervals/freq
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 振り | ふり | 假装//pretense |
-| 知らん顔 | しらんかお | 装作不知道//feigning ignorance |
-| 驚く | おどろく | 吃惊//to be surprised |
-| 嬉しい | うれしい | 高兴//happy; glad |
-| 悲しい | かなしい | 悲伤//sad |
-| 残念 | ざんねん | 遗憾//regrettable |
-| 困る | こまる | 为难//to be troubled |
-| 努力 | どりょく | 努力//effort |
-| 成長 | せいちょう | 成长//growth |
-| 技術 | ぎじゅつ | 技术//technology; skill |
-| 進歩 | しんぽ | 进步//progress |
-| 信号 | しんごう | 红绿灯//traffic light |
-| 合格 | ごうかく | 合格//passing (an exam) |
-| 寝たふり | ねたふり | 装睡//pretending to sleep |
-| 授業 | じゅぎょう | 课程//class; lesson |
-| 選手 | せんしゅ | 选手//athlete |
+| 振り | ふり | 假装；样子（名）//(n) pretense; pretending (to do); appearance — plain form + furi o suru = pretend to |
+| 知らん顔 | しらんかお | 装作不知道；佯装不知（名）//(n) feigning ignorance; looking the other way — shiran kao o suru = act like one doesn't know |
+| 驚く | おどろく | 惊讶；吃惊（自动词）//(v, intrans.) to be surprised; to be astonished — ni odoroku = be surprised at; bikkuri suru is the casual word |
+| 嬉しい | うれしい | 高兴；开心（形容词）//(i-adj) happy; glad; pleased — about something good that happens to you; tanoshii is enjoying an activity, shiawase lasting happiness |
+| 悲しい | かなしい | 悲伤的；伤心的（形容词）//(i-adj) sad; sorrowful — sadness itself; sabishii is loneliness |
+| 残念 | ざんねん | 遗憾；可惜（形容动词）//(na-adj) regrettable; disappointing; too bad — zannen nagara = unfortunately |
+| 困る | こまる | 为难；困扰（自动词）//(v, intrans.) to be in trouble; to be at a loss — komatta = I'm stuck; komarimasu = please don't (polite objection) |
+| 努力 | どりょく | 努力（名、可作动词）——在日语中是名词，“努力地”另有说法//(n, suru-verb) effort; hard work; endeavor — a noun: doryoku suru = make an effort; adverbial "hard" is isshoukenmei |
+| 成長 | せいちょう | 成长；增长（名、可作动词）//(n, suru-verb) growth; development; growing up — people, children or the economy (economic growth) |
+| 技術 | ぎじゅつ | 技术（名）//(n) technology; technique; skill — both industrial technology and personal skill |
+| 進歩 | しんぽ | 进步（名、可作动词）//(n, suru-verb) progress; advancement; improvement — of technology, science or one's own skills |
+| 信号 | しんごう | 红绿灯；信号（名）//(n) traffic light; signal — in daily speech, traffic lights; the green light is called ao (blue) |
+| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取//(n, suru-verb) passing (an exam); being accepted (to a school) — shiken ni goukaku suru = pass an exam; mainly exams and admissions |
+| 寝たふり | ねたふり | 装睡（名）//(n) pretending to be asleep — neta furi o suru = fake sleep |
+| 授業 | じゅぎょう | 课；上课（名）——不是“传授职业”//(n) class; lesson — a session taught at school, not the subject itself; jugyouryou = tuition |
+| 選手 | せんしゅ | 选手；运动员（名）//(n) athlete; player — a sportsperson; yakyuu senshu = baseball player |
 
 ---
 

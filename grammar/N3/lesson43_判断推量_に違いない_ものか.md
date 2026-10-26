@@ -12,24 +12,24 @@ This lesson covers grammar for "judgment," "conjecture," and "rhetorical questio
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 犯人 | はんにん | 犯人//criminal |
-| 成功 | せいこう | 成功//success |
-| 失敗 | しっぱい | 失败//failure |
-| 渋滞 | じゅうたい | 堵车//traffic jam |
-| 噂 | うわさ | 传闻//rumor |
-| 台風 | たいふう | 台风//typhoon |
-| 洪水 | こうずい | 洪水//flood |
-| 倒産 | とうさん | 破产//bankruptcy |
-| 景気 | けいき | 景气//economy |
-| 負ける | まける | 输//to lose |
-| 怪しい | あやしい | 可疑的//suspicious |
-| 試合 | しあい | 比赛//match |
-| 許す | ゆるす | 原谅//to forgive |
-| 約束 | やくそく | 约定//promise |
-| 集合 | しゅうごう | 集合//gathering |
-| 延期 | えんき | 延期//postponement |
-| 被害 | ひがい | 损害//damage |
-| 絶対 | ぜったい | 绝对//absolutely |
+| 犯人 | はんにん | 罪犯；作案者（名）——指作案者，不是中文“犯人”（服刑者）//(n) culprit; criminal; perpetrator — whoever committed the crime, caught or not, not a prisoner; jokingly, whoever did it |
+| 成功 | せいこう | 成功（名、可作动词）//(n, suru-verb) success — ni seikou suru = succeed in; daiseikou = a huge success |
+| 失敗 | しっぱい | 失败；失误（名、可作动词）//(n, suru-verb) failure; mistake; blunder — from small slip-ups to big failures; a factual error is usually machigai |
+| 渋滞 | じゅうたい | 堵车；交通拥堵（名、可作动词）//(n, suru-verb) traffic jam; congestion — on roads; juutai ni makikomareru = get stuck in traffic, the classic excuse for being late |
+| 噂 | うわさ | 传闻；谣言（名）//(n) rumor; gossip; hearsay — uwasa ni yoru to = rumor has it; often paired with rashii |
+| 台風 | たいふう | 台风（名）//(n) typhoon — numbered each year (typhoon No. 10); the season peaks August to October |
+| 洪水 | こうずい | 洪水；水灾（名）//(n) flood; flooding — rivers overflowing after heavy rain |
+| 倒産 | とうさん | 破产；倒闭（名、可作动词）——指公司破产//(n, suru-verb) bankruptcy; going under — for companies; a person going bankrupt is hasan |
+| 景気 | けいき | 经济形势；景气（名）//(n) the economy; business conditions — how business is doing; keiki ga ii = the economy is booming |
+| 負ける | まける | 输；败（自动词）//(v, intrans.) to lose (a game, fight, etc.); to be defeated — ni makeru = lose to; also to give a discount (shop talk) |
+| 怪しい | あやしい | 可疑的；靠不住的（形容词）//(i-adj) suspicious; dubious; doubtful — suspicious people, or doubtful weather and plans |
+| 試合 | しあい | 比赛（名）//(n) match; game; bout — a sports match between opponents; a whole tournament is taikai |
+| 許す | ゆるす | 原谅；允许（他动词）//(v, trans.) to forgive; to pardon; to allow — forgive a person or a fault; jikan ga yuruseba = if time permits |
+| 約束 | やくそく | 约定；诺言（名、可作动词）——也指约会//(n, suru-verb) promise; appointment; arrangement — also a plan to meet someone; keep one = mamoru, break one = yaburu |
+| 集合 | しゅうごう | 集合（名、可作动词）//(n, suru-verb) gathering; meeting up (at a set time and place) — shuugou jikan = meeting time on trips and events |
+| 延期 | えんき | 延期；推迟（名、可作动词）//(n, suru-verb) postponement — moving an event to a later date; calling it off altogether is chuushi |
+| 被害 | ひがい | 受害；损失（名）——不是“灾害”本身//(n) damage; harm; loss suffered — what victims suffer from a disaster or crime, not the disaster itself; higai o ukeru = suffer damage |
+| 絶対 | ぜったい | 绝对；一定（副词、名）//(adv, n) absolutely; definitely — very common; with a negative it means never (zettai ikanai) |
 
 ---
 

@@ -12,16 +12,16 @@ The passive 「られる」 means "to be …," but Japanese has an extra use Chi
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 残業 | ざんぎょう | 加班//overtime |
-| 野菜 | やさい | 蔬菜//vegetables |
-| 上司 | じょうし | 上司//boss |
-| 練習 | れんしゅう | 练习//practice |
-| 大量 | たいりょう | 大量//large amount |
-| 命令 | めいれい | 命令//command |
-| 教室 | きょうしつ | 教室//classroom |
-| 小説 | しょうせつ | 小说//novel |
-| 建物 | たてもの | 建筑//building |
-| 泣く | なく | 哭//to cry |
+| 残業 | ざんぎょう | 加班（名、可作动词）//(n, suru-verb) overtime (work); working late — very common in Japanese workplaces; zangyou-dai = overtime pay |
+| 野菜 | やさい | 蔬菜（名）//(n) vegetable; vegetables — no plural in Japanese, so one word covers one or many |
+| 上司 | じょうし | 上司；上级（名）//(n) boss; superior (at work) — anyone above you in rank, not only your direct manager |
+| 練習 | れんしゅう | 练习（名、可作动词）//(n, suru-verb) practice; training; drill — practicing a skill, sport, instrument or language |
+| 大量 | たいりょう | 大量（名、形容动词）//(n, na-adj) large quantity; a great deal — slightly formal; tairyou seisan = mass production |
+| 命令 | めいれい | 命令（名、可作动词）//(n, suru-verb) order; command — a strong top-down order, much stronger than tanomu (ask) |
+| 教室 | きょうしつ | 教室；（兴趣）班（名）//(n) classroom; class (for lessons) — also a hobby class: ryouri kyoushitsu = cooking class |
+| 小説 | しょうせつ | 小说（名）//(n) novel; fiction — shousetsuka = novelist |
+| 建物 | たてもの | 建筑物；楼房（名）//(n) building; structure |
+| 泣く | なく | 哭；哭泣（自动词）//(v, intrans.) to cry; to weep — of people; animals and birds use a homophone written with another kanji (naku, to chirp or bark) |
 
 ## 1. 受身形详解（N4深化）||1. Passive Form — In Depth (N4 Level)
 

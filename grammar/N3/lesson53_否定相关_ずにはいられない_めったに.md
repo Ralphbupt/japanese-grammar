@@ -12,24 +12,24 @@ This lesson focuses on N3 grammar related to "negation." 「ないことはな�
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 涙 | なみだ | 眼泪//tears |
-| 感動 | かんどう | 感动//being moved |
-| 泣く | なく | 哭//to cry |
-| 笑う | わらう | 笑//to laugh |
-| 我慢 | がまん | 忍耐//endurance |
-| 文句 | もんく | 抱怨//complaint |
-| 終わる | おわる | 结束//to finish |
-| 可能性 | かのうせい | 可能性//possibility |
-| 裏切る | うらぎる | 背叛//to betray |
-| 許す | ゆるす | 原谅//to forgive |
-| 嘘 | うそ | 谎话//lie |
-| 賛成 | さんせい | 赞成//agreement |
-| 反対 | はんたい | 反对//opposition |
-| 滅多 | めった | 很少//rare |
-| 遅刻 | ちこく | 迟到//being late |
-| 外食 | がいしょく | 外食//eating out |
-| 興味 | きょうみ | 兴趣//interest |
-| 不可能 | ふかのう | 不可能//impossible |
+| 涙 | なみだ | 眼泪（名）//(n) tears; teardrop — namida ga deru = tears come; namida o nagasu = shed tears |
+| 感動 | かんどう | 感动（名、可作动词）//(n, suru-verb) being deeply moved; being touched — by a film, music or someone's kindness; kandou-teki = moving |
+| 泣く | なく | 哭；哭泣（自动词）//(v, intrans.) to cry; to weep — of people; animals and birds use a homophone written with another kanji (naku, to chirp or bark) |
+| 笑う | わらう | 笑（自动词）//(v, intrans.) to laugh; to smile — "laugh at X" takes o; hohoemu = to smile gently |
+| 我慢 | がまん | 忍耐；忍受（名、可作动词）——多指忍住疼痛、眼泪、尿意等//(n, suru-verb) patience; putting up with something unpleasant — often "hold it in" (pain, tears, the urge to go) |
+| 文句 | もんく | 抱怨；牢骚（名）//(n) complaint; grumbling; objection — monku o iu = complain; monku nashi = perfect, no complaints |
+| 終わる | おわる | 结束；完（自动词）//(v, intrans.) to end; to finish; to be over — after a verb stem, "finish doing" (yomi-owaru); transitive: oeru |
+| 可能性 | かのうせい | 可能性（名）//(n) possibility; likelihood; potential — kanousei ga takai = likely |
+| 裏切る | うらぎる | 背叛；辜负（他动词）//(v, trans.) to betray; to let down — betray a friend; kitai o uragiru = fail (or, pleasantly, defy) expectations |
+| 許す | ゆるす | 原谅；允许（他动词）//(v, trans.) to forgive; to pardon; to allow — forgive a person or a fault; jikan ga yuruseba = if time permits |
+| 嘘 | うそ | 谎话；谎言（名）//(n) lie; falsehood — uso o tsuku = tell a lie; uso! = no way! (surprise, not an accusation) |
+| 賛成 | さんせい | 赞成；同意（名、可作动词）//(n, suru-verb) agreement; approval; being in favor — ni sansei suru = agree with (a plan or opinion); opposite of hantai |
+| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）//(n, suru-verb, na-adj) opposition; objection; the opposite — ni hantai suru = be against; also the reverse side or direction (hantai-gawa) |
+| 滅多 | めった | 很少；难得（形容动词）——多以副词形式接否定//(na-adj) rarely; seldom — almost always metta ni + negative (metta ni ikanai = hardly ever go); usually written in kana |
+| 遅刻 | ちこく | 迟到（名、可作动词）//(n, suru-verb) being late — for school, work or an appointment; said of people, while trains okureru (run late) |
+| 外食 | がいしょく | 在外面吃饭（名、可作动词）//(n, suru-verb) eating out; dining out — eating at restaurants instead of cooking at home |
+| 興味 | きょうみ | 兴趣（名）//(n) interest (in something) — ni kyoumi ga aru = be interested in |
+| 不可能 | ふかのう | 不可能（形容动词、名）//(na-adj, n) impossible — formal; casual speech uses muri |
 
 ---
 

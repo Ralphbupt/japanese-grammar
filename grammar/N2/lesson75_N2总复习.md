@@ -12,24 +12,24 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 復習 | ふくしゅう | 复习//review |
-| 文法 | ぶんぽう | 语法//grammar |
-| 分類 | ぶんるい | 分类//classification |
-| 接続 | せつぞく | 接续//conjugation |
-| 逆接 | ぎゃくせつ | 转折//adversative |
-| 原因 | げんいん | 原因//cause |
-| 程度 | ていど | 程度//degree |
-| 対比 | たいひ | 对比//contrast |
-| 感情 | かんじょう | 感情//emotion |
-| 判断 | はんだん | 判断//judgment |
-| 強調 | きょうちょう | 强调//emphasis |
-| 限定 | げんてい | 限定//limitation |
-| 区別 | くべつ | 区别//distinction |
-| 出題 | しゅつだい | 出题//exam question |
-| 傾向 | けいこう | 倾向//tendency |
-| 対策 | たいさく | 对策//countermeasure |
-| 正答率 | せいとうりつ | 正确率//accuracy rate |
-| 配点 | はいてん | 分值//point allocation |
+| 復習 | ふくしゅう | 复习（名、可作动词）//(n, suru-verb) review (of lessons); revision — going over what you learned; yoshuu = preparing before class |
+| 文法 | ぶんぽう | 语法（名）//(n) grammar — bunpou mondai = grammar questions on the JLPT |
+| 分類 | ぶんるい | 分类（名、可作动词）//(n, suru-verb) classification; categorization — sorting things into groups |
+| 接続 | せつぞく | 接续；连接（名、可作动词）——语法中指接在什么形式后面//(n, suru-verb) connection; how a grammar pattern attaches — in grammar notes, the form that comes before a pattern; also internet or train connections |
+| 逆接 | ぎゃくせつ | 转折（名）//(n) adversative connection (like "but" or "although") — grammar term for clauses whose result goes against expectation |
+| 原因 | げんいん | 原因（名）//(n) cause; origin; source — the cause of an event or accident; riyuu is a reason or motive |
+| 程度 | ていど | 程度（名）//(n) degree; extent; level — aru teido = to some extent; after a number, "about" (juppun teido = ten minutes or so) |
+| 対比 | たいひ | 对比（名、可作动词）//(n, suru-verb) contrast; comparison — setting two things side by side |
+| 感情 | かんじょう | 感情；情绪（名）——指“情绪”，不是中文“爱情、交情”//(n) emotion; feelings — not "affection between people" |
+| 判断 | はんだん | 判断（名、可作动词）//(n, suru-verb) judgment; decision; assessment — handan suru = judge, decide; handan shikaneru = find it hard to decide |
+| 強調 | きょうちょう | 强调（名、可作动词）//(n, suru-verb) emphasis; stress — emphasize a point |
+| 限定 | げんてい | 限定；限制（名、可作动词）//(n, suru-verb) limitation; restriction; limited (edition) — kikan gentei = for a limited time only |
+| 区別 | くべつ | 区别；区分（名、可作动词）//(n, suru-verb) distinction; telling apart — kubetsu ga tsukanai = can't tell them apart |
+| 出題 | しゅつだい | 出题（名、可作动词）//(n, suru-verb) setting exam questions; questions set (on a test) — what appears on the exam |
+| 傾向 | けいこう | 倾向；趋势（名）//(n) tendency; trend; inclination — ~keikou ga aru = there is a tendency to ~ |
+| 対策 | たいさく | 对策；应对措施（名）//(n) countermeasure; (exam) preparation strategy — exam prep; measures against a problem |
+| 正答率 | せいとうりつ | 正确率（名）//(n) rate of correct answers — exam statistics |
+| 配点 | はいてん | 分值；配分（名）//(n) point allocation; marks per question — exam scoring |
 
 ---
 

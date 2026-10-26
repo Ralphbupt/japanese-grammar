@@ -12,24 +12,24 @@ This group covers possibility and volition around actions: trying but failing, h
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 逃げる | にげる | 逃跑//to escape |
-| 窓 | まど | 窗户//window |
-| 開ける | あける | 打开//to open |
-| 連絡先 | れんらくさき | 联系方式//contact information |
-| 忘れ物 | わすれもの | 遗失物//lost item |
-| 届ける | とどける | 送达//to deliver |
-| 残業 | ざんぎょう | 加班//overtime |
-| 納期 | のうき | 交货期限//delivery deadline |
-| 賛成 | さんせい | 赞成//approval |
-| 反対 | はんたい | 反对//opposition |
-| 判断 | はんだん | 判断//judgment |
-| 提案 | ていあん | 提案//proposal |
-| 事故 | じこ | 事故//accident |
-| 油断 | ゆだん | 大意//carelessness |
-| 責任 | せきにん | 责任//responsibility |
-| 対応 | たいおう | 应对//response |
-| 諦める | あきらめる | 放弃//to give up |
-| 我慢 | がまん | 忍耐//patience |
+| 逃げる | にげる | 逃跑；逃避（自动词）//(v, intrans.) to run away; to escape; to flee — also to avoid a problem or responsibility |
+| 窓 | まど | 窗户（名）//(n) window — madoguchi = service counter (at a bank or city hall) |
+| 開ける | あける | 打开（他动词）——人去打开门窗等//(v, trans.) to open (something) — mado o akeru = open the window; intransitive pair: aku (it opens) |
+| 連絡先 | れんらくさき | 联系方式（名）//(n) contact information; contact details — phone, email or address for reaching someone |
+| 忘れ物 | わすれもの | 落下的东西；遗忘物品（名）//(n) something left behind; forgotten item; lost property — wasuremono o suru = leave something behind |
+| 届ける | とどける | 送到；递交；报告（他动词）//(v, trans.) to deliver; to take (something) to; to report — also hand in a lost item to the police (keisatsu ni todokeru) |
+| 残業 | ざんぎょう | 加班（名、可作动词）//(n, suru-verb) overtime (work); working late — very common in Japanese workplaces; zangyou-dai = overtime pay |
+| 納期 | のうき | 交货期限（名）//(n) delivery deadline; due date (for an order) — business term for when goods or work must be delivered |
+| 賛成 | さんせい | 赞成；同意（名、可作动词）//(n, suru-verb) agreement; approval; being in favor — ni sansei suru = agree with (a plan or opinion); opposite of hantai |
+| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）//(n, suru-verb, na-adj) opposition; objection; the opposite — ni hantai suru = be against; also the reverse side or direction (hantai-gawa) |
+| 判断 | はんだん | 判断（名、可作动词）//(n, suru-verb) judgment; decision; assessment — handan suru = judge, decide; handan shikaneru = find it hard to decide |
+| 提案 | ていあん | 提议；建议（名、可作动词）//(n, suru-verb) proposal; suggestion — a proposal in a meeting or business setting |
+| 事故 | じこ | 事故（名）//(n) accident; incident — traffic or industrial accidents; jiko ni au = have an accident |
+| 油断 | ゆだん | 大意；疏忽（名、可作动词）//(n, suru-verb) carelessness; letting one's guard down — relaxing too early; yudan taiteki = never let your guard down |
+| 責任 | せきにん | 责任（名）//(n) responsibility; liability; blame — sekinin o toru = take responsibility; sekininsha = the person in charge |
+| 対応 | たいおう | 应对；处理（名、可作动词）//(n, suru-verb) response; dealing with; handling — customers, problems or requests; also "compatible with" (taiou shite iru) |
+| 諦める | あきらめる | 放弃；死心（他动词）//(v, trans.) to give up; to abandon (hope); to resign oneself — accepting something is out of reach; yameru is simply stopping |
+| 我慢 | がまん | 忍耐；忍受（名、可作动词）——多指忍住疼痛、眼泪、尿意等//(n, suru-verb) patience; putting up with something unpleasant — often "hold it in" (pain, tears, the urge to go) |
 
 ---
 

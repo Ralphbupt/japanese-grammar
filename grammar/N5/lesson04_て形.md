@@ -4,42 +4,42 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 書く | かく | 写//write |
-| 飲む | のむ | 喝//drink |
-| 話す | はなす | 说话//speak |
-| 買う | かう | 买//buy |
-| 食べる | たべる | 吃//eat |
-| 見る | みる | 看//see |
-| 起きる | おきる | 起床//wake up |
-| 来る | くる | 来//come |
-| 泳ぐ | およぐ | 游泳//swim |
-| 待つ | まつ | 等//wait |
-| 死ぬ | しぬ | 死//die |
-| 遊ぶ | あそぶ | 玩//play |
-| 帰る | かえる | 回去//go back |
-| 走る | はしる | 跑//run |
-| 行く | いく | 去//go |
-| 朝 | あさ | 早上//morning |
-| 顔 | かお | 脸//face |
-| 洗う | あらう | 洗//wash |
-| 広い | ひろい | 宽广//wide |
-| 親切 | しんせつ | 亲切//kind |
-| 優しい | やさしい | 温柔//gentle |
-| 電車 | でんしゃ | 电车//train |
-| 遅刻 | ちこく | 迟到//tardiness |
-| 読む | よむ | 读//read |
-| 歩く | あるく | 走路//walk |
-| 寝る | ねる | 睡觉//sleep |
-| 教える | おしえる | 教//teach |
-| 開ける | あける | 打开//open |
-| 勉強する | べんきょうする | 学习//study |
-| 散歩する | さんぽする | 散步//take a walk |
-| 映画 | えいが | 电影//movie |
-| 図書館 | としょかん | 图书馆//library |
-| 公園 | こうえん | 公园//park |
-| 宿題 | しゅくだい | 作业//homework |
-| 風邪 | かぜ | 感冒//cold |
-| 薬 | くすり | 药//medicine |
+| 書く | かく | 写（他动词）//(v, trans.) to write — drawing a picture is kaku with another kanji (e o kaku) |
+| 飲む | のむ | 喝；吃（药）（他动词）——吃药也用这个词//(v, trans.) to drink; to take (medicine) — pills are "drunk" in Japanese |
+| 話す | はなす | 说；讲；谈话（他动词）//(v, trans.) to speak; to talk; to tell — "talk with X" is X to hanasu; a language takes o (nihongo o hanasu) |
+| 買う | かう | 买（他动词）//(v, trans.) to buy — te-form katte; kaimono = shopping |
+| 食べる | たべる | 吃（他动词）//(v, trans.) to eat — ichidan verb; medicine is nomu, not taberu |
+| 見る | みる | 看（他动词）//(v, trans.) to see; to look at; to watch — TV and movies too (eiga o miru) |
+| 起きる | おきる | 起床；醒来；发生（自动词）//(v, intrans.) to get up; to wake up; to happen — jiko ga okiru = an accident happens |
+| 来る | くる | 来（自动词）//(v, intrans.) to come — irregular: kimasu, konai, kite |
+| 泳ぐ | およぐ | 游泳（自动词）//(v, intrans.) to swim — te-form is oyoide (gu → ide) |
+| 待つ | まつ | 等；等待（他动词）——等的对象作宾语，不需要“为”//(v, trans.) to wait (for) — what you wait for takes o: tomodachi o matsu |
+| 死ぬ | しぬ | 死（自动词）//(v, intrans.) to die — blunt; the polite word is nakunaru; the only common verb ending in -nu (te-form shinde) |
+| 遊ぶ | あそぶ | 玩；游玩（自动词）——成人也用，指出去玩、聚会//(v, intrans.) to play; to have fun; to hang out — adults use it too; not for sports or instruments |
+| 帰る | かえる | 回去；回家（自动词）//(v, intrans.) to go home; to return — godan despite ending in eru: kaerimasu |
+| 走る | はしる | 跑；奔跑（自动词）//(v, intrans.) to run — also of vehicles (trains run); godan despite ending in -iru: hashirimasu, hashitte |
+| 行く | いく | 去（自动词）//(v, intrans.) to go — te-form is the irregular itte |
+| 朝 | あさ | 早上；早晨（名）//(n) morning — "breakfast" is asagohan |
+| 顔 | かお | 脸；表情（名）//(n) face; look; expression — "wash one's face" is kao o arau |
+| 洗う | あらう | 洗（他动词）//(v, trans.) to wash — hands, face, dishes, clothes |
+| 広い | ひろい | 宽敞；宽广（形容词）//(i-adj) spacious; wide; broad — for rooms and areas; a wide road too |
+| 親切 | しんせつ | 亲切；热心（形容动词）——指热心帮助人，不是“感到亲近”//(na-adj) kind; helpful; considerate — about actually helping others, not "feeling close" |
+| 優しい | やさしい | 温柔；和善（形容词）//(i-adj) kind; gentle; tender — about personality; easy is a homophone with another kanji |
+| 電車 | でんしゃ | 电车；火车（名）//(n) train (electric) — everyday word for local and commuter trains |
+| 遅刻 | ちこく | 迟到（名、可作动词）//(n, suru-verb) being late — for school, work or an appointment; said of people, while trains okureru (run late) |
+| 読む | よむ | 读；看（书报）（他动词）//(v, trans.) to read — silently or aloud; also "read" a situation: kuuki o yomu = read the room |
+| 歩く | あるく | 走；步行（自动词）——指行走，不是“离开”//(v, intrans.) to walk — place walked through takes o: michi o aruku |
+| 寝る | ねる | 睡觉；躺下（自动词）//(v, intrans.) to sleep; to go to bed; to lie down — covers both going to bed and sleeping |
+| 教える | おしえる | 教；告诉（他动词）//(v, trans.) to teach; to tell; to show (the way) — also "tell me": denwa bangou o oshiete |
+| 開ける | あける | 打开（他动词）——人去打开门窗等//(v, trans.) to open (something) — mado o akeru = open the window; intransitive pair: aku (it opens) |
+| 勉強する | べんきょうする | 学习（他动词）——不是“勉强”//(v, trans.) to study — means study, not "force oneself" as in Chinese |
+| 散歩する | さんぽする | 散步（自动词）//(v, intrans.) to take a walk; to go for a stroll — the route takes o: kouen o sanpo suru |
+| 映画 | えいが | 电影（名）//(n) movie; film — "see a movie" takes the verb miru; a cinema is eigakan |
+| 図書館 | としょかん | 图书馆（名）//(n) library — borrow books here; a bookstore is hon'ya |
+| 公園 | こうえん | 公园（名）//(n) park — a public park, from a small playground to a large city park |
+| 宿題 | しゅくだい | 作业（名）//(n) homework; assignment — shukudai o suru = do homework |
+| 風邪 | かぜ | 感冒（名）//(n) a cold (illness) — kaze o hiku = catch a cold; flu is infuruenza; "wind" is a homophone with another kanji |
+| 薬 | くすり | 药（名）//(n) medicine; drug — you "drink" it: kusuri o nomu, even for pills |
 
 ## 1. て形（最重要的动词变形！）||て Form (The Most Important Conjugation!)
 

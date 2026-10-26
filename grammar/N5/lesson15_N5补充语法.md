@@ -12,36 +12,36 @@ The closing lesson of N5 — covering commonly used N5 grammar not yet addressed
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 予約 | よやく | 预约//reservation |
-| 約束 | やくそく | 约定//promise |
-| 落ちる | おちる | 落/不及格//to fall/to fail |
-| 体調 | たいちょう | 身体状况//physical condition |
-| 悪い | わるい | 坏/不好//bad |
-| 早退 | そうたい | 早退//leaving early |
-| 頭 | あたま | 头//head |
-| お腹 | おなか | 肚子//stomach |
-| 痛い | いたい | 痛//painful |
-| 壊れる | こわれる | 坏掉//to break |
-| 新聞 | しんぶん | 报纸//newspaper |
-| 笑う | わらう | 笑//to laugh |
-| 汚い | きたない | 脏//dirty |
-| 使い方 | つかいかた | 使用方法//how to use |
-| 作り方 | つくりかた | 做法//how to make |
-| 読み方 | よみかた | 读法//how to read |
-| 夢 | ゆめ | 梦//dream |
-| 止まる | とまる | 停//to stop |
-| 怖い | こわい | 可怕//scary |
-| 遅刻 | ちこく | 迟到//being late |
-| 準備 | じゅんび | 准备//preparation |
-| 説明 | せつめい | 说明//explanation |
-| 間に合う | まにあう | 来得及/赶上//to be on time |
-| 我慢 | がまん | 忍耐//endurance |
-| 途中 | とちゅう | 中途/途中//midway |
-| 片付ける | かたづける | 收拾/整理//to tidy up |
-| 慣れる | なれる | 习惯//to get used to |
-| 諦める | あきらめる | 放弃//to give up |
-| 心配 | しんぱい | 担心//worry |
-| 無理 | むり | 不可能/勉强//impossible |
+| 予約 | よやく | 预约；预订（名、可作动词）//(n, suru-verb) reservation; booking; appointment — restaurants, hotels, doctors, tickets |
+| 約束 | やくそく | 约定；诺言（名、可作动词）——也指约会//(n, suru-verb) promise; appointment; arrangement — also a plan to meet someone; keep one = mamoru, break one = yaburu |
+| 落ちる | おちる | 掉落；（考试）落榜（自动词）//(v, intrans.) to fall; to drop; to fail (an exam) — ichidan verb; shiken ni ochiru = fail an exam |
+| 体調 | たいちょう | 身体状况（名）//(n) physical condition; health — "not feeling well" is taichou ga warui |
+| 悪い | わるい | 坏；不好；对不起（形容词）//(i-adj) bad; poor; at fault — casual "sorry" is warui (warui ne) |
+| 早退 | そうたい | 早退（名、可作动词）//(n, suru-verb) leaving early (school or work) — usually because of feeling unwell |
+| 頭 | あたま | 头；头脑（名）//(n) head; brain; mind — "smart" is atama ga ii |
+| お腹 | おなか | 肚子（名）//(n) stomach; belly — "I'm hungry" is onaka ga suita |
+| 痛い | いたい | 疼；痛（形容词）//(i-adj) painful; sore — "my head hurts" is atama ga itai; "ouch!" is itai! |
+| 壊れる | こわれる | 坏；损坏（自动词）//(v, intrans.) to break; to stop working — machines and objects; breaking it yourself is kowasu |
+| 新聞 | しんぶん | 报纸（名）——不是“新闻”//(n) newspaper — the paper itself; news is nyuusu |
+| 笑う | わらう | 笑（自动词）//(v, intrans.) to laugh; to smile — "laugh at X" takes o; hohoemu = to smile gently |
+| 汚い | きたない | 脏（形容词）//(i-adj) dirty; messy — also unfair (kitanai te = a dirty trick) |
+| 使い方 | つかいかた | 用法；使用方法（名）//(n) how to use; usage — verb stem + kata = "how to do" |
+| 作り方 | つくりかた | 做法；制作方法（名）//(n) how to make; recipe — verb stem + kata |
+| 読み方 | よみかた | 读法；念法（名）//(n) how to read; reading (of a word) — often asked about kanji readings |
+| 夢 | ゆめ | 梦；梦想（名）//(n) dream — both dreams in sleep and life goals |
+| 止まる | とまる | 停下；停止（自动词）//(v, intrans.) to stop (by itself); to come to a halt — cars, clocks, rain; stopping it is tomeru |
+| 怖い | こわい | 可怕；害怕（形容词）//(i-adj) scary; frightening; afraid — "I'm scared of X" is X ga kowai |
+| 遅刻 | ちこく | 迟到（名、可作动词）//(n, suru-verb) being late — for school, work or an appointment; said of people, while trains okureru (run late) |
+| 準備 | じゅんび | 准备（名、可作动词）//(n, suru-verb) preparation; getting ready — for events, trips or meals; junbi suru = prepare |
+| 説明 | せつめい | 说明；解释（名、可作动词）//(n, suru-verb) explanation; description — "explain X" is X o setsumei suru; setsumeisho = instruction manual |
+| 間に合う | まにあう | 来得及；赶上（自动词）//(v, intrans.) to make it in time; to be in time — ni maniau (a train, a deadline); also "to be enough": maniatte imasu = no thanks, I'm fine |
+| 我慢 | がまん | 忍耐；忍受（名、可作动词）——多指忍住疼痛、眼泪、尿意等//(n, suru-verb) patience; putting up with something unpleasant — often "hold it in" (pain, tears, the urge to go) |
+| 途中 | とちゅう | 半路；中途（名）//(n) on the way; in the middle (of) — "on the way home" is kaeru tochuu |
+| 片付ける | かたづける | 收拾；整理；处理掉（他动词）//(v, trans.) to tidy up; to put away; to finish off (a task) — rooms, desks or work; intransitive pair: katazuku |
+| 慣れる | なれる | 习惯；适应（自动词）//(v, intrans.) to get used to; to become accustomed — the thing takes ni: shigoto ni nareru |
+| 諦める | あきらめる | 放弃；死心（他动词）//(v, trans.) to give up; to abandon (hope); to resign oneself — accepting something is out of reach; yameru is simply stopping |
+| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）//(n, suru-verb, na-adj) worry; concern; anxiety — X o shinpai suru = worry about X; shinpai shinaide = don't worry |
+| 無理 | むり | 不可能；勉强（形容动词、名）——常用于“别太勉强自己”//(na-adj, n) impossible; unreasonable; overdoing it — muri o suru = push yourself too hard; muri shinaide = don't overdo it |
 
 ---
 

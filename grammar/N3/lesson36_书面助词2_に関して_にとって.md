@@ -12,24 +12,24 @@ This lesson continues with common N3 formal particles. These grammar points appe
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 調査 | ちょうさ | 调查//investigation |
-| 報告 | ほうこく | 报告//report |
-| 規則 | きそく | 规则//rule |
-| 憲法 | けんぽう | 宪法//constitution |
-| 幸福 | こうふく | 幸福//happiness |
-| 地域 | ちいき | 地区//region |
-| 長期間 | ちょうきかん | 长期间//long period |
-| 交渉 | こうしょう | 谈判//negotiation |
-| 範囲 | はんい | 范围//scope |
-| 計画 | けいかく | 计划//plan |
-| 基準 | きじゅん | 标准//standard |
-| 法律 | ほうりつ | 法律//law |
-| 事実 | じじつ | 事实//fact |
-| 関東 | かんとう | 关东//Kanto region |
-| 数世紀 | すうせいき | 数世纪//several centuries |
-| 広範囲 | こうはんい | 广范围//wide range |
-| 子供 | こども | 孩子//child |
-| 世代 | せだい | 世代//generation |
+| 調査 | ちょうさ | 调查（名、可作动词）//(n, suru-verb) investigation; survey; inquiry — formal; surveys, studies and official investigations |
+| 報告 | ほうこく | 报告；汇报（名、可作动词）//(n, suru-verb) report; reporting — telling a boss or group the outcome; a key word in Japanese office culture |
+| 規則 | きそく | 规则；规定（名）//(n) rule; regulation — written rules of a school, company or game; follow them = mamoru |
+| 憲法 | けんぽう | 宪法（名）//(n) constitution (of a country) — Japan's postwar constitution; Article 9 is the famous one |
+| 幸福 | こうふく | 幸福（名、形容动词）——比口语的幸福一词更书面//(n, na-adj) happiness; well-being — more formal and abstract than shiawase |
+| 地域 | ちいき | 地区；区域（名）——常指当地社区//(n) region; area; local community — chiiki shakai = the local community; more formal than chihou |
+| 長期間 | ちょうきかん | 长时间；长期（名）//(n) long period (of time); extended period — often with ni watatte: "over a long period" |
+| 交渉 | こうしょう | 谈判；交涉（名、可作动词）//(n, suru-verb) negotiation; bargaining — business, diplomatic or salary talks with another party |
+| 範囲 | はんい | 范围（名）//(n) scope; range; extent — e.g. the range covered by an exam, or within a certain range |
+| 計画 | けいかく | 计划（名、可作动词）//(n, suru-verb) plan; project; scheme — a deliberate, detailed plan; more formal than yotei (an arrangement); keikaku-doori = according to plan |
+| 基準 | きじゅん | 标准；基准（名）//(n) standard; criterion; benchmark — the yardstick for judging, e.g. safety standards, selection criteria |
+| 法律 | ほうりつ | 法律（名）//(n) law; legislation — laws in general; break the law = ihan suru, obey = mamoru |
+| 事実 | じじつ | 事实（名、副词）//(n, adv) fact; truth; reality — as an adverb, "in fact" (more formal than jitsu wa) |
+| 関東 | かんとう | 关东地区（名）——东京及周边六县//(n) Kanto — the region around Tokyo (Tokyo plus six prefectures); contrasted with Kansai (Osaka, Kyoto) |
+| 数世紀 | すうせいき | 几个世纪（名）//(n) several centuries — suu- = "several": suunen (a few years), suunin (several people) |
+| 広範囲 | こうはんい | 大范围；广泛（名、形容动词）//(n, na-adj) wide area; wide range; extensive — damage or effects spreading over a wide area |
+| 子供 | こども | 孩子；儿童（名）//(n) child; kid — both children in general and one's own children; kodomoppoi = childish |
+| 世代 | せだい | 一代人；世代（名）//(n) generation; age group — people of the same age group; also a product generation |
 
 ---
 

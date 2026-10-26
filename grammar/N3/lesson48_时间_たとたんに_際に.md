@@ -12,24 +12,24 @@ This lesson covers N3 grammar related to "timing." 「たとたん（に）」 i
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 途端 | とたん | 刚一……就//the moment |
-| 次第 | しだい | 一……就//as soon as |
-| 最中 | さいちゅう | 正当中//in the middle of |
-| 際 | さい | 之际//occasion |
-| 立ち上がる | たちあがる | 站起来//to stand up |
-| 転ぶ | ころぶ | 摔倒//to fall down |
-| 届く | とどく | 送达//to arrive (package) |
-| 連絡 | れんらく | 联系//contact |
-| 決まる | きまる | 决定//to be decided |
-| 暗くなる | くらくなる | 变暗//to get dark |
-| 若い | わかい | 年轻的//young |
-| 海外旅行 | かいがいりょこう | 海外旅行//overseas travel |
-| 入国 | にゅうこく | 入境//entering a country |
-| パスポート | ぱすぽーと | 护照//passport |
-| 会議 | かいぎ | 会议//meeting |
-| 電話が鳴る | でんわがなる | 电话响//phone rings |
-| 日程 | にってい | 日程//schedule |
-| 明るい | あかるい | 明亮的//bright |
+| 途端 | とたん | 刚一……就（名）——后接意外发生的事//(n) the (very) moment; just as — ta-form + totan ni: something unexpected happens right after |
+| 次第 | しだい | 一……就；取决于（名）//(n) as soon as (after a verb stem); depending on — stem + shidai = as soon as; noun + shidai = depends on |
+| 最中 | さいちゅう | 正在……的时候（名）//(n) in the middle of; at the height of — usually something interrupts: shokuji no saichuu ni denwa ga natta |
+| 際 | さい | ……之际；……的时候（名）——正式用语//(n) when; on the occasion of — formal version of toki, common in notices and announcements |
+| 立ち上がる | たちあがる | 站起来；起身（自动词）//(v, intrans.) to stand up; to get up; to rise — also to rise up or a computer booting up |
+| 転ぶ | ころぶ | 摔倒；跌倒（自动词）//(v, intrans.) to fall over; to trip and fall — while walking or running, not from a height |
+| 届く | とどく | 送到；到达；够得着（自动词）//(v, intrans.) to arrive; to reach — mail, parcels or messages arriving; also "can reach" (a shelf); transitive pair: todokeru |
+| 連絡 | れんらく | 联系；联络（名、可作动词）//(n, suru-verb) contact; getting in touch — by phone, email or message; renraku suru = let someone know |
+| 決まる | きまる | 定下来；被决定（自动词）//(v, intrans.) to be decided; to be settled; to be fixed — intransitive; transitive pair: kimeru (decide) |
+| 暗くなる | くらくなる | 变暗；天黑（惯用语）//(expr) to get dark — of evening or a room; kurai + naru (become) |
+| 若い | わかい | 年轻的（形容词）//(i-adj) young; youthful; inexperienced — of people; a lower number is also wakai (wakai bangou) |
+| 海外旅行 | かいがいりょこう | 出国旅游（名）//(n) overseas trip; travel abroad — kaigai ryokou ni iku = go on a trip abroad |
+| 入国 | にゅうこく | 入境（名、可作动词）//(n, suru-verb) entering a country; immigration — opposite: shukkoku (leaving the country) |
+| パスポート | ぱすぽーと | 护照（名）//(n) passport — needed to enter or leave Japan; residents also carry a residence card |
+| 会議 | かいぎ | 会议（名）//(n) meeting; conference — from small office meetings to international conferences; kaigi ga aru = have a meeting |
+| 電話が鳴る | でんわがなる | 电话响（惯用语）//(expr) the phone rings — naru = to ring, to sound (intransitive) |
+| 日程 | にってい | 日程（名）//(n) schedule; itinerary; dates — dates of a trip or event; yotei is one's plans |
+| 明るい | あかるい | 明亮的；开朗的（形容词）//(i-adj) bright; light; cheerful — also of personality: cheerful, outgoing |
 
 ---
 

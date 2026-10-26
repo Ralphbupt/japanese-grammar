@@ -4,40 +4,40 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 部長 | ぶちょう | 部长//department head |
-| 部下 | ぶか | 下属//subordinate |
-| 残業 | ざんぎょう | 加班//overtime |
-| 習う | ならう | 学习（跟人学）//to learn from |
-| 廊下 | ろうか | 走廊//hallway |
-| 立つ | たつ | 站//to stand |
-| 自由 | じゆう | 自由//freedom |
-| 自己紹介 | じこしょうかい | 自我介绍//self-introduction |
-| 確認 | かくにん | 确认//confirmation |
-| 野菜 | やさい | 蔬菜//vegetables |
-| 上司 | じょうし | 上司//boss |
-| 練習 | れんしゅう | 练习//practice |
-| 大量 | たいりょう | 大量//large amount |
-| 命令 | めいれい | 命令//command |
-| 教室 | きょうしつ | 教室//classroom |
-| 小説 | しょうせつ | 小说//novel |
-| 建物 | たてもの | 建筑//building |
-| 建てる | たてる | 建造//to build |
-| 愛する | あいする | 爱//to love |
-| 騒ぐ | さわぐ | 吵闹//to make noise |
-| 眠る | ねむる | 睡//to sleep |
-| 泣く | なく | 哭//to cry |
-| 踏む | ふむ | 踩//to step on |
-| 叱る | しかる | 批评//to scold |
-| 誘う | さそう | 邀请//to invite |
-| 褒める | ほめる | 表扬//to praise |
-| 盗む | ぬすむ | 偷//to steal |
-| 手伝う | てつだう | 帮忙//to help |
-| 発表 | はっぴょう | 发表//presentation |
-| 運転 | うんてん | 驾驶//driving |
-| 感動 | かんどう | 感动//to be moved |
-| 経験 | けいけん | 经验//experience |
-| 留学 | りゅうがく | 留学//study abroad |
-| 相談 | そうだん | 商量//consultation |
+| 部長 | ぶちょう | 部长；部门经理（名）//(n) department head; department manager — also used as a title after a surname instead of "Mr./Ms." |
+| 部下 | ぶか | 下属；部下（名）//(n) subordinate; someone who works under you — opposite of joushi (boss); sounds hierarchical, so not used when addressing your team |
+| 残業 | ざんぎょう | 加班（名、可作动词）//(n, suru-verb) overtime (work); working late — very common in Japanese workplaces; zangyou-dai = overtime pay |
+| 習う | ならう | 学习（他动词）——跟老师学技能//(v, trans.) to learn; to take lessons in — from a teacher (piano, cooking); studying on your own is benkyou suru |
+| 廊下 | ろうか | 走廊（名）//(n) hallway; corridor — inside a building (school, house, office) |
+| 立つ | たつ | 站；站立（自动词）//(v, intrans.) to stand; to stand up — te-form tatte; transitive pair: tateru (to stand something up) |
+| 自由 | じゆう | 自由；随意（形容动词、名）//(na-adj, n) free; freedom — jiyuu ni = freely, as one likes; jiyuu jikan = free time |
+| 自己紹介 | じこしょうかい | 自我介绍（名、可作动词）//(n, suru-verb) self-introduction — the standard short speech at the start of class or a job |
+| 確認 | かくにん | 确认；核实（名、可作动词）//(n, suru-verb) confirmation; checking; verification — double-checking facts, schedules or documents; constant at work |
+| 野菜 | やさい | 蔬菜（名）//(n) vegetable; vegetables — no plural in Japanese, so one word covers one or many |
+| 上司 | じょうし | 上司；上级（名）//(n) boss; superior (at work) — anyone above you in rank, not only your direct manager |
+| 練習 | れんしゅう | 练习（名、可作动词）//(n, suru-verb) practice; training; drill — practicing a skill, sport, instrument or language |
+| 大量 | たいりょう | 大量（名、形容动词）//(n, na-adj) large quantity; a great deal — slightly formal; tairyou seisan = mass production |
+| 命令 | めいれい | 命令（名、可作动词）//(n, suru-verb) order; command — a strong top-down order, much stronger than tanomu (ask) |
+| 教室 | きょうしつ | 教室；（兴趣）班（名）//(n) classroom; class (for lessons) — also a hobby class: ryouri kyoushitsu = cooking class |
+| 小説 | しょうせつ | 小说（名）//(n) novel; fiction — shousetsuka = novelist |
+| 建物 | たてもの | 建筑物；楼房（名）//(n) building; structure |
+| 建てる | たてる | 建造；盖（房子）（他动词）//(v, trans.) to build; to erect — houses and buildings; making things in general is tsukuru |
+| 愛する | あいする | 爱；热爱（他动词）//(v, trans.) to love (deeply) — strong and a bit literary; everyday speech uses suki da |
+| 騒ぐ | さわぐ | 吵闹；起哄（自动词）//(v, intrans.) to make noise; to be rowdy; to make a fuss — loud, disruptive behavior; also the media or public making a fuss over something |
+| 眠る | ねむる | 睡觉；入睡（自动词）//(v, intrans.) to sleep; to fall asleep — the state of being asleep; neru also just means going to bed |
+| 泣く | なく | 哭；哭泣（自动词）//(v, intrans.) to cry; to weep — of people; animals and birds use a homophone written with another kanji (naku, to chirp or bark) |
+| 踏む | ふむ | 踩；踏（他动词）//(v, trans.) to step on; to tread on — often by accident (a foot, the brake); ashi o fumareta = had my foot stepped on |
+| 叱る | しかる | 训斥；责骂（他动词）——上对下的批评//(v, trans.) to scold; to tell off — a parent, teacher or boss correcting someone; okoru is just getting angry; often passive: shikarareta |
+| 誘う | さそう | 邀请；约（他动词）//(v, trans.) to invite; to ask (someone) out — to join you somewhere; sasotte kureta = they invited me |
+| 褒める | ほめる | 表扬；夸奖（他动词）//(v, trans.) to praise; to compliment — opposite of shikaru (scold); often passive: sensei ni homerareta |
+| 盗む | ぬすむ | 偷；盗窃（他动词）//(v, trans.) to steal — "have something stolen" is ~o nusumareta, the classic suffering passive |
+| 手伝う | てつだう | 帮忙；帮助（他动词）//(v, trans.) to help (with a task); to assist — hands-on help with work or chores; tasukeru = rescue or help someone in trouble |
+| 発表 | はっぴょう | 发表；做报告；公布（名、可作动词）——日语多指口头报告//(n, suru-verb) presentation; announcement — giving a talk in class, or making results public |
+| 運転 | うんてん | 驾驶；开车（名、可作动词）//(n, suru-verb) driving; operation — driving a car, or running a machine or train service |
+| 感動 | かんどう | 感动（名、可作动词）//(n, suru-verb) being deeply moved; being touched — by a film, music or someone's kindness; kandou-teki = moving |
+| 経験 | けいけん | 经验；经历（名、可作动词）//(n, suru-verb) experience — both a single event you went through (keiken suru) and accumulated expertise (keiken ga aru) |
+| 留学 | りゅうがく | 留学（名、可作动词）//(n, suru-verb) studying abroad — the destination takes ni (Nihon ni ryuugaku suru); ryuugakusei = international student, including foreigners in Japan |
+| 相談 | そうだん | 商量；咨询（名、可作动词）——不只是商量，也指找人咨询//(n, suru-verb) consultation; talking over; asking for advice — ni soudan suru = ask someone's advice; not only discussing as equals |
 
 ---
 
