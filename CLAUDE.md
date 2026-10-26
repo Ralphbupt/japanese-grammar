@@ -106,8 +106,6 @@ grammar/
   guides/ comparison pages + JLPT exam guide (not a level)
 pages/
   about.md               (bilingual About page source)
-data/
-  anki-cards.json         (curated Anki card data, WIP)
 audio/
   s{hash}.mp3             (pre-generated TTS, one file per distinct sentence)
 site/                     (ai-assistant.{js,css}, settings-modal.js, sw.js — copied/bundled into dist/)
