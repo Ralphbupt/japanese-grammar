@@ -1020,6 +1020,70 @@ function tagElements(html) {
   );
 }
 
+// Romaji the way English-speaking learners type it in a search box: no
+// long-vowel macrons (shou, saichuu), を as "wo", particles split off
+// (ni taishite, koto ni) but conjugated endings kept on their word
+// (mashou, kamoshirenai, kagirazu). A kana gloss after kanji is its reading
+// (方（かた） → kata); other kana in （） is optional (以上（は） → ijou (wa)).
+const ROMAJI_PARTICLES = new Set(["wa", "ga", "wo", "o", "ni", "de", "to", "mo", "ka", "no", "ya", "ba", "e", "yori", "kara", "made", "koso", "dake"]);
+const ROMAJI_FIXES = [
+  [/\btoyuu\b/g, "to iu"], [/\bkotoni\b/g, "koto ni"], [/\btotomoni\b/g, "to tomo ni"],
+  [/\bkaraniwa\b/g, "kara ni wa"], [/\batode\b/g, "ato de"], [/\bwarini\b/g, "wari ni"],
+  [/\bkano you\b/g, "ka no you"], [/\bo sore\b/g, "osore"], [/\bni kui\b/g, "nikui"],
+  [/\bbetsuni\b/g, "betsu ni"], [/\bsorenishitemo\b/g, "sore ni shite mo"], [/\bsorenanoni\b/g, "sore na no ni"],
+  [/datsuta/g, "datta"], // the converter spells out the っ of だった
+];
+async function romajiOf(kuro, ja) {
+  ja = ja.replace(/[一-鿿]+（([ぁ-ゟ]{2,})）/g, "$1");
+  const parts = [];
+  for (const seg of ja.split(/(（[ぁ-ゟ]+）|を|[〜～]|\s*[\/／・]\s*|\s+vs\s+)/).filter(s => s && s.trim())) {
+    const opt = seg.match(/^（(.+)）$/);
+    if (opt) parts.push(`(${await romajiOf(kuro, opt[1])})`);
+    else if (seg === "を") parts.push("wo");
+    else if (/^[〜～]$/.test(seg)) parts.push("~");
+    else if (/^\s*[\/／・]\s*$/.test(seg)) parts.push("/");
+    else if (/vs/.test(seg)) parts.push("vs");
+    else {
+      const sokuon = seg.startsWith("っ");
+      let r = await kuro.convert(sokuon ? seg.slice(1) : seg, { to: "romaji", mode: "spaced", romajiSystem: "hepburn" });
+      if (sokuon) r = r[0] + r;
+      r = r.replace(/ō/g, "ou").replace(/ū/g, "uu").replace(/ā/g, "aa").replace(/ē/g, "ee").replace(/ī/g, "ii");
+      // Glue conjugation endings back onto their stem unless it is a particle.
+      const toks = r.split(/\s+/);
+      const out = [];
+      for (const t of toks) {
+        const prev = out[out.length - 1];
+        if (prev && !ROMAJI_PARTICLES.has(prev) && /^(te|ta|tara|tari|nai|zu|n|u|masu|mase|rare|reru|se)$/.test(t)) out[out.length - 1] = prev + t;
+        else out.push(t);
+      }
+      r = out.join(" ");
+      if (/^に/.test(seg) && /^ni\S/.test(r)) r = "ni " + r.slice(2);
+      parts.push(r);
+    }
+  }
+  let r = parts.join(" ").replace(/\s+/g, " ").replace(/~\s+/g, "~").trim();
+  for (const [re, to] of ROMAJI_FIXES) r = r.replace(re, to);
+  return r;
+}
+
+// English side of a numbered grammar-point heading ("3. 〜だけに (Precisely
+// because…)") gets the pattern's romaji after it — learners search
+// "dake ni grammar", not だけに. Only when the heading starts with the
+// Japanese pattern and it ends at "(", "—" or the end of the heading.
+async function addRomaji(kuro, html) {
+  const JA = "[〜～ぁ-ゟ゠-ヿ一-鿿（）①-⑩]";
+  const re = new RegExp(`(<h2\\b[^>]*>.*?<span class="lang-en">)(\\d+\\.\\s*)(${JA}+(?:\\s*(?:[\\/／・]|vs)\\s*${JA}+)*)(?=\\s*(?:\\(|—|</span>))`, "g");
+  const pats = [];
+  html.replace(re, (m, pre, num, pat) => { pats.push(pat); return m; });
+  const out = [];
+  for (const pat of pats) out.push(/[ぁ-ゟ゠-ヿ]/.test(pat) ? await romajiOf(kuro, pat) : "");
+  let i = 0;
+  return html.replace(re, (m, pre, num, pat) => {
+    const r = out[i++];
+    return r ? `${pre}${num}${pat} <span class="romaji">${r}</span>` : m;
+  });
+}
+
 // Core: add furigana to a text node via kuroshiro
 async function furiganaText(kuro, text) {
   if (!/[\u4e00-\u9faf\u3400-\u4dbf]/.test(text)) return text;
@@ -1684,6 +1748,7 @@ async function main() {
 
       // Add furigana (kana-based detection)
       console.log(`  Processing ${file.id}...`);
+      html = await addRomaji(kuro, html);
       html = await addFurigana(kuro, html);
 
       // Tag <li data-ja> example sentences with audio IDs. Practice sections
@@ -1955,12 +2020,12 @@ async function main() {
     <button id="settings-btn" type="button" class="nav-tool-btn nav-tool-extra" aria-label="设置 / Settings" title="设置 / Settings">${ICON_SETTINGS}</button>
   </div>
   <div class="nav-scroll">
-  <div class="nav-header"><a href="${SITE_PATH}" style="color:inherit;text-decoration:none;">日语语法笔记</a></div>
+  <div class="nav-header"><a href="${SITE_PATH}" style="color:inherit;text-decoration:none;"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a></div>
   ${sidebarHtml.join("\n  ")}
   </div>
   <div class="nav-footer">
     <a href="https://podcast.jpnotes.dev/" target="_blank">Podcast</a>
-    <a href="${SITE_PATH}about/">关于</a>
+    <a href="${SITE_PATH}about/"><span class="lang-zh">关于</span><span class="lang-en">About</span></a>
     <a href="https://github.com/Ralphbupt" target="_blank">GitHub</a>
     <a href="https://liko.page/" target="_blank" rel="author">liko.page</a>
   </div>
@@ -3700,6 +3765,7 @@ html.theme-dark .speak-btn:hover { border-color: var(--accent); }
 .cross-link:hover .cross-link-level { color: rgba(255,255,255,.9); background: rgba(255,255,255,.18); }
 .cross-link-term { font-weight: 600; }
 .cross-link-desc { opacity: .8; font-size: .88em; margin-left: .35em; }
+h2 .romaji { font-weight: 400; font-size: .7em; color: var(--text-muted); letter-spacing: .01em; }
 .cross-link-desc::before { content: "· "; opacity: .55; }
 .cross-link-level {
   display: inline-block; margin-left: .4em;
