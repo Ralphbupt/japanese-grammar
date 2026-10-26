@@ -17,12 +17,12 @@ The grammar notes are published as a static site at **https://jpnotes.dev/** (cu
 ### Features
 - Sidebar navigation by JLPT level (hover-to-expand, available on all pages)
 - Element-level furigana on Japanese text via `data-ja` attribute
-- Bilingual content (Chinese + English) with language toggle button
+- Bilingual content (Chinese + English): lesson / checklist / guide pages are published once per language (below); home, level overviews, hubs and About stay bilingual with a language toggle
 - Dark mode (3-state: auto/light/dark) with `theme-dark`/`theme-light` classes on `<html>`
 - 🔊 TTS audio on example sentences (pre-generated Edge TTS, fallback: none)
 - Cross-links between related grammar points (25 per page, descriptive anchor text)
 - Guides (`grammar/guides/*.md` → `/<slug>/`, hub at `/guides/`, sidebar group 专题): A-vs-B comparison pages (は vs が, から vs ので …) and the JLPT exam guide (`jlpt-*` sorts first). Same markdown format as lessons; prev/next stay inside the group; not read by build-anki.js
-- `/zh/<page>/` Chinese-only copy of every lesson / checklist / guide: English blocks stripped inside `<main>` (`localizeZh()`), Chinese `<title>`/description, internal links rewritten to `/zh/`, `data-force-lang="zh"` (switching to English in settings navigates to the bilingual page). hreflang en / zh-Hans / x-default on both pages and in the sitemap; giscus thread and AI chat history are shared with the bilingual page
+- One page per language for every lesson / checklist / guide, from `PAGE_LANGS` in build.js: `/<page>/` English only, `/zh/<page>/` Chinese only (`localizePage()` strips the other languages' blocks inside `<main>`; non-root copies get their own `<title>`/description and internal links rewritten to `/zh/`). `data-force-lang` pins the UI language and `data-alt-<code>` is where the language switch goes; `LANG_REDIRECT_JS` in `<head>` sends a reader to their language's copy (saved pref; a zh browser with no pref only on the root page), and clicking `.alt-lang` saves the choice. hreflang en / zh-Hans / x-default on every copy and in the sitemap; giscus thread and AI chat history are shared across copies. A new language = a `PAGE_LANGS` entry + `:::xx` blocks + lang-xx CSS, and the `isEn` pref becoming a language code
 - SEO titles: `seo-titles.js` maps page id → `{ en, zh, desc?, descZh?, level? }`, phrased like real searches (pattern + romaji + vs/meaning; zh: 区别/用法). Pages without an entry fall back to the template. `python3 tools/gsc-report.py` lists high-impression / low-click pages and their queries — the pages worth retitling
 - Per-lesson meta: last-updated date + reading time
 - SEO: unique meta descriptions, Article+LearningResource schema, FAQ schema
