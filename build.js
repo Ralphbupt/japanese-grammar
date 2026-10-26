@@ -191,6 +191,26 @@ const APP_PREFS_JS = `(function(){
   if (isEn) document.body.classList.add('lang-en');
 })();`;
 
+// <head> of single-language pages: a reader whose language is another one
+// (saved preference, or a zh browser with none saved landing on the root
+// English page) goes to that language's copy before anything paints. Only the
+// root page follows the browser language, so a /zh/ link always shows
+// Chinese. Clicking a .alt-lang link saves that choice.
+const LANG_REDIRECT_JS = `(function(){
+  var html = document.documentElement, page = html.getAttribute('data-force-lang');
+  var prefs; try { prefs = JSON.parse(localStorage.getItem('jp_grammar_prefs')) || {}; } catch(e) { prefs = {}; }
+  var want = ('isEn' in prefs) ? (prefs.isEn ? 'en' : 'zh')
+    : (page === 'en' && /^zh/i.test(navigator.language || '')) ? 'zh' : page;
+  var alt = want !== page && html.getAttribute('data-alt-' + want);
+  if (alt) { location.replace(alt + location.hash); return; }
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest && e.target.closest('a.alt-lang[hreflang]');
+    if (!a) return;
+    prefs.isEn = !/^zh/i.test(a.getAttribute('hreflang'));
+    try { localStorage.setItem('jp_grammar_prefs', JSON.stringify(prefs)); } catch(e) {}
+  });
+})();`;
+
 const RUBY_PREF_JS = `(function(){
   var rubyToggle = document.getElementById('ruby-toggle');
   if (!rubyToggle) return;
@@ -875,16 +895,33 @@ function stripLangBlocks(html, lang) {
   return out + html.slice(i);
 }
 
-// Turn a rendered bilingual lesson page into its /zh/ copy: drop the English
-// blocks inside <main>, and point links to other pages that have a zh copy at
-// /zh/… so readers (and crawlers) stay on the Chinese side.
-function localizeZh(html, zhIds) {
+// Languages a lesson / checklist / guide is published in, one page each. The
+// first is the default and lives at the root (/lessonNN/); the others at
+// /<dir>lessonNN/. A page keeps only its own :::xx blocks (lang-xx), and the
+// pages are tied together with hreflang. Adding a language: an entry here,
+// :::xx blocks in the markdown, and its lang-xx CSS + preference handling.
+const PAGE_LANGS = [
+  { code: "en", dir: "", htmlLang: "en", hreflang: "en", ogLocale: "en_US", label: "English" },
+  { code: "zh", dir: "zh/", htmlLang: "zh-CN", hreflang: "zh-Hans", ogLocale: "zh_CN", label: "中文" },
+];
+
+// Turn a rendered multilingual page into its `lang` copy: drop the other
+// languages' blocks inside <main>, and (outside the root language) point
+// links to pages that have a copy in this language at /<dir>… so readers and
+// crawlers stay on the same side.
+function localizePage(html, lang, ids) {
   const a = html.indexOf('<main id="content">');
   const b = html.indexOf("</main>", a);
-  if (a >= 0 && b > a) html = html.slice(0, a) + stripLangBlocks(html.slice(a, b), "en") + html.slice(b);
+  if (a >= 0 && b > a) {
+    let main = html.slice(a, b);
+    for (const other of PAGE_LANGS) if (other.code !== lang.code) main = stripLangBlocks(main, other.code);
+    html = html.slice(0, a) + main + html.slice(b);
+  }
+  if (!lang.dir) return html;
   const origin = SITE.replace(/^(https?:\/\/[^/]+).*$/, "$1").replace(/[.]/g, "\\.");
   const link = new RegExp(`(<a\\b[^>]*?\\bhref=")(?:${origin})?${SITE_PATH}([A-Za-z0-9_-]+)/(?=[#"])`, "g");
-  return html.replace(link, (m, pre, id) => (zhIds.has(id) ? `${pre}${SITE_PATH}zh/${id}/` : m));
+  // .alt-lang links point at the other languages on purpose: leave them be.
+  return html.replace(link, (m, pre, id) => (ids.has(id) && !/\balt-lang\b/.test(pre) ? `${pre}${SITE_PATH}${lang.dir}${id}/` : m));
 }
 
 // ─── Furigana via kuroshiro ───
@@ -1576,7 +1613,8 @@ async function main() {
       } else if (cleanPoints.length > 0) {
         const leadPoints = cleanPoints.slice(0, 6);
         const pointsZh = leadPoints.map(p => `<strong>${p}</strong>`).join("、");
-        const seoLead = `<p class="seo-lead">本课讲解 ${groupLevel} 语法 ${pointsZh} 的接续规则、含义、例句辨析与易错点对比，配套练习题与 JLPT ${groupLevel} 备考要点。</p>`;
+        const pointsEn = leadPoints.map(p => `<strong>${p}</strong>`).join(", ");
+        const seoLead = `<p class="seo-lead"><span class="lang-zh">本课讲解 ${groupLevel} 语法 ${pointsZh} 的接续规则、含义、例句辨析与易错点对比，配套练习题与 JLPT ${groupLevel} 备考要点。</span><span class="lang-en">This lesson covers the ${groupLevel} grammar points ${pointsEn}: how they conjugate, what they mean, example sentences, comparisons and common mistakes, plus practice questions for the JLPT ${groupLevel}.</span></p>`;
         html = html.replace(/(<\/h1>)/, `$1\n${seoLead}`);
       }
 
@@ -1669,6 +1707,9 @@ async function main() {
       // Description: first parenthesized note, used as anchor text suffix.
       const descMatch = content.match(/[（(]([^）)]+)[）)]/);
       const description = descMatch ? descMatch[1].trim() : null;
+      const enSpan = rawContent.match(/<span class="lang-en">([\s\S]*?)<\/span>/);
+      const descEnMatch = enSpan && enSpan[1].replace(/<[^>]+>/g, "").match(/[（(]([^）)]+)[）)]/);
+      const descriptionEn = descEnMatch ? descEnMatch[1].trim() : null;
       // Grammar-point sections start with "N." per the lesson template.
       // Index each as one searchable point that deep-links to its anchor.
       if (/^\d+[.\．、]/.test(content)) {
@@ -1695,7 +1736,7 @@ async function main() {
         // Skip generic section labels that show up across every lesson.
         if (/^(辨析|含义|用法|接続|接续|例句|練習|练习|本课|总结|计划|易错点)$/.test(term)) continue;
         if (!grammarIndex.has(term)) grammarIndex.set(term, []);
-        grammarIndex.get(term).push({ id: lesson.id, slug, description, level: lesson.level });
+        grammarIndex.get(term).push({ id: lesson.id, slug, description, descriptionEn, level: lesson.level });
       }
     }
     // Lessons with no numbered points (checklists, 五十音, 总复习) stay
@@ -1722,12 +1763,10 @@ async function main() {
         // Descriptive anchor: pattern + (description + level tag) so the
         // link text tells readers and Google what the target page contains.
         const levelTag = loc.level ? `<span class="cross-link-level">${loc.level}</span>` : "";
-        const descShort = loc.description && loc.description.length > 14
-          ? loc.description.slice(0, 13) + "…"
-          : loc.description;
-        const descPart = descShort
-          ? `<span class="cross-link-desc">${descShort}</span>`
-          : "";
+        const short = (d, max) => (d && d.length > max ? d.slice(0, max - 1) + "…" : d || "");
+        const descZh = short(loc.description, 14), descEn = short(loc.descriptionEn, 28);
+        const descPart = (descZh ? `<span class="cross-link-desc lang-zh">${descZh}</span>` : "")
+          + (descEn ? `<span class="cross-link-desc lang-en">${descEn}</span>` : "");
         const titleAttr = (loc.description
           ? `${loc.description} — ${loc.level || ""} ${loc.id}`
           : `${loc.level || ""} ${loc.id}`).trim();
@@ -2152,16 +2191,13 @@ ${APP_PREFS_JS}
   fs.copyFileSync(path.join(__dirname, "site", "sw.js"), path.join(__dirname, "dist", "sw.js"));
 
   // ─── Generate individual lesson pages ───
-  const zhPageIds = new Set(lessonPages.map(l => l.id));
+  const localizedPageIds = new Set(lessonPages.map(l => l.id));
   for (let li = 0; li < lessonPages.length; li++) {
     const lesson = lessonPages[li];
     // Prev/next stay inside the course or inside the guides, never across.
     const sameKind = (l) => l && (l.level === "guides") === (lesson.level === "guides");
     const prevLesson = sameKind(lessonPages[li - 1]) ? lessonPages[li - 1] : null;
     const nextLesson = sameKind(lessonPages[li + 1]) ? lessonPages[li + 1] : null;
-    const lessonDir = path.join(__dirname, "dist", lesson.id);
-    fs.mkdirSync(lessonDir, { recursive: true });
-    const lessonUrl = `${SITE}${lesson.id}/`;
     // SEO-friendly English-first title & description targeting English-speaking
     // JLPT learners. The Japanese grammar terms (cleanPoints) are kept verbatim
     // since learners search them directly (e.g. "おかげで grammar"); the wrapper
@@ -2252,6 +2288,7 @@ ${APP_PREFS_JS}
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>${LANG_REDIRECT_JS}</script>
 <title>${v.title}</title>
 <meta name="description" content="${v.desc.replace(/"/g, '&quot;')}">
 <meta name="keywords" content="${v.keywords.replace(/"/g, '&quot;')}">
@@ -2412,35 +2449,38 @@ ${APP_PREFS_JS}
 </body>
 </html>`;
 
-    // Two URLs per page: /lessonNN/ (bilingual, English-first <title> for
-    // Google) and /zh/lessonNN/ (Chinese only, Chinese <title> for Bing China),
-    // tied together with hreflang. The zh copy drops the English blocks so the
-    // two are genuinely different documents rather than near-duplicates.
-    const zhUrl = `${SITE}zh/${lesson.id}/`;
-    const hreflangLinks = `\n<link rel="alternate" hreflang="en" href="${lessonUrl}">\n<link rel="alternate" hreflang="zh-Hans" href="${zhUrl}">\n<link rel="alternate" hreflang="x-default" href="${lessonUrl}">`;
+    // One URL per language (PAGE_LANGS): /lessonNN/ in English with an
+    // English <title> for Google, /zh/lessonNN/ in Chinese with a Chinese
+    // <title> for Bing China, tied together with hreflang. Each copy keeps only
+    // its own language's blocks, so they are genuinely different documents.
     const zhTitle = seo.zh || buildLessonTitleZh(lesson, cleanPoints, schemaLevel);
     const zhDesc = seo.descZh || buildLessonDescZh(lesson, cleanPoints, schemaLevel);
-    const lessonHtml = renderLessonPage({
-      htmlLang: "ja", htmlAttrs: "", title: lessonTitle, desc: lessonDesc,
-      keywords: lessonKeywords, url: lessonUrl, headLinks: prevLink + nextLink + hreflangLinks,
-      ogLocale: "ja_JP", ogLocaleAlt: "zh_CN", inLanguage: '["ja", "zh-CN", "en"]',
-      altLangLink: `<a class="alt-lang" href="${zhUrl}" hreflang="zh-Hans" lang="zh-CN">纯中文版</a>`,
-    });
-    fs.writeFileSync(path.join(lessonDir, "index.html"), lessonHtml, "utf-8");
-
-    const zhRel = (rel, l) => (l ? `\n<link rel="${rel}" href="${SITE}zh/${l.id}/">` : "");
     const zhKeywords = [...cleanPoints.slice(0, 4).flatMap(p => [`${p} 用法`, `${p} 意思`]),
       cleanPoints.length >= 2 ? `${cleanPoints[0]}和${cleanPoints[1]}的区别` : null,
       `JLPT ${schemaLevel} 语法`, `日语 ${schemaLevel} 语法总结`, "日语语法笔记"].filter(Boolean).join(", ");
-    const zhHtml = localizeZh(renderLessonPage({
-      htmlLang: "zh-CN", htmlAttrs: ` data-force-lang="zh" data-alt-en="${SITE_PATH}${lesson.id}/"`, title: zhTitle, desc: zhDesc,
-      keywords: zhKeywords, url: zhUrl, headLinks: zhRel("prev", prevLesson) + zhRel("next", nextLesson) + hreflangLinks,
-      ogLocale: "zh_CN", ogLocaleAlt: "ja_JP", inLanguage: '["zh-CN", "ja"]',
-      altLangLink: `<a class="alt-lang" href="${lessonUrl}" hreflang="en" lang="en">English</a>`,
-    }), zhPageIds);
-    const zhDir = path.join(__dirname, "dist", "zh", lesson.id);
-    fs.mkdirSync(zhDir, { recursive: true });
-    fs.writeFileSync(path.join(zhDir, "index.html"), zhHtml, "utf-8");
+    const pageMeta = {
+      en: { title: lessonTitle, desc: lessonDesc, keywords: lessonKeywords },
+      zh: { title: zhTitle, desc: zhDesc, keywords: zhKeywords },
+    };
+    const langUrl = (lang, l = lesson) => `${SITE}${lang.dir}${l.id}/`;
+    const hreflangLinks = PAGE_LANGS.map(lang => `\n<link rel="alternate" hreflang="${lang.hreflang}" href="${langUrl(lang)}">`).join("")
+      + `\n<link rel="alternate" hreflang="x-default" href="${langUrl(PAGE_LANGS[0])}">`;
+    for (const lang of PAGE_LANGS) {
+      const others = PAGE_LANGS.filter(o => o !== lang);
+      const rel = (r, l) => (l ? `\n<link rel="${r}" href="${langUrl(lang, l)}">` : "");
+      const html = localizePage(renderLessonPage({
+        ...pageMeta[lang.code], htmlLang: lang.htmlLang, url: langUrl(lang),
+        // data-force-lang pins the UI language; data-alt-xx is where switching
+        // to xx in settings goes.
+        htmlAttrs: ` data-force-lang="${lang.code}"` + others.map(o => ` data-alt-${o.code}="${SITE_PATH}${o.dir}${lesson.id}/"`).join(""),
+        headLinks: rel("prev", prevLesson) + rel("next", nextLesson) + hreflangLinks,
+        ogLocale: lang.ogLocale, ogLocaleAlt: others[0].ogLocale, inLanguage: `["${lang.htmlLang}", "ja"]`,
+        altLangLink: others.map(o => `<a class="alt-lang" href="${langUrl(o)}" hreflang="${o.hreflang}" lang="${o.htmlLang}">${o.label}</a>`).join(""),
+      }), lang, localizedPageIds);
+      const dir = path.join(__dirname, "dist", lang.dir, lesson.id);
+      fs.mkdirSync(dir, { recursive: true });
+      fs.writeFileSync(path.join(dir, "index.html"), html, "utf-8");
+    }
   }
 
   // ─── Level overview pages (/N5/, /N4/, /N3/, /N2/) ───
@@ -2932,12 +2972,11 @@ ${APP_PREFS_JS}
   }
   for (const lesson of lessonPages) {
     const mod = gitLastModTime(lesson.filePath) || today;
-    // Each page and its /zh/ copy list both language versions (hreflang).
-    const alternates = `
-    <xhtml:link rel="alternate" hreflang="en" href="${SITE}${lesson.id}/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="${SITE}zh/${lesson.id}/"/>
+    // Every language version lists all of them (hreflang).
+    const alternates = PAGE_LANGS.map(lang => `
+    <xhtml:link rel="alternate" hreflang="${lang.hreflang}" href="${SITE}${lang.dir}${lesson.id}/"/>`).join("") + `
     <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${lesson.id}/"/>`;
-    for (const loc of [`${SITE}${lesson.id}/`, `${SITE}zh/${lesson.id}/`]) {
+    for (const loc of PAGE_LANGS.map(lang => `${SITE}${lang.dir}${lesson.id}/`)) {
       sitemapUrls.push(`  <url>
     <loc>${loc}</loc>
     <lastmod>${mod}</lastmod>

@@ -66,12 +66,13 @@
   function toggleLang() {
     var isEn = !isEnUi();
     savePrefs({ isEn: isEn });
-    // /zh/ pages carry no English text: switching to English means going to
-    // the bilingual page, which picks the saved preference up.
-    var altEn = document.documentElement.getAttribute('data-alt-en');
-    if (isEn && altEn) {
-      if (window.gaEvent) window.gaEvent('language_toggle', { to: 'en' });
-      location.href = altEn;
+    // Lesson pages carry one language each: switching goes to the other
+    // language's copy (data-alt-xx).
+    var to = isEn ? 'en' : 'zh';
+    var alt = document.documentElement.getAttribute('data-alt-' + to);
+    if (alt) {
+      if (window.gaEvent) window.gaEvent('language_toggle', { to: to });
+      location.href = alt;
       return;
     }
     document.body.classList.toggle('lang-en', isEn);
