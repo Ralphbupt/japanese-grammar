@@ -12,21 +12,21 @@ This lesson covers quoting and thinking (と思う, かどうか), likeness (の
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 意見 | いけん | 意见//opinion |
-| 将来 | しょうらい | 将来//future |
-| 合格 | ごうかく | 合格//passing (an exam) |
-| 不思議 | ふしぎ | 不可思议//mysterious |
-| 匂い | におい | 气味//smell |
-| 焦げる | こげる | 烧焦//to burn/scorch |
-| 宿題 | しゅくだい | 作业//homework |
-| 必要 | ひつよう | 必要//necessary |
-| 比べる | くらべる | 比较//to compare |
-| 花火 | はなび | 烟花//fireworks |
-| 参加 | さんか | 参加//participation |
-| 正直 | しょうじき | 坦率//honest |
-| 手続き | てつづき | 手续//procedure |
-| 片付ける | かたづける | 收拾整理//to tidy up |
-| 雰囲気 | ふんいき | 氛围//atmosphere |
+| 意見 | いけん | 意见；看法（名）——中性的“看法”，不一定是批评//(n) opinion; view — neutral, not criticism; iken o iu = give one's opinion; iken suru can mean "admonish" |
+| 将来 | しょうらい | 将来；未来（名、副词）//(n, adv) future; in the future — one's personal future: shourai no yume = dream for the future |
+| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取//(n, suru-verb) passing (an exam); being accepted (to a school) — shiken ni goukaku suru = pass an exam; mainly exams and admissions |
+| 不思議 | ふしぎ | 不可思议；奇怪（形容动词）//(na-adj) strange; mysterious; wondrous — puzzling, hard to explain; not necessarily negative |
+| 匂い | におい | 气味；香味（名）//(n) smell; scent — usually neutral or pleasant; a bad smell is often written with another kanji |
+| 焦げる | こげる | 烧焦；烤糊（自动词）//(v, intrans.) to burn; to get scorched — food burns in a pan or oven |
+| 宿題 | しゅくだい | 作业（名）//(n) homework; assignment — shukudai o suru = do homework |
+| 必要 | ひつよう | 必要；需要（形容动词、名）//(na-adj, n) necessary; need; necessity — "there is a need to…" |
+| 比べる | くらべる | 比较；对比（他动词）//(v, trans.) to compare — to kurabete = compared with |
+| 花火 | はなび | 烟花；烟火（名）//(n) fireworks — summer festivals; also handheld sparklers |
+| 参加 | さんか | 参加（名、可作动词）//(n, suru-verb) participation; taking part — ni sanka suru = join, take part in (an event, class, team) |
+| 正直 | しょうじき | 诚实；老实说（名、形容动词、副词）//(n, na-adj, adv) honesty; honest; frankly — at the start of a sentence, "to be honest…"; shoujiki ni iu to = honestly speaking |
+| 手続き | てつづき | 手续（名）//(n) procedure; formalities; paperwork — official processes at city hall, a bank or school |
+| 片付ける | かたづける | 收拾；整理；处理掉（他动词）//(v, trans.) to tidy up; to put away; to finish off (a task) — rooms, desks or work; intransitive pair: katazuku |
+| 雰囲気 | ふんいき | 气氛；氛围（名）//(n) atmosphere; mood; vibe — of a place, event, or a person's aura |
 
 ---
 

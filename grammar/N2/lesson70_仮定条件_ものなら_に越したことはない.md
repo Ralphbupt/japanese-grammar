@@ -12,24 +12,24 @@ This lesson covers N2 grammar for "hypothetical conditions" and "advice." 「も
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 戻る | もどる | 回去//to return |
-| 若い | わかい | 年轻的//young |
-| 叶う | かなう | 实现//to come true |
-| 逆らう | さからう | 违抗//to defy |
-| 遅刻 | ちこく | 迟到//being late |
-| 秘密 | ひみつ | 秘密//secret |
-| 漏れる | もれる | 泄露//to leak |
-| 無断 | むだん | 擅自//without permission |
-| 欠勤 | けっきん | 缺勤//absence from work |
-| 早寝早起き | はやねはやおき | 早睡早起//early to bed, early to rise |
-| 規則正しい | きそくただしい | 规律的//regular |
-| 栄養 | えいよう | 营养//nutrition |
-| バランス | バランス | 平衡//balance |
-| 備える | そなえる | 准备//to prepare |
-| 予防 | よぼう | 预防//prevention |
-| 治療 | ちりょう | 治疗//treatment |
-| 現金 | げんきん | 现金//cash |
-| 用心 | ようじん | 小心//caution |
+| 戻る | もどる | 回到；返回（自动词）//(v, intrans.) to return; to go back — to a place, a state or the past; transitive pair: modosu |
+| 若い | わかい | 年轻的（形容词）//(i-adj) young; youthful; inexperienced — of people; a lower number is also wakai (wakai bangou) |
+| 叶う | かなう | 实现；如愿（自动词）//(v, intrans.) to come true (of a wish); to be fulfilled — dreams and wishes come true |
+| 逆らう | さからう | 违抗；反抗（自动词）//(v, intrans.) to defy; to disobey; to go against — parents, bosses, or the current |
+| 遅刻 | ちこく | 迟到（名、可作动词）//(n, suru-verb) being late — for school, work or an appointment; said of people, while trains okureru (run late) |
+| 秘密 | ひみつ | 秘密（名）//(n) secret; secrecy — himitsu o mamoru = keep a secret; himitsu da yo = it's a secret |
+| 漏れる | もれる | 泄露；漏出（自动词）//(v, intrans.) to leak (out); to be disclosed — water, light, or information leaking |
+| 無断 | むだん | 擅自；未经允许（名）//(n) without permission; without notice — mostly as mudan de; mudan kekkin = absence without notice |
+| 欠勤 | けっきん | 缺勤（名、可作动词）//(n, suru-verb) absence from work — formal; absence from a job, not from school |
+| 早寝早起き | はやねはやおき | 早睡早起（名）//(n) early to bed, early to rise — healthy lifestyle phrase |
+| 規則正しい | きそくただしい | 有规律的（形容词）//(i-adj) regular; orderly; well-ordered — "a regular lifestyle" |
+| 栄養 | えいよう | 营养（名）//(n) nutrition; nourishment — "nutritional balance", "nutritious" |
+| バランス | バランス | 平衡；均衡（名）//(n) balance — balanced diet; work-life balance |
+| 備える | そなえる | 防备；准备（他动词）//(v, trans.) to prepare for; to provide against (a risk) — disasters, exams, the future |
+| 予防 | よぼう | 预防（名、可作动词）//(n, suru-verb) prevention; precaution — disease prevention; vaccination |
+| 治療 | ちりょう | 治疗（名、可作动词）//(n, suru-verb) medical treatment; cure — "receive treatment" |
+| 現金 | げんきん | 现金（名）//(n) cash — "pay in cash"; "cash only" |
+| 用心 | ようじん | 小心；警惕（名、可作动词）//(n, suru-verb) caution; care; being on guard — fire prevention, theft prevention |
 
 ---
 

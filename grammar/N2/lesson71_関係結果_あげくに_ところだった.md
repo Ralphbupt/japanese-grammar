@@ -12,24 +12,24 @@ This lesson covers N2 grammar for "expertise," "results," and "near-misses." 「
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 料理 | りょうり | 料理//cooking |
-| 右に出る者がいない | みぎにでるものがいない | 无人能出其右//unmatched |
-| 驚く | おどろく | 惊讶//to be surprised |
-| 非難 | ひなん | 指责//criticism |
-| 称賛 | しょうさん | 称赞//praise |
-| 散々 | さんざん | 彻底地//thoroughly |
-| 迷う | まよう | 犹豫//to hesitate |
-| 離婚 | りこん | 离婚//divorce |
-| 諦める | あきらめる | 放弃//to give up |
-| 事故 | じこ | 事故//accident |
-| 遅れる | おくれる | 迟到//to be late |
-| 謝る | あやまる | 道歉//to apologize |
-| 修理 | しゅうり | 修理//repair |
-| 交換 | こうかん | 更换//exchange |
-| 済む | すむ | 解决//to be settled |
-| 危うく | あやうく | 差一点//nearly |
-| ぶつかる | ぶつかる | 撞上//to collide |
-| 間に合う | まにあう | 赶上//to make it in time |
+| 料理 | りょうり | 菜；做菜（名、可作动词）——不同于中文“料理”，泛指菜肴和烹饪//(n, suru-verb) cooking; dish; cuisine — both the act and the food; Nihon ryouri = Japanese food |
+| 右に出る者がいない | みぎにでるものがいない | 无人能出其右；无人能及（惯用语）//(expr) no one can beat (them); second to none — praise for someone's skill |
+| 驚く | おどろく | 惊讶；吃惊（自动词）//(v, intrans.) to be surprised; to be astonished — ni odoroku = be surprised at; bikkuri suru is the casual word |
+| 非難 | ひなん | 指责；谴责（名、可作动词）——不是“避难”//(n, suru-verb) criticism; blame; condemnation — public criticism of a person or action |
+| 称賛 | しょうさん | 称赞；赞扬（名、可作动词）//(n, suru-verb) praise; admiration; acclaim — formal; written word for high praise |
+| 散々 | さんざん | 狠狠地；反复地（副词、形容动词）//(adv, na-adj) thoroughly; severely; at great length (negative) — sanzan mayotta = agonized for ages; sanzan datta = it was a disaster |
+| 迷う | まよう | 犹豫；迷路（自动词）//(v, intrans.) to hesitate; to be torn; to get lost — dotchi ni suru ka mayou = can't decide which; michi ni mayou = get lost |
+| 離婚 | りこん | 离婚（名、可作动词）//(n, suru-verb) divorce — "divorce X" is X to rikon suru |
+| 諦める | あきらめる | 放弃；死心（他动词）//(v, trans.) to give up; to abandon (hope); to resign oneself — accepting something is out of reach; yameru is simply stopping |
+| 事故 | じこ | 事故（名）//(n) accident; incident — traffic or industrial accidents; jiko ni au = have an accident |
+| 遅れる | おくれる | 迟到；晚点；落后（自动词）//(v, intrans.) to be late; to be delayed; to fall behind — people and trains alike; "late for X" is X ni okureru |
+| 謝る | あやまる | 道歉；赔不是（自他动词）//(v, intrans./trans.) to apologize — the person takes ni (sensei ni ayamaru); the words themselves are usually sumimasen or gomen nasai |
+| 修理 | しゅうり | 修理（名、可作动词）//(n, suru-verb) repair; fixing — repairing machines, cars, houses |
+| 交換 | こうかん | 更换；交换（名、可作动词）//(n, suru-verb) replacement; exchange; swap — replace a part; exchange gifts |
+| 済む | すむ | 了结；解决（自动词）——常用于“不用…就解决了”//(v, intrans.) to get by (without); to be settled; to end — zu ni sumu = get away without having to; also the root of sumimasen |
+| 危うく | あやうく | 差一点；险些（副词）//(adv) nearly; almost (of something bad) — ayauku ~ tokoro datta = came close to ~, narrowly escaped |
+| ぶつかる | ぶつかる | 撞上；碰上（自动词）//(v, intrans.) to collide (with); to bump into; to run into — also run into problems |
+| 間に合う | まにあう | 来得及；赶上（自动词）//(v, intrans.) to make it in time; to be in time — ni maniau (a train, a deadline); also "to be enough": maniatte imasu = no thanks, I'm fine |
 
 ---
 

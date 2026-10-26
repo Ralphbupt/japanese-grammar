@@ -12,34 +12,34 @@ This lesson covers six groups of important grammar that combine with verbs and a
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 食べる | たべる | 吃//to eat |
-| 飲む | のむ | 喝//to drink |
-| 働く | はたらく | 工作//to work |
-| 壊れる | こわれる | 坏掉//to break |
-| 割れる | われる | 碎//to crack / break |
-| 滑る | すべる | 滑//to slip |
-| 慣れる | なれる | 习惯//to get used to |
-| 心配 | しんぱい | 担心//worry |
-| 急ぐ | いそぐ | 赶//to hurry |
-| 泣く | なく | 哭//to cry |
-| 降る | ふる | 下（雨/雪）//to fall (rain/snow) |
-| 笑う | わらう | 笑//to laugh |
-| 走る | はしる | 跑//to run |
-| 使う | つかう | 使用//to use |
-| 読む | よむ | 读//to read |
-| 書く | かく | 写//to write |
-| 作る | つくる | 做//to make |
-| 静か | しずか | 安静//quiet |
-| 簡単 | かんたん | 简单//simple |
-| 複雑 | ふくざつ | 复杂//complicated |
-| 丈夫 | じょうぶ | 结实//sturdy |
-| 諦める | あきらめる | 放弃//to give up |
-| 急に | きゅうに | 突然//suddenly |
-| 箸 | はし | 筷子//chopsticks |
-| 説明書 | せつめいしょ | 说明书//instruction manual |
-| 受験 | じゅけん | 考试//taking an exam |
-| 信じる | しんじる | 相信//to believe |
-| 想像 | そうぞう | 想象//imagination |
+| 食べる | たべる | 吃（他动词）//(v, trans.) to eat — ichidan verb; medicine is nomu, not taberu |
+| 飲む | のむ | 喝；吃（药）（他动词）——吃药也用这个词//(v, trans.) to drink; to take (medicine) — pills are "drunk" in Japanese |
+| 働く | はたらく | 工作；劳动（自动词）//(v, intrans.) to work; to labor — the workplace takes de: ginkou de hataraku |
+| 壊れる | こわれる | 坏；损坏（自动词）//(v, intrans.) to break; to stop working — machines and objects; breaking it yourself is kowasu |
+| 割れる | われる | 碎；破裂（自动词）//(v, intrans.) to break; to crack — glass or dishes breaking; transitive pair: waru |
+| 滑る | すべる | 滑；打滑（自动词）//(v, intrans.) to slip; to slide; to be slippery — also slang for failing an exam |
+| 慣れる | なれる | 习惯；适应（自动词）//(v, intrans.) to get used to; to become accustomed — the thing takes ni: shigoto ni nareru |
+| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）//(n, suru-verb, na-adj) worry; concern; anxiety — X o shinpai suru = worry about X; shinpai shinaide = don't worry |
+| 急ぐ | いそぐ | 赶紧；急忙（自动词）//(v, intrans.) to hurry; to rush — te-form isoide; isoide! = hurry up! |
+| 泣く | なく | 哭；哭泣（自动词）//(v, intrans.) to cry; to weep — of people; animals and birds use a homophone written with another kanji (naku, to chirp or bark) |
+| 降る | ふる | 下（雨、雪）（自动词）//(v, intrans.) to fall (rain, snow) — only for precipitation; things dropping is ochiru |
+| 笑う | わらう | 笑（自动词）//(v, intrans.) to laugh; to smile — "laugh at X" takes o; hohoemu = to smile gently |
+| 走る | はしる | 跑；奔跑（自动词）//(v, intrans.) to run — also of vehicles (trains run); godan despite ending in -iru: hashirimasu, hashitte |
+| 使う | つかう | 使用；用（他动词）//(v, trans.) to use; to spend (time, money) — the general word for using things, tools, money or language |
+| 読む | よむ | 读；看（书报）（他动词）//(v, trans.) to read — silently or aloud; also "read" a situation: kuuki o yomu = read the room |
+| 書く | かく | 写（他动词）//(v, trans.) to write — drawing a picture is kaku with another kanji (e o kaku) |
+| 作る | つくる | 做；制作（他动词）//(v, trans.) to make; to cook; to build — broad: make food, things, friends or plans |
+| 静か | しずか | 安静；平静（形容动词）//(na-adj) quiet; calm; peaceful — of places, people or the sea; "be quiet!" is shizuka ni shite |
+| 簡単 | かんたん | 简单；容易（形容动词）//(na-adj) simple; easy — not complicated; compare yasashii (gentle, not demanding) |
+| 複雑 | ふくざつ | 复杂（形容动词）//(na-adj) complicated; complex; intricate — also mixed feelings: fukuzatsu na kimochi |
+| 丈夫 | じょうぶ | 结实；牢固；健壮（形容动词）——不是“丈夫”（老公）//(na-adj) sturdy; durable; healthy — strong objects or a robust body; not "husband" |
+| 諦める | あきらめる | 放弃；死心（他动词）//(v, trans.) to give up; to abandon (hope); to resign oneself — accepting something is out of reach; yameru is simply stopping |
+| 急に | きゅうに | 突然（副词）//(adv) suddenly; all of a sudden — unexpected change |
+| 箸 | はし | 筷子（名）//(n) chopsticks — same sound as "bridge" (hashi) but different pitch |
+| 説明書 | せつめいしょ | 说明书（名）//(n) instruction manual; instructions |
+| 受験 | じゅけん | 参加考试（名、可作动词）——多指入学考试//(n, suru-verb) taking an exam — mostly entrance exams for school or university |
+| 信じる | しんじる | 相信；信任（他动词）//(v, trans.) to believe; to trust — believe a story, trust a person; shinjirarenai = unbelievable |
+| 想像 | そうぞう | 想象（名、可作动词）//(n, suru-verb) imagination; picturing — souzou ijou = beyond what one imagined; souzou mo tsukanai = unimaginable |
 
 ---
 

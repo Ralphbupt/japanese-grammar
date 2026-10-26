@@ -12,39 +12,39 @@ This is **one of the biggest challenges** in N5-N4. All four conditional forms c
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 春 | はる | 春天//spring |
-| 夏 | なつ | 夏天//summer |
-| 秋 | あき | 秋天//autumn |
-| 冬 | ふゆ | 冬天//winter |
-| 咲く | さく | 开（花）//to bloom |
-| 雪 | ゆき | 雪//snow |
-| 氷 | こおり | 冰//ice |
-| 温度 | おんど | 温度//temperature |
-| 溶ける | とける | 融化//to melt |
-| 酒 | さけ | 酒//alcohol |
-| 歌う | うたう | 唱歌//to sing |
-| 始める | はじめる | 开始//to begin |
-| 押す | おす | 按/推//to push |
-| 曲がる | まがる | 转弯//to turn |
-| 駅 | えき | 车站//station |
-| 見える | みえる | 看得见//to be visible |
-| 合格 | ごうかく | 及格//to pass |
-| 免許 | めんきょ | 执照//license |
-| 試合 | しあい | 比赛//match |
-| 中止 | ちゅうし | 中止//cancellation |
-| 電気 | でんき | 电灯//light |
-| つく | つく | 亮（灯）；到达//to turn on |
-| 塵 | ちり | 灰尘//dust |
-| 積もる | つもる | 积累//to pile up |
-| 届く | とどく | 送达//to reach |
-| 沸く | わく | 沸腾//to boil |
-| 慣れる | なれる | 习惯//to get used to |
-| 相談する | そうだんする | 商量//to consult |
-| 卒業 | そつぎょう | 毕业//graduation |
-| 信号 | しんごう | 红绿灯//traffic light |
-| 宝くじ | たからくじ | 彩票//lottery |
-| 当たる | あたる | 中（奖）//to win |
-| 迷う | まよう | 迷路；犹豫//to get lost |
+| 春 | はる | 春天（名）//(n) spring (season) — also the start of the school and business year (April) |
+| 夏 | なつ | 夏天（名）//(n) summer |
+| 秋 | あき | 秋天（名）//(n) autumn; fall |
+| 冬 | ふゆ | 冬天（名）//(n) winter |
+| 咲く | さく | （花）开（自动词）//(v, intrans.) to bloom; to blossom — sakura ga saku; mankai = full bloom |
+| 雪 | ゆき | 雪（名）//(n) snow — "it snows" is yuki ga furu |
+| 氷 | こおり | 冰（名）//(n) ice |
+| 温度 | おんど | 温度（名）//(n) temperature — general; body temperature is taion, air temperature kion |
+| 溶ける | とける | 融化；溶化（自动词）//(v, intrans.) to melt; to dissolve — ice, snow, sugar in water |
+| 酒 | さけ | 酒；日本酒（名）//(n) alcohol; sake (Japanese rice wine) — can mean drinks in general or sake specifically |
+| 歌う | うたう | 唱（歌）（他动词）//(v, trans.) to sing — song takes o |
+| 始める | はじめる | 开始（做）（他动词）——由人开始某事//(v, trans.) to start; to begin (something) — someone starts it with o; compare hajimaru |
+| 押す | おす | 按；推（他动词）//(v, trans.) to push; to press (a button) — opposite of hiku (pull) |
+| 曲がる | まがる | 转弯；弯曲（自动词）//(v, intrans.) to turn (a corner); to bend — "turn at the corner" is kado o magaru |
+| 駅 | えき | 车站（名）//(n) station (train) — bus stops are basu-tei |
+| 見える | みえる | 看得见；看起来（自动词）——自然映入眼帘//(v, intrans.) to be visible; can see; to look (like) — things come into view; the thing seen takes ga |
+| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取//(n, suru-verb) passing (an exam); being accepted (to a school) — shiken ni goukaku suru = pass an exam; mainly exams and admissions |
+| 免許 | めんきょ | 执照；驾照（名）//(n) license; driver's license — short for unten menkyo (driving license) |
+| 試合 | しあい | 比赛（名）//(n) match; game; bout — a sports match between opponents; a whole tournament is taikai |
+| 中止 | ちゅうし | 中止；取消（名、可作动词）——指取消不办，或中途停止//(n, suru-verb) cancellation; calling off; suspension — an event cancelled beforehand or stopped midway, e.g. ame de chuushi (rained off) |
+| 電気 | でんき | 电；电灯（名）——口语中常指“灯”//(n) electricity; (electric) light — in daily speech often "the lights": denki o tsukeru / kesu = turn the lights on / off |
+| つく | つく | （灯）亮；（电器）开着（自动词）//(v, intrans.) to come on; to be switched on (of a light) — the light turns on by itself: denki ga tsuku; switching it on is tsukeru |
+| 塵 | ちり | 灰尘；尘土（名）//(n) dust; tiny particle — from the proverb chiri mo tsumoreba yama to naru (many small things add up) |
+| 積もる | つもる | 堆积；积（雪）（自动词）//(v, intrans.) to pile up; to accumulate — snow, dust, or small things adding up |
+| 届く | とどく | 送到；到达；够得着（自动词）//(v, intrans.) to arrive; to reach — mail, parcels or messages arriving; also "can reach" (a shelf); transitive pair: todokeru |
+| 沸く | わく | （水）开；沸腾（自动词）//(v, intrans.) to boil (of water); to come to a boil — the water boils by itself; boiling it yourself is wakasu |
+| 慣れる | なれる | 习惯；适应（自动词）//(v, intrans.) to get used to; to become accustomed — the thing takes ni: shigoto ni nareru |
+| 相談する | そうだんする | 商量；咨询（自他动词）//(v, intrans./trans.) to consult; to talk over; to ask advice — the person consulted takes ni |
+| 卒業 | そつぎょう | 毕业（名、可作动词）//(n, suru-verb) graduation — the school takes o |
+| 信号 | しんごう | 红绿灯；信号（名）//(n) traffic light; signal — in daily speech, traffic lights; the green light is called ao (blue) |
+| 宝くじ | たからくじ | 彩票（名）//(n) lottery; lottery ticket — "win the lottery" is takarakuji ni ataru |
+| 当たる | あたる | 中（奖）；碰上；猜中（自动词）//(v, intrans.) to win (a lottery); to hit; to be right — takarakuji ga atatta = I won the lottery; yohou ga ataru = the forecast is right |
+| 迷う | まよう | 迷路；犹豫（自动词）//(v, intrans.) to get lost; to hesitate; to be torn — michi ni mayou = get lost; dotchi ni suru ka mayou = can't decide which |
 
 ---
 

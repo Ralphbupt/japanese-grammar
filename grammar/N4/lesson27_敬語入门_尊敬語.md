@@ -12,23 +12,23 @@ Japanese keigo (honorific language) has three systems: **丁寧語** (です／�
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 先生 | せんせい | 老师/医生//teacher; doctor |
-| 社長 | しゃちょう | 公司社长//company president |
-| 部長 | ぶちょう | 部长//department head |
-| お客様 | おきゃくさま | 客人//customer |
-| ご家族 | ごかぞく | （您的）家人//(your) family |
-| 召し上がる | めしあがる | 吃／喝（尊敬）//eat/drink (honorific) |
-| いらっしゃる | いらっしゃる | 在／来／去（尊敬）//be/come/go (honorific) |
-| おっしゃる | おっしゃる | 说（尊敬）//say (honorific) |
-| ご覧になる | ごらんになる | 看（尊敬）//look/see (honorific) |
-| なさる | なさる | 做（尊敬）//do (honorific) |
-| くださる | くださる | 给我（尊敬）//give to me (honorific) |
-| ご存じ | ごぞんじ | 知道（尊敬）//know (honorific) |
-| お休みになる | おやすみになる | 睡（尊敬）//sleep (honorific) |
-| お召しになる | おめしになる | 穿（尊敬）//wear (honorific) |
-| 会議室 | かいぎしつ | 会议室//meeting room |
-| 検討 | けんとう | 研讨/审议//examine; consider |
-| 出張 | しゅっちょう | 出差//business trip |
+| 先生 | せんせい | 老师；医生（名）——也是对医生、律师等的尊称//(n) teacher; doctor — also a title for doctors, lawyers, politicians and writers; never use it about yourself |
+| 社長 | しゃちょう | （公司）总经理；社长（名）——指公司最高负责人//(n) company president; head of a company — the top executive; also used alone as a title to address them |
+| 部長 | ぶちょう | 部长；部门经理（名）//(n) department head; department manager — also used as a title after a surname instead of "Mr./Ms." |
+| お客様 | おきゃくさま | 客人；顾客（尊称）（名）//(n) customer; guest (polite) — standard way staff address customers |
+| ご家族 | ごかぞく | （您的）家人（名）//(n) (your / someone else's) family (polite) — not used for your own family |
+| 召し上がる | めしあがる | 吃；喝（他动词、尊敬语）//(v, trans., honorific) to eat; to drink — honorific of taberu / nomu; for others, never yourself |
+| いらっしゃる | いらっしゃる | 去；来；在（自动词、尊敬语）//(v, intrans., honorific) to go; to come; to be — honorific of iku / kuru / iru; masu-form irasshaimasu |
+| おっしゃる | おっしゃる | 说（他动词、尊敬语）//(v, trans., honorific) to say — honorific of iu; o-namae wa nan to osshaimasu ka = may I have your name? |
+| ご覧になる | ごらんになる | 看（他动词、尊敬语）//(v, trans., honorific) to see; to look at — honorific of miru; goran kudasai = please take a look |
+| なさる | なさる | 做（他动词、尊敬语）//(v, trans., honorific) to do — honorific of suru, also inside suru-verbs; masu-form nasaimasu |
+| くださる | くださる | （上级）给我（他动词、尊敬语）//(v, trans., honorific) to give (me) — when a superior gives to you or your side; ~te kudasaru = kindly do for me |
+| ご存じ | ごぞんじ | 知道（名、尊敬语）//(n, honorific) knowing — honorific of shitte iru: go-zonji desu ka = do you know…? |
+| お休みになる | おやすみになる | 睡；休息（自动词、尊敬语）//(v, intrans., honorific) to sleep; to rest — honorific of neru / yasumu; also taking a day off |
+| お召しになる | おめしになる | 穿（他动词、尊敬语）//(v, trans., honorific) to wear; to put on — honorific of kiru; also kaze o omeshi ni naru = catch a cold |
+| 会議室 | かいぎしつ | 会议室（名）//(n) meeting room; conference room |
+| 検討 | けんとう | 研究；考虑（名、可作动词）——不是“检讨（反省）”；商务中也常是委婉拒绝//(n, suru-verb) consideration; examination; looking into — kentou shimasu (we'll consider it) is often a polite no in business |
+| 出張 | しゅっちょう | 出差（名、可作动词）//(n, suru-verb) business trip — shucchou ni iku = go on a business trip; the destination takes ni |
 
 ---
 

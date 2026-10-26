@@ -12,24 +12,24 @@ This lesson covers grammar expressing "tendencies" and "states of change." 「�
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 曇り | くもり | 多云//cloudy |
-| 遅刻 | ちこく | 迟到//being late |
-| 遠慮 | えんりょ | 客气//reserve |
-| 忘れ物 | わすれもの | 遗忘物//forgotten item |
-| 怒る | おこる | 生气//to get angry |
-| 飽きる | あきる | 厌烦//to get bored |
-| 大人 | おとな | 大人//adult |
-| 子供 | こども | 小孩//child |
-| 風邪 | かぜ | 感冒//cold |
-| 回復 | かいふく | 恢复//recovery |
-| 人口 | じんこう | 人口//population |
-| 減る | へる | 减少//to decrease |
-| 増える | ふえる | 增加//to increase |
-| 食べ残す | たべのこす | 吃剩//to leave food uneaten |
-| 読む | よむ | 读//to read |
-| 腐る | くさる | 腐烂//to rot |
-| 温暖化 | おんだんか | 变暖//global warming |
-| 高齢化 | こうれいか | 老龄化//aging (of society) |
+| 曇り | くもり | 阴天；多云（名）//(n) cloudy weather; overcast sky — a noun in forecasts; kumoru is the verb |
+| 遅刻 | ちこく | 迟到（名、可作动词）//(n, suru-verb) being late — for school, work or an appointment; said of people, while trains okureru (run late) |
+| 遠慮 | えんりょ | 客气；顾虑（名、可作动词）——指出于礼貌而推辞//(n, suru-verb) holding back (out of politeness); reserve; declining — enryo naku = feel free; also politely refusing |
+| 忘れ物 | わすれもの | 落下的东西；遗忘物品（名）//(n) something left behind; forgotten item; lost property — wasuremono o suru = leave something behind |
+| 怒る | おこる | 生气；发火（自动词）——也可表示“批评、骂”//(v, intrans.) to get angry; to scold — okorareru = get told off; shikaru is deliberate scolding to correct someone |
+| 飽きる | あきる | 厌倦；腻了（自动词）//(v, intrans.) to get tired of; to get bored with — after too much of the same thing; the thing takes ni (ni akiru) |
+| 大人 | おとな | 成年人；大人（名）——不是中文“大人”的敬称//(n) adult; grown-up — opposite of kodomo; otona-rashii = mature; on price lists, the adult fare |
+| 子供 | こども | 孩子；儿童（名）//(n) child; kid — both children in general and one's own children; kodomoppoi = childish |
+| 風邪 | かぜ | 感冒（名）//(n) a cold (illness) — kaze o hiku = catch a cold; flu is infuruenza; "wind" is a homophone with another kanji |
+| 回復 | かいふく | 恢复；康复（名、可作动词）//(n, suru-verb) recovery; restoration; getting better — health, economy, weather or trust recovering |
+| 人口 | じんこう | 人口（名）//(n) population — of a country or city; jinkou ga heru = the population is shrinking |
+| 減る | へる | 减少（自动词）//(v, intrans.) to decrease; to go down — numbers, amounts; transitive pair: herasu; onaka ga heru = get hungry |
+| 増える | ふえる | 增加（自动词）//(v, intrans.) to increase; to grow (in number) — population, weight, numbers; transitive pair: fuyasu |
+| 食べ残す | たべのこす | 吃剩；没吃完（他动词）//(v, trans.) to leave food uneaten; to leave leftovers — tabenokoshi = leftovers on the plate |
+| 読む | よむ | 读；看（书报）（他动词）//(v, trans.) to read — silently or aloud; also "read" a situation: kuuki o yomu = read the room |
+| 腐る | くさる | 腐烂；变质（自动词）//(v, intrans.) to rot; to go bad; to spoil — food going off; also to sulk or feel down |
+| 温暖化 | おんだんか | 全球变暖；气候变暖（名）//(n) global warming; climate warming — short for chikyuu ondanka |
+| 高齢化 | こうれいか | 老龄化（名）//(n) aging (of the population) — shoushi koureika = falling birthrate and aging population, a staple N2 reading topic |
 
 ---
 

@@ -12,24 +12,24 @@ This lesson covers N3 grammar for concession ("although / even though"). These e
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 反対 | はんたい | 反对//opposition |
-| 実行 | じっこう | 执行//implementation |
-| 警告 | けいこく | 警告//warning |
-| 無視 | むし | 无视//ignoring |
-| 口先 | くちさき | 嘴上//lip service |
-| 実力 | じつりょく | 实力//real ability |
-| 態度 | たいど | 态度//attitude |
-| 偉そう | えらそう | 装大的//acting important |
-| 大人 | おとな | 大人//adult |
-| 片付ける | かたづける | 收拾//to tidy up |
-| 辞退 | じたい | 辞退//declining |
-| 優勝 | ゆうしょう | 冠军//championship |
-| 困難 | こんなん | 困难//difficulty |
-| 立場 | たちば | 立场//position |
-| 有名 | ゆうめい | 有名//famous |
-| 景気 | けいき | 景气//economic conditions |
-| 収入 | しゅうにゅう | 收入//income |
-| 知識 | ちしき | 知识//knowledge |
+| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）//(n, suru-verb, na-adj) opposition; objection; the opposite — ni hantai suru = be against; also the reverse side or direction (hantai-gawa) |
+| 実行 | じっこう | 实行；执行（名、可作动词）//(n, suru-verb) carrying out; putting into practice — a plan, decision or promise; stresses actually doing it, not just talking |
+| 警告 | けいこく | 警告（名、可作动词）//(n, suru-verb) warning; caution — formal, e.g. from police or authorities; chuui is the milder "warning" |
+| 無視 | むし | 无视；不理会（名、可作动词）//(n, suru-verb) ignoring; disregarding — ignore a person, warning or rule; can be deliberate social snubbing |
+| 口先 | くちさき | 嘴上；空话（名）——常含贬义//(n) words alone (as opposed to actions); empty talk; lip service — negative: kuchisaki dake = all talk |
+| 実力 | じつりょく | 实力；真本事（名）//(n) real ability; actual skill; capability — ability shown in results, not reputation |
+| 態度 | たいど | 态度；举止（名）——指外在表现出来的样子//(n) attitude; manner; the way someone behaves — the outward behavior people can see, e.g. a rude or arrogant manner |
+| 偉そう | えらそう | 自以为了不起；摆架子（形容动词）//(na-adj) self-important; arrogant; acting high and mighty — critical; erasou na taido = bossy attitude |
+| 大人 | おとな | 成年人；大人（名）——不是中文“大人”的敬称//(n) adult; grown-up — opposite of kodomo; otona-rashii = mature; on price lists, the adult fare |
+| 片付ける | かたづける | 收拾；整理；处理掉（他动词）//(v, trans.) to tidy up; to put away; to finish off (a task) — rooms, desks or work; intransitive pair: katazuku |
+| 辞退 | じたい | 谢绝；婉拒（名、可作动词）//(n, suru-verb) declining (an offer or invitation); turning down — polite and formal; declining a prize, job offer or role |
+| 優勝 | ゆうしょう | 夺冠；获得冠军（名、可作动词）——是动作，不是“冠军”本人//(n, suru-verb) winning (a championship); taking first place — the win itself; the winner is yuushousha |
+| 困難 | こんなん | 困难；艰难（名、形容动词）——比口语的“难”更书面//(n, na-adj) difficulty; hardship; adversity — formal and written; konnan o norikoeru = overcome difficulties; everyday "hard" is muzukashii |
+| 立場 | たちば | 立场；处境（名）//(n) position; standpoint; one's situation — aite no tachiba ni tatsu = put yourself in the other person's shoes |
+| 有名 | ゆうめい | 有名；著名（形容动词）//(na-adj) famous; well-known — yuumei na hito = a famous person; yuumei ni naru = become famous |
+| 景気 | けいき | 经济形势；景气（名）//(n) the economy; business conditions — how business is doing; keiki ga ii = the economy is booming |
+| 収入 | しゅうにゅう | 收入（名）//(n) income; earnings — salary and other money coming in; opposite: shishutsu (expenditure) |
+| 知識 | ちしき | 知识（名）//(n) knowledge; know-how — knowledge you have learned; chishiki ga aru = be knowledgeable |
 
 ---
 

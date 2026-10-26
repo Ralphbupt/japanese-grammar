@@ -12,23 +12,23 @@ This lesson covers various "suggestion/advice" expressions and two high-frequenc
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 相談 | そうだん | 商量//consultation |
-| 薬 | くすり | 药//medicine |
-| 素直 | すなお | 坦率的//honest, straightforward |
-| 謝る | あやまる | 道歉//to apologize |
-| 飛び込む | とびこむ | 跳入//to jump in |
-| 読み込む | よみこむ | 深入阅读/载入//to read thoroughly, to load |
-| 話し合う | はなしあう | 互相商量//to discuss together |
-| 助け合う | たすけあう | 互相帮助//to help each other |
-| 申し込む | もうしこむ | 申请//to apply |
-| 溶け込む | とけこむ | 融入//to blend in |
-| 見合う | みあう | 相称//to be worthy of |
-| 愛し合う | あいしあう | 相爱//to love each other |
-| 確認 | かくにん | 确认//confirmation |
-| 正直 | しょうじき | 老实//honest |
-| 後悔 | こうかい | 后悔//regret |
-| 締め切り | しめきり | 截止日期//deadline |
-| 落ち着く | おちつく | 冷静下来//to calm down |
+| 相談 | そうだん | 商量；咨询（名、可作动词）——不只是商量，也指找人咨询//(n, suru-verb) consultation; talking over; asking for advice — ni soudan suru = ask someone's advice; not only discussing as equals |
+| 薬 | くすり | 药（名）//(n) medicine; drug — you "drink" it: kusuri o nomu, even for pills |
+| 素直 | すなお | 坦率；老实；听话（形容动词）//(na-adj) honest; frank; obedient — open and unresisting; sunao ni ayamaru = apologize without excuses |
+| 謝る | あやまる | 道歉；赔不是（自他动词）//(v, intrans./trans.) to apologize — the person takes ni (sensei ni ayamaru); the words themselves are usually sumimasen or gomen nasai |
+| 飛び込む | とびこむ | 跳入；闯进（自动词）//(v, intrans.) to jump into; to dive in; to rush into — also suddenly entering a situation |
+| 読み込む | よみこむ | 深入阅读；读取（数据）（他动词）//(v, trans.) to read thoroughly; to load (data) — in IT: load or import data |
+| 話し合う | はなしあう | 商量；讨论（自他动词）//(v, intrans./trans.) to discuss; to talk (something) over — two or more people talking to reach agreement; hanashiai = a discussion |
+| 助け合う | たすけあう | 互相帮助（自动词）//(v, intrans.) to help each other — -au = do to each other |
+| 申し込む | もうしこむ | 报名；申请（他动词）//(v, trans.) to apply (for); to sign up; to propose — ni moushikomu = apply to; kekkon o moushikomu = propose marriage |
+| 溶け込む | とけこむ | 融入（自动词）//(v, intrans.) to blend in; to fit in; to dissolve into — fitting into a new group or place |
+| 見合う | みあう | 相称；与……相当（自动词）//(v, intrans.) to be worth; to match; to be in keeping with — ni miau = commensurate with (price, effort) |
+| 愛し合う | あいしあう | 相爱（自动词）//(v, intrans.) to love each other — -au = do to each other, mutually |
+| 確認 | かくにん | 确认；核实（名、可作动词）//(n, suru-verb) confirmation; checking; verification — double-checking facts, schedules or documents; constant at work |
+| 正直 | しょうじき | 诚实；老实说（名、形容动词、副词）//(n, na-adj, adv) honesty; honest; frankly — at the start of a sentence, "to be honest…"; shoujiki ni iu to = honestly speaking |
+| 後悔 | こうかい | 后悔（名、可作动词）//(n, suru-verb) regret; remorse — koukai saki ni tatazu = no use crying over spilt milk |
+| 締め切り | しめきり | 截止日期；期限（名）//(n) deadline; closing date — for assignments, applications and submissions; shimekiri ni maniau = meet the deadline |
+| 落ち着く | おちつく | 冷静下来；平静；安定（自动词）//(v, intrans.) to calm down; to settle down; to settle in — of people, situations or places; ochitsuita = calm, composed |
 
 ---
 

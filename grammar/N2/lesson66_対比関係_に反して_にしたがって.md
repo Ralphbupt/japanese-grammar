@@ -12,24 +12,24 @@ This lesson covers N2 grammar for expressing "contrast" and "correlated change."
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 予想 | よそう | 预测//prediction |
-| 期待 | きたい | 期待//expectation |
-| 評判 | ひょうばん | 评价//reputation |
-| 反対 | はんたい | 反对//opposition |
-| 経験 | けいけん | 经验//experience |
-| 収入 | しゅうにゅう | 收入//income |
-| 支出 | ししゅつ | 支出//expenditure |
-| 便利 | べんり | 方便//convenient |
-| 複雑 | ふくざつ | 复杂//complex |
-| 技術 | ぎじゅつ | 技术//technology |
-| 進歩 | しんぽ | 进步//progress |
-| 高齢化 | こうれいか | 老龄化//aging (of society) |
-| 深刻 | しんこく | 严重//serious |
-| 規模 | きぼ | 规模//scale |
-| 拡大 | かくだい | 扩大//expansion |
-| 競争 | きょうそう | 竞争//competition |
-| 激しい | はげしい | 激烈//intense |
-| 標高 | ひょうこう | 海拔//altitude |
+| 予想 | よそう | 预料；预测（名、可作动词）//(n, suru-verb) expectation; prediction; forecast — yosougai = unexpected; yosou-doori = as predicted |
+| 期待 | きたい | 期待；期望（名、可作动词）//(n, suru-verb) expectation; hope; anticipation — usually positive; kitai hazure = a letdown; kitai ni kotaeru = live up to expectations |
+| 評判 | ひょうばん | 评价；口碑（名）//(n) reputation; public opinion — what people say about a shop, product or person; hyouban ga ii = well-reviewed |
+| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）//(n, suru-verb, na-adj) opposition; objection; the opposite — ni hantai suru = be against; also the reverse side or direction (hantai-gawa) |
+| 経験 | けいけん | 经验；经历（名、可作动词）//(n, suru-verb) experience — both a single event you went through (keiken suru) and accumulated expertise (keiken ga aru) |
+| 収入 | しゅうにゅう | 收入（名）//(n) income; earnings — salary and other money coming in; opposite: shishutsu (expenditure) |
+| 支出 | ししゅつ | 支出；开支（名、可作动词）//(n, suru-verb) expenditure; spending; outgoings — formal; household or government spending |
+| 便利 | べんり | 方便（形容动词）//(na-adj) convenient; handy; useful — of tools, places, services; opposite of inconvenient |
+| 複雑 | ふくざつ | 复杂（形容动词）//(na-adj) complicated; complex; intricate — also mixed feelings: fukuzatsu na kimochi |
+| 技術 | ぎじゅつ | 技术（名）//(n) technology; technique; skill — both industrial technology and personal skill |
+| 進歩 | しんぽ | 进步（名、可作动词）//(n, suru-verb) progress; advancement; improvement — of technology, science or one's own skills |
+| 高齢化 | こうれいか | 老龄化（名）//(n) aging (of the population) — shoushi koureika = falling birthrate and aging population, a staple N2 reading topic |
+| 深刻 | しんこく | 严重；严峻（形容动词）——不是“深刻（印象深）”//(na-adj) serious; grave; severe — of problems or situations, not "profound" |
+| 規模 | きぼ | 规模（名）//(n) scale; scope; size — "large-scale", "on a global scale" |
+| 拡大 | かくだい | 扩大（名、可作动词）//(n, suru-verb) expansion; enlargement; growth — expanding business, damage or images (zoom in) |
+| 競争 | きょうそう | 竞争（名、可作动词）//(n, suru-verb) competition; rivalry — between companies, students; "competition is fierce" |
+| 激しい | はげしい | 激烈的；猛烈的（形容词）//(i-adj) intense; fierce; violent — fierce competition, heavy rain, violent emotions |
+| 標高 | ひょうこう | 海拔（名）//(n) altitude; elevation (above sea level) — height of mountains and places, not of aircraft |
 
 ---
 

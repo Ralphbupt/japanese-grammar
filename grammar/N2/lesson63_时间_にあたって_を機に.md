@@ -12,22 +12,22 @@ This lesson covers N2-level expressions for time and occasion. 「にあたっ�
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 開会 | かいかい | 开会//opening of a meeting |
-| 挨拶 | あいさつ | 寒暄//greeting; speech |
-| 留学 | りゅうがく | 留学//studying abroad |
-| 出発 | しゅっぱつ | 出发//departure |
-| 覚悟 | かくご | 觉悟//resolve |
-| 就任 | しゅうにん | 就任//assumption of office |
-| 抱負 | ほうふ | 抱负//aspiration |
-| 開催 | かいさい | 举办//holding (an event) |
-| 上映 | じょうえい | 上映//screening (of a film) |
-| 説明会 | せつめいかい | 说明会//briefing session |
-| 転職 | てんしょく | 换工作//job change |
-| 結婚 | けっこん | 结婚//marriage |
-| 引っ越し | ひっこし | 搬家//moving house |
-| 禁煙 | きんえん | 戒烟//quitting smoking |
-| きっかけ | きっかけ | 契机//trigger; opportunity |
-| 見直す | みなおす | 重新审视//to reconsider |
+| 開会 | かいかい | 开幕；会议开始（名、可作动词）——不是“开会”//(n, suru-verb) opening of a meeting or conference — the formal start (kaikaishiki = opening ceremony); simply having a meeting is kaigi o suru |
+| 挨拶 | あいさつ | 问候；致辞（名、可作动词）//(n, suru-verb) greeting; (formal) address; short speech — from saying hello to an official speech at a ceremony |
+| 留学 | りゅうがく | 留学（名、可作动词）//(n, suru-verb) studying abroad — the destination takes ni (Nihon ni ryuugaku suru); ryuugakusei = international student, including foreigners in Japan |
+| 出発 | しゅっぱつ | 出发；动身（名、可作动词）//(n, suru-verb) departure; setting off; start — leaving on a trip; also a fresh start in life |
+| 覚悟 | かくご | 思想准备；决心（名、可作动词）——不是中文“觉悟（觉醒）”//(n, suru-verb) resolve; readiness (for hardship) — bracing for something hard or a bad outcome; kakugo shite iru = be prepared for the worst |
+| 就任 | しゅうにん | 就任；就职（名、可作动词）//(n, suru-verb) assumption of office; taking up a post — formal; becoming president, minister, director |
+| 抱負 | ほうふ | 抱负；志向（名）//(n) aspiration; ambition; plans for the future — often stated at New Year or on taking a new post |
+| 開催 | かいさい | 举办；召开（名、可作动词）//(n, suru-verb) holding (an event, meeting); hosting — formal; Olympics, exhibitions, conferences |
+| 上映 | じょうえい | 上映；放映（名、可作动词）//(n, suru-verb) screening (of a film); showing — "now showing", "screening time" |
+| 説明会 | せつめいかい | 说明会；介绍会（名）//(n) briefing session; information session — company recruitment sessions and school open briefings |
+| 転職 | てんしょく | 换工作；跳槽（名、可作动词）//(n, suru-verb) changing jobs; career change — moving to a different employer; tenshoku katsudou = job hunting while still employed |
+| 結婚 | けっこん | 结婚（名、可作动词）//(n, suru-verb) marriage; getting married — "marry X" is X to kekkon suru; "be married" is kekkon shite iru |
+| 引っ越し | ひっこし | 搬家（名、可作动词）//(n, suru-verb) moving house; relocation — the move itself, packing included; the plain verb is hikkosu |
+| 禁煙 | きんえん | 戒烟；禁止吸烟（名、可作动词）//(n, suru-verb) quitting smoking; no smoking — signs say "no smoking"; personal sense is "quit smoking" |
+| きっかけ | きっかけ | 契机；起因（名）//(n) trigger; what prompted something; opportunity — X o kikkake ni = prompted by X; the spark that starts a change |
+| 見直す | みなおす | 重新审视；重新评估（他动词）//(v, trans.) to review; to reconsider; to see in a new light — re-examine a plan or policy; also to think better of a person |
 
 ---
 

@@ -16,22 +16,22 @@ This lesson focuses on grammar related to "obligation / necessity / general trut
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 約束 | やくそく | 约定//promise |
-| 断る | ことわる | 拒绝//to refuse |
-| 責任 | せきにん | 责任//responsibility |
-| 守る | まもる | 遵守/保护//to protect, to obey |
-| 法律 | ほうりつ | 法律//law |
-| 礼儀 | れいぎ | 礼仪//manners |
-| 目上 | めうえ | 长辈/上级//superior, elder |
-| 敬語 | けいご | 敬语//honorific language |
-| 諦める | あきらめる | 放弃//to give up |
-| 覚悟 | かくご | 觉悟//resolve, determination |
-| 老いる | おいる | 衰老//to age |
-| 叱る | しかる | 训斥//to scold |
-| 信号 | しんごう | 信号灯//traffic light |
-| 無理 | むり | 勉强//impossible, unreasonable |
-| 遠慮 | えんりょ | 客气//reserve, hesitation |
-| 心配 | しんぱい | 担心//worry |
+| 約束 | やくそく | 约定；诺言（名、可作动词）——也指约会//(n, suru-verb) promise; appointment; arrangement — also a plan to meet someone; keep one = mamoru, break one = yaburu |
+| 断る | ことわる | 拒绝；谢绝（他动词）//(v, trans.) to refuse; to decline; to turn down — invitations or requests, usually indirectly; also to give notice in advance (kotowatte oku) |
+| 責任 | せきにん | 责任（名）//(n) responsibility; liability; blame — sekinin o toru = take responsibility; sekininsha = the person in charge |
+| 守る | まもる | 遵守；保护（他动词）//(v, trans.) to keep (a promise, rule); to obey; to protect — rules, promises, deadlines, or protecting people |
+| 法律 | ほうりつ | 法律（名）//(n) law; legislation — laws in general; break the law = ihan suru, obey = mamoru |
+| 礼儀 | れいぎ | 礼貌；礼节（名）//(n) manners; courtesy; etiquette — reigi tadashii = polite, well-mannered |
+| 目上 | めうえ | 长辈；上级（名）//(n) one's superiors; one's elders (people of higher status) — people you should use keigo with |
+| 敬語 | けいご | 敬语（名）//(n) keigo; honorific language — umbrella term for polite, respectful (sonkeigo) and humble (kenjougo) speech |
+| 諦める | あきらめる | 放弃；死心（他动词）//(v, trans.) to give up; to abandon (hope); to resign oneself — accepting something is out of reach; yameru is simply stopping |
+| 覚悟 | かくご | 思想准备；决心（名、可作动词）——不是中文“觉悟（觉醒）”//(n, suru-verb) resolve; readiness (for hardship) — bracing for something hard or a bad outcome; kakugo shite iru = be prepared for the worst |
+| 老いる | おいる | 变老；衰老（自动词）//(v, intrans.) to grow old; to age — literary; everyday speech uses toshi o toru |
+| 叱る | しかる | 训斥；责骂（他动词）——上对下的批评//(v, trans.) to scold; to tell off — a parent, teacher or boss correcting someone; okoru is just getting angry; often passive: shikarareta |
+| 信号 | しんごう | 红绿灯；信号（名）//(n) traffic light; signal — in daily speech, traffic lights; the green light is called ao (blue) |
+| 無理 | むり | 不可能；勉强（形容动词、名）——常用于“别太勉强自己”//(na-adj, n) impossible; unreasonable; overdoing it — muri o suru = push yourself too hard; muri shinaide = don't overdo it |
+| 遠慮 | えんりょ | 客气；顾虑（名、可作动词）——指出于礼貌而推辞//(n, suru-verb) holding back (out of politeness); reserve; declining — enryo naku = feel free; also politely refusing |
+| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）//(n, suru-verb, na-adj) worry; concern; anxiety — X o shinpai suru = worry about X; shinpai shinaide = don't worry |
 
 ---
 

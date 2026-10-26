@@ -12,23 +12,23 @@ These grammar points are formal written expressions — essentially upgraded ver
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 地震 | じしん | 地震//earthquake |
-| 分野 | ぶんや | 领域//field |
-| 第一人者 | だいいちにんしゃ | 第一人//top expert |
-| 現代 | げんだい | 现代//modern |
-| 社会 | しゃかい | 社会//society |
-| 環境 | かんきょう | 环境//environment |
-| 国際 | こくさい | 国际//international |
-| 発言 | はつげん | 发言//statement |
-| 注目 | ちゅうもく | 关注//attention |
-| 態度 | たいど | 态度//attitude |
-| 被害 | ひがい | 受灾//damage |
-| 台風 | たいふう | 台风//typhoon |
-| 実話 | じつわ | 真实故事//true story |
-| 経験 | けいけん | 经验//experience |
-| 情報 | じょうほう | 信息//information |
-| 結果 | けっか | 结果//result |
-| 意見 | いけん | 意见//opinion |
+| 地震 | じしん | 地震（名）//(n) earthquake — jishin ga okiru = an earthquake happens; small ones are often just yureta (it shook) |
+| 分野 | ぶんや | 领域；方面（名）//(n) field (of study or work); area; domain — formal; used for academic, professional or industry areas |
+| 第一人者 | だいいちにんしゃ | 第一人；权威（名）——指某领域公认的头号专家//(n) leading authority; the foremost expert in a field — always tied to a field: "the leading figure in X" |
+| 現代 | げんだい | 现代；当代（名）//(n) the present day; modern times; contemporary — used for present-day society and culture, e.g. modern society, modern art |
+| 社会 | しゃかい | 社会（名）——也指走上社会、工作后的世界//(n) society; the community; the working world — shakaijin = a working adult, someone who has left school |
+| 環境 | かんきょう | 环境（名）——既指自然环境，也指工作、学习环境//(n) environment; surroundings; setting — both nature (kankyou mondai = environmental issues) and one's work or study setting |
+| 国際 | こくさい | 国际（名）——多作前缀，如国际会议、国际化//(n) international; international affairs — mostly a prefix: international conference, internationalization |
+| 発言 | はつげん | 发言；言论（名、可作动词）——指会上或公开说的话//(n, suru-verb) remark; statement; speaking up — a public or on-record comment, e.g. in a meeting or by a politician |
+| 注目 | ちゅうもく | 关注；注意（名、可作动词）//(n, suru-verb) attention; notice; close watch — to watch closely or draw attention: chuumoku o atsumeru = attract attention |
+| 態度 | たいど | 态度；举止（名）——指外在表现出来的样子//(n) attitude; manner; the way someone behaves — the outward behavior people can see, e.g. a rude or arrogant manner |
+| 被害 | ひがい | 受害；损失（名）——不是“灾害”本身//(n) damage; harm; loss suffered — what victims suffer from a disaster or crime, not the disaster itself; higai o ukeru = suffer damage |
+| 台風 | たいふう | 台风（名）//(n) typhoon — numbered each year (typhoon No. 10); the season peaks August to October |
+| 実話 | じつわ | 真实故事；真人真事（名）//(n) true story; real-life account — used of films or books: "based on a true story" |
+| 経験 | けいけん | 经验；经历（名、可作动词）//(n, suru-verb) experience — both a single event you went through (keiken suru) and accumulated expertise (keiken ga aru) |
+| 情報 | じょうほう | 信息；情报（名）——一般指信息，不一定是机密//(n) information; news; data — the everyday word for information; not secret "intelligence" as Chinese might suggest |
+| 結果 | けっか | 结果（名）//(n) result; outcome; consequence — exam results or the outcome of a cause; kekka-teki ni = as a result |
+| 意見 | いけん | 意见；看法（名）——中性的“看法”，不一定是批评//(n) opinion; view — neutral, not criticism; iken o iu = give one's opinion; iken suru can mean "admonish" |
 
 ---
 

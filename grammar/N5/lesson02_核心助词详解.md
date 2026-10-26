@@ -4,47 +4,47 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 私 | わたし | 我//I |
-| 彼 | かれ | 他//he |
-| 彼女 | かのじょ | 她//she |
-| 母 | はは | 妈妈（说自己的）//mother |
-| 学生 | がくせい | 学生//student |
-| 先生 | せんせい | 老师//teacher |
-| 本 | ほん | 书//book |
-| 映画 | えいが | 电影//movie |
-| 難しい | むずかしい | 难//difficult |
-| 猫 | ねこ | 猫//cat |
-| 犬 | いぬ | 狗//dog |
-| 雨 | あめ | 雨//rain |
-| 道 | みち | 路//road |
-| 木 | き | 树//tree |
-| 机 | つくえ | 桌子//desk |
-| 箸 | はし | 筷子//chopsticks |
-| 風邪 | かぜ | 感冒//cold |
-| 店 | みせ | 店//shop |
-| 町 | まち | 城镇//town |
-| 山 | やま | 山//mountain |
-| 象 | ぞう | 大象//elephant |
-| 鼻 | はな | 鼻子//nose |
-| 図書館 | としょかん | 图书馆//library |
-| 大学 | だいがく | 大学//university |
-| 世界 | せかい | 世界//world |
-| 料理 | りょうり | 料理/做菜//cooking |
-| 勉強 | べんきょう | 学习//study |
-| 誰 | だれ | 谁//who |
-| 何 | なに | 什么//what |
-| 昨日 | きのう | 昨天//yesterday |
-| 明日 | あした | 明天//tomorrow |
-| 今日 | きょう | 今天//today |
-| 毎朝 | まいあさ | 每天早上//every morning |
-| 食べる | たべる | 吃//eat |
-| 飲む | のむ | 喝//drink |
-| 読む | よむ | 读//read |
-| 歩く | あるく | 走路//walk |
-| 住む | すむ | 住//live |
-| 降る | ふる | 下（雨/雪）//fall |
-| 作る | つくる | 做/制作//make |
-| 卒業する | そつぎょうする | 毕业//graduate |
+| 私 | わたし | 我（代词）//(pron) I; me — the standard polite/neutral "I" for everyone; men may use boku or ore casually |
+| 彼 | かれ | 他；男朋友（代词、名）//(pron, n) he; him; boyfriend — avoid for superiors or people present; use their name + san instead |
+| 彼女 | かのじょ | 她；女朋友（代词、名）//(pron, n) she; her; girlfriend — like kare, often means "girlfriend"; use the person's name in polite speech |
+| 母 | はは | （自己的）母亲；妈妈（名）——只用于向外人提自己的母亲//(n) (my) mother — humble: only for your own mother to outsiders; someone else's is okaasan |
+| 学生 | がくせい | 学生（名）——多指大学生//(n) student — especially a university student; younger pupils are seito or jidou |
+| 先生 | せんせい | 老师；医生（名）——也是对医生、律师等的尊称//(n) teacher; doctor — also a title for doctors, lawyers, politicians and writers; never use it about yourself |
+| 本 | ほん | 书（名）//(n) book — as a counter, -hon counts long thin things (pens, bottles), read hon / bon / pon |
+| 映画 | えいが | 电影（名）//(n) movie; film — "see a movie" takes the verb miru; a cinema is eigakan |
+| 難しい | むずかしい | 难；困难（形容词）//(i-adj) difficult; hard — opposite is yasashii (easy) or kantan (simple) |
+| 猫 | ねこ | 猫（名）//(n) cat |
+| 犬 | いぬ | 狗（名）//(n) dog |
+| 雨 | あめ | 雨（名）//(n) rain — "it rains" is ame ga furu |
+| 道 | みち | 路；道路（名）//(n) road; street; way — also "the way" when asking directions |
+| 木 | き | 树；木头（名）//(n) tree; wood — both the living tree and the material |
+| 机 | つくえ | 书桌；桌子（名）——指办公、学习用的桌子//(n) desk; table — a desk for working or studying; a dining table is usually teeburu |
+| 箸 | はし | 筷子（名）//(n) chopsticks — same sound as "bridge" (hashi) but different pitch |
+| 風邪 | かぜ | 感冒（名）//(n) a cold (illness) — kaze o hiku = catch a cold; flu is infuruenza; "wind" is a homophone with another kanji |
+| 店 | みせ | 店；商店（名）//(n) shop; store; restaurant — any business you walk into, including eateries |
+| 町 | まち | 城镇；街区（名）//(n) town; neighborhood; city district — also part of addresses (-chou/-machi) |
+| 山 | やま | 山（名）//(n) mountain; hill — "climb a mountain" is yama ni noboru |
+| 象 | ぞう | 大象（名）//(n) elephant — zou wa hana ga nagai (elephants have long trunks) is the classic wa / ga sentence |
+| 鼻 | はな | 鼻子（名）//(n) nose; (elephant's) trunk — zou wa hana ga nagai (elephants have long trunks) is the classic wa / ga sentence |
+| 図書館 | としょかん | 图书馆（名）//(n) library — borrow books here; a bookstore is hon'ya |
+| 大学 | だいがく | 大学（名）//(n) university; college — daigaku ni kayou = attend university; daigakusei = university student |
+| 世界 | せかい | 世界（名）//(n) world — "in the world" is sekai de, e.g. the biggest in the world |
+| 料理 | りょうり | 菜；做菜（名、可作动词）——不同于中文“料理”，泛指菜肴和烹饪//(n, suru-verb) cooking; dish; cuisine — both the act and the food; Nihon ryouri = Japanese food |
+| 勉強 | べんきょう | 学习（名、可作动词）——不是“勉强”//(n, suru-verb) study; studying — means study, not "reluctant" as in Chinese |
+| 誰 | だれ | 谁（代词）//(pron) who — the polite form is donata; dareka = someone |
+| 何 | なに | 什么（代词）//(pron) what — read nan before d/n/t sounds and counters, nani elsewhere |
+| 昨日 | きのう | 昨天（名、副词）//(n, adv) yesterday — relative time words like this take no ni |
+| 明日 | あした | 明天（名、副词）//(n, adv) tomorrow — ashita is everyday speech; asu is more formal |
+| 今日 | きょう | 今天（名、副词）//(n, adv) today — irregular reading kyou; no particle ni after it (kyou iku); formal konnichi = nowadays |
+| 毎朝 | まいあさ | 每天早上（名、副词）//(n, adv) every morning — no ni after it, like other "every ~" words |
+| 食べる | たべる | 吃（他动词）//(v, trans.) to eat — ichidan verb; medicine is nomu, not taberu |
+| 飲む | のむ | 喝；吃（药）（他动词）——吃药也用这个词//(v, trans.) to drink; to take (medicine) — pills are "drunk" in Japanese |
+| 読む | よむ | 读；看（书报）（他动词）//(v, trans.) to read — silently or aloud; also "read" a situation: kuuki o yomu = read the room |
+| 歩く | あるく | 走；步行（自动词）——指行走，不是“离开”//(v, intrans.) to walk — place walked through takes o: michi o aruku |
+| 住む | すむ | 住；居住（自动词）——表示“住在某地”时一般用进行体//(v, intrans.) to live (in); to reside — "I live in X" is X ni sunde imasu, not the plain form |
+| 降る | ふる | 下（雨、雪）（自动词）//(v, intrans.) to fall (rain, snow) — only for precipitation; things dropping is ochiru |
+| 作る | つくる | 做；制作（他动词）//(v, trans.) to make; to cook; to build — broad: make food, things, friends or plans |
+| 卒業する | そつぎょうする | 毕业（自动词）//(v, intrans.) to graduate (from school) — the school takes o: daigaku o sotsugyou suru |
 
 ## 1. を（宾语助词）||を — Object Particle
 

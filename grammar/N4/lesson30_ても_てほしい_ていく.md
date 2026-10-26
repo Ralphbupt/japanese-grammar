@@ -12,22 +12,22 @@ This lesson covers five common patterns built on the て-form (or adjectives): �
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 台風 | たいふう | 台风//typhoon |
-| 値段 | ねだん | 价格//price |
-| 人口 | じんこう | 人口//population |
-| 減る | へる | 减少//to decrease |
-| 増える | ふえる | 增加//to increase |
-| 暖かい | あたたかい | 温暖的//warm |
-| 気温 | きおん | 气温//temperature |
-| 将来 | しょうらい | 将来//future |
-| 怖い | こわい | 可怕的//scary |
-| 嫌がる | いやがる | 表现出讨厌//to show dislike |
-| 羨ましい | うらやましい | 羡慕的//envious |
-| 届ける | とどける | 送达//to deliver |
-| 持っていく | もっていく | 带去//to take (something) |
-| 持ってくる | もってくる | 带来//to bring (something) |
-| 太る | ふとる | 变胖//to gain weight |
-| 痩せる | やせる | 变瘦//to lose weight |
+| 台風 | たいふう | 台风（名）//(n) typhoon — numbered each year (typhoon No. 10); the season peaks August to October |
+| 値段 | ねだん | 价格；价钱（名）//(n) price; cost — the everyday word; kakaku is formal; nedan ga takai = expensive |
+| 人口 | じんこう | 人口（名）//(n) population — of a country or city; jinkou ga heru = the population is shrinking |
+| 減る | へる | 减少（自动词）//(v, intrans.) to decrease; to go down — numbers, amounts; transitive pair: herasu; onaka ga heru = get hungry |
+| 増える | ふえる | 增加（自动词）//(v, intrans.) to increase; to grow (in number) — population, weight, numbers; transitive pair: fuyasu |
+| 暖かい | あたたかい | 暖和；温暖（形容词）//(i-adj) warm (weather, air) — pleasant warmth; warm things you touch (water, food) use another kanji |
+| 気温 | きおん | 气温（名）//(n) (air) temperature — outdoor air only; body temperature is taion, water temperature suion |
+| 将来 | しょうらい | 将来；未来（名、副词）//(n, adv) future; in the future — one's personal future: shourai no yume = dream for the future |
+| 怖い | こわい | 可怕；害怕（形容词）//(i-adj) scary; frightening; afraid — "I'm scared of X" is X ga kowai |
+| 嫌がる | いやがる | （表现出）不愿意；讨厌（他动词）//(v, trans.) to show dislike; to be unwilling — describes someone else's visible dislike; for yourself say iya da |
+| 羨ましい | うらやましい | 羡慕（形容词）//(i-adj) envious; enviable — urayamashii! = lucky you!; envy of someone's luck, not romantic jealousy (shitto) |
+| 届ける | とどける | 送到；递交；报告（他动词）//(v, trans.) to deliver; to take (something) to; to report — also hand in a lost item to the police (keisatsu ni todokeru) |
+| 持っていく | もっていく | 带去；拿去（他动词）//(v, trans.) to take (something) along — carrying it away from here |
+| 持ってくる | もってくる | 带来；拿来（他动词）//(v, trans.) to bring (something) here; to fetch — carrying it toward the speaker |
+| 太る | ふとる | 发胖；变胖（自动词）//(v, intrans.) to gain weight; to get fat — "is fat" is futotte iru, the progressive form |
+| 痩せる | やせる | 变瘦；减肥（自动词）//(v, intrans.) to lose weight; to get thin — "is thin" is yasete iru, the progressive form |
 
 ---
 

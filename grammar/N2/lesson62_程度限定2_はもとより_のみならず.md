@@ -12,24 +12,24 @@ This lesson provides an in-depth study of two N2-level progressive expressions. 
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 国内 | こくない | 国内//domestic |
-| 海外 | かいがい | 海外//overseas |
-| 大人 | おとな | 大人//adult |
-| 子供 | こども | 小孩//child |
-| 経済 | けいざい | 经济//economy |
-| 文化 | ぶんか | 文化//culture |
-| 身体 | しんたい | 身体//body |
-| 精神 | せいしん | 精神//mind; spirit |
-| 専門家 | せんもんか | 专家//specialist |
-| 素人 | しろうと | 外行//amateur |
-| 企業 | きぎょう | 企业//corporation |
-| 個人 | こじん | 个人//individual |
-| 環境 | かんきょう | 环境//environment |
-| 貢献 | こうけん | 贡献//contribution |
-| 被害 | ひがい | 损害//damage |
-| 影響 | えいきょう | 影响//influence |
-| 地域 | ちいき | 地区//region |
-| 社会 | しゃかい | 社会//society |
+| 国内 | こくない | 国内（名）//(n) domestic; within the country — kokunai-sen = domestic flights; opposite of kaigai (overseas) |
+| 海外 | かいがい | 海外；国外（名）//(n) overseas; abroad — the everyday word for "abroad" in island Japan; kaigai ryokou = a trip abroad |
+| 大人 | おとな | 成年人；大人（名）——不是中文“大人”的敬称//(n) adult; grown-up — opposite of kodomo; otona-rashii = mature; on price lists, the adult fare |
+| 子供 | こども | 孩子；儿童（名）//(n) child; kid — both children in general and one's own children; kodomoppoi = childish |
+| 経済 | けいざい | 经济（名）//(n) economy; economics — the national economy; keizai-teki = economic, or economical (thrifty) |
+| 文化 | ぶんか | 文化（名）//(n) culture — national culture, cultural exchange, cultural differences |
+| 身体 | しんたい | 身体（名）//(n) body; physique — formal and written (forms, medicine: shintai kensa = physical checkup); everyday word is karada |
+| 精神 | せいしん | 精神；心理（名）——偏“心理、心灵”，不是“有精神”//(n) mind; spirit; mental — mental health, "body and mind"; not "energetic" |
+| 専門家 | せんもんか | 专家（名）//(n) expert; specialist; professional — someone with specialist training in a field |
+| 素人 | しろうと | 外行；业余爱好者（名）//(n) amateur; layman; non-specialist — opposite of professional/expert |
+| 企業 | きぎょう | 企业；公司（名）//(n) company; business; corporation — formal/economic register; companies as economic actors |
+| 個人 | こじん | 个人（名）//(n) individual; private person — as opposed to companies, groups or society |
+| 環境 | かんきょう | 环境（名）——既指自然环境，也指工作、学习环境//(n) environment; surroundings; setting — both nature (kankyou mondai = environmental issues) and one's work or study setting |
+| 貢献 | こうけん | 贡献（名、可作动词）//(n, suru-verb) contribution; service — contribute "to" society, a team or a field |
+| 被害 | ひがい | 受害；损失（名）——不是“灾害”本身//(n) damage; harm; loss suffered — what victims suffer from a disaster or crime, not the disaster itself; higai o ukeru = suffer damage |
+| 影響 | えいきょう | 影响（名、可作动词）//(n, suru-verb) influence; effect; impact — "influence on" something; "be influenced by" |
+| 地域 | ちいき | 地区；区域（名）——常指当地社区//(n) region; area; local community — chiiki shakai = the local community; more formal than chihou |
+| 社会 | しゃかい | 社会（名）——也指走上社会、工作后的世界//(n) society; the community; the working world — shakaijin = a working adult, someone who has left school |
 
 ---
 

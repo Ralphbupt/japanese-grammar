@@ -1589,6 +1589,15 @@ async function main() {
           .replace(/<th>单词<\/th>/, '<th><span class="lang-zh">单词</span><span class="lang-en">Word</span></th>')
           .replace(/<th>读音<\/th>/, '<th><span class="lang-zh">读音</span><span class="lang-en">Reading</span></th>')
           .replace(/<th>含义<\/th>/, '<th><span class="lang-zh">含义</span><span class="lang-en">Meaning</span></th>')
+          // Meaning cells: "(POS) senses — note" / "senses（POS）——note" → the
+          // part of speech and the usage note get their own muted spans.
+          .replace(/(<span class="lang-(?:zh|en)">)([^<]*)(<\/span>)/g, (m, open, text, close) => {
+            const note = text.match(/^(.*?)\s*(?: — |——)\s*(.+)$/);
+            let head = note ? note[1] : text;
+            head = head.replace(/^\(([^)]+)\)\s*/, '<span class="pos">$1</span> ')
+              .replace(/（([^）]*(?:词|语|名)[^）]*)）$/, ' <span class="pos">$1</span>');
+            return note ? `${open}${head}<span class="gloss-note">${note[2]}</span>${close}` : `${open}${head}${close}`;
+          })
       );
       // Answer toggles: "答案 / Answers" → one label per language; a bare
       // "答案" gets the English one.
@@ -3655,7 +3664,9 @@ tr:nth-child(even) { background: #fafafa; }
 /* Word table highlight */
 table.word-table { border-left: 4px solid var(--word-border); }
 table.word-table th { background: var(--word-bg); }
-table.word-table td:first-child { font-size: 1.2rem; font-weight: 500; }
+table.word-table td:first-child { font-size: 1.2rem; font-weight: 500; white-space: nowrap; }
+table.word-table .pos { font-size: .75em; color: var(--text-muted); border: 1px solid currentColor; border-radius: 3px; padding: 0 .3em; white-space: nowrap; }
+table.word-table .gloss-note { display: block; font-size: .85em; color: var(--text-muted); margin-top: .15em; }
 
 /* Checklist */
 .checklist-progress {

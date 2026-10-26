@@ -12,24 +12,24 @@ This group provides nuanced ways of expressing viewpoints: correcting a statemen
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 怒る | おこる | 生气//to get angry |
-| 呆れる | あきれる | 无语/惊呆//to be amazed; dumbfounded |
-| 都会 | とかい | 都市//city; urban area |
-| 田舎 | いなか | 乡下//countryside |
-| 高級 | こうきゅう | 高级//high-class |
-| 居酒屋 | いざかや | 居酒屋//Japanese-style pub |
-| 温泉 | おんせん | 温泉//hot spring |
-| 紅葉 | こうよう | 红叶//autumn leaves |
-| 計画 | けいかく | 计划//plan |
-| 予定 | よてい | 预定//schedule |
-| 説明 | せつめい | 说明//explanation |
-| レシピ | レシピ | 菜谱//recipe |
-| 思い浮かべる | おもいうかべる | 想到，联想到//to picture, to think of |
-| 得意 | とくい | 擅长//good at |
-| 趣味 | しゅみ | 兴趣//hobby |
-| 春 | はる | 春天//spring |
-| 桜 | さくら | 樱花//cherry blossom |
-| 期待 | きたい | 期待//expectation |
+| 怒る | おこる | 生气；发火（自动词）——也可表示“批评、骂”//(v, intrans.) to get angry; to scold — okorareru = get told off; shikaru is deliberate scolding to correct someone |
+| 呆れる | あきれる | 无语；目瞪口呆；（对人）失望（自动词）//(v, intrans.) to be appalled; to be dumbfounded; to be fed up — shocked at someone's foolishness; not positive amazement |
+| 都会 | とかい | 城市；大都市（名）//(n) city; urban area; big city — contrasted with inaka (countryside) |
+| 田舎 | いなか | 乡下；老家（名）//(n) the countryside; rural area; one's home town — also "back home" where one grew up |
+| 高級 | こうきゅう | 高级；高档（名、形容动词）//(n, na-adj) high-end; luxury; high-class — expensive goods, restaurants or hotels |
+| 居酒屋 | いざかや | 居酒屋；日式小酒馆（名）//(n) izakaya; Japanese-style pub — drinks with small shared dishes |
+| 温泉 | おんせん | 温泉（名）//(n) hot spring; onsen — natural hot-spring baths, and the resort towns built around them |
+| 紅葉 | こうよう | 红叶；枫叶变红（名、可作动词）//(n, suru-verb) autumn leaves; leaves turning red — also read momiji (esp. maple); momijigari = autumn leaf viewing |
+| 計画 | けいかく | 计划（名、可作动词）//(n, suru-verb) plan; project; scheme — a deliberate, detailed plan; more formal than yotei (an arrangement); keikaku-doori = according to plan |
+| 予定 | よてい | 计划；安排（名、可作动词）——指已定的日程，不是“预订”//(n, suru-verb) plan; schedule; arrangement — something already decided; ~yotei desu = I plan to; booking a room is yoyaku |
+| 説明 | せつめい | 说明；解释（名、可作动词）//(n, suru-verb) explanation; description — "explain X" is X o setsumei suru; setsumeisho = instruction manual |
+| レシピ | レシピ | 菜谱；食谱（名）//(n) recipe |
+| 思い浮かべる | おもいうかべる | 想起；联想到（他动词）//(v, trans.) to picture; to call to mind; to think of — an image coming to mind |
+| 得意 | とくい | 擅长；拿手（形容动词、名）——可以用来说自己//(na-adj, n) good at; one's strong point — fine to say about yourself, unlike jouzu; tokui ryouri = one's best dish |
+| 趣味 | しゅみ | 爱好（名）——不是“有趣”//(n) hobby; pastime; taste — not "interesting"; shumi ga ii = have good taste |
+| 春 | はる | 春天（名）//(n) spring (season) — also the start of the school and business year (April) |
+| 桜 | さくら | 樱花；樱树（名）//(n) cherry blossom; cherry tree — symbol of spring and new beginnings; viewing them is o-hanami |
+| 期待 | きたい | 期待；期望（名、可作动词）//(n, suru-verb) expectation; hope; anticipation — usually positive; kitai hazure = a letdown; kitai ni kotaeru = live up to expectations |
 
 ---
 

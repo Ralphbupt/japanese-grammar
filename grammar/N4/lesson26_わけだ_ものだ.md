@@ -4,21 +4,21 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 道理で | どうりで | 难怪//no wonder |
-| エアコン | エアコン | 空调//air conditioner |
-| 犯人 | はんにん | 犯人//culprit |
-| 節約 | せつやく | 节约//saving |
-| 反対 | はんたい | 反对//opposition |
-| 計画 | けいかく | 计划//plan |
-| 秘密 | ひみつ | 秘密//secret |
-| 勝手に | かってに | 擅自//without permission |
-| 人生 | じんせい | 人生//life |
-| 経つ | たつ | 经过（时间）//to pass (time) |
-| 川 | かわ | 河//river |
-| 年上 | としうえ | 年长//older |
-| 敬語 | けいご | 敬语//polite speech |
-| 悪口 | わるぐち | 坏话//bad-mouthing |
-| 守る | まもる | 遵守/保护//to keep/protect |
+| 道理で | どうりで | 怪不得；难怪（副词）//(adv) no wonder; that explains it — said when you learn the reason for something |
+| エアコン | エアコン | 空调（名）//(n) air conditioner — usually heats as well as cools |
+| 犯人 | はんにん | 罪犯；作案者（名）——指作案者，不是中文“犯人”（服刑者）//(n) culprit; criminal; perpetrator — whoever committed the crime, caught or not, not a prisoner; jokingly, whoever did it |
+| 節約 | せつやく | 节约；节省（名、可作动词）//(n, suru-verb) saving; economizing — cutting spending on money, electricity or water |
+| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）//(n, suru-verb, na-adj) opposition; objection; the opposite — ni hantai suru = be against; also the reverse side or direction (hantai-gawa) |
+| 計画 | けいかく | 计划（名、可作动词）//(n, suru-verb) plan; project; scheme — a deliberate, detailed plan; more formal than yotei (an arrangement); keikaku-doori = according to plan |
+| 秘密 | ひみつ | 秘密（名）//(n) secret; secrecy — himitsu o mamoru = keep a secret; himitsu da yo = it's a secret |
+| 勝手に | かってに | 擅自；随便（副词）//(adv) without permission; as one pleases — usually negative: doing something without asking |
+| 人生 | じんせい | 人生（名）//(n) (one's) life — life as a whole journey; daily life is seikatsu |
+| 経つ | たつ | （时间）经过；流逝（自动词）//(v, intrans.) to pass; to go by (of time) — ichinen ga tatsu = a year passes; only for time |
+| 川 | かわ | 河；河流（名）//(n) river; stream |
+| 年上 | としうえ | 年长；年纪大（名）//(n) older; senior (in age) — someone older than you; opposite: toshishita |
+| 敬語 | けいご | 敬语（名）//(n) keigo; honorific language — umbrella term for polite, respectful (sonkeigo) and humble (kenjougo) speech |
+| 悪口 | わるぐち | 坏话（名）//(n) bad-mouthing; speaking ill of someone — warukuchi o iu, usually behind their back |
+| 守る | まもる | 遵守；保护（他动词）//(v, trans.) to keep (a promise, rule); to obey; to protect — rules, promises, deadlines, or protecting people |
 
 ## 1. 〜わけだ（难怪/当然/也就是说）||1. 〜わけだ (No wonder / Of course / In other words)
 

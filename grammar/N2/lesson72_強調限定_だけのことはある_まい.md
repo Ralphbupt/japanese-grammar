@@ -12,23 +12,23 @@ This lesson covers N2 grammar for "emphatic evaluation" and "negative conjecture
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 値段 | ねだん | 价格//price |
-| 評判 | ひょうばん | 评价、口碑//reputation |
-| さすが | さすが | 不愧、果然//as expected |
-| 留学 | りゅうがく | 留学//studying abroad |
-| 努力 | どりょく | 努力//effort |
-| 景色 | けしき | 景色//scenery |
-| 一流 | いちりゅう | 一流//first-rate |
-| 挑戦 | ちょうせん | 挑战//challenge |
-| 覚悟 | かくご | 觉悟//resolve |
-| 諦める | あきらめる | 放弃//to give up |
-| 二度と | にどと | 再也不//never again |
-| 過ち | あやまち | 过错//mistake |
-| 繰り返す | くりかえす | 重复//to repeat |
-| 怪しい | あやしい | 可疑的//suspicious |
-| 済む | すむ | 解决、完了//to be settled |
-| 贅沢 | ぜいたく | 奢侈//luxury |
-| ボーナス | ぼーなす | 奖金//bonus |
+| 値段 | ねだん | 价格；价钱（名）//(n) price; cost — the everyday word; kakaku is formal; nedan ga takai = expensive |
+| 評判 | ひょうばん | 评价；口碑（名）//(n) reputation; public opinion — what people say about a shop, product or person; hyouban ga ii = well-reviewed |
+| さすが | さすが | 不愧；果然（副词）//(adv) as expected (of); truly impressive — praise: sasuga sensei = just what you'd expect from a teacher |
+| 留学 | りゅうがく | 留学（名、可作动词）//(n, suru-verb) studying abroad — the destination takes ni (Nihon ni ryuugaku suru); ryuugakusei = international student, including foreigners in Japan |
+| 努力 | どりょく | 努力（名、可作动词）——在日语中是名词，“努力地”另有说法//(n, suru-verb) effort; hard work; endeavor — a noun: doryoku suru = make an effort; adverbial "hard" is isshoukenmei |
+| 景色 | けしき | 景色；风景（名）//(n) scenery; view; landscape — natural or city views, e.g. from a mountain top or a window |
+| 一流 | いちりゅう | 一流；顶级（名）//(n) first-rate; top-class; leading — before a noun with "no": a first-class hotel or chef |
+| 挑戦 | ちょうせん | 挑战（名、可作动词）——多指“挑战自己、尝试难事”//(n, suru-verb) challenge; attempt; trying (something difficult) — "try one's hand at"; not just a contest |
+| 覚悟 | かくご | 思想准备；决心（名、可作动词）——不是中文“觉悟（觉醒）”//(n, suru-verb) resolve; readiness (for hardship) — bracing for something hard or a bad outcome; kakugo shite iru = be prepared for the worst |
+| 諦める | あきらめる | 放弃；死心（他动词）//(v, trans.) to give up; to abandon (hope); to resign oneself — accepting something is out of reach; yameru is simply stopping |
+| 二度と | にどと | 再也（不）（副词）//(adv) never again (with a negative) — "will never do it again" |
+| 過ち | あやまち | 过错；过失（名）//(n) mistake; fault; error (moral or serious) — formal; "repeat the same mistake" |
+| 繰り返す | くりかえす | 重复；反复（他动词）//(v, trans.) to repeat; to do over again — repeat mistakes, history, words |
+| 怪しい | あやしい | 可疑的；靠不住的（形容词）//(i-adj) suspicious; dubious; doubtful — suspicious people, or doubtful weather and plans |
+| 済む | すむ | 了结；解决（自动词）——常用于“不用…就解决了”//(v, intrans.) to get by (without); to be settled; to end — zu ni sumu = get away without having to; also the root of sumimasen |
+| 贅沢 | ぜいたく | 奢侈；奢华（名、形容动词）//(n, na-adj) luxury; extravagance; luxurious — zeitaku o iu = be choosy; chotto zeitaku = a little treat |
+| ボーナス | ぼーなす | 奖金（名）//(n) bonus (seasonal salary bonus) — paid twice a year in Japanese companies |
 
 ---
 

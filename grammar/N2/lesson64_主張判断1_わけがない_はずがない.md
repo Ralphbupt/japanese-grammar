@@ -12,22 +12,22 @@ This lesson covers N2-level expressions for assertion and judgment. 「ないわ
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 義務 | ぎむ | 义务//obligation |
-| 出席 | しゅっせき | 出席//attendance |
-| 断る | ことわる | 拒绝//to refuse |
-| 犯人 | はんにん | 犯人//criminal |
-| 証拠 | しょうこ | 证据//evidence |
-| 判断 | はんだん | 判断//judgment |
-| 嘘 | うそ | 谎话//lie |
-| 本気 | ほんき | 认真//serious |
-| 常識 | じょうしき | 常识//common sense |
-| 裏切る | うらぎる | 背叛//to betray |
-| 約束 | やくそく | 约定//promise |
-| 破る | やぶる | 违反//to break |
-| 優秀 | ゆうしゅう | 优秀//excellent |
-| 不合格 | ふごうかく | 不合格//failure (exam) |
-| 責任 | せきにん | 责任//responsibility |
-| 間違い | まちがい | 错误//mistake |
+| 義務 | ぎむ | 义务；责任（名）//(n) duty; obligation — legal or moral duty; opposite of rights |
+| 出席 | しゅっせき | 出席（名、可作动词）//(n, suru-verb) attendance; being present — at a class, meeting or wedding; opposite: kesseki (absence) |
+| 断る | ことわる | 拒绝；谢绝（他动词）//(v, trans.) to refuse; to decline; to turn down — invitations or requests, usually indirectly; also to give notice in advance (kotowatte oku) |
+| 犯人 | はんにん | 罪犯；作案者（名）——指作案者，不是中文“犯人”（服刑者）//(n) culprit; criminal; perpetrator — whoever committed the crime, caught or not, not a prisoner; jokingly, whoever did it |
+| 証拠 | しょうこ | 证据（名）//(n) evidence; proof — shouko ga nai = there's no proof; nani yori no shouko = the best proof of all |
+| 判断 | はんだん | 判断（名、可作动词）//(n, suru-verb) judgment; decision; assessment — handan suru = judge, decide; handan shikaneru = find it hard to decide |
+| 嘘 | うそ | 谎话；谎言（名）//(n) lie; falsehood — uso o tsuku = tell a lie; uso! = no way! (surprise, not an accusation) |
+| 本気 | ほんき | 认真；当真（名、形容动词）//(n, na-adj) seriousness; earnestness — honki de = seriously, for real; honki? = are you serious? |
+| 常識 | じょうしき | 常识（名）——偏“社会常理、礼节”//(n) common sense; common knowledge — also social norms; "lacking common sense" is a criticism |
+| 裏切る | うらぎる | 背叛；辜负（他动词）//(v, trans.) to betray; to let down — betray a friend; kitai o uragiru = fail (or, pleasantly, defy) expectations |
+| 約束 | やくそく | 约定；诺言（名、可作动词）——也指约会//(n, suru-verb) promise; appointment; arrangement — also a plan to meet someone; keep one = mamoru, break one = yaburu |
+| 破る | やぶる | 撕破；违背；打败（他动词）//(v, trans.) to tear; to break (a promise, rule); to defeat — tear paper, break a promise, beat an opponent |
+| 優秀 | ゆうしゅう | 优秀（形容动词）//(na-adj) excellent; outstanding; highly capable — praise for students, staff or results |
+| 不合格 | ふごうかく | 不合格；不及格（名）//(n) failing (an exam); disqualification — failing an entrance exam or inspection |
+| 責任 | せきにん | 责任（名）//(n) responsibility; liability; blame — sekinin o toru = take responsibility; sekininsha = the person in charge |
+| 間違い | まちがい | 错误；差错（名）//(n) mistake; error — machigai nai = definitely, no doubt about it; the verb is machigaeru (make a mistake) |
 
 ---
 

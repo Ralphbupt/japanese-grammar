@@ -12,23 +12,23 @@ This lesson covers grammar expressing "degree" and "conditional extremes." 「�
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 練習 | れんしゅう | 练习//practice |
-| 上手 | じょうず | 擅长//skilled |
-| 死ぬ | しぬ | 死//to die |
-| 涙 | なみだ | 眼泪//tears |
-| 出る | でる | 出来//to come out |
-| 健康 | けんこう | 健康//health |
-| 十分 | じゅうぶん | 充分//sufficient |
-| 幸せ | しあわせ | 幸福//happiness |
-| 近づく | ちかづく | 接近//to approach |
-| 緊張 | きんちょう | 紧张//nervousness |
-| 給料 | きゅうりょう | 工资//salary |
-| 不安 | ふあん | 不安//anxiety |
-| 努力 | どりょく | 努力//effort |
-| 成長 | せいちょう | 成长//growth |
-| 複雑 | ふくざつ | 复杂//complex |
-| 合格 | ごうかく | 及格//passing (an exam) |
-| 電気 | でんき | 电//electricity |
+| 練習 | れんしゅう | 练习（名、可作动词）//(n, suru-verb) practice; training; drill — practicing a skill, sport, instrument or language |
+| 上手 | じょうず | 擅长；（做得）好（形容动词）——不用于说自己//(na-adj) skillful; good at (something) — praise for others; for yourself use tokui, since jouzu sounds boastful |
+| 死ぬ | しぬ | 死（自动词）//(v, intrans.) to die — blunt; the polite word is nakunaru; the only common verb ending in -nu (te-form shinde) |
+| 涙 | なみだ | 眼泪（名）//(n) tears; teardrop — namida ga deru = tears come; namida o nagasu = shed tears |
+| 出る | でる | 出；流出；出去（自动词）//(v, intrans.) to come out; to leave; to appear — very broad; tears, results, a person leaving, a TV appearance |
+| 健康 | けんこう | 健康（名、形容动词）//(n, na-adj) health; healthy — physical health; kenkou ni ii = good for your health |
+| 十分 | じゅうぶん | 充分；足够（形容动词、副词）//(na-adj, adv) enough; sufficient; plenty — also written with a different second character (same meaning); juppun = ten minutes |
+| 幸せ | しあわせ | 幸福；幸运（形容动词、名）——指持久的幸福感//(na-adj, n) happy; happiness; good fortune — lasting well-being, not a one-off thrill (that is ureshii); koufuku is the formal equivalent |
+| 近づく | ちかづく | 接近；临近（自动词）//(v, intrans.) to approach; to draw near; to get closer — in space or time: the exam is approaching |
+| 緊張 | きんちょう | 紧张（名、可作动词）——只指心情或局势紧张，不指“时间紧”//(n, suru-verb) nervousness; tension — nervous before a test or speech; also political tension; never "busy" or "short of time" |
+| 給料 | きゅうりょう | 工资；薪水（名）//(n) salary; pay; wages — monthly pay from an employer; kyuuryoubi = payday |
+| 不安 | ふあん | 不安；担心（名、形容动词）//(n, na-adj) anxiety; unease; insecurity — a vague worry about the future; shinpai is concern about a specific thing |
+| 努力 | どりょく | 努力（名、可作动词）——在日语中是名词，“努力地”另有说法//(n, suru-verb) effort; hard work; endeavor — a noun: doryoku suru = make an effort; adverbial "hard" is isshoukenmei |
+| 成長 | せいちょう | 成长；增长（名、可作动词）//(n, suru-verb) growth; development; growing up — people, children or the economy (economic growth) |
+| 複雑 | ふくざつ | 复杂（形容动词）//(na-adj) complicated; complex; intricate — also mixed feelings: fukuzatsu na kimochi |
+| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取//(n, suru-verb) passing (an exam); being accepted (to a school) — shiken ni goukaku suru = pass an exam; mainly exams and admissions |
+| 電気 | でんき | 电；电灯（名）——口语中常指“灯”//(n) electricity; (electric) light — in daily speech often "the lights": denki o tsukeru / kesu = turn the lights on / off |
 
 ---
 

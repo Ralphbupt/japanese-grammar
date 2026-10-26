@@ -12,24 +12,24 @@ This lesson covers N2 grammar for "uncontrollable emotions" and "necessary preco
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 懐かしい | なつかしい | 怀念的//nostalgic |
-| 羨ましい | うらやましい | 羡慕的//envious |
-| 悔しい | くやしい | 不甘心的//frustrating |
-| 心配 | しんぱい | 担心//worry |
-| 我慢 | がまん | 忍耐//patience |
-| 確認 | かくにん | 确认//confirmation |
-| 申し込み | もうしこみ | 申请//application |
-| 許可 | きょか | 许可//permission |
-| 納得 | なっとく | 接受//understanding |
-| 実際 | じっさい | 实际//actually |
-| 判断 | はんだん | 判断//judgment |
-| 試す | ためす | 尝试//to try |
-| 黙る | だまる | 沉默//to be silent |
-| 結果 | けっか | 结果//result |
-| のんびり | のんびり | 悠闲//leisurely |
-| 落ち着く | おちつく | 冷静//to calm down |
-| 済む | すむ | 结束//to be finished |
-| 手続き | てつづき | 手续//procedure |
+| 懐かしい | なつかしい | 怀念的；令人怀念的（形容词）——对过去的温暖感觉，不是伤感//(i-adj) nostalgic; dear (old memories) — a warm, not sad, feeling; exclaimed on seeing something from your past |
+| 羨ましい | うらやましい | 羡慕（形容词）//(i-adj) envious; enviable — urayamashii! = lucky you!; envy of someone's luck, not romantic jealousy (shitto) |
+| 悔しい | くやしい | 不甘心；懊恼（形容词）——输了或失败后的不甘//(i-adj) frustrated; mortified; galling — after losing or being wronged; no exact English match; regret over a choice is koukai |
+| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）//(n, suru-verb, na-adj) worry; concern; anxiety — X o shinpai suru = worry about X; shinpai shinaide = don't worry |
+| 我慢 | がまん | 忍耐；忍受（名、可作动词）——多指忍住疼痛、眼泪、尿意等//(n, suru-verb) patience; putting up with something unpleasant — often "hold it in" (pain, tears, the urge to go) |
+| 確認 | かくにん | 确认；核实（名、可作动词）//(n, suru-verb) confirmation; checking; verification — double-checking facts, schedules or documents; constant at work |
+| 申し込み | もうしこみ | 申请；报名（名）//(n) application; registration; sign-up — for courses, events, contracts; "apply" is the verb form |
+| 許可 | きょか | 许可；批准（名、可作动词）//(n, suru-verb) permission; approval; permit — official permission from an authority |
+| 納得 | なっとく | 认可；理解并接受（名、可作动词）//(n, suru-verb) being convinced; understanding and accepting — "that makes sense"; "I can't accept that" |
+| 実際 | じっさい | 实际；真正（名、副词）//(n, adv) reality; practice; actually — jissai ni = in reality, in practice (as opposed to in theory) |
+| 判断 | はんだん | 判断（名、可作动词）//(n, suru-verb) judgment; decision; assessment — handan suru = judge, decide; handan shikaneru = find it hard to decide |
+| 試す | ためす | 尝试；试验（他动词）//(v, trans.) to try (out); to test — try a new method or product; test one's ability |
+| 黙る | だまる | 沉默；不作声（自动词）//(v, intrans.) to fall silent; to keep quiet — damare! = shut up! (rude); damatte = without asking (damatte tsukau) |
+| 結果 | けっか | 结果（名）//(n) result; outcome; consequence — exam results or the outcome of a cause; kekka-teki ni = as a result |
+| のんびり | のんびり | 悠闲；从容（副词、可作动词）//(adv, suru-verb) leisurely; relaxed; carefree — take it easy; can imply slowness |
+| 落ち着く | おちつく | 冷静下来；平静；安定（自动词）//(v, intrans.) to calm down; to settle down; to settle in — of people, situations or places; ochitsuita = calm, composed |
+| 済む | すむ | 了结；解决（自动词）——常用于“不用…就解决了”//(v, intrans.) to get by (without); to be settled; to end — zu ni sumu = get away without having to; also the root of sumimasen |
+| 手続き | てつづき | 手续（名）//(n) procedure; formalities; paperwork — official processes at city hall, a bank or school |
 
 ---
 

@@ -12,36 +12,36 @@ This lesson covers a lot of ground and is spread over two days. All of these gra
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 天気予報 | てんきよほう | 天气预报//weather forecast |
-| 大丈夫 | だいじょうぶ | 没问题//all right |
-| 日曜日 | にちようび | 星期天//Sunday |
-| 間違い | まちがい | 错误//mistake |
-| 確認 | かくにん | 确认//confirmation |
-| 本当 | ほんとう | 真的//true |
-| 落ちる | おちる | 落/不及格//to fall/to fail |
-| 空 | そら | 天空//sky |
-| 暗い | くらい | 暗//dark |
-| 病気 | びょうき | 生病//illness |
-| 税金 | ぜいきん | 税金//tax |
-| 上がる | あがる | 上升//to rise |
-| 怒る | おこる | 生气//to get angry |
-| 事故 | じこ | 事故//accident |
-| 発想 | はっそう | 想法//idea |
-| 行動 | こうどう | 行动//action |
-| 白い | しろい | 白色//white |
-| 忘れる | わすれる | 忘记//to forget |
-| 飽きる | あきる | 厌倦//to get bored |
-| 性格 | せいかく | 性格//personality |
-| 熱い | あつい | 烫/热情//hot/passionate |
-| 具合 | ぐあい | 身体状况//condition |
-| 泣く | なく | 哭//to cry |
-| 合格 | ごうかく | 合格/通过//to pass |
-| 渋滞 | じゅうたい | 堵车//traffic jam |
-| 倒れる | たおれる | 倒下//to collapse |
-| 噂 | うわさ | 传言/谣言//rumor |
-| 迷子 | まいご | 迷路的孩子//lost child |
-| 景色 | けしき | 景色//scenery |
-| 優しい | やさしい | 温柔//gentle |
+| 天気予報 | てんきよほう | 天气预报（名）//(n) weather forecast — tenki yohou ni yoru to = according to the forecast, a classic hearsay frame |
+| 大丈夫 | だいじょうぶ | 没问题；不要紧（形容动词）——不是“男子汉”；也常用来委婉拒绝//(na-adj) all right; OK; no problem — also a polite "no thanks" (daijoubu desu) |
+| 日曜日 | にちようび | 星期天（名）//(n) Sunday |
+| 間違い | まちがい | 错误；差错（名）//(n) mistake; error — machigai nai = definitely, no doubt about it; the verb is machigaeru (make a mistake) |
+| 確認 | かくにん | 确认；核实（名、可作动词）//(n, suru-verb) confirmation; checking; verification — double-checking facts, schedules or documents; constant at work |
+| 本当 | ほんとう | 真的；真实（名、形容动词）//(n, na-adj) true; real; really — "really?" is hontou?; adverb hontou ni |
+| 落ちる | おちる | 掉落；（考试）落榜（自动词）//(v, intrans.) to fall; to drop; to fail (an exam) — ichidan verb; shiken ni ochiru = fail an exam |
+| 空 | そら | 天空（名）//(n) sky — the same kanji read kara means "empty" |
+| 暗い | くらい | 暗；阴郁（形容词）//(i-adj) dark; gloomy — also a gloomy personality |
+| 病気 | びょうき | 病；疾病（名）//(n) illness; sickness; disease — byouki ni naru = get sick |
+| 税金 | ぜいきん | 税；税款（名）//(n) tax; taxes — "tax goes up" is zeikin ga agaru |
+| 上がる | あがる | 上升；上涨（自动词）//(v, intrans.) to go up; to rise — prices, temperature; also "come in" to a house |
+| 怒る | おこる | 生气；发火（自动词）——也可表示“批评、骂”//(v, intrans.) to get angry; to scold — okorareru = get told off; shikaru is deliberate scolding to correct someone |
+| 事故 | じこ | 事故（名）//(n) accident; incident — traffic or industrial accidents; jiko ni au = have an accident |
+| 発想 | はっそう | 想法；创意（名）//(n) idea; way of thinking; concept — a creative angle on something |
+| 行動 | こうどう | 行动；行为（名、可作动词）//(n, suru-verb) action; behavior; conduct — what someone actually does |
+| 白い | しろい | 白；白色的（形容词）//(i-adj) white — the noun is shiro |
+| 忘れる | わすれる | 忘记；忘带（他动词）//(v, trans.) to forget; to leave (something) behind — kasa o wasureta = I left my umbrella behind |
+| 飽きる | あきる | 厌倦；腻了（自动词）//(v, intrans.) to get tired of; to get bored with — after too much of the same thing; the thing takes ni (ni akiru) |
+| 性格 | せいかく | 性格；脾气（名）//(n) personality; character; nature — seikaku ga ii = good-natured; seikaku ga awanai = we don't get along |
+| 熱い | あつい | （东西）烫；热；热情（形容词）——摸着烫，天气热用另一个词//(i-adj) hot (to the touch); passionate — tea, a bath; hot weather is the homophone atsui (hot air) |
+| 具合 | ぐあい | （身体）情况；状态（名）//(n) condition; state (of health, a machine) — "feel unwell" is guai ga warui |
+| 泣く | なく | 哭；哭泣（自动词）//(v, intrans.) to cry; to weep — of people; animals and birds use a homophone written with another kanji (naku, to chirp or bark) |
+| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取//(n, suru-verb) passing (an exam); being accepted (to a school) — shiken ni goukaku suru = pass an exam; mainly exams and admissions |
+| 渋滞 | じゅうたい | 堵车；交通拥堵（名、可作动词）//(n, suru-verb) traffic jam; congestion — on roads; juutai ni makikomareru = get stuck in traffic, the classic excuse for being late |
+| 倒れる | たおれる | 倒下；病倒（自动词）//(v, intrans.) to fall over; to collapse — trees in wind, or a person fainting from illness |
+| 噂 | うわさ | 传闻；谣言（名）//(n) rumor; gossip; hearsay — uwasa ni yoru to = rumor has it; often paired with rashii |
+| 迷子 | まいご | 走失的孩子；迷路（名）//(n) lost child; getting lost — "get lost" is maigo ni naru (also adults, jokingly) |
+| 景色 | けしき | 景色；风景（名）//(n) scenery; view; landscape — natural or city views, e.g. from a mountain top or a window |
+| 優しい | やさしい | 温柔；和善（形容词）//(i-adj) kind; gentle; tender — about personality; easy is a homophone with another kanji |
 
 ---
 

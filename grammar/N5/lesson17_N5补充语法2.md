@@ -12,36 +12,36 @@ Supplementary N5 grammar not yet covered: existence expressions, purpose of move
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 机 | つくえ | 桌子//desk |
-| 椅子 | いす | 椅子//chair |
-| 冷蔵庫 | れいぞうこ | 冰箱//refrigerator |
-| 庭 | にわ | 院子//garden |
-| 公園 | こうえん | 公园//park |
-| 池 | いけ | 池塘//pond |
-| 金魚 | きんぎょ | 金鱼//goldfish |
-| 財布 | さいふ | 钱包//wallet |
-| 引き出し | ひきだし | 抽屉//drawer |
-| 棚 | たな | 架子//shelf |
-| 映画 | えいが | 电影//movie |
-| 買い物 | かいもの | 买东西//shopping |
-| 散歩 | さんぽ | 散步//walk |
-| 泳ぐ | およぐ | 游泳//to swim |
-| 釣り | つり | 钓鱼//fishing |
-| 歌う | うたう | 唱歌//to sing |
-| 踊る | おどる | 跳舞//to dance |
-| 料理 | りょうり | 做菜/料理//cooking |
-| 絵 | え | 画//picture |
-| 描く | かく | 画（画）//to draw |
-| 得意 | とくい | 擅长//good at |
-| 苦手 | にがて | 不擅长//not good at |
-| 上手 | じょうず | 做得好//skillful |
-| 下手 | へた | 做得差//unskillful |
-| 果物 | くだもの | 水果//fruit |
-| 野菜 | やさい | 蔬菜//vegetable |
-| 肉 | にく | 肉//meat |
-| 牛乳 | ぎゅうにゅう | 牛奶//milk |
-| 大体 | だいたい | 大概//roughly |
-| 値段 | ねだん | 价格//price |
+| 机 | つくえ | 书桌；桌子（名）——指办公、学习用的桌子//(n) desk; table — a desk for working or studying; a dining table is usually teeburu |
+| 椅子 | いす | 椅子（名）//(n) chair |
+| 冷蔵庫 | れいぞうこ | 冰箱（名）//(n) refrigerator; fridge — reitouko = freezer |
+| 庭 | にわ | 院子；庭院（名）//(n) garden; yard — the yard of a house |
+| 公園 | こうえん | 公园（名）//(n) park — a public park, from a small playground to a large city park |
+| 池 | いけ | 池塘（名）//(n) pond |
+| 金魚 | きんぎょ | 金鱼（名）//(n) goldfish |
+| 財布 | さいふ | 钱包（名）//(n) wallet; purse |
+| 引き出し | ひきだし | 抽屉（名）//(n) drawer |
+| 棚 | たな | 架子；搁板（名）//(n) shelf; rack |
+| 映画 | えいが | 电影（名）//(n) movie; film — "see a movie" takes the verb miru; a cinema is eigakan |
+| 買い物 | かいもの | 购物；买东西（名、可作动词）//(n, suru-verb) shopping — "go shopping" is kaimono ni iku |
+| 散歩 | さんぽ | 散步（名、可作动词）//(n, suru-verb) walk; stroll — a leisurely walk; inu no sanpo = walking the dog |
+| 泳ぐ | およぐ | 游泳（自动词）//(v, intrans.) to swim — te-form is oyoide (gu → ide) |
+| 釣り | つり | 钓鱼（名）//(n) fishing — "go fishing" is tsuri ni iku |
+| 歌う | うたう | 唱（歌）（他动词）//(v, trans.) to sing — song takes o |
+| 踊る | おどる | 跳舞（自动词）//(v, intrans.) to dance — odori = a dance; Bon odori = summer festival dancing |
+| 料理 | りょうり | 菜；做菜（名、可作动词）——不同于中文“料理”，泛指菜肴和烹饪//(n, suru-verb) cooking; dish; cuisine — both the act and the food; Nihon ryouri = Japanese food |
+| 絵 | え | 画；图画（名）//(n) picture; painting; drawing — "draw a picture" is e o kaku |
+| 描く | かく | 画（画）（他动词）//(v, trans.) to draw; to paint — homophone of "write" with a different kanji |
+| 得意 | とくい | 擅长；拿手（形容动词、名）——可以用来说自己//(na-adj, n) good at; one's strong point — fine to say about yourself, unlike jouzu; tokui ryouri = one's best dish |
+| 苦手 | にがて | 不擅长；怕（形容动词、名）——也可委婉表示不喜欢人或食物//(na-adj, n) bad at; weak point; not one's thing — also a soft way to say you dislike a food or person |
+| 上手 | じょうず | 擅长；（做得）好（形容动词）——不用于说自己//(na-adj) skillful; good at (something) — praise for others; for yourself use tokui, since jouzu sounds boastful |
+| 下手 | へた | 不擅长；（做得）差（形容动词）//(na-adj) unskillful; poor at; bad at — blunter than nigate; used modestly about yourself |
+| 果物 | くだもの | 水果（名）//(n) fruit |
+| 野菜 | やさい | 蔬菜（名）//(n) vegetable; vegetables — no plural in Japanese, so one word covers one or many |
+| 肉 | にく | 肉（名）//(n) meat — pork, beef and chicken add the animal name (butaniku, gyuuniku, toriniku) |
+| 牛乳 | ぎゅうにゅう | 牛奶（名）//(n) milk |
+| 大体 | だいたい | 大概；大致（副词、名）//(adv, n) roughly; about; generally — "I mostly understand" is daitai wakaru |
+| 値段 | ねだん | 价格；价钱（名）//(n) price; cost — the everyday word; kakaku is formal; nedan ga takai = expensive |
 
 ---
 

@@ -12,23 +12,23 @@ This group revolves around "from what standpoint/perspective": as a certain role
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 留学生 | りゅうがくせい | 留学生//international student |
-| 責任者 | せきにんしゃ | 负责人//person in charge |
-| 教師 | きょうし | 教师//teacher |
-| 初心者 | しょしんしゃ | 初学者//beginner |
-| 値段 | ねだん | 价格//price |
-| 若い | わかい | 年轻的//young |
-| 立派 | りっぱ | 出色的//splendid |
-| 給料 | きゅうりょう | 工资//salary |
-| 年齢 | ねんれい | 年龄//age |
-| 子ども向け | こどもむけ | 面向儿童//for children |
-| 大人向き | おとなむき | 适合大人//suitable for adults |
-| 海外旅行 | かいがいりょこう | 海外旅行//overseas trip |
-| 活躍 | かつやく | 活跃//active role |
-| 代表 | だいひょう | 代表//representative |
-| 簡単 | かんたん | 简单//simple |
-| 複雑 | ふくざつ | 复杂//complex |
-| 意外 | いがい | 意外//unexpected |
+| 留学生 | りゅうがくせい | 留学生（名）//(n) international student; student studying abroad — in Japan, usually foreign students studying there |
+| 責任者 | せきにんしゃ | 负责人（名）//(n) person in charge; manager — "Who is in charge?" = sekininsha wa dare desu ka |
+| 教師 | きょうし | 教师；老师（名）//(n) teacher; instructor — job title; addressing a teacher uses sensei |
+| 初心者 | しょしんしゃ | 初学者；新手（名）//(n) beginner; novice — shoshinsha-muke = for beginners, on courses and books |
+| 値段 | ねだん | 价格；价钱（名）//(n) price; cost — the everyday word; kakaku is formal; nedan ga takai = expensive |
+| 若い | わかい | 年轻的（形容词）//(i-adj) young; youthful; inexperienced — of people; a lower number is also wakai (wakai bangou) |
+| 立派 | りっぱ | 出色的；了不起的（形容动词）//(na-adj) splendid; admirable; impressive — praising people, buildings or achievements |
+| 給料 | きゅうりょう | 工资；薪水（名）//(n) salary; pay; wages — monthly pay from an employer; kyuuryoubi = payday |
+| 年齢 | ねんれい | 年龄（名）//(n) age (of a person) — formal, used on forms and in rules; everyday speech says toshi; nenrei seigen = age limit |
+| 子ども向け | こどもむけ | 面向儿童（名）——指“专为…设计”//(n) aimed at children; for kids — -muke = designed for a target audience (kodomo-muke no hon) |
+| 大人向き | おとなむき | 适合大人（名）——指“本身适合…”//(n) suited to adults — -muki = naturally suited to, not necessarily designed for (compare -muke) |
+| 海外旅行 | かいがいりょこう | 出国旅游（名）//(n) overseas trip; travel abroad — kaigai ryokou ni iku = go on a trip abroad |
+| 活躍 | かつやく | 大显身手；表现活跃（名、可作动词）——不是“性格活泼”//(n, suru-verb) being active (and successful); playing an active role — doing well in a field or role, not being lively |
+| 代表 | だいひょう | 代表（名、可作动词）//(n, suru-verb) representative; delegate; (national) team — nihon daihyou = the Japan national team |
+| 簡単 | かんたん | 简单；容易（形容动词）//(na-adj) simple; easy — not complicated; compare yasashii (gentle, not demanding) |
+| 複雑 | ふくざつ | 复杂（形容动词）//(na-adj) complicated; complex; intricate — also mixed feelings: fukuzatsu na kimochi |
+| 意外 | いがい | 意外；没想到（形容动词）——不指“事故”//(na-adj) unexpected; surprising — igai ni = surprisingly; not "an accident" as in Chinese |
 
 ---
 

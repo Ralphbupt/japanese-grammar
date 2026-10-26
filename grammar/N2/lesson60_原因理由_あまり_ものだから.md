@@ -12,22 +12,22 @@ This lesson covers advanced N2-level cause/reason expressions. 「あまり」 i
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 嬉しい | うれしい | 高兴的//happy; glad |
-| 厳しい | きびしい | 严格的//strict; harsh |
-| 心配 | しんぱい | 担心//worry |
-| 緊張 | きんちょう | 紧张//nervousness |
-| 失敗 | しっぱい | 失败//failure |
-| 感動 | かんどう | 感动//being moved |
-| 渋滞 | じゅうたい | 堵车//traffic jam |
-| 寝坊 | ねぼう | 睡过头//oversleeping |
-| 期待 | きたい | 期待//expectation |
-| 評判 | ひょうばん | 口碑//reputation |
-| 一流 | いちりゅう | 一流//first-rate |
-| ベテラン | べてらん | 老手//veteran |
-| 鍛える | きたえる | 锻炼//to train |
-| 叱る | しかる | 训斥//to scold |
-| 泣く | なく | 哭//to cry |
-| 言い訳 | いいわけ | 借口//excuse |
+| 嬉しい | うれしい | 高兴；开心（形容词）//(i-adj) happy; glad; pleased — about something good that happens to you; tanoshii is enjoying an activity, shiawase lasting happiness |
+| 厳しい | きびしい | 严格的；严峻的（形容词）//(i-adj) strict; severe; harsh — strict people/rules, harsh conditions, tough situations |
+| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）//(n, suru-verb, na-adj) worry; concern; anxiety — X o shinpai suru = worry about X; shinpai shinaide = don't worry |
+| 緊張 | きんちょう | 紧张（名、可作动词）——只指心情或局势紧张，不指“时间紧”//(n, suru-verb) nervousness; tension — nervous before a test or speech; also political tension; never "busy" or "short of time" |
+| 失敗 | しっぱい | 失败；失误（名、可作动词）//(n, suru-verb) failure; mistake; blunder — from small slip-ups to big failures; a factual error is usually machigai |
+| 感動 | かんどう | 感动（名、可作动词）//(n, suru-verb) being deeply moved; being touched — by a film, music or someone's kindness; kandou-teki = moving |
+| 渋滞 | じゅうたい | 堵车；交通拥堵（名、可作动词）//(n, suru-verb) traffic jam; congestion — on roads; juutai ni makikomareru = get stuck in traffic, the classic excuse for being late |
+| 寝坊 | ねぼう | 睡过头；睡懒觉（名、可作动词）//(n, suru-verb) oversleeping — waking up too late by accident; the standard excuse for being late |
+| 期待 | きたい | 期待；期望（名、可作动词）//(n, suru-verb) expectation; hope; anticipation — usually positive; kitai hazure = a letdown; kitai ni kotaeru = live up to expectations |
+| 評判 | ひょうばん | 评价；口碑（名）//(n) reputation; public opinion — what people say about a shop, product or person; hyouban ga ii = well-reviewed |
+| 一流 | いちりゅう | 一流；顶级（名）//(n) first-rate; top-class; leading — before a noun with "no": a first-class hotel or chef |
+| ベテラン | べてらん | 老手；资深人士（名）//(n) veteran; seasoned expert — an experienced worker or player, not specifically ex-military |
+| 鍛える | きたえる | 锻炼；磨炼（他动词）//(v, trans.) to train (body or skills); to strengthen; to temper — "build up" muscles, the body or the mind |
+| 叱る | しかる | 训斥；责骂（他动词）——上对下的批评//(v, trans.) to scold; to tell off — a parent, teacher or boss correcting someone; okoru is just getting angry; often passive: shikarareta |
+| 泣く | なく | 哭；哭泣（自动词）//(v, intrans.) to cry; to weep — of people; animals and birds use a homophone written with another kanji (naku, to chirp or bark) |
+| 言い訳 | いいわけ | 借口；辩解（名、可作动词）//(n, suru-verb) excuse; justification — often negative: "no excuses", "don't make excuses" |
 
 ---
 

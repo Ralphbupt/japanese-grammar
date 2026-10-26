@@ -12,22 +12,22 @@ This lesson covers expressions of time and situation — あいだ / あいだ�
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 留守 | るす | 不在家//absence from home |
-| 泥棒 | どろぼう | 小偷//thief |
-| 入る | はいる | 进入//to enter |
-| 締め切り | しめきり | 截止日期//deadline |
-| 届ける | とどける | 送达//to deliver |
-| 薬 | くすり | 药//medicine |
-| 飲む | のむ | 喝、服用//to drink, to take |
-| 間に合う | まにあう | 来得及//to be in time |
-| 停電 | ていでん | 停电//power outage |
-| 地震 | じしん | 地震//earthquake |
-| 避難 | ひなん | 避难//evacuation |
-| 相談 | そうだん | 商量//consultation |
-| 傘 | かさ | 伞//umbrella |
-| 持ってくる | もってくる | 带来//to bring |
-| 連絡 | れんらく | 联系//contact |
-| 謝る | あやまる | 道歉//to apologize |
+| 留守 | るす | 不在家（名）//(n) being away from home; absence — rusu-chuu = while out; rusuden = answering machine |
+| 泥棒 | どろぼう | 小偷；窃贼（名）//(n) thief; burglar — someone who breaks in and steals |
+| 入る | はいる | 进入；加入（自动词）//(v, intrans.) to enter; to go in; to join — godan: hairimasu; the place takes ni; o-furo ni hairu = take a bath |
+| 締め切り | しめきり | 截止日期；期限（名）//(n) deadline; closing date — for assignments, applications and submissions; shimekiri ni maniau = meet the deadline |
+| 届ける | とどける | 送到；递交；报告（他动词）//(v, trans.) to deliver; to take (something) to; to report — also hand in a lost item to the police (keisatsu ni todokeru) |
+| 薬 | くすり | 药（名）//(n) medicine; drug — you "drink" it: kusuri o nomu, even for pills |
+| 飲む | のむ | 喝；吃（药）（他动词）——吃药也用这个词//(v, trans.) to drink; to take (medicine) — pills are "drunk" in Japanese |
+| 間に合う | まにあう | 来得及；赶上（自动词）//(v, intrans.) to make it in time; to be in time — ni maniau (a train, a deadline); also "to be enough": maniatte imasu = no thanks, I'm fine |
+| 停電 | ていでん | 停电（名、可作动词）//(n, suru-verb) power outage; blackout |
+| 地震 | じしん | 地震（名）//(n) earthquake — jishin ga okiru = an earthquake happens; small ones are often just yureta (it shook) |
+| 避難 | ひなん | 避难；疏散（名、可作动词）——不是“遇难”//(n, suru-verb) evacuation; taking refuge — fleeing to safety from a disaster; hinanjo = evacuation shelter |
+| 相談 | そうだん | 商量；咨询（名、可作动词）——不只是商量，也指找人咨询//(n, suru-verb) consultation; talking over; asking for advice — ni soudan suru = ask someone's advice; not only discussing as equals |
+| 傘 | かさ | 伞（名）//(n) umbrella — "open an umbrella" is kasa o sasu |
+| 持ってくる | もってくる | 带来；拿来（他动词）//(v, trans.) to bring (something) here; to fetch — carrying it toward the speaker |
+| 連絡 | れんらく | 联系；联络（名、可作动词）//(n, suru-verb) contact; getting in touch — by phone, email or message; renraku suru = let someone know |
+| 謝る | あやまる | 道歉；赔不是（自他动词）//(v, intrans./trans.) to apologize — the person takes ni (sensei ni ayamaru); the words themselves are usually sumimasen or gomen nasai |
 
 ---
 

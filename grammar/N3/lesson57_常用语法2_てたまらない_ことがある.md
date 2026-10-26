@@ -12,24 +12,24 @@ This lesson covers the second set of commonly used N3 grammar. 「ことか」 e
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 嬉しい | うれしい | 高兴的//happy |
-| 心配 | しんぱい | 担心//worry |
-| 悔しい | くやしい | 不甘心的//frustrating |
-| 寂しい | さびしい | 寂寞的//lonely |
-| 懐かしい | なつかしい | 怀念的//nostalgic |
-| 不思議 | ふしぎ | 不可思议//mysterious |
-| 構う | かまう | 在意//to mind |
-| 喉が渇く | のどがかわく | 口渴//to be thirsty |
-| 眠い | ねむい | 困的//sleepy |
-| 腹が立つ | はらがたつ | 生气//to get angry |
-| 故郷 | ふるさと | 故乡//hometown |
-| 結果 | けっか | 结果//result |
-| 散歩 | さんぽ | 散步//walk |
-| 夜更かし | よふかし | 熬夜//staying up late |
-| 我慢 | がまん | 忍耐//endurance |
-| 努力 | どりょく | 努力//effort |
-| 合格 | ごうかく | 合格//passing (exam) |
-| 失敗 | しっぱい | 失败//failure |
+| 嬉しい | うれしい | 高兴；开心（形容词）//(i-adj) happy; glad; pleased — about something good that happens to you; tanoshii is enjoying an activity, shiawase lasting happiness |
+| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）//(n, suru-verb, na-adj) worry; concern; anxiety — X o shinpai suru = worry about X; shinpai shinaide = don't worry |
+| 悔しい | くやしい | 不甘心；懊恼（形容词）——输了或失败后的不甘//(i-adj) frustrated; mortified; galling — after losing or being wronged; no exact English match; regret over a choice is koukai |
+| 寂しい | さびしい | 寂寞的；孤单的（形容词）//(i-adj) lonely; lonesome; desolate — missing someone; also of places: deserted |
+| 懐かしい | なつかしい | 怀念的；令人怀念的（形容词）——对过去的温暖感觉，不是伤感//(i-adj) nostalgic; dear (old memories) — a warm, not sad, feeling; exclaimed on seeing something from your past |
+| 不思議 | ふしぎ | 不可思议；奇怪（形容动词）//(na-adj) strange; mysterious; wondrous — puzzling, hard to explain; not necessarily negative |
+| 構う | かまう | 在意；理会（自动词）//(v, intrans.) to mind; to care (about); to bother with — mostly negative: kamawanai = I don't mind, it's fine |
+| 喉が渇く | のどがかわく | 口渴（惯用语）//(expr) to be thirsty — "I'm thirsty" is the past form nodo ga kawaita; literally "the throat dries" |
+| 眠い | ねむい | 困的（形容词）——指想睡觉，不是“困难”//(i-adj) sleepy; drowsy — feeling like sleeping; nemuru is the verb "to sleep" |
+| 腹が立つ | はらがたつ | 生气；恼火（惯用语）//(expr) to get angry; to be annoyed — inner anger at something; okoru shows anger outwardly |
+| 故郷 | ふるさと | 故乡；家乡（名）//(n) hometown; birthplace — emotional, also read kokyou; furusato evokes nostalgia |
+| 結果 | けっか | 结果（名）//(n) result; outcome; consequence — exam results or the outcome of a cause; kekka-teki ni = as a result |
+| 散歩 | さんぽ | 散步（名、可作动词）//(n, suru-verb) walk; stroll — a leisurely walk; inu no sanpo = walking the dog |
+| 夜更かし | よふかし | 熬夜（名、可作动词）//(n, suru-verb) staying up late — by choice, e.g. watching videos; tetsuya = staying up all night |
+| 我慢 | がまん | 忍耐；忍受（名、可作动词）——多指忍住疼痛、眼泪、尿意等//(n, suru-verb) patience; putting up with something unpleasant — often "hold it in" (pain, tears, the urge to go) |
+| 努力 | どりょく | 努力（名、可作动词）——在日语中是名词，“努力地”另有说法//(n, suru-verb) effort; hard work; endeavor — a noun: doryoku suru = make an effort; adverbial "hard" is isshoukenmei |
+| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取//(n, suru-verb) passing (an exam); being accepted (to a school) — shiken ni goukaku suru = pass an exam; mainly exams and admissions |
+| 失敗 | しっぱい | 失败；失误（名、可作动词）//(n, suru-verb) failure; mistake; blunder — from small slip-ups to big failures; a factual error is usually machigai |
 
 ---
 

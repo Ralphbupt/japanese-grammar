@@ -12,22 +12,22 @@ This group covers substitution, incidental actions, comparison, information sour
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 代わり | かわり | 代替//substitute |
-| 天気予報 | てんきよほう | 天气预报//weather forecast |
-| 出張 | しゅっちょう | 出差//business trip |
-| 郵便局 | ゆうびんきょく | 邮局//post office |
-| 物価 | ぶっか | 物价//prices; cost of living |
-| 田舎 | いなか | 乡下//countryside |
-| 新聞 | しんぶん | 报纸//newspaper |
-| 季節 | きせつ | 季节//season |
-| 外国 | がいこく | 外国//foreign country |
-| 親 | おや | 父母//parent |
-| 有り難み | ありがたみ | 感激//gratitude; appreciation |
-| 病気 | びょうき | 生病//illness |
-| 苦労 | くろう | 辛苦//hardship |
-| 社長 | しゃちょう | 社长//company president |
-| 報告 | ほうこく | 报告//report |
-| 手術 | しゅじゅつ | 手术//surgery |
+| 代わり | かわり | 代替；替代品（名）//(n) substitute; replacement; in place of — no kawari ni = instead of; okawari = a second helping |
+| 天気予報 | てんきよほう | 天气预报（名）//(n) weather forecast — tenki yohou ni yoru to = according to the forecast, a classic hearsay frame |
+| 出張 | しゅっちょう | 出差（名、可作动词）//(n, suru-verb) business trip — shucchou ni iku = go on a business trip; the destination takes ni |
+| 郵便局 | ゆうびんきょく | 邮局（名）//(n) post office — Japan Post also offers banking and parcel services |
+| 物価 | ぶっか | 物价（名）//(n) prices (of goods); cost of living — general price level; a single item's price is nedan |
+| 田舎 | いなか | 乡下；老家（名）//(n) the countryside; rural area; one's home town — also "back home" where one grew up |
+| 新聞 | しんぶん | 报纸（名）——不是“新闻”//(n) newspaper — the paper itself; news is nyuusu |
+| 季節 | きせつ | 季节（名）//(n) season — kisetsu no kawarime = the turn of the seasons; seasonal food and greetings matter in Japan |
+| 外国 | がいこく | 外国（名）//(n) foreign country; abroad — gaikokujin = foreigner |
+| 親 | おや | 父母；双亲（名）//(n) parent; parents — one or both of your own; someone else's parents politely: goryoushin |
+| 有り難み | ありがたみ | 可贵之处；珍贵（名）//(n) value; worth (one comes to appreciate) — usually realized after losing something: the value of health |
+| 病気 | びょうき | 病；疾病（名）//(n) illness; sickness; disease — byouki ni naru = get sick |
+| 苦労 | くろう | 辛苦；艰辛（名、可作动词）//(n, suru-verb) hardship; trouble; toil — gokurousama = thanks for your hard work |
+| 社長 | しゃちょう | （公司）总经理；社长（名）——指公司最高负责人//(n) company president; head of a company — the top executive; also used alone as a title to address them |
+| 報告 | ほうこく | 报告；汇报（名、可作动词）//(n, suru-verb) report; reporting — telling a boss or group the outcome; a key word in Japanese office culture |
+| 手術 | しゅじゅつ | 手术（名、可作动词）//(n, suru-verb) surgery; operation — shujutsu o ukeru = have surgery |
 
 ---
 

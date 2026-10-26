@@ -4,27 +4,27 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 漢字 | かんじ | 汉字//kanji |
-| 海 | うみ | 大海//sea |
-| 叱る | しかる | 训斥//to scold |
-| 踏む | ふむ | 踩//to step on |
-| 盗む | ぬすむ | 偷//to steal |
-| 財布 | さいふ | 钱包//wallet |
-| 運動 | うんどう | 运动//exercise |
-| 休憩 | きゅうけい | 休息//break |
-| 引っ越す | ひっこす | 搬家//to move |
-| 大学院 | だいがくいん | 研究生院//graduate school |
-| 出張 | しゅっちょう | 出差//business trip |
-| 会議 | かいぎ | 会议//meeting |
-| 始まる | はじまる | 开始（自动）//to begin |
-| 工事 | こうじ | 施工//construction |
-| 終わる | おわる | 结束//to end |
-| 転職 | てんしょく | 跳槽//job change |
-| 荷物 | にもつ | 行李//luggage |
-| 留学 | りゅうがく | 留学//study abroad |
-| 妹 | いもうと | 妹妹//younger sister |
-| おもちゃ | おもちゃ | 玩具//toy |
-| 予定 | よてい | 计划/预定//plan |
+| 漢字 | かんじ | 汉字（名）//(n) kanji; Chinese characters |
+| 海 | うみ | 大海；海边（名）//(n) sea; ocean; beach — "go to the sea" usually means the beach |
+| 叱る | しかる | 训斥；责骂（他动词）——上对下的批评//(v, trans.) to scold; to tell off — a parent, teacher or boss correcting someone; okoru is just getting angry; often passive: shikarareta |
+| 踏む | ふむ | 踩；踏（他动词）//(v, trans.) to step on; to tread on — often by accident (a foot, the brake); ashi o fumareta = had my foot stepped on |
+| 盗む | ぬすむ | 偷；盗窃（他动词）//(v, trans.) to steal — "have something stolen" is ~o nusumareta, the classic suffering passive |
+| 財布 | さいふ | 钱包（名）//(n) wallet; purse |
+| 運動 | うんどう | 运动；锻炼（名、可作动词）//(n, suru-verb) exercise; physical activity — general exercise; specific sports are supootsu |
+| 休憩 | きゅうけい | 休息（名、可作动词）//(n, suru-verb) break; rest — a short break during work, study or travel; yasumi can also mean a day off |
+| 引っ越す | ひっこす | 搬家（自动词）//(v, intrans.) to move (house) — the new place takes ni |
+| 大学院 | だいがくいん | 研究生院（名）//(n) graduate school — master's and doctoral programs |
+| 出張 | しゅっちょう | 出差（名、可作动词）//(n, suru-verb) business trip — shucchou ni iku = go on a business trip; the destination takes ni |
+| 会議 | かいぎ | 会议（名）//(n) meeting; conference — from small office meetings to international conferences; kaigi ga aru = have a meeting |
+| 始まる | はじまる | （事情）开始（自动词）——事情自己开始//(v, intrans.) to begin; to start (by itself) — the event is the subject: kaigi ga hajimaru; compare hajimeru |
+| 工事 | こうじ | 施工；工程（名）//(n) construction work; roadwork — often the reason for noise or closed roads |
+| 終わる | おわる | 结束；完（自动词）//(v, intrans.) to end; to finish; to be over — after a verb stem, "finish doing" (yomi-owaru); transitive: oeru |
+| 転職 | てんしょく | 换工作；跳槽（名、可作动词）//(n, suru-verb) changing jobs; career change — moving to a different employer; tenshoku katsudou = job hunting while still employed |
+| 荷物 | にもつ | 行李；包裹（名）//(n) luggage; baggage; package — anything you carry or have delivered |
+| 留学 | りゅうがく | 留学（名、可作动词）//(n, suru-verb) studying abroad — the destination takes ni (Nihon ni ryuugaku suru); ryuugakusei = international student, including foreigners in Japan |
+| 妹 | いもうと | 妹妹（名）//(n) younger sister — someone else's is imoutosan |
+| おもちゃ | おもちゃ | 玩具（名）//(n) toy |
+| 予定 | よてい | 计划；安排（名、可作动词）——指已定的日程，不是“预订”//(n, suru-verb) plan; schedule; arrangement — something already decided; ~yotei desu = I plan to; booking a room is yoyaku |
 
 ## 1. 意向形（意志/邀请）||1. Volitional Form (Intent/Invitation)
 

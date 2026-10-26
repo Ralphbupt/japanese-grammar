@@ -12,22 +12,22 @@ This lesson continues with N2-level assertion and judgment expressions. 「と�
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 要するに | ようするに | 总之//in short |
-| 延期 | えんき | 延期//postponement |
-| 中止 | ちゅうし | 中止//cancellation |
-| 合格 | ごうかく | 合格//passing (exam) |
-| 効率 | こうりつ | 效率//efficiency |
-| 改善 | かいぜん | 改善//improvement |
-| 解決 | かいけつ | 解决//solution |
-| 予算 | よさん | 预算//budget |
-| 立場 | たちば | 立场//standpoint |
-| 親 | おや | 父母//parent |
-| 管理職 | かんりしょく | 管理层//management position |
-| 初心者 | しょしんしゃ | 初学者//beginner |
-| 平和 | へいわ | 和平//peace |
-| 実現 | じつげん | 实现//realization |
-| 何とか | なんとか | 想办法//somehow |
-| 状況 | じょうきょう | 状况//situation |
+| 要するに | ようするに | 总之；简而言之（副词）//(adv) in short; in a word; basically — sums up what was just said, conversational and written |
+| 延期 | えんき | 延期；推迟（名、可作动词）//(n, suru-verb) postponement — moving an event to a later date; calling it off altogether is chuushi |
+| 中止 | ちゅうし | 中止；取消（名、可作动词）——指取消不办，或中途停止//(n, suru-verb) cancellation; calling off; suspension — an event cancelled beforehand or stopped midway, e.g. ame de chuushi (rained off) |
+| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取//(n, suru-verb) passing (an exam); being accepted (to a school) — shiken ni goukaku suru = pass an exam; mainly exams and admissions |
+| 効率 | こうりつ | 效率（名）//(n) efficiency — kouritsu ga ii / warui = efficient / inefficient; kouritsu-teki = efficient |
+| 改善 | かいぜん | 改善；改进（名、可作动词）//(n, suru-verb) improvement; making better — fixing problems in a system or situation |
+| 解決 | かいけつ | 解决（名、可作动词）//(n, suru-verb) solution; resolution; settlement — solve a problem or settle a dispute |
+| 予算 | よさん | 预算（名）//(n) budget; estimate — "over budget", "within budget" |
+| 立場 | たちば | 立场；处境（名）//(n) position; standpoint; one's situation — aite no tachiba ni tatsu = put yourself in the other person's shoes |
+| 親 | おや | 父母；双亲（名）//(n) parent; parents — one or both of your own; someone else's parents politely: goryoushin |
+| 管理職 | かんりしょく | 管理层；管理职位（名）//(n) manager; managerial position — section chief and above in a company |
+| 初心者 | しょしんしゃ | 初学者；新手（名）//(n) beginner; novice — shoshinsha-muke = for beginners, on courses and books |
+| 平和 | へいわ | 和平（名、形容动词）//(n, na-adj) peace; peaceful — world peace; also a peaceful, calm life |
+| 実現 | じつげん | 实现（名、可作动词）//(n, suru-verb) realization; making come true — a dream, plan or goal becoming real |
+| 何とか | なんとか | 设法；总算（副词）//(adv) somehow; one way or another — nantoka naru = it'll work out somehow; nantoka shite = please do something about it |
+| 状況 | じょうきょう | 状况；情况（名）//(n) situation; circumstances; state of affairs — "depending on the situation"; current state of things |
 
 ---
 

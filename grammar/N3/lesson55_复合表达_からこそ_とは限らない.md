@@ -12,23 +12,23 @@ This lesson covers "compound expressions" — fixed patterns formed by combining
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 努力 | どりょく | 努力//effort |
-| 成功 | せいこう | 成功//success |
-| 規則 | きそく | 规则//rule |
-| 制服 | せいふく | 制服//uniform |
-| 予感 | よかん | 预感//premonition |
-| 必ずしも | かならずしも | 未必//not necessarily |
-| 期待 | きたい | 期待//expectation |
-| 結局 | けっきょく | 结果//in the end |
-| 順調 | じゅんちょう | 顺利//smooth, on track |
-| 苦手 | にがて | 不擅长//not good at |
-| 得意 | とくい | 擅长//good at |
-| 合格 | ごうかく | 合格//passing (an exam) |
-| 有名 | ゆうめい | 有名//famous |
-| 値段 | ねだん | 价格//price |
-| 確か | たしか | 确实//certain, sure |
-| 反対 | はんたい | 反对//opposition |
-| 計画 | けいかく | 计划//plan |
+| 努力 | どりょく | 努力（名、可作动词）——在日语中是名词，“努力地”另有说法//(n, suru-verb) effort; hard work; endeavor — a noun: doryoku suru = make an effort; adverbial "hard" is isshoukenmei |
+| 成功 | せいこう | 成功（名、可作动词）//(n, suru-verb) success — ni seikou suru = succeed in; daiseikou = a huge success |
+| 規則 | きそく | 规则；规定（名）//(n) rule; regulation — written rules of a school, company or game; follow them = mamoru |
+| 制服 | せいふく | 制服；校服（名）//(n) uniform (school or work) — standard in Japanese middle and high schools |
+| 予感 | よかん | 预感（名、可作动词）//(n, suru-verb) premonition; hunch; feeling (that something will happen) — iya na yokan = bad feeling |
+| 必ずしも | かならずしも | 未必；不一定（副词）——后接否定//(adv) not necessarily; not always — always with a negative, often ...to wa kagiranai |
+| 期待 | きたい | 期待；期望（名、可作动词）//(n, suru-verb) expectation; hope; anticipation — usually positive; kitai hazure = a letdown; kitai ni kotaeru = live up to expectations |
+| 結局 | けっきょく | 最终；到头来（副词、名）//(adv, n) in the end; after all; eventually — often after effort or hesitation |
+| 順調 | じゅんちょう | 顺利（形容动词）//(na-adj) going smoothly; on track; favorable — junchou ni = smoothly |
+| 苦手 | にがて | 不擅长；怕（形容动词、名）——也可委婉表示不喜欢人或食物//(na-adj, n) bad at; weak point; not one's thing — also a soft way to say you dislike a food or person |
+| 得意 | とくい | 擅长；拿手（形容动词、名）——可以用来说自己//(na-adj, n) good at; one's strong point — fine to say about yourself, unlike jouzu; tokui ryouri = one's best dish |
+| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取//(n, suru-verb) passing (an exam); being accepted (to a school) — shiken ni goukaku suru = pass an exam; mainly exams and admissions |
+| 有名 | ゆうめい | 有名；著名（形容动词）//(na-adj) famous; well-known — yuumei na hito = a famous person; yuumei ni naru = become famous |
+| 値段 | ねだん | 价格；价钱（名）//(n) price; cost — the everyday word; kakaku is formal; nedan ga takai = expensive |
+| 確か | たしか | 确实；好像是（形容动词、副词）//(na-adj, adv) certain; sure; if I remember correctly — tashika ni = certainly; tashika alone = I believe |
+| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）//(n, suru-verb, na-adj) opposition; objection; the opposite — ni hantai suru = be against; also the reverse side or direction (hantai-gawa) |
+| 計画 | けいかく | 计划（名、可作动词）//(n, suru-verb) plan; project; scheme — a deliberate, detailed plan; more formal than yotei (an arrangement); keikaku-doori = according to plan |
 
 ---
 

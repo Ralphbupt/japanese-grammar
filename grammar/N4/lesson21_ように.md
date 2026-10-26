@@ -4,15 +4,15 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| なるべく | なるべく | 尽量//as much as possible |
-| 甘い | あまい | 甜//sweet |
-| 体 | からだ | 身体//body |
-| 赤ちゃん | あかちゃん | 婴儿//baby |
-| 着替える | きがえる | 换衣服//to change clothes |
-| 安全 | あんぜん | 安全//safe |
-| 公園 | こうえん | 公园//park |
-| 貯める | ためる | 存（钱）//to save up |
-| メモ | メモ | 备忘录//memo |
+| なるべく | なるべく | 尽量；尽可能（副词）//(adv) as much as possible; if possible — narubeku hayaku = as soon as possible; softer than kanarazu (without fail) |
+| 甘い | あまい | 甜；（对人）宽容（形容词）//(i-adj) sweet; lenient; naive — kodomo ni amai = soft on the kids; kangae ga amai = naive thinking |
+| 体 | からだ | 身体（名）//(n) body; health — karada ni ki o tsukete = take care of yourself; karada ni ii = good for you |
+| 赤ちゃん | あかちゃん | 婴儿；宝宝（名）//(n) baby — the affectionate everyday word; akanbou is plainer |
+| 着替える | きがえる | 换衣服（自他动词）//(v, intrans./trans.) to change (clothes); to get changed — into pajamas or a uniform; fuku o kigaeru |
+| 安全 | あんぜん | 安全（形容动词、名）//(na-adj, n) safe; safety; security — anzen na basho = a safe place; anzen daiichi = safety first |
+| 公園 | こうえん | 公园（名）//(n) park — a public park, from a small playground to a large city park |
+| 貯める | ためる | 存（钱）；积攒（他动词）//(v, trans.) to save up (money); to accumulate — saving money or points over time |
+| メモ | メモ | 笔记；便条（名、可作动词）//(n, suru-verb) memo; note — a quick written note; memo o toru = take notes |
 
 ---
 

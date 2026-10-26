@@ -12,25 +12,25 @@ Japanese adjectives split into **い-type** and **な-type**, with completely di
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 大きい | おおきい | 大//big |
-| 高い | たかい | 高/贵//tall; expensive |
-| 安い | やすい | 便宜//cheap |
-| 寒い | さむい | 冷//cold |
-| 速い | はやい | 快//fast |
-| 楽しい | たのしい | 快乐//fun |
-| 気持ちいい | きもちいい | 舒服//pleasant |
-| 上手 | じょうず | 擅长//skilled |
-| 元気 | げんき | 有精神//energetic |
-| 簡単 | かんたん | 简单//simple |
-| 嫌い | きらい | 讨厌//dislike |
-| きれい | きれい | 漂亮/干净//pretty; clean |
-| 掃除 | そうじ | 打扫//cleaning |
-| 医者 | いしゃ | 医生//doctor |
-| 大人 | おとな | 大人//adult |
-| 将来 | しょうらい | 将来//future |
-| 飲み物 | のみもの | 饮料//beverage |
-| 背 | せ | 身高/背//height; back |
-| 紅茶 | こうちゃ | 红茶//black tea |
+| 大きい | おおきい | 大（形容词）//(i-adj) big; large — before nouns also ookina |
+| 高い | たかい | 高；贵（形容词）//(i-adj) high; tall; expensive — tall for buildings; for people's height say se ga takai |
+| 安い | やすい | 便宜（形容词）//(i-adj) cheap; inexpensive — the opposite of takai in the price sense |
+| 寒い | さむい | 冷；寒冷（形容词）——指天气冷，摸着冷用另一个词//(i-adj) cold (weather, air) — only for air temperature; cold drinks or objects are tsumetai |
+| 速い | はやい | （速度）快（形容词）//(i-adj) fast; quick (in speed) — about speed; early in time is a homophone (hayai) |
+| 楽しい | たのしい | 开心；愉快（形容词）//(i-adj) fun; enjoyable — about an experience; being glad about news is ureshii |
+| 気持ちいい | きもちいい | 舒服；舒畅（形容词）//(i-adj) feels good; pleasant; comfortable — physical comfort: a breeze, a bath |
+| 上手 | じょうず | 擅长；（做得）好（形容动词）——不用于说自己//(na-adj) skillful; good at (something) — praise for others; for yourself use tokui, since jouzu sounds boastful |
+| 元気 | げんき | 精神；健康（形容动词、名）//(na-adj, n) healthy; energetic; well — o-genki desu ka = how are you?; genki ga nai = feeling down |
+| 簡単 | かんたん | 简单；容易（形容动词）//(na-adj) simple; easy — not complicated; compare yasashii (gentle, not demanding) |
+| 嫌い | きらい | 讨厌；不喜欢（形容动词）——虽以“i”结尾，却是形容动词//(na-adj) disliked; hated — a na-adjective despite ending in i; the thing takes ga |
+| きれい | きれい | 漂亮；干净（形容动词）//(na-adj) pretty; beautiful; clean — na-adjective despite ending in i |
+| 掃除 | そうじ | 打扫；扫除（名、可作动词）//(n, suru-verb) cleaning (a room, house) — tidying, wiping, vacuuming; laundry is sentaku |
+| 医者 | いしゃ | 医生（名）//(n) doctor; physician — address one as sensei |
+| 大人 | おとな | 成年人；大人（名）——不是中文“大人”的敬称//(n) adult; grown-up — opposite of kodomo; otona-rashii = mature; on price lists, the adult fare |
+| 将来 | しょうらい | 将来；未来（名、副词）//(n, adv) future; in the future — one's personal future: shourai no yume = dream for the future |
+| 飲み物 | のみもの | 饮料（名）//(n) drink; beverage — anything to drink |
+| 背 | せ | 身高；后背（名）//(n) height (of a person); back — "tall" is se ga takai |
+| 紅茶 | こうちゃ | 红茶（名）//(n) black tea — Western-style tea; green tea is ocha |
 
 ## 1. い形容词 完整活用表||1. い-adjective Full Conjugation Table
 

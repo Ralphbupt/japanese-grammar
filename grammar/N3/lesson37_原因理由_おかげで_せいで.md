@@ -12,24 +12,24 @@ This lesson focuses on N3 grammar for expressing cause and reason. These express
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 努力 | どりょく | 努力//effort |
-| 合格 | ごうかく | 合格//passing (exam) |
-| 渋滞 | じゅうたい | 堵车//traffic jam |
-| 遅刻 | ちこく | 迟到//being late |
-| 不注意 | ふちゅうい | 不注意//carelessness |
-| 事故 | じこ | 事故//accident |
-| 約束 | やくそく | 约定//promise |
-| 責任 | せきにん | 责任//responsibility |
-| 引き受ける | ひきうける | 承担//to take on |
-| 覚悟 | かくご | 觉悟//resolve |
-| 地形 | ちけい | 地形//terrain |
-| 特殊 | とくしゅ | 特殊//special |
-| 由来 | ゆらい | 由来//origin |
-| 形 | かたち | 形状//shape |
-| 成績 | せいせき | 成绩//grades |
-| 応援 | おうえん | 支持//support |
-| 留学 | りゅうがく | 留学//study abroad |
-| 決心 | けっしん | 决心//determination |
+| 努力 | どりょく | 努力（名、可作动词）——在日语中是名词，“努力地”另有说法//(n, suru-verb) effort; hard work; endeavor — a noun: doryoku suru = make an effort; adverbial "hard" is isshoukenmei |
+| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取//(n, suru-verb) passing (an exam); being accepted (to a school) — shiken ni goukaku suru = pass an exam; mainly exams and admissions |
+| 渋滞 | じゅうたい | 堵车；交通拥堵（名、可作动词）//(n, suru-verb) traffic jam; congestion — on roads; juutai ni makikomareru = get stuck in traffic, the classic excuse for being late |
+| 遅刻 | ちこく | 迟到（名、可作动词）//(n, suru-verb) being late — for school, work or an appointment; said of people, while trains okureru (run late) |
+| 不注意 | ふちゅうい | 疏忽；不小心（名、形容动词）//(n, na-adj) carelessness; inattention; negligence — a cause of accidents or mistakes: fuchuui ni yoru jiko |
+| 事故 | じこ | 事故（名）//(n) accident; incident — traffic or industrial accidents; jiko ni au = have an accident |
+| 約束 | やくそく | 约定；诺言（名、可作动词）——也指约会//(n, suru-verb) promise; appointment; arrangement — also a plan to meet someone; keep one = mamoru, break one = yaburu |
+| 責任 | せきにん | 责任（名）//(n) responsibility; liability; blame — sekinin o toru = take responsibility; sekininsha = the person in charge |
+| 引き受ける | ひきうける | 承担；接受（他动词）——接下请求或任务//(v, trans.) to take on; to accept (a job or request); to undertake — agreeing to do work someone asks of you, often reluctantly |
+| 覚悟 | かくご | 思想准备；决心（名、可作动词）——不是中文“觉悟（觉醒）”//(n, suru-verb) resolve; readiness (for hardship) — bracing for something hard or a bad outcome; kakugo shite iru = be prepared for the worst |
+| 地形 | ちけい | 地形（名）//(n) terrain; topography; lay of the land — the physical shape of land: mountains, valleys, coastline |
+| 特殊 | とくしゅ | 特殊；特别（形容动词）//(na-adj) special; unusual; peculiar — out of the ordinary, often technical; tokubetsu is the everyday "special" |
+| 由来 | ゆらい | 由来；来历（名、可作动词）//(n, suru-verb) origin; derivation — where a name or custom comes from: ...ni yurai suru |
+| 形 | かたち | 形状；形式（名）//(n) shape; form; style — physical shape or outward form; katachi dake = only for show |
+| 成績 | せいせき | 成绩（名）//(n) grades; results; performance — school grades or results in work and sports |
+| 応援 | おうえん | 支持；加油助威（名、可作动词）//(n, suru-verb) support; cheering (for); backing — cheering a team or encouraging someone; ouen shite iru yo = I'm rooting for you |
+| 留学 | りゅうがく | 留学（名、可作动词）//(n, suru-verb) studying abroad — the destination takes ni (Nihon ni ryuugaku suru); ryuugakusei = international student, including foreigners in Japan |
+| 決心 | けっしん | 决心（名、可作动词）//(n, suru-verb) determination; resolution; making up one's mind — a personal decision to do something |
 
 ---
 

@@ -12,24 +12,24 @@ This lesson covers grammar for "limiting scope" and "exceeding scope." 「だけ
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 成績 | せいせき | 成绩//grades |
-| 性格 | せいかく | 性格//personality |
-| 迷惑 | めいわく | 麻烦//nuisance |
-| 参加 | さんか | 参加//participation |
-| 会員 | かいいん | 会员//member |
-| 若者 | わかもの | 年轻人//young people |
-| 年齢 | ねんれい | 年龄//age |
-| 性別 | せいべつ | 性别//gender |
-| 国籍 | こくせき | 国籍//nationality |
-| 割引 | わりびき | 折扣//discount |
-| 今日 | きょう | 今天//today |
-| 貯金 | ちょきん | 存款//savings |
-| 休憩 | きゅうけい | 休息//break |
-| 売り切れ | うりきれ | 卖完//sold out |
-| 人気 | にんき | 人气//popularity |
-| 出席 | しゅっせき | 出席//attendance |
-| 限定 | げんてい | 限定//limited |
-| 全員 | ぜんいん | 全体成员//everyone |
+| 成績 | せいせき | 成绩（名）//(n) grades; results; performance — school grades or results in work and sports |
+| 性格 | せいかく | 性格；脾气（名）//(n) personality; character; nature — seikaku ga ii = good-natured; seikaku ga awanai = we don't get along |
+| 迷惑 | めいわく | 麻烦；打扰（名、形容动词、可作动词）——指给别人添的麻烦//(n, na-adj, suru-verb) trouble; nuisance (caused to others) — meiwaku o kakeru = cause trouble; avoiding it is a core Japanese social value |
+| 参加 | さんか | 参加（名、可作动词）//(n, suru-verb) participation; taking part — ni sanka suru = join, take part in (an event, class, team) |
+| 会員 | かいいん | 会员（名）//(n) member (of a club or service) — membership-based: gym, store or website members |
+| 若者 | わかもの | 年轻人（名）//(n) young people; youth — often in social commentary about young people |
+| 年齢 | ねんれい | 年龄（名）//(n) age (of a person) — formal, used on forms and in rules; everyday speech says toshi; nenrei seigen = age limit |
+| 性別 | せいべつ | 性别（名）//(n) gender; sex — common on forms; seibetsu o towazu = regardless of gender |
+| 国籍 | こくせき | 国籍（名）//(n) nationality; citizenship — common on forms; kokuseki o towazu = regardless of nationality |
+| 割引 | わりびき | 折扣；打折（名、可作动词）//(n, suru-verb) discount; price reduction — counted in tenths: niwari-biki = 20% off; hangaku = half price |
+| 今日 | きょう | 今天（名、副词）//(n, adv) today — irregular reading kyou; no particle ni after it (kyou iku); formal konnichi = nowadays |
+| 貯金 | ちょきん | 存钱；存款（名、可作动词）//(n, suru-verb) savings; saving money — personal savings; yokin is the bank-deposit term |
+| 休憩 | きゅうけい | 休息（名、可作动词）//(n, suru-verb) break; rest — a short break during work, study or travel; yasumi can also mean a day off |
+| 売り切れ | うりきれ | 卖完；售罄（名）//(n) sold out; out of stock — signs say urikire; verb: urikireru |
+| 人気 | にんき | 受欢迎；人气（名）//(n) popularity — ninki ga aru = popular; ninki no mise = a popular shop |
+| 出席 | しゅっせき | 出席（名、可作动词）//(n, suru-verb) attendance; being present — at a class, meeting or wedding; opposite: kesseki (absence) |
+| 限定 | げんてい | 限定；限制（名、可作动词）//(n, suru-verb) limitation; restriction; limited (edition) — kikan gentei = for a limited time only |
+| 全員 | ぜんいん | 全体；所有人（名）//(n) everyone; all members; the whole group — all the people in a specific group |
 
 ---
 
