@@ -47,7 +47,7 @@ Supplementary N5 grammar not yet covered: existence expressions, purpose of move
 
 ## 1. 〜がある / 〜がいる（存在表达）||1. 〜がある / 〜がいる (Existence)
 
-### 接続
+### 接続||Conjugation
 
 :::zh
 - 場所 **に** 物/人 **が** ある/いる
@@ -61,7 +61,7 @@ Supplementary N5 grammar not yet covered: existence expressions, purpose of move
 - いる → living things (people, animals, etc.)
 :::
 
-### 含义
+### 含义||Meaning
 
 :::zh
 表示某个地方**存在**某物/某人。"在那里有……"。
@@ -153,7 +153,7 @@ Indicates that something/someone **exists** at a certain location. "There is/are
 
 ## 2. 〜に行く / 〜に来る / 〜に帰る（目的移动）||2. 〜に行く / 〜に来る / 〜に帰る (Purpose of Movement)
 
-### 接続
+### 接続||Conjugation
 
 :::zh
 動詞ます形（去ます）+ **に** + 行く/来る/帰る
@@ -169,7 +169,7 @@ Verb ます-stem (remove ます) + **に** + 行く/来る/帰る
 > Example: 見**ます** → 見 + に行く → 見に行く
 :::
 
-### 含义
+### 含义||Meaning
 
 :::zh
 "去/来/回去**做某事**"。に表示移动的**目的**。
@@ -179,7 +179,7 @@ Verb ます-stem (remove ます) + **に** + 行く/来る/帰る
 "Go/come/return **to do something**." に marks the **purpose** of movement.
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. 映画を**見に行きます**。（去看电影。）
@@ -239,7 +239,7 @@ Verb ます-stem (remove ます) + **に** + 行く/来る/帰る
 
 ## 3. 〜のが好き / 上手 / 下手 / 得意 / 苦手||3. 〜のが好き / 上手 / 下手 / 得意 / 苦手
 
-### 接続
+### 接続||Conjugation
 
 :::zh
 動詞辞書形 + **のが** + 好き/上手/下手/得意/苦手
@@ -253,7 +253,7 @@ Verb dictionary form + **のが** + 好き/上手/下手/得意/苦手
 > 「の」 nominalizes the verb (turns it into a noun). In Japanese, these adjectives cannot directly modify verbs — the verb must first be nominalized.
 :::
 
-### 含义
+### 含义||Meaning
 
 :::zh
 | 表达 | 含义 | 语感 |
@@ -277,7 +277,7 @@ Verb dictionary form + **のが** + 好き/上手/下手/得意/苦手
 | 〜のが**苦手** | Not skilled at doing ~ | Self-evaluation OK |
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. 本を読む**のが好きです**。（喜欢读书。）
@@ -341,7 +341,7 @@ Verb dictionary form + **のが** + 好き/上手/下手/得意/苦手
 
 ## 4. 〜くらい / 〜ぐらい（大约）||4. 〜くらい / 〜ぐらい (Approximately)
 
-### 接続
+### 接続||Conjugation
 
 :::zh
 数量/時間/名詞 + くらい/ぐらい
@@ -355,7 +355,7 @@ Quantity / Time / Noun + くらい/ぐらい
 > くらい and ぐらい are completely interchangeable. ぐらい is slightly more common in speech.
 :::
 
-### 含义
+### 含义||Meaning
 
 :::zh
 两种主要用法：
@@ -441,7 +441,7 @@ Indicates a certain degree or level.
 
 ## 5. 〜や〜（など）（部分列举）||5. 〜や〜（など）(Partial Listing)
 
-### 接続
+### 接続||Conjugation
 
 :::zh
 名詞 + **や** + 名詞 +（**など**）
@@ -455,7 +455,7 @@ Noun + **や** + Noun + (**など**)
 > や lists **some items**, implying there are others. など = "etc." (optional).
 :::
 
-### 含义
+### 含义||Meaning
 
 :::zh
 "……和……等（之类的）"。非穷举列举。
@@ -465,7 +465,7 @@ Noun + **や** + Noun + (**など**)
 "Things like ~ and ~." A non-exhaustive listing.
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. りんご**や**バナナ**など**を買いました。（买了苹果和香蕉等。）
@@ -523,7 +523,7 @@ Example:
 
 ## 6. 〜だけ（限定 — "只"）||6. 〜だけ (Limitation — "Only")
 
-### 接続
+### 接続||Conjugation
 
 :::zh
 - 名詞 + だけ
@@ -539,7 +539,7 @@ Example:
 - な-adjective + な + だけ
 :::
 
-### 含義
+### 含義||Meaning
 
 :::zh
 "只、仅仅"。限定范围，表示除此之外没有别的。
@@ -549,7 +549,7 @@ Example:
 "Only, just." Limits the scope — nothing beyond what is stated.
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. 水**だけ**飲みました。（只喝了水。）
@@ -880,9 +880,9 @@ Example: 水だけ飲んだ。 → 水しか飲まなかった。
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days

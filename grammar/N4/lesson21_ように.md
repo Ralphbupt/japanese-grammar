@@ -303,10 +303,10 @@ Expresses a **natural change of state** — "gradually come to be able to do som
 <details>
 <summary>答案</summary>
 
-1. ようにして（有意识的努力 → ようにする）
-2. ようになった（自然变化 → ようになる）
-3. ようにして（请注意做到 → ようにする）
-4. ようになった（能力获得 → ようになる）
+1. ようにして（有意识的努力 → ようにする） // ようにして (conscious effort → ようにする)
+2. ようになった（自然变化 → ようになる） // ようになった (natural change → ようになる)
+3. ようにして（请注意做到 → ようにする） // ようにして (please make sure to → ようにする)
+4. ようになった（能力获得 → ようになる） // ようになった (gaining an ability → ようになる)
 
 </details>
 
@@ -376,6 +376,13 @@ Expresses a **natural change of state** — "gradually come to be able to do som
 4. 忘れないために、メモした。
 :::
 
+:::en
+1. 日本語を話すために、毎日練習している。(Intended: "so that I can speak Japanese")
+2. 子供が一人で食べられるようにした。(Intended: "the child naturally came to be able to eat on their own")
+3. 先生に静かにするように言ってあげた。(Intended: "I was told by the teacher to be quiet")
+4. 忘れないために、メモした。
+:::
+
 <details>
 <summary>答案 / Answers</summary>
 
@@ -386,15 +393,22 @@ Expresses a **natural change of state** — "gradually come to be able to do som
 4. △ 不算错，但忘れない是非意志性 → ✅ 忘れない**ように**、メモした。（ように更标准）
 :::
 
+:::en
+1. △ No grammar error, but 「話せる」 is the potential form → ✅ 日本語が**話せる**ように、毎日練習している。(ように expresses "so as to be able to" more precisely)
+2. ❌ ようにした = consciously make sure to → ✅ ようになった (a natural change takes なる, not する)
+3. ❌ 言ってあげた = I said it for the teacher → ✅ 先生に静かにするように**言われた** (told by the teacher → passive)
+4. △ Not wrong, but 忘れない is non-volitional → ✅ 忘れない**ように**、メモした。(ように is more standard)
+:::
+
 </details>
 
 ---
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days

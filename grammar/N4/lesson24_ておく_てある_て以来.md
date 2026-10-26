@@ -415,19 +415,34 @@ Convert the following to colloquial form:
 4. 正要打电话的时候，他来了。→ 電話しようと思っていた（　　）に、彼が来た。
 :::
 
+:::en
+Choose the correct form based on the meaning (るところ/ているところ/たところ):
+1. About to go out. → 今から出かける（　　）です。
+2. Just finished eating. → 今、食べ終わった（　　）です。
+3. In the middle of writing a report. → レポートを書いている（　　）です。
+4. Just as I was about to call, he showed up. → 電話しようと思っていた（　　）に、彼が来た。
+:::
+
 <details>
 <summary>答案 / Answers</summary>
 
-1. ところ（正要→辞书形+ところ）
-2. ところ（刚做完→た+ところ）
-3. ところ（正在→ている+ところ）
-4. ところ（正要→ところに = 正在那个时候）
+1. ところ（正要→辞书形+ところ） // ところ (about to → dictionary form + ところ)
+2. ところ（刚做完→た+ところ） // ところ (just finished → た + ところ)
+3. ところ（正在→ている+ところ） // ところ (in the middle of → ている + ところ)
+4. ところ（正要→ところに = 正在那个时候） // ところ (about to → ところに = right at that moment)
 
 </details>
 
 ### D. て以来 填空||D. Fill in: て以来
 
 :::zh
+1. 大学を卒業し（　　）、一度も母校に帰っていない。
+2. 日本に来（　　）、ずっと東京に住んでいる。
+3. あの映画を見（　　）、日本の文化に興味を持っている。
+4. 転職し（　　）、毎日が充実している。
+:::
+
+:::en
 1. 大学を卒業し（　　）、一度も母校に帰っていない。
 2. 日本に来（　　）、ずっと東京に住んでいる。
 3. あの映画を見（　　）、日本の文化に興味を持っている。
@@ -442,6 +457,13 @@ Convert the following to colloquial form:
 2. **て以来**（自从来了日本一直住着）
 3. **て以来**（自从看了那部电影后一直感兴趣）
 4. **て以来**（自从换工作后一直很充实）
+:::
+
+:::en
+1. **て以来** (haven't gone back once since graduating)
+2. **て以来** (have lived there ever since coming to Japan)
+3. **て以来** (have been interested ever since seeing that movie)
+4. **て以来** (every day has been fulfilling ever since changing jobs)
 :::
 
 </details>
@@ -472,12 +494,12 @@ Convert the following to colloquial form:
 <details>
 <summary>答案 / Answers</summary>
 
-1. スマホをなくしてしまった。（口语：なくしちゃった）
-2. 旅行の前にホテルを予約しておこう。（口语：予約しとこう）
+1. スマホをなくしてしまった。（口语：なくしちゃった） // スマホをなくしてしまった。(Casual: なくしちゃった)
+2. 旅行の前にホテルを予約しておこう。（口语：予約しとこう） // 旅行の前にホテルを予約しておこう。(Casual: 予約しとこう)
 3. テーブルの上に手紙が置いてある。
 4. 弟はゲームをしてばかりいて、勉強しない。
 5. この仕事を始めて以来、毎日忙しい。
-6. 明日のお弁当を作っておいた。（口语：作っといた）
+6. 明日のお弁当を作っておいた。（口语：作っといた） // 明日のお弁当を作っておいた。(Casual: 作っといた)
 7. 花瓶に花が飾ってある。
 8. 東京に引っ越して以来、ずっと楽しい。
 
@@ -491,6 +513,14 @@ Convert the following to colloquial form:
 3. 弟はゲームばかりする。（想表达"净是在打游戏"的不满）
 4. さっき食べたところだ。（想表达"刚来日本不久"的意思用ばかり）
 5. ビールが冷やしておいた。（想表达"我事先冰好了啤酒"）
+:::
+
+:::en
+1. 窓が開けている。(Intended: "the window has been deliberately left open")
+2. 日本に来て以来、日本語を勉強した。(Intended: "I've been studying ever since coming to Japan")
+3. 弟はゲームばかりする。(Intended: complaining that he "does nothing but play games")
+4. さっき食べたところだ。(Intended: "I only came to Japan recently," using ばかり)
+5. ビールが冷やしておいた。(Intended: "I chilled the beer in advance")
 :::
 
 <details>
@@ -524,6 +554,15 @@ Convert the following to colloquial form:
 5. 薬を飲む前に、説明書を読ん（　　）ほうがいい。→ 事先读好
 :::
 
+:::en
+Choose the most fitting expression for each situation:
+1. (Looking at the blackboard) 黒板に何か書い（　　）。→ Who wrote it?
+2. 明日テストだから、今日復習し（　　）。→ Preparing in advance
+3. あ、電気がまだつい（　　）よ。消して。→ Simply noticing the light is on
+4. 晩ご飯が作っ（　　）。→ Mom made it (seeing the result)
+5. 薬を飲む前に、説明書を読ん（　　）ほうがいい。→ Read it in advance
+:::
+
 <details>
 <summary>答案 / Answers</summary>
 
@@ -548,9 +587,9 @@ Convert the following to colloquial form:
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days

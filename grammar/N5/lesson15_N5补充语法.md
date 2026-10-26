@@ -47,7 +47,7 @@ The closing lesson of N5 — covering commonly used N5 grammar not yet addressed
 
 ## 1. 〜ことができる（能力/可能 — 正式版）||1. 〜ことができる (Ability/Possibility — Formal)
 
-### 接続
+### 接続||Conjugation
 
 :::zh
 动词辞书形 + ことができる
@@ -57,7 +57,7 @@ The closing lesson of N5 — covering commonly used N5 grammar not yet addressed
 Verb dictionary form + ことができる
 :::
 
-### 含义
+### 含义||Meaning
 
 :::zh
 和可能形意思相同，但更正式/书面。多用于写作、演讲、规章说明等场合。
@@ -67,7 +67,7 @@ Verb dictionary form + ことができる
 Same meaning as the potential form, but more formal and written. Commonly used in essays, speeches, rules, and official notices.
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. 日本語を話す**ことができます**。（能说日语。）
@@ -131,7 +131,7 @@ Same meaning as the potential form, but more formal and written. Commonly used i
 **Conjugation:** Verb dictionary form + ことがある
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. 朝ご飯を食べない**ことがある**。（有时候不吃早饭。）
@@ -161,7 +161,7 @@ Same meaning as the potential form, but more formal and written. Commonly used i
 **Conjugation:** Verb dictionary form + ことはない
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. そんなに心配する**ことはない**。（没必要那么担心。）
@@ -207,7 +207,7 @@ Same meaning as the potential form, but more formal and written. Commonly used i
 
 ## 3. 〜のだ / 〜んだ（说明/强调/求解释）||3. 〜のだ / 〜んだ (Explanation / Emphasis / Seeking Explanation)
 
-### 接続
+### 接続||Conjugation
 
 :::zh
 - 动词/い形容词 简体 + のだ（んだ）
@@ -221,7 +221,7 @@ Same meaning as the potential form, but more formal and written. Commonly used i
 - Noun + **な** + のだ（んだ）
 :::
 
-### 含义
+### 含义||Meaning
 
 :::zh
 「のだ」（口语：んだ，敬体：んです）是日语最重要的语气表达之一。核心有三大功能：
@@ -327,7 +327,7 @@ Noticing something unusual and wanting to understand the reason.
 
 ## 4. 〜のに（转折 — 明明……却……）||4. 〜のに (Concessive — "Even though…")
 
-### 接続
+### 接続||Conjugation
 
 :::zh
 - 动词/い形容词 简体 + のに
@@ -341,7 +341,7 @@ Noticing something unusual and wanting to understand the reason.
 - Noun + **な** + のに
 :::
 
-### 含义
+### 含义||Meaning
 
 :::zh
 "明明……却……"，带有**不满、遗憾、意外**的语气。说话人觉得现实与预期不符。
@@ -351,7 +351,7 @@ Noticing something unusual and wanting to understand the reason.
 "Even though…" — carries a tone of **dissatisfaction, regret, or surprise**. The speaker feels reality doesn't match expectations.
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. 約束した**のに**、来なかった。（明明约好了，却没来。→ 不满）
@@ -497,7 +497,7 @@ Noticing something unusual and wanting to understand the reason.
 
 ## 6. 〜し（列举理由/并列）||6. 〜し (Listing Reasons / Parallel Points)
 
-### 接続
+### 接続||Conjugation
 
 :::zh
 简体 + し
@@ -507,7 +507,7 @@ Noticing something unusual and wanting to understand the reason.
 Plain form + し
 :::
 
-### 含义
+### 含义||Meaning
 
 :::zh
 "又……又……而且……"，列举多个理由或特征。可以只列一个し，表示"不只这个理由，还有别的"。
@@ -517,7 +517,7 @@ Plain form + し
 "Not only… but also…" — lists multiple reasons or characteristics. Even with just one し, it implies "this is one reason among others."
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. あの店は安い**し**、美味しい**し**、よく行きます。（那家店又便宜又好吃，常去。）
@@ -811,9 +811,9 @@ Example:
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days

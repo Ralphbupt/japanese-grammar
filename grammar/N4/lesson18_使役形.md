@@ -77,12 +77,19 @@ Expresses "making someone do something" or "letting/allowing someone do somethin
 | 来る | **来させる** (こさせる) | 来る→来させる |
 :::
 
+:::zh
 > **记忆法**：和ない形一样，先变到あ段，然后加せる。
 > 書かない → 書か**せる**、飲まない → 飲ま**せる**
+:::
+
+:::en
+> **Memory tip**: Just like the ない-form, shift to the あ-row, then add せる.
+> 書かない → 書か**せる**、飲まない → 飲ま**せる**
+:::
 
 ### 一类动词使役形 全表||Group 1 Verb Causative — Full Table
 
-| 辞书形 | ない形 | 使役形 |
+| 辞书形 // Dictionary form | ない形 // ない-form | 使役形 // Causative |
 |--------|--------|--------|
 | 書く | 書かない | 書か**せる** |
 | 泳ぐ | 泳がない | 泳が**せる** |
@@ -96,7 +103,7 @@ Expresses "making someone do something" or "letting/allowing someone do somethin
 
 ### 使役句的助词||Particles in Causative Sentences
 
-#### 他动词（有を的动词）：人**に**させる
+#### 他动词（有を的动词）：人**に**させる||Transitive verbs (verbs with を): person **に** させる
 
 :::zh
 - 先生は学生**に**本**を**読ま**せた**。（老师让学生读书。）
@@ -118,7 +125,7 @@ Expresses "making someone do something" or "letting/allowing someone do somethin
 > Because を is already taken by the object, the person being made to act takes に.
 :::
 
-#### 自动词（没有を的动词）：人**を**させる
+#### 自动词（没有を的动词）：人**を**させる||Intransitive verbs (no を): person **を** させる
 
 :::zh
 - 先生は学生**を**立た**せた**。（老师让学生站起来。）
@@ -683,9 +690,9 @@ Determine whether each sentence expresses "coercion" or "permission," and explai
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days

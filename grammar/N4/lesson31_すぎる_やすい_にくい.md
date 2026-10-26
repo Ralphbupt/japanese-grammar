@@ -647,8 +647,8 @@ Change the word in parentheses to the appropriate すぎる form:
 <summary>答案 / Answers</summary>
 
 1. 飲み**すぎ**て（飲む→飲みすぎる→飲みすぎて）
-2. 簡単**すぎ**る（な形容词词干+すぎる）
-3. 食べ**すぎ**は（名词化：食べすぎ）
+2. 簡単**すぎ**る（な形容词词干+すぎる） // 簡単**すぎ**る (な-adjective stem + すぎる)
+3. 食べ**すぎ**は（名词化：食べすぎ） // 食べ**すぎ**は (as a noun: 食べすぎ)
 4. 長**すぎ**た（長い→長すぎる→長すぎた）
 5. **よすぎ**て（いい→よすぎる→よすぎて）
 6. **なさすぎ**る（ない→なさすぎる）
@@ -678,12 +678,12 @@ Change the word in parentheses to the appropriate すぎる form:
 <details>
 <summary>答案 / Answers</summary>
 
-1. **やすい**（画面大，容易看）
-2. **にくい**（夜暗，难走）
-3. **にくい**（字脏，难读）
-4. **やすい**（容易拿的形状）
-5. **やすい**（容易感冒的体质）
-6. **にくい**（不容易坏的材质）
+1. **やすい**（画面大，容易看） // **やすい** (big screen, easy to see)
+2. **にくい**（夜暗，难走） // **にくい** (dark at night, hard to walk)
+3. **にくい**（字脏，难读） // **にくい** (messy writing, hard to read)
+4. **やすい**（容易拿的形状） // **やすい** (a shape that's easy to hold)
+5. **やすい**（容易感冒的体质） // **やすい** (a constitution that catches colds easily)
+6. **にくい**（不容易坏的材质） // **にくい** (a material that doesn't break easily)
 
 </details>
 
@@ -691,6 +691,14 @@ Change the word in parentheses to the appropriate すぎる form:
 
 :::zh
 选择更自然的表达：
+1. 友達が受験に落ちて落ち込んでいる。→ そんなに落ち込む（　　）よ。次があるから。
+2. 先生に聞いた：明日は辞書を持ってこ（　　）です。
+3. 泣いている子供に：泣く（　　）。大丈夫だよ。
+4. お知らせ：この書類には写真を貼ら（　　）。
+:::
+
+:::en
+Choose the more natural expression:
 1. 友達が受験に落ちて落ち込んでいる。→ そんなに落ち込む（　　）よ。次があるから。
 2. 先生に聞いた：明日は辞書を持ってこ（　　）です。
 3. 泣いている子供に：泣く（　　）。大丈夫だよ。
@@ -719,6 +727,15 @@ Change the word in parentheses to the appropriate すぎる form:
 
 :::zh
 用「〜方」完成句子：
+1. すみません、駅への（行く）＿＿＿を教えてください。
+2. この漢字の（読む）＿＿＿が分かりません。
+3. 日本語の（勉強する）＿＿＿を変えたい。
+4. お箸の（使う）＿＿＿が上手ですね。
+5. この料理の（作る）＿＿＿は簡単だ。
+:::
+
+:::en
+Complete the sentences with 「〜方」:
 1. すみません、駅への（行く）＿＿＿を教えてください。
 2. この漢字の（読む）＿＿＿が分かりません。
 3. 日本語の（勉強する）＿＿＿を変えたい。
@@ -820,9 +837,9 @@ Translate into Japanese:
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days

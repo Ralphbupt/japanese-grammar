@@ -84,7 +84,7 @@ Both express "I received something," but the **perspective differs**:
 
 ### 例句||Example Sentences
 
-#### あげる（我→别人 / Me → Others）
+#### あげる（我→别人 / Me → Others）||あげる (Me → Others)
 
 :::zh
 1. 友達**に**プレゼント**を**あげた。（给了朋友礼物。）
@@ -98,7 +98,7 @@ Both express "I received something," but the **perspective differs**:
 3. 田中さんは山田さん**に**花**を**あげた。(Tanaka gave Yamada flowers. → between third parties)
 :::
 
-#### もらう（我←别人 / Me ← Others）
+#### もらう（我←别人 / Me ← Others）||もらう (Me ← Others)
 
 :::zh
 1. 友達**に**/**から**プレゼント**を**もらった。（从朋友那里收到了礼物。）
@@ -112,7 +112,7 @@ Both express "I received something," but the **perspective differs**:
 3. 先生**に**本**を**もらった。(I received a book from my teacher.)
 :::
 
-#### くれる（别人→我 / Others → Me）
+#### くれる（别人→我 / Others → Me）||くれる (Others → Me)
 
 :::zh
 1. 友達がプレゼント**を**くれた。（朋友给了我礼物。→ 感谢的语气）
@@ -188,7 +188,7 @@ Both express "I received something," but the **perspective differs**:
 This is the key point! These forms don't just express giving things — they express doing actions **for** someone.
 :::
 
-### 〜てあげる（我为别人做……/ Doing Something for Others）
+### 〜てあげる（我为别人做……/ Doing Something for Others）||〜てあげる (Doing Something for Others)
 
 :::zh
 接续：动词て形 + あげる
@@ -218,7 +218,7 @@ Conjugation: verb て-form + あげる
 > ✅ Use humble expressions like 「お教えしました」
 :::
 
-### 〜てもらう（让/请别人为我做……/ Having Someone Do Something for Me）
+### 〜てもらう（让/请别人为我做……/ Having Someone Do Something for Me）||〜てもらう (Having Someone Do Something for Me)
 
 :::zh
 接续：动词て形 + もらう
@@ -244,7 +244,7 @@ Conjugation: verb て-form + もらう
 > 「〜てもらえますか」 and 「〜てもらえませんか」 are very practical polite request expressions.
 :::
 
-### 〜てくれる（别人为我做……/ Someone Doing Something for Me）
+### 〜てくれる（别人为我做……/ Someone Doing Something for Me）||〜てくれる (Someone Doing Something for Me)
 
 :::zh
 接续：动词て形 + くれる
@@ -332,6 +332,7 @@ From casual to formal:
 
 ## 5. 方向图解||Direction Diagram
 
+:::zh
 ```
         あげる →
   我/我方 ─────── 别人
@@ -342,6 +343,20 @@ From casual to formal:
   くれる = 别人给我（←），感谢
   もらう = 我收到（←），强调"我"获得
 ```
+:::
+
+:::en
+```
+             あげる →
+  Me/my side ─────── Others
+             ← くれる
+             ← もらう (different viewpoint)
+
+  あげる = I give (→)
+  くれる = others give to me (←), grateful
+  もらう = I receive (←), stresses that "I" get it
+```
+:::
 
 ### 内→外 vs 外→内||In-Group (うち) vs Out-Group (そと)
 
@@ -417,11 +432,11 @@ The concept of in-group (うち) and out-group (そと) is important in Japanese
 <details>
 <summary>答案</summary>
 
-1. **くれた**（妈妈给我→くれる）
-2. **もらった**（我从妈妈那得到→もらう）
-3. **あげた**（我给朋友→あげる）
-4. **くれた**（老师为我做→てくれる）
-5. **もらった**（我请老师做→てもらう）
+1. **くれた**（妈妈给我→くれる） // **くれた** (Mom gave to me → くれる)
+2. **もらった**（我从妈妈那得到→もらう） // **もらった** (I received from Mom → もらう)
+3. **あげた**（我给朋友→あげる） // **あげた** (I gave to a friend → あげる)
+4. **くれた**（老师为我做→てくれる） // **くれた** (the teacher did it for me → てくれる)
+5. **もらった**（我请老师做→てもらう） // **もらった** (I asked the teacher to do it → てもらう)
 
 </details>
 
@@ -460,6 +475,13 @@ The concept of in-group (うち) and out-group (そと) is important in Japanese
 4. 母にてもらった。（想表达"请妈妈做了"）
 :::
 
+:::en
+1. 私は友達に本をくれた。(Intended: "I gave my friend a book")
+2. 先生が説明してあげた。(Intended: "The teacher explained it for me")
+3. 友達は道を教えてくれた。(Particle problem)
+4. 母にてもらった。(Intended: "I had Mom do it")
+:::
+
 <details>
 <summary>答案 / Answers</summary>
 
@@ -468,6 +490,13 @@ The concept of in-group (うち) and out-group (そと) is important in Japanese
 2. ❌ あげた → ✅ **くれた/くださった**（老师为我做，要用くれる/尊敬语くださる）
 3. ❌ 友達は → ✅ 友達**が**（くれる的主语用が）
 4. ❌ にてもらった → ✅ 母に**作って**もらった（缺少动词て形）
+:::
+
+:::en
+1. ❌ くれた → ✅ **あげた** (when I give to someone else, use あげる, not くれる)
+2. ❌ あげた → ✅ **くれた/くださった** (the teacher did it for me, so use くれる / honorific くださる)
+3. ❌ 友達は → ✅ 友達**が** (the subject of くれる takes が)
+4. ❌ にてもらった → ✅ 母に**作って**もらった (the verb's て-form is missing)
 :::
 
 </details>
@@ -484,6 +513,16 @@ The concept of in-group (うち) and out-group (そと) is important in Japanese
 5. （你让朋友帮忙）友達に引っ越しを手伝っ（　　）。
 :::
 
+:::en
+Choose the most fitting expression (てあげる/てもらう/てくれる):
+
+1. (You're grateful) 田中さんが宿題を手伝っ（　　）。
+2. (You offer to help) 迷っている人に道を教え（　　）。
+3. (You ask someone) 美容院で髪を切っ（　　）。
+4. (Mom's kindness) 母が毎日弁当を作っ（　　）。
+5. (You get a friend to help) 友達に引っ越しを手伝っ（　　）。
+:::
+
 <details>
 <summary>答案 / Answers</summary>
 
@@ -495,15 +534,23 @@ The concept of in-group (うち) and out-group (そと) is important in Japanese
 5. **てもらった**（请别人为我做）
 :::
 
+:::en
+1. **てくれた** (someone did it for me — grateful)
+2. **てあげた** (I did it for someone)
+3. **てもらった** (I had a professional do it for me)
+4. **てくれる** (someone does it for me — grateful)
+5. **てもらった** (I had someone do it for me)
+:::
+
 </details>
 
 ---
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days

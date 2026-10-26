@@ -11,6 +11,7 @@ A foundational reference before diving into grammar. Keep this handy for quick l
 
 ## 清音（基本50音）||Seion — Basic 50 Sounds
 
+:::zh
 ```
         あ段(a)  い段(i)  う段(u)  え段(e)  お段(o)
         ─────   ─────   ─────   ─────   ─────
@@ -26,6 +27,25 @@ A foundational reference before diving into grammar. Keep this handy for quick l
 わ行:    わ(wa)                          を(wo)
 拨音:    ん(n)
 ```
+:::
+
+:::en
+```
+        あ段(a)  い段(i)  う段(u)  え段(e)  お段(o)
+        ─────   ─────   ─────   ─────   ─────
+あ行:    あ(a)   い(i)   う(u)   え(e)   お(o)
+か行:    か(ka)  き(ki)  く(ku)  け(ke)  こ(ko)
+さ行:    さ(sa)  し(shi) す(su)  せ(se)  そ(so)
+た行:    た(ta)  ち(chi) つ(tsu) て(te)  と(to)
+な行:    な(na)  に(ni)  ぬ(nu)  ね(ne)  の(no)
+は行:    は(ha)  ひ(hi)  ふ(fu)  へ(he)  ほ(ho)
+ま行:    ま(ma)  み(mi)  む(mu)  め(me)  も(mo)
+や行:    や(ya)          ゆ(yu)          よ(yo)
+ら行:    ら(ra)  り(ri)  る(ru)  れ(re)  ろ(ro)
+わ行:    わ(wa)                          を(wo)
+Nasal:   ん(n)
+```
+:::
 
 ---
 
@@ -54,6 +74,7 @@ A foundational reference before diving into grammar. Keep this handy for quick l
 
 ## 片假名||Katakana
 
+:::zh
 ```
         ア段(a)  イ段(i)  ウ段(u)  エ段(e)  オ段(o)
         ─────   ─────   ─────   ─────   ─────
@@ -69,6 +90,25 @@ A foundational reference before diving into grammar. Keep this handy for quick l
 ワ行:    ワ(wa)                          ヲ(wo)
 拨音:    ン(n)
 ```
+:::
+
+:::en
+```
+        ア段(a)  イ段(i)  ウ段(u)  エ段(e)  オ段(o)
+        ─────   ─────   ─────   ─────   ─────
+ア行:    ア(a)   イ(i)   ウ(u)   エ(e)   オ(o)
+カ行:    カ(ka)  キ(ki)  ク(ku)  ケ(ke)  コ(ko)
+サ行:    サ(sa)  シ(shi) ス(su)  セ(se)  ソ(so)
+タ行:    タ(ta)  チ(chi) ツ(tsu) テ(te)  ト(to)
+ナ行:    ナ(na)  ニ(ni)  ヌ(nu)  ネ(ne)  ノ(no)
+ハ行:    ハ(ha)  ヒ(hi)  フ(fu)  ヘ(he)  ホ(ho)
+マ行:    マ(ma)  ミ(mi)  ム(mu)  メ(me)  モ(mo)
+ヤ行:    ヤ(ya)          ユ(yu)          ヨ(yo)
+ラ行:    ラ(ra)  リ(ri)  ル(ru)  レ(re)  ロ(ro)
+ワ行:    ワ(wa)                          ヲ(wo)
+Nasal:   ン(n)
+```
+:::
 
 :::zh
 > 片假名主要用于：外来词（コーヒー、パソコン）、拟声拟态词、强调。
@@ -270,9 +310,9 @@ Now look at「飲む」— む is in **row ま, column う**:
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days

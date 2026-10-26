@@ -43,7 +43,7 @@
 
 ## 1. 可能形（能力/可能）||1. Potential Form (Ability/Possibility)
 
-### 含义
+### 含义||Meaning
 
 :::zh
 "能做……"、"可以做……"，表示能力或客观上的可能性。
@@ -73,9 +73,9 @@
 | 来る | **来られる**（こられる） | 来る→来られる |
 :::
 
-### 一类动词可能形 全表
+### 一类动词可能形 全表||Group 1 Verbs: Full Potential Form Table
 
-| 辞书形 | 可能形 |
+| 辞书形 // Dictionary form | 可能形 // Potential form |
 |--------|--------|
 | 書く | 書ける |
 | 泳ぐ | 泳げる |
@@ -84,7 +84,7 @@
 | 死ぬ | 死ねる |
 | 遊ぶ | 遊べる |
 | 飲む | 飲める |
-| 帰る（一类）| 帰れる |
+| 帰る（一类） // 帰る (Group 1) | 帰れる |
 | 買う | 買える |
 
 :::zh
@@ -133,7 +133,7 @@ Objects marked with を in the plain sentence typically shift to が in the pote
 > を is also acceptable in practice, but が is more standard. Use が in exams.
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. 日本語**が**話**せます**か？（你能说日语吗？）
@@ -195,7 +195,7 @@ Objects marked with を in the plain sentence typically shift to が in the pote
 
 ## 2. 受身形（被动态）||2. Passive Form
 
-### 含義
+### 含義||Meaning
 
 :::zh
 "被……做"，表示主语是动作的承受者。
@@ -229,9 +229,9 @@ Objects marked with を in the plain sentence typically shift to が in the pote
 > Note: Group 2 potential and passive forms are **identical** (食べられる) — context determines the meaning.
 :::
 
-### 一类动词受身形 全表
+### 一类动词受身形 全表||Group 1 Verbs: Full Passive Form Table
 
-| 辞书形 | 受身形 |
+| 辞书形 // Dictionary form | 受身形 // Passive form |
 |--------|--------|
 | 書く | 書かれる |
 | 泳ぐ | 泳がれる |
@@ -252,7 +252,7 @@ Objects marked with を in the plain sentence typically shift to が in the pote
 
 ### 受身的三种类型||Three Types of Passive
 
-#### ① 直接被动（直接受身）
+#### ① 直接被动（直接受身）||① Direct Passive (直接受身)
 
 :::zh
 主语直接承受动作，对应中文的"被"。结构：**AはBに＋受身形**
@@ -396,9 +396,9 @@ Group 2 verbs and 来る have identical potential and passive forms — use thes
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days

@@ -350,15 +350,23 @@ My / my-group's action                  → kenjogo
 5. **拝見します**（我看 = 我的动作 → 謙譲）
 :::
 
+:::en
+1. **参ります** (I → my own action → kenjogo)
+2. **いらっしゃいます** (department head → the other party, but wait — **it depends on the situation**: talking inside the company → いらっしゃいます; talking to outsiders about your own company's department head → おります)
+3. **申し上げます** (I → speaking to the teacher → kenjogo; use 申し上げる when speaking to a superior — 申す is just a formal "say")
+4. **伺います** (I ask = my action → kenjogo)
+5. **拝見します** (I look = my action → kenjogo)
+:::
+
 </details>
 
 ---
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days

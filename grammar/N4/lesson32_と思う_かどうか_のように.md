@@ -602,6 +602,13 @@ Prohibitive: Directly orders someone not to do something.
 4. **と思う**（自分の今の感想）
 :::
 
+:::en
+1. **と思う**（自分の今の判断）
+2. **と思っている**（他人の持続的な考え）
+3. **と思っている**（ずっと考えている計画）
+4. **と思う**（自分の今の感想）
+:::
+
 </details>
 
 ### B. 〜か vs 〜かどうか — 填入正确形式||B. 〜か vs 〜かどうか — Fill in the Correct Form
@@ -619,6 +626,13 @@ Prohibitive: Directly orders someone not to do something.
 2. **かどうか**（没有疑问词、yes/no型 → 〜かどうか）
 3. **か**（有疑问词「いつ」→ 〜か）
 4. **かどうか**（没有疑问词、yes/no型 → 〜かどうか）
+:::
+
+:::en
+1. **か** (has the question word 「どこ」 → 〜か)
+2. **かどうか** (no question word, yes/no type → 〜かどうか)
+3. **か** (has the question word 「いつ」 → 〜か)
+4. **かどうか** (no question word, yes/no type → 〜かどうか)
 :::
 
 </details>
@@ -647,6 +661,13 @@ Prohibitive: Directly orders someone not to do something.
 2. **のような**（修饰名词「話」→ のような）
 3. **のように**（修饰动词「歌う」→ のように）
 4. **のような**（修饰名词「ストーリー」→ のような）
+:::
+
+:::en
+1. **のように** (modifies the adjective 「きれいだ」 → のように)
+2. **のような** (modifies the noun 「話」 → のような)
+3. **のように** (modifies the verb 「歌う」 → のように)
+4. **のような** (modifies the noun 「ストーリー」 → のような)
 :::
 
 </details>
@@ -693,6 +714,14 @@ Prohibitive: Directly orders someone not to do something.
 5. 行く必要がない。（"没必要去"）
 :::
 
+:::en
+1. 田中さんは明日来ると思う。(Intended: "Tanaka thinks he'll come tomorrow")
+2. 彼女は学生だかどうか知らない。("I don't know whether she's a student")
+3. 子供のように走れなさい。("Run like a child!")
+4. 私はいい匂いがする。("I smell something nice")
+5. 行く必要がない。("There's no need to go")
+:::
+
 <details>
 <summary>答案 / Answers</summary>
 
@@ -704,15 +733,23 @@ Prohibitive: Directly orders someone not to do something.
 5. △ 通じるが → ✅ 行く**必要はない**。（否定时用「は」不用「が」：必要**は**ない）
 :::
 
+:::en
+1. ❌ 「と思う」 is for the speaker's own thoughts → ✅ 田中さんは明日来る**と思っている**。(Use 「と思っている」 for someone else's thoughts)
+2. ❌ Noun + だかどうか is unnatural → ✅ 彼女は学生**かどうか**知らない。(Drop 「だ」 when a noun / な-adjective takes かどうか)
+3. ❌ 「走れなさい」 doesn't exist → ✅ 子供**のように**走り**なさい**。(ます-form minus ます + なさい: 走ります→走り+なさい)
+4. △ 意味が変わる ("I give off a nice smell") → ✅ いい**匂いがする**。(The subject of がする is the sensation, not a person)
+5. △ 通じるが → ✅ 行く**必要はない**。(In the negative, use 「は」, not 「が」: 必要**は**ない)
+:::
+
 </details>
 
 ---
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days

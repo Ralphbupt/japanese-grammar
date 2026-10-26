@@ -50,7 +50,7 @@
 ## 1. た形（简体过去）||1. た-form (Plain past tense)
 
 :::zh
-### 含义
+### 含义||Meaning
 动词的简体过去形，"做了……"。
 :::
 
@@ -101,7 +101,7 @@ The plain past tense of verbs, meaning "did …" or "have done …".
 
 ### 完整示例||Complete examples
 
-| 辞书形 | て形 | た形 |
+| 辞书形 // Dictionary form | て形 // て-form | た形 // た-form |
 |--------|------|------|
 | 書く | 書いて | 書い**た** |
 | 泳ぐ | 泳いで | 泳い**だ** |
@@ -435,9 +435,9 @@ Verb た-form + ばかり
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days
