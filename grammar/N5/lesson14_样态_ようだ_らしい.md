@@ -1,4 +1,4 @@
-# Lesson 14 – 样态表达 ようだ・らしい・みたいだ・っぽい||Appearance & Hearsay: ようだ・らしい・みたいだ・っぽい
+# Lesson 14 – 样态表达 ようだ・らしい・みたいだ・っぽい||Appearance & Hearsay: ようだ・らしい・みたいだ・っぽい — “Seems Like” in Japanese
 
 ## 本课单词表||Vocabulary
 

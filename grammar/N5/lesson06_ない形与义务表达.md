@@ -1,4 +1,4 @@
-# Lesson 06 – ない形与义务表达||The ない-form & Expressing Obligation
+# Lesson 06 – ない形与义务表达||The ない-form & How to Say “Must” / “Must Not” in Japanese
 
 ## 本课单词表||Vocabulary
 
