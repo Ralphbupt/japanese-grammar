@@ -519,7 +519,7 @@ Conjugate these い-adjectives into: negative, past, past-negative, て-form
 
 1. 大きくない / 大きかった / 大きくなかった / 大きくて
 2. おいしくない / おいしかった / おいしくなかった / おいしくて
-3. よくない / よかった / よくなかった / よくて（特殊！いい→よ）
+3. よくない / よかった / よくなかった / よくて（特殊！いい→よ） // よくない / よかった / よくなかった / よくて (irregular! いい→よ)
 
 </details>
 
@@ -592,9 +592,9 @@ Convert the adjective to adverb form and fill in:
 <details>
 <summary>答案 / Answers</summary>
 
-1. 静か**に**歩いてください。（な形容词 → に）
-2. 彼女は上手**に**歌います。（な形容词 → に）
-3. 部屋をきれい**に**してください。（な形容词 → に）
+1. 静か**に**歩いてください。（な形容词 → に） // 静か**に**歩いてください。(な-adjective → に)
+2. 彼女は上手**に**歌います。（な形容词 → に） // 彼女は上手**に**歌います。(な-adjective → に)
+3. 部屋をきれい**に**してください。（な形容词 → に） // 部屋をきれい**に**してください。(な-adjective → に)
 
 </details>
 
@@ -712,9 +712,9 @@ Conjugate the following adjectives into the indicated form:
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days

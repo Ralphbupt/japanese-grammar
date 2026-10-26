@@ -434,11 +434,11 @@ Convert the words in parentheses to the 「ても」 form:
 <details>
 <summary>答案 / Answers</summary>
 
-1. 高**くても**（い形容词 → くても）
-2. 雨**でも**（名词 → でも）
-3. 食べ**ても**（动词て形 + も）
-4. 便利**でも**（な形容词 → でも）
-5. 行っ**ても**（动词て形 + も）
+1. 高**くても**（い形容词 → くても） // 高**くても** (い-adjective → くても)
+2. 雨**でも**（名词 → でも） // 雨**でも** (noun → でも)
+3. 食べ**ても**（动词て形 + も） // 食べ**ても** (verb て-form + も)
+4. 便利**でも**（な形容词 → でも） // 便利**でも** (な-adjective → でも)
+5. 行っ**ても**（动词て形 + も） // 行っ**ても** (verb て-form + も)
 
 </details>
 
@@ -616,6 +616,16 @@ Translate the following into Japanese:
 5. ❌ この映画は怖いでも、見たい。
 :::
 
+:::en
+Find the errors and correct them:
+
+1. ❌ 雨が降るても、行きます。
+2. ❌ 先生が日本語で話してほしい。
+3. ❌ 妹はケーキが食べたいです。(Intended: talking about a third person)
+4. ❌ 最近、暖かくなっていく。(Intended: "it has been gradually getting warmer up to now")
+5. ❌ この映画は怖いでも、見たい。
+:::
+
 <details>
 <summary>答案 / Answers</summary>
 
@@ -641,9 +651,9 @@ Translate the following into Japanese:
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days

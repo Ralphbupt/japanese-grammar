@@ -365,6 +365,13 @@ Expresses "it is the rule / it is customary that":
 4. 日本に行くことになった。（想表达"我自己决定去日本"）
 :::
 
+:::en
+1. 会社を辞めることにした。(Intended: "Because of the company's arrangements, I ended up having to quit")
+2. 毎日運動するはずだ。(Intended: "I've made it a rule to exercise every day")
+3. 彼は来るはずがない。約束したから。(Intended: "He should be coming")
+4. 日本に行くことになった。(Intended: "I decided myself to go to Japan")
+:::
+
 <details>
 <summary>答案 / Answers</summary>
 
@@ -375,15 +382,22 @@ Expresses "it is the rule / it is customary that":
 4. ❌ ことになった = 被安排/外部决定 → ✅ 日本に行く**ことにした**（自己的决定）
 :::
 
+:::en
+1. ❌ ことにした = I decided to quit myself → ✅ 会社を辞める**ことになった** (decided externally / circumstances; if you were actually fired, say 会社をクビになった)
+2. ❌ はずだ = should be, by logic (a guess) → ✅ 運動する**ことにしている** (a self-imposed habit)
+3. ❌ はずがない = there's no way he'll come → ✅ 来る**はずだ** (he should come, since we promised)
+4. ❌ ことになった = arranged / decided externally → ✅ 日本に行く**ことにした** (your own decision)
+:::
+
 </details>
 
 ---
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days

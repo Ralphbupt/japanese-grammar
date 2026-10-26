@@ -78,7 +78,7 @@ The closing lesson of N5, weaving together loose ends (**question words + か / 
 
 ## 2. 〜すぎる（過度）||2. 〜すぎる (Excess)
 
-### 接続
+### 接続||Conjugation
 
 :::zh
 - 动词ます形（去ます）+ すぎる
@@ -92,7 +92,7 @@ The closing lesson of N5, weaving together loose ends (**question words + か / 
 - な-adjective stem + すぎる
 :::
 
-### 含义
+### 含义||Meaning
 
 :::zh
 "太……了"，表示程度过度，通常含有**负面评价**的语气。
@@ -102,7 +102,7 @@ The closing lesson of N5, weaving together loose ends (**question words + か / 
 "Too…" — expresses that something is excessive, usually with a **negative connotation**.
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. 昨日飲み**すぎた**。（昨天喝太多了。）
@@ -150,7 +150,7 @@ The closing lesson of N5, weaving together loose ends (**question words + か / 
 
 ## 3. 〜やすい / 〜にくい（容易/難以）||3. 〜やすい / 〜にくい (Easy to / Hard to)
 
-### 接続
+### 接続||Conjugation
 
 :::zh
 动词ます形（去ます）+ やすい / にくい
@@ -160,7 +160,7 @@ The closing lesson of N5, weaving together loose ends (**question words + か / 
 Verb ます-stem + やすい / にくい
 :::
 
-### 含义
+### 含义||Meaning
 
 :::zh
 - **やすい：** 容易做……（物品性质或个人倾向）
@@ -172,7 +172,7 @@ Verb ます-stem + やすい / にくい
 - **にくい:** Difficult/hard to do…
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. この本は読み**やすい**。（这本书容易读。）
@@ -220,7 +220,7 @@ Verb ます-stem + やすい / にくい
 
 ## 4. 〜ながら（同時）||4. 〜ながら (Simultaneous Actions)
 
-### 接続
+### 接続||Conjugation
 
 :::zh
 动词ます形（去ます）+ ながら
@@ -230,7 +230,7 @@ Verb ます-stem + やすい / にくい
 Verb ます-stem + ながら
 :::
 
-### 含义
+### 含义||Meaning
 
 :::zh
 "一边做A一边做B"，两个动作同时进行。**后面的动作是主要动作。**
@@ -240,7 +240,7 @@ Verb ます-stem + ながら
 "While doing A, do B" — two actions happening at the same time. **The action after ながら is the main/primary action.**
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. 音楽を聴き**ながら**、勉強する。（一边听音乐一边学习。→ 主要在学习）
@@ -294,7 +294,7 @@ Verb ます-stem + ながら
 
 ## 5. 〜方（かた）（做法/方法）||5. 〜方（かた）(How to / Method)
 
-### 接続
+### 接続||Conjugation
 
 :::zh
 动词ます形（去ます）+ 方（かた）
@@ -304,7 +304,7 @@ Verb ます-stem + ながら
 Verb ます-stem + 方（かた）
 :::
 
-### 含义
+### 含义||Meaning
 
 :::zh
 "做……的方法"。变形后变成名词，可以加の、が、を等助词。
@@ -314,7 +314,7 @@ Verb ます-stem + 方（かた）
 "The way to do…" / "How to do…" — nominalizes the action; the resulting noun can take particles like の, が, を, etc.
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. この漢字の読み**方**を教えてください。（请教我这个汉字的读法。）
@@ -367,72 +367,72 @@ The following is the complete list of N5 core grammar. Confirm you have mastered
 :::
 
 ### 基础句型||Basic Sentence Patterns
-- [ ] です/だ 体系（判断句）
+- [ ] です/だ 体系（判断句） // The です/だ system (copula sentences)
 - [ ] は vs が
-- [ ] 基本助词（を、に、で、の、も、から、まで、よ、ね）
+- [ ] 基本助词（を、に、で、の、も、から、まで、よ、ね） // Basic particles (を, に, で, の, も, から, まで, よ, ね)
 
 ### 动词変形||Verb Conjugations
-- [ ] ます形
-- [ ] て形（音变规则！）
-- [ ] ない形
-- [ ] た形
-- [ ] 可能形
-- [ ] 受身形
-- [ ] 意向形
-- [ ] 假定形（〜ば）
+- [ ] ます形 // ます-form
+- [ ] て形（音变规则！） // て-form (sound-change rules!)
+- [ ] ない形 // ない-form
+- [ ] た形 // た-form
+- [ ] 可能形 // Potential form
+- [ ] 受身形 // Passive form
+- [ ] 意向形 // Volitional form
+- [ ] 假定形（〜ば） // Conditional form (〜ば)
 
 ### 形容词||Adjectives
-- [ ] い形容词活用（特别注意：いい→よ-）
-- [ ] な形容词活用（特别注意：きれい、嫌い是な形）
-- [ ] 比较表达（より、ほうが、一番、ほど〜ない）
+- [ ] い形容词活用（特别注意：いい→よ-） // い-adjective conjugation (watch out: いい→よ-)
+- [ ] な形容词活用（特别注意：きれい、嫌い是な形） // な-adjective conjugation (watch out: きれい and 嫌い are な-adjectives)
+- [ ] 比较表达（より、ほうが、一番、ほど〜ない） // Comparisons (より, ほうが, 一番, ほど〜ない)
 - [ ] くなる/になる、くする/にする
 
 ### 核心语法||Core Grammar
-- [ ] ている（进行/状态/习惯）
+- [ ] ている（进行/状态/习惯） // ている (ongoing action / state / habit)
 - [ ] てください / ないでください
 - [ ] てもいい / てはいけない
 - [ ] なければならない / なくてもいい
 - [ ] てから
-- [ ] たことがある（经验）
+- [ ] たことがある（经验） // たことがある (experience)
 - [ ] たり〜たりする
 - [ ] たばかり
 
 ### 条件表达||Conditional Expressions
-- [ ] と（自然/必然）
-- [ ] ば（假设前提）
-- [ ] たら（万能条件）
-- [ ] なら（话题条件）
+- [ ] と（自然/必然） // と (natural / inevitable result)
+- [ ] ば（假设前提） // ば (hypothetical condition)
+- [ ] たら（万能条件） // たら (all-purpose conditional)
+- [ ] なら（话题条件） // なら (topic conditional)
 
 ### 推测与样态||Inference and Appearance
 - [ ] でしょう/だろう
 - [ ] かもしれない
-- [ ] そうだ（样态）vs そうだ（传闻）
+- [ ] そうだ（样态）vs そうだ（传闻） // そうだ (appearance) vs そうだ (hearsay)
 - [ ] ようだ / みたいだ
 - [ ] らしい
 - [ ] っぽい
 
 ### 计划与意愿||Plans and Desires
-- [ ] 意向形 + ようと思う
+- [ ] 意向形 + ようと思う // Volitional form + ようと思う
 - [ ] つもりだ / 予定だ
 - [ ] たい / たがる / ほしい
 - [ ] ましょう / ましょうか
 
 ### 补充语法||Supplementary Grammar
-- [ ] のだ/んです（说明/解释）
-- [ ] のに（转折，带不满）
-- [ ] ので vs から（原因）
-- [ ] し（列举理由）
-- [ ] すぎる（过度）
+- [ ] のだ/んです（说明/解释） // のだ/んです (explanation)
+- [ ] のに（转折，带不满） // のに (contrast, with dissatisfaction)
+- [ ] ので vs から（原因） // ので vs から (reason)
+- [ ] し（列举理由） // し (listing reasons)
+- [ ] すぎる（过度） // すぎる (excess)
 - [ ] やすい/にくい
-- [ ] ながら（同时）
-- [ ] 方（做法）
-- [ ] 疑问词+か/も/でも
+- [ ] ながら（同时） // ながら (simultaneous actions)
+- [ ] 方（做法） // 方 (way of doing)
+- [ ] 疑问词+か/も/でも // Question word + か/も/でも
 
 ---
 
 ## 今日练习||Today's Practice
 
-### 一、ことができる：把可能形改写成ことができる
+### 一、ことができる：把可能形改写成ことができる||1. ことができる: Rewrite the potential form with ことができる
 
 1. ピアノが弾ける。→ ？
 2. この川で泳げない。→ ？
@@ -449,12 +449,12 @@ The following is the complete list of N5 core grammar. Confirm you have mastered
 
 </details>
 
-### 二、ことがある vs ことはない：选择正确的表达
+### 二、ことがある vs ことはない：选择正确的表达||2. ことがある vs ことはない: Choose the correct expression
 
-1. 疲れた日は夕飯を作らない（ことがある / ことはない）。→ 有时候不做
-2. そんなに怒る（ことがある / ことはない）よ。→ 没必要
-3. 彼は時々遅刻する（ことがある / ことはない）。→ 有时候
-4. 一人で行く（ことがある / ことはない）。私が一緒に行くから。→ 不用
+1. 疲れた日は夕飯を作らない（ことがある / ことはない）。→ 有时候不做 // 疲れた日は夕飯を作らない（ことがある / ことはない）。→ sometimes doesn't
+2. そんなに怒る（ことがある / ことはない）よ。→ 没必要 // そんなに怒る（ことがある / ことはない）よ。→ no need
+3. 彼は時々遅刻する（ことがある / ことはない）。→ 有时候 // 彼は時々遅刻する（ことがある / ことはない）。→ sometimes
+4. 一人で行く（ことがある / ことはない）。私が一緒に行くから。→ 不用 // 一人で行く（ことがある / ことはない）。私が一緒に行くから。→ no need
 
 <details>
 <summary>答案</summary>
@@ -475,7 +475,7 @@ The following is the complete list of N5 core grammar. Confirm you have mastered
 
 </details>
 
-### 三、のだ/んだ：用んです改写
+### 三、のだ/んだ：用んです改写||3. のだ/んだ: Rewrite using んです
 
 1. 明日は来られません。用事があります。→ 用事が＿＿＿。
 2. A：顔が赤いですね。B：お酒を飲みました。→ お酒を＿＿＿。
@@ -498,12 +498,12 @@ The following is the complete list of N5 core grammar. Confirm you have mastered
 
 </details>
 
-### 四、のに vs けど：根据语境选択
+### 四、のに vs けど：根据语境选択||4. のに vs けど: Choose based on context
 
-1. 薬を飲んだ（のに / けど）、まだ治らない。→ 说话人不満
-2. 雨が降った（のに / けど）、試合はあった。→ 客观叙述
-3. ダイエット中な（のに / けど）、ケーキを食べてしまった。→ 后悔
-4. 日本語は難しい（のに / けど）、面白い。→ 中性転折
+1. 薬を飲んだ（のに / けど）、まだ治らない。→ 说话人不満 // 薬を飲んだ（のに / けど）、まだ治らない。→ speaker is dissatisfied
+2. 雨が降った（のに / けど）、試合はあった。→ 客观叙述 // 雨が降った（のに / けど）、試合はあった。→ objective statement
+3. ダイエット中な（のに / けど）、ケーキを食べてしまった。→ 后悔 // ダイエット中な（のに / けど）、ケーキを食べてしまった。→ regret
+4. 日本語は難しい（のに / けど）、面白い。→ 中性転折 // 日本語は難しい（のに / けど）、面白い。→ neutral contrast
 
 <details>
 <summary>答案</summary>
@@ -524,12 +524,12 @@ The following is the complete list of N5 core grammar. Confirm you have mastered
 
 </details>
 
-### 五、ので vs から：选択更合適的
+### 五、ので vs から：选択更合適的||5. ので vs から: Choose the more suitable one
 
-1. 先生、体調が悪い（ので / から）、早退してもいいですか。→ 対老师
-2. 疲れた（ので / から）、もう寝よう。→ 自言自語
-3. お客様、ただいま満席な（ので / から）、少々お待ちください。→ 対客人
-4. 嫌いだ（ので / から）、食べない。→ 个人意志
+1. 先生、体調が悪い（ので / から）、早退してもいいですか。→ 対老师 // 先生、体調が悪い（ので / から）、早退してもいいですか。→ to a teacher
+2. 疲れた（ので / から）、もう寝よう。→ 自言自語 // 疲れた（ので / から）、もう寝よう。→ talking to yourself
+3. お客様、ただいま満席な（ので / から）、少々お待ちください。→ 対客人 // お客様、ただいま満席な（ので / から）、少々お待ちください。→ to a customer
+4. 嫌いだ（ので / から）、食べない。→ 个人意志 // 嫌いだ（ので / から）、食べない。→ personal will
 
 <details>
 <summary>答案</summary>
@@ -550,9 +550,15 @@ The following is the complete list of N5 core grammar. Confirm you have mastered
 
 </details>
 
-### 六、し：用し连接理由
+### 六、し：用し连接理由||6. し: Link reasons with し
 
+:::zh
 例：あの店 → 安い + 美味しい + よく行く → あの店は安いし、美味しいし、よく行く。
+:::
+
+:::en
+Example: あの店 → 安い + 美味しい + よく行く → あの店は安いし、美味しいし、よく行く。
+:::
 
 1. 今日 → 雨 + 風も強い + 出かけたくない
 2. この部屋 → 広い + 明るい + 気に入った
@@ -567,14 +573,14 @@ The following is the complete list of N5 core grammar. Confirm you have mastered
 
 </details>
 
-### 七、疑問词+か/も/でも：填空
+### 七、疑問词+か/も/でも：填空||7. Question word + か/も/でも: Fill in the blank
 
-1. ＿＿＿が来たみたいだ。（有人好像来了）
-2. 昨日は＿＿＿食べなかった。（什么都没吃）
-3. この問題は＿＿＿できるよ。（谁都能做）
-4. ＿＿＿に忘れ物をした。（在某个地方忘了东西）
-5. ＿＿＿行きたくない。（哪里都不想去）
-6. ＿＿＿いいですよ。（什么时候都行）
+1. ＿＿＿が来たみたいだ。（有人好像来了） // ＿＿＿が来たみたいだ。(It seems someone came.)
+2. 昨日は＿＿＿食べなかった。（什么都没吃） // 昨日は＿＿＿食べなかった。(I didn't eat anything.)
+3. この問題は＿＿＿できるよ。（谁都能做） // この問題は＿＿＿できるよ。(Anyone can do it.)
+4. ＿＿＿に忘れ物をした。（在某个地方忘了东西） // ＿＿＿に忘れ物をした。(I left something somewhere.)
+5. ＿＿＿行きたくない。（哪里都不想去） // ＿＿＿行きたくない。(I don't want to go anywhere.)
+6. ＿＿＿いいですよ。（什么时候都行） // ＿＿＿いいですよ。(Any time is fine.)
 
 <details>
 <summary>答案</summary>
@@ -599,7 +605,7 @@ The following is the complete list of N5 core grammar. Confirm you have mastered
 
 </details>
 
-### 八、すぎる：用すぎる改写
+### 八、すぎる：用すぎる改写||8. すぎる: Rewrite using すぎる
 
 1. たくさん食べた。→ 食べ＿＿＿。
 2. この問題はとても難しい。→ この問題は難し＿＿＿。
@@ -616,12 +622,12 @@ The following is the complete list of N5 core grammar. Confirm you have mastered
 
 </details>
 
-### 九、やすい/にくい：翻訳
+### 九、やすい/にくい：翻訳||9. やすい/にくい: Translate
 
-1. 这本书容易懂。→
-2. 这个汉字很难写。→
-3. 白色衣服容易脏。→
-4. 这个名字很难记。→
+1. 这本书容易懂。→ // This book is easy to understand. →
+2. 这个汉字很难写。→ // This kanji is hard to write. →
+3. 白色衣服容易脏。→ // White clothes get dirty easily. →
+4. 这个名字很难记。→ // This name is hard to remember. →
 
 <details>
 <summary>答案</summary>
@@ -633,7 +639,7 @@ The following is the complete list of N5 core grammar. Confirm you have mastered
 
 </details>
 
-### 十、ながら：把两个动作合并
+### 十、ながら：把两个动作合并||10. ながら: Combine the two actions
 
 1. 歩く + 電話する →
 2. テレビを見る + 宿題をする →
@@ -650,12 +656,12 @@ The following is the complete list of N5 core grammar. Confirm you have mastered
 
 </details>
 
-### 十一、方（かた）：翻訳
+### 十一、方（かた）：翻訳||11. 方 (かた): Translate
 
-1. 请教我这个字的读法。→
-2. 不知道使用方法。→
-3. 请教我去车站的走法。→
-4. 这道菜的做法很简单。→
+1. 请教我这个字的读法。→ // Please teach me how to read this character. →
+2. 不知道使用方法。→ // I don't know how to use it. →
+3. 请教我去车站的走法。→ // Please tell me how to get to the station. →
+4. 这道菜的做法很简单。→ // This dish is simple to make. →
 
 <details>
 <summary>答案</summary>
@@ -667,7 +673,7 @@ The following is the complete list of N5 core grammar. Confirm you have mastered
 
 </details>
 
-### 十二、综合問題：选择合適的語法填空
+### 十二、综合問題：选择合適的語法填空||12. Mixed Review: Fill in the blank with the right grammar
 
 1. せっかく作った＿＿＿、誰も食べなかった。（のに / ので）
 2. 日本語は面白い＿＿＿、役に立つ＿＿＿、毎日勉強している。（し / から）
@@ -709,9 +715,9 @@ The following is the complete list of N5 core grammar. Confirm you have mastered
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days

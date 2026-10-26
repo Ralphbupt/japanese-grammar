@@ -73,11 +73,11 @@ Every Japanese learner starts with です, but **は vs が** is the question th
 
 ## 1. 〜です / 〜ではありません（名词/な形容词判断句）||1. 〜です / 〜ではありません (Noun/な-adj Copula)
 
-### 接続
-- 名词 + です
-- な形容词 + です
+### 接続||Conjugation
+- 名词 + です // Noun + です
+- な形容词 + です // な-adjective + です
 
-### 含义
+### 含义||Meaning
 :::zh
 表示"是……"，最基本的判断句。です是敬体（丁寧語），对应的简体是「だ」。
 :::
@@ -85,19 +85,19 @@ Every Japanese learner starts with です, but **は vs が** is the question th
 Means "is/am/are", the most basic copula sentence. です is the polite form; the plain form is 「だ」.
 :::
 
-### 活用表（敬体）
+### 活用表（敬体）||Conjugation Table (Polite)
 
-| | 肯定 | 否定 |
+| | 肯定 // Affirmative | 否定 // Negative |
 |---|---|---|
-| 现在 | 学生**です** | 学生**ではありません**（口语：じゃないです） |
-| 过去 | 学生**でした** | 学生**ではありませんでした**（口语：じゃなかったです） |
+| 现在 // Present | 学生**です** | 学生**ではありません**（口语：じゃないです） // 学生**ではありません** (colloquial: じゃないです) |
+| 过去 // Past | 学生**でした** | 学生**ではありませんでした**（口语：じゃなかったです） // 学生**ではありませんでした** (colloquial: じゃなかったです) |
 
-### 活用表（简体/常体）
+### 活用表（简体/常体）||Conjugation Table (Plain)
 
-| | 肯定 | 否定 |
+| | 肯定 // Affirmative | 否定 // Negative |
 |---|---|---|
-| 现在 | 学生**だ** | 学生**ではない**（口语：じゃない） |
-| 过去 | 学生**だった** | 学生**ではなかった**（口语：じゃなかった） |
+| 现在 // Present | 学生**だ** | 学生**ではない**（口语：じゃない） // 学生**ではない** (colloquial: じゃない) |
+| 过去 // Past | 学生**だった** | 学生**ではなかった**（口语：じゃなかった） // 学生**ではなかった** (colloquial: じゃなかった) |
 
 :::zh
 > **注意**：简体在日记、内心独白、朋友间对话中使用。考试阅读题大量使用简体，必须熟悉。
@@ -106,7 +106,7 @@ Means "is/am/are", the most basic copula sentence. です is the polite form; th
 > **Note**: Plain form is used in diaries, inner thoughts, and casual conversations. JLPT reading sections heavily use plain form — you must be familiar with it.
 :::
 
-### 例句
+### 例句||Example Sentences
 :::zh
 1. 私は田中**です**。（我是田中。）
 2. これは本**ではありません**。ノートです。（这不是书，是笔记本。）
@@ -124,7 +124,7 @@ Means "is/am/are", the most basic copula sentence. です is the polite form; th
 6. 東京は静か**ではなかった**。(Tokyo wasn't quiet. — plain past negative)
 :::
 
-### 易错点
+### 易错点||Common Mistakes
 :::zh
 - **い形容词不接です做判断**：「おいしいです」虽然语法上被接受，但本质上おいしい本身就是谓语，です只是加敬意。绝对不能说「おいしい**だ**」。
 - **な形容词要去な再接です**：「静かです」✅「静かなです」❌
@@ -208,7 +208,7 @@ When は marks a topic, it "absorbs" が and を:
 - But: 東京**に**は行きました (に is not absorbed — は is appended after it)
 :::
 
-### 例句
+### 例句||Example Sentences
 :::zh
 1. 東京**は**にぎやかです。（东京很热闹。）
 2. 今日**は**暑いですね。（今天好热啊。）
@@ -314,7 +314,7 @@ When a clause is embedded inside a larger sentence, the inner subject uses が:
 - [雨**が**降っている] のに、出かけた。(Even though it was raining, they went out.)
 :::
 
-### 例句
+### 例句||Example Sentences
 :::zh
 1. 雨**が**降っています。（在下雨。）
 2. 何**が**食べたいですか？（想吃什么？）
@@ -456,9 +456,9 @@ When a clause is embedded inside a larger sentence, the inner subject uses が:
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days

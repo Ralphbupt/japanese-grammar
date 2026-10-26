@@ -338,6 +338,7 @@ Used with なる/する.
 
 #### に的用法总结||Summary of に Uses
 
+:::zh
 ```
 存在：東京に住んでいる    （在哪里）
 时间：7時に起きる        （什么时候）
@@ -346,6 +347,18 @@ Used with なる/する.
 目的：見に行く            （去做什么）
 变化：医者になる          （变成什么）
 ```
+:::
+
+:::en
+```
+Existence:    東京に住んでいる  (where?)
+Time:         7時に起きる      (when?)
+Destination:  学校に行く        (to where?)
+Target:       友達に会う        (to whom?)
+Purpose:      見に行く          (to do what?)
+Change:       医者になる        (become what?)
+```
+:::
 
 ---
 
@@ -1159,6 +1172,7 @@ Fill in the correct particle (は、が、を、に、で、の、も、から�
 
 ## 知識点总結卡片||Key Points Summary Card
 
+:::zh
 ```
 ┌─────────────────────────────────┐
 │  です = "是"（敬体）             │
@@ -1172,14 +1186,31 @@ Fill in the correct particle (は、が、を、に、で、の、も、から�
 │  も   = "也" / 全否定            │
 └─────────────────────────────────┘
 ```
+:::
+
+:::en
+```
+┌───────────────────────────────────────────┐
+│  です = "is" (polite)                     │
+│  だ   = "is" (plain)                      │
+│  は   = topic marker "as for…"            │
+│  が   = subject marker "it's X!"          │
+│  を   = object marker                     │
+│  に   = static location/time/destination  │
+│  で   = action venue/means/cause          │
+│  の   = "'s / of"                         │
+│  も   = "also" / total negation           │
+└───────────────────────────────────────────┘
+```
+:::
 
 ---
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days

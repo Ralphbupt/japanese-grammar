@@ -226,7 +226,7 @@ This is **one of the biggest challenges** in N5-N4. All four conditional forms c
 
 ### 一类动詞假定形：う段→え段||Group 1 verb conditional: う-row → え-row
 
-| 辞书形 | 假定形 |
+| 辞书形 // Dictionary form | 假定形 // Conditional form |
 |--------|--------|
 | 書く | 書けば |
 | 泳ぐ | 泳げば |
@@ -468,9 +468,9 @@ A single view of how this lesson's three forms differ. The fourth form, **なら
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days

@@ -77,7 +77,7 @@ This lesson covers a lot of ground and is spread over two days. All of these gra
 
 ## 1. 〜でしょう / 〜だろう（推测）||1. 〜でしょう / 〜だろう (Conjecture)
 
-### 接続
+### 接続||Conjugation
 
 :::zh
 - 动词/い形容词 简体 + でしょう
@@ -89,7 +89,7 @@ This lesson covers a lot of ground and is spread over two days. All of these gra
 - な-adjective / noun + でしょう (drop だ)
 :::
 
-### 含义
+### 含义||Meaning
 
 :::zh
 "大概是……吧"，说话人基于一定根据的推测。
@@ -99,7 +99,7 @@ This lesson covers a lot of ground and is spread over two days. All of these gra
 "Probably…" — the speaker's inference based on some knowledge or experience.
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. 明日は雨**でしょう**。（明天大概会下雨吧。→ 天气预报常用）
@@ -145,7 +145,7 @@ This lesson covers a lot of ground and is spread over two days. All of these gra
 
 ## 2. 〜かもしれない（可能性）||2. 〜かもしれない (Possibility)
 
-### 接续
+### 接续||Conjugation
 
 :::zh
 - 动词/い形容词 简体 + かもしれない
@@ -159,7 +159,7 @@ This lesson covers a lot of ground and is spread over two days. All of these gra
 - Noun + かもしれない
 :::
 
-### 含义
+### 含义||Meaning
 
 :::zh
 "也许/说不定……"，说话人觉得有这个可能，但不确定。
@@ -173,7 +173,7 @@ This lesson covers a lot of ground and is spread over two days. All of these gra
 > Lower certainty than でしょう. でしょう ≈ 70-80%, かもしれない ≈ 30-50%.
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. 明日は雨が降る**かもしれない**。（明天也许会下雨。）
@@ -223,7 +223,7 @@ This lesson covers a lot of ground and is spread over two days. All of these gra
 
 ## 3. 〜そうだ ①（样态）— "看起来……"||3. 〜そうだ ① (Appearance) — "Looks like…"
 
-### 接続
+### 接続||Conjugation
 
 :::zh
 - 动词ます形（去ます）+ そうだ
@@ -241,7 +241,7 @@ This lesson covers a lot of ground and is spread over two days. All of these gra
 > **Note**: いい→**よさ**そうだ、ない→**なさ**そうだ (irregular!)
 :::
 
-### 含义
+### 含义||Meaning
 
 :::zh
 根据**眼前的外观/迹象**做判断，"看起来……"、"快要……"。
@@ -273,7 +273,7 @@ A judgment based on **visible appearance or immediate signs**: "looks like…", 
 | ない | **なさそう** | なさそうだ (looks like there isn't any) |
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. 雨が降り**そうだ**。（看起来要下雨了。→ 看天色判断）
@@ -329,7 +329,7 @@ A judgment based on **visible appearance or immediate signs**: "looks like…", 
 
 ## 4. 〜そうだ ②（传闻）— "听说……"||4. 〜そうだ ② (Hearsay) — "I heard that…"
 
-### 接続
+### 接続||Conjugation
 
 :::zh
 - 动词/い形容词/な形容词 **简体** + そうだ
@@ -345,7 +345,7 @@ A judgment based on **visible appearance or immediate signs**: "looks like…", 
 > **Key difference**: Appearance そうだ attaches to ます-stem or drop-い form; Hearsay そうだ attaches to the **plain/complete form**.
 :::
 
-### 含义
+### 含义||Meaning
 
 :::zh
 "据说/听说……"，信息来源于别人或媒体。
@@ -379,7 +379,7 @@ A judgment based on **visible appearance or immediate signs**: "looks like…", 
 | いい | **よさそう** | いい**そうだ** |
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. 天気予報によると、明日は雨だ**そうです**。（据天气预报说明天下雨。）
@@ -435,9 +435,9 @@ A judgment based on **visible appearance or immediate signs**: "looks like…", 
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days

@@ -19,7 +19,7 @@
 
 ## 1. 〜ようだ / 〜ように（推断）||1. 〜ようだ / 〜ように (Inference)
 
-### 接続
+### 接続||Conjugation
 
 :::zh
 - 动词简体 + ようだ
@@ -35,7 +35,7 @@
 - Noun + の + ようだ
 :::
 
-### 含义
+### 含义||Meaning
 
 :::zh
 "好像……"，根据**间接证据/自己的感觉**推断。比そうだ（样态）更有"经过思考判断"的感觉。
@@ -45,7 +45,7 @@
 "It seems that…" — inferred from **indirect evidence or one's own perception**. More deliberate and analytical than そうだ (appearance).
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. 彼は怒っている**ようだ**。（他好像在生气。→ 根据表情/态度判断）
@@ -109,7 +109,7 @@
 
 ## 2. 〜みたいだ（口语推断）||2. 〜みたいだ (Casual Inference)
 
-### 接続
+### 接続||Conjugation
 
 :::zh
 みたいだ是ようだ的**口语版**，接续更简单：
@@ -137,7 +137,7 @@
 > みたいだ has more uniform conjugation (attach directly to plain form) and is used far more in daily conversation.
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. 彼は怒っている**みたいだ**。（他好像在生气。）
@@ -189,7 +189,7 @@
 
 ## 3. 〜らしい（似乎/听说/典型）||3. 〜らしい (Apparently / Hearsay / Typical)
 
-### 接続
+### 接続||Conjugation
 
 :::zh
 - 动词/い形容词 简体 + らしい
@@ -289,7 +289,7 @@ Noun + らしい = having the qualities expected of that noun:
 
 ## 4. 〜っぽい（口语 — "有点像/容易……"）||4. 〜っぽい (Colloquial — "Kind of like / tends to…")
 
-### 接続
+### 接続||Conjugation
 
 :::zh
 - 名词 + っぽい
@@ -303,7 +303,7 @@ Noun + らしい = having the qualities expected of that noun:
 - い-adjective (drop い) + っぽい
 :::
 
-### 含义
+### 含义||Meaning
 
 :::zh
 口语表达，"有点像……的感觉"、"容易……"。
@@ -313,7 +313,7 @@ Noun + らしい = having the qualities expected of that noun:
 Colloquial expression meaning "kind of gives the feeling of…" or "tends to…"
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. 子供**っぽい**。（孩子气/幼稚。）
@@ -507,13 +507,13 @@ Colloquial expression meaning "kind of gives the feeling of…" or "tends to…"
 
 ## 今日练习||Today's Practice
 
-### A. 选择正确的表达
+### A. 选择正确的表达||A. Choose the correct expression
 
-1. （看着蛋糕）美味し（　　）ですね。
+1. （看着蛋糕）美味し（　　）ですね。 // (Looking at a cake) 美味し（　　）ですね。
 2. 田中さんから聞いたんですが、来月試験がある（　　）です。
 3. 空が暗くなってきた。雨が降る（　　）。
-4. 彼は（　　）男だ。（很有男子气概）
-5. 明日は晴れ（　　）。（天气预报的推测语气）
+4. 彼は（　　）男だ。（很有男子气概） // 彼は（　　）男だ。(He's very manly.)
+5. 明日は晴れ（　　）。（天气预报的推测语气） // 明日は晴れ（　　）。(the conjecture tone of a weather forecast)
 6. この料理は辛（　　）。でも食べてみないとわからない。
 7. 電気が消えている。誰もいない（　　）。
 8. あの人はすぐ怒る。怒り（　　）人だ。
@@ -545,9 +545,16 @@ Colloquial expression meaning "kind of gives the feeling of…" or "tends to…"
 
 </details>
 
-### B. 样态そうだ vs 传闻そうだ
+### B. 样态そうだ vs 传闻そうだ||B. Appearance そうだ vs Hearsay そうだ
 
+:::zh
 判断以下是样态还是传闻：
+:::
+
+:::en
+Decide whether each is appearance or hearsay:
+:::
+
 1. このスープは熱そうだ。
 2. 北海道は寒いそうだ。
 3. 彼は元気そうだ。
@@ -578,49 +585,61 @@ Colloquial expression meaning "kind of gives the feeling of…" or "tends to…"
 
 </details>
 
-### C. 翻译练习
+### C. 翻译练习||C. Translation Practice
 
+:::zh
 将下列中文翻译成日语（可能有多种正确答案）：
+:::
 
-1. 她也许在生气。
-2. 听说那个考试很难。
-3. 他好像很温柔。（看到他对人态度好）
-4. 他好像很温柔。（听别人说的）
-5. 她真有女人味。（褒义）
-6. 那个包看起来很贵。
-7. 看来电车晚点了。（站台上很多人）
+:::en
+Translate the following into Japanese (more than one answer may be correct):
+:::
+
+1. 她也许在生气。 // She might be angry.
+2. 听说那个考试很难。 // I heard that exam is difficult.
+3. 他好像很温柔。（看到他对人态度好） // He seems kind. (You've seen how nicely he treats people.)
+4. 他好像很温柔。（听别人说的） // He seems kind. (You heard it from others.)
+5. 她真有女人味。（褒义） // She's really feminine. (positive)
+6. 那个包看起来很贵。 // That bag looks expensive.
+7. 看来电车晚点了。（站台上很多人） // It seems the train is delayed. (The platform is crowded.)
 
 <details>
 <summary>答案</summary>
 
 1. 彼女は怒っている**かもしれない**。
-2. あの試験は難しい**そうだ**。（传闻）
-3. 彼は優しい**ようだ**。/ 彼は優しい**みたいだ**。（根据他的言行推断）
-4. 彼は優しい**そうだ**。（传闻：听说的）/ 彼は優しい**らしい**。
-5. 彼女は女**らしい**。（典型性：褒义）
-6. あのかばんは高**そうだ**。（样态：看外观）
-7. 電車が遅れている**ようだ**。/ 電車が遅れている**みたいだ**。（综合推断）
+2. あの試験は難しい**そうだ**。（传闻） // あの試験は難しい**そうだ**。(hearsay)
+3. 彼は優しい**ようだ**。/ 彼は優しい**みたいだ**。（根据他的言行推断） // 彼は優しい**ようだ**。/ 彼は優しい**みたいだ**。(inferred from what he says and does)
+4. 彼は優しい**そうだ**。（传闻：听说的）/ 彼は優しい**らしい**。 // 彼は優しい**そうだ**。(hearsay: heard it) / 彼は優しい**らしい**。
+5. 彼女は女**らしい**。（典型性：褒义） // 彼女は女**らしい**。(typicality: positive)
+6. あのかばんは高**そうだ**。（样态：看外观） // あのかばんは高**そうだ**。(appearance: judging by looks)
+7. 電車が遅れている**ようだ**。/ 電車が遅れている**みたいだ**。（综合推断） // 電車が遅れている**ようだ**。/ 電車が遅れている**みたいだ**。(inference from overall evidence)
 
 </details>
 
-### D. 综合填空
+### D. 综合填空||D. Mixed Fill-in-the-Blank
 
+:::zh
 用括号中的提示选择合适的表达，填入空格：
+:::
 
-1. ニュースによると、来週から値段が上がる＿＿＿。（信息来源：新闻）
-2. 彼女はとても疲れている＿＿＿。ずっとあくびをしている。（自己观察推断）
-3. 明日のパーティーに、佐藤さんは来ない＿＿＿。（50%以下的可能性）
-4. この本は面白＿＿＿ですね。表紙を見ただけですが。（看外观判断）
-5. 駅前に新しいラーメン屋ができた＿＿＿よ。（听到风声，来源模糊）
+:::en
+Use the hint in parentheses to choose the right expression for each blank:
+:::
+
+1. ニュースによると、来週から値段が上がる＿＿＿。（信息来源：新闻） // ニュースによると、来週から値段が上がる＿＿＿。(source: the news)
+2. 彼女はとても疲れている＿＿＿。ずっとあくびをしている。（自己观察推断） // 彼女はとても疲れている＿＿＿。ずっとあくびをしている。(inferred from your own observation)
+3. 明日のパーティーに、佐藤さんは来ない＿＿＿。（50%以下的可能性） // 明日のパーティーに、佐藤さんは来ない＿＿＿。(less than 50% likely)
+4. この本は面白＿＿＿ですね。表紙を見ただけですが。（看外观判断） // この本は面白＿＿＿ですね。表紙を見ただけですが。(judging by looks)
+5. 駅前に新しいラーメン屋ができた＿＿＿よ。（听到风声，来源模糊） // 駅前に新しいラーメン屋ができた＿＿＿よ。(heard a rumor, vague source)
 
 <details>
 <summary>答案</summary>
 
-1. 上がる**そうだ**（传闻：ニュースによると＝有明确来源）
-2. 疲れている**ようだ** / **みたいだ**（综合推断：看到打哈欠→推断累了）
-3. 来ない**かもしれない**（低确定度的可能性）
-4. 面白**そう**（样态：看到表紙→外观判断）
-5. できた**らしい**（传闻：来源模糊时用らしい）
+1. 上がる**そうだ**（传闻：ニュースによると＝有明确来源） // 上がる**そうだ** (hearsay: ニュースによると = clear source)
+2. 疲れている**ようだ** / **みたいだ**（综合推断：看到打哈欠→推断累了） // 疲れている**ようだ** / **みたいだ** (inference from evidence: she keeps yawning → she must be tired)
+3. 来ない**かもしれない**（低确定度的可能性） // 来ない**かもしれない** (a low-certainty possibility)
+4. 面白**そう**（样态：看到表紙→外观判断） // 面白**そう** (appearance: saw the cover → judging by looks)
+5. できた**らしい**（传闻：来源模糊时用らしい） // できた**らしい** (hearsay: use らしい when the source is vague)
 
 </details>
 
@@ -628,9 +647,9 @@ Colloquial expression meaning "kind of gives the feeling of…" or "tends to…"
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days

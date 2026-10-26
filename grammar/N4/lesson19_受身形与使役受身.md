@@ -432,26 +432,35 @@ All verb conjugation forms covered so far:
 
 ### B. 变成使役受身形（书面+口语）||B. Convert to Causative-Passive (Written + Spoken)
 
-1. 飲む → 书面：　　　/ 口语：
-2. 書く → 书面：　　　/ 口语：
-3. 食べる → 书面：
-4. 走る → 书面：　　　/ 口语：
-5. 話す → 书面：
+1. 飲む → 书面：　　　/ 口语： // 飲む → Written:　　　/ Spoken:
+2. 書く → 书面：　　　/ 口语： // 書く → Written:　　　/ Spoken:
+3. 食べる → 书面： // 食べる → Written:
+4. 走る → 书面：　　　/ 口语： // 走る → Written:　　　/ Spoken:
+5. 話す → 书面： // 話す → Written:
 
 <details>
 <summary>答案 / Answers</summary>
 
 1. 飲ませられる / 飲まされる
 2. 書かせられる / 書かされる
-3. 食べさせられる（二类不缩略）
+3. 食べさせられる（二类不缩略） // 食べさせられる (Group 2 has no short form)
 4. 走らせられる / 走らされる
-5. 話させられる（す结尾不缩略）
+5. 話させられる（す结尾不缩略） // 話させられる (verbs ending in す have no short form)
 
 </details>
 
 ### C. 判断被动类型（直接/间接/持ち主/客观）||C. Identify Passive Type (Direct / Indirect / Possessor / Objective)
 
 :::zh
+1. 先生に褒められた。
+2. 電車で足を踏まれた。
+3. 隣の人に騒がれて眠れなかった。
+4. この建物は有名な建築家によって建てられた。
+5. 彼女に泣かれて困った。
+6. 泥棒に財布を盗まれた。
+:::
+
+:::en
 1. 先生に褒められた。
 2. 電車で足を踏まれた。
 3. 隣の人に騒がれて眠れなかった。
@@ -562,9 +571,9 @@ All verb conjugation forms covered so far:
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days

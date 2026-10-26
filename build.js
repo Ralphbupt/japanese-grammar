@@ -817,7 +817,7 @@ function leadToPlainText(text, maxLen = 160) {
 // page because every lesson covers different grammar points.
 function buildDescSupplement(cleanPoints, level) {
   if (cleanPoints.length >= 2) {
-    return `This lesson covers JLPT ${level} grammar ${cleanPoints.slice(0, 4).join("、")}: conjugation, meaning, example sentences, and how to tell similar forms apart, with practice questions.`;
+    return `This lesson covers JLPT ${level} grammar ${cleanPoints.slice(0, 4).join(", ")}: conjugation, meaning, example sentences, and how to tell similar forms apart, with practice questions.`;
   }
   if (cleanPoints.length === 1) {
     return `This lesson explains the JLPT ${level} grammar point ${cleanPoints[0]} — its conjugation, meaning, and usage with example sentences, plus practice questions and answers.`;
@@ -922,6 +922,28 @@ function localizePage(html, lang, ids) {
   const link = new RegExp(`(<a\\b[^>]*?\\bhref=")(?:${origin})?${SITE_PATH}([A-Za-z0-9_-]+)/(?=[#"])`, "g");
   // .alt-lang links point at the other languages on purpose: leave them be.
   return html.replace(link, (m, pre, id) => (ids.has(id) && !/\balt-lang\b/.test(pre) ? `${pre}${SITE_PATH}${lang.dir}${id}/` : m));
+}
+
+// URL bits for page `id` in language `lang`: canonical url, the <html>
+// attributes (data-force-lang pins the UI language, data-alt-xx is where
+// switching to xx goes), hreflang links and the .alt-lang breadcrumb links.
+function langVariant(id, lang) {
+  const others = PAGE_LANGS.filter(o => o !== lang);
+  const at = (o) => `${SITE}${o.dir}${id}/`;
+  return {
+    url: at(lang),
+    htmlAttrs: ` data-force-lang="${lang.code}"` + others.map(o => ` data-alt-${o.code}="${SITE_PATH}${o.dir}${id}/"`).join(""),
+    hreflang: PAGE_LANGS.map(o => `\n<link rel="alternate" hreflang="${o.hreflang}" href="${at(o)}">`).join("")
+      + `\n<link rel="alternate" hreflang="x-default" href="${at(PAGE_LANGS[0])}">`,
+    altLink: others.map(o => `<a class="alt-lang" href="${at(o)}" hreflang="${o.hreflang}" lang="${o.htmlLang}">${o.label}</a>`).join(""),
+  };
+}
+
+// Write a page's copy in `lang` to dist/<dir><id>/index.html.
+function writeLangPage(id, lang, html) {
+  const dir = path.join(__dirname, "dist", lang.dir, id);
+  fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(path.join(dir, "index.html"), html, "utf-8");
 }
 
 // ─── Furigana via kuroshiro ───
@@ -1465,7 +1487,7 @@ async function main() {
       // Use HTML comments to avoid markdown parser issues, then replace after parsing
       const bilingualMd = md.replace(
         /^:::(zh|en)\s*\n([\s\S]*?)^:::\s*$/gm,
-        (_, lang, content) => `<!--lang:${lang}:start-->\n${content.trim()}\n<!--lang:${lang}:end-->`
+        (_, lang, content) => `<!--lang:${lang}:start-->\n${content.trim()}\n\n<!--lang:${lang}:end-->`
       );
 
       // Parse markdown to HTML
@@ -1484,11 +1506,23 @@ async function main() {
           `${open}<span class="lang-zh">${zh.trim()}</span><span class="lang-en">${en.trim()}</span>${close}`
       );
 
-      // Bilingual table cells: <td>中文//English</td>
+      // Bilingual table cells and list items: 中文//English. Inline markup is
+      // fine on either side as long as it doesn't straddle the //; a "://"
+      // (URL) never splits, and a task-list checkbox stays in front.
       html = html.replace(
-        /(<td[^>]*>)([^<]*?)\/\/([^<]*?)(<\/td>)/g,
-        (_, open, zh, en, close) =>
-          `${open}<span class="lang-zh">${zh.trim()}</span><span class="lang-en">${en.trim()}</span>${close}`
+        /(<(td|th|li)\b[^>]*>(?:<input[^>]*>\s*)?)([\s\S]*?)(<\/\2>)/g,
+        (m, open, tag, body, close) => {
+          if (tag === "li" && /<(ul|ol|li)\b/.test(body)) return m;
+          const re = /(?<!:)\/\//g;
+          let hit;
+          while ((hit = re.exec(body))) {
+            const before = body.slice(0, hit.index);
+            if (before.lastIndexOf("<") <= before.lastIndexOf(">")) break;
+          }
+          if (!hit) return m;
+          const zh = body.slice(0, hit.index).trim(), en = body.slice(hit.index + 2).trim();
+          return `${open}<span class="lang-zh">${zh}</span><span class="lang-en">${en}</span>${close}`;
+        }
       );
 
       // Add class to word tables (tables whose first row has 单词)
@@ -1562,6 +1596,10 @@ async function main() {
       const SECTION_NOISE = /(单词表|本课单词|今日|练习|練習|复习计划|复习|总复习|总復習|总结|总览|総覧|辨析|对照表|对照|对比|三者|\bvs\b|图解|常见错误|整理|汇总|卡片|模板|套路|清单|策略|过渡指南|考点|考试策略|切换规则|不同表达|完整活用表|高頻)/i;
       const grammarPoints = [];
       const cleanPoints = [];
+      // Same points for English pages: a label with Chinese in it
+      // (形容词副词化, 〜そうだ ①— "看起来……") takes the heading's English
+      // side instead, minus its numbering, (…) gloss and "— …" tail.
+      const cleanPointsEn = [];
       const mdH2Regex = /^##\s+(.+)$/gm;
       let mdH2Match;
       while ((mdH2Match = mdH2Regex.exec(md)) !== null) {
@@ -1591,6 +1629,9 @@ async function main() {
         if (!label) continue;
         grammarPoints.push(name);
         cleanPoints.push(label);
+        const enName = headingText.includes("||") ? headingText.split("||").pop() : "";
+        const enLabel = enName.replace(/^\d+[.、．]\s*/, "").replace(/（[^）]*）|\([^)]*\)/g, "").split(/\s*[—–:]\s*/)[0].trim();
+        cleanPointsEn.push(hasSC(label) && enLabel ? enLabel : label);
       }
 
       // Lesson meta line: last-updated date + reading time. Inserted right
@@ -1620,9 +1661,8 @@ async function main() {
           "$1lang-en seo-lead$2"
         );
       } else if (cleanPoints.length > 0) {
-        const leadPoints = cleanPoints.slice(0, 6);
-        const pointsZh = leadPoints.map(p => `<strong>${p}</strong>`).join("、");
-        const pointsEn = leadPoints.map(p => `<strong>${p}</strong>`).join(", ");
+        const pointsZh = cleanPoints.slice(0, 6).map(p => `<strong>${p}</strong>`).join("、");
+        const pointsEn = cleanPointsEn.slice(0, 6).map(p => `<strong>${p}</strong>`).join(", ");
         const seoLead = `<p class="seo-lead"><span class="lang-zh">本课讲解 ${groupLevel} 语法 ${pointsZh} 的接续规则、含义、例句辨析与易错点对比，配套练习题与 JLPT ${groupLevel} 备考要点。</span><span class="lang-en">This lesson covers the ${groupLevel} grammar points ${pointsEn}: how they conjugate, what they mean, example sentences, comparisons and common mistakes, plus practice questions for the JLPT ${groupLevel}.</span></p>`;
         html = html.replace(/(<\/h1>)/, `$1\n${seoLead}`);
       }
@@ -1682,7 +1722,7 @@ async function main() {
       articlesHtml.push(
         `<article id="${file.id}" class="lesson">${html}</article>`
       );
-      lessonPages.push({ id: file.id, title, sidebarTitle, html, jaTitle: jaTitle || shortTitle, filePath: file.path, grammarPoints, cleanPoints, level: group.label, md, topLead, firstMeaningZh, topLeadEn, firstMeaningEn, lastMod: lessonLastMod, firstMod: lessonFirstMod, readingMin });
+      lessonPages.push({ id: file.id, title, sidebarTitle, html, jaTitle: jaTitle || shortTitle, filePath: file.path, grammarPoints, cleanPoints, cleanPointsEn, level: group.label, md, topLead, firstMeaningZh, topLeadEn, firstMeaningEn, lastMod: lessonLastMod, firstMod: lessonFirstMod, readingMin });
     }
     // Accordion group: clickable level header toggles its lesson list. The
     // first item is an "overview" link to the per-level /N{level}/ page (the
@@ -1737,6 +1777,8 @@ async function main() {
         const hadTilde = /^[〜～]/.test(pat);
         const term = pat.replace(/^[〜～]/, "");
         if (term.length < 2) continue;
+        // "て形应用" — a Japanese term run into the Chinese words after it.
+        if (hasSC(term)) continue;
         // Filter to actual grammar terms: must have 〜 OR contain kana.
         // Pure-kanji words like "辨析" / "将来" / "状态" are noise — they're
         // Chinese vocabulary the page happens to use, not Japanese grammar.
@@ -2088,19 +2130,19 @@ ${SETTINGS_SCRIPT}`;
 
   // ─── Assemble ───
   const fullHtml = `<!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Japanese Grammar Notes | 日语语法笔记 – N5→N2 in 8 Weeks</title>
-<meta name="description" content="免费的日语语法笔记，8 周从 JLPT N5 学到 N2：每个语法点都有接续规则、例句、例句发音和辨析，附 Anki 卡组。Free JLPT N5–N2 Japanese grammar notes in Chinese and English.">
+<title>Japanese Grammar Notes — Free JLPT N5 to N2 Grammar Lessons | 日语语法笔记</title>
+<meta name="description" content="Free JLPT N5–N2 Japanese grammar lessons: every grammar point with conjugation rules, example sentences with audio, comparisons of confusable patterns, practice questions and Anki decks. 中文版：免费日语语法笔记，N5 到 N2。">
 <meta name="keywords" content="Japanese grammar, JLPT N2, N5, N4, N3, 日语语法, 日本語文法, grammar notes, spaced repetition, 语法笔记">
 <link rel="canonical" href="${SITE}">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Japanese Grammar Notes | 日语语法笔记 – N5→N2">
-<meta property="og:description" content="免费的日语语法笔记，8 周从 JLPT N5 学到 N2：接续规则、例句、发音和 Anki 卡组。Free JLPT N5–N2 grammar notes.">
+<meta property="og:description" content="Free JLPT N5–N2 Japanese grammar lessons with conjugation rules, example sentences with audio, comparisons and Anki decks.">
 <meta property="og:url" content="${SITE}">
 <meta property="og:image" content="${SITE}og-image.png">
 <meta property="og:image:width" content="1200">
@@ -2111,7 +2153,7 @@ ${SETTINGS_SCRIPT}`;
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Japanese Grammar Notes | 日语语法笔记 – N5→N2">
-<meta name="twitter:description" content="免费的日语语法笔记，8 周从 JLPT N5 学到 N2。Free JLPT N5–N2 grammar notes.">
+<meta name="twitter:description" content="Free JLPT N5–N2 Japanese grammar lessons with examples, audio, comparisons and Anki decks.">
 <meta name="twitter:image" content="${SITE}og-image.png">
 
 <!-- Structured Data -->
@@ -2200,7 +2242,9 @@ ${APP_PREFS_JS}
   fs.copyFileSync(path.join(__dirname, "site", "sw.js"), path.join(__dirname, "dist", "sw.js"));
 
   // ─── Generate individual lesson pages ───
-  const localizedPageIds = new Set(lessonPages.map(l => l.id));
+  // Pages published once per language (PAGE_LANGS); links to them on a
+  // non-root copy point at that language's copy.
+  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "guides", "about"]);
   for (let li = 0; li < lessonPages.length; li++) {
     const lesson = lessonPages[li];
     // Prev/next stay inside the course or inside the guides, never across.
@@ -2213,6 +2257,7 @@ ${APP_PREFS_JS}
     // copy around them is English.
     const lessonLevel = lesson.level || "";
     const cleanPoints = lesson.cleanPoints || [];
+    const cleanPointsEn = lesson.cleanPointsEn || cleanPoints;
     // English side of the bilingual "日本語||English" H1, for the no-points title.
     const enTitle = (lesson.title.includes("||")
       ? lesson.title.split("||").pop()
@@ -2223,11 +2268,11 @@ ${APP_PREFS_JS}
     let lessonTitle, lessonDesc;
     if (seo.en) {
       lessonTitle = seo.en;
-    } else if (cleanPoints.length >= 2) {
-      const titlePoints = cleanPoints.slice(0, 2).join(", ");
+    } else if (cleanPointsEn.length >= 2) {
+      const titlePoints = cleanPointsEn.slice(0, 2).join(", ");
       lessonTitle = `${titlePoints} — JLPT ${lessonLevel} Japanese Grammar | Usage & Examples`;
-    } else if (cleanPoints.length === 1) {
-      lessonTitle = `${cleanPoints[0]} — JLPT ${lessonLevel} Japanese Grammar Explained with Examples`;
+    } else if (cleanPointsEn.length === 1) {
+      lessonTitle = `${cleanPointsEn[0]} — JLPT ${lessonLevel} Japanese Grammar Explained with Examples`;
     } else {
       lessonTitle = `${enTitle} | JLPT ${lessonLevel} Japanese Grammar Notes`;
     }
@@ -2240,7 +2285,7 @@ ${APP_PREFS_JS}
       : lesson.firstMeaningEn
       ? leadToPlainText(lesson.firstMeaningEn, 158)
       : "";
-    lessonDesc = seo.desc || buildLessonDesc(descHook, cleanPoints, schemaLevel);
+    lessonDesc = seo.desc || buildLessonDesc(descHook, cleanPointsEn, schemaLevel);
 
     // Auto-generate English-first keywords (override hardcoded LESSON_KEYWORDS).
     // Japanese grammar terms are retained as keywords — learners search them.
@@ -2249,8 +2294,8 @@ ${APP_PREFS_JS}
       `${schemaLevel} grammar`,
       `JLPT ${schemaLevel}`,
       `learn Japanese ${schemaLevel}`,
-      ...cleanPoints.slice(0, 4).flatMap(p => [`${p} grammar`, `${p} meaning`, `${p} examples`]),
-      cleanPoints.length >= 2 ? `${cleanPoints[0]} vs ${cleanPoints[1]}` : null,
+      ...cleanPointsEn.slice(0, 4).flatMap(p => [`${p} grammar`, `${p} meaning`, `${p} examples`]),
+      cleanPointsEn.length >= 2 ? `${cleanPointsEn[0]} vs ${cleanPointsEn[1]}` : null,
       "Japanese grammar",
       "Japanese grammar notes",
     ].filter(Boolean);
@@ -2271,26 +2316,6 @@ ${APP_PREFS_JS}
     // #3: rel prev/next links
     const prevLink = prevLesson ? `\n<link rel="prev" href="${SITE}${prevLesson.id}/">` : "";
     const nextLink = nextLesson ? `\n<link rel="next" href="${SITE}${nextLesson.id}/">` : "";
-
-    // FAQ Schema: extract Q&A from exercises (### heading as question, <details> as answer)
-    const faqItems = [];
-    const faqRegex = /### ([^\n]+)\n[\s\S]*?<details>\s*<summary>[^<]*<\/summary>([\s\S]*?)<\/details>/g;
-    let faqMatch;
-    while ((faqMatch = faqRegex.exec(lesson.md)) !== null) {
-      const question = faqMatch[1].replace(/\|\|.*$/, "").trim(); // use Chinese side
-      let answer = faqMatch[2].replace(/^:::(zh|en)\s*\n/gm, "").replace(/^:::\s*$/gm, "").trim();
-      answer = answer.replace(/\*\*/g, "").replace(/\n/g, " ").slice(0, 300);
-      if (question && answer) {
-        faqItems.push({ q: question, a: answer });
-      }
-    }
-    const faqSchema = faqItems.length > 0 ? `,\n{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [${faqItems.slice(0, 5).map(f => `
-    {"@type": "Question", "name": "${f.q.replace(/"/g, '\\"')}", "acceptedAnswer": {"@type": "Answer", "text": "${f.a.replace(/"/g, '\\"')}"}}`).join(",")}
-  ]
-}` : "";
 
     const renderLessonPage = (v) => `<!DOCTYPE html>
 <html lang="${v.htmlLang}"${v.htmlAttrs}>
@@ -2319,8 +2344,8 @@ ${APP_PREFS_JS}
 [{
   "@context": "https://schema.org",
   "@type": ["Article", "LearningResource"],
-  "name": "${lesson.jaTitle.replace(/"/g, '\\"')}",
-  "headline": "${lesson.jaTitle.replace(/"/g, '\\"')}",
+  "name": "${v.heading.replace(/"/g, '\\"')}",
+  "headline": "${v.title.replace(/"/g, '\\"')}",
   "description": "${v.desc.replace(/"/g, '\\"')}",
   "inLanguage": ${v.inLanguage},
   "isAccessibleForFree": true,
@@ -2337,7 +2362,7 @@ ${APP_PREFS_JS}
     "educationalFramework": "JLPT",
     "targetName": "${schemaLevel}"
   },
-  "teaches": [${cleanPoints.slice(0, 5).map(p => `"${p.replace(/"/g, '\\"')}"`).join(", ") || '""'}],
+  "teaches": [${v.points.slice(0, 5).map(p => `"${p.replace(/"/g, '\\"')}"`).join(", ") || '""'}],
   "audience": { "@type": "EducationalAudience", "educationalRole": "student" },
   "author": { "@type": "Person", "name": "Ralphbupt", "url": "https://github.com/Ralphbupt" },
   "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N2", "url": "${SITE}" }
@@ -2346,10 +2371,10 @@ ${APP_PREFS_JS}
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "日语语法笔记", "item": "${SITE}" },
-    { "@type": "ListItem", "position": 2, "name": "${lesson.jaTitle.replace(/"/g, '\\"')}", "item": "${v.url}" }
+    { "@type": "ListItem", "position": 1, "name": "${v.home}", "item": "${SITE}" },
+    { "@type": "ListItem", "position": 2, "name": "${v.heading.replace(/"/g, '\\"')}", "item": "${v.url}" }
   ]
-}${faqSchema}]
+}]
 </script>
 <link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
@@ -2467,28 +2492,22 @@ ${APP_PREFS_JS}
     const zhKeywords = [...cleanPoints.slice(0, 4).flatMap(p => [`${p} 用法`, `${p} 意思`]),
       cleanPoints.length >= 2 ? `${cleanPoints[0]}和${cleanPoints[1]}的区别` : null,
       `JLPT ${schemaLevel} 语法`, `日语 ${schemaLevel} 语法总结`, "日语语法笔记"].filter(Boolean).join(", ");
+    // The H1's two sides ("中文||English"), minus the "Lesson NN –" prefix:
+    // a page's name in its JSON-LD and breadcrumb schema.
+    const [h1Zh, h1En = h1Zh] = lesson.title.split("||").map(t => t.replace(/^Lesson\s+\d+\s*[–—-]\s*/i, "").trim());
     const pageMeta = {
-      en: { title: lessonTitle, desc: lessonDesc, keywords: lessonKeywords },
-      zh: { title: zhTitle, desc: zhDesc, keywords: zhKeywords },
+      en: { title: lessonTitle, desc: lessonDesc, keywords: lessonKeywords, heading: h1En, home: "Japanese Grammar Notes", points: cleanPointsEn },
+      zh: { title: zhTitle, desc: zhDesc, keywords: zhKeywords, heading: h1Zh, home: "日语语法笔记", points: cleanPoints },
     };
-    const langUrl = (lang, l = lesson) => `${SITE}${lang.dir}${l.id}/`;
-    const hreflangLinks = PAGE_LANGS.map(lang => `\n<link rel="alternate" hreflang="${lang.hreflang}" href="${langUrl(lang)}">`).join("")
-      + `\n<link rel="alternate" hreflang="x-default" href="${langUrl(PAGE_LANGS[0])}">`;
     for (const lang of PAGE_LANGS) {
-      const others = PAGE_LANGS.filter(o => o !== lang);
-      const rel = (r, l) => (l ? `\n<link rel="${r}" href="${langUrl(lang, l)}">` : "");
-      const html = localizePage(renderLessonPage({
-        ...pageMeta[lang.code], htmlLang: lang.htmlLang, url: langUrl(lang),
-        // data-force-lang pins the UI language; data-alt-xx is where switching
-        // to xx in settings goes.
-        htmlAttrs: ` data-force-lang="${lang.code}"` + others.map(o => ` data-alt-${o.code}="${SITE_PATH}${o.dir}${lesson.id}/"`).join(""),
-        headLinks: rel("prev", prevLesson) + rel("next", nextLesson) + hreflangLinks,
-        ogLocale: lang.ogLocale, ogLocaleAlt: others[0].ogLocale, inLanguage: `["${lang.htmlLang}", "ja"]`,
-        altLangLink: others.map(o => `<a class="alt-lang" href="${langUrl(o)}" hreflang="${o.hreflang}" lang="${o.htmlLang}">${o.label}</a>`).join(""),
-      }), lang, localizedPageIds);
-      const dir = path.join(__dirname, "dist", lang.dir, lesson.id);
-      fs.mkdirSync(dir, { recursive: true });
-      fs.writeFileSync(path.join(dir, "index.html"), html, "utf-8");
+      const lv = langVariant(lesson.id, lang);
+      const rel = (r, l) => (l ? `\n<link rel="${r}" href="${SITE}${lang.dir}${l.id}/">` : "");
+      writeLangPage(lesson.id, lang, localizePage(renderLessonPage({
+        ...pageMeta[lang.code], htmlLang: lang.htmlLang, url: lv.url, htmlAttrs: lv.htmlAttrs,
+        headLinks: rel("prev", prevLesson) + rel("next", nextLesson) + lv.hreflang,
+        ogLocale: lang.ogLocale, ogLocaleAlt: PAGE_LANGS.find(o => o !== lang).ogLocale, inLanguage: `["${lang.htmlLang}", "ja"]`,
+        altLangLink: lv.altLink,
+      }), lang, localizedPageIds));
     }
   }
 
@@ -2517,6 +2536,7 @@ ${APP_PREFS_JS}
 .breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 1rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
 .breadcrumb .sep { margin: 0 .4em; }
+.breadcrumb .alt-lang { float: right; font-size: .8rem; }
 .overview-intro { font-size: 1rem; line-height: 1.8; color: var(--text); margin: 1rem 0 2rem; padding: 1rem 1.2rem; background: #fafaf2; border-left: 3px solid var(--word-border); border-radius: 0 var(--radius) var(--radius) 0; }
 .overview-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0 2.5rem; }
 .overview-card { display: block; padding: 1rem 1.2rem; background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); text-decoration: none; color: inherit; transition: all var(--transition); }
@@ -2548,6 +2568,11 @@ html.theme-dark .overview-card { background: #1f1f2e; }
 html.theme-dark .overview-title { color: #f0f0f5; }
 html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
 `;
+  // A lesson's i-th grammar point, one label per language when they differ.
+  const pointLabel = (l, i) => {
+    const zh = l.cleanPoints[i], en = (l.cleanPointsEn || [])[i] || zh;
+    return zh === en ? zh : `<span class="lang-zh">${zh}</span><span class="lang-en">${en}</span>`;
+  };
   const lessonsByLevel = { N5: [], N4: [], N3: [], N2: [] };
   for (const lesson of lessonPages) {
     if (lessonsByLevel[lesson.level]) lessonsByLevel[lesson.level].push(lesson);
@@ -2557,12 +2582,18 @@ html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
     const lessons = lessonsByLevel[level].filter(l => /^lesson\d+/.test(l.id));
     if (lessons.length === 0) continue;
     const totalPoints = lessons.reduce((sum, l) => sum + (l.cleanPoints || []).length, 0);
-    const levelDir = path.join(__dirname, "dist", level);
-    fs.mkdirSync(levelDir, { recursive: true });
-    const levelUrl = `${SITE}${level}/`;
-
-    const ovTitle = `JLPT ${level} 语法清单 | ${lessons.length} 课 ${totalPoints}+ 语法点速查 - 日语 ${level} 语法总结`;
-    const ovDesc = `日语 JLPT ${level} 全部语法点速查清单，系统覆盖 ${lessons.length} 课、${totalPoints}+ 语法点的接续规则、含义用法、例句与易错辨析。免费 JLPT ${level} 备考笔记，适合零基础系统学习与考前冲刺复习，每课均含练习题与答案。`;
+    const ovMeta = {
+      en: {
+        title: `JLPT ${level} Grammar — ${lessons.length} Free Lessons, ${totalPoints}+ Grammar Points with Examples`,
+        desc: `Every JLPT ${level} grammar point in ${lessons.length} free lessons: how each pattern conjugates, what it means, example sentences with audio, side-by-side comparisons of confusable grammar, and practice questions with answers.`,
+        name: `JLPT ${level} Grammar`, home: "Japanese Grammar Notes", keywords: `JLPT ${level} grammar, ${level} grammar list, JLPT ${level} grammar points, ${level} Japanese grammar lessons`,
+      },
+      zh: {
+        title: `JLPT ${level} 语法清单 | ${lessons.length} 课 ${totalPoints}+ 语法点速查 - 日语 ${level} 语法总结`,
+        desc: `日语 JLPT ${level} 全部语法点速查清单，系统覆盖 ${lessons.length} 课、${totalPoints}+ 语法点的接续规则、含义用法、例句与易错辨析。免费 JLPT ${level} 备考笔记，适合零基础系统学习与考前冲刺复习，每课均含练习题与答案。`,
+        name: `JLPT ${level} 语法清单`, home: "日语语法笔记", keywords: LEVEL_KEYWORDS[level],
+      },
+    };
     const ovOgImage = `${SITE}${level}/og-image.png`;
 
     // Lesson cards: each shows day, title, grammar points, link
@@ -2571,7 +2602,7 @@ html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
       const dayLabel = lessonMatch ? `Lesson ${lessonMatch[1]}` : l.id;
       const points = (l.cleanPoints || []).slice(0, 4);
       const pointsHtml = points.length > 0
-        ? `<div class="overview-points">${points.map(p => `<span class="grammar-pill">${p}</span>`).join("")}</div>`
+        ? `<div class="overview-points">${points.map((p, i) => `<span class="grammar-pill">${pointLabel(l, i)}</span>`).join("")}</div>`
         : "";
       return `<a class="overview-card" href="${SITE}${l.id}/">
         <div class="overview-card-head">
@@ -2587,8 +2618,8 @@ html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
     for (const l of lessons) {
       const lessonMatch = l.id.match(/^lesson(\d+)/);
       const dayLabel = lessonMatch ? `Lesson ${lessonMatch[1]}` : l.id;
-      for (const point of (l.cleanPoints || [])) {
-        tableRows.push(`<tr><td><a href="${SITE}${l.id}/">${point}</a></td><td>${dayLabel}</td><td>${l.jaTitle}</td></tr>`);
+      for (let i = 0; i < (l.cleanPoints || []).length; i++) {
+        tableRows.push(`<tr><td><a href="${SITE}${l.id}/">${pointLabel(l, i)}</a></td><td>${dayLabel}</td><td>${l.jaTitle}</td></tr>`);
       }
     }
     const tableHtml = tableRows.length > 0
@@ -2599,34 +2630,36 @@ html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
 </table>`
       : "";
 
-    const ovHtml = `<!DOCTYPE html>
-<html lang="zh-CN">
+    const renderOv = (lang, m, lv) => `<!DOCTYPE html>
+<html lang="${lang.htmlLang}"${lv.htmlAttrs}>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${ovTitle}</title>
-<meta name="description" content="${ovDesc.replace(/"/g, '&quot;')}">
-<meta name="keywords" content="${LEVEL_KEYWORDS[level]}">
-<link rel="canonical" href="${levelUrl}">
+<script>${LANG_REDIRECT_JS}</script>
+<title>${m.title}</title>
+<meta name="description" content="${m.desc.replace(/"/g, '&quot;')}">
+<meta name="keywords" content="${m.keywords}">
+<link rel="canonical" href="${lv.url}">${lv.hreflang}
 <meta property="og:type" content="website">
-<meta property="og:title" content="${ovTitle.replace(/"/g, '&quot;')}">
-<meta property="og:description" content="${ovDesc.replace(/"/g, '&quot;')}">
-<meta property="og:url" content="${levelUrl}">
+<meta property="og:title" content="${m.title.replace(/"/g, '&quot;')}">
+<meta property="og:description" content="${m.desc.replace(/"/g, '&quot;')}">
+<meta property="og:url" content="${lv.url}">
+<meta property="og:locale" content="${lang.ogLocale}">
 <meta property="og:image" content="${ovOgImage}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="${ovTitle.replace(/"/g, '&quot;')}">
-<meta name="twitter:description" content="${ovDesc.replace(/"/g, '&quot;')}">
+<meta name="twitter:title" content="${m.title.replace(/"/g, '&quot;')}">
+<meta name="twitter:description" content="${m.desc.replace(/"/g, '&quot;')}">
 <meta name="twitter:image" content="${ovOgImage}">
 <script type="application/ld+json">
 [{
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "JLPT ${level} 语法清单",
-  "description": "${ovDesc.replace(/"/g, '\\"')}",
-  "url": "${levelUrl}",
-  "inLanguage": ["zh-CN", "ja"],
+  "name": "${m.name}",
+  "description": "${m.desc.replace(/"/g, '\\"')}",
+  "url": "${lv.url}",
+  "inLanguage": ["${lang.htmlLang}", "ja"],
   "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N2", "url": "${SITE}" },
   "hasPart": [${lessons.map(l => `{"@type": "Article", "name": "${l.jaTitle.replace(/"/g, '\\"')}", "url": "${SITE}${l.id}/"}`).join(",")}]
 },
@@ -2634,8 +2667,8 @@ html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "日语语法笔记", "item": "${SITE}" },
-    { "@type": "ListItem", "position": 2, "name": "JLPT ${level}", "item": "${levelUrl}" }
+    { "@type": "ListItem", "position": 1, "name": "${m.home}", "item": "${SITE}" },
+    { "@type": "ListItem", "position": 2, "name": "JLPT ${level}", "item": "${lv.url}" }
   ]
 }]
 </script>
@@ -2655,9 +2688,9 @@ ${OVERVIEW_CSS}
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
-    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><span>JLPT ${level}</span>
+    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><span>JLPT ${level}</span>${lv.altLink}
   </nav>
-  <h1><span class="lang-zh">JLPT ${level} 语法清单 - ${lessons.length} 课 ${totalPoints}+ 语法点速查</span><span class="lang-en">JLPT ${level} Grammar List — ${lessons.length} lessons, ${totalPoints}+ points</span></h1>
+  <h1><span class="lang-zh">JLPT ${level} 语法清单 - ${lessons.length} 课 ${totalPoints}+ 语法点速查</span><span class="lang-en">JLPT ${level} Grammar — ${lessons.length} Lessons, ${totalPoints}+ Grammar Points</span></h1>
   <p class="overview-intro"><span class="lang-zh">${LEVEL_INTRO[level]}</span><span class="lang-en">${LEVEL_INTRO_EN[level]}</span></p>
   <div class="level-stats">
     <div class="level-stat"><strong>${lessons.length}</strong><span><span class="lang-zh">课</span><span class="lang-en">lessons</span></span></div>
@@ -2673,7 +2706,9 @@ ${APP_PREFS_JS}
 </script>
 </body>
 </html>`;
-    fs.writeFileSync(path.join(levelDir, "index.html"), ovHtml, "utf-8");
+    for (const lang of PAGE_LANGS) {
+      writeLangPage(level, lang, localizePage(renderOv(lang, ovMeta[lang.code], langVariant(level, lang)), lang, localizedPageIds));
+    }
     levelPageIds.push(level);
   }
   console.log(`  Generated ${levelPageIds.length} level overview pages: ${levelPageIds.join(", ")}`);
@@ -2683,9 +2718,6 @@ ${APP_PREFS_JS}
   // A-vs-B comparison pages. Card copy comes from the seo-titles.js entry.
   const guidePages = lessonPages.filter(l => l.level === "guides");
   if (guidePages.length > 0) {
-    const guidesUrl = `${SITE}guides/`;
-    const guidesDir = path.join(__dirname, "dist", "guides");
-    fs.mkdirSync(guidesDir, { recursive: true });
     const esc = (t) => (t || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
     const card = (l) => {
       const seo = SEO_TITLES[l.id] || {};
@@ -2697,20 +2729,32 @@ ${APP_PREFS_JS}
     };
     const examGuides = guidePages.filter(l => /^jlpt-/.test(l.id));
     const compareGuides = guidePages.filter(l => !/^jlpt-/.test(l.id));
-    const guidesTitle = "Japanese Grammar Comparisons & JLPT Exam Guide | 日语易混语法对比";
-    const guidesDesc = `Side-by-side guides to the Japanese grammar pairs learners mix up most (は vs が, に vs で, から vs ので, ように vs ために …) plus a JLPT December exam-day guide. ${compareGuides.length} comparison pages, free.`;
-    const guidesHtml = `<!DOCTYPE html>
-<html lang="zh-CN">
+    const guidesMeta = {
+      en: {
+        title: "Confusing Japanese Grammar Pairs Explained (は vs が, に vs で …) & JLPT Exam Guide",
+        desc: `Side-by-side guides to the Japanese grammar pairs learners mix up most (は vs が, に vs で, から vs ので, ように vs ために …) plus a JLPT December exam-day guide. ${compareGuides.length} comparison pages, free.`,
+        name: "Guides", home: "Japanese Grammar Notes",
+      },
+      zh: {
+        title: "日语易混语法对比（は和が、に和で的区别…）& JLPT 考试指南",
+        desc: `把最容易混的日语语法放在同一页对比：は和が、に和で、から和ので、ように和ために……每页有判断口诀和自测题，另附 12 月 JLPT 考前指南。共 ${compareGuides.length} 篇对比，免费。`,
+        name: "专题", home: "日语语法笔记",
+      },
+    };
+    const renderGuides = (lang, m, lv) => `<!DOCTYPE html>
+<html lang="${lang.htmlLang}"${lv.htmlAttrs}>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${guidesTitle}</title>
-<meta name="description" content="${esc(guidesDesc)}">
-<link rel="canonical" href="${guidesUrl}">
+<script>${LANG_REDIRECT_JS}</script>
+<title>${esc(m.title)}</title>
+<meta name="description" content="${esc(m.desc)}">
+<link rel="canonical" href="${lv.url}">${lv.hreflang}
 <meta property="og:type" content="website">
-<meta property="og:title" content="${esc(guidesTitle)}">
-<meta property="og:description" content="${esc(guidesDesc)}">
-<meta property="og:url" content="${guidesUrl}">
+<meta property="og:title" content="${esc(m.title)}">
+<meta property="og:description" content="${esc(m.desc)}">
+<meta property="og:url" content="${lv.url}">
+<meta property="og:locale" content="${lang.ogLocale}">
 <meta property="og:image" content="${SITE}guides/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -2719,10 +2763,10 @@ ${APP_PREFS_JS}
 [{
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "${guidesTitle.replace(/"/g, '\\"')}",
-  "description": "${guidesDesc.replace(/"/g, '\\"')}",
-  "url": "${guidesUrl}",
-  "inLanguage": ["zh-CN", "en", "ja"],
+  "name": "${m.title.replace(/"/g, '\\"')}",
+  "description": "${m.desc.replace(/"/g, '\\"')}",
+  "url": "${lv.url}",
+  "inLanguage": ["${lang.htmlLang}", "ja"],
   "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N2", "url": "${SITE}" },
   "hasPart": [${guidePages.map(l => `{"@type": "Article", "name": "${l.jaTitle.replace(/"/g, '\\"')}", "url": "${SITE}${l.id}/"}`).join(",")}]
 },
@@ -2730,8 +2774,8 @@ ${APP_PREFS_JS}
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "日语语法笔记", "item": "${SITE}" },
-    { "@type": "ListItem", "position": 2, "name": "专题 Guides", "item": "${guidesUrl}" }
+    { "@type": "ListItem", "position": 1, "name": "${m.home}", "item": "${SITE}" },
+    { "@type": "ListItem", "position": 2, "name": "${m.name}", "item": "${lv.url}" }
   ]
 }]
 </script>
@@ -2751,7 +2795,7 @@ ${OVERVIEW_CSS}
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
-    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><span><span class="lang-zh">专题</span><span class="lang-en">Guides</span></span>
+    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><span><span class="lang-zh">专题</span><span class="lang-en">Guides</span></span>${lv.altLink}
   </nav>
   <h1><span class="lang-zh">专题：易混语法对比 &amp; JLPT 考试指南</span><span class="lang-en">Guides: Confusable Grammar Pairs &amp; the JLPT Exam</span></h1>
   <p class="overview-intro"><span class="lang-zh">课程是按级别一课一课讲的；这里换个角度——把最容易混的几组语法放在同一页里对比，配判断口诀和自测题，再加一份 12 月 JLPT 考前指南。</span><span class="lang-en">The lessons go level by level; these pages cut across them. Each puts one set of easily confused patterns side by side with a rule of thumb and a self-test, plus a guide to the December JLPT.</span></p>
@@ -2765,7 +2809,9 @@ ${APP_PREFS_JS}
 </script>
 </body>
 </html>`;
-    fs.writeFileSync(path.join(guidesDir, "index.html"), guidesHtml, "utf-8");
+    for (const lang of PAGE_LANGS) {
+      writeLangPage("guides", lang, localizePage(renderGuides(lang, guidesMeta[lang.code], langVariant("guides", lang)), lang, localizedPageIds));
+    }
     levelPageIds.push("guides");
     console.log(`  Generated /guides/ hub (${guidePages.length} pages)`);
   }
@@ -2778,7 +2824,7 @@ ${APP_PREFS_JS}
     // Process :::zh / :::en bilingual blocks (same pattern as lesson md).
     const aboutMdBilingual = aboutMd.replace(
       /^:::(zh|en)\s*\n([\s\S]*?)^:::\s*$/gm,
-      (_, lang, content) => `<!--lang:${lang}:start-->\n${content.trim()}\n<!--lang:${lang}:end-->`
+      (_, lang, content) => `<!--lang:${lang}:start-->\n${content.trim()}\n\n<!--lang:${lang}:end-->`
     );
     let aboutHtml = await marked.parse(aboutMdBilingual);
     aboutHtml = aboutHtml.replace(/<!--lang:(zh|en):start-->/g, (_, lang) =>
@@ -2791,42 +2837,53 @@ ${APP_PREFS_JS}
       (_, open, zh, en, close) =>
         `${open}<span class="lang-zh">${zh.trim()}</span><span class="lang-en">${en.trim()}</span>${close}`
     );
-    const aboutUrl = `${SITE}about/`;
-    const aboutDir = path.join(__dirname, "dist/about");
-    fs.mkdirSync(aboutDir, { recursive: true });
-    const aboutTitle = "关于本站 - 日语语法笔记 | 作者、内容来源与开源协议";
-    const aboutDesc = "了解 jpnotes.dev 日语语法笔记是谁做的、为什么做、参考了哪些资料、如何反馈错误与参与贡献。这是一份免费、开源、采用 CC BY 4.0 许可的 JLPT N5-N2 语法学习笔记，含接续规则、例句、辨析与练习。";
-    const aboutKeywords = "日语语法笔记关于, 作者, jpnotes.dev, 日语学习, JLPT 自学, 中文母语者";
+    const aboutMeta = {
+      en: {
+        title: "About Japanese Grammar Notes — Who Makes It, Sources & License",
+        desc: "Who makes jpnotes.dev, why, which references it draws on, and how to report a mistake or contribute. Free, open-source JLPT N5–N2 grammar notes under CC BY 4.0, with conjugation rules, examples, comparisons and practice.",
+        keywords: "about jpnotes.dev, Japanese grammar notes, JLPT self-study, open source",
+        name: "About Japanese Grammar Notes", site: "Japanese Grammar Notes", crumb: "About",
+      },
+      zh: {
+        title: "关于本站 - 日语语法笔记 | 作者、内容来源与开源协议",
+        desc: "了解 jpnotes.dev 日语语法笔记是谁做的、为什么做、参考了哪些资料、如何反馈错误与参与贡献。这是一份免费、开源、采用 CC BY 4.0 许可的 JLPT N5-N2 语法学习笔记，含接续规则、例句、辨析与练习。",
+        keywords: "日语语法笔记关于, 作者, jpnotes.dev, 日语学习, JLPT 自学, 中文母语者",
+        name: "关于日语语法笔记", site: "日语语法笔记", crumb: "关于本站",
+      },
+    };
     const aboutOgImage = `${SITE}about/og-image.png`;
 
-    const aboutPageHtml = `<!DOCTYPE html>
-<html lang="zh-CN">
+    const renderAbout = (lang, m, lv) => `<!DOCTYPE html>
+<html lang="${lang.htmlLang}"${lv.htmlAttrs}>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${aboutTitle}</title>
-<meta name="description" content="${aboutDesc.replace(/"/g, '&quot;')}">
-<meta name="keywords" content="${aboutKeywords}">
-<link rel="canonical" href="${aboutUrl}">
+<script>${LANG_REDIRECT_JS}</script>
+<title>${m.title}</title>
+<meta name="description" content="${m.desc.replace(/"/g, '&quot;')}">
+<meta name="keywords" content="${m.keywords}">
+<link rel="canonical" href="${lv.url}">${lv.hreflang}
 <meta property="og:type" content="website">
-<meta property="og:title" content="${aboutTitle}">
-<meta property="og:description" content="${aboutDesc.replace(/"/g, '&quot;')}">
-<meta property="og:url" content="${aboutUrl}">
+<meta property="og:title" content="${m.title}">
+<meta property="og:description" content="${m.desc.replace(/"/g, '&quot;')}">
+<meta property="og:url" content="${lv.url}">
+<meta property="og:locale" content="${lang.ogLocale}">
 <meta property="og:image" content="${aboutOgImage}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="${aboutTitle}">
-<meta name="twitter:description" content="${aboutDesc.replace(/"/g, '&quot;')}">
+<meta name="twitter:title" content="${m.title}">
+<meta name="twitter:description" content="${m.desc.replace(/"/g, '&quot;')}">
 <meta name="twitter:image" content="${aboutOgImage}">
 <script type="application/ld+json">
 [{
   "@context": "https://schema.org",
   "@type": "AboutPage",
-  "name": "关于日语语法笔记",
-  "description": "${aboutDesc.replace(/"/g, '\\"')}",
-  "url": "${aboutUrl}",
-  "isPartOf": { "@type": "WebSite", "name": "日语语法笔记", "url": "${SITE}" },
+  "name": "${m.name}",
+  "description": "${m.desc.replace(/"/g, '\\"')}",
+  "url": "${lv.url}",
+  "inLanguage": "${lang.htmlLang}",
+  "isPartOf": { "@type": "WebSite", "name": "${m.site}", "url": "${SITE}" },
   "mainEntity": {
     "@type": "Person",
     "name": "Ralphbupt",
@@ -2839,8 +2896,8 @@ ${APP_PREFS_JS}
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "日语语法笔记", "item": "${SITE}" },
-    { "@type": "ListItem", "position": 2, "name": "关于本站", "item": "${aboutUrl}" }
+    { "@type": "ListItem", "position": 1, "name": "${m.site}", "item": "${SITE}" },
+    { "@type": "ListItem", "position": 2, "name": "${m.crumb}", "item": "${lv.url}" }
   ]
 }]
 </script>
@@ -2858,6 +2915,7 @@ ${CSS}
 .breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 1rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
 .breadcrumb .sep { margin: 0 .4em; }
+.breadcrumb .alt-lang { float: right; font-size: .8rem; }
 .about-content h1 { font-size: var(--text-2xl); margin: 0 0 1.5rem; border-bottom: 2px solid var(--accent); padding-bottom: .6rem; }
 .about-content h2 { font-size: var(--text-xl); margin: 2.2rem 0 .9rem; color: var(--text-strong); }
 .about-content p, .about-content li { line-height: 1.85; }
@@ -2884,7 +2942,7 @@ html.theme-dark .about-content blockquote { background: rgba(233,69,96,.08); col
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
-    <a href="${SITE}">日语语法笔记</a><span class="sep">›</span><span><span class="lang-zh">关于本站</span><span class="lang-en">About</span></span>
+    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><span><span class="lang-zh">关于本站</span><span class="lang-en">About</span></span>${lv.altLink}
   </nav>
   <article class="about-content">${aboutHtml}</article>
 </main>
@@ -2893,7 +2951,9 @@ ${APP_PREFS_JS}
 </script>
 </body>
 </html>`;
-    fs.writeFileSync(path.join(aboutDir, "index.html"), aboutPageHtml, "utf-8");
+    for (const lang of PAGE_LANGS) {
+      writeLangPage("about", lang, localizePage(renderAbout(lang, aboutMeta[lang.code], langVariant("about", lang)), lang, localizedPageIds));
+    }
     aboutPageGenerated = true;
     console.log("  Generated dist/about/index.html");
   }
@@ -2952,15 +3012,23 @@ ${APP_PREFS_JS}
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>`];
-  // About page (E-E-A-T page, lower priority since not browsed often)
-  if (aboutPageGenerated) {
-    sitemapUrls.push(`  <url>
-    <loc>${SITE}about/</loc>
-    <lastmod>${gitLastModTime("pages/about.md") || today}</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+  // A page published once per language (PAGE_LANGS): one <url> per copy,
+  // each listing all of them (hreflang).
+  const pushLangUrls = (id, lastmod, changefreq, priority) => {
+    const alternates = PAGE_LANGS.map(lang => `
+    <xhtml:link rel="alternate" hreflang="${lang.hreflang}" href="${SITE}${lang.dir}${id}/"/>`).join("") + `
+    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${id}/"/>`;
+    for (const lang of PAGE_LANGS) {
+      sitemapUrls.push(`  <url>
+    <loc>${SITE}${lang.dir}${id}/</loc>
+    <lastmod>${lastmod}</lastmod>
+    <changefreq>${changefreq}</changefreq>
+    <priority>${priority}</priority>${alternates}
   </url>`);
-  }
+    }
+  };
+  // About page (E-E-A-T page, lower priority since not browsed often)
+  if (aboutPageGenerated) pushLangUrls("about", gitLastModTime("pages/about.md") || today, "yearly", "0.5");
   // Anki landing page (downloadable flashcards). Decks are derived from lesson
   // content, so the page effectively changes when any lesson last changed.
   sitemapUrls.push(`  <url>
@@ -2969,30 +3037,13 @@ ${APP_PREFS_JS}
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>`);
-  // Level overview pages (high priority — major landing pages). Each aggregates
-  // its level's lessons, so its lastmod is the level directory's last commit.
+  // Level overview pages and the guides hub (major landing pages). Each
+  // aggregates its lessons, so its lastmod is the directory's last commit.
   for (const level of levelPageIds) {
-    sitemapUrls.push(`  <url>
-    <loc>${SITE}${level}/</loc>
-    <lastmod>${gitLastModTime(`grammar/${level}`) || today}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>`);
+    pushLangUrls(level, gitLastModTime(`grammar/${level}`) || today, "weekly", "0.9");
   }
   for (const lesson of lessonPages) {
-    const mod = gitLastModTime(lesson.filePath) || today;
-    // Every language version lists all of them (hreflang).
-    const alternates = PAGE_LANGS.map(lang => `
-    <xhtml:link rel="alternate" hreflang="${lang.hreflang}" href="${SITE}${lang.dir}${lesson.id}/"/>`).join("") + `
-    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${lesson.id}/"/>`;
-    for (const loc of PAGE_LANGS.map(lang => `${SITE}${lang.dir}${lesson.id}/`)) {
-      sitemapUrls.push(`  <url>
-    <loc>${loc}</loc>
-    <lastmod>${mod}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>${alternates}
-  </url>`);
-    }
+    pushLangUrls(lesson.id, gitLastModTime(lesson.filePath) || today, "monthly", "0.8");
   }
   fs.writeFileSync(path.join(__dirname, "dist/sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">

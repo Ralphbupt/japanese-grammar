@@ -28,7 +28,7 @@
 
 ## 1. 意向形（意志/邀请）||1. Volitional Form (Intent/Invitation)
 
-### 含义
+### 含义||Meaning
 
 :::zh
 "我要做……" / "一起做……吧"，表示说话人的意志或邀请。
@@ -58,9 +58,9 @@
 | 来る | **来よう**（こよう） | 来る→来よう |
 :::
 
-### 一类动词意向形 全表
+### 一类动词意向形 全表||Group 1 Verbs: Full Volitional Form Table
 
-| 辞书形 | 意向形 |
+| 辞书形 // Dictionary form | 意向形 // Volitional form |
 |--------|--------|
 | 書く | 書こう |
 | 泳ぐ | 泳ごう |
@@ -144,7 +144,7 @@ Volitional form + と思う = express a plan or intention
 
 ## 2. 〜つもりだ（打算/计划）||2. 〜つもりだ (Intention/Plan)
 
-### 接续
+### 接续||Conjugation
 
 :::zh
 - 动词辞书形 + つもりだ（打算做）
@@ -156,7 +156,7 @@ Volitional form + と思う = express a plan or intention
 - Verb ない-form + つもりだ (intend not to do)
 :::
 
-### 含义
+### 含义||Meaning
 
 :::zh
 "打算做……"，表示已经确定的意图/计划。比「〜ようと思う」更确定。
@@ -166,7 +166,7 @@ Volitional form + と思う = express a plan or intention
 "Plan to do…" — expresses a firm intention or plan. More definite than 「〜ようと思う」.
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. 来月引っ越す**つもりです**。（下个月打算搬家。）
@@ -210,7 +210,7 @@ Volitional form + と思う = express a plan or intention
 
 ## 3. 〜予定だ（预定/安排）||3. 〜予定だ (Schedule/Arrangement)
 
-### 接続
+### 接続||Conjugation
 
 :::zh
 - 动词辞书形 + 予定だ
@@ -222,7 +222,7 @@ Volitional form + と思う = express a plan or intention
 - Noun + の予定だ
 :::
 
-### 含义
+### 含义||Meaning
 
 :::zh
 "按计划/按安排……"，比つもり更客观、更正式。常用于工作/正式场合。
@@ -232,7 +232,7 @@ Volitional form + と思う = express a plan or intention
 "According to the plan/schedule…" — more objective and formal than つもり. Common in work and formal contexts.
 :::
 
-### 例句
+### 例句||Example Sentences
 
 :::zh
 1. 来週出張する**予定です**。（下周按计划要出差。）
@@ -502,7 +502,7 @@ In Japanese, たい is only used to express one's own desires. To describe what 
 
 ## 今日练习||Today's Practice
 
-### A. 变成可能形
+### A. 变成可能形||A. Change to the potential form
 
 1. 読む →
 2. 食べる →
@@ -514,20 +514,20 @@ In Japanese, たい is only used to express one's own desires. To describe what 
 <summary>答案</summary>
 
 1. 読める
-2. 食べられる（口语：食べれる）
+2. 食べられる（口语：食べれる） // 食べられる (colloquial: 食べれる)
 3. 泳げる
 4. できる
 5. 来られる（こられる）
 
 </details>
 
-### B. 变成受身形
+### B. 变成受身形||B. Change to the passive form
 
-1. 叱る（しかる、骂）→
+1. 叱る（しかる、骂）→ // 叱る (しかる, to scold) →
 2. 食べる →
-3. 踏む（踩）→
+3. 踏む（踩）→ // 踏む (to step on) →
 4. する →
-5. 盗む（偷）→
+5. 盗む（偷）→ // 盗む (to steal) →
 
 <details>
 <summary>答案</summary>
@@ -540,7 +540,7 @@ In Japanese, たい is only used to express one's own desires. To describe what 
 
 </details>
 
-### C. 变成意向形
+### C. 变成意向形||C. Change to the volitional form
 
 1. 行く →
 2. 食べる →
@@ -559,7 +559,7 @@ In Japanese, たい is only used to express one's own desires. To describe what 
 
 </details>
 
-### D. 判断：可能形还是受身形？
+### D. 判断：可能形还是受身形？||D. Potential or passive?
 
 1. この店で寿司が食べられる。（　）
 2. 友達にケーキを食べられた。（　）
@@ -585,12 +585,12 @@ In Japanese, たい is only used to express one's own desires. To describe what 
 
 </details>
 
-### E. 用つもり/予定/ようと思う填空
+### E. 用つもり/予定/ようと思う填空||E. Fill in with つもり / 予定 / ようと思う
 
-1. 夏休みに海に（　　　）。（刚开始想，还没确定）
-2. 来月から新しい仕事を始める（　　　）。（已确定的安排）
-3. 今年こそダイエットする（　　　）。（坚定的打算）
-4. 会議は午後2時に始まる（　　　）。（客观安排）
+1. 夏休みに海に（　　　）。（刚开始想，还没确定） // 夏休みに海に（　　　）。(just started thinking about it, not decided yet)
+2. 来月から新しい仕事を始める（　　　）。（已确定的安排） // 来月から新しい仕事を始める（　　　）。(a fixed arrangement)
+3. 今年こそダイエットする（　　　）。（坚定的打算） // 今年こそダイエットする（　　　）。(a firm intention)
+4. 会議は午後2時に始まる（　　　）。（客观安排） // 会議は午後2時に始まる（　　　）。(an objective schedule)
 
 <details>
 <summary>答案</summary>
@@ -602,24 +602,24 @@ In Japanese, たい is only used to express one's own desires. To describe what 
 
 </details>
 
-### F. 翻译成日语
+### F. 翻译成日语||F. Translate into Japanese
 
-1. 你能读汉字吗？
-2. 从这里能看到大海。（自然看到）
-3. 我被妈妈骂了。
-4. 钱包被偷了。
-5. 被雨淋了，感冒了。
-6. 一起去吃午饭吧。（敬体）
-7. 我想去日本留学。
-8. 要不要我帮你拿包？
-9. 暑假打算做什么？
-10. 我打算明年考N2。（已决定一段时间）
+1. 你能读汉字吗？ // Can you read kanji?
+2. 从这里能看到大海。（自然看到） // You can see the sea from here. (naturally visible)
+3. 我被妈妈骂了。 // I was scolded by my mom.
+4. 钱包被偷了。 // My wallet was stolen.
+5. 被雨淋了，感冒了。 // I got caught in the rain and caught a cold.
+6. 一起去吃午饭吧。（敬体） // Let's go have lunch together. (polite)
+7. 我想去日本留学。 // I want to study abroad in Japan.
+8. 要不要我帮你拿包？ // Shall I carry your bag for you?
+9. 暑假打算做什么？ // What are you planning to do over summer vacation?
+10. 我打算明年考N2。（已决定一段时间） // I'm planning to take the N2 next year. (decided a while ago)
 
 <details>
 <summary>答案</summary>
 
 1. 漢字が読めますか？
-2. ここから海が見える。（見える不是見られる）
+2. ここから海が見える。（見える不是見られる） // ここから海が見える。(見える, not 見られる)
 3. 母に叱られた。
 4. 財布を盗まれた。
 5. 雨に降られて、風邪をひいた。
@@ -635,9 +635,9 @@ In Japanese, たい is only used to express one's own desires. To describe what 
 
 ## 复习计划||Review Schedule
 
-- [ ] 当天
-- [ ] +1 天
-- [ ] +4 天
-- [ ] +7 天
-- [ ] +14 天
-- [ ] +30 天
+- [ ] 当天 // Same day
+- [ ] +1 天 // +1 day
+- [ ] +4 天 // +4 days
+- [ ] +7 天 // +7 days
+- [ ] +14 天 // +14 days
+- [ ] +30 天 // +30 days
