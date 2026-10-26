@@ -8,7 +8,7 @@
 This is **one of the biggest challenges** in N5-N4. All four conditional forms can translate as "if", but their usage is completely different. There is a lot of content here — plan for two days.
 :::
 
-## 本课单词表
+## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
 |------|------|------|

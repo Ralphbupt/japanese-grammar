@@ -8,7 +8,7 @@
 The closing lesson of N5 — covering commonly used N5 grammar not yet addressed, followed by a full review.
 :::
 
-## 本课单词表
+## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
 |------|------|------|

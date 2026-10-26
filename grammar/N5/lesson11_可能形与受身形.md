@@ -1,6 +1,6 @@
 # Lesson 11 – 可能形与受身形||Potential & Passive Forms
 
-## 本课单词表
+## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
 |------|------|------|

@@ -8,7 +8,7 @@
 Japanese adjectives split into **い-type** and **な-type**, with completely different past and negative conjugation rules. This lesson also covers comparison (より / 一番) — adjectives plus comparison let you finally say "A is more X than B."
 :::
 
-## 本课单词表
+## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
