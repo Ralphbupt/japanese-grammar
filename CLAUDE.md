@@ -1,10 +1,10 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to Claude Code (claude.ai/code) and Codex (`AGENTS.md` is a symlink to it) when working with code in this repository.
 
 ## Project Overview
 
-This is a Japanese language learning project. It contains structured grammar notes, Anki flashcard decks, and TTS audio for a learner targeting JLPT N2 proficiency within 8 weeks (2026-04-05 to 2026-06-05).
+This is a Japanese language learning project: structured JLPT N5–N2 grammar notes (written 2026-04-05 → 06-05 while the author learned them), published as jpnotes.dev with Anki decks and TTS audio. The author retakes N2 on 2026-12-06; the site's audience is now other learners (English-speaking first, Chinese second).
 
 ## Website
 
@@ -22,7 +22,7 @@ The grammar notes are published as a static site at **https://jpnotes.dev/** (cu
 - 🔊 TTS audio on example sentences (pre-generated Edge TTS, fallback: none)
 - Cross-links between related grammar points (25 per page, descriptive anchor text)
 - Guides (`grammar/guides/*.md` → `/<slug>/`, hub at `/guides/`, sidebar group 专题): A-vs-B comparison pages (は vs が, から vs ので …) and the JLPT exam guide (`jlpt-*` sorts first). Same markdown format as lessons; prev/next stay inside the group; not read by build-anki.js
-- One page per language for those pages, from `PAGE_LANGS` in build.js (`langVariant()` / `writeLangPage()`): `/<page>/` English only, `/zh/<page>/` Chinese only (`localizePage()` strips the other languages' blocks inside `<main>`; non-root copies get their own `<title>`/description and internal links rewritten to `/zh/`). `data-force-lang` pins the UI language and `data-alt-<code>` is where the language switch goes; `LANG_REDIRECT_JS` in `<head>` sends a reader to their language's copy (saved pref; a zh browser with no pref only on the root page), and clicking `.alt-lang` saves the choice. hreflang en / zh-Hans / x-default on every copy and in the sitemap; giscus thread and AI chat history are shared across copies. A new language = a `PAGE_LANGS` entry + `:::xx` blocks + lang-xx CSS, and the `isEn` pref becoming a language code. Every visible string needs both sides — `:::zh`/`:::en` blocks, `中文||English` headings, `中文 // English` table cells (td/th) and list items — or the English page shows Chinese
+- One page per language for those pages, from `PAGE_LANGS` in build.js (`langVariant()` / `writeLangPage()`): `/<page>/` English only, `/zh/<page>/` Chinese only (`localizePage()` strips the other languages' blocks inside `<main>`; non-root copies get their own `<title>`/description and internal links rewritten to `/zh/`). `data-force-lang` pins the UI language and `data-alt-<code>` is where the language switch goes; `LANG_REDIRECT_JS` in `<head>` sends a reader to their language's copy (saved pref; a zh browser with no pref only on the root page); the 中文/EN button saves the choice and navigates there. hreflang en / zh-Hans / x-default on every copy and in the sitemap; giscus thread and AI chat history are shared across copies. A new language = a `PAGE_LANGS` entry + `:::xx` blocks + lang-xx CSS, and the `isEn` pref becoming a language code. Every visible string needs both sides — `:::zh`/`:::en` blocks, `中文||English` headings, `中文 // English` table cells (td/th) and list items — or the English page shows Chinese
 - SEO titles: `seo-titles.js` maps page id → `{ en, zh, desc?, descZh?, level? }`, phrased like real searches (pattern + romaji + vs/meaning; zh: 区别/用法). Pages without an entry fall back to the template. `python3 tools/gsc-report.py` lists high-impression / low-click pages and their queries — the pages worth retitling
 - Per-lesson meta: last-updated date + reading time
 - SEO: unique meta descriptions, Article+LearningResource + BreadcrumbList schema in the page's own language (no FAQ schema: Google shows FAQ rich results only for government/health sites)
@@ -44,7 +44,7 @@ Key concepts:
 2. **Sidebar titles**: `JA_TITLES` maps file IDs (e.g. `lesson01`) to Japanese sidebar labels
 3. **SEO keywords**: `LESSON_KEYWORDS` maps file IDs to per-lesson keyword strings
 4. **Furigana**: kuroshiro adds ruby annotations to `data-ja` elements. Chinese text inside （…） is protected
-5. **Audio tagging**: Example `<li data-ja>` sentences get `data-audio="s{sha1(text)[:12]}"` — the ID is a hash of the spoken text, so editing/reordering examples never misaligns audio, and zh/en copies of a sentence share one mp3. Practice/answer sections (h2/h3 matching `PRACTICE_HEADING`) and non-model lines (blanks, ❌/△, →/=/+, a–d options, English, Chinese) get no audio (`audioText()`). The 🔊 attribute is only emitted when `audio/{id}.mp3` exists; every eligible sentence is still written to `dist/.audio-requests.json` for `build-audio.py`. (`audio/manifest.json` is legacy and no longer read by the build.)
+5. **Audio tagging**: Example `<li data-ja>` sentences get `data-audio="s{sha1(text)[:12]}"` — the ID is a hash of the spoken text, so editing/reordering examples never misaligns audio, and zh/en copies of a sentence share one mp3. Practice/answer sections (h2/h3 matching `PRACTICE_HEADING`) and non-model lines (blanks, ❌/△, →/=/+, a–d options, English, Chinese) get no audio (`audioText()`). The 🔊 attribute is only emitted when `audio/{id}.mp3` exists; every eligible sentence is still written to `dist/.audio-requests.json` for `build-audio.py`.
 6. **TTS JS**: Injects 🔊 buttons on elements with `data-audio`, plays `/audio/{id}.mp3` on click
 7. **Old URL redirects**: `DAY_TO_LESSON` map generates meta-refresh stubs at `/dayNN/` → `/lessonNN/`
 8. **CNAME**: Auto-generates `dist/CNAME` when `SITE` points to a non-github.io domain
@@ -78,7 +78,7 @@ A new guide: the file in `grammar/guides/`, a `JA_TITLES` entry, and a `seo-titl
 - Incremental: skips already-generated files
 - Output stored in `audio/` (committed to repo, copied to `dist/audio/` by CI)
 
-## CI Pipeline (`.github/workflows/deploy.yml`)
+## CI Pipeline (`.github/workflows/deploy.yml`, on every push to main)
 
 ```
 npm ci
@@ -86,6 +86,7 @@ npm run build          # build.js (site HTML) + build-anki.js (TSV + .cards.json
 cp -r audio dist/audio # pre-generated TTS audio (committed, not regenerated in CI)
 python build-anki.py   # .apkg from .cards.json
 upload dist/           # deploy to GitHub Pages
+node indexnow.mjs      # ping Bing/Yandex with URLs whose sitemap lastmod changed
 ```
 
 Audio regeneration is LOCAL only (requires `edge-tts`):
@@ -105,18 +106,25 @@ grammar/
   guides/ comparison pages + JLPT exam guide (not a level)
 pages/
   about.md               (bilingual About page source)
-  drafts/                 (work-in-progress lesson drafts)
 data/
   anki-cards.json         (curated Anki card data, WIP)
 audio/
-  manifest.json           (text → filename mapping for TTS)
   s{hash}.mp3             (pre-generated TTS, one file per distinct sentence)
+site/                     (ai-assistant.{js,css}, settings-modal.js, sw.js — copied/bundled into dist/)
+worker/                   (Cloudflare Worker behind ai.jpnotes.dev, the free AI relay)
+docs/                     (roadmap-2026h2.md — current plan; content-review notes)
 build.js                  (main static site generator)
 build-anki.js             (Anki TSV + landing page generator)
 build-anki.py             (Anki .apkg generator, reads .cards.json)
 build-audio.py            (Edge TTS audio generator)
 seo-titles.js             (hand-written <title>s per page, en + zh)
-tools/gsc-report.py       (Search Console report: what to retitle next)
+indexnow.mjs              (CI: IndexNow ping)
+tools/
+  gsc-report.py           (Search Console: what to retitle next, countries)
+  lesson-dropoff.py       (GA4 + Search Console per-lesson engagement)
+  lesson-audience.py      (lookup vs sequential readers per lesson)
+  audit-readings.js       (checks the 读音 column of word tables)
+  audit-furigana.js       (checks the furigana build.js emitted, reads dist/)
 ```
 
 ## Lesson File Format
@@ -135,13 +143,19 @@ Each grammar lesson file follows this template:
 
 Filename convention: `lessonNN_topic.md`
 
+Bilingual syntax — every visible Chinese string needs its English side, or the English page (`/lessonNN/`) shows Chinese:
+- Blocks: `:::zh` … `:::` followed by `:::en` … `:::` (paragraphs, lists, diagrams, practice blocks; each marker on its own line)
+- Headings: `## 中文||English` (any level)
+- Table cells (td/th) and list items: `中文全文 // English full text` — the whole cell/item on both sides; `//` must not sit inside markup; vocab meanings are `练习//practice`
+- The English side of a `## N. 〜pattern (gloss)` heading gets the pattern's romaji added by the build (`addRomaji()`); don't type romaji there by hand
+- Changing a Japanese example sentence changes its audio hash → run `python build-audio.py`
+
 ## Content Guidelines
 
 - All notes are bilingual: Chinese explanations + English translations
 - Grammar progression: N5 (00–17) → N4 (18–34) → N3 (35–58) → N2 (59–75)
 - Each grammar point needs: meaning, conjugation rules, 3+ example sentences, and comparison with easily confused grammar
 - Example sentences should have both Chinese and English translations in parens
-- New lessons: add `lessonNN_topic.md` in `grammar/N{level}/`, update `JA_TITLES` and `LESSON_KEYWORDS` in `build.js`
 - After adding/editing examples: `npm run build:site` then `python build-audio.py` to generate the missing mp3s, commit `audio/`. Stale mp3s (no longer requested) can be deleted.
 - Furigana misreadings are patched in `build.js` (`RUBY_FIXES`, `RUBY_MERGES`); Chinese-line detection uses `SC_CHARS` (simplified-only chars — never add a kanji used in Japanese) plus the 「」/gloss-segment rules
 
@@ -151,5 +165,5 @@ Filename convention: `lessonNN_topic.md`
 - Old domain: `ralphbupt.github.io/japanese-grammar/` (auto-redirects via stubs)
 - Google Search Console: domain-level property verified via DNS TXT
 - Bing Webmaster Tools: configured
-- Sitemap: auto-generated at `/sitemap.xml`
+- Sitemap: auto-generated at `/sitemap.xml` (every page and its `/zh/` copy, with hreflang). Resubmit via the Search Console API (service account `jpnotes-analytics@gen-lang-client-0593149740.iam.gserviceaccount.com`, scope `webmasters`): `PUT https://www.googleapis.com/webmasters/v3/sites/sc-domain%3Ajpnotes.dev/sitemaps/https%3A%2F%2Fjpnotes.dev%2Fsitemap.xml`
 - GA: `G-D1KNQTFN1R` — no gtag.js; `GTAG_DEFERRED` in build.js is a ~3 KB sender that posts hits to GA4 `/g/collect` (engagement-gated, bot-filtered, reuses old `_ga` cookie client id, `?ga_debug` → DebugView; sends only on jpnotes.dev — localhost only with `?ga_debug`; `?ga_off` opts a browser out for good, `?ga_on` undoes it). `window.gaEvent(name, params)` is the event API
