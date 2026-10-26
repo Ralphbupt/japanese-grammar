@@ -18,8 +18,9 @@ module.exports = {
     zh: "です・は和が的区别 — 日语判断句与基础助词 | JLPT N5 语法",
   },
   lesson02: {
-    en: "に vs で (ni vs de), へ, と, から, まで — Core Particles | JLPT N5",
+    en: "を, に vs で, へ, と (wo, ni, de) — Japanese Particles | JLPT N5",
     zh: "に和で的区别・へ・と・から・まで — 日语核心助词用法 | JLPT N5",
+    desc: "What を, に, で, へ, と, から and まで mean in Japanese and when to use each: を as the object marker, に vs で for place and time, with example sentences and audio.",
   },
   lesson03: {
     en: "Japanese Verb Groups & ます-form (masu form) Conjugation | JLPT N5",
@@ -34,8 +35,9 @@ module.exports = {
     zh: "ている・てください・てもいい 用法详解 | JLPT N5 日语语法",
   },
   lesson06: {
-    en: "ない-form (nai form) & なければならない (Must) | JLPT N5",
+    en: "“Must” & “Must Not” in Japanese — なければならない, ない-form | N5",
     zh: "ない形变形与なければならない（必须）用法 | JLPT N5 语法",
+    desc: "How to say must, have to, don't have to and must not in Japanese: the ない-form, なければならない, なくてもいい and てはいけない, with examples and a quick reference table.",
   },
   lesson07: {
     en: "た-form (ta form) & たことがある (Have Done) | JLPT N5 Grammar",
@@ -46,12 +48,14 @@ module.exports = {
     zh: "い形容词・な形容词活用与比较句 | JLPT N5 日语语法",
   },
   lesson09: {
-    en: "と vs ば (to vs ba) — Japanese Conditionals Explained | JLPT N5",
+    en: "と, ば, たら (to / ba form) — How to Say “If” in Japanese | JLPT N5",
     zh: "と和ば的区别 — 日语条件句详解（含例句）| JLPT N5",
+    desc: "How to say “if” in Japanese with と, ば and たら: how to make the ba-form, when と means “whenever”, and how the three conditionals differ, with examples.",
   },
   lesson10: {
-    en: "たら vs なら (tara vs nara) — Conditionals Meaning & Examples | JLPT",
+    en: "たら vs なら (tara vs nara) — Japanese Conditionals Explained | N5",
     zh: "たら和なら的区别 — と・ば・たら・なら 条件句总结 | JLPT",
+    desc: "The tara-form and なら in Japanese: how to conjugate たら, when なら means “if that's the case”, and a chart comparing と, ば, たら and なら, with common mistakes.",
   },
   lesson11: {
     en: "可能形 Potential & 受身形 Passive Form (られる) Conjugation | JLPT N5",
@@ -66,8 +70,9 @@ module.exports = {
     zh: "でしょう・だろう・かもしれない・そうだ 推测表达区别 | JLPT N5",
   },
   lesson14: {
-    en: "ようだ vs らしい vs みたい (you da / rashii / mitai) | JLPT",
+    en: "“Seems Like” in Japanese — ようだ vs らしい vs みたい (you da, rashii)",
     zh: "ようだ・らしい・みたい・っぽい 的区别 | JLPT 日语语法",
+    desc: "How to say “seems like”, “looks like” and “apparently” in Japanese: ようだ, みたいだ, らしい and っぽい compared side by side, with example sentences for each.",
   },
   lesson15: {
     en: "ことができる, ので vs から, のに, ために — N5 Grammar | JLPT",
@@ -102,8 +107,9 @@ module.exports = {
     zh: "ことにする和ことになる的区别・はずだ | JLPT N4 语法",
   },
   lesson23: {
-    en: "たばかり vs たところ (ta bakari / ta tokoro), てしまう | JLPT N4",
+    en: "“Just Did” in Japanese — たばかり vs たところ, てしまう | JLPT N4",
     zh: "ばかり和ところだ的区别・てしまう | JLPT N4 日语语法",
+    desc: "How to say “just did” in Japanese: たばかり vs たところ, ところだ for “about to” and “in the middle of”, and てしまう for completion or regret, with examples.",
   },
   lesson24: {
     en: "ておく vs てある (te oku / te aru), て以来 | JLPT N4 Grammar",
@@ -142,8 +148,9 @@ module.exports = {
     zh: "と思う和と思っている的区别・かどうか・のように | JLPT N4",
   },
   lesson33: {
-    en: "あいだ vs あいだに (aida ni), までに vs まで | JLPT N4 Grammar",
+    en: "あいだ vs あいだに (aida vs aida ni) Meaning, までに vs まで | JLPT N4",
     zh: "あいだ和あいだに・まで和までに的区别・場合は | JLPT N4",
+    desc: "あいだ vs あいだに (“while” / “during”) and までに vs まで (“by” vs “until”) in Japanese, plus おきに, 場合は, たらどう and てよかった, with example sentences.",
   },
   lesson34: {
     en: "JLPT N4 Grammar Review — All N4 Grammar Summary",
@@ -170,16 +177,18 @@ module.exports = {
     zh: "にもかかわらず・ながらも・くせに・としても 的区别 | JLPT N3",
   },
   lesson39: {
-    en: "にしても, ものの, とはいえ, どころか (dokoroka) | JLPT N3",
+    en: "“Even If” & “Even So” in Japanese — にしても, ものの, とはいえ | N3",
     zh: "にしても・ものの・とはいえ・どころか 的区别 | JLPT N3 语法",
+    desc: "How to say even if, even so and although in Japanese: にしても, ものの, とはいえ and どころか (“far from”), with nuance notes and JLPT N3 example sentences.",
   },
   lesson40: {
     en: "ほど vs くらい (hodo vs kurai), ば〜ほど, さえ〜ば | JLPT N3",
     zh: "ほど和くらい的区别・ば〜ほど・さえ〜ば | JLPT N3 语法",
   },
   lesson41: {
-    en: "だけ vs しか〜ない (dake vs shika), ばかりか, に限って | JLPT N3",
+    en: "“Only” in Japanese — だけ vs しか〜ない (dake vs shika) | JLPT N3",
     zh: "だけ和しか〜ない的区别・ばかりか・に限って | JLPT N3",
+    desc: "How to say “only” in Japanese: だけ vs しか〜ない, ばかりか (“not only… but also”), に限って and に限らず, with examples and the traps the JLPT N3 sets.",
   },
   lesson42: {
     en: "がちだ vs っぽい vs 気味 (gachi / ppoi / gimi) | JLPT N3",
@@ -214,20 +223,23 @@ module.exports = {
     zh: "まま・だらけ・っぱなし・ずに・ように見える | JLPT N3 语法",
   },
   lesson50: {
-    en: "代わりに, ついでに, に比べて, たびに (kawari ni) | JLPT N3",
+    en: "“Instead Of” in Japanese — 代わりに (kawari ni), ついでに | JLPT N3",
     zh: "代わりに・ついでに・に比べて・によると・たびに | JLPT N3",
+    desc: "How to say instead of, while you're at it, compared to and every time in Japanese: 代わりに, ついでに, に比べて, によると, たびに and て初めて, with examples.",
   },
   lesson51: {
     en: "というより, といっても, といえば, とおり | JLPT N3 Grammar",
     zh: "というより・といっても・というと/といえば・とおり | JLPT N3",
   },
   lesson52: {
-    en: "ふりをする, こそ, ことに, ごとに (furi wo suru) | JLPT N3",
+    en: "“Pretend” in Japanese — ふりをする (furi wo suru), こそ | JLPT N3",
     zh: "ふりをする・こそ・ことに・ごとに 用法 | JLPT N3 语法",
+    desc: "How to say “pretend” in Japanese with ふりをする, plus こそ for emphasis, ことに, ごとに (“every”) and かのように (“as if”), with JLPT N3 examples.",
   },
   lesson53: {
     en: "“Never” & “Rarely” in Japanese — 決して〜ない, めったに〜ない | JLPT N3",
     zh: "ないことはない・ずにはいられない・そうもない | JLPT N3",
+    desc: "How to say never, rarely and not particularly in Japanese: 決して〜ない, めったに〜ない and 別に〜ない, plus ずにはいられない (“can't help but”) and ないことはない.",
   },
   lesson54: {
     en: "たらいい vs ばいい vs といい, ばよかった, 〜込む | JLPT N3",

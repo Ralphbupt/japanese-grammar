@@ -1,4 +1,4 @@
-# Lesson 09 – 条件表达 と・ば||Conditionals: と・ば
+# Lesson 09 – 条件表达 と・ば||Conditionals: と・ば — How to Say “If” in Japanese
 
 :::zh
 这是N5-N4的**最大难点之一**。四种条件表达看起来都是"如果"，但用法完全不同。本课内容较多，安排两天学习。
