@@ -195,20 +195,15 @@ const APP_PREFS_JS = `(function(){
 // (saved preference, or a zh browser with none saved landing on the root
 // English page) goes to that language's copy before anything paints. Only the
 // root page follows the browser language, so a /zh/ link always shows
-// Chinese. Clicking a .alt-lang link saves that choice.
+// Chinese. The language button (settings-modal.js) saves the choice and goes
+// to the other copy.
 const LANG_REDIRECT_JS = `(function(){
   var html = document.documentElement, page = html.getAttribute('data-force-lang');
   var prefs; try { prefs = JSON.parse(localStorage.getItem('jp_grammar_prefs')) || {}; } catch(e) { prefs = {}; }
   var want = ('isEn' in prefs) ? (prefs.isEn ? 'en' : 'zh')
     : (page === 'en' && /^zh/i.test(navigator.language || '')) ? 'zh' : page;
   var alt = want !== page && html.getAttribute('data-alt-' + want);
-  if (alt) { location.replace(alt + location.hash); return; }
-  document.addEventListener('click', function(e) {
-    var a = e.target.closest && e.target.closest('a.alt-lang[hreflang]');
-    if (!a) return;
-    prefs.isEn = !/^zh/i.test(a.getAttribute('hreflang'));
-    try { localStorage.setItem('jp_grammar_prefs', JSON.stringify(prefs)); } catch(e) {}
-  });
+  if (alt) location.replace(alt + location.hash);
 })();`;
 
 const RUBY_PREF_JS = `(function(){
@@ -901,8 +896,8 @@ function stripLangBlocks(html, lang) {
 // pages are tied together with hreflang. Adding a language: an entry here,
 // :::xx blocks in the markdown, and its lang-xx CSS + preference handling.
 const PAGE_LANGS = [
-  { code: "en", dir: "", htmlLang: "en", hreflang: "en", ogLocale: "en_US", label: "English" },
-  { code: "zh", dir: "zh/", htmlLang: "zh-CN", hreflang: "zh-Hans", ogLocale: "zh_CN", label: "中文" },
+  { code: "en", dir: "", htmlLang: "en", hreflang: "en", ogLocale: "en_US" },
+  { code: "zh", dir: "zh/", htmlLang: "zh-CN", hreflang: "zh-Hans", ogLocale: "zh_CN" },
 ];
 
 // Turn a rendered multilingual page into its `lang` copy: drop the other
@@ -920,13 +915,12 @@ function localizePage(html, lang, ids) {
   if (!lang.dir) return html;
   const origin = SITE.replace(/^(https?:\/\/[^/]+).*$/, "$1").replace(/[.]/g, "\\.");
   const link = new RegExp(`(<a\\b[^>]*?\\bhref=")(?:${origin})?${SITE_PATH}([A-Za-z0-9_-]+)/(?=[#"])`, "g");
-  // .alt-lang links point at the other languages on purpose: leave them be.
-  return html.replace(link, (m, pre, id) => (ids.has(id) && !/\balt-lang\b/.test(pre) ? `${pre}${SITE_PATH}${lang.dir}${id}/` : m));
+  return html.replace(link, (m, pre, id) => (ids.has(id) ? `${pre}${SITE_PATH}${lang.dir}${id}/` : m));
 }
 
 // URL bits for page `id` in language `lang`: canonical url, the <html>
 // attributes (data-force-lang pins the UI language, data-alt-xx is where
-// switching to xx goes), hreflang links and the .alt-lang breadcrumb links.
+// switching to xx goes) and hreflang links.
 function langVariant(id, lang) {
   const others = PAGE_LANGS.filter(o => o !== lang);
   const at = (o) => `${SITE}${o.dir}${id}/`;
@@ -935,7 +929,6 @@ function langVariant(id, lang) {
     htmlAttrs: ` data-force-lang="${lang.code}"` + others.map(o => ` data-alt-${o.code}="${SITE_PATH}${o.dir}${id}/"`).join(""),
     hreflang: PAGE_LANGS.map(o => `\n<link rel="alternate" hreflang="${o.hreflang}" href="${at(o)}">`).join("")
       + `\n<link rel="alternate" hreflang="x-default" href="${at(PAGE_LANGS[0])}">`,
-    altLink: others.map(o => `<a class="alt-lang" href="${at(o)}" hreflang="${o.hreflang}" lang="${o.htmlLang}">${o.label}</a>`).join(""),
   };
 }
 
@@ -2460,7 +2453,6 @@ ${CSS}
 .breadcrumb a { color: var(--accent); text-decoration: none; }
 .breadcrumb a:hover { text-decoration: underline; }
 .breadcrumb .sep { margin: 0 0.4em; }
-.breadcrumb .alt-lang { float: right; font-size: 0.8rem; }
 .prev-next { display: flex; justify-content: space-between; align-items: flex-start; margin: 2.5rem 0 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); gap: 1rem; }
 .prev-next-top { margin: 0 0 1.75rem; padding: 0 0 1rem; border-top: none; border-bottom: 1px solid var(--border); }
 .pn-link { font-size: 0.9rem; color: var(--accent); text-decoration: none; max-width: 48%; }
@@ -2473,7 +2465,7 @@ ${CSS}
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
-    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><a href="${SITE}${lesson.level}/">${GROUP_NAMES[lesson.level] ? `<span class="lang-zh">${groupName(lesson.level, "zh")}</span><span class="lang-en">${groupName(lesson.level, "en")}</span>` : `JLPT ${lesson.level}`}</a><span class="sep">›</span><span class="breadcrumb-current" title="${lesson.jaTitle.replace(/"/g, '&quot;')}">${lesson.jaTitle}</span>${v.altLangLink}
+    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><a href="${SITE}${lesson.level}/">${GROUP_NAMES[lesson.level] ? `<span class="lang-zh">${groupName(lesson.level, "zh")}</span><span class="lang-en">${groupName(lesson.level, "en")}</span>` : `JLPT ${lesson.level}`}</a><span class="sep">›</span><span class="breadcrumb-current" title="${lesson.jaTitle.replace(/"/g, '&quot;')}">${lesson.jaTitle}</span>
   </nav>
   <nav class="prev-next prev-next-top" aria-label="lesson navigation top">
     ${prevHtml}
@@ -2571,7 +2563,6 @@ ${APP_PREFS_JS}
         ...pageMeta[lang.code], htmlLang: lang.htmlLang, url: lv.url, htmlAttrs: lv.htmlAttrs,
         headLinks: rel("prev", prevLesson) + rel("next", nextLesson) + lv.hreflang,
         ogLocale: lang.ogLocale, ogLocaleAlt: PAGE_LANGS.find(o => o !== lang).ogLocale, inLanguage: `["${lang.htmlLang}", "ja"]`,
-        altLangLink: lv.altLink,
       }), lang, localizedPageIds));
     }
   }
@@ -2601,7 +2592,6 @@ ${APP_PREFS_JS}
 .breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 1rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
 .breadcrumb .sep { margin: 0 .4em; }
-.breadcrumb .alt-lang { float: right; font-size: .8rem; }
 .overview-intro { font-size: 1rem; line-height: 1.8; color: var(--text); margin: 1rem 0 2rem; padding: 1rem 1.2rem; background: #fafaf2; border-left: 3px solid var(--word-border); border-radius: 0 var(--radius) var(--radius) 0; }
 .overview-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0 2.5rem; }
 .overview-card { display: block; padding: 1rem 1.2rem; background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); text-decoration: none; color: inherit; transition: all var(--transition); }
@@ -2753,7 +2743,7 @@ ${OVERVIEW_CSS}
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
-    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><span>JLPT ${level}</span>${lv.altLink}
+    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><span>JLPT ${level}</span>
   </nav>
   <h1><span class="lang-zh">JLPT ${level} 语法清单 - ${lessons.length} 课 ${totalPoints}+ 语法点速查</span><span class="lang-en">JLPT ${level} Grammar — ${lessons.length} Lessons, ${totalPoints}+ Grammar Points</span></h1>
   <p class="overview-intro"><span class="lang-zh">${LEVEL_INTRO[level]}</span><span class="lang-en">${LEVEL_INTRO_EN[level]}</span></p>
@@ -2860,7 +2850,7 @@ ${OVERVIEW_CSS}
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
-    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><span><span class="lang-zh">专题</span><span class="lang-en">Guides</span></span>${lv.altLink}
+    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><span><span class="lang-zh">专题</span><span class="lang-en">Guides</span></span>
   </nav>
   <h1><span class="lang-zh">专题：易混语法对比 &amp; JLPT 考试指南</span><span class="lang-en">Guides: Confusable Grammar Pairs &amp; the JLPT Exam</span></h1>
   <p class="overview-intro"><span class="lang-zh">课程是按级别一课一课讲的；这里换个角度——把最容易混的几组语法放在同一页里对比，配判断口诀和自测题，再加一份 12 月 JLPT 考前指南。</span><span class="lang-en">The lessons go level by level; these pages cut across them. Each puts one set of easily confused patterns side by side with a rule of thumb and a self-test, plus a guide to the December JLPT.</span></p>
@@ -2980,7 +2970,6 @@ ${CSS}
 .breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 1rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
 .breadcrumb .sep { margin: 0 .4em; }
-.breadcrumb .alt-lang { float: right; font-size: .8rem; }
 .about-content h1 { font-size: var(--text-2xl); margin: 0 0 1.5rem; border-bottom: 2px solid var(--accent); padding-bottom: .6rem; }
 .about-content h2 { font-size: var(--text-xl); margin: 2.2rem 0 .9rem; color: var(--text-strong); }
 .about-content p, .about-content li { line-height: 1.85; }
@@ -3007,7 +2996,7 @@ html.theme-dark .about-content blockquote { background: rgba(233,69,96,.08); col
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
-    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><span><span class="lang-zh">关于本站</span><span class="lang-en">About</span></span>${lv.altLink}
+    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><span><span class="lang-zh">关于本站</span><span class="lang-en">About</span></span>
   </nav>
   <article class="about-content">${aboutHtml}</article>
 </main>
