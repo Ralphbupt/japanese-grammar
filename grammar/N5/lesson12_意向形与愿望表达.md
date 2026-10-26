@@ -1,6 +1,6 @@
 # Lesson 12 – 意向形与愿望表达||Volitional Form & Expressing Desire
 
-## 本课单词表
+## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
@@ -500,7 +500,7 @@ In Japanese, たい is only used to express one's own desires. To describe what 
 
 ---
 
-## 今日练习
+## 今日练习||Today's Practice
 
 ### A. 变成可能形
 

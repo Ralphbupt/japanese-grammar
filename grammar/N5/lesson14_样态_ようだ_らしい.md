@@ -1,6 +1,6 @@
 # Lesson 14 – 样态表达 ようだ・らしい・みたいだ・っぽい||Appearance & Hearsay: ようだ・らしい・みたいだ・っぽい
 
-## 本课单词表
+## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
@@ -505,7 +505,7 @@ Colloquial expression meaning "kind of gives the feeling of…" or "tends to…"
 
 ---
 
-## 今日练习
+## 今日练习||Today's Practice
 
 ### A. 选择正确的表达
 

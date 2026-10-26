@@ -430,7 +430,7 @@ The following is the complete list of N5 core grammar. Confirm you have mastered
 
 ---
 
-## 今日练习
+## 今日练习||Today's Practice
 
 ### 一、ことができる：把可能形改写成ことができる
 

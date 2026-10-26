@@ -8,7 +8,7 @@
 Every Japanese learner starts with です, but **は vs が** is the question that haunts you for years. This lesson lays the foundation for sentence structure and the topic-vs-subject distinction — every later N5 pattern builds on it.
 :::
 
-## 本课单词表
+## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
 |------|------|------|

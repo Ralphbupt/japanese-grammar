@@ -1495,7 +1495,16 @@ async function main() {
       html = html.replace(
         /(<table>[\s\S]*?<th>单词<\/th>[\s\S]*?<\/table>)/g,
         (match) => match.replace("<table>", '<table class="word-table">')
+          .replace(/<th>单词<\/th>/, '<th><span class="lang-zh">单词</span><span class="lang-en">Word</span></th>')
+          .replace(/<th>读音<\/th>/, '<th><span class="lang-zh">读音</span><span class="lang-en">Reading</span></th>')
+          .replace(/<th>含义<\/th>/, '<th><span class="lang-zh">含义</span><span class="lang-en">Meaning</span></th>')
       );
+      // Answer toggles: "答案 / Answers" → one label per language; a bare
+      // "答案" gets the English one.
+      html = html.replace(/<summary>([^<\/]*?)\s*\/\s*([A-Za-z][^<]*)<\/summary>/g,
+        (_, zh, en) => `<summary><span class="lang-zh">${zh.trim()}</span><span class="lang-en">${en.trim()}</span></summary>`);
+      html = html.replace(/<summary>答案<\/summary>/g,
+        '<summary><span class="lang-zh">答案</span><span class="lang-en">Answers</span></summary>');
 
       // a11y: marked emits <th> without scope, which Lighthouse flags on
       // large tables. All lesson tables are column-major (header row),
@@ -2386,7 +2395,7 @@ ${sidebarMarkupHtml}
     ${nextHtml}
   </nav>
   <section class="comments-section" aria-label="评论">
-    <h2 class="comments-heading">评论 · Comments</h2>
+    <h2 class="comments-heading"><span class="lang-zh">评论</span><span class="lang-en">Comments</span></h2>
     ${GISCUS_SCRIPT}
   </section>
 </main>

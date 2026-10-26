@@ -8,7 +8,7 @@
 This lesson covers a lot of ground and is spread over two days. All of these grammar points express "uncertain judgments" and are key exam topics for N5–N4.
 :::
 
-## 本课单词表
+## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
 |------|------|------|

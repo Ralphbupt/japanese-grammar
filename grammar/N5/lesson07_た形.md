@@ -1,6 +1,6 @@
 # Lesson 07 – た形与经验・列举表达||The た-form, Experience & Listing
 
-## 本课单词表
+## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
 |------|------|------|

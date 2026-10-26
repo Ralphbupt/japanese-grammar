@@ -1,6 +1,6 @@
 # Lesson 06 – ない形与义务表达||The ない-form & Expressing Obligation
 
-## 本课单词表
+## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
 |------|------|------|

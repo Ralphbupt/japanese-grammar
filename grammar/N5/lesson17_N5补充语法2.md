@@ -8,7 +8,7 @@
 Supplementary N5 grammar not yet covered: existence expressions, purpose of movement, verb nominalization, approximation, partial listing, and limitation.
 :::
 
-## 本课单词表
+## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
