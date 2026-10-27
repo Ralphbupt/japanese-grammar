@@ -12,22 +12,22 @@ This group covers substitution, incidental actions, comparison, information sour
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 代わり | かわり | 代替；替代品（名）//(n) substitute; replacement; in place of — no kawari ni = instead of; okawari = a second helping |
-| 天気予報 | てんきよほう | 天气预报（名）//(n) weather forecast — tenki yohou ni yoru to = according to the forecast, a classic hearsay frame |
-| 出張 | しゅっちょう | 出差（名、可作动词）//(n, suru-verb) business trip — shucchou ni iku = go on a business trip; the destination takes ni |
-| 郵便局 | ゆうびんきょく | 邮局（名）//(n) post office — Japan Post also offers banking and parcel services |
-| 物価 | ぶっか | 物价（名）//(n) prices (of goods); cost of living — general price level; a single item's price is nedan |
-| 田舎 | いなか | 乡下；老家（名）//(n) the countryside; rural area; one's home town — also "back home" where one grew up |
-| 新聞 | しんぶん | 报纸（名）——不是“新闻”//(n) newspaper — the paper itself; news is nyuusu |
-| 季節 | きせつ | 季节（名）//(n) season — kisetsu no kawarime = the turn of the seasons; seasonal food and greetings matter in Japan |
-| 外国 | がいこく | 外国（名）//(n) foreign country; abroad — gaikokujin = foreigner |
-| 親 | おや | 父母；双亲（名）//(n) parent; parents — one or both of your own; someone else's parents politely: goryoushin |
-| 有り難み | ありがたみ | 可贵之处；珍贵（名）//(n) value; worth (one comes to appreciate) — usually realized after losing something: the value of health |
-| 病気 | びょうき | 病；疾病（名）//(n) illness; sickness; disease — byouki ni naru = get sick |
-| 苦労 | くろう | 辛苦；艰辛（名、可作动词）//(n, suru-verb) hardship; trouble; toil — gokurousama = thanks for your hard work |
-| 社長 | しゃちょう | （公司）总经理；社长（名）——指公司最高负责人//(n) company president; head of a company — the top executive; also used alone as a title to address them |
-| 報告 | ほうこく | 报告；汇报（名、可作动词）//(n, suru-verb) report; reporting — telling a boss or group the outcome; a key word in Japanese office culture |
-| 手術 | しゅじゅつ | 手术（名、可作动词）//(n, suru-verb) surgery; operation — shujutsu o ukeru = have surgery |
+| 代わり | かわり | 代替（名）——「〜の代わりに」代替……；「お代わり」再来一份//(n) substitute; in place of — 「〜の代わりに」 instead of ~; 「お代わり」 a second helping |
+| 天気予報 | てんきよほう | 天气预报（名）——「天気予報によると」据天气预报；「天気予報が外れる」天气预报不准//(n) weather forecast — 「天気予報によると」 according to the forecast; 「天気予報が外れる」 the forecast is wrong |
+| 出張 | しゅっちょう | 出差（名、可作动词）——「大阪に出張する」去大阪出差；「出張中」出差中//(n, suru-verb) business trip — 「大阪に出張する」 to go to Osaka on business; 「出張中」 away on business |
+| 郵便局 | ゆうびんきょく | 邮局（名）——「郵便局で荷物を送る」在邮局寄包裹//(n) post office — 「郵便局で荷物を送る」 to send a package from the post office |
+| 物価 | ぶっか | 物价（名）——整体物价水平，单件价格用「値段」；「物価が高い」物价高；「物価が上がる」物价上涨//(n) prices; cost of living — the general price level; one item's price is 「値段」; 「物価が高い」 the cost of living is high; 「物価が上がる」 prices rise |
+| 田舎 | いなか | 乡下；老家（名）——「田舎に帰る」回老家；「田舎暮らし」乡村生活//(n) the countryside; one's home town — 「田舎に帰る」 to go back home; 「田舎暮らし」 country life |
+| 新聞 | しんぶん | 报纸（名）——不是“新闻”，新闻是「ニュース」；「新聞を読む」看报；「新聞に載る」上报纸//(n) newspaper — news itself is 「ニュース」; 「新聞を読む」 to read the paper; 「新聞に載る」 to appear in the paper |
+| 季節 | きせつ | 季节（名）——「季節の変わり目」换季时节；「季節によって」根据季节//(n) season — 「季節の変わり目」 the change of seasons; 「季節によって」 depending on the season |
+| 外国 | がいこく | 外国（名）——「外国人」外国人；「外国に行く」出国//(n) foreign country; abroad — 「外国人」 a foreigner; 「外国に行く」 to go abroad |
+| 親 | おや | 父母；双亲（名）——称别人父母用「ご両親」；「親になる」为人父母；「親孝行」孝顺父母//(n) parent; parents — someone else's are 「ご両親」; 「親になる」 to become a parent; 「親孝行」 being good to one's parents |
+| 有り難み | ありがたみ | 可贵之处（名）——多在失去后才体会到；「健康の有り難み」健康的可贵；「有り難みが分かる」体会到其可贵//(n) value; worth (that one comes to appreciate) — usually realized after losing it; 「健康の有り難み」 the value of good health; 「有り難みが分かる」 to come to appreciate it |
+| 病気 | びょうき | 病；疾病（名）——「病気になる」生病；「病気が治る」病好了//(n) illness; sickness — 「病気になる」 to get sick; 「病気が治る」 to recover |
+| 苦労 | くろう | 辛苦；艰辛（名、可作动词）——「苦労をかける」让人受累操心；「ご苦労様」辛苦了（对下级、同辈）//(n, suru-verb) hardship; toil — 「苦労をかける」 to put someone through hardship; 「ご苦労様」 thanks for your hard work (to juniors) |
+| 社長 | しゃちょう | 总经理；社长（名）——公司最高负责人，也可直接作称呼；「社長になる」当上社长；「社長室」社长办公室//(n) company president — the top executive; also used alone to address them; 「社長になる」 to become president; 「社長室」 the president's office |
+| 報告 | ほうこく | 报告；汇报（名、可作动词）——「上司に報告する」向上司汇报；「報告書」报告书//(n, suru-verb) report — 「上司に報告する」 to report to one's boss; 「報告書」 a written report |
+| 手術 | しゅじゅつ | 手术（名、可作动词）——「手術を受ける」接受手术；「手術が成功する」手术成功//(n, suru-verb) surgery; operation — 「手術を受ける」 to have surgery; 「手術が成功する」 the operation succeeds |
 
 ---
 

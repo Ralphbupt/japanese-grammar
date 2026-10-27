@@ -12,22 +12,22 @@ This lesson covers advanced N2-level cause/reason expressions. 「あまり」 i
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 嬉しい | うれしい | 高兴；开心（形容词）//(i-adj) happy; glad; pleased — about something good that happens to you; tanoshii is enjoying an activity, shiawase lasting happiness |
-| 厳しい | きびしい | 严格的；严峻的（形容词）//(i-adj) strict; severe; harsh — strict people/rules, harsh conditions, tough situations |
-| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）//(n, suru-verb, na-adj) worry; concern; anxiety — X o shinpai suru = worry about X; shinpai shinaide = don't worry |
-| 緊張 | きんちょう | 紧张（名、可作动词）——只指心情或局势紧张，不指“时间紧”//(n, suru-verb) nervousness; tension — nervous before a test or speech; also political tension; never "busy" or "short of time" |
-| 失敗 | しっぱい | 失败；失误（名、可作动词）//(n, suru-verb) failure; mistake; blunder — from small slip-ups to big failures; a factual error is usually machigai |
-| 感動 | かんどう | 感动（名、可作动词）//(n, suru-verb) being deeply moved; being touched — by a film, music or someone's kindness; kandou-teki = moving |
-| 渋滞 | じゅうたい | 堵车；交通拥堵（名、可作动词）//(n, suru-verb) traffic jam; congestion — on roads; juutai ni makikomareru = get stuck in traffic, the classic excuse for being late |
-| 寝坊 | ねぼう | 睡过头；睡懒觉（名、可作动词）//(n, suru-verb) oversleeping — waking up too late by accident; the standard excuse for being late |
-| 期待 | きたい | 期待；期望（名、可作动词）//(n, suru-verb) expectation; hope; anticipation — usually positive; kitai hazure = a letdown; kitai ni kotaeru = live up to expectations |
-| 評判 | ひょうばん | 评价；口碑（名）//(n) reputation; public opinion — what people say about a shop, product or person; hyouban ga ii = well-reviewed |
-| 一流 | いちりゅう | 一流；顶级（名）//(n) first-rate; top-class; leading — before a noun with "no": a first-class hotel or chef |
-| ベテラン | べてらん | 老手；资深人士（名）//(n) veteran; seasoned expert — an experienced worker or player, not specifically ex-military |
-| 鍛える | きたえる | 锻炼；磨炼（他动词）//(v, trans.) to train (body or skills); to strengthen; to temper — "build up" muscles, the body or the mind |
-| 叱る | しかる | 训斥；责骂（他动词）——上对下的批评//(v, trans.) to scold; to tell off — a parent, teacher or boss correcting someone; okoru is just getting angry; often passive: shikarareta |
-| 泣く | なく | 哭；哭泣（自动词）//(v, intrans.) to cry; to weep — of people; animals and birds use a homophone written with another kanji (naku, to chirp or bark) |
-| 言い訳 | いいわけ | 借口；辩解（名、可作动词）//(n, suru-verb) excuse; justification — often negative: "no excuses", "don't make excuses" |
+| 嬉しい | うれしい | 高兴（形容词）——对发生在自己身上的好事，享受活动用「楽しい」；「嬉しい知らせ」好消息；「来てくれて嬉しい」你能来我很高兴//(i-adj) happy; glad — about something good that happens; enjoying an activity is 「楽しい」; 「嬉しい知らせ」 good news; 「来てくれて嬉しい」 I'm glad you came |
+| 厳しい | きびしい | 严格的；严峻的（形容词）——「厳しい先生」严厉的老师；「状況が厳しい」形势严峻//(i-adj) strict; severe; harsh — 「厳しい先生」 a strict teacher; 「状況が厳しい」 the situation is tough |
+| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）——「将来を心配する」担心将来；「心配をかける」让人担心//(n, suru-verb, na-adj) worry; concern — 「将来を心配する」 to worry about the future; 「心配をかける」 to make others worry |
+| 緊張 | きんちょう | 紧张（名、可作动词）——只指心情或局势紧张，不指“时间紧、东西缺”；「面接で緊張する」面试时紧张；「緊張が解ける」紧张感消除//(n, suru-verb) nervousness; tension — nerves or political tension, never "busy" or "in short supply"; 「面接で緊張する」 to get nervous in an interview; 「緊張が解ける」 the tension eases |
+| 失敗 | しっぱい | 失败；失误（名、可作动词）——「試験に失敗する」考试失败；「失敗は成功のもと」失败是成功之母//(n, suru-verb) failure; mistake — 「試験に失敗する」 to fail an exam; 「失敗は成功のもと」 failure is the root of success |
+| 感動 | かんどう | 感动（名、可作动词）——「映画に感動する」被电影感动；「感動的な話」感人的故事//(n, suru-verb) being deeply moved — 「映画に感動する」 to be moved by a film; 「感動的な話」 a moving story |
+| 渋滞 | じゅうたい | 堵车；交通拥堵（名、可作动词）——「渋滞に巻き込まれる」遇上堵车；「交通渋滞」交通拥堵//(n, suru-verb) traffic jam — 「渋滞に巻き込まれる」 to get stuck in traffic; 「交通渋滞」 traffic congestion |
+| 寝坊 | ねぼう | 睡过头（名、可作动词）——指不小心起晚了；「寝坊して遅刻する」睡过头迟到；「朝寝坊」早上睡懒觉//(n, suru-verb) oversleeping — waking too late by accident; 「寝坊して遅刻する」 to oversleep and be late; 「朝寝坊」 sleeping in |
+| 期待 | きたい | 期待；期望（名、可作动词）——「期待に応える」不辜负期望；「期待外れ」令人失望//(n, suru-verb) expectation; hope — 「期待に応える」 to live up to expectations; 「期待外れ」 a letdown |
+| 評判 | ひょうばん | 评价；口碑（名）——「評判がいい」口碑好；「評判の店」有名气的店//(n) reputation; what people say — 「評判がいい」 well spoken of; 「評判の店」 a much-talked-about shop |
+| 一流 | いちりゅう | 一流；顶级（名）——「一流企業」一流企业；「一流のシェフ」顶级厨师//(n) first-rate; top-class — 「一流企業」 a top company; 「一流のシェフ」 a top chef |
+| ベテラン | べてらん | 老手；资深人士（名）——「ベテランの先生」资深老师；「ベテラン社員」老员工//(n) veteran; seasoned expert — an experienced worker, not specifically ex-military; 「ベテランの先生」 a veteran teacher; 「ベテラン社員」 a long-serving employee |
+| 鍛える | きたえる | 锻炼；磨炼（他动词）——「体を鍛える」锻炼身体；「心を鍛える」磨炼意志//(v, trans.) to train; to strengthen — 「体を鍛える」 to build up your body; 「心を鍛える」 to toughen your mind |
+| 叱る | しかる | 训斥；责骂（他动词）——上对下为纠正而批评，「怒る」只是发火；「子供を叱る」训孩子；「先生に叱られる」被老师批评//(v, trans.) to scold; to tell off — a parent, teacher or boss correcting someone; 「怒る」 is just getting angry; 「子供を叱る」 to scold a child; 「先生に叱られる」 to get told off by the teacher |
+| 泣く | なく | 哭；哭泣（自动词）——用于人，动物鸣叫写作「鳴く」；「赤ちゃんが泣く」婴儿哭；「泣き出す」哭起来//(v, intrans.) to cry; to weep — of people; animals' cries are written 「鳴く」; 「赤ちゃんが泣く」 a baby cries; 「泣き出す」 to burst into tears |
+| 言い訳 | いいわけ | 借口；辩解（名、可作动词）——「言い訳をする」找借口；「言い訳にならない」不能成为借口//(n, suru-verb) excuse — 「言い訳をする」 to make excuses; 「言い訳にならない」 is no excuse |
 
 ---
 

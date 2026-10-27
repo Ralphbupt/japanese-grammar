@@ -12,24 +12,24 @@ This lesson covers N2 grammar for "expertise," "results," and "near-misses." 「
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 料理 | りょうり | 菜；做菜（名、可作动词）——不同于中文“料理”，泛指菜肴和烹饪//(n, suru-verb) cooking; dish; cuisine — both the act and the food; Nihon ryouri = Japanese food |
-| 右に出る者がいない | みぎにでるものがいない | 无人能出其右；无人能及（惯用语）//(expr) no one can beat (them); second to none — praise for someone's skill |
-| 驚く | おどろく | 惊讶；吃惊（自动词）//(v, intrans.) to be surprised; to be astonished — ni odoroku = be surprised at; bikkuri suru is the casual word |
-| 非難 | ひなん | 指责；谴责（名、可作动词）——不是“避难”//(n, suru-verb) criticism; blame; condemnation — public criticism of a person or action |
-| 称賛 | しょうさん | 称赞；赞扬（名、可作动词）//(n, suru-verb) praise; admiration; acclaim — formal; written word for high praise |
-| 散々 | さんざん | 狠狠地；反复地（副词、形容动词）//(adv, na-adj) thoroughly; severely; at great length (negative) — sanzan mayotta = agonized for ages; sanzan datta = it was a disaster |
-| 迷う | まよう | 犹豫；迷路（自动词）//(v, intrans.) to hesitate; to be torn; to get lost — dotchi ni suru ka mayou = can't decide which; michi ni mayou = get lost |
-| 離婚 | りこん | 离婚（名、可作动词）//(n, suru-verb) divorce — "divorce X" is X to rikon suru |
-| 諦める | あきらめる | 放弃；死心（他动词）//(v, trans.) to give up; to abandon (hope); to resign oneself — accepting something is out of reach; yameru is simply stopping |
-| 事故 | じこ | 事故（名）//(n) accident; incident — traffic or industrial accidents; jiko ni au = have an accident |
-| 遅れる | おくれる | 迟到；晚点；落后（自动词）//(v, intrans.) to be late; to be delayed; to fall behind — people and trains alike; "late for X" is X ni okureru |
-| 謝る | あやまる | 道歉；赔不是（自他动词）//(v, intrans./trans.) to apologize — the person takes ni (sensei ni ayamaru); the words themselves are usually sumimasen or gomen nasai |
-| 修理 | しゅうり | 修理（名、可作动词）//(n, suru-verb) repair; fixing — repairing machines, cars, houses |
-| 交換 | こうかん | 更换；交换（名、可作动词）//(n, suru-verb) replacement; exchange; swap — replace a part; exchange gifts |
-| 済む | すむ | 了结；解决（自动词）——常用于“不用…就解决了”//(v, intrans.) to get by (without); to be settled; to end — zu ni sumu = get away without having to; also the root of sumimasen |
-| 危うく | あやうく | 差一点；险些（副词）//(adv) nearly; almost (of something bad) — ayauku ~ tokoro datta = came close to ~, narrowly escaped |
-| ぶつかる | ぶつかる | 撞上；碰上（自动词）//(v, intrans.) to collide (with); to bump into; to run into — also run into problems |
-| 間に合う | まにあう | 来得及；赶上（自动词）//(v, intrans.) to make it in time; to be in time — ni maniau (a train, a deadline); also "to be enough": maniatte imasu = no thanks, I'm fine |
+| 料理 | りょうり | 菜；做菜（名、可作动词）——泛指菜肴和烹饪，不专指日本料理；「料理を作る」做菜；「日本料理」日本菜//(n, suru-verb) cooking; dish; cuisine — both the act and the food; 「料理を作る」 to cook; 「日本料理」 Japanese food |
+| 右に出る者がいない | みぎにでるものがいない | 无人能出其右；无人能及（惯用语）——用于称赞某方面的本事；「料理にかけては彼の右に出る者がいない」论做菜没人比得上他//(expr) second to none; no one can beat them — praise for a skill; 「料理にかけては彼の右に出る者がいない」 when it comes to cooking, no one beats him |
+| 驚く | おどろく | 吃惊（自动词）——口语多说「びっくりする」；「ニュースに驚く」被新闻吓一跳；「驚いたことに」令人吃惊的是//(v, intrans.) to be surprised — casual speech prefers 「びっくりする」; 「ニュースに驚く」 to be surprised by the news; 「驚いたことに」 surprisingly |
+| 非難 | ひなん | 指责；谴责（名、可作动词）——与「避難」（避难）同音；「非難を浴びる」饱受指责；「政府を非難する」谴责政府//(n, suru-verb) criticism; blame — same reading as 「避難」 (evacuation); 「非難を浴びる」 to come under fire; 「政府を非難する」 to criticize the government |
+| 称賛 | しょうさん | 称赞；赞扬（名、可作动词）——书面语；「称賛を浴びる」广受赞誉；「称賛に値する」值得称赞//(n, suru-verb) praise; acclaim — formal; 「称賛を浴びる」 to win acclaim; 「称賛に値する」 praiseworthy |
+| 散々 | さんざん | 狠狠地；反复地；糟透了（副词、形容动词）——多用于负面；「散々悩む」苦恼了半天；「散々な目にあう」吃尽苦头//(adv, na-adj) thoroughly; endlessly; terrible — usually negative; 「散々悩む」 to agonize for ages; 「散々な目にあう」 to have a terrible time |
+| 迷う | まよう | 犹豫；迷路（自动词）——「道に迷う」迷路；「どっちにするか迷う」拿不定主意选哪个//(v, intrans.) to hesitate; to be torn; to get lost — 「道に迷う」 to get lost; 「どっちにするか迷う」 can't decide which |
+| 離婚 | りこん | 离婚（名、可作动词）——「妻と離婚する」和妻子离婚；「離婚届」离婚申请书//(n, suru-verb) divorce — 「妻と離婚する」 to divorce one's wife; 「離婚届」 divorce papers |
+| 諦める | あきらめる | 放弃；死心（他动词）——接受得不到的现实，单纯停止用「やめる」；「夢を諦める」放弃梦想；「最後まで諦めない」坚持到底不放弃//(v, trans.) to give up — accepting it's out of reach; simply stopping is 「やめる」; 「夢を諦める」 to give up on a dream; 「最後まで諦めない」 to never give up |
+| 事故 | じこ | 事故（名）——「事故に遭う」遇到事故；「交通事故」交通事故//(n) accident — 「事故に遭う」 to be in an accident; 「交通事故」 a traffic accident |
+| 遅れる | おくれる | 迟到；晚点；落后（自动词）——人和车都能用；「授業に遅れる」上课迟到；「電車が遅れる」电车晚点//(v, intrans.) to be late; to be delayed; to fall behind — people and trains alike; 「授業に遅れる」 to be late for class; 「電車が遅れる」 the train is delayed |
+| 謝る | あやまる | 道歉；赔不是（自他动词）——对象用「に」；「先生に謝る」向老师道歉；「素直に謝る」老老实实地道歉//(v, intrans./trans.) to apologize — the person takes 「に」; 「先生に謝る」 to apologize to the teacher; 「素直に謝る」 to own up and apologize |
+| 修理 | しゅうり | 修理（名、可作动词）——「修理に出す」送修；「車を修理する」修车//(n, suru-verb) repair — 「修理に出す」 to send for repair; 「車を修理する」 to fix a car |
+| 交換 | こうかん | 更换；交换（名、可作动词）——「部品を交換する」更换零件；「連絡先を交換する」交换联系方式//(n, suru-verb) replacement; exchange — 「部品を交換する」 to replace a part; 「連絡先を交換する」 to swap contact details |
+| 済む | すむ | 了结；解决；不用……就行（自动词）——「〜ずに済む」不用……就解决了；「謝って済む問題じゃない」不是道歉就能了结的事//(v, intrans.) to be settled; to end; to get by (without) — 「〜ずに済む」 to get away without having to ~; 「謝って済む問題じゃない」 an apology won't settle this |
+| 危うく | あやうく | 差一点；险些（副词）——只用于坏事；「危うく〜ところだった」差点就……；「危うく事故になるところだった」差点出事故//(adv) nearly (of something bad) — only of narrow escapes; 「危うく〜ところだった」 came close to ~; 「危うく事故になるところだった」 there was very nearly an accident |
+| ぶつかる | ぶつかる | 撞上；碰上（自动词）——也指遇到难题、意见冲突；「車にぶつかる」撞上车；「壁にぶつかる」碰壁//(v, intrans.) to bump into; to collide with; to run into — also problems or clashes; 「車にぶつかる」 to hit a car; 「壁にぶつかる」 to hit a wall (a setback) |
+| 間に合う | まにあう | 来得及；赶上；够用（自动词）——「電車に間に合う」赶上电车；「間に合っています」不需要了（谢绝推销）//(v, intrans.) to make it in time; to be enough — 「電車に間に合う」 to catch the train; 「間に合っています」 no thanks, I'm fine (to a salesperson) |
 
 ---
 

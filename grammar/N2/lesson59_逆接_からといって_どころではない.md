@@ -12,23 +12,23 @@ This lesson covers N2-level concessive and contradictory expressions. 「から�
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 金持ち | かねもち | 有钱人；富人（名）//(n) rich person; the wealthy — often o-kanemochi in speech; kanemochi ni naru = get rich |
-| 幸せ | しあわせ | 幸福；幸运（形容动词、名）——指持久的幸福感//(na-adj, n) happy; happiness; good fortune — lasting well-being, not a one-off thrill (that is ureshii); koufuku is the formal equivalent |
-| 有名 | ゆうめい | 有名；著名（形容动词）//(na-adj) famous; well-known — yuumei na hito = a famous person; yuumei ni naru = become famous |
-| 信用 | しんよう | 信任；信用（名、可作动词）//(n, suru-verb) trust; confidence; credit (financial standing) — trusting someone's word or reliability; also creditworthiness |
-| 悪影響 | あくえいきょう | 不良影响（名）//(n) bad influence; harmful effect — usually "have a bad influence on" something, e.g. health or children |
-| 謝る | あやまる | 道歉；赔不是（自他动词）//(v, intrans./trans.) to apologize — the person takes ni (sensei ni ayamaru); the words themselves are usually sumimasen or gomen nasai |
-| 許す | ゆるす | 原谅；允许（他动词）//(v, trans.) to forgive; to pardon; to allow — forgive a person or a fault; jikan ga yuruseba = if time permits |
-| 締め切り | しめきり | 截止日期；期限（名）//(n) deadline; closing date — for assignments, applications and submissions; shimekiri ni maniau = meet the deadline |
-| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）//(n, suru-verb, na-adj) opposition; objection; the opposite — ni hantai suru = be against; also the reverse side or direction (hantai-gawa) |
-| 実行 | じっこう | 实行；执行（名、可作动词）//(n, suru-verb) carrying out; putting into practice — a plan, decision or promise; stresses actually doing it, not just talking |
-| 有害 | ゆうがい | 有害（形容动词）//(na-adj) harmful; damaging; noxious — formal; harmful substances, harmful to health |
-| 騒ぐ | さわぐ | 吵闹；起哄（自动词）//(v, intrans.) to make noise; to be rowdy; to make a fuss — loud, disruptive behavior; also the media or public making a fuss over something |
-| 覆す | くつがえす | 推翻；颠覆（他动词）//(v, trans.) to overturn; to overthrow; to reverse — a ruling, theory, common belief or the odds (written) |
-| 余裕 | よゆう | 富余；余地；从容（名）//(n) room to spare (time, money); leeway; composure — yoyuu ga aru = have time or money to spare; yoyuu ga nai = stretched thin |
-| 災害 | さいがい | 灾害；灾难（名）//(n) disaster; calamity — mostly natural disasters: earthquake, flood, typhoon |
-| 避難 | ひなん | 避难；疏散（名、可作动词）——不是“遇难”//(n, suru-verb) evacuation; taking refuge — fleeing to safety from a disaster; hinanjo = evacuation shelter |
-| 冗談 | じょうだん | 玩笑（名）//(n) joke; jest — joudan o iu = crack a joke; joudan deshou? = you must be joking |
+| 金持ち | かねもち | 有钱人；富人（名）——「お金持ち」口语常用说法；「金持ちになる」发财，变成有钱人//(n) rich person; the wealthy — 「お金持ち」 the usual form in speech; 「金持ちになる」 to get rich |
+| 幸せ | しあわせ | 幸福（形容动词、名）——持久的幸福感，一时的高兴用「嬉しい」；「幸せになる」变得幸福；「幸せな家庭」幸福的家庭//(na-adj, n) happy; happiness — lasting well-being; a one-off happy moment is 「嬉しい」; 「幸せになる」 to find happiness; 「幸せな家庭」 a happy family |
+| 有名 | ゆうめい | 有名；著名（形容动词）——「有名な人」名人；「温泉で有名だ」以温泉闻名//(na-adj) famous; well-known — 「有名な人」 a famous person; 「温泉で有名だ」 famous for its hot springs |
+| 信用 | しんよう | 信任；信用（名、可作动词）——「信用できない」靠不住；「信用を失う」失去信用//(n, suru-verb) trust; credibility; credit — 「信用できない」 can't be trusted; 「信用を失う」 to lose people's trust |
+| 悪影響 | あくえいきょう | 不良影响（名）——「悪影響を与える」带来不良影响；「健康への悪影響」对健康的危害//(n) bad influence; harmful effect — 「悪影響を与える」 to have a bad effect; 「健康への悪影響」 harm to health |
+| 謝る | あやまる | 道歉；赔不是（自他动词）——对象用「に」；「先生に謝る」向老师道歉；「素直に謝る」老老实实地道歉//(v, intrans./trans.) to apologize — the person takes 「に」; 「先生に謝る」 to apologize to the teacher; 「素直に謝る」 to own up and apologize |
+| 許す | ゆるす | 原谅；允许（他动词）——「彼を許す」原谅他；「時間が許せば」时间允许的话//(v, trans.) to forgive; to allow — 「彼を許す」 to forgive him; 「時間が許せば」 if time permits |
+| 締め切り | しめきり | 截止日期（名）——「締め切りに間に合う」赶上截止日期；「締め切りを過ぎる」过了截止日期//(n) deadline — 「締め切りに間に合う」 to meet the deadline; 「締め切りを過ぎる」 to miss the deadline |
+| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）——「計画に反対する」反对计划；「反対側」对面，相反方向//(n, suru-verb, na-adj) opposition; the opposite — 「計画に反対する」 to oppose a plan; 「反対側」 the opposite side |
+| 実行 | じっこう | 实行；执行（名、可作动词）——强调真正付诸行动；「計画を実行する」执行计划；「実行に移す」付诸实施//(n, suru-verb) carrying out; putting into practice — stresses actually doing it, not just talking; 「計画を実行する」 to carry out a plan; 「実行に移す」 to put into action |
+| 有害 | ゆうがい | 有害（形容动词）——书面语；「有害物質」有害物质；「健康に有害だ」对健康有害//(na-adj) harmful — formal; 「有害物質」 harmful substances; 「健康に有害だ」 bad for your health |
+| 騒ぐ | さわぐ | 吵闹；起哄（自动词）——也指舆论、媒体炒作；「夜中に騒ぐ」半夜吵闹；「マスコミが騒ぐ」媒体大肆炒作//(v, intrans.) to make noise; to be rowdy; to make a fuss — 「夜中に騒ぐ」 to make noise late at night; 「マスコミが騒ぐ」 the media make a fuss |
+| 覆す | くつがえす | 推翻；颠覆（他动词）——书面语；「判決を覆す」推翻判决；「常識を覆す」颠覆常识//(v, trans.) to overturn; to overthrow — written; 「判決を覆す」 to overturn a ruling; 「常識を覆す」 to upend conventional wisdom |
+| 余裕 | よゆう | 富余；从容（名）——时间、金钱或心理上的余地；「時間に余裕がある」时间充裕；「余裕がない」没有余力//(n) room to spare; leeway; composure — in time, money or mind; 「時間に余裕がある」 to have time to spare; 「余裕がない」 to be stretched thin |
+| 災害 | さいがい | 灾害（名）——多指自然灾害；「災害が起きる」发生灾害；「自然災害」自然灾害//(n) disaster — mostly natural ones; 「災害が起きる」 a disaster strikes; 「自然災害」 a natural disaster |
+| 避難 | ひなん | 避难；疏散（名、可作动词）——不是“遇难”；「避難所」避难所；「高台に避難する」撤到高处避难//(n, suru-verb) evacuation; taking refuge — 「避難所」 an evacuation shelter; 「高台に避難する」 to evacuate to higher ground |
+| 冗談 | じょうだん | 玩笑（名）——「冗談を言う」开玩笑；「冗談でしょう」你开玩笑吧//(n) joke — 「冗談を言う」 to crack a joke; 「冗談でしょう」 you must be joking |
 
 ---
 

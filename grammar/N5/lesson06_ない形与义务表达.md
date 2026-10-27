@@ -4,25 +4,25 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 結婚 | けっこん | 结婚（名、可作动词）//(n, suru-verb) marriage; getting married — "marry X" is X to kekkon suru; "be married" is kekkon shite iru |
-| 漢字 | かんじ | 汉字（名）//(n) kanji; Chinese characters |
-| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）//(n, suru-verb, na-adj) worry; concern; anxiety — X o shinpai suru = worry about X; shinpai shinaide = don't worry |
-| 辞書 | じしょ | 词典；字典（名）//(n) dictionary — "look up in a dictionary" is jisho o hiku |
-| 授業 | じゅぎょう | 课；上课（名）——不是“传授职业”//(n) class; lesson — a session taught at school, not the subject itself; jugyouryou = tuition |
-| 宿題 | しゅくだい | 作业（名）//(n) homework; assignment — shukudai o suru = do homework |
-| 弟 | おとうと | 弟弟（名）//(n) younger brother — someone else's is otoutosan |
-| 会う | あう | 见面；遇见（自动词）——见的对象不作宾语//(v, intrans.) to meet; to see (someone) — the person takes ni (or to), not o |
-| 歌う | うたう | 唱（歌）（他动词）//(v, trans.) to sing — song takes o |
-| 薬 | くすり | 药（名）//(n) medicine; drug — you "drink" it: kusuri o nomu, even for pills |
-| レポート | レポート | 报告；（学生的）论文（名）//(n) report; paper (school assignment) — typical university coursework; "hand it in" is dasu |
-| 書類 | しょるい | 文件；资料（名）//(n) documents; papers; paperwork — official forms, not computer files |
-| 大事 | だいじ | 重要；珍惜（形容动词）//(na-adj) important; precious; valuable — o-daiji ni = get well soon (said to someone sick) |
-| 試験 | しけん | 考试（名）//(n) exam; test — "take an exam" is shiken o ukeru |
-| 靴 | くつ | 鞋（名）//(n) shoes — taken off at the entrance of Japanese homes: kutsu o nugu |
-| 傘 | かさ | 伞（名）//(n) umbrella — "open an umbrella" is kasa o sasu |
-| 電気 | でんき | 电；电灯（名）——口语中常指“灯”//(n) electricity; (electric) light — in daily speech often "the lights": denki o tsukeru / kesu = turn the lights on / off |
-| 遅刻 | ちこく | 迟到（名、可作动词）//(n, suru-verb) being late — for school, work or an appointment; said of people, while trains okureru (run late) |
-| 準備 | じゅんび | 准备（名、可作动词）//(n, suru-verb) preparation; getting ready — for events, trips or meals; junbi suru = prepare |
+| 結婚 | けっこん | 结婚（名、可作动词）——对象用「と」；「彼と結婚する」和他结婚；「結婚している」已婚//(n, suru-verb) marriage; getting married — the partner takes 「と」; 「彼と結婚する」 to marry him; 「結婚している」 to be married (not "is getting married") |
+| 漢字 | かんじ | 汉字（名）——「漢字を覚える」记汉字；「漢字の読み方」汉字的读法//(n) kanji; Chinese characters — 「漢字を覚える」 to learn kanji; 「漢字の読み方」 how to read a kanji |
+| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）——「将来を心配する」担心将来；「心配をかける」让人担心//(n, suru-verb, na-adj) worry; concern — 「将来を心配する」 to worry about the future; 「心配をかける」 to make others worry |
+| 辞書 | じしょ | 词典；字典（名）——「辞書を引く」查词典//(n) dictionary — 「辞書を引く」 to look something up in a dictionary |
+| 授業 | じゅぎょう | 课（名）——指一节课，不是科目，也不是“传授职业”；「授業を受ける」上课；「授業中」上课时//(n) class; lesson — a taught session, not the subject; 「授業を受ける」 to take a class; 「授業中」 during class |
+| 宿題 | しゅくだい | 作业（名）——「宿題をする」写作业；「宿題を出す」交作业、布置作业//(n) homework — 「宿題をする」 to do homework; 「宿題を出す」 to hand in / set homework |
+| 弟 | おとうと | 弟弟（名）——别人的弟弟说「弟さん」//(n) younger brother — someone else's is 「弟さん」 |
+| 会う | あう | 见面；遇见（自动词）——对象用「に」或「と」，不用「を」；「友達に会う」见朋友//(v, intrans.) to meet; to see (someone) — the person takes 「に」 or 「と」, never 「を」; 「友達に会う」 to meet a friend |
+| 歌う | うたう | 唱（歌）（他动词）——「歌を歌う」唱歌；「カラオケで歌う」唱卡拉OK//(v, trans.) to sing — 「歌を歌う」 to sing a song; 「カラオケで歌う」 to sing karaoke |
+| 薬 | くすり | 药（名）——吃药用「飲む」，药片也一样；「薬を飲む」吃药；「薬が効く」药见效//(n) medicine — you "drink" it, even pills; 「薬を飲む」 to take medicine; 「薬が効く」 the medicine works |
+| レポート | レポート | 报告；（学生的）小论文（名）——「レポートを書く」写报告；「レポートを出す」交报告//(n) report; paper (school assignment) — 「レポートを書く」 to write a paper; 「レポートを出す」 to hand in a paper |
+| 書類 | しょるい | 文件；资料（名）——指纸质文件，不是电脑文件；「書類を出す」交材料//(n) documents; papers; paperwork — paper forms, not computer files; 「書類を出す」 to submit the paperwork |
+| 大事 | だいじ | 重要；珍惜（形容动词）——「大事な物」重要的东西；「お大事に」请保重（对病人说）//(na-adj) important; precious — 「大事な物」 something precious; 「お大事に」 get well soon (to someone sick) |
+| 試験 | しけん | 考试（名）——「試験を受ける」参加考试；「試験に合格する」考试合格//(n) exam; test — 「試験を受ける」 to take an exam; 「試験に合格する」 to pass an exam |
+| 靴 | くつ | 鞋（名）——日本进门要脱鞋；「靴を脱ぐ」脱鞋；「靴を履く」穿鞋//(n) shoes — taken off indoors in Japan; 「靴を脱ぐ」 to take off one's shoes; 「靴を履く」 to put on shoes |
+| 傘 | かさ | 伞（名）——「傘をさす」撑伞；「傘を忘れる」忘带伞//(n) umbrella — 「傘をさす」 to put up an umbrella; 「傘を忘れる」 to forget one's umbrella |
+| 電気 | でんき | 电；电灯（名）——口语中常指“灯”；「電気をつける」开灯；「電気を消す」关灯//(n) electricity; the lights — 「電気をつける」 to turn on the lights; 「電気を消す」 to turn off the lights |
+| 遅刻 | ちこく | 迟到（名、可作动词）——指人迟到，电车晚点用「遅れる」；「授業に遅刻する」上课迟到；「遅刻しそうだ」快迟到了//(n, suru-verb) being late — of people; trains running late is 「遅れる」; 「授業に遅刻する」 to be late for class; 「遅刻しそうだ」 I'm about to be late |
+| 準備 | じゅんび | 准备（名、可作动词）——「準備ができる」准备好了；「試験の準備」备考//(n, suru-verb) preparation; getting ready — 「準備ができる」 to be ready; 「試験の準備」 exam prep |
 
 ## 1. ない形（否定形）||ない Form (Negative Form)
 

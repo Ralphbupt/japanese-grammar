@@ -4,40 +4,40 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 部長 | ぶちょう | 部长；部门经理（名）//(n) department head; department manager — also used as a title after a surname instead of "Mr./Ms." |
-| 部下 | ぶか | 下属；部下（名）//(n) subordinate; someone who works under you — opposite of joushi (boss); sounds hierarchical, so not used when addressing your team |
-| 残業 | ざんぎょう | 加班（名、可作动词）//(n, suru-verb) overtime (work); working late — very common in Japanese workplaces; zangyou-dai = overtime pay |
-| 習う | ならう | 学习（他动词）——跟老师学技能//(v, trans.) to learn; to take lessons in — from a teacher (piano, cooking); studying on your own is benkyou suru |
-| 廊下 | ろうか | 走廊（名）//(n) hallway; corridor — inside a building (school, house, office) |
-| 立つ | たつ | 站；站立（自动词）//(v, intrans.) to stand; to stand up — te-form tatte; transitive pair: tateru (to stand something up) |
-| 自由 | じゆう | 自由；随意（形容动词、名）//(na-adj, n) free; freedom — jiyuu ni = freely, as one likes; jiyuu jikan = free time |
-| 自己紹介 | じこしょうかい | 自我介绍（名、可作动词）//(n, suru-verb) self-introduction — the standard short speech at the start of class or a job |
-| 確認 | かくにん | 确认；核实（名、可作动词）//(n, suru-verb) confirmation; checking; verification — double-checking facts, schedules or documents; constant at work |
-| 野菜 | やさい | 蔬菜（名）//(n) vegetable; vegetables — no plural in Japanese, so one word covers one or many |
-| 上司 | じょうし | 上司；上级（名）//(n) boss; superior (at work) — anyone above you in rank, not only your direct manager |
-| 練習 | れんしゅう | 练习（名、可作动词）//(n, suru-verb) practice; training; drill — practicing a skill, sport, instrument or language |
-| 大量 | たいりょう | 大量（名、形容动词）//(n, na-adj) large quantity; a great deal — slightly formal; tairyou seisan = mass production |
-| 命令 | めいれい | 命令（名、可作动词）//(n, suru-verb) order; command — a strong top-down order, much stronger than tanomu (ask) |
-| 教室 | きょうしつ | 教室；（兴趣）班（名）//(n) classroom; class (for lessons) — also a hobby class: ryouri kyoushitsu = cooking class |
-| 小説 | しょうせつ | 小说（名）//(n) novel; fiction — shousetsuka = novelist |
-| 建物 | たてもの | 建筑物；楼房（名）//(n) building; structure |
-| 建てる | たてる | 建造；盖（房子）（他动词）//(v, trans.) to build; to erect — houses and buildings; making things in general is tsukuru |
-| 愛する | あいする | 爱；热爱（他动词）//(v, trans.) to love (deeply) — strong and a bit literary; everyday speech uses suki da |
-| 騒ぐ | さわぐ | 吵闹；起哄（自动词）//(v, intrans.) to make noise; to be rowdy; to make a fuss — loud, disruptive behavior; also the media or public making a fuss over something |
-| 眠る | ねむる | 睡觉；入睡（自动词）//(v, intrans.) to sleep; to fall asleep — the state of being asleep; neru also just means going to bed |
-| 泣く | なく | 哭；哭泣（自动词）//(v, intrans.) to cry; to weep — of people; animals and birds use a homophone written with another kanji (naku, to chirp or bark) |
-| 踏む | ふむ | 踩；踏（他动词）//(v, trans.) to step on; to tread on — often by accident (a foot, the brake); ashi o fumareta = had my foot stepped on |
-| 叱る | しかる | 训斥；责骂（他动词）——上对下的批评//(v, trans.) to scold; to tell off — a parent, teacher or boss correcting someone; okoru is just getting angry; often passive: shikarareta |
-| 誘う | さそう | 邀请；约（他动词）//(v, trans.) to invite; to ask (someone) out — to join you somewhere; sasotte kureta = they invited me |
-| 褒める | ほめる | 表扬；夸奖（他动词）//(v, trans.) to praise; to compliment — opposite of shikaru (scold); often passive: sensei ni homerareta |
-| 盗む | ぬすむ | 偷；盗窃（他动词）//(v, trans.) to steal — "have something stolen" is ~o nusumareta, the classic suffering passive |
-| 手伝う | てつだう | 帮忙；帮助（他动词）//(v, trans.) to help (with a task); to assist — hands-on help with work or chores; tasukeru = rescue or help someone in trouble |
-| 発表 | はっぴょう | 发表；做报告；公布（名、可作动词）——日语多指口头报告//(n, suru-verb) presentation; announcement — giving a talk in class, or making results public |
-| 運転 | うんてん | 驾驶；开车（名、可作动词）//(n, suru-verb) driving; operation — driving a car, or running a machine or train service |
-| 感動 | かんどう | 感动（名、可作动词）//(n, suru-verb) being deeply moved; being touched — by a film, music or someone's kindness; kandou-teki = moving |
-| 経験 | けいけん | 经验；经历（名、可作动词）//(n, suru-verb) experience — both a single event you went through (keiken suru) and accumulated expertise (keiken ga aru) |
-| 留学 | りゅうがく | 留学（名、可作动词）//(n, suru-verb) studying abroad — the destination takes ni (Nihon ni ryuugaku suru); ryuugakusei = international student, including foreigners in Japan |
-| 相談 | そうだん | 商量；咨询（名、可作动词）——不只是商量，也指找人咨询//(n, suru-verb) consultation; talking over; asking for advice — ni soudan suru = ask someone's advice; not only discussing as equals |
+| 部長 | ぶちょう | 部长；部门经理（名）——可直接当称呼用；「田中部長」田中部长；「部長に報告する」向部长汇报//(n) department head; department manager — also used as a title instead of "Mr./Ms."; 「田中部長」 Manager Tanaka; 「部長に報告する」 to report to the manager |
+| 部下 | ぶか | 下属（名）——等级感强，不用来当面称呼；「部下を持つ」手下有人；「部下に任せる」交给下属//(n) subordinate; someone under you — sounds hierarchical, not used to address your team; 「部下を持つ」 to have people under you; 「部下に任せる」 to leave it to one's staff |
+| 残業 | ざんぎょう | 加班（名、可作动词）——「残業が多い」加班多；「残業代」加班费//(n, suru-verb) overtime — 「残業が多い」 lots of overtime; 「残業代」 overtime pay |
+| 習う | ならう | 学；跟人学（他动词）——跟老师学技能，自学用「勉強する」；「ピアノを習う」学钢琴；「先生に習う」跟老师学//(v, trans.) to learn; to take lessons in — from a teacher; studying on your own is 「勉強する」; 「ピアノを習う」 to take piano lessons; 「先生に習う」 to learn from a teacher |
+| 廊下 | ろうか | 走廊（名）——「廊下を走る」在走廊里跑；「廊下に立たされる」被罚站在走廊//(n) hallway; corridor — 「廊下を走る」 to run in the hallway; 「廊下に立たされる」 to be made to stand in the hallway |
+| 立つ | たつ | 站；站立（自动词）——「席を立つ」离开座位；「役に立つ」有用//(v, intrans.) to stand; to stand up — 「席を立つ」 to get up from one's seat; 「役に立つ」 to be useful |
+| 自由 | じゆう | 自由（名、形容动词）——「自由に使う」随便用；「自由時間」自由时间//(n, na-adj) freedom; free (to do as one likes) — 「自由に使う」 to use freely; 「自由時間」 free time |
+| 自己紹介 | じこしょうかい | 自我介绍（名、可作动词）——「自己紹介をする」做自我介绍；「簡単に自己紹介する」简单介绍一下自己//(n, suru-verb) self-introduction — 「自己紹介をする」 to introduce oneself; 「簡単に自己紹介する」 to briefly introduce oneself |
+| 確認 | かくにん | 确认（名、可作动词）——「予定を確認する」确认日程；「念のため確認する」保险起见再确认一下//(n, suru-verb) confirmation; checking — 「予定を確認する」 to check the schedule; 「念のため確認する」 to double-check just in case |
+| 野菜 | やさい | 蔬菜（名）——「野菜を食べる」吃蔬菜；「野菜不足」蔬菜吃得少//(n) vegetables — 「野菜を食べる」 to eat vegetables; 「野菜不足」 not eating enough vegetables |
+| 上司 | じょうし | 上司；上级（名）——比自己职位高的都算，不只是直属领导；「上司に相談する」找上司商量；「上司に叱られる」被上司训//(n) boss; superior (at work) — anyone above you, not just your direct manager; 「上司に相談する」 to talk to one's boss; 「上司に叱られる」 to be told off by the boss |
+| 練習 | れんしゅう | 练习（名、可作动词）——「ピアノを練習する」练钢琴；「練習試合」练习赛//(n, suru-verb) practice — 「ピアノを練習する」 to practice the piano; 「練習試合」 a practice match |
+| 大量 | たいりょう | 大量（名、形容动词）——略书面；「大量に買う」大量购买；「大量生産」大批量生产//(n, na-adj) large quantity; mass — slightly formal; 「大量に買う」 to buy in bulk; 「大量生産」 mass production |
+| 命令 | めいれい | 命令（名、可作动词）——上对下的强硬指令，比「頼む」强得多；「命令に従う」服从命令；「命令する」下命令//(n, suru-verb) order; command — a strong top-down order, far stronger than 「頼む」; 「命令に従う」 to follow orders; 「命令する」 to give an order |
+| 教室 | きょうしつ | 教室；（兴趣）班（名）——「料理教室」烹饪班；「教室に入る」进教室//(n) classroom; class (lessons) — also a hobby class; 「料理教室」 a cooking class; 「教室に入る」 to enter the classroom |
+| 小説 | しょうせつ | 小说（名）——「小説を読む」看小说；「小説家」小说家//(n) novel; fiction — 「小説を読む」 to read a novel; 「小説家」 a novelist |
+| 建物 | たてもの | 建筑物；楼（名）——「古い建物」老建筑；「建物の中」楼里//(n) building — 「古い建物」 an old building; 「建物の中」 inside the building |
+| 建てる | たてる | 建造；盖（他动词）——专指盖房子、楼，一般的“做”用「作る」；「家を建てる」盖房子//(v, trans.) to build; to erect — houses and buildings; making things in general is 「作る」; 「家を建てる」 to build a house |
+| 愛する | あいする | 爱；热爱（他动词）——语气重、偏书面，日常多说「好きだ」；「家族を愛する」爱家人；「愛している」我爱你//(v, trans.) to love (deeply) — strong and a bit literary; everyday speech uses 「好きだ」; 「家族を愛する」 to love one's family; 「愛している」 I love you |
+| 騒ぐ | さわぐ | 吵闹；起哄（自动词）——也指舆论、媒体炒作；「夜中に騒ぐ」半夜吵闹；「マスコミが騒ぐ」媒体大肆炒作//(v, intrans.) to make noise; to be rowdy; to make a fuss — 「夜中に騒ぐ」 to make noise late at night; 「マスコミが騒ぐ」 the media make a fuss |
+| 眠る | ねむる | 睡着；入睡（自动词）——指处于睡眠状态，「寝る」还可指上床躺下；「ぐっすり眠る」睡得很香；「眠れない」睡不着//(v, intrans.) to sleep; to fall asleep — being asleep; 「寝る」 can also mean just going to bed; 「ぐっすり眠る」 to sleep soundly; 「眠れない」 can't sleep |
+| 泣く | なく | 哭；哭泣（自动词）——用于人，动物鸣叫写作「鳴く」；「赤ちゃんが泣く」婴儿哭；「泣き出す」哭起来//(v, intrans.) to cry; to weep — of people; animals' cries are written 「鳴く」; 「赤ちゃんが泣く」 a baby cries; 「泣き出す」 to burst into tears |
+| 踏む | ふむ | 踩；踏（他动词）——「足を踏まれる」被踩了脚；「ブレーキを踏む」踩刹车//(v, trans.) to step on; to tread on — 「足を踏まれる」 to have one's foot stepped on; 「ブレーキを踏む」 to hit the brakes |
+| 叱る | しかる | 训斥；责骂（他动词）——上对下为纠正而批评，「怒る」只是发火；「子供を叱る」训孩子；「先生に叱られる」被老师批评//(v, trans.) to scold; to tell off — a parent, teacher or boss correcting someone; 「怒る」 is just getting angry; 「子供を叱る」 to scold a child; 「先生に叱られる」 to get told off by the teacher |
+| 誘う | さそう | 邀请；约（他动词）——「友達を映画に誘う」约朋友看电影；「誘ってくれる」（别人）约我//(v, trans.) to invite; to ask (someone) out — 「友達を映画に誘う」 to invite a friend to a movie; 「誘ってくれる」 someone invites me |
+| 褒める | ほめる | 表扬；夸奖（他动词）——「先生に褒められる」被老师表扬；「褒めて伸ばす」用表扬来培养//(v, trans.) to praise; to compliment — 「先生に褒められる」 to be praised by the teacher; 「褒めて伸ばす」 to bring out the best by praising |
+| 盗む | ぬすむ | 偷；盗窃（他动词）——「財布を盗まれる」钱包被偷；「人の物を盗む」偷别人东西//(v, trans.) to steal — 「財布を盗まれる」 to have one's wallet stolen; 「人の物を盗む」 to steal other people's things |
+| 手伝う | てつだう | 帮忙（他动词）——指动手帮着做事，救助用「助ける」；「家事を手伝う」帮忙做家务；「手伝ってもらう」请人帮忙//(v, trans.) to help (with a task) — hands-on help; rescuing someone is 「助ける」; 「家事を手伝う」 to help with chores; 「手伝ってもらう」 to get someone's help |
+| 発表 | はっぴょう | 发表；做报告；公布（名、可作动词）——日语多指口头报告；「授業で発表する」课上做报告；「結果を発表する」公布结果//(n, suru-verb) presentation; announcement — 「授業で発表する」 to give a presentation in class; 「結果を発表する」 to announce the results |
+| 運転 | うんてん | 驾驶；运转（名、可作动词）——「車を運転する」开车；「運転免許」驾照//(n, suru-verb) driving; operation (of machines, trains) — 「車を運転する」 to drive a car; 「運転免許」 a driver's license |
+| 感動 | かんどう | 感动（名、可作动词）——「映画に感動する」被电影感动；「感動的な話」感人的故事//(n, suru-verb) being deeply moved — 「映画に感動する」 to be moved by a film; 「感動的な話」 a moving story |
+| 経験 | けいけん | 经验；经历（名、可作动词）——「〜した経験がある」有过……的经历；「いい経験になる」是个宝贵的经历//(n, suru-verb) experience — both something you went through and know-how; 「〜した経験がある」 to have done ~ before; 「いい経験になる」 to be a good learning experience |
+| 留学 | りゅうがく | 留学（名、可作动词）——「日本に留学する」到日本留学；「留学生」留学生（含在日外国学生）//(n, suru-verb) studying abroad — 「日本に留学する」 to study in Japan; 「留学生」 an international student |
+| 相談 | そうだん | 商量；咨询（名、可作动词）——不只是平等商量，也指找人请教；「先生に相談する」找老师商量；「相談に乗る」帮人出主意//(n, suru-verb) consultation; asking for advice — 「先生に相談する」 to ask a teacher's advice; 「相談に乗る」 to give someone advice |
 
 ---
 

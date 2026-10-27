@@ -12,24 +12,24 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 復習 | ふくしゅう | 复习（名、可作动词）//(n, suru-verb) review (of lessons); revision — going over what you learned; yoshuu = preparing before class |
-| 文法 | ぶんぽう | 语法（名）//(n) grammar — bunpou mondai = grammar questions on the JLPT |
-| 分類 | ぶんるい | 分类（名、可作动词）//(n, suru-verb) classification; categorization — sorting things into groups |
-| 接続 | せつぞく | 接续；连接（名、可作动词）——语法中指接在什么形式后面//(n, suru-verb) connection; how a grammar pattern attaches — in grammar notes, the form that comes before a pattern; also internet or train connections |
-| 逆接 | ぎゃくせつ | 转折（名）//(n) adversative connection (like "but" or "although") — grammar term for clauses whose result goes against expectation |
-| 原因 | げんいん | 原因（名）//(n) cause; origin; source — the cause of an event or accident; riyuu is a reason or motive |
-| 程度 | ていど | 程度（名）//(n) degree; extent; level — aru teido = to some extent; after a number, "about" (juppun teido = ten minutes or so) |
-| 対比 | たいひ | 对比（名、可作动词）//(n, suru-verb) contrast; comparison — setting two things side by side |
-| 感情 | かんじょう | 感情；情绪（名）——指“情绪”，不是中文“爱情、交情”//(n) emotion; feelings — not "affection between people" |
-| 判断 | はんだん | 判断（名、可作动词）//(n, suru-verb) judgment; decision; assessment — handan suru = judge, decide; handan shikaneru = find it hard to decide |
-| 強調 | きょうちょう | 强调（名、可作动词）//(n, suru-verb) emphasis; stress — emphasize a point |
-| 限定 | げんてい | 限定；限制（名、可作动词）//(n, suru-verb) limitation; restriction; limited (edition) — kikan gentei = for a limited time only |
-| 区別 | くべつ | 区别；区分（名、可作动词）//(n, suru-verb) distinction; telling apart — kubetsu ga tsukanai = can't tell them apart |
-| 出題 | しゅつだい | 出题（名、可作动词）//(n, suru-verb) setting exam questions; questions set (on a test) — what appears on the exam |
-| 傾向 | けいこう | 倾向；趋势（名）//(n) tendency; trend; inclination — ~keikou ga aru = there is a tendency to ~ |
-| 対策 | たいさく | 对策；应对措施（名）//(n) countermeasure; (exam) preparation strategy — exam prep; measures against a problem |
-| 正答率 | せいとうりつ | 正确率（名）//(n) rate of correct answers — exam statistics |
-| 配点 | はいてん | 分值；配分（名）//(n) point allocation; marks per question — exam scoring |
+| 復習 | ふくしゅう | 复习（名、可作动词）——课前预习是「予習」；「授業の復習」复习功课；「毎日復習する」每天复习//(n, suru-verb) review — preparing before class is 「予習」; 「授業の復習」 reviewing a lesson; 「毎日復習する」 to review every day |
+| 文法 | ぶんぽう | 语法（名）——「文法問題」语法题；「文法を覚える」记语法//(n) grammar — 「文法問題」 grammar questions; 「文法を覚える」 to learn grammar |
+| 分類 | ぶんるい | 分类（名、可作动词）——「三つに分類する」分为三类；「種類別に分類する」按种类分类//(n, suru-verb) classification — 「三つに分類する」 to sort into three groups; 「種類別に分類する」 to classify by type |
+| 接続 | せつぞく | 接续；连接（名、可作动词）——语法中指接在什么形式后面；「名詞に接続する」接在名词后；「ネットに接続する」连接网络//(n, suru-verb) connection; (in grammar) how a pattern attaches — 「名詞に接続する」 to follow a noun; 「ネットに接続する」 to connect to the internet |
+| 逆接 | ぎゃくせつ | 转折（名）——语法术语；「逆接の接続詞」转折连词；「逆接の表現」转折表达//(n) adversative (contrastive) connection — grammar term for "but / although"; 「逆接の接続詞」 a contrastive conjunction; 「逆接の表現」 contrastive expressions |
+| 原因 | げんいん | 原因（名）——指引起事情的起因，动机、理由是「理由」；「事故の原因」事故原因；「原因不明」原因不明//(n) cause — what brought something about; a reason or motive is 「理由」; 「事故の原因」 the cause of the accident; 「原因不明」 cause unknown |
+| 程度 | ていど | 程度（名）——接数量后表示“左右”；「ある程度」某种程度上；「10分程度」十分钟左右//(n) degree; extent — after a number, "about"; 「ある程度」 to some extent; 「10分程度」 about 10 minutes |
+| 対比 | たいひ | 对比（名、可作动词）——「〜と対比する」与……对比；「対比が鮮やかだ」对比鲜明//(n, suru-verb) contrast; comparison — 「〜と対比する」 to contrast with ~; 「対比が鮮やかだ」 the contrast is striking |
+| 感情 | かんじょう | 感情；情绪（名）——指喜怒哀乐等情绪，不是中文“感情（爱情、交情）”；「感情を表す」表达情绪；「感情的になる」情绪激动//(n) emotion; feelings — 「感情を表す」 to show emotion; 「感情的になる」 to get emotional |
+| 判断 | はんだん | 判断（名、可作动词）——「判断を誤る」判断失误；「判断に迷う」拿不定主意//(n, suru-verb) judgment; decision — 「判断を誤る」 to misjudge; 「判断に迷う」 to be unsure what to decide |
+| 強調 | きょうちょう | 强调（名、可作动词）——「重要性を強調する」强调重要性；「強調表現」强调表达//(n, suru-verb) emphasis — 「重要性を強調する」 to stress the importance; 「強調表現」 emphatic expressions |
+| 限定 | げんてい | 限定；限制（名、可作动词）——「期間限定」限时；「会員に限定する」仅限会员//(n, suru-verb) limitation; limited — 「期間限定」 for a limited time only; 「会員に限定する」 to limit to members |
+| 区別 | くべつ | 区别；区分（名、可作动词）——「区別がつかない」分不清；「公私を区別する」公私分明//(n, suru-verb) distinction; telling apart — 「区別がつかない」 can't tell them apart; 「公私を区別する」 to keep work and private life separate |
+| 出題 | しゅつだい | 出题（名、可作动词）——「試験に出題される」考试中出现；「出題範囲」考试范围//(n, suru-verb) setting questions — 「試験に出題される」 to come up on the exam; 「出題範囲」 what the exam covers |
+| 傾向 | けいこう | 倾向；趋势（名）——「〜傾向がある」有……的倾向；「増加傾向」增加趋势//(n) tendency; trend — 「〜傾向がある」 there's a tendency to ~; 「増加傾向」 an upward trend |
+| 対策 | たいさく | 对策；应对措施（名）——也指备考；「対策を立てる」制定对策；「試験対策」备考//(n) countermeasure; preparation — 「対策を立てる」 to work out measures; 「試験対策」 exam prep |
+| 正答率 | せいとうりつ | 正确率（名）——「正答率が高い」正确率高；「正答率を上げる」提高正确率//(n) rate of correct answers — 「正答率が高い」 most people get it right; 「正答率を上げる」 to raise your accuracy |
+| 配点 | はいてん | 分值；配分（名）——「配点が高い」分值高；「配点の高い問題」分值高的题//(n) points allotted per question — 「配点が高い」 worth a lot of points; 「配点の高い問題」 high-value questions |
 
 ---
 

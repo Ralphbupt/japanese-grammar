@@ -12,22 +12,22 @@ This group covers pretending, emphasis, emotional evaluation, and intervals/freq
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 振り | ふり | 假装；样子（名）//(n) pretense; pretending (to do); appearance — plain form + furi o suru = pretend to |
-| 知らん顔 | しらんかお | 装作不知道；佯装不知（名）//(n) feigning ignorance; looking the other way — shiran kao o suru = act like one doesn't know |
-| 驚く | おどろく | 惊讶；吃惊（自动词）//(v, intrans.) to be surprised; to be astonished — ni odoroku = be surprised at; bikkuri suru is the casual word |
-| 嬉しい | うれしい | 高兴；开心（形容词）//(i-adj) happy; glad; pleased — about something good that happens to you; tanoshii is enjoying an activity, shiawase lasting happiness |
-| 悲しい | かなしい | 悲伤的；伤心的（形容词）//(i-adj) sad; sorrowful — sadness itself; sabishii is loneliness |
-| 残念 | ざんねん | 遗憾；可惜（形容动词）//(na-adj) regrettable; disappointing; too bad — zannen nagara = unfortunately |
-| 困る | こまる | 为难；困扰（自动词）//(v, intrans.) to be in trouble; to be at a loss — komatta = I'm stuck; komarimasu = please don't (polite objection) |
-| 努力 | どりょく | 努力（名、可作动词）——在日语中是名词，“努力地”另有说法//(n, suru-verb) effort; hard work; endeavor — a noun: doryoku suru = make an effort; adverbial "hard" is isshoukenmei |
-| 成長 | せいちょう | 成长；增长（名、可作动词）//(n, suru-verb) growth; development; growing up — people, children or the economy (economic growth) |
-| 技術 | ぎじゅつ | 技术（名）//(n) technology; technique; skill — both industrial technology and personal skill |
-| 進歩 | しんぽ | 进步（名、可作动词）//(n, suru-verb) progress; advancement; improvement — of technology, science or one's own skills |
-| 信号 | しんごう | 红绿灯；信号（名）//(n) traffic light; signal — in daily speech, traffic lights; the green light is called ao (blue) |
-| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取//(n, suru-verb) passing (an exam); being accepted (to a school) — shiken ni goukaku suru = pass an exam; mainly exams and admissions |
-| 寝たふり | ねたふり | 装睡（名）//(n) pretending to be asleep — neta furi o suru = fake sleep |
-| 授業 | じゅぎょう | 课；上课（名）——不是“传授职业”//(n) class; lesson — a session taught at school, not the subject itself; jugyouryou = tuition |
-| 選手 | せんしゅ | 选手；运动员（名）//(n) athlete; player — a sportsperson; yakyuu senshu = baseball player |
+| 振り | ふり | 假装；样子（名）——常写作假名；「〜ふりをする」假装……；「知らないふりをする」装作不知道//(n) pretense — usually written in kana; 「〜ふりをする」 to pretend to ~; 「知らないふりをする」 to pretend not to know |
+| 知らん顔 | しらんかお | 装不知道（名）——「知らん顔をする」装作没看见//(n) feigning ignorance; looking the other way — 「知らん顔をする」 to pretend not to notice |
+| 驚く | おどろく | 吃惊（自动词）——口语多说「びっくりする」；「ニュースに驚く」被新闻吓一跳；「驚いたことに」令人吃惊的是//(v, intrans.) to be surprised — casual speech prefers 「びっくりする」; 「ニュースに驚く」 to be surprised by the news; 「驚いたことに」 surprisingly |
+| 嬉しい | うれしい | 高兴（形容词）——对发生在自己身上的好事，享受活动用「楽しい」；「嬉しい知らせ」好消息；「来てくれて嬉しい」你能来我很高兴//(i-adj) happy; glad — about something good that happens; enjoying an activity is 「楽しい」; 「嬉しい知らせ」 good news; 「来てくれて嬉しい」 I'm glad you came |
+| 悲しい | かなしい | 悲伤（形容词）——孤单寂寞用「寂しい」；「悲しいニュース」悲伤的消息；「悲しい顔」伤心的表情//(i-adj) sad — loneliness is 「寂しい」; 「悲しいニュース」 sad news; 「悲しい顔」 a sad face |
+| 残念 | ざんねん | 遗憾；可惜（形容动词）——「残念ながら」遗憾的是；「残念でした」真可惜//(na-adj) too bad; disappointing — 「残念ながら」 unfortunately; 「残念でした」 better luck next time |
+| 困る | こまる | 为难（自动词）——「お金に困る」缺钱；「困ったな」这下难办了//(v, intrans.) to be in trouble; to be at a loss — 「お金に困る」 to be short of money; 「困ったな」 what am I going to do |
+| 努力 | どりょく | 努力（名、可作动词）——是名词，“努力地”说「一生懸命」；「努力が報われる」努力得到回报；「努力を重ねる」不断努力//(n, suru-verb) effort; hard work — a noun, not an adverb ("work hard" is 「一生懸命」); 「努力が報われる」 one's efforts pay off; 「努力を重ねる」 to keep working hard |
+| 成長 | せいちょう | 成长；增长（名、可作动词）——「子供が成長する」孩子长大；「経済成長」经济增长//(n, suru-verb) growth; growing up — 「子供が成長する」 a child grows up; 「経済成長」 economic growth |
+| 技術 | ぎじゅつ | 技术（名）——既指工业技术，也指个人技能；「技術の進歩」技术进步；「技術を身につける」掌握技能//(n) technology; technique; skill — 「技術の進歩」 technological progress; 「技術を身につける」 to acquire a skill |
+| 進歩 | しんぽ | 进步（名、可作动词）——「技術が進歩する」技术进步；「目覚ましい進歩」显著的进步//(n, suru-verb) progress; advance — 「技術が進歩する」 technology advances; 「目覚ましい進歩」 remarkable progress |
+| 信号 | しんごう | 红绿灯；信号（名）——绿灯叫「青」；「信号を守る」遵守信号灯；「信号が青になる」变绿灯//(n) traffic light; signal — the green light is called 「青」 (blue); 「信号を守る」 to obey traffic lights; 「信号が青になる」 the light turns green |
+| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取；「試験に合格する」考试合格；「大学に合格する」考上大学//(n, suru-verb) passing (an exam); being accepted — 「試験に合格する」 to pass an exam; 「大学に合格する」 to get into a university |
+| 寝たふり | ねたふり | 装睡（名）——「寝たふりをする」装睡//(n) pretending to be asleep — 「寝たふりをする」 to fake sleep |
+| 授業 | じゅぎょう | 课（名）——指一节课，不是科目，也不是“传授职业”；「授業を受ける」上课；「授業中」上课时//(n) class; lesson — a taught session, not the subject; 「授業を受ける」 to take a class; 「授業中」 during class |
+| 選手 | せんしゅ | 选手（名）——「野球選手」棒球选手；「代表選手」国家队选手//(n) athlete; player — 「野球選手」 a baseball player; 「代表選手」 a national-team player |
 
 ---
 

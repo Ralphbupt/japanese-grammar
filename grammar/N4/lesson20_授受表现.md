@@ -12,21 +12,21 @@ Japanese "giving" and "receiving" is not like Chinese where a single word covers
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| プレゼント | プレゼント | 礼物（名、可作动词）//(n, suru-verb) present; gift — casual; a formal or seasonal gift is okurimono |
-| 花 | はな | 花（名）//(n) flower; blossom — in spring often means cherry blossoms; hana (nose) is a homophone with different pitch |
-| 服 | ふく | 衣服（名）//(n) clothes; clothing — mostly Western-style clothes; traditional Japanese clothing is wafuku |
-| アドバイス | アドバイス | 建议；忠告（名、可作动词）//(n, suru-verb) advice; tip — adobaisu o suru = give advice; the formal word is jogen |
-| 差し上げる | さしあげる | 给（他动词、谦让语）——给上级或长辈//(v, trans., humble) to give — giving to a superior; offering a favor to their face (~te sashiageru) can sound condescending |
-| いただく | いただく | 收到；领受；吃；喝（他动词、谦让语）//(v, trans., humble) to receive; to eat; to drink — humble "receive"; itadakimasu before meals; ~te itadaku = have someone kindly do |
-| くださる | くださる | （上级）给我（他动词、尊敬语）//(v, trans., honorific) to give (me) — when a superior gives to you or your side; ~te kudasaru = kindly do for me |
-| 推薦状 | すいせんじょう | 推荐信（名）//(n) letter of recommendation — for school, scholarship or job applications |
-| 丁寧 | ていねい | 礼貌；细心；仔细（形容动词）——日语常指周到细致//(na-adj) polite; careful; thorough — describes both polite manners and careful, detailed work |
-| 説明 | せつめい | 说明；解释（名、可作动词）//(n, suru-verb) explanation; description — "explain X" is X o setsumei suru; setsumeisho = instruction manual |
-| 送る | おくる | 寄；送；送行（他动词）//(v, trans.) to send; to see (someone) off; to spend (time) — mail, email, or walking someone home |
-| 引っ越し | ひっこし | 搬家（名、可作动词）//(n, suru-verb) moving house; relocation — the move itself, packing included; the plain verb is hikkosu |
-| 手伝う | てつだう | 帮忙；帮助（他动词）//(v, trans.) to help (with a task); to assist — hands-on help with work or chores; tasukeru = rescue or help someone in trouble |
-| 運ぶ | はこぶ | 搬运；运送（他动词）//(v, trans.) to carry; to transport — moving heavy or many things from one place to another |
-| 弁当 | べんとう | 盒饭；便当（名）//(n) boxed lunch; bento — homemade or bought at a convenience store |
+| プレゼント | プレゼント | 礼物；送礼（名、可作动词）——「誕生日プレゼント」生日礼物；「プレゼントをもらう」收到礼物//(n, suru-verb) present; gift — 「誕生日プレゼント」 a birthday present; 「プレゼントをもらう」 to get a present |
+| 花 | はな | 花（名）——春天常指樱花；「花が咲く」花开；「花見」赏樱//(n) flower; blossom — in spring often means cherry blossoms; 「花が咲く」 flowers bloom; 「花見」 cherry-blossom viewing |
+| 服 | ふく | 衣服（名）——「服を着る」穿衣服；「服を買う」买衣服//(n) clothes — 「服を着る」 to put on clothes; 「服を買う」 to buy clothes |
+| アドバイス | アドバイス | 建议；忠告（名、可作动词）——「アドバイスをもらう」得到建议；「アドバイスする」给建议//(n, suru-verb) advice; tip — 「アドバイスをもらう」 to get advice; 「アドバイスする」 to give advice |
+| 差し上げる | さしあげる | 给（他动词、谦让语）——「あげる」的谦让语，给上级、长辈；当面说「〜て差し上げる」显得居高临下；「先生にお土産を差し上げる」送老师礼物//(v, trans., humble) to give — humble of 「あげる」, to a superior; 「〜て差し上げる」 to their face sounds condescending; 「先生にお土産を差し上げる」 to give the teacher a souvenir |
+| いただく | いただく | 收到；吃；喝（他动词、谦让语）——「もらう」「食べる」「飲む」的谦让语；「先生に本をいただく」从老师那儿得到书；「教えていただく」承蒙指教//(v, trans., humble) to receive; to eat; to drink — humble of 「もらう」/「食べる」/「飲む」; 「先生に本をいただく」 to receive a book from the teacher; 「教えていただく」 to be kindly taught |
+| くださる | くださる | （上级）给我（他动词、尊敬语）——「くれる」的尊敬语；「先生が本をくださる」老师给我书；「教えてくださる」（您）教我//(v, trans., honorific) to give (me) — honorific of 「くれる」; 「先生が本をくださる」 the teacher gives me a book; 「教えてくださる」 kindly teaches me |
+| 推薦状 | すいせんじょう | 推荐信（名）——「推薦状を書く」写推荐信；「推薦状を頼む」请人写推荐信//(n) letter of recommendation — 「推薦状を書く」 to write a reference letter; 「推薦状を頼む」 to ask for a reference letter |
+| 丁寧 | ていねい | 礼貌；细心（形容动词）——也指做事周到细致；「丁寧に説明する」仔细地解释；「丁寧語」礼貌语//(na-adj) polite; careful; thorough — good manners and careful work alike; 「丁寧に説明する」 to explain carefully; 「丁寧語」 polite speech style |
+| 説明 | せつめい | 说明；解释（名、可作动词）——「詳しく説明する」详细说明；「説明書」说明书//(n, suru-verb) explanation — 「詳しく説明する」 to explain in detail; 「説明書」 an instruction manual |
+| 送る | おくる | 寄；送（人）；度过（他动词）——「メールを送る」发邮件；「駅まで送る」送到车站//(v, trans.) to send; to see (someone) off; to spend (time) — 「メールを送る」 to send an email; 「駅まで送る」 to take someone to the station |
+| 引っ越し | ひっこし | 搬家（名、可作动词）——动词是「引っ越す」；「引っ越しを手伝う」帮人搬家；「引っ越しの準備」搬家准备//(n, suru-verb) moving house — the verb is 「引っ越す」; 「引っ越しを手伝う」 to help someone move; 「引っ越しの準備」 getting ready to move |
+| 手伝う | てつだう | 帮忙（他动词）——指动手帮着做事，救助用「助ける」；「家事を手伝う」帮忙做家务；「手伝ってもらう」请人帮忙//(v, trans.) to help (with a task) — hands-on help; rescuing someone is 「助ける」; 「家事を手伝う」 to help with chores; 「手伝ってもらう」 to get someone's help |
+| 運ぶ | はこぶ | 搬运；运送（他动词）——「荷物を運ぶ」搬行李；「料理を運ぶ」端菜//(v, trans.) to carry; to transport — 「荷物を運ぶ」 to carry luggage; 「料理を運ぶ」 to bring dishes to the table |
+| 弁当 | べんとう | 盒饭；便当（名）——「お弁当を作る」做便当；「コンビニ弁当」便利店盒饭//(n) boxed lunch; bento — 「お弁当を作る」 to make a packed lunch; 「コンビニ弁当」 a convenience-store bento |
 
 ---
 

@@ -12,23 +12,23 @@ Japanese keigo (honorific language) has three systems: **丁寧語** (です／�
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 先生 | せんせい | 老师；医生（名）——也是对医生、律师等的尊称//(n) teacher; doctor — also a title for doctors, lawyers, politicians and writers; never use it about yourself |
-| 社長 | しゃちょう | （公司）总经理；社长（名）——指公司最高负责人//(n) company president; head of a company — the top executive; also used alone as a title to address them |
-| 部長 | ぶちょう | 部长；部门经理（名）//(n) department head; department manager — also used as a title after a surname instead of "Mr./Ms." |
-| お客様 | おきゃくさま | 客人；顾客（尊称）（名）//(n) customer; guest (polite) — standard way staff address customers |
-| ご家族 | ごかぞく | （您的）家人（名）//(n) (your / someone else's) family (polite) — not used for your own family |
-| 召し上がる | めしあがる | 吃；喝（他动词、尊敬语）//(v, trans., honorific) to eat; to drink — honorific of taberu / nomu; for others, never yourself |
-| いらっしゃる | いらっしゃる | 去；来；在（自动词、尊敬语）//(v, intrans., honorific) to go; to come; to be — honorific of iku / kuru / iru; masu-form irasshaimasu |
-| おっしゃる | おっしゃる | 说（他动词、尊敬语）//(v, trans., honorific) to say — honorific of iu; o-namae wa nan to osshaimasu ka = may I have your name? |
-| ご覧になる | ごらんになる | 看（他动词、尊敬语）//(v, trans., honorific) to see; to look at — honorific of miru; goran kudasai = please take a look |
-| なさる | なさる | 做（他动词、尊敬语）//(v, trans., honorific) to do — honorific of suru, also inside suru-verbs; masu-form nasaimasu |
-| くださる | くださる | （上级）给我（他动词、尊敬语）//(v, trans., honorific) to give (me) — when a superior gives to you or your side; ~te kudasaru = kindly do for me |
-| ご存じ | ごぞんじ | 知道（名、尊敬语）//(n, honorific) knowing — honorific of shitte iru: go-zonji desu ka = do you know…? |
-| お休みになる | おやすみになる | 睡；休息（自动词、尊敬语）//(v, intrans., honorific) to sleep; to rest — honorific of neru / yasumu; also taking a day off |
-| お召しになる | おめしになる | 穿（他动词、尊敬语）//(v, trans., honorific) to wear; to put on — honorific of kiru; also kaze o omeshi ni naru = catch a cold |
-| 会議室 | かいぎしつ | 会议室（名）//(n) meeting room; conference room |
-| 検討 | けんとう | 研究；考虑（名、可作动词）——不是“检讨（反省）”；商务中也常是委婉拒绝//(n, suru-verb) consideration; examination; looking into — kentou shimasu (we'll consider it) is often a polite no in business |
-| 出張 | しゅっちょう | 出差（名、可作动词）//(n, suru-verb) business trip — shucchou ni iku = go on a business trip; the destination takes ni |
+| 先生 | せんせい | 老师；医生（名）——也是对医生、律师等的尊称，不用于自称；「日本語の先生」日语老师//(n) teacher; doctor — also a title for doctors, lawyers and writers; never for yourself; 「日本語の先生」 a Japanese teacher |
+| 社長 | しゃちょう | 总经理；社长（名）——公司最高负责人，也可直接作称呼；「社長になる」当上社长；「社長室」社长办公室//(n) company president — the top executive; also used alone to address them; 「社長になる」 to become president; 「社長室」 the president's office |
+| 部長 | ぶちょう | 部长；部门经理（名）——可直接当称呼用；「田中部長」田中部长；「部長に報告する」向部长汇报//(n) department head; department manager — also used as a title instead of "Mr./Ms."; 「田中部長」 Manager Tanaka; 「部長に報告する」 to report to the manager |
+| お客様 | おきゃくさま | 顾客；客人（尊称）（名）——店员对顾客的标准称呼；「お客様がいらっしゃる」客人到了；「お客様各位」各位顾客//(n) customer; guest (polite) — the standard word staff use; 「お客様がいらっしゃる」 a customer arrives; 「お客様各位」 Dear Customers (on notices) |
+| ご家族 | ごかぞく | （您的）家人（名）——尊称对方家人，不用于自己家；「ご家族の皆様」您的家人们；「ご家族はお元気ですか」您家人都好吗//(n) (your / someone else's) family (polite) — never one's own; 「ご家族の皆様」 your whole family; 「ご家族はお元気ですか」 how is your family? |
+| 召し上がる | めしあがる | 吃；喝（他动词、尊敬语）——「食べる」「飲む」的尊敬语，不用于自己；「何を召し上がりますか」您想吃点什么；「どうぞ召し上がってください」请慢用//(v, trans., honorific) to eat; to drink — honorific of 「食べる」/「飲む」, never for yourself; 「何を召し上がりますか」 what would you like?; 「どうぞ召し上がってください」 please help yourself |
+| いらっしゃる | いらっしゃる | 去；来；在（自动词、尊敬语）——「行く」「来る」「いる」的尊敬语；「先生がいらっしゃる」老师来（去、在）；「いらっしゃいませ」欢迎光临//(v, intrans., honorific) to go; to come; to be — honorific of 「行く」/「来る」/「いる」; 「先生がいらっしゃる」 the teacher comes / is here; 「いらっしゃいませ」 welcome (shop greeting) |
+| おっしゃる | おっしゃる | 说（他动词、尊敬语）——「言う」的尊敬语；「先生がおっしゃったとおり」正如老师所说；「お名前は何とおっしゃいますか」请问您贵姓//(v, trans., honorific) to say — honorific of 「言う」; 「先生がおっしゃったとおり」 just as the teacher said; 「お名前は何とおっしゃいますか」 may I have your name? |
+| ご覧になる | ごらんになる | 看（他动词、尊敬语）——「見る」的尊敬语；「こちらをご覧ください」请看这边；「もうご覧になりましたか」您已经看过了吗//(v, trans., honorific) to see; to look at — honorific of 「見る」; 「こちらをご覧ください」 please look here; 「もうご覧になりましたか」 have you seen it yet? |
+| なさる | なさる | 做（他动词、尊敬语）——「する」的尊敬语，也用于「〜する」类动词；「何になさいますか」您要点什么；「ご心配なさらないでください」请您别担心//(v, trans., honorific) to do — honorific of 「する」, also inside suru-verbs; 「何になさいますか」 what would you like?; 「ご心配なさらないでください」 please don't worry |
+| くださる | くださる | （上级）给我（他动词、尊敬语）——「くれる」的尊敬语；「先生が本をくださる」老师给我书；「教えてくださる」（您）教我//(v, trans., honorific) to give (me) — honorific of 「くれる」; 「先生が本をくださる」 the teacher gives me a book; 「教えてくださる」 kindly teaches me |
+| ご存じ | ごぞんじ | 知道（名、尊敬语）——「知っている」的尊敬语；「ご存じですか」您知道吗；「ご存じのとおり」如您所知//(n, honorific) knowing — honorific of 「知っている」; 「ご存じですか」 do you know?; 「ご存じのとおり」 as you know |
+| お休みになる | おやすみになる | 睡；休息（自动词、尊敬语）——「寝る」「休む」的尊敬语；「ゆっくりお休みになってください」请好好休息；「社長はもうお休みになりました」社长已经睡了//(v, intrans., honorific) to sleep; to rest — honorific of 「寝る」/「休む」; 「ゆっくりお休みになってください」 please get some good rest; 「社長はもうお休みになりました」 the president has gone to bed |
+| お召しになる | おめしになる | 穿（他动词、尊敬语）——「着る」的尊敬语；「着物をお召しになる」（您）穿和服//(v, trans., honorific) to wear; to put on — honorific of 「着る」; 「着物をお召しになる」 to wear a kimono |
+| 会議室 | かいぎしつ | 会议室（名）——「会議室を予約する」预订会议室；「会議室にご案内します」我带您去会议室//(n) meeting room; conference room — 「会議室を予約する」 to book a meeting room; 「会議室にご案内します」 let me show you to the meeting room |
+| 検討 | けんとう | 研究；考虑（名、可作动词）——不是“检讨（反省）”，商务中也常是委婉拒绝；「検討します」我们会考虑；「前向きに検討する」积极考虑//(n, suru-verb) consideration; looking into — in business often a polite no; 「検討します」 we'll consider it; 「前向きに検討する」 to consider favorably |
+| 出張 | しゅっちょう | 出差（名、可作动词）——「大阪に出張する」去大阪出差；「出張中」出差中//(n, suru-verb) business trip — 「大阪に出張する」 to go to Osaka on business; 「出張中」 away on business |
 
 ---
 

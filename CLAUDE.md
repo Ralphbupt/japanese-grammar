@@ -144,7 +144,8 @@ Filename convention: `lessonNN_topic.md`
 Bilingual syntax — every visible Chinese string needs its English side, or the English page (`/lessonNN/`) shows Chinese:
 - Blocks: `:::zh` … `:::` followed by `:::en` … `:::` (paragraphs, lists, diagrams, practice blocks; each marker on its own line)
 - Headings: `## 中文||English` (any level)
-- Table cells (td/th) and list items: `中文全文 // English full text` — the whole cell/item on both sides; `//` must not sit inside markup; vocab meanings are `练习//practice`
+- Table cells (td/th) and list items: `中文全文 // English full text` — the whole cell/item on both sides; `//` must not sit inside markup
+- Vocab meaning cells: `义项（词性）——说明；「搭配」释义//(POS) senses — note; 「搭配」 gloss` (see lesson35). Never one-word glosses; the note only when it says something real; 1–2 real collocations in 「」 (the only place Japanese may appear in the cell — the build renders each as its own line with furigana, `colloc-ja`); no romaji; kana-free Chinese POS labels (（名、可作动词）, not ・)
 - The English side of a `## N. 〜pattern (gloss)` heading gets the pattern's romaji added by the build (`addRomaji()`); don't type romaji there by hand
 - Changing a Japanese example sentence changes its audio hash → run `python build-audio.py`
 

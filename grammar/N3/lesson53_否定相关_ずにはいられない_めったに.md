@@ -12,24 +12,24 @@ This lesson focuses on N3 grammar related to "negation." 「ないことはな�
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 涙 | なみだ | 眼泪（名）//(n) tears; teardrop — namida ga deru = tears come; namida o nagasu = shed tears |
-| 感動 | かんどう | 感动（名、可作动词）//(n, suru-verb) being deeply moved; being touched — by a film, music or someone's kindness; kandou-teki = moving |
-| 泣く | なく | 哭；哭泣（自动词）//(v, intrans.) to cry; to weep — of people; animals and birds use a homophone written with another kanji (naku, to chirp or bark) |
-| 笑う | わらう | 笑（自动词）//(v, intrans.) to laugh; to smile — "laugh at X" takes o; hohoemu = to smile gently |
-| 我慢 | がまん | 忍耐；忍受（名、可作动词）——多指忍住疼痛、眼泪、尿意等//(n, suru-verb) patience; putting up with something unpleasant — often "hold it in" (pain, tears, the urge to go) |
-| 文句 | もんく | 抱怨；牢骚（名）//(n) complaint; grumbling; objection — monku o iu = complain; monku nashi = perfect, no complaints |
-| 終わる | おわる | 结束；完（自动词）//(v, intrans.) to end; to finish; to be over — after a verb stem, "finish doing" (yomi-owaru); transitive: oeru |
-| 可能性 | かのうせい | 可能性（名）//(n) possibility; likelihood; potential — kanousei ga takai = likely |
-| 裏切る | うらぎる | 背叛；辜负（他动词）//(v, trans.) to betray; to let down — betray a friend; kitai o uragiru = fail (or, pleasantly, defy) expectations |
-| 許す | ゆるす | 原谅；允许（他动词）//(v, trans.) to forgive; to pardon; to allow — forgive a person or a fault; jikan ga yuruseba = if time permits |
-| 嘘 | うそ | 谎话；谎言（名）//(n) lie; falsehood — uso o tsuku = tell a lie; uso! = no way! (surprise, not an accusation) |
-| 賛成 | さんせい | 赞成；同意（名、可作动词）//(n, suru-verb) agreement; approval; being in favor — ni sansei suru = agree with (a plan or opinion); opposite of hantai |
-| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）//(n, suru-verb, na-adj) opposition; objection; the opposite — ni hantai suru = be against; also the reverse side or direction (hantai-gawa) |
-| 滅多 | めった | 很少；难得（形容动词）——多以副词形式接否定//(na-adj) rarely; seldom — almost always metta ni + negative (metta ni ikanai = hardly ever go); usually written in kana |
-| 遅刻 | ちこく | 迟到（名、可作动词）//(n, suru-verb) being late — for school, work or an appointment; said of people, while trains okureru (run late) |
-| 外食 | がいしょく | 在外面吃饭（名、可作动词）//(n, suru-verb) eating out; dining out — eating at restaurants instead of cooking at home |
-| 興味 | きょうみ | 兴趣（名）//(n) interest (in something) — ni kyoumi ga aru = be interested in |
-| 不可能 | ふかのう | 不可能（形容动词、名）//(na-adj, n) impossible — formal; casual speech uses muri |
+| 涙 | なみだ | 眼泪（名）——「涙が出る」流泪；「涙を流す」流眼泪//(n) tears — 「涙が出る」 tears come; 「涙を流す」 to shed tears |
+| 感動 | かんどう | 感动（名、可作动词）——「映画に感動する」被电影感动；「感動的な話」感人的故事//(n, suru-verb) being deeply moved — 「映画に感動する」 to be moved by a film; 「感動的な話」 a moving story |
+| 泣く | なく | 哭；哭泣（自动词）——用于人，动物鸣叫写作「鳴く」；「赤ちゃんが泣く」婴儿哭；「泣き出す」哭起来//(v, intrans.) to cry; to weep — of people; animals' cries are written 「鳴く」; 「赤ちゃんが泣く」 a baby cries; 「泣き出す」 to burst into tears |
+| 笑う | わらう | 笑（自他动词）——笑某人用「を」；「人を笑う」嘲笑别人；「大声で笑う」放声大笑//(v, intrans./trans.) to laugh; to smile — "laugh at" takes 「を」; 「人を笑う」 to laugh at someone; 「大声で笑う」 to laugh out loud |
+| 我慢 | がまん | 忍耐；忍受（名、可作动词）——多指忍住疼痛、眼泪、冲动等；「痛みを我慢する」忍痛；「もう我慢できない」再也忍不了了//(n, suru-verb) enduring; putting up with — pain, tears, urges; 「痛みを我慢する」 to bear the pain; 「もう我慢できない」 I can't stand it anymore |
+| 文句 | もんく | 抱怨；牢骚（名）——「文句を言う」发牢骚；「文句なし」无可挑剔//(n) complaint; grumbling — 「文句を言う」 to complain; 「文句なし」 perfect, no complaints |
+| 終わる | おわる | 结束；完（自动词）——接动词连用形表示“做完”；「授業が終わる」下课；「読み終わる」读完//(v, intrans.) to end; to finish; to be over — 「授業が終わる」 class ends; 「読み終わる」 to finish reading |
+| 可能性 | かのうせい | 可能性（名）——「可能性が高い」可能性大；「可能性がある」有可能//(n) possibility; potential — 「可能性が高い」 likely; 「可能性がある」 there's a chance |
+| 裏切る | うらぎる | 背叛；辜负（他动词）——「友達を裏切る」背叛朋友；「期待を裏切る」辜负期望（也可指超出预期）//(v, trans.) to betray; to let down — 「友達を裏切る」 to betray a friend; 「期待を裏切る」 to fall short of (or pleasantly defy) expectations |
+| 許す | ゆるす | 原谅；允许（他动词）——「彼を許す」原谅他；「時間が許せば」时间允许的话//(v, trans.) to forgive; to allow — 「彼を許す」 to forgive him; 「時間が許せば」 if time permits |
+| 嘘 | うそ | 谎话（名）——单说「嘘！」是“不会吧”的惊讶；「嘘をつく」说谎；「嘘でしょう」不会吧//(n) lie — on its own 「嘘！」 means "no way!"; 「嘘をつく」 to tell a lie; 「嘘でしょう」 you're kidding |
+| 賛成 | さんせい | 赞成（名、可作动词）——「意見に賛成する」赞成意见；「賛成多数」多数赞成//(n, suru-verb) agreement; being in favor — 「意見に賛成する」 to agree with an opinion; 「賛成多数」 a majority in favor |
+| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）——「計画に反対する」反对计划；「反対側」对面，相反方向//(n, suru-verb, na-adj) opposition; the opposite — 「計画に反対する」 to oppose a plan; 「反対側」 the opposite side |
+| 滅多 | めった | 很少（形容动词）——几乎只用于「めったに」加否定，多写假名；「めったにない」难得一见；「めったに行かない」很少去//(na-adj) rarely — almost always 「めったに」 plus a negative, usually in kana; 「めったにない」 rare; 「めったに行かない」 to hardly ever go |
+| 遅刻 | ちこく | 迟到（名、可作动词）——指人迟到，电车晚点用「遅れる」；「授業に遅刻する」上课迟到；「遅刻しそうだ」快迟到了//(n, suru-verb) being late — of people; trains running late is 「遅れる」; 「授業に遅刻する」 to be late for class; 「遅刻しそうだ」 I'm about to be late |
+| 外食 | がいしょく | 在外面吃饭（名、可作动词）——「外食が多い」常在外面吃；「外食を控える」少下馆子//(n, suru-verb) eating out — 「外食が多い」 to eat out a lot; 「外食を控える」 to cut back on eating out |
+| 興味 | きょうみ | 兴趣（名）——「〜に興味がある」对……感兴趣；「興味を持つ」产生兴趣//(n) interest — 「〜に興味がある」 to be interested in ~; 「興味を持つ」 to take an interest |
+| 不可能 | ふかのう | 不可能（形容动词、名）——书面，口语多用「無理」；「不可能に近い」几乎不可能；「不可能ではない」并非不可能//(na-adj, n) impossible — formal; casual speech says 「無理」; 「不可能に近い」 next to impossible; 「不可能ではない」 not impossible |
 
 ---
 

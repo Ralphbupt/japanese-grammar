@@ -12,24 +12,24 @@ This group expresses "not only A but also B" or "A and B simultaneously." From s
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 成績 | せいせき | 成绩（名）//(n) grades; results; performance — school grades or results in work and sports |
-| 優秀 | ゆうしゅう | 优秀（形容动词）//(na-adj) excellent; outstanding; highly capable — praise for students, staff or results |
-| スポーツ | スポーツ | 运动；体育（名）//(n) sports — organized sports; undou is exercise in general |
-| 得意 | とくい | 擅长；拿手（形容动词、名）——可以用来说自己//(na-adj, n) good at; one's strong point — fine to say about yourself, unlike jouzu; tokui ryouri = one's best dish |
-| 国内 | こくない | 国内（名）//(n) domestic; within the country — kokunai-sen = domestic flights; opposite of kaigai (overseas) |
-| 海外 | かいがい | 海外；国外（名）//(n) overseas; abroad — the everyday word for "abroad" in island Japan; kaigai ryokou = a trip abroad |
-| 活躍 | かつやく | 大显身手；表现活跃（名、可作动词）——不是“性格活泼”//(n, suru-verb) being active (and successful); playing an active role — doing well in a field or role, not being lively |
-| 人口 | じんこう | 人口（名）//(n) population — of a country or city; jinkou ga heru = the population is shrinking |
-| 高齢化 | こうれいか | 老龄化（名）//(n) aging (of the population) — shoushi koureika = falling birthrate and aging population, a staple N2 reading topic |
-| 進む | すすむ | 前进；进展；加剧（自动词）//(v, intrans.) to advance; to progress; to move forward — also trends getting worse: aging progresses; clocks running fast |
-| 技術 | ぎじゅつ | 技术（名）//(n) technology; technique; skill — both industrial technology and personal skill |
-| 発展 | はってん | 发展（名、可作动词）//(n, suru-verb) development; growth; expansion — of countries, cities, economies or technology |
-| 経済 | けいざい | 经济（名）//(n) economy; economics — the national economy; keizai-teki = economic, or economical (thrifty) |
-| 変化 | へんか | 变化（名、可作动词）//(n, suru-verb) change; variation; shift — also verb conjugation in grammar |
-| 科学 | かがく | 科学（名）//(n) science — natural science; chemistry is a homophone, kagaku, written with another kanji |
-| 大臣 | だいじん | 大臣；部长（名）——日本内阁的部长级官员//(n) (government) minister; cabinet member — e.g. Minister of Foreign Affairs; Prime Minister is souri daijin |
-| 関係者 | かんけいしゃ | 相关人员（名）//(n) people involved; parties concerned; insiders — kankeisha igai = authorized personnel only |
-| 景気 | けいき | 经济形势；景气（名）//(n) the economy; business conditions — how business is doing; keiki ga ii = the economy is booming |
+| 成績 | せいせき | 成绩（名）——「成績が上がる」成绩提高；「成績表」成绩单//(n) grades; results; performance — 「成績が上がる」 one's grades improve; 「成績表」 a report card |
+| 優秀 | ゆうしゅう | 优秀（形容动词）——「優秀な学生」优秀的学生；「優秀な成績」优异的成绩//(na-adj) excellent; outstanding — 「優秀な学生」 a top student; 「優秀な成績」 excellent grades |
+| スポーツ | スポーツ | 运动；体育（名）——指体育项目，一般的锻炼叫「運動」；「スポーツをする」做运动；「スポーツが得意」擅长运动//(n) sports — organized sports; exercise in general is 「運動」; 「スポーツをする」 to play sports; 「スポーツが得意」 good at sports |
+| 得意 | とくい | 擅长；拿手（形容动词、名）——可以用来说自己，不像「上手」；「料理が得意だ」擅长做饭；「得意分野」拿手领域//(na-adj, n) good at; one's strong point — fine to say about yourself, unlike 「上手」; 「料理が得意だ」 to be good at cooking; 「得意分野」 one's specialty |
+| 国内 | こくない | 国内（名）——反义是「海外」；「国内旅行」国内旅游；「国内線」国内航线//(n) domestic; within the country — opposite: 「海外」; 「国内旅行」 domestic travel; 「国内線」 domestic flights |
+| 海外 | かいがい | 海外；国外（名）——日语里泛指“国外”，不一定隔海；「海外旅行」出国旅游；「海外に住む」住在国外//(n) overseas; abroad — the everyday word for "abroad"; 「海外旅行」 a trip abroad; 「海外に住む」 to live abroad |
+| 活躍 | かつやく | 大显身手；活跃（名、可作动词）——指在某领域表现出色，不是“性格活泼”；「大活躍」大放异彩；「世界で活躍する」活跃在世界舞台//(n, suru-verb) being active and successful; playing a big role — doing well in a field, not being lively; 「大活躍」 a star performance; 「世界で活躍する」 to make one's mark worldwide |
+| 人口 | じんこう | 人口（名）——「人口が減る」人口减少；「人口が多い」人口多//(n) population — 「人口が減る」 the population shrinks; 「人口が多い」 to have a large population |
+| 高齢化 | こうれいか | 老龄化（名）——「少子高齢化」少子老龄化；「高齢化が進む」老龄化加剧//(n) aging (of a population) — 「少子高齢化」 fewer births and an aging population; 「高齢化が進む」 the population is aging fast |
+| 進む | すすむ | 前进；进展（自动词）——也指趋势加剧；「工事が進む」工程进展；「高齢化が進む」老龄化加剧//(v, intrans.) to advance; to progress — also of trends getting stronger; 「工事が進む」 the work progresses; 「高齢化が進む」 aging advances |
+| 技術 | ぎじゅつ | 技术（名）——既指工业技术，也指个人技能；「技術の進歩」技术进步；「技術を身につける」掌握技能//(n) technology; technique; skill — 「技術の進歩」 technological progress; 「技術を身につける」 to acquire a skill |
+| 発展 | はってん | 发展（名、可作动词）——「経済が発展する」经济发展；「発展途上国」发展中国家//(n, suru-verb) development; growth — 「経済が発展する」 the economy develops; 「発展途上国」 a developing country |
+| 経済 | けいざい | 经济（名）——「経済的」也指“省钱、划算”；「経済成長」经济增长；「経済的な車」省油的车//(n) economy; economics — 「経済的」 can also mean "economical, thrifty"; 「経済成長」 economic growth; 「経済的な車」 an economical car |
+| 変化 | へんか | 变化（名、可作动词）——「変化に富む」富于变化；「気温の変化」气温变化//(n, suru-verb) change — 「変化に富む」 full of variety; 「気温の変化」 temperature changes |
+| 科学 | かがく | 科学（名）——同音的「化学」是“化学”；「科学技術」科学技术；「科学的に」科学地//(n) science — not to be confused with its homophone 「化学」 (chemistry); 「科学技術」 science and technology; 「科学的に」 scientifically |
+| 大臣 | だいじん | 大臣；部长（名）——日本内阁的部长级官员；「外務大臣」外务大臣（外交部长）；「総理大臣」首相//(n) (cabinet) minister — 「外務大臣」 Minister of Foreign Affairs; 「総理大臣」 the Prime Minister |
+| 関係者 | かんけいしゃ | 相关人员（名）——「関係者以外立入禁止」非相关人员禁止入内；「関係者によると」据知情人士称//(n) people involved; parties concerned — 「関係者以外立入禁止」 authorized personnel only; 「関係者によると」 according to sources |
+| 景気 | けいき | 景气；经济形势（名）——「景気がいい」经济景气；「景気が回復する」经济复苏//(n) the economy; business conditions — 「景気がいい」 business is booming; 「景気が回復する」 the economy recovers |
 
 ---
 

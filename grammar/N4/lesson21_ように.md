@@ -4,15 +4,15 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| なるべく | なるべく | 尽量；尽可能（副词）//(adv) as much as possible; if possible — narubeku hayaku = as soon as possible; softer than kanarazu (without fail) |
-| 甘い | あまい | 甜；（对人）宽容（形容词）//(i-adj) sweet; lenient; naive — kodomo ni amai = soft on the kids; kangae ga amai = naive thinking |
-| 体 | からだ | 身体（名）//(n) body; health — karada ni ki o tsukete = take care of yourself; karada ni ii = good for you |
-| 赤ちゃん | あかちゃん | 婴儿；宝宝（名）//(n) baby — the affectionate everyday word; akanbou is plainer |
-| 着替える | きがえる | 换衣服（自他动词）//(v, intrans./trans.) to change (clothes); to get changed — into pajamas or a uniform; fuku o kigaeru |
-| 安全 | あんぜん | 安全（形容动词、名）//(na-adj, n) safe; safety; security — anzen na basho = a safe place; anzen daiichi = safety first |
-| 公園 | こうえん | 公园（名）//(n) park — a public park, from a small playground to a large city park |
-| 貯める | ためる | 存（钱）；积攒（他动词）//(v, trans.) to save up (money); to accumulate — saving money or points over time |
-| メモ | メモ | 笔记；便条（名、可作动词）//(n, suru-verb) memo; note — a quick written note; memo o toru = take notes |
+| なるべく | なるべく | 尽量（副词）——比「必ず」语气软；「なるべく早く」尽快；「なるべく〜ようにする」尽量做到……//(adv) as much as possible; if possible — softer than 「必ず」; 「なるべく早く」 as soon as possible; 「なるべく〜ようにする」 to try to ~ where possible |
+| 甘い | あまい | 甜；（对人）宽容；天真（形容词）——「甘い物」甜食；「子供に甘い」惯孩子//(i-adj) sweet; lenient; naive — 「甘い物」 sweets; 「子供に甘い」 soft on the kids |
+| 体 | からだ | 身体（名）——「体に気をつける」注意身体；「体にいい」对身体好//(n) body; health — 「体に気をつける」 to take care of oneself; 「体にいい」 good for you |
+| 赤ちゃん | あかちゃん | 婴儿；宝宝（名）——「赤ちゃんが生まれる」宝宝出生；「赤ちゃんが泣く」婴儿哭//(n) baby — 「赤ちゃんが生まれる」 a baby is born; 「赤ちゃんが泣く」 a baby cries |
+| 着替える | きがえる | 换衣服（自他动词）——「服を着替える」换衣服；「パジャマに着替える」换上睡衣//(v, intrans./trans.) to change (clothes) — 「服を着替える」 to change clothes; 「パジャマに着替える」 to change into pajamas |
+| 安全 | あんぜん | 安全（名、形容动词）——「安全な場所」安全的地方；「安全第一」安全第一//(n, na-adj) safety; safe — 「安全な場所」 a safe place; 「安全第一」 safety first |
+| 公園 | こうえん | 公园（名）——「公園で遊ぶ」在公园玩；「公園を散歩する」在公园散步//(n) park — 「公園で遊ぶ」 to play in the park; 「公園を散歩する」 to take a walk in the park |
+| 貯める | ためる | 存（钱）；积攒（他动词）——「お金を貯める」攒钱；「ポイントを貯める」攒积分//(v, trans.) to save up; to accumulate — 「お金を貯める」 to save money; 「ポイントを貯める」 to collect points |
+| メモ | メモ | 笔记；便条（名、可作动词）——「メモを取る」记笔记；「メモする」记下来//(n, suru-verb) memo; note — 「メモを取る」 to take notes; 「メモする」 to jot down |
 
 ---
 

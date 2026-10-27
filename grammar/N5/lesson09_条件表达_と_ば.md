@@ -12,39 +12,39 @@ This is **one of the biggest challenges** in N5-N4. All four conditional forms c
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 春 | はる | 春天（名）//(n) spring (season) — also the start of the school and business year (April) |
-| 夏 | なつ | 夏天（名）//(n) summer |
-| 秋 | あき | 秋天（名）//(n) autumn; fall |
-| 冬 | ふゆ | 冬天（名）//(n) winter |
-| 咲く | さく | （花）开（自动词）//(v, intrans.) to bloom; to blossom — sakura ga saku; mankai = full bloom |
-| 雪 | ゆき | 雪（名）//(n) snow — "it snows" is yuki ga furu |
-| 氷 | こおり | 冰（名）//(n) ice |
-| 温度 | おんど | 温度（名）//(n) temperature — general; body temperature is taion, air temperature kion |
-| 溶ける | とける | 融化；溶化（自动词）//(v, intrans.) to melt; to dissolve — ice, snow, sugar in water |
-| 酒 | さけ | 酒；日本酒（名）//(n) alcohol; sake (Japanese rice wine) — can mean drinks in general or sake specifically |
-| 歌う | うたう | 唱（歌）（他动词）//(v, trans.) to sing — song takes o |
-| 始める | はじめる | 开始（做）（他动词）——由人开始某事//(v, trans.) to start; to begin (something) — someone starts it with o; compare hajimaru |
-| 押す | おす | 按；推（他动词）//(v, trans.) to push; to press (a button) — opposite of hiku (pull) |
-| 曲がる | まがる | 转弯；弯曲（自动词）//(v, intrans.) to turn (a corner); to bend — "turn at the corner" is kado o magaru |
-| 駅 | えき | 车站（名）//(n) station (train) — bus stops are basu-tei |
-| 見える | みえる | 看得见；看起来（自动词）——自然映入眼帘//(v, intrans.) to be visible; can see; to look (like) — things come into view; the thing seen takes ga |
-| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取//(n, suru-verb) passing (an exam); being accepted (to a school) — shiken ni goukaku suru = pass an exam; mainly exams and admissions |
-| 免許 | めんきょ | 执照；驾照（名）//(n) license; driver's license — short for unten menkyo (driving license) |
-| 試合 | しあい | 比赛（名）//(n) match; game; bout — a sports match between opponents; a whole tournament is taikai |
-| 中止 | ちゅうし | 中止；取消（名、可作动词）——指取消不办，或中途停止//(n, suru-verb) cancellation; calling off; suspension — an event cancelled beforehand or stopped midway, e.g. ame de chuushi (rained off) |
-| 電気 | でんき | 电；电灯（名）——口语中常指“灯”//(n) electricity; (electric) light — in daily speech often "the lights": denki o tsukeru / kesu = turn the lights on / off |
-| つく | つく | （灯）亮；（电器）开着（自动词）//(v, intrans.) to come on; to be switched on (of a light) — the light turns on by itself: denki ga tsuku; switching it on is tsukeru |
-| 塵 | ちり | 灰尘；尘土（名）//(n) dust; tiny particle — from the proverb chiri mo tsumoreba yama to naru (many small things add up) |
-| 積もる | つもる | 堆积；积（雪）（自动词）//(v, intrans.) to pile up; to accumulate — snow, dust, or small things adding up |
-| 届く | とどく | 送到；到达；够得着（自动词）//(v, intrans.) to arrive; to reach — mail, parcels or messages arriving; also "can reach" (a shelf); transitive pair: todokeru |
-| 沸く | わく | （水）开；沸腾（自动词）//(v, intrans.) to boil (of water); to come to a boil — the water boils by itself; boiling it yourself is wakasu |
-| 慣れる | なれる | 习惯；适应（自动词）//(v, intrans.) to get used to; to become accustomed — the thing takes ni: shigoto ni nareru |
-| 相談する | そうだんする | 商量；咨询（自他动词）//(v, intrans./trans.) to consult; to talk over; to ask advice — the person consulted takes ni |
-| 卒業 | そつぎょう | 毕业（名、可作动词）//(n, suru-verb) graduation — the school takes o |
-| 信号 | しんごう | 红绿灯；信号（名）//(n) traffic light; signal — in daily speech, traffic lights; the green light is called ao (blue) |
-| 宝くじ | たからくじ | 彩票（名）//(n) lottery; lottery ticket — "win the lottery" is takarakuji ni ataru |
-| 当たる | あたる | 中（奖）；碰上；猜中（自动词）//(v, intrans.) to win (a lottery); to hit; to be right — takarakuji ga atatta = I won the lottery; yohou ga ataru = the forecast is right |
-| 迷う | まよう | 迷路；犹豫（自动词）//(v, intrans.) to get lost; to hesitate; to be torn — michi ni mayou = get lost; dotchi ni suru ka mayou = can't decide which |
+| 春 | はる | 春天（名）——日本新学年、新财年从四月开始；「春が来る」春天来了；「春休み」春假//(n) spring — the school and business year starts in April; 「春が来る」 spring comes; 「春休み」 spring break |
+| 夏 | なつ | 夏天（名）——「夏休み」暑假//(n) summer — 「夏休み」 summer vacation |
+| 秋 | あき | 秋天（名）——「秋になる」到了秋天//(n) autumn; fall — 「秋になる」 autumn comes |
+| 冬 | ふゆ | 冬天（名）——「冬休み」寒假//(n) winter — 「冬休み」 winter break |
+| 咲く | さく | （花）开（自动词）——「桜が咲く」樱花开；「花が咲く」开花//(v, intrans.) to bloom; to blossom — 「桜が咲く」 the cherry trees bloom; 「花が咲く」 flowers bloom |
+| 雪 | ゆき | 雪（名）——「雪が降る」下雪；「雪が積もる」积雪//(n) snow — 「雪が降る」 it snows; 「雪が積もる」 snow piles up |
+| 氷 | こおり | 冰（名）——「氷が溶ける」冰融化//(n) ice — 「氷が溶ける」 ice melts |
+| 温度 | おんど | 温度（名）——体温是「体温」，气温是「気温」；「温度が上がる」温度上升//(n) temperature — body temperature is 「体温」, air temperature 「気温」; 「温度が上がる」 the temperature rises |
+| 溶ける | とける | 融化；溶化（自动词）——「氷が溶ける」冰化了；「砂糖が溶ける」糖溶化//(v, intrans.) to melt; to dissolve — 「氷が溶ける」 ice melts; 「砂糖が溶ける」 sugar dissolves |
+| 酒 | さけ | 酒；日本酒（名）——可泛指酒，也专指日本清酒；「お酒を飲む」喝酒//(n) alcohol; sake — drinks in general or rice wine specifically; 「お酒を飲む」 to drink |
+| 歌う | うたう | 唱（歌）（他动词）——「歌を歌う」唱歌；「カラオケで歌う」唱卡拉OK//(v, trans.) to sing — 「歌を歌う」 to sing a song; 「カラオケで歌う」 to sing karaoke |
+| 始める | はじめる | 开始（做）（他动词）——由人开始某事，事情自己开始用「始まる」；「仕事を始める」开始工作//(v, trans.) to start; to begin (something) — someone starts it; it starting is 「始まる」; 「仕事を始める」 to start work |
+| 押す | おす | 按；推（他动词）——反义是「引く」；「ボタンを押す」按按钮//(v, trans.) to push; to press — the opposite is 「引く」; 「ボタンを押す」 to press a button |
+| 曲がる | まがる | 转弯；弯曲（自动词）——转弯处用「を」；「角を曲がる」在拐角转弯；「右に曲がる」右转//(v, intrans.) to turn; to bend — 「角を曲がる」 to turn at the corner; 「右に曲がる」 to turn right |
+| 駅 | えき | 车站（名）——指火车、电车站，公交站是「バス停」；「駅前」车站前//(n) (train) station — a bus stop is 「バス停」; 「駅前」 in front of the station |
+| 見える | みえる | 看得见；看起来（自动词）——景物自然映入眼帘；「山が見える」看得见山；「若く見える」看起来年轻//(v, intrans.) to be visible; can see; to look (like) — 「山が見える」 you can see the mountain; 「若く見える」 to look young |
+| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取；「試験に合格する」考试合格；「大学に合格する」考上大学//(n, suru-verb) passing (an exam); being accepted — 「試験に合格する」 to pass an exam; 「大学に合格する」 to get into a university |
+| 免許 | めんきょ | 执照；驾照（名）——口语常指驾照；「免許を取る」考驾照//(n) license; driver's license — usually means a driving license; 「免許を取る」 to get a license |
+| 試合 | しあい | 比赛（名）——指一场比赛，整个赛事叫「大会」；「試合に勝つ」赢得比赛；「試合に出る」出场比赛//(n) match; game — a single match; a whole tournament is 「大会」; 「試合に勝つ」 to win a match; 「試合に出る」 to play in a match |
+| 中止 | ちゅうし | 取消；中止（名、可作动词）——指取消不办或中途停止；「雨で中止になる」因雨取消；「計画を中止する」中止计划//(n, suru-verb) cancellation; calling off — beforehand or midway; 「雨で中止になる」 to be rained off; 「計画を中止する」 to scrap a plan |
+| 電気 | でんき | 电；电灯（名）——口语中常指“灯”；「電気をつける」开灯；「電気を消す」关灯//(n) electricity; the lights — 「電気をつける」 to turn on the lights; 「電気を消す」 to turn off the lights |
+| つく | つく | （灯）亮；（电器）开着（自动词）——灯自己亮，开灯是「つける」；「電気がつく」灯亮了//(v, intrans.) to come on (of a light) — the light comes on; switching it on is 「つける」; 「電気がつく」 the light comes on |
+| 塵 | ちり | 灰尘；尘土（名）——「塵も積もれば山となる」积少成多//(n) dust; tiny particle — 「塵も積もれば山となる」 many small things add up |
+| 積もる | つもる | 堆积；积（雪）（自动词）——「雪が積もる」积雪；「塵も積もれば山となる」积少成多//(v, intrans.) to pile up; to accumulate — 「雪が積もる」 snow piles up; 「塵も積もれば山となる」 many small things add up |
+| 届く | とどく | 送到；够得着（自动词）——他动词是「届ける」；「荷物が届く」包裹送到；「手が届く」够得着//(v, intrans.) to arrive; to reach — transitive pair: 「届ける」; 「荷物が届く」 a package arrives; 「手が届く」 within reach |
+| 沸く | わく | （水）开；沸腾（自动词）——烧水是「沸かす」；「お湯が沸く」水开了//(v, intrans.) to boil (of water) — boiling it yourself is 「沸かす」; 「お湯が沸く」 the water boils |
+| 慣れる | なれる | 习惯；适应（自动词）——对象用「に」；「仕事に慣れる」习惯工作；「日本の生活に慣れる」适应日本生活//(v, intrans.) to get used to — the thing takes 「に」; 「仕事に慣れる」 to get used to the job; 「日本の生活に慣れる」 to get used to life in Japan |
+| 相談する | そうだんする | 商量；咨询（自他动词）——咨询的对象用「に」；「先生に相談する」找老师商量//(v, intrans./trans.) to consult; to talk over — the person consulted takes 「に」; 「先生に相談する」 to ask the teacher for advice |
+| 卒業 | そつぎょう | 毕业（名、可作动词）——学校用「を」；「大学を卒業する」大学毕业；「卒業式」毕业典礼//(n, suru-verb) graduation — the school takes 「を」; 「大学を卒業する」 to graduate from university; 「卒業式」 a graduation ceremony |
+| 信号 | しんごう | 红绿灯；信号（名）——绿灯叫「青」；「信号を守る」遵守信号灯；「信号が青になる」变绿灯//(n) traffic light; signal — the green light is called 「青」 (blue); 「信号を守る」 to obey traffic lights; 「信号が青になる」 the light turns green |
+| 宝くじ | たからくじ | 彩票（名）——「宝くじに当たる」中彩票；「宝くじを買う」买彩票//(n) lottery; lottery ticket — 「宝くじに当たる」 to win the lottery; 「宝くじを買う」 to buy a lottery ticket |
+| 当たる | あたる | 中（奖）；碰上；猜中（自动词）——「宝くじに当たる」中彩票；「予報が当たる」预报准了//(v, intrans.) to win (a lottery); to hit; to be right — 「宝くじに当たる」 to win the lottery; 「予報が当たる」 the forecast is right |
+| 迷う | まよう | 犹豫；迷路（自动词）——「道に迷う」迷路；「どっちにするか迷う」拿不定主意选哪个//(v, intrans.) to hesitate; to be torn; to get lost — 「道に迷う」 to get lost; 「どっちにするか迷う」 can't decide which |
 
 ---
 

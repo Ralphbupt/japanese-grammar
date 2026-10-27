@@ -12,24 +12,24 @@ This lesson focuses on N3 grammar for expressing cause and reason. These express
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 努力 | どりょく | 努力（名、可作动词）——在日语中是名词，“努力地”另有说法//(n, suru-verb) effort; hard work; endeavor — a noun: doryoku suru = make an effort; adverbial "hard" is isshoukenmei |
-| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取//(n, suru-verb) passing (an exam); being accepted (to a school) — shiken ni goukaku suru = pass an exam; mainly exams and admissions |
-| 渋滞 | じゅうたい | 堵车；交通拥堵（名、可作动词）//(n, suru-verb) traffic jam; congestion — on roads; juutai ni makikomareru = get stuck in traffic, the classic excuse for being late |
-| 遅刻 | ちこく | 迟到（名、可作动词）//(n, suru-verb) being late — for school, work or an appointment; said of people, while trains okureru (run late) |
-| 不注意 | ふちゅうい | 疏忽；不小心（名、形容动词）//(n, na-adj) carelessness; inattention; negligence — a cause of accidents or mistakes: fuchuui ni yoru jiko |
-| 事故 | じこ | 事故（名）//(n) accident; incident — traffic or industrial accidents; jiko ni au = have an accident |
-| 約束 | やくそく | 约定；诺言（名、可作动词）——也指约会//(n, suru-verb) promise; appointment; arrangement — also a plan to meet someone; keep one = mamoru, break one = yaburu |
-| 責任 | せきにん | 责任（名）//(n) responsibility; liability; blame — sekinin o toru = take responsibility; sekininsha = the person in charge |
-| 引き受ける | ひきうける | 承担；接受（他动词）——接下请求或任务//(v, trans.) to take on; to accept (a job or request); to undertake — agreeing to do work someone asks of you, often reluctantly |
-| 覚悟 | かくご | 思想准备；决心（名、可作动词）——不是中文“觉悟（觉醒）”//(n, suru-verb) resolve; readiness (for hardship) — bracing for something hard or a bad outcome; kakugo shite iru = be prepared for the worst |
-| 地形 | ちけい | 地形（名）//(n) terrain; topography; lay of the land — the physical shape of land: mountains, valleys, coastline |
-| 特殊 | とくしゅ | 特殊；特别（形容动词）//(na-adj) special; unusual; peculiar — out of the ordinary, often technical; tokubetsu is the everyday "special" |
-| 由来 | ゆらい | 由来；来历（名、可作动词）//(n, suru-verb) origin; derivation — where a name or custom comes from: ...ni yurai suru |
-| 形 | かたち | 形状；形式（名）//(n) shape; form; style — physical shape or outward form; katachi dake = only for show |
-| 成績 | せいせき | 成绩（名）//(n) grades; results; performance — school grades or results in work and sports |
-| 応援 | おうえん | 支持；加油助威（名、可作动词）//(n, suru-verb) support; cheering (for); backing — cheering a team or encouraging someone; ouen shite iru yo = I'm rooting for you |
-| 留学 | りゅうがく | 留学（名、可作动词）//(n, suru-verb) studying abroad — the destination takes ni (Nihon ni ryuugaku suru); ryuugakusei = international student, including foreigners in Japan |
-| 決心 | けっしん | 决心（名、可作动词）//(n, suru-verb) determination; resolution; making up one's mind — a personal decision to do something |
+| 努力 | どりょく | 努力（名、可作动词）——是名词，“努力地”说「一生懸命」；「努力が報われる」努力得到回报；「努力を重ねる」不断努力//(n, suru-verb) effort; hard work — a noun, not an adverb ("work hard" is 「一生懸命」); 「努力が報われる」 one's efforts pay off; 「努力を重ねる」 to keep working hard |
+| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取；「試験に合格する」考试合格；「大学に合格する」考上大学//(n, suru-verb) passing (an exam); being accepted — 「試験に合格する」 to pass an exam; 「大学に合格する」 to get into a university |
+| 渋滞 | じゅうたい | 堵车；交通拥堵（名、可作动词）——「渋滞に巻き込まれる」遇上堵车；「交通渋滞」交通拥堵//(n, suru-verb) traffic jam — 「渋滞に巻き込まれる」 to get stuck in traffic; 「交通渋滞」 traffic congestion |
+| 遅刻 | ちこく | 迟到（名、可作动词）——指人迟到，电车晚点用「遅れる」；「授業に遅刻する」上课迟到；「遅刻しそうだ」快迟到了//(n, suru-verb) being late — of people; trains running late is 「遅れる」; 「授業に遅刻する」 to be late for class; 「遅刻しそうだ」 I'm about to be late |
+| 不注意 | ふちゅうい | 疏忽；不小心（名、形容动词）——「不注意による事故」因疏忽导致的事故；「私の不注意で」由于我的疏忽//(n, na-adj) carelessness — 「不注意による事故」 an accident caused by carelessness; 「私の不注意で」 through my own carelessness |
+| 事故 | じこ | 事故（名）——「事故に遭う」遇到事故；「交通事故」交通事故//(n) accident — 「事故に遭う」 to be in an accident; 「交通事故」 a traffic accident |
+| 約束 | やくそく | 约定；诺言（名、可作动词）——也指约好见面；「約束を守る」守约；「約束を破る」失约//(n, suru-verb) promise; appointment — also a plan to meet; 「約束を守る」 to keep a promise; 「約束を破る」 to break a promise |
+| 責任 | せきにん | 责任（名）——「責任を取る」承担责任；「責任感」责任感//(n) responsibility; blame — 「責任を取る」 to take responsibility; 「責任感」 a sense of responsibility |
+| 引き受ける | ひきうける | 承担；接受（他动词）——接下别人的请求或任务；「仕事を引き受ける」接下工作；「責任を引き受ける」承担责任//(v, trans.) to take on; to accept (a task or request) — 「仕事を引き受ける」 to take on a job; 「責任を引き受ける」 to accept responsibility |
+| 覚悟 | かくご | 思想准备；决心（名、可作动词）——不是中文“觉悟”，指对困难或坏结果做好心理准备；「覚悟を決める」下定决心；「覚悟の上で」明知如此仍……//(n, suru-verb) resolve; readiness (for hardship) — bracing yourself for something hard or a bad outcome; 「覚悟を決める」 to make up one's mind; 「覚悟の上で」 fully aware of the risks |
+| 地形 | ちけい | 地形（名）——「複雑な地形」复杂的地形；「山の多い地形」多山的地形//(n) terrain; topography — 「複雑な地形」 complex terrain; 「山の多い地形」 mountainous terrain |
+| 特殊 | とくしゅ | 特殊（形容动词）——比「特別」更偏“异于常规、专门”；「特殊な事情」特殊情况；「特殊な技術」特殊技术//(na-adj) special; unusual — more "out of the norm" or technical than 「特別」; 「特殊な事情」 special circumstances; 「特殊な技術」 specialized skills |
+| 由来 | ゆらい | 由来；来历（名、可作动词）——「〜に由来する」源于……；「名前の由来」名字的由来//(n, suru-verb) origin; derivation — 「〜に由来する」 to derive from ~; 「名前の由来」 the origin of a name |
+| 形 | かたち | 形状；形式（名）——「形が変わる」变形；「形だけ」只是走形式//(n) shape; form — 「形が変わる」 to change shape; 「形だけ」 only for show |
+| 成績 | せいせき | 成绩（名）——「成績が上がる」成绩提高；「成績表」成绩单//(n) grades; results; performance — 「成績が上がる」 one's grades improve; 「成績表」 a report card |
+| 応援 | おうえん | 加油；支持（名、可作动词）——「チームを応援する」给队伍加油；「応援してるよ」我支持你//(n, suru-verb) cheering; support — 「チームを応援する」 to cheer for a team; 「応援してるよ」 I'm rooting for you |
+| 留学 | りゅうがく | 留学（名、可作动词）——「日本に留学する」到日本留学；「留学生」留学生（含在日外国学生）//(n, suru-verb) studying abroad — 「日本に留学する」 to study in Japan; 「留学生」 an international student |
+| 決心 | けっしん | 决心（名、可作动词）——「決心がつく」下定决心；「〜しようと決心する」决心要……//(n, suru-verb) determination; making up one's mind — 「決心がつく」 to make up one's mind; 「〜しようと決心する」 to resolve to ~ |
 
 ---
 

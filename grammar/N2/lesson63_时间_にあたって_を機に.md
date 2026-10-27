@@ -12,22 +12,22 @@ This lesson covers N2-level expressions for time and occasion. 「にあたっ�
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 開会 | かいかい | 开幕；会议开始（名、可作动词）——不是“开会”//(n, suru-verb) opening of a meeting or conference — the formal start (kaikaishiki = opening ceremony); simply having a meeting is kaigi o suru |
-| 挨拶 | あいさつ | 问候；致辞（名、可作动词）//(n, suru-verb) greeting; (formal) address; short speech — from saying hello to an official speech at a ceremony |
-| 留学 | りゅうがく | 留学（名、可作动词）//(n, suru-verb) studying abroad — the destination takes ni (Nihon ni ryuugaku suru); ryuugakusei = international student, including foreigners in Japan |
-| 出発 | しゅっぱつ | 出发；动身（名、可作动词）//(n, suru-verb) departure; setting off; start — leaving on a trip; also a fresh start in life |
-| 覚悟 | かくご | 思想准备；决心（名、可作动词）——不是中文“觉悟（觉醒）”//(n, suru-verb) resolve; readiness (for hardship) — bracing for something hard or a bad outcome; kakugo shite iru = be prepared for the worst |
-| 就任 | しゅうにん | 就任；就职（名、可作动词）//(n, suru-verb) assumption of office; taking up a post — formal; becoming president, minister, director |
-| 抱負 | ほうふ | 抱负；志向（名）//(n) aspiration; ambition; plans for the future — often stated at New Year or on taking a new post |
-| 開催 | かいさい | 举办；召开（名、可作动词）//(n, suru-verb) holding (an event, meeting); hosting — formal; Olympics, exhibitions, conferences |
-| 上映 | じょうえい | 上映；放映（名、可作动词）//(n, suru-verb) screening (of a film); showing — "now showing", "screening time" |
-| 説明会 | せつめいかい | 说明会；介绍会（名）//(n) briefing session; information session — company recruitment sessions and school open briefings |
-| 転職 | てんしょく | 换工作；跳槽（名、可作动词）//(n, suru-verb) changing jobs; career change — moving to a different employer; tenshoku katsudou = job hunting while still employed |
-| 結婚 | けっこん | 结婚（名、可作动词）//(n, suru-verb) marriage; getting married — "marry X" is X to kekkon suru; "be married" is kekkon shite iru |
-| 引っ越し | ひっこし | 搬家（名、可作动词）//(n, suru-verb) moving house; relocation — the move itself, packing included; the plain verb is hikkosu |
-| 禁煙 | きんえん | 戒烟；禁止吸烟（名、可作动词）//(n, suru-verb) quitting smoking; no smoking — signs say "no smoking"; personal sense is "quit smoking" |
-| きっかけ | きっかけ | 契机；起因（名）//(n) trigger; what prompted something; opportunity — X o kikkake ni = prompted by X; the spark that starts a change |
-| 見直す | みなおす | 重新审视；重新评估（他动词）//(v, trans.) to review; to reconsider; to see in a new light — re-examine a plan or policy; also to think better of a person |
+| 開会 | かいかい | 开幕；（会议）开始（名、可作动词）——不是“开会”，开会说「会議をする」；「開会式」开幕式；「開会の挨拶」开幕致辞//(n, suru-verb) opening (of a meeting or event) — the formal start; just having a meeting is 「会議をする」; 「開会式」 opening ceremony; 「開会の挨拶」 opening address |
+| 挨拶 | あいさつ | 问候；致辞（名、可作动词）——「挨拶をする」打招呼；「新年の挨拶」新年问候//(n, suru-verb) greeting; (formal) address — from hello to a speech at a ceremony; 「挨拶をする」 to greet; 「新年の挨拶」 New Year greetings |
+| 留学 | りゅうがく | 留学（名、可作动词）——「日本に留学する」到日本留学；「留学生」留学生（含在日外国学生）//(n, suru-verb) studying abroad — 「日本に留学する」 to study in Japan; 「留学生」 an international student |
+| 出発 | しゅっぱつ | 出发；动身（名、可作动词）——「東京を出発する」从东京出发；「出発時間」出发时间//(n, suru-verb) departure; setting off — 「東京を出発する」 to leave Tokyo; 「出発時間」 departure time |
+| 覚悟 | かくご | 思想准备；决心（名、可作动词）——不是中文“觉悟”，指对困难或坏结果做好心理准备；「覚悟を決める」下定决心；「覚悟の上で」明知如此仍……//(n, suru-verb) resolve; readiness (for hardship) — bracing yourself for something hard or a bad outcome; 「覚悟を決める」 to make up one's mind; 「覚悟の上で」 fully aware of the risks |
+| 就任 | しゅうにん | 就任；就职（名、可作动词）——正式用语；「社長に就任する」就任社长；「就任式」就职典礼//(n, suru-verb) taking office — formal; 「社長に就任する」 to become company president; 「就任式」 an inauguration |
+| 抱負 | ほうふ | 抱负；志向（名）——多指新年或就任时说的打算；「新年の抱負」新年计划；「抱負を語る」谈抱负//(n) aspirations; one's plans and hopes — often stated at New Year or on taking a post; 「新年の抱負」 a New Year's resolution; 「抱負を語る」 to talk about one's aims |
+| 開催 | かいさい | 举办；召开（名、可作动词）——「大会を開催する」举办大会；「東京で開催される」在东京举办//(n, suru-verb) holding (an event); hosting — formal; 「大会を開催する」 to hold a tournament; 「東京で開催される」 to be held in Tokyo |
+| 上映 | じょうえい | 上映；放映（名、可作动词）——「上映中」正在上映；「上映時間」片长或放映时间//(n, suru-verb) screening (a film) — 「上映中」 now showing; 「上映時間」 running time or showtime |
+| 説明会 | せつめいかい | 说明会；介绍会（名）——「会社説明会」企业招聘说明会；「説明会に参加する」参加说明会//(n) information session; briefing — 「会社説明会」 a company recruiting session; 「説明会に参加する」 to attend a briefing |
+| 転職 | てんしょく | 换工作；跳槽（名、可作动词）——「転職を考える」考虑换工作；「転職活動」找新工作//(n, suru-verb) changing jobs — 「転職を考える」 to think about changing jobs; 「転職活動」 looking for a new job while employed |
+| 結婚 | けっこん | 结婚（名、可作动词）——对象用「と」；「彼と結婚する」和他结婚；「結婚している」已婚//(n, suru-verb) marriage; getting married — the partner takes 「と」; 「彼と結婚する」 to marry him; 「結婚している」 to be married (not "is getting married") |
+| 引っ越し | ひっこし | 搬家（名、可作动词）——动词是「引っ越す」；「引っ越しを手伝う」帮人搬家；「引っ越しの準備」搬家准备//(n, suru-verb) moving house — the verb is 「引っ越す」; 「引っ越しを手伝う」 to help someone move; 「引っ越しの準備」 getting ready to move |
+| 禁煙 | きんえん | 戒烟；禁止吸烟（名、可作动词）——「禁煙席」禁烟座位；「禁煙に成功する」戒烟成功//(n, suru-verb) no smoking; quitting smoking — 「禁煙席」 a non-smoking seat; 「禁煙に成功する」 to manage to quit smoking |
+| きっかけ | きっかけ | 契机；起因（名）——「〜をきっかけに」以……为契机；「話すきっかけ」搭话的契机//(n) trigger; what prompted something — 「〜をきっかけに」 prompted by ~; 「話すきっかけ」 an opening to start talking |
+| 見直す | みなおす | 重新审视；重新评估（他动词）——也指对人刮目相看；「計画を見直す」重新审视计划；「彼を見直した」对他刮目相看//(v, trans.) to review; to reconsider; to think better of — 「計画を見直す」 to review a plan; 「彼を見直した」 I see him in a better light now |
 
 ---
 

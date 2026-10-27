@@ -12,24 +12,24 @@ This lesson covers N2 grammar for written and formal expression. 「に沿って
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 方針 | ほうしん | 方针；方向（名）//(n) policy; course of action; guiding principle — a company or government's basic direction |
-| 計画 | けいかく | 计划（名、可作动词）//(n, suru-verb) plan; project; scheme — a deliberate, detailed plan; more formal than yotei (an arrangement); keikaku-doori = according to plan |
-| 予定 | よてい | 计划；安排（名、可作动词）——指已定的日程，不是“预订”//(n, suru-verb) plan; schedule; arrangement — something already decided; ~yotei desu = I plan to; booking a room is yoyaku |
-| 意見 | いけん | 意见；看法（名）——中性的“看法”，不一定是批评//(n) opinion; view — neutral, not criticism; iken o iu = give one's opinion; iken suru can mean "admonish" |
-| 反省 | はんせい | 反省；检讨（名、可作动词）//(n, suru-verb) reflection; self-examination; lessons learned — reflecting on one's mistakes; common in Japanese work culture |
-| 成果 | せいか | 成果；成绩（名）//(n) results; fruits (of effort); achievement — concrete outcomes of work or research |
-| 契約 | けいやく | 合同；契约（名、可作动词）//(n, suru-verb) contract; agreement — "sign a contract"; employment contract |
-| 交渉 | こうしょう | 谈判；交涉（名、可作动词）//(n, suru-verb) negotiation; bargaining — business, diplomatic or salary talks with another party |
-| 例外 | れいがい | 例外（名）//(n) exception — "without exception"; "no exceptions" |
-| 祝日 | しゅくじつ | 法定假日；节日（名）//(n) national holiday; public holiday — official holidays on the calendar |
-| 悩む | なやむ | 烦恼；苦恼（自动词）//(v, intrans.) to be troubled; to agonize (over); to worry — ni nayamu = be troubled by; deeper and longer-lasting than shinpai |
-| 話し合う | はなしあう | 商量；讨论（自他动词）//(v, intrans./trans.) to discuss; to talk (something) over — two or more people talking to reach agreement; hanashiai = a discussion |
-| 相談 | そうだん | 商量；咨询（名、可作动词）——不只是商量，也指找人咨询//(n, suru-verb) consultation; talking over; asking for advice — ni soudan suru = ask someone's advice; not only discussing as equals |
-| 慎重 | しんちょう | 慎重；谨慎（形容动词）//(na-adj) careful; cautious; prudent — "cautiously" as adverb; careful decisions |
-| 決断 | けつだん | 决断；决定（名、可作动词）//(n, suru-verb) decision; resolution; decisiveness — a firm, often hard decision |
-| 散々 | さんざん | 狠狠地；反复地（副词、形容动词）//(adv, na-adj) thoroughly; severely; at great length (negative) — sanzan mayotta = agonized for ages; sanzan datta = it was a disaster |
-| 長年 | ながねん | 多年；长年（名、副词）//(n, adv) many years; long years — "for many years", years of research |
-| 研究 | けんきゅう | 研究（名、可作动词）//(n, suru-verb) research; study — academic research; "researcher" is a compound |
+| 方針 | ほうしん | 方针（名）——「会社の方針」公司方针；「方針に沿って」按照方针//(n) policy; basic course — 「会社の方針」 company policy; 「方針に沿って」 in line with the policy |
+| 計画 | けいかく | 计划（名、可作动词）——比「予定」更周密、正式；「計画を立てる」制定计划；「計画通り」按计划//(n, suru-verb) plan; project — a worked-out plan, more deliberate than 「予定」; 「計画を立てる」 to make a plan; 「計画通り」 according to plan |
+| 予定 | よてい | 计划；安排（名、可作动词）——指已定的日程，不是“预订”（预订是「予約」）；「予定がある」有安排；「〜する予定だ」打算……//(n, suru-verb) plan; schedule — something already decided; booking is 「予約」; 「予定がある」 to have plans; 「〜する予定だ」 to be planning to ~ |
+| 意見 | いけん | 意见；看法（名）——中性的“看法”，不一定是批评；「意見を言う」发表看法；「意見が合う」意见一致//(n) opinion; view — neutral, not criticism; 「意見を言う」 to give one's opinion; 「意見が合う」 to see eye to eye |
+| 反省 | はんせい | 反省；检讨（名、可作动词）——「深く反省する」深刻反省；「反省会」总结反思会//(n, suru-verb) reflecting on one's mistakes; self-examination — 「深く反省する」 to deeply regret; 「反省会」 a post-mortem meeting |
+| 成果 | せいか | 成果；成绩（名）——「成果を上げる」取得成果；「研究の成果」研究成果//(n) results; fruits of effort — 「成果を上げる」 to produce results; 「研究の成果」 research findings |
+| 契約 | けいやく | 合同；契约（名、可作动词）——「契約を結ぶ」签订合同；「契約社員」合同工//(n, suru-verb) contract — 「契約を結ぶ」 to sign a contract; 「契約社員」 a contract employee |
+| 交渉 | こうしょう | 谈判；交涉（名、可作动词）——「値段を交渉する」讲价；「交渉がまとまる」谈判达成一致//(n, suru-verb) negotiation; bargaining — 「値段を交渉する」 to haggle over the price; 「交渉がまとまる」 the talks reach a deal |
+| 例外 | れいがい | 例外（名）——「例外なく」无一例外；「例外を認める」允许例外//(n) exception — 「例外なく」 without exception; 「例外を認める」 to make an exception |
+| 祝日 | しゅくじつ | 法定假日；节日（名）——「土日祝日」周末及节假日；「国民の祝日」国家法定节日//(n) national holiday — 「土日祝日」 weekends and holidays; 「国民の祝日」 public holidays |
+| 悩む | なやむ | 烦恼；苦恼（自动词）——比「心配」更深、更持久；「人間関係に悩む」为人际关系烦恼；「悩んだ末に」苦恼了半天之后//(v, intrans.) to be troubled; to agonize — deeper and longer than 「心配」; 「人間関係に悩む」 to struggle with relationships; 「悩んだ末に」 after much agonizing |
+| 話し合う | はなしあう | 商量；讨论（自他动词）——双方交换意见以达成一致；「家族と話し合う」和家人商量；「話し合いで決める」通过协商决定//(v, intrans./trans.) to talk over; to discuss — to reach agreement together; 「家族と話し合う」 to talk it over with family; 「話し合いで決める」 to decide through discussion |
+| 相談 | そうだん | 商量；咨询（名、可作动词）——不只是平等商量，也指找人请教；「先生に相談する」找老师商量；「相談に乗る」帮人出主意//(n, suru-verb) consultation; asking for advice — 「先生に相談する」 to ask a teacher's advice; 「相談に乗る」 to give someone advice |
+| 慎重 | しんちょう | 慎重；谨慎（形容动词）——「慎重に検討する」慎重考虑；「慎重な性格」谨慎的性格//(na-adj) careful; cautious — 「慎重に検討する」 to consider carefully; 「慎重な性格」 a cautious nature |
+| 決断 | けつだん | 决断；决定（名、可作动词）——指果断的、往往艰难的决定；「決断を下す」作出决断；「決断力」决断力//(n, suru-verb) (hard) decision; decisiveness — a firm call, often a tough one; 「決断を下す」 to make the call; 「決断力」 decisiveness |
+| 散々 | さんざん | 狠狠地；反复地；糟透了（副词、形容动词）——多用于负面；「散々悩む」苦恼了半天；「散々な目にあう」吃尽苦头//(adv, na-adj) thoroughly; endlessly; terrible — usually negative; 「散々悩む」 to agonize for ages; 「散々な目にあう」 to have a terrible time |
+| 長年 | ながねん | 多年；长年（名、副词）——「長年の夢」多年的梦想；「長年にわたって」长年以来//(n, adv) many years — 「長年の夢」 a long-held dream; 「長年にわたって」 over many years |
+| 研究 | けんきゅう | 研究（名、可作动词）——「研究を進める」推进研究；「研究者」研究人员//(n, suru-verb) research; study — 「研究を進める」 to carry on research; 「研究者」 a researcher |
 
 ---
 

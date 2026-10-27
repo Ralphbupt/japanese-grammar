@@ -12,24 +12,24 @@ This lesson covers N2-level conjunctions and transitional expressions. 「それ
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 接続詞 | せつぞくし | 连词；接续词（名）//(n) conjunction (part of speech) — words linking sentences, like "however" |
-| 逆接 | ぎゃくせつ | 转折（名）//(n) adversative connection (like "but" or "although") — grammar term for clauses whose result goes against expectation |
-| 結論 | けつろん | 结论（名）//(n) conclusion — "reach a conclusion"; "in conclusion" |
-| 要するに | ようするに | 总之；简而言之（副词）//(adv) in short; in a word; basically — sums up what was just said, conversational and written |
-| 予報 | よほう | 预报（名、可作动词）//(n, suru-verb) forecast (esp. weather) — weather forecast |
-| 渋滞 | じゅうたい | 堵车；交通拥堵（名、可作动词）//(n, suru-verb) traffic jam; congestion — on roads; juutai ni makikomareru = get stuck in traffic, the classic excuse for being late |
-| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取//(n, suru-verb) passing (an exam); being accepted (to a school) — shiken ni goukaku suru = pass an exam; mainly exams and admissions |
-| 不合格 | ふごうかく | 不合格；不及格（名）//(n) failing (an exam); disqualification — failing an entrance exam or inspection |
-| 実験 | じっけん | 实验（名、可作动词）//(n, suru-verb) experiment; test — scientific experiments |
-| 証明 | しょうめい | 证明（名、可作动词）//(n, suru-verb) proof; demonstration; certification — prove a theory; ID certificate |
-| 仮説 | かせつ | 假说；假设（名）//(n) hypothesis — "verify a hypothesis" |
-| 定義 | ていぎ | 定义（名、可作动词）//(n, suru-verb) definition — define a term |
-| 成果 | せいか | 成果；成绩（名）//(n) results; fruits (of effort); achievement — concrete outcomes of work or research |
-| 優勝 | ゆうしょう | 夺冠；获得冠军（名、可作动词）——是动作，不是“冠军”本人//(n, suru-verb) winning (a championship); taking first place — the win itself; the winner is yuushousha |
-| 節約 | せつやく | 节约；节省（名、可作动词）//(n, suru-verb) saving; economizing — cutting spending on money, electricity or water |
-| 無駄遣い | むだづかい | 浪费；乱花钱（名、可作动词）//(n, suru-verb) wasting money; wasteful spending; squandering |
-| 原因 | げんいん | 原因（名）//(n) cause; origin; source — the cause of an event or accident; riyuu is a reason or motive |
-| 規則 | きそく | 规则；规定（名）//(n) rule; regulation — written rules of a school, company or game; follow them = mamoru |
+| 接続詞 | せつぞくし | 连词；接续词（名）——「逆接の接続詞」表转折的连词；「接続詞の使い方」连词的用法//(n) conjunction — words like "however" that link sentences; 「逆接の接続詞」 a contrastive conjunction; 「接続詞の使い方」 how to use conjunctions |
+| 逆接 | ぎゃくせつ | 转折（名）——语法术语；「逆接の接続詞」转折连词；「逆接の表現」转折表达//(n) adversative (contrastive) connection — grammar term for "but / although"; 「逆接の接続詞」 a contrastive conjunction; 「逆接の表現」 contrastive expressions |
+| 結論 | けつろん | 结论（名）——「結論を出す」得出结论；「結論から言うと」先说结论//(n) conclusion — 「結論を出す」 to reach a conclusion; 「結論から言うと」 to cut to the chase |
+| 要するに | ようするに | 总之；简而言之（副词）——用来概括前面的话；「要するに〜ということだ」总之就是……//(adv) in short; basically — sums up what was just said; 「要するに〜ということだ」 in short, what it means is ~ |
+| 予報 | よほう | 预报（名、可作动词）——「天気予報」天气预报；「予報が外れる」预报不准//(n, suru-verb) forecast — 「天気予報」 the weather forecast; 「予報が外れる」 the forecast is wrong |
+| 渋滞 | じゅうたい | 堵车；交通拥堵（名、可作动词）——「渋滞に巻き込まれる」遇上堵车；「交通渋滞」交通拥堵//(n, suru-verb) traffic jam — 「渋滞に巻き込まれる」 to get stuck in traffic; 「交通渋滞」 traffic congestion |
+| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取；「試験に合格する」考试合格；「大学に合格する」考上大学//(n, suru-verb) passing (an exam); being accepted — 「試験に合格する」 to pass an exam; 「大学に合格する」 to get into a university |
+| 不合格 | ふごうかく | 不合格；不及格（名）——「試験に不合格になる」考试没通过；「不合格通知」落榜通知//(n) failing (an exam or inspection) — 「試験に不合格になる」 to fail an exam; 「不合格通知」 a rejection notice |
+| 実験 | じっけん | 实验（名、可作动词）——「実験を行う」进行实验；「実験に成功する」实验成功//(n, suru-verb) experiment — 「実験を行う」 to carry out an experiment; 「実験に成功する」 an experiment succeeds |
+| 証明 | しょうめい | 证明（名、可作动词）——「仮説を証明する」证明假说；「身分証明書」身份证件//(n, suru-verb) proof; certification — 「仮説を証明する」 to prove a hypothesis; 「身分証明書」 an ID card |
+| 仮説 | かせつ | 假说；假设（名）——「仮説を立てる」提出假说；「仮説を検証する」验证假说//(n) hypothesis — 「仮説を立てる」 to form a hypothesis; 「仮説を検証する」 to test a hypothesis |
+| 定義 | ていぎ | 定义（名、可作动词）——「言葉の定義」词语的定义；「〜と定義する」定义为……//(n, suru-verb) definition — 「言葉の定義」 the definition of a word; 「〜と定義する」 to define as ~ |
+| 成果 | せいか | 成果；成绩（名）——「成果を上げる」取得成果；「研究の成果」研究成果//(n) results; fruits of effort — 「成果を上げる」 to produce results; 「研究の成果」 research findings |
+| 優勝 | ゆうしょう | 夺冠（名、可作动词）——指获胜这件事，冠军本人是「優勝者」；「大会で優勝する」在比赛中夺冠；「優勝を争う」争夺冠军//(n, suru-verb) winning (a championship); first place — the win itself; the winner is 「優勝者」; 「大会で優勝する」 to win the tournament; 「優勝を争う」 to compete for the title |
+| 節約 | せつやく | 节约；节省（名、可作动词）——「電気を節約する」节约用电；「時間の節約」节省时间//(n, suru-verb) saving; economizing — 「電気を節約する」 to save electricity; 「時間の節約」 saving time |
+| 無駄遣い | むだづかい | 浪费；乱花钱（名、可作动词）——「お金の無駄遣い」浪费钱；「無駄遣いをやめる」不再乱花钱//(n, suru-verb) wasting money; wasteful spending — 「お金の無駄遣い」 a waste of money; 「無駄遣いをやめる」 to stop wasting money |
+| 原因 | げんいん | 原因（名）——指引起事情的起因，动机、理由是「理由」；「事故の原因」事故原因；「原因不明」原因不明//(n) cause — what brought something about; a reason or motive is 「理由」; 「事故の原因」 the cause of the accident; 「原因不明」 cause unknown |
+| 規則 | きそく | 规则；规定（名）——「規則を守る」遵守规定；「規則正しい生活」有规律的生活//(n) rule; regulation — 「規則を守る」 to follow the rules; 「規則正しい生活」 a regular, orderly life |
 
 ---
 

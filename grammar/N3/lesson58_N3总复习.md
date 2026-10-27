@@ -12,24 +12,24 @@ This is the comprehensive N3 grammar review lesson. From Lesson 35 to Lesson 57,
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 復習 | ふくしゅう | 复习（名、可作动词）//(n, suru-verb) review (of lessons); revision — going over what you learned; yoshuu = preparing before class |
-| 文法 | ぶんぽう | 语法（名）//(n) grammar — bunpou mondai = grammar questions on the JLPT |
-| 分類 | ぶんるい | 分类（名、可作动词）//(n, suru-verb) classification; categorization — sorting things into groups |
-| 比較 | ひかく | 比较（名、可作动词）//(n, suru-verb) comparison — ni hikaku shite = compared with; hikaku-teki = relatively |
-| 区別 | くべつ | 区别；区分（名、可作动词）//(n, suru-verb) distinction; telling apart — kubetsu ga tsukanai = can't tell them apart |
-| 接続 | せつぞく | 接续；连接（名、可作动词）——语法中指接在什么形式后面//(n, suru-verb) connection; how a grammar pattern attaches — in grammar notes, the form that comes before a pattern; also internet or train connections |
-| 書面語 | しょめんご | 书面语（名）//(n) written language; formal written style — used in essays and news; avoid in casual talk |
-| 口語 | こうご | 口语（名）//(n) spoken language; colloquial style — casual speech; the opposite is the written style |
-| 原因 | げんいん | 原因（名）//(n) cause; origin; source — the cause of an event or accident; riyuu is a reason or motive |
-| 逆接 | ぎゃくせつ | 转折（名）//(n) adversative connection (like "but" or "although") — grammar term for clauses whose result goes against expectation |
-| 傾向 | けいこう | 倾向；趋势（名）//(n) tendency; trend; inclination — ~keikou ga aru = there is a tendency to ~ |
-| 推量 | すいりょう | 推测；推断（名、可作动词）//(n, suru-verb) conjecture; guess; inference — grammar term for guessing forms like darou and rashii |
-| 否定 | ひてい | 否定（名、可作动词）//(n, suru-verb) negation; denial — denying a claim; in grammar, the negative form |
-| 程度 | ていど | 程度（名）//(n) degree; extent; level — aru teido = to some extent; after a number, "about" (juppun teido = ten minutes or so) |
-| 範囲 | はんい | 范围（名）//(n) scope; range; extent — e.g. the range covered by an exam, or within a certain range |
-| 表現 | ひょうげん | 表达；表现（名、可作动词）//(n, suru-verb) expression; way of saying something — a phrase or wording; also expressing feelings |
-| 総合 | そうごう | 综合（名、可作动词）//(n, suru-verb) comprehensive; overall; synthesis — sougou-teki = all-round; a comprehensive review |
-| 練習 | れんしゅう | 练习（名、可作动词）//(n, suru-verb) practice; training; drill — practicing a skill, sport, instrument or language |
+| 復習 | ふくしゅう | 复习（名、可作动词）——课前预习是「予習」；「授業の復習」复习功课；「毎日復習する」每天复习//(n, suru-verb) review — preparing before class is 「予習」; 「授業の復習」 reviewing a lesson; 「毎日復習する」 to review every day |
+| 文法 | ぶんぽう | 语法（名）——「文法問題」语法题；「文法を覚える」记语法//(n) grammar — 「文法問題」 grammar questions; 「文法を覚える」 to learn grammar |
+| 分類 | ぶんるい | 分类（名、可作动词）——「三つに分類する」分为三类；「種類別に分類する」按种类分类//(n, suru-verb) classification — 「三つに分類する」 to sort into three groups; 「種類別に分類する」 to classify by type |
+| 比較 | ひかく | 比较（名、可作动词）——「去年と比較する」与去年相比；「比較的」相对地//(n, suru-verb) comparison — 「去年と比較する」 to compare with last year; 「比較的」 relatively |
+| 区別 | くべつ | 区别；区分（名、可作动词）——「区別がつかない」分不清；「公私を区別する」公私分明//(n, suru-verb) distinction; telling apart — 「区別がつかない」 can't tell them apart; 「公私を区別する」 to keep work and private life separate |
+| 接続 | せつぞく | 接续；连接（名、可作动词）——语法中指接在什么形式后面；「名詞に接続する」接在名词后；「ネットに接続する」连接网络//(n, suru-verb) connection; (in grammar) how a pattern attaches — 「名詞に接続する」 to follow a noun; 「ネットに接続する」 to connect to the internet |
+| 書面語 | しょめんご | 书面语（名）——日语里更常说「書き言葉」；「書き言葉と話し言葉」书面语和口语//(n) written language; formal written style — Japanese more often says 「書き言葉」; 「書き言葉と話し言葉」 written vs. spoken language |
+| 口語 | こうご | 口语（名）——也说「話し言葉」；「口語的な表現」口语化的表达//(n) spoken language; colloquial style — also 「話し言葉」; 「口語的な表現」 a colloquial expression |
+| 原因 | げんいん | 原因（名）——指引起事情的起因，动机、理由是「理由」；「事故の原因」事故原因；「原因不明」原因不明//(n) cause — what brought something about; a reason or motive is 「理由」; 「事故の原因」 the cause of the accident; 「原因不明」 cause unknown |
+| 逆接 | ぎゃくせつ | 转折（名）——语法术语；「逆接の接続詞」转折连词；「逆接の表現」转折表达//(n) adversative (contrastive) connection — grammar term for "but / although"; 「逆接の接続詞」 a contrastive conjunction; 「逆接の表現」 contrastive expressions |
+| 傾向 | けいこう | 倾向；趋势（名）——「〜傾向がある」有……的倾向；「増加傾向」增加趋势//(n) tendency; trend — 「〜傾向がある」 there's a tendency to ~; 「増加傾向」 an upward trend |
+| 推量 | すいりょう | 推测（名、可作动词）——语法术语，指「だろう」「らしい」等推测形式；「推量の表現」推测表达//(n, suru-verb) conjecture; inference — grammar term for guessing forms like 「だろう」 and 「らしい」; 「推量の表現」 expressions of conjecture |
+| 否定 | ひてい | 否定（名、可作动词）——「否定文」否定句；「噂を否定する」否认传闻//(n, suru-verb) negation; denial — 「否定文」 a negative sentence; 「噂を否定する」 to deny a rumor |
+| 程度 | ていど | 程度（名）——接数量后表示“左右”；「ある程度」某种程度上；「10分程度」十分钟左右//(n) degree; extent — after a number, "about"; 「ある程度」 to some extent; 「10分程度」 about 10 minutes |
+| 範囲 | はんい | 范围（名）——「試験の範囲」考试范围；「予算の範囲内で」在预算范围内//(n) scope; range — 「試験の範囲」 what the exam covers; 「予算の範囲内で」 within the budget |
+| 表現 | ひょうげん | 表达；表现（名、可作动词）——「気持ちを表現する」表达感情；「丁寧な表現」礼貌的说法//(n, suru-verb) expression; wording — 「気持ちを表現する」 to express one's feelings; 「丁寧な表現」 a polite expression |
+| 総合 | そうごう | 综合（名、可作动词）——「総合的に判断する」综合判断；「総合問題」综合题//(n, suru-verb) comprehensive; overall — 「総合的に判断する」 to judge from all angles; 「総合問題」 a comprehensive exercise |
+| 練習 | れんしゅう | 练习（名、可作动词）——「ピアノを練習する」练钢琴；「練習試合」练习赛//(n, suru-verb) practice — 「ピアノを練習する」 to practice the piano; 「練習試合」 a practice match |
 
 ---
 

@@ -4,56 +4,56 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 子供 | こども | 孩子；儿童（名）//(n) child; kid — both children in general and one's own children; kodomoppoi = childish |
-| 外 | そと | 外面；户外（名）//(n) outside; outdoors — "play outside" is soto de asobu |
-| 結婚 | けっこん | 结婚（名、可作动词）//(n, suru-verb) marriage; getting married — "marry X" is X to kekkon suru; "be married" is kekkon shite iru |
-| 窓 | まど | 窗户（名）//(n) window — madoguchi = service counter (at a bank or city hall) |
-| 開く | ひらく | 开；打开（自他动词）——门等自己开，也可打开书本等//(v, intrans./trans.) to open — doa ga hiraku = the door opens; hon o hiraku = open a book; compare akeru |
-| 開ける | あける | 打开（他动词）——人去打开门窗等//(v, trans.) to open (something) — mado o akeru = open the window; intransitive pair: aku (it opens) |
-| 言葉 | ことば | 词语；语言（名）//(n) word; language; what someone says — a single word or someone's words |
-| 父 | ちち | （自己的）父亲；爸爸（名）——只用于向外人提自己的父亲//(n) (my) father — humble: only for your own father to outsiders; someone else's is otousan |
-| 銀行 | ぎんこう | 银行（名）//(n) bank |
-| 働く | はたらく | 工作；劳动（自动词）//(v, intrans.) to work; to labor — the workplace takes de: ginkou de hataraku |
-| 漢字 | かんじ | 汉字（名）//(n) kanji; Chinese characters |
-| 教える | おしえる | 教；告诉（他动词）//(v, trans.) to teach; to tell; to show (the way) — also "tell me": denwa bangou o oshiete |
-| 名前 | なまえ | 名字（名）//(n) name — "your name" politely is o-namae |
-| 写真 | しゃしん | 照片（名）//(n) photo; photograph — "take a photo" is shashin o toru |
-| 撮る | とる | 拍（照片）（他动词）//(v, trans.) to take (a photo); to film — same sound as toru (take), written with another kanji |
-| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）//(n, suru-verb, na-adj) worry; concern; anxiety — X o shinpai suru = worry about X; shinpai shinaide = don't worry |
-| 吸う | すう | 吸（烟）；吸气（他动词）//(v, trans.) to smoke; to breathe in; to suck — "smoke a cigarette" is tabako o suu |
-| 辞書 | じしょ | 词典；字典（名）//(n) dictionary — "look up in a dictionary" is jisho o hiku |
-| 授業 | じゅぎょう | 课；上课（名）——不是“传授职业”//(n) class; lesson — a session taught at school, not the subject itself; jugyouryou = tuition |
-| 嘘 | うそ | 谎话；谎言（名）//(n) lie; falsehood — uso o tsuku = tell a lie; uso! = no way! (surprise, not an accusation) |
-| つく | つく | 说（谎）（他动词）//(v, trans.) to tell (a lie) — fixed phrase: uso o tsuku |
-| 手 | て | 手（名）//(n) hand — te o arau = wash your hands; also "a way, a means" (ii te = a good idea) |
-| 宿題 | しゅくだい | 作业（名）//(n) homework; assignment — shukudai o suru = do homework |
-| 返事 | へんじ | 回复；回答（名、可作动词）//(n, suru-verb) reply; answer; response — to letters and messages, or answering hai when your name is called |
-| 考える | かんがえる | 思考；考虑（他动词）//(v, trans.) to think (about); to consider — deliberate thinking; opinions often use omou instead |
-| 弟 | おとうと | 弟弟（名）//(n) younger brother — someone else's is otoutosan |
-| 会う | あう | 见面；遇见（自动词）——见的对象不作宾语//(v, intrans.) to meet; to see (someone) — the person takes ni (or to), not o |
-| 歌う | うたう | 唱（歌）（他动词）//(v, trans.) to sing — song takes o |
-| 薬 | くすり | 药（名）//(n) medicine; drug — you "drink" it: kusuri o nomu, even for pills |
-| レポート | レポート | 报告；（学生的）论文（名）//(n) report; paper (school assignment) — typical university coursework; "hand it in" is dasu |
-| 出す | だす | 提交；拿出；寄出（他动词）//(v, trans.) to submit; to take out; to send — very broad: hand in, put out, mail, show |
-| 書類 | しょるい | 文件；资料（名）//(n) documents; papers; paperwork — official forms, not computer files |
-| 覚える | おぼえる | 记住；学会（他动词）//(v, trans.) to memorize; to remember; to learn — "I remember" is oboete iru |
-| 大事 | だいじ | 重要；珍惜（形容动词）//(na-adj) important; precious; valuable — o-daiji ni = get well soon (said to someone sick) |
-| 試験 | しけん | 考试（名）//(n) exam; test — "take an exam" is shiken o ukeru |
-| 急ぐ | いそぐ | 赶紧；急忙（自动词）//(v, intrans.) to hurry; to rush — te-form isoide; isoide! = hurry up! |
-| 靴 | くつ | 鞋（名）//(n) shoes — taken off at the entrance of Japanese homes: kutsu o nugu |
-| 脱ぐ | ぬぐ | 脱（衣服、鞋）（他动词）//(v, trans.) to take off (clothes, shoes) — opposite depends on the item: kiru, haku |
-| 傘 | かさ | 伞（名）//(n) umbrella — "open an umbrella" is kasa o sasu |
-| 持つ | もつ | 拿；带；持有（他动词）//(v, trans.) to hold; to carry; to have — "have with you" is motte iru |
-| 困る | こまる | 为难；困扰（自动词）//(v, intrans.) to be in trouble; to be at a loss — komatta = I'm stuck; komarimasu = please don't (polite objection) |
-| 電気 | でんき | 电；电灯（名）——口语中常指“灯”//(n) electricity; (electric) light — in daily speech often "the lights": denki o tsukeru / kesu = turn the lights on / off |
-| 消す | けす | 关掉；删除；擦掉（他动词）//(v, trans.) to turn off; to erase; to delete — lights, TV, data or writing on a board; denki o kesu = turn off the light |
-| 座る | すわる | 坐（自动词）//(v, intrans.) to sit; to sit down — the seat takes ni: isu ni suwaru |
-| 触る | さわる | 摸；触碰（自动词）//(v, intrans.) to touch — the object takes ni: "don't touch" is sawaranaide |
-| 走る | はしる | 跑；奔跑（自动词）//(v, intrans.) to run — also of vehicles (trains run); godan despite ending in -iru: hashirimasu, hashitte |
-| 遅刻 | ちこく | 迟到（名、可作动词）//(n, suru-verb) being late — for school, work or an appointment; said of people, while trains okureru (run late) |
-| 準備 | じゅんび | 准备（名、可作动词）//(n, suru-verb) preparation; getting ready — for events, trips or meals; junbi suru = prepare |
-| シャワー | シャワー | 淋浴（名）//(n) shower — "take a shower" is shawaa o abiru |
-| 浴びる | あびる | 淋；浴（他动词）//(v, trans.) to take (a shower); to bathe in — ichidan verb; also figurative: hinan o abiru = come under fire |
+| 子供 | こども | 孩子；儿童（名）——也常写作「子ども」；「子供の頃」小时候；「子供っぽい」孩子气//(n) child; kid — also written 「子ども」; 「子供の頃」 as a child; 「子供っぽい」 childish |
+| 外 | そと | 外面；户外（名）——「外で遊ぶ」在外面玩；「外に出る」出去//(n) outside; outdoors — 「外で遊ぶ」 to play outside; 「外に出る」 to go out |
+| 結婚 | けっこん | 结婚（名、可作动词）——对象用「と」；「彼と結婚する」和他结婚；「結婚している」已婚//(n, suru-verb) marriage; getting married — the partner takes 「と」; 「彼と結婚する」 to marry him; 「結婚している」 to be married (not "is getting married") |
+| 窓 | まど | 窗户（名）——「窓を開ける」开窗；「窓口」（银行、政府的）窗口//(n) window — 「窓を開ける」 to open the window; 「窓口」 a service counter (bank, city hall) |
+| 開く | ひらく | 开；打开（自他动词）——门自己开、翻开书都可用；「ドアが開く」门开了；「本を開く」翻开书//(v, intrans./trans.) to open — 「ドアが開く」 the door opens; 「本を開く」 to open a book |
+| 開ける | あける | 打开（他动词）——自动词是「開く」；「窓を開ける」开窗；「ドアを開けておく」把门开着//(v, trans.) to open (something) — intransitive pair 「開く」; 「窓を開ける」 to open the window; 「ドアを開けておく」 to leave the door open |
+| 言葉 | ことば | 词语；语言（名）——「言葉を覚える」记单词；「言葉の意味」词的意思//(n) word; language; what someone says — 「言葉を覚える」 to learn words; 「言葉の意味」 the meaning of a word |
+| 父 | ちち | （自己的）父亲；爸爸（名）——只用于对外人说自己的父亲，别人的父亲说「お父さん」//(n) (my) father — only for your own father when talking to others; someone else's is 「お父さん」 |
+| 銀行 | ぎんこう | 银行（名）——「銀行で働く」在银行工作//(n) bank — 「銀行で働く」 to work at a bank |
+| 働く | はたらく | 工作；劳动（自动词）——地点用「で」；「会社で働く」在公司工作；「働きすぎる」工作过度//(v, intrans.) to work — the workplace takes 「で」; 「会社で働く」 to work at a company; 「働きすぎる」 to overwork |
+| 漢字 | かんじ | 汉字（名）——「漢字を覚える」记汉字；「漢字の読み方」汉字的读法//(n) kanji; Chinese characters — 「漢字を覚える」 to learn kanji; 「漢字の読み方」 how to read a kanji |
+| 教える | おしえる | 教；告诉（他动词）——也指“告诉”信息；「日本語を教える」教日语；「道を教える」指路//(v, trans.) to teach; to tell; to show — also "tell me" (information); 「日本語を教える」 to teach Japanese; 「道を教える」 to give directions |
+| 名前 | なまえ | 名字（名）——「名前を書く」写名字；「お名前」您的名字//(n) name — 「名前を書く」 to write one's name; 「お名前」 your name (polite) |
+| 写真 | しゃしん | 照片（名）——「写真を撮る」拍照//(n) photo; photograph — 「写真を撮る」 to take a photo |
+| 撮る | とる | 拍（照片）（他动词）——与「取る」同音不同字；「写真を撮る」拍照//(v, trans.) to take (a photo); to film — same sound as 「取る」 (take), different kanji; 「写真を撮る」 to take a photo |
+| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）——「将来を心配する」担心将来；「心配をかける」让人担心//(n, suru-verb, na-adj) worry; concern — 「将来を心配する」 to worry about the future; 「心配をかける」 to make others worry |
+| 吸う | すう | 吸（烟）；吸气（他动词）——「たばこを吸う」抽烟；「息を吸う」吸气//(v, trans.) to smoke; to breathe in; to suck — 「たばこを吸う」 to smoke; 「息を吸う」 to breathe in |
+| 辞書 | じしょ | 词典；字典（名）——「辞書を引く」查词典//(n) dictionary — 「辞書を引く」 to look something up in a dictionary |
+| 授業 | じゅぎょう | 课（名）——指一节课，不是科目，也不是“传授职业”；「授業を受ける」上课；「授業中」上课时//(n) class; lesson — a taught session, not the subject; 「授業を受ける」 to take a class; 「授業中」 during class |
+| 嘘 | うそ | 谎话（名）——单说「嘘！」是“不会吧”的惊讶；「嘘をつく」说谎；「嘘でしょう」不会吧//(n) lie — on its own 「嘘！」 means "no way!"; 「嘘をつく」 to tell a lie; 「嘘でしょう」 you're kidding |
+| つく | つく | 说（谎）（他动词）——固定搭配；「嘘をつく」说谎//(v, trans.) to tell (a lie) — a fixed pairing; 「嘘をつく」 to tell a lie |
+| 手 | て | 手（名）——也指“办法”；「手を洗う」洗手；「いい手」好办法//(n) hand; a way, a means — 「手を洗う」 to wash one's hands; 「いい手」 a good idea |
+| 宿題 | しゅくだい | 作业（名）——「宿題をする」写作业；「宿題を出す」交作业、布置作业//(n) homework — 「宿題をする」 to do homework; 「宿題を出す」 to hand in / set homework |
+| 返事 | へんじ | 回复；回答（名、可作动词）——回信、回消息，或点名时应答；「返事をする」回复；「返事が来る」收到回复//(n, suru-verb) reply; answer; response — to messages, or answering when your name is called; 「返事をする」 to reply; 「返事が来る」 to get a reply |
+| 考える | かんがえる | 思考；考虑（他动词）——指认真思考，说看法多用「思う」；「よく考える」好好想想//(v, trans.) to think (about); to consider — deliberate thinking; opinions usually use 「思う」; 「よく考える」 to think carefully |
+| 弟 | おとうと | 弟弟（名）——别人的弟弟说「弟さん」//(n) younger brother — someone else's is 「弟さん」 |
+| 会う | あう | 见面；遇见（自动词）——对象用「に」或「と」，不用「を」；「友達に会う」见朋友//(v, intrans.) to meet; to see (someone) — the person takes 「に」 or 「と」, never 「を」; 「友達に会う」 to meet a friend |
+| 歌う | うたう | 唱（歌）（他动词）——「歌を歌う」唱歌；「カラオケで歌う」唱卡拉OK//(v, trans.) to sing — 「歌を歌う」 to sing a song; 「カラオケで歌う」 to sing karaoke |
+| 薬 | くすり | 药（名）——吃药用「飲む」，药片也一样；「薬を飲む」吃药；「薬が効く」药见效//(n) medicine — you "drink" it, even pills; 「薬を飲む」 to take medicine; 「薬が効く」 the medicine works |
+| レポート | レポート | 报告；（学生的）小论文（名）——「レポートを書く」写报告；「レポートを出す」交报告//(n) report; paper (school assignment) — 「レポートを書く」 to write a paper; 「レポートを出す」 to hand in a paper |
+| 出す | だす | 交；拿出；寄出（他动词）——用法很广；「宿題を出す」交作业；「手紙を出す」寄信//(v, trans.) to hand in; to take out; to send — very broad; 「宿題を出す」 to hand in homework; 「手紙を出す」 to mail a letter |
+| 書類 | しょるい | 文件；资料（名）——指纸质文件，不是电脑文件；「書類を出す」交材料//(n) documents; papers; paperwork — paper forms, not computer files; 「書類を出す」 to submit the paperwork |
+| 覚える | おぼえる | 记住；学会（他动词）——“记得”说「覚えている」；「単語を覚える」背单词//(v, trans.) to memorize; to remember; to learn — "I remember" is 「覚えている」; 「単語を覚える」 to memorize vocabulary |
+| 大事 | だいじ | 重要；珍惜（形容动词）——「大事な物」重要的东西；「お大事に」请保重（对病人说）//(na-adj) important; precious — 「大事な物」 something precious; 「お大事に」 get well soon (to someone sick) |
+| 試験 | しけん | 考试（名）——「試験を受ける」参加考试；「試験に合格する」考试合格//(n) exam; test — 「試験を受ける」 to take an exam; 「試験に合格する」 to pass an exam |
+| 急ぐ | いそぐ | 赶紧；急忙（自动词）——「急いで」快点；「駅へ急ぐ」赶往车站//(v, intrans.) to hurry — 「急いで」 hurry up!; 「駅へ急ぐ」 to hurry to the station |
+| 靴 | くつ | 鞋（名）——日本进门要脱鞋；「靴を脱ぐ」脱鞋；「靴を履く」穿鞋//(n) shoes — taken off indoors in Japan; 「靴を脱ぐ」 to take off one's shoes; 「靴を履く」 to put on shoes |
+| 脱ぐ | ぬぐ | 脱（衣服、鞋）（他动词）——穿上衣是「着る」，穿鞋是「履く」；「靴を脱ぐ」脱鞋//(v, trans.) to take off (clothes, shoes) — the opposite is 「着る」 (clothes) or 「履く」 (shoes); 「靴を脱ぐ」 to take off one's shoes |
+| 傘 | かさ | 伞（名）——「傘をさす」撑伞；「傘を忘れる」忘带伞//(n) umbrella — 「傘をさす」 to put up an umbrella; 「傘を忘れる」 to forget one's umbrella |
+| 持つ | もつ | 拿；带；持有（他动词）——“带着、有”说「持っている」；「荷物を持つ」拿行李//(v, trans.) to hold; to carry; to have — "have on you" is 「持っている」; 「荷物を持つ」 to carry luggage |
+| 困る | こまる | 为难（自动词）——「お金に困る」缺钱；「困ったな」这下难办了//(v, intrans.) to be in trouble; to be at a loss — 「お金に困る」 to be short of money; 「困ったな」 what am I going to do |
+| 電気 | でんき | 电；电灯（名）——口语中常指“灯”；「電気をつける」开灯；「電気を消す」关灯//(n) electricity; the lights — 「電気をつける」 to turn on the lights; 「電気を消す」 to turn off the lights |
+| 消す | けす | 关掉；删除；擦掉（他动词）——「電気を消す」关灯；「データを消す」删数据//(v, trans.) to turn off; to erase; to delete — 「電気を消す」 to turn off the light; 「データを消す」 to delete data |
+| 座る | すわる | 坐（自动词）——座位用「に」；「椅子に座る」坐在椅子上//(v, intrans.) to sit; to sit down — the seat takes 「に」; 「椅子に座る」 to sit on a chair |
+| 触る | さわる | 摸；触碰（自动词）——对象用「に」；「触らないで」别碰//(v, intrans.) to touch — the thing takes 「に」; 「触らないで」 don't touch |
+| 走る | はしる | 跑（自动词）——形似一段动词，实为五段动词：「走って」；「駅まで走る」跑到车站；「電車が走る」电车行驶//(v, intrans.) to run — conjugates like 「帰る」, not 「見る」: 「走って」; 「駅まで走る」 to run to the station; 「電車が走る」 trains run |
+| 遅刻 | ちこく | 迟到（名、可作动词）——指人迟到，电车晚点用「遅れる」；「授業に遅刻する」上课迟到；「遅刻しそうだ」快迟到了//(n, suru-verb) being late — of people; trains running late is 「遅れる」; 「授業に遅刻する」 to be late for class; 「遅刻しそうだ」 I'm about to be late |
+| 準備 | じゅんび | 准备（名、可作动词）——「準備ができる」准备好了；「試験の準備」备考//(n, suru-verb) preparation; getting ready — 「準備ができる」 to be ready; 「試験の準備」 exam prep |
+| シャワー | シャワー | 淋浴（名）——「シャワーを浴びる」洗淋浴//(n) shower — 「シャワーを浴びる」 to take a shower |
+| 浴びる | あびる | 淋；浴（他动词）——「シャワーを浴びる」洗淋浴；「日を浴びる」晒太阳//(v, trans.) to take (a shower); to bathe in — 「シャワーを浴びる」 to take a shower; 「日を浴びる」 to soak up the sun |
 
 ---
 

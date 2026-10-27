@@ -12,23 +12,23 @@ This lesson covers various "suggestion/advice" expressions and two high-frequenc
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 相談 | そうだん | 商量；咨询（名、可作动词）——不只是商量，也指找人咨询//(n, suru-verb) consultation; talking over; asking for advice — ni soudan suru = ask someone's advice; not only discussing as equals |
-| 薬 | くすり | 药（名）//(n) medicine; drug — you "drink" it: kusuri o nomu, even for pills |
-| 素直 | すなお | 坦率；老实；听话（形容动词）//(na-adj) honest; frank; obedient — open and unresisting; sunao ni ayamaru = apologize without excuses |
-| 謝る | あやまる | 道歉；赔不是（自他动词）//(v, intrans./trans.) to apologize — the person takes ni (sensei ni ayamaru); the words themselves are usually sumimasen or gomen nasai |
-| 飛び込む | とびこむ | 跳入；闯进（自动词）//(v, intrans.) to jump into; to dive in; to rush into — also suddenly entering a situation |
-| 読み込む | よみこむ | 深入阅读；读取（数据）（他动词）//(v, trans.) to read thoroughly; to load (data) — in IT: load or import data |
-| 話し合う | はなしあう | 商量；讨论（自他动词）//(v, intrans./trans.) to discuss; to talk (something) over — two or more people talking to reach agreement; hanashiai = a discussion |
-| 助け合う | たすけあう | 互相帮助（自动词）//(v, intrans.) to help each other — -au = do to each other |
-| 申し込む | もうしこむ | 报名；申请（他动词）//(v, trans.) to apply (for); to sign up; to propose — ni moushikomu = apply to; kekkon o moushikomu = propose marriage |
-| 溶け込む | とけこむ | 融入（自动词）//(v, intrans.) to blend in; to fit in; to dissolve into — fitting into a new group or place |
-| 見合う | みあう | 相称；与……相当（自动词）//(v, intrans.) to be worth; to match; to be in keeping with — ni miau = commensurate with (price, effort) |
-| 愛し合う | あいしあう | 相爱（自动词）//(v, intrans.) to love each other — -au = do to each other, mutually |
-| 確認 | かくにん | 确认；核实（名、可作动词）//(n, suru-verb) confirmation; checking; verification — double-checking facts, schedules or documents; constant at work |
-| 正直 | しょうじき | 诚实；老实说（名、形容动词、副词）//(n, na-adj, adv) honesty; honest; frankly — at the start of a sentence, "to be honest…"; shoujiki ni iu to = honestly speaking |
-| 後悔 | こうかい | 后悔（名、可作动词）//(n, suru-verb) regret; remorse — koukai saki ni tatazu = no use crying over spilt milk |
-| 締め切り | しめきり | 截止日期；期限（名）//(n) deadline; closing date — for assignments, applications and submissions; shimekiri ni maniau = meet the deadline |
-| 落ち着く | おちつく | 冷静下来；平静；安定（自动词）//(v, intrans.) to calm down; to settle down; to settle in — of people, situations or places; ochitsuita = calm, composed |
+| 相談 | そうだん | 商量；咨询（名、可作动词）——不只是平等商量，也指找人请教；「先生に相談する」找老师商量；「相談に乗る」帮人出主意//(n, suru-verb) consultation; asking for advice — 「先生に相談する」 to ask a teacher's advice; 「相談に乗る」 to give someone advice |
+| 薬 | くすり | 药（名）——吃药用「飲む」，药片也一样；「薬を飲む」吃药；「薬が効く」药见效//(n) medicine — you "drink" it, even pills; 「薬を飲む」 to take medicine; 「薬が効く」 the medicine works |
+| 素直 | すなお | 坦率；老实听话（形容动词）——褒义，指不别扭、不抗拒；「素直に謝る」老老实实地道歉；「素直な子」听话的孩子//(na-adj) honest; frank; obedient — open, not stubborn (a compliment); 「素直に謝る」 to apologize without excuses; 「素直な子」 a good-natured, obedient child |
+| 謝る | あやまる | 道歉；赔不是（自他动词）——对象用「に」；「先生に謝る」向老师道歉；「素直に謝る」老老实实地道歉//(v, intrans./trans.) to apologize — the person takes 「に」; 「先生に謝る」 to apologize to the teacher; 「素直に謝る」 to own up and apologize |
+| 飛び込む | とびこむ | 跳进；闯入（自动词）——「プールに飛び込む」跳进泳池；「ニュースが飛び込んでくる」突然传来消息//(v, intrans.) to jump into; to rush into — 「プールに飛び込む」 to dive into the pool; 「ニュースが飛び込んでくる」 news suddenly comes in |
+| 読み込む | よみこむ | 细读；读取（他动词）——「資料を読み込む」反复细读资料；「データを読み込む」读取数据//(v, trans.) to read closely; to load (data) — 「資料を読み込む」 to study the materials closely; 「データを読み込む」 to load data |
+| 話し合う | はなしあう | 商量；讨论（自他动词）——双方交换意见以达成一致；「家族と話し合う」和家人商量；「話し合いで決める」通过协商决定//(v, intrans./trans.) to talk over; to discuss — to reach agreement together; 「家族と話し合う」 to talk it over with family; 「話し合いで決める」 to decide through discussion |
+| 助け合う | たすけあう | 互相帮助（自动词）——「合う」表示相互；「困った時は助け合う」困难时互相帮助//(v, intrans.) to help each other — 「合う」 means mutually; 「困った時は助け合う」 to help each other in hard times |
+| 申し込む | もうしこむ | 报名；申请（他动词）——「試験に申し込む」报名考试；「結婚を申し込む」求婚//(v, trans.) to apply; to sign up — 「試験に申し込む」 to register for an exam; 「結婚を申し込む」 to propose marriage |
+| 溶け込む | とけこむ | 融入（自动词）——「新しい環境に溶け込む」融入新环境；「地域に溶け込む」融入当地//(v, intrans.) to blend in; to fit in — 「新しい環境に溶け込む」 to fit into a new environment; 「地域に溶け込む」 to become part of the community |
+| 見合う | みあう | 相称；值得（自动词）——「値段に見合う」物有所值；「努力に見合う結果」与努力相称的结果//(v, intrans.) to match; to be worth — 「値段に見合う」 worth the price; 「努力に見合う結果」 results that match the effort |
+| 愛し合う | あいしあう | 相爱（自动词）——「愛し合う二人」相爱的两人//(v, intrans.) to love each other — 「愛し合う二人」 two people in love |
+| 確認 | かくにん | 确认（名、可作动词）——「予定を確認する」确认日程；「念のため確認する」保险起见再确认一下//(n, suru-verb) confirmation; checking — 「予定を確認する」 to check the schedule; 「念のため確認する」 to double-check just in case |
+| 正直 | しょうじき | 诚实；老实说（名、形容动词、副词）——句首表示“说实话”；「正直に言うと」老实说；「正直な人」诚实的人//(n, na-adj, adv) honesty; honest; frankly — at the start of a sentence, "to be honest"; 「正直に言うと」 honestly speaking; 「正直な人」 an honest person |
+| 後悔 | こうかい | 后悔（名、可作动词）——「後悔しても遅い」后悔也晚了；「後悔先に立たず」后悔莫及//(n, suru-verb) regret — 「後悔しても遅い」 it's too late for regrets; 「後悔先に立たず」 no use crying over spilt milk |
+| 締め切り | しめきり | 截止日期（名）——「締め切りに間に合う」赶上截止日期；「締め切りを過ぎる」过了截止日期//(n) deadline — 「締め切りに間に合う」 to meet the deadline; 「締め切りを過ぎる」 to miss the deadline |
+| 落ち着く | おちつく | 冷静；安定下来（自动词）——「気持ちが落ち着く」心情平静下来；「落ち着いた人」沉稳的人//(v, intrans.) to calm down; to settle down — 「気持ちが落ち着く」 to calm down; 「落ち着いた人」 a calm, composed person |
 
 ---
 

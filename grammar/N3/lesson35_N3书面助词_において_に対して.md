@@ -12,23 +12,23 @@ These grammar points are formal written expressions — essentially upgraded ver
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 地震 | じしん | 地震（名）//(n) earthquake — jishin ga okiru = an earthquake happens; small ones are often just yureta (it shook) |
-| 分野 | ぶんや | 领域；方面（名）//(n) field (of study or work); area; domain — formal; used for academic, professional or industry areas |
-| 第一人者 | だいいちにんしゃ | 第一人；权威（名）——指某领域公认的头号专家//(n) leading authority; the foremost expert in a field — always tied to a field: "the leading figure in X" |
-| 現代 | げんだい | 现代；当代（名）//(n) the present day; modern times; contemporary — used for present-day society and culture, e.g. modern society, modern art |
-| 社会 | しゃかい | 社会（名）——也指走上社会、工作后的世界//(n) society; the community; the working world — shakaijin = a working adult, someone who has left school |
-| 環境 | かんきょう | 环境（名）——既指自然环境，也指工作、学习环境//(n) environment; surroundings; setting — both nature (kankyou mondai = environmental issues) and one's work or study setting |
-| 国際 | こくさい | 国际（名）——多作前缀，如国际会议、国际化//(n) international; international affairs — mostly a prefix: international conference, internationalization |
-| 発言 | はつげん | 发言；言论（名、可作动词）——指会上或公开说的话//(n, suru-verb) remark; statement; speaking up — a public or on-record comment, e.g. in a meeting or by a politician |
-| 注目 | ちゅうもく | 关注；注意（名、可作动词）//(n, suru-verb) attention; notice; close watch — to watch closely or draw attention: chuumoku o atsumeru = attract attention |
-| 態度 | たいど | 态度；举止（名）——指外在表现出来的样子//(n) attitude; manner; the way someone behaves — the outward behavior people can see, e.g. a rude or arrogant manner |
-| 被害 | ひがい | 受害；损失（名）——不是“灾害”本身//(n) damage; harm; loss suffered — what victims suffer from a disaster or crime, not the disaster itself; higai o ukeru = suffer damage |
-| 台風 | たいふう | 台风（名）//(n) typhoon — numbered each year (typhoon No. 10); the season peaks August to October |
-| 実話 | じつわ | 真实故事；真人真事（名）//(n) true story; real-life account — used of films or books: "based on a true story" |
-| 経験 | けいけん | 经验；经历（名、可作动词）//(n, suru-verb) experience — both a single event you went through (keiken suru) and accumulated expertise (keiken ga aru) |
-| 情報 | じょうほう | 信息；情报（名）——一般指信息，不一定是机密//(n) information; news; data — the everyday word for information; not secret "intelligence" as Chinese might suggest |
-| 結果 | けっか | 结果（名）//(n) result; outcome; consequence — exam results or the outcome of a cause; kekka-teki ni = as a result |
-| 意見 | いけん | 意见；看法（名）——中性的“看法”，不一定是批评//(n) opinion; view — neutral, not criticism; iken o iu = give one's opinion; iken suru can mean "admonish" |
+| 地震 | じしん | 地震（名）——「地震が起きる」发生地震；「地震に強い」抗震//(n) earthquake — 「地震が起きる」 an earthquake happens; 「地震に強い」 earthquake-resistant |
+| 分野 | ぶんや | 领域；方面（名）——「専門分野」专业领域；「得意な分野」擅长的领域//(n) field; area (of study or work) — 「専門分野」 one's specialty; 「得意な分野」 an area you're strong in |
+| 第一人者 | だいいちにんしゃ | 第一人；权威（名）——指某领域公认的头号专家；「AI研究の第一人者」AI 研究的权威//(n) the leading authority; the top expert in a field — always of a field; 「AI研究の第一人者」 the leading authority on AI research |
+| 現代 | げんだい | 现代；当代（名）——「現代社会」现代社会；「現代美術」当代艺术//(n) the present day; modern times — 「現代社会」 modern society; 「現代美術」 contemporary art |
+| 社会 | しゃかい | 社会（名）——也指工作后的世界；「社会人」已工作的成年人；「社会に出る」走上社会//(n) society; the working world — 「社会人」 a working adult (no longer a student); 「社会に出る」 to start working life |
+| 環境 | かんきょう | 环境（名）——「環境問題」环境问题；「職場環境」工作环境//(n) environment; surroundings — both nature and the setting you live or work in; 「環境問題」 environmental issues; 「職場環境」 working conditions |
+| 国際 | こくさい | 国际（名）——多作前缀；「国際会議」国际会议；「国際的な」国际性的//(n) international — mostly a prefix; 「国際会議」 an international conference; 「国際的な」 international (as an adjective) |
+| 発言 | はつげん | 发言；言论（名、可作动词）——「会議で発言する」在会上发言；「問題発言」有问题的言论//(n, suru-verb) remark; statement; speaking up — 「会議で発言する」 to speak up in a meeting; 「問題発言」 a controversial remark |
+| 注目 | ちゅうもく | 关注；注目（名、可作动词）——「注目を集める」引起关注；「注目される」受到关注//(n, suru-verb) attention; notice — 「注目を集める」 to attract attention; 「注目される」 to be in the spotlight |
+| 態度 | たいど | 态度（名）——偏指外在表现出的举止；「態度が悪い」态度不好；「先生に対する態度」对老师的态度//(n) attitude; manner — how someone visibly behaves toward others; 「態度が悪い」 rude, has a bad attitude; 「先生に対する態度」 one's attitude toward the teacher |
+| 被害 | ひがい | 受害；损失（名）——指受到的损害，不是灾害本身；「被害を受ける」受灾、受害；「被害者」受害者//(n) damage; harm (suffered) — what victims suffer, not the disaster itself; 「被害を受ける」 to suffer damage; 「被害者」 a victim |
+| 台風 | たいふう | 台风（名）——「台風が来る」台风要来；「台風10号」第10号台风//(n) typhoon — numbered each year; 「台風が来る」 a typhoon is coming; 「台風10号」 Typhoon No. 10 |
+| 実話 | じつわ | 真实故事；真人真事（名）——「実話をもとにした映画」根据真实故事改编的电影//(n) true story — 「実話をもとにした映画」 a film based on a true story |
+| 経験 | けいけん | 经验；经历（名、可作动词）——「〜した経験がある」有过……的经历；「いい経験になる」是个宝贵的经历//(n, suru-verb) experience — both something you went through and know-how; 「〜した経験がある」 to have done ~ before; 「いい経験になる」 to be a good learning experience |
+| 情報 | じょうほう | 信息；资讯（名）——日常用词，不一定是机密“情报”；「情報を集める」收集信息；「個人情報」个人信息//(n) information — the everyday word, not secret intelligence; 「情報を集める」 to gather information; 「個人情報」 personal data |
+| 結果 | けっか | 结果（名）——「試験の結果」考试结果；「結果的に」结果，最终//(n) result; outcome — 「試験の結果」 exam results; 「結果的に」 in the end, as it turned out |
+| 意見 | いけん | 意见；看法（名）——中性的“看法”，不一定是批评；「意見を言う」发表看法；「意見が合う」意见一致//(n) opinion; view — neutral, not criticism; 「意見を言う」 to give one's opinion; 「意見が合う」 to see eye to eye |
 
 ---
 

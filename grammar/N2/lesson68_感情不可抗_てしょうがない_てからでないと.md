@@ -12,24 +12,24 @@ This lesson covers N2 grammar for "uncontrollable emotions" and "necessary preco
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 懐かしい | なつかしい | 怀念的；令人怀念的（形容词）——对过去的温暖感觉，不是伤感//(i-adj) nostalgic; dear (old memories) — a warm, not sad, feeling; exclaimed on seeing something from your past |
-| 羨ましい | うらやましい | 羡慕（形容词）//(i-adj) envious; enviable — urayamashii! = lucky you!; envy of someone's luck, not romantic jealousy (shitto) |
-| 悔しい | くやしい | 不甘心；懊恼（形容词）——输了或失败后的不甘//(i-adj) frustrated; mortified; galling — after losing or being wronged; no exact English match; regret over a choice is koukai |
-| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）//(n, suru-verb, na-adj) worry; concern; anxiety — X o shinpai suru = worry about X; shinpai shinaide = don't worry |
-| 我慢 | がまん | 忍耐；忍受（名、可作动词）——多指忍住疼痛、眼泪、尿意等//(n, suru-verb) patience; putting up with something unpleasant — often "hold it in" (pain, tears, the urge to go) |
-| 確認 | かくにん | 确认；核实（名、可作动词）//(n, suru-verb) confirmation; checking; verification — double-checking facts, schedules or documents; constant at work |
-| 申し込み | もうしこみ | 申请；报名（名）//(n) application; registration; sign-up — for courses, events, contracts; "apply" is the verb form |
-| 許可 | きょか | 许可；批准（名、可作动词）//(n, suru-verb) permission; approval; permit — official permission from an authority |
-| 納得 | なっとく | 认可；理解并接受（名、可作动词）//(n, suru-verb) being convinced; understanding and accepting — "that makes sense"; "I can't accept that" |
-| 実際 | じっさい | 实际；真正（名、副词）//(n, adv) reality; practice; actually — jissai ni = in reality, in practice (as opposed to in theory) |
-| 判断 | はんだん | 判断（名、可作动词）//(n, suru-verb) judgment; decision; assessment — handan suru = judge, decide; handan shikaneru = find it hard to decide |
-| 試す | ためす | 尝试；试验（他动词）//(v, trans.) to try (out); to test — try a new method or product; test one's ability |
-| 黙る | だまる | 沉默；不作声（自动词）//(v, intrans.) to fall silent; to keep quiet — damare! = shut up! (rude); damatte = without asking (damatte tsukau) |
-| 結果 | けっか | 结果（名）//(n) result; outcome; consequence — exam results or the outcome of a cause; kekka-teki ni = as a result |
-| のんびり | のんびり | 悠闲；从容（副词、可作动词）//(adv, suru-verb) leisurely; relaxed; carefree — take it easy; can imply slowness |
-| 落ち着く | おちつく | 冷静下来；平静；安定（自动词）//(v, intrans.) to calm down; to settle down; to settle in — of people, situations or places; ochitsuita = calm, composed |
-| 済む | すむ | 了结；解决（自动词）——常用于“不用…就解决了”//(v, intrans.) to get by (without); to be settled; to end — zu ni sumu = get away without having to; also the root of sumimasen |
-| 手続き | てつづき | 手续（名）//(n) procedure; formalities; paperwork — official processes at city hall, a bank or school |
+| 懐かしい | なつかしい | 令人怀念（形容词）——温暖的怀旧感，不是伤感；「懐かしい写真」令人怀念的照片；「懐かしい！」好怀念啊！//(i-adj) nostalgic; dear — a warm, not sad, feeling; 「懐かしい写真」 an old photo that brings back memories; 「懐かしい！」 that takes me back! |
+| 羨ましい | うらやましい | 羡慕（形容词）——是羡慕，不是嫉妒；「羨ましい！」真羡慕！；「人を羨ましがる」羡慕别人//(i-adj) envious; enviable — envy of luck, not romantic jealousy; 「羨ましい！」 lucky you!; 「人を羨ましがる」 to envy others |
+| 悔しい | くやしい | 不甘心；懊恼（形容词）——输了或受委屈后的不甘，后悔自己的选择用「後悔」；「負けて悔しい」输了很不甘心；「悔し涙」不甘的眼泪//(i-adj) frustrated; mortified — after losing or being wronged; regretting a choice is 「後悔」; 「負けて悔しい」 so frustrating to lose; 「悔し涙」 tears of frustration |
+| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）——「将来を心配する」担心将来；「心配をかける」让人担心//(n, suru-verb, na-adj) worry; concern — 「将来を心配する」 to worry about the future; 「心配をかける」 to make others worry |
+| 我慢 | がまん | 忍耐；忍受（名、可作动词）——多指忍住疼痛、眼泪、冲动等；「痛みを我慢する」忍痛；「もう我慢できない」再也忍不了了//(n, suru-verb) enduring; putting up with — pain, tears, urges; 「痛みを我慢する」 to bear the pain; 「もう我慢できない」 I can't stand it anymore |
+| 確認 | かくにん | 确认（名、可作动词）——「予定を確認する」确认日程；「念のため確認する」保险起见再确认一下//(n, suru-verb) confirmation; checking — 「予定を確認する」 to check the schedule; 「念のため確認する」 to double-check just in case |
+| 申し込み | もうしこみ | 申请；报名（名）——动词是「申し込む」；「申し込みが必要だ」需要报名；「申し込みを締め切る」截止报名//(n) application; sign-up — the verb is 「申し込む」; 「申し込みが必要だ」 registration required; 「申し込みを締め切る」 to close applications |
+| 許可 | きょか | 许可；批准（名、可作动词）——指正式批准；「許可を得る」获得许可；「許可なく」未经许可//(n, suru-verb) permission; permit — official approval; 「許可を得る」 to get permission; 「許可なく」 without permission |
+| 納得 | なっとく | 认可；理解并接受（名、可作动词）——「納得がいかない」想不通，无法接受；「説明に納得する」接受解释//(n, suru-verb) being convinced; accepting as reasonable — 「納得がいかない」 it doesn't sit right with me; 「説明に納得する」 to be satisfied by an explanation |
+| 実際 | じっさい | 实际；真正（名、副词）——「実際に」实际上，真正地；「実際のところ」说实话//(n, adv) reality; actually — 「実際に」 in practice, for real; 「実際のところ」 to tell the truth |
+| 判断 | はんだん | 判断（名、可作动词）——「判断を誤る」判断失误；「判断に迷う」拿不定主意//(n, suru-verb) judgment; decision — 「判断を誤る」 to misjudge; 「判断に迷う」 to be unsure what to decide |
+| 試す | ためす | 尝试；试验（他动词）——「新しい方法を試す」试新方法；「実力を試す」检验实力//(v, trans.) to try out; to test — 「新しい方法を試す」 to try a new method; 「実力を試す」 to test one's ability |
+| 黙る | だまる | 沉默；不作声（自动词）——「黙って」也指“擅自，不打招呼”；「黙れ」闭嘴（粗鲁）；「黙って使う」擅自使用//(v, intrans.) to fall silent; to keep quiet — 「黙って」 also means "without asking"; 「黙れ」 shut up! (rude); 「黙って使う」 to use without asking |
+| 結果 | けっか | 结果（名）——「試験の結果」考试结果；「結果的に」结果，最终//(n) result; outcome — 「試験の結果」 exam results; 「結果的に」 in the end, as it turned out |
+| のんびり | のんびり | 悠闲；从容（副词、可作动词）——有时暗含慢吞吞；「のんびり過ごす」悠闲度日；「のんびりした性格」慢性子//(adv, suru-verb) leisurely; relaxed — can imply slowness; 「のんびり過ごす」 to take it easy; 「のんびりした性格」 a laid-back personality |
+| 落ち着く | おちつく | 冷静；安定下来（自动词）——「気持ちが落ち着く」心情平静下来；「落ち着いた人」沉稳的人//(v, intrans.) to calm down; to settle down — 「気持ちが落ち着く」 to calm down; 「落ち着いた人」 a calm, composed person |
+| 済む | すむ | 了结；解决；不用……就行（自动词）——「〜ずに済む」不用……就解决了；「謝って済む問題じゃない」不是道歉就能了结的事//(v, intrans.) to be settled; to end; to get by (without) — 「〜ずに済む」 to get away without having to ~; 「謝って済む問題じゃない」 an apology won't settle this |
+| 手続き | てつづき | 手续（名）——「手続きをする」办手续；「入学手続き」入学手续//(n) procedure; paperwork — 「手続きをする」 to go through the formalities; 「入学手続き」 enrollment procedures |
 
 ---
 

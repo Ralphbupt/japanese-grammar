@@ -12,25 +12,25 @@ After learning sonkeigo and kenjogo, the hard part isn't the grammar — it's **
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 担当 | たんとう | 负责；担任（名、可作动词）//(n, suru-verb) being in charge (of); the person in charge — tantousha = the person handling it; tantou wa dare? = who's handling this? |
-| 失礼 | しつれい | 失礼；不礼貌；告辞（名、形容动词）//(n, na-adj) rudeness; impolite; excuse me — also said when entering or leaving a room |
-| 恐れ入る | おそれいる | 不好意思；过意不去（自动词）//(v, intrans.) to be very sorry (to trouble you); to be grateful — osoreirimasu ga = sorry to trouble you, but… |
-| 早速 | さっそく | 立刻；马上（副词）//(adv) immediately; right away; without delay — acting promptly on something just received or decided |
-| 取り急ぎ | とりいそぎ | （邮件用语）先简单告知（副词）//(adv) in haste; for now — email set phrase: toriisogi go-renraku made = just a quick note for now |
-| 承知 | しょうち | 知道；明白（名、可作动词）//(n, suru-verb) knowing; understanding; consent — shouchi shimashita = understood (to a client or superior), politer than wakarimashita |
-| かしこまる | かしこまる | 明白了；遵命（自动词、谦让语）//(v, intrans., humble) to acknowledge (a request) — kashikomarimashita = certainly, said by staff to customers or to a superior |
-| 検討 | けんとう | 研究；考虑（名、可作动词）——不是“检讨（反省）”；商务中也常是委婉拒绝//(n, suru-verb) consideration; examination; looking into — kentou shimasu (we'll consider it) is often a polite no in business |
-| 改めて | あらためて | 重新；改天再（副词）//(adv) again; anew; on another occasion — aratamete go-renraku shimasu = I'll contact you again later |
-| 後日 | ごじつ | 日后；改天（名、副词）//(n, adv) later; at a later date — formal, common in business |
-| 御社 | おんしゃ | 贵公司（口语）（名）//(n) your company (polite) — used in speech; in writing use kisha |
-| 弊社 | へいしゃ | 敝公司（名）//(n) our company (humble) — in business speech and writing |
-| 貴社 | きしゃ | 贵公司（书面）（名）//(n) your company (polite) — used in writing (letters, applications) |
-| 御中 | おんちゅう | （写给机构、部门的）敬启（接尾词）//(suffix) to; attention of — added after a company or department name on envelopes; not for a person |
-| 様 | さま | 先生；女士（敬称）（接尾词）//(suffix) Mr.; Ms. — more formal than san; for customers and on addresses |
-| 件 | けん | 事情；事项（名）//(n) matter; case; issue — kono ken = this matter; also counts cases (goken = five cases) |
-| 用件 | ようけん | 事情；要办的事（名）//(n) business; the matter one is calling about — on the phone: go-youken wa? = may I ask what it's regarding? |
-| 都合 | つごう | 方便与否；情况（名）——问时间是否方便//(n) convenience; circumstances — whether a time suits you; tsugou ga ii / warui = it suits / doesn't suit me |
-| 申し訳ない | もうしわけない | 非常抱歉；对不起（形容词）//(i-adj) inexcusable; I'm terribly sorry — moushiwake gozaimasen is far more formal than sumimasen |
+| 担当 | たんとう | 负责；负责人（名、可作动词）——「担当者」负责人；「営業を担当する」负责销售//(n, suru-verb) being in charge (of); the person in charge — 「担当者」 the person handling it; 「営業を担当する」 to be in charge of sales |
+| 失礼 | しつれい | 失礼；告辞（名、形容动词）——也用作进出房间时的招呼；「失礼します」打扰了、告辞了；「失礼な人」没礼貌的人//(n, na-adj) rudeness; rude; excuse me — also said entering or leaving a room; 「失礼します」 excuse me (coming in or leaving); 「失礼な人」 a rude person |
+| 恐れ入る | おそれいる | 不好意思；过意不去（自动词）——商务中用于麻烦对方或致谢；「恐れ入りますが」不好意思，麻烦您……；「恐れ入ります」实在过意不去//(v, intrans.) to be very sorry (to trouble you); to be grateful — 「恐れ入りますが」 sorry to trouble you, but…; 「恐れ入ります」 thank you very much (humbly) |
+| 早速 | さっそく | 立刻；马上（副词）——收到或决定后马上行动；「早速ですが」那我就直入正题；「早速始める」马上开始//(adv) immediately; without delay — acting promptly on something just received; 「早速ですが」 let me get right to the point; 「早速始める」 to start right away |
+| 取り急ぎ | とりいそぎ | 先简单（告知）（副词）——邮件用语；「取り急ぎご連絡まで」先简单通知一下；「取り急ぎお礼まで」谨先致谢//(adv) in haste; for now — an email set phrase; 「取り急ぎご連絡まで」 just a quick note for now; 「取り急ぎお礼まで」 a quick thank-you for now |
+| 承知 | しょうち | 知道；同意（名、可作动词）——对客户、上级用，比「わかりました」恭敬；「承知しました」明白了；「ご承知のとおり」如您所知//(n, suru-verb) knowing; understanding; consent — to clients or superiors, politer than 「わかりました」; 「承知しました」 understood; 「ご承知のとおり」 as you are aware |
+| かしこまる | かしこまる | 恭敬地领命（自动词、谦让语）——几乎只用于「かしこまりました」，比「わかりました」恭敬，店员、下属常用；「かしこまりました」好的，明白了//(v, intrans., humble) to acknowledge (a request) respectfully — almost only as 「かしこまりました」, politer than 「わかりました」, said by staff; 「かしこまりました」 certainly |
+| 検討 | けんとう | 研究；考虑（名、可作动词）——不是“检讨（反省）”，商务中也常是委婉拒绝；「検討します」我们会考虑；「前向きに検討する」积极考虑//(n, suru-verb) consideration; looking into — in business often a polite no; 「検討します」 we'll consider it; 「前向きに検討する」 to consider favorably |
+| 改めて | あらためて | 重新；改天再（副词）——「改めてご連絡します」改天再联系您；「改めて考える」重新考虑//(adv) again; anew; on another occasion — 「改めてご連絡します」 I'll contact you again later; 「改めて考える」 to think it over again |
+| 後日 | ごじつ | 日后；改天（名、副词）——商务正式用语；「後日ご連絡します」日后再联系您//(n, adv) later; at a later date — formal, common in business; 「後日ご連絡します」 we'll contact you at a later date |
+| 御社 | おんしゃ | 贵公司（口语）（名）——说话时用，书面用「貴社」；「御社の製品」贵公司的产品//(n) your company (polite, spoken) — in writing use 「貴社」; 「御社の製品」 your company's products |
+| 弊社 | へいしゃ | 敝公司（名）——口头、书面都用；「弊社の田中」敝公司的田中//(n) our company (humble) — in speech and writing; 「弊社の田中」 Tanaka from our company |
+| 貴社 | きしゃ | 贵公司（书面）（名）——书信、求职材料用；「貴社を志望した理由」应聘贵公司的理由//(n) your company (polite, written) — letters and applications; 「貴社を志望した理由」 my reason for applying to your company |
+| 御中 | おんちゅう | 敬启（写给机构、部门）（接尾词）——加在公司、部门名后，不用于个人；「営業部御中」营业部敬启//(suffix) to; attention of — after a company or department name on envelopes, never a person; 「営業部御中」 To: Sales Department |
+| 様 | さま | 先生；女士（敬称）（接尾词）——比「さん」正式，用于顾客和收件人；「田中様」田中先生、女士；「お客様」顾客//(suffix) Mr.; Ms. — more formal than 「さん」, for customers and on addresses; 「田中様」 Mr./Ms. Tanaka; 「お客様」 customer |
+| 件 | けん | 事情；事项（名、数量词）——也用来计件数；「この件」这件事；「〜の件で」关于……的事//(n, counter) matter; case — also counts cases; 「この件」 this matter; 「〜の件で」 regarding ~ |
+| 用件 | ようけん | 要办的事（名）——「ご用件は何でしょうか」请问您有什么事；「用件を伝える」转达来意//(n) business; the matter one is calling about — 「ご用件は何でしょうか」 may I ask what it's regarding?; 「用件を伝える」 to pass on the message |
+| 都合 | つごう | 方便与否；情况（名）——问时间是否方便；「都合がいい」方便；「ご都合はいかがですか」您什么时候方便//(n) convenience; circumstances — whether a time suits you; 「都合がいい」 it suits me; 「ご都合はいかがですか」 when would suit you? |
+| 申し訳ない | もうしわけない | 非常抱歉（形容词）——比「すみません」正式得多；「申し訳ございません」万分抱歉；「申し訳ない気持ち」过意不去的心情//(i-adj) inexcusable; terribly sorry — far more formal than 「すみません」; 「申し訳ございません」 I'm terribly sorry; 「申し訳ない気持ち」 feeling bad about it |
 
 ---
 

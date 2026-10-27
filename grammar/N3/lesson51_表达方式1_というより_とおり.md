@@ -12,24 +12,24 @@ This group provides nuanced ways of expressing viewpoints: correcting a statemen
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 怒る | おこる | 生气；发火（自动词）——也可表示“批评、骂”//(v, intrans.) to get angry; to scold — okorareru = get told off; shikaru is deliberate scolding to correct someone |
-| 呆れる | あきれる | 无语；目瞪口呆；（对人）失望（自动词）//(v, intrans.) to be appalled; to be dumbfounded; to be fed up — shocked at someone's foolishness; not positive amazement |
-| 都会 | とかい | 城市；大都市（名）//(n) city; urban area; big city — contrasted with inaka (countryside) |
-| 田舎 | いなか | 乡下；老家（名）//(n) the countryside; rural area; one's home town — also "back home" where one grew up |
-| 高級 | こうきゅう | 高级；高档（名、形容动词）//(n, na-adj) high-end; luxury; high-class — expensive goods, restaurants or hotels |
-| 居酒屋 | いざかや | 居酒屋；日式小酒馆（名）//(n) izakaya; Japanese-style pub — drinks with small shared dishes |
-| 温泉 | おんせん | 温泉（名）//(n) hot spring; onsen — natural hot-spring baths, and the resort towns built around them |
-| 紅葉 | こうよう | 红叶；枫叶变红（名、可作动词）//(n, suru-verb) autumn leaves; leaves turning red — also read momiji (esp. maple); momijigari = autumn leaf viewing |
-| 計画 | けいかく | 计划（名、可作动词）//(n, suru-verb) plan; project; scheme — a deliberate, detailed plan; more formal than yotei (an arrangement); keikaku-doori = according to plan |
-| 予定 | よてい | 计划；安排（名、可作动词）——指已定的日程，不是“预订”//(n, suru-verb) plan; schedule; arrangement — something already decided; ~yotei desu = I plan to; booking a room is yoyaku |
-| 説明 | せつめい | 说明；解释（名、可作动词）//(n, suru-verb) explanation; description — "explain X" is X o setsumei suru; setsumeisho = instruction manual |
-| レシピ | レシピ | 菜谱；食谱（名）//(n) recipe |
-| 思い浮かべる | おもいうかべる | 想起；联想到（他动词）//(v, trans.) to picture; to call to mind; to think of — an image coming to mind |
-| 得意 | とくい | 擅长；拿手（形容动词、名）——可以用来说自己//(na-adj, n) good at; one's strong point — fine to say about yourself, unlike jouzu; tokui ryouri = one's best dish |
-| 趣味 | しゅみ | 爱好（名）——不是“有趣”//(n) hobby; pastime; taste — not "interesting"; shumi ga ii = have good taste |
-| 春 | はる | 春天（名）//(n) spring (season) — also the start of the school and business year (April) |
-| 桜 | さくら | 樱花；樱树（名）//(n) cherry blossom; cherry tree — symbol of spring and new beginnings; viewing them is o-hanami |
-| 期待 | きたい | 期待；期望（名、可作动词）//(n, suru-verb) expectation; hope; anticipation — usually positive; kitai hazure = a letdown; kitai ni kotaeru = live up to expectations |
+| 怒る | おこる | 生气；发火；骂（自动词）——为纠正而训斥是「叱る」；「先生に怒られる」被老师骂；「怒りっぽい」爱发火//(v, intrans.) to get angry; to tell off — deliberate correcting is 「叱る」; 「先生に怒られる」 to get told off by the teacher; 「怒りっぽい」 short-tempered |
+| 呆れる | あきれる | 无语；目瞪口呆（自动词）——对荒唐事的吃惊，带负面意味；「彼に呆れる」对他无语；「呆れて物も言えない」气得说不出话//(v, intrans.) to be appalled; to be dumbfounded — at something foolish, never positive amazement; 「彼に呆れる」 to be fed up with him; 「呆れて物も言えない」 so appalled I'm speechless |
+| 都会 | とかい | 都市（名）——与「田舎」相对；「都会に住む」住在城市；「都会暮らし」都市生活//(n) city; big city — contrasted with 「田舎」; 「都会に住む」 to live in the city; 「都会暮らし」 city life |
+| 田舎 | いなか | 乡下；老家（名）——「田舎に帰る」回老家；「田舎暮らし」乡村生活//(n) the countryside; one's home town — 「田舎に帰る」 to go back home; 「田舎暮らし」 country life |
+| 高級 | こうきゅう | 高级；高档（名、形容动词）——「高級レストラン」高档餐厅；「高級品」高档货//(n, na-adj) high-end; luxury — 「高級レストラン」 an upscale restaurant; 「高級品」 luxury goods |
+| 居酒屋 | いざかや | 居酒屋；日式小酒馆（名）——边喝酒边吃小菜；「居酒屋で飲む」在居酒屋喝酒//(n) Japanese-style pub — drinks with small shared dishes; 「居酒屋で飲む」 to go drinking at a pub |
+| 温泉 | おんせん | 温泉（名）——也指温泉胜地；「温泉に入る」泡温泉；「温泉旅館」温泉旅馆//(n) hot spring — also the resort town around it; 「温泉に入る」 to bathe in a hot spring; 「温泉旅館」 a hot-spring inn |
+| 紅葉 | こうよう | 红叶（名、可作动词）——也读作「もみじ」；「紅葉狩り」赏红叶；「紅葉が見ごろ」红叶正当时//(n, suru-verb) autumn leaves — also read 「もみじ」; 「紅葉狩り」 autumn-leaf viewing; 「紅葉が見ごろ」 the leaves are at their best |
+| 計画 | けいかく | 计划（名、可作动词）——比「予定」更周密、正式；「計画を立てる」制定计划；「計画通り」按计划//(n, suru-verb) plan; project — a worked-out plan, more deliberate than 「予定」; 「計画を立てる」 to make a plan; 「計画通り」 according to plan |
+| 予定 | よてい | 计划；安排（名、可作动词）——指已定的日程，不是“预订”（预订是「予約」）；「予定がある」有安排；「〜する予定だ」打算……//(n, suru-verb) plan; schedule — something already decided; booking is 「予約」; 「予定がある」 to have plans; 「〜する予定だ」 to be planning to ~ |
+| 説明 | せつめい | 说明；解释（名、可作动词）——「詳しく説明する」详细说明；「説明書」说明书//(n, suru-verb) explanation — 「詳しく説明する」 to explain in detail; 「説明書」 an instruction manual |
+| レシピ | レシピ | 菜谱（名）——「レシピ通りに作る」照着菜谱做//(n) recipe — 「レシピ通りに作る」 to follow the recipe |
+| 思い浮かべる | おもいうかべる | 想起；浮现在脑海（他动词）——「顔を思い浮かべる」想起某人的脸；「日本と聞いて思い浮かべるもの」一听到日本就想到的东西//(v, trans.) to picture; to call to mind — 「顔を思い浮かべる」 to picture someone's face; 「日本と聞いて思い浮かべるもの」 what comes to mind when you hear "Japan" |
+| 得意 | とくい | 擅长；拿手（形容动词、名）——可以用来说自己，不像「上手」；「料理が得意だ」擅长做饭；「得意分野」拿手领域//(na-adj, n) good at; one's strong point — fine to say about yourself, unlike 「上手」; 「料理が得意だ」 to be good at cooking; 「得意分野」 one's specialty |
+| 趣味 | しゅみ | 爱好（名）——不是“有趣”，也指品味；「趣味は読書だ」爱好是读书；「趣味がいい」品味好//(n) hobby; taste — 「趣味は読書だ」 my hobby is reading; 「趣味がいい」 to have good taste |
+| 春 | はる | 春天（名）——日本新学年、新财年从四月开始；「春が来る」春天来了；「春休み」春假//(n) spring — the school and business year starts in April; 「春が来る」 spring comes; 「春休み」 spring break |
+| 桜 | さくら | 樱花；樱树（名）——「桜が咲く」樱花开；「お花見」赏樱//(n) cherry blossom; cherry tree — 「桜が咲く」 the cherry trees bloom; 「お花見」 cherry-blossom viewing |
+| 期待 | きたい | 期待；期望（名、可作动词）——「期待に応える」不辜负期望；「期待外れ」令人失望//(n, suru-verb) expectation; hope — 「期待に応える」 to live up to expectations; 「期待外れ」 a letdown |
 
 ---
 

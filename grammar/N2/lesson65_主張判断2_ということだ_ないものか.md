@@ -12,22 +12,22 @@ This lesson continues with N2-level assertion and judgment expressions. 「と�
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 要するに | ようするに | 总之；简而言之（副词）//(adv) in short; in a word; basically — sums up what was just said, conversational and written |
-| 延期 | えんき | 延期；推迟（名、可作动词）//(n, suru-verb) postponement — moving an event to a later date; calling it off altogether is chuushi |
-| 中止 | ちゅうし | 中止；取消（名、可作动词）——指取消不办，或中途停止//(n, suru-verb) cancellation; calling off; suspension — an event cancelled beforehand or stopped midway, e.g. ame de chuushi (rained off) |
-| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取//(n, suru-verb) passing (an exam); being accepted (to a school) — shiken ni goukaku suru = pass an exam; mainly exams and admissions |
-| 効率 | こうりつ | 效率（名）//(n) efficiency — kouritsu ga ii / warui = efficient / inefficient; kouritsu-teki = efficient |
-| 改善 | かいぜん | 改善；改进（名、可作动词）//(n, suru-verb) improvement; making better — fixing problems in a system or situation |
-| 解決 | かいけつ | 解决（名、可作动词）//(n, suru-verb) solution; resolution; settlement — solve a problem or settle a dispute |
-| 予算 | よさん | 预算（名）//(n) budget; estimate — "over budget", "within budget" |
-| 立場 | たちば | 立场；处境（名）//(n) position; standpoint; one's situation — aite no tachiba ni tatsu = put yourself in the other person's shoes |
-| 親 | おや | 父母；双亲（名）//(n) parent; parents — one or both of your own; someone else's parents politely: goryoushin |
-| 管理職 | かんりしょく | 管理层；管理职位（名）//(n) manager; managerial position — section chief and above in a company |
-| 初心者 | しょしんしゃ | 初学者；新手（名）//(n) beginner; novice — shoshinsha-muke = for beginners, on courses and books |
-| 平和 | へいわ | 和平（名、形容动词）//(n, na-adj) peace; peaceful — world peace; also a peaceful, calm life |
-| 実現 | じつげん | 实现（名、可作动词）//(n, suru-verb) realization; making come true — a dream, plan or goal becoming real |
-| 何とか | なんとか | 设法；总算（副词）//(adv) somehow; one way or another — nantoka naru = it'll work out somehow; nantoka shite = please do something about it |
-| 状況 | じょうきょう | 状况；情况（名）//(n) situation; circumstances; state of affairs — "depending on the situation"; current state of things |
+| 要するに | ようするに | 总之；简而言之（副词）——用来概括前面的话；「要するに〜ということだ」总之就是……//(adv) in short; basically — sums up what was just said; 「要するに〜ということだ」 in short, what it means is ~ |
+| 延期 | えんき | 延期；推迟（名、可作动词）——改到以后，取消则是「中止」；「試合が延期になる」比赛延期；「雨で延期する」因雨延期//(n, suru-verb) postponement — moved to a later date; calling it off is 「中止」; 「試合が延期になる」 the match is postponed; 「雨で延期する」 to postpone because of rain |
+| 中止 | ちゅうし | 取消；中止（名、可作动词）——指取消不办或中途停止；「雨で中止になる」因雨取消；「計画を中止する」中止计划//(n, suru-verb) cancellation; calling off — beforehand or midway; 「雨で中止になる」 to be rained off; 「計画を中止する」 to scrap a plan |
+| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取；「試験に合格する」考试合格；「大学に合格する」考上大学//(n, suru-verb) passing (an exam); being accepted — 「試験に合格する」 to pass an exam; 「大学に合格する」 to get into a university |
+| 効率 | こうりつ | 效率（名）——「効率がいい」效率高；「効率的に」高效地//(n) efficiency — 「効率がいい」 efficient; 「効率的に」 efficiently |
+| 改善 | かいぜん | 改善；改进（名、可作动词）——「改善の余地がある」还有改进的余地；「状況を改善する」改善状况//(n, suru-verb) improvement — 「改善の余地がある」 there's room for improvement; 「状況を改善する」 to improve the situation |
+| 解決 | かいけつ | 解决（名、可作动词）——「問題を解決する」解决问题；「解決策」解决办法//(n, suru-verb) solution; settlement — 「問題を解決する」 to solve a problem; 「解決策」 a solution |
+| 予算 | よさん | 预算（名）——「予算オーバー」超预算；「予算内で」在预算之内//(n) budget — 「予算オーバー」 over budget; 「予算内で」 within budget |
+| 立場 | たちば | 立场；处境（名）——「相手の立場に立つ」站在对方立场；「立場が弱い」处境不利//(n) position; standpoint; situation — 「相手の立場に立つ」 to put yourself in their shoes; 「立場が弱い」 to be in a weak position |
+| 親 | おや | 父母；双亲（名）——称别人父母用「ご両親」；「親になる」为人父母；「親孝行」孝顺父母//(n) parent; parents — someone else's are 「ご両親」; 「親になる」 to become a parent; 「親孝行」 being good to one's parents |
+| 管理職 | かんりしょく | 管理层；管理职位（名）——一般指课长以上；「管理職になる」升任管理职//(n) management; managerial post — usually section chief and above; 「管理職になる」 to move into management |
+| 初心者 | しょしんしゃ | 初学者；新手（名）——「初心者向け」面向初学者；「初心者マーク」新手驾驶标志//(n) beginner — 「初心者向け」 for beginners; 「初心者マーク」 the new-driver sticker |
+| 平和 | へいわ | 和平（名、形容动词）——也指平静安稳；「世界平和」世界和平；「平和な毎日」平静的日子//(n, na-adj) peace; peaceful — 「世界平和」 world peace; 「平和な毎日」 a quiet, peaceful life |
+| 実現 | じつげん | 实现（名、可作动词）——「夢を実現する」实现梦想；「実現しないものか」难道就不能实现吗//(n, suru-verb) realization; making real — 「夢を実現する」 to make a dream come true; 「実現しないものか」 if only it could come true |
+| 何とか | なんとか | 设法；总算（副词）——「何とかなる」总会有办法；「何とかしてください」请想想办法//(adv) somehow; one way or another — 「何とかなる」 it'll work out; 「何とかしてください」 please do something about it |
+| 状況 | じょうきょう | 状况；情况（名）——「状況に応じて」根据情况；「今の状況」目前的情况//(n) situation; circumstances — 「状況に応じて」 depending on the situation; 「今の状況」 the current situation |
 
 ---
 

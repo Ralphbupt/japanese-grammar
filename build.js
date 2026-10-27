@@ -1104,6 +1104,12 @@ const RUBY_FIXES = [
   { kanji: "来", from: /^きた$/, after: /^る/, to: "く" },
   // 勝てる/勝った is か-, not かち-.
   { kanji: "勝", from: /^かち$/, after: /^[てた]/, to: "か" },
+  // 割る is わる (kuromoji gives 割(われ)る).
+  { kanji: "割", from: /^われ$/, after: /^る/, to: "わ" },
+  // 電車が空いている = すいている (uncrowded), not あいている.
+  { kanji: "空", from: /^あ$/, before: /(電車|バス|道|店)が$/, after: /^い/, to: "す" },
+  // 〜分 after 1/3/4/6/8/10 (and 0-ending numbers) is ぷん: 10分 = じゅっぷん.
+  { kanji: "分", from: /^ふん$/, before: /[134680]$/, to: "ぷん" },
   // 雨/雪が降る is ふる (kuromoji reaches for 降りる).
   { kanji: "降", from: /^お$/, before: /[雨雪]が$/, after: /^[りるら]/, to: "ふ" },
   // 〜方がいい is ほうがいい (the comparative), …
@@ -1347,6 +1353,7 @@ async function addFurigana(kuro, html) {
   const result = [];
   let jaDepth = 0;    // > 0 = inside a data-ja element
   let skipDepth = 0;  // > 0 = inside code/pre/rt/word-table/heading
+  let inColloc = false; // inside a word table's <span class="colloc-ja">
   let run = [];       // buffered text nodes + <strong> tags
 
   // Convert the buffered run as one unit and re-apply its bold ranges.
@@ -1444,12 +1451,18 @@ async function addFurigana(kuro, html) {
     else if (isTag && jaDepth > 0 && skipDepth === 0 && /^<\/?strong\b/i.test(part)) {
       run.push(part);
     }
+    // Word-table collocations are annotated although the table is skipped
+    else if (isTag && /^<span class="colloc-ja"/.test(part)) {
+      await flushRun(); inColloc = true; result.push(part);
+    } else if (isTag && inColloc && /^<\/span>/.test(part)) {
+      await flushRun(); inColloc = false; result.push(part);
+    }
     // Any other tag ends the current run
     else if (isTag) {
       await flushRun(); result.push(part);
     }
     // Text nodes
-    else if (jaDepth > 0 && skipDepth === 0) {
+    else if (inColloc || (jaDepth > 0 && skipDepth === 0)) {
       run.push(part);
     } else {
       result.push(part);
@@ -1589,14 +1602,24 @@ async function main() {
           .replace(/<th>单词<\/th>/, '<th><span class="lang-zh">单词</span><span class="lang-en">Word</span></th>')
           .replace(/<th>读音<\/th>/, '<th><span class="lang-zh">读音</span><span class="lang-en">Reading</span></th>')
           .replace(/<th>含义<\/th>/, '<th><span class="lang-zh">含义</span><span class="lang-en">Meaning</span></th>')
-          // Meaning cells: "(POS) senses — note" / "senses（POS）——note" → the
-          // part of speech and the usage note get their own muted spans.
+          // Meaning cells: "(POS) senses — note; 「搭配」 gloss; 「搭配」 gloss"
+          // (zh: "senses（POS）——note；「搭配」gloss"). The part of speech gets
+          // a tag, the note a muted line, and each 「…」 collocation its own
+          // line; 「…」 becomes a colloc-ja span, which addFurigana annotates
+          // even though the rest of the word table is skipped.
           .replace(/(<span class="lang-(?:zh|en)">)([^<]*)(<\/span>)/g, (m, open, text, close) => {
+            const ja = (s) => s.replace(/「([^」]+)」/g, '<span class="colloc-ja" lang="ja">$1</span>');
             const note = text.match(/^(.*?)\s*(?: — |——)\s*(.+)$/);
             let head = note ? note[1] : text;
             head = head.replace(/^\(([^)]+)\)\s*/, '<span class="pos">$1</span> ')
               .replace(/（([^）]*(?:词|语|名)[^）]*)）$/, ' <span class="pos">$1</span>');
-            return note ? `${open}${head}<span class="gloss-note">${note[2]}</span>${close}` : `${open}${head}${close}`;
+            if (!note) return `${open}${head}${close}`;
+            const parts = note[2].split(/\s*[;；]\s*(?=「)/);
+            const gloss = /^「/.test(parts[0]) ? "" : parts.shift();
+            const collocs = parts.map((p) => `<span class="colloc">${ja(p.replace(/」\s*/, "」 "))}</span>`).join("");
+            return open + head
+              + (gloss ? `<span class="gloss-note">${ja(gloss)}</span>` : "")
+              + (collocs ? `<span class="collocs">${collocs}</span>` : "") + close;
           })
       );
       // Answer toggles: "答案 / Answers" → one label per language; a bare
@@ -3667,6 +3690,9 @@ table.word-table th { background: var(--word-bg); }
 table.word-table td:first-child { font-size: 1.2rem; font-weight: 500; white-space: nowrap; }
 table.word-table .pos { font-size: .75em; color: var(--text-muted); border: 1px solid currentColor; border-radius: 3px; padding: 0 .3em; white-space: nowrap; }
 table.word-table .gloss-note { display: block; font-size: .85em; color: var(--text-muted); margin-top: .15em; }
+table.word-table .collocs { display: block; margin-top: .25em; }
+table.word-table .colloc { display: block; font-size: .85em; color: var(--text-muted); line-height: 1.9; }
+table.word-table .colloc-ja { font-size: 1.1em; color: var(--text); margin-right: .2em; }
 
 /* Checklist */
 .checklist-progress {

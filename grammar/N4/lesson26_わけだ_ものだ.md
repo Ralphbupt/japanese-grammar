@@ -4,21 +4,21 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 道理で | どうりで | 怪不得；难怪（副词）//(adv) no wonder; that explains it — said when you learn the reason for something |
-| エアコン | エアコン | 空调（名）//(n) air conditioner — usually heats as well as cools |
-| 犯人 | はんにん | 罪犯；作案者（名）——指作案者，不是中文“犯人”（服刑者）//(n) culprit; criminal; perpetrator — whoever committed the crime, caught or not, not a prisoner; jokingly, whoever did it |
-| 節約 | せつやく | 节约；节省（名、可作动词）//(n, suru-verb) saving; economizing — cutting spending on money, electricity or water |
-| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）//(n, suru-verb, na-adj) opposition; objection; the opposite — ni hantai suru = be against; also the reverse side or direction (hantai-gawa) |
-| 計画 | けいかく | 计划（名、可作动词）//(n, suru-verb) plan; project; scheme — a deliberate, detailed plan; more formal than yotei (an arrangement); keikaku-doori = according to plan |
-| 秘密 | ひみつ | 秘密（名）//(n) secret; secrecy — himitsu o mamoru = keep a secret; himitsu da yo = it's a secret |
-| 勝手に | かってに | 擅自；随便（副词）//(adv) without permission; as one pleases — usually negative: doing something without asking |
-| 人生 | じんせい | 人生（名）//(n) (one's) life — life as a whole journey; daily life is seikatsu |
-| 経つ | たつ | （时间）经过；流逝（自动词）//(v, intrans.) to pass; to go by (of time) — ichinen ga tatsu = a year passes; only for time |
-| 川 | かわ | 河；河流（名）//(n) river; stream |
-| 年上 | としうえ | 年长；年纪大（名）//(n) older; senior (in age) — someone older than you; opposite: toshishita |
-| 敬語 | けいご | 敬语（名）//(n) keigo; honorific language — umbrella term for polite, respectful (sonkeigo) and humble (kenjougo) speech |
-| 悪口 | わるぐち | 坏话（名）//(n) bad-mouthing; speaking ill of someone — warukuchi o iu, usually behind their back |
-| 守る | まもる | 遵守；保护（他动词）//(v, trans.) to keep (a promise, rule); to obey; to protect — rules, promises, deadlines, or protecting people |
+| 道理で | どうりで | 怪不得；难怪（副词）——得知原因时说；「道理で寒いわけだ」难怪这么冷//(adv) no wonder; that explains it — said on learning the reason; 「道理で寒いわけだ」 no wonder it's so cold |
+| エアコン | エアコン | 空调（名）——一般冷暖两用；「エアコンをつける」开空调；「エアコンが壊れる」空调坏了//(n) air conditioner — usually heats as well as cools; 「エアコンをつける」 to turn on the AC; 「エアコンが壊れる」 the AC breaks down |
+| 犯人 | はんにん | 罪犯；作案者（名）——指作案者，不是中文“犯人”（服刑者）；「犯人が捕まる」犯人被抓；「犯人は誰だ」是谁干的//(n) culprit; perpetrator — whoever did it, not a prisoner; 「犯人が捕まる」 the culprit is caught; 「犯人は誰だ」 who did it? |
+| 節約 | せつやく | 节约；节省（名、可作动词）——「電気を節約する」节约用电；「時間の節約」节省时间//(n, suru-verb) saving; economizing — 「電気を節約する」 to save electricity; 「時間の節約」 saving time |
+| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）——「計画に反対する」反对计划；「反対側」对面，相反方向//(n, suru-verb, na-adj) opposition; the opposite — 「計画に反対する」 to oppose a plan; 「反対側」 the opposite side |
+| 計画 | けいかく | 计划（名、可作动词）——比「予定」更周密、正式；「計画を立てる」制定计划；「計画通り」按计划//(n, suru-verb) plan; project — a worked-out plan, more deliberate than 「予定」; 「計画を立てる」 to make a plan; 「計画通り」 according to plan |
+| 秘密 | ひみつ | 秘密（名）——「秘密を守る」保守秘密；「秘密が漏れる」秘密泄露//(n) secret — 「秘密を守る」 to keep a secret; 「秘密が漏れる」 a secret leaks out |
+| 勝手に | かってに | 擅自；随便（副词）——多为贬义；「勝手に使う」擅自使用；「勝手にしろ」随你便//(adv) without permission; as one pleases — usually negative; 「勝手に使う」 to use without asking; 「勝手にしろ」 do whatever you want |
+| 人生 | じんせい | 人生（名）——指一生，日常生活是「生活」；「人生を楽しむ」享受人生；「人生は短い」人生苦短//(n) (one's) life — life as a whole; daily life is 「生活」; 「人生を楽しむ」 to enjoy life; 「人生は短い」 life is short |
+| 経つ | たつ | （时间）经过；流逝（自动词）——只用于时间；「一年が経つ」过了一年；「時間が経つのは早い」时间过得真快//(v, intrans.) to pass (of time) — only for time; 「一年が経つ」 a year passes; 「時間が経つのは早い」 time flies |
+| 川 | かわ | 河（名）——「川で泳ぐ」在河里游泳；「川を渡る」过河//(n) river — 「川で泳ぐ」 to swim in the river; 「川を渡る」 to cross a river |
+| 年上 | としうえ | 年长（名）——反义词是「年下」；「三つ年上」大三岁；「年上の人」比自己年长的人//(n) older (person) — opposite 「年下」; 「三つ年上」 three years older; 「年上の人」 someone older |
+| 敬語 | けいご | 敬语（名）——包括尊敬语、谦让语、礼貌语；「敬語を使う」使用敬语；「敬語が苦手」不擅长敬语//(n) honorific language — covers respectful, humble and polite forms; 「敬語を使う」 to use honorifics; 「敬語が苦手」 to struggle with honorifics |
+| 悪口 | わるぐち | 坏话（名）——「悪口を言う」说坏话；「陰で悪口を言う」背后说坏话//(n) bad-mouthing — 「悪口を言う」 to speak ill of someone; 「陰で悪口を言う」 to badmouth someone behind their back |
+| 守る | まもる | 遵守；保护（他动词）——「約束を守る」守约；「家族を守る」保护家人//(v, trans.) to keep (a promise, rule); to protect — 「約束を守る」 to keep a promise; 「家族を守る」 to protect one's family |
 
 ## 1. 〜わけだ（难怪/当然/也就是说）||1. 〜わけだ (No wonder / Of course / In other words)
 

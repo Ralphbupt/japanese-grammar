@@ -12,23 +12,23 @@ This group revolves around whether an action can be completed or is possible. �
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 走る | はしる | 跑；奔跑（自动词）//(v, intrans.) to run — also of vehicles (trains run); godan despite ending in -iru: hashirimasu, hashitte |
-| 使う | つかう | 使用；用（他动词）//(v, trans.) to use; to spend (time, money) — the general word for using things, tools, money or language |
-| 疲れる | つかれる | 累；疲劳（自动词）//(v, intrans.) to get tired; to be exhausted — "I'm tired" is the past form tsukareta (a state you have reached) |
-| 信じる | しんじる | 相信；信任（他动词）//(v, trans.) to believe; to trust — believe a story, trust a person; shinjirarenai = unbelievable |
-| 食べ残す | たべのこす | 吃剩；没吃完（他动词）//(v, trans.) to leave food uneaten; to leave leftovers — tabenokoshi = leftovers on the plate |
-| 満足 | まんぞく | 满足；满意（名、形容动词、可作动词）//(n, na-adj, suru-verb) satisfaction; being satisfied — ni manzoku suru = be satisfied with; manzoku ni = properly (with a negative) |
-| マラソン | マラソン | 马拉松（名）//(n) marathon — also used loosely for long-distance running |
-| 全力 | ぜんりょく | 全力（名）//(n) all one's strength; full effort; one's best — zenryoku de = with all one's might |
-| 予想 | よそう | 预料；预测（名、可作动词）//(n, suru-verb) expectation; prediction; forecast — yosougai = unexpected; yosou-doori = as predicted |
-| 充分 | じゅうぶん | 充分；足够（形容动词、副词）//(na-adj, adv) enough; sufficient; plenty — variant spelling of juubun; same meaning |
-| ありえない | ありえない | 不可能；不可能有的（形容词）//(i-adj) impossible; unthinkable; can't be (true) — also slang for "no way!"; negative of arieru (could happen) |
-| 成功 | せいこう | 成功（名、可作动词）//(n, suru-verb) success — ni seikou suru = succeed in; daiseikou = a huge success |
-| 失敗 | しっぱい | 失败；失误（名、可作动词）//(n, suru-verb) failure; mistake; blunder — from small slip-ups to big failures; a factual error is usually machigai |
-| 起こる | おこる | 发生（自动词）//(v, intrans.) to happen; to occur; to break out — accidents, problems or events; transitive pair: okosu (cause) |
-| 数える | かぞえる | 数；计算（他动词）//(v, trans.) to count — counting numbers or items; kazoekirenai = countless |
-| 理解 | りかい | 理解（名、可作动词）//(n, suru-verb) understanding; comprehension — more formal than wakaru; also sympathetic understanding of others |
-| 想像 | そうぞう | 想象（名、可作动词）//(n, suru-verb) imagination; picturing — souzou ijou = beyond what one imagined; souzou mo tsukanai = unimaginable |
+| 走る | はしる | 跑（自动词）——形似一段动词，实为五段动词：「走って」；「駅まで走る」跑到车站；「電車が走る」电车行驶//(v, intrans.) to run — conjugates like 「帰る」, not 「見る」: 「走って」; 「駅まで走る」 to run to the station; 「電車が走る」 trains run |
+| 使う | つかう | 使用（他动词）——也指花费时间、金钱；「お金を使う」花钱；「使いやすい」好用//(v, trans.) to use; to spend (time, money) — 「お金を使う」 to spend money; 「使いやすい」 easy to use |
+| 疲れる | つかれる | 累（自动词）——“我累了”说「疲れた」（过去形）；「仕事で疲れる」工作累；「疲れが取れる」消除疲劳//(v, intrans.) to get tired — "I'm tired" is the past form 「疲れた」; 「仕事で疲れる」 to be worn out from work; 「疲れが取れる」 to recover from fatigue |
+| 信じる | しんじる | 相信；信任（他动词）——「人を信じる」信任别人；「信じられない」难以置信//(v, trans.) to believe; to trust — 「人を信じる」 to trust people; 「信じられない」 unbelievable |
+| 食べ残す | たべのこす | 吃剩（他动词）——「ご飯を食べ残す」剩饭；「食べ残し」吃剩的东西//(v, trans.) to leave food uneaten — 「ご飯を食べ残す」 to leave some of one's food; 「食べ残し」 leftovers on the plate |
+| 満足 | まんぞく | 满足；满意（名、形容动词、可作动词）——「結果に満足する」对结果满意；「満足のいく結果」令人满意的结果//(n, na-adj, suru-verb) satisfaction — 「結果に満足する」 to be satisfied with the result; 「満足のいく結果」 a satisfying result |
+| マラソン | マラソン | 马拉松（名）——「マラソンを走る」跑马拉松；「マラソン大会」马拉松比赛//(n) marathon — 「マラソンを走る」 to run a marathon; 「マラソン大会」 a marathon race |
+| 全力 | ぜんりょく | 全力（名）——「全力で走る」全力奔跑；「全力を尽くす」竭尽全力//(n) all one's strength; one's best — 「全力で走る」 to run flat out; 「全力を尽くす」 to do one's utmost |
+| 予想 | よそう | 预料；预测（名、可作动词）——「予想外」出乎意料；「予想通り」不出所料//(n, suru-verb) expectation; prediction — 「予想外」 unexpected; 「予想通り」 as expected |
+| 充分 | じゅうぶん | 充分；足够（形容动词、副词）——同「十分な」，后者写法更常见；「充分な睡眠」充足的睡眠；「充分に注意する」充分注意//(na-adj, adv) enough; sufficient — same word as 「十分な」, which is the more common spelling; 「充分な睡眠」 enough sleep; 「充分に注意する」 to take sufficient care |
+| ありえない | ありえない | 不可能（形容词）——口语中也表示“不会吧！”；「ありえない話」不可能的事；「そんなことはありえない」那种事不可能发生//(i-adj) impossible; unthinkable — casually also "no way!"; 「ありえない話」 an impossible story; 「そんなことはありえない」 that can't happen |
+| 成功 | せいこう | 成功（名、可作动词）——「実験に成功する」实验成功；「大成功」大获成功//(n, suru-verb) success — 「実験に成功する」 to succeed in an experiment; 「大成功」 a huge success |
+| 失敗 | しっぱい | 失败；失误（名、可作动词）——「試験に失敗する」考试失败；「失敗は成功のもと」失败是成功之母//(n, suru-verb) failure; mistake — 「試験に失敗する」 to fail an exam; 「失敗は成功のもと」 failure is the root of success |
+| 起こる | おこる | 发生（自动词）——他动词是「起こす」；「事故が起こる」发生事故；「何が起こるか分からない」不知会发生什么//(v, intrans.) to happen; to occur — transitive pair: 「起こす」; 「事故が起こる」 an accident happens; 「何が起こるか分からない」 anything could happen |
+| 数える | かぞえる | 数（他动词）——「人数を数える」数人数；「数えきれない」数不清//(v, trans.) to count — 「人数を数える」 to count heads; 「数えきれない」 countless |
+| 理解 | りかい | 理解（名、可作动词）——比「分かる」正式；「理解できない」无法理解；「理解を深める」加深理解//(n, suru-verb) understanding — more formal than 「分かる」; 「理解できない」 can't understand; 「理解を深める」 to deepen one's understanding |
+| 想像 | そうぞう | 想象（名、可作动词）——「想像以上」超出想象；「想像もつかない」无法想象//(n, suru-verb) imagination — 「想像以上」 beyond what one imagined; 「想像もつかない」 unimaginable |
 
 ---
 

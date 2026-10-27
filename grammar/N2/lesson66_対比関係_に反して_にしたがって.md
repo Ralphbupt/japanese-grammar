@@ -12,24 +12,24 @@ This lesson covers N2 grammar for expressing "contrast" and "correlated change."
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 予想 | よそう | 预料；预测（名、可作动词）//(n, suru-verb) expectation; prediction; forecast — yosougai = unexpected; yosou-doori = as predicted |
-| 期待 | きたい | 期待；期望（名、可作动词）//(n, suru-verb) expectation; hope; anticipation — usually positive; kitai hazure = a letdown; kitai ni kotaeru = live up to expectations |
-| 評判 | ひょうばん | 评价；口碑（名）//(n) reputation; public opinion — what people say about a shop, product or person; hyouban ga ii = well-reviewed |
-| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）//(n, suru-verb, na-adj) opposition; objection; the opposite — ni hantai suru = be against; also the reverse side or direction (hantai-gawa) |
-| 経験 | けいけん | 经验；经历（名、可作动词）//(n, suru-verb) experience — both a single event you went through (keiken suru) and accumulated expertise (keiken ga aru) |
-| 収入 | しゅうにゅう | 收入（名）//(n) income; earnings — salary and other money coming in; opposite: shishutsu (expenditure) |
-| 支出 | ししゅつ | 支出；开支（名、可作动词）//(n, suru-verb) expenditure; spending; outgoings — formal; household or government spending |
-| 便利 | べんり | 方便（形容动词）//(na-adj) convenient; handy; useful — of tools, places, services; opposite of inconvenient |
-| 複雑 | ふくざつ | 复杂（形容动词）//(na-adj) complicated; complex; intricate — also mixed feelings: fukuzatsu na kimochi |
-| 技術 | ぎじゅつ | 技术（名）//(n) technology; technique; skill — both industrial technology and personal skill |
-| 進歩 | しんぽ | 进步（名、可作动词）//(n, suru-verb) progress; advancement; improvement — of technology, science or one's own skills |
-| 高齢化 | こうれいか | 老龄化（名）//(n) aging (of the population) — shoushi koureika = falling birthrate and aging population, a staple N2 reading topic |
-| 深刻 | しんこく | 严重；严峻（形容动词）——不是“深刻（印象深）”//(na-adj) serious; grave; severe — of problems or situations, not "profound" |
-| 規模 | きぼ | 规模（名）//(n) scale; scope; size — "large-scale", "on a global scale" |
-| 拡大 | かくだい | 扩大（名、可作动词）//(n, suru-verb) expansion; enlargement; growth — expanding business, damage or images (zoom in) |
-| 競争 | きょうそう | 竞争（名、可作动词）//(n, suru-verb) competition; rivalry — between companies, students; "competition is fierce" |
-| 激しい | はげしい | 激烈的；猛烈的（形容词）//(i-adj) intense; fierce; violent — fierce competition, heavy rain, violent emotions |
-| 標高 | ひょうこう | 海拔（名）//(n) altitude; elevation (above sea level) — height of mountains and places, not of aircraft |
+| 予想 | よそう | 预料；预测（名、可作动词）——「予想外」出乎意料；「予想通り」不出所料//(n, suru-verb) expectation; prediction — 「予想外」 unexpected; 「予想通り」 as expected |
+| 期待 | きたい | 期待；期望（名、可作动词）——「期待に応える」不辜负期望；「期待外れ」令人失望//(n, suru-verb) expectation; hope — 「期待に応える」 to live up to expectations; 「期待外れ」 a letdown |
+| 評判 | ひょうばん | 评价；口碑（名）——「評判がいい」口碑好；「評判の店」有名气的店//(n) reputation; what people say — 「評判がいい」 well spoken of; 「評判の店」 a much-talked-about shop |
+| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）——「計画に反対する」反对计划；「反対側」对面，相反方向//(n, suru-verb, na-adj) opposition; the opposite — 「計画に反対する」 to oppose a plan; 「反対側」 the opposite side |
+| 経験 | けいけん | 经验；经历（名、可作动词）——「〜した経験がある」有过……的经历；「いい経験になる」是个宝贵的经历//(n, suru-verb) experience — both something you went through and know-how; 「〜した経験がある」 to have done ~ before; 「いい経験になる」 to be a good learning experience |
+| 収入 | しゅうにゅう | 收入（名）——「収入が増える」收入增加；「収入が少ない」收入少//(n) income — 「収入が増える」 income goes up; 「収入が少ない」 to have a low income |
+| 支出 | ししゅつ | 支出；开支（名、可作动词）——书面语；「支出を減らす」减少开支；「収入と支出」收支//(n, suru-verb) expenditure; spending — formal; 「支出を減らす」 to cut spending; 「収入と支出」 income and outgoings |
+| 便利 | べんり | 方便（形容动词）——「便利な道具」方便的工具；「交通が便利だ」交通方便//(na-adj) convenient; handy — 「便利な道具」 a handy tool; 「交通が便利だ」 well served by transport |
+| 複雑 | ふくざつ | 复杂（形容动词）——也可形容心情；「複雑な気持ち」复杂的心情；「複雑な問題」复杂的问题//(na-adj) complicated; complex — 「複雑な気持ち」 mixed feelings; 「複雑な問題」 a complex problem |
+| 技術 | ぎじゅつ | 技术（名）——既指工业技术，也指个人技能；「技術の進歩」技术进步；「技術を身につける」掌握技能//(n) technology; technique; skill — 「技術の進歩」 technological progress; 「技術を身につける」 to acquire a skill |
+| 進歩 | しんぽ | 进步（名、可作动词）——「技術が進歩する」技术进步；「目覚ましい進歩」显著的进步//(n, suru-verb) progress; advance — 「技術が進歩する」 technology advances; 「目覚ましい進歩」 remarkable progress |
+| 高齢化 | こうれいか | 老龄化（名）——「少子高齢化」少子老龄化；「高齢化が進む」老龄化加剧//(n) aging (of a population) — 「少子高齢化」 fewer births and an aging population; 「高齢化が進む」 the population is aging fast |
+| 深刻 | しんこく | 严重；严峻（形容动词）——不是中文“深刻（印象深）”；「深刻な問題」严重的问题；「深刻化する」日益严重//(na-adj) serious; grave — of problems, not "profound"; 「深刻な問題」 a serious problem; 「深刻化する」 to grow more serious |
+| 規模 | きぼ | 规模（名）——「大規模な」大规模的；「世界規模で」在全球范围//(n) scale; size — 「大規模な」 large-scale; 「世界規模で」 on a global scale |
+| 拡大 | かくだい | 扩大（名、可作动词）——「被害が拡大する」灾情扩大；「事業を拡大する」扩大业务//(n, suru-verb) expansion; enlargement — 「被害が拡大する」 the damage spreads; 「事業を拡大する」 to expand a business |
+| 競争 | きょうそう | 竞争（名、可作动词）——「競争が激しい」竞争激烈；「競争相手」竞争对手//(n, suru-verb) competition — 「競争が激しい」 competition is fierce; 「競争相手」 a rival |
+| 激しい | はげしい | 激烈的；猛烈的（形容词）——「激しい雨」猛烈的雨；「競争が激しい」竞争激烈//(i-adj) intense; fierce; violent — 「激しい雨」 heavy rain; 「競争が激しい」 competition is fierce |
+| 標高 | ひょうこう | 海拔（名）——指山或地点的高度，不指飞行高度；「標高が高い」海拔高；「標高3000メートル」海拔三千米//(n) elevation; altitude above sea level — of mountains and places, not aircraft; 「標高が高い」 high up; 「標高3000メートル」 3,000 m above sea level |
 
 ---
 

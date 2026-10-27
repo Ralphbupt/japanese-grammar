@@ -12,22 +12,22 @@ This lesson covers N2-level grammar for degree and limitation. 「に過ぎな�
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 推測 | すいそく | 推测；猜测（名、可作动词）//(n, suru-verb) guess; conjecture; inference — reasoning from evidence; suisoku ni suginai = it's mere speculation |
-| 事実 | じじつ | 事实（名、副词）//(n, adv) fact; truth; reality — as an adverb, "in fact" (more formal than jitsu wa) |
-| 努力 | どりょく | 努力（名、可作动词）——在日语中是名词，“努力地”另有说法//(n, suru-verb) effort; hard work; endeavor — a noun: doryoku suru = make an effort; adverbial "hard" is isshoukenmei |
-| 成果 | せいか | 成果；成绩（名）//(n) results; fruits (of effort); achievement — concrete outcomes of work or research |
-| 周囲 | しゅうい | 周围；周围的人（名）//(n) surroundings; the people around one; circumference — often means "people around you" and their opinions |
-| 視線 | しせん | 视线；目光（名）//(n) gaze; one's eyes; (people's) looks — "feel people's eyes on you" |
-| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）//(n, suru-verb, na-adj) opposition; objection; the opposite — ni hantai suru = be against; also the reverse side or direction (hantai-gawa) |
-| 困難 | こんなん | 困难；艰难（名、形容动词）——比口语的“难”更书面//(n, na-adj) difficulty; hardship; adversity — formal and written; konnan o norikoeru = overcome difficulties; everyday "hard" is muzukashii |
-| 克服 | こくふく | 克服（名、可作动词）//(n, suru-verb) overcoming; conquering — a difficulty, weakness, illness or fear |
-| 偶然 | ぐうぜん | 偶然；碰巧（名、形容动词、副词）//(n, na-adj, adv) chance; coincidence; by chance — guuzen au = run into someone; guuzen desu ne = what a coincidence |
-| 必然 | ひつぜん | 必然（名、形容动词）//(n, na-adj) inevitability; necessity; inevitable — the opposite of chance; "an inevitable result" |
-| 個人的 | こじんてき | 个人的；私人的（形容动词）//(na-adj) personal; private — kojinteki ni wa = personally (speaking), a softener before an opinion |
-| 暴風雨 | ぼうふうう | 暴风雨（名）//(n) rainstorm; storm; tempest — strong wind plus heavy rain; formal/news word |
-| 障害 | しょうがい | 障碍；残疾；故障（名）//(n) obstacle; impediment; disability; (system) failure — shougaisha = person with a disability; tsuushin shougai = network outage |
-| 疲労 | ひろう | 疲劳（名、可作动词）//(n, suru-verb) fatigue; exhaustion — formal or medical; in conversation people just say tsukareta |
-| 人目 | ひとめ | 旁人的目光（名）//(n) the public eye; other people's eyes — hitome o ki ni suru = worry what people think; hitome mo kamawazu = not caring who sees |
+| 推測 | すいそく | 推测；猜测（名、可作动词）——「推測に過ぎない」只不过是推测；「〜と推測される」据推测……//(n, suru-verb) guess; conjecture — 「推測に過ぎない」 is mere speculation; 「〜と推測される」 it is presumed that ~ |
+| 事実 | じじつ | 事实（名、副词）——作副词表示“实际上”；「事実を認める」承认事实；「事実上」实际上//(n, adv) fact; truth — as an adverb, "in fact"; 「事実を認める」 to admit the facts; 「事実上」 practically, de facto |
+| 努力 | どりょく | 努力（名、可作动词）——是名词，“努力地”说「一生懸命」；「努力が報われる」努力得到回报；「努力を重ねる」不断努力//(n, suru-verb) effort; hard work — a noun, not an adverb ("work hard" is 「一生懸命」); 「努力が報われる」 one's efforts pay off; 「努力を重ねる」 to keep working hard |
+| 成果 | せいか | 成果；成绩（名）——「成果を上げる」取得成果；「研究の成果」研究成果//(n) results; fruits of effort — 「成果を上げる」 to produce results; 「研究の成果」 research findings |
+| 周囲 | しゅうい | 周围；周围的人（名）——常指身边的人及其看法；「周囲の目」旁人的眼光；「周囲の反対」周围人的反对//(n) surroundings; the people around one — often others and their opinions; 「周囲の目」 what others think; 「周囲の反対」 opposition from those around you |
+| 視線 | しせん | 视线；目光（名）——「視線を感じる」感觉有人在看；「冷たい視線」冷漠的目光//(n) gaze; eyes; looks — 「視線を感じる」 to feel eyes on you; 「冷たい視線」 cold looks |
+| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）——「計画に反対する」反对计划；「反対側」对面，相反方向//(n, suru-verb, na-adj) opposition; the opposite — 「計画に反対する」 to oppose a plan; 「反対側」 the opposite side |
+| 困難 | こんなん | 困难（名、形容动词）——书面语，口语用「難しい」；「困難を乗り越える」克服困难；「困難に直面する」面临困难//(n, na-adj) difficulty; hardship — formal; everyday "hard" is 「難しい」; 「困難を乗り越える」 to overcome hardship; 「困難に直面する」 to face difficulties |
+| 克服 | こくふく | 克服（名、可作动词）——「弱点を克服する」克服弱点；「病気を克服する」战胜疾病//(n, suru-verb) overcoming — 「弱点を克服する」 to overcome a weakness; 「病気を克服する」 to beat an illness |
+| 偶然 | ぐうぜん | 偶然；碰巧（名、形容动词、副词）——「偶然会う」偶然遇到；「偶然の一致」巧合//(n, na-adj, adv) chance; coincidence; by chance — 「偶然会う」 to run into someone; 「偶然の一致」 a coincidence |
+| 必然 | ひつぜん | 必然（名、形容动词）——「必然的に」必然地；「必然の結果」必然的结果//(n, na-adj) inevitability; inevitable — 「必然的に」 inevitably; 「必然の結果」 an inevitable result |
+| 個人的 | こじんてき | 个人的；私人的（形容动词）——「個人的には」就我个人而言；「個人的な意見」个人意见//(na-adj) personal; private — 「個人的には」 personally (softens an opinion); 「個人的な意見」 my personal opinion |
+| 暴風雨 | ぼうふうう | 暴风雨（名）——新闻、书面用语；「暴風雨の中」在暴风雨中；「暴風雨をものともせず」不顾暴风雨//(n) rainstorm; storm — news and written; 「暴風雨の中」 in the storm; 「暴風雨をものともせず」 braving the storm |
+| 障害 | しょうがい | 障碍；残疾；故障（名）——「障害を乗り越える」跨越障碍；「通信障害」通信故障//(n) obstacle; disability; (system) failure — 「障害を乗り越える」 to overcome obstacles; 「通信障害」 a network outage |
+| 疲労 | ひろう | 疲劳（名、可作动词）——书面或医学用语，口语说「疲れ」；「疲労がたまる」疲劳积累；「疲労回復」消除疲劳//(n, suru-verb) fatigue; exhaustion — formal or medical; everyday word is 「疲れ」; 「疲労がたまる」 fatigue builds up; 「疲労回復」 recovering from fatigue |
+| 人目 | ひとめ | 旁人的目光（名）——「人目を気にする」在意别人的眼光；「人目もかまわず」不顾旁人//(n) the public eye; other people's eyes — 「人目を気にする」 to worry what people think; 「人目もかまわず」 not caring who sees |
 
 ---
 

@@ -12,25 +12,25 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 参る | まいる | 去；来（自动词、谦让语）//(v, intrans., humble) to go; to come — humble of iku / kuru, for your own side's movement |
-| 申す | もうす | 说；叫（他动词、谦让语）//(v, trans., humble) to say; to be called — humble of iu; ~to moushimasu = my name is ~ |
-| 申し上げる | もうしあげる | 说；讲（他动词、谦让语）——更恭敬的谦让说法//(v, trans., humble) to say; to tell — humbler than mousu, toward the listener; set phrases like o-rei moushiagemasu |
-| 拝見する | はいけんする | 看；拜读（他动词、谦让语）//(v, trans., humble) to see; to look at — humble of miru; for documents, tickets or someone's work |
-| 拝借する | はいしゃくする | 借（他动词、谦让语）//(v, trans., humble) to borrow — humble of kariru; very formal |
-| いたす | いたす | 做（他动词、谦让语）//(v, trans., humble) to do — humble of suru; very common in business (o-okuri itashimasu) |
-| いただく | いただく | 收到；领受；吃；喝（他动词、谦让语）//(v, trans., humble) to receive; to eat; to drink — humble "receive"; itadakimasu before meals; ~te itadaku = have someone kindly do |
-| 存じる | ぞんじる | 知道；认为（他动词、谦让语）//(v, trans., humble) to know; to think — humble of shiru / omou; zonjimasen = I don't know (politely) |
-| うかがう | うかがう | 拜访；请教；听说（他动词、谦让语）//(v, trans., humble) to visit; to ask; to hear — humble of houmon suru / kiku |
-| お目にかかる | おめにかかる | 见面；拜会（自动词、谦让语）//(v, intrans., humble) to meet — humble of au, meeting someone of higher status |
-| かしこまる | かしこまる | 明白了；遵命（自动词、谦让语）//(v, intrans., humble) to acknowledge (a request) — kashikomarimashita = certainly, said by staff to customers or to a superior |
-| 担当 | たんとう | 负责；担任（名、可作动词）//(n, suru-verb) being in charge (of); the person in charge — tantousha = the person handling it; tantou wa dare? = who's handling this? |
-| 名刺 | めいし | 名片（名）//(n) business card — exchanged with both hands at first meetings |
-| 後ほど | のちほど | 稍后；回头（副词）//(adv) later (on) — polite version of ato de; nochihodo o-denwa shimasu = I'll call you later |
-| 早速 | さっそく | 立刻；马上（副词）//(adv) immediately; right away; without delay — acting promptly on something just received or decided |
-| 確認 | かくにん | 确认；核实（名、可作动词）//(n, suru-verb) confirmation; checking; verification — double-checking facts, schedules or documents; constant at work |
-| 用意 | ようい | 准备（名、可作动词）//(n, suru-verb) preparation; getting (something) ready — concrete things like meals or documents; junbi is broader |
-| 説明 | せつめい | 说明；解释（名、可作动词）//(n, suru-verb) explanation; description — "explain X" is X o setsumei suru; setsumeisho = instruction manual |
-| 案内 | あんない | 引导；带路；介绍（名、可作动词）//(n, suru-verb) guidance; showing (someone) around; information — guiding people, or an information notice |
+| 参る | まいる | 去；来（自动词、谦让语）——「行く」「来る」的谦让语，用于己方；「明日参ります」我明天过去；「ただいま参ります」我马上过来//(v, intrans., humble) to go; to come — humble of 「行く」/「来る」, for your own side; 「明日参ります」 I'll come tomorrow; 「ただいま参ります」 I'll be right there |
+| 申す | もうす | 说；叫（他动词、谦让语）——「言う」的谦让语；「田中と申します」我叫田中；「父がそう申しておりました」家父是这么说的//(v, trans., humble) to say; to be called — humble of 「言う」; 「田中と申します」 my name is Tanaka; 「父がそう申しておりました」 my father said so |
+| 申し上げる | もうしあげる | 说；讲（他动词、谦让语）——比「申す」更恭敬，直接对对方说；「お礼申し上げます」谨致谢意；「ご説明申し上げます」由我为您说明//(v, trans., humble) to say; to tell — humbler than 「申す」, said to the listener; 「お礼申し上げます」 please accept my thanks; 「ご説明申し上げます」 allow me to explain |
+| 拝見する | はいけんする | 看；拜读（他动词、谦让语）——「見る」的谦让语；「資料を拝見する」拜读资料；「切符を拝見します」请出示车票//(v, trans., humble) to see; to look at — humble of 「見る」; 「資料を拝見する」 to look over the documents; 「切符を拝見します」 may I see your ticket? |
+| 拝借する | はいしゃくする | 借（他动词、谦让语）——「借りる」的谦让语，很正式；「ペンを拝借してもよろしいですか」可以借用一下您的笔吗//(v, trans., humble) to borrow — humble of 「借りる」, very formal; 「ペンを拝借してもよろしいですか」 may I borrow your pen? |
+| いたす | いたす | 做（他动词、谦让语）——「する」的谦让语，商务中极常用；「お送りいたします」我给您寄过去；「失礼いたします」打扰了//(v, trans., humble) to do — humble of 「する」, constant in business; 「お送りいたします」 I'll send it to you; 「失礼いたします」 excuse me (entering or leaving) |
+| いただく | いただく | 收到；吃；喝（他动词、谦让语）——「もらう」「食べる」「飲む」的谦让语；「先生に本をいただく」从老师那儿得到书；「教えていただく」承蒙指教//(v, trans., humble) to receive; to eat; to drink — humble of 「もらう」/「食べる」/「飲む」; 「先生に本をいただく」 to receive a book from the teacher; 「教えていただく」 to be kindly taught |
+| 存じる | ぞんじる | 知道；认为（他动词、谦让语）——「知る」「思う」的谦让语；「存じません」我不知道；「〜と存じます」我认为……//(v, trans., humble) to know; to think — humble of 「知る」/「思う」; 「存じません」 I'm afraid I don't know; 「〜と存じます」 I believe ~ |
+| うかがう | うかがう | 拜访；请教；听说（他动词、谦让语）——「訪ねる」「聞く」的谦让语；「明日うかがいます」明天去拜访您；「お話をうかがう」听您说//(v, trans., humble) to visit; to ask; to hear — humble of 「訪ねる」/「聞く」; 「明日うかがいます」 I'll visit you tomorrow; 「お話をうかがう」 to hear what you have to say |
+| お目にかかる | おめにかかる | 见面；拜会（自动词、谦让语）——「会う」的谦让语；「お目にかかれて光栄です」见到您很荣幸；「来週お目にかかります」下周去见您//(v, intrans., humble) to meet — humble of 「会う」; 「お目にかかれて光栄です」 it's an honor to meet you; 「来週お目にかかります」 I'll see you next week |
+| かしこまる | かしこまる | 恭敬地领命（自动词、谦让语）——几乎只用于「かしこまりました」，比「わかりました」恭敬，店员、下属常用；「かしこまりました」好的，明白了//(v, intrans., humble) to acknowledge (a request) respectfully — almost only as 「かしこまりました」, politer than 「わかりました」, said by staff; 「かしこまりました」 certainly |
+| 担当 | たんとう | 负责；负责人（名、可作动词）——「担当者」负责人；「営業を担当する」负责销售//(n, suru-verb) being in charge (of); the person in charge — 「担当者」 the person handling it; 「営業を担当する」 to be in charge of sales |
+| 名刺 | めいし | 名片（名）——初次见面双手递接；「名刺を交換する」交换名片；「名刺を渡す」递名片//(n) business card — exchanged with both hands at first meetings; 「名刺を交換する」 to exchange cards; 「名刺を渡す」 to hand over one's card |
+| 後ほど | のちほど | 稍后；回头（副词）——「後で」的礼貌说法；「後ほどお電話します」稍后给您打电话；「では後ほど」回头见//(adv) later (on) — politer than 「後で」; 「後ほどお電話します」 I'll call you later; 「では後ほど」 see you later |
+| 早速 | さっそく | 立刻；马上（副词）——收到或决定后马上行动；「早速ですが」那我就直入正题；「早速始める」马上开始//(adv) immediately; without delay — acting promptly on something just received; 「早速ですが」 let me get right to the point; 「早速始める」 to start right away |
+| 確認 | かくにん | 确认（名、可作动词）——「予定を確認する」确认日程；「念のため確認する」保险起见再确认一下//(n, suru-verb) confirmation; checking — 「予定を確認する」 to check the schedule; 「念のため確認する」 to double-check just in case |
+| 用意 | ようい | 准备（名、可作动词）——多指准备具体东西，「準備」更广；「資料を用意する」准备资料；「用意ができる」准备好了//(n, suru-verb) preparation; getting (something) ready — concrete things like documents or meals; 「準備」 is broader; 「資料を用意する」 to prepare the documents; 「用意ができる」 to be ready |
+| 説明 | せつめい | 说明；解释（名、可作动词）——「詳しく説明する」详细说明；「説明書」说明书//(n, suru-verb) explanation — 「詳しく説明する」 to explain in detail; 「説明書」 an instruction manual |
+| 案内 | あんない | 引导；带路；介绍（名、可作动词）——「ご案内します」我带您去；「案内所」问讯处//(n, suru-verb) guidance; showing around; information — 「ご案内します」 let me show you the way; 「案内所」 an information desk |
 
 ---
 

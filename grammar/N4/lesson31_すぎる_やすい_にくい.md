@@ -12,34 +12,34 @@ This lesson covers six groups of important grammar that combine with verbs and a
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 食べる | たべる | 吃（他动词）//(v, trans.) to eat — ichidan verb; medicine is nomu, not taberu |
-| 飲む | のむ | 喝；吃（药）（他动词）——吃药也用这个词//(v, trans.) to drink; to take (medicine) — pills are "drunk" in Japanese |
-| 働く | はたらく | 工作；劳动（自动词）//(v, intrans.) to work; to labor — the workplace takes de: ginkou de hataraku |
-| 壊れる | こわれる | 坏；损坏（自动词）//(v, intrans.) to break; to stop working — machines and objects; breaking it yourself is kowasu |
-| 割れる | われる | 碎；破裂（自动词）//(v, intrans.) to break; to crack — glass or dishes breaking; transitive pair: waru |
-| 滑る | すべる | 滑；打滑（自动词）//(v, intrans.) to slip; to slide; to be slippery — also slang for failing an exam |
-| 慣れる | なれる | 习惯；适应（自动词）//(v, intrans.) to get used to; to become accustomed — the thing takes ni: shigoto ni nareru |
-| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）//(n, suru-verb, na-adj) worry; concern; anxiety — X o shinpai suru = worry about X; shinpai shinaide = don't worry |
-| 急ぐ | いそぐ | 赶紧；急忙（自动词）//(v, intrans.) to hurry; to rush — te-form isoide; isoide! = hurry up! |
-| 泣く | なく | 哭；哭泣（自动词）//(v, intrans.) to cry; to weep — of people; animals and birds use a homophone written with another kanji (naku, to chirp or bark) |
-| 降る | ふる | 下（雨、雪）（自动词）//(v, intrans.) to fall (rain, snow) — only for precipitation; things dropping is ochiru |
-| 笑う | わらう | 笑（自动词）//(v, intrans.) to laugh; to smile — "laugh at X" takes o; hohoemu = to smile gently |
-| 走る | はしる | 跑；奔跑（自动词）//(v, intrans.) to run — also of vehicles (trains run); godan despite ending in -iru: hashirimasu, hashitte |
-| 使う | つかう | 使用；用（他动词）//(v, trans.) to use; to spend (time, money) — the general word for using things, tools, money or language |
-| 読む | よむ | 读；看（书报）（他动词）//(v, trans.) to read — silently or aloud; also "read" a situation: kuuki o yomu = read the room |
-| 書く | かく | 写（他动词）//(v, trans.) to write — drawing a picture is kaku with another kanji (e o kaku) |
-| 作る | つくる | 做；制作（他动词）//(v, trans.) to make; to cook; to build — broad: make food, things, friends or plans |
-| 静か | しずか | 安静；平静（形容动词）//(na-adj) quiet; calm; peaceful — of places, people or the sea; "be quiet!" is shizuka ni shite |
-| 簡単 | かんたん | 简单；容易（形容动词）//(na-adj) simple; easy — not complicated; compare yasashii (gentle, not demanding) |
-| 複雑 | ふくざつ | 复杂（形容动词）//(na-adj) complicated; complex; intricate — also mixed feelings: fukuzatsu na kimochi |
-| 丈夫 | じょうぶ | 结实；牢固；健壮（形容动词）——不是“丈夫”（老公）//(na-adj) sturdy; durable; healthy — strong objects or a robust body; not "husband" |
-| 諦める | あきらめる | 放弃；死心（他动词）//(v, trans.) to give up; to abandon (hope); to resign oneself — accepting something is out of reach; yameru is simply stopping |
-| 急に | きゅうに | 突然（副词）//(adv) suddenly; all of a sudden — unexpected change |
-| 箸 | はし | 筷子（名）//(n) chopsticks — same sound as "bridge" (hashi) but different pitch |
-| 説明書 | せつめいしょ | 说明书（名）//(n) instruction manual; instructions |
-| 受験 | じゅけん | 参加考试（名、可作动词）——多指入学考试//(n, suru-verb) taking an exam — mostly entrance exams for school or university |
-| 信じる | しんじる | 相信；信任（他动词）//(v, trans.) to believe; to trust — believe a story, trust a person; shinjirarenai = unbelievable |
-| 想像 | そうぞう | 想象（名、可作动词）//(n, suru-verb) imagination; picturing — souzou ijou = beyond what one imagined; souzou mo tsukanai = unimaginable |
+| 食べる | たべる | 吃（他动词）——吃药用「飲む」；「ご飯を食べる」吃饭；「食べすぎる」吃太多//(v, trans.) to eat — medicine takes 「飲む」 instead; 「ご飯を食べる」 to eat a meal; 「食べすぎる」 to overeat |
+| 飲む | のむ | 喝；吃（药）（他动词）——吃药也用这个词；「薬を飲む」吃药；「お酒を飲む」喝酒//(v, trans.) to drink; to take (medicine) — pills are "drunk" too; 「薬を飲む」 to take medicine; 「お酒を飲む」 to drink alcohol |
+| 働く | はたらく | 工作；劳动（自动词）——地点用「で」；「会社で働く」在公司工作；「働きすぎる」工作过度//(v, intrans.) to work — the workplace takes 「で」; 「会社で働く」 to work at a company; 「働きすぎる」 to overwork |
+| 壊れる | こわれる | 坏；损坏（自动词）——自己弄坏用「壊す」；「パソコンが壊れる」电脑坏了；「壊れやすい」容易坏//(v, intrans.) to break; to stop working — breaking it yourself is 「壊す」; 「パソコンが壊れる」 the computer breaks; 「壊れやすい」 fragile |
+| 割れる | われる | 碎；裂开（自动词）——他动词是「割る」；「コップが割れる」杯子碎了；「割れやすい」易碎//(v, intrans.) to break; to crack — transitive pair 「割る」; 「コップが割れる」 a glass breaks; 「割れやすい」 fragile |
+| 滑る | すべる | 滑；打滑（自动词）——俗语也指考试落榜；「雪で滑る」在雪上打滑；「滑りやすい」容易滑//(v, intrans.) to slip; to slide — also slang for failing an exam; 「雪で滑る」 to slip on the snow; 「滑りやすい」 slippery |
+| 慣れる | なれる | 习惯；适应（自动词）——对象用「に」；「仕事に慣れる」习惯工作；「日本の生活に慣れる」适应日本生活//(v, intrans.) to get used to — the thing takes 「に」; 「仕事に慣れる」 to get used to the job; 「日本の生活に慣れる」 to get used to life in Japan |
+| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）——「将来を心配する」担心将来；「心配をかける」让人担心//(n, suru-verb, na-adj) worry; concern — 「将来を心配する」 to worry about the future; 「心配をかける」 to make others worry |
+| 急ぐ | いそぐ | 赶紧；急忙（自动词）——「急いで」快点；「駅へ急ぐ」赶往车站//(v, intrans.) to hurry — 「急いで」 hurry up!; 「駅へ急ぐ」 to hurry to the station |
+| 泣く | なく | 哭；哭泣（自动词）——用于人，动物鸣叫写作「鳴く」；「赤ちゃんが泣く」婴儿哭；「泣き出す」哭起来//(v, intrans.) to cry; to weep — of people; animals' cries are written 「鳴く」; 「赤ちゃんが泣く」 a baby cries; 「泣き出す」 to burst into tears |
+| 降る | ふる | 下（雨、雪）（自动词）——只用于降水，东西掉落用「落ちる」；「雨が降る」下雨；「雪が降り始める」开始下雪//(v, intrans.) to fall (rain, snow) — only precipitation; objects falling is 「落ちる」; 「雨が降る」 it rains; 「雪が降り始める」 it starts to snow |
+| 笑う | わらう | 笑（自他动词）——笑某人用「を」；「人を笑う」嘲笑别人；「大声で笑う」放声大笑//(v, intrans./trans.) to laugh; to smile — "laugh at" takes 「を」; 「人を笑う」 to laugh at someone; 「大声で笑う」 to laugh out loud |
+| 走る | はしる | 跑（自动词）——形似一段动词，实为五段动词：「走って」；「駅まで走る」跑到车站；「電車が走る」电车行驶//(v, intrans.) to run — conjugates like 「帰る」, not 「見る」: 「走って」; 「駅まで走る」 to run to the station; 「電車が走る」 trains run |
+| 使う | つかう | 使用（他动词）——也指花费时间、金钱；「お金を使う」花钱；「使いやすい」好用//(v, trans.) to use; to spend (time, money) — 「お金を使う」 to spend money; 「使いやすい」 easy to use |
+| 読む | よむ | 读；看（他动词）——中文“看书、看报”在日语里用「読む」，不用「見る」；「本を読む」看书；「空気を読む」察言观色//(v, trans.) to read — 「本を読む」 to read a book; 「空気を読む」 to read the room |
+| 書く | かく | 写（他动词）——画画写作「描く」；「手紙を書く」写信；「名前を書く」写名字//(v, trans.) to write — drawing is 「描く」; 「手紙を書く」 to write a letter; 「名前を書く」 to write one's name |
+| 作る | つくる | 做；制作（他动词）——「料理を作る」做饭；「友達を作る」交朋友//(v, trans.) to make; to cook; to build — 「料理を作る」 to cook; 「友達を作る」 to make friends |
+| 静か | しずか | 安静；平静（形容动词）——「静かな町」安静的小镇；「静かにしてください」请安静//(na-adj) quiet; calm; peaceful — 「静かな町」 a quiet town; 「静かにしてください」 please be quiet |
+| 簡単 | かんたん | 简单（形容动词）——「簡単な問題」简单的问题；「簡単に言うと」简单地说//(na-adj) simple; easy — 「簡単な問題」 an easy question; 「簡単に言うと」 to put it simply |
+| 複雑 | ふくざつ | 复杂（形容动词）——也可形容心情；「複雑な気持ち」复杂的心情；「複雑な問題」复杂的问题//(na-adj) complicated; complex — 「複雑な気持ち」 mixed feelings; 「複雑な問題」 a complex problem |
+| 丈夫 | じょうぶ | 结实；健壮（形容动词）——不是“丈夫”（老公）；「丈夫なかばん」结实的包；「体が丈夫だ」身体结实//(na-adj) sturdy; durable; healthy — 「丈夫なかばん」 a sturdy bag; 「体が丈夫だ」 to be physically robust |
+| 諦める | あきらめる | 放弃；死心（他动词）——接受得不到的现实，单纯停止用「やめる」；「夢を諦める」放弃梦想；「最後まで諦めない」坚持到底不放弃//(v, trans.) to give up — accepting it's out of reach; simply stopping is 「やめる」; 「夢を諦める」 to give up on a dream; 「最後まで諦めない」 to never give up |
+| 急に | きゅうに | 突然（副词）——「急に雨が降り出す」突然下起雨来；「急に言われても」突然这么说我也……//(adv) suddenly — 「急に雨が降り出す」 it suddenly starts raining; 「急に言われても」 that's rather short notice |
+| 箸 | はし | 筷子（名）——与「橋」同音不同调；「箸を使う」用筷子；「お箸」筷子（礼貌说法）//(n) chopsticks — same sound as 「橋」 (bridge), different pitch; 「箸を使う」 to use chopsticks; 「お箸」 chopsticks (polite) |
+| 説明書 | せつめいしょ | 说明书（名）——「説明書を読む」看说明书；「取扱説明書」使用说明书//(n) instruction manual; instructions — 「説明書を読む」 to read the manual; 「取扱説明書」 an owner's manual |
+| 受験 | じゅけん | 参加考试（名、可作动词）——多指升学考试；「大学を受験する」考大学；「受験生」考生//(n, suru-verb) taking an exam — mostly entrance exams; 「大学を受験する」 to take university entrance exams; 「受験生」 an exam candidate |
+| 信じる | しんじる | 相信；信任（他动词）——「人を信じる」信任别人；「信じられない」难以置信//(v, trans.) to believe; to trust — 「人を信じる」 to trust people; 「信じられない」 unbelievable |
+| 想像 | そうぞう | 想象（名、可作动词）——「想像以上」超出想象；「想像もつかない」无法想象//(n, suru-verb) imagination — 「想像以上」 beyond what one imagined; 「想像もつかない」 unimaginable |
 
 ---
 

@@ -12,23 +12,23 @@ This lesson covers grammar expressing "degree" and "conditional extremes." 「�
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 練習 | れんしゅう | 练习（名、可作动词）//(n, suru-verb) practice; training; drill — practicing a skill, sport, instrument or language |
-| 上手 | じょうず | 擅长；（做得）好（形容动词）——不用于说自己//(na-adj) skillful; good at (something) — praise for others; for yourself use tokui, since jouzu sounds boastful |
-| 死ぬ | しぬ | 死（自动词）//(v, intrans.) to die — blunt; the polite word is nakunaru; the only common verb ending in -nu (te-form shinde) |
-| 涙 | なみだ | 眼泪（名）//(n) tears; teardrop — namida ga deru = tears come; namida o nagasu = shed tears |
-| 出る | でる | 出；流出；出去（自动词）//(v, intrans.) to come out; to leave; to appear — very broad; tears, results, a person leaving, a TV appearance |
-| 健康 | けんこう | 健康（名、形容动词）//(n, na-adj) health; healthy — physical health; kenkou ni ii = good for your health |
-| 十分 | じゅうぶん | 充分；足够（形容动词、副词）//(na-adj, adv) enough; sufficient; plenty — also written with a different second character (same meaning); juppun = ten minutes |
-| 幸せ | しあわせ | 幸福；幸运（形容动词、名）——指持久的幸福感//(na-adj, n) happy; happiness; good fortune — lasting well-being, not a one-off thrill (that is ureshii); koufuku is the formal equivalent |
-| 近づく | ちかづく | 接近；临近（自动词）//(v, intrans.) to approach; to draw near; to get closer — in space or time: the exam is approaching |
-| 緊張 | きんちょう | 紧张（名、可作动词）——只指心情或局势紧张，不指“时间紧”//(n, suru-verb) nervousness; tension — nervous before a test or speech; also political tension; never "busy" or "short of time" |
-| 給料 | きゅうりょう | 工资；薪水（名）//(n) salary; pay; wages — monthly pay from an employer; kyuuryoubi = payday |
-| 不安 | ふあん | 不安；担心（名、形容动词）//(n, na-adj) anxiety; unease; insecurity — a vague worry about the future; shinpai is concern about a specific thing |
-| 努力 | どりょく | 努力（名、可作动词）——在日语中是名词，“努力地”另有说法//(n, suru-verb) effort; hard work; endeavor — a noun: doryoku suru = make an effort; adverbial "hard" is isshoukenmei |
-| 成長 | せいちょう | 成长；增长（名、可作动词）//(n, suru-verb) growth; development; growing up — people, children or the economy (economic growth) |
-| 複雑 | ふくざつ | 复杂（形容动词）//(na-adj) complicated; complex; intricate — also mixed feelings: fukuzatsu na kimochi |
-| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取//(n, suru-verb) passing (an exam); being accepted (to a school) — shiken ni goukaku suru = pass an exam; mainly exams and admissions |
-| 電気 | でんき | 电；电灯（名）——口语中常指“灯”//(n) electricity; (electric) light — in daily speech often "the lights": denki o tsukeru / kesu = turn the lights on / off |
+| 練習 | れんしゅう | 练习（名、可作动词）——「ピアノを練習する」练钢琴；「練習試合」练习赛//(n, suru-verb) practice — 「ピアノを練習する」 to practice the piano; 「練習試合」 a practice match |
+| 上手 | じょうず | 擅长；做得好（形容动词）——用来夸别人，说自己用「得意」；「日本語が上手だ」日语很好；「お上手ですね」您真行//(na-adj) skillful; good at — praise for others; about yourself use 「得意」; 「日本語が上手だ」 to be good at Japanese; 「お上手ですね」 you're so good at it |
+| 死ぬ | しぬ | 死（自动词）——说法直白，委婉说「亡くなる」；「死ぬほど」要命地；「死ぬかと思った」差点以为要死了//(v, intrans.) to die — blunt; the polite word is 「亡くなる」; 「死ぬほど」 to death, extremely; 「死ぬかと思った」 I thought I was going to die |
+| 涙 | なみだ | 眼泪（名）——「涙が出る」流泪；「涙を流す」流眼泪//(n) tears — 「涙が出る」 tears come; 「涙を流す」 to shed tears |
+| 出る | でる | 出来；出去；出现（自动词）——用法很广；「家を出る」出门；「結果が出る」出结果//(v, intrans.) to come out; to leave; to appear — very broad; 「家を出る」 to leave home; 「結果が出る」 the results come out |
+| 健康 | けんこう | 健康（名、形容动词）——「健康にいい」对健康有益；「健康診断」体检//(n, na-adj) health; healthy — 「健康にいい」 good for your health; 「健康診断」 a health checkup |
+| 十分 | じゅうぶん | 充分；足够（形容动词、副词）——也写作「充分」，另一读音表示“十分钟”；「十分な時間」充足的时间；「もう十分だ」已经够了//(na-adj, adv) enough; sufficient — also written 「充分」; read another way it means "ten minutes"; 「十分な時間」 enough time; 「もう十分だ」 that's enough |
+| 幸せ | しあわせ | 幸福（形容动词、名）——持久的幸福感，一时的高兴用「嬉しい」；「幸せになる」变得幸福；「幸せな家庭」幸福的家庭//(na-adj, n) happy; happiness — lasting well-being; a one-off happy moment is 「嬉しい」; 「幸せになる」 to find happiness; 「幸せな家庭」 a happy family |
+| 近づく | ちかづく | 接近；临近（自动词）——空间和时间都可用；「試験が近づく」考试临近；「駅に近づく」快到车站//(v, intrans.) to approach; to draw near — in space or time; 「試験が近づく」 the exam is approaching; 「駅に近づく」 to get near the station |
+| 緊張 | きんちょう | 紧张（名、可作动词）——只指心情或局势紧张，不指“时间紧、东西缺”；「面接で緊張する」面试时紧张；「緊張が解ける」紧张感消除//(n, suru-verb) nervousness; tension — nerves or political tension, never "busy" or "in short supply"; 「面接で緊張する」 to get nervous in an interview; 「緊張が解ける」 the tension eases |
+| 給料 | きゅうりょう | 工资（名）——「給料が上がる」涨工资；「給料日」发薪日//(n) salary; pay — 「給料が上がる」 to get a raise; 「給料日」 payday |
+| 不安 | ふあん | 不安；担心（名、形容动词）——对未来模糊的担忧，具体的担心多用「心配」；「不安になる」感到不安；「将来が不安だ」对未来感到不安//(n, na-adj) anxiety; unease — a vague worry, often about the future; a specific worry is 「心配」; 「不安になる」 to get anxious; 「将来が不安だ」 to be anxious about the future |
+| 努力 | どりょく | 努力（名、可作动词）——是名词，“努力地”说「一生懸命」；「努力が報われる」努力得到回报；「努力を重ねる」不断努力//(n, suru-verb) effort; hard work — a noun, not an adverb ("work hard" is 「一生懸命」); 「努力が報われる」 one's efforts pay off; 「努力を重ねる」 to keep working hard |
+| 成長 | せいちょう | 成长；增长（名、可作动词）——「子供が成長する」孩子长大；「経済成長」经济增长//(n, suru-verb) growth; growing up — 「子供が成長する」 a child grows up; 「経済成長」 economic growth |
+| 複雑 | ふくざつ | 复杂（形容动词）——也可形容心情；「複雑な気持ち」复杂的心情；「複雑な問題」复杂的问题//(na-adj) complicated; complex — 「複雑な気持ち」 mixed feelings; 「複雑な問題」 a complex problem |
+| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取；「試験に合格する」考试合格；「大学に合格する」考上大学//(n, suru-verb) passing (an exam); being accepted — 「試験に合格する」 to pass an exam; 「大学に合格する」 to get into a university |
+| 電気 | でんき | 电；电灯（名）——口语中常指“灯”；「電気をつける」开灯；「電気を消す」关灯//(n) electricity; the lights — 「電気をつける」 to turn on the lights; 「電気を消す」 to turn off the lights |
 
 ---
 
