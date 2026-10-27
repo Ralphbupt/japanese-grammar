@@ -12,36 +12,36 @@ Supplementary N5 grammar not yet covered: existence expressions, purpose of move
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 机 | つくえ | 书桌；桌子（名）——指办公、学习用的桌子//(n) desk; table — a desk for working or studying; a dining table is usually teeburu |
-| 椅子 | いす | 椅子（名）//(n) chair |
-| 冷蔵庫 | れいぞうこ | 冰箱（名）//(n) refrigerator; fridge — reitouko = freezer |
-| 庭 | にわ | 院子；庭院（名）//(n) garden; yard — the yard of a house |
-| 公園 | こうえん | 公园（名）//(n) park — a public park, from a small playground to a large city park |
-| 池 | いけ | 池塘（名）//(n) pond |
-| 金魚 | きんぎょ | 金鱼（名）//(n) goldfish |
-| 財布 | さいふ | 钱包（名）//(n) wallet; purse |
-| 引き出し | ひきだし | 抽屉（名）//(n) drawer |
-| 棚 | たな | 架子；搁板（名）//(n) shelf; rack |
-| 映画 | えいが | 电影（名）//(n) movie; film — "see a movie" takes the verb miru; a cinema is eigakan |
-| 買い物 | かいもの | 购物；买东西（名、可作动词）//(n, suru-verb) shopping — "go shopping" is kaimono ni iku |
-| 散歩 | さんぽ | 散步（名、可作动词）//(n, suru-verb) walk; stroll — a leisurely walk; inu no sanpo = walking the dog |
-| 泳ぐ | およぐ | 游泳（自动词）//(v, intrans.) to swim — te-form is oyoide (gu → ide) |
-| 釣り | つり | 钓鱼（名）//(n) fishing — "go fishing" is tsuri ni iku |
-| 歌う | うたう | 唱（歌）（他动词）//(v, trans.) to sing — song takes o |
-| 踊る | おどる | 跳舞（自动词）//(v, intrans.) to dance — odori = a dance; Bon odori = summer festival dancing |
-| 料理 | りょうり | 菜；做菜（名、可作动词）——不同于中文“料理”，泛指菜肴和烹饪//(n, suru-verb) cooking; dish; cuisine — both the act and the food; Nihon ryouri = Japanese food |
-| 絵 | え | 画；图画（名）//(n) picture; painting; drawing — "draw a picture" is e o kaku |
-| 描く | かく | 画（画）（他动词）//(v, trans.) to draw; to paint — homophone of "write" with a different kanji |
-| 得意 | とくい | 擅长；拿手（形容动词、名）——可以用来说自己//(na-adj, n) good at; one's strong point — fine to say about yourself, unlike jouzu; tokui ryouri = one's best dish |
-| 苦手 | にがて | 不擅长；怕（形容动词、名）——也可委婉表示不喜欢人或食物//(na-adj, n) bad at; weak point; not one's thing — also a soft way to say you dislike a food or person |
-| 上手 | じょうず | 擅长；（做得）好（形容动词）——不用于说自己//(na-adj) skillful; good at (something) — praise for others; for yourself use tokui, since jouzu sounds boastful |
-| 下手 | へた | 不擅长；（做得）差（形容动词）//(na-adj) unskillful; poor at; bad at — blunter than nigate; used modestly about yourself |
-| 果物 | くだもの | 水果（名）//(n) fruit |
-| 野菜 | やさい | 蔬菜（名）//(n) vegetable; vegetables — no plural in Japanese, so one word covers one or many |
-| 肉 | にく | 肉（名）//(n) meat — pork, beef and chicken add the animal name (butaniku, gyuuniku, toriniku) |
-| 牛乳 | ぎゅうにゅう | 牛奶（名）//(n) milk |
-| 大体 | だいたい | 大概；大致（副词、名）//(adv, n) roughly; about; generally — "I mostly understand" is daitai wakaru |
-| 値段 | ねだん | 价格；价钱（名）//(n) price; cost — the everyday word; kakaku is formal; nedan ga takai = expensive |
+| 机 | つくえ | 书桌（名）——指学习、办公用的桌子，饭桌是「テーブル」；「机の上」桌上//(n) desk — for working or studying; a dining table is 「テーブル」; 「机の上」 on the desk |
+| 椅子 | いす | 椅子（名）——「椅子に座る」坐在椅子上//(n) chair — 「椅子に座る」 to sit on a chair |
+| 冷蔵庫 | れいぞうこ | 冰箱（名）——「冷蔵庫に入れる」放进冰箱；「冷蔵庫で冷やす」放冰箱冰着//(n) refrigerator; fridge — 「冷蔵庫に入れる」 to put in the fridge; 「冷蔵庫で冷やす」 to chill in the fridge |
+| 庭 | にわ | 院子；庭院（名）——「庭に花を植える」在院子里种花//(n) garden; yard — 「庭に花を植える」 to plant flowers in the garden |
+| 公園 | こうえん | 公园（名）——「公園で遊ぶ」在公园玩；「公園を散歩する」在公园散步//(n) park — 「公園で遊ぶ」 to play in the park; 「公園を散歩する」 to take a walk in the park |
+| 池 | いけ | 池塘（名）——「池に魚がいる」池塘里有鱼//(n) pond — 「池に魚がいる」 there are fish in the pond |
+| 金魚 | きんぎょ | 金鱼（名）——「金魚を飼う」养金鱼//(n) goldfish — 「金魚を飼う」 to keep goldfish |
+| 財布 | さいふ | 钱包（名）——「財布を落とす」丢钱包；「財布を盗まれる」钱包被偷//(n) wallet; purse — 「財布を落とす」 to lose one's wallet; 「財布を盗まれる」 to have one's wallet stolen |
+| 引き出し | ひきだし | 抽屉（名）——「引き出しの中」抽屉里//(n) drawer — 「引き出しの中」 in the drawer |
+| 棚 | たな | 架子；搁板（名）——「棚の上」架子上；「本棚」书架//(n) shelf; rack — 「棚の上」 on the shelf; 「本棚」 a bookshelf |
+| 映画 | えいが | 电影（名）——「映画を見る」看电影；「映画館」电影院//(n) movie; film — 「映画を見る」 to see a movie; 「映画館」 a cinema |
+| 買い物 | かいもの | 购物；买东西（名、可作动词）——「買い物に行く」去买东西//(n, suru-verb) shopping — 「買い物に行く」 to go shopping |
+| 散歩 | さんぽ | 散步（名、可作动词）——「散歩に行く」去散步；「犬の散歩」遛狗//(n, suru-verb) walk; stroll — 「散歩に行く」 to go for a walk; 「犬の散歩」 walking the dog |
+| 泳ぐ | およぐ | 游泳（自动词）——「て」形是「泳いで」；「海で泳ぐ」在海里游泳//(v, intrans.) to swim — te-form 「泳いで」; 「海で泳ぐ」 to swim in the sea |
+| 釣り | つり | 钓鱼（名）——「釣りに行く」去钓鱼//(n) fishing — 「釣りに行く」 to go fishing |
+| 歌う | うたう | 唱（歌）（他动词）——「歌を歌う」唱歌；「カラオケで歌う」唱卡拉OK//(v, trans.) to sing — 「歌を歌う」 to sing a song; 「カラオケで歌う」 to sing karaoke |
+| 踊る | おどる | 跳舞（自动词）——「音楽に合わせて踊る」随着音乐跳舞；「盆踊り」盂兰盆舞//(v, intrans.) to dance — 「音楽に合わせて踊る」 to dance to music; 「盆踊り」 Bon festival dancing |
+| 料理 | りょうり | 菜；做菜（名、可作动词）——泛指菜肴和烹饪，不专指日本料理；「料理を作る」做菜；「日本料理」日本菜//(n, suru-verb) cooking; dish; cuisine — both the act and the food; 「料理を作る」 to cook; 「日本料理」 Japanese food |
+| 絵 | え | 画；图画（名）——「絵を描く」画画；「絵が上手だ」画得好//(n) picture; painting; drawing — 「絵を描く」 to draw a picture; 「絵が上手だ」 to be good at drawing |
+| 描く | かく | 画（画）（他动词）——与「書く」同音不同字；「絵を描く」画画//(v, trans.) to draw; to paint — same sound as 「書く」 (write), different kanji; 「絵を描く」 to draw a picture |
+| 得意 | とくい | 擅长；拿手（形容动词、名）——可以用来说自己，不像「上手」；「料理が得意だ」擅长做饭；「得意分野」拿手领域//(na-adj, n) good at; one's strong point — fine to say about yourself, unlike 「上手」; 「料理が得意だ」 to be good at cooking; 「得意分野」 one's specialty |
+| 苦手 | にがて | 不擅长；怕（形容动词、名）——也可委婉表示不喜欢；「数学が苦手だ」数学不好；「苦手な食べ物」不爱吃的东西//(na-adj, n) bad at; not one's thing — also a soft way to say you dislike something; 「数学が苦手だ」 to be bad at math; 「苦手な食べ物」 a food one doesn't like |
+| 上手 | じょうず | 擅长；做得好（形容动词）——用来夸别人，说自己用「得意」；「日本語が上手だ」日语很好；「お上手ですね」您真行//(na-adj) skillful; good at — praise for others; about yourself use 「得意」; 「日本語が上手だ」 to be good at Japanese; 「お上手ですね」 you're so good at it |
+| 下手 | へた | 不擅长；（做得）差（形容动词）——比「苦手」直白，可自谦；「歌が下手だ」唱歌难听//(na-adj) unskillful; bad at — blunter than 「苦手」; fine as modesty about yourself; 「歌が下手だ」 to be a bad singer |
+| 果物 | くだもの | 水果（名）——「果物を食べる」吃水果//(n) fruit — 「果物を食べる」 to eat fruit |
+| 野菜 | やさい | 蔬菜（名）——「野菜を食べる」吃蔬菜；「野菜不足」蔬菜吃得少//(n) vegetables — 「野菜を食べる」 to eat vegetables; 「野菜不足」 not eating enough vegetables |
+| 肉 | にく | 肉（名）——「豚肉」猪肉；「牛肉」牛肉//(n) meat — 「豚肉」 pork; 「牛肉」 beef |
+| 牛乳 | ぎゅうにゅう | 牛奶（名）——「牛乳を飲む」喝牛奶//(n) milk — 「牛乳を飲む」 to drink milk |
+| 大体 | だいたい | 大概；大致（副词、名）——「大体分かる」大致明白；「大体同じ」差不多一样//(adv, n) roughly; about; generally — 「大体分かる」 to mostly understand; 「大体同じ」 about the same |
+| 値段 | ねだん | 价格（名）——日常用词，正式说「価格」；「値段が高い」价格贵；「値段の割に」就价格而言//(n) price — everyday word; formal is 「価格」; 「値段が高い」 expensive; 「値段の割に」 for the price |
 
 ---
 

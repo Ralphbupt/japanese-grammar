@@ -12,24 +12,24 @@ This lesson covers N3 grammar for concession ("although / even though"). These e
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）//(n, suru-verb, na-adj) opposition; objection; the opposite — ni hantai suru = be against; also the reverse side or direction (hantai-gawa) |
-| 実行 | じっこう | 实行；执行（名、可作动词）//(n, suru-verb) carrying out; putting into practice — a plan, decision or promise; stresses actually doing it, not just talking |
-| 警告 | けいこく | 警告（名、可作动词）//(n, suru-verb) warning; caution — formal, e.g. from police or authorities; chuui is the milder "warning" |
-| 無視 | むし | 无视；不理会（名、可作动词）//(n, suru-verb) ignoring; disregarding — ignore a person, warning or rule; can be deliberate social snubbing |
-| 口先 | くちさき | 嘴上；空话（名）——常含贬义//(n) words alone (as opposed to actions); empty talk; lip service — negative: kuchisaki dake = all talk |
-| 実力 | じつりょく | 实力；真本事（名）//(n) real ability; actual skill; capability — ability shown in results, not reputation |
-| 態度 | たいど | 态度；举止（名）——指外在表现出来的样子//(n) attitude; manner; the way someone behaves — the outward behavior people can see, e.g. a rude or arrogant manner |
-| 偉そう | えらそう | 自以为了不起；摆架子（形容动词）//(na-adj) self-important; arrogant; acting high and mighty — critical; erasou na taido = bossy attitude |
-| 大人 | おとな | 成年人；大人（名）——不是中文“大人”的敬称//(n) adult; grown-up — opposite of kodomo; otona-rashii = mature; on price lists, the adult fare |
-| 片付ける | かたづける | 收拾；整理；处理掉（他动词）//(v, trans.) to tidy up; to put away; to finish off (a task) — rooms, desks or work; intransitive pair: katazuku |
-| 辞退 | じたい | 谢绝；婉拒（名、可作动词）//(n, suru-verb) declining (an offer or invitation); turning down — polite and formal; declining a prize, job offer or role |
-| 優勝 | ゆうしょう | 夺冠；获得冠军（名、可作动词）——是动作，不是“冠军”本人//(n, suru-verb) winning (a championship); taking first place — the win itself; the winner is yuushousha |
-| 困難 | こんなん | 困难；艰难（名、形容动词）——比口语的“难”更书面//(n, na-adj) difficulty; hardship; adversity — formal and written; konnan o norikoeru = overcome difficulties; everyday "hard" is muzukashii |
-| 立場 | たちば | 立场；处境（名）//(n) position; standpoint; one's situation — aite no tachiba ni tatsu = put yourself in the other person's shoes |
-| 有名 | ゆうめい | 有名；著名（形容动词）//(na-adj) famous; well-known — yuumei na hito = a famous person; yuumei ni naru = become famous |
-| 景気 | けいき | 经济形势；景气（名）//(n) the economy; business conditions — how business is doing; keiki ga ii = the economy is booming |
-| 収入 | しゅうにゅう | 收入（名）//(n) income; earnings — salary and other money coming in; opposite: shishutsu (expenditure) |
-| 知識 | ちしき | 知识（名）//(n) knowledge; know-how — knowledge you have learned; chishiki ga aru = be knowledgeable |
+| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）——「計画に反対する」反对计划；「反対側」对面，相反方向//(n, suru-verb, na-adj) opposition; the opposite — 「計画に反対する」 to oppose a plan; 「反対側」 the opposite side |
+| 実行 | じっこう | 实行；执行（名、可作动词）——强调真正付诸行动；「計画を実行する」执行计划；「実行に移す」付诸实施//(n, suru-verb) carrying out; putting into practice — stresses actually doing it, not just talking; 「計画を実行する」 to carry out a plan; 「実行に移す」 to put into action |
+| 警告 | けいこく | 警告（名、可作动词）——比「注意」严重、正式；「警告を受ける」受到警告；「警告を無視する」无视警告//(n, suru-verb) warning — stronger and more official than 「注意」; 「警告を受ける」 to get a warning; 「警告を無視する」 to ignore a warning |
+| 無視 | むし | 无视；不理（名、可作动词）——「信号を無視する」闯红灯；「人を無視する」不理人//(n, suru-verb) ignoring; disregarding — 「信号を無視する」 to run a red light; 「人を無視する」 to give someone the cold shoulder |
+| 口先 | くちさき | 嘴上；空话（名）——含贬义；「口先だけ」光说不做；「口先だけの約束」空头承诺//(n) mere words; lip service — negative; 「口先だけ」 all talk; 「口先だけの約束」 an empty promise |
+| 実力 | じつりょく | 实力；真本事（名）——「実力がある」有实力；「実力を発揮する」发挥实力//(n) real ability; skill — proven by results, not reputation; 「実力がある」 to be genuinely capable; 「実力を発揮する」 to show what one can do |
+| 態度 | たいど | 态度（名）——偏指外在表现出的举止；「態度が悪い」态度不好；「先生に対する態度」对老师的态度//(n) attitude; manner — how someone visibly behaves toward others; 「態度が悪い」 rude, has a bad attitude; 「先生に対する態度」 one's attitude toward the teacher |
+| 偉そう | えらそう | 自以为了不起；摆架子（形容动词）——批评用语；「偉そうな態度」傲慢的态度；「偉そうに言う」说话盛气凌人//(na-adj) self-important; bossy — always critical; 「偉そうな態度」 an arrogant attitude; 「偉そうに言う」 to talk down to people |
+| 大人 | おとな | 成年人；大人（名）——不是中文“大人”的敬称；「大人になる」长大成人；「大人っぽい」显得成熟//(n) adult; grown-up — 「大人になる」 to grow up; 「大人っぽい」 mature-looking |
+| 片付ける | かたづける | 收拾；整理；处理完（他动词）——自动词是「片付く」；「部屋を片付ける」收拾房间；「仕事を片付ける」把工作处理掉//(v, trans.) to tidy up; to put away; to finish off — intransitive pair 「片付く」; 「部屋を片付ける」 to tidy one's room; 「仕事を片付ける」 to get work out of the way |
+| 辞退 | じたい | 谢绝；婉拒（名、可作动词）——指自己推辞，不是中文“辞退（解雇）”；「内定を辞退する」拒绝录用；「出場を辞退する」放弃参赛//(n, suru-verb) declining (an offer); withdrawing — oneself turning something down, never firing someone; 「内定を辞退する」 to turn down a job offer; 「出場を辞退する」 to withdraw from a competition |
+| 優勝 | ゆうしょう | 夺冠（名、可作动词）——指获胜这件事，冠军本人是「優勝者」；「大会で優勝する」在比赛中夺冠；「優勝を争う」争夺冠军//(n, suru-verb) winning (a championship); first place — the win itself; the winner is 「優勝者」; 「大会で優勝する」 to win the tournament; 「優勝を争う」 to compete for the title |
+| 困難 | こんなん | 困难（名、形容动词）——书面语，口语用「難しい」；「困難を乗り越える」克服困难；「困難に直面する」面临困难//(n, na-adj) difficulty; hardship — formal; everyday "hard" is 「難しい」; 「困難を乗り越える」 to overcome hardship; 「困難に直面する」 to face difficulties |
+| 立場 | たちば | 立场；处境（名）——「相手の立場に立つ」站在对方立场；「立場が弱い」处境不利//(n) position; standpoint; situation — 「相手の立場に立つ」 to put yourself in their shoes; 「立場が弱い」 to be in a weak position |
+| 有名 | ゆうめい | 有名；著名（形容动词）——「有名な人」名人；「温泉で有名だ」以温泉闻名//(na-adj) famous; well-known — 「有名な人」 a famous person; 「温泉で有名だ」 famous for its hot springs |
+| 景気 | けいき | 景气；经济形势（名）——「景気がいい」经济景气；「景気が回復する」经济复苏//(n) the economy; business conditions — 「景気がいい」 business is booming; 「景気が回復する」 the economy recovers |
+| 収入 | しゅうにゅう | 收入（名）——「収入が増える」收入增加；「収入が少ない」收入少//(n) income — 「収入が増える」 income goes up; 「収入が少ない」 to have a low income |
+| 知識 | ちしき | 知识（名）——「知識がある」有知识；「専門知識」专业知识//(n) knowledge — 「知識がある」 to be knowledgeable; 「専門知識」 specialist knowledge |
 
 ---
 

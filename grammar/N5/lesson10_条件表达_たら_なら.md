@@ -4,18 +4,18 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 春 | はる | 春天（名）//(n) spring (season) — also the start of the school and business year (April) |
-| 秋 | あき | 秋天（名）//(n) autumn; fall |
-| 冬 | ふゆ | 冬天（名）//(n) winter |
-| 咲く | さく | （花）开（自动词）//(v, intrans.) to bloom; to blossom — sakura ga saku; mankai = full bloom |
-| 氷 | こおり | 冰（名）//(n) ice |
-| 酒 | さけ | 酒；日本酒（名）//(n) alcohol; sake (Japanese rice wine) — can mean drinks in general or sake specifically |
-| 押す | おす | 按；推（他动词）//(v, trans.) to push; to press (a button) — opposite of hiku (pull) |
-| 駅 | えき | 车站（名）//(n) station (train) — bus stops are basu-tei |
-| 試合 | しあい | 比赛（名）//(n) match; game; bout — a sports match between opponents; a whole tournament is taikai |
-| 中止 | ちゅうし | 中止；取消（名、可作动词）——指取消不办，或中途停止//(n, suru-verb) cancellation; calling off; suspension — an event cancelled beforehand or stopped midway, e.g. ame de chuushi (rained off) |
-| 電気 | でんき | 电；电灯（名）——口语中常指“灯”//(n) electricity; (electric) light — in daily speech often "the lights": denki o tsukeru / kesu = turn the lights on / off |
-| 相談する | そうだんする | 商量；咨询（自他动词）//(v, intrans./trans.) to consult; to talk over; to ask advice — the person consulted takes ni |
+| 春 | はる | 春天（名）——日本新学年、新财年从四月开始；「春が来る」春天来了；「春休み」春假//(n) spring — the school and business year starts in April; 「春が来る」 spring comes; 「春休み」 spring break |
+| 秋 | あき | 秋天（名）——「秋になる」到了秋天//(n) autumn; fall — 「秋になる」 autumn comes |
+| 冬 | ふゆ | 冬天（名）——「冬休み」寒假//(n) winter — 「冬休み」 winter break |
+| 咲く | さく | （花）开（自动词）——「桜が咲く」樱花开；「花が咲く」开花//(v, intrans.) to bloom; to blossom — 「桜が咲く」 the cherry trees bloom; 「花が咲く」 flowers bloom |
+| 氷 | こおり | 冰（名）——「氷が溶ける」冰融化//(n) ice — 「氷が溶ける」 ice melts |
+| 酒 | さけ | 酒；日本酒（名）——可泛指酒，也专指日本清酒；「お酒を飲む」喝酒//(n) alcohol; sake — drinks in general or rice wine specifically; 「お酒を飲む」 to drink |
+| 押す | おす | 按；推（他动词）——反义是「引く」；「ボタンを押す」按按钮//(v, trans.) to push; to press — the opposite is 「引く」; 「ボタンを押す」 to press a button |
+| 駅 | えき | 车站（名）——指火车、电车站，公交站是「バス停」；「駅前」车站前//(n) (train) station — a bus stop is 「バス停」; 「駅前」 in front of the station |
+| 試合 | しあい | 比赛（名）——指一场比赛，整个赛事叫「大会」；「試合に勝つ」赢得比赛；「試合に出る」出场比赛//(n) match; game — a single match; a whole tournament is 「大会」; 「試合に勝つ」 to win a match; 「試合に出る」 to play in a match |
+| 中止 | ちゅうし | 取消；中止（名、可作动词）——指取消不办或中途停止；「雨で中止になる」因雨取消；「計画を中止する」中止计划//(n, suru-verb) cancellation; calling off — beforehand or midway; 「雨で中止になる」 to be rained off; 「計画を中止する」 to scrap a plan |
+| 電気 | でんき | 电；电灯（名）——口语中常指“灯”；「電気をつける」开灯；「電気を消す」关灯//(n) electricity; the lights — 「電気をつける」 to turn on the lights; 「電気を消す」 to turn off the lights |
+| 相談する | そうだんする | 商量；咨询（自他动词）——咨询的对象用「に」；「先生に相談する」找老师商量//(v, intrans./trans.) to consult; to talk over — the person consulted takes 「に」; 「先生に相談する」 to ask the teacher for advice |
 
 ## 1. 〜たら（万能条件・完成后）||1. 〜たら (All-purpose conditional / after completion)
 

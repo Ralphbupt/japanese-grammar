@@ -4,14 +4,14 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 引き受ける | ひきうける | 承担；接受（他动词）——接下请求或任务//(v, trans.) to take on; to accept (a job or request); to undertake — agreeing to do work someone asks of you, often reluctantly |
-| お菓子 | おかし | 点心；零食（名）//(n) sweets; snacks; confectionery — cakes, cookies, candy, chips |
-| 転勤 | てんきん | 调动工作；调职（名、可作动词）//(n, suru-verb) job transfer — being moved to another office or city by the same company |
-| ルール | ルール | 规则；规定（名）//(n) rule — the casual everyday word; formal written rules are kisoku |
-| 制服 | せいふく | 制服；校服（名）//(n) uniform (school or work) — standard in Japanese middle and high schools |
-| 届く | とどく | 送到；到达；够得着（自动词）//(v, intrans.) to arrive; to reach — mail, parcels or messages arriving; also "can reach" (a shelf); transitive pair: todokeru |
-| 届ける | とどける | 送到；递交；报告（他动词）//(v, trans.) to deliver; to take (something) to; to report — also hand in a lost item to the police (keisatsu ni todokeru) |
-| 説明書 | せつめいしょ | 说明书（名）//(n) instruction manual; instructions |
+| 引き受ける | ひきうける | 承担；接受（他动词）——接下别人的请求或任务；「仕事を引き受ける」接下工作；「責任を引き受ける」承担责任//(v, trans.) to take on; to accept (a task or request) — 「仕事を引き受ける」 to take on a job; 「責任を引き受ける」 to accept responsibility |
+| お菓子 | おかし | 点心；零食（名）——「お菓子を食べる」吃零食；「手作りのお菓子」自制点心//(n) sweets; snacks — cakes, cookies, candy, chips; 「お菓子を食べる」 to eat snacks; 「手作りのお菓子」 homemade sweets |
+| 転勤 | てんきん | 调动工作（名、可作动词）——同一公司调往别的地方；「大阪に転勤する」调到大阪工作；「転勤が決まる」调动定下来了//(n, suru-verb) job transfer — moved to another office by the same company; 「大阪に転勤する」 to be transferred to Osaka; 「転勤が決まる」 a transfer is decided |
+| ルール | ルール | 规则（名）——口语词，正式条文用「規則」；「ルールを守る」遵守规则；「ルールを決める」定规则//(n) rule — the casual word; formal written rules are 「規則」; 「ルールを守る」 to follow the rules; 「ルールを決める」 to set the rules |
+| 制服 | せいふく | 制服；校服（名）——「制服を着る」穿制服；「学校の制服」校服//(n) uniform (school or work) — 「制服を着る」 to wear a uniform; 「学校の制服」 a school uniform |
+| 届く | とどく | 送到；够得着（自动词）——他动词是「届ける」；「荷物が届く」包裹送到；「手が届く」够得着//(v, intrans.) to arrive; to reach — transitive pair: 「届ける」; 「荷物が届く」 a package arrives; 「手が届く」 within reach |
+| 届ける | とどける | 送到；交给；申报（他动词）——「荷物を届ける」送包裹；「警察に届ける」交给警察、报警//(v, trans.) to deliver; to take (something) to; to report — 「荷物を届ける」 to deliver a package; 「警察に届ける」 to hand in to / report to the police |
+| 説明書 | せつめいしょ | 说明书（名）——「説明書を読む」看说明书；「取扱説明書」使用说明书//(n) instruction manual; instructions — 「説明書を読む」 to read the manual; 「取扱説明書」 an owner's manual |
 
 ---
 

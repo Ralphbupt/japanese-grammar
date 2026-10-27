@@ -12,21 +12,21 @@ This lesson covers quoting and thinking (と思う, かどうか), likeness (の
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 意見 | いけん | 意见；看法（名）——中性的“看法”，不一定是批评//(n) opinion; view — neutral, not criticism; iken o iu = give one's opinion; iken suru can mean "admonish" |
-| 将来 | しょうらい | 将来；未来（名、副词）//(n, adv) future; in the future — one's personal future: shourai no yume = dream for the future |
-| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取//(n, suru-verb) passing (an exam); being accepted (to a school) — shiken ni goukaku suru = pass an exam; mainly exams and admissions |
-| 不思議 | ふしぎ | 不可思议；奇怪（形容动词）//(na-adj) strange; mysterious; wondrous — puzzling, hard to explain; not necessarily negative |
-| 匂い | におい | 气味；香味（名）//(n) smell; scent — usually neutral or pleasant; a bad smell is often written with another kanji |
-| 焦げる | こげる | 烧焦；烤糊（自动词）//(v, intrans.) to burn; to get scorched — food burns in a pan or oven |
-| 宿題 | しゅくだい | 作业（名）//(n) homework; assignment — shukudai o suru = do homework |
-| 必要 | ひつよう | 必要；需要（形容动词、名）//(na-adj, n) necessary; need; necessity — "there is a need to…" |
-| 比べる | くらべる | 比较；对比（他动词）//(v, trans.) to compare — to kurabete = compared with |
-| 花火 | はなび | 烟花；烟火（名）//(n) fireworks — summer festivals; also handheld sparklers |
-| 参加 | さんか | 参加（名、可作动词）//(n, suru-verb) participation; taking part — ni sanka suru = join, take part in (an event, class, team) |
-| 正直 | しょうじき | 诚实；老实说（名、形容动词、副词）//(n, na-adj, adv) honesty; honest; frankly — at the start of a sentence, "to be honest…"; shoujiki ni iu to = honestly speaking |
-| 手続き | てつづき | 手续（名）//(n) procedure; formalities; paperwork — official processes at city hall, a bank or school |
-| 片付ける | かたづける | 收拾；整理；处理掉（他动词）//(v, trans.) to tidy up; to put away; to finish off (a task) — rooms, desks or work; intransitive pair: katazuku |
-| 雰囲気 | ふんいき | 气氛；氛围（名）//(n) atmosphere; mood; vibe — of a place, event, or a person's aura |
+| 意見 | いけん | 意见；看法（名）——中性的“看法”，不一定是批评；「意見を言う」发表看法；「意見が合う」意见一致//(n) opinion; view — neutral, not criticism; 「意見を言う」 to give one's opinion; 「意見が合う」 to see eye to eye |
+| 将来 | しょうらい | 将来；未来（名、副词）——指个人的未来；「将来の夢」将来的梦想；「将来、医者になりたい」将来想当医生//(n, adv) future; in the future — one's own future; 「将来の夢」 one's dream for the future; 「将来、医者になりたい」 I want to be a doctor someday |
+| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取；「試験に合格する」考试合格；「大学に合格する」考上大学//(n, suru-verb) passing (an exam); being accepted — 「試験に合格する」 to pass an exam; 「大学に合格する」 to get into a university |
+| 不思議 | ふしぎ | 不可思议；奇怪（形容动词）——不一定是贬义；「不思議な話」不可思议的事；「不思議に思う」觉得奇怪//(na-adj) strange; mysterious — puzzling, not necessarily negative; 「不思議な話」 a strange story; 「不思議に思う」 to wonder about |
+| 匂い | におい | 气味；香味（名）——多为中性或好闻，臭味常写作「臭い」；「いい匂い」好闻的味道；「匂いがする」有……的味道//(n) smell; scent — usually pleasant; a bad smell is often written 「臭い」; 「いい匂い」 a nice smell; 「匂いがする」 to smell of something |
+| 焦げる | こげる | 烧焦；烤糊（自动词）——「パンが焦げる」面包烤焦了；「焦げたような匂い」像烧焦了的味道//(v, intrans.) to burn; to get scorched — 「パンが焦げる」 the toast burns; 「焦げたような匂い」 a burning smell |
+| 宿題 | しゅくだい | 作业（名）——「宿題をする」写作业；「宿題を出す」交作业、布置作业//(n) homework — 「宿題をする」 to do homework; 「宿題を出す」 to hand in / set homework |
+| 必要 | ひつよう | 必要；需要（名、形容动词）——「〜する必要がある」需要……；「必要な書類」所需的文件//(n, na-adj) necessity; necessary — 「〜する必要がある」 there's a need to ~; 「必要な書類」 the required documents |
+| 比べる | くらべる | 比较（他动词）——「〜と比べて」与……相比；「値段を比べる」比价格//(v, trans.) to compare — 「〜と比べて」 compared with ~; 「値段を比べる」 to compare prices |
+| 花火 | はなび | 烟花（名）——夏天的风物，也指手持烟花；「花火大会」烟花大会；「花火をする」放烟花//(n) fireworks — a summer staple, also handheld sparklers; 「花火大会」 a fireworks festival; 「花火をする」 to play with sparklers |
+| 参加 | さんか | 参加（名、可作动词）——「イベントに参加する」参加活动；「参加者」参加者//(n, suru-verb) participation — 「イベントに参加する」 to take part in an event; 「参加者」 participants |
+| 正直 | しょうじき | 诚实；老实说（名、形容动词、副词）——句首表示“说实话”；「正直に言うと」老实说；「正直な人」诚实的人//(n, na-adj, adv) honesty; honest; frankly — at the start of a sentence, "to be honest"; 「正直に言うと」 honestly speaking; 「正直な人」 an honest person |
+| 手続き | てつづき | 手续（名）——「手続きをする」办手续；「入学手続き」入学手续//(n) procedure; paperwork — 「手続きをする」 to go through the formalities; 「入学手続き」 enrollment procedures |
+| 片付ける | かたづける | 收拾；整理；处理完（他动词）——自动词是「片付く」；「部屋を片付ける」收拾房间；「仕事を片付ける」把工作处理掉//(v, trans.) to tidy up; to put away; to finish off — intransitive pair 「片付く」; 「部屋を片付ける」 to tidy one's room; 「仕事を片付ける」 to get work out of the way |
+| 雰囲気 | ふんいき | 气氛；氛围（名）——「雰囲気がいい」氛围好；「雰囲気のある店」有情调的店//(n) atmosphere; mood — 「雰囲気がいい」 has a nice atmosphere; 「雰囲気のある店」 a place with character |
 
 ---
 

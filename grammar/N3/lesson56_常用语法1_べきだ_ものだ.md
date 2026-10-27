@@ -16,22 +16,22 @@ This lesson focuses on grammar related to "obligation / necessity / general trut
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 約束 | やくそく | 约定；诺言（名、可作动词）——也指约会//(n, suru-verb) promise; appointment; arrangement — also a plan to meet someone; keep one = mamoru, break one = yaburu |
-| 断る | ことわる | 拒绝；谢绝（他动词）//(v, trans.) to refuse; to decline; to turn down — invitations or requests, usually indirectly; also to give notice in advance (kotowatte oku) |
-| 責任 | せきにん | 责任（名）//(n) responsibility; liability; blame — sekinin o toru = take responsibility; sekininsha = the person in charge |
-| 守る | まもる | 遵守；保护（他动词）//(v, trans.) to keep (a promise, rule); to obey; to protect — rules, promises, deadlines, or protecting people |
-| 法律 | ほうりつ | 法律（名）//(n) law; legislation — laws in general; break the law = ihan suru, obey = mamoru |
-| 礼儀 | れいぎ | 礼貌；礼节（名）//(n) manners; courtesy; etiquette — reigi tadashii = polite, well-mannered |
-| 目上 | めうえ | 长辈；上级（名）//(n) one's superiors; one's elders (people of higher status) — people you should use keigo with |
-| 敬語 | けいご | 敬语（名）//(n) keigo; honorific language — umbrella term for polite, respectful (sonkeigo) and humble (kenjougo) speech |
-| 諦める | あきらめる | 放弃；死心（他动词）//(v, trans.) to give up; to abandon (hope); to resign oneself — accepting something is out of reach; yameru is simply stopping |
-| 覚悟 | かくご | 思想准备；决心（名、可作动词）——不是中文“觉悟（觉醒）”//(n, suru-verb) resolve; readiness (for hardship) — bracing for something hard or a bad outcome; kakugo shite iru = be prepared for the worst |
-| 老いる | おいる | 变老；衰老（自动词）//(v, intrans.) to grow old; to age — literary; everyday speech uses toshi o toru |
-| 叱る | しかる | 训斥；责骂（他动词）——上对下的批评//(v, trans.) to scold; to tell off — a parent, teacher or boss correcting someone; okoru is just getting angry; often passive: shikarareta |
-| 信号 | しんごう | 红绿灯；信号（名）//(n) traffic light; signal — in daily speech, traffic lights; the green light is called ao (blue) |
-| 無理 | むり | 不可能；勉强（形容动词、名）——常用于“别太勉强自己”//(na-adj, n) impossible; unreasonable; overdoing it — muri o suru = push yourself too hard; muri shinaide = don't overdo it |
-| 遠慮 | えんりょ | 客气；顾虑（名、可作动词）——指出于礼貌而推辞//(n, suru-verb) holding back (out of politeness); reserve; declining — enryo naku = feel free; also politely refusing |
-| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）//(n, suru-verb, na-adj) worry; concern; anxiety — X o shinpai suru = worry about X; shinpai shinaide = don't worry |
+| 約束 | やくそく | 约定；诺言（名、可作动词）——也指约好见面；「約束を守る」守约；「約束を破る」失约//(n, suru-verb) promise; appointment — also a plan to meet; 「約束を守る」 to keep a promise; 「約束を破る」 to break a promise |
+| 断る | ことわる | 拒绝；谢绝（他动词）——也有“事先打招呼”的意思；「誘いを断る」拒绝邀请；「断っておく」事先说一声//(v, trans.) to refuse; to decline — also to give notice in advance; 「誘いを断る」 to turn down an invitation; 「断っておく」 to say so up front |
+| 責任 | せきにん | 责任（名）——「責任を取る」承担责任；「責任感」责任感//(n) responsibility; blame — 「責任を取る」 to take responsibility; 「責任感」 a sense of responsibility |
+| 守る | まもる | 遵守；保护（他动词）——「約束を守る」守约；「家族を守る」保护家人//(v, trans.) to keep (a promise, rule); to protect — 「約束を守る」 to keep a promise; 「家族を守る」 to protect one's family |
+| 法律 | ほうりつ | 法律（名）——「法律を守る」守法；「法律で禁止されている」法律禁止//(n) law — 「法律を守る」 to obey the law; 「法律で禁止されている」 prohibited by law |
+| 礼儀 | れいぎ | 礼貌；礼节（名）——「礼儀正しい」有礼貌；「礼儀を守る」守礼//(n) manners; etiquette — 「礼儀正しい」 polite, well-mannered; 「礼儀を守る」 to observe etiquette |
+| 目上 | めうえ | 长辈；上级（名）——地位或年龄高于自己、要用敬语的人；「目上の人」长辈、上级；「目上に対する言葉遣い」对上级的措辞//(n) one's superiors or elders — people you use honorifics with; 「目上の人」 one's seniors; 「目上に対する言葉遣い」 how to speak to superiors |
+| 敬語 | けいご | 敬语（名）——包括尊敬语、谦让语、礼貌语；「敬語を使う」使用敬语；「敬語が苦手」不擅长敬语//(n) honorific language — covers respectful, humble and polite forms; 「敬語を使う」 to use honorifics; 「敬語が苦手」 to struggle with honorifics |
+| 諦める | あきらめる | 放弃；死心（他动词）——接受得不到的现实，单纯停止用「やめる」；「夢を諦める」放弃梦想；「最後まで諦めない」坚持到底不放弃//(v, trans.) to give up — accepting it's out of reach; simply stopping is 「やめる」; 「夢を諦める」 to give up on a dream; 「最後まで諦めない」 to never give up |
+| 覚悟 | かくご | 思想准备；决心（名、可作动词）——不是中文“觉悟”，指对困难或坏结果做好心理准备；「覚悟を決める」下定决心；「覚悟の上で」明知如此仍……//(n, suru-verb) resolve; readiness (for hardship) — bracing yourself for something hard or a bad outcome; 「覚悟を決める」 to make up one's mind; 「覚悟の上で」 fully aware of the risks |
+| 老いる | おいる | 衰老（自动词）——书面语，口语说「年を取る」；「老いた親」年迈的父母；「人は老いるものだ」人总是会老的//(v, intrans.) to grow old — literary; everyday speech says 「年を取る」; 「老いた親」 aging parents; 「人は老いるものだ」 everyone grows old |
+| 叱る | しかる | 训斥；责骂（他动词）——上对下为纠正而批评，「怒る」只是发火；「子供を叱る」训孩子；「先生に叱られる」被老师批评//(v, trans.) to scold; to tell off — a parent, teacher or boss correcting someone; 「怒る」 is just getting angry; 「子供を叱る」 to scold a child; 「先生に叱られる」 to get told off by the teacher |
+| 信号 | しんごう | 红绿灯；信号（名）——绿灯叫「青」；「信号を守る」遵守信号灯；「信号が青になる」变绿灯//(n) traffic light; signal — the green light is called 「青」 (blue); 「信号を守る」 to obey traffic lights; 「信号が青になる」 the light turns green |
+| 無理 | むり | 不可能；勉强（形容动词、名）——「無理をする」勉强自己；「無理しないで」别太勉强//(na-adj, n) impossible; overdoing it — 「無理をする」 to push oneself too hard; 「無理しないで」 don't overdo it |
+| 遠慮 | えんりょ | 客气；顾虑（名、可作动词）——出于礼貌而有所保留或推辞；「遠慮なく」别客气；「遠慮しておきます」我就不用了（婉拒）//(n, suru-verb) holding back (out of politeness); reserve — 「遠慮なく」 feel free; 「遠慮しておきます」 I'll pass (polite refusal) |
+| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）——「将来を心配する」担心将来；「心配をかける」让人担心//(n, suru-verb, na-adj) worry; concern — 「将来を心配する」 to worry about the future; 「心配をかける」 to make others worry |
 
 ---
 

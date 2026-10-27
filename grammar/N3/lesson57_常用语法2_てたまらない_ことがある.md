@@ -12,24 +12,24 @@ This lesson covers the second set of commonly used N3 grammar. 「ことか」 e
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 嬉しい | うれしい | 高兴；开心（形容词）//(i-adj) happy; glad; pleased — about something good that happens to you; tanoshii is enjoying an activity, shiawase lasting happiness |
-| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）//(n, suru-verb, na-adj) worry; concern; anxiety — X o shinpai suru = worry about X; shinpai shinaide = don't worry |
-| 悔しい | くやしい | 不甘心；懊恼（形容词）——输了或失败后的不甘//(i-adj) frustrated; mortified; galling — after losing or being wronged; no exact English match; regret over a choice is koukai |
-| 寂しい | さびしい | 寂寞的；孤单的（形容词）//(i-adj) lonely; lonesome; desolate — missing someone; also of places: deserted |
-| 懐かしい | なつかしい | 怀念的；令人怀念的（形容词）——对过去的温暖感觉，不是伤感//(i-adj) nostalgic; dear (old memories) — a warm, not sad, feeling; exclaimed on seeing something from your past |
-| 不思議 | ふしぎ | 不可思议；奇怪（形容动词）//(na-adj) strange; mysterious; wondrous — puzzling, hard to explain; not necessarily negative |
-| 構う | かまう | 在意；理会（自动词）//(v, intrans.) to mind; to care (about); to bother with — mostly negative: kamawanai = I don't mind, it's fine |
-| 喉が渇く | のどがかわく | 口渴（惯用语）//(expr) to be thirsty — "I'm thirsty" is the past form nodo ga kawaita; literally "the throat dries" |
-| 眠い | ねむい | 困的（形容词）——指想睡觉，不是“困难”//(i-adj) sleepy; drowsy — feeling like sleeping; nemuru is the verb "to sleep" |
-| 腹が立つ | はらがたつ | 生气；恼火（惯用语）//(expr) to get angry; to be annoyed — inner anger at something; okoru shows anger outwardly |
-| 故郷 | ふるさと | 故乡；家乡（名）//(n) hometown; birthplace — emotional, also read kokyou; furusato evokes nostalgia |
-| 結果 | けっか | 结果（名）//(n) result; outcome; consequence — exam results or the outcome of a cause; kekka-teki ni = as a result |
-| 散歩 | さんぽ | 散步（名、可作动词）//(n, suru-verb) walk; stroll — a leisurely walk; inu no sanpo = walking the dog |
-| 夜更かし | よふかし | 熬夜（名、可作动词）//(n, suru-verb) staying up late — by choice, e.g. watching videos; tetsuya = staying up all night |
-| 我慢 | がまん | 忍耐；忍受（名、可作动词）——多指忍住疼痛、眼泪、尿意等//(n, suru-verb) patience; putting up with something unpleasant — often "hold it in" (pain, tears, the urge to go) |
-| 努力 | どりょく | 努力（名、可作动词）——在日语中是名词，“努力地”另有说法//(n, suru-verb) effort; hard work; endeavor — a noun: doryoku suru = make an effort; adverbial "hard" is isshoukenmei |
-| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取//(n, suru-verb) passing (an exam); being accepted (to a school) — shiken ni goukaku suru = pass an exam; mainly exams and admissions |
-| 失敗 | しっぱい | 失败；失误（名、可作动词）//(n, suru-verb) failure; mistake; blunder — from small slip-ups to big failures; a factual error is usually machigai |
+| 嬉しい | うれしい | 高兴（形容词）——对发生在自己身上的好事，享受活动用「楽しい」；「嬉しい知らせ」好消息；「来てくれて嬉しい」你能来我很高兴//(i-adj) happy; glad — about something good that happens; enjoying an activity is 「楽しい」; 「嬉しい知らせ」 good news; 「来てくれて嬉しい」 I'm glad you came |
+| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）——「将来を心配する」担心将来；「心配をかける」让人担心//(n, suru-verb, na-adj) worry; concern — 「将来を心配する」 to worry about the future; 「心配をかける」 to make others worry |
+| 悔しい | くやしい | 不甘心；懊恼（形容词）——输了或受委屈后的不甘，后悔自己的选择用「後悔」；「負けて悔しい」输了很不甘心；「悔し涙」不甘的眼泪//(i-adj) frustrated; mortified — after losing or being wronged; regretting a choice is 「後悔」; 「負けて悔しい」 so frustrating to lose; 「悔し涙」 tears of frustration |
+| 寂しい | さびしい | 寂寞；冷清（形容词）——「一人で寂しい」一个人很寂寞；「寂しい町」冷清的小镇//(i-adj) lonely; deserted — 「一人で寂しい」 lonely on one's own; 「寂しい町」 a desolate town |
+| 懐かしい | なつかしい | 令人怀念（形容词）——温暖的怀旧感，不是伤感；「懐かしい写真」令人怀念的照片；「懐かしい！」好怀念啊！//(i-adj) nostalgic; dear — a warm, not sad, feeling; 「懐かしい写真」 an old photo that brings back memories; 「懐かしい！」 that takes me back! |
+| 不思議 | ふしぎ | 不可思议；奇怪（形容动词）——不一定是贬义；「不思議な話」不可思议的事；「不思議に思う」觉得奇怪//(na-adj) strange; mysterious — puzzling, not necessarily negative; 「不思議な話」 a strange story; 「不思議に思う」 to wonder about |
+| 構う | かまう | 在意；理会（自动词）——多用否定；「構わない」没关系；「構わないでください」别管我//(v, intrans.) to mind; to bother about — mostly in the negative; 「構わない」 I don't mind; 「構わないでください」 leave me alone |
+| 喉が渇く | のどがかわく | 口渴（惯用语）——“我渴了”说「喉が渇いた」；「喉が渇いてたまらない」渴得受不了//(expr) to be thirsty — "I'm thirsty" is 「喉が渇いた」; 「喉が渇いてたまらない」 dying of thirst |
+| 眠い | ねむい | 困（形容词）——指想睡觉，不是“困难”；「眠くてたまらない」困得不行；「眠い目をこする」揉着惺忪的睡眼//(i-adj) sleepy — 「眠くてたまらない」 unbearably sleepy; 「眠い目をこする」 to rub one's sleepy eyes |
+| 腹が立つ | はらがたつ | 生气（惯用语）——心里窝火，「怒る」则是表现出来；「彼の態度に腹が立つ」对他的态度很恼火；「腹が立ってしょうがない」气得不得了//(expr) to get angry; to be annoyed — inner anger, while 「怒る」 shows it outwardly; 「彼の態度に腹が立つ」 his attitude makes me angry; 「腹が立ってしょうがない」 to be furious |
+| 故郷 | ふるさと | 故乡（名）——也读「こきょう」，带怀旧情感；「故郷に帰る」回故乡；「故郷が懐かしい」怀念故乡//(n) hometown — also read 「こきょう」; emotional and nostalgic; 「故郷に帰る」 to return home; 「故郷が懐かしい」 to miss one's hometown |
+| 結果 | けっか | 结果（名）——「試験の結果」考试结果；「結果的に」结果，最终//(n) result; outcome — 「試験の結果」 exam results; 「結果的に」 in the end, as it turned out |
+| 散歩 | さんぽ | 散步（名、可作动词）——「散歩に行く」去散步；「犬の散歩」遛狗//(n, suru-verb) walk; stroll — 「散歩に行く」 to go for a walk; 「犬の散歩」 walking the dog |
+| 夜更かし | よふかし | 熬夜（名、可作动词）——指晚睡，整夜不睡是「徹夜」；「ついつい夜更かしする」不知不觉熬夜；「夜更かしは体に悪い」熬夜伤身//(n, suru-verb) staying up late — all night is 「徹夜」; 「ついつい夜更かしする」 to end up staying up late; 「夜更かしは体に悪い」 staying up late is bad for you |
+| 我慢 | がまん | 忍耐；忍受（名、可作动词）——多指忍住疼痛、眼泪、冲动等；「痛みを我慢する」忍痛；「もう我慢できない」再也忍不了了//(n, suru-verb) enduring; putting up with — pain, tears, urges; 「痛みを我慢する」 to bear the pain; 「もう我慢できない」 I can't stand it anymore |
+| 努力 | どりょく | 努力（名、可作动词）——是名词，“努力地”说「一生懸命」；「努力が報われる」努力得到回报；「努力を重ねる」不断努力//(n, suru-verb) effort; hard work — a noun, not an adverb ("work hard" is 「一生懸命」); 「努力が報われる」 one's efforts pay off; 「努力を重ねる」 to keep working hard |
+| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取；「試験に合格する」考试合格；「大学に合格する」考上大学//(n, suru-verb) passing (an exam); being accepted — 「試験に合格する」 to pass an exam; 「大学に合格する」 to get into a university |
+| 失敗 | しっぱい | 失败；失误（名、可作动词）——「試験に失敗する」考试失败；「失敗は成功のもと」失败是成功之母//(n, suru-verb) failure; mistake — 「試験に失敗する」 to fail an exam; 「失敗は成功のもと」 failure is the root of success |
 
 ---
 

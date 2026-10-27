@@ -12,24 +12,24 @@ This lesson covers N2 grammar for "hypothetical conditions" and "advice." 「も
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 戻る | もどる | 回到；返回（自动词）//(v, intrans.) to return; to go back — to a place, a state or the past; transitive pair: modosu |
-| 若い | わかい | 年轻的（形容词）//(i-adj) young; youthful; inexperienced — of people; a lower number is also wakai (wakai bangou) |
-| 叶う | かなう | 实现；如愿（自动词）//(v, intrans.) to come true (of a wish); to be fulfilled — dreams and wishes come true |
-| 逆らう | さからう | 违抗；反抗（自动词）//(v, intrans.) to defy; to disobey; to go against — parents, bosses, or the current |
-| 遅刻 | ちこく | 迟到（名、可作动词）//(n, suru-verb) being late — for school, work or an appointment; said of people, while trains okureru (run late) |
-| 秘密 | ひみつ | 秘密（名）//(n) secret; secrecy — himitsu o mamoru = keep a secret; himitsu da yo = it's a secret |
-| 漏れる | もれる | 泄露；漏出（自动词）//(v, intrans.) to leak (out); to be disclosed — water, light, or information leaking |
-| 無断 | むだん | 擅自；未经允许（名）//(n) without permission; without notice — mostly as mudan de; mudan kekkin = absence without notice |
-| 欠勤 | けっきん | 缺勤（名、可作动词）//(n, suru-verb) absence from work — formal; absence from a job, not from school |
-| 早寝早起き | はやねはやおき | 早睡早起（名）//(n) early to bed, early to rise — healthy lifestyle phrase |
-| 規則正しい | きそくただしい | 有规律的（形容词）//(i-adj) regular; orderly; well-ordered — "a regular lifestyle" |
-| 栄養 | えいよう | 营养（名）//(n) nutrition; nourishment — "nutritional balance", "nutritious" |
-| バランス | バランス | 平衡；均衡（名）//(n) balance — balanced diet; work-life balance |
-| 備える | そなえる | 防备；准备（他动词）//(v, trans.) to prepare for; to provide against (a risk) — disasters, exams, the future |
-| 予防 | よぼう | 预防（名、可作动词）//(n, suru-verb) prevention; precaution — disease prevention; vaccination |
-| 治療 | ちりょう | 治疗（名、可作动词）//(n, suru-verb) medical treatment; cure — "receive treatment" |
-| 現金 | げんきん | 现金（名）//(n) cash — "pay in cash"; "cash only" |
-| 用心 | ようじん | 小心；警惕（名、可作动词）//(n, suru-verb) caution; care; being on guard — fire prevention, theft prevention |
+| 戻る | もどる | 回到；返回（自动词）——他动词是「戻す」；「席に戻る」回到座位；「昔に戻れるものなら」如果能回到过去的话//(v, intrans.) to go back; to return — transitive pair 「戻す」; 「席に戻る」 to go back to your seat; 「昔に戻れるものなら」 if only I could go back |
+| 若い | わかい | 年轻（形容词）——「若い人」年轻人；「年より若く見える」显得比实际年轻//(i-adj) young — 「若い人」 young people; 「年より若く見える」 to look young for one's age |
+| 叶う | かなう | 实现；如愿（自动词）——主语是愿望、梦想，他动词是「叶える」；「夢が叶う」梦想成真；「願いが叶う」愿望实现//(v, intrans.) to come true (of a wish) — the wish is the subject; transitive is 「叶える」; 「夢が叶う」 a dream comes true; 「願いが叶う」 a wish is granted |
+| 逆らう | さからう | 违抗；反抗（自动词）——「親に逆らう」违抗父母；「流れに逆らう」逆流而行//(v, intrans.) to defy; to go against — 「親に逆らう」 to disobey one's parents; 「流れに逆らう」 to go against the current |
+| 遅刻 | ちこく | 迟到（名、可作动词）——指人迟到，电车晚点用「遅れる」；「授業に遅刻する」上课迟到；「遅刻しそうだ」快迟到了//(n, suru-verb) being late — of people; trains running late is 「遅れる」; 「授業に遅刻する」 to be late for class; 「遅刻しそうだ」 I'm about to be late |
+| 秘密 | ひみつ | 秘密（名）——「秘密を守る」保守秘密；「秘密が漏れる」秘密泄露//(n) secret — 「秘密を守る」 to keep a secret; 「秘密が漏れる」 a secret leaks out |
+| 漏れる | もれる | 泄露；漏出（自动词）——他动词是「漏らす」；「情報が漏れる」信息泄露；「水が漏れる」漏水//(v, intrans.) to leak (out) — transitive is 「漏らす」; 「情報が漏れる」 information leaks; 「水が漏れる」 water leaks |
+| 無断 | むだん | 擅自；未经允许（名）——多用「無断で」；「無断欠勤」无故缺勤；「無断で使う」擅自使用//(n) without permission or notice — 「無断欠勤」 absence without notice; 「無断で使う」 to use without permission |
+| 欠勤 | けっきん | 缺勤（名、可作动词）——只指工作，上学缺席是「欠席」；「無断欠勤」无故缺勤；「病気で欠勤する」因病缺勤//(n, suru-verb) absence from work — school absence is 「欠席」; 「無断欠勤」 not showing up without notice; 「病気で欠勤する」 to be off sick |
+| 早寝早起き | はやねはやおき | 早睡早起（名）——「早寝早起きを心がける」注意早睡早起；「早寝早起きに越したことはない」最好早睡早起//(n) early to bed, early to rise — 「早寝早起きを心がける」 to try to keep early hours; 「早寝早起きに越したことはない」 early hours are best |
+| 規則正しい | きそくただしい | 有规律的（形容词）——「規則正しい生活」有规律的生活；「規則正しく食べる」按时吃饭//(i-adj) regular; orderly — 「規則正しい生活」 a regular routine; 「規則正しく食べる」 to eat at regular times |
+| 栄養 | えいよう | 营养（名）——「栄養バランス」营养均衡；「栄養をとる」摄取营养//(n) nutrition; nourishment — 「栄養バランス」 nutritional balance; 「栄養をとる」 to get nourishment |
+| バランス | バランス | 平衡；均衡（名）——「バランスのいい食事」均衡的饮食；「バランスを崩す」失去平衡//(n) balance — 「バランスのいい食事」 a balanced diet; 「バランスを崩す」 to lose one's balance |
+| 備える | そなえる | 防备；准备（他动词）——「災害に備える」防备灾害；「老後に備える」为养老做准备//(v, trans.) to prepare for; to provide against — 「災害に備える」 to prepare for disasters; 「老後に備える」 to plan for old age |
+| 予防 | よぼう | 预防（名、可作动词）——「病気を予防する」预防疾病；「予防接種」预防接种//(n, suru-verb) prevention — 「病気を予防する」 to prevent illness; 「予防接種」 a vaccination |
+| 治療 | ちりょう | 治疗（名、可作动词）——「治療を受ける」接受治疗；「歯の治療」看牙//(n, suru-verb) medical treatment — 「治療を受ける」 to receive treatment; 「歯の治療」 dental treatment |
+| 現金 | げんきん | 现金（名）——「現金で払う」付现金；「現金のみ」只收现金//(n) cash — 「現金で払う」 to pay in cash; 「現金のみ」 cash only |
+| 用心 | ようじん | 小心；警惕（名、可作动词）——「火の用心」小心火烛；「用心するに越したことはない」小心为上//(n, suru-verb) caution; being on guard — 「火の用心」 beware of fire; 「用心するに越したことはない」 better safe than sorry |
 
 ---
 

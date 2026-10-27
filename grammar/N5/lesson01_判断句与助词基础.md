@@ -12,62 +12,62 @@ Every Japanese learner starts with です, but **は vs が** is the question th
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 私 | わたし | 我（代词）//(pron) I; me — the standard polite/neutral "I" for everyone; men may use boku or ore casually |
-| 彼 | かれ | 他；男朋友（代词、名）//(pron, n) he; him; boyfriend — avoid for superiors or people present; use their name + san instead |
-| 彼女 | かのじょ | 她；女朋友（代词、名）//(pron, n) she; her; girlfriend — like kare, often means "girlfriend"; use the person's name in polite speech |
-| 母 | はは | （自己的）母亲；妈妈（名）——只用于向外人提自己的母亲//(n) (my) mother — humble: only for your own mother to outsiders; someone else's is okaasan |
-| 学生 | がくせい | 学生（名）——多指大学生//(n) student — especially a university student; younger pupils are seito or jidou |
-| 先生 | せんせい | 老师；医生（名）——也是对医生、律师等的尊称//(n) teacher; doctor — also a title for doctors, lawyers, politicians and writers; never use it about yourself |
-| 本 | ほん | 书（名）//(n) book — as a counter, -hon counts long thin things (pens, bottles), read hon / bon / pon |
-| 映画 | えいが | 电影（名）//(n) movie; film — "see a movie" takes the verb miru; a cinema is eigakan |
-| 暇 | ひま | 空闲；有空（形容动词、名）//(na-adj, n) free; not busy; free time — common in "are you free?"; can sound like "bored" in casual talk |
-| 静か | しずか | 安静；平静（形容动词）//(na-adj) quiet; calm; peaceful — of places, people or the sea; "be quiet!" is shizuka ni shite |
-| 面白い | おもしろい | 有趣；好笑（形容词）//(i-adj) interesting; funny; fun — covers both "funny" and "intellectually interesting" |
-| つまらない | つまらない | 无聊；没意思（形容词）//(i-adj) boring; dull; trivial — also used modestly for a gift: "a trifling thing" |
-| 難しい | むずかしい | 难；困难（形容词）//(i-adj) difficult; hard — opposite is yasashii (easy) or kantan (simple) |
-| 暑い | あつい | （天气）热（形容词）——指气温，摸着烫用另一个词//(i-adj) hot (weather, air) — only for the air around you; hot to the touch is atsui written with another kanji |
-| 肉 | にく | 肉（名）//(n) meat — pork, beef and chicken add the animal name (butaniku, gyuuniku, toriniku) |
-| 魚 | さかな | 鱼（名）//(n) fish — both live fish and fish as food |
+| 私 | わたし | 我（代词）——男女通用的礼貌说法；「私の名前」我的名字//(pron) I; me — the neutral, polite "I" for everyone; 「私の名前」 my name |
+| 彼 | かれ | 他；男朋友（代词、名）——当面或对长辈一般直接称姓名；「彼氏」男朋友//(pron, n) he; him; boyfriend — with people present or seniors, use their name instead; 「彼氏」 boyfriend |
+| 彼女 | かのじょ | 她；女朋友（代词、名）——常指“女朋友”；「彼女がいる」有女朋友//(pron, n) she; her; girlfriend — often means "girlfriend"; 「彼女がいる」 to have a girlfriend |
+| 母 | はは | （自己的）母亲；妈妈（名）——只用于对外人说自己的母亲，别人的母亲说「お母さん」//(n) (my) mother — only for your own mother when talking to others; someone else's is 「お母さん」 |
+| 学生 | がくせい | 学生（名）——多指大学生；「大学生」大学生；「留学生」留学生//(n) student — especially a university student; 「大学生」 a university student; 「留学生」 an international student |
+| 先生 | せんせい | 老师；医生（名）——也是对医生、律师等的尊称，不用于自称；「日本語の先生」日语老师//(n) teacher; doctor — also a title for doctors, lawyers and writers; never for yourself; 「日本語の先生」 a Japanese teacher |
+| 本 | ほん | 书（名）——也作量词数细长物品；「本を読む」看书；「本屋」书店//(n) book — also a counter for long thin things; 「本を読む」 to read a book; 「本屋」 a bookstore |
+| 映画 | えいが | 电影（名）——「映画を見る」看电影；「映画館」电影院//(n) movie; film — 「映画を見る」 to see a movie; 「映画館」 a cinema |
+| 暇 | ひま | 空闲；有空（形容动词、名）——口语也有“无聊”的意味；「暇な時」有空的时候；「暇がない」没空//(na-adj, n) free; not busy; free time — can imply "bored" in casual talk; 「暇な時」 when you're free; 「暇がない」 to have no time |
+| 静か | しずか | 安静；平静（形容动词）——「静かな町」安静的小镇；「静かにしてください」请安静//(na-adj) quiet; calm; peaceful — 「静かな町」 a quiet town; 「静かにしてください」 please be quiet |
+| 面白い | おもしろい | 有趣；好笑（形容词）——既指好笑，也指引人入胜；「面白い話」有趣的事//(i-adj) interesting; funny; fun — covers both "funny" and "fascinating"; 「面白い話」 an interesting story |
+| つまらない | つまらない | 无聊；没意思（形容词）——送礼时自谦也用；「つまらない物ですが」一点小意思//(i-adj) boring; dull; trivial — also used modestly when giving a gift; 「つまらない物ですが」 it's just a small thing |
+| 難しい | むずかしい | 难；困难（形容词）——「難しい問題」难题；「〜のは難しい」……很难//(i-adj) difficult; hard — 「難しい問題」 a difficult problem; 「〜のは難しい」 ~ing is hard |
+| 暑い | あつい | （天气）热（形容词）——只指气温，摸着烫写作「熱い」；「今日は暑い」今天很热//(i-adj) hot (weather, air) — only for the air around you; hot to the touch is 「熱い」; 「今日は暑い」 it's hot today |
+| 肉 | にく | 肉（名）——「豚肉」猪肉；「牛肉」牛肉//(n) meat — 「豚肉」 pork; 「牛肉」 beef |
+| 魚 | さかな | 鱼（名）——活鱼和食用鱼都可以；「魚を焼く」烤鱼//(n) fish — both live fish and fish as food; 「魚を焼く」 to grill fish |
 | 猫 | ねこ | 猫（名）//(n) cat |
-| 犬 | いぬ | 狗（名）//(n) dog |
-| 雨 | あめ | 雨（名）//(n) rain — "it rains" is ame ga furu |
-| 水 | みず | 水；凉水（名）——默认指凉水，热水另有词//(n) water; cold water — cold by default; hot water is a separate word, oyu |
-| 道 | みち | 路；道路（名）//(n) road; street; way — also "the way" when asking directions |
-| 木 | き | 树；木头（名）//(n) tree; wood — both the living tree and the material |
-| 机 | つくえ | 书桌；桌子（名）——指办公、学习用的桌子//(n) desk; table — a desk for working or studying; a dining table is usually teeburu |
-| 箸 | はし | 筷子（名）//(n) chopsticks — same sound as "bridge" (hashi) but different pitch |
-| 風邪 | かぜ | 感冒（名）//(n) a cold (illness) — kaze o hiku = catch a cold; flu is infuruenza; "wind" is a homophone with another kanji |
-| 店 | みせ | 店；商店（名）//(n) shop; store; restaurant — any business you walk into, including eateries |
-| 町 | まち | 城镇；街区（名）//(n) town; neighborhood; city district — also part of addresses (-chou/-machi) |
-| 山 | やま | 山（名）//(n) mountain; hill — "climb a mountain" is yama ni noboru |
-| 声 | こえ | （人、动物的）声音（名）——区别于物体发出的声音//(n) voice; (animal) cry — only from living things; sounds of objects are oto |
-| 鳥 | とり | 鸟（名）//(n) bird — also short for chicken meat in casual speech |
-| 桜 | さくら | 樱花；樱树（名）//(n) cherry blossom; cherry tree — symbol of spring and new beginnings; viewing them is o-hanami |
-| 花 | はな | 花（名）//(n) flower; blossom — in spring often means cherry blossoms; hana (nose) is a homophone with different pitch |
-| 象 | ぞう | 大象（名）//(n) elephant — zou wa hana ga nagai (elephants have long trunks) is the classic wa / ga sentence |
-| 鼻 | はな | 鼻子（名）//(n) nose; (elephant's) trunk — zou wa hana ga nagai (elephants have long trunks) is the classic wa / ga sentence |
-| 図書館 | としょかん | 图书馆（名）//(n) library — borrow books here; a bookstore is hon'ya |
-| 大学 | だいがく | 大学（名）//(n) university; college — daigaku ni kayou = attend university; daigakusei = university student |
-| 世界 | せかい | 世界（名）//(n) world — "in the world" is sekai de, e.g. the biggest in the world |
-| 料理 | りょうり | 菜；做菜（名、可作动词）——不同于中文“料理”，泛指菜肴和烹饪//(n, suru-verb) cooking; dish; cuisine — both the act and the food; Nihon ryouri = Japanese food |
-| 勉強 | べんきょう | 学习（名、可作动词）——不是“勉强”//(n, suru-verb) study; studying — means study, not "reluctant" as in Chinese |
-| 有名 | ゆうめい | 有名；著名（形容动词）//(na-adj) famous; well-known — yuumei na hito = a famous person; yuumei ni naru = become famous |
-| 誰 | だれ | 谁（代词）//(pron) who — the polite form is donata; dareka = someone |
-| 何 | なに | 什么（代词）//(pron) what — read nan before d/n/t sounds and counters, nani elsewhere |
-| 昨日 | きのう | 昨天（名、副词）//(n, adv) yesterday — relative time words like this take no ni |
-| 明日 | あした | 明天（名、副词）//(n, adv) tomorrow — ashita is everyday speech; asu is more formal |
-| 今日 | きょう | 今天（名、副词）//(n, adv) today — irregular reading kyou; no particle ni after it (kyou iku); formal konnichi = nowadays |
-| 毎朝 | まいあさ | 每天早上（名、副词）//(n, adv) every morning — no ni after it, like other "every ~" words |
-| 食べる | たべる | 吃（他动词）//(v, trans.) to eat — ichidan verb; medicine is nomu, not taberu |
-| 飲む | のむ | 喝；吃（药）（他动词）——吃药也用这个词//(v, trans.) to drink; to take (medicine) — pills are "drunk" in Japanese |
-| 読む | よむ | 读；看（书报）（他动词）//(v, trans.) to read — silently or aloud; also "read" a situation: kuuki o yomu = read the room |
-| 歩く | あるく | 走；步行（自动词）——指行走，不是“离开”//(v, intrans.) to walk — place walked through takes o: michi o aruku |
-| 住む | すむ | 住；居住（自动词）——表示“住在某地”时一般用进行体//(v, intrans.) to live (in); to reside — "I live in X" is X ni sunde imasu, not the plain form |
-| 降る | ふる | 下（雨、雪）（自动词）//(v, intrans.) to fall (rain, snow) — only for precipitation; things dropping is ochiru |
-| 作る | つくる | 做；制作（他动词）//(v, trans.) to make; to cook; to build — broad: make food, things, friends or plans |
-| 卒業する | そつぎょうする | 毕业（自动词）//(v, intrans.) to graduate (from school) — the school takes o: daigaku o sotsugyou suru |
-| 聞こえる | きこえる | 听得见；听起来（自动词）——自然传入耳朵，不是主动去听//(v, intrans.) to be heard; can hear; to sound (like) — sound reaches you on its own; the sound takes ga |
-| 弾く | ひく | 弹；拉（乐器）（他动词）——吹奏乐器不用这个词//(v, trans.) to play (piano, guitar, violin) — for keyboard and string instruments; wind instruments use fuku |
+| 犬 | いぬ | 狗（名）——「犬を飼う」养狗//(n) dog — 「犬を飼う」 to keep a dog |
+| 雨 | あめ | 雨（名）——「雨が降る」下雨；「雨がやむ」雨停//(n) rain — 「雨が降る」 it rains; 「雨がやむ」 the rain stops |
+| 水 | みず | 水；凉水（名）——默认指凉水，热水是「お湯」；「水を飲む」喝水//(n) water; cold water — cold by default; hot water is 「お湯」; 「水を飲む」 to drink water |
+| 道 | みち | 路；道路（名）——问路也用；「道を聞く」问路；「道に迷う」迷路//(n) road; street; way — 「道を聞く」 to ask the way; 「道に迷う」 to get lost |
+| 木 | き | 树；木头（名）——「木を植える」种树；「木の机」木头桌子//(n) tree; wood — 「木を植える」 to plant a tree; 「木の机」 a wooden desk |
+| 机 | つくえ | 书桌（名）——指学习、办公用的桌子，饭桌是「テーブル」；「机の上」桌上//(n) desk — for working or studying; a dining table is 「テーブル」; 「机の上」 on the desk |
+| 箸 | はし | 筷子（名）——与「橋」同音不同调；「箸を使う」用筷子；「お箸」筷子（礼貌说法）//(n) chopsticks — same sound as 「橋」 (bridge), different pitch; 「箸を使う」 to use chopsticks; 「お箸」 chopsticks (polite) |
+| 風邪 | かぜ | 感冒（名）——「風邪をひく」感冒；「風邪気味」有点感冒//(n) a cold — 「風邪をひく」 to catch a cold; 「風邪気味」 coming down with a cold |
+| 店 | みせ | 店；商店（名）——餐馆也算；「店に入る」进店；「お店」店（礼貌说法）//(n) shop; store; restaurant — any business you walk into, eateries included; 「店に入る」 to go into a shop; 「お店」 shop (polite) |
+| 町 | まち | 城镇；街区（名）——「町を歩く」逛街；「小さな町」小镇//(n) town; neighborhood — 「町を歩く」 to walk around town; 「小さな町」 a small town |
+| 山 | やま | 山（名）——「山に登る」登山；「富士山」富士山//(n) mountain; hill — 「山に登る」 to climb a mountain; 「富士山」 Mount Fuji |
+| 声 | こえ | （人、动物的）声音（名）——物体的声音是「音」；「大きな声」大声；「声が聞こえる」听见声音//(n) voice; (animal) cry — only from living things; other sounds are 「音」; 「大きな声」 a loud voice; 「声が聞こえる」 to hear a voice |
+| 鳥 | とり | 鸟（名）——口语也指鸡肉；「鳥が鳴く」鸟叫；「焼き鳥」烤鸡肉串//(n) bird; chicken (meat) — 「鳥が鳴く」 birds sing; 「焼き鳥」 grilled chicken skewers |
+| 桜 | さくら | 樱花；樱树（名）——「桜が咲く」樱花开；「お花見」赏樱//(n) cherry blossom; cherry tree — 「桜が咲く」 the cherry trees bloom; 「お花見」 cherry-blossom viewing |
+| 花 | はな | 花（名）——春天常指樱花；「花が咲く」花开；「花見」赏樱//(n) flower; blossom — in spring often means cherry blossoms; 「花が咲く」 flowers bloom; 「花見」 cherry-blossom viewing |
+| 象 | ぞう | 大象（名）——「象は鼻が長い」大象鼻子长（「は」「が」的经典例句）//(n) elephant — 「象は鼻が長い」 elephants have long trunks, the classic 「は」 vs 「が」 sentence |
+| 鼻 | はな | 鼻子；（大象的）鼻子（名）——「鼻が高い」鼻梁高、得意；「象は鼻が長い」大象鼻子长//(n) nose; (elephant's) trunk — 「鼻が高い」 a high nose, also "proud"; 「象は鼻が長い」 elephants have long trunks |
+| 図書館 | としょかん | 图书馆（名）——不是书店（「本屋」）；「図書館で本を借りる」在图书馆借书//(n) library — not a bookstore (「本屋」); 「図書館で本を借りる」 to borrow books from the library |
+| 大学 | だいがく | 大学（名）——「大学に入る」上大学；「大学に通う」读大学//(n) university; college — 「大学に入る」 to get into university; 「大学に通う」 to attend university |
+| 世界 | せかい | 世界（名）——「世界で一番」世界第一；「世界中」全世界//(n) world — 「世界で一番」 the most ~ in the world; 「世界中」 all over the world |
+| 料理 | りょうり | 菜；做菜（名、可作动词）——泛指菜肴和烹饪，不专指日本料理；「料理を作る」做菜；「日本料理」日本菜//(n, suru-verb) cooking; dish; cuisine — both the act and the food; 「料理を作る」 to cook; 「日本料理」 Japanese food |
+| 勉強 | べんきょう | 学习（名、可作动词）——中日同形异义：不是“勉强”；「日本語の勉強」学日语//(n, suru-verb) study; studying — means study, not "reluctant" as in Chinese; 「日本語の勉強」 studying Japanese |
+| 有名 | ゆうめい | 有名；著名（形容动词）——「有名な人」名人；「温泉で有名だ」以温泉闻名//(na-adj) famous; well-known — 「有名な人」 a famous person; 「温泉で有名だ」 famous for its hot springs |
+| 誰 | だれ | 谁（代词）——礼貌说法「どなた」；「誰か」某人；「誰も」谁都（不）//(pron) who — polite form is 「どなた」; 「誰か」 someone; 「誰も」 nobody (with a negative) |
+| 何 | なに | 什么（代词）——在某些音和量词前读「なん」；「何をする」做什么；「何時」几点//(pron) what — read 「なん」 before some sounds and counters; 「何をする」 what to do; 「何時」 what time |
+| 昨日 | きのう | 昨天（名、副词）——作时间词不加「に」；「昨日の夜」昨晚//(n, adv) yesterday — takes no 「に」 as a time word; 「昨日の夜」 last night |
+| 明日 | あした | 明天（名、副词）——作时间词不加「に」；「明日の朝」明天早上//(n, adv) tomorrow — takes no 「に」 as a time word; 「明日の朝」 tomorrow morning |
+| 今日 | きょう | 今天（名、副词）——后面不加「に」；「今日中に」今天之内；「今日は休みだ」今天休息//(n, adv) today — no 「に」 after it; 「今日中に」 by the end of today; 「今日は休みだ」 today is a day off |
+| 毎朝 | まいあさ | 每天早上（名、副词）——不加「に」；「毎朝走る」每天早上跑步//(n, adv) every morning — takes no 「に」; 「毎朝走る」 to run every morning |
+| 食べる | たべる | 吃（他动词）——吃药用「飲む」；「ご飯を食べる」吃饭；「食べすぎる」吃太多//(v, trans.) to eat — medicine takes 「飲む」 instead; 「ご飯を食べる」 to eat a meal; 「食べすぎる」 to overeat |
+| 飲む | のむ | 喝；吃（药）（他动词）——吃药也用这个词；「薬を飲む」吃药；「お酒を飲む」喝酒//(v, trans.) to drink; to take (medicine) — pills are "drunk" too; 「薬を飲む」 to take medicine; 「お酒を飲む」 to drink alcohol |
+| 読む | よむ | 读；看（他动词）——中文“看书、看报”在日语里用「読む」，不用「見る」；「本を読む」看书；「空気を読む」察言观色//(v, trans.) to read — 「本を読む」 to read a book; 「空気を読む」 to read the room |
+| 歩く | あるく | 走；步行（自动词）——不是“离开”；经过的地方用「を」；「道を歩く」走在路上//(v, intrans.) to walk — the route takes 「を」; 「道を歩く」 to walk along the street |
+| 住む | すむ | 住；居住（自动词）——“住在某地”用进行体；「東京に住んでいる」住在东京//(v, intrans.) to live (in); to reside — "I live in X" uses the 「ている」 form; 「東京に住んでいる」 to live in Tokyo |
+| 降る | ふる | 下（雨、雪）（自动词）——只用于降水，东西掉落用「落ちる」；「雨が降る」下雨；「雪が降り始める」开始下雪//(v, intrans.) to fall (rain, snow) — only precipitation; objects falling is 「落ちる」; 「雨が降る」 it rains; 「雪が降り始める」 it starts to snow |
+| 作る | つくる | 做；制作（他动词）——「料理を作る」做饭；「友達を作る」交朋友//(v, trans.) to make; to cook; to build — 「料理を作る」 to cook; 「友達を作る」 to make friends |
+| 卒業する | そつぎょうする | 毕业（自动词）——学校用「を」；「大学を卒業する」大学毕业//(v, intrans.) to graduate — the school takes 「を」; 「大学を卒業する」 to graduate from university |
+| 聞こえる | きこえる | 听得见；听起来（自动词）——声音自然传入耳朵，不是主动去听；「音が聞こえる」听见声音//(v, intrans.) to be heard; can hear; to sound (like) — sound reaches you on its own; 「音が聞こえる」 to hear a sound |
+| 弾く | ひく | 弹；拉（乐器）（他动词）——限键盘、弦乐器，吹奏乐器用「吹く」；「ピアノを弾く」弹钢琴//(v, trans.) to play (piano, guitar, violin) — keyboard and string instruments only; wind instruments use 「吹く」; 「ピアノを弾く」 to play the piano |
 
 ---
 

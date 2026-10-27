@@ -12,24 +12,24 @@ This lesson covers grammar for "judgment," "conjecture," and "rhetorical questio
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 犯人 | はんにん | 罪犯；作案者（名）——指作案者，不是中文“犯人”（服刑者）//(n) culprit; criminal; perpetrator — whoever committed the crime, caught or not, not a prisoner; jokingly, whoever did it |
-| 成功 | せいこう | 成功（名、可作动词）//(n, suru-verb) success — ni seikou suru = succeed in; daiseikou = a huge success |
-| 失敗 | しっぱい | 失败；失误（名、可作动词）//(n, suru-verb) failure; mistake; blunder — from small slip-ups to big failures; a factual error is usually machigai |
-| 渋滞 | じゅうたい | 堵车；交通拥堵（名、可作动词）//(n, suru-verb) traffic jam; congestion — on roads; juutai ni makikomareru = get stuck in traffic, the classic excuse for being late |
-| 噂 | うわさ | 传闻；谣言（名）//(n) rumor; gossip; hearsay — uwasa ni yoru to = rumor has it; often paired with rashii |
-| 台風 | たいふう | 台风（名）//(n) typhoon — numbered each year (typhoon No. 10); the season peaks August to October |
-| 洪水 | こうずい | 洪水；水灾（名）//(n) flood; flooding — rivers overflowing after heavy rain |
-| 倒産 | とうさん | 破产；倒闭（名、可作动词）——指公司破产//(n, suru-verb) bankruptcy; going under — for companies; a person going bankrupt is hasan |
-| 景気 | けいき | 经济形势；景气（名）//(n) the economy; business conditions — how business is doing; keiki ga ii = the economy is booming |
-| 負ける | まける | 输；败（自动词）//(v, intrans.) to lose (a game, fight, etc.); to be defeated — ni makeru = lose to; also to give a discount (shop talk) |
-| 怪しい | あやしい | 可疑的；靠不住的（形容词）//(i-adj) suspicious; dubious; doubtful — suspicious people, or doubtful weather and plans |
-| 試合 | しあい | 比赛（名）//(n) match; game; bout — a sports match between opponents; a whole tournament is taikai |
-| 許す | ゆるす | 原谅；允许（他动词）//(v, trans.) to forgive; to pardon; to allow — forgive a person or a fault; jikan ga yuruseba = if time permits |
-| 約束 | やくそく | 约定；诺言（名、可作动词）——也指约会//(n, suru-verb) promise; appointment; arrangement — also a plan to meet someone; keep one = mamoru, break one = yaburu |
-| 集合 | しゅうごう | 集合（名、可作动词）//(n, suru-verb) gathering; meeting up (at a set time and place) — shuugou jikan = meeting time on trips and events |
-| 延期 | えんき | 延期；推迟（名、可作动词）//(n, suru-verb) postponement — moving an event to a later date; calling it off altogether is chuushi |
-| 被害 | ひがい | 受害；损失（名）——不是“灾害”本身//(n) damage; harm; loss suffered — what victims suffer from a disaster or crime, not the disaster itself; higai o ukeru = suffer damage |
-| 絶対 | ぜったい | 绝对；一定（副词、名）//(adv, n) absolutely; definitely — very common; with a negative it means never (zettai ikanai) |
+| 犯人 | はんにん | 罪犯；作案者（名）——指作案者，不是中文“犯人”（服刑者）；「犯人が捕まる」犯人被抓；「犯人は誰だ」是谁干的//(n) culprit; perpetrator — whoever did it, not a prisoner; 「犯人が捕まる」 the culprit is caught; 「犯人は誰だ」 who did it? |
+| 成功 | せいこう | 成功（名、可作动词）——「実験に成功する」实验成功；「大成功」大获成功//(n, suru-verb) success — 「実験に成功する」 to succeed in an experiment; 「大成功」 a huge success |
+| 失敗 | しっぱい | 失败；失误（名、可作动词）——「試験に失敗する」考试失败；「失敗は成功のもと」失败是成功之母//(n, suru-verb) failure; mistake — 「試験に失敗する」 to fail an exam; 「失敗は成功のもと」 failure is the root of success |
+| 渋滞 | じゅうたい | 堵车；交通拥堵（名、可作动词）——「渋滞に巻き込まれる」遇上堵车；「交通渋滞」交通拥堵//(n, suru-verb) traffic jam — 「渋滞に巻き込まれる」 to get stuck in traffic; 「交通渋滞」 traffic congestion |
+| 噂 | うわさ | 传闻；谣言（名）——「噂によると」据传闻；「噂が広がる」传闻扩散//(n) rumor; gossip — 「噂によると」 rumor has it; 「噂が広がる」 a rumor spreads |
+| 台風 | たいふう | 台风（名）——「台風が来る」台风要来；「台風10号」第10号台风//(n) typhoon — numbered each year; 「台風が来る」 a typhoon is coming; 「台風10号」 Typhoon No. 10 |
+| 洪水 | こうずい | 洪水（名）——「洪水が起きる」发生洪水；「洪水の被害」水灾损失//(n) flood — 「洪水が起きる」 a flood occurs; 「洪水の被害」 flood damage |
+| 倒産 | とうさん | 倒闭；破产（名、可作动词）——指公司，个人破产用「破産」；「会社が倒産する」公司倒闭；「倒産寸前」濒临倒闭//(n, suru-verb) bankruptcy (of a company) — a person going bankrupt is 「破産」; 「会社が倒産する」 a company goes under; 「倒産寸前」 on the verge of bankruptcy |
+| 景気 | けいき | 景气；经济形势（名）——「景気がいい」经济景气；「景気が回復する」经济复苏//(n) the economy; business conditions — 「景気がいい」 business is booming; 「景気が回復する」 the economy recovers |
+| 負ける | まける | 输（自动词）——对手用「に」；「試合に負ける」输掉比赛；「誘惑に負ける」经不住诱惑//(v, intrans.) to lose; to be beaten — the opponent takes 「に」; 「試合に負ける」 to lose a match; 「誘惑に負ける」 to give in to temptation |
+| 怪しい | あやしい | 可疑的；靠不住的（形容词）——「怪しい人」可疑的人；「天気が怪しい」天要变了//(i-adj) suspicious; dubious — 「怪しい人」 a suspicious person; 「天気が怪しい」 the weather looks iffy |
+| 試合 | しあい | 比赛（名）——指一场比赛，整个赛事叫「大会」；「試合に勝つ」赢得比赛；「試合に出る」出场比赛//(n) match; game — a single match; a whole tournament is 「大会」; 「試合に勝つ」 to win a match; 「試合に出る」 to play in a match |
+| 許す | ゆるす | 原谅；允许（他动词）——「彼を許す」原谅他；「時間が許せば」时间允许的话//(v, trans.) to forgive; to allow — 「彼を許す」 to forgive him; 「時間が許せば」 if time permits |
+| 約束 | やくそく | 约定；诺言（名、可作动词）——也指约好见面；「約束を守る」守约；「約束を破る」失约//(n, suru-verb) promise; appointment — also a plan to meet; 「約束を守る」 to keep a promise; 「約束を破る」 to break a promise |
+| 集合 | しゅうごう | 集合（名、可作动词）——「駅に集合する」在车站集合；「集合時間」集合时间//(n, suru-verb) gathering; meeting up — 「駅に集合する」 to meet at the station; 「集合時間」 meeting time |
+| 延期 | えんき | 延期；推迟（名、可作动词）——改到以后，取消则是「中止」；「試合が延期になる」比赛延期；「雨で延期する」因雨延期//(n, suru-verb) postponement — moved to a later date; calling it off is 「中止」; 「試合が延期になる」 the match is postponed; 「雨で延期する」 to postpone because of rain |
+| 被害 | ひがい | 受害；损失（名）——指受到的损害，不是灾害本身；「被害を受ける」受灾、受害；「被害者」受害者//(n) damage; harm (suffered) — what victims suffer, not the disaster itself; 「被害を受ける」 to suffer damage; 「被害者」 a victim |
+| 絶対 | ぜったい | 绝对；一定（副词、名）——接否定表示“绝不”；「絶対に勝つ」一定要赢；「絶対行かない」绝对不去//(adv, n) absolutely; definitely — with a negative, "never"; 「絶対に勝つ」 we're going to win, no matter what; 「絶対行かない」 I'm never going |
 
 ---
 

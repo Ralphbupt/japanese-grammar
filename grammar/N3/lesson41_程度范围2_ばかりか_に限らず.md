@@ -12,24 +12,24 @@ This lesson covers grammar for "limiting scope" and "exceeding scope." 「だけ
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 成績 | せいせき | 成绩（名）//(n) grades; results; performance — school grades or results in work and sports |
-| 性格 | せいかく | 性格；脾气（名）//(n) personality; character; nature — seikaku ga ii = good-natured; seikaku ga awanai = we don't get along |
-| 迷惑 | めいわく | 麻烦；打扰（名、形容动词、可作动词）——指给别人添的麻烦//(n, na-adj, suru-verb) trouble; nuisance (caused to others) — meiwaku o kakeru = cause trouble; avoiding it is a core Japanese social value |
-| 参加 | さんか | 参加（名、可作动词）//(n, suru-verb) participation; taking part — ni sanka suru = join, take part in (an event, class, team) |
-| 会員 | かいいん | 会员（名）//(n) member (of a club or service) — membership-based: gym, store or website members |
-| 若者 | わかもの | 年轻人（名）//(n) young people; youth — often in social commentary about young people |
-| 年齢 | ねんれい | 年龄（名）//(n) age (of a person) — formal, used on forms and in rules; everyday speech says toshi; nenrei seigen = age limit |
-| 性別 | せいべつ | 性别（名）//(n) gender; sex — common on forms; seibetsu o towazu = regardless of gender |
-| 国籍 | こくせき | 国籍（名）//(n) nationality; citizenship — common on forms; kokuseki o towazu = regardless of nationality |
-| 割引 | わりびき | 折扣；打折（名、可作动词）//(n, suru-verb) discount; price reduction — counted in tenths: niwari-biki = 20% off; hangaku = half price |
-| 今日 | きょう | 今天（名、副词）//(n, adv) today — irregular reading kyou; no particle ni after it (kyou iku); formal konnichi = nowadays |
-| 貯金 | ちょきん | 存钱；存款（名、可作动词）//(n, suru-verb) savings; saving money — personal savings; yokin is the bank-deposit term |
-| 休憩 | きゅうけい | 休息（名、可作动词）//(n, suru-verb) break; rest — a short break during work, study or travel; yasumi can also mean a day off |
-| 売り切れ | うりきれ | 卖完；售罄（名）//(n) sold out; out of stock — signs say urikire; verb: urikireru |
-| 人気 | にんき | 受欢迎；人气（名）//(n) popularity — ninki ga aru = popular; ninki no mise = a popular shop |
-| 出席 | しゅっせき | 出席（名、可作动词）//(n, suru-verb) attendance; being present — at a class, meeting or wedding; opposite: kesseki (absence) |
-| 限定 | げんてい | 限定；限制（名、可作动词）//(n, suru-verb) limitation; restriction; limited (edition) — kikan gentei = for a limited time only |
-| 全員 | ぜんいん | 全体；所有人（名）//(n) everyone; all members; the whole group — all the people in a specific group |
+| 成績 | せいせき | 成绩（名）——「成績が上がる」成绩提高；「成績表」成绩单//(n) grades; results; performance — 「成績が上がる」 one's grades improve; 「成績表」 a report card |
+| 性格 | せいかく | 性格；脾气（名）——「性格がいい」性格好；「性格が合わない」性格不合//(n) personality; character — 「性格がいい」 good-natured; 「性格が合わない」 to not get along |
+| 迷惑 | めいわく | 麻烦；打扰（名、形容动词、可作动词）——指给别人添的麻烦；「迷惑をかける」给人添麻烦；「迷惑メール」垃圾邮件//(n, na-adj, suru-verb) trouble; nuisance (to others) — 「迷惑をかける」 to cause someone trouble; 「迷惑メール」 spam email |
+| 参加 | さんか | 参加（名、可作动词）——「イベントに参加する」参加活动；「参加者」参加者//(n, suru-verb) participation — 「イベントに参加する」 to take part in an event; 「参加者」 participants |
+| 会員 | かいいん | 会员（名）——「会員になる」成为会员；「会員限定」会员专享//(n) member (of a club or service) — 「会員になる」 to become a member; 「会員限定」 members only |
+| 若者 | わかもの | 年轻人（名）——多用于社会评论；「最近の若者」现在的年轻人；「若者向け」面向年轻人//(n) young people — common in social commentary; 「最近の若者」 young people these days; 「若者向け」 aimed at young people |
+| 年齢 | ねんれい | 年龄（名）——正式用语，口语说「年」；「年齢を問わず」不论年龄；「年齢制限」年龄限制//(n) age — formal; everyday speech says 「年」; 「年齢を問わず」 regardless of age; 「年齢制限」 an age limit |
+| 性別 | せいべつ | 性别（名）——「性別を問わず」不论性别；「性別欄」性别栏//(n) sex; gender — 「性別を問わず」 regardless of gender; 「性別欄」 the gender box on a form |
+| 国籍 | こくせき | 国籍（名）——「国籍を問わず」不论国籍；「日本国籍を取る」取得日本国籍//(n) nationality; citizenship — 「国籍を問わず」 regardless of nationality; 「日本国籍を取る」 to acquire Japanese citizenship |
+| 割引 | わりびき | 折扣（名、可作动词）——按“成”计算，「2割引」是打八折，不是打二折；「学生割引」学生折扣//(n, suru-verb) discount — counted in tenths: 「2割引」 is 20% off; 「学生割引」 a student discount |
+| 今日 | きょう | 今天（名、副词）——后面不加「に」；「今日中に」今天之内；「今日は休みだ」今天休息//(n, adv) today — no 「に」 after it; 「今日中に」 by the end of today; 「今日は休みだ」 today is a day off |
+| 貯金 | ちょきん | 存钱；存款（名、可作动词）——「毎月貯金する」每月存钱；「貯金を下ろす」取存款//(n, suru-verb) savings; saving money — 「毎月貯金する」 to save every month; 「貯金を下ろす」 to withdraw savings |
+| 休憩 | きゅうけい | 休息（名、可作动词）——工作、学习中的短暂休息，不是休假；「休憩を取る」休息一下；「休憩時間」休息时间//(n, suru-verb) break; rest — a short break during work or study, not a day off; 「休憩を取る」 to take a break; 「休憩時間」 break time |
+| 売り切れ | うりきれ | 售罄（名）——「売り切れになる」卖光；「本日売り切れ」今日售罄//(n) sold out — 「売り切れになる」 to sell out; 「本日売り切れ」 sold out for today |
+| 人気 | にんき | 受欢迎；人气（名）——「人気がある」受欢迎；「人気の店」人气店铺//(n) popularity — 「人気がある」 to be popular; 「人気の店」 a popular shop |
+| 出席 | しゅっせき | 出席（名、可作动词）——反义是「欠席」；「会議に出席する」出席会议；「出席を取る」点名//(n, suru-verb) attendance — opposite: 「欠席」; 「会議に出席する」 to attend a meeting; 「出席を取る」 to take attendance |
+| 限定 | げんてい | 限定；限制（名、可作动词）——「期間限定」限时；「会員に限定する」仅限会员//(n, suru-verb) limitation; limited — 「期間限定」 for a limited time only; 「会員に限定する」 to limit to members |
+| 全員 | ぜんいん | 全体人员（名）——指某个群体的所有人；「全員参加」全员参加；「全員そろう」人到齐了//(n) everyone (in the group); all members — 「全員参加」 everyone takes part; 「全員そろう」 everyone is here |
 
 ---
 

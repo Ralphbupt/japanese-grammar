@@ -12,24 +12,24 @@ This lesson covers grammar expressing "tendencies" and "states of change." 「�
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 曇り | くもり | 阴天；多云（名）//(n) cloudy weather; overcast sky — a noun in forecasts; kumoru is the verb |
-| 遅刻 | ちこく | 迟到（名、可作动词）//(n, suru-verb) being late — for school, work or an appointment; said of people, while trains okureru (run late) |
-| 遠慮 | えんりょ | 客气；顾虑（名、可作动词）——指出于礼貌而推辞//(n, suru-verb) holding back (out of politeness); reserve; declining — enryo naku = feel free; also politely refusing |
-| 忘れ物 | わすれもの | 落下的东西；遗忘物品（名）//(n) something left behind; forgotten item; lost property — wasuremono o suru = leave something behind |
-| 怒る | おこる | 生气；发火（自动词）——也可表示“批评、骂”//(v, intrans.) to get angry; to scold — okorareru = get told off; shikaru is deliberate scolding to correct someone |
-| 飽きる | あきる | 厌倦；腻了（自动词）//(v, intrans.) to get tired of; to get bored with — after too much of the same thing; the thing takes ni (ni akiru) |
-| 大人 | おとな | 成年人；大人（名）——不是中文“大人”的敬称//(n) adult; grown-up — opposite of kodomo; otona-rashii = mature; on price lists, the adult fare |
-| 子供 | こども | 孩子；儿童（名）//(n) child; kid — both children in general and one's own children; kodomoppoi = childish |
-| 風邪 | かぜ | 感冒（名）//(n) a cold (illness) — kaze o hiku = catch a cold; flu is infuruenza; "wind" is a homophone with another kanji |
-| 回復 | かいふく | 恢复；康复（名、可作动词）//(n, suru-verb) recovery; restoration; getting better — health, economy, weather or trust recovering |
-| 人口 | じんこう | 人口（名）//(n) population — of a country or city; jinkou ga heru = the population is shrinking |
-| 減る | へる | 减少（自动词）//(v, intrans.) to decrease; to go down — numbers, amounts; transitive pair: herasu; onaka ga heru = get hungry |
-| 増える | ふえる | 增加（自动词）//(v, intrans.) to increase; to grow (in number) — population, weight, numbers; transitive pair: fuyasu |
-| 食べ残す | たべのこす | 吃剩；没吃完（他动词）//(v, trans.) to leave food uneaten; to leave leftovers — tabenokoshi = leftovers on the plate |
-| 読む | よむ | 读；看（书报）（他动词）//(v, trans.) to read — silently or aloud; also "read" a situation: kuuki o yomu = read the room |
-| 腐る | くさる | 腐烂；变质（自动词）//(v, intrans.) to rot; to go bad; to spoil — food going off; also to sulk or feel down |
-| 温暖化 | おんだんか | 全球变暖；气候变暖（名）//(n) global warming; climate warming — short for chikyuu ondanka |
-| 高齢化 | こうれいか | 老龄化（名）//(n) aging (of the population) — shoushi koureika = falling birthrate and aging population, a staple N2 reading topic |
+| 曇り | くもり | 阴天（名）——动词是「曇る」；「曇りのち雨」阴转雨；「曇りがちな天気」多云的天气//(n) cloudy weather — the verb is 「曇る」; 「曇りのち雨」 cloudy, rain later; 「曇りがちな天気」 mostly cloudy weather |
+| 遅刻 | ちこく | 迟到（名、可作动词）——指人迟到，电车晚点用「遅れる」；「授業に遅刻する」上课迟到；「遅刻しそうだ」快迟到了//(n, suru-verb) being late — of people; trains running late is 「遅れる」; 「授業に遅刻する」 to be late for class; 「遅刻しそうだ」 I'm about to be late |
+| 遠慮 | えんりょ | 客气；顾虑（名、可作动词）——出于礼貌而有所保留或推辞；「遠慮なく」别客气；「遠慮しておきます」我就不用了（婉拒）//(n, suru-verb) holding back (out of politeness); reserve — 「遠慮なく」 feel free; 「遠慮しておきます」 I'll pass (polite refusal) |
+| 忘れ物 | わすれもの | 遗忘的东西（名）——「忘れ物をする」落东西；「忘れ物がないように」别落下东西//(n) something left behind — 「忘れ物をする」 to leave something behind; 「忘れ物がないように」 make sure you have everything |
+| 怒る | おこる | 生气；发火；骂（自动词）——为纠正而训斥是「叱る」；「先生に怒られる」被老师骂；「怒りっぽい」爱发火//(v, intrans.) to get angry; to tell off — deliberate correcting is 「叱る」; 「先生に怒られる」 to get told off by the teacher; 「怒りっぽい」 short-tempered |
+| 飽きる | あきる | 腻；厌倦（自动词）——对象用「に」；「ゲームに飽きる」玩腻了游戏；「飽きっぽい」没长性//(v, intrans.) to get tired of; to get bored with — the thing takes 「に」; 「ゲームに飽きる」 to get bored of a game; 「飽きっぽい」 quick to lose interest |
+| 大人 | おとな | 成年人；大人（名）——不是中文“大人”的敬称；「大人になる」长大成人；「大人っぽい」显得成熟//(n) adult; grown-up — 「大人になる」 to grow up; 「大人っぽい」 mature-looking |
+| 子供 | こども | 孩子；儿童（名）——也常写作「子ども」；「子供の頃」小时候；「子供っぽい」孩子气//(n) child; kid — also written 「子ども」; 「子供の頃」 as a child; 「子供っぽい」 childish |
+| 風邪 | かぜ | 感冒（名）——「風邪をひく」感冒；「風邪気味」有点感冒//(n) a cold — 「風邪をひく」 to catch a cold; 「風邪気味」 coming down with a cold |
+| 回復 | かいふく | 恢复；康复（名、可作动词）——「体力が回復する」体力恢复；「景気回復」经济复苏//(n, suru-verb) recovery — of health, the economy or trust; 「体力が回復する」 to get one's strength back; 「景気回復」 economic recovery |
+| 人口 | じんこう | 人口（名）——「人口が減る」人口减少；「人口が多い」人口多//(n) population — 「人口が減る」 the population shrinks; 「人口が多い」 to have a large population |
+| 減る | へる | 减少（自动词）——他动词是「減らす」；「人口が減る」人口减少；「お腹が減る」肚子饿//(v, intrans.) to decrease; to go down — transitive pair: 「減らす」; 「人口が減る」 the population falls; 「お腹が減る」 to get hungry |
+| 増える | ふえる | 增加（自动词）——他动词是「増やす」；「体重が増える」体重增加；「〜する人が増える」……的人变多//(v, intrans.) to increase — transitive pair: 「増やす」; 「体重が増える」 to gain weight; 「〜する人が増える」 more people do ~ |
+| 食べ残す | たべのこす | 吃剩（他动词）——「ご飯を食べ残す」剩饭；「食べ残し」吃剩的东西//(v, trans.) to leave food uneaten — 「ご飯を食べ残す」 to leave some of one's food; 「食べ残し」 leftovers on the plate |
+| 読む | よむ | 读；看（他动词）——中文“看书、看报”在日语里用「読む」，不用「見る」；「本を読む」看书；「空気を読む」察言观色//(v, trans.) to read — 「本を読む」 to read a book; 「空気を読む」 to read the room |
+| 腐る | くさる | 腐烂；变质（自动词）——「牛乳が腐る」牛奶变质；「腐りやすい」容易坏//(v, intrans.) to rot; to go bad — 「牛乳が腐る」 the milk goes bad; 「腐りやすい」 perishable |
+| 温暖化 | おんだんか | 变暖（名）——多指全球变暖；「地球温暖化」全球变暖；「温暖化が進む」变暖加剧//(n) (global) warming — 「地球温暖化」 global warming; 「温暖化が進む」 warming accelerates |
+| 高齢化 | こうれいか | 老龄化（名）——「少子高齢化」少子老龄化；「高齢化が進む」老龄化加剧//(n) aging (of a population) — 「少子高齢化」 fewer births and an aging population; 「高齢化が進む」 the population is aging fast |
 
 ---
 

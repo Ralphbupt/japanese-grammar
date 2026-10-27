@@ -12,24 +12,24 @@ This lesson continues with concession grammar. These four expressions are more l
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 賛成 | さんせい | 赞成；同意（名、可作动词）//(n, suru-verb) agreement; approval; being in favor — ni sansei suru = agree with (a plan or opinion); opposite of hantai |
-| 条件 | じょうけん | 条件（名）//(n) condition; terms; requirement — job conditions, contract terms, prerequisites |
-| 購入 | こうにゅう | 购买（名、可作动词）——书面语//(n, suru-verb) purchase; buying — formal or written version of kau (to buy) |
-| 景気 | けいき | 经济形势；景气（名）//(n) the economy; business conditions — how business is doing; keiki ga ii = the economy is booming |
-| 回復 | かいふく | 恢复；康复（名、可作动词）//(n, suru-verb) recovery; restoration; getting better — health, economy, weather or trust recovering |
-| 油断 | ゆだん | 大意；疏忽（名、可作动词）//(n, suru-verb) carelessness; letting one's guard down — relaxing too early; yudan taiteki = never let your guard down |
-| 社長 | しゃちょう | （公司）总经理；社长（名）——指公司最高负责人//(n) company president; head of a company — the top executive; also used alone as a title to address them |
-| 若い | わかい | 年轻的（形容词）//(i-adj) young; youthful; inexperienced — of people; a lower number is also wakai (wakai bangou) |
-| 決断力 | けつだんりょく | 果断；决断力（名）//(n) decisiveness; ability to make decisions — a quality of good leaders: ketsudanryoku ga aru |
-| 落ち着く | おちつく | 冷静下来；平静；安定（自动词）//(v, intrans.) to calm down; to settle down; to settle in — of people, situations or places; ochitsuita = calm, composed |
-| 感謝 | かんしゃ | 感谢；感激（名、可作动词）——比口语道谢更郑重//(n, suru-verb) gratitude; thanks; appreciation — more formal than arigatou; kansha shite imasu |
-| 不満 | ふまん | 不满（名、形容动词）//(n, na-adj) dissatisfaction; discontent; complaint — fuman ga aru = be unhappy (about); bunku is the voiced complaint |
-| 休暇 | きゅうか | 休假；假期（名）//(n) vacation; holiday; leave (from work) — formal; paid leave = yuukyuu kyuuka |
-| 余裕 | よゆう | 富余；余地；从容（名）//(n) room to spare (time, money); leeway; composure — yoyuu ga aru = have time or money to spare; yoyuu ga nai = stretched thin |
-| 減る | へる | 减少（自动词）//(v, intrans.) to decrease; to go down — numbers, amounts; transitive pair: herasu; onaka ga heru = get hungry |
-| 増える | ふえる | 增加（自动词）//(v, intrans.) to increase; to grow (in number) — population, weight, numbers; transitive pair: fuyasu |
-| 忙しい | いそがしい | 忙的（形容词）//(i-adj) busy; hectic — of people or schedules; isogashii tokoro = while you're busy (polite) |
-| 手伝う | てつだう | 帮忙；帮助（他动词）//(v, trans.) to help (with a task); to assist — hands-on help with work or chores; tasukeru = rescue or help someone in trouble |
+| 賛成 | さんせい | 赞成（名、可作动词）——「意見に賛成する」赞成意见；「賛成多数」多数赞成//(n, suru-verb) agreement; being in favor — 「意見に賛成する」 to agree with an opinion; 「賛成多数」 a majority in favor |
+| 条件 | じょうけん | 条件（名）——「条件を満たす」满足条件；「条件付きで」有条件地//(n) condition; terms — 「条件を満たす」 to meet the conditions; 「条件付きで」 conditionally |
+| 購入 | こうにゅう | 购买（名、可作动词）——「買う」的书面说法；「チケットを購入する」购票；「購入者」购买者//(n, suru-verb) purchase — formal for 「買う」; 「チケットを購入する」 to purchase a ticket; 「購入者」 the buyer |
+| 景気 | けいき | 景气；经济形势（名）——「景気がいい」经济景气；「景気が回復する」经济复苏//(n) the economy; business conditions — 「景気がいい」 business is booming; 「景気が回復する」 the economy recovers |
+| 回復 | かいふく | 恢复；康复（名、可作动词）——「体力が回復する」体力恢复；「景気回復」经济复苏//(n, suru-verb) recovery — of health, the economy or trust; 「体力が回復する」 to get one's strength back; 「景気回復」 economic recovery |
+| 油断 | ゆだん | 大意；疏忽（名、可作动词）——「少しも油断できない」一点也不能大意；「油断大敵」大意是最大的敌人//(n, suru-verb) letting one's guard down — 「少しも油断できない」 can't relax for a moment; 「油断大敵」 carelessness is your worst enemy |
+| 社長 | しゃちょう | 总经理；社长（名）——公司最高负责人，也可直接作称呼；「社長になる」当上社长；「社長室」社长办公室//(n) company president — the top executive; also used alone to address them; 「社長になる」 to become president; 「社長室」 the president's office |
+| 若い | わかい | 年轻（形容词）——「若い人」年轻人；「年より若く見える」显得比实际年轻//(i-adj) young — 「若い人」 young people; 「年より若く見える」 to look young for one's age |
+| 決断力 | けつだんりょく | 决断力；果断（名）——「決断力がある」做事果断；「決断力に欠ける」缺乏决断力//(n) decisiveness — 「決断力がある」 to be decisive; 「決断力に欠ける」 to lack decisiveness |
+| 落ち着く | おちつく | 冷静；安定下来（自动词）——「気持ちが落ち着く」心情平静下来；「落ち着いた人」沉稳的人//(v, intrans.) to calm down; to settle down — 「気持ちが落ち着く」 to calm down; 「落ち着いた人」 a calm, composed person |
+| 感謝 | かんしゃ | 感谢（名、可作动词）——比「ありがとう」更郑重；「感謝の気持ち」感激之情；「心から感謝する」衷心感谢//(n, suru-verb) gratitude; thanks — more formal than 「ありがとう」; 「感謝の気持ち」 a feeling of gratitude; 「心から感謝する」 to thank from the heart |
+| 不満 | ふまん | 不满（名、形容动词）——心里的不满，说出口的是「文句」；「不満がある」有不满；「不満を言う」发牢骚//(n, na-adj) dissatisfaction; discontent — the feeling; voicing it is 「文句」; 「不満がある」 to be unhappy (with something); 「不満を言う」 to complain |
+| 休暇 | きゅうか | 休假；假期（名）——正式用语；「休暇を取る」请假；「有給休暇」带薪休假//(n) leave; vacation — formal; 「休暇を取る」 to take time off; 「有給休暇」 paid leave |
+| 余裕 | よゆう | 富余；从容（名）——时间、金钱或心理上的余地；「時間に余裕がある」时间充裕；「余裕がない」没有余力//(n) room to spare; leeway; composure — in time, money or mind; 「時間に余裕がある」 to have time to spare; 「余裕がない」 to be stretched thin |
+| 減る | へる | 减少（自动词）——他动词是「減らす」；「人口が減る」人口减少；「お腹が減る」肚子饿//(v, intrans.) to decrease; to go down — transitive pair: 「減らす」; 「人口が減る」 the population falls; 「お腹が減る」 to get hungry |
+| 増える | ふえる | 增加（自动词）——他动词是「増やす」；「体重が増える」体重增加；「〜する人が増える」……的人变多//(v, intrans.) to increase — transitive pair: 「増やす」; 「体重が増える」 to gain weight; 「〜する人が増える」 more people do ~ |
+| 忙しい | いそがしい | 忙（形容词）——「仕事が忙しい」工作忙；「お忙しいところ」在您百忙之中（客套话）//(i-adj) busy — 「仕事が忙しい」 busy with work; 「お忙しいところ」 sorry to bother you when you're busy (polite) |
+| 手伝う | てつだう | 帮忙（他动词）——指动手帮着做事，救助用「助ける」；「家事を手伝う」帮忙做家务；「手伝ってもらう」请人帮忙//(v, trans.) to help (with a task) — hands-on help; rescuing someone is 「助ける」; 「家事を手伝う」 to help with chores; 「手伝ってもらう」 to get someone's help |
 
 ---
 

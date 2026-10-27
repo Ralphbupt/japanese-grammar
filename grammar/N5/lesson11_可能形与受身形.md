@@ -4,40 +4,40 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 漢字 | かんじ | 汉字（名）//(n) kanji; Chinese characters |
-| 海 | うみ | 大海；海边（名）//(n) sea; ocean; beach — "go to the sea" usually means the beach |
-| 歌 | うた | 歌（名）//(n) song — "sing a song" is uta o utau |
-| 褒める | ほめる | 表扬；夸奖（他动词）//(v, trans.) to praise; to compliment — opposite of shikaru (scold); often passive: sensei ni homerareta |
-| 警察 | けいさつ | 警察；警方（名）——指警察机关，警察个人常叫另一个词//(n) police — the institution; an officer is keisatsukan or omawarisan |
-| 捕まえる | つかまえる | 抓住；逮捕（他动词）//(v, trans.) to catch; to arrest — catch a thief, an insect or a taxi |
-| 怒る | おこる | 生气；发火（自动词）——也可表示“批评、骂”//(v, intrans.) to get angry; to scold — okorareru = get told off; shikaru is deliberate scolding to correct someone |
-| 叱る | しかる | 训斥；责骂（他动词）——上对下的批评//(v, trans.) to scold; to tell off — a parent, teacher or boss correcting someone; okoru is just getting angry; often passive: shikarareta |
-| 踏む | ふむ | 踩；踏（他动词）//(v, trans.) to step on; to tread on — often by accident (a foot, the brake); ashi o fumareta = had my foot stepped on |
-| 盗む | ぬすむ | 偷；盗窃（他动词）//(v, trans.) to steal — "have something stolen" is ~o nusumareta, the classic suffering passive |
-| 財布 | さいふ | 钱包（名）//(n) wallet; purse |
-| 足 | あし | 脚；腿（名）//(n) foot; leg — covers the whole leg as well as the foot |
-| 呼ぶ | よぶ | 叫；呼唤；请来（他动词）//(v, trans.) to call; to call out; to send for — call a name, a taxi, or invite someone |
-| 隣 | となり | 旁边；隔壁（名）//(n) next to; next door; neighboring — "next to X" is X no tonari |
-| 嫌 | いや | 讨厌；不愿意（形容动词）//(na-adj) unpleasant; disagreeable; not wanting to — stronger and more emotional than kirai; "no way!" is iya da |
-| びしょ濡れ | びしょぬれ | 湿透（名、形容动词）//(n, na-adj) soaking wet; drenched — typical after getting caught in the rain |
-| 運動 | うんどう | 运动；锻炼（名、可作动词）//(n, suru-verb) exercise; physical activity — general exercise; specific sports are supootsu |
-| 寝る | ねる | 睡觉；躺下（自动词）//(v, intrans.) to sleep; to go to bed; to lie down — covers both going to bed and sleeping |
-| 休憩 | きゅうけい | 休息（名、可作动词）//(n, suru-verb) break; rest — a short break during work, study or travel; yasumi can also mean a day off |
-| 頑張る | がんばる | 努力；加油（自动词）//(v, intrans.) to do one's best; to keep at it; to hang in there — "good luck!" is ganbatte |
-| 引っ越す | ひっこす | 搬家（自动词）//(v, intrans.) to move (house) — the new place takes ni |
-| 大学院 | だいがくいん | 研究生院（名）//(n) graduate school — master's and doctoral programs |
-| 出張 | しゅっちょう | 出差（名、可作动词）//(n, suru-verb) business trip — shucchou ni iku = go on a business trip; the destination takes ni |
-| 会議 | かいぎ | 会议（名）//(n) meeting; conference — from small office meetings to international conferences; kaigi ga aru = have a meeting |
-| 始まる | はじまる | （事情）开始（自动词）——事情自己开始//(v, intrans.) to begin; to start (by itself) — the event is the subject: kaigi ga hajimaru; compare hajimeru |
-| 工事 | こうじ | 施工；工程（名）//(n) construction work; roadwork — often the reason for noise or closed roads |
-| 終わる | おわる | 结束；完（自动词）//(v, intrans.) to end; to finish; to be over — after a verb stem, "finish doing" (yomi-owaru); transitive: oeru |
-| 遅れる | おくれる | 迟到；晚点；落后（自动词）//(v, intrans.) to be late; to be delayed; to fall behind — people and trains alike; "late for X" is X ni okureru |
-| 転職 | てんしょく | 换工作；跳槽（名、可作动词）//(n, suru-verb) changing jobs; career change — moving to a different employer; tenshoku katsudou = job hunting while still employed |
-| 荷物 | にもつ | 行李；包裹（名）//(n) luggage; baggage; package — anything you carry or have delivered |
-| 留学 | りゅうがく | 留学（名、可作动词）//(n, suru-verb) studying abroad — the destination takes ni (Nihon ni ryuugaku suru); ryuugakusei = international student, including foreigners in Japan |
-| 妹 | いもうと | 妹妹（名）//(n) younger sister — someone else's is imoutosan |
-| おもちゃ | おもちゃ | 玩具（名）//(n) toy |
-| 予定 | よてい | 计划；安排（名、可作动词）——指已定的日程，不是“预订”//(n, suru-verb) plan; schedule; arrangement — something already decided; ~yotei desu = I plan to; booking a room is yoyaku |
+| 漢字 | かんじ | 汉字（名）——「漢字を覚える」记汉字；「漢字の読み方」汉字的读法//(n) kanji; Chinese characters — 「漢字を覚える」 to learn kanji; 「漢字の読み方」 how to read a kanji |
+| 海 | うみ | 大海；海边（名）——“去海边”常说「海に行く」；「海で泳ぐ」在海里游泳//(n) sea; ocean; beach — 「海に行く」 to go to the beach; 「海で泳ぐ」 to swim in the sea |
+| 歌 | うた | 歌（名）——「歌を歌う」唱歌；「歌が上手だ」唱歌好听//(n) song — 「歌を歌う」 to sing a song; 「歌が上手だ」 to be a good singer |
+| 褒める | ほめる | 表扬；夸奖（他动词）——「先生に褒められる」被老师表扬；「褒めて伸ばす」用表扬来培养//(v, trans.) to praise; to compliment — 「先生に褒められる」 to be praised by the teacher; 「褒めて伸ばす」 to bring out the best by praising |
+| 警察 | けいさつ | 警察；警方（名）——指警察机关，警察个人叫「警察官」或「お巡りさん」；「警察を呼ぶ」报警//(n) police — the institution; an officer is 「警察官」 or 「お巡りさん」; 「警察を呼ぶ」 to call the police |
+| 捕まえる | つかまえる | 抓住；逮捕（他动词）——小偷、虫子、出租车都可以；「犯人を捕まえる」抓犯人；「タクシーを捕まえる」拦出租车//(v, trans.) to catch; to arrest — 「犯人を捕まえる」 to catch the culprit; 「タクシーを捕まえる」 to grab a taxi |
+| 怒る | おこる | 生气；发火；骂（自动词）——为纠正而训斥是「叱る」；「先生に怒られる」被老师骂；「怒りっぽい」爱发火//(v, intrans.) to get angry; to tell off — deliberate correcting is 「叱る」; 「先生に怒られる」 to get told off by the teacher; 「怒りっぽい」 short-tempered |
+| 叱る | しかる | 训斥；责骂（他动词）——上对下为纠正而批评，「怒る」只是发火；「子供を叱る」训孩子；「先生に叱られる」被老师批评//(v, trans.) to scold; to tell off — a parent, teacher or boss correcting someone; 「怒る」 is just getting angry; 「子供を叱る」 to scold a child; 「先生に叱られる」 to get told off by the teacher |
+| 踏む | ふむ | 踩；踏（他动词）——「足を踏まれる」被踩了脚；「ブレーキを踏む」踩刹车//(v, trans.) to step on; to tread on — 「足を踏まれる」 to have one's foot stepped on; 「ブレーキを踏む」 to hit the brakes |
+| 盗む | ぬすむ | 偷；盗窃（他动词）——「財布を盗まれる」钱包被偷；「人の物を盗む」偷别人东西//(v, trans.) to steal — 「財布を盗まれる」 to have one's wallet stolen; 「人の物を盗む」 to steal other people's things |
+| 財布 | さいふ | 钱包（名）——「財布を落とす」丢钱包；「財布を盗まれる」钱包被偷//(n) wallet; purse — 「財布を落とす」 to lose one's wallet; 「財布を盗まれる」 to have one's wallet stolen |
+| 足 | あし | 脚；腿（名）——脚和整条腿都可以；「足が痛い」脚疼；「足が速い」跑得快//(n) foot; leg — covers the whole leg too; 「足が痛い」 one's foot hurts; 「足が速い」 a fast runner |
+| 呼ぶ | よぶ | 叫；呼唤；请来（他动词）——「名前を呼ぶ」叫名字；「タクシーを呼ぶ」叫出租车//(v, trans.) to call; to call out; to send for — 「名前を呼ぶ」 to call someone's name; 「タクシーを呼ぶ」 to call a taxi |
+| 隣 | となり | 旁边；隔壁（名）——「〜の隣」……的旁边；「隣の人」邻居、旁边的人//(n) next to; next door — 「〜の隣」 next to ~; 「隣の人」 the person next door |
+| 嫌 | いや | 讨厌；不愿意（形容动词）——比「嫌い」更情绪化；「嫌だ」不要；「嫌な天気」讨厌的天气//(na-adj) unpleasant; not wanting to — more emotional than 「嫌い」; 「嫌だ」 no way; 「嫌な天気」 nasty weather |
+| びしょ濡れ | びしょぬれ | 湿透（名、形容动词）——「びしょ濡れになる」浑身湿透//(n, na-adj) soaking wet; drenched — 「びしょ濡れになる」 to get soaked |
+| 運動 | うんどう | 运动；锻炼（名、可作动词）——泛指活动身体，具体体育项目用「スポーツ」；「運動不足」缺乏运动//(n, suru-verb) exercise — general physical activity; specific sports are 「スポーツ」; 「運動不足」 lack of exercise |
+| 寝る | ねる | 睡觉；躺下（自动词）——上床和睡着都可以说；「早く寝る」早睡；「寝る前に」睡前//(v, intrans.) to sleep; to go to bed; to lie down — 「早く寝る」 to go to bed early; 「寝る前に」 before going to bed |
+| 休憩 | きゅうけい | 休息（名、可作动词）——工作、学习中的短暂休息，不是休假；「休憩を取る」休息一下；「休憩時間」休息时间//(n, suru-verb) break; rest — a short break during work or study, not a day off; 「休憩を取る」 to take a break; 「休憩時間」 break time |
+| 頑張る | がんばる | 努力；加油（自动词）——「頑張って」加油；「仕事を頑張る」努力工作//(v, intrans.) to do one's best; to hang in there — 「頑張って」 good luck, go for it; 「仕事を頑張る」 to work hard |
+| 引っ越す | ひっこす | 搬家（自动词）——新住处用「に」；「東京に引っ越す」搬到东京//(v, intrans.) to move (house) — the new place takes 「に」; 「東京に引っ越す」 to move to Tokyo |
+| 大学院 | だいがくいん | 研究生院（名）——「大学院に進む」读研//(n) graduate school — 「大学院に進む」 to go on to graduate school |
+| 出張 | しゅっちょう | 出差（名、可作动词）——「大阪に出張する」去大阪出差；「出張中」出差中//(n, suru-verb) business trip — 「大阪に出張する」 to go to Osaka on business; 「出張中」 away on business |
+| 会議 | かいぎ | 会议（名）——「会議に出る」参加会议；「会議中」正在开会//(n) meeting; conference — 「会議に出る」 to attend a meeting; 「会議中」 in a meeting |
+| 始まる | はじまる | （事情）开始（自动词）——事情自己开始，人开始某事用「始める」；「会議が始まる」会议开始//(v, intrans.) to begin; to start — the event is the subject; someone starting it is 「始める」; 「会議が始まる」 the meeting starts |
+| 工事 | こうじ | 施工；工程（名）——「工事中」施工中；「道路工事」道路施工//(n) construction work; roadwork — 「工事中」 under construction; 「道路工事」 roadworks |
+| 終わる | おわる | 结束；完（自动词）——接动词连用形表示“做完”；「授業が終わる」下课；「読み終わる」读完//(v, intrans.) to end; to finish; to be over — 「授業が終わる」 class ends; 「読み終わる」 to finish reading |
+| 遅れる | おくれる | 迟到；晚点；落后（自动词）——人和车都能用；「授業に遅れる」上课迟到；「電車が遅れる」电车晚点//(v, intrans.) to be late; to be delayed; to fall behind — people and trains alike; 「授業に遅れる」 to be late for class; 「電車が遅れる」 the train is delayed |
+| 転職 | てんしょく | 换工作；跳槽（名、可作动词）——「転職を考える」考虑换工作；「転職活動」找新工作//(n, suru-verb) changing jobs — 「転職を考える」 to think about changing jobs; 「転職活動」 looking for a new job while employed |
+| 荷物 | にもつ | 行李；包裹（名）——随身带的和寄来的东西都可以；「荷物を持つ」拿行李；「荷物が届く」包裹到了//(n) luggage; baggage; package — 「荷物を持つ」 to carry one's bags; 「荷物が届く」 a package arrives |
+| 留学 | りゅうがく | 留学（名、可作动词）——「日本に留学する」到日本留学；「留学生」留学生（含在日外国学生）//(n, suru-verb) studying abroad — 「日本に留学する」 to study in Japan; 「留学生」 an international student |
+| 妹 | いもうと | 妹妹（名）——别人的妹妹说「妹さん」//(n) younger sister — someone else's is 「妹さん」 |
+| おもちゃ | おもちゃ | 玩具（名）——「おもちゃで遊ぶ」玩玩具//(n) toy — 「おもちゃで遊ぶ」 to play with toys |
+| 予定 | よてい | 计划；安排（名、可作动词）——指已定的日程，不是“预订”（预订是「予約」）；「予定がある」有安排；「〜する予定だ」打算……//(n, suru-verb) plan; schedule — something already decided; booking is 「予約」; 「予定がある」 to have plans; 「〜する予定だ」 to be planning to ~ |
 
 ---
 

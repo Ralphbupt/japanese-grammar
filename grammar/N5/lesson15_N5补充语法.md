@@ -12,36 +12,36 @@ The closing lesson of N5 — covering commonly used N5 grammar not yet addressed
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 予約 | よやく | 预约；预订（名、可作动词）//(n, suru-verb) reservation; booking; appointment — restaurants, hotels, doctors, tickets |
-| 約束 | やくそく | 约定；诺言（名、可作动词）——也指约会//(n, suru-verb) promise; appointment; arrangement — also a plan to meet someone; keep one = mamoru, break one = yaburu |
-| 落ちる | おちる | 掉落；（考试）落榜（自动词）//(v, intrans.) to fall; to drop; to fail (an exam) — ichidan verb; shiken ni ochiru = fail an exam |
-| 体調 | たいちょう | 身体状况（名）//(n) physical condition; health — "not feeling well" is taichou ga warui |
-| 悪い | わるい | 坏；不好；对不起（形容词）//(i-adj) bad; poor; at fault — casual "sorry" is warui (warui ne) |
-| 早退 | そうたい | 早退（名、可作动词）//(n, suru-verb) leaving early (school or work) — usually because of feeling unwell |
-| 頭 | あたま | 头；头脑（名）//(n) head; brain; mind — "smart" is atama ga ii |
-| お腹 | おなか | 肚子（名）//(n) stomach; belly — "I'm hungry" is onaka ga suita |
-| 痛い | いたい | 疼；痛（形容词）//(i-adj) painful; sore — "my head hurts" is atama ga itai; "ouch!" is itai! |
-| 壊れる | こわれる | 坏；损坏（自动词）//(v, intrans.) to break; to stop working — machines and objects; breaking it yourself is kowasu |
-| 新聞 | しんぶん | 报纸（名）——不是“新闻”//(n) newspaper — the paper itself; news is nyuusu |
-| 笑う | わらう | 笑（自动词）//(v, intrans.) to laugh; to smile — "laugh at X" takes o; hohoemu = to smile gently |
-| 汚い | きたない | 脏（形容词）//(i-adj) dirty; messy — also unfair (kitanai te = a dirty trick) |
-| 使い方 | つかいかた | 用法；使用方法（名）//(n) how to use; usage — verb stem + kata = "how to do" |
-| 作り方 | つくりかた | 做法；制作方法（名）//(n) how to make; recipe — verb stem + kata |
-| 読み方 | よみかた | 读法；念法（名）//(n) how to read; reading (of a word) — often asked about kanji readings |
-| 夢 | ゆめ | 梦；梦想（名）//(n) dream — both dreams in sleep and life goals |
-| 止まる | とまる | 停下；停止（自动词）//(v, intrans.) to stop (by itself); to come to a halt — cars, clocks, rain; stopping it is tomeru |
-| 怖い | こわい | 可怕；害怕（形容词）//(i-adj) scary; frightening; afraid — "I'm scared of X" is X ga kowai |
-| 遅刻 | ちこく | 迟到（名、可作动词）//(n, suru-verb) being late — for school, work or an appointment; said of people, while trains okureru (run late) |
-| 準備 | じゅんび | 准备（名、可作动词）//(n, suru-verb) preparation; getting ready — for events, trips or meals; junbi suru = prepare |
-| 説明 | せつめい | 说明；解释（名、可作动词）//(n, suru-verb) explanation; description — "explain X" is X o setsumei suru; setsumeisho = instruction manual |
-| 間に合う | まにあう | 来得及；赶上（自动词）//(v, intrans.) to make it in time; to be in time — ni maniau (a train, a deadline); also "to be enough": maniatte imasu = no thanks, I'm fine |
-| 我慢 | がまん | 忍耐；忍受（名、可作动词）——多指忍住疼痛、眼泪、尿意等//(n, suru-verb) patience; putting up with something unpleasant — often "hold it in" (pain, tears, the urge to go) |
-| 途中 | とちゅう | 半路；中途（名）//(n) on the way; in the middle (of) — "on the way home" is kaeru tochuu |
-| 片付ける | かたづける | 收拾；整理；处理掉（他动词）//(v, trans.) to tidy up; to put away; to finish off (a task) — rooms, desks or work; intransitive pair: katazuku |
-| 慣れる | なれる | 习惯；适应（自动词）//(v, intrans.) to get used to; to become accustomed — the thing takes ni: shigoto ni nareru |
-| 諦める | あきらめる | 放弃；死心（他动词）//(v, trans.) to give up; to abandon (hope); to resign oneself — accepting something is out of reach; yameru is simply stopping |
-| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）//(n, suru-verb, na-adj) worry; concern; anxiety — X o shinpai suru = worry about X; shinpai shinaide = don't worry |
-| 無理 | むり | 不可能；勉强（形容动词、名）——常用于“别太勉强自己”//(na-adj, n) impossible; unreasonable; overdoing it — muri o suru = push yourself too hard; muri shinaide = don't overdo it |
+| 予約 | よやく | 预约；预订（名、可作动词）——餐厅、酒店、看病都用；「店を予約する」订餐厅；「予約を取る」预约//(n, suru-verb) reservation; booking; appointment — 「店を予約する」 to book a restaurant; 「予約を取る」 to make an appointment |
+| 約束 | やくそく | 约定；诺言（名、可作动词）——也指约好见面；「約束を守る」守约；「約束を破る」失约//(n, suru-verb) promise; appointment — also a plan to meet; 「約束を守る」 to keep a promise; 「約束を破る」 to break a promise |
+| 落ちる | おちる | 掉落；（考试）落榜（自动词）——「試験に落ちる」考试没过；「木から落ちる」从树上掉下来//(v, intrans.) to fall; to drop; to fail (an exam) — 「試験に落ちる」 to fail an exam; 「木から落ちる」 to fall from a tree |
+| 体調 | たいちょう | 身体状况（名）——「体調が悪い」身体不舒服；「体調を崩す」搞坏身体//(n) physical condition; health — 「体調が悪い」 to feel unwell; 「体調を崩す」 to get sick |
+| 悪い | わるい | 坏；不好；对不起（形容词）——口语「悪いね」表示抱歉；「天気が悪い」天气不好//(i-adj) bad; poor; at fault — 「悪いね」 sorry (casual); 「天気が悪い」 the weather is bad |
+| 早退 | そうたい | 早退（名、可作动词）——多因身体不适；「会社を早退する」早退下班//(n, suru-verb) leaving early (school or work) — usually from feeling unwell; 「会社を早退する」 to leave work early |
+| 頭 | あたま | 头；头脑（名）——「頭が痛い」头疼；「頭がいい」聪明//(n) head; brain — 「頭が痛い」 to have a headache; 「頭がいい」 smart |
+| お腹 | おなか | 肚子（名）——「お腹が空く」肚子饿；「お腹が痛い」肚子疼//(n) stomach; belly — 「お腹が空く」 to get hungry; 「お腹が痛い」 to have a stomachache |
+| 痛い | いたい | 疼；痛（形容词）——疼的部位用「が」；「頭が痛い」头疼；「痛い！」好疼！//(i-adj) painful; sore — the body part takes 「が」; 「頭が痛い」 to have a headache; 「痛い！」 ouch! |
+| 壊れる | こわれる | 坏；损坏（自动词）——自己弄坏用「壊す」；「パソコンが壊れる」电脑坏了；「壊れやすい」容易坏//(v, intrans.) to break; to stop working — breaking it yourself is 「壊す」; 「パソコンが壊れる」 the computer breaks; 「壊れやすい」 fragile |
+| 新聞 | しんぶん | 报纸（名）——不是“新闻”，新闻是「ニュース」；「新聞を読む」看报；「新聞に載る」上报纸//(n) newspaper — news itself is 「ニュース」; 「新聞を読む」 to read the paper; 「新聞に載る」 to appear in the paper |
+| 笑う | わらう | 笑（自他动词）——笑某人用「を」；「人を笑う」嘲笑别人；「大声で笑う」放声大笑//(v, intrans./trans.) to laugh; to smile — "laugh at" takes 「を」; 「人を笑う」 to laugh at someone; 「大声で笑う」 to laugh out loud |
+| 汚い | きたない | 脏（形容词）——也指手段卑鄙；「部屋が汚い」房间脏；「字が汚い」字写得乱//(i-adj) dirty; messy; unfair — 「部屋が汚い」 the room is messy; 「字が汚い」 sloppy handwriting |
+| 使い方 | つかいかた | 用法；使用方法（名）——其他动词同理，如「読み方」读法；「使い方を教える」教用法//(n) how to use; usage — works with any verb stem, e.g. 「読み方」 how to read; 「使い方を教える」 to show how to use it |
+| 作り方 | つくりかた | 做法；制作方法（名）——「料理の作り方」菜的做法//(n) how to make; recipe — 「料理の作り方」 how to cook a dish |
+| 読み方 | よみかた | 读法；念法（名）——多问汉字的读音；「漢字の読み方」汉字的读法//(n) how to read; reading (of a word) — often about kanji; 「漢字の読み方」 how to read a kanji |
+| 夢 | ゆめ | 梦；梦想（名）——「夢を見る」做梦；「夢が叶う」梦想成真//(n) dream — both in sleep and life goals; 「夢を見る」 to have a dream; 「夢が叶う」 a dream comes true |
+| 止まる | とまる | 停下；停止（自动词）——自己停下，让它停是「止める」；「電車が止まる」电车停了//(v, intrans.) to stop; to come to a halt — stopping it is 「止める」; 「電車が止まる」 the train stops |
+| 怖い | こわい | 可怕；害怕（形容词）——害怕的对象用「が」；「犬が怖い」怕狗；「怖い話」恐怖故事//(i-adj) scary; afraid — the thing feared takes 「が」; 「犬が怖い」 to be scared of dogs; 「怖い話」 a scary story |
+| 遅刻 | ちこく | 迟到（名、可作动词）——指人迟到，电车晚点用「遅れる」；「授業に遅刻する」上课迟到；「遅刻しそうだ」快迟到了//(n, suru-verb) being late — of people; trains running late is 「遅れる」; 「授業に遅刻する」 to be late for class; 「遅刻しそうだ」 I'm about to be late |
+| 準備 | じゅんび | 准备（名、可作动词）——「準備ができる」准备好了；「試験の準備」备考//(n, suru-verb) preparation; getting ready — 「準備ができる」 to be ready; 「試験の準備」 exam prep |
+| 説明 | せつめい | 说明；解释（名、可作动词）——「詳しく説明する」详细说明；「説明書」说明书//(n, suru-verb) explanation — 「詳しく説明する」 to explain in detail; 「説明書」 an instruction manual |
+| 間に合う | まにあう | 来得及；赶上；够用（自动词）——「電車に間に合う」赶上电车；「間に合っています」不需要了（谢绝推销）//(v, intrans.) to make it in time; to be enough — 「電車に間に合う」 to catch the train; 「間に合っています」 no thanks, I'm fine (to a salesperson) |
+| 我慢 | がまん | 忍耐；忍受（名、可作动词）——多指忍住疼痛、眼泪、冲动等；「痛みを我慢する」忍痛；「もう我慢できない」再也忍不了了//(n, suru-verb) enduring; putting up with — pain, tears, urges; 「痛みを我慢する」 to bear the pain; 「もう我慢できない」 I can't stand it anymore |
+| 途中 | とちゅう | 半路；中途（名）——「帰る途中」回家路上；「途中でやめる」半途而废//(n) on the way; in the middle (of) — 「帰る途中」 on the way home; 「途中でやめる」 to quit halfway |
+| 片付ける | かたづける | 收拾；整理；处理完（他动词）——自动词是「片付く」；「部屋を片付ける」收拾房间；「仕事を片付ける」把工作处理掉//(v, trans.) to tidy up; to put away; to finish off — intransitive pair 「片付く」; 「部屋を片付ける」 to tidy one's room; 「仕事を片付ける」 to get work out of the way |
+| 慣れる | なれる | 习惯；适应（自动词）——对象用「に」；「仕事に慣れる」习惯工作；「日本の生活に慣れる」适应日本生活//(v, intrans.) to get used to — the thing takes 「に」; 「仕事に慣れる」 to get used to the job; 「日本の生活に慣れる」 to get used to life in Japan |
+| 諦める | あきらめる | 放弃；死心（他动词）——接受得不到的现实，单纯停止用「やめる」；「夢を諦める」放弃梦想；「最後まで諦めない」坚持到底不放弃//(v, trans.) to give up — accepting it's out of reach; simply stopping is 「やめる」; 「夢を諦める」 to give up on a dream; 「最後まで諦めない」 to never give up |
+| 心配 | しんぱい | 担心；挂念（名、可作动词、形容动词）——「将来を心配する」担心将来；「心配をかける」让人担心//(n, suru-verb, na-adj) worry; concern — 「将来を心配する」 to worry about the future; 「心配をかける」 to make others worry |
+| 無理 | むり | 不可能；勉强（形容动词、名）——「無理をする」勉强自己；「無理しないで」别太勉强//(na-adj, n) impossible; overdoing it — 「無理をする」 to push oneself too hard; 「無理しないで」 don't overdo it |
 
 ---
 

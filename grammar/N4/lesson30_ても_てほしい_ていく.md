@@ -12,22 +12,22 @@ This lesson covers five common patterns built on the て-form (or adjectives): �
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 台風 | たいふう | 台风（名）//(n) typhoon — numbered each year (typhoon No. 10); the season peaks August to October |
-| 値段 | ねだん | 价格；价钱（名）//(n) price; cost — the everyday word; kakaku is formal; nedan ga takai = expensive |
-| 人口 | じんこう | 人口（名）//(n) population — of a country or city; jinkou ga heru = the population is shrinking |
-| 減る | へる | 减少（自动词）//(v, intrans.) to decrease; to go down — numbers, amounts; transitive pair: herasu; onaka ga heru = get hungry |
-| 増える | ふえる | 增加（自动词）//(v, intrans.) to increase; to grow (in number) — population, weight, numbers; transitive pair: fuyasu |
-| 暖かい | あたたかい | 暖和；温暖（形容词）//(i-adj) warm (weather, air) — pleasant warmth; warm things you touch (water, food) use another kanji |
-| 気温 | きおん | 气温（名）//(n) (air) temperature — outdoor air only; body temperature is taion, water temperature suion |
-| 将来 | しょうらい | 将来；未来（名、副词）//(n, adv) future; in the future — one's personal future: shourai no yume = dream for the future |
-| 怖い | こわい | 可怕；害怕（形容词）//(i-adj) scary; frightening; afraid — "I'm scared of X" is X ga kowai |
-| 嫌がる | いやがる | （表现出）不愿意；讨厌（他动词）//(v, trans.) to show dislike; to be unwilling — describes someone else's visible dislike; for yourself say iya da |
-| 羨ましい | うらやましい | 羡慕（形容词）//(i-adj) envious; enviable — urayamashii! = lucky you!; envy of someone's luck, not romantic jealousy (shitto) |
-| 届ける | とどける | 送到；递交；报告（他动词）//(v, trans.) to deliver; to take (something) to; to report — also hand in a lost item to the police (keisatsu ni todokeru) |
-| 持っていく | もっていく | 带去；拿去（他动词）//(v, trans.) to take (something) along — carrying it away from here |
-| 持ってくる | もってくる | 带来；拿来（他动词）//(v, trans.) to bring (something) here; to fetch — carrying it toward the speaker |
-| 太る | ふとる | 发胖；变胖（自动词）//(v, intrans.) to gain weight; to get fat — "is fat" is futotte iru, the progressive form |
-| 痩せる | やせる | 变瘦；减肥（自动词）//(v, intrans.) to lose weight; to get thin — "is thin" is yasete iru, the progressive form |
+| 台風 | たいふう | 台风（名）——「台風が来る」台风要来；「台風10号」第10号台风//(n) typhoon — numbered each year; 「台風が来る」 a typhoon is coming; 「台風10号」 Typhoon No. 10 |
+| 値段 | ねだん | 价格（名）——日常用词，正式说「価格」；「値段が高い」价格贵；「値段の割に」就价格而言//(n) price — everyday word; formal is 「価格」; 「値段が高い」 expensive; 「値段の割に」 for the price |
+| 人口 | じんこう | 人口（名）——「人口が減る」人口减少；「人口が多い」人口多//(n) population — 「人口が減る」 the population shrinks; 「人口が多い」 to have a large population |
+| 減る | へる | 减少（自动词）——他动词是「減らす」；「人口が減る」人口减少；「お腹が減る」肚子饿//(v, intrans.) to decrease; to go down — transitive pair: 「減らす」; 「人口が減る」 the population falls; 「お腹が減る」 to get hungry |
+| 増える | ふえる | 增加（自动词）——他动词是「増やす」；「体重が増える」体重增加；「〜する人が増える」……的人变多//(v, intrans.) to increase — transitive pair: 「増やす」; 「体重が増える」 to gain weight; 「〜する人が増える」 more people do ~ |
+| 暖かい | あたたかい | 暖和；温暖（形容词）——指天气、气温，摸得到的东西暖写作「温かい」；「暖かくなる」变暖和；「暖かい部屋」暖和的房间//(i-adj) warm (weather, air) — warm things you touch are written 「温かい」; 「暖かくなる」 to get warmer; 「暖かい部屋」 a warm room |
+| 気温 | きおん | 气温（名）——只指空气温度，体温是「体温」；「気温が上がる」气温上升；「気温が下がる」气温下降//(n) (air) temperature — outdoor air only; body temperature is 「体温」; 「気温が上がる」 the temperature rises; 「気温が下がる」 the temperature drops |
+| 将来 | しょうらい | 将来；未来（名、副词）——指个人的未来；「将来の夢」将来的梦想；「将来、医者になりたい」将来想当医生//(n, adv) future; in the future — one's own future; 「将来の夢」 one's dream for the future; 「将来、医者になりたい」 I want to be a doctor someday |
+| 怖い | こわい | 可怕；害怕（形容词）——害怕的对象用「が」；「犬が怖い」怕狗；「怖い話」恐怖故事//(i-adj) scary; afraid — the thing feared takes 「が」; 「犬が怖い」 to be scared of dogs; 「怖い話」 a scary story |
+| 嫌がる | いやがる | （表现出）不愿意；讨厌（他动词）——描述别人流露出的讨厌，自己用「嫌だ」；「子供が薬を嫌がる」孩子不肯吃药；「嫌がられる」惹人嫌//(v, trans.) to show dislike; to be unwilling — someone else's visible reluctance; for yourself say 「嫌だ」; 「子供が薬を嫌がる」 the child won't take medicine; 「嫌がられる」 to be found annoying |
+| 羨ましい | うらやましい | 羡慕（形容词）——是羡慕，不是嫉妒；「羨ましい！」真羡慕！；「人を羨ましがる」羡慕别人//(i-adj) envious; enviable — envy of luck, not romantic jealousy; 「羨ましい！」 lucky you!; 「人を羨ましがる」 to envy others |
+| 届ける | とどける | 送到；交给；申报（他动词）——「荷物を届ける」送包裹；「警察に届ける」交给警察、报警//(v, trans.) to deliver; to take (something) to; to report — 「荷物を届ける」 to deliver a package; 「警察に届ける」 to hand in to / report to the police |
+| 持っていく | もっていく | 带去；拿去（他动词）——从这里带走；「傘を持っていく」带伞去；「お弁当を持っていく」带便当去//(v, trans.) to take (something) along — away from here; 「傘を持っていく」 to take an umbrella; 「お弁当を持っていく」 to take a packed lunch |
+| 持ってくる | もってくる | 带来；拿来（他动词）——朝说话人方向带；「傘を持ってくる」带伞来；「持ってきてください」请拿过来//(v, trans.) to bring (something); to fetch — toward the speaker; 「傘を持ってくる」 to bring an umbrella; 「持ってきてください」 please bring it |
+| 太る | ふとる | 发胖（自动词）——“胖”的状态用「太っている」；「3キロ太る」胖了三公斤；「太りやすい」容易胖//(v, intrans.) to gain weight — "is fat" is 「太っている」; 「3キロ太る」 to put on 3 kg; 「太りやすい」 to gain weight easily |
+| 痩せる | やせる | 变瘦（自动词）——“瘦”的状态用「痩せている」；「5キロ痩せる」瘦了五公斤；「痩せている人」瘦的人//(v, intrans.) to lose weight; to get thin — "is thin" is 「痩せている」; 「5キロ痩せる」 to lose 5 kg; 「痩せている人」 a thin person |
 
 ---
 

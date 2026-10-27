@@ -12,36 +12,36 @@ This lesson covers a lot of ground and is spread over two days. All of these gra
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 天気予報 | てんきよほう | 天气预报（名）//(n) weather forecast — tenki yohou ni yoru to = according to the forecast, a classic hearsay frame |
-| 大丈夫 | だいじょうぶ | 没问题；不要紧（形容动词）——不是“男子汉”；也常用来委婉拒绝//(na-adj) all right; OK; no problem — also a polite "no thanks" (daijoubu desu) |
-| 日曜日 | にちようび | 星期天（名）//(n) Sunday |
-| 間違い | まちがい | 错误；差错（名）//(n) mistake; error — machigai nai = definitely, no doubt about it; the verb is machigaeru (make a mistake) |
-| 確認 | かくにん | 确认；核实（名、可作动词）//(n, suru-verb) confirmation; checking; verification — double-checking facts, schedules or documents; constant at work |
-| 本当 | ほんとう | 真的；真实（名、形容动词）//(n, na-adj) true; real; really — "really?" is hontou?; adverb hontou ni |
-| 落ちる | おちる | 掉落；（考试）落榜（自动词）//(v, intrans.) to fall; to drop; to fail (an exam) — ichidan verb; shiken ni ochiru = fail an exam |
-| 空 | そら | 天空（名）//(n) sky — the same kanji read kara means "empty" |
-| 暗い | くらい | 暗；阴郁（形容词）//(i-adj) dark; gloomy — also a gloomy personality |
-| 病気 | びょうき | 病；疾病（名）//(n) illness; sickness; disease — byouki ni naru = get sick |
-| 税金 | ぜいきん | 税；税款（名）//(n) tax; taxes — "tax goes up" is zeikin ga agaru |
-| 上がる | あがる | 上升；上涨（自动词）//(v, intrans.) to go up; to rise — prices, temperature; also "come in" to a house |
-| 怒る | おこる | 生气；发火（自动词）——也可表示“批评、骂”//(v, intrans.) to get angry; to scold — okorareru = get told off; shikaru is deliberate scolding to correct someone |
-| 事故 | じこ | 事故（名）//(n) accident; incident — traffic or industrial accidents; jiko ni au = have an accident |
-| 発想 | はっそう | 想法；创意（名）//(n) idea; way of thinking; concept — a creative angle on something |
-| 行動 | こうどう | 行动；行为（名、可作动词）//(n, suru-verb) action; behavior; conduct — what someone actually does |
-| 白い | しろい | 白；白色的（形容词）//(i-adj) white — the noun is shiro |
-| 忘れる | わすれる | 忘记；忘带（他动词）//(v, trans.) to forget; to leave (something) behind — kasa o wasureta = I left my umbrella behind |
-| 飽きる | あきる | 厌倦；腻了（自动词）//(v, intrans.) to get tired of; to get bored with — after too much of the same thing; the thing takes ni (ni akiru) |
-| 性格 | せいかく | 性格；脾气（名）//(n) personality; character; nature — seikaku ga ii = good-natured; seikaku ga awanai = we don't get along |
-| 熱い | あつい | （东西）烫；热；热情（形容词）——摸着烫，天气热用另一个词//(i-adj) hot (to the touch); passionate — tea, a bath; hot weather is the homophone atsui (hot air) |
-| 具合 | ぐあい | （身体）情况；状态（名）//(n) condition; state (of health, a machine) — "feel unwell" is guai ga warui |
-| 泣く | なく | 哭；哭泣（自动词）//(v, intrans.) to cry; to weep — of people; animals and birds use a homophone written with another kanji (naku, to chirp or bark) |
-| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取//(n, suru-verb) passing (an exam); being accepted (to a school) — shiken ni goukaku suru = pass an exam; mainly exams and admissions |
-| 渋滞 | じゅうたい | 堵车；交通拥堵（名、可作动词）//(n, suru-verb) traffic jam; congestion — on roads; juutai ni makikomareru = get stuck in traffic, the classic excuse for being late |
-| 倒れる | たおれる | 倒下；病倒（自动词）//(v, intrans.) to fall over; to collapse — trees in wind, or a person fainting from illness |
-| 噂 | うわさ | 传闻；谣言（名）//(n) rumor; gossip; hearsay — uwasa ni yoru to = rumor has it; often paired with rashii |
-| 迷子 | まいご | 走失的孩子；迷路（名）//(n) lost child; getting lost — "get lost" is maigo ni naru (also adults, jokingly) |
-| 景色 | けしき | 景色；风景（名）//(n) scenery; view; landscape — natural or city views, e.g. from a mountain top or a window |
-| 優しい | やさしい | 温柔；和善（形容词）//(i-adj) kind; gentle; tender — about personality; easy is a homophone with another kanji |
+| 天気予報 | てんきよほう | 天气预报（名）——「天気予報によると」据天气预报；「天気予報が外れる」天气预报不准//(n) weather forecast — 「天気予報によると」 according to the forecast; 「天気予報が外れる」 the forecast is wrong |
+| 大丈夫 | だいじょうぶ | 没问题；不要紧（形容动词）——不是“男子汉”；也常用来委婉拒绝；「大丈夫ですか」没事吧//(na-adj) all right; OK — also a polite "no thanks"; 「大丈夫ですか」 are you OK? |
+| 日曜日 | にちようび | 星期天（名）——「日曜日に」在星期天//(n) Sunday — 「日曜日に」 on Sunday |
+| 間違い | まちがい | 错误；差错（名）——「間違いない」肯定没错；「間違いを直す」改正错误//(n) mistake; error — 「間違いない」 definitely, no doubt; 「間違いを直す」 to correct a mistake |
+| 確認 | かくにん | 确认（名、可作动词）——「予定を確認する」确认日程；「念のため確認する」保险起见再确认一下//(n, suru-verb) confirmation; checking — 「予定を確認する」 to check the schedule; 「念のため確認する」 to double-check just in case |
+| 本当 | ほんとう | 真的；真实（名、形容动词）——「本当に」真的；「本当ですか」真的吗//(n, na-adj) true; real — 「本当に」 really; 「本当ですか」 really? |
+| 落ちる | おちる | 掉落；（考试）落榜（自动词）——「試験に落ちる」考试没过；「木から落ちる」从树上掉下来//(v, intrans.) to fall; to drop; to fail (an exam) — 「試験に落ちる」 to fail an exam; 「木から落ちる」 to fall from a tree |
+| 空 | そら | 天空（名）——「青い空」蓝天；「空が暗い」天色阴暗//(n) sky — 「青い空」 a blue sky; 「空が暗い」 the sky is dark |
+| 暗い | くらい | 暗；阴郁（形容词）——也指性格阴沉；「部屋が暗い」房间暗；「暗い顔」愁眉苦脸//(i-adj) dark; gloomy — also a gloomy personality; 「部屋が暗い」 the room is dark; 「暗い顔」 a gloomy face |
+| 病気 | びょうき | 病；疾病（名）——「病気になる」生病；「病気が治る」病好了//(n) illness; sickness — 「病気になる」 to get sick; 「病気が治る」 to recover |
+| 税金 | ぜいきん | 税；税款（名）——「税金が上がる」税涨了；「税金を払う」纳税//(n) tax — 「税金が上がる」 taxes go up; 「税金を払う」 to pay taxes |
+| 上がる | あがる | 上升；上涨（自动词）——也指进别人家；「値段が上がる」涨价；「どうぞ上がってください」请进//(v, intrans.) to go up; to rise; to come in (a home) — 「値段が上がる」 prices rise; 「どうぞ上がってください」 please come in |
+| 怒る | おこる | 生气；发火；骂（自动词）——为纠正而训斥是「叱る」；「先生に怒られる」被老师骂；「怒りっぽい」爱发火//(v, intrans.) to get angry; to tell off — deliberate correcting is 「叱る」; 「先生に怒られる」 to get told off by the teacher; 「怒りっぽい」 short-tempered |
+| 事故 | じこ | 事故（名）——「事故に遭う」遇到事故；「交通事故」交通事故//(n) accident — 「事故に遭う」 to be in an accident; 「交通事故」 a traffic accident |
+| 発想 | はっそう | 想法；构思（名）——指新颖的思路；「面白い発想」有意思的想法//(n) idea; way of thinking — a creative angle; 「面白い発想」 an interesting idea |
+| 行動 | こうどう | 行动；行为（名、可作动词）——「行動に移す」付诸行动；「すぐ行動する」马上行动//(n, suru-verb) action; behavior — what someone actually does; 「行動に移す」 to put into action; 「すぐ行動する」 to act at once |
+| 白い | しろい | 白；白色的（形容词）——名词是「白」；「白い雪」白雪//(i-adj) white — the noun is 「白」; 「白い雪」 white snow |
+| 忘れる | わすれる | 忘记；忘带（他动词）——东西落下也用；「傘を忘れる」忘带伞；「名前を忘れる」忘了名字//(v, trans.) to forget; to leave behind — 「傘を忘れる」 to leave one's umbrella behind; 「名前を忘れる」 to forget a name |
+| 飽きる | あきる | 腻；厌倦（自动词）——对象用「に」；「ゲームに飽きる」玩腻了游戏；「飽きっぽい」没长性//(v, intrans.) to get tired of; to get bored with — the thing takes 「に」; 「ゲームに飽きる」 to get bored of a game; 「飽きっぽい」 quick to lose interest |
+| 性格 | せいかく | 性格；脾气（名）——「性格がいい」性格好；「性格が合わない」性格不合//(n) personality; character — 「性格がいい」 good-natured; 「性格が合わない」 to not get along |
+| 熱い | あつい | （东西）烫；热；热情（形容词）——摸着烫，天气热写作「暑い」；「熱いお茶」热茶//(i-adj) hot (to the touch); passionate — hot weather is 「暑い」; 「熱いお茶」 hot tea |
+| 具合 | ぐあい | （身体、机器）状况（名）——「具合が悪い」身体不舒服；「具合はどう」感觉怎么样//(n) condition; state (of health, a machine) — 「具合が悪い」 to feel unwell; 「具合はどう」 how are you feeling? |
+| 泣く | なく | 哭；哭泣（自动词）——用于人，动物鸣叫写作「鳴く」；「赤ちゃんが泣く」婴儿哭；「泣き出す」哭起来//(v, intrans.) to cry; to weep — of people; animals' cries are written 「鳴く」; 「赤ちゃんが泣く」 a baby cries; 「泣き出す」 to burst into tears |
+| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取；「試験に合格する」考试合格；「大学に合格する」考上大学//(n, suru-verb) passing (an exam); being accepted — 「試験に合格する」 to pass an exam; 「大学に合格する」 to get into a university |
+| 渋滞 | じゅうたい | 堵车；交通拥堵（名、可作动词）——「渋滞に巻き込まれる」遇上堵车；「交通渋滞」交通拥堵//(n, suru-verb) traffic jam — 「渋滞に巻き込まれる」 to get stuck in traffic; 「交通渋滞」 traffic congestion |
+| 倒れる | たおれる | 倒下；病倒（自动词）——「木が倒れる」树倒了；「病気で倒れる」病倒//(v, intrans.) to fall over; to collapse — 「木が倒れる」 a tree falls; 「病気で倒れる」 to collapse from illness |
+| 噂 | うわさ | 传闻；谣言（名）——「噂によると」据传闻；「噂が広がる」传闻扩散//(n) rumor; gossip — 「噂によると」 rumor has it; 「噂が広がる」 a rumor spreads |
+| 迷子 | まいご | 走失的孩子；迷路（名）——大人也可开玩笑地说；「迷子になる」迷路//(n) lost child; getting lost — adults use it jokingly too; 「迷子になる」 to get lost |
+| 景色 | けしき | 景色；风景（名）——「景色がいい」风景好；「窓からの景色」窗外的景色//(n) scenery; view — 「景色がいい」 the view is lovely; 「窓からの景色」 the view from the window |
+| 優しい | やさしい | 温柔；和善（形容词）——指性格，“容易”写作「易しい」；「優しい人」温柔的人//(i-adj) kind; gentle — about personality; "easy" is the homophone 「易しい」; 「優しい人」 a kind person |
 
 ---
 

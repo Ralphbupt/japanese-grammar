@@ -12,23 +12,23 @@ This group describes states and appearances: maintaining a condition, being cove
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 電気 | でんき | 电；电灯（名）——口语中常指“灯”//(n) electricity; (electric) light — in daily speech often "the lights": denki o tsukeru / kesu = turn the lights on / off |
-| 靴 | くつ | 鞋（名）//(n) shoes — taken off at the entrance of Japanese homes: kutsu o nugu |
-| 窓 | まど | 窗户（名）//(n) window — madoguchi = service counter (at a bank or city hall) |
-| 泥 | どろ | 泥（名）//(n) mud — doro darake = covered in mud |
-| 傷 | きず | 伤；划痕（名）//(n) wound; injury; scratch — also scratches on objects; kizu darake = scratched all over |
-| 間違い | まちがい | 错误；差错（名）//(n) mistake; error — machigai nai = definitely, no doubt about it; the verb is machigaeru (make a mistake) |
-| 蛇口 | じゃぐち | 水龙头（名）//(n) faucet; tap — jaguchi o shimeru = turn off the tap |
-| 出しっぱなし | だしっぱなし | 开着不关；放着不管（名）//(n) left running (of water); left out — dasu + -ppanashi (left as is, negative nuance) |
-| 若い | わかい | 年轻的（形容词）//(i-adj) young; youthful; inexperienced — of people; a lower number is also wakai (wakai bangou) |
-| 健康 | けんこう | 健康（名、形容动词）//(n, na-adj) health; healthy — physical health; kenkou ni ii = good for your health |
-| 幸せ | しあわせ | 幸福；幸运（形容动词、名）——指持久的幸福感//(na-adj, n) happy; happiness; good fortune — lasting well-being, not a one-off thrill (that is ureshii); koufuku is the formal equivalent |
-| 朝食 | ちょうしょく | 早餐（名）//(n) breakfast; morning meal — formal or written; everyday speech says asagohan |
-| 出勤 | しゅっきん | 上班（名、可作动词）//(n, suru-verb) going to work; reporting for work — arriving at the office; taikin = leaving work |
-| ほこり | ほこり | 灰尘（名）//(n) dust — hokori darake = covered in dust; homophone: pride (different kanji) |
-| 散らかる | ちらかる | 凌乱；乱七八糟（自动词）//(v, intrans.) to be messy; to be cluttered; to be scattered — of a room; transitive: chirakasu (make a mess) |
-| 元気 | げんき | 精神；健康（形容动词、名）//(na-adj, n) healthy; energetic; well — o-genki desu ka = how are you?; genki ga nai = feeling down |
-| 不安 | ふあん | 不安；担心（名、形容动词）//(n, na-adj) anxiety; unease; insecurity — a vague worry about the future; shinpai is concern about a specific thing |
+| 電気 | でんき | 电；电灯（名）——口语中常指“灯”；「電気をつける」开灯；「電気を消す」关灯//(n) electricity; the lights — 「電気をつける」 to turn on the lights; 「電気を消す」 to turn off the lights |
+| 靴 | くつ | 鞋（名）——日本进门要脱鞋；「靴を脱ぐ」脱鞋；「靴を履く」穿鞋//(n) shoes — taken off indoors in Japan; 「靴を脱ぐ」 to take off one's shoes; 「靴を履く」 to put on shoes |
+| 窓 | まど | 窗户（名）——「窓を開ける」开窗；「窓口」（银行、政府的）窗口//(n) window — 「窓を開ける」 to open the window; 「窓口」 a service counter (bank, city hall) |
+| 泥 | どろ | 泥（名）——「泥だらけ」满是泥；「泥がつく」沾上泥//(n) mud — 「泥だらけ」 covered in mud; 「泥がつく」 to get muddy |
+| 傷 | きず | 伤；划痕（名）——也指物品上的划痕；「傷だらけ」满是伤痕；「傷がつく」留下划痕//(n) wound; scratch — on people or objects; 「傷だらけ」 covered in scratches; 「傷がつく」 to get scratched |
+| 間違い | まちがい | 错误；差错（名）——「間違いない」肯定没错；「間違いを直す」改正错误//(n) mistake; error — 「間違いない」 definitely, no doubt; 「間違いを直す」 to correct a mistake |
+| 蛇口 | じゃぐち | 水龙头（名）——「蛇口をひねる」拧水龙头；「蛇口を閉める」关水龙头//(n) faucet; tap — 「蛇口をひねる」 to turn on the tap; 「蛇口を閉める」 to turn off the tap |
+| 出しっぱなし | だしっぱなし | 开着不关；放着不管（名）——「っぱなし」表示该收拾的没收拾，含负面语气；「水を出しっぱなしにする」让水一直开着；「服を出しっぱなし」衣服乱放//(n) left running; left out — 「っぱなし」 means left that way, with a disapproving tone; 「水を出しっぱなしにする」 to leave the water running; 「服を出しっぱなし」 clothes left lying out |
+| 若い | わかい | 年轻（形容词）——「若い人」年轻人；「年より若く見える」显得比实际年轻//(i-adj) young — 「若い人」 young people; 「年より若く見える」 to look young for one's age |
+| 健康 | けんこう | 健康（名、形容动词）——「健康にいい」对健康有益；「健康診断」体检//(n, na-adj) health; healthy — 「健康にいい」 good for your health; 「健康診断」 a health checkup |
+| 幸せ | しあわせ | 幸福（形容动词、名）——持久的幸福感，一时的高兴用「嬉しい」；「幸せになる」变得幸福；「幸せな家庭」幸福的家庭//(na-adj, n) happy; happiness — lasting well-being; a one-off happy moment is 「嬉しい」; 「幸せになる」 to find happiness; 「幸せな家庭」 a happy family |
+| 朝食 | ちょうしょく | 早餐（名）——书面语，口语说「朝ご飯」；「朝食付き」含早餐；「朝食をとる」吃早饭//(n) breakfast — formal; everyday speech says 「朝ご飯」; 「朝食付き」 breakfast included; 「朝食をとる」 to have breakfast |
+| 出勤 | しゅっきん | 上班（名、可作动词）——反义是「退勤」；「会社に出勤する」到公司上班；「出勤時間」上班时间//(n, suru-verb) going to work — opposite: 「退勤」; 「会社に出勤する」 to go into the office; 「出勤時間」 start time at work |
+| ほこり | ほこり | 灰尘（名）——汉字写作「埃」；「ほこりだらけ」满是灰尘；「ほこりがたまる」积灰//(n) dust — 「ほこりだらけ」 covered in dust; 「ほこりがたまる」 dust builds up |
+| 散らかる | ちらかる | 凌乱（自动词）——他动词是「散らかす」；「部屋が散らかっている」房间很乱；「散らかったまま」乱着不收拾//(v, intrans.) to be messy; to be scattered — transitive: 「散らかす」; 「部屋が散らかっている」 the room is a mess; 「散らかったまま」 left in a mess |
+| 元気 | げんき | 精神；健康（形容动词、名）——「お元気ですか」您好吗；「元気がない」没精神//(na-adj, n) healthy; energetic; well — 「お元気ですか」 how are you?; 「元気がない」 to seem down |
+| 不安 | ふあん | 不安；担心（名、形容动词）——对未来模糊的担忧，具体的担心多用「心配」；「不安になる」感到不安；「将来が不安だ」对未来感到不安//(n, na-adj) anxiety; unease — a vague worry, often about the future; a specific worry is 「心配」; 「不安になる」 to get anxious; 「将来が不安だ」 to be anxious about the future |
 
 ---
 

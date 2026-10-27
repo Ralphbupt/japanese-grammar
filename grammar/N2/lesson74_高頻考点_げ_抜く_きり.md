@@ -12,24 +12,24 @@ This lesson brings together 6 grammar points that appear very frequently on the 
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 寂しい | さびしい | 寂寞的；孤单的（形容词）//(i-adj) lonely; lonesome; desolate — missing someone; also of places: deserted |
-| 悲しい | かなしい | 悲伤的；伤心的（形容词）//(i-adj) sad; sorrowful — sadness itself; sabishii is loneliness |
-| 嬉しい | うれしい | 高兴；开心（形容词）//(i-adj) happy; glad; pleased — about something good that happens to you; tanoshii is enjoying an activity, shiawase lasting happiness |
-| 不安 | ふあん | 不安；担心（名、形容动词）//(n, na-adj) anxiety; unease; insecurity — a vague worry about the future; shinpai is concern about a specific thing |
-| 自信 | じしん | 自信；信心（名）//(n) confidence; self-confidence — "have confidence", "lack confidence" |
-| 完走 | かんそう | 跑完全程（名、可作动词）//(n, suru-verb) finishing a race; running the full course — marathon finishers |
-| マラソン | まらそん | 马拉松（名）//(n) marathon |
-| 走り抜く | はしりぬく | 跑完全程；坚持跑到底（自动词）//(v, intrans.) to run all the way; to run to the finish — -nuku stresses pushing through hardship to the end |
-| 事情 | じじょう | 情况；缘由（名）——不是“事情（事儿）”//(n) circumstances; situation; reasons — "due to circumstances"; personal reasons |
-| 経緯 | けいい | 原委；经过（名）//(n) background; how something came about; course of events — formal; explaining the background |
-| 結果 | けっか | 结果（名）//(n) result; outcome; consequence — exam results or the outcome of a cause; kekka-teki ni = as a result |
-| 天候 | てんこう | 天气；气候（名）//(n) weather (conditions) — formal; "depending on the weather" |
-| 同窓会 | どうそうかい | 同学会；校友会（名）//(n) class reunion; alumni association |
-| 故郷 | こきょう | 故乡；家乡（名）//(n) hometown; birthplace; home — emotional, literary word |
-| 久しぶり | ひさしぶり | 好久不见；隔了很久（名、形容动词）//(n, na-adj) a long time since last; long time no see — o-hisashiburi desu = it's been a while; hisashiburi ni = for the first time in ages |
-| 定員 | ていいん | 定员；名额（名）//(n) capacity; maximum number (of people) — seat or enrollment limit |
-| 駐車場 | ちゅうしゃじょう | 停车场（名）//(n) parking lot; car park |
-| 一台 | いちだい | 一辆；一台（数量词）//(counter) one (vehicle or machine) — counter for cars, machines, computers |
+| 寂しい | さびしい | 寂寞；冷清（形容词）——「一人で寂しい」一个人很寂寞；「寂しい町」冷清的小镇//(i-adj) lonely; deserted — 「一人で寂しい」 lonely on one's own; 「寂しい町」 a desolate town |
+| 悲しい | かなしい | 悲伤（形容词）——孤单寂寞用「寂しい」；「悲しいニュース」悲伤的消息；「悲しい顔」伤心的表情//(i-adj) sad — loneliness is 「寂しい」; 「悲しいニュース」 sad news; 「悲しい顔」 a sad face |
+| 嬉しい | うれしい | 高兴（形容词）——对发生在自己身上的好事，享受活动用「楽しい」；「嬉しい知らせ」好消息；「来てくれて嬉しい」你能来我很高兴//(i-adj) happy; glad — about something good that happens; enjoying an activity is 「楽しい」; 「嬉しい知らせ」 good news; 「来てくれて嬉しい」 I'm glad you came |
+| 不安 | ふあん | 不安；担心（名、形容动词）——对未来模糊的担忧，具体的担心多用「心配」；「不安になる」感到不安；「将来が不安だ」对未来感到不安//(n, na-adj) anxiety; unease — a vague worry, often about the future; a specific worry is 「心配」; 「不安になる」 to get anxious; 「将来が不安だ」 to be anxious about the future |
+| 自信 | じしん | 自信；信心（名）——「自信がある」有自信；「自信ありげに」看上去很有把握//(n) confidence — 「自信がある」 to be confident; 「自信ありげに」 with an air of confidence |
+| 完走 | かんそう | 跑完全程（名、可作动词）——「マラソンを完走する」跑完马拉松；「完走者」完赛者//(n, suru-verb) finishing a race — 「マラソンを完走する」 to finish a marathon; 「完走者」 finishers |
+| マラソン | マラソン | 马拉松（名）——「マラソンを走る」跑马拉松；「マラソン大会」马拉松比赛//(n) marathon — 「マラソンを走る」 to run a marathon; 「マラソン大会」 a marathon race |
+| 走り抜く | はしりぬく | 跑完全程；坚持跑到底（自动词）——「抜く」强调克服困难坚持到底；「最後まで走り抜く」坚持跑到最后//(v, intrans.) to run all the way; to keep running to the end — 「抜く」 stresses pushing through to the end; 「最後まで走り抜く」 to run right to the finish |
+| 事情 | じじょう | 情况；缘由（名）——不是中文“事情（事儿）”；「事情がある」有特殊原因；「家庭の事情で」因家里的原因//(n) circumstances; reasons — 「事情がある」 to have one's reasons; 「家庭の事情で」 for family reasons |
+| 経緯 | けいい | 原委；经过（名）——书面语；「事件の経緯」事件的来龙去脉；「経緯を説明する」说明经过//(n) background; how it came about — formal; 「事件の経緯」 how the incident unfolded; 「経緯を説明する」 to explain what happened |
+| 結果 | けっか | 结果（名）——「試験の結果」考试结果；「結果的に」结果，最终//(n) result; outcome — 「試験の結果」 exam results; 「結果的に」 in the end, as it turned out |
+| 天候 | てんこう | 天气；气候（名）——比「天気」正式；「天候に恵まれる」天公作美；「悪天候」恶劣天气//(n) weather (conditions) — more formal than 「天気」; 「天候に恵まれる」 to be blessed with good weather; 「悪天候」 bad weather |
+| 同窓会 | どうそうかい | 同学会；校友会（名）——「同窓会に出る」参加同学聚会；「高校の同窓会」高中同学会//(n) class reunion; alumni association — 「同窓会に出る」 to go to a reunion; 「高校の同窓会」 a high-school reunion |
+| 故郷 | こきょう | 故乡；家乡（名）——带感情色彩的书面说法；「故郷に帰る」回故乡；「故郷を離れる」离开家乡//(n) hometown; birthplace — emotional, literary word; 「故郷に帰る」 to go back home; 「故郷を離れる」 to leave home |
+| 久しぶり | ひさしぶり | 好久不见；隔了很久（名、形容动词）——「お久しぶりです」好久不见；「久しぶりに会う」隔了很久再见//(n, na-adj) a long time since — 「お久しぶりです」 long time no see; 「久しぶりに会う」 to meet for the first time in ages |
+| 定員 | ていいん | 定员；名额（名）——「定員に達する」名额已满；「定員オーバー」超员//(n) capacity; maximum number of people — 「定員に達する」 to be full; 「定員オーバー」 over capacity |
+| 駐車場 | ちゅうしゃじょう | 停车场（名）——「駐車場に止める」停在停车场；「無料駐車場」免费停车场//(n) parking lot; car park — 「駐車場に止める」 to park in the lot; 「無料駐車場」 free parking |
+| 一台 | いちだい | 一辆；一台（数量词）——「台」用于车辆、机器；「車一台」一辆车；「一台きり」只有一辆//(counter) one (car or machine) — 「台」 counts vehicles and machines; 「車一台」 one car; 「一台きり」 just the one |
 
 ---
 

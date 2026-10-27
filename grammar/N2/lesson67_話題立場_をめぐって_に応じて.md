@@ -12,24 +12,24 @@ This lesson covers N2 grammar related to "topics," "standpoints," and "condition
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 賛成 | さんせい | 赞成；同意（名、可作动词）//(n, suru-verb) agreement; approval; being in favor — ni sansei suru = agree with (a plan or opinion); opposite of hantai |
-| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）//(n, suru-verb, na-adj) opposition; objection; the opposite — ni hantai suru = be against; also the reverse side or direction (hantai-gawa) |
-| 議論 | ぎろん | 争论；讨论（名、可作动词）//(n, suru-verb) debate; argument; discussion — exchange of views, often formal; not a quarrel |
-| 問題 | もんだい | 问题；题目（名）//(n) problem; issue; question (on a test) — both social issues and exam questions |
-| 性別 | せいべつ | 性别（名）//(n) gender; sex — common on forms; seibetsu o towazu = regardless of gender |
-| 年齢 | ねんれい | 年龄（名）//(n) age (of a person) — formal, used on forms and in rules; everyday speech says toshi; nenrei seigen = age limit |
-| 国籍 | こくせき | 国籍（名）//(n) nationality; citizenship — common on forms; kokuseki o towazu = regardless of nationality |
-| 能力 | のうりょく | 能力（名）//(n) ability; capability; competence — "according to ability", language ability |
-| 需要 | じゅよう | 需求（名）——不是中文动词“需要”//(n) demand (economics); need — paired with supply: juyou to kyoukyuu |
-| 地域 | ちいき | 地区；区域（名）——常指当地社区//(n) region; area; local community — chiiki shakai = the local community; more formal than chihou |
-| 環境 | かんきょう | 环境（名）——既指自然环境，也指工作、学习环境//(n) environment; surroundings; setting — both nature (kankyou mondai = environmental issues) and one's work or study setting |
-| 開発 | かいはつ | 开发；研发（名、可作动词）//(n, suru-verb) development — of land, products or technology; also software development |
-| 政策 | せいさく | 政策（名）//(n) policy (government) — government or party policy; economic policy |
-| 待遇 | たいぐう | 待遇（名）//(n) treatment; pay and working conditions — salary and benefits of a job |
-| 対応 | たいおう | 应对；处理（名、可作动词）//(n, suru-verb) response; dealing with; handling — customers, problems or requests; also "compatible with" (taiou shite iru) |
-| 見直す | みなおす | 重新审视；重新评估（他动词）//(v, trans.) to review; to reconsider; to see in a new light — re-examine a plan or policy; also to think better of a person |
-| 検討 | けんとう | 研究；考虑（名、可作动词）——不是“检讨（反省）”；商务中也常是委婉拒绝//(n, suru-verb) consideration; examination; looking into — kentou shimasu (we'll consider it) is often a polite no in business |
-| 採用 | さいよう | 录用；采用（名、可作动词）//(n, suru-verb) hiring; employment; adoption — hiring staff, adopting an idea or proposal |
+| 賛成 | さんせい | 赞成（名、可作动词）——「意見に賛成する」赞成意见；「賛成多数」多数赞成//(n, suru-verb) agreement; being in favor — 「意見に賛成する」 to agree with an opinion; 「賛成多数」 a majority in favor |
+| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）——「計画に反対する」反对计划；「反対側」对面，相反方向//(n, suru-verb, na-adj) opposition; the opposite — 「計画に反対する」 to oppose a plan; 「反対側」 the opposite side |
+| 議論 | ぎろん | 争论；讨论（名、可作动词）——正式的意见交锋，不是吵架；「議論を呼ぶ」引发争论；「〜をめぐって議論する」围绕……展开讨论//(n, suru-verb) debate; discussion — a formal exchange of views, not a quarrel; 「議論を呼ぶ」 to spark debate; 「〜をめぐって議論する」 to debate over ~ |
+| 問題 | もんだい | 问题；题目（名）——「問題を解く」解题；「社会問題」社会问题//(n) problem; issue; (test) question — 「問題を解く」 to solve a question; 「社会問題」 a social issue |
+| 性別 | せいべつ | 性别（名）——「性別を問わず」不论性别；「性別欄」性别栏//(n) sex; gender — 「性別を問わず」 regardless of gender; 「性別欄」 the gender box on a form |
+| 年齢 | ねんれい | 年龄（名）——正式用语，口语说「年」；「年齢を問わず」不论年龄；「年齢制限」年龄限制//(n) age — formal; everyday speech says 「年」; 「年齢を問わず」 regardless of age; 「年齢制限」 an age limit |
+| 国籍 | こくせき | 国籍（名）——「国籍を問わず」不论国籍；「日本国籍を取る」取得日本国籍//(n) nationality; citizenship — 「国籍を問わず」 regardless of nationality; 「日本国籍を取る」 to acquire Japanese citizenship |
+| 能力 | のうりょく | 能力（名）——「能力に応じて」根据能力；「日本語能力試験」日语能力考试//(n) ability; capability — 「能力に応じて」 according to ability; 「日本語能力試験」 the JLPT |
+| 需要 | じゅよう | 需求（名）——不是中文动词“需要”；「需要と供給」供求；「需要が高まる」需求增加//(n) demand (economics) — 「需要と供給」 supply and demand; 「需要が高まる」 demand grows |
+| 地域 | ちいき | 地区；区域（名）——常指当地社区；「地域社会」当地社区；「地域によって違う」因地区而异//(n) region; area; local community — 「地域社会」 the local community; 「地域によって違う」 it varies by region |
+| 環境 | かんきょう | 环境（名）——「環境問題」环境问题；「職場環境」工作环境//(n) environment; surroundings — both nature and the setting you live or work in; 「環境問題」 environmental issues; 「職場環境」 working conditions |
+| 開発 | かいはつ | 开发；研发（名、可作动词）——「新製品を開発する」开发新产品；「都市開発」城市开发//(n, suru-verb) development — 「新製品を開発する」 to develop a new product; 「都市開発」 urban development |
+| 政策 | せいさく | 政策（名）——「経済政策」经济政策；「政策を見直す」重新审视政策//(n) (government) policy — 「経済政策」 economic policy; 「政策を見直す」 to review a policy |
+| 待遇 | たいぐう | 待遇（名）——指工资和工作条件；「待遇がいい」待遇好；「待遇改善」改善待遇//(n) pay and conditions; treatment — 「待遇がいい」 well paid with good benefits; 「待遇改善」 better pay and conditions |
+| 対応 | たいおう | 应对；处理（名、可作动词）——「客に対応する」接待顾客；「スマホに対応している」支持手机//(n, suru-verb) response; handling; compatibility — 「客に対応する」 to deal with customers; 「スマホに対応している」 works on smartphones |
+| 見直す | みなおす | 重新审视；重新评估（他动词）——也指对人刮目相看；「計画を見直す」重新审视计划；「彼を見直した」对他刮目相看//(v, trans.) to review; to reconsider; to think better of — 「計画を見直す」 to review a plan; 「彼を見直した」 I see him in a better light now |
+| 検討 | けんとう | 研究；考虑（名、可作动词）——不是“检讨（反省）”，商务中也常是委婉拒绝；「検討します」我们会考虑；「前向きに検討する」积极考虑//(n, suru-verb) consideration; looking into — in business often a polite no; 「検討します」 we'll consider it; 「前向きに検討する」 to consider favorably |
+| 採用 | さいよう | 录用；采用（名、可作动词）——「社員を採用する」录用员工；「案が採用される」方案被采纳//(n, suru-verb) hiring; adoption — 「社員を採用する」 to hire staff; 「案が採用される」 a proposal is adopted |
 
 ---
 

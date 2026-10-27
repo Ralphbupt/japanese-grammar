@@ -4,18 +4,18 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 空 | そら | 天空（名）//(n) sky — the same kanji read kara means "empty" |
-| 病気 | びょうき | 病；疾病（名）//(n) illness; sickness; disease — byouki ni naru = get sick |
-| 上がる | あがる | 上升；上涨（自动词）//(v, intrans.) to go up; to rise — prices, temperature; also "come in" to a house |
-| 事故 | じこ | 事故（名）//(n) accident; incident — traffic or industrial accidents; jiko ni au = have an accident |
-| 発想 | はっそう | 想法；创意（名）//(n) idea; way of thinking; concept — a creative angle on something |
-| 行動 | こうどう | 行动；行为（名、可作动词）//(n, suru-verb) action; behavior; conduct — what someone actually does |
-| 白い | しろい | 白；白色的（形容词）//(i-adj) white — the noun is shiro |
-| 性格 | せいかく | 性格；脾气（名）//(n) personality; character; nature — seikaku ga ii = good-natured; seikaku ga awanai = we don't get along |
-| 具合 | ぐあい | （身体）情况；状态（名）//(n) condition; state (of health, a machine) — "feel unwell" is guai ga warui |
-| 迷子 | まいご | 走失的孩子；迷路（名）//(n) lost child; getting lost — "get lost" is maigo ni naru (also adults, jokingly) |
-| 景色 | けしき | 景色；风景（名）//(n) scenery; view; landscape — natural or city views, e.g. from a mountain top or a window |
-| 優しい | やさしい | 温柔；和善（形容词）//(i-adj) kind; gentle; tender — about personality; easy is a homophone with another kanji |
+| 空 | そら | 天空（名）——「青い空」蓝天；「空が暗い」天色阴暗//(n) sky — 「青い空」 a blue sky; 「空が暗い」 the sky is dark |
+| 病気 | びょうき | 病；疾病（名）——「病気になる」生病；「病気が治る」病好了//(n) illness; sickness — 「病気になる」 to get sick; 「病気が治る」 to recover |
+| 上がる | あがる | 上升；上涨（自动词）——也指进别人家；「値段が上がる」涨价；「どうぞ上がってください」请进//(v, intrans.) to go up; to rise; to come in (a home) — 「値段が上がる」 prices rise; 「どうぞ上がってください」 please come in |
+| 事故 | じこ | 事故（名）——「事故に遭う」遇到事故；「交通事故」交通事故//(n) accident — 「事故に遭う」 to be in an accident; 「交通事故」 a traffic accident |
+| 発想 | はっそう | 想法；构思（名）——指新颖的思路；「面白い発想」有意思的想法//(n) idea; way of thinking — a creative angle; 「面白い発想」 an interesting idea |
+| 行動 | こうどう | 行动；行为（名、可作动词）——「行動に移す」付诸行动；「すぐ行動する」马上行动//(n, suru-verb) action; behavior — what someone actually does; 「行動に移す」 to put into action; 「すぐ行動する」 to act at once |
+| 白い | しろい | 白；白色的（形容词）——名词是「白」；「白い雪」白雪//(i-adj) white — the noun is 「白」; 「白い雪」 white snow |
+| 性格 | せいかく | 性格；脾气（名）——「性格がいい」性格好；「性格が合わない」性格不合//(n) personality; character — 「性格がいい」 good-natured; 「性格が合わない」 to not get along |
+| 具合 | ぐあい | （身体、机器）状况（名）——「具合が悪い」身体不舒服；「具合はどう」感觉怎么样//(n) condition; state (of health, a machine) — 「具合が悪い」 to feel unwell; 「具合はどう」 how are you feeling? |
+| 迷子 | まいご | 走失的孩子；迷路（名）——大人也可开玩笑地说；「迷子になる」迷路//(n) lost child; getting lost — adults use it jokingly too; 「迷子になる」 to get lost |
+| 景色 | けしき | 景色；风景（名）——「景色がいい」风景好；「窓からの景色」窗外的景色//(n) scenery; view — 「景色がいい」 the view is lovely; 「窓からの景色」 the view from the window |
+| 優しい | やさしい | 温柔；和善（形容词）——指性格，“容易”写作「易しい」；「優しい人」温柔的人//(i-adj) kind; gentle — about personality; "easy" is the homophone 「易しい」; 「優しい人」 a kind person |
 
 ## 1. 〜ようだ / 〜ように（推断）||1. 〜ようだ / 〜ように (Inference)
 

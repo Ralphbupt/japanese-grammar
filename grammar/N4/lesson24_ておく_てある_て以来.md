@@ -4,30 +4,30 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 準備 | じゅんび | 准备（名、可作动词）//(n, suru-verb) preparation; getting ready — for events, trips or meals; junbi suru = prepare |
-| 冷蔵庫 | れいぞうこ | 冰箱（名）//(n) refrigerator; fridge — reitouko = freezer |
-| 冷やす | ひやす | 冰镇；冷却（他动词）//(v, trans.) to chill (something); to cool — e.g. putting drinks in the fridge |
-| 予約 | よやく | 预约；预订（名、可作动词）//(n, suru-verb) reservation; booking; appointment — restaurants, hotels, doctors, tickets |
-| 資料 | しりょう | 资料；材料（名）//(n) materials; documents — handouts or reference documents for a meeting or research |
-| 印刷 | いんさつ | 打印；印刷（名、可作动词）//(n, suru-verb) printing — both office printing and printing presses |
-| 充電 | じゅうでん | 充电（名、可作动词）//(n, suru-verb) charging (a battery); to charge — phones, laptops |
-| 窓 | まど | 窗户（名）//(n) window — madoguchi = service counter (at a bank or city hall) |
-| 開ける | あける | 打开（他动词）——人去打开门窗等//(v, trans.) to open (something) — mado o akeru = open the window; intransitive pair: aku (it opens) |
-| 閉める | しめる | 关上（门、窗等）（他动词）//(v, trans.) to close; to shut (something) — doors, windows, lids; lights and switches use kesu; intransitive pair: shimaru |
-| 貼る | はる | 贴；粘贴（他动词）//(v, trans.) to stick; to paste; to put up — posters, stamps, stickers |
-| 並べる | ならべる | 排列；摆放（他动词）//(v, trans.) to line up; to arrange; to set out (in a row) — chairs, dishes, products |
-| 飾る | かざる | 装饰；摆设（他动词）//(v, trans.) to decorate; to display — putting flowers, pictures or ornaments up |
-| 地震 | じしん | 地震（名）//(n) earthquake — jishin ga okiru = an earthquake happens; small ones are often just yureta (it shook) |
-| 気温 | きおん | 气温（名）//(n) (air) temperature — outdoor air only; body temperature is taion, water temperature suion |
-| 出張 | しゅっちょう | 出差（名、可作动词）//(n, suru-verb) business trip — shucchou ni iku = go on a business trip; the destination takes ni |
-| 台風 | たいふう | 台风（名）//(n) typhoon — numbered each year (typhoon No. 10); the season peaks August to October |
-| 被害 | ひがい | 受害；损失（名）——不是“灾害”本身//(n) damage; harm; loss suffered — what victims suffer from a disaster or crime, not the disaster itself; higai o ukeru = suffer damage |
-| 調子 | ちょうし | 状态；情况（名）//(n) condition; (physical) shape — of one's body, a machine or work; choushi ga ii / warui = going well / off |
-| 母校 | ぼこう | 母校（名）//(n) alma mater; one's old school — any school you graduated from |
-| 消す | けす | 关掉；删除；擦掉（他动词）//(v, trans.) to turn off; to erase; to delete — lights, TV, data or writing on a board; denki o kesu = turn off the light |
-| 確認 | かくにん | 确认；核实（名、可作动词）//(n, suru-verb) confirmation; checking; verification — double-checking facts, schedules or documents; constant at work |
-| 戸締まり | とじまり | 锁好门窗（名、可作动词）//(n, suru-verb) locking up — locking all doors and windows before leaving or bed |
-| 花瓶 | かびん | 花瓶（名）//(n) (flower) vase |
+| 準備 | じゅんび | 准备（名、可作动词）——「準備ができる」准备好了；「試験の準備」备考//(n, suru-verb) preparation; getting ready — 「準備ができる」 to be ready; 「試験の準備」 exam prep |
+| 冷蔵庫 | れいぞうこ | 冰箱（名）——「冷蔵庫に入れる」放进冰箱；「冷蔵庫で冷やす」放冰箱冰着//(n) refrigerator; fridge — 「冷蔵庫に入れる」 to put in the fridge; 「冷蔵庫で冷やす」 to chill in the fridge |
+| 冷やす | ひやす | 冰镇；冷却（他动词）——「ビールを冷やす」冰啤酒；「頭を冷やす」冷静一下//(v, trans.) to chill; to cool (something) — 「ビールを冷やす」 to chill beer; 「頭を冷やす」 to cool off, calm down |
+| 予約 | よやく | 预约；预订（名、可作动词）——餐厅、酒店、看病都用；「店を予約する」订餐厅；「予約を取る」预约//(n, suru-verb) reservation; booking; appointment — 「店を予約する」 to book a restaurant; 「予約を取る」 to make an appointment |
+| 資料 | しりょう | 资料；材料（名）——「会議の資料」会议资料；「資料を集める」收集资料//(n) materials; documents — handouts or reference documents; 「会議の資料」 meeting documents; 「資料を集める」 to gather materials |
+| 印刷 | いんさつ | 打印；印刷（名、可作动词）——「資料を印刷する」打印资料；「カラー印刷」彩色打印//(n, suru-verb) printing — office printing and printing presses alike; 「資料を印刷する」 to print documents; 「カラー印刷」 color printing |
+| 充電 | じゅうでん | 充电（名、可作动词）——「スマホを充電する」给手机充电；「充電が切れる」没电了//(n, suru-verb) charging (a battery) — 「スマホを充電する」 to charge one's phone; 「充電が切れる」 the battery dies |
+| 窓 | まど | 窗户（名）——「窓を開ける」开窗；「窓口」（银行、政府的）窗口//(n) window — 「窓を開ける」 to open the window; 「窓口」 a service counter (bank, city hall) |
+| 開ける | あける | 打开（他动词）——自动词是「開く」；「窓を開ける」开窗；「ドアを開けておく」把门开着//(v, trans.) to open (something) — intransitive pair 「開く」; 「窓を開ける」 to open the window; 「ドアを開けておく」 to leave the door open |
+| 閉める | しめる | 关上（他动词）——关灯、电器用「消す」；「ドアを閉める」关门；「店を閉める」关店//(v, trans.) to close; to shut — lights use 「消す」; 「ドアを閉める」 to shut the door; 「店を閉める」 to close the shop |
+| 貼る | はる | 贴；粘贴（他动词）——「ポスターを貼る」贴海报；「切手を貼る」贴邮票//(v, trans.) to stick; to paste; to put up — 「ポスターを貼る」 to put up a poster; 「切手を貼る」 to stick on a stamp |
+| 並べる | ならべる | 排列；摆放（他动词）——「椅子を並べる」摆椅子；「料理を並べる」把菜摆上桌//(v, trans.) to line up; to arrange — 「椅子を並べる」 to set out chairs; 「料理を並べる」 to lay out the dishes |
+| 飾る | かざる | 装饰；摆设（他动词）——「花を飾る」摆花；「部屋に絵を飾る」在房间里挂画//(v, trans.) to decorate; to display — 「花を飾る」 to put out flowers; 「部屋に絵を飾る」 to hang a picture in the room |
+| 地震 | じしん | 地震（名）——「地震が起きる」发生地震；「地震に強い」抗震//(n) earthquake — 「地震が起きる」 an earthquake happens; 「地震に強い」 earthquake-resistant |
+| 気温 | きおん | 气温（名）——只指空气温度，体温是「体温」；「気温が上がる」气温上升；「気温が下がる」气温下降//(n) (air) temperature — outdoor air only; body temperature is 「体温」; 「気温が上がる」 the temperature rises; 「気温が下がる」 the temperature drops |
+| 出張 | しゅっちょう | 出差（名、可作动词）——「大阪に出張する」去大阪出差；「出張中」出差中//(n, suru-verb) business trip — 「大阪に出張する」 to go to Osaka on business; 「出張中」 away on business |
+| 台風 | たいふう | 台风（名）——「台風が来る」台风要来；「台風10号」第10号台风//(n) typhoon — numbered each year; 「台風が来る」 a typhoon is coming; 「台風10号」 Typhoon No. 10 |
+| 被害 | ひがい | 受害；损失（名）——指受到的损害，不是灾害本身；「被害を受ける」受灾、受害；「被害者」受害者//(n) damage; harm (suffered) — what victims suffer, not the disaster itself; 「被害を受ける」 to suffer damage; 「被害者」 a victim |
+| 調子 | ちょうし | 状态；情况（名）——「調子がいい」状态好；「体の調子が悪い」身体不舒服//(n) condition; shape (of body, machine, work) — 「調子がいい」 going well, in good shape; 「体の調子が悪い」 not feeling well |
+| 母校 | ぼこう | 母校（名）——「母校を訪ねる」回母校看看；「母校の先生」母校的老师//(n) alma mater; one's old school — 「母校を訪ねる」 to visit one's old school; 「母校の先生」 a teacher from one's old school |
+| 消す | けす | 关掉；删除；擦掉（他动词）——「電気を消す」关灯；「データを消す」删数据//(v, trans.) to turn off; to erase; to delete — 「電気を消す」 to turn off the light; 「データを消す」 to delete data |
+| 確認 | かくにん | 确认（名、可作动词）——「予定を確認する」确认日程；「念のため確認する」保险起见再确认一下//(n, suru-verb) confirmation; checking — 「予定を確認する」 to check the schedule; 「念のため確認する」 to double-check just in case |
+| 戸締まり | とじまり | 锁好门窗（名、可作动词）——「戸締まりをする」锁好门窗；「戸締まりを確認する」检查门窗锁好没有//(n, suru-verb) locking up (doors and windows) — 「戸締まりをする」 to lock up; 「戸締まりを確認する」 to check everything is locked |
+| 花瓶 | かびん | 花瓶（名）——「花瓶に花を生ける」把花插进花瓶；「花瓶を割る」打碎花瓶//(n) (flower) vase — 「花瓶に花を生ける」 to arrange flowers in a vase; 「花瓶を割る」 to break a vase |
 
 ---
 

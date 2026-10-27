@@ -12,24 +12,24 @@ This lesson covers N3 grammar related to "timing." 「たとたん（に）」 i
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 途端 | とたん | 刚一……就（名）——后接意外发生的事//(n) the (very) moment; just as — ta-form + totan ni: something unexpected happens right after |
-| 次第 | しだい | 一……就；取决于（名）//(n) as soon as (after a verb stem); depending on — stem + shidai = as soon as; noun + shidai = depends on |
-| 最中 | さいちゅう | 正在……的时候（名）//(n) in the middle of; at the height of — usually something interrupts: shokuji no saichuu ni denwa ga natta |
-| 際 | さい | ……之际；……的时候（名）——正式用语//(n) when; on the occasion of — formal version of toki, common in notices and announcements |
-| 立ち上がる | たちあがる | 站起来；起身（自动词）//(v, intrans.) to stand up; to get up; to rise — also to rise up or a computer booting up |
-| 転ぶ | ころぶ | 摔倒；跌倒（自动词）//(v, intrans.) to fall over; to trip and fall — while walking or running, not from a height |
-| 届く | とどく | 送到；到达；够得着（自动词）//(v, intrans.) to arrive; to reach — mail, parcels or messages arriving; also "can reach" (a shelf); transitive pair: todokeru |
-| 連絡 | れんらく | 联系；联络（名、可作动词）//(n, suru-verb) contact; getting in touch — by phone, email or message; renraku suru = let someone know |
-| 決まる | きまる | 定下来；被决定（自动词）//(v, intrans.) to be decided; to be settled; to be fixed — intransitive; transitive pair: kimeru (decide) |
-| 暗くなる | くらくなる | 变暗；天黑（惯用语）//(expr) to get dark — of evening or a room; kurai + naru (become) |
-| 若い | わかい | 年轻的（形容词）//(i-adj) young; youthful; inexperienced — of people; a lower number is also wakai (wakai bangou) |
-| 海外旅行 | かいがいりょこう | 出国旅游（名）//(n) overseas trip; travel abroad — kaigai ryokou ni iku = go on a trip abroad |
-| 入国 | にゅうこく | 入境（名、可作动词）//(n, suru-verb) entering a country; immigration — opposite: shukkoku (leaving the country) |
-| パスポート | ぱすぽーと | 护照（名）//(n) passport — needed to enter or leave Japan; residents also carry a residence card |
-| 会議 | かいぎ | 会议（名）//(n) meeting; conference — from small office meetings to international conferences; kaigi ga aru = have a meeting |
-| 電話が鳴る | でんわがなる | 电话响（惯用语）//(expr) the phone rings — naru = to ring, to sound (intransitive) |
-| 日程 | にってい | 日程（名）//(n) schedule; itinerary; dates — dates of a trip or event; yotei is one's plans |
-| 明るい | あかるい | 明亮的；开朗的（形容词）//(i-adj) bright; light; cheerful — also of personality: cheerful, outgoing |
+| 途端 | とたん | 刚一……就（名）——后接意外发生的事；「〜た途端に」刚一……就；「立ち上がった途端」刚一站起来//(n) the very moment; just as — what follows is unexpected; 「〜た途端に」 the moment ~; 「立ち上がった途端」 just as I stood up |
+| 次第 | しだい | 一……就；取决于（名）——接动词连用形表示“一……就”，接名词表示“取决于”；「着き次第」一到就；「あなた次第」取决于你//(n) as soon as; depending on — after a verb stem "as soon as", after a noun "depends on"; 「着き次第」 as soon as (I) arrive; 「あなた次第」 it's up to you |
+| 最中 | さいちゅう | 正在……的时候（名）——常指此时被打断；「食事の最中に」正在吃饭时；「会議の最中」正在开会//(n) in the middle of — usually when something interrupts; 「食事の最中に」 in the middle of a meal; 「会議の最中」 mid-meeting |
+| 際 | さい | ……之际（名）——比「時」正式，常见于通知；「ご利用の際は」使用时；「お帰りの際」您回去时//(n) when; on the occasion of — a formal 「時」, common in notices; 「ご利用の際は」 when using (this service); 「お帰りの際」 when you leave |
+| 立ち上がる | たちあがる | 站起来；启动（自动词）——也指电脑启动、奋起；「席から立ち上がる」从座位上站起；「パソコンが立ち上がる」电脑启动//(v, intrans.) to stand up; to start up — also a computer booting or people rising up; 「席から立ち上がる」 to get up from one's seat; 「パソコンが立ち上がる」 the PC boots up |
+| 転ぶ | ころぶ | 摔倒（自动词）——走路、跑步时摔倒，不是从高处掉下；「道で転ぶ」在路上摔倒；「転んでけがをする」摔倒受伤//(v, intrans.) to fall over; to trip — while walking or running, not from a height; 「道で転ぶ」 to fall on the street; 「転んでけがをする」 to fall and hurt oneself |
+| 届く | とどく | 送到；够得着（自动词）——他动词是「届ける」；「荷物が届く」包裹送到；「手が届く」够得着//(v, intrans.) to arrive; to reach — transitive pair: 「届ける」; 「荷物が届く」 a package arrives; 「手が届く」 within reach |
+| 連絡 | れんらく | 联系；联络（名、可作动词）——「連絡を取る」取得联系；「ご連絡ください」请联系我//(n, suru-verb) contact; getting in touch — 「連絡を取る」 to get in touch; 「ご連絡ください」 please contact me |
+| 決まる | きまる | 定下来（自动词）——他动词是「決める」；「日程が決まる」日程定了；「決まり次第」一决定就//(v, intrans.) to be decided — transitive pair: 「決める」; 「日程が決まる」 the schedule is set; 「決まり次第」 as soon as it's decided |
+| 暗くなる | くらくなる | 变暗；天黑（惯用语）——「暗くなる前に」天黑之前；「部屋が暗くなる」房间暗下来//(expr) to get dark — 「暗くなる前に」 before it gets dark; 「部屋が暗くなる」 the room goes dark |
+| 若い | わかい | 年轻（形容词）——「若い人」年轻人；「年より若く見える」显得比实际年轻//(i-adj) young — 「若い人」 young people; 「年より若く見える」 to look young for one's age |
+| 海外旅行 | かいがいりょこう | 出国旅游（名）——「海外旅行に行く」去国外旅游；「初めての海外旅行」第一次出国旅游//(n) overseas trip — 「海外旅行に行く」 to travel abroad; 「初めての海外旅行」 one's first trip abroad |
+| 入国 | にゅうこく | 入境（名、可作动词）——反义是「出国」；「入国審査」入境审查；「日本に入国する」入境日本//(n, suru-verb) entry (into a country) — opposite: 「出国」; 「入国審査」 immigration control; 「日本に入国する」 to enter Japan |
+| パスポート | ぱすぽーと | 护照（名）——「パスポートを申請する」申请护照；「パスポートを見せる」出示护照//(n) passport — 「パスポートを申請する」 to apply for a passport; 「パスポートを見せる」 to show one's passport |
+| 会議 | かいぎ | 会议（名）——「会議に出る」参加会议；「会議中」正在开会//(n) meeting; conference — 「会議に出る」 to attend a meeting; 「会議中」 in a meeting |
+| 電話が鳴る | でんわがなる | 电话响（惯用语）——「鳴る」表示发出声响；「電話が鳴った途端」电话一响//(expr) the phone rings — 「鳴る」 means to ring, to sound; 「電話が鳴った途端」 the moment the phone rang |
+| 日程 | にってい | 日程（名）——指活动、旅行的日期安排；「日程を決める」定日程；「日程を調整する」协调日程//(n) schedule; dates — of a trip or event; 「日程を決める」 to set the dates; 「日程を調整する」 to coordinate schedules |
+| 明るい | あかるい | 明亮；开朗（形容词）——「明るい部屋」明亮的房间；「明るい性格」开朗的性格//(i-adj) bright; cheerful — 「明るい部屋」 a bright room; 「明るい性格」 a cheerful personality |
 
 ---
 

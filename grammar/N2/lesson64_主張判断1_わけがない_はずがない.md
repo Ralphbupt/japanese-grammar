@@ -12,22 +12,22 @@ This lesson covers N2-level expressions for assertion and judgment. 「ないわ
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 義務 | ぎむ | 义务；责任（名）//(n) duty; obligation — legal or moral duty; opposite of rights |
-| 出席 | しゅっせき | 出席（名、可作动词）//(n, suru-verb) attendance; being present — at a class, meeting or wedding; opposite: kesseki (absence) |
-| 断る | ことわる | 拒绝；谢绝（他动词）//(v, trans.) to refuse; to decline; to turn down — invitations or requests, usually indirectly; also to give notice in advance (kotowatte oku) |
-| 犯人 | はんにん | 罪犯；作案者（名）——指作案者，不是中文“犯人”（服刑者）//(n) culprit; criminal; perpetrator — whoever committed the crime, caught or not, not a prisoner; jokingly, whoever did it |
-| 証拠 | しょうこ | 证据（名）//(n) evidence; proof — shouko ga nai = there's no proof; nani yori no shouko = the best proof of all |
-| 判断 | はんだん | 判断（名、可作动词）//(n, suru-verb) judgment; decision; assessment — handan suru = judge, decide; handan shikaneru = find it hard to decide |
-| 嘘 | うそ | 谎话；谎言（名）//(n) lie; falsehood — uso o tsuku = tell a lie; uso! = no way! (surprise, not an accusation) |
-| 本気 | ほんき | 认真；当真（名、形容动词）//(n, na-adj) seriousness; earnestness — honki de = seriously, for real; honki? = are you serious? |
-| 常識 | じょうしき | 常识（名）——偏“社会常理、礼节”//(n) common sense; common knowledge — also social norms; "lacking common sense" is a criticism |
-| 裏切る | うらぎる | 背叛；辜负（他动词）//(v, trans.) to betray; to let down — betray a friend; kitai o uragiru = fail (or, pleasantly, defy) expectations |
-| 約束 | やくそく | 约定；诺言（名、可作动词）——也指约会//(n, suru-verb) promise; appointment; arrangement — also a plan to meet someone; keep one = mamoru, break one = yaburu |
-| 破る | やぶる | 撕破；违背；打败（他动词）//(v, trans.) to tear; to break (a promise, rule); to defeat — tear paper, break a promise, beat an opponent |
-| 優秀 | ゆうしゅう | 优秀（形容动词）//(na-adj) excellent; outstanding; highly capable — praise for students, staff or results |
-| 不合格 | ふごうかく | 不合格；不及格（名）//(n) failing (an exam); disqualification — failing an entrance exam or inspection |
-| 責任 | せきにん | 责任（名）//(n) responsibility; liability; blame — sekinin o toru = take responsibility; sekininsha = the person in charge |
-| 間違い | まちがい | 错误；差错（名）//(n) mistake; error — machigai nai = definitely, no doubt about it; the verb is machigaeru (make a mistake) |
+| 義務 | ぎむ | 义务；责任（名）——与「権利」相对；「義務がある」有义务；「義務教育」义务教育//(n) duty; obligation — opposite of 「権利」; 「義務がある」 to be obliged to; 「義務教育」 compulsory education |
+| 出席 | しゅっせき | 出席（名、可作动词）——反义是「欠席」；「会議に出席する」出席会议；「出席を取る」点名//(n, suru-verb) attendance — opposite: 「欠席」; 「会議に出席する」 to attend a meeting; 「出席を取る」 to take attendance |
+| 断る | ことわる | 拒绝；谢绝（他动词）——也有“事先打招呼”的意思；「誘いを断る」拒绝邀请；「断っておく」事先说一声//(v, trans.) to refuse; to decline — also to give notice in advance; 「誘いを断る」 to turn down an invitation; 「断っておく」 to say so up front |
+| 犯人 | はんにん | 罪犯；作案者（名）——指作案者，不是中文“犯人”（服刑者）；「犯人が捕まる」犯人被抓；「犯人は誰だ」是谁干的//(n) culprit; perpetrator — whoever did it, not a prisoner; 「犯人が捕まる」 the culprit is caught; 「犯人は誰だ」 who did it? |
+| 証拠 | しょうこ | 证据（名）——「証拠がない」没有证据；「何よりの証拠」最好的证明//(n) evidence; proof — 「証拠がない」 there's no proof; 「何よりの証拠」 the best proof of all |
+| 判断 | はんだん | 判断（名、可作动词）——「判断を誤る」判断失误；「判断に迷う」拿不定主意//(n, suru-verb) judgment; decision — 「判断を誤る」 to misjudge; 「判断に迷う」 to be unsure what to decide |
+| 嘘 | うそ | 谎话（名）——单说「嘘！」是“不会吧”的惊讶；「嘘をつく」说谎；「嘘でしょう」不会吧//(n) lie — on its own 「嘘！」 means "no way!"; 「嘘をつく」 to tell a lie; 「嘘でしょう」 you're kidding |
+| 本気 | ほんき | 认真；当真（名、形容动词）——「本気で」认真地，动真格；「本気にする」当真//(n, na-adj) seriousness; being serious — 「本気で」 for real; 「本気にする」 to take it seriously |
+| 常識 | じょうしき | 常识（名）——偏指社会常理、礼节；「常識がない」没常识，不懂规矩；「常識的に考える」按常理来想//(n) common sense; social norms — 「常識がない」 to lack common sense (a criticism); 「常識的に考える」 to think sensibly |
+| 裏切る | うらぎる | 背叛；辜负（他动词）——「友達を裏切る」背叛朋友；「期待を裏切る」辜负期望（也可指超出预期）//(v, trans.) to betray; to let down — 「友達を裏切る」 to betray a friend; 「期待を裏切る」 to fall short of (or pleasantly defy) expectations |
+| 約束 | やくそく | 约定；诺言（名、可作动词）——也指约好见面；「約束を守る」守约；「約束を破る」失约//(n, suru-verb) promise; appointment — also a plan to meet; 「約束を守る」 to keep a promise; 「約束を破る」 to break a promise |
+| 破る | やぶる | 撕破；违背；打败（他动词）——「約束を破る」违约；「相手を破る」打败对手//(v, trans.) to tear; to break (a promise or rule); to beat — 「約束を破る」 to break a promise; 「相手を破る」 to beat an opponent |
+| 優秀 | ゆうしゅう | 优秀（形容动词）——「優秀な学生」优秀的学生；「優秀な成績」优异的成绩//(na-adj) excellent; outstanding — 「優秀な学生」 a top student; 「優秀な成績」 excellent grades |
+| 不合格 | ふごうかく | 不合格；不及格（名）——「試験に不合格になる」考试没通过；「不合格通知」落榜通知//(n) failing (an exam or inspection) — 「試験に不合格になる」 to fail an exam; 「不合格通知」 a rejection notice |
+| 責任 | せきにん | 责任（名）——「責任を取る」承担责任；「責任感」责任感//(n) responsibility; blame — 「責任を取る」 to take responsibility; 「責任感」 a sense of responsibility |
+| 間違い | まちがい | 错误；差错（名）——「間違いない」肯定没错；「間違いを直す」改正错误//(n) mistake; error — 「間違いない」 definitely, no doubt; 「間違いを直す」 to correct a mistake |
 
 ---
 

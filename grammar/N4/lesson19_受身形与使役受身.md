@@ -12,16 +12,16 @@ The passive 「られる」 means "to be …," but Japanese has an extra use Chi
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 残業 | ざんぎょう | 加班（名、可作动词）//(n, suru-verb) overtime (work); working late — very common in Japanese workplaces; zangyou-dai = overtime pay |
-| 野菜 | やさい | 蔬菜（名）//(n) vegetable; vegetables — no plural in Japanese, so one word covers one or many |
-| 上司 | じょうし | 上司；上级（名）//(n) boss; superior (at work) — anyone above you in rank, not only your direct manager |
-| 練習 | れんしゅう | 练习（名、可作动词）//(n, suru-verb) practice; training; drill — practicing a skill, sport, instrument or language |
-| 大量 | たいりょう | 大量（名、形容动词）//(n, na-adj) large quantity; a great deal — slightly formal; tairyou seisan = mass production |
-| 命令 | めいれい | 命令（名、可作动词）//(n, suru-verb) order; command — a strong top-down order, much stronger than tanomu (ask) |
-| 教室 | きょうしつ | 教室；（兴趣）班（名）//(n) classroom; class (for lessons) — also a hobby class: ryouri kyoushitsu = cooking class |
-| 小説 | しょうせつ | 小说（名）//(n) novel; fiction — shousetsuka = novelist |
-| 建物 | たてもの | 建筑物；楼房（名）//(n) building; structure |
-| 泣く | なく | 哭；哭泣（自动词）//(v, intrans.) to cry; to weep — of people; animals and birds use a homophone written with another kanji (naku, to chirp or bark) |
+| 残業 | ざんぎょう | 加班（名、可作动词）——「残業が多い」加班多；「残業代」加班费//(n, suru-verb) overtime — 「残業が多い」 lots of overtime; 「残業代」 overtime pay |
+| 野菜 | やさい | 蔬菜（名）——「野菜を食べる」吃蔬菜；「野菜不足」蔬菜吃得少//(n) vegetables — 「野菜を食べる」 to eat vegetables; 「野菜不足」 not eating enough vegetables |
+| 上司 | じょうし | 上司；上级（名）——比自己职位高的都算，不只是直属领导；「上司に相談する」找上司商量；「上司に叱られる」被上司训//(n) boss; superior (at work) — anyone above you, not just your direct manager; 「上司に相談する」 to talk to one's boss; 「上司に叱られる」 to be told off by the boss |
+| 練習 | れんしゅう | 练习（名、可作动词）——「ピアノを練習する」练钢琴；「練習試合」练习赛//(n, suru-verb) practice — 「ピアノを練習する」 to practice the piano; 「練習試合」 a practice match |
+| 大量 | たいりょう | 大量（名、形容动词）——略书面；「大量に買う」大量购买；「大量生産」大批量生产//(n, na-adj) large quantity; mass — slightly formal; 「大量に買う」 to buy in bulk; 「大量生産」 mass production |
+| 命令 | めいれい | 命令（名、可作动词）——上对下的强硬指令，比「頼む」强得多；「命令に従う」服从命令；「命令する」下命令//(n, suru-verb) order; command — a strong top-down order, far stronger than 「頼む」; 「命令に従う」 to follow orders; 「命令する」 to give an order |
+| 教室 | きょうしつ | 教室；（兴趣）班（名）——「料理教室」烹饪班；「教室に入る」进教室//(n) classroom; class (lessons) — also a hobby class; 「料理教室」 a cooking class; 「教室に入る」 to enter the classroom |
+| 小説 | しょうせつ | 小说（名）——「小説を読む」看小说；「小説家」小说家//(n) novel; fiction — 「小説を読む」 to read a novel; 「小説家」 a novelist |
+| 建物 | たてもの | 建筑物；楼（名）——「古い建物」老建筑；「建物の中」楼里//(n) building — 「古い建物」 an old building; 「建物の中」 inside the building |
+| 泣く | なく | 哭；哭泣（自动词）——用于人，动物鸣叫写作「鳴く」；「赤ちゃんが泣く」婴儿哭；「泣き出す」哭起来//(v, intrans.) to cry; to weep — of people; animals' cries are written 「鳴く」; 「赤ちゃんが泣く」 a baby cries; 「泣き出す」 to burst into tears |
 
 ## 1. 受身形详解（N4深化）||1. Passive Form — In Depth (N4 Level)
 

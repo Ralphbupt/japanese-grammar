@@ -12,24 +12,24 @@ This lesson continues with common N3 formal particles. These grammar points appe
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 調査 | ちょうさ | 调查（名、可作动词）//(n, suru-verb) investigation; survey; inquiry — formal; surveys, studies and official investigations |
-| 報告 | ほうこく | 报告；汇报（名、可作动词）//(n, suru-verb) report; reporting — telling a boss or group the outcome; a key word in Japanese office culture |
-| 規則 | きそく | 规则；规定（名）//(n) rule; regulation — written rules of a school, company or game; follow them = mamoru |
-| 憲法 | けんぽう | 宪法（名）//(n) constitution (of a country) — Japan's postwar constitution; Article 9 is the famous one |
-| 幸福 | こうふく | 幸福（名、形容动词）——比口语的幸福一词更书面//(n, na-adj) happiness; well-being — more formal and abstract than shiawase |
-| 地域 | ちいき | 地区；区域（名）——常指当地社区//(n) region; area; local community — chiiki shakai = the local community; more formal than chihou |
-| 長期間 | ちょうきかん | 长时间；长期（名）//(n) long period (of time); extended period — often with ni watatte: "over a long period" |
-| 交渉 | こうしょう | 谈判；交涉（名、可作动词）//(n, suru-verb) negotiation; bargaining — business, diplomatic or salary talks with another party |
-| 範囲 | はんい | 范围（名）//(n) scope; range; extent — e.g. the range covered by an exam, or within a certain range |
-| 計画 | けいかく | 计划（名、可作动词）//(n, suru-verb) plan; project; scheme — a deliberate, detailed plan; more formal than yotei (an arrangement); keikaku-doori = according to plan |
-| 基準 | きじゅん | 标准；基准（名）//(n) standard; criterion; benchmark — the yardstick for judging, e.g. safety standards, selection criteria |
-| 法律 | ほうりつ | 法律（名）//(n) law; legislation — laws in general; break the law = ihan suru, obey = mamoru |
-| 事実 | じじつ | 事实（名、副词）//(n, adv) fact; truth; reality — as an adverb, "in fact" (more formal than jitsu wa) |
-| 関東 | かんとう | 关东地区（名）——东京及周边六县//(n) Kanto — the region around Tokyo (Tokyo plus six prefectures); contrasted with Kansai (Osaka, Kyoto) |
-| 数世紀 | すうせいき | 几个世纪（名）//(n) several centuries — suu- = "several": suunen (a few years), suunin (several people) |
-| 広範囲 | こうはんい | 大范围；广泛（名、形容动词）//(n, na-adj) wide area; wide range; extensive — damage or effects spreading over a wide area |
-| 子供 | こども | 孩子；儿童（名）//(n) child; kid — both children in general and one's own children; kodomoppoi = childish |
-| 世代 | せだい | 一代人；世代（名）//(n) generation; age group — people of the same age group; also a product generation |
+| 調査 | ちょうさ | 调查（名、可作动词）——「調査を行う」进行调查；「アンケート調査」问卷调查//(n, suru-verb) investigation; survey — 「調査を行う」 to conduct a survey; 「アンケート調査」 a questionnaire survey |
+| 報告 | ほうこく | 报告；汇报（名、可作动词）——「上司に報告する」向上司汇报；「報告書」报告书//(n, suru-verb) report — 「上司に報告する」 to report to one's boss; 「報告書」 a written report |
+| 規則 | きそく | 规则；规定（名）——「規則を守る」遵守规定；「規則正しい生活」有规律的生活//(n) rule; regulation — 「規則を守る」 to follow the rules; 「規則正しい生活」 a regular, orderly life |
+| 憲法 | けんぽう | 宪法（名）——「憲法を改正する」修改宪法；「憲法第9条」宪法第九条//(n) constitution (of a country) — 「憲法を改正する」 to amend the constitution; 「憲法第9条」 Article 9 of the Constitution |
+| 幸福 | こうふく | 幸福（名、形容动词）——比「幸せ」更书面、抽象；「幸福な生活」幸福的生活；「幸福感」幸福感//(n, na-adj) happiness; well-being — more formal and abstract than 「幸せ」; 「幸福な生活」 a happy life; 「幸福感」 a sense of well-being |
+| 地域 | ちいき | 地区；区域（名）——常指当地社区；「地域社会」当地社区；「地域によって違う」因地区而异//(n) region; area; local community — 「地域社会」 the local community; 「地域によって違う」 it varies by region |
+| 長期間 | ちょうきかん | 长时间；长期（名）——「長期間にわたって」在很长一段时间里；「長期間続く」持续很久//(n) a long period (of time) — 「長期間にわたって」 over a long period; 「長期間続く」 to go on for a long time |
+| 交渉 | こうしょう | 谈判；交涉（名、可作动词）——「値段を交渉する」讲价；「交渉がまとまる」谈判达成一致//(n, suru-verb) negotiation; bargaining — 「値段を交渉する」 to haggle over the price; 「交渉がまとまる」 the talks reach a deal |
+| 範囲 | はんい | 范围（名）——「試験の範囲」考试范围；「予算の範囲内で」在预算范围内//(n) scope; range — 「試験の範囲」 what the exam covers; 「予算の範囲内で」 within the budget |
+| 計画 | けいかく | 计划（名、可作动词）——比「予定」更周密、正式；「計画を立てる」制定计划；「計画通り」按计划//(n, suru-verb) plan; project — a worked-out plan, more deliberate than 「予定」; 「計画を立てる」 to make a plan; 「計画通り」 according to plan |
+| 基準 | きじゅん | 标准；基准（名）——「基準を満たす」达到标准；「判断の基準」判断的标准//(n) standard; criterion — 「基準を満たす」 to meet the standard; 「判断の基準」 the criteria for judging |
+| 法律 | ほうりつ | 法律（名）——「法律を守る」守法；「法律で禁止されている」法律禁止//(n) law — 「法律を守る」 to obey the law; 「法律で禁止されている」 prohibited by law |
+| 事実 | じじつ | 事实（名、副词）——作副词表示“实际上”；「事実を認める」承认事实；「事実上」实际上//(n, adv) fact; truth — as an adverb, "in fact"; 「事実を認める」 to admit the facts; 「事実上」 practically, de facto |
+| 関東 | かんとう | 关东地区（名）——东京及周边六县，常与关西对比；「関東地方」关东地区；「関東と関西」关东和关西//(n) Kanto (region) — Tokyo and the six prefectures around it; 「関東地方」 the Kanto region; 「関東と関西」 Kanto vs. Kansai, East vs. West Japan |
+| 数世紀 | すうせいき | 几个世纪（名）——「数世紀にわたって」历经几个世纪；「数年」几年//(n) several centuries — 「数世紀にわたって」 over several centuries; 「数年」 a few years |
+| 広範囲 | こうはんい | 大范围；广泛（名、形容动词）——「広範囲にわたる」涉及大范围；「広範囲の被害」大范围的损失//(n, na-adj) wide area; wide range — 「広範囲にわたる」 to extend over a wide area; 「広範囲の被害」 widespread damage |
+| 子供 | こども | 孩子；儿童（名）——也常写作「子ども」；「子供の頃」小时候；「子供っぽい」孩子气//(n) child; kid — also written 「子ども」; 「子供の頃」 as a child; 「子供っぽい」 childish |
+| 世代 | せだい | 一代人；世代（名）——「若い世代」年轻一代；「世代を超えて」跨越世代//(n) generation — 「若い世代」 the younger generation; 「世代を超えて」 across generations |
 
 ---
 

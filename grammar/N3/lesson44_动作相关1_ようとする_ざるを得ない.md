@@ -12,24 +12,24 @@ This group covers possibility and volition around actions: trying but failing, h
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 逃げる | にげる | 逃跑；逃避（自动词）//(v, intrans.) to run away; to escape; to flee — also to avoid a problem or responsibility |
-| 窓 | まど | 窗户（名）//(n) window — madoguchi = service counter (at a bank or city hall) |
-| 開ける | あける | 打开（他动词）——人去打开门窗等//(v, trans.) to open (something) — mado o akeru = open the window; intransitive pair: aku (it opens) |
-| 連絡先 | れんらくさき | 联系方式（名）//(n) contact information; contact details — phone, email or address for reaching someone |
-| 忘れ物 | わすれもの | 落下的东西；遗忘物品（名）//(n) something left behind; forgotten item; lost property — wasuremono o suru = leave something behind |
-| 届ける | とどける | 送到；递交；报告（他动词）//(v, trans.) to deliver; to take (something) to; to report — also hand in a lost item to the police (keisatsu ni todokeru) |
-| 残業 | ざんぎょう | 加班（名、可作动词）//(n, suru-verb) overtime (work); working late — very common in Japanese workplaces; zangyou-dai = overtime pay |
-| 納期 | のうき | 交货期限（名）//(n) delivery deadline; due date (for an order) — business term for when goods or work must be delivered |
-| 賛成 | さんせい | 赞成；同意（名、可作动词）//(n, suru-verb) agreement; approval; being in favor — ni sansei suru = agree with (a plan or opinion); opposite of hantai |
-| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）//(n, suru-verb, na-adj) opposition; objection; the opposite — ni hantai suru = be against; also the reverse side or direction (hantai-gawa) |
-| 判断 | はんだん | 判断（名、可作动词）//(n, suru-verb) judgment; decision; assessment — handan suru = judge, decide; handan shikaneru = find it hard to decide |
-| 提案 | ていあん | 提议；建议（名、可作动词）//(n, suru-verb) proposal; suggestion — a proposal in a meeting or business setting |
-| 事故 | じこ | 事故（名）//(n) accident; incident — traffic or industrial accidents; jiko ni au = have an accident |
-| 油断 | ゆだん | 大意；疏忽（名、可作动词）//(n, suru-verb) carelessness; letting one's guard down — relaxing too early; yudan taiteki = never let your guard down |
-| 責任 | せきにん | 责任（名）//(n) responsibility; liability; blame — sekinin o toru = take responsibility; sekininsha = the person in charge |
-| 対応 | たいおう | 应对；处理（名、可作动词）//(n, suru-verb) response; dealing with; handling — customers, problems or requests; also "compatible with" (taiou shite iru) |
-| 諦める | あきらめる | 放弃；死心（他动词）//(v, trans.) to give up; to abandon (hope); to resign oneself — accepting something is out of reach; yameru is simply stopping |
-| 我慢 | がまん | 忍耐；忍受（名、可作动词）——多指忍住疼痛、眼泪、尿意等//(n, suru-verb) patience; putting up with something unpleasant — often "hold it in" (pain, tears, the urge to go) |
+| 逃げる | にげる | 逃跑；逃避（自动词）——「犯人が逃げる」犯人逃跑；「現実から逃げる」逃避现实//(v, intrans.) to run away; to escape — also to dodge a problem; 「犯人が逃げる」 the culprit gets away; 「現実から逃げる」 to escape reality |
+| 窓 | まど | 窗户（名）——「窓を開ける」开窗；「窓口」（银行、政府的）窗口//(n) window — 「窓を開ける」 to open the window; 「窓口」 a service counter (bank, city hall) |
+| 開ける | あける | 打开（他动词）——自动词是「開く」；「窓を開ける」开窗；「ドアを開けておく」把门开着//(v, trans.) to open (something) — intransitive pair 「開く」; 「窓を開ける」 to open the window; 「ドアを開けておく」 to leave the door open |
+| 連絡先 | れんらくさき | 联系方式（名）——「連絡先を交換する」交换联系方式；「緊急連絡先」紧急联系人//(n) contact details — 「連絡先を交換する」 to exchange contact info; 「緊急連絡先」 an emergency contact |
+| 忘れ物 | わすれもの | 遗忘的东西（名）——「忘れ物をする」落东西；「忘れ物がないように」别落下东西//(n) something left behind — 「忘れ物をする」 to leave something behind; 「忘れ物がないように」 make sure you have everything |
+| 届ける | とどける | 送到；交给；申报（他动词）——「荷物を届ける」送包裹；「警察に届ける」交给警察、报警//(v, trans.) to deliver; to take (something) to; to report — 「荷物を届ける」 to deliver a package; 「警察に届ける」 to hand in to / report to the police |
+| 残業 | ざんぎょう | 加班（名、可作动词）——「残業が多い」加班多；「残業代」加班费//(n, suru-verb) overtime — 「残業が多い」 lots of overtime; 「残業代」 overtime pay |
+| 納期 | のうき | 交货期（名）——商务用语；「納期に間に合う」赶上交期；「納期を守る」遵守交期//(n) delivery date; deadline (for an order) — business term; 「納期に間に合う」 to make the delivery date; 「納期を守る」 to meet the deadline |
+| 賛成 | さんせい | 赞成（名、可作动词）——「意見に賛成する」赞成意见；「賛成多数」多数赞成//(n, suru-verb) agreement; being in favor — 「意見に賛成する」 to agree with an opinion; 「賛成多数」 a majority in favor |
+| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）——「計画に反対する」反对计划；「反対側」对面，相反方向//(n, suru-verb, na-adj) opposition; the opposite — 「計画に反対する」 to oppose a plan; 「反対側」 the opposite side |
+| 判断 | はんだん | 判断（名、可作动词）——「判断を誤る」判断失误；「判断に迷う」拿不定主意//(n, suru-verb) judgment; decision — 「判断を誤る」 to misjudge; 「判断に迷う」 to be unsure what to decide |
+| 提案 | ていあん | 提议；建议（名、可作动词）——「提案を出す」提出建议；「提案を受け入れる」接受提议//(n, suru-verb) proposal; suggestion — 「提案を出す」 to make a proposal; 「提案を受け入れる」 to accept a proposal |
+| 事故 | じこ | 事故（名）——「事故に遭う」遇到事故；「交通事故」交通事故//(n) accident — 「事故に遭う」 to be in an accident; 「交通事故」 a traffic accident |
+| 油断 | ゆだん | 大意；疏忽（名、可作动词）——「少しも油断できない」一点也不能大意；「油断大敵」大意是最大的敌人//(n, suru-verb) letting one's guard down — 「少しも油断できない」 can't relax for a moment; 「油断大敵」 carelessness is your worst enemy |
+| 責任 | せきにん | 责任（名）——「責任を取る」承担责任；「責任感」责任感//(n) responsibility; blame — 「責任を取る」 to take responsibility; 「責任感」 a sense of responsibility |
+| 対応 | たいおう | 应对；处理（名、可作动词）——「客に対応する」接待顾客；「スマホに対応している」支持手机//(n, suru-verb) response; handling; compatibility — 「客に対応する」 to deal with customers; 「スマホに対応している」 works on smartphones |
+| 諦める | あきらめる | 放弃；死心（他动词）——接受得不到的现实，单纯停止用「やめる」；「夢を諦める」放弃梦想；「最後まで諦めない」坚持到底不放弃//(v, trans.) to give up — accepting it's out of reach; simply stopping is 「やめる」; 「夢を諦める」 to give up on a dream; 「最後まで諦めない」 to never give up |
+| 我慢 | がまん | 忍耐；忍受（名、可作动词）——多指忍住疼痛、眼泪、冲动等；「痛みを我慢する」忍痛；「もう我慢できない」再也忍不了了//(n, suru-verb) enduring; putting up with — pain, tears, urges; 「痛みを我慢する」 to bear the pain; 「もう我慢できない」 I can't stand it anymore |
 
 ---
 

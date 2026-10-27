@@ -12,25 +12,25 @@ Japanese adjectives split into **い-type** and **な-type**, with completely di
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 大きい | おおきい | 大（形容词）//(i-adj) big; large — before nouns also ookina |
-| 高い | たかい | 高；贵（形容词）//(i-adj) high; tall; expensive — tall for buildings; for people's height say se ga takai |
-| 安い | やすい | 便宜（形容词）//(i-adj) cheap; inexpensive — the opposite of takai in the price sense |
-| 寒い | さむい | 冷；寒冷（形容词）——指天气冷，摸着冷用另一个词//(i-adj) cold (weather, air) — only for air temperature; cold drinks or objects are tsumetai |
-| 速い | はやい | （速度）快（形容词）//(i-adj) fast; quick (in speed) — about speed; early in time is a homophone (hayai) |
-| 楽しい | たのしい | 开心；愉快（形容词）//(i-adj) fun; enjoyable — about an experience; being glad about news is ureshii |
-| 気持ちいい | きもちいい | 舒服；舒畅（形容词）//(i-adj) feels good; pleasant; comfortable — physical comfort: a breeze, a bath |
-| 上手 | じょうず | 擅长；（做得）好（形容动词）——不用于说自己//(na-adj) skillful; good at (something) — praise for others; for yourself use tokui, since jouzu sounds boastful |
-| 元気 | げんき | 精神；健康（形容动词、名）//(na-adj, n) healthy; energetic; well — o-genki desu ka = how are you?; genki ga nai = feeling down |
-| 簡単 | かんたん | 简单；容易（形容动词）//(na-adj) simple; easy — not complicated; compare yasashii (gentle, not demanding) |
-| 嫌い | きらい | 讨厌；不喜欢（形容动词）——虽以“i”结尾，却是形容动词//(na-adj) disliked; hated — a na-adjective despite ending in i; the thing takes ga |
-| きれい | きれい | 漂亮；干净（形容动词）//(na-adj) pretty; beautiful; clean — na-adjective despite ending in i |
-| 掃除 | そうじ | 打扫；扫除（名、可作动词）//(n, suru-verb) cleaning (a room, house) — tidying, wiping, vacuuming; laundry is sentaku |
-| 医者 | いしゃ | 医生（名）//(n) doctor; physician — address one as sensei |
-| 大人 | おとな | 成年人；大人（名）——不是中文“大人”的敬称//(n) adult; grown-up — opposite of kodomo; otona-rashii = mature; on price lists, the adult fare |
-| 将来 | しょうらい | 将来；未来（名、副词）//(n, adv) future; in the future — one's personal future: shourai no yume = dream for the future |
-| 飲み物 | のみもの | 饮料（名）//(n) drink; beverage — anything to drink |
-| 背 | せ | 身高；后背（名）//(n) height (of a person); back — "tall" is se ga takai |
-| 紅茶 | こうちゃ | 红茶（名）//(n) black tea — Western-style tea; green tea is ocha |
+| 大きい | おおきい | 大（形容词）——名词前也说「大きな」；「大きい家」大房子；「大きな声」大声//(i-adj) big; large — also 「大きな」 before nouns; 「大きい家」 a big house; 「大きな声」 a loud voice |
+| 高い | たかい | 高；贵（形容词）——人的个子高说「背が高い」；「値段が高い」价格贵//(i-adj) high; tall; expensive — a tall person is 「背が高い」; 「値段が高い」 expensive |
+| 安い | やすい | 便宜（形容词）——「安い店」便宜的店；「値段が安い」价格便宜//(i-adj) cheap; inexpensive — 「安い店」 a cheap shop; 「値段が安い」 low-priced |
+| 寒い | さむい | 冷；寒冷（形容词）——只指天气冷，东西凉用「冷たい」；「今日は寒い」今天冷//(i-adj) cold (weather, air) — only for air; cold drinks or objects are 「冷たい」; 「今日は寒い」 it's cold today |
+| 速い | はやい | （速度）快（形容词）——时间早写作「早い」；「足が速い」跑得快//(i-adj) fast (in speed) — early is 「早い」; 「足が速い」 a fast runner |
+| 楽しい | たのしい | 开心；愉快（形容词）——指经历本身好玩，为消息高兴用「嬉しい」；「楽しい時間」愉快的时光//(i-adj) fun; enjoyable — about an experience; glad about news is 「嬉しい」; 「楽しい時間」 a fun time |
+| 気持ちいい | きもちいい | 舒服；舒畅（形容词）——多指身体感受；「風が気持ちいい」风很舒服//(i-adj) feels good; pleasant — physical comfort; 「風が気持ちいい」 the breeze feels nice |
+| 上手 | じょうず | 擅长；做得好（形容动词）——用来夸别人，说自己用「得意」；「日本語が上手だ」日语很好；「お上手ですね」您真行//(na-adj) skillful; good at — praise for others; about yourself use 「得意」; 「日本語が上手だ」 to be good at Japanese; 「お上手ですね」 you're so good at it |
+| 元気 | げんき | 精神；健康（形容动词、名）——「お元気ですか」您好吗；「元気がない」没精神//(na-adj, n) healthy; energetic; well — 「お元気ですか」 how are you?; 「元気がない」 to seem down |
+| 簡単 | かんたん | 简单（形容动词）——「簡単な問題」简单的问题；「簡単に言うと」简单地说//(na-adj) simple; easy — 「簡単な問題」 an easy question; 「簡単に言うと」 to put it simply |
+| 嫌い | きらい | 讨厌；不喜欢（形容动词）——虽以「い」结尾却是形容动词；「野菜が嫌いだ」讨厌蔬菜//(na-adj) disliked; hated — a na-adjective despite the final 「い」; 「野菜が嫌いだ」 to dislike vegetables |
+| きれい | きれい | 漂亮；干净（形容动词）——虽以「い」结尾却是形容动词；「きれいな花」漂亮的花；「きれいにする」弄干净//(na-adj) pretty; beautiful; clean — a na-adjective despite the final 「い」; 「きれいな花」 a pretty flower; 「きれいにする」 to clean up |
+| 掃除 | そうじ | 打扫；扫除（名、可作动词）——「部屋を掃除する」打扫房间//(n, suru-verb) cleaning — tidying, wiping, vacuuming; 「部屋を掃除する」 to clean one's room |
+| 医者 | いしゃ | 医生（名）——当面称「先生」；「医者に行く」去看医生//(n) doctor — addressed as 「先生」; 「医者に行く」 to go to the doctor |
+| 大人 | おとな | 成年人；大人（名）——不是中文“大人”的敬称；「大人になる」长大成人；「大人っぽい」显得成熟//(n) adult; grown-up — 「大人になる」 to grow up; 「大人っぽい」 mature-looking |
+| 将来 | しょうらい | 将来；未来（名、副词）——指个人的未来；「将来の夢」将来的梦想；「将来、医者になりたい」将来想当医生//(n, adv) future; in the future — one's own future; 「将来の夢」 one's dream for the future; 「将来、医者になりたい」 I want to be a doctor someday |
+| 飲み物 | のみもの | 饮料（名）——「飲み物を買う」买饮料//(n) drink; beverage — 「飲み物を買う」 to buy a drink |
+| 背 | せ | 身高；后背（名）——「背が高い」个子高；「背が低い」个子矮//(n) height (of a person); back — 「背が高い」 tall; 「背が低い」 short |
+| 紅茶 | こうちゃ | 红茶（名）——绿茶是「お茶」；「紅茶を入れる」泡红茶//(n) black tea — green tea is 「お茶」; 「紅茶を入れる」 to make tea |
 
 ## 1. い形容词 完整活用表||1. い-adjective Full Conjugation Table
 

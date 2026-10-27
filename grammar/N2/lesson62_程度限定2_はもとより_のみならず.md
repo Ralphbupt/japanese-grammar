@@ -12,24 +12,24 @@ This lesson provides an in-depth study of two N2-level progressive expressions. 
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 国内 | こくない | 国内（名）//(n) domestic; within the country — kokunai-sen = domestic flights; opposite of kaigai (overseas) |
-| 海外 | かいがい | 海外；国外（名）//(n) overseas; abroad — the everyday word for "abroad" in island Japan; kaigai ryokou = a trip abroad |
-| 大人 | おとな | 成年人；大人（名）——不是中文“大人”的敬称//(n) adult; grown-up — opposite of kodomo; otona-rashii = mature; on price lists, the adult fare |
-| 子供 | こども | 孩子；儿童（名）//(n) child; kid — both children in general and one's own children; kodomoppoi = childish |
-| 経済 | けいざい | 经济（名）//(n) economy; economics — the national economy; keizai-teki = economic, or economical (thrifty) |
-| 文化 | ぶんか | 文化（名）//(n) culture — national culture, cultural exchange, cultural differences |
-| 身体 | しんたい | 身体（名）//(n) body; physique — formal and written (forms, medicine: shintai kensa = physical checkup); everyday word is karada |
-| 精神 | せいしん | 精神；心理（名）——偏“心理、心灵”，不是“有精神”//(n) mind; spirit; mental — mental health, "body and mind"; not "energetic" |
-| 専門家 | せんもんか | 专家（名）//(n) expert; specialist; professional — someone with specialist training in a field |
-| 素人 | しろうと | 外行；业余爱好者（名）//(n) amateur; layman; non-specialist — opposite of professional/expert |
-| 企業 | きぎょう | 企业；公司（名）//(n) company; business; corporation — formal/economic register; companies as economic actors |
-| 個人 | こじん | 个人（名）//(n) individual; private person — as opposed to companies, groups or society |
-| 環境 | かんきょう | 环境（名）——既指自然环境，也指工作、学习环境//(n) environment; surroundings; setting — both nature (kankyou mondai = environmental issues) and one's work or study setting |
-| 貢献 | こうけん | 贡献（名、可作动词）//(n, suru-verb) contribution; service — contribute "to" society, a team or a field |
-| 被害 | ひがい | 受害；损失（名）——不是“灾害”本身//(n) damage; harm; loss suffered — what victims suffer from a disaster or crime, not the disaster itself; higai o ukeru = suffer damage |
-| 影響 | えいきょう | 影响（名、可作动词）//(n, suru-verb) influence; effect; impact — "influence on" something; "be influenced by" |
-| 地域 | ちいき | 地区；区域（名）——常指当地社区//(n) region; area; local community — chiiki shakai = the local community; more formal than chihou |
-| 社会 | しゃかい | 社会（名）——也指走上社会、工作后的世界//(n) society; the community; the working world — shakaijin = a working adult, someone who has left school |
+| 国内 | こくない | 国内（名）——反义是「海外」；「国内旅行」国内旅游；「国内線」国内航线//(n) domestic; within the country — opposite: 「海外」; 「国内旅行」 domestic travel; 「国内線」 domestic flights |
+| 海外 | かいがい | 海外；国外（名）——日语里泛指“国外”，不一定隔海；「海外旅行」出国旅游；「海外に住む」住在国外//(n) overseas; abroad — the everyday word for "abroad"; 「海外旅行」 a trip abroad; 「海外に住む」 to live abroad |
+| 大人 | おとな | 成年人；大人（名）——不是中文“大人”的敬称；「大人になる」长大成人；「大人っぽい」显得成熟//(n) adult; grown-up — 「大人になる」 to grow up; 「大人っぽい」 mature-looking |
+| 子供 | こども | 孩子；儿童（名）——也常写作「子ども」；「子供の頃」小时候；「子供っぽい」孩子气//(n) child; kid — also written 「子ども」; 「子供の頃」 as a child; 「子供っぽい」 childish |
+| 経済 | けいざい | 经济（名）——「経済的」也指“省钱、划算”；「経済成長」经济增长；「経済的な車」省油的车//(n) economy; economics — 「経済的」 can also mean "economical, thrifty"; 「経済成長」 economic growth; 「経済的な車」 an economical car |
+| 文化 | ぶんか | 文化（名）——「日本文化」日本文化；「文化の違い」文化差异//(n) culture — 「日本文化」 Japanese culture; 「文化の違い」 cultural differences |
+| 身体 | しんたい | 身体（名）——书面语，口语说「体」；「身体検査」体检；「身体能力」身体素质//(n) body; physique — formal (forms, medicine); everyday word is 「体」; 「身体検査」 a physical check; 「身体能力」 physical ability |
+| 精神 | せいしん | 精神；心理（名）——偏指心理、心灵，不是“有精神”；「精神的に疲れる」心累；「精神力」意志力//(n) mind; spirit; mental — 「精神的に疲れる」 to be mentally drained; 「精神力」 mental strength |
+| 専門家 | せんもんか | 专家（名）——「専門家の意見」专家意见；「〜の専門家」……方面的专家//(n) expert; specialist — 「専門家の意見」 expert opinion; 「〜の専門家」 an expert in ~ |
+| 素人 | しろうと | 外行；业余爱好者（名）——与「プロ」相对；「素人にはわからない」外行看不懂；「素人目には」在外行看来//(n) amateur; layman — opposite of 「プロ」; 「素人にはわからない」 lost on a layman; 「素人目には」 to an untrained eye |
+| 企業 | きぎょう | 企业；公司（名）——比「会社」更书面；「大企業」大企业；「中小企業」中小企业//(n) company; business; enterprise — more formal than 「会社」; 「大企業」 a big company; 「中小企業」 small and medium businesses |
+| 個人 | こじん | 个人（名）——与集体、企业相对；「個人情報」个人信息；「個人差がある」因人而异//(n) individual; private person — as opposed to groups or companies; 「個人情報」 personal data; 「個人差がある」 it varies from person to person |
+| 環境 | かんきょう | 环境（名）——「環境問題」环境问题；「職場環境」工作环境//(n) environment; surroundings — both nature and the setting you live or work in; 「環境問題」 environmental issues; 「職場環境」 working conditions |
+| 貢献 | こうけん | 贡献（名、可作动词）——「社会に貢献する」为社会做贡献；「チームへの貢献」对团队的贡献//(n, suru-verb) contribution — 「社会に貢献する」 to contribute to society; 「チームへの貢献」 contribution to the team |
+| 被害 | ひがい | 受害；损失（名）——指受到的损害，不是灾害本身；「被害を受ける」受灾、受害；「被害者」受害者//(n) damage; harm (suffered) — what victims suffer, not the disaster itself; 「被害を受ける」 to suffer damage; 「被害者」 a victim |
+| 影響 | えいきょう | 影响（名、可作动词）——「影響を与える」带来影响；「〜の影響を受ける」受到……的影响//(n, suru-verb) influence; effect — 「影響を与える」 to influence; 「〜の影響を受ける」 to be influenced by ~ |
+| 地域 | ちいき | 地区；区域（名）——常指当地社区；「地域社会」当地社区；「地域によって違う」因地区而异//(n) region; area; local community — 「地域社会」 the local community; 「地域によって違う」 it varies by region |
+| 社会 | しゃかい | 社会（名）——也指工作后的世界；「社会人」已工作的成年人；「社会に出る」走上社会//(n) society; the working world — 「社会人」 a working adult (no longer a student); 「社会に出る」 to start working life |
 
 ---
 

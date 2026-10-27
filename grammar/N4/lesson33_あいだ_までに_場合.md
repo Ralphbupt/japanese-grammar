@@ -12,22 +12,22 @@ This lesson covers expressions of time and situation — あいだ / あいだ�
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 留守 | るす | 不在家（名）//(n) being away from home; absence — rusu-chuu = while out; rusuden = answering machine |
-| 泥棒 | どろぼう | 小偷；窃贼（名）//(n) thief; burglar — someone who breaks in and steals |
-| 入る | はいる | 进入；加入（自动词）//(v, intrans.) to enter; to go in; to join — godan: hairimasu; the place takes ni; o-furo ni hairu = take a bath |
-| 締め切り | しめきり | 截止日期；期限（名）//(n) deadline; closing date — for assignments, applications and submissions; shimekiri ni maniau = meet the deadline |
-| 届ける | とどける | 送到；递交；报告（他动词）//(v, trans.) to deliver; to take (something) to; to report — also hand in a lost item to the police (keisatsu ni todokeru) |
-| 薬 | くすり | 药（名）//(n) medicine; drug — you "drink" it: kusuri o nomu, even for pills |
-| 飲む | のむ | 喝；吃（药）（他动词）——吃药也用这个词//(v, trans.) to drink; to take (medicine) — pills are "drunk" in Japanese |
-| 間に合う | まにあう | 来得及；赶上（自动词）//(v, intrans.) to make it in time; to be in time — ni maniau (a train, a deadline); also "to be enough": maniatte imasu = no thanks, I'm fine |
-| 停電 | ていでん | 停电（名、可作动词）//(n, suru-verb) power outage; blackout |
-| 地震 | じしん | 地震（名）//(n) earthquake — jishin ga okiru = an earthquake happens; small ones are often just yureta (it shook) |
-| 避難 | ひなん | 避难；疏散（名、可作动词）——不是“遇难”//(n, suru-verb) evacuation; taking refuge — fleeing to safety from a disaster; hinanjo = evacuation shelter |
-| 相談 | そうだん | 商量；咨询（名、可作动词）——不只是商量，也指找人咨询//(n, suru-verb) consultation; talking over; asking for advice — ni soudan suru = ask someone's advice; not only discussing as equals |
-| 傘 | かさ | 伞（名）//(n) umbrella — "open an umbrella" is kasa o sasu |
-| 持ってくる | もってくる | 带来；拿来（他动词）//(v, trans.) to bring (something) here; to fetch — carrying it toward the speaker |
-| 連絡 | れんらく | 联系；联络（名、可作动词）//(n, suru-verb) contact; getting in touch — by phone, email or message; renraku suru = let someone know |
-| 謝る | あやまる | 道歉；赔不是（自他动词）//(v, intrans./trans.) to apologize — the person takes ni (sensei ni ayamaru); the words themselves are usually sumimasen or gomen nasai |
+| 留守 | るす | 不在家（名）——「留守にする」不在家；「留守番」看家//(n) being away from home — 「留守にする」 to be out; 「留守番」 looking after the house |
+| 泥棒 | どろぼう | 小偷；窃贼（名）——「泥棒に入られる」家里遭贼；「泥棒が入る」小偷闯入//(n) thief; burglar — 「泥棒に入られる」 to be burgled; 「泥棒が入る」 a burglar breaks in |
+| 入る | はいる | 进入；加入（自动词）——属五段动词（「入ります」），地点用「に」；「部屋に入る」进房间；「お風呂に入る」洗澡//(v, intrans.) to enter; to go in; to join — conjugates like a u-verb (「入ります」), the place takes 「に」; 「部屋に入る」 to enter a room; 「お風呂に入る」 to take a bath |
+| 締め切り | しめきり | 截止日期（名）——「締め切りに間に合う」赶上截止日期；「締め切りを過ぎる」过了截止日期//(n) deadline — 「締め切りに間に合う」 to meet the deadline; 「締め切りを過ぎる」 to miss the deadline |
+| 届ける | とどける | 送到；交给；申报（他动词）——「荷物を届ける」送包裹；「警察に届ける」交给警察、报警//(v, trans.) to deliver; to take (something) to; to report — 「荷物を届ける」 to deliver a package; 「警察に届ける」 to hand in to / report to the police |
+| 薬 | くすり | 药（名）——吃药用「飲む」，药片也一样；「薬を飲む」吃药；「薬が効く」药见效//(n) medicine — you "drink" it, even pills; 「薬を飲む」 to take medicine; 「薬が効く」 the medicine works |
+| 飲む | のむ | 喝；吃（药）（他动词）——吃药也用这个词；「薬を飲む」吃药；「お酒を飲む」喝酒//(v, trans.) to drink; to take (medicine) — pills are "drunk" too; 「薬を飲む」 to take medicine; 「お酒を飲む」 to drink alcohol |
+| 間に合う | まにあう | 来得及；赶上；够用（自动词）——「電車に間に合う」赶上电车；「間に合っています」不需要了（谢绝推销）//(v, intrans.) to make it in time; to be enough — 「電車に間に合う」 to catch the train; 「間に合っています」 no thanks, I'm fine (to a salesperson) |
+| 停電 | ていでん | 停电（名、可作动词）——「停電になる」停电了；「停電中」停电中//(n, suru-verb) power outage; blackout — 「停電になる」 the power goes out; 「停電中」 during the blackout |
+| 地震 | じしん | 地震（名）——「地震が起きる」发生地震；「地震に強い」抗震//(n) earthquake — 「地震が起きる」 an earthquake happens; 「地震に強い」 earthquake-resistant |
+| 避難 | ひなん | 避难；疏散（名、可作动词）——不是“遇难”；「避難所」避难所；「高台に避難する」撤到高处避难//(n, suru-verb) evacuation; taking refuge — 「避難所」 an evacuation shelter; 「高台に避難する」 to evacuate to higher ground |
+| 相談 | そうだん | 商量；咨询（名、可作动词）——不只是平等商量，也指找人请教；「先生に相談する」找老师商量；「相談に乗る」帮人出主意//(n, suru-verb) consultation; asking for advice — 「先生に相談する」 to ask a teacher's advice; 「相談に乗る」 to give someone advice |
+| 傘 | かさ | 伞（名）——「傘をさす」撑伞；「傘を忘れる」忘带伞//(n) umbrella — 「傘をさす」 to put up an umbrella; 「傘を忘れる」 to forget one's umbrella |
+| 持ってくる | もってくる | 带来；拿来（他动词）——朝说话人方向带；「傘を持ってくる」带伞来；「持ってきてください」请拿过来//(v, trans.) to bring (something); to fetch — toward the speaker; 「傘を持ってくる」 to bring an umbrella; 「持ってきてください」 please bring it |
+| 連絡 | れんらく | 联系；联络（名、可作动词）——「連絡を取る」取得联系；「ご連絡ください」请联系我//(n, suru-verb) contact; getting in touch — 「連絡を取る」 to get in touch; 「ご連絡ください」 please contact me |
+| 謝る | あやまる | 道歉；赔不是（自他动词）——对象用「に」；「先生に謝る」向老师道歉；「素直に謝る」老老实实地道歉//(v, intrans./trans.) to apologize — the person takes 「に」; 「先生に謝る」 to apologize to the teacher; 「素直に謝る」 to own up and apologize |
 
 ---
 

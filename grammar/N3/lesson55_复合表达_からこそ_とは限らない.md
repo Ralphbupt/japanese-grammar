@@ -12,23 +12,23 @@ This lesson covers "compound expressions" — fixed patterns formed by combining
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 努力 | どりょく | 努力（名、可作动词）——在日语中是名词，“努力地”另有说法//(n, suru-verb) effort; hard work; endeavor — a noun: doryoku suru = make an effort; adverbial "hard" is isshoukenmei |
-| 成功 | せいこう | 成功（名、可作动词）//(n, suru-verb) success — ni seikou suru = succeed in; daiseikou = a huge success |
-| 規則 | きそく | 规则；规定（名）//(n) rule; regulation — written rules of a school, company or game; follow them = mamoru |
-| 制服 | せいふく | 制服；校服（名）//(n) uniform (school or work) — standard in Japanese middle and high schools |
-| 予感 | よかん | 预感（名、可作动词）//(n, suru-verb) premonition; hunch; feeling (that something will happen) — iya na yokan = bad feeling |
-| 必ずしも | かならずしも | 未必；不一定（副词）——后接否定//(adv) not necessarily; not always — always with a negative, often ...to wa kagiranai |
-| 期待 | きたい | 期待；期望（名、可作动词）//(n, suru-verb) expectation; hope; anticipation — usually positive; kitai hazure = a letdown; kitai ni kotaeru = live up to expectations |
-| 結局 | けっきょく | 最终；到头来（副词、名）//(adv, n) in the end; after all; eventually — often after effort or hesitation |
-| 順調 | じゅんちょう | 顺利（形容动词）//(na-adj) going smoothly; on track; favorable — junchou ni = smoothly |
-| 苦手 | にがて | 不擅长；怕（形容动词、名）——也可委婉表示不喜欢人或食物//(na-adj, n) bad at; weak point; not one's thing — also a soft way to say you dislike a food or person |
-| 得意 | とくい | 擅长；拿手（形容动词、名）——可以用来说自己//(na-adj, n) good at; one's strong point — fine to say about yourself, unlike jouzu; tokui ryouri = one's best dish |
-| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取//(n, suru-verb) passing (an exam); being accepted (to a school) — shiken ni goukaku suru = pass an exam; mainly exams and admissions |
-| 有名 | ゆうめい | 有名；著名（形容动词）//(na-adj) famous; well-known — yuumei na hito = a famous person; yuumei ni naru = become famous |
-| 値段 | ねだん | 价格；价钱（名）//(n) price; cost — the everyday word; kakaku is formal; nedan ga takai = expensive |
-| 確か | たしか | 确实；好像是（形容动词、副词）//(na-adj, adv) certain; sure; if I remember correctly — tashika ni = certainly; tashika alone = I believe |
-| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）//(n, suru-verb, na-adj) opposition; objection; the opposite — ni hantai suru = be against; also the reverse side or direction (hantai-gawa) |
-| 計画 | けいかく | 计划（名、可作动词）//(n, suru-verb) plan; project; scheme — a deliberate, detailed plan; more formal than yotei (an arrangement); keikaku-doori = according to plan |
+| 努力 | どりょく | 努力（名、可作动词）——是名词，“努力地”说「一生懸命」；「努力が報われる」努力得到回报；「努力を重ねる」不断努力//(n, suru-verb) effort; hard work — a noun, not an adverb ("work hard" is 「一生懸命」); 「努力が報われる」 one's efforts pay off; 「努力を重ねる」 to keep working hard |
+| 成功 | せいこう | 成功（名、可作动词）——「実験に成功する」实验成功；「大成功」大获成功//(n, suru-verb) success — 「実験に成功する」 to succeed in an experiment; 「大成功」 a huge success |
+| 規則 | きそく | 规则；规定（名）——「規則を守る」遵守规定；「規則正しい生活」有规律的生活//(n) rule; regulation — 「規則を守る」 to follow the rules; 「規則正しい生活」 a regular, orderly life |
+| 制服 | せいふく | 制服；校服（名）——「制服を着る」穿制服；「学校の制服」校服//(n) uniform (school or work) — 「制服を着る」 to wear a uniform; 「学校の制服」 a school uniform |
+| 予感 | よかん | 预感（名、可作动词）——「嫌な予感がする」有不好的预感；「予感が当たる」预感应验//(n, suru-verb) premonition; hunch — 「嫌な予感がする」 to have a bad feeling; 「予感が当たる」 the hunch proves right |
+| 必ずしも | かならずしも | 未必（副词）——后接否定；「必ずしも〜とは限らない」未必……；「必ずしも正しくない」不一定正确//(adv) not necessarily — always with a negative; 「必ずしも〜とは限らない」 it's not always the case that ~; 「必ずしも正しくない」 not necessarily right |
+| 期待 | きたい | 期待；期望（名、可作动词）——「期待に応える」不辜负期望；「期待外れ」令人失望//(n, suru-verb) expectation; hope — 「期待に応える」 to live up to expectations; 「期待外れ」 a letdown |
+| 結局 | けっきょく | 最终；到头来（副词、名）——多指经过努力或犹豫之后；「結局だめだった」最后还是不行；「結局のところ」归根结底//(adv, n) in the end; after all — often after effort or hesitation; 「結局だめだった」 it didn't work out after all; 「結局のところ」 when all is said and done |
+| 順調 | じゅんちょう | 顺利（形容动词）——「順調に進む」进展顺利；「順調な回復」恢复顺利//(na-adj) smooth; going well — 「順調に進む」 to go smoothly; 「順調な回復」 a steady recovery |
+| 苦手 | にがて | 不擅长；怕（形容动词、名）——也可委婉表示不喜欢；「数学が苦手だ」数学不好；「苦手な食べ物」不爱吃的东西//(na-adj, n) bad at; not one's thing — also a soft way to say you dislike something; 「数学が苦手だ」 to be bad at math; 「苦手な食べ物」 a food one doesn't like |
+| 得意 | とくい | 擅长；拿手（形容动词、名）——可以用来说自己，不像「上手」；「料理が得意だ」擅长做饭；「得意分野」拿手领域//(na-adj, n) good at; one's strong point — fine to say about yourself, unlike 「上手」; 「料理が得意だ」 to be good at cooking; 「得意分野」 one's specialty |
+| 合格 | ごうかく | 考上；（考试）通过（名、可作动词）——多指考试、录取；「試験に合格する」考试合格；「大学に合格する」考上大学//(n, suru-verb) passing (an exam); being accepted — 「試験に合格する」 to pass an exam; 「大学に合格する」 to get into a university |
+| 有名 | ゆうめい | 有名；著名（形容动词）——「有名な人」名人；「温泉で有名だ」以温泉闻名//(na-adj) famous; well-known — 「有名な人」 a famous person; 「温泉で有名だ」 famous for its hot springs |
+| 値段 | ねだん | 价格（名）——日常用词，正式说「価格」；「値段が高い」价格贵；「値段の割に」就价格而言//(n) price — everyday word; formal is 「価格」; 「値段が高い」 expensive; 「値段の割に」 for the price |
+| 確か | たしか | 确实；（记得）好像是（形容动词、副词）——单独作副词表示“如果没记错”；「確かに」的确；「確かな情報」可靠的消息//(na-adj, adv) certain; if I remember right — alone as an adverb, "I believe"; 「確かに」 certainly; 「確かな情報」 reliable information |
+| 反対 | はんたい | 反对；相反（名、可作动词、形容动词）——「計画に反対する」反对计划；「反対側」对面，相反方向//(n, suru-verb, na-adj) opposition; the opposite — 「計画に反対する」 to oppose a plan; 「反対側」 the opposite side |
+| 計画 | けいかく | 计划（名、可作动词）——比「予定」更周密、正式；「計画を立てる」制定计划；「計画通り」按计划//(n, suru-verb) plan; project — a worked-out plan, more deliberate than 「予定」; 「計画を立てる」 to make a plan; 「計画通り」 according to plan |
 
 ---
 

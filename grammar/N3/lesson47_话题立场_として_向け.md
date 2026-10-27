@@ -12,23 +12,23 @@ This group revolves around "from what standpoint/perspective": as a certain role
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 留学生 | りゅうがくせい | 留学生（名）//(n) international student; student studying abroad — in Japan, usually foreign students studying there |
-| 責任者 | せきにんしゃ | 负责人（名）//(n) person in charge; manager — "Who is in charge?" = sekininsha wa dare desu ka |
-| 教師 | きょうし | 教师；老师（名）//(n) teacher; instructor — job title; addressing a teacher uses sensei |
-| 初心者 | しょしんしゃ | 初学者；新手（名）//(n) beginner; novice — shoshinsha-muke = for beginners, on courses and books |
-| 値段 | ねだん | 价格；价钱（名）//(n) price; cost — the everyday word; kakaku is formal; nedan ga takai = expensive |
-| 若い | わかい | 年轻的（形容词）//(i-adj) young; youthful; inexperienced — of people; a lower number is also wakai (wakai bangou) |
-| 立派 | りっぱ | 出色的；了不起的（形容动词）//(na-adj) splendid; admirable; impressive — praising people, buildings or achievements |
-| 給料 | きゅうりょう | 工资；薪水（名）//(n) salary; pay; wages — monthly pay from an employer; kyuuryoubi = payday |
-| 年齢 | ねんれい | 年龄（名）//(n) age (of a person) — formal, used on forms and in rules; everyday speech says toshi; nenrei seigen = age limit |
-| 子ども向け | こどもむけ | 面向儿童（名）——指“专为…设计”//(n) aimed at children; for kids — -muke = designed for a target audience (kodomo-muke no hon) |
-| 大人向き | おとなむき | 适合大人（名）——指“本身适合…”//(n) suited to adults — -muki = naturally suited to, not necessarily designed for (compare -muke) |
-| 海外旅行 | かいがいりょこう | 出国旅游（名）//(n) overseas trip; travel abroad — kaigai ryokou ni iku = go on a trip abroad |
-| 活躍 | かつやく | 大显身手；表现活跃（名、可作动词）——不是“性格活泼”//(n, suru-verb) being active (and successful); playing an active role — doing well in a field or role, not being lively |
-| 代表 | だいひょう | 代表（名、可作动词）//(n, suru-verb) representative; delegate; (national) team — nihon daihyou = the Japan national team |
-| 簡単 | かんたん | 简单；容易（形容动词）//(na-adj) simple; easy — not complicated; compare yasashii (gentle, not demanding) |
-| 複雑 | ふくざつ | 复杂（形容动词）//(na-adj) complicated; complex; intricate — also mixed feelings: fukuzatsu na kimochi |
-| 意外 | いがい | 意外；没想到（形容动词）——不指“事故”//(na-adj) unexpected; surprising — igai ni = surprisingly; not "an accident" as in Chinese |
+| 留学生 | りゅうがくせい | 留学生（名）——在日本多指来日的外国学生；「留学生向け」面向留学生；「交換留学生」交换生//(n) international student — in Japan, usually foreign students there; 「留学生向け」 for international students; 「交換留学生」 an exchange student |
+| 責任者 | せきにんしゃ | 负责人（名）——「責任者を呼ぶ」叫负责人来；「責任者として」作为负责人//(n) person in charge — 「責任者を呼ぶ」 to ask for the manager; 「責任者として」 as the person in charge |
+| 教師 | きょうし | 教师（名）——职业名称，称呼老师用「先生」；「教師になる」当老师；「日本語教師」日语老师//(n) teacher — a job title; address teachers as 「先生」; 「教師になる」 to become a teacher; 「日本語教師」 a Japanese teacher |
+| 初心者 | しょしんしゃ | 初学者；新手（名）——「初心者向け」面向初学者；「初心者マーク」新手驾驶标志//(n) beginner — 「初心者向け」 for beginners; 「初心者マーク」 the new-driver sticker |
+| 値段 | ねだん | 价格（名）——日常用词，正式说「価格」；「値段が高い」价格贵；「値段の割に」就价格而言//(n) price — everyday word; formal is 「価格」; 「値段が高い」 expensive; 「値段の割に」 for the price |
+| 若い | わかい | 年轻（形容词）——「若い人」年轻人；「年より若く見える」显得比实际年轻//(i-adj) young — 「若い人」 young people; 「年より若く見える」 to look young for one's age |
+| 立派 | りっぱ | 出色；了不起（形容动词）——「立派な人」了不起的人；「立派な建物」气派的建筑//(na-adj) splendid; admirable — 「立派な人」 a fine person; 「立派な建物」 an impressive building |
+| 給料 | きゅうりょう | 工资（名）——「給料が上がる」涨工资；「給料日」发薪日//(n) salary; pay — 「給料が上がる」 to get a raise; 「給料日」 payday |
+| 年齢 | ねんれい | 年龄（名）——正式用语，口语说「年」；「年齢を問わず」不论年龄；「年齢制限」年龄限制//(n) age — formal; everyday speech says 「年」; 「年齢を問わず」 regardless of age; 「年齢制限」 an age limit |
+| 子ども向け | こどもむけ | 面向儿童（名）——「向け」指专门为某对象设计；「子ども向けの本」儿童读物；「子ども向け番組」儿童节目//(n) for children; aimed at kids — 「向け」 means made for a target audience; 「子ども向けの本」 a children's book; 「子ども向け番組」 a kids' TV show |
+| 大人向き | おとなむき | 适合大人（名）——「向き」指本身适合，不一定专为其设计（对比「向け」）；「大人向きの味」适合大人的口味//(n) suited to adults — 「向き」 means naturally suited to, not necessarily made for (compare 「向け」); 「大人向きの味」 a grown-up taste |
+| 海外旅行 | かいがいりょこう | 出国旅游（名）——「海外旅行に行く」去国外旅游；「初めての海外旅行」第一次出国旅游//(n) overseas trip — 「海外旅行に行く」 to travel abroad; 「初めての海外旅行」 one's first trip abroad |
+| 活躍 | かつやく | 大显身手；活跃（名、可作动词）——指在某领域表现出色，不是“性格活泼”；「大活躍」大放异彩；「世界で活躍する」活跃在世界舞台//(n, suru-verb) being active and successful; playing a big role — doing well in a field, not being lively; 「大活躍」 a star performance; 「世界で活躍する」 to make one's mark worldwide |
+| 代表 | だいひょう | 代表（名、可作动词）——「日本代表」日本国家队；「会社を代表して」代表公司//(n, suru-verb) representative; national team — 「日本代表」 the Japan national team; 「会社を代表して」 on behalf of the company |
+| 簡単 | かんたん | 简单（形容动词）——「簡単な問題」简单的问题；「簡単に言うと」简单地说//(na-adj) simple; easy — 「簡単な問題」 an easy question; 「簡単に言うと」 to put it simply |
+| 複雑 | ふくざつ | 复杂（形容动词）——也可形容心情；「複雑な気持ち」复杂的心情；「複雑な問題」复杂的问题//(na-adj) complicated; complex — 「複雑な気持ち」 mixed feelings; 「複雑な問題」 a complex problem |
+| 意外 | いがい | 意外；没想到（形容动词）——只指“出乎意料”，不指“事故”；「意外に」出乎意料地；「意外な結果」意想不到的结果//(na-adj) unexpected; surprising — 「意外に」 surprisingly; 「意外な結果」 an unexpected result |
 
 ---
 

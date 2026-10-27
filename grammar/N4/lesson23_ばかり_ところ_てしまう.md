@@ -12,34 +12,34 @@
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 文句 | もんく | 抱怨；牢骚（名）//(n) complaint; grumbling; objection — monku o iu = complain; monku nashi = perfect, no complaints |
-| 太る | ふとる | 发胖；变胖（自动词）//(v, intrans.) to gain weight; to get fat — "is fat" is futotte iru, the progressive form |
-| 出かける | でかける | 出门；外出（自动词）//(v, intrans.) to go out; to leave (the house) — going out somewhere, without naming the destination |
-| なくす | なくす | 弄丢；丢失（他动词）//(v, trans.) to lose (something); to get rid of — losing an item; losing a game is makeru |
-| データ | データ | 数据；资料（名）//(n) data — files, figures, saved information |
-| 消す | けす | 关掉；删除；擦掉（他动词）//(v, trans.) to turn off; to erase; to delete — lights, TV, data or writing on a board; denki o kesu = turn off the light |
-| 乗り遅れる | のりおくれる | 没赶上（车、飞机）（自动词）//(v, intrans.) to miss (a train, bus, flight) — arriving too late to board |
-| つい | つい | 不由得；不小心（副词）//(adv) without meaning to; by habit — usually with ~te shimau (tsui tabete shimatta), implying regret |
-| ホテル | ホテル | 酒店；宾馆（名）//(n) hotel — Western-style; a traditional Japanese inn is a ryokan |
-| 予約 | よやく | 预约；预订（名、可作动词）//(n, suru-verb) reservation; booking; appointment — restaurants, hotels, doctors, tickets |
-| 資料 | しりょう | 资料；材料（名）//(n) materials; documents — handouts or reference documents for a meeting or research |
-| コピー | コピー | 复印；复制（名、可作动词）//(n, suru-verb) photocopy; copy — mainly photocopying paper |
-| 壁 | かべ | 墙；墙壁；障碍（名）//(n) wall; obstacle; barrier — figuratively too: kabe ni butsukaru = hit a wall |
-| 貼る | はる | 贴；粘贴（他动词）//(v, trans.) to stick; to paste; to put up — posters, stamps, stickers |
-| 置く | おく | 放；放置（他动词）//(v, trans.) to put; to place; to leave (somewhere) — ~te oku = do in advance, built on this verb |
-| 印刷 | いんさつ | 打印；印刷（名、可作动词）//(n, suru-verb) printing — both office printing and printing presses |
-| 寝坊 | ねぼう | 睡过头；睡懒觉（名、可作动词）//(n, suru-verb) oversleeping — waking up too late by accident; the standard excuse for being late |
-| ポスター | ポスター | 海报（名）//(n) poster |
-| 地震 | じしん | 地震（名）//(n) earthquake — jishin ga okiru = an earthquake happens; small ones are often just yureta (it shook) |
-| 気温 | きおん | 气温（名）//(n) (air) temperature — outdoor air only; body temperature is taion, water temperature suion |
-| 出張 | しゅっちょう | 出差（名、可作动词）//(n, suru-verb) business trip — shucchou ni iku = go on a business trip; the destination takes ni |
-| 調子 | ちょうし | 状态；情况（名）//(n) condition; (physical) shape — of one's body, a machine or work; choushi ga ii / warui = going well / off |
-| 母校 | ぼこう | 母校（名）//(n) alma mater; one's old school — any school you graduated from |
-| 割る | わる | 打碎；打破；分开（他动词）//(v, trans.) to break; to split; to divide — glass or dishes; also dividing numbers |
-| 漫画 | まんが | 漫画（名）//(n) manga; comic; cartoon |
-| 告白 | こくはく | 表白；坦白（名、可作动词）//(n, suru-verb) confession (of love); confession — mostly telling someone you like them; also admitting a secret |
-| 振る | ふる | 甩（恋人）；挥；摇（他动词）//(v, trans.) to dump (a partner); to wave; to shake — furareta = got dumped (passive); te o furu = wave |
-| 上司 | じょうし | 上司；上级（名）//(n) boss; superior (at work) — anyone above you in rank, not only your direct manager |
+| 文句 | もんく | 抱怨；牢骚（名）——「文句を言う」发牢骚；「文句なし」无可挑剔//(n) complaint; grumbling — 「文句を言う」 to complain; 「文句なし」 perfect, no complaints |
+| 太る | ふとる | 发胖（自动词）——“胖”的状态用「太っている」；「3キロ太る」胖了三公斤；「太りやすい」容易胖//(v, intrans.) to gain weight — "is fat" is 「太っている」; 「3キロ太る」 to put on 3 kg; 「太りやすい」 to gain weight easily |
+| 出かける | でかける | 出门；外出（自动词）——「買い物に出かける」出门买东西；「出かける準備」出门前的准备//(v, intrans.) to go out; to leave the house — 「買い物に出かける」 to go out shopping; 「出かける準備」 getting ready to go out |
+| なくす | なくす | 弄丢；失去（他动词）——「財布をなくす」把钱包弄丢；「自信をなくす」失去信心//(v, trans.) to lose (something); to get rid of — 「財布をなくす」 to lose one's wallet; 「自信をなくす」 to lose confidence |
+| データ | データ | 数据（名）——「データを保存する」保存数据；「データが消える」数据丢了//(n) data — 「データを保存する」 to save data; 「データが消える」 data gets lost |
+| 消す | けす | 关掉；删除；擦掉（他动词）——「電気を消す」关灯；「データを消す」删数据//(v, trans.) to turn off; to erase; to delete — 「電気を消す」 to turn off the light; 「データを消す」 to delete data |
+| 乗り遅れる | のりおくれる | 没赶上（车、飞机）（自动词）——「電車に乗り遅れる」没赶上电车；「終電に乗り遅れる」错过末班车//(v, intrans.) to miss (a train, bus, flight) — 「電車に乗り遅れる」 to miss the train; 「終電に乗り遅れる」 to miss the last train |
+| つい | つい | 不由得；不小心（副词）——多与「〜てしまう」连用，带懊悔；「つい食べてしまう」忍不住吃了；「つい言ってしまう」不小心说漏嘴//(adv) without meaning to; by habit — usually with 「〜てしまう」, implying regret; 「つい食べてしまう」 can't help eating it; 「つい言ってしまう」 to let it slip |
+| ホテル | ホテル | 酒店（名）——日式旅馆是「旅館」；「ホテルに泊まる」住酒店；「ホテルを予約する」订酒店//(n) hotel — a traditional inn is 「旅館」; 「ホテルに泊まる」 to stay at a hotel; 「ホテルを予約する」 to book a hotel |
+| 予約 | よやく | 预约；预订（名、可作动词）——餐厅、酒店、看病都用；「店を予約する」订餐厅；「予約を取る」预约//(n, suru-verb) reservation; booking; appointment — 「店を予約する」 to book a restaurant; 「予約を取る」 to make an appointment |
+| 資料 | しりょう | 资料；材料（名）——「会議の資料」会议资料；「資料を集める」收集资料//(n) materials; documents — handouts or reference documents; 「会議の資料」 meeting documents; 「資料を集める」 to gather materials |
+| コピー | コピー | 复印；复制（名、可作动词）——「コピーを取る」复印；「資料をコピーする」复印资料//(n, suru-verb) photocopy; copy — 「コピーを取る」 to make a copy; 「資料をコピーする」 to copy documents |
+| 壁 | かべ | 墙；障碍（名）——「壁に貼る」贴在墙上；「壁にぶつかる」碰壁//(n) wall; obstacle — 「壁に貼る」 to put up on the wall; 「壁にぶつかる」 to hit a wall (figuratively too) |
+| 貼る | はる | 贴；粘贴（他动词）——「ポスターを貼る」贴海报；「切手を貼る」贴邮票//(v, trans.) to stick; to paste; to put up — 「ポスターを貼る」 to put up a poster; 「切手を貼る」 to stick on a stamp |
+| 置く | おく | 放；放置（他动词）——「〜ておく」（事先做好）就源自这个词；「机の上に置く」放在桌上；「荷物を置く」放下行李//(v, trans.) to put; to place; to leave — the source of 「〜ておく」 (do in advance); 「机の上に置く」 to put on the desk; 「荷物を置く」 to put down one's bags |
+| 印刷 | いんさつ | 打印；印刷（名、可作动词）——「資料を印刷する」打印资料；「カラー印刷」彩色打印//(n, suru-verb) printing — office printing and printing presses alike; 「資料を印刷する」 to print documents; 「カラー印刷」 color printing |
+| 寝坊 | ねぼう | 睡过头（名、可作动词）——指不小心起晚了；「寝坊して遅刻する」睡过头迟到；「朝寝坊」早上睡懒觉//(n, suru-verb) oversleeping — waking too late by accident; 「寝坊して遅刻する」 to oversleep and be late; 「朝寝坊」 sleeping in |
+| ポスター | ポスター | 海报（名）——「ポスターを貼る」贴海报//(n) poster — 「ポスターを貼る」 to put up a poster |
+| 地震 | じしん | 地震（名）——「地震が起きる」发生地震；「地震に強い」抗震//(n) earthquake — 「地震が起きる」 an earthquake happens; 「地震に強い」 earthquake-resistant |
+| 気温 | きおん | 气温（名）——只指空气温度，体温是「体温」；「気温が上がる」气温上升；「気温が下がる」气温下降//(n) (air) temperature — outdoor air only; body temperature is 「体温」; 「気温が上がる」 the temperature rises; 「気温が下がる」 the temperature drops |
+| 出張 | しゅっちょう | 出差（名、可作动词）——「大阪に出張する」去大阪出差；「出張中」出差中//(n, suru-verb) business trip — 「大阪に出張する」 to go to Osaka on business; 「出張中」 away on business |
+| 調子 | ちょうし | 状态；情况（名）——「調子がいい」状态好；「体の調子が悪い」身体不舒服//(n) condition; shape (of body, machine, work) — 「調子がいい」 going well, in good shape; 「体の調子が悪い」 not feeling well |
+| 母校 | ぼこう | 母校（名）——「母校を訪ねる」回母校看看；「母校の先生」母校的老师//(n) alma mater; one's old school — 「母校を訪ねる」 to visit one's old school; 「母校の先生」 a teacher from one's old school |
+| 割る | わる | 打碎；分开；除（他动词）——「コップを割る」打碎杯子；「割り勘」AA制//(v, trans.) to break; to split; to divide — 「コップを割る」 to break a glass; 「割り勘」 splitting the bill |
+| 漫画 | まんが | 漫画（名）——「漫画を読む」看漫画；「漫画家」漫画家//(n) manga; comic — 「漫画を読む」 to read manga; 「漫画家」 a manga artist |
+| 告白 | こくはく | 表白；坦白（名、可作动词）——日常多指表白心意；「好きな人に告白する」向喜欢的人表白；「告白される」被表白//(n, suru-verb) confession (of love); confession — mostly telling someone you like them; 「好きな人に告白する」 to tell someone you like them; 「告白される」 to be asked out |
+| 振る | ふる | 甩（恋人）；挥；摇（他动词）——「彼女に振られる」被女朋友甩了；「手を振る」挥手//(v, trans.) to dump (a partner); to wave; to shake — 「彼女に振られる」 to get dumped by one's girlfriend; 「手を振る」 to wave |
+| 上司 | じょうし | 上司；上级（名）——比自己职位高的都算，不只是直属领导；「上司に相談する」找上司商量；「上司に叱られる」被上司训//(n) boss; superior (at work) — anyone above you, not just your direct manager; 「上司に相談する」 to talk to one's boss; 「上司に叱られる」 to be told off by the boss |
 
 ---
 

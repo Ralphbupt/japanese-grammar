@@ -12,23 +12,23 @@ This lesson covers N2 grammar for "emphatic evaluation" and "negative conjecture
 
 | 单词 | 读音 | 含义 |
 |------|------|------|
-| 値段 | ねだん | 价格；价钱（名）//(n) price; cost — the everyday word; kakaku is formal; nedan ga takai = expensive |
-| 評判 | ひょうばん | 评价；口碑（名）//(n) reputation; public opinion — what people say about a shop, product or person; hyouban ga ii = well-reviewed |
-| さすが | さすが | 不愧；果然（副词）//(adv) as expected (of); truly impressive — praise: sasuga sensei = just what you'd expect from a teacher |
-| 留学 | りゅうがく | 留学（名、可作动词）//(n, suru-verb) studying abroad — the destination takes ni (Nihon ni ryuugaku suru); ryuugakusei = international student, including foreigners in Japan |
-| 努力 | どりょく | 努力（名、可作动词）——在日语中是名词，“努力地”另有说法//(n, suru-verb) effort; hard work; endeavor — a noun: doryoku suru = make an effort; adverbial "hard" is isshoukenmei |
-| 景色 | けしき | 景色；风景（名）//(n) scenery; view; landscape — natural or city views, e.g. from a mountain top or a window |
-| 一流 | いちりゅう | 一流；顶级（名）//(n) first-rate; top-class; leading — before a noun with "no": a first-class hotel or chef |
-| 挑戦 | ちょうせん | 挑战（名、可作动词）——多指“挑战自己、尝试难事”//(n, suru-verb) challenge; attempt; trying (something difficult) — "try one's hand at"; not just a contest |
-| 覚悟 | かくご | 思想准备；决心（名、可作动词）——不是中文“觉悟（觉醒）”//(n, suru-verb) resolve; readiness (for hardship) — bracing for something hard or a bad outcome; kakugo shite iru = be prepared for the worst |
-| 諦める | あきらめる | 放弃；死心（他动词）//(v, trans.) to give up; to abandon (hope); to resign oneself — accepting something is out of reach; yameru is simply stopping |
-| 二度と | にどと | 再也（不）（副词）//(adv) never again (with a negative) — "will never do it again" |
-| 過ち | あやまち | 过错；过失（名）//(n) mistake; fault; error (moral or serious) — formal; "repeat the same mistake" |
-| 繰り返す | くりかえす | 重复；反复（他动词）//(v, trans.) to repeat; to do over again — repeat mistakes, history, words |
-| 怪しい | あやしい | 可疑的；靠不住的（形容词）//(i-adj) suspicious; dubious; doubtful — suspicious people, or doubtful weather and plans |
-| 済む | すむ | 了结；解决（自动词）——常用于“不用…就解决了”//(v, intrans.) to get by (without); to be settled; to end — zu ni sumu = get away without having to; also the root of sumimasen |
-| 贅沢 | ぜいたく | 奢侈；奢华（名、形容动词）//(n, na-adj) luxury; extravagance; luxurious — zeitaku o iu = be choosy; chotto zeitaku = a little treat |
-| ボーナス | ぼーなす | 奖金（名）//(n) bonus (seasonal salary bonus) — paid twice a year in Japanese companies |
+| 値段 | ねだん | 价格（名）——日常用词，正式说「価格」；「値段が高い」价格贵；「値段の割に」就价格而言//(n) price — everyday word; formal is 「価格」; 「値段が高い」 expensive; 「値段の割に」 for the price |
+| 評判 | ひょうばん | 评价；口碑（名）——「評判がいい」口碑好；「評判の店」有名气的店//(n) reputation; what people say — 「評判がいい」 well spoken of; 「評判の店」 a much-talked-about shop |
+| さすが | さすが | 不愧；果然（副词）——表示称赞，名不虚传；「さすがプロだ」不愧是专业的；「さすがに疲れた」到底还是累了//(adv) as you'd expect (of); truly impressive — praise; 「さすがプロだ」 that's a pro for you; 「さすがに疲れた」 even I'm tired now |
+| 留学 | りゅうがく | 留学（名、可作动词）——「日本に留学する」到日本留学；「留学生」留学生（含在日外国学生）//(n, suru-verb) studying abroad — 「日本に留学する」 to study in Japan; 「留学生」 an international student |
+| 努力 | どりょく | 努力（名、可作动词）——是名词，“努力地”说「一生懸命」；「努力が報われる」努力得到回报；「努力を重ねる」不断努力//(n, suru-verb) effort; hard work — a noun, not an adverb ("work hard" is 「一生懸命」); 「努力が報われる」 one's efforts pay off; 「努力を重ねる」 to keep working hard |
+| 景色 | けしき | 景色；风景（名）——「景色がいい」风景好；「窓からの景色」窗外的景色//(n) scenery; view — 「景色がいい」 the view is lovely; 「窓からの景色」 the view from the window |
+| 一流 | いちりゅう | 一流；顶级（名）——「一流企業」一流企业；「一流のシェフ」顶级厨师//(n) first-rate; top-class — 「一流企業」 a top company; 「一流のシェフ」 a top chef |
+| 挑戦 | ちょうせん | 挑战（名、可作动词）——多指尝试难事、挑战自我；「新しいことに挑戦する」尝试新事物；「世界記録に挑戦する」冲击世界纪录//(n, suru-verb) challenge; attempt — trying something hard, not just a contest; 「新しいことに挑戦する」 to try something new; 「世界記録に挑戦する」 to go for a world record |
+| 覚悟 | かくご | 思想准备；决心（名、可作动词）——不是中文“觉悟”，指对困难或坏结果做好心理准备；「覚悟を決める」下定决心；「覚悟の上で」明知如此仍……//(n, suru-verb) resolve; readiness (for hardship) — bracing yourself for something hard or a bad outcome; 「覚悟を決める」 to make up one's mind; 「覚悟の上で」 fully aware of the risks |
+| 諦める | あきらめる | 放弃；死心（他动词）——接受得不到的现实，单纯停止用「やめる」；「夢を諦める」放弃梦想；「最後まで諦めない」坚持到底不放弃//(v, trans.) to give up — accepting it's out of reach; simply stopping is 「やめる」; 「夢を諦める」 to give up on a dream; 「最後まで諦めない」 to never give up |
+| 二度と | にどと | 再也（不）（副词）——后接否定；「二度と〜ない」再也不……；「二度と来るまい」再也不来了//(adv) never again (with a negative) — 「二度と〜ない」 never ~ again; 「二度と来るまい」 I'll never come back |
+| 過ち | あやまち | 过错；过失（名）——书面语，指严重或道德上的错；「過ちを犯す」犯错；「同じ過ちを繰り返す」重蹈覆辙//(n) mistake; fault (serious or moral) — formal; 「過ちを犯す」 to commit an error; 「同じ過ちを繰り返す」 to repeat the same mistake |
+| 繰り返す | くりかえす | 重复；反复（他动词）——「失敗を繰り返す」一再失败；「歴史は繰り返す」历史会重演//(v, trans.) to repeat — 「失敗を繰り返す」 to keep failing; 「歴史は繰り返す」 history repeats itself |
+| 怪しい | あやしい | 可疑的；靠不住的（形容词）——「怪しい人」可疑的人；「天気が怪しい」天要变了//(i-adj) suspicious; dubious — 「怪しい人」 a suspicious person; 「天気が怪しい」 the weather looks iffy |
+| 済む | すむ | 了结；解决；不用……就行（自动词）——「〜ずに済む」不用……就解决了；「謝って済む問題じゃない」不是道歉就能了结的事//(v, intrans.) to be settled; to end; to get by (without) — 「〜ずに済む」 to get away without having to ~; 「謝って済む問題じゃない」 an apology won't settle this |
+| 贅沢 | ぜいたく | 奢侈；奢华（名、形容动词）——「贅沢を言う」挑三拣四；「たまの贅沢」偶尔奢侈一下//(n, na-adj) luxury; extravagance — 「贅沢を言う」 to be picky; 「たまの贅沢」 an occasional treat |
+| ボーナス | ぼーなす | 奖金（名）——日本公司通常夏冬各发一次；「ボーナスが出る」发奖金；「冬のボーナス」冬季奖金//(n) bonus (seasonal) — usually paid in summer and winter; 「ボーナスが出る」 bonuses are paid; 「冬のボーナス」 the winter bonus |
 
 ---
 
