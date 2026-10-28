@@ -1,0 +1,887 @@
+[
+  {
+    "id": "n2-mg-502",
+    "type": "youhou",
+    "refs": [
+      "lesson69#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<交渉>>",
+    "options": [
+      "給料を上げてもらえるよう、会社と交渉した。",
+      "道に迷ったので、近くの人に駅への行き方を交渉した。",
+      "久しぶりに会った友達と、昔の話を交渉して楽しんだ。",
+      "医者に交渉してもらったら、ただの風邪だと言われた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "交渉：为达成协议而与对方商谈。正确句：为了让公司给我加薪，我和公司进行了交涉。",
+      "en": "交渉: negotiating to reach an agreement. Correct: I negotiated with the company to get a pay rise."
+    },
+    "why": {
+      "zh": "「交渉」是为了条件、利益与对方谈判，常说「〜と交渉する」。",
+      "en": "「交渉」 is bargaining over terms: 「〜と交渉する」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "问路是「尋ねた」「聞いた」。",
+        "en": "Asking the way is 「尋ねた」 or 「聞いた」."
+      },
+      {
+        "zh": "和朋友聊往事是「して」「話して」，不是谈判。",
+        "en": "Chatting about old times is 「話して」, not negotiating."
+      },
+      {
+        "zh": "看病是「診察して」「診て」。",
+        "en": "Being examined by a doctor is 「診察して」 or 「診て」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-503",
+    "type": "youhou",
+    "refs": [
+      "lesson67#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<採用>>",
+    "options": [
+      "会議で、彼女の出した案が採用された。",
+      "毎朝、駅まで自転車を採用している。",
+      "食後にこの薬を三錠ずつ採用してください。",
+      "図書館で本を三冊採用した。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "採用：采纳（意见、方案）；录用（人）。正确句：在会议上，她提出的方案被采纳了。",
+      "en": "採用: adopting (an idea, a plan) or hiring (a person). Correct: Her proposal was adopted at the meeting."
+    },
+    "why": {
+      "zh": "「採用」用于方案、意见被采纳，或公司录用人员。",
+      "en": "「採用」 is for adopting a plan or hiring staff."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "使用交通工具是「利用している」「使っている」。",
+        "en": "Using a bicycle is 「利用している」 or 「使っている」."
+      },
+      {
+        "zh": "吃药是「飲んで」「服用して」。",
+        "en": "Taking medicine is 「飲んで」 or 「服用して」."
+      },
+      {
+        "zh": "借书是「借りた」。",
+        "en": "Borrowing books is 「借りた」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-504",
+    "type": "youhou",
+    "refs": [
+      "lesson67#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<検討>>",
+    "options": [
+      "ご提案の件は、社内でよく検討してからお返事します。",
+      "毎朝、体重を検討してノートに書いている。",
+      "落とした財布を一日中検討したが、見つからなかった。",
+      "駅に着いたら、電話で検討してください。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "検討：仔细研究、考虑是否可行。正确句：您的提案我们会在公司内部仔细研究后再答复。",
+      "en": "検討: examining a matter carefully before deciding. Correct: We'll consider your proposal carefully in-house and then get back to you."
+    },
+    "why": {
+      "zh": "「検討」的对象是方案、问题等需要判断的事情。",
+      "en": "「検討」 is weighing up a proposal or problem before deciding."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "称体重是「量って」。",
+        "en": "Weighing yourself is 「量って」."
+      },
+      {
+        "zh": "找钱包是「探した」。",
+        "en": "Looking for a wallet is 「探した」."
+      },
+      {
+        "zh": "打电话联系是「連絡して」。",
+        "en": "Getting in touch by phone is 「連絡して」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-505",
+    "type": "youhou",
+    "refs": [
+      "lesson69#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<方針>>",
+    "options": [
+      "新しい社長は、海外での事業を広げる方針を発表した。",
+      "台風の方針が変わって、東京には来ないらしい。",
+      "この機械の方針をよく読んでから使ってください。",
+      "時計の方針が三時を指している。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "方針：（组织、个人）今后行事的方向、原则。正确句：新社长发布了扩大海外业务的方针。",
+      "en": "方針: the policy or course an organisation sets. Correct: The new president announced a policy of expanding business overseas."
+    },
+    "why": {
+      "zh": "「方針」是决定今后怎么做的基本方向，常说「〜方針を立てる／発表する」。",
+      "en": "「方針」 is a basic policy for what to do: 「方針を立てる／発表する」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "台风的路线是「進路」。",
+        "en": "A typhoon's path is its 「進路」."
+      },
+      {
+        "zh": "机器的使用方法写在「説明書」里。",
+        "en": "How to use a machine is in the 「説明書」 (manual)."
+      },
+      {
+        "zh": "钟表的指针是「針」。",
+        "en": "A clock's hand is its 「針」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-506",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<中断>>",
+    "options": [
+      "激しい雨のため、試合は一時中断された。",
+      "長い髪を短く中断して、すっきりした。",
+      "信号のない所で道路を中断するのは危険だ。",
+      "電気代を中断するために、使わない電気は消している。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "中断：进行中的事情中途停下。正确句：因为大雨，比赛一度中断。",
+      "en": "中断: something in progress stopping partway. Correct: Because of the heavy rain, the match was suspended for a while."
+    },
+    "why": {
+      "zh": "「中断」用于正在进行的活动（比赛、会议、工作）中途停止。",
+      "en": "「中断」 is for an activity in progress (a match, a meeting, work) stopping partway."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "剪头发是「切って」。",
+        "en": "Cutting hair is 「切って」."
+      },
+      {
+        "zh": "横穿马路是「横断する」。",
+        "en": "Crossing a road is 「横断する」."
+      },
+      {
+        "zh": "节省电费是「節約する」。",
+        "en": "Saving on electricity is 「節約する」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-507",
+    "type": "youhou",
+    "difficulty": 3,
+    "stem": "<<辞退>>",
+    "options": [
+      "体調が悪かったので、大会への出場を辞退した。",
+      "毎日薬を飲んだおかげで、病気が辞退した。",
+      "雨が辞退して、やっと晴れてきた。",
+      "父は六十五歳で、長年勤めた会社を辞退した。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "辞退：推辞、谢绝（别人给的资格、邀请等）。正确句：因为身体不好，谢绝了比赛的出场资格。",
+      "en": "辞退: declining something offered (a place, an invitation). Correct: I wasn't well, so I withdrew from the tournament."
+    },
+    "why": {
+      "zh": "「辞退」是自己主动放弃被给予的资格、奖项、邀请等。",
+      "en": "「辞退」 is turning down a place, prize or invitation you've been given."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "病好了是「治った」。",
+        "en": "An illness getting better is 「治った」."
+      },
+      {
+        "zh": "雨停了是「やんで」。",
+        "en": "Rain stopping is 「やんで」."
+      },
+      {
+        "zh": "退休、辞职是「退職した」「辞めた」，不说「会社を辞退」。",
+        "en": "Retiring is 「退職した」 or 「辞めた」; 「会社を辞退」 isn't said."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-508",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<生じる>>",
+    "options": [
+      "説明が足りなかったため、二人の間に誤解が生じた。",
+      "姉に女の子が生じて、私はおばになった。",
+      "毎朝六時に生じて、ジョギングをしている。",
+      "部屋が暗いので、電気を生じてください。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "生じる：（问题、误会、变化等）产生、发生。正确句：因为说明不够，两人之间产生了误会。",
+      "en": "生じる: (a problem, misunderstanding, change) arising. Correct: Because the explanation was too short, a misunderstanding arose between the two."
+    },
+    "why": {
+      "zh": "「生じる」的主语是「誤解」「問題」「変化」「疑問」等抽象的事。",
+      "en": "「生じる」 takes abstract subjects: 「誤解」「問題」「変化」「疑問」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "生孩子是「生まれて」。",
+        "en": "A baby being born is 「生まれて」."
+      },
+      {
+        "zh": "起床是「起きて」。",
+        "en": "Getting up is 「起きて」."
+      },
+      {
+        "zh": "开灯是「つけて」。",
+        "en": "Turning on a light is 「つけて」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-509",
+    "type": "youhou",
+    "difficulty": 3,
+    "stem": "<<目安>>",
+    "options": [
+      "一日に飲む水の量は、二リットルを目安にするといい。",
+      "駅前の大きな時計を目安にして、友達と待ち合わせた。",
+      "彼は将来の目安を持って、毎日努力している。",
+      "最近目安が悪くなったので、眼鏡を買った。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "目安：大致的标准、参考值。正确句：一天喝的水量，以两升为标准比较好。",
+      "en": "目安: a rough guide or standard. Correct: As a rough guide, aim for two litres of water a day."
+    },
+    "why": {
+      "zh": "「目安」是数量、时间等的大致标准，常说「〜を目安にする」。",
+      "en": "「目安」 is a rough target for an amount or time: 「〜を目安にする」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "会合时作为标志的东西是「目印」。",
+        "en": "Something you meet by is a 「目印」 (landmark)."
+      },
+      {
+        "zh": "将来的目标是「目標」。",
+        "en": "A goal for the future is a 「目標」."
+      },
+      {
+        "zh": "视力变差是「目が悪くなった」。",
+        "en": "Eyesight getting worse is 「目が悪くなった」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-510",
+    "type": "youhou",
+    "difficulty": 3,
+    "stem": "<<円満>>",
+    "options": [
+      "二人はよく話し合い、問題を円満に解決した。",
+      "今夜は月が円満で、とてもきれいだ。",
+      "このケーキは円満な形をしていてかわいい。",
+      "旅行のお金は円満にあるので、心配しなくていい。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "円満：圆满、和睦，没有纠纷。正确句：两人好好商量，圆满解决了问题。",
+      "en": "円満: amicable, without friction. Correct: The two talked it over and settled the problem amicably."
+    },
+    "why": {
+      "zh": "「円満」形容人际关系、解决方式没有矛盾，如「円満な家庭」「円満に解決する」。",
+      "en": "「円満」 describes relationships or settlements without conflict: 「円満な家庭」「円満に解決する」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "月亮圆是「まん丸」或「満月」。",
+        "en": "A full round moon is 「まん丸」 or 「満月」."
+      },
+      {
+        "zh": "形状圆是「丸い」。",
+        "en": "A round shape is 「丸い」."
+      },
+      {
+        "zh": "钱足够是「十分に」。",
+        "en": "Having enough money is 「十分に」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-511",
+    "type": "youhou",
+    "difficulty": 1,
+    "stem": "<<上達>>",
+    "options": [
+      "毎日練習したおかげで、ピアノがずいぶん上達した。",
+      "物価が上達して、生活が苦しくなった。",
+      "エレベーターで十階まで上達した。",
+      "彼は努力を重ねて、部長に上達した。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "上達：技艺、能力进步。正确句：多亏每天练习，钢琴进步了很多。",
+      "en": "上達: getting better at a skill. Correct: Thanks to daily practice, my piano playing has improved a lot."
+    },
+    "why": {
+      "zh": "「上達」只用于技术、技能变好，如「ピアノ」「日本語」「料理の腕」。",
+      "en": "「上達」 is only for skills improving: piano, Japanese, cooking."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "物价上涨是「上がって」「上昇して」。",
+        "en": "Prices rising is 「上がって」 or 「上昇して」."
+      },
+      {
+        "zh": "坐电梯上楼是「上がった」。",
+        "en": "Going up in a lift is 「上がった」."
+      },
+      {
+        "zh": "升职是「昇進した」「なった」。",
+        "en": "Being promoted is 「昇進した」 or 「なった」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-512",
+    "type": "youhou",
+    "difficulty": 3,
+    "stem": "<<心当たり>>",
+    "options": [
+      "彼がなぜ怒っているのか、まったく心当たりがない。",
+      "昨夜は心当たりが悪くて、よく眠れなかった。",
+      "困ったときは、いつでも心当たりしてください。",
+      "彼女は心当たりがいい人で、だれにでも優しい。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "心当たり：心里有数、能想到的线索。正确句：他为什么生气，我完全想不出原因。",
+      "en": "心当たり: having some idea (of a cause, a person, a place). Correct: I have no idea at all why he's angry."
+    },
+    "why": {
+      "zh": "「心当たり」是对原因、人、地方等能联想到的线索，常说「心当たりがある／ない」。",
+      "en": "「心当たり」 is having some idea where to look or what the cause is: 「心当たりがある／ない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "身体不舒服是「具合が悪くて」「気分が悪くて」。",
+        "en": "Feeling unwell is 「具合が悪くて」 or 「気分が悪くて」."
+      },
+      {
+        "zh": "找人商量是「相談して」。",
+        "en": "Asking someone for advice is 「相談して」."
+      },
+      {
+        "zh": "待人亲切随和是「人当たりがいい」。",
+        "en": "Being pleasant to deal with is 「人当たりがいい」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-513",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<打ち明ける>>",
+    "options": [
+      "長い間だれにも言えなかった悩みを、親友に打ち明けた。",
+      "暑いので、窓を全部打ち明けてください。",
+      "来月、駅前に新しいカフェが打ち明けるそうだ。",
+      "夜が打ち明けて、空が明るくなってきた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "打ち明ける：把隐藏在心里的事坦白说出来。正确句：把长久以来对谁都说不出口的烦恼向好友倾诉了。",
+      "en": "打ち明ける: confiding something you've kept to yourself. Correct: I confided to my best friend a worry I hadn't been able to tell anyone for a long time."
+    },
+    "why": {
+      "zh": "「打ち明ける」的对象是「悩み」「秘密」「気持ち」等藏在心里的事。",
+      "en": "「打ち明ける」 takes things kept inside: 「悩み」「秘密」「気持ち」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "开窗是「開けて」。",
+        "en": "Opening windows is 「開けて」."
+      },
+      {
+        "zh": "新店开张是「オープンする」「開店する」。",
+        "en": "A café opening is 「オープンする」 or 「開店する」."
+      },
+      {
+        "zh": "天亮是「夜が明けて」。",
+        "en": "Dawn breaking is 「夜が明けて」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-514",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<取り組む>>",
+    "options": [
+      "市は、ごみを減らす問題に積極的に取り組んでいる。",
+      "満員電車で、知らない人と肩が取り組んだ。",
+      "雨が降りそうなので、洗濯物を取り組んだ。",
+      "彼は毎朝、駅の売店で新聞を取り組んでいる。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "取り組む：认真致力于（问题、工作）。正确句：市政府正在积极致力于减少垃圾的问题。",
+      "en": "取り組む: tackling a problem or task in earnest. Correct: The city is actively tackling the problem of reducing waste."
+    },
+    "why": {
+      "zh": "「〜に取り組む」的对象是需要努力解决的课题、工作。",
+      "en": "「〜に取り組む」 takes a task or issue you work hard at."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "肩膀碰到是「ぶつかった」「当たった」。",
+        "en": "Shoulders bumping is 「ぶつかった」 or 「当たった」."
+      },
+      {
+        "zh": "把晾的衣服收进来是「取り込んだ」。",
+        "en": "Bringing in the washing is 「取り込んだ」."
+      },
+      {
+        "zh": "买报纸是「買っている」。",
+        "en": "Buying a newspaper is 「買っている」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-515",
+    "type": "youhou",
+    "difficulty": 3,
+    "stem": "<<なだらか>>",
+    "options": [
+      "この山は坂がなだらかなので、子どもでも登りやすい。",
+      "彼女はなだらかな性格で、怒ったところを見たことがない。",
+      "このスープはなだらかで、とても飲みやすい。",
+      "この布はなだらかで、肌ざわりがいい。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "なだらか：（坡度）平缓。正确句：这座山坡度平缓，连孩子都容易爬。",
+      "en": "なだらか: (of a slope) gentle. Correct: This mountain has gentle slopes, so even children can climb it easily."
+    },
+    "why": {
+      "zh": "「なだらか」用于坡、山、曲线等倾斜程度小。",
+      "en": "「なだらか」 describes slopes, hills or curves that aren't steep."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "性格温和是「穏やかな」。",
+        "en": "A mild temperament is 「穏やかな」."
+      },
+      {
+        "zh": "汤口感柔和是「まろやか」。",
+        "en": "A mellow soup is 「まろやか」."
+      },
+      {
+        "zh": "布料光滑是「なめらか」。",
+        "en": "Smooth cloth is 「なめらか」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-516",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<そそっかしい>>",
+    "options": [
+      "弟はそそっかしくて、よく忘れ物をする。",
+      "隣の部屋がそそっかしくて、勉強に集中できない。",
+      "この料理はそそっかしい味がする。",
+      "春になって、そそっかしい風が吹いている。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "そそっかしい：冒失、粗心大意。正确句：弟弟很冒失，经常丢三落四。",
+      "en": "そそっかしい: careless, scatterbrained. Correct: My younger brother is scatterbrained and often leaves things behind."
+    },
+    "why": {
+      "zh": "「そそっかしい」形容人做事不沉着、粗心，容易出错。",
+      "en": "「そそっかしい」 describes a person who is hasty and careless."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "隔壁吵是「騒がしくて」「うるさくて」。",
+        "en": "A noisy room next door is 「騒がしくて」 or 「うるさくて」."
+      },
+      {
+        "zh": "味道不能用「そそっかしい」，可说「あっさりした味」等。",
+        "en": "A taste can't be 「そそっかしい」; you'd say e.g. 「あっさりした味」."
+      },
+      {
+        "zh": "春风宜人是「さわやかな」。",
+        "en": "A pleasant spring breeze is 「さわやかな」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-517",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<しみじみ>>",
+    "options": [
+      "久しぶりに故郷に帰って、家族のありがたさをしみじみ感じた。",
+      "雨にぬれて、服がしみじみになった。",
+      "彼はしみじみ遅刻するので、みんな困っている。",
+      "急いでいたので、しみじみ走って駅に向かった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "しみじみ：深切地、由衷地（感受）。正确句：时隔很久回到故乡，深深感受到了家人的可贵。",
+      "en": "しみじみ: feeling something deeply. Correct: Back home for the first time in ages, I keenly felt how much my family means to me."
+    },
+    "why": {
+      "zh": "「しみじみ」常和「感じる」「思う」连用，表示感受深切。",
+      "en": "「しみじみ」 goes with 「感じる」「思う」: to feel something deeply."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "衣服湿透是「びしょびしょ」。",
+        "en": "Soaked clothes are 「びしょびしょ」."
+      },
+      {
+        "zh": "经常迟到是「しょっちゅう」「たびたび」。",
+        "en": "Often late is 「しょっちゅう」 or 「たびたび」."
+      },
+      {
+        "zh": "急忙跑是「急いで」「全速力で」。",
+        "en": "Running in a hurry is 「急いで」 or 「全速力で」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-518",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<いったん>>",
+    "options": [
+      "少し疲れたので、いったん休んでから続けよう。",
+      "彼とはまだいったん会ったことがない。",
+      "姉はいったん料理が上手で、何でも作れる。",
+      "ここから駅までは、歩いていったん十分ぐらいだ。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "いったん：暂且、先（停一下）；一旦。正确句：有点累了，先休息一下再继续吧。",
+      "en": "いったん: for now, for the moment; once. Correct: I'm a bit tired, so let's stop for a moment and then carry on."
+    },
+    "why": {
+      "zh": "「いったん」表示先暂时做某事（之后再继续），或「いったん〜たら」（一旦……）。",
+      "en": "「いったん」 is \"for the moment\" (then carry on), or 「いったん〜たら」 \"once …\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "从没见过是「一度も会ったことがない」。",
+        "en": "Never having met is 「一度も会ったことがない」."
+      },
+      {
+        "zh": "“非常擅长”是「とても」。",
+        "en": "\"Very good at\" is 「とても」."
+      },
+      {
+        "zh": "“大约十分钟”是「だいたい」。",
+        "en": "\"About ten minutes\" is 「だいたい」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-519",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<たくましい>>",
+    "options": [
+      "毎日の厳しい練習で、彼はたくましい体になった。",
+      "このコーヒーはたくましくて、飲むと目が覚める。",
+      "一晩中、たくましい雨が降り続いた。",
+      "引っ越しの荷物が、思ったよりたくましくなった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "たくましい：（身体）健壮；（意志）坚强。正确句：经过每天的严格训练，他练出了健壮的身体。",
+      "en": "たくましい: sturdy, robust (body); resilient (spirit). Correct: Daily hard training gave him a strong, sturdy body."
+    },
+    "why": {
+      "zh": "「たくましい」形容人身体强壮或精神坚强，如「たくましい体」「たくましく生きる」。",
+      "en": "「たくましい」 describes a strong body or tough spirit: 「たくましい体」「たくましく生きる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "咖啡浓是「濃くて」。",
+        "en": "Strong coffee is 「濃くて」."
+      },
+      {
+        "zh": "雨大是「激しい」。",
+        "en": "Heavy rain is 「激しい」."
+      },
+      {
+        "zh": "行李多是「多く」。",
+        "en": "More luggage is 「多く」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-520",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<普及>>",
+    "options": [
+      "スマートフォンが普及して、だれでも簡単に写真を撮れるようになった。",
+      "壊れたパソコンを店に普及に出した。",
+      "インフルエンザが普及して、学校が休みになった。",
+      "毎日練習して、テニスがずいぶん普及した。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "普及：（技术、产品等）广泛普及到大众。正确句：智能手机普及后，谁都能轻松拍照了。",
+      "en": "普及: (a technology or product) spreading to everyone. Correct: Now that smartphones have spread, anyone can take photos easily."
+    },
+    "why": {
+      "zh": "「普及」用于技术、产品、思想在社会上广泛传开。",
+      "en": "「普及」 is a technology, product or idea spreading through society."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "送修是「修理に出した」。",
+        "en": "Sending something for repair is 「修理に出した」."
+      },
+      {
+        "zh": "疾病蔓延是「流行して」。",
+        "en": "A disease spreading is 「流行して」."
+      },
+      {
+        "zh": "技术进步是「上達した」「上手になった」。",
+        "en": "Getting better at tennis is 「上達した」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-521",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<引退>>",
+    "options": [
+      "その選手は、三十五歳で現役を引退した。",
+      "薬を飲んだら熱が引退して、元気になった。",
+      "予定が変わって、出発を一日引退した。",
+      "前の車との距離が近すぎたので、少し後ろに引退した。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "引退：（运动员、艺人等）退役、隐退。正确句：那位选手35岁退役了。",
+      "en": "引退: retiring from active life (an athlete, a performer). Correct: That player retired at thirty-five."
+    },
+    "why": {
+      "zh": "「引退」用于从职业（尤其是运动、演艺、政界）一线退下来。",
+      "en": "「引退」 is stepping down from a career, especially sport, entertainment or politics."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "退烧是「下がって」「引いて」。",
+        "en": "A fever going down is 「下がって」 or 「引いて」."
+      },
+      {
+        "zh": "推迟出发是「延ばした」「延期した」。",
+        "en": "Putting off a departure is 「延ばした」 or 「延期した」."
+      },
+      {
+        "zh": "往后退是「下がった」。",
+        "en": "Moving back is 「下がった」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-522",
+    "type": "youhou",
+    "refs": [
+      "lesson69#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<例外>>",
+    "options": [
+      "この店は全品二割引きだが、お酒だけは例外だ。",
+      "例外から来た観光客に、駅への道を聞かれた。",
+      "予想が例外して、試合に負けてしまった。",
+      "今年の夏は、例外な暑さが続いている。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "例外：不符合一般规则的情况。正确句：这家店全部商品打八折，只有酒除外。",
+      "en": "例外: an exception to a rule. Correct: Everything in this shop is 20% off — except alcohol."
+    },
+    "why": {
+      "zh": "「例外」表示不适用一般规则的情况，常说「〜は例外だ」「例外なく」。",
+      "en": "「例外」 is a case the general rule doesn't cover: 「〜は例外だ」「例外なく」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“国外”是「海外」「外国」。",
+        "en": "\"From abroad\" is 「海外」 or 「外国」."
+      },
+      {
+        "zh": "预想落空是「外れて」。",
+        "en": "A prediction being wrong is 「外れて」."
+      },
+      {
+        "zh": "异常的炎热是「異常な」。",
+        "en": "Unusual heat is 「異常な」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-523",
+    "type": "youhou",
+    "refs": [
+      "lesson64#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<証拠>>",
+    "options": [
+      "警察は、彼が犯人だという証拠を見つけた。",
+      "引っ越しのときに、大学の卒業証拠をなくしてしまった。",
+      "先生の証拠どおりにやったら、うまくできた。",
+      "合格の証拠が届いて、家族みんなで喜んだ。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "証拠：证明事实的根据。正确句：警察找到了证明他是犯人的证据。",
+      "en": "証拠: proof of a fact. Correct: The police found evidence that he was the culprit."
+    },
+    "why": {
+      "zh": "「証拠」是证明某事属实的物品或事实，如「〜という証拠」。",
+      "en": "「証拠」 is something that proves a fact: 「〜という証拠」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "毕业证书是「卒業証書」。",
+        "en": "A diploma is a 「卒業証書」."
+      },
+      {
+        "zh": "照老师说的做是「指示」「説明」。",
+        "en": "Doing as the teacher said is following their 「指示」 or 「説明」."
+      },
+      {
+        "zh": "合格的通知是「通知」「知らせ」。",
+        "en": "News of passing is a 「通知」 or 「知らせ」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-524",
+    "type": "youhou",
+    "refs": [
+      "lesson74#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<事情>>",
+    "options": [
+      "家庭の事情で、来月から仕事をしばらく休むことになった。",
+      "毎朝の事情として、コーヒーを一杯飲んでいる。",
+      "今朝は事情が悪くて、学校を休んだ。",
+      "彼は事情が明るくて、だれとでもすぐ仲よくなる。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "事情：（不便明说的）情况、缘由。正确句：因家里的原因，下个月起要暂时请假。",
+      "en": "事情: circumstances, reasons (often private). Correct: For family reasons, I'm going to take some time off work from next month."
+    },
+    "why": {
+      "zh": "「事情」是某事背后的情况、理由，如「家庭の事情」「事情を説明する」。",
+      "en": "「事情」 is the circumstances behind something: 「家庭の事情」「事情を説明する」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "每天的习惯是「習慣」。",
+        "en": "A daily habit is a 「習慣」."
+      },
+      {
+        "zh": "身体不舒服是「具合が悪くて」「体調が悪くて」。",
+        "en": "Feeling unwell is 「具合が悪くて」 or 「体調が悪くて」."
+      },
+      {
+        "zh": "性格开朗是「性格が明るくて」。",
+        "en": "A cheerful personality is 「性格が明るくて」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-525",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<補う>>",
+    "options": [
+      "食事で足りない栄養を、サプリメントで補っている。",
+      "破れたズボンを、針と糸で補った。",
+      "先輩が仕事のやり方を丁寧に補ってくれた。",
+      "友達にお金を補ったが、まだ返してもらっていない。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "補う：补充不足的部分。正确句：用保健品补充饮食中不足的营养。",
+      "en": "補う: making up for what's lacking. Correct: I make up for the nutrients my diet lacks with supplements."
+    },
+    "why": {
+      "zh": "「補う」是把不够的部分补上，如「不足を補う」「栄養を補う」。",
+      "en": "「補う」 is filling a shortfall: 「不足を補う」「栄養を補う」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "缝补衣服是「縫った」「繕った」。",
+        "en": "Mending clothes is 「縫った」 or 「繕った」."
+      },
+      {
+        "zh": "教工作方法是「教えて」。",
+        "en": "Showing someone how to do a job is 「教えて」."
+      },
+      {
+        "zh": "借钱给朋友是「貸した」。",
+        "en": "Lending money is 「貸した」."
+      }
+    ]
+  }
+]

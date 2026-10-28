@@ -1,0 +1,504 @@
+[
+  {
+    "id": "n4-dk-301",
+    "type": "mid",
+    "difficulty": 2,
+    "intro": "これは 留学生の リンさんが ホームステイの 家族に 書いた 手紙です。",
+    "passage": "山田さんの みなさんへ\n\nお元気ですか。東京に 帰ってから、もう 一か月に なりました。\n夏休みの 二週間、本当に お世話に なりました。初めて 山田さんの 家に 着いた 日、わたしは とても きんちょうして いました。日本語が あまり 上手じゃ なかったからです。でも、お母さんが ゆっくり 話して くださったので、だんだん 安心しました。\nいちばん 楽しかったのは、おじいさんと いっしょに はたけで 野菜を 作った ことです。わたしは 大きい 町で 生まれたので、土に さわった ことが ほとんど ありませんでした。朝 早く 起きるのは 大変でしたが、自分で とった トマトは とても おいしかったです。\n東京に 帰ってから、わたしも ベランダで 小さい トマトを 育て始めました。まだ 赤く なりませんが、毎朝 水を やって います。\n来年の 春、もう 一度 遊びに 行っても いいですか。今度は わたしが みなさんに 中国の 料理を 作って あげたいと 思って います。\n\nリン",
+    "tr": {
+      "zh": "致山田家的各位：大家好吗？我回到东京已经一个月了。暑假的两个星期，真的承蒙照顾了。第一次到山田家的那天，我非常紧张，因为我的日语不太好。不过妈妈对我说话说得很慢，我渐渐就放心了。最开心的是和爷爷一起在田里种菜。我在大城市出生，几乎没有摸过泥土。早上早起很辛苦，但自己摘的西红柿非常好吃。回到东京以后，我也开始在阳台上种小西红柿了。虽然还没变红，但我每天早上都浇水。明年春天，我可以再去玩吗？下次我想给大家做中国菜。林",
+      "en": "Dear Yamada family, How are you? It's already been a month since I came back to Tokyo. Thank you so much for looking after me for those two weeks of the summer holidays. The day I first arrived at your house I was very nervous, because my Japanese wasn't very good. But Mother spoke to me slowly, so little by little I felt at ease. The most fun was growing vegetables in the field with Grandfather. I was born in a big city, so I had hardly ever touched soil. Getting up early was hard, but the tomatoes I picked myself were delicious. Since coming back to Tokyo I've started growing small tomatoes on my balcony too. They haven't turned red yet, but I water them every morning. May I come and visit again next spring? Next time I'd like to cook Chinese food for all of you. Lin"
+    },
+    "questions": [
+      {
+        "q": "リンさんは どうして 山田さんの 家に 着いた 日、きんちょうして いましたか。",
+        "difficulty": 1,
+        "options": [
+          "日本語が あまり 上手じゃ なかったから",
+          "お母さんが 速く 話したから",
+          "朝 早く 起きなければ ならなかったから",
+          "土に さわった ことが なかったから"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "第二段：「とても きんちょうして いました。日本語が あまり 上手じゃ なかったからです」，「〜からです」直接说明了理由。",
+          "en": "Paragraph two: 「とても きんちょうして いました。日本語が あまり 上手じゃ なかったからです」 — 「〜からです」 gives the reason."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "正好相反，妈妈说得很慢（「ゆっくり」），所以她才放心了。",
+            "en": "The opposite: Mother spoke slowly (「ゆっくり」), which is what put her at ease."
+          },
+          {
+            "zh": "早起是在田里干活时觉得辛苦的事，不是到达那天紧张的原因。",
+            "en": "Getting up early was the hard part of the farm work, not why she was nervous on arrival."
+          },
+          {
+            "zh": "几乎没摸过泥土是讲种菜时的事，和到达那天的紧张无关。",
+            "en": "Hardly ever touching soil comes up with the farm work, not with her nerves on the first day."
+          }
+        ]
+      },
+      {
+        "q": "リンさんは 今、何を して いますか。",
+        "options": [
+          "ベランダで トマトを 育てて いる。",
+          "おじいさんと はたけで 野菜を 作って いる。",
+          "毎朝 赤い トマトを とって 食べて いる。",
+          "山田さんの 家族に 中国の 料理を 作って いる。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "第四段：回东京以后「ベランダで 小さい トマトを 育て始めました」「毎朝 水を やって います」，这是现在的事。",
+          "en": "Paragraph four: back in Tokyo she 「ベランダで 小さい トマトを 育て始めました」 and waters them every morning — that's what she's doing now."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "和爷爷在田里种菜是暑假寄宿时的事，现在她已经回东京了。",
+            "en": "Farming with Grandfather was during the homestay; she's back in Tokyo now."
+          },
+          {
+            "zh": "西红柿「まだ 赤く なりません」，还没有变红，不能摘来吃。",
+            "en": "The tomatoes 「まだ 赤く なりません」 — they aren't red yet, so she isn't picking any."
+          },
+          {
+            "zh": "给大家做中国菜是她想下次去的时候做的事（「作って あげたいと 思って います」），现在还没做。",
+            "en": "Cooking Chinese food is what she hopes to do on her next visit (「作って あげたいと 思って います」), not something she's doing now."
+          }
+        ]
+      },
+      {
+        "q": "リンさんは 来年、何を したいと 思って いますか。",
+        "options": [
+          "春に 山田さんの 家へ 行って、中国の 料理を 作る。",
+          "夏休みに もう 一度 山田さんの 家に 二週間 とまる。",
+          "山田さんの 家族を 東京に よんで、トマトを 見せる。",
+          "おじいさんに 中国の 料理の 作り方を 習う。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "最后一段：「来年の 春、もう 一度 遊びに 行っても いいですか」「今度は わたしが みなさんに 中国の 料理を 作って あげたい」。",
+          "en": "Last paragraph: she asks to visit again 「来年の 春」 and wants to cook Chinese food for them 「今度は」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "她想去的时间是「来年の 春」（明年春天），不是暑假；也没说要住两个星期。",
+            "en": "She wants to go 「来年の 春」 — in spring, not the summer holidays — and says nothing about two weeks."
+          },
+          {
+            "zh": "信里是她自己想去山田家玩，没有说请山田一家来东京。",
+            "en": "She asks to visit them; she never invites the family to Tokyo."
+          },
+          {
+            "zh": "是林同学想给大家做中国菜，不是向爷爷学做菜。",
+            "en": "Lin wants to cook Chinese food for them, not learn it from Grandfather."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-302",
+    "type": "mid",
+    "difficulty": 2,
+    "intro": "これは 大学生の キムさんが 書いた 作文です。",
+    "passage": "アルバイトで 分かった こと\n\nわたしは 去年の 秋から 駅の 前の パン屋で アルバイトを して います。最初は お金の ために 始めましたが、今は ほかの 理由も あります。\nはじめの 一か月は 失敗ばかりでした。お客さんの 日本語が 速くて、聞き取れない ことが 多かったです。ある 日、おつりを まちがえて しまい、店長に 注意されました。とても はずかしくて、もう やめようと 思いました。\nでも、その あと 店長が 「だれでも 最初は まちがえるよ。大切なのは 同じ ことを 二回 しない ことだ」と 言って くれました。それから、わたしは 小さい ノートに 失敗した ことを 書くように しました。仕事の 前に いつも その ノートを 読みます。\n今では よく 来る お客さんの 名前も 覚えて、「キムさん、いつも ありがとう」と 言われる ことも あります。アルバイトは お金だけでは なく、人と 話す 楽しさも 教えて くれたと 思います。",
+    "tr": {
+      "zh": "从打工中明白的事。我从去年秋天开始在车站前的面包店打工。一开始是为了钱才做的，但现在也有别的理由。头一个月净是失败。客人的日语说得很快，我经常听不懂。有一天我找错了零钱，被店长批评了。我非常难为情，想不干了。但是后来店长对我说：“谁一开始都会出错。重要的是同样的错误不犯第二次。”从那以后，我开始把犯过的错写在一个小本子上，每次上班前都会看一遍。现在我也记住了常来的客人的名字，有时客人还会对我说“金同学，一直以来谢谢你”。我觉得打工教给我的不只是钱，还有和人交谈的乐趣。",
+      "en": "What my part-time job taught me. Since last autumn I've been working part-time at a bakery in front of the station. I started it for the money, but now I have other reasons too. The first month was nothing but mistakes. Customers spoke Japanese fast and I often couldn't catch what they said. One day I gave the wrong change and the manager told me off. I was so embarrassed that I thought I'd quit. But afterwards the manager said, \"Everyone makes mistakes at first. What matters is not making the same one twice.\" After that I started writing my mistakes in a small notebook, and I always read it before work. Now I know the names of the regulars, and sometimes they say, \"Kim, thanks as always.\" I think the job has taught me not just about money but how enjoyable it is to talk with people."
+    },
+    "questions": [
+      {
+        "q": "キムさんは どうして アルバイトを やめようと 思いましたか。",
+        "options": [
+          "おつりを まちがえて、店長に 注意されたから",
+          "お客さんの 日本語が 分からなくて、お客さんに おこられたから",
+          "仕事が 大変なのに、お金が 少なかったから",
+          "よく 来る お客さんの 名前が 覚えられなかったから"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "第二段：「おつりを まちがえて しまい、店長に 注意されました。とても はずかしくて、もう やめようと 思いました」。",
+          "en": "Paragraph two: she gave the wrong change, the manager told her off, and 「とても はずかしくて、もう やめようと 思いました」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "她只是常常听不懂客人的话，文中没有说被客人骂了；批评她的是店长。",
+            "en": "She often couldn't follow customers, but no customer got angry — it was the manager who told her off."
+          },
+          {
+            "zh": "文中没有提到钱少或工作太辛苦。",
+            "en": "Nothing is said about the pay being poor for the work."
+          },
+          {
+            "zh": "记住常客的名字是现在的事，而且她记住了，不是记不住。",
+            "en": "Remembering regulars' names is about now, and she does remember them."
+          }
+        ]
+      },
+      {
+        "q": "店長の 話を 聞いた あと、キムさんは 何を するように しましたか。",
+        "options": [
+          "失敗した ことを ノートに 書いて、仕事の 前に 読む。",
+          "お客さんの 名前を ノートに 書いて、覚える。",
+          "お客さんに ゆっくり 話して もらうように たのむ。",
+          "同じ ことを 二回 聞かないように、店長の 話を 書く。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "第三段：「小さい ノートに 失敗した ことを 書くように しました。仕事の 前に いつも その ノートを 読みます」。",
+          "en": "Paragraph three: 「小さい ノートに 失敗した ことを 書くように しました」 and she reads it before every shift."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "本子上写的是自己犯过的错，不是客人的名字；名字是她自然记住的。",
+            "en": "The notebook is for her mistakes, not customers' names — those she simply came to know."
+          },
+          {
+            "zh": "文中没有说她请客人说慢一点。",
+            "en": "She never says she asks customers to speak slowly."
+          },
+          {
+            "zh": "店长说的「二回 しない」是指同样的错误不犯第二次，不是不问两次；她也没有记店长的话。",
+            "en": "The manager's 「二回 しない」 means not repeating a mistake, not asking twice — and she doesn't write down his words."
+          }
+        ]
+      },
+      {
+        "q": "キムさんは 今、アルバイトに ついて どう 思って いますか。",
+        "options": [
+          "お金の ほかに、人と 話す 楽しさも 分かった。",
+          "お金の ためだけに はたらいて いる。",
+          "失敗が 多いので、早く やめたい。",
+          "店長が きびしいので、ほかの 店で はたらきたい。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "最后一句：「お金だけでは なく、人と 話す 楽しさも 教えて くれた」；开头也说「今は ほかの 理由も あります」。",
+          "en": "The last sentence: the job taught her 「お金だけでは なく、人と 話す 楽しさも」; the opening also says she now has other reasons."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "只为钱是一开始的情况，现在「ほかの 理由も あります」。",
+            "en": "Money was only why she started; now 「ほかの 理由も あります」."
+          },
+          {
+            "zh": "想不干是头一个月的事，现在她很享受这份工作。",
+            "en": "Wanting to quit was in the first month; now she enjoys the job."
+          },
+          {
+            "zh": "店长批评过她，但后来还鼓励了她，文中没有说想换店。",
+            "en": "The manager told her off but then encouraged her; she never mentions moving to another shop."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-303",
+    "type": "mid",
+    "difficulty": 2,
+    "intro": "これは 高校生の さとうさんが 書いた 作文です。",
+    "passage": "祖母と スマートフォン\n\n祖母は 今年 七十五さいです。先月、祖母は 初めて スマートフォンを 買いました。前から 使って いた 電話が こわれて しまったからです。\n祖母は 「むずかしそうだから、使いたくない」と 言って いましたが、わたしが 週に 二回 祖母の 家へ 行って、使い方を 教える ことに しました。最初は 電話を かける ことしか できませんでしたが、二週間ぐらいで メールが 送れるように なりました。\n先週の 日曜日、祖母から 写真が 送られて きました。祖母が 庭で 育てて いる 花の 写真でした。「きれいに さいたので、見せたかった」と 書いて ありました。わたしは とても うれしく なりました。\n教えるのは 大変だと 思って いましたが、祖母が 少しずつ できるように なるのを 見るのは 楽しかったです。今度は 祖母に ビデオ電話の 使い方を 教える つもりです。そうすれば、遠くに 住んで いる おじとも 顔を 見ながら 話せるからです。",
+    "tr": {
+      "zh": "奶奶和智能手机。奶奶今年七十五岁。上个月，奶奶第一次买了智能手机，因为以前用的电话坏了。奶奶说过“看起来很难，不想用”，但我决定每周去奶奶家两次，教她怎么用。一开始她只会打电话，大约两个星期后就能发邮件了。上周日，奶奶给我发来了一张照片，是她在院子里种的花。上面写着：“开得很漂亮，想给你看看。”我非常高兴。我本来以为教人很辛苦，但看着奶奶一点一点学会，觉得很开心。下次我打算教奶奶怎么用视频通话。这样她就能和住在远处的叔叔一边看着脸一边聊天了。",
+      "en": "My grandmother and her smartphone. My grandmother is 75 this year. Last month she bought a smartphone for the first time, because the phone she had been using broke. She said, \"It looks hard, so I don't want to use it,\" but I decided to go to her house twice a week and teach her how to use it. At first she could only make calls, but after about two weeks she could send messages. Last Sunday she sent me a photo — of the flowers she grows in her garden. She wrote, \"They bloomed so beautifully I wanted to show you.\" I was really happy. I'd thought teaching would be hard, but watching her learn little by little was fun. Next I plan to teach her video calls. That way she can see my uncle's face while she talks to him, even though he lives far away."
+    },
+    "questions": [
+      {
+        "q": "祖母は どうして スマートフォンを 買いましたか。",
+        "difficulty": 1,
+        "options": [
+          "前の 電話が こわれたから",
+          "さとうさんに すすめられたから",
+          "花の 写真を 送りたかったから",
+          "おじと 顔を 見ながら 話したかったから"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "第一段：「前から 使って いた 電話が こわれて しまったからです」。",
+          "en": "Paragraph one: 「前から 使って いた 電話が こわれて しまったからです」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "佐藤同学是在奶奶买了以后才去教她用的，文中没有说是她劝奶奶买的。",
+            "en": "Sato only started teaching her after she bought it; nothing says Sato talked her into it."
+          },
+          {
+            "zh": "发花的照片是学会以后的事，不是买手机的理由。",
+            "en": "Sending the flower photo came after she learned; it isn't why she bought the phone."
+          },
+          {
+            "zh": "和叔叔视频是佐藤同学今后的打算，不是奶奶买手机的理由。",
+            "en": "Video calls with the uncle are Sato's plan for later, not why the phone was bought."
+          }
+        ]
+      },
+      {
+        "q": "先週の 日曜日に 何が ありましたか。",
+        "options": [
+          "祖母が さとうさんに 花の 写真を 送った。",
+          "さとうさんが 祖母に 花の 写真を 送った。",
+          "祖母が 初めて さとうさんに 電話を かけた。",
+          "祖母が おじと ビデオ電話で 話した。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "第三段：「祖母から 写真が 送られて きました」，「〜から 送られて きた」表示照片是奶奶发给佐藤同学的。",
+          "en": "Paragraph three: 「祖母から 写真が 送られて きました」 — the photo came from the grandmother to Sato."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "方向反了：「祖母から 送られて きました」是奶奶发给“我”的。",
+            "en": "Wrong direction: 「祖母から 送られて きました」 means it was sent by the grandmother to the writer."
+          },
+          {
+            "zh": "打电话她一开始就会，文中没有说上周日打了电话。",
+            "en": "She could make calls from the start; no call is mentioned for last Sunday."
+          },
+          {
+            "zh": "视频通话还没教，是佐藤同学「今度は」要教的。",
+            "en": "Video calls haven't been taught yet — that's Sato's next plan (「今度は」)."
+          }
+        ]
+      },
+      {
+        "q": "さとうさんは どうして 祖母に ビデオ電話の 使い方を 教えたいと 思って いますか。",
+        "options": [
+          "祖母が 遠くに 住む おじと 顔を 見て 話せるから",
+          "祖母に 「教えて ほしい」と たのまれたから",
+          "さとうさんが もう 祖母の 家へ 行けなく なるから",
+          "祖母が まだ メールを 送れないから"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "最后一句：「そうすれば、遠くに 住んで いる おじとも 顔を 見ながら 話せるからです」。",
+          "en": "The last sentence: 「そうすれば、遠くに 住んで いる おじとも 顔を 見ながら 話せるからです」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "文中没有说奶奶请她教视频通话；奶奶一开始甚至说不想用手机。",
+            "en": "The grandmother never asks for it; at first she didn't even want to use a smartphone."
+          },
+          {
+            "zh": "文中没有说佐藤同学以后不能去奶奶家。",
+            "en": "Nothing says Sato will stop being able to visit."
+          },
+          {
+            "zh": "奶奶两个星期左右就会发邮件了（「メールが 送れるように なりました」）。",
+            "en": "She could send messages after about two weeks (「メールが 送れるように なりました」)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-304",
+    "type": "mid",
+    "difficulty": 3,
+    "intro": "これは 留学生の マリアさんが 書いた 作文です。",
+    "passage": "ゴミの 日\n\n日本に 来て、いちばん おどろいたのは ゴミの 出し方です。わたしの 国では、ゴミを 全部 いっしょに 出しても いいです。でも、わたしが 住んで いる 町では、ゴミを 四つに 分けなければ なりません。それに、出す 曜日も 決まって います。\n引っ越して 来た 次の 週、わたしは まちがえて、もえない ゴミを 火曜日に 出して しまいました。火曜日は もえる ゴミの 日でした。次の 日の 朝、外に 出ると、わたしの ゴミぶくろだけ 残って いて、「今日は 出せません」と 書いた 紙が はって ありました。\nその 日の 夕方、となりの 田中さんが ゴミの カレンダーを 持って 来て くれました。「わたしも 最初は よく まちがえましたよ」と 笑って いました。\n今は その カレンダーを れいぞうこに はって いるので、もう まちがえません。最初は めんどうだと 思いましたが、この 町が きれいなのは、みんなが ルールを 守って いるからだと 分かりました。",
+    "tr": {
+      "zh": "倒垃圾的日子。来日本以后，最让我吃惊的是倒垃圾的方法。在我的国家，垃圾全部一起扔也可以。但是在我住的这个镇上，垃圾必须分成四类，而且扔的日子也是固定的。搬来后的第二周，我搞错了，在星期二扔了不可燃垃圾。星期二是可燃垃圾的日子。第二天早上出门一看，只有我的垃圾袋还留在那里，上面贴着一张写着“今天不能扔”的纸。那天傍晚，邻居田中女士给我拿来了一份垃圾日历。她笑着说：“我一开始也经常搞错哦。”现在我把那份日历贴在冰箱上，所以再也不会弄错了。一开始我觉得很麻烦，但后来明白了：这个镇这么干净，是因为大家都遵守规则。",
+      "en": "Garbage day. What surprised me most when I came to Japan was how you put out the garbage. In my country you can put it all out together. But in the town where I live, you have to sort it into four kinds, and the days are fixed too. The week after I moved in, I made a mistake and put out non-burnable garbage on a Tuesday. Tuesday was the day for burnable garbage. The next morning when I went out, only my bag was left, with a note stuck on it saying \"Cannot be collected today.\" That evening my neighbour Ms Tanaka brought me a garbage calendar. She laughed and said, \"I often got it wrong at first too.\" Now I have that calendar on my fridge, so I don't make mistakes any more. At first I thought it was a nuisance, but I came to understand that this town is clean because everyone follows the rules."
+    },
+    "questions": [
+      {
+        "q": "マリアさんの ゴミぶくろは どうして 残って いましたか。",
+        "options": [
+          "もえない ゴミを もえる ゴミの 日に 出したから",
+          "もえる ゴミを もえない ゴミの 日に 出したから",
+          "ゴミを 分けないで、全部 いっしょに 出したから",
+          "田中さんの ゴミぶくろと まちがえられたから"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "第二段：她在星期二扔了「もえない ゴミ」，而「火曜日は もえる ゴミの 日でした」，日子弄错了，所以没被收走。",
+          "en": "Paragraph two: she put out 「もえない ゴミ」 on Tuesday, but 「火曜日は もえる ゴミの 日でした」 — wrong day, so it wasn't collected."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "说反了：她扔的是不可燃垃圾，那天是可燃垃圾的日子。",
+            "en": "Reversed: she put out non-burnable garbage on the burnable day."
+          },
+          {
+            "zh": "全部一起扔是她国家的做法；文中说她扔的是不可燃垃圾，问题在日子。",
+            "en": "Putting it all together is the custom in her country; here the problem was the day, not sorting."
+          },
+          {
+            "zh": "文中没有说和田中女士的垃圾袋弄混；田中女士只是后来送来了日历。",
+            "en": "Nothing about a mix-up with Ms Tanaka's bag; she only brought a calendar later."
+          }
+        ]
+      },
+      {
+        "q": "田中さんは マリアさんに 何を しましたか。",
+        "options": [
+          "ゴミの カレンダーを 持って 来て くれた。",
+          "マリアさんの ゴミを 正しい 日に 出して くれた。",
+          "カレンダーを れいぞうこに はって くれた。",
+          "ルールを 守るように 強く 注意した。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "第三段：「となりの 田中さんが ゴミの カレンダーを 持って 来て くれました」。",
+          "en": "Paragraph three: 「となりの 田中さんが ゴミの カレンダーを 持って 来て くれました」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "文中没有说田中女士帮她扔垃圾。",
+            "en": "Nothing says Ms Tanaka put the garbage out for her."
+          },
+          {
+            "zh": "把日历贴在冰箱上的是玛丽亚自己（「今は その カレンダーを れいぞうこに はって いる」）。",
+            "en": "Maria herself put the calendar on the fridge (「今は その カレンダーを れいぞうこに はって いる」)."
+          },
+          {
+            "zh": "田中女士没有批评她，而是笑着说自己一开始也常弄错。",
+            "en": "She didn't scold her; she laughed and said she used to get it wrong too."
+          }
+        ]
+      },
+      {
+        "q": "マリアさんは 今、ゴミの ルールに ついて どう 思って いますか。",
+        "options": [
+          "みんなが ルールを 守るから、町が きれいなのだ。",
+          "めんどうなので、自分の 国の ように したい。",
+          "四つに 分けるのは 多すぎるので、二つで いい。",
+          "カレンダーが ないと 分からないので、むずかしい。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "最后一句：「この 町が きれいなのは、みんなが ルールを 守って いるからだと 分かりました」。",
+          "en": "The last sentence: 「この 町が きれいなのは、みんなが ルールを 守って いるからだと 分かりました」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "觉得麻烦是「最初は」（一开始）的想法，现在她已经理解了规则的意义。",
+            "en": "Finding it a nuisance was only 「最初は」; now she sees the point of the rules."
+          },
+          {
+            "zh": "文中没有说分四类太多或想改成两类。",
+            "en": "She never says four kinds is too many or suggests two."
+          },
+          {
+            "zh": "有了日历以后她「もう まちがえません」，并没有说觉得难。",
+            "en": "With the calendar she 「もう まちがえません」; she doesn't say it's hard."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-305",
+    "type": "mid",
+    "difficulty": 3,
+    "intro": "これは 大学生の ジョンさんが 書いた 作文です。",
+    "passage": "富士山に 登って\n\n八月の はじめ、友だちの 健太さんと 富士山に 登りました。前から 日本で いちばん 高い 山に 登って みたいと 思って いたからです。\n夜 九時に 山の 下の ほうから 歩き始めました。上で 日の出を 見る つもりだったので、夜の 間に 登らなければ ならなかったのです。最初は 元気でしたが、三時間ぐらい 歩くと、頭が いたく なって きました。健太さんが 「少し 休もう」と 言って、二人で 山小屋で 一時間 休みました。\nその あと また 歩きましたが、ちょうじょうに 着く 前に 空が 明るく なって しまいました。それで、日の出は ちょうじょうでは なく、山の とちゅうで 見ました。それでも、雲の 上から 見る 太陽は 本当に きれいで、何も 言えませんでした。\nちょうじょうに 着いたのは 朝 七時でした。足は とても いたかったですが、健太さんが いっしょだったから、最後まで 登れたと 思います。来年は 弟を つれて 来たいです。",
+    "tr": {
+      "zh": "登富士山。八月初，我和朋友健太一起爬了富士山，因为我很早就想爬一爬日本最高的山。晚上九点，我们从山下开始走。因为打算在上面看日出，所以必须在夜里爬。一开始很有精神，但走了大约三个小时后，我开始头疼。健太说“休息一下吧”，我们两个人在山间小屋里休息了一个小时。之后又继续走，但还没到山顶天就亮了。所以日出不是在山顶，而是在半山腰看的。即使这样，从云上看到的太阳真的很美，我什么话都说不出来。到达山顶是早上七点。脚非常疼，但我觉得因为有健太在一起，我才能坚持爬到最后。明年我想带弟弟来。",
+      "en": "Climbing Mount Fuji. At the beginning of August I climbed Mount Fuji with my friend Kenta. I'd long wanted to climb the highest mountain in Japan. We started walking from low on the mountain at 9 p.m. We planned to see the sunrise up there, so we had to climb during the night. At first I was full of energy, but after about three hours of walking I started getting a headache. Kenta said, \"Let's rest a bit,\" and we rested for an hour in a mountain hut. After that we walked on, but the sky got light before we reached the summit. So we saw the sunrise not at the top but partway up. Even so, the sun seen from above the clouds was so beautiful I couldn't say a word. We reached the summit at 7 a.m. My feet hurt a lot, but I think I made it all the way because Kenta was with me. Next year I want to bring my younger brother."
+    },
+    "questions": [
+      {
+        "q": "二人は どうして 夜の 間に 登りましたか。",
+        "options": [
+          "上で 日の出を 見たかったから",
+          "昼は 暑くて 登れないから",
+          "山小屋で 休みたかったから",
+          "朝 七時までに ちょうじょうに 着かなければ ならなかったから"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "第二段：「上で 日の出を 見る つもりだったので、夜の 間に 登らなければ ならなかったのです」。",
+          "en": "Paragraph two: 「上で 日の出を 見る つもりだったので、夜の 間に 登らなければ ならなかったのです」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "文中没有提到白天热。",
+            "en": "The text never mentions daytime heat."
+          },
+          {
+            "zh": "在小屋休息是因为头疼，不是夜里爬山的理由。",
+            "en": "They rested in the hut because of his headache; that isn't why they climbed at night."
+          },
+          {
+            "zh": "早上七点只是实际到达山顶的时间，并不是必须在那之前到。",
+            "en": "7 a.m. is just when they happened to reach the top, not a deadline."
+          }
+        ]
+      },
+      {
+        "q": "ジョンさんたちは どこで 日の出を 見ましたか。",
+        "options": [
+          "山の とちゅう",
+          "山の ちょうじょう",
+          "山小屋の 中",
+          "山の 下"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "第三段：还没到山顶天就亮了，「日の出は ちょうじょうでは なく、山の とちゅうで 見ました」。",
+          "en": "Paragraph three: it got light before the summit, so 「日の出は ちょうじょうでは なく、山の とちゅうで 見ました」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "本来打算在上面看，但「ちょうじょうでは なく」，没赶上。",
+            "en": "That was the plan, but 「ちょうじょうでは なく」 — they didn't make it in time."
+          },
+          {
+            "zh": "在小屋休息了一小时后又继续走了，天亮是在那之后的路上。",
+            "en": "They left the hut after an hour's rest; the sky got light later, on the trail."
+          },
+          {
+            "zh": "山下是晚上九点出发的地方。",
+            "en": "Low on the mountain is where they set off at 9 p.m."
+          }
+        ]
+      },
+      {
+        "q": "ジョンさんは どうして 最後まで 登れたと 思って いますか。",
+        "options": [
+          "健太さんが いっしょに いたから",
+          "山小屋で 休んで、元気に なったから",
+          "雲の 上の 太陽が きれいだったから",
+          "弟が いっしょに 来て くれたから"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "最后一段：「健太さんが いっしょだったから、最後まで 登れたと 思います」。",
+          "en": "Last paragraph: 「健太さんが いっしょだったから、最後まで 登れたと 思います」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "他们在小屋休息过，但约翰把能爬到最后的原因归于健太在身边，而不是休息。",
+            "en": "They did rest in the hut, but John credits Kenta's company, not the rest, for making it."
+          },
+          {
+            "zh": "太阳很美是看日出时的感受，不是他说的能坚持到最后的理由。",
+            "en": "The beautiful sun is how he felt at sunrise, not the reason he gives for finishing."
+          },
+          {
+            "zh": "弟弟这次没有来，约翰是想明年带他来。",
+            "en": "His brother didn't come this time; John wants to bring him next year."
+          }
+        ]
+      }
+    ]
+  }
+]

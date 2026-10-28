@@ -1,0 +1,698 @@
+[
+  {
+    "id": "n2-l71-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson71#1"
+    ],
+    "difficulty": 1,
+    "stem": "数学（　）、彼はクラスで誰にも負けない。",
+    "options": [
+      "に沿って",
+      "の末に",
+      "にかけては",
+      "に当たらず"
+    ],
+    "answer": 2,
+    "full": "数学にかけては、彼はクラスで誰にも負けない。",
+    "tr": {
+      "zh": "说到数学，他在班上谁都不输。",
+      "en": "When it comes to math, he's second to none in his class."
+    },
+    "why": {
+      "zh": "后面是“谁都不输”的积极评价，表示在某领域特别擅长，用「にかけては」。",
+      "en": "\"Second to none\" praises his strength in a field — 「にかけては」 (when it comes to)."
+    },
+    "wrong": [
+      {
+        "zh": "「に沿って」是“沿着／按照”，不用于擅长的领域。",
+        "en": "「に沿って」 (along / in line with) doesn't mark a field of skill."
+      },
+      {
+        "zh": "「の末に」是“经过漫长的……最终”，数学不是过程。",
+        "en": "「の末に」 (after a long ~) doesn't fit a subject."
+      },
+      null,
+      {
+        "zh": "「に当たらず」是“不值得”，前面接动词，「数学に当たらず」说不通。",
+        "en": "「に当たらず」 (not worth) follows a verb; 「数学に当たらず」 makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n2-l71-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson71#1"
+    ],
+    "difficulty": 2,
+    "stem": "料理にかけては、（　）。",
+    "options": [
+      "母はあまり上手ではない",
+      "いろいろな本が出ている",
+      "母の右に出る者はいない",
+      "明日みんなで話し合おう"
+    ],
+    "answer": 2,
+    "full": "料理にかけては、母の右に出る者はいない。",
+    "tr": {
+      "zh": "说到做菜，没有人能比得上我妈妈。",
+      "en": "When it comes to cooking, nobody beats my mother."
+    },
+    "why": {
+      "zh": "「にかけては」后面要接对某人能力的积极评价：“没人能超过妈妈”。",
+      "en": "「にかけては」 must be followed by praise of someone's ability: nobody beats Mom."
+    },
+    "wrong": [
+      {
+        "zh": "「にかけては」后面是积极评价，不接“不太擅长”。",
+        "en": "「にかけては」 is followed by praise, not \"not very good\"."
+      },
+      {
+        "zh": "“出了很多书”只是关于做菜的话题，没有评价人的能力，应该用「については」。",
+        "en": "\"Lots of books are out\" is just a topic, not a skill evaluation — that's 「については」."
+      },
+      null,
+      {
+        "zh": "“明天大家一起讨论”只是话题，不是对能力的评价。",
+        "en": "\"Let's discuss it tomorrow\" is a topic, not an evaluation of skill."
+      }
+    ]
+  },
+  {
+    "id": "n2-l71-003",
+    "type": "narabe",
+    "refs": [
+      "lesson71#1"
+    ],
+    "difficulty": 2,
+    "stem": "彼は口数は少ないが、 [_] [★] [_] [_] 負けない。",
+    "options": [
+      "にかけては",
+      "仕事の",
+      "誰にも",
+      "正確さ"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "彼は口数は少ないが、 仕事の 正確さ にかけては 誰にも 負けない。",
+    "tr": {
+      "zh": "他话不多，但说到工作的准确性，谁都比不上他。",
+      "en": "He doesn't say much, but when it comes to accuracy in his work, he's second to none."
+    },
+    "why": {
+      "zh": "「仕事の正確さ」是领域，接「にかけては」，后面「誰にも負けない」。顺序：仕事の → 正確さ → にかけては → 誰にも。★ 是「正確さ」。",
+      "en": "「仕事の正確さ」 is the field, then 「にかけては」 and 「誰にも負けない」. Order: 仕事の → 正確さ → にかけては → 誰にも. The ★ is 「正確さ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l71-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson71#2"
+    ],
+    "difficulty": 2,
+    "stem": "あれだけ練習していたのだから、彼が優勝したのは驚く（　）。",
+    "options": [
+      "ものがある",
+      "に当たらない",
+      "に越したことはない",
+      "ところだった"
+    ],
+    "answer": 1,
+    "full": "あれだけ練習していたのだから、彼が優勝したのは驚くに当たらない。",
+    "tr": {
+      "zh": "他练了那么多，夺冠一点也不值得惊讶。",
+      "en": "He practiced that much, so it's no surprise that he won."
+    },
+    "why": {
+      "zh": "“练了那么多，所以……”，夺冠是理所当然的，“不值得惊讶”用「驚くに当たらない」。",
+      "en": "\"He practiced so much, so ~\" — the win is only natural: 「驚くに当たらない」 (nothing to be surprised at)."
+    },
+    "wrong": [
+      {
+        "zh": "「驚くものがある」是“有让人惊讶的地方”，和“练了那么多（所以理所当然）”矛盾。",
+        "en": "「驚くものがある」 (there's something surprising) contradicts \"he practiced that much\"."
+      },
+      null,
+      {
+        "zh": "「驚くに越したことはない」是“当然惊讶最好”，说不通。",
+        "en": "\"It's best to be surprised\" makes no sense."
+      },
+      {
+        "zh": "「驚くところだった」是“差点就惊讶了”，和这句的主语、逻辑都不合。",
+        "en": "\"I nearly got surprised\" doesn't fit the sentence."
+      }
+    ]
+  },
+  {
+    "id": "n2-l71-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson71#2"
+    ],
+    "difficulty": 1,
+    "stem": "検査の結果、ただの疲れだとわかったので、（　）に当たらない。",
+    "options": [
+      "心配した",
+      "心配して",
+      "心配しない",
+      "心配する"
+    ],
+    "answer": 3,
+    "full": "検査の結果、ただの疲れだとわかったので、心配するに当たらない。",
+    "tr": {
+      "zh": "检查结果知道只是疲劳，用不着担心。",
+      "en": "The tests showed it's just tiredness, so there's no need to worry."
+    },
+    "why": {
+      "zh": "「に当たらない」前接动词辞书形：「心配するに当たらない」（用不着担心）。",
+      "en": "「に当たらない」 follows the dictionary form: 「心配するに当たらない」 (no need to worry)."
+    },
+    "wrong": [
+      {
+        "zh": "「に当たらない」不接た形。",
+        "en": "「に当たらない」 doesn't follow the ta-form."
+      },
+      {
+        "zh": "「に当たらない」不接て形。",
+        "en": "「に当たらない」 doesn't follow the te-form."
+      },
+      {
+        "zh": "「心配しないに当たらない」是双重否定，说不通。",
+        "en": "「心配しないに当たらない」 is a garbled double negative."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l71-006",
+    "type": "narabe",
+    "refs": [
+      "lesson71#2"
+    ],
+    "difficulty": 2,
+    "stem": "初めての試合だったのだから、 [_] [_] [_] [★] 。",
+    "options": [
+      "恥じる",
+      "当たらない",
+      "に",
+      "負けても"
+    ],
+    "order": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "full": "初めての試合だったのだから、 負けても 恥じる に 当たらない 。",
+    "tr": {
+      "zh": "毕竟是第一次比赛，就算输了也不必感到羞耻。",
+      "en": "It was his first match, so there's nothing to be ashamed of even if he lost."
+    },
+    "why": {
+      "zh": "「負けても」是让步，「恥じる」＋「に当たらない」表示“用不着羞耻”。顺序：負けても → 恥じる → に → 当たらない。★ 是「当たらない」。",
+      "en": "「負けても」 (even if he lost), then 「恥じる」 + 「に当たらない」 (no need to be ashamed). Order: 負けても → 恥じる → に → 当たらない. The ★ is 「当たらない」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l71-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson71#3"
+    ],
+    "difficulty": 2,
+    "stem": "店の中を一時間も迷った（　）、結局何も買わずに帰った。",
+    "options": [
+      "からには",
+      "あげく",
+      "ところ",
+      "うちに"
+    ],
+    "answer": 1,
+    "full": "店の中を一時間も迷ったあげく、結局何も買わずに帰った。",
+    "tr": {
+      "zh": "在店里犹豫了整整一个小时，结果什么都没买就回去了。",
+      "en": "After dithering in the shop for a whole hour, I ended up going home without buying anything."
+    },
+    "why": {
+      "zh": "“犹豫了一个小时”“结果什么都没买”，是折腾很久后的不理想结果，用「た形＋あげく」。",
+      "en": "An hour of dithering, then nothing bought — a disappointing end to a long struggle: ta-form + 「あげく」."
+    },
+    "wrong": [
+      {
+        "zh": "「からには」是“既然……就（一定）”，后面接决心、义务，不接“什么都没买”。",
+        "en": "「からには」 (now that) leads to a resolve or duty, not \"bought nothing\"."
+      },
+      null,
+      {
+        "zh": "「たところ」后面接意外发现的结果（「聞いたところ、わかった」），不接自己的行动。",
+        "en": "「たところ」 is followed by something discovered, not one's own choice to leave."
+      },
+      {
+        "zh": "「うちに」接「ている」或「ない」形，不接た形。",
+        "en": "「うちに」 follows 「ている」 or 「ない」, not the ta-form."
+      }
+    ]
+  },
+  {
+    "id": "n2-l71-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson71#3"
+    ],
+    "difficulty": 1,
+    "stem": "二人はさんざん（　）あげく、とうとう別れてしまった。",
+    "options": [
+      "口論する",
+      "口論した",
+      "口論して",
+      "口論しよう"
+    ],
+    "answer": 1,
+    "full": "二人はさんざん口論したあげく、とうとう別れてしまった。",
+    "tr": {
+      "zh": "两个人吵来吵去，最后还是分手了。",
+      "en": "After arguing endlessly, the two of them finally broke up."
+    },
+    "why": {
+      "zh": "「あげく」前接动词た形（或「名词＋の」）：「口論したあげく」。",
+      "en": "「あげく」 follows the ta-form (or 「Nの」): 「口論したあげく」."
+    },
+    "wrong": [
+      {
+        "zh": "「あげく」不接辞书形。",
+        "en": "「あげく」 doesn't follow the dictionary form."
+      },
+      null,
+      {
+        "zh": "「あげく」不接て形。",
+        "en": "「あげく」 doesn't follow the te-form."
+      },
+      {
+        "zh": "「あげく」不接意志形。",
+        "en": "「あげく」 doesn't follow the volitional form."
+      }
+    ]
+  },
+  {
+    "id": "n2-l71-009",
+    "type": "narabe",
+    "refs": [
+      "lesson71#3"
+    ],
+    "difficulty": 2,
+    "stem": "彼は [_] [_] [★] [_] 自己破産してしまった。",
+    "options": [
+      "重ねた",
+      "ギャンブルにはまって",
+      "あげく",
+      "借金を"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "彼は ギャンブルにはまって 借金を 重ねた あげく 自己破産してしまった。",
+    "tr": {
+      "zh": "他沉迷赌博，欠债越来越多，最后宣告了个人破产。",
+      "en": "He got hooked on gambling, ran up debt after debt, and ended up declaring bankruptcy."
+    },
+    "why": {
+      "zh": "「ギャンブルにはまって」是起因，「借金を重ねた」是た形，接「あげく」，后面是坏结果。顺序：ギャンブルにはまって → 借金を → 重ねた → あげく。★ 是「重ねた」。",
+      "en": "「ギャンブルにはまって」 starts it off, 「借金を重ねた」 is the ta-form for 「あげく」, then the bad outcome. Order: ギャンブルにはまって → 借金を → 重ねた → あげく. The ★ is 「重ねた」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l71-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson71#4"
+    ],
+    "difficulty": 1,
+    "stem": "彼は一度も休む（　）、10年間働き続けた。",
+    "options": [
+      "ことには",
+      "ことなく",
+      "ものなら",
+      "上で"
+    ],
+    "answer": 1,
+    "full": "彼は一度も休むことなく、10年間働き続けた。",
+    "tr": {
+      "zh": "他一次也没休息，连续工作了10年。",
+      "en": "He worked for ten years straight without taking a single day off."
+    },
+    "why": {
+      "zh": "「一度も」＋「休むことなく」表示“一次也没有休息地……”，后面接「働き続けた」。",
+      "en": "「一度も休むことなく」 means \"without resting even once\", leading to 「働き続けた」."
+    },
+    "wrong": [
+      {
+        "zh": "「ことには」要接ない形（「休まないことには」），而且后面要接否定。",
+        "en": "「ことには」 needs the nai-form and a negative result."
+      },
+      null,
+      {
+        "zh": "「ものなら」接可能形或意志形，后面接愿望或后果，这里不成立。",
+        "en": "「ものなら」 takes the potential or volitional form and leads to a wish or consequence."
+      },
+      {
+        "zh": "辞书形＋「上で」是“在……方面”，“在休息方面工作了10年”说不通。",
+        "en": "Dictionary form + 「上で」 (in doing ~) makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n2-l71-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson71#4"
+    ],
+    "difficulty": 2,
+    "stem": "失敗を（　）ことなく、新しいことに挑戦してほしい。",
+    "options": [
+      "恐れた",
+      "恐れて",
+      "恐れる",
+      "恐れない"
+    ],
+    "answer": 2,
+    "full": "失敗を恐れることなく、新しいことに挑戦してほしい。",
+    "tr": {
+      "zh": "希望你不要害怕失败，勇于挑战新事物。",
+      "en": "I hope you'll take on new things without fearing failure."
+    },
+    "why": {
+      "zh": "「ことなく」前接动词辞书形：「恐れることなく」。",
+      "en": "「ことなく」 follows the dictionary form: 「恐れることなく」."
+    },
+    "wrong": [
+      {
+        "zh": "「ことなく」不接た形。",
+        "en": "「ことなく」 doesn't follow the ta-form."
+      },
+      {
+        "zh": "「ことなく」不接て形。",
+        "en": "「ことなく」 doesn't follow the te-form."
+      },
+      null,
+      {
+        "zh": "「ことなく」本身就是否定，前面不能再接ない形。",
+        "en": "「ことなく」 is already negative; it can't follow the nai-form."
+      }
+    ]
+  },
+  {
+    "id": "n2-l71-012",
+    "type": "narabe",
+    "refs": [
+      "lesson71#4"
+    ],
+    "difficulty": 2,
+    "stem": "彼は42キロを [★] [_] [_] [_] 。",
+    "options": [
+      "走りきった",
+      "立ち止まる",
+      "ことなく",
+      "一度も"
+    ],
+    "order": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "full": "彼は42キロを 一度も 立ち止まる ことなく 走りきった 。",
+    "tr": {
+      "zh": "他一次也没停下，跑完了42公里。",
+      "en": "He ran the full 42 kilometers without stopping once."
+    },
+    "why": {
+      "zh": "「一度も」修饰「立ち止まる」，接「ことなく」，最后是谓语「走りきった」。顺序：一度も → 立ち止まる → ことなく → 走りきった。★ 是「一度も」。",
+      "en": "「一度も」 goes with 「立ち止まる」 + 「ことなく」, and the predicate 「走りきった」 comes last. Order: 一度も → 立ち止まる → ことなく → 走りきった. The ★ is 「一度も」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l71-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson71#5"
+    ],
+    "difficulty": 1,
+    "stem": "雨がすぐに止んだので、タクシーを使わ（　）。",
+    "options": [
+      "ずにはいられなかった",
+      "ずに済んだ",
+      "ざるを得なかった",
+      "ないことには"
+    ],
+    "answer": 1,
+    "full": "雨がすぐに止んだので、タクシーを使わずに済んだ。",
+    "tr": {
+      "zh": "雨很快就停了，所以不用打车了。",
+      "en": "The rain stopped quickly, so I didn't have to take a taxi."
+    },
+    "why": {
+      "zh": "雨停了，本来要打车但幸好不用了，用「ずに済んだ」。",
+      "en": "The rain stopped, so the taxi turned out unnecessary — 「ずに済んだ」 (got by without)."
+    },
+    "wrong": [
+      {
+        "zh": "「ずにはいられなかった」是“忍不住打了车”，和“雨停了”的原因矛盾。",
+        "en": "「ずにはいられなかった」 (couldn't help taking a taxi) contradicts the rain stopping."
+      },
+      null,
+      {
+        "zh": "「ざるを得なかった」是“不得不打车”，和“雨停了”矛盾。",
+        "en": "「ざるを得なかった」 (had no choice but to) contradicts the rain stopping."
+      },
+      {
+        "zh": "「ないことには」后面要接否定结果，句子不完整。",
+        "en": "「ないことには」 needs a following clause; the sentence is incomplete."
+      }
+    ]
+  },
+  {
+    "id": "n2-l71-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson71#5"
+    ],
+    "difficulty": 2,
+    "stem": "保険に入っていたので、大きな出費を（　）に済んだ。",
+    "options": [
+      "しず",
+      "せず",
+      "しなく",
+      "さず"
+    ],
+    "answer": 1,
+    "full": "保険に入っていたので、大きな出費をせずに済んだ。",
+    "tr": {
+      "zh": "因为上了保险，所以不用花一大笔钱。",
+      "en": "I had insurance, so I was spared a big expense."
+    },
+    "why": {
+      "zh": "「する」的「ず」形是「せず」：「出費をせずに済んだ」。",
+      "en": "The 「ず」 form of 「する」 is 「せず」: 「出費をせずに済んだ」."
+    },
+    "wrong": [
+      {
+        "zh": "「する」的「ず」形不是「しず」。",
+        "en": "The 「ず」 form of 「する」 isn't 「しず」."
+      },
+      null,
+      {
+        "zh": "「しなく」后面不能接「に済む」（口语说「しなくて済む」）。",
+        "en": "「しなく」 can't take 「に済む」 (colloquially it's 「しなくて済む」)."
+      },
+      {
+        "zh": "「さず」是「さす」的否定，不是「する」的。",
+        "en": "「さず」 is the negative of 「さす」, not of 「する」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l71-015",
+    "type": "narabe",
+    "refs": [
+      "lesson71#5"
+    ],
+    "difficulty": 1,
+    "stem": "早めに謝った [_] [_] [★] [_] 。",
+    "options": [
+      "大きな問題に",
+      "済んだ",
+      "おかげで",
+      "ならずに"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "早めに謝った おかげで 大きな問題に ならずに 済んだ 。",
+    "tr": {
+      "zh": "多亏及早道了歉，才没有闹成大问题。",
+      "en": "Thanks to apologizing early, it didn't turn into a big problem."
+    },
+    "why": {
+      "zh": "「謝ったおかげで」是原因，「大きな問題にならずに済んだ」是幸好避免的结果。顺序：おかげで → 大きな問題に → ならずに → 済んだ。★ 是「ならずに」。",
+      "en": "「謝ったおかげで」 is the cause; 「大きな問題にならずに済んだ」 is the trouble avoided. Order: おかげで → 大きな問題に → ならずに → 済んだ. The ★ is 「ならずに」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l71-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson71#6"
+    ],
+    "difficulty": 1,
+    "stem": "友達が声をかけてくれなかったら、電車に乗り遅れる（　）。",
+    "options": [
+      "ところだ",
+      "ところに",
+      "ところだった",
+      "ところで"
+    ],
+    "answer": 2,
+    "full": "友達が声をかけてくれなかったら、電車に乗り遅れるところだった。",
+    "tr": {
+      "zh": "要不是朋友叫我一声，我就差点没赶上电车。",
+      "en": "If my friend hadn't called out to me, I'd have missed the train."
+    },
+    "why": {
+      "zh": "“要不是朋友叫我（实际叫了）”，是对过去的反事实假设，差点发生但没发生，用「ところだった」。",
+      "en": "\"If my friend hadn't called out\" (but they did) — it nearly happened but didn't: 「ところだった」."
+    },
+    "wrong": [
+      {
+        "zh": "「ところだ」是“正要……”，表示现在的时间点，和对过去的假设不符。",
+        "en": "「ところだ」 (about to) is about the present and doesn't fit the past hypothetical."
+      },
+      {
+        "zh": "「ところに」后面要接句子（“正要……的时候，……”），句子不完整。",
+        "en": "「ところに」 needs a following clause; the sentence is incomplete."
+      },
+      null,
+      {
+        "zh": "「ところで」后面要接句子，句子不完整。",
+        "en": "「ところで」 needs a following clause; the sentence is incomplete."
+      }
+    ]
+  },
+  {
+    "id": "n2-l71-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson71#6"
+    ],
+    "difficulty": 2,
+    "stem": "危うく大事な書類を電車に忘れる（　）。",
+    "options": [
+      "ところだった",
+      "ことだった",
+      "ものだった",
+      "はずだった"
+    ],
+    "answer": 0,
+    "full": "危うく大事な書類を電車に忘れるところだった。",
+    "tr": {
+      "zh": "差点把重要文件忘在电车上。",
+      "en": "I very nearly left some important documents on the train."
+    },
+    "why": {
+      "zh": "「危うく」（差点）和「ところだった」搭配，表示差一点就发生了坏事。",
+      "en": "「危うく」 (nearly) pairs with 「ところだった」 — something bad almost happened."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ことだった」不表示“差点”，和「危うく」不搭配。",
+        "en": "「ことだった」 doesn't mean \"nearly\" and doesn't go with 「危うく」."
+      },
+      {
+        "zh": "「ものだった」是回忆过去的习惯“以前常常……”，和「危うく」不搭配。",
+        "en": "「ものだった」 recalls a past habit; it doesn't go with 「危うく」."
+      },
+      {
+        "zh": "「はずだった」是“本来应该……”，指预定的事没实现，不和「危うく」搭配。",
+        "en": "「はずだった」 (was supposed to) is about a plan that fell through, not with 「危うく」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l71-018",
+    "type": "narabe",
+    "refs": [
+      "lesson71#6"
+    ],
+    "difficulty": 2,
+    "stem": "あと5分 [_] [_] [_] [★] ところだった。",
+    "options": [
+      "飛行機に",
+      "家を出るのが",
+      "間に合わない",
+      "遅かったら"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "あと5分 家を出るのが 遅かったら 飛行機に 間に合わない ところだった。",
+    "tr": {
+      "zh": "要是再晚5分钟出门，就赶不上飞机了。",
+      "en": "If I'd left the house five minutes later, I'd have missed my flight."
+    },
+    "why": {
+      "zh": "「家を出るのが遅かったら」是假设条件，后面「飛行機に間に合わない」接「ところだった」。顺序：家を出るのが → 遅かったら → 飛行機に → 間に合わない。★ 是「間に合わない」。",
+      "en": "「家を出るのが遅かったら」 is the hypothetical; 「飛行機に間に合わない」 + 「ところだった」 is what nearly happened. Order: 家を出るのが → 遅かったら → 飛行機に → 間に合わない. The ★ is 「間に合わない」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

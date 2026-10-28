@@ -1,0 +1,700 @@
+[
+  {
+    "id": "n3-l47-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson47#1"
+    ],
+    "difficulty": 1,
+    "stem": "田中さんは 会社の 代表（　）、来週の 国際会議に 出席する ことに なった。",
+    "options": [
+      "として",
+      "にしては",
+      "向けに",
+      "の割に"
+    ],
+    "answer": 0,
+    "full": "田中さんは 会社の 代表として、来週の 国際会議に 出席する ことに なった。",
+    "tr": {
+      "zh": "田中先生作为公司代表，决定出席下周的国际会议。",
+      "en": "Mr. Tanaka is going to attend next week's international conference as the company's representative."
+    },
+    "why": {
+      "zh": "以“公司代表”这个身份去出席会议，表示资格、身份用「名詞＋として」。",
+      "en": "He attends in the capacity of company representative — a role or capacity is 「名詞＋として」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「にしては」表示“就……来说出乎意料”，后面要接和预期不符的评价，这里只是陈述事实。",
+        "en": "「にしては」 sets up a result that defies expectation; this sentence just states a fact."
+      },
+      {
+        "zh": "「向けに」是“面向……（制作）”，用于商品、节目等的对象，不能表示人出席的身份。",
+        "en": "「向けに」 marks the target audience of something made; it can't give the role in which a person attends."
+      },
+      {
+        "zh": "「の割に」表示程度不相称，需要后面有出乎意料的评价，和“出席会议”接不上。",
+        "en": "「の割に」 points out a mismatch in degree; \"attend a conference\" isn't such a result."
+      }
+    ]
+  },
+  {
+    "id": "n3-l47-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson47#1",
+      "lesson47#2"
+    ],
+    "difficulty": 2,
+    "stem": "A「この 計画に ついて、どう 思いますか。」\nB「私（　）、もう 少し 時間を かけて 検討した ほうが いいと 思います。」",
+    "options": [
+      "としては",
+      "にしては",
+      "向けには",
+      "の割には"
+    ],
+    "answer": 0,
+    "full": "A「この 計画に ついて、どう 思いますか。」 B「私としては、もう 少し 時間を かけて 検討した ほうが いいと 思います。」",
+    "tr": {
+      "zh": "A：关于这个计划，你怎么看？ B：就我来说，我觉得最好再花点时间研究一下。",
+      "en": "A: What do you think about this plan? B: Personally, I think we should take a bit more time to consider it."
+    },
+    "why": {
+      "zh": "被问意见时说“就我的立场来说”，用「私としては」。",
+      "en": "Asked for an opinion, B gives their own standpoint: 「私としては」 \"as for me / from my standpoint\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「私にしては」是“就我来说（出乎意料地）……”，后面要接一个出乎意料的结果，不是陈述意见。",
+        "en": "「私にしては」 means \"(surprisingly) for me\" and needs an unexpected result, not an opinion."
+      },
+      {
+        "zh": "「向けには」表示“面向……”，说的是东西的对象，不能引出自己的意见。",
+        "en": "「向けには」 marks who something is made for; it can't introduce one's own opinion."
+      },
+      {
+        "zh": "「の割には」表示程度不相称，“和我不相称地”在这里讲不通。",
+        "en": "「の割には」 points out a mismatch in degree, which makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n3-l47-003",
+    "type": "narabe",
+    "refs": [
+      "lesson47#1"
+    ],
+    "difficulty": 2,
+    "stem": "入社して 三年、やっと [_] [_] [_] [★] ように なった。",
+    "options": [
+      "自信が",
+      "社会人",
+      "持てる",
+      "としての"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "入社して 三年、やっと 社会人としての 自信が 持てるように なった。",
+    "tr": {
+      "zh": "进公司三年，终于对自己作为社会人有了自信。",
+      "en": "Three years after joining the company, I've finally come to feel confident as a working adult."
+    },
+    "why": {
+      "zh": "修饰名词时用「名詞＋としての＋名詞」：社会人 としての 自信が，再接「持てる」＋「ように なった」。★ 在第四格，是「持てる」。",
+      "en": "Before a noun it's 「名詞＋としての＋名詞」: 社会人 としての 自信が, then 持てる ＋ ようになった. The ★ is the fourth slot: 「持てる」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l47-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson47#2"
+    ],
+    "difficulty": 2,
+    "stem": "田中さんは 日本に 来て まだ 半年（　）、日本語が とても 上手だ。",
+    "options": [
+      "にしては",
+      "として",
+      "割に",
+      "ために"
+    ],
+    "answer": 0,
+    "full": "田中さんは 日本に 来て まだ 半年にしては、日本語が とても 上手だ。",
+    "tr": {
+      "zh": "田中来日本才半年，就这一点来说日语非常好。",
+      "en": "For someone who's been in Japan only half a year, Mr. Tanaka's Japanese is very good."
+    },
+    "why": {
+      "zh": "“才半年”本来日语应该不太好，结果却很好——和预期相反，用「名詞＋にしては」。",
+      "en": "Half a year suggests his Japanese shouldn't be good yet, but it is — a result against expectation: 「名詞＋にしては」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「半年として」是“作为半年”，没有“出乎意料”的意思，句子不通。",
+        "en": "「半年として」 (\"in the role of half a year\") makes no sense."
+      },
+      {
+        "zh": "「割に」接名词时要加「の」（半年の割に），直接接「半年」不对。",
+        "en": "「割に」 needs 「の」 after a noun (半年の割に); 「半年割に」 is wrong."
+      },
+      {
+        "zh": "「ために」接名词要「の」，而且“因为才半年所以日语好”也不合逻辑。",
+        "en": "「ために」 needs 「の」 after a noun, and \"because it's only half a year, his Japanese is good\" is illogical."
+      }
+    ]
+  },
+  {
+    "id": "n3-l47-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson47#2"
+    ],
+    "difficulty": 2,
+    "stem": "この 作文は 一時間で 書いた（　）、とても よく できて いる。",
+    "options": [
+      "にしては",
+      "としては",
+      "うちに",
+      "たびに"
+    ],
+    "answer": 0,
+    "full": "この 作文は 一時間で 書いた にしては、とても よく できて いる。",
+    "tr": {
+      "zh": "这篇作文就一小时写成的来说，写得非常好。",
+      "en": "For an essay written in an hour, this is very well done."
+    },
+    "why": {
+      "zh": "“只用一小时写的”本来质量不会太高，结果却很好，用动词普通形＋「にしては」。",
+      "en": "An essay written in just an hour shouldn't be this good — against expectation: verb plain form ＋ 「にしては」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「としては」表示立场“作为……来说”，「書いたとしては」不成立。",
+        "en": "「としては」 gives a standpoint; 「書いたとしては」 doesn't work."
+      },
+      {
+        "zh": "「うちに」不接た形，而且“趁……”的意思也不合。",
+        "en": "「うちに」 doesn't follow the た-form, and \"while still…\" doesn't fit."
+      },
+      {
+        "zh": "「たびに」接辞书形，表示“每次”，和一篇作文的评价无关。",
+        "en": "「たびに」 takes the dictionary form and means \"every time\" — unrelated to judging one essay."
+      }
+    ]
+  },
+  {
+    "id": "n3-l47-006",
+    "type": "narabe",
+    "refs": [
+      "lesson47#2"
+    ],
+    "difficulty": 2,
+    "stem": "この ワインは [★] [_] [_] [_] と 思う。",
+    "options": [
+      "いい",
+      "にしては",
+      "千円",
+      "味が"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "この ワインは 千円にしては 味が いいと 思う。",
+    "tr": {
+      "zh": "我觉得这瓶红酒就一千日元来说味道不错。",
+      "en": "I think this wine tastes good for a thousand yen."
+    },
+    "why": {
+      "zh": "「千円にしては」（就一千日元来说）后接出乎意料的评价「味が いい」。★ 在第一格，是「千円」。",
+      "en": "「千円にしては」 (for a thousand yen) is followed by the unexpected judgment 「味が いい」. The ★ is the first slot: 「千円」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l47-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson47#3"
+    ],
+    "difficulty": 2,
+    "stem": "この 料理は 作り方が 簡単な（　）、とても おいしい。",
+    "options": [
+      "割に",
+      "にしては",
+      "として",
+      "うちに"
+    ],
+    "answer": 0,
+    "full": "この 料理は 作り方が 簡単な割に、とても おいしい。",
+    "tr": {
+      "zh": "这道菜做法简单，却非常好吃。",
+      "en": "This dish is very tasty for how easy it is to make."
+    },
+    "why": {
+      "zh": "做法简单和好吃程度不相称，用「割に」；な形容词接「な＋割に」。",
+      "en": "Easy to make yet very tasty — a mismatch in degree: 「割に」, which follows a な-adjective as 「〜な割に」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「にしては」不接形容词，「簡単なにしては」不对。",
+        "en": "「にしては」 doesn't attach to adjectives; 「簡単なにしては」 is wrong."
+      },
+      {
+        "zh": "「として」接名词表示身份，不接「簡単な」。",
+        "en": "「として」 follows a noun for a role; it can't follow 「簡単な」."
+      },
+      {
+        "zh": "「うちに」是“趁……的时候”，“趁简单的时候好吃”意思不通。",
+        "en": "「うちに」 means \"while (it's still)…\" — \"while it's easy, it's tasty\" makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n3-l47-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson47#3"
+    ],
+    "difficulty": 2,
+    "stem": "この かばんは 値段が 高い（　）、すぐに 壊れて しまった。",
+    "options": [
+      "割に",
+      "にしては",
+      "代わりに",
+      "うちに"
+    ],
+    "answer": 0,
+    "full": "この かばんは 値段が 高い割に、すぐに 壊れて しまった。",
+    "tr": {
+      "zh": "这个包价格那么贵，却很快就坏了。",
+      "en": "This bag broke quickly considering how expensive it was."
+    },
+    "why": {
+      "zh": "价格高和很快就坏不相称，用「割に」，可以直接接い形容词。",
+      "en": "Expensive yet quick to break — a mismatch: 「割に」, which can follow an い-adjective directly."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「にしては」不接い形容词，「高いにしては」不对。",
+        "en": "「にしては」 doesn't follow い-adjectives; 「高いにしては」 is wrong."
+      },
+      {
+        "zh": "「代わりに」表示交换，“贵”换来的应是好处，“很快坏了”接不上。",
+        "en": "「代わりに」 is a trade-off; being expensive would be balanced by something good, not by breaking quickly."
+      },
+      {
+        "zh": "「うちに」是“趁……”，“趁贵的时候坏了”意思不通。",
+        "en": "「うちに」 means \"while still…\" — \"while it's expensive, it broke\" makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n3-l47-009",
+    "type": "narabe",
+    "refs": [
+      "lesson47#3"
+    ],
+    "difficulty": 1,
+    "stem": "兄は [_] [★] [_] [_] 太らない。",
+    "options": [
+      "割に",
+      "全然",
+      "食べる",
+      "よく"
+    ],
+    "order": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "full": "兄は よく 食べる割に 全然 太らない。",
+    "tr": {
+      "zh": "哥哥吃得很多，却一点都不胖。",
+      "en": "My brother eats a lot but doesn't gain any weight at all."
+    },
+    "why": {
+      "zh": "「よく 食べる」＋「割に」（吃得多却……），「全然」修饰后面的「太らない」。★ 在第二格，是「食べる」。",
+      "en": "「よく 食べる」 ＋ 「割に」 (eats a lot, yet…); 「全然」 goes with 「太らない」. The ★ is the second slot: 「食べる」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l47-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson47#4"
+    ],
+    "difficulty": 2,
+    "stem": "この 雑誌は 二十代の 女性（　）作られて いて、ファッションや 仕事の 記事が 多い。",
+    "options": [
+      "向けに",
+      "として",
+      "にしては",
+      "に比べて"
+    ],
+    "answer": 0,
+    "full": "この 雑誌は 二十代の 女性向けに 作られて いて、ファッションや 仕事の 記事が 多い。",
+    "tr": {
+      "zh": "这本杂志是面向二十多岁女性做的，时尚和工作方面的文章很多。",
+      "en": "This magazine is made for women in their twenties, with many articles on fashion and work."
+    },
+    "why": {
+      "zh": "“为某对象而制作”用「名詞＋向けに」，和「作られて」呼应。",
+      "en": "Made with a target readership in mind: 「名詞＋向けに」, matching 「作られて」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「女性として作られて」是“作为女性被制作”，意思不通。",
+        "en": "「女性として作られて」 would mean \"made as a woman\" — nonsense."
+      },
+      {
+        "zh": "「にしては」要接出乎意料的评价，这里只是说明对象。",
+        "en": "「にしては」 needs an unexpected result; here the sentence only names the readership."
+      },
+      {
+        "zh": "「に比べて」是比较，“和女性相比被制作”讲不通。",
+        "en": "「に比べて」 compares; \"made compared with women\" makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n3-l47-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson47#4"
+    ],
+    "difficulty": 2,
+    "stem": "留学生（　）日本語の 授業が、来月から 始まる そうです。",
+    "options": [
+      "向けの",
+      "向けに",
+      "としての",
+      "にしては"
+    ],
+    "answer": 0,
+    "full": "留学生向けの 日本語の 授業が、来月から 始まる そうです。",
+    "tr": {
+      "zh": "听说面向留学生的日语课下个月开始。",
+      "en": "I hear Japanese classes for international students start next month."
+    },
+    "why": {
+      "zh": "后面紧接名词「日本語の 授業」，修饰名词要用「向けの」。",
+      "en": "A noun (日本語の授業) follows, so the modifier form 「向けの」 is needed."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「向けに」后面接动词，不能直接修饰名词「日本語の授業」。",
+        "en": "「向けに」 goes with a verb; it can't modify the noun 日本語の授業."
+      },
+      {
+        "zh": "「留学生としての授業」是“作为留学生的课”，意思不通，开课对象应用「向け」。",
+        "en": "「留学生としての授業」 (\"classes as international students\") makes no sense; the audience is 「向け」."
+      },
+      {
+        "zh": "「にしては」要接出乎意料的结果，后面不能接名词。",
+        "en": "「にしては」 needs an unexpected result and can't modify a noun."
+      }
+    ]
+  },
+  {
+    "id": "n3-l47-012",
+    "type": "narabe",
+    "refs": [
+      "lesson47#4"
+    ],
+    "difficulty": 2,
+    "stem": "市役所では 毎月、[_] [_] [_] [★] 開いて いる。",
+    "options": [
+      "生活",
+      "外国人",
+      "相談会を",
+      "向けの"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "市役所では 毎月、外国人向けの 生活相談会を 開いて いる。",
+    "tr": {
+      "zh": "市政府每月都举办面向外国人的生活咨询会。",
+      "en": "The city office holds a living-advice session for foreign residents every month."
+    },
+    "why": {
+      "zh": "「外国人向けの」修饰名词「生活相談会」，再接「を 開いて いる」。★ 在第四格，是「相談会を」。",
+      "en": "「外国人向けの」 modifies 「生活相談会」, then 「を 開いて いる」. The ★ is the fourth slot: 「相談会を」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l47-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson47#5"
+    ],
+    "difficulty": 1,
+    "stem": "ここは 駐車場が 広くて 子ども用の いすも ある、家族（　）レストランだ。",
+    "options": [
+      "向きの",
+      "としての",
+      "にしては",
+      "の割に"
+    ],
+    "answer": 0,
+    "full": "ここは 駐車場が 広くて 子ども用の いすも ある、家族向きの レストランだ。",
+    "tr": {
+      "zh": "这里停车场宽敞，还有儿童椅，是一家适合家庭的餐厅。",
+      "en": "With a big parking lot and children's chairs, this is a family-friendly restaurant."
+    },
+    "why": {
+      "zh": "停车场大、有儿童椅，说明这家店“适合家庭”，用「名詞＋向きの＋名詞」。",
+      "en": "A big car park and kids' chairs make it suitable for families: 「名詞＋向きの＋名詞」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「家族としてのレストラン」是“作为家庭的餐厅”，意思不通。",
+        "en": "「家族としてのレストラン」 (\"a restaurant as a family\") makes no sense."
+      },
+      {
+        "zh": "「にしては」后面不能直接接名词，也没有出乎意料的内容。",
+        "en": "「にしては」 can't modify a noun, and nothing unexpected follows."
+      },
+      {
+        "zh": "「の割に」表示不相称，后面不能直接接名词「レストラン」。",
+        "en": "「の割に」 marks a mismatch and can't modify the noun レストラン."
+      }
+    ]
+  },
+  {
+    "id": "n3-l47-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson47#5",
+      "lesson47#4"
+    ],
+    "difficulty": 3,
+    "stem": "この ゲームは 子ども用に 作られた ものでは ないが、ルールが 簡単なので 子ども（　）だ。",
+    "options": [
+      "向き",
+      "向け",
+      "として",
+      "にしては"
+    ],
+    "answer": 0,
+    "full": "この ゲームは 子ども用に 作られた ものでは ないが、ルールが 簡単なので 子ども向きだ。",
+    "tr": {
+      "zh": "这个游戏并不是为孩子做的，但规则简单，所以适合孩子。",
+      "en": "This game wasn't made for children, but its simple rules make it suitable for them."
+    },
+    "why": {
+      "zh": "前面明确说“不是为孩子做的”，只是规则简单“适合”孩子，表示客观适合用「向き」。",
+      "en": "The sentence says it wasn't made for kids — it just happens to suit them, which is 「向き」 (suitable), not 「向け」 (made for)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「向け」是“专门面向……制作”，和前面“不是为孩子做的”矛盾。",
+        "en": "「向け」 means made for that audience, contradicting \"it wasn't made for children\"."
+      },
+      {
+        "zh": "「子どもとしてだ」不成立，「として」表示身份。",
+        "en": "「子どもとしてだ」 doesn't work; 「として」 gives a role."
+      },
+      {
+        "zh": "「にしては」后面要接评价，不能直接加「だ」结句。",
+        "en": "「にしては」 needs a following judgment; it can't end the sentence with 「だ」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l47-015",
+    "type": "narabe",
+    "refs": [
+      "lesson47#5"
+    ],
+    "difficulty": 2,
+    "stem": "この 靴は 軽くて 歩きやすいので、[★] [_] [_] [_] と 思う。",
+    "options": [
+      "向き",
+      "旅行",
+      "だ",
+      "長い"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "この 靴は 軽くて 歩きやすいので、長い 旅行向きだと 思う。",
+    "tr": {
+      "zh": "这双鞋轻便好走，我觉得适合长途旅行。",
+      "en": "These shoes are light and comfortable, so I think they're good for long trips."
+    },
+    "why": {
+      "zh": "「長い」修饰「旅行」，「旅行向き」＋「だ」＋「と 思う」。★ 在第一格，是「長い」。",
+      "en": "「長い」 modifies 「旅行」: 旅行向き ＋ だ ＋ と思う. The ★ is the first slot: 「長い」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l47-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson47#6"
+    ],
+    "difficulty": 2,
+    "stem": "あの まじめな 田中さんが 会社を 休んで 遊びに 行く（　）、信じられない。",
+    "options": [
+      "なんて",
+      "なんか",
+      "うちに",
+      "ように"
+    ],
+    "answer": 0,
+    "full": "あの まじめな 田中さんが 会社を 休んで 遊びに 行くなんて、信じられない。",
+    "tr": {
+      "zh": "那么认真的田中居然请假去玩，真不敢相信。",
+      "en": "To think that serious Mr. Tanaka would skip work to go out and have fun — I can't believe it."
+    },
+    "why": {
+      "zh": "后面是「信じられない」（不敢相信），表示惊讶，用动词普通形＋「なんて」。",
+      "en": "「信じられない」 shows surprise: verb plain form ＋ 「なんて」 (\"to think that…\")."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「なんか」一般接名词表示轻视或举例，不接在动词后表示惊讶。",
+        "en": "「なんか」 usually follows nouns (dismissive / examples); it doesn't express surprise after a verb."
+      },
+      {
+        "zh": "「うちに」是“趁……”，和“不敢相信”接不上。",
+        "en": "「うちに」 means \"while still…\", which doesn't lead to \"I can't believe it\"."
+      },
+      {
+        "zh": "「ように」表示目的或样态，后面接「信じられない」意思不通。",
+        "en": "「ように」 gives a purpose or manner; it doesn't fit before 「信じられない」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l47-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson47#6"
+    ],
+    "difficulty": 2,
+    "stem": "A「部長、この プロジェクトの リーダーを お願いできませんか。」\nB「いや、私（　）には 無理だよ。もっと 若い 人に 頼んで くれ。」",
+    "options": [
+      "なんか",
+      "なんて",
+      "として",
+      "にしては"
+    ],
+    "answer": 0,
+    "full": "A「部長、この プロジェクトの リーダーを お願いできませんか。」 B「いや、私なんかには 無理だよ。もっと 若い 人に 頼んで くれ。」",
+    "tr": {
+      "zh": "A：部长，能请您担任这个项目的负责人吗？ B：不，我这种人做不来。去找更年轻的人吧。",
+      "en": "A: Manager, could you lead this project? B: No, someone like me couldn't do it. Ask someone younger."
+    },
+    "why": {
+      "zh": "自谦地说“我这种人”，后面还要接助词「に」，用「私なんか」（なんか后可接助词）。",
+      "en": "Being self-deprecating (\"someone like me\") and followed by the particle 「に」: 「私なんかには」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「なんて」后面一般不接「に」，「私なんてには」不成立。",
+        "en": "「なんて」 isn't followed by 「に」; 「私なんてには」 is wrong."
+      },
+      {
+        "zh": "「私としてには」不成立；「として」是身份，后面不能接「には」。",
+        "en": "「私としてには」 isn't grammatical; 「として」 can't take 「には」."
+      },
+      {
+        "zh": "「にしては」后面不能接「には」，也没有出乎意料的意思。",
+        "en": "「にしては」 can't be followed by 「には」, and nothing unexpected is meant."
+      }
+    ]
+  },
+  {
+    "id": "n3-l47-018",
+    "type": "narabe",
+    "refs": [
+      "lesson47#6"
+    ],
+    "difficulty": 2,
+    "stem": "入社して [_] [_] [★] [_] 、もったいないと 思う。",
+    "options": [
+      "なんて",
+      "一年で",
+      "辞める",
+      "たった"
+    ],
+    "order": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "full": "入社して たった 一年で 辞めるなんて、もったいないと 思う。",
+    "tr": {
+      "zh": "进公司才一年就辞职，我觉得太可惜了。",
+      "en": "Quitting after just one year at the company — I think that's a waste."
+    },
+    "why": {
+      "zh": "「たった」修饰「一年で」，「辞める」＋「なんて」表示惊讶、意外。★ 在第三格，是「辞める」。",
+      "en": "「たった」 goes with 「一年で」; 「辞める」 ＋ 「なんて」 expresses surprise. The ★ is the third slot: 「辞める」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

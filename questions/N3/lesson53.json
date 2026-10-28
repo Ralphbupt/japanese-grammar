@@ -1,0 +1,698 @@
+[
+  {
+    "id": "n3-l53-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson53#1"
+    ],
+    "difficulty": 1,
+    "stem": "A「この 量、一人で 全部 食べられる？」\nB「食べられ（　）けど、ちょっと 多いね。」",
+    "options": [
+      "ないことはない",
+      "ずにはいられない",
+      "ないことにする",
+      "ないでほしい"
+    ],
+    "answer": 0,
+    "full": "A「この 量、一人で 全部 食べられる？」  B「食べられない ことはないけど、ちょっと 多いね。」",
+    "tr": {
+      "zh": "A：这么多，你一个人吃得完吗？ B：也不是吃不完，不过有点多啊。",
+      "en": "A: Can you eat all of this on your own? B: It's not that I can't, but it's a bit much."
+    },
+    "why": {
+      "zh": "B 有保留地肯定“也不是吃不完”，后面「けど、ちょっと多い」补充保留，用双重否定「ないことはない」。",
+      "en": "B gives a hedged yes (\"it's not that I can't\") and adds the reservation 「けど、ちょっと多い」 — 「ないことはない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ずにはいられない」接ない形去「ない」（食べず），不能接在「食べられ」后面，意思“忍不住”也不对。",
+        "en": "「ずにはいられない」 can't follow 「食べられ」, and \"can't help\" doesn't fit."
+      },
+      {
+        "zh": "「ことにする」表示自己的决定，可能形「食べられない」不是能决定的事，意思不通。",
+        "en": "「ことにする」 is a decision; being unable to eat (食べられない) isn't something one decides."
+      },
+      {
+        "zh": "「ないでほしい」是“希望别人不要……”，「食べられないでほしい」不成立。",
+        "en": "「ないでほしい」 asks someone not to do something; 「食べられないでほしい」 makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n3-l53-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson53#1"
+    ],
+    "difficulty": 2,
+    "stem": "駅から 歩いて 行け（　）が、30分ぐらい かかるので、バスの ほうが 楽ですよ。",
+    "options": [
+      "ないことはない",
+      "ないはずだ",
+      "ないことにした",
+      "ないでいる"
+    ],
+    "answer": 0,
+    "full": "駅から 歩いて 行けない ことは ないが、30分ぐらい かかるので、バスの ほうが 楽ですよ。",
+    "tr": {
+      "zh": "从车站也不是走不到，但要30分钟左右，坐公交更轻松哦。",
+      "en": "You *can* walk from the station, but it takes about 30 minutes, so the bus is easier."
+    },
+    "why": {
+      "zh": "“也不是走不到”是有保留的肯定，后面「が」接保留理由（要30分钟），用「ないことはない」。",
+      "en": "\"It's not that you can't walk\" is a hedged yes, followed by the catch (30 minutes) — 「ないことはない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「行けないはずだ」是“应该走不到”，可后面说“要30分钟”，说明是走得到的，前后矛盾。",
+        "en": "「行けないはずだ」 says you shouldn't be able to walk, but \"it takes 30 minutes\" says you can."
+      },
+      {
+        "zh": "「ことにした」是自己决定的事，可能形「行けない」不是能决定的，意思不通。",
+        "en": "「ことにした」 is a decision; being unable (行けない) isn't something one decides."
+      },
+      {
+        "zh": "「ないでいる」是“一直没有……”的状态，「行けないでいる」和后面的建议接不上。",
+        "en": "「ないでいる」 (\"keep not doing\") doesn't lead into the advice that follows."
+      }
+    ]
+  },
+  {
+    "id": "n3-l53-003",
+    "type": "narabe",
+    "refs": [
+      "lesson53#1"
+    ],
+    "difficulty": 2,
+    "stem": "A「この 資料、明日の 朝までに できますか。」\nB「[_] [_] [★] [_]、ほかの 仕事が 遅れて しまいます。」",
+    "options": [
+      "ないことは",
+      "ありませんが",
+      "急げば",
+      "でき"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "A「この 資料、明日の 朝までに できますか。」  B「急げば できない ことは ありませんが、ほかの 仕事が 遅れて しまいます。」",
+    "tr": {
+      "zh": "A：这份资料明天早上之前能做好吗？ B：抓紧的话也不是做不完，但别的工作就会耽误。",
+      "en": "A: Can you have these documents ready by tomorrow morning? B: If I hurry it's not impossible, but my other work will slip."
+    },
+    "why": {
+      "zh": "急げば（条件）＋でき＋ないことは＋ありませんが（「ないことはない」的礼貌形）。★ 在第三格，是「ないことは」。",
+      "en": "急げば (condition) ＋ でき ＋ ないことは ＋ ありませんが (polite 「ないことはない」). The ★ is the third slot: 「ないことは」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l53-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson53#2"
+    ],
+    "difficulty": 1,
+    "stem": "友人の 結婚式で、新婦の お父さんの スピーチを 聞いて、泣か（　）。",
+    "options": [
+      "ずにはいられなかった",
+      "ざるを得なかった",
+      "ないことはなかった",
+      "なくてもよかった"
+    ],
+    "answer": 0,
+    "full": "友人の 結婚式で、新婦の お父さんの スピーチを 聞いて、泣かずには いられなかった。",
+    "tr": {
+      "zh": "在朋友的婚礼上，听了新娘父亲的致辞，我忍不住哭了。",
+      "en": "At my friend's wedding, hearing the bride's father's speech, I couldn't help crying."
+    },
+    "why": {
+      "zh": "被致辞感动，感情上控制不住地哭了，用「ずにはいられない」（忍不住）。",
+      "en": "Moved by the speech, the speaker couldn't hold back tears — an emotional impulse: 「ずにはいられない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ざるを得ない」是被外部情况逼得“不得不”，哭不是被迫的，不自然。",
+        "en": "「ざるを得ない」 is being forced by circumstances; crying isn't forced on you."
+      },
+      {
+        "zh": "「ないことはなかった」是“也不是没哭”，语气冷淡有保留，和被感动的场景不符。",
+        "en": "「ないことはなかった」 (\"it's not that I didn't cry\") is a grudging hedge, not a moved reaction."
+      },
+      {
+        "zh": "「なくてもよかった」是“本来不哭也行”，和“听了致辞很感动”接不上。",
+        "en": "「なくてもよかった」 (\"needn't have cried\") doesn't follow being moved by the speech."
+      }
+    ]
+  },
+  {
+    "id": "n3-l53-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson53#2"
+    ],
+    "difficulty": 2,
+    "stem": "部下の 失礼な 態度を 見て、一言 注意（　）。",
+    "options": [
+      "せずにはいられなかった",
+      "しずにはいられなかった",
+      "さずにはいられなかった",
+      "するずにはいられなかった"
+    ],
+    "answer": 0,
+    "full": "部下の 失礼な 態度を 見て、一言 注意せずには いられなかった。",
+    "tr": {
+      "zh": "看到下属无礼的态度，我忍不住说了他一句。",
+      "en": "Seeing my subordinate's rude attitude, I couldn't help saying something to him."
+    },
+    "why": {
+      "zh": "「する」接「ずにはいられない」时变成「せず」：「注意せずにはいられない」。",
+      "en": "With 「ずにはいられない」, 「する」 becomes 「せず」: 「注意せずにはいられない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「する」的ない形是「し（ない）」，但接「ず」时是特殊形「せず」，没有「しず」。",
+        "en": "「する」 is 「しない」, but before 「ず」 it's the special form 「せず」; 「しず」 doesn't exist."
+      },
+      {
+        "zh": "「さず」是「さす／さない」类动词的形式，「する」不这样变。",
+        "en": "「さず」 belongs to verbs like 「さす」; 「する」 doesn't conjugate that way."
+      },
+      {
+        "zh": "「ず」要接在ない形词干后，辞书形「する」不能直接接「ず」。",
+        "en": "「ず」 attaches to the nai-stem, not the dictionary form 「する」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l53-006",
+    "type": "narabe",
+    "refs": [
+      "lesson53#2"
+    ],
+    "difficulty": 1,
+    "stem": "彼は 困って いる 人を 見ると、[_] [_] [★] [_] 性格だ。",
+    "options": [
+      "いられない",
+      "かけ",
+      "声を",
+      "ずには"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "彼は 困って いる 人を 見ると、声を かけずには いられない 性格だ。",
+    "tr": {
+      "zh": "他是那种一看到有困难的人就忍不住上前搭话的性格。",
+      "en": "He's the kind of person who can't help speaking up when he sees someone in trouble."
+    },
+    "why": {
+      "zh": "声を＋かけ（ない形词干）＋ずには＋いられない，整体修饰「性格」。★ 在第三格，是「ずには」。",
+      "en": "声を ＋ かけ (nai-stem) ＋ ずには ＋ いられない, modifying 「性格」. The ★ is the third slot: 「ずには」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l53-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson53#3"
+    ],
+    "difficulty": 1,
+    "stem": "この 雨は なかなか やみ（　）から、今日の 試合は 中止に なるだろう。",
+    "options": [
+      "そうもない",
+      "そうだ",
+      "ようだ",
+      "らしい"
+    ],
+    "answer": 0,
+    "full": "この 雨は なかなか やみそうも ないから、今日の 試合は 中止に なるだろう。",
+    "tr": {
+      "zh": "这雨看样子怎么也停不了，今天的比赛应该会取消吧。",
+      "en": "This rain doesn't look like it'll stop any time soon, so today's game will probably be called off."
+    },
+    "why": {
+      "zh": "「なかなか」和“比赛会取消”说明雨停不了，ます形词干＋「そうもない」（看起来不会……）。",
+      "en": "「なかなか」 and the cancelled game show the rain won't stop: masu-stem ＋ 「そうもない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「やみそうだ」是“看起来要停了”，和“比赛会取消”矛盾，「なかなか」也要接否定。",
+        "en": "「やみそうだ」 (\"looks like it'll stop\") contradicts the cancellation, and 「なかなか」 wants a negative."
+      },
+      {
+        "zh": "「ようだ」要接普通形（やむようだ），不能接ます形词干「やみ」。",
+        "en": "「ようだ」 follows the plain form (やむようだ), not the stem 「やみ」."
+      },
+      {
+        "zh": "「らしい」要接普通形（やむらしい），不能接ます形词干「やみ」。",
+        "en": "「らしい」 follows the plain form (やむらしい), not the stem 「やみ」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l53-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson53#3"
+    ],
+    "difficulty": 2,
+    "stem": "仕事が まだ 山の ように 残って いて、今夜は 8時までに 帰れ（　）。妻に 遅く なると 連絡して おこう。",
+    "options": [
+      "そうにない",
+      "ないことはない",
+      "そうだ",
+      "ずにはいられない"
+    ],
+    "answer": 0,
+    "full": "仕事が まだ 山の ように 残って いて、今夜は 8時までに 帰れそうに ない。妻に 遅く なると 連絡して おこう。",
+    "tr": {
+      "zh": "工作还堆积如山，今晚8点前看来回不去了。先跟妻子说一声会晚回。",
+      "en": "There's still a mountain of work left, so I don't think I'll be home by 8 tonight. I'll let my wife know I'll be late."
+    },
+    "why": {
+      "zh": "工作堆积如山，又要告诉妻子会晚回，说明判断“回不去”，用「そうにない」。",
+      "en": "Work piled up and a message that he'll be late: he judges he won't make it — 「そうにない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「帰れないことはない」是“也不是回不去”，和“要告诉妻子会晚回”矛盾。",
+        "en": "「帰れないことはない」 (\"I could make it\") contradicts telling his wife he'll be late."
+      },
+      {
+        "zh": "「帰れそうだ」是“看来能回去”，和后面的“会晚回”矛盾。",
+        "en": "「帰れそうだ」 (\"looks like I can\") contradicts \"I'll be late\"."
+      },
+      {
+        "zh": "「ずにはいられない」不接在可能形「帰れ」后面，“忍不住”的意思也不对。",
+        "en": "「ずにはいられない」 doesn't follow 「帰れ」 and \"can't help\" doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n3-l53-009",
+    "type": "narabe",
+    "refs": [
+      "lesson53#3"
+    ],
+    "difficulty": 1,
+    "stem": "この [_] [_] [★] [_] ので、手伝って もらえませんか。",
+    "options": [
+      "そうもない",
+      "一人では",
+      "仕事は",
+      "終わり"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "この 仕事は一人では 終わりそうも ないので、手伝って もらえませんか。",
+    "tr": {
+      "zh": "这份工作我一个人看来是做不完了，能帮我一下吗？",
+      "en": "There's no way I'll finish this job on my own — could you help me?"
+    },
+    "why": {
+      "zh": "この＋仕事は＋一人では＋終わり（ます形词干）＋そうもない。★ 在第三格，是「終わり」。",
+      "en": "この ＋ 仕事は ＋ 一人では ＋ 終わり (masu-stem) ＋ そうもない. The ★ is the third slot: 「終わり」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l53-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson53#4"
+    ],
+    "difficulty": 1,
+    "stem": "この 部屋で 見た ことは、（　）ほかの 人に 話さないで ください。",
+    "options": [
+      "決して",
+      "めったに",
+      "別に",
+      "ぜひ"
+    ],
+    "answer": 0,
+    "full": "この 部屋で 見た ことは、決して ほかの 人に 話さないで ください。",
+    "tr": {
+      "zh": "在这个房间里看到的事情，请绝对不要告诉别人。",
+      "en": "Whatever you saw in this room, please never tell anyone else."
+    },
+    "why": {
+      "zh": "和否定的请求「〜ないでください」搭配，强调“绝对不要”，用「決して」。",
+      "en": "With the negative request 「〜ないでください」, \"under no circumstances\" is 「決して」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「めったに」表示频率低（很少），不能用在禁止或请求里。",
+        "en": "「めったに」 is about low frequency; it isn't used in requests or prohibitions."
+      },
+      {
+        "zh": "「別に」是“并不特别……”，用于轻描淡写的否定，不能加强禁止。",
+        "en": "「別に」 is an offhand \"not particularly\"; it can't strengthen a prohibition."
+      },
+      {
+        "zh": "「ぜひ」用于积极的请求（ぜひ来てください），不能和否定「ないでください」搭配。",
+        "en": "「ぜひ」 goes with positive requests (ぜひ来てください), not 「ないでください」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l53-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson53#4"
+    ],
+    "difficulty": 2,
+    "stem": "この 仕事は 決して 楽（　）が、お客さんに 喜んで もらえる のが うれしい。",
+    "options": [
+      "ではない",
+      "だ",
+      "になる",
+      "にする"
+    ],
+    "answer": 0,
+    "full": "この 仕事は 決して 楽では ないが、お客さんに 喜んで もらえる のが うれしい。",
+    "tr": {
+      "zh": "这份工作绝对不轻松，但能让顾客高兴我很开心。",
+      "en": "This job is by no means easy, but I'm happy that customers appreciate it."
+    },
+    "why": {
+      "zh": "「決して」必须和否定搭配，な形容词的否定是「楽ではない」。",
+      "en": "「決して」 must pair with a negative; for a na-adjective that's 「楽ではない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「決して」不能和肯定形「楽だ」一起用。",
+        "en": "「決して」 can't go with the affirmative 「楽だ」."
+      },
+      {
+        "zh": "「決して」后面要否定，「楽になる」是肯定。",
+        "en": "「決して」 needs a negative; 「楽になる」 is affirmative."
+      },
+      {
+        "zh": "「楽にする」是肯定（让……轻松），不能和「決して」搭配。",
+        "en": "「楽にする」 is affirmative and can't pair with 「決して」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l53-012",
+    "type": "narabe",
+    "refs": [
+      "lesson53#4"
+    ],
+    "difficulty": 1,
+    "stem": "先生に 助けて いただいた [_] [_] [★] [_]。",
+    "options": [
+      "ません",
+      "決して",
+      "ことは",
+      "忘れ"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "先生に 助けて いただいた ことは 決して 忘れません。",
+    "tr": {
+      "zh": "老师帮助过我的事，我绝对不会忘记。",
+      "en": "I will never forget how my teacher helped me."
+    },
+    "why": {
+      "zh": "〜ことは（话题）＋決して＋忘れ＋ません（否定）。★ 在第三格，是「忘れ」。",
+      "en": "〜ことは (topic) ＋ 決して ＋ 忘れ ＋ ません (negative). The ★ is the third slot: 「忘れ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l53-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson53#5"
+    ],
+    "difficulty": 1,
+    "stem": "A「どう したの？怒ってる？」\nB「いや、（　）怒って ないよ。ちょっと 疲れて いるだけ。」",
+    "options": [
+      "別に",
+      "めったに",
+      "きっと",
+      "ぜひ"
+    ],
+    "answer": 0,
+    "full": "A「どう したの？怒ってる？」  B「いや、別に 怒って ないよ。ちょっと 疲れて いるだけ。」",
+    "tr": {
+      "zh": "A：怎么了？生气了？ B：没有，并没有生气啦，只是有点累。",
+      "en": "A: What's up? Are you angry? B: No, I'm not angry or anything. Just a bit tired."
+    },
+    "why": {
+      "zh": "轻描淡写地否认“并没有生气”，口语中用「別に〜ない」。",
+      "en": "An offhand denial, \"I'm not angry or anything\", is 「別に〜ない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「めったに」是频率（很少），「めったに怒ってない」是说“很少处在生气的状态”，不是回答“现在生气了吗”。",
+        "en": "「めったに」 is about frequency; it doesn't answer \"are you angry now?\"."
+      },
+      {
+        "zh": "「きっと」是“一定”的推测，不能用来说自己现在的感受。",
+        "en": "「きっと」 is a confident guess; you don't use it about your own feelings."
+      },
+      {
+        "zh": "「ぜひ」用于愿望和请求，不能修饰否定的陈述。",
+        "en": "「ぜひ」 goes with wishes and requests, not a negative statement."
+      }
+    ]
+  },
+  {
+    "id": "n3-l53-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson53#5"
+    ],
+    "difficulty": 1,
+    "stem": "A「何か 食べたい もの、ある？」\nB「（　）。何でも いいよ。」",
+    "options": [
+      "別に",
+      "めったに",
+      "決して",
+      "必ず"
+    ],
+    "answer": 0,
+    "full": "A「何か 食べたい もの、ある？」  B「別に。何でも いいよ。」",
+    "tr": {
+      "zh": "A：有什么想吃的吗？ B：没什么特别的。什么都行。",
+      "en": "A: Anything you'd like to eat? B: Not really. Anything's fine."
+    },
+    "why": {
+      "zh": "口语中「別に」可以单独用，省略后面的否定，表示“没什么特别的”，正好接「何でもいい」。",
+      "en": "In speech 「別に」 can stand alone with the negative dropped — \"not really\" — which fits 「何でもいい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「めったに」不能单独回答，要和否定动词一起用，表示“很少”。",
+        "en": "「めったに」 can't stand alone; it needs a negative verb and means \"rarely\"."
+      },
+      {
+        "zh": "「決して」是强烈否定（绝对不），不能单独回答“有没有想吃的”。",
+        "en": "「決して」 is an emphatic \"never\" and can't be a reply on its own."
+      },
+      {
+        "zh": "「必ず」是“一定”，单独回答没有意义，也和「何でもいい」矛盾。",
+        "en": "「必ず」 (\"without fail\") makes no sense as a reply and clashes with 「何でもいい」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l53-015",
+    "type": "narabe",
+    "refs": [
+      "lesson53#5"
+    ],
+    "difficulty": 2,
+    "stem": "A「その 仕事、やりたくないの？」\nB「[_] [_] [★] [_] けど、少し 不安な んだ。」",
+    "options": [
+      "わけじゃない",
+      "やりたく",
+      "別に",
+      "ない"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "A「その 仕事、やりたくないの？」  B「別に やりたくない わけじゃないけど、少し 不安な んだ。」",
+    "tr": {
+      "zh": "A：那份工作你不想做吗？ B：也不是不想做，只是有点不安。",
+      "en": "A: You don't want that job? B: It's not that I don't want to, I'm just a little nervous."
+    },
+    "why": {
+      "zh": "別に＋やりたく＋ない＋わけじゃない（并不是……）。★ 在第三格，是「ない」。",
+      "en": "別に ＋ やりたく ＋ ない ＋ わけじゃない (\"it's not that…\"). The ★ is the third slot: 「ない」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l53-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson53#6"
+    ],
+    "difficulty": 1,
+    "stem": "父は いつも 仕事が 忙しくて、家族で 旅行する ことは（　）。",
+    "options": [
+      "めったにない",
+      "めったにある",
+      "たまにない",
+      "決してある"
+    ],
+    "answer": 0,
+    "full": "父は いつも 仕事が 忙しくて、家族で 旅行する ことは めったに ない。",
+    "tr": {
+      "zh": "父亲工作总是很忙，全家一起旅行的机会很少。",
+      "en": "My father is always busy with work, so we rarely travel as a family."
+    },
+    "why": {
+      "zh": "「めったに」必须和否定搭配，“很少有”是「めったにない」。",
+      "en": "「めったに」 must pair with a negative: \"rarely happens\" is 「めったにない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「めったに」不能和肯定「ある」一起用。",
+        "en": "「めったに」 can't go with the affirmative 「ある」."
+      },
+      {
+        "zh": "「たまに」是“偶尔（有）”，要接肯定，「たまにない」意思不通。",
+        "en": "「たまに」 (\"occasionally\") takes an affirmative; 「たまにない」 makes no sense."
+      },
+      {
+        "zh": "「決して」必须接否定，「決してある」不成立。",
+        "en": "「決して」 needs a negative; 「決してある」 is ungrammatical."
+      }
+    ]
+  },
+  {
+    "id": "n3-l53-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson53#6"
+    ],
+    "difficulty": 2,
+    "stem": "この 地方では 雪は（　）降らないので、少し 降っただけで 電車が 止まって しまう。",
+    "options": [
+      "めったに",
+      "決して",
+      "別に",
+      "必ず"
+    ],
+    "answer": 0,
+    "full": "この 地方では 雪は めったに 降らないので、少し 降っただけで 電車が 止まって しまう。",
+    "tr": {
+      "zh": "这个地方很少下雪，所以只要下一点电车就会停运。",
+      "en": "It rarely snows in this region, so even a little snow stops the trains."
+    },
+    "why": {
+      "zh": "后面说“下一点就停运”，说明偶尔会下，只是频率很低，用「めったに〜ない」。",
+      "en": "\"A little snow stops the trains\" means it does snow now and then — just rarely: 「めったに〜ない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「決して降らない」是“绝对不下”，可后面说“下一点就停运”，说明会下，前后矛盾。",
+        "en": "「決して降らない」 (\"never snows\") contradicts \"when a little falls\"."
+      },
+      {
+        "zh": "「別に」是“并不特别……”，用于说人的感受或态度，不能说下雪的频率。",
+        "en": "「別に」 (\"not particularly\") is about attitudes, not how often it snows."
+      },
+      {
+        "zh": "「必ず」是“一定”，不能和否定「降らない」搭配说频率。",
+        "en": "「必ず」 (\"always\") doesn't pair with 「降らない」 to give a frequency."
+      }
+    ]
+  },
+  {
+    "id": "n3-l53-018",
+    "type": "narabe",
+    "refs": [
+      "lesson53#6"
+    ],
+    "difficulty": 1,
+    "stem": "こんな [_] [_] [★] [_]、ぜひ 参加した ほうが いいよ。",
+    "options": [
+      "ないから",
+      "チャンスは",
+      "めったに",
+      "いい"
+    ],
+    "order": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "full": "こんな いい チャンスは めったに ないから、ぜひ 参加した ほうが いいよ。",
+    "tr": {
+      "zh": "这么好的机会很难得，一定要参加哦。",
+      "en": "A chance this good rarely comes along, so you really should take part."
+    },
+    "why": {
+      "zh": "こんな＋いい（修饰チャンス）＋チャンスは＋めったに＋ないから。★ 在第三格，是「めったに」。",
+      "en": "こんな ＋ いい ＋ チャンスは ＋ めったに ＋ ないから. The ★ is the third slot: 「めったに」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

@@ -1,0 +1,508 @@
+[
+  {
+    "id": "n5-m1-101",
+    "type": "bunpou",
+    "refs": [
+      "lesson02#3"
+    ],
+    "difficulty": 1,
+    "stem": "わたしは 毎日 電車（　） 会社へ 行きます。",
+    "options": [
+      "で",
+      "に",
+      "を",
+      "が"
+    ],
+    "answer": 0,
+    "full": "わたしは 毎日 電車で 会社へ 行きます。",
+    "tr": {
+      "zh": "我每天坐电车去公司。",
+      "en": "I go to work by train every day."
+    },
+    "why": {
+      "zh": "电车是去公司的交通手段，表示手段、方式用「で」。",
+      "en": "The train is the means of getting to work; means and method take 「で」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「電車に」要和「乗ります」搭配（坐上电车），不能直接接「行きます」表示手段。",
+        "en": "「電車に」 goes with 「乗ります」 (get on the train); it can't mark the means of 「行きます」."
+      },
+      {
+        "zh": "「を」表示宾语或经过的地方，「電車を 行きます」不成立。",
+        "en": "「を」 marks an object or a route; 「電車を 行きます」 doesn't work."
+      },
+      {
+        "zh": "「が」会让电车变成主语（电车去公司），和句首的「わたしは」冲突。",
+        "en": "「が」 would make the train the subject (the train goes to work), clashing with 「わたしは」."
+      }
+    ]
+  },
+  {
+    "id": "n5-m1-102",
+    "type": "bunpou",
+    "refs": [
+      "lesson16#1",
+      "lesson02#5"
+    ],
+    "difficulty": 2,
+    "stem": "A「日曜日は どこかへ 行きましたか。」\nB「いいえ、どこ（　） 行きませんでした。うちで ねて いました。」",
+    "options": [
+      "へも",
+      "へか",
+      "へは",
+      "へでも"
+    ],
+    "answer": 0,
+    "full": "A「日曜日は どこかへ 行きましたか。」 B「いいえ、どこへも 行きませんでした。うちで ねて いました。」",
+    "tr": {
+      "zh": "A：星期天去哪儿了吗？ B：没有，哪儿也没去。在家睡觉了。",
+      "en": "A: Did you go anywhere on Sunday? B: No, I didn't go anywhere. I was sleeping at home."
+    },
+    "why": {
+      "zh": "B 说「いいえ」，后面是否定「行きませんでした」：疑问词＋（助词）＋「も」＋否定 = 全否定，“哪儿也没去”。",
+      "en": "B says 「いいえ」 and the verb is negative: question word + (particle) + 「も」 + negative is a total negation, \"didn't go anywhere\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「どこかへ」是“去了某个地方”，用于肯定或提问，不能和全否定的回答搭配。",
+        "en": "「どこかへ」 means \"somewhere\" — used in questions and positive sentences, not in this flat denial."
+      },
+      {
+        "zh": "「どこへは」不是日语的说法，疑问词后面不接「は」。",
+        "en": "「どこへは」 isn't Japanese; a question word doesn't take 「は」."
+      },
+      {
+        "zh": "「どこへでも」是“哪儿都（去）”，和后面的否定矛盾。",
+        "en": "「どこへでも」 means \"anywhere at all (I'd go)\" — it contradicts the negative verb."
+      }
+    ]
+  },
+  {
+    "id": "n5-m1-103",
+    "type": "bunpou",
+    "refs": [
+      "lesson07#2"
+    ],
+    "difficulty": 1,
+    "stem": "わたしは 子どもの とき、一回 馬に（　）。少し こわかったですが、たのしかったです。",
+    "options": [
+      "乗った ことが あります",
+      "乗る ことが できます",
+      "乗った ほうが いいです",
+      "乗る つもりです"
+    ],
+    "answer": 0,
+    "full": "わたしは 子どもの とき、一回 馬に 乗った ことが あります。少し こわかったですが、たのしかったです。",
+    "tr": {
+      "zh": "我小时候骑过一次马。虽然有点害怕，但是很开心。",
+      "en": "I rode a horse once when I was a child. It was a little scary, but fun."
+    },
+    "why": {
+      "zh": "「子どもの とき」「一回」加上后句用过去式讲当时的感受，是在说经历：「〜た ことが あります」。",
+      "en": "「子どもの とき」, 「一回」 (once) and the past-tense feelings that follow describe an experience: 「〜た ことが あります」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「乗る ことが できます」是“会骑”，讲现在的能力，和「子どもの とき」「一回」以及后面回忆当时的感受接不上。",
+        "en": "「乗る ことが できます」 is present ability; it doesn't fit 「子どもの とき」, 「一回」 or the memory that follows."
+      },
+      {
+        "zh": "「乗った ほうが いいです」是建议，后面讲的是自己小时候的经历，对不上。",
+        "en": "「乗った ほうが いいです」 is advice, but what follows is the writer's own childhood experience."
+      },
+      {
+        "zh": "「つもりです」是打算，还没做；后句「こわかったです」「たのしかったです」说明已经骑过了。",
+        "en": "「つもりです」 is a plan not yet carried out, but 「こわかったです」「たのしかったです」 show it already happened."
+      }
+    ]
+  },
+  {
+    "id": "n5-m1-104",
+    "type": "bunpou",
+    "refs": [
+      "lesson08#3"
+    ],
+    "difficulty": 1,
+    "stem": "A「夏と 冬と、どちらが 好きですか。」\nB「わたしは 冬より 夏（　） 好きです。海で およげますから。」",
+    "options": [
+      "の ほうが",
+      "ほど",
+      "より",
+      "も"
+    ],
+    "answer": 0,
+    "full": "A「夏と 冬と、どちらが 好きですか。」 B「わたしは 冬より 夏の ほうが 好きです。海で およげますから。」",
+    "tr": {
+      "zh": "A：夏天和冬天，你喜欢哪个？ B：比起冬天，我更喜欢夏天。因为可以在海里游泳。",
+      "en": "A: Which do you like better, summer or winter? B: I like summer better than winter, because you can swim in the sea."
+    },
+    "why": {
+      "zh": "回答「どちらが〜ですか」用「Aより Bの ほうが〜」，「の ほうが」标出被选中的那一个。",
+      "en": "The answer to 「どちらが〜ですか」 is 「Aより Bの ほうが〜」; 「の ほうが」 marks the one chosen."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ほど」要和否定搭配（「〜ほど 好きではない」），这里是肯定句。",
+        "en": "「ほど」 needs a negative (「〜ほど 好きではない」); this sentence is positive."
+      },
+      {
+        "zh": "前面已经有「冬より」，再接「より」句子不成立。",
+        "en": "「冬より」 is already there; a second 「より」 makes no sentence."
+      },
+      {
+        "zh": "「夏も 好きです」是“夏天也喜欢”，没有回答“更喜欢哪个”，也和「冬より」接不上。",
+        "en": "「夏も」 (I like summer too) doesn't say which is preferred and doesn't fit 「冬より」."
+      }
+    ]
+  },
+  {
+    "id": "n5-m1-105",
+    "type": "bunpou",
+    "refs": [
+      "lesson10#1"
+    ],
+    "difficulty": 2,
+    "stem": "あした 雨が（　）、サッカーは しないで、うちで ゲームを しましょう。",
+    "options": [
+      "ふったら",
+      "ふっても",
+      "ふったり",
+      "ふるのに"
+    ],
+    "answer": 0,
+    "full": "あした 雨が ふったら、サッカーは しないで、うちで ゲームを しましょう。",
+    "tr": {
+      "zh": "明天要是下雨，就不踢足球了，在家玩游戏吧。",
+      "en": "If it rains tomorrow, let's not play soccer and play games at home instead."
+    },
+    "why": {
+      "zh": "明天下不下雨还不知道，“如果下雨就……”是假定条件，后面是提议「〜ましょう」，用「〜たら」。",
+      "en": "Tomorrow's rain is only a possibility — \"if it rains, let's…\" is a condition followed by a suggestion, so 「〜たら」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ふっても」是“即使下雨也……”，后面应该是照样做，而这里是因为下雨才不踢球。",
+        "en": "「ふっても」 (even if it rains) should be followed by doing something anyway; here the rain is the reason to cancel."
+      },
+      {
+        "zh": "「〜たり」要成对使用并以「する」结尾，不能接条件后的提议。",
+        "en": "「〜たり」 lists actions and ends in 「する」; it can't set up a condition."
+      },
+      {
+        "zh": "「のに」表示“明明……却……”，用于已经发生的事实，不能用于明天的假设。",
+        "en": "「のに」 (even though) is for facts and complaints, not for a hypothetical tomorrow."
+      }
+    ]
+  },
+  {
+    "id": "n5-m1-106",
+    "type": "bunpou",
+    "refs": [
+      "lesson16#4"
+    ],
+    "difficulty": 1,
+    "stem": "兄は いつも 歌を（　） おふろに 入ります。",
+    "options": [
+      "歌いながら",
+      "歌うながら",
+      "歌ってながら",
+      "歌ったながら"
+    ],
+    "answer": 0,
+    "full": "兄は いつも 歌を 歌いながら おふろに 入ります。",
+    "tr": {
+      "zh": "哥哥总是一边唱歌一边泡澡。",
+      "en": "My older brother always sings while he takes a bath."
+    },
+    "why": {
+      "zh": "“一边……一边……”用「ながら」，前面接动词ます形去掉「ます」：歌います → 歌いながら。",
+      "en": "\"While doing\" is 「ながら」, attached to the ます-stem: 歌います → 歌いながら."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ながら」不接辞书形，「歌うながら」不成立。",
+        "en": "「ながら」 doesn't follow the dictionary form; 「歌うながら」 is wrong."
+      },
+      {
+        "zh": "「ながら」不接て形，「歌ってながら」不成立。",
+        "en": "「ながら」 doesn't follow the て-form; 「歌ってながら」 is wrong."
+      },
+      {
+        "zh": "「ながら」不接た形，「歌ったながら」不成立。",
+        "en": "「ながら」 doesn't follow the た-form; 「歌ったながら」 is wrong."
+      }
+    ]
+  },
+  {
+    "id": "n5-m1-107",
+    "type": "bunpou",
+    "refs": [
+      "lesson15#7"
+    ],
+    "difficulty": 1,
+    "stem": "ごはんを（　）、手を 洗って ください。",
+    "options": [
+      "食べる まえに",
+      "食べた まえに",
+      "食べる あとで",
+      "食べながら"
+    ],
+    "answer": 0,
+    "full": "ごはんを 食べる まえに、手を 洗って ください。",
+    "tr": {
+      "zh": "吃饭之前请洗手。",
+      "en": "Please wash your hands before you eat."
+    },
+    "why": {
+      "zh": "饭前洗手。“……之前”是「辞书形＋まえに」。",
+      "en": "Wash your hands before eating: \"before\" is dictionary form + 「まえに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「まえに」前面用辞书形，不用た形。",
+        "en": "「まえに」 takes the dictionary form, not the た-form."
+      },
+      {
+        "zh": "「あとで」前面要用た形（「食べた あとで」），「食べる あとで」不成立。",
+        "en": "「あとで」 takes the た-form (「食べた あとで」); 「食べる あとで」 is wrong."
+      },
+      {
+        "zh": "「食べながら」是“边吃边洗手”，意思说不通。",
+        "en": "「食べながら」 would mean washing your hands while eating — it makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n5-m1-108",
+    "type": "bunpou",
+    "refs": [
+      "lesson12#6"
+    ],
+    "difficulty": 2,
+    "stem": "A「たんじょうびに 何が（　）か。」\nB「新しい くつが ほしいです。」",
+    "options": [
+      "ほしいです",
+      "したいです",
+      "ありたいです",
+      "ほしがります"
+    ],
+    "answer": 0,
+    "full": "A「たんじょうびに 何が ほしいですか。」 B「新しい くつが ほしいです。」",
+    "tr": {
+      "zh": "A：生日想要什么？ B：想要一双新鞋。",
+      "en": "A: What do you want for your birthday? B: I want new shoes."
+    },
+    "why": {
+      "zh": "B 回答「くつが ほしいです」，所以 A 问的是“想要什么东西”：「何が ほしいですか」。",
+      "en": "B answers 「くつが ほしいです」, so A asked what thing B wants: 「何が ほしいですか」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「したいです」问的是“想做什么”，B 回答的是想要的东西，对不上。",
+        "en": "「したいです」 asks what B wants to do, but B names a thing."
+      },
+      {
+        "zh": "「ありたいです」不是日语的说法。",
+        "en": "「ありたいです」 isn't Japanese."
+      },
+      {
+        "zh": "「ほしがります」用于第三人称（“他想要”），而且要用「を」，不能当面问对方。",
+        "en": "「ほしがります」 is for a third person and takes 「を」; you don't ask the listener with it."
+      }
+    ]
+  },
+  {
+    "id": "n5-m1-109",
+    "type": "bunpou",
+    "refs": [
+      "lesson06#3",
+      "lesson06#2"
+    ],
+    "difficulty": 2,
+    "stem": "A「あした、おべんとうを 持って 来なければ なりませんか。」\nB「いいえ、持って 来（　）。昼ごはんは 学校で 出ます。でも、持って 来たい 人は 持って 来ても いいですよ。」",
+    "options": [
+      "なくても いいです",
+      "ては いけません",
+      "なければ なりません",
+      "ないで ください"
+    ],
+    "answer": 0,
+    "full": "A「あした、おべんとうを 持って 来なければ なりませんか。」 B「いいえ、持って 来なくても いいです。昼ごはんは 学校で 出ます。でも、持って 来たい 人は 持って 来ても いいですよ。」",
+    "tr": {
+      "zh": "A：明天必须带便当来吗？ B：不，不带也可以。午饭学校会提供。不过想带的人也可以带来哦。",
+      "en": "A: Do we have to bring a packed lunch tomorrow? B: No, you don't have to. The school provides lunch. But anyone who wants to bring one may."
+    },
+    "why": {
+      "zh": "回答“必须……吗”的否定是“不……也可以”：「〜なくても いいです」；后面又说想带的人也可以带，正好对上。",
+      "en": "\"No\" to \"must we…?\" is \"you don't have to\": 「〜なくても いいです」 — and B then says those who want to may still bring one."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「持って 来ては いけません」是禁止带，和后面「持って 来ても いいですよ」矛盾。",
+        "en": "「持って 来ては いけません」 forbids bringing one, contradicting 「持って 来ても いいですよ」."
+      },
+      {
+        "zh": "B 先说了「いいえ」，再说“必须带”前后矛盾。",
+        "en": "B has just said 「いいえ」; \"you must bring one\" contradicts it."
+      },
+      {
+        "zh": "「持って 来ないで ください」是请对方别带，和后面允许带的话矛盾。",
+        "en": "「持って 来ないで ください」 asks people not to bring one, contradicting the permission that follows."
+      }
+    ]
+  },
+  {
+    "id": "n5-m1-110",
+    "type": "narabe",
+    "refs": [
+      "lesson05#1"
+    ],
+    "difficulty": 2,
+    "stem": "A「田中さんは どの 人ですか。」\nB「あそこで [_] [_] [★] [_] よ。」",
+    "options": [
+      "いる",
+      "コーヒーを",
+      "人です",
+      "飲んで"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "A「田中さんは どの 人ですか。」 B「あそこで コーヒーを 飲んで いる 人ですよ。」",
+    "tr": {
+      "zh": "A：田中先生是哪一位？ B：就是在那边喝咖啡的那个人。",
+      "en": "A: Which one is Mr. Tanaka? B: The person drinking coffee over there."
+    },
+    "why": {
+      "zh": "「コーヒーを 飲んで いる」（正在喝咖啡）整体修饰「人」：コーヒーを ＋ 飲んで ＋ いる ＋ 人です。★ 在第三格，是「いる」。",
+      "en": "「コーヒーを 飲んで いる」 (drinking coffee) modifies 「人」: コーヒーを ＋ 飲んで ＋ いる ＋ 人です. The ★ is the third slot: 「いる」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-m1-111",
+    "type": "narabe",
+    "refs": [
+      "lesson15#8"
+    ],
+    "difficulty": 2,
+    "stem": "わたしは 車を [_] [_] [★] [_] います。",
+    "options": [
+      "して",
+      "買う",
+      "アルバイトを",
+      "ために"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "わたしは 車を 買う ために アルバイトを して います。",
+    "tr": {
+      "zh": "我为了买车在打工。",
+      "en": "I'm working a part-time job to buy a car."
+    },
+    "why": {
+      "zh": "目的“为了买车”是「車を 買う ために」，后面是正在做的事「アルバイトを して います」。★ 在第三格，是「アルバイトを」。",
+      "en": "The purpose is 「車を 買う ために」, then what you're doing: 「アルバイトを して います」. The ★ is the third slot: 「アルバイトを」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-m1-112",
+    "type": "narabe",
+    "refs": [
+      "lesson17#3"
+    ],
+    "difficulty": 2,
+    "stem": "わたしは 朝 早く [_] [★] [_] [_]。",
+    "options": [
+      "が",
+      "苦手です",
+      "起きる",
+      "の"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "わたしは 朝 早く 起きるのが 苦手です。",
+    "tr": {
+      "zh": "我不擅长早起。",
+      "en": "I'm bad at getting up early."
+    },
+    "why": {
+      "zh": "动作做名词要加「の」：「起きる の」，再接「が 苦手です」。★ 在第二格，是「の」。",
+      "en": "An action becomes a noun with 「の」: 「起きる の」, then 「が 苦手です」. The ★ is the second slot: 「の」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-m1-113",
+    "type": "narabe",
+    "refs": [
+      "lesson15#1"
+    ],
+    "difficulty": 3,
+    "stem": "この 図書館では 本を [_] [_] [★] [_] が できます。",
+    "options": [
+      "かりる",
+      "こと",
+      "五さつ",
+      "まで"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "この 図書館では 本を 五さつ まで かりる ことが できます。",
+    "tr": {
+      "zh": "这个图书馆最多可以借五本书。",
+      "en": "At this library you can borrow up to five books."
+    },
+    "why": {
+      "zh": "「五さつ まで」（最多五本）修饰动作「かりる」，「辞书形＋こと が できます」表示可以：五さつ ＋ まで ＋ かりる ＋ こと。★ 在第三格，是「かりる」。",
+      "en": "「五さつ まで」 (up to five) goes with 「かりる」, and dictionary form + 「こと が できます」 means \"can\": 五さつ ＋ まで ＋ かりる ＋ こと. The ★ is the third slot: 「かりる」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

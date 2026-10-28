@@ -1,0 +1,583 @@
+[
+  {
+    "id": "n3-l49-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson49#1"
+    ],
+    "difficulty": 1,
+    "stem": "昨日は とても 疲れて いて、電気を（　）まま 寝て しまった。",
+    "options": [
+      "つけた",
+      "つける",
+      "つけて",
+      "つけ"
+    ],
+    "answer": 0,
+    "full": "昨日は とても 疲れて いて、電気を つけた まま 寝て しまった。",
+    "tr": {
+      "zh": "昨天太累了，开着灯就睡着了。",
+      "en": "I was so tired yesterday that I fell asleep with the light on."
+    },
+    "why": {
+      "zh": "“开着灯（保持状态）就……”，动词接「まま」用た形：つけた＋まま。",
+      "en": "\"With the light left on\": a verb before 「まま」 takes the た-form — つけた ＋ まま."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "辞书形接「まま」不能表示“保持开着的状态”。",
+        "en": "The dictionary form before 「まま」 can't express \"left on\"."
+      },
+      {
+        "zh": "て形不能接「まま」。",
+        "en": "The て-form can't come before 「まま」."
+      },
+      {
+        "zh": "ます形词干接的是「っぱなし」，不是「まま」。",
+        "en": "The ます-stem goes with 「っぱなし」, not 「まま」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l49-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson49#1",
+      "lesson49#3"
+    ],
+    "difficulty": 2,
+    "stem": "日本では、靴を 履いた（　）家に 上がっては いけない。",
+    "options": [
+      "まま",
+      "ずに",
+      "だらけで",
+      "っぱなしで"
+    ],
+    "answer": 0,
+    "full": "日本では、靴を 履いた まま 家に 上がっては いけない。",
+    "tr": {
+      "zh": "在日本，不能穿着鞋进屋。",
+      "en": "In Japan, you mustn't go into a house with your shoes on."
+    },
+    "why": {
+      "zh": "“穿着鞋（保持状态）进屋”，た形＋「まま」。",
+      "en": "\"With shoes still on\": た-form ＋ 「まま」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ずに」接ない形词干（履かずに），不接た形。",
+        "en": "「ずに」 follows the ない-stem (履かずに), not the た-form."
+      },
+      {
+        "zh": "「だらけ」接名词，不接动词た形。",
+        "en": "「だらけ」 follows nouns, not a verb's た-form."
+      },
+      {
+        "zh": "「っぱなし」接ます形词干（履きっぱなし），不接た形。",
+        "en": "「っぱなし」 follows the ます-stem (履きっぱなし), not the た-form."
+      }
+    ]
+  },
+  {
+    "id": "n3-l49-003",
+    "type": "narabe",
+    "refs": [
+      "lesson49#1"
+    ],
+    "difficulty": 2,
+    "stem": "窓を [_] [★] [_] [_] 、部屋に 虫が たくさん 入って いた。",
+    "options": [
+      "いたら",
+      "開けた",
+      "出かけて",
+      "まま"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "窓を 開けた まま 出かけて いたら、部屋に 虫が たくさん 入って いた。",
+    "tr": {
+      "zh": "开着窗户出门，结果房间里进了很多虫子。",
+      "en": "I'd gone out leaving the window open, and lots of bugs had got into the room."
+    },
+    "why": {
+      "zh": "「開けた まま」（开着的状态）＋「出かけて いたら」。★ 在第二格，是「まま」。",
+      "en": "「開けた まま」 (left open) ＋ 「出かけて いたら」. The ★ is the second slot: 「まま」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l49-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson49#2"
+    ],
+    "difficulty": 1,
+    "stem": "子どもは 公園で 遊んで、服が 泥（　）に なって 帰って きた。",
+    "options": [
+      "だらけ",
+      "まま",
+      "っぱなし",
+      "ずに"
+    ],
+    "answer": 0,
+    "full": "子どもは 公園で 遊んで、服が 泥だらけに なって 帰って きた。",
+    "tr": {
+      "zh": "孩子在公园玩，弄得满身是泥回来了。",
+      "en": "The kids played in the park and came home with their clothes covered in mud."
+    },
+    "why": {
+      "zh": "“满是泥”用「名詞＋だらけ」，带有负面语气。",
+      "en": "\"Covered in mud\" is 「名詞＋だらけ」, with a negative feel."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「まま」接名词要加「の」（泥のまま），而且意思是“保持原状”，不合。",
+        "en": "「まま」 needs 「の」 after a noun, and \"remaining as is\" doesn't fit."
+      },
+      {
+        "zh": "「っぱなし」接动词ます形词干，不接名词。",
+        "en": "「っぱなし」 follows a verb's ます-stem, not a noun."
+      },
+      {
+        "zh": "「ずに」接动词ない形词干，不接名词。",
+        "en": "「ずに」 follows a verb's ない-stem, not a noun."
+      }
+    ]
+  },
+  {
+    "id": "n3-l49-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson49#2"
+    ],
+    "difficulty": 2,
+    "stem": "この 報告書は 間違い（　）なので、もう 一度 書き直して ください。",
+    "options": [
+      "だらけ",
+      "まみれ",
+      "ずくめ",
+      "っぱなし"
+    ],
+    "answer": 0,
+    "full": "この 報告書は 間違いだらけ なので、もう 一度 書き直して ください。",
+    "tr": {
+      "zh": "这份报告全是错误，请再重写一遍。",
+      "en": "This report is full of mistakes, so please rewrite it."
+    },
+    "why": {
+      "zh": "“到处都是错误”是负面的“满是”，用「だらけ」。",
+      "en": "\"Riddled with mistakes\" — a negative \"full of\": 「だらけ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「まみれ」只用于泥、汗、血等物理上沾满的东西，不用于“错误”。",
+        "en": "「まみれ」 is for things physically smeared on (mud, sweat, blood), not mistakes."
+      },
+      {
+        "zh": "「ずくめ」多用于固定搭配（黒ずくめ、いいことずくめ），不说「間違いずくめ」。",
+        "en": "「ずくめ」 lives in set phrases (黒ずくめ, いいことずくめ); 「間違いずくめ」 isn't said."
+      },
+      {
+        "zh": "「っぱなし」接动词ます形词干，不接名词。",
+        "en": "「っぱなし」 follows a verb's ます-stem, not a noun."
+      }
+    ]
+  },
+  {
+    "id": "n3-l49-006",
+    "type": "narabe",
+    "refs": [
+      "lesson49#2"
+    ],
+    "difficulty": 1,
+    "stem": "引っ越した [_] [_] [_] [★] 。",
+    "options": [
+      "段ボール",
+      "だらけだ",
+      "ばかりで",
+      "部屋の 中が"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "引っ越した ばかりで 部屋の 中が 段ボールだらけだ。",
+    "tr": {
+      "zh": "刚搬家，房间里全是纸箱。",
+      "en": "I've just moved, so the room is full of cardboard boxes."
+    },
+    "why": {
+      "zh": "「引っ越した ばかりで」（刚搬家），「部屋の 中が」＋「段ボールだらけだ」。★ 在第四格，是「だらけだ」。",
+      "en": "「引っ越した ばかりで」 (just moved), then 部屋の 中が ＋ 段ボールだらけだ. The ★ is the fourth slot: 「だらけだ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l49-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson49#3"
+    ],
+    "difficulty": 1,
+    "stem": "歯を みがく 間、水を 出し（　）に しないで ください。",
+    "options": [
+      "っぱなし",
+      "まま",
+      "だらけ",
+      "ずに"
+    ],
+    "answer": 0,
+    "full": "歯を みがく 間、水を 出しっぱなしに しないで ください。",
+    "tr": {
+      "zh": "刷牙的时候，请不要一直开着水龙头。",
+      "en": "Please don't leave the water running while you brush your teeth."
+    },
+    "why": {
+      "zh": "「出し」是ます形词干，接「っぱなし」表示“开着不管”，带“不应该”的语气。",
+      "en": "「出し」 is the ます-stem; 「っぱなし」 attaches to it: left running, which shouldn't be."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「まま」要接た形（出したまま），不接ます形词干。",
+        "en": "「まま」 needs the た-form (出したまま), not the ます-stem."
+      },
+      {
+        "zh": "「だらけ」接名词，不接动词。",
+        "en": "「だらけ」 follows nouns, not verbs."
+      },
+      {
+        "zh": "「ずに」接ない形词干（出さずに），而且“不要不放水”意思不通。",
+        "en": "「ずに」 follows the ない-stem (出さずに), and the meaning wouldn't fit anyway."
+      }
+    ]
+  },
+  {
+    "id": "n3-l49-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson49#3"
+    ],
+    "difficulty": 2,
+    "stem": "今日は 満員電車で 二時間 立ち（　）だったので、足が とても 痛い。",
+    "options": [
+      "っぱなし",
+      "まま",
+      "だらけ",
+      "ながら"
+    ],
+    "answer": 0,
+    "full": "今日は 満員電車で 二時間 立ちっぱなしだったので、足が とても 痛い。",
+    "tr": {
+      "zh": "今天在满员电车上一直站了两个小时，脚特别疼。",
+      "en": "I had to stand the whole two hours on a packed train today, so my feet really hurt."
+    },
+    "why": {
+      "zh": "“一直站着（持续不变）”用ます形词干＋「っぱなし」。",
+      "en": "\"Standing the whole time\": ます-stem ＋ 「っぱなし」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「まま」要接た形（立ったまま），不接ます形词干。",
+        "en": "「まま」 needs the た-form (立ったまま), not the ます-stem."
+      },
+      {
+        "zh": "「だらけ」接名词，不接动词。",
+        "en": "「だらけ」 follows nouns, not verbs."
+      },
+      {
+        "zh": "「ながら」表示同时做两件事，后面不能直接接「だった」结句。",
+        "en": "「ながら」 links two simultaneous actions; it can't end with 「だった」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l49-009",
+    "type": "narabe",
+    "refs": [
+      "lesson49#3"
+    ],
+    "difficulty": 1,
+    "stem": "昨夜は [★] [_] [_] [_] 寝て しまった。",
+    "options": [
+      "で",
+      "テレビを",
+      "っぱなし",
+      "つけ"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "昨夜は テレビを つけっぱなしで 寝て しまった。",
+    "tr": {
+      "zh": "昨晚开着电视就睡着了。",
+      "en": "Last night I fell asleep with the TV left on."
+    },
+    "why": {
+      "zh": "「テレビを」＋ます形词干「つけ」＋「っぱなし」＋「で」。★ 在第一格，是「テレビを」。",
+      "en": "「テレビを」 ＋ ます-stem 「つけ」 ＋ 「っぱなし」 ＋ 「で」. The ★ is the first slot: 「テレビを」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l49-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson49#4"
+    ],
+    "difficulty": 1,
+    "stem": "彼は 予習を（　）授業に 出て、先生の 質問に 答えられなかった。",
+    "options": [
+      "せずに",
+      "しずに",
+      "さずに",
+      "すずに"
+    ],
+    "answer": 0,
+    "full": "彼は 予習を せずに 授業に 出て、先生の 質問に 答えられなかった。",
+    "tr": {
+      "zh": "他没预习就去上课，回答不了老师的问题。",
+      "en": "He went to class without preparing and couldn't answer the teacher's question."
+    },
+    "why": {
+      "zh": "「する」接「ずに」时是特殊变化「せずに」。",
+      "en": "With 「する」, 「ずに」 takes the special form 「せずに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「しずに」是常见错误，「する」不变成「し＋ずに」。",
+        "en": "「しずに」 is a common mistake; する doesn't become し＋ずに."
+      },
+      {
+        "zh": "「さずに」是「さす」等动词的形式，不是「する」的。",
+        "en": "「さずに」 belongs to verbs like 「さす」, not 「する」."
+      },
+      {
+        "zh": "「すずに」不存在，「ずに」不接辞书形。",
+        "en": "「すずに」 doesn't exist; 「ずに」 doesn't follow the dictionary form."
+      }
+    ]
+  },
+  {
+    "id": "n3-l49-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson49#4"
+    ],
+    "difficulty": 2,
+    "stem": "傘を（　）出かけたら、途中で 雨に 降られて しまった。",
+    "options": [
+      "持たずに",
+      "持たなくて",
+      "持つまま",
+      "持ちっぱなしで"
+    ],
+    "answer": 0,
+    "full": "傘を 持たずに 出かけたら、途中で 雨に 降られて しまった。",
+    "tr": {
+      "zh": "没带伞就出门，结果半路被雨淋了。",
+      "en": "I went out without an umbrella and got caught in the rain on the way."
+    },
+    "why": {
+      "zh": "“没带伞就（出门）”表示在不做A的状态下做B，用「ない形词干＋ずに」。",
+      "en": "\"Went out without taking an umbrella\": ない-stem ＋ 「ずに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「なくて」表示原因（因为没带），不表示“在没做A的状态下做B”。",
+        "en": "「なくて」 gives a cause, not \"doing B without doing A\"."
+      },
+      {
+        "zh": "「まま」要接た形或ない形（持たないまま），「持つまま」不对。",
+        "en": "「まま」 needs the た- or ない-form (持たないまま); 「持つまま」 is wrong."
+      },
+      {
+        "zh": "「持ちっぱなしで」是“一直拿着不放”，和被雨淋的前因不符。",
+        "en": "「持ちっぱなしで」 means \"holding it the whole time\", which doesn't explain getting wet."
+      }
+    ]
+  },
+  {
+    "id": "n3-l49-012",
+    "type": "narabe",
+    "refs": [
+      "lesson49#4"
+    ],
+    "difficulty": 2,
+    "stem": "日本語の 新聞を [_] [_] [★] [_] ように なりたい。",
+    "options": [
+      "ずに",
+      "辞書を",
+      "読める",
+      "使わ"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "日本語の 新聞を 辞書を 使わずに 読めるように なりたい。",
+    "tr": {
+      "zh": "我希望能不用词典读懂日语报纸。",
+      "en": "I want to be able to read Japanese newspapers without a dictionary."
+    },
+    "why": {
+      "zh": "「辞書を」＋ない形词干「使わ」＋「ずに」＋「読める」。★ 在第三格，是「ずに」。",
+      "en": "「辞書を」 ＋ ない-stem 「使わ」 ＋ 「ずに」 ＋ 「読める」. The ★ is the third slot: 「ずに」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l49-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson49#5"
+    ],
+    "difficulty": 2,
+    "stem": "あの 人は 若い（　）けど、実は もう 五十歳だ そうだ。",
+    "options": [
+      "ように見える",
+      "そうに見える",
+      "ようにする",
+      "ように なる"
+    ],
+    "answer": 0,
+    "full": "あの 人は 若いように見えるけど、実は もう 五十歳だ そうだ。",
+    "tr": {
+      "zh": "那个人看起来很年轻，听说其实已经五十岁了。",
+      "en": "That person looks young, but apparently they're already fifty."
+    },
+    "why": {
+      "zh": "根据外表判断“看起来年轻”，い形容词直接接「ように見える」。",
+      "en": "Judging by appearance: い-adjective ＋ 「ように見える」 \"looks…\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "样态「そう」要接词干（若そうに見える），「若いそうに」不对。",
+        "en": "The appearance 「そう」 takes the stem (若そう); 「若いそうに」 is wrong."
+      },
+      {
+        "zh": "「ようにする」是“努力做到”，不接形容词表示外观。",
+        "en": "「ようにする」 means \"make an effort to\", not \"look\"."
+      },
+      {
+        "zh": "「ようになる」表示变化，“变得年轻但其实五十岁”意思不通。",
+        "en": "「ようになる」 describes a change; it doesn't fit \"but actually fifty\"."
+      }
+    ]
+  },
+  {
+    "id": "n3-l49-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson49#5"
+    ],
+    "difficulty": 1,
+    "stem": "この 絵は 本物の 写真（　）見える ほど、細かく 描かれて いる。",
+    "options": [
+      "のように",
+      "ように",
+      "なように",
+      "そうに"
+    ],
+    "answer": 0,
+    "full": "この 絵は 本物の 写真のように 見える ほど、細かく 描かれて いる。",
+    "tr": {
+      "zh": "这幅画画得非常细致，看起来就像真的照片一样。",
+      "en": "This painting is so detailed it looks like a real photograph."
+    },
+    "why": {
+      "zh": "名词接「ように見える」要加「の」：写真のように見える。",
+      "en": "A noun needs 「の」 before 「ように見える」: 写真のように見える."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "名词后面不能直接接「ように」，要加「の」。",
+        "en": "A noun can't take 「ように」 directly; it needs 「の」."
+      },
+      {
+        "zh": "「なように」是な形容词的接法，「写真」是名词。",
+        "en": "「なように」 is for な-adjectives; 「写真」 is a noun."
+      },
+      {
+        "zh": "样态「そう」不接名词，「写真そうに」不对。",
+        "en": "The appearance 「そう」 doesn't attach to nouns; 「写真そうに」 is wrong."
+      }
+    ]
+  },
+  {
+    "id": "n3-l49-015",
+    "type": "narabe",
+    "refs": [
+      "lesson49#5"
+    ],
+    "difficulty": 2,
+    "stem": "彼は [_] [★] [_] [_] 、実は 大きな 悩みを 抱えて いる らしい。",
+    "options": [
+      "見えるが",
+      "な",
+      "幸せ",
+      "ように"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "彼は 幸せな ように 見えるが、実は 大きな 悩みを 抱えて いる らしい。",
+    "tr": {
+      "zh": "他看起来很幸福，但好像其实有很大的烦恼。",
+      "en": "He looks happy, but apparently he's actually carrying a big worry."
+    },
+    "why": {
+      "zh": "な形容词「幸せ」＋「な」＋「ように」＋「見えるが」。★ 在第二格，是「な」。",
+      "en": "な-adjective 「幸せ」 ＋ 「な」 ＋ 「ように」 ＋ 「見えるが」. The ★ is the second slot: 「な」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

@@ -1,0 +1,333 @@
+[
+  {
+    "id": "n5-dk-101",
+    "type": "bunshou",
+    "difficulty": 1,
+    "intro": "キムさんは 日本語の クラスで 「じこしょうかい」の さくぶんを 書きました。",
+    "passage": "はじめまして。キム・ミンジュンです。かんこくの ソウルから 来ました。\n今、東京の 日本語学校で 日本語を [[1]]。毎朝 電車で 学校へ 行きます。\nわたしは 日本の 料理が 大好きです。[[2]]、まだ 作る ことが できません。来年は 日本人の 友だち [[3]] いっしょに 料理を 作りたいです。\nどうぞ よろしく [[4]]。",
+    "tr": {
+      "zh": "初次见面。我叫金民俊，从韩国首尔来。现在在东京的日语学校学日语，每天早上坐电车去学校。我特别喜欢日本菜，但是还不会做。明年我想和日本朋友一起做菜。请多关照。",
+      "en": "Nice to meet you. I'm Kim Min-jun, from Seoul in Korea. I'm now studying Japanese at a language school in Tokyo, and I take the train there every morning. I love Japanese food, but I can't cook it yet. Next year I'd like to cook with a Japanese friend. I look forward to getting to know you."
+    },
+    "questions": [
+      {
+        "options": ["勉強して います", "勉強しました", "勉強したかったです", "勉強しませんでした"],
+        "answer": 0,
+        "why": { "zh": "「今」加上后面「毎朝 電車で 学校へ 行きます」，说的是现在一直在学，用「勉強して います」。", "en": "「今」 and the next sentence (he goes to school every morning) describe something ongoing now: 「勉強して います」." },
+        "wrong": [
+          null,
+          { "zh": "「勉強しました」是已经学完了，和“每天早上去学校”的现在状态不符。", "en": "「勉強しました」 is finished and past, but he still goes to school every morning." },
+          { "zh": "「勉強したかったです」是“（以前）想学”，可他现在正在上学。", "en": "「勉強したかったです」 (wanted to study) — he is actually at the school now." },
+          { "zh": "「勉強しませんでした」是“没学”，和他每天去日语学校矛盾。", "en": "「勉強しませんでした」 (didn't study) contradicts him going to the school every day." }
+        ]
+      },
+      {
+        "options": ["でも", "だから", "それから", "そして"],
+        "answer": 0,
+        "why": { "zh": "前面“很喜欢日本菜”，后面“还不会做”，意思相反，用转折的「でも」。", "en": "\"I love Japanese food\" → \"I can't cook it yet\": a contrast, so 「でも」." },
+        "wrong": [
+          null,
+          { "zh": "「だから」是“所以”，喜欢日本菜不是不会做的原因。", "en": "「だから」 (so) — loving the food isn't the reason he can't cook it." },
+          { "zh": "「それから」是“然后”，用来接下一个动作，这里前后是相反的意思。", "en": "「それから」 (and then) adds the next thing; here the two ideas clash." },
+          { "zh": "「そして」是顺接“而且”，不能连接相反的内容。", "en": "「そして」 (and) can't join two opposite ideas." }
+        ]
+      },
+      {
+        "options": ["と", "に", "を", "で"],
+        "answer": 0,
+        "why": { "zh": "“和某人一起”是「人＋と いっしょに」。", "en": "\"Together with someone\" is 「person ＋ と いっしょに」." },
+        "wrong": [
+          null,
+          { "zh": "「友だちに いっしょに」不成立，「に」不能表示一起做事的对象。", "en": "「友だちに いっしょに」 doesn't work; 「に」 doesn't mark the person you do something with." },
+          { "zh": "「を」表示宾语，「友だちを いっしょに」意思不通。", "en": "「を」 marks an object; 「友だちを いっしょに」 makes no sense." },
+          { "zh": "「で」表示场所或手段，不能接在人后面表示“和……一起”。", "en": "「で」 marks a place or means, not the person you're with." }
+        ]
+      },
+      {
+        "options": ["おねがいします", "ありがとう ございました", "しつれいします", "いただきます"],
+        "answer": 0,
+        "why": { "zh": "自我介绍的结尾固定说「どうぞ よろしく おねがいします」。", "en": "A self-introduction ends with the set phrase 「どうぞ よろしく おねがいします」." },
+        "wrong": [
+          null,
+          { "zh": "「ありがとう ございました」是道谢，不能接在「どうぞ よろしく」后面。", "en": "「ありがとう ございました」 is a thank-you; it doesn't follow 「どうぞ よろしく」." },
+          { "zh": "「しつれいします」是进出房间、挂电话时说的，不和「よろしく」连用。", "en": "「しつれいします」 is said entering/leaving a room or ending a call, not after 「よろしく」." },
+          { "zh": "「いただきます」是吃饭前说的话。", "en": "「いただきます」 is said before eating." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-102",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "ジョンさんは 「わたしの 週末」の さくぶんを 書きました。",
+    "passage": "先週の 土曜日、わたしは 友だちと 山へ 行きました。朝 七時に 駅で 会って、電車に 乗りました。山の 上は 天気が [[1]]、町が よく 見えました。\n山の 上で おべんとうを 食べました。それから、少し [[2]] から、山を 下りました。\n日曜日は 朝から 夜まで 雨でした。[[3]]、どこへも 行かないで、うちで 本を [[4]]。",
+    "tr": {
+      "zh": "上个星期六，我和朋友去爬山。早上七点在车站见面，然后坐上了电车。山顶天气很好，能清楚地看到城镇。我们在山顶吃了便当，然后稍微休息了一下就下山了。星期天从早到晚都在下雨，所以我哪儿也没去，在家看了书。",
+      "en": "Last Saturday I went to the mountains with a friend. We met at the station at seven in the morning and got on the train. The weather at the top was good, and we could see the town clearly. We ate our packed lunches at the top, then rested a little before coming down. On Sunday it rained from morning till night, so I didn't go anywhere and read a book at home."
+    },
+    "questions": [
+      {
+        "options": ["よくて", "わるくて", "いいくて", "よくないで"],
+        "answer": 0,
+        "why": { "zh": "后面“能清楚看到城镇”，说明天气好；「いい」的て形是「よくて」。", "en": "They could see the town clearly, so the weather was good; the て-form of 「いい」 is 「よくて」." },
+        "wrong": [
+          null,
+          { "zh": "「わるくて」是“天气不好”，和“看得很清楚”矛盾。", "en": "「わるくて」 (bad) contradicts seeing the town clearly." },
+          { "zh": "「いい」的て形是「よくて」，没有「いいくて」这个形式。", "en": "There's no form 「いいくて」; 「いい」 becomes 「よくて」." },
+          { "zh": "「よくないで」不是正确的变形，而且“不好”也和后文矛盾。", "en": "「よくないで」 isn't a correct form, and \"not good\" contradicts what follows." }
+        ]
+      },
+      {
+        "options": ["休んで", "休み", "休む", "休んだ"],
+        "answer": 0,
+        "why": { "zh": "“做完A之后再做B”是「动词て形＋から」，所以是「休んで から」。", "en": "\"After doing A\" is 「verb て-form ＋ から」: 「休んで から」." },
+        "wrong": [
+          null,
+          { "zh": "「休みから」是“从休息日开始”之类的意思，不能表示“休息之后”。", "en": "「休みから」 would be \"from the holiday\", not \"after resting\"." },
+          { "zh": "「休むから」是“因为要休息”，表示原因，不是先后顺序。", "en": "「休むから」 means \"because I'll rest\" — a reason, not a sequence." },
+          { "zh": "「休んだから」是“因为休息了”，表示原因；这里讲的是先休息再下山。", "en": "「休んだから」 means \"because I rested\"; the sentence is about order, not cause." }
+        ]
+      },
+      {
+        "options": ["だから", "でも", "それから", "では"],
+        "answer": 0,
+        "why": { "zh": "从早到晚下雨，所以哪儿也没去，前因后果，用「だから」。", "en": "It rained all day, so he stayed in: cause and effect, 「だから」." },
+        "wrong": [
+          null,
+          { "zh": "「でも」是转折，可下雨和不出门并不矛盾。", "en": "「でも」 (but) — rain and staying home don't contrast." },
+          { "zh": "「それから」是“然后”，可雨一直下到晚上，“之后”就没有时间了；这里是原因。", "en": "「それから」 (after that) — the rain lasted till night; the link here is cause, not sequence." },
+          { "zh": "「では」是“那么”，用于换话题或根据对方的话下结论，作文里这里不合适。", "en": "「では」 (well then) switches topic or draws on what someone just said; it doesn't fit here." }
+        ]
+      },
+      {
+        "options": ["読みました", "読みます", "読みたいです", "読みましょう"],
+        "answer": 0,
+        "why": { "zh": "讲的是上个星期天的事，用过去式「読みました」。", "en": "It's about last Sunday, so the past 「読みました」." },
+        "wrong": [
+          null,
+          { "zh": "「読みます」是现在/将来，和过去的星期天不符。", "en": "「読みます」 is present/future; the story is about last Sunday." },
+          { "zh": "「読みたいです」是“想读”，可这件事已经发生了。", "en": "「読みたいです」 (want to read) doesn't fit something that already happened." },
+          { "zh": "「読みましょう」是邀请“一起读吧”，作文里自己一个人在家看书不用这个。", "en": "「読みましょう」 (let's read) is an invitation, not a report of what he did." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-103",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "アンナさんは 「わたしの 町」の さくぶんを 書きました。",
+    "passage": "わたしは 今、みどり町に 住んで います。みどり町は 東京から 電車で 一時間 [[1]] です。\n駅の 前に 大きい スーパーが あります。スーパーの となりには 古い 本屋が [[2]]。わたしは よく そこで 本を 買います。\n町には 大きい 公園も あります。春は 花が きれいで、人も 少なくて、しずかです。[[3]]、夏は 人が 多くて、うるさいです。\nでも、わたしは この 町が [[4]] 好きです。",
+    "tr": {
+      "zh": "我现在住在绿町。绿町离东京坐电车大约一个小时。车站前有一家大超市，超市旁边有一家旧书店，我常在那儿买书。镇上还有一个大公园。春天花很漂亮，人也少，很安静。但是夏天人多，很吵。不过，我非常喜欢这个小镇。",
+      "en": "I now live in Midori-machi. It's about an hour from Tokyo by train. In front of the station there's a big supermarket, and next to it there's an old bookshop where I often buy books. The town also has a big park. In spring the flowers are lovely, there are few people and it's quiet. But in summer it's crowded and noisy. Still, I like this town very much."
+    },
+    "questions": [
+      {
+        "options": ["ぐらい", "ごろ", "まで", "ずつ"],
+        "answer": 0,
+        "why": { "zh": "“大约一个小时”这种时间长度用「ぐらい」。", "en": "An approximate length of time (\"about an hour\") takes 「ぐらい」." },
+        "wrong": [
+          null,
+          { "zh": "「ごろ」接时间点（三時ごろ），不能接「一時間」这样的时长。", "en": "「ごろ」 goes with a point in time (三時ごろ), not a length like 「一時間」." },
+          { "zh": "「一時間までです」不成立，「まで」表示终点，不表示距离多远。", "en": "「一時間までです」 doesn't work; 「まで」 marks an end point, not a distance." },
+          { "zh": "「ずつ」表示“每……各”，和“离东京一小时”无关。", "en": "「ずつ」 means \"each / at a time\", which has nothing to do here." }
+        ]
+      },
+      {
+        "options": ["あります", "います", "ありました", "いました"],
+        "answer": 0,
+        "why": { "zh": "书店是物（非生物），用「あります」；后面「よく そこで 本を 買います」说明现在还在，用现在式。", "en": "A shop is a thing, so 「あります」; she still buys books there, so present tense." },
+        "wrong": [
+          null,
+          { "zh": "「います」用于人和动物，书店要用「あります」。", "en": "「います」 is for people and animals; a shop takes 「あります」." },
+          { "zh": "「ありました」是过去，可她现在还常在那儿买书。", "en": "「ありました」 is past, but she still often buys books there." },
+          { "zh": "「いました」既是过去，又是用于人和动物的词。", "en": "「いました」 is both past and for living things." }
+        ]
+      },
+      {
+        "options": ["でも", "だから", "それから", "そして"],
+        "answer": 0,
+        "why": { "zh": "春天“人少、安静”，夏天“人多、吵”，正好相反，用转折的「でも」。", "en": "Spring is quiet with few people, summer is crowded and noisy — opposites, so 「でも」." },
+        "wrong": [
+          null,
+          { "zh": "「だから」是“所以”，春天安静不是夏天吵的原因。", "en": "「だから」 (so) — a quiet spring isn't why summer is noisy." },
+          { "zh": "「それから」是追加“还有”，可前后两句意思正相反。", "en": "「それから」 adds another point, but the two sentences say opposite things." },
+          { "zh": "「そして」是顺接，不能连接“安静”和“吵”这样相反的内容。", "en": "「そして」 (and) can't link \"quiet\" with its opposite \"noisy\"." }
+        ]
+      },
+      {
+        "options": ["とても", "あまり", "ぜんぜん", "すこしも"],
+        "answer": 0,
+        "why": { "zh": "后面是肯定的「好きです」，只有「とても」能接肯定。", "en": "The verb is affirmative 「好きです」; only 「とても」 works with an affirmative." },
+        "wrong": [
+          null,
+          { "zh": "「あまり」后面要接否定（あまり好きじゃありません）。", "en": "「あまり」 needs a negative (あまり好きじゃありません)." },
+          { "zh": "「ぜんぜん」后面要接否定。", "en": "「ぜんぜん」 needs a negative." },
+          { "zh": "「すこしも」后面要接否定，意思是“一点也不”。", "en": "「すこしも」 needs a negative (\"not at all\")." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-104",
+    "type": "bunshou",
+    "difficulty": 3,
+    "intro": "リーさんは 「わたしの 家族」の さくぶんを 書きました。",
+    "passage": "わたしの 家族は 四人です。父と 母と 兄と わたしです。\n父は 銀行で [[1]]。毎日 おそくまで 仕事を します。母は 料理が とても 上手です。\n兄は 今 アメリカの 大学に 行って います。だから、今 うちに [[2]]。\nわたしは 去年 日本へ 来ました。家族に 会いたいですが、ひこうきが 高いので、まだ 国へ [[3]]。\n夏休みには 国へ 帰る [[4]] です。",
+    "tr": {
+      "zh": "我家有四口人：爸爸、妈妈、哥哥和我。爸爸在银行工作，每天工作到很晚。妈妈做菜很拿手。哥哥现在在美国上大学，所以现在不在家。我去年来到日本。我想见家人，但机票很贵，所以还没回过国。暑假我打算回国。",
+      "en": "There are four people in my family: my father, my mother, my older brother and me. My father works at a bank; he works late every day. My mother is a very good cook. My brother is at university in America now, so he isn't at home. I came to Japan last year. I want to see my family, but plane tickets are expensive, so I haven't gone back yet. I'm planning to go home in the summer holidays."
+    },
+    "questions": [
+      {
+        "options": ["はたらいて います", "はたらきました", "はたらいて いました", "はたらきたいです"],
+        "answer": 0,
+        "why": { "zh": "说现在的职业用「〜て います」；后面「毎日 おそくまで 仕事を します」也是现在的事。", "en": "Someone's current job is stated with 「〜て います」, and the next sentence (he works late every day) is present." },
+        "wrong": [
+          null,
+          { "zh": "「はたらきました」是过去，可后面说爸爸现在每天都工作到很晚。", "en": "「はたらきました」 is past, but he works late every day now." },
+          { "zh": "「はたらいて いました」是“以前在那儿工作”，和现在每天工作矛盾。", "en": "「はたらいて いました」 (used to work) contradicts him working every day now." },
+          { "zh": "「はたらきたいです」是“想在那儿工作”，可他已经每天在上班了。", "en": "「はたらきたいです」 (wants to work) — he already works there every day." }
+        ]
+      },
+      {
+        "options": ["いません", "ありません", "います", "あります"],
+        "answer": 0,
+        "why": { "zh": "哥哥在美国上大学，所以不在家；人用「いる」，否定是「いません」。", "en": "The brother is at university in America, so he isn't home; people take 「いる」 → 「いません」." },
+        "wrong": [
+          null,
+          { "zh": "「ありません」用于物，不能用于哥哥这样的人。", "en": "「ありません」 is for things, not a person like the brother." },
+          { "zh": "「います」是“在家”，可「だから」前面说他在美国。", "en": "「います」 (is home) contradicts him being in America just before 「だから」." },
+          { "zh": "「あります」用于物，而且意思也是“在”，与上文矛盾。", "en": "「あります」 is for things, and it also says \"is there\", contradicting the text." }
+        ]
+      },
+      {
+        "options": ["帰って いません", "帰りました", "帰って います", "帰りませんでした"],
+        "answer": 0,
+        "why": { "zh": "「まだ」＋「〜て いません」表示“到现在还没……”；机票贵，所以一直没回国。", "en": "「まだ」 ＋ 「〜て いません」 = \"haven't … yet\"; tickets are expensive, so she hasn't been back." },
+        "wrong": [
+          null,
+          { "zh": "「帰りました」是“回去过了”，和「まだ」「ひこうきが 高いので」矛盾。", "en": "「帰りました」 (went back) contradicts 「まだ」 and the expensive tickets." },
+          { "zh": "「帰って います」是“已经回国（现在在国内）”，可她现在在日本。", "en": "「帰って います」 means she's back home now, but she's writing from Japan." },
+          { "zh": "「まだ」表示到现在还没做，要用「〜て いません」，不用「〜ませんでした」。", "en": "\"Not yet\" with 「まだ」 takes 「〜て いません」, not 「〜ませんでした」." }
+        ]
+      },
+      {
+        "options": ["つもり", "こと", "とき", "まえ"],
+        "answer": 0,
+        "why": { "zh": "说自己的打算用「动词原形＋つもりです」。", "en": "A plan of one's own is 「dictionary form ＋ つもりです」." },
+        "wrong": [
+          null,
+          { "zh": "「帰る ことです」意思是“是回国这件事”，不能表示打算。", "en": "「帰る ことです」 (\"it is the act of going home\") doesn't express a plan." },
+          { "zh": "「帰る ときです」是“是回国的时候”，句子意思不完整。", "en": "「帰る ときです」 (\"it's the time I go home\") doesn't make sense here." },
+          { "zh": "「帰る まえです」是“回国之前”，和“暑假回国”意思不符。", "en": "「帰る まえです」 (\"before going home\") doesn't fit going home in the summer." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-105",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "マイクさんは 「りょこう」の さくぶんを 書きました。",
+    "passage": "先月、わたしは 友だちと 京都へ 行きました。東京から 新幹線で 行きました。\n京都には 古い お寺が たくさん あります。わたしたちは お寺を 見たり、おいしい 物を [[1]] しました。\n二日目は 朝から 雨でした。[[2]]、わたしたちは お寺へ 行きました。雨の お寺も とても きれいでした。\n京都は とても いい ところでした。今度は 母 [[3]] 二人で 来たいです。",
+    "tr": {
+      "zh": "上个月，我和朋友去了京都。从东京坐新干线去的。京都有很多古老的寺庙。我们参观寺庙、吃好吃的东西。第二天从早上就下雨，但我们还是去了寺庙。雨中的寺庙也非常漂亮。京都是个很好的地方。下次我想和妈妈两个人一起来。",
+      "en": "Last month I went to Kyoto with a friend, by shinkansen from Tokyo. Kyoto has lots of old temples. We visited temples, ate good food and so on. On the second day it rained from the morning, but we went to the temples anyway. The temples in the rain were very beautiful too. Kyoto was a great place. Next time I'd like to come with my mother, just the two of us."
+    },
+    "questions": [
+      {
+        "options": ["食べたり", "食べて", "食べた", "食べたい"],
+        "answer": 0,
+        "why": { "zh": "前面是「見たり」，后面有「しました」，是「〜たり〜たり する」的列举句型。", "en": "「見たり」 … 「しました」 is the 「〜たり〜たり する」 listing pattern, so 「食べたり」." },
+        "wrong": [
+          null,
+          { "zh": "「見たり」后面要配另一个「〜たり」，「食べて しました」不成立。", "en": "「見たり」 needs a second 「〜たり」; 「食べて しました」 isn't grammatical." },
+          { "zh": "「食べた しました」不成立，「〜たり」不能省略「り」。", "en": "「食べた しました」 isn't grammatical; you can't drop the 「り」." },
+          { "zh": "「食べたい しました」不成立，愿望形不能接「しました」。", "en": "「食べたい しました」 isn't grammatical; the たい-form can't take 「しました」." }
+        ]
+      },
+      {
+        "options": ["でも", "だから", "それから", "そして"],
+        "answer": 0,
+        "why": { "zh": "下雨一般不想出门，可他们还是去了寺庙，意思转折，用「でも」；后面「雨の お寺も」的「も」也说明下雨本来不是好事。", "en": "Rain usually keeps people in, but they went to the temples anyway — a contrast, 「でも」. The 「も」 in 「雨の お寺も」 shows the rain wasn't expected to be good." },
+        "wrong": [
+          null,
+          { "zh": "「だから」是“所以”，下雨不是去寺庙的理由。", "en": "「だから」 (so) — rain is no reason to go to the temples." },
+          { "zh": "「それから」是“然后”，接的是下一个动作；“下雨”是天气，不是他们做的事。", "en": "「それから」 (and then) follows an action; the rain isn't something they did." },
+          { "zh": "「そして」是顺接，表达不出“虽然下雨但还是去了”的意思。", "en": "「そして」 (and) can't carry \"it rained, but we still went\"." }
+        ]
+      },
+      {
+        "options": ["と", "に", "で", "を"],
+        "answer": 0,
+        "why": { "zh": "“和妈妈两个人”是「母と 二人で」，「と」表示一起做事的人。", "en": "\"With my mother, the two of us\" is 「母と 二人で」; 「と」 marks the companion." },
+        "wrong": [
+          null,
+          { "zh": "「母に」表示对象（给妈妈、见妈妈），不表示一起来的人。", "en": "「母に」 marks a target (to/for mother), not someone who comes with you." },
+          { "zh": "「母で 二人で」不成立，「で」不接在同行的人后面。", "en": "「母で 二人で」 doesn't work; 「で」 doesn't mark a companion." },
+          { "zh": "「母を」表示宾语，「母を 二人で 来たい」意思不通。", "en": "「母を」 marks an object; 「母を 二人で 来たい」 makes no sense." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-106",
+    "type": "bunshou",
+    "difficulty": 3,
+    "intro": "サラさんは 「わたしの しゅみ」の さくぶんを 書きました。",
+    "passage": "わたしの しゅみは しゃしんを とる [[1]] です。休みの 日は いつも カメラを 持って 出かけます。\nきのうは 海へ 行きました。海で [[2]] いる 子どもたちの しゃしんを たくさん とりました。\nわたしは まだ 山の しゃしんを とった ことが [[3]]。だから、来月 友だちと 富士山へ しゃしんを [[4]] 行きます。とても たのしみです。",
+    "tr": {
+      "zh": "我的爱好是拍照。休息日我总是带着相机出门。昨天我去了海边，拍了很多在海里游泳的孩子。我还从来没拍过山，所以下个月要和朋友去富士山拍照。我非常期待。",
+      "en": "My hobby is taking photos. On my days off I always go out with my camera. Yesterday I went to the sea and took lots of photos of children swimming. I've never taken photos of mountains, so next month I'm going to Mt. Fuji with a friend to take some. I'm really looking forward to it."
+    },
+    "questions": [
+      {
+        "options": ["こと", "もの", "ところ", "とき"],
+        "answer": 0,
+        "why": { "zh": "“爱好是做某事”要把动词名词化：「动词原形＋こと」。", "en": "\"My hobby is doing X\" turns the verb into a noun with 「dictionary form ＋ こと」." },
+        "wrong": [
+          null,
+          { "zh": "「とる もの」是“拍的东西”，指物品，不是爱好这件事。", "en": "「とる もの」 is \"a thing you take\" — an object, not the activity." },
+          { "zh": "「とる ところ」是“拍照的地方”，爱好不是地方。", "en": "「とる ところ」 is \"the place where you take them\"; a hobby isn't a place." },
+          { "zh": "「とる とき」是“拍照的时候”，“爱好是……的时候”说不通。", "en": "「とる とき」 (\"when I take them\") — a hobby isn't a time." }
+        ]
+      },
+      {
+        "options": ["およいで", "およぎ", "およぐ", "およいだ"],
+        "answer": 0,
+        "why": { "zh": "后面是「いる」，表示正在进行要用て形：「およいで いる」。", "en": "「いる」 follows, so the ongoing 「て-form ＋ いる」: 「およいで いる」." },
+        "wrong": [
+          null,
+          { "zh": "「およぎ いる」不成立，「いる」前面要用て形。", "en": "「およぎ いる」 isn't grammatical; 「いる」 needs the て-form before it." },
+          { "zh": "「およぐ いる」不成立，原形不能直接接「いる」。", "en": "「およぐ いる」 isn't grammatical; the dictionary form can't take 「いる」." },
+          { "zh": "「およいだ いる」不成立，た形不能接「いる」。", "en": "「およいだ いる」 isn't grammatical; the た-form can't take 「いる」." }
+        ]
+      },
+      {
+        "options": ["ありません", "あります", "ありました", "いません"],
+        "answer": 0,
+        "why": { "zh": "「まだ」和后面「だから、来月…行きます」说明还没拍过：「〜た ことが ありません」。", "en": "「まだ」 and \"so next month I'm going\" show she never has: 「〜た ことが ありません」." },
+        "wrong": [
+          null,
+          { "zh": "「あります」是“拍过”，和「まだ」以及“所以下个月要去”矛盾。", "en": "「あります」 (have done) contradicts 「まだ」 and the reason for the trip." },
+          { "zh": "经验句「〜た ことが」后面不用过去式「ありました」，而且意思也和「まだ」矛盾。", "en": "The experience pattern doesn't take 「ありました」 here, and it contradicts 「まだ」." },
+          { "zh": "「こと」是事情，不用「いる」，要用「ある」。", "en": "「こと」 is a thing, so it takes 「ある」, not 「いる」." }
+        ]
+      },
+      {
+        "options": ["とりに", "とるに", "とりへ", "とったに"],
+        "answer": 0,
+        "why": { "zh": "“去做某事”是「ます形词干＋に 行く」：「とり（ます）＋に」。", "en": "\"Go to do something\" is 「ます-stem ＋ に 行く」: 「とりに 行きます」." },
+        "wrong": [
+          null,
+          { "zh": "表示目的的「に」接ます形词干，不接原形「とる」。", "en": "Purpose 「に」 follows the ます-stem, not the dictionary form 「とる」." },
+          { "zh": "表示目的要用「に」，不能用「へ」。", "en": "Purpose takes 「に」, not 「へ」." },
+          { "zh": "目的的「に」不能接た形「とった」。", "en": "Purpose 「に」 can't follow the た-form 「とった」." }
+        ]
+      }
+    ]
+  }
+]

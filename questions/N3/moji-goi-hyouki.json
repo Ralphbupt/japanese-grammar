@@ -1,0 +1,1163 @@
+[
+  {
+    "id": "n3-mg-201",
+    "type": "hyouki",
+    "refs": [
+      "lesson41#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "姉は明るい<<せいかく>>で、友達が多い。",
+    "options": [
+      "性格",
+      "姓格",
+      "性各",
+      "生格"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "姐姐性格开朗，朋友很多。",
+      "en": "My sister has a cheerful personality and lots of friends."
+    },
+    "why": {
+      "zh": "「せいかく」（性格）写作「性格」：竖心旁的「性」+ 木字旁的「格」。",
+      "en": "せいかく (personality) is 「性格」: 「性」 with the heart radical + 「格」 with 木."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「姓」是女字旁，意思是姓氏。",
+        "en": "「姓」 has the 女 radical and means surname."
+      },
+      {
+        "zh": "「各」少了木字旁，意思是「各自」。",
+        "en": "「各」 lacks the 木 radical; it means 'each'."
+      },
+      {
+        "zh": "「生」少了竖心旁，「生格」不是词。",
+        "en": "「生」 lacks the heart radical; 「生格」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-202",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "早起きの<<しゅうかん>>をつけたい。",
+    "options": [
+      "習慣",
+      "習貫",
+      "集慣",
+      "習憤"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我想养成早起的习惯。",
+      "en": "I want to get into the habit of getting up early."
+    },
+    "why": {
+      "zh": "「しゅうかん」（习惯）写作「習慣」，「慣」是竖心旁（「慣れる」的字）。",
+      "en": "しゅうかん (habit) is 「習慣」; 「慣」 has the heart radical, as in 「慣れる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「貫」少了竖心旁，是「貫く」（贯穿）的字。",
+        "en": "「貫」 lacks the heart radical; it's the kanji of 「貫く」 (pierce)."
+      },
+      {
+        "zh": "「集」是「集める」（收集）的字，不是学习的「習」。",
+        "en": "「集」 is the kanji of 「集める」 (gather), not 「習」 (learn)."
+      },
+      {
+        "zh": "「憤」读「ふん」（愤怒），字形相近但不对。",
+        "en": "「憤」 is ふん (anger) — similar shape, wrong kanji."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-203",
+    "type": "hyouki",
+    "refs": [
+      "lesson40#vocab",
+      "lesson49#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "毎日歩くのは<<けんこう>>にいい。",
+    "options": [
+      "健康",
+      "建康",
+      "健庚",
+      "健唐"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "每天走路对健康有好处。",
+      "en": "Walking every day is good for your health."
+    },
+    "why": {
+      "zh": "「けんこう」（健康）写作「健康」，「健」有单人旁。",
+      "en": "けんこう (health) is 「健康」; 「健」 has the person radical."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「建」少了单人旁，是「建てる」（建造）的字。",
+        "en": "「建」 lacks the person radical; it's the kanji of 「建てる」 (build)."
+      },
+      {
+        "zh": "「庚」比「康」少了下面的部分，不是这个字。",
+        "en": "「庚」 is missing the bottom of 「康」."
+      },
+      {
+        "zh": "「唐」读「とう」（唐朝），不是「康」。",
+        "en": "「唐」 is とう (Tang), not 「康」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-204",
+    "type": "hyouki",
+    "refs": [
+      "lesson41#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "毎月少しずつ<<ちょきん>>している。",
+    "options": [
+      "貯金",
+      "財金",
+      "貯全",
+      "貸金"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我每个月都存一点钱。",
+      "en": "I save a little money every month."
+    },
+    "why": {
+      "zh": "「ちょきん」（存钱）写作「貯金」：贝字旁的「貯」+「金」。",
+      "en": "ちょきん (savings) is 「貯金」: 「貯」 + 「金」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「財」读「ざい」（财产），不是「貯」。",
+        "en": "「財」 is ざい (wealth), not 「貯」."
+      },
+      {
+        "zh": "「全」少了两点，不是「金」。",
+        "en": "「全」 is missing the two dots of 「金」."
+      },
+      {
+        "zh": "「貸金」读「かしきん」（贷款），不是「ちょきん」。",
+        "en": "「貸金」 is かしきん (a loan), not ちょきん."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-205",
+    "type": "hyouki",
+    "refs": [
+      "lesson41#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "ここで十分<<きゅうけい>>しましょう。",
+    "options": [
+      "休憩",
+      "体憩",
+      "休恵",
+      "休継"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "在这里休息十分钟吧。",
+      "en": "Let's take a ten-minute break here."
+    },
+    "why": {
+      "zh": "「きゅうけい」（休息）写作「休憩」。",
+      "en": "きゅうけい (a break) is 「休憩」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「体」是「からだ」（身体），和「休」只差一横。",
+        "en": "「体」 is からだ (body) — one stroke different from 「休」."
+      },
+      {
+        "zh": "「恵」读「けい／めぐむ」（恩惠），不是「憩」。",
+        "en": "「恵」 (けい, blessing) isn't 「憩」."
+      },
+      {
+        "zh": "「継」读「けい」（继承），不是「憩」。",
+        "en": "「継」 (けい, succeed/inherit) isn't 「憩」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-206",
+    "type": "hyouki",
+    "refs": [
+      "lesson46#vocab",
+      "lesson52#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "日本の<<ぎじゅつ>>は世界で注目されている。",
+    "options": [
+      "技術",
+      "枝術",
+      "技述",
+      "技衛"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "日本的技术受到世界关注。",
+      "en": "Japanese technology draws attention around the world."
+    },
+    "why": {
+      "zh": "「ぎじゅつ」（技术）写作「技術」：提手旁的「技」+「術」。",
+      "en": "ぎじゅつ (technology) is 「技術」: 「技」 with the hand radical + 「術」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「枝」是木字旁，读「えだ」（树枝）。",
+        "en": "「枝」 has the 木 radical: えだ (branch)."
+      },
+      {
+        "zh": "「述」读「じゅつ」但意思是叙述（「述べる」）。",
+        "en": "「述」 is also じゅつ but means 'state' (「述べる」)."
+      },
+      {
+        "zh": "「衛」读「えい」（「衛生」），不是「術」。",
+        "en": "「衛」 is えい (「衛生」), not 「術」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-207",
+    "type": "hyouki",
+    "refs": [
+      "lesson46#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "国の<<けいざい>>がよくなってきた。",
+    "options": [
+      "経済",
+      "経剤",
+      "軽済",
+      "径済"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "国家经济好起来了。",
+      "en": "The country's economy has been improving."
+    },
+    "why": {
+      "zh": "「けいざい」（经济）写作「経済」：绞丝旁的「経」+三点水的「済」。",
+      "en": "けいざい (economy) is 「経済」: 「経」 with the thread radical + 「済」 with water."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「剤」读「ざい」（药剂），是立刀旁，不是「済」。",
+        "en": "「剤」 (ざい, medicine) has the knife radical, not 「済」."
+      },
+      {
+        "zh": "「軽」是车字旁，读「かるい」（轻）。",
+        "en": "「軽」 has the 車 radical: かるい (light)."
+      },
+      {
+        "zh": "「径」是双人旁，读「けい」（直径），不是「経」。",
+        "en": "「径」 (けい, diameter) has the 彳 radical, not 「経」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-208",
+    "type": "hyouki",
+    "refs": [
+      "lesson46#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "季節の<<へんか>>を楽しむ。",
+    "options": [
+      "変化",
+      "変花",
+      "変価",
+      "恋化"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "享受季节的变化。",
+      "en": "I enjoy the changing seasons."
+    },
+    "why": {
+      "zh": "「へんか」（变化）写作「変化」。",
+      "en": "へんか (change) is 「変化」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「花」读「か／はな」（花），不是「化」。",
+        "en": "「花」 (か / はな, flower) isn't 「化」."
+      },
+      {
+        "zh": "「価」读「か」（价格），不是「化」。",
+        "en": "「価」 (か, price) isn't 「化」."
+      },
+      {
+        "zh": "「恋」读「こい」（恋爱），和「変」上半相同。",
+        "en": "「恋」 is こい (love); it shares the top of 「変」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-209",
+    "type": "hyouki",
+    "refs": [
+      "lesson38#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "彼は歴史の<<ちしき>>が豊富だ。",
+    "options": [
+      "知識",
+      "知織",
+      "知職",
+      "和識"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他的历史知识很丰富。",
+      "en": "He has a wide knowledge of history."
+    },
+    "why": {
+      "zh": "「ちしき」（知识）写作「知識」，「識」是言字旁。",
+      "en": "ちしき (knowledge) is 「知識」; 「識」 has the 言 radical."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「織」是绞丝旁，读「おる」（织）。",
+        "en": "「織」 has the thread radical: おる (weave)."
+      },
+      {
+        "zh": "「職」是耳字旁，读「しょく」（职业）。",
+        "en": "「職」 has the 耳 radical: しょく (job)."
+      },
+      {
+        "zh": "「和」读「わ」（和平），不是「知」。",
+        "en": "「和」 is わ (peace), not 「知」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-210",
+    "type": "hyouki",
+    "refs": [
+      "lesson44#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "会議で新しい<<ていあん>>をした。",
+    "options": [
+      "提案",
+      "堤案",
+      "提安",
+      "程案"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我在会上提出了新的方案。",
+      "en": "I made a new proposal at the meeting."
+    },
+    "why": {
+      "zh": "「ていあん」（提案）写作「提案」：提手旁的「提」+「案」。",
+      "en": "ていあん (proposal) is 「提案」: 「提」 with the hand radical + 「案」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「堤」是土字旁，读「つつみ」（堤坝）。",
+        "en": "「堤」 has the earth radical: つつみ (embankment)."
+      },
+      {
+        "zh": "「安」少了下面的「木」，意思是便宜、安心。",
+        "en": "「安」 lacks the 木 at the bottom; it means cheap/calm."
+      },
+      {
+        "zh": "「程」是禾字旁，读「てい」（程度），不是「提」。",
+        "en": "「程」 (てい, degree) has the 禾 radical, not 「提」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-211",
+    "type": "hyouki",
+    "refs": [
+      "lesson44#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "どちらがいいか、自分で<<はんだん>>してください。",
+    "options": [
+      "判断",
+      "判段",
+      "半断",
+      "判継"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "哪个好，请你自己判断。",
+      "en": "Please decide for yourself which is better."
+    },
+    "why": {
+      "zh": "「はんだん」（判断）写作「判断」。",
+      "en": "はんだん (judgement) is 「判断」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「段」读「だん」（台阶、段落），不是「断」。",
+        "en": "「段」 (だん, step) isn't 「断」."
+      },
+      {
+        "zh": "「半」读「はん」（一半），少了立刀旁。",
+        "en": "「半」 (はん, half) lacks the knife radical."
+      },
+      {
+        "zh": "「継」读「けい」（继承），和「断」字形相近。",
+        "en": "「継」 (けい, inherit) only looks like 「断」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-212",
+    "type": "hyouki",
+    "refs": [
+      "lesson52#vocab",
+      "lesson56#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<しんごう>>が赤に変わった。",
+    "options": [
+      "信号",
+      "信合",
+      "伸号",
+      "信考"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "信号灯变红了。",
+      "en": "The traffic light turned red."
+    },
+    "why": {
+      "zh": "「しんごう」（信号）写作「信号」。",
+      "en": "しんごう (traffic light) is 「信号」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「合」读「ごう／あう」，不是「号」。",
+        "en": "「合」 (ごう / あう) isn't 「号」."
+      },
+      {
+        "zh": "「伸」读「しん／のびる」（伸长），不是「信」。",
+        "en": "「伸」 (しん, stretch) isn't 「信」."
+      },
+      {
+        "zh": "「考」读「こう」（思考），不是「号」。",
+        "en": "「考」 (こう, think) isn't 「号」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-213",
+    "type": "hyouki",
+    "refs": [
+      "lesson39#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "この仕事の<<じょうけん>>はとてもいい。",
+    "options": [
+      "条件",
+      "条建",
+      "条健",
+      "案件"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这份工作的条件非常好。",
+      "en": "This job has very good conditions."
+    },
+    "why": {
+      "zh": "「じょうけん」（条件）写作「条件」，「件」是单人旁加「牛」。",
+      "en": "じょうけん (conditions) is 「条件」; 「件」 is the person radical + 牛."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「建」读「けん」（建造），不是「件」。",
+        "en": "「建」 (けん, build) isn't 「件」."
+      },
+      {
+        "zh": "「健」读「けん」（健康），不是「件」。",
+        "en": "「健」 (けん, health) isn't 「件」."
+      },
+      {
+        "zh": "「案件」读「あんけん」（案子），不是「じょうけん」。",
+        "en": "「案件」 is あんけん (a matter), not じょうけん."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-214",
+    "type": "hyouki",
+    "refs": [
+      "lesson39#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "手伝ってくれた人に<<かんしゃ>>している。",
+    "options": [
+      "感謝",
+      "感射",
+      "減謝",
+      "惑謝"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我很感谢帮助我的人。",
+      "en": "I'm grateful to the people who helped me."
+    },
+    "why": {
+      "zh": "「かんしゃ」（感谢）写作「感謝」，「謝」是言字旁。",
+      "en": "かんしゃ (gratitude) is 「感謝」; 「謝」 has the 言 radical."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「射」少了言字旁，读「いる」（射）。",
+        "en": "「射」 lacks the 言 radical: いる (shoot)."
+      },
+      {
+        "zh": "「減」读「げん／へる」（减少），不是「感」。",
+        "en": "「減」 (げん, decrease) isn't 「感」."
+      },
+      {
+        "zh": "「惑」读「わく」（迷惑），不是「感」。",
+        "en": "「惑」 (わく, confusion) isn't 「感」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-215",
+    "type": "hyouki",
+    "refs": [
+      "lesson39#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "今の給料に<<ふまん>>がある。",
+    "options": [
+      "不満",
+      "不慢",
+      "不漫",
+      "否満"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我对现在的工资有不满。",
+      "en": "I'm unhappy with my current pay."
+    },
+    "why": {
+      "zh": "「ふまん」（不满）写作「不満」，「満」是三点水（「満足」的字）。",
+      "en": "ふまん (dissatisfaction) is 「不満」; 「満」 is the kanji of 「満足」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「慢」读「まん」（「我慢」），是竖心旁，不是「満」。",
+        "en": "「慢」 (まん, as in 「我慢」) has the heart radical, not 「満」."
+      },
+      {
+        "zh": "「漫」读「まん」（「漫画」），不是「満」。",
+        "en": "「漫」 (まん, as in 「漫画」) isn't 「満」."
+      },
+      {
+        "zh": "「否」读「ひ」（否定），不是「不」。",
+        "en": "「否」 is ひ (deny), not 「不」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-216",
+    "type": "hyouki",
+    "refs": [
+      "lesson51#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "私の<<しゅみ>>は写真を撮ることです。",
+    "options": [
+      "趣味",
+      "趣未",
+      "起味",
+      "趣妹"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我的爱好是拍照。",
+      "en": "My hobby is taking photos."
+    },
+    "why": {
+      "zh": "「しゅみ」（爱好）写作「趣味」，「味」是口字旁。",
+      "en": "しゅみ (hobby) is 「趣味」; 「味」 has the 口 radical."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「未」少了口字旁，读「み」（未来）。",
+        "en": "「未」 lacks the 口 radical: み (not yet)."
+      },
+      {
+        "zh": "「起」读「き／おきる」（起床），不是「趣」。",
+        "en": "「起」 (き, get up) isn't 「趣」."
+      },
+      {
+        "zh": "「妹」是女字旁，读「いもうと」（妹妹）。",
+        "en": "「妹」 has the 女 radical: いもうと (younger sister)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-217",
+    "type": "hyouki",
+    "refs": [
+      "lesson51#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<こうきゅう>>なレストランで食事をした。",
+    "options": [
+      "高級",
+      "高急",
+      "高吸",
+      "高汲"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "在高级餐厅吃了饭。",
+      "en": "We ate at an upscale restaurant."
+    },
+    "why": {
+      "zh": "「こうきゅう」（高级）写作「高級」，「級」是绞丝旁（「上級」的字）。",
+      "en": "こうきゅう (high-class) is 「高級」; 「級」 has the thread radical, as in 「上級」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「急」读「きゅう」（急），不是「級」。",
+        "en": "「急」 (きゅう, hurry) isn't 「級」."
+      },
+      {
+        "zh": "「吸」是口字旁，读「すう」（吸）。",
+        "en": "「吸」 has the 口 radical: すう (breathe in)."
+      },
+      {
+        "zh": "「汲」是三点水，读「くむ」（汲水），不是「級」。",
+        "en": "「汲」 has the water radical: くむ (draw water)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-218",
+    "type": "hyouki",
+    "refs": [
+      "lesson53#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "子どものころから、宇宙に<<きょうみ>>がある。",
+    "options": [
+      "興味",
+      "輿味",
+      "興未",
+      "與味"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我从小就对宇宙感兴趣。",
+      "en": "I've been interested in space since I was a child."
+    },
+    "why": {
+      "zh": "「きょうみ」（兴趣）写作「興味」。",
+      "en": "きょうみ (interest) is 「興味」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「輿」读「こし」（轿子），中间是「車」，不是「興」。",
+        "en": "「輿」 (こし, palanquin) has 車 inside; not 「興」."
+      },
+      {
+        "zh": "「未」少了口字旁，不是「味」。",
+        "en": "「未」 lacks the 口 radical; not 「味」."
+      },
+      {
+        "zh": "「與」是「与」的旧字，不是「興」。",
+        "en": "「與」 is the old form of 「与」, not 「興」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-219",
+    "type": "hyouki",
+    "refs": [
+      "lesson35#vocab",
+      "lesson43#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "台風で大きな<<ひがい>>が出た。",
+    "options": [
+      "被害",
+      "彼害",
+      "被割",
+      "披害"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "台风造成了很大的损失。",
+      "en": "The typhoon caused heavy damage."
+    },
+    "why": {
+      "zh": "「ひがい」（受害）写作「被害」：衣字旁的「被」+「害」。",
+      "en": "ひがい (damage) is 「被害」: 「被」 with the clothing radical + 「害」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「彼」是双人旁，读「かれ」（他）。",
+        "en": "「彼」 has the 彳 radical: かれ (he)."
+      },
+      {
+        "zh": "「割」读「わる」（分割），多了立刀旁。",
+        "en": "「割」 is わる (split) — it has an extra knife radical."
+      },
+      {
+        "zh": "「披」是提手旁，读「ひ」（「披露」），不是「被」。",
+        "en": "「披」 (ひ, as in 「披露」) has the hand radical, not 「被」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-220",
+    "type": "hyouki",
+    "refs": [
+      "lesson35#vocab",
+      "lesson38#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "店員の<<たいど>>が悪くて、腹が立った。",
+    "options": [
+      "態度",
+      "熊度",
+      "能度",
+      "態席"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "店员态度很差，我很生气。",
+      "en": "The shop assistant's attitude was bad and it made me angry."
+    },
+    "why": {
+      "zh": "「たいど」（态度）写作「態度」：「能」加「心」。",
+      "en": "たいど (attitude) is 「態度」: 能 over 心."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「熊」下面是四点，读「くま」（熊）。",
+        "en": "「熊」 has four dots below: くま (bear)."
+      },
+      {
+        "zh": "「能」少了「心」，读「のう」（能力）。",
+        "en": "「能」 lacks 心: のう (ability)."
+      },
+      {
+        "zh": "「席」读「せき」（座位），不是「度」。",
+        "en": "「席」 (せき, seat) isn't 「度」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-221",
+    "type": "hyouki",
+    "refs": [
+      "lesson35#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<かんきょう>>を守るために、ごみを減らそう。",
+    "options": [
+      "環境",
+      "還境",
+      "環鏡",
+      "環竟"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "为了保护环境，减少垃圾吧。",
+      "en": "Let's cut down on rubbish to protect the environment."
+    },
+    "why": {
+      "zh": "「かんきょう」（环境）写作「環境」：王字旁的「環」+土字旁的「境」。",
+      "en": "かんきょう (environment) is 「環境」: 「環」 with the 王 radical + 「境」 with earth."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「還」是走之旁，读「かん」（归还），不是「環」。",
+        "en": "「還」 (かん, return) has the 辶 radical, not 「環」."
+      },
+      {
+        "zh": "「鏡」是金字旁，读「かがみ」（镜子）。",
+        "en": "「鏡」 has the 金 radical: かがみ (mirror)."
+      },
+      {
+        "zh": "「竟」少了土字旁，不是「境」。",
+        "en": "「竟」 lacks the earth radical; not 「境」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-222",
+    "type": "hyouki",
+    "refs": [
+      "lesson56#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "目上の人には<<れいぎ>>正しくしなさい。",
+    "options": [
+      "礼儀",
+      "礼議",
+      "札儀",
+      "礼犠"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "对长辈要有礼貌。",
+      "en": "Be polite to your elders."
+    },
+    "why": {
+      "zh": "「れいぎ」（礼仪）写作「礼儀」，「儀」是单人旁。",
+      "en": "れいぎ (manners) is 「礼儀」; 「儀」 has the person radical."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「議」是言字旁（「会議」），不是「儀」。",
+        "en": "「議」 has the 言 radical (「会議」), not 「儀」."
+      },
+      {
+        "zh": "「札」是木字旁，读「さつ」（纸币），不是「礼」。",
+        "en": "「札」 has the 木 radical: さつ (banknote), not 「礼」."
+      },
+      {
+        "zh": "「犠」是牛字旁（「犠牲」），不是「儀」。",
+        "en": "「犠」 has the 牛 radical (「犠牲」), not 「儀」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-223",
+    "type": "hyouki",
+    "refs": [
+      "lesson54#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<しょうじき>>に話してください。",
+    "options": [
+      "正直",
+      "正値",
+      "生直",
+      "正真"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "请老实说。",
+      "en": "Please tell me honestly."
+    },
+    "why": {
+      "zh": "「しょうじき」（诚实）写作「正直」。",
+      "en": "しょうじき (honest) is 「正直」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「値」读「ね／ち」（价格），多了单人旁。",
+        "en": "「値」 (ね / ち, price) has an extra person radical."
+      },
+      {
+        "zh": "「生」读「せい／しょう」（生活），不是「正」。",
+        "en": "「生」 (せい, life) isn't 「正」."
+      },
+      {
+        "zh": "「真」读「しん／ま」（真实），不是「直」。",
+        "en": "「真」 (しん, true) isn't 「直」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-224",
+    "type": "hyouki",
+    "refs": [
+      "lesson40#vocab",
+      "lesson53#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "映画を見て、<<なみだ>>が止まらなかった。",
+    "options": [
+      "涙",
+      "戻",
+      "浪",
+      "渓"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "看了电影，眼泪止不住。",
+      "en": "Watching the film, I couldn't stop crying."
+    },
+    "why": {
+      "zh": "「なみだ」（眼泪）写作「涙」：三点水+「戻」。",
+      "en": "なみだ (tears) is 「涙」: the water radical + 戻."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「戻」少了三点水，读「もどる」（返回）。",
+        "en": "「戻」 lacks the water radical: もどる (return)."
+      },
+      {
+        "zh": "「浪」读「ろう」（波浪），不是「涙」。",
+        "en": "「浪」 (ろう, wave) isn't 「涙」."
+      },
+      {
+        "zh": "「渓」读「けい」（溪谷），不是「涙」。",
+        "en": "「渓」 (けい, ravine) isn't 「涙」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-225",
+    "type": "hyouki",
+    "refs": [
+      "lesson52#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "急に大きな音がして、<<おどろいた>>。",
+    "options": [
+      "驚いた",
+      "警いた",
+      "敬いた",
+      "篤いた"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "突然一声巨响，吓了一跳。",
+      "en": "There was a sudden loud noise and I was startled."
+    },
+    "why": {
+      "zh": "「おどろく」（吃惊）写作「驚く」：「敬」下面加「馬」。",
+      "en": "おどろく (be surprised) is 「驚く」: 敬 over 馬."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「警」下面是「言」，读「けい」（「警察」）。",
+        "en": "「警」 has 言 below: けい (「警察」)."
+      },
+      {
+        "zh": "「敬」少了「馬」，读「うやまう」（尊敬）。",
+        "en": "「敬」 lacks 馬: うやまう (respect)."
+      },
+      {
+        "zh": "「篤」读「とく」（「危篤」），不是「驚」。",
+        "en": "「篤」 (とく, as in 「危篤」) isn't 「驚」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-226",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "去年と<<くらべて>>、今年は雨が多い。",
+    "options": [
+      "比べて",
+      "北べて",
+      "批べて",
+      "此べて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "和去年相比，今年雨多。",
+      "en": "Compared with last year, there's more rain this year."
+    },
+    "why": {
+      "zh": "「くらべる」（比较）写作「比べる」。",
+      "en": "くらべる (compare) is 「比べる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「北」读「きた」（北），字形相近。",
+        "en": "「北」 is きた (north) — it only looks similar."
+      },
+      {
+        "zh": "「批」多了提手旁，读「ひ」（批评）。",
+        "en": "「批」 has an extra hand radical: ひ (criticism)."
+      },
+      {
+        "zh": "「此」读「これ／し」，不是「比」。",
+        "en": "「此」 (これ / し, this) isn't 「比」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-227",
+    "type": "hyouki",
+    "refs": [
+      "lesson56#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "約束は必ず<<まもって>>ください。",
+    "options": [
+      "守って",
+      "寺って",
+      "宇って",
+      "字って"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "请务必遵守约定。",
+      "en": "Please be sure to keep your promise."
+    },
+    "why": {
+      "zh": "「まもる」（遵守、保护）写作「守る」：宝盖头+「寸」。",
+      "en": "まもる (keep / protect) is 「守る」: the roof radical + 寸."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「寺」上面是「土」，读「てら」（寺庙）。",
+        "en": "「寺」 has 土 on top: てら (temple)."
+      },
+      {
+        "zh": "「宇」下面是「于」，读「う」（宇宙）。",
+        "en": "「宇」 has 于 below: う (「宇宙」)."
+      },
+      {
+        "zh": "「字」下面是「子」，读「じ」（文字）。",
+        "en": "「字」 has 子 below: じ (letter)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-228",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "新しい<<ぱそこん>>を買った。",
+    "options": [
+      "パソコン",
+      "パンコン",
+      "バソコン",
+      "パソコソ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我买了台新电脑。",
+      "en": "I bought a new computer."
+    },
+    "why": {
+      "zh": "「パソコン」（个人电脑）：「パ」半浊音，「ソ」「ン」要分清。",
+      "en": "パソコン (PC): パ with the circle; tell ソ and ン apart."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ン」写成了「ソ」的位置：应是「パソ」。",
+        "en": "ン is in ソ's place: it should be パソ."
+      },
+      {
+        "zh": "「バ」是浊音，应是半浊音「パ」。",
+        "en": "バ is voiced; it should be パ with the circle."
+      },
+      {
+        "zh": "最后的「ン」写成了「ソ」。",
+        "en": "The final ン is written as ソ."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-229",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "これは大きな<<ちゃんす>>だ。",
+    "options": [
+      "チャンス",
+      "チャソス",
+      "チヤンス",
+      "シャンス"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这是个好机会。",
+      "en": "This is a big chance."
+    },
+    "why": {
+      "zh": "「チャンス」（机会）：小「ャ」，「ン」不要写成「ソ」。",
+      "en": "チャンス (chance): a small ャ, and ン not ソ."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ン」写成了「ソ」。",
+        "en": "ン is written as ソ."
+      },
+      {
+        "zh": "「ャ」应是小字，「チヤ」读成「ちや」。",
+        "en": "ャ must be small; チヤ reads ちや."
+      },
+      {
+        "zh": "「シ」读「し」，应是「チ」。",
+        "en": "シ is し; it should be チ."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-230",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "<<えねるぎー>>を節約しよう。",
+    "options": [
+      "エネルギー",
+      "エネルキー",
+      "ユネルギー",
+      "エネルギ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "节约能源吧。",
+      "en": "Let's save energy."
+    },
+    "why": {
+      "zh": "「エネルギー」（能源）：浊音「ギ」+长音「ー」。",
+      "en": "エネルギー (energy): voiced ギ followed by the long-vowel mark."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「キ」少了浊点，应是「ギ」。",
+        "en": "キ is missing the voicing marks: ギ."
+      },
+      {
+        "zh": "「ユ」读「ゆ」，应是「エ」。",
+        "en": "ユ is ゆ; it should be エ."
+      },
+      {
+        "zh": "少了最后的长音「ー」。",
+        "en": "The final long-vowel mark ー is missing."
+      }
+    ]
+  }
+]

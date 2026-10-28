@@ -1,0 +1,698 @@
+[
+  {
+    "id": "n3-l55-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson55#1"
+    ],
+    "difficulty": 2,
+    "stem": "A「どうして 部長は 田中さんに だけ あんなに 厳しいんですか。」\nB「田中さんに 期待して いる（　）、厳しく するんですよ。」",
+    "options": [
+      "からこそ",
+      "くせに",
+      "のに",
+      "ものの"
+    ],
+    "answer": 0,
+    "full": "A「どうして 部長は 田中さんに だけ あんなに 厳しいんですか。」 B「田中さんに 期待して いる からこそ、厳しく するんですよ。」",
+    "tr": {
+      "zh": "A：为什么部长只对田中那么严厉？ B：正因为对田中有期待，才对他严厉啊。",
+      "en": "A: Why is the manager so strict with Tanaka alone? B: It's precisely because he expects a lot of Tanaka that he's strict with him."
+    },
+    "why": {
+      "zh": "A 问“为什么”，B 要给出理由，而且是强调“正是因为期待才严厉”，用强调原因的「〜からこそ」。",
+      "en": "A asks why, so B gives a reason — and stresses it: it is precisely because he has high hopes that he's strict. That's 「〜からこそ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「くせに」是“明明……却……”，带责备语气，不是在回答原因。",
+        "en": "「くせに」 means \"even though…\" with blame; it doesn't give the reason A asked for."
+      },
+      {
+        "zh": "「のに」是“虽然……却……”的转折，回答不了“为什么”。",
+        "en": "「のに」 is a contrast (\"although…\"); it doesn't answer \"why\"."
+      },
+      {
+        "zh": "「ものの」是“虽然……但是”，表示转折，和问原因的对话对不上。",
+        "en": "「ものの」 means \"although\"; a concession doesn't answer a why-question."
+      }
+    ]
+  },
+  {
+    "id": "n3-l55-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson55#1"
+    ],
+    "difficulty": 2,
+    "stem": "本当の 友達（　）、言いにくい ことも はっきり 言うのだ。",
+    "options": [
+      "だからこそ",
+      "からこそ",
+      "なからこそ",
+      "のからこそ"
+    ],
+    "answer": 0,
+    "full": "本当の 友達 だからこそ、言いにくい ことも はっきり 言うのだ。",
+    "tr": {
+      "zh": "正因为是真正的朋友，才会把难以开口的话也说清楚。",
+      "en": "It's precisely because we're real friends that I say even the hard things plainly."
+    },
+    "why": {
+      "zh": "名词接「からこそ」时要加「だ」：名词＋だからこそ。",
+      "en": "With a noun, 「からこそ」 needs 「だ」 in front: noun ＋ だからこそ."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "名词后面不能直接接「からこそ」，中间要有「だ」。",
+        "en": "A noun can't take 「からこそ」 directly; 「だ」 has to come first."
+      },
+      {
+        "zh": "「な」是な形容词修饰名词时的形式，「友達」是名词，也不能接「なから」。",
+        "en": "「な」 is the form of na-adjectives before nouns; 「友達」 is a noun and 「なから」 isn't a form."
+      },
+      {
+        "zh": "「の」用于修饰名词，不能接在「から」前面。",
+        "en": "「の」 links nouns; it can't come before 「から」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l55-003",
+    "type": "narabe",
+    "refs": [
+      "lesson55#1"
+    ],
+    "difficulty": 2,
+    "stem": "何度も [_] [_] [★] [_] ある。",
+    "options": [
+      "から",
+      "今の 私が",
+      "失敗した",
+      "こそ"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "何度も 失敗した から こそ 今の 私が ある。",
+    "tr": {
+      "zh": "正因为失败过很多次，才有了今天的我。",
+      "en": "It's precisely because I failed so many times that I am who I am today."
+    },
+    "why": {
+      "zh": "「失敗した」＋「から」＋「こそ」组成「〜からこそ」，后面接结果「今の私がある」。★ 在第三格，是「こそ」。",
+      "en": "「失敗した」＋「から」＋「こそ」 make 「〜からこそ」, followed by the result 「今の私がある」. The ★ is the third slot: 「こそ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l55-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson55#2"
+    ],
+    "difficulty": 2,
+    "stem": "この アパートは 駅から 近い（　）、部屋が 狭くて 暗い。",
+    "options": [
+      "ことは 近いが",
+      "ことは 近くて",
+      "ことも 近いが",
+      "ことが 近いが"
+    ],
+    "answer": 0,
+    "full": "この アパートは 駅から 近い ことは 近いが、部屋が 狭くて 暗い。",
+    "tr": {
+      "zh": "这间公寓离车站近是近，但房间又小又暗。",
+      "en": "This flat is close to the station, sure, but the rooms are small and dark."
+    },
+    "why": {
+      "zh": "先承认“近”，再转折说缺点，是固定格式「A ことは A が」：近いことは近いが。",
+      "en": "It grants one point (it's close) and then turns to the downside — the set pattern 「A ことは A が」: 近いことは近いが."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "这个格式后半要用转折的「が／けど」，「近くて」是て形，接不出“但是”。",
+        "en": "The pattern ends in a contrast 「が／けど」; the te-form 「近くて」 gives no \"but\"."
+      },
+      {
+        "zh": "格式是「ことは」，不是「ことも」。",
+        "en": "The pattern uses 「ことは」, not 「ことも」."
+      },
+      {
+        "zh": "格式是「ことは」，用「ことが」不成立。",
+        "en": "The pattern uses 「ことは」; 「ことが」 doesn't form it."
+      }
+    ]
+  },
+  {
+    "id": "n3-l55-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson55#2"
+    ],
+    "difficulty": 2,
+    "stem": "新しい 店員は 丁寧な ことは（　）、仕事が 遅い。",
+    "options": [
+      "丁寧だが",
+      "丁寧なが",
+      "丁寧が",
+      "丁寧で"
+    ],
+    "answer": 0,
+    "full": "新しい 店員は 丁寧な ことは 丁寧だが、仕事が 遅い。",
+    "tr": {
+      "zh": "新来的店员礼貌是礼貌，但干活慢。",
+      "en": "The new shop assistant is polite, all right, but slow at the job."
+    },
+    "why": {
+      "zh": "な形容词的格式是「〜なことは〜だが」：前面用「な」，后面用「だ」再接「が」。",
+      "en": "With a na-adjective the pattern is 「〜なことは〜だが」: 「な」 the first time, 「だ」 ＋ 「が」 the second."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "な形容词句尾接「が」时要用「だ」，不能用「な」。",
+        "en": "Before 「が」 a na-adjective takes 「だ」, not 「な」."
+      },
+      {
+        "zh": "な形容词词干不能直接接「が」，要说「丁寧だが」。",
+        "en": "A na-adjective stem can't take 「が」 directly; it's 「丁寧だが」."
+      },
+      {
+        "zh": "「丁寧で」是て形，没有“但是”的转折，后面的“干活慢”接不上。",
+        "en": "「丁寧で」 is the te-form — no \"but\", so 「仕事が遅い」 doesn't follow."
+      }
+    ]
+  },
+  {
+    "id": "n3-l55-006",
+    "type": "narabe",
+    "refs": [
+      "lesson55#2"
+    ],
+    "difficulty": 2,
+    "stem": "この アプリは [_] [_] [★] [_] 、広告が 多すぎる。",
+    "options": [
+      "便利だ",
+      "ことは",
+      "けれど",
+      "便利な"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "この アプリは 便利な ことは 便利だ けれど、広告が 多すぎる。",
+    "tr": {
+      "zh": "这个应用方便是方便，但广告太多了。",
+      "en": "This app is handy, sure, but there are far too many ads."
+    },
+    "why": {
+      "zh": "格式「〜なことは〜だけれど」：便利な＋ことは＋便利だ＋けれど。★ 在第三格，是「便利だ」。",
+      "en": "The pattern 「〜なことは〜だけれど」: 便利な ＋ ことは ＋ 便利だ ＋ けれど. The ★ is the third slot: 「便利だ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l55-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson55#3"
+    ],
+    "difficulty": 2,
+    "stem": "うちの 会社の 規則では、休みを 取る ときは 一週間 前までに 上司に 申請する（　）。",
+    "options": [
+      "ことに なって いる",
+      "ことに して いる",
+      "ことが ある",
+      "ような 気が する"
+    ],
+    "answer": 0,
+    "full": "うちの 会社の 規則では、休みを 取る ときは 一週間 前までに 上司に 申請する ことに なって いる。",
+    "tr": {
+      "zh": "按我们公司的规定，请假要在一周前向上司申请。",
+      "en": "Under our company's rules, you have to apply to your boss a week before you take leave."
+    },
+    "why": {
+      "zh": "「会社の規則では」说明是公司（外部）定的规矩，用「〜ことになっている」。",
+      "en": "「会社の規則では」 shows it's a rule set by the company, not by me — 「〜ことになっている」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ことにしている」是自己给自己定的习惯，和“公司规定”对不上。",
+        "en": "「ことにしている」 is a habit I set for myself; it clashes with \"the company's rules\"."
+      },
+      {
+        "zh": "「ことがある」是“有时会”，规定不会是“有时申请”。",
+        "en": "「ことがある」 means \"sometimes\"; a rule isn't something that happens now and then."
+      },
+      {
+        "zh": "「ような気がする」是模糊的感觉，和明确的规定矛盾。",
+        "en": "「ような気がする」 is a vague feeling, which contradicts a written rule."
+      }
+    ]
+  },
+  {
+    "id": "n3-l55-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson55#3"
+    ],
+    "difficulty": 2,
+    "stem": "来月から 大阪の 支店で 働く（　）ので、今 引っ越しの 準備を して います。",
+    "options": [
+      "ことに なって いる",
+      "ことに して いる",
+      "ことが ある",
+      "ような 気が する"
+    ],
+    "answer": 0,
+    "full": "来月から 大阪の 支店で 働く ことに なって いる ので、今 引っ越しの 準備を して います。",
+    "tr": {
+      "zh": "下个月起要去大阪分店工作（已经定了），所以现在在准备搬家。",
+      "en": "I'm due to start at the Osaka branch next month, so I'm getting ready to move."
+    },
+    "why": {
+      "zh": "“下个月起去大阪工作”是已经定下来的安排（公司调动），所以才准备搬家，用「〜ことになっている」。",
+      "en": "Working in Osaka from next month is an arrangement that's already been made, which is why I'm packing — 「〜ことになっている」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ことにしている」表示长期习惯，不用于“下个月起调去大阪”这种一次性的安排。",
+        "en": "「ことにしている」 is an ongoing habit, not a one-off arrangement like a transfer from next month."
+      },
+      {
+        "zh": "「ことがある」是“有时会”，和“下个月起”、为此搬家对不上。",
+        "en": "「ことがある」 means \"sometimes\"; it doesn't fit \"from next month\" or moving house for it."
+      },
+      {
+        "zh": "只是“总觉得”的话，不会为此开始准备搬家。",
+        "en": "Nobody starts packing to move on a mere hunch (「ような気がする」)."
+      }
+    ]
+  },
+  {
+    "id": "n3-l55-009",
+    "type": "narabe",
+    "refs": [
+      "lesson55#3"
+    ],
+    "difficulty": 1,
+    "stem": "この 図書館では、館内で [_] [_] [★] [_] 。",
+    "options": [
+      "ことに",
+      "飲み物を",
+      "なって います",
+      "飲まない"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "この 図書館では、館内で 飲み物を 飲まない ことに なって います。",
+    "tr": {
+      "zh": "这个图书馆规定馆内不能喝饮料。",
+      "en": "In this library, you're not supposed to drink anything inside."
+    },
+    "why": {
+      "zh": "飲み物を＋飲まない＋ことに＋なっています，表示规定。★ 在第三格，是「ことに」。",
+      "en": "飲み物を ＋ 飲まない ＋ ことに ＋ なっています states the rule. The ★ is the third slot: 「ことに」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l55-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson55#4"
+    ],
+    "difficulty": 2,
+    "stem": "あの 人とは どこかで 会った（　）けど、名前が 思い出せない。",
+    "options": [
+      "ような 気が する",
+      "ことに して いる",
+      "ことに なって いる",
+      "はずが ない"
+    ],
+    "answer": 0,
+    "full": "あの 人とは どこかで 会った ような 気が する けど、名前が 思い出せない。",
+    "tr": {
+      "zh": "总觉得在哪儿见过那个人，但想不起名字。",
+      "en": "I feel like I've met that person somewhere, but I can't remember their name."
+    },
+    "why": {
+      "zh": "「どこかで」「名前が思い出せない」都说明记忆模糊，是不确定的感觉，用「〜ような気がする」。",
+      "en": "「どこかで」 and \"can't recall the name\" show the memory is hazy — an uncertain feeling, 「〜ような気がする」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ことにしている」是自己的习惯，“见过”不是习惯。",
+        "en": "「ことにしている」 is a habit; having met someone isn't one."
+      },
+      {
+        "zh": "「ことになっている」是规定或安排，和“见过某人”无关。",
+        "en": "「ことになっている」 is a rule or arrangement; it has nothing to do with having met someone."
+      },
+      {
+        "zh": "「はずがない」是“不可能见过”，后面再说“想不起名字”就矛盾了。",
+        "en": "「はずがない」 says we can't have met — then \"I can't recall the name\" makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n3-l55-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson55#4"
+    ],
+    "difficulty": 1,
+    "stem": "最近 体が 重い。少し 太った（　）気が する。",
+    "options": [
+      "ような",
+      "ように",
+      "そうな",
+      "らしい"
+    ],
+    "answer": 0,
+    "full": "最近 体が 重い。少し 太った ような 気が する。",
+    "tr": {
+      "zh": "最近身体发沉，总觉得胖了一点。",
+      "en": "I've been feeling heavy lately. I have a feeling I've put on a bit of weight."
+    },
+    "why": {
+      "zh": "「気」是名词，前面要用修饰名词的「ような」：太ったような気がする。",
+      "en": "「気」 is a noun, so it needs the noun-modifying 「ような」: 太ったような気がする."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ように」是副词形，不能修饰名词「気」。",
+        "en": "「ように」 is adverbial; it can't modify the noun 「気」."
+      },
+      {
+        "zh": "「た形＋そうだ」是传闻“听说”，不能变成「そうな」修饰「気」。",
+        "en": "After the ta-form 「そうだ」 is hearsay and has no 「そうな」 form to modify 「気」."
+      },
+      {
+        "zh": "「らしい」不能这样直接接「気がする」。",
+        "en": "「らしい」 doesn't combine with 「気がする」 like this."
+      }
+    ]
+  },
+  {
+    "id": "n3-l55-012",
+    "type": "narabe",
+    "refs": [
+      "lesson55#4"
+    ],
+    "difficulty": 1,
+    "stem": "なんだか 大事な ことを [_] [_] [★] [_] 。",
+    "options": [
+      "気が",
+      "忘れて いる",
+      "する",
+      "ような"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "なんだか 大事な ことを 忘れて いる ような 気が する。",
+    "tr": {
+      "zh": "总觉得忘了什么重要的事。",
+      "en": "I have a feeling I've forgotten something important."
+    },
+    "why": {
+      "zh": "忘れている＋ような＋気が＋する。★ 在第三格，是「気が」。",
+      "en": "忘れている ＋ ような ＋ 気が ＋ する. The ★ is the third slot: 「気が」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l55-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson55#5"
+    ],
+    "difficulty": 1,
+    "stem": "値段が 高い 物が 必ずしも 質が いい（　）。",
+    "options": [
+      "とは 限らない",
+      "に 違いない",
+      "に 決まって いる",
+      "はずだ"
+    ],
+    "answer": 0,
+    "full": "値段が 高い 物が 必ずしも 質が いい とは 限らない。",
+    "tr": {
+      "zh": "价格贵的东西质量未必好。",
+      "en": "Expensive things aren't necessarily good quality."
+    },
+    "why": {
+      "zh": "「必ずしも」后面要接部分否定，常和「〜とは限らない」搭配：未必。",
+      "en": "「必ずしも」 needs a partial negative after it; its usual partner is 「〜とは限らない」 (not necessarily)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に違いない」是“一定是”，和要求否定的「必ずしも」不搭。",
+        "en": "「に違いない」 (must be) is positive; 「必ずしも」 needs a negative."
+      },
+      {
+        "zh": "「に決まっている」是“肯定是”，和「必ずしも」矛盾。",
+        "en": "「に決まっている」 (of course it is) contradicts 「必ずしも」."
+      },
+      {
+        "zh": "「はずだ」是肯定的推测，「必ずしも」后面不能接肯定。",
+        "en": "「はずだ」 is a positive expectation; 「必ずしも」 can't take a positive."
+      }
+    ]
+  },
+  {
+    "id": "n3-l55-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson55#5"
+    ],
+    "difficulty": 2,
+    "stem": "日本人だ（　）、敬語が 上手に 使えるとは 限らない。",
+    "options": [
+      "からといって",
+      "からこそ",
+      "おかげで",
+      "ものの"
+    ],
+    "answer": 0,
+    "full": "日本人だ からといって、敬語が 上手に 使えるとは 限らない。",
+    "tr": {
+      "zh": "不能因为是日本人，就一定会用好敬语。",
+      "en": "Being Japanese doesn't necessarily mean you can use keigo well."
+    },
+    "why": {
+      "zh": "“是日本人”→“未必会用敬语”，否定“A 所以一定 B”的想法，固定搭配「〜からといって、〜とは限らない」。",
+      "en": "It denies the idea that A automatically means B — the set pairing 「〜からといって、〜とは限らない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「からこそ」是“正因为……才”，强调理由，和后面的“未必”矛盾。",
+        "en": "「からこそ」 stresses a reason (\"precisely because\"), which clashes with \"not necessarily\"."
+      },
+      {
+        "zh": "「おかげで」是“多亏”，后面要接已经出现的好结果，这里不是。",
+        "en": "「おかげで」 (thanks to) needs a good result that happened; there isn't one here."
+      },
+      {
+        "zh": "「ものの」前面名词要说「日本人であるものの」，「日本人だものの」不成立。",
+        "en": "With a noun 「ものの」 needs 「である」; 「日本人だものの」 isn't a form."
+      }
+    ]
+  },
+  {
+    "id": "n3-l55-015",
+    "type": "narabe",
+    "refs": [
+      "lesson55#5"
+    ],
+    "difficulty": 2,
+    "stem": "有名な 大学を 出た [_] [_] [★] [_] 限らない。",
+    "options": [
+      "できる",
+      "仕事が",
+      "とは",
+      "人が"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "有名な 大学を 出た 人が 仕事が できる とは 限らない。",
+    "tr": {
+      "zh": "名牌大学毕业的人未必能干。",
+      "en": "People from a famous university aren't necessarily good at their jobs."
+    },
+    "why": {
+      "zh": "「有名な大学を出た」修饰「人」：人が＋仕事が＋できる＋とは（限らない）。★ 在第三格，是「できる」。",
+      "en": "「有名な大学を出た」 modifies 「人」: 人が ＋ 仕事が ＋ できる ＋ とは (限らない). The ★ is the third slot: 「できる」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l55-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson55#6"
+    ],
+    "difficulty": 1,
+    "stem": "今日は 道が 混むと 思って、早めに 家を 出た。（　）、道は すいて いて、一時間も 早く 着いて しまった。",
+    "options": [
+      "ところが",
+      "だから",
+      "それに",
+      "そこで"
+    ],
+    "answer": 0,
+    "full": "今日は 道が 混むと 思って、早めに 家を 出た。ところが、道は すいて いて、一時間も 早く 着いて しまった。",
+    "tr": {
+      "zh": "我以为今天路上会堵，就早早出了门。结果路上很空，早到了整整一个小时。",
+      "en": "I thought the roads would be busy today, so I left early. But they were empty, and I got there a whole hour early."
+    },
+    "why": {
+      "zh": "前面以为“会堵车”，后面却“路很空”——结果和预想相反，用「ところが」。",
+      "en": "I expected traffic, but the roads were empty — the outcome is the opposite of what I expected, so 「ところが」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「だから」表示因果，“以为会堵所以路很空”说不通。",
+        "en": "「だから」 marks a result; \"I expected traffic, so the roads were empty\" isn't logical."
+      },
+      {
+        "zh": "「それに」是追加同方向的内容，这里前后是相反的。",
+        "en": "「それに」 adds something in the same direction; here the two sentences pull in opposite directions."
+      },
+      {
+        "zh": "「そこで」是“于是（采取对策）”，后面应接自己的行动，不是“路很空”。",
+        "en": "「そこで」 introduces an action taken in response; \"the roads were empty\" isn't one."
+      }
+    ]
+  },
+  {
+    "id": "n3-l55-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson55#6"
+    ],
+    "difficulty": 1,
+    "stem": "彼は 時間に 厳しい 人だ。（　）、今日は 約束の 時間に 30分も 遅れて 来た。",
+    "options": [
+      "ところが",
+      "それで",
+      "そのうえ",
+      "たとえば"
+    ],
+    "answer": 0,
+    "full": "彼は 時間に 厳しい 人だ。ところが、今日は 約束の 時間に 30分も 遅れて 来た。",
+    "tr": {
+      "zh": "他是个很守时的人。可是今天他却比约定时间晚到了 30 分钟。",
+      "en": "He's a stickler for time. Yet today he turned up a full 30 minutes late."
+    },
+    "why": {
+      "zh": "“守时的人”却“迟到 30 分钟”，出乎意料，用表示与预期相反的「ところが」。",
+      "en": "A punctual man arriving 30 minutes late is unexpected — 「ところが」 marks a result contrary to expectation."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「それで」是“所以”，“守时所以迟到”不合逻辑。",
+        "en": "「それで」 means \"so\"; \"he's punctual, so he was late\" is illogical."
+      },
+      {
+        "zh": "「そのうえ」是“而且”，追加同方向的事，这里前后相反。",
+        "en": "「そのうえ」 adds something in the same direction; these two facts clash."
+      },
+      {
+        "zh": "「たとえば」是举例，“迟到”不是“守时”的例子。",
+        "en": "「たとえば」 gives an example; being late isn't an example of punctuality."
+      }
+    ]
+  },
+  {
+    "id": "n3-l55-018",
+    "type": "narabe",
+    "refs": [
+      "lesson55#6"
+    ],
+    "difficulty": 2,
+    "stem": "試験は 難しいと [_] [★] [_] [_] 簡単だった。",
+    "options": [
+      "思ったより",
+      "ところが、",
+      "聞いて いた。",
+      "受けて みると"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "試験は 難しいと 聞いて いた。ところが、受けて みると 思ったより 簡単だった。",
+    "tr": {
+      "zh": "听说考试很难。可是真去考了，发现比想象的简单。",
+      "en": "I'd heard the exam was hard. But when I actually sat it, it was easier than I'd thought."
+    },
+    "why": {
+      "zh": "先说预想“听说很难”，用「ところが」转到相反的结果：受けてみると＋思ったより＋簡単だった。★ 在第二格，是「ところが、」。",
+      "en": "First the expectation (I'd heard it was hard), then 「ところが」 turns to the opposite: 受けてみると ＋ 思ったより ＋ 簡単だった. The ★ is the second slot: 「ところが、」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

@@ -230,6 +230,7 @@ The free model costs you nothing; with your own key, billing is between you and 
 - **GitHub Issues**：[提交 issue](https://github.com/Ralphbupt/japanese-grammar/issues)（推荐，公开追踪）
 - **GitHub PR**：直接提交修复，特别欢迎补充例句和易错点对比
 - **邮箱**：[pengcheng199@gmail.com](mailto:pengcheng199@gmail.com)
+- **页面里直接写**：练习题、模拟题、语法卡片页底部的「💬 反馈 / 建议」，以及每道题解析下的「这题有问题？」。匿名，不用登录。发送的只有：你写的文字、当前页面地址、界面语言；如果是针对某道题，还有题号、你选的选项和你勾的原因。为了防止刷屏，会存一个按日期加盐的 IP 哈希（每天换盐，无法还原 IP，也无法跨天关联），用来限制每人每天最多 20 条。数据存在本站自己的 Cloudflare D1 数据库里，只用来改进题目和网站。
 
 我会回复每一个反馈。
 :::
@@ -240,6 +241,7 @@ Found a typo? Awkward example? Unclear explanation?
 - **GitHub Issues**: [open an issue](https://github.com/Ralphbupt/japanese-grammar/issues) — recommended, publicly tracked
 - **GitHub PR**: submit a fix directly; additions to examples and comparison notes especially welcome
 - **Email**: [pengcheng199@gmail.com](mailto:pengcheng199@gmail.com)
+- **Right on the page**: "💬 Feedback / suggestions" at the bottom of the practice, mock test and flashcard pages, and "Something wrong with this question?" under each explanation. Anonymous, no sign-in. What's sent: the text you write, the page address and the interface language; for a question, also its id, the option you picked and the reason you ticked. To stop flooding, a daily-salted hash of your IP is stored (the salt changes every day, so it can't be turned back into an IP or linked across days) and used to cap each reader at 20 notes a day. It's kept in this site's own Cloudflare D1 database and used only to fix questions and improve the site.
 
 I respond to every piece of feedback.
 :::

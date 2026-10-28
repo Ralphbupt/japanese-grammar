@@ -1,0 +1,624 @@
+[
+  {
+    "id": "n4-l20-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson20#1"
+    ],
+    "difficulty": 2,
+    "stem": "A「その かばん、すてきですね。」\nB「ありがとう。誕生日に 姉が 私に（　）んです。」",
+    "options": [
+      "くれた",
+      "あげた",
+      "もらった",
+      "やった"
+    ],
+    "answer": 0,
+    "full": "A「その かばん、すてきですね。」 B「ありがとう。誕生日に 姉が 私に くれたんです。」",
+    "tr": {
+      "zh": "A：那个包真好看。 B：谢谢。是生日时姐姐送我的。",
+      "en": "A: That bag is lovely. B: Thanks. My sister gave it to me for my birthday."
+    },
+    "why": {
+      "zh": "给予方是姐姐（が），接受方是我（私に）：别人给我用「くれる」。",
+      "en": "The giver is my sister (が) and the receiver is me (私に): someone giving to me is 「くれる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「あげる」是我（我方）给别人，不能用在“别人给我”。",
+        "en": "「あげる」 goes from me outward; it can't describe someone giving to me."
+      },
+      {
+        "zh": "「姉が私にもらった」是“姐姐从我这里得到”，那包就不会在 B 手上了。",
+        "en": "「姉が私にもらった」 would mean my sister got it from me — then B wouldn't have the bag."
+      },
+      {
+        "zh": "「やる」和「あげる」一样是给出去（对下或动植物），不能用于“给我”。",
+        "en": "「やる」, like 「あげる」, gives outward (to inferiors, plants, animals), never to me."
+      }
+    ]
+  },
+  {
+    "id": "n4-l20-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson20#1"
+    ],
+    "difficulty": 1,
+    "stem": "私は 先生（　）辞書を もらいました。",
+    "options": [
+      "に",
+      "が",
+      "を",
+      "へ"
+    ],
+    "answer": 0,
+    "full": "私は 先生に 辞書を もらいました。",
+    "tr": {
+      "zh": "我从老师那里得到了一本辞典。",
+      "en": "I got a dictionary from my teacher."
+    },
+    "why": {
+      "zh": "「もらう」的给予方用「に」（或「から」）：先生にもらう。",
+      "en": "With 「もらう」 the giver takes 「に」 (or 「から」): 先生にもらう."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「が」会让老师变成主语，可主语已经是「私は」。",
+        "en": "「が」 would make the teacher the subject, but 「私は」 already is."
+      },
+      {
+        "zh": "后面已经有「辞書を」，不能再用「を」标记人。",
+        "en": "「辞書を」 is already the object; the person can't take 「を」 too."
+      },
+      {
+        "zh": "「へ」表示方向（去……），不能标记东西从谁那里来。",
+        "en": "「へ」 marks direction toward something, not where a gift comes from."
+      }
+    ]
+  },
+  {
+    "id": "n4-l20-003",
+    "type": "narabe",
+    "refs": [
+      "lesson20#1"
+    ],
+    "difficulty": 1,
+    "stem": "これは 入学の お祝いに [_] [_] [★] [_]。",
+    "options": [
+      "時計",
+      "父が",
+      "です",
+      "くれた"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "これは 入学の お祝いに 父が くれた 時計です。",
+    "tr": {
+      "zh": "这是爸爸送我的入学贺礼手表。",
+      "en": "This is the watch my father gave me to celebrate my starting school."
+    },
+    "why": {
+      "zh": "「父がくれた」修饰「時計」：父が くれた 時計 です。★ 在第三格，是「時計」。",
+      "en": "「父がくれた」 modifies 「時計」: 父が くれた 時計 です. The ★ is the third slot: 「時計」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l20-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson20#2"
+    ],
+    "difficulty": 2,
+    "stem": "A「その 本、どうしたんですか。」\nB「卒業式の 日に 先生が（　）んです。」",
+    "options": [
+      "くださった",
+      "いただいた",
+      "さしあげた",
+      "あげた"
+    ],
+    "answer": 0,
+    "full": "A「その 本、どうしたんですか。」 B「卒業式の 日に 先生が くださったんです。」",
+    "tr": {
+      "zh": "A：那本书是怎么来的？ B：是毕业典礼那天老师送给我的。",
+      "en": "A: Where did you get that book? B: My teacher gave it to me on graduation day."
+    },
+    "why": {
+      "zh": "书在 B 手上，是老师（が）给我的；长辈给我用「くれる」的尊敬语「くださる」。",
+      "en": "B has the book, so the teacher (が) gave it to B; a superior giving to me is 「くださる」, the honorific of 「くれる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「いただく」的主语是接受方（我），「先生がいただいた」变成“老师收到了”，书就不会在 B 手上。",
+        "en": "「いただく」 takes the receiver as subject; 「先生がいただいた」 would mean the teacher received it."
+      },
+      {
+        "zh": "「さしあげる」是我给长辈，主语是我，不能说「先生がさしあげた」来表示给我。",
+        "en": "「さしあげる」 is me giving to a superior; it can't describe the teacher giving to me."
+      },
+      {
+        "zh": "「あげる」是给出去，不能用在“老师给我”。",
+        "en": "「あげる」 gives outward; it can't mean the teacher gave it to me."
+      }
+    ]
+  },
+  {
+    "id": "n4-l20-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson20#2"
+    ],
+    "difficulty": 2,
+    "stem": "先生の 誕生日に、クラスの みんなで お金を 出して、先生に 花を（　）。",
+    "options": [
+      "さしあげました",
+      "くださいました",
+      "くれました",
+      "いただきました"
+    ],
+    "answer": 0,
+    "full": "先生の 誕生日に、クラスの みんなで お金を 出して、先生に 花を さしあげました。",
+    "tr": {
+      "zh": "老师生日那天，全班同学凑钱送了老师花。",
+      "en": "On our teacher's birthday, the whole class chipped in and gave her flowers."
+    },
+    "why": {
+      "zh": "全班（我方）凑钱送花给老师：我方给长辈用「あげる」的谦让语「さしあげる」。",
+      "en": "The class (my side) pooled money to give flowers to the teacher: giving to a superior is 「さしあげる」, the humble form of 「あげる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「くださる」是长辈给我方，可这里是我们凑钱送给老师。",
+        "en": "「くださる」 is a superior giving to my side, but we're the ones giving."
+      },
+      {
+        "zh": "「くれる」是别人给我方，方向反了。",
+        "en": "「くれる」 is someone giving to my side — the wrong direction."
+      },
+      {
+        "zh": "「いただく」是我方从长辈那里收到；我们凑了钱，是送花的一方。",
+        "en": "「いただく」 is receiving from a superior; we pooled money, so we're the givers."
+      }
+    ]
+  },
+  {
+    "id": "n4-l20-006",
+    "type": "narabe",
+    "refs": [
+      "lesson20#2",
+      "lesson20#3"
+    ],
+    "difficulty": 2,
+    "stem": "これは 先生に [_] [★] [_] [_]。",
+    "options": [
+      "です",
+      "手紙",
+      "書いて",
+      "いただいた"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "これは 先生に 書いて いただいた 手紙です。",
+    "tr": {
+      "zh": "这是老师为我写的信。",
+      "en": "This is a letter my teacher kindly wrote for me."
+    },
+    "why": {
+      "zh": "请长辈为我做：「先生に〜ていただく」，整个修饰「手紙」。書いて いただいた 手紙 です，★ 在第二格，是「いただいた」。",
+      "en": "A superior doing something for me: 「先生に〜ていただく」, modifying 「手紙」. 書いて いただいた 手紙 です — the ★ is the second slot: 「いただいた」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l20-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson20#3"
+    ],
+    "difficulty": 2,
+    "stem": "A「重そうですね。荷物を 持って（　）。」\nB「ありがとうございます。助かります。」",
+    "options": [
+      "あげましょうか",
+      "もらえますか",
+      "くれますか",
+      "ください"
+    ],
+    "answer": 0,
+    "full": "A「重そうですね。荷物を 持って あげましょうか。」 B「ありがとうございます。助かります。」",
+    "tr": {
+      "zh": "A：看起来很重啊。要我帮你拿行李吗？ B：谢谢，帮大忙了。",
+      "en": "A: That looks heavy. Shall I carry your bag for you? B: Thank you, that helps a lot."
+    },
+    "why": {
+      "zh": "B 道谢，说明 A 是主动提出帮忙：「〜てあげましょうか」（要我为你做……吗）。",
+      "en": "B thanks A, so A is offering to help: 「〜てあげましょうか」 (shall I do it for you?)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「持ってもらえますか」是请 B 帮 A 拿，B 不会回答“谢谢，帮大忙了”。",
+        "en": "「持ってもらえますか」 asks B to carry it; B wouldn't reply with thanks."
+      },
+      {
+        "zh": "「持ってくれますか」也是请 B 帮忙，和 B 的道谢对不上。",
+        "en": "「持ってくれますか」 is also a request to B, which doesn't match B's thanks."
+      },
+      {
+        "zh": "「持ってください」是请 B 拿，不是 A 主动帮忙。",
+        "en": "「持ってください」 tells B to carry it — not an offer of help."
+      }
+    ]
+  },
+  {
+    "id": "n4-l20-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson20#3"
+    ],
+    "difficulty": 2,
+    "stem": "きのう 美容院で 美容師さんに 髪を 切って（　）。短く なって、気持ちが いいです。",
+    "options": [
+      "もらいました",
+      "くれました",
+      "あげました",
+      "いました"
+    ],
+    "answer": 0,
+    "full": "きのう 美容院で 美容師さんに 髪を 切って もらいました。短く なって、気持ちが いいです。",
+    "tr": {
+      "zh": "昨天在美发店请美发师剪了头发。变短了，很舒服。",
+      "en": "Yesterday I had my hair cut by the stylist at the salon. It's short now and feels great."
+    },
+    "why": {
+      "zh": "我（主语）请美发师（に）为我剪：「人に〜てもらう」。",
+      "en": "I (the subject) had the stylist (に) do it for me: 「人に〜てもらう」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「くれる」的给予方要用「が」（美容師さんが切ってくれた），这里是「美容師さんに」。",
+        "en": "「くれる」 needs the giver with 「が」 (美容師さんが切ってくれた), not 「に」."
+      },
+      {
+        "zh": "「美容師さんに切ってあげた」是“我给美发师剪头发”，和“（我的头发）变短了很舒服”不合。",
+        "en": "「美容師さんに切ってあげた」 would mean I cut the stylist's hair — not why my hair is short."
+      },
+      {
+        "zh": "「切っていました」是“正在剪”，「美容師さんに」接不上。",
+        "en": "「切っていました」 (was cutting) doesn't fit 「美容師さんに」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l20-009",
+    "type": "bunpou",
+    "refs": [
+      "lesson20#3"
+    ],
+    "difficulty": 2,
+    "stem": "道に 迷って いたら、知らない 人が 駅まで 連れて 行って（　）。",
+    "options": [
+      "くれました",
+      "もらいました",
+      "あげました",
+      "ください"
+    ],
+    "answer": 0,
+    "full": "道に 迷って いたら、知らない 人が 駅まで 連れて 行って くれました。",
+    "tr": {
+      "zh": "我迷路的时候，一位陌生人把我带到了车站。",
+      "en": "When I was lost, a stranger took me to the station."
+    },
+    "why": {
+      "zh": "给予方是陌生人（が），受益的是迷路的我：别人为我做用「〜てくれる」。",
+      "en": "The stranger (が) did it and I, the lost one, benefited: someone doing something for me is 「〜てくれる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「もらう」的主语是受益人（我），「知らない人が〜もらいました」主语不对。",
+        "en": "With 「もらう」 the beneficiary (me) is the subject; 「知らない人が」 doesn't fit."
+      },
+      {
+        "zh": "「あげる」是为别人做，陌生人帮的是我，方向反了。",
+        "en": "「あげる」 is doing for others; the stranger helped me, so it's the wrong direction."
+      },
+      {
+        "zh": "「ください」是请求，不能用来叙述已经发生的事。",
+        "en": "「ください」 is a request; it can't narrate what happened."
+      }
+    ]
+  },
+  {
+    "id": "n4-l20-010",
+    "type": "narabe",
+    "refs": [
+      "lesson20#3"
+    ],
+    "difficulty": 2,
+    "stem": "友達に [_] [_] [★] [_]。",
+    "options": [
+      "上手に なりました",
+      "教えて",
+      "日本語を",
+      "もらって"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "友達に 日本語を 教えて もらって 上手に なりました。",
+    "tr": {
+      "zh": "请朋友教我日语，我的日语变好了。",
+      "en": "My friend taught me Japanese, and I got better at it."
+    },
+    "why": {
+      "zh": "「友達に〜てもらう」：日本語を 教えて もらって 上手に なりました。★ 在第三格，是「もらって」。",
+      "en": "「友達に〜てもらう」: 日本語を 教えて もらって 上手に なりました. The ★ is the third slot: 「もらって」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l20-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson20#4"
+    ],
+    "difficulty": 2,
+    "stem": "A「すみません、写真を 撮って（　）。」\nB「いいですよ。」",
+    "options": [
+      "もらえませんか",
+      "あげませんか",
+      "もらいませんか",
+      "くれましたか"
+    ],
+    "answer": 0,
+    "full": "A「すみません、写真を 撮って もらえませんか。」 B「いいですよ。」",
+    "tr": {
+      "zh": "A：不好意思，能帮我拍张照吗？ B：好啊。",
+      "en": "A: Excuse me, could you take a photo for me? B: Sure."
+    },
+    "why": {
+      "zh": "向陌生人委婉请求：「〜てもらえませんか」（もらう的可能形＋否定疑问）。",
+      "en": "A polite request to a stranger: 「〜てもらえませんか」 (the potential of もらう, as a negative question)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「あげませんか」是提议“为别人做”，不是请对方帮我。",
+        "en": "「あげませんか」 suggests doing something for someone else, not asking for help."
+      },
+      {
+        "zh": "「もらいませんか」是邀请“要不要一起请人拍”，请求要用可能形「もらえませんか」。",
+        "en": "「もらいませんか」 is an invitation; a request needs the potential 「もらえませんか」."
+      },
+      {
+        "zh": "「くれましたか」是问过去的事，B 不会回答「いいですよ」。",
+        "en": "「くれましたか」 asks about the past; 「いいですよ」 doesn't answer it."
+      }
+    ]
+  },
+  {
+    "id": "n4-l20-012",
+    "type": "bunpou",
+    "refs": [
+      "lesson20#4"
+    ],
+    "difficulty": 1,
+    "stem": "A「ねえ、この 箱を 運ぶの、ちょっと 手伝って（　）？」\nB「うん、いいよ。」",
+    "options": [
+      "くれない",
+      "もらった",
+      "あげなかった",
+      "くれなかった"
+    ],
+    "answer": 0,
+    "full": "A「ねえ、この 箱を 運ぶの、ちょっと 手伝って くれない？」 B「うん、いいよ。」",
+    "tr": {
+      "zh": "A：喂，能帮我搬一下这个箱子吗？ B：嗯，好啊。",
+      "en": "A: Hey, could you help me carry this box? B: Sure."
+    },
+    "why": {
+      "zh": "朋友之间随意的请求：「〜てくれない？」（能帮我……吗）。",
+      "en": "A casual request between friends: 「〜てくれない？」 (could you…?)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「手伝ってもらった？」是问过去“你请人帮忙了吗”，B 不会回答「うん、いいよ」。",
+        "en": "「手伝ってもらった？」 asks whether B got help; 「うん、いいよ」 doesn't answer that."
+      },
+      {
+        "zh": "「あげなかった？」是问过去“你没帮（别人）吗”，B 不会回答「うん、いいよ」。",
+        "en": "「あげなかった？」 asks whether B didn't help someone; 「うん、いいよ」 doesn't answer that."
+      },
+      {
+        "zh": "「くれなかった？」是过去时，问“你没帮我吗”，不是现在的请求。",
+        "en": "「くれなかった？」 is past tense — not a request for now."
+      }
+    ]
+  },
+  {
+    "id": "n4-l20-013",
+    "type": "narabe",
+    "refs": [
+      "lesson20#4"
+    ],
+    "difficulty": 2,
+    "stem": "すみません、駅までの [_] [_] [★] [_] か。",
+    "options": [
+      "いただけ",
+      "ません",
+      "行き方を",
+      "教えて"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "すみません、駅までの 行き方を 教えて いただけませんか。",
+    "tr": {
+      "zh": "不好意思，能告诉我去车站怎么走吗？",
+      "en": "Excuse me, could you tell me how to get to the station?"
+    },
+    "why": {
+      "zh": "最礼貌的请求「〜ていただけませんか」：行き方を 教えて いただけ ません か。★ 在第三格，是「いただけ」。",
+      "en": "The most polite request, 「〜ていただけませんか」: 行き方を 教えて いただけ ません か. The ★ is the third slot: 「いただけ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l20-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson20#5"
+    ],
+    "difficulty": 2,
+    "stem": "母は 隣の 人に りんごを（　）。隣の 人は「ありがとうございます」と 言いました。",
+    "options": [
+      "あげました",
+      "くれました",
+      "もらいました",
+      "くださいました"
+    ],
+    "answer": 0,
+    "full": "母は 隣の 人に りんごを あげました。隣の 人は「ありがとうございます」と 言いました。",
+    "tr": {
+      "zh": "妈妈给了邻居苹果。邻居说了“谢谢”。",
+      "en": "My mother gave the neighbour some apples. The neighbour said “thank you”."
+    },
+    "why": {
+      "zh": "邻居道谢，说明是妈妈给邻居；妈妈属于我方（うち），我方给外人用「あげる」。",
+      "en": "The neighbour says thanks, so mother gave the apples; mother is on my side, and my side giving outward is 「あげる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「くれる」是外人给我方；妈妈是我方，给邻居不能用「くれる」。",
+        "en": "「くれる」 is someone giving to my side; mother (my side) giving to a neighbour can't use it."
+      },
+      {
+        "zh": "「もらいました」是妈妈从邻居那里收到，那道谢的就不该是邻居。",
+        "en": "「もらいました」 would mean mother received them — then the neighbour wouldn't be the one saying thanks."
+      },
+      {
+        "zh": "「くださる」是长辈/外人给我方的尊敬说法，而且不能用来抬高自己的妈妈。",
+        "en": "「くださる」 is a superior giving to my side — and you don't use honorifics for your own mother."
+      }
+    ]
+  },
+  {
+    "id": "n4-l20-015",
+    "type": "bunpou",
+    "refs": [
+      "lesson20#5"
+    ],
+    "difficulty": 2,
+    "stem": "となりの おばさんが 弟の 宿題を 手伝って（　）。母は おばさんに お礼を 言いました。",
+    "options": [
+      "くれました",
+      "もらいました",
+      "さしあげました",
+      "いただきました"
+    ],
+    "answer": 0,
+    "full": "となりの おばさんが 弟の 宿題を 手伝って くれました。母は おばさんに お礼を 言いました。",
+    "tr": {
+      "zh": "隔壁的阿姨帮我弟弟做了作业。妈妈向阿姨道了谢。",
+      "en": "The lady next door helped my little brother with his homework. My mother thanked her."
+    },
+    "why": {
+      "zh": "弟弟是我方（うち），外人（おばさん）为我方做事，给予方用「が」，用「〜てくれる」。",
+      "en": "My brother is on my side, and an outsider (おばさん, with が) helped him: an outsider doing something for my side is 「〜てくれる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「もらう」的主语是受益人，「おばさんが〜もらいました」变成阿姨受益了。",
+        "en": "「もらう」 takes the beneficiary as subject; 「おばさんが〜もらいました」 makes the lady the one helped."
+      },
+      {
+        "zh": "「さしあげる」是我方为长辈做，可这里是阿姨帮弟弟，方向反了。",
+        "en": "「さしあげる」 is my side giving to a superior; here the lady helped my brother — the wrong way round."
+      },
+      {
+        "zh": "「いただく」的主语也是受益人，和「おばさんが」不合。",
+        "en": "「いただく」 also takes the beneficiary as subject, so it doesn't fit 「おばさんが」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l20-016",
+    "type": "narabe",
+    "refs": [
+      "lesson20#5",
+      "lesson20#3"
+    ],
+    "difficulty": 2,
+    "stem": "この 写真は 父の 友達が [_] [_] [★] [_]。",
+    "options": [
+      "ものです",
+      "撮って",
+      "結婚式で",
+      "くれた"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "この 写真は 父の 友達が 結婚式で 撮って くれた ものです。",
+    "tr": {
+      "zh": "这张照片是爸爸的朋友在婚礼上帮我们拍的。",
+      "en": "This photo is one my father's friend took for us at the wedding."
+    },
+    "why": {
+      "zh": "父亲是我方，外人（父の友達）为我方做事用「〜てくれる」：結婚式で 撮って くれた ものです。★ 在第三格，是「くれた」。",
+      "en": "Father is on my side, so his friend doing something for us is 「〜てくれる」: 結婚式で 撮って くれた ものです. The ★ is the third slot: 「くれた」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

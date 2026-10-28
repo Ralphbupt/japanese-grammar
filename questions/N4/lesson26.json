@@ -1,0 +1,347 @@
+[
+  {
+    "id": "n4-l26-001",
+    "type": "bunpou",
+    "refs": ["lesson26#1"],
+    "difficulty": 1,
+    "stem": "A「田中さんは 10年も アメリカに 住んで いたそうですよ。」\nB「そうですか。道理で 英語が 上手な（　）。」",
+    "options": ["わけだ", "わけがない", "わけではない", "ものだ"],
+    "answer": 0,
+    "full": "A「田中さんは 10年も アメリカに 住んで いたそうですよ。」 B「そうですか。道理で 英語が 上手な わけだ。」",
+    "tr": {
+      "zh": "A：听说田中在美国住了足足 10 年。 B：是吗。难怪英语那么好。",
+      "en": "A: I hear Tanaka lived in America for ten whole years. B: Really? No wonder his English is so good."
+    },
+    "why": {
+      "zh": "B 听到原因（在美国住了 10 年）后恍然大悟，「道理で」（难怪）和「〜わけだ」是固定搭配。",
+      "en": "B has just heard the reason (ten years in America) and gets it — 「道理で」 (no wonder) pairs with 「〜わけだ」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「わけがない」是“不可能”，和“难怪”意思相反。", "en": "「わけがない」 means \"there's no way\" — the opposite of \"no wonder\"." },
+      { "zh": "「わけではない」是“并不是……”，否定了英语好，和「道理で」对不上。", "en": "「わけではない」 (it's not that…) denies his English is good, which clashes with 「道理で」." },
+      { "zh": "「ものだ」是一般性的感慨，不表示“找到原因后明白了”，不和「道理で」搭配。", "en": "「ものだ」 is a general remark with no cause behind it; it doesn't go with 「道理で」." }
+    ]
+  },
+  {
+    "id": "n4-l26-002",
+    "type": "bunpou",
+    "refs": ["lesson26#1"],
+    "difficulty": 2,
+    "stem": "会議は 3時から 5時までです。つまり、2時間 会議を する（　）ね。",
+    "options": ["わけです", "ものです", "わけが ありません", "わけには いきません"],
+    "answer": 0,
+    "full": "会議は 3時から 5時までです。つまり、2時間 会議を する わけですね。",
+    "tr": {
+      "zh": "会议从 3 点开到 5 点。也就是说，要开两个小时的会啊。",
+      "en": "The meeting is from three to five. In other words, we'll be meeting for two hours."
+    },
+    "why": {
+      "zh": "「つまり」（也就是说）把前面的事实换个说法，这是「〜わけだ」的“也就是说”用法。",
+      "en": "「つまり」 (in other words) restates the fact before it — the \"that means\" use of 「〜わけだ」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「ものです」是感慨或讲常理，不能用来换个说法总结前面的事实。", "en": "「ものです」 expresses a feeling or a norm; it can't restate the facts before it." },
+      { "zh": "「わけがありません」是“不可能开两小时会”，和 3 点到 5 点的事实矛盾。", "en": "「わけがありません」 says it's impossible, contradicting \"three to five\"." },
+      { "zh": "「わけにはいきません」是“（因为情理）不能开会”，和前文接不上。", "en": "「わけにはいきません」 means \"can't (in good conscience) hold it\" — it doesn't follow from the times." }
+    ]
+  },
+  {
+    "id": "n4-l26-003",
+    "type": "narabe",
+    "refs": ["lesson26#1"],
+    "difficulty": 2,
+    "stem": "彼女は 毎日 3時間も [_] [_] [★] [_]。",
+    "options": ["練習して いる", "から", "上手な", "わけだ"],
+    "order": [0, 1, 2, 3],
+    "full": "彼女は 毎日 3時間も 練習して いる から 上手な わけだ。",
+    "tr": {
+      "zh": "她每天练习足足 3 个小时，所以才这么厉害。",
+      "en": "She practices three whole hours every day — no wonder she's so good."
+    },
+    "why": {
+      "zh": "原因「練習しているから」在前，结论「上手なわけだ」在后；な形容词接「わけ」要用「上手な」。★ 在第三格，是「上手な」。",
+      "en": "The cause 「練習しているから」 comes first, then the conclusion 「上手なわけだ」; a な-adjective takes 「な」 before 「わけ」. The ★ is the third slot: 「上手な」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n4-l26-004",
+    "type": "bunpou",
+    "refs": ["lesson26#2"],
+    "difficulty": 1,
+    "stem": "A「田中さんが 約束を 忘れたらしいですよ。」\nB「えっ、あの まじめな 田中さんが 忘れる（　）よ。きっと 何か 理由が あるんですよ。」",
+    "options": ["わけが ない", "わけだ", "わけには いかない", "ものだ"],
+    "answer": 0,
+    "full": "A「田中さんが 約束を 忘れたらしいですよ。」 B「えっ、あの まじめな 田中さんが 忘れる わけが ないよ。きっと 何か 理由が あるんですよ。」",
+    "tr": {
+      "zh": "A：听说田中忘了约定。 B：啊？那么认真的田中不可能忘的。肯定有什么原因。",
+      "en": "A: Apparently Tanaka forgot the appointment. B: What? Someone as conscientious as Tanaka? There's no way he'd forget. There must be some reason."
+    },
+    "why": {
+      "zh": "B 用「あのまじめな田中さんが」强调，并说“肯定有原因”，是在强烈否定这种可能——「〜わけがない」（不可能）。",
+      "en": "B stresses how conscientious Tanaka is and says there must be a reason — a strong denial: 「〜わけがない」 (there's no way)."
+    },
+    "wrong": [
+      null,
+      { "zh": "「わけだ」是“难怪会忘”，等于接受了这件事，和后面“肯定有原因”矛盾。", "en": "「わけだ」 (no wonder he forgot) accepts it, contradicting \"there must be a reason\"." },
+      { "zh": "「わけにはいかない」是“（出于情理）不能忘”，说的是义务，不是判断可能性。", "en": "「わけにはいかない」 is about obligation (he mustn't forget), not about whether it's possible." },
+      { "zh": "「ものだ」是“人总是会忘的”这类常理感慨，和“那么认真的人”对不上。", "en": "「ものだ」 would say forgetting is just what people do — it clashes with \"so conscientious\"." }
+    ]
+  },
+  {
+    "id": "n4-l26-005",
+    "type": "bunpou",
+    "refs": ["lesson26#2"],
+    "difficulty": 2,
+    "stem": "肉が 嫌いな（　）が、今日は 野菜が 食べたい 気分です。",
+    "options": ["わけでは ない", "わけが ない", "わけだ", "ものだ"],
+    "answer": 0,
+    "full": "肉が 嫌いな わけでは ないが、今日は 野菜が 食べたい 気分です。",
+    "tr": {
+      "zh": "并不是讨厌吃肉，只是今天想吃蔬菜。",
+      "en": "It's not that I dislike meat — I just feel like vegetables today."
+    },
+    "why": {
+      "zh": "后半句用「が」转折，说明前半句在澄清“并不是讨厌肉”，用部分否定「〜わけではない」。",
+      "en": "The 「が」 (but) shows the first half is a clarification — \"it's not that I dislike meat\": 「〜わけではない」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「わけがない」是“不可能讨厌”，语气过强，和“只是今天想吃蔬菜”的转折接不上。", "en": "「わけがない」 (I couldn't possibly dislike it) is far too strong and doesn't lead into \"but today vegetables\"." },
+      { "zh": "「わけだ」是“难怪讨厌肉”，前面没有任何原因，说不通。", "en": "「わけだ」 (no wonder I dislike meat) has no reason before it to draw on." },
+      { "zh": "「ものだ」是感慨或常理，“讨厌肉是理所当然的”不合句意。", "en": "「ものだ」 would make disliking meat a general truth — not what the sentence means." }
+    ]
+  },
+  {
+    "id": "n4-l26-006",
+    "type": "bunpou",
+    "refs": ["lesson26#2"],
+    "difficulty": 1,
+    "stem": "まだ 仕事が たくさん 残って いるので、今日は 先に 帰る（　）。",
+    "options": ["わけには いかない", "わけが ない", "わけでは ない", "わけだ"],
+    "answer": 0,
+    "full": "まだ 仕事が たくさん 残って いるので、今日は 先に 帰る わけには いかない。",
+    "tr": {
+      "zh": "还剩很多工作，所以今天不能先走。",
+      "en": "There's still a lot of work left, so I can't leave early today."
+    },
+    "why": {
+      "zh": "因为工作没做完，从情理上“不能先回去”——辞书形＋「わけにはいかない」。",
+      "en": "With work still left, leaving first isn't acceptable — dictionary form ＋ 「わけにはいかない」 (can't, given the situation)."
+    },
+    "wrong": [
+      null,
+      { "zh": "「わけがない」是判断“不可能”，用在说自己的决定上不自然，表达不了“情理上不能”。", "en": "「わけがない」 judges something impossible; it doesn't express \"I can't, under the circumstances\" about one's own choice." },
+      { "zh": "「わけではない」是“并不是要先回去”，和原因「仕事が残っているので」接不上。", "en": "「わけではない」 (it's not that I'm leaving early) doesn't follow from \"because work is left\"." },
+      { "zh": "「わけだ」是“所以就先回去了”，和“还有很多工作”矛盾。", "en": "「わけだ」 would mean \"so I'm leaving early\", contradicting all the work left." }
+    ]
+  },
+  {
+    "id": "n4-l26-007",
+    "type": "bunpou",
+    "refs": ["lesson26#2"],
+    "difficulty": 2,
+    "stem": "A「今夜 いっしょに 飲みに 行かない？」\nB「ごめん。明日は 大切な 試験だから、勉強し（　）んだ。」",
+    "options": ["ない わけには いかない", "ない わけでは ない", "ない わけだ", "ない ものだ"],
+    "answer": 0,
+    "full": "A「今夜 いっしょに 飲みに 行かない？」 B「ごめん。明日は 大切な 試験だから、勉強しない わけには いかないんだ。」",
+    "tr": {
+      "zh": "A：今晚一起去喝一杯吧？ B：抱歉。明天有重要的考试，不能不学习。",
+      "en": "A: Want to go for a drink tonight? B: Sorry. I've got an important exam tomorrow, so I have to study."
+    },
+    "why": {
+      "zh": "B 拒绝邀请，理由是明天考试“必须学习”。ない形＋「わけにはいかない」＝不能不做，也就是必须做。",
+      "en": "B turns the invitation down because studying is a must. ない-form ＋ 「わけにはいかない」 = can't not do it, i.e. must."
+    },
+    "wrong": [
+      null,
+      { "zh": "「ないわけではない」是“并不是不学习”，当不了拒绝的理由。", "en": "「ないわけではない」 (it's not that I won't study) is no reason to turn down a drink." },
+      { "zh": "「ないわけだ」是“难怪不学习”，和“明天考试”的因果相反。", "en": "「ないわけだ」 (so that's why I won't study) reverses the logic of having an exam." },
+      { "zh": "「ないものだ」是“（一般来说）不应该学习”，意思完全不对。", "en": "「ないものだ」 would say one shouldn't study — the opposite of the point." }
+    ]
+  },
+  {
+    "id": "n4-l26-008",
+    "type": "narabe",
+    "refs": ["lesson26#2"],
+    "difficulty": 2,
+    "stem": "友だちと 約束したので、この 秘密は [_] [_] [★] [_]。",
+    "options": ["誰にも", "話す", "わけには", "いかない"],
+    "order": [0, 1, 2, 3],
+    "full": "友だちと 約束したので、この 秘密は 誰にも 話す わけには いかない。",
+    "tr": {
+      "zh": "我和朋友约好了，所以这个秘密不能告诉任何人。",
+      "en": "I promised my friend, so I can't tell anyone this secret."
+    },
+    "why": {
+      "zh": "「誰にも」（对谁都）＋「話す」（辞书形）＋「わけにはいかない」（不能）。★ 在第三格，是「わけには」。",
+      "en": "「誰にも」 (to anyone) ＋ 「話す」 (dictionary form) ＋ 「わけにはいかない」 (can't). The ★ is the third slot: 「わけには」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n4-l26-009",
+    "type": "bunpou",
+    "refs": ["lesson26#3"],
+    "difficulty": 1,
+    "stem": "子どもの ころは、よく この 川で 友だちと 泳いだ（　）。",
+    "options": ["ものだ", "わけだ", "ばかりだ", "ところだ"],
+    "answer": 0,
+    "full": "子どもの ころは、よく この 川で 友だちと 泳いだ ものだ。",
+    "tr": {
+      "zh": "小时候常常和朋友在这条河里游泳。",
+      "en": "When I was a kid, I often used to swim in this river with my friends."
+    },
+    "why": {
+      "zh": "「子どものころ」「よく」加过去形，是怀念往事的「〜たものだ」（以前常常……）。",
+      "en": "「子どものころ」 and 「よく」 with the past tense: the nostalgic 「〜たものだ」 (used to…)."
+    },
+    "wrong": [
+      null,
+      { "zh": "「わけだ」需要前面有原因或可推出结论的事实，这里只是回忆，没有推理。", "en": "「わけだ」 needs a cause or premise to conclude from; this is just a memory." },
+      { "zh": "「たばかりだ」是“刚刚游过”，和「子どものころ」矛盾。", "en": "「たばかりだ」 (just swam) clashes with 「子どものころ」 (as a child)." },
+      { "zh": "「たところだ」是“刚游完”，同样和很久以前的「子どものころ」对不上。", "en": "「たところだ」 (have just swum) doesn't fit something long ago either." }
+    ]
+  },
+  {
+    "id": "n4-l26-010",
+    "type": "bunpou",
+    "refs": ["lesson26#3"],
+    "difficulty": 2,
+    "stem": "人が 話して いる ときは、最後まで 聞く（　）。途中で 自分の 話を 始めては いけませんよ。",
+    "options": ["ものだ", "ものではない", "わけだ", "わけが ない"],
+    "answer": 0,
+    "full": "人が 話して いる ときは、最後まで 聞く ものだ。途中で 自分の 話を 始めては いけませんよ。",
+    "tr": {
+      "zh": "别人说话的时候，应该听到最后。不可以中途开始讲自己的事哦。",
+      "en": "When someone is talking, you should listen to the end. Don't start talking about yourself halfway through."
+    },
+    "why": {
+      "zh": "后一句是规矩（不可以中途插话），前一句讲做人的常理“应该听到最后”——「〜ものだ」的“应该”用法。",
+      "en": "The second sentence states a rule, so the first gives the norm \"one should listen to the end\" — the \"should\" use of 「〜ものだ」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「ものではない」是“不应该听到最后”，和后一句的规矩矛盾。", "en": "「ものではない」 (one shouldn't listen to the end) contradicts the rule that follows." },
+      { "zh": "「わけだ」是推理结论，前面没有可推出的原因，也表达不了“应该”。", "en": "「わけだ」 draws a conclusion from a cause; there's none here, and it can't mean \"should\"." },
+      { "zh": "「わけがない」是“不可能听到最后”，和后面的劝告接不上。", "en": "「わけがない」 (there's no way they'd listen to the end) doesn't lead into the advice." }
+    ]
+  },
+  {
+    "id": "n4-l26-011",
+    "type": "narabe",
+    "refs": ["lesson26#3"],
+    "difficulty": 2,
+    "stem": "もう 12月か。[_] [_] [★] [_]。",
+    "options": ["時間が", "経つのは", "早い", "ものだ"],
+    "order": [0, 1, 2, 3],
+    "full": "もう 12月か。時間が 経つのは 早い ものだ。",
+    "tr": {
+      "zh": "已经 12 月了啊。时间过得真快。",
+      "en": "December already? Time really flies."
+    },
+    "why": {
+      "zh": "「時間が経つの」是主题（时间的流逝），「は」后接「早いものだ」表示感慨。★ 在第三格，是「早い」。",
+      "en": "「時間が経つの」 (time passing) is the topic, followed by 「早いものだ」, an exclamation. The ★ is the third slot: 「早い」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n4-l26-012",
+    "type": "bunpou",
+    "refs": ["lesson26#4", "lesson26#3"],
+    "difficulty": 2,
+    "stem": "毎年の ことですが、東京の 夏は 本当に 暑い（　）ね。",
+    "options": ["ものです", "わけです", "はずです", "ところです"],
+    "answer": 0,
+    "full": "毎年の ことですが、東京の 夏は 本当に 暑い ものですね。",
+    "tr": {
+      "zh": "虽说每年都这样，东京的夏天真是热啊。",
+      "en": "It's the same every year, but Tokyo summers really are hot."
+    },
+    "why": {
+      "zh": "这里没有找到原因的推理，只是对“东京夏天就是热”的感慨，用「〜ものだ」。",
+      "en": "There's no cause being figured out — just a remark that Tokyo summers are hot: 「〜ものだ」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「わけです」要有原因或前提（比如空调坏了），这里没有，只是感慨。", "en": "「わけです」 needs a cause (like a broken air conditioner); there is none here." },
+      { "zh": "「はずです」是根据道理推测“应该会热”，而说话人正在亲身感受，不是推测。", "en": "「はずです」 predicts it ought to be hot, but the speaker is feeling the heat, not guessing." },
+      { "zh": "「ところです」表示动作的时间阶段，不接形容词「暑い」。", "en": "「ところです」 marks the stage of an action; it doesn't follow an adjective like 「暑い」." }
+    ]
+  },
+  {
+    "id": "n4-l26-013",
+    "type": "bunpou",
+    "refs": ["lesson26#4", "lesson26#1"],
+    "difficulty": 2,
+    "stem": "A「山田さん、最近 毎晩 夜中の 2時まで 仕事を して いるそうですよ。」\nB「それで いつも 眠そうな（　）。」",
+    "options": ["わけですね", "ものですね", "わけが ないですね", "わけでは ないですね"],
+    "answer": 0,
+    "full": "A「山田さん、最近 毎晩 夜中の 2時まで 仕事を して いるそうですよ。」 B「それで いつも 眠そうな わけですね。」",
+    "tr": {
+      "zh": "A：听说山田最近每天晚上工作到半夜两点。 B：所以他总是一副困的样子啊。",
+      "en": "A: I hear Yamada's been working until 2 a.m. every night lately. B: So that's why he always looks sleepy."
+    },
+    "why": {
+      "zh": "B 用「それで」接上 A 给出的原因，明白了结果——找到原因后的恍然大悟用「〜わけだ」。",
+      "en": "B links A's reason with 「それで」 and sees the result — realizing why: 「〜わけだ」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「ものですね」是一般感慨，不表示因果，和「それで」（因此）对不上。", "en": "「ものですね」 is a general remark with no cause-and-effect; it doesn't fit 「それで」." },
+      { "zh": "「わけがない」是“不可能困”，和 A 给的原因矛盾。", "en": "「わけがない」 (he couldn't be sleepy) contradicts A's explanation." },
+      { "zh": "「わけではない」是“并不是看起来困”，否定了 B 自己说的「いつも」。", "en": "「わけではない」 (it's not that he looks sleepy) undercuts B's own 「いつも」 (always)." }
+    ]
+  },
+  {
+    "id": "n4-l26-014",
+    "type": "bunpou",
+    "refs": ["lesson26#5"],
+    "difficulty": 1,
+    "stem": "隣の 部屋で 誰かが 歌って いる（　）が 聞こえる。",
+    "options": ["の", "こと", "わけ", "もの"],
+    "answer": 0,
+    "full": "隣の 部屋で 誰かが 歌って いる のが 聞こえる。",
+    "tr": {
+      "zh": "听得见隔壁房间有人在唱歌。",
+      "en": "I can hear someone singing in the next room."
+    },
+    "why": {
+      "zh": "「聞こえる」「見える」这类感官动词，听到、看到的具体事情用「の」名词化。",
+      "en": "With verbs of perception like 「聞こえる」, what you actually hear or see is nominalized with 「の」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「こと」用于抽象的事（规则、能力、经验），不能作为“听得见”的对象。", "en": "「こと」 is for abstract things (rules, abilities, experiences); it can't be what you hear." },
+      { "zh": "「わけ」表示推理结论，不能当“听见”的对象。", "en": "「わけ」 marks a conclusion; it can't be the thing heard." },
+      { "zh": "「もの」用于感慨或常理，不能把“有人在唱歌”变成听觉对象。", "en": "「もの」 is for remarks and norms; it doesn't turn \"someone is singing\" into something heard." }
+    ]
+  },
+  {
+    "id": "n4-l26-015",
+    "type": "bunpou",
+    "refs": ["lesson26#5"],
+    "difficulty": 1,
+    "stem": "A「もう 晩ご飯を 食べましたか。」\nB「いいえ、今から 食べる（　）です。」",
+    "options": ["ところ", "はず", "わけ", "もの"],
+    "answer": 0,
+    "full": "A「もう 晩ご飯を 食べましたか。」 B「いいえ、今から 食べる ところです。」",
+    "tr": {
+      "zh": "A：已经吃过晚饭了吗？ B：没有，现在正要吃。",
+      "en": "A: Have you had dinner yet? B: No, I'm just about to eat."
+    },
+    "why": {
+      "zh": "「今から」加辞书形，说的是动作处在“正要开始”的阶段——「〜ところだ」。",
+      "en": "「今から」 with the dictionary form puts the action at the \"about to\" stage — 「〜ところだ」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「はず」是根据道理推测，说自己马上要做的事不用推测。", "en": "「はず」 is an inference; you don't infer what you yourself are about to do." },
+      { "zh": "「わけ」是从原因得出结论，这里没有原因，也不是在回答“为什么”。", "en": "「わけ」 concludes from a cause; there's none here, and B isn't explaining why." },
+      { "zh": "「もの」是感慨或常理，“现在正要吃”不是一般道理。", "en": "「もの」 states a feeling or norm; \"I'm about to eat\" is neither." }
+    ]
+  }
+]

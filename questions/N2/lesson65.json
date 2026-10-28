@@ -1,0 +1,350 @@
+[
+  {
+    "id": "n2-l65-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson65#1"
+    ],
+    "difficulty": 2,
+    "stem": "何度メールを送っても返事が来ないということは、彼はこの話に興味がない（　）。",
+    "options": [
+      "ということだ",
+      "というものだ",
+      "わけにはいかない",
+      "ものか"
+    ],
+    "answer": 0,
+    "full": "何度メールを送っても返事が来ないということは、彼はこの話に興味がないということだ。",
+    "tr": {
+      "zh": "发了好几次邮件都没有回音，也就是说他对这件事没兴趣。",
+      "en": "He hasn't replied however many emails I send — which means he isn't interested in this."
+    },
+    "why": {
+      "zh": "前半句「〜ということは」提出事实，后半句给出结论“也就是说……”，用「〜ということだ」（结论义）。",
+      "en": "「〜ということは」 states the fact and the second half draws the conclusion — 「〜ということだ」 (\"that means…\")."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「というものだ」表示“这才叫……/本来就是……”的本质论断，不用于由事实推出结论。",
+        "en": "「というものだ」 states what something essentially is; it doesn't draw a conclusion from a fact."
+      },
+      {
+        "zh": "「わけにはいかない」是“不能……”，“他不能没兴趣”说不通。",
+        "en": "「わけにはいかない」 means \"can't (do)\"; \"he can't be uninterested\" makes no sense."
+      },
+      {
+        "zh": "「ものか」是“哪能……”的强烈否定，用在这里意思相反且语气不对。",
+        "en": "「ものか」 is an emphatic \"as if…!\" — wrong meaning and tone here."
+      }
+    ]
+  },
+  {
+    "id": "n2-l65-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson65#1"
+    ],
+    "difficulty": 1,
+    "stem": "天気予報によると、明日は関東地方で大雨になる（　）。",
+    "options": [
+      "ということだ",
+      "ところだ",
+      "ものだ",
+      "べきだ"
+    ],
+    "answer": 0,
+    "full": "天気予報によると、明日は関東地方で大雨になるということだ。",
+    "tr": {
+      "zh": "据天气预报说，明天关东地区会下大雨。",
+      "en": "According to the weather forecast, there will be heavy rain in the Kanto region tomorrow."
+    },
+    "why": {
+      "zh": "「天気予報によると」是信息来源，后面转述听来的内容，用传闻义的「〜ということだ」。",
+      "en": "「天気予報によると」 names a source, so what follows is reported information — hearsay 「〜ということだ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ところだ」是“正要……”，和「明日」以及「によると」都对不上。",
+        "en": "「ところだ」 means \"just about to\" — it clashes with 「明日」 and with a quoted source."
+      },
+      {
+        "zh": "「ものだ」表示一般规律或感慨，不能和「〜によると」呼应转述消息。",
+        "en": "「ものだ」 states a general truth or feeling; it can't report what a source says."
+      },
+      {
+        "zh": "「べきだ」是“应该”，“应该下大雨”说不通。",
+        "en": "「べきだ」 means \"should\"; \"it should rain heavily\" makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n2-l65-003",
+    "type": "narabe",
+    "refs": [
+      "lesson65#1"
+    ],
+    "difficulty": 2,
+    "stem": "試験に合格した [_] [★] [_] [_] ということだ。",
+    "options": [
+      "ある",
+      "実力が",
+      "十分な",
+      "ということは"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "試験に合格したということは十分な実力があるということだ。",
+    "tr": {
+      "zh": "考试合格了，也就是说有足够的实力。",
+      "en": "Passing the exam means you have enough ability."
+    },
+    "why": {
+      "zh": "試験に合格した＋ということは（……这件事）＋十分な＋実力が＋ある＋ということだ（也就是说）。★ 在第二格，是「十分な」。",
+      "en": "試験に合格した ＋ ということは ＋ 十分な ＋ 実力が ＋ ある ＋ ということだ. The ★ is the second slot: 「十分な」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l65-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson65#2"
+    ],
+    "difficulty": 2,
+    "stem": "毎朝の満員電車は本当につらい。何とかもう少し楽に通勤でき（　）。",
+    "options": [
+      "ないものか",
+      "ないわけがない",
+      "ないに相違ない",
+      "ないわけにはいかない"
+    ],
+    "answer": 0,
+    "full": "毎朝の満員電車は本当につらい。何とかもう少し楽に通勤できないものか。",
+    "tr": {
+      "zh": "每天早上的满员电车真难受。能不能想办法让通勤轻松一点呢。",
+      "en": "The packed train every morning is really hard. Isn't there some way I could commute a bit more easily?"
+    },
+    "why": {
+      "zh": "「本当につらい」＋「何とか」表示对难以实现之事的强烈愿望，用「〜ないものか」（能不能……呢）。",
+      "en": "\"It's really hard\" plus 「何とか」 (somehow) signals a wish for something difficult — 「〜ないものか」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ないわけがない」是“不可能不能轻松通勤”＝一定能，和“真难受”矛盾，也和「何とか」不搭。",
+        "en": "「ないわけがない」 asserts it's surely possible — contradicting \"it's really hard\" and not fitting 「何とか」."
+      },
+      {
+        "zh": "「ないに相違ない」是“一定不能”，是书面断定，和「何とか」表达的愿望不符。",
+        "en": "「ないに相違ない」 is a formal certainty that it can't be done; 「何とか」 calls for a wish."
+      },
+      {
+        "zh": "「ないわけにはいかない」是“不能不……”的义务，“不能不轻松通勤”说不通。",
+        "en": "「ないわけにはいかない」 expresses obligation; \"I must commute easily\" makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n2-l65-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson65#2"
+    ],
+    "difficulty": 2,
+    "stem": "この病気には、まだ有効な治療法がない。早く効く薬が開発され（　）と、多くの患者が願っている。",
+    "options": [
+      "ないものか",
+      "ないものだ",
+      "ないわけだ",
+      "ないはずだ"
+    ],
+    "answer": 0,
+    "full": "この病気には、まだ有効な治療法がない。早く効く薬が開発されないものかと、多くの患者が願っている。",
+    "tr": {
+      "zh": "这种病还没有有效的治疗方法。很多患者都盼望着：能不能早点研发出有效的药呢。",
+      "en": "There is still no effective treatment for this disease. Many patients are hoping that an effective drug might somehow be developed soon."
+    },
+    "why": {
+      "zh": "后面是「と願っている」（盼望），引用的内容应是愿望，用表示期盼的「〜ないものか」。",
+      "en": "The quote is followed by 「と願っている」 (hope), so it must be a wish — 「〜ないものか」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ないものだ」是“（一般来说）是不会……的”，作为“盼望”的内容不成立。",
+        "en": "「ないものだ」 states \"that's just how it is — it doesn't happen\"; that isn't something one hopes for."
+      },
+      {
+        "zh": "「ないわけだ」是“难怪不……/所以不……”的结论，不能作为愿望的内容。",
+        "en": "「ないわけだ」 draws a conclusion (\"so that's why it isn't\"), not a wish."
+      },
+      {
+        "zh": "「ないはずだ」是“应该不会……”的推测，和「願っている」对不上。",
+        "en": "「ないはずだ」 is an expectation that it won't happen — it can't be what patients hope for."
+      }
+    ]
+  },
+  {
+    "id": "n2-l65-006",
+    "type": "narabe",
+    "refs": [
+      "lesson65#2"
+    ],
+    "difficulty": 2,
+    "stem": "何とか [_] [_] [_] [★] と、毎日考えている。",
+    "options": [
+      "改善",
+      "この状況を",
+      "ものか",
+      "できない"
+    ],
+    "order": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "full": "何とかこの状況を改善できないものかと、毎日考えている。",
+    "tr": {
+      "zh": "每天都在想：能不能设法改善这个状况呢。",
+      "en": "Every day I think about whether there's some way to improve this situation."
+    },
+    "why": {
+      "zh": "この状況を＋改善＋できない（可能形否定）＋ものか（能不能……呢）。★ 在第四格，是「ものか」。",
+      "en": "この状況を ＋ 改善 ＋ できない ＋ ものか (isn't there a way…). The ★ is the fourth slot: 「ものか」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l65-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson65#3"
+    ],
+    "difficulty": 2,
+    "stem": "子供が自分で決めたことでも、親（　）、危険な仕事には就いてほしくない。",
+    "options": [
+      "としては",
+      "にしては",
+      "に反して",
+      "をめぐって"
+    ],
+    "answer": 0,
+    "full": "子供が自分で決めたことでも、親としては、危険な仕事には就いてほしくない。",
+    "tr": {
+      "zh": "即使是孩子自己决定的事，作为父母来说，也不希望他从事危险的工作。",
+      "en": "Even if it's my child's own decision, as a parent I'd rather they didn't take a dangerous job."
+    },
+    "why": {
+      "zh": "“不希望孩子做危险工作”是站在父母的立场表达的看法，用表示立场的「〜としては」。",
+      "en": "Not wanting one's child in a dangerous job is a view from the parent's standpoint — 「〜としては」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「にしては」是“就……而言（出乎意料）”，表示与预期不符，这里没有意外的意思。",
+        "en": "「にしては」 means \"for a…, (surprisingly)\"; nothing here is unexpected."
+      },
+      {
+        "zh": "「に反して」是“与……相反”，“与父母相反”说不通。",
+        "en": "「に反して」 means \"contrary to\"; \"contrary to a parent\" makes no sense."
+      },
+      {
+        "zh": "「をめぐって」是“围绕……（争论）”，不表示说话人的立场。",
+        "en": "「をめぐって」 means \"over (a dispute)\"; it doesn't mark the speaker's standpoint."
+      }
+    ]
+  },
+  {
+    "id": "n2-l65-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson65#3"
+    ],
+    "difficulty": 2,
+    "stem": "A「この案について、ご意見をお聞かせください。」\nB「私（　）、この案には賛成できません。」",
+    "options": [
+      "としては",
+      "にしては",
+      "につれて",
+      "に応じて"
+    ],
+    "answer": 0,
+    "full": "A「この案について、ご意見をお聞かせください。」 B「私としては、この案には賛成できません。」",
+    "tr": {
+      "zh": "A：关于这个方案，请谈谈您的意见。 B：就我个人而言，我不能赞成这个方案。",
+      "en": "A: Please tell us your opinion on this proposal. B: Speaking for myself, I can't support it."
+    },
+    "why": {
+      "zh": "被问到意见，B 从自己的立场表态，「私としては」＝“就我而言”。",
+      "en": "Asked for an opinion, B speaks from their own position — 「私としては」 (\"as for me\")."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「にしては」表示“与（身份）不符，出乎意料”，“对我来说意外地不能赞成”说不通。",
+        "en": "「にしては」 means \"surprisingly, for…\"; that doesn't fit giving one's opinion."
+      },
+      {
+        "zh": "「につれて」是“随着……变化”，前面要接表示变化的词，「私」不是变化。",
+        "en": "「につれて」 means \"as… changes\" and needs a changing quantity, not 「私」."
+      },
+      {
+        "zh": "「に応じて」是“根据……相应地”，“根据我来不赞成”说不通。",
+        "en": "「に応じて」 means \"in response to/according to\"; \"according to me, can't support\" is wrong here."
+      }
+    ]
+  },
+  {
+    "id": "n2-l65-009",
+    "type": "narabe",
+    "refs": [
+      "lesson65#3"
+    ],
+    "difficulty": 2,
+    "stem": "保護者からの苦情が相次いでおり、この問題は [_] [_] [★] [_] 。",
+    "options": [
+      "おけない",
+      "放って",
+      "としても",
+      "学校側"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "保護者からの苦情が相次いでおり、この問題は学校側としても放っておけない。",
+    "tr": {
+      "zh": "家长的投诉接连不断，这个问题即便从校方的立场来说也不能放任不管。",
+      "en": "Complaints from parents keep coming in, so even from the school's side this problem can't be left alone."
+    },
+    "why": {
+      "zh": "学校側＋としても（即使从……立场也）＋放って＋おけない（不能放任不管）。★ 在第三格，是「放って」。",
+      "en": "学校側 ＋ としても (even from the side of) ＋ 放って ＋ おけない (can't leave alone). The ★ is the third slot: 「放って」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

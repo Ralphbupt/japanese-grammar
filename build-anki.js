@@ -11,6 +11,7 @@
 //   Back:  description, meaning prose, example sentences, link to jpnotes.dev
 
 const fs = require("fs");
+const { QUIZ_LINKS } = require("./build-quiz");
 const path = require("path");
 const crypto = require("crypto");
 const KuroshiroMod = require("kuroshiro");
@@ -84,6 +85,13 @@ function stripMd(text) {
     .trim();
 }
 
+// Markdown → HTML for the online cards' meaning (tables, bold, lists, links).
+// Lesson links become absolute so they work from /n5-cards/.
+function mdHtml(md) {
+  if (!md) return "";
+  return require("marked").marked.parse(md).replace(/href="\//g, 'href="https://jpnotes.dev/').trim();
+}
+
 function extractBilingual(text) {
   const zh = text.match(/^:::zh\s*\n([\s\S]*?)^:::\s*$/m);
   const en = text.match(/^:::en\s*\n([\s\S]*?)^:::\s*$/m);
@@ -109,7 +117,10 @@ function parseGrammarSections(md) {
       const headerLine = sub.split("\n")[0];
       if (/^(接[续続]|Conjugation)/i.test(headerLine)) continue;
       if (/例句|例文|Example/i.test(headerLine)) continue;
-      const text = extractBilingual(sub.split("\n").slice(1).join("\n"))[lang];
+      // Every :::zh / :::en block of the subsection — examples often sit in
+      // ①②③ sub-subsections after an introductory paragraph.
+      const body = sub.split("\n").slice(1).join("\n");
+      const text = [...body.matchAll(new RegExp(`^:::${lang}\\s*\\n([\\s\\S]*?)^:::\\s*$`, "gm"))].map((m) => m[1].trim()).join("\n\n");
       if (!text) continue;
       let cur = null;
       for (const raw of text.split("\n")) {
@@ -200,7 +211,7 @@ function parseGrammarSections(md) {
       const descEnDash = enHeading.match(/\s[—–-]\s*(.+)$/);
       if (descEnParen) descriptionEn = descEnParen[1].trim();
       else if (descEnDash) descriptionEn = descEnDash[1].trim();
-      current = { term, description, descriptionEn };
+      current = { term, description, descriptionEn, heading: headingText };
       continue;
     }
     if (line.startsWith("## ") && current) {
@@ -268,7 +279,9 @@ function renderExamples(items, lang, withAudio) {
 function parseExampleLines(text) {
   const items = [];
   if (!text) return items;
-  for (const line of stripMd(text).split("\n")) {
+  // Bold (**…**) marks the grammar in an example; keep it as private-use
+  // markers through stripMd so buildExamples can make a fill-in-the-blank.
+  for (const line of stripMd(text.replace(/\*\*([^*]+)\*\*/g, "\uE000$1\uE001")).split("\n")) {
     if (!line.trim()) continue;
     const parsed = parseExampleLine(line.trim());
     if (parsed) items.push(parsed);
@@ -282,6 +295,7 @@ function parseExampleLines(text) {
 async function buildExamples(textZh, textEn) {
   const items = parseExampleLines(textZh);
   const enItems = parseExampleLines(textEn || "");
+  for (const it of [...items, ...enItems]) { it.marked = it.jp; it.jp = it.jp.replace(/[\uE000\uE001]/g, ""); }
   if (items.length === 0 && enItems.length) {
     // zh-less section (rare): base the cards on the en block instead.
     for (const it of enItems) items.push({ jp: it.jp, zh: null, en: it.zh });
@@ -293,6 +307,17 @@ async function buildExamples(textZh, textEn) {
   }
   for (const it of items) {
     it.jpHtml = await withFurigana(it.jp);
+    // The sentence with its grammar wrapped in <b class="cl"> — the online
+    // fill-in-the-blank card hides those parts.
+    if (it.marked && it.marked.includes("\uE000")) {
+      let html = "";
+      for (const [i, part] of it.marked.split(/[\uE000\uE001]/).entries()) {
+        if (!part) continue;
+        const h = await withFurigana(part);
+        html += i % 2 ? `<b class="cl">${h}</b>` : h;
+      }
+      it.clozeHtml = html;
+    }
   }
   return { items };
 }
@@ -343,6 +368,7 @@ async function main() {
   // Card cache for the Python .apkg pass — avoids re-parsing markdown
   // and re-running furigana from a separate language runtime.
   const cardCache = {};
+  const onlineCards = {};
 
   // Example text → pre-generated TTS id. dist/.audio-requests.json is
   // rewritten by build.js on every run, so it always matches current lesson
@@ -383,6 +409,7 @@ async function main() {
 
     let count = 0;
     cardCache[level] = { zh: [], en: [] };
+    onlineCards[level] = [];
     for (const f of files) {
       const md = fs.readFileSync(path.join(dir, f), "utf-8");
       const lessonMatch = f.match(/^lesson(\d+)/);
@@ -406,14 +433,42 @@ async function main() {
         // Filter out non-grammar cards:
         // 1. Must have examples (section overviews and summaries don't)
         // 2. Must not be a generic section heading (練習, 総結, etc.)
-        const NOISE = /基本用法|常见错误|总结|総結|対比|对比|知識点|练习|練習|今日|辨析|详解|概论|入门|変形|动词分类|分类|副词化|用法总览|全部|总览|間違い|よくある|同一场景|切换规则/;
-        if (!s.examples && !s.examplesEn) continue;
-        if (NOISE.test(s.term)) continue;
-        const ex = await buildExamples(s.examples, s.examplesEn);
+        const NOISE = /常见错误|总结|総結|対比|对比|知識点|练习|練習|今日|辨析|详解|概论|入门|用法总览|全部|总览|間違い|よくある|同一场景|对照表|比较表|速览/;
+        // An "A vs B" point (は vs が 辨析) is a comparison, kept out of the
+        // Anki decks, but worth a card online — titled by the pair.
+        const vs = /\svs\s/.test(s.heading || "") && !/速览|比较表|全部|总对比/.test(s.heading);
+        if (vs) {
+          const vsTerm = s.heading.replace(/[（(].*$/, "").replace(/\s*(辨析|对照|対照|对比|比较)\s*$/, "").trim();
+          const ex0 = s.examples || s.examplesEn ? await buildExamples(s.examples, s.examplesEn) : { items: [] };
+          onlineCards[level].push({
+            id: `${lessonNum}:${vsTerm}`,
+            lesson: `lesson${lessonNum}`,
+            term: { zh: vsTerm, en: vsTerm },
+            desc: { zh: s.description && !/辨析|对照|对比/.test(s.description) ? s.description : "", en: s.descriptionEn || "" },
+            meaning: { zh: mdHtml(s.meaning), en: mdHtml(s.meaningEn || s.meaning) },
+            ex: ex0.items.slice(0, 3).map((e) => ({ ja: e.jpHtml, zh: e.zh || null, en: e.en || null, audio: null })),
+          });
+          continue;
+        }
+        if (NOISE.test(s.heading || s.term)) continue;
+        const ex = s.examples || s.examplesEn ? await buildExamples(s.examples, s.examplesEn) : { items: [] };
         // 3. Must have at least one REAL Japanese example after filtering —
         //    conjugation-table lessons whose "examples" are Chinese prose or
-        //    table cells produce none, and a card without examples is noise.
-        if (ex.items.length === 0) continue;
+        //    table cells produce none, and an Anki card without examples is
+        //    noise. Online cards still get them (meaning / rules only), so
+        //    every grammar point is there to study.
+        if (ex.items.length === 0) {
+          const descEn0 = s.descriptionEn || s.description;
+          onlineCards[level].push({
+            id: `${lessonNum}:${s.term}`,
+            lesson: `lesson${lessonNum}`,
+            term: { zh: s.displayTerm, en: s.displayTermEn },
+            desc: { zh: s.description || "", en: descEn0 || "" },
+            meaning: { zh: mdHtml(s.meaning), en: mdHtml(s.meaningEn || s.meaning) },
+            ex: [],
+          });
+          continue;
+        }
         for (const it of ex.items) {
           const id = audioMap.get(it.jp.replace(/\s+/g, ""));
           if (id && fs.existsSync(path.join(audioDir, `${id}.mp3`))) {
@@ -429,6 +484,7 @@ async function main() {
           zh: it.zh || null,
           en: it.en || null,
           audio: it.audio || null,
+          cloze: it.clozeHtml || null,
         }));
         const shared = { level, lessonNum, term: s.term, url: lessonUrl, examples: exampleData };
 
@@ -462,6 +518,19 @@ async function main() {
           backApkg: backEnApkg,
           displayTerm: s.displayTermEn,
           description: descEn || null,
+        });
+        // Online flashcards (/n5-cards/, site/quiz.js): the same card as data.
+        // The id is lesson + term so progress survives reordering.
+        onlineCards[level].push({
+          id: `${lessonNum}:${s.term}`,
+          lesson: `lesson${lessonNum}`,
+          term: { zh: s.displayTerm, en: s.displayTermEn },
+          desc: { zh: s.description || "", en: descEn || "" },
+          meaning: { zh: mdHtml(s.meaning), en: mdHtml(meaningEn) },
+          // ex: up to 3 shown on the back; cloze: every example whose grammar
+          // is marked, for the fill-in-the-blank card.
+          ex: exampleData.slice(0, 3).map((e) => ({ ja: e.jpHtml, zh: e.zh, en: e.en, audio: e.audio || null })),
+          cloze: exampleData.filter((e) => e.cloze).map((e) => ({ ja: e.cloze, zh: e.zh, en: e.en, audio: e.audio || null })),
         });
 
         count++;
@@ -599,7 +668,8 @@ body.lang-en div.lang-en, body.lang-en p.lang-en, body.lang-en li.lang-en, body.
   <p class="subtitle">
     <span class="lang-zh">JLPT N5 → N2 共 ${total} 张卡 · 中文版 / English 版两套独立卡组 · .apkg 版含 🔊 例句日语音频 + 挖空练习子卡组 · 支持 AnkiDroid、AnkiMobile · 每张语法点配含义、例句和跳回 jpnotes.dev 详细讲解的链接</span>
     <span class="lang-en">JLPT N5 → N2, ${total} cards · separate Chinese and English editions · .apkg includes 🔊 native-style TTS audio on examples + a cloze-practice subdeck · works with AnkiDroid &amp; AnkiMobile · each card has the grammar point, its meaning, examples, and a link back to the full lesson on jpnotes.dev</span>
-  </p>
+  </p>${QUIZ_LINKS ? `
+  <p class="online-cards" style="margin:1rem 0;padding:.7rem 1rem;border:1px solid #e94560;border-radius:8px;">🗂 <span class="lang-zh">不想装 Anki？<a href="/n5-cards/">在浏览器里背 N5 语法卡片</a>——同样的间隔复习，还有填空卡，进度存在本机。</span><span class="lang-en">Don't want to install Anki? <a href="/n5-cards/">Study the N5 grammar cards in your browser</a> — the same spaced repetition, plus fill-in cards, with progress kept on your device.</span></p>` : ""}
 
   <h2><span class="lang-zh">选择级别下载</span><span class="lang-en">Pick a level to download</span></h2>
   <div class="anki-grid">
@@ -744,6 +814,10 @@ function shareApkg(link, filename) {
   // Cache the front/back HTML for build-anki.py to reuse — avoids
   // running kuroshiro from two language runtimes and guarantees the
   // .apkg cards have identical content to the .txt cards.
+  fs.mkdirSync(path.join(__dirname, "dist", "quiz"), { recursive: true });
+  for (const [level, cards] of Object.entries(onlineCards)) {
+    if (cards.length) fs.writeFileSync(path.join(__dirname, "dist", "quiz", `${level.toLowerCase()}-cards.json`), JSON.stringify(cards), "utf-8");
+  }
   fs.writeFileSync(
     path.join(OUT_DIR, ".cards.json"),
     JSON.stringify(cardCache),

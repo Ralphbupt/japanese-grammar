@@ -1,0 +1,357 @@
+[
+  {
+    "id": "n4-dk-401",
+    "type": "info",
+    "difficulty": 2,
+    "intro": "リーさんは 来月から、市民センターの 料理教室に 一つ 入りたいです。月曜日から 金曜日まで、夕方 六時まで 仕事が あります。肉は 食べません。お金は 一回 3,000円までに したいです。",
+    "passage": "市民センター　料理教室の 案内\n| 教室 | 日・時間 | 作る 料理 | お金（一回） |\n| A | 毎週 火曜日 18:30〜20:30 | 魚の 和食 | 3,200円 |\n| B | 毎週 水曜日 19:00〜21:00 | 野菜の カレー | 2,500円 |\n| C | 毎週 土曜日 10:00〜12:00 | ぶた肉の 中華料理 | 2,800円 |\n| D | 毎週 金曜日 17:00〜19:00 | 野菜の パスタ | 2,000円 |\n＊申し込みは、教室が 始まる 前の 月の 20日までに、電話か センターの 受付で して ください。\n＊お金は 教室の 日に 受付で はらって ください。\n＊エプロンと タオルを 持って 来て ください。",
+    "tr": {
+      "zh": "市民中心·烹饪班介绍。A：每周二 18:30–20:30，鱼的日式料理，3,200日元。B：每周三 19:00–21:00，蔬菜咖喱，2,500日元。C：每周六 10:00–12:00，猪肉中华料理，2,800日元。D：每周五 17:00–19:00，蔬菜意面，2,000日元（均为每次的费用）。＊请在课程开始的前一个月20日之前，通过电话或在中心前台报名。＊费用请在上课当天到前台支付。＊请自带围裙和毛巾。",
+      "en": "Community Centre cooking classes. A: every Tuesday 18:30–20:30, Japanese fish dishes, ¥3,200. B: every Wednesday 19:00–21:00, vegetable curry, ¥2,500. C: every Saturday 10:00–12:00, Chinese pork dishes, ¥2,800. D: every Friday 17:00–19:00, vegetable pasta, ¥2,000 (prices per session). * Apply by the 20th of the month before the class starts, by phone or at the centre's front desk. * Pay at the front desk on the day of the class. * Bring an apron and a towel."
+    },
+    "questions": [
+      {
+        "q": "リーさんが 入る ことが できる 教室は どれですか。",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "三个条件一起看：平日要在18点以后开始、不吃肉、每次3,000日元以内。B是星期三19:00开始、蔬菜咖喱、2,500日元，全部符合。",
+          "en": "Check all three: on weekdays it must start after 6 p.m., no meat, ¥3,000 or less. B — Wednesday at 19:00, vegetable curry, ¥2,500 — meets them all."
+        },
+        "wrong": [
+          {
+            "zh": "A的时间（18:30）和鱼都可以，但每次3,200日元，超过了3,000日元。",
+            "en": "A's time (18:30) and fish are fine, but ¥3,200 is over her ¥3,000 limit."
+          },
+          null,
+          {
+            "zh": "C在星期六，钱也够，但做的是猪肉（「ぶた肉」），李先生不吃肉。",
+            "en": "C is on Saturday and affordable, but it's pork (「ぶた肉」), and Lee doesn't eat meat."
+          },
+          {
+            "zh": "D是蔬菜、2,000日元，但星期五17:00开始，那时李先生还在上班（到18点）。",
+            "en": "D is vegetarian and ¥2,000, but it starts at 17:00 on Friday, while Lee works until 6."
+          }
+        ]
+      },
+      {
+        "q": "リーさんは どのように 申し込みますか。",
+        "options": [
+          "今月の 20日までに、電話か 受付で 申し込む。",
+          "来月の 20日までに、電話か 受付で 申し込む。",
+          "今月の 20日までに、受付で お金を はらって 申し込む。",
+          "教室が 始まる 日に、受付で 申し込む。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "李先生想从「来月」开始上课；报名期限是「始まる 前の 月の 20日まで」，也就是这个月20日之前；方式是电话或前台。",
+          "en": "Lee wants to start 「来月」; the deadline is 「始まる 前の 月の 20日まで」 — the 20th of this month — by phone or at the desk."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "课程下个月开始，「前の 月」是这个月，下个月20日就太晚了。",
+            "en": "The classes start next month, so 「前の 月」 is this month; next month's 20th is too late."
+          },
+          {
+            "zh": "日期对，但钱是上课当天在前台付（「お金は 教室の 日に」），报名时不用付。",
+            "en": "The date is right, but you pay on the class day (「お金は 教室の 日に」), not when applying."
+          },
+          {
+            "zh": "上课当天是付钱的日子，报名必须在前一个月20日之前。",
+            "en": "The class day is when you pay; applications close on the 20th of the month before."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-402",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "ゆいさんは 11月8日（土）に、駅前で 友だちと 会う 約束を しました。大学前から バスに 乗ります。約束の 時間に おくれないで、できるだけ おそい バスに 乗りたいです。",
+    "passage": "大学前 → 駅前　バスの 時刻表\n| 時 | 月〜金 | 土 | 日・祝日 |\n| 8 | 00　15　30　45 | 10　40 | 30 |\n| 9 | 00　15　30　45 | 10　25　40 | 30 |\n| 10 | 00　30 | 10　40 | 30 |\n＊大学前から 駅前まで 30分 かかります。\n＊11月の 土曜日は、道の 工事の ため、9時25分の バスは 走りません。",
+    "tr": {
+      "zh": "大学前→车站前 公交时刻表。8点：周一至周五 00、15、30、45分；周六 10、40分；周日·节假日 30分。9点：周一至周五 00、15、30、45分；周六 10、25、40分；周日·节假日 30分。10点：周一至周五 00、30分；周六 10、40分；周日·节假日 30分。＊从大学前到车站前需要30分钟。＊11月的星期六因道路施工，9点25分的车停运。",
+      "en": "Bus timetable, University → Station. 8:00 hour — Mon–Fri :00 :15 :30 :45; Sat :10 :40; Sun/holidays :30. 9:00 hour — Mon–Fri :00 :15 :30 :45; Sat :10 :25 :40; Sun/holidays :30. 10:00 hour — Mon–Fri :00 :30; Sat :10 :40; Sun/holidays :30. * The ride from University to Station takes 30 minutes. * On Saturdays in November the 9:25 bus does not run because of road works."
+    },
+    "questions": [
+      {
+        "q": "約束は 10時です。ゆいさんは 何時の バスに 乗りますか。",
+        "options": [
+          "8時40分",
+          "9時10分",
+          "9時25分",
+          "9時30分"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "8日是星期六，看「土」那一列；车程30分钟，所以要在9:30之前发车。9:25那班11月的星期六停运，所以最晚是9:10（9:40到）。",
+          "en": "The 8th is a Saturday, so use the 「土」 column; with a 30-minute ride the bus must leave by 9:30. The 9:25 doesn't run on Saturdays in November, so the latest is 9:10 (arriving 9:40)."
+        },
+        "wrong": [
+          {
+            "zh": "8:40的车也来得及，但9:10还有一班更晚的车。",
+            "en": "The 8:40 gets her there in time, but there's a later one at 9:10."
+          },
+          null,
+          {
+            "zh": "9:25本来能9:55到，但注意事项写着11月的星期六这班车停运。",
+            "en": "The 9:25 would arrive at 9:55, but the note says it doesn't run on Saturdays in November."
+          },
+          {
+            "zh": "9:30的车只有平日和周日·节假日才有，星期六没有。",
+            "en": "There's a 9:30 only on weekdays and Sundays/holidays, not on Saturday."
+          }
+        ]
+      },
+      {
+        "q": "約束の 時間が 11時に 変わったら、ゆいさんは 何時の バスに 乗りますか。",
+        "options": [
+          "9時40分",
+          "10時10分",
+          "10時30分",
+          "10時40分"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "还是星期六：要在10:30之前发车。星期六10点有10分和40分两班，10:10发车10:40到，是最晚又不迟到的一班。",
+          "en": "Still Saturday: the bus must leave by 10:30. Saturday's 10 o'clock buses are :10 and :40; the 10:10 arrives at 10:40 — the latest that's on time."
+        },
+        "wrong": [
+          {
+            "zh": "9:40的车来得及，但还有更晚的10:10。",
+            "en": "The 9:40 is in time, but the 10:10 is later."
+          },
+          null,
+          {
+            "zh": "10:30的车只有平日和周日·节假日才有，星期六没有。",
+            "en": "The 10:30 runs on weekdays and Sundays/holidays, not Saturdays."
+          },
+          {
+            "zh": "10:40发车要11:10才到，会迟到。",
+            "en": "The 10:40 arrives at 11:10 — she'd be late."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-403",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "ジョンさんの 家族は この 市に 住んで います。ジョンさんと 妻は、住所が 分かる カードを 一枚ずつ 持って います。今度の 日曜日の 午後、ジョンさんは 妻と 小学二年生の 娘と 三人で 市民プールへ 行きます。また、来週の 水曜日は、仕事の あと 夜 六時ごろ 一人で 行く つもりです。",
+    "passage": "みどり市民プール　ご案内\n| | 月〜金 | 土・日・祝日 |\n| 大人（中学生 以上） | 400円 | 500円 |\n| 子ども（小学生） | 200円 | 250円 |\n| 小学生に なる 前の 子ども | 0円 | 0円 |\n＊この 市に 住んで いる 大人は、住所が 分かる カードを 見せると、100円 安く なります。\n＊月〜金の 午後 五時からは、大人は だれでも 250円です（カードで 安く なりません）。\n＊小学生は 大人と いっしょに 入って ください。\n＊毎月 第一月曜日は 休みです。",
+    "tr": {
+      "zh": "绿市民游泳池·须知。大人（中学生以上）：周一至周五400日元，周六·周日·节假日500日元。儿童（小学生）：周一至周五200日元，周六·周日·节假日250日元。上小学以前的儿童：0日元。＊住在本市的大人出示能证明住址的卡，便宜100日元。＊周一至周五下午五点以后，大人一律250日元（出示卡也不再便宜）。＊小学生请和大人一起入场。＊每月第一个星期一休息。",
+      "en": "Midori City Pool — information. Adults (junior high and up): ¥400 Mon–Fri, ¥500 Sat/Sun/holidays. Children (primary school): ¥200 Mon–Fri, ¥250 Sat/Sun/holidays. Children under primary-school age: free. * Adults living in the city get ¥100 off by showing a card with their address. * From 5 p.m. Mon–Fri, all adults pay ¥250 (no card discount). * Primary-school children must come in with an adult. * Closed on the first Monday of each month."
+    },
+    "questions": [
+      {
+        "q": "日曜日、三人で いくら はらいますか。",
+        "options": [
+          "800円",
+          "1,050円",
+          "1,150円",
+          "1,250円"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "星期日看「土・日・祝日」：大人500日元，两人都出示卡各便宜100日元，是400×2=800日元；小学二年生的女儿250日元（卡只对大人有效）。合计1,050日元。",
+          "en": "Sunday uses the 「土・日・祝日」 column: adults ¥500 less ¥100 each with the card = ¥800; the daughter, a primary-school child, pays ¥250 (the card is adults only). Total ¥1,050."
+        },
+        "wrong": [
+          {
+            "zh": "800日元是平日价格（大人300×2+儿童200），星期日不适用。",
+            "en": "¥800 is the weekday price (2 × ¥300 + ¥200); it doesn't apply on Sunday."
+          },
+          null,
+          {
+            "zh": "1,150日元只给一个大人减了100日元；约翰的妻子也住在本市，也能便宜。",
+            "en": "¥1,150 takes ¥100 off only one adult; his wife lives in the city too."
+          },
+          {
+            "zh": "1,250日元是没用卡的价格，但他们住在本市而且有卡。",
+            "en": "¥1,250 is the price without the card, but they live in the city and have it."
+          }
+        ]
+      },
+      {
+        "q": "来週の 水曜日、ジョンさんは 一人で いくら はらいますか。",
+        "options": [
+          "150円",
+          "250円",
+          "300円",
+          "400円"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "星期三晚上六点，符合「月〜金の 午後 五時からは、大人は だれでも 250円」，而且「カードで 安く なりません」，所以是250日元。",
+          "en": "Wednesday at 6 p.m. falls under 「月〜金の 午後 五時からは、大人は だれでも 250円」, and 「カードで 安く なりません」 — so ¥250."
+        },
+        "wrong": [
+          {
+            "zh": "150日元是在250日元上又减了100日元，但五点以后用卡不能再便宜。",
+            "en": "¥150 takes another ¥100 off ¥250, but the card discount doesn't apply after 5 p.m."
+          },
+          null,
+          {
+            "zh": "300日元是平日白天用卡的价格（400−100），但他是晚上六点去，适用五点以后的价格。",
+            "en": "¥300 is the weekday daytime price with the card (¥400 − ¥100); at 6 p.m. the after-5 price applies."
+          },
+          {
+            "zh": "400日元是平日大人的普通价格，没有考虑晚上的价格。",
+            "en": "¥400 is the normal weekday adult price, ignoring the evening rate."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-404",
+    "type": "info",
+    "difficulty": 2,
+    "intro": "チャンさんは 日本語学校の N4の クラスで 勉強して います。来学期、選択クラスを 一つ とりたいです。火曜日と 木曜日の 午後は アルバイトが あります。話す 練習が したいです。",
+    "passage": "来学期の 選択クラス\n| クラス | 曜日・時間 | レベル | 内容 |\n| A 会話 | 火 14:00〜15:30 | N4・N3 | 二人で 話す 練習を します |\n| B 漢字 | 水 14:00〜15:30 | N4 | 漢字の 読み書きを 練習します |\n| C ビジネス日本語 | 金 14:00〜15:30 | N2 以上 | 会社で 使う 敬語を 話す 練習を します |\n| D 発表 | 水 16:00〜17:30 | N4・N3 | スピーチの 練習を します |\n| E 新聞 | 金 16:00〜17:30 | N4・N3 | やさしい 新聞を 読みます |\n＊自分の レベルと 合わない クラスには 入れません。\n＊申し込みは 3月10日から 17日までに、事務室で して ください。",
+    "tr": {
+      "zh": "下学期的选修课。A 会话：周二 14:00–15:30，N4·N3，两人一组练习说话。B 汉字：周三 14:00–15:30，N4，练习汉字的读写。C 商务日语：周五 14:00–15:30，N2以上，练习说公司里用的敬语。D 发表：周三 16:00–17:30，N4·N3，练习演讲。E 报纸：周五 16:00–17:30，N4·N3，读简单的报纸。＊不能参加和自己水平不符的课。＊报名时间为3月10日至17日，请到办公室办理。",
+      "en": "Elective classes next term. A Conversation: Tue 14:00–15:30, N4/N3, speaking practice in pairs. B Kanji: Wed 14:00–15:30, N4, reading and writing kanji. C Business Japanese: Fri 14:00–15:30, N2 and above, practise speaking the keigo used at work. D Presentations: Wed 16:00–17:30, N4/N3, speech practice. E Newspaper: Fri 16:00–17:30, N4/N3, reading easy newspapers. * You can't join a class that doesn't match your level. * Apply at the office between 10 and 17 March."
+    },
+    "questions": [
+      {
+        "q": "チャンさんは どの クラスを とりますか。",
+        "options": [
+          "A 会話",
+          "B 漢字",
+          "C ビジネス日本語",
+          "D 発表"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "要同时满足：不在周二·周四、有N4、练习说话。D是周三、N4·N3、练习演讲，全部符合。",
+          "en": "It must avoid Tue/Thu, include N4, and be speaking practice. D — Wednesday, N4/N3, speeches — fits all three."
+        },
+        "wrong": [
+          {
+            "zh": "A是练习说话、有N4，但在星期二下午，张同学要打工。",
+            "en": "A is speaking practice for N4, but it's Tuesday afternoon, when Zhang works."
+          },
+          {
+            "zh": "B时间和水平都可以，但内容是汉字读写，不是说话练习。",
+            "en": "B's time and level are fine, but it's kanji reading and writing, not speaking."
+          },
+          {
+            "zh": "C是说话练习、在星期五，但要N2以上，张同学在N4班，不能参加。",
+            "en": "C is speaking practice on Friday, but it's for N2 and above; Zhang is in N4."
+          },
+          null
+        ]
+      },
+      {
+        "q": "チャンさんの 友だちの ルカさんは N3の クラスに います。月曜日と 水曜日の 午後は アルバイトが あります。読む 練習が したいです。ルカさんは どの クラスを とりますか。",
+        "options": [
+          "B 漢字",
+          "C ビジネス日本語",
+          "D 発表",
+          "E 新聞"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "卢卡：N3、不能周一·周三、想练习读。E是周五、N4·N3、读报纸，全部符合。",
+          "en": "Luca: N3, not Mon/Wed, wants reading. E — Friday, N4/N3, reading newspapers — fits all three."
+        },
+        "wrong": [
+          {
+            "zh": "B有读写练习，但在星期三，而且只有N4，卢卡是N3。",
+            "en": "B includes reading, but it's on Wednesday and only for N4; Luca is N3."
+          },
+          {
+            "zh": "C在星期五，但要N2以上，而且是说话练习。",
+            "en": "C is on Friday, but it's N2 and above and it's speaking practice."
+          },
+          {
+            "zh": "D是N3可以参加，但在星期三，而且是演讲练习，不是读。",
+            "en": "D allows N3, but it's on Wednesday and it's speeches, not reading."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-405",
+    "type": "info",
+    "difficulty": 2,
+    "intro": "山本さんは 九さいの 息子と 二人で ジュース工場の 見学に 行きたいです。山本さんは 土曜日も 日曜日も 午前中は 用事が あります。息子は 日曜日の 午後、サッカーの 練習が あります。",
+    "passage": "みどりジュース工場　見学の 案内\n| 日 | 時間 | コース | 予約 | お金 |\n| 土 | 10:00〜11:00 | 見る コース | いりません | 0円 |\n| 土 | 14:00〜15:30 | 見る＋作る コース | 必要 | 一人 300円 |\n| 日 | 11:00〜12:00 | 見る コース | いりません | 0円 |\n| 日 | 15:00〜16:30 | 見る＋作る コース | 必要 | 一人 300円 |\n＊「見る＋作る コース」では、工場を 見た あと、自分で ジュースを 作ります。小学生から 参加できます。\n＊予約は 見学の 三日前までに、電話で して ください。\n＊お金は 見学の 日に、受付で はらって ください。\n＊小学生は 大人と いっしょに 来て ください。",
+    "tr": {
+      "zh": "绿果汁工厂·参观介绍。周六 10:00–11:00，参观路线，无需预约，0日元。周六 14:00–15:30，参观＋制作路线，需要预约，每人300日元。周日 11:00–12:00，参观路线，无需预约，0日元。周日 15:00–16:30，参观＋制作路线，需要预约，每人300日元。＊“参观＋制作路线”在参观工厂后自己做果汁，小学生以上可以参加。＊请在参观三天前通过电话预约。＊费用请在参观当天到前台支付。＊小学生请和大人一起来。",
+      "en": "Midori Juice Factory — tours. Sat 10:00–11:00, viewing tour, no booking, free. Sat 14:00–15:30, view + make tour, booking required, ¥300 per person. Sun 11:00–12:00, viewing tour, no booking, free. Sun 15:00–16:30, view + make tour, booking required, ¥300 per person. * On the view + make tour you see the factory and then make juice yourself; open to primary-school children and up. * Book by phone at least three days before. * Pay at the front desk on the day. * Primary-school children must come with an adult."
+    },
+    "questions": [
+      {
+        "q": "山本さんと 息子は いつの 見学に 行きますか。",
+        "options": [
+          "土曜日の 10時",
+          "土曜日の 14時",
+          "日曜日の 11時",
+          "日曜日の 15時"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "山本先生周六周日上午都有事，所以只能下午；周日下午儿子要练足球。剩下的只有星期六14点。",
+          "en": "Mr Yamamoto is busy both weekend mornings, so it must be an afternoon; on Sunday afternoon his son has football. That leaves Saturday at 14:00."
+        },
+        "wrong": [
+          {
+            "zh": "星期六10点是上午，山本先生有事。",
+            "en": "Saturday at 10 is in the morning, when Mr Yamamoto is busy."
+          },
+          null,
+          {
+            "zh": "星期日11点也是上午（「午前中」），山本先生有事。",
+            "en": "Sunday at 11 is still the morning (「午前中」), when he's busy."
+          },
+          {
+            "zh": "星期日15点是下午，但儿子要练足球。",
+            "en": "Sunday at 15:00 is the afternoon, but his son has football practice."
+          }
+        ]
+      },
+      {
+        "q": "山本さんは 見学の 前に 何を しなければ なりませんか。",
+        "options": [
+          "三日前までに、電話で 予約する。",
+          "三日前までに、二人分の 600円を はらう。",
+          "何も しないで、当日 受付へ 行く。",
+          "前の 日に、受付で 予約する。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "他们去的是星期六14点的“参观＋制作路线”，表上写着「予約　必要」；注意事项说「予約は 見学の 三日前までに、電話で」。",
+          "en": "Their Saturday 14:00 slot is the view + make tour, marked 「予約　必要」; the note says to book 「見学の 三日前までに、電話で」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "两人确实是600日元，但钱是参观当天在前台付（「見学の 日に、受付で」），不用提前付。",
+            "en": "It is ¥600 for two, but you pay at the desk on the day (「見学の 日に、受付で」), not in advance."
+          },
+          {
+            "zh": "不用预约的是「見る コース」，他们参加的路线需要预约。",
+            "en": "Only the 「見る コース」 needs no booking; their tour requires one."
+          },
+          {
+            "zh": "预约要在三天前，而且是打电话，不是前一天去前台。",
+            "en": "Booking must be by phone at least three days ahead, not at the desk the day before."
+          }
+        ]
+      }
+    ]
+  }
+]

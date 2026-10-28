@@ -1,0 +1,467 @@
+[
+  {
+    "id": "n4-l21-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson21#1"
+    ],
+    "difficulty": 2,
+    "stem": "太らない ように、なるべく 甘い ものを 食べない（　）。",
+    "options": [
+      "ように して います",
+      "ように なりました",
+      "ために します",
+      "ことが あります"
+    ],
+    "answer": 0,
+    "full": "太らない ように、なるべく 甘い ものを 食べない ように して います。",
+    "tr": {
+      "zh": "为了不长胖，我尽量注意不吃甜食。",
+      "en": "So as not to put on weight, I try to avoid sweets as much as I can."
+    },
+    "why": {
+      "zh": "「なるべく」（尽量）表示有意识的努力，持续的习惯用「〜ないようにしている」（一直注意不……）。",
+      "en": "「なるべく」 (as far as possible) signals a deliberate effort; an ongoing habit is 「〜ないようにしている」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ようになる」是自然的变化，不能和表示努力的「なるべく」搭配。",
+        "en": "「ようになる」 is a natural change; it doesn't go with the effort word 「なるべく」."
+      },
+      {
+        "zh": "「ために」表示目的，后面要接实际做的动作，「食べないためにします」不成句。",
+        "en": "「ために」 states a purpose and needs an action after it; 「食べないためにします」 isn't a sentence."
+      },
+      {
+        "zh": "「ことがあります」是“有时会……”，和“尽量”的努力搭不上。",
+        "en": "「ことがあります」 (sometimes happens) doesn't go with 「なるべく」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l21-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson21#1"
+    ],
+    "difficulty": 1,
+    "stem": "A「明日は 9時から 会議ですよ。遅れない（　）ください。」\nB「はい、気をつけます。」",
+    "options": [
+      "ように して",
+      "ように なって",
+      "ために して",
+      "ことに して"
+    ],
+    "answer": 0,
+    "full": "A「明日は 9時から 会議ですよ。遅れない ように して ください。」 B「はい、気をつけます。」",
+    "tr": {
+      "zh": "A：明天9点开会哦。请注意不要迟到。 B：好的，我会注意的。",
+      "en": "A: The meeting starts at 9 tomorrow. Please make sure you're not late. B: Okay, I'll be careful."
+    },
+    "why": {
+      "zh": "B 回答「気をつけます」（我会注意），A 是在要求对方注意：「〜ないようにしてください」（请注意不要……）。",
+      "en": "B answers 「気をつけます」, so A is asking B to take care: 「〜ないようにしてください」 (please make sure not to…)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ようになる」是自然变化，不能用来要求别人注意做某事。",
+        "en": "「ようになる」 is a natural change; you can't ask someone to do it."
+      },
+      {
+        "zh": "「ために」不接「してください」，「遅れないためにしてください」不成句。",
+        "en": "「ために」 doesn't combine with 「してください」 like this; it isn't a sentence."
+      },
+      {
+        "zh": "「ことにする」是自己的决定，“请决定不迟到”很不自然，和「気をつけます」也对不上。",
+        "en": "「ことにする」 is a personal decision; “please decide not to be late” is unnatural and doesn't fit 「気をつけます」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l21-003",
+    "type": "narabe",
+    "refs": [
+      "lesson21#1"
+    ],
+    "difficulty": 1,
+    "stem": "健康の ために、夜は [_] [_] [★] [_]。",
+    "options": [
+      "して います",
+      "寝る",
+      "ように",
+      "早く"
+    ],
+    "order": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "full": "健康の ために、夜は 早く 寝る ように して います。",
+    "tr": {
+      "zh": "为了健康，我注意晚上早点睡。",
+      "en": "For my health, I make a point of going to bed early."
+    },
+    "why": {
+      "zh": "有意识地养成习惯：动词辞书形＋「ようにしている」。早く 寝る ように して います，★ 在第三格，是「ように」。",
+      "en": "A habit kept up on purpose: dictionary form ＋ 「ようにしている」. 早く 寝る ように して います — the ★ is the third slot: 「ように」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l21-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson21#2",
+      "lesson21#1"
+    ],
+    "difficulty": 2,
+    "stem": "前は 納豆が 嫌いでしたが、今は 食べられる（　）。",
+    "options": [
+      "ように なりました",
+      "ように しました",
+      "ために なりました",
+      "ことに しました"
+    ],
+    "answer": 0,
+    "full": "前は 納豆が 嫌いでしたが、今は 食べられる ように なりました。",
+    "tr": {
+      "zh": "以前讨厌纳豆，但现在变得能吃了。",
+      "en": "I used to hate natto, but now I've come to be able to eat it."
+    },
+    "why": {
+      "zh": "“以前……现在……”是状态的变化，可能形＋「ようになる」（变得能够……）。",
+      "en": "“Before… now…” is a change of state: potential form ＋ 「ようになる」 (have come to be able to)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ようにする」是有意识的努力，和“以前讨厌、现在能吃”的自然变化不合。",
+        "en": "「ようにする」 is a deliberate effort; it doesn't fit a change from “hated it” to “can eat it now”."
+      },
+      {
+        "zh": "「ために」不接可能形表示变化，「食べられるためになりました」不成句。",
+        "en": "「ために」 can't express this change; 「食べられるためになりました」 isn't a sentence."
+      },
+      {
+        "zh": "「ことにする」是自己决定，不接可能形，“决定能吃”说不通。",
+        "en": "「ことにする」 is a decision and doesn't follow a potential form — “decided to be able to eat” makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n4-l21-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson21#2"
+    ],
+    "difficulty": 1,
+    "stem": "息子は 3歳に なって、ひらがなが（　）ように なりました。",
+    "options": [
+      "読める",
+      "読ませる",
+      "読まれる",
+      "読もう"
+    ],
+    "answer": 0,
+    "full": "息子は 3歳に なって、ひらがなが 読める ように なりました。",
+    "tr": {
+      "zh": "儿子3岁了，变得能读平假名了。",
+      "en": "My son turned three and can now read hiragana."
+    },
+    "why": {
+      "zh": "能力的获得：可能形＋「ようになる」。「ひらがなが」的「が」也提示要用可能形「読める」。",
+      "en": "Gaining an ability: potential form ＋ 「ようになる」. The 「が」 in 「ひらがなが」 also calls for the potential 「読める」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「読ませる」是使役（让别人读），和“儿子会读了”不合，也不接「ひらがなが」。",
+        "en": "「読ませる」 (make someone read) doesn't fit, and doesn't take 「ひらがなが」."
+      },
+      {
+        "zh": "「読まれる」是被动，“平假名被读”，说的不是儿子的能力。",
+        "en": "「読まれる」 is passive — it isn't about my son's ability."
+      },
+      {
+        "zh": "「読もう」是意向形，不能接「ように」。",
+        "en": "「読もう」 is the volitional form; it can't come before 「ように」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l21-006",
+    "type": "narabe",
+    "refs": [
+      "lesson21#2"
+    ],
+    "difficulty": 1,
+    "stem": "最近、毎朝 [_] [★] [_] [_]。",
+    "options": [
+      "なりました",
+      "ように",
+      "公園で",
+      "走る"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "最近、毎朝 公園で 走る ように なりました。",
+    "tr": {
+      "zh": "最近我开始每天早上在公园跑步了。",
+      "en": "Lately I've started running in the park every morning."
+    },
+    "why": {
+      "zh": "习惯的变化：动词辞书形＋「ようになる」。公園で 走る ように なりました，★ 在第二格，是「走る」。",
+      "en": "A change in habits: dictionary form ＋ 「ようになる」. 公園で 走る ように なりました — the ★ is the second slot: 「走る」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l21-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson21#3"
+    ],
+    "difficulty": 2,
+    "stem": "後ろの 人にも 聞こえる（　）、大きい 声で 話して ください。",
+    "options": [
+      "ように",
+      "ために",
+      "ので",
+      "のに"
+    ],
+    "answer": 0,
+    "full": "後ろの 人にも 聞こえる ように、大きい 声で 話して ください。",
+    "tr": {
+      "zh": "为了让后面的人也能听见，请大声说。",
+      "en": "Please speak loudly so that the people at the back can hear too."
+    },
+    "why": {
+      "zh": "「聞こえる」是非意志动词，而且“听见”的人和“说话”的人不同：表示目的用「ように」。",
+      "en": "「聞こえる」 isn't a deliberate action, and the hearers differ from the speaker: the purpose is marked with 「ように」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ために」前面要接意志动词、前后主语一致，「聞こえる」不能接「ために」。",
+        "en": "「ために」 needs a deliberate verb with the same subject; it can't follow 「聞こえる」."
+      },
+      {
+        "zh": "「ので」是“因为能听见所以请大声”，因果关系说不通。",
+        "en": "「ので」 (because they can hear, speak loudly) makes no sense."
+      },
+      {
+        "zh": "「のに」是“明明能听见却……”，和请求大声说话矛盾。",
+        "en": "「のに」 (even though they can hear) contradicts the request."
+      }
+    ]
+  },
+  {
+    "id": "n4-l21-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson21#3"
+    ],
+    "difficulty": 2,
+    "stem": "日本語を 勉強する（　）、日本に 来ました。",
+    "options": [
+      "ために",
+      "ように",
+      "までに",
+      "ほど"
+    ],
+    "answer": 0,
+    "full": "日本語を 勉強する ために、日本に 来ました。",
+    "tr": {
+      "zh": "我为了学日语来到了日本。",
+      "en": "I came to Japan to study Japanese."
+    },
+    "why": {
+      "zh": "「勉強する」是意志动词，学习的和来日本的是同一个人：目的用「ために」。",
+      "en": "「勉強する」 is a deliberate action by the same person who came: the purpose takes 「ために」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ように」用于非意志动词、可能形或否定（勉強できるように），意志动词「勉強する」直接表目的要用「ために」。",
+        "en": "「ように」 goes with non-deliberate verbs, potentials or negatives (勉強できるように); for 「勉強する」 itself use 「ために」."
+      },
+      {
+        "zh": "「までに」表示期限（……之前），“学日语之前来日本”说不通。",
+        "en": "「までに」 marks a deadline; it doesn't fit here."
+      },
+      {
+        "zh": "「ほど」表示程度，“来日本到学日语的程度”说不通。",
+        "en": "「ほど」 marks degree; it makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n4-l21-009",
+    "type": "narabe",
+    "refs": [
+      "lesson21#3"
+    ],
+    "difficulty": 2,
+    "stem": "市は 子供が 安全に [_] [_] [★] [_]。",
+    "options": [
+      "作りました",
+      "公園を",
+      "遊べる",
+      "ように"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "市は 子供が 安全に 遊べる ように 公園を 作りました。",
+    "tr": {
+      "zh": "市政府为了让孩子能安全地玩，建了公园。",
+      "en": "The city built a park so that children can play safely."
+    },
+    "why": {
+      "zh": "前后主语不同（子供が / 市は），可能形「遊べる」＋「ように」表示目的。遊べる ように 公園を 作りました，★ 在第三格，是「公園を」。",
+      "en": "Different subjects (子供が / 市は) and a potential 「遊べる」 ＋ 「ように」 give the purpose. 遊べる ように 公園を 作りました — the ★ is the third slot: 「公園を」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l21-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson21#4"
+    ],
+    "difficulty": 1,
+    "stem": "医者に お酒を やめる（　）言われました。",
+    "options": [
+      "ように",
+      "ために",
+      "ことに",
+      "ばかり"
+    ],
+    "answer": 0,
+    "full": "医者に お酒を やめる ように 言われました。",
+    "tr": {
+      "zh": "医生让我戒酒。",
+      "en": "The doctor told me to quit drinking."
+    },
+    "why": {
+      "zh": "转述别人的要求/命令：动词辞书形＋「ように言う」，这里是被动「ように言われた」（被告知要……）。",
+      "en": "Reporting a request or order: dictionary form ＋ 「ように言う」, here passive: 「ように言われた」 (was told to)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ために」表示目的，“为了戒酒被医生说了”不是转述要求。",
+        "en": "「ために」 gives a purpose, not the content of what the doctor told you."
+      },
+      {
+        "zh": "「ことに」不接「言われる」来转述要求（「ことにする/なる」才是固定说法）。",
+        "en": "「ことに」 doesn't report a request with 「言われる」 (it pairs with する/なる)."
+      },
+      {
+        "zh": "「ばかり」是“光……/刚……”，不能接「言われました」转述要求。",
+        "en": "「ばかり」 (only / just) can't report a request before 「言われました」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l21-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson21#4"
+    ],
+    "difficulty": 2,
+    "stem": "A「部長は 何と 言って いましたか。」\nB「明日までに 報告書を 出す ように（　）。」",
+    "options": [
+      "言って いました",
+      "なって いました",
+      "して いました",
+      "なりました"
+    ],
+    "answer": 0,
+    "full": "A「部長は 何と 言って いましたか。」 B「明日までに 報告書を 出す ように 言って いました。」",
+    "tr": {
+      "zh": "A：部长说了什么？ B：他说要在明天之前交报告。",
+      "en": "A: What did the manager say? B: He said to hand in the report by tomorrow."
+    },
+    "why": {
+      "zh": "A 问部长说了什么，B 转述部长的指示：「〜ように言っていました」。",
+      "en": "A asks what the manager said, so B reports his instruction: 「〜ように言っていました」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ようになっていました」是状态的变化，不是回答“部长说了什么”。",
+        "en": "「ようになっていました」 describes a change, not what the manager said."
+      },
+      {
+        "zh": "「ようにしていました」是“部长一直注意交报告”，没有回答他说了什么。",
+        "en": "「ようにしていました」 would say the manager made a point of submitting it — not what he said."
+      },
+      {
+        "zh": "「ようになりました」是“变得……了”，和“部长说了什么”的问题对不上。",
+        "en": "「ようになりました」 (has come to) doesn't answer “what did he say?”."
+      }
+    ]
+  },
+  {
+    "id": "n4-l21-012",
+    "type": "narabe",
+    "refs": [
+      "lesson21#4"
+    ],
+    "difficulty": 1,
+    "stem": "私は 父に [_] [★] [_] [_]。",
+    "options": [
+      "頼みました",
+      "タバコを",
+      "ように",
+      "やめる"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "私は 父に タバコを やめる ように 頼みました。",
+    "tr": {
+      "zh": "我拜托爸爸戒烟。",
+      "en": "I asked my father to quit smoking."
+    },
+    "why": {
+      "zh": "转述请求：人に＋辞书形＋「ように頼む」。タバコを やめる ように 頼みました，★ 在第二格，是「やめる」。",
+      "en": "Reporting a request: person に ＋ dictionary form ＋ 「ように頼む」. タバコを やめる ように 頼みました — the ★ is the second slot: 「やめる」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

@@ -1,0 +1,752 @@
+[
+  {
+    "id": "n4-dk-101",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "リーさんは 「日本の 生活」の さくぶんを 書きました。",
+    "passage": "わたしは 一年前に 日本へ 来ました。来た ときは 日本語が ほとんど 分かりませんでした。駅で 切符の 買い方が 分からなくて 困って いた とき、知らない 女の 人が 親切に 教えて [[1]]。とても うれしかったです。\nそれから 毎日 日本語の 勉強を 続けた [[2]]、今では テレビの ニュースも 少し 分かります。でも、漢字は まだ 苦手です。先週の 漢字の テストも あまり できませんでした。それで、今は 毎晩 寝る 前に 漢字を 十 書く [[3]]。\n来年から 日本の 会社で 働きたいと 思って います。日本の 会社に [[4]]、もっと 日本語が 上手に ならなければ なりません。",
+    "tr": {
+      "zh": "我一年前来到日本。刚来的时候几乎不懂日语。在车站不知道怎么买票、正发愁的时候，一位不认识的女士热心地教了我。我非常高兴。从那以后我每天坚持学日语，所以现在连电视新闻也能听懂一点了。但是我还是不擅长汉字，上周的汉字考试也没考好。所以现在我规定自己每天晚上睡觉前写十个汉字。我想从明年开始在日本的公司工作。为了进日本的公司，我必须把日语学得更好。",
+      "en": "I came to Japan a year ago. When I arrived I understood almost no Japanese. When I was stuck at a station, not knowing how to buy a ticket, a woman I didn't know kindly showed me. I was really happy. After that I kept studying Japanese every day, so now I can even understand a little of the TV news. But I'm still bad at kanji; I didn't do well on last week's kanji test either. So now I make a point of writing ten kanji every night before bed. I'd like to work at a Japanese company from next year. To get into a Japanese company, I have to get much better at Japanese."
+    },
+    "questions": [
+      {
+        "options": [
+          "くれました",
+          "もらいました",
+          "あげました",
+          "ほしかったです"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「女の 人が」是做事的人，教的对象是“我”，别人为我做事用「〜て くれました」。",
+          "en": "「女の 人が」 marks the woman as the one doing it, and she did it for the writer: 「〜て くれました」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「〜て もらいました」要说「女の 人に 教えて もらいました」，这里用了「が」，主语是那位女士。",
+            "en": "「〜て もらいました」 would need 「女の 人に」; with 「が」 the woman is the subject, so it must be くれる."
+          },
+          {
+            "zh": "「〜て あげました」是我为别人做，可这里是那位女士帮了我。",
+            "en": "「〜て あげました」 is doing something for someone else; here the woman helped the writer."
+          },
+          {
+            "zh": "「教えて ほしかったです」是“（当时）希望她教”，可后面说“很高兴”，说明她真的教了。",
+            "en": "「教えて ほしかったです」 (I wished she had) — the next sentence says he was happy, so she really did help."
+          }
+        ]
+      },
+      {
+        "options": [
+          "ので",
+          "のに",
+          "けれど",
+          "とき"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "每天坚持学习是原因，现在能听懂新闻是结果，用「ので」。",
+          "en": "Studying every day is the cause, understanding the news now is the result: 「ので」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「のに」表示“明明……却”，可坚持学习和能听懂并不矛盾。",
+            "en": "「のに」 (even though) — studying hard and understanding more don't clash."
+          },
+          {
+            "zh": "「けれど」是转折，前后内容是顺着的因果关系，不是相反。",
+            "en": "「けれど」 (but) — the two halves follow from each other, they don't contrast."
+          },
+          {
+            "zh": "「続けた とき」是“坚持的那个时候”，和后面的「今では」时间对不上。",
+            "en": "「続けた とき」 (at the time I kept on) clashes with 「今では」 (now)."
+          }
+        ]
+      },
+      {
+        "options": [
+          "ことに して います",
+          "ことが あります",
+          "ところです",
+          "はずです"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "考试没考好，所以自己决定每天晚上写十个汉字，自己定下的习惯用「〜ことに して います」。",
+          "en": "After the bad test he decided on a habit for himself — every night, ten kanji: 「〜ことに して います」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「ことが あります」是“有时会”，和「毎晩」（每天晚上）矛盾。",
+            "en": "「ことが あります」 means 'sometimes', which clashes with 「毎晩」 (every night)."
+          },
+          {
+            "zh": "「書く ところです」是“正要写”，指眼前的一刻，不能和「毎晩」一起说习惯。",
+            "en": "「書く ところです」 (about to write) is one moment, not an every-night habit."
+          },
+          {
+            "zh": "「はずです」是根据情况推测“应该会”，不能用来说自己决定做的事。",
+            "en": "「はずです」 is an inference ('should be'), not a habit you chose for yourself."
+          }
+        ]
+      },
+      {
+        "options": [
+          "入る ために",
+          "入る ように",
+          "入りながら",
+          "入った のに"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "“为了进公司”是有意志的目的，意志动词「入る」接「ために」。",
+          "en": "'In order to get into the company' is a deliberate goal; a volitional verb like 「入る」 takes 「ために」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「ように」表示目的时接非意志的形式（如「入れる ように」），「入る ように」不能表示“为了进公司”。",
+            "en": "Purpose 「ように」 goes with non-volitional forms (「入れる ように」); 「入る ように」 can't mean 'in order to join'."
+          },
+          {
+            "zh": "「入りながら」是“一边进公司一边……”，进公司是一下子的事，而且他还没进。",
+            "en": "「入りながら」 (while joining) — joining isn't ongoing, and he hasn't joined yet."
+          },
+          {
+            "zh": "「入った のに」是“明明进了公司”，可他明年才想去工作，还没进。",
+            "en": "「入った のに」 (even though I joined) — he only hopes to work there from next year."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-102",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "山田さんは ホームステイに 来る 留学生の ボブさんに メールを 書きました。",
+    "passage": "ボブさん、来週から わたしの 家に 来ますね。家族 みんなで 待って います。\nボブさんの 部屋は 二階です。もう 掃除も 終わって、新しい ふとんも きのう 買って [[1]] から、何も 持って 来なくても 大丈夫です。駅に 着いたら、電話して ください。父が 車で 迎えに 行きます。\nそれから、母が 「ボブさんは 何が 好きかな」と 言って いました。好きな 食べ物が [[2]]、教えて ください。母は 料理が 上手で、友だちに よく 「お店の 料理より おいしい」と [[3]]。きっと ボブさんも 気に入ると 思います。\nでは、来週 会える [[4]] 楽しみに して います。\n山田 さくら",
+    "tr": {
+      "zh": "鲍勃，你下周就要来我家了吧。全家人都在等你。你的房间在二楼。已经打扫好了，新被褥也准备好了，所以什么都不用带。到了车站请给我打电话，我爸爸会开车去接你。还有，妈妈说“不知道鲍勃喜欢吃什么呢”。如果有喜欢吃的东西，请告诉我。妈妈很会做菜，朋友们常说她做的“比饭店的还好吃”。我想你也一定会喜欢的。那么，期待下周和你见面。山田樱",
+      "en": "Bob, you're coming to stay with us next week, aren't you? The whole family is looking forward to it. Your room is on the second floor. It's already been cleaned and a new futon is ready, so you don't need to bring anything. When you get to the station, please call. My father will come and pick you up by car. Also, my mother was wondering, 'What does Bob like?' If there's any food you like, please tell me. My mother is a good cook, and her friends often tell her it's 'better than restaurant food'. I'm sure you'll like it too. Well, I'm looking forward to seeing you next week. — Sakura Yamada"
+    },
+    "questions": [
+      {
+        "options": [
+          "用意して あります",
+          "用意して おきます",
+          "用意して ほしいです",
+          "用意して いません"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「もう 掃除して」，被褥也已经准备好、现在处于备好的状态，用「〜て あります」，所以才说什么都不用带。",
+          "en": "With 「もう」, the futon has already been got ready and is waiting: 「〜て あります」 — which is why Bob needn't bring anything."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「用意して おきます」是“（之后）会准备好”，和前面的「もう」（已经）不符。",
+            "en": "「用意して おきます」 (I will get it ready) clashes with 「もう」 (already)."
+          },
+          {
+            "zh": "「用意して ほしいです」是希望别人准备，可是房间是山田家准备的。",
+            "en": "「用意して ほしいです」 asks someone else to prepare it, but the family is doing it."
+          },
+          {
+            "zh": "「用意して いません」是“还没准备”，那就不能说「何も 持って 来なくても 大丈夫です」。",
+            "en": "「用意して いません」 (not ready) wouldn't let her say Bob needn't bring anything."
+          }
+        ]
+      },
+      {
+        "options": [
+          "あったら",
+          "あっても",
+          "あったのに",
+          "ある ために"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "“如果有喜欢的食物，就告诉我”，假定条件用「あったら」。",
+          "en": "'If there's food you like, tell me' — a condition: 「あったら」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「あっても」是“即使有也……”，后面接「教えて ください」意思不通。",
+            "en": "「あっても」 (even if there is) doesn't lead into 'please tell me'."
+          },
+          {
+            "zh": "「あったのに」是“明明有却……”，带有遗憾、不满，不能用来提出请求。",
+            "en": "「あったのに」 (even though there was) expresses regret, not a request."
+          },
+          {
+            "zh": "「ある ために」是“为了有”或“因为有”，不能表示“如果有”。",
+            "en": "「ある ために」 means 'in order to have' or 'because there is', not 'if there is'."
+          }
+        ]
+      },
+      {
+        "options": [
+          "言われます",
+          "言います",
+          "言わせます",
+          "言って あげます"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "主语是妈妈，夸奖是朋友说的，妈妈是“被说”的一方，用被动「言われます」。",
+          "en": "The subject is the mother, and it's her friends who say it: she is told — passive 「言われます」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「言います」是妈妈自己对朋友说“比饭店好吃”，和“妈妈很会做菜”的意思接不上。",
+            "en": "「言います」 would have the mother saying it herself, which doesn't show she's a good cook."
+          },
+          {
+            "zh": "「言わせます」是“让朋友说”，变成妈妈强迫朋友夸她，不合文意。",
+            "en": "「言わせます」 (makes them say it) would mean she forces her friends to praise her."
+          },
+          {
+            "zh": "「言って あげます」是妈妈为朋友说，说话的人弄反了。",
+            "en": "「言って あげます」 has the mother saying it for her friends — the wrong speaker."
+          }
+        ]
+      },
+      {
+        "options": [
+          "のを",
+          "ことに",
+          "ように",
+          "ために"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「〜のを 楽しみに して います」是“期待……”的固定说法，「会える」要名词化后加「を」。",
+          "en": "'Look forward to ~' is 「〜のを 楽しみに して います」: the verb is nominalised with の and takes 「を」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「楽しみに する」的对象用「を」，「会える ことに」不能接。",
+            "en": "The thing you look forward to takes 「を」; 「会える ことに」 doesn't fit."
+          },
+          {
+            "zh": "「会える ように」是“为了能见面”，后面接「楽しみに して います」意思不通。",
+            "en": "「会える ように」 (so that we can meet) doesn't go with 'looking forward'."
+          },
+          {
+            "zh": "「ために」不接可能形「会える」，而且这里不是目的。",
+            "en": "「ために」 doesn't follow the potential 「会える」, and there's no purpose here."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-103",
+    "type": "bunshou",
+    "difficulty": 3,
+    "intro": "中村さんは 「子どもの ころの 思い出」の さくぶんを 書きました。",
+    "passage": "わたしは 小学生の とき、ピアノを 習って いました。母は 毎日 わたしに 一時間 ピアノを 練習 [[1]]。友だちが 外で 遊んで いるのに、わたしは 家で 練習しなければ ならなかったので、とても いやでした。\n中学生に なって、ピアノは やめて しまいました。[[2]]、高校の 文化祭で クラスの 友だちに 「ピアノを ひいて」と 頼まれました。久しぶりに ひいたら、みんなが 大きな 拍手を して くれました。その とき、子どもの ころ 母に [[3]] よかったと 思いました。\n今、わたしは 子どもたちに ピアノを 教える 仕事を して います。練習を いやがる 子どもを 見ると、あの ころの 母の 気持ちが 少し 分かる [[4]]。",
+    "tr": {
+      "zh": "我上小学的时候学过钢琴。妈妈每天让我练一个小时钢琴。朋友们在外面玩，我却必须在家练琴，所以非常讨厌。上了中学，我就把钢琴放弃了。然而在高中的文化节上，班里的同学请我“弹一下钢琴”。我好久没弹了，弹完大家都热烈地给我鼓掌。那时我想：小时候被妈妈逼着练琴，真是太好了。现在我的工作是教孩子们弹钢琴。看到不愿意练琴的孩子，我渐渐能理解一点当年妈妈的心情了。",
+      "en": "When I was in primary school I took piano lessons. My mother made me practise for an hour every day. My friends were playing outside, but I had to practise at home, so I hated it. When I started junior high, I gave up the piano. But at my high school's culture festival, my classmates asked me to play. I hadn't played for a long time, but when I did, everyone gave me a big round of applause. At that moment I thought I was glad my mother had made me practise as a child. Now my job is teaching piano to children. When I see a child who hates practising, I've come to understand a little of how my mother felt back then."
+    },
+    "questions": [
+      {
+        "options": [
+          "させました",
+          "させられました",
+          "しました",
+          "されました"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「母は わたしに 練習〜」，妈妈让我做，使役「AはBに〜させる」，用「させました」。",
+          "en": "「母は わたしに」 — the mother has the writer do it: causative 「A は B に 〜させる」, so 「させました」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「させられました」是使役被动，主语应是被迫的人（「わたしは 母に」），这里主语是「母は」。",
+            "en": "「させられました」 (was made to) needs the one forced as subject (「わたしは 母に」); here the subject is 「母は」."
+          },
+          {
+            "zh": "「しました」是妈妈自己练习，可句中有「わたしに」，而且后文说是“我”在家练琴。",
+            "en": "「しました」 would mean the mother practised herself; 「わたしに」 and the next sentence show it was the writer."
+          },
+          {
+            "zh": "「されました」是被动，意思变成“妈妈被练习”，说不通。",
+            "en": "「されました」 is passive — 'the mother was practised' makes no sense."
+          }
+        ]
+      },
+      {
+        "options": [
+          "ところが",
+          "だから",
+          "それに",
+          "つまり"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "已经放弃了钢琴，没想到高中时又被请去弹，出乎意料的转折用「ところが」。",
+          "en": "She'd given up the piano, yet unexpectedly she was asked to play in high school: 「ところが」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「だから」是“所以”，放弃钢琴不是被请去弹的原因。",
+            "en": "「だから」 (so) — giving up the piano isn't why she was asked to play."
+          },
+          {
+            "zh": "「それに」是“而且”，用来追加同类内容，前后并不是同一方向。",
+            "en": "「それに」 (what's more) adds a similar point; these two go opposite ways."
+          },
+          {
+            "zh": "「つまり」是“也就是说”，后文并不是对前文的换一种说法。",
+            "en": "「つまり」 (in other words) — the next sentence doesn't restate the previous one."
+          }
+        ]
+      },
+      {
+        "options": [
+          "練習させられて",
+          "練習させて",
+          "練習して もらわなくて",
+          "練習されて"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「母に」+ 被迫练琴：使役被动「練習させられて」，“被妈妈逼着练琴，真好”。",
+          "en": "「母に」 + being made to practise: causative-passive 「練習させられて」 — 'glad I was made to practise by my mother'."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「母に 練習させて」是“我让妈妈练琴”，人物关系反了。",
+            "en": "「母に 練習させて」 would be the writer making her mother practise."
+          },
+          {
+            "zh": "「練習して もらわなくて よかった」是“幸好没请妈妈练”，和大家鼓掌、庆幸学过琴的意思相反。",
+            "en": "「練習して もらわなくて よかった」 ('glad she didn't practise for me') is the opposite of what the applause made her feel."
+          },
+          {
+            "zh": "「練習されて」是普通被动，“被妈妈练习”说不通，被迫做某事要用使役被动。",
+            "en": "「練習されて」 is a plain passive and makes no sense; being made to do something is causative-passive."
+          }
+        ]
+      },
+      {
+        "options": [
+          "ように なりました",
+          "ことに なりました",
+          "ことが できます",
+          "ように 言いました"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "以前讨厌练琴，现在自己当了老师，渐渐能理解妈妈的心情了，状态变化用「〜ように なりました」。",
+          "en": "She used to hate it; now, as a teacher, she has come to understand her mother: a change — 「〜ように なりました」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「ことに なりました」是“（被）决定了……”，“理解心情”不是被决定的事。",
+            "en": "「ことに なりました」 is 'it has been decided that', which doesn't suit understanding someone's feelings."
+          },
+          {
+            "zh": "「分かる」本身已有“能”的意思，不说「分かる ことが できます」，而且这里讲的是变化。",
+            "en": "「分かる」 already means 'can understand', so 「分かる ことが できます」 isn't used — and the point is a change."
+          },
+          {
+            "zh": "「ように 言いました」是“叫别人……”，可是理解妈妈心情的是作者自己。",
+            "en": "「ように 言いました」 (told someone to) — it's the writer herself who understands."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-104",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "ホアさんは 「週末の 旅行」の さくぶんを 書きました。",
+    "passage": "今週の 土曜日、友だちと 富士山の 近くの 湖へ 行く 予定です。ニュースに よると、土曜日は 天気が [[1]]。友だちの 話では、湖の 近くに おいしい そば屋が ある そうです。わたしは そばが 大好きなので、ぜひ 行って みたいです。\nでも、心配な ことも あります。わたしは バスに 乗ると、すぐ 気分が 悪く なるのです。友だちに 話したら、「乗る 前に 薬を [[2]] 大丈夫だよ」と 言われました。それで、きのう 薬局で 薬を 買って [[3]]。\n湖の 写真を たくさん 撮って、帰ったら クラスの みんなに [[4]] と 思って います。",
+    "tr": {
+      "zh": "这个星期六，我打算和朋友去富士山附近的湖。据新闻说，星期六天气好。听朋友说，湖附近有一家好吃的荞麦面店。我非常喜欢荞麦面，很想去尝尝。不过也有担心的事：我一坐巴士就马上不舒服。跟朋友说了以后，朋友说：“上车前吃了药就没事了。”所以昨天我在药店先把药买好了。我想拍很多湖的照片，回来以后给班上的同学们看。",
+      "en": "This Saturday I'm going to a lake near Mt Fuji with a friend. According to the news, the weather on Saturday will be good. My friend says there's a good soba restaurant near the lake. I love soba, so I really want to try it. But there's one thing I'm worried about: as soon as I get on a bus, I start to feel sick. When I told my friend, she said, 'If you take some medicine before you get on, you'll be fine.' So yesterday I bought some medicine at the pharmacy in advance. I'm going to take lots of photos of the lake and show them to everyone in my class when I get back."
+    },
+    "questions": [
+      {
+        "options": [
+          "いい そうです",
+          "よさそうです",
+          "よかった そうです",
+          "いい ことに します"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「ニュースに よると」表示消息来源，后面用传闻「普通形＋そうです」：「いい そうです」。",
+          "en": "「ニュースに よると」 gives a source, so hearsay follows: plain form + 「そうです」 — 「いい そうです」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「よさそうです」是自己看了以后的样态判断“看起来好”，不和「〜に よると」搭配。",
+            "en": "「よさそうです」 is your own impression from looking ('looks good'); it doesn't go with 「〜に よると」."
+          },
+          {
+            "zh": "「よかった そうです」是过去，可星期六还没到。",
+            "en": "「よかった そうです」 is past, but Saturday hasn't come yet."
+          },
+          {
+            "zh": "「ことに します」是自己决定做某事，天气不能由人决定。",
+            "en": "「ことに します」 is deciding to do something; nobody decides the weather."
+          }
+        ]
+      },
+      {
+        "options": [
+          "飲めば",
+          "飲んでも",
+          "飲むのに",
+          "飲みながら"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "“吃了药就没事”，条件「〜ば 大丈夫」。",
+          "en": "'If you take medicine, you'll be fine' — a condition: 「〜ば 大丈夫」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「飲んでも 大丈夫」是“吃（药）也没关系”，意思变成允许，不是解决晕车的办法。",
+            "en": "「飲んでも 大丈夫」 means 'it's OK to take it' — permission, not a fix for her carsickness."
+          },
+          {
+            "zh": "「飲むのに」是“明明吃了却……”，和「大丈夫だよ」接不上。",
+            "en": "「飲むのに」 (even though you take it) doesn't lead into 'you'll be fine'."
+          },
+          {
+            "zh": "「飲みながら」是“一边吃药一边……”，而且句中说的是上车「前に」。",
+            "en": "「飲みながら」 (while taking it) — and the advice is to take it 「前に」, before getting on."
+          }
+        ]
+      },
+      {
+        "options": [
+          "おきました",
+          "ありました",
+          "いました",
+          "しまいました"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "为了星期六的旅行，昨天事先把药买好，用「〜て おきました」。",
+          "en": "She bought the medicine yesterday to be ready for Saturday: 「〜て おきました」 (did it in advance)."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「〜て あります」要用「薬が 買って あります」，前面是「薬を」，而且不说自己“昨天”做的动作。",
+            "en": "「〜て あります」 would need 「薬が」, and it describes a state, not what she did yesterday."
+          },
+          {
+            "zh": "「買って いました」是“（那时）正在买”，和「きのう」做完的一次性动作不符。",
+            "en": "「買って いました」 (was buying) doesn't fit a single purchase made yesterday."
+          },
+          {
+            "zh": "「買って しまいました」带有“不小心、遗憾”的语气，可她是为旅行特意准备的。",
+            "en": "「買って しまいました」 suggests regret or an accident; she bought it on purpose for the trip."
+          }
+        ]
+      },
+      {
+        "options": [
+          "見せて あげよう",
+          "見せて もらおう",
+          "見せられよう",
+          "見て くれよう"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "自己拍的照片给同学们看，是我为别人做，「〜て あげよう と 思って います」。",
+          "en": "She'll show her own photos to her classmates — doing something for others: 「〜て あげよう と 思って います」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「見せて もらおう」是“请同学给我看”，可照片是她自己拍的。",
+            "en": "「見せて もらおう」 would be getting the classmates to show her — but they're her photos."
+          },
+          {
+            "zh": "「見せられる」是被动或可能形，没有「見せられよう」这种意志形用法。",
+            "en": "「見せられよう」 isn't a usable volitional form of the passive/potential."
+          },
+          {
+            "zh": "「くれる」是别人为我做，不能用意志形「くれよう」说自己的打算。",
+            "en": "「くれる」 is others doing something for me; 「くれよう」 can't express her own plan."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-105",
+    "type": "bunshou",
+    "difficulty": 3,
+    "intro": "マイクさんは ホームステイで お世話に なった 家族に 手紙を 書きました。",
+    "passage": "田中さんの ご家族の みなさま\n先月は 一週間 本当に ありがとう ございました。お母さんが 毎日 作って [[1]] 料理は、どれも とても おいしかったです。特に、てんぷらの 味は 今でも 忘れられません。\n国へ 帰ってから、日本料理の 本を 買って、てんぷらを 作って みました。[[2]]、なかなか お母さんのように 上手に できません。今度 日本へ 行ったら、作り方を 教えて [[3]]。\n来年の 春、大学の 友だちと また 日本へ 行く ことに なりました。東京に 着いたら、すぐ 連絡します。みなさんに また [[4]] のを 楽しみに して います。\nマイク",
+    "tr": {
+      "zh": "田中家的各位：上个月这一个星期真的非常感谢。妈妈每天给我做的饭菜，每一道都很好吃。特别是天妇罗的味道，我到现在都忘不了。回国以后，我买了日本料理的书，试着做了天妇罗。但是，怎么也做不到像妈妈那么好。下次去日本的时候，能请您教我做法吗？明年春天，我要和大学的朋友再去日本。到了东京我会马上联系。期待再次见到大家。迈克",
+      "en": "Dear Tanaka family, thank you so much for the week last month. Every dish your mother made for me each day was delicious. I especially can't forget the taste of the tempura. After I got home I bought a Japanese cookbook and tried making tempura. But I just can't make it as well as your mother. Next time I'm in Japan, could you teach me how to make it? Next spring I'll be going to Japan again with friends from university. I'll get in touch as soon as I arrive in Tokyo. I'm looking forward to seeing you all again. — Mike"
+    },
+    "questions": [
+      {
+        "options": [
+          "くださった",
+          "いただいた",
+          "さしあげた",
+          "もらった"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「お母さんが」是做菜的人，为我做，用「くれる」的敬语「〜て くださった」。",
+          "en": "「お母さんが」 is the one who cooked, for the writer: the honorific of くれる, 「〜て くださった」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「いただく」要说「お母さんに 作って いただいた」，这里用了「が」。",
+            "en": "「いただいた」 would need 「お母さんに」; with 「が」 the mother is the giver."
+          },
+          {
+            "zh": "「さしあげた」是我为对方做，可做菜的是妈妈，方向反了。",
+            "en": "「さしあげた」 is the writer doing something for her — the wrong direction."
+          },
+          {
+            "zh": "「もらった」同样要用「お母さんに」，而且对恩人的妈妈也不够礼貌。",
+            "en": "「もらった」 also needs 「お母さんに」, and it's too plain for a thank-you letter."
+          }
+        ]
+      },
+      {
+        "options": [
+          "でも",
+          "それで",
+          "だから",
+          "それに"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "试着做了天妇罗，可是怎么也做不好，前后相反，用「でも」。",
+          "en": "He tried making tempura, but he can't make it well: a contrast, 「でも」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「それで」表示“因此”，试着做了并不是做不好的原因。",
+            "en": "「それで」 (and so) — trying to make it isn't the cause of failing."
+          },
+          {
+            "zh": "「だから」是“所以”，前后没有因果关系。",
+            "en": "「だから」 (so) — there's no cause and effect here."
+          },
+          {
+            "zh": "「それに」是追加“而且”，前后意思是转折而不是累加。",
+            "en": "「それに」 (what's more) adds a point; here the second sentence goes against the first."
+          }
+        ]
+      },
+      {
+        "options": [
+          "いただけませんか",
+          "さしあげませんか",
+          "いただきましたか",
+          "くださいましたか"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "请对方（妈妈）下次教自己，礼貌的请求用「〜て いただけませんか」。",
+          "en": "He's asking the mother to teach him next time: a polite request, 「〜て いただけませんか」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「教えて さしあげませんか」是“我来教您吧”，可要学做法的是迈克。",
+            "en": "「教えて さしあげませんか」 offers to teach her — but Mike is the one who wants to learn."
+          },
+          {
+            "zh": "「いただきましたか」是过去的疑问，可这是「今度 日本へ 行ったら」以后的事。",
+            "en": "「いただきましたか」 is a past question, but this is about his next visit."
+          },
+          {
+            "zh": "「くださいましたか」也是问过去的事，不能用来请求将来的事。",
+            "en": "「くださいましたか」 asks about the past too; it can't make a request for later."
+          }
+        ]
+      },
+      {
+        "options": [
+          "お会いできる",
+          "お会いに なる",
+          "会われる",
+          "お会いさせる"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "见大家的是迈克自己，对自己的动作用谦让语「お会いする」，再加可能「お会いできる」。",
+          "en": "Mike is the one meeting them, so the humble 「お会いする」 in the potential: 「お会いできる」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「お会いに なる」是尊敬语，用于对方的动作，不能用在自己身上。",
+            "en": "「お会いに なる」 is honorific, for the other person's actions, not your own."
+          },
+          {
+            "zh": "「会われる」是尊敬语或被动，都不能表示“我能见到大家”。",
+            "en": "「会われる」 is honorific or passive; neither means 'I can see you'."
+          },
+          {
+            "zh": "「お会いさせる」不是正确的敬语形式。",
+            "en": "「お会いさせる」 isn't a real keigo form."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-106",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "学校の 新聞に 次の 文章が 出て いました。",
+    "passage": "みなさんは 学校の 近くの 「さくら公園」を 知って いますか。この 公園は 五十年前に [[1]]、町で いちばん 古い 公園です。春に なると、たくさんの 人が 花見に 来ます。\nでも、去年は 公園の ごみが とても 多く なって、問題に なりました。[[2]]、今年から 公園に ごみ箱を 置かない ことに なりました。ごみは 自分で 家に 持って 帰らなければ なりません。\nこの 話を 聞いた とき、わたしは 「不便だな」と 思いました。でも、ごみ箱が なくなってから、公園は 前より ずっと きれいに [[3]]。\nみなさんも 公園へ 行く ときは、ごみ袋を 一つ [[4]] 行きましょう。",
+    "tr": {
+      "zh": "大家知道学校附近的“樱花公园”吗？这座公园是五十年前建的，是镇上最古老的公园。一到春天，就有很多人来赏花。但是去年公园的垃圾变得非常多，成了问题。因此，从今年起公园里不再放垃圾箱了。垃圾必须自己带回家。听到这件事的时候，我觉得“真不方便啊”。可是垃圾箱撤掉以后，公园变得比以前干净多了。大家去公园的时候，也带一个垃圾袋去吧。",
+      "en": "Do you know Sakura Park near our school? It was built fifty years ago and is the oldest park in town. Every spring lots of people come to see the cherry blossoms. But last year the rubbish in the park grew so much that it became a problem. So from this year, there are no bins in the park; you have to take your rubbish home yourself. When I heard this, I thought, 'That's inconvenient.' But since the bins were removed, the park has become much cleaner than before. When you go to the park, take a rubbish bag with you too."
+    },
+    "questions": [
+      {
+        "options": [
+          "作られた",
+          "作った",
+          "作らせた",
+          "作って いる"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "主语是「この 公園は」，公园是被建的一方，用被动「作られた」。",
+          "en": "The subject is 「この 公園は」; the park is what was built, so the passive 「作られた」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「作った」是主动，变成“公园建了（东西）”，主语不对。",
+            "en": "「作った」 is active — the park can't be the one who built something."
+          },
+          {
+            "zh": "「作らせた」是使役“让人建”，公园不能让别人做事。",
+            "en": "「作らせた」 (had someone build) — a park can't make anyone do anything."
+          },
+          {
+            "zh": "「作って いる」是“正在建”，和「五十年前に」「いちばん 古い」矛盾。",
+            "en": "「作って いる」 (is building) clashes with 「五十年前に」 and 'oldest'."
+          }
+        ]
+      },
+      {
+        "options": [
+          "それで",
+          "ところが",
+          "それとも",
+          "たとえば"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "垃圾太多成了问题，因此决定不放垃圾箱，前因后果用「それで」。",
+          "en": "The rubbish became a problem, and as a result the bins were removed: 「それで」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「ところが」表示出乎意料的转折，撤掉垃圾箱正是针对垃圾问题的结果。",
+            "en": "「ところが」 marks an unexpected turn, but removing the bins is the response to the problem."
+          },
+          {
+            "zh": "「それとも」是“还是”，用于二选一的疑问句。",
+            "en": "「それとも」 (or) is for choosing between two options in a question."
+          },
+          {
+            "zh": "「たとえば」是“比如”，后面并不是举例。",
+            "en": "「たとえば」 (for example) — what follows isn't an example."
+          }
+        ]
+      },
+      {
+        "options": [
+          "なりました",
+          "しました",
+          "なりそうです",
+          "して おきました"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "主语是「公園は」，自然变干净了，非意志的变化用「きれいに なりました」。",
+          "en": "The subject is 「公園は」: it became cleaner by itself — 「きれいに なりました」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「きれいに しました」是有人去打扫，公园自己不能“把……弄干净”。",
+            "en": "「きれいに しました」 means someone cleaned it; the park can't do that."
+          },
+          {
+            "zh": "「なりそうです」是“好像要变干净”，可「なくなってから」说的是已经发生的变化。",
+            "en": "「なりそうです」 (looks like it will) — 「なくなってから」 shows the change has already happened."
+          },
+          {
+            "zh": "「して おきました」是有人事先准备，主语是公园，说不通。",
+            "en": "「して おきました」 is someone preparing in advance; the park is the subject."
+          }
+        ]
+      },
+      {
+        "options": [
+          "持って",
+          "持たせて",
+          "持たれて",
+          "持つと"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "“带着垃圾袋去”是「持って 行く」，这里劝大家自己带去。",
+          "en": "'Take a bag with you' is 「持って 行く」; the writer urges readers to bring one themselves."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「持たせて 行く」是“让别人拿着去”，可前文说垃圾要自己带回家。",
+            "en": "「持たせて 行く」 is having someone else carry it; the text says you take your own rubbish home."
+          },
+          {
+            "zh": "「持たれて」是被动，“被拿着”说不通。",
+            "en": "「持たれて」 is passive — 'being held' makes no sense here."
+          },
+          {
+            "zh": "「持つと 行きましょう」不成立，「と」后面不能接劝诱「〜ましょう」。",
+            "en": "「持つと 行きましょう」 doesn't work; conditional 「と」 can't be followed by 「〜ましょう」."
+          }
+        ]
+      }
+    ]
+  }
+]

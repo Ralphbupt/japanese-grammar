@@ -1,0 +1,582 @@
+[
+  {
+    "id": "n2-l61-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson61#1"
+    ],
+    "difficulty": 1,
+    "stem": "これはあくまで私個人の意見（　）ので、参考程度に聞いてください。",
+    "options": [
+      "にほかならない",
+      "に過ぎない",
+      "に限る",
+      "に違いない"
+    ],
+    "answer": 1,
+    "full": "これはあくまで私個人の意見に過ぎないので、参考程度に聞いてください。",
+    "tr": {
+      "zh": "这只不过是我个人的意见，请仅作参考。",
+      "en": "This is merely my personal opinion, so please take it just as a reference."
+    },
+    "why": {
+      "zh": "「あくまで」「参考程度に」表示淡化、谦虚，用「に過ぎない」（只不过是）。",
+      "en": "「あくまで」 and 「参考程度に」 play it down modestly — 「に過ぎない」 (merely)."
+    },
+    "wrong": [
+      {
+        "zh": "「にほかならない」是“正是……”的强烈断定，和“仅作参考”的谦虚语气相反。",
+        "en": "「にほかならない」 (nothing other than) asserts strongly — the opposite of \"just for reference\"."
+      },
+      null,
+      {
+        "zh": "「に限る」是“……最好”，“我的个人意见最好”和后半句不符。",
+        "en": "「に限る」 (… is best) doesn't fit \"please take it just as a reference\"."
+      },
+      {
+        "zh": "「に違いない」是“一定是”，说话人不会推测自己的意见“一定是个人意见”。",
+        "en": "「に違いない」 (must be) is a guess; a speaker doesn't guess that their own view is their opinion."
+      }
+    ]
+  },
+  {
+    "id": "n2-l61-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson61#1"
+    ],
+    "difficulty": 1,
+    "stem": "私にできたのは、ほんの少しの手伝い（　）。",
+    "options": [
+      "に限る",
+      "にほかならない",
+      "に過ぎない",
+      "どころではない"
+    ],
+    "answer": 2,
+    "full": "私にできたのは、ほんの少しの手伝いに過ぎない。",
+    "tr": {
+      "zh": "我能做的，只不过是一点点帮忙而已。",
+      "en": "All I could do was help a tiny bit."
+    },
+    "why": {
+      "zh": "「ほんの少し」表示数量很少、谦虚，用「に過ぎない」（只不过是）。",
+      "en": "「ほんの少し」 (just a little) is modest understatement — 「に過ぎない」 (merely)."
+    },
+    "wrong": [
+      {
+        "zh": "「に限る」是“……最好”，“一点点帮忙最好”意思不通。",
+        "en": "「に限る」 (… is best) makes no sense here."
+      },
+      {
+        "zh": "「にほかならない」是强调“正是”，和「ほんの少し」的淡化语气矛盾。",
+        "en": "「にほかならない」 (precisely) is emphatic, clashing with the understatement 「ほんの少し」."
+      },
+      null,
+      {
+        "zh": "「どころではない」是“哪有心思……”，“哪有心思帮一点点忙”不符合句意。",
+        "en": "「どころではない」 (no time for) doesn't fit \"all I could do was\"."
+      }
+    ]
+  },
+  {
+    "id": "n2-l61-003",
+    "type": "narabe",
+    "refs": [
+      "lesson61#1"
+    ],
+    "difficulty": 2,
+    "stem": "彼は [_] [★] [_] [_] と謙遜した。",
+    "options": [
+      "過ぎない",
+      "偶然",
+      "成功したのは",
+      "に"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "彼は成功したのは偶然に過ぎないと謙遜した。",
+    "tr": {
+      "zh": "他谦虚地说，成功只不过是偶然。",
+      "en": "He modestly said that his success was merely luck."
+    },
+    "why": {
+      "zh": "主题「成功したのは」在前，后接「偶然に過ぎない」：成功したのは → 偶然 → に → 過ぎない。★ 是「偶然」。",
+      "en": "The topic 「成功したのは」 comes first, then 「偶然に過ぎない」: 成功したのは → 偶然 → に → 過ぎない. The ★ is 「偶然」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l61-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson61#2"
+    ],
+    "difficulty": 2,
+    "stem": "今回の優勝は決して偶然ではない。チーム全員が努力を重ねてきた結果（　）。",
+    "options": [
+      "に過ぎない",
+      "に限る",
+      "にほかならない",
+      "どころではない"
+    ],
+    "answer": 2,
+    "full": "今回の優勝は決して偶然ではない。チーム全員が努力を重ねてきた結果にほかならない。",
+    "tr": {
+      "zh": "这次夺冠绝不是偶然，正是全队成员不断努力的结果。",
+      "en": "This championship was no fluke. It is nothing other than the result of the whole team's hard work."
+    },
+    "why": {
+      "zh": "前句「決して偶然ではない」否定了偶然，后句强烈断定真正的原因，用「にほかならない」（正是）。",
+      "en": "「決して偶然ではない」 rules out luck, so the next sentence asserts the real cause — 「にほかならない」 (nothing other than)."
+    },
+    "wrong": [
+      {
+        "zh": "「に過ぎない」是“只不过是”，淡化努力的意义，和前句强调的语气相反。",
+        "en": "「に過ぎない」 (merely) belittles the effort, against the emphatic tone of the first sentence."
+      },
+      {
+        "zh": "「に限る」是“……最好”，“努力的结果最好”意思不通。",
+        "en": "「に限る」 (… is best) makes no sense here."
+      },
+      null,
+      {
+        "zh": "「どころではない」是“哪谈得上……”，和夺冠的原因说明接不上。",
+        "en": "「どころではない」 (no time for) doesn't explain the win."
+      }
+    ]
+  },
+  {
+    "id": "n2-l61-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson61#2"
+    ],
+    "difficulty": 2,
+    "stem": "彼女が合格できたのは、才能があったからではない。毎日欠かさず勉強を続けた（　）。",
+    "options": [
+      "にほかならない",
+      "からに限る",
+      "からにほかならない",
+      "からといって"
+    ],
+    "answer": 2,
+    "full": "彼女が合格できたのは、才能があったからではない。毎日欠かさず勉強を続けたからにほかならない。",
+    "tr": {
+      "zh": "她能合格不是因为有天赋，正是因为每天坚持不懈地学习。",
+      "en": "She didn't pass because she was talented. It was precisely because she studied every day without fail."
+    },
+    "why": {
+      "zh": "「〜のは」后面强调原因时，动词要先加「から」：「続けたからにほかならない」（正是因为……）。",
+      "en": "When stressing a reason after 「〜のは」, the verb takes 「から」 first: 「続けたからにほかならない」 (precisely because)."
+    },
+    "wrong": [
+      {
+        "zh": "表示原因时动词后不能直接接「にほかならない」，要用「からにほかならない」。",
+        "en": "For a reason, 「にほかならない」 can't attach directly to the verb; it needs 「から」."
+      },
+      {
+        "zh": "「に限る」是“……最好”，「からに限る」不成立。",
+        "en": "「に限る」 means \"… is best\"; 「からに限る」 isn't a form."
+      },
+      null,
+      {
+        "zh": "「からといって」后面必须接后半句，不能结句。",
+        "en": "「からといって」 must be followed by another clause; it can't end the sentence."
+      }
+    ]
+  },
+  {
+    "id": "n2-l61-006",
+    "type": "narabe",
+    "refs": [
+      "lesson61#2"
+    ],
+    "difficulty": 2,
+    "stem": "この法律が作られたのは、[_] [_] [_] [★]。",
+    "options": [
+      "守る",
+      "にほかならない",
+      "ため",
+      "市民の安全を"
+    ],
+    "order": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "full": "この法律が作られたのは、市民の安全を守るためにほかならない。",
+    "tr": {
+      "zh": "制定这部法律，正是为了保护市民的安全。",
+      "en": "This law was made for no other reason than to protect citizens' safety."
+    },
+    "why": {
+      "zh": "「市民の安全を守る」修饰「ため」，后接「にほかならない」：市民の安全を → 守る → ため → にほかならない。★ 是「にほかならない」。",
+      "en": "「市民の安全を守る」 modifies 「ため」, followed by 「にほかならない」: 市民の安全を → 守る → ため → にほかならない. The ★ is 「にほかならない」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l61-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson61#3"
+    ],
+    "difficulty": 1,
+    "stem": "疲れがたまったときは、何も考えずにゆっくり休む（　）。",
+    "options": [
+      "に限って",
+      "に限る",
+      "に限らず",
+      "に限られる"
+    ],
+    "answer": 1,
+    "full": "疲れがたまったときは、何も考えずにゆっくり休むに限る。",
+    "tr": {
+      "zh": "疲劳积累的时候，什么都不想、好好休息最好了。",
+      "en": "When you're worn out, there's nothing better than resting and not thinking about anything."
+    },
+    "why": {
+      "zh": "说话人推荐最佳做法“好好休息”，句末用「に限る」（……最好）。",
+      "en": "The speaker recommends the best thing to do — sentence-final 「に限る」 (nothing beats…)."
+    },
+    "wrong": [
+      {
+        "zh": "「に限って」是“偏偏……”，后面要接意外的事，不能结句。",
+        "en": "「に限って」 (of all times) needs a following clause about something unexpected."
+      },
+      null,
+      {
+        "zh": "「に限らず」是“不限于……”，后面要接分句，不能结句。",
+        "en": "「に限らず」 (not only) needs a following clause; it can't end the sentence."
+      },
+      {
+        "zh": "「に限られる」是“限于……”，“限于休息”不是推荐，意思不通。",
+        "en": "「に限られる」 (is limited to) isn't a recommendation and doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n2-l61-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson61#3"
+    ],
+    "difficulty": 2,
+    "stem": "体調が悪いときは、無理をしない（　）。",
+    "options": [
+      "わけにはいかない",
+      "に限らない",
+      "どころではない",
+      "に限る"
+    ],
+    "answer": 3,
+    "full": "体調が悪いときは、無理をしないに限る。",
+    "tr": {
+      "zh": "身体不舒服的时候，还是别勉强最好。",
+      "en": "When you're not feeling well, it's best not to push yourself."
+    },
+    "why": {
+      "zh": "「に限る」可以接ない形，“不勉强最好”是给出的建议。",
+      "en": "「に限る」 can follow the ない-form: \"best not to push yourself\" is the advice."
+    },
+    "wrong": [
+      {
+        "zh": "「しないわけにはいかない」是“不能不（勉强）”，等于必须勉强，和身体不好的情况矛盾。",
+        "en": "「しないわけにはいかない」 means \"you have to push yourself\", the opposite of sensible advice here."
+      },
+      {
+        "zh": "「に限らない」是“不限于……”，“不限于不勉强”意思不通。",
+        "en": "「に限らない」 (not limited to) makes no sense here."
+      },
+      {
+        "zh": "「どころではない」是“哪有心思……”，“哪有心思不勉强”意思不通。",
+        "en": "「どころではない」 (no time for) makes no sense with 「無理をしない」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l61-009",
+    "type": "narabe",
+    "refs": [
+      "lesson61#3"
+    ],
+    "difficulty": 2,
+    "stem": "ストレスが [_] [★] [_] [_]。",
+    "options": [
+      "体を動かす",
+      "に限る",
+      "外に出て",
+      "たまったら"
+    ],
+    "order": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "full": "ストレスがたまったら外に出て体を動かすに限る。",
+    "tr": {
+      "zh": "压力积累了的话，到外面去活动活动身体最好了。",
+      "en": "When stress builds up, nothing beats getting outside and moving your body."
+    },
+    "why": {
+      "zh": "条件「たまったら」在前，「外に出て体を動かす」是推荐的做法，句末「に限る」：たまったら → 外に出て → 体を動かす → に限る。★ 是「外に出て」。",
+      "en": "The condition 「たまったら」 comes first, then the recommended action 「外に出て体を動かす」, and 「に限る」 ends it: たまったら → 外に出て → 体を動かす → に限る. The ★ is 「外に出て」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l61-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson61#4"
+    ],
+    "difficulty": 1,
+    "stem": "彼女は人目（　）、駅のホームで大声で泣き出した。",
+    "options": [
+      "もかまわず",
+      "をものともせず",
+      "にかかわらず",
+      "を問わず"
+    ],
+    "answer": 0,
+    "full": "彼女は人目もかまわず、駅のホームで大声で泣き出した。",
+    "tr": {
+      "zh": "她不顾旁人的目光，在车站站台上放声大哭起来。",
+      "en": "Not caring who was watching, she burst into loud sobs on the station platform."
+    },
+    "why": {
+      "zh": "“旁人的目光”是本应在意却不在意的东西，用「もかまわず」（不顾）。",
+      "en": "Other people's eyes are something you'd normally mind but she didn't — 「もかまわず」 (not caring about)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「をものともせず」是“不畏（困难）”，褒扬克服困难的勇气，“旁人目光”不是要克服的困难。",
+        "en": "「をものともせず」 (undaunted by) praises courage against a hardship; onlookers aren't a hardship."
+      },
+      {
+        "zh": "「にかかわらず」接“有无、天气”等对立或变动的词，「人目にかかわらず」不成立。",
+        "en": "「にかかわらず」 follows contrasting or variable terms (有無, 天候 …); 「人目にかかわらず」 doesn't work."
+      },
+      {
+        "zh": "「を問わず」是“不论……”，接“男女、年龄”等范围，不接「人目」。",
+        "en": "「を問わず」 (regardless of) follows ranges like age or gender, not 「人目」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l61-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson61#4"
+    ],
+    "difficulty": 2,
+    "stem": "服が汚れる（　）、子どもたちは泥だらけになって遊んでいる。",
+    "options": [
+      "もかまわず",
+      "をものともせず",
+      "のもかまわず",
+      "にもかまわず"
+    ],
+    "answer": 2,
+    "full": "服が汚れるのもかまわず、子どもたちは泥だらけになって遊んでいる。",
+    "tr": {
+      "zh": "孩子们不在乎衣服会弄脏，玩得满身是泥。",
+      "en": "Not caring that their clothes are getting dirty, the children are playing and getting covered in mud."
+    },
+    "why": {
+      "zh": "动词后接「かまわず」时要先用「の」名词化：「汚れるのもかまわず」。",
+      "en": "After a verb, 「もかまわず」 needs 「の」 to nominalize it: 「汚れるのもかまわず」."
+    },
+    "wrong": [
+      {
+        "zh": "「もかまわず」不能直接接动词辞书形，要加「の」。",
+        "en": "「もかまわず」 can't attach directly to a dictionary-form verb; it needs 「の」."
+      },
+      {
+        "zh": "「をものともせず」只接名词，而且表示“不畏困难”，衣服脏不是困难。",
+        "en": "「をものともせず」 only follows nouns and means braving a hardship; dirty clothes aren't one."
+      },
+      null,
+      {
+        "zh": "没有「にもかまわず」这种说法，正确形式是「（の）もかまわず」。",
+        "en": "「にもかまわず」 isn't a form; it's 「（の）もかまわず」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l61-012",
+    "type": "narabe",
+    "refs": [
+      "lesson61#4"
+    ],
+    "difficulty": 2,
+    "stem": "隣の住人は、[_] [_] [★] [_] 音楽を流している。",
+    "options": [
+      "大音量で",
+      "のもかまわず",
+      "深夜",
+      "だという"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "隣の住人は、深夜だというのもかまわず大音量で音楽を流している。",
+    "tr": {
+      "zh": "隔壁的住户不顾已是深夜，把音乐放得很大声。",
+      "en": "My neighbour is playing music at full volume, never mind that it's the middle of the night."
+    },
+    "why": {
+      "zh": "「深夜だという」用「の」名词化后接「もかまわず」，「大音量で」修饰「流している」：深夜 → だという → のもかまわず → 大音量で。★ 是「のもかまわず」。",
+      "en": "「深夜だという」 is nominalized with 「の」 and takes 「もかまわず」; 「大音量で」 modifies 「流している」: 深夜 → だという → のもかまわず → 大音量で. The ★ is 「のもかまわず」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l61-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson61#5"
+    ],
+    "difficulty": 2,
+    "stem": "救助隊は激しい暴風雨（　）、被災地へ向かった。",
+    "options": [
+      "をめぐって",
+      "を通じて",
+      "をもとに",
+      "をものともせず"
+    ],
+    "answer": 3,
+    "full": "救助隊は激しい暴風雨をものともせず、被災地へ向かった。",
+    "tr": {
+      "zh": "救援队不畏猛烈的暴风雨，奔赴灾区。",
+      "en": "Undaunted by the fierce storm, the rescue team headed for the disaster area."
+    },
+    "why": {
+      "zh": "暴风雨是困难，救援队毫不退缩地出发，是褒扬勇气的「をものともせず」（不畏）。",
+      "en": "The storm is a hardship the team braved without flinching — 「をものともせず」 (undaunted by)."
+    },
+    "wrong": [
+      {
+        "zh": "「をめぐって」是“围绕……（争论）”，“围绕暴风雨奔赴灾区”说不通。",
+        "en": "「をめぐって」 (concerning, around a dispute) makes no sense with heading out."
+      },
+      {
+        "zh": "「を通じて」是“通过……／在整个期间”，“通过暴风雨奔赴灾区”说不通。",
+        "en": "「を通じて」 (through, via) makes no sense with a storm here."
+      },
+      {
+        "zh": "「をもとに」是“以……为基础”，暴风雨不是行动的依据。",
+        "en": "「をもとに」 (based on) — the storm isn't a basis for anything."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l61-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson61#5"
+    ],
+    "difficulty": 2,
+    "stem": "選手たちは厳しい暑さをものとも（　）、最後まで全力で戦った。",
+    "options": [
+      "されず",
+      "させず",
+      "せず",
+      "すれば"
+    ],
+    "answer": 2,
+    "full": "選手たちは厳しい暑さをものともせず、最後まで全力で戦った。",
+    "tr": {
+      "zh": "选手们不畏酷暑，拼尽全力战斗到了最后。",
+      "en": "Undaunted by the fierce heat, the athletes fought with everything they had to the very end."
+    },
+    "why": {
+      "zh": "固定形式是「をものともせず」（「せず」=「しないで」），表示不畏困难。",
+      "en": "The set form is 「をものともせず」 (「せず」 = 「しないで」): undaunted by a hardship."
+    },
+    "wrong": [
+      {
+        "zh": "「されず」是被动的否定，「ものともされず」不是这个句型的形式。",
+        "en": "「されず」 is a negative passive; 「ものともされず」 isn't this pattern."
+      },
+      {
+        "zh": "「させず」是使役的否定，「ものともさせず」不是这个句型的形式。",
+        "en": "「させず」 is a negative causative; 「ものともさせず」 isn't this pattern."
+      },
+      null,
+      {
+        "zh": "「すれば」是假定，「ものともすれば」不成立，也接不上后面的“战斗到最后”。",
+        "en": "「すれば」 is conditional; 「ものともすれば」 isn't a form and doesn't fit the rest."
+      }
+    ]
+  },
+  {
+    "id": "n2-l61-015",
+    "type": "narabe",
+    "refs": [
+      "lesson61#5"
+    ],
+    "difficulty": 2,
+    "stem": "彼女は [★] [_] [_] [_]、世界記録を打ち立てた。",
+    "options": [
+      "ものともせず",
+      "壁",
+      "年齢の",
+      "を"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "彼女は年齢の壁をものともせず、世界記録を打ち立てた。",
+    "tr": {
+      "zh": "她不畏年龄的壁垒，创造了世界纪录。",
+      "en": "Undaunted by the barrier of age, she set a world record."
+    },
+    "why": {
+      "zh": "名词「年齢の壁」接「をものともせず」：年齢の → 壁 → を → ものともせず。★ 是「年齢の」。",
+      "en": "The noun 「年齢の壁」 takes 「をものともせず」: 年齢の → 壁 → を → ものともせず. The ★ is 「年齢の」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

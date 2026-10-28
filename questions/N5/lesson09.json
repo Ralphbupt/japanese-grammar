@@ -1,0 +1,353 @@
+[
+  {
+    "id": "n5-l09-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson09#1"
+    ],
+    "difficulty": 1,
+    "stem": "この 道を まっすぐ（　）、右に 銀行が あります。",
+    "options": [
+      "行くと",
+      "行ったと",
+      "行きと",
+      "行けと"
+    ],
+    "answer": 0,
+    "full": "この 道を まっすぐ 行くと、右に 銀行が あります。",
+    "tr": {
+      "zh": "沿这条路一直走，右边就有银行。",
+      "en": "If you go straight down this road, there's a bank on the right."
+    },
+    "why": {
+      "zh": "指路时“一……就……”的必然结果用「と」，接在动词辞书形后面：行く＋と。",
+      "en": "Giving directions — do A and B is always there — uses 「と」, which follows the dictionary form: 行く＋と."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「と」表示条件时接辞书形，不接た形；「行ったと」不能表示“走的话”。",
+        "en": "Conditional 「と」 follows the dictionary form, not the た-form; 「行ったと」 can't mean \"if you go\"."
+      },
+      {
+        "zh": "「と」不接ます形词干，「行きと」不成立。",
+        "en": "「と」 doesn't attach to the ます-stem; 「行きと」 isn't a form."
+      },
+      {
+        "zh": "「行け」是命令形，「行けと」是“叫（人）去”，不是条件。",
+        "en": "「行け」 is the imperative; 「行けと」 means \"(told someone) to go\", not a condition."
+      }
+    ]
+  },
+  {
+    "id": "n5-l09-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson09#1",
+      "lesson09#2"
+    ],
+    "difficulty": 2,
+    "stem": "朝 窓を（　）、きれいな 山が 見えました。",
+    "options": [
+      "開けると",
+      "開ければ",
+      "開けるなら",
+      "開けても"
+    ],
+    "answer": 0,
+    "full": "朝 窓を 開けると、きれいな 山が 見えました。",
+    "tr": {
+      "zh": "早上一打开窗户，就看见了美丽的山。",
+      "en": "When I opened the window in the morning, I could see a beautiful mountain."
+    },
+    "why": {
+      "zh": "后句是过去时「見えました」，表示“一做A，就发现了B”的过去发现。这种用法可以用「と」。",
+      "en": "The main clause is past (「見えました」): \"I did A and found B\" — a past discovery, which 「と」 can express."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ば」是假设条件，不能用在已经发生的过去事实上。",
+        "en": "「ば」 is hypothetical; it can't describe something that already happened."
+      },
+      {
+        "zh": "「なら」是承接话题的假设，不能表示过去实际发生的先后动作。",
+        "en": "「なら」 sets up a topic-based \"if\"; it can't narrate a past sequence of events."
+      },
+      {
+        "zh": "「〜ても」是“即使……也”，和“开窗看到了山”的顺接意思不符。",
+        "en": "「〜ても」 means \"even if\", which doesn't fit \"I opened it and saw the mountain\"."
+      }
+    ]
+  },
+  {
+    "id": "n5-l09-003",
+    "type": "narabe",
+    "refs": [
+      "lesson09#1"
+    ],
+    "difficulty": 2,
+    "stem": "右に [_] [★] [_] [_] 見えます。",
+    "options": [
+      "駅が",
+      "と",
+      "曲がる",
+      "大きな"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "右に 曲がると 大きな 駅が 見えます。",
+    "tr": {
+      "zh": "向右转就能看到一个大车站。",
+      "en": "If you turn right, you'll see a big station."
+    },
+    "why": {
+      "zh": "「右に曲がる」＋「と」（一……就）＋「大きな駅が見えます」。「大きな」必须放在「駅が」前面。★ 在第二格，是「と」。",
+      "en": "「右に曲がる」 ＋ 「と」 (once you do it) ＋ 「大きな駅が見えます」; 「大きな」 must come right before 「駅が」. The ★ is the second slot: 「と」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l09-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson09#2"
+    ],
+    "difficulty": 1,
+    "stem": "時間が（　）、一緒に 映画を 見に 行きませんか。",
+    "options": [
+      "あれば",
+      "あると",
+      "ありば",
+      "あって"
+    ],
+    "answer": 0,
+    "full": "時間が あれば、一緒に 映画を 見に 行きませんか。",
+    "tr": {
+      "zh": "有时间的话，要不要一起去看电影？",
+      "en": "If you have time, would you like to go see a movie together?"
+    },
+    "why": {
+      "zh": "“有时间的话”是假设条件，后面是邀请。「ある」是一类动词，假定形是う段→え段＋ば：あれば。",
+      "en": "\"If you have time\" is a hypothetical, followed by an invitation. 「ある」 is Group 1: う-row → え-row + ば gives 「あれば」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「と」后面不能接邀请、请求等意志表达，「あると、行きませんか」不成立。",
+        "en": "「と」 can't be followed by an invitation or request, so 「あると、行きませんか」 doesn't work."
+      },
+      {
+        "zh": "假定形要把う段变成え段（る→れ），「ありば」是错误变形。",
+        "en": "The conditional changes the う-row sound to え-row (る→れ); 「ありば」 is a wrong form."
+      },
+      {
+        "zh": "「あって」是て形，只是连接两个句子，不表示“如果有的话”，也不能接邀请。",
+        "en": "「あって」 just links clauses; it doesn't mean \"if you have\" and can't lead into an invitation."
+      }
+    ]
+  },
+  {
+    "id": "n5-l09-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson09#2"
+    ],
+    "difficulty": 2,
+    "stem": "あした 天気が（　）、公園で お弁当を 食べましょう。",
+    "options": [
+      "よければ",
+      "いければ",
+      "よいば",
+      "いいと"
+    ],
+    "answer": 0,
+    "full": "あした 天気が よければ、公園で お弁当を 食べましょう。",
+    "tr": {
+      "zh": "明天天气好的话，就在公园吃便当吧。",
+      "en": "If the weather is nice tomorrow, let's eat our lunch in the park."
+    },
+    "why": {
+      "zh": "い形容词的假定形是去い＋ければ。「いい」比较特殊，要用「よい」变形：よければ。",
+      "en": "An い-adjective's conditional drops い and adds ければ. 「いい」 is irregular and conjugates from 「よい」: 「よければ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「いい」变形时要换成「よ」，没有「いければ」这个形式。",
+        "en": "「いい」 changes to 「よ」 when it conjugates; 「いければ」 doesn't exist."
+      },
+      {
+        "zh": "い形容词假定形是「〜ければ」，不是直接加「ば」。",
+        "en": "The い-adjective conditional is 「〜ければ」, not just adding 「ば」."
+      },
+      {
+        "zh": "「と」后面不能接「〜ましょう」这样的提议。",
+        "en": "「と」 can't be followed by a suggestion like 「〜ましょう」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l09-006",
+    "type": "narabe",
+    "refs": [
+      "lesson09#2"
+    ],
+    "difficulty": 2,
+    "stem": "もっと [★] [_] [_] [_] ますよ。",
+    "options": [
+      "試験に",
+      "合格",
+      "勉強すれば",
+      "でき"
+    ],
+    "order": [
+      2,
+      0,
+      1,
+      3
+    ],
+    "full": "もっと 勉強すれば 試験に 合格 できますよ。",
+    "tr": {
+      "zh": "再多学一点的话，就能通过考试。",
+      "en": "If you study more, you'll be able to pass the exam."
+    },
+    "why": {
+      "zh": "「もっと勉強すれば」（更努力学习的话）是条件，「試験に合格できます」是结果。★ 在第一格，是「勉強すれば」。",
+      "en": "「もっと勉強すれば」 (if you study more) is the condition and 「試験に合格できます」 the result. The ★ is the first slot: 「勉強すれば」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l09-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson09#3",
+      "lesson09#1"
+    ],
+    "difficulty": 1,
+    "stem": "駅に（　）、電話して ください。迎えに 行きます。",
+    "options": [
+      "着いたら",
+      "着くと",
+      "着いても",
+      "着くのに"
+    ],
+    "answer": 0,
+    "full": "駅に 着いたら、電話して ください。迎えに 行きます。",
+    "tr": {
+      "zh": "到了车站请给我打电话，我去接你。",
+      "en": "Call me when you get to the station. I'll come and pick you up."
+    },
+    "why": {
+      "zh": "“到了车站之后再打电话”，前一个动作完成后接请求，用「たら」。",
+      "en": "\"Once you've arrived, call me\": a completed action followed by a request takes 「たら」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「と」后面不能接「〜てください」这样的请求。",
+        "en": "「と」 can't be followed by a request like 「〜てください」."
+      },
+      {
+        "zh": "「〜ても」是“即使到了也”，和“到了就打电话”的意思相反。",
+        "en": "「〜ても」 means \"even if you arrive\", the opposite of what's meant."
+      },
+      {
+        "zh": "「のに」是“明明……却”，表示不满，不能接请求。",
+        "en": "「のに」 means \"even though\" with a complaint; it can't lead into a request."
+      }
+    ]
+  },
+  {
+    "id": "n5-l09-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson09#3",
+      "lesson09#2"
+    ],
+    "difficulty": 2,
+    "stem": "きのう 夜 おそく 家に（　）、だれも いませんでした。",
+    "options": [
+      "帰ったら",
+      "帰れば",
+      "帰るなら",
+      "帰りたら"
+    ],
+    "answer": 0,
+    "full": "きのう 夜 おそく 家に 帰ったら、だれも いませんでした。",
+    "tr": {
+      "zh": "昨天深夜回到家一看，谁都不在。",
+      "en": "When I got home late last night, nobody was there."
+    },
+    "why": {
+      "zh": "「きのう」和「いませんでした」说明是过去的事：回到家，结果发现没人。过去的意外发现用「たら」。",
+      "en": "「きのう」 and 「いませんでした」 make this a past event: I got home and found nobody. A past discovery takes 「たら」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ば」是假设，不能用于已经发生的过去事实。",
+        "en": "「ば」 is hypothetical; it can't describe a past fact."
+      },
+      {
+        "zh": "「なら」是承接话题的假设，不能叙述过去实际发生的事。",
+        "en": "「なら」 is a topic-based \"if\"; it can't narrate what actually happened."
+      },
+      {
+        "zh": "「たら」接在た形后面：帰る→帰った→帰ったら，「帰りたら」是错误变形。",
+        "en": "「たら」 attaches to the た-form: 帰る→帰った→帰ったら. 「帰りたら」 is a wrong form."
+      }
+    ]
+  },
+  {
+    "id": "n5-l09-009",
+    "type": "narabe",
+    "refs": [
+      "lesson09#3"
+    ],
+    "difficulty": 2,
+    "stem": "仕事が [★] [_] [_] [_] ください。",
+    "options": [
+      "電話",
+      "私に",
+      "して",
+      "終わったら"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "仕事が 終わったら 私に 電話 して ください。",
+    "tr": {
+      "zh": "工作结束后请给我打电话。",
+      "en": "Please call me when you finish work."
+    },
+    "why": {
+      "zh": "「仕事が終わったら」（工作结束后）＋「私に電話してください」（请给我打电话）。★ 在第一格，是「終わったら」。",
+      "en": "「仕事が終わったら」 (once work is over) ＋ 「私に電話してください」 (please call me). The ★ is the first slot: 「終わったら」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

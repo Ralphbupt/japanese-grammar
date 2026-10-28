@@ -1,0 +1,353 @@
+[
+  {
+    "id": "n5-m1-001",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "ねこは つくえの <<下>>に います。",
+    "options": ["した", "しだ", "しも", "もと"],
+    "answer": 0,
+    "tr": { "zh": "猫在桌子下面。", "en": "The cat is under the desk." },
+    "why": { "zh": "表示位置“下面”的「下」读训读「した」，「つくえの した」就是桌子下面。", "en": "As a position word, 「下」 is read した: 「つくえの した」 is under the desk." },
+    "wrong": [
+      null,
+      { "zh": "「した」的「た」不浊化，没有「しだ」这个读法。", "en": "The た of した isn't voiced; しだ isn't a reading." },
+      { "zh": "「しも」也是「下」的读音，但只用在「川下」等少数词里，表示位置不说「つくえの しも」。", "en": "しも is another reading of 「下」, but only in a few words; you don't say 「つくえの しも」 for under a desk." },
+      { "zh": "「もと」是「下」的书面读法（如「〜の下で」），不用来说桌子底下。", "en": "もと is a literary reading (as in 「〜の下で」), not used for under a desk." }
+    ]
+  },
+  {
+    "id": "n5-m1-002",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "<<今年>>の なつは とても あついです。",
+    "options": ["ことし", "こんねん", "いまとし", "こどし"],
+    "answer": 0,
+    "tr": { "zh": "今年夏天非常热。", "en": "This summer is very hot." },
+    "why": { "zh": "「今年」是特殊读法，整个词读「ことし」，不能拆开按单个汉字读。", "en": "「今年」 has a special whole-word reading, ことし; it isn't read kanji by kanji." },
+    "wrong": [
+      null,
+      { "zh": "按音读拼成「こんねん」，但「今年」不这样读（对比「今月（こんげつ）」）。", "en": "こんねん pieces together on-readings, but 「今年」 isn't read that way (compare 「今月」 こんげつ)." },
+      { "zh": "按训读拼成「いまとし」，没有这个词。", "en": "いまとし pieces together kun-readings; it isn't a word." },
+      { "zh": "「ことし」的「と」不浊化，没有「こどし」。", "en": "The と in ことし isn't voiced; こどし isn't a word." }
+    ]
+  },
+  {
+    "id": "n5-m1-003",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "わたしは まいあさ おちゃを <<飲みます>>。",
+    "options": ["のみます", "のります", "よみます", "やすみます"],
+    "answer": 0,
+    "tr": { "zh": "我每天早上喝茶。", "en": "I drink tea every morning." },
+    "why": { "zh": "「飲」是“喝”，「飲みます」读「のみます」，和「おちゃを」搭配。", "en": "「飲」 means drink; 「飲みます」 is のみます, which goes with 「おちゃを」." },
+    "wrong": [
+      null,
+      { "zh": "「のります」是「乗ります」（乘坐），只差一个假名，容易看错。", "en": "のります is 「乗ります」 (ride) — one kana off, easy to mix up." },
+      { "zh": "「よみます」是「読みます」（读），汉字不同。", "en": "よみます is 「読みます」 (read), a different kanji." },
+      { "zh": "「やすみます」是「休みます」（休息），汉字不同。", "en": "やすみます is 「休みます」 (rest), a different kanji." }
+    ]
+  },
+  {
+    "id": "n5-m1-004",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "りんごを <<六つ>> ください。",
+    "options": ["むっつ", "むつ", "ろくつ", "みっつ"],
+    "answer": 0,
+    "tr": { "zh": "请给我六个苹果。", "en": "Six apples, please." },
+    "why": { "zh": "「〜つ」数东西用训读：「六つ」读「むっつ」，中间有促音「っ」。", "en": "The 〜つ counter uses native numbers: 「六つ」 is むっつ, with a small っ." },
+    "wrong": [
+      null,
+      { "zh": "漏了促音「っ」，要读「むっつ」。", "en": "The small っ is missing; it's むっつ." },
+      { "zh": "「ろく」是音读，「〜つ」前面不用音读。", "en": "ろく is the on-reading; 〜つ doesn't take it." },
+      { "zh": "「みっつ」是「三つ」（三个）。", "en": "みっつ is 「三つ」 (three)." }
+    ]
+  },
+  {
+    "id": "n5-m1-005",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "デパートの <<入口>>で まって います。",
+    "options": ["いりぐち", "いりくち", "いれぐち", "にゅうぐち"],
+    "answer": 0,
+    "tr": { "zh": "我在百货商店的入口等着。", "en": "I'm waiting at the entrance of the department store." },
+    "why": { "zh": "「入口」读「いりぐち」：「入」读「いり」，「口」在后面浊化成「ぐち」。", "en": "「入口」 is いりぐち: 「入」 is いり and 「口」 becomes ぐち after it." },
+    "wrong": [
+      null,
+      { "zh": "「口」在这里要浊化成「ぐち」，不读「くち」。", "en": "「口」 is voiced to ぐち here, not くち." },
+      { "zh": "「いれ」是「入れる」（放进去）的形式，「入口」不读「いれ」。", "en": "いれ comes from 「入れる」 (put in); 「入口」 isn't read いれ." },
+      { "zh": "「にゅう」是「入」的音读，但「入口」整个词用训读。", "en": "にゅう is the on-reading of 「入」, but 「入口」 uses kun-readings." }
+    ]
+  },
+  {
+    "id": "n5-m1-006",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "この まちは こうえんが <<多い>>です。",
+    "options": ["おおい", "おうい", "おいい", "おおきい"],
+    "answer": 0,
+    "tr": { "zh": "这个城市公园很多。", "en": "This town has a lot of parks." },
+    "why": { "zh": "「多い」（多）读「おおい」，长音写成「おお」。", "en": "「多い」 (many) is おおい, with the long vowel written おお." },
+    "wrong": [
+      null,
+      { "zh": "这里的长音写「おお」，不写「おう」。", "en": "This long vowel is spelled おお, not おう." },
+      { "zh": "没有「おいい」这个词，是把「おおい」读歪了。", "en": "おいい isn't a word; it's a garbled おおい." },
+      { "zh": "「おおきい」是「大きい」（大），汉字不同。", "en": "おおきい is 「大きい」 (big), a different kanji." }
+    ]
+  },
+  {
+    "id": "n5-m1-007",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "わたしの <<後ろ>>に だれか います。",
+    "options": ["うしろ", "うしる", "うじろ", "あとろ"],
+    "answer": 0,
+    "tr": { "zh": "我身后有人。", "en": "There's someone behind me." },
+    "why": { "zh": "「後ろ」（后面）读「うしろ」，送假名「ろ」就是读音的最后一个音。", "en": "「後ろ」 (behind) is うしろ; the okurigana ろ is its last sound." },
+    "wrong": [
+      null,
+      { "zh": "送假名写的是「ろ」，读音也必须以「ろ」结尾。", "en": "The okurigana is ろ, so the reading must end in ろ, not る." },
+      { "zh": "「し」不浊化，没有「うじろ」。", "en": "し isn't voiced; うじろ isn't a word." },
+      { "zh": "「あと」也是「後」的读音（「後で」），但「後ろ」读「うしろ」。", "en": "あと is another reading of 「後」 (as in 「後で」), but 「後ろ」 is うしろ." }
+    ]
+  },
+  {
+    "id": "n5-m1-008",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "まいあさ <<みず>>を いっぱい のみます。",
+    "options": ["水", "氷", "永", "木"],
+    "answer": 0,
+    "tr": { "zh": "我每天早上喝一杯水。", "en": "I drink a glass of water every morning." },
+    "why": { "zh": "「みず」（水）写作「水」。", "en": "みず (water) is written 「水」." },
+    "wrong": [
+      null,
+      { "zh": "「氷」读「こおり」（冰），左上多了一点。", "en": "「氷」 is こおり (ice) — it has an extra dot." },
+      { "zh": "「永」读「えい」（永久），上面多了一点。", "en": "「永」 is えい (eternal) — it has a dot on top." },
+      { "zh": "「木」读「き」（树），字形相近但不是“水”。", "en": "「木」 is き (tree), similar in shape but not water." }
+    ]
+  },
+  {
+    "id": "n5-m1-009",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "ゆうがた、<<にし>>の そらが あかく なりました。",
+    "options": ["西", "四", "酉", "画"],
+    "answer": 0,
+    "tr": { "zh": "傍晚，西边的天空变红了。", "en": "In the evening, the western sky turned red." },
+    "why": { "zh": "「にし」（西）写作「西」。", "en": "にし (west) is written 「西」." },
+    "wrong": [
+      null,
+      { "zh": "「四」读「よん／し」（四），是数字。", "en": "「四」 is よん / し (four), a number." },
+      { "zh": "「酉」读「とり」（十二地支的“酉”），里面多一横。", "en": "「酉」 is the zodiac sign for rooster, with an extra stroke inside." },
+      { "zh": "「画」读「が」（画），如「映画」，字形不同。", "en": "「画」 is が (picture), as in 「映画」, a different shape." }
+    ]
+  },
+  {
+    "id": "n5-m1-010",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "まいばん へやで おんがくを <<ききます>>。",
+    "options": ["聞きます", "間きます", "問きます", "開きます"],
+    "answer": 0,
+    "tr": { "zh": "我每天晚上在房间里听音乐。", "en": "I listen to music in my room every night." },
+    "why": { "zh": "「ききます」（听）写作「聞きます」：「門」里面是「耳」，用耳朵听。", "en": "ききます (listen) is 「聞きます」: 「耳」 (ear) inside 「門」." },
+    "wrong": [
+      null,
+      { "zh": "「間」读「あいだ／かん」（之间），「門」里是「日」。", "en": "「間」 is あいだ / かん (between), with 「日」 inside 「門」." },
+      { "zh": "「問」读「もん」（问题），「門」里是「口」。", "en": "「問」 is もん (question), with 「口」 inside 「門」." },
+      { "zh": "「開」读「ひらく／あく」（开），「開きます」不读「ききます」。", "en": "「開」 is ひらく / あく (open); 「開きます」 isn't ききます." }
+    ]
+  },
+  {
+    "id": "n5-m1-011",
+    "type": "hyouki",
+    "difficulty": 3,
+    "stem": "<<せんげつ>> ひっこしを しました。",
+    "options": ["先月", "先日", "失月", "先用"],
+    "answer": 0,
+    "tr": { "zh": "我上个月搬家了。", "en": "I moved house last month." },
+    "why": { "zh": "「せんげつ」（上个月）写作「先月」：「先」＋「月」。", "en": "せんげつ (last month) is 「先月」: 「先」 + 「月」." },
+    "wrong": [
+      null,
+      { "zh": "「先日」读「せんじつ」（前几天），不是「せんげつ」。", "en": "「先日」 is せんじつ (the other day), not せんげつ." },
+      { "zh": "「失」读「しつ」（失去），字形和「先」相近，但不是「先」。", "en": "「失」 is しつ (lose), not 「先」." },
+      { "zh": "「用」读「よう」（事情、用），不是「月」。", "en": "「用」 is よう (business), not 「月」." }
+    ]
+  },
+  {
+    "id": "n5-m1-012",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "まいにち <<ばす>>で かいしゃへ いきます。",
+    "options": ["バス", "パス", "バヌ", "ハス"],
+    "answer": 0,
+    "tr": { "zh": "我每天坐公交车去公司。", "en": "I go to work by bus every day." },
+    "why": { "zh": "「ばす」（公交车）写作「バス」：浊音「バ」＋「ス」。", "en": "ばす (bus) is 「バス」: voiced バ + ス." },
+    "wrong": [
+      null,
+      { "zh": "「パ」是半浊音（圆圈），「パス」读「ぱす」。", "en": "パ has the circle (p sound); パス reads ぱす." },
+      { "zh": "「ヌ」读「ぬ」，和「ス」只差一笔。", "en": "ヌ is ぬ — one stroke away from ス." },
+      { "zh": "「ハ」没有浊点，「ハス」读「はす」。", "en": "ハ has no voicing marks; ハス reads はす." }
+    ]
+  },
+  {
+    "id": "n5-m1-013",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "わたしの いえは えきから（　）ですから、あるいて 5ふんで いけます。",
+    "options": ["ちかい", "とおい", "ながい", "たかい"],
+    "answer": 0,
+    "tr": { "zh": "我家离车站很近，走路五分钟就能到。", "en": "My house is close to the station, so I can walk there in five minutes." },
+    "why": { "zh": "走路五分钟就到，说明离车站「ちかい」（近）。", "en": "Five minutes on foot means it's 「ちかい」 (close) to the station." },
+    "wrong": [
+      null,
+      { "zh": "「とおい」是“远”，和走五分钟就到矛盾。", "en": "「とおい」 (far) contradicts a five-minute walk." },
+      { "zh": "「ながい」说东西长、时间长，不说「えきから ながい」。", "en": "「ながい」 (long) is for objects and time, not distance from a place." },
+      { "zh": "「たかい」是“高、贵”，不能表示距离。", "en": "「たかい」 (high / expensive) doesn't describe distance." }
+    ]
+  },
+  {
+    "id": "n5-m1-014",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "しらない ことばが ありましたから、（　）を ひきました。",
+    "options": ["じしょ", "ざっし", "しんぶん", "てがみ"],
+    "answer": 0,
+    "tr": { "zh": "因为有不认识的词，我查了词典。", "en": "There was a word I didn't know, so I looked it up in the dictionary." },
+    "why": { "zh": "查词典是固定搭配「じしょを ひく」，遇到不认识的词就查词典。", "en": "Looking up a word is 「じしょを ひく」 — the set phrase for using a dictionary." },
+    "wrong": [
+      null,
+      { "zh": "「ざっし」（杂志）用「よむ」，不能「ひく」，也查不了生词。", "en": "A 「ざっし」 (magazine) is read, not 「ひく」-ed, and won't explain words." },
+      { "zh": "「しんぶん」（报纸）用「よむ」，不说「しんぶんを ひく」。", "en": "A 「しんぶん」 (newspaper) is read; you don't 「ひく」 it." },
+      { "zh": "「てがみ」（信）用「かく／よむ」，和查生词无关。", "en": "A 「てがみ」 (letter) is written or read, not used to look up words." }
+    ]
+  },
+  {
+    "id": "n5-m1-015",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "あねは まいにち（　）を ひきます。",
+    "options": ["ピアノ", "テレビ", "ラジオ", "カメラ"],
+    "answer": 0,
+    "tr": { "zh": "姐姐每天弹钢琴。", "en": "My sister plays the piano every day." },
+    "why": { "zh": "弹钢琴说「ピアノを ひく」，四个选项里只有乐器能「ひく」。", "en": "You play the piano with 「ひく」: 「ピアノを ひく」. Only the instrument fits." },
+    "wrong": [
+      null,
+      { "zh": "「テレビ」用「みる」或「つける」，不能「ひく」。", "en": "A 「テレビ」 is watched or turned on, not 「ひく」-ed." },
+      { "zh": "「ラジオ」用「きく」，不能「ひく」。", "en": "A 「ラジオ」 is listened to, not 「ひく」-ed." },
+      { "zh": "「カメラ」用来「とる」（拍照），不能「ひく」。", "en": "A 「カメラ」 takes pictures; you don't 「ひく」 it." }
+    ]
+  },
+  {
+    "id": "n5-m1-016",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "あたらしい カメラで ふじさんの しゃしんを（　）。",
+    "options": ["とりました", "かきました", "ひきました", "おしました"],
+    "answer": 0,
+    "tr": { "zh": "我用新相机拍了富士山的照片。", "en": "I took photos of Mt. Fuji with my new camera." },
+    "why": { "zh": "拍照是「しゃしんを とる」，而且用的是「カメラで」。", "en": "Taking a photo is 「しゃしんを とる」, and it's done 「カメラで」." },
+    "wrong": [
+      null,
+      { "zh": "「かく」是写、画，用相机不能「かく」。", "en": "「かく」 is write / draw — not something a camera does." },
+      { "zh": "「ひく」用于弹琴、查词典等，不说「しゃしんを ひく」。", "en": "「ひく」 is for playing instruments or looking up words, not photos." },
+      { "zh": "「おす」是“按、推”，可以按快门，但不说「しゃしんを おす」。", "en": "「おす」 is push; you press a button, but never 「しゃしんを おす」." }
+    ]
+  },
+  {
+    "id": "n5-m1-017",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "この おてらは とても（　）ですから、がいこくからも ひとが たくさん きます。",
+    "options": ["ゆうめい", "げんき", "じょうず", "ひま"],
+    "answer": 0,
+    "tr": { "zh": "这座寺庙非常有名，所以连外国也有很多人来。", "en": "This temple is very famous, so many people come from abroad too." },
+    "why": { "zh": "因为「ゆうめい」（有名），才会有很多外国人来。", "en": "It's 「ゆうめい」 (famous), which is why people come from abroad." },
+    "wrong": [
+      null,
+      { "zh": "「げんき」（健康、有精神）用于人，不说寺庙。", "en": "「げんき」 (healthy, lively) describes people, not a temple." },
+      { "zh": "「じょうず」（擅长）说人的技能，寺庙不能「じょうず」。", "en": "「じょうず」 (skilled) is about a person's ability, not a temple." },
+      { "zh": "「ひま」（有空）说人有时间，不说寺庙，也解释不了人多。", "en": "「ひま」 (free) is about a person's time; it doesn't fit a temple or explain the crowds." }
+    ]
+  },
+  {
+    "id": "n5-m1-018",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "そらが くらく なりましたね。あしたは（　） あめでしょう。",
+    "options": ["たぶん", "ぜんぜん", "ぜひ", "ゆっくり"],
+    "answer": 0,
+    "tr": { "zh": "天变暗了啊。明天大概会下雨吧。", "en": "The sky has got dark. It'll probably rain tomorrow." },
+    "why": { "zh": "「でしょう」表示推测，和表示“大概”的「たぶん」搭配。", "en": "「でしょう」 is a guess, and 「たぶん」 (probably) goes with it." },
+    "wrong": [
+      null,
+      { "zh": "「ぜんぜん」后面接否定，「ぜんぜん あめでしょう」不成立。", "en": "「ぜんぜん」 needs a negative; 「ぜんぜん あめでしょう」 doesn't work." },
+      { "zh": "「ぜひ」用于愿望、请求（「ぜひ きて ください」），不能用于推测。", "en": "「ぜひ」 is for wishes and requests, not guesses." },
+      { "zh": "「ゆっくり」修饰动作（慢慢地），不能修饰「あめでしょう」。", "en": "「ゆっくり」 (slowly) modifies actions, not 「あめでしょう」." }
+    ]
+  },
+  {
+    "id": "n5-m1-019",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<この へやは きたないです。>>",
+    "options": [
+      "この へやは きれいじゃ ありません。",
+      "この へやは きれいです。",
+      "この へやは しずかじゃ ありません。",
+      "この へやは ひろくないです。"
+    ],
+    "answer": 0,
+    "tr": { "zh": "这个房间很脏。", "en": "This room is dirty." },
+    "why": { "zh": "「きたない」（脏）＝「きれいじゃ ありません」（不干净）。", "en": "「きたない」 (dirty) means 「きれいじゃ ありません」 (not clean)." },
+    "wrong": [
+      null,
+      { "zh": "「きれいです」是干净，和「きたない」相反。", "en": "「きれいです」 (clean) is the opposite of 「きたない」." },
+      { "zh": "「しずかじゃ ありません」是“不安静”，说的是声音，不是脏。", "en": "「しずかじゃ ありません」 (not quiet) is about noise, not dirt." },
+      { "zh": "「ひろくないです」是“不宽敞”，说的是大小，不是脏。", "en": "「ひろくないです」 (not spacious) is about size, not dirt." }
+    ]
+  },
+  {
+    "id": "n5-m1-020",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<いもうとは はたちです。>>",
+    "options": [
+      "いもうとは 20さいです。",
+      "いもうとは 2さいです。",
+      "いもうとは 8さいです。",
+      "いもうとは 10さいです。"
+    ],
+    "answer": 0,
+    "tr": { "zh": "妹妹二十岁。", "en": "My younger sister is twenty." },
+    "why": { "zh": "「はたち」是二十岁的特殊说法，＝「20さい」。", "en": "「はたち」 is the special word for twenty years old: 「20さい」." },
+    "wrong": [
+      null,
+      { "zh": "两岁是「2さい（にさい）」，别和「ふたつ」「ふつか」混。", "en": "Two years old is 「2さい」 (にさい); don't confuse はたち with ふたつ." },
+      { "zh": "八岁是「8さい（はっさい）」，只是开头的「は」相同。", "en": "Eight is 「8さい」 (はっさい); only the は matches." },
+      { "zh": "十岁是「10さい（じゅっさい）」，也可以说「とお」，不是「はたち」。", "en": "Ten is 「10さい」 (じゅっさい, or とお), not はたち." }
+    ]
+  },
+  {
+    "id": "n5-m1-021",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "<<しゅうまつは いつも としょかんで べんきょうします。>>",
+    "options": [
+      "どようびと にちようびは いつも としょかんで べんきょうします。",
+      "げつようびと かようびは いつも としょかんで べんきょうします。",
+      "どようびと にちようびは ときどき としょかんで べんきょうします。",
+      "まいにち としょかんで べんきょうします。"
+    ],
+    "answer": 0,
+    "tr": { "zh": "周末我总是在图书馆学习。", "en": "On weekends I always study at the library." },
+    "why": { "zh": "「しゅうまつ」（周末）＝「どようびと にちようび」，「いつも」也要保留。", "en": "「しゅうまつ」 (the weekend) is 「どようびと にちようび」, and 「いつも」 has to stay." },
+    "wrong": [
+      null,
+      { "zh": "星期一和星期二是工作日，不是周末。", "en": "Monday and Tuesday are weekdays, not the weekend." },
+      { "zh": "日子对了，但「いつも」（总是）变成了「ときどき」（有时）。", "en": "The days are right, but 「いつも」 (always) became 「ときどき」 (sometimes)." },
+      { "zh": "「まいにち」是每天，不只是周末。", "en": "「まいにち」 is every day, not just the weekend." }
+    ]
+  }
+]

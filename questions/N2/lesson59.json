@@ -1,0 +1,582 @@
+[
+  {
+    "id": "n2-l59-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson59#1"
+    ],
+    "difficulty": 1,
+    "stem": "ブランド品だ（　）、品質がいいとは限らない。",
+    "options": [
+      "からといって",
+      "からには",
+      "からこそ",
+      "ばかりに"
+    ],
+    "answer": 0,
+    "full": "ブランド品だからといって、品質がいいとは限らない。",
+    "tr": {
+      "zh": "虽说是名牌货，但质量不一定好。",
+      "en": "Just because it's a brand-name product doesn't mean the quality is good."
+    },
+    "why": {
+      "zh": "后半句「とは限らない」（不一定）否定了“名牌→质量好”这个推论，前面用反驳因果的「からといって」。",
+      "en": "The second half, 「とは限らない」 (not necessarily), denies the inference \"brand → good quality\" — that's 「からといって」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「からには」是“既然……就（应该）……”，后面要接决心或义务，不接「とは限らない」。",
+        "en": "「からには」 (now that…) leads to a resolve or obligation, not to 「とは限らない」."
+      },
+      {
+        "zh": "「からこそ」是“正因为……才”，强调原因，和“不一定好”的否定推论矛盾。",
+        "en": "「からこそ」 (precisely because) stresses the reason, which clashes with \"not necessarily good\"."
+      },
+      {
+        "zh": "「ばかりに」接名词时要用「である」，而且表示“就因为……导致坏结果”，和这里的意思不符。",
+        "en": "「ばかりに」 needs 「である」 after a noun, and means \"only because… (bad result)\", which isn't the point here."
+      }
+    ]
+  },
+  {
+    "id": "n2-l59-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson59#1"
+    ],
+    "difficulty": 2,
+    "stem": "留学したからといって、誰でも外国語が話せるように（　）。",
+    "options": [
+      "なるに違いない",
+      "なるわけではない",
+      "なるはずだ",
+      "なるに決まっている"
+    ],
+    "answer": 1,
+    "full": "留学したからといって、誰でも外国語が話せるようになるわけではない。",
+    "tr": {
+      "zh": "虽说去留过学，但并不是谁都能说外语。",
+      "en": "Just because you studied abroad doesn't mean anyone can speak a foreign language."
+    },
+    "why": {
+      "zh": "「からといって」后面要接否定推论的说法，如「わけではない」「とは限らない」。",
+      "en": "「からといって」 has to be followed by a denial such as 「わけではない」 or 「とは限らない」."
+    },
+    "wrong": [
+      {
+        "zh": "「に違いない」是“一定会”，肯定了推论，和「からといって」的反驳语气相反。",
+        "en": "「に違いない」 (must) affirms the inference that 「からといって」 is there to reject."
+      },
+      null,
+      {
+        "zh": "「はずだ」是“理应会”，同样是肯定推论，和「からといって」冲突。",
+        "en": "「はずだ」 (should) also affirms the inference, clashing with 「からといって」."
+      },
+      {
+        "zh": "「に決まっている」是“肯定会”，同样是肯定推论，不能接在「からといって」后面。",
+        "en": "「に決まっている」 (bound to) affirms the inference too, so it can't follow 「からといって」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l59-003",
+    "type": "narabe",
+    "refs": [
+      "lesson59#1"
+    ],
+    "difficulty": 2,
+    "stem": "試験に一度落ちた [_] [_] [★] [_]。",
+    "options": [
+      "ない",
+      "からといって",
+      "わけではない",
+      "才能が"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "試験に一度落ちたからといって才能がないわけではない。",
+    "tr": {
+      "zh": "虽说考试落榜过一次，但并不是就没有才能。",
+      "en": "Failing an exam once doesn't mean you have no talent."
+    },
+    "why": {
+      "zh": "「落ちたからといって」后接被否定的结论「才能がない」，再用「わけではない」否定：からといって → 才能が → ない → わけではない。★ 是「ない」。",
+      "en": "「落ちたからといって」 is followed by the conclusion being denied, 「才能がない」, then 「わけではない」: からといって → 才能が → ない → わけではない. The ★ is 「ない」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l59-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson59#2"
+    ],
+    "difficulty": 1,
+    "stem": "健康に悪いと知り（　）、つい夜更かしをしてしまう。",
+    "options": [
+      "ものの",
+      "つつある",
+      "つつも",
+      "ながらに"
+    ],
+    "answer": 2,
+    "full": "健康に悪いと知りつつも、つい夜更かしをしてしまう。",
+    "tr": {
+      "zh": "虽然知道对健康不好，却总是忍不住熬夜。",
+      "en": "Although I know it's bad for my health, I end up staying up late anyway."
+    },
+    "why": {
+      "zh": "「知り」是ます形词干，后面接「つつも」表示“虽然……却……”，和后半句「ついしてしまう」相呼应。",
+      "en": "「知り」 is the masu-stem; 「つつも」 attaches to it to mean \"although…, yet…\", matching 「つい…してしまう」."
+    },
+    "wrong": [
+      {
+        "zh": "「ものの」接普通形（「知っているものの」），不能接ます形词干「知り」。",
+        "en": "「ものの」 follows the plain form (「知っているものの」), not the stem 「知り」."
+      },
+      {
+        "zh": "「つつある」是“正在逐渐……”，表示变化的进行，不能用来连接两个分句。",
+        "en": "「つつある」 means \"is gradually…\" — a change in progress — and can't link two clauses."
+      },
+      null,
+      {
+        "zh": "「ながらに」只用于「涙ながらに」「生まれながらに」等固定说法，「知りながらに」不成立（应为「知りながら」）。",
+        "en": "「ながらに」 only lives in set phrases like 「涙ながらに」; 「知りながらに」 isn't a form (it would be 「知りながら」)."
+      }
+    ]
+  },
+  {
+    "id": "n2-l59-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson59#2"
+    ],
+    "difficulty": 2,
+    "stem": "近年、地球の温暖化は確実に進み（　）。",
+    "options": [
+      "つつも",
+      "つつある",
+      "かねる",
+      "がたい"
+    ],
+    "answer": 1,
+    "full": "近年、地球の温暖化は確実に進みつつある。",
+    "tr": {
+      "zh": "近年来，全球变暖确实在不断加剧。",
+      "en": "In recent years global warming has been steadily advancing."
+    },
+    "why": {
+      "zh": "句子在句末描述一个正在逐渐发展的变化（「近年」「確実に」），用「つつある」（正在……）。",
+      "en": "The sentence ends by describing a change in progress (「近年」, 「確実に」) — 「つつある」 (is gradually…)."
+    },
+    "wrong": [
+      {
+        "zh": "「つつも」是“虽然……却……”，后面必须还有一个分句，不能结句。",
+        "en": "「つつも」 (although…) needs a following clause; it can't end the sentence."
+      },
+      null,
+      {
+        "zh": "「かねる」是“难以（做）”，表示说话人不便做某事，不能用于“温暖化”这种自然变化。",
+        "en": "「かねる」 means someone finds it hard to bring themselves to do something; it doesn't fit a natural process like warming."
+      },
+      {
+        "zh": "「がたい」是“难以……”，和「確実に進み」（确实在推进）意思矛盾。",
+        "en": "「がたい」 (hard to…) contradicts 「確実に」 (steadily)."
+      }
+    ]
+  },
+  {
+    "id": "n2-l59-006",
+    "type": "narabe",
+    "refs": [
+      "lesson59#2"
+    ],
+    "difficulty": 2,
+    "stem": "彼は [_] [★] [_] [_]、上司の指示に従った。",
+    "options": [
+      "つつも",
+      "納得",
+      "と思い",
+      "できない"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "彼は納得できないと思いつつも、上司の指示に従った。",
+    "tr": {
+      "zh": "他虽然觉得无法接受，却还是听从了上司的指示。",
+      "en": "Although he felt he couldn't accept it, he followed his boss's instructions."
+    },
+    "why": {
+      "zh": "「納得できない」是想的内容，「と思い」是ます形词干，后接「つつも」：納得 → できない → と思い → つつも。★ 是「できない」。",
+      "en": "「納得できない」 is what he thought, 「と思い」 is the masu-stem, and 「つつも」 attaches to it: 納得 → できない → と思い → つつも. The ★ is 「できない」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l59-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson59#3"
+    ],
+    "difficulty": 1,
+    "stem": "賛成するにせよ反対する（　）、理由をはっきり述べるべきだ。",
+    "options": [
+      "にしては",
+      "にせよ",
+      "にしたら",
+      "にもかかわらず"
+    ],
+    "answer": 1,
+    "full": "賛成するにせよ反対するにせよ、理由をはっきり述べるべきだ。",
+    "tr": {
+      "zh": "无论赞成还是反对，都应该清楚地说明理由。",
+      "en": "Whether you're for or against it, you should state your reasons clearly."
+    },
+    "why": {
+      "zh": "前面已经有「賛成するにせよ」，并列两种情况时用「AにせよBにせよ」（无论A还是B）。",
+      "en": "「賛成するにせよ」 is already there; two alternatives are paired as 「AにせよBにせよ」 (whether A or B)."
+    },
+    "wrong": [
+      {
+        "zh": "「にしては」是“就……而言（意外）”，不能和「にせよ」配对。",
+        "en": "「にしては」 (for a…, surprisingly) can't pair with 「にせよ」."
+      },
+      null,
+      {
+        "zh": "「にしたら」是“站在……的立场”，接人名词，不接动词「反対する」。",
+        "en": "「にしたら」 (from someone's point of view) follows a person, not the verb 「反対する」."
+      },
+      {
+        "zh": "「にもかかわらず」是“尽管……”，表示既成事实的逆接，不能和「にせよ」并列。",
+        "en": "「にもかかわらず」 (despite) concedes a fact; it can't pair with 「にせよ」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l59-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson59#3"
+    ],
+    "difficulty": 2,
+    "stem": "たとえ冗談だった（　）、人を傷つけるような発言は許されない。",
+    "options": [
+      "ものだから",
+      "ばかりに",
+      "にせよ",
+      "だけに"
+    ],
+    "answer": 2,
+    "full": "たとえ冗談だったにせよ、人を傷つけるような発言は許されない。",
+    "tr": {
+      "zh": "即使是开玩笑，伤人的发言也是不能容许的。",
+      "en": "Even if it was a joke, remarks that hurt people are not acceptable."
+    },
+    "why": {
+      "zh": "「たとえ」要和让步表达呼应（ても／にせよ），「冗談だったにせよ」= 即使是玩笑也……。",
+      "en": "「たとえ」 needs a concessive partner (ても / にせよ): 「冗談だったにせよ」 = even if it was a joke."
+    },
+    "wrong": [
+      {
+        "zh": "「ものだから」是辩解的理由（因为……嘛），和「たとえ」不呼应，意思也不通。",
+        "en": "「ものだから」 gives an excuse (because…), which doesn't go with 「たとえ」."
+      },
+      {
+        "zh": "「ばかりに」是“就因为……导致坏结果”，表示原因，不能和「たとえ」搭配。",
+        "en": "「ばかりに」 (only because… bad result) gives a cause and can't go with 「たとえ」."
+      },
+      null,
+      {
+        "zh": "「だけに」是“正因为……更加……”，表示原因，和「たとえ」的让步不呼应。",
+        "en": "「だけに」 (all the more because) is causal, not concessive, so it doesn't fit 「たとえ」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l59-009",
+    "type": "narabe",
+    "refs": [
+      "lesson59#3"
+    ],
+    "difficulty": 2,
+    "stem": "どんな理由がある [★] [_] [_] [_] ことは許されない。",
+    "options": [
+      "なしに",
+      "にせよ",
+      "休む",
+      "連絡"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "どんな理由があるにせよ連絡なしに休むことは許されない。",
+    "tr": {
+      "zh": "无论有什么理由，不联系就请假都是不允许的。",
+      "en": "Whatever the reason, taking time off without notice is not allowed."
+    },
+    "why": {
+      "zh": "「どんな理由があるにせよ」是让步，后面「連絡なしに休む」修饰「こと」：にせよ → 連絡 → なしに → 休む。★ 是「にせよ」。",
+      "en": "「どんな理由があるにせよ」 is the concession, then 「連絡なしに休む」 modifies 「こと」: にせよ → 連絡 → なしに → 休む. The ★ is 「にせよ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l59-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson59#4"
+    ],
+    "difficulty": 1,
+    "stem": "今から急いで（　）、もう終電には間に合わないだろう。",
+    "options": [
+      "行ったところ",
+      "行くところで",
+      "行ったところで",
+      "行ったところだ"
+    ],
+    "answer": 2,
+    "full": "今から急いで行ったところで、もう終電には間に合わないだろう。",
+    "tr": {
+      "zh": "就算现在赶紧去，也赶不上末班车了吧。",
+      "en": "Even if you hurry there now, you probably won't make the last train."
+    },
+    "why": {
+      "zh": "“现在赶去也来不及”是“做了也没用”的意思，用「た形＋ところで」。",
+      "en": "\"Even if you go now, you won't make it\" — doing it is pointless: ta-form ＋ 「ところで」."
+    },
+    "wrong": [
+      {
+        "zh": "「たところ」是“（做了之后）结果发现……”，叙述已发生的事，和「今から」「だろう」矛盾。",
+        "en": "「たところ」 reports what happened after doing something, which clashes with 「今から」 and 「だろう」."
+      },
+      {
+        "zh": "「ところで」表示“徒劳”时要接た形，「行くところで」不成立。",
+        "en": "The futile 「ところで」 needs the ta-form; 「行くところで」 doesn't work."
+      },
+      null,
+      {
+        "zh": "「行ったところだ」是“刚去了”，是句末形式，后面不能再接分句。",
+        "en": "「行ったところだ」 (have just gone) ends a sentence; it can't lead into another clause."
+      }
+    ]
+  },
+  {
+    "id": "n2-l59-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson59#4"
+    ],
+    "difficulty": 2,
+    "stem": "いくら説明した（　）、彼は聞く耳を持たないだろう。",
+    "options": [
+      "ばかりに",
+      "あまり",
+      "末に",
+      "ところで"
+    ],
+    "answer": 3,
+    "full": "いくら説明したところで、彼は聞く耳を持たないだろう。",
+    "tr": {
+      "zh": "无论怎么解释，他大概都听不进去吧。",
+      "en": "No matter how much I explain, he probably won't listen."
+    },
+    "why": {
+      "zh": "「いくら〜たところで」= 再怎么……也没用，后接消极结果「聞く耳を持たない」。",
+      "en": "「いくら〜たところで」 = however much…, it's no use, followed by the negative result 「聞く耳を持たない」."
+    },
+    "wrong": [
+      {
+        "zh": "「ばかりに」是“就因为……导致坏结果”，和「いくら」（再怎么）不搭配。",
+        "en": "「ばかりに」 (only because…) doesn't go with 「いくら」 (however much)."
+      },
+      {
+        "zh": "「あまり」表示“过度……导致”，前面多是感情或状态，“解释过度”在这里说不通，也不和「いくら」搭配。",
+        "en": "「あまり」 (so much… that) usually follows a feeling or state and doesn't pair with 「いくら」."
+      },
+      {
+        "zh": "「末に」是“经过……最终”，叙述已有的结果，不和「いくら」及推测的「だろう」搭配。",
+        "en": "「末に」 (after much…, finally) reports an outcome reached; it doesn't fit 「いくら」 or the guess 「だろう」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l59-012",
+    "type": "narabe",
+    "refs": [
+      "lesson59#4"
+    ],
+    "difficulty": 2,
+    "stem": "失った信頼は、今さら [_] [_] [_] [★] こない。",
+    "options": [
+      "簡単には",
+      "謝った",
+      "戻って",
+      "ところで"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "失った信頼は、今さら謝ったところで簡単には戻ってこない。",
+    "tr": {
+      "zh": "失去的信任，事到如今就算道歉也不会轻易回来。",
+      "en": "Lost trust won't come back easily, even if you apologize now."
+    },
+    "why": {
+      "zh": "「謝ったところで」（就算道歉也）在前，后接结果「簡単には戻ってこない」：謝った → ところで → 簡単には → 戻って。★ 是「戻って」。",
+      "en": "「謝ったところで」 (even if you apologize) comes first, then the result 「簡単には戻ってこない」: 謝った → ところで → 簡単には → 戻って. The ★ is 「戻って」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l59-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson59#5"
+    ],
+    "difficulty": 1,
+    "stem": "来週から期末試験なので、今は旅行の計画を立てる（　）。",
+    "options": [
+      "どころか",
+      "ほどではない",
+      "どころではない",
+      "に限る"
+    ],
+    "answer": 2,
+    "full": "来週から期末試験なので、今は旅行の計画を立てるどころではない。",
+    "tr": {
+      "zh": "下周开始期末考试，现在哪有心思计划旅行。",
+      "en": "Finals start next week, so this is no time to be planning a trip."
+    },
+    "why": {
+      "zh": "因为考试在即，根本没有余裕去做别的事，用句末的「どころではない」（哪有心思……）。",
+      "en": "With exams coming, there's no room for anything else — sentence-final 「どころではない」 (no time for…)."
+    },
+    "wrong": [
+      {
+        "zh": "「どころか」是“别说……连……”，后面必须接分句，不能结句。",
+        "en": "「どころか」 (let alone) needs a following clause; it can't end the sentence."
+      },
+      {
+        "zh": "「ほどではない」是“没到……的程度”，“没到计划旅行的程度”说不通。",
+        "en": "「ほどではない」 (not to the extent of) makes no sense with planning a trip."
+      },
+      null,
+      {
+        "zh": "「に限る」是“……最好”，“考试前计划旅行最好”和前半句矛盾。",
+        "en": "「に限る」 (best to…) would recommend planning a trip right before exams — the opposite of the point."
+      }
+    ]
+  },
+  {
+    "id": "n2-l59-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson59#5"
+    ],
+    "difficulty": 1,
+    "stem": "大地震の直後で、被災地の人々は正月（　）。",
+    "options": [
+      "に過ぎなかった",
+      "どころではなかった",
+      "に限った",
+      "に違いなかった"
+    ],
+    "answer": 1,
+    "full": "大地震の直後で、被災地の人々は正月どころではなかった。",
+    "tr": {
+      "zh": "大地震刚过，灾区的人们根本顾不上过年。",
+      "en": "Right after the big earthquake, the people in the disaster area were in no state to celebrate New Year."
+    },
+    "why": {
+      "zh": "大地震刚发生，情况严重，人们没有心思过年：名词＋「どころではない」。",
+      "en": "A huge quake has just hit, so there's no room for New Year: noun ＋ 「どころではない」."
+    },
+    "wrong": [
+      {
+        "zh": "「に過ぎない」是“只不过是”，“人们只不过是正月”说不通。",
+        "en": "「に過ぎない」 (merely) makes no sense: \"the people were merely New Year\"."
+      },
+      null,
+      {
+        "zh": "「に限る」是“……最好”，而且一般用现在形，这里意思不通。",
+        "en": "「に限る」 (… is best) doesn't make sense here, and it is normally non-past."
+      },
+      {
+        "zh": "「に違いない」是“一定是”，“人们一定是正月”意思不通。",
+        "en": "「に違いない」 (must be) gives \"the people must have been New Year\", which is nonsense."
+      }
+    ]
+  },
+  {
+    "id": "n2-l59-015",
+    "type": "narabe",
+    "refs": [
+      "lesson59#5"
+    ],
+    "difficulty": 1,
+    "stem": "母が入院したと聞いて、[_] [★] [_] [_]。",
+    "options": [
+      "どころでは",
+      "なかった",
+      "仕事に",
+      "集中する"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "母が入院したと聞いて、仕事に集中するどころではなかった。",
+    "tr": {
+      "zh": "听说母亲住院了，根本没心思专心工作。",
+      "en": "When I heard my mother had been hospitalized, I was in no state to concentrate on work."
+    },
+    "why": {
+      "zh": "「仕事に集中する」是动词短语，后接「どころではなかった」：仕事に → 集中する → どころでは → なかった。★ 是「集中する」。",
+      "en": "「仕事に集中する」 is the verb phrase, followed by 「どころではなかった」: 仕事に → 集中する → どころでは → なかった. The ★ is 「集中する」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

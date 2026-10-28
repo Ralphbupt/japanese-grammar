@@ -1,0 +1,698 @@
+[
+  {
+    "id": "n3-l54-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson54#1"
+    ],
+    "difficulty": 1,
+    "stem": "A「この 漢字の 読み方が 分からない んだけど。」\nB「辞書で 調べ（　）よ。すぐ 分かるから。」",
+    "options": [
+      "たらいい",
+      "たばかりだ",
+      "たことがある",
+      "たところだ"
+    ],
+    "answer": 0,
+    "full": "A「この 漢字の 読み方が 分からない んだけど。」  B「辞書で 調べたら いいよ。すぐ 分かるから。」",
+    "tr": {
+      "zh": "A：这个汉字我不知道怎么读。 B：查一下字典就好了，马上就知道。",
+      "en": "A: I don't know how to read this kanji. B: Just look it up in a dictionary — you'll find out right away."
+    },
+    "why": {
+      "zh": "对方遇到困难，B 给出具体建议“查字典就好”，用「〜たらいい」。",
+      "en": "A has a problem and B offers a concrete suggestion — 「〜たらいい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「調べたばかりだ」是“刚查过”，和对方“不知道读法”、后面“马上就知道”都接不上。",
+        "en": "「調べたばかりだ」 (\"just looked it up\") doesn't answer A or lead to \"you'll find out right away\"."
+      },
+      {
+        "zh": "「調べたことがある」是“查过（经验）”，不是建议，和「すぐ分かるから」接不上。",
+        "en": "「調べたことがある」 states past experience, not advice."
+      },
+      {
+        "zh": "「調べたところだ」是“刚刚查完”，说的是自己的动作，不是给对方的建议。",
+        "en": "「調べたところだ」 reports B's own action; it isn't advice."
+      }
+    ]
+  },
+  {
+    "id": "n3-l54-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson54#1"
+    ],
+    "difficulty": 1,
+    "stem": "明日は いよいよ 大事な 試合だね。いい 天気に なる（　）ね。",
+    "options": [
+      "といい",
+      "ばよかった",
+      "たらよかった",
+      "てごらん"
+    ],
+    "answer": 0,
+    "full": "明日は いよいよ 大事な 試合だね。いい 天気に なると いいね。",
+    "tr": {
+      "zh": "明天终于是重要的比赛了。要是天气好就好了。",
+      "en": "Tomorrow's the big game at last. Let's hope the weather's good."
+    },
+    "why": {
+      "zh": "对未来（明天）的期望、祝愿，辞书形＋「といい」。",
+      "en": "A hope for tomorrow is dictionary form ＋ 「といい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ばよかった」是对过去的后悔，而且要接ば形（なれば），不能接「なる」。",
+        "en": "「ばよかった」 is regret about the past and needs the ば-form, not 「なる」."
+      },
+      {
+        "zh": "「たらよかった」也是后悔过去的事，要接た形（なったら），不能接「なる」。",
+        "en": "「たらよかった」 also expresses past regret and needs 「なったら」."
+      },
+      {
+        "zh": "「てごらん」要接て形，而且是“试试看”的命令，天气不是能让人去做的动作。",
+        "en": "「てごらん」 needs the て-form, and weather isn't something you tell someone to try."
+      }
+    ]
+  },
+  {
+    "id": "n3-l54-003",
+    "type": "narabe",
+    "refs": [
+      "lesson54#1"
+    ],
+    "difficulty": 1,
+    "stem": "A「最近、夜 よく 眠れない んです。」\nB「寝る 前に [_] [_] [★] [_] よ。」",
+    "options": [
+      "いい",
+      "飲んだら",
+      "温かい",
+      "牛乳を"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "A「最近、夜 よく 眠れない んです。」  B「寝る 前に 温かい 牛乳を 飲んだら いいよ。」",
+    "tr": {
+      "zh": "A：最近晚上睡不好。 B：睡前喝点热牛奶就好了。",
+      "en": "A: I haven't been sleeping well lately. B: Try having some warm milk before bed."
+    },
+    "why": {
+      "zh": "温かい＋牛乳を＋飲んだら＋いい（建议）。★ 在第三格，是「飲んだら」。",
+      "en": "温かい ＋ 牛乳を ＋ 飲んだら ＋ いい (advice). The ★ is the third slot: 「飲んだら」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l54-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson54#2"
+    ],
+    "difficulty": 1,
+    "stem": "A「すみません、駅まで どう やって 行け（　）ですか。」\nB「この 道を まっすぐ 行けば、すぐですよ。」",
+    "options": [
+      "ばいい",
+      "ばよかった",
+      "てごらん",
+      "たらよかった"
+    ],
+    "answer": 0,
+    "full": "A「すみません、駅まで どう やって 行けばいいですか。」  B「この 道を まっすぐ 行けば、すぐですよ。」",
+    "tr": {
+      "zh": "A：不好意思，去车站该怎么走？ B：沿着这条路一直走就到了。",
+      "en": "A: Excuse me, how do I get to the station? B: Go straight along this road and you're there."
+    },
+    "why": {
+      "zh": "问路，询问“怎么做才好”，用「どう〜ばいいですか」。",
+      "en": "Asking what one should do — 「どう〜ばいいですか」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ばよかった」是对过去的后悔，问路是关于现在要做的事。",
+        "en": "「ばよかった」 is past regret; asking the way is about what to do now."
+      },
+      {
+        "zh": "「てごらん」要接て形（行ってごらん），而且是对晚辈的命令，不能用来问路。",
+        "en": "「てごらん」 needs the て-form and is a command to a junior, not a question."
+      },
+      {
+        "zh": "「たらよかった」要接た形（行ったら），而且也是后悔，不是问路。",
+        "en": "「たらよかった」 needs 「行ったら」 and is also regret."
+      }
+    ]
+  },
+  {
+    "id": "n3-l54-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson54#2"
+    ],
+    "difficulty": 2,
+    "stem": "宿題が 多すぎるなら、今日は できる ところまで やれ（　）よ。残りは 明日で いいから。",
+    "options": [
+      "ばいい",
+      "ばよかった",
+      "ないことはない",
+      "そうもない"
+    ],
+    "answer": 0,
+    "full": "宿題が 多すぎるなら、今日は できる ところまで やればいいよ。残りは 明日で いいから。",
+    "tr": {
+      "zh": "如果作业太多，今天做到能做的地方就行了。剩下的明天做也可以。",
+      "en": "If there's too much homework, just do what you can today. The rest can wait till tomorrow."
+    },
+    "why": {
+      "zh": "给出“只要这样就够了”的建议（今天做到能做的程度），用「〜ばいい」。",
+      "en": "\"That's all you need to do\" advice for today — 「〜ばいい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ばよかった」是后悔过去，可这里说的是“今天”和“明天”的安排。",
+        "en": "「ばよかった」 is past regret, but this is about today and tomorrow."
+      },
+      {
+        "zh": "「やれないことはない」是“也不是做不到”的有保留的肯定，不是建议，和后面的“剩下的明天做就行”接不上。",
+        "en": "「やれないことはない」 (\"it's not that you can't\") is a hedged yes, not advice, and doesn't lead into 「残りは明日でいい」."
+      },
+      {
+        "zh": "「やれそうもない」是“看起来做不了”，和“剩下的明天做就行”的建议接不上，也不能加「よ」作建议。",
+        "en": "「やれそうもない」 (\"I can't see managing it\") isn't advice and doesn't fit 「残りは明日でいい」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l54-006",
+    "type": "narabe",
+    "refs": [
+      "lesson54#2"
+    ],
+    "difficulty": 1,
+    "stem": "A「この 書類の 書き方が よく 分からない んですが…。」\nB「分からない ことが あったら、[_] [_] [★] [_] んですよ。」",
+    "options": [
+      "くれれば",
+      "聞いて",
+      "いい",
+      "私に"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "A「この 書類の 書き方が よく 分からない んですが…。」  B「分からない ことが あったら、私に 聞いて くれれば いい んですよ。」",
+    "tr": {
+      "zh": "A：这份文件我不太会填……。 B：有不懂的地方问我就好了。",
+      "en": "A: I'm not sure how to fill in this form… B: If there's anything you don't understand, just ask me."
+    },
+    "why": {
+      "zh": "私に＋聞いて＋くれれば＋いい（只要……就行）。★ 在第三格，是「くれれば」。",
+      "en": "私に ＋ 聞いて ＋ くれれば ＋ いい (\"all you need to do is\"). The ★ is the third slot: 「くれれば」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l54-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson54#3"
+    ],
+    "difficulty": 1,
+    "stem": "試験に 落ちて しまった。もっと 早くから 勉強を 始めれ（　）。",
+    "options": [
+      "ばよかった",
+      "ばいい",
+      "たらいい",
+      "といい"
+    ],
+    "answer": 0,
+    "full": "試験に 落ちて しまった。もっと 早くから 勉強を 始めればよかった。",
+    "tr": {
+      "zh": "考试没考过。要是早点开始学习就好了。",
+      "en": "I failed the exam. I should have started studying earlier."
+    },
+    "why": {
+      "zh": "考试已经失败，对过去后悔“要是早点开始就好了”，用「〜ばよかった」。",
+      "en": "The exam is over and failed — regret about the past is 「〜ばよかった」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ばいい」是对现在或将来的建议，考试已经结束，「もっと早くから」也说的是过去。",
+        "en": "「ばいい」 is advice for now or later; the exam is over and 「もっと早くから」 points to the past."
+      },
+      {
+        "zh": "「たらいい」要接た形（始めたら），不能接「始めれ」，而且是建议不是后悔。",
+        "en": "「たらいい」 needs 「始めたら」, not 「始めれ」, and is advice, not regret."
+      },
+      {
+        "zh": "「といい」要接辞书形（始めるといい），不能接「始めれ」，而且是期望不是后悔。",
+        "en": "「といい」 needs 「始めるといい」 and expresses a hope, not regret."
+      }
+    ]
+  },
+  {
+    "id": "n3-l54-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson54#3"
+    ],
+    "difficulty": 2,
+    "stem": "昨日、彼女に あんな ことを 言わなけれ（　）。今も まだ 怒って いる。",
+    "options": [
+      "ばよかった",
+      "ばいい",
+      "ばならない",
+      "ばいけない"
+    ],
+    "answer": 0,
+    "full": "昨日、彼女に あんな ことを 言わなければよかった。今も まだ 怒って いる。",
+    "tr": {
+      "zh": "昨天要是没对她说那种话就好了。她到现在还在生气。",
+      "en": "I wish I hadn't said that to her yesterday. She's still angry."
+    },
+    "why": {
+      "zh": "「昨日」说的是过去的事，后悔“要是没说就好了”，否定形「なければよかった」。",
+      "en": "「昨日」 points to the past — regretting having said it is 「言わなければよかった」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ばいい」是对现在或将来的建议，和「昨日」接不上。",
+        "en": "「ばいい」 is advice for now or later; it clashes with 「昨日」."
+      },
+      {
+        "zh": "「なければならない」是“必须说”，和后悔的语气、和「昨日」都接不上。",
+        "en": "「なければならない」 (\"must say\") clashes with 「昨日」 and with the regret."
+      },
+      {
+        "zh": "「なければいけない」也是“必须说”，和「昨日」以及她还在生气的结果对不上。",
+        "en": "「なければいけない」 (\"must say\") doesn't fit 「昨日」 or her still being angry."
+      }
+    ]
+  },
+  {
+    "id": "n3-l54-009",
+    "type": "narabe",
+    "refs": [
+      "lesson54#3"
+    ],
+    "difficulty": 1,
+    "stem": "雨が 降って きた。出かける ときに [_] [_] [★] [_]。",
+    "options": [
+      "持って",
+      "よかった",
+      "傘を",
+      "くれば"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "雨が 降って きた。出かける ときに 傘を 持って くればよかった。",
+    "tr": {
+      "zh": "下起雨来了。出门的时候要是带了伞就好了。",
+      "en": "It's started raining. I should have brought an umbrella when I left."
+    },
+    "why": {
+      "zh": "傘を＋持って＋くれば（「持ってくる」的ば形）＋よかった（后悔）。★ 在第三格，是「くれば」。",
+      "en": "傘を ＋ 持って ＋ くれば (ば-form of 持ってくる) ＋ よかった (regret). The ★ is the third slot: 「くれば」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l54-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson54#4"
+    ],
+    "difficulty": 1,
+    "stem": "（母親が 子どもに）「この 問題は そんなに 難しくないから、もう一度 自分で 考えて（　）。」",
+    "options": [
+      "ごらん",
+      "あげる",
+      "しまう",
+      "おく"
+    ],
+    "answer": 0,
+    "full": "（母親が 子どもに）「この 問題は そんなに 難しくないから、もう一度 自分で 考えて ごらん。」",
+    "tr": {
+      "zh": "（妈妈对孩子）这道题没那么难，自己再想想看。",
+      "en": "(A mother to her child) \"This problem isn't that hard. Have another think about it yourself.\""
+    },
+    "why": {
+      "zh": "长辈对晚辈的温和命令“试试看”，用「〜てごらん」。",
+      "en": "A gentle \"try it\" from a parent to a child is 「〜てごらん」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「考えてあげる」是“我帮你想”，和「自分で」（自己）矛盾。",
+        "en": "「考えてあげる」 (\"I'll think for you\") contradicts 「自分で」."
+      },
+      {
+        "zh": "「考えてしまう」是“不小心想了／想完”，不是对孩子的建议。",
+        "en": "「考えてしまう」 (\"end up thinking\") isn't a suggestion to the child."
+      },
+      {
+        "zh": "「考えておく」是“事先想好”，是说话人自己的打算，不是让孩子做。",
+        "en": "「考えておく」 (\"think in advance\") is the speaker's own plan, not a prompt to the child."
+      }
+    ]
+  },
+  {
+    "id": "n3-l54-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson54#4"
+    ],
+    "difficulty": 2,
+    "stem": "（部下が 部長に）「部長、新しい 企画の 資料が できましたので、（　）。」",
+    "options": [
+      "ご覧ください",
+      "見てごらん",
+      "見てごらんなさい",
+      "見てみな"
+    ],
+    "answer": 0,
+    "full": "（部下が 部長に）「部長、新しい 企画の 資料が できましたので、ご覧 ください。」",
+    "tr": {
+      "zh": "（下属对部长）部长，新企划的资料做好了，请您过目。",
+      "en": "(To a department head) \"The documents for the new project are ready — please have a look.\""
+    },
+    "why": {
+      "zh": "对上级要用尊敬语「ご覧ください」。「〜てごらん（なさい）」是对晚辈的说法，不能对上级用。",
+      "en": "To a superior, use the honorific 「ご覧ください」; 「〜てごらん（なさい）」 is said to juniors only."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「見てごらん」是长辈对晚辈的轻松命令，对部长说很失礼。",
+        "en": "「見てごらん」 is a casual command to a junior — rude to a manager."
+      },
+      {
+        "zh": "「ごらんなさい」虽然稍正式，仍是上对下的命令，不能对上级用。",
+        "en": "「ごらんなさい」 is a bit more formal but still a command to a junior."
+      },
+      {
+        "zh": "「見てみな」是非常随便的口语命令，对上级不能用。",
+        "en": "「見てみな」 is very casual and can't be used to a superior."
+      }
+    ]
+  },
+  {
+    "id": "n3-l54-012",
+    "type": "narabe",
+    "refs": [
+      "lesson54#4"
+    ],
+    "difficulty": 1,
+    "stem": "（先生が 学生に）「この 文を [_] [_] [★] [_]。意味が 分かる はずだよ。」",
+    "options": [
+      "ごらん",
+      "出して",
+      "読んで",
+      "声に"
+    ],
+    "order": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "full": "（先生が 学生に）「この 文を 声に 出して 読んで ごらん。意味が 分かる はずだよ。」",
+    "tr": {
+      "zh": "（老师对学生）把这句话念出声来试试。应该能明白意思。",
+      "en": "(Teacher to student) \"Try reading this sentence out loud. You should get the meaning.\""
+    },
+    "why": {
+      "zh": "声に出して（出声地）＋読んで（て形）＋ごらん。★ 在第三格，是「読んで」。",
+      "en": "声に出して (aloud) ＋ 読んで (て-form) ＋ ごらん. The ★ is the third slot: 「読んで」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l54-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson54#5"
+    ],
+    "difficulty": 1,
+    "stem": "来月の セミナーに インターネットで 申し（　）。",
+    "options": [
+      "込んだ",
+      "合った",
+      "出した",
+      "終わった"
+    ],
+    "answer": 0,
+    "full": "来月の セミナーに インターネットで 申し込んだ。",
+    "tr": {
+      "zh": "我在网上报名了下个月的研讨会。",
+      "en": "I signed up online for next month's seminar."
+    },
+    "why": {
+      "zh": "“报名、申请”是复合动词「申し込む」。",
+      "en": "\"To sign up / apply\" is the compound 「申し込む」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「申し合う」是“（大家）商定”，不能说“在网上向研讨会商定”。",
+        "en": "「申し合う」 means to agree among a group; it doesn't take 「セミナーに」."
+      },
+      {
+        "zh": "“提出”是「申し出る」，没有「申し出す」这个词。",
+        "en": "\"To offer\" is 「申し出る」; 「申し出す」 isn't a word."
+      },
+      {
+        "zh": "没有「申し終わる」这种说法，「申す」是谦让语“说”。",
+        "en": "「申し終わる」 isn't used; 「申す」 is humble \"say\"."
+      }
+    ]
+  },
+  {
+    "id": "n3-l54-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson54#5"
+    ],
+    "difficulty": 1,
+    "stem": "暑かったので、子どもたちは 服を 着たまま プールの 中に 飛び（　）。",
+    "options": [
+      "込んだ",
+      "合った",
+      "出した",
+      "続けた"
+    ],
+    "answer": 0,
+    "full": "暑かったので、子どもたちは 服を 着たまま プールの 中に 飛び込んだ。",
+    "tr": {
+      "zh": "因为太热了，孩子们穿着衣服就跳进了游泳池里。",
+      "en": "It was so hot that the kids jumped into the pool with their clothes on."
+    },
+    "why": {
+      "zh": "「プールの中に」表示从外面进到里面，用「〜込む」：「飛び込む」（跳进）。",
+      "en": "「プールの中に」 marks movement into something: 「〜込む」, 「飛び込む」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「飛び合う」不是常用词，“互相跳”和跳进游泳池的意思不符。",
+        "en": "「飛び合う」 isn't a normal word, and \"jump at each other\" doesn't fit."
+      },
+      {
+        "zh": "「飛び出す」是“跳出去、冲出去”，方向是从里往外，和「プールの中に」相反。",
+        "en": "「飛び出す」 is jumping *out*, the opposite of 「プールの中に」."
+      },
+      {
+        "zh": "「飛び続ける」是“一直飞／跳”，不能和「プールの中に」搭配表示进入。",
+        "en": "「飛び続ける」 (\"keep flying/jumping\") can't express going into the pool."
+      }
+    ]
+  },
+  {
+    "id": "n3-l54-015",
+    "type": "narabe",
+    "refs": [
+      "lesson54#5"
+    ],
+    "difficulty": 2,
+    "stem": "引っ越したばかりの ころは、新しい 町の [_] [_] [★] [_] かかった。",
+    "options": [
+      "時間が",
+      "溶け",
+      "込むまで",
+      "生活に"
+    ],
+    "order": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "full": "引っ越したばかりの ころは、新しい 町の 生活に 溶け込むまで 時間が かかった。",
+    "tr": {
+      "zh": "刚搬家的时候，融入新城市的生活花了不少时间。",
+      "en": "When I'd just moved, it took a while to settle into life in the new town."
+    },
+    "why": {
+      "zh": "生活に＋溶け込む（融入）＋まで＋時間がかかった。★ 在第三格，是「込むまで」。",
+      "en": "生活に ＋ 溶け込む (blend in) ＋ まで ＋ 時間がかかった. The ★ is the third slot: 「込むまで」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l54-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson54#6"
+    ],
+    "difficulty": 1,
+    "stem": "夏休みの 旅行の 行き先は、家族 みんなで 話し（　）決めた。",
+    "options": [
+      "合って",
+      "出して",
+      "かけて",
+      "始めて"
+    ],
+    "answer": 0,
+    "full": "夏休みの 旅行の 行き先は、家族 みんなで 話し合って 決めた。",
+    "tr": {
+      "zh": "暑假旅行的目的地是全家人一起商量着决定的。",
+      "en": "We decided where to go for the summer trip by talking it over as a family."
+    },
+    "why": {
+      "zh": "「みんなで」表示多人之间的相互动作，“商量”是「話し合う」。",
+      "en": "「みんなで」 shows a group acting together — \"discuss\" is 「話し合う」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「話し出す」是“开始说话”，“开始说就决定了”意思不通。",
+        "en": "「話し出す」 means to start talking; it doesn't explain how they decided."
+      },
+      {
+        "zh": "「話しかける」是“向某人搭话”，要有对象（〜に），和「みんなで決めた」接不上。",
+        "en": "「話しかける」 is speaking *to* someone (〜に); it doesn't fit deciding together."
+      },
+      {
+        "zh": "「話し始める」是“开始说”，开始说话本身不能决定目的地。",
+        "en": "「話し始める」 just means to start talking; that doesn't settle anything."
+      }
+    ]
+  },
+  {
+    "id": "n3-l54-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson54#6"
+    ],
+    "difficulty": 1,
+    "stem": "地震の ような 災害の ときは、近所の 人と お互いに 助け（　）ことが 大切だ。",
+    "options": [
+      "合う",
+      "込む",
+      "出す",
+      "始める"
+    ],
+    "answer": 0,
+    "full": "地震の ような 災害の ときは、近所の 人と お互いに 助け合う ことが 大切だ。",
+    "tr": {
+      "zh": "发生地震之类的灾害时，和邻居互相帮助很重要。",
+      "en": "In a disaster such as an earthquake, it's important for neighbours to help each other."
+    },
+    "why": {
+      "zh": "「お互いに」「近所の人と」表示相互动作，用「〜合う」：「助け合う」（互相帮助）。",
+      "en": "「お互いに」 and 「近所の人と」 show a mutual action: 「助け合う」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "没有「助け込む」这个词。",
+        "en": "「助け込む」 isn't a word."
+      },
+      {
+        "zh": "「助け出す」是“救出（某人）”，要有宾语，和「お互いに」不搭。",
+        "en": "「助け出す」 is rescuing someone (needs an object); it doesn't fit 「お互いに」."
+      },
+      {
+        "zh": "「助け始める」是“开始帮忙”，和「お互いに」一起表达不出“互相”的意思，也不是这里强调的重点。",
+        "en": "「助け始める」 (\"start helping\") doesn't express the mutual help 「お互いに」 calls for."
+      }
+    ]
+  },
+  {
+    "id": "n3-l54-018",
+    "type": "narabe",
+    "refs": [
+      "lesson54#6"
+    ],
+    "difficulty": 2,
+    "stem": "チームの メンバーで [_] [_] [★] [_] 作った。",
+    "options": [
+      "合って",
+      "新しい企画を",
+      "意見を",
+      "出し"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "チームの メンバーで 意見を 出し合って 新しい 企画を 作った。",
+    "tr": {
+      "zh": "团队成员互相出主意，做出了一个新企划。",
+      "en": "The team members pooled their ideas and came up with a new project."
+    },
+    "why": {
+      "zh": "意見を＋出し合って（互相提出）＋新しい企画を＋作った。★ 在第三格，是「合って」。",
+      "en": "意見を ＋ 出し合って (put forward together) ＋ 新しい企画を ＋ 作った. The ★ is the third slot: 「合って」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

@@ -1,0 +1,1548 @@
+[
+  {
+    "id": "n3-mg-101",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "この薬は頭痛に<<効果>>がある。",
+    "options": [
+      "こうか",
+      "こうが",
+      "ごうか",
+      "こうかい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这种药对头痛有效。",
+      "en": "This medicine works on headaches."
+    },
+    "why": {
+      "zh": "「効（こう）」+「果（か）」：「こうか」，都是清音。",
+      "en": "「効」 is こう and 「果」 is か: こうか, both unvoiced."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「果」不浊化，是「か」不是「が」。",
+        "en": "「果」 isn't voiced: か, not が."
+      },
+      {
+        "zh": "「効」不浊化；「ごうか」是「豪華」（豪华）。",
+        "en": "「効」 isn't voiced; ごうか is 「豪華」 (luxurious)."
+      },
+      {
+        "zh": "「果」读「か」；「こうかい」是「後悔」或「公開」。",
+        "en": "「果」 is か; こうかい is 「後悔」 or 「公開」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-102",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "この工場では電気<<製品>>を作っている。",
+    "options": [
+      "せいひん",
+      "せいびん",
+      "せいしな",
+      "しょうひん"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这家工厂生产电器产品。",
+      "en": "This factory makes electrical products."
+    },
+    "why": {
+      "zh": "「製（せい）」+「品（ひん）」：「せいひん」。",
+      "en": "「製」 is せい and 「品」 is ひん: せいひん."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「品」在这里不浊化，是「ひん」。",
+        "en": "「品」 isn't voiced here: ひん."
+      },
+      {
+        "zh": "「しな」是「品」的训读（「品物」），音读词「製品」用「ひん」。",
+        "en": "しな is the kun reading (「品物」); in the on-reading word 「製品」 it's ひん."
+      },
+      {
+        "zh": "「しょうひん」是「商品」（商品），不是「製品」。",
+        "en": "しょうひん is 「商品」 (merchandise), not 「製品」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-103",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "注文した本が昨日<<届いた>>。",
+    "options": [
+      "とどいた",
+      "とといた",
+      "どどいた",
+      "とどけた"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "订的书昨天到了。",
+      "en": "The book I ordered arrived yesterday."
+    },
+    "why": {
+      "zh": "「届く（とどく）」的た形是「とどいた」；送假名「いた」表明是自动词「届く」。",
+      "en": "「届く」 (to arrive) → とどいた; the okurigana いた shows it's intransitive 届く."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "第二个音是浊音「ど」：「とどく」。",
+        "en": "The second sound is voiced: とどく."
+      },
+      {
+        "zh": "第一个音是清音「と」，不是「ど」。",
+        "en": "The first sound is unvoiced と, not ど."
+      },
+      {
+        "zh": "「とどけた」是他动词「届けた」（送到），送假名不同。",
+        "en": "とどけた is transitive 「届けた」 (delivered) — different okurigana."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-104",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "この町の人口は年々<<減少>>している。",
+    "options": [
+      "げんしょう",
+      "げんしょ",
+      "けんしょう",
+      "げんそう"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这座城镇的人口逐年减少。",
+      "en": "This town's population is decreasing year by year."
+    },
+    "why": {
+      "zh": "「減（げん）」+「少（しょう）」：「げんしょう」，「少」是长音。",
+      "en": "「減」 is げん and 「少」 is しょう: げんしょう, with a long vowel."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「少」是长音「しょう」，少了「う」。",
+        "en": "「少」 is the long しょう; the う is missing."
+      },
+      {
+        "zh": "「減」是浊音「げん」；「けんしょう」是「検証」等别的词。",
+        "en": "「減」 is voiced げん; けんしょう is another word (「検証」)."
+      },
+      {
+        "zh": "「少」读「しょう」不是「そう」；「げんそう」是「幻想」。",
+        "en": "「少」 is しょう, not そう; げんそう is 「幻想」 (fantasy)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-105",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "野菜には<<栄養>>がたくさんある。",
+    "options": [
+      "えいよう",
+      "えいよ",
+      "えよう",
+      "えいおう"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "蔬菜里有很多营养。",
+      "en": "Vegetables are full of nutrients."
+    },
+    "why": {
+      "zh": "「栄（えい）」+「養（よう）」：「えいよう」，两个都是长音。",
+      "en": "「栄」 is えい and 「養」 is よう: えいよう, two long vowels."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「養」是长音「よう」，少了「う」。",
+        "en": "「養」 is the long よう; the う is missing."
+      },
+      {
+        "zh": "「栄」是「えい」，少了「い」。",
+        "en": "「栄」 is えい; the い is missing."
+      },
+      {
+        "zh": "「養」读「よう」，不是「おう」。",
+        "en": "「養」 is よう, not おう."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-106",
+    "type": "kanji",
+    "refs": [
+      "lesson37#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "今学期は<<成績>>が上がった。",
+    "options": [
+      "せいせき",
+      "せいせつ",
+      "せっせき",
+      "せいぜき"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这学期成绩提高了。",
+      "en": "My grades went up this term."
+    },
+    "why": {
+      "zh": "「成（せい）」+「績（せき）」：「せいせき」。",
+      "en": "「成」 is せい and 「績」 is せき: せいせき."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「績」读「せき」，不是「せつ」。",
+        "en": "「績」 is せき, not せつ."
+      },
+      {
+        "zh": "「成」是长音「せい」，没有促音「っ」。",
+        "en": "「成」 is the long せい — no small っ."
+      },
+      {
+        "zh": "「績」不浊化，是「せき」。",
+        "en": "「績」 isn't voiced: せき."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-107",
+    "type": "kanji",
+    "refs": [
+      "lesson37#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "道が<<渋滞>>していて、遅れてしまった。",
+    "options": [
+      "じゅうたい",
+      "じゅたい",
+      "しゅうたい",
+      "じゅうだい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "路上堵车，结果迟到了。",
+      "en": "The roads were jammed, so I was late."
+    },
+    "why": {
+      "zh": "「渋（じゅう）」+「滞（たい）」：「じゅうたい」。",
+      "en": "「渋」 is じゅう and 「滞」 is たい: じゅうたい."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「渋」是长音「じゅう」，少了「う」。",
+        "en": "「渋」 is the long じゅう; the う is missing."
+      },
+      {
+        "zh": "「渋」是浊音「じゅう」，不是「しゅう」。",
+        "en": "「渋」 is voiced: じゅう, not しゅう."
+      },
+      {
+        "zh": "「滞」不浊化，是「たい」；「じゅうだい」是「重大」。",
+        "en": "「滞」 isn't voiced: たい; じゅうだい is 「重大」 (serious)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-108",
+    "type": "kanji",
+    "refs": [
+      "lesson37#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "寝坊して、会社に<<遅刻>>した。",
+    "options": [
+      "ちこく",
+      "ちごく",
+      "ちっこく",
+      "じこく"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "睡过头，上班迟到了。",
+      "en": "I overslept and was late for work."
+    },
+    "why": {
+      "zh": "「遅（ち）」+「刻（こく）」：「ちこく」。",
+      "en": "「遅」 is ち and 「刻」 is こく: ちこく."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「刻」不浊化，是「こく」。",
+        "en": "「刻」 isn't voiced: こく."
+      },
+      {
+        "zh": "中间没有促音「っ」。",
+        "en": "There's no small っ."
+      },
+      {
+        "zh": "「遅」读「ち」；「じこく」是「時刻」（时刻）。",
+        "en": "「遅」 is ち; じこく is 「時刻」 (time)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-109",
+    "type": "kanji",
+    "refs": [
+      "lesson37#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "この失敗は私の<<責任>>です。",
+    "options": [
+      "せきにん",
+      "せきじん",
+      "せっきにん",
+      "せきいん"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这次失败是我的责任。",
+      "en": "This failure is my responsibility."
+    },
+    "why": {
+      "zh": "「責（せき）」+「任（にん）」：「せきにん」。",
+      "en": "「責」 is せき and 「任」 is にん: せきにん."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「任」读「にん」，不是「じん」。",
+        "en": "「任」 is にん, not じん."
+      },
+      {
+        "zh": "「責」是「せき」，没有促音「っ」。",
+        "en": "「責」 is せき — no small っ."
+      },
+      {
+        "zh": "「任」读「にん」，不是「いん」。",
+        "en": "「任」 is にん, not いん."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-110",
+    "type": "kanji",
+    "refs": [
+      "lesson37#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "会社を辞める<<覚悟>>はできている。",
+    "options": [
+      "かくご",
+      "かくごう",
+      "がくご",
+      "かっご"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我已经做好辞职的心理准备了。",
+      "en": "I'm prepared to quit the company."
+    },
+    "why": {
+      "zh": "「覚（かく）」+「悟（ご）」：「かくご」，「悟」是短音。",
+      "en": "「覚」 is かく and 「悟」 is ご: かくご, a short ご."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「悟」是短音「ご」，不是「ごう」。",
+        "en": "「悟」 is a short ご, not ごう."
+      },
+      {
+        "zh": "「覚」在这里是清音「かく」。",
+        "en": "「覚」 is unvoiced here: かく."
+      },
+      {
+        "zh": "「覚」是「かく」，不变成促音「っ」。",
+        "en": "「覚」 is かく; it doesn't become a small っ."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-111",
+    "type": "kanji",
+    "refs": [
+      "lesson38#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "最近、<<景気>>がよくなってきた。",
+    "options": [
+      "けいき",
+      "けいぎ",
+      "けき",
+      "けいけ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "最近经济形势好起来了。",
+      "en": "The economy has been picking up lately."
+    },
+    "why": {
+      "zh": "「景（けい）」+「気（き）」：「けいき」。",
+      "en": "「景」 is けい and 「気」 is き: けいき."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「気」不浊化，是「き」。",
+        "en": "「気」 isn't voiced: き."
+      },
+      {
+        "zh": "「景」是长音「けい」，少了「い」。",
+        "en": "「景」 is the long けい; the い is missing."
+      },
+      {
+        "zh": "「気」读「き」，不是「け」。",
+        "en": "「気」 is き here, not け."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-112",
+    "type": "kanji",
+    "refs": [
+      "lesson38#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "転職して、<<収入>>が増えた。",
+    "options": [
+      "しゅうにゅう",
+      "しゅにゅう",
+      "しゅうにゅ",
+      "しゅうじゅう"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "换了工作，收入增加了。",
+      "en": "I changed jobs and my income went up."
+    },
+    "why": {
+      "zh": "「収（しゅう）」+「入（にゅう）」：「しゅうにゅう」，两个都是长音。",
+      "en": "「収」 is しゅう and 「入」 is にゅう: しゅうにゅう, both long."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「収」是长音「しゅう」。",
+        "en": "「収」 is the long しゅう."
+      },
+      {
+        "zh": "「入」是长音「にゅう」。",
+        "en": "「入」 is the long にゅう."
+      },
+      {
+        "zh": "「入」读「にゅう」，不是「じゅう」。",
+        "en": "「入」 is にゅう, not じゅう."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-113",
+    "type": "kanji",
+    "refs": [
+      "lesson39#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "チケットはインターネットで<<購入>>できます。",
+    "options": [
+      "こうにゅう",
+      "こにゅう",
+      "こうにゅ",
+      "こうにん"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "票可以在网上购买。",
+      "en": "Tickets can be bought online."
+    },
+    "why": {
+      "zh": "「購（こう）」+「入（にゅう）」：「こうにゅう」。",
+      "en": "「購」 is こう and 「入」 is にゅう: こうにゅう."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「購」是长音「こう」。",
+        "en": "「購」 is the long こう."
+      },
+      {
+        "zh": "「入」是长音「にゅう」。",
+        "en": "「入」 is the long にゅう."
+      },
+      {
+        "zh": "「入」读「にゅう」；「こうにん」是「公認」。",
+        "en": "「入」 is にゅう; こうにん is 「公認」 (official approval)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-114",
+    "type": "kanji",
+    "refs": [
+      "lesson39#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "来週から一週間の<<休暇>>を取ります。",
+    "options": [
+      "きゅうか",
+      "きゅか",
+      "きゅうが",
+      "きゅうけ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我从下周开始休一周假。",
+      "en": "I'm taking a week off from next week."
+    },
+    "why": {
+      "zh": "「休（きゅう）」+「暇（か）」：「きゅうか」。",
+      "en": "「休」 is きゅう and 「暇」 is か: きゅうか."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「休」是长音「きゅう」。",
+        "en": "「休」 is the long きゅう."
+      },
+      {
+        "zh": "「暇」不浊化，是「か」。",
+        "en": "「暇」 isn't voiced: か."
+      },
+      {
+        "zh": "「暇」读「か」；「きゅうけ」不是词（「休憩」是「きゅうけい」）。",
+        "en": "「暇」 is か; きゅうけ isn't a word (「休憩」 is きゅうけい)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-115",
+    "type": "kanji",
+    "refs": [
+      "lesson40#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "面接の前は<<緊張>>して、手が震えた。",
+    "options": [
+      "きんちょう",
+      "きんちょ",
+      "きんじょう",
+      "けんちょう"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "面试前很紧张，手都在发抖。",
+      "en": "I was nervous before the interview; my hands were shaking."
+    },
+    "why": {
+      "zh": "「緊（きん）」+「張（ちょう）」：「きんちょう」。",
+      "en": "「緊」 is きん and 「張」 is ちょう: きんちょう."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「張」是长音「ちょう」。",
+        "en": "「張」 is the long ちょう."
+      },
+      {
+        "zh": "「張」读「ちょう」，不是「じょう」。",
+        "en": "「張」 is ちょう, not じょう."
+      },
+      {
+        "zh": "「緊」读「きん」；「けんちょう」是「県庁」。",
+        "en": "「緊」 is きん; けんちょう is 「県庁」 (prefectural office)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-116",
+    "type": "kanji",
+    "refs": [
+      "lesson40#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "今月の<<給料>>はもう使ってしまった。",
+    "options": [
+      "きゅうりょう",
+      "きゅりょう",
+      "きゅうりょ",
+      "きゅうりょく"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这个月的工资已经花光了。",
+      "en": "I've already spent this month's pay."
+    },
+    "why": {
+      "zh": "「給（きゅう）」+「料（りょう）」：「きゅうりょう」。",
+      "en": "「給」 is きゅう and 「料」 is りょう: きゅうりょう."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「給」是长音「きゅう」。",
+        "en": "「給」 is the long きゅう."
+      },
+      {
+        "zh": "「料」是长音「りょう」。",
+        "en": "「料」 is the long りょう."
+      },
+      {
+        "zh": "「料」读「りょう」；「りょく」是「力」的读音。",
+        "en": "「料」 is りょう; りょく is the reading of 「力」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-117",
+    "type": "kanji",
+    "refs": [
+      "lesson41#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "応募者の<<年齢>>は問いません。",
+    "options": [
+      "ねんれい",
+      "ねんりょう",
+      "ねんれ",
+      "ねいれい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "不限应聘者的年龄。",
+      "en": "Applicants of any age are welcome."
+    },
+    "why": {
+      "zh": "「年（ねん）」+「齢（れい）」：「ねんれい」。",
+      "en": "「年」 is ねん and 「齢」 is れい: ねんれい."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「齢」读「れい」，不是「りょう」。",
+        "en": "「齢」 is れい, not りょう."
+      },
+      {
+        "zh": "「齢」是长音「れい」，少了「い」。",
+        "en": "「齢」 is the long れい; the い is missing."
+      },
+      {
+        "zh": "「年」读「ねん」，不是「ねい」。",
+        "en": "「年」 is ねん, not ねい."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-118",
+    "type": "kanji",
+    "refs": [
+      "lesson41#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "学生は入場料の<<割引>>があります。",
+    "options": [
+      "わりびき",
+      "わりひき",
+      "かつびき",
+      "わりいん"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "学生门票有折扣。",
+      "en": "Students get a discount on admission."
+    },
+    "why": {
+      "zh": "「割（わり）」+「引（びき）」：复合词里「ひき」浊化成「びき」。",
+      "en": "「割」 is わり and 「引」 becomes びき in this compound: わりびき."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "在「割引」里「引」要浊化成「びき」。",
+        "en": "In 「割引」 the 「引」 is voiced: びき."
+      },
+      {
+        "zh": "「割」在这里用训读「わり」，不是音读「かつ」。",
+        "en": "「割」 takes the kun reading わり here, not the on reading かつ."
+      },
+      {
+        "zh": "「引」读「ひき／びき」，音读是「いん」（「引力」），这里不用。",
+        "en": "「引」 here is ひき/びき; いん is its on reading (「引力」), not used here."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-119",
+    "type": "kanji",
+    "refs": [
+      "lesson42#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<遠慮>>しないで、たくさん食べてください。",
+    "options": [
+      "えんりょ",
+      "えんりょう",
+      "えんろ",
+      "おんりょ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "别客气，多吃点。",
+      "en": "Don't hold back — please eat plenty."
+    },
+    "why": {
+      "zh": "「遠（えん）」+「慮（りょ）」：「えんりょ」，「慮」是短音。",
+      "en": "「遠」 is えん and 「慮」 is りょ: えんりょ, a short りょ."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「慮」是短音「りょ」，没有「う」。",
+        "en": "「慮」 is a short りょ — no う."
+      },
+      {
+        "zh": "「慮」读「りょ」，不是「ろ」。",
+        "en": "「慮」 is りょ, not ろ."
+      },
+      {
+        "zh": "「遠」读「えん」，不是「おん」。",
+        "en": "「遠」 is えん, not おん."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-120",
+    "type": "kanji",
+    "refs": [
+      "lesson42#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "暑いところに置いておいたら、牛乳が<<腐って>>しまった。",
+    "options": [
+      "くさって",
+      "ふさって",
+      "くざって",
+      "こさって"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "放在热的地方，牛奶坏了。",
+      "en": "I left the milk somewhere hot and it went bad."
+    },
+    "why": {
+      "zh": "「腐る」读「くさる」（腐烂、变质）。",
+      "en": "「腐る」 is くさる (to go bad)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ふ」是「腐」的音读（「豆腐」），动词「腐る」读「くさる」。",
+        "en": "ふ is the on reading (「豆腐」); the verb 「腐る」 is くさる."
+      },
+      {
+        "zh": "「さ」不浊化：「くさる」。",
+        "en": "The さ isn't voiced: くさる."
+      },
+      {
+        "zh": "第一个音是「く」，不是「こ」。",
+        "en": "It starts with く, not こ."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-121",
+    "type": "kanji",
+    "refs": [
+      "lesson43#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "家の前に<<怪しい>>男が立っている。",
+    "options": [
+      "あやしい",
+      "あやうい",
+      "かいしい",
+      "あわしい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "家门口站着一个可疑的男人。",
+      "en": "A suspicious man is standing in front of the house."
+    },
+    "why": {
+      "zh": "「怪しい」读「あやしい」（可疑的）。",
+      "en": "「怪しい」 is あやしい (suspicious)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「あやうい」是「危うい」（危险的），不是「怪しい」。",
+        "en": "あやうい is 「危うい」 (dangerous), not 「怪しい」."
+      },
+      {
+        "zh": "「かい」是「怪」的音读（「奇怪」），形容词要用训读「あやしい」。",
+        "en": "かい is the on reading (「奇怪」); the adjective takes the kun reading あやしい."
+      },
+      {
+        "zh": "是「あやしい」，不是「あわしい」。",
+        "en": "It's あやしい, not あわしい."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-122",
+    "type": "kanji",
+    "refs": [
+      "lesson43#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "大雨で川があふれ、<<洪水>>になった。",
+    "options": [
+      "こうずい",
+      "こうすい",
+      "ごうずい",
+      "こうみず"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "大雨导致河水泛滥，发了洪水。",
+      "en": "The heavy rain made the river overflow and there was a flood."
+    },
+    "why": {
+      "zh": "「洪（こう）」+「水（ずい）」：「水」在这里浊化成「ずい」。",
+      "en": "「洪」 is こう and 「水」 is voiced here: こうずい."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「こうすい」是「香水」，「洪水」的「水」要浊化。",
+        "en": "こうすい is 「香水」 (perfume); in 「洪水」 the 「水」 is voiced."
+      },
+      {
+        "zh": "「洪」是清音「こう」。",
+        "en": "「洪」 is unvoiced: こう."
+      },
+      {
+        "zh": "「水」在这里用音读「ずい」，不用训读「みず」。",
+        "en": "「水」 takes the on reading ずい here, not the kun reading みず."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-123",
+    "type": "kanji",
+    "refs": [
+      "lesson43#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "不景気で、父の会社が<<倒産>>した。",
+    "options": [
+      "とうさん",
+      "とうざん",
+      "どうさん",
+      "とさん"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "因为不景气，父亲的公司倒闭了。",
+      "en": "My father's company went bankrupt in the recession."
+    },
+    "why": {
+      "zh": "「倒（とう）」+「産（さん）」：「とうさん」。",
+      "en": "「倒」 is とう and 「産」 is さん: とうさん."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「産」不浊化，是「さん」。",
+        "en": "「産」 isn't voiced: さん."
+      },
+      {
+        "zh": "「倒」是清音「とう」。",
+        "en": "「倒」 is unvoiced: とう."
+      },
+      {
+        "zh": "「倒」是长音「とう」。",
+        "en": "「倒」 is the long とう."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-124",
+    "type": "kanji",
+    "refs": [
+      "lesson44#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "最後まで<<諦めないで>>がんばろう。",
+    "options": [
+      "あきらめないで",
+      "あからめないで",
+      "あけらめないで",
+      "あきらべないで"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "坚持到最后，别放弃。",
+      "en": "Don't give up — keep going to the end."
+    },
+    "why": {
+      "zh": "「諦める」读「あきらめる」（放弃）。",
+      "en": "「諦める」 is あきらめる (to give up)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「あからめる」是「赤らめる」（脸红），不是「諦める」。",
+        "en": "あからめる is 「赤らめる」 (to blush), not 「諦める」."
+      },
+      {
+        "zh": "是「あき」，不是「あけ」。",
+        "en": "It's あき, not あけ."
+      },
+      {
+        "zh": "是「らめる」，不是「らべる」。",
+        "en": "It ends in らめる, not らべる."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-125",
+    "type": "kanji",
+    "refs": [
+      "lesson43#vocab",
+      "lesson53#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "何度謝っても、彼は<<許して>>くれなかった。",
+    "options": [
+      "ゆるして",
+      "ゆすして",
+      "きょして",
+      "ゆろして"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "不管道歉多少次，他都没有原谅我。",
+      "en": "However many times I apologized, he wouldn't forgive me."
+    },
+    "why": {
+      "zh": "「許す」读「ゆるす」（原谅）。",
+      "en": "「許す」 is ゆるす (to forgive)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "是「ゆるす」，不是「ゆすす」。",
+        "en": "It's ゆるす, not ゆすす."
+      },
+      {
+        "zh": "「きょ」是「許」的音读（「許可」），动词用训读「ゆるす」。",
+        "en": "きょ is the on reading (「許可」); the verb is ゆるす."
+      },
+      {
+        "zh": "是「る」，不是「ろ」。",
+        "en": "It's る, not ろ."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-126",
+    "type": "kanji",
+    "refs": [
+      "lesson45#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "今の生活に<<満足>>している。",
+    "options": [
+      "まんぞく",
+      "まんそく",
+      "まんぞっく",
+      "まんあし"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我对现在的生活很满意。",
+      "en": "I'm satisfied with my life now."
+    },
+    "why": {
+      "zh": "「満（まん）」+「足（ぞく）」：「足」在这里浊化成「ぞく」。",
+      "en": "「満」 is まん and 「足」 is voiced: まんぞく."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「足」在「満足」里浊化成「ぞく」。",
+        "en": "In 「満足」 the 「足」 is voiced: ぞく."
+      },
+      {
+        "zh": "没有促音「っ」。",
+        "en": "There's no small っ."
+      },
+      {
+        "zh": "「足」在这里用音读「ぞく」，不用训读「あし」。",
+        "en": "「足」 takes the on reading ぞく here, not the kun reading あし."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-127",
+    "type": "kanji",
+    "refs": [
+      "lesson46#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "彼女はとても<<優秀>>な学生だ。",
+    "options": [
+      "ゆうしゅう",
+      "ゆしゅう",
+      "ゆうしゅ",
+      "ゆうじゅう"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "她是非常优秀的学生。",
+      "en": "She's an excellent student."
+    },
+    "why": {
+      "zh": "「優（ゆう）」+「秀（しゅう）」：「ゆうしゅう」。",
+      "en": "「優」 is ゆう and 「秀」 is しゅう: ゆうしゅう."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「優」是长音「ゆう」。",
+        "en": "「優」 is the long ゆう."
+      },
+      {
+        "zh": "「秀」是长音「しゅう」。",
+        "en": "「秀」 is the long しゅう."
+      },
+      {
+        "zh": "「秀」不浊化；「ゆうじゅう」是「優柔」（优柔寡断）。",
+        "en": "「秀」 isn't voiced; ゆうじゅう is 「優柔」 (indecisive)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-128",
+    "type": "kanji",
+    "refs": [
+      "lesson46#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "彼は海外で<<活躍>>している。",
+    "options": [
+      "かつやく",
+      "かつよう",
+      "かったく",
+      "がつやく"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他在海外很活跃。",
+      "en": "He's doing great things abroad."
+    },
+    "why": {
+      "zh": "「活（かつ）」+「躍（やく）」：「かつやく」。",
+      "en": "「活」 is かつ and 「躍」 is やく: かつやく."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「かつよう」是「活用」（活用、变形）。",
+        "en": "かつよう is 「活用」 (use / conjugation)."
+      },
+      {
+        "zh": "「躍」读「やく」，不是「たく」。",
+        "en": "「躍」 is やく, not たく."
+      },
+      {
+        "zh": "「活」是清音「かつ」。",
+        "en": "「活」 is unvoiced: かつ."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-129",
+    "type": "kanji",
+    "refs": [
+      "lesson46#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "この町は観光で<<発展>>した。",
+    "options": [
+      "はってん",
+      "はつてん",
+      "はつでん",
+      "はってい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这座城镇靠观光发展起来了。",
+      "en": "This town grew through tourism."
+    },
+    "why": {
+      "zh": "「発（はつ）」+「展（てん）」：「はつ」变促音，读「はってん」。",
+      "en": "「発」 はつ becomes はっ before て: はってん."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「発」在「て」前变促音，读「はってん」。",
+        "en": "「発」 becomes a small っ before て: はってん."
+      },
+      {
+        "zh": "「はつでん」是「発電」（发电）。",
+        "en": "はつでん is 「発電」 (power generation)."
+      },
+      {
+        "zh": "「展」读「てん」，不是「てい」。",
+        "en": "「展」 is てん, not てい."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-130",
+    "type": "kanji",
+    "refs": [
+      "lesson48#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "凍った道で<<転んで>>、けがをした。",
+    "options": [
+      "ころんで",
+      "こらんで",
+      "まろんで",
+      "てんで"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "在结冰的路上摔倒受了伤。",
+      "en": "I slipped on the icy road and hurt myself."
+    },
+    "why": {
+      "zh": "「転ぶ」读「ころぶ」（摔倒），て形是「ころんで」。",
+      "en": "「転ぶ」 is ころぶ (to fall over); te-form ころんで."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "是「ころ」，不是「こら」。",
+        "en": "It's ころ, not こら."
+      },
+      {
+        "zh": "「転ぶ」读「ころぶ」，不是「まろぶ」。",
+        "en": "「転ぶ」 is ころぶ, not まろぶ."
+      },
+      {
+        "zh": "「てん」是「転」的音读（「運転」），动词用训读「ころぶ」。",
+        "en": "てん is the on reading (「運転」); the verb is ころぶ."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-131",
+    "type": "kanji",
+    "refs": [
+      "lesson49#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "腕に小さな<<傷>>がある。",
+    "options": [
+      "きず",
+      "きす",
+      "ぎず",
+      "しょう"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "胳膊上有一道小伤疤。",
+      "en": "There's a small scar on my arm."
+    },
+    "why": {
+      "zh": "单独用的「傷」读训读「きず」。",
+      "en": "On its own 「傷」 takes the kun reading きず."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ず」是浊音：「きず」。",
+        "en": "The second sound is voiced: きず."
+      },
+      {
+        "zh": "第一个音是清音「き」。",
+        "en": "The first sound is unvoiced き."
+      },
+      {
+        "zh": "「しょう」是音读，用于「重傷」「負傷」等复合词，单独不这样读。",
+        "en": "しょう is the on reading used in compounds (「重傷」), not on its own."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-132",
+    "type": "kanji",
+    "refs": [
+      "lesson50#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "東京は<<物価>>が高い。",
+    "options": [
+      "ぶっか",
+      "ぶつか",
+      "ものか",
+      "ぶか"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "东京物价很高。",
+      "en": "Prices are high in Tokyo."
+    },
+    "why": {
+      "zh": "「物（ぶつ）」+「価（か）」：「ぶつ」变促音，读「ぶっか」。",
+      "en": "「物」 ぶつ becomes ぶっ before か: ぶっか."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「物」在「か」前变促音「ぶっ」。",
+        "en": "「物」 becomes ぶっ before か."
+      },
+      {
+        "zh": "这里是音读词，不读训读「もの」。",
+        "en": "This is an on-reading word; not the kun reading もの."
+      },
+      {
+        "zh": "少了促音「っ」。",
+        "en": "The small っ is missing."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-133",
+    "type": "kanji",
+    "refs": [
+      "lesson50#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "夏休みは<<田舎>>の祖母の家に行く。",
+    "options": [
+      "いなか",
+      "いなが",
+      "でんしゃ",
+      "いいなか"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "暑假我要去乡下的奶奶家。",
+      "en": "In the summer holidays I go to my grandmother's in the countryside."
+    },
+    "why": {
+      "zh": "「田舎」是特殊读法（熟字训），整体读「いなか」。",
+      "en": "「田舎」 has a special whole-word reading: いなか."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「か」不浊化：「いなか」。",
+        "en": "The か isn't voiced: いなか."
+      },
+      {
+        "zh": "不是逐字音读；「でんしゃ」是「電車」。",
+        "en": "Not read character by character; でんしゃ is 「電車」 (train)."
+      },
+      {
+        "zh": "是「いなか」，没有多一个「い」。",
+        "en": "It's いなか — no extra い."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-134",
+    "type": "kanji",
+    "refs": [
+      "lesson50#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "若いころ、父はとても<<苦労>>したそうだ。",
+    "options": [
+      "くろう",
+      "くろ",
+      "ぐろう",
+      "くうろう"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "听说父亲年轻时吃了很多苦。",
+      "en": "I hear my father had a very hard time when he was young."
+    },
+    "why": {
+      "zh": "「苦（く）」+「労（ろう）」：「くろう」。",
+      "en": "「苦」 is く and 「労」 is ろう: くろう."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「労」是长音「ろう」；「くろ」是「黒」。",
+        "en": "「労」 is the long ろう; くろ is 「黒」 (black)."
+      },
+      {
+        "zh": "「苦」是清音「く」。",
+        "en": "「苦」 is unvoiced: く."
+      },
+      {
+        "zh": "「苦」是短音「く」，不是「くう」。",
+        "en": "「苦」 is a short く, not くう."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-135",
+    "type": "kanji",
+    "refs": [
+      "lesson50#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "祖父は来週、目の<<手術>>を受ける。",
+    "options": [
+      "しゅじゅつ",
+      "しゅじつ",
+      "しゅうじゅつ",
+      "てじゅつ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "爷爷下周要做眼睛手术。",
+      "en": "My grandfather is having eye surgery next week."
+    },
+    "why": {
+      "zh": "「手（しゅ）」+「術（じゅつ）」：「しゅじゅつ」。",
+      "en": "「手」 is しゅ and 「術」 is じゅつ: しゅじゅつ."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「術」读「じゅつ」，不是「じつ」。",
+        "en": "「術」 is じゅつ, not じつ."
+      },
+      {
+        "zh": "「手」是短音「しゅ」。",
+        "en": "「手」 is a short しゅ."
+      },
+      {
+        "zh": "「手」在这里用音读「しゅ」，不用训读「て」。",
+        "en": "「手」 takes the on reading しゅ here, not て."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-136",
+    "type": "kanji",
+    "refs": [
+      "lesson51#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<都会>>の生活は便利だが、疲れる。",
+    "options": [
+      "とかい",
+      "とがい",
+      "つかい",
+      "とあい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "城市生活很方便，但让人疲惫。",
+      "en": "City life is convenient but tiring."
+    },
+    "why": {
+      "zh": "「都（と）」+「会（かい）」：「とかい」。",
+      "en": "「都」 is と and 「会」 is かい: とかい."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「会」不浊化，是「かい」。",
+        "en": "「会」 isn't voiced: かい."
+      },
+      {
+        "zh": "「都」在这里读「と」；「つ」用于「都合」。",
+        "en": "「都」 is と here; つ is used in 「都合」."
+      },
+      {
+        "zh": "「会」读「かい」；「あい」是「会う」的训读。",
+        "en": "「会」 is かい; あい belongs to 「会う」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-137",
+    "type": "kanji",
+    "refs": [
+      "lesson51#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "新しい社長に<<期待>>している。",
+    "options": [
+      "きたい",
+      "きだい",
+      "ぎたい",
+      "きったい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "大家对新社长寄予期望。",
+      "en": "We have high hopes for the new president."
+    },
+    "why": {
+      "zh": "「期（き）」+「待（たい）」：「きたい」。",
+      "en": "「期」 is き and 「待」 is たい: きたい."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「待」不浊化，是「たい」。",
+        "en": "「待」 isn't voiced: たい."
+      },
+      {
+        "zh": "「期」是清音「き」。",
+        "en": "「期」 is unvoiced: き."
+      },
+      {
+        "zh": "没有促音「っ」。",
+        "en": "There's no small っ."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-138",
+    "type": "kanji",
+    "refs": [
+      "lesson54#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "出かける前に、もう一度<<確認>>してください。",
+    "options": [
+      "かくにん",
+      "かくじん",
+      "かくいん",
+      "がくにん"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "出门前请再确认一遍。",
+      "en": "Please check once more before you go out."
+    },
+    "why": {
+      "zh": "「確（かく）」+「認（にん）」：「かくにん」。",
+      "en": "「確」 is かく and 「認」 is にん: かくにん."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「認」读「にん」，不是「じん」。",
+        "en": "「認」 is にん, not じん."
+      },
+      {
+        "zh": "「認」读「にん」，不是「いん」。",
+        "en": "「認」 is にん, not いん."
+      },
+      {
+        "zh": "「確」是清音「かく」。",
+        "en": "「確」 is unvoiced: かく."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-139",
+    "type": "kanji",
+    "refs": [
+      "lesson54#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "あのとき留学しなかったことを、今でも<<後悔>>している。",
+    "options": [
+      "こうかい",
+      "ごかい",
+      "こうけい",
+      "ごうかい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "那时没去留学，我至今还在后悔。",
+      "en": "I still regret not studying abroad back then."
+    },
+    "why": {
+      "zh": "「後（こう）」+「悔（かい）」：「こうかい」，「後」在这里读「こう」。",
+      "en": "「後」 is こう here and 「悔」 is かい: こうかい."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「後」在「後悔」里读「こう」；「ごかい」是「誤解」。",
+        "en": "In 「後悔」 「後」 is こう; ごかい is 「誤解」 (misunderstanding)."
+      },
+      {
+        "zh": "「悔」读「かい」；「こうけい」是「光景」。",
+        "en": "「悔」 is かい; こうけい is 「光景」 (scene)."
+      },
+      {
+        "zh": "「後」是清音「こう」；「ごうかい」是「豪快」。",
+        "en": "「後」 is unvoiced こう; ごうかい is 「豪快」 (bold)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-140",
+    "type": "kanji",
+    "refs": [
+      "lesson54#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "レポートの<<締め切り>>は金曜日です。",
+    "options": [
+      "しめきり",
+      "しめぎり",
+      "しめきれ",
+      "ていきり"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "报告的截止日期是星期五。",
+      "en": "The report is due on Friday."
+    },
+    "why": {
+      "zh": "「締め（しめ）」+「切り（きり）」：「しめきり」，「切り」不浊化。",
+      "en": "「締め」 しめ + 「切り」 きり: しめきり, with no voicing."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「切り」在这里不浊化。",
+        "en": "「切り」 isn't voiced here."
+      },
+      {
+        "zh": "送假名是「り」，读「きり」，不是「きれ」。",
+        "en": "The okurigana is り: きり, not きれ."
+      },
+      {
+        "zh": "「てい」是「締」的音读（「締結」），这里用训读「しめ」。",
+        "en": "てい is the on reading (「締結」); here it's the kun reading しめ."
+      }
+    ]
+  }
+]

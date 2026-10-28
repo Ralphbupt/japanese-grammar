@@ -1,0 +1,467 @@
+[
+  {
+    "id": "n3-l51-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson51#1"
+    ],
+    "difficulty": 1,
+    "stem": "今日は 涼しい（　）、寒いくらいだ。上着を 持って くればよかった。",
+    "options": [
+      "というより",
+      "といっても",
+      "というと",
+      "とおり"
+    ],
+    "answer": 0,
+    "full": "今日は 涼しいと いうより、寒いくらいだ。上着を 持って くればよかった。",
+    "tr": {
+      "zh": "今天与其说凉快，不如说都有点冷了。要是带件外套来就好了。",
+      "en": "It's not so much cool today as cold. I should have brought a jacket."
+    },
+    "why": {
+      "zh": "后半句「寒いくらいだ」是比「涼しい」更贴切的说法，用「AというよりB」修正前面的说法。",
+      "en": "「寒いくらいだ」 is a more accurate word than 「涼しい」, so the speaker corrects it: 「AというよりB」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「といっても」是把程度往小里说（虽说……其实没那么……），而这里是往更冷的方向修正。",
+        "en": "「といっても」 scales the claim down; here the speaker scales it up (cool → cold)."
+      },
+      {
+        "zh": "「というと」是“说到……就想到……”，用于引出联想，不是修正说法。",
+        "en": "「というと」 introduces an association (\"speaking of…\"), not a correction."
+      },
+      {
+        "zh": "「とおり」表示“和……一样”，「涼しいとおり、寒い」意思不通。",
+        "en": "「とおり」 means \"just as\"; 「涼しいとおり、寒い」 makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n3-l51-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson51#1"
+    ],
+    "difficulty": 2,
+    "stem": "彼の 話し方は、説明して いる（　）、怒って いる ように 聞こえた。",
+    "options": [
+      "というより",
+      "といえば",
+      "とおりに",
+      "からといって"
+    ],
+    "answer": 0,
+    "full": "彼の 話し方は、説明して いると いうより、怒って いる ように 聞こえた。",
+    "tr": {
+      "zh": "他的说话方式，与其说是在解释，不如说听起来像在发火。",
+      "en": "The way he spoke sounded less like explaining and more like being angry."
+    },
+    "why": {
+      "zh": "「説明している」和「怒っている」是对同一件事的两种说法，后者更贴切，用「というより」。",
+      "en": "Explaining vs. being angry are two descriptions of the same thing, the second more accurate — 「というより」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「といえば」是“说到……”，引出联想话题，不能连接两种对比的说法。",
+        "en": "「といえば」 brings up an associated topic; it can't set two descriptions against each other."
+      },
+      {
+        "zh": "「とおりに」是“按照……”，「説明しているとおりに怒っている」意思不通。",
+        "en": "「とおりに」 means \"according to\"; it gives no sense here."
+      },
+      {
+        "zh": "「からといって」后面通常接否定（并不是因为……就……），这里后面是肯定的判断。",
+        "en": "「からといって」 is followed by a negative (\"just because… doesn't mean\"); here the clause is affirmative."
+      }
+    ]
+  },
+  {
+    "id": "n3-l51-003",
+    "type": "narabe",
+    "refs": [
+      "lesson51#1"
+    ],
+    "difficulty": 2,
+    "stem": "今 やって いる ことは、[_] [_] [★] [_] 延長の ような ものです。",
+    "options": [
+      "むしろ",
+      "趣味の",
+      "仕事",
+      "というより"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "今 やって いる ことは、仕事と いうより むしろ 趣味の 延長の ような ものです。",
+    "tr": {
+      "zh": "我现在做的事，与其说是工作，不如说更像是爱好的延伸。",
+      "en": "What I'm doing now is less a job than an extension of my hobby."
+    },
+    "why": {
+      "zh": "「AというよりむしろB」：仕事＋というより＋むしろ＋趣味の（修饰「延長」）。★ 在第三格，是「むしろ」。",
+      "en": "「AというよりむしろB」: 仕事 ＋ というより ＋ むしろ ＋ 趣味の (modifying 延長). The ★ is the third slot: 「むしろ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l51-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson51#2"
+    ],
+    "difficulty": 1,
+    "stem": "先週、家族で 海外旅行に 行った。海外（　）、近くの 韓国に 二泊しただけだが。",
+    "options": [
+      "といっても",
+      "というより",
+      "といえば",
+      "とおり"
+    ],
+    "answer": 0,
+    "full": "先週、家族で 海外旅行に 行った。海外と いっても、近くの 韓国に 二泊しただけだが。",
+    "tr": {
+      "zh": "上周全家去了国外旅行。虽说是国外，其实只是去了很近的韩国住了两晚。",
+      "en": "Last week my family went abroad. Well, \"abroad\" — we just spent two nights in nearby Korea."
+    },
+    "why": {
+      "zh": "后面「近くの韓国に二泊しただけ」是在说“没有听起来那么了不起”，对前面的说法打折扣，用「といっても」。",
+      "en": "「近くの韓国に二泊しただけ」 says it was less grand than it sounds — scaling the statement down is 「といっても」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「というより」是换一个更准确的说法，但韩国本来就是国外，并不是修正“国外”这个说法。",
+        "en": "「というより」 swaps in a more accurate label, but Korea *is* abroad; nothing is being relabelled."
+      },
+      {
+        "zh": "「といえば」是由话题引出联想（说到国外就想到……），后面不会是“只住了两晚”这种限定。",
+        "en": "「といえば」 leads to an association, not to a \"just two nights\" qualification."
+      },
+      {
+        "zh": "「とおり」是“正如……”，名词后面还需要「の」，意思也不通。",
+        "en": "「とおり」 (\"just as\") needs 「の」 after a noun and makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n3-l51-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson51#2"
+    ],
+    "difficulty": 2,
+    "stem": "A「田中さん、ピアノが 弾ける んですか。」\nB「弾ける（　）、子どもの ころに 少し 習っただけですよ。」",
+    "options": [
+      "といっても",
+      "のに",
+      "ても",
+      "というと"
+    ],
+    "answer": 0,
+    "full": "A「田中さん、ピアノが 弾ける んですか。」  B「弾けると いっても、子どもの ころに 少し 習っただけですよ。」",
+    "tr": {
+      "zh": "A：田中，你会弹钢琴吗？ B：虽说会弹，也只是小时候学过一点而已。",
+      "en": "A: Tanaka, you can play the piano? B: Well, I can, but I only took a few lessons as a kid."
+    },
+    "why": {
+      "zh": "B 承认“会弹”，但马上补充“只是小时候学过一点”，降低程度，用「といっても」。",
+      "en": "B admits it, then plays it down (\"only a few lessons as a kid\") — 「といっても」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「のに」表示“明明……却……”的不满或意外，和后面的补充说明接不上。",
+        "en": "「のに」 expresses frustration or surprise (\"even though\"); it doesn't introduce a qualification."
+      },
+      {
+        "zh": "「ても」是假设让步“即使会弹也……”，后面应是不受影响的结果，不是补充说明。",
+        "en": "「ても」 is a hypothetical \"even if\", followed by an unaffected result — not a qualification."
+      },
+      {
+        "zh": "「というと」是“说到……”，引出联想或确认，不能用来给自己的话打折扣。",
+        "en": "「というと」 (\"speaking of\") introduces an association; it can't play down one's own claim."
+      }
+    ]
+  },
+  {
+    "id": "n3-l51-006",
+    "type": "narabe",
+    "refs": [
+      "lesson51#2"
+    ],
+    "difficulty": 2,
+    "stem": "[_] [_] [★] [_] まだ 一人も いない。",
+    "options": [
+      "部下は",
+      "課長に",
+      "といっても",
+      "なった"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "課長に なったと いっても 部下は まだ 一人も いない。",
+    "tr": {
+      "zh": "虽说当上了科长，手下却一个人都还没有。",
+      "en": "I may have become section chief, but I don't have a single subordinate yet."
+    },
+    "why": {
+      "zh": "「課長になった」＋「といっても」限定程度，后面接实际情况「部下はまだ一人もいない」。★ 在第三格，是「といっても」。",
+      "en": "「課長になった」 ＋ 「といっても」 qualifies the claim, then the reality: 「部下はまだ一人もいない」. The ★ is the third slot: 「といっても」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l51-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson51#3"
+    ],
+    "difficulty": 1,
+    "stem": "A「来月、京都に 行く んです。」\nB「京都（　）、ちょうど 紅葉が きれいな 時期ですね。」",
+    "options": [
+      "といえば",
+      "といっても",
+      "というより",
+      "とおりに"
+    ],
+    "answer": 0,
+    "full": "A「来月、京都に 行く んです。」  B「京都と いえば、ちょうど 紅葉が きれいな 時期ですね。」",
+    "tr": {
+      "zh": "A：我下个月要去京都。 B：说到京都，正好是红叶漂亮的时候呢。",
+      "en": "A: I'm going to Kyoto next month. B: Kyoto — that's just when the autumn leaves are at their best."
+    },
+    "why": {
+      "zh": "B 接过对方提到的「京都」，联想到红叶，用「といえば」（说到……）。",
+      "en": "B picks up 「京都」 from A and says what it brings to mind: 「といえば」 (\"speaking of\")."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「といっても」是“虽说是京都，其实……”，用于降低程度，后面不是联想。",
+        "en": "「といっても」 plays down a claim; what follows here is an association, not a qualification."
+      },
+      {
+        "zh": "「というより」是“与其说京都不如说……”，这里没有修正说法的意思。",
+        "en": "「というより」 corrects a description; B isn't correcting anything."
+      },
+      {
+        "zh": "「とおりに」是“按照京都……”，意思不通，名词后还要加「の」。",
+        "en": "「とおりに」 (\"according to\") makes no sense and would need 「の」 after a noun."
+      }
+    ]
+  },
+  {
+    "id": "n3-l51-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson51#3"
+    ],
+    "difficulty": 1,
+    "stem": "日本の 冬の 食べ物（　）、やはり 鍋料理でしょう。",
+    "options": [
+      "といえば",
+      "といっても",
+      "とおり",
+      "からといって"
+    ],
+    "answer": 0,
+    "full": "日本の 冬の 食べ物と いえば、やはり 鍋料理でしょう。",
+    "tr": {
+      "zh": "说到日本冬天的食物，还得是火锅吧。",
+      "en": "When it comes to Japanese winter food, it has to be hot pot."
+    },
+    "why": {
+      "zh": "由话题「日本の冬の食べ物」联想到典型代表「鍋料理」，用「といえば」，常和「やはり」搭配。",
+      "en": "From the topic \"Japanese winter food\" to its typical example, hot pot: 「といえば」, often with 「やはり」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「といっても」用于降低前面说法的程度，后面应是“其实没那么……”的内容。",
+        "en": "「といっても」 scales a claim down; the sentence would need a \"but actually not so much\" follow-up."
+      },
+      {
+        "zh": "「とおり」接名词时要「の」，而且“按照冬天的食物”意思不通。",
+        "en": "「とおり」 needs 「の」 after a noun, and \"just as the winter food\" means nothing."
+      },
+      {
+        "zh": "「からといって」后面要接否定（并不是因为……就……），这里是肯定的推测。",
+        "en": "「からといって」 needs a negative after it; this ends in an affirmative guess."
+      }
+    ]
+  },
+  {
+    "id": "n3-l51-009",
+    "type": "narabe",
+    "refs": [
+      "lesson51#3"
+    ],
+    "difficulty": 2,
+    "stem": "A「この 町の 名物は 何ですか。」\nB「この 町 [_] [_] [★] [_] ですね。」",
+    "options": [
+      "新鮮な",
+      "魚",
+      "といえば",
+      "やはり"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "A「この 町の 名物は 何ですか。」  B「この 町と いえば やはり 新鮮な 魚ですね。」",
+    "tr": {
+      "zh": "A：这个镇的特产是什么？ B：说到这个镇，还得是新鲜的鱼。",
+      "en": "A: What is this town known for? B: When it comes to this town, it has to be fresh fish."
+    },
+    "why": {
+      "zh": "この町＋といえば（说到……）＋やはり＋新鮮な魚。「新鮮な」修饰「魚」，必须紧挨在它前面。★ 在第三格，是「新鮮な」。",
+      "en": "この町 ＋ といえば ＋ やはり ＋ 新鮮な魚; 「新鮮な」 must sit right before 「魚」. The ★ is the third slot: 「新鮮な」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l51-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson51#4"
+    ],
+    "difficulty": 1,
+    "stem": "説明書に 書いて ある（　）組み立てたのに、うまく 動かない。",
+    "options": [
+      "とおりに",
+      "といっても",
+      "というより",
+      "たびに"
+    ],
+    "answer": 0,
+    "full": "説明書に 書いて ある とおりに 組み立てたのに、うまく 動かない。",
+    "tr": {
+      "zh": "我是按照说明书上写的组装的，可还是动不了。",
+      "en": "I put it together exactly as the manual says, but it doesn't work properly."
+    },
+    "why": {
+      "zh": "“按照说明书上写的去做”，表示动作和说明一致，用「とおりに」。",
+      "en": "Doing something exactly as the manual says — conformity with instructions is 「とおりに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「といっても」是“虽说写着……”，用于降低程度，和“组装”接不上。",
+        "en": "「といっても」 qualifies a claim; it doesn't connect \"what's written\" to how it was assembled."
+      },
+      {
+        "zh": "「というより」是修正说法，“与其说写着不如说组装了”意思不通。",
+        "en": "「というより」 corrects a description; \"rather than written, assembled\" means nothing."
+      },
+      {
+        "zh": "「たびに」是“每次……都……”，“每次写着就组装”意思不通。",
+        "en": "「たびに」 means \"every time\"; it makes no sense with 「書いてある」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l51-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson51#4"
+    ],
+    "difficulty": 2,
+    "stem": "会議は 予定（　）、午後3時に 終わった。",
+    "options": [
+      "どおり",
+      "とおり",
+      "どおりの",
+      "にとおり"
+    ],
+    "answer": 0,
+    "full": "会議は 予定どおり、午後3時に 終わった。",
+    "tr": {
+      "zh": "会议按照预定，在下午3点结束了。",
+      "en": "The meeting ended at 3 p.m., as scheduled."
+    },
+    "why": {
+      "zh": "名词直接接「とおり」时要浊化成「どおり」：「予定どおり」＝按计划。",
+      "en": "Right after a noun, 「とおり」 becomes 「どおり」: 「予定どおり」 = as planned."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "名词后直接接时要浊化成「どおり」；不浊化的「とおり」要加「の」：「予定のとおり」。",
+        "en": "Directly after a noun it voices to 「どおり」; plain 「とおり」 needs 「の」: 「予定のとおり」."
+      },
+      {
+        "zh": "「どおりの」是修饰名词的形式（予定どおりの時間），后面是逗号和动词句，不能用「の」。",
+        "en": "「どおりの」 modifies a noun (予定どおりの時間); here a clause follows, so 「の」 is wrong."
+      },
+      {
+        "zh": "没有「にとおり」这种接法，名词后要用「の」。",
+        "en": "There is no 「にとおり」; a noun takes 「の」."
+      }
+    ],
+    "rev": 1
+  },
+  {
+    "id": "n3-l51-012",
+    "type": "narabe",
+    "refs": [
+      "lesson51#4"
+    ],
+    "difficulty": 1,
+    "stem": "[_] [_] [★] [_] やって みたら、うまく いった。",
+    "options": [
+      "とおりに",
+      "もらった",
+      "先輩に",
+      "教えて"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "先輩に 教えて もらった とおりに やって みたら、うまく いった。",
+    "tr": {
+      "zh": "按照前辈教我的方法试着做了，结果很顺利。",
+      "en": "I tried doing it exactly the way my senior colleague taught me, and it worked."
+    },
+    "why": {
+      "zh": "先輩に＋教えてもらった（动词た形）＋とおりに，修饰「やってみた」。★ 在第三格，是「もらった」。",
+      "en": "先輩に ＋ 教えてもらった (た-form) ＋ とおりに, modifying 「やってみた」. The ★ is the third slot: 「もらった」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

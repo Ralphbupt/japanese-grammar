@@ -1,0 +1,548 @@
+[
+  {
+    "id": "n4-l25-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson25#1"
+    ],
+    "difficulty": 1,
+    "stem": "さっき、山田（　）人から 電話が ありましたよ。",
+    "options": [
+      "といえば",
+      "という",
+      "ということ",
+      "というのは"
+    ],
+    "answer": 1,
+    "full": "さっき、山田 という 人から 電話が ありましたよ。",
+    "tr": {
+      "zh": "刚才有个叫山田的人打来了电话。",
+      "en": "A person called Yamada phoned a little while ago."
+    },
+    "why": {
+      "zh": "名字后面接名词「人」，表示“叫做……的人”，用「名前＋という＋名词」。",
+      "en": "A name followed by the noun 「人」: \"a person called…\" — 「name ＋ という ＋ noun」."
+    },
+    "wrong": [
+      {
+        "zh": "「といえば」是“说到……”，后面不直接接名词「人」。",
+        "en": "「といえば」 means \"speaking of\"; it isn't followed directly by the noun 「人」."
+      },
+      null,
+      {
+        "zh": "「ということ」本身已是名词，后面不能再接「人」。",
+        "en": "「ということ」 is already a noun; it can't be followed by 「人」."
+      },
+      {
+        "zh": "「というのは」用来下定义（所谓……），后面不接「人」。",
+        "en": "「というのは」 introduces a definition; it doesn't take 「人」 after it."
+      }
+    ]
+  },
+  {
+    "id": "n4-l25-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson25#1"
+    ],
+    "difficulty": 2,
+    "stem": "けさ、あしたは 大雪が ふる（　）ニュースを 見ました。",
+    "options": [
+      "ことに",
+      "ところ",
+      "という",
+      "ように"
+    ],
+    "answer": 2,
+    "full": "けさ、あしたは 大雪が ふる という ニュースを 見ました。",
+    "tr": {
+      "zh": "今天早上看到了明天要下大雪的新闻。",
+      "en": "This morning I saw a news report that it's going to snow heavily tomorrow."
+    },
+    "why": {
+      "zh": "「あしたは大雪がふる」是新闻的内容，修饰名词「ニュース」，用「简体句＋という＋名词」。",
+      "en": "「あしたは大雪がふる」 is the content of the news, modifying 「ニュース」 — 「plain clause ＋ という ＋ noun」."
+    },
+    "wrong": [
+      {
+        "zh": "「ことに」后面要接「する／なる」，不能直接接「ニュース」。",
+        "en": "「ことに」 needs 「する／なる」 after it, not 「ニュース」."
+      },
+      {
+        "zh": "「ふるところニュース」不成立，「ところ」不能这样连接名词。",
+        "en": "「ふるところニュース」 isn't Japanese; 「ところ」 can't link to a noun like this."
+      },
+      null,
+      {
+        "zh": "「ように」不能直接修饰「ニュース」，“像下雪那样看新闻”也不通。",
+        "en": "「ように」 can't modify 「ニュース」 directly, and \"saw the news like snow falls\" makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n4-l25-003",
+    "type": "narabe",
+    "refs": [
+      "lesson25#1"
+    ],
+    "difficulty": 1,
+    "stem": "[_] [_] [★] [_] いますか。",
+    "options": [
+      "人を",
+      "田中",
+      "知って",
+      "という"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "田中 という 人を 知って いますか。",
+    "tr": {
+      "zh": "你认识一个叫田中的人吗？",
+      "en": "Do you know a person called Tanaka?"
+    },
+    "why": {
+      "zh": "田中 ＋ という ＋ 人を ＋ 知って ＋ いますか。★ 在第三格，是「人を」。",
+      "en": "田中 ＋ という ＋ 人を ＋ 知って ＋ いますか. The ★ is the third slot: 「人を」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l25-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson25#2"
+    ],
+    "difficulty": 1,
+    "stem": "彼が 会社を やめた（　）は 本当ですか。",
+    "options": [
+      "という",
+      "ところ",
+      "といえば",
+      "ということ"
+    ],
+    "answer": 3,
+    "full": "彼が 会社を やめた ということ は 本当ですか。",
+    "tr": {
+      "zh": "他辞职了这件事是真的吗？",
+      "en": "Is it true that he quit his job?"
+    },
+    "why": {
+      "zh": "把「彼が会社をやめた」整件事变成名词，当作主题「は」来问，用「ということ」（……这件事）。",
+      "en": "「彼が会社をやめた」 is turned into a noun and made the topic with 「は」 — 「ということ」 (the fact that)."
+    },
+    "wrong": [
+      {
+        "zh": "「という」后面必须接名词，不能直接接「は」。",
+        "en": "「という」 must be followed by a noun, not directly by 「は」."
+      },
+      {
+        "zh": "「やめたところは」是“刚辞职的时候/地方”，和「本当ですか」接不上。",
+        "en": "「やめたところは」 means \"the moment/place he just quit\", which doesn't fit 「本当ですか」."
+      },
+      {
+        "zh": "「といえば」是“说到……”，后面不能再接「は」。",
+        "en": "「といえば」 means \"speaking of\" and can't be followed by 「は」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n4-l25-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson25#2"
+    ],
+    "difficulty": 2,
+    "stem": "ニュースに よると、来月から 電車の 料金が 上がる（　）。",
+    "options": [
+      "ということです",
+      "というのは",
+      "といえば",
+      "ことに します"
+    ],
+    "answer": 0,
+    "full": "ニュースに よると、来月から 電車の 料金が 上がる ということです。",
+    "tr": {
+      "zh": "据新闻说，从下个月起电车票价要涨。",
+      "en": "According to the news, train fares are going up from next month."
+    },
+    "why": {
+      "zh": "「ニュースによると」说明信息来源，句尾用表示传闻的「ということだ」（据说……）。",
+      "en": "「ニュースによると」 gives the source, so the ending is the hearsay 「ということだ」 (apparently)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「というのは」是“所谓……”，要接说明，不能这样结句。",
+        "en": "「というのは」 introduces an explanation; it can't end the sentence."
+      },
+      {
+        "zh": "「といえば」是“说到……”，后面还需要句子，不能结句。",
+        "en": "「といえば」 means \"speaking of\" and needs a following clause."
+      },
+      {
+        "zh": "「ことにします」是说话人自己决定，票价上涨不是我的决定，也和「ニュースによると」对不上。",
+        "en": "「ことにします」 is the speaker's own decision; fare rises aren't, and it clashes with 「ニュースによると」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l25-006",
+    "type": "narabe",
+    "refs": [
+      "lesson25#2"
+    ],
+    "difficulty": 2,
+    "stem": "メールの 返事が ない [_] [_] [★] [_] だろう。",
+    "options": [
+      "こと",
+      "来ない",
+      "ということは",
+      "という"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "メールの 返事が ない ということは 来ない という こと だろう。",
+    "tr": {
+      "zh": "没回邮件，大概就是说他不来吧。",
+      "en": "No reply to the email probably means he isn't coming."
+    },
+    "why": {
+      "zh": "「AということはBということだ」= A 就意味着 B：ということは ＋ 来ない ＋ という ＋ こと。★ 在第三格，是「という」。",
+      "en": "「A ということは B ということだ」 = A means B: ということは ＋ 来ない ＋ という ＋ こと. The ★ is the third slot: 「という」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l25-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson25#3"
+    ],
+    "difficulty": 1,
+    "stem": "「節約」（　）、むだな お金を 使わない ことです。",
+    "options": [
+      "といえば",
+      "というのは",
+      "ということ",
+      "という"
+    ],
+    "answer": 1,
+    "full": "「節約」というのは、むだな お金を 使わない ことです。",
+    "tr": {
+      "zh": "所谓“节约”，就是不浪费钱。",
+      "en": "\"Setsuyaku\" (saving) means not spending money wastefully."
+    },
+    "why": {
+      "zh": "给词下定义：「Aというのは〜ことだ」（所谓 A，就是……）。句尾的「ことです」是提示。",
+      "en": "Defining a word: 「A というのは 〜ことだ」 (A means…). The 「ことです」 at the end is the clue."
+    },
+    "wrong": [
+      {
+        "zh": "「といえば」是由话题引出联想，不用来解释词的意思。",
+        "en": "「といえば」 brings up an association, not a word's meaning."
+      },
+      null,
+      {
+        "zh": "「ということ、」后面缺少助词，不能这样做主题。",
+        "en": "「ということ、」 lacks a particle and can't be the topic like this."
+      },
+      {
+        "zh": "「という」后面必须接名词，不能直接接逗号。",
+        "en": "「という」 must be followed by a noun, not a comma."
+      }
+    ]
+  },
+  {
+    "id": "n4-l25-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson25#3"
+    ],
+    "difficulty": 2,
+    "stem": "「花見」というのは、桜を 見ながら 食事を したり お酒を 飲んだり する（　）。",
+    "options": [
+      "ところです",
+      "はずです",
+      "ことです",
+      "ばかりです"
+    ],
+    "answer": 2,
+    "full": "「花見」というのは、桜を 見ながら 食事を したり お酒を 飲んだり する ことです。",
+    "tr": {
+      "zh": "所谓“花见”，就是一边赏樱花一边吃饭、喝酒。",
+      "en": "\"Hanami\" means eating and drinking while looking at the cherry blossoms."
+    },
+    "why": {
+      "zh": "前面是「〜というのは」，下定义的句尾要和它呼应，用「〜ことだ」。",
+      "en": "After 「〜というのは」, a definition ends with 「〜ことだ」."
+    },
+    "wrong": [
+      {
+        "zh": "「するところです」是“正要做”，不是定义。",
+        "en": "「するところです」 means \"about to do\"; it isn't a definition."
+      },
+      {
+        "zh": "「はずです」是推测，不能用来解释一个词的意思。",
+        "en": "「はずです」 is a reasoned guess, not a definition."
+      },
+      null,
+      {
+        "zh": "「するばかりです」不是下定义的说法。",
+        "en": "「するばかりです」 isn't how a definition ends."
+      }
+    ]
+  },
+  {
+    "id": "n4-l25-009",
+    "type": "narabe",
+    "refs": [
+      "lesson25#3"
+    ],
+    "difficulty": 2,
+    "stem": "「JLPT」[_] [_] [★] [_] ことです。",
+    "options": [
+      "日本語の",
+      "はかる 試験の",
+      "というのは",
+      "力を"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "「JLPT」というのは 日本語の 力を はかる 試験の ことです。",
+    "tr": {
+      "zh": "所谓“JLPT”，就是测试日语能力的考试。",
+      "en": "The JLPT is a test that measures your Japanese ability."
+    },
+    "why": {
+      "zh": "「Aというのは〜ことです」：というのは ＋ 日本語の ＋ 力を ＋ はかる試験の ＋ ことです。★ 在第三格，是「力を」。",
+      "en": "「A というのは 〜ことです」: というのは ＋ 日本語の ＋ 力を ＋ はかる試験の ＋ ことです. The ★ is the third slot: 「力を」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l25-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson25#4"
+    ],
+    "difficulty": 1,
+    "stem": "日本（　）、やっぱり 富士山ですね。",
+    "options": [
+      "ということ",
+      "として",
+      "といえば",
+      "というのは"
+    ],
+    "answer": 2,
+    "full": "日本 といえば、やっぱり 富士山ですね。",
+    "tr": {
+      "zh": "说到日本，还是富士山啊。",
+      "en": "When you think of Japan, it's got to be Mount Fuji."
+    },
+    "why": {
+      "zh": "由话题「日本」引出联想到的东西「富士山」，用「名词＋といえば」（说到……）。",
+      "en": "Bringing up what 「日本」 makes you think of — 「noun ＋ といえば」 (speaking of)."
+    },
+    "wrong": [
+      {
+        "zh": "「ということ」是把句子变成名词，「日本ということ、」不成立。",
+        "en": "「ということ」 nominalizes a clause; 「日本ということ、」 doesn't work."
+      },
+      {
+        "zh": "「として」是“作为……”，“作为日本还是富士山”意思不通。",
+        "en": "「として」 means \"as\"; \"as Japan, it's Fuji\" makes no sense."
+      },
+      null,
+      {
+        "zh": "「というのは」要接定义（〜ことだ），“日本就是富士山”不是定义，「やっぱり」也说明是联想。",
+        "en": "「というのは」 needs a definition; \"Japan is Mount Fuji\" isn't one, and 「やっぱり」 marks an association."
+      }
+    ]
+  },
+  {
+    "id": "n4-l25-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson25#4"
+    ],
+    "difficulty": 2,
+    "stem": "A「来週、北海道へ 旅行に 行くんです。」\nB「いいですね。北海道（　）、ラーメンが おいしいですよね。」",
+    "options": [
+      "という",
+      "ということは",
+      "というのは",
+      "といえば"
+    ],
+    "answer": 3,
+    "full": "A「来週、北海道へ 旅行に 行くんです。」 B「いいですね。北海道 といえば、ラーメンが おいしいですよね。」",
+    "tr": {
+      "zh": "A：我下周要去北海道旅行。 B：真好啊。说到北海道，拉面很好吃呢。",
+      "en": "A: I'm going on a trip to Hokkaido next week. B: Nice! Speaking of Hokkaido, the ramen there is great."
+    },
+    "why": {
+      "zh": "B 接过 A 提到的话题「北海道」，说出联想到的事，用「といえば」。",
+      "en": "B picks up A's topic 「北海道」 and says what it brings to mind — 「といえば」."
+    },
+    "wrong": [
+      {
+        "zh": "「という」后面必须接名词，不能直接接逗号。",
+        "en": "「という」 must be followed by a noun, not a comma."
+      },
+      {
+        "zh": "「ということは」是“也就是说”，要接推论，“北海道也就是说拉面好吃”不通。",
+        "en": "「ということは」 means \"which means\" and needs a conclusion; it doesn't fit."
+      },
+      {
+        "zh": "「というのは」要接定义，“拉面好吃”不是北海道的定义。",
+        "en": "「というのは」 needs a definition; \"the ramen is good\" doesn't define Hokkaido."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n4-l25-012",
+    "type": "narabe",
+    "refs": [
+      "lesson25#4"
+    ],
+    "difficulty": 1,
+    "stem": "日本の 夏 [_] [_] [★] [_]。",
+    "options": [
+      "花火",
+      "ですね",
+      "といえば",
+      "やっぱり"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "日本の 夏 といえば やっぱり 花火 ですね。",
+    "tr": {
+      "zh": "说到日本的夏天，还是烟花啊。",
+      "en": "When it comes to summer in Japan, it has to be fireworks."
+    },
+    "why": {
+      "zh": "夏 ＋ といえば ＋ やっぱり ＋ 花火 ＋ ですね。★ 在第三格，是「花火」。",
+      "en": "夏 ＋ といえば ＋ やっぱり ＋ 花火 ＋ ですね. The ★ is the third slot: 「花火」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l25-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson25#5",
+      "lesson25#1"
+    ],
+    "difficulty": 2,
+    "stem": "A「田中さん、パーティーに 来るかな。」\nB「うん、きのう 来る（　）言って たよ。」",
+    "options": [
+      "って",
+      "といえば",
+      "ということ",
+      "ところ"
+    ],
+    "answer": 0,
+    "full": "A「田中さん、パーティーに 来るかな。」 B「うん、きのう 来る って 言って たよ。」",
+    "tr": {
+      "zh": "A：田中会来派对吗？ B：嗯，他昨天说要来。",
+      "en": "A: Do you think Tanaka will come to the party? B: Yeah, he said yesterday he'd come."
+    },
+    "why": {
+      "zh": "转述别人说的话，口语里「と言っていた」说成「って言ってた」。这里是朋友间的口语，用「って」。",
+      "en": "Reporting what someone said: 「と言っていた」 becomes 「って言ってた」 in casual speech, as in this chat between friends."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「といえば」是“说到……”，后面不接「言っていた」来转述。",
+        "en": "「といえば」 means \"speaking of\"; it doesn't introduce reported speech before 「言っていた」."
+      },
+      {
+        "zh": "「ということ」后面缺少「を」，而且转述别人的话直接用「って／と」。",
+        "en": "「ということ」 would need 「を」, and plain reported speech just uses 「って／と」."
+      },
+      {
+        "zh": "「来るところ言ってた」不成立，「ところ」不能引出说话的内容。",
+        "en": "「来るところ言ってた」 isn't Japanese; 「ところ」 can't introduce what was said."
+      }
+    ]
+  },
+  {
+    "id": "n4-l25-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson25#5",
+      "lesson25#2"
+    ],
+    "difficulty": 2,
+    "stem": "A「ねえ、聞いた？ あしたは 台風で 学校が 休み（　）。」\nB「え、本当？ やった！」",
+    "options": [
+      "にする",
+      "というのは",
+      "といえば",
+      "なんだって"
+    ],
+    "answer": 3,
+    "full": "A「ねえ、聞いた？ あしたは 台風で 学校が 休み なんだって。」 B「え、本当？ やった！」",
+    "tr": {
+      "zh": "A：喂，你听说了吗？明天因为台风学校放假。 B：啊，真的？太好了！",
+      "en": "A: Hey, did you hear? School's off tomorrow because of the typhoon. B: Really? Yes!"
+    },
+    "why": {
+      "zh": "「ねえ、聞いた？」说明 A 在转告听来的消息。口语的传闻说法是「〜んだって」（＝ということだ），名词后是「なんだって」。",
+      "en": "「ねえ、聞いた？」 shows A is passing on news. Casual hearsay is 「〜んだって」 (= ということだ); after a noun, 「なんだって」."
+    },
+    "wrong": [
+      {
+        "zh": "「学校が休みにする」不成立：「休みにする」需要决定的人做主语，「学校が」不行，也不是传闻。",
+        "en": "「学校が休みにする」 doesn't work: 「休みにする」 needs someone deciding, and it isn't hearsay."
+      },
+      {
+        "zh": "「というのは」是“所谓……”，后面还要接说明，不能结句。",
+        "en": "「というのは」 introduces an explanation and can't end the sentence."
+      },
+      {
+        "zh": "「といえば」是“说到……”，后面还要接句子，不能结句。",
+        "en": "「といえば」 means \"speaking of\" and needs a following clause."
+      },
+      null
+    ]
+  }
+]

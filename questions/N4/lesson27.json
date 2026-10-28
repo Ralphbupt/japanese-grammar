@@ -1,0 +1,251 @@
+[
+  {
+    "id": "n4-l27-001",
+    "type": "bunpou",
+    "refs": ["lesson27#1", "lesson27#2"],
+    "difficulty": 1,
+    "stem": "学生「先生、昨日の パーティーでは 何を（　）か。」\n先生「おすしを 食べましたよ。」",
+    "options": ["召し上がりました", "いただきました", "お食べに なりました", "食べさせました"],
+    "answer": 0,
+    "full": "学生「先生、昨日の パーティーでは 何を 召し上がりましたか。」 先生「おすしを 食べましたよ。」",
+    "tr": {
+      "zh": "学生：老师，昨天的派对上您吃了什么？ 老师：吃了寿司哦。",
+      "en": "Student: Professor, what did you eat at yesterday's party? Professor: I had sushi."
+    },
+    "why": {
+      "zh": "吃的人是老师（对方、上级），要用尊敬語。「食べる」的尊敬語是特殊动词「召し上がる」。",
+      "en": "The one eating is the professor, so the student uses 尊敬語; for 「食べる」 that is the special verb 「召し上がる」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「いただく」是謙譲語，只能用于自己的动作，用在老师身上等于贬低对方。", "en": "「いただく」 is 謙譲語, for your own actions only — using it for the professor lowers them." },
+      { "zh": "「食べる」有特殊尊敬語「召し上がる」，不能套「お〜になる」模板。", "en": "「食べる」 has a special honorific (召し上がる), so the お〜になる template isn't used." },
+      { "zh": "「食べさせました」是使役（让别人吃），意思不对。", "en": "「食べさせました」 is causative (made someone eat) — wrong meaning." }
+    ]
+  },
+  {
+    "id": "n4-l27-002",
+    "type": "bunpou",
+    "refs": ["lesson27#1"],
+    "difficulty": 2,
+    "stem": "部長「この 映画、もう 見た？」\n私「はい、先週（　）。とても おもしろかったです。」",
+    "options": ["見ました", "ご覧に なりました", "お見に なりました", "ご覧ください"],
+    "answer": 0,
+    "full": "部長「この 映画、もう 見た？」 私「はい、先週 見ました。とても おもしろかったです。」",
+    "tr": {
+      "zh": "部长：这部电影你看过了吗？ 我：是的，上周看了。非常有意思。",
+      "en": "Manager: Have you seen this movie yet? Me: Yes, I saw it last week. It was really good."
+    },
+    "why": {
+      "zh": "看电影的是“我”自己。尊敬語绝不能用于自己的动作，这里用丁寧語「見ました」就对。",
+      "en": "The one who saw it is me. 尊敬語 is never used for your own actions, so plain polite 「見ました」 is right."
+    },
+    "wrong": [
+      null,
+      { "zh": "「ご覧になる」是尊敬語，用在自己身上等于抬高自己，非常失礼。", "en": "「ご覧になる」 is 尊敬語; using it for yourself elevates yourself — a serious blunder." },
+      { "zh": "「見る」不能套「お〜になる」（词干只有一拍），而且这也是尊敬語，不能用于自己。", "en": "「見る」 can't take お〜になる (one-mora stem), and it would be 尊敬語 for yourself anyway." },
+      { "zh": "「ご覧ください」是“请您看”，是请部长看，和“上周看了”对不上。", "en": "「ご覧ください」 asks the manager to look — it doesn't answer \"have you seen it?\"." }
+    ]
+  },
+  {
+    "id": "n4-l27-003",
+    "type": "bunpou",
+    "refs": ["lesson27#2"],
+    "difficulty": 1,
+    "stem": "（美術館で）\n係の 人「お客様、こちらの 絵を どうぞ（　）。」",
+    "options": ["ご覧ください", "拝見して ください", "お見に なって ください", "見られて ください"],
+    "answer": 0,
+    "full": "（美術館で） 係の 人「お客様、こちらの 絵を どうぞ ご覧ください。」",
+    "tr": {
+      "zh": "（在美术馆）工作人员：这位客人，请看这幅画。",
+      "en": "(At an art museum) Staff: Please take a look at this painting."
+    },
+    "why": {
+      "zh": "看画的是客人，用尊敬語。「見る」的尊敬語是「ご覧になる」，请对方看说「ご覧ください」。",
+      "en": "The guest is the one looking, so it's 尊敬語: 「見る」 → 「ご覧になる」, and \"please look\" is 「ご覧ください」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「拝見する」是謙譲語，只用于自己看，不能请客人「拝見」。", "en": "「拝見する」 is 謙譲語 for your own looking; you can't ask a guest to 「拝見」." },
+      { "zh": "「見る」有特殊尊敬語「ご覧になる」，没有「お見になる」这种说法。", "en": "「見る」 has the special honorific 「ご覧になる」; 「お見になる」 doesn't exist." },
+      { "zh": "「見られる」的尊敬用法不能这样接「てください」，而且有特殊形式时要用特殊形式。", "en": "Honorific 「見られる」 isn't used with 「てください」 like this, and the special form takes priority." }
+    ]
+  },
+  {
+    "id": "n4-l27-004",
+    "type": "bunpou",
+    "refs": ["lesson27#2"],
+    "difficulty": 2,
+    "stem": "学生「すみません、田中先生は 今 研究室に（　）か。」",
+    "options": ["いらっしゃいます", "いらっしゃります", "おります", "参ります"],
+    "answer": 0,
+    "full": "学生「すみません、田中先生は 今 研究室に いらっしゃいますか。」",
+    "tr": {
+      "zh": "学生：请问，田中老师现在在研究室吗？",
+      "en": "Student: Excuse me, is Professor Tanaka in his office now?"
+    },
+    "why": {
+      "zh": "问老师在不在，用「いる」的尊敬語「いらっしゃる」。它的ます形是「いらっしゃいます」，不是「いらっしゃります」。",
+      "en": "Asking whether the professor is in takes the honorific of 「いる」, 「いらっしゃる」, whose ます-form is 「いらっしゃいます」 — not 「いらっしゃります」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「いらっしゃる」的ます形是特殊变形「いらっしゃいます」，「いらっしゃります」是错误形式。", "en": "「いらっしゃる」 has the irregular ます-form 「いらっしゃいます」; 「いらっしゃります」 is wrong." },
+      { "zh": "「おる」是謙譲語，学生不能用它说老师的动作。", "en": "「おる」 is 謙譲語; a student can't use it for the professor." },
+      { "zh": "「参る」是“去/来”的謙譲語，既是自谦，意思也不是“在”。", "en": "「参る」 is the humble \"go/come\" — humble, and it doesn't mean \"be (somewhere)\"." }
+    ]
+  },
+  {
+    "id": "n4-l27-005",
+    "type": "narabe",
+    "refs": ["lesson27#2"],
+    "difficulty": 2,
+    "stem": "先生、この [_] [_] [★] [_] か。",
+    "options": ["話に ついて", "何か", "ご存じ", "です"],
+    "order": [0, 1, 2, 3],
+    "full": "先生、この 話に ついて 何か ご存じですか。",
+    "tr": {
+      "zh": "老师，关于这件事您知道些什么吗？",
+      "en": "Professor, do you know anything about this matter?"
+    },
+    "why": {
+      "zh": "「この話について」（关于这件事）＋「何か」＋「ご存じですか」（「知っている」的尊敬語）。★ 在第三格，是「ご存じ」。",
+      "en": "「この話について」 (about this) ＋ 「何か」 (anything) ＋ 「ご存じですか」 (honorific of 「知っている」). The ★ is the third slot: 「ご存じ」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n4-l27-006",
+    "type": "bunpou",
+    "refs": ["lesson27#3"],
+    "difficulty": 1,
+    "stem": "田中先生は 毎朝 駅の 前の 喫茶店で 新聞を お読み（　）。",
+    "options": ["に なります", "します", "いたします", "されます"],
+    "answer": 0,
+    "full": "田中先生は 毎朝 駅の 前の 喫茶店で 新聞を お読みに なります。",
+    "tr": {
+      "zh": "田中老师每天早上在车站前的咖啡馆看报纸。",
+      "en": "Professor Tanaka reads the newspaper every morning at the café in front of the station."
+    },
+    "why": {
+      "zh": "读报纸的是老师，用尊敬語。「読む」没有特殊尊敬語，套模板「お＋ます形＋になる」→「お読みになります」。",
+      "en": "The professor is reading, so it's 尊敬語. 「読む」 has no special form, so use お＋stem＋になる → 「お読みになります」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「お〜します」是謙譲語模板，用于自己的动作，不能说老师。", "en": "「お〜します」 is the humble template for your own actions, not the professor's." },
+      { "zh": "「お〜いたします」是更郑重的謙譲語，同样只能用于自己。", "en": "「お〜いたします」 is an even humbler form — still only for yourself." },
+      { "zh": "「お読みされます」把「お〜」和「される」叠在一起，是错误的双重敬语。", "en": "「お読みされます」 stacks お〜 and される — an incorrect double honorific." }
+    ]
+  },
+  {
+    "id": "n4-l27-007",
+    "type": "bunpou",
+    "refs": ["lesson27#3", "lesson27#2"],
+    "difficulty": 2,
+    "stem": "部長、きのう お送りした 写真は もう（　）か。",
+    "options": ["ご覧に なりました", "お見に なりました", "拝見しました", "お見しました"],
+    "answer": 0,
+    "full": "部長、きのう お送りした 写真は もう ご覧に なりましたか。",
+    "tr": {
+      "zh": "部长，昨天发给您的照片您已经看了吗？",
+      "en": "Have you looked at the photos I sent yesterday yet, sir?"
+    },
+    "why": {
+      "zh": "看照片的是部长，用尊敬語。「見る」有特殊尊敬語，必须用「ご覧になる」，不能套「お〜になる」模板。",
+      "en": "The manager is the one looking, so 尊敬語 — and since 「見る」 has a special form, it must be 「ご覧になる」, not the template."
+    },
+    "wrong": [
+      null,
+      { "zh": "「見る」有特殊尊敬語，「お見になる」是错误说法（词干只有一拍也不能套模板）。", "en": "「見る」 has a special honorific; 「お見になる」 is wrong (a one-mora stem can't take the template anyway)." },
+      { "zh": "「拝見する」是謙譲語，用于自己看，不能用来问部长。", "en": "「拝見する」 is 謙譲語 for your own looking; you can't use it to ask the manager." },
+      { "zh": "「お見します」是错误的謙譲形，而且问的是部长的动作。", "en": "「お見します」 is a broken humble form — and the action is the manager's." }
+    ]
+  },
+  {
+    "id": "n4-l27-008",
+    "type": "narabe",
+    "refs": ["lesson27#3"],
+    "difficulty": 2,
+    "stem": "部長は 何時ごろ [_] [★] [_] [_] か。",
+    "options": ["会社に", "お戻り", "に", "なります"],
+    "order": [0, 1, 2, 3],
+    "full": "部長は 何時ごろ 会社に お戻りに なりますか。",
+    "tr": {
+      "zh": "部长大概几点回公司？",
+      "en": "Around what time will the manager be back at the office?"
+    },
+    "why": {
+      "zh": "「会社に」＋尊敬語模板「お戻り＋に＋なります」。★ 在第二格，是「お戻り」。",
+      "en": "「会社に」 ＋ the honorific template 「お戻り＋に＋なります」. The ★ is the second slot: 「お戻り」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n4-l27-009",
+    "type": "bunpou",
+    "refs": ["lesson27#4"],
+    "difficulty": 2,
+    "stem": "（会社の 同僚の 会話）\nA「社長は 今週 会社に いらっしゃらないんですか。」\nB「ええ、先週から アメリカへ 出張（　）いますよ。」",
+    "options": ["されて", "させて", "いたして", "させられて"],
+    "answer": 0,
+    "full": "（会社の 同僚の 会話） A「社長は 今週 会社に いらっしゃらないんですか。」 B「ええ、先週から アメリカへ 出張されて いますよ。」",
+    "tr": {
+      "zh": "（公司同事之间的对话）A：社长这周不在公司吗？ B：对，从上周开始去美国出差了。",
+      "en": "(Two coworkers) A: Isn't the president in this week? B: No, he's been away on a business trip to America since last week."
+    },
+    "why": {
+      "zh": "同事之间说社长的动作，用尊敬語。「する」的轻度尊敬語是「される」→「出張されています」。",
+      "en": "Coworkers talking about the president use 尊敬語; the light honorific of 「する」 is 「される」 → 「出張されています」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「出張させて」是使役（让别人出差），意思不对。", "en": "「出張させて」 is causative (sending someone on a trip) — wrong meaning." },
+      { "zh": "「いたす」是謙譲語，同事之间说社长的动作不能用自谦形式。", "en": "「いたす」 is 謙譲語; coworkers don't humble the president's actions." },
+      { "zh": "「させられて」是使役被动（被迫出差），既不尊敬，意思也不对。", "en": "「させられて」 is causative-passive (forced to go) — not honorific and wrong meaning." }
+    ]
+  },
+  {
+    "id": "n4-l27-010",
+    "type": "bunpou",
+    "refs": ["lesson27#4"],
+    "difficulty": 2,
+    "stem": "A「部長は 明日 何時に 会社に（　）か。」\nB「10時ごろだと 思います。」",
+    "options": ["来られます", "来させます", "参ります", "お来に なります"],
+    "answer": 0,
+    "full": "A「部長は 明日 何時に 会社に 来られますか。」 B「10時ごろだと 思います。」",
+    "tr": {
+      "zh": "A：部长明天几点来公司？ B：我想大概 10 点左右。",
+      "en": "A: What time is the manager coming in tomorrow? B: Around ten, I think."
+    },
+    "why": {
+      "zh": "说部长的动作用尊敬語。「来る」的轻度尊敬語是「来られる」（读作こられる）。",
+      "en": "The manager's action takes 尊敬語; the light honorific of 「来る」 is 「来られる」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「来させます」是使役（让某人来），问的不是这个。", "en": "「来させます」 is causative (make someone come) — not the question." },
+      { "zh": "「参る」是謙譲語，只能用于自己（或自己一方）的动作。", "en": "「参る」 is 謙譲語, only for yourself (or your side)." },
+      { "zh": "「来る」是 3 类动词，不能套「お〜になる」模板，没有「お来になる」。", "en": "「来る」 is irregular and can't take お〜になる; 「お来になる」 doesn't exist." }
+    ]
+  },
+  {
+    "id": "n4-l27-011",
+    "type": "narabe",
+    "refs": ["lesson27#4"],
+    "difficulty": 2,
+    "stem": "山田先生は 来月から 一年間 [_] [_] [★] [_] そうです。",
+    "options": ["アメリカの", "大学で", "教え", "られる"],
+    "order": [0, 1, 2, 3],
+    "full": "山田先生は 来月から 一年間 アメリカの 大学で 教えられる そうです。",
+    "tr": {
+      "zh": "听说山田老师从下个月起要在美国的大学教一年书。",
+      "en": "I hear Professor Yamada will be teaching at an American university for a year starting next month."
+    },
+    "why": {
+      "zh": "「アメリカの大学で」（在美国的大学）＋「教えられる」（「教える」的轻度尊敬語）＋「そうです」。★ 在第三格，是「教え」。",
+      "en": "「アメリカの大学で」 (at an American university) ＋ 「教えられる」 (light honorific of 「教える」) ＋ 「そうです」. The ★ is the third slot: 「教え」."
+    },
+    "wrong": [null, null, null, null]
+  }
+]

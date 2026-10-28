@@ -1,0 +1,286 @@
+[
+  {
+    "id": "n3-dk-401",
+    "type": "info",
+    "difficulty": 2,
+    "intro": "会社員の田中さんは、来月からこのスポーツクラブに入会したいと考えている。仕事は平日の18時に終わり、クラブには19時ごろ着く。平日の夜と土曜日の午前中に、プールで泳ぎたい。スタジオのレッスンには興味がない。",
+    "passage": "さくらスポーツクラブ　会員プランのご案内\n| プラン | 利用できる日・時間 | 利用できる施設 | 月会費 |\n| A　フル会員 | 毎日　7:00〜23:00 | ジム・プール・スタジオ | 9,800円 |\n| B　平日夜会員 | 月〜金　18:00〜23:00 | ジム・プール | 6,500円 |\n| C　休日会員 | 土・日・祝日　9:00〜20:00 | ジム・プール・スタジオ | 6,000円 |\n| D　ジム会員 | 毎日　7:00〜23:00 | ジムのみ | 5,500円 |\n| E　デイ会員 | 月〜金　9:00〜17:00 | ジム・プール・スタジオ | 5,000円 |\n＊入会金は3,000円です。ただし、今月中に入会された方は、入会金が無料になります。\n＊最初の月は、入会金と一か月分の月会費をお支払いください。\n＊毎週火曜日の17:00〜19:00は、子ども水泳教室のため、プールは利用できません。\n＊スタジオのレッスン（ヨガ・ダンスなど）は、A・C・Eの会員は無料、B・Dの会員は1回1,000円で参加できます。\n＊学生の方は、学生証を見せていただくと、月会費が1,000円安くなります。\n＊毎月第3木曜日は休館日です。",
+    "tr": {
+      "zh": "樱花健身俱乐部 会员方案介绍。A 全能会员：每天 7:00–23:00，健身房·泳池·练功房，月费9,800日元。B 平日晚间会员：周一至周五 18:00–23:00，健身房·泳池，6,500日元。C 假日会员：周六·周日·节假日 9:00–20:00，健身房·泳池·练功房，6,000日元。D 健身房会员：每天 7:00–23:00，仅健身房，5,500日元。E 日间会员：周一至周五 9:00–17:00，健身房·泳池·练功房，5,000日元。＊入会费3,000日元。但本月内入会者免入会费。＊第一个月请支付入会费和一个月的月费。＊每周二17:00–19:00因儿童游泳班，泳池不能使用。＊练功房课程（瑜伽、舞蹈等）A·C·E会员免费，B·D会员每次1,000日元可参加。＊学生出示学生证，月费便宜1,000日元。＊每月第三个星期四休馆。",
+      "en": "Sakura Sports Club — membership plans. A Full: every day 7:00–23:00, gym, pool, studio, ¥9,800 a month. B Weekday evening: Mon–Fri 18:00–23:00, gym and pool, ¥6,500. C Holiday: Sat, Sun and public holidays 9:00–20:00, gym, pool, studio, ¥6,000. D Gym: every day 7:00–23:00, gym only, ¥5,500. E Day: Mon–Fri 9:00–17:00, gym, pool, studio, ¥5,000. * The joining fee is ¥3,000, but it is waived for anyone who joins this month. * In the first month, please pay the joining fee and one month's fee. * Every Tuesday 17:00–19:00 the pool is closed for children's swimming lessons. * Studio classes (yoga, dance, etc.) are free for A, C and E members; B and D members can join for ¥1,000 a session. * Students who show a student ID get ¥1,000 off the monthly fee. * The club is closed on the third Thursday of every month."
+    },
+    "questions": [
+      {
+        "q": "田中さんの希望に合うプランはどれか。",
+        "options": [
+          "A　フル会員",
+          "B　平日夜会員",
+          "C　休日会員",
+          "D　ジム会員"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "田中要在平日晚上（19点左右）和星期六上午都用泳池。能同时满足这两个时间、又包含泳池的只有A。",
+          "en": "Tanaka needs the pool on weekday evenings (from about 19:00) and Saturday mornings. Only A covers both times and includes the pool."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "B平日晚上可以用泳池，但星期六不能用。",
+            "en": "B gives the pool on weekday evenings but not on Saturdays."
+          },
+          {
+            "zh": "C星期六上午可以，但平日不能用。",
+            "en": "C covers Saturday morning but not weekdays."
+          },
+          {
+            "zh": "D时间没问题，但只能用健身房，不能游泳。",
+            "en": "D's hours fit, but it's gym only — no pool."
+          }
+        ]
+      },
+      {
+        "q": "田中さんが希望に合うプランで入会する場合、最初の月にいくら払うか。",
+        "options": [
+          "9,800円",
+          "11,800円",
+          "12,800円",
+          "9,500円"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "方案A月费9,800日元。田中是下个月入会，不是「今月中」，所以要付入会费3,000日元：9,800＋3,000＝12,800日元。他是上班族，没有学生优惠。",
+          "en": "Plan A is ¥9,800. Tanaka joins next month, not 「今月中」, so the ¥3,000 joining fee applies: 9,800 + 3,000 = ¥12,800. He's an office worker, so no student discount."
+        },
+        "wrong": [
+          {
+            "zh": "只算了月费。免入会费只限本月内入会，田中是下个月入会。",
+            "en": "That's the monthly fee alone; the fee is waived only for joining this month, and Tanaka joins next month."
+          },
+          {
+            "zh": "这是减去了学生优惠1,000日元的金额，但田中是公司职员。",
+            "en": "That subtracts the ¥1,000 student discount, but Tanaka is an office worker."
+          },
+          null,
+          {
+            "zh": "这是B的6,500日元加入会费，但B星期六不能用。",
+            "en": "That's Plan B's ¥6,500 plus the joining fee, but B doesn't cover Saturdays."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-402",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "ワンさんは来月引っ越すので、次のものを捨てたいと思っている。大人用の自転車1台、いす2脚、高さ120cmの本棚1つ、冷蔵庫1台、電子レンジ1台（幅45cm・高さ30cm・奥行き35cm）。",
+    "passage": "みどり市　粗大ごみの出し方\n| 品目 | 大きさなど | 手数料 |\n| いす | 1脚 | 400円 |\n| 自転車 | 子ども用 | 400円 |\n| 自転車 | 大人用 | 800円 |\n| 本棚・たんす | 高さ90cm未満 | 400円 |\n| 本棚・たんす | 高さ90cm以上180cm未満 | 1,200円 |\n| 本棚・たんす | 高さ180cm以上 | 2,000円 |\n| ソファー | 1人用 | 800円 |\n| ソファー | 2人用以上 | 1,600円 |\n＊粗大ごみとは、いちばん長い辺が50cm以上のものです。いすと自転車は、大きさに関係なく粗大ごみです。\n＊いちばん長い辺が50cm未満のものは、燃えないごみの日に出してください（手数料はかかりません）。\n＊テレビ・冷蔵庫・洗濯機・エアコンは、市では集めません。買った店か、専門の業者に頼んでください。\n＊申し込みは、収集日の7日前までに、粗大ごみ受付センターに電話かインターネットでしてください。\n＊手数料は、コンビニやスーパーで売っている「粗大ごみ処理券」で払ってください。\n＊収集日の朝8時30分までに、処理券をはって、決められた場所に出してください。",
+    "tr": {
+      "zh": "绿市 大件垃圾的扔法。椅子：每把400日元。自行车：儿童用400日元，成人用800日元。书架·衣柜：高不到90cm 400日元，90cm以上不到180cm 1,200日元，180cm以上2,000日元。沙发：单人800日元，双人以上1,600日元。＊大件垃圾是指最长的一边在50cm以上的物品。椅子和自行车不论大小都属于大件垃圾。＊最长的一边不到50cm的物品，请在不可燃垃圾日扔（不收手续费）。＊电视、冰箱、洗衣机、空调，市里不回收。请委托购买的商店或专业回收商。＊请在回收日7天前，通过电话或网络向大件垃圾受理中心申请。＊手续费请用便利店或超市出售的「大件垃圾处理券」支付。＊请在回收日早上8点30分之前，贴好处理券，放到指定地点。",
+      "en": "Midori City — how to put out oversized garbage. Chair: ¥400 each. Bicycle: child's ¥400, adult's ¥800. Bookshelf/chest of drawers: under 90 cm tall ¥400, 90 cm to under 180 cm ¥1,200, 180 cm or more ¥2,000. Sofa: one-seater ¥800, two-seater or larger ¥1,600. * Oversized garbage means items whose longest side is 50 cm or more. Chairs and bicycles count as oversized garbage whatever their size. * Items whose longest side is under 50 cm go out on non-burnable garbage day (no fee). * The city does not collect TVs, refrigerators, washing machines or air conditioners. Ask the shop you bought it from or a specialist company. * Apply to the Oversized Garbage Centre by phone or online at least 7 days before the collection day. * Pay the fee with 'oversized garbage tickets' sold at convenience stores and supermarkets. * By 8:30 a.m. on the collection day, attach the tickets and put the items out at the designated spot."
+    },
+    "questions": [
+      {
+        "q": "ワンさんが粗大ごみとして出すものの手数料は、全部でいくらか。",
+        "options": [
+          "2,000円",
+          "2,400円",
+          "2,800円",
+          "3,600円"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "作为大件垃圾扔的是：成人自行车800＋椅子400×2＝800＋高120cm的书架（90cm以上不到180cm）1,200＝2,800日元。冰箱市里不收，微波炉最长边45cm不到50cm，扔不可燃垃圾。",
+          "en": "Oversized items: adult bicycle 800 + two chairs 400 × 2 = 800 + a 120 cm bookshelf (90–under 180 cm) 1,200 = ¥2,800. The fridge isn't collected by the city, and the microwave's longest side is 45 cm, so it's non-burnable garbage."
+        },
+        "wrong": [
+          {
+            "zh": "这是把书架按「90cm未満」的400日元算了，但书架高120cm。",
+            "en": "That prices the bookshelf at the 「90cm未満」 rate of ¥400, but it's 120 cm tall."
+          },
+          {
+            "zh": "这是椅子只算了一把，但王先生要扔两把。",
+            "en": "That counts only one chair; Wang is throwing out two."
+          },
+          null,
+          {
+            "zh": "这是把书架按180cm以上的2,000日元算了，但书架只有120cm。",
+            "en": "That uses the ¥2,000 rate for 180 cm and up, but the shelf is only 120 cm."
+          }
+        ]
+      },
+      {
+        "q": "ワンさんは、冷蔵庫と電子レンジをどうすればいいか。",
+        "options": [
+          "冷蔵庫も電子レンジも、粗大ごみとして申し込む。",
+          "冷蔵庫は粗大ごみとして申し込み、電子レンジは燃えないごみの日に出す。",
+          "冷蔵庫は買った店か業者に頼み、電子レンジは燃えないごみの日に出す。",
+          "冷蔵庫は買った店か業者に頼み、電子レンジは粗大ごみとして申し込む。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "冰箱属于市里不回收的四类家电，要找购买的商店或专业回收商。微波炉最长的一边是45cm，不到50cm，在不可燃垃圾日扔，不收费。",
+          "en": "A fridge is one of the four appliances the city won't collect, so it goes back to the shop or a specialist. The microwave's longest side is 45 cm — under 50 cm — so it goes out on non-burnable day, free."
+        },
+        "wrong": [
+          {
+            "zh": "冰箱市里不收；微波炉最长边不到50cm，也不是大件垃圾。",
+            "en": "The city won't take the fridge, and the microwave is under 50 cm, so neither is oversized garbage."
+          },
+          {
+            "zh": "微波炉对了，但冰箱是市里不回收的家电之一。",
+            "en": "The microwave is right, but the fridge is one of the appliances the city doesn't collect."
+          },
+          null,
+          {
+            "zh": "冰箱对了，但微波炉最长边45cm，不到50cm，不算大件垃圾。",
+            "en": "The fridge is right, but the microwave's longest side is 45 cm — under 50 cm — so it isn't oversized."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-403",
+    "type": "info",
+    "difficulty": 2,
+    "intro": "鈴木さんは日曜日に、妻と子ども二人（8歳の小学2年生と4歳）と一緒に、お菓子工場の見学に行きたい。家族全員で同じコースに参加するつもりだ。できれば、何かを作る体験もしたい。",
+    "passage": "ひまわり製菓　工場見学のご案内\n| コース | 曜日 | 開始時間（所要時間） | 内容 | 料金 |\n| A　見学コース | 火〜日 | 10:00 / 13:00 / 15:00（60分） | 工場見学・試食 | 無料 |\n| B　手作りコース | 土・日・祝日 | 10:30 / 14:00（90分） | 工場見学・クッキー作り | 大人1,500円　小学生1,000円 |\n| C　親子コース | 土・日 | 11:00（120分） | 工場見学・ケーキ作り | 大人1人と子ども1人で3,500円（1人増えるごとに1,500円） |\n| D　夕方コース | 金・土 | 17:00（60分） | 工場見学・試食 | 無料 |\n＊すべてのコースは予約が必要です。見学日の3日前までに、ホームページから予約してください。\n＊小学生以下のお子様は、必ず大人と一緒に参加してください。\n＊B・Cコースは、安全のため、6歳以上の方のみ参加できます。\n＊毎週月曜日は工場が休みのため、見学はできません。\n＊アレルギーのある方は、予約のときにお知らせください。",
+    "tr": {
+      "zh": "向日葵制果 工厂参观介绍。A 参观路线：周二至周日，10:00 / 13:00 / 15:00开始（60分钟），工厂参观·试吃，免费。B 手作路线：周六·周日·节假日，10:30 / 14:00开始（90分钟），工厂参观·做曲奇，大人1,500日元，小学生1,000日元。C 亲子路线：周六·周日，11:00开始（120分钟），工厂参观·做蛋糕，大人1人加孩子1人共3,500日元（每多1人加1,500日元）。D 傍晚路线：周五·周六，17:00开始（60分钟），工厂参观·试吃，免费。＊所有路线都需要预约。请在参观日3天前通过官网预约。＊小学生及以下的孩子必须和大人一起参加。＊B·C路线为了安全，只有6岁以上的人可以参加。＊每周一工厂休息，不能参观。＊有过敏的人请在预约时告知。",
+      "en": "Himawari Confectionery — factory tours. A Tour course: Tue–Sun, starting 10:00 / 13:00 / 15:00 (60 min), factory tour and tasting, free. B Hands-on course: Sat, Sun and holidays, starting 10:30 / 14:00 (90 min), factory tour and cookie making, adults ¥1,500, primary-school children ¥1,000. C Parent-and-child course: Sat and Sun, starting 11:00 (120 min), factory tour and cake making, ¥3,500 for one adult and one child (¥1,500 for each extra person). D Evening course: Fri and Sat, starting 17:00 (60 min), factory tour and tasting, free. * All courses must be booked on the website at least 3 days before the visit. * Children of primary-school age or younger must take part with an adult. * For safety, courses B and C are only for those aged 6 and over. * The factory is closed every Monday, so no tours. * If you have allergies, please tell us when booking."
+    },
+    "questions": [
+      {
+        "q": "鈴木さんの家族が参加できるコースはどれか。",
+        "options": [
+          "A　見学コース",
+          "B　手作りコース",
+          "C　親子コース",
+          "D　夕方コース"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "全家要一起参加，其中有4岁的孩子，而B·C只限6岁以上；D只在周五·周六。星期天全家都能参加的只有A（虽然没有制作体验）。",
+          "en": "The whole family goes together, including a 4-year-old, and B and C are for ages 6 and up; D runs only Fri/Sat. On a Sunday only A works for everyone (even without the hands-on part)."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "B星期天有，但只限6岁以上，4岁的孩子不能参加。",
+            "en": "B runs on Sunday but only for ages 6+, so the 4-year-old can't join."
+          },
+          {
+            "zh": "C星期天有，但同样只限6岁以上。",
+            "en": "C runs on Sunday but is also 6+ only."
+          },
+          {
+            "zh": "D只在星期五和星期六，星期天没有。",
+            "en": "D is only on Fridays and Saturdays, not Sundays."
+          }
+        ]
+      },
+      {
+        "q": "次の週、鈴木さんは8歳の子どもと二人だけで、日曜日に何かを作るコースに参加することにした。いちばん安く参加するには、どのコースでいくら払うか。",
+        "options": [
+          "Bコースで2,500円",
+          "Bコースで3,000円",
+          "Cコースで3,500円",
+          "Cコースで5,000円"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "星期天能做东西的是B和C，8岁可以参加。B：大人1,500＋小学生1,000＝2,500日元；C：大人1人加孩子1人3,500日元。所以B的2,500日元最便宜。",
+          "en": "On Sunday the hands-on courses are B and C, and an 8-year-old can join. B: adult 1,500 + primary pupil 1,000 = ¥2,500; C: one adult and one child = ¥3,500. So B at ¥2,500 is cheapest."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "这是把孩子也按大人1,500日元算了，但8岁是小学生，1,000日元。",
+            "en": "That charges the child the adult ¥1,500; an 8-year-old is a primary pupil at ¥1,000."
+          },
+          {
+            "zh": "C确实是3,500日元，但B只要2,500日元，更便宜。",
+            "en": "C is indeed ¥3,500, but B costs only ¥2,500."
+          },
+          {
+            "zh": "这是多加了一个人的1,500日元，但只有两个人，就是3,500日元，而且B更便宜。",
+            "en": "That adds ¥1,500 for an extra person; for two people C is ¥3,500 — and B is cheaper anyway."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-404",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "留学生のマリアさんは、大学の授業が月曜日から金曜日の16時まである。日本語能力試験はN3に合格しているが、N2はまだ持っていない。アルバイトは、夜は22時までに終わる仕事がいいと思っている。",
+    "passage": "アルバイト募集（駅前ジョブセンター）\n| 仕事 | 勤務日・時間 | 時給 | 応募の条件 |\n| A　コンビニの店員 | 月〜金　17:00〜22:00（週3日以上） | 1,150円 | 日本語で簡単な会話ができる方 |\n| B　レストランのホール | 土・日　11:00〜20:00 | 1,200円 | 土日の両方働ける方 |\n| C　ホテルのフロント | 毎日　18:00〜23:00（週2日以上） | 1,400円 | 日本語能力試験N2以上 |\n| D　倉庫での仕分け | 月〜土　8:00〜17:00 | 1,250円 | 経験不要 |\n| E　塾の受付 | 月〜金　17:00〜21:00（週2日以上） | 1,300円 | 電話の対応ができる方（日本語能力試験N3以上） |\n＊留学生の方は、法律で1週間に28時間までしか働けません。\n＊勤務時間が6時間を超える日は、1時間の休憩があります。休憩時間は勤務時間に入りません。\n＊22時以降の勤務は、時給が25％上がります。\n＊交通費は、1日500円まで支払います。",
+    "tr": {
+      "zh": "招聘兼职（站前求职中心）。A 便利店店员：周一至周五 17:00–22:00（每周3天以上），时薪1,150日元，能用日语简单会话者。B 餐厅服务员：周六·周日 11:00–20:00，1,200日元，周六周日两天都能上班者。C 酒店前台：每天 18:00–23:00（每周2天以上），1,400日元，日语能力考试N2以上。D 仓库分拣：周一至周六 8:00–17:00，1,250日元，无需经验。E 补习班前台：周一至周五 17:00–21:00（每周2天以上），1,300日元，能接听电话者（日语能力考试N3以上）。＊留学生依法每周最多只能工作28小时。＊工作时间超过6小时的日子有1小时休息，休息时间不算工作时间。＊22点以后的工作时薪提高25%。＊交通费每天最多支付500日元。",
+      "en": "Part-time jobs (Station Job Centre). A Convenience-store clerk: Mon–Fri 17:00–22:00 (3+ days a week), ¥1,150 an hour, simple conversation in Japanese. B Restaurant floor staff: Sat–Sun 11:00–20:00, ¥1,200, must work both Saturday and Sunday. C Hotel front desk: every day 18:00–23:00 (2+ days a week), ¥1,400, JLPT N2 or above. D Warehouse sorting: Mon–Sat 8:00–17:00, ¥1,250, no experience needed. E Cram-school reception: Mon–Fri 17:00–21:00 (2+ days a week), ¥1,300, able to answer the phone (JLPT N3 or above). * By law, international students may work no more than 28 hours a week. * On days with more than 6 hours of work there is a 1-hour break, which doesn't count as working time. * Work after 22:00 is paid 25% more per hour. * Travel expenses are paid up to ¥500 a day."
+    },
+    "questions": [
+      {
+        "q": "マリアさんが平日に働ける仕事の中で、時給がいちばん高いのはどれか。",
+        "options": [
+          "A　コンビニの店員",
+          "C　ホテルのフロント",
+          "D　倉庫での仕分け",
+          "E　塾の受付"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "平日16点下课，晚上22点前要结束。A（17–22点）和E（17–21点）都可以，E要求N3以上，玛丽亚有N3。两者比时薪，E的1,300日元更高。",
+          "en": "Classes end at 16:00 on weekdays and she wants to finish by 22:00. A (17–22) and E (17–21) both fit, and E's N3 requirement is met. Of the two, E pays more at ¥1,300."
+        },
+        "wrong": [
+          {
+            "zh": "A可以做，但时薪1,150日元，比E低。",
+            "en": "A is possible, but at ¥1,150 it pays less than E."
+          },
+          {
+            "zh": "C时薪最高，但要求N2以上，而且到23点，超过了22点。",
+            "en": "C pays most, but requires N2 or above and runs until 23:00, past 22:00."
+          },
+          {
+            "zh": "D在白天8–17点，平日有课时不能做。",
+            "en": "D is 8:00–17:00, during her weekday classes."
+          },
+          null
+        ]
+      },
+      {
+        "q": "マリアさんは、Bで毎週土日の両方働くことにした。平日はEでも働きたい。Eでは1週間に何日まで働けるか。",
+        "options": [
+          "2日",
+          "3日",
+          "4日",
+          "5日"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "B每天11–20点是9小时，超过6小时要休息1小时，实际工作8小时，两天16小时。每周上限28小时，还剩12小时。E每天4小时（不到6小时，无休息），12÷4＝3天。",
+          "en": "B is 11:00–20:00, 9 hours, but over 6 hours means a 1-hour break: 8 working hours a day, 16 for the weekend. That leaves 12 of the 28-hour limit. E is 4 hours a day (no break), so 12 ÷ 4 = 3 days."
+        },
+        "wrong": [
+          {
+            "zh": "这是把B算成每天9小时（共18小时）的结果，但休息1小时不算工作时间，实际是8小时。",
+            "en": "That counts B as 9 hours a day (18 total), but the 1-hour break isn't working time — it's 8."
+          },
+          null,
+          {
+            "zh": "4天是16小时，加上B的16小时是32小时，超过了每周28小时。",
+            "en": "Four days is 16 hours; with B's 16 that's 32, over the 28-hour weekly limit."
+          },
+          {
+            "zh": "5天是20小时，加上B共36小时，远超28小时。",
+            "en": "Five days is 20 hours; with B that's 36, far over 28."
+          }
+        ]
+      }
+    ]
+  }
+]

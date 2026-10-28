@@ -1,0 +1,350 @@
+[
+  {
+    "id": "n2-l63-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson63#1"
+    ],
+    "difficulty": 1,
+    "stem": "開会（　）、一言ご挨拶を申し上げます。",
+    "options": [
+      "にわたり",
+      "にあたり",
+      "につき",
+      "によって"
+    ],
+    "answer": 1,
+    "full": "開会にあたり、一言ご挨拶を申し上げます。",
+    "tr": {
+      "zh": "值此开会之际，请允许我讲几句话。",
+      "en": "On the occasion of the opening, allow me to say a few words."
+    },
+    "why": {
+      "zh": "在“开会”这个正式、重要的时机做某事（致辞），用「にあたり」（当……之际）。",
+      "en": "Doing something (a greeting) at a formal, important moment like the opening: 「にあたり」 (on the occasion of)."
+    },
+    "wrong": [
+      {
+        "zh": "「にわたり」是“历经（时间、范围）”，接“三天、全国”等，不接「開会」。",
+        "en": "「にわたり」 (over a span) follows periods or areas like 三日間 or 全国, not 「開会」."
+      },
+      null,
+      {
+        "zh": "「につき」是“由于……／每……”，“由于开会而致辞”不是这里的意思。",
+        "en": "「につき」 (due to / per) doesn't give \"on the occasion of\"."
+      },
+      {
+        "zh": "「によって」表示手段、原因或被动的执行者，“通过开会来致辞”说不通。",
+        "en": "「によって」 marks a means, cause or agent; \"greeting by means of the opening\" makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n2-l63-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson63#1"
+    ],
+    "difficulty": 2,
+    "stem": "海外に赴任する（　）、現地の法律や習慣について研修を受けた。",
+    "options": [
+      "を機に",
+      "をきっかけに",
+      "にわたって",
+      "にあたって"
+    ],
+    "answer": 3,
+    "full": "海外に赴任するにあたって、現地の法律や習慣について研修を受けた。",
+    "tr": {
+      "zh": "在赴海外任职之际，接受了有关当地法律和习惯的培训。",
+      "en": "In preparation for my overseas posting, I received training on local laws and customs."
+    },
+    "why": {
+      "zh": "「赴任する」是动词辞书形，可以直接接「にあたって」，表示在这个重要时机做准备。",
+      "en": "「赴任する」 is a dictionary-form verb, which 「にあたって」 takes directly: preparing at an important moment."
+    },
+    "wrong": [
+      {
+        "zh": "「を機に」接动词时要用「た形＋のを機に」，不能直接接「赴任する」。",
+        "en": "With a verb, 「を機に」 needs 「た形＋の」 (「赴任したのを機に」); it can't follow 「赴任する」."
+      },
+      {
+        "zh": "「をきっかけに」接动词时同样要用「〜たのをきっかけに」，不能直接接辞书形。",
+        "en": "「をきっかけに」 likewise needs 「〜たのを」; it can't follow the dictionary form."
+      },
+      {
+        "zh": "「にわたって」接表示时间、范围的名词（「三年にわたって」），不接动词。",
+        "en": "「にわたって」 follows a period or area noun (「三年にわたって」), not a verb."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l63-003",
+    "type": "narabe",
+    "refs": [
+      "lesson63#1"
+    ],
+    "difficulty": 2,
+    "stem": "新しいシステムを [★] [_] [_] [_] 説明会を開きます。",
+    "options": [
+      "対象とした",
+      "にあたり",
+      "全社員を",
+      "導入する"
+    ],
+    "order": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "full": "新しいシステムを導入するにあたり全社員を対象とした説明会を開きます。",
+    "tr": {
+      "zh": "在引进新系统之际，将举办以全体员工为对象的说明会。",
+      "en": "On introducing the new system, we will hold a briefing for all employees."
+    },
+    "why": {
+      "zh": "「システムを導入するにあたり」是时机，「全社員を対象とした」修饰「説明会」：導入する → にあたり → 全社員を → 対象とした。★ 是「導入する」。",
+      "en": "「システムを導入するにあたり」 is the occasion, and 「全社員を対象とした」 modifies 「説明会」: 導入する → にあたり → 全社員を → 対象とした. The ★ is 「導入する」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l63-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson63#2"
+    ],
+    "difficulty": 1,
+    "stem": "新製品の発売（　）、報道関係者向けの発表会が開かれた。",
+    "options": [
+      "に沿って",
+      "に先立ち",
+      "に応じて",
+      "に反して"
+    ],
+    "answer": 1,
+    "full": "新製品の発売に先立ち、報道関係者向けの発表会が開かれた。",
+    "tr": {
+      "zh": "在新产品发售之前，举办了面向媒体的发布会。",
+      "en": "Prior to the launch of the new product, a press presentation was held."
+    },
+    "why": {
+      "zh": "发布会是在发售这一主要事件之前先举行的活动，用「に先立ち」（在……之前）。",
+      "en": "The press event comes before the main event, the launch — 「に先立ち」 (prior to)."
+    },
+    "wrong": [
+      {
+        "zh": "「に沿って」是“按照（方针、计划）”，“按照发售举办发布会”说不通。",
+        "en": "「に沿って」 (in line with a plan) makes no sense with 「発売」."
+      },
+      null,
+      {
+        "zh": "「に応じて」是“根据（需求、变化）”，“根据发售举办发布会”说不通。",
+        "en": "「に応じて」 (in response to) makes no sense with 「発売」."
+      },
+      {
+        "zh": "「に反して」是“与……相反”，“与发售相反”意思不通。",
+        "en": "「に反して」 (contrary to) makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n2-l63-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson63#2"
+    ],
+    "difficulty": 2,
+    "stem": "本番の公演（　）、関係者だけを招いてリハーサルが行われた。",
+    "options": [
+      "を機に",
+      "にわたって",
+      "に先立って",
+      "をきっかけに"
+    ],
+    "answer": 2,
+    "full": "本番の公演に先立って、関係者だけを招いてリハーサルが行われた。",
+    "tr": {
+      "zh": "在正式公演之前，只邀请了相关人员举行了彩排。",
+      "en": "Ahead of the actual performance, a rehearsal was held with only those involved invited."
+    },
+    "why": {
+      "zh": "彩排一定在正式公演之前进行，表示“先于主要活动”的是「に先立って」。",
+      "en": "A rehearsal always comes before the real show — 「に先立って」 (ahead of)."
+    },
+    "wrong": [
+      {
+        "zh": "「を機に」是“以……为契机（开始新的变化）”，彩排不是公演带来的变化，时间顺序也反了。",
+        "en": "「を機に」 introduces a change triggered by an event; a rehearsal isn't that, and it comes before."
+      },
+      {
+        "zh": "「にわたって」接时间或范围（「三日間にわたって」），不接「公演」。",
+        "en": "「にわたって」 follows a period or area, not 「公演」."
+      },
+      null,
+      {
+        "zh": "「をきっかけに」表示由某事引发的变化，彩排发生在公演之前，不可能由公演引发。",
+        "en": "「をきっかけに」 marks a change set off by an event; a rehearsal before the show can't be set off by it."
+      }
+    ]
+  },
+  {
+    "id": "n2-l63-006",
+    "type": "narabe",
+    "refs": [
+      "lesson63#2"
+    ],
+    "difficulty": 2,
+    "stem": "映画の [_] [_] [★] [_] 行われた。",
+    "options": [
+      "監督による",
+      "上映",
+      "舞台挨拶が",
+      "に先立って"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "映画の上映に先立って監督による舞台挨拶が行われた。",
+    "tr": {
+      "zh": "在电影上映之前，进行了导演的登台致辞。",
+      "en": "Before the screening, the director gave a greeting on stage."
+    },
+    "why": {
+      "zh": "「映画の上映に先立って」在前，「監督による」修饰「舞台挨拶」：上映 → に先立って → 監督による → 舞台挨拶が。★ 是「監督による」。",
+      "en": "「映画の上映に先立って」 comes first, and 「監督による」 modifies 「舞台挨拶」: 上映 → に先立って → 監督による → 舞台挨拶が. The ★ is 「監督による」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l63-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson63#3"
+    ],
+    "difficulty": 1,
+    "stem": "定年退職（　）、夫婦で田舎に移り住むことにした。",
+    "options": [
+      "にもかかわらず",
+      "を機に",
+      "をよそに",
+      "にかけては"
+    ],
+    "answer": 1,
+    "full": "定年退職を機に、夫婦で田舎に移り住むことにした。",
+    "tr": {
+      "zh": "趁着退休的机会，决定夫妻俩搬到乡下住。",
+      "en": "Taking our retirement as the moment, my wife and I decided to move to the countryside."
+    },
+    "why": {
+      "zh": "以退休这个转折点开始新的生活，用「を機に」（趁……的机会）。",
+      "en": "Retirement is the turning point for a new life — 「を機に」 (taking the occasion of)."
+    },
+    "wrong": [
+      {
+        "zh": "「にもかかわらず」是“尽管……却”，“尽管退休了却搬到乡下”逻辑不通。",
+        "en": "「にもかかわらず」 (despite) gives \"despite retiring, we moved\", which doesn't follow."
+      },
+      null,
+      {
+        "zh": "「をよそに」是“不顾（别人的担心等）”，“不顾退休”说不通。",
+        "en": "「をよそに」 (ignoring others' concerns) makes no sense with retirement."
+      },
+      {
+        "zh": "「にかけては」是“在……方面（最拿手）”，后面要接能力评价。",
+        "en": "「にかけては」 (when it comes to) needs a statement about skill after it."
+      }
+    ]
+  },
+  {
+    "id": "n2-l63-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson63#3"
+    ],
+    "difficulty": 2,
+    "stem": "子どもが生まれた（　）、夫婦で生活習慣を見直した。",
+    "options": [
+      "をきっかけに",
+      "のきっかけに",
+      "にきっかけを",
+      "のをきっかけに"
+    ],
+    "answer": 3,
+    "full": "子どもが生まれたのをきっかけに、夫婦で生活習慣を見直した。",
+    "tr": {
+      "zh": "以孩子出生为契机，夫妻俩重新审视了生活习惯。",
+      "en": "When our child was born, we took it as a chance to rethink our habits."
+    },
+    "why": {
+      "zh": "动词た形接「をきっかけに」时要先用「の」名词化：「生まれたのをきっかけに」。",
+      "en": "After a ta-form verb, 「をきっかけに」 needs 「の」 first: 「生まれたのをきっかけに」."
+    },
+    "wrong": [
+      {
+        "zh": "「をきっかけに」不能直接接动词た形，要加「の」。",
+        "en": "「をきっかけに」 can't attach directly to the ta-form; it needs 「の」."
+      },
+      {
+        "zh": "缺少助词「を」，「生まれたのきっかけに」不成立。",
+        "en": "The particle 「を」 is missing; 「生まれたのきっかけに」 isn't a form."
+      },
+      {
+        "zh": "「にきっかけを」助词用法错误，句子不成立。",
+        "en": "「にきっかけを」 has the particles wrong and doesn't form a sentence."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l63-009",
+    "type": "narabe",
+    "refs": [
+      "lesson63#3"
+    ],
+    "difficulty": 2,
+    "stem": "父が [_] [★] [_] [_] 気を遣うようになった。",
+    "options": [
+      "家族全員が健康に",
+      "きっかけに",
+      "倒れた",
+      "のを"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "父が倒れたのをきっかけに家族全員が健康に気を遣うようになった。",
+    "tr": {
+      "zh": "以父亲病倒为契机，全家人都开始注意健康了。",
+      "en": "After my father collapsed, the whole family started paying attention to their health."
+    },
+    "why": {
+      "zh": "「父が倒れたのをきっかけに」是契机，后接变化「家族全員が健康に気を遣うようになった」：倒れた → のを → きっかけに → 家族全員が健康に。★ 是「のを」。",
+      "en": "「父が倒れたのをきっかけに」 is the trigger, then the change 「家族全員が健康に気を遣うようになった」: 倒れた → のを → きっかけに → 家族全員が健康に. The ★ is 「のを」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

@@ -1,0 +1,263 @@
+[
+  {
+    "id": "n3-dk-201",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、会社の社員に届いたメールです。",
+    "passage": "営業部の皆様\n\nお疲れさまです。総務部の山田です。\n来週の月曜日から二週間、3階の会議室の工事を行います。その間、3階の会議室は使えませんので、会議の際は5階の会議室をご利用ください。ただし、5階の会議室は数が少ないため、使う場合は必ず前日までに総務部に予約をお願いします。予約がない場合はご利用いただけません。\nなお、工事中は大きな音がすることがありますが、ご了承ください。\n\n総務部　山田",
+    "tr": {
+      "zh": "营业部各位：辛苦了，我是总务部的山田。从下周一开始的两周，将对3楼会议室进行施工。在此期间3楼会议室不能使用，开会时请使用5楼会议室。但是5楼会议室数量少，使用时请务必在前一天之前向总务部预约。没有预约的不能使用。另外，施工期间有时会有很大的声音，敬请谅解。总务部 山田",
+      "en": "To all Sales staff: Thank you for your hard work. This is Yamada from General Affairs. For two weeks from next Monday, the 3rd-floor meeting rooms will be under construction. During that time they can't be used, so please use the 5th-floor meeting rooms for meetings. However, as there are only a few rooms on the 5th floor, you must book with General Affairs by the day before. Rooms cannot be used without a booking. Also, there may be loud noise during the work; we ask for your understanding. Yamada, General Affairs"
+    },
+    "questions": [
+      {
+        "q": "このメールで一番伝えたいことは何か。",
+        "options": [
+          "工事の間、会議には5階の会議室を前日までに予約して使ってほしい。",
+          "工事の音が大きいので、二週間は会議をしないでほしい。",
+          "5階の会議室は数が少ないので、3階の会議室を予約してほしい。",
+          "3階の会議室の工事について、総務部に意見を言ってほしい。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "邮件的核心是：3楼不能用，开会请用5楼，而且必须前一天之前预约，否则不能用。",
+          "en": "The point: the 3rd floor is unavailable, so use the 5th floor — and you must book by the day before, or you can't use it."
+        },
+        "wrong": [
+          null,
+          { "zh": "施工的声音只是「なお」后面的补充，邮件并没有说不要开会，而是告诉大家去5楼开会。", "en": "The noise is only a side note after 「なお」; the email says to hold meetings on the 5th floor, not to cancel them." },
+          { "zh": "施工期间3楼会议室「使えません」，预约的是5楼。", "en": "The 3rd-floor rooms 「使えません」 during the work; it's the 5th floor you book." },
+          { "zh": "邮件里只有「ご了承ください」（请谅解），没有征求意见。", "en": "The email only asks for understanding (「ご了承ください」); it doesn't ask for opinions." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-202",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "最近は、手紙を書く人がほとんどいなくなった。メールならすぐに届くし、字が上手か下手かも気にしなくていい。私も普段の連絡はメールで済ませている。\nしかし先日、祖母から届いた手書きのはがきを読んで、胸が温かくなった。字は少し震えていたが、一文字一文字ゆっくり書いてくれたことが伝わってきたのだ。用事を伝えるだけならメールで十分だ。だが、気持ちを伝えたいときこそ、手で書く意味があるのではないだろうか。",
+    "tr": {
+      "zh": "最近几乎没有人写信了。邮件马上就能送到，也不用在意字写得好不好。我平时联系也都用邮件解决。但是前几天，读了祖母寄来的手写明信片，我心里暖暖的。字有点发抖，但能感受到她是一个字一个字慢慢写给我的。如果只是传达事情，邮件就足够了。但是，正是在想传达心意的时候，手写才有意义，不是吗？",
+      "en": "These days hardly anyone writes letters. Email arrives right away, and you needn't worry about whether your handwriting is good or bad. I too handle everyday contact by email. But the other day, reading a handwritten postcard from my grandmother warmed my heart. The writing was a little shaky, but I could feel that she had written each character slowly for me. If you only need to pass on information, email is enough. But isn't it precisely when you want to convey your feelings that writing by hand has meaning?"
+    },
+    "questions": [
+      {
+        "q": "筆者の言いたいことは何か。",
+        "options": [
+          "気持ちを伝えたいときは、手で書いたほうが伝わることがある。",
+          "メールは便利だが、これからはすべて手紙で連絡するべきだ。",
+          "字が上手でない人は、手紙ではなくメールを使ったほうがいい。",
+          "お年寄りには、メールではなくはがきで連絡しなければならない。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "最后一句「気持ちを伝えたいときこそ、手で書く意味がある」是作者的主张。",
+          "en": "The last sentence, 「気持ちを伝えたいときこそ、手で書く意味がある」, is the author's point."
+        },
+        "wrong": [
+          null,
+          { "zh": "作者说「用事を伝えるだけならメールで十分だ」，并不主张全部改用手写。", "en": "He says 「用事を伝えるだけならメールで十分だ」, so he isn't saying to switch everything to letters." },
+          { "zh": "祖母的字有点发抖，却让作者很感动，说明字好不好并不重要。", "en": "His grandmother's shaky writing moved him, so handwriting quality isn't the issue." },
+          { "zh": "文中说的是自己收到祖母明信片的感受，没有说给老人联系必须用明信片。", "en": "He describes receiving his grandmother's card; he never says you must write to older people by post." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-203",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、マンションのエレベーターにはってあるお知らせです。",
+    "passage": "住民の皆様へ\n\n4月から、ごみの出し方が一部変わります。\nこれまで水曜日に出していたプラスチックごみは、金曜日の朝に出すことになりました。\nまた、ペットボトルはプラスチックごみと分け、キャップとラベルを外してから、駅前のスーパーなどにある回収ボックスに入れてください。マンションのごみ置き場には出せなくなりますので、ご注意ください。\n燃えるごみの日（月・木）は、これまでと変わりません。\n\n管理組合",
+    "tr": {
+      "zh": "致各位住户：从4月起，垃圾的扔法有部分变动。以前周三扔的塑料垃圾，改为周五早上扔。另外，塑料瓶请与塑料垃圾分开，摘掉瓶盖和标签后，投入车站前超市等处的回收箱。塑料瓶将不能再扔到公寓的垃圾站，请注意。可燃垃圾的日子（周一、周四）与以前相同。管理委员会",
+      "en": "To all residents: From April, some of the rules for putting out rubbish will change. Plastic rubbish, which used to go out on Wednesdays, will now go out on Friday mornings. Also, please separate PET bottles from plastic rubbish, remove the caps and labels, and put them in the collection boxes at places such as the supermarket in front of the station. They can no longer be put out at the building's rubbish area, so please be careful. Burnable rubbish days (Mon, Thu) are unchanged. Residents' Association"
+    },
+    "questions": [
+      {
+        "q": "4月から、ペットボトルはどうすればいいか。",
+        "options": [
+          "キャップとラベルを外して、スーパーなどの回収ボックスに入れる。",
+          "キャップとラベルを外して、金曜日の朝にごみ置き場に出す。",
+          "プラスチックごみと一緒に、金曜日の朝にごみ置き場に出す。",
+          "キャップを付けたまま、水曜日にスーパーの回収ボックスに入れる。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "通知说塑料瓶要和塑料垃圾分开，摘掉瓶盖和标签，投进超市等处的回收箱。",
+          "en": "PET bottles go separately, caps and labels off, into collection boxes at the supermarket and similar places."
+        },
+        "wrong": [
+          null,
+          { "zh": "塑料瓶「ごみ置き場には出せなくなります」，周五早上扔的是塑料垃圾。", "en": "PET bottles 「ごみ置き場には出せなくなります」; Friday morning is for plastic rubbish." },
+          { "zh": "通知要求塑料瓶「プラスチックごみと分け」，不能一起扔。", "en": "The notice says to separate them (「プラスチックごみと分け」), not put them out together." },
+          { "zh": "要「キャップとラベルを外して」；水曜日是以前扔塑料垃圾的日子，和塑料瓶无关。", "en": "Caps must come off (「キャップとラベルを外して」), and Wednesday was the old plastic day, unrelated to bottles." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-204",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、田中さんに届いたメールです。",
+    "passage": "田中さん\n\nお疲れさまです。木村です。\n明日の打ち合わせで使う資料ですが、先ほど部長に見ていただいたところ、売り上げのグラフを去年のものと比べられるように直してほしいとのことでした。\nお手数ですが、直したものを今日の5時までに私に送ってください。私が確認してから、人数分印刷しておきます。\nなお、打ち合わせの時間は変わらず、明日の10時からです。\n\n木村",
+    "tr": {
+      "zh": "田中：辛苦了，我是木村。明天碰头会要用的资料，刚才请部长看了一下，部长说希望把销售额的图表改成能和去年的作比较。麻烦你在今天5点之前把改好的资料发给我。我确认之后会按人数打印好。另外，碰头会的时间不变，还是明天10点开始。木村",
+      "en": "Tanaka-san, thanks for your work. This is Kimura. About the materials for tomorrow's meeting: I just had the manager look at them, and he'd like the sales graph changed so it can be compared with last year's. Sorry for the trouble, but please send me the revised version by 5 o'clock today. I'll check it and then print copies for everyone. The meeting time hasn't changed: tomorrow from 10. Kimura"
+    },
+    "questions": [
+      {
+        "q": "このメールを読んで、田中さんがしなければならないことは何か。",
+        "options": [
+          "売り上げのグラフを直して、今日の5時までに木村さんに送る。",
+          "売り上げのグラフを直して、今日の5時までに部長に見せる。",
+          "直した資料を人数分印刷して、明日の10時までに持っていく。",
+          "去年の資料を探して、今日の5時までに木村さんに送る。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "木村让田中修改图表，「今日の5時までに私に送ってください」，「私」是木村。",
+          "en": "Kimura asks Tanaka to fix the graph and 「今日の5時までに私に送ってください」 — 'me' is Kimura."
+        },
+        "wrong": [
+          null,
+          { "zh": "部长已经看过了，改好的资料是发给木村，不是给部长看。", "en": "The manager has already looked; the revision goes to Kimura, not the manager." },
+          { "zh": "打印是木村的工作：「私が確認してから、人数分印刷しておきます」。", "en": "Printing is Kimura's job: 「私が確認してから、人数分印刷しておきます」." },
+          { "zh": "要做的是把图表改成能和去年比较，不是找去年的资料发过去。", "en": "The task is to revise the graph for comparison with last year, not to find and send last year's materials." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-205",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "「忙しい」が口ぐせになっている人は多い。私も以前はそうで、予定がたくさんあることを、どこか自慢に思っていた。\nしかし、体を壊して一か月仕事を休んだとき、考えが変わった。私がいなくても、会社はちゃんと回っていたのだ。それ以来、何もしない時間を、わざと予定に入れるようにしている。\n何もしない時間は、なまけている時間ではない。次に何をするかを考えるための、必要な時間なのだ。",
+    "tr": {
+      "zh": "把“忙”挂在嘴边的人很多。我以前也是这样，心里多少有点以日程排得满满为荣。但是，当我身体垮了、休了一个月假的时候，想法改变了。我不在，公司照样正常运转。从那以后，我会特意在日程里安排什么也不做的时间。什么也不做的时间不是偷懒的时间，而是为了思考接下来做什么所必需的时间。",
+      "en": "Many people have 'I'm busy' as a catchphrase. I used to be like that, and was somehow proud of having lots of plans. But when my health broke down and I took a month off work, my thinking changed. Even without me, the company ran perfectly well. Since then I deliberately put time for doing nothing into my schedule. Time doing nothing isn't time spent slacking. It's necessary time for thinking about what to do next."
+    },
+    "questions": [
+      {
+        "q": "筆者が一番言いたいことは何か。",
+        "options": [
+          "何もしない時間は、むだではなく、必要な時間である。",
+          "予定がたくさんあることは、自慢してもいいことだ。",
+          "忙しい人ほど、仕事ができる人である。",
+          "体を壊さないように、毎月一度は仕事を休むべきだ。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "最后两句「なまけている時間ではない」「必要な時間なのだ」是作者的结论。",
+          "en": "The closing lines 「なまけている時間ではない」「必要な時間なのだ」 are his conclusion."
+        },
+        "wrong": [
+          null,
+          { "zh": "以日程多为荣是作者「以前」的想法，后来已经改变了。", "en": "Being proud of a full schedule was his view 「以前」 (before), and it changed." },
+          { "zh": "文中没有这样说；作者反而发现自己不在公司也照样运转。", "en": "Nothing says this; he found the company ran fine without him." },
+          { "zh": "休一个月是因为生病，文中没有主张每月休一次。", "en": "His month off was due to illness; he never proposes taking a day off every month." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-206",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、会社の掲示板にはってあるお知らせです。",
+    "passage": "社員の皆様へ\n\n今年の健康診断を、次のとおり行います。\n日時：6月10日（火）・11日（水）　9:00〜12:00\n場所：本社7階　大会議室\nどちらか都合のいい日を選んで、5月30日までに社内サイトから申し込んでください。当日は朝食をとらずに来てください。水は飲んでもかまいません。\nなお、両日とも都合が悪い人は、会社が指定する病院で受けることもできます。その場合は、人事部の佐藤まで連絡してください。\n\n人事部",
+    "tr": {
+      "zh": "致全体员工：今年的体检按以下安排进行。时间：6月10日（周二）、11日（周三）9:00～12:00。地点：总公司7楼大会议室。请选择方便的一天，在5月30日之前通过公司内部网站报名。当天请不要吃早饭。可以喝水。另外，两天都不方便的人，也可以去公司指定的医院检查。这种情况请联系人事部的佐藤。人事部",
+      "en": "To all staff: This year's health check will be held as follows. Dates: 10 June (Tue) and 11 June (Wed), 9:00–12:00. Place: Head office, 7th floor, large conference room. Choose whichever day suits you and apply on the company intranet by 30 May. On the day, please come without eating breakfast. You may drink water. If neither day suits you, you can also have the check at a hospital designated by the company. In that case, please contact Sato in Human Resources. Human Resources"
+    },
+    "questions": [
+      {
+        "q": "6月10日も11日も出張で会社にいない人は、どうすればいいか。",
+        "options": [
+          "人事部の佐藤さんに連絡する。",
+          "5月30日までに社内サイトから申し込む。",
+          "出張から戻ってから、本社7階の大会議室へ行く。",
+          "自分で近くの病院を選んで、健康診断を受ける。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "两天都不方便的人可以去指定医院检查，「その場合は、人事部の佐藤まで連絡してください」。",
+          "en": "Those who can make neither day can use a designated hospital — 「その場合は、人事部の佐藤まで連絡してください」."
+        },
+        "wrong": [
+          null,
+          { "zh": "通过网站报名是给能在10日或11日参加的人的，这个人两天都不在。", "en": "Applying on the intranet is for those who can come on the 10th or 11th; this person can't." },
+          { "zh": "体检只在10日和11日的上午进行，之后去会议室也没有体检。", "en": "The check runs only on the mornings of the 10th and 11th; there's nothing in the room afterwards." },
+          { "zh": "医院是「会社が指定する」，不能自己随便选。", "en": "The hospital is 「会社が指定する」 (chosen by the company), not one you pick yourself." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-207",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "店を選ぶとき、インターネットの口コミを参考にする人は多いだろう。私もよく見るが、点数の高い店が自分に合うとは限らないと思うようになった。\n先日、評価の低いラーメン屋にたまたま入ったら、驚くほどおいしかった。後で悪い口コミを読んでみると、「店が狭い」「店員の態度が悪い」といったことばかりで、味についての不満はほとんどなかったのだ。\n点数だけを見るのではなく、何が書かれているかを読んで、それが自分にとって大事なことかどうかを考えるべきだろう。",
+    "tr": {
+      "zh": "选店的时候，参考网上评价的人应该很多吧。我也常看，但渐渐觉得分数高的店不一定适合自己。前几天，我偶然走进一家评分很低的拉面店，结果好吃得惊人。后来读了差评，发现说的全是“店面窄”“店员态度差”之类的，对味道几乎没有不满。不应该只看分数，而应该读一读写了什么，想想那对自己来说是否重要。",
+      "en": "Many people probably consult online reviews when choosing a restaurant. I look at them often too, but I've come to think that a high-scoring place isn't necessarily right for me. The other day I happened to go into a ramen shop with a low rating, and it was amazingly good. When I later read the bad reviews, they were all things like 'the shop is cramped' or 'the staff are rude', with almost no complaints about the taste. Rather than looking only at the score, we should read what is written and think about whether it matters to us."
+    },
+    "questions": [
+      {
+        "q": "筆者の言いたいことは何か。",
+        "options": [
+          "口コミは点数だけでなく、内容を読んで自分で判断したほうがいい。",
+          "口コミは当てにならないので、参考にしないほうがいい。",
+          "評価の低い店のほうが、実はおいしいことが多い。",
+          "店員の態度が悪い店には、行かないほうがいい。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "最后一句：不要只看分数，要读内容，判断对自己是否重要。",
+          "en": "The last sentence: don't look only at the score; read the content and judge whether it matters to you."
+        },
+        "wrong": [
+          null,
+          { "zh": "作者自己「よく見る」，也建议去读评价的内容，并不是说不要参考。", "en": "He says he looks at them often and recommends reading them, not ignoring them." },
+          { "zh": "拉面店只是一个例子，作者没有说评分低的店大多好吃。", "en": "The ramen shop is one example; he never claims low-rated places are usually better." },
+          { "zh": "作者去的店被评「店員の態度が悪い」，可他觉得很好吃，并没有说不要去。", "en": "The shop he liked was criticised for rude staff; he doesn't say to avoid such places." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-208",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、レストランの休憩室にはってあるお知らせです。",
+    "passage": "アルバイトの皆さんへ\n\n来月から、シフトの希望の出し方が変わります。\nこれまでは休憩室にある紙に書いてもらっていましたが、来月からはスマートフォンのアプリで出してください。アプリの使い方は、休憩室に説明書を置いておきます。\n希望の締め切りは、これまでと同じく毎月20日です。20日を過ぎると、希望どおりにならないことがありますので、気をつけてください。\n\n店長　中村",
+    "tr": {
+      "zh": "致各位兼职员工：从下个月起，提交排班意向的方式有变化。以前是写在休息室的纸上，从下个月起请用手机应用提交。应用的使用说明会放在休息室。意向提交截止日期和以前一样，是每月20日。过了20日，有可能无法按照意向排班，请注意。店长 中村",
+      "en": "To all part-timers: From next month, the way you submit your shift requests will change. Until now you wrote them on the sheet in the break room, but from next month please submit them through the smartphone app. I'll leave instructions for the app in the break room. The deadline is the 20th of each month, the same as before. After the 20th, your requests may not be met, so please be careful. Nakamura, Manager"
+    },
+    "questions": [
+      {
+        "q": "このお知らせで一番伝えたいことは何か。",
+        "options": [
+          "来月からは、シフトの希望を毎月20日までにアプリで出してほしい。",
+          "来月から、シフトの希望の締め切りが毎月20日に変わる。",
+          "アプリの使い方が分からない人は、20日までに店長に聞いてほしい。",
+          "シフトの希望は、休憩室の紙とアプリの両方に書いてほしい。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "变化的是提交方式（纸→应用），截止日仍是每月20日，通知要大家用应用在20日前提交。",
+          "en": "What changes is the method (paper → app); the deadline stays the 20th. The notice asks everyone to use the app by the 20th."
+        },
+        "wrong": [
+          null,
+          { "zh": "截止日「これまでと同じく毎月20日」，没有变。", "en": "The deadline is 「これまでと同じく毎月20日」 — unchanged." },
+          { "zh": "通知说说明书放在休息室，没有说要在20日前去问店长。", "en": "The notice says instructions will be in the break room; it doesn't say to ask the manager by the 20th." },
+          { "zh": "纸是「これまで」的方式，下个月起改用应用，不是两种都要。", "en": "The sheet was the old way (「これまで」); from next month it's the app, not both." }
+        ]
+      }
+    ]
+  }
+]

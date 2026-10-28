@@ -1,0 +1,698 @@
+[
+  {
+    "id": "n2-l74-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson74#1"
+    ],
+    "difficulty": 2,
+    "stem": "彼は自信あり（　）答えたが、実はその答えは間違っていた。",
+    "options": [
+      "げだ",
+      "げの",
+      "げな",
+      "げに"
+    ],
+    "answer": 3,
+    "full": "彼は自信あり げに 答えたが、実はその答えは間違っていた。",
+    "tr": {
+      "zh": "他一副很有自信的样子回答了，可其实那个答案是错的。",
+      "en": "He answered with an air of confidence, but the answer was actually wrong."
+    },
+    "why": {
+      "zh": "「げ」的变化和な形容词一样：修饰动词用「げに」。「自信ありげに答えた」＝看起来很有自信地回答。",
+      "en": "「げ」 conjugates like a na-adjective: before a verb it's 「げに」. 「自信ありげに答えた」 = answered looking confident."
+    },
+    "wrong": [
+      {
+        "zh": "「げだ」是句末形式，不能直接接动词「答えた」。",
+        "en": "「げだ」 ends a sentence; it can't run straight into the verb 「答えた」."
+      },
+      {
+        "zh": "「げ」作な形容词用，修饰名词用「げな」，不说「げの」，也不能接动词。",
+        "en": "「げ」 behaves like a na-adjective: 「げの」 isn't used, and it can't precede a verb anyway."
+      },
+      {
+        "zh": "「げな」用来修饰名词（「げな顔」），后面是动词「答えた」，要用「げに」。",
+        "en": "「げな」 modifies a noun (「げな顔」); before the verb 「答えた」 you need 「げに」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l74-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson74#1"
+    ],
+    "difficulty": 2,
+    "stem": "面接の結果を待つ間、彼は（　）様子で何度も時計を見ていた。",
+    "options": [
+      "不安そうに",
+      "不安がりな",
+      "不安げな",
+      "不安らしい"
+    ],
+    "answer": 2,
+    "full": "面接の結果を待つ間、彼は 不安げな 様子で何度も時計を見ていた。",
+    "tr": {
+      "zh": "等面试结果的时候，他一脸不安地一次又一次看表。",
+      "en": "While waiting for the interview result, he kept checking his watch with an anxious look."
+    },
+    "why": {
+      "zh": "描写从外表看到的神情“看起来不安”，用「な形容詞語幹＋げ」，修饰名词「様子」时用「げな」。",
+      "en": "Describing an observed look (\"seemed anxious\") is na-adjective stem + 「げ」, and before the noun 「様子」 it's 「げな」."
+    },
+    "wrong": [
+      {
+        "zh": "「そうに」是修饰动词的形式，后面是名词「様子」，应该用「そうな」或「げな」。",
+        "en": "「そうに」 modifies a verb; before the noun 「様子」 it would have to be 「そうな」 (or 「げな」)."
+      },
+      {
+        "zh": "「〜がり」表示“爱……的人”（「寒がり」），「不安がり」不是常用词，也不是描写神情的形式。",
+        "en": "「〜がり」 marks a person prone to a feeling (「寒がり」); 「不安がりな」 isn't a natural word for a look."
+      },
+      null,
+      {
+        "zh": "「らしい」是传闻或推断，修饰「様子」时意思变成“听说不安的样子”，不是描写外表。",
+        "en": "「らしい」 is hearsay/inference; it doesn't describe how he visibly looks."
+      }
+    ]
+  },
+  {
+    "id": "n2-l74-003",
+    "type": "narabe",
+    "refs": [
+      "lesson74#1"
+    ],
+    "difficulty": 2,
+    "stem": "彼は [_] [_] [★] [_] していたが、結局最後まで黙っていた。",
+    "options": [
+      "顔を",
+      "言い",
+      "何か",
+      "たげな"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "彼は 何か 言い たげな 顔を していたが、結局最後まで黙っていた。",
+    "tr": {
+      "zh": "他一副想说什么的表情，但最后还是一直没开口。",
+      "en": "He looked as if he wanted to say something, but in the end he stayed silent."
+    },
+    "why": {
+      "zh": "「動詞ます形＋たげ」＝看起来想……，修饰名词用「たげな」：何か → 言い → たげな → 顔を（＋していた）。★ 在第三格，是「たげな」。",
+      "en": "「masu-stem + たげ」 = looking as if one wants to…, before a noun 「たげな」: 何か → 言い → たげな → 顔を (+ していた). The ★ is the third slot: 「たげな」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l74-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson74#2"
+    ],
+    "difficulty": 2,
+    "stem": "途中で足が痛くなったが、彼はあきらめずに最後までマラソンを走り（　）。",
+    "options": [
+      "抜いた",
+      "出した",
+      "かけた",
+      "がちだった"
+    ],
+    "answer": 0,
+    "full": "途中で足が痛くなったが、彼はあきらめずに最後までマラソンを走り 抜いた。",
+    "tr": {
+      "zh": "途中脚痛了起来，但他没有放弃，一直把马拉松跑完了。",
+      "en": "His leg started hurting partway, but he didn't give up and ran the marathon all the way to the end."
+    },
+    "why": {
+      "zh": "“脚痛”“不放弃”“到最后”表示克服困难坚持到底，用「ます形＋抜く」。",
+      "en": "\"Leg hurt\", \"didn't give up\", \"to the end\" — overcoming hardship to finish: masu-stem + 「抜く」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「走り出す」是“开始跑”，和「最後まで」「あきらめずに」对不上。",
+        "en": "「走り出す」 means \"start running\"; it doesn't fit 「最後まで」 or 「あきらめずに」."
+      },
+      {
+        "zh": "「走りかけた」是“刚要跑、跑到一半”，和“坚持到最后”矛盾。",
+        "en": "「走りかけた」 means \"started to run / was about to\", contradicting \"to the end\"."
+      },
+      {
+        "zh": "「がちだ」是“往往……、容易……”的倾向，用来说一次马拉松坚持到底不合适。",
+        "en": "「がちだ」 expresses a tendency; it can't describe finishing one marathon."
+      }
+    ]
+  },
+  {
+    "id": "n2-l74-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson74#2"
+    ],
+    "difficulty": 2,
+    "stem": "将来のことを一晩中考え（　）結果、会社を辞めて留学することにした。",
+    "options": [
+      "次第の",
+      "かけた",
+      "抜いた",
+      "きりの"
+    ],
+    "answer": 2,
+    "full": "将来のことを一晩中考え 抜いた 結果、会社を辞めて留学することにした。",
+    "tr": {
+      "zh": "把将来的事整整想了一晚上，最终决定辞职去留学。",
+      "en": "After thinking my future through all night, I decided to quit my job and study abroad."
+    },
+    "why": {
+      "zh": "「一晩中」＋「結果」表示彻底想透后作出决定，用「考え抜く」（想到底、想透）。",
+      "en": "「一晩中」 + 「結果」: thinking it through completely before deciding — 「考え抜く」."
+    },
+    "wrong": [
+      {
+        "zh": "「ます形＋次第」是“一……就……”，不能接「結果」，也不合语义。",
+        "en": "「masu-stem + 次第」 means \"as soon as\"; it can't modify 「結果」."
+      },
+      {
+        "zh": "「考えかけた」是“刚开始想、想到一半”，和「一晩中」「結果」（想透后作出决定）矛盾。",
+        "en": "「考えかけた」 means \"started to think\", which clashes with 「一晩中」 and reaching a decision (「結果」)."
+      },
+      null,
+      {
+        "zh": "「きり」接动词た形（「考えたきり」），不接ます形，意思也不对。",
+        "en": "「きり」 follows the ta-form (「考えたきり」), not the masu-stem, and the meaning doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n2-l74-006",
+    "type": "narabe",
+    "refs": [
+      "lesson74#2"
+    ],
+    "difficulty": 2,
+    "stem": "どんなに苦しくても、自分で決めたことは [_] [_] [★] [_]。",
+    "options": [
+      "やり",
+      "最後まで",
+      "つもりだ",
+      "抜く"
+    ],
+    "order": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "full": "どんなに苦しくても、自分で決めたことは 最後まで やり 抜く つもりだ。",
+    "tr": {
+      "zh": "无论多么辛苦，自己决定的事我都打算坚持做到最后。",
+      "en": "No matter how hard it gets, I intend to see what I decided on through to the end."
+    },
+    "why": {
+      "zh": "「やり抜く」＝坚持做到底，前面是「最後まで」，后面接「つもりだ」：最後まで → やり → 抜く → つもりだ。★ 在第三格，是「抜く」。",
+      "en": "「やり抜く」 = see it through, preceded by 「最後まで」 and followed by 「つもりだ」: 最後まで → やり → 抜く → つもりだ. The ★ is the third slot: 「抜く」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l74-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson74#3"
+    ],
+    "difficulty": 2,
+    "stem": "この計画がうまくいくかどうかは、メンバー一人一人のやる気（　）。",
+    "options": [
+      "に限る",
+      "に過ぎない",
+      "どころではない",
+      "次第だ"
+    ],
+    "answer": 3,
+    "full": "この計画がうまくいくかどうかは、メンバー一人一人のやる気 次第だ。",
+    "tr": {
+      "zh": "这个计划能否成功，取决于每个成员的干劲。",
+      "en": "Whether this plan works out depends on each member's motivation."
+    },
+    "why": {
+      "zh": "「〜かどうかは、名詞＋次第だ」：结果随前面的因素而定，就是“取决于……”。",
+      "en": "「…かどうかは、noun + 次第だ」: the outcome varies with that factor — \"depends on\"."
+    },
+    "wrong": [
+      {
+        "zh": "「に限る」是“……最好”，用于推荐，和“成不成功”的话题接不上。",
+        "en": "「に限る」 recommends something as best; it doesn't answer \"whether it succeeds\"."
+      },
+      {
+        "zh": "「に過ぎない」是“只不过是……”，“成不成功只不过是干劲”说不通。",
+        "en": "「に過ぎない」 (\"merely\") — \"whether it succeeds is merely motivation\" doesn't make sense."
+      },
+      {
+        "zh": "「どころではない」是“哪有心思……”，不能接在“能否成功取决于……”的结构里。",
+        "en": "「どころではない」 (\"in no state for…\") doesn't fit a \"whether X depends on Y\" sentence."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l74-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson74#3"
+    ],
+    "difficulty": 3,
+    "stem": "先日の会議で資料に誤りがあるとご指摘をいただきましたので、修正したものをお送りした（　）。",
+    "options": [
+      "までもありません",
+      "次第で",
+      "次第です",
+      "どころではありません"
+    ],
+    "answer": 2,
+    "full": "先日の会議で資料に誤りがあるとご指摘をいただきましたので、修正したものをお送りした 次第です。",
+    "tr": {
+      "zh": "前几天的会议上您指出资料有误，因此我将修改后的版本发给您。",
+      "en": "At the recent meeting you pointed out errors in the materials, so I am sending you the corrected version."
+    },
+    "why": {
+      "zh": "前面说明来龙去脉，句末用「動詞た形＋次第です」表示“事情就是这样（所以才这样做）”，是商务邮件中的正式说法。",
+      "en": "The sentence explains the circumstances, and 「ta-form + 次第です」 closes it (\"that is why I did…\"), a formal business-mail ending."
+    },
+    "wrong": [
+      {
+        "zh": "「までもない」接辞书形，表示“不必……”；“已经发出了”不能接「までもない」。",
+        "en": "「までもない」 follows the dictionary form (\"no need to…\"); it can't follow 「お送りした」."
+      },
+      {
+        "zh": "「次第で」是“根据……而……”，后面要接结果，不能作句尾；也不接动词た形。",
+        "en": "「次第で」 (\"depending on\") needs a following result and doesn't follow a ta-form verb."
+      },
+      null,
+      {
+        "zh": "「どころではない」是“哪有心思……”，和“修正后发送”的说明不符。",
+        "en": "「どころではない」 (\"in no state for…\") doesn't fit explaining why the file was sent."
+      }
+    ]
+  },
+  {
+    "id": "n2-l74-009",
+    "type": "narabe",
+    "refs": [
+      "lesson74#3"
+    ],
+    "difficulty": 2,
+    "stem": "明日の花火大会は、[_] [★] [_] [_] もある。",
+    "options": [
+      "天候",
+      "中止になる",
+      "可能性",
+      "次第では"
+    ],
+    "order": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "full": "明日の花火大会は、天候 次第では 中止になる 可能性 もある。",
+    "tr": {
+      "zh": "明天的烟花大会，视天气情况也有可能取消。",
+      "en": "Depending on the weather, tomorrow's fireworks festival may be cancelled."
+    },
+    "why": {
+      "zh": "「名詞＋次第では」＝视……情况，后接「中止になる可能性もある」：天候 → 次第では → 中止になる → 可能性（＋もある）。★ 在第二格，是「次第では」。",
+      "en": "「noun + 次第では」 = depending on…, then 「中止になる可能性もある」: 天候 → 次第では → 中止になる → 可能性 (+ もある). The ★ is the second slot: 「次第では」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l74-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson74#4"
+    ],
+    "difficulty": 2,
+    "stem": "兄は五年前に家を出た（　）、一度も連絡をよこさない。",
+    "options": [
+      "とたん",
+      "うえに",
+      "きり",
+      "ところ"
+    ],
+    "answer": 2,
+    "full": "兄は五年前に家を出た きり、一度も連絡をよこさない。",
+    "tr": {
+      "zh": "哥哥五年前离开家后，就一次都没联系过。",
+      "en": "My brother left home five years ago and hasn't been in touch even once since."
+    },
+    "why": {
+      "zh": "「動詞た形＋きり、〜ない」＝自从……之后就一直没有……，后面是持续的否定。",
+      "en": "「ta-form + きり、…ない」 = since doing…, hasn't (ever) …; it's followed by a lasting negative."
+    },
+    "wrong": [
+      {
+        "zh": "「たとたん」表示“刚……就突然……”，后面要接一次性的突发事情，不能接持续的「一度も〜ない」。",
+        "en": "「たとたん」 is followed by a sudden one-off event, not an ongoing 「一度も〜ない」."
+      },
+      {
+        "zh": "「うえに」是“不仅……而且……”，追加同方向的事，“离家”和“不联系”之间是“自从……就没再”的关系。",
+        "en": "「うえに」 means \"on top of\"; the link here is \"since then, never\", not addition."
+      },
+      null,
+      {
+        "zh": "「たところ」是“……了一下，结果……”，后面接一次的发现或结果，不接“五年一直不联系”。",
+        "en": "「たところ」 is followed by a one-time discovery, not five years of silence."
+      }
+    ]
+  },
+  {
+    "id": "n2-l74-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson74#4"
+    ],
+    "difficulty": 2,
+    "stem": "みんなが先に帰ってしまい、会議室には私と部長の二人（　）になった。気まずい沈黙が続いた。",
+    "options": [
+      "次第",
+      "きり",
+      "ごと",
+      "ぶり"
+    ],
+    "answer": 1,
+    "full": "みんなが先に帰ってしまい、会議室には私と部長の二人 きり になった。気まずい沈黙が続いた。",
+    "tr": {
+      "zh": "大家都先回去了，会议室里只剩下我和部长两个人。尴尬的沉默一直持续着。",
+      "en": "Everyone else had gone home, leaving just the manager and me alone in the meeting room. An awkward silence went on."
+    },
+    "why": {
+      "zh": "「数量詞＋きり」表示“只有……”，「二人きり」＝只有两个人。",
+      "en": "「counter + きり」 means \"only\": 「二人きり」 = just the two of us."
+    },
+    "wrong": [
+      {
+        "zh": "「次第」接名词是“取决于……”，“变成取决于两个人”说不通。",
+        "en": "「noun + 次第」 is \"depends on\"; \"became depends on two people\" makes no sense."
+      },
+      null,
+      {
+        "zh": "「ごと」是“连同……一起”或“每……”，「二人ごとになった」不成立。",
+        "en": "「ごと」 means \"together with\" or \"each\"; 「二人ごとになった」 is ungrammatical."
+      },
+      {
+        "zh": "「ぶり」接时间表示“时隔……”，「二人ぶり」不成立。",
+        "en": "「ぶり」 follows a time span (\"for the first time in…\"); 「二人ぶり」 means nothing."
+      }
+    ]
+  },
+  {
+    "id": "n2-l74-012",
+    "type": "narabe",
+    "refs": [
+      "lesson74#4"
+    ],
+    "difficulty": 2,
+    "stem": "彼は [_] [_] [_] [★] 戻ってこない。",
+    "options": [
+      "朝",
+      "夜になっても",
+      "きり",
+      "出かけた"
+    ],
+    "order": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "full": "彼は 朝 出かけた きり 夜になっても 戻ってこない。",
+    "tr": {
+      "zh": "他早上出门后，到了晚上也没回来。",
+      "en": "He went out in the morning and still hasn't come back, even though it's night."
+    },
+    "why": {
+      "zh": "「た形＋きり」后接持续的否定「戻ってこない」：朝 → 出かけた → きり → 夜になっても。★ 在第四格，是「夜になっても」。",
+      "en": "「ta-form + きり」 followed by the ongoing negative 「戻ってこない」: 朝 → 出かけた → きり → 夜になっても. The ★ is the fourth slot: 「夜になっても」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l74-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson74#5"
+    ],
+    "difficulty": 1,
+    "stem": "卒業以来一度も会っていなかった友人と、先週、十年（　）再会した。",
+    "options": [
+      "おきに",
+      "ごとに",
+      "につき",
+      "ぶりに"
+    ],
+    "answer": 3,
+    "full": "卒業以来一度も会っていなかった友人と、先週、十年 ぶりに 再会した。",
+    "tr": {
+      "zh": "上周，我和毕业后一次都没见过的朋友时隔十年重逢了。",
+      "en": "Last week I met up again with a friend I hadn't seen once since graduation — for the first time in ten years."
+    },
+    "why": {
+      "zh": "“毕业后一次都没见过”说明隔了很久才再次发生，用「期間＋ぶりに」（时隔……）。",
+      "en": "\"Hadn't met once since graduation\" means a long gap before it happened again: period + 「ぶりに」."
+    },
+    "wrong": [
+      {
+        "zh": "「おきに」是“每隔……”，表示反复发生；这里是十年来唯一一次重逢。",
+        "en": "「おきに」 (\"every other…\") is for something repeated; this is a single reunion after ten years."
+      },
+      {
+        "zh": "「ごとに」是“每……”，也表示反复，和“毕业后一次都没见过”矛盾。",
+        "en": "「ごとに」 (\"every…\") also implies repetition, contradicting \"never met since graduating\"."
+      },
+      {
+        "zh": "「につき」是“每……”（比率）或告示中的“因为”，「十年につき再会した」不成立。",
+        "en": "「につき」 means \"per\" or \"due to\" (notices); 「十年につき再会した」 doesn't work."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l74-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson74#5"
+    ],
+    "difficulty": 2,
+    "stem": "二十年（　）同窓会には、クラスの半分以上が集まった。",
+    "options": [
+      "ぶりな",
+      "ぶりで",
+      "ぶりに",
+      "ぶりの"
+    ],
+    "answer": 3,
+    "full": "二十年 ぶりの 同窓会には、クラスの半分以上が集まった。",
+    "tr": {
+      "zh": "时隔二十年的同学会，全班一半以上的人都来了。",
+      "en": "More than half the class came to the reunion, the first in twenty years."
+    },
+    "why": {
+      "zh": "后面紧接名词「同窓会」，「ぶり」修饰名词用「ぶりの」。",
+      "en": "It's directly followed by the noun 「同窓会」, so 「ぶり」 takes 「の」: 「ぶりの」."
+    },
+    "wrong": [
+      {
+        "zh": "「ぶり」作名词用，修饰名词要用「の」，没有「ぶりな」的说法。",
+        "en": "「ぶり」 is noun-like, so it takes 「の」 before a noun; 「ぶりな」 doesn't exist."
+      },
+      {
+        "zh": "「ぶりで」是中顿或修饰谓语的形式，不能直接修饰名词「同窓会」。",
+        "en": "「ぶりで」 links to a predicate; it can't modify the noun 「同窓会」."
+      },
+      {
+        "zh": "「ぶりに」修饰动词，后面是名词「同窓会」，要用「ぶりの」。",
+        "en": "「ぶりに」 modifies a verb; before the noun 「同窓会」 it must be 「ぶりの」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l74-015",
+    "type": "narabe",
+    "refs": [
+      "lesson74#5"
+    ],
+    "difficulty": 2,
+    "stem": "祖母は孫との [★] [_] [_] [_] 喜んでいた。",
+    "options": [
+      "ぶりの",
+      "再会を",
+      "一年",
+      "心から"
+    ],
+    "order": [
+      2,
+      0,
+      1,
+      3
+    ],
+    "full": "祖母は孫との 一年 ぶりの 再会を 心から 喜んでいた。",
+    "tr": {
+      "zh": "奶奶打心底为和孙子时隔一年的重逢而高兴。",
+      "en": "Grandma was overjoyed to see her grandchild again after a year."
+    },
+    "why": {
+      "zh": "「孫との一年ぶりの再会」是一个名词短语，「心から」修饰「喜んでいた」：一年 → ぶりの → 再会を → 心から。★ 在第一格，是「一年」。",
+      "en": "「孫との一年ぶりの再会」 is one noun phrase, and 「心から」 modifies 「喜んでいた」: 一年 → ぶりの → 再会を → 心から. The ★ is the first slot: 「一年」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l74-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson74#6"
+    ],
+    "difficulty": 2,
+    "stem": "【お知らせ】本日は店内改装工事中（　）、臨時休業とさせていただきます。",
+    "options": [
+      "につき",
+      "にかけて",
+      "に先立ち",
+      "につけ"
+    ],
+    "answer": 0,
+    "full": "【お知らせ】本日は店内改装工事中 につき、臨時休業とさせていただきます。",
+    "tr": {
+      "zh": "【通知】今日店内装修施工中，因此临时停业。",
+      "en": "[Notice] Due to interior renovation work today, we are temporarily closed."
+    },
+    "why": {
+      "zh": "告示中说明原因用「名詞＋につき」（因为……），是书面、正式的通知用语。",
+      "en": "In notices the reason is given with 「noun + につき」 (due to…), formal notice language."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「にかけて」是“到……为止（时间范围）”或“在……方面”，「工事中にかけて」不成立。",
+        "en": "「にかけて」 marks a span (\"through\") or a field; 「工事中にかけて」 doesn't work."
+      },
+      {
+        "zh": "「に先立ち」是“在……之前”，“在施工中之前休业”说不通。",
+        "en": "「に先立ち」 means \"prior to\"; \"closed prior to being under construction\" makes no sense."
+      },
+      {
+        "zh": "「につけ」是“每当……就……”，用于情感反复涌现，不能用在告示里说明休业原因。",
+        "en": "「につけ」 means \"whenever\" (feelings that recur); it can't give the reason in a notice."
+      }
+    ]
+  },
+  {
+    "id": "n2-l74-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson74#6"
+    ],
+    "difficulty": 2,
+    "stem": "このツアーでは、参加者一人（　）一枚ずつ、記念の絵はがきを差し上げます。",
+    "options": [
+      "にかけて",
+      "につき",
+      "にとって",
+      "につけ"
+    ],
+    "answer": 1,
+    "full": "このツアーでは、参加者一人 につき 一枚ずつ、記念の絵はがきを差し上げます。",
+    "tr": {
+      "zh": "本次旅行团每位参加者赠送一张纪念明信片。",
+      "en": "On this tour, each participant will receive one commemorative postcard."
+    },
+    "why": {
+      "zh": "「数量詞＋につき」表示单位比率“每……”，「一人につき一枚」＝每人一张。",
+      "en": "「counter + につき」 gives a rate (\"per\"): 「一人につき一枚」 = one per person."
+    },
+    "wrong": [
+      {
+        "zh": "「にかけては」是“在……方面（最拿手）”，不表示“每人”。",
+        "en": "「にかけては」 means \"when it comes to…\"; it doesn't mean \"per person\"."
+      },
+      null,
+      {
+        "zh": "「にとって」是“对……来说”，后接评价（重要、难等），不表示分配的单位。",
+        "en": "「にとって」 (\"for/to someone\") is followed by an evaluation, not a per-unit allotment."
+      },
+      {
+        "zh": "「につけ」是“每当……就（产生某种感情）”，不表示单位比率。",
+        "en": "「につけ」 means \"whenever (a feeling arises)\", not a unit rate."
+      }
+    ]
+  },
+  {
+    "id": "n2-l74-018",
+    "type": "narabe",
+    "refs": [
+      "lesson74#6"
+    ],
+    "difficulty": 1,
+    "stem": "この駐車場は [_] [_] [★] [_]。",
+    "options": [
+      "かかる",
+      "三百円",
+      "一時間",
+      "につき"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "この駐車場は 一時間 につき 三百円 かかる。",
+    "tr": {
+      "zh": "这个停车场每小时收费三百日元。",
+      "en": "This car park costs 300 yen per hour."
+    },
+    "why": {
+      "zh": "「一時間につき」＝每小时，后面接金额和动词：一時間 → につき → 三百円 → かかる。★ 在第三格，是「三百円」。",
+      "en": "「一時間につき」 = per hour, then the amount and the verb: 一時間 → につき → 三百円 → かかる. The ★ is the third slot: 「三百円」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

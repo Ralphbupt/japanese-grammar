@@ -1,0 +1,238 @@
+[
+  {
+    "id": "n5-l10-001",
+    "type": "bunpou",
+    "refs": ["lesson10#1"],
+    "difficulty": 2,
+    "stem": "この 言葉の 意味が（　）、先生に 聞いて ください。",
+    "options": ["分からなかったら", "分からないと", "分からなかったと", "分からなくて"],
+    "answer": 0,
+    "full": "この 言葉の 意味が 分からなかったら、先生に 聞いて ください。",
+    "tr": {
+      "zh": "如果不懂这个词的意思，请问老师。",
+      "en": "If you don't know what this word means, please ask the teacher."
+    },
+    "why": {
+      "zh": "“如果不懂的话，请……”是假设＋请求，用「たら」。否定的たら形是「〜なかったら」：分からない→分からなかったら。",
+      "en": "\"If you don't understand, please…\" is a condition followed by a request, so 「たら」. The negative たら-form is 「〜なかったら」: 分からない→分からなかったら."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「と」后面不能接「〜てください」这样的请求。",
+        "en": "「と」 can't be followed by a request like 「〜てください」."
+      },
+      {
+        "zh": "条件「と」不接た形，「分からなかったと」不能表示“不懂的话”。",
+        "en": "Conditional 「と」 doesn't follow the た-form; 「分からなかったと」 can't mean \"if you don't understand\"."
+      },
+      {
+        "zh": "「〜なくて」表示原因，原因的て形后面不能接请求。",
+        "en": "「〜なくて」 gives a reason, and a て-form reason can't be followed by a request."
+      }
+    ]
+  },
+  {
+    "id": "n5-l10-002",
+    "type": "bunpou",
+    "refs": ["lesson10#1"],
+    "difficulty": 1,
+    "stem": "あした（　）、一緒に 映画を 見に 行こう。",
+    "options": ["暇だったら", "暇たら", "暇かったら", "暇だと"],
+    "answer": 0,
+    "full": "あした 暇だったら、一緒に 映画を 見に 行こう。",
+    "tr": {
+      "zh": "明天有空的话，一起去看电影吧。",
+      "en": "If you're free tomorrow, let's go see a movie together."
+    },
+    "why": {
+      "zh": "「暇」是な形容词，たら形是「暇だったら」。后面是邀请「行こう」，用万能的「たら」。",
+      "en": "「暇」 is a な-adjective, so its たら-form is 「暇だったら」. The invitation 「行こう」 after it is fine with 「たら」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "な形容词要先变成「だった」再加「ら」，不能直接加「たら」。",
+        "en": "A な-adjective goes through 「だった」 before 「ら」; 「たら」 can't attach directly."
+      },
+      {
+        "zh": "「〜かったら」是い形容词的变形，「暇」是な形容词。",
+        "en": "「〜かったら」 is the い-adjective pattern; 「暇」 is a な-adjective."
+      },
+      {
+        "zh": "「と」后面不能接「行こう」这样的邀请。",
+        "en": "「と」 can't be followed by an invitation like 「行こう」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l10-003",
+    "type": "narabe",
+    "refs": ["lesson10#1"],
+    "difficulty": 2,
+    "stem": "冷蔵庫を [_] [_] [★] [_] でした。",
+    "options": ["いません", "何も", "開けたら", "入って"],
+    "order": [2, 1, 3, 0],
+    "full": "冷蔵庫を 開けたら 何も 入って いませんでした。",
+    "tr": {
+      "zh": "打开冰箱一看，里面什么都没有。",
+      "en": "When I opened the fridge, there was nothing in it."
+    },
+    "why": {
+      "zh": "过去的意外发现：「冷蔵庫を開けたら」（打开冰箱一看）＋「何も入っていませんでした」（什么都没放着）。★ 在第三格，是「入って」。",
+      "en": "A past discovery: 「冷蔵庫を開けたら」 (when I opened the fridge) ＋ 「何も入っていませんでした」 (nothing was in it). The ★ is the third slot: 「入って」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n5-l10-004",
+    "type": "bunpou",
+    "refs": ["lesson10#2", "lesson10#4"],
+    "difficulty": 3,
+    "stem": "A「来週、京都へ 行くんです。」\nB「京都へ（　）、この 地図を 持って 行って ください。」",
+    "options": ["行くなら", "行ったら", "行くと", "行けば"],
+    "answer": 0,
+    "full": "A「来週、京都へ 行くんです。」 B「京都へ 行くなら、この 地図を 持って 行って ください。」",
+    "tr": {
+      "zh": "A：我下周要去京都。 B：要去京都的话，请把这张地图带上。",
+      "en": "A: I'm going to Kyoto next week. B: If you're going to Kyoto, take this map with you."
+    },
+    "why": {
+      "zh": "B 承接 A 说的计划给建议，而且“带上地图”发生在出发之前。后句可以先于前句发生的只有「なら」。",
+      "en": "B picks up A's plan and gives advice, and taking the map happens before the trip. Only 「なら」 lets the second clause come first in time."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「たら」表示到了京都之后，可是地图要在出发前从这里带走，时间顺序不对。",
+        "en": "「たら」 would mean after arriving in Kyoto, but the map has to be taken from here before leaving."
+      },
+      {
+        "zh": "「と」后面不能接「〜てください」这样的请求。",
+        "en": "「と」 can't be followed by a request like 「〜てください」."
+      },
+      {
+        "zh": "「ば」前后同一主语、后面又是请求时很不自然，而且也表示“去了之后”，顺序不对。",
+        "en": "「ば」 with the same subject and a request is unnatural, and it also implies \"after going\", the wrong order."
+      }
+    ]
+  },
+  {
+    "id": "n5-l10-005",
+    "type": "bunpou",
+    "refs": ["lesson10#2"],
+    "difficulty": 1,
+    "stem": "A「新しい パソコンを 買いたいんですが…。」\nB「パソコン（　）、駅の 前の 店が 安いですよ。」",
+    "options": ["なら", "でも", "だけ", "より"],
+    "answer": 0,
+    "full": "A「新しい パソコンを 買いたいんですが…。」 B「パソコンなら、駅の 前の 店が 安いですよ。」",
+    "tr": {
+      "zh": "A：我想买台新电脑…… B：电脑的话，车站前那家店很便宜哦。",
+      "en": "A: I'd like to buy a new computer… B: If it's a computer you want, the shop in front of the station is cheap."
+    },
+    "why": {
+      "zh": "B 接过 A 提到的话题“电脑”，给出建议。“名词＋なら”就是“说到……的话”。",
+      "en": "B takes up A's topic, a computer, and gives advice. 「名詞＋なら」 means \"if it's … you're talking about\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「でも」是“即使是电脑也”，和“推荐买电脑的店”的意思接不上。",
+        "en": "「でも」 means \"even a computer\", which doesn't fit a recommendation for where to buy one."
+      },
+      {
+        "zh": "「だけ」是“只有电脑”，B 的回答没有限定的意思。",
+        "en": "「だけ」 means \"only computers\"; B isn't limiting anything."
+      },
+      {
+        "zh": "「より」用于比较（比电脑……），这里没有比较的对象。",
+        "en": "「より」 compares (\"than a computer\"), and nothing is being compared here."
+      }
+    ]
+  },
+  {
+    "id": "n5-l10-006",
+    "type": "narabe",
+    "refs": ["lesson10#2"],
+    "difficulty": 2,
+    "stem": "A「日本語を 勉強したいです。」\nB「[_] [★] [_] [_] いいですよ。」",
+    "options": ["本が", "なら", "勉強する", "この"],
+    "order": [2, 1, 3, 0],
+    "full": "A「日本語を 勉強したいです。」 B「勉強するなら この 本が いいですよ。」",
+    "tr": {
+      "zh": "A：我想学日语。 B：要学的话，这本书不错哦。",
+      "en": "A: I want to study Japanese. B: If you're going to study it, this book is good."
+    },
+    "why": {
+      "zh": "B 承接 A 的话「勉強するなら」（要学的话），再给建议「この本がいいですよ」。★ 在第二格，是「なら」。",
+      "en": "B picks up A's words — 「勉強するなら」 (if you're going to study) — then advises 「この本がいいですよ」. The ★ is the second slot: 「なら」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n5-l10-007",
+    "type": "bunpou",
+    "refs": ["lesson10#3"],
+    "difficulty": 1,
+    "stem": "水は 0度に（　）、氷に なります。",
+    "options": ["なると", "なるなら", "なっても", "なりたら"],
+    "answer": 0,
+    "full": "水は 0度に なると、氷に なります。",
+    "tr": {
+      "zh": "水一到0度就会结冰。",
+      "en": "When water reaches 0 degrees, it turns into ice."
+    },
+    "why": {
+      "zh": "这是每次必然发生的自然规律，用「と」最地道。",
+      "en": "This is a law of nature that happens every time — 「と」 is the natural choice."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「なら」是承接话题的假设，不能表示自然规律。",
+        "en": "「なら」 is a topic-based \"if\"; it can't state a law of nature."
+      },
+      {
+        "zh": "「〜ても」是“即使到了0度也”，和“会结冰”矛盾。",
+        "en": "「〜ても」 means \"even at 0 degrees\", which contradicts \"turns into ice\"."
+      },
+      {
+        "zh": "「たら」接在た形后面：なる→なった→なったら，「なりたら」是错误变形。",
+        "en": "「たら」 follows the た-form: なる→なった→なったら. 「なりたら」 is a wrong form."
+      }
+    ]
+  },
+  {
+    "id": "n5-l10-008",
+    "type": "bunpou",
+    "refs": ["lesson10#4", "lesson10#3"],
+    "difficulty": 2,
+    "stem": "わたしは 毎日 家に（　）、すぐ 手を 洗います。",
+    "options": ["帰ると", "帰るなら", "帰るまで", "帰っても"],
+    "answer": 0,
+    "full": "わたしは 毎日 家に 帰ると、すぐ 手を 洗います。",
+    "tr": {
+      "zh": "我每天一回到家就马上洗手。",
+      "en": "Every day, as soon as I get home, I wash my hands."
+    },
+    "why": {
+      "zh": "「毎日」说明是每次都这样的习惯：“一回家就……”，用「と」。",
+      "en": "「毎日」 marks a habit that happens every time — \"as soon as I get home\" — so 「と」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「なら」不能表示习惯或时间先后，这是常见错误。",
+        "en": "「なら」 can't express a habit or a time sequence — a common mistake."
+      },
+      {
+        "zh": "「まで」是“直到回家为止”，和「すぐ手を洗います」接不上。",
+        "en": "「まで」 means \"until I get home\", which doesn't fit 「すぐ手を洗います」."
+      },
+      {
+        "zh": "「〜ても」是“即使回家也”，和习惯的意思不符。",
+        "en": "「〜ても」 means \"even if I get home\", which doesn't describe a habit."
+      }
+    ]
+  }
+]

@@ -1,0 +1,350 @@
+[
+  {
+    "id": "n3-l45-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson45#1"
+    ],
+    "difficulty": 1,
+    "stem": "料理を たくさん 作りすぎて しまって、二人では とても 食べ（　）。",
+    "options": [
+      "きれない",
+      "きった",
+      "かねない",
+      "ようとしない"
+    ],
+    "answer": 0,
+    "full": "料理を たくさん 作りすぎて しまって、二人では とても 食べきれない。",
+    "tr": {
+      "zh": "菜做得太多了，两个人根本吃不完。",
+      "en": "I made far too much food — the two of us can't possibly finish it."
+    },
+    "why": {
+      "zh": "量太多、吃不完，用「ます形去ます＋きれない」（无法全部做完）。",
+      "en": "Too much to finish: 「masu-stem ＋ きれない」 (can't do it all)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「食べきった」是“全部吃完了”，和“做得太多”以及表示否定的「とても」（根本……不）都接不上。",
+        "en": "「食べきった」 means \"we ate it all,\" which clashes with \"made far too much\" and with 「とても」, which here needs a negative."
+      },
+      {
+        "zh": "「かねない」是担心坏事发生，「食べかねない」意思不通。",
+        "en": "「かねない」 warns of a bad outcome; 「食べかねない」 makes no sense here."
+      },
+      {
+        "zh": "「食べようとしない」是“不肯吃”，和“做得太多”这个原因接不上。",
+        "en": "「食べようとしない」 means \"won't even try to eat,\" which doesn't follow from making too much."
+      }
+    ]
+  },
+  {
+    "id": "n3-l45-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson45#1"
+    ],
+    "difficulty": 2,
+    "stem": "足が 痛かったが、42キロの マラソンを 最後まで 走り（　）。ゴールした ときは 本当に うれしかった。",
+    "options": [
+      "きった",
+      "っこない",
+      "えない",
+      "かねた"
+    ],
+    "answer": 0,
+    "full": "足が 痛かったが、42キロの マラソンを 最後まで 走りきった。ゴールした ときは 本当に うれしかった。",
+    "tr": {
+      "zh": "虽然脚疼，还是把42公里的马拉松跑完了。冲过终点时真的很高兴。",
+      "en": "My legs hurt, but I ran the whole 42 km marathon. I was so happy when I crossed the finish line."
+    },
+    "why": {
+      "zh": "后一句说“冲过终点”，说明全程跑完了，用「ます形去ます＋きった」（彻底做完）。",
+      "en": "\"When I crossed the finish line\" shows the whole race was completed: 「masu-stem ＋ きった」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「走りっこない」是“绝对跑不完”，和“冲过终点”矛盾。",
+        "en": "「走りっこない」 means \"no way I'll make it,\" contradicting crossing the finish line."
+      },
+      {
+        "zh": "「走りえない」是“不可能跑”，和后面跑完、高兴的内容矛盾。",
+        "en": "「走りえない」 means \"it's impossible to run,\" contradicting the happy finish."
+      },
+      {
+        "zh": "「かねた」是“难以做到”，「走りかねた」不表示跑完，和“冲过终点”不符。",
+        "en": "「かねた」 means \"found it hard to\"; 「走りかねた」 doesn't say the race was finished."
+      }
+    ]
+  },
+  {
+    "id": "n3-l45-003",
+    "type": "narabe",
+    "refs": [
+      "lesson45#1"
+    ],
+    "difficulty": 1,
+    "stem": "毎日 夜遅くまで 残業が 続いて、[_] [_] [★] [_]。",
+    "options": [
+      "いる",
+      "疲れ",
+      "もう",
+      "きって"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "毎日 夜遅くまで 残業が 続いて、もう 疲れきって いる。",
+    "tr": {
+      "zh": "每天都加班到深夜，已经筋疲力尽了。",
+      "en": "I've been working overtime late every night, and I'm completely exhausted."
+    },
+    "why": {
+      "zh": "もう ＋ 疲れ（ます形去ます）＋ きって ＋ いる：「〜きっている」表示极端状态。★ 在第三格，是「きって」。",
+      "en": "もう ＋ 疲れ (masu-stem) ＋ きって ＋ いる: 「〜きっている」 shows an extreme state. The ★ is the third slot: 「きって」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l45-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson45#2"
+    ],
+    "difficulty": 2,
+    "stem": "A「この 仕事、明日までに 全部 できる？」\nB「無理だよ。あと 一日じゃ でき（　）よ。」",
+    "options": [
+      "っこない",
+      "うる",
+      "ようとする",
+      "ざるを得ない"
+    ],
+    "answer": 0,
+    "full": "A「この 仕事、明日までに 全部 できる？」 B「無理だよ。あと 一日じゃ できっこないよ。」",
+    "tr": {
+      "zh": "A：这些工作明天之前能全部做完吗？ B：不行啊。只剩一天，根本不可能做完。",
+      "en": "A: Can you finish all this work by tomorrow? B: No way. There's no way I can do it in one day."
+    },
+    "why": {
+      "zh": "B 先说「無理だよ」，接着用口语的「ます形去ます＋っこない」强调“绝对不可能”。",
+      "en": "B starts with 「無理だよ」, then stresses it with the colloquial 「masu-stem ＋ っこない」 (no way)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「できうる」是“有可能做到”，和「無理だよ」矛盾，语气也是书面的。",
+        "en": "「できうる」 means \"it's possible,\" which contradicts 「無理だよ」, and it's bookish."
+      },
+      {
+        "zh": "「できる」不是意志动作，不能接「〜ようとする」，「できようとする」不成立。",
+        "en": "「できる」 isn't a deliberate action, so it can't take 「〜ようとする」; 「できようとする」 isn't said."
+      },
+      {
+        "zh": "「できざるを得ない」是“不得不做到”，和「無理だよ」矛盾。",
+        "en": "「できざるを得ない」 means \"have no choice but to manage,\" contradicting 「無理だよ」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l45-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson45#2"
+    ],
+    "difficulty": 2,
+    "stem": "あんな 強い 相手に、うちの チームが（　）っこないよ。",
+    "options": [
+      "勝て",
+      "勝つ",
+      "勝った",
+      "勝たない"
+    ],
+    "answer": 0,
+    "full": "あんな 強い 相手に、うちの チームが 勝てっこないよ。",
+    "tr": {
+      "zh": "对手那么强，我们队根本不可能赢。",
+      "en": "Against an opponent that strong, there's no way our team can win."
+    },
+    "why": {
+      "zh": "「っこない」接在ます形去掉「ます」的形式后面，这里用可能动词「勝てる」：勝てます → 勝てっこない。",
+      "en": "「っこない」 follows the masu-stem; here the potential 勝てる: 勝てます → 勝てっこない."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「っこない」不接辞书形，「勝つっこない」不成立。",
+        "en": "「っこない」 doesn't take the dictionary form; 「勝つっこない」 is wrong."
+      },
+      {
+        "zh": "「っこない」不接过去形，「勝ったっこない」不成立。",
+        "en": "「っこない」 doesn't take the past form; 「勝ったっこない」 is wrong."
+      },
+      {
+        "zh": "「っこない」本身已经是否定，不接ない形。",
+        "en": "「っこない」 is already negative; it doesn't follow a ない-form."
+      }
+    ]
+  },
+  {
+    "id": "n3-l45-006",
+    "type": "narabe",
+    "refs": [
+      "lesson45#2"
+    ],
+    "difficulty": 1,
+    "stem": "一日で 単語を 千個も [_] [_] [★] [_]。",
+    "options": [
+      "なんて",
+      "っこない",
+      "覚える",
+      "でき"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "一日で 単語を 千個も 覚えるなんて できっこない。",
+    "tr": {
+      "zh": "一天记住一千个单词，根本不可能。",
+      "en": "Memorizing a thousand words in one day? There's no way you can do that."
+    },
+    "why": {
+      "zh": "覚える ＋ なんて（……什么的）＋ でき（ます形去ます）＋ っこない。★ 在第三格，是「でき」。",
+      "en": "覚える ＋ なんて ＋ でき (masu-stem) ＋ っこない. The ★ is the third slot: 「でき」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l45-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson45#3"
+    ],
+    "difficulty": 2,
+    "stem": "大きな 地震は いつでも 起こり（　）。だから 日頃の 準備が 大切なのだ。",
+    "options": [
+      "うる",
+      "えない",
+      "きれない",
+      "っこない"
+    ],
+    "answer": 0,
+    "full": "大きな 地震は いつでも 起こりうる。だから 日頃の 準備が 大切なのだ。",
+    "tr": {
+      "zh": "大地震随时都有可能发生。所以平时的准备很重要。",
+      "en": "A big earthquake can happen at any time. That's why everyday preparation matters."
+    },
+    "why": {
+      "zh": "“所以平时的准备很重要”，前句应是“有可能发生”，用书面的「ます形去ます＋うる」。",
+      "en": "\"That's why preparation matters\" needs \"it can happen\" before it: the written 「masu-stem ＋ うる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「起こりえない」是“不可能发生”，那就不需要准备了，和「だから」矛盾。",
+        "en": "「起こりえない」 says it can't happen — then no preparation is needed, which contradicts 「だから」."
+      },
+      {
+        "zh": "「きれない」是“无法全部做完”，「起こりきれない」意思不通。",
+        "en": "「きれない」 means \"can't finish doing\"; 「起こりきれない」 makes no sense."
+      },
+      {
+        "zh": "「起こりっこない」是“绝对不会发生”，和「だから準備が大切」矛盾。",
+        "en": "「起こりっこない」 means \"it'll never happen,\" contradicting \"that's why preparation matters.\""
+      }
+    ]
+  },
+  {
+    "id": "n3-l45-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson45#3"
+    ],
+    "difficulty": 2,
+    "stem": "あの まじめな 彼が 会社の お金を 盗むなんて、あり（　）。何かの 間違いだろう。",
+    "options": [
+      "えない",
+      "うる",
+      "きる",
+      "かねる"
+    ],
+    "answer": 0,
+    "full": "あの まじめな 彼が 会社の お金を 盗むなんて、ありえない。何かの 間違いだろう。",
+    "tr": {
+      "zh": "那么老实的他竟然偷公司的钱，不可能。一定是哪里搞错了。",
+      "en": "Him — that honest guy — stealing company money? Impossible. It must be some mistake."
+    },
+    "why": {
+      "zh": "“一定是搞错了”说明说话人认为这件事不可能，用「ありえない」。",
+      "en": "\"It must be a mistake\" shows the speaker thinks it's impossible: 「ありえない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ありうる」是“有可能”，和“一定是搞错了”矛盾。",
+        "en": "「ありうる」 means \"it's possible,\" which contradicts \"it must be a mistake.\""
+      },
+      {
+        "zh": "「ありきる」不是成立的说法。",
+        "en": "「ありきる」 isn't a real expression."
+      },
+      {
+        "zh": "「かねる」接意志动作表示“难以做到”，「ありかねる」不成立。",
+        "en": "「かねる」 goes with deliberate actions (\"find it hard to\"); 「ありかねる」 isn't said."
+      }
+    ]
+  },
+  {
+    "id": "n3-l45-009",
+    "type": "narabe",
+    "refs": [
+      "lesson45#3"
+    ],
+    "difficulty": 2,
+    "stem": "工場で [_] [_] [★] [_] 起き、生産が 止まった。",
+    "options": [
+      "事態が",
+      "予想し",
+      "誰も",
+      "えない"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "工場で 誰も 予想しえない 事態が 起き、生産が 止まった。",
+    "tr": {
+      "zh": "工厂里发生了谁都无法预料的情况，生产停了。",
+      "en": "Something nobody could have foreseen happened at the factory, and production stopped."
+    },
+    "why": {
+      "zh": "誰も ＋ 予想し（ます形去ます）＋ えない ＋ 事態が：「誰も予想しえない」修饰「事態」。★ 在第三格，是「えない」。",
+      "en": "誰も ＋ 予想し (masu-stem) ＋ えない ＋ 事態が: 「誰も予想しえない」 modifies 「事態」. The ★ is the third slot: 「えない」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

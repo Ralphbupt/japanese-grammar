@@ -1,0 +1,655 @@
+[
+  {
+    "id": "n5-mg-101",
+    "type": "kanji",
+    "refs": ["lesson03#vocab"],
+    "difficulty": 1,
+    "stem": "<<電車>>で がっこうへ いきます。",
+    "options": ["でんしゃ", "でんしや", "てんしゃ", "でんじゃ"],
+    "answer": 0,
+    "tr": { "zh": "坐电车去学校。", "en": "I go to school by train." },
+    "why": { "zh": "「電車」读「でんしゃ」：「電」是浊音「でん」，「車」是拗音「しゃ」（小写的ゃ）。", "en": "「電車」 is でんしゃ — voiced でん, then しゃ with a small ゃ." },
+    "wrong": [
+      null,
+      { "zh": "「しゃ」是一个拗音，「や」要小写；写成大「や」就成了另一个音。", "en": "しゃ is one sound with a small ゃ; a full-size や changes it." },
+      { "zh": "「電」是浊音「でん」，不是「てん」。", "en": "「電」 is voiced: でん, not てん." },
+      { "zh": "「車」在这里读清音「しゃ」，不浊化。", "en": "「車」 stays unvoiced here: しゃ, not じゃ." }
+    ]
+  },
+  {
+    "id": "n5-mg-102",
+    "type": "kanji",
+    "refs": ["lesson01#vocab"],
+    "difficulty": 1,
+    "stem": "<<先生>>に しつもんを しました。",
+    "options": ["せんせい", "せんせ", "せいせい", "ぜんせい"],
+    "answer": 0,
+    "tr": { "zh": "我向老师提了问题。", "en": "I asked the teacher a question." },
+    "why": { "zh": "「先」读「せん」，「生」读长音「せい」：「せんせい」。", "en": "「先」 is せん and 「生」 is the long せい: せんせい." },
+    "wrong": [
+      null,
+      { "zh": "少了长音：「生」读「せい」。", "en": "Missing the long vowel: 「生」 is せい." },
+      { "zh": "「先」读「せん」，不是「せい」。", "en": "「先」 is せん, not せい." },
+      { "zh": "「先」开头是清音「せ」，不浊。", "en": "「先」 starts unvoiced: せ, not ぜ." }
+    ]
+  },
+  {
+    "id": "n5-mg-103",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "まいにち <<学校>>へ いきます。",
+    "options": ["がっこう", "がこう", "がっこ", "がくこう"],
+    "answer": 0,
+    "tr": { "zh": "每天去学校。", "en": "I go to school every day." },
+    "why": { "zh": "「学（がく）」+「校（こう）」，「く」变成促音「っ」：「がっこう」。", "en": "がく + こう, with く turning into a small っ: がっこう." },
+    "wrong": [
+      null,
+      { "zh": "少了促音「っ」。", "en": "Missing the small っ." },
+      { "zh": "少了结尾的长音「う」。", "en": "Missing the long vowel at the end." },
+      { "zh": "「がく」在「こう」前要变成促音「がっ」。", "en": "がく becomes がっ before こう." }
+    ]
+  },
+  {
+    "id": "n5-mg-104",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "あしたの <<天気>>は どうですか。",
+    "options": ["てんき", "でんき", "てんぎ", "てっき"],
+    "answer": 0,
+    "tr": { "zh": "明天天气怎么样？", "en": "What will the weather be like tomorrow?" },
+    "why": { "zh": "「天気」读「てんき」：开头清音「て」，「気」读「き」。", "en": "「天気」 is てんき — unvoiced て, and 「気」 is き." },
+    "wrong": [
+      null,
+      { "zh": "「でんき」是「電気」（电、电灯），开头是浊音。", "en": "でんき is 「電気」 (electricity, lights), with a voiced で." },
+      { "zh": "「気」在这里不浊化，读「き」。", "en": "「気」 isn't voiced here: き, not ぎ." },
+      { "zh": "「天」读「てん」，有拨音「ん」，不是促音。", "en": "「天」 is てん with ん, not a small っ." }
+    ]
+  },
+  {
+    "id": "n5-mg-105",
+    "type": "kanji",
+    "refs": ["lesson01#vocab"],
+    "difficulty": 1,
+    "stem": "きのうは <<雨>>でした。",
+    "options": ["あめ", "あみ", "あね", "うめ"],
+    "answer": 0,
+    "tr": { "zh": "昨天下雨了。", "en": "It rained yesterday." },
+    "why": { "zh": "「雨」单独用读「あめ」。", "en": "「雨」 on its own is あめ." },
+    "wrong": [
+      null,
+      { "zh": "「あみ」是「網」（网）的读法。", "en": "あみ is 「網」 (net)." },
+      { "zh": "「あね」是「姉」（姐姐）的读法。", "en": "あね is 「姉」 (older sister)." },
+      { "zh": "「うめ」是「梅」（梅子）的读法。", "en": "うめ is 「梅」 (plum)." }
+    ]
+  },
+  {
+    "id": "n5-mg-106",
+    "type": "kanji",
+    "refs": ["lesson01#vocab"],
+    "difficulty": 1,
+    "stem": "わたしは <<魚>>が すきです。",
+    "options": ["さかな", "さがな", "さなか", "さかね"],
+    "answer": 0,
+    "tr": { "zh": "我喜欢鱼。", "en": "I like fish." },
+    "why": { "zh": "「魚」读「さかな」，三个音都是清音。", "en": "「魚」 is さかな — all three sounds unvoiced." },
+    "wrong": [
+      null,
+      { "zh": "「か」不浊化。", "en": "The か isn't voiced." },
+      { "zh": "后两个音顺序颠倒了（「さなか」是“正当中”的意思）。", "en": "The last two sounds are swapped (さなか means \"the middle of\")." },
+      { "zh": "最后一个音是「な」，不是「ね」。", "en": "The last sound is な, not ね." }
+    ]
+  },
+  {
+    "id": "n5-mg-107",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "<<毎週>> にちようびに テニスを します。",
+    "options": ["まいしゅう", "まいしゅ", "まいじゅう", "めいしゅう"],
+    "answer": 0,
+    "tr": { "zh": "每周日打网球。", "en": "I play tennis every Sunday." },
+    "why": { "zh": "「毎」读「まい」，「週」读长音「しゅう」：「まいしゅう」。", "en": "「毎」 is まい and 「週」 is the long しゅう: まいしゅう." },
+    "wrong": [
+      null,
+      { "zh": "少了长音：「週」读「しゅう」。", "en": "Missing the long vowel: 「週」 is しゅう." },
+      { "zh": "「週」读清音「しゅう」，不浊化。", "en": "「週」 stays unvoiced: しゅう." },
+      { "zh": "「毎」读「まい」，不是「めい」。", "en": "「毎」 is まい, not めい." }
+    ]
+  },
+  {
+    "id": "n5-mg-108",
+    "type": "kanji",
+    "refs": ["lesson01#vocab"],
+    "difficulty": 1,
+    "stem": "あには <<大学>>で べんきょうして います。",
+    "options": ["だいがく", "たいがく", "だいかく", "おおがく"],
+    "answer": 0,
+    "tr": { "zh": "哥哥在大学学习。", "en": "My older brother studies at university." },
+    "why": { "zh": "「大学」读「だいがく」：「大」读浊音「だい」，「学」读浊音「がく」。", "en": "「大学」 is だいがく — voiced だい and voiced がく." },
+    "wrong": [
+      null,
+      { "zh": "「大」在这里读浊音「だい」。", "en": "「大」 is voiced here: だい." },
+      { "zh": "「学」读浊音「がく」。", "en": "「学」 is voiced: がく." },
+      { "zh": "「おお」是「大きい」的训读，「大学」用音读「だい」。", "en": "おお is the native reading in 「大きい」; 「大学」 uses だい." }
+    ]
+  },
+  {
+    "id": "n5-mg-109",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "<<外国>>へ いった ことが ありますか。",
+    "options": ["がいこく", "かいこく", "がいごく", "そとこく"],
+    "answer": 0,
+    "tr": { "zh": "你去过外国吗？", "en": "Have you ever been abroad?" },
+    "why": { "zh": "「外」组词读「がい」，「国」读「こく」：「がいこく」。", "en": "In compounds 「外」 is がい, and 「国」 is こく: がいこく." },
+    "wrong": [
+      null,
+      { "zh": "「外」开头是浊音「が」（「かいこく」是「開国」）。", "en": "「外」 starts voiced: が (かいこく is 「開国」)." },
+      { "zh": "「国」在这里读清音「こく」。", "en": "「国」 stays unvoiced here: こく." },
+      { "zh": "「そと」是「外」单独用时的读法，组词用「がい」。", "en": "そと is 「外」 on its own; in this compound it's がい." }
+    ]
+  },
+  {
+    "id": "n5-mg-110",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "<<午後>> さんじに あいましょう。",
+    "options": ["ごご", "ごこ", "ごうご", "ごごう"],
+    "answer": 0,
+    "tr": { "zh": "下午三点见吧。", "en": "Let's meet at three in the afternoon." },
+    "why": { "zh": "「午後」读「ごご」，两个都是短音「ご」。", "en": "「午後」 is ごご — two short ご." },
+    "wrong": [
+      null,
+      { "zh": "「後」读浊音「ご」。", "en": "「後」 is voiced: ご." },
+      { "zh": "「午」是短音「ご」，没有长音。", "en": "「午」 is a short ご, not ごう." },
+      { "zh": "「後」是短音「ご」，没有长音。", "en": "「後」 is a short ご, not ごう." }
+    ]
+  },
+  {
+    "id": "n5-mg-111",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "ケーキを <<半分>> たべました。",
+    "options": ["はんぶん", "はんふん", "はんぶ", "ばんぶん"],
+    "answer": 0,
+    "tr": { "zh": "吃了一半蛋糕。", "en": "I ate half of the cake." },
+    "why": { "zh": "「半分」读「はんぶん」：「分」接在「ん」后面浊化成「ぶん」。", "en": "「半分」 is はんぶん — 「分」 becomes ぶん after ん." },
+    "wrong": [
+      null,
+      { "zh": "「分」在「はん」后要浊化成「ぶん」。", "en": "After はん, 「分」 is voiced: ぶん." },
+      { "zh": "少了结尾的「ん」。", "en": "Missing the final ん." },
+      { "zh": "「半」开头是清音「は」。", "en": "「半」 starts unvoiced: は." }
+    ]
+  },
+  {
+    "id": "n5-mg-112",
+    "type": "kanji",
+    "difficulty": 3,
+    "stem": "この ノートは <<三百>>えんです。",
+    "options": ["さんびゃく", "さんひゃく", "さんぴゃく", "さんばく"],
+    "answer": 0,
+    "tr": { "zh": "这个本子三百日元。", "en": "This notebook is 300 yen." },
+    "why": { "zh": "「三」后面的「百」浊化成「びゃく」：「さんびゃく」。", "en": "After 「三」, 「百」 becomes びゃく: さんびゃく." },
+    "wrong": [
+      null,
+      { "zh": "「三百」的「百」要浊化，不读「ひゃく」。", "en": "In 「三百」 the 百 is voiced, not ひゃく." },
+      { "zh": "半浊音「ぴゃく」用于「六百（ろっぴゃく）」「八百（はっぴゃく）」。", "en": "ぴゃく is for 「六百」 and 「八百」 (ろっぴゃく, はっぴゃく)." },
+      { "zh": "「百」是拗音「ひゃく／びゃく」，不是「ばく」。", "en": "「百」 has a small ゃ: びゃく, not ばく." }
+    ]
+  },
+  {
+    "id": "n5-mg-113",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "まいあさ <<九時>>に かいしゃへ いきます。",
+    "options": ["くじ", "きゅうじ", "くうじ", "きゅじ"],
+    "answer": 0,
+    "tr": { "zh": "每天早上九点去公司。", "en": "I go to the office at nine every morning." },
+    "why": { "zh": "表示时刻时「九時」固定读「くじ」。", "en": "As a time, 「九時」 is always くじ." },
+    "wrong": [
+      null,
+      { "zh": "「九」虽然也读「きゅう」，但「九時」读「くじ」。", "en": "「九」 can be きゅう, but nine o'clock is くじ." },
+      { "zh": "「九」在这里是短音「く」。", "en": "「九」 is a short く here." },
+      { "zh": "没有「きゅじ」这个读法。", "en": "きゅじ isn't a reading at all." }
+    ]
+  },
+  {
+    "id": "n5-mg-114",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "<<四月>>に にほんへ きました。",
+    "options": ["しがつ", "よんがつ", "よがつ", "しつき"],
+    "answer": 0,
+    "tr": { "zh": "我四月来到了日本。", "en": "I came to Japan in April." },
+    "why": { "zh": "月份「四月」固定读「しがつ」。", "en": "The month 「四月」 is always しがつ." },
+    "wrong": [
+      null,
+      { "zh": "「四」常读「よん」，但月份要读「し」。", "en": "「四」 is often よん, but the month uses し." },
+      { "zh": "月份的「四」读「し」，不读「よ」。", "en": "In the month name 「四」 is し, not よ." },
+      { "zh": "月份的「月」读「がつ」，不读「つき」。", "en": "In month names 「月」 is がつ, not つき." }
+    ]
+  },
+  {
+    "id": "n5-mg-115",
+    "type": "kanji",
+    "difficulty": 3,
+    "stem": "らいげつの <<八日>>は わたしの たんじょうびです。",
+    "options": ["ようか", "はちにち", "よっか", "やっか"],
+    "answer": 0,
+    "tr": { "zh": "下个月八号是我的生日。", "en": "The 8th of next month is my birthday." },
+    "why": { "zh": "1 号到 10 号用固有读法，“八号”是「ようか」。", "en": "Dates 1–10 have their own readings; the 8th is ようか." },
+    "wrong": [
+      null,
+      { "zh": "日期“八号”不读「はちにち」。", "en": "The 8th isn't はちにち." },
+      { "zh": "「よっか」是「四日」（四号）。", "en": "よっか is 「四日」 (the 4th)." },
+      { "zh": "没有「やっか」这个读法。", "en": "やっか isn't a reading of 「八日」." }
+    ]
+  },
+  {
+    "id": "n5-mg-116",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "<<一人>>で えいがを みました。",
+    "options": ["ひとり", "ふたり", "ひどり", "いちり"],
+    "answer": 0,
+    "tr": { "zh": "我一个人看了电影。", "en": "I watched a movie by myself." },
+    "why": { "zh": "「一人」是特殊读法「ひとり」。", "en": "「一人」 has a special reading: ひとり." },
+    "wrong": [
+      null,
+      { "zh": "「ふたり」是「二人」（两个人）。", "en": "ふたり is 「二人」 (two people)." },
+      { "zh": "「と」不浊化。", "en": "The と isn't voiced." },
+      { "zh": "「一人」不读「いち」，是特殊读法「ひとり」。", "en": "「一人」 doesn't use いち; it's ひとり." }
+    ]
+  },
+  {
+    "id": "n5-mg-117",
+    "type": "kanji",
+    "refs": ["lesson05#vocab"],
+    "difficulty": 1,
+    "stem": "ここに <<名前>>を かいて ください。",
+    "options": ["なまえ", "なめえ", "めいぜん", "なまい"],
+    "answer": 0,
+    "tr": { "zh": "请在这里写名字。", "en": "Please write your name here." },
+    "why": { "zh": "「名」读「な」，「前」读「まえ」：「なまえ」。", "en": "「名」 is な and 「前」 is まえ: なまえ." },
+    "wrong": [
+      null,
+      { "zh": "「前」读「まえ」，不是「めえ」。", "en": "「前」 is まえ, not めえ." },
+      { "zh": "这个词用训读「なまえ」，不用音读。", "en": "This word uses native readings, なまえ, not めいぜん." },
+      { "zh": "「前」读「まえ」，不是「まい」。", "en": "「前」 is まえ, not まい." }
+    ]
+  },
+  {
+    "id": "n5-mg-118",
+    "type": "kanji",
+    "refs": ["lesson05#vocab"],
+    "difficulty": 1,
+    "stem": "わたしの <<父>>は ぎんこういんです。",
+    "options": ["ちち", "はは", "あに", "あね"],
+    "answer": 0,
+    "tr": { "zh": "我父亲是银行职员。", "en": "My father works at a bank." },
+    "why": { "zh": "说自己的父亲用「父（ちち）」。", "en": "Your own father is 「父」, ちち." },
+    "wrong": [
+      null,
+      { "zh": "「はは」是「母」（妈妈）。", "en": "はは is 「母」 (mother)." },
+      { "zh": "「あに」是「兄」（哥哥）。", "en": "あに is 「兄」 (older brother)." },
+      { "zh": "「あね」是「姉」（姐姐）。", "en": "あね is 「姉」 (older sister)." }
+    ]
+  },
+  {
+    "id": "n5-mg-119",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "<<友だち>>と こうえんで あそびました。",
+    "options": ["ともだち", "どもだち", "ともたち", "ゆうだち"],
+    "answer": 0,
+    "tr": { "zh": "我和朋友在公园玩了。", "en": "I played in the park with a friend." },
+    "why": { "zh": "「友」读「とも」，「友だち」读「ともだち」。", "en": "「友」 is とも, so 「友だち」 is ともだち." },
+    "wrong": [
+      null,
+      { "zh": "开头是清音「と」。", "en": "It starts unvoiced: と." },
+      { "zh": "「だち」是浊音。", "en": "だち is voiced." },
+      { "zh": "「ゆうだち」是「夕立」（雷阵雨）；「友」读「とも」。", "en": "ゆうだち is 「夕立」 (a summer shower); 「友」 is とも." }
+    ]
+  },
+  {
+    "id": "n5-mg-120",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "ぎんこうは えきの <<東>>がわに あります。",
+    "options": ["ひがし", "にし", "みなみ", "きた"],
+    "answer": 0,
+    "tr": { "zh": "银行在车站的东边。", "en": "The bank is on the east side of the station." },
+    "why": { "zh": "「東」读「ひがし」（东）。", "en": "「東」 is ひがし (east)." },
+    "wrong": [
+      null,
+      { "zh": "「にし」是「西」（西）。", "en": "にし is 「西」 (west)." },
+      { "zh": "「みなみ」是「南」（南）。", "en": "みなみ is 「南」 (south)." },
+      { "zh": "「きた」是「北」（北）。", "en": "きた is 「北」 (north)." }
+    ]
+  },
+  {
+    "id": "n5-mg-121",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "つぎの かどを <<右>>へ まがって ください。",
+    "options": ["みぎ", "ひだり", "みき", "ゆう"],
+    "answer": 0,
+    "tr": { "zh": "请在下一个拐角向右转。", "en": "Please turn right at the next corner." },
+    "why": { "zh": "「右」单独用读「みぎ」（右）。", "en": "「右」 on its own is みぎ (right)." },
+    "wrong": [
+      null,
+      { "zh": "「ひだり」是「左」（左）。", "en": "ひだり is 「左」 (left)." },
+      { "zh": "「ぎ」是浊音。", "en": "The ぎ is voiced." },
+      { "zh": "「ゆう」是音读，只出现在「左右（さゆう）」这类词里。", "en": "ゆう is the on-reading, used only in words like 「左右」 (さゆう)." }
+    ]
+  },
+  {
+    "id": "n5-mg-122",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "なつやすみに <<川>>で およぎました。",
+    "options": ["かわ", "がわ", "かは", "せん"],
+    "answer": 0,
+    "tr": { "zh": "暑假在河里游泳了。", "en": "I swam in the river during the summer holidays." },
+    "why": { "zh": "「川」单独用读「かわ」。", "en": "「川」 on its own is かわ." },
+    "wrong": [
+      null,
+      { "zh": "「がわ」只在接在名字后面时出现（如「たまがわ」），单独用是清音。", "en": "がわ only appears after a name (たまがわ); alone it's unvoiced." },
+      { "zh": "读音是「わ」，假名不写成「は」。", "en": "The sound is わ, not the kana は." },
+      { "zh": "「せん」是音读，单独用读「かわ」。", "en": "せん is the on-reading; alone it's かわ." }
+    ]
+  },
+  {
+    "id": "n5-mg-123",
+    "type": "kanji",
+    "refs": ["lesson13#vocab"],
+    "difficulty": 1,
+    "stem": "<<白い>> シャツを かいました。",
+    "options": ["しろい", "くろい", "しらい", "しるい"],
+    "answer": 0,
+    "tr": { "zh": "我买了白衬衫。", "en": "I bought a white shirt." },
+    "why": { "zh": "「白い」读「しろい」（白的）。", "en": "「白い」 is しろい (white)." },
+    "wrong": [
+      null,
+      { "zh": "「くろい」是「黒い」（黑的）。", "en": "くろい is 「黒い」 (black)." },
+      { "zh": "「白い」不读「しらい」。", "en": "「白い」 isn't しらい." },
+      { "zh": "「白い」不读「しるい」。", "en": "「白い」 isn't しるい." }
+    ]
+  },
+  {
+    "id": "n5-mg-124",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "かのじょは かみが <<長い>>です。",
+    "options": ["ながい", "なかい", "ちょうい", "なごい"],
+    "answer": 0,
+    "tr": { "zh": "她头发很长。", "en": "She has long hair." },
+    "why": { "zh": "「長い」读「ながい」（长的）。", "en": "「長い」 is ながい (long)." },
+    "wrong": [
+      null,
+      { "zh": "「が」是浊音。", "en": "The が is voiced." },
+      { "zh": "「ちょう」是音读（如「しゃちょう」），形容词用训读「なが」。", "en": "ちょう is the on-reading (as in しゃちょう); the adjective uses なが." },
+      { "zh": "「長い」不读「なごい」。", "en": "「長い」 isn't なごい." }
+    ]
+  },
+  {
+    "id": "n5-mg-125",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "<<新しい>> くつを はいて います。",
+    "options": ["あたらしい", "あらたしい", "あたしらい", "あだらしい"],
+    "answer": 0,
+    "tr": { "zh": "我穿着新鞋。", "en": "I'm wearing new shoes." },
+    "why": { "zh": "「新しい」读「あたらしい」：あ・た・ら・し・い。", "en": "「新しい」 is あたらしい: a-ta-ra-shi-i." },
+    "wrong": [
+      null,
+      { "zh": "「た」和「ら」顺序颠倒了（「新た」读「あらた」，是另一个词）。", "en": "た and ら are swapped (「新た」, あらた, is a different word)." },
+      { "zh": "后半部分顺序乱了。", "en": "The second half is scrambled." },
+      { "zh": "「た」不浊化。", "en": "The た isn't voiced." }
+    ]
+  },
+  {
+    "id": "n5-mg-126",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "この じしょは <<古い>>です。",
+    "options": ["ふるい", "ふろい", "こい", "ふうい"],
+    "answer": 0,
+    "tr": { "zh": "这本词典很旧。", "en": "This dictionary is old." },
+    "why": { "zh": "「古い」读「ふるい」（旧的）。", "en": "「古い」 is ふるい (old)." },
+    "wrong": [
+      null,
+      { "zh": "第二个音是「る」，不是「ろ」。", "en": "The second sound is る, not ろ." },
+      { "zh": "「こ」是音读（如「ちゅうこ」），形容词读「ふるい」。", "en": "こ is the on-reading (as in ちゅうこ); the adjective is ふるい." },
+      { "zh": "「古い」不读「ふうい」。", "en": "「古い」 isn't ふうい." }
+    ]
+  },
+  {
+    "id": "n5-mg-127",
+    "type": "kanji",
+    "refs": ["lesson07#vocab"],
+    "difficulty": 1,
+    "stem": "この みせの くだものは <<安い>>です。",
+    "options": ["やすい", "やさい", "やずい", "あんい"],
+    "answer": 0,
+    "tr": { "zh": "这家店的水果很便宜。", "en": "The fruit at this shop is cheap." },
+    "why": { "zh": "「安い」读「やすい」（便宜）。", "en": "「安い」 is やすい (cheap)." },
+    "wrong": [
+      null,
+      { "zh": "「やさい」是「野菜」（蔬菜）。", "en": "やさい is 「野菜」 (vegetables)." },
+      { "zh": "「す」不浊化。", "en": "The す isn't voiced." },
+      { "zh": "「あんい」是「安易」（轻率）的读法，「安い」读「やすい」。", "en": "あんい is 「安易」 (easy-going); 「安い」 is やすい." }
+    ]
+  },
+  {
+    "id": "n5-mg-128",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "あねは <<高校>>の せんせいです。",
+    "options": ["こうこう", "こうこ", "ここう", "たかこう"],
+    "answer": 0,
+    "tr": { "zh": "姐姐是高中老师。", "en": "My older sister is a high school teacher." },
+    "why": { "zh": "「高」读「こう」，「校」读「こう」，都是长音：「こうこう」。", "en": "「高」 is こう and 「校」 is こう, both long: こうこう." },
+    "wrong": [
+      null,
+      { "zh": "「校」少了长音。", "en": "「校」 is missing its long vowel." },
+      { "zh": "「高」少了长音。", "en": "「高」 is missing its long vowel." },
+      { "zh": "「たか」是「高い」的训读，「高校」用音读「こう」。", "en": "たか is the native reading in 「高い」; 「高校」 uses こう." }
+    ]
+  },
+  {
+    "id": "n5-mg-129",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "<<少し>> まって ください。",
+    "options": ["すこし", "すごし", "すくし", "しょうし"],
+    "answer": 0,
+    "tr": { "zh": "请稍等。", "en": "Please wait a moment." },
+    "why": { "zh": "「少し」读「すこし」（一点儿）。", "en": "「少し」 is すこし (a little)." },
+    "wrong": [
+      null,
+      { "zh": "「こ」不浊化。", "en": "The こ isn't voiced." },
+      { "zh": "和「少ない（すくない）」混了；「少し」读「すこし」。", "en": "Mixed up with 「少ない」 (すくない); 「少し」 is すこし." },
+      { "zh": "「しょう」是音读（如「しょうねん」），这里用训读。", "en": "しょう is the on-reading (as in しょうねん); this word uses すこし." }
+    ]
+  },
+  {
+    "id": "n5-mg-130",
+    "type": "kanji",
+    "refs": ["lesson07#vocab"],
+    "difficulty": 2,
+    "stem": "この <<小さい>> かばんは いくらですか。",
+    "options": ["ちいさい", "ちさい", "しょうさい", "こさい"],
+    "answer": 0,
+    "tr": { "zh": "这个小包多少钱？", "en": "How much is this small bag?" },
+    "why": { "zh": "「小さい」读「ちいさい」（小的），「ち」后面有「い」。", "en": "「小さい」 is ちいさい (small) — ち followed by い." },
+    "wrong": [
+      null,
+      { "zh": "少了「ち」后面的「い」。", "en": "Missing the い after ち." },
+      { "zh": "「しょう」是音读，「しょうさい」是「詳細」的读法。", "en": "しょう is the on-reading; しょうさい is 「詳細」 (details)." },
+      { "zh": "「こ」是「小」在别的词里的读法，「小さい」读「ちいさい」。", "en": "こ is how 「小」 reads in other words; 「小さい」 is ちいさい." }
+    ]
+  },
+  {
+    "id": "n5-mg-131",
+    "type": "kanji",
+    "refs": ["lesson03#vocab"],
+    "difficulty": 2,
+    "stem": "あした また <<来ます>>。",
+    "options": ["きます", "くます", "こます", "らいます"],
+    "answer": 0,
+    "tr": { "zh": "我明天再来。", "en": "I'll come again tomorrow." },
+    "why": { "zh": "「来る」是不规则动词，ます形「来ます」读「きます」。", "en": "「来る」 is irregular; its ます-form 「来ます」 is きます." },
+    "wrong": [
+      null,
+      { "zh": "辞书形是「くる」，但ます形要变成「き」。", "en": "The dictionary form is くる, but the ます-form uses き." },
+      { "zh": "「こ」是否定形「こない」的读法。", "en": "こ is for the negative, こない." },
+      { "zh": "「らい」是音读（如「らいねん」），动词不用。", "en": "らい is the on-reading (as in らいねん), not used for the verb." }
+    ]
+  },
+  {
+    "id": "n5-mg-132",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "あたまが いたいので、きょうは がっこうを <<休みます>>。",
+    "options": ["やすみます", "やすいます", "よすみます", "きゅうみます"],
+    "answer": 0,
+    "tr": { "zh": "我头疼，所以今天不去上学了。", "en": "I have a headache, so I'll stay home from school today." },
+    "why": { "zh": "「休む」（休息、请假）读「やすむ」，ます形「やすみます」。", "en": "「休む」 (rest, take a day off) is やすむ; ます-form やすみます." },
+    "wrong": [
+      null,
+      { "zh": "和「安い（やすい）」混了。", "en": "Mixed up with 「安い」 (やすい)." },
+      { "zh": "第一个音是「や」。", "en": "The first sound is や." },
+      { "zh": "「きゅう」是音读（如「きゅうじつ」），动词用训读。", "en": "きゅう is the on-reading (as in きゅうじつ); the verb uses やすむ." }
+    ]
+  },
+  {
+    "id": "n5-mg-133",
+    "type": "kanji",
+    "refs": ["lesson03#vocab"],
+    "difficulty": 2,
+    "stem": "デパートで くつを <<買いました>>。",
+    "options": ["かいました", "がいました", "ばいました", "かえました"],
+    "answer": 0,
+    "tr": { "zh": "我在百货商店买了鞋。", "en": "I bought shoes at the department store." },
+    "why": { "zh": "「買う」读「かう」，过去式「かいました」。", "en": "「買う」 is かう; the past is かいました." },
+    "wrong": [
+      null,
+      { "zh": "「か」不浊化。", "en": "The か isn't voiced." },
+      { "zh": "「ばい」是音读（如「売買」），动词用训读「かう」。", "en": "ばい is the on-reading (as in 「売買」); the verb is かう." },
+      { "zh": "「かえました」是「変えました」或「帰りました」之类，不是「買う」。", "en": "かえました would be another verb (「変えました」), not 「買う」." }
+    ]
+  },
+  {
+    "id": "n5-mg-134",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "ちちは <<会社>>に つとめて います。",
+    "options": ["かいしゃ", "がいしゃ", "かいじゃ", "あいしゃ"],
+    "answer": 0,
+    "tr": { "zh": "父亲在公司上班。", "en": "My father works for a company." },
+    "why": { "zh": "「会社」读「かいしゃ」：「会」读「かい」，「社」读「しゃ」。", "en": "「会社」 is かいしゃ — 「会」 かい, 「社」 しゃ." },
+    "wrong": [
+      null,
+      { "zh": "「会」开头是清音「か」。", "en": "「会」 starts unvoiced: か." },
+      { "zh": "「社」不浊化。", "en": "「社」 isn't voiced." },
+      { "zh": "「あ」是「会う」的训读，组词用「かい」。", "en": "あ is the native reading in 「会う」; the compound uses かい." }
+    ]
+  },
+  {
+    "id": "n5-mg-135",
+    "type": "kanji",
+    "refs": ["lesson09#vocab"],
+    "difficulty": 1,
+    "stem": "<<駅>>の まえで まって います。",
+    "options": ["えき", "えぎ", "いき", "えっき"],
+    "answer": 0,
+    "tr": { "zh": "我在车站前面等着。", "en": "I'm waiting in front of the station." },
+    "why": { "zh": "「駅」读「えき」（车站）。", "en": "「駅」 is えき (station)." },
+    "wrong": [
+      null,
+      { "zh": "「き」不浊化。", "en": "The き isn't voiced." },
+      { "zh": "开头是「え」，不是「い」。", "en": "It starts with え, not い." },
+      { "zh": "中间没有促音「っ」。", "en": "There's no small っ." }
+    ]
+  },
+  {
+    "id": "n5-mg-136",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "リーさんは <<中国語>>を おしえて います。",
+    "options": ["ちゅうごくご", "ちゅうこくご", "ちゅごくご", "なかくにご"],
+    "answer": 0,
+    "tr": { "zh": "李先生在教中文。", "en": "Mr. Li teaches Chinese." },
+    "why": { "zh": "「中国」读「ちゅうごく」，「国」在这里浊化成「ごく」，再加「語（ご）」。", "en": "「中国」 is ちゅうごく — 「国」 is voiced to ごく here — plus 「語」, ご." },
+    "wrong": [
+      null,
+      { "zh": "「中国」的「国」要浊化成「ごく」。", "en": "In 「中国」 the 国 is voiced: ごく." },
+      { "zh": "「中」是长音「ちゅう」。", "en": "「中」 is the long ちゅう." },
+      { "zh": "「なか」「くに」是训读，「中国語」用音读。", "en": "なか and くに are native readings; 「中国語」 uses on-readings." }
+    ]
+  },
+  {
+    "id": "n5-mg-137",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "きょうは <<時間>>が ありません。",
+    "options": ["じかん", "じっかん", "じがん", "じあいだ"],
+    "answer": 0,
+    "tr": { "zh": "今天没有时间。", "en": "I don't have time today." },
+    "why": { "zh": "「時間」读「じかん」：「時」读「じ」，「間」读「かん」。", "en": "「時間」 is じかん — 「時」 じ, 「間」 かん." },
+    "wrong": [
+      null,
+      { "zh": "中间没有促音（「じっかん」是「実感」）。", "en": "No small っ (じっかん is 「実感」)." },
+      { "zh": "「間」读清音「かん」。", "en": "「間」 is unvoiced: かん." },
+      { "zh": "「あいだ」是「間」单独用时的训读，组词用「かん」。", "en": "あいだ is 「間」 on its own; in this compound it's かん." }
+    ]
+  },
+  {
+    "id": "n5-mg-138",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "<<来年>> にほんへ りゅうがくします。",
+    "options": ["らいねん", "らいとし", "くるねん", "らいねい"],
+    "answer": 0,
+    "tr": { "zh": "明年我要去日本留学。", "en": "Next year I'm going to study in Japan." },
+    "why": { "zh": "「来年」读「らいねん」：「来」读「らい」，「年」读「ねん」。", "en": "「来年」 is らいねん — 「来」 らい, 「年」 ねん." },
+    "wrong": [
+      null,
+      { "zh": "「とし」是「年」的训读，「来年」用音读「ねん」。", "en": "とし is the native reading of 「年」; 「来年」 uses ねん." },
+      { "zh": "「くる」是动词「来る」的读法。", "en": "くる is the verb 「来る」." },
+      { "zh": "「年」读「ねん」，不是「ねい」。", "en": "「年」 is ねん, not ねい." }
+    ]
+  },
+  {
+    "id": "n5-mg-139",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "<<水よう日>>に テストが あります。",
+    "options": ["すいようび", "みずようび", "すいようひ", "すいよび"],
+    "answer": 0,
+    "tr": { "zh": "星期三有考试。", "en": "There's a test on Wednesday." },
+    "why": { "zh": "星期三「水よう日」读「すいようび」：「水」用音读「すい」，「日」浊化成「び」。", "en": "Wednesday is すいようび — 「水」 is すい, and 「日」 becomes び." },
+    "wrong": [
+      null,
+      { "zh": "「みず」是「水」单独用时的读法，星期用音读「すい」。", "en": "みず is 「水」 on its own; the weekday uses すい." },
+      { "zh": "「日」在这里要浊化成「び」。", "en": "「日」 is voiced here: び." },
+      { "zh": "「よう」是长音。", "en": "よう is a long vowel." }
+    ]
+  },
+  {
+    "id": "n5-mg-140",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "この ほんは <<千円>>です。",
+    "options": ["せんえん", "せんねん", "ぜんえん", "せいえん"],
+    "answer": 0,
+    "tr": { "zh": "这本书一千日元。", "en": "This book is 1,000 yen." },
+    "why": { "zh": "「千」读「せん」，「円」读「えん」：「せんえん」。", "en": "「千」 is せん and 「円」 is えん: せんえん." },
+    "wrong": [
+      null,
+      { "zh": "「せんねん」是「千年」（一千年）。", "en": "せんねん is 「千年」 (a thousand years)." },
+      { "zh": "「千」开头是清音「せ」。", "en": "「千」 starts unvoiced: せ." },
+      { "zh": "「千」读「せん」，不是「せい」。", "en": "「千」 is せん, not せい." }
+    ]
+  }
+]

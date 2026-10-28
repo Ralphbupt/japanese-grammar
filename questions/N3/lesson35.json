@@ -1,0 +1,738 @@
+[
+  {
+    "id": "n3-l35-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson35#1"
+    ],
+    "difficulty": 1,
+    "stem": "入学式は 本校の 体育館（　）行われます。",
+    "options": [
+      "において",
+      "に対して",
+      "について",
+      "によって"
+    ],
+    "answer": 0,
+    "full": "入学式は 本校の 体育館において 行われます。",
+    "tr": {
+      "zh": "开学典礼在本校体育馆举行。",
+      "en": "The entrance ceremony will be held in the school gymnasium."
+    },
+    "why": {
+      "zh": "体育馆是举行仪式的场所，「行われます」前表示场所的正式说法是「において」（相当于「で」）。",
+      "en": "The gym is where the ceremony takes place; the formal way to mark that place before 「行われます」 is 「において」 (= 「で」)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に対して」表示行为的对象（对……），体育馆不是对象。",
+        "en": "「に対して」 marks someone or something an action is directed at; the gym isn't that."
+      },
+      {
+        "zh": "「について」是“关于”，“关于体育馆举行”说不通。",
+        "en": "「について」 means \"about\"; \"held about the gym\" makes no sense."
+      },
+      {
+        "zh": "「によって」在被动句中表示执行者，体育馆不会“举行”典礼。",
+        "en": "In a passive, 「によって」 marks who does it; a gym doesn't hold the ceremony."
+      }
+    ]
+  },
+  {
+    "id": "n3-l35-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson35#1"
+    ],
+    "difficulty": 2,
+    "stem": "家庭（　）役割と 職場での 役割は 違う ことが 多い。",
+    "options": [
+      "において",
+      "における",
+      "に対して",
+      "にとって"
+    ],
+    "answer": 1,
+    "full": "家庭における 役割と 職場での 役割は 違う ことが 多い。",
+    "tr": {
+      "zh": "在家庭中的角色和在职场中的角色往往不同。",
+      "en": "One's role at home and one's role at work are often different."
+    },
+    "why": {
+      "zh": "空格后紧接名词「役割」，并和「職場での役割」并列，修饰名词要用「における」（相当于「での」）。",
+      "en": "The blank comes right before the noun 「役割」, parallel to 「職場での役割」, so it needs the noun-modifying 「における」 (= 「での」)."
+    },
+    "wrong": [
+      {
+        "zh": "「において」修饰后面的谓语，不能直接接名词「役割」。",
+        "en": "「において」 modifies a predicate; it can't go straight before the noun 「役割」."
+      },
+      null,
+      {
+        "zh": "「に対して」不能直接修饰名词（要用「に対する」），意思也不是“在家庭中”。",
+        "en": "「に対して」 can't modify a noun directly (that's 「に対する」), and it doesn't mean \"at home\"."
+      },
+      {
+        "zh": "「にとって」不能直接修饰名词，意思（对……来说）也不对。",
+        "en": "「にとって」 can't modify a noun directly, and \"for\" is the wrong meaning."
+      }
+    ]
+  },
+  {
+    "id": "n3-l35-003",
+    "type": "narabe",
+    "refs": [
+      "lesson35#1"
+    ],
+    "difficulty": 2,
+    "stem": "日本の 職場 [_] [_] [★] [_] だと 言われて いる。",
+    "options": [
+      "最大の",
+      "人手不足",
+      "における",
+      "課題は"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "日本の 職場における 最大の 課題は 人手不足だと 言われて いる。",
+    "tr": {
+      "zh": "据说日本职场最大的课题是人手不足。",
+      "en": "The biggest problem in Japanese workplaces is said to be the labour shortage."
+    },
+    "why": {
+      "zh": "「職場における」修饰名词「最大の課題」，「課題は」是主题，「人手不足だ」是谓语：における → 最大の → 課題は → 人手不足。★ 是「課題は」。",
+      "en": "「職場における」 modifies 「最大の課題」, 「課題は」 is the topic and 「人手不足だ」 the predicate: における → 最大の → 課題は → 人手不足. The ★ is 「課題は」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l35-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson35#2"
+    ],
+    "difficulty": 1,
+    "stem": "お客様（　）、いつも 丁寧な 言葉で 話して ください。",
+    "options": [
+      "にとって",
+      "に対して",
+      "をもとに",
+      "において"
+    ],
+    "answer": 1,
+    "full": "お客様に対して、いつも 丁寧な 言葉で 話して ください。",
+    "tr": {
+      "zh": "对客人请始终用礼貌的语言说话。",
+      "en": "Always speak politely to customers."
+    },
+    "why": {
+      "zh": "“礼貌地说话”这个行为是冲着客人的，表示行为、态度的对象用「に対して」。",
+      "en": "Speaking politely is behaviour directed at the customer, so the target is marked with 「に対して」."
+    },
+    "wrong": [
+      {
+        "zh": "「にとって」是“对……来说”，后面接评价或判断（难、重要），不接对人的行为。",
+        "en": "「にとって」 (\"for / from the point of view of\") is followed by a judgement, not by behaviour toward someone."
+      },
+      null,
+      {
+        "zh": "「をもとに」是“以……为基础”，“以客人为基础说话”说不通。",
+        "en": "「をもとに」 means \"based on\"; \"speak based on customers\" makes no sense."
+      },
+      {
+        "zh": "「において」表示场所、领域，不能用在人身上表示对象。",
+        "en": "「において」 marks a place or field, not a person you act toward."
+      }
+    ]
+  },
+  {
+    "id": "n3-l35-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson35#2"
+    ],
+    "difficulty": 2,
+    "stem": "兄は 背が 高い（　）、弟は クラスで 一番 低い。",
+    "options": [
+      "のにとって",
+      "のに対して",
+      "のについて",
+      "ことから"
+    ],
+    "answer": 1,
+    "full": "兄は 背が 高いのに対して、弟は クラスで 一番 低い。",
+    "tr": {
+      "zh": "哥哥个子高，弟弟却是班上最矮的。",
+      "en": "Whereas the older brother is tall, the younger one is the shortest in his class."
+    },
+    "why": {
+      "zh": "前后是哥哥“高”和弟弟“矮”两件事的对比，表示对比用「のに対して」（与此相反）。",
+      "en": "The sentence contrasts the tall older brother with the short younger one; a contrast is 「のに対して」 (\"whereas\")."
+    },
+    "wrong": [
+      {
+        "zh": "「にとって」接名词，不接「の」，也不表示对比。",
+        "en": "「にとって」 follows a noun, not 「の」, and doesn't express a contrast."
+      },
+      null,
+      {
+        "zh": "「について」是“关于”，「高いのについて」既不通顺也不表示对比。",
+        "en": "「について」 means \"about\"; 「高いのについて」 doesn't work and isn't a contrast."
+      },
+      {
+        "zh": "「ことから」表示根据、由来，“因为哥哥高所以弟弟矮”在逻辑上说不通。",
+        "en": "「ことから」 gives a reason or basis; \"the brother is tall, so the younger is short\" isn't logical."
+      }
+    ]
+  },
+  {
+    "id": "n3-l35-006",
+    "type": "narabe",
+    "refs": [
+      "lesson35#2"
+    ],
+    "difficulty": 2,
+    "stem": "部長は 新しい 制度 [_] [★] [_] [_] 答えた。",
+    "options": [
+      "質問に",
+      "社員の",
+      "一つずつ",
+      "に対する"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "部長は 新しい 制度に対する 社員の 質問に 一つずつ 答えた。",
+    "tr": {
+      "zh": "部长对员工提出的关于新制度的问题一一作了回答。",
+      "en": "The manager answered the staff's questions about the new system one by one."
+    },
+    "why": {
+      "zh": "「に対する」修饰名词：「新しい制度に対する社員の質問」，再接「に」作「答えた」的对象，「一つずつ」修饰「答えた」：に対する → 社員の → 質問に → 一つずつ。★ 是「社員の」。",
+      "en": "「に対する」 modifies a noun: 「新しい制度に対する社員の質問」, which takes 「に」 as the object of 「答えた」, and 「一つずつ」 goes right before the verb: に対する → 社員の → 質問に → 一つずつ. The ★ is 「社員の」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l35-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson35#3"
+    ],
+    "difficulty": 1,
+    "stem": "来週の 会議では 新しい 商品（　）話し合う 予定です。",
+    "options": [
+      "にとって",
+      "に対して",
+      "について",
+      "において"
+    ],
+    "answer": 2,
+    "full": "来週の 会議では 新しい 商品について 話し合う 予定です。",
+    "tr": {
+      "zh": "下周的会议上计划讨论新产品。",
+      "en": "At next week's meeting we plan to discuss the new product."
+    },
+    "why": {
+      "zh": "新产品是“讨论”的话题内容，表示“关于”用「について」。",
+      "en": "The new product is the topic being discussed, so it takes 「について」 (\"about\")."
+    },
+    "wrong": [
+      {
+        "zh": "「にとって」是“对……来说”，后面要接评价，不接「話し合う」。",
+        "en": "「にとって」 (\"for\") is followed by a judgement, not by 「話し合う」."
+      },
+      {
+        "zh": "「に対して」表示行为的对象（冲着某人/某事），“冲着新产品讨论”说不通。",
+        "en": "「に対して」 marks what an action is aimed at; you don't discuss \"toward\" a product."
+      },
+      null,
+      {
+        "zh": "「において」表示场所或领域，新产品不是讨论的场所。",
+        "en": "「において」 marks a place or field; the product isn't where the meeting happens."
+      }
+    ]
+  },
+  {
+    "id": "n3-l35-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson35#3"
+    ],
+    "difficulty": 2,
+    "stem": "図書館で 日本の 歴史（　）本を 何冊か 借りた。",
+    "options": [
+      "について",
+      "についての",
+      "に対して",
+      "にとって"
+    ],
+    "answer": 1,
+    "full": "図書館で 日本の 歴史についての 本を 何冊か 借りた。",
+    "tr": {
+      "zh": "在图书馆借了几本关于日本历史的书。",
+      "en": "I borrowed a few books about Japanese history from the library."
+    },
+    "why": {
+      "zh": "空格后紧接名词「本」，修饰名词时要用「についての」。",
+      "en": "The blank is followed directly by the noun 「本」, so it must be 「についての」."
+    },
+    "wrong": [
+      {
+        "zh": "「について」后面接动词（話す、書く），不能直接接名词「本」。",
+        "en": "「について」 is followed by a verb; it can't go straight before the noun 「本」."
+      },
+      null,
+      {
+        "zh": "「に対して」不能直接修饰名词，意思（对……）也不对。",
+        "en": "「に対して」 can't modify a noun directly, and \"toward\" is the wrong meaning."
+      },
+      {
+        "zh": "「にとって」是“对……来说”，不能修饰「本」。",
+        "en": "「にとって」 (\"for\") can't modify 「本」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l35-009",
+    "type": "narabe",
+    "refs": [
+      "lesson35#3"
+    ],
+    "difficulty": 2,
+    "stem": "将来の 仕事 [_] [_] [★] [_] ありますか。",
+    "options": [
+      "両親と",
+      "ことが",
+      "について",
+      "話し合った"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "将来の 仕事について 両親と 話し合った ことが ありますか。",
+    "tr": {
+      "zh": "你和父母讨论过将来的工作吗？",
+      "en": "Have you ever talked with your parents about your future career?"
+    },
+    "why": {
+      "zh": "「将来の仕事について」是话题，「両親と話し合った」是经历，最后「ことがありますか」：について → 両親と → 話し合った → ことが。★ 是「話し合った」。",
+      "en": "「将来の仕事について」 is the topic, 「両親と話し合った」 the experience, then 「ことがありますか」: について → 両親と → 話し合った → ことが. The ★ is 「話し合った」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l35-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson35#4"
+    ],
+    "difficulty": 1,
+    "stem": "この 店の ランチは 曜日（　）メニューが 変わる。",
+    "options": [
+      "に対して",
+      "によって",
+      "について",
+      "を通じて"
+    ],
+    "answer": 1,
+    "full": "この 店の ランチは 曜日によって メニューが 変わる。",
+    "tr": {
+      "zh": "这家店的午餐菜单随星期几而变化。",
+      "en": "This restaurant's lunch menu changes depending on the day of the week."
+    },
+    "why": {
+      "zh": "“菜单不同、会变”取决于星期几，「〜によって＋違う/変わる」表示“因……而异”。",
+      "en": "The menu changes depending on the day: 「〜によって」 + 変わる / 違う means \"varies with\"."
+    },
+    "wrong": [
+      {
+        "zh": "「に対して」表示对象或对比，“对星期几菜单变化”说不通。",
+        "en": "「に対して」 marks a target or a contrast; it doesn't mean \"depending on\"."
+      },
+      null,
+      {
+        "zh": "「について」是“关于”，“关于星期几菜单变化”说不通。",
+        "en": "「について」 means \"about\", which doesn't fit here."
+      },
+      {
+        "zh": "「を通じて」是“通过/贯穿整个期间”，“贯穿星期几”说不通。",
+        "en": "「を通じて」 means \"through\" or \"throughout\"; that isn't \"depending on\"."
+      }
+    ]
+  },
+  {
+    "id": "n3-l35-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson35#4"
+    ],
+    "difficulty": 2,
+    "stem": "台風（　）被害は 予想より ずっと 大きかった。",
+    "options": [
+      "にとっての",
+      "に対する",
+      "による",
+      "についての"
+    ],
+    "answer": 2,
+    "full": "台風による 被害は 予想より ずっと 大きかった。",
+    "tr": {
+      "zh": "台风造成的损失比预想的大得多。",
+      "en": "The damage caused by the typhoon was much greater than expected."
+    },
+    "why": {
+      "zh": "台风是损失的原因，而空格后紧接名词「被害」，修饰名词要用「による」。",
+      "en": "The typhoon is the cause, and the blank comes right before the noun 「被害」, so it's 「による」."
+    },
+    "wrong": [
+      {
+        "zh": "「にとっての被害」是“对台风来说的损失”，意思不通，台风不是受害的一方。",
+        "en": "「にとっての被害」 would be \"damage for the typhoon\", which makes no sense."
+      },
+      {
+        "zh": "「に対する被害」是“针对台风的损失”，意思不通。",
+        "en": "「に対する被害」 would be \"damage toward the typhoon\", which makes no sense."
+      },
+      null,
+      {
+        "zh": "「についての被害」是“关于台风的损失”，不表示原因，不自然。",
+        "en": "「についての被害」 (\"damage about the typhoon\") doesn't express the cause."
+      }
+    ]
+  },
+  {
+    "id": "n3-l35-012",
+    "type": "bunpou",
+    "refs": [
+      "lesson35#4"
+    ],
+    "difficulty": 2,
+    "stem": "この 小説は 有名な 作家（　）書かれた。",
+    "options": [
+      "にとって",
+      "に対して",
+      "において",
+      "によって"
+    ],
+    "answer": 3,
+    "full": "この 小説は 有名な 作家によって 書かれた。",
+    "tr": {
+      "zh": "这部小说是由一位著名作家写的。",
+      "en": "This novel was written by a famous author."
+    },
+    "why": {
+      "zh": "被动句「書かれた」中，动作的执行者（作家）用「によって」表示。",
+      "en": "In the passive 「書かれた」, the one who did it (the author) is marked with 「によって」."
+    },
+    "wrong": [
+      {
+        "zh": "「にとって」是“对……来说”，不表示被动句的执行者。",
+        "en": "「にとって」 (\"for\") doesn't mark the doer in a passive."
+      },
+      {
+        "zh": "「に対して」表示对象，“对作家写的”说不通。",
+        "en": "「に対して」 marks a target; \"written toward the author\" makes no sense."
+      },
+      {
+        "zh": "「において」表示场所、领域，作家不是场所。",
+        "en": "「において」 marks a place or field, and an author is neither."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n3-l35-013",
+    "type": "narabe",
+    "refs": [
+      "lesson35#4"
+    ],
+    "difficulty": 2,
+    "stem": "同じ 映画でも 見る [_] [_] [★] [_] 違う。",
+    "options": [
+      "受ける",
+      "によって",
+      "印象が",
+      "人"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "同じ 映画でも 見る 人によって 受ける 印象が 違う。",
+    "tr": {
+      "zh": "即使是同一部电影，观众不同，得到的印象也不同。",
+      "en": "Even the same film leaves a different impression depending on who watches it."
+    },
+    "why": {
+      "zh": "「見る人」是“看的人”，「人によって」= 因人而异，「受ける印象」作主语接「が」：人 → によって → 受ける → 印象が。★ 是「受ける」。",
+      "en": "「見る人」 is \"the viewer\"; 「人によって」 = depending on the person; 「受ける印象が」 is the subject: 人 → によって → 受ける → 印象が. The ★ is 「受ける」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l35-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson35#5"
+    ],
+    "difficulty": 1,
+    "stem": "私は 大学の 先輩（　）今の 会社の 社長と 知り合った。",
+    "options": [
+      "にとって",
+      "を通じて",
+      "に対して",
+      "について"
+    ],
+    "answer": 1,
+    "full": "私は 大学の 先輩を通じて 今の 会社の 社長と 知り合った。",
+    "tr": {
+      "zh": "我通过大学的学长认识了现在公司的社长。",
+      "en": "I got to know the president of my current company through a senior from university."
+    },
+    "why": {
+      "zh": "学长是认识社长的“中间人、媒介”，表示通过某人/某手段用「を通じて」。",
+      "en": "The senior is the go-between who made the meeting possible: \"through someone\" is 「を通じて」."
+    },
+    "wrong": [
+      {
+        "zh": "「にとって」是“对……来说”，后面接评价，不接「知り合った」。",
+        "en": "「にとって」 (\"for\") is followed by a judgement, not 「知り合った」."
+      },
+      null,
+      {
+        "zh": "「に対して」表示行为的对象，“对学长认识了社长”说不通。",
+        "en": "「に対して」 marks a target; it can't mean \"through\" here."
+      },
+      {
+        "zh": "「について」是“关于”，“关于学长认识了社长”说不通。",
+        "en": "「について」 means \"about\", which doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n3-l35-015",
+    "type": "bunpou",
+    "refs": [
+      "lesson35#5"
+    ],
+    "difficulty": 2,
+    "stem": "この 島は 一年（　）暖かいので、冬でも 海で 泳げる。",
+    "options": [
+      "にかけて",
+      "によって",
+      "を通じて",
+      "において"
+    ],
+    "answer": 2,
+    "full": "この 島は 一年を通じて 暖かいので、冬でも 海で 泳げる。",
+    "tr": {
+      "zh": "这个岛一年到头都很暖和，所以冬天也能在海里游泳。",
+      "en": "This island is warm all year round, so you can swim in the sea even in winter."
+    },
+    "why": {
+      "zh": "“一整年都暖和”，表示贯穿整个期间用「を通じて」。",
+      "en": "Warm for the whole year: \"throughout a period\" is 「を通じて」."
+    },
+    "wrong": [
+      {
+        "zh": "「にかけて」要用「AからBにかけて」表示大致范围，不能单独接「一年」。",
+        "en": "「にかけて」 needs 「AからBにかけて」 (from A to B); it can't follow 「一年」 alone."
+      },
+      {
+        "zh": "「一年によって」是“因年份而异”，和“一年到头都暖和”矛盾，也不通顺。",
+        "en": "「一年によって」 would mean \"depending on the year\", which doesn't fit \"warm all year\"."
+      },
+      null,
+      {
+        "zh": "「において」表示场所、领域，不表示“贯穿整个期间”。",
+        "en": "「において」 marks a place or field, not \"throughout a period\"."
+      }
+    ]
+  },
+  {
+    "id": "n3-l35-016",
+    "type": "narabe",
+    "refs": [
+      "lesson35#5"
+    ],
+    "difficulty": 2,
+    "stem": "今は インターネット [_] [_] [_] [★] ように なった。",
+    "options": [
+      "情報が",
+      "を通じて",
+      "手に入る",
+      "世界中の"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "今は インターネットを通じて 世界中の 情報が 手に入る ように なった。",
+    "tr": {
+      "zh": "现在通过网络能得到全世界的信息了。",
+      "en": "Now you can get information from all over the world through the internet."
+    },
+    "why": {
+      "zh": "「インターネットを通じて」是手段，「世界中の情報が」是主语，「手に入る」接「ようになった」：を通じて → 世界中の → 情報が → 手に入る。★ 是「手に入る」。",
+      "en": "「インターネットを通じて」 is the means, 「世界中の情報が」 the subject, and 「手に入る」 goes before 「ようになった」: を通じて → 世界中の → 情報が → 手に入る. The ★ is 「手に入る」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l35-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson35#6"
+    ],
+    "difficulty": 1,
+    "stem": "この ドラマは 実際に あった 事件（　）作られた。",
+    "options": [
+      "に対して",
+      "をもとに",
+      "にとって",
+      "を通じて"
+    ],
+    "answer": 1,
+    "full": "この ドラマは 実際に あった 事件をもとに 作られた。",
+    "tr": {
+      "zh": "这部电视剧是根据真实发生的事件制作的。",
+      "en": "This drama was made based on a real incident."
+    },
+    "why": {
+      "zh": "真实事件是电视剧的素材、基础，表示“以……为基础”用「をもとに」。",
+      "en": "The real incident is the material the drama is built on: \"based on\" is 「をもとに」."
+    },
+    "wrong": [
+      {
+        "zh": "「に対して」表示对象，“针对事件制作”说不通。",
+        "en": "「に対して」 marks a target; \"made toward an incident\" makes no sense."
+      },
+      null,
+      {
+        "zh": "「にとって」是“对……来说”，后面要接评价，不接「作られた」。",
+        "en": "「にとって」 (\"for\") is followed by a judgement, not by 「作られた」."
+      },
+      {
+        "zh": "「を通じて」是“通过（媒介）”，事件不是制作电视剧的媒介。",
+        "en": "「を通じて」 means \"through (a medium)\"; the incident isn't a medium for making the drama."
+      }
+    ]
+  },
+  {
+    "id": "n3-l35-018",
+    "type": "bunpou",
+    "refs": [
+      "lesson35#6"
+    ],
+    "difficulty": 2,
+    "stem": "祖母の 若い ころの 話（　）小説を 読んだ。",
+    "options": [
+      "をもとに",
+      "をもとにした",
+      "に対する",
+      "にとって"
+    ],
+    "answer": 1,
+    "full": "祖母の 若い ころの 話をもとにした 小説を 読んだ。",
+    "tr": {
+      "zh": "我读了以祖母年轻时的故事为原型的小说。",
+      "en": "I read a novel based on my grandmother's stories from her youth."
+    },
+    "why": {
+      "zh": "空格后紧接名词「小説」，修饰名词要用「をもとにした」（以……为基础的）。",
+      "en": "The blank comes right before the noun 「小説」, so it needs the noun-modifying form 「をもとにした」."
+    },
+    "wrong": [
+      {
+        "zh": "「をもとに」后面接动词（作る、書く），不能直接修饰名词「小説」。",
+        "en": "「をもとに」 is followed by a verb; it can't modify the noun 「小説」 directly."
+      },
+      null,
+      {
+        "zh": "「話に対する小説」是“针对祖母的话的小说”，意思不通。",
+        "en": "「話に対する小説」 would be \"a novel toward grandma's stories\", which makes no sense."
+      },
+      {
+        "zh": "「にとって」不能直接修饰名词，意思（对……来说）也不对。",
+        "en": "「にとって」 can't modify a noun directly, and \"for\" is the wrong meaning."
+      }
+    ]
+  },
+  {
+    "id": "n3-l35-019",
+    "type": "narabe",
+    "refs": [
+      "lesson35#6"
+    ],
+    "difficulty": 2,
+    "stem": "この 報告書は [_] [_] [★] [_] ものです。",
+    "options": [
+      "アンケートの",
+      "もとに まとめた",
+      "社員への",
+      "結果を"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "この 報告書は 社員への アンケートの 結果を もとに まとめた ものです。",
+    "tr": {
+      "zh": "这份报告是根据对员工的问卷调查结果整理而成的。",
+      "en": "This report was put together based on the results of a staff survey."
+    },
+    "why": {
+      "zh": "「社員へのアンケート」→「アンケートの結果」→「結果をもとにまとめた」→「ものです」：社員への → アンケートの → 結果を → もとに まとめた。★ 是「結果を」。",
+      "en": "「社員へのアンケート」 → 「アンケートの結果」 → 「結果をもとにまとめた」 → 「ものです」: 社員への → アンケートの → 結果を → もとに まとめた. The ★ is 「結果を」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

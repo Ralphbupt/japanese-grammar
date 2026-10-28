@@ -1,0 +1,432 @@
+[
+  {
+    "id": "n4-l19-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson19#1"
+    ],
+    "difficulty": 2,
+    "stem": "赤ちゃん（　）夜中に 泣かれて、ぜんぜん 寝られなかった。",
+    "options": [
+      "に",
+      "が",
+      "を",
+      "で"
+    ],
+    "answer": 0,
+    "full": "赤ちゃんに 夜中に 泣かれて、ぜんぜん 寝られなかった。",
+    "tr": {
+      "zh": "半夜宝宝一直哭，我完全没睡着。",
+      "en": "The baby cried in the night, and I couldn't sleep at all."
+    },
+    "why": {
+      "zh": "这是间接被动（迷惑被动）：别人做了某事让我受困扰，做动作的人用「に」：赤ちゃんに泣かれる。",
+      "en": "This is the nuisance passive: someone's action bothers me, and the one who does it takes 「に」: 赤ちゃんに泣かれる."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「赤ちゃんが泣かれて」会把宝宝当成被动句的主语，可受困扰的是“我”。",
+        "en": "「赤ちゃんが泣かれて」 makes the baby the passive subject, but the one bothered is me."
+      },
+      {
+        "zh": "「泣く」是自动词，被动句里不能用「を」标记做动作的人。",
+        "en": "泣く is intransitive; the person doing it can't take 「を」."
+      },
+      {
+        "zh": "「で」表示场所或原因，被动句里做动作的人要用「に」。",
+        "en": "「で」 marks a place or cause; in a passive the doer takes 「に」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l19-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson19#1"
+    ],
+    "difficulty": 1,
+    "stem": "電車の 中で、となりの 人に 足を（　）。とても 痛かった。",
+    "options": [
+      "踏まれた",
+      "踏ませた",
+      "踏んだ",
+      "踏ませられた"
+    ],
+    "answer": 0,
+    "full": "電車の 中で、となりの 人に 足を 踏まれた。とても 痛かった。",
+    "tr": {
+      "zh": "在电车里，脚被旁边的人踩了。好疼。",
+      "en": "On the train, the person next to me stepped on my foot. It really hurt."
+    },
+    "why": {
+      "zh": "脚被别人踩了、我很疼：身体部位被做了某事用持ち主被动「Bに＋部位を＋〜られる」。",
+      "en": "My foot got stepped on and it hurt: something done to my body part is the possessor passive 「Bに＋part を＋〜られる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「踏ませた」是使役，“我让旁边的人踩我的脚”，和“好疼”的抱怨不合。",
+        "en": "「踏ませた」 (I made them step on it) doesn't fit the complaint."
+      },
+      {
+        "zh": "「踏んだ」是主动，“旁边的人に”接不上（应是「となりの人の足を踏んだ」）。",
+        "en": "「踏んだ」 is active; 「となりの人に」 doesn't fit it."
+      },
+      {
+        "zh": "「踏ませられた」是“被迫去踩”，踩的人变成了我，和“我的脚疼”不合。",
+        "en": "「踏ませられた」 means I was made to step on something — not what hurt me."
+      }
+    ]
+  },
+  {
+    "id": "n4-l19-003",
+    "type": "bunpou",
+    "refs": [
+      "lesson19#1"
+    ],
+    "difficulty": 2,
+    "stem": "この 小説は 夏目漱石（　）書かれました。",
+    "options": [
+      "によって",
+      "について",
+      "から",
+      "で"
+    ],
+    "answer": 0,
+    "full": "この 小説は 夏目漱石によって 書かれました。",
+    "tr": {
+      "zh": "这部小说是由夏目漱石写的。",
+      "en": "This novel was written by Natsume Soseki."
+    },
+    "why": {
+      "zh": "作品的作者等创造行为的执行者，在客观描述的被动句里用「によって」。",
+      "en": "In a factual passive, the creator of a work is marked with 「によって」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「について」是“关于……”，不能标记被动句的动作执行者。",
+        "en": "「について」 means “about”; it doesn't mark who did it."
+      },
+      {
+        "zh": "「から」可以用在少数被动句（先生から褒められた），但“写小说”的作者不用「から」。",
+        "en": "「から」 works with a few passives (先生から褒められた), but not for the author of a novel."
+      },
+      {
+        "zh": "「で」表示场所或手段，不能标记作者。",
+        "en": "「で」 marks a place or means, not the author."
+      }
+    ]
+  },
+  {
+    "id": "n4-l19-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson19#1"
+    ],
+    "difficulty": 1,
+    "stem": "テストで 100点を 取って、先生に（　）。とても うれしかった。",
+    "options": [
+      "褒められた",
+      "褒めた",
+      "褒めさせた",
+      "褒めさせられた"
+    ],
+    "answer": 0,
+    "full": "テストで 100点を 取って、先生に 褒められた。とても うれしかった。",
+    "tr": {
+      "zh": "考试得了100分，被老师表扬了。我非常高兴。",
+      "en": "I got 100 on the test and the teacher praised me. I was so happy."
+    },
+    "why": {
+      "zh": "我考了满分、很高兴，是“被老师表扬”：直接被动「先生に褒められる」。",
+      "en": "I scored 100 and was happy — I was praised by the teacher: the direct passive 「先生に褒められる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「先生に褒めた」意思是“我表扬了老师”，和考满分的事接不上。",
+        "en": "「先生に褒めた」 would say I praised the teacher — it doesn't follow my 100 points."
+      },
+      {
+        "zh": "「褒めさせた」是“我让老师表扬（某人）”，不合语境。",
+        "en": "「褒めさせた」 (I made the teacher praise) doesn't fit."
+      },
+      {
+        "zh": "「褒めさせられた」是“我被老师逼着去表扬”，和我考满分无关。",
+        "en": "「褒めさせられた」 (I was made to praise) has nothing to do with my score."
+      }
+    ]
+  },
+  {
+    "id": "n4-l19-005",
+    "type": "narabe",
+    "refs": [
+      "lesson19#1"
+    ],
+    "difficulty": 2,
+    "stem": "駅で 知らない 人に [_] [_] [★] [_]。",
+    "options": [
+      "しまいました",
+      "財布を",
+      "盗まれて",
+      "大切な"
+    ],
+    "order": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "full": "駅で 知らない 人に 大切な 財布を 盗まれて しまいました。",
+    "tr": {
+      "zh": "在车站，重要的钱包被陌生人偷了。",
+      "en": "At the station, a stranger stole my precious wallet."
+    },
+    "why": {
+      "zh": "持ち主被动：人に＋物を＋〜られる。大切な 財布を 盗まれて しまいました，★ 在第三格，是「盗まれて」。",
+      "en": "Possessor passive: person に ＋ thing を ＋ passive: 大切な 財布を 盗まれて しまいました. The ★ is the third slot: 「盗まれて」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l19-006",
+    "type": "bunpou",
+    "refs": [
+      "lesson19#2"
+    ],
+    "difficulty": 2,
+    "stem": "子供の ころ、母に 毎日 ピアノを 練習（　）。本当は いやだった。",
+    "options": [
+      "させられた",
+      "させた",
+      "させて くれた",
+      "させて あげた"
+    ],
+    "answer": 0,
+    "full": "子供の ころ、母に 毎日 ピアノを 練習させられた。本当は いやだった。",
+    "tr": {
+      "zh": "小时候每天被妈妈逼着练钢琴。其实我很讨厌。",
+      "en": "As a child, my mother made me practise the piano every day. I actually hated it."
+    },
+    "why": {
+      "zh": "“其实很讨厌”说明是被迫的：主语（我）被母亲逼着做，用使役被动「〜させられる」，做逼迫的人用「に」。",
+      "en": "「本当はいやだった」 shows I was forced: the causative-passive 「〜させられる」, with the one forcing me marked by 「に」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「母に練習させた」是“我让妈妈练习”，不合小时候的情境。",
+        "en": "「母に練習させた」 would mean I made mother practise."
+      },
+      {
+        "zh": "「させてくれた」表示别人允许我做、我很感激，和“其实很讨厌”矛盾，而且给予方要用「が」。",
+        "en": "「させてくれた」 is a kindness I'm grateful for — it contradicts 「いやだった」, and the giver would take 「が」."
+      },
+      {
+        "zh": "「させてあげた」是“我让别人做（施恩）”，方向不对。",
+        "en": "「させてあげた」 is me letting someone else do it — the wrong direction."
+      }
+    ]
+  },
+  {
+    "id": "n4-l19-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson19#2"
+    ],
+    "difficulty": 2,
+    "stem": "私は お酒が 弱いのに、飲み会で 先輩に たくさん（　）。",
+    "options": [
+      "飲まされた",
+      "飲ませた",
+      "飲まれた",
+      "飲まさせられた"
+    ],
+    "answer": 0,
+    "full": "私は お酒が 弱いのに、飲み会で 先輩に たくさん 飲まされた。",
+    "tr": {
+      "zh": "我酒量不行，聚会上却被前辈灌了很多酒。",
+      "en": "I can't hold my drink, yet at the party my senpai made me drink a lot."
+    },
+    "why": {
+      "zh": "“我酒量不行却……”说明我是被迫喝的：使役被动，一类动词口语缩略为「飲まされる」。",
+      "en": "「弱いのに」 shows I was forced to drink: the causative-passive, contracted for group 1 verbs to 「飲まされる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「飲ませた」是“我让前辈喝”，和“我酒量不行却……”接不上。",
+        "en": "「飲ませた」 (I made senpai drink) doesn't follow 「私はお酒が弱いのに」."
+      },
+      {
+        "zh": "「飲まれた」是被动，“前辈喝了很多（我很困扰）”，和我酒量不好没有关系。",
+        "en": "「飲まれた」 would be senpai drinking (to my annoyance) — unrelated to my low tolerance."
+      },
+      {
+        "zh": "「飲まさせられた」不是正确形式：使役被动是「飲ませられる」或缩略的「飲まされる」。",
+        "en": "「飲まさせられた」 isn't a real form; it's 「飲ませられる」 or the contracted 「飲まされる」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l19-008",
+    "type": "narabe",
+    "refs": [
+      "lesson19#2"
+    ],
+    "difficulty": 2,
+    "stem": "きのうは 駅で 友達に [_] [★] [_] [_]。",
+    "options": [
+      "とても",
+      "疲れました",
+      "1時間も",
+      "待たされて"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "きのうは 駅で 友達に 1時間も 待たされて とても 疲れました。",
+    "tr": {
+      "zh": "昨天在车站被朋友害得等了整整1个小时，累坏了。",
+      "en": "Yesterday my friend kept me waiting at the station for a whole hour, and I was exhausted."
+    },
+    "why": {
+      "zh": "被朋友逼着等：使役被动「待たされる」。1時間も 待たされて とても 疲れました，★ 在第二格，是「待たされて」。",
+      "en": "Kept waiting by a friend: causative-passive 「待たされる」. 1時間も 待たされて とても 疲れました — the ★ is the second slot: 「待たされて」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l19-009",
+    "type": "bunpou",
+    "refs": [
+      "lesson19#3"
+    ],
+    "difficulty": 2,
+    "stem": "学生は 先生に 長い 作文を 3枚も 書か（　）、とても 大変だった。",
+    "options": [
+      "されて",
+      "せて",
+      "れて",
+      "せて くれて"
+    ],
+    "answer": 0,
+    "full": "学生は 先生に 長い 作文を 3枚も 書かされて、とても 大変だった。",
+    "tr": {
+      "zh": "学生被老师逼着写了整整3页的长作文，非常辛苦。",
+      "en": "The students were made to write three whole pages for the teacher, which was really hard."
+    },
+    "why": {
+      "zh": "主语是学生，写作文的也是学生，而且很辛苦：被逼着做 → 使役被动「書かされる」。",
+      "en": "The students are the subject and the ones writing, and it was hard: being made to do → causative-passive 「書かされる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「書かせて」是使役，“学生让老师写”，主客颠倒了。",
+        "en": "「書かせて」 (causative) would mean the students made the teacher write."
+      },
+      {
+        "zh": "「書かれて」是被动，“老师写了作文（让学生困扰）”，可写的是学生。",
+        "en": "「書かれて」 (passive) would mean the teacher wrote it, but the students did the writing."
+      },
+      {
+        "zh": "「書かせてくれて」是“老师好心让学生写”，和“非常辛苦”不合，而且给予方要用「が」。",
+        "en": "「書かせてくれて」 is a kindness — it clashes with 「大変だった」, and the giver would take 「が」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l19-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson19#3",
+      "lesson19#1"
+    ],
+    "difficulty": 2,
+    "stem": "出かけた とき、急に 雨に（　）、困りました。",
+    "options": [
+      "降られて",
+      "降らせられて",
+      "降らせて",
+      "降って"
+    ],
+    "answer": 0,
+    "full": "出かけた とき、急に 雨に 降られて、困りました。",
+    "tr": {
+      "zh": "出门的时候突然被雨淋了，真头疼。",
+      "en": "When I went out, I suddenly got caught in the rain, which was a pain."
+    },
+    "why": {
+      "zh": "下雨让我困扰：自然现象带来的麻烦用迷惑被动「雨に降られる」。",
+      "en": "The rain caused me trouble: a natural event bothering me is the nuisance passive 「雨に降られる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「降らせられて」是使役被动（被迫下），自然现象不能这么说。",
+        "en": "「降らせられて」 is causative-passive (being made to fall) — impossible for rain."
+      },
+      {
+        "zh": "「降らせて」是使役（让雨下），和“真头疼”不合。",
+        "en": "「降らせて」 (making it rain) doesn't fit 「困りました」."
+      },
+      {
+        "zh": "「降って」要说「雨が降って」；前面是「雨に」，只能接被动。",
+        "en": "「降って」 needs 「雨が降って」; after 「雨に」 only the passive works."
+      }
+    ]
+  },
+  {
+    "id": "n4-l19-011",
+    "type": "narabe",
+    "refs": [
+      "lesson19#3",
+      "lesson19#2"
+    ],
+    "difficulty": 2,
+    "stem": "小さい とき、母に [_] [_] [★] [_]。",
+    "options": [
+      "いやだった",
+      "食べ",
+      "野菜を",
+      "させられて"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "小さい とき、母に 野菜を 食べさせられて いやだった。",
+    "tr": {
+      "zh": "小时候被妈妈逼着吃蔬菜，很讨厌。",
+      "en": "When I was little, my mother made me eat vegetables, and I hated it."
+    },
+    "why": {
+      "zh": "被妈妈逼着吃：二类动词使役被动「食べさせられる」。野菜を 食べ させられて いやだった，★ 在第三格，是「させられて」。",
+      "en": "Made to eat by mother: the causative-passive of a group 2 verb is 「食べさせられる」. 野菜を 食べ させられて いやだった — the ★ is the third slot: 「させられて」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

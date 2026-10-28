@@ -1,0 +1,466 @@
+[
+  {
+    "id": "n3-l39-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson39#1"
+    ],
+    "difficulty": 2,
+    "stem": "もし 会社を 辞める（　）、次の 仕事を 見つけてからに した ほうが いい。",
+    "options": [
+      "にしても",
+      "ものの",
+      "とはいえ",
+      "どころか"
+    ],
+    "answer": 0,
+    "full": "もし 会社を 辞めるにしても、次の 仕事を 見つけてからに した ほうが いい。",
+    "tr": {
+      "zh": "就算要辞职，也最好先找到下一份工作再说。",
+      "en": "Even if you do quit, it's better to find your next job first."
+    },
+    "why": {
+      "zh": "「もし」表示假设，辞职还没发生。能接在假设后面表示“即使……也……”的只有「にしても」。",
+      "en": "「もし」 makes it a supposition — the quitting hasn't happened. Only 「にしても」 (even if) can follow a supposition."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ものの」前面必须是已经成立的事实，不能和「もし」一起用。",
+        "en": "「ものの」 needs an established fact before it; it can't go with 「もし」."
+      },
+      {
+        "zh": "「とはいえ」也是承认既成事实（虽说……），和表示假设的「もし」矛盾。",
+        "en": "「とはいえ」 also concedes a known fact (granted that…), which clashes with the supposition 「もし」."
+      },
+      {
+        "zh": "「どころか」是“哪里是……反而……”，后面要接相反的事实，这里意思不通。",
+        "en": "「どころか」 (far from…) needs an opposite fact after it; the sentence makes no sense with it."
+      }
+    ]
+  },
+  {
+    "id": "n3-l39-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson39#1"
+    ],
+    "difficulty": 2,
+    "stem": "いくら 忙しい（　）、電話 一本ぐらいは できた はずだ。",
+    "options": [
+      "にしても",
+      "ものの",
+      "どころか",
+      "ばかりか"
+    ],
+    "answer": 0,
+    "full": "いくら 忙しいにしても、電話 一本ぐらいは できた はずだ。",
+    "tr": {
+      "zh": "再怎么忙，打个电话总应该做得到吧。",
+      "en": "However busy you were, you could surely have made one phone call."
+    },
+    "why": {
+      "zh": "「いくら……」要和“即使……也”类的让步表达呼应，「いくら〜にしても」= 不管多么……也……。",
+      "en": "「いくら」 (however…) pairs with a concessive \"even if\" form: 「いくら〜にしても」 = however … it may be."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ものの」只接确定的事实，不能和「いくら」呼应。",
+        "en": "「ものの」 only follows a plain fact and can't pair with 「いくら」."
+      },
+      {
+        "zh": "「どころか」后面应是和“忙”相反的事实，这里后半句是责备，接不上。",
+        "en": "「どころか」 would need the opposite of \"busy\" after it; the second half is a reproach instead."
+      },
+      {
+        "zh": "「ばかりか」是“不仅……而且……”同方向追加，和后半句的责备意思不搭，也不能和「いくら」呼应。",
+        "en": "「ばかりか」 adds something in the same direction (not only…), which fits neither the reproach nor 「いくら」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l39-003",
+    "type": "narabe",
+    "refs": [
+      "lesson39#1"
+    ],
+    "difficulty": 2,
+    "stem": "A「さっきのは ただの 冗談だよ。」\nB「[_] [_] [★] [_] は 言わない ほうが いいよ。」",
+    "options": [
+      "冗談",
+      "だった",
+      "にしても",
+      "あんな こと"
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full": "A「さっきのは ただの 冗談だよ。」 B「冗談だったにしても あんな ことは 言わない ほうが いいよ。」",
+    "tr": {
+      "zh": "A：刚才那只是开玩笑啦。 B：就算是开玩笑，那种话也最好别说。",
+      "en": "A: That was just a joke. B: Even if it was a joke, you'd better not say things like that."
+    },
+    "why": {
+      "zh": "名词接「にしても」要加「だ／だった」：冗談 ＋ だった ＋ にしても；「あんなこと」直接接后面的「は」。★ 是「にしても」。",
+      "en": "A noun takes だ/だった before 「にしても」: 冗談 ＋ だった ＋ にしても; 「あんなこと」 sits right before 「は」. The ★ is 「にしても」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l39-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson39#2"
+    ],
+    "difficulty": 2,
+    "stem": "新しい カメラを 買った（　）、忙しくて まだ 一度も 使って いない。",
+    "options": [
+      "ものの",
+      "にしても",
+      "どころか",
+      "ばかりか"
+    ],
+    "answer": 0,
+    "full": "新しい カメラを 買ったものの、忙しくて まだ 一度も 使って いない。",
+    "tr": {
+      "zh": "虽然买了新相机，但因为太忙一次都还没用过。",
+      "en": "I bought a new camera, but I've been so busy I haven't used it even once."
+    },
+    "why": {
+      "zh": "“买了”是事实，后面却是和预期相反的结果（一次都没用），用「ものの」（虽然……但是……）。",
+      "en": "Buying it is a fact, and the result runs against expectation (never used it): 「ものの」 (although…)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「にしても」是“即使……也”，用于假设或让步，不用来叙述自己已经做了的事。",
+        "en": "「にしても」 (even if) is for suppositions; it doesn't narrate something you already did."
+      },
+      {
+        "zh": "「どころか」要求后面是和前项相反的事实（不但没买反而……），这里不是。",
+        "en": "「どころか」 needs the opposite of the first part after it; \"haven't used it\" isn't the opposite of buying."
+      },
+      {
+        "zh": "「ばかりか」是同方向追加（不仅买了还……），和“没用过”的转折对不上。",
+        "en": "「ばかりか」 adds in the same direction (not only bought but…), not a contrast like \"haven't used it\"."
+      }
+    ]
+  },
+  {
+    "id": "n3-l39-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson39#2"
+    ],
+    "difficulty": 2,
+    "stem": "この 仕事は（　）、やりがいが あって 毎日 楽しい。",
+    "options": [
+      "大変な ものの",
+      "大変だ ものの",
+      "大変 ものの",
+      "大変の ものの"
+    ],
+    "answer": 0,
+    "full": "この 仕事は 大変な ものの、やりがいが あって 毎日 楽しい。",
+    "tr": {
+      "zh": "这份工作虽然辛苦，但很有意义，每天都很开心。",
+      "en": "This job is tough, but it's rewarding and I enjoy every day."
+    },
+    "why": {
+      "zh": "な形容词接「ものの」要用「〜な」（或「〜である」）：大変なものの。",
+      "en": "A na-adjective takes 「な」 (or 「である」) before 「ものの」: 大変なものの."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ものの」前面不能用「だ」，这是和「にしても」「とはいえ」的接续区别。",
+        "en": "「ものの」 can't follow 「だ」 — that's the form 「にしても」 and 「とはいえ」 use, not 「ものの」."
+      },
+      {
+        "zh": "な形容词词干不能直接接「ものの」，要加「な」。",
+        "en": "A bare na-adjective stem can't take 「ものの」; it needs 「な」."
+      },
+      {
+        "zh": "「の」是名词修饰的接法，な形容词不用「の」。",
+        "en": "「の」 is how nouns connect; a na-adjective doesn't use it."
+      }
+    ]
+  },
+  {
+    "id": "n3-l39-006",
+    "type": "narabe",
+    "refs": [
+      "lesson39#2"
+    ],
+    "difficulty": 2,
+    "stem": "セミナーに [_] [★] [_] [_] まだ 不安だ。",
+    "options": [
+      "申し込んだ",
+      "ものの",
+      "参加できるか",
+      "どうか"
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full": "セミナーに 申し込んだものの 参加できるか どうか まだ 不安だ。",
+    "tr": {
+      "zh": "虽然报名了研讨会，但还是担心能不能参加。",
+      "en": "I signed up for the seminar, but I'm still not sure whether I can attend."
+    },
+    "why": {
+      "zh": "动词过去式 ＋「ものの」：申し込んだものの；后面「参加できるかどうか」作为“不安”的内容。★ 是「ものの」。",
+      "en": "Past-tense verb ＋ 「ものの」: 申し込んだものの, then 「参加できるかどうか」 is what the worry is about. The ★ is 「ものの」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l39-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson39#3"
+    ],
+    "difficulty": 2,
+    "stem": "暦の 上では もう 春（　）、朝晩は まだ かなり 寒い。",
+    "options": [
+      "とはいえ",
+      "ものの",
+      "どころか",
+      "ばかりか"
+    ],
+    "answer": 0,
+    "full": "暦の 上では もう 春とはいえ、朝晩は まだ かなり 寒い。",
+    "tr": {
+      "zh": "虽说按日历已经是春天了，早晚还是挺冷的。",
+      "en": "It may be spring on the calendar, but mornings and evenings are still quite cold."
+    },
+    "why": {
+      "zh": "承认“已经是春天”这个事实，再补充例外（早晚还冷），用「とはいえ」。名词可以直接接「とはいえ」。",
+      "en": "It grants a fact (it's spring) and adds an exception (still cold): 「とはいえ」, which can follow a noun directly."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "名词接「ものの」必须说「春であるものの」，不能直接接。",
+        "en": "A noun needs 「である」 before 「ものの」 (春であるものの); it can't attach directly."
+      },
+      {
+        "zh": "「どころか」是“哪里是春天，简直是……”，后面要接比“冷”更强烈的反转，例如冬天一样；“早晚还冷”不构成反转。",
+        "en": "「どころか」 would deny it's spring outright; \"still cold mornings and evenings\" is an exception, not a reversal."
+      },
+      {
+        "zh": "「ばかりか」是同方向追加，“是春天”和“很冷”方向相反。",
+        "en": "「ばかりか」 adds in the same direction; \"spring\" and \"cold\" point opposite ways."
+      }
+    ]
+  },
+  {
+    "id": "n3-l39-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson39#3"
+    ],
+    "difficulty": 2,
+    "stem": "景気が 回復した（　）、私たちの 給料は まだ 少しも 上がって いない。",
+    "options": [
+      "とはいえ",
+      "ばかりか",
+      "おかげで",
+      "ために"
+    ],
+    "answer": 0,
+    "full": "景気が 回復したとはいえ、私たちの 給料は まだ 少しも 上がって いない。",
+    "tr": {
+      "zh": "虽说经济恢复了，我们的工资却还一点都没涨。",
+      "en": "The economy may have recovered, but our pay hasn't gone up at all."
+    },
+    "why": {
+      "zh": "前项是已承认的事实（经济恢复），后项是与之不符的现实（工资没涨），是让步转折，用「とはいえ」。",
+      "en": "The first part is a granted fact, the second a reality that doesn't match it — a concession: 「とはいえ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ばかりか」表示“不仅……而且……”的同方向追加，经济恢复和工资没涨方向相反。",
+        "en": "「ばかりか」 adds in the same direction; recovery and no pay rise point opposite ways."
+      },
+      {
+        "zh": "「おかげで」表示带来好结果的原因，“托经济恢复的福工资没涨”自相矛盾。",
+        "en": "「おかげで」 credits a good result; \"thanks to the recovery, pay hasn't risen\" contradicts itself."
+      },
+      {
+        "zh": "「ために」表示原因，“因为经济恢复所以工资没涨”逻辑不通。",
+        "en": "「ために」 gives a cause; \"because the economy recovered, pay didn't rise\" is illogical."
+      }
+    ]
+  },
+  {
+    "id": "n3-l39-009",
+    "type": "narabe",
+    "refs": [
+      "lesson39#3"
+    ],
+    "difficulty": 2,
+    "stem": "A「セールで シャツを 10枚も 買っちゃった。」\nB「えっ、いくら [_] [★] [_] [_] 多すぎるよ。」",
+    "options": [
+      "安い",
+      "とはいえ",
+      "10枚も",
+      "買うのは"
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full": "A「セールで シャツを 10枚も 買っちゃった。」 B「えっ、いくら 安いとはいえ 10枚も 買うのは 多すぎるよ。」",
+    "tr": {
+      "zh": "A：打折的时候买了整整10件衬衫。 B：啊？再怎么便宜，买10件也太多了吧。",
+      "en": "A: I bought ten shirts in the sale. B: What? Cheap or not, ten is way too many."
+    },
+    "why": {
+      "zh": "「いくら」后接形容词「安い」，再接「とはいえ」；后半句“买10件这件事太多了”：10枚も＋買うのは。★ 是「とはいえ」。",
+      "en": "「いくら」 takes the adjective 「安い」 and then 「とはいえ」; the second half is 「10枚も買うのは」 + 多すぎる. The ★ is 「とはいえ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l39-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson39#4"
+    ],
+    "difficulty": 2,
+    "stem": "弟は 引っ越しを 手伝って くれる（　）、邪魔 ばかり して いる。",
+    "options": [
+      "どころか",
+      "ばかりか",
+      "おかげで",
+      "ように"
+    ],
+    "answer": 0,
+    "full": "弟は 引っ越しを 手伝って くれるどころか、邪魔 ばかり して いる。",
+    "tr": {
+      "zh": "弟弟哪里是在帮忙搬家，简直净在添乱。",
+      "en": "Far from helping me move, my brother is just getting in the way."
+    },
+    "why": {
+      "zh": "“帮忙”和“添乱”方向完全相反，否定前项、指出相反的现实，用「どころか」。",
+      "en": "\"Helping\" and \"getting in the way\" are opposites: 「どころか」 denies the first and states the opposite reality."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ばかりか」是同方向追加（不仅帮忙，还……），后面却是相反的“添乱”。",
+        "en": "「ばかりか」 adds in the same direction (not only helps but also…), yet what follows is the opposite."
+      },
+      {
+        "zh": "「おかげで」表示好结果的原因，“托帮忙的福净添乱”说不通。",
+        "en": "「おかげで」 credits a good result; \"thanks to his help he's in the way\" makes no sense."
+      },
+      {
+        "zh": "「ように」表示目的或比喻，和后半句接不上。",
+        "en": "「ように」 marks a purpose or likeness; it doesn't connect to the second half."
+      }
+    ]
+  },
+  {
+    "id": "n3-l39-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson39#4"
+    ],
+    "difficulty": 2,
+    "stem": "彼は 日本に 来た ばかりで、漢字（　）、ひらがなも まだ 書けない。",
+    "options": [
+      "どころか",
+      "とはいえ",
+      "ものの",
+      "にしても"
+    ],
+    "answer": 0,
+    "full": "彼は 日本に 来た ばかりで、漢字どころか、ひらがなも まだ 書けない。",
+    "tr": {
+      "zh": "他刚来日本，别说汉字了，连平假名都还不会写。",
+      "en": "He's just arrived in Japan — forget kanji, he can't even write hiragana yet."
+    },
+    "why": {
+      "zh": "「AどころかBも〜ない」= 别说A，连更容易的B都不行。汉字难、平假名容易，正是这个结构。",
+      "en": "「AどころかBも〜ない」 = let alone A, not even the easier B. Kanji is hard, hiragana easier — exactly this pattern."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「とはいえ」是“虽说是……”，“虽说是汉字，平假名也不会写”意思不通。",
+        "en": "「とはいえ」 means \"granted that…\"; \"granted it's kanji, he can't write hiragana\" makes no sense."
+      },
+      {
+        "zh": "名词不能直接接「ものの」（要「であるものの」），意思也不通。",
+        "en": "A noun can't take 「ものの」 directly (it needs 「である」), and the meaning doesn't work either."
+      },
+      {
+        "zh": "「にしても」是“即使是……也”，这里不是让步，名词接时还要加「だ」。",
+        "en": "「にしても」 (even if) isn't a concession here, and a noun would need 「だ」 before it."
+      }
+    ]
+  },
+  {
+    "id": "n3-l39-012",
+    "type": "narabe",
+    "refs": [
+      "lesson39#4"
+    ],
+    "difficulty": 2,
+    "stem": "近くに 大きな スーパーが できたが、この 店の 客は [_] [_] [★] [_] いる。",
+    "options": [
+      "減る",
+      "どころか",
+      "むしろ",
+      "増えて"
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full": "近くに 大きな スーパーが できたが、この 店の 客は 減るどころか むしろ 増えて いる。",
+    "tr": {
+      "zh": "附近开了家大超市，但这家店的客人非但没减少，反而在增加。",
+      "en": "A big supermarket opened nearby, but far from falling, this shop's customers are actually increasing."
+    },
+    "why": {
+      "zh": "动词辞书形 ＋「どころか」：減るどころか；后面接相反的事实「むしろ増えている」。★ 是「むしろ」。",
+      "en": "Dictionary form ＋ 「どころか」: 減るどころか, then the opposite fact 「むしろ増えている」. The ★ is 「むしろ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

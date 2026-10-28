@@ -1,0 +1,582 @@
+[
+  {
+    "id": "n3-l56-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson56#1"
+    ],
+    "difficulty": 2,
+    "stem": "明日は 大事な 会議が あるから、熱が 少し あっても 会社を 休む（　）。",
+    "options": [
+      "わけには いかない",
+      "しかない",
+      "ことに なって いる",
+      "ことが ある"
+    ],
+    "answer": 0,
+    "full": "明日は 大事な 会議が あるから、熱が 少し あっても 会社を 休む わけには いかない。",
+    "tr": {
+      "zh": "明天有重要的会议，所以即使有点发烧也不能请假。",
+      "en": "There's an important meeting tomorrow, so I can't take the day off even with a bit of a temperature."
+    },
+    "why": {
+      "zh": "不是“休息不了”，而是因为有重要会议、出于责任“不能请假”，用「〜わけにはいかない」。",
+      "en": "It isn't that resting is impossible — the important meeting makes it unacceptable to take the day off. That's 「〜わけにはいかない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「しかない」是“只能请假”，和“即使发烧也……”、有重要会议的语境相反。",
+        "en": "「しかない」 would mean \"I have no choice but to take the day off\" — the opposite of \"even with a fever\" and the meeting."
+      },
+      {
+        "zh": "「ことになっている」是“规定请假”，有重要会议时不会规定请假。",
+        "en": "「ことになっている」 would make taking the day off the rule — nonsense when there's an important meeting."
+      },
+      {
+        "zh": "「ことがある」是“有时会请假”，和“明天”这一具体的事对不上。",
+        "en": "「ことがある」 means \"I sometimes take days off\"; it doesn't fit one specific day, tomorrow."
+      }
+    ]
+  },
+  {
+    "id": "n3-l56-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson56#1"
+    ],
+    "difficulty": 2,
+    "stem": "先輩に 誘われたら、飲み会に 行かない（　）。本当は 早く 帰りたいんだけど。",
+    "options": [
+      "わけには いかない",
+      "はずが ない",
+      "しかない",
+      "ものだ"
+    ],
+    "answer": 0,
+    "full": "先輩に 誘われたら、飲み会に 行かない わけには いかない。本当は 早く 帰りたいんだけど。",
+    "tr": {
+      "zh": "被前辈邀请的话，就不能不去聚会。其实我想早点回家。",
+      "en": "If a senior colleague invites me, I can't not go to the drinks. I'd really rather go home early, though."
+    },
+    "why": {
+      "zh": "其实想回家，但出于人情不能拒绝前辈，「ないわけにはいかない」＝不能不做、必须做。",
+      "en": "I'd rather go home, but turning down a senior isn't an option — 「ないわけにはいかない」 = I can't not do it."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「はずがない」是对别人的推测“不可能不去”，和后面说自己“其实想回家”对不上。",
+        "en": "「はずがない」 is a guess about someone (\"there's no way they won't go\"); it doesn't fit me saying I'd rather go home."
+      },
+      {
+        "zh": "「しかない」接在动词辞书形后，不接「ない」形。",
+        "en": "「しかない」 follows the dictionary form, not the nai-form."
+      },
+      {
+        "zh": "「ものだ」是一般道理，“被邀请就不去才是常理”说不通。",
+        "en": "「ものだ」 states what's normal; \"one doesn't go when invited\" makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n3-l56-003",
+    "type": "narabe",
+    "refs": [
+      "lesson56#1"
+    ],
+    "difficulty": 2,
+    "stem": "お客様が まだ 待って いるので、ここで [_] [_] [★] [_] 。",
+    "options": [
+      "いかない",
+      "わけ",
+      "帰る",
+      "には"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "お客様が まだ 待って いるので、ここで 帰る わけ には いかない。",
+    "tr": {
+      "zh": "客人还在等着，所以不能就这样回去。",
+      "en": "The client is still waiting, so I can't just leave now."
+    },
+    "why": {
+      "zh": "辞书形＋わけ＋には＋いかない。★ 在第三格，是「には」。",
+      "en": "Dictionary form ＋ わけ ＋ には ＋ いかない. The ★ is the third slot: 「には」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l56-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson56#2"
+    ],
+    "difficulty": 1,
+    "stem": "終電に 乗り遅れて しまった。お金も ないし、駅から 家まで 歩いて 帰る（　）。",
+    "options": [
+      "しかない",
+      "わけには いかない",
+      "べきでは ない",
+      "ことに して いる"
+    ],
+    "answer": 0,
+    "full": "終電に 乗り遅れて しまった。お金も ないし、駅から 家まで 歩いて 帰る しかない。",
+    "tr": {
+      "zh": "没赶上末班车。也没钱，只能从车站走回家了。",
+      "en": "I missed the last train. I've no money either, so I'll just have to walk home from the station."
+    },
+    "why": {
+      "zh": "没有末班车、也没钱打车，别无选择，用「〜しかない」（只能……）。",
+      "en": "No last train and no money for a taxi — there's no other option, so 「〜しかない」 (all I can do is…)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「わけにはいかない」是“不能走回去”，那就没办法回家了，和语境相反。",
+        "en": "「わけにはいかない」 would mean walking home isn't acceptable — leaving no way home at all."
+      },
+      {
+        "zh": "「べきではない」是“不应该走回去”，没有理由这样说。",
+        "en": "「べきではない」 (shouldn't walk) has no basis here."
+      },
+      {
+        "zh": "「ことにしている」是平时的习惯，这里是今晚没办法的情况。",
+        "en": "「ことにしている」 is a habit; this is a one-night predicament."
+      }
+    ]
+  },
+  {
+    "id": "n3-l56-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson56#2"
+    ],
+    "difficulty": 1,
+    "stem": "誰も 手伝って くれないなら、自分で（　）しかない。",
+    "options": [
+      "やる",
+      "やって",
+      "やり",
+      "やった"
+    ],
+    "answer": 0,
+    "full": "誰も 手伝って くれないなら、自分で やる しかない。",
+    "tr": {
+      "zh": "如果谁都不帮忙，那只能自己做了。",
+      "en": "If nobody will help, I'll just have to do it myself."
+    },
+    "why": {
+      "zh": "「しかない」接在动词辞书形后面：やるしかない。",
+      "en": "「しかない」 follows the dictionary form: やるしかない."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "て形不能接「しかない」。",
+        "en": "The te-form can't take 「しかない」."
+      },
+      {
+        "zh": "ます形词干不能接「しかない」。",
+        "en": "The masu-stem can't take 「しかない」."
+      },
+      {
+        "zh": "「しかない」不接た形，要用辞书形。",
+        "en": "「しかない」 doesn't follow the ta-form; it takes the dictionary form."
+      }
+    ]
+  },
+  {
+    "id": "n3-l56-006",
+    "type": "narabe",
+    "refs": [
+      "lesson56#2"
+    ],
+    "difficulty": 1,
+    "stem": "ここまで 来たら、[_] [_] [★] [_] 。",
+    "options": [
+      "しか",
+      "頑張る",
+      "ない",
+      "最後まで"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "ここまで 来たら、最後まで 頑張る しか ない。",
+    "tr": {
+      "zh": "都走到这一步了，只能坚持到最后。",
+      "en": "Having come this far, all I can do is keep going to the end."
+    },
+    "why": {
+      "zh": "最後まで＋頑張る（辞书形）＋しか＋ない。★ 在第三格，是「しか」。",
+      "en": "最後まで ＋ 頑張る (dictionary form) ＋ しか ＋ ない. The ★ is the third slot: 「しか」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l56-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson56#3"
+    ],
+    "difficulty": 1,
+    "stem": "約束の 時間に 遅れそうな ときは、早めに 相手に 連絡する（　）。",
+    "options": [
+      "べきだ",
+      "ものか",
+      "ことか",
+      "わけが ない"
+    ],
+    "answer": 0,
+    "full": "約束の 時間に 遅れそうな ときは、早めに 相手に 連絡する べきだ。",
+    "tr": {
+      "zh": "快要迟到的时候，应该尽早联系对方。",
+      "en": "When you look like being late, you should let the other person know early."
+    },
+    "why": {
+      "zh": "说的是正确的做法、应尽的礼貌，用表示“应该”的「〜べきだ」。",
+      "en": "This is about the right thing to do — 「〜べきだ」 (should)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ものか」是“怎么会……！”的强烈否定，和“应该联系”的意思相反。",
+        "en": "「ものか」 is an emphatic \"as if I would!\" — the opposite of advising contact."
+      },
+      {
+        "zh": "「ことか」是“多么……啊”的感叹，要和「どんなに」等一起用，这里不是感叹。",
+        "en": "「ことか」 is an exclamation used with 「どんなに」 etc.; this isn't one."
+      },
+      {
+        "zh": "「わけがない」是“不可能联系”，和“快迟到时”的建议不符。",
+        "en": "「わけがない」 means \"there's no way they'd contact\"; it isn't advice."
+      }
+    ]
+  },
+  {
+    "id": "n3-l56-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson56#3"
+    ],
+    "difficulty": 2,
+    "stem": "あの とき、もっと 早く 上司に 相談（　）。今 思うと 後悔して いる。",
+    "options": [
+      "すべきだった",
+      "すべきだ",
+      "したべきだ",
+      "しないべきだった"
+    ],
+    "answer": 0,
+    "full": "あの とき、もっと 早く 上司に 相談 すべきだった。今 思うと 後悔して いる。",
+    "tr": {
+      "zh": "那时应该更早找上司商量的。现在想来很后悔。",
+      "en": "I should have talked to my boss sooner back then. Looking back, I regret it."
+    },
+    "why": {
+      "zh": "「あのとき」「後悔している」说明是对过去的后悔，用「すべきだった」（当时应该……）。「する」可以说「すべき」。",
+      "en": "「あのとき」 and \"I regret it\" make it regret about the past: 「すべきだった」 (should have). 「する」 can become 「すべき」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「すべきだ」是现在的“应该”，和「あのとき」「後悔している」的过去不符。",
+        "en": "「すべきだ」 is a present \"should\"; it doesn't fit 「あのとき」 and regret."
+      },
+      {
+        "zh": "「べき」接在辞书形后，不能接た形。",
+        "en": "「べき」 follows the dictionary form, never the ta-form."
+      },
+      {
+        "zh": "「べき」不接「ない」形，而且“当时应该不商量”和后悔的意思相反。",
+        "en": "「べき」 can't follow the nai-form, and \"should not have consulted\" is the opposite of the regret."
+      }
+    ]
+  },
+  {
+    "id": "n3-l56-009",
+    "type": "narabe",
+    "refs": [
+      "lesson56#3"
+    ],
+    "difficulty": 1,
+    "stem": "自分の ことは [_] [_] [★] [_] 思う。",
+    "options": [
+      "べきだ",
+      "と",
+      "自分で",
+      "決める"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "自分の ことは 自分で 決める べきだ と 思う。",
+    "tr": {
+      "zh": "我认为自己的事应该自己决定。",
+      "en": "I think you should decide things about yourself on your own."
+    },
+    "why": {
+      "zh": "自分で＋決める（辞书形）＋べきだ＋と（思う）。★ 在第三格，是「べきだ」。",
+      "en": "自分で ＋ 決める (dictionary form) ＋ べきだ ＋ と (思う). The ★ is the third slot: 「べきだ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l56-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson56#4"
+    ],
+    "difficulty": 2,
+    "stem": "体調が 悪い ときは、無理を（　）。",
+    "options": [
+      "すべきでは ない",
+      "しない べきだ",
+      "すべき ない",
+      "する べきだ"
+    ],
+    "answer": 0,
+    "full": "体調が 悪い ときは、無理を すべきでは ない。",
+    "tr": {
+      "zh": "身体不舒服的时候，不应该勉强。",
+      "en": "When you're unwell, you shouldn't push yourself."
+    },
+    "why": {
+      "zh": "“不应该”要否定「べき」本身：すべきではない。",
+      "en": "\"Shouldn't\" negates 「べき」 itself: すべきではない."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「べき」不能接在「ない」形后面，否定要放在「べき」后面。",
+        "en": "「べき」 can't follow the nai-form; the negative goes after 「べき」."
+      },
+      {
+        "zh": "「べき」的否定是「べきではない」，不能直接接「ない」。",
+        "en": "The negative of 「べき」 is 「べきではない」; 「べきない」 isn't a form."
+      },
+      {
+        "zh": "“身体不舒服时应该勉强”意思不对。",
+        "en": "\"When you're unwell you should push yourself\" is the wrong meaning."
+      }
+    ]
+  },
+  {
+    "id": "n3-l56-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson56#4"
+    ],
+    "difficulty": 2,
+    "stem": "信頼を 失うので、人の 秘密を 勝手に ほかの 人に 話す（　）。",
+    "options": [
+      "べきでは ない",
+      "しかない",
+      "ことが ある",
+      "ものだ"
+    ],
+    "answer": 0,
+    "full": "信頼を 失うので、人の 秘密を 勝手に ほかの 人に 話す べきでは ない。",
+    "tr": {
+      "zh": "会失去信任，所以不应该擅自把别人的秘密告诉其他人。",
+      "en": "You'll lose people's trust, so you shouldn't pass on someone's secrets without asking."
+    },
+    "why": {
+      "zh": "前面说“会失去信任”，后面是批判性的结论“不应该说”，用「〜べきではない」。",
+      "en": "\"You'll lose trust\" leads to the critical judgement \"you shouldn't\" — 「〜べきではない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「しかない」是“只能说出去”，和“会失去信任”矛盾。",
+        "en": "「しかない」 (no choice but to tell) contradicts \"you'll lose trust\"."
+      },
+      {
+        "zh": "「ことがある」是“有时会说出去”，“因为会失去信任所以有时会说”不合逻辑。",
+        "en": "「ことがある」 (sometimes tell) doesn't follow from \"you'll lose trust\"."
+      },
+      {
+        "zh": "「ものだ」表示“理应如此”，“理应把秘密说出去”和前因矛盾。",
+        "en": "「ものだ」 would make telling secrets the natural thing — the opposite of the reason given."
+      }
+    ]
+  },
+  {
+    "id": "n3-l56-012",
+    "type": "narabe",
+    "refs": [
+      "lesson56#4"
+    ],
+    "difficulty": 1,
+    "stem": "子供の 前で そんな 言葉を [_] [_] [★] [_] 。",
+    "options": [
+      "ない",
+      "べき",
+      "使う",
+      "では"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "子供の 前で そんな 言葉を 使う べき では ない。",
+    "tr": {
+      "zh": "不应该在孩子面前用那种词。",
+      "en": "You shouldn't use words like that in front of children."
+    },
+    "why": {
+      "zh": "使う（辞书形）＋べき＋では＋ない。★ 在第三格，是「では」。",
+      "en": "使う (dictionary form) ＋ べき ＋ では ＋ ない. The ★ is the third slot: 「では」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l56-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson56#5"
+    ],
+    "difficulty": 1,
+    "stem": "誰でも 初めは 失敗する（　）。だから、あまり 気に しないで。",
+    "options": [
+      "ものだ",
+      "べきだ",
+      "わけには いかない",
+      "ことに なって いる"
+    ],
+    "answer": 0,
+    "full": "誰でも 初めは 失敗する ものだ。だから、あまり 気に しないで。",
+    "tr": {
+      "zh": "谁一开始都会失败的。所以别太在意。",
+      "en": "Everyone makes mistakes at first. So don't worry about it too much."
+    },
+    "why": {
+      "zh": "“谁一开始都会失败”是一般规律、本来就是这样，用「〜ものだ」。",
+      "en": "\"Everyone fails at first\" is a general truth — 「〜ものだ」 (that's just how it is)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「べきだ」是“应该失败”，失败不是义务。",
+        "en": "「べきだ」 would make failing an obligation."
+      },
+      {
+        "zh": "「わけにはいかない」是“不能失败”，和后面“别在意”矛盾。",
+        "en": "「わけにはいかない」 (mustn't fail) contradicts \"don't worry about it\"."
+      },
+      {
+        "zh": "「ことになっている」是规定，失败不是规定。",
+        "en": "「ことになっている」 makes it a rule; failing isn't a rule."
+      }
+    ]
+  },
+  {
+    "id": "n3-l56-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson56#5"
+    ],
+    "difficulty": 1,
+    "stem": "子供の ころは、よく この 川で 友達と（　）ものだ。",
+    "options": [
+      "遊んだ",
+      "遊ぶ",
+      "遊んで",
+      "遊ぼう"
+    ],
+    "answer": 0,
+    "full": "子供の ころは、よく この 川で 友達と 遊んだ ものだ。",
+    "tr": {
+      "zh": "小时候常和朋友在这条河边玩。",
+      "en": "When I was a kid, I used to play by this river with my friends."
+    },
+    "why": {
+      "zh": "「子供のころは、よく」是回忆过去常做的事，用「た形＋ものだ」。",
+      "en": "「子供のころは、よく」 recalls something I often did — ta-form ＋ 「ものだ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "辞书形＋ものだ是一般道理（孩子本来就会玩），和「子供のころは」的回忆不符。",
+        "en": "Dictionary form ＋ ものだ is a general truth, not a memory of 「子供のころ」."
+      },
+      {
+        "zh": "て形不能接「ものだ」。",
+        "en": "The te-form can't take 「ものだ」."
+      },
+      {
+        "zh": "意向形不能接「ものだ」。",
+        "en": "The volitional can't take 「ものだ」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l56-015",
+    "type": "narabe",
+    "refs": [
+      "lesson56#5"
+    ],
+    "difficulty": 2,
+    "stem": "もう 年末か。[_] [_] [★] [_] ね。",
+    "options": [
+      "ものです",
+      "時間が たつ",
+      "早い",
+      "のは"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "もう 年末か。時間が たつ のは 早い ものです ね。",
+    "tr": {
+      "zh": "已经年底了啊。时间过得真快啊。",
+      "en": "End of the year already? Time really flies, doesn't it."
+    },
+    "why": {
+      "zh": "時間がたつ＋のは＋早い＋ものです，表示感慨“真是……啊”。★ 在第三格，是「早い」。",
+      "en": "時間がたつ ＋ のは ＋ 早い ＋ ものです expresses the feeling \"how quickly…\". The ★ is the third slot: 「早い」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

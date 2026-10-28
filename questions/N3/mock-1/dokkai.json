@@ -1,0 +1,719 @@
+[
+  {
+    "id": "n3-m1-p1",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "次の文章は、雑誌の読者コーナーに載っていたエッセイである。",
+    "passage": "私には、十年近くはいている革の靴がある。就職したときに、父が買ってくれたものだ。先月、その靴の底に穴が[[1]]。新しい靴を買おうかと迷ったが、捨ててしまうのはもったいない気がして、駅前の小さな修理店に持っていった。\n店の主人は靴をじっと見て、「いい靴ですね。底を替えれば、まだ十年ははけますよ」と言った。修理代は、安い靴なら新しく一足買える[[2]]高かったが、私は迷わずお願いした。\n一週間後に受け取りに行くと、底が新しくなっていただけでなく、表の革もきれいに磨かれていた。[[3]]、主人は「靴は手入れをすればするほど、足になじんでいくんです」と言って、手入れの方法まで教えてくれた。\n新しい物を買えば、たしかに便利だ。[[4]]、長く使ってきた物には、その物にしかない思い出がある。今では、休みの日に靴を磨くのが、私の楽しみの一つになって[[5]]。",
+    "tr": {
+      "zh": "我有一双穿了将近十年的皮鞋，是我参加工作时父亲给我买的。上个月，那双鞋的鞋底破了个洞。我犹豫要不要买双新的，但又觉得扔掉太可惜，就拿到车站前一家小修鞋店去了。店主盯着鞋看了一会儿，说：“这是双好鞋啊。换个鞋底，还能再穿十年。”修理费贵到如果是便宜的鞋都能再买一双了，但我毫不犹豫地请他修了。一周后去取鞋时，不仅鞋底换新了，鞋面的皮革也擦得锃亮。而且店主还说“鞋子越保养就越合脚”，连保养的方法都教给了我。买新东西确实方便。但是，长期使用的东西有着只属于它的回忆。现在，休息日擦鞋成了我的乐趣之一。",
+      "en": "I have a pair of leather shoes I've worn for nearly ten years; my father bought them for me when I started my first job. Last month a hole wore through the sole. I wondered whether to buy new ones, but throwing them away felt like a waste, so I took them to a small repair shop by the station. The owner studied them and said, ‘These are good shoes. Put new soles on and you'll get another ten years out of them.’ The repair cost so much that I could have bought a new pair of cheap shoes, but I didn't hesitate. When I went back a week later, not only were the soles new, the leather uppers had been polished beautifully. What's more, the owner told me, ‘The more you look after shoes, the better they fit your feet,’ and even showed me how to care for them. Buying new things is certainly convenient. But things you've used for a long time carry memories that nothing else has. Polishing my shoes on my days off has now become one of my pleasures."
+    },
+    "questions": [
+      {
+        "options": [
+          "開いてしまった",
+          "開けてしまった",
+          "開いておいた",
+          "開けてみた"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「穴が」是主语，要用自动词「開く」；鞋底破洞是不希望发生的事，用「〜てしまった」。",
+          "en": "「穴が」 is the subject, so the intransitive 「開く」; a hole in your sole is unwelcome, hence 「〜てしまった」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「開ける」是他动词，要说「穴を開ける」，和「穴が」接不上，而且没人故意弄破鞋。",
+            "en": "「開ける」 is transitive (「穴を開ける」); it doesn't go with 「穴が」, and nobody holes their shoe on purpose."
+          },
+          {
+            "zh": "「〜ておいた」是有意事先做好，破洞不是有意准备的。",
+            "en": "「〜ておいた」 is deliberate preparation; a hole isn't something you prepare."
+          },
+          {
+            "zh": "「開けてみた」是他动词“试着打开”，和「穴が」接不上，意思也不对。",
+            "en": "「開けてみた」 is transitive \"tried opening\" — wrong with 「穴が」 and wrong in meaning."
+          }
+        ]
+      },
+      {
+        "options": [
+          "ほど",
+          "ばかり",
+          "だけ",
+          "しか"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「AほどB」表示程度：贵到“便宜的鞋都能买一双”的程度。",
+          "en": "「A ほど B」 gives a degree: expensive to the point that you could buy a cheap new pair."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「ばかり」表示“光是……/刚……”，不能表示“贵到……的程度”。",
+            "en": "「ばかり」 means \"only / just\", not \"to the extent that\"."
+          },
+          {
+            "zh": "「買えるだけ」是“尽可能地买”，后面接「高かった」说不通。",
+            "en": "「買えるだけ」 is \"as many as you can buy\"; it can't be followed by 「高かった」."
+          },
+          {
+            "zh": "「しか」必须和否定一起用，后面是「高かった」，接不上。",
+            "en": "「しか」 needs a negative, but 「高かった」 follows."
+          }
+        ]
+      },
+      {
+        "options": [
+          "そのうえ",
+          "ところが",
+          "それなら",
+          "つまり"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "前面已经有两件好事（换了底、擦亮了皮），后面再加一件“还教了保养方法”（有「まで」），用添加的「そのうえ」（而且）。",
+          "en": "Two good things already (new soles, polished leather), and then one more — he even taught care (note 「まで」): the additive 「そのうえ」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「ところが」表示出乎意料的转折，后面也是好事，没有转折。",
+            "en": "「ところが」 marks an unexpected turn, but what follows is more good news."
+          },
+          {
+            "zh": "「それなら」是“那样的话”，接对方的话提出建议，这里不对。",
+            "en": "「それなら」 (\"in that case\") responds to what someone said; it doesn't fit here."
+          },
+          {
+            "zh": "「つまり」是换个说法总结，后面是新的事情。",
+            "en": "「つまり」 restates; what follows is a new event."
+          }
+        ]
+      },
+      {
+        "options": [
+          "しかし",
+          "だから",
+          "すると",
+          "たとえば"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「たしかに〜。しかし〜」是先承认再转折的固定结构：新东西方便，但旧东西有回忆。",
+          "en": "「たしかに〜。しかし〜」 concedes, then turns: new things are convenient, but old things hold memories."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「だから」表示因果，“方便所以有回忆”说不通。",
+            "en": "「だから」 is cause and effect; \"convenient, so memories\" makes no sense."
+          },
+          {
+            "zh": "「すると」表示接着发生的事，这里是在比较两种想法。",
+            "en": "「すると」 is \"and then (something happened)\"; here two views are being weighed."
+          },
+          {
+            "zh": "「たとえば」用于举例，后面不是“方便”的例子。",
+            "en": "「たとえば」 introduces an example, but what follows isn't an example of convenience."
+          }
+        ]
+      },
+      {
+        "options": [
+          "いる",
+          "いく",
+          "おく",
+          "みる"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「今では」描述现在的状态，「〜になっている」表示已经成为……的状态。",
+          "en": "「今では」 describes the present state, so 「〜になっている」, \"has become (and is)\"."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「なっていく」是今后逐渐变成，和「今では」不搭。",
+            "en": "「なっていく」 is \"will gradually become\", which clashes with 「今では」."
+          },
+          {
+            "zh": "「なっておく」是有意事先变成，不自然。",
+            "en": "「なっておく」 would be becoming something on purpose in advance — unnatural."
+          },
+          {
+            "zh": "「なってみる」是试着变成，乐趣不是试着去变的。",
+            "en": "「なってみる」 is \"try becoming\"; a pleasure isn't something you try to become."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-m1-p2",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、あるマンションの掲示板にはってあるお知らせである。",
+    "passage": "住民のみなさまへ\n\n駐輪場の利用について\n来年1月から、駐輪場に自転車を置く方は、自転車に登録シールをはることになりました。シールは、管理室で登録用紙にお名前と部屋番号を書いていただければ、その場でお渡しします。シール代は1台200円です。\nなお、子ども用の自転車にもシールが必要です。1月1日以降、シールがはられていない自転車は、管理室でお預かりします。\n\nさくら台マンション管理組合",
+    "tr": {
+      "zh": "致各位住户：关于自行车停车场的使用。从明年1月起，在停车场停放自行车的住户须在自行车上贴登记贴纸。在管理室的登记表上填写姓名和房间号后，当场发放贴纸。贴纸费每辆200日元。另外，儿童自行车也需要贴纸。1月1日以后，没有贴贴纸的自行车将由管理室暂时保管。樱台公寓管理委员会。",
+      "en": "To all residents: about the bicycle parking area. From January, anyone who parks a bicycle there must put a registration sticker on it. Write your name and flat number on the registration form at the management office and we'll give you a sticker on the spot. Stickers cost ¥200 per bicycle. Children's bicycles need a sticker too. From 1 January, bicycles without a sticker will be taken into the management office's keeping. Sakuradai Mansion Residents' Association."
+    },
+    "questions": [
+      {
+        "q": "駐輪場に子ども用の自転車を置いている人は、どうしなければならないか。",
+        "options": [
+          "12月中に管理室で登録用紙を書いて、シールをもらってはる。",
+          "子ども用の自転車なので、何もしなくてもいい。",
+          "1月になってから、管理室にシールをもらいに行く。",
+          "管理室に自転車を預けて、シールをはってもらう。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「子ども用の自転車にもシールが必要」，而1月1日起没贴的车会被收走，所以要在12月里去管理室填表、领贴纸贴上。",
+          "en": "「子ども用の自転車にもシールが必要」, and from 1 January unstickered bikes are taken away, so register at the office and stick it on during December."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "通知特别说明儿童自行车也需要贴纸。",
+            "en": "The notice specifically says children's bikes need one too."
+          },
+          {
+            "zh": "1月1日起没贴贴纸的车就会被管理室保管，1月再去就晚了。",
+            "en": "From 1 January unstickered bikes are taken in, so going in January is too late."
+          },
+          {
+            "zh": "「お預かりします」是对没贴贴纸的车的处理，不是贴贴纸的方法；贴纸要住户填表领取。",
+            "en": "「お預かりします」 is what happens to bikes without stickers, not how you get one — residents fill in a form and collect it."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-m1-p3",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "先日、電車で年配の男性に席を譲ろうとしたら、「次で降りますから」と断られた。何だか恥ずかしくなって、それからしばらくは、声をかけるのをためらうようになった。\nその話を友人にすると、「断られたのは、あなたの親切が迷惑だったからとは限らないよ。本当に次の駅で降りただけかもしれないし」と言われた。たしかに、断られたことと、声をかけたことが間違いだったことは、別の話だ。次に同じような場面があったら、また声をかけてみようと思う。",
+    "tr": {
+      "zh": "前几天，我在电车上想给一位年长的男士让座，被他以“我下一站就下车”为由拒绝了。我不知怎么觉得很难为情，之后有一阵子都犹豫要不要开口。我把这件事告诉朋友，朋友说：“被拒绝不一定是因为你的好意给人添了麻烦。说不定他真的只是下一站就下车而已。”确实，被拒绝和开口这件事本身做错了，是两回事。下次再遇到同样的情况，我想还是要试着开口。",
+      "en": "The other day on the train I tried to give my seat to an older man, and he turned me down: ‘I'm getting off at the next stop.’ I felt somehow embarrassed, and for a while afterwards I hesitated to offer. When I told a friend, she said, ‘Being turned down doesn't necessarily mean your kindness was unwelcome. Maybe he really was just getting off at the next station.’ True — being refused and having been wrong to offer are two different things. Next time I'm in the same situation, I'll offer again."
+    },
+    "questions": [
+      {
+        "q": "「私」はこれからどうしようと思っているか。",
+        "options": [
+          "断られるかもしれなくても、席を譲ろうと声をかける。",
+          "断られると恥ずかしいので、もう声をかけないようにする。",
+          "席を譲る前に、相手が次の駅で降りるかどうか確かめる。",
+          "年配の人には迷惑なことが多いので、席を譲るのはやめる。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "最后一句：「次に同じような場面があったら、また声をかけてみようと思う」。被拒绝和开口本身没错是两回事。",
+          "en": "The last sentence: 「次に同じような場面があったら、また声をかけてみようと思う」 — being refused doesn't make offering wrong."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "犹豫开口是听朋友的话之前的状态，后来作者改变了想法。",
+            "en": "Hesitating was how the writer felt before talking to the friend; that changed."
+          },
+          {
+            "zh": "文中没有说要先确认对方在哪站下车。",
+            "en": "Nothing says the writer will check where people are getting off first."
+          },
+          {
+            "zh": "朋友说的正好相反：被拒绝「迷惑だったからとは限らない」。",
+            "en": "The friend says the opposite: a refusal 「迷惑だったからとは限らない」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-m1-p4",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、あるクリニックの入り口にはってあるお知らせである。",
+    "passage": "患者のみなさまへ\n\n12月1日から、診察の予約方法が変わります。\nこれまでは電話で予約を受け付けておりましたが、12月からはインターネットでの予約のみとなります。ただし、初めて来院される方は、これまでどおりお電話でご予約ください。\nまた、予約をされていない方も診察を受けることはできますが、予約の方が優先となりますので、長くお待ちいただく場合があります。\n\nみなみ内科クリニック",
+    "tr": {
+      "zh": "致各位患者：从12月1日起，看诊的预约方式将有所变化。以前通过电话受理预约，从12月起只接受网上预约。但是，第一次来本院的患者请和以前一样打电话预约。另外，没有预约的患者也可以看诊，但预约的患者优先，所以有时需要等待较长时间。南内科诊所。",
+      "en": "To our patients: from 1 December, the way to book an appointment is changing. Until now we have taken bookings by phone, but from December we will take online bookings only. However, if you are coming to us for the first time, please book by phone as before. You can still be seen without a booking, but patients with bookings come first, so you may have a long wait. Minami Internal Medicine Clinic."
+    },
+    "questions": [
+      {
+        "q": "このお知らせから分かることは何か。",
+        "options": [
+          "12月からは、初めての人は電話で、それ以外の人はインターネットで予約する。",
+          "12月からは、予約をしていないと診察を受けることができない。",
+          "12月からは、すべての人がインターネットで予約しなければならない。",
+          "12月からは、予約をしていない人のほうが先に診察を受けられる。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "一般改为网上预约（「インターネットでの予約のみ」），但「初めて来院される方は、これまでどおりお電話で」——初诊用电话。",
+          "en": "Bookings move online (「インターネットでの予約のみ」), but 「初めて来院される方は、これまでどおりお電話で」 — first-time patients still phone."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "通知说没预约「診察を受けることはできます」，只是要等。",
+            "en": "The notice says patients without a booking 「診察を受けることはできます」 — they just may wait."
+          },
+          {
+            "zh": "初次来院的人例外，要打电话预约。",
+            "en": "First-time patients are the exception: they book by phone."
+          },
+          {
+            "zh": "通知说「予約の方が優先」，是预约的人先看，不是反过来。",
+            "en": "The notice says 「予約の方が優先」 — booked patients go first, not the other way round."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-m1-p5",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "小林さんの机の上に、このメモが置いてある。",
+    "passage": "小林さん\n\nお疲れさまです。午後、さくら商事の森さんから電話がありました。明日の打ち合わせを、10時からではなく2時からにしてほしいそうです。\n2時に第二会議室が空いていることは確認しておきましたが、予約はまだしていませんので、お願いします。森さんには、小林さんから返事をすると伝えてあります。今日中に連絡がほしいとのことでした。\n\n中村",
+    "tr": {
+      "zh": "小林：辛苦了。下午樱花商事的森先生来过电话，说希望明天的碰头会从10点改到2点。我已经确认过2点第二会议室是空的，但还没有预约，麻烦你了。我已经告诉森先生由你给他回复。他说希望今天之内联系他。中村。",
+      "en": "Kobayashi — Hope you're well. Mr Mori from Sakura Trading phoned this afternoon. He'd like tomorrow's meeting moved from 10 to 2. I've checked that meeting room 2 is free at 2, but I haven't booked it yet, so could you do that? I've told Mr Mori you'll get back to him. He'd like to hear from you today. — Nakamura"
+    },
+    "questions": [
+      {
+        "q": "このメモを読んで、小林さんがしなければならないことは何か。",
+        "options": [
+          "会議室を予約して、今日中に森さんに連絡する。",
+          "会議室が空いているか確認して、森さんに連絡する。",
+          "明日の10時までに、森さんに時間の変更を伝える。",
+          "森さんへの返事を、中村さんに頼む。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "中村说会议室「予約はまだしていませんので、お願いします」，而且由小林回复森先生，要「今日中に」。",
+          "en": "Nakamura writes that the room 「予約はまだしていませんので、お願いします」, and Kobayashi is to reply to Mori 「今日中に」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "会议室是否空着中村已经「確認しておきました」，小林要做的是预约。",
+            "en": "Nakamura has already checked (「確認しておきました」) that the room is free; Kobayashi needs to book it."
+          },
+          {
+            "zh": "要改时间的是森先生本人，而且要今天之内联系，不是明天10点前。",
+            "en": "It's Mori who asked for the change, and he wants a reply today, not by 10 tomorrow."
+          },
+          {
+            "zh": "中村已经告诉森先生「小林さんから返事をする」，不能再交给中村。",
+            "en": "Nakamura has told Mori that 「小林さんから返事をする」 — Kobayashi can't hand it back."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-m1-p6",
+    "type": "mid",
+    "difficulty": 2,
+    "passage": "駅のエスカレーターでは、急ぐ人のために片側を空けて立つのが、長い間当たり前になっていた。東京では左側に立ち、右側を空ける。私も、何も考えずにそうしてきた。\nところが最近、駅で「エスカレーターでは歩かずに、二列で立ち止まってご利用ください」という放送をよく聞く。調べてみると、エスカレーターはもともと人が歩くことを考えて作られていないため、歩くと転んだり、人にぶつかったりする危険があるそうだ。また、けがや病気で片方の手でしか手すりを持てない人にとっては、決まった側に立たなければならないことが、大きな負担になるという。\nそれでも、実際には右側を歩く人はまだ多い。空いている側に立つと、後ろから来た人に嫌な顔をされることもある。長い間続いてきた習慣は、放送だけではなかなか変わらないのだろう。それなら、立ち止まる人を一人ずつ増やしていくしかない。私は最近、勇気を出して右側にも立つようにしている。",
+    "tr": {
+      "zh": "在车站的自动扶梯上，为了赶时间的人空出一侧站立，长期以来已经成了理所当然的事。在东京是站左边、空出右边。我也一直不假思索地这样做。可是最近，在车站经常听到“乘坐自动扶梯时请不要行走，两列站立”的广播。查了一下才知道，自动扶梯本来就不是为人在上面行走而设计的，走的话有摔倒或撞到别人的危险。另外，对于因受伤或生病只能用一只手扶扶手的人来说，必须站在规定的一侧是很大的负担。尽管如此，实际上在右侧行走的人还是很多。站在空着的一侧，有时会被后面来的人摆脸色。长期延续下来的习惯，光靠广播大概很难改变吧。既然如此，只能一个一个地增加站着不动的人。最近我鼓起勇气，也会站在右侧。",
+      "en": "On station escalators, leaving one side free for people in a hurry has long been taken for granted. In Tokyo you stand on the left and leave the right open, and I did the same without thinking. Lately, though, stations often announce: ‘Please don't walk on the escalator — stand still, two abreast.’ When I looked into it, I found that escalators aren't designed for walking in the first place, so walking risks falls and collisions. And for people who can hold the handrail with only one hand because of an injury or illness, having to stand on a fixed side is a real burden. Even so, plenty of people still walk up the right. If you stand on the open side, people coming up behind may give you a dirty look. A long-standing habit probably won't change through announcements alone. In that case, the only way is to add people who stand still, one at a time. Recently I've been plucking up the courage to stand on the right as well."
+    },
+    "questions": [
+      {
+        "q": "エスカレーターを歩くことについて、文章ではどう説明されているか。",
+        "options": [
+          "歩くことを考えて作られていないので、危ない。",
+          "急いでいる人は、右側を歩いたほうがいい。",
+          "左側を歩けば、右側より安全だ。",
+          "手すりを持っていれば、歩いても危なくない。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "第二段：「もともと人が歩くことを考えて作られていないため、歩くと転んだり、人にぶつかったりする危険がある」。",
+          "en": "Paragraph two: 「もともと人が歩くことを考えて作られていないため、歩くと転んだり、人にぶつかったりする危険がある」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "空出右侧给人走是过去的习惯，文章说的是走路本身就危险。",
+            "en": "Leaving the right for walkers is the old habit; the text says walking itself is dangerous."
+          },
+          {
+            "zh": "文章没有比较哪一侧走更安全，而是说不应该走。",
+            "en": "The text doesn't compare sides — it says not to walk at all."
+          },
+          {
+            "zh": "文中提到手扶扶手是关于只能用一只手的人的负担，没有说扶着走就安全。",
+            "en": "The handrail comes up only regarding people who can use one hand; nothing says holding it makes walking safe."
+          }
+        ]
+      },
+      {
+        "q": "片側に立つ習慣が大きな負担になるのは、どんな人か。",
+        "options": [
+          "片方の手でしか手すりを持つことができない人",
+          "急いでいて、エスカレーターを歩きたい人",
+          "空いている側に立って、嫌な顔をされた人",
+          "東京とは反対の側に立つ町から来た人"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「けがや病気で片方の手でしか手すりを持てない人にとっては、決まった側に立たなければならないことが、大きな負担になる」。",
+          "en": "「けがや病気で片方の手でしか手すりを持てない人にとっては、決まった側に立たなければならないことが、大きな負担になる」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "赶时间的人正是这个习惯的受益者，不是负担。",
+            "en": "People in a hurry benefit from the habit; it's no burden to them."
+          },
+          {
+            "zh": "被摆脸色是站在空侧的人遇到的事，文中说的“负担”是指只能单手扶的人。",
+            "en": "Dirty looks happen to people standing on the open side; the 'burden' is about one-handed people."
+          },
+          {
+            "zh": "文中只说了东京站左边，没有提到其他城市的人。",
+            "en": "The text mentions only Tokyo's left side, nothing about people from other cities."
+          }
+        ]
+      },
+      {
+        "q": "この文章を書いた人の考えや行動に合うものはどれか。",
+        "options": [
+          "空いている側にも立って、立ち止まる人を増やそうとしている。",
+          "放送が増えれば、習慣はすぐに変わるだろうと考えている。",
+          "急いでいる人がいたら、右側を空けるようにしている。",
+          "右側を歩いている人に、立ち止まるように注意している。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "最后：习惯光靠广播难以改变，只能「立ち止まる人を一人ずつ増やしていく」，作者「右側にも立つようにしている」。",
+          "en": "At the end: announcements alone won't do it, so 「立ち止まる人を一人ずつ増やしていく」, and the writer now stands 「右側にも」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "作者说的正相反：「放送だけではなかなか変わらない」。",
+            "en": "The writer says the opposite: 「放送だけではなかなか変わらない」."
+          },
+          {
+            "zh": "空出右侧是作者以前的做法，现在也站右边了。",
+            "en": "Leaving the right free is what the writer used to do; now they stand there too."
+          },
+          {
+            "zh": "作者只是自己站在右边，没有说去提醒别人。",
+            "en": "The writer just stands on the right; nothing about telling others off."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-m1-p7",
+    "type": "mid",
+    "difficulty": 2,
+    "passage": "スーパーで牛乳を買うとき、私はいつも棚の奥から取っていた。奥にあるもののほうが、賞味期限が長いからだ。ところが先日、近所の店で、棚に「てまえどりにご協力ください」という紙がはってあるのを見つけた。すぐに飲むなら、手前にある商品を取ってほしいという意味だそうだ。\n店員さんに聞いてみると、期限が近い商品は売れ残りやすく、毎日かなりの量を捨てているという。客が奥から取れば取るほど、手前の商品が残ってしまうのだ。\n考えてみると、私の家では牛乳は一週間もたたないうちになくなる。それなら、わざわざ期限が長いものを選ぶ必要はなかった。当たり前のことだが、それまで気づかなかった。今は、すぐに使うものは手前から取り、しばらく置いておくものだけ期限を見て選ぶようにしている。",
+    "tr": {
+      "zh": "以前在超市买牛奶时，我总是从货架的里面拿。因为放在里面的保质期更长。可是前几天，我在附近的店里发现货架上贴着一张纸，写着“请配合从前面拿取”。据说意思是如果马上就喝，希望顾客拿前面的商品。我问了店员，店员说临近期限的商品容易卖不掉，每天都要扔掉相当多。顾客越是从里面拿，前面的商品就越会剩下来。想一想，我家的牛奶不到一个星期就喝完了。既然如此，根本没必要特意挑保质期长的。这是理所当然的事，可我以前却没意识到。现在，马上要用的东西我从前面拿，只有要放一段时间的东西才看保质期挑选。",
+      "en": "When I bought milk at the supermarket, I always took it from the back of the shelf, because the cartons at the back have a later best-before date. But the other day, at a shop near me, I noticed a sign on the shelf: ‘Please take from the front.’ Apparently it means that if you'll drink it soon, they'd like you to take the items at the front. When I asked a member of staff, she said items close to their date tend not to sell, and they throw away quite a lot every day. The more customers take from the back, the more the front items are left over. Come to think of it, milk in my house is gone in less than a week. So there was no need to go out of my way to choose a later date. It's obvious, but I hadn't noticed until then. Now I take things I'll use soon from the front, and only check the date for things I'll keep for a while."
+    },
+    "questions": [
+      {
+        "q": "「私」がいつも棚の奥から牛乳を取っていたのはなぜか。",
+        "options": [
+          "奥の商品のほうが、賞味期限までの日にちが長いから。",
+          "手前の商品は、古くて体に悪いと思っていたから。",
+          "店の人に、奥から取るように言われていたから。",
+          "手前の商品は、いつも売り切れていたから。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "第一段直接说明：「奥にあるもののほうが、賞味期限が長いからだ」。",
+          "en": "Paragraph one says it directly: 「奥にあるもののほうが、賞味期限が長いからだ」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "作者只是想要期限长的，没有说前面的对身体不好。",
+            "en": "The writer just wanted a later date; she never says the front ones were bad for you."
+          },
+          {
+            "zh": "店里贴的纸恰恰是请顾客从前面拿。",
+            "en": "The shop's sign asks for the opposite — take from the front."
+          },
+          {
+            "zh": "前面的商品其实是卖剩下来的，不是卖完了。",
+            "en": "The front items are actually left over, not sold out."
+          }
+        ]
+      },
+      {
+        "q": "店員さんの話によると、手前の商品が残ってしまうのはなぜか。",
+        "options": [
+          "多くの客が、奥にある商品を選んで買うから。",
+          "手前の商品のほうが、値段が高いから。",
+          "店が毎日、必要以上の商品を仕入れているから。",
+          "手前の商品は、紙のせいで見えにくいから。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「客が奥から取れば取るほど、手前の商品が残ってしまう」——顾客都从里面拿，前面的就剩下了。",
+          "en": "「客が奥から取れば取るほど、手前の商品が残ってしまう」 — customers taking from the back leave the front items behind."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "文中没有提到价格的差别。",
+            "en": "No price difference is mentioned."
+          },
+          {
+            "zh": "文中没有说店里进货太多。",
+            "en": "The text doesn't say the shop over-orders."
+          },
+          {
+            "zh": "那张纸是请顾客从前面拿的，没有说挡住了商品。",
+            "en": "The sign asks people to take from the front; nothing says it hides anything."
+          }
+        ]
+      },
+      {
+        "q": "「私」の考えに合うものはどれか。",
+        "options": [
+          "すぐに使うものなら、期限が近いものを選んでも困らない。",
+          "食品を買うときは、いつも期限が長いものを選ぶべきだ。",
+          "店は、期限が近い商品を安くして売るべきだ。",
+          "一週間以上置いておく食品は、買わないほうがいい。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "牛奶一周内就喝完，「わざわざ期限が長いものを選ぶ必要はなかった」，所以马上用的从前面拿。",
+          "en": "The milk is gone within a week, so 「わざわざ期限が長いものを選ぶ必要はなかった」; things used soon can come from the front."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "这是作者以前的做法，现在只有要放一段时间的才看期限。",
+            "en": "That's what she used to do; now she only checks dates for things she'll keep a while."
+          },
+          {
+            "zh": "文中没有提到打折，作者也没有对店提出要求。",
+            "en": "Discounts aren't mentioned, and the writer makes no demand of shops."
+          },
+          {
+            "zh": "作者说要放一段时间的东西就看期限挑，并没有说不要买。",
+            "en": "She says to check the date on things kept a while — not to avoid buying them."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-m1-p8",
+    "type": "long",
+    "difficulty": 3,
+    "passage": "日本語学校で教えていると、留学生から「日本人はどうしてお礼を言うときに『すみません』と言うのですか」とよく聞かれる。ドアを開けてもらったときも、落とした物を拾ってもらったときも、多くの日本人は「ありがとう」より先に「すみません」と言う。謝るときの言葉でお礼を言うのが、不思議に聞こえるらしい。\n私はいつも、こう説明している。お礼の「すみません」には、「私のために手間をかけさせてしまった」という気持ちが入っている。何かをしてもらったときに、うれしいと思うより先に、相手の時間や力を使わせて申し訳ないと感じるのだ。だから、お礼の言葉として使っても、それほどおかしくはない。\nただ、ある学生の一言で、考えさせられたことがある。その学生は「先生、毎日『すみません』と言っているうちに、自分が何か悪いことをしているような気持ちになってきました」と言ったのだ。たしかに、本当は感謝しているのに謝る言葉ばかり使っていると、気持ちまで小さくなってしまうのかもしれない。\nそれ以来、私は授業で「すみません」の使い方を教えるだけでなく、「ありがとう」ももっと使ってみるように勧めている。相手にかけた手間を気にするより、してもらったことを喜ぶほうが、言う人も言われる人も気持ちがいいはずだ。「すみません」が間違いだというわけではない。ただ、どちらを使うか迷ったときには、「ありがとう」を選んでもいいと思うのだ。",
+    "tr": {
+      "zh": "在日语学校教书，经常有留学生问我：“日本人为什么在道谢时说‘すみません’？”别人帮忙开门时，帮忙捡起掉落的东西时，很多日本人都会先说“すみません”，而不是“ありがとう”。用道歉的话来道谢，在他们听来似乎很奇怪。我总是这样解释：道谢时的“すみません”里包含着“让您为我费心了”的心情。别人为自己做了什么的时候，比起高兴，先感到的是让对方花了时间和力气、过意不去。所以把它当作道谢的话来用，也并不那么奇怪。不过，有一个学生的一句话让我陷入了思考。那个学生说：“老师，我每天说着‘すみません’，渐渐觉得自己好像做了什么坏事。”的确，明明心里在感谢，却总用道歉的话，也许连心情都会变得畏缩。从那以后，我在课上不仅教“すみません”的用法，还鼓励学生多用“ありがとう”。比起在意给对方添的麻烦，为别人为自己做的事而高兴，说的人和听的人心情都应该会更好。并不是说“すみません”是错的。只是我觉得，在犹豫用哪一个的时候，选择“ありがとう”也可以。",
+      "en": "Teaching at a Japanese language school, I'm often asked by students, ‘Why do Japanese people say “sumimasen” when they thank someone?’ When someone holds a door or picks up something they dropped, many Japanese say “sumimasen” before “arigatou”. Thanking someone with a word for apologising apparently sounds strange to them. I always explain it like this: the “sumimasen” of thanks contains the feeling ‘I've put you to trouble for my sake.’ When someone does something for you, before feeling glad you feel sorry for having used up their time and effort. So using it as thanks isn't so odd. But one student's remark made me think. She said, ‘Teacher, from saying “sumimasen” every day, I've started to feel as if I'm doing something wrong.’ It's true: if you keep using words of apology when you actually feel grateful, perhaps even your feelings shrink. Since then, I don't just teach how to use “sumimasen” in class; I also encourage students to use “arigatou” more. Rather than worrying about the trouble you've caused, being glad for what was done for you should feel better for both the speaker and the listener. It isn't that “sumimasen” is wrong. I just think that when you're unsure which to use, it's fine to choose “arigatou”."
+    },
+    "questions": [
+      {
+        "q": "留学生が不思議に思っているのは、どんなことか。",
+        "options": [
+          "謝るときの言葉を、お礼を言うときにも使うこと",
+          "日本人が、「ありがとう」をまったく使わないこと",
+          "ドアを開けてもらっても、日本人が何も言わないこと",
+          "日本人が、謝るときに「ありがとう」と言うこと"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "第一段最后：「謝るときの言葉でお礼を言うのが、不思議に聞こえるらしい」。",
+          "en": "End of paragraph one: 「謝るときの言葉でお礼を言うのが、不思議に聞こえるらしい」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "文中说的是「ありがとう」より「先に」说すみません，不是完全不用ありがとう。",
+            "en": "The text says 「すみません」 comes 「ありがとう」より先に — not that 「ありがとう」 is never used."
+          },
+          {
+            "zh": "日本人开门时会说「すみません」，不是什么都不说。",
+            "en": "When someone holds a door, Japanese people say 「すみません」 — they don't stay silent."
+          },
+          {
+            "zh": "方向反了：是用道歉的话来道谢，不是用道谢的话来道歉。",
+            "en": "Backwards: it's apology words used for thanks, not thanks used for apology."
+          }
+        ]
+      },
+      {
+        "q": "筆者によると、お礼を言うときの「すみません」には、どんな気持ちが入っているか。",
+        "options": [
+          "相手に手間をかけさせて、申し訳ないという気持ち",
+          "何かをしてもらって、とてもうれしいという気持ち",
+          "自分が何か悪いことをしてしまったという気持ち",
+          "相手にもう何もしてほしくないという気持ち"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "第二段：「私のために手間をかけさせてしまった」，「相手の時間や力を使わせて申し訳ない」。",
+          "en": "Paragraph two: 「私のために手間をかけさせてしまった」 — 「相手の時間や力を使わせて申し訳ない」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "文中说「うれしいと思うより先に」感到过意不去，高兴不是すみません的含义。",
+            "en": "The text says the sorry feeling comes 「うれしいと思うより先に」 — gladness isn't what 「すみません」 carries."
+          },
+          {
+            "zh": "“好像做了坏事”是那位学生的感受，不是作者对すみません含义的说明。",
+            "en": "Feeling like you've done wrong is the student's experience, not the writer's account of the word."
+          },
+          {
+            "zh": "文中没有这样的意思。",
+            "en": "Nothing in the text suggests this."
+          }
+        ]
+      },
+      {
+        "q": "学生の一言を聞いて、筆者はどのように考えたか。",
+        "options": [
+          "感謝しているのに謝る言葉ばかり使っていると、気持ちが小さくなるかもしれない。",
+          "留学生は、お礼を言うときに「すみません」を使わないほうがいい。",
+          "お礼を言うときに「すみません」を使うのは、日本語として間違いだ。",
+          "自分は、「すみません」の意味を学生にうまく説明できていなかった。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "第三段：「本当は感謝しているのに謝る言葉ばかり使っていると、気持ちまで小さくなってしまうのかもしれない」。",
+          "en": "Paragraph three: 「本当は感謝しているのに謝る言葉ばかり使っていると、気持ちまで小さくなってしまうのかもしれない」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "作者仍然教すみません的用法，只是建议也多用ありがとう，并没有说不要用。",
+            "en": "The writer still teaches 「すみません」, just adding 「ありがとう」 — not banning it."
+          },
+          {
+            "zh": "作者明确说「『すみません』が間違いだというわけではない」。",
+            "en": "The writer says plainly 「『すみません』が間違いだというわけではない」."
+          },
+          {
+            "zh": "作者没有反省自己解释得不好，想到的是总用道歉的话对心情的影响。",
+            "en": "The writer doesn't fault their explanation; the thought is about what constant apologising does to your feelings."
+          }
+        ]
+      },
+      {
+        "q": "筆者が一番言いたいことは何か。",
+        "options": [
+          "迷ったときには、「すみません」ではなく「ありがとう」を使ってもいい。",
+          "お礼を言うときには、必ず「ありがとう」を使うべきだ。",
+          "「すみません」は、日本人にしか分からない特別な言葉だ。",
+          "相手の手間を考えて、「すみません」と言うほうが丁寧だ。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "结尾：「どちらを使うか迷ったときには、『ありがとう』を選んでもいいと思うのだ」。",
+          "en": "The ending: 「どちらを使うか迷ったときには、『ありがとう』を選んでもいいと思うのだ」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "作者说すみません并不错，只是犹豫时可以选ありがとう，不是“必须”。",
+            "en": "The writer says 「すみません」 isn't wrong — only that 「ありがとう」 is fine when unsure, not a must."
+          },
+          {
+            "zh": "文中没有说只有日本人才懂，作者还在教留学生用法。",
+            "en": "Nothing says only Japanese people understand it; the writer teaches it to students."
+          },
+          {
+            "zh": "作者认为为对方的帮忙高兴、说ありがとう，双方心情更好，而不是说すみません更礼貌。",
+            "en": "The writer thinks being glad and saying 「ありがとう」 feels better for both — not that 「すみません」 is more polite."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-m1-p9",
+    "type": "info",
+    "difficulty": 2,
+    "intro": "キムさんは会社員である。今日は12月4日。12月8日（金）の仕事の後、18時ごろに、大学生の妻と小学生の娘の3人で、この美術館へ行こうと思っている。チケットはまだ買っていない。",
+    "passage": "ひかり市立美術館　冬の特別展「北欧のデザイン展」\n期間：12月1日（金）～2月25日（日）\n開館時間：9:30～17:00（金曜日は20:00まで）　※入館は閉館の30分前まで\n休館日：月曜日（祝日の場合は次の日）、12月28日～1月3日\n| 区分 | 当日券 | 前売り券 |\n| 一般 | 1,400円 | 1,200円 |\n| 大学生・高校生 | 900円 | 700円 |\n| 中学生以下 | 無料 | ― |\n| 65歳以上 | 1,000円 | 800円 |\n・前売り券は、11月30日まで美術館の受付とホームページで販売しました。\n・20名以上の団体は、当日券がお一人200円引きになります。前売り券との組み合わせはできません。\n・金曜日の17:00以降に入館される方は、当日券が半額になります（一般・大学生・高校生のみ）。\n・大学生・高校生・65歳以上の方は、受付で学生証や年齢が分かるものをお見せください。\n・音声ガイドの貸し出し：1台500円（中学生以下は300円）",
+    "tr": {
+      "zh": "光市立美术馆 冬季特展“北欧设计展”。展期：12月1日（周五）至2月25日（周日）。开馆时间：9:30–17:00（周五至20:00），闭馆前30分钟停止入馆。休馆日：周一（逢节假日则为次日）、12月28日至1月3日。门票：普通 当日票1,400日元 / 预售票1,200日元；大学生・高中生 900 / 700日元；初中生及以下 免费；65岁以上 1,000 / 800日元。预售票已于11月30日前在美术馆前台和官网销售。20人以上团体，当日票每人优惠200日元，不能与预售票同时使用。周五17:00以后入馆者，当日票半价（仅限普通、大学生、高中生）。大学生、高中生、65岁以上者请在前台出示学生证或能证明年龄的证件。语音导览租借：每台500日元（初中生及以下300日元）。",
+      "en": "Hikari City Art Museum — winter special exhibition, ‘Nordic Design’. Dates: Fri 1 Dec – Sun 25 Feb. Hours: 9:30–17:00 (Fridays until 20:00); last entry 30 minutes before closing. Closed: Mondays (the next day if Monday is a holiday), 28 Dec – 3 Jan. Tickets: adults ¥1,400 on the day / ¥1,200 in advance; university and high-school students ¥900 / ¥700; junior-high age and under free; 65 and over ¥1,000 / ¥800. Advance tickets were on sale at the front desk and on the website until 30 November. Groups of 20 or more get ¥200 off each on-the-day ticket; this can't be combined with advance tickets. Visitors entering after 17:00 on Fridays pay half price for on-the-day tickets (adults and university / high-school students only). Students and those 65 and over, please show a student card or proof of age at the desk. Audio guide hire: ¥500 per set (¥300 for junior-high age and under)."
+    },
+    "questions": [
+      {
+        "q": "キムさんたち3人が入館するのに、全部でいくらかかるか。",
+        "options": [
+          "1,150円",
+          "2,300円",
+          "950円",
+          "1,600円"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "前售票11月30日已结束，只能买当日票。周五17点后入馆半价（普通、大学生适用）：金先生1,400÷2＝700日元，妻子900÷2＝450日元，小学生女儿免费，合计1,150日元。",
+          "en": "Advance sales ended on 30 November, so it's on-the-day tickets. After 17:00 on a Friday they're half price for adults and students: Kim ¥700, his wife ¥450, his primary-school daughter free — ¥1,150."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "2,300日元是1,400＋900的原价，忘了周五17点后半价。",
+            "en": "¥2,300 is the full 1,400 + 900, forgetting the Friday-evening half price."
+          },
+          {
+            "zh": "950日元是用预售票价格减半（600＋350），但预售已经结束，而且半价只适用于当日票。",
+            "en": "¥950 halves the advance prices (600 + 350), but advance sales are over and the discount is for on-the-day tickets."
+          },
+          {
+            "zh": "1,600日元是只给金先生半价、妻子按原价900日元算，但大学生也能半价。",
+            "en": "¥1,600 halves only Kim's ticket and charges his wife the full ¥900, but students get half price too."
+          }
+        ]
+      },
+      {
+        "q": "山本さん（70歳）は、1月の日曜日に、地域の会の仲間と全部で25人で美術館へ行く。全員65歳以上で、チケットは当日、受付で買う。山本さんは、自分のチケットと音声ガイド1台に、いくら払うか。",
+        "options": [
+          "1,300円",
+          "1,500円",
+          "1,100円",
+          "800円"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "65岁以上当日票1,000日元，25人的团体每人便宜200日元，变成800日元；再加语音导览500日元，共1,300日元。周日没有半价。",
+          "en": "A 65-and-over on-the-day ticket is ¥1,000; as a group of 25 it's ¥200 off, so ¥800; plus the ¥500 audio guide makes ¥1,300. There's no half price on Sunday."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "1,500日元没有减去团体优惠200日元，但他们有25人。",
+            "en": "¥1,500 leaves out the ¥200 group discount, though there are 25 of them."
+          },
+          {
+            "zh": "1,100日元是用预售票价800日元再减团体优惠，但预售已结束，团体优惠也不能和预售票一起用。",
+            "en": "¥1,100 takes the group discount off the ¥800 advance price, but advance sales are over and the two can't be combined."
+          },
+          {
+            "zh": "800日元只是门票，忘了语音导览的500日元。",
+            "en": "¥800 is the ticket alone, forgetting the ¥500 audio guide."
+          }
+        ]
+      }
+    ]
+  }
+]

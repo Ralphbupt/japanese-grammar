@@ -1,0 +1,971 @@
+[
+  {
+    "id": "n4-mg-501",
+    "type": "youhou",
+    "refs": [
+      "lesson29#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<つごう>>",
+    "options": [
+      "あしたは つごうが わるいので、ほかの ひに しませんか。",
+      "この りょうりは つごうが いいので、よく たべます。",
+      "かぜを ひいて、からだの つごうが わるいです。",
+      "かれは つごうが たかいので、モデルに なりました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "つごう（都合）：方便与否、（时间上的）安排。正确句：明天我不方便，改天怎么样？",
+      "en": "つごう: whether something suits you, your schedule. Correct: Tomorrow doesn't suit me — how about another day?"
+    },
+    "why": {
+      "zh": "「つごうが いい／わるい」说的是时间、安排方不方便。",
+      "en": "「つごうが いい／わるい」 is about whether a time or arrangement suits you."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "说菜好吃要用「あじが いい」或「おいしい」。",
+        "en": "For food tasting good, use 「あじが いい」 or 「おいしい」."
+      },
+      {
+        "zh": "身体不舒服是「ぐあいが わるい」或「ちょうしが わるい」。",
+        "en": "Feeling unwell is 「ぐあいが わるい」 or 「ちょうしが わるい」."
+      },
+      {
+        "zh": "个子高是「せが たかい」。",
+        "en": "Being tall is 「せが たかい」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-502",
+    "type": "youhou",
+    "refs": [
+      "lesson23#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<ねぼう>>",
+    "options": [
+      "けさ ねぼうして、かいしゃに おくれました。",
+      "つかれたので、ソファで すこし ねぼうしました。",
+      "あかちゃんが やっと ねぼうしたので、しずかに して ください。",
+      "よる おそくまで ねぼうして、べんきょうしました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "ねぼう（寝坊）：睡过头。正确句：今天早上睡过头，上班迟到了。",
+      "en": "ねぼう: oversleeping. Correct: I overslept this morning and was late for work."
+    },
+    "why": {
+      "zh": "「ねぼう」是该起床的时候没起来、睡过头。",
+      "en": "「ねぼう」 means sleeping past the time you should get up."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "在沙发上小睡是「ひるね」或「すこし ねました」。",
+        "en": "A short nap on the sofa is 「ひるね」 or 「すこし ねました」."
+      },
+      {
+        "zh": "婴儿终于睡着是「ねむった」「ねた」。",
+        "en": "A baby finally falling asleep is 「ねむった」 or 「ねた」."
+      },
+      {
+        "zh": "熬夜学习是「おきて いて」，和睡过头正好相反。",
+        "en": "Staying up late studying is 「おきて いて」 — the opposite of oversleeping."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-503",
+    "type": "youhou",
+    "refs": [
+      "lesson33#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<るす>>",
+    "options": [
+      "ともだちの いえに いきましたが、るすでした。",
+      "この せきは るすですか。",
+      "れいぞうこが るすなので、かいものに いきます。",
+      "コップの みずが ぜんぶ るすに なりました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "るす（留守）：家里没人、外出不在家。正确句：我去了朋友家，可是他不在家。",
+      "en": "るす: nobody being at home. Correct: I went to my friend's house, but nobody was home."
+    },
+    "why": {
+      "zh": "「るす」说的是人外出、家里没有人。",
+      "en": "「るす」 means the people of a house are out."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "问座位有没有人用「あいて いますか」。",
+        "en": "To ask if a seat is free, say 「あいて いますか」."
+      },
+      {
+        "zh": "冰箱里什么都没有是「からっぽ」或「なにも ない」。",
+        "en": "An empty fridge is 「からっぽ」 or 「なにも ない」."
+      },
+      {
+        "zh": "杯子里的水没了是「なくなりました」。",
+        "en": "Water being all gone is 「なくなりました」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-504",
+    "type": "youhou",
+    "refs": [
+      "lesson31#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<しんぱい>>",
+    "options": [
+      "むすこが まだ かえらないので、しんぱいです。",
+      "しけんに ごうかくして、とても しんぱいです。",
+      "この みちは しんぱいなので、こどもも あんしんして あるけます。",
+      "ともだちに しんぱいを かして もらいました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "しんぱい（心配）：担心。正确句：儿子还没回来，我很担心。",
+      "en": "しんぱい: worry. Correct: My son isn't home yet, so I'm worried."
+    },
+    "why": {
+      "zh": "「しんぱい」是对不好的事情感到不安。",
+      "en": "「しんぱい」 is feeling uneasy about something that might go wrong."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "考试合格是高兴的事，应该说「うれしい」。",
+        "en": "Passing an exam calls for 「うれしい」 (happy)."
+      },
+      {
+        "zh": "孩子也能放心走的路是「あんぜん」（安全）。",
+        "en": "A road children can walk safely is 「あんぜん」."
+      },
+      {
+        "zh": "向朋友借的是钱或东西，「しんぱい」不能借。",
+        "en": "You borrow money or things from a friend, not 「しんぱい」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-505",
+    "type": "youhou",
+    "refs": [
+      "lesson31#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<なれる>>",
+    "options": [
+      "にほんの せいかつに やっと なれました。",
+      "ながい あいだ あるいたので、あしが なれました。",
+      "でんしゃが なれたので、タクシーで いきました。",
+      "この くすりを のんだら、ねつが なれました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "なれる（慣れる）：习惯。正确句：我终于习惯日本的生活了。",
+      "en": "なれる: to get used to. Correct: I've finally got used to life in Japan."
+    },
+    "why": {
+      "zh": "「〜に なれる」是对环境、事情变得习惯。",
+      "en": "「〜に なれる」 means becoming used to a place or situation."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "走久了脚累是「つかれました」。",
+        "en": "Tired feet after a long walk are 「つかれました」."
+      },
+      {
+        "zh": "电车晚点是「おくれた」。",
+        "en": "A late train is 「おくれた」."
+      },
+      {
+        "zh": "退烧是「ねつが さがりました」。",
+        "en": "A fever going down is 「ねつが さがりました」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-506",
+    "type": "youhou",
+    "refs": [
+      "lesson33#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<まにあう>>",
+    "options": [
+      "はしったので、9じの でんしゃに まにあいました。",
+      "この ふくは わたしに よく まにあいます。",
+      "えきで ぐうぜん ともだちに まにあいました。",
+      "その ニュースを きいて、とても まにあいました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "まにあう（間に合う）：赶上、来得及。正确句：因为跑了，所以赶上了九点的电车。",
+      "en": "まにあう: to make it in time. Correct: I ran, so I caught the 9 o'clock train."
+    },
+    "why": {
+      "zh": "「〜に まにあう」是在规定时间之前赶到、来得及。",
+      "en": "「〜に まにあう」 means getting there before the deadline or departure."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "衣服合身、好看是「にあいます」。",
+        "en": "Clothes suiting you is 「にあいます」."
+      },
+      {
+        "zh": "偶然遇到朋友是「あいました」。",
+        "en": "Bumping into a friend is 「あいました」."
+      },
+      {
+        "zh": "听到消息吃惊是「おどろきました」。",
+        "en": "Being surprised by news is 「おどろきました」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-507",
+    "type": "youhou",
+    "refs": [
+      "lesson25#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<ことわる>>",
+    "options": [
+      "パーティーに さそわれましたが、いそがしいので ことわりました。",
+      "わすれものを したので、いえに ことわりました。",
+      "この ペンは ことわって いるので、かけません。",
+      "みちが わからないので、けいかんに ことわりました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "ことわる（断る）：拒绝。正确句：被邀请参加派对，但因为忙就拒绝了。",
+      "en": "ことわる: to turn down. Correct: I was invited to a party, but I was busy, so I said no."
+    },
+    "why": {
+      "zh": "「ことわる」是拒绝别人的邀请或请求。",
+      "en": "「ことわる」 means declining an invitation or request."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "忘了东西回家是「もどりました」「かえりました」。",
+        "en": "Going back home for something forgotten is 「もどりました」 or 「かえりました」."
+      },
+      {
+        "zh": "笔坏了写不出来是「こわれて いる」。",
+        "en": "A pen that doesn't write is 「こわれて いる」 (broken)."
+      },
+      {
+        "zh": "向警察问路是「ききました」。",
+        "en": "Asking a police officer the way is 「ききました」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-508",
+    "type": "youhou",
+    "refs": [
+      "lesson22#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<ひきうける>>",
+    "options": [
+      "ぶちょうに たのまれた しごとを ひきうけました。",
+      "ぎんこうで おかねを ひきうけました。",
+      "ドアを ひきうけて、へやに はいりました。",
+      "かぜを ひきうけて、がっこうを やすみました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "ひきうける（引き受ける）：接受、承担（工作、请求）。正确句：我接下了部长交给我的工作。",
+      "en": "ひきうける: to take on (a job, a request). Correct: I took on the job the manager asked me to do."
+    },
+    "why": {
+      "zh": "「ひきうける」是答应承担别人托付的工作或责任。",
+      "en": "「ひきうける」 means agreeing to take on a task or responsibility someone gives you."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "在银行取钱是「ひきだしました」。",
+        "en": "Taking money out at the bank is 「ひきだしました」."
+      },
+      {
+        "zh": "开门是「あけて」；拉门是「ひいて」。",
+        "en": "Opening a door is 「あけて」 (or 「ひいて」 for pulling it)."
+      },
+      {
+        "zh": "感冒是「かぜを ひいて」。",
+        "en": "Catching a cold is 「かぜを ひいて」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-509",
+    "type": "youhou",
+    "refs": [
+      "lesson24#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<かざる>>",
+    "options": [
+      "テーブルに はなを かざりました。",
+      "あついので、まどを かざりました。",
+      "まいあさ はを かざって から、でかけます。",
+      "ははの ために カレーを かざりました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "かざる（飾る）：装饰、摆放（让它好看）。正确句：我在桌上摆了花。",
+      "en": "かざる: to decorate, display. Correct: I put flowers on the table."
+    },
+    "why": {
+      "zh": "「かざる」是为了好看而摆放、装饰。",
+      "en": "「かざる」 means putting something up or out to make a place look nice."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "热的时候开窗是「あけました」。",
+        "en": "Opening the window because it's hot is 「あけました」."
+      },
+      {
+        "zh": "刷牙是「はを みがいて」。",
+        "en": "Brushing your teeth is 「はを みがいて」."
+      },
+      {
+        "zh": "做咖喱是「つくりました」。",
+        "en": "Making curry is 「つくりました」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-510",
+    "type": "youhou",
+    "refs": [
+      "lesson24#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<ならべる>>",
+    "options": [
+      "つくえの うえに ほんを きれいに ならべました。",
+      "あたらしい ことばを まいにち ならべて います。",
+      "ともだちに てがみを ならべました。",
+      "ねつが あるので、くすりを ならべました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "ならべる（並べる）：排列、摆成一排。正确句：我把书整齐地摆在桌上。",
+      "en": "ならべる: to line up, arrange. Correct: I arranged the books neatly on the desk."
+    },
+    "why": {
+      "zh": "「ならべる」是把东西一个个排好。",
+      "en": "「ならべる」 means setting things out in a row."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "学新词是「ならって」「おぼえて」，「ならう」和「ならべる」不同。",
+        "en": "Learning new words is 「ならって」 or 「おぼえて」; ならう isn't ならべる."
+      },
+      {
+        "zh": "给朋友寄信是「おくりました」「かきました」。",
+        "en": "Sending a friend a letter is 「おくりました」 (or 「かきました」)."
+      },
+      {
+        "zh": "发烧吃药是「のみました」。",
+        "en": "Taking medicine for a fever is 「のみました」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-511",
+    "type": "youhou",
+    "refs": [
+      "lesson24#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<ひやす>>",
+    "options": [
+      "ビールを れいぞうこで ひやして おきました。",
+      "へやが くらいので、でんきを ひやしました。",
+      "きのうから ねつが ひやして います。",
+      "わすれないように、てちょうに よていを ひやしました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "ひやす（冷やす）：冰镇、使变凉。正确句：我把啤酒放进冰箱冰着。",
+      "en": "ひやす: to chill. Correct: I put the beer in the fridge to chill."
+    },
+    "why": {
+      "zh": "「ひやす」是让东西变凉，是他动词「〜を ひやす」。",
+      "en": "「ひやす」 means making something cold; it takes を."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "房间暗开灯是「つけました」。",
+        "en": "Turning on a light in a dark room is 「つけました」."
+      },
+      {
+        "zh": "退烧是「ねつが さがって」；「ひやす」也不能用「が」做主语。",
+        "en": "A fever going down is 「ねつが さがって」; ひやす doesn't take が like this."
+      },
+      {
+        "zh": "在手账上记日程是「かきました」。",
+        "en": "Writing plans in a planner is 「かきました」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-512",
+    "type": "youhou",
+    "refs": [
+      "lesson25#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<こわれる>>",
+    "options": [
+      "とけいが こわれて、うごかなく なりました。",
+      "やさいが こわれて、へんな においが します。",
+      "あめが こわれて、はれました。",
+      "かみが ながく なったので、こわれました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "こわれる（壊れる）：（东西）坏掉。正确句：钟坏了，不走了。",
+      "en": "こわれる: to break (of a thing). Correct: The clock broke and stopped working."
+    },
+    "why": {
+      "zh": "「こわれる」用于机器、物品坏掉、不能用。",
+      "en": "「こわれる」 is for machines and objects that break and stop working."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "蔬菜变质发臭是「くさって」。",
+        "en": "Vegetables going off is 「くさって」."
+      },
+      {
+        "zh": "雨停了是「やんで」。",
+        "en": "Rain stopping is 「やんで」."
+      },
+      {
+        "zh": "头发长了去剪是「きりました」。",
+        "en": "Getting long hair cut is 「きりました」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-513",
+    "type": "youhou",
+    "refs": [
+      "lesson31#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<われる>>",
+    "options": [
+      "コップを おとして、われて しまいました。",
+      "くつしたが われたので、あたらしいのを かいました。",
+      "かみを はさみで われました。",
+      "しゅくだいが われたので、あそびに いきます。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "われる（割れる）：（玻璃、陶瓷等）碎、裂开。正确句：杯子掉在地上摔碎了。",
+      "en": "われる: to crack, shatter. Correct: I dropped the glass and it broke."
+    },
+    "why": {
+      "zh": "「われる」用于玻璃、盘子等硬的东西碎裂。",
+      "en": "「われる」 is for hard things like glass or plates breaking into pieces."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "袜子破了是「あなが あいた」「やぶれた」；软的东西不用「われる」。",
+        "en": "Socks wearing through is 「あなが あいた」 or 「やぶれた」; soft things don't われる."
+      },
+      {
+        "zh": "用剪刀剪纸是「きりました」；「われる」也是自动词，不带「を」。",
+        "en": "Cutting paper with scissors is 「きりました」; われる doesn't take を."
+      },
+      {
+        "zh": "作业做完了是「おわった」。",
+        "en": "Finishing homework is 「おわった」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-514",
+    "type": "youhou",
+    "refs": [
+      "lesson31#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<すべる>>",
+    "options": [
+      "ゆきの ひは みちが すべりやすいので、きを つけて ください。",
+      "やまに すべって、ちょうじょうに つきました。",
+      "たくさん はしったので、あせが すべりました。",
+      "くすりを のんだので、ねつが すべりました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "すべる（滑る）：滑。正确句：下雪天路很滑，请小心。",
+      "en": "すべる: to slip, slide. Correct: Roads are slippery on snowy days, so be careful."
+    },
+    "why": {
+      "zh": "「すべる」是在光滑的表面上滑动、打滑。",
+      "en": "「すべる」 is sliding or slipping on a smooth surface."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "爬山到山顶是「のぼって」。",
+        "en": "Climbing to the top of a mountain is 「のぼって」."
+      },
+      {
+        "zh": "出汗是「あせが でました」。",
+        "en": "Sweating is 「あせが でました」."
+      },
+      {
+        "zh": "退烧是「ねつが さがりました」。",
+        "en": "A fever going down is 「ねつが さがりました」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-515",
+    "type": "youhou",
+    "refs": [
+      "lesson31#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<あきらめる>>",
+    "options": [
+      "けがを したので、マラソンに でるのを あきらめました。",
+      "しごとが はやく あきらめたので、えいがを みに いきました。",
+      "この みせの パンは あきらめて おいしいです。",
+      "よく あきらめて、しゅくだいの こたえが わかりました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "あきらめる（諦める）：放弃、死心。正确句：因为受伤，我放弃了参加马拉松。",
+      "en": "あきらめる: to give up. Correct: I got injured, so I gave up on running the marathon."
+    },
+    "why": {
+      "zh": "「あきらめる」是放弃原来想做的事。",
+      "en": "「あきらめる」 means giving up something you wanted to do."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "工作早早结束是「おわった」。",
+        "en": "Work finishing early is 「おわった」."
+      },
+      {
+        "zh": "面包特别好吃用「とても」等，「あきらめて」不是程度副词。",
+        "en": "For very tasty bread use 「とても」; あきらめて isn't a degree word."
+      },
+      {
+        "zh": "好好想了想才明白是「かんがえて」，正好相反。",
+        "en": "Thinking hard to find the answer is 「かんがえて」 — the opposite of giving up."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-516",
+    "type": "youhou",
+    "refs": [
+      "lesson18#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<さそう>>",
+    "options": [
+      "ともだちを えいがに さそいました。",
+      "みちに まよったので、ひとに みちを さそいました。",
+      "あめが ふりそうなので、かさを さそって いきます。",
+      "せんせいが こどもたちの なまえを さそいました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "さそう（誘う）：邀请、约。正确句：我约朋友去看电影。",
+      "en": "さそう: to invite. Correct: I invited a friend to a movie."
+    },
+    "why": {
+      "zh": "「人を 〜に さそう」是约别人一起去做某事。",
+      "en": "「人を 〜に さそう」 means asking someone to come along to something."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "问路是「みちを ききました」。",
+        "en": "Asking the way is 「みちを ききました」."
+      },
+      {
+        "zh": "带伞是「かさを もって いきます」。",
+        "en": "Taking an umbrella is 「かさを もって いきます」."
+      },
+      {
+        "zh": "点名是「なまえを よびました」。",
+        "en": "Calling names is 「なまえを よびました」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-517",
+    "type": "youhou",
+    "refs": [
+      "lesson18#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<ほめる>>",
+    "options": [
+      "テストで 100てんを とって、せんせいに ほめられました。",
+      "わるい ことを して、ちちに ほめられました。",
+      "はが いたいので、はいしゃで ほめて もらいました。",
+      "へやが さむいので、ストーブで ほめました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "ほめる（褒める）：表扬、夸奖。正确句：考试得了100分，被老师表扬了。",
+      "en": "ほめる: to praise. Correct: I got 100 on the test and the teacher praised me."
+    },
+    "why": {
+      "zh": "「ほめる」是说别人做得好；被动「ほめられる」。",
+      "en": "「ほめる」 is telling someone they did well; passive ほめられる."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "做了坏事被爸爸骂是「しかられました」，正好相反。",
+        "en": "Being told off for doing something bad is 「しかられました」 — the opposite."
+      },
+      {
+        "zh": "看牙医是「みて もらいました」「なおして もらいました」。",
+        "en": "At the dentist it's 「みて もらいました」 or 「なおして もらいました」."
+      },
+      {
+        "zh": "用暖炉让房间变暖是「あたためました」。",
+        "en": "Warming a room with a heater is 「あたためました」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-518",
+    "type": "youhou",
+    "refs": [
+      "lesson18#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<しかる>>",
+    "options": [
+      "しゅくだいを わすれて、せんせいに しかられました。",
+      "いもうとが たんじょうびに ケーキを しかって くれました。",
+      "いい さくぶんを かいたので、ははが しかって くれました。",
+      "あめで ふくが しかって しまいました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "しかる（叱る）：训斥、批评。正确句：我忘了写作业，被老师批评了。",
+      "en": "しかる: to scold. Correct: I forgot my homework and the teacher told me off."
+    },
+    "why": {
+      "zh": "「しかる」是上级、长辈批评做错事的人。",
+      "en": "「しかる」 is a parent or teacher scolding someone who did wrong."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "妹妹给我买蛋糕是「かって くれました」「つくって くれました」。",
+        "en": "A sister getting a cake is 「かって くれました」 or 「つくって くれました」."
+      },
+      {
+        "zh": "写了好作文应该是被夸奖「ほめて くれました」。",
+        "en": "A good essay gets praise: 「ほめて くれました」."
+      },
+      {
+        "zh": "衣服被雨淋湿是「ぬれて しまいました」。",
+        "en": "Clothes getting wet in the rain is 「ぬれて しまいました」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-519",
+    "type": "youhou",
+    "refs": [
+      "lesson23#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<ちょうし>>",
+    "options": [
+      "きのうから おなかの ちょうしが わるいです。",
+      "この みせの ちょうしは なんじからですか。",
+      "この ほんの ちょうしは 1500えんです。",
+      "ちょうしが わからない ことばは、じしょで しらべます。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "ちょうし（調子）：（身体、机器的）状态。正确句：从昨天起肚子就不舒服。",
+      "en": "ちょうし: condition (of your body, a machine). Correct: My stomach hasn't been right since yesterday."
+    },
+    "why": {
+      "zh": "「ちょうしが いい／わるい」说的是身体或机器的状态。",
+      "en": "「ちょうしが いい／わるい」 is about how your body or a machine is doing."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "问几点开门是「なんじから あいて いますか」「えいぎょうは なんじから」。",
+        "en": "Opening hours are 「なんじから あいて いますか」 or 「えいぎょう」."
+      },
+      {
+        "zh": "书的价钱是「ねだん」。",
+        "en": "The price of a book is 「ねだん」."
+      },
+      {
+        "zh": "不懂意思的词是「いみが わからない」。",
+        "en": "A word whose meaning you don't know is 「いみが わからない」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-520",
+    "type": "youhou",
+    "refs": [
+      "lesson25#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<へんじ>>",
+    "options": [
+      "メールを おくりましたが、まだ へんじが きません。",
+      "としょかんで かりた ほんを へんじしました。",
+      "かいものを して、おつりの へんじを もらいました。",
+      "かぜが へんじして、げんきに なりました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "へんじ（返事）：回复、答复。正确句：我发了邮件，但还没有回复。",
+      "en": "へんじ: a reply. Correct: I sent an email, but I haven't had a reply yet."
+    },
+    "why": {
+      "zh": "「へんじ」是对信、邮件、问话的回答。",
+      "en": "「へんじ」 is an answer to a letter, an email or a call."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "还书是「かえしました」。",
+        "en": "Returning a library book is 「かえしました」."
+      },
+      {
+        "zh": "找零是「おつりを もらいました」。",
+        "en": "Getting change is 「おつりを もらいました」."
+      },
+      {
+        "zh": "感冒好了是「なおって」。",
+        "en": "Getting over a cold is 「なおって」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-521",
+    "type": "youhou",
+    "refs": [
+      "lesson25#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<せつやく>>",
+    "options": [
+      "おかねを ためるために、でんきだいを せつやくして います。",
+      "ともだちの たんじょうびを せつやくしました。",
+      "あの みせは とても せつやくで、ひとが おおいです。",
+      "ふるい いえを せつやくして、きれいに しました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "せつやく（節約）：节约、节省。正确句：为了存钱，我在节省电费。",
+      "en": "せつやく: saving, cutting back. Correct: I'm cutting my electricity bill to save money."
+    },
+    "why": {
+      "zh": "「〜を せつやくする」是少用钱、电、水、时间等。",
+      "en": "「〜を せつやくする」 means using less money, power, water or time."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "给朋友过生日是「いわいました」。",
+        "en": "Celebrating a friend's birthday is 「いわいました」."
+      },
+      {
+        "zh": "店里东西便宜是「やすくて」；「せつやく」不能当形容词。",
+        "en": "A cheap shop is 「やすくて」; せつやく isn't an adjective."
+      },
+      {
+        "zh": "修旧房子是「なおして」。",
+        "en": "Fixing up an old house is 「なおして」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-522",
+    "type": "youhou",
+    "refs": [
+      "lesson32#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<ふんいき>>",
+    "options": [
+      "この カフェは ふんいきが よくて、おちつきます。",
+      "ふんいきが わるいので、かさを もって いきましょう。",
+      "この くすりは ふんいきが にがいです。",
+      "かれは ふんいきが 180センチも あります。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "ふんいき（雰囲気）：气氛、氛围。正确句：这家咖啡馆氛围很好，让人放松。",
+      "en": "ふんいき: atmosphere. Correct: This café has a nice atmosphere — it's relaxing."
+    },
+    "why": {
+      "zh": "「ふんいき」是一个地方或人给人的整体感觉。",
+      "en": "「ふんいき」 is the overall feel of a place or a person."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "要带伞是因为「てんきが わるい」。",
+        "en": "You take an umbrella because 「てんきが わるい」 (the weather is bad)."
+      },
+      {
+        "zh": "药很苦是「あじが にがい」。",
+        "en": "Medicine tasting bitter is 「あじが にがい」."
+      },
+      {
+        "zh": "身高180厘米是「せ」或「しんちょう」。",
+        "en": "Being 180 cm tall is 「せ」 or 「しんちょう」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-523",
+    "type": "youhou",
+    "refs": [
+      "lesson32#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<かたづける>>",
+    "options": [
+      "しょくじの あとで、テーブルの うえを かたづけました。",
+      "あたまが いたいので、くすりを かたづけました。",
+      "ともだちに でんわを かたづけました。",
+      "あさ 7じに めを かたづけました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "かたづける（片付ける）：收拾、整理。正确句：吃完饭后，我收拾了桌子。",
+      "en": "かたづける: to tidy up, clear away. Correct: After the meal I cleared the table."
+    },
+    "why": {
+      "zh": "「かたづける」是把乱放的东西收拾好。",
+      "en": "「かたづける」 means putting things away and tidying up."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "头疼吃药是「のみました」。",
+        "en": "Taking medicine for a headache is 「のみました」."
+      },
+      {
+        "zh": "给朋友打电话是「かけました」。",
+        "en": "Phoning a friend is 「でんわを かけました」."
+      },
+      {
+        "zh": "醒来是「めを さましました」「めが さめました」。",
+        "en": "Waking up is 「めを さましました」 or 「めが さめました」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-524",
+    "type": "youhou",
+    "difficulty": 1,
+    "stem": "<<けしき>>",
+    "options": [
+      "やまの うえから みた けしきは とても きれいでした。",
+      "かのじょは けしきが やさしくて、みんなに すかれて います。",
+      "きょうは けしきが いいので、せんたくを しましょう。",
+      "この えいがの けしきは とても おもしろいです。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "けしき（景色）：景色、风景。正确句：从山顶看到的风景非常美。",
+      "en": "けしき: scenery, a view. Correct: The view from the top of the mountain was beautiful."
+    },
+    "why": {
+      "zh": "「けしき」是眼睛看到的自然风景。",
+      "en": "「けしき」 is the scenery or view you see."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "性格温柔是「せいかくが やさしくて」。",
+        "en": "Having a gentle nature is 「せいかくが やさしくて」."
+      },
+      {
+        "zh": "适合洗衣服的是「てんきが いい」。",
+        "en": "Good weather for laundry is 「てんきが いい」."
+      },
+      {
+        "zh": "电影的内容有意思是「ストーリー」「はなし」。",
+        "en": "An interesting film plot is 「ストーリー」 or 「はなし」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-525",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<ねっしん>>",
+    "options": [
+      "いもうとは まいにち ねっしんに ピアノを れんしゅうして います。",
+      "かぜで ねっしんが あるので、がっこうを やすみます。",
+      "この スープは ねっしんなので、きを つけて のんで ください。",
+      "あしたは ねっしんなので、がっこうは やすみです。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "ねっしん（熱心）：热心、认真投入。正确句：妹妹每天都认真地练习钢琴。",
+      "en": "ねっしん: keen, dedicated. Correct: My younger sister practises the piano hard every day."
+    },
+    "why": {
+      "zh": "「ねっしん」是对某件事很投入、很用功。",
+      "en": "「ねっしん」 means being keen and putting real effort into something."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "发烧是「ねつが ある」，不是「ねっしん」。",
+        "en": "Having a fever is 「ねつが ある」, not ねっしん."
+      },
+      {
+        "zh": "汤很烫是「あつい」。",
+        "en": "Hot soup is 「あつい」."
+      },
+      {
+        "zh": "明天放假是「やすみの ひ」或「しゅくじつ」。",
+        "en": "A day off is 「やすみの ひ」 or 「しゅくじつ」."
+      }
+    ]
+  }
+]

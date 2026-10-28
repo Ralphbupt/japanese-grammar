@@ -1,0 +1,902 @@
+[
+  {
+    "id": "n2-mg-401",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<彼はいつも話をおおげさにする。>>",
+    "options": [
+      "彼はいつも話を実際より大きく言う。",
+      "彼はいつも話を実際より小さく言う。",
+      "彼はいつも話を短くまとめる。",
+      "彼はいつも話をわかりやすく説明する。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他总是把话说得很夸张。",
+      "en": "He always exaggerates when he tells a story."
+    },
+    "why": {
+      "zh": "「おおげさ」＝夸张，把事情说得比实际更严重、更大。",
+      "en": "「おおげさ」 is exaggerating — making things sound bigger than they are."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“说得比实际小”正好相反。",
+        "en": "Making it sound smaller is the opposite."
+      },
+      {
+        "zh": "“简短概括”和夸张无关。",
+        "en": "Summing up briefly has nothing to do with exaggerating."
+      },
+      {
+        "zh": "“说得易懂”不是夸张。",
+        "en": "Explaining clearly isn't exaggerating."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-402",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<雨のため、試合の開始を見合わせた。>>",
+    "options": [
+      "雨のため、試合を始めるのをやめた。",
+      "雨のため、試合を早めに始めた。",
+      "雨のため、試合の開始時間を確かめた。",
+      "雨のため、試合を予定どおりに始めた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "因为下雨，比赛暂缓开始。",
+      "en": "Because of the rain, the start of the match was put on hold."
+    },
+    "why": {
+      "zh": "「見合わせる」＝（看情况）暂停、不做，即「やめる」。",
+      "en": "「見合わせる」 is to hold off on doing something (for now): 「やめる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“提前开始”与暂缓相反。",
+        "en": "Starting early is the opposite of holding off."
+      },
+      {
+        "zh": "“确认开始时间”不是暂缓。",
+        "en": "Checking the start time isn't holding off."
+      },
+      {
+        "zh": "“按计划开始”与暂缓相反。",
+        "en": "Starting as planned is the opposite."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-403",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<部長の話はくどい。>>",
+    "options": [
+      "部長の話は同じことを何度も言うので長い。",
+      "部長の話は声が小さくて聞こえない。",
+      "部長の話はおもしろくて人気がある。",
+      "部長の話はいつも短くてわかりやすい。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "部长说话很啰嗦。",
+      "en": "The manager's talks go on and on."
+    },
+    "why": {
+      "zh": "「くどい」＝同样的话翻来覆去地说，啰嗦。",
+      "en": "「くどい」 is repeating the same thing over and over — long-winded."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“声音小”不是啰嗦。",
+        "en": "Speaking quietly isn't being long-winded."
+      },
+      {
+        "zh": "“有趣受欢迎”和「くどい」的负面意思不符。",
+        "en": "Interesting and popular doesn't match the negative 「くどい」."
+      },
+      {
+        "zh": "“简短易懂”正好相反。",
+        "en": "Short and clear is the opposite."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-404",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<準備はあらかじめしておいたほうがいい。>>",
+    "options": [
+      "準備は前もってしておいたほうがいい。",
+      "準備はあとでしておいたほうがいい。",
+      "準備はていねいにしておいたほうがいい。",
+      "準備はみんなでしておいたほうがいい。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "最好事先做好准备。",
+      "en": "It's best to get things ready in advance."
+    },
+    "why": {
+      "zh": "「あらかじめ」＝事先，即「前もって」。",
+      "en": "「あらかじめ」 is \"beforehand\": 「前もって」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「あとで」是“之后”，与“事先”相反。",
+        "en": "「あとで」 is \"later\" — the opposite."
+      },
+      {
+        "zh": "「ていねいに」是“仔细地”，没有“事先”的意思。",
+        "en": "「ていねいに」 is \"carefully\", not \"beforehand\"."
+      },
+      {
+        "zh": "「みんなで」是“大家一起”，与时间无关。",
+        "en": "「みんなで」 is \"all together\" — not about timing."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-405",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<彼女はしきりに時計を見ていた。>>",
+    "options": [
+      "彼女は何度も時計を見ていた。",
+      "彼女は一度だけ時計を見ていた。",
+      "彼女はじっと時計を見ていた。",
+      "彼女はこっそり時計を見ていた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "她频频看表。",
+      "en": "She kept looking at her watch."
+    },
+    "why": {
+      "zh": "「しきりに」＝频繁地、一次又一次地，即「何度も」。",
+      "en": "「しきりに」 is \"again and again\": 「何度も」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“只看了一次”与“频繁”相反。",
+        "en": "\"Only once\" is the opposite."
+      },
+      {
+        "zh": "「じっと」是一直盯着不动，不是反复多次。",
+        "en": "「じっと」 is staring steadily, not looking repeatedly."
+      },
+      {
+        "zh": "「こっそり」是偷偷地，与次数无关。",
+        "en": "「こっそり」 is secretly — not about how often."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-406",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<参加者の意見はまちまちだった。>>",
+    "options": [
+      "参加者の意見はいろいろだった。",
+      "参加者の意見はみんな同じだった。",
+      "参加者の意見はほとんどなかった。",
+      "参加者の意見ははっきりしていた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "参加者的意见各不相同。",
+      "en": "The participants' opinions varied."
+    },
+    "why": {
+      "zh": "「まちまち」＝各不相同，即「いろいろ」。",
+      "en": "「まちまち」 is \"all different\": 「いろいろ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“都一样”正好相反。",
+        "en": "\"All the same\" is the opposite."
+      },
+      {
+        "zh": "“几乎没有意见”不是各不相同。",
+        "en": "Almost no opinions isn't varied opinions."
+      },
+      {
+        "zh": "“很明确”和意见是否一致无关。",
+        "en": "Being clear says nothing about whether they differed."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-407",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<彼の説明はあいまいだった。>>",
+    "options": [
+      "彼の説明ははっきりしなかった。",
+      "彼の説明は長すぎた。",
+      "彼の説明は間違っていた。",
+      "彼の説明はとてもていねいだった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他的说明含糊不清。",
+      "en": "His explanation was vague."
+    },
+    "why": {
+      "zh": "「あいまい」＝含糊、不明确，即「はっきりしない」。",
+      "en": "「あいまい」 is vague: 「はっきりしない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“太长”和含糊不是一回事。",
+        "en": "Too long isn't the same as vague."
+      },
+      {
+        "zh": "“错了”是内容不对，含糊是不清楚，意思不同。",
+        "en": "Wrong means incorrect; vague means unclear."
+      },
+      {
+        "zh": "“很仔细”与含糊相反。",
+        "en": "Very thorough is the opposite of vague."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-408",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "<<今月は出費がかさんだ。>>",
+    "options": [
+      "今月は使ったお金が多くなった。",
+      "今月は入ったお金が多くなった。",
+      "今月は使ったお金が少なくなった。",
+      "今月はお金をなくしてしまった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这个月开销越来越大。",
+      "en": "My expenses piled up this month."
+    },
+    "why": {
+      "zh": "「出費」＝开销，「かさむ」＝（费用等）增多，合起来是“花的钱变多了”。",
+      "en": "「出費」 is spending and 「かさむ」 is to pile up: you spent more."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“收入变多”把「出費」（支出）理解反了。",
+        "en": "More money coming in mistakes 「出費」 (spending) for income."
+      },
+      {
+        "zh": "“花的钱变少”和「かさむ」相反。",
+        "en": "Spending less is the opposite of 「かさむ」."
+      },
+      {
+        "zh": "“丢了钱”不是开销增加。",
+        "en": "Losing money isn't spending piling up."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-409",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<彼はとっさにブレーキを踏んだ。>>",
+    "options": [
+      "彼はすぐにブレーキを踏んだ。",
+      "彼はゆっくりブレーキを踏んだ。",
+      "彼はいやいやブレーキを踏んだ。",
+      "彼は何度もブレーキを踏んだ。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他下意识地立刻踩了刹车。",
+      "en": "He slammed on the brakes on the spot."
+    },
+    "why": {
+      "zh": "「とっさに」＝一瞬间、立即（来不及思考），即「すぐに」。",
+      "en": "「とっさに」 is in an instant, without thinking: 「すぐに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“慢慢地”与“一瞬间”相反。",
+        "en": "\"Slowly\" is the opposite of instantly."
+      },
+      {
+        "zh": "“不情愿地”与快慢无关。",
+        "en": "\"Reluctantly\" isn't about speed."
+      },
+      {
+        "zh": "“踩了好几次”是次数，不是瞬间反应。",
+        "en": "\"Several times\" is about how often, not an instant reaction."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-410",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<ひとまず休憩しましょう。>>",
+    "options": [
+      "とりあえず休憩しましょう。",
+      "もう一度休憩しましょう。",
+      "交代で休憩しましょう。",
+      "ゆっくり休憩しましょう。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "先休息一下吧。",
+      "en": "Let's take a break for now."
+    },
+    "why": {
+      "zh": "「ひとまず」＝暂且、先，即「とりあえず」。",
+      "en": "「ひとまず」 is \"for now\": 「とりあえず」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「もう一度」是“再一次”，没有“暂且”的意思。",
+        "en": "「もう一度」 is \"once more\", not \"for now\"."
+      },
+      {
+        "zh": "「交代で」是“轮流”，与“暂且”不同。",
+        "en": "「交代で」 is \"in turns\" — different."
+      },
+      {
+        "zh": "「ゆっくり」是“慢慢地、好好地”，不是“暂且”。",
+        "en": "「ゆっくり」 is \"at leisure\", not \"for now\"."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-411",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<店員の態度はそっけなかった。>>",
+    "options": [
+      "店員の態度は冷たかった。",
+      "店員の態度は親切だった。",
+      "店員の態度は明るかった。",
+      "店員の態度は落ち着いていた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "店员的态度很冷淡。",
+      "en": "The shop assistant was curt."
+    },
+    "why": {
+      "zh": "「そっけない」＝冷淡、爱理不理，即「冷たい」。",
+      "en": "「そっけない」 is curt and offhand: 「冷たい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“亲切”与冷淡相反。",
+        "en": "Kind is the opposite."
+      },
+      {
+        "zh": "“开朗”与冷淡相反。",
+        "en": "Cheerful is the opposite of curt."
+      },
+      {
+        "zh": "“沉着”说的是不慌张，不是冷淡。",
+        "en": "Calm is about not panicking, not being curt."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-412",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<この道は車の往来が激しい。>>",
+    "options": [
+      "この道は車がたくさん行き来する。",
+      "この道は車がスピードを出す。",
+      "この道は車がほとんど通らない。",
+      "この道は車がよく止まっている。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这条路车来车往非常频繁。",
+      "en": "There's heavy traffic on this road."
+    },
+    "why": {
+      "zh": "「往来」＝来来往往，「往来が激しい」＝车来车往很多。",
+      "en": "「往来」 is coming and going; 「往来が激しい」 means lots of traffic."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「激しい」不是速度快，「往来が激しい」说的是车多。",
+        "en": "「激しい」 here means a lot of it, not high speed."
+      },
+      {
+        "zh": "“几乎没车”正好相反。",
+        "en": "Hardly any cars is the opposite."
+      },
+      {
+        "zh": "“车停着”不是来来往往。",
+        "en": "Parked cars aren't coming and going."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-413",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<兄は無口な人だ。>>",
+    "options": [
+      "兄はあまり話さない人だ。",
+      "兄はうそをつかない人だ。",
+      "兄は人の話を聞かない人だ。",
+      "兄はめったに怒らない人だ。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "哥哥是个话很少的人。",
+      "en": "My older brother doesn't say much."
+    },
+    "why": {
+      "zh": "「無口」＝寡言、话少，即「あまり話さない」。",
+      "en": "「無口」 is quiet, a person of few words: 「あまり話さない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“不说谎”是诚实，不是话少。",
+        "en": "Not lying is honesty, not quietness."
+      },
+      {
+        "zh": "“不听别人说话”和自己话少不同。",
+        "en": "Not listening to others is different from not talking."
+      },
+      {
+        "zh": "“很少生气”是脾气好，不是话少。",
+        "en": "Rarely angry is good-tempered, not quiet."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-414",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<失敗したことをくよくよしても仕方がない。>>",
+    "options": [
+      "失敗したことをいつまでも気にしても仕方がない。",
+      "失敗したことを人に話しても仕方がない。",
+      "失敗したことを隠しても仕方がない。",
+      "失敗したことを謝っても仕方がない。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "对失败的事耿耿于怀也没用。",
+      "en": "There's no point fretting over a failure."
+    },
+    "why": {
+      "zh": "「くよくよする」＝对小事一直想不开、闷闷不乐，即「いつまでも気にする」。",
+      "en": "「くよくよする」 is to keep brooding over something: 「いつまでも気にする」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“告诉别人”不是耿耿于怀。",
+        "en": "Telling people isn't brooding."
+      },
+      {
+        "zh": "“隐瞒”不是耿耿于怀。",
+        "en": "Hiding it isn't brooding."
+      },
+      {
+        "zh": "“道歉”与耿耿于怀意思不同。",
+        "en": "Apologising isn't brooding."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-415",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<姉は几帳面な性格だ。>>",
+    "options": [
+      "姉は何でもきちんとする性格だ。",
+      "姉はすぐ怒る性格だ。",
+      "姉はよくしゃべる性格だ。",
+      "姉はのんびりした性格だ。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "姐姐性格一丝不苟。",
+      "en": "My older sister is very meticulous."
+    },
+    "why": {
+      "zh": "「几帳面」＝一丝不苟、规规矩矩，即「何でもきちんとする」。",
+      "en": "「几帳面」 is meticulous: doing everything properly, 「きちんとする」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“容易生气”是急性子，不是一丝不苟。",
+        "en": "Quick to anger is short-tempered, not meticulous."
+      },
+      {
+        "zh": "“爱说话”与一丝不苟无关。",
+        "en": "Talkative has nothing to do with being meticulous."
+      },
+      {
+        "zh": "“悠闲”与一丝不苟的意思不同，甚至相反。",
+        "en": "Easy-going is different from, even opposite to, meticulous."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-416",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<結果は予想とかけ離れていた。>>",
+    "options": [
+      "結果は予想と大きく違っていた。",
+      "結果は予想とほぼ同じだった。",
+      "結果は予想と少しだけ違っていた。",
+      "結果は予想より早く出た。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "结果与预想相差甚远。",
+      "en": "The result was a far cry from what we'd expected."
+    },
+    "why": {
+      "zh": "「かけ離れる」＝相差很远，即「大きく違う」。",
+      "en": "「かけ離れる」 is to be far apart: 「大きく違う」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“几乎一样”正好相反。",
+        "en": "\"Almost the same\" is the opposite."
+      },
+      {
+        "zh": "“只差一点”与“相差甚远”程度不符。",
+        "en": "\"Only slightly different\" is the wrong degree."
+      },
+      {
+        "zh": "“出得早”说的是时间，不是差距。",
+        "en": "Coming out early is about timing, not difference."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-417",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<彼の意見はもっともだ。>>",
+    "options": [
+      "彼の意見は正しい。",
+      "彼の意見は珍しい。",
+      "彼の意見はわかりにくい。",
+      "彼の意見は古い。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他的意见很有道理。",
+      "en": "His opinion makes perfect sense."
+    },
+    "why": {
+      "zh": "「もっとも」＝有道理、理所当然，即「正しい」。",
+      "en": "「もっとも」 is reasonable, quite right: 「正しい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“少见”与是否有道理无关。",
+        "en": "Unusual says nothing about whether it's right."
+      },
+      {
+        "zh": "“难懂”不是有道理。",
+        "en": "Hard to follow isn't reasonable."
+      },
+      {
+        "zh": "“过时”与有道理意思不同。",
+        "en": "Old-fashioned isn't the same as reasonable."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-418",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<工事は着々と進んでいる。>>",
+    "options": [
+      "工事は少しずつ確実に進んでいる。",
+      "工事は予定より遅れている。",
+      "工事は急に進み始めた。",
+      "工事は止まったままだ。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "工程正在稳步推进。",
+      "en": "The construction work is moving steadily ahead."
+    },
+    "why": {
+      "zh": "「着々と」＝一步一步稳步地，即「少しずつ確実に」。",
+      "en": "「着々と」 is steadily, step by step: 「少しずつ確実に」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“比计划晚”与稳步推进相反。",
+        "en": "Behind schedule is the opposite of steady progress."
+      },
+      {
+        "zh": "“突然开始推进”不是一步步稳步进行。",
+        "en": "Suddenly starting isn't steady progress."
+      },
+      {
+        "zh": "“一直停着”与推进相反。",
+        "en": "Stopped is the opposite of progressing."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-419",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<彼は先に勘定を済ませた。>>",
+    "options": [
+      "彼は先にお金を払った。",
+      "彼は先に席を予約した。",
+      "彼は先に料理を注文した。",
+      "彼は先に店を出た。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他先结了账。",
+      "en": "He settled the bill first."
+    },
+    "why": {
+      "zh": "「勘定」＝账单、结账，「勘定を済ませる」＝付完钱。",
+      "en": "「勘定」 is the bill; 「勘定を済ませる」 is to pay it."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“订座”不是结账。",
+        "en": "Booking a table isn't paying the bill."
+      },
+      {
+        "zh": "“点菜”不是结账。",
+        "en": "Ordering food isn't paying."
+      },
+      {
+        "zh": "“离开店”不是结账。",
+        "en": "Leaving the restaurant isn't paying."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-420",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<案の定、チームは試合に負けた。>>",
+    "options": [
+      "思ったとおり、チームは試合に負けた。",
+      "思いがけず、チームは試合に負けた。",
+      "あっという間に、チームは試合に負けた。",
+      "久しぶりに、チームは試合に負けた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "果然不出所料，队伍输了比赛。",
+      "en": "Just as I'd feared, the team lost the match."
+    },
+    "why": {
+      "zh": "「案の定」＝果然、不出所料，即「思ったとおり」。",
+      "en": "「案の定」 is \"just as expected\": 「思ったとおり」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「思いがけず」是“没想到”，正好相反。",
+        "en": "「思いがけず」 is \"unexpectedly\" — the opposite."
+      },
+      {
+        "zh": "「あっという間に」是“转眼之间”，说的是快，不是预料之中。",
+        "en": "「あっという間に」 is \"in no time\" — about speed, not expectation."
+      },
+      {
+        "zh": "「久しぶりに」是“隔了很久”，与预料无关。",
+        "en": "「久しぶりに」 is \"for the first time in ages\" — not about expectation."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-421",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<新しい仕事のやり方にとまどっている。>>",
+    "options": [
+      "新しい仕事のやり方がわからなくて困っている。",
+      "新しい仕事のやり方に慣れて楽しんでいる。",
+      "新しい仕事のやり方に反対している。",
+      "新しい仕事のやり方を人に教えている。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "对新的工作方法感到不知所措。",
+      "en": "I'm at a loss with the new way of working."
+    },
+    "why": {
+      "zh": "「とまどう」＝不知所措、不知该怎么办，即「わからなくて困る」。",
+      "en": "「とまどう」 is to be at a loss: not knowing what to do, 「わからなくて困る」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“习惯了并享受”与不知所措相反。",
+        "en": "Used to it and enjoying it is the opposite."
+      },
+      {
+        "zh": "“反对”是态度，不是不知所措。",
+        "en": "Opposing it is a stance, not being at a loss."
+      },
+      {
+        "zh": "“教别人”说明已经会了，与不知所措相反。",
+        "en": "Teaching others means you've mastered it — the opposite."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-422",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<彼はその件について一切話さなかった。>>",
+    "options": [
+      "彼はその件について全く話さなかった。",
+      "彼はその件について少しだけ話した。",
+      "彼はその件について何度も話した。",
+      "彼はその件について正直に話した。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "关于那件事，他只字未提。",
+      "en": "He said absolutely nothing about the matter."
+    },
+    "why": {
+      "zh": "「一切〜ない」＝完全不……，即「全く〜ない」。",
+      "en": "「一切〜ない」 is \"not at all\": 「全く〜ない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“只说了一点”与“只字未提”不符。",
+        "en": "\"Said a little\" contradicts \"said nothing\"."
+      },
+      {
+        "zh": "“说了好几次”正好相反。",
+        "en": "\"Talked about it many times\" is the opposite."
+      },
+      {
+        "zh": "“如实说了”与“什么也没说”相反。",
+        "en": "\"Told it honestly\" contradicts saying nothing."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-423",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "<<この町の発展は著しい。>>",
+    "options": [
+      "この町の発展は目立って大きい。",
+      "この町の発展はとてもゆっくりだ。",
+      "この町の発展は予想どおりだ。",
+      "この町の発展は最近止まった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这个城镇的发展十分显著。",
+      "en": "This town's growth has been remarkable."
+    },
+    "why": {
+      "zh": "「著しい」＝显著、非常明显，即「目立って大きい」。",
+      "en": "「著しい」 is remarkable, conspicuous: 「目立って大きい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“很缓慢”与显著相反。",
+        "en": "Very slow is the opposite of remarkable."
+      },
+      {
+        "zh": "“和预想一样”与“显著”意思不同。",
+        "en": "As expected isn't the same as remarkable."
+      },
+      {
+        "zh": "“最近停了”与显著发展相反。",
+        "en": "Having stopped recently is the opposite."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-424",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<売り上げが徐々に回復してきた。>>",
+    "options": [
+      "売り上げが少しずつ回復してきた。",
+      "売り上げが急に回復してきた。",
+      "売り上げがやっと回復してきた。",
+      "売り上げが予想どおりに回復してきた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "销售额逐渐恢复了。",
+      "en": "Sales have gradually picked up."
+    },
+    "why": {
+      "zh": "「徐々に」＝逐渐，即「少しずつ」。",
+      "en": "「徐々に」 is gradually: 「少しずつ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“突然”与“逐渐”相反。",
+        "en": "\"Suddenly\" is the opposite of gradually."
+      },
+      {
+        "zh": "「やっと」是“终于”，表示等了很久，不是“逐渐”。",
+        "en": "「やっと」 is \"at last\" — about waiting, not gradualness."
+      },
+      {
+        "zh": "“和预想一样”与“逐渐”无关。",
+        "en": "\"As expected\" isn't about gradualness."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-425",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<彼はささいなことですぐ怒る。>>",
+    "options": [
+      "彼は小さなことですぐ怒る。",
+      "彼は大事なことですぐ怒る。",
+      "彼は同じことですぐ怒る。",
+      "彼は家族のことですぐ怒る。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他为一点小事就生气。",
+      "en": "He gets angry over the smallest things."
+    },
+    "why": {
+      "zh": "「ささいな」＝微不足道的，即「小さな」。",
+      "en": "「ささいな」 is trivial: 「小さな」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“重要的事”正好相反。",
+        "en": "Important matters are the opposite."
+      },
+      {
+        "zh": "“同样的事”与“琐碎”意思不同。",
+        "en": "\"The same thing\" isn't \"trivial\"."
+      },
+      {
+        "zh": "“家里的事”是范围，不是小事。",
+        "en": "Family matters is a topic, not triviality."
+      }
+    ]
+  }
+]

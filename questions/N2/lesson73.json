@@ -1,0 +1,582 @@
+[
+  {
+    "id": "n2-l73-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson73#1"
+    ],
+    "difficulty": 2,
+    "stem": "A「今日は道がひどく混んでいるね。」\nB「連休の初日だから、仕方ないよ。」\nA「（　）、さっきから全然進まないね。」",
+    "options": [
+      "すなわち",
+      "それなのに",
+      "それにしても",
+      "したがって"
+    ],
+    "answer": 2,
+    "full": "A「今日は道がひどく混んでいるね。」 B「連休の初日だから、仕方ないよ。」 A「それにしても、さっきから全然進まないね。」",
+    "tr": {
+      "zh": "A：今天路堵得好厉害啊。 B：连休第一天嘛，没办法。 A：话虽如此，从刚才起就一点都没动啊。",
+      "en": "A: The roads are terribly crowded today. B: It's the first day of the holidays — can't be helped. A: Even so, we haven't moved at all for ages."
+    },
+    "why": {
+      "zh": "A 先接受了 B 说的理由（连休所以堵），再说“即使考虑到这一点，程度也太过了”，正是「それにしても」。",
+      "en": "A accepts B's reason (holiday traffic) but finds the degree still beyond it — exactly 「それにしても」."
+    },
+    "wrong": [
+      {
+        "zh": "「すなわち」是“即、也就是说”，用来换说法或下定义，这里没有要解释的内容。",
+        "en": "「すなわち」 (\"namely\") restates or defines something; nothing is being restated here."
+      },
+      {
+        "zh": "「それなのに」表示结果与前提相反；连休堵车本来就是预料中的，不能说“尽管如此却”。",
+        "en": "「それなのに」 marks a result against expectation, but traffic on a holiday is exactly what's expected."
+      },
+      null,
+      {
+        "zh": "「したがって」是书面的“因此”，用在闲聊中太生硬，而且这里是感叹程度，不是推结论。",
+        "en": "「したがって」 is a formal \"therefore\"; A isn't drawing a conclusion but reacting to how bad it is."
+      }
+    ]
+  },
+  {
+    "id": "n2-l73-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson73#1"
+    ],
+    "difficulty": 2,
+    "stem": "彼が毎日忙しいのはよくわかっている。（　）、返事ぐらいはくれてもいいのではないか。",
+    "options": [
+      "それにしても",
+      "したがって",
+      "すなわち",
+      "しかも"
+    ],
+    "answer": 0,
+    "full": "彼が毎日忙しいのはよくわかっている。それにしても、返事ぐらいはくれてもいいのではないか。",
+    "tr": {
+      "zh": "我很清楚他每天都很忙。即便如此，至少也该回个信吧。",
+      "en": "I know full well he's busy every day. Even so, couldn't he at least reply?"
+    },
+    "why": {
+      "zh": "前句承认对方的情况（很忙），后句说“即使这样也太过分了”，带有不满，用「それにしても」。",
+      "en": "The first sentence grants his situation, the second says it still goes too far, with irritation: 「それにしても」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「したがって」是“因此”，可“他很忙”推不出“至少该回个信”。",
+        "en": "「したがって」 means \"therefore\", but \"he's busy\" doesn't lead to \"he could at least reply\"."
+      },
+      {
+        "zh": "「すなわち」是“即”，后句并不是对前句的换说法。",
+        "en": "「すなわち」 (\"namely\") would make the second sentence a restatement of the first, which it isn't."
+      },
+      {
+        "zh": "「しかも」是“而且”，追加同方向的信息；后句是在表达不满，不是追加“忙”的内容。",
+        "en": "「しかも」 adds more in the same direction; the second sentence is a complaint, not more about him being busy."
+      }
+    ]
+  },
+  {
+    "id": "n2-l73-003",
+    "type": "narabe",
+    "refs": [
+      "lesson73#1"
+    ],
+    "difficulty": 3,
+    "stem": "田舎だから店が少ないのは当然だ。[_] [_] [_] [★] とは思わなかった。",
+    "options": [
+      "ない",
+      "一軒も",
+      "コンビニの",
+      "それにしても"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "田舎だから店が少ないのは当然だ。それにしても コンビニの 一軒も ない とは思わなかった。",
+    "tr": {
+      "zh": "乡下店少是理所当然的。但即便如此，没想到连一家便利店都没有。",
+      "en": "Of course there are few shops in the countryside. Even so, I never thought there wouldn't be a single convenience store."
+    },
+    "why": {
+      "zh": "「それにしても」放在句首；「コンビニの一軒もない」是“连一家便利店都没有”（の表示主语）：それにしても → コンビニの → 一軒も → ない（＋とは）。★ 在第四格，是「ない」。",
+      "en": "「それにしても」 opens the sentence; 「コンビニの一軒もない」 is \"not even one convenience store\" (の marks the subject): それにしても → コンビニの → 一軒も → ない (+ とは). The ★ is the fourth slot: 「ない」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l73-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson73#2"
+    ],
+    "difficulty": 1,
+    "stem": "この一か月、毎日ジムに通って、食事にも気をつけてきた。（　）、体重は1キロも減っていない。",
+    "options": [
+      "したがって",
+      "それなのに",
+      "すなわち",
+      "しかも"
+    ],
+    "answer": 1,
+    "full": "この一か月、毎日ジムに通って、食事にも気をつけてきた。それなのに、体重は1キロも減っていない。",
+    "tr": {
+      "zh": "这一个月每天去健身房，饮食也很注意。尽管如此，体重却一公斤都没减。",
+      "en": "For a month I've gone to the gym every day and watched what I eat. And yet I haven't lost even a kilo."
+    },
+    "why": {
+      "zh": "前面是努力，后面是与预期相反、令人失望的结果，用「それなのに」。",
+      "en": "Effort, then a disappointing result that goes against it: 「それなのに」."
+    },
+    "wrong": [
+      {
+        "zh": "「したがって」是“因此”，努力锻炼推不出“体重没减”。",
+        "en": "「したがって」 (\"therefore\") — exercising and dieting don't lead to not losing weight."
+      },
+      null,
+      {
+        "zh": "「すなわち」是“即”，后句不是前句的换说法。",
+        "en": "「すなわち」 (\"namely\") — the second sentence doesn't restate the first."
+      },
+      {
+        "zh": "「しかも」追加同方向的信息，而“体重一点没减”是与努力相反的结果。",
+        "en": "「しかも」 adds in the same direction, but not losing weight goes against all that effort."
+      }
+    ]
+  },
+  {
+    "id": "n2-l73-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson73#2"
+    ],
+    "difficulty": 3,
+    "stem": "午後から雨が降るかもしれない。（　）、私は予定どおり山に登るつもりだ。",
+    "options": [
+      "すなわち",
+      "したがって",
+      "それなのに",
+      "それでも"
+    ],
+    "answer": 3,
+    "full": "午後から雨が降るかもしれない。それでも、私は予定どおり山に登るつもりだ。",
+    "tr": {
+      "zh": "下午可能会下雨。即使这样，我还是打算照计划去爬山。",
+      "en": "It may rain in the afternoon. Even so, I intend to climb the mountain as planned."
+    },
+    "why": {
+      "zh": "后句是说话人的意志「つもりだ」。「それなのに」只能接与预期相反的事实，不能接意志、请求，所以用「それでも」。",
+      "en": "The second sentence is the speaker's intention (「つもりだ」). 「それなのに」 only introduces an unexpected fact, never a will or request, so it's 「それでも」."
+    },
+    "wrong": [
+      {
+        "zh": "「すなわち」是“即”，后句不是对前句的解释。",
+        "en": "「すなわち」 (\"namely\") — the second sentence doesn't explain the first."
+      },
+      {
+        "zh": "「したがって」是“因此”，“可能下雨”推不出“照计划登山”。",
+        "en": "「したがって」 (\"therefore\") — possible rain doesn't lead to climbing as planned."
+      },
+      {
+        "zh": "「それなのに」后面不能接说话人自己的意志（「つもりだ」），它用来叙述与预期相反的既成事实。",
+        "en": "「それなのに」 can't be followed by the speaker's own intention (「つもりだ」); it reports a fact that went against expectation."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l73-006",
+    "type": "narabe",
+    "refs": [
+      "lesson73#2"
+    ],
+    "difficulty": 2,
+    "stem": "毎日できるだけ節約している。それなのに、[★] [_] [_] [_] ばかりだ。",
+    "options": [
+      "減る",
+      "どころか",
+      "増える",
+      "貯金は"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "毎日できるだけ節約している。それなのに、貯金は 増える どころか 減る ばかりだ。",
+    "tr": {
+      "zh": "每天都尽量节约。尽管如此，存款不但没增加，反而一直在减少。",
+      "en": "I save as much as I can every day. And yet, far from growing, my savings just keep shrinking."
+    },
+    "why": {
+      "zh": "「それなのに」后接与预期相反的结果；「AどころかB」“别说A，反而B”，「減るばかりだ」“一个劲地减少”：貯金は → 増える → どころか → 減る。★ 在第一格，是「貯金は」。",
+      "en": "After 「それなのに」 comes the unexpected result; 「AどころかB」 \"far from A, B\" and 「減るばかりだ」 \"just keeps falling\": 貯金は → 増える → どころか → 減る. The ★ is the first slot: 「貯金は」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l73-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson73#3"
+    ],
+    "difficulty": 1,
+    "stem": "このレストランは料理がとてもおいしい。（　）、店員の対応も丁寧で気持ちがいい。",
+    "options": [
+      "しかも",
+      "したがって",
+      "それなのに",
+      "すなわち"
+    ],
+    "answer": 0,
+    "full": "このレストランは料理がとてもおいしい。しかも、店員の対応も丁寧で気持ちがいい。",
+    "tr": {
+      "zh": "这家餐厅的菜非常好吃。而且店员服务周到，让人很舒服。",
+      "en": "The food at this restaurant is delicious. What's more, the staff are polite and pleasant."
+    },
+    "why": {
+      "zh": "后句在“好吃”的基础上追加同方向的优点（服务也好，有「も」），用递进的「しかも」。",
+      "en": "The second sentence adds another plus in the same direction (note 「も」): the additive 「しかも」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「したがって」是“因此”，菜好吃推不出店员服务好。",
+        "en": "「したがって」 (\"therefore\") — tasty food doesn't cause polite staff."
+      },
+      {
+        "zh": "「それなのに」要接与预期相反的结果；“好吃”和“服务好”是同方向的好评，不构成转折。",
+        "en": "「それなのに」 needs a result against expectation; good food and good service point the same way."
+      },
+      {
+        "zh": "「すなわち」是“即”，服务好不是对“好吃”的换说法。",
+        "en": "「すなわち」 (\"namely\") — good service isn't a restatement of tasty food."
+      }
+    ]
+  },
+  {
+    "id": "n2-l73-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson73#3"
+    ],
+    "difficulty": 2,
+    "stem": "彼は約束の時間に1時間も遅れてきた。（　）、一言も謝らなかった。",
+    "options": [
+      "したがって",
+      "すなわち",
+      "しかも",
+      "それにしても"
+    ],
+    "answer": 2,
+    "full": "彼は約束の時間に1時間も遅れてきた。しかも、一言も謝らなかった。",
+    "tr": {
+      "zh": "他比约定时间晚到了整整一个小时。而且连一句道歉都没有。",
+      "en": "He showed up a full hour late. On top of that, he didn't say a word of apology."
+    },
+    "why": {
+      "zh": "前后都是坏事，后句在“迟到”之上再加一条更糟的（不道歉），用「しかも」。",
+      "en": "Both sentences are bad, and the second piles on something worse (no apology): 「しかも」."
+    },
+    "wrong": [
+      {
+        "zh": "「したがって」是“因此”，迟到推不出“不道歉”。",
+        "en": "「したがって」 (\"therefore\") — being late doesn't lead to not apologising."
+      },
+      {
+        "zh": "「すなわち」是“即”，不道歉不是迟到的换说法。",
+        "en": "「すなわち」 (\"namely\") — not apologising isn't a restatement of being late."
+      },
+      null,
+      {
+        "zh": "「それにしても」要先承认一个情有可原的事实，再说“即便如此也太……”；迟到一小时不是情有可原的理由。",
+        "en": "「それにしても」 first grants an excusing fact, then says \"still, too…\"; being an hour late isn't an excuse."
+      }
+    ]
+  },
+  {
+    "id": "n2-l73-009",
+    "type": "narabe",
+    "refs": [
+      "lesson73#3"
+    ],
+    "difficulty": 2,
+    "stem": "この辞書は説明がわかりやすい。[_] [_] [★] [_] とても使いやすい。",
+    "options": [
+      "ので",
+      "しかも",
+      "豊富な",
+      "例文が"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "この辞書は説明がわかりやすい。しかも 例文が 豊富な ので とても使いやすい。",
+    "tr": {
+      "zh": "这本词典解释易懂。而且例句丰富，所以非常好用。",
+      "en": "This dictionary's explanations are easy to follow. What's more, it has plenty of example sentences, so it's very easy to use."
+    },
+    "why": {
+      "zh": "「しかも」放在句首追加优点；「例文が豊富なので」是理由：しかも → 例文が → 豊富な → ので。★ 在第三格，是「豊富な」。",
+      "en": "「しかも」 opens the sentence to add a plus; 「例文が豊富なので」 is the reason: しかも → 例文が → 豊富な → ので. The ★ is the third slot: 「豊富な」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l73-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson73#4"
+    ],
+    "difficulty": 2,
+    "stem": "本製品には防水加工がされていない。（　）、雨天時の屋外での使用は避けること。",
+    "options": [
+      "したがって",
+      "しかも",
+      "それなのに",
+      "すなわち"
+    ],
+    "answer": 0,
+    "full": "本製品には防水加工がされていない。したがって、雨天時の屋外での使用は避けること。",
+    "tr": {
+      "zh": "本产品未做防水处理。因此，雨天请避免在户外使用。",
+      "en": "This product is not waterproofed. Therefore, avoid using it outdoors in the rain."
+    },
+    "why": {
+      "zh": "前句是事实，后句是由此推出的结论/要求，而且是说明书式的书面语，用「したがって」。",
+      "en": "A fact, then the conclusion drawn from it, in written-manual style: 「したがって」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「しかも」是追加同方向的信息，而后句是根据前句得出的注意事项。",
+        "en": "「しかも」 adds information; the second sentence is an instruction that follows from the first."
+      },
+      {
+        "zh": "「それなのに」表示与预期相反，“不防水所以别在雨中用”是顺接，不是转折。",
+        "en": "「それなのに」 marks a contrary result; \"not waterproof, so avoid rain\" is a straightforward consequence."
+      },
+      {
+        "zh": "「すなわち」是“即”，后句不是对“没有防水加工”的换说法，而是由此得出的要求。",
+        "en": "「すなわち」 (\"namely\") — the instruction isn't a restatement of \"not waterproof\" but a consequence of it."
+      }
+    ]
+  },
+  {
+    "id": "n2-l73-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson73#4"
+    ],
+    "difficulty": 2,
+    "stem": "今年度は応募者数が定員を大幅に上回った。（　）、例年より選考の基準を厳しくすることとした。",
+    "options": [
+      "それなのに",
+      "すなわち",
+      "したがって",
+      "それにしても"
+    ],
+    "answer": 2,
+    "full": "今年度は応募者数が定員を大幅に上回った。したがって、例年より選考の基準を厳しくすることとした。",
+    "tr": {
+      "zh": "今年报名人数大大超过了名额。因此决定比往年更严格地设定选拔标准。",
+      "en": "This year the number of applicants far exceeded the places available. Therefore, we have decided to make the selection criteria stricter than usual."
+    },
+    "why": {
+      "zh": "前句是原因，后句是据此作出的决定，文体正式，用「したがって」。",
+      "en": "A cause, then the decision based on it, in formal style: 「したがって」."
+    },
+    "wrong": [
+      {
+        "zh": "「それなのに」表示与预期相反；人数大幅超出而提高标准是顺理成章的。",
+        "en": "「それなのに」 marks a contrary result, but raising the bar when applicants far exceed places is the natural consequence."
+      },
+      {
+        "zh": "「すなわち」是“即”，提高标准不是“人数超出”的换说法。",
+        "en": "「すなわち」 (\"namely\") — a stricter standard isn't a restatement of too many applicants."
+      },
+      null,
+      {
+        "zh": "「それにしても」是“即便如此也太……”的感叹，不能用来引出决定。",
+        "en": "「それにしても」 voices surprise at a degree (\"even so, too…\"); it doesn't introduce a decision."
+      }
+    ]
+  },
+  {
+    "id": "n2-l73-012",
+    "type": "narabe",
+    "refs": [
+      "lesson73#4"
+    ],
+    "difficulty": 2,
+    "stem": "この地域では昔から大きな揺れがたびたび起きている。[_] [★] [_] [_] 求められる。",
+    "options": [
+      "強い",
+      "地震に",
+      "建物が",
+      "したがって"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "この地域では昔から大きな揺れがたびたび起きている。したがって 地震に 強い 建物が 求められる。",
+    "tr": {
+      "zh": "这个地区自古以来经常发生强烈的摇晃。因此需要抗震能力强的建筑。",
+      "en": "Strong tremors have struck this area often since long ago. Therefore, buildings that can withstand earthquakes are needed."
+    },
+    "why": {
+      "zh": "「したがって」放在句首引出结论；「地震に強い」修饰「建物」：したがって → 地震に → 強い → 建物が。★ 在第二格，是「地震に」。",
+      "en": "「したがって」 opens the conclusion; 「地震に強い」 modifies 「建物」: したがって → 地震に → 強い → 建物が. The ★ is the second slot: 「地震に」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l73-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson73#5"
+    ],
+    "difficulty": 2,
+    "stem": "日本には「もったいない」、（　）物を無駄にしないことを大切にする考え方がある。",
+    "options": [
+      "しかも",
+      "すなわち",
+      "それなのに",
+      "したがって"
+    ],
+    "answer": 1,
+    "full": "日本には「もったいない」、すなわち物を無駄にしないことを大切にする考え方がある。",
+    "tr": {
+      "zh": "日本有“もったいない”，即重视不浪费东西的观念。",
+      "en": "Japan has the idea of \"mottainai\" — that is, valuing not wasting things."
+    },
+    "why": {
+      "zh": "「A、すなわちB」：B 是对 A 的定义或解释，两者等价。这里 B 解释了「もったいない」的意思。",
+      "en": "「A、すなわちB」: B defines or explains A, and the two are equal. Here B explains what 「もったいない」 means."
+    },
+    "wrong": [
+      {
+        "zh": "「しかも」是追加新信息，而后面是对「もったいない」的解释，两者指同一个东西。",
+        "en": "「しかも」 adds new information, but what follows explains 「もったいない」 — it's the same thing."
+      },
+      null,
+      {
+        "zh": "「それなのに」表示转折，这里前后没有对立。",
+        "en": "「それなのに」 marks a contrast; there is none here."
+      },
+      {
+        "zh": "「したがって」是“因此”，后面不是由「もったいない」推出的结论。",
+        "en": "「したがって」 (\"therefore\") — what follows isn't a conclusion drawn from 「もったいない」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l73-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson73#5"
+    ],
+    "difficulty": 2,
+    "stem": "本校の創立者、（　）初代校長の田中一郎は、生涯を教育にささげた人物である。",
+    "options": [
+      "したがって",
+      "すなわち",
+      "それにしても",
+      "それなのに"
+    ],
+    "answer": 1,
+    "full": "本校の創立者、すなわち初代校長の田中一郎は、生涯を教育にささげた人物である。",
+    "tr": {
+      "zh": "本校的创立者，即首任校长田中一郎，是一位将一生献给教育的人。",
+      "en": "The founder of our school — that is, its first principal, Ichiro Tanaka — devoted his whole life to education."
+    },
+    "why": {
+      "zh": "「A、すなわちB」用来表示 A 和 B 是同一个人或事物，这里“创立者”就是“首任校长”。",
+      "en": "「A、すなわちB」 says A and B are the same: the founder is the first principal."
+    },
+    "wrong": [
+      {
+        "zh": "「したがって」是“因此”，“创立者”和“首任校长”之间没有因果关系。",
+        "en": "「したがって」 (\"therefore\") — there's no cause-and-effect between \"founder\" and \"first principal\"."
+      },
+      null,
+      {
+        "zh": "「それにしても」是“即便如此也……”的感叹，不能用来说明同一人物。",
+        "en": "「それにしても」 voices surprise (\"even so…\"); it can't equate two descriptions of one person."
+      },
+      {
+        "zh": "「それなのに」是句与句之间的转折，不能把“创立者”和“首任校长”这两个名词连成同一个人。",
+        "en": "「それなのに」 contrasts two sentences; it can't link two nouns naming the same person."
+      }
+    ]
+  },
+  {
+    "id": "n2-l73-015",
+    "type": "narabe",
+    "refs": [
+      "lesson73#5"
+    ],
+    "difficulty": 2,
+    "stem": "CPU、[_] [_] [_] [★] 部分だ。",
+    "options": [
+      "中央処理装置は",
+      "コンピューターの",
+      "すなわち",
+      "頭脳にあたる"
+    ],
+    "order": [
+      2,
+      0,
+      1,
+      3
+    ],
+    "full": "CPU、すなわち 中央処理装置は コンピューターの 頭脳にあたる 部分だ。",
+    "tr": {
+      "zh": "CPU，即中央处理器，是相当于电脑大脑的部分。",
+      "en": "The CPU — that is, the central processing unit — is the part that acts as the computer's brain."
+    },
+    "why": {
+      "zh": "「A、すなわちB」先给出等价的名称，再说明它是什么：すなわち → 中央処理装置は → コンピューターの → 頭脳にあたる（＋部分だ）。★ 在第四格，是「頭脳にあたる」。",
+      "en": "「A、すなわちB」 first gives the equivalent name, then says what it is: すなわち → 中央処理装置は → コンピューターの → 頭脳にあたる (+ 部分だ). The ★ is the fourth slot: 「頭脳にあたる」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

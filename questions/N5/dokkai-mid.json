@@ -1,0 +1,431 @@
+[
+  {
+    "id": "n5-dk-301",
+    "type": "mid",
+    "difficulty": 2,
+    "intro": "これは 学生の チェンさんが 書いた 作文です。",
+    "passage": "北海道の 旅行\n\nわたしは 先月、家族と いっしょに 北海道へ 行きました。東京から ひこうきで 一時間半ぐらいでした。北海道は とても さむかったですが、雪が きれいでした。\n一日目は 大きい 公園で 雪の 中を さんぽしました。父は しゃしんを たくさん とりました。二日目は 朝 早く 市場へ 行って、魚の 店で すしを 食べました。母は 「東京の すしより おいしいです」と 言いました。\n三日目は 雪が たくさん ふりましたから、どこへも 行きませんでした。ホテルで 本を 読みました。わたしは 少し ざんねんでした。\nこんどは 夏に 行きたいです。友だちが 「夏の 北海道は 花が とても きれいですよ」と 言いましたから。",
+    "tr": {
+      "zh": "北海道之旅。上个月我和家人一起去了北海道。从东京坐飞机大约一个半小时。北海道非常冷，但是雪很美。第一天，我们在一个大公园里踏着雪散步，爸爸拍了很多照片。第二天一大早我们去了市场，在一家鱼店吃了寿司。妈妈说：“比东京的寿司好吃。”第三天下了很大的雪，所以哪儿也没去，在酒店看了书。我有点遗憾。下次我想夏天去，因为朋友说：“夏天的北海道花非常漂亮哦。”",
+      "en": "My trip to Hokkaido. Last month I went to Hokkaido with my family. It was about an hour and a half by plane from Tokyo. Hokkaido was very cold, but the snow was beautiful. On the first day we walked through the snow in a big park, and my father took lots of photos. On the second day we went to the market early in the morning and ate sushi at a fish shop. My mother said, \"It's better than sushi in Tokyo.\" On the third day it snowed heavily, so we didn't go anywhere; we read books at the hotel. I was a little disappointed. Next time I want to go in summer, because a friend told me, \"Hokkaido is really beautiful in summer, with all the flowers.\""
+    },
+    "questions": [
+      {
+        "q": "三日目に チェンさんたちは 何を しましたか。",
+        "difficulty": 1,
+        "options": [
+          "ホテルで 本を 読みました。",
+          "公園で さんぽしました。",
+          "市場で すしを 食べました。",
+          "しゃしんを たくさん とりました。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "第三段：「三日目は 雪が たくさん ふりましたから、どこへも 行きませんでした。ホテルで 本を 読みました」。",
+          "en": "Paragraph three: on day three it snowed heavily, so they went nowhere and 「ホテルで 本を 読みました」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "在公园散步是第一天（「一日目」）的事。",
+            "en": "The walk in the park was on day one (「一日目」)."
+          },
+          {
+            "zh": "在市场吃寿司是第二天（「二日目」）的事。",
+            "en": "Sushi at the market was on day two (「二日目」)."
+          },
+          {
+            "zh": "拍很多照片的是爸爸，而且是第一天在公园。",
+            "en": "It was the father who took lots of photos, on day one in the park."
+          }
+        ]
+      },
+      {
+        "q": "チェンさんは どうして こんどは 夏に 行きたいですか。",
+        "options": [
+          "友だちが 夏は 花が きれいだと 言ったから",
+          "母が 夏の すしは おいしいと 言ったから",
+          "父が 夏に しゃしんを とりたいと 言ったから",
+          "三日目は 雪で どこへも 行けなかったから"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "最后一句说明了理由：朋友说「夏の 北海道は 花が とても きれいですよ」，句尾的「から」表示原因。",
+          "en": "The last sentence gives the reason: a friend said Hokkaido's flowers are beautiful in summer — note the closing 「から」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "妈妈说的是“比东京的寿司好吃”，没提夏天。",
+            "en": "The mother only said the sushi beat Tokyo's; nothing about summer."
+          },
+          {
+            "zh": "文中只说爸爸拍了很多照片，他没说过想夏天去拍。",
+            "en": "The father took photos; he never says he wants to take any in summer."
+          },
+          {
+            "zh": "第三天因为下雪哪儿也没去，作者只是觉得遗憾；想夏天去的理由是朋友说夏天花很美。",
+            "en": "The snowed-in third day only made the writer sad; the reason for summer is the friend's remark about the flowers."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-302",
+    "type": "mid",
+    "difficulty": 1,
+    "intro": "これは 学生の アリさんが 書いた 作文です。",
+    "passage": "初めて カレーを 作った 日\n\nきのうは 日曜日でした。わたしは 初めて 一人で カレーを 作りました。\n朝、スーパーへ 行って、肉と やさいを 買いました。おこめは うちに ありましたから、買いませんでした。\n午後 三時から 作りました。やさいを 切りましたが、とても むずかしかったです。一時間ぐらい かかりました。\n六時に 姉が 帰って きました。二人で いっしょに カレーを 食べました。姉は 「おいしいですが、少し からいですね」と 言いました。わたしは からい 料理が 大好きですが、姉は あまり 好きじゃ ありません。\n来週は 姉と いっしょに ケーキを 作りたいです。",
+    "tr": {
+      "zh": "第一次做咖喱的那天。昨天是星期天。我第一次一个人做了咖喱。早上去超市买了肉和蔬菜。家里有米，所以没买。下午三点开始做。我切了菜，但是非常难，花了大约一个小时。六点姐姐回来了，我们两个人一起吃了咖喱。姐姐说：“好吃，不过有点辣呢。”我非常喜欢辣的菜，但是姐姐不太喜欢。下星期我想和姐姐一起做蛋糕。",
+      "en": "The day I made curry for the first time. Yesterday was Sunday. I made curry on my own for the first time. In the morning I went to the supermarket and bought meat and vegetables. We had rice at home, so I didn't buy any. I started cooking at three in the afternoon. I cut the vegetables, but it was really hard; it took about an hour. My older sister came home at six and we ate the curry together. She said, \"It's good, but a little spicy.\" I love spicy food, but my sister doesn't much like it. Next week I want to make a cake with her."
+    },
+    "questions": [
+      {
+        "q": "アリさんは スーパーで 何を 買いましたか。",
+        "options": [
+          "肉と やさい",
+          "肉と おこめ",
+          "やさいと おこめ",
+          "肉と やさいと おこめ"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「肉と やさいを 買いました」，米家里有（「うちに ありましたから、買いませんでした」）。",
+          "en": "「肉と やさいを 買いました」; the rice was already at home, so it wasn't bought."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "米没买，家里本来就有；而且少了蔬菜。",
+            "en": "The rice wasn't bought — it was at home — and the vegetables are missing."
+          },
+          {
+            "zh": "米没买；而且少了肉。",
+            "en": "The rice wasn't bought, and the meat is missing."
+          },
+          {
+            "zh": "「おこめは … 買いませんでした」，米不在买的东西里。",
+            "en": "「おこめは … 買いませんでした」 — rice wasn't among the things bought."
+          }
+        ]
+      },
+      {
+        "q": "お姉さんは カレーを 食べて、何と 言いましたか。",
+        "options": [
+          "おいしいが、少し からい",
+          "からくて、おいしくない",
+          "あまくて、おいしい",
+          "からい 料理が 大好きだ"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "姐姐说「おいしいですが、少し からいですね」——好吃，但有点辣。",
+          "en": "She said 「おいしいですが、少し からいですね」 — good, but a bit spicy."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "姐姐说的是“好吃”，不是“不好吃”。",
+            "en": "She said it was good, not that it wasn't."
+          },
+          {
+            "zh": "姐姐说的是“有点辣”，不是“甜”。",
+            "en": "She said it was a bit spicy, not sweet."
+          },
+          {
+            "zh": "非常喜欢辣菜的是作者自己，姐姐不太喜欢。",
+            "en": "It's the writer who loves spicy food; the sister doesn't much like it."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-303",
+    "type": "mid",
+    "difficulty": 2,
+    "intro": "これは 大学生の 田中さんが 書いた 作文です。",
+    "passage": "わたしの 友だち\n\nわたしの 友だちの キムさんを しょうかいします。キムさんは かんこくから 来ました。わたしと 同じ 大学で べんきょうして います。\nキムさんは 歌が とても 上手です。でも、スポーツは あまり 好きじゃ ありません。わたしは サッカーが 好きですから、よく キムさんを さそいますが、キムさんは いつも 「わたしは 見る だけです」と 言います。\n先週の 土曜日、キムさんの うちで いっしょに ばんごはんを 作りました。キムさんの 国の スープで、とても おいしかったです。\nキムさんは 来年の 三月に 国へ 帰ります。その 前に、二人で 京都へ 行きたいです。",
+    "tr": {
+      "zh": "我的朋友。我来介绍一下我的朋友金同学。金同学是从韩国来的，和我在同一所大学学习。金同学唱歌非常好，但是不太喜欢运动。我喜欢足球，所以常常约金同学，可是金同学总是说：“我只看。”上星期六，我们在金同学家一起做了晚饭，是金同学国家的汤，非常好喝。金同学明年三月要回国。在那之前，我想和他两个人去京都。",
+      "en": "My friend. Let me introduce my friend Kim. Kim came from Korea and studies at the same university as me. Kim is a very good singer, but doesn't much like sports. I like football, so I often invite Kim, but Kim always says, \"I'll just watch.\" Last Saturday we cooked dinner together at Kim's place — a soup from Kim's country, and it was delicious. Kim is going back home next March. Before that, I want the two of us to go to Kyoto."
+    },
+    "questions": [
+      {
+        "q": "キムさんは どんな 人ですか。",
+        "options": [
+          "歌が 上手で、スポーツは あまり 好きじゃない 人",
+          "スポーツが 上手で、歌は あまり 好きじゃない 人",
+          "歌も スポーツも 好きな 人",
+          "サッカーを する ことが 好きな 人"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「歌が とても 上手です。でも、スポーツは あまり 好きじゃ ありません」。",
+          "en": "「歌が とても 上手です。でも、スポーツは あまり 好きじゃ ありません」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "把唱歌和运动说反了：擅长的是唱歌，不喜欢的是运动。",
+            "en": "This swaps the two: Kim is good at singing and doesn't like sports."
+          },
+          {
+            "zh": "金同学不太喜欢运动（「あまり 好きじゃ ありません」）。",
+            "en": "Kim doesn't much like sports (「あまり 好きじゃ ありません」)."
+          },
+          {
+            "zh": "喜欢足球的是作者；金同学说「見る だけです」，只看不踢。",
+            "en": "It's the writer who likes football; Kim says 「見る だけです」 — only watches."
+          }
+        ]
+      },
+      {
+        "q": "田中さんは キムさんが 国へ 帰る 前に、何を したいと 言って いますか。",
+        "difficulty": 1,
+        "options": [
+          "二人で 京都へ 行きたい",
+          "いっしょに ばんごはんを 作りたい",
+          "いっしょに サッカーを 見たい",
+          "かんこくへ 行きたい"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "最后一句：「その 前に、二人で 京都へ 行きたいです」，「その 前」就是金同学回国之前。",
+          "en": "Last line: 「その 前に、二人で 京都へ 行きたいです」 — 「その 前」 is before Kim goes home."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "一起做晚饭是上星期六已经做过的事，不是今后的愿望。",
+            "en": "Cooking dinner together already happened last Saturday; it isn't a wish."
+          },
+          {
+            "zh": "“只看足球”是金同学说的话，作者没说回国前想一起看。",
+            "en": "\"Just watching\" football is what Kim says; the writer doesn't name it as a wish."
+          },
+          {
+            "zh": "文中只说金同学从韩国来、要回国，作者没说想去韩国。",
+            "en": "Korea is only where Kim comes from; the writer never says they want to go there."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-304",
+    "type": "mid",
+    "difficulty": 3,
+    "intro": "これは 日本語学校の 学生の マイさんが 書いた 作文です。",
+    "passage": "わたしの アルバイト\n\nわたしは 夏休みに 友だちと 沖縄へ 旅行に 行きたいです。ですから、四月から アルバイトを 始めました。\n毎週 火曜日と 金曜日に、駅の 前の パンやで はたらいて います。時間は 午後 五時から 九時までです。\n初めは パンの 名前が 分かりませんでしたから、とても 大変でした。でも、店の 山田さんに 何回も 聞きました。今は 全部 分かります。\n店の パンは とても おいしいです。夜 八時から 少し 安く なりますから、わたしは いつも その 時間に 買って、うちへ 帰ります。\nもっと お金が ほしいですから、来月から 土曜日の 午後も はたらきます。土曜日の 午前は 日本語学校が ありますから、はたらく ことが できません。",
+    "tr": {
+      "zh": "我的打工。暑假我想和朋友去冲绳旅行，所以从四月开始打工。每周二和周五，我在车站前的面包店工作，时间是下午五点到九点。一开始不知道面包的名字，所以非常辛苦。不过我问了店里的山田先生好多次，现在全都知道了。店里的面包非常好吃。晚上八点以后会便宜一点，所以我总是在那个时候买了再回家。我想多挣点钱，所以从下个月起星期六下午也要工作。星期六上午有日语学校的课，所以不能工作。",
+      "en": "My part-time job. I want to go on a trip to Okinawa with a friend in the summer holidays, so in April I started a part-time job. Every Tuesday and Friday I work at the bakery in front of the station, from 5 to 9 p.m. At first I didn't know the names of the breads, so it was really hard. But I asked Mr Yamada at the shop many times, and now I know them all. The shop's bread is delicious. It gets a little cheaper from 8 p.m., so I always buy some then before going home. I want more money, so from next month I'll also work on Saturday afternoons. On Saturday mornings I have Japanese school, so I can't work then."
+    },
+    "questions": [
+      {
+        "q": "マイさんは どうして アルバイトを 始めましたか。",
+        "options": [
+          "夏休みに 旅行に 行きたいから",
+          "日本語学校の お金が いるから",
+          "パンを 安く 買いたいから",
+          "パンの 名前を おぼえたいから"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "第一段：想暑假去冲绳旅行，「ですから、四月から アルバイトを 始めました」。",
+          "en": "Paragraph one: she wants to travel to Okinawa in the summer, 「ですから」 she started the job in April."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "日语学校只是说明星期六上午不能工作的原因，文中没说要交学费。",
+            "en": "Japanese school only explains why she can't work Saturday mornings; no fees are mentioned."
+          },
+          {
+            "zh": "八点后面包便宜是打工以后的事，不是开始打工的理由。",
+            "en": "The cheaper bread after 8 is something she enjoys at the job, not why she started it."
+          },
+          {
+            "zh": "不知道面包名字是开始打工后遇到的困难，不是理由。",
+            "en": "Not knowing the bread names was a difficulty after starting, not the reason."
+          }
+        ]
+      },
+      {
+        "q": "来月から、マイさんは いつ アルバイトを しますか。",
+        "options": [
+          "火曜日と 金曜日と 土曜日の 午後",
+          "火曜日と 金曜日と 土曜日の 午前",
+          "火曜日と 金曜日だけ",
+          "土曜日の 午後だけ"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "原来是周二、周五；「来月から 土曜日の 午後も はたらきます」的「も」表示再加上星期六下午。",
+          "en": "She works Tuesdays and Fridays; 「土曜日の 午後も」 — the 「も」 adds Saturday afternoon on top."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "星期六上午有日语学校，「はたらく ことが できません」。",
+            "en": "Saturday morning is Japanese school — 「はたらく ことが できません」."
+          },
+          {
+            "zh": "从下个月起星期六下午也要工作，不只是周二、周五。",
+            "en": "From next month she adds Saturday afternoon, so not just Tuesday and Friday."
+          },
+          {
+            "zh": "「も」表示增加，周二和周五的工作还继续。",
+            "en": "「も」 means \"also\": the Tuesday and Friday shifts continue."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-305",
+    "type": "mid",
+    "difficulty": 2,
+    "intro": "リーさんは 日本語の 先生に 手紙を 書きました。",
+    "passage": "山本先生\n\nお元気ですか。わたしは 先月、大阪から 東京へ ひっこしました。\n新しい アパートは 駅から 歩いて 十分ぐらいです。前の アパートより 少し せまいですが、新しくて きれいです。\nとなりの へやには 小さい 子どもが いる 家族が すんで います。その 子どもは 毎朝 わたしに 「おはようございます」と 言います。とても かわいいです。\nアパートの 近くに 大きい スーパーは ありませんが、小さい やおやと 本屋が あります。休みの 日は よく その 本屋へ 行きます。\n先生、こんど 東京へ 来る とき、ぜひ あそびに 来て ください。\n\n三月十日\nリー",
+    "tr": {
+      "zh": "山本老师：您好吗？我上个月从大阪搬到了东京。新公寓离车站走路大约十分钟。比以前的公寓小一点，但是又新又干净。隔壁住着一家有小孩的人家。那个孩子每天早上都对我说“早上好”，非常可爱。公寓附近没有大超市，但是有一家小蔬菜店和一家书店。休息日我常去那家书店。老师，下次您来东京的时候，请一定来玩。三月十日，李",
+      "en": "Dear Mr Yamamoto, How are you? Last month I moved from Osaka to Tokyo. My new flat is about a ten-minute walk from the station. It's a little smaller than my old one, but it's new and clean. A family with a small child lives next door. Every morning the child says \"Good morning\" to me — very sweet. There's no big supermarket near the flat, but there's a small greengrocer and a bookshop. On my days off I often go to that bookshop. Next time you come to Tokyo, please do come and visit. March 10, Lee"
+    },
+    "questions": [
+      {
+        "q": "リーさんの 新しい アパートは どんな アパートですか。",
+        "options": [
+          "前の アパートより せまいですが、きれいです。",
+          "前の アパートより ひろくて、きれいです。",
+          "駅から 近いですが、古いです。",
+          "駅の 前に あって、少し せまいです。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「前の アパートより 少し せまいですが、新しくて きれいです」。",
+          "en": "「前の アパートより 少し せまいですが、新しくて きれいです」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "比以前的公寓“窄”（「せまい」），不是“宽”。",
+            "en": "It's smaller (「せまい」) than the old flat, not bigger."
+          },
+          {
+            "zh": "公寓是新的（「新しくて」），不旧。",
+            "en": "The flat is new (「新しくて」), not old."
+          },
+          {
+            "zh": "离车站要走十分钟，不在车站前面。",
+            "en": "It's a ten-minute walk from the station, not right in front of it."
+          }
+        ]
+      },
+      {
+        "q": "リーさんの アパートの 近くに 何が ありますか。",
+        "options": [
+          "小さい やおやと 本屋",
+          "大きい スーパーと 本屋",
+          "小さい スーパーと やおや",
+          "大きい スーパーと やおや"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「大きい スーパーは ありませんが、小さい やおやと 本屋が あります」。",
+          "en": "「大きい スーパーは ありませんが、小さい やおやと 本屋が あります」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "附近没有大超市（「ありません」）。",
+            "en": "There's no big supermarket nearby (「ありません」)."
+          },
+          {
+            "zh": "“小”的是蔬菜店，文中没说有小超市；也少了书店。",
+            "en": "It's the greengrocer that's small; no small supermarket is mentioned, and the bookshop is missing."
+          },
+          {
+            "zh": "没有大超市，而且少了书店。",
+            "en": "There's no big supermarket, and the bookshop is missing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-306",
+    "type": "mid",
+    "difficulty": 3,
+    "intro": "これは 会社員の ジョンさんが 書いた 作文です。",
+    "passage": "初めて 山に のぼった 日\n\n先週の 土曜日、わたしは 会社の 人たちと 初めて 山に のぼりました。朝 七時に 駅で みんなと 会って、電車で 一時間 行きました。\n山の 道は 田中さんが よく 知って いました。田中さんは この 山に 何回も 来て いますから。山は 高くて、足が 少し いたかったですが、みんなと たくさん 話しましたから、楽しかったです。\nわたしたちは 山の 上で ひるごはんを 食べたかったです。でも、十二時ごろ 雨が ふりました。山の 上までは あと 一時間でしたが、みんなで 帰りました。山の 下の 店で あたたかい そばを 食べました。\n帰りの 電車の 中では、みんな ねて いました。こんどは 天気が いい 日に 上まで 行きたいです。",
+    "tr": {
+      "zh": "第一次登山的那天。上星期六，我第一次和公司的同事去爬山。早上七点在车站和大家碰头，坐了一个小时电车。山路田中先生很熟悉，因为他来过这座山好多次。山很高，脚有点疼，但是和大家聊了很多，很开心。我们本来想在山顶吃午饭，可是十二点左右下雨了。离山顶只剩一个小时了，不过大家还是一起下山了。我们在山脚下的店里吃了热乎乎的荞麦面。回程的电车上大家都睡着了。下次我想在天气好的日子爬到山顶。",
+      "en": "The day I climbed a mountain for the first time. Last Saturday I climbed a mountain for the first time, with people from work. We met at the station at seven in the morning and went an hour by train. Mr Tanaka knew the mountain path well — he has been to this mountain many times. The mountain was high and my feet hurt a little, but I talked a lot with everyone, so it was fun. We wanted to eat lunch at the top. But around twelve it rained. The top was only an hour away, but we all went back down. We ate hot soba at a shop at the foot of the mountain. On the train home everyone was asleep. Next time I want to reach the top on a day with good weather."
+    },
+    "questions": [
+      {
+        "q": "ジョンさんたちは どうして 山の 上まで 行きませんでしたか。",
+        "options": [
+          "雨が ふったから",
+          "足が いたかったから",
+          "時間が なかったから",
+          "道が 分からなかったから"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「十二時ごろ 雨が ふりました」，所以只剩一个小时也下山了；最后一句“下次想在天气好的日子爬到山顶”也说明原因是天气。",
+          "en": "「十二時ごろ 雨が ふりました」, so they turned back an hour from the top; the last line (\"on a day with good weather\") confirms the reason."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "脚是有点疼，但作者说聊天很开心，下山的原因是下雨。",
+            "en": "His feet hurt a little, but he says it was fun; they turned back because of the rain."
+          },
+          {
+            "zh": "“还有一个小时”是离山顶的距离，文中没说时间不够。",
+            "en": "\"An hour left\" is the distance to the top; nothing says they ran out of time."
+          },
+          {
+            "zh": "田中先生很熟悉山路（「よく 知って いました」）。",
+            "en": "Mr Tanaka knew the path well (「よく 知って いました」)."
+          }
+        ]
+      },
+      {
+        "q": "ジョンさんたちは どこで ひるごはんを 食べましたか。",
+        "difficulty": 2,
+        "options": [
+          "山の 下の 店",
+          "山の 上",
+          "駅の 前の 店",
+          "電車の 中"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "下了雨就下山了，「山の 下の 店で あたたかい そばを 食べました」。",
+          "en": "After the rain they went down and 「山の 下の 店で あたたかい そばを 食べました」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "他们“想”在山顶吃（「食べたかったです」），但因为下雨没去成。",
+            "en": "They wanted to eat at the top (「食べたかったです」) but turned back in the rain."
+          },
+          {
+            "zh": "车站只是早上七点碰头的地方。",
+            "en": "The station is only where they met at seven."
+          },
+          {
+            "zh": "电车上大家在睡觉（「ねて いました」），没有吃饭。",
+            "en": "On the train everyone was asleep (「ねて いました」), not eating."
+          }
+        ]
+      }
+    ]
+  }
+]

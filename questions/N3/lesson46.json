@@ -1,0 +1,698 @@
+[
+  {
+    "id": "n3-l46-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson46#1"
+    ],
+    "difficulty": 2,
+    "stem": "この 部屋は 駅から 近い（　）、家賃も 安い。",
+    "options": [
+      "上に",
+      "をはじめ",
+      "はもちろん",
+      "に伴い"
+    ],
+    "answer": 0,
+    "full": "この 部屋は 駅から 近い上に、家賃も 安い。",
+    "tr": {
+      "zh": "这个房间离车站近，而且房租也便宜。",
+      "en": "This apartment is close to the station, and on top of that the rent is cheap."
+    },
+    "why": {
+      "zh": "“离车站近”和“房租便宜”都是好评价，叠加用「〜上に」，い形容词可以直接接。",
+      "en": "Two good points stacked together: 「〜上に」, which an i-adjective attaches to directly."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「をはじめ」接名词，列举代表性事物，不接い形容词。",
+        "en": "「をはじめ」 follows a noun and names a leading example; it can't follow an i-adjective."
+      },
+      {
+        "zh": "「はもちろん」只接名词，不接い形容词。",
+        "en": "「はもちろん」 follows only nouns, not an i-adjective."
+      },
+      {
+        "zh": "「に伴い」接名词或动词，表示伴随变化，“离车站近”不是变化，也不能直接接い形容词。",
+        "en": "「に伴い」 follows a noun or verb and describes accompanying change; \"close to the station\" isn't a change, and it can't follow an i-adjective."
+      }
+    ]
+  },
+  {
+    "id": "n3-l46-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson46#1"
+    ],
+    "difficulty": 2,
+    "stem": "彼女は 仕事が 丁寧（　）、スピードも 速い。",
+    "options": [
+      "な上に",
+      "の上に",
+      "だ上に",
+      "上に"
+    ],
+    "answer": 0,
+    "full": "彼女は 仕事が 丁寧な上に、スピードも 速い。",
+    "tr": {
+      "zh": "她工作仔细，而且速度也快。",
+      "en": "Her work is careful, and on top of that she's fast."
+    },
+    "why": {
+      "zh": "な形容词接「上に」时要加「な」：丁寧な上に。",
+      "en": "A na-adjective takes 「な」 before 「上に」: 丁寧な上に."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「の上に」是名词的接法（而且名词一般要用「である上に」），「丁寧」是な形容词。",
+        "en": "「の上に」 is for nouns (and nouns usually take 「である上に」); 「丁寧」 is a na-adjective."
+      },
+      {
+        "zh": "「上に」前面不能用「だ」，要用「な」或「である」。",
+        "en": "「だ」 can't come before 「上に」; use 「な」 or 「である」."
+      },
+      {
+        "zh": "な形容词词干不能直接接「上に」，中间要加「な」。",
+        "en": "A na-adjective stem can't attach to 「上に」 directly; it needs 「な」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l46-003",
+    "type": "narabe",
+    "refs": [
+      "lesson46#1"
+    ],
+    "difficulty": 1,
+    "stem": "今日は 道に [_] [_] [★] [_] 降って きて、さんざんだった。",
+    "options": [
+      "雨",
+      "迷った",
+      "まで",
+      "上に"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "今日は 道に 迷った上に 雨まで 降って きて、さんざんだった。",
+    "tr": {
+      "zh": "今天迷了路，而且还下起了雨，真是倒霉透了。",
+      "en": "Today I got lost, and then it even started raining — a terrible day."
+    },
+    "why": {
+      "zh": "迷った ＋ 上に ＋ 雨 ＋ まで：坏事叠加坏事。★ 在第三格，是「雨」。",
+      "en": "迷った ＋ 上に ＋ 雨 ＋ まで: one bad thing on top of another. The ★ is the third slot: 「雨」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l46-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson46#2"
+    ],
+    "difficulty": 1,
+    "stem": "この 問題は 子ども（　）、大人にも 関係が ある。",
+    "options": [
+      "だけでなく",
+      "上に",
+      "に伴い",
+      "にとって"
+    ],
+    "answer": 0,
+    "full": "この 問題は 子どもだけでなく、大人にも 関係が ある。",
+    "tr": {
+      "zh": "这个问题不仅和孩子有关，和大人也有关。",
+      "en": "This issue concerns not only children but adults as well."
+    },
+    "why": {
+      "zh": "后面有「大人にも」，构成“不仅A，B也……”，名词直接接「だけでなく」。",
+      "en": "「大人にも」 completes \"not only A but B too\"; a noun attaches directly to 「だけでなく」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "名词接「上に」要用「である上に」，而且「上に」是叠加评价，这里不是评价。",
+        "en": "A noun needs 「である上に」, and 「上に」 stacks evaluations — this sentence isn't one."
+      },
+      {
+        "zh": "「に伴い」表示伴随变化，“孩子”不是变化，意思不通。",
+        "en": "「に伴い」 describes accompanying change; \"children\" isn't a change."
+      },
+      {
+        "zh": "「子どもにとって」是“对孩子来说”，和「大人にも関係がある」接不上。",
+        "en": "「子どもにとって」 means \"for children,\" which doesn't connect to \"adults are concerned too.\""
+      }
+    ]
+  },
+  {
+    "id": "n3-l46-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson46#2"
+    ],
+    "difficulty": 2,
+    "stem": "この 図書館は（　）、本の 種類も 多い。",
+    "options": [
+      "静かなだけでなく",
+      "静かだけでなく",
+      "静かのだけでなく",
+      "静かでだけでなく"
+    ],
+    "answer": 0,
+    "full": "この 図書館は 静かなだけでなく、本の 種類も 多い。",
+    "tr": {
+      "zh": "这个图书馆不仅安静，书的种类也多。",
+      "en": "This library isn't just quiet — it also has a wide range of books."
+    },
+    "why": {
+      "zh": "な形容词接「だけでなく」时要加「な」：静かなだけでなく。",
+      "en": "A na-adjective takes 「な」 before 「だけでなく」: 静かなだけでなく."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "な形容词词干不能直接接「だけでなく」，要加「な」。",
+        "en": "A na-adjective stem can't attach to 「だけでなく」 directly; it needs 「な」."
+      },
+      {
+        "zh": "「の」是名词修饰名词用的，な形容词要用「な」。",
+        "en": "「の」 links nouns; a na-adjective needs 「な」."
+      },
+      {
+        "zh": "「で」是な形容词的て形，后面不接「だけでなく」。",
+        "en": "「で」 is the na-adjective's て-form; it doesn't go before 「だけでなく」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l46-006",
+    "type": "narabe",
+    "refs": [
+      "lesson46#2"
+    ],
+    "difficulty": 1,
+    "stem": "彼は 日本語 [_] [_] [★] [_] 話せる。",
+    "options": [
+      "中国語",
+      "だけで",
+      "も",
+      "なく"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "彼は 日本語だけでなく 中国語も 話せる。",
+    "tr": {
+      "zh": "他不仅会说日语，还会说中文。",
+      "en": "He can speak not only Japanese but also Chinese."
+    },
+    "why": {
+      "zh": "日本語 ＋ だけで ＋ なく ＋ 中国語 ＋ も ＋ 話せる。★ 在第三格，是「中国語」。",
+      "en": "日本語 ＋ だけで ＋ なく ＋ 中国語 ＋ も ＋ 話せる. The ★ is the third slot: 「中国語」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l46-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson46#3"
+    ],
+    "difficulty": 1,
+    "stem": "この 映画は、子ども（　）、大人も 十分 楽しめる。",
+    "options": [
+      "はもちろん",
+      "に伴い",
+      "上に",
+      "にとって"
+    ],
+    "answer": 0,
+    "full": "この 映画は、子どもはもちろん、大人も 十分 楽しめる。",
+    "tr": {
+      "zh": "这部电影，孩子自不必说，大人也能充分享受。",
+      "en": "Children, of course, but adults too can really enjoy this film."
+    },
+    "why": {
+      "zh": "先说理所当然的“孩子”，再加上“大人也”，用「名词＋はもちろん、〜も」。",
+      "en": "First the obvious audience (children), then the extra (adults too): 「noun ＋ はもちろん、〜も」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に伴い」表示伴随变化，“孩子”不是变化。",
+        "en": "「に伴い」 describes accompanying change; \"children\" isn't a change."
+      },
+      {
+        "zh": "名词接「上に」要用「である上に」，「子ども上に」不成立。",
+        "en": "A noun needs 「である上に」; 「子ども上に」 is ungrammatical."
+      },
+      {
+        "zh": "「子どもにとって」是“对孩子来说”，后面却说「大人も楽しめる」，接不上。",
+        "en": "「子どもにとって」 means \"for children,\" which doesn't lead into \"adults can enjoy it too.\""
+      }
+    ]
+  },
+  {
+    "id": "n3-l46-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson46#3"
+    ],
+    "difficulty": 2,
+    "stem": "この 店の パンは、味（　）、見た目も きれいだ。",
+    "options": [
+      "はもちろん",
+      "をはじめ",
+      "とともに",
+      "に伴って"
+    ],
+    "answer": 0,
+    "full": "この 店の パンは、味はもちろん、見た目も きれいだ。",
+    "tr": {
+      "zh": "这家店的面包，味道自不必说，外观也很漂亮。",
+      "en": "This bakery's bread — the taste goes without saying, and it looks beautiful too."
+    },
+    "why": {
+      "zh": "“味道好”是理所当然的，再补充超出预期的“外观也漂亮”，用「はもちろん」。",
+      "en": "Good taste is taken for granted, and the extra point is the looks: 「はもちろん」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「をはじめ」是“以A为首的一类事物”，后面要接包含A的整体（如「多くの〜」），“味道”和“外观”不是这种关系。",
+        "en": "「をはじめ」 names the leading member of a group that follows (多くの〜 …); taste and looks aren't that relation."
+      },
+      {
+        "zh": "「味とともに見た目もきれい」意思变成“味道和外观都漂亮”，味道不能用「きれい」形容。",
+        "en": "「味とともに」 would make \"taste\" also the subject of 「きれい」 (pretty), which doesn't work."
+      },
+      {
+        "zh": "「に伴って」表示伴随变化，“味道”不是变化。",
+        "en": "「に伴って」 describes accompanying change; \"taste\" isn't a change."
+      }
+    ]
+  },
+  {
+    "id": "n3-l46-009",
+    "type": "narabe",
+    "refs": [
+      "lesson46#3"
+    ],
+    "difficulty": 1,
+    "stem": "この 店は 週末 [_] [_] [★] [_] 混んで いる。",
+    "options": [
+      "平日",
+      "は",
+      "も",
+      "もちろん"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "この 店は 週末は もちろん 平日も 混んで いる。",
+    "tr": {
+      "zh": "这家店周末自不必说，平日也很挤。",
+      "en": "This shop is crowded on weekends, of course, and on weekdays too."
+    },
+    "why": {
+      "zh": "「AはもちろんBも」先说理所当然的（周末），再说出人意料的（平日）。週末 ＋ は ＋ もちろん ＋ 平日 ＋ も。★ 在第三格，是「平日」。",
+      "en": "「A はもちろん B も」 puts the obvious case first (weekends), then the surprising one (weekdays): 週末 ＋ は ＋ もちろん ＋ 平日 ＋ も. The ★ is the third slot: 「平日」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l46-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson46#4"
+    ],
+    "difficulty": 1,
+    "stem": "社長（　）、多くの 社員が 式に 出席した。",
+    "options": [
+      "をはじめ",
+      "に比べて",
+      "に伴い",
+      "上に"
+    ],
+    "answer": 0,
+    "full": "社長をはじめ、多くの 社員が 式に 出席した。",
+    "tr": {
+      "zh": "以社长为首，很多员工出席了仪式。",
+      "en": "Many employees, led by the president, attended the ceremony."
+    },
+    "why": {
+      "zh": "先举出代表人物“社长”，后面是包含他的“很多员工”，用「名词＋をはじめ」。",
+      "en": "The president is named as the leading figure of the group that follows (\"many employees\"): 「noun ＋ をはじめ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「社長に比べて」是“和社长相比”，后面没有比较的内容，接不上。",
+        "en": "「社長に比べて」 means \"compared with the president,\" but nothing is being compared."
+      },
+      {
+        "zh": "「に伴い」表示伴随变化，“社长”不是变化。",
+        "en": "「に伴い」 describes accompanying change; \"the president\" isn't a change."
+      },
+      {
+        "zh": "名词接「上に」要用「である上に」，「社長上に」不成立。",
+        "en": "A noun needs 「である上に」; 「社長上に」 is ungrammatical."
+      }
+    ]
+  },
+  {
+    "id": "n3-l46-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson46#4"
+    ],
+    "difficulty": 2,
+    "stem": "この 大学には、中国（　）、アジアの 国々から 多くの 留学生が 来て いる。",
+    "options": [
+      "をはじめ",
+      "をはじめて",
+      "からはじめ",
+      "ではじめ"
+    ],
+    "answer": 0,
+    "full": "この 大学には、中国をはじめ、アジアの 国々から 多くの 留学生が 来て いる。",
+    "tr": {
+      "zh": "这所大学有很多来自以中国为首的亚洲各国的留学生。",
+      "en": "This university has many international students from Asian countries, China first among them."
+    },
+    "why": {
+      "zh": "“中国”是“亚洲各国”的代表，固定形式是「名词＋をはじめ」，不用て形。",
+      "en": "China is the leading example of \"Asian countries\"; the fixed form is 「noun ＋ をはじめ」, not a て-form."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「をはじめて」是动词「始める」的て形（开始……），或是“第一次”，不是“以……为首”。",
+        "en": "「をはじめて」 is the て-form of 始める (start) — not the set phrase \"led by.\""
+      },
+      {
+        "zh": "「からはじめ」是“从……开始做”，和“留学生来自”接不上。",
+        "en": "「からはじめ」 means \"begin with (doing),\" which doesn't fit students coming from places."
+      },
+      {
+        "zh": "「をはじめ」的助词是「を」，「ではじめ」不成立。",
+        "en": "The particle in this phrase is 「を」; 「ではじめ」 is wrong."
+      }
+    ]
+  },
+  {
+    "id": "n3-l46-012",
+    "type": "narabe",
+    "refs": [
+      "lesson46#4"
+    ],
+    "difficulty": 2,
+    "stem": "会議には [_] [_] [★] [_]、多くの 関係者が 出席した。",
+    "options": [
+      "として",
+      "を",
+      "大臣",
+      "はじめ"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "会議には 大臣を はじめとして、多くの 関係者が 出席した。",
+    "tr": {
+      "zh": "以大臣为首，很多相关人员出席了会议。",
+      "en": "Many people involved, including the minister, attended the meeting."
+    },
+    "why": {
+      "zh": "大臣 ＋ を ＋ はじめ ＋ として：「をはじめとして」是「をはじめ」的完整形。★ 在第三格，是「はじめ」。",
+      "en": "大臣 ＋ を ＋ はじめ ＋ として: 「をはじめとして」 is the full form of 「をはじめ」. The ★ is the third slot: 「はじめ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l46-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson46#5"
+    ],
+    "difficulty": 1,
+    "stem": "時代（　）、人々の 考え方も 変わって きた。",
+    "options": [
+      "とともに",
+      "をはじめ",
+      "上に",
+      "にとって"
+    ],
+    "answer": 0,
+    "full": "時代とともに、人々の 考え方も 変わって きた。",
+    "tr": {
+      "zh": "随着时代变迁，人们的想法也变了。",
+      "en": "People's ways of thinking have changed along with the times."
+    },
+    "why": {
+      "zh": "“时代变化，想法也随之变化”，表示同时变化，用「名词＋とともに」（随着……）。",
+      "en": "As times change, thinking changes with them: 「noun ＋ とともに」 (along with)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「をはじめ」是举出一类事物中的代表，“时代”和“想法”不是这种关系。",
+        "en": "「をはじめ」 names the leading member of a group; \"the times\" and \"ways of thinking\" aren't that relation."
+      },
+      {
+        "zh": "名词接「上に」要用「である上に」，而且这里不是叠加评价。",
+        "en": "A noun needs 「である上に」, and this isn't stacking evaluations."
+      },
+      {
+        "zh": "「時代にとって」是“对时代来说”，意思不通。",
+        "en": "「時代にとって」 means \"for the times,\" which makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n3-l46-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson46#5"
+    ],
+    "difficulty": 2,
+    "stem": "新しい 年を 家族（　）迎えた。",
+    "options": [
+      "とともに",
+      "に伴い",
+      "をはじめ",
+      "上に"
+    ],
+    "answer": 0,
+    "full": "新しい 年を 家族とともに 迎えた。",
+    "tr": {
+      "zh": "和家人一起迎来了新年。",
+      "en": "I welcomed the New Year with my family."
+    },
+    "why": {
+      "zh": "这里是“和家人一起”做某事，用「名词＋とともに」的“共同动作”义。",
+      "en": "\"Together with my family\" — the joint-action meaning of 「noun ＋ とともに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に伴い」表示伴随变化，不能表示“和某人一起”。",
+        "en": "「に伴い」 describes accompanying change; it can't mean \"together with someone.\""
+      },
+      {
+        "zh": "「をはじめ」后面要接以A为首的一群人或事物，句中没有。",
+        "en": "「をはじめ」 needs a group headed by A after it; there isn't one here."
+      },
+      {
+        "zh": "名词接「上に」要用「である上に」，而且“上に”不表示“一起”。",
+        "en": "A noun needs 「である上に」, and 「上に」 doesn't mean \"together with.\""
+      }
+    ]
+  },
+  {
+    "id": "n3-l46-015",
+    "type": "narabe",
+    "refs": [
+      "lesson46#5"
+    ],
+    "difficulty": 1,
+    "stem": "年を [_] [_] [★] [_] 落ちて きた。",
+    "options": [
+      "体力が",
+      "と",
+      "取る",
+      "ともに"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "年を 取るとともに 体力が 落ちて きた。",
+    "tr": {
+      "zh": "随着年龄增长，体力下降了。",
+      "en": "As I've gotten older, my stamina has declined."
+    },
+    "why": {
+      "zh": "取る（辞书形）＋ と ＋ ともに ＋ 体力が。★ 在第三格，是「ともに」。",
+      "en": "取る (dictionary form) ＋ と ＋ ともに ＋ 体力が. The ★ is the third slot: 「ともに」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l46-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson46#6"
+    ],
+    "difficulty": 2,
+    "stem": "人口の 増加（　）、住宅問題が 深刻に なった。",
+    "options": [
+      "に伴い",
+      "に伴う",
+      "で伴い",
+      "と伴い"
+    ],
+    "answer": 0,
+    "full": "人口の 増加に伴い、住宅問題が 深刻に なった。",
+    "tr": {
+      "zh": "伴随人口增加，住房问题变得严重了。",
+      "en": "As the population grew, the housing problem became serious."
+    },
+    "why": {
+      "zh": "后面是逗号和整句，要用连用形「に伴い」（伴随着……）；助词是「に」。",
+      "en": "A comma and a full clause follow, so the connective 「に伴い」 is needed; the particle is 「に」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に伴う」后面必须接名词（に伴う問題），这里后面是逗号和句子。",
+        "en": "「に伴う」 must be followed by a noun (に伴う問題); here a comma and a clause follow."
+      },
+      {
+        "zh": "「伴う」前面的助词是「に」，「で伴い」不成立。",
+        "en": "「伴う」 takes 「に」; 「で伴い」 is wrong."
+      },
+      {
+        "zh": "「伴う」前面的助词是「に」，「と伴い」不成立（「とともに」才用「と」）。",
+        "en": "「伴う」 takes 「に」; 「と伴い」 is wrong (「と」 belongs to 「とともに」)."
+      }
+    ]
+  },
+  {
+    "id": "n3-l46-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson46#6"
+    ],
+    "difficulty": 3,
+    "stem": "失業者の 増加は、景気の 悪化（　）問題の 一つだ。",
+    "options": [
+      "に伴う",
+      "に伴い",
+      "に伴って",
+      "とともに"
+    ],
+    "answer": 0,
+    "full": "失業者の 増加は、景気の 悪化に伴う 問題の 一つだ。",
+    "tr": {
+      "zh": "失业者增加是伴随经济恶化而来的问题之一。",
+      "en": "Rising unemployment is one of the problems that come with a worsening economy."
+    },
+    "why": {
+      "zh": "后面紧接名词「問題」，修饰名词要用「に伴う＋名词」。",
+      "en": "The noun 「問題」 follows immediately, so the noun-modifying form 「に伴う ＋ noun」 is needed."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に伴い」是连用形，后面接句子，不能直接修饰名词「問題」。",
+        "en": "「に伴い」 is the connective form; it leads into a clause and can't modify the noun 「問題」."
+      },
+      {
+        "zh": "「に伴って」也是连接句子的形式，不能直接修饰名词。",
+        "en": "「に伴って」 also links clauses; it can't modify a noun directly."
+      },
+      {
+        "zh": "「とともに」不能直接修饰名词，要说「とともにある〜」等，这里不成立。",
+        "en": "「とともに」 can't modify a noun directly, so it doesn't fit before 「問題」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l46-018",
+    "type": "narabe",
+    "refs": [
+      "lesson46#6"
+    ],
+    "difficulty": 1,
+    "stem": "台風の [_] [_] [★] [_] 強く なって きた。",
+    "options": [
+      "風が",
+      "に",
+      "接近",
+      "伴って"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "台風の 接近に 伴って 風が 強く なって きた。",
+    "tr": {
+      "zh": "伴随台风接近，风越来越大了。",
+      "en": "As the typhoon approached, the wind grew stronger."
+    },
+    "why": {
+      "zh": "接近 ＋ に ＋ 伴って ＋ 風が。★ 在第三格，是「伴って」。",
+      "en": "接近 ＋ に ＋ 伴って ＋ 風が. The ★ is the third slot: 「伴って」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "n5-mg-001",
+    "type": "kanji",
+    "refs": ["lesson05#vocab"],
+    "difficulty": 1,
+    "stem": "へやの <<電気>>を けして ください。",
+    "options": ["でんき", "てんき", "でんぎ", "てんぎ"],
+    "answer": 0,
+    "tr": { "zh": "请把房间的灯关掉。", "en": "Please turn off the light in the room." },
+    "why": { "zh": "「電気」读「でんき」：「電」是浊音「でん」，「気」是清音「き」。", "en": "「電気」 is でんき — voiced でん, unvoiced き." },
+    "wrong": [
+      null,
+      { "zh": "「てんき」是「天気」（天气），开头是清音。", "en": "てんき is 「天気」 (weather), with an unvoiced て." },
+      { "zh": "「気」不浊化，没有「でんぎ」这个读法。", "en": "「気」 doesn't become ぎ here; でんぎ isn't a word." },
+      { "zh": "两处都读错了：开头要浊、结尾不浊。", "en": "Both sounds are off: the start is voiced, the end isn't." }
+    ]
+  },
+  {
+    "id": "n5-mg-002",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "<<そと>>で あそびましょう。",
+    "options": ["外", "夕", "名", "多"],
+    "answer": 0,
+    "tr": { "zh": "我们到外面玩吧。", "en": "Let's play outside." },
+    "why": { "zh": "「そと」（外面）写作「外」：左边「夕」，右边「卜」。", "en": "そと (outside) is written 「外」: 「夕」 on the left, 「卜」 on the right." },
+    "wrong": [
+      null,
+      { "zh": "「夕」读「ゆう」（傍晚），是「外」的左半边。", "en": "「夕」 is ゆう (evening) — just the left half of 「外」." },
+      { "zh": "「名」读「な」（名字），下面多了一个「口」。", "en": "「名」 is な (name); it has 「口」 underneath." },
+      { "zh": "「多」读「おお」（多），是两个「夕」叠在一起。", "en": "「多」 is おお (many) — two 「夕」 stacked." }
+    ]
+  },
+  {
+    "id": "n5-mg-003",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "さむいですから、まどを（　）ください。",
+    "options": ["しめて", "あけて", "つけて", "けして"],
+    "answer": 0,
+    "tr": { "zh": "因为很冷，请把窗户关上。", "en": "It's cold, so please close the window." },
+    "why": { "zh": "因为冷，所以要“关”窗户：「まどを しめる」。", "en": "It's cold, so the window gets closed: 「まどを しめる」." },
+    "wrong": [
+      null,
+      { "zh": "「あけて」是“打开”，冷的时候开窗和原因说反了。", "en": "「あけて」 (open) is the opposite of what the cold calls for." },
+      { "zh": "「つける」用于开灯、开电器，不说「まどを つける」。", "en": "「つける」 is for lights and appliances, not windows." },
+      { "zh": "「けす」用于关灯、关电器，窗户不用「けす」。", "en": "「けす」 is for switching things off, not for windows." }
+    ]
+  },
+  {
+    "id": "n5-mg-004",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<きのうは いそがしかったです。>>",
+    "options": [
+      "きのうは しごとが たくさん ありました。",
+      "きのうは しごとが ありませんでした。",
+      "きのうは ひまでした。",
+      "きのうは やすみでした。"
+    ],
+    "answer": 0,
+    "tr": { "zh": "昨天很忙。", "en": "I was busy yesterday." },
+    "why": { "zh": "「いそがしい」（忙）＝有很多事情要做：「しごとが たくさん ありました」。", "en": "「いそがしい」 (busy) means having a lot to do: 「しごとが たくさん ありました」." },
+    "wrong": [
+      null,
+      { "zh": "“没有工作”是不忙，意思相反。", "en": "\"I had no work\" means not busy — the opposite." },
+      { "zh": "「ひま」是“闲”，和「いそがしい」相反。", "en": "「ひま」 (free) is the opposite of 「いそがしい」." },
+      { "zh": "「やすみ」是“休息、放假”，不等于忙。", "en": "「やすみ」 (a day off) isn't the same as busy." }
+    ]
+  }
+]

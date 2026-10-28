@@ -1,0 +1,375 @@
+[
+  {
+    "id": "n5-l01-001",
+    "type": "bunpou",
+    "refs": ["lesson01#1"],
+    "difficulty": 1,
+    "stem": "A「田中さんは 学生ですか。」\nB「いいえ、学生（　）。会社員です。」",
+    "options": ["です", "ではありません", "ではありませんでした", "じゃなかった"],
+    "answer": 1,
+    "full": "A「田中さんは 学生ですか。」 B「いいえ、学生ではありません。会社員です。」",
+    "tr": {
+      "zh": "A：田中是学生吗？ B：不，不是学生。是公司职员。",
+      "en": "A: Is Tanaka a student? B: No, he isn't a student. He's an office worker."
+    },
+    "why": {
+      "zh": "B 先说「いいえ」，又说现在是「会社員」，所以要用现在时的否定「〜ではありません」。",
+      "en": "B says 「いいえ」 and that he is an office worker now, so the present negative 「〜ではありません」 is needed."
+    },
+    "wrong": [
+      {
+        "zh": "「です」是肯定，和前面的「いいえ」矛盾。",
+        "en": "「です」 is affirmative and contradicts 「いいえ」."
+      },
+      null,
+      {
+        "zh": "「ではありませんでした」是过去否定，但 A 问的是现在（「学生ですか」）。",
+        "en": "「ではありませんでした」 is past negative, but A asks about now (「学生ですか」)."
+      },
+      {
+        "zh": "「じゃなかった」是简体的过去否定，时态不对，也和后面的「会社員です」敬体不一致。",
+        "en": "「じゃなかった」 is plain past negative — wrong tense, and it clashes with the polite 「会社員です」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l01-002",
+    "type": "bunpou",
+    "refs": ["lesson01#1"],
+    "difficulty": 1,
+    "stem": "昨日は 日曜日（　）。今日は 月曜日です。",
+    "options": ["ではありません", "です", "でした", "ではありませんでした"],
+    "answer": 2,
+    "full": "昨日は 日曜日でした。今日は 月曜日です。",
+    "tr": {
+      "zh": "昨天是星期天。今天是星期一。",
+      "en": "Yesterday was Sunday. Today is Monday."
+    },
+    "why": {
+      "zh": "「昨日」是过去，今天是星期一，所以昨天就是星期天：用过去肯定「でした」。",
+      "en": "「昨日」 is the past, and if today is Monday, yesterday was Sunday — past affirmative 「でした」."
+    },
+    "wrong": [
+      {
+        "zh": "「ではありません」是现在否定，和「昨日」的过去时间不符。",
+        "en": "「ではありません」 is present negative and doesn't fit the past 「昨日」."
+      },
+      {
+        "zh": "「です」是现在时，说“昨天”要用过去形「でした」。",
+        "en": "「です」 is present tense; 「昨日」 needs the past 「でした」."
+      },
+      null,
+      {
+        "zh": "今天是星期一，昨天就一定是星期天，说“昨天不是星期天”在逻辑上不成立。",
+        "en": "If today is Monday, yesterday must have been Sunday, so \"wasn't Sunday\" is impossible."
+      }
+    ]
+  },
+  {
+    "id": "n5-l01-003",
+    "type": "narabe",
+    "refs": ["lesson01#1"],
+    "difficulty": 1,
+    "stem": "A「あの 人は 先生ですか。」\nB「いいえ、[_] [_] [★] [_]。学生です。」",
+    "options": ["ありません", "先生", "あの 人は", "では"],
+    "order": [2, 1, 3, 0],
+    "full": "A「あの 人は 先生ですか。」 B「いいえ、あの 人は 先生では ありません。学生です。」",
+    "tr": {
+      "zh": "A：那个人是老师吗？ B：不，那个人不是老师。是学生。",
+      "en": "A: Is that person a teacher? B: No, that person isn't a teacher. They're a student."
+    },
+    "why": {
+      "zh": "否定判断句：话题「あの人は」＋ 名词「先生」＋「では」＋「ありません」。★ 在第三格，是「では」。",
+      "en": "Negative copula: topic 「あの人は」 ＋ noun 「先生」 ＋ 「では」 ＋ 「ありません」. The ★ is the third slot: 「では」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n5-l01-004",
+    "type": "bunpou",
+    "refs": ["lesson01#2"],
+    "difficulty": 1,
+    "stem": "はじめまして。私（　）リンです。中国から 来ました。どうぞ よろしく。",
+    "options": ["が", "は", "を", "の"],
+    "answer": 1,
+    "full": "はじめまして。私は リンです。中国から 来ました。どうぞ よろしく。",
+    "tr": {
+      "zh": "初次见面。我是林。从中国来的。请多关照。",
+      "en": "Nice to meet you. I'm Lin. I came from China. Pleased to meet you."
+    },
+    "why": {
+      "zh": "自我介绍时“我”是话题，后面说明关于我的信息，用话题助词「は」。",
+      "en": "In a self-introduction 「私」 is the topic and the rest tells about it, so the topic marker 「は」 is used."
+    },
+    "wrong": [
+      {
+        "zh": "「私がリンです」是“（不是别人）我才是林”，只用于回答“谁是林”，不用于初次见面的自我介绍。",
+        "en": "「私がリンです」 means \"I'm the one who is Lin\" — an answer to \"who is Lin?\", not a self-introduction."
+      },
+      null,
+      {
+        "zh": "「を」标记动作的宾语，判断句「〜です」里没有宾语。",
+        "en": "「を」 marks the object of an action; a 「〜です」 sentence has no object."
+      },
+      {
+        "zh": "「私のリン」是“我的林”，句子就没有话题了，意思不通。",
+        "en": "「私のリン」 would mean \"my Lin\" — the sentence loses its topic and makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n5-l01-005",
+    "type": "bunpou",
+    "refs": ["lesson01#2"],
+    "difficulty": 2,
+    "stem": "肉は よく 食べますが、魚（　）あまり 食べません。",
+    "options": ["も", "に", "が", "は"],
+    "answer": 3,
+    "full": "肉は よく 食べますが、魚は あまり 食べません。",
+    "tr": {
+      "zh": "肉经常吃，但鱼不怎么吃。",
+      "en": "I often eat meat, but I don't eat much fish."
+    },
+    "why": {
+      "zh": "「肉は〜が、魚は〜」是对比：肉是这样，鱼却不同。表示对比用「は」。",
+      "en": "「肉は…が、魚は…」 sets meat against fish — contrastive 「は」."
+    },
+    "wrong": [
+      {
+        "zh": "「も」是“也”，但前半句是“吃”，后半句是“不吃”，不是同类，不能说“鱼也不吃”。",
+        "en": "「も」 means \"also\", but the first half says \"eat\" and the second \"don't eat\" — nothing is shared."
+      },
+      {
+        "zh": "「に」表示时间、地点或对象，「食べる」的对象不用「に」。",
+        "en": "「に」 marks a time, place or target; the thing you eat isn't marked with 「に」."
+      },
+      {
+        "zh": "「魚が食べません」变成“鱼不吃（东西）”，鱼成了吃的人。",
+        "en": "「魚が食べません」 would make the fish the eater: \"the fish doesn't eat\"."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n5-l01-006",
+    "type": "narabe",
+    "refs": ["lesson01#2"],
+    "difficulty": 1,
+    "stem": "あの [_] [★] [_] [_] です。",
+    "options": ["先生", "私の", "人", "は"],
+    "order": [2, 3, 1, 0],
+    "full": "あの 人は 私の 先生です。",
+    "tr": {
+      "zh": "那个人是我的老师。",
+      "en": "That person is my teacher."
+    },
+    "why": {
+      "zh": "「あの人」是话题，后接「は」，再说明“是我的老师”：あの 人 は 私の 先生 です。★ 在第二格，是「は」。",
+      "en": "「あの人」 is the topic, marked by 「は」, followed by what it is: あの 人 は 私の 先生 です. The ★ is the second slot: 「は」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n5-l01-007",
+    "type": "bunpou",
+    "refs": ["lesson01#3"],
+    "difficulty": 1,
+    "stem": "A「だれ（　）来ましたか。」\nB「田中さんが 来ました。」",
+    "options": ["が", "は", "を", "に"],
+    "answer": 0,
+    "full": "A「だれが 来ましたか。」 B「田中さんが 来ました。」",
+    "tr": {
+      "zh": "A：谁来了？ B：田中来了。",
+      "en": "A: Who came? B: Tanaka came."
+    },
+    "why": {
+      "zh": "疑问词「だれ」做主语时必须用「が」，回答也用「が」。",
+      "en": "When a question word like 「だれ」 is the subject it takes 「が」, and so does the answer."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "疑问词不能做「は」的话题，「だれは」是错误的。",
+        "en": "A question word can't be a 「は」 topic; 「だれは」 is wrong."
+      },
+      {
+        "zh": "「を」标记宾语，但「来る」没有宾语，来的人是主语。",
+        "en": "「を」 marks an object, but 「来る」 has none — the person who came is the subject."
+      },
+      {
+        "zh": "「だれに」是“到谁那里/对谁”，B 的回答「田中さんが」说明问的是谁来了。",
+        "en": "「だれに」 means \"to whom\"; B's 「田中さんが」 shows A asked who came."
+      }
+    ]
+  },
+  {
+    "id": "n5-l01-008",
+    "type": "bunpou",
+    "refs": ["lesson01#3"],
+    "difficulty": 2,
+    "stem": "マリアさんは 日本語（　）少し わかります。",
+    "options": ["を", "と", "が", "に"],
+    "answer": 2,
+    "full": "マリアさんは 日本語が 少し わかります。",
+    "tr": {
+      "zh": "玛丽亚懂一点日语。",
+      "en": "Maria understands a little Japanese."
+    },
+    "why": {
+      "zh": "「わかる」（懂）的对象用「が」，不用「を」。",
+      "en": "The thing you understand with 「わかる」 is marked with 「が」, not 「を」."
+    },
+    "wrong": [
+      {
+        "zh": "「わかる」不是他动词，「日本語をわかります」是常见错误，标准说法是「日本語がわかります」。",
+        "en": "「わかる」 isn't transitive; 「日本語をわかります」 is a common mistake — standard Japanese uses 「が」."
+      },
+      {
+        "zh": "「と」是“和”，「日本語と」后面缺少另一个东西，意思不通。",
+        "en": "「と」 means \"and/with\"; 「日本語と」 leaves nothing to pair with."
+      },
+      null,
+      {
+        "zh": "「に」表示对象或地点，「わかる」的内容不用「に」。",
+        "en": "「に」 marks a target or place; what you understand isn't marked with 「に」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l01-009",
+    "type": "narabe",
+    "refs": ["lesson01#3"],
+    "difficulty": 2,
+    "stem": "これは [_] [_] [★] [_] です。",
+    "options": ["料理", "母", "作った", "が"],
+    "order": [1, 3, 2, 0],
+    "full": "これは 母が 作った 料理です。",
+    "tr": {
+      "zh": "这是妈妈做的菜。",
+      "en": "This is a dish my mother made."
+    },
+    "why": {
+      "zh": "修饰名词的小句里，主语用「が」：「母が作った」修饰「料理」。★ 在第三格，是「作った」。",
+      "en": "Inside a clause that modifies a noun, the subject takes 「が」: 「母が作った」 modifies 「料理」. The ★ is the third slot: 「作った」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n5-l01-010",
+    "type": "bunpou",
+    "refs": ["lesson01#4", "lesson01#3"],
+    "difficulty": 2,
+    "stem": "A「どれが 田中さんの かばんですか。」\nB「その 黒い かばん（　）田中さんのです。」",
+    "options": ["を", "も", "は", "が"],
+    "answer": 3,
+    "full": "A「どれが 田中さんの かばんですか。」 B「その 黒い かばんが 田中さんのです。」",
+    "tr": {
+      "zh": "A：哪个是田中的包？ B：那个黑色的包是田中的。",
+      "en": "A: Which one is Tanaka's bag? B: That black bag is Tanaka's."
+    },
+    "why": {
+      "zh": "A 用「どれが」问“哪个”，回答要指认出那一个，也用「が」。",
+      "en": "A asks with 「どれが」 (which one), so the answer picks one out and also uses 「が」."
+    },
+    "wrong": [
+      {
+        "zh": "「を」标记动作的宾语，这是判断句「〜のです」，没有动作。",
+        "en": "「を」 marks an action's object; this is a 「〜のです」 sentence with no action."
+      },
+      {
+        "zh": "「も」是“也”，但前面没有提到别的包是田中的。",
+        "en": "「も」 means \"also\", but no other bag of Tanaka's has been mentioned."
+      },
+      {
+        "zh": "回答「どれが」这种疑问词主语的问题，被指认的部分要用「が」；用「は」就答非所问了。",
+        "en": "An answer to a 「どれが」 question marks the item picked out with 「が」; 「は」 doesn't answer \"which one\"."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n5-l01-011",
+    "type": "bunpou",
+    "refs": ["lesson01#4", "lesson02#2"],
+    "difficulty": 2,
+    "stem": "私の 町（　）大きい 公園が あります。",
+    "options": ["では", "には", "を", "が"],
+    "answer": 1,
+    "full": "私の 町には 大きい 公園が あります。",
+    "tr": {
+      "zh": "我住的镇上有一个大公园。",
+      "en": "There is a big park in my town."
+    },
+    "why": {
+      "zh": "存在句「〜に〜があります」：存在的地点用「に」，提为话题加「は」成「には」；新信息「公園」用「が」。",
+      "en": "Existence: 「〜に〜があります」. The place takes 「に」, made the topic as 「には」; the new item 「公園」 takes 「が」."
+    },
+    "wrong": [
+      {
+        "zh": "「で」表示动作发生的场所，「ある」表示东西的存在，地点要用「に」。",
+        "en": "「で」 marks where an action happens; for something existing (「ある」) the place takes 「に」."
+      },
+      null,
+      {
+        "zh": "「を」标记宾语，「町」不是动作的对象。",
+        "en": "「を」 marks an object; the town isn't the object of anything."
+      },
+      {
+        "zh": "后面已经有「公園が」，「町が」再用「が」，句子就有两个主语，意思不通。",
+        "en": "「公園が」 is already the subject; 「町が」 would give the sentence two subjects."
+      }
+    ]
+  },
+  {
+    "id": "n5-l01-012",
+    "type": "bunpou",
+    "refs": ["lesson01#4", "lesson01#3"],
+    "difficulty": 2,
+    "stem": "むかし むかし、ある 村に おじいさん（　）住んで いました。おじいさんは 毎日 山へ 行きました。",
+    "options": ["が", "を", "で", "は"],
+    "answer": 0,
+    "full": "むかし むかし、ある 村に おじいさんが 住んで いました。おじいさんは 毎日 山へ 行きました。",
+    "tr": {
+      "zh": "很久很久以前，某个村子里住着一位老爷爷。老爷爷每天都上山。",
+      "en": "Long, long ago, an old man lived in a certain village. Every day the old man went to the mountains."
+    },
+    "why": {
+      "zh": "故事开头老爷爷第一次出场，是新信息，用「が」；第二句再提到时才换成「は」。",
+      "en": "The old man appears for the first time — new information takes 「が」; the second sentence, mentioning him again, switches to 「は」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「を」标记宾语，「住む」没有宾语，老爷爷是住的人。",
+        "en": "「を」 marks an object; 「住む」 has none — the old man is the one living there."
+      },
+      {
+        "zh": "「で」表示场所或手段，「おじいさんで」意思不通。",
+        "en": "「で」 marks a place or means; 「おじいさんで」 makes no sense."
+      },
+      {
+        "zh": "第一次介绍新人物要用「が」；「は」是已知话题，用在第二句「おじいさんは」那样再次提到时。",
+        "en": "A character introduced for the first time takes 「が」; 「は」 is for a known topic, as in the second sentence."
+      }
+    ]
+  },
+  {
+    "id": "n5-l01-013",
+    "type": "narabe",
+    "refs": ["lesson01#4"],
+    "difficulty": 2,
+    "stem": "この 町 [_] [★] [_] [_]。",
+    "options": ["公園が", "あります", "には", "大きい"],
+    "order": [2, 3, 0, 1],
+    "full": "この 町には 大きい 公園が あります。",
+    "tr": {
+      "zh": "这个镇上有一个大公园。",
+      "en": "There is a big park in this town."
+    },
+    "why": {
+      "zh": "典型存在句：话题「この町には」＋ 新信息「大きい公園が」＋「あります」。★ 在第二格，是「大きい」。",
+      "en": "The typical existence pattern: topic 「この町には」 ＋ new item 「大きい公園が」 ＋ 「あります」. The ★ is the second slot: 「大きい」."
+    },
+    "wrong": [null, null, null, null]
+  }
+]

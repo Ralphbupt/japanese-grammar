@@ -1,0 +1,698 @@
+[
+  {
+    "id": "n4-l31-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson31#1"
+    ],
+    "difficulty": 1,
+    "stem": "ゆうべ お酒を（　）、今朝は 頭が 痛いです。",
+    "options": [
+      "飲みすぎて",
+      "飲むすぎて",
+      "飲みやすくて",
+      "飲みにくくて"
+    ],
+    "answer": 0,
+    "full": "ゆうべ お酒を 飲みすぎて、今朝は 頭が 痛いです。",
+    "tr": {
+      "zh": "昨晚喝酒喝多了，今天早上头疼。",
+      "en": "I drank too much last night, so I have a headache this morning."
+    },
+    "why": {
+      "zh": "头疼的原因是“喝太多”，动词ます形词干＋「すぎる」：飲みすぎて。",
+      "en": "The headache comes from drinking too much: verb stem ＋ 「すぎる」 → 飲みすぎて."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「すぎる」接在ます形词干后面，不接辞书形（×飲むすぎる）。",
+        "en": "「すぎる」 attaches to the ます-stem, not the dictionary form (×飲むすぎる)."
+      },
+      {
+        "zh": "「飲みやすい」是“容易喝”，前面要用「が」，而且“容易喝”不能说明头疼的原因。",
+        "en": "「飲みやすい」 (easy to drink) takes 「が」, and \"easy to drink\" doesn't explain the headache."
+      },
+      {
+        "zh": "「飲みにくい」是“难喝/不好喝下去”，和头疼的因果关系不通，前面也不用「を」。",
+        "en": "「飲みにくい」 (hard to drink) doesn't explain the headache and doesn't take 「を」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l31-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson31#1"
+    ],
+    "difficulty": 2,
+    "stem": "この スープは 味が（　）。塩を 少し 入れましょう。",
+    "options": [
+      "なすぎます",
+      "なくすぎます",
+      "ないすぎます",
+      "なさすぎます"
+    ],
+    "answer": 3,
+    "full": "この スープは 味が なさすぎます。塩を 少し 入れましょう。",
+    "tr": {
+      "zh": "这汤味道太淡了。加一点盐吧。",
+      "en": "This soup has far too little flavour. Let's add some salt."
+    },
+    "why": {
+      "zh": "“味道太淡（太没有味道）”是「ない＋すぎる」，要插入「さ」：なさすぎる。",
+      "en": "\"Too little flavour\" is 「ない ＋ すぎる」, which inserts 「さ」: なさすぎる."
+    },
+    "wrong": [
+      {
+        "zh": "「ない」接「すぎる」时要加「さ」，「なすぎる」是错误形式。",
+        "en": "「ない」 needs 「さ」 before 「すぎる」; 「なすぎる」 is wrong."
+      },
+      {
+        "zh": "没有「なくすぎる」这种形式，要说「なさすぎる」。",
+        "en": "「なくすぎる」 isn't a form; it's 「なさすぎる」."
+      },
+      {
+        "zh": "「すぎる」不接い形容词的原形，「ないすぎる」不成立。",
+        "en": "「すぎる」 doesn't attach to the full adjective; 「ないすぎる」 is wrong."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n4-l31-003",
+    "type": "narabe",
+    "refs": [
+      "lesson31#1"
+    ],
+    "difficulty": 2,
+    "stem": "この かばんは [_] [_] [★] [_]、買えませんでした。",
+    "options": [
+      "が",
+      "すてき",
+      "高すぎて",
+      "です"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "この かばんは すてきですが 高すぎて、買えませんでした。",
+    "tr": {
+      "zh": "这个包很漂亮，但是太贵了，没能买。",
+      "en": "This bag is lovely, but it was too expensive, so I couldn't buy it."
+    },
+    "why": {
+      "zh": "すてき ＋ です ＋ が（但是）＋ 高すぎて（太贵，所以）：“漂亮但太贵，买不起”。★ 在第三格，是「が」。",
+      "en": "すてき ＋ です ＋ が (but) ＋ 高すぎて (too expensive, so): lovely but too pricey to buy. The ★ is the third slot: 「が」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l31-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson31#2"
+    ],
+    "difficulty": 1,
+    "stem": "この 本は 字が 大きくて、（　）です。",
+    "options": [
+      "読みにくい",
+      "読みやすい",
+      "読みすぎ",
+      "読み方"
+    ],
+    "answer": 1,
+    "full": "この 本は 字が 大きくて、読みやすいです。",
+    "tr": {
+      "zh": "这本书字很大，容易读。",
+      "en": "This book has large print, so it's easy to read."
+    },
+    "why": {
+      "zh": "字大，所以“容易读”，用「ます形词干＋やすい」。",
+      "en": "Large print makes it easy to read: stem ＋ 「やすい」."
+    },
+    "wrong": [
+      {
+        "zh": "「読みにくい」是“难读”，和“字很大”矛盾。",
+        "en": "「読みにくい」 (hard to read) contradicts the large print."
+      },
+      null,
+      {
+        "zh": "「読みすぎです」是“读太多”，字大不是读太多的原因。",
+        "en": "「読みすぎです」 means reading too much; large print isn't a reason for that."
+      },
+      {
+        "zh": "「読み方です」是“这是读法”，和“字大”接不上。",
+        "en": "「読み方です」 (\"it's the way of reading\") doesn't follow \"the print is large\"."
+      }
+    ]
+  },
+  {
+    "id": "n4-l31-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson31#2"
+    ],
+    "difficulty": 2,
+    "stem": "この 薬は 大きくて、（　）。もう 少し 小さければ いいのですが。",
+    "options": [
+      "飲みやすいです",
+      "飲みすぎます",
+      "飲みにくいです",
+      "飲み出します"
+    ],
+    "answer": 2,
+    "full": "この 薬は 大きくて、飲みにくいです。もう 少し 小さければ いいのですが。",
+    "tr": {
+      "zh": "这药太大了，不好咽。要是再小一点就好了。",
+      "en": "These pills are big and hard to swallow. I wish they were a little smaller."
+    },
+    "why": {
+      "zh": "药片大、希望它小一点，说明“不好吞下去”，用「〜にくい」。",
+      "en": "The pill is big and the speaker wishes it were smaller, so it's hard to swallow: 「〜にくい」."
+    },
+    "wrong": [
+      {
+        "zh": "「飲みやすい」是“容易吞”，和“希望再小一点”矛盾。",
+        "en": "「飲みやすい」 (easy to take) contradicts wishing it were smaller."
+      },
+      {
+        "zh": "「飲みすぎます」是“吃太多”，和药片大小无关。",
+        "en": "「飲みすぎます」 means taking too much — unrelated to the pill's size."
+      },
+      null,
+      {
+        "zh": "「〜出す」是突然开始做，和药片大小无关。",
+        "en": "「〜出す」 means suddenly starting to do something; it has nothing to do with the size."
+      }
+    ]
+  },
+  {
+    "id": "n4-l31-006",
+    "type": "narabe",
+    "refs": [
+      "lesson31#2"
+    ],
+    "difficulty": 1,
+    "stem": "田中先生の 説明は [_] [_] [★] [_] です。",
+    "options": [
+      "やすい",
+      "人気",
+      "分かり",
+      "ので"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "田中先生の 説明は 分かりやすいので 人気です。",
+    "tr": {
+      "zh": "田中老师的讲解很好懂，所以很受欢迎。",
+      "en": "Mr Tanaka's explanations are easy to follow, so they're popular."
+    },
+    "why": {
+      "zh": "分かり ＋ やすい（容易懂）＋ ので（因为）＋ 人気です。★ 在第三格，是「ので」。",
+      "en": "分かり ＋ やすい (easy to understand) ＋ ので (so) ＋ 人気です. The ★ is the third slot: 「ので」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l31-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson31#3"
+    ],
+    "difficulty": 1,
+    "stem": "A「明日の 試験、落ちたら どうしよう。」\nB「そんなに 心配する（　）よ。たくさん 勉強したから、きっと 大丈夫。」",
+    "options": [
+      "ことがある",
+      "ことにする",
+      "ことになる",
+      "ことはない"
+    ],
+    "answer": 3,
+    "full": "A「明日の 試験、落ちたら どうしよう。」 B「そんなに 心配する ことはないよ。たくさん 勉強したから、きっと 大丈夫。」",
+    "tr": {
+      "zh": "A：明天的考试要是没过怎么办。 B：没必要那么担心。你学了那么多，一定没问题。",
+      "en": "A: What if I fail tomorrow's exam? B: There's no need to worry so much. You studied hard — you'll be fine."
+    },
+    "why": {
+      "zh": "B 在安慰 A：“没必要那么担心”，用「辞书形＋ことはない」。",
+      "en": "B is reassuring A — \"no need to worry\": dictionary form ＋ 「ことはない」."
+    },
+    "wrong": [
+      {
+        "zh": "「辞书形＋ことがある」是“有时会……”，和后面的“一定没问题”接不上。",
+        "en": "Dictionary form ＋ 「ことがある」 means \"sometimes\"; it doesn't lead into \"you'll be fine\"."
+      },
+      {
+        "zh": "「ことにする」是自己决定做某事，不能用来安慰对方。",
+        "en": "「ことにする」 is deciding to do something yourself — not reassurance."
+      },
+      {
+        "zh": "「ことになる」是“决定了要……/结果会……”，意思不对。",
+        "en": "「ことになる」 (it's been decided / it will turn out) doesn't fit."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n4-l31-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson31#3"
+    ],
+    "difficulty": 2,
+    "stem": "電車は 10時に 出ます。まだ 30分 ありますから、（　）ことは ありません。",
+    "options": [
+      "急ぐ",
+      "急いだ",
+      "急いで",
+      "急ぎ"
+    ],
+    "answer": 0,
+    "full": "電車は 10時に 出ます。まだ 30分 ありますから、急ぐ ことは ありません。",
+    "tr": {
+      "zh": "电车10点出发。还有30分钟，没必要着急。",
+      "en": "The train leaves at ten. There are still thirty minutes, so there's no need to hurry."
+    },
+    "why": {
+      "zh": "还有时间，所以“没必要着急”：「动词辞书形＋ことはない」。",
+      "en": "There's still time, so \"no need to hurry\": dictionary form ＋ 「ことはない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「た形＋ことはない」是“从来没有……过”的经历，和“还有30分钟”接不上。",
+        "en": "た-form ＋ 「ことはない」 means \"have never done\" — it doesn't follow \"there are 30 minutes left\"."
+      },
+      {
+        "zh": "「ことはない」不接て形。",
+        "en": "「ことはない」 doesn't follow the て-form."
+      },
+      {
+        "zh": "「ことはない」不接ます形词干。",
+        "en": "「ことはない」 doesn't follow the ます-stem."
+      }
+    ]
+  },
+  {
+    "id": "n4-l31-009",
+    "type": "narabe",
+    "refs": [
+      "lesson31#3"
+    ],
+    "difficulty": 1,
+    "stem": "電話で いいですから、[_] [_] [★] [_] よ。",
+    "options": [
+      "ない",
+      "ことは",
+      "来る",
+      "わざわざ"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "電話で いいですから、わざわざ 来る ことは ないよ。",
+    "tr": {
+      "zh": "打电话就行，没必要特地过来。",
+      "en": "A phone call is fine — there's no need to come all this way."
+    },
+    "why": {
+      "zh": "わざわざ（特地）＋ 来る（辞书形）＋ ことは ＋ ない：“没必要特地来”。★ 在第三格，是「ことは」。",
+      "en": "わざわざ (specially) ＋ 来る (dictionary form) ＋ ことは ＋ ない: \"no need to come specially\". The ★ is the third slot: 「ことは」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l31-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson31#4"
+    ],
+    "difficulty": 1,
+    "stem": "すみません、この コピー機の（　）を 教えて ください。",
+    "options": [
+      "使う方",
+      "使い方",
+      "使って方",
+      "使いやすい"
+    ],
+    "answer": 1,
+    "full": "すみません、この コピー機の 使い方を 教えて ください。",
+    "tr": {
+      "zh": "不好意思，请教我这台复印机的用法。",
+      "en": "Excuse me, could you show me how to use this copier?"
+    },
+    "why": {
+      "zh": "“……的用法”是「ます形词干＋方」：使い方。整体是名词，所以能接「を」。",
+      "en": "\"How to use\" is stem ＋ 「方」: 使い方 — a noun, so it can take 「を」."
+    },
+    "wrong": [
+      {
+        "zh": "「方（かた）」接在ます形词干后面，不接辞书形。",
+        "en": "「方」 (way of) attaches to the ます-stem, not the dictionary form."
+      },
+      null,
+      {
+        "zh": "「方」不接て形。",
+        "en": "「方」 doesn't attach to the て-form."
+      },
+      {
+        "zh": "「使いやすい」是形容词，不能直接接「を」，也不是“用法”。",
+        "en": "「使いやすい」 is an adjective; it can't take 「を」 and doesn't mean \"how to use\"."
+      }
+    ]
+  },
+  {
+    "id": "n4-l31-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson31#4"
+    ],
+    "difficulty": 2,
+    "stem": "駅までの（　）が 分からないので、地図で 調べます。",
+    "options": [
+      "行く方",
+      "行ったほう",
+      "行き方",
+      "行って"
+    ],
+    "answer": 2,
+    "full": "駅までの 行き方が 分からないので、地図で 調べます。",
+    "tr": {
+      "zh": "不知道去车站怎么走，所以用地图查一下。",
+      "en": "I don't know how to get to the station, so I'll look it up on the map."
+    },
+    "why": {
+      "zh": "前面有「駅までの」，要接名词：“去车站的走法”是「行き方」。",
+      "en": "「駅までの」 needs a noun after it: \"the way to get there\" is 「行き方」."
+    },
+    "wrong": [
+      {
+        "zh": "「方」接在ます形词干后面（行き方），不接辞书形。",
+        "en": "「方」 follows the ます-stem (行き方), not the dictionary form."
+      },
+      {
+        "zh": "「行ったほう」是比较或建议（行ったほうがいい），不表示“走法”。",
+        "en": "「行ったほう」 is for comparison or advice (行ったほうがいい), not \"the way to go\"."
+      },
+      null,
+      {
+        "zh": "「の」后面要接名词，て形不能接在「の」后面，也不能接「が」。",
+        "en": "After 「の」 you need a noun; a て-form can't come there or take 「が」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l31-012",
+    "type": "narabe",
+    "refs": [
+      "lesson31#4"
+    ],
+    "difficulty": 1,
+    "stem": "マリアさんは お箸の [_] [_] [★] [_] ね。",
+    "options": [
+      "持ち",
+      "上手です",
+      "方",
+      "が"
+    ],
+    "order": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "full": "マリアさんは お箸の 持ち方が 上手ですね。",
+    "tr": {
+      "zh": "玛丽亚拿筷子的方法很好呢。",
+      "en": "Maria holds her chopsticks really well."
+    },
+    "why": {
+      "zh": "持ち（ます形词干）＋ 方 ＋ が ＋ 上手です：「持ち方」是名词，可以接「が」。★ 在第三格，是「が」。",
+      "en": "持ち (stem) ＋ 方 ＋ が ＋ 上手です: 「持ち方」 is a noun, so it takes 「が」. The ★ is the third slot: 「が」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l31-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson31#5"
+    ],
+    "difficulty": 1,
+    "stem": "さっきまで 晴れて いたのに、急に 雨が（　）。",
+    "options": [
+      "降り出しました",
+      "降り続けました",
+      "降りすぎました",
+      "降って みました"
+    ],
+    "answer": 0,
+    "full": "さっきまで 晴れて いたのに、急に 雨が 降り出しました。",
+    "tr": {
+      "zh": "刚才还是晴天，突然下起雨来了。",
+      "en": "It was sunny a moment ago, but suddenly it started to rain."
+    },
+    "why": {
+      "zh": "「急に」表示没有预兆突然开始，用「ます形词干＋出す」。",
+      "en": "「急に」 marks a sudden, unannounced start: stem ＋ 「出す」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜続ける」是持续做，和「急に」（突然）对不上。",
+        "en": "「〜続ける」 means continuing; it clashes with 「急に」 (suddenly)."
+      },
+      {
+        "zh": "「〜すぎる」是“太……”，“突然下得太多”意思不通。",
+        "en": "「〜すぎる」 (too much) doesn't fit \"suddenly\"."
+      },
+      {
+        "zh": "「〜てみる」是人有意地尝试，下雨不是尝试。",
+        "en": "「〜てみる」 is a person trying something; rain doesn't \"try\"."
+      }
+    ]
+  },
+  {
+    "id": "n4-l31-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson31#5"
+    ],
+    "difficulty": 1,
+    "stem": "雨が 3日間（　）、川の 水が 多く なりました。",
+    "options": [
+      "降り出して",
+      "降りやすくて",
+      "降って みて",
+      "降り続けて"
+    ],
+    "answer": 3,
+    "full": "雨が 3日間 降り続けて、川の 水が 多く なりました。",
+    "tr": {
+      "zh": "雨连续下了3天，河水涨了。",
+      "en": "It rained for three days straight, and the river rose."
+    },
+    "why": {
+      "zh": "「3日間」表示一段持续的时间，“连续下”用「ます形词干＋続ける」。",
+      "en": "「3日間」 is a stretch of time, so \"kept raining\" is stem ＋ 「続ける」."
+    },
+    "wrong": [
+      {
+        "zh": "「〜出す」是突然开始的那一刻，不能和「3日間」这样的持续时间连用。",
+        "en": "「〜出す」 is the moment something suddenly starts; it can't span 「3日間」."
+      },
+      {
+        "zh": "「降りやすい」是“容易下雨”，和「3日間」接不上。",
+        "en": "「降りやすい」 (rains easily) doesn't go with 「3日間」."
+      },
+      {
+        "zh": "「〜てみる」是人有意地尝试，下雨不是尝试。",
+        "en": "「〜てみる」 is a person trying something; rain doesn't \"try\"."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n4-l31-015",
+    "type": "narabe",
+    "refs": [
+      "lesson31#5"
+    ],
+    "difficulty": 1,
+    "stem": "先月から [_] [_] [★] [_]。",
+    "options": [
+      "始め",
+      "ました",
+      "ピアノを",
+      "習い"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "先月から ピアノを 習い始めました。",
+    "tr": {
+      "zh": "我从上个月开始学钢琴了。",
+      "en": "I started taking piano lessons last month."
+    },
+    "why": {
+      "zh": "ピアノを ＋ 習い（ます形词干）＋ 始め ＋ ました：有意识地开始做用「〜始める」。★ 在第三格，是「始め」。",
+      "en": "ピアノを ＋ 習い (stem) ＋ 始め ＋ ました: a deliberate start is 「〜始める」. The ★ is the third slot: 「始め」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l31-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson31#6"
+    ],
+    "difficulty": 1,
+    "stem": "この ビルの（　）は 100メートルです。",
+    "options": [
+      "高い",
+      "高さ",
+      "高く",
+      "高くて"
+    ],
+    "answer": 1,
+    "full": "この ビルの 高さは 100メートルです。",
+    "tr": {
+      "zh": "这栋楼的高度是100米。",
+      "en": "This building is 100 metres tall."
+    },
+    "why": {
+      "zh": "「の」后面、「は」前面要放名词。い形容词去掉「い」加「さ」变成名词：高さ（高度）。",
+      "en": "Between 「の」 and 「は」 you need a noun. Drop the い and add 「さ」: 高さ (height)."
+    },
+    "wrong": [
+      {
+        "zh": "「高い」是形容词，不能放在「〜の」和「は」之间当名词用。",
+        "en": "「高い」 is an adjective; it can't stand as the noun between 「〜の」 and 「は」."
+      },
+      null,
+      {
+        "zh": "「高く」是副词形，不能当主语。",
+        "en": "「高く」 is the adverb form and can't be a subject."
+      },
+      {
+        "zh": "「高くて」是て形，不能接「は」当主语。",
+        "en": "「高くて」 is the て-form and can't be the topic with 「は」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l31-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson31#6"
+    ],
+    "difficulty": 2,
+    "stem": "病気に なって はじめて、健康の（　）が 分かりました。",
+    "options": [
+      "大切な",
+      "大切に",
+      "大切さ",
+      "大切だ"
+    ],
+    "answer": 2,
+    "full": "病気に なって はじめて、健康の 大切さが 分かりました。",
+    "tr": {
+      "zh": "生了病才明白健康的重要性。",
+      "en": "It was only after I got sick that I understood how important health is."
+    },
+    "why": {
+      "zh": "「健康の」后面、「が」前面要名词。な形容词词干＋「さ」：大切さ（重要性）。",
+      "en": "After 「健康の」 and before 「が」 you need a noun: な-adjective stem ＋ 「さ」 → 大切さ."
+    },
+    "wrong": [
+      {
+        "zh": "「大切な」后面必须接名词，不能直接接「が」。",
+        "en": "「大切な」 must be followed by a noun, not by 「が」."
+      },
+      {
+        "zh": "「大切に」是副词形，不能当主语。",
+        "en": "「大切に」 is the adverb form and can't be a subject."
+      },
+      null,
+      {
+        "zh": "「大切だ」是句尾形式，不能放在「の」和「が」之间。",
+        "en": "「大切だ」 is a predicate form; it can't sit between 「の」 and 「が」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l31-018",
+    "type": "narabe",
+    "refs": [
+      "lesson31#6"
+    ],
+    "difficulty": 1,
+    "stem": "すみません、この 川の [_] [_] [★] [_] か。",
+    "options": [
+      "は",
+      "深さ",
+      "くらいです",
+      "どの"
+    ],
+    "order": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "full": "すみません、この 川の 深さは どの くらいですか。",
+    "tr": {
+      "zh": "请问，这条河有多深？",
+      "en": "Excuse me, how deep is this river?"
+    },
+    "why": {
+      "zh": "深さ（深度，名词）＋ は ＋ どの くらいです ＋ か：问程度。★ 在第三格，是「どの」。",
+      "en": "深さ (depth, a noun) ＋ は ＋ どの くらいです ＋ か: asking how much. The ★ is the third slot: 「どの」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

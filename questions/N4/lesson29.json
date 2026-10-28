@@ -1,0 +1,270 @@
+[
+  {
+    "id": "n4-l29-001",
+    "type": "bunpou",
+    "refs": ["lesson29#1"],
+    "difficulty": 1,
+    "stem": "（取引先への 電話で）\nいつも お世話に（　）。ABC会社の 田中です。",
+    "options": ["なって おります", "なさって おります", "いたして おります", "して いただきます"],
+    "answer": 0,
+    "full": "（取引先への 電話で） いつも お世話に なって おります。ABC会社の 田中です。",
+    "tr": {
+      "zh": "（给客户公司打电话）一直承蒙您关照。我是 ABC 公司的田中。",
+      "en": "(Calling a business partner) Thank you for your continued support. This is Tanaka from ABC Company."
+    },
+    "why": {
+      "zh": "商务电话、邮件、见面的固定开场白是「お世話になっております」（一直承蒙关照）。",
+      "en": "The set opener for business calls, emails and meetings is 「お世話になっております」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「なさる」是「する」的尊敬語，「お世話になる」里的「なる」不能换成它。", "en": "「なさる」 is the honorific 「する」; the 「なる」 in 「お世話になる」 can't be swapped for it." },
+      { "zh": "「お世話にいたしております」不是固定说法，「いたす」是「する」的謙譲語。", "en": "「お世話にいたしております」 isn't the phrase; 「いたす」 is the humble 「する」." },
+      { "zh": "「お世話にしていただきます」不成立，这句寒暄固定用「なっております」。", "en": "「お世話にしていただきます」 isn't Japanese; the greeting is fixed as 「なっております」." }
+    ]
+  },
+  {
+    "id": "n4-l29-002",
+    "type": "bunpou",
+    "refs": ["lesson29#1"],
+    "difficulty": 2,
+    "stem": "本日は お忙しい ところ、お時間を（　）、ありがとうございます。",
+    "options": ["いただきまして", "さしあげまして", "お取りしまして", "なさいまして"],
+    "answer": 0,
+    "full": "本日は お忙しい ところ、お時間を いただきまして、ありがとうございます。",
+    "tr": {
+      "zh": "今天在您百忙之中抽出时间，非常感谢。",
+      "en": "Thank you for taking the time to see me today when you're so busy."
+    },
+    "why": {
+      "zh": "时间是对方给我的，“我得到了您的时间”用「もらう」的謙譲語「いただく」。",
+      "en": "The other person gave you their time — \"receiving\" it is the humble 「もらう」: 「いただく」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「さしあげる」是“我给对方”，方向反了：时间是对方给我的。", "en": "「さしあげる」 is giving to the other person — the wrong direction; they gave you their time." },
+      { "zh": "「お取りする」是謙譲語，表示“我（为您）拿”，而这里是对方抽出时间。", "en": "「お取りする」 is humble — me taking it — but it was the other person who made the time." },
+      { "zh": "「なさる」是「する」的尊敬語，「お時間をなさる」不成立。", "en": "「なさる」 is the honorific 「する」; 「お時間をなさる」 doesn't make sense." }
+    ]
+  },
+  {
+    "id": "n4-l29-003",
+    "type": "narabe",
+    "refs": ["lesson29#1", "lesson28#3"],
+    "difficulty": 2,
+    "stem": "はじめまして。営業を [_] [_] [★] [_] 田中と 申します。",
+    "options": ["担当", "させて", "いただいて", "おります"],
+    "order": [0, 1, 2, 3],
+    "full": "はじめまして。営業を 担当 させて いただいて おります 田中と 申します。",
+    "tr": {
+      "zh": "初次见面。我是负责销售的田中。",
+      "en": "How do you do? I'm Tanaka, and I handle sales."
+    },
+    "why": {
+      "zh": "「担当させていただく」（承蒙让我负责）＋「ております」（现在的状态），整句修饰「田中」。★ 在第三格，是「いただいて」。",
+      "en": "「担当させていただく」 (be allowed to handle) ＋ 「ております」 (current state), all modifying 「田中」. The ★ is the third slot: 「いただいて」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n4-l29-004",
+    "type": "bunpou",
+    "refs": ["lesson29#2"],
+    "difficulty": 1,
+    "stem": "（会社に かかって きた 電話に 出て）\n「はい、ABC商事（　）。」",
+    "options": ["で ございます", "で いらっしゃいます", "で おります", "で なさいます"],
+    "answer": 0,
+    "full": "（会社に かかって きた 電話に 出て） 「はい、ABC商事で ございます。」",
+    "tr": {
+      "zh": "（接听打到公司的电话）“您好，这里是 ABC 商事。”",
+      "en": "(Answering a call at the office) \"Hello, ABC Trading.\""
+    },
+    "why": {
+      "zh": "接电话报自己公司名，用「です」的郑重形「でございます」。",
+      "en": "Answering with your own company's name uses the formal 「です」: 「でございます」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「でいらっしゃいます」是尊敬語，用于对方，不能用来说自己公司。", "en": "「でいらっしゃいます」 is 尊敬語, for the other party — not your own company." },
+      { "zh": "「でおります」不是正确的说法，「おる」表示人“在”。", "en": "「でおります」 isn't a form; 「おる」 means a person \"is (somewhere)\"." },
+      { "zh": "「でなさいます」不成立，「なさる」是「する」的尊敬語。", "en": "「でなさいます」 doesn't exist; 「なさる」 is the honorific 「する」." }
+    ]
+  },
+  {
+    "id": "n4-l29-005",
+    "type": "bunpou",
+    "refs": ["lesson29#2"],
+    "difficulty": 2,
+    "stem": "（取引先に 電話を かけて）\n「お世話に なって おります。XYZ会社の 佐藤でございますが、田中部長は（　）でしょうか。」",
+    "options": ["いらっしゃいます", "おります", "参ります", "ございます"],
+    "answer": 0,
+    "full": "（取引先に 電話を かけて） 「お世話に なって おります。XYZ会社の 佐藤でございますが、田中部長は いらっしゃいますでしょうか。」",
+    "tr": {
+      "zh": "（给客户公司打电话）“承蒙关照。我是 XYZ 公司的佐藤，请问田中部长在吗？”",
+      "en": "(Calling a client) \"Thank you for your continued support. This is Sato from XYZ Company. Is Mr. Tanaka, the manager, available?\""
+    },
+    "why": {
+      "zh": "问对方公司的部长在不在，部长是对方的人，用尊敬語「いらっしゃいますでしょうか」。",
+      "en": "The manager belongs to the other company, so asking if he's in takes 尊敬語: 「いらっしゃいますでしょうか」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「おる」是謙譲語，只能用于自己或自己公司的人，不能说对方公司的部长。", "en": "「おる」 is humble — for yourself or your own company, not the client's manager." },
+      { "zh": "「参る」是“去/来”的謙譲語，意思和身份都不对。", "en": "「参る」 is the humble \"go/come\" — wrong meaning and wrong person." },
+      { "zh": "「ございます」用于物或事的“有”，不能问人在不在。", "en": "「ございます」 is for things existing, not for whether a person is in." }
+    ]
+  },
+  {
+    "id": "n4-l29-006",
+    "type": "narabe",
+    "refs": ["lesson29#2"],
+    "difficulty": 3,
+    "stem": "恐れ入りますが、お戻りに [_] [_] [★] [_] いただけますでしょうか。",
+    "options": ["なりましたら", "ABC会社の", "田中まで", "お電話"],
+    "order": [0, 1, 2, 3],
+    "full": "恐れ入りますが、お戻りに なりましたら ABC会社の 田中まで お電話 いただけますでしょうか。",
+    "tr": {
+      "zh": "不好意思，他回来之后，能请他给 ABC 公司的田中回个电话吗？",
+      "en": "Sorry to trouble you, but when he gets back, could he call Tanaka at ABC Company?"
+    },
+    "why": {
+      "zh": "「お戻りになりましたら」（您回来后）＋「ABC会社の田中まで」（打给 ABC 公司的田中）＋「お電話いただけますでしょうか」。★ 在第三格，是「田中まで」。",
+      "en": "「お戻りになりましたら」 (when he's back) ＋ 「ABC会社の田中まで」 (to Tanaka at ABC) ＋ 「お電話いただけますでしょうか」. The ★ is the third slot: 「田中まで」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n4-l29-007",
+    "type": "bunpou",
+    "refs": ["lesson29#3"],
+    "difficulty": 2,
+    "stem": "お手数ですが、添付の 資料を ご確認（　）でしょうか。",
+    "options": ["いただけます", "いたします", "させて いただけます", "さしあげます"],
+    "answer": 0,
+    "full": "お手数ですが、添付の 資料を ご確認 いただけますでしょうか。",
+    "tr": {
+      "zh": "麻烦您确认一下附件的资料好吗？",
+      "en": "Sorry to trouble you, but could you check the attached document?"
+    },
+    "why": {
+      "zh": "「お手数ですが」（麻烦您）说明是在请对方确认，用请求句式「ご〜いただけますでしょうか」。",
+      "en": "「お手数ですが」 shows you're asking the reader to check, so the request 「ご〜いただけますでしょうか」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「ご確認いたします」是“我来确认”，和请对方做的「お手数ですが」矛盾。", "en": "「ご確認いたします」 means \"I'll check\", contradicting 「お手数ですが」 (sorry to trouble you)." },
+      { "zh": "「確認させていただけますか」是“能让我确认吗”，确认的人变成了自己，不需要「お手数ですが」。", "en": "「させていただけます」 asks to be allowed to check yourself — not something you'd say 「お手数ですが」 for." },
+      { "zh": "「さしあげる」是“我给对方”，「ご確認さしあげます」不成立。", "en": "「さしあげる」 is giving to the other person; 「ご確認さしあげます」 doesn't work." }
+    ]
+  },
+  {
+    "id": "n4-l29-008",
+    "type": "bunpou",
+    "refs": ["lesson29#3"],
+    "difficulty": 1,
+    "stem": "（メールの 最後に）\nお忙しい ところ 申し訳ございませんが、ご返信を お待ち（　）。",
+    "options": ["して おります", "に なって おります", "して くださいます", "させて おります"],
+    "answer": 0,
+    "full": "（メールの 最後に） お忙しい ところ 申し訳ございませんが、ご返信を お待ち して おります。",
+    "tr": {
+      "zh": "（邮件结尾）百忙之中打扰十分抱歉，期待您的回复。",
+      "en": "(End of an email) I'm sorry to trouble you when you're busy, but I look forward to your reply."
+    },
+    "why": {
+      "zh": "等回复的是写邮件的自己，用謙譲語模板「お待ちする」＋「ております」。",
+      "en": "The writer is the one waiting, so the humble 「お待ちする」 ＋ 「ております」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「お待ちになる」是尊敬語，用在自己身上不对。", "en": "「お待ちになる」 is 尊敬語 — wrong for yourself." },
+      { "zh": "「くださる」的主语是对方，“对方等我”与句意不符。", "en": "「くださる」 makes the reader the one waiting — not the meaning." },
+      { "zh": "「お待ちさせる」不成立，使役形用在这里意思不对。", "en": "「お待ちさせる」 doesn't exist; a causative makes no sense here." }
+    ]
+  },
+  {
+    "id": "n4-l29-009",
+    "type": "narabe",
+    "refs": ["lesson29#3", "lesson28#2"],
+    "difficulty": 2,
+    "stem": "来週の 打ち合わせは、15時から いかがでしょうか。ご都合が [_] [_] [★] [_] おります。",
+    "options": ["よろしければ", "ご連絡を", "お待ち", "して"],
+    "order": [0, 1, 2, 3],
+    "full": "来週の 打ち合わせは、15時から いかがでしょうか。ご都合が よろしければ ご連絡を お待ち して おります。",
+    "tr": {
+      "zh": "下周的碰头会从 15 点开始您看怎么样？如果方便的话，静候您的联系。",
+      "en": "Would 3 p.m. work for next week's meeting? If that suits you, I'll look forward to hearing from you."
+    },
+    "why": {
+      "zh": "「ご都合がよろしければ」（如果方便）＋「ご連絡を」＋「お待ちしております」（我等您联系）。★ 在第三格，是「お待ち」。",
+      "en": "「ご都合がよろしければ」 (if convenient) ＋ 「ご連絡を」 ＋ 「お待ちしております」 (I'll be waiting). The ★ is the third slot: 「お待ち」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n4-l29-010",
+    "type": "bunpou",
+    "refs": ["lesson29#4"],
+    "difficulty": 3,
+    "stem": "申し訳ございませんが、その 日は 別の 予定が ございまして、お受け（　）。",
+    "options": ["いたしかねます", "いたします", "できます", "なさいます"],
+    "answer": 0,
+    "full": "申し訳ございませんが、その 日は 別の 予定が ございまして、お受け いたしかねます。",
+    "tr": {
+      "zh": "非常抱歉，那天另有安排，恐怕无法接受。",
+      "en": "I'm terribly sorry, but I have another commitment that day, so I'm afraid I can't accept."
+    },
+    "why": {
+      "zh": "「申し訳ございませんが」＋“另有安排”说明是在委婉拒绝。商务上不直说「できません」，用「〜かねます」（难以做到）。",
+      "en": "「申し訳ございませんが」 plus \"another commitment\" signals a polite refusal; business Japanese avoids 「できません」 and uses 「〜かねます」 (I'm unable to)."
+    },
+    "wrong": [
+      null,
+      { "zh": "「お受けいたします」是“我接受”，和前面的道歉、另有安排矛盾。", "en": "「お受けいたします」 means \"I accept\", contradicting the apology and the other commitment." },
+      { "zh": "「お受けできます」是“能接受”，同样和拒绝的语境相反。", "en": "「お受けできます」 (I can accept) is the opposite of the refusal." },
+      { "zh": "「なさる」是尊敬語，不能用于自己的动作，而且意思也不是拒绝。", "en": "「なさる」 is 尊敬語, not for your own action — and it isn't a refusal." }
+    ]
+  },
+  {
+    "id": "n4-l29-011",
+    "type": "bunpou",
+    "refs": ["lesson29#4"],
+    "difficulty": 2,
+    "stem": "差し支え（　）、お電話番号を 教えて いただけますか。",
+    "options": ["なければ", "あれば", "ないので", "なくても"],
+    "answer": 0,
+    "full": "差し支え なければ、お電話番号を 教えて いただけますか。",
+    "tr": {
+      "zh": "如果方便的话，能告诉我您的电话号码吗？",
+      "en": "If you don't mind, could you tell me your phone number?"
+    },
+    "why": {
+      "zh": "询问对方个人信息前的缓冲语固定是「差し支えなければ」（如果不妨碍的话）。",
+      "en": "The cushion phrase before asking for personal details is 「差し支えなければ」 (if it's no trouble)."
+    },
+    "wrong": [
+      null,
+      { "zh": "「差し支えあれば」是“如果有妨碍的话”，意思相反。", "en": "「差し支えあれば」 means \"if it's a problem\" — the opposite." },
+      { "zh": "「ないので」是“因为不妨碍”，替对方下了结论，很失礼。", "en": "「ないので」 (since it's no trouble) presumes for the other person — rude." },
+      { "zh": "「なくても」是“即使不妨碍也……”，逻辑不通。", "en": "「なくても」 (even if it's no trouble) makes no sense here." }
+    ]
+  },
+  {
+    "id": "n4-l29-012",
+    "type": "narabe",
+    "refs": ["lesson29#4", "lesson28#1"],
+    "difficulty": 2,
+    "stem": "恐れ入りますが、もう 一度 [_] [★] [_] [_] よろしいでしょうか。",
+    "options": ["お客様の", "お名前を", "伺って", "も"],
+    "order": [0, 1, 2, 3],
+    "full": "恐れ入りますが、もう 一度 お客様の お名前を 伺っても よろしいでしょうか。",
+    "tr": {
+      "zh": "不好意思，能再请教一次您的姓名吗？",
+      "en": "I'm sorry, may I ask your name once more?"
+    },
+    "why": {
+      "zh": "「お客様のお名前を」＋「伺っても」（「聞く」的謙譲語＋ても）＋「よろしいでしょうか」。★ 在第二格，是「お名前を」。",
+      "en": "「お客様のお名前を」 ＋ 「伺っても」 (humble 「聞く」 ＋ ても) ＋ 「よろしいでしょうか」. The ★ is the second slot: 「お名前を」."
+    },
+    "wrong": [null, null, null, null]
+  }
+]

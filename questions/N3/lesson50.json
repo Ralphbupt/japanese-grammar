@@ -1,0 +1,814 @@
+[
+  {
+    "id": "n3-l50-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson50#1"
+    ],
+    "difficulty": 1,
+    "stem": "今日は 社長の（　）、部長が 取引先との 会議に 出席した。",
+    "options": [
+      "代わりに",
+      "ついでに",
+      "たびに",
+      "際に"
+    ],
+    "answer": 0,
+    "full": "今日は 社長の 代わりに、部長が 取引先との 会議に 出席した。",
+    "tr": {
+      "zh": "今天部长代替社长出席了和客户的会议。",
+      "en": "Today the department head attended the meeting with the client in place of the president."
+    },
+    "why": {
+      "zh": "部长替社长出席，表示“代替某人”，用「名詞＋の＋代わりに」。",
+      "en": "The department head went in the president's place: 「名詞＋の＋代わりに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「社長のついでに」是“顺便”，人不能当作顺便做的事。",
+        "en": "「ついでに」 is \"while doing something anyway\"; a person can't be that occasion."
+      },
+      {
+        "zh": "「社長のたびに」意思不通，「たびに」接事件，表示“每次”。",
+        "en": "「社長のたびに」 makes no sense; 「たびに」 needs an event."
+      },
+      {
+        "zh": "「社長の際に」意思不通，「際」接事件或场合，不接人。",
+        "en": "「社長の際に」 makes no sense; 「際」 needs an occasion, not a person."
+      }
+    ]
+  },
+  {
+    "id": "n3-l50-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson50#1"
+    ],
+    "difficulty": 2,
+    "stem": "この アパートは 駅から 遠い（　）、家賃が 安くて 部屋も 広い。",
+    "options": [
+      "代わりに",
+      "ついでに",
+      "たびに",
+      "に比べて"
+    ],
+    "answer": 0,
+    "full": "この アパートは 駅から 遠い代わりに、家賃が 安くて 部屋も 広い。",
+    "tr": {
+      "zh": "这间公寓离车站远，但相应地房租便宜、房间也大。",
+      "en": "This apartment is far from the station, but in exchange the rent is low and the rooms are big."
+    },
+    "why": {
+      "zh": "缺点“离车站远”换来优点“便宜、宽敞”，表示交换条件用「代わりに」。",
+      "en": "A drawback balanced by advantages — the trade-off 「代わりに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ついでに」是“顺便做某事”，接形容词「遠い」不成立。",
+        "en": "「ついでに」 is \"while at it\" and can't follow 「遠い」."
+      },
+      {
+        "zh": "「たびに」接动词辞书形或「名詞の」，不接形容词。",
+        "en": "「たびに」 follows a dictionary-form verb or 「名詞の」, not an adjective."
+      },
+      {
+        "zh": "「に比べて」接名词，不接形容词「遠い」。",
+        "en": "「に比べて」 follows nouns, not 「遠い」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l50-003",
+    "type": "narabe",
+    "refs": [
+      "lesson50#1"
+    ],
+    "difficulty": 2,
+    "stem": "[_] [_] [_] [★] 、晩ご飯を おごって ね。",
+    "options": [
+      "代わりに",
+      "手伝って",
+      "引っ越しを",
+      "あげる"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "引っ越しを 手伝って あげる 代わりに、晩ご飯を おごって ね。",
+    "tr": {
+      "zh": "我帮你搬家，作为交换你请我吃晚饭哦。",
+      "en": "I'll help you move, and in return you buy me dinner, OK?"
+    },
+    "why": {
+      "zh": "「引っ越しを 手伝って あげる」＋「代わりに」表示交换条件。★ 在第四格，是「代わりに」。",
+      "en": "「引っ越しを 手伝って あげる」 ＋ 「代わりに」 sets the deal. The ★ is the fourth slot: 「代わりに」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l50-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson50#2"
+    ],
+    "difficulty": 1,
+    "stem": "郵便局に 行った（　）、近くの 銀行にも 寄って きた。",
+    "options": [
+      "ついでに",
+      "代わりに",
+      "たびに",
+      "最中に"
+    ],
+    "answer": 0,
+    "full": "郵便局に 行った ついでに、近くの 銀行にも 寄って きた。",
+    "tr": {
+      "zh": "去邮局时，顺便也去了附近的银行。",
+      "en": "While I was at the post office, I also stopped by the bank nearby."
+    },
+    "why": {
+      "zh": "主要是去邮局，“顺便”去银行，「にも」也表明是附加的，用「ついでに」。",
+      "en": "The main errand was the post office; the bank was extra (note 「にも」): 「ついでに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「代わりに」是“代替”，但「銀行にも」说明两个地方都去了，不是替代。",
+        "en": "「代わりに」 means \"instead\", but 「銀行にも」 says both places were visited."
+      },
+      {
+        "zh": "「たびに」接辞书形，不接た形。",
+        "en": "「たびに」 follows the dictionary form, not the た-form."
+      },
+      {
+        "zh": "「最中に」要接「ている」，不接た形。",
+        "en": "「最中に」 needs 「ている」, not the た-form."
+      }
+    ]
+  },
+  {
+    "id": "n3-l50-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson50#2"
+    ],
+    "difficulty": 2,
+    "stem": "買い物の（　）、クリーニングに 出して いた 服も 取って きた。",
+    "options": [
+      "ついでに",
+      "代わりに",
+      "とたんに",
+      "次第"
+    ],
+    "answer": 0,
+    "full": "買い物の ついでに、クリーニングに 出して いた 服も 取って きた。",
+    "tr": {
+      "zh": "买东西时，顺便把送去干洗的衣服也取回来了。",
+      "en": "While I was out shopping, I also picked up the clothes I'd taken to the cleaner's."
+    },
+    "why": {
+      "zh": "去买东西是主要目的，取干洗衣服是顺带的（「服も」），用「名詞の＋ついでに」。",
+      "en": "Shopping was the main purpose; picking up the clothes was extra (服も): 「名詞の＋ついでに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「代わりに」是“代替买东西”，和「服も」（也取了）矛盾。",
+        "en": "「代わりに」 would mean \"instead of shopping\", clashing with 「服も」 (also)."
+      },
+      {
+        "zh": "「とたんに」只接动词た形，不接「名詞の」。",
+        "en": "「とたんに」 only follows a verb's た-form, not 「名詞の」."
+      },
+      {
+        "zh": "「次第」接动词ます形词干，不接「名詞の」。",
+        "en": "「次第」 follows a ます-stem, not 「名詞の」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l50-006",
+    "type": "narabe",
+    "refs": [
+      "lesson50#2"
+    ],
+    "difficulty": 2,
+    "stem": "[★] [_] [_] [_] コンビニで 飲み物を 買って こよう。",
+    "options": [
+      "散歩に",
+      "ついでに",
+      "行く",
+      "犬の"
+    ],
+    "order": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "full": "犬の 散歩に 行く ついでに コンビニで 飲み物を 買って こよう。",
+    "tr": {
+      "zh": "去遛狗的时候，顺便去便利店买点饮料吧。",
+      "en": "While I'm out walking the dog, I'll pick up a drink at the convenience store."
+    },
+    "why": {
+      "zh": "「犬の 散歩に 行く」是主要动作，＋「ついでに」接附带的事。★ 在第一格，是「犬の」。",
+      "en": "「犬の 散歩に 行く」 is the main action, ＋ 「ついでに」 for the extra errand. The ★ is the first slot: 「犬の」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l50-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson50#3"
+    ],
+    "difficulty": 1,
+    "stem": "今年の 夏は 去年（　）、ずいぶん 涼しい。",
+    "options": [
+      "に比べて",
+      "によると",
+      "に代わって",
+      "について"
+    ],
+    "answer": 0,
+    "full": "今年の 夏は 去年に比べて、ずいぶん 涼しい。",
+    "tr": {
+      "zh": "今年夏天和去年相比，凉快多了。",
+      "en": "This summer is much cooler compared with last year."
+    },
+    "why": {
+      "zh": "拿今年和去年作比较，用「名詞＋に比べて」。",
+      "en": "This year is compared with last year: 「名詞＋に比べて」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「によると」表示信息来源，“据去年说”意思不通。",
+        "en": "「によると」 gives a source of information — \"according to last year\" makes no sense."
+      },
+      {
+        "zh": "「に代わって」是“代替”，“代替去年”意思不通。",
+        "en": "「に代わって」 means \"in place of\", which makes no sense with last year."
+      },
+      {
+        "zh": "「について」是“关于”，“关于去年，今年夏天凉快”接不上。",
+        "en": "「について」 means \"about\"; it doesn't connect to the comparison."
+      }
+    ]
+  },
+  {
+    "id": "n3-l50-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson50#3"
+    ],
+    "difficulty": 2,
+    "stem": "A「新しい パソコンは どう？」\nB「前の もの（　）、ずっと 速く なったよ。」",
+    "options": [
+      "に比べて",
+      "によると",
+      "のついでに",
+      "のたびに"
+    ],
+    "answer": 0,
+    "full": "A「新しい パソコンは どう？」 B「前の ものに比べて、ずっと 速く なったよ。」",
+    "tr": {
+      "zh": "A：新电脑怎么样？ B：和以前那台相比，快多了。",
+      "en": "A: How's the new computer? B: It's much faster compared with the old one."
+    },
+    "why": {
+      "zh": "「ずっと 速く」是比较的说法，和旧电脑相比用「に比べて」。",
+      "en": "「ずっと 速く」 (much faster) is a comparison: 「に比べて」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「によると」是引用信息来源，后面要接「そうだ」等传闻，和这里不符。",
+        "en": "「によると」 quotes a source and goes with hearsay like 「そうだ」; that's not what B is doing."
+      },
+      {
+        "zh": "「のついでに」是“顺便”，“旧电脑的顺便”意思不通。",
+        "en": "「のついでに」 (\"while at the old one\") makes no sense."
+      },
+      {
+        "zh": "「のたびに」是“每次”，接在“旧电脑”后意思不通。",
+        "en": "「のたびに」 (\"every time of the old one\") makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n3-l50-009",
+    "type": "narabe",
+    "refs": [
+      "lesson50#3"
+    ],
+    "difficulty": 2,
+    "stem": "日本語は [_] [_] [★] [_] 種類が 多いと 言われる。",
+    "options": [
+      "比べて",
+      "英語",
+      "文字の",
+      "に"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "日本語は 英語に 比べて 文字の 種類が 多いと 言われる。",
+    "tr": {
+      "zh": "一般认为日语和英语相比，文字的种类多。",
+      "en": "Japanese is said to have more kinds of written characters than English."
+    },
+    "why": {
+      "zh": "「英語」＋「に」＋「比べて」，再接「文字の 種類が 多い」。★ 在第三格，是「比べて」。",
+      "en": "「英語」 ＋ 「に」 ＋ 「比べて」, then 文字の 種類が 多い. The ★ is the third slot: 「比べて」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l50-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson50#4"
+    ],
+    "difficulty": 1,
+    "stem": "天気予報（　）、明日は 午後から 雪が 降る そうだ。",
+    "options": [
+      "によると",
+      "によって",
+      "に比べて",
+      "に代わって"
+    ],
+    "answer": 0,
+    "full": "天気予報によると、明日は 午後から 雪が 降る そうだ。",
+    "tr": {
+      "zh": "据天气预报说，明天下午开始下雪。",
+      "en": "According to the weather forecast, it's going to snow from tomorrow afternoon."
+    },
+    "why": {
+      "zh": "引用信息来源，并和传闻「そうだ」呼应，用「によると」。",
+      "en": "Citing a source, matched by hearsay 「そうだ」: 「によると」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「によって」表示手段、原因或行为者，不用于引出传闻的来源。",
+        "en": "「によって」 marks a means, cause or agent — not the source of hearsay."
+      },
+      {
+        "zh": "「に比べて」是比较，“和天气预报相比”意思不通。",
+        "en": "「に比べて」 compares; \"compared with the forecast\" makes no sense."
+      },
+      {
+        "zh": "「に代わって」是“代替”，和天气预报接不上。",
+        "en": "「に代わって」 means \"in place of\", which doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n3-l50-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson50#4"
+    ],
+    "difficulty": 2,
+    "stem": "新聞に よると、来月から 電気代が（　）。",
+    "options": [
+      "上がる そうだ",
+      "上がりたい",
+      "上がろう",
+      "上がって ほしい"
+    ],
+    "answer": 0,
+    "full": "新聞に よると、来月から 電気代が 上がる そうだ。",
+    "tr": {
+      "zh": "据报纸说，下个月起电费要涨。",
+      "en": "According to the newspaper, electricity bills will go up from next month."
+    },
+    "why": {
+      "zh": "「によると」引出信息来源，句尾用传闻「普通形＋そうだ」相呼应。",
+      "en": "「によると」 cites a source, so the sentence ends in hearsay: plain form ＋ 「そうだ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「上がりたい」是愿望，主语是电费，说不通。",
+        "en": "「上がりたい」 expresses a wish — electricity bills can't want anything."
+      },
+      {
+        "zh": "「上がろう」是意志形，电费不能有意志。",
+        "en": "「上がろう」 is volitional; electricity bills have no will."
+      },
+      {
+        "zh": "「上がってほしい」是愿望，和引用报纸的内容不符。",
+        "en": "「上がってほしい」 is a wish, not what a newspaper reports."
+      }
+    ]
+  },
+  {
+    "id": "n3-l50-012",
+    "type": "narabe",
+    "refs": [
+      "lesson50#4"
+    ],
+    "difficulty": 2,
+    "stem": "[_] [★] [_] [_] 、事故の 原因は スピードの 出しすぎだった そうだ。",
+    "options": [
+      "よると",
+      "警察の",
+      "に",
+      "発表"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "警察の 発表に よると、事故の 原因は スピードの 出しすぎだった そうだ。",
+    "tr": {
+      "zh": "据警方发布的消息，事故原因是超速。",
+      "en": "According to the police announcement, the accident was caused by speeding."
+    },
+    "why": {
+      "zh": "「警察の 発表」＋「に よると」，句尾的「そうだ」与之呼应。★ 在第二格，是「発表」。",
+      "en": "「警察の 発表」 ＋ 「に よると」, matched by 「そうだ」 at the end. The ★ is the second slot: 「発表」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l50-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson50#5"
+    ],
+    "difficulty": 2,
+    "stem": "この 曲を 聞く（　）、学生時代の ことを 思い出す。",
+    "options": [
+      "たびに",
+      "ついでに",
+      "最中に",
+      "代わりに"
+    ],
+    "answer": 0,
+    "full": "この 曲を 聞く たびに、学生時代の ことを 思い出す。",
+    "tr": {
+      "zh": "每次听这首曲子，都会想起学生时代。",
+      "en": "Every time I hear this song, I remember my school days."
+    },
+    "why": {
+      "zh": "“每次听都会想起”，表示反复发生，用辞书形＋「たびに」。",
+      "en": "\"Every time I hear it, I remember\" — a repeated link: dictionary form ＋ 「たびに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ついでに」是“顺便做另一件事”，“想起来”不是顺便去做的事。",
+        "en": "「ついでに」 adds a second errand; remembering isn't something you do \"while at it\"."
+      },
+      {
+        "zh": "「最中に」要接「ている」，不接辞书形。",
+        "en": "「最中に」 needs 「ている」, not the dictionary form."
+      },
+      {
+        "zh": "「代わりに」是“代替”，“代替听曲子而想起”意思不通。",
+        "en": "「代わりに」 (\"instead of listening\") makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n3-l50-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson50#5"
+    ],
+    "difficulty": 2,
+    "stem": "父は 出張の（　）、家族に お土産を 買って くる。",
+    "options": [
+      "たびに",
+      "代わりに",
+      "次第",
+      "とたんに"
+    ],
+    "answer": 0,
+    "full": "父は 出張の たびに、家族に お土産を 買って くる。",
+    "tr": {
+      "zh": "爸爸每次出差都会给家人买特产回来。",
+      "en": "Every time my father goes on a business trip, he brings back souvenirs for the family."
+    },
+    "why": {
+      "zh": "每次出差都买特产，是反复发生的事，用「名詞＋の＋たびに」。",
+      "en": "It happens on every trip: 「名詞＋の＋たびに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「出張の代わりに」是“代替出差”，和带特产回来接不上。",
+        "en": "「出張の代わりに」 (\"instead of the trip\") doesn't lead to bringing souvenirs back."
+      },
+      {
+        "zh": "「次第」接动词ます形词干，不接「名詞の」。",
+        "en": "「次第」 follows a ます-stem, not 「名詞の」."
+      },
+      {
+        "zh": "「とたんに」只接动词た形，不接「名詞の」。",
+        "en": "「とたんに」 only follows a verb's た-form, not 「名詞の」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l50-015",
+    "type": "narabe",
+    "refs": [
+      "lesson50#5"
+    ],
+    "difficulty": 2,
+    "stem": "体が 弱い 私は、[_] [_] [_] [★] 風邪を ひいて しまう。",
+    "options": [
+      "が",
+      "たびに",
+      "変わる",
+      "季節"
+    ],
+    "order": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "full": "体が 弱い 私は、季節が 変わる たびに 風邪を ひいて しまう。",
+    "tr": {
+      "zh": "体质弱的我每次换季都会感冒。",
+      "en": "My health is weak, so I catch a cold every time the season changes."
+    },
+    "why": {
+      "zh": "「季節」＋「が」＋辞书形「変わる」＋「たびに」。★ 在第四格，是「たびに」。",
+      "en": "「季節」 ＋ 「が」 ＋ dictionary form 「変わる」 ＋ 「たびに」. The ★ is the fourth slot: 「たびに」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l50-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson50#6"
+    ],
+    "difficulty": 2,
+    "stem": "一人暮らしを（　）、料理や 洗濯の 大変さが 分かった。",
+    "options": [
+      "して初めて",
+      "する たびに",
+      "した ついでに",
+      "する 代わりに"
+    ],
+    "answer": 0,
+    "full": "一人暮らしを して初めて、料理や 洗濯の 大変さが 分かった。",
+    "tr": {
+      "zh": "一个人生活之后，才第一次明白做饭洗衣服有多辛苦。",
+      "en": "It wasn't until I lived alone that I realized how hard cooking and laundry are."
+    },
+    "why": {
+      "zh": "“做了某事之后才第一次明白”，用「て形＋初めて」，常和「分かった」「気づいた」一起用。",
+      "en": "\"Only after doing it did I realize\" — て-form ＋ 「初めて」, typically with 分かった / 気づいた."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「するたびに分かった」是“每次一个人住都明白了”，一个人生活是持续的经历，意思不对。",
+        "en": "「するたびに」 (\"every time I live alone\") doesn't fit a single, continuing experience."
+      },
+      {
+        "zh": "「したついでに」是“顺便”，明白辛苦不是顺便做的事。",
+        "en": "「したついでに」 (\"while at it\") doesn't fit coming to a realization."
+      },
+      {
+        "zh": "「する代わりに」是“代替/交换”，和“明白了辛苦”接不上。",
+        "en": "「する代わりに」 (\"instead of / in exchange\") doesn't lead to the realization."
+      }
+    ]
+  },
+  {
+    "id": "n3-l50-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson50#6"
+    ],
+    "difficulty": 1,
+    "stem": "病気に なって（　）、健康の 大切さに 気づいた。",
+    "options": [
+      "初めて",
+      "たびに",
+      "次第",
+      "とたんに"
+    ],
+    "answer": 0,
+    "full": "病気に なって 初めて、健康の 大切さに 気づいた。",
+    "tr": {
+      "zh": "生了病，才第一次意识到健康的重要。",
+      "en": "It was only after I got sick that I realized how important health is."
+    },
+    "why": {
+      "zh": "「なって」是て形，后面接「初めて」表示“……之后才第一次意识到”。",
+      "en": "「なって」 is the て-form; 「初めて」 follows it: \"only after… did I realize\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「たびに」接辞书形或「名詞の」，不接て形。",
+        "en": "「たびに」 follows the dictionary form or 「名詞の」, not the て-form."
+      },
+      {
+        "zh": "「次第」接ます形词干，不接て形。",
+        "en": "「次第」 follows the ます-stem, not the て-form."
+      },
+      {
+        "zh": "「とたんに」接た形（なったとたんに），不接て形。",
+        "en": "「とたんに」 follows the た-form (なったとたんに), not the て-form."
+      }
+    ]
+  },
+  {
+    "id": "n3-l50-018",
+    "type": "narabe",
+    "refs": [
+      "lesson50#6"
+    ],
+    "difficulty": 2,
+    "stem": "自分が [★] [_] [_] [_] 、親の ありがたさが 分かった。",
+    "options": [
+      "初めて",
+      "親",
+      "なって",
+      "に"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "自分が 親に なって 初めて、親の ありがたさが 分かった。",
+    "tr": {
+      "zh": "自己当了父母，才第一次体会到父母的恩情。",
+      "en": "Only when I became a parent myself did I understand how much I owe my parents."
+    },
+    "why": {
+      "zh": "「親」＋「に」＋て形「なって」＋「初めて」。★ 在第一格，是「親」。",
+      "en": "「親」 ＋ 「に」 ＋ て-form 「なって」 ＋ 「初めて」. The ★ is the first slot: 「親」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l50-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson50#7"
+    ],
+    "difficulty": 2,
+    "stem": "本日は 社長（　）、副社長の 私が ごあいさつ 申し上げます。",
+    "options": [
+      "に代わって",
+      "に比べて",
+      "によると",
+      "について"
+    ],
+    "answer": 0,
+    "full": "本日は 社長に代わって、副社長の 私が ごあいさつ 申し上げます。",
+    "tr": {
+      "zh": "今天由我这个副社长代替社长致辞。",
+      "en": "Today I, the vice president, will give the greeting in place of the president."
+    },
+    "why": {
+      "zh": "副社长代替社长致辞，正式场合的“代替”用「名詞＋に代わって」。",
+      "en": "The vice president speaks in the president's place — formal \"in place of\": 「名詞＋に代わって」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に比べて」是比较，“和社长相比由我致辞”意思不通。",
+        "en": "「に比べて」 compares, which makes no sense here."
+      },
+      {
+        "zh": "「によると」是信息来源，后面要接传闻，不能接自己的行动。",
+        "en": "「によると」 cites a source for hearsay, not one's own action."
+      },
+      {
+        "zh": "「について」是“关于社长”，致辞的内容不是这里要表达的。",
+        "en": "「について」 (\"about the president\") isn't what is meant; the point is who speaks."
+      }
+    ]
+  },
+  {
+    "id": "n3-l50-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson50#7"
+    ],
+    "difficulty": 2,
+    "stem": "最近は 手紙（　）、メールや SNSで 連絡する 人が ほとんどだ。",
+    "options": [
+      "に代わって",
+      "によると",
+      "のついでに",
+      "のたびに"
+    ],
+    "answer": 0,
+    "full": "最近は 手紙に代わって、メールや SNSで 連絡する 人が ほとんどだ。",
+    "tr": {
+      "zh": "最近取代书信，大多数人都用邮件或社交软件联系。",
+      "en": "These days, instead of letters, most people keep in touch by email or social media."
+    },
+    "why": {
+      "zh": "邮件、社交软件取代了书信，表示“取代”用「に代わって」。",
+      "en": "Email and social media have taken the place of letters: 「に代わって」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「によると」是“据……说”，“据书信说”和这里的内容不符。",
+        "en": "「によると」 (\"according to letters\") doesn't fit."
+      },
+      {
+        "zh": "「のついでに」是“顺便”，“书信的顺便”意思不通。",
+        "en": "「のついでに」 (\"while doing letters\") makes no sense."
+      },
+      {
+        "zh": "「のたびに」是“每次”，“每次书信”意思不通。",
+        "en": "「のたびに」 (\"every time of letters\") makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n3-l50-021",
+    "type": "narabe",
+    "refs": [
+      "lesson50#7"
+    ],
+    "difficulty": 3,
+    "stem": "本日は [_] [★] [_] [_] 、私が ご説明いたします。",
+    "options": [
+      "代わり",
+      "田中",
+      "担当の",
+      "に"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "本日は 担当の 田中に 代わり、私が ご説明いたします。",
+    "tr": {
+      "zh": "今天由我代替负责人田中来说明。",
+      "en": "Today I'll give the explanation in place of Tanaka, who is in charge."
+    },
+    "why": {
+      "zh": "「担当の」修饰「田中」，＋「に 代わり」（＝に代わって，更书面）。★ 在第二格，是「田中」。",
+      "en": "「担当の」 modifies 「田中」, ＋ 「に 代わり」 (a more formal に代わって). The ★ is the second slot: 「田中」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

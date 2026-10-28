@@ -1,0 +1,587 @@
+[
+  {
+    "id": "n5-l14-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson14#1"
+    ],
+    "difficulty": 1,
+    "stem": "田中さんは 朝から ずっと せきを して います。かぜ（　）。",
+    "options": [
+      "の ようです",
+      "な ようです",
+      "ようです",
+      "だ ようです"
+    ],
+    "answer": 0,
+    "full": "田中さんは 朝から ずっと せきを して います。かぜの ようです。",
+    "tr": {
+      "zh": "田中从早上起一直在咳嗽，好像是感冒了。",
+      "en": "Tanaka has been coughing all morning. It seems he has a cold."
+    },
+    "why": {
+      "zh": "「かぜ」是名词，名词接「ようだ」要加「の」：名词＋の＋ようだ。根据咳嗽这个迹象推断。",
+      "en": "「かぜ」 is a noun, and a noun takes 「の」 before 「ようだ」: noun ＋ の ＋ ようだ. The coughing is the evidence."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「な」是な形容词接「ようだ」时用的（静かなようだ），名词要用「の」。",
+        "en": "「な」 is for な-adjectives (静かなようだ); a noun needs 「の」."
+      },
+      {
+        "zh": "名词不能直接接「ようだ」，中间必须有「の」；直接接是「みたいだ」的规则。",
+        "en": "A noun can't take 「ようだ」 directly — it needs 「の」. Attaching directly is the rule for 「みたいだ」."
+      },
+      {
+        "zh": "「ようだ」前面不能接「だ」，「だようだ」不成立。",
+        "en": "「ようだ」 never follows 「だ」; 「だようだ」 isn't a form."
+      }
+    ]
+  },
+  {
+    "id": "n5-l14-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson14#1"
+    ],
+    "difficulty": 2,
+    "stem": "この 部屋は 広くて きれいで、ホテルの（　）部屋ですね。",
+    "options": [
+      "ような",
+      "ように",
+      "ようだ",
+      "ようで"
+    ],
+    "answer": 0,
+    "full": "この 部屋は 広くて きれいで、ホテルの ような 部屋ですね。",
+    "tr": {
+      "zh": "这个房间又大又漂亮，像酒店的房间一样呢。",
+      "en": "This room is big and clean — it's like a hotel room."
+    },
+    "why": {
+      "zh": "空格后面是名词「部屋」，修饰名词用「ような」：Nのような＋名词（像……一样的……）。",
+      "en": "The blank comes right before the noun 「部屋」, and 「ようだ」 modifies a noun as 「ような」: Nのような ＋ noun (a … like N)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ように」修饰动词或形容词（夢のように美しい），不能直接接名词。",
+        "en": "「ように」 modifies a verb or adjective (夢のように美しい), not a noun."
+      },
+      {
+        "zh": "「ようだ」是句尾形式，不能放在名词「部屋」前面。",
+        "en": "「ようだ」 ends a sentence; it can't sit in front of the noun 「部屋」."
+      },
+      {
+        "zh": "「ようで」是中顿形，后面要接另一个分句，不能直接接名词。",
+        "en": "「ようで」 links to a following clause; it can't modify a noun."
+      }
+    ]
+  },
+  {
+    "id": "n5-l14-003",
+    "type": "narabe",
+    "refs": [
+      "lesson14#1"
+    ],
+    "difficulty": 2,
+    "stem": "ホームに 人が たくさん います。[_] [_] [★] [_] です。",
+    "options": [
+      "よう",
+      "いる",
+      "電車が",
+      "遅れて"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "ホームに 人が たくさん います。電車が 遅れて いる ようです。",
+    "tr": {
+      "zh": "站台上有很多人。电车好像晚点了。",
+      "en": "The platform is crowded. It seems the train is delayed."
+    },
+    "why": {
+      "zh": "看到站台上人多，推断电车晚点：電車が 遅れて いる（简体）＋ ようです。★ 在第三格，是「いる」。",
+      "en": "Seeing the crowd, the speaker infers a delay: 電車が 遅れて いる (plain form) ＋ ようです. The ★ is the third slot: 「いる」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l14-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson14#2"
+    ],
+    "difficulty": 1,
+    "stem": "学生が みんな あの 人に あいさつして います。あの 人は 先生（　）。",
+    "options": [
+      "みたいです",
+      "の みたいです",
+      "な みたいです",
+      "だ みたいです"
+    ],
+    "answer": 0,
+    "full": "学生が みんな あの 人に あいさつして います。あの 人は 先生みたいです。",
+    "tr": {
+      "zh": "学生们都在跟那个人打招呼。那个人好像是老师。",
+      "en": "All the students are greeting that person. He seems to be a teacher."
+    },
+    "why": {
+      "zh": "「みたいだ」直接接名词，不加「の」也不加「な」：先生みたいだ。根据学生打招呼这个迹象推断。",
+      "en": "「みたいだ」 attaches directly to a noun, with no 「の」 or 「な」: 先生みたいだ. The students' greetings are the evidence."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "加「の」是「ようだ」的接法（先生のようだ），「みたいだ」不加。",
+        "en": "「の」 is how 「ようだ」 connects (先生のようだ); 「みたいだ」 doesn't take it."
+      },
+      {
+        "zh": "「な」是「ようだ」接な形容词时用的，名词＋「みたいだ」中间什么都不加。",
+        "en": "「な」 belongs to 「ようだ」 with な-adjectives; a noun takes 「みたいだ」 with nothing in between."
+      },
+      {
+        "zh": "「みたいだ」前面不能接「だ」，「先生だみたいです」不成立。",
+        "en": "「みたいだ」 never follows 「だ」; 「先生だみたいです」 isn't a form."
+      }
+    ]
+  },
+  {
+    "id": "n5-l14-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson14#2"
+    ],
+    "difficulty": 2,
+    "stem": "妹は 子供（　）顔で 笑いました。",
+    "options": [
+      "みたいな",
+      "みたいに",
+      "みたいだ",
+      "みたいで"
+    ],
+    "answer": 0,
+    "full": "妹は 子供みたいな 顔で 笑いました。",
+    "tr": {
+      "zh": "妹妹露出孩子一样的表情笑了。",
+      "en": "My younger sister smiled with a childlike face."
+    },
+    "why": {
+      "zh": "空格后面是名词「顔」，「みたいだ」修饰名词时变成「みたいな」。",
+      "en": "The noun 「顔」 follows the blank, and 「みたいだ」 modifies a noun as 「みたいな」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「みたいに」修饰动词或形容词，不能直接放在名词「顔」前面。",
+        "en": "「みたいに」 modifies a verb or adjective, not the noun 「顔」."
+      },
+      {
+        "zh": "「みたいだ」是句尾形式，不能修饰名词。",
+        "en": "「みたいだ」 ends a sentence; it can't modify a noun."
+      },
+      {
+        "zh": "「みたいで」是中顿形，后面要接分句，不接名词。",
+        "en": "「みたいで」 links to a following clause; it doesn't modify a noun."
+      }
+    ]
+  },
+  {
+    "id": "n5-l14-006",
+    "type": "narabe",
+    "refs": [
+      "lesson14#2"
+    ],
+    "difficulty": 2,
+    "stem": "電気が 消えて いる。[_] [_] [★] [_] だね。",
+    "options": [
+      "いない",
+      "みたい",
+      "だれ",
+      "も"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "電気が 消えて いる。だれも いない みたいだね。",
+    "tr": {
+      "zh": "灯是灭的。好像没有人在呢。",
+      "en": "The lights are off. Looks like nobody's here."
+    },
+    "why": {
+      "zh": "「だれも＋否定」表示谁都不；「いない」是简体，直接接「みたいだ」。顺序：だれ も いない みたい，★ 是第三格「いない」。",
+      "en": "「だれも ＋ negative」 means nobody; plain 「いない」 takes 「みたいだ」 directly. Order: だれ も いない みたい — the ★ is 「いない」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l14-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson14#3"
+    ],
+    "difficulty": 2,
+    "stem": "兄は 強くて、やさしくて、本当に 男（　）人です。",
+    "options": [
+      "らしい",
+      "そうな",
+      "ような",
+      "みたいだ"
+    ],
+    "answer": 0,
+    "full": "兄は 強くて、やさしくて、本当に 男らしい 人です。",
+    "tr": {
+      "zh": "哥哥又坚强又温柔，真是个有男子气概的人。",
+      "en": "My older brother is strong and kind — a really manly person."
+    },
+    "why": {
+      "zh": "名词＋「らしい」表示“具备该名词应有的特质”，是夸奖。哥哥本来就是男人，又强又温柔，所以说「男らしい人」。",
+      "en": "Noun ＋ 「らしい」 means \"having the qualities a … should have\" — praise. He is strong and kind, so he's 「男らしい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "样态「そうだ」不能直接接名词，「男そうな」不成立。",
+        "en": "Appearance 「そうだ」 doesn't attach to a noun; 「男そうな」 isn't a form."
+      },
+      {
+        "zh": "「ような」接名词时要加「の」（男のような），而且“像男人一样”不能用来说本来就是男人的哥哥。",
+        "en": "「ような」 needs 「の」 after a noun (男のような), and \"like a man\" doesn't describe someone who is one."
+      },
+      {
+        "zh": "「みたいだ」是句尾形式，修饰名词「人」要用「みたいな」；而且意思也不是夸奖。",
+        "en": "「みたいだ」 can't modify 「人」 (that would be 「みたいな」), and it isn't praise anyway."
+      }
+    ]
+  },
+  {
+    "id": "n5-l14-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson14#3"
+    ],
+    "difficulty": 2,
+    "stem": "山田さんの 町は とても 静か（　）。わたしは 行った ことが ありませんが。",
+    "options": [
+      "らしいです",
+      "ならしいです",
+      "だらしいです",
+      "のらしいです"
+    ],
+    "answer": 0,
+    "full": "山田さんの 町は とても 静からしいです。わたしは 行った ことが ありませんが。",
+    "tr": {
+      "zh": "山田的小镇好像很安静。不过我没去过。",
+      "en": "Yamada's town is apparently very quiet — not that I've been there."
+    },
+    "why": {
+      "zh": "没去过，是听来的信息，用「らしい」。な形容词接「らしい」直接用语干：静か＋らしい。",
+      "en": "The speaker has never been there, so it's secondhand — 「らしい」. A な-adjective takes 「らしい」 on its bare stem: 静か ＋ らしい."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "加「な」是「ようだ」的接法（静かなようだ），「らしい」直接接语干。",
+        "en": "「な」 is how 「ようだ」 connects (静かなようだ); 「らしい」 takes the bare stem."
+      },
+      {
+        "zh": "「らしい」接な形容词时要去掉「だ」，「静かだらしい」不成立。",
+        "en": "With 「らしい」 the 「だ」 is dropped; 「静かだらしい」 isn't a form."
+      },
+      {
+        "zh": "「の」是名词接「ようだ」时用的，「静か」是な形容词，也不接「の」。",
+        "en": "「の」 is for a noun before 「ようだ」; 「静か」 is a な-adjective and never takes 「の」 here."
+      }
+    ]
+  },
+  {
+    "id": "n5-l14-009",
+    "type": "narabe",
+    "refs": [
+      "lesson14#3"
+    ],
+    "difficulty": 2,
+    "stem": "来年 [_] [_] [★] [_] よ。",
+    "options": [
+      "らしい",
+      "変わる",
+      "から",
+      "ルールが"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "来年から ルールが 変わる らしいよ。",
+    "tr": {
+      "zh": "听说从明年起规则要变哦。",
+      "en": "Apparently the rules change from next year."
+    },
+    "why": {
+      "zh": "「来年から」（从明年起）连在一起；「ルールが変わる」是简体句，后接「らしい」表示听说。★ 在第三格，是「変わる」。",
+      "en": "「来年から」 (from next year) goes together; the plain clause 「ルールが変わる」 takes 「らしい」 for hearsay. The ★ is the third slot: 「変わる」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l14-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson14#4"
+    ],
+    "difficulty": 1,
+    "stem": "あの 人は 小さな ことで すぐ 怒ります。怒り（　）人です。",
+    "options": [
+      "っぽい",
+      "らしい",
+      "ような",
+      "みたいな"
+    ],
+    "answer": 0,
+    "full": "あの 人は 小さな ことで すぐ 怒ります。怒りっぽい 人です。",
+    "tr": {
+      "zh": "那个人为一点小事就马上生气，是个爱生气的人。",
+      "en": "That person gets angry over little things — a short-tempered person."
+    },
+    "why": {
+      "zh": "“动不动就生气”是一种容易出现的倾向，动词ます形（怒り）＋「っぽい」表示“容易……”。",
+      "en": "\"Gets angry easily\" is a tendency: verb ます-stem (怒り) ＋ 「っぽい」 means \"tends to…\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「らしい」不接动词ます形，「怒りらしい」不成立。",
+        "en": "「らしい」 doesn't attach to a ます-stem; 「怒りらしい」 isn't a form."
+      },
+      {
+        "zh": "「ような」接名词要加「の」，而且不表示“容易……”的倾向。",
+        "en": "「ような」 needs 「の」 after a noun and doesn't mean \"tends to…\"."
+      },
+      {
+        "zh": "「怒りみたいな人」是“像愤怒一样的人”，意思不通；“容易生气”要用「っぽい」。",
+        "en": "「怒りみたいな人」 would be \"a person like anger\" — nonsense; \"tends to get angry\" is 「っぽい」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l14-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson14#4"
+    ],
+    "difficulty": 1,
+    "stem": "この シャツは 白では ありませんが、少し 白（　）色です。",
+    "options": [
+      "っぽい",
+      "らしい",
+      "そうな",
+      "ような"
+    ],
+    "answer": 0,
+    "full": "この シャツは 白では ありませんが、少し 白っぽい 色です。",
+    "tr": {
+      "zh": "这件衬衫不是白色的，但颜色有点偏白。",
+      "en": "This shirt isn't white, but it's a whitish color."
+    },
+    "why": {
+      "zh": "“不是白色，但有点偏白”——颜色“接近……、带点……”用「っぽい」：白っぽい。",
+      "en": "\"Not white, but close to it\" — 「っぽい」 after a color means \"-ish\": 白っぽい."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「白らしい」是“有白色应有的样子”，不用来说颜色偏白。",
+        "en": "「白らしい」 would mean \"typical of white\"; it doesn't mean whitish."
+      },
+      {
+        "zh": "样态「そうだ」不接名词「白」，「白そうな」不成立。",
+        "en": "Appearance 「そうだ」 doesn't attach to the noun 「白」."
+      },
+      {
+        "zh": "「ような」接名词要加「の」（白のような），这里少了「の」。",
+        "en": "「ような」 needs 「の」 after a noun (白のような); it's missing here."
+      }
+    ]
+  },
+  {
+    "id": "n5-l14-012",
+    "type": "narabe",
+    "refs": [
+      "lesson14#4",
+      "lesson15#4"
+    ],
+    "difficulty": 2,
+    "stem": "弟は もう 大学生なのに、[_] [★] [_] [_]。",
+    "options": [
+      "言う",
+      "子供",
+      "ことを",
+      "っぽい"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "弟は もう 大学生なのに、子供っぽい ことを 言う。",
+    "tr": {
+      "zh": "弟弟明明已经是大学生了，却说些孩子气的话。",
+      "en": "My younger brother is already in college, but he says childish things."
+    },
+    "why": {
+      "zh": "「なのに」带不满，所以用贬义的「子供っぽい」（幼稚）修饰「こと」，再接「を言う」。★ 在第二格，是「っぽい」。",
+      "en": "「なのに」 signals disapproval, so the negative 「子供っぽい」 (childish) modifies 「こと」, then 「を言う」. The ★ is the second slot: 「っぽい」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l14-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson14#5",
+      "lesson13#3"
+    ],
+    "difficulty": 2,
+    "stem": "空が 暗く なって きました。もうすぐ 雨が 降り（　）です。",
+    "options": [
+      "そう",
+      "よう",
+      "らしい",
+      "みたい"
+    ],
+    "answer": 0,
+    "full": "空が 暗く なって きました。もうすぐ 雨が 降りそうです。",
+    "tr": {
+      "zh": "天变暗了。好像马上就要下雨了。",
+      "en": "The sky is getting dark. It looks like it's about to rain."
+    },
+    "why": {
+      "zh": "空格前是ます形「降り」，能接ます形的只有样态「そうだ」：降りそうだ（看天色，快要下了）。",
+      "en": "The blank follows the ます-stem 「降り」, and only appearance 「そうだ」 attaches there: 降りそうだ (it looks about to rain)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ようだ」接动词简体（降るようだ），不接ます形「降り」。",
+        "en": "「ようだ」 follows the plain form (降るようだ), not the ます-stem 「降り」."
+      },
+      {
+        "zh": "「らしい」接动词简体（降るらしい），不接ます形「降り」。",
+        "en": "「らしい」 follows the plain form (降るらしい), not the ます-stem."
+      },
+      {
+        "zh": "「みたいだ」接动词简体（降るみたいだ），不接ます形「降り」。",
+        "en": "「みたいだ」 follows the plain form (降るみたいだ), not the ます-stem."
+      }
+    ]
+  },
+  {
+    "id": "n5-l14-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson14#5",
+      "lesson13#3",
+      "lesson13#4"
+    ],
+    "difficulty": 2,
+    "stem": "（店の 前で ケーキを 見て）\n「わあ、この ケーキ、おいし（　）ですね。」",
+    "options": [
+      "そう",
+      "いそう",
+      "いよう",
+      "いらしい"
+    ],
+    "answer": 0,
+    "full": "（店の 前で ケーキを 見て） 「わあ、この ケーキ、おいしそうですね。」",
+    "tr": {
+      "zh": "（在店门口看着蛋糕）“哇，这个蛋糕看起来好好吃啊。”",
+      "en": "(Looking at a cake in front of a shop) \"Wow, this cake looks delicious.\""
+    },
+    "why": {
+      "zh": "说话人是亲眼看着蛋糕说的，凭外观判断用样态「そうだ」：い形容词去「い」＋そう → おいしそう。",
+      "en": "The speaker is looking at the cake, judging by appearance — that's appearance 「そうだ」: drop the 「い」 ＋ そう → おいしそう."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「おいしいそうです」是传闻（听说好吃），可说话人正看着蛋糕，不是听来的。",
+        "en": "「おいしいそうです」 is hearsay (I hear it's good), but the speaker is looking at it, not reporting what someone said."
+      },
+      {
+        "zh": "「おいしいようです」是综合迹象推断，看着蛋糕的外观脱口而出的感叹不用它。",
+        "en": "「おいしいようです」 is an inference from evidence; it isn't how you exclaim at how something looks."
+      },
+      {
+        "zh": "「おいしいらしいです」是听说的，和“正看着蛋糕”的场景不符。",
+        "en": "「おいしいらしいです」 is secondhand information, which doesn't fit someone looking at the cake."
+      }
+    ]
+  },
+  {
+    "id": "n5-l14-015",
+    "type": "narabe",
+    "refs": [
+      "lesson14#5",
+      "lesson13#3"
+    ],
+    "difficulty": 2,
+    "stem": "あの [_] [★] [_] [_] ですね。",
+    "options": [
+      "おいしそう",
+      "とても",
+      "店の",
+      "ラーメンは"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "あの 店の ラーメンは とても おいしそうですね。",
+    "tr": {
+      "zh": "那家店的拉面看起来很好吃呢。",
+      "en": "That shop's ramen looks really good."
+    },
+    "why": {
+      "zh": "「あの店の」修饰「ラーメン」，「ラーメンは」是主题，「とても」修饰「おいしそう」（看起来好吃）。★ 在第二格，是「ラーメンは」。",
+      "en": "「あの店の」 modifies 「ラーメン」, 「ラーメンは」 is the topic, and 「とても」 modifies 「おいしそう」. The ★ is the second slot: 「ラーメンは」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

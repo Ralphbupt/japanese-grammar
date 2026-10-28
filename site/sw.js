@@ -5,7 +5,8 @@
  *                        the sentence, so a given URL never changes. Range
  *                        requests (Safari's <audio> always sends one) are
  *                        answered with 206 slices of the cached file.
- *   *.js?v={hash}        cache-first: the ?v= changes whenever the file does.
+ *   *.js?v={hash}        cache-first: the ?v= changes whenever the file does
+ *   *.json?v={hash}      (scripts, practice-question bundles).
  *   search-index.json    stale-while-revalidate.
  *   page navigations     network-first (fresh content after every deploy),
  *                        falling back to the cached copy when offline.
@@ -113,7 +114,7 @@ self.addEventListener('fetch', function (e) {
   if (url.origin !== self.location.origin) return;
 
   if (/^\/audio\/s[0-9a-f]+\.mp3$/.test(url.pathname)) e.respondWith(audio(e));
-  else if (/\.js$/.test(url.pathname) && url.searchParams.has('v')) e.respondWith(cacheFirst(e, ASSETS));
+  else if (/\.(js|json)$/.test(url.pathname) && url.searchParams.has('v')) e.respondWith(cacheFirst(e, ASSETS));
   else if (url.pathname === '/search-index.json') e.respondWith(staleWhileRevalidate(e, ASSETS));
   else if (req.mode === 'navigate') e.respondWith(page(e));
 });

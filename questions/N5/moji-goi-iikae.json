@@ -1,0 +1,761 @@
+[
+  {
+    "id": "n5-mg-401",
+    "type": "iikae",
+    "refs": [
+      "lesson05#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<ちちは ぎんこうに つとめて います。>>",
+    "options": [
+      "ちちは ぎんこうで しごとを して います。",
+      "ちちは ぎんこうへ よく いきます。",
+      "ちちは ぎんこうで おかねを かりました。",
+      "ちちは ぎんこうの ちかくに すんで います。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我父亲在银行工作。",
+      "en": "My father works at a bank."
+    },
+    "why": {
+      "zh": "「〜に つとめて いる」＝在那里工作：「〜で しごとを して いる」。",
+      "en": "「〜に つとめて いる」 means working there: 「〜で しごとを して いる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“常去银行”不等于在银行工作。",
+        "en": "Going to the bank often isn't the same as working there."
+      },
+      {
+        "zh": "“在银行借了钱”是一次的事，不是在那里工作。",
+        "en": "Borrowing money there is a one-off, not a job."
+      },
+      {
+        "zh": "“住在银行附近”和工作无关。",
+        "en": "Living near the bank has nothing to do with working there."
+      }
+    ]
+  },
+  {
+    "id": "n5-mg-402",
+    "type": "iikae",
+    "refs": [
+      "lesson07#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<あには せが ひくいです。>>",
+    "options": [
+      "あには せが たかくないです。",
+      "あには せが たかいです。",
+      "おとうとは せが たかくないです。",
+      "あには あしが みじかいです。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我哥哥个子矮。",
+      "en": "My older brother is short."
+    },
+    "why": {
+      "zh": "「せが ひくい」（个子矮）＝「せが たかくない」（个子不高）。",
+      "en": "「せが ひくい」 (short) means 「せが たかくない」 (not tall)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「たかい」（高）和「ひくい」意思相反。",
+        "en": "「たかい」 (tall) is the opposite of 「ひくい」."
+      },
+      {
+        "zh": "人物变了：说的是「おとうと」（弟弟），不是「あに」（哥哥）。",
+        "en": "Wrong person: 「おとうと」 (younger brother), not 「あに」."
+      },
+      {
+        "zh": "“腿短”和“个子矮”不是一回事。",
+        "en": "Short legs isn't the same as being short."
+      }
+    ]
+  },
+  {
+    "id": "n5-mg-403",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<おととい デパートへ いきました。>>",
+    "options": [
+      "ふつかまえに デパートへ いきました。",
+      "きのう デパートへ いきました。",
+      "みっかまえに デパートへ いきました。",
+      "あさって デパートへ いきます。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "前天去了百货商店。",
+      "en": "I went to the department store the day before yesterday."
+    },
+    "why": {
+      "zh": "「おととい」（前天）＝两天前：「ふつかまえ」。",
+      "en": "「おととい」 (the day before yesterday) is two days ago: 「ふつかまえ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「きのう」是昨天，只早一天。",
+        "en": "「きのう」 is yesterday — only one day ago."
+      },
+      {
+        "zh": "「みっかまえ」是三天前，多了一天。",
+        "en": "「みっかまえ」 is three days ago — one day too many."
+      },
+      {
+        "zh": "「あさって」是后天，是将来不是过去。",
+        "en": "「あさって」 is the day after tomorrow — future, not past."
+      }
+    ]
+  },
+  {
+    "id": "n5-mg-404",
+    "type": "iikae",
+    "refs": [
+      "lesson05#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<あさって しけんが あります。>>",
+    "options": [
+      "あしたの つぎの ひに しけんが あります。",
+      "あした しけんが あります。",
+      "きょうの つぎの ひに しけんが あります。",
+      "きのうの まえの ひに しけんが ありました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "后天有考试。",
+      "en": "There's an exam the day after tomorrow."
+    },
+    "why": {
+      "zh": "「あさって」（后天）＝明天的下一天：「あしたの つぎの ひ」。",
+      "en": "「あさって」 is the day after tomorrow: 「あしたの つぎの ひ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「あした」是明天，早了一天。",
+        "en": "「あした」 is tomorrow — a day early."
+      },
+      {
+        "zh": "“今天的下一天”就是明天，早了一天。",
+        "en": "The day after today is tomorrow — a day early."
+      },
+      {
+        "zh": "“昨天的前一天”是前天，是过去。",
+        "en": "The day before yesterday is in the past."
+      }
+    ]
+  },
+  {
+    "id": "n5-mg-405",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<ゆうべ ともだちに でんわを しました。>>",
+    "options": [
+      "きのうの よる ともだちに でんわを しました。",
+      "きのうの あさ ともだちに でんわを しました。",
+      "けさ ともだちに でんわを しました。",
+      "こんばん ともだちに でんわを します。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "昨晚给朋友打了电话。",
+      "en": "I called a friend last night."
+    },
+    "why": {
+      "zh": "「ゆうべ」（昨晚）＝「きのうの よる」。",
+      "en": "「ゆうべ」 (last night) means 「きのうの よる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "时间变了：是昨天早上，不是昨天晚上。",
+        "en": "Wrong time: yesterday morning, not last night."
+      },
+      {
+        "zh": "「けさ」是今天早上，不是昨晚。",
+        "en": "「けさ」 is this morning, not last night."
+      },
+      {
+        "zh": "「こんばん」是今晚，是将来不是过去。",
+        "en": "「こんばん」 is tonight — future, not past."
+      }
+    ]
+  },
+  {
+    "id": "n5-mg-406",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "<<せんせんしゅう きょうとへ いきました。>>",
+    "options": [
+      "にしゅうかんまえに きょうとへ いきました。",
+      "せんしゅう きょうとへ いきました。",
+      "ふつかまえに きょうとへ いきました。",
+      "さらいしゅう きょうとへ いきます。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "上上周去了京都。",
+      "en": "I went to Kyoto the week before last."
+    },
+    "why": {
+      "zh": "「せんせんしゅう」（上上周）＝两周前：「にしゅうかんまえ」。",
+      "en": "「せんせんしゅう」 (the week before last) is two weeks ago: 「にしゅうかんまえ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「せんしゅう」是上周，只早一周。",
+        "en": "「せんしゅう」 is last week — only one week ago."
+      },
+      {
+        "zh": "「ふつかまえ」是两天前，不是两周前。",
+        "en": "「ふつかまえ」 is two days ago, not two weeks."
+      },
+      {
+        "zh": "「さらいしゅう」是下下周，是将来。",
+        "en": "「さらいしゅう」 is the week after next — future."
+      }
+    ]
+  },
+  {
+    "id": "n5-mg-407",
+    "type": "iikae",
+    "refs": [
+      "lesson01#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<あの ひとは ははの ははです。>>",
+    "options": [
+      "あの ひとは わたしの そぼです。",
+      "あの ひとは わたしの おばです。",
+      "あの ひとは わたしの あねです。",
+      "あの ひとは わたしの そふです。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "那个人是我妈妈的妈妈。",
+      "en": "That person is my mother's mother."
+    },
+    "why": {
+      "zh": "妈妈的妈妈是外祖母，就是「そぼ」（祖母）。",
+      "en": "Your mother's mother is your grandmother: 「そぼ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「おば」是父母的姐妹，不是妈妈的妈妈。",
+        "en": "「おば」 (aunt) is a parent's sister, not your mother's mother."
+      },
+      {
+        "zh": "「あね」是自己的姐姐。",
+        "en": "「あね」 is your own older sister."
+      },
+      {
+        "zh": "「そふ」是祖父，是男性。",
+        "en": "「そふ」 is grandfather — a man."
+      }
+    ]
+  },
+  {
+    "id": "n5-mg-408",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<りょうしんは げんきです。>>",
+    "options": [
+      "ちちも ははも げんきです。",
+      "ちちは げんきですが、ははは びょうきです。",
+      "あにも あねも げんきです。",
+      "そふも そぼも げんきです。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我父母身体很好。",
+      "en": "My parents are well."
+    },
+    "why": {
+      "zh": "「りょうしん」（父母）＝父亲和母亲：「ちちも ははも」。",
+      "en": "「りょうしん」 (parents) means father and mother: 「ちちも ははも」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "说妈妈生病了，和“父母都很好”不符。",
+        "en": "It says mother is ill — not both parents well."
+      },
+      {
+        "zh": "「あに」「あね」是哥哥姐姐，不是父母。",
+        "en": "「あに」 and 「あね」 are siblings, not parents."
+      },
+      {
+        "zh": "「そふ」「そぼ」是祖父母，不是父母。",
+        "en": "「そふ」 and 「そぼ」 are grandparents, not parents."
+      }
+    ]
+  },
+  {
+    "id": "n5-mg-409",
+    "type": "iikae",
+    "refs": [
+      "lesson07#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<けさ へやを そうじしました。>>",
+    "options": [
+      "けさ へやを きれいに しました。",
+      "けさ へやで りょうりを しました。",
+      "ゆうべ へやを きれいに しました。",
+      "けさ へやを かりました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "今天早上打扫了房间。",
+      "en": "I cleaned my room this morning."
+    },
+    "why": {
+      "zh": "「そうじする」（打扫）＝把房间弄干净：「きれいに する」。",
+      "en": "「そうじする」 (clean) means making the room tidy: 「きれいに する」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“在房间做饭”不是打扫。",
+        "en": "Cooking in the room isn't cleaning it."
+      },
+      {
+        "zh": "时间变了：「ゆうべ」是昨晚，不是今天早上。",
+        "en": "Wrong time: 「ゆうべ」 is last night, not this morning."
+      },
+      {
+        "zh": "「かりる」（租、借）和打扫无关。",
+        "en": "「かりる」 (rent) has nothing to do with cleaning."
+      }
+    ]
+  },
+  {
+    "id": "n5-mg-410",
+    "type": "iikae",
+    "refs": [
+      "lesson07#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<この みせの くだものは やすいです。>>",
+    "options": [
+      "この みせの くだものは たかくないです。",
+      "この みせの くだものは たかいです。",
+      "この みせの やさいは たかくないです。",
+      "この みせの くだものは おいしくないです。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这家店的水果很便宜。",
+      "en": "The fruit at this shop is cheap."
+    },
+    "why": {
+      "zh": "「やすい」（便宜）＝「たかくない」（不贵）。",
+      "en": "「やすい」 (cheap) means 「たかくない」 (not expensive)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「たかい」（贵）和「やすい」意思相反。",
+        "en": "「たかい」 (expensive) is the opposite of 「やすい」."
+      },
+      {
+        "zh": "东西变了：说的是「やさい」（蔬菜），不是水果。",
+        "en": "Wrong item: 「やさい」 (vegetables), not fruit."
+      },
+      {
+        "zh": "「おいしくない」（不好吃）说的是味道，不是价格。",
+        "en": "「おいしくない」 (not tasty) is about taste, not price."
+      }
+    ]
+  },
+  {
+    "id": "n5-mg-411",
+    "type": "iikae",
+    "refs": [
+      "lesson13#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<この へやは くらいです。>>",
+    "options": [
+      "この へやは あかるくないです。",
+      "この へやは あかるいです。",
+      "この へやは ひろくないです。",
+      "この へやは あたたかくないです。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这个房间很暗。",
+      "en": "This room is dark."
+    },
+    "why": {
+      "zh": "「くらい」（暗）＝「あかるくない」（不亮）。",
+      "en": "「くらい」 (dark) means 「あかるくない」 (not bright)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「あかるい」（明亮）和「くらい」意思相反。",
+        "en": "「あかるい」 (bright) is the opposite of 「くらい」."
+      },
+      {
+        "zh": "「ひろくない」（不宽敞）说的是大小，不是亮暗。",
+        "en": "「ひろくない」 (not spacious) is about size, not light."
+      },
+      {
+        "zh": "「あたたかくない」（不暖和）说的是温度，不是亮暗。",
+        "en": "「あたたかくない」 (not warm) is about temperature, not light."
+      }
+    ]
+  },
+  {
+    "id": "n5-mg-412",
+    "type": "iikae",
+    "refs": [
+      "lesson01#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<きのうは ひまでした。>>",
+    "options": [
+      "きのうは いそがしくなかったです。",
+      "きのうは いそがしかったです。",
+      "きょうは いそがしくないです。",
+      "きのうは げんきでした。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "昨天很闲。",
+      "en": "I was free yesterday."
+    },
+    "why": {
+      "zh": "「ひま」（有空、闲）＝「いそがしくない」（不忙）。",
+      "en": "「ひま」 (free) means 「いそがしくない」 (not busy)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「いそがしかった」（忙）和「ひま」意思相反。",
+        "en": "「いそがしかった」 (was busy) is the opposite of 「ひま」."
+      },
+      {
+        "zh": "时间变了：说的是今天，不是昨天。",
+        "en": "Wrong day: today, not yesterday."
+      },
+      {
+        "zh": "「げんき」（有精神）说的是身体状况，不是忙不忙。",
+        "en": "「げんき」 (well) is about health, not how busy you were."
+      }
+    ]
+  },
+  {
+    "id": "n5-mg-413",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<ここは でぐちです。>>",
+    "options": [
+      "ここから そとへ でます。",
+      "ここから なかへ はいります。",
+      "ここで でんしゃを まちます。",
+      "ここで きっぷを かいます。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这里是出口。",
+      "en": "This is the exit."
+    },
+    "why": {
+      "zh": "「でぐち」（出口）是“出去”的地方：「ここから でる」。",
+      "en": "「でぐち」 (exit) is where you go out: 「ここから でる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "从这里“进去”的是「いりぐち」（入口），意思相反。",
+        "en": "Going in is an 「いりぐち」 (entrance) — the opposite."
+      },
+      {
+        "zh": "“在这里等电车”是站台，不是出口。",
+        "en": "Waiting for a train is a platform, not an exit."
+      },
+      {
+        "zh": "“在这里买票”是售票处，不是出口。",
+        "en": "Buying tickets is a ticket office, not an exit."
+      }
+    ]
+  },
+  {
+    "id": "n5-mg-414",
+    "type": "iikae",
+    "refs": [
+      "lesson03#vocab"
+    ],
+    "difficulty": 3,
+    "stem": "<<この ほんを かして ください。>>",
+    "options": [
+      "この ほんを かりても いいですか。",
+      "この ほんを かしても いいですか。",
+      "この ほんを かって ください。",
+      "この ほんを かえして ください。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "请把这本书借给我。",
+      "en": "Please lend me this book."
+    },
+    "why": {
+      "zh": "请对方「かして」（借给我）＝我来「かりる」（借入）：「かりても いいですか」。",
+      "en": "Asking someone to lend (「かして」) is asking to borrow: 「かりても いいですか」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「かしても いいですか」是我要把书借给别人，方向反了。",
+        "en": "「かしても いいですか」 offers to lend it to someone — the wrong direction."
+      },
+      {
+        "zh": "「かって ください」是请对方买书，不是借。",
+        "en": "「かって ください」 asks them to buy it, not lend it."
+      },
+      {
+        "zh": "「かえして ください」是要对方还书，是借出以后的事。",
+        "en": "「かえして ください」 asks for the book back — that's after lending."
+      }
+    ]
+  },
+  {
+    "id": "n5-mg-415",
+    "type": "iikae",
+    "refs": [
+      "lesson03#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<あねは にほんごの きょうしです。>>",
+    "options": [
+      "あねは にほんごを おしえて います。",
+      "あねは にほんごを ならって います。",
+      "あねは えいごを おしえて います。",
+      "いもうとは にほんごを おしえて います。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我姐姐是日语老师。",
+      "en": "My older sister is a Japanese teacher."
+    },
+    "why": {
+      "zh": "「きょうし」（教师）是教书的人：「にほんごを おしえて いる」。",
+      "en": "A 「きょうし」 (teacher) teaches: 「にほんごを おしえて いる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ならう」（学习）是学生做的事，方向反了。",
+        "en": "「ならう」 (learn) is what a student does — the wrong side."
+      },
+      {
+        "zh": "科目变了：是英语，不是日语。",
+        "en": "Wrong subject: English, not Japanese."
+      },
+      {
+        "zh": "人物变了：是「いもうと」（妹妹），不是「あね」（姐姐）。",
+        "en": "Wrong person: 「いもうと」 (younger sister), not 「あね」."
+      }
+    ]
+  },
+  {
+    "id": "n5-mg-416",
+    "type": "iikae",
+    "refs": [
+      "lesson03#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<けさ 6じに おきました。>>",
+    "options": [
+      "きょうの あさ 6じに おきました。",
+      "きのうの あさ 6じに おきました。",
+      "きょうの あさ 6じに ねました。",
+      "きょうの ばん 6じに おきました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "今天早上六点起床了。",
+      "en": "I got up at six this morning."
+    },
+    "why": {
+      "zh": "「けさ」（今早）＝「きょうの あさ」。",
+      "en": "「けさ」 (this morning) means 「きょうの あさ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "日子变了：是昨天早上，不是今天早上。",
+        "en": "Wrong day: yesterday morning, not this morning."
+      },
+      {
+        "zh": "动作变了：「ねる」（睡觉）和「おきる」（起床）相反。",
+        "en": "Wrong action: 「ねる」 (go to bed) is the opposite of 「おきる」."
+      },
+      {
+        "zh": "时间变了：「ばん」是晚上，不是早上。",
+        "en": "Wrong time: 「ばん」 is evening, not morning."
+      }
+    ]
+  },
+  {
+    "id": "n5-mg-417",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "<<あの レストランは いつも ひとが すくないです。>>",
+    "options": [
+      "あの レストランは いつも あまり こんで いません。",
+      "あの レストランは いつも こんで います。",
+      "あの レストランは ときどき こんで いません。",
+      "あの レストランは いつも りょうりが すくないです。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "那家餐厅总是人很少。",
+      "en": "That restaurant always has few customers."
+    },
+    "why": {
+      "zh": "人少＝不拥挤：「こんで いない」（不挤）。",
+      "en": "Few people means not crowded: 「こんで いない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「こんで います」（很挤）和人少意思相反。",
+        "en": "「こんで います」 (crowded) is the opposite of few people."
+      },
+      {
+        "zh": "频率变了：「ときどき」（有时）不是「いつも」（总是）。",
+        "en": "Wrong frequency: 「ときどき」 (sometimes), not 「いつも」 (always)."
+      },
+      {
+        "zh": "说的是菜少，不是人少。",
+        "en": "It says the food is scarce, not the customers."
+      }
+    ]
+  },
+  {
+    "id": "n5-mg-418",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<この りんごは ひとつ 100えんです。>>",
+    "options": [
+      "この りんごは ふたつで 200えんです。",
+      "この りんごは ふたつで 100えんです。",
+      "この りんごは みっつで 200えんです。",
+      "この りんごは ひとつ 200えんです。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这苹果一个一百日元。",
+      "en": "These apples are 100 yen each."
+    },
+    "why": {
+      "zh": "一个一百日元，两个就是两百日元：「ふたつで 200えん」。",
+      "en": "100 yen each makes two for 200 yen: 「ふたつで 200えん」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "两个一百日元，就是一个五十日元，便宜了一半。",
+        "en": "Two for 100 yen is 50 yen each — half the price."
+      },
+      {
+        "zh": "三个两百日元，一个不到七十日元，价格不对。",
+        "en": "Three for 200 yen is under 70 yen each — the price doesn't match."
+      },
+      {
+        "zh": "一个两百日元，贵了一倍。",
+        "en": "200 yen each is double the price."
+      }
+    ]
+  },
+  {
+    "id": "n5-mg-419",
+    "type": "iikae",
+    "refs": [
+      "lesson07#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<きのうは いい てんきでした。>>",
+    "options": [
+      "きのうは はれて いました。",
+      "きのうは あめが ふって いました。",
+      "きょうは はれて います。",
+      "きのうは くもって いました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "昨天天气很好。",
+      "en": "The weather was nice yesterday."
+    },
+    "why": {
+      "zh": "「いい てんき」（好天气）＝晴天：「はれて いる」。",
+      "en": "「いい てんき」 (nice weather) means sunny: 「はれて いる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "下雨不是好天气。",
+        "en": "Rain isn't nice weather."
+      },
+      {
+        "zh": "日子变了：说的是今天，不是昨天。",
+        "en": "Wrong day: today, not yesterday."
+      },
+      {
+        "zh": "「くもる」（阴天）一般不叫「いい てんき」。",
+        "en": "Cloudy (「くもる」) isn't what 「いい てんき」 means."
+      }
+    ]
+  },
+  {
+    "id": "n5-mg-420",
+    "type": "iikae",
+    "refs": [
+      "lesson17#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<わたしは やさいが すきでは ありません。>>",
+    "options": [
+      "わたしは やさいが きらいです。",
+      "わたしは やさいが すきです。",
+      "わたしは くだものが きらいです。",
+      "わたしは やさいを よく たべます。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我不喜欢蔬菜。",
+      "en": "I don't like vegetables."
+    },
+    "why": {
+      "zh": "「すきでは ありません」（不喜欢）＝「きらいです」（讨厌）。",
+      "en": "「すきでは ありません」 (don't like) means 「きらいです」 (dislike)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「すきです」（喜欢）意思相反。",
+        "en": "「すきです」 (like) is the opposite."
+      },
+      {
+        "zh": "东西变了：说的是「くだもの」（水果），不是蔬菜。",
+        "en": "Wrong item: 「くだもの」 (fruit), not vegetables."
+      },
+      {
+        "zh": "“常吃蔬菜”说明不讨厌，和原句不符。",
+        "en": "Eating vegetables often suggests liking them — not the same."
+      }
+    ]
+  }
+]

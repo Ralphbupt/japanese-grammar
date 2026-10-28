@@ -1,0 +1,698 @@
+[
+  {
+    "id": "n3-l42-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson42#1"
+    ],
+    "difficulty": 2,
+    "stem": "一人暮らしを して いると、どうしても 野菜が 不足し（　）。",
+    "options": [
+      "がちだ",
+      "っぽい",
+      "つつある",
+      "かけだ"
+    ],
+    "answer": 0,
+    "full": "一人暮らしを して いると、どうしても 野菜が 不足しがちだ。",
+    "tr": {
+      "zh": "一个人生活的话，总是容易缺蔬菜。",
+      "en": "When you live alone, you inevitably tend not to get enough vegetables."
+    },
+    "why": {
+      "zh": "“一个人住就容易……”是反复出现的不好倾向，用「ます形词干＋がちだ」。",
+      "en": "\"Living alone, you tend to…\" is a recurring bad tendency: masu-stem ＋ 「がちだ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「っぽい」接「不足し」不成词，也不表示这种生活中的倾向。",
+        "en": "「不足しっぽい」 isn't a word, and 「っぽい」 doesn't express this kind of tendency."
+      },
+      {
+        "zh": "「つつある」表示变化正在进行，这里说的是一般情况下的倾向，不是某个正在发生的变化。",
+        "en": "「つつある」 is a change in progress; this is a general tendency, not an ongoing change."
+      },
+      {
+        "zh": "「かけ」表示做到一半，“缺到一半”意思不通。",
+        "en": "「かけ」 means half-done; \"half-lacking\" makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n3-l42-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson42#1"
+    ],
+    "difficulty": 2,
+    "stem": "姉は 体が 弱くて、子供の ころは 学校を 休み（　）だった。",
+    "options": [
+      "がち",
+      "っぽい",
+      "かけ",
+      "一方"
+    ],
+    "answer": 0,
+    "full": "姉は 体が 弱くて、子供の ころは 学校を 休みがちだった。",
+    "tr": {
+      "zh": "姐姐身体弱，小时候经常请假不去上学。",
+      "en": "My sister was sickly and often missed school as a child."
+    },
+    "why": {
+      "zh": "身体弱→动不动就请假，是反复的负面倾向，「休み＋がちだった」。",
+      "en": "A weak constitution → often absent: a recurring negative tendency, 「休みがちだった」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「っぽい」接动词表示性格（怒りっぽい），后面也不能直接接「だった」。",
+        "en": "「っぽい」 after a verb describes a character trait (怒りっぽい), and wouldn't be followed by 「だった」 like this."
+      },
+      {
+        "zh": "「休みかけ」是“休到一半”，意思不通。",
+        "en": "「休みかけ」 would mean \"half-absent\", which makes no sense."
+      },
+      {
+        "zh": "「一方だ」接动词辞书形（休む一方），表示单向的变化，这里也不是变化。",
+        "en": "「一方だ」 needs the dictionary form (休む一方) and describes a one-way change, which this isn't."
+      }
+    ]
+  },
+  {
+    "id": "n3-l42-003",
+    "type": "narabe",
+    "refs": [
+      "lesson42#1"
+    ],
+    "difficulty": 2,
+    "stem": "寒く なると [_] [_] [★] [_]、体には 気を つけて ください。",
+    "options": [
+      "風邪を",
+      "ひき",
+      "がち",
+      "なので"
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full": "寒く なると 風邪を ひきがち なので、体には 気を つけて ください。",
+    "tr": {
+      "zh": "天一冷就容易感冒，请注意身体。",
+      "en": "People tend to catch colds when it gets cold, so please take care of yourself."
+    },
+    "why": {
+      "zh": "「風邪をひく」的ます形词干「ひき」＋「がち」＋「なので」。★ 是「がち」。",
+      "en": "The masu-stem of 「風邪をひく」, 「ひき」, ＋ 「がち」 ＋ 「なので」. The ★ is 「がち」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l42-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson42#2"
+    ],
+    "difficulty": 2,
+    "stem": "部長は 昔から 怒り（　）性格なので、報告の 仕方には 気を つけた ほうが いい。",
+    "options": [
+      "っぽい",
+      "気味の",
+      "かけの",
+      "つつある"
+    ],
+    "answer": 0,
+    "full": "部長は 昔から 怒りっぽい 性格なので、報告の 仕方には 気を つけた ほうが いい。",
+    "tr": {
+      "zh": "部长一向是爱发脾气的性格，汇报的方式最好注意点。",
+      "en": "The department head has always been short-tempered, so be careful how you report to him."
+    },
+    "why": {
+      "zh": "“一向爱生气的性格”，「動詞ます形＋っぽい」表示容易……的性格。",
+      "en": "\"Has always had a quick temper\" — masu-stem ＋ 「っぽい」 describes a disposition."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「気味」表示一时的轻微征兆，不能形容“一向如此的性格”。",
+        "en": "「気味」 is a slight, temporary sign; it can't describe a lifelong character."
+      },
+      {
+        "zh": "「怒りかけ」是“刚要生气”，不能修饰“性格”。",
+        "en": "「怒りかけ」 means \"about to get angry\"; it can't describe a personality."
+      },
+      {
+        "zh": "「つつある」表示变化在进行，和“一向如此的性格”矛盾。",
+        "en": "「つつある」 is an ongoing change, clashing with \"always been\"."
+      }
+    ]
+  },
+  {
+    "id": "n3-l42-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson42#2"
+    ],
+    "difficulty": 2,
+    "stem": "あの 人は もう 30歳なのに、考え方が まだ 子供（　）。",
+    "options": [
+      "っぽい",
+      "らしい",
+      "がちだ",
+      "気味だ"
+    ],
+    "answer": 0,
+    "full": "あの 人は もう 30歳なのに、考え方が まだ 子供っぽい。",
+    "tr": {
+      "zh": "那个人都30岁了，想法还像小孩一样幼稚。",
+      "en": "He's already thirty, yet he still thinks like a child."
+    },
+    "why": {
+      "zh": "本来不是小孩却像小孩，带批评语气，用「子供っぽい」。",
+      "en": "Not a child but acting like one, with criticism: 「子供っぽい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「子供らしい」是“像个孩子样（褒义）”，用于真正的小孩，和「30歳なのに」的批评不合。",
+        "en": "「子供らしい」 praises a real child for being childlike; it doesn't fit the criticism 「30歳なのに」."
+      },
+      {
+        "zh": "「がちだ」接动词表示反复倾向，「子供がち」不成词。",
+        "en": "「がちだ」 marks recurring tendencies; 「子供がち」 isn't a word."
+      },
+      {
+        "zh": "「気味」表示轻微的不好征兆（風邪気味），「子供気味」不成词。",
+        "en": "「気味」 marks a slight bad sign (風邪気味); 「子供気味」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n3-l42-006",
+    "type": "narabe",
+    "refs": [
+      "lesson42#2"
+    ],
+    "difficulty": 2,
+    "stem": "年の せいか、[_] [_] [★] [_] 困って いる。",
+    "options": [
+      "最近",
+      "忘れ",
+      "っぽく",
+      "なって"
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full": "年の せいか、最近 忘れっぽく なって 困って いる。",
+    "tr": {
+      "zh": "可能是上了年纪，最近变得爱忘事，很苦恼。",
+      "en": "Maybe it's my age, but I've become forgetful lately and it's a problem."
+    },
+    "why": {
+      "zh": "「忘れっぽい」变成连用形「忘れっぽく」＋「なって」（变得……）。★ 是「っぽく」。",
+      "en": "「忘れっぽい」 becomes 「忘れっぽく」 before 「なって」 (become forgetful). The ★ is 「っぽく」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l42-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson42#3"
+    ],
+    "difficulty": 2,
+    "stem": "昨日から 少し 風邪（　）なので、今日は 早めに 寝ます。",
+    "options": [
+      "気味",
+      "がち",
+      "かけ",
+      "一方"
+    ],
+    "answer": 0,
+    "full": "昨日から 少し 風邪気味 なので、今日は 早めに 寝ます。",
+    "tr": {
+      "zh": "从昨天起有点感冒的感觉，今天早点睡。",
+      "en": "I've been feeling a bit under the weather since yesterday, so I'll go to bed early."
+    },
+    "why": {
+      "zh": "“从昨天起有点感冒”是刚出现的轻微征兆，用「風邪気味」。",
+      "en": "\"A bit of a cold since yesterday\" is a slight, recent sign: 「風邪気味」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「がち」表示反复的倾向，和“从昨天起、有点”的一时状态不合；而且通常说「風邪をひきがち」。",
+        "en": "「がち」 is a recurring tendency, not a slight state since yesterday — and it's normally 「風邪をひきがち」."
+      },
+      {
+        "zh": "「かけ」接动词ます形，「風邪かけ」不成词。",
+        "en": "「かけ」 follows a verb stem; 「風邪かけ」 isn't a word."
+      },
+      {
+        "zh": "「一方」接动词辞书形表示单向变化，「風邪一方」不成句。",
+        "en": "「一方」 follows a dictionary-form verb; 「風邪一方」 isn't grammatical."
+      }
+    ]
+  },
+  {
+    "id": "n3-l42-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson42#3"
+    ],
+    "difficulty": 2,
+    "stem": "今朝は 道が 混んで いて、バスが 少し 遅れ（　）で、会社に 着いたのは 9時 ぎりぎりだった。",
+    "options": [
+      "気味",
+      "っぽい",
+      "かけ",
+      "つつ"
+    ],
+    "answer": 0,
+    "full": "今朝は 道が 混んで いて、バスが 少し 遅れ気味で、会社に 着いたのは 9時 ぎりぎりだった。",
+    "tr": {
+      "zh": "今天早上路上堵，公交有点晚点，到公司时刚好9点。",
+      "en": "The roads were busy this morning and the bus was running a little late, so I got to work right at nine."
+    },
+    "why": {
+      "zh": "“有点晚点”是轻微的不好状态，「遅れ＋気味」，后面接「で」。",
+      "en": "\"Running a little late\" is a slight negative state: 「遅れ気味」, followed by 「で」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「っぽい」是形容词，后面不能接「で」；「遅れっぽい」也不成词。",
+        "en": "「っぽい」 is an adjective and can't be followed by 「で」; 「遅れっぽい」 isn't a word anyway."
+      },
+      {
+        "zh": "「遅れかけ」是“快要晚点／晚到一半”，和「少し」及后文不合。",
+        "en": "「遅れかけ」 (about to be late) doesn't fit 「少し」 or the rest."
+      },
+      {
+        "zh": "「つつ」不能接「で」，「遅れつつで」不成句。",
+        "en": "「つつ」 can't be followed by 「で」; 「遅れつつで」 isn't grammatical."
+      }
+    ]
+  },
+  {
+    "id": "n3-l42-009",
+    "type": "narabe",
+    "refs": [
+      "lesson42#3"
+    ],
+    "difficulty": 2,
+    "stem": "残業が 続いて [_] [_] [★] [_]、昨日は 早く 寝る ことに した。",
+    "options": [
+      "疲れ",
+      "気味",
+      "だった",
+      "ので"
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full": "残業が 続いて 疲れ気味 だったので、昨日は 早く 寝る ことに した。",
+    "tr": {
+      "zh": "连续加班有点累，所以昨天决定早点睡。",
+      "en": "After days of overtime I was feeling a bit worn out, so I decided to go to bed early last night."
+    },
+    "why": {
+      "zh": "ます形词干「疲れ」＋「気味」＋「だった」＋「ので」。★ 是「だった」。",
+      "en": "Stem 「疲れ」 ＋ 「気味」 ＋ 「だった」 ＋ 「ので」. The ★ is 「だった」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l42-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson42#4"
+    ],
+    "difficulty": 2,
+    "stem": "若い 人が 都市に 出て 行き、この 町の 人口は 少しずつ 減り（　）。",
+    "options": [
+      "つつある",
+      "がちだ",
+      "かけだ",
+      "一方だ"
+    ],
+    "answer": 0,
+    "full": "若い 人が 都市に 出て 行き、この 町の 人口は 少しずつ 減りつつある。",
+    "tr": {
+      "zh": "年轻人去了城市，这个镇的人口正在逐渐减少。",
+      "en": "Young people are leaving for the cities, and the town's population is gradually shrinking."
+    },
+    "why": {
+      "zh": "「少しずつ」说明变化正在进行，「ます形词干＋つつある」= 正在逐渐……。",
+      "en": "「少しずつ」 shows a change in progress: masu-stem ＋ 「つつある」 = gradually…ing."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「がちだ」表示反复出现的倾向，人口减少是持续的变化，不是反复发生的事。",
+        "en": "「がちだ」 is a recurring tendency; a falling population is a continuous change, not a repeated event."
+      },
+      {
+        "zh": "「かけ」表示做到一半，“减到一半”意思不对。",
+        "en": "「かけ」 means half-done, which doesn't fit."
+      },
+      {
+        "zh": "「一方だ」要接动词辞书形「減る一方だ」，不接ます形词干。",
+        "en": "「一方だ」 takes the dictionary form (減る一方だ), not the masu-stem."
+      }
+    ]
+  },
+  {
+    "id": "n3-l42-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson42#4"
+    ],
+    "difficulty": 2,
+    "stem": "経済は（　）が、まだ 油断は できない。",
+    "options": [
+      "回復しつつある",
+      "回復するつつある",
+      "回復しつつない",
+      "回復してつつある"
+    ],
+    "answer": 0,
+    "full": "経済は 回復しつつある が、まだ 油断は できない。",
+    "tr": {
+      "zh": "经济正在逐渐恢复，但还不能大意。",
+      "en": "The economy is gradually recovering, but we can't let our guard down yet."
+    },
+    "why": {
+      "zh": "「つつある」接ます形词干：回復する → 回復し ＋ つつある。",
+      "en": "「つつある」 follows the masu-stem: 回復する → 回復し ＋ つつある."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「つつ」不接辞书形。",
+        "en": "「つつ」 doesn't follow the dictionary form."
+      },
+      {
+        "zh": "没有「つつない」的说法，「つつある」是固定形式。",
+        "en": "There's no 「つつない」; the fixed form is 「つつある」."
+      },
+      {
+        "zh": "「つつ」不接て形。",
+        "en": "「つつ」 doesn't follow the て-form."
+      }
+    ]
+  },
+  {
+    "id": "n3-l42-012",
+    "type": "narabe",
+    "refs": [
+      "lesson42#4"
+    ],
+    "difficulty": 2,
+    "stem": "若い 人が 興味を 持たなく なり、[_] [_] [★] [_]。",
+    "options": [
+      "この 町の",
+      "祭りは",
+      "消え",
+      "つつある"
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full": "若い 人が 興味を 持たなく なり、この 町の 祭りは 消えつつある。",
+    "tr": {
+      "zh": "年轻人不再感兴趣，这个镇的节日正在逐渐消失。",
+      "en": "Young people have lost interest, and the town's festival is gradually dying out."
+    },
+    "why": {
+      "zh": "「この町の祭りは」是主题，「消える」的ます形词干「消え」＋「つつある」。★ 是「消え」。",
+      "en": "「この町の祭りは」 is the topic; 「消え」 (stem of 消える) ＋ 「つつある」. The ★ is 「消え」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l42-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson42#5"
+    ],
+    "difficulty": 2,
+    "stem": "物価は 上がる（　）なのに、給料は 少しも 上がらない。",
+    "options": [
+      "一方",
+      "つつ",
+      "がち",
+      "かけ"
+    ],
+    "answer": 0,
+    "full": "物価は 上がる一方 なのに、給料は 少しも 上がらない。",
+    "tr": {
+      "zh": "物价一个劲地涨，工资却一点也不涨。",
+      "en": "Prices just keep going up, yet wages don't rise at all."
+    },
+    "why": {
+      "zh": "动词辞书形「上がる」后能接的只有「一方（だ）」，表示一直朝一个方向变化。",
+      "en": "Only 「一方（だ）」 can follow the dictionary form 「上がる」 — a change that keeps going one way."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「つつ」接ます形词干（上がりつつ），不接辞书形。",
+        "en": "「つつ」 follows the masu-stem (上がりつつ), not the dictionary form."
+      },
+      {
+        "zh": "「がち」接ます形词干（上がりがち），不接辞书形。",
+        "en": "「がち」 follows the masu-stem (上がりがち), not the dictionary form."
+      },
+      {
+        "zh": "「かけ」接ます形词干（上がりかけ），不接辞书形。",
+        "en": "「かけ」 follows the masu-stem (上がりかけ), not the dictionary form."
+      }
+    ]
+  },
+  {
+    "id": "n3-l42-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson42#5"
+    ],
+    "difficulty": 2,
+    "stem": "仕事は 毎年 増えて いるのに 人は 増えず、職場の 負担は（　）一方だ。",
+    "options": [
+      "大きく なる",
+      "大きく なり",
+      "大きく なって",
+      "大きく なった"
+    ],
+    "answer": 0,
+    "full": "仕事は 毎年 増えて いるのに 人は 増えず、職場の 負担は 大きく なる 一方だ。",
+    "tr": {
+      "zh": "工作每年都在增加，人手却不增加，职场的负担越来越重。",
+      "en": "The work grows every year but staff doesn't, so the burden at work just keeps getting heavier."
+    },
+    "why": {
+      "zh": "「一方だ」接动词辞书形：大きくなる一方だ。",
+      "en": "「一方だ」 follows the dictionary form: 大きくなる一方だ."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "ます形词干接的是「つつある」「がち」，不是「一方だ」。",
+        "en": "The masu-stem goes with 「つつある」 or 「がち」, not 「一方だ」."
+      },
+      {
+        "zh": "て形不能接「一方だ」。",
+        "en": "The て-form can't take 「一方だ」."
+      },
+      {
+        "zh": "「一方だ」表示持续的趋势，不接过去式。",
+        "en": "「一方だ」 describes a continuing trend and doesn't follow the past tense."
+      }
+    ]
+  },
+  {
+    "id": "n3-l42-015",
+    "type": "narabe",
+    "refs": [
+      "lesson42#5"
+    ],
+    "difficulty": 2,
+    "stem": "いろいろな 対策を して いるが、[_] [_] [★] [_]。",
+    "options": [
+      "子供の",
+      "数は",
+      "減る",
+      "一方だ"
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full": "いろいろな 対策を して いるが、子供の 数は 減る 一方だ。",
+    "tr": {
+      "zh": "虽然采取了各种对策，孩子的数量还是一直在减少。",
+      "en": "Despite all sorts of measures, the number of children just keeps falling."
+    },
+    "why": {
+      "zh": "「子供の数は」是主题，动词辞书形「減る」＋「一方だ」。★ 是「減る」。",
+      "en": "「子供の数は」 is the topic; dictionary form 「減る」 ＋ 「一方だ」. The ★ is 「減る」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l42-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson42#6"
+    ],
+    "difficulty": 1,
+    "stem": "テーブルの 上に、誰かの 食べ（　）ケーキが 置いて ある。",
+    "options": [
+      "かけの",
+      "がちな",
+      "っぽい",
+      "気味の"
+    ],
+    "answer": 0,
+    "full": "テーブルの 上に、誰かの 食べかけの ケーキが 置いて ある。",
+    "tr": {
+      "zh": "桌上放着不知是谁吃了一半的蛋糕。",
+      "en": "There's a half-eaten cake on the table — someone's left it."
+    },
+    "why": {
+      "zh": "“吃了一半的蛋糕”：ます形词干＋「かけの」＋名词。",
+      "en": "\"Half-eaten cake\": masu-stem ＋ 「かけの」 ＋ noun."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「食べがちな」是“动不动就吃的”，修饰蛋糕意思不通。",
+        "en": "「食べがちな」 (tending to eat) makes no sense describing a cake."
+      },
+      {
+        "zh": "「食べっぽい」不成词。",
+        "en": "「食べっぽい」 isn't a word."
+      },
+      {
+        "zh": "「食べ気味」不成词，「気味」表示轻微的不好征兆。",
+        "en": "「食べ気味」 isn't a word; 「気味」 marks a slight bad sign."
+      }
+    ]
+  },
+  {
+    "id": "n3-l42-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson42#6"
+    ],
+    "difficulty": 2,
+    "stem": "彼は 何か 言い（　）、急に 黙って しまった。",
+    "options": [
+      "かけて",
+      "かけの",
+      "がちで",
+      "っぽくて"
+    ],
+    "answer": 0,
+    "full": "彼は 何か 言いかけて、急に 黙って しまった。",
+    "tr": {
+      "zh": "他刚要说什么，突然就不说话了。",
+      "en": "He started to say something, then suddenly fell silent."
+    },
+    "why": {
+      "zh": "“刚要说就停了”，动作开始后中断，用「言いかける」的て形「言いかけて」接后句。",
+      "en": "\"Started to say, then stopped\" — an action broken off: 「言いかけて」, the て-form of 「言いかける」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「かけの」后面要接名词，这里后面是动词句。",
+        "en": "「かけの」 must be followed by a noun, but a clause follows here."
+      },
+      {
+        "zh": "「言いがち」是“动不动就说”，和“刚要说就沉默了”这一次的动作不合。",
+        "en": "「言いがち」 (tends to say) is a habit, not this one broken-off moment."
+      },
+      {
+        "zh": "「言いっぽい」不成词。",
+        "en": "「言いっぽい」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n3-l42-018",
+    "type": "narabe",
+    "refs": [
+      "lesson42#6"
+    ],
+    "difficulty": 2,
+    "stem": "机の 上に [_] [★] [_] [_] 置いて ある。",
+    "options": [
+      "読み",
+      "かけ",
+      "の",
+      "本が"
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full": "机の 上に 読みかけの 本が 置いて ある。",
+    "tr": {
+      "zh": "桌上放着一本读了一半的书。",
+      "en": "There's a half-read book on the desk."
+    },
+    "why": {
+      "zh": "ます形词干「読み」＋「かけ」＋「の」＋名词「本が」。★ 是「かけ」。",
+      "en": "Stem 「読み」 ＋ 「かけ」 ＋ 「の」 ＋ the noun 「本が」. The ★ is 「かけ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

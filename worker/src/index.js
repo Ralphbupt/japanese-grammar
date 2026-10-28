@@ -8,6 +8,7 @@
  *
  *   POST /v1/chat/completions   → Workers AI, model fixed
  *   GET  /v1/models             → the one model on offer
+ *   POST /feedback              → a reader's note from the practice pages, into D1
  *
  * Guard rails, because the quota is shared by everyone:
  *   - only browsers on jpnotes.dev (or localhost while developing) — CORS + Origin check
@@ -25,7 +26,11 @@
  *     produce identical requests across readers. Cache hits cost nothing and
  *     do not count against anyone's limit.
  *
- * Nothing is logged: no questions, answers or IPs. The only record is a
+ * Feedback (POST /feedback) is the one thing stored: what the reader wrote,
+ * the page and question it was about, and a daily-salted hash of the IP so
+ * one reader can send at most FEEDBACK_PER_DAY a day.
+ *
+ * Otherwise nothing is logged: no questions, answers or IPs. The only record is a
  * usage counter in Analytics Engine (dataset jpnotes_ai_usage), one row per
  * request: which button sent it (the panel's `source`), first question or
  * follow-up, what happened (cache / model / limited / error) and the neurons
@@ -40,6 +45,8 @@ const PER_MINUTE = 6;
 const PER_DAY = 50;
 const DAILY_NEURONS = 9500;                           // Free plan allows 10,000/day; keep a margin so readers get our message, not an upstream error
 const CACHE_TTL = 3 * 86400;
+const FEEDBACK_PER_DAY = 20;
+const FEEDBACK_MAX = 1000;                            // characters of text
 
 const ORIGIN_RE = /^(https:\/\/jpnotes\.dev|http:\/\/(localhost|127\.0\.0\.1)(:\d+)?)$/;
 const QUOTA_GONE = '今天本站的免费额度已用完，明天再来；或在设置里填自己的 API key。 / The site’s free quota for today is used up; come back tomorrow, or add your own API key in settings.';
@@ -59,6 +66,7 @@ export default {
 
     const path = new URL(req.url).pathname.replace(/\/+$/, '');
     if (req.method === 'GET' && path === '/v1/models') return json({ data: [{ id: MODEL_NAME }] }, 200, cors);
+    if (req.method === 'POST' && path === '/feedback') return feedback(req, env, cors);
     if (req.method !== 'POST' || path !== '/v1/chat/completions') return json({ error: { message: 'Not found' } }, 404, cors);
 
     const raw = await req.text();
@@ -116,6 +124,30 @@ export default {
     })), { status: 200, headers });
   },
 };
+
+// One note from a reader. Only known fields are kept, each checked and capped.
+async function feedback(req, env, cors) {
+  const raw = await req.text();
+  if (raw.length > 8000) return json({ ok: false, message: 'Too long' }, 413, cors);
+  let b;
+  try { b = JSON.parse(raw); } catch (e) { return json({ ok: false, message: 'Bad JSON' }, 400, cors); }
+  const kind = b.kind === 'question' ? 'question' : 'general';
+  const text = String(b.text || '').trim().slice(0, FEEDBACK_MAX);
+  const qid = /^n[2-5]-[a-z0-9-]{3,24}$/.test(b.qid) ? b.qid : null;
+  const reason = /^(answer|two|stem|other)$/.test(b.reason) ? b.reason : null;
+  const choice = Number.isInteger(b.choice) && b.choice >= 0 && b.choice <= 3 ? b.choice : null;
+  const page = /^\/[\w\-\/]{0,120}$/.test(b.page) ? b.page : null;
+  const lang = b.lang === 'zh' ? 'zh' : 'en';
+  if (kind === 'general' ? !text : !qid) return json({ ok: false, message: 'Empty' }, 400, cors);
+  if (!env.FEEDBACK) return json({ ok: false, message: 'Feedback is not set up' }, 503, cors);
+  const day = new Date().toISOString().slice(0, 10);
+  const ip = await hashIp(req.headers.get('CF-Connecting-IP') || '0.0.0.0', env);
+  const sent = await env.FEEDBACK.prepare('SELECT COUNT(*) AS n FROM feedback WHERE day = ? AND ip = ?').bind(day, ip).first();
+  if (sent && sent.n >= FEEDBACK_PER_DAY) return json({ ok: false, message: '今天的反馈已经够多了，谢谢！明天再来。 / That\u2019s plenty for today — thank you! Try again tomorrow.' }, 429, cors);
+  await env.FEEDBACK.prepare('INSERT INTO feedback (at, day, ip, kind, page, qid, choice, reason, lang, text) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)')
+    .bind(new Date().toISOString(), day, ip, kind, page, qid, choice, reason, lang, text || null).run();
+  return json({ ok: true }, 200, cors);
+}
 
 function quotaGone(e) { return /4006|neuron|allocation/i.test(String(e && e.message)); }
 

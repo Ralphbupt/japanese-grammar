@@ -1,0 +1,582 @@
+[
+  {
+    "id": "n4-l30-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson30#1"
+    ],
+    "difficulty": 1,
+    "stem": "天気予報に よると 明日は 雨ですが、雨が（　）、サッカーの 試合は 中止に なりません。",
+    "options": [
+      "降っても",
+      "降ったら",
+      "降るから",
+      "降るのに"
+    ],
+    "answer": 0,
+    "full": "天気予報に よると 明日は 雨ですが、雨が 降っても、サッカーの 試合は 中止に なりません。",
+    "tr": {
+      "zh": "天气预报说明天有雨，但即使下雨，足球比赛也不会取消。",
+      "en": "The forecast says rain tomorrow, but even if it rains, the football match won't be called off."
+    },
+    "why": {
+      "zh": "下雨通常会取消比赛，后句却说“不会取消”——前项不影响结果，是让步“即使……也……”，用「〜ても」。",
+      "en": "Rain would normally cancel a match, yet the match goes ahead: the condition doesn't change the result, so it's the concessive 「〜ても」 (even if)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜たら」是“如果下雨的话”，变成“下雨的话就不取消”，好像不下雨反而会取消，意思不通。",
+        "en": "「〜たら」 makes it \"if it rains, it won't be cancelled\", as if it would be cancelled when dry — that makes no sense."
+      },
+      {
+        "zh": "「から」表示原因，“因为下雨所以不取消”，因果关系说不通。",
+        "en": "「から」 gives a reason — \"because it rains, it won't be cancelled\" — which isn't logical."
+      },
+      {
+        "zh": "「のに」用于已经发生的事实并带不满，不能用于明天这种假设的情况。",
+        "en": "「のに」 is for facts that have already happened (with surprise or regret), not for a hypothetical tomorrow."
+      }
+    ]
+  },
+  {
+    "id": "n4-l30-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson30#1"
+    ],
+    "difficulty": 2,
+    "stem": "わたしは どんなに（　）、毎朝 ご飯を 食べるように して います。",
+    "options": [
+      "忙しいでも",
+      "忙しかったら",
+      "忙しくても",
+      "忙しいのに"
+    ],
+    "answer": 2,
+    "full": "わたしは どんなに 忙しくても、毎朝 ご飯を 食べるように して います。",
+    "tr": {
+      "zh": "我无论多忙，每天早上都尽量吃早饭。",
+      "en": "However busy I am, I make sure to eat breakfast every morning."
+    },
+    "why": {
+      "zh": "「どんなに〜ても」是“无论多么……都……”。い形容词接「ても」要变成「〜くても」：忙しい → 忙しくても。",
+      "en": "「どんなに〜ても」 means \"no matter how…\". An い-adjective takes 「〜くても」: 忙しい → 忙しくても."
+    },
+    "wrong": [
+      {
+        "zh": "「でも」接在名词和な形容词后面（雨でも、静かでも），い形容词不能直接接「でも」。",
+        "en": "「でも」 follows nouns and な-adjectives (雨でも, 静かでも); an い-adjective can't take it directly."
+      },
+      {
+        "zh": "「どんなに」要和「ても」呼应，「どんなに忙しかったら」不成立。",
+        "en": "「どんなに」 pairs with 「ても」; 「どんなに忙しかったら」 isn't Japanese."
+      },
+      null,
+      {
+        "zh": "「のに」是“明明……却……”，不能和「どんなに」搭配，也和“尽量吃早饭”的习惯不搭。",
+        "en": "「のに」 (even though, with regret) can't pair with 「どんなに」 and doesn't suit a habit."
+      }
+    ]
+  },
+  {
+    "id": "n4-l30-003",
+    "type": "narabe",
+    "refs": [
+      "lesson30#1"
+    ],
+    "difficulty": 1,
+    "stem": "明日は [_] [_] [★] [_]、旅行に 行きます。",
+    "options": [
+      "降って",
+      "雨",
+      "も",
+      "が"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "明日は 雨が 降っても、旅行に 行きます。",
+    "tr": {
+      "zh": "明天即使下雨，也要去旅行。",
+      "en": "Even if it rains tomorrow, I'm going on the trip."
+    },
+    "why": {
+      "zh": "雨 ＋ が ＋ 降って（て形）＋ も：「〜ても」接在て形后面。★ 在第三格，是「降って」。",
+      "en": "雨 ＋ が ＋ 降って (て-form) ＋ も: 「〜ても」 attaches to the て-form. The ★ is the third slot: 「降って」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l30-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson30#2"
+    ],
+    "difficulty": 1,
+    "stem": "パーティーは 7時からです。わたしは 友達に もう 少し 早く 来て（　）。",
+    "options": [
+      "ほしがります",
+      "ほしいです",
+      "みます",
+      "いきます"
+    ],
+    "answer": 1,
+    "full": "パーティーは 7時からです。わたしは 友達に もう 少し 早く 来て ほしいです。",
+    "tr": {
+      "zh": "派对7点开始。我希望朋友再早一点来。",
+      "en": "The party starts at seven. I'd like my friends to come a bit earlier."
+    },
+    "why": {
+      "zh": "说话人「わたしは」希望别人「友達に」做某事，用「人に〜てほしい」。",
+      "en": "The speaker (「わたしは」) wants someone else (「友達に」) to do something: 「人に〜てほしい」."
+    },
+    "wrong": [
+      {
+        "zh": "「〜てほしがる」描述第三人称的愿望，主语是「わたしは」时不能用。",
+        "en": "「〜てほしがる」 describes a third person's wish; it doesn't go with 「わたしは」."
+      },
+      null,
+      {
+        "zh": "「来てみます」是“我试着来”，做动作的是自己，和「友達に」对不上。",
+        "en": "「来てみます」 means I'll try coming myself; it doesn't fit 「友達に」."
+      },
+      {
+        "zh": "「来ていきます」意思不通，也和「友達に」接不上。",
+        "en": "「来ていきます」 makes no sense here and doesn't connect with 「友達に」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l30-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson30#2"
+    ],
+    "difficulty": 2,
+    "stem": "ここは 病院ですから、たばこを（　）ほしいです。",
+    "options": [
+      "吸わなくて",
+      "吸って",
+      "吸わない",
+      "吸わないで"
+    ],
+    "answer": 3,
+    "full": "ここは 病院ですから、たばこを 吸わないで ほしいです。",
+    "tr": {
+      "zh": "这里是医院，希望你不要抽烟。",
+      "en": "This is a hospital, so I'd like you not to smoke."
+    },
+    "why": {
+      "zh": "因为是医院，希望对方“不要抽烟”。否定的愿望是「〜ないでほしい」。",
+      "en": "It's a hospital, so the wish is that people don't smoke. The negative is 「〜ないでほしい」."
+    },
+    "wrong": [
+      {
+        "zh": "「てほしい」的否定要用「ないで」，不用「なくて」。",
+        "en": "The negative of 「てほしい」 uses 「ないで」, not 「なくて」."
+      },
+      {
+        "zh": "「吸ってほしい」是“希望你抽烟”，和“这里是医院”矛盾。",
+        "en": "「吸ってほしい」 would mean \"I want you to smoke\" — the opposite of what a hospital needs."
+      },
+      {
+        "zh": "「ない」不能直接接「ほしい」，要用「ないで」。",
+        "en": "「ない」 can't attach straight to 「ほしい」; it needs 「ないで」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n4-l30-006",
+    "type": "narabe",
+    "refs": [
+      "lesson30#2"
+    ],
+    "difficulty": 2,
+    "stem": "A「何か 手伝いましょうか。」\nB「じゃあ、この 荷物を [_] [_] [★] [_]。」",
+    "options": [
+      "運んで",
+      "んです",
+      "二階まで",
+      "ほしい"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "A「何か 手伝いましょうか。」 B「じゃあ、この 荷物を 二階まで 運んで ほしいんです。」",
+    "tr": {
+      "zh": "A：要我帮点什么吗？ B：那么，我想请你把这个行李搬到二楼。",
+      "en": "A: Can I help with anything? B: Well, I'd like you to carry this bag up to the second floor."
+    },
+    "why": {
+      "zh": "二階まで（到二楼）＋ 運んで ＋ ほしい ＋ んです：「〜てほしい」后面接「んです」说明情况。★ 在第三格，是「ほしい」。",
+      "en": "二階まで (to the 2nd floor) ＋ 運んで ＋ ほしい ＋ んです: 「〜てほしい」 followed by 「んです」. The ★ is the third slot: 「ほしい」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l30-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson30#3"
+    ],
+    "difficulty": 1,
+    "stem": "最近 だんだん 寒く なって（　）ね。",
+    "options": [
+      "きました",
+      "いきます",
+      "みました",
+      "おきました"
+    ],
+    "answer": 0,
+    "full": "最近 だんだん 寒く なって きましたね。",
+    "tr": {
+      "zh": "最近渐渐变冷了呢。",
+      "en": "It's been getting colder lately, hasn't it?"
+    },
+    "why": {
+      "zh": "「最近」「だんだん」表示从过去到现在的变化，用「〜てきた」。",
+      "en": "「最近」 and 「だんだん」 mark a change from the past up to now: 「〜てきた」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜ていく」是从现在到将来的变化，和「最近」不搭。",
+        "en": "「〜ていく」 is change from now into the future; it clashes with 「最近」."
+      },
+      {
+        "zh": "「〜てみる」是“试着做”，天气变冷不是人试着做的事。",
+        "en": "「〜てみる」 means trying something; getting cold isn't something you try."
+      },
+      {
+        "zh": "「〜ておく」是事先做好准备，不能用于天气变化。",
+        "en": "「〜ておく」 means doing something in advance; it doesn't describe the weather changing."
+      }
+    ]
+  },
+  {
+    "id": "n4-l30-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson30#3"
+    ],
+    "difficulty": 2,
+    "stem": "これからも、日本に 住む 外国人は 増えて（　）でしょう。",
+    "options": [
+      "きた",
+      "みる",
+      "いく",
+      "しまった"
+    ],
+    "answer": 2,
+    "full": "これからも、日本に 住む 外国人は 増えて いくでしょう。",
+    "tr": {
+      "zh": "今后住在日本的外国人也会继续增加吧。",
+      "en": "The number of foreigners living in Japan will probably keep rising from now on."
+    },
+    "why": {
+      "zh": "「これからも」指向将来，从现在到将来的变化用「〜ていく」。",
+      "en": "「これからも」 points to the future, so change from now on is 「〜ていく」."
+    },
+    "wrong": [
+      {
+        "zh": "「〜てきた」是到现在为止的变化，和「これからも」矛盾。",
+        "en": "「〜てきた」 is change up to now; it contradicts 「これからも」."
+      },
+      {
+        "zh": "「〜てみる」是“试着做”，人数增加不是有意尝试的动作。",
+        "en": "「〜てみる」 means to try; a number rising isn't something done on purpose."
+      },
+      null,
+      {
+        "zh": "「〜てしまった」是已经完成的事，和「これからも」「でしょう」对不上。",
+        "en": "「〜てしまった」 is a finished event, which doesn't fit 「これからも」 and 「でしょう」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l30-009",
+    "type": "narabe",
+    "refs": [
+      "lesson30#3"
+    ],
+    "difficulty": 1,
+    "stem": "3月に なって、[_] [_] [★] [_] ね。",
+    "options": [
+      "きました",
+      "なって",
+      "暖かく",
+      "だんだん"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "3月に なって、だんだん 暖かく なって きましたね。",
+    "tr": {
+      "zh": "到了3月，渐渐暖和起来了呢。",
+      "en": "Now that it's March, it's been getting warmer."
+    },
+    "why": {
+      "zh": "だんだん ＋ 暖かく なって ＋ きました：到现在为止的渐变用「〜てきた」。★ 在第三格，是「なって」。",
+      "en": "だんだん ＋ 暖かく なって ＋ きました: gradual change up to now is 「〜てきた」. The ★ is the third slot: 「なって」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l30-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson30#4"
+    ],
+    "difficulty": 1,
+    "stem": "妹は 友達が 持って いる 新しい スマホを（　）います。",
+    "options": [
+      "ほしくて",
+      "ほしがって",
+      "ほしいで",
+      "ほしかって"
+    ],
+    "answer": 1,
+    "full": "妹は 友達が 持って いる 新しい スマホを ほしがって います。",
+    "tr": {
+      "zh": "妹妹很想要朋友拿着的那种新手机。",
+      "en": "My little sister wants the new smartphone her friend has."
+    },
+    "why": {
+      "zh": "主语是第三人称「妹は」，表示她的愿望用「ほしがる」，接「ている」：ほしがっています。助词「を」也提示是「がる」。",
+      "en": "The subject 「妹は」 is a third person, so her wish is 「ほしがる」 → 「ほしがっています」. The particle 「を」 also points to 「がる」."
+    },
+    "wrong": [
+      {
+        "zh": "「ほしくて」是“因为想要”，后面不能接「います」，而且第三人称不直接用「ほしい」。",
+        "en": "「ほしくて」 (wanting, so…) can't be followed by 「います」, and 「ほしい」 isn't used directly for a third person."
+      },
+      null,
+      {
+        "zh": "「ほしい」是い形容词，没有「ほしいで」这种形式。",
+        "en": "「ほしい」 is an い-adjective; 「ほしいで」 isn't a form."
+      },
+      {
+        "zh": "「ほしかって」不存在，い形容词的て形是「ほしくて」。",
+        "en": "「ほしかって」 doesn't exist; the て-form of 「ほしい」 is 「ほしくて」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l30-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson30#4"
+    ],
+    "difficulty": 2,
+    "stem": "うちの 子どもは、いつも わたしの スマホを（　）。",
+    "options": [
+      "使いたいです",
+      "使って ほしいです",
+      "使いたかったです",
+      "使いたがります"
+    ],
+    "answer": 3,
+    "full": "うちの 子どもは、いつも わたしの スマホを 使いたがります。",
+    "tr": {
+      "zh": "我家孩子总是想用我的手机。",
+      "en": "My child always wants to use my phone."
+    },
+    "why": {
+      "zh": "描述第三人称「子どもは」平时表现出来的愿望，用「〜たがる」。",
+      "en": "This describes what a third person (「子どもは」) visibly wants, habitually: 「〜たがる」."
+    },
+    "wrong": [
+      {
+        "zh": "「〜たい」只能直接说自己的愿望，不能断言孩子的内心。",
+        "en": "「〜たい」 states your own wish; you can't state a child's inner wish with it."
+      },
+      {
+        "zh": "「〜てほしい」是说话人希望别人做，和主语「子どもは」对不上。",
+        "en": "「〜てほしい」 is the speaker wanting someone else to act; it doesn't fit the subject 「子どもは」."
+      },
+      {
+        "zh": "过去式的「〜たかった」同样只能用于自己，而且和「いつも」不搭。",
+        "en": "Past 「〜たかった」 is also first-person only, and it clashes with 「いつも」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n4-l30-012",
+    "type": "narabe",
+    "refs": [
+      "lesson30#4"
+    ],
+    "difficulty": 1,
+    "stem": "息子は 大学を 出たら、[_] [_] [★] [_]。",
+    "options": [
+      "外国で",
+      "います",
+      "働き",
+      "たがって"
+    ],
+    "order": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "full": "息子は 大学を 出たら、外国で 働きたがって います。",
+    "tr": {
+      "zh": "儿子大学毕业后想去国外工作。",
+      "en": "My son wants to work abroad after he graduates."
+    },
+    "why": {
+      "zh": "外国で ＋ 働き（ます形词干）＋ たがって ＋ います：第三人称的愿望用「〜たがっている」。★ 在第三格，是「たがって」。",
+      "en": "外国で ＋ 働き (stem) ＋ たがって ＋ います: a third person's wish is 「〜たがっている」. The ★ is the third slot: 「たがって」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l30-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson30#5"
+    ],
+    "difficulty": 1,
+    "stem": "（ケーキ屋で）\n店員「新しい ケーキです。どうぞ、一つ 食べて（　）ください。」",
+    "options": [
+      "おいて",
+      "しまって",
+      "みて",
+      "あって"
+    ],
+    "answer": 2,
+    "full": "（ケーキ屋で） 店員「新しい ケーキです。どうぞ、一つ 食べて みて ください。」",
+    "tr": {
+      "zh": "（在蛋糕店）店员：这是新出的蛋糕。请尝一个看看。",
+      "en": "(At a cake shop) Clerk: This is our new cake. Please try one."
+    },
+    "why": {
+      "zh": "店员请客人试吃新蛋糕，“尝尝看”用「〜てみる」：食べてみてください。",
+      "en": "The clerk invites the customer to taste the new cake — \"try eating\" is 「〜てみる」: 食べてみてください."
+    },
+    "wrong": [
+      {
+        "zh": "「〜ておく」是事先做好准备，试吃时不会说“请事先吃好”。",
+        "en": "「〜ておく」 is doing something in advance; a free sample isn't eaten \"in advance\"."
+      },
+      {
+        "zh": "「〜てしまう」表示做完或遗憾，店员推荐试吃时不用。",
+        "en": "「〜てしまう」 means finishing off or regret; it's not how a clerk offers a sample."
+      },
+      null,
+      {
+        "zh": "「〜てある」接他动词表示状态，不能接「ください」。",
+        "en": "「〜てある」 describes a resulting state and can't take 「ください」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l30-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson30#5"
+    ],
+    "difficulty": 2,
+    "stem": "わたしは まだ 納豆を 食べた ことが ありません。一度 食べて（　）です。",
+    "options": [
+      "みたい",
+      "ほしい",
+      "ほしがる",
+      "いきたい"
+    ],
+    "answer": 0,
+    "full": "わたしは まだ 納豆を 食べた ことが ありません。一度 食べて みたいです。",
+    "tr": {
+      "zh": "我还没吃过纳豆。想尝一次看看。",
+      "en": "I've never had natto. I'd like to try it once."
+    },
+    "why": {
+      "zh": "自己还没吃过，想“尝试一下”，用「〜てみたい」。",
+      "en": "The speaker has never had it and wants to try it: 「〜てみたい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜てほしい」是希望别人吃，但前面说的是自己没吃过，想吃的是「わたし」。",
+        "en": "「〜てほしい」 wants someone else to eat it, but it's the speaker who has never tried it."
+      },
+      {
+        "zh": "「〜てほしがる」用于第三人称，主语是「わたし」，而且「ほしがるです」也不成立。",
+        "en": "「〜てほしがる」 is for a third person, and 「ほしがるです」 isn't a valid form."
+      },
+      {
+        "zh": "「食べていきたい」是“吃了再走”，和“没吃过、想尝尝”的意思对不上。",
+        "en": "「食べていきたい」 means \"eat before leaving\", not \"try for the first time\"."
+      }
+    ]
+  },
+  {
+    "id": "n4-l30-015",
+    "type": "narabe",
+    "refs": [
+      "lesson30#5"
+    ],
+    "difficulty": 1,
+    "stem": "すみません、この 服、[_] [_] [★] [_] か。",
+    "options": [
+      "も",
+      "いいです",
+      "着て",
+      "みて"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "すみません、この 服、着て みても いいですか。",
+    "tr": {
+      "zh": "不好意思，这件衣服可以试穿一下吗？",
+      "en": "Excuse me, may I try this on?"
+    },
+    "why": {
+      "zh": "着て ＋ みて（〜てみる的て形）＋ も ＋ いいです ＋ か：“可以试穿吗”。★ 在第三格，是「も」。",
+      "en": "着て ＋ みて (て-form of 〜てみる) ＋ も ＋ いいです ＋ か: \"may I try it on?\" The ★ is the third slot: 「も」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

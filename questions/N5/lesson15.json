@@ -1,0 +1,1047 @@
+[
+  {
+    "id": "n5-l15-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson15#1"
+    ],
+    "difficulty": 1,
+    "stem": "わたしは 日本語を 話（　）ことが できます。",
+    "options": [
+      "す",
+      "して",
+      "した",
+      "せる"
+    ],
+    "answer": 0,
+    "full": "わたしは 日本語を 話す ことが できます。",
+    "tr": {
+      "zh": "我会说日语。",
+      "en": "I can speak Japanese."
+    },
+    "why": {
+      "zh": "「ことができる」前面接动词辞书形：話す＋ことができる。",
+      "en": "「ことができる」 follows the dictionary form: 話す ＋ ことができる."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "て形「話して」不能接「こと」。",
+        "en": "The て-form 「話して」 can't come before 「こと」."
+      },
+      {
+        "zh": "「話したことが」后面接「ある」是经验（说过），接「できる」不成立。",
+        "en": "「話したこと」 goes with 「ある」 (have spoken); it doesn't go with 「できる」."
+      },
+      {
+        "zh": "「話せる」已经是可能形，再加「ことができる」就重复了。",
+        "en": "「話せる」 is already the potential form; adding 「ことができる」 doubles it."
+      }
+    ]
+  },
+  {
+    "id": "n5-l15-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson15#1",
+      "lesson15#2"
+    ],
+    "difficulty": 2,
+    "stem": "【図書館の お知らせ】\n本は 一人 三冊まで 借りる（　）。",
+    "options": [
+      "ことが できます",
+      "ことが あります",
+      "ことは ありません",
+      "ことを できます"
+    ],
+    "answer": 0,
+    "full": "【図書館の お知らせ】 本は 一人 三冊まで 借りる ことが できます。",
+    "tr": {
+      "zh": "【图书馆通知】每人最多可以借三本书。",
+      "en": "[Library notice] Each person may borrow up to three books."
+    },
+    "why": {
+      "zh": "这是图书馆的通知，说明规定“可以借”，正式场合用「辞书形＋ことができる」。",
+      "en": "It's a library notice stating what is allowed — the formal 「dictionary form ＋ ことができる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「借りることがあります」是“有时会借”，是说个人习惯，不是图书馆的规定。",
+        "en": "「借りることがあります」 means \"sometimes borrow\" — a habit, not a library rule."
+      },
+      {
+        "zh": "「借りることはありません」是“没必要借”，和“最多三本”的规定接不上。",
+        "en": "「借りることはありません」 means \"no need to borrow\", which doesn't fit a three-book limit."
+      },
+      {
+        "zh": "「ことができる」的助词是「が」，不是「を」。",
+        "en": "The particle in 「ことができる」 is 「が」, not 「を」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l15-003",
+    "type": "narabe",
+    "refs": [
+      "lesson15#1"
+    ],
+    "difficulty": 1,
+    "stem": "この 駅では インターネットで [_] [_] [★] [_]。",
+    "options": [
+      "できます",
+      "ことが",
+      "買う",
+      "きっぷを"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "この 駅では インターネットで きっぷを 買う ことが できます。",
+    "tr": {
+      "zh": "在这个车站可以在网上买票。",
+      "en": "At this station you can buy tickets online."
+    },
+    "why": {
+      "zh": "「きっぷを買う」是动作，辞书形「買う」＋「ことができます」表示可以。★ 在第三格，是「ことが」。",
+      "en": "「きっぷを買う」 is the action; dictionary form 「買う」 ＋ 「ことができます」 means \"can\". The ★ is the third slot: 「ことが」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l15-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson15#2"
+    ],
+    "difficulty": 1,
+    "stem": "いつもは 朝ご飯を 食べますが、時々 食べない（　）。",
+    "options": [
+      "ことが あります",
+      "ことは ありません",
+      "ことが できます",
+      "ことを します"
+    ],
+    "answer": 0,
+    "full": "いつもは 朝ご飯を 食べますが、時々 食べない ことが あります。",
+    "tr": {
+      "zh": "平时都吃早饭，但有时不吃。",
+      "en": "I usually eat breakfast, but sometimes I don't."
+    },
+    "why": {
+      "zh": "「時々」（有时）是线索，“有时会……”用「辞书形/ない形＋ことがある」。",
+      "en": "「時々」 (sometimes) is the clue: \"sometimes …\" is 「dictionary/ない form ＋ ことがある」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ことはありません」是“没必要/不会”，和「時々」矛盾。",
+        "en": "「ことはありません」 means \"no need / never\", which contradicts 「時々」."
+      },
+      {
+        "zh": "「食べないことができます」是“能够不吃”，不是在说习惯。",
+        "en": "「食べないことができます」 would mean \"am able not to eat\" — not a habit."
+      },
+      {
+        "zh": "“有时……”的句型是「ことがある」，「ことをします」不是这个用法。",
+        "en": "\"Sometimes…\" is 「ことがある」; 「ことをします」 isn't a pattern with that meaning."
+      }
+    ]
+  },
+  {
+    "id": "n5-l15-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson15#2"
+    ],
+    "difficulty": 2,
+    "stem": "A「あしたの テスト、だいじょうぶかな。」\nB「たくさん 勉強したでしょう。そんなに 心配する（　）よ。」",
+    "options": [
+      "ことは ない",
+      "ことが ある",
+      "ことが できる",
+      "ことが あった"
+    ],
+    "answer": 0,
+    "full": "A「あしたの テスト、だいじょうぶかな。」 B「たくさん 勉強したでしょう。そんなに 心配する ことは ないよ。」",
+    "tr": {
+      "zh": "A：明天的考试，没问题吧…… B：你学了那么多嘛。没必要那么担心。",
+      "en": "A: I wonder if tomorrow's test will be OK. B: You studied a lot, right? No need to worry that much."
+    },
+    "why": {
+      "zh": "B 在安慰 A，“没必要……”用「辞书形＋ことはない」。",
+      "en": "B is reassuring A — \"there's no need to…\" is 「dictionary form ＋ ことはない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「心配することがある」是“有时会担心”，不是安慰的话。",
+        "en": "「心配することがある」 means \"sometimes worry\" — not reassurance."
+      },
+      {
+        "zh": "「心配することができる」是“能够担心”，意思不通。",
+        "en": "「心配することができる」 would mean \"are able to worry\", which makes no sense here."
+      },
+      {
+        "zh": "「心配することがあった」是“有过担心的时候”，和安慰对方接不上。",
+        "en": "「心配することがあった」 means \"there were times I worried\", which doesn't reassure anyone."
+      }
+    ]
+  },
+  {
+    "id": "n5-l15-006",
+    "type": "narabe",
+    "refs": [
+      "lesson15#2"
+    ],
+    "difficulty": 2,
+    "stem": "駅は 近いですから、[★] [_] [_] [_]。歩いて 行きましょう。",
+    "options": [
+      "ことは",
+      "タクシーで",
+      "ありません",
+      "行く"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "駅は 近いですから、タクシーで 行く ことは ありません。歩いて 行きましょう。",
+    "tr": {
+      "zh": "车站很近，没必要坐出租车去。走着去吧。",
+      "en": "The station is close, so there's no need to take a taxi. Let's walk."
+    },
+    "why": {
+      "zh": "“没必要坐出租车”：タクシーで 行く（辞书形）＋ ことは ありません。★ 在第一格，是「タクシーで」。",
+      "en": "\"No need to take a taxi\": タクシーで 行く (dictionary form) ＋ ことは ありません. The ★ is the first slot: 「タクシーで」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l15-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson15#3"
+    ],
+    "difficulty": 1,
+    "stem": "A「どうして きのう 学校を 休んだんですか。」\nB「すみません。頭が 痛かった（　）。」",
+    "options": [
+      "んです",
+      "んですか",
+      "ことです",
+      "ようです"
+    ],
+    "answer": 0,
+    "full": "A「どうして きのう 学校を 休んだんですか。」 B「すみません。頭が 痛かった んです。」",
+    "tr": {
+      "zh": "A：昨天为什么没来学校？ B：对不起，因为我头疼。",
+      "en": "A: Why were you absent from school yesterday? B: Sorry — I had a headache."
+    },
+    "why": {
+      "zh": "A 问原因，B 解释理由，用「简体＋んです」。",
+      "en": "A asks why, and B explains — that's 「plain form ＋ んです」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「んですか」是提问，B 是在回答，不是在问。",
+        "en": "「んですか」 asks a question, but B is answering."
+      },
+      {
+        "zh": "「痛かったことです」不是解释理由的说法，意思不通。",
+        "en": "「痛かったことです」 isn't a way to give a reason; it doesn't make sense."
+      },
+      {
+        "zh": "「ようです」是推测，自己头疼不需要推测。",
+        "en": "「ようです」 is an inference; you don't guess about your own headache."
+      }
+    ]
+  },
+  {
+    "id": "n5-l15-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson15#3"
+    ],
+    "difficulty": 2,
+    "stem": "A「今日は 早く 帰りますね。」\nB「ええ、あしたは テスト（　）。」",
+    "options": [
+      "なんです",
+      "んです",
+      "のんです",
+      "だんです"
+    ],
+    "answer": 0,
+    "full": "A「今日は 早く 帰りますね。」 B「ええ、あしたは テストなんです。」",
+    "tr": {
+      "zh": "A：今天早点回去啊。 B：嗯，因为明天有考试。",
+      "en": "A: You're going home early today. B: Yes — I have a test tomorrow."
+    },
+    "why": {
+      "zh": "B 在解释早回的理由，用「んです」；名词接「んです」要加「な」：テスト＋な＋んです。",
+      "en": "B explains why, so 「んです」; a noun takes 「な」 first: テスト ＋ な ＋ んです."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "名词不能直接接「んです」，中间要加「な」。",
+        "en": "A noun can't take 「んです」 directly; it needs 「な」."
+      },
+      {
+        "zh": "「のんです」不成立，「ん」本身就是「の」的口语形。",
+        "en": "「のんです」 isn't a form — 「ん」 is already the spoken 「の」."
+      },
+      {
+        "zh": "名词后面接「んです」时用「な」，不用「だ」。",
+        "en": "Before 「んです」 a noun takes 「な」, not 「だ」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l15-009",
+    "type": "narabe",
+    "refs": [
+      "lesson15#3"
+    ],
+    "difficulty": 2,
+    "stem": "A「今日は 早く 寝ますね。」\nB「ええ、あしたは [_] [_] [★] [_] です。」",
+    "options": [
+      "な",
+      "テスト",
+      "ん",
+      "大切な"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "A「今日は 早く 寝ますね。」 B「ええ、あしたは 大切な テストなんです。」",
+    "tr": {
+      "zh": "A：今天早点睡啊。 B：嗯，明天有很重要的考试。",
+      "en": "A: You're going to bed early tonight. B: Yes — I have an important test tomorrow."
+    },
+    "why": {
+      "zh": "「大切な」修饰「テスト」；名词＋な＋んです 解释理由。★ 在第三格，是「な」。",
+      "en": "「大切な」 modifies 「テスト」, then noun ＋ な ＋ んです explains. The ★ is the third slot: 「な」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l15-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson15#4"
+    ],
+    "difficulty": 1,
+    "stem": "たくさん 勉強した（　）、テストは よく なかった。",
+    "options": [
+      "のに",
+      "ので",
+      "から",
+      "し"
+    ],
+    "answer": 0,
+    "full": "たくさん 勉強したのに、テストは よく なかった。",
+    "tr": {
+      "zh": "明明学了很多，考试却没考好。",
+      "en": "Even though I studied a lot, the test didn't go well."
+    },
+    "why": {
+      "zh": "“学了很多”却“没考好”，结果和预期相反，带遗憾，用「のに」。",
+      "en": "Studying hard but doing badly is the opposite of what was expected — 「のに」, with regret."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ので」表示原因，“因为学了很多所以没考好”说不通。",
+        "en": "「ので」 gives a reason; \"because I studied a lot, it went badly\" makes no sense."
+      },
+      {
+        "zh": "「から」也表示原因，和前后句的转折关系不符。",
+        "en": "「から」 also gives a reason, but the two halves contrast."
+      },
+      {
+        "zh": "「し」是列举理由，前后句是转折，不是并列。",
+        "en": "「し」 lists reasons; these two halves contrast rather than add up."
+      }
+    ]
+  },
+  {
+    "id": "n5-l15-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson15#4"
+    ],
+    "difficulty": 2,
+    "stem": "今日は 日曜日（　）、会社に 行かなければ なりません。",
+    "options": [
+      "なのに",
+      "のに",
+      "だのに",
+      "でのに"
+    ],
+    "answer": 0,
+    "full": "今日は 日曜日なのに、会社に 行かなければ なりません。",
+    "tr": {
+      "zh": "今天明明是星期天，却必须去公司。",
+      "en": "Today is Sunday, and yet I have to go to work."
+    },
+    "why": {
+      "zh": "星期天本该休息却要上班，用「のに」；名词接「のに」要加「な」：日曜日＋な＋のに。",
+      "en": "Sunday should be a day off, so 「のに」; a noun takes 「な」 first: 日曜日 ＋ な ＋ のに."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "名词不能直接接「のに」，中间要加「な」。",
+        "en": "A noun can't take 「のに」 directly; it needs 「な」."
+      },
+      {
+        "zh": "名词后面接「のに」用「な」，不用「だ」。",
+        "en": "Before 「のに」 a noun takes 「な」, not 「だ」."
+      },
+      {
+        "zh": "「で」是て形，不能接「のに」。",
+        "en": "「で」 is the て-form; it can't come before 「のに」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l15-012",
+    "type": "narabe",
+    "refs": [
+      "lesson15#4"
+    ],
+    "difficulty": 2,
+    "stem": "朝 [_] [_] [★] [_] 痛い。",
+    "options": [
+      "のに",
+      "まだ",
+      "薬を",
+      "飲んだ"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "朝 薬を 飲んだのに まだ 痛い。",
+    "tr": {
+      "zh": "早上明明吃了药，还是疼。",
+      "en": "I took medicine this morning, but it still hurts."
+    },
+    "why": {
+      "zh": "「薬を飲んだ」＋「のに」（明明……却）＋「まだ痛い」（还疼）。★ 在第三格，是「のに」。",
+      "en": "「薬を飲んだ」 ＋ 「のに」 (even though) ＋ 「まだ痛い」 (still hurts). The ★ is the third slot: 「のに」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l15-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson15#5"
+    ],
+    "difficulty": 2,
+    "stem": "あしたは 休み（　）、友だちと 出かける つもりです。",
+    "options": [
+      "なので",
+      "ので",
+      "なから",
+      "でので"
+    ],
+    "answer": 0,
+    "full": "あしたは 休みなので、友だちと 出かける つもりです。",
+    "tr": {
+      "zh": "因为明天休息，打算和朋友出去。",
+      "en": "Tomorrow's a day off, so I'm planning to go out with friends."
+    },
+    "why": {
+      "zh": "名词接「ので」要加「な」：休み＋な＋ので。",
+      "en": "A noun takes 「な」 before 「ので」: 休み ＋ な ＋ ので."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "名词不能直接接「ので」，中间要加「な」。",
+        "en": "A noun can't take 「ので」 directly; it needs 「な」."
+      },
+      {
+        "zh": "「から」接名词要用「だ」（休みだから），不用「な」。",
+        "en": "With 「から」 a noun takes 「だ」 (休みだから), not 「な」."
+      },
+      {
+        "zh": "「で」是て形，后面不能再接「ので」。",
+        "en": "「で」 is the て-form; 「ので」 can't follow it."
+      }
+    ]
+  },
+  {
+    "id": "n5-l15-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson15#5"
+    ],
+    "difficulty": 2,
+    "stem": "A「どうして 窓を 開けたんですか。」\nB「暑かった（　）。」",
+    "options": [
+      "からです",
+      "のでです",
+      "のにです",
+      "しです"
+    ],
+    "answer": 0,
+    "full": "A「どうして 窓を 開けたんですか。」 B「暑かったからです。」",
+    "tr": {
+      "zh": "A：为什么开窗了？ B：因为热。",
+      "en": "A: Why did you open the window? B: Because it was hot."
+    },
+    "why": {
+      "zh": "回答“为什么”时，可以用「〜からです」结句；「ので」不能直接接「です」。",
+      "en": "Answering \"why\", you can end with 「〜からです」; 「ので」 can't be followed by 「です」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ので」后面不能直接接「です」结句，「のでです」不成立。",
+        "en": "「ので」 can't end a sentence with 「です」; 「のでです」 isn't a form."
+      },
+      {
+        "zh": "「のに」是“明明……却”，不是说原因，也不能接「です」。",
+        "en": "「のに」 means \"even though\", not \"because\", and doesn't take 「です」."
+      },
+      {
+        "zh": "「し」是列举理由的接续，不能接「です」结句。",
+        "en": "「し」 links listed reasons; it can't end a sentence with 「です」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l15-015",
+    "type": "narabe",
+    "refs": [
+      "lesson15#5"
+    ],
+    "difficulty": 1,
+    "stem": "すみません、[_] [_] [★] [_]、少し 遅れます。",
+    "options": [
+      "いる",
+      "ので",
+      "電車が",
+      "遅れて"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "すみません、電車が 遅れて いるので、少し 遅れます。",
+    "tr": {
+      "zh": "不好意思，因为电车晚点，我会晚到一会儿。",
+      "en": "Sorry, the train is running late, so I'll be a little late."
+    },
+    "why": {
+      "zh": "道歉时用「ので」说明原因更礼貌：電車が 遅れて いる（简体）＋ ので。★ 在第三格，是「いる」。",
+      "en": "When apologizing, 「ので」 gives the reason politely: 電車が 遅れて いる (plain) ＋ ので. The ★ is the third slot: 「いる」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l15-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson15#6"
+    ],
+    "difficulty": 1,
+    "stem": "この 店は 安いし、おいしい（　）、よく 来ます。",
+    "options": [
+      "し",
+      "のに",
+      "ても",
+      "たり"
+    ],
+    "answer": 0,
+    "full": "この 店は 安いし、おいしいし、よく 来ます。",
+    "tr": {
+      "zh": "这家店又便宜又好吃，所以常来。",
+      "en": "This place is cheap and tasty, so I come here often."
+    },
+    "why": {
+      "zh": "前面已经有「安いし」，再列举一个理由「おいしいし」，然后说结论。",
+      "en": "「安いし」 already lists one reason; 「おいしいし」 adds another before the conclusion."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「のに」是转折（明明好吃却……），和“常来”不矛盾，接不上。",
+        "en": "「のに」 contrasts (even though it's tasty…), but \"I come often\" is no contradiction."
+      },
+      {
+        "zh": "「ても」要接て形（おいしくても），「おいしいても」不成立。",
+        "en": "「ても」 needs the て-form (おいしくても); 「おいしいても」 isn't a form."
+      },
+      {
+        "zh": "「たり」接动词た形（食べたり），不接「おいしい」。",
+        "en": "「たり」 follows a verb's た-form (食べたり), not 「おいしい」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l15-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson15#6"
+    ],
+    "difficulty": 2,
+    "stem": "今日は 雨（　）、寒いし、出かけたく ない。",
+    "options": [
+      "だし",
+      "し",
+      "なし",
+      "のし"
+    ],
+    "answer": 0,
+    "full": "今日は 雨だし、寒いし、出かけたく ない。",
+    "tr": {
+      "zh": "今天又下雨又冷，不想出门。",
+      "en": "It's raining and cold today — I don't want to go out."
+    },
+    "why": {
+      "zh": "「し」接简体；名词的简体是「雨だ」，所以是「雨だし」。",
+      "en": "「し」 follows the plain form; a noun's plain form is 「雨だ」, so 「雨だし」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "名词不能直接接「し」，要用简体「雨だ」＋し。",
+        "en": "A noun can't take 「し」 directly; it needs plain 「雨だ」 ＋ し."
+      },
+      {
+        "zh": "「な」是名词接「ので/のに」时用的，接「し」用「だ」。",
+        "en": "「な」 is for 「ので/のに」; before 「し」 a noun takes 「だ」."
+      },
+      {
+        "zh": "「の」不能接「し」，「雨のし」不成立。",
+        "en": "「の」 can't come before 「し」; 「雨のし」 isn't a form."
+      }
+    ]
+  },
+  {
+    "id": "n5-l15-018",
+    "type": "narabe",
+    "refs": [
+      "lesson15#6"
+    ],
+    "difficulty": 2,
+    "stem": "時間も [_] [_] [★] [_] 旅行は 無理だ。",
+    "options": [
+      "ない",
+      "ないし",
+      "から",
+      "お金も"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "時間も ないし お金も ないから 旅行は 無理だ。",
+    "tr": {
+      "zh": "又没时间又没钱，所以旅行是不可能的。",
+      "en": "I have neither time nor money, so a trip is out of the question."
+    },
+    "why": {
+      "zh": "「時間もないし」列举第一个理由，「お金もないから」是第二个理由并引出结论。★ 在第三格，是「ない」。",
+      "en": "「時間もないし」 lists the first reason, 「お金もないから」 the second, leading to the conclusion. The ★ is the third slot: 「ない」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l15-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson15#7"
+    ],
+    "difficulty": 1,
+    "stem": "寝る（　）、歯を みがきます。",
+    "options": [
+      "前に",
+      "後で",
+      "てから",
+      "ながら"
+    ],
+    "answer": 0,
+    "full": "寝る 前に、歯を みがきます。",
+    "tr": {
+      "zh": "睡觉之前刷牙。",
+      "en": "I brush my teeth before going to bed."
+    },
+    "why": {
+      "zh": "空格前是辞书形「寝る」，辞书形能接的是「前に」（……之前）。",
+      "en": "The blank follows the dictionary form 「寝る」, which takes 「前に」 (before)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「後で」前面要用た形（寝た後で），不接辞书形。",
+        "en": "「後で」 needs the た-form (寝た後で), not the dictionary form."
+      },
+      {
+        "zh": "「てから」前面要用て形（寝てから），而且“睡完再刷牙”也不对。",
+        "en": "「てから」 needs the て-form (寝てから), and \"after sleeping\" isn't the meaning."
+      },
+      {
+        "zh": "「ながら」接ます形（寝ながら），不接辞书形。",
+        "en": "「ながら」 attaches to the ます-stem (寝ながら), not the dictionary form."
+      }
+    ]
+  },
+  {
+    "id": "n5-l15-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson15#7"
+    ],
+    "difficulty": 1,
+    "stem": "ご飯を 食べ（　）後で、散歩します。",
+    "options": [
+      "た",
+      "る",
+      "て",
+      "ない"
+    ],
+    "answer": 0,
+    "full": "ご飯を 食べた 後で、散歩します。",
+    "tr": {
+      "zh": "吃完饭之后散步。",
+      "en": "I take a walk after eating."
+    },
+    "why": {
+      "zh": "「後で」前面接动词た形：食べた＋後で。",
+      "en": "「後で」 follows the た-form: 食べた ＋ 後で."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "辞书形「食べる」接的是「前に」，不接「後で」。",
+        "en": "The dictionary form 「食べる」 goes with 「前に」, not 「後で」."
+      },
+      {
+        "zh": "て形接「から」（食べてから），不接「後で」。",
+        "en": "The て-form goes with 「から」 (食べてから), not 「後で」."
+      },
+      {
+        "zh": "「食べない後で」不成立，「後で」前面必须是た形。",
+        "en": "「食べない後で」 isn't a form; 「後で」 needs the た-form."
+      }
+    ]
+  },
+  {
+    "id": "n5-l15-021",
+    "type": "narabe",
+    "refs": [
+      "lesson15#7"
+    ],
+    "difficulty": 1,
+    "stem": "授業の [_] [_] [★] [_]。",
+    "options": [
+      "しました",
+      "質問",
+      "後で",
+      "先生に"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "授業の 後で 先生に 質問 しました。",
+    "tr": {
+      "zh": "下课后向老师提了问题。",
+      "en": "After class, I asked the teacher a question."
+    },
+    "why": {
+      "zh": "名词＋の＋後で：「授業の後で」；然后「先生に質問しました」。★ 在第三格，是「質問」。",
+      "en": "Noun ＋ の ＋ 後で: 「授業の後で」, then 「先生に質問しました」. The ★ is the third slot: 「質問」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l15-022",
+    "type": "bunpou",
+    "refs": [
+      "lesson15#8"
+    ],
+    "difficulty": 1,
+    "stem": "健康（　）、毎日 運動して います。",
+    "options": [
+      "の ために",
+      "ために",
+      "な ために",
+      "の ように"
+    ],
+    "answer": 0,
+    "full": "健康の ために、毎日 運動して います。",
+    "tr": {
+      "zh": "为了健康，每天都在运动。",
+      "en": "I exercise every day for my health."
+    },
+    "why": {
+      "zh": "“为了……”表示目的；名词接「ために」要加「の」：健康のために。",
+      "en": "\"For the sake of\" is 「ために」; a noun takes 「の」 first: 健康のために."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "名词不能直接接「ために」，中间要加「の」。",
+        "en": "A noun can't take 「ために」 directly; it needs 「の」."
+      },
+      {
+        "zh": "「健康」在这里是名词，接「ために」用「の」，不用「な」。",
+        "en": "「健康」 is a noun here; before 「ために」 it takes 「の」, not 「な」."
+      },
+      {
+        "zh": "「健康のように」是“像健康一样”，意思不通。",
+        "en": "「健康のように」 would mean \"like health\", which makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n5-l15-023",
+    "type": "bunpou",
+    "refs": [
+      "lesson15#8"
+    ],
+    "difficulty": 2,
+    "stem": "家を 買う（　）、お金を ためて います。",
+    "options": [
+      "ために",
+      "ても",
+      "ながら",
+      "後で"
+    ],
+    "answer": 0,
+    "full": "家を 買う ために、お金を ためて います。",
+    "tr": {
+      "zh": "为了买房子，正在攒钱。",
+      "en": "I'm saving money to buy a house."
+    },
+    "why": {
+      "zh": "「買う」是自己能控制的意志动词，前后主语相同，表示目的用「辞书形＋ために」。",
+      "en": "「買う」 is a deliberate action by the same person who saves, so purpose is 「dictionary form ＋ ために」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ても」要接て形（買っても），不接辞书形；意思“即使买”也不对。",
+        "en": "「ても」 follows the て-form (買っても), not the dictionary form — and \"even if I buy\" doesn't fit anyway."
+      },
+      {
+        "zh": "「ながら」接ます形（買いながら），不接辞书形。",
+        "en": "「ながら」 attaches to the ます-stem (買いながら), not the dictionary form."
+      },
+      {
+        "zh": "「後で」前面要用た形（買った後で），不接辞书形。",
+        "en": "「後で」 needs the た-form (買った後で), not the dictionary form."
+      }
+    ]
+  },
+  {
+    "id": "n5-l15-024",
+    "type": "narabe",
+    "refs": [
+      "lesson15#8"
+    ],
+    "difficulty": 1,
+    "stem": "わたしは 日本語を [_] [_] [★] [_] 来ました。",
+    "options": [
+      "ために",
+      "日本へ",
+      "勉強",
+      "する"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "わたしは 日本語を 勉強する ために 日本へ 来ました。",
+    "tr": {
+      "zh": "我为了学日语来了日本。",
+      "en": "I came to Japan to study Japanese."
+    },
+    "why": {
+      "zh": "「日本語を勉強する」＋「ために」（为了）＋「日本へ来ました」。★ 在第三格，是「ために」。",
+      "en": "「日本語を勉強する」 ＋ 「ために」 (in order to) ＋ 「日本へ来ました」. The ★ is the third slot: 「ために」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l15-025",
+    "type": "bunpou",
+    "refs": [
+      "lesson15#9"
+    ],
+    "difficulty": 1,
+    "stem": "ひま（　）とき、よく 映画を 見ます。",
+    "options": [
+      "な",
+      "の",
+      "だ",
+      "に"
+    ],
+    "answer": 0,
+    "full": "ひまな とき、よく 映画を 見ます。",
+    "tr": {
+      "zh": "有空的时候常看电影。",
+      "en": "When I'm free, I often watch movies."
+    },
+    "why": {
+      "zh": "「ひま」是な形容词，修饰名词「とき」要加「な」：ひまなとき。",
+      "en": "「ひま」 is a な-adjective, so it takes 「な」 before 「とき」: ひまなとき."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「の」是名词接「とき」时用的（子供のとき），な形容词用「な」。",
+        "en": "「の」 is for a noun before 「とき」 (子供のとき); a な-adjective takes 「な」."
+      },
+      {
+        "zh": "「だ」是句尾形式，不能修饰「とき」。",
+        "en": "「だ」 ends a sentence; it can't modify 「とき」."
+      },
+      {
+        "zh": "「に」是副词用法（ひまに），不能接名词「とき」。",
+        "en": "「に」 makes an adverb; it can't modify 「とき」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l15-026",
+    "type": "bunpou",
+    "refs": [
+      "lesson15#9"
+    ],
+    "difficulty": 3,
+    "stem": "A「その かばん、どこで 買ったんですか。」\nB「去年 フランスへ（　）とき、パリで 買いました。」",
+    "options": [
+      "行った",
+      "行く",
+      "行って",
+      "行き"
+    ],
+    "answer": 0,
+    "full": "A「その かばん、どこで 買ったんですか。」 B「去年 フランスへ 行った とき、パリで 買いました。」",
+    "tr": {
+      "zh": "A：那个包是在哪儿买的？ B：去年去法国的时候在巴黎买的。",
+      "en": "A: Where did you buy that bag? B: In Paris, when I went to France last year."
+    },
+    "why": {
+      "zh": "在巴黎买，说明已经到了法国，动作已完成，用「た形＋とき」：行ったとき。",
+      "en": "Buying it in Paris means B had already arrived in France — a completed action takes 「た-form ＋ とき」: 行ったとき."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「行くとき」是“去之前/去的路上”，那时还没到法国，不可能在巴黎买。",
+        "en": "「行くとき」 means before arriving; B couldn't have bought it in Paris yet."
+      },
+      {
+        "zh": "て形「行って」不能直接接「とき」。",
+        "en": "The て-form 「行って」 can't come before 「とき」."
+      },
+      {
+        "zh": "ます形「行き」不能直接接「とき」。",
+        "en": "The ます-stem 「行き」 can't come before 「とき」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l15-027",
+    "type": "narabe",
+    "refs": [
+      "lesson15#9"
+    ],
+    "difficulty": 2,
+    "stem": "[_] [_] [★] [_]、いつでも 電話して ください。",
+    "options": [
+      "ある",
+      "とき",
+      "困った",
+      "ことが"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "困った ことが ある とき、いつでも 電話して ください。",
+    "tr": {
+      "zh": "有困难的时候，随时给我打电话。",
+      "en": "Whenever you have a problem, call me anytime."
+    },
+    "why": {
+      "zh": "「困ったこと」（困难的事）＋「がある」＋「とき」（……的时候）。★ 在第三格，是「ある」。",
+      "en": "「困ったこと」 (a problem) ＋ 「がある」 ＋ 「とき」 (when). The ★ is the third slot: 「ある」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

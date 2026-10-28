@@ -1,0 +1,875 @@
+[
+  {
+    "id": "n2-m1-p1",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "次の文章は、雑誌に掲載されたコラムである。",
+    "passage": "先日、駅のホームで電車を待っていたとき、ふと周りを見回して驚いた。ベンチに座っている人も、立っている人も、ほとんど全員がスマートフォンの画面を見つめていたのだ。[[1]]、私自身も、その直前までニュースを読んでいたのだが。\nかつて、待ち時間は退屈なものだった。何もすることがないので、人々は窓の外の景色を眺めたり、ぼんやりと考え事をしたりして過ごす[[2]]。今では、わずか数分の空き時間さえ、何かで埋めずにはいられない人が多い。\nもちろん、スマートフォンが便利であることは言うまでもない。[[3]]、何もしない時間がなくなったことで、私たちが失ったものもあるのではないか。ある心理学者によれば、人はぼんやりしているときにこそ頭の中が整理され、新しいアイデアが生まれやすい[[4]]。\nそう考えると、退屈な時間は決して無駄ではない。次に電車を待つときは、画面から目を離して、少しだけ退屈を楽しんで[[5]]と思う。",
+    "tr": {
+      "zh": "前几天，我在车站站台等电车时，无意中环顾四周，吃了一惊：坐在长椅上的人也好，站着的人也好，几乎所有人都盯着手机屏幕。不过，我自己直到前一刻也还在看新闻。从前，等待的时间是无聊的。因为无事可做，人们只能望着窗外的风景，或者发着呆想想事情来打发时间。如今，很多人连短短几分钟的空闲都非要用点什么填满不可。当然，手机很方便，这是不用说的。但是，没有了无所事事的时间，我们是不是也失去了些什么呢？据一位心理学家说，人恰恰是在发呆的时候，脑子里才会得到整理，新的点子也更容易产生。这样一想，无聊的时间绝不是浪费。下次等电车的时候，我想把视线从屏幕上移开，稍微享受一下无聊。",
+      "en": "The other day, waiting for a train on the platform, I happened to look around and was taken aback: whether sitting on the benches or standing, almost everyone was staring at a smartphone screen. Mind you, I had been reading the news myself until a moment before. Waiting used to be boring. With nothing to do, people had no choice but to pass the time gazing out of the window or lost in thought. Today many people can't stand leaving even a few spare minutes unfilled. Of course, it goes without saying that smartphones are convenient. But haven't we lost something now that we never do nothing? According to one psychologist, it is precisely when we let our minds drift that our thoughts get sorted out and new ideas come most easily. Seen that way, boring time is by no means wasted. Next time I wait for a train, I think I'll take my eyes off the screen and try enjoying a little boredom."
+    },
+    "questions": [
+      {
+        "options": ["したがって", "それとも", "もっとも", "すなわち"],
+        "answer": 2,
+        "why": {
+          "zh": "前面说“大家都在看手机”，后面补充一个保留：“不过我自己也一样”，句末还有「のだが」。对前文做补充、修正用「もっとも」（不过）。",
+          "en": "After \"everyone was on their phone\" comes a qualification — \"mind you, so was I\" — ending in 「のだが」. A correcting afterthought is 「もっとも」."
+        },
+        "wrong": [
+          {
+            "zh": "「したがって」表示因果“因此”，别人看手机不是“我也在看新闻”的原因。",
+            "en": "「したがって」 (\"therefore\") is cause and effect; others' phones aren't why the writer read the news."
+          },
+          {
+            "zh": "「それとも」用于疑问中的选择（还是），这里不是疑问句。",
+            "en": "「それとも」 (\"or\") offers an alternative in a question; this isn't a question."
+          },
+          null,
+          {
+            "zh": "「すなわち」是“也就是说”，换个说法重述前文，但后面说的是另一件事（作者自己）。",
+            "en": "「すなわち」 (\"that is\") restates what came before, but the sentence adds something new about the writer."
+          }
+        ]
+      },
+      {
+        "options": ["ことになっていた", "しかなかった", "どころではなかった", "わけにはいかなかった"],
+        "answer": 1,
+        "why": {
+          "zh": "前面说「何もすることがないので」，没有别的选择，只能望风景、发呆：「〜しかなかった」（只能……）。",
+          "en": "「何もすることがないので」 — with nothing else to do, gazing and daydreaming were the only option: 「〜しかなかった」."
+        },
+        "wrong": [
+          {
+            "zh": "「ことになっていた」表示规定或安排好的事，望风景不是规定。",
+            "en": "「ことになっていた」 describes a rule or arrangement; gazing out of the window wasn't a rule."
+          },
+          null,
+          {
+            "zh": "「どころではなかった」是“哪有心思……”，和“无事可做”矛盾。",
+            "en": "「どころではなかった」 (\"was in no state to\") contradicts having nothing to do."
+          },
+          {
+            "zh": "「わけにはいかなかった」是“不能……”，“因为无事可做所以不能发呆”说不通。",
+            "en": "「わけにはいかなかった」 (\"couldn't very well\") makes no sense after \"since there was nothing to do\"."
+          }
+        ]
+      },
+      {
+        "options": ["しかも", "だが", "そのうえ", "つまり"],
+        "answer": 1,
+        "why": {
+          "zh": "「もちろん〜は言うまでもない」先承认手机的便利，后面转向“但也失去了东西”，是逆接：「だが」。",
+          "en": "「もちろん〜言うまでもない」 concedes the convenience; the next sentence turns against it (\"we lost something\") — the contrastive 「だが」."
+        },
+        "wrong": [
+          {
+            "zh": "「しかも」是“而且”，追加同方向的内容，可后文是相反的看法。",
+            "en": "「しかも」 (\"what's more\") adds in the same direction, but what follows is the opposite view."
+          },
+          null,
+          {
+            "zh": "「そのうえ」也是“再加上”，同样是累加，不是转折。",
+            "en": "「そのうえ」 (\"on top of that\") also adds; there's no turn."
+          },
+          {
+            "zh": "「つまり」是“也就是说”，后文不是对“手机很方便”的总结。",
+            "en": "「つまり」 (\"in other words\") would restate the convenience, but the next sentence questions it."
+          }
+        ]
+      },
+      {
+        "options": ["はずがない", "のだという", "ことにしている", "ものだろうか"],
+        "answer": 1,
+        "why": {
+          "zh": "前面有「ある心理学者によれば」（据某心理学家说），句末要用传闻：「〜のだという」（据说……）。",
+          "en": "「ある心理学者によれば」 (\"according to a psychologist\") calls for reported speech at the end: 「〜のだという」."
+        },
+        "wrong": [
+          {
+            "zh": "「はずがない」是“不可能……”，和后文“无聊的时间绝不是浪费”矛盾。",
+            "en": "「はずがない」 (\"can't possibly\") contradicts the next line, that boredom isn't wasted."
+          },
+          null,
+          {
+            "zh": "「ことにしている」表示自己的习惯，不能用来转述心理学家的观点。",
+            "en": "「ことにしている」 describes one's own habit, not a psychologist's finding."
+          },
+          {
+            "zh": "「ものだろうか」表示怀疑，和「によれば」引用的内容以及后面的肯定结论不符。",
+            "en": "「ものだろうか」 casts doubt, which doesn't fit a cited finding that the writer then accepts."
+          }
+        ]
+      },
+      {
+        "options": ["しかたがない", "みようか", "いられない", "たまらない"],
+        "answer": 1,
+        "why": {
+          "zh": "「次に電車を待つときは」是作者对自己今后的打算，「〜てみようかと思う」（我想试着……）表示打算。",
+          "en": "「次に電車を待つときは」 is the writer's plan for next time: 「〜てみようかと思う」, \"I think I'll try …\"."
+        },
+        "wrong": [
+          {
+            "zh": "「楽しんでしかたがない」是“高兴得不得了”，表示控制不住的感情，不是今后的打算，也不接「と思う」。",
+            "en": "「〜てしかたがない」 is an overwhelming feeling, not a plan, and it doesn't fit before 「と思う」 here."
+          },
+          null,
+          {
+            "zh": "「楽しんでいられない」是“没法享受”，和前面“无聊的时间不是浪费”的结论相反。",
+            "en": "「楽しんでいられない」 (\"can't go on enjoying\") is the opposite of the writer's conclusion."
+          },
+          {
+            "zh": "「〜てたまらない」接表示感情、感觉的词（うれしくて、眠くて），「楽しんでたまらない」不成立。",
+            "en": "「〜てたまらない」 follows feeling words (「うれしくて」「眠くて」); 「楽しんでたまらない」 isn't Japanese."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-m1-p2",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、インターネットの書店から客に届いたお知らせである。",
+    "passage": "お客様各位\n\nいつも「みどり書房オンライン」をご利用いただき、誠にありがとうございます。\nこれまで、ご注文金額が3,000円以上の場合は送料を無料としておりましたが、配送費の値上がりに伴い、12月1日のご注文分より、送料無料の条件を5,000円以上に変更させていただきます。\nなお、会員登録をされているお客様につきましては、これまでどおり3,000円以上のご注文で送料無料となります。会員登録は無料で、当サイトの「マイページ」から簡単に行っていただけます。\n今後とも、どうぞよろしくお願いいたします。",
+    "tr": {
+      "zh": "各位顾客：一直以来感谢您使用“绿书房在线”。此前，订单金额满3,000日元即免运费，但由于配送费上涨，自12月1日的订单起，免运费的条件将改为满5,000日元。另外，已注册会员的顾客，仍和以前一样，订单满3,000日元即免运费。会员注册免费，可在本站的“我的页面”轻松完成。今后也请多多关照。",
+      "en": "Dear customers, thank you for always using Midori Books Online. Until now, shipping has been free on orders of ¥3,000 or more, but because delivery costs have risen, from orders placed on 1 December the free-shipping threshold will change to ¥5,000. Customers who have registered as members, however, will continue to get free shipping on orders of ¥3,000 or more, as before. Registration is free and can be done easily from ‘My Page’ on our site. We look forward to your continued custom."
+    },
+    "questions": [
+      {
+        "q": "会員登録をしていない人が、12月5日に4,000円分の本を注文する場合、どうなるか。",
+        "options": [
+          "3,000円以上なので、これまでどおり送料は無料になる。",
+          "送料がかかり、会員登録をしても5,000円以上でなければ無料にならない。",
+          "送料がかかるが、注文する前に会員登録をすれば無料になる。",
+          "会員登録には料金がかかるが、登録すれば送料は無料になる。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "12月1日起非会员要满5,000日元才免运费，4,000日元要付运费；但会员「これまでどおり3,000円以上」免运费，注册又是免费的，所以先注册就能免运费。",
+          "en": "From 1 December non-members need ¥5,000, so ¥4,000 pays shipping; but members still get free shipping from ¥3,000 「これまでどおり」, and registering is free — so register first and it's free."
+        },
+        "wrong": [
+          {
+            "zh": "3,000日元的条件只适用于会员，非会员从12月1日起改为5,000日元。",
+            "en": "The ¥3,000 rule now applies only to members; for non-members it rose to ¥5,000 on 1 December."
+          },
+          {
+            "zh": "会员仍然是满3,000日元就免运费，注册后4,000日元就够了。",
+            "en": "Members still need only ¥3,000, so after registering ¥4,000 is enough."
+          },
+          null,
+          {
+            "zh": "通知里写着「会員登録は無料」，注册不收费。",
+            "en": "The notice says 「会員登録は無料」 — registration costs nothing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-m1-p3",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "新人のころ、私は分からないことがあっても、先輩に質問するのをためらっていた。忙しそうな先輩の邪魔をしたくなかったし、何より「こんなことも知らないのか」と思われるのが怖かったのだ。ところが、一人で悩んだ末に出した答えが間違っていて、結局先輩の仕事を増やしてしまったことが何度もある。今、後輩を指導する立場になって分かるのは、早めに聞いてもらうほうが、こちらとしてもずっと助かるということだ。",
+    "tr": {
+      "zh": "刚进公司的时候，我即使有不懂的地方，也总是犹豫要不要问前辈。我不想打扰看上去很忙的前辈，更重要的是，我害怕被人觉得“连这个都不知道吗”。可是，有好几次，我一个人苦思冥想后得出的答案是错的，结果反而给前辈增加了工作。现在我自己成了指导后辈的人，才明白：后辈早点来问，对我来说也要省事得多。",
+      "en": "When I was new, I hesitated to ask my seniors even when I didn't understand something. I didn't want to disturb them when they looked busy, and above all I was afraid they'd think, ‘He doesn't even know that?’ But many times the answer I reached after agonising alone turned out to be wrong, and I ended up making more work for them. Now that I'm the one guiding juniors, I understand that it's much more helpful for me, too, when they ask early."
+    },
+    "questions": [
+      {
+        "q": "筆者が今考えていることは何か。",
+        "options": [
+          "後輩は、忙しそうな先輩の邪魔をしないように気をつけるべきだ。",
+          "自分で悩んで答えを出すことは、新人にとって大切な経験だ。",
+          "新人のころ、先輩にもっと厳しく指導してもらいたかった。",
+          "後輩には、分からないことがあれば早めに質問してほしい。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "最后一句「早めに聞いてもらうほうが、こちらとしてもずっと助かる」：作为指导者，希望后辈早点来问。",
+          "en": "The last line, 「早めに聞いてもらうほうが、こちらとしてもずっと助かる」: as a mentor, the writer wants juniors to ask early."
+        },
+        "wrong": [
+          {
+            "zh": "怕打扰前辈是作者新人时的想法，现在他认为早点问反而更好。",
+            "en": "Not disturbing busy seniors was what the writer thought as a newcomer; now he says asking early is better."
+          },
+          {
+            "zh": "文中说一个人苦想的结果常常是错的，反而增加了前辈的工作，并没有说这是宝贵经验。",
+            "en": "Agonising alone led to wrong answers and more work for others; the writer doesn't call it valuable experience."
+          },
+          {
+            "zh": "文中没有提到希望前辈更严格地指导，问题在于自己不敢问。",
+            "en": "Nothing is said about wanting stricter mentoring; the problem was the writer's own reluctance to ask."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-m1-p4",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、ある会社の社内で配られた文書である。",
+    "passage": "社員各位\n\n来月から、在宅勤務の申請方法が変わります。これまでは前日までに上司にメールで申請していましたが、今後は社内システムから申請してください。申請は、在宅勤務をする日の3日前までに行う必要があります。\nただし、子どもの急な病気など、やむを得ない事情がある場合に限り、当日の朝9時までに上司に電話で連絡すれば、在宅勤務を認めます。この場合も、後日システムからの申請を忘れないようにしてください。\n\n人事部",
+    "tr": {
+      "zh": "各位员工：从下个月起，居家办公的申请方法将有所变化。以前是在前一天之前用邮件向上司申请，今后请通过公司内部系统申请。申请须在居家办公日的3天前完成。但是，仅限于孩子突然生病等不得已的情况，若在当天早上9点前打电话联系上司，可以允许居家办公。这种情况下，事后也请不要忘记在系统上提交申请。人事部",
+      "en": "To all staff: from next month, the way you apply to work from home will change. Until now you emailed your manager by the day before; from now on, please apply on the company system. Applications must be made at least three days before the day you work from home. However, only where there are unavoidable circumstances, such as a child's sudden illness, working from home will be allowed if you phone your manager by 9 a.m. that day. In this case too, please don't forget to apply on the system afterwards. — Human Resources"
+    },
+    "questions": [
+      {
+        "q": "この文書によると、子どもが急に病気になって在宅勤務をすることになった場合、どうしなければならないか。",
+        "options": [
+          "当日の朝9時までに、社内システムから申請する。",
+          "当日の朝9時までに上司に電話し、後でシステムからも申請する。",
+          "当日の朝9時までに上司にメールで連絡し、後で電話もする。",
+          "当日の朝9時までに上司に電話すれば、ほかには何もしなくていい。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "不得已的情况下要「当日の朝9時までに上司に電話で連絡」，而且「この場合も、後日システムからの申請」也必须做。两件事都要。",
+          "en": "In an emergency you phone your manager by 9 a.m. 「当日の朝9時までに上司に電話で連絡」, and 「この場合も」 you still apply on the system afterwards — both steps."
+        },
+        "wrong": [
+          {
+            "zh": "当天的紧急情况要先打电话给上司，系统申请是事后补交的。",
+            "en": "On the day you must phone your manager; the system application comes afterwards."
+          },
+          null,
+          {
+            "zh": "邮件申请是以前的做法，紧急时的联系方式是电话。",
+            "en": "Emailing was the old method; in an emergency the contact is by phone."
+          },
+          {
+            "zh": "文中写着「この場合も、後日システムからの申請を忘れないように」，事后还要在系统上申请。",
+            "en": "The memo says 「この場合も、後日システムからの申請を忘れないように」 — the system application is still required."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-m1-p5",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "本は最後まで読まなければならない、と長い間思い込んでいた。途中でつまらないと感じても、せっかく買ったのだからと我慢して読み続けていたのだ。しかし、ある作家が「合わない本を無理に読む時間があるなら、次の本を開いたほうがいい」と書いているのを読んで、気持ちが楽になった。読書は義務ではない。途中でやめた本でも、何年か後に読み返したら面白く感じることもある。本との出会いには、時期というものがあるのだろう。",
+    "tr": {
+      "zh": "很长一段时间里，我一直认定书必须读到最后。即使读到一半觉得无聊，也会想着“好不容易买的”而硬着头皮读下去。但是，读到一位作家写的“与其花时间硬读不合适的书，不如翻开下一本”之后，我心里轻松了。读书不是义务。即使是读到一半放下的书，几年后再读，也可能觉得有意思。和书的相遇，大概也是讲时机的吧。",
+      "en": "For a long time I was convinced that a book had to be read to the end. Even if I found it dull halfway, I'd make myself keep going because I'd paid for it. But when I read a writer saying, ‘If you have time to force your way through a book that doesn't suit you, you'd do better to open the next one,’ I felt relieved. Reading is not a duty. A book you gave up on may turn out to be interesting when you pick it up again years later. There is, I suppose, a right time for meeting a book."
+    },
+    "questions": [
+      {
+        "q": "筆者の考えに合うものはどれか。",
+        "options": [
+          "買った本は、もったいないので最後まで読んだほうがいい。",
+          "合わないと感じた本は、無理に最後まで読まなくてもいい。",
+          "途中でやめた本は、何年たっても面白く感じることはない。",
+          "本を選ぶときは、作家の意見を参考にするべきだ。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "作者读了作家的话后「気持ちが楽になった」「読書は義務ではない」，认为不合适的书不必硬读到最后。",
+          "en": "After reading the writer's advice the author 「気持ちが楽になった」 and says 「読書は義務ではない」: no need to force through a book that doesn't suit you."
+        },
+        "wrong": [
+          {
+            "zh": "“买了就要读完”是作者过去的想法（「思い込んでいた」），现在已经改变了。",
+            "en": "\"Finish what you bought\" is what the writer used to believe (「思い込んでいた」), not the current view."
+          },
+          null,
+          {
+            "zh": "文中说几年后重读「面白く感じることもある」，正好相反。",
+            "en": "The text says such a book may feel interesting years later (「面白く感じることもある」) — the opposite."
+          },
+          {
+            "zh": "作家的话只是让作者想通的契机，文中没有说选书时应该参考作家的意见。",
+            "en": "The writer's words just changed the author's mind; nothing says to choose books by writers' advice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-m1-p6",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "会議の前の数分間に交わされる雑談を、時間の無駄だと考える人は少なくない。しかし、ある企業が社内で調査したところ、会議の前に雑談をしたチームのほうが、会議中の発言の数が多く、出てくる意見の種類も豊かだったという。雑談によって緊張がほぐれ、「この場では何を言っても大丈夫だ」という安心感が生まれるためだと考えられている。雑談は、話し合いの質を高めるための準備運動なのかもしれない。",
+    "tr": {
+      "zh": "不少人认为，会议开始前几分钟的闲聊是浪费时间。但是，据某企业在公司内部的调查，会前闲聊过的团队，会上发言次数更多，提出的意见种类也更丰富。人们认为，这是因为闲聊让人放松下来，产生了“在这里说什么都没关系”的安心感。闲聊或许是提高讨论质量的热身运动。",
+      "en": "Quite a few people think the small talk in the minutes before a meeting is a waste of time. But when one company surveyed its staff, teams that had chatted before a meeting spoke up more during it, and the range of opinions was wider. This is thought to be because chatting eases tension and creates a sense of safety — ‘it's fine to say anything here.’ Small talk may be a warm-up that raises the quality of discussion."
+    },
+    "questions": [
+      {
+        "q": "この文章によると、会議の前の雑談にはどのような効果があるか。",
+        "options": [
+          "会議にかかる時間を短くすることができる。",
+          "参加者の意見が一つにまとまりやすくなる。",
+          "参加者が安心して意見を言えるようになる。",
+          "会議で話し合う内容を事前に決めておける。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "闲聊让人放松，产生「何を言っても大丈夫だ」的安心感，所以发言更多：大家能安心地说出意见。",
+          "en": "Small talk eases tension and creates the feeling that 「何を言っても大丈夫だ」, so people speak up — they feel safe giving opinions."
+        },
+        "wrong": [
+          {
+            "zh": "文中没有提到会议时间变短，只说发言更多、意见更丰富。",
+            "en": "Nothing is said about shorter meetings, only more remarks and more varied opinions."
+          },
+          {
+            "zh": "文中说「意見の種類も豊かだった」，意见更多样，而不是统一成一个。",
+            "en": "The text says 「意見の種類も豊かだった」 — opinions became more varied, not unified."
+          },
+          null,
+          {
+            "zh": "闲聊的效果是缓解紧张，文中没有说用来事先决定讨论内容。",
+            "en": "The effect is easing tension; nothing says the chat is used to fix the agenda in advance."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-m1-p7",
+    "type": "mid",
+    "difficulty": 2,
+    "passage": "スーパーに並ぶキュウリは、どれもまっすぐで、長さもほとんど同じだ。これは偶然ではない。形や大きさが基準に合わない野菜は「規格外」として、多くの場合、店頭に並ぶ前に取り除かれてしまうのだ。規格外の野菜は、味や栄養の面では普通のものと何ら変わらない。それにもかかわらず、農家によっては収穫量の二割近くが出荷できず、畑で捨てられることもあるという。\nなぜこのような基準があるのだろうか。理由の一つは、流通の効率である。形がそろっていれば、決まった数を箱に詰めやすく、運ぶときにも無駄がない。店にとっても、値段をつけやすく、並べたときの見栄えがいい。つまり、規格は消費者のためというより、主に運ぶ側や売る側の都合で作られてきたのである。\n最近では、こうした野菜を「訳あり品」として安く売る店や、農家から直接買える通信販売も増えてきた。曲がったキュウリを手に取って初めは少し驚いた客も、食べてみれば味に違いがないことにすぐ気づく。私たちが「見た目のよさ」を当たり前のように求めることをやめれば、捨てられる野菜はもっと減らせるはずだ。",
+    "tr": {
+      "zh": "超市里摆着的黄瓜，每一根都是直的，长度也几乎一样。这不是偶然。形状和大小不符合标准的蔬菜被当作“规格外”，多数情况下在上架之前就被剔除了。规格外的蔬菜在味道和营养方面与普通蔬菜毫无区别。尽管如此，据说有的农户收成的近两成无法出货，有时就扔在田里。为什么会有这样的标准呢？原因之一是流通的效率。形状整齐的话，容易按固定数量装箱，运输时也没有浪费。对商店来说，也容易定价，摆出来也好看。也就是说，规格与其说是为了消费者，不如说主要是出于运输方和销售方的方便而制定的。最近，把这类蔬菜当作“瑕疵品”便宜出售的商店，以及可以直接从农户购买的网购也多了起来。拿到弯黄瓜时起初有点吃惊的顾客，吃了之后很快就会发现味道并没有不同。如果我们不再理所当然地追求“好看”，被扔掉的蔬菜应该能减少更多。",
+      "en": "The cucumbers in a supermarket are all straight and almost exactly the same length. That's no accident. Vegetables whose shape or size doesn't meet the standard are classed as ‘non-standard’ and, in most cases, removed before they reach the shelves. In taste and nutrition they are no different from the others. Even so, some farms reportedly can't ship nearly 20 percent of their harvest, and it is sometimes thrown away in the field. Why do such standards exist? One reason is distribution efficiency. Uniform produce is easy to pack in fixed numbers and wastes no space in transport. For shops, it's easy to price and looks good on display. In other words, the standards were made less for consumers than mainly for the convenience of those who transport and sell. Recently more shops sell these vegetables cheaply as ‘imperfect’ goods, and more mail-order services let you buy straight from farmers. Customers who are a little surprised at first to pick up a bent cucumber soon notice, once they eat it, that it tastes no different. If we stopped taking good looks for granted, far fewer vegetables would need to be thrown away."
+    },
+    "questions": [
+      {
+        "q": "「規格外」の野菜について、文章の内容と合うものはどれか。",
+        "options": [
+          "栄養が少ないため、店頭に並ぶ前に取り除かれる。",
+          "味や栄養は、規格に合った野菜と変わらない。",
+          "収穫量の二割近くが、安い値段で売られている。",
+          "形がそろっていないため、普通の野菜より味が落ちる。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "文中写着「味や栄養の面では普通のものと何ら変わらない」。",
+          "en": "The text says 「味や栄養の面では普通のものと何ら変わらない」 — no different in taste or nutrition."
+        },
+        "wrong": [
+          {
+            "zh": "被剔除的原因是形状和大小不合标准，营养和普通蔬菜一样。",
+            "en": "They're removed for shape and size; their nutrition is the same as other vegetables."
+          },
+          null,
+          {
+            "zh": "近两成是「出荷できず、畑で捨てられる」，不是便宜卖掉。",
+            "en": "Nearly 20 percent 「出荷できず、畑で捨てられる」 — can't be shipped and is thrown away, not sold cheaply."
+          },
+          {
+            "zh": "文中说吃了之后「味に違いがない」，味道并没有变差。",
+            "en": "The text says customers find 「味に違いがない」 — the taste is no worse."
+          }
+        ]
+      },
+      {
+        "q": "筆者によると、野菜の規格は主に何のために作られてきたか。",
+        "options": [
+          "消費者が安心して野菜を買えるようにするため",
+          "農家が収穫した野菜を無駄なく出荷できるようにするため",
+          "野菜を運ぶ側や売る側が扱いやすくするため",
+          "店が野菜を高い値段で売れるようにするため"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "「規格は消費者のためというより、主に運ぶ側や売る側の都合で作られてきた」：主要是为了运输方和销售方方便。",
+          "en": "「規格は消費者のためというより、主に運ぶ側や売る側の都合で作られてきた」 — mainly for the convenience of transporters and sellers."
+        },
+        "wrong": [
+          {
+            "zh": "文中明确说规格「消費者のためというより」，不是主要为了消费者。",
+            "en": "The text explicitly says 「消費者のためというより」 — not mainly for consumers."
+          },
+          {
+            "zh": "规格反而让农户近两成的收成无法出货，并不是为了让农户无浪费地出货。",
+            "en": "The standards actually stop farmers shipping nearly 20 percent; they don't help farmers avoid waste."
+          },
+          null,
+          {
+            "zh": "对商店的好处是「値段をつけやすく」（容易定价），不是能卖高价。",
+            "en": "The benefit for shops is 「値段をつけやすく」 — easy to price, not high prices."
+          }
+        ]
+      },
+      {
+        "q": "筆者が最も言いたいことは何か。",
+        "options": [
+          "規格外の野菜は、通信販売で買うのが最も得だ。",
+          "店は規格外の野菜を、普通の野菜と同じ値段で売るべきだ。",
+          "農家は、形のそろった野菜を作る努力をもっとするべきだ。",
+          "消費者が見た目にこだわらなくなれば、捨てられる野菜は減る。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "最后一句：「私たちが『見た目のよさ』を当たり前のように求めることをやめれば、捨てられる野菜はもっと減らせるはずだ」。",
+          "en": "The final sentence: if we stop taking good looks for granted, 「捨てられる野菜はもっと減らせるはずだ」."
+        },
+        "wrong": [
+          {
+            "zh": "网购只是作为最近的变化之一被提到，作者没有说哪种买法最划算。",
+            "en": "Mail order is mentioned as one recent change; the writer doesn't say it's the best deal."
+          },
+          {
+            "zh": "文中没有谈规格外蔬菜应该卖什么价格。",
+            "en": "The text says nothing about what price non-standard vegetables should sell at."
+          },
+          {
+            "zh": "作者认为问题在于对外观的要求，不是要农户种出更整齐的蔬菜，方向相反。",
+            "en": "The writer blames the demand for looks; asking farmers to grow more uniform vegetables is the opposite."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-m1-p8",
+    "type": "mid",
+    "difficulty": 2,
+    "passage": "五十歳を過ぎてから、ピアノを習い始めた。子どものころに少しだけ習ったことはあるが、練習が嫌で、一年も続かなかった。それから四十年近く、ピアノに触れることはほとんどなかった。\nきっかけは、娘の結婚式だった。式で娘の友人がピアノを弾くのを聞いて、自分もあんなふうに弾けたら、と思ったのだ。帰りの電車の中で近所の音楽教室を調べ、翌週には体験レッスンを申し込んでいた。\n始めてみると、思っていた以上に難しかった。指が思うように動かないし、昨日覚えたはずの部分を今日はもう忘れている。若いころなら一度で覚えられたのに、と情けなくなることもある。\nそれでも続けられているのは、先生の一言のおかげだ。「大人の生徒さんは、上手に弾こうとしすぎるんです。間違えてもいいから、まず音を楽しんでください」。そう言われて、肩の力が抜けた。子どものころの私は、間違えずに弾くことばかり考えていた。だから練習が苦しかったのだろう。\n今は、一曲弾けるようになるまでに何か月もかかる。だが、少しずつ弾ける部分が増えていくのは、何よりの喜びだ。上達の速さでは子どもにかなわないが、楽しむことにかけては負けないつもりだ。",
+    "tr": {
+      "zh": "过了五十岁，我开始学钢琴。小时候学过一点，但讨厌练习，连一年都没坚持下来。之后近四十年，几乎没碰过钢琴。契机是女儿的婚礼。在婚礼上听到女儿的朋友弹钢琴，我想：要是我也能那样弹就好了。在回家的电车上，我查了附近的音乐教室，第二周就报名了体验课。真正开始以后，比想象的还难。手指不听使唤，昨天应该记住的部分今天就已经忘了。有时会觉得很没出息：年轻的时候明明一次就能记住。尽管如此还能坚持下来，是多亏了老师的一句话：“成年学生太想弹好了。弹错也没关系，请先享受声音。”听了这话，我放松了下来。小时候的我，满脑子只想着不弹错，所以练习才那么痛苦吧。现在，学会一首曲子要花好几个月。但是，能弹的部分一点点增加，是最大的快乐。进步的速度我比不上孩子，但在享受这件事上，我不打算输给任何人。",
+      "en": "After turning fifty, I started piano lessons. I'd had a few as a child but hated practising and didn't last a year. For nearly forty years after that I hardly touched a piano. What started it was my daughter's wedding. Hearing her friend play the piano at the ceremony, I thought how nice it would be to play like that. On the train home I looked up music schools nearby, and the following week I'd booked a trial lesson. Once I began, it was harder than I'd imagined. My fingers won't do what I want, and the passage I thought I'd learned yesterday is gone today. Sometimes I feel pathetic, thinking that when I was young I'd have learned it in one go. That I've kept at it is thanks to something my teacher said: ‘Adult students try too hard to play well. It's fine to make mistakes — first, enjoy the sound.’ Hearing that, I relaxed. As a child I thought only about playing without mistakes. That must be why practice was such a misery. Now it takes me months to learn a single piece. But watching the parts I can play grow little by little is the greatest joy. I can't match a child for speed of progress, but when it comes to enjoying it, I don't intend to lose."
+    },
+    "questions": [
+      {
+        "q": "筆者がピアノを習い始めたきっかけは何か。",
+        "options": [
+          "娘の結婚式で、自分がピアノを弾くことになったこと",
+          "子どものころに習った曲を、もう一度弾きたくなったこと",
+          "近所の音楽教室から、体験レッスンの案内が届いたこと",
+          "娘の結婚式で、娘の友人の演奏を聞いたこと"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "「きっかけは、娘の結婚式だった。式で娘の友人がピアノを弾くのを聞いて」：听了女儿朋友的演奏。",
+          "en": "「きっかけは、娘の結婚式だった。式で娘の友人がピアノを弾くのを聞いて」 — hearing the daughter's friend play."
+        },
+        "wrong": [
+          {
+            "zh": "婚礼上弹钢琴的是女儿的朋友，不是作者自己。",
+            "en": "It was the daughter's friend who played at the wedding, not the writer."
+          },
+          {
+            "zh": "小时候讨厌练习，没提到想再弹当时的曲子；契机是婚礼。",
+            "en": "The writer hated practising as a child and mentions no old piece; the trigger was the wedding."
+          },
+          {
+            "zh": "是作者自己在电车上查找了音乐教室，并不是收到了通知。",
+            "en": "The writer looked up the school himself on the train; no invitation arrived."
+          },
+          null
+        ]
+      },
+      {
+        "q": "筆者は、子どものころの練習が苦しかったのはなぜだと考えているか。",
+        "options": [
+          "間違えずに弾くことばかり考えていたから",
+          "指が思うように動かなかったから",
+          "先生が上手に弾くことを厳しく求めたから",
+          "一度覚えたことをすぐに忘れてしまったから"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「子どものころの私は、間違えずに弾くことばかり考えていた。だから練習が苦しかったのだろう」。",
+          "en": "「子どものころの私は、間違えずに弾くことばかり考えていた。だから練習が苦しかったのだろう」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "手指不听使唤是作者五十岁后学琴时的困难，不是小时候的。",
+            "en": "Stiff fingers are the writer's problem now, after fifty, not as a child."
+          },
+          {
+            "zh": "文中没有说小时候的老师很严格；「上手に弾こうとしすぎる」是现在的老师说成年学生的话。",
+            "en": "Nothing says the childhood teacher was strict; 「上手に弾こうとしすぎる」 is the current teacher talking about adult students."
+          },
+          {
+            "zh": "马上忘记是现在的情况，作者还说年轻时「一度で覚えられた」。",
+            "en": "Forgetting quickly happens now; the writer says when young he'd 「一度で覚えられた」."
+          }
+        ]
+      },
+      {
+        "q": "筆者の今の気持ちに最も近いものはどれか。",
+        "options": [
+          "子どもに負けないように、もっと速く上達したい。",
+          "上達は遅くても、弾ける部分が増えていくのがうれしい。",
+          "子どものころにやめずに続けていればよかったと後悔している。",
+          "間違えずに一曲弾けるようになるまでは、人前では弾きたくない。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "「何か月もかかる。だが、少しずつ弾ける部分が増えていくのは、何よりの喜びだ」：虽然慢，但很开心。",
+          "en": "「何か月もかかる。だが、少しずつ弾ける部分が増えていくのは、何よりの喜びだ」 — slow, but a joy."
+        },
+        "wrong": [
+          {
+            "zh": "作者说速度「子どもにかなわない」，不和孩子比速度，要比的是“享受”。",
+            "en": "The writer accepts he 「子どもにかなわない」 on speed; the contest is in enjoyment, not speed."
+          },
+          null,
+          {
+            "zh": "文中只说年轻时记得快，没有表达后悔当年放弃。",
+            "en": "He only notes he learned faster when young; he expresses no regret about quitting."
+          },
+          {
+            "zh": "老师说「間違えてもいい」，作者也放松了，不再执着于不弹错；文中没提在人前弹。",
+            "en": "The teacher said mistakes are fine and he relaxed; he no longer fixates on flawless playing, and performing for others isn't mentioned."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-m1-p9",
+    "type": "mid",
+    "difficulty": 3,
+    "passage": "ある地方の町で、商店街の通りから信号機と横断歩道を取り除くという実験が行われた。信号がなくなれば事故が増えるのではないか。計画が発表されたとき、住民からはそうした心配の声が多く上がった。\nところが、実験を始めて一年がたつと、通りでの事故はむしろ減っていた。町の担当者によると、信号があると、運転する人は「青だから進んでいい」と考え、周りをよく見なくなりがちだという。信号がなければ、運転者も歩行者も、お互いの動きに注意を払わざるを得ない。その結果、車はゆっくり走るようになり、運転者と歩行者が目を合わせて道を譲り合う光景も見られるようになった。\nもっとも、この方法がどこでも通用するわけではない。車の通行量が多い大通りや、子どもや高齢者が一人で渡ることの多い場所では、かえって危険になるおそれもある。この町でも、実験の対象は車の少ない商店街の一部に限っている。担当者は「大切なのは、信号をなくすことそのものではなく、一人一人が自分の目で安全を確かめる習慣を取り戻すことだ」と話している。",
+    "tr": {
+      "zh": "某个地方小镇做了一项实验：把商店街路上的信号灯和人行横道撤掉。没有了信号灯，事故会不会增加？计划公布时，居民中有很多这样的担忧。可是，实验开始一年后，路上的事故反而减少了。据镇上的负责人说，有信号灯时，开车的人往往会想“绿灯了，可以走”，于是不再仔细观察周围。没有信号灯，司机和行人都不得不注意对方的动向。结果，车开得慢了，也能看到司机和行人对视、互相让路的情景。不过，这种方法并非到处都行得通。在车流量大的大马路，或者孩子、老人经常独自过马路的地方，反而可能更危险。这个镇也把实验范围限定在车辆较少的商店街的一部分。负责人说：“重要的不是撤掉信号灯本身，而是让每个人重新养成用自己的眼睛确认安全的习惯。”",
+      "en": "A small town ran an experiment: it removed the traffic lights and pedestrian crossings from a shopping street. Wouldn't accidents increase without lights? When the plan was announced, many residents voiced that worry. Yet a year into the experiment, accidents on the street had actually fallen. According to the official in charge, when there are lights, drivers tend to think ‘it's green, so I can go’ and stop looking around carefully. Without lights, drivers and pedestrians alike have no choice but to watch each other. As a result cars slowed down, and you could see drivers and pedestrians making eye contact and letting each other go first. That said, the approach won't work everywhere. On busy main roads, or where children and elderly people often cross alone, it could even be more dangerous. In this town, too, the experiment is limited to part of the quiet shopping street. ‘What matters is not getting rid of lights as such,’ the official says, ‘but each person regaining the habit of checking for safety with their own eyes.’"
+    },
+    "questions": [
+      {
+        "q": "実験を始めて一年後、通りはどうなったか。",
+        "options": [
+          "事故が増えたため、信号機が元に戻された。",
+          "事故の数は変わらなかったが、住民の心配はなくなった。",
+          "事故が減り、車がゆっくり走るようになった。",
+          "車の通行量が減り、歩行者が自由に道を渡れるようになった。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "「事故はむしろ減っていた」，并且「車はゆっくり走るようになり」。",
+          "en": "「事故はむしろ減っていた」 and 「車はゆっくり走るようになり」 — fewer accidents and slower cars."
+        },
+        "wrong": [
+          {
+            "zh": "事故是减少了，文中没有说恢复了信号灯。",
+            "en": "Accidents fell, and nothing says the lights were put back."
+          },
+          {
+            "zh": "事故「むしろ減っていた」，不是没变；居民的担心是否消失也没提。",
+            "en": "Accidents 「むしろ減っていた」 rather than staying the same, and residents' worries aren't mentioned again."
+          },
+          null,
+          {
+            "zh": "文中没有说车流量减少；实验地点本来就是车少的地方，变化的是车速和互相让路。",
+            "en": "Traffic volume isn't said to have fallen — the street was quiet to begin with; what changed was speed and giving way."
+          }
+        ]
+      },
+      {
+        "q": "担当者によると、信号があることにはどのような問題があるか。",
+        "options": [
+          "運転する人が、周りの様子に注意を払わなくなりやすい。",
+          "歩行者が信号を守らずに、道を渡るようになる。",
+          "車が信号で止まるため、道が混雑しやすくなる。",
+          "子どもや高齢者が、一人で道を渡れなくなる。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "负责人说有信号灯时司机会想「青だから進んでいい」，「周りをよく見なくなりがちだ」。",
+          "en": "The official says drivers think 「青だから進んでいい」 and 「周りをよく見なくなりがちだ」 — they stop watching their surroundings."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "文中没有提到行人闯红灯，问题出在司机身上。",
+            "en": "Pedestrians ignoring lights isn't mentioned; the problem described is the drivers'."
+          },
+          {
+            "zh": "文中没有说信号灯造成拥堵。",
+            "en": "Nothing says lights cause congestion."
+          },
+          {
+            "zh": "孩子和老人是在“没有信号灯”的情况下可能更危险，不是信号灯的问题。",
+            "en": "Children and the elderly are at more risk without lights, not because of them."
+          }
+        ]
+      },
+      {
+        "q": "この実験について、文章の内容と合うものはどれか。",
+        "options": [
+          "計画の段階から、多くの住民が賛成していた。",
+          "どの町でも同じ効果が期待できると考えられている。",
+          "子どもや高齢者の安全を守るために始められた。",
+          "車の少ない場所に限って行われている。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "「実験の対象は車の少ない商店街の一部に限っている」。",
+          "en": "「実験の対象は車の少ない商店街の一部に限っている」 — only part of a quiet street."
+        },
+        "wrong": [
+          {
+            "zh": "计划公布时「住民からはそうした心配の声が多く上がった」，很多人是担心的。",
+            "en": "When announced, 「住民からはそうした心配の声が多く上がった」 — many residents were worried."
+          },
+          {
+            "zh": "文中说「どこでも通用するわけではない」，并非哪里都有效。",
+            "en": "The text says 「どこでも通用するわけではない」 — it won't work everywhere."
+          },
+          {
+            "zh": "文中说在孩子、老人多的地方反而可能危险，实验不是为他们开始的。",
+            "en": "Places with many children and elderly crossing could be more dangerous; the experiment wasn't started for them."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-m1-p10",
+    "type": "tougou",
+    "difficulty": 2,
+    "intro": "次のAとBは、会社員の副業についての意見である。",
+    "passage": "A\n最近、社員の副業を認める会社が増えている。副業というと、収入を増やすためのものだと思われがちだが、それだけではない。本業とは違う分野で働くことで、新しい知識や人とのつながりが得られ、それが本業に生かされることも多い。実際、副業を認めた会社の中には、社員から新しい事業のアイデアが出てくるようになったところもある。もちろん、働きすぎて体を壊しては意味がないので、会社は社員の労働時間をきちんと把握する必要があるだろう。それでも、社員の成長につながるのであれば、副業は会社にとっても積極的に認める価値があると言える。\nB\n副業を認める会社が増えているが、私は手放しで賛成する気にはなれない。確かに、副業で得た経験が本業に役立つこともあるだろう。しかし、本業と副業を合わせた労働時間が長くなれば疲れがたまり、本業での集中力が落ちかねない。また、副業の内容によっては、会社の情報が外に漏れる危険もある。副業を認めるのであれば、どのような仕事なら許されるのかといった決まりを、事前にはっきりさせておくべきだ。会社がそこまで準備できないのであれば、急いで導入する必要はない。",
+    "tr": {
+      "zh": "A：最近，允许员工搞副业的公司越来越多。一提到副业，人们往往以为是为了增加收入，但不仅如此。在与本职不同的领域工作，可以获得新的知识和人脉，这些常常也能用在本职工作上。实际上，在允许副业的公司中，有的开始从员工那里冒出新的业务点子。当然，工作过度把身体搞垮就没有意义了，所以公司有必要切实掌握员工的工作时间。即便如此，只要能促进员工成长，副业对公司来说也是值得积极认可的。B：允许副业的公司越来越多，但我无法无条件地赞成。的确，从副业中得到的经验有时也会对本职工作有帮助。但是，本职和副业加起来的工作时间一长，就会积累疲劳，本职工作的专注力可能下降。而且，根据副业的内容，还有公司信息外泄的危险。如果要允许副业，应该事先明确什么样的工作是允许的之类的规定。如果公司做不到这一步，就没有必要急着引入。",
+      "en": "A: More and more companies are allowing staff to take side jobs. People tend to assume a side job is just for extra income, but there's more to it. Working in a different field brings new knowledge and connections, which often benefit one's main job. Indeed, at some companies that allowed side jobs, staff began coming up with ideas for new businesses. Of course, there's no point if people overwork and ruin their health, so companies will need to keep proper track of working hours. Even so, if it helps staff grow, a side job is worth actively allowing for the company's sake too. B: More companies are allowing side jobs, but I can't bring myself to support it unreservedly. True, experience gained in a side job may sometimes help in the main one. But if combined working hours grow long, fatigue builds up and concentration at the main job could suffer. Depending on the work, company information could also leak out. If side jobs are to be allowed, rules such as what kinds of work are permitted should be made clear beforehand. If a company can't prepare that far, there's no need to rush it in."
+    },
+    "questions": [
+      {
+        "q": "AとBのどちらにも述べられていることは何か。",
+        "options": [
+          "副業を認めると、会社の情報が外に漏れる危険がある。",
+          "副業によって、社員から新しい事業のアイデアが出てくる。",
+          "副業は、収入を増やすことを主な目的にするべきだ。",
+          "副業での経験が、本業に役立つことがある。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "A说新的知识和人脉「本業に生かされることも多い」，B也承认「副業で得た経験が本業に役立つこともある」。",
+          "en": "A says new knowledge and contacts are 「本業に生かされることも多い」, and B concedes 「副業で得た経験が本業に役立つこともある」."
+        },
+        "wrong": [
+          {
+            "zh": "信息外泄的危险只有B提到。",
+            "en": "Only B mentions information leaking."
+          },
+          {
+            "zh": "新业务点子只有A作为例子提到。",
+            "en": "Only A gives new business ideas as an example."
+          },
+          {
+            "zh": "A说副业「それだけではない」（不只是为了收入），B也没这样说，两者都没有主张这一点。",
+            "en": "A says it's 「それだけではない」 (not just income) and B doesn't say it either; neither argues this."
+          },
+          null
+        ]
+      },
+      {
+        "q": "副業について、AとBはどのような立場をとっているか。",
+        "options": [
+          "Aは積極的に認めるべきだと考え、Bは準備が整わないなら急いで導入すべきではないと考えている。",
+          "Aは労働時間の管理ができないなら認めるべきではないと考え、Bは積極的に認めるべきだと考えている。",
+          "AもBも、副業を認める前に、どのような仕事なら許されるかを決めておくべきだと考えている。",
+          "AもBも、社員の健康を守るために、副業は認めるべきではないと考えている。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "A的结论是「積極的に認める価値がある」；B说「手放しで賛成する気にはなれない」，准备不好就「急いで導入する必要はない」。",
+          "en": "A concludes it's 「積極的に認める価値がある」; B 「手放しで賛成する気にはなれない」 and says without preparation 「急いで導入する必要はない」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "A只说需要掌握工作时间，最终是赞成的；B是谨慎的，不是积极赞成。",
+            "en": "A only says hours must be tracked and is in favour overall; B is cautious, not enthusiastic."
+          },
+          {
+            "zh": "事先规定允许什么工作只是B的主张，A没有提到。",
+            "en": "Setting rules on permitted work beforehand is B's point only; A doesn't raise it."
+          },
+          {
+            "zh": "A赞成副业，B也没有说不应该允许，只是要求先做好准备。",
+            "en": "A supports side jobs, and B doesn't reject them either — B just wants preparation first."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-m1-p11",
+    "type": "shuchou",
+    "difficulty": 3,
+    "passage": "最近、「分かりやすさ」がもてはやされている。書店には「図解で分かる」「三分で理解できる」といった題名の本が並び、テレビのニュースでも、複雑な問題が短い言葉と親しみやすいイラストで説明される。難しいことを易しく伝える工夫そのものは、悪いことではない。専門家の知識を多くの人が共有できるようになったのは、こうした努力の成果である。\nしかし、私には気がかりなことがある。分かりやすい説明に慣れすぎると、分かりにくいものに出会ったとき、それを「説明が悪い」と片付けてしまう人が増えるのではないか、ということだ。\n大学で教えていると、そう感じる場面が少なくない。学生に古典的な名著を読ませると、「何が言いたいのか分からない」「もっと簡単に書いてある本はないのか」という声が必ず出る。確かに、そうした本は読みやすくはない。一つの文を理解するのに何分もかかることもある。だが、すぐには分からない文章と格闘し、何度も読み返し、自分なりの解釈を組み立てていく過程にこそ、考える力を鍛える機会があるのだ。\nそもそも、世の中の問題の多くは、分かりやすくまとめられるほど単純ではない。ある政策に賛成か反対かを短い言葉で言い切ることはできても、その背景にある事情や、それによって影響を受ける人々の立場まで含めて理解しようとすれば、どうしても複雑な話にならざるを得ない。分かりやすさを求めるあまり、こうした複雑さを切り捨ててしまえば、私たちは物事の一面しか見ないまま、分かったつもりになってしまう。\n分かりやすい説明は、言ってみれば、整備された道路のようなものだ。目的地まで速く、楽に連れて行ってくれる。だが、いつも舗装された道ばかり歩いていると、道のない場所を自分の足で進む力は育たない。\n私は、分かりやすい本を読むなと言いたいのではない。入り口として、それらは大いに役に立つ。大切なのは、分かりやすさだけで満足せず、時には分からなさに耐えてみることである。すぐに答えが見つからない状態に耐え、考え続けること。それこそが、本当の意味で「分かる」ための、遠回りに見えて最も確かな道ではないだろうか。",
+    "tr": {
+      "zh": "最近，“易懂”备受推崇。书店里摆满了《图解就懂》《三分钟理解》之类书名的书，电视新闻也用简短的话和亲切的插图来解释复杂的问题。把难懂的事情讲得浅显易懂，这种努力本身并不是坏事。专家的知识能够被很多人共享，正是这种努力的成果。但是，我有一件担心的事：太习惯易懂的解释，遇到难懂的东西时，把它归结为“解释得不好”就了事的人，会不会越来越多？在大学教书，我常有这种感觉。让学生读经典名著，一定会有人说“不知道想说什么”“有没有写得更简单的书”。确实，那样的书并不好读，理解一句话有时要花好几分钟。但是，正是在与一时读不懂的文章搏斗、反复重读、构建自己的理解的过程中，才有锻炼思考能力的机会。说到底，世上的很多问题并没有简单到可以概括得浅显易懂。对某项政策赞成还是反对，可以用简短的话断言，但如果想连同其背景情况、受其影响的人们的立场一起理解，就必然会变得复杂。如果因为过于追求易懂而舍弃了这种复杂性，我们就会只看到事物的一面，却自以为懂了。易懂的解释，打个比方，就像修整好的道路，能又快又轻松地把我们带到目的地。但是，如果总是只走铺好的路，在没有路的地方靠自己的双脚前进的能力就培养不起来。我并不是说不要读易懂的书。作为入门，它们大有用处。重要的是，不要只满足于易懂，有时也要试着忍受“不懂”。忍受一时找不到答案的状态，持续思考——这难道不正是通往真正意义上的“懂”的、看似绕远却最可靠的道路吗？",
+      "en": "‘Easy to understand’ is all the rage these days. Bookshops are lined with titles like ‘Understand It in Diagrams’ and ‘Grasp It in Three Minutes’, and TV news explains complex issues in short phrases and friendly illustrations. Taking trouble to convey difficult things simply is not bad in itself; that so many people can now share experts' knowledge is the fruit of such efforts. But one thing worries me: if we grow too used to easy explanations, won't more people, faced with something hard to understand, simply dismiss it as ‘badly explained’? Teaching at a university, I often feel this. When I have students read a classic work, there are always voices saying ‘I don't get what it's trying to say’ or ‘Isn't there a book that puts it more simply?’ True, such books aren't easy reading; one sentence can take minutes to grasp. But it is precisely in the process of wrestling with a text you can't understand at once, rereading it again and again, and building your own interpretation, that the chance to train your thinking lies. In the first place, most problems in the world are not simple enough to be summed up neatly. You can declare in a few words whether you are for or against a policy, but if you try to understand the circumstances behind it and the positions of those it affects, it inevitably becomes complicated. If, in our eagerness for clarity, we cut out that complexity, we end up seeing only one side of things while believing we understand. An easy explanation is, so to speak, like a well-built road: it takes you to your destination quickly and comfortably. But if you only ever walk on paved roads, you never develop the strength to make your own way where there is no road. I'm not saying don't read easy books. As a way in, they are very useful. What matters is not to be satisfied with clarity alone, and sometimes to try enduring not understanding — to bear the state of having no answer yet and keep thinking. Isn't that the surest path to understanding in the true sense, even if it looks like a detour?"
+    },
+    "questions": [
+      {
+        "q": "筆者が「気がかりなこと」として挙げているのは、どのようなことか。",
+        "options": [
+          "専門家の知識が、分かりやすい説明によって正しく伝わらなくなること",
+          "分かりにくいものを、説明する側の問題だと考えて済ませる人が増えること",
+          "分かりやすい本ばかりが売れて、名著が書店に並ばなくなること",
+          "学生が、難しい本を読むのに時間をかけすぎるようになること"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "紧接着说明：遇到难懂的东西就用「説明が悪い」来了结的人会增加。也就是把问题归于解释的一方。",
+          "en": "The next sentence explains it: more people may dismiss difficult things as 「説明が悪い」 — blaming whoever did the explaining."
+        },
+        "wrong": [
+          {
+            "zh": "作者反而肯定了易懂的解释让专家知识得以共享，没有说传达不准确。",
+            "en": "The writer actually credits easy explanations with spreading expert knowledge; he doesn't say it gets distorted."
+          },
+          null,
+          {
+            "zh": "书店里易懂的书很多，但文中没有说名著从书店消失。",
+            "en": "Bookshops have many easy books, but nothing says classics disappear from the shelves."
+          },
+          {
+            "zh": "读名著花时间是作者认为有价值的过程，不是他担心的事。",
+            "en": "Spending time on a hard text is what the writer values, not what worries him."
+          }
+        ]
+      },
+      {
+        "q": "筆者によると、世の中の問題を分かりやすさだけで理解しようとすると、どうなるか。",
+        "options": [
+          "賛成か反対かを、短い言葉で言い切れなくなる。",
+          "政策の背景にある事情に、詳しくなりすぎてしまう。",
+          "物事の一面しか見ずに、理解したと思い込んでしまう。",
+          "影響を受ける人々の立場ばかりを考えるようになる。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "「複雑さを切り捨ててしまえば、私たちは物事の一面しか見ないまま、分かったつもりになってしまう」。",
+          "en": "「複雑さを切り捨ててしまえば、私たちは物事の一面しか見ないまま、分かったつもりになってしまう」 — seeing one side and thinking we understand."
+        },
+        "wrong": [
+          {
+            "zh": "文中说赞成或反对是「短い言葉で言い切ることはできても」，能简单断言，正好相反。",
+            "en": "The text says you 「言い切ることはできても」 — you can state for or against briefly; this is the reverse."
+          },
+          {
+            "zh": "追求易懂会舍弃背景等复杂内容，不会变得过于了解背景。",
+            "en": "Seeking clarity cuts out the background; it doesn't make you know too much about it."
+          },
+          null,
+          {
+            "zh": "受影响者的立场是理解时应该考虑却被舍弃的内容，不是只考虑它。",
+            "en": "Those affected are among what gets cut out, not what you'd focus on exclusively."
+          }
+        ]
+      },
+      {
+        "q": "この文章で筆者が最も言いたいことは何か。",
+        "options": [
+          "分かりやすい本は考える力を弱めるので、できるだけ読まないほうがいい。",
+          "難しいことを易しく伝える工夫は、専門家の知識を共有するうえで欠かせない。",
+          "大学では、学生に古典的な名著を読ませることをもっと重視するべきだ。",
+          "分かりやすさに満足せず、すぐには分からないものに向き合って考え続けることが大切だ。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "最后一段：「分かりやすさだけで満足せず、時には分からなさに耐えてみること」「考え続けること」才是真正“懂”的道路。",
+          "en": "The final paragraph: 「分かりやすさだけで満足せず、時には分からなさに耐えてみること」 and keep thinking — the true road to understanding."
+        },
+        "wrong": [
+          {
+            "zh": "作者明确说「分かりやすい本を読むなと言いたいのではない」，还说作为入门大有用处。",
+            "en": "The writer says outright 「分かりやすい本を読むなと言いたいのではない」 and calls them useful as a way in."
+          },
+          {
+            "zh": "作者在开头承认了这一点，但这是让步，不是主要观点。",
+            "en": "The writer grants this at the start, but it's a concession, not the main point."
+          },
+          {
+            "zh": "大学的例子只是用来说明担心的事，文章没有提出大学教育的方針。",
+            "en": "The university is an example of the worry; the essay proposes no teaching policy."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-m1-p12",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "次は、みなみ市の「秋の市民講座」の案内である。",
+    "passage": "みなみ市　秋の市民講座　受講者募集\n| 講座名 | 日時 | 回数 | 対象 | 受講料 | 申し込み方法 |\n| ① はじめてのスマートフォン | 毎週火曜 10:00〜11:30 | 4回 | 市内在住の60歳以上の方 | 無料 | 電話 |\n| ② やさしい中国語会話 | 毎週水曜 19:00〜20:30 | 8回 | 市内在住・在勤の方 | 4,000円 | 窓口・ウェブ |\n| ③ 親子で楽しむ料理教室 | 第2・第4土曜 10:00〜12:00 | 4回 | 市内在住の小学生とその保護者 | 1組3,000円（材料費込み） | ウェブ |\n| ④ 写真の撮り方入門 | 毎週日曜 14:00〜16:00 | 6回 | 市内在住・在勤・在学の方 | 3,000円 | 窓口・ウェブ |\n| ⑤ ヨガで体すっきり | 毎週金曜 19:00〜20:00 | 6回 | 市内在住の18歳以上の方 | 2,500円 | 窓口 |\n・申し込み期間：9月1日（月）〜9月15日（月）。定員を超えた場合は抽選となります。\n・窓口での申し込みは、市民センター1階の受付で、平日9:00〜17:00に受け付けます。\n・ウェブでの申し込みは、市のホームページから24時間受け付けます。\n・電話での申し込みは、市民センター（012-345-6789）まで、平日9:00〜17:00にお願いします。\n・「在勤」とは市内の会社などで働いている方、「在学」とは市内の学校に通っている方のことです。\n・②と④は、全体の半分以上の回に出席した方に修了証をお渡しします。\n・受講料は、初回の講座の日に会場でお支払いください。",
+    "tr": {
+      "zh": "南市 秋季市民讲座 招收学员。①初次使用智能手机：每周二10:00–11:30，4次，对象为住在市内的60岁以上者，免费，电话报名。②简易中文会话：每周三19:00–20:30，8次，对象为住在或在市内工作者，4,000日元，窗口・网上报名。③亲子料理教室：每月第2、第4个周六10:00–12:00，4次，对象为住在市内的小学生及其监护人，每组3,000日元（含材料费），网上报名。④摄影入门：每周日14:00–16:00，6次，对象为住在、在市内工作或上学者，3,000日元，窗口・网上报名。⑤瑜伽让身体舒畅：每周五19:00–20:00，6次，对象为住在市内的18岁以上者，2,500日元，窗口报名。报名期间：9月1日（周一）至9月15日（周一），超过名额时抽签。窗口报名在市民中心1楼前台受理，时间为工作日9:00–17:00。网上报名通过市政府主页24小时受理。电话报名请在工作日9:00–17:00拨打市民中心（012-345-6789）。“在勤”指在市内的公司等处工作的人，“在学”指在市内学校上学的人。②和④的出席次数达到全部课程一半以上者，颁发结业证书。学费请在第一次上课当天在会场支付。",
+      "en": "Minami City autumn community courses — now enrolling. (1) Smartphones for Beginners: Tuesdays 10:00–11:30, 4 sessions, city residents aged 60+, free, apply by phone. (2) Easy Chinese Conversation: Wednesdays 19:00–20:30, 8 sessions, people who live or work in the city, ¥4,000, apply at the counter or online. (3) Parent-and-Child Cooking: 2nd and 4th Saturdays 10:00–12:00, 4 sessions, primary-school children living in the city with a parent, ¥3,000 per pair (ingredients included), apply online. (4) Introduction to Photography: Sundays 14:00–16:00, 6 sessions, people who live, work or study in the city, ¥3,000, apply at the counter or online. (5) Feel-Good Yoga: Fridays 19:00–20:00, 6 sessions, city residents aged 18+, ¥2,500, apply at the counter. Application period: Mon 1 Sep – Mon 15 Sep; a lottery is held if a course is oversubscribed. Counter applications are accepted at the Civic Centre's ground-floor reception, weekdays 9:00–17:00. Online applications are accepted 24 hours a day on the city website. Phone applications: call the Civic Centre (012-345-6789), weekdays 9:00–17:00. ‘Work in the city’ means working at a company etc. in the city; ‘study in the city’ means attending a school in the city. For (2) and (4), a certificate is given to those who attend at least half the sessions. Please pay the fee at the venue on the day of the first session."
+    },
+    "questions": [
+      {
+        "q": "林さんは、となりの市に住んでいて、みなみ市内の会社で働いている。平日は18時まで仕事があり、日曜日は毎週用事がある。林さんが申し込めて、受講できる講座はどれか。",
+        "options": [
+          "① はじめてのスマートフォン",
+          "② やさしい中国語会話",
+          "④ 写真の撮り方入門",
+          "⑤ ヨガで体すっきり"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "林先生住在邻市、在南市工作，属于「在勤」，能报名的只有写着「在勤」的②和④。④在周日，他每周日有事；②是周三19点，下班后来得及。",
+          "en": "Lin lives next door but works in Minami — 「在勤」 — so only (2) and (4) are open to him. (4) is on Sundays, when he's busy every week; (2) is Wednesday at 19:00, after work."
+        },
+        "wrong": [
+          {
+            "zh": "①只限住在市内的60岁以上者，而且是工作日上午，林先生要上班。",
+            "en": "(1) is for city residents aged 60+, and it's on a weekday morning when Lin works."
+          },
+          null,
+          {
+            "zh": "④虽然在市内工作也能报名，但在周日，林先生每周日都有事。",
+            "en": "(4) accepts people who work in the city, but it's on Sundays, when Lin is busy."
+          },
+          {
+            "zh": "⑤虽然在周五晚上，但对象只限「市内在住」，林先生住在邻市。",
+            "en": "(5) is on Friday evening, but only for 「市内在住」 — Lin lives in the next city."
+          }
+        ]
+      },
+      {
+        "q": "みなみ市に住む会社員の木村さん（35歳）は、平日は毎日9時から18時まで仕事があり、金曜日の夜か日曜日の午後なら講座に通える。木村さんが受講できる講座と、その申し込み方法として正しいものはどれか。",
+        "options": [
+          "⑤を、窓口で申し込む。",
+          "⑤を、ウェブで申し込む。",
+          "④を、ウェブで申し込む。",
+          "④を、電話で申し込む。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "周五晚上有⑤、周日下午有④。但⑤只能窗口报名，窗口只在工作日9–17点受理，木村先生正在上班，去不了。④可以网上报名，24小时受理。",
+          "en": "Friday evening is (5), Sunday afternoon is (4). But (5) is counter-only, and the counter is open weekdays 9–17, when Kimura is at work. (4) can be booked online, 24 hours a day."
+        },
+        "wrong": [
+          {
+            "zh": "窗口只在工作日9:00–17:00受理，木村先生这段时间都在上班。",
+            "en": "The counter is open only on weekdays 9:00–17:00, when Kimura is working."
+          },
+          {
+            "zh": "⑤的报名方法只有「窓口」，不能网上报名。",
+            "en": "(5) can only be applied for 「窓口」, at the counter — not online."
+          },
+          null,
+          {
+            "zh": "④的报名方法是「窓口・ウェブ」，没有电话报名；电话报名只有①。",
+            "en": "(4) takes 「窓口・ウェブ」 only; phone applications are for (1)."
+          }
+        ]
+      }
+    ]
+  }
+]

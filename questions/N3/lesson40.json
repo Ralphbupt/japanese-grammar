@@ -1,0 +1,466 @@
+[
+  {
+    "id": "n3-l40-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson40#1"
+    ],
+    "difficulty": 1,
+    "stem": "合格の 知らせを 聞いた とき、涙が 出る（　）うれしかった。",
+    "options": [
+      "ほど",
+      "まで",
+      "だけ",
+      "ばかり"
+    ],
+    "answer": 0,
+    "full": "合格の 知らせを 聞いた とき、涙が 出るほど うれしかった。",
+    "tr": {
+      "zh": "听到合格的消息时，高兴得都要流泪了。",
+      "en": "When I heard I'd passed, I was so happy I could have cried."
+    },
+    "why": {
+      "zh": "“高兴到流泪的程度”，表示程度用「ほど」。",
+      "en": "\"Happy to the point of tears\" — degree is 「ほど」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「まで」表示终点“到……为止”，不能接在动词后表示形容词的程度。",
+        "en": "「まで」 marks an end point (until); it doesn't express how happy you were."
+      },
+      {
+        "zh": "「だけ」表示限定（只），“只流泪那样高兴”不成立。",
+        "en": "「だけ」 limits (only); it can't express degree here."
+      },
+      {
+        "zh": "「ばかり」表示“净是／光是”，不能表示程度。",
+        "en": "「ばかり」 means \"nothing but\"; it doesn't express degree."
+      }
+    ]
+  },
+  {
+    "id": "n3-l40-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson40#1"
+    ],
+    "difficulty": 2,
+    "stem": "今年の 夏（　）暑い 夏は、これまで 一度も なかった。",
+    "options": [
+      "ほど",
+      "まで",
+      "さえ",
+      "だけ"
+    ],
+    "answer": 0,
+    "full": "今年の 夏ほど 暑い 夏は、これまで 一度も なかった。",
+    "tr": {
+      "zh": "像今年夏天这么热的夏天，以前一次都没有过。",
+      "en": "There has never been a summer as hot as this one."
+    },
+    "why": {
+      "zh": "「Bほど〜Nはない」= 没有比B更……的N。句末是否定「なかった」，所以用「ほど」。",
+      "en": "「Bほど〜Nはない」 = there is no N as … as B. The sentence ends in 「なかった」, so it's 「ほど」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「まで」表示范围终点，“到今年夏天为止热的夏天”不成句。",
+        "en": "「まで」 marks an end point; it doesn't form a comparison."
+      },
+      {
+        "zh": "「さえ」是“连……都”，“连今年夏天都热的夏天”意思不通。",
+        "en": "「さえ」 means \"even\"; \"a summer even this summer is hot\" makes no sense."
+      },
+      {
+        "zh": "「だけ」是“只有”，“只有今年夏天热的夏天没有过”自相矛盾。",
+        "en": "「だけ」 means \"only\"; it contradicts the rest of the sentence."
+      }
+    ]
+  },
+  {
+    "id": "n3-l40-003",
+    "type": "narabe",
+    "refs": [
+      "lesson40#1"
+    ],
+    "difficulty": 2,
+    "stem": "停電で、部屋の 中は 隣の 人の [_] [_] [★] [_]。",
+    "options": [
+      "顔が",
+      "見えない",
+      "ほど",
+      "暗かった"
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full": "停電で、部屋の 中は 隣の 人の 顔が 見えないほど 暗かった。",
+    "tr": {
+      "zh": "因为停电，屋里黑得连旁边人的脸都看不见。",
+      "en": "In the blackout, the room was so dark I couldn't see the face of the person next to me."
+    },
+    "why": {
+      "zh": "「顔が見えない」接「ほど」修饰「暗かった」：暗到看不见脸的程度。★ 是「ほど」。",
+      "en": "「顔が見えない」 ＋ 「ほど」 tells how dark (暗かった) it was. The ★ is 「ほど」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l40-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson40#2"
+    ],
+    "difficulty": 1,
+    "stem": "いくら 忙しくても、朝の あいさつ（　）できるでしょう。",
+    "options": [
+      "ぐらい",
+      "ほど",
+      "しか",
+      "ばかり"
+    ],
+    "answer": 0,
+    "full": "いくら 忙しくても、朝の あいさつぐらい できるでしょう。",
+    "tr": {
+      "zh": "再忙，早上打个招呼总做得到吧。",
+      "en": "However busy you are, you can at least say good morning."
+    },
+    "why": {
+      "zh": "“起码打个招呼”表示最低限度，用「ぐらい」（くらい），带“这么点小事”的语气。",
+      "en": "\"At least a greeting\" is a minimum: 「ぐらい」 (くらい), with the sense \"such a small thing\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ほど」表示程度高，不能表示“起码／至少”的最低限度。",
+        "en": "「ほど」 expresses a high degree, not a bare minimum."
+      },
+      {
+        "zh": "「しか」必须和否定一起用，这里是肯定的「できる」。",
+        "en": "「しか」 needs a negative, but 「できる」 is positive."
+      },
+      {
+        "zh": "「ばかり」是“净是／光是”，“光打招呼总会吧”不是这个意思。",
+        "en": "「ばかり」 means \"nothing but\"; that's not the point here."
+      }
+    ]
+  },
+  {
+    "id": "n3-l40-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson40#2"
+    ],
+    "difficulty": 2,
+    "stem": "この 説明書は、子供でも わかる（　）簡単に 書かれて いる。",
+    "options": [
+      "くらい",
+      "しか",
+      "さえ",
+      "ばかり"
+    ],
+    "answer": 0,
+    "full": "この 説明書は、子供でも わかるくらい 簡単に 書かれて いる。",
+    "tr": {
+      "zh": "这本说明书写得简单到连小孩都能看懂。",
+      "en": "This manual is written so simply that even a child could understand it."
+    },
+    "why": {
+      "zh": "“简单到小孩都懂的程度”，表示程度用「くらい」（也可说「ほど」）。",
+      "en": "\"So simple even a child gets it\" is degree: 「くらい」 (ほど would also work)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「しか」要和否定搭配，这里没有否定。",
+        "en": "「しか」 needs a negative; there isn't one."
+      },
+      {
+        "zh": "「さえ」不能接在动词辞书形后面表示程度。",
+        "en": "「さえ」 can't follow a dictionary-form verb to express degree."
+      },
+      {
+        "zh": "「ばかり」是“净是”，不表示程度。",
+        "en": "「ばかり」 means \"nothing but\" and doesn't express degree."
+      }
+    ]
+  },
+  {
+    "id": "n3-l40-006",
+    "type": "narabe",
+    "refs": [
+      "lesson40#2"
+    ],
+    "difficulty": 2,
+    "stem": "この 問題は [_] [_] [★] [_] 簡単だ。",
+    "options": [
+      "小学生",
+      "でも",
+      "わかる",
+      "くらい"
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full": "この 問題は 小学生でも わかるくらい 簡単だ。",
+    "tr": {
+      "zh": "这道题简单到连小学生都会。",
+      "en": "This question is so easy even an elementary school kid could do it."
+    },
+    "why": {
+      "zh": "「小学生でもわかる」（连小学生都懂）＋「くらい」，表示“简单”的程度。★ 是「わかる」。",
+      "en": "「小学生でもわかる」 ＋ 「くらい」 shows how easy it is. The ★ is 「わかる」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l40-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson40#3"
+    ],
+    "difficulty": 2,
+    "stem": "この 仕事は やれば やる（　）おもしろく なる。",
+    "options": [
+      "ほど",
+      "まで",
+      "さえ",
+      "しか"
+    ],
+    "answer": 0,
+    "full": "この 仕事は やれば やるほど おもしろく なる。",
+    "tr": {
+      "zh": "这份工作越做越有意思。",
+      "en": "The more you do this job, the more interesting it gets."
+    },
+    "why": {
+      "zh": "「やれば」＋「やる」重复同一个动词，是「〜ば〜ほど」（越……越……）的形式。",
+      "en": "「やれば」 followed by the same verb 「やる」 is the 「〜ば〜ほど」 pattern (the more…, the more…)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「まで」是“直到”，「やればやるまで」不成句。",
+        "en": "「まで」 means \"until\"; 「やればやるまで」 isn't a pattern."
+      },
+      {
+        "zh": "「さえ」要放在「ば」之前（やりさえすれば），不能放在句子这个位置。",
+        "en": "「さえ」 goes before 「ば」 (やりさえすれば), not here."
+      },
+      {
+        "zh": "「しか」要接否定，这里是肯定的「おもしろくなる」。",
+        "en": "「しか」 needs a negative, but the clause is positive."
+      }
+    ]
+  },
+  {
+    "id": "n3-l40-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson40#3"
+    ],
+    "difficulty": 2,
+    "stem": "部屋は 駅に 近ければ（　）、家賃が 高く なる。",
+    "options": [
+      "近い ほど",
+      "近く ほど",
+      "近かった ほど",
+      "近さ ほど"
+    ],
+    "answer": 0,
+    "full": "部屋は 駅に 近ければ 近いほど、家賃が 高く なる。",
+    "tr": {
+      "zh": "房子离车站越近，房租越贵。",
+      "en": "The closer a flat is to the station, the higher the rent."
+    },
+    "why": {
+      "zh": "い形容词的「ば〜ほど」：〜ければ ＋ 〜い ＋ ほど，即「近ければ近いほど」。",
+      "en": "For an i-adjective: 〜ければ ＋ 〜い ＋ ほど — 「近ければ近いほど」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「近く」是连用形，不能直接接「ほど」。",
+        "en": "「近く」 is the adverbial form and can't take 「ほど」 here."
+      },
+      {
+        "zh": "「ば〜ほど」的后半用现在形，不用过去式。",
+        "en": "The second half of 「ば〜ほど」 is non-past, not past."
+      },
+      {
+        "zh": "「近さ」是名词（近的程度），不构成「ば〜ほど」。",
+        "en": "「近さ」 is a noun (nearness) and doesn't form 「ば〜ほど」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l40-009",
+    "type": "narabe",
+    "refs": [
+      "lesson40#3"
+    ],
+    "difficulty": 2,
+    "stem": "試験が [_] [★] [_] [_] 眠れなく なる。",
+    "options": [
+      "近づけば",
+      "近づく",
+      "ほど",
+      "緊張して"
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full": "試験が 近づけば 近づくほど 緊張して 眠れなく なる。",
+    "tr": {
+      "zh": "考试越近越紧张，都睡不着了。",
+      "en": "The closer the exam gets, the more nervous I get, until I can't sleep."
+    },
+    "why": {
+      "zh": "「近づけば」＋「近づく」＋「ほど」是「ば〜ほど」，再接「緊張して」说明结果。★ 是「近づく」。",
+      "en": "「近づけば」 ＋ 「近づく」 ＋ 「ほど」 is 「ば〜ほど」, then 「緊張して」 leads to the result. The ★ is 「近づく」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l40-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson40#4"
+    ],
+    "difficulty": 1,
+    "stem": "世の中には、お金（　）あれば 何でも できると 思って いる 人も いる。",
+    "options": [
+      "さえ",
+      "しか",
+      "ほど",
+      "ばかり"
+    ],
+    "answer": 0,
+    "full": "世の中には、お金さえ あれば 何でも できると 思って いる 人も いる。",
+    "tr": {
+      "zh": "世上也有人认为只要有钱什么都能做。",
+      "en": "Some people think that as long as they have money, they can do anything."
+    },
+    "why": {
+      "zh": "「〜さえ〜ば」= 只要……就……，强调唯一的最低条件。",
+      "en": "「〜さえ〜ば」 = as long as… — just this one condition is enough."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「しか」必须接否定，「お金しかあれば」不成句。",
+        "en": "「しか」 needs a negative; 「お金しかあれば」 isn't grammatical."
+      },
+      {
+        "zh": "「ほど」表示程度，「お金ほどあれば」不成句。",
+        "en": "「ほど」 expresses degree; 「お金ほどあれば」 isn't a phrase."
+      },
+      {
+        "zh": "「ばかり」是“净是”，不和「〜ば」构成“只要”的意思。",
+        "en": "「ばかり」 means \"nothing but\" and doesn't combine with 「ば」 to mean \"as long as\"."
+      }
+    ]
+  },
+  {
+    "id": "n3-l40-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson40#4"
+    ],
+    "difficulty": 2,
+    "stem": "この 書類に 名前を 書き（　）、手続きは 終わりです。",
+    "options": [
+      "さえ すれば",
+      "さえ あれば",
+      "さえ なれば",
+      "さえ いれば"
+    ],
+    "answer": 0,
+    "full": "この 書類に 名前を 書きさえ すれば、手続きは 終わりです。",
+    "tr": {
+      "zh": "只要在这份文件上写上名字，手续就办完了。",
+      "en": "All you need to do is write your name on this form, and that's it."
+    },
+    "why": {
+      "zh": "动词ます形词干接「さえ」时，后面用「すれば」：書きさえすれば。",
+      "en": "After a verb's masu-stem, 「さえ」 is followed by 「すれば」: 書きさえすれば."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「さえあれば」接名词或形容词（お金さえあれば、広くさえあれば），不接动词词干。",
+        "en": "「さえあれば」 follows nouns or adjectives (お金さえあれば), not a verb stem."
+      },
+      {
+        "zh": "没有「動詞ます形＋さえなれば」的说法。",
+        "en": "There is no 「verb stem ＋ さえなれば」 pattern."
+      },
+      {
+        "zh": "「さえいれば」接人（あなたさえいれば）或「〜てさえいれば」，不直接接动词词干。",
+        "en": "「さえいれば」 follows a person (あなたさえいれば) or a て-form (〜てさえいれば), not a bare verb stem."
+      }
+    ]
+  },
+  {
+    "id": "n3-l40-012",
+    "type": "narabe",
+    "refs": [
+      "lesson40#4"
+    ],
+    "difficulty": 2,
+    "stem": "部屋が [_] [_] [★] [_] 遠くても かまわない。",
+    "options": [
+      "広く",
+      "さえ",
+      "あれば",
+      "駅から"
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full": "部屋が 広くさえ あれば 駅から 遠くても かまわない。",
+    "tr": {
+      "zh": "只要房间宽敞，离车站远也没关系。",
+      "en": "As long as the room is spacious, I don't mind it being far from the station."
+    },
+    "why": {
+      "zh": "い形容词：〜く ＋ さえ ＋ あれば（広くさえあれば）；「駅から」接「遠くても」。★ 是「あれば」。",
+      "en": "i-adjective: 〜く ＋ さえ ＋ あれば (広くさえあれば); 「駅から」 goes with 「遠くても」. The ★ is 「あれば」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

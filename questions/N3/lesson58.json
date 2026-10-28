@@ -1,0 +1,1278 @@
+[
+  {
+    "id": "n3-l58-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson58#1"
+    ],
+    "difficulty": 2,
+    "stem": "この 本は、日本語を 勉強して いる 外国人（　）とても 役に 立つ。",
+    "options": [
+      "にとって",
+      "に関して",
+      "において",
+      "について"
+    ],
+    "answer": 0,
+    "full": "この 本は、日本語を 勉強して いる 外国人 にとって とても 役に 立つ。",
+    "tr": {
+      "zh": "这本书对学日语的外国人来说非常有用。",
+      "en": "This book is very useful for foreigners studying Japanese."
+    },
+    "why": {
+      "zh": "“对谁来说有用”是从某人的立场作评价，用「〜にとって」。",
+      "en": "\"Useful for whom\" is a judgement from someone's standpoint — 「〜にとって」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に関して」是“关于”，“关于外国人很有用”说不通。",
+        "en": "「に関して」 means \"about\"; \"useful about foreigners\" makes no sense."
+      },
+      {
+        "zh": "「において」表示场所或场合，不用于“对某人来说”。",
+        "en": "「において」 marks a place or occasion, not \"for someone\"."
+      },
+      {
+        "zh": "「について」是“关于”，和「役に立つ」不能这样搭配。",
+        "en": "「について」 means \"about\" and doesn't pair with 「役に立つ」 this way."
+      }
+    ]
+  },
+  {
+    "id": "n3-l58-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson58#1"
+    ],
+    "difficulty": 2,
+    "stem": "田中先生は、どの 学生（　）も いつも 丁寧に 説明して くれる。",
+    "options": [
+      "に対して",
+      "にとって",
+      "において",
+      "によって"
+    ],
+    "answer": 0,
+    "full": "田中先生は、どの 学生 に対して も いつも 丁寧に 説明して くれる。",
+    "tr": {
+      "zh": "田中老师对哪个学生都总是耐心讲解。",
+      "en": "Mr Tanaka always explains things carefully to every student."
+    },
+    "why": {
+      "zh": "老师的态度指向的对象是学生，用表示对象的「〜に対して」。",
+      "en": "The students are the target of the teacher's attitude — 「〜に対して」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「にとって」是“对……来说（评价）”，不用于表示动作、态度的对象。",
+        "en": "「にとって」 is \"from X's point of view\", not the target of an action or attitude."
+      },
+      {
+        "zh": "「において」表示场所、场合，学生不是场所。",
+        "en": "「において」 marks a place or occasion; students aren't one."
+      },
+      {
+        "zh": "「によって」是“因……而不同”，和「どの学生にも」「いつも」的“都一样”矛盾。",
+        "en": "「によって」 means \"depending on\", which contradicts \"every student, always\"."
+      }
+    ]
+  },
+  {
+    "id": "n3-l58-003",
+    "type": "narabe",
+    "refs": [
+      "lesson58#1"
+    ],
+    "difficulty": 2,
+    "stem": "この [_] [_] [★] [_] 手を 挙げて ください。",
+    "options": [
+      "意見が",
+      "関して",
+      "ある 人は",
+      "問題に"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "この 問題に 関して 意見が ある 人は 手を 挙げて ください。",
+    "tr": {
+      "zh": "关于这个问题有意见的人请举手。",
+      "en": "Anyone with an opinion on this issue, please raise your hand."
+    },
+    "why": {
+      "zh": "この問題に＋関して（关于）＋意見が＋ある人は。★ 在第三格，是「意見が」。",
+      "en": "この問題に ＋ 関して (about) ＋ 意見が ＋ ある人は. The ★ is the third slot: 「意見が」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l58-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson58#2"
+    ],
+    "difficulty": 1,
+    "stem": "先輩が 丁寧に 教えて くれた（　）、仕事を 早く 覚える ことが できた。",
+    "options": [
+      "おかげで",
+      "せいで",
+      "ばかりに",
+      "くせに"
+    ],
+    "answer": 0,
+    "full": "先輩が 丁寧に 教えて くれた おかげで、仕事を 早く 覚える ことが できた。",
+    "tr": {
+      "zh": "多亏前辈耐心教我，我很快就学会了工作。",
+      "en": "Thanks to my senior teaching me so carefully, I picked up the job quickly."
+    },
+    "why": {
+      "zh": "结果是好的（很快学会），并且感谢前辈，用「〜おかげで」。",
+      "en": "A good result, credited to the senior with gratitude — 「〜おかげで」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「せいで」用于坏结果、带怪罪，这里结果是好的。",
+        "en": "「せいで」 blames a cause for a bad result; this result is good."
+      },
+      {
+        "zh": "「ばかりに」是“只因为……（才导致坏结果）”，带后悔，这里结果是好的。",
+        "en": "「ばかりに」 means \"just because…\" leading to something regrettable; this is a good outcome."
+      },
+      {
+        "zh": "「くせに」是“明明……却”的责备，和感谢的语境相反。",
+        "en": "「くせに」 is a reproach, the opposite of gratitude."
+      }
+    ]
+  },
+  {
+    "id": "n3-l58-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson58#2"
+    ],
+    "difficulty": 2,
+    "stem": "目覚まし時計を かけ忘れた（　）、大事な 試験に 遅刻して しまった。",
+    "options": [
+      "ばかりに",
+      "おかげで",
+      "にもかかわらず",
+      "ものの"
+    ],
+    "answer": 0,
+    "full": "目覚まし時計を かけ忘れた ばかりに、大事な 試験に 遅刻して しまった。",
+    "tr": {
+      "zh": "只因为忘了定闹钟，重要的考试迟到了。",
+      "en": "Just because I forgot to set my alarm, I was late for an important exam."
+    },
+    "why": {
+      "zh": "一个小失误导致了坏结果，句尾「てしまった」带后悔，用「〜ばかりに」。",
+      "en": "One small slip caused a bad result, with regret in 「てしまった」 — 「〜ばかりに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「おかげで」用于好结果，迟到是坏结果。",
+        "en": "「おかげで」 is for good results; being late isn't one."
+      },
+      {
+        "zh": "「にもかかわらず」是“尽管”，“尽管忘了定闹钟却迟到了”前后不是相反的关系。",
+        "en": "「にもかかわらず」 (despite) needs a contrast; forgetting the alarm and being late aren't opposed."
+      },
+      {
+        "zh": "「ものの」是“虽然……但是”，这里前后是因果关系，不是转折。",
+        "en": "「ものの」 (although) is a concession; here the link is cause and effect."
+      }
+    ]
+  },
+  {
+    "id": "n3-l58-006",
+    "type": "narabe",
+    "refs": [
+      "lesson58#2"
+    ],
+    "difficulty": 2,
+    "stem": "すみません、道が [_] [_] [★] [_] 、遅れて しまいました。",
+    "options": [
+      "だから",
+      "混んで",
+      "もの",
+      "いた"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "すみません、道が 混んで いた もの だから、遅れて しまいました。",
+    "tr": {
+      "zh": "对不起，因为路上堵车，所以迟到了。",
+      "en": "Sorry — the roads were jammed, so I'm late."
+    },
+    "why": {
+      "zh": "混んで＋いた＋もの＋だから，「ものだから」用来解释、辩解理由。★ 在第三格，是「もの」。",
+      "en": "混んで ＋ いた ＋ もの ＋ だから — 「ものだから」 gives an excuse. The ★ is the third slot: 「もの」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l58-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson58#3"
+    ],
+    "difficulty": 1,
+    "stem": "彼は 自分では 何も しない（　）、人の やり方には 文句ばかり 言う。",
+    "options": [
+      "くせに",
+      "おかげで",
+      "ように",
+      "ばかりに"
+    ],
+    "answer": 0,
+    "full": "彼は 自分では 何も しない くせに、人の やり方には 文句ばかり 言う。",
+    "tr": {
+      "zh": "他自己什么都不做，却对别人的做法净挑毛病。",
+      "en": "He does nothing himself, yet he's always complaining about how others do things."
+    },
+    "why": {
+      "zh": "“自己不做却挑别人毛病”，说话人带着不满和责备，用「〜くせに」。",
+      "en": "\"Does nothing but complains\" — said with irritation, which is 「〜くせに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「おかげで」是“多亏”，用于好结果，这里是批评。",
+        "en": "「おかげで」 (thanks to) is for good results; this is a complaint."
+      },
+      {
+        "zh": "「ように」表示目的或比喻，“为了什么都不做而挑毛病”说不通。",
+        "en": "「ように」 marks a purpose or likeness; \"so as to do nothing, he complains\" makes no sense."
+      },
+      {
+        "zh": "「ばかりに」是“只因为……导致坏结果”，不做事不是挑毛病的原因。",
+        "en": "「ばかりに」 (just because) makes doing nothing the cause of complaining, which isn't the point."
+      }
+    ]
+  },
+  {
+    "id": "n3-l58-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson58#3"
+    ],
+    "difficulty": 2,
+    "stem": "私は 料理教室に 申し込んだ（　）、仕事が 忙しくて まだ 一度も 行って いない。",
+    "options": [
+      "ものの",
+      "くせに",
+      "どころか",
+      "おかげで"
+    ],
+    "answer": 0,
+    "full": "私は 料理教室に 申し込んだ ものの、仕事が 忙しくて まだ 一度も 行って いない。",
+    "tr": {
+      "zh": "我虽然报了烹饪班，但工作太忙，一次都还没去过。",
+      "en": "I signed up for a cookery class, but work's been so busy I haven't been once."
+    },
+    "why": {
+      "zh": "“报了名”和“没去过”前后转折，语气客观，用「た形＋ものの」。",
+      "en": "\"Signed up\" but \"never gone\" — a neutral concession: ta-form ＋ 「ものの」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「くせに」带责备，一般用于批评别人，不用于说自己。",
+        "en": "「くせに」 reproaches someone else; it isn't used about oneself."
+      },
+      {
+        "zh": "「どころか」是“别说……反而”，“别说报名反而没去”说不通。",
+        "en": "「どころか」 (far from…) doesn't fit: \"far from signing up, I haven't gone\" is illogical."
+      },
+      {
+        "zh": "「おかげで」用于好结果，“没去过”不是感谢的结果。",
+        "en": "「おかげで」 is for good results; not having gone isn't one."
+      }
+    ]
+  },
+  {
+    "id": "n3-l58-009",
+    "type": "narabe",
+    "refs": [
+      "lesson58#3"
+    ],
+    "difficulty": 2,
+    "stem": "雨は [_] [_] [★] [_] きた。",
+    "options": [
+      "ますます",
+      "強く なって",
+      "やむ",
+      "どころか"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "雨は やむ どころか ますます 強く なって きた。",
+    "tr": {
+      "zh": "雨别说停了，反而越下越大。",
+      "en": "Far from stopping, the rain got heavier and heavier."
+    },
+    "why": {
+      "zh": "やむ＋どころか（别说……反而）＋ますます＋強くなって（きた）。★ 在第三格，是「ますます」。",
+      "en": "やむ ＋ どころか (far from…) ＋ ますます ＋ 強くなって (きた). The ★ is the third slot: 「ますます」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l58-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson58#4"
+    ],
+    "difficulty": 1,
+    "stem": "この 薬（　）飲めば、すぐ 治りますよ。",
+    "options": [
+      "さえ",
+      "ほど",
+      "ばかりか",
+      "に限らず"
+    ],
+    "answer": 0,
+    "full": "この 薬 さえ 飲めば、すぐ 治りますよ。",
+    "tr": {
+      "zh": "只要吃了这个药，很快就会好的。",
+      "en": "Just take this medicine and you'll be better in no time."
+    },
+    "why": {
+      "zh": "后面有「〜ば」，“只要……就……”是固定搭配「〜さえ〜ば」。",
+      "en": "With 「〜ば」 after it, \"as long as…\" is the set pair 「〜さえ〜ば」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ほど」表示程度，「薬ほど飲めば」不成立。",
+        "en": "「ほど」 marks degree; 「薬ほど飲めば」 isn't a phrase."
+      },
+      {
+        "zh": "「ばかりか」是“不仅……而且”，后面要接追加的内容，不接「〜ば」。",
+        "en": "「ばかりか」 (not only) needs an added point, not 「〜ば」."
+      },
+      {
+        "zh": "「に限らず」是“不限于”，后面要接范围更大的内容，和“只要吃药”不符。",
+        "en": "「に限らず」 (not just) widens the scope; it doesn't mean \"as long as\"."
+      }
+    ]
+  },
+  {
+    "id": "n3-l58-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson58#4"
+    ],
+    "difficulty": 2,
+    "stem": "この アニメは 子供（　）、大人にも 人気が ある。",
+    "options": [
+      "に限らず",
+      "に限って",
+      "さえ",
+      "ほど"
+    ],
+    "answer": 0,
+    "full": "この アニメは 子供 に限らず、大人にも 人気が ある。",
+    "tr": {
+      "zh": "这部动画不仅受孩子欢迎，也受大人欢迎。",
+      "en": "This anime is popular not just with children but with adults too."
+    },
+    "why": {
+      "zh": "后面「大人にも」扩大了范围，“不限于孩子”，用「〜に限らず」。",
+      "en": "「大人にも」 widens the range beyond children — 「〜に限らず」 (not only)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に限って」是“偏偏”，多用于坏事，后面不能接「大人にも」。",
+        "en": "「に限って」 (of all…) is for an unlucky exception and can't lead into 「大人にも」."
+      },
+      {
+        "zh": "「さえ」是“连……都”，“连孩子都，大人也受欢迎”说不通。",
+        "en": "「さえ」 (even) makes no sense: \"even children, adults too\"."
+      },
+      {
+        "zh": "「ほど」表示程度，「子供ほど、大人にも」不成立。",
+        "en": "「ほど」 marks degree; 「子供ほど、大人にも」 doesn't work."
+      }
+    ]
+  },
+  {
+    "id": "n3-l58-012",
+    "type": "narabe",
+    "refs": [
+      "lesson58#4"
+    ],
+    "difficulty": 2,
+    "stem": "どうして [_] [_] [★] [_] 電車が 遅れるんだろう。",
+    "options": [
+      "ときに",
+      "急いで",
+      "限って",
+      "いる"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "どうして 急いで いる ときに 限って 電車が 遅れるんだろう。",
+    "tr": {
+      "zh": "为什么偏偏在赶时间的时候电车就晚点呢？",
+      "en": "Why is it that the train is always late just when I'm in a hurry?"
+    },
+    "why": {
+      "zh": "急いで＋いる＋ときに＋限って（偏偏）。★ 在第三格，是「ときに」。",
+      "en": "急いで ＋ いる ＋ ときに ＋ 限って (just when). The ★ is the third slot: 「ときに」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l58-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson58#5"
+    ],
+    "difficulty": 2,
+    "stem": "冬は 寒くて 外に 出ないので、運動不足に なり（　）だ。",
+    "options": [
+      "がち",
+      "っぽい",
+      "だらけ",
+      "つつある"
+    ],
+    "answer": 0,
+    "full": "冬は 寒くて 外に 出ないので、運動不足に なり がち だ。",
+    "tr": {
+      "zh": "冬天冷不出门，所以容易运动不足。",
+      "en": "In winter it's cold and I don't go out, so I tend to get too little exercise."
+    },
+    "why": {
+      "zh": "“冬天一到就容易……”是反复出现的负面倾向，用「ます形＋がちだ」。",
+      "en": "A bad tendency that keeps recurring every winter — masu-stem ＋ 「がちだ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「っぽい」表示“像……/ 容易……”，不接「なり」这样的形式。",
+        "en": "「っぽい」 doesn't attach to 「なり」 like this."
+      },
+      {
+        "zh": "「だらけ」接名词，表示“满是……”，不接「なり」这样的ます形词干。",
+        "en": "「だらけ」 follows nouns (covered in…), not a masu-stem like 「なり」."
+      },
+      {
+        "zh": "「つつある」后面不能再接「だ」，而且表示“正在逐渐”，不是倾向。",
+        "en": "「つつある」 can't take 「だ」 after it, and it means a change in progress, not a tendency."
+      }
+    ]
+  },
+  {
+    "id": "n3-l58-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson58#5"
+    ],
+    "difficulty": 2,
+    "stem": "普段は 元気なのに、昨日から 少し 熱が あって 風邪（　）なので、今日は 早めに 帰ります。",
+    "options": [
+      "気味",
+      "がち",
+      "だらけ",
+      "向き"
+    ],
+    "answer": 0,
+    "full": "普段は 元気なのに、昨日から 少し 熱が あって 風邪 気味 なので、今日は 早めに 帰ります。",
+    "tr": {
+      "zh": "平时身体很好，但从昨天起有点发烧，有点感冒，所以今天早点回去。",
+      "en": "I'm usually fine, but I've had a slight temperature since yesterday and feel like I'm coming down with a cold, so I'm leaving early today."
+    },
+    "why": {
+      "zh": "「少し熱がある」是现在的轻微症状，“有点感冒”用「〜気味」。",
+      "en": "「少し熱がある」 is a mild symptom right now — \"a touch of a cold\" is 「〜気味」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「がち」是“动不动就（经常）”，和「普段は元気なのに」矛盾，也不是“从昨天起”的一次症状。",
+        "en": "「がち」 means prone to it, which contradicts 「普段は元気なのに」 and doesn't fit one bout since yesterday."
+      },
+      {
+        "zh": "「だらけ」是“满是……”，用于具体的东西（泥、错误），不说「風邪だらけ」。",
+        "en": "「だらけ」 (covered in) is for things like mud or mistakes, never 「風邪」."
+      },
+      {
+        "zh": "「向き」是“适合……”，「風邪向き」意思不通。",
+        "en": "「向き」 (suited to) makes no sense with 「風邪」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l58-015",
+    "type": "narabe",
+    "refs": [
+      "lesson58#5"
+    ],
+    "difficulty": 2,
+    "stem": "若い 人が 都会へ 出て いくので、この 町の [_] [_] [★] [_] 。",
+    "options": [
+      "だ",
+      "人口は",
+      "一方",
+      "減る"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "若い 人が 都会へ 出て いくので、この 町の 人口は 減る 一方 だ。",
+    "tr": {
+      "zh": "年轻人都去了大城市，这个镇的人口不断减少。",
+      "en": "Young people keep leaving for the cities, so this town's population just keeps falling."
+    },
+    "why": {
+      "zh": "人口は＋減る（辞书形）＋一方＋だ，表示一直朝一个方向变化。★ 在第三格，是「一方」。",
+      "en": "人口は ＋ 減る (dictionary form) ＋ 一方 ＋ だ — a change that only goes one way. The ★ is the third slot: 「一方」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l58-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson58#6"
+    ],
+    "difficulty": 1,
+    "stem": "部屋の 電気が ついて いるし、靴も ある。彼は 家に いる（　）。",
+    "options": [
+      "に違いない",
+      "はずがない",
+      "わけがない",
+      "ものか"
+    ],
+    "answer": 0,
+    "full": "部屋の 電気が ついて いるし、靴も ある。彼は 家に いる に違いない。",
+    "tr": {
+      "zh": "房间的灯亮着，鞋也在。他一定在家。",
+      "en": "The light's on and his shoes are here. He must be at home."
+    },
+    "why": {
+      "zh": "灯亮着、鞋也在，是有根据的推测“一定在家”，用「〜に違いない」。",
+      "en": "The light and the shoes are evidence for a confident guess — 「〜に違いない」 (must be)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「はずがない」是“不可能在家”，和灯亮、鞋在的证据相反。",
+        "en": "「はずがない」 (can't be) contradicts the evidence."
+      },
+      {
+        "zh": "「わけがない」是“不可能在家”，和证据矛盾。",
+        "en": "「わけがない」 (no way) contradicts the evidence."
+      },
+      {
+        "zh": "「ものか」是强烈否定“怎么会在家”，和证据矛盾，也不是推测。",
+        "en": "「ものか」 is an emphatic denial — it contradicts the evidence and isn't a guess."
+      }
+    ]
+  },
+  {
+    "id": "n3-l58-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson58#6"
+    ],
+    "difficulty": 2,
+    "stem": "あんな ひどい ことを 言う 人とは、もう 二度と 話す（　）。",
+    "options": [
+      "ものか",
+      "に違いない",
+      "に決まって いる",
+      "はずだ"
+    ],
+    "answer": 0,
+    "full": "あんな ひどい ことを 言う 人とは、もう 二度と 話す ものか。",
+    "tr": {
+      "zh": "和说那种过分话的人，我再也不会跟他说话了！",
+      "en": "I'm never speaking to someone who says such awful things again!"
+    },
+    "why": {
+      "zh": "「二度と」后面要接否定，说话人带着气愤，用强烈否定的「〜ものか」（才不会……）。",
+      "en": "「二度と」 needs a negative, and the speaker is angry — the emphatic denial 「〜ものか」 (as if I would!)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に違いない」是肯定的推测，「二度と」后面不能接肯定。",
+        "en": "「に違いない」 is a positive guess; 「二度と」 can't take a positive."
+      },
+      {
+        "zh": "「に決まっている」是“肯定会”，和「二度と」矛盾。",
+        "en": "「に決まっている」 (bound to) contradicts 「二度と」."
+      },
+      {
+        "zh": "「はずだ」是肯定的推测，和「二度と」矛盾。",
+        "en": "「はずだ」 is a positive expectation and clashes with 「二度と」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l58-018",
+    "type": "narabe",
+    "refs": [
+      "lesson58#6"
+    ],
+    "difficulty": 1,
+    "stem": "あんなに 練習したんだから、[_] [_] [★] [_] 。",
+    "options": [
+      "決まって",
+      "彼が",
+      "いる",
+      "勝つに"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "あんなに 練習したんだから、彼が 勝つに 決まって いる。",
+    "tr": {
+      "zh": "练习了那么多，他肯定会赢。",
+      "en": "After all that practice, he's bound to win."
+    },
+    "why": {
+      "zh": "彼が＋勝つに＋決まって＋いる（肯定是……）。★ 在第三格，是「決まって」。",
+      "en": "彼が ＋ 勝つに ＋ 決まって ＋ いる (bound to). The ★ is the third slot: 「決まって」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l58-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson58#7"
+    ],
+    "difficulty": 2,
+    "stem": "台風で 飛行機が 全部 欠航に なったので、明日の 出張は 中止（　）。",
+    "options": [
+      "せざるを得ない",
+      "しようと する",
+      "しかねる",
+      "し得る"
+    ],
+    "answer": 0,
+    "full": "台風で 飛行機が 全部 欠航に なったので、明日の 出張は 中止 せざるを得ない。",
+    "tr": {
+      "zh": "因为台风航班全部取消了，明天的出差不得不取消。",
+      "en": "Every flight's been cancelled because of the typhoon, so I'll have to call off tomorrow's business trip."
+    },
+    "why": {
+      "zh": "航班全部取消是外部原因，被迫取消出差，用「〜ざるを得ない」（不得不）。「する」变「せざる」。",
+      "en": "The cancelled flights force the decision from outside — 「〜ざるを得ない」 (have no choice but to). 「する」 becomes 「せざる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「しようとする」是“试图取消”，和“航班全取消所以……”的被迫感不符。",
+        "en": "「しようとする」 (try to cancel) misses the sense of being forced."
+      },
+      {
+        "zh": "「しかねる」是“难以取消”，和航班全取消的情况相反。",
+        "en": "「しかねる」 (find it hard to cancel) is the opposite of what the situation demands."
+      },
+      {
+        "zh": "「し得る」是“有可能取消”，前面原因已经很确定，不是可能性的问题。",
+        "en": "「し得る」 (could possibly cancel) is about possibility; the cause here leaves no choice."
+      }
+    ]
+  },
+  {
+    "id": "n3-l58-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson58#7"
+    ],
+    "difficulty": 1,
+    "stem": "この 店の ラーメンは 量が 多すぎて、一人では 食べ（　）。",
+    "options": [
+      "きれない",
+      "得ない",
+      "かねない",
+      "かけない"
+    ],
+    "answer": 0,
+    "full": "この 店の ラーメンは 量が 多すぎて、一人では 食べ きれない。",
+    "tr": {
+      "zh": "这家店的拉面量太大，一个人吃不完。",
+      "en": "The ramen here comes in such huge portions that you can't finish it on your own."
+    },
+    "why": {
+      "zh": "“量太大吃不完”，用「ます形＋きれない」（无法全部做完）。",
+      "en": "Too much to finish — masu-stem ＋ 「きれない」 (can't do it all)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「得ない」是“不可能”，几乎只用于「あり得ない」等，「食べ得ない」不自然。",
+        "en": "「得ない」 (impossible) is used in words like 「あり得ない」; 「食べ得ない」 isn't natural."
+      },
+      {
+        "zh": "「かねない」是“可能会（坏事）”，“可能会吃”意思不通。",
+        "en": "「かねない」 (might well, something bad) makes no sense with eating."
+      },
+      {
+        "zh": "「かける」是“做到一半”，「食べかけない」不这样用。",
+        "en": "「かける」 means half-done; 「食べかけない」 isn't used."
+      }
+    ]
+  },
+  {
+    "id": "n3-l58-021",
+    "type": "narabe",
+    "refs": [
+      "lesson58#7"
+    ],
+    "difficulty": 2,
+    "stem": "家を [_] [_] [★] [_] 、電話が 鳴った。",
+    "options": [
+      "した",
+      "出よう",
+      "とき",
+      "と"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "家を 出よう と した とき、電話が 鳴った。",
+    "tr": {
+      "zh": "正要出门的时候，电话响了。",
+      "en": "Just as I was about to leave the house, the phone rang."
+    },
+    "why": {
+      "zh": "出よう（意向形）＋と＋した＋とき，「ようとする」表示正要做某事。★ 在第三格，是「した」。",
+      "en": "出よう (volitional) ＋ と ＋ した ＋ とき — 「ようとする」 is \"about to\". The ★ is the third slot: 「した」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l58-022",
+    "type": "bunpou",
+    "refs": [
+      "lesson58#8"
+    ],
+    "difficulty": 1,
+    "stem": "資料が 届き（　）、すぐに メールで お知らせします。",
+    "options": [
+      "次第",
+      "とたん",
+      "うちに",
+      "最中に"
+    ],
+    "answer": 0,
+    "full": "資料が 届き 次第、すぐに メールで お知らせします。",
+    "tr": {
+      "zh": "资料一到，马上发邮件通知您。",
+      "en": "As soon as the documents arrive, I'll let you know by email."
+    },
+    "why": {
+      "zh": "「ます形（届き）＋次第」是“一……就立刻（去做）”，后面接说话人的行动「お知らせします」。",
+      "en": "Masu-stem 「届き」 ＋ 「次第」 = as soon as…, followed by the speaker's action 「お知らせします」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「とたん」接た形，用于意外的已发生的事，不能接「届き」，也不能接说话人的打算。",
+        "en": "「とたん」 follows the ta-form for an unexpected past event; not 「届き」, and not a plan."
+      },
+      {
+        "zh": "「うちに」接辞书形等，不接ます形词干「届き」。",
+        "en": "「うちに」 follows the dictionary form etc., not the stem 「届き」."
+      },
+      {
+        "zh": "「最中に」接「ている」或「名词の」，不接「届き」。",
+        "en": "「最中に」 follows 「ている」 or 「名詞の」, not 「届き」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l58-023",
+    "type": "bunpou",
+    "refs": [
+      "lesson58#8"
+    ],
+    "difficulty": 1,
+    "stem": "スープが 冷めない（　）、早く 食べて ください。",
+    "options": [
+      "うちに",
+      "次第",
+      "とたんに",
+      "際に"
+    ],
+    "answer": 0,
+    "full": "スープが 冷めない うちに、早く 食べて ください。",
+    "tr": {
+      "zh": "趁汤还没凉，快吃吧。",
+      "en": "Eat it quickly, before the soup gets cold."
+    },
+    "why": {
+      "zh": "“趁还没凉”，在状态改变之前做，用「ない形＋うちに」。",
+      "en": "\"Before it gets cold\" — do it while the state lasts: nai-form ＋ 「うちに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「次第」接ます形词干，不接「冷めない」。",
+        "en": "「次第」 follows the masu-stem, not 「冷めない」."
+      },
+      {
+        "zh": "「とたんに」接た形，表示“刚一……就”，不接「ない」形。",
+        "en": "「とたんに」 follows the ta-form (the moment…), not the nai-form."
+      },
+      {
+        "zh": "「際に」是正式的“在……之际”，「冷めない際に」不说。",
+        "en": "「際に」 is a formal \"on the occasion of\"; 「冷めない際に」 isn't said."
+      }
+    ]
+  },
+  {
+    "id": "n3-l58-024",
+    "type": "narabe",
+    "refs": [
+      "lesson58#8"
+    ],
+    "difficulty": 2,
+    "stem": "大事な 会議の [_] [_] [★] [_] 。",
+    "options": [
+      "鳴って",
+      "携帯電話が",
+      "しまった",
+      "最中に"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "大事な 会議の 最中に 携帯電話が 鳴って しまった。",
+    "tr": {
+      "zh": "正在开重要会议的时候，手机响了。",
+      "en": "My mobile went off right in the middle of an important meeting."
+    },
+    "why": {
+      "zh": "会議の＋最中に（正在……的时候）＋携帯電話が＋鳴って（しまった）。★ 在第三格，是「鳴って」。",
+      "en": "会議の ＋ 最中に (right in the middle of) ＋ 携帯電話が ＋ 鳴って (しまった). The ★ is the third slot: 「鳴って」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l58-025",
+    "type": "bunpou",
+    "refs": [
+      "lesson58#9"
+    ],
+    "difficulty": 2,
+    "stem": "昨夜は 疲れて いて、テレビを つけた（　）寝て しまった。",
+    "options": [
+      "まま",
+      "だらけ",
+      "っぱなし",
+      "ほど"
+    ],
+    "answer": 0,
+    "full": "昨夜は 疲れて いて、テレビを つけた まま 寝て しまった。",
+    "tr": {
+      "zh": "昨晚太累了，开着电视就睡着了。",
+      "en": "I was so tired last night that I fell asleep with the TV on."
+    },
+    "why": {
+      "zh": "“开着电视（的状态）睡着了”，保持某状态做下一件事，用「た形＋まま」。",
+      "en": "Falling asleep with the TV still on — a state left as it is: ta-form ＋ 「まま」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「だらけ」接名词，表示“满是……”，不接动词た形。",
+        "en": "「だらけ」 follows nouns (covered in…), not a verb ta-form."
+      },
+      {
+        "zh": "「っぱなし」接ます形词干（つけっぱなし），不接「つけた」。",
+        "en": "「っぱなし」 follows the masu-stem (つけっぱなし), not 「つけた」."
+      },
+      {
+        "zh": "「ほど」表示程度，“开了电视的程度睡着”说不通。",
+        "en": "「ほど」 marks degree; it makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n3-l58-026",
+    "type": "bunpou",
+    "refs": [
+      "lesson58#9"
+    ],
+    "difficulty": 1,
+    "stem": "雨の 中を 走ったので、靴が 泥（　）に なった。",
+    "options": [
+      "だらけ",
+      "まま",
+      "っぱなし",
+      "気味"
+    ],
+    "answer": 0,
+    "full": "雨の 中を 走ったので、靴が 泥 だらけ に なった。",
+    "tr": {
+      "zh": "在雨里跑，鞋子满是泥。",
+      "en": "I ran through the rain, and my shoes got covered in mud."
+    },
+    "why": {
+      "zh": "“满是泥”，名词＋「だらけ」表示到处都是（不好的东西）。",
+      "en": "\"Covered in mud\" — noun ＋ 「だらけ」 for something (unwelcome) all over."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「まま」接名词要用「の」（泥のまま），而且意思是“保持原状”，不是“满是”。",
+        "en": "「まま」 needs 「の」 after a noun and means \"left as is\", not \"covered in\"."
+      },
+      {
+        "zh": "「っぱなし」接动词ます形，不接名词。",
+        "en": "「っぱなし」 follows a verb stem, not a noun."
+      },
+      {
+        "zh": "「気味」是“有点……的倾向”，「泥気味」不说。",
+        "en": "「気味」 is \"a touch of\"; 「泥気味」 isn't said."
+      }
+    ]
+  },
+  {
+    "id": "n3-l58-027",
+    "type": "narabe",
+    "refs": [
+      "lesson58#9"
+    ],
+    "difficulty": 2,
+    "stem": "歯を 磨く ときは、[_] [_] [★] [_] ください。",
+    "options": [
+      "出し",
+      "しないで",
+      "水を",
+      "っぱなしに"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "歯を 磨く ときは、水を 出し っぱなしに しないで ください。",
+    "tr": {
+      "zh": "刷牙的时候，请不要一直开着水。",
+      "en": "When you brush your teeth, please don't leave the tap running."
+    },
+    "why": {
+      "zh": "水を＋出し（ます形词干）＋っぱなしに＋しないで（ください）。★ 在第三格，是「っぱなしに」。",
+      "en": "水を ＋ 出し (masu-stem) ＋ っぱなしに ＋ しないで (ください). The ★ is the third slot: 「っぱなしに」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l58-028",
+    "type": "bunpou",
+    "refs": [
+      "lesson58#10"
+    ],
+    "difficulty": 2,
+    "stem": "私は 毎日 家で 料理を するので、外食は（　）しない。",
+    "options": [
+      "めったに",
+      "必ず",
+      "ぜひ",
+      "たしか"
+    ],
+    "answer": 0,
+    "full": "私は 毎日 家で 料理を するので、外食は めったに しない。",
+    "tr": {
+      "zh": "我每天在家做饭，所以很少在外面吃。",
+      "en": "I cook at home every day, so I rarely eat out."
+    },
+    "why": {
+      "zh": "“每天在家做饭”→“很少在外面吃”，表示频率低，用「めったに〜ない」。",
+      "en": "Cooking at home daily means eating out is rare — 「めったに〜ない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「必ず」后面一般接肯定，「必ずしない」不自然。",
+        "en": "「必ず」 normally takes a positive; 「必ずしない」 isn't natural."
+      },
+      {
+        "zh": "「ぜひ」用于愿望、请求，不能接否定的「しない」。",
+        "en": "「ぜひ」 goes with wishes and requests, not with 「しない」."
+      },
+      {
+        "zh": "「たしか」是“记得好像”，不表示频率，和“每天做饭”的原因接不上。",
+        "en": "「たしか」 means \"if I remember rightly\" and says nothing about frequency."
+      }
+    ]
+  },
+  {
+    "id": "n3-l58-029",
+    "type": "bunpou",
+    "refs": [
+      "lesson58#10"
+    ],
+    "difficulty": 2,
+    "stem": "この 映画は 悲しすぎて、最後の 場面では 泣か（　）。",
+    "options": [
+      "ずには いられなかった",
+      "ざるを 得なかった",
+      "ない わけには いかなかった",
+      "ないで いられた"
+    ],
+    "answer": 0,
+    "full": "この 映画は 悲しすぎて、最後の 場面では 泣か ずには いられなかった。",
+    "tr": {
+      "zh": "这部电影太悲伤了，最后一幕忍不住哭了。",
+      "en": "The film was so sad I couldn't help crying in the final scene."
+    },
+    "why": {
+      "zh": "因为太悲伤，内心的感情控制不住，用「〜ずにはいられない」（忍不住）。",
+      "en": "The sadness is an inner feeling that can't be held back — 「〜ずにはいられない」 (can't help…)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ざるを得ない」是外部情况所迫“不得不”，不用于忍不住的感情。",
+        "en": "「ざるを得ない」 is being forced by circumstances, not an emotion you can't hold back."
+      },
+      {
+        "zh": "「ないわけにはいかない」是道义上“不能不做”，哭不是责任。",
+        "en": "「ないわけにはいかない」 is a duty you can't avoid; crying isn't a duty."
+      },
+      {
+        "zh": "「ないでいられた」是“能忍住不哭”，和“太悲伤”矛盾。",
+        "en": "「ないでいられた」 (managed not to cry) contradicts \"so sad\"."
+      }
+    ]
+  },
+  {
+    "id": "n3-l58-030",
+    "type": "narabe",
+    "refs": [
+      "lesson58#10"
+    ],
+    "difficulty": 2,
+    "stem": "まだ 半分も できて いないから、[_] [_] [★] [_] 。",
+    "options": [
+      "そうも",
+      "今日中には",
+      "ない",
+      "終わり"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "まだ 半分も できて いないから、今日中には 終わり そうも ない。",
+    "tr": {
+      "zh": "还没完成一半，看样子今天之内结束不了。",
+      "en": "I haven't even done half, so it doesn't look like I'll finish today."
+    },
+    "why": {
+      "zh": "今日中には＋終わり（ます形词干）＋そうも＋ない（看起来不会）。★ 在第三格，是「そうも」。",
+      "en": "今日中には ＋ 終わり (masu-stem) ＋ そうも ＋ ない (doesn't look like). The ★ is the third slot: 「そうも」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l58-031",
+    "type": "bunpou",
+    "refs": [
+      "lesson58#11"
+    ],
+    "difficulty": 1,
+    "stem": "この 店は 値段が 安い（　）、味も いい。",
+    "options": [
+      "上に",
+      "代わりに",
+      "たびに",
+      "とおりに"
+    ],
+    "answer": 0,
+    "full": "この 店は 値段が 安い 上に、味も いい。",
+    "tr": {
+      "zh": "这家店价格便宜，而且味道也好。",
+      "en": "This place is cheap, and on top of that the food is good."
+    },
+    "why": {
+      "zh": "“便宜”再加上“味道也好”（有「も」），同方向的追加，用「〜上に」。",
+      "en": "Cheap, plus good food (note 「も」) — adding a point in the same direction: 「〜上に」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「代わりに」是“作为交换/代价”，后面应接相反的缺点，不接「味もいい」。",
+        "en": "「代わりに」 sets up a trade-off, which would need a downside, not 「味もいい」."
+      },
+      {
+        "zh": "「たびに」是“每次……”，“每次便宜”说不通。",
+        "en": "「たびに」 (every time) makes no sense with 「安い」."
+      },
+      {
+        "zh": "「とおりに」是“按照……”，“按照便宜”说不通。",
+        "en": "「とおりに」 (just as) makes no sense with 「安い」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l58-032",
+    "type": "bunpou",
+    "refs": [
+      "lesson58#11"
+    ],
+    "difficulty": 1,
+    "stem": "この 写真を 見る（　）、子供の ころを 思い出す。",
+    "options": [
+      "たびに",
+      "代わりに",
+      "上に",
+      "というより"
+    ],
+    "answer": 0,
+    "full": "この 写真を 見る たびに、子供の ころを 思い出す。",
+    "tr": {
+      "zh": "每次看到这张照片，都会想起小时候。",
+      "en": "Every time I look at this photo, I remember my childhood."
+    },
+    "why": {
+      "zh": "“每次看照片都想起小时候”，每逢 A 必然 B，用「辞书形＋たびに」。",
+      "en": "Each time A happens, B follows — dictionary form ＋ 「たびに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「代わりに」是“代替/作为交换”，“看照片代替想起小时候”说不通。",
+        "en": "「代わりに」 (instead of / in exchange) makes no sense here."
+      },
+      {
+        "zh": "「上に」是“而且”，“看照片而且想起小时候”不能这样连接。",
+        "en": "「上に」 (on top of) doesn't link these two actions."
+      },
+      {
+        "zh": "「というより」是“与其说……不如说”，用于换一种说法，这里不是。",
+        "en": "「というより」 (rather than saying…) rephrases something; that's not the case here."
+      }
+    ]
+  },
+  {
+    "id": "n3-l58-033",
+    "type": "narabe",
+    "refs": [
+      "lesson58#11"
+    ],
+    "difficulty": 1,
+    "stem": "説明書に [_] [_] [★] [_] ください。",
+    "options": [
+      "組み立てて",
+      "ある",
+      "とおりに",
+      "書いて"
+    ],
+    "order": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "full": "説明書に 書いて ある とおりに 組み立てて ください。",
+    "tr": {
+      "zh": "请按照说明书上写的组装。",
+      "en": "Please put it together exactly as the instructions say."
+    },
+    "why": {
+      "zh": "書いて＋ある＋とおりに（按照）＋組み立てて（ください）。★ 在第三格，是「とおりに」。",
+      "en": "書いて ＋ ある ＋ とおりに (just as) ＋ 組み立てて (ください). The ★ is the third slot: 「とおりに」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

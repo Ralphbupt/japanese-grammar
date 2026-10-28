@@ -1,0 +1,701 @@
+[
+  {
+    "id": "n3-l48-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson48#1",
+      "lesson48#2"
+    ],
+    "difficulty": 2,
+    "stem": "家を（　）、急に 雨が 降り出した。",
+    "options": [
+      "出たとたん",
+      "出次第",
+      "出るうちに",
+      "出て いる最中に"
+    ],
+    "answer": 0,
+    "full": "家を 出たとたん、急に 雨が 降り出した。",
+    "tr": {
+      "zh": "刚一出家门，突然就下起雨来了。",
+      "en": "The moment I left the house, it suddenly started raining."
+    },
+    "why": {
+      "zh": "刚出门就意外地下雨，B 是不受控制的意外，用「た形＋とたん」。",
+      "en": "Right as I stepped out, rain started unexpectedly — something beyond one's control: た-form ＋ 「とたん」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「次第」后面接说话人主动打算做的事，“下雨”不是有意的行为，而且是过去的事。",
+        "en": "「次第」 is followed by something the speaker plans to do; rain isn't an intended act, and this is past."
+      },
+      {
+        "zh": "「うちに」是“趁……”，“趁出门下雨了”意思不通。",
+        "en": "「うちに」 means \"while still…\" — it doesn't fit here."
+      },
+      {
+        "zh": "「最中に」强调持续动作的中途，“出门”是一瞬间的动作，「家を出ている最中」不自然。",
+        "en": "「最中に」 needs an ongoing action; leaving the house is instantaneous."
+      }
+    ]
+  },
+  {
+    "id": "n3-l48-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson48#1"
+    ],
+    "difficulty": 1,
+    "stem": "彼女は 部屋に（　）とたん、大きな 声で 笑い出した。",
+    "options": [
+      "入った",
+      "入る",
+      "入り",
+      "入って"
+    ],
+    "answer": 0,
+    "full": "彼女は 部屋に 入ったとたん、大きな 声で 笑い出した。",
+    "tr": {
+      "zh": "她一进房间，就大声笑了起来。",
+      "en": "The moment she entered the room, she burst out laughing."
+    },
+    "why": {
+      "zh": "「とたん」前面只能接动词た形：入った＋とたん。",
+      "en": "「とたん」 only follows the た-form: 入った ＋ とたん."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "辞书形不能接「とたん」。",
+        "en": "The dictionary form can't come before 「とたん」."
+      },
+      {
+        "zh": "ます形词干接的是「次第」，不是「とたん」。",
+        "en": "The ます-stem goes with 「次第」, not 「とたん」."
+      },
+      {
+        "zh": "て形不能接「とたん」。",
+        "en": "The て-form can't come before 「とたん」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l48-003",
+    "type": "narabe",
+    "refs": [
+      "lesson48#1"
+    ],
+    "difficulty": 2,
+    "stem": "疲れて いたので、ベッドに [★] [_] [_] [_] しまった。",
+    "options": [
+      "寝て",
+      "横に",
+      "とたん",
+      "なった"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "疲れて いたので、ベッドに 横に なったとたん 寝て しまった。",
+    "tr": {
+      "zh": "因为累了，一躺到床上就睡着了。",
+      "en": "I was so tired that I fell asleep the moment I lay down on the bed."
+    },
+    "why": {
+      "zh": "「ベッドに 横に なった」：横に＋なった，再接「とたん」＋「寝て しまった」。★ 在第一格，是「横に」。",
+      "en": "「ベッドに 横に なった」 (横に ＋ なった) ＋ 「とたん」 ＋ 「寝て しまった」. The ★ is the first slot: 「横に」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l48-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson48#2",
+      "lesson48#1"
+    ],
+    "difficulty": 2,
+    "stem": "会議の 時間が（　）、皆さんに メールで お知らせします。",
+    "options": [
+      "決まり次第",
+      "決まったとたん",
+      "決まる最中に",
+      "決まるうちに"
+    ],
+    "answer": 0,
+    "full": "会議の 時間が 決まり次第、皆さんに メールで お知らせします。",
+    "tr": {
+      "zh": "会议时间一确定，就用邮件通知大家。",
+      "en": "As soon as the meeting time is decided, I'll let everyone know by email."
+    },
+    "why": {
+      "zh": "后面是说话人打算做的事「お知らせします」，“一……就马上（主动做）”用「ます形词干＋次第」。",
+      "en": "What follows is the speaker's planned action (お知らせします): \"as soon as…, I will\" is ます-stem ＋ 「次第」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「たとたん」后面是意外发生的事，不能接说话人有意的计划。",
+        "en": "「たとたん」 is followed by something unexpected, not by the speaker's own plan."
+      },
+      {
+        "zh": "「最中に」要接「ている」或名词の，而且“决定”不是持续的动作。",
+        "en": "「最中に」 needs 「ている」 or 「名詞の」, and \"being decided\" isn't an ongoing action."
+      },
+      {
+        "zh": "「決まるうちに」意思不通；「うちに」是趁某状态还没变。",
+        "en": "「決まるうちに」 makes no sense; 「うちに」 is \"while a state still lasts\"."
+      }
+    ]
+  },
+  {
+    "id": "n3-l48-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson48#2"
+    ],
+    "difficulty": 1,
+    "stem": "ご注文の 商品が 届き（　）、すぐに ご連絡いたします。",
+    "options": [
+      "次第",
+      "とたん",
+      "うちに",
+      "際に"
+    ],
+    "answer": 0,
+    "full": "ご注文の 商品が 届き次第、すぐに ご連絡いたします。",
+    "tr": {
+      "zh": "您订购的商品一到货，我们就立刻联系您。",
+      "en": "We'll contact you as soon as the item you ordered arrives."
+    },
+    "why": {
+      "zh": "「届き」是ます形词干，能接在后面的只有「次第」，表示“一到就（主动联系）”。",
+      "en": "「届き」 is the ます-stem; only 「次第」 attaches there: \"as soon as it arrives, we'll contact you\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「とたん」要接た形（届いたとたん），而且后面不能接说话人的计划。",
+        "en": "「とたん」 needs the た-form (届いたとたん) and can't be followed by a plan."
+      },
+      {
+        "zh": "「うちに」不接ます形词干。",
+        "en": "「うちに」 doesn't follow the ます-stem."
+      },
+      {
+        "zh": "「際に」要接辞书形或た形（届く際に），不接ます形词干。",
+        "en": "「際に」 follows the dictionary or た-form (届く際に), not the ます-stem."
+      }
+    ]
+  },
+  {
+    "id": "n3-l48-006",
+    "type": "narabe",
+    "refs": [
+      "lesson48#2"
+    ],
+    "difficulty": 2,
+    "stem": "では、[_] [★] [_] [_] 出発しましょう。",
+    "options": [
+      "次第",
+      "でき",
+      "全員の",
+      "準備が"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "では、全員の 準備が でき次第 出発しましょう。",
+    "tr": {
+      "zh": "那么，大家一准备好就出发吧。",
+      "en": "Well then, let's leave as soon as everyone is ready."
+    },
+    "why": {
+      "zh": "「全員の 準備が」＋ます形词干「でき」＋「次第」＋「出発しましょう」。★ 在第二格，是「準備が」。",
+      "en": "「全員の 準備が」 ＋ ます-stem 「でき」 ＋ 「次第」 ＋ 出発しましょう. The ★ is the second slot: 「準備が」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l48-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson48#3"
+    ],
+    "difficulty": 1,
+    "stem": "料理が 温かい（　）、どうぞ 召し上がって ください。",
+    "options": [
+      "うちに",
+      "最中に",
+      "とたん",
+      "次第"
+    ],
+    "answer": 0,
+    "full": "料理が 温かい うちに、どうぞ 召し上がって ください。",
+    "tr": {
+      "zh": "请趁菜还热的时候吃吧。",
+      "en": "Please eat while the food is still warm."
+    },
+    "why": {
+      "zh": "饭菜会变凉，要趁“还热”这个状态赶紧吃，用「い形容词＋うちに」。",
+      "en": "The food will cool down, so eat while it's still warm: い-adjective ＋ 「うちに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「最中に」接「ている」或名词の，表示动作进行中被打断，不接形容词。",
+        "en": "「最中に」 follows 「ている」 or 「名詞の」 and doesn't attach to adjectives."
+      },
+      {
+        "zh": "「とたん」只接动词た形。",
+        "en": "「とたん」 only follows a verb's た-form."
+      },
+      {
+        "zh": "「次第」接动词ます形词干，不接形容词。",
+        "en": "「次第」 follows a verb's ます-stem, not an adjective."
+      }
+    ]
+  },
+  {
+    "id": "n3-l48-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson48#3"
+    ],
+    "difficulty": 2,
+    "stem": "空が 暗く なって きた。雨が（　）うちに、洗濯物を 取り込もう。",
+    "options": [
+      "降らない",
+      "降る",
+      "降った",
+      "降り"
+    ],
+    "answer": 0,
+    "full": "空が 暗く なって きた。雨が 降らない うちに、洗濯物を 取り込もう。",
+    "tr": {
+      "zh": "天色暗下来了。趁还没下雨，把晾的衣服收进来吧。",
+      "en": "The sky's getting dark. Let's bring the laundry in before it rains."
+    },
+    "why": {
+      "zh": "趁“还没下雨”这个状态赶快收衣服，用「ない形＋うちに」。",
+      "en": "Bring it in while it still isn't raining: ない-form ＋ 「うちに」 (= before it rains)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「降るうちに」是“在下雨的过程中”，和“赶在下雨前收衣服”的意思相反。",
+        "en": "「降るうちに」 would mean \"as it keeps raining\" — the opposite of beating the rain."
+      },
+      {
+        "zh": "「うちに」不接た形。",
+        "en": "「うちに」 doesn't follow the た-form."
+      },
+      {
+        "zh": "「うちに」不接ます形词干。",
+        "en": "「うちに」 doesn't follow the ます-stem."
+      }
+    ]
+  },
+  {
+    "id": "n3-l48-009",
+    "type": "narabe",
+    "refs": [
+      "lesson48#3"
+    ],
+    "difficulty": 2,
+    "stem": "ソファで 好きな 音楽を [_] [_] [_] [★] しまった。",
+    "options": [
+      "眠って",
+      "いる",
+      "聞いて",
+      "うちに"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "ソファで 好きな 音楽を 聞いて いる うちに 眠って しまった。",
+    "tr": {
+      "zh": "在沙发上听着喜欢的音乐，不知不觉就睡着了。",
+      "en": "While listening to my favorite music on the sofa, I fell asleep."
+    },
+    "why": {
+      "zh": "「聞いて いる うちに」表示在持续的过程中不知不觉发生变化，后接「眠って しまった」。★ 在第四格，是「眠って」。",
+      "en": "「聞いて いる うちに」 = in the course of listening, a change happens unnoticed; then 眠って しまった. The ★ is the fourth slot: 「眠って」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l48-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson48#4"
+    ],
+    "difficulty": 2,
+    "stem": "大事な 会議の（　）、だれかの 携帯電話が 鳴り出した。",
+    "options": [
+      "最中に",
+      "うちに",
+      "とたん",
+      "次第"
+    ],
+    "answer": 0,
+    "full": "大事な 会議の 最中に、だれかの 携帯電話が 鳴り出した。",
+    "tr": {
+      "zh": "正在开重要会议的时候，不知道谁的手机响了。",
+      "en": "Right in the middle of an important meeting, someone's phone started ringing."
+    },
+    "why": {
+      "zh": "会议正在进行时被电话打断，用「名詞＋の＋最中に」。",
+      "en": "The meeting was in full swing when a phone interrupted it: 「名詞＋の＋最中に」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「うちに」是趁状态还没变赶紧做某事，“手机响了”不是说话人抓紧做的事。",
+        "en": "「うちに」 is about acting before a state changes; a phone ringing isn't such an action."
+      },
+      {
+        "zh": "「とたん」只接动词た形，不接「名詞の」。",
+        "en": "「とたん」 only follows a verb's た-form, not 「名詞の」."
+      },
+      {
+        "zh": "「次第」接动词ます形词干，不接「名詞の」。",
+        "en": "「次第」 follows a ます-stem, not 「名詞の」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l48-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson48#4"
+    ],
+    "difficulty": 1,
+    "stem": "シャワーを（　）最中に、急に 停電に なった。",
+    "options": [
+      "浴びて いる",
+      "浴びる",
+      "浴びた",
+      "浴び"
+    ],
+    "answer": 0,
+    "full": "シャワーを 浴びて いる 最中に、急に 停電に なった。",
+    "tr": {
+      "zh": "正在洗澡的时候，突然停电了。",
+      "en": "Right while I was taking a shower, the power suddenly went out."
+    },
+    "why": {
+      "zh": "动词接「最中に」要用「ている」形：浴びて いる＋最中に。",
+      "en": "A verb before 「最中に」 takes the ている form: 浴びて いる ＋ 最中に."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "辞书形不能直接接「最中に」。",
+        "en": "The dictionary form can't come right before 「最中に」."
+      },
+      {
+        "zh": "た形不能接「最中に」，它表示的是动作正在进行。",
+        "en": "The た-form can't come before 「最中に」, which is about an action in progress."
+      },
+      {
+        "zh": "ます形词干不能接「最中に」。",
+        "en": "The ます-stem can't come before 「最中に」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l48-012",
+    "type": "narabe",
+    "refs": [
+      "lesson48#4"
+    ],
+    "difficulty": 2,
+    "stem": "[★] [_] [_] [_] 、大きな 地震が 起きた。",
+    "options": [
+      "最中に",
+      "食事を して",
+      "家族で",
+      "いる"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "家族で 食事を して いる 最中に、大きな 地震が 起きた。",
+    "tr": {
+      "zh": "正在和家人吃饭的时候，发生了大地震。",
+      "en": "Right in the middle of a family meal, a big earthquake struck."
+    },
+    "why": {
+      "zh": "「家族で 食事を して いる」＋「最中に」。★ 在第一格，是「家族で」。",
+      "en": "「家族で 食事を して いる」 ＋ 「最中に」. The ★ is the first slot: 「家族で」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l48-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson48#5"
+    ],
+    "difficulty": 1,
+    "stem": "【受付】お帰りの（　）、入館カードを こちらに お返し ください。",
+    "options": [
+      "際に",
+      "とたん",
+      "最中に",
+      "次第"
+    ],
+    "answer": 0,
+    "full": "【受付】お帰りの 際に、入館カードを こちらに お返し ください。",
+    "tr": {
+      "zh": "【前台】回去的时候，请把入馆卡还到这里。",
+      "en": "[Reception] When you leave, please return your entry card here."
+    },
+    "why": {
+      "zh": "正式的告示里“……的时候”用「名詞＋の＋際に」。",
+      "en": "In a formal notice, \"when…\" is 「名詞＋の＋際に」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「とたん」只接动词た形，而且后面不能是请求。",
+        "en": "「とたん」 only follows a verb's た-form, and a request can't follow it."
+      },
+      {
+        "zh": "「最中に」是正在进行中途被打断，“回去的时候还卡”用不上。",
+        "en": "「最中に」 is about being interrupted mid-action; it doesn't fit returning a card when leaving."
+      },
+      {
+        "zh": "「次第」接动词ます形词干，不接「お帰りの」。",
+        "en": "「次第」 follows a ます-stem, not 「お帰りの」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l48-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson48#5"
+    ],
+    "difficulty": 2,
+    "stem": "この 機械を（　）際は、必ず 電源を 切って ください。",
+    "options": [
+      "掃除する",
+      "掃除して",
+      "掃除し",
+      "掃除しない"
+    ],
+    "answer": 0,
+    "full": "この 機械を 掃除する 際は、必ず 電源を 切って ください。",
+    "tr": {
+      "zh": "清扫这台机器时，请务必切断电源。",
+      "en": "When cleaning this machine, be sure to turn off the power."
+    },
+    "why": {
+      "zh": "动词接「際」用辞书形（或た形）：掃除する＋際は。",
+      "en": "A verb before 「際」 is in the dictionary (or た) form: 掃除する ＋ 際は."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "て形不能接「際」。",
+        "en": "The て-form can't come before 「際」."
+      },
+      {
+        "zh": "ます形词干接「次第」，不接「際」。",
+        "en": "The ます-stem goes with 「次第」, not 「際」."
+      },
+      {
+        "zh": "「掃除しない際」意思不通，提醒的是清扫时要断电。",
+        "en": "「掃除しない際」 (\"when not cleaning\") contradicts the warning about cleaning."
+      }
+    ]
+  },
+  {
+    "id": "n3-l48-015",
+    "type": "narabe",
+    "refs": [
+      "lesson48#5"
+    ],
+    "difficulty": 2,
+    "stem": "ホテルに [_] [_] [★] [_] 確認させて いただきます。",
+    "options": [
+      "パスポートを",
+      "する",
+      "チェックイン",
+      "際に"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "ホテルに チェックイン する 際に パスポートを 確認させて いただきます。",
+    "tr": {
+      "zh": "入住酒店时，我们需要查看您的护照。",
+      "en": "We'll need to check your passport when you check in at the hotel."
+    },
+    "why": {
+      "zh": "「ホテルに チェックイン する」＋「際に」，后接「パスポートを 確認させて いただきます」。★ 在第三格，是「際に」。",
+      "en": "「ホテルに チェックイン する」 ＋ 「際に」, then パスポートを 確認させて いただきます. The ★ is the third slot: 「際に」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l48-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson48#6",
+      "lesson48#1"
+    ],
+    "difficulty": 2,
+    "stem": "授業の 終わりの ベルが 鳴る（　）、学生たちは 教室を 飛び出した。",
+    "options": [
+      "か鳴らないかのうちに",
+      "とたん",
+      "次第",
+      "最中に"
+    ],
+    "answer": 0,
+    "full": "授業の 終わりの ベルが 鳴るか鳴らないかのうちに、学生たちは 教室を 飛び出した。",
+    "tr": {
+      "zh": "下课铃声刚一响，学生们就冲出了教室。",
+      "en": "Almost before the end-of-class bell had rung, the students rushed out of the classroom."
+    },
+    "why": {
+      "zh": "「鳴る」是辞书形，后面接「か鳴らないかのうちに」，表示几乎同时发生。",
+      "en": "「鳴る」 is the dictionary form, and 「か鳴らないかのうちに」 follows it: the two things happen almost at once."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「とたん」要接た形（鳴ったとたん），不接辞书形。",
+        "en": "「とたん」 needs the た-form (鳴ったとたん), not the dictionary form."
+      },
+      {
+        "zh": "「次第」接ます形词干，而且后面不能是过去发生的事。",
+        "en": "「次第」 follows the ます-stem and can't introduce a past event."
+      },
+      {
+        "zh": "「最中に」要接「ている」，“铃响”也不是持续的动作。",
+        "en": "「最中に」 needs 「ている」, and a bell ringing isn't an ongoing action here."
+      }
+    ]
+  },
+  {
+    "id": "n3-l48-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson48#6"
+    ],
+    "difficulty": 3,
+    "stem": "よほど 疲れて いたのか、彼は 電車の 席に（　）、もう 寝て いた。",
+    "options": [
+      "座るか座らないかのうちに",
+      "座り次第",
+      "座る際に",
+      "座って いる最中に"
+    ],
+    "answer": 0,
+    "full": "よほど 疲れて いたのか、彼は 電車の 席に 座るか座らないかのうちに、もう 寝て いた。",
+    "tr": {
+      "zh": "大概是太累了，他刚在电车座位上坐下，就已经睡着了。",
+      "en": "He must have been exhausted — he was asleep almost the instant he sat down on the train."
+    },
+    "why": {
+      "zh": "“刚坐下（几乎同时）就已经睡着了”，用「辞书形か ない形かのうちに」。",
+      "en": "He was asleep almost the instant he sat — 「辞書形か ない形かのうちに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「次第」后接说话人打算做的事，不能接已经发生的“睡着了”。",
+        "en": "「次第」 introduces a planned action, not something that had already happened."
+      },
+      {
+        "zh": "「際に」是正式的“……之际”，用于手续说明，“坐的时候已经睡着”不自然。",
+        "en": "「際に」 is a formal \"on the occasion of\" for procedures; it doesn't describe something happening instantly."
+      },
+      {
+        "zh": "「座っている最中に」是“正坐着的中途”，和“刚坐下就睡着”的瞬间感不符。",
+        "en": "「座っている最中に」 means \"in the middle of sitting\" — not the instant of sitting down."
+      }
+    ]
+  },
+  {
+    "id": "n3-l48-018",
+    "type": "narabe",
+    "refs": [
+      "lesson48#6"
+    ],
+    "difficulty": 2,
+    "stem": "家に [_] [★] [_] [_] 、雨が 激しく 降り出した。",
+    "options": [
+      "かのうちに",
+      "着く",
+      "着かない",
+      "か"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "家に 着くか 着かないかのうちに、雨が 激しく 降り出した。",
+    "tr": {
+      "zh": "刚一到家，雨就猛烈地下了起来。",
+      "en": "No sooner had I got home than it started pouring."
+    },
+    "why": {
+      "zh": "形式是「辞书形＋か＋ない形＋かのうちに」：着く か 着かない かのうちに。★ 在第二格，是「か」。",
+      "en": "The pattern is dictionary form ＋ か ＋ ない-form ＋ かのうちに: 着く か 着かない かのうちに. The ★ is the second slot: 「か」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

@@ -1,0 +1,430 @@
+[
+  {
+    "id": "n4-l23-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson23#1"
+    ],
+    "difficulty": 2,
+    "stem": "この パソコンは 先週 買った（　）なのに、もう こわれて しまった。",
+    "options": [
+      "ところ",
+      "ばかり",
+      "はず",
+      "こと"
+    ],
+    "answer": 1,
+    "full": "この パソコンは 先週 買った ばかり なのに、もう こわれて しまった。",
+    "tr": {
+      "zh": "这台电脑上周才刚买的，就已经坏了。",
+      "en": "I only bought this computer last week, and it's already broken."
+    },
+    "why": {
+      "zh": "「先週」是不久之前，说话人觉得“才买没多久”，用「たばかり」。「たばかり」可以指主观上觉得不久的一段时间。",
+      "en": "「先週」 is a little while ago, felt as \"only just\" — 「たばかり」, which can cover a period the speaker feels is recent."
+    },
+    "wrong": [
+      {
+        "zh": "「たところ」指的是“刚刚、此刻”，不能和「先週」（上周）一起用。",
+        "en": "「たところ」 means \"just this moment\"; it can't go with 「先週」 (last week)."
+      },
+      null,
+      {
+        "zh": "「買ったはずなのに」是“应该买了（却没买）”，和后面“已经坏了”接不上。",
+        "en": "「買ったはずなのに」 means \"I should have bought it (but didn't)\", which doesn't lead to \"it's already broken\"."
+      },
+      {
+        "zh": "「買ったことなのに」不是日语的说法。",
+        "en": "「買ったことなのに」 isn't a Japanese expression."
+      }
+    ]
+  },
+  {
+    "id": "n4-l23-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson23#1"
+    ],
+    "difficulty": 1,
+    "stem": "肉（　）食べないで、野菜も 食べなさい。",
+    "options": [
+      "しか",
+      "まで",
+      "ばかり",
+      "ほど"
+    ],
+    "answer": 2,
+    "full": "肉 ばかり 食べないで、野菜も 食べなさい。",
+    "tr": {
+      "zh": "别光吃肉，蔬菜也要吃。",
+      "en": "Don't eat nothing but meat — eat your vegetables too."
+    },
+    "why": {
+      "zh": "后面说「野菜も食べなさい」，前面是批评“净吃肉”，用「名词＋ばかり」（光是……，带不满）。",
+      "en": "「野菜も食べなさい」 shows the complaint is eating only meat — 「noun ＋ ばかり」 (nothing but, critical)."
+    },
+    "wrong": [
+      {
+        "zh": "「肉しか食べないで」意思是“只吃肉”，等于叫人只吃肉，和「野菜も食べなさい」矛盾。",
+        "en": "「肉しか食べないで」 means \"eating only meat\" — the opposite of telling someone to eat vegetables too."
+      },
+      {
+        "zh": "「肉まで食べないで」是“连肉都别吃”，和后面要求多吃东西的意思对不上。",
+        "en": "「肉まで食べないで」 means \"don't even eat meat\", which doesn't fit \"eat vegetables too\"."
+      },
+      null,
+      {
+        "zh": "「ほど」表示程度，「肉ほど食べないで」意思不通。",
+        "en": "「ほど」 marks degree; 「肉ほど食べないで」 makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n4-l23-003",
+    "type": "bunpou",
+    "refs": [
+      "lesson23#1"
+    ],
+    "difficulty": 2,
+    "stem": "テレビを 見て（　）いないで、早く 宿題を しなさい。",
+    "options": [
+      "しまって",
+      "ばかり",
+      "おいて",
+      "から"
+    ],
+    "answer": 1,
+    "full": "テレビを 見て ばかり いないで、早く 宿題を しなさい。",
+    "tr": {
+      "zh": "别光看电视了，快去写作业。",
+      "en": "Stop doing nothing but watch TV and do your homework."
+    },
+    "why": {
+      "zh": "不满“一直在做同一件事”用「て形＋ばかりいる」，否定命令是「てばかりいないで」（别光……）。",
+      "en": "Complaining that someone does nothing but one thing is 「て-form ＋ ばかりいる」; \"stop doing only that\" is 「てばかりいないで」."
+    },
+    "wrong": [
+      {
+        "zh": "「見てしまっていないで」不是自然的说法，「てしまう」也不表示“老是在做”。",
+        "en": "「見てしまっていないで」 isn't natural, and 「てしまう」 doesn't mean \"always doing\"."
+      },
+      null,
+      {
+        "zh": "「見ておいていないで」不成立，「ておく」是事先准备，和批评对不上。",
+        "en": "「見ておいていないで」 doesn't work; 「ておく」 is doing in advance, not a complaint."
+      },
+      {
+        "zh": "「見てからいないで」不是日语，「てから」后面要接下一个动作。",
+        "en": "「見てからいないで」 isn't Japanese; 「てから」 must be followed by the next action."
+      }
+    ]
+  },
+  {
+    "id": "n4-l23-004",
+    "type": "narabe",
+    "refs": [
+      "lesson23#1"
+    ],
+    "difficulty": 1,
+    "stem": "わたしは [_] [_] [★] [_]、まだ 仕事が よく わかりません。",
+    "options": [
+      "なので",
+      "入った",
+      "この 会社に",
+      "ばかり"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "わたしは この 会社に 入った ばかり なので、まだ 仕事が よく わかりません。",
+    "tr": {
+      "zh": "我刚进这家公司，所以对工作还不太懂。",
+      "en": "I've only just joined this company, so I don't really know the work yet."
+    },
+    "why": {
+      "zh": "この会社に ＋ 入った（た形）＋ ばかり ＋ なので。★ 在第三格，是「ばかり」。",
+      "en": "この会社に ＋ 入った (た-form) ＋ ばかり ＋ なので. The ★ is the third slot: 「ばかり」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l23-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson23#2"
+    ],
+    "difficulty": 1,
+    "stem": "A「もしもし、今 ちょっと 話せる？」\nB「ごめん、今から 出かける（　）なんだ。あとで 電話するね。」",
+    "options": [
+      "まま",
+      "ばかり",
+      "ところ",
+      "ほう"
+    ],
+    "answer": 2,
+    "full": "A「もしもし、今 ちょっと 話せる？」 B「ごめん、今から 出かける ところ なんだ。あとで 電話するね。」",
+    "tr": {
+      "zh": "A：喂，现在能聊一会儿吗？ B：抱歉，我正要出门。回头给你打电话。",
+      "en": "A: Hello, can you talk for a minute? B: Sorry, I'm just about to go out. I'll call you later."
+    },
+    "why": {
+      "zh": "「今から」＋ 辞书形：动作还没开始、马上要做，用「辞书形＋ところだ」（正要……）。",
+      "en": "「今から」 with the dictionary form: the action is about to start — 「dictionary form ＋ ところだ」 (just about to)."
+    },
+    "wrong": [
+      {
+        "zh": "「出かけるまま」不成立，「まま」接た形或名词の，表示保持原样。",
+        "en": "「出かけるまま」 doesn't work; 「まま」 follows the た-form or a noun and means \"as it is\"."
+      },
+      {
+        "zh": "「ばかり」表示“刚刚”时接た形，「出かけるばかり」不是“正要出门”。",
+        "en": "「ばかり」 for \"just did\" follows the た-form; 「出かけるばかり」 doesn't mean \"about to go out\"."
+      },
+      null,
+      {
+        "zh": "「出かけるほうなんだ」是“属于常出门的那一类”，和「今から」「あとで電話する」对不上。",
+        "en": "「出かけるほう」 means \"I'm the type who goes out\", which doesn't fit 「今から」 or calling back later."
+      }
+    ]
+  },
+  {
+    "id": "n4-l23-006",
+    "type": "bunpou",
+    "refs": [
+      "lesson23#2"
+    ],
+    "difficulty": 1,
+    "stem": "A「レポートは もう できましたか。」\nB「すみません、今 書いて いる（　）です。もう 少し 待って ください。」",
+    "options": [
+      "ところ",
+      "はず",
+      "こと",
+      "ばかり"
+    ],
+    "answer": 0,
+    "full": "A「レポートは もう できましたか。」 B「すみません、今 書いて いる ところ です。もう 少し 待って ください。」",
+    "tr": {
+      "zh": "A：报告写好了吗？ B：不好意思，我正在写。请再等一下。",
+      "en": "A: Is the report done yet? B: Sorry, I'm in the middle of writing it. Please wait a little longer."
+    },
+    "why": {
+      "zh": "「今」＋「ている」：动作正在进行中，用「ているところだ」（正在……）。",
+      "en": "「今」 with 「ている」: the action is in progress — 「ているところだ」 (in the middle of)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「書いているはずです」是推测别人“应该在写”，B 说的是自己，又说「すみません」，对不上。",
+        "en": "「書いているはずです」 guesses about someone else; B is talking about himself."
+      },
+      {
+        "zh": "「書いていることです」不是日语的说法。",
+        "en": "「書いていることです」 isn't a Japanese expression here."
+      },
+      {
+        "zh": "「書いているばかりです」不是“正在写”的意思，不能回答进度。",
+        "en": "「書いているばかりです」 doesn't mean \"in the middle of writing\"; it doesn't answer the question."
+      }
+    ]
+  },
+  {
+    "id": "n4-l23-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson23#2"
+    ],
+    "difficulty": 2,
+    "stem": "A「もう 駅に 着いた？」\nB「うん、今 着いた（　）だよ。5分で そっちへ 行くね。」",
+    "options": [
+      "まま",
+      "ところ",
+      "はず",
+      "こと"
+    ],
+    "answer": 1,
+    "full": "A「もう 駅に 着いた？」 B「うん、今 着いた ところ だよ。5分で そっちへ 行くね。」",
+    "tr": {
+      "zh": "A：到车站了吗？ B：嗯，刚到。5分钟后过去找你。",
+      "en": "A: Are you at the station yet? B: Yeah, I just got here. I'll be with you in five minutes."
+    },
+    "why": {
+      "zh": "「今」＋ た形：动作刚刚结束，用「たところだ」（刚……）。",
+      "en": "「今」 with the た-form: the action has just finished — 「たところだ」 (just did)."
+    },
+    "wrong": [
+      {
+        "zh": "「着いたままだよ」是“到了以后一直保持那个状态”，不是“刚到”，后面说要过去也不通。",
+        "en": "「着いたまま」 means \"still in the state of having arrived\", not \"just arrived\"."
+      },
+      null,
+      {
+        "zh": "「着いたはずだよ」是对别人的推测，B 说的是自己，又先说了「うん」，矛盾。",
+        "en": "「着いたはずだよ」 is a guess about someone else; B is talking about himself."
+      },
+      {
+        "zh": "「着いたことだよ」不是日语的说法。",
+        "en": "「着いたことだよ」 isn't a Japanese expression."
+      }
+    ]
+  },
+  {
+    "id": "n4-l23-008",
+    "type": "narabe",
+    "refs": [
+      "lesson23#2"
+    ],
+    "difficulty": 2,
+    "stem": "ちょうど 電話しようと [_] [_] [★] [_]、彼から 電話が 来た。",
+    "options": [
+      "に",
+      "ところ",
+      "思って",
+      "いた"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "ちょうど 電話しようと 思って いた ところ に、彼から 電話が 来た。",
+    "tr": {
+      "zh": "正想着要给他打电话，他就打来了。",
+      "en": "Just as I was thinking of calling him, he called me."
+    },
+    "why": {
+      "zh": "「正在……的时候，（发生了）」用「ているところに」：思って ＋ いた ＋ ところ ＋ に。★ 在第三格，是「ところ」。",
+      "en": "\"Right when I was…\" is 「ているところに」: 思って ＋ いた ＋ ところ ＋ に. The ★ is the third slot: 「ところ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l23-009",
+    "type": "bunpou",
+    "refs": [
+      "lesson23#3"
+    ],
+    "difficulty": 1,
+    "stem": "電車の 中に かさを 忘れて（　）。どうしよう。",
+    "options": [
+      "おきました",
+      "しまいました",
+      "ありました",
+      "みました"
+    ],
+    "answer": 1,
+    "full": "電車の 中に かさを 忘れて しまいました。どうしよう。",
+    "tr": {
+      "zh": "我把伞忘在电车上了。怎么办。",
+      "en": "I left my umbrella on the train. What do I do?"
+    },
+    "why": {
+      "zh": "「どうしよう」表示懊恼，做了不想发生的事，用表示遗憾的「てしまう」。",
+      "en": "「どうしよう」 shows dismay at something unwanted — the regret use of 「てしまう」."
+    },
+    "wrong": [
+      {
+        "zh": "「ておきました」是有意事先做好，故意把伞忘在车上不合理，也和「どうしよう」矛盾。",
+        "en": "「ておきました」 is doing on purpose in advance; you don't forget an umbrella on purpose."
+      },
+      null,
+      {
+        "zh": "「てある」要用「が」，表示有人有意做了留下的状态，和“忘了伞”的懊恼不符。",
+        "en": "「てある」 describes a deliberate result with 「が」; it doesn't fit forgetting something."
+      },
+      {
+        "zh": "「てみました」是“试着做”，不会“试着忘伞”。",
+        "en": "「てみました」 means \"tried doing\"; you don't try to forget an umbrella."
+      }
+    ]
+  },
+  {
+    "id": "n4-l23-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson23#3"
+    ],
+    "difficulty": 2,
+    "stem": "この 本は とても おもしろくて、一晩で 全部 読んで（　）。",
+    "options": [
+      "おきました",
+      "あります",
+      "しまいました",
+      "いきました"
+    ],
+    "answer": 2,
+    "full": "この 本は とても おもしろくて、一晩で 全部 読んで しまいました。",
+    "tr": {
+      "zh": "这本书太有意思了，一个晚上就全读完了。",
+      "en": "This book was so interesting that I read the whole thing in one night."
+    },
+    "why": {
+      "zh": "「一晩で全部」强调彻底做完，用表示完了的「てしまう」。",
+      "en": "「一晩で全部」 stresses doing it all the way through — the completion use of 「てしまう」."
+    },
+    "wrong": [
+      {
+        "zh": "「ておきました」是为了以后事先做好，前面的理由是“太有意思”，不是为了准备。",
+        "en": "「ておきました」 is preparing for later; the reason given is that the book was interesting, not preparation."
+      },
+      {
+        "zh": "「読んであります」是现在的结果状态，和「おもしろくて」「一晩で」这种过去的经过对不上。",
+        "en": "「読んであります」 is a present result state; it doesn't fit the story of reading it in one night."
+      },
+      null,
+      {
+        "zh": "「読んでいきました」是“读着离开/渐渐读下去”，和“一晚读完”对不上。",
+        "en": "「読んでいきました」 means \"read and then left / went on reading\", which doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n4-l23-011",
+    "type": "narabe",
+    "refs": [
+      "lesson23#3"
+    ],
+    "difficulty": 1,
+    "stem": "すみません、[_] [_] [★] [_] んです。",
+    "options": [
+      "しまった",
+      "割って",
+      "大切な",
+      "お皿を"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "すみません、大切な お皿を 割って しまった んです。",
+    "tr": {
+      "zh": "对不起，我把很珍贵的盘子打碎了。",
+      "en": "I'm sorry — I broke a precious plate."
+    },
+    "why": {
+      "zh": "大切な ＋ お皿を ＋ 割って ＋ しまった（遗憾）＋ んです。★ 在第三格，是「割って」。",
+      "en": "大切な ＋ お皿を ＋ 割って ＋ しまった (regret) ＋ んです. The ★ is the third slot: 「割って」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

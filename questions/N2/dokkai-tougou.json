@@ -1,0 +1,286 @@
+[
+  {
+    "id": "n2-dk-601",
+    "type": "tougou",
+    "difficulty": 2,
+    "intro": "新聞の相談欄に、「小学三年生の息子に習い事を四つさせているが、最近疲れている様子なので、やめさせるべきか迷っている」という相談が寄せられた。次のAとBは、それに対する回答である。",
+    "passage": "A\n習い事を通して得られるものは大きいと思います。スポーツで体力がつくだけでなく、学校とは違う友達ができたり、目標に向かって努力する経験をしたりできるからです。発表会や試合で緊張を乗り越えた経験は、子どもの自信にもつながります。ただ、四つというのは、小学三年生には少し多いかもしれません。疲れているのなら、全部やめさせるのではなく、数を減らしてはどうでしょうか。その際、どれを続けるかは親が決めるのではなく、息子さん本人に選ばせることが大切です。自分で選んだことなら、多少つらくても続けようという気持ちになるはずです。そうして続けることで身につく力は、きっと将来の役に立ちます。\nB\n子どもにとって、何もしない時間は決して無駄ではありません。友達と外で遊んだり、ぼんやり空想したりする中で、子どもは自分が本当に好きなことを見つけていくものです。習い事で毎日の予定が埋まっていると、そうした時間が失われてしまいます。大人でも、予定がぎっしり詰まった毎日が続けば、心に余裕がなくなるでしょう。子どもならなおさらです。息子さんが疲れているのは、体が休みを求めているサインではないでしょうか。思い切って、しばらくすべて休ませてみることをおすすめします。もちろん、息子さんが「これだけは続けたい」と言うものがあれば、無理にやめさせる必要はありません。まずは本人の話をよく聞いてみてください。",
+    "tr": {
+      "zh": "报纸的咨询栏收到一则咨询：「我让上小学三年级的儿子学了四门课外班，最近他看起来很累，我在犹豫要不要让他停掉。」下面的A和B是对此的回答。A：我认为通过课外班能得到的东西很多。不仅能通过运动增强体力，还能交到和学校不同的朋友，获得朝着目标努力的经验。在汇报演出或比赛中克服紧张的经历，也会让孩子更有自信。不过，四门对小学三年级来说也许有点多。如果他累了，不如不要全部停掉，而是减少数量。这时，继续哪一门不该由父母决定，让您儿子自己选很重要。如果是自己选的，即使有点辛苦，也会想坚持下去。这样坚持下来培养出的能力，将来一定有用。B：对孩子来说，什么都不做的时间绝不是浪费。孩子是在和朋友到外面玩、发呆幻想的过程中，找到自己真正喜欢的东西的。如果每天的日程都被课外班填满，这样的时间就失去了。即使是大人，如果日程排得满满的日子一直持续，心里也会失去从容吧。孩子就更不用说了。您儿子累了，难道不是身体需要休息的信号吗？我建议干脆让他把所有课外班都暂停一段时间。当然，如果您儿子说有「只有这个想继续」的，也没必要硬让他停。首先请好好听听他本人怎么说。",
+      "en": "A newspaper advice column received this question: 'My son, a third-grader, does four after-school lessons. Lately he seems tired, and I can't decide whether to make him quit.' A and B below are replies to it. A: I think lessons give children a great deal. Sport builds stamina, and beyond that they make friends outside school and learn what it is to work towards a goal. Getting through nerves at a recital or a match also builds a child's confidence. Still, four may be a little much for a third-grader. If he's tired, why not cut down rather than stop everything? The important thing is that your son, not you, chooses which ones to keep. If it's his own choice, he'll want to keep going even when it's a bit hard, and the strength he builds by sticking with it will surely help him later. B: Time spent doing nothing is never wasted for a child. It's while playing outside with friends or daydreaming that children discover what they really love. When every day is filled with lessons, that time is lost. Even adults lose their peace of mind when every day is packed; all the more so children. Isn't your son's tiredness a sign that his body wants a rest? I'd suggest boldly letting him take a break from all of them for a while. Of course, if there's one he says he wants to keep, there's no need to force him to stop. First, listen carefully to what he has to say."
+    },
+    "questions": [
+      {
+        "q": "AとBのどちらの回答にも述べられていることは何か。",
+        "options": [
+          "習い事は、子どもの将来に必ず役に立つ。",
+          "何もしない時間の中で、子どもは好きなことを見つける。",
+          "どうするかは、子ども本人の気持ちを聞いて決めたほうがいい。",
+          "疲れているなら、習い事はすべてやめさせたほうがいい。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "A说继续哪一门要「本人に選ばせる」，B说想继续的不必停、「本人の話をよく聞いて」，两人都主张尊重孩子本人的意见。",
+          "en": "A says let the son choose (「本人に選ばせる」); B says keep what he wants to continue and 「本人の話をよく聞いて」 — both want the child's own wishes to decide."
+        },
+        "wrong": [
+          {
+            "zh": "坚持带来的能力对将来有用，这只是A的观点，B没有提到。",
+            "en": "That lessons help in the future is only A's point; B doesn't make it."
+          },
+          {
+            "zh": "什么都不做的时间里找到喜欢的东西，这只是B的观点。",
+            "en": "Finding what you love in idle time is only B's point."
+          },
+          null,
+          {
+            "zh": "A明确说「全部やめさせるのではなく」；B也只是建议「しばらく」暂停，而且想继续的可以继续。",
+            "en": "A says explicitly 「全部やめさせるのではなく」, and B only suggests a break 「しばらく」, keeping any he wants to continue."
+          }
+        ]
+      },
+      {
+        "q": "習い事について、AとBはどのように考えているか。",
+        "options": [
+          "Aは数を減らすと体力が落ちると心配し、Bは疲れているなら全部やめるべきだと考えている。",
+          "Aは続けることで得られる力を重視し、Bは習い事のない自由な時間に価値があると考えている。",
+          "Aはどれを続けるかは親が決めるべきだと考え、Bは子どもに任せるべきだと考えている。",
+          "AもBも、小学三年生なら習い事は四つまでなら問題ないと考えている。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "A强调课外班带来的体力、朋友、努力的经验和坚持培养的能力；B强调什么都不做的时间不是浪费，孩子在其中找到真正喜欢的东西。",
+          "en": "A stresses what lessons give — stamina, friends, effort and the strength built by sticking with them; B stresses that free, idle time isn't wasted and is where children find what they love."
+        },
+        "wrong": [
+          {
+            "zh": "A没有担心体力下降；B建议的是「しばらく」暂停，不是全部放弃。",
+            "en": "A never worries about losing stamina, and B suggests only a temporary break (「しばらく」), not quitting for good."
+          },
+          null,
+          {
+            "zh": "正相反，A说「親が決めるのではなく」要让本人选。",
+            "en": "The opposite: A says 「親が決めるのではなく」 — the son should choose."
+          },
+          {
+            "zh": "A说四门「少し多いかもしれません」，B建议全部暂停，两人都没说四门没问题。",
+            "en": "A says four 「少し多いかもしれません」 and B suggests pausing them all; neither says four is fine."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-602",
+    "type": "tougou",
+    "difficulty": 2,
+    "intro": "次のAとBは、「現金が使えない店」について書かれた新聞のコラムである。",
+    "passage": "A\n最近、現金を受け付けず、カードやスマートフォンでの支払いだけにする店が増えている。店にとっては、レジでお釣りを数える手間が省け、閉店後に売上を計算する時間も大幅に短くなる。その分、接客や商品作りに力を入れられるのだから、合理的な判断だと言えるだろう。客にとっても、小銭を持ち歩かずに済むのはありがたい。一方で、カードを持たない高齢者などが店に入りにくくなるという指摘もある。しかし、これは時代の変化に伴う一時的な問題であり、使い方を教える機会を地域で増やしていけば、いずれは解決するはずだ。現金にこだわり続けることのほうが、店にとっても客にとっても損失は大きいのではないか。\nB\n「現金お断り」の店に出会うたび、少し寂しい気持ちになる。確かに、支払いが速くなり、店員の負担が減るという利点はあるのだろう。だが、店は来る客を選ぶべきではないと私は思う。スマートフォンを使いこなせない人もいれば、使いすぎを防ぐために、あえて現金で払いたいという人もいる。また、大きな災害で停電が起これば、電子決済はまったく使えなくなる。そのとき頼りになるのは現金である。そもそも、現金を扱う手間は、店が客へのサービスの一つとして引き受けてきたものではなかったか。便利さを追い求めるのはよいが、どちらでも払えるという選択肢は、残しておくべきではないだろうか。",
+    "tr": {
+      "zh": "下面的A和B是关于「不能用现金的店」的报纸专栏。A：最近，不收现金、只接受卡或手机支付的店越来越多。对店来说，省去了在收银台数找零的麻烦，关门后计算营业额的时间也大大缩短。省下的精力可以投入到接待顾客和制作商品上，可以说是合理的判断。对顾客来说，不用随身带零钱也很方便。另一方面，也有人指出没有卡的老年人等会变得不方便进店。但这是伴随时代变化的暂时问题，只要在地区里增加教人使用方法的机会，迟早会解决。一直执着于现金，对店和顾客来说损失反而更大吧。B：每次遇到「谢绝现金」的店，我都有点失落。确实，有支付变快、店员负担减轻的好处吧。但我认为，店不应该挑选来的顾客。有人不会熟练使用手机，也有人为了防止花钱过多，特意想用现金支付。而且，如果大灾害导致停电，电子支付就完全不能用了。那时可依靠的是现金。说到底，处理现金的麻烦，不正是店家作为对顾客的一种服务而一直承担下来的吗？追求便利是好事，但难道不应该保留「两种方式都能付」这个选择吗？",
+      "en": "A and B are newspaper columns about shops that don't take cash. A: More and more shops refuse cash and accept only cards or smartphone payments. For the shop, there's no counting out change at the till, and adding up the day's takings after closing takes far less time. That frees staff to put more into serving customers and making products, so it's a rational decision. Customers, too, are glad not to carry coins. On the other hand, some point out that elderly people without cards find it harder to use such shops. But this is a temporary problem that comes with changing times; if communities offer more chances to learn how to pay this way, it should eventually be solved. Clinging to cash may well cost both shops and customers more. B: Whenever I come across a 'no cash' shop, I feel a little sad. True, paying is quicker and the staff's workload is lighter. But I don't think a shop should pick its customers. Some people can't handle smartphones well, and others deliberately pay in cash so as not to overspend. And if a major disaster cuts the power, electronic payment stops working altogether. Then it's cash you can rely on. Besides, wasn't the trouble of handling cash something shops have always taken on as part of serving customers? Pursuing convenience is fine, but shouldn't the option of paying either way be kept?"
+    },
+    "questions": [
+      {
+        "q": "AとBのどちらの文章でも触れられていることは何か。",
+        "options": [
+          "災害で停電すると、電子決済が使えなくなること",
+          "現金を使わない支払いには、店の手間を減らす利点があること",
+          "高齢者に支払い方法を教える機会を増やすべきであること",
+          "現金で払うほうが、お金を使いすぎずに済むこと"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "A说省去数找零、计算营业额的麻烦；B也承认「店員の負担が減るという利点」。两篇都提到这一点。",
+          "en": "A mentions no counting change or takings; B grants 「店員の負担が減るという利点」. Both touch on it."
+        },
+        "wrong": [
+          {
+            "zh": "停电时电子支付不能用，只有B提到。",
+            "en": "Power cuts disabling electronic payment appear only in B."
+          },
+          null,
+          {
+            "zh": "增加教使用方法的机会是A的主张，B没有说。",
+            "en": "Teaching people how to pay is A's suggestion; B doesn't say it."
+          },
+          {
+            "zh": "为了防止花钱过多而用现金，只有B提到，而且B只是说有这样的人。",
+            "en": "Paying cash to avoid overspending is only in B, and B only says some people do so."
+          }
+        ]
+      },
+      {
+        "q": "現金が使えない店について、AとBはどのような立場をとっているか。",
+        "options": [
+          "AもBも、問題はあるが時代の流れとしてしかたがないと考えている。",
+          "Aは高齢者のために現金も使えるようにすべきだと考え、Bは便利さを優先すべきだと考えている。",
+          "AもBも、客にとっての利点はほとんどないと考えている。",
+          "Aは店の合理的な判断として認めているが、Bは現金でも払えるようにすべきだと考えている。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "A称之为「合理的な判断」，认为老人的问题是暂时的；B主张应保留「どちらでも払えるという選択肢」。",
+          "en": "A calls it 「合理的な判断」 and the elderly problem temporary; B wants to keep 「どちらでも払えるという選択肢」."
+        },
+        "wrong": [
+          {
+            "zh": "这只是A的看法；B认为店不应挑客人，主张保留现金。",
+            "en": "That's only A's view; B says shops shouldn't pick customers and wants cash kept."
+          },
+          {
+            "zh": "立场正好说反了。",
+            "en": "This reverses the two positions."
+          },
+          {
+            "zh": "A明确说不用带零钱对顾客也很方便。",
+            "en": "A says customers benefit from not carrying coins."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-603",
+    "type": "tougou",
+    "difficulty": 3,
+    "intro": "次のAとBは、「定年後も働き続けるべきか」というテーマで新聞に寄せられた投書である。",
+    "passage": "A\n私は六十五歳で会社を退職した後も、週に三日、近所のスーパーで働いている。お金のためというより、家にずっといると生活のリズムが崩れ、人と話す機会も減ってしまうからだ。退職してすぐのころは、毎日が日曜日のようで楽だったが、半年もすると何をしても張り合いがなくなった。働いていれば体を動かすし、若い同僚と話すことで、気持ちも若く保てる。もちろん、無理をして体を壊しては意味がない。だから、現役時代のような責任の重い仕事ではなく、自分のペースでできる仕事を選んだ。年を取っても社会とつながっていたいと思うなら、働くことはいちばん手軽な方法だと思う。\nB\n定年後も働くのが当たり前のように言われるが、私はそうは思わない。四十年近く働いてきたのだから、残りの人生は仕事以外のことに使ってもいいはずだ。私は退職後、地域のボランティアに参加し、若いころからやりたかった絵も習い始めた。毎日が忙しく、人と会う機会は会社員時代よりむしろ増えたくらいだ。会社での肩書きとは関係なく、一人の人間として人と付き合えるのも楽しい。社会とのつながりを保つ方法は、仕事だけではない。もちろん、生活のために働かなければならない人もいるだろう。ただ、そうでないなら、働くかどうかは本人が自由に決めればいいことだ。",
+    "tr": {
+      "zh": "下面的A和B是以「退休后是否应该继续工作」为题寄给报社的读者来信。A：我六十五岁从公司退休后，仍然每周三天在附近的超市工作。与其说是为了钱，不如说是因为一直待在家里，生活节奏会被打乱，和人说话的机会也会减少。刚退休时每天都像星期天一样轻松，可过了半年左右，做什么都提不起劲了。工作的话会活动身体，和年轻同事聊天也能让心态保持年轻。当然，勉强自己弄坏了身体就没有意义了。所以我选的不是在职时那样责任重的工作，而是能按自己节奏做的工作。如果上了年纪也想和社会保持联系，我认为工作是最简便的方法。B：人们说得好像退休后继续工作是理所当然的，我却不这么认为。工作了将近四十年，剩下的人生用在工作以外的事情上也应该可以。我退休后参加了地区的志愿活动，还开始学年轻时就想学的画画。每天都很忙，和人见面的机会甚至比上班时还多。能抛开公司里的头衔，作为一个普通人与人交往，也很愉快。保持与社会联系的方法不只是工作。当然，也会有为了生活不得不工作的人。但如果不是这样，工作与否由本人自由决定就好。",
+      "en": "A and B are letters to a newspaper on the theme 'Should people keep working after retirement age?' A: Since retiring from my company at 65, I've worked three days a week at a local supermarket. It's less about money than the fact that staying home all the time throws off the rhythm of my life and leaves me fewer chances to talk to people. Right after retiring, every day felt like Sunday and it was pleasant, but within six months nothing I did felt worthwhile. Working keeps me moving, and chatting with younger colleagues keeps me young at heart. Of course, there's no point overdoing it and ruining your health, so I chose a job I can do at my own pace rather than one with heavy responsibility like before. If you want to stay connected to society as you age, working is the easiest way. B: People talk as if working after retirement is a given, but I don't agree. After nearly forty years of work, I should be allowed to spend the rest of my life on things other than work. Since retiring I've joined local volunteer work and started painting lessons, which I'd wanted to do since I was young. Every day is busy, and I meet more people than I did as an office worker, if anything. It's also a pleasure to deal with people simply as myself, with no company title attached. Work is not the only way to stay connected to society. Of course, some people have to work to make a living. But if you don't, whether to work is yours to decide freely."
+    },
+    "questions": [
+      {
+        "q": "AとBに共通している考えはどれか。",
+        "options": [
+          "退職した後も、人や社会とのつながりを持つことは大切だ。",
+          "定年後は、責任の軽い仕事を選んだほうがいい。",
+          "定年後に働くのは、主に生活費のためである。",
+          "退職後は、若いころからの夢だった趣味を始めるといい。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "A说想和社会保持联系的话工作最简便；B说「社会とのつながりを保つ方法は、仕事だけではない」。两人都把与社会的联系当作重要的事。",
+          "en": "A works to stay connected to society; B says 「社会とのつながりを保つ方法は、仕事だけではない」. Both treat staying connected as important — they differ only on how."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "选责任轻的工作是A个人的做法，B没有谈到。",
+            "en": "Choosing a light-duty job is A's own choice; B doesn't discuss it."
+          },
+          {
+            "zh": "A说「お金のためというより」；B也只说有些人需要为生活工作。",
+            "en": "A says 「お金のためというより」, and B only notes that some people must work to live."
+          },
+          {
+            "zh": "开始学画画是B个人的经历，A没有提到。",
+            "en": "Taking up painting is B's own experience; A doesn't mention hobbies."
+          }
+        ]
+      },
+      {
+        "q": "定年後に働くことについて、AとBの考えはどう違うか。",
+        "options": [
+          "Aは働くべきだと強く主張しているが、Bは働くべきではないと主張している。",
+          "Aは体を壊すので働かないほうがいいと考え、Bは生活のために働くべきだと考えている。",
+          "Aは社会とつながるための手軽な方法だと考えているが、Bはほかの方法でもつながりは保てると考えている。",
+          "Aは自分のペースで働ける仕事は少ないと考え、Bは働くかどうかは会社が決めるべきだと考えている。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "A：工作是「いちばん手軽な方法」；B：通过志愿活动、学画画，见人的机会反而更多，联系不只靠工作。",
+          "en": "A: work is 「いちばん手軽な方法」. B: through volunteering and painting B meets more people than before — work isn't the only way."
+        },
+        "wrong": [
+          {
+            "zh": "B并没有说不应该工作，而是说由本人「自由に決めればいい」。",
+            "en": "B doesn't say people shouldn't work, only that it's theirs to 「自由に決めればいい」."
+          },
+          {
+            "zh": "A自己在工作，只是说不要勉强；B也没有主张为生活而工作。",
+            "en": "A does work, just not overdoing it; B doesn't argue for working to live."
+          },
+          null,
+          {
+            "zh": "A找到了按自己节奏的工作；B说由「本人」决定，不是公司。",
+            "en": "A found an at-your-own-pace job, and B says the person (「本人」) decides, not a company."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-604",
+    "type": "tougou",
+    "difficulty": 3,
+    "intro": "次のAとBは、観光客が増えすぎた町の問題について書かれた新聞記事の一部である。",
+    "passage": "A\n観光客が増えすぎて、住民の生活に影響が出ている町が少なくない。路線バスが観光客で満員になって住民が乗れなかったり、道路にごみが増えたりしている。こうした問題への対策として、観光客から一人数百円程度の料金を取るという案がある。集めたお金でごみ箱を増やしたり、臨時のバスを走らせたりすれば、住民の負担を減らせる。料金がかかることで、観光客が多少減ることも期待できるだろう。実際、海外の観光地には、すでにこうした料金を導入しているところもある。観光は町の大切な収入源であり、観光客を締め出すわけにはいかない。だからこそ、訪れる人にも費用の一部を負担してもらう仕組みが必要なのだ。\nB\n観光客から料金を取るという案には、慎重であるべきだと考える。数百円程度で観光客が減るとは思えず、混雑はそのまま残るだろう。それどころか、「お金を払ったのだから」と、遠慮なく振る舞う観光客が出てくるおそれもある。むしろ必要なのは、人の流れを分散させることだ。混雑する時間帯や場所の情報を発信したり、まだあまり知られていない地域の魅力を紹介したりすれば、一か所に人が集中するのを防げる。観光客が大勢訪れること自体は、町にとって本来喜ぶべきことである。問題は数ではなく、集まり方にあるのだ。住民と観光客がともに気持ちよく過ごせる町を目指したい。",
+    "tr": {
+      "zh": "下面的A和B是关于游客过多的城镇问题的报纸文章的一部分。A：因游客过多而影响居民生活的城镇不在少数。公交车被游客挤满，居民上不了车，路上的垃圾也增多了。作为对策，有人提出向游客每人收取几百日元左右的费用。用收来的钱增设垃圾箱、加开临时巴士，就能减轻居民的负担。也可以期待因为要收费，游客会减少一些。实际上，海外的一些旅游地已经引入了这样的收费。旅游是城镇重要的收入来源，不能把游客拒之门外。正因如此，才需要让来访者也承担一部分费用的机制。B：我认为对向游客收费的方案应该慎重。几百日元左右，我不认为游客会减少，拥挤依然会存在。不仅如此，还可能出现以「我付了钱」为由而肆无忌惮的游客。真正需要的是分散人流。发布拥挤时段和地点的信息，介绍还不太为人所知的地区的魅力，就能防止人们集中在一个地方。大量游客来访这件事本身，对城镇来说本来是值得高兴的。问题不在数量，而在聚集的方式。我希望建设一个居民和游客都能舒心度过的城镇。",
+      "en": "A and B are extracts from newspaper articles about towns with too many tourists. A: Quite a few towns now see residents' lives affected by excessive tourism. Buses fill up with tourists so residents can't board, and litter piles up on the streets. One proposed measure is to charge each visitor a few hundred yen. Using the money for more bins and extra buses would ease the burden on residents, and the charge might also reduce visitor numbers somewhat. Indeed, some tourist destinations abroad have already introduced such charges. Tourism is a vital source of income, and the town can't shut tourists out. That is exactly why we need a system in which visitors bear part of the cost. B: I think we should be cautious about charging tourists. I doubt a few hundred yen would reduce their numbers; the crowding would remain. Worse, some tourists might feel that having paid, they can behave as they please. What's needed instead is to spread the flow of people. Publishing information on crowded times and places and promoting lesser-known areas would stop people from concentrating in one spot. Many tourists visiting is, in itself, something a town should welcome. The problem is not the number but the way they gather. I want a town where residents and tourists can both feel at ease."
+    },
+    "questions": [
+      {
+        "q": "AとBのどちらにも述べられていることは何か。",
+        "options": [
+          "料金を取れば、観光客の数を減らすことができる。",
+          "混雑する時間や場所の情報を発信するべきだ。",
+          "集めたお金で、臨時のバスを走らせるべきだ。",
+          "観光客が町を訪れること自体は、町にとって望ましいことだ。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "A说旅游是重要收入、「締め出すわけにはいかない」；B说游客多「本来喜ぶべきこと」。两人都不否定游客来访本身。",
+          "en": "A calls tourism a vital income that can't be shut out (「締め出すわけにはいかない」); B says many visitors is 「本来喜ぶべきこと」. Neither objects to tourists coming as such."
+        },
+        "wrong": [
+          {
+            "zh": "A期待游客会减少一些，B却说「減るとは思えず」，看法相反。",
+            "en": "A hopes numbers fall a little, but B says 「減るとは思えず」 — they disagree."
+          },
+          {
+            "zh": "发布拥挤信息是B的方案，A没有提到。",
+            "en": "Publishing crowding information is B's idea; A doesn't mention it."
+          },
+          {
+            "zh": "用收来的钱加开巴士是A的方案，B反对收费。",
+            "en": "Extra buses paid for by the charge is A's plan; B is wary of charging at all."
+          },
+          null
+        ]
+      },
+      {
+        "q": "観光客から料金を取ることについて、AとBはどのように考えているか。",
+        "options": [
+          "AもBも、料金を取れば混雑の問題は解決すると考えている。",
+          "Aは住民の負担を減らす方法として必要だと考え、Bは混雑の解決にはつながらないと考えている。",
+          "Aは観光客が減りすぎることを心配して反対し、Bは町の収入を増やすために賛成している。",
+          "Aは料金をもっと高くするべきだと考え、Bは料金を取るかわりに観光客を増やすべきだと考えている。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "A认为收来的钱可以减轻居民负担，所以「仕組みが必要」；B认为几百日元不会让游客减少，「混雑はそのまま残る」。",
+          "en": "A says the money would ease residents' burden, so 「仕組みが必要」; B thinks a few hundred yen won't cut numbers and 「混雑はそのまま残る」."
+        },
+        "wrong": [
+          {
+            "zh": "B认为收费解决不了拥挤。",
+            "en": "B thinks charging won't solve the crowding."
+          },
+          null,
+          {
+            "zh": "A是赞成收费的，B是持慎重态度，立场说反了。",
+            "en": "A supports the charge and B is cautious — this reverses them."
+          },
+          {
+            "zh": "A没有说要提高金额；B主张的是分散人流，不是增加游客。",
+            "en": "A never asks for a higher charge, and B wants to spread visitors out, not attract more."
+          }
+        ]
+      }
+    ]
+  }
+]

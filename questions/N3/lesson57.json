@@ -1,0 +1,698 @@
+[
+  {
+    "id": "n3-l57-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson57#1"
+    ],
+    "difficulty": 1,
+    "stem": "留学中は 家族に 会えなくて、（　）寂しかった ことか。",
+    "options": [
+      "どんなに",
+      "決して",
+      "めったに",
+      "別に"
+    ],
+    "answer": 0,
+    "full": "留学中は 家族に 会えなくて、どんなに 寂しかった ことか。",
+    "tr": {
+      "zh": "留学期间见不到家人，那有多寂寞啊。",
+      "en": "While I was studying abroad I couldn't see my family — you can't imagine how lonely I was."
+    },
+    "why": {
+      "zh": "句尾「〜ことか」是感叹“多么……啊”，前面要和「どんなに」这样的疑问词一起用。",
+      "en": "Ending in 「〜ことか」 makes it an exclamation (how…!), which pairs with a question word like 「どんなに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「決して」后面要接否定，句中没有否定。",
+        "en": "「決して」 needs a negative, and there isn't one."
+      },
+      {
+        "zh": "「めったに」后面要接否定，表示“很少”。",
+        "en": "「めったに」 needs a negative (rarely)."
+      },
+      {
+        "zh": "「別に」后面要接否定，表示“并不特别”，和感叹的「ことか」不搭。",
+        "en": "「別に」 takes a negative (not particularly) and doesn't go with the exclamatory 「ことか」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l57-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson57#1"
+    ],
+    "difficulty": 2,
+    "stem": "合格の 通知が 届いた。この 日を 何年（　）。",
+    "options": [
+      "待った ことか",
+      "待った ことが ある",
+      "待つ ことに する",
+      "待った ものか"
+    ],
+    "answer": 0,
+    "full": "合格の 通知が 届いた。この 日を 何年 待った ことか。",
+    "tr": {
+      "zh": "合格通知寄到了。这一天我等了多少年啊。",
+      "en": "The pass letter has arrived. I've waited so many years for this day!"
+    },
+    "why": {
+      "zh": "「何年」＋「〜ことか」是感叹“等了多少年啊”，用「た形＋ことか」。",
+      "en": "「何年」 with 「〜ことか」 exclaims how many years it took — ta-form ＋ 「ことか」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「たことがある」是经验，不能和「何年」这样的疑问词直接构成句子。",
+        "en": "「たことがある」 is about experience and can't close a sentence with 「何年」 like this."
+      },
+      {
+        "zh": "「ことにする」是决定，“决定等多少年”意思不通，而且已经收到通知了。",
+        "en": "「ことにする」 is a decision — \"decide to wait how many years\" makes no sense, and the letter has already come."
+      },
+      {
+        "zh": "「ものか」是强烈否定“怎么会……”，和高兴的语境相反。",
+        "en": "「ものか」 is an emphatic denial, the opposite of this happy moment."
+      }
+    ]
+  },
+  {
+    "id": "n3-l57-003",
+    "type": "narabe",
+    "refs": [
+      "lesson57#1"
+    ],
+    "difficulty": 1,
+    "stem": "子供の ころ、この 映画を [_] [_] [★] [_] 。",
+    "options": [
+      "か",
+      "見た",
+      "何度",
+      "こと"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "子供の ころ、この 映画を 何度 見た こと か。",
+    "tr": {
+      "zh": "小时候这部电影我看了多少遍啊。",
+      "en": "As a kid, I watched this film more times than I can count!"
+    },
+    "why": {
+      "zh": "何度＋見た＋こと＋か，疑问词和「ことか」一起表示感叹。★ 在第三格，是「こと」。",
+      "en": "何度 ＋ 見た ＋ こと ＋ か — a question word with 「ことか」 makes the exclamation. The ★ is the third slot: 「こと」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l57-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson57#2"
+    ],
+    "difficulty": 1,
+    "stem": "朝から 何も 食べて いないので、お腹が すいて（　）。",
+    "options": [
+      "たまらない",
+      "かまわない",
+      "ほしい",
+      "みる"
+    ],
+    "answer": 0,
+    "full": "朝から 何も 食べて いないので、お腹が すいて たまらない。",
+    "tr": {
+      "zh": "从早上起什么都没吃，饿得受不了。",
+      "en": "I haven't eaten anything since this morning, so I'm absolutely starving."
+    },
+    "why": {
+      "zh": "一整天没吃东西，饥饿感强烈到忍不住，用「〜てたまらない」。",
+      "en": "No food all day — the hunger is unbearable, so 「〜てたまらない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「てもかまわない」才是“也没关系”，而且要有「も」；“饿也没关系”和语境不符。",
+        "en": "\"Don't mind\" would be 「てもかまわない」 with 「も」, and \"I don't mind being hungry\" doesn't fit."
+      },
+      {
+        "zh": "「てほしい」是希望别人做某事，“希望肚子饿”说不通。",
+        "en": "「てほしい」 wants someone else to do something; it makes no sense with being hungry."
+      },
+      {
+        "zh": "「てみる」是“试着做”，饿不是有意尝试的动作。",
+        "en": "「てみる」 means \"try doing\"; being hungry isn't something you try."
+      }
+    ]
+  },
+  {
+    "id": "n3-l57-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson57#2"
+    ],
+    "difficulty": 1,
+    "stem": "来週の 試験の ことが 心配（　）たまらない。",
+    "options": [
+      "で",
+      "な",
+      "に",
+      "くて"
+    ],
+    "answer": 0,
+    "full": "来週の 試験の ことが 心配 で たまらない。",
+    "tr": {
+      "zh": "担心下周的考试，担心得受不了。",
+      "en": "I'm terribly worried about next week's exam."
+    },
+    "why": {
+      "zh": "「心配」是な形容词，接「たまらない」用「で」：心配でたまらない。",
+      "en": "「心配」 is a na-adjective, so it joins 「たまらない」 with 「で」: 心配でたまらない."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「な」用于修饰名词，不能接「たまらない」。",
+        "en": "「な」 goes before nouns, not before 「たまらない」."
+      },
+      {
+        "zh": "「に」是副词形，「心配にたまらない」不成立。",
+        "en": "「に」 is adverbial; 「心配にたまらない」 isn't a form."
+      },
+      {
+        "zh": "「くて」是い形容词的形式，「心配」是な形容词。",
+        "en": "「くて」 is for i-adjectives; 「心配」 is a na-adjective."
+      }
+    ]
+  },
+  {
+    "id": "n3-l57-006",
+    "type": "narabe",
+    "refs": [
+      "lesson57#2"
+    ],
+    "difficulty": 1,
+    "stem": "最近 [_] [_] [★] [_] 。",
+    "options": [
+      "食べたくて",
+      "料理が",
+      "たまらない",
+      "国の 母の"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "最近 国の 母の 料理が 食べたくて たまらない。",
+    "tr": {
+      "zh": "最近特别想吃老家妈妈做的菜，想得受不了。",
+      "en": "Lately I've been dying to eat my mum's cooking back home."
+    },
+    "why": {
+      "zh": "国の母の＋料理が＋食べたくて＋たまらない。★ 在第三格，是「食べたくて」。",
+      "en": "国の母の ＋ 料理が ＋ 食べたくて ＋ たまらない. The ★ is the third slot: 「食べたくて」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l57-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson57#3"
+    ],
+    "difficulty": 2,
+    "stem": "一人で 海外に 行った 娘の ことが 心配で（　）。",
+    "options": [
+      "ならない",
+      "かまわない",
+      "すまない",
+      "ほしい"
+    ],
+    "answer": 0,
+    "full": "一人で 海外に 行った 娘の ことが 心配で ならない。",
+    "tr": {
+      "zh": "一个人去了国外的女儿，让我不由得担心。",
+      "en": "I can't stop worrying about my daughter, who's gone abroad on her own."
+    },
+    "why": {
+      "zh": "担心女儿的心情自然涌上来、控制不住，用「〜でならない」。",
+      "en": "The worry about her wells up and won't go away — 「〜でならない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「でもかまわない」要有「も」，而且“担心也没关系”不符合父母的心情。",
+        "en": "It would need 「も」 (でもかまわない), and \"I don't mind worrying\" isn't what a parent means."
+      },
+      {
+        "zh": "「ですまない」是“了事”，“用担心就了事”意思不通。",
+        "en": "「ですまない」 means \"it won't end at that\"; it makes no sense with worrying."
+      },
+      {
+        "zh": "「てほしい」接在动词て形后，不能接在「心配で」后面。",
+        "en": "「てほしい」 follows a verb te-form, not 「心配で」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l57-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson57#3"
+    ],
+    "difficulty": 2,
+    "stem": "この 歌を 聞くと、学生時代が 懐かし（　）ならない。",
+    "options": [
+      "くて",
+      "い",
+      "かった",
+      "さ"
+    ],
+    "answer": 0,
+    "full": "この 歌を 聞くと、学生時代が 懐かし くて ならない。",
+    "tr": {
+      "zh": "一听到这首歌，就不由得怀念学生时代。",
+      "en": "Whenever I hear this song, I can't help feeling nostalgic for my student days."
+    },
+    "why": {
+      "zh": "い形容词接「ならない」用「〜くて」：懐かしくてならない。",
+      "en": "An i-adjective joins 「ならない」 with 「〜くて」: 懐かしくてならない."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "い形容词原形不能直接接「ならない」。",
+        "en": "The plain i-adjective can't join 「ならない」 directly."
+      },
+      {
+        "zh": "过去形「懐かしかった」不能接「ならない」，而且「聞くと」是每次都会这样。",
+        "en": "The past 「懐かしかった」 can't take 「ならない」, and 「聞くと」 means every time."
+      },
+      {
+        "zh": "「懐かしさ」是名词，不能直接接「ならない」。",
+        "en": "「懐かしさ」 is a noun and can't take 「ならない」 directly."
+      }
+    ]
+  },
+  {
+    "id": "n3-l57-009",
+    "type": "narabe",
+    "refs": [
+      "lesson57#3"
+    ],
+    "difficulty": 2,
+    "stem": "明日の 面接の [_] [_] [★] [_] 。",
+    "options": [
+      "なって",
+      "ならない",
+      "ことが",
+      "気に"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "明日の 面接の ことが 気に なって ならない。",
+    "tr": {
+      "zh": "明天的面试让我不由得一直放心不下。",
+      "en": "I can't stop thinking about tomorrow's interview."
+    },
+    "why": {
+      "zh": "ことが＋気に＋なって＋ならない，「気になる」的て形接「ならない」。★ 在第三格，是「なって」。",
+      "en": "ことが ＋ 気に ＋ なって ＋ ならない — the te-form of 「気になる」 plus 「ならない」. The ★ is the third slot: 「なって」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l57-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson57#4"
+    ],
+    "difficulty": 1,
+    "stem": "A「すみません、この 席に 座っても（　）。」\nB「ええ、どうぞ。」",
+    "options": [
+      "かまいませんか",
+      "いけませんか",
+      "たまりませんか",
+      "なりませんか"
+    ],
+    "answer": 0,
+    "full": "A「すみません、この 席に 座っても かまいませんか。」 B「ええ、どうぞ。」",
+    "tr": {
+      "zh": "A：不好意思，我可以坐这个座位吗？ B：嗯，请坐。",
+      "en": "A: Excuse me, would you mind if I sat here? B: Not at all, go ahead."
+    },
+    "why": {
+      "zh": "B 回答「どうぞ」，A 是在礼貌地征求许可，用「〜てもかまいませんか」。",
+      "en": "B says 「どうぞ」, so A is politely asking permission: 「〜てもかまいませんか」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "禁止是「てはいけない」，「てもいけませんか」不成立。",
+        "en": "Prohibition is 「てはいけない」; 「てもいけませんか」 isn't a phrase."
+      },
+      {
+        "zh": "「たまらない」接て形，不接「ても」，也不是征求许可。",
+        "en": "「たまらない」 follows the te-form, not 「ても」, and doesn't ask permission."
+      },
+      {
+        "zh": "「ならない」接て形表示“不由得”，「てもなりませんか」不成立。",
+        "en": "「ならない」 follows the te-form (can't help…); 「てもなりませんか」 isn't a phrase."
+      }
+    ]
+  },
+  {
+    "id": "n3-l57-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson57#4"
+    ],
+    "difficulty": 2,
+    "stem": "サイズさえ 合えば、色は 何色（　）かまいません。",
+    "options": [
+      "でも",
+      "で",
+      "が",
+      "なら"
+    ],
+    "answer": 0,
+    "full": "サイズさえ 合えば、色は 何色 でも かまいません。",
+    "tr": {
+      "zh": "只要尺寸合适，颜色什么颜色都可以。",
+      "en": "As long as the size fits, any colour is fine."
+    },
+    "why": {
+      "zh": "疑问词＋「でも」＋かまいません＝“什么……都可以”：何色でもかまいません。",
+      "en": "Question word ＋ 「でも」 ＋ かまいません = \"any … is fine\": 何色でもかまいません."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「てもかまわない」的「も」不能省，「何色でかまいません」不成立。",
+        "en": "The 「も」 can't be dropped; 「何色でかまいません」 isn't correct."
+      },
+      {
+        "zh": "「何色がかまいません」不成立，「かまわない」前要用「でも」。",
+        "en": "「何色がかまいません」 doesn't work; 「かまわない」 needs 「でも」 before it."
+      },
+      {
+        "zh": "「何色なら」是问句的说法，后面要接问题，不接「かまいません」。",
+        "en": "「何色なら」 introduces a question, not 「かまいません」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l57-012",
+    "type": "narabe",
+    "refs": [
+      "lesson57#4"
+    ],
+    "difficulty": 2,
+    "stem": "レポートは [_] [_] [★] [_] 。",
+    "options": [
+      "なくても",
+      "手書き",
+      "かまいません",
+      "で"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "レポートは 手書き で なくても かまいません。",
+    "tr": {
+      "zh": "报告不是手写的也没关系。",
+      "en": "Your report doesn't have to be handwritten."
+    },
+    "why": {
+      "zh": "名词的否定「手書きでない」变成「手書きでなくても」＋かまいません。★ 在第三格，是「なくても」。",
+      "en": "The noun negative 「手書きでない」 becomes 「手書きでなくても」 ＋ かまいません. The ★ is the third slot: 「なくても」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l57-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson57#5"
+    ],
+    "difficulty": 1,
+    "stem": "いつもは 自転車で 通勤して いるが、雨の 日は バスで 行く（　）。",
+    "options": [
+      "ことが ある",
+      "ことか",
+      "ものか",
+      "わけには いかない"
+    ],
+    "answer": 0,
+    "full": "いつもは 自転車で 通勤して いるが、雨の 日は バスで 行く ことが ある。",
+    "tr": {
+      "zh": "平时骑自行车上班，下雨天有时会坐公交去。",
+      "en": "I usually cycle to work, but on rainy days I sometimes take the bus."
+    },
+    "why": {
+      "zh": "「いつもは……が、雨の日は」说明是偶尔的情况，用「辞书形＋ことがある」（有时会）。",
+      "en": "「いつもは…が、雨の日は」 marks the occasional exception — dictionary form ＋ 「ことがある」 (sometimes)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ことか」是感叹，要和「どんなに」等一起用，这里只是说明习惯。",
+        "en": "「ことか」 is an exclamation used with 「どんなに」 etc.; this just describes a habit."
+      },
+      {
+        "zh": "「ものか」是“怎么会……！”的强烈否定，和说明通勤方式对不上。",
+        "en": "「ものか」 is an emphatic \"as if!\", which doesn't fit describing a commute."
+      },
+      {
+        "zh": "「わけにはいかない」是“不能坐公交”，没有任何理由，和「いつもは……が」的对比也不符。",
+        "en": "「わけにはいかない」 (I can't take the bus) has no reason here and breaks the \"usually… but\" contrast."
+      }
+    ]
+  },
+  {
+    "id": "n3-l57-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson57#5"
+    ],
+    "difficulty": 2,
+    "stem": "日本に 来て もう 5年に なるが、今でも ときどき 道に（　）ことが ある。",
+    "options": [
+      "迷う",
+      "迷った",
+      "迷って",
+      "迷わず"
+    ],
+    "answer": 0,
+    "full": "日本に 来て もう 5年に なるが、今でも ときどき 道に 迷う ことが ある。",
+    "tr": {
+      "zh": "来日本已经 5 年了，到现在还时不时会迷路。",
+      "en": "I've been in Japan five years now, but I still get lost sometimes."
+    },
+    "why": {
+      "zh": "「今でもときどき」是现在偶尔发生的事，用「辞书形＋ことがある」。「た形＋ことがある」是过去的经验。",
+      "en": "「今でもときどき」 describes something that still happens now and then — dictionary form ＋ 「ことがある」. The ta-form version is past experience."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「迷ったことがある」是“迷过路（经验）”，和「今でもときどき」不符。",
+        "en": "「迷ったことがある」 is past experience (I've been lost before), which clashes with 「今でもときどき」."
+      },
+      {
+        "zh": "て形不能接「ことがある」。",
+        "en": "The te-form can't take 「ことがある」."
+      },
+      {
+        "zh": "「迷わず」是“不迷路地”，后面不能直接接「ことがある」。",
+        "en": "「迷わず」 (without getting lost) can't take 「ことがある」 directly."
+      }
+    ]
+  },
+  {
+    "id": "n3-l57-015",
+    "type": "narabe",
+    "refs": [
+      "lesson57#5"
+    ],
+    "difficulty": 2,
+    "stem": "たまに 寝坊して、[_] [_] [★] [_] 。",
+    "options": [
+      "ことが ある",
+      "食べずに",
+      "朝ご飯を",
+      "出かける"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "たまに 寝坊して、朝ご飯を 食べずに 出かける ことが ある。",
+    "tr": {
+      "zh": "偶尔睡过头，会不吃早饭就出门。",
+      "en": "Now and then I oversleep and head out without breakfast."
+    },
+    "why": {
+      "zh": "朝ご飯を＋食べずに＋出かける（辞书形）＋ことがある。★ 在第三格，是「出かける」。",
+      "en": "朝ご飯を ＋ 食べずに ＋ 出かける (dictionary form) ＋ ことがある. The ★ is the third slot: 「出かける」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l57-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson57#6"
+    ],
+    "difficulty": 2,
+    "stem": "家族と よく 話し合った（　）、会社を 辞めて 留学する ことに した。",
+    "options": [
+      "結果",
+      "せいで",
+      "うちに",
+      "くせに"
+    ],
+    "answer": 0,
+    "full": "家族と よく 話し合った 結果、会社を 辞めて 留学する ことに した。",
+    "tr": {
+      "zh": "和家人充分商量的结果，决定辞职去留学。",
+      "en": "After talking it over carefully with my family, I decided to quit my job and study abroad."
+    },
+    "why": {
+      "zh": "“充分商量”是过程，“决定留学”是由此得出的结论，用「た形＋結果」。",
+      "en": "Talking it over is the process and the decision is what came of it — ta-form ＋ 「結果」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「せいで」用于怪罪坏结果的原因，自己的决定不是要怪罪的坏事。",
+        "en": "「せいで」 blames a cause for something bad; one's own decision isn't that."
+      },
+      {
+        "zh": "「うちに」接辞书形、ない形或「ている」，不接「た形」。",
+        "en": "「うちに」 follows the dictionary form, nai-form or 「ている」, not the ta-form."
+      },
+      {
+        "zh": "「くせに」带责备，是说别人“明明……却”，和自己的决定不符。",
+        "en": "「くせに」 criticises someone (\"even though…\"); it doesn't fit my own decision."
+      }
+    ]
+  },
+  {
+    "id": "n3-l57-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson57#6"
+    ],
+    "difficulty": 1,
+    "stem": "健康診断（　）結果、少し 血圧が 高い ことが 分かった。",
+    "options": [
+      "の",
+      "な",
+      "で",
+      "に"
+    ],
+    "answer": 0,
+    "full": "健康診断 の 結果、少し 血圧が 高い ことが 分かった。",
+    "tr": {
+      "zh": "体检的结果显示血压有点高。",
+      "en": "My health check showed that my blood pressure is a little high."
+    },
+    "why": {
+      "zh": "名词接「結果」要用「の」：健康診断の結果。",
+      "en": "A noun joins 「結果」 with 「の」: 健康診断の結果."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「な」是な形容词的形式，「健康診断」是名词。",
+        "en": "「な」 is for na-adjectives; 「健康診断」 is a noun."
+      },
+      {
+        "zh": "「で」不能连接名词和「結果」。",
+        "en": "「で」 can't link a noun to 「結果」."
+      },
+      {
+        "zh": "「に」不能连接名词和「結果」。",
+        "en": "「に」 can't link a noun to 「結果」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l57-018",
+    "type": "narabe",
+    "refs": [
+      "lesson57#6"
+    ],
+    "difficulty": 2,
+    "stem": "何度も [_] [_] [★] [_] 完成した。",
+    "options": [
+      "繰り返した",
+      "新しい 薬が",
+      "結果",
+      "実験を"
+    ],
+    "order": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "full": "何度も 実験を 繰り返した 結果 新しい 薬が 完成した。",
+    "tr": {
+      "zh": "反复做了很多次实验，结果新药终于研制成功了。",
+      "en": "After repeating the experiments many times, the new drug was finally completed."
+    },
+    "why": {
+      "zh": "実験を＋繰り返した＋結果（过程→结果）＋新しい薬が（完成した）。★ 在第三格，是「結果」。",
+      "en": "実験を ＋ 繰り返した ＋ 結果 (process → result) ＋ 新しい薬が (完成した). The ★ is the third slot: 「結果」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

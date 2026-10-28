@@ -1,0 +1,270 @@
+[
+  {
+    "id": "n4-l28-001",
+    "type": "bunpou",
+    "refs": ["lesson28#1"],
+    "difficulty": 1,
+    "stem": "はじめまして。ABC会社の 田中と（　）。どうぞ よろしく お願いいたします。",
+    "options": ["申します", "おっしゃいます", "言われます", "申し上げます"],
+    "answer": 0,
+    "full": "はじめまして。ABC会社の 田中と 申します。どうぞ よろしく お願いいたします。",
+    "tr": {
+      "zh": "初次见面。我是 ABC 公司的田中。请多关照。",
+      "en": "How do you do? My name is Tanaka, from ABC Company. It's a pleasure to meet you."
+    },
+    "why": {
+      "zh": "自我介绍说自己的名字，用「言う」的謙譲語：固定说法「〜と申します」。",
+      "en": "Giving your own name uses the humble 「言う」 — the set phrase 「〜と申します」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「おっしゃる」是尊敬語，用来说自己的名字等于抬高自己。", "en": "「おっしゃる」 is 尊敬語; using it for your own name elevates yourself." },
+      { "zh": "「言われる」是轻度尊敬語（或被动），不能用于自我介绍。", "en": "「言われる」 is a light honorific (or passive) — not for introducing yourself." },
+      { "zh": "「申し上げる」用于向对方“禀告”内容，报自己的名字固定用「と申します」。", "en": "「申し上げる」 is for stating something up to the listener; for your name the set phrase is 「と申します」." }
+    ]
+  },
+  {
+    "id": "n4-l28-002",
+    "type": "bunpou",
+    "refs": ["lesson28#1"],
+    "difficulty": 1,
+    "stem": "学生「先生の 新しい 本を（　）。とても 勉強に なりました。」",
+    "options": ["拝見しました", "ご覧に なりました", "お見しました", "拝見されました"],
+    "answer": 0,
+    "full": "学生「先生の 新しい 本を 拝見しました。とても 勉強に なりました。」",
+    "tr": {
+      "zh": "学生：我拜读了老师的新书，受益匪浅。",
+      "en": "Student: I read your new book, Professor. I learned a great deal from it."
+    },
+    "why": {
+      "zh": "看书的是学生自己，对象是老师的书，用「見る」的謙譲語「拝見する」。",
+      "en": "The student is the one reading the professor's book, so it's the humble 「見る」: 「拝見する」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「ご覧になる」是尊敬語，不能用于自己的动作。", "en": "「ご覧になる」 is 尊敬語 and can't describe your own action." },
+      { "zh": "「見る」有特殊謙譲語「拝見する」，没有「お見します」这种说法。", "en": "「見る」 has the special humble 「拝見する」; 「お見します」 doesn't exist." },
+      { "zh": "「拝見される」把謙譲語和尊敬的「される」混在一起，是错误说法。", "en": "「拝見される」 mixes a humble verb with honorific 「される」 — incorrect." }
+    ]
+  },
+  {
+    "id": "n4-l28-003",
+    "type": "narabe",
+    "refs": ["lesson28#1"],
+    "difficulty": 2,
+    "stem": "来週の 月曜日、[_] [_] [★] [_] よろしいでしょうか。",
+    "options": ["先生の", "お宅に", "伺って", "も"],
+    "order": [0, 1, 2, 3],
+    "full": "来週の 月曜日、先生の お宅に 伺っても よろしいでしょうか。",
+    "tr": {
+      "zh": "下周一我可以去老师府上拜访吗？",
+      "en": "Would it be all right if I visited your home next Monday, Professor?"
+    },
+    "why": {
+      "zh": "「先生のお宅に」（去老师家）＋「伺っても」（「行く」的謙譲語＋ても）＋「よろしいでしょうか」征求许可。★ 在第三格，是「伺って」。",
+      "en": "「先生のお宅に」 (to your home) ＋ 「伺っても」 (humble 「行く」 ＋ ても) ＋ 「よろしいでしょうか」 asks permission. The ★ is the third slot: 「伺って」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n4-l28-004",
+    "type": "bunpou",
+    "refs": ["lesson28#2"],
+    "difficulty": 1,
+    "stem": "店員「お客様、重そうですね。その 荷物、私が（　）。」",
+    "options": ["お持ちします", "お持ちに なります", "お持ちください", "持たれます"],
+    "answer": 0,
+    "full": "店員「お客様、重そうですね。その 荷物、私が お持ちします。」",
+    "tr": {
+      "zh": "店员：客人，看起来很重呢。行李我来帮您拿。",
+      "en": "Clerk: That looks heavy. Let me carry that for you."
+    },
+    "why": {
+      "zh": "「私が」拿行李，是为客人做的自己的动作，用謙譲語模板「お＋ます形＋します」。",
+      "en": "「私が」 — the clerk is doing it for the customer, so the humble template お＋stem＋します."
+    },
+    "wrong": [
+      null,
+      { "zh": "「お〜になる」是尊敬語，不能用于「私が」的动作。", "en": "「お〜になる」 is 尊敬語 and can't go with 「私が」." },
+      { "zh": "「お持ちください」是“请您拿着”，和「私が」矛盾。", "en": "「お持ちください」 asks the customer to carry it, contradicting 「私が」." },
+      { "zh": "「持たれる」是轻度尊敬語，用在自己身上不对。", "en": "「持たれる」 is a light honorific — wrong for your own action." }
+    ]
+  },
+  {
+    "id": "n4-l28-005",
+    "type": "bunpou",
+    "refs": ["lesson28#2"],
+    "difficulty": 2,
+    "stem": "それでは、会議室まで 私が（　）。どうぞ こちらへ。",
+    "options": ["ご案内します", "お案内します", "ご案内に なります", "案内されます"],
+    "answer": 0,
+    "full": "それでは、会議室まで 私が ご案内します。どうぞ こちらへ。",
+    "tr": {
+      "zh": "那么，我带您去会议室。请这边走。",
+      "en": "Well then, I'll show you to the meeting room. This way, please."
+    },
+    "why": {
+      "zh": "带路的是「私」，用謙譲語模板。「案内」是汉语词，前面加「ご」：「ご＋汉语词＋します」。",
+      "en": "「私」 is guiding, so the humble template; 「案内」 is a Sino-Japanese word, so it takes 「ご」: ご＋word＋します."
+    },
+    "wrong": [
+      null,
+      { "zh": "汉语词「案内」前加「ご」，不加「お」。", "en": "Sino-Japanese 「案内」 takes 「ご」, not 「お」." },
+      { "zh": "「ご〜になる」是尊敬語，不能用于「私が」的动作。", "en": "「ご〜になる」 is 尊敬語 — not for 「私が」." },
+      { "zh": "「案内される」是尊敬或被动，用在自己身上不对。", "en": "「案内される」 is honorific or passive — wrong for your own action." }
+    ]
+  },
+  {
+    "id": "n4-l28-006",
+    "type": "narabe",
+    "refs": ["lesson28#2"],
+    "difficulty": 2,
+    "stem": "では、明日の 10時に [_] [_] [★] [_]。",
+    "options": ["ロビーで", "お待ち", "して", "おります"],
+    "order": [0, 1, 2, 3],
+    "full": "では、明日の 10時に ロビーで お待ち して おります。",
+    "tr": {
+      "zh": "那么，明天 10 点我在大堂等您。",
+      "en": "Then I'll be waiting for you in the lobby at ten tomorrow."
+    },
+    "why": {
+      "zh": "「ロビーで」（在大堂）＋謙譲語模板「お待ちする」＋「ております」（ています 的謙譲）。★ 在第三格，是「して」。",
+      "en": "「ロビーで」 (in the lobby) ＋ humble 「お待ちする」 ＋ 「ております」 (humble ています). The ★ is the third slot: 「して」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n4-l28-007",
+    "type": "bunpou",
+    "refs": ["lesson28#3"],
+    "difficulty": 1,
+    "stem": "（店の はり紙）\n本日は 都合により、午後 6時で 閉店（　）。",
+    "options": ["させて いただきます", "して いただきます", "させて くださいます", "されます"],
+    "answer": 0,
+    "full": "（店の はり紙） 本日は 都合により、午後 6時で 閉店させて いただきます。",
+    "tr": {
+      "zh": "（店里的告示）因故，本店今日下午 6 点关门。",
+      "en": "(Notice in a shop) Due to circumstances, we will be closing at 6 p.m. today."
+    },
+    "why": {
+      "zh": "关门的是店自己，用最郑重的说法“请允许我们……”：使役「閉店させる」＋「いただく」。",
+      "en": "The shop itself is closing, announced in the most deferential way, \"allow us to…\": causative 「閉店させる」 ＋ 「いただく」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「していただきます」是“请（客人）为我们关店”，动作主体变成了客人。", "en": "「していただきます」 would mean having the customers close the shop." },
+      { "zh": "「くださる」是别人给我做，主语是对方，不能用来宣布自己的决定。", "en": "「くださる」 is someone else doing it for you; it can't announce your own decision." },
+      { "zh": "「閉店されます」是尊敬語，用来说自己的店等于抬高自己。", "en": "「閉店されます」 is 尊敬語; using it for your own shop elevates yourself." }
+    ]
+  },
+  {
+    "id": "n4-l28-008",
+    "type": "bunpou",
+    "refs": ["lesson28#3"],
+    "difficulty": 2,
+    "stem": "すみません、この お店の 写真を 撮ら（　）も よろしいですか。",
+    "options": ["せて いただいて", "て いただいて", "れて いただいて", "させて いただいて"],
+    "answer": 0,
+    "full": "すみません、この お店の 写真を 撮らせて いただいても よろしいですか。",
+    "tr": {
+      "zh": "不好意思，可以让我拍一下这家店的照片吗？",
+      "en": "Excuse me, would it be all right if I took a photo of the shop?"
+    },
+    "why": {
+      "zh": "「撮る」是 1 类动词，使役形是「撮らせる」，后接「ていただく」：「撮らせていただいてもよろしいですか」。",
+      "en": "「撮る」 is a godan verb: causative 「撮らせる」, then 「ていただく」 → 「撮らせていただいてもよろしいですか」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「撮らて」不是任何动词形式，て形是「撮って」。", "en": "「撮らて」 isn't a verb form; the て-form is 「撮って」." },
+      { "zh": "「撮られて」是被动（被拍），不能表示“让我拍”。", "en": "「撮られて」 is passive (be photographed), not \"let me take\"." },
+      { "zh": "1 类动词使役是「ない形词干＋せる」，「撮らさせて」多了一个「さ」，是错误形式。", "en": "A godan causative is 「撮らせる」; 「撮らさせて」 has an extra 「さ」 and is wrong." }
+    ]
+  },
+  {
+    "id": "n4-l28-009",
+    "type": "narabe",
+    "refs": ["lesson28#3"],
+    "difficulty": 2,
+    "stem": "それでは、新しい 計画に ついて、[_] [_] [★] [_]。",
+    "options": ["私から", "説明", "させて", "いただきます"],
+    "order": [0, 1, 2, 3],
+    "full": "それでは、新しい 計画に ついて、私から 説明 させて いただきます。",
+    "tr": {
+      "zh": "那么，关于新计划，由我来为大家说明。",
+      "en": "Now, allow me to explain the new plan."
+    },
+    "why": {
+      "zh": "「私から」（由我）＋「説明させていただきます」（请允许我说明）。★ 在第三格，是「させて」。",
+      "en": "「私から」 (from me) ＋ 「説明させていただきます」 (allow me to explain). The ★ is the third slot: 「させて」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n4-l28-010",
+    "type": "bunpou",
+    "refs": ["lesson28#4", "lesson28#1"],
+    "difficulty": 3,
+    "stem": "（ABC会社の 受付で）\nお客様「田中部長は いらっしゃいますか。」\n受付「はい、ただ今 席に（　）ので、少々 お待ちください。」",
+    "options": ["おります", "いらっしゃいます", "ございます", "参ります"],
+    "answer": 0,
+    "full": "（ABC会社の 受付で） お客様「田中部長は いらっしゃいますか。」 受付「はい、ただ今 席に おりますので、少々 お待ちください。」",
+    "tr": {
+      "zh": "（在 ABC 公司前台）客人：田中部长在吗？ 前台：在的，他现在在座位上，请稍等。",
+      "en": "(At ABC Company's reception) Visitor: Is Mr. Tanaka, the manager, in? Receptionist: Yes, he's at his desk now. One moment, please."
+    },
+    "why": {
+      "zh": "对公司外的客人说自己公司的部长，部长属于“我方”，要用謙譲語。「いる」的謙譲語是「おる」。",
+      "en": "Talking to an outside visitor, the receptionist's own manager counts as \"our side\", so it's 謙譲語: 「いる」 → 「おる」."
+    },
+    "wrong": [
+      null,
+      { "zh": "对外人说自己公司的人不能用尊敬語「いらっしゃる」，否则等于在客人面前抬高自己人。", "en": "Using honorific 「いらっしゃる」 for your own colleague in front of a visitor raises your side above the guest." },
+      { "zh": "「ございます」是「ある」的郑重说法，用于物或事，不用于人在不在。", "en": "「ございます」 is the polite 「ある」, for things — not for whether a person is present." },
+      { "zh": "「参る」是“去/来”的謙譲語，不表示“在座位上”。", "en": "「参る」 is the humble \"go/come\"; it doesn't mean \"be at his desk\"." }
+    ]
+  },
+  {
+    "id": "n4-l28-011",
+    "type": "bunpou",
+    "refs": ["lesson28#4", "lesson28#2"],
+    "difficulty": 2,
+    "stem": "お客様「この ペン、使っても いいですか。」\n店員「はい、どうぞ（　）。」",
+    "options": ["お使いください", "お使いして ください", "お使いいたして ください", "使わせて いただいて ください"],
+    "answer": 0,
+    "full": "お客様「この ペン、使っても いいですか。」 店員「はい、どうぞ お使いください。」",
+    "tr": {
+      "zh": "客人：这支笔可以用吗？ 店员：可以，请用。",
+      "en": "Customer: May I use this pen? Clerk: Of course, please go ahead."
+    },
+    "why": {
+      "zh": "用笔的是客人，用尊敬語。请对方做某事的尊敬说法是「お＋ます形＋ください」→「お使いください」。",
+      "en": "The customer will use it, so 尊敬語; the honorific \"please do\" is お＋stem＋ください → 「お使いください」."
+    },
+    "wrong": [
+      null,
+      { "zh": "「お〜する」是謙譲語，用在客人的动作上就是贬低对方。", "en": "「お〜する」 is humble; using it for the customer's action lowers them." },
+      { "zh": "「お〜いたす」是更郑重的謙譲語，同样只能用于自己。", "en": "「お〜いたす」 is an even humbler form — still only for yourself." },
+      { "zh": "「させていただく」是“请允许我做”，主语是自己，不能请客人这样做。", "en": "「させていただく」 is \"allow me to\" — about yourself; it can't be a request to the customer." }
+    ]
+  },
+  {
+    "id": "n4-l28-012",
+    "type": "narabe",
+    "refs": ["lesson28#4", "lesson28#1"],
+    "difficulty": 3,
+    "stem": "先週 先生の お宅で、[_] [_] [★] [_] いただきました。",
+    "options": ["奥様が", "作って", "くださった", "料理を"],
+    "order": [0, 1, 2, 3],
+    "full": "先週 先生の お宅で、奥様が 作って くださった 料理を いただきました。",
+    "tr": {
+      "zh": "上周在老师家，吃了师母为我们做的菜。",
+      "en": "Last week at my professor's home, I had a meal his wife made for us."
+    },
+    "why": {
+      "zh": "师母做菜用尊敬的「作ってくださった」修饰「料理」，我吃用謙譲語「いただきました」。★ 在第三格，是「くださった」。",
+      "en": "The wife's cooking is honorific 「作ってくださった」, modifying 「料理」; my eating is humble 「いただきました」. The ★ is the third slot: 「くださった」."
+    },
+    "wrong": [null, null, null, null]
+  }
+]

@@ -1,0 +1,698 @@
+[
+  {
+    "id": "n5-l17-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson17#1"
+    ],
+    "difficulty": 1,
+    "stem": "あの 公園には きれいな 花が たくさん（　）。",
+    "options": [
+      "あります",
+      "います",
+      "です",
+      "なります"
+    ],
+    "answer": 0,
+    "full": "あの 公園には きれいな 花が たくさん あります。",
+    "tr": {
+      "zh": "那个公园里有很多漂亮的花。",
+      "en": "There are lots of beautiful flowers in that park."
+    },
+    "why": {
+      "zh": "“某处有某物”用「〜に〜がある」；花是植物，日语里植物用「ある」。",
+      "en": "\"There is … at …\" is 「〜に〜がある」; plants count as non-living in Japanese, so 「ある」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「いる」用于人和动物，植物虽然有生命，也要用「ある」。",
+        "en": "「いる」 is for people and animals; plants take 「ある」."
+      },
+      {
+        "zh": "「です」不表示存在，「花がたくさんです」不能说“公园里有花”。",
+        "en": "「です」 doesn't express existence; it can't say the park has flowers."
+      },
+      {
+        "zh": "「なります」是“变成”，前面要有「に/く」，这里说的是存在。",
+        "en": "「なります」 means \"become\" and needs 「に/く」; this sentence is about existence."
+      }
+    ]
+  },
+  {
+    "id": "n5-l17-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson17#1"
+    ],
+    "difficulty": 1,
+    "stem": "A「田中さんは どこですか。」\nB「となりの 部屋に（　）よ。」",
+    "options": [
+      "います",
+      "あります",
+      "です",
+      "なります"
+    ],
+    "answer": 0,
+    "full": "A「田中さんは どこですか。」 B「となりの 部屋に いますよ。」",
+    "tr": {
+      "zh": "A：田中在哪儿？ B：在隔壁房间哦。",
+      "en": "A: Where's Tanaka? B: In the next room."
+    },
+    "why": {
+      "zh": "田中是人，表示人在某处用「場所に いる」。",
+      "en": "Tanaka is a person, so his location is 「place に いる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ある」用于无生命的东西，人要用「いる」。",
+        "en": "「ある」 is for non-living things; a person takes 「いる」."
+      },
+      {
+        "zh": "「部屋にです」不成立；要用「です」得说「となりの部屋です」，不加「に」。",
+        "en": "「部屋にです」 isn't a form; with 「です」 you'd say 「となりの部屋です」 without 「に」."
+      },
+      {
+        "zh": "「なります」是“变成”，和问人在哪里接不上。",
+        "en": "「なります」 means \"become\"; it doesn't answer where someone is."
+      }
+    ]
+  },
+  {
+    "id": "n5-l17-003",
+    "type": "narabe",
+    "refs": [
+      "lesson17#1"
+    ],
+    "difficulty": 1,
+    "stem": "池の 中に [_] [_] [★] [_] よ。",
+    "options": [
+      "が",
+      "魚",
+      "います",
+      "赤い"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "池の 中に 赤い 魚が いますよ。",
+    "tr": {
+      "zh": "池塘里有红色的鱼哦。",
+      "en": "There are red fish in the pond."
+    },
+    "why": {
+      "zh": "「場所に＋生物＋が＋いる」：赤い 魚 が います。鱼是动物，用「いる」。★ 在第三格，是「が」。",
+      "en": "「place に ＋ living thing ＋ が ＋ いる」: 赤い 魚 が います — fish are animals, so 「いる」. The ★ is the third slot: 「が」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l17-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson17#2"
+    ],
+    "difficulty": 1,
+    "stem": "あした 図書館へ 本を 借り（　）行きます。",
+    "options": [
+      "に",
+      "で",
+      "を",
+      "へ"
+    ],
+    "answer": 0,
+    "full": "あした 図書館へ 本を 借りに 行きます。",
+    "tr": {
+      "zh": "明天去图书馆借书。",
+      "en": "Tomorrow I'll go to the library to borrow books."
+    },
+    "why": {
+      "zh": "“去做某事”：ます形（借り）＋「に」＋行く，「に」表示移动的目的。",
+      "en": "\"Go to do\": ます-stem (借り) ＋ 「に」 ＋ 行く — 「に」 marks the purpose of the movement."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「で」不表示目的，ます形后面接「で」不成立。",
+        "en": "「で」 doesn't mark purpose; it can't follow the ます-stem here."
+      },
+      {
+        "zh": "「を」是宾语助词，不能接在ます形「借り」后面。",
+        "en": "「を」 marks an object; it can't follow the ます-stem 「借り」."
+      },
+      {
+        "zh": "「へ」表示方向，接地点名词（図書館へ），不接ます形。",
+        "en": "「へ」 marks a direction after a place (図書館へ), not after a ます-stem."
+      }
+    ]
+  },
+  {
+    "id": "n5-l17-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson17#2"
+    ],
+    "difficulty": 1,
+    "stem": "日曜日、友だちと 映画を（　）に 行きました。",
+    "options": [
+      "見",
+      "見る",
+      "見て",
+      "見た"
+    ],
+    "answer": 0,
+    "full": "日曜日、友だちと 映画を 見に 行きました。",
+    "tr": {
+      "zh": "星期天和朋友去看电影了。",
+      "en": "On Sunday I went to see a movie with a friend."
+    },
+    "why": {
+      "zh": "「に行く」前面接ます形去「ます」：見ます → 見＋に行く。",
+      "en": "「に行く」 follows the ます-stem: 見ます → 見 ＋ に行く."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "辞书形「見る」接「に行く」不成立（「見るために行く」才用辞书形）。",
+        "en": "The dictionary form 「見る」 doesn't take 「に行く」 (it goes with 「ために」)."
+      },
+      {
+        "zh": "て形「見て」不能接「に行く」。",
+        "en": "The て-form 「見て」 can't take 「に行く」."
+      },
+      {
+        "zh": "た形「見た」不能接「に行く」。",
+        "en": "The た-form 「見た」 can't take 「に行く」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l17-006",
+    "type": "narabe",
+    "refs": [
+      "lesson17#2"
+    ],
+    "difficulty": 2,
+    "stem": "さいふを 忘れたので、[_] [_] [★] [_]。",
+    "options": [
+      "帰りました",
+      "取り",
+      "家へ",
+      "に"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "さいふを 忘れたので、家へ 取りに 帰りました。",
+    "tr": {
+      "zh": "因为忘了钱包，回家去拿了。",
+      "en": "I forgot my wallet, so I went home to get it."
+    },
+    "why": {
+      "zh": "「家へ」是方向，「取り（ます形）＋に＋帰る」表示回去的目的。★ 在第三格，是「に」。",
+      "en": "「家へ」 is the direction; 「取り (ます-stem) ＋ に ＋ 帰る」 gives the purpose of going back. The ★ is the third slot: 「に」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l17-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson17#3"
+    ],
+    "difficulty": 1,
+    "stem": "わたしは 本を（　）のが 好きです。",
+    "options": [
+      "読む",
+      "読み",
+      "読んで",
+      "読みます"
+    ],
+    "answer": 0,
+    "full": "わたしは 本を 読むのが 好きです。",
+    "tr": {
+      "zh": "我喜欢读书。",
+      "en": "I like reading books."
+    },
+    "why": {
+      "zh": "「のが好き」前面接动词辞书形，「の」把动词变成名词：読む＋のが好き。",
+      "en": "「のが好き」 follows the dictionary form; 「の」 turns the verb into a noun: 読む ＋ のが好き."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "ます形「読み」不能接「の」。",
+        "en": "The ます-stem 「読み」 can't take 「の」."
+      },
+      {
+        "zh": "て形「読んで」不能接「の」。",
+        "en": "The て-form 「読んで」 can't take 「の」."
+      },
+      {
+        "zh": "「読みます」是敬体，名词化的「の」前面要用简体（辞书形）。",
+        "en": "「読みます」 is polite; the nominalizing 「の」 needs the plain dictionary form."
+      }
+    ]
+  },
+  {
+    "id": "n5-l17-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson17#3"
+    ],
+    "difficulty": 2,
+    "stem": "田中さんは 料理を 作るのが（　）です。田中さんの 料理は いつも おいしいです。",
+    "options": [
+      "上手",
+      "下手",
+      "苦手",
+      "ほしい"
+    ],
+    "answer": 0,
+    "full": "田中さんは 料理を 作るのが 上手です。田中さんの 料理は いつも おいしいです。",
+    "tr": {
+      "zh": "田中做菜做得很好。田中做的菜总是很好吃。",
+      "en": "Tanaka is good at cooking. Tanaka's food is always delicious."
+    },
+    "why": {
+      "zh": "后一句说“做的菜总是好吃”，评价别人做得好用「上手」。",
+      "en": "The next sentence says the food is always good — praising someone else's skill is 「上手」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「下手」是做得差，和“总是好吃”矛盾。",
+        "en": "「下手」 means bad at it, which contradicts \"always delicious\"."
+      },
+      {
+        "zh": "「苦手」是不擅长，和“总是好吃”矛盾。",
+        "en": "「苦手」 means not good at it, which contradicts \"always delicious\"."
+      },
+      {
+        "zh": "「ほしい」用于想要某个东西（Nがほしい），不能接「〜のが」表示做事。",
+        "en": "「ほしい」 is for wanting a thing (Nがほしい); it doesn't follow 「〜のが」 for an action."
+      }
+    ]
+  },
+  {
+    "id": "n5-l17-009",
+    "type": "narabe",
+    "refs": [
+      "lesson17#3"
+    ],
+    "difficulty": 1,
+    "stem": "弟は [_] [★] [_] [_]。",
+    "options": [
+      "のが",
+      "絵を",
+      "下手です",
+      "かく"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "弟は 絵を かくのが 下手です。",
+    "tr": {
+      "zh": "弟弟画画画得不好。",
+      "en": "My younger brother is bad at drawing."
+    },
+    "why": {
+      "zh": "「絵をかく」（辞书形）＋「のが」＋「下手です」。★ 在第二格，是「かく」。",
+      "en": "「絵をかく」 (dictionary form) ＋ 「のが」 ＋ 「下手です」. The ★ is the second slot: 「かく」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l17-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson17#4"
+    ],
+    "difficulty": 1,
+    "stem": "毎日 2時間（　）日本語を 勉強して います。",
+    "options": [
+      "ぐらい",
+      "ごろ",
+      "に",
+      "が"
+    ],
+    "answer": 0,
+    "full": "毎日 2時間ぐらい 日本語を 勉強して います。",
+    "tr": {
+      "zh": "每天学大约两个小时日语。",
+      "en": "I study Japanese for about two hours every day."
+    },
+    "why": {
+      "zh": "「2時間」是时长，表示“大约多长时间”用「ぐらい」。",
+      "en": "「2時間」 is a length of time, and \"about\" with an amount is 「ぐらい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ごろ」接时间点（2時ごろ），「2時間」是时长，不用「ごろ」。",
+        "en": "「ごろ」 goes with a point in time (2時ごろ); 「2時間」 is a duration."
+      },
+      {
+        "zh": "「に」接时间点（7時に），时长「2時間」后面不加「に」。",
+        "en": "「に」 marks a point in time (7時に); a duration like 「2時間」 takes no 「に」."
+      },
+      {
+        "zh": "「が」是主语助词，「2時間が勉強して」不成立。",
+        "en": "「が」 marks a subject; 「2時間が勉強して」 makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n5-l17-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson17#4"
+    ],
+    "difficulty": 1,
+    "stem": "東京から 大阪まで 新幹線で 3時間（　）かかります。",
+    "options": [
+      "ぐらい",
+      "ごろ",
+      "まで",
+      "から"
+    ],
+    "answer": 0,
+    "full": "東京から 大阪まで 新幹線で 3時間ぐらい かかります。",
+    "tr": {
+      "zh": "从东京到大阪坐新干线大约要三个小时。",
+      "en": "It takes about three hours from Tokyo to Osaka by shinkansen."
+    },
+    "why": {
+      "zh": "「かかります」说的是花多长时间，「3時間」是时长，用「ぐらい」表示大约。",
+      "en": "「かかります」 is about how long it takes; 「3時間」 is a duration, so \"about\" is 「ぐらい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ごろ」只接时间点（3時ごろ），不接时长「3時間」。",
+        "en": "「ごろ」 only goes with a point in time (3時ごろ), not a duration."
+      },
+      {
+        "zh": "「3時間までかかります」不成立，「まで」表示终点，不能表示“大约”。",
+        "en": "「まで」 marks an end point and can't mean \"about\"; 「3時間までかかります」 doesn't work."
+      },
+      {
+        "zh": "「3時間からかかります」不成立，「から」表示起点。",
+        "en": "「から」 marks a starting point; 「3時間からかかります」 doesn't work."
+      }
+    ]
+  },
+  {
+    "id": "n5-l17-012",
+    "type": "narabe",
+    "refs": [
+      "lesson17#4"
+    ],
+    "difficulty": 1,
+    "stem": "駅まで [_] [_] [★] [_]。",
+    "options": [
+      "かかります",
+      "ぐらい",
+      "歩いて",
+      "10分"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "駅まで 歩いて 10分ぐらい かかります。",
+    "tr": {
+      "zh": "走到车站大约要十分钟。",
+      "en": "It takes about ten minutes to walk to the station."
+    },
+    "why": {
+      "zh": "「歩いて」（走路）表示方式，「10分ぐらい」（大约十分钟）＋「かかります」。★ 在第三格，是「ぐらい」。",
+      "en": "「歩いて」 (on foot) is the means, then 「10分ぐらい」 (about ten minutes) ＋ 「かかります」. The ★ is the third slot: 「ぐらい」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l17-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson17#5"
+    ],
+    "difficulty": 2,
+    "stem": "東京（　）京都など、日本の いろいろな 町へ 行きたいです。",
+    "options": [
+      "や",
+      "の",
+      "を",
+      "が"
+    ],
+    "answer": 0,
+    "full": "東京や 京都など、日本の いろいろな 町へ 行きたいです。",
+    "tr": {
+      "zh": "想去东京、京都等日本的各种城市。",
+      "en": "I want to go to various cities in Japan, like Tokyo and Kyoto."
+    },
+    "why": {
+      "zh": "后面有「など」和「いろいろな町」，只是举几个例子，部分列举用「AやBなど」。",
+      "en": "「など」 and 「いろいろな町」 show these are only examples — partial listing is 「AやBなど」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「東京の京都」是“东京的京都”，意思不通。",
+        "en": "「東京の京都」 would mean \"Tokyo's Kyoto\", which makes no sense."
+      },
+      {
+        "zh": "「を」是宾语助词，不能连接两个名词。",
+        "en": "「を」 marks an object; it can't link two nouns."
+      },
+      {
+        "zh": "「が」是主语助词，不能连接两个名词。",
+        "en": "「が」 marks a subject; it can't link two nouns."
+      }
+    ]
+  },
+  {
+    "id": "n5-l17-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson17#5"
+    ],
+    "difficulty": 2,
+    "stem": "かばんの 中には 本（　）ペンが あります。ほかの ものは ありません。",
+    "options": [
+      "と",
+      "や",
+      "か",
+      "も"
+    ],
+    "answer": 0,
+    "full": "かばんの 中には 本と ペンが あります。ほかの ものは ありません。",
+    "tr": {
+      "zh": "包里有书和笔。没有别的东西。",
+      "en": "In the bag there's a book and a pen. Nothing else."
+    },
+    "why": {
+      "zh": "后一句说“没有别的东西”，说明全部列出来了，穷举用「と」。",
+      "en": "The next sentence says there's nothing else, so the list is complete — that's 「と」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「や」暗示还有别的东西，和“没有别的东西”矛盾。",
+        "en": "「や」 implies there's more, which contradicts \"nothing else\"."
+      },
+      {
+        "zh": "「か」是“或者”，说不清到底有哪一样，和后一句对不上。",
+        "en": "「か」 means \"or\", which doesn't fit a definite list of contents."
+      },
+      {
+        "zh": "「も」是“也”，「本もペンが」不成立。",
+        "en": "「も」 means \"also\"; 「本もペンが」 isn't grammatical."
+      }
+    ]
+  },
+  {
+    "id": "n5-l17-015",
+    "type": "narabe",
+    "refs": [
+      "lesson17#5"
+    ],
+    "difficulty": 2,
+    "stem": "机の 上に [_] [_] [★] [_] あります。",
+    "options": [
+      "など",
+      "が",
+      "ノート",
+      "本や"
+    ],
+    "order": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "full": "机の 上に 本や ノートなどが あります。",
+    "tr": {
+      "zh": "桌子上有书、笔记本等。",
+      "en": "On the desk there are books, notebooks and so on."
+    },
+    "why": {
+      "zh": "「本や ノート など」是部分列举，后接「が あります」。★ 在第三格，是「など」。",
+      "en": "「本や ノート など」 is a partial list, followed by 「が あります」. The ★ is the third slot: 「など」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l17-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson17#6"
+    ],
+    "difficulty": 1,
+    "stem": "A「たくさん 食べましたか。」\nB「いいえ、少し（　）食べました。」",
+    "options": [
+      "だけ",
+      "しか",
+      "も",
+      "ごろ"
+    ],
+    "answer": 0,
+    "full": "A「たくさん 食べましたか。」 B「いいえ、少しだけ 食べました。」",
+    "tr": {
+      "zh": "A：吃了很多吗？ B：没有，只吃了一点。",
+      "en": "A: Did you eat a lot? B: No, I only ate a little."
+    },
+    "why": {
+      "zh": "“只吃了一点”，动词是肯定「食べました」，限定用「だけ」。",
+      "en": "\"Only a little\" with a positive verb 「食べました」 is 「だけ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「しか」后面必须接否定（少ししか食べませんでした），这里是肯定。",
+        "en": "「しか」 needs a negative (少ししか食べませんでした), but the verb is positive."
+      },
+      {
+        "zh": "「少しも」后面要接否定，表示“一点也不”，和肯定「食べました」不搭。",
+        "en": "「少しも」 needs a negative (not at all), so it clashes with 「食べました」."
+      },
+      {
+        "zh": "「ごろ」接时间点（3時ごろ），不接「少し」。",
+        "en": "「ごろ」 goes with a point in time (3時ごろ), not 「少し」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l17-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson17#6"
+    ],
+    "difficulty": 2,
+    "stem": "どうしよう。さいふの 中に 100円（　）ありません。",
+    "options": [
+      "しか",
+      "だけ",
+      "や",
+      "ごろ"
+    ],
+    "answer": 0,
+    "full": "どうしよう。さいふの 中に 100円しか ありません。",
+    "tr": {
+      "zh": "怎么办，钱包里只有100日元。",
+      "en": "What do I do? I only have 100 yen in my wallet."
+    },
+    "why": {
+      "zh": "动词是否定「ありません」，又有「どうしよう」的着急语气，“只有……（太少）”用「しか〜ない」。",
+      "en": "The verb is negative 「ありません」 and 「どうしよう」 shows worry — \"only (too little)\" is 「しか〜ない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「だけ」接肯定（100円だけあります），后面是否定「ありません」就变成“只有100日元不在”，意思不通。",
+        "en": "「だけ」 goes with a positive (100円だけあります); with 「ありません」 the meaning falls apart."
+      },
+      {
+        "zh": "「や」用于列举名词（AやB），后面没有别的名词。",
+        "en": "「や」 lists nouns (AやB), and nothing follows here."
+      },
+      {
+        "zh": "「ごろ」接时间点，不接金额。",
+        "en": "「ごろ」 goes with a point in time, not an amount of money."
+      }
+    ]
+  },
+  {
+    "id": "n5-l17-018",
+    "type": "narabe",
+    "refs": [
+      "lesson17#6"
+    ],
+    "difficulty": 1,
+    "stem": "アルバイトは [_] [_] [★] [_]。",
+    "options": [
+      "います",
+      "だけ",
+      "週末",
+      "して"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "アルバイトは 週末だけ して います。",
+    "tr": {
+      "zh": "打工只在周末做。",
+      "en": "I only do my part-time job on weekends."
+    },
+    "why": {
+      "zh": "「週末だけ」（只在周末）＋「しています」。★ 在第三格，是「して」。",
+      "en": "「週末だけ」 (only on weekends) ＋ 「しています」. The ★ is the third slot: 「して」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

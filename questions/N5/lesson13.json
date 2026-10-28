@@ -1,0 +1,468 @@
+[
+  {
+    "id": "n5-l13-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson13#1"
+    ],
+    "difficulty": 1,
+    "stem": "天気予報を 見ましたか。あしたは たぶん 雨（　）。",
+    "options": [
+      "でしょう",
+      "だでしょう",
+      "なでしょう",
+      "にでしょう"
+    ],
+    "answer": 0,
+    "full": "天気予報を 見ましたか。あしたは たぶん 雨でしょう。",
+    "tr": {
+      "zh": "你看天气预报了吗？明天大概会下雨吧。",
+      "en": "Did you see the forecast? It'll probably rain tomorrow."
+    },
+    "why": {
+      "zh": "「たぶん」（大概）提示推测。名词接「でしょう」时直接接，不加「だ」：雨でしょう。",
+      "en": "「たぶん」 (probably) signals a guess. A noun takes 「でしょう」 directly, without 「だ」: 「雨でしょう」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "名词、な形容词接「でしょう」时要去掉「だ」，不能说「雨だでしょう」。",
+        "en": "Nouns and な-adjectives drop 「だ」 before 「でしょう」; 「雨だでしょう」 is wrong."
+      },
+      {
+        "zh": "「な」只在修饰名词时出现，不能放在「でしょう」前面。",
+        "en": "「な」 only appears before a noun; it can't come before 「でしょう」."
+      },
+      {
+        "zh": "「に」不能把名词和「でしょう」连起来。",
+        "en": "「に」 can't link a noun to 「でしょう」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l13-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson13#1",
+      "lesson13#2"
+    ],
+    "difficulty": 2,
+    "stem": "田中さんは 毎日 あんなに 勉強したから、きっと 試験に 合格する（　）。",
+    "options": [
+      "でしょう",
+      "かもしれません",
+      "つもりです",
+      "たいです"
+    ],
+    "answer": 0,
+    "full": "田中さんは 毎日 あんなに 勉強したから、きっと 試験に 合格する でしょう。",
+    "tr": {
+      "zh": "田中每天那么用功，一定会通过考试吧。",
+      "en": "Tanaka studied that hard every day, so he'll surely pass the exam."
+    },
+    "why": {
+      "zh": "「あんなに勉強したから」是根据，「きっと」表示很有把握。把握大的推测用「でしょう」。",
+      "en": "「あんなに勉強したから」 gives the grounds and 「きっと」 shows confidence — a confident guess is 「でしょう」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「かもしれません」只是“说不定”，把握低，和表示有把握的「きっと」不搭。",
+        "en": "「かもしれません」 is only \"maybe\" — low confidence, which clashes with 「きっと」 (surely)."
+      },
+      {
+        "zh": "「つもり」是自己的打算，说话人在推测田中，不是说田中的计划；也不能和「きっと」连用。",
+        "en": "「つもり」 is one's own plan; the speaker is guessing about Tanaka, not stating his intention, and it doesn't go with 「きっと」."
+      },
+      {
+        "zh": "「たい」接ます形词干，而且只用于说自己的愿望，不能说第三人称田中。",
+        "en": "「たい」 follows the ます-stem and is for your own wishes, not Tanaka's."
+      }
+    ]
+  },
+  {
+    "id": "n5-l13-003",
+    "type": "narabe",
+    "refs": [
+      "lesson13#1"
+    ],
+    "difficulty": 1,
+    "stem": "あしたは [_] [_] [★] [_] 。",
+    "options": [
+      "なる",
+      "でしょう",
+      "寒く",
+      "たぶん"
+    ],
+    "order": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "full": "あしたは たぶん 寒く なる でしょう。",
+    "tr": {
+      "zh": "明天大概会变冷吧。",
+      "en": "It'll probably get cold tomorrow."
+    },
+    "why": {
+      "zh": "「たぶん」放在推测内容前面，「寒くなる」（变冷）＋「でしょう」。★ 在第三格，是「なる」。",
+      "en": "「たぶん」 comes before what is guessed: 「寒くなる」 (get cold) ＋ 「でしょう」. The ★ is the third slot: 「なる」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l13-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson13#2"
+    ],
+    "difficulty": 1,
+    "stem": "あの 人は 若いですね。学生（　）。",
+    "options": [
+      "かもしれません",
+      "だかもしれません",
+      "なかもしれません",
+      "にかもしれません"
+    ],
+    "answer": 0,
+    "full": "あの 人は 若いですね。学生かもしれません。",
+    "tr": {
+      "zh": "那个人好年轻啊。说不定是学生。",
+      "en": "That person looks young. Maybe they're a student."
+    },
+    "why": {
+      "zh": "名词接「かもしれません」时直接接，不加「だ」：学生かもしれません（也许是学生）。",
+      "en": "A noun takes 「かもしれません」 directly, without 「だ」: 「学生かもしれません」 (maybe a student)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "名词接「かもしれない」要去掉「だ」，「学生だかもしれません」不成立。",
+        "en": "A noun drops 「だ」 before 「かもしれない」; 「学生だかもしれません」 is wrong."
+      },
+      {
+        "zh": "「な」只在な形容词修饰名词时出现，不能放在这里。",
+        "en": "「な」 only appears when a な-adjective modifies a noun; it doesn't belong here."
+      },
+      {
+        "zh": "「に」不能把名词和「かもしれません」连起来。",
+        "en": "「に」 can't link a noun to 「かもしれません」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l13-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson13#2"
+    ],
+    "difficulty": 2,
+    "stem": "午後は 雨が 降る（　）から、かさを 持って 行きます。",
+    "options": [
+      "かもしれない",
+      "つもりだ",
+      "予定だ",
+      "たい"
+    ],
+    "answer": 0,
+    "full": "午後は 雨が 降るかもしれないから、かさを 持って 行きます。",
+    "tr": {
+      "zh": "下午说不定会下雨，所以我带伞去。",
+      "en": "It might rain this afternoon, so I'll take an umbrella."
+    },
+    "why": {
+      "zh": "下雨是不确定的可能性，“以防万一带伞”，用「かもしれない」（说不定）。",
+      "en": "Rain is only a possibility — taking an umbrella just in case — so 「かもしれない」 (might)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「つもり」是人的打算，雨不会“打算”下。",
+        "en": "「つもり」 is a person's intention; rain can't intend to fall."
+      },
+      {
+        "zh": "「予定」是已经安排好的日程，天气不是安排出来的。",
+        "en": "「予定」 is a fixed schedule; weather isn't scheduled."
+      },
+      {
+        "zh": "「たい」接ます形词干（降りたい），而且表示人的愿望，不能用于雨。",
+        "en": "「たい」 follows the ます-stem and expresses a person's wish, not the rain's."
+      }
+    ]
+  },
+  {
+    "id": "n5-l13-006",
+    "type": "narabe",
+    "refs": [
+      "lesson13#2"
+    ],
+    "difficulty": 2,
+    "stem": "もう 9時ですから、その 店は [_] [_] [★] [_] よ。",
+    "options": [
+      "かもしれません",
+      "閉まって",
+      "もう",
+      "いる"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "もう 9時ですから、その 店は もう 閉まって いる かもしれませんよ。",
+    "tr": {
+      "zh": "已经9点了，那家店说不定已经关门了哦。",
+      "en": "It's already nine, so that shop might be closed by now."
+    },
+    "why": {
+      "zh": "「もう閉まっている」（已经关着）＋「かもしれません」（说不定）。★ 在第三格，是「いる」。",
+      "en": "「もう閉まっている」 (already closed) ＋ 「かもしれません」 (might be). The ★ is the third slot: 「いる」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l13-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson13#3"
+    ],
+    "difficulty": 2,
+    "stem": "わあ、（　）ケーキですね。一つ ください。",
+    "options": [
+      "おいしそうな",
+      "おいしそうに",
+      "おいしいそうな",
+      "おいしそうの"
+    ],
+    "answer": 0,
+    "full": "わあ、おいしそうな ケーキですね。一つ ください。",
+    "tr": {
+      "zh": "哇，看起来好好吃的蛋糕啊。请给我一个。",
+      "en": "Wow, that cake looks delicious. I'll take one, please."
+    },
+    "why": {
+      "zh": "眼前看到蛋糕，用样态「そうだ」：おいしい去い＋そう。修饰名词「ケーキ」时变成「そうな」。",
+      "en": "You're looking at the cake: appearance 「そうだ」, おいしい minus い ＋ そう. Before the noun 「ケーキ」 it becomes 「そうな」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「そうに」修饰动词（如 おいしそうに食べる），不能修饰名词。",
+        "en": "「そうに」 modifies a verb (おいしそうに食べる), not a noun."
+      },
+      {
+        "zh": "「おいしいそう」是传闻（听说好吃），传闻的「そうだ」不能变成「そうな」修饰名词，而且这里是亲眼看到。",
+        "en": "「おいしいそう」 is hearsay, which has no 「そうな」 form before nouns — and here you're seeing it yourself."
+      },
+      {
+        "zh": "样态「そうだ」像な形容词，修饰名词用「な」，不用「の」。",
+        "en": "Appearance 「そうだ」 behaves like a な-adjective: 「な」 before a noun, not 「の」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l13-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson13#3"
+    ],
+    "difficulty": 1,
+    "stem": "空が 暗いですね。今にも 雨が（　）です。",
+    "options": [
+      "降りそう",
+      "降そう",
+      "降りそうな",
+      "降りそうに"
+    ],
+    "answer": 0,
+    "full": "空が 暗いですね。今にも 雨が 降りそうです。",
+    "tr": {
+      "zh": "天好暗啊。眼看就要下雨了。",
+      "en": "The sky is dark. It looks like it's about to rain."
+    },
+    "why": {
+      "zh": "看到天色判断“快要下雨”，用样态：ます形词干＋そうです。降ります→降りそうです。",
+      "en": "Judging from the dark sky — \"about to rain\" — is appearance: ます-stem ＋ そうです. 降ります→降りそうです."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "样态「そう」接ます形词干「降り」，不能只接「降」。",
+        "en": "Appearance 「そう」 follows the ます-stem 「降り」, not just 「降」."
+      },
+      {
+        "zh": "「そうな」用于修饰名词，后面接「です」时不需要「な」。",
+        "en": "「そうな」 is used before a noun; before 「です」 there's no 「な」."
+      },
+      {
+        "zh": "「そうに」修饰动词，不能直接接「です」。",
+        "en": "「そうに」 modifies a verb and can't be followed directly by 「です」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l13-009",
+    "type": "narabe",
+    "refs": [
+      "lesson13#3"
+    ],
+    "difficulty": 2,
+    "stem": "あの 子は [_] [_] [★] [_] して います。",
+    "options": [
+      "顔",
+      "泣き",
+      "を",
+      "そうな"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "あの 子は 泣きそうな 顔を して います。",
+    "tr": {
+      "zh": "那个孩子一脸快要哭的样子。",
+      "en": "That child looks like they're about to cry."
+    },
+    "why": {
+      "zh": "「泣き」（ます形词干）＋「そうな」修饰名词「顔」，再接「顔をしています」（露出……的表情）。★ 在第三格，是「顔」。",
+      "en": "「泣き」 (ます-stem) ＋ 「そうな」 modifies 「顔」, then 「顔をしています」 (has a … face). The ★ is the third slot: 「顔」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l13-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson13#4"
+    ],
+    "difficulty": 1,
+    "stem": "天気予報に よると、あしたは 雪（　）。",
+    "options": [
+      "だそうです",
+      "そうです",
+      "なそうです",
+      "のそうです"
+    ],
+    "answer": 0,
+    "full": "天気予報に よると、あしたは 雪だそうです。",
+    "tr": {
+      "zh": "据天气预报说，明天会下雪。",
+      "en": "According to the forecast, it's going to snow tomorrow."
+    },
+    "why": {
+      "zh": "「〜によると」提示信息来源，是传闻「そうだ」。名词接传闻时要加「だ」：雪だそうです。",
+      "en": "「〜によると」 names a source, so this is hearsay 「そうだ」. A noun needs 「だ」 before it: 「雪だそうです」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "传闻「そうだ」接简体完整形，名词要带「だ」；「雪そうです」不成立。",
+        "en": "Hearsay 「そうだ」 follows a full plain form, so a noun needs 「だ」; 「雪そうです」 is wrong."
+      },
+      {
+        "zh": "「な」用于修饰名词，不能放在传闻「そうだ」前面。",
+        "en": "「な」 is for modifying nouns; it can't come before hearsay 「そうだ」."
+      },
+      {
+        "zh": "「の」不能把名词和「そうです」连起来。",
+        "en": "「の」 can't link a noun to 「そうです」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l13-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson13#4",
+      "lesson13#3"
+    ],
+    "difficulty": 3,
+    "stem": "けさ 田中さんの お母さんから 電話が ありました。田中さんは もう（　）。",
+    "options": [
+      "元気だそうです",
+      "元気そうです",
+      "元気なそうです",
+      "元気のそうです"
+    ],
+    "answer": 0,
+    "full": "けさ 田中さんの お母さんから 電話が ありました。田中さんは もう 元気だそうです。",
+    "tr": {
+      "zh": "今天早上田中的妈妈打来电话。听说田中已经好了。",
+      "en": "Tanaka's mother called this morning. She says he's fine now."
+    },
+    "why": {
+      "zh": "田中的情况是从他妈妈那里听来的，自己没有看到田中，用传闻：な形容词＋だ＋そうです。",
+      "en": "You heard about Tanaka from his mother and haven't seen him yourself, so hearsay: な-adjective ＋ だ ＋ そうです."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「元気そうです」是样态（看起来很精神），要自己看到田中才用；这里只是听他妈妈说的。",
+        "en": "「元気そうです」 is appearance (\"looks well\"), used when you see Tanaka yourself — here you only heard it from his mother."
+      },
+      {
+        "zh": "传闻「そうだ」前用简体「元気だ」，不用修饰名词的「な」。",
+        "en": "Hearsay 「そうだ」 follows the plain form 「元気だ」, not the noun-modifying 「な」."
+      },
+      {
+        "zh": "「の」不能把「元気」和「そうです」连起来。",
+        "en": "「の」 can't link 「元気」 to 「そうです」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l13-012",
+    "type": "narabe",
+    "refs": [
+      "lesson13#4"
+    ],
+    "difficulty": 2,
+    "stem": "田中さんの 話では、[_] [_] [_] [★] そうです。",
+    "options": [
+      "とても",
+      "おいしい",
+      "レストランは",
+      "あの"
+    ],
+    "order": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "full": "田中さんの 話では、あの レストランは とても おいしい そうです。",
+    "tr": {
+      "zh": "听田中说，那家餐厅非常好吃。",
+      "en": "According to Tanaka, that restaurant is really good."
+    },
+    "why": {
+      "zh": "「〜の話では」提示传闻：あのレストランは＋とてもおいしい＋そうです（简体＋そうだ）。★ 在第四格，是「おいしい」。",
+      "en": "「〜の話では」 signals hearsay: あのレストランは ＋ とてもおいしい ＋ そうです (plain form ＋ そうだ). The ★ is the fourth slot: 「おいしい」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

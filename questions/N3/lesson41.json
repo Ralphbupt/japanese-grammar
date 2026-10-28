@@ -1,0 +1,583 @@
+[
+  {
+    "id": "n3-l41-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson41#1"
+    ],
+    "difficulty": 1,
+    "stem": "明日の 会議は 9時からなので、（　）早く 来て ください。",
+    "options": [
+      "できるだけ",
+      "できるほど",
+      "できるまで",
+      "できるしか"
+    ],
+    "answer": 0,
+    "full": "明日の 会議は 9時からなので、できるだけ 早く 来て ください。",
+    "tr": {
+      "zh": "明天的会议9点开始，请尽量早点来。",
+      "en": "Tomorrow's meeting starts at nine, so please come as early as you can."
+    },
+    "why": {
+      "zh": "“尽量早点”是固定说法「できるだけ」（尽可能）。",
+      "en": "\"As early as possible\" is the set phrase 「できるだけ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "没有「できるほど早く」这种说法表示“尽量”。",
+        "en": "「できるほど」 isn't used to mean \"as … as possible\"."
+      },
+      {
+        "zh": "「できるまで」是“直到能做到为止”，和「早く来て」接不上。",
+        "en": "「できるまで」 means \"until you can\"; it doesn't go with 「早く来て」."
+      },
+      {
+        "zh": "「しか」要接否定，「できるしか」不成句。",
+        "en": "「しか」 needs a negative; 「できるしか」 isn't grammatical."
+      }
+    ]
+  },
+  {
+    "id": "n3-l41-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson41#1"
+    ],
+    "difficulty": 2,
+    "stem": "今日は 私が おごるから、食べたい（　）食べて いいよ。",
+    "options": [
+      "だけ",
+      "しか",
+      "ほど",
+      "ばかり"
+    ],
+    "answer": 0,
+    "full": "今日は 私が おごるから、食べたいだけ 食べて いいよ。",
+    "tr": {
+      "zh": "今天我请客，想吃多少就吃多少。",
+      "en": "It's my treat today, so eat as much as you like."
+    },
+    "why": {
+      "zh": "「〜たいだけ〜」= 想……多少就……多少，表示尽情的量。",
+      "en": "「〜たいだけ〜」 = as much as one wants."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「しか」要接否定，后面是肯定的「食べていい」。",
+        "en": "「しか」 needs a negative, but 「食べていい」 is positive."
+      },
+      {
+        "zh": "「食べたいほど」是“想吃得不得了”的程度，不是“想吃多少吃多少”。",
+        "en": "「食べたいほど」 would describe a degree of craving, not \"as much as you like\"."
+      },
+      {
+        "zh": "「ばかり」是“光是／净是”，不能表示“尽情的量”。",
+        "en": "「ばかり」 means \"nothing but\" and can't express \"as much as you want\"."
+      }
+    ]
+  },
+  {
+    "id": "n3-l41-003",
+    "type": "narabe",
+    "refs": [
+      "lesson41#1"
+    ],
+    "difficulty": 2,
+    "stem": "その 事故に ついて、[_] [_] [★] [_] ください。",
+    "options": [
+      "知って いる",
+      "こと",
+      "だけ",
+      "話して"
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full": "その 事故に ついて、知って いる ことだけ 話して ください。",
+    "tr": {
+      "zh": "关于那起事故，请只说你知道的事。",
+      "en": "About the accident, please tell us only what you know."
+    },
+    "why": {
+      "zh": "「知っている」修饰「こと」，再接「だけ」限定，最后「話して ください」。★ 是「だけ」。",
+      "en": "「知っている」 modifies 「こと」, 「だけ」 limits it, then 「話してください」. The ★ is 「だけ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l41-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson41#2"
+    ],
+    "difficulty": 1,
+    "stem": "給料日の 前なので、財布に 1000円（　）入って いない。",
+    "options": [
+      "しか",
+      "だけ",
+      "ばかり",
+      "まで"
+    ],
+    "answer": 0,
+    "full": "給料日の 前なので、財布に 1000円しか 入って いない。",
+    "tr": {
+      "zh": "因为是发工资前，钱包里只有1000日元。",
+      "en": "It's just before payday, so I only have 1,000 yen in my wallet."
+    },
+    "why": {
+      "zh": "句末是否定「入っていない」，表示“只有（太少）”用「しか〜ない」。",
+      "en": "The verb is negative (入っていない), so \"only (too little)\" is 「しか〜ない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「だけ」后接否定会变成“只有1000日元没放进去”，意思不对；「だけ」通常接肯定（1000円だけ入っている）。",
+        "en": "「だけ」 with a negative would mean \"only the 1,000 yen isn't in it\"; 「だけ」 goes with a positive (1000円だけ入っている)."
+      },
+      {
+        "zh": "「ばかり」是“净是”，和否定一起说不通。",
+        "en": "「ばかり」 (nothing but) makes no sense with the negative."
+      },
+      {
+        "zh": "「まで」是“到……为止”，「1000円まで入っていない」不成意思。",
+        "en": "「まで」 (up to) doesn't give a sensible meaning here."
+      }
+    ]
+  },
+  {
+    "id": "n3-l41-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson41#2"
+    ],
+    "difficulty": 2,
+    "stem": "終電に 乗り遅れて しまったので、タクシーで 帰る（　）。",
+    "options": [
+      "しか ない",
+      "しか ある",
+      "だけ ない",
+      "ばかり ない"
+    ],
+    "answer": 0,
+    "full": "終電に 乗り遅れて しまったので、タクシーで 帰る しか ない。",
+    "tr": {
+      "zh": "错过了末班车，只能坐出租车回去了。",
+      "en": "I missed the last train, so I have no choice but to take a taxi home."
+    },
+    "why": {
+      "zh": "「動詞辞書形＋しかない」= 只能……，没有别的办法。",
+      "en": "「dictionary form ＋ しかない」 = there's nothing to do but…"
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「しか」必须接否定，不能接「ある」。",
+        "en": "「しか」 must be followed by a negative, not 「ある」."
+      },
+      {
+        "zh": "「だけない」不是固定说法，不表示“只能”。",
+        "en": "「だけない」 isn't a pattern and doesn't mean \"have no choice but\"."
+      },
+      {
+        "zh": "「ばかりない」不成句。",
+        "en": "「ばかりない」 isn't grammatical."
+      }
+    ]
+  },
+  {
+    "id": "n3-l41-006",
+    "type": "narabe",
+    "refs": [
+      "lesson41#2"
+    ],
+    "difficulty": 2,
+    "stem": "もう ほかに 方法が ないので、今は [_] [_] [★] [_]。",
+    "options": [
+      "彼を",
+      "信じて",
+      "待つ",
+      "しかない"
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full": "もう ほかに 方法が ないので、今は 彼を 信じて 待つ しかない。",
+    "tr": {
+      "zh": "已经没有别的办法了，现在只能相信他、等着了。",
+      "en": "There's no other way now — all we can do is trust him and wait."
+    },
+    "why": {
+      "zh": "「彼を信じて」（相信他）＋「待つ」＋「しかない」（只能）。★ 是「待つ」。",
+      "en": "「彼を信じて」 ＋ 「待つ」 ＋ 「しかない」 (can only). The ★ is 「待つ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l41-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson41#3"
+    ],
+    "difficulty": 2,
+    "stem": "新しく 来た 山田さんは 英語（　）、中国語や 韓国語も 話せるそうだ。",
+    "options": [
+      "ばかりか",
+      "とはいえ",
+      "しか",
+      "に限って"
+    ],
+    "answer": 0,
+    "full": "新しく 来た 山田さんは 英語ばかりか、中国語や 韓国語も 話せるそうだ。",
+    "tr": {
+      "zh": "听说新来的山田不仅会英语，还会中文和韩语。",
+      "en": "I hear Yamada, who just joined, speaks not only English but also Chinese and Korean."
+    },
+    "why": {
+      "zh": "后半句有「も」，是同方向追加（不仅……而且……），用「ばかりか」。",
+      "en": "The 「も」 in the second half adds in the same direction (not only… but also): 「ばかりか」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「とはいえ」是让步转折（虽说……但），这里没有转折。",
+        "en": "「とはいえ」 is a concession (granted…, but); there's no contrast here."
+      },
+      {
+        "zh": "「しか」要接否定，后面是肯定的「話せる」。",
+        "en": "「しか」 needs a negative, but 「話せる」 is positive."
+      },
+      {
+        "zh": "「に限って」是“偏偏在……的时候”，用于不巧的事，这里意思不通。",
+        "en": "「に限って」 means \"just when / of all times\"; it doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n3-l41-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson41#3"
+    ],
+    "difficulty": 2,
+    "stem": "この 部屋は（　）、駅からも 近いので 人気が ある。",
+    "options": [
+      "静かな ばかりか",
+      "静かだ ばかりか",
+      "静かの ばかりか",
+      "静かで ばかりか"
+    ],
+    "answer": 0,
+    "full": "この 部屋は 静かな ばかりか、駅からも 近いので 人気が ある。",
+    "tr": {
+      "zh": "这个房间不仅安静，离车站也近，所以很受欢迎。",
+      "en": "This flat is popular — not only is it quiet, it's close to the station too."
+    },
+    "why": {
+      "zh": "な形容词接「ばかりか」要用「〜な」（或「〜である」）：静かなばかりか。",
+      "en": "A na-adjective takes 「な」 (or 「である」) before 「ばかりか」: 静かなばかりか."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ばかりか」前面不接「だ」。",
+        "en": "「ばかりか」 doesn't follow 「だ」."
+      },
+      {
+        "zh": "「の」是名词的接法，な形容词不用。",
+        "en": "「の」 is for nouns, not na-adjectives."
+      },
+      {
+        "zh": "「で」是て形，不能接「ばかりか」。",
+        "en": "「で」 is the て-form and can't take 「ばかりか」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l41-009",
+    "type": "narabe",
+    "refs": [
+      "lesson41#3"
+    ],
+    "difficulty": 2,
+    "stem": "天気が 急に 悪く なって、[_] [_] [★] [_] なって きた。",
+    "options": [
+      "雨",
+      "ばかりか",
+      "風まで",
+      "強く"
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full": "天気が 急に 悪く なって、雨ばかりか 風まで 強く なって きた。",
+    "tr": {
+      "zh": "天气突然变坏，不仅下雨，连风也大起来了。",
+      "en": "The weather suddenly turned bad — not only rain, but the wind picked up too."
+    },
+    "why": {
+      "zh": "「名詞＋ばかりか」，后半常配「まで」：雨ばかりか風まで；「強く」接「なってきた」。★ 是「風まで」。",
+      "en": "「noun ＋ ばかりか」, with 「まで」 in the second half: 雨ばかりか風まで; 「強く」 goes before 「なってきた」. The ★ is 「風まで」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l41-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson41#4"
+    ],
+    "difficulty": 1,
+    "stem": "本日（　）、全品 30％引きです。明日からは 通常の 価格に 戻ります。",
+    "options": [
+      "に限り",
+      "に限らず",
+      "ばかりか",
+      "しか"
+    ],
+    "answer": 0,
+    "full": "本日に限り、全品 30％引きです。明日からは 通常の 価格に 戻ります。",
+    "tr": {
+      "zh": "仅限今天，全场七折。明天起恢复原价。",
+      "en": "Today only, everything is 30% off. Prices return to normal tomorrow."
+    },
+    "why": {
+      "zh": "后一句说明天恢复原价，所以是“仅限今天”，告示里用「に限り」。",
+      "en": "The next sentence says prices go back tomorrow, so it's \"today only\" — 「に限り」, typical of notices."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に限らず」是“不限于今天”，和“明天恢复原价”矛盾。",
+        "en": "「に限らず」 means \"not only today\", contradicting \"back to normal tomorrow\"."
+      },
+      {
+        "zh": "「ばかりか」是“不仅……而且”，后面没有追加的内容。",
+        "en": "「ばかりか」 (not only…) has nothing added after it."
+      },
+      {
+        "zh": "「しか」要接否定，后面是肯定的「30％引きです」。",
+        "en": "「しか」 needs a negative, but the sentence is positive."
+      }
+    ]
+  },
+  {
+    "id": "n3-l41-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson41#4"
+    ],
+    "difficulty": 2,
+    "stem": "どうして いつも 傘を 持って いない 日（　）雨が 降るんだろう。",
+    "options": [
+      "に限って",
+      "に限らず",
+      "ばかりか",
+      "しか"
+    ],
+    "answer": 0,
+    "full": "どうして いつも 傘を 持って いない 日に限って 雨が 降るんだろう。",
+    "tr": {
+      "zh": "为什么总是偏偏在没带伞的日子下雨呢？",
+      "en": "Why does it always rain on the very days I don't have an umbrella?"
+    },
+    "why": {
+      "zh": "抱怨“为什么偏偏……”，表示不巧的事正好发生在那个时候，用「に限って」。",
+      "en": "Grumbling \"why, of all days…\" — bad luck landing on that very time: 「に限って」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に限らず」是“不限于……”，“不限于没带伞的日子都下雨”和抱怨的语气不合。",
+        "en": "「に限らず」 (not only on…) doesn't fit the \"why, of all days\" complaint."
+      },
+      {
+        "zh": "「ばかりか」是“不仅……而且”，后面没有追加的内容。",
+        "en": "「ばかりか」 (not only…) has nothing added after it."
+      },
+      {
+        "zh": "「しか」要接否定，后面是肯定的「降る」。",
+        "en": "「しか」 needs a negative, but 「降る」 is positive."
+      }
+    ]
+  },
+  {
+    "id": "n3-l41-012",
+    "type": "narabe",
+    "refs": [
+      "lesson41#4"
+    ],
+    "difficulty": 2,
+    "stem": "どうして [_] [_] [★] [_] 電車が 遅れるのだろう。",
+    "options": [
+      "私が",
+      "急いで いる",
+      "時に",
+      "限って"
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full": "どうして 私が 急いで いる 時に 限って 電車が 遅れるのだろう。",
+    "tr": {
+      "zh": "为什么偏偏在我着急的时候电车晚点呢？",
+      "en": "Why is it that the train is late precisely when I'm in a hurry?"
+    },
+    "why": {
+      "zh": "「私が急いでいる」修饰「時」，「時に限って」= 偏偏在……的时候，后面是不巧的事「電車が遅れる」。★ 是「時に」。",
+      "en": "「私が急いでいる」 modifies 「時」; 「時に限って」 = just when…, followed by the bad luck 「電車が遅れる」. The ★ is 「時に」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l41-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson41#5",
+      "lesson41#4"
+    ],
+    "difficulty": 2,
+    "stem": "この アニメは 子供（　）、大人にも とても 人気が ある。",
+    "options": [
+      "に限らず",
+      "に限って",
+      "に限り",
+      "しか"
+    ],
+    "answer": 0,
+    "full": "この アニメは 子供に限らず、大人にも とても 人気が ある。",
+    "tr": {
+      "zh": "这部动画不限于孩子，在大人中也很受欢迎。",
+      "en": "This anime isn't just popular with kids — adults love it too."
+    },
+    "why": {
+      "zh": "后半句「大人にも」扩大了范围，表示“不限于……”用「に限らず」。",
+      "en": "「大人にも」 widens the scope, so it's 「に限らず」 (not limited to)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に限って」是“偏偏”，用于不巧的事，这里意思不通。",
+        "en": "「に限って」 means \"of all times\" for bad luck; it doesn't fit."
+      },
+      {
+        "zh": "「に限り」是“仅限于孩子”，和后面的「大人にも」矛盾。",
+        "en": "「に限り」 means \"limited to kids\", contradicting 「大人にも」."
+      },
+      {
+        "zh": "「しか」要接否定，后面是肯定句。",
+        "en": "「しか」 needs a negative, but the sentence is positive."
+      }
+    ]
+  },
+  {
+    "id": "n3-l41-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson41#5"
+    ],
+    "difficulty": 2,
+    "stem": "電車の 遅れは 日本（　）、世界中の 大きな 都市で 問題に なって いる。",
+    "options": [
+      "に限らず",
+      "に限って",
+      "しか",
+      "だけ"
+    ],
+    "answer": 0,
+    "full": "電車の 遅れは 日本に限らず、世界中の 大きな 都市で 問題に なって いる。",
+    "tr": {
+      "zh": "电车晚点不限于日本，在世界各大城市都是个问题。",
+      "en": "Train delays are a problem not just in Japan but in big cities all over the world."
+    },
+    "why": {
+      "zh": "后面说“世界各地”，范围比日本更广，用「に限らず」（不限于）。",
+      "en": "\"All over the world\" is wider than Japan: 「に限らず」 (not limited to)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に限って」表示“偏偏”，用于个人遇到的不巧，不用于说明范围。",
+        "en": "「に限って」 is for personal bad luck (of all times), not for scope."
+      },
+      {
+        "zh": "「しか」要接否定，这里是肯定。",
+        "en": "「しか」 needs a negative; the sentence is positive."
+      },
+      {
+        "zh": "「日本だけ」是“只有日本”，和后面的“世界各地”矛盾。",
+        "en": "「日本だけ」 means \"only Japan\", contradicting \"all over the world\"."
+      }
+    ]
+  },
+  {
+    "id": "n3-l41-015",
+    "type": "narabe",
+    "refs": [
+      "lesson41#5"
+    ],
+    "difficulty": 2,
+    "stem": "この 映画は [_] [_] [★] [_] 作品だ。",
+    "options": [
+      "子供",
+      "に限らず",
+      "大人も",
+      "楽しめる"
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full": "この 映画は 子供に限らず 大人も 楽しめる 作品だ。",
+    "tr": {
+      "zh": "这部电影是不限于孩子、大人也能乐在其中的作品。",
+      "en": "This film is one that adults can enjoy too, not just children."
+    },
+    "why": {
+      "zh": "「子供に限らず」（不限于孩子）＋「大人も」，再用「楽しめる」修饰「作品」。★ 是「大人も」。",
+      "en": "「子供に限らず」 ＋ 「大人も」, and 「楽しめる」 modifies 「作品」. The ★ is 「大人も」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

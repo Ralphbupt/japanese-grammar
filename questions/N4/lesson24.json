@@ -1,0 +1,546 @@
+[
+  {
+    "id": "n4-l24-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson24#1"
+    ],
+    "difficulty": 1,
+    "stem": "あした 会議が あるので、これから 資料を コピーして（　）。",
+    "options": [
+      "あります",
+      "おきます",
+      "ばかりです",
+      "以来です"
+    ],
+    "answer": 1,
+    "full": "あした 会議が あるので、これから 資料を コピーして おきます。",
+    "tr": {
+      "zh": "明天要开会，所以现在先把资料复印好。",
+      "en": "There is a meeting tomorrow, so I will copy the materials now."
+    },
+    "why": {
+      "zh": "「あした会議があるので」「これから」：为了以后的事提前准备，用「ておく」。",
+      "en": "「あした会議があるので」 and 「これから」: getting ready for something later — 「ておく」."
+    },
+    "wrong": [
+      {
+        "zh": "「てある」是看到的结果状态，要用「が」（資料がコピーしてある），这里是「を」，而且「これから」说的是我接下来要做的事。",
+        "en": "「てある」 describes a result you see, with 「が」; here it is 「を」, and 「これから」 makes it something I am about to do."
+      },
+      null,
+      {
+        "zh": "「てばかりです」是“净是在复印”，带不满，和“为了明天开会做准备”对不上。",
+        "en": "「てばかりです」 complains about doing nothing but copying; it doesn't fit preparing for the meeting."
+      },
+      {
+        "zh": "「て以来」要接“自从……以来一直……”的后句，不能这样结句。",
+        "en": "「て以来」 needs a following clause (ever since…); it can't end the sentence like this."
+      }
+    ]
+  },
+  {
+    "id": "n4-l24-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson24#1"
+    ],
+    "difficulty": 2,
+    "stem": "あとで また 使うので、はさみは 机の 上に 置いて（　）ください。",
+    "options": [
+      "しまって",
+      "あって",
+      "おいて",
+      "ばかり"
+    ],
+    "answer": 2,
+    "full": "あとで また 使うので、はさみは 机の 上に 置いて おいて ください。",
+    "tr": {
+      "zh": "一会儿还要用，剪刀就先放在桌上吧。",
+      "en": "I'll use them again later, so please just leave the scissors on the desk."
+    },
+    "why": {
+      "zh": "「あとでまた使うので」：先那样放着、保持现状，用「ておく」的“暂时放置”义，请求形是「ておいてください」。",
+      "en": "「あとでまた使うので」: leave it as it is for now — the \"leave as is\" use of 「ておく」; as a request, 「ておいてください」."
+    },
+    "wrong": [
+      {
+        "zh": "「置いてしまってください」是“干脆放掉/放完”，和“还要用、先放着”对不上。",
+        "en": "「置いてしまってください」 means \"go ahead and finish putting it away\", which doesn't fit \"I'll use it again\"."
+      },
+      {
+        "zh": "「てある」不能变成「てあってください」，不能用来请求别人。",
+        "en": "「てある」 has no request form 「てあってください」."
+      },
+      null,
+      {
+        "zh": "「置いてばかりください」不是日语的说法。",
+        "en": "「置いてばかりください」 isn't Japanese."
+      }
+    ]
+  },
+  {
+    "id": "n4-l24-003",
+    "type": "narabe",
+    "refs": [
+      "lesson24#1"
+    ],
+    "difficulty": 1,
+    "stem": "友だちが [_] [_] [★] [_] おこう。",
+    "options": [
+      "片付けて",
+      "来る",
+      "部屋を",
+      "前に"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "友だちが 来る 前に 部屋を 片付けて おこう。",
+    "tr": {
+      "zh": "朋友来之前，先把房间收拾好吧。",
+      "en": "Let's tidy the room before my friend comes."
+    },
+    "why": {
+      "zh": "来る ＋ 前に ＋ 部屋を ＋ 片付けて ＋ おこう（ておく的意向形）。★ 在第三格，是「部屋を」。",
+      "en": "来る ＋ 前に ＋ 部屋を ＋ 片付けて ＋ おこう (volitional of ておく). The ★ is the third slot: 「部屋を」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l24-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson24#2"
+    ],
+    "difficulty": 1,
+    "stem": "かべに きれいな ポスターが はって（　）。だれが はったのでしょう。",
+    "options": [
+      "おきます",
+      "あります",
+      "しまいます",
+      "みます"
+    ],
+    "answer": 1,
+    "full": "かべに きれいな ポスターが はって あります。だれが はったのでしょう。",
+    "tr": {
+      "zh": "墙上贴着一张漂亮的海报。是谁贴的呢？",
+      "en": "There's a nice poster up on the wall. I wonder who put it up."
+    },
+    "why": {
+      "zh": "「ポスターが」＋ 他动词「はる」，又问“是谁贴的”：看到有人有意做后留下的状态，用「てある」。",
+      "en": "「ポスターが」 with the transitive 「はる」, and \"who put it up?\": a deliberate result someone left — 「てある」."
+    },
+    "wrong": [
+      {
+        "zh": "「ておきます」是动作者（我）要事先做，主语不会是「ポスターが」。",
+        "en": "「ておきます」 is something I'll do in advance; its subject isn't 「ポスターが」."
+      },
+      null,
+      {
+        "zh": "「てしまいます」是“会贴完/会不小心贴上”，和看到海报、问是谁贴的对不上。",
+        "en": "「てしまいます」 means \"will finish / will end up putting up\" — it doesn't describe a poster you see."
+      },
+      {
+        "zh": "「てみます」是“试着贴”，主语也不会是「ポスターが」。",
+        "en": "「てみます」 means \"try putting up\", and 「ポスターが」 can't be its subject."
+      }
+    ]
+  },
+  {
+    "id": "n4-l24-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson24#2"
+    ],
+    "difficulty": 2,
+    "stem": "玄関の かぎは もう（　）ありますよ。安心して 寝て ください。",
+    "options": [
+      "かかって",
+      "かける",
+      "かけて",
+      "かかった"
+    ],
+    "answer": 2,
+    "full": "玄関の かぎは もう かけて ありますよ。安心して 寝て ください。",
+    "tr": {
+      "zh": "玄关的门已经锁好了。放心睡吧。",
+      "en": "The front door is already locked. You can sleep easy."
+    },
+    "why": {
+      "zh": "「てある」只接他动词：锁门是「かぎをかける」（他动词），所以是「かけてある」。",
+      "en": "「てある」 takes only transitive verbs: locking is 「かぎをかける」, so 「かけてある」."
+    },
+    "wrong": [
+      {
+        "zh": "「かかる」是自动词，自动词的状态用「かかっている」，不能说「かかってある」。",
+        "en": "「かかる」 is intransitive; its state is 「かかっている」, never 「かかってある」."
+      },
+      {
+        "zh": "「ある」要接て形，「かけるあります」不成立。",
+        "en": "「ある」 needs the て-form; 「かけるあります」 isn't Japanese."
+      },
+      null,
+      {
+        "zh": "「ある」要接て形，「かかったあります」不成立。",
+        "en": "「ある」 needs the て-form; 「かかったあります」 isn't Japanese."
+      }
+    ]
+  },
+  {
+    "id": "n4-l24-006",
+    "type": "narabe",
+    "refs": [
+      "lesson24#2"
+    ],
+    "difficulty": 1,
+    "stem": "黒板に [_] [_] [★] [_]。",
+    "options": [
+      "書いて",
+      "明日の",
+      "あります",
+      "予定が"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "黒板に 明日の 予定が 書いて あります。",
+    "tr": {
+      "zh": "黑板上写着明天的安排。",
+      "en": "Tomorrow's schedule is written on the blackboard."
+    },
+    "why": {
+      "zh": "明日の ＋ 予定が ＋ 書いて ＋ あります：「Nが＋他动词て形＋ある」。★ 在第三格，是「書いて」。",
+      "en": "明日の ＋ 予定が ＋ 書いて ＋ あります: 「N が ＋ transitive て-form ＋ ある」. The ★ is the third slot: 「書いて」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l24-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson24#3"
+    ],
+    "difficulty": 1,
+    "stem": "あれ、電気が まだ ついて（　）よ。消して ください。",
+    "options": [
+      "おく",
+      "ある",
+      "しまう",
+      "いる"
+    ],
+    "answer": 3,
+    "full": "あれ、電気が まだ ついて いる よ。消して ください。",
+    "tr": {
+      "zh": "咦，灯还亮着呢。请关掉。",
+      "en": "Hey, the light's still on. Please turn it off."
+    },
+    "why": {
+      "zh": "「つく」是自动词，单纯描述“灯亮着”的状态用「ている」。",
+      "en": "「つく」 is intransitive; simply describing that the light is on is 「ている」."
+    },
+    "wrong": [
+      {
+        "zh": "「ておく」是动作者有目的地事先做，主语是「電気が」又是自动词，不成立。",
+        "en": "「ておく」 is something an agent does on purpose; it doesn't fit 「電気が」 with an intransitive verb."
+      },
+      {
+        "zh": "「てある」只接他动词，「ついてある」是错的，要说「つけてある」。",
+        "en": "「てある」 takes only transitive verbs; 「ついてある」 is wrong (it would be 「つけてある」)."
+      },
+      {
+        "zh": "「ついてしまう」是“会亮起来（遗憾）”，和「まだ」「消してください」对不上。",
+        "en": "「ついてしまう」 means \"will end up coming on\", which doesn't fit 「まだ」 and \"turn it off\"."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n4-l24-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson24#3"
+    ],
+    "difficulty": 2,
+    "stem": "あした お客さんが 来るから、今晩 ビール（　）。",
+    "options": [
+      "が 冷えて いる",
+      "を 冷やして おこう",
+      "が 冷やして ある",
+      "を 冷やして しまった"
+    ],
+    "answer": 1,
+    "full": "あした お客さんが 来るから、今晩 ビールを 冷やして おこう。",
+    "tr": {
+      "zh": "明天有客人来，今晚先把啤酒冰上吧。",
+      "en": "Guests are coming tomorrow, so let's chill the beer tonight."
+    },
+    "why": {
+      "zh": "为了明天的客人，今晚由我来提前准备：动作者视角，用「を＋ておく」，这里是意向形「ておこう」。",
+      "en": "Getting ready tonight for tomorrow's guests, from the doer's side: 「を ＋ ておく」, here the volitional 「ておこう」."
+    },
+    "wrong": [
+      {
+        "zh": "「が冷えている」只描述啤酒现在是冰的，和“为了明天、今晚要做”的准备对不上。",
+        "en": "「が冷えている」 only describes the beer as cold now; it isn't something done tonight for tomorrow."
+      },
+      null,
+      {
+        "zh": "「が冷やしてある」是看到的现状（已经冰好了），和「今晩」（今晚要做）对不上。",
+        "en": "「が冷やしてある」 is a state you observe (already chilled), not something to do 「今晩」."
+      },
+      {
+        "zh": "「てしまった」是已经发生的完了或遗憾，“明天有客人所以今晚……”要的是准备。",
+        "en": "「てしまった」 is a finished or regretted act; the sentence calls for preparing ahead."
+      }
+    ]
+  },
+  {
+    "id": "n4-l24-009",
+    "type": "narabe",
+    "refs": [
+      "lesson24#3"
+    ],
+    "difficulty": 2,
+    "stem": "母が [_] [_] [★] [_] ので、すぐ 食べられます。",
+    "options": [
+      "くれた",
+      "作って",
+      "晩ご飯を",
+      "おいて"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "母が 晩ご飯を 作って おいて くれた ので、すぐ 食べられます。",
+    "tr": {
+      "zh": "妈妈事先帮我做好了晚饭，所以马上就能吃。",
+      "en": "Mom made dinner ahead of time for me, so I can eat right away."
+    },
+    "why": {
+      "zh": "晩ご飯を ＋ 作って ＋ おいて（事先做好）＋ くれた（为我）。★ 在第三格，是「おいて」。",
+      "en": "晩ご飯を ＋ 作って ＋ おいて (in advance) ＋ くれた (for me). The ★ is the third slot: 「おいて」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l24-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson24#4"
+    ],
+    "difficulty": 1,
+    "stem": "わたしは ゆうべ ビール（　）冷やして おいた。",
+    "options": [
+      "で",
+      "が",
+      "に",
+      "を"
+    ],
+    "answer": 3,
+    "full": "わたしは ゆうべ ビールを 冷やして おいた。",
+    "tr": {
+      "zh": "我昨晚把啤酒冰好了。",
+      "en": "I chilled the beer last night."
+    },
+    "why": {
+      "zh": "主语是「わたしは」，是动作者视角的「ておく」，宾语用「を」。",
+      "en": "The subject is 「わたしは」 — 「ておく」 from the doer's side, so the object takes 「を」."
+    },
+    "wrong": [
+      {
+        "zh": "「で」表示场所或手段，“用啤酒冰”意思不通。",
+        "en": "「で」 marks a place or means; \"chill with beer\" makes no sense."
+      },
+      {
+        "zh": "「が」是「てある」的用法（ビールが冷やしてある），「ておく」的宾语要用「を」。",
+        "en": "「が」 belongs with 「てある」 (ビールが冷やしてある); 「ておく」 takes 「を」."
+      },
+      {
+        "zh": "「に」表示对象或场所，“冰到啤酒里”意思不通。",
+        "en": "「に」 marks a target or place; it makes no sense with the beer here."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n4-l24-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson24#4"
+    ],
+    "difficulty": 2,
+    "stem": "（部屋に 入って）あれ、（　）ある。だれが 開けたんだろう。",
+    "options": [
+      "窓を 開いて",
+      "窓が 開けて",
+      "窓が 開いて",
+      "窓に 開けて"
+    ],
+    "answer": 1,
+    "full": "（部屋に 入って）あれ、窓が 開けて ある。だれが 開けたんだろう。",
+    "tr": {
+      "zh": "（进了房间）咦，窗户被打开着。是谁开的呢？",
+      "en": "(Entering the room) Huh, the window's been left open. Who opened it?"
+    },
+    "why": {
+      "zh": "“谁开的”说明是有人有意做的结果状态，用「が＋他动词（開ける）て形＋ある」。",
+      "en": "\"Who opened it?\" points to a deliberate result: 「が ＋ transitive (開ける) て-form ＋ ある」."
+    },
+    "wrong": [
+      {
+        "zh": "「開く」是自动词，不能接「てある」，也不用「を」。",
+        "en": "「開く」 is intransitive: it can't take 「てある」 or 「を」."
+      },
+      null,
+      {
+        "zh": "「開く」是自动词，「開いてある」是错的，自动词的状态说「開いている」。",
+        "en": "「開く」 is intransitive; 「開いてある」 is wrong — its state is 「開いている」."
+      },
+      {
+        "zh": "「てある」的主语用「が」，「窓に」不对。",
+        "en": "「てある」 marks its subject with 「が」; 「窓に」 is wrong."
+      }
+    ]
+  },
+  {
+    "id": "n4-l24-012",
+    "type": "bunpou",
+    "refs": [
+      "lesson24#5"
+    ],
+    "difficulty": 1,
+    "stem": "日本に 来て（　）、一度も 国へ 帰って いません。",
+    "options": [
+      "ばかり",
+      "以来",
+      "ところ",
+      "までに"
+    ],
+    "answer": 1,
+    "full": "日本に 来て 以来、一度も 国へ 帰って いません。",
+    "tr": {
+      "zh": "自从来了日本，一次都没回过国。",
+      "en": "Since coming to Japan, I haven't been home once."
+    },
+    "why": {
+      "zh": "从“来日本”那个时间点一直到现在都没回国，用「て形＋以来」（自从……以来）。",
+      "en": "From the time I came to Japan up to now, I haven't been back — 「て-form ＋ 以来」 (ever since)."
+    },
+    "wrong": [
+      {
+        "zh": "「来てばかり」是“净是来”，不是“自从来了以后”。",
+        "en": "「来てばかり」 means \"doing nothing but come\", not \"since coming\"."
+      },
+      null,
+      {
+        "zh": "「ところ」不接て形，「来てところ」不成立。",
+        "en": "「ところ」 doesn't follow the て-form; 「来てところ」 isn't Japanese."
+      },
+      {
+        "zh": "「までに」不接て形，而且表示期限，和“一直没回”对不上。",
+        "en": "「までに」 doesn't follow the て-form and marks a deadline, which doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n4-l24-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson24#5"
+    ],
+    "difficulty": 2,
+    "stem": "大学を 卒業して 以来、（　）。",
+    "options": [
+      "彼に 一度 会った",
+      "彼に 会いに 行こう",
+      "彼には 一度も 会って いない",
+      "彼に 会う ところだ"
+    ],
+    "answer": 2,
+    "full": "大学を 卒業して 以来、彼には 一度も 会って いない。",
+    "tr": {
+      "zh": "大学毕业以后，就一次都没见过他。",
+      "en": "I haven't seen him once since graduating from university."
+    },
+    "why": {
+      "zh": "「て以来」后面接从那以后一直持续到现在的状态，所以是「一度も会っていない」。",
+      "en": "「て以来」 is followed by a state that has lasted from then until now — 「一度も会っていない」."
+    },
+    "wrong": [
+      {
+        "zh": "「一度会った」是一次性的动作，「て以来」后面不接这种句子（要说「卒業してから」）。",
+        "en": "「一度会った」 is a one-off action; 「て以来」 isn't followed by that (you'd use 「てから」)."
+      },
+      {
+        "zh": "「会いに行こう」是意向，不是从过去延续到现在的状态。",
+        "en": "「会いに行こう」 is an intention, not a state continuing from the past."
+      },
+      null,
+      {
+        "zh": "「会うところだ」是“正要见”，说的是此刻，和「以来」的长期持续对不上。",
+        "en": "「会うところだ」 means \"about to meet\" right now, not something lasting since then."
+      }
+    ]
+  },
+  {
+    "id": "n4-l24-014",
+    "type": "narabe",
+    "refs": [
+      "lesson24#5"
+    ],
+    "difficulty": 2,
+    "stem": "わたしは 10年前に [_] [_] [★] [_] 東京に 住んで います。",
+    "options": [
+      "以来",
+      "日本へ",
+      "ずっと",
+      "来て"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "わたしは 10年前に 日本へ 来て 以来 ずっと 東京に 住んで います。",
+    "tr": {
+      "zh": "我10年前来到日本，从那以后一直住在东京。",
+      "en": "I came to Japan ten years ago and have lived in Tokyo ever since."
+    },
+    "why": {
+      "zh": "日本へ ＋ 来て ＋ 以来 ＋ ずっと ＋ 東京に住んでいます。★ 在第三格，是「以来」。",
+      "en": "日本へ ＋ 来て ＋ 以来 ＋ ずっと ＋ 東京に住んでいます. The ★ is the third slot: 「以来」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

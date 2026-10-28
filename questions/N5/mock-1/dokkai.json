@@ -1,0 +1,326 @@
+[
+  {
+    "id": "n5-m1-p1",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "キムさんは 「わたしの アルバイト」の さくぶんを 書きました。",
+    "passage": "わたしは 毎週 土曜日と 日曜日に、駅の 前の パン屋で アルバイトを して います。店は 朝 七時からですから、わたしは 六時半に 店へ 行きます。朝は お客さんが たくさん 来ますから、とても [[1]]。でも、店の 人は みんな やさしいですから、だいじょうぶです。\nわたしは 店で パンを [[2]]、お客さんと 話したり します。日本語の 勉強にも なります。\n先週、わたしは はじめて パンを 作りました。店長 [[3]] 「上手ですね」と 言いました。とても うれしかったです。\n[[4]]、自分の 店を 持ちたいです。",
+    "tr": {
+      "zh": "我每周六和周日在车站前的面包店打工。店早上七点开门，所以我六点半到店里。早上客人很多，非常忙。不过店里的人都很亲切，所以没问题。我在店里卖卖面包、和客人聊聊天，这对学日语也有帮助。上周我第一次做了面包。店长说：“做得真好啊。”我非常高兴。总有一天，我想拥有自己的店。",
+      "en": "Every Saturday and Sunday I work part-time at a bakery in front of the station. The shop opens at seven, so I get there at six-thirty. Lots of customers come in the morning, so it's very busy. But everyone at the shop is kind, so it's fine. At the shop I sell bread, chat with customers and so on — it's good Japanese practice too. Last week I made bread for the first time. The manager said, “That's well done.” I was really happy. Someday I want to have a shop of my own."
+    },
+    "questions": [
+      {
+        "options": [
+          "いそがしいです",
+          "いそがしかったです",
+          "ひまです",
+          "いそがしく ありません"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "“早上客人很多，所以……”，结果是忙；讲的是每周的习惯，用现在式「いそがしいです」。",
+          "en": "\"Lots of customers come, so…\" — it's busy; and it's a weekly routine, so the present 「いそがしいです」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「いそがしかったです」是过去式，这一段讲的是每周都这样，用现在式。",
+            "en": "「いそがしかったです」 is past, but the paragraph describes what happens every week."
+          },
+          {
+            "zh": "「ひまです」（很闲）和“客人很多”矛盾。",
+            "en": "「ひまです」 (not busy) contradicts \"lots of customers\"."
+          },
+          {
+            "zh": "客人多却“不忙”说不通，而且「とても」不和这种否定搭配。",
+            "en": "\"Not busy\" doesn't follow from lots of customers, and 「とても」 doesn't go with this negative."
+          }
+        ]
+      },
+      {
+        "options": [
+          "うったり",
+          "うったら",
+          "うっても",
+          "うれば"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "后面是「話したり します」，列举动作用「〜たり〜たり する」，前面也要用「うったり」。",
+          "en": "The sentence ends 「話したり します」 — listing actions with 「〜たり〜たり する」, so the first verb is 「うったり」 too."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「うったら」是条件（如果卖了），和后面的「話したり します」接不上。",
+            "en": "「うったら」 is a condition (if/when I sell); it doesn't pair with 「話したり します」."
+          },
+          {
+            "zh": "「うっても」是“即使卖”，意思说不通。",
+            "en": "「うっても」 (even if I sell) makes no sense here."
+          },
+          {
+            "zh": "「うれば」是假定条件，不能和「〜たり します」一起列举动作。",
+            "en": "「うれば」 is a condition; it can't list actions with 「〜たり します」."
+          }
+        ]
+      },
+      {
+        "options": [
+          "が",
+          "を",
+          "で",
+          "に"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "说「上手ですね」的人是店长，说话的主体用「が」。",
+          "en": "The manager is the one who said 「上手ですね」; the speaker takes 「が」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「を」表示宾语，店长不是“说”的对象。",
+            "en": "「を」 marks an object; the manager isn't what was said."
+          },
+          {
+            "zh": "「で」表示场所或手段，人不能用「で」做说话的主体。",
+            "en": "「で」 marks a place or means, not the person speaking."
+          },
+          {
+            "zh": "「店長に 言いました」是“对店长说”，那样说「上手ですね」的就成了我，意思不对。",
+            "en": "「店長に 言いました」 means \"said to the manager\" — then the writer would be praising themself."
+          }
+        ]
+      },
+      {
+        "options": [
+          "いつか",
+          "なにか",
+          "きのう",
+          "どこか"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「持ちたいです」是将来的愿望，用「いつか」（总有一天）。",
+          "en": "「持ちたいです」 is a wish for the future, so 「いつか」 (someday)."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「なにか」是“某样东西”，后面已经有宾语「自分の 店を」，放不进去。",
+            "en": "「なにか」 (something) has no place here — the object is already 「自分の 店を」."
+          },
+          {
+            "zh": "「きのう」是过去，不能和表示将来愿望的「〜たいです」搭配。",
+            "en": "「きのう」 (yesterday) is past; it doesn't go with a future wish in 「〜たいです」."
+          },
+          {
+            "zh": "「どこか」是“某个地方”，后面没有「で」「に」等助词，而且意思也接不上。",
+            "en": "「どこか」 (somewhere) would need a particle like 「で」, and it doesn't fit the meaning."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-m1-p2",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "ヤンさんの 机の 上に、この メモが ありました。",
+    "passage": "ヤンさん\n\n山田先生から 電話が ありました。あしたの 日本語の クラスは 九時からでしたが、十時からに なりました。きょうしつは 同じです。\nクラスの 前に、図書館で 先生に 本を かえして ください。先生は 九時半まで 図書館に います。\n\n田中",
+    "tr": {
+      "zh": "杨同学：山田老师来电话了。明天的日语课本来九点开始，现在改成十点开始了。教室不变。上课前，请在图书馆把书还给老师。老师九点半之前都在图书馆。田中",
+      "en": "Yang — Ms. Yamada called. Tomorrow's Japanese class was going to start at nine, but it now starts at ten. Same classroom. Before class, please return the book to her at the library. She'll be in the library until nine-thirty. — Tanaka"
+    },
+    "questions": [
+      {
+        "q": "ヤンさんは あした はじめに 何を しますか。",
+        "options": [
+          "図書館で 先生に 本を かえします。",
+          "きょうしつで 日本語を 勉強します。",
+          "山田先生に 電話を します。",
+          "図書館で 田中さんに 本を かえします。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "课改到十点，老师只在图书馆待到九点半，又要求“上课前”还书，所以先去图书馆还书。",
+          "en": "Class is now at ten, the teacher is in the library only until 9:30, and the book goes back \"before class\" — so the library comes first."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "上课改成了十点，而且要在上课前还书，所以上课不是第一件事。",
+            "en": "Class now starts at ten and the book must be returned before it, so class isn't first."
+          },
+          {
+            "zh": "打电话的是山田老师，便条没有让杨同学回电话。",
+            "en": "Ms. Yamada was the one who called; the note doesn't ask Yang to call back."
+          },
+          {
+            "zh": "书要还给老师（「先生に」），田中只是写便条的人。",
+            "en": "The book goes to the teacher (「先生に」); Tanaka only wrote the note."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-m1-p3",
+    "type": "short",
+    "difficulty": 1,
+    "intro": "マイクさんが 友だちの さくらさんに メールを 書きました。",
+    "passage": "さくらさん\n\nきのうの パーティーは たのしかったですね。さくらさんの ケーキは とても おいしかったです。ほかの 友だちも 「また 食べたい」と 言って いました。\nわたしも ケーキを 作りたいですから、こんど 作り方を 教えて ください。土曜日の 午後は どうですか。\n\nマイク",
+    "tr": {
+      "zh": "樱：昨天的派对很开心吧。你做的蛋糕非常好吃。其他朋友也说“还想再吃”。我也想做蛋糕，下次请教我做法吧。星期六下午怎么样？迈克",
+      "en": "Sakura — Yesterday's party was fun, wasn't it? Your cake was delicious. The other friends said they'd like to have it again, too. I want to make cakes myself, so please teach me how sometime. How about Saturday afternoon? — Mike"
+    },
+    "questions": [
+      {
+        "q": "マイクさんは 土曜日に 何を したいですか。",
+        "options": [
+          "さくらさんに ケーキの 作り方を ならいたいです。",
+          "さくらさんに ケーキの 作り方を 教えたいです。",
+          "さくらさんと また パーティーを したいです。",
+          "友だちと いっしょに また ケーキを 食べたいです。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "迈克想自己做蛋糕，请樱“教我做法”，并提议星期六下午，也就是想跟樱学做蛋糕。",
+          "en": "Mike wants to make cakes and asks Sakura to teach him how, proposing Saturday afternoon — he wants to learn from her."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "方向反了：会做蛋糕的是樱，是她教迈克。",
+            "en": "Backwards: Sakura is the one who can bake; she'd teach Mike."
+          },
+          {
+            "zh": "派对是昨天的事，邮件没有说要再开派对。",
+            "en": "The party was yesterday; the email doesn't suggest another one."
+          },
+          {
+            "zh": "说“还想再吃”的是其他朋友，不是迈克星期六的安排。",
+            "en": "\"We'd like to have it again\" is what the other friends said, not Mike's plan for Saturday."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-m1-p4",
+    "type": "mid",
+    "difficulty": 2,
+    "intro": "これは 留学生の アナさんが 書いた 作文です。",
+    "passage": "自転車\n\nわたしは 去年の 四月に 日本へ 来ました。はじめは 毎日 バスで 学校へ 行って いました。バスは 便利ですが、一回 二百円 かかります。それに、朝は 人が 多くて、いつも 立って いました。\n六月に、となりの 部屋の 林さんから 古い 自転車を もらいました。林さんは 「新しい 自転車を 買いましたから、これは もう 使いません。どうぞ」と 言いました。\n今は 毎朝 自転車で 学校へ 行きます。二十分ぐらい かかりますが、お金は かかりません。でも、雨の 日は あぶないですから、バスに 乗ります。\n休みの 日も 自転車で 町の いろいろな 所へ 行きます。きれいな 公園や おいしい パン屋が ありました。こんど、林さんと いっしょに 自転車で 海まで 行きたいです。",
+    "tr": {
+      "zh": "自行车。我去年四月来到日本。一开始每天坐公交车去学校。公交车很方便，但是坐一次要两百日元。而且早上人很多，总是站着。六月，我从隔壁房间的林先生那里得到了一辆旧自行车。林先生说：“我买了新自行车，这辆不用了。给你吧。”现在我每天早上骑自行车去学校。大约要二十分钟，但是不花钱。不过下雨天很危险，所以坐公交车。休息日我也骑自行车去城里各种地方，发现了漂亮的公园和好吃的面包店。下次我想和林先生一起骑车去海边。",
+      "en": "My bicycle. I came to Japan last April. At first I took the bus to school every day. The bus is convenient, but each ride costs 200 yen. Besides, it was crowded in the mornings and I always had to stand. In June I got an old bicycle from Mr. Hayashi, who lives next door. He said, “I bought a new bike, so I won't use this one any more. Here you go.” Now I ride to school every morning. It takes about twenty minutes, but it costs nothing. On rainy days, though, it's dangerous, so I take the bus. On days off I also ride all over town; I found pretty parks and a good bakery. Next time I'd like to ride to the sea with Mr. Hayashi."
+    },
+    "questions": [
+      {
+        "q": "アナさんは 今 どうやって 学校へ 行きますか。",
+        "difficulty": 2,
+        "options": [
+          "雨の 日は バスで、ほかの 日は 自転車で 行きます。",
+          "毎日 自転車で 行きます。",
+          "毎日 バスで 行きます。",
+          "雨の 日は 自転車で、ほかの 日は バスで 行きます。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "第三段：「今は 毎朝 自転車で 学校へ 行きます」，但「雨の 日は あぶないですから、バスに 乗ります」。",
+          "en": "Paragraph three: she now rides to school every morning, but 「雨の 日は あぶないですから、バスに 乗ります」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "下雨天骑车危险，她会坐公交车，不是每天都骑车。",
+            "en": "On rainy days she takes the bus, so it isn't the bike every day."
+          },
+          {
+            "zh": "每天坐公交车是刚来日本时（「はじめは」）的事。",
+            "en": "The bus every day was at first (「はじめは」), before she had the bike."
+          },
+          {
+            "zh": "反了：下雨天坐公交车，其他日子骑自行车。",
+            "en": "Backwards: the bus is for rainy days, the bike for the rest."
+          }
+        ]
+      },
+      {
+        "q": "林さんは どうして 古い 自転車を アナさんに あげましたか。",
+        "difficulty": 1,
+        "options": [
+          "新しい 自転車を 買ったから",
+          "自転車に 乗るのが きらいだから",
+          "アナさんが バスは 高いと 言ったから",
+          "毎日 バスで 会社へ 行くから"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "林先生说「新しい 自転車を 買いましたから、これは もう 使いません」，「から」表示理由。",
+          "en": "Mr. Hayashi says 「新しい 自転車を 買いましたから、これは もう 使いません」 — the 「から」 gives the reason."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "文中没说林先生讨厌骑车，他刚买了新自行车。",
+            "en": "Nothing says he dislikes cycling — he just bought a new bike."
+          },
+          {
+            "zh": "觉得公交车贵的是安娜自己写的，文中没说她对林先生说过。",
+            "en": "The bus fare is Ana's own remark in the essay; she never says she told Mr. Hayashi."
+          },
+          {
+            "zh": "文中没提林先生怎么上班；他买了新自行车，说明他还骑车。",
+            "en": "The text never says how he commutes; he bought a new bike, so he still rides."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-m1-p5",
+    "type": "info",
+    "difficulty": 2,
+    "intro": "リーさんは 先週 日本へ 来たばかりで、日本語が まだ ぜんぜん 分かりません。月曜日から 金曜日まで、朝 九時から 夜 七時まで 仕事が あります。",
+    "passage": "ひかり町 日本語教室\n| クラス | 曜日 | 時間 | 一回の お金 |\n| A（はじめての 人） | 火・木 | 10:00〜12:00 | 300円 |\n| B（はじめての 人） | 土 | 14:00〜16:00 | 500円 |\n| C（少し 話せる 人） | 水 | 19:30〜21:00 | 300円 |\n| D（少し 話せる 人） | 日 | 10:00〜12:00 | 500円 |\n・入りたい 人は、クラスの 一週間 前までに 電話して ください。\n・教室は 駅の 前の ひかり会館の 二階です。",
+    "tr": {
+      "zh": "光町日语教室。A班（零基础）：周二、周四 10:00–12:00，每次300日元。B班（零基础）：周六 14:00–16:00，每次500日元。C班（会说一点的人）：周三 19:30–21:00，每次300日元。D班（会说一点的人）：周日 10:00–12:00，每次500日元。想参加的人请在上课一周前打电话报名。教室在车站前光会馆的二楼。",
+      "en": "Hikari Town Japanese Classes. A (beginners): Tue & Thu 10:00–12:00, ¥300 a session. B (beginners): Sat 14:00–16:00, ¥500. C (those who speak a little): Wed 19:30–21:00, ¥300. D (those who speak a little): Sun 10:00–12:00, ¥500. To join, phone at least a week before the class. Classes are held on the second floor of Hikari Hall, in front of the station."
+    },
+    "questions": [
+      {
+        "q": "リーさんが 入る ことが できる クラスは どれですか。",
+        "options": [
+          "Bクラス",
+          "Aクラス",
+          "Cクラス",
+          "Dクラス"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "李先生完全不会日语，只能上“零基础”的 A 或 B；周一到周五白天上班，A（周二、周四上午）去不了，只剩周六的 B。",
+          "en": "Lee knows no Japanese, so only the beginner classes A and B fit; he works weekday daytimes, which rules out A (Tue/Thu mornings) — leaving Saturday's B."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "A 是零基础班，但在周二、周四上午，李先生要上班。",
+            "en": "A is for beginners, but it's on Tuesday and Thursday mornings, when Lee is at work."
+          },
+          {
+            "zh": "C 在周三晚上七点半，下班后来得及，但这是给“会说一点”的人的班。",
+            "en": "C (Wed 7:30 pm) fits after work, but it's for people who already speak a little."
+          },
+          {
+            "zh": "D 在周日，时间可以，但也是给“会说一点”的人的班。",
+            "en": "D is on Sunday, so the time works, but it's also for people who already speak some Japanese."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,466 @@
+[
+  {
+    "id": "n3-l38-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson38#1"
+    ],
+    "difficulty": 1,
+    "stem": "何度も 注意した（　）、彼は また 同じ ミスを した。",
+    "options": [
+      "おかげで",
+      "にもかかわらず",
+      "ために",
+      "からには"
+    ],
+    "answer": 1,
+    "full": "何度も 注意した にもかかわらず、彼は また 同じ ミスを した。",
+    "tr": {
+      "zh": "尽管提醒了很多次，他还是犯了同样的错误。",
+      "en": "Despite being warned many times, he made the same mistake again."
+    },
+    "why": {
+      "zh": "提醒了很多次，结果却又犯错，前后矛盾、出乎意料，用「にもかかわらず」（尽管……却……）。",
+      "en": "He was warned many times yet made the mistake again — an unexpected contradiction, so 「にもかかわらず」 (\"despite\")."
+    },
+    "wrong": [
+      {
+        "zh": "「おかげで」用于好结果，“又犯同样的错”是坏事，也不是因果。",
+        "en": "「おかげで」 is for good results; repeating a mistake isn't one."
+      },
+      null,
+      {
+        "zh": "「ために」表示原因，“因为提醒了所以又犯错”逻辑不通。",
+        "en": "「ために」 gives a cause; \"he made the mistake because he was warned\" isn't logical."
+      },
+      {
+        "zh": "「からには」后面接决心或义务，不接已经发生的事实。",
+        "en": "「からには」 is followed by a resolve or duty, not by something that already happened."
+      }
+    ]
+  },
+  {
+    "id": "n3-l38-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson38#1"
+    ],
+    "difficulty": 2,
+    "stem": "病気（　）にもかかわらず、彼は 休まずに 仕事を 続けた。",
+    "options": [
+      "な",
+      "の",
+      "である",
+      "だ"
+    ],
+    "answer": 2,
+    "full": "病気である にもかかわらず、彼は 休まずに 仕事を 続けた。",
+    "tr": {
+      "zh": "尽管生着病，他还是没有休息，继续工作。",
+      "en": "Despite being ill, he kept working without taking time off."
+    },
+    "why": {
+      "zh": "名词接「にもかかわらず」用「名词＋である＋にもかかわらず」（也可以直接接名词）。",
+      "en": "A noun connects to 「にもかかわらず」 as 「noun ＋ である ＋ にもかかわらず」 (or directly)."
+    },
+    "wrong": [
+      {
+        "zh": "「な」用于な形容词，「病気」是名词，「病気なにもかかわらず」不成立。",
+        "en": "「な」 is for な-adjectives; 「病気」 is a noun."
+      },
+      {
+        "zh": "「の」不能连接名词和「にもかかわらず」。",
+        "en": "「の」 can't link a noun to 「にもかかわらず」."
+      },
+      null,
+      {
+        "zh": "「だ」是句尾形式，后面不能接「にもかかわらず」。",
+        "en": "「だ」 ends a sentence and can't be followed by 「にもかかわらず」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l38-003",
+    "type": "narabe",
+    "refs": [
+      "lesson38#1"
+    ],
+    "difficulty": 2,
+    "stem": "[_] [_] [★] [_] 計画は 予定どおり 実行された。",
+    "options": [
+      "人が",
+      "にもかかわらず",
+      "反対する",
+      "多かった"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "反対する 人が 多かった にもかかわらず 計画は 予定どおり 実行された。",
+    "tr": {
+      "zh": "尽管反对的人很多，计划还是按预定执行了。",
+      "en": "Despite many people opposing it, the plan went ahead as scheduled."
+    },
+    "why": {
+      "zh": "「反対する人が多かった」是前提事实，接「にもかかわらず」，后面是意外的结果：反対する → 人が → 多かった → にもかかわらず。★ 是「多かった」。",
+      "en": "「反対する人が多かった」 is the fact, then 「にもかかわらず」, then the unexpected result: 反対する → 人が → 多かった → にもかかわらず. The ★ is 「多かった」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l38-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson38#2"
+    ],
+    "difficulty": 2,
+    "stem": "この 部屋は 狭い（　）、日当たりが よくて 住みやすい。",
+    "options": [
+      "くせに",
+      "ながらも",
+      "からには",
+      "ために"
+    ],
+    "answer": 1,
+    "full": "この 部屋は 狭い ながらも、日当たりが よくて 住みやすい。",
+    "tr": {
+      "zh": "这个房间虽然小，但采光好，住着舒服。",
+      "en": "This room is small, but it gets plenty of sun and is comfortable to live in."
+    },
+    "why": {
+      "zh": "“小”和“采光好、舒服”是同一主语身上的转折，客观地说“虽然……但是……”用「ながらも」。",
+      "en": "\"Small\" vs \"sunny and comfortable\" is a contrast within the same subject: neutral \"although\" is 「ながらも」."
+    },
+    "wrong": [
+      {
+        "zh": "「くせに」带有责备、轻蔑，用于批评人，这里是在夸房间。",
+        "en": "「くせに」 is contemptuous criticism of a person; here the room is being praised."
+      },
+      null,
+      {
+        "zh": "「からには」后面接决心或义务，“既然小就采光好”说不通。",
+        "en": "「からには」 is followed by a resolve or duty; it doesn't fit a description."
+      },
+      {
+        "zh": "「ために」表示原因，“因为小所以采光好”逻辑不通。",
+        "en": "「ために」 gives a cause; \"sunny because it's small\" isn't logical."
+      }
+    ]
+  },
+  {
+    "id": "n3-l38-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson38#2"
+    ],
+    "difficulty": 2,
+    "stem": "彼は 本当の ことを（　）、何も 言わなかった。",
+    "options": [
+      "知って いるながら",
+      "知って いたながら",
+      "知って いながら",
+      "知って いてながら"
+    ],
+    "answer": 2,
+    "full": "彼は 本当の ことを 知って いながら、何も 言わなかった。",
+    "tr": {
+      "zh": "他明明知道真相，却什么也没说。",
+      "en": "Although he knew the truth, he said nothing."
+    },
+    "why": {
+      "zh": "表示转折的「ながら」接动词ます形（去掉ます），「知っています」→「知っていながら」。",
+      "en": "Concessive 「ながら」 follows the ます-stem: 「知っています」 → 「知っていながら」."
+    },
+    "wrong": [
+      {
+        "zh": "「ながら」不接辞书形「いる」，要接ます形「い」。",
+        "en": "「ながら」 doesn't follow the dictionary form 「いる」; it needs the stem 「い」."
+      },
+      {
+        "zh": "「ながら」不接た形「いた」。",
+        "en": "「ながら」 doesn't follow the た-form 「いた」."
+      },
+      null,
+      {
+        "zh": "「ながら」不接て形「いて」。",
+        "en": "「ながら」 doesn't follow the て-form 「いて」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l38-006",
+    "type": "narabe",
+    "refs": [
+      "lesson38#2"
+    ],
+    "difficulty": 2,
+    "stem": "彼女は [_] [★] [_] [_] 意見を 言う。",
+    "options": [
+      "大人の",
+      "ながら",
+      "ような",
+      "子供"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "彼女は 子供 ながら 大人の ような 意見を 言う。",
+    "tr": {
+      "zh": "她虽然是个孩子，却能说出像大人一样的意见。",
+      "en": "Although she's a child, she gives opinions like an adult's."
+    },
+    "why": {
+      "zh": "名词直接接「ながら」表示“虽然是……”，「大人のような」修饰「意見」：子供 → ながら → 大人の → ような。★ 是「ながら」。",
+      "en": "A noun takes 「ながら」 directly (\"although a child\"), and 「大人のような」 modifies 「意見」: 子供 → ながら → 大人の → ような. The ★ is 「ながら」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l38-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson38#3"
+    ],
+    "difficulty": 1,
+    "stem": "兄は 自分では 何も しない（　）、人の やり方には 文句ばかり 言う。",
+    "options": [
+      "おかげで",
+      "ために",
+      "くせに",
+      "としても"
+    ],
+    "answer": 2,
+    "full": "兄は 自分では 何も しない くせに、人の やり方には 文句ばかり 言う。",
+    "tr": {
+      "zh": "哥哥自己什么都不做，却总对别人的做法挑毛病。",
+      "en": "My brother never does anything himself, yet he's always complaining about how others do things."
+    },
+    "why": {
+      "zh": "自己不做却挑别人毛病，说话人对哥哥很不满，带责备语气的“明明……却……”用「くせに」。",
+      "en": "He does nothing yet complains about others, and the speaker is fed up: the blaming \"even though\" is 「くせに」."
+    },
+    "wrong": [
+      {
+        "zh": "「おかげで」用于好结果的原因，“总挑毛病”不是好结果。",
+        "en": "「おかげで」 credits a cause for a good result; constant complaining isn't one."
+      },
+      {
+        "zh": "「ために」表示原因或目的，“因为自己不做所以挑毛病”不是这句的意思。",
+        "en": "「ために」 gives a cause or purpose; the sentence is a contradiction, not cause and effect."
+      },
+      null,
+      {
+        "zh": "「としても」是假设（即使……），这里说的是哥哥平时的事实，不是假设。",
+        "en": "「としても」 is hypothetical (\"even if\"); this describes the brother's real habit."
+      }
+    ]
+  },
+  {
+    "id": "n3-l38-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson38#3"
+    ],
+    "difficulty": 2,
+    "stem": "入った ばかりの 新人の（　）、先輩に 偉そうな 態度を 取るなんて 信じられない。",
+    "options": [
+      "ながら",
+      "くせに",
+      "おかげで",
+      "としても"
+    ],
+    "answer": 1,
+    "full": "入った ばかりの 新人の くせに、先輩に 偉そうな 態度を 取るなんて 信じられない。",
+    "tr": {
+      "zh": "明明是刚进来的新人，却对前辈摆出一副了不起的样子，真难以置信。",
+      "en": "He's a brand-new hire, yet he acts all high and mighty toward his seniors — unbelievable."
+    },
+    "why": {
+      "zh": "说话人在批评新人“明明是新人却摆架子”，名词接「のくせに」，带强烈不满。",
+      "en": "The speaker is criticising the newcomer for acting above his station: noun ＋ 「のくせに」, full of disapproval."
+    },
+    "wrong": [
+      {
+        "zh": "「ながら」接名词时不加「の」（新人ながら），而且是中性的转折，不带批评。",
+        "en": "「ながら」 follows a noun without 「の」 (新人ながら), and it's neutral, not critical."
+      },
+      null,
+      {
+        "zh": "「おかげで」用于好结果的原因，“摆架子”不是好结果。",
+        "en": "「おかげで」 credits a cause for a good result; arrogance isn't one."
+      },
+      {
+        "zh": "「としても」接名词要用「だとしても」，不接「の」。",
+        "en": "With a noun 「としても」 needs 「だとしても」, not 「の」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l38-009",
+    "type": "narabe",
+    "refs": [
+      "lesson38#3"
+    ],
+    "difficulty": 1,
+    "stem": "彼は [_] [_] [★] [_] ばかり 買って いる。",
+    "options": [
+      "ない",
+      "高いもの",
+      "くせに",
+      "お金が"
+    ],
+    "order": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "full": "彼は お金が ない くせに 高いもの ばかり 買って いる。",
+    "tr": {
+      "zh": "他明明没钱，却总买贵的东西。",
+      "en": "He has no money, yet he keeps buying expensive things."
+    },
+    "why": {
+      "zh": "「お金がない」接「くせに」，后面是让人不满的行为「高いものばかり買っている」：お金が → ない → くせに → 高いもの。★ 是「くせに」。",
+      "en": "「お金がない」 takes 「くせに」, followed by the annoying behaviour 「高いものばかり買っている」: お金が → ない → くせに → 高いもの. The ★ is 「くせに」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l38-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson38#4"
+    ],
+    "difficulty": 1,
+    "stem": "たとえ 失敗した（　）、挑戦した ことは 後悔しない。",
+    "options": [
+      "くせに",
+      "おかげで",
+      "としても",
+      "ながら"
+    ],
+    "answer": 2,
+    "full": "たとえ 失敗した としても、挑戦した ことは 後悔しない。",
+    "tr": {
+      "zh": "即使失败了，我也不后悔挑战过。",
+      "en": "Even if I fail, I won't regret having tried."
+    },
+    "why": {
+      "zh": "「たとえ」提示假设，假设失败结果也不变，用「としても」（即使……也……）。",
+      "en": "「たとえ」 signals a hypothesis: even supposing I fail, nothing changes — 「としても」."
+    },
+    "wrong": [
+      {
+        "zh": "「くせに」用于批评别人，不和「たとえ」搭配，也不用于自己。",
+        "en": "「くせに」 criticises someone else and doesn't go with 「たとえ」."
+      },
+      {
+        "zh": "「おかげで」用于好结果的原因，不和「たとえ」搭配。",
+        "en": "「おかげで」 credits a cause for a good result; it doesn't go with 「たとえ」."
+      },
+      null,
+      {
+        "zh": "「ながら」接动词ます形，不接た形「失敗した」。",
+        "en": "「ながら」 follows the ます-stem, not the た-form 「失敗した」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l38-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson38#4"
+    ],
+    "difficulty": 2,
+    "stem": "たとえ 有名な 会社（　）としても、条件が 悪ければ 入りたくない。",
+    "options": [
+      "の",
+      "な",
+      "で",
+      "だ"
+    ],
+    "answer": 3,
+    "full": "たとえ 有名な 会社だ としても、条件が 悪ければ 入りたくない。",
+    "tr": {
+      "zh": "即使是有名的公司，条件不好的话我也不想进。",
+      "en": "Even if it's a famous company, I don't want to join if the conditions are bad."
+    },
+    "why": {
+      "zh": "名词接「としても」要用「名词＋だ＋としても」。",
+      "en": "A noun connects to 「としても」 as 「noun ＋ だ ＋ としても」."
+    },
+    "wrong": [
+      {
+        "zh": "「の」不能连接名词和「としても」。",
+        "en": "「の」 can't link a noun to 「としても」."
+      },
+      {
+        "zh": "「な」用于な形容词修饰名词，「会社」是名词。",
+        "en": "「な」 is for な-adjectives; 「会社」 is a noun."
+      },
+      {
+        "zh": "「で」是て形，「会社でとしても」不成立。",
+        "en": "「で」 is a て-form; 「会社でとしても」 isn't grammatical."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n3-l38-012",
+    "type": "narabe",
+    "refs": [
+      "lesson38#4"
+    ],
+    "difficulty": 2,
+    "stem": "[_] [_] [★] [_] 会議は 予定どおり 行います。",
+    "options": [
+      "来られない",
+      "しても",
+      "部長が",
+      "と"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "部長が 来られない と しても 会議は 予定どおり 行います。",
+    "tr": {
+      "zh": "即使部长来不了，会议也照常进行。",
+      "en": "Even if the department manager can't come, the meeting will go ahead as planned."
+    },
+    "why": {
+      "zh": "「部長が来られない」是假设，接「としても」，后面是不变的结果：部長が → 来られない → と → しても。★ 是「と」。",
+      "en": "「部長が来られない」 is the supposition, then 「としても」, then the unchanged outcome: 部長が → 来られない → と → しても. The ★ is 「と」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

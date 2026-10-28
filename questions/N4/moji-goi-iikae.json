@@ -1,0 +1,953 @@
+[
+  {
+    "id": "n4-mg-401",
+    "type": "iikae",
+    "refs": [
+      "lesson18#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<あには いま りゅうがくして います。>>",
+    "options": [
+      "あには いま がいこくで べんきょうして います。",
+      "あには いま がいこくで はたらいて います。",
+      "あには いま がいこくを りょこうして います。",
+      "あには いま くにの 大学で べんきょうして います。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我哥哥现在在留学。",
+      "en": "My older brother is studying abroad now."
+    },
+    "why": {
+      "zh": "「りゅうがく」（留学）＝到外国去学习。",
+      "en": "「りゅうがく」 means studying in another country."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "在外国“工作”不是留学。",
+        "en": "Working abroad isn't studying abroad."
+      },
+      {
+        "zh": "在外国“旅行”不是留学。",
+        "en": "Travelling abroad isn't studying abroad."
+      },
+      {
+        "zh": "在本国大学学习不是留学。",
+        "en": "Studying at a university at home isn't studying abroad."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-402",
+    "type": "iikae",
+    "refs": [
+      "lesson30#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<この 町は じんこうが へりました。>>",
+    "options": [
+      "この 町に すむ 人が すくなく なりました。",
+      "この 町に すむ 人が おおく なりました。",
+      "この 町の 店が すくなく なりました。",
+      "この 町に 来る 人が すくなく なりました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这个镇的人口减少了。",
+      "en": "This town's population has fallen."
+    },
+    "why": {
+      "zh": "「じんこう」（人口）是住在那里的人数，「へる」＝变少。",
+      "en": "「じんこう」 is the number of people living there; 「へる」 means to decrease."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“变多”是「ふえる」，和「へる」相反。",
+        "en": "\"Grew\" is 「ふえる」, the opposite of 「へる」."
+      },
+      {
+        "zh": "说的是商店变少，不是人口。",
+        "en": "This is about shops, not population."
+      },
+      {
+        "zh": "“来的人”是游客、访客，不是居住人口。",
+        "en": "People who come are visitors, not residents."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-403",
+    "type": "iikae",
+    "refs": [
+      "lesson25#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<来月から この 店の ラーメンが ねあげに なります。>>",
+    "options": [
+      "来月から この 店の ラーメンが たかく なります。",
+      "来月から この 店の ラーメンが やすく なります。",
+      "来月から この 店の ラーメンが おいしく なります。",
+      "来月から この 店の ラーメンが なく なります。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "从下个月起这家店的拉面要涨价。",
+      "en": "From next month, the ramen at this shop is going up in price."
+    },
+    "why": {
+      "zh": "「ねあげ」（涨价）＝价钱变高：「たかく なる」。",
+      "en": "「ねあげ」 is a price rise: it becomes 「たかい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“变便宜”是降价，和涨价相反。",
+        "en": "Getting cheaper is the opposite of a price rise."
+      },
+      {
+        "zh": "“变好吃”是味道，不是价格。",
+        "en": "Tasting better is about flavour, not price."
+      },
+      {
+        "zh": "“没有了”是不卖了，不是涨价。",
+        "en": "Disappearing from the menu isn't a price rise."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-404",
+    "type": "iikae",
+    "refs": [
+      "lesson25#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<田中さんは しょうじきな 人です。>>",
+    "options": [
+      "田中さんは うそを つかない 人です。",
+      "田中さんは よく うそを つく 人です。",
+      "田中さんは よく はたらく 人です。",
+      "田中さんは だれにでも やさしい 人です。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "田中先生是个诚实的人。",
+      "en": "Tanaka is an honest person."
+    },
+    "why": {
+      "zh": "「しょうじき」（诚实）＝不说谎。",
+      "en": "「しょうじき」 (honest) means someone who doesn't lie."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "经常说谎和诚实正好相反。",
+        "en": "Lying often is the opposite of honest."
+      },
+      {
+        "zh": "“很能干活”是勤劳，不是诚实。",
+        "en": "Working hard is diligence, not honesty."
+      },
+      {
+        "zh": "“对谁都温柔”是善良，不是诚实。",
+        "en": "Being kind to everyone is kindness, not honesty."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-405",
+    "type": "iikae",
+    "refs": [
+      "lesson18#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<きのう、さいふを ぬすまれました。>>",
+    "options": [
+      "きのう、だれかが わたしの さいふを とって 行きました。",
+      "きのう、わたしは さいふを おとしました。",
+      "きのう、わたしは さいふを わすれました。",
+      "きのう、わたしは あたらしい さいふを 買いました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "昨天钱包被偷了。",
+      "en": "My wallet was stolen yesterday."
+    },
+    "why": {
+      "zh": "「ぬすまれる」（被偷）＝别人把我的东西拿走了。",
+      "en": "「ぬすまれる」 (be stolen) means someone took my thing."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「おとす」是自己弄丢，不是被别人偷。",
+        "en": "「おとす」 is dropping it yourself, not theft."
+      },
+      {
+        "zh": "「わすれる」是忘带，不是被偷。",
+        "en": "「わすれる」 is forgetting it, not theft."
+      },
+      {
+        "zh": "买新钱包和被偷无关。",
+        "en": "Buying a new wallet isn't being robbed."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-406",
+    "type": "iikae",
+    "refs": [
+      "lesson33#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<あしたは いえを るすに します。>>",
+    "options": [
+      "あしたは いえに いません。",
+      "あしたは ずっと いえに います。",
+      "あしたは いえで ゆっくり 休みます。",
+      "あしたは いえに だれも 来ません。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "明天我不在家。",
+      "en": "I'll be away from home tomorrow."
+    },
+    "why": {
+      "zh": "「るすに する」＝出门、不在家。",
+      "en": "「るすに する」 means being out, not at home."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“一直在家”和不在家相反。",
+        "en": "Being home all day is the opposite."
+      },
+      {
+        "zh": "“在家休息”还是在家。",
+        "en": "Resting at home still means being home."
+      },
+      {
+        "zh": "“没人来”说的是客人，不是我在不在家。",
+        "en": "\"No one will come\" is about visitors, not whether I'm home."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-407",
+    "type": "iikae",
+    "refs": [
+      "lesson22#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<この しごとは わたしが ひきうけます。>>",
+    "options": [
+      "この しごとは わたしが やります。",
+      "この しごとは わたしは やりません。",
+      "この しごとは ほかの 人に たのみます。",
+      "この しごとは もう おわりました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这项工作由我来接。",
+      "en": "I'll take on this job."
+    },
+    "why": {
+      "zh": "「ひきうける」（接受、承担）＝答应由自己来做。",
+      "en": "「ひきうける」 means agreeing to do it yourself."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“我不做”和承担正好相反。",
+        "en": "\"I won't do it\" is the opposite of taking it on."
+      },
+      {
+        "zh": "“交给别人”是推给别人，不是自己承担。",
+        "en": "Asking someone else is handing it off, not taking it on."
+      },
+      {
+        "zh": "“已经做完了”说的是结果，不是接下工作。",
+        "en": "\"It's already done\" is about the result, not accepting the job."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-408",
+    "type": "iikae",
+    "refs": [
+      "lesson25#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<わたしは かれの いけんに はんたいです。>>",
+    "options": [
+      "わたしは かれの いけんが よくないと 思います。",
+      "わたしは かれの いけんが いいと 思います。",
+      "わたしは かれの いけんが よく わかりません。",
+      "わたしは かれの いけんを もっと 聞きたいです。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我反对他的意见。",
+      "en": "I'm against his opinion."
+    },
+    "why": {
+      "zh": "「はんたい」（反对）＝认为那个意见不好。",
+      "en": "「はんたい」 (against) means thinking the opinion isn't good."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "认为“好”是赞成，和反对相反。",
+        "en": "Thinking it's good is agreeing — the opposite."
+      },
+      {
+        "zh": "“不太明白”是不理解，不是反对。",
+        "en": "Not understanding it isn't opposing it."
+      },
+      {
+        "zh": "“想多听听”是感兴趣，不是反对。",
+        "en": "Wanting to hear more is interest, not opposition."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-409",
+    "type": "iikae",
+    "refs": [
+      "lesson32#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<いもうとは しけんに ごうかくしました。>>",
+    "options": [
+      "いもうとは しけんに うかりました。",
+      "いもうとは しけんに おちました。",
+      "いもうとは しけんを うけました。",
+      "いもうとは しけんの べんきょうを しました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "妹妹考试合格了。",
+      "en": "My younger sister passed the exam."
+    },
+    "why": {
+      "zh": "「ごうかくする」（合格）＝「うかる」（考上）。",
+      "en": "「ごうかくする」 (pass) means 「うかる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「おちる」是落榜，和合格相反。",
+        "en": "「おちる」 is failing — the opposite."
+      },
+      {
+        "zh": "「うける」只是参加考试，不知道结果。",
+        "en": "「うける」 is just sitting the exam; it says nothing about the result."
+      },
+      {
+        "zh": "“为考试学习了”是准备，不是结果。",
+        "en": "Studying for it is preparation, not the result."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-410",
+    "type": "iikae",
+    "refs": [
+      "lesson23#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<ちちは いま しゅっちょうして います。>>",
+    "options": [
+      "ちちは いま しごとで ほかの 町に 行って います。",
+      "ちちは いま りょこうで ほかの 町に 行って います。",
+      "ちちは いま びょうきで 会社を 休んで います。",
+      "ちちは いま いえで しごとを して います。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我父亲现在在出差。",
+      "en": "My father is away on a business trip now."
+    },
+    "why": {
+      "zh": "「しゅっちょう」（出差）＝因为工作去别的地方。",
+      "en": "「しゅっちょう」 means going somewhere else for work."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“旅行”是为了玩，不是出差。",
+        "en": "A holiday trip isn't a business trip."
+      },
+      {
+        "zh": "“生病请假”不是出差。",
+        "en": "Being off sick isn't a business trip."
+      },
+      {
+        "zh": "“在家工作”没有去别的地方。",
+        "en": "Working from home means not going anywhere."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-411",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<そふは まいあさ さんぽします。>>",
+    "options": [
+      "そふは まいあさ 外を ゆっくり あるきます。",
+      "そふは まいあさ 外を はしります。",
+      "そふは まいあさ かいものに 行きます。",
+      "そふは まいあさ いえで 休みます。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "爷爷每天早上散步。",
+      "en": "My grandfather goes for a walk every morning."
+    },
+    "why": {
+      "zh": "「さんぽ」（散步）＝在外面慢慢走。",
+      "en": "「さんぽ」 means walking around outside at an easy pace."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“跑步”不是散步。",
+        "en": "Running isn't a stroll."
+      },
+      {
+        "zh": "“去买东西”有别的目的，不是散步。",
+        "en": "Going shopping has another purpose; it isn't a walk."
+      },
+      {
+        "zh": "“在家休息”没有出去走。",
+        "en": "Resting at home involves no walk."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-412",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<ここは きんえんです。>>",
+    "options": [
+      "ここで たばこを すっては いけません。",
+      "ここで たばこを すっても いいです。",
+      "ここで 食べては いけません。",
+      "ここで しゃしんを とっては いけません。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这里禁烟。",
+      "en": "This is a no-smoking area."
+    },
+    "why": {
+      "zh": "「きんえん」（禁烟）＝不可以吸烟。",
+      "en": "「きんえん」 means smoking is not allowed."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“可以吸烟”和禁烟相反。",
+        "en": "\"You may smoke\" is the opposite."
+      },
+      {
+        "zh": "“禁止吃东西”是另一条规定。",
+        "en": "No eating is a different rule."
+      },
+      {
+        "zh": "“禁止拍照”是另一条规定。",
+        "en": "No photos is a different rule."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-413",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<あの 人は ゆうめいです。>>",
+    "options": [
+      "みんなが あの 人を 知って います。",
+      "だれも あの 人を 知りません。",
+      "あの 人は みんなを 知って います。",
+      "あの 人は おかねもちです。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "那个人很有名。",
+      "en": "That person is famous."
+    },
+    "why": {
+      "zh": "「ゆうめい」（有名）＝大家都知道他。",
+      "en": "「ゆうめい」 (famous) means everyone knows them."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“谁都不认识”和有名相反。",
+        "en": "\"No one knows them\" is the opposite."
+      },
+      {
+        "zh": "方向反了：是他认识大家，不是大家认识他。",
+        "en": "Reversed: they know everyone, not everyone knows them."
+      },
+      {
+        "zh": "“有钱”不等于有名。",
+        "en": "Being rich isn't being famous."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-414",
+    "type": "iikae",
+    "refs": [
+      "lesson31#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<きのうの テストは かんたんでした。>>",
+    "options": [
+      "きのうの テストは やさしかったです。",
+      "きのうの テストは むずかしかったです。",
+      "きのうの テストは ながかったです。",
+      "きのうの テストは みじかかったです。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "昨天的考试很简单。",
+      "en": "Yesterday's test was easy."
+    },
+    "why": {
+      "zh": "「かんたん」（简单）＝「やさしい」（容易）。",
+      "en": "「かんたん」 (easy) means 「やさしい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「むずかしい」（难）和简单相反。",
+        "en": "「むずかしい」 (hard) is the opposite."
+      },
+      {
+        "zh": "“很长”说的是长度，不是难易。",
+        "en": "Long is about length, not difficulty."
+      },
+      {
+        "zh": "“很短”说的是长度，不是难易。",
+        "en": "Short is about length, not difficulty."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-415",
+    "type": "iikae",
+    "refs": [
+      "lesson18#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<しゅくだいを わすれて、先生に しかられました。>>",
+    "options": [
+      "しゅくだいを わすれて、先生に おこられました。",
+      "しゅくだいを わすれて、先生に ほめられました。",
+      "しゅくだいを わすれて、先生に わらわれました。",
+      "しゅくだいを わすれて、先生に しつもんされました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "忘了带作业，被老师批评了。",
+      "en": "I forgot my homework and got told off by the teacher."
+    },
+    "why": {
+      "zh": "「しかられる」（被批评）＝「おこられる」（被骂）。",
+      "en": "「しかられる」 (be scolded) means 「おこられる」 (be told off)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ほめられる」是被表扬，和被批评相反。",
+        "en": "「ほめられる」 is being praised — the opposite."
+      },
+      {
+        "zh": "「わらわれる」是被嘲笑，不是被批评。",
+        "en": "「わらわれる」 is being laughed at, not scolded."
+      },
+      {
+        "zh": "「しつもんされる」只是被提问，不是被批评。",
+        "en": "Being asked a question isn't being scolded."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-416",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<もう すこし ゆっくり はなして ください。>>",
+    "options": [
+      "もう すこし はやく はなさないで ください。",
+      "もう すこし 大きい こえで はなして ください。",
+      "もう いちど はなして ください。",
+      "もう すこし しずかに はなして ください。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "请说得再慢一点。",
+      "en": "Please speak a little more slowly."
+    },
+    "why": {
+      "zh": "「ゆっくり 話す」（慢慢说）＝不要说得快。",
+      "en": "\"Speak slowly\" means don't speak fast."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“大声点”是音量，不是速度。",
+        "en": "Louder is about volume, not speed."
+      },
+      {
+        "zh": "“再说一遍”是重复，不是说慢点。",
+        "en": "\"Say it again\" is repeating, not slowing down."
+      },
+      {
+        "zh": "“小声点”是音量，不是速度。",
+        "en": "Quieter is about volume, not speed."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-417",
+    "type": "iikae",
+    "refs": [
+      "lesson25#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<らいねんの けいかくを たてました。>>",
+    "options": [
+      "らいねん 何を するか 考えて きめました。",
+      "きょねん 何を したか 思いだしました。",
+      "らいねんの ことを ともだちに ききました。",
+      "らいねんの ことは まだ 何も きめて いません。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "制定了明年的计划。",
+      "en": "I've made plans for next year."
+    },
+    "why": {
+      "zh": "「けいかくを たてる」（订计划）＝想好并决定将来要做什么。",
+      "en": "「けいかくを たてる」 means thinking through and deciding what you'll do."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "回想去年是过去的事，不是计划。",
+        "en": "Remembering last year is the past, not a plan."
+      },
+      {
+        "zh": "问朋友明年的事不是自己订计划。",
+        "en": "Asking a friend about next year isn't making your own plan."
+      },
+      {
+        "zh": "“还什么都没决定”和已经订好计划相反。",
+        "en": "\"Haven't decided anything\" is the opposite of having a plan."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-418",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<さらいしゅう テストが あります。>>",
+    "options": [
+      "2しゅうかん あとに テストが あります。",
+      "1しゅうかん あとに テストが あります。",
+      "2しゅうかん 前に テストが ありました。",
+      "こんしゅうの おわりに テストが あります。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "下下周有考试。",
+      "en": "There's a test the week after next."
+    },
+    "why": {
+      "zh": "「さらいしゅう」＝下下周，也就是两周以后。",
+      "en": "「さらいしゅう」 is the week after next — two weeks from now."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "一周后是「らいしゅう」（下周）。",
+        "en": "One week from now is 「らいしゅう」 (next week)."
+      },
+      {
+        "zh": "两周前是「せんせんしゅう」，而且是过去。",
+        "en": "Two weeks ago is 「せんせんしゅう」 — and in the past."
+      },
+      {
+        "zh": "本周末还是这一周，不是下下周。",
+        "en": "The end of this week is still this week."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-419",
+    "type": "iikae",
+    "refs": [
+      "lesson32#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<へやを かたづけて ください。>>",
+    "options": [
+      "へやを きれいに して ください。",
+      "へやに 入って ください。",
+      "へやを 出て ください。",
+      "へやの 電気を けして ください。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "请把房间收拾好。",
+      "en": "Please tidy up the room."
+    },
+    "why": {
+      "zh": "「かたづける」（收拾）＝把房间弄整齐、干净。",
+      "en": "「かたづける」 (tidy up) means making the room neat."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“进房间”不是收拾。",
+        "en": "Going into the room isn't tidying it."
+      },
+      {
+        "zh": "“出房间”不是收拾。",
+        "en": "Leaving the room isn't tidying it."
+      },
+      {
+        "zh": "“关灯”不是收拾。",
+        "en": "Turning off the light isn't tidying."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-420",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<この 店は いつも すいて います。>>",
+    "options": [
+      "この 店は いつも 客が すくないです。",
+      "この 店は いつも 客が おおいです。",
+      "この 店は いつも ねだんが やすいです。",
+      "この 店は いつも よる おそくまで あいて います。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这家店总是很空。",
+      "en": "This shop is always quiet (never crowded)."
+    },
+    "why": {
+      "zh": "「すいて いる」（空）＝客人很少。",
+      "en": "「すいて いる」 means there are few customers."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "客人多是「こんで いる」，和空相反。",
+        "en": "Lots of customers is 「こんで いる」 — the opposite."
+      },
+      {
+        "zh": "便宜说的是价格，不是人多人少。",
+        "en": "Cheap is about prices, not how crowded it is."
+      },
+      {
+        "zh": "“营业到很晚”是营业时间，「あいて いる」不是「すいて いる」。",
+        "en": "Open late is opening hours — 「あいて いる」, not 「すいて いる」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-421",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<ちちは もう たばこを やめました。>>",
+    "options": [
+      "ちちは いまは たばこを すいません。",
+      "ちちは いまも たばこを たくさん すいます。",
+      "ちちは いまも ときどき たばこを すいます。",
+      "ちちは いま たばこを 買いに 行って います。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我父亲已经戒烟了。",
+      "en": "My father has given up smoking."
+    },
+    "why": {
+      "zh": "「たばこを やめる」（戒烟）＝现在不再吸烟。",
+      "en": "「たばこを やめる」 (quit) means he no longer smokes."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“还在大量吸烟”和戒烟相反。",
+        "en": "Still smoking a lot is the opposite."
+      },
+      {
+        "zh": "“还偶尔吸”说明没戒掉。",
+        "en": "Still smoking sometimes means he hasn't quit."
+      },
+      {
+        "zh": "“去买烟”说明还在吸。",
+        "en": "Going to buy cigarettes means he still smokes."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-422",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<となりの へやが うるさいです。>>",
+    "options": [
+      "となりの へやの 音が 大きいです。",
+      "となりの へやは しずかです。",
+      "となりの へやは せまいです。",
+      "となりの へやは くらいです。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "隔壁房间很吵。",
+      "en": "The room next door is noisy."
+    },
+    "why": {
+      "zh": "「うるさい」（吵）＝声音很大。",
+      "en": "「うるさい」 (noisy) means the sound is loud."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「しずか」（安静）和吵相反。",
+        "en": "「しずか」 (quiet) is the opposite."
+      },
+      {
+        "zh": "“窄”说的是大小，不是声音。",
+        "en": "Small is about size, not noise."
+      },
+      {
+        "zh": "“暗”说的是光线，不是声音。",
+        "en": "Dark is about light, not noise."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-423",
+    "type": "iikae",
+    "refs": [
+      "lesson21#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<この みちは きけんです。>>",
+    "options": [
+      "この みちは あぶないです。",
+      "この みちは あんぜんです。",
+      "この みちは せまいです。",
+      "この みちは しずかです。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这条路很危险。",
+      "en": "This road is dangerous."
+    },
+    "why": {
+      "zh": "「きけん」（危险）＝「あぶない」。",
+      "en": "「きけん」 (dangerous) means 「あぶない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「あんぜん」（安全）和危险相反。",
+        "en": "「あんぜん」 (safe) is the opposite."
+      },
+      {
+        "zh": "“窄”不等于危险。",
+        "en": "Narrow isn't the same as dangerous."
+      },
+      {
+        "zh": "“安静”不等于危险。",
+        "en": "Quiet isn't the same as dangerous."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-424",
+    "type": "iikae",
+    "refs": [
+      "lesson25#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<リンさんは わたしより としうえです。>>",
+    "options": [
+      "リンさんは わたしより 先に 生まれました。",
+      "リンさんは わたしより あとに 生まれました。",
+      "リンさんは わたしより せが 高いです。",
+      "リンさんは わたしと おなじ としです。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "林比我年长。",
+      "en": "Lin is older than me."
+    },
+    "why": {
+      "zh": "「としうえ」（年长）＝比我先出生。",
+      "en": "「としうえ」 (older) means born before me."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“比我晚出生”是年纪小，和年长相反。",
+        "en": "Born after me means younger — the opposite."
+      },
+      {
+        "zh": "个子高不等于年纪大。",
+        "en": "Being taller isn't being older."
+      },
+      {
+        "zh": "“同岁”就不是年长。",
+        "en": "Being the same age isn't being older."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-425",
+    "type": "iikae",
+    "refs": [
+      "lesson33#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<けさ じゅぎょうに おくれました。>>",
+    "options": [
+      "けさ じゅぎょうに まにあいませんでした。",
+      "けさ じゅぎょうに まにあいました。",
+      "けさ じゅぎょうを 休みました。",
+      "けさ じゅぎょうが はやく おわりました。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "今天早上上课迟到了。",
+      "en": "I was late for class this morning."
+    },
+    "why": {
+      "zh": "「おくれる」（迟到）＝没赶上时间：「まにあわない」。",
+      "en": "「おくれる」 (be late) means not making it on time: 「まにあわない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“赶上了”和迟到相反。",
+        "en": "\"Made it in time\" is the opposite."
+      },
+      {
+        "zh": "“请假没去”是缺课，不是迟到。",
+        "en": "Skipping class is absence, not lateness."
+      },
+      {
+        "zh": "“课提前结束”和我迟到无关。",
+        "en": "The class ending early isn't me being late."
+      }
+    ]
+  }
+]

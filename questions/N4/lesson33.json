@@ -1,0 +1,814 @@
+[
+  {
+    "id": "n4-l33-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson33#1"
+    ],
+    "difficulty": 1,
+    "stem": "家族で 旅行に 行って いる（　）、家に どろぼうが 入りました。",
+    "options": [
+      "あいだに",
+      "まで",
+      "までに",
+      "おきに"
+    ],
+    "answer": 0,
+    "full": "家族で 旅行に 行って いる あいだに、家に どろぼうが 入りました。",
+    "tr": {
+      "zh": "全家出去旅行的时候，家里进了小偷。",
+      "en": "While the family was away on a trip, a burglar broke into the house."
+    },
+    "why": {
+      "zh": "在“旅行期间”这段时间里的某一时刻发生了一件事（小偷进来），用「〜あいだに」。",
+      "en": "Something happened at one point during the trip (a burglary): 「〜あいだに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「まで」是“一直到……为止”，“到旅行为止小偷进来了”说不通。",
+        "en": "「まで」 means \"until\"; \"a burglar came in until we were travelling\" makes no sense."
+      },
+      {
+        "zh": "「までに」是截止期限，不接「ている」，意思也不对。",
+        "en": "「までに」 is a deadline; it doesn't follow 「ている」 and the meaning is wrong."
+      },
+      {
+        "zh": "「おきに」接在数量词后面表示间隔，不接动词。",
+        "en": "「おきに」 follows a number (intervals), not a verb."
+      }
+    ]
+  },
+  {
+    "id": "n4-l33-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson33#1"
+    ],
+    "difficulty": 2,
+    "stem": "電車に 乗って いる（　）、ずっと 音楽を 聞いて いました。",
+    "options": [
+      "あいだに",
+      "までに",
+      "あいだ",
+      "おきに"
+    ],
+    "answer": 2,
+    "full": "電車に 乗って いる あいだ、ずっと 音楽を 聞いて いました。",
+    "tr": {
+      "zh": "坐电车的整段时间里，我一直在听音乐。",
+      "en": "The whole time I was on the train, I was listening to music."
+    },
+    "why": {
+      "zh": "「ずっと〜ていました」是整段时间都在持续做的事，用不带「に」的「〜あいだ」。",
+      "en": "「ずっと〜ていました」 lasts the whole period, so it's 「〜あいだ」 without 「に」."
+    },
+    "wrong": [
+      {
+        "zh": "「あいだに」表示期间中的某一时刻发生的事，不能和「ずっと」这种整段持续的动作连用。",
+        "en": "「あいだに」 is for something at one point within the period; it clashes with 「ずっと」 (the whole time)."
+      },
+      {
+        "zh": "「までに」是截止期限，不接「ている」，也不能和「ずっと」连用。",
+        "en": "「までに」 is a deadline; it doesn't follow 「ている」 or go with 「ずっと」."
+      },
+      null,
+      {
+        "zh": "「おきに」接在数量词后面表示间隔，不接动词。",
+        "en": "「おきに」 follows a number (intervals), not a verb."
+      }
+    ]
+  },
+  {
+    "id": "n4-l33-003",
+    "type": "narabe",
+    "refs": [
+      "lesson33#1"
+    ],
+    "difficulty": 1,
+    "stem": "日本に [_] [_] [★] [_]。",
+    "options": [
+      "富士山に",
+      "いる",
+      "登りたいです",
+      "あいだに"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "日本に いる あいだに 富士山に 登りたいです。",
+    "tr": {
+      "zh": "我想在日本期间爬一次富士山。",
+      "en": "I want to climb Mt Fuji while I'm in Japan."
+    },
+    "why": {
+      "zh": "いる ＋ あいだに（在日本期间）＋ 富士山に ＋ 登りたいです：期间内完成一件事。★ 在第三格，是「富士山に」。",
+      "en": "いる ＋ あいだに (while in Japan) ＋ 富士山に ＋ 登りたいです: doing one thing within the period. The ★ is the third slot: 「富士山に」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l33-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson33#2"
+    ],
+    "difficulty": 1,
+    "stem": "レポートは 金曜日（　）出して ください。遅れた ものは 受け付けません。",
+    "options": [
+      "まで",
+      "までに",
+      "あいだ",
+      "おきに"
+    ],
+    "answer": 1,
+    "full": "レポートは 金曜日までに 出して ください。遅れた ものは 受け付けません。",
+    "tr": {
+      "zh": "报告请在周五之前提交。迟交的不受理。",
+      "en": "Please hand in your report by Friday. Late ones won't be accepted."
+    },
+    "why": {
+      "zh": "交报告是一次性完成的动作，周五是截止期限，用「までに」。",
+      "en": "Handing in is a one-off action and Friday is the deadline: 「までに」."
+    },
+    "wrong": [
+      {
+        "zh": "「まで」后面要接持续的动作（一直做到……），“一直交到周五”不通。",
+        "en": "「まで」 needs an ongoing action (keep doing until); \"keep handing in until Friday\" doesn't work."
+      },
+      null,
+      {
+        "zh": "名词接「あいだ」要加「の」，而且“周五的整段时间交报告”意思不对。",
+        "en": "A noun needs 「の」 before 「あいだ」, and \"throughout Friday\" isn't the meaning."
+      },
+      {
+        "zh": "「おきに」接在数量词后面（2日おきに），不接「金曜日」。",
+        "en": "「おきに」 follows a number (2日おきに), not 「金曜日」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l33-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson33#2"
+    ],
+    "difficulty": 2,
+    "stem": "雨が やむ（　）、この 喫茶店で 待ちましょう。",
+    "options": [
+      "までに",
+      "あいだに",
+      "おきに",
+      "まで"
+    ],
+    "answer": 3,
+    "full": "雨が やむ まで、この 喫茶店で 待ちましょう。",
+    "tr": {
+      "zh": "在这家咖啡店里一直等到雨停吧。",
+      "en": "Let's wait in this café until the rain stops."
+    },
+    "why": {
+      "zh": "「待つ」是持续的动作，一直等到雨停，用表示持续终点的「まで」。",
+      "en": "「待つ」 is ongoing — wait until the rain stops — so it's 「まで」, the end point of a continuing action."
+    },
+    "wrong": [
+      {
+        "zh": "「までに」后面要接一次性完成的动作，“在雨停之前等”不通。",
+        "en": "「までに」 needs a one-off action; \"wait by the time the rain stops\" doesn't work."
+      },
+      {
+        "zh": "「あいだに」要接持续的状态（〜ている），「やむ」是瞬间的变化。",
+        "en": "「あいだに」 needs an ongoing state (〜ている); 「やむ」 is a momentary change."
+      },
+      {
+        "zh": "「おきに」接在数量词后面，不接动词。",
+        "en": "「おきに」 follows a number, not a verb."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n4-l33-006",
+    "type": "narabe",
+    "refs": [
+      "lesson33#2"
+    ],
+    "difficulty": 1,
+    "stem": "明日の 朝は、[_] [_] [★] [_] ください。",
+    "options": [
+      "始まる",
+      "教室に 入って",
+      "授業が",
+      "までに"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "明日の 朝は、授業が 始まる までに 教室に 入って ください。",
+    "tr": {
+      "zh": "明天早上请在上课之前进教室。",
+      "en": "Tomorrow morning, please be in the classroom before class starts."
+    },
+    "why": {
+      "zh": "授業が ＋ 始まる ＋ までに（在上课之前）＋ 教室に 入って ＋ ください。★ 在第三格，是「までに」。",
+      "en": "授業が ＋ 始まる ＋ までに (by the time class starts) ＋ 教室に 入って ＋ ください. The ★ is the third slot: 「までに」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l33-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson33#3"
+    ],
+    "difficulty": 1,
+    "stem": "この 薬は 4時間（　）飲んで ください。",
+    "options": [
+      "までに",
+      "あいだに",
+      "おきに",
+      "ずつ"
+    ],
+    "answer": 2,
+    "full": "この 薬は 4時間おきに 飲んで ください。",
+    "tr": {
+      "zh": "这个药请每隔4小时吃一次。",
+      "en": "Please take this medicine every four hours."
+    },
+    "why": {
+      "zh": "每隔一定时间反复做，用「数量词＋おきに」。",
+      "en": "Doing something again and again at a fixed interval: number ＋ 「おきに」."
+    },
+    "wrong": [
+      {
+        "zh": "「4時間までに」是“在4小时之前”，不表示反复吃药。",
+        "en": "「4時間までに」 would be a deadline, not a repeated dose."
+      },
+      {
+        "zh": "「4時間あいだに」不成立（要说4時間のあいだに），也不表示间隔。",
+        "en": "「4時間あいだに」 isn't correct (it would need の), and it doesn't express an interval."
+      },
+      null,
+      {
+        "zh": "「ずつ」表示每次的量（一次一片），不表示时间间隔。",
+        "en": "「ずつ」 is an amount each time (one at a time), not a time interval."
+      }
+    ]
+  },
+  {
+    "id": "n4-l33-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson33#3"
+    ],
+    "difficulty": 2,
+    "stem": "わたしは 1日おきに ジムへ 行きます。月曜日に 行ったら、次は（　）に 行きます。",
+    "options": [
+      "水曜日",
+      "火曜日",
+      "木曜日",
+      "金曜日"
+    ],
+    "answer": 0,
+    "full": "わたしは 1日おきに ジムへ 行きます。月曜日に 行ったら、次は 水曜日に 行きます。",
+    "tr": {
+      "zh": "我隔一天去一次健身房。周一去了的话，下次就是周三去。",
+      "en": "I go to the gym every other day. If I go on Monday, next time I go on Wednesday."
+    },
+    "why": {
+      "zh": "「1日おきに」是隔一天，也就是中间空一天：周一 →（周二休息）→ 周三。",
+      "en": "「1日おきに」 means skipping one day in between: Monday → (Tuesday off) → Wednesday."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "周二是第二天，那就是每天去，不是「1日おきに」。",
+        "en": "Tuesday would be every day, not 「1日おきに」."
+      },
+      {
+        "zh": "周四中间空了两天，是「2日おきに」。",
+        "en": "Thursday leaves two days in between — that's 「2日おきに」."
+      },
+      {
+        "zh": "周五中间空了三天，是「3日おきに」。",
+        "en": "Friday leaves three days in between — that's 「3日おきに」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l33-009",
+    "type": "narabe",
+    "refs": [
+      "lesson33#3"
+    ],
+    "difficulty": 1,
+    "stem": "この 道には 木が [_] [_] [★] [_]。",
+    "options": [
+      "あります",
+      "植えて",
+      "おきに",
+      "10メートル"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "この 道には 木が 10メートルおきに 植えて あります。",
+    "tr": {
+      "zh": "这条路上每隔10米种着一棵树。",
+      "en": "Trees are planted every ten metres along this road."
+    },
+    "why": {
+      "zh": "10メートル ＋ おきに（每隔10米）＋ 植えて ＋ あります（〜てある表示状态）。★ 在第三格，是「植えて」。",
+      "en": "10メートル ＋ おきに (every 10 m) ＋ 植えて ＋ あります (〜てある, a resulting state). The ★ is the third slot: 「植えて」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l33-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson33#4"
+    ],
+    "difficulty": 1,
+    "stem": "地震の（　）、すぐに 机の 下に 入って ください。",
+    "options": [
+      "場合で",
+      "ように",
+      "ためには",
+      "場合は"
+    ],
+    "answer": 3,
+    "full": "地震の 場合は、すぐに 机の 下に 入って ください。",
+    "tr": {
+      "zh": "地震的情况下，请立刻躲到桌子下面。",
+      "en": "In case of an earthquake, get under a desk immediately."
+    },
+    "why": {
+      "zh": "说明发生地震这种情况时该怎么做，用「名词＋の＋場合は」。",
+      "en": "This says what to do if there's an earthquake: noun ＋ の ＋ 「場合は」."
+    },
+    "wrong": [
+      {
+        "zh": "「場合で」不能表示“在……情况下”，要用「場合は」或「場合には」。",
+        "en": "「場合で」 can't mean \"in the case of\"; it's 「場合は」 or 「場合には」."
+      },
+      {
+        "zh": "「地震のように」是“像地震一样”，意思不对。",
+        "en": "「地震のように」 means \"like an earthquake\" — wrong meaning."
+      },
+      {
+        "zh": "「ために」是目的或原因，“为了地震而躲到桌下”说不通。",
+        "en": "「ために」 is purpose or cause; \"in order to have an earthquake\" makes no sense."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n4-l33-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson33#4"
+    ],
+    "difficulty": 2,
+    "stem": "明日の 会議に 都合が（　）場合は、メールで 連絡して ください。",
+    "options": [
+      "悪いの",
+      "悪い",
+      "悪くて",
+      "悪かったら"
+    ],
+    "answer": 1,
+    "full": "明日の 会議に 都合が 悪い 場合は、メールで 連絡して ください。",
+    "tr": {
+      "zh": "如果明天的会议您不方便，请发邮件联系。",
+      "en": "If tomorrow's meeting doesn't suit you, please let us know by email."
+    },
+    "why": {
+      "zh": "い形容词直接接「場合は」：悪い場合は。",
+      "en": "An い-adjective attaches directly to 「場合は」: 悪い場合は."
+    },
+    "wrong": [
+      {
+        "zh": "「の」是名词接「場合」时用的（地震の場合），い形容词不加「の」。",
+        "en": "「の」 is for nouns (地震の場合); an い-adjective doesn't take it."
+      },
+      null,
+      {
+        "zh": "「場合」是名词，前面要用连体形，不能用て形。",
+        "en": "「場合」 is a noun, so it needs a modifying form, not the て-form."
+      },
+      {
+        "zh": "「たら」和「場合は」都是条件，不能叠在一起用。",
+        "en": "「たら」 and 「場合は」 are both conditionals; they can't be stacked."
+      }
+    ]
+  },
+  {
+    "id": "n4-l33-012",
+    "type": "narabe",
+    "refs": [
+      "lesson33#4"
+    ],
+    "difficulty": 1,
+    "stem": "パスワードを [_] [_] [★] [_] ください。",
+    "options": [
+      "忘れた",
+      "連絡して",
+      "場合は",
+      "こちらに"
+    ],
+    "order": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "full": "パスワードを 忘れた 場合は こちらに 連絡して ください。",
+    "tr": {
+      "zh": "忘记密码的情况下，请联系这里。",
+      "en": "If you forget your password, please contact us here."
+    },
+    "why": {
+      "zh": "忘れた（た形）＋ 場合は ＋ こちらに ＋ 連絡して ＋ ください。★ 在第三格，是「こちらに」。",
+      "en": "忘れた (た-form) ＋ 場合は ＋ こちらに ＋ 連絡して ＋ ください. The ★ is the third slot: 「こちらに」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l33-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson33#5"
+    ],
+    "difficulty": 1,
+    "stem": "A「最近、夜 よく 眠れないんです。」\nB「一度 医者に 行って みたら（　）。」",
+    "options": [
+      "どうですか",
+      "いいですか",
+      "どうしますか",
+      "なりますか"
+    ],
+    "answer": 0,
+    "full": "A「最近、夜 よく 眠れないんです。」 B「一度 医者に 行って みたら どうですか。」",
+    "tr": {
+      "zh": "A：最近晚上总是睡不好。 B：去看一次医生怎么样？",
+      "en": "A: I haven't been sleeping well lately. B: Why don't you see a doctor?"
+    },
+    "why": {
+      "zh": "B 给 A 提建议“去看看医生怎么样”，用「〜たらどうですか」。",
+      "en": "B is suggesting A see a doctor: 「〜たらどうですか」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜たらいいですか」是自己向别人求教“怎么做好”，不是给别人提建议。",
+        "en": "「〜たらいいですか」 asks someone for advice; it isn't giving a suggestion."
+      },
+      {
+        "zh": "「〜たらどうしますか」是问“如果去了你怎么办”，不是建议。",
+        "en": "「〜たらどうしますか」 asks \"what will you do if…\", not a suggestion."
+      },
+      {
+        "zh": "「〜たらなりますか」不成立。",
+        "en": "「〜たらなりますか」 isn't Japanese."
+      }
+    ]
+  },
+  {
+    "id": "n4-l33-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson33#5"
+    ],
+    "difficulty": 2,
+    "stem": "疲れて いるなら、少し（　）どうですか。",
+    "options": [
+      "休んで",
+      "休むなら",
+      "休んだら",
+      "休むと"
+    ],
+    "answer": 2,
+    "full": "疲れて いるなら、少し 休んだら どうですか。",
+    "tr": {
+      "zh": "累了的话，稍微休息一下怎么样？",
+      "en": "If you're tired, why not take a short rest?"
+    },
+    "why": {
+      "zh": "提建议“休息一下怎么样”，是「た形＋らどうですか」：休んだらどうですか。",
+      "en": "A suggestion is the た-form ＋ 「らどうですか」: 休んだらどうですか."
+    },
+    "wrong": [
+      {
+        "zh": "て形不能直接接「どうですか」表示建议。",
+        "en": "The て-form can't go straight into 「どうですか」 as a suggestion."
+      },
+      {
+        "zh": "「なら」不和「どうですか」组成建议句型。",
+        "en": "「なら」 doesn't form a suggestion with 「どうですか」."
+      },
+      null,
+      {
+        "zh": "「と」表示必然结果，“一休息就会怎样”不是建议。",
+        "en": "「と」 marks an automatic result, not a suggestion."
+      }
+    ]
+  },
+  {
+    "id": "n4-l33-015",
+    "type": "narabe",
+    "refs": [
+      "lesson33#5"
+    ],
+    "difficulty": 1,
+    "stem": "A「日本語の 聞き取りが なかなか 上手に なりません。」\nB「日本の [_] [_] [★] [_] か。」",
+    "options": [
+      "どう",
+      "です",
+      "映画を",
+      "見たら"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "A「日本語の 聞き取りが なかなか 上手に なりません。」 B「日本の 映画を 見たら どうですか。」",
+    "tr": {
+      "zh": "A：日语听力怎么都提高不了。 B：看看日本电影怎么样？",
+      "en": "A: My Japanese listening just isn't improving. B: How about watching Japanese films?"
+    },
+    "why": {
+      "zh": "映画を ＋ 見たら ＋ どう ＋ です ＋ か：提建议的「〜たらどうですか」。★ 在第三格，是「どう」。",
+      "en": "映画を ＋ 見たら ＋ どう ＋ です ＋ か: the suggestion 「〜たらどうですか」. The ★ is the third slot: 「どう」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l33-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson33#6"
+    ],
+    "difficulty": 1,
+    "stem": "朝は 晴れて いましたが、傘を 持って きて（　）。帰りに 雨が 降り出しました。",
+    "options": [
+      "しまいました",
+      "みました",
+      "ありました",
+      "よかったです"
+    ],
+    "answer": 3,
+    "full": "朝は 晴れて いましたが、傘を 持って きて よかったです。帰りに 雨が 降り出しました。",
+    "tr": {
+      "zh": "早上是晴天，不过带了伞真好。回家路上下起雨来了。",
+      "en": "It was sunny this morning, but I'm glad I brought an umbrella — it started raining on my way home."
+    },
+    "why": {
+      "zh": "回家时下雨了，带了伞所以庆幸，用「〜てよかった」。",
+      "en": "It rained on the way home, so the speaker is glad they brought one: 「〜てよかった」."
+    },
+    "wrong": [
+      {
+        "zh": "「〜てしまいました」表示遗憾或不小心，带了伞正好用上，不是遗憾。",
+        "en": "「〜てしまいました」 expresses regret; bringing an umbrella that you needed isn't a regret."
+      },
+      {
+        "zh": "「〜てみました」是“试着带来”，和后面下雨的庆幸接不上。",
+        "en": "「〜てみました」 (tried bringing it) doesn't express the relief about the rain."
+      },
+      {
+        "zh": "「〜てある」接在动词后面描述状态，「持ってきてありました」不成立。",
+        "en": "「持ってきてありました」 isn't a valid form."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n4-l33-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson33#6"
+    ],
+    "difficulty": 2,
+    "stem": "試験に 遅れて しまった。もっと 早く（　）よかった。",
+    "options": [
+      "起きて",
+      "起きれば",
+      "起きなくて",
+      "起きると"
+    ],
+    "answer": 1,
+    "full": "試験に 遅れて しまった。もっと 早く 起きれば よかった。",
+    "tr": {
+      "zh": "考试迟到了。要是早点起床就好了。",
+      "en": "I was late for the exam. I should have got up earlier."
+    },
+    "why": {
+      "zh": "实际没早起、迟到了，表示后悔“要是……就好了”，用「ば形＋よかった」。",
+      "en": "The speaker didn't get up early and was late — regret is 「ば-form ＋ よかった」."
+    },
+    "wrong": [
+      {
+        "zh": "「起きてよかった」是“起了真好”，表示庆幸，和“迟到了”矛盾。",
+        "en": "「起きてよかった」 means \"glad I got up\" — it contradicts being late."
+      },
+      null,
+      {
+        "zh": "「起きなくてよかった」是“幸好没起”，和迟到的后悔矛盾。",
+        "en": "「起きなくてよかった」 means \"glad I didn't get up\" — the opposite of the regret here."
+      },
+      {
+        "zh": "「と」不和「よかった」组成后悔的说法。",
+        "en": "「と」 doesn't combine with 「よかった」 to express regret."
+      }
+    ]
+  },
+  {
+    "id": "n4-l33-018",
+    "type": "narabe",
+    "refs": [
+      "lesson33#6"
+    ],
+    "difficulty": 1,
+    "stem": "やっと 試験に 合格した。あの とき [_] [_] [★] [_]。",
+    "options": [
+      "なくて",
+      "あきらめ",
+      "です",
+      "よかった"
+    ],
+    "order": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "full": "やっと 試験に 合格した。あの とき あきらめなくて よかったです。",
+    "tr": {
+      "zh": "终于考过了。那时候没有放弃真好。",
+      "en": "I finally passed. I'm glad I didn't give up back then."
+    },
+    "why": {
+      "zh": "あきらめ ＋ なくて ＋ よかった ＋ です：“没放弃真好”是「〜なくてよかった」。★ 在第三格，是「よかった」。",
+      "en": "あきらめ ＋ なくて ＋ よかった ＋ です: \"glad I didn't give up\" is 「〜なくてよかった」. The ★ is the third slot: 「よかった」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l33-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson33#7"
+    ],
+    "difficulty": 1,
+    "stem": "（会議に 10分 遅れて 来て）\n「（　）すみません。電車が 止まって いたんです。」",
+    "options": [
+      "遅れなくて",
+      "遅れたら",
+      "遅れて",
+      "遅れると"
+    ],
+    "answer": 2,
+    "full": "（会議に 10分 遅れて 来て） 「遅れて すみません。電車が 止まって いたんです。」",
+    "tr": {
+      "zh": "（开会迟到了10分钟）迟到了对不起。电车停运了。",
+      "en": "(Arriving ten minutes late to a meeting) Sorry I'm late. The train had stopped."
+    },
+    "why": {
+      "zh": "为自己做了的事（迟到）道歉，用「て形＋すみません」：遅れてすみません。",
+      "en": "Apologising for something you did (being late): て-form ＋ 「すみません」."
+    },
+    "wrong": [
+      {
+        "zh": "「遅れなくてすみません」是为“没迟到”道歉，和实际情况相反。",
+        "en": "「遅れなくてすみません」 apologises for not being late — the opposite of what happened."
+      },
+      {
+        "zh": "「たら」是假设条件，不能说明道歉的原因。",
+        "en": "「たら」 is a hypothetical condition; it can't give the reason for an apology."
+      },
+      null,
+      {
+        "zh": "「と」表示条件或必然结果，不能说明道歉的原因。",
+        "en": "「と」 marks a condition or automatic result, not the reason for an apology."
+      }
+    ]
+  },
+  {
+    "id": "n4-l33-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson33#7"
+    ],
+    "difficulty": 2,
+    "stem": "昨日は 連絡（　）すみませんでした。電話が こわれて いたんです。",
+    "options": [
+      "しなくて",
+      "しないと",
+      "しなかって",
+      "しなければ"
+    ],
+    "answer": 0,
+    "full": "昨日は 連絡 しなくて すみませんでした。電話が こわれて いたんです。",
+    "tr": {
+      "zh": "昨天没联系你，对不起。电话坏了。",
+      "en": "Sorry I didn't get in touch yesterday. My phone was broken."
+    },
+    "why": {
+      "zh": "为“没做的事”（没联系）道歉，用「〜なくてすみません」。",
+      "en": "Apologising for something you didn't do (get in touch): 「〜なくてすみません」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ないと」是“不……的话”，不能表示道歉的原因。",
+        "en": "「ないと」 means \"if not\"; it can't give the reason for an apology."
+      },
+      {
+        "zh": "否定的て形是「しなくて」，没有「しなかって」这种形式。",
+        "en": "The negative て-form is 「しなくて」; 「しなかって」 isn't a form."
+      },
+      {
+        "zh": "「なければ」是条件“不……的话”，不能接「すみません」说明原因。",
+        "en": "「なければ」 is a condition (\"if not\"); it can't give the reason with 「すみません」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l33-021",
+    "type": "narabe",
+    "refs": [
+      "lesson33#7"
+    ],
+    "difficulty": 1,
+    "stem": "先月 借りた 本、[_] [_] [★] [_]。来週 必ず 返します。",
+    "options": [
+      "なくて",
+      "まだ",
+      "すみません",
+      "返さ"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "先月 借りた 本、まだ 返さなくて すみません。来週 必ず 返します。",
+    "tr": {
+      "zh": "上个月借的书还没还，对不起。下周一定还。",
+      "en": "Sorry I still haven't returned the book I borrowed last month. I'll definitely return it next week."
+    },
+    "why": {
+      "zh": "まだ ＋ 返さ ＋ なくて ＋ すみません：为没做的事道歉用「〜なくてすみません」。★ 在第三格，是「なくて」。",
+      "en": "まだ ＋ 返さ ＋ なくて ＋ すみません: apologising for not doing something is 「〜なくてすみません」. The ★ is the third slot: 「なくて」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

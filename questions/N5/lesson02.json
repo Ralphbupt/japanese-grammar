@@ -1,0 +1,767 @@
+[
+  {
+    "id": "n5-l02-001",
+    "type": "bunpou",
+    "refs": ["lesson02#1"],
+    "difficulty": 2,
+    "stem": "この 橋（　）渡って、右に 曲がって ください。",
+    "options": ["で", "を", "に", "が"],
+    "answer": 1,
+    "full": "この 橋を 渡って、右に 曲がって ください。",
+    "tr": {
+      "zh": "请过这座桥，然后往右拐。",
+      "en": "Please cross this bridge and turn right."
+    },
+    "why": {
+      "zh": "「渡る」是移动动词，经过的场所（桥）用「を」。",
+      "en": "「渡る」 is a movement verb; the space you pass over (the bridge) takes 「を」."
+    },
+    "wrong": [
+      {
+        "zh": "「で」表示做事的场所，但过桥时桥是经过的路径，要用「を」。",
+        "en": "「で」 marks where an activity takes place; a bridge you cross is a path, marked with 「を」."
+      },
+      null,
+      {
+        "zh": "「に」表示到达点，「橋に渡る」不成立；经过的地方用「を」。",
+        "en": "「に」 marks an arrival point; 「橋に渡る」 isn't Japanese — the path takes 「を」."
+      },
+      {
+        "zh": "「橋が渡る」变成“桥过（什么）”，桥不是动作的人。",
+        "en": "「橋が渡る」 would make the bridge do the crossing."
+      }
+    ]
+  },
+  {
+    "id": "n5-l02-002",
+    "type": "bunpou",
+    "refs": ["lesson02#1"],
+    "difficulty": 2,
+    "stem": "私は 毎朝 8時に 家（　）出ます。",
+    "options": ["を", "で", "へ", "に"],
+    "answer": 0,
+    "full": "私は 毎朝 8時に 家を 出ます。",
+    "tr": {
+      "zh": "我每天早上8点出门。",
+      "en": "I leave home at eight every morning."
+    },
+    "why": {
+      "zh": "「出る」表示离开某处，离开的场所用「を」：家を出る（出门）。",
+      "en": "「出る」 means leaving a place; the place left takes 「を」: 家を出る (leave home)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「家で出ます」把家当成做事的场所，但这里是“离开家”，要用「を」。",
+        "en": "「家で」 treats home as where an activity happens; leaving home takes 「を」."
+      },
+      {
+        "zh": "「へ」表示前往的方向，「家へ出ます」是往家里去，和“出门”相反。",
+        "en": "「へ」 marks a direction toward something; 「家へ出ます」 would mean heading toward home — the opposite."
+      },
+      {
+        "zh": "「に」表示到达点，「家に出ます」意思不通；离开的地方用「を」。",
+        "en": "「に」 marks an arrival point; 「家に出ます」 makes no sense — the place left takes 「を」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l02-003",
+    "type": "narabe",
+    "refs": ["lesson02#1"],
+    "difficulty": 1,
+    "stem": "姉は 去年 [_] [_] [★] [_]。",
+    "options": ["しました", "大学", "卒業", "を"],
+    "order": [1, 3, 2, 0],
+    "full": "姉は 去年 大学を 卒業しました。",
+    "tr": {
+      "zh": "姐姐去年大学毕业了。",
+      "en": "My older sister graduated from university last year."
+    },
+    "why": {
+      "zh": "「卒業する」的离开场所用「を」：大学 を 卒業 しました。★ 在第三格，是「卒業」。",
+      "en": "「卒業する」 takes the place left with 「を」: 大学 を 卒業 しました. The ★ is the third slot: 「卒業」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n5-l02-004",
+    "type": "bunpou",
+    "refs": ["lesson02#2"],
+    "difficulty": 1,
+    "stem": "私は 毎朝 6時（　）起きます。",
+    "options": ["で", "を", "に", "が"],
+    "answer": 2,
+    "full": "私は 毎朝 6時に 起きます。",
+    "tr": {
+      "zh": "我每天早上6点起床。",
+      "en": "I get up at six every morning."
+    },
+    "why": {
+      "zh": "具体的时间点（6点）用「に」。",
+      "en": "A specific point in time (six o'clock) takes 「に」."
+    },
+    "wrong": [
+      {
+        "zh": "「で」表示期限或范围（30分で），不表示动作发生的时刻。",
+        "en": "「で」 marks a time limit or range (30分で), not the moment something happens."
+      },
+      {
+        "zh": "「を」标记宾语，「起きる」没有宾语，时间也不用「を」。",
+        "en": "「を」 marks an object; 「起きる」 has none, and times don't take 「を」."
+      },
+      null,
+      {
+        "zh": "「6時が起きます」变成“6点起床”的主语是6点，意思不通。",
+        "en": "「6時が起きます」 would make six o'clock the one getting up."
+      }
+    ]
+  },
+  {
+    "id": "n5-l02-005",
+    "type": "bunpou",
+    "refs": ["lesson02#2", "lesson02#1"],
+    "difficulty": 2,
+    "stem": "昨日 駅で 友達（　）会いました。",
+    "options": ["に", "を", "で", "へ"],
+    "answer": 0,
+    "full": "昨日 駅で 友達に 会いました。",
+    "tr": {
+      "zh": "昨天在车站碰到了朋友。",
+      "en": "Yesterday I ran into a friend at the station."
+    },
+    "why": {
+      "zh": "「会う」的对象（见到的人）用「に」。",
+      "en": "The person you meet with 「会う」 takes 「に」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「友達を会う」是常见错误：「会う」的对象用「に」，不用「を」。",
+        "en": "「友達を会う」 is a classic mistake: 「会う」 takes 「に」, not 「を」."
+      },
+      {
+        "zh": "「で」表示场所或手段，见面的地点已经是「駅で」，「友達で」意思不通。",
+        "en": "「で」 marks a place or means; the place is already 「駅で」, and 「友達で」 makes no sense."
+      },
+      {
+        "zh": "「へ」只表示移动的方向，不能标记见面的对象。",
+        "en": "「へ」 only marks the direction of movement, not the person you meet."
+      }
+    ]
+  },
+  {
+    "id": "n5-l02-006",
+    "type": "narabe",
+    "refs": ["lesson02#2"],
+    "difficulty": 2,
+    "stem": "週末、新宿へ [_] [★] [_] [_] 行きます。",
+    "options": ["見", "映画", "に", "を"],
+    "order": [1, 3, 0, 2],
+    "full": "週末、新宿へ 映画を 見に 行きます。",
+    "tr": {
+      "zh": "周末去新宿看电影。",
+      "en": "This weekend I'm going to Shinjuku to see a movie."
+    },
+    "why": {
+      "zh": "表示目的：ます词干「見」＋「に」＋「行きます」，前面是宾语「映画を」。★ 在第二格，是「を」。",
+      "en": "Purpose: ます-stem 「見」 ＋ 「に」 ＋ 「行きます」, with the object 「映画を」 before it. The ★ is the second slot: 「を」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n5-l02-007",
+    "type": "bunpou",
+    "refs": ["lesson02#3"],
+    "difficulty": 1,
+    "stem": "私は 毎日 図書館（　）勉強します。",
+    "options": ["に", "を", "へ", "で"],
+    "answer": 3,
+    "full": "私は 毎日 図書館で 勉強します。",
+    "tr": {
+      "zh": "我每天在图书馆学习。",
+      "en": "I study at the library every day."
+    },
+    "why": {
+      "zh": "「勉強する」是在那里做的动作，动作发生的场所用「で」。",
+      "en": "Studying is an activity done there, so the place of the action takes 「で」."
+    },
+    "wrong": [
+      {
+        "zh": "「に」用于存在（ある・いる・住む）或到达点，不用于在某处做事。",
+        "en": "「に」 is for existence (ある・いる・住む) or arrival, not for where an activity happens."
+      },
+      {
+        "zh": "「を」标记宾语或经过的场所，图书馆不是学习的对象。",
+        "en": "「を」 marks an object or a path; the library isn't what you study."
+      },
+      {
+        "zh": "「へ」表示移动的方向，「勉強する」不是移动动词。",
+        "en": "「へ」 marks the direction of movement; 「勉強する」 isn't a movement verb."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n5-l02-008",
+    "type": "bunpou",
+    "refs": ["lesson02#3"],
+    "difficulty": 2,
+    "stem": "昨日は 風邪（　）学校を 休みました。",
+    "options": ["を", "で", "に", "が"],
+    "answer": 1,
+    "full": "昨日は 風邪で 学校を 休みました。",
+    "tr": {
+      "zh": "昨天因为感冒没去上学。",
+      "en": "Yesterday I stayed home from school with a cold."
+    },
+    "why": {
+      "zh": "感冒是请假的原因，名词表示原因用「で」。",
+      "en": "The cold is the reason for missing school; a noun giving a cause takes 「で」."
+    },
+    "wrong": [
+      {
+        "zh": "句子里已经有宾语「学校を」，「風邪を」再加一个「を」不成立（「風邪をひく」才用「を」）。",
+        "en": "The sentence already has the object 「学校を」; 「風邪を」 needs a verb like 「ひく」."
+      },
+      null,
+      {
+        "zh": "「に」表示时间、地点或对象，不表示原因。",
+        "en": "「に」 marks a time, place or target, not a cause."
+      },
+      {
+        "zh": "「風邪が学校を休みました」变成感冒请了假，主语不对。",
+        "en": "「風邪が」 would make the cold the one who stayed home."
+      }
+    ]
+  },
+  {
+    "id": "n5-l02-009",
+    "type": "narabe",
+    "refs": ["lesson02#3"],
+    "difficulty": 2,
+    "stem": "富士山は [_] [_] [★] [_] です。",
+    "options": ["高い 山", "で", "日本", "一番"],
+    "order": [2, 1, 3, 0],
+    "full": "富士山は 日本で 一番 高い 山です。",
+    "tr": {
+      "zh": "富士山是日本最高的山。",
+      "en": "Mount Fuji is the highest mountain in Japan."
+    },
+    "why": {
+      "zh": "「で」表示范围：日本 で 一番 高い山 です（在日本范围内最高）。★ 在第三格，是「一番」。",
+      "en": "「で」 marks the range: 日本 で 一番 高い山 です (highest within Japan). The ★ is the third slot: 「一番」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n5-l02-010",
+    "type": "bunpou",
+    "refs": ["lesson02#4"],
+    "difficulty": 2,
+    "stem": "A「どの かさが あなたのですか。」\nB「その 赤い（　）です。」",
+    "options": ["な", "が", "の", "を"],
+    "answer": 2,
+    "full": "A「どの かさが あなたのですか。」 B「その 赤いのです。」",
+    "tr": {
+      "zh": "A：哪把伞是你的？ B：那把红色的。",
+      "en": "A: Which umbrella is yours? B: That red one."
+    },
+    "why": {
+      "zh": "「の」可以代替前面说过的名词（かさ），「赤いの」＝红色的那把。",
+      "en": "「の」 can stand in for a noun already mentioned (かさ): 「赤いの」 = the red one."
+    },
+    "wrong": [
+      {
+        "zh": "「赤い」是い形容词，后面不加「な」；而且后面还需要一个名词。",
+        "en": "「赤い」 is an い-adjective, so it takes no 「な」, and a noun is still missing."
+      },
+      {
+        "zh": "「が」是主格助词，不能直接接在形容词后面再接「です」。",
+        "en": "「が」 is a subject particle; it can't sit between an adjective and 「です」."
+      },
+      null,
+      {
+        "zh": "「を」标记宾语，这句话没有动作，也不能接在形容词后面。",
+        "en": "「を」 marks an object; there is no action here, and it can't follow an adjective."
+      }
+    ]
+  },
+  {
+    "id": "n5-l02-011",
+    "type": "bunpou",
+    "refs": ["lesson02#4"],
+    "difficulty": 1,
+    "stem": "山田さんは 私の 日本語（　）先生です。",
+    "options": ["を", "で", "に", "の"],
+    "answer": 3,
+    "full": "山田さんは 私の 日本語の 先生です。",
+    "tr": {
+      "zh": "山田是我的日语老师。",
+      "en": "Ms. Yamada is my Japanese teacher."
+    },
+    "why": {
+      "zh": "两个名词连在一起，「日本語」说明是哪方面的老师，用「の」连接。",
+      "en": "Two nouns are joined: 「日本語」 says what kind of teacher, linked with 「の」."
+    },
+    "wrong": [
+      {
+        "zh": "「を」标记动作的宾语，这是判断句，没有动作。",
+        "en": "「を」 marks an action's object; this is a copula sentence with no action."
+      },
+      {
+        "zh": "「で」表示场所、手段，不能把两个名词连成“日语老师”。",
+        "en": "「で」 marks a place or means; it can't join two nouns into \"Japanese teacher\"."
+      },
+      {
+        "zh": "「に」表示时间、地点或对象，也不能连接两个名词。",
+        "en": "「に」 marks a time, place or target; it can't link two nouns either."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n5-l02-012",
+    "type": "narabe",
+    "refs": ["lesson02#4"],
+    "difficulty": 2,
+    "stem": "A「どれが 田中さんの かさですか。」\nB「[_] [_] [_] [★] です。」",
+    "options": ["ある", "の", "あそこに", "青い"],
+    "order": [2, 0, 3, 1],
+    "full": "A「どれが 田中さんの かさですか。」 B「あそこに ある 青いのです。」",
+    "tr": {
+      "zh": "A：哪把是田中的伞？ B：放在那边的那把蓝色的。",
+      "en": "A: Which is Tanaka's umbrella? B: The blue one over there."
+    },
+    "why": {
+      "zh": "「あそこにある」「青い」一起修饰代替「かさ」的「の」：あそこに ある 青い の です。★ 在第四格，是「の」。",
+      "en": "「あそこにある」 and 「青い」 both modify 「の」, which stands for 「かさ」: あそこに ある 青い の です. The ★ is the fourth slot: 「の」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n5-l02-013",
+    "type": "bunpou",
+    "refs": ["lesson02#5"],
+    "difficulty": 1,
+    "stem": "朝から 忙しくて、昼まで 何（　）食べませんでした。",
+    "options": ["が", "も", "を", "は"],
+    "answer": 1,
+    "full": "朝から 忙しくて、昼まで 何も 食べませんでした。",
+    "tr": {
+      "zh": "从早上就很忙，到中午什么都没吃。",
+      "en": "I was busy from the morning and didn't eat anything until noon."
+    },
+    "why": {
+      "zh": "疑问词＋「も」＋否定＝全否定：「何も食べませんでした」（什么都没吃）。",
+      "en": "Question word ＋ 「も」 ＋ negative = total negation: 「何も食べませんでした」 (didn't eat anything)."
+    },
+    "wrong": [
+      {
+        "zh": "「何が食べませんでした」把“什么”当成吃的人，意思不通。",
+        "en": "「何が」 would make \"what\" the eater; it makes no sense."
+      },
+      null,
+      {
+        "zh": "「何を食べませんでしたか」只能是疑问句；这里是陈述句，没有「か」。",
+        "en": "「何を…」 only works as a question; this is a statement with no 「か」."
+      },
+      {
+        "zh": "疑问词不能做「は」的话题，「何は」不成立。",
+        "en": "A question word can't be a 「は」 topic; 「何は」 isn't possible."
+      }
+    ]
+  },
+  {
+    "id": "n5-l02-014",
+    "type": "bunpou",
+    "refs": ["lesson02#5"],
+    "difficulty": 2,
+    "stem": "駅で 友達を 2時間（　）待ちました。とても 寒かったです。",
+    "options": ["を", "に", "も", "で"],
+    "answer": 2,
+    "full": "駅で 友達を 2時間も 待ちました。とても 寒かったです。",
+    "tr": {
+      "zh": "我在车站等朋友足足等了两个小时。冷极了。",
+      "en": "I waited for my friend at the station for a whole two hours. It was freezing."
+    },
+    "why": {
+      "zh": "数量＋「も」强调“多/久”：「2時間も待ちました」（足足等了两个小时）。",
+      "en": "Amount ＋ 「も」 stresses \"that much\": 「2時間も待ちました」 (waited a whole two hours)."
+    },
+    "wrong": [
+      {
+        "zh": "「待つ」的对象已经是「友達を」，时长「2時間」不能再加「を」。",
+        "en": "The object of 「待つ」 is already 「友達を」; the duration 「2時間」 can't take another 「を」."
+      },
+      {
+        "zh": "「に」用于具体时间点（2時に），「2時間」是时长，不用「に」。",
+        "en": "「に」 is for a point in time (2時に); 「2時間」 is a duration and takes no 「に」."
+      },
+      null,
+      {
+        "zh": "「2時間で」表示“在两小时内完成”，「待つ」是持续的动作，不能这样说。",
+        "en": "「2時間で」 means \"done within two hours\"; waiting is ongoing, so it doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n5-l02-015",
+    "type": "narabe",
+    "refs": ["lesson02#5", "lesson02#2"],
+    "difficulty": 2,
+    "stem": "日曜日は 雨だったので、[_] [_] [★] [_]。",
+    "options": ["行きませんでした", "も", "どこ", "に"],
+    "order": [2, 3, 1, 0],
+    "full": "日曜日は 雨だったので、どこにも 行きませんでした。",
+    "tr": {
+      "zh": "星期天下雨，所以哪儿都没去。",
+      "en": "It rained on Sunday, so I didn't go anywhere."
+    },
+    "why": {
+      "zh": "疑问词＋も＋否定，「に」不会被吃掉，要放在「も」前面：どこ に も 行きませんでした。★ 在第三格，是「も」。",
+      "en": "Question word ＋ も ＋ negative; 「に」 isn't dropped and comes before 「も」: どこ に も 行きませんでした. The ★ is the third slot: 「も」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n5-l02-016",
+    "type": "bunpou",
+    "refs": ["lesson02#6"],
+    "difficulty": 2,
+    "stem": "すみません、今から 5時（　）ここで 待って ください。",
+    "options": ["までに", "まで", "に", "で"],
+    "answer": 1,
+    "full": "すみません、今から 5時まで ここで 待って ください。",
+    "tr": {
+      "zh": "不好意思，请从现在起在这里等到5点。",
+      "en": "Sorry, please wait here from now until five."
+    },
+    "why": {
+      "zh": "「待つ」是持续的动作，“一直等到5点”用表示终点的「まで」，常和「から」成对。",
+      "en": "Waiting goes on over time; \"until five\" is the endpoint 「まで」, paired here with 「から」."
+    },
+    "wrong": [
+      {
+        "zh": "「までに」是截止期限（在5点之前做完一次），不能用于持续的「待つ」。",
+        "en": "「までに」 is a deadline (do it once by five); it can't go with ongoing waiting."
+      },
+      null,
+      {
+        "zh": "「5時に」是在5点那一刻，和「今から」连不起来，也不表示持续。",
+        "en": "「5時に」 is the single moment five o'clock; it doesn't pair with 「今から」 or show duration."
+      },
+      {
+        "zh": "「5時で」不表示时间的终点，这里意思不通。",
+        "en": "「5時で」 doesn't mark an endpoint in time; it makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n5-l02-017",
+    "type": "bunpou",
+    "refs": ["lesson02#6"],
+    "difficulty": 1,
+    "stem": "A「リンさんは どこ（　）来ましたか。」\nB「中国から 来ました。」",
+    "options": ["を", "まで", "から", "で"],
+    "answer": 2,
+    "full": "A「リンさんは どこから 来ましたか。」 B「中国から 来ました。」",
+    "tr": {
+      "zh": "A：林是从哪里来的？ B：从中国来的。",
+      "en": "A: Where did you come from, Lin? B: I came from China."
+    },
+    "why": {
+      "zh": "B 回答「中国から」，说明 A 问的是出发点，空间起点用「から」。",
+      "en": "B answers 「中国から」, so A asked about the starting point — 「から」."
+    },
+    "wrong": [
+      {
+        "zh": "「どこを来ましたか」是问经过的路径，和回答「中国から」对不上。",
+        "en": "「どこを」 would ask about a route, which doesn't match the answer 「中国から」."
+      },
+      {
+        "zh": "「どこまで」问的是终点（到哪里），但 B 回答的是起点「中国から」。",
+        "en": "「どこまで」 asks how far, but B gives a starting point, 「中国から」."
+      },
+      null,
+      {
+        "zh": "「どこで来ましたか」不成立；「来る」的起点用「から」。",
+        "en": "「どこで来ましたか」 isn't natural; the starting point of 「来る」 takes 「から」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l02-018",
+    "type": "narabe",
+    "refs": ["lesson02#6"],
+    "difficulty": 2,
+    "stem": "父は 毎日 朝 [_] [_] [★] [_] 働きます。",
+    "options": ["まで", "夕方", "9時から", "5時"],
+    "order": [2, 1, 3, 0],
+    "full": "父は 毎日 朝 9時から 夕方 5時まで 働きます。",
+    "tr": {
+      "zh": "爸爸每天从早上9点工作到傍晚5点。",
+      "en": "My father works every day from 9 in the morning to 5 in the evening."
+    },
+    "why": {
+      "zh": "「朝」后接起点「9時から」，「夕方」后接终点「5時まで」：朝 9時から 夕方 5時 まで。★ 在第三格，是「5時」。",
+      "en": "「朝」 goes with the start 「9時から」, 「夕方」 with the end 「5時まで」: 朝 9時から 夕方 5時 まで. The ★ is the third slot: 「5時」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n5-l02-019",
+    "type": "bunpou",
+    "refs": ["lesson02#7"],
+    "difficulty": 2,
+    "stem": "来週は 母の 誕生日です。これは 母（　）プレゼントです。",
+    "options": ["での", "への", "との", "にの"],
+    "answer": 1,
+    "full": "来週は 母の 誕生日です。これは 母への プレゼントです。",
+    "tr": {
+      "zh": "下周是妈妈的生日。这是送给妈妈的礼物。",
+      "en": "Next week is my mother's birthday. This is a present for her."
+    },
+    "why": {
+      "zh": "修饰名词时表示“给/往……的”要用「への」，「に」不能直接加「の」。",
+      "en": "Modifying a noun with \"to/for…\" uses 「への」; 「に」 can't take 「の」 directly."
+    },
+    "wrong": [
+      {
+        "zh": "「での」表示“在……的”，「母でのプレゼント」意思不通。",
+        "en": "「での」 means \"at/in…\"; 「母でのプレゼント」 makes no sense."
+      },
+      null,
+      {
+        "zh": "「との」是“和……的”（友達との約束），礼物是送给妈妈的，不是和妈妈一起的。",
+        "en": "「との」 means \"with…\" (友達との約束); the present is for mother, not shared with her."
+      },
+      {
+        "zh": "「に」后面不能直接接「の」，「にの」不存在，要用「への」。",
+        "en": "「に」 can't be followed by 「の」; 「にの」 doesn't exist — use 「への」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l02-020",
+    "type": "bunpou",
+    "refs": ["lesson02#7"],
+    "difficulty": 1,
+    "stem": "私は 明日 新幹線で 京都（　）行きます。",
+    "options": ["を", "へ", "で", "が"],
+    "answer": 1,
+    "full": "私は 明日 新幹線で 京都へ 行きます。",
+    "tr": {
+      "zh": "我明天坐新干线去京都。",
+      "en": "Tomorrow I'm going to Kyoto by Shinkansen."
+    },
+    "why": {
+      "zh": "「行く」的方向/目的地用「へ」。",
+      "en": "The direction or destination of 「行く」 takes 「へ」."
+    },
+    "wrong": [
+      {
+        "zh": "「を」用于经过的路径（道を行く），京都是目的地，不是经过的地方。",
+        "en": "「を」 marks a route (道を行く); Kyoto is the destination, not a path."
+      },
+      null,
+      {
+        "zh": "「で」表示手段或场所，手段已经是「新幹線で」，「京都で行きます」不成立。",
+        "en": "「で」 marks a means or venue; the means is already 「新幹線で」, and 「京都で行きます」 doesn't work."
+      },
+      {
+        "zh": "「京都が行きます」变成京都去（某处），主语不对。",
+        "en": "「京都が」 would make Kyoto the one going."
+      }
+    ]
+  },
+  {
+    "id": "n5-l02-021",
+    "type": "narabe",
+    "refs": ["lesson02#7"],
+    "difficulty": 2,
+    "stem": "[_] [★] [_] [_] とても 楽しかったです。",
+    "options": ["旅行", "日本", "は", "への"],
+    "order": [1, 3, 0, 2],
+    "full": "日本への 旅行は とても 楽しかったです。",
+    "tr": {
+      "zh": "日本之旅非常开心。",
+      "en": "The trip to Japan was a lot of fun."
+    },
+    "why": {
+      "zh": "「への」修饰名词：日本 への 旅行，再加话题「は」。★ 在第二格，是「への」。",
+      "en": "「への」 modifies a noun: 日本 への 旅行, then the topic 「は」. The ★ is the second slot: 「への」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n5-l02-022",
+    "type": "bunpou",
+    "refs": ["lesson02#8"],
+    "difficulty": 1,
+    "stem": "週末、私は 友達（　）いっしょに 映画を 見ました。",
+    "options": ["を", "と", "へ", "に"],
+    "answer": 1,
+    "full": "週末、私は 友達と いっしょに 映画を 見ました。",
+    "tr": {
+      "zh": "周末我和朋友一起看了电影。",
+      "en": "On the weekend I watched a movie together with a friend."
+    },
+    "why": {
+      "zh": "「〜といっしょに」表示和谁一起做，用「と」。",
+      "en": "「〜といっしょに」 says who you do it with — 「と」."
+    },
+    "wrong": [
+      {
+        "zh": "宾语已经是「映画を」，「友達を」再用「を」不成立，也和「いっしょに」接不上。",
+        "en": "The object is already 「映画を」; 「友達を」 doesn't fit, nor does it go with 「いっしょに」."
+      },
+      null,
+      {
+        "zh": "「へ」表示移动的方向，「見る」不是移动动词。",
+        "en": "「へ」 marks the direction of movement; 「見る」 isn't a movement verb."
+      },
+      {
+        "zh": "「に」表示动作的对象或到达点，“和……一起”要用「と」。",
+        "en": "「に」 marks a target or arrival point; \"together with\" is 「と」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l02-023",
+    "type": "bunpou",
+    "refs": ["lesson02#8"],
+    "difficulty": 1,
+    "stem": "空が 暗いですね。明日は 雨だ（　）思います。",
+    "options": ["を", "が", "と", "に"],
+    "answer": 2,
+    "full": "空が 暗いですね。明日は 雨だと 思います。",
+    "tr": {
+      "zh": "天好暗啊。我觉得明天会下雨。",
+      "en": "The sky is dark. I think it will rain tomorrow."
+    },
+    "why": {
+      "zh": "「思う」的内容用引用的「と」：简体句＋と思います。",
+      "en": "What you think is quoted with 「と」: plain clause ＋ と思います."
+    },
+    "wrong": [
+      {
+        "zh": "「を」不能接在句子「雨だ」后面引出想法的内容。",
+        "en": "「を」 can't follow a clause like 「雨だ」 to give the content of a thought."
+      },
+      {
+        "zh": "「が」接在句子后面是“但是”，「雨だが思います」意思不通。",
+        "en": "「が」 after a clause means \"but\"; 「雨だが思います」 makes no sense."
+      },
+      null,
+      {
+        "zh": "「に」不能引出「思う」的内容。",
+        "en": "「に」 can't introduce the content of 「思う」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l02-024",
+    "type": "narabe",
+    "refs": ["lesson02#8"],
+    "difficulty": 2,
+    "stem": "田中さんは 明日の パーティーに [_] [★] [_] [_]。",
+    "options": ["いました", "行かない", "言って", "と"],
+    "order": [1, 3, 2, 0],
+    "full": "田中さんは 明日の パーティーに 行かないと 言って いました。",
+    "tr": {
+      "zh": "田中说他不去明天的派对。",
+      "en": "Tanaka said he isn't going to tomorrow's party."
+    },
+    "why": {
+      "zh": "引用的内容「行かない」＋「と」＋「言っていました」。★ 在第二格，是「と」。",
+      "en": "The quoted content 「行かない」 ＋ 「と」 ＋ 「言っていました」. The ★ is the second slot: 「と」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n5-l02-025",
+    "type": "bunpou",
+    "refs": ["lesson02#9"],
+    "difficulty": 2,
+    "stem": "A「この 本、おもしろいですか。」\nB「ええ、とても おもしろいです（　）。ぜひ 読んで ください。」",
+    "options": ["か", "ね", "を", "よ"],
+    "answer": 3,
+    "full": "A「この 本、おもしろいですか。」 B「ええ、とても おもしろいですよ。ぜひ 読んで ください。」",
+    "tr": {
+      "zh": "A：这本书有意思吗？ B：嗯，非常有意思哦。一定要读读看。",
+      "en": "A: Is this book interesting? B: Yes, it's really interesting. You should definitely read it."
+    },
+    "why": {
+      "zh": "A 还没读过，B 把自己知道、A 不知道的信息告诉 A 并推荐，用「よ」。",
+      "en": "A hasn't read it; B tells A something A doesn't know and recommends it — 「よ」."
+    },
+    "wrong": [
+      {
+        "zh": "「か」是提问，但 B 是在回答 A 的问题，不是反问。",
+        "en": "「か」 asks a question, but B is answering, not asking."
+      },
+      {
+        "zh": "「ね」用于双方都知道、寻求共鸣；A 没读过这本书，没法共鸣。",
+        "en": "「ね」 seeks agreement on something both know; A hasn't read the book."
+      },
+      {
+        "zh": "「を」是宾语助词，不能放在句末。",
+        "en": "「を」 is an object particle and can't end a sentence."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n5-l02-026",
+    "type": "bunpou",
+    "refs": ["lesson02#9"],
+    "difficulty": 2,
+    "stem": "（二人で 公園を 歩いて います。）\nA「今日は いい 天気です（　）。」\nB「本当に そうですね。」",
+    "options": ["よ", "か", "ね", "な"],
+    "answer": 2,
+    "full": "（二人で 公園を 歩いて います。） A「今日は いい 天気ですね。」 B「本当に そうですね。」",
+    "tr": {
+      "zh": "（两个人在公园散步。） A：今天天气真好啊。 B：真是的。",
+      "en": "(Two people are walking in the park.) A: Lovely weather today, isn't it? B: It really is."
+    },
+    "why": {
+      "zh": "两人都在外面，都感受得到天气，A 在寻求对方的共鸣，用「ね」；B 也用「そうですね」回应。",
+      "en": "Both are outside and can feel the weather; A seeks agreement with 「ね」, and B agrees with 「そうですね」."
+    },
+    "wrong": [
+      {
+        "zh": "「よ」是告诉对方不知道的事，但 B 也在外面，已经知道天气好。",
+        "en": "「よ」 tells the listener something new, but B is outside too and already knows."
+      },
+      {
+        "zh": "「か」是提问，B 的「本当にそうですね」是赞同，不是回答问题。",
+        "en": "「か」 asks a question; B's 「本当にそうですね」 is agreement, not an answer."
+      },
+      null,
+      {
+        "zh": "「な」用于简体的自言自语（いい天気だな），不接在对人说的「です」后面。",
+        "en": "「な」 is for plain-form musing (いい天気だな), not after 「です」 addressed to someone."
+      }
+    ]
+  },
+  {
+    "id": "n5-l02-027",
+    "type": "narabe",
+    "refs": ["lesson02#9", "lesson02#6"],
+    "difficulty": 1,
+    "stem": "A「明日の テストは 何時からですか。」\nB「[_] [_] [★] [_]。」",
+    "options": ["よ", "から", "9時", "です"],
+    "order": [2, 1, 3, 0],
+    "full": "A「明日の テストは 何時からですか。」 B「9時からですよ。」",
+    "tr": {
+      "zh": "A：明天的考试几点开始？ B：9点开始哦。",
+      "en": "A: What time does tomorrow's test start? B: From nine."
+    },
+    "why": {
+      "zh": "起点「9時から」＋「です」，告诉对方信息的「よ」放在最后。★ 在第三格，是「です」。",
+      "en": "The start 「9時から」 ＋ 「です」, with the informing 「よ」 at the very end. The ★ is the third slot: 「です」."
+    },
+    "wrong": [null, null, null, null]
+  }
+]

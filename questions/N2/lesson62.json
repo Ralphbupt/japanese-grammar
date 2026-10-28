@@ -1,0 +1,314 @@
+[
+  {
+    "id": "n2-l62-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson62#1"
+    ],
+    "difficulty": 1,
+    "stem": "この漫画は子ども（　）、大人の読者にも広く愛されている。",
+    "options": [
+      "に限って",
+      "はもとより",
+      "をめぐって",
+      "に先立って"
+    ],
+    "answer": 1,
+    "full": "この漫画は子どもはもとより、大人の読者にも広く愛されている。",
+    "tr": {
+      "zh": "这部漫画在孩子中自不必说，在成年读者中也广受喜爱。",
+      "en": "This manga is loved not only by children, of course, but widely by adult readers too."
+    },
+    "why": {
+      "zh": "漫画受孩子喜爱是理所当然的，再扩展到成年读者「にも」，用「AはもとよりBも」。",
+      "en": "Children liking a manga goes without saying; it extends to adults with 「にも」 — 「AはもとよりBも」."
+    },
+    "wrong": [
+      {
+        "zh": "「に限って」是“偏偏……”，后面接意外的坏事，这里不是。",
+        "en": "「に限って」 (of all people) introduces something unexpectedly bad, which this isn't."
+      },
+      null,
+      {
+        "zh": "「をめぐって」是“围绕……（争论、问题）”，和“受喜爱”接不上。",
+        "en": "「をめぐって」 (over a dispute) doesn't fit \"loved by\"."
+      },
+      {
+        "zh": "「に先立って」是“在……之前”，接事件，不接“孩子”。",
+        "en": "「に先立って」 (prior to) follows an event, not 「子ども」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l62-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson62#1"
+    ],
+    "difficulty": 2,
+    "stem": "彼は英語（　）、アラビア語やスワヒリ語まで話せる。",
+    "options": [
+      "ばかりに",
+      "にしては",
+      "はもとより",
+      "をきっかけに"
+    ],
+    "answer": 2,
+    "full": "彼は英語はもとより、アラビア語やスワヒリ語まで話せる。",
+    "tr": {
+      "zh": "他英语自不必说，连阿拉伯语和斯瓦希里语都会说。",
+      "en": "He speaks English, of course, and even Arabic and Swahili."
+    },
+    "why": {
+      "zh": "英语是理所当然会的，「まで」引出更进一步的语言，用「はもとより」。",
+      "en": "English is a given, and 「まで」 adds rarer languages on top — 「はもとより」."
+    },
+    "wrong": [
+      {
+        "zh": "「ばかりに」是“就因为……导致坏结果”，和“会说多国语言”不符。",
+        "en": "「ばかりに」 (only because… bad result) doesn't fit speaking many languages."
+      },
+      {
+        "zh": "「にしては」是“就……而言（出乎意料）”，“就英语而言会说阿拉伯语”说不通。",
+        "en": "「にしては」 (for a…, surprisingly) makes no sense with English here."
+      },
+      null,
+      {
+        "zh": "「をきっかけに」是“以……为契机”，后面要接开始或变化，“会说”只是现状。",
+        "en": "「をきっかけに」 needs a change or a start after it; 「話せる」 is just a present ability."
+      }
+    ]
+  },
+  {
+    "id": "n2-l62-003",
+    "type": "bunpou",
+    "refs": [
+      "lesson62#1"
+    ],
+    "difficulty": 3,
+    "stem": "この地域は道が複雑で、（　）はもとより、地元の人でさえ迷うことがある。",
+    "options": [
+      "長年住んでいる住民",
+      "初めて訪れる観光客",
+      "地元の案内人",
+      "道に詳しい人"
+    ],
+    "answer": 1,
+    "full": "この地域は道が複雑で、初めて訪れる観光客はもとより、地元の人でさえ迷うことがある。",
+    "tr": {
+      "zh": "这个地区道路复杂，初次来访的游客自不必说，连当地人有时都会迷路。",
+      "en": "The streets here are a maze — first-time visitors aside, even locals sometimes get lost."
+    },
+    "why": {
+      "zh": "「AはもとよりBでさえ」中A是理所当然的情况，B是出乎意料的情况。当地人都迷路，那初次来的游客迷路当然理所当然。",
+      "en": "In 「AはもとよりBでさえ」, A is the obvious case and B the surprising one. If even locals get lost, first-time tourists getting lost goes without saying."
+    },
+    "wrong": [
+      {
+        "zh": "长年居住的居民就是“当地人”，不能作为比当地人更理所当然会迷路的人。",
+        "en": "Long-time residents are the locals themselves, not the more obvious case."
+      },
+      null,
+      {
+        "zh": "当地向导比当地人更熟悉路，他们迷路不是“理所当然”的。",
+        "en": "A local guide knows the streets better than locals, so their getting lost isn't the obvious case."
+      },
+      {
+        "zh": "熟悉路的人迷路并不理所当然，和「はもとより」的逻辑相反。",
+        "en": "People who know the roads well aren't the obvious ones to get lost — that reverses the logic of 「はもとより」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l62-004",
+    "type": "narabe",
+    "refs": [
+      "lesson62#1"
+    ],
+    "difficulty": 2,
+    "stem": "この問題は [_] [_] [★] [_] 影響を与える。",
+    "options": [
+      "大きな",
+      "環境にも",
+      "経済",
+      "はもとより"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "この問題は経済はもとより環境にも大きな影響を与える。",
+    "tr": {
+      "zh": "这个问题对经济自不必说，对环境也会造成很大影响。",
+      "en": "This issue will have a major impact not only on the economy, of course, but on the environment too."
+    },
+    "why": {
+      "zh": "「経済はもとより」在前，「環境にも」承接，「大きな」修饰「影響」：経済 → はもとより → 環境にも → 大きな。★ 是「環境にも」。",
+      "en": "「経済はもとより」 comes first, then 「環境にも」, and 「大きな」 modifies 「影響」: 経済 → はもとより → 環境にも → 大きな. The ★ is 「環境にも」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l62-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson62#2"
+    ],
+    "difficulty": 1,
+    "stem": "喫煙は本人（　）、周囲の人々の健康にも害を及ぼす。",
+    "options": [
+      "に限り",
+      "ばかりに",
+      "にほかならず",
+      "のみならず"
+    ],
+    "answer": 3,
+    "full": "喫煙は本人のみならず、周囲の人々の健康にも害を及ぼす。",
+    "tr": {
+      "zh": "吸烟不仅危害本人，也危害周围人的健康。",
+      "en": "Smoking harms not only the smoker but also the health of the people around them."
+    },
+    "why": {
+      "zh": "后半句有「にも」，表示范围从“本人”扩展到“周围的人”，用书面语的「のみならず」（不仅）。",
+      "en": "「にも」 in the second half extends the range from the smoker to those around — formal 「のみならず」 (not only)."
+    },
+    "wrong": [
+      {
+        "zh": "「に限り」是“只限于……”，和后面的「周囲の人々にも」矛盾。",
+        "en": "「に限り」 (only) contradicts 「周囲の人々にも」."
+      },
+      {
+        "zh": "「ばかりに」接名词要用「である」，而且表示“就因为……”，意思不通。",
+        "en": "「ばかりに」 needs 「である」 after a noun and means \"only because\", which doesn't fit."
+      },
+      {
+        "zh": "「にほかならず」是“正是……”，“吸烟正是本人”意思不通。",
+        "en": "「にほかならず」 (is nothing but) makes no sense here."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l62-006",
+    "type": "bunpou",
+    "refs": [
+      "lesson62#2"
+    ],
+    "difficulty": 2,
+    "stem": "あの歌手は歌がうまい（　）、作詞や作曲の才能もある。",
+    "options": [
+      "はもとより",
+      "をはじめ",
+      "のみならず",
+      "にしろ"
+    ],
+    "answer": 2,
+    "full": "あの歌手は歌がうまいのみならず、作詞や作曲の才能もある。",
+    "tr": {
+      "zh": "那位歌手不仅歌唱得好，还有作词作曲的才华。",
+      "en": "That singer not only sings well but also has a talent for writing lyrics and music."
+    },
+    "why": {
+      "zh": "「うまい」是い形容词普通形，能直接接它并表示“不仅……”的是「のみならず」。",
+      "en": "「うまい」 is a plain i-adjective; the form that follows it directly and means \"not only\" is 「のみならず」."
+    },
+    "wrong": [
+      {
+        "zh": "「はもとより」只接名词，不能直接接形容词「うまい」。",
+        "en": "「はもとより」 only follows nouns, not the adjective 「うまい」."
+      },
+      {
+        "zh": "「をはじめ」是“以……为首”，只接名词。",
+        "en": "「をはじめ」 (starting with) only follows nouns."
+      },
+      null,
+      {
+        "zh": "「にしろ」是“即使……也”，“即使唱得好，也有才华”逻辑不通。",
+        "en": "「にしろ」 (even if) gives \"even if she sings well, she has talent\", which doesn't follow."
+      }
+    ]
+  },
+  {
+    "id": "n2-l62-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson62#2"
+    ],
+    "difficulty": 2,
+    "stem": "この地震は建物のみならず、道路や橋（　）大きな被害をもたらした。",
+    "options": [
+      "にも",
+      "には",
+      "では",
+      "にしか"
+    ],
+    "answer": 0,
+    "full": "この地震は建物のみならず、道路や橋にも大きな被害をもたらした。",
+    "tr": {
+      "zh": "这次地震不仅对建筑物，对道路和桥梁也造成了巨大损害。",
+      "en": "The earthquake caused severe damage not only to buildings but also to roads and bridges."
+    },
+    "why": {
+      "zh": "「AのみならずBも」是递进，后半句要用「も」，这里是「道路や橋にも」。",
+      "en": "「AのみならずBも」 adds B on top of A, so the second half needs 「も」: 「道路や橋にも」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「には」是对比，“对道路和桥梁（而言）”，丢掉了「のみならず」要求的递进。",
+        "en": "「には」 contrasts, losing the \"also\" that 「のみならず」 sets up."
+      },
+      {
+        "zh": "「では」表示场所或范围，“在道路和桥梁造成损害”和递进不符。",
+        "en": "「では」 marks a place or scope and loses the \"also\"."
+      },
+      {
+        "zh": "「にしか」要和否定呼应（只……没有），这里是肯定句。",
+        "en": "「にしか」 needs a negative verb; this sentence is affirmative."
+      }
+    ]
+  },
+  {
+    "id": "n2-l62-008",
+    "type": "narabe",
+    "refs": [
+      "lesson62#2"
+    ],
+    "difficulty": 2,
+    "stem": "この技術は [_] [_] [_] [★] 期待されている。",
+    "options": [
+      "農業への",
+      "応用も",
+      "のみならず",
+      "医療分野"
+    ],
+    "order": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "full": "この技術は医療分野のみならず農業への応用も期待されている。",
+    "tr": {
+      "zh": "这项技术不仅在医疗领域，在农业上的应用也备受期待。",
+      "en": "This technology is expected to find uses not only in medicine but in agriculture too."
+    },
+    "why": {
+      "zh": "「医療分野のみならず」在前，「農業への」修饰「応用」，「応用も」是被期待的内容：医療分野 → のみならず → 農業への → 応用も。★ 是「応用も」。",
+      "en": "「医療分野のみならず」 comes first, 「農業への」 modifies 「応用」, and 「応用も」 is what's expected: 医療分野 → のみならず → 農業への → 応用も. The ★ is 「応用も」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

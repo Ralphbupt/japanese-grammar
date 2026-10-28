@@ -1,0 +1,494 @@
+[
+  {
+    "id": "n5-mg-201",
+    "type": "hyouki",
+    "refs": ["lesson01#vocab"],
+    "difficulty": 1,
+    "stem": "あの <<やま>>は たかいです。",
+    "options": ["山", "出", "川", "止"],
+    "answer": 0,
+    "tr": { "zh": "那座山很高。", "en": "That mountain is high." },
+    "why": { "zh": "「やま」（山）写作「山」。", "en": "やま (mountain) is written 「山」." },
+    "wrong": [
+      null,
+      { "zh": "「出」读「でる」（出去），像两个「山」叠在一起。", "en": "「出」 is でる (go out) — like two 「山」 stacked." },
+      { "zh": "「川」读「かわ」（河）。", "en": "「川」 is かわ (river)." },
+      { "zh": "「止」读「とまる」（停）。", "en": "「止」 is とまる (stop)." }
+    ]
+  },
+  {
+    "id": "n5-mg-202",
+    "type": "hyouki",
+    "refs": ["lesson01#vocab"],
+    "difficulty": 1,
+    "stem": "そとは <<あめ>>が ふって います。",
+    "options": ["雨", "雪", "両", "電"],
+    "answer": 0,
+    "tr": { "zh": "外面在下雨。", "en": "It's raining outside." },
+    "why": { "zh": "「あめ」（雨）写作「雨」，里面有四个点。", "en": "あめ (rain) is 「雨」, with four dots inside." },
+    "wrong": [
+      null,
+      { "zh": "「雪」读「ゆき」（雪），上面是「雨」字头。", "en": "「雪」 is ゆき (snow) — 「雨」 is only its top part." },
+      { "zh": "「両」读「りょう」，里面没有点。", "en": "「両」 is りょう, with no dots inside." },
+      { "zh": "「電」读「でん」，是「雨」下面加了一部分。", "en": "「電」 is でん — 「雨」 with something added below." }
+    ]
+  },
+  {
+    "id": "n5-mg-203",
+    "type": "hyouki",
+    "refs": ["lesson13#vocab"],
+    "difficulty": 2,
+    "stem": "きょうは <<そら>>が あおいです。",
+    "options": ["空", "究", "突", "穴"],
+    "answer": 0,
+    "tr": { "zh": "今天天空很蓝。", "en": "The sky is blue today." },
+    "why": { "zh": "「そら」（天空）写作「空」：上面「穴」字头，下面「工」。", "en": "そら (sky) is 「空」: 「穴」 on top, 「工」 below." },
+    "wrong": [
+      null,
+      { "zh": "「究」读「きゅう」（研究），下面是「九」。", "en": "「究」 is きゅう (research), with 「九」 below." },
+      { "zh": "「突」读「とつ」，下面是「大」。", "en": "「突」 is とつ, with 「大」 below." },
+      { "zh": "「穴」读「あな」（洞），只是「空」的上半部分。", "en": "「穴」 is あな (hole) — just the top of 「空」." }
+    ]
+  },
+  {
+    "id": "n5-mg-204",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "<<くるま>>で きました。",
+    "options": ["車", "東", "軍", "庫"],
+    "answer": 0,
+    "tr": { "zh": "我是开车来的。", "en": "I came by car." },
+    "why": { "zh": "「くるま」（车）写作「車」。", "en": "くるま (car) is written 「車」." },
+    "wrong": [
+      null,
+      { "zh": "「東」读「ひがし」（东），中间是「日」。", "en": "「東」 is ひがし (east), with 「日」 in the middle." },
+      { "zh": "「軍」读「ぐん」（军），上面多了「冖」。", "en": "「軍」 is ぐん (army), with an extra cover on top." },
+      { "zh": "「庫」读「こ」（仓库），外面多了「广」。", "en": "「庫」 is こ (storehouse), with 「广」 around it." }
+    ]
+  },
+  {
+    "id": "n5-mg-205",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "<<みみ>>が いたいです。",
+    "options": ["耳", "目", "自", "身"],
+    "answer": 0,
+    "tr": { "zh": "我耳朵疼。", "en": "My ear hurts." },
+    "why": { "zh": "「みみ」（耳朵）写作「耳」。", "en": "みみ (ear) is written 「耳」." },
+    "wrong": [
+      null,
+      { "zh": "「目」读「め」（眼睛）。", "en": "「目」 is め (eye)." },
+      { "zh": "「自」读「じ」（自己），上面有一撇。", "en": "「自」 is じ (self), with a stroke on top." },
+      { "zh": "「身」读「み」（身体）。", "en": "「身」 is み (body)." }
+    ]
+  },
+  {
+    "id": "n5-mg-206",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "えきの <<ひだり>>に ぎんこうが あります。",
+    "options": ["左", "右", "石", "在"],
+    "answer": 0,
+    "tr": { "zh": "车站左边有银行。", "en": "There's a bank to the left of the station." },
+    "why": { "zh": "「ひだり」（左）写作「左」，下面是「工」。", "en": "ひだり (left) is 「左」, with 「工」 underneath." },
+    "wrong": [
+      null,
+      { "zh": "「右」读「みぎ」（右），下面是「口」。", "en": "「右」 is みぎ (right), with 「口」 underneath." },
+      { "zh": "「石」读「いし」（石头）。", "en": "「石」 is いし (stone)." },
+      { "zh": "「在」读「ざい」，下面是「土」。", "en": "「在」 is ざい, with 「土」 underneath." }
+    ]
+  },
+  {
+    "id": "n5-mg-207",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "あしたは がっこうが <<やすみ>>です。",
+    "options": ["休み", "体み", "木み", "伏み"],
+    "answer": 0,
+    "tr": { "zh": "明天学校放假。", "en": "There's no school tomorrow." },
+    "why": { "zh": "「やすみ」（休息、放假）写作「休み」：人靠着树休息。", "en": "やすみ (a day off) is 「休み」 — a person leaning on a tree." },
+    "wrong": [
+      null,
+      { "zh": "「体」读「からだ」（身体），右边是「本」。", "en": "「体」 is からだ (body), with 「本」 on the right." },
+      { "zh": "「木」读「き」（树），少了左边的「亻」。", "en": "「木」 is き (tree), missing the person on the left." },
+      { "zh": "「伏」读「ふせる」，右边是「犬」。", "en": "「伏」 is ふせる, with 「犬」 on the right." }
+    ]
+  },
+  {
+    "id": "n5-mg-208",
+    "type": "hyouki",
+    "refs": ["lesson03#vocab"],
+    "difficulty": 2,
+    "stem": "ともだちと でんわで <<はなします>>。",
+    "options": ["話します", "語します", "活します", "詰します"],
+    "answer": 0,
+    "tr": { "zh": "我和朋友打电话聊天。", "en": "I talk with a friend on the phone." },
+    "why": { "zh": "「はなす」（说话）写作「話す」：言字旁加「舌」。", "en": "はなす (talk) is 「話す」: 「言」 plus 「舌」." },
+    "wrong": [
+      null,
+      { "zh": "「語」读「ご／かたる」，没有「語します」这种写法。", "en": "「語」 is ご or かたる; 「語します」 isn't a spelling." },
+      { "zh": "「活」读「かつ」，左边是三点水。", "en": "「活」 is かつ, with the water radical on the left." },
+      { "zh": "「詰」读「つめる」（塞满），右边是「吉」。", "en": "「詰」 is つめる (pack), with 「吉」 on the right." }
+    ]
+  },
+  {
+    "id": "n5-mg-209",
+    "type": "hyouki",
+    "refs": ["lesson02#vocab"],
+    "difficulty": 2,
+    "stem": "まいばん ほんを <<よみます>>。",
+    "options": ["読みます", "続みます", "売みます", "説みます"],
+    "answer": 0,
+    "tr": { "zh": "我每天晚上看书。", "en": "I read a book every night." },
+    "why": { "zh": "「よむ」（读）写作「読む」：言字旁加「売」。", "en": "よむ (read) is 「読む」: 「言」 plus 「売」." },
+    "wrong": [
+      null,
+      { "zh": "「続」读「つづく」（继续），左边是「糸」。", "en": "「続」 is つづく (continue), with 「糸」 on the left." },
+      { "zh": "「売」读「うる」（卖），只是「読」的右半边。", "en": "「売」 is うる (sell) — only the right half of 「読」." },
+      { "zh": "「説」读「せつ」（说明），右边不是「売」。", "en": "「説」 is せつ (explain); its right side isn't 「売」." }
+    ]
+  },
+  {
+    "id": "n5-mg-210",
+    "type": "hyouki",
+    "refs": ["lesson03#vocab"],
+    "difficulty": 2,
+    "stem": "スーパーで やさいを <<かいます>>。",
+    "options": ["買います", "貝います", "員います", "質います"],
+    "answer": 0,
+    "tr": { "zh": "我在超市买蔬菜。", "en": "I buy vegetables at the supermarket." },
+    "why": { "zh": "「かう」（买）写作「買う」：上面「罒」，下面「貝」。", "en": "かう (buy) is 「買う」: 「罒」 on top of 「貝」." },
+    "wrong": [
+      null,
+      { "zh": "「貝」读「かい」（贝壳），少了上面的「罒」。", "en": "「貝」 is かい (shellfish), missing the top part." },
+      { "zh": "「員」读「いん」（人员），上面是「口」。", "en": "「員」 is いん (member), with 「口」 on top." },
+      { "zh": "「質」读「しつ」（质量）。", "en": "「質」 is しつ (quality)." }
+    ]
+  },
+  {
+    "id": "n5-mg-211",
+    "type": "hyouki",
+    "refs": ["lesson07#vocab"],
+    "difficulty": 1,
+    "stem": "この とけいは <<たかい>>です。",
+    "options": ["高い", "古い", "京い", "亭い"],
+    "answer": 0,
+    "tr": { "zh": "这块表很贵。", "en": "This watch is expensive." },
+    "why": { "zh": "「たかい」（贵、高）写作「高い」。", "en": "たかい (expensive, tall) is written 「高い」." },
+    "wrong": [
+      null,
+      { "zh": "「古い」读「ふるい」（旧的）。", "en": "「古い」 is ふるい (old)." },
+      { "zh": "「京」读「きょう」（京都），下面是「小」。", "en": "「京」 is きょう (as in 京都), with 「小」 below." },
+      { "zh": "「亭」读「てい」，下面是「丁」。", "en": "「亭」 is てい, with 「丁」 below." }
+    ]
+  },
+  {
+    "id": "n5-mg-212",
+    "type": "hyouki",
+    "difficulty": 3,
+    "stem": "<<あたらしい>> いえに すんで います。",
+    "options": ["新しい", "親しい", "新らしい", "薪しい"],
+    "answer": 0,
+    "tr": { "zh": "我住在新房子里。", "en": "I live in a new house." },
+    "why": { "zh": "「あたらしい」写作「新しい」，送假名从「しい」开始。", "en": "あたらしい is 「新しい」 — the kana start at しい." },
+    "wrong": [
+      null,
+      { "zh": "「親しい」读「したしい」（亲密），右边多了「見」。", "en": "「親しい」 is したしい (close, friendly) — it has 「見」 on the right." },
+      { "zh": "送假名错了：正确写法是「新しい」，不写「ら」。", "en": "Wrong okurigana: it's 「新しい」, without ら." },
+      { "zh": "「薪」读「たきぎ」（柴），上面多了草字头。", "en": "「薪」 is たきぎ (firewood), with a grass radical on top." }
+    ]
+  },
+  {
+    "id": "n5-mg-213",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "この まちは ひとが <<すくない>>です。",
+    "options": ["少ない", "小ない", "歩ない", "砂ない"],
+    "answer": 0,
+    "tr": { "zh": "这个镇上人很少。", "en": "There aren't many people in this town." },
+    "why": { "zh": "「すくない」（少）写作「少ない」：「小」下面加一撇。", "en": "すくない (few) is 「少ない」: 「小」 with a stroke below." },
+    "wrong": [
+      null,
+      { "zh": "「小」读「ちいさい」（小），少了下面的一撇。", "en": "「小」 is ちいさい (small), missing the bottom stroke." },
+      { "zh": "「歩」读「あるく」（走），上面是「止」。", "en": "「歩」 is あるく (walk), with 「止」 on top." },
+      { "zh": "「砂」读「すな」（沙子），左边是「石」。", "en": "「砂」 is すな (sand), with 「石」 on the left." }
+    ]
+  },
+  {
+    "id": "n5-mg-214",
+    "type": "hyouki",
+    "refs": ["lesson07#vocab"],
+    "difficulty": 2,
+    "stem": "<<おおきい>> いぬが います。",
+    "options": ["大きい", "太きい", "犬きい", "大い"],
+    "answer": 0,
+    "tr": { "zh": "有一只大狗。", "en": "There's a big dog." },
+    "why": { "zh": "「おおきい」写作「大きい」，送假名是「きい」。", "en": "おおきい is 「大きい」, with きい as the kana ending." },
+    "wrong": [
+      null,
+      { "zh": "「太」读「ふとい」（粗、胖），下面多一点。", "en": "「太」 is ふとい (thick), with a dot underneath." },
+      { "zh": "「犬」读「いぬ」（狗），右上多一点。", "en": "「犬」 is いぬ (dog), with a dot at the top right." },
+      { "zh": "少了送假名「き」，「大い」不读「おおきい」。", "en": "Missing the き; 「大い」 can't be read おおきい." }
+    ]
+  },
+  {
+    "id": "n5-mg-215",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "えきの <<みなみ>>に こうえんが あります。",
+    "options": ["南", "西", "両", "内"],
+    "answer": 0,
+    "tr": { "zh": "车站南边有公园。", "en": "There's a park to the south of the station." },
+    "why": { "zh": "「みなみ」（南）写作「南」，上面是「十」。", "en": "みなみ (south) is 「南」, with 「十」 on top." },
+    "wrong": [
+      null,
+      { "zh": "「西」读「にし」（西）。", "en": "「西」 is にし (west)." },
+      { "zh": "「両」读「りょう」（两）。", "en": "「両」 is りょう (both)." },
+      { "zh": "「内」读「うち」（里面）。", "en": "「内」 is うち (inside)." }
+    ]
+  },
+  {
+    "id": "n5-mg-216",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "にほんの <<きた>>は ふゆが さむいです。",
+    "options": ["北", "比", "化", "此"],
+    "answer": 0,
+    "tr": { "zh": "日本北部冬天很冷。", "en": "Winters are cold in the north of Japan." },
+    "why": { "zh": "「きた」（北）写作「北」。", "en": "きた (north) is written 「北」." },
+    "wrong": [
+      null,
+      { "zh": "「比」读「くらべる」（比较）。", "en": "「比」 is くらべる (compare)." },
+      { "zh": "「化」读「か」（变化），左边是「亻」。", "en": "「化」 is か (change), with 「亻」 on the left." },
+      { "zh": "「此」读「これ」（此），左边是「止」。", "en": "「此」 is これ (this, archaic), with 「止」 on the left." }
+    ]
+  },
+  {
+    "id": "n5-mg-217",
+    "type": "hyouki",
+    "refs": ["lesson01#vocab"],
+    "difficulty": 2,
+    "stem": "わたしは だいがくの <<がくせい>>です。",
+    "options": ["学生", "字生", "学牛", "覚生"],
+    "answer": 0,
+    "tr": { "zh": "我是大学生。", "en": "I'm a university student." },
+    "why": { "zh": "「がくせい」（学生）写作「学生」。", "en": "がくせい (student) is written 「学生」." },
+    "wrong": [
+      null,
+      { "zh": "「字」读「じ」（文字），上面是「宀」。", "en": "「字」 is じ (letter), with 「宀」 on top." },
+      { "zh": "「牛」读「うし」（牛），比「生」少一横。", "en": "「牛」 is うし (cow) — one stroke short of 「生」." },
+      { "zh": "「覚」读「おぼえる」（记住），下面是「見」。", "en": "「覚」 is おぼえる (remember), with 「見」 below." }
+    ]
+  },
+  {
+    "id": "n5-mg-218",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "あとで <<でんわ>>を かけます。",
+    "options": ["電話", "雷話", "電語", "電詰"],
+    "answer": 0,
+    "tr": { "zh": "我待会儿打电话。", "en": "I'll call later." },
+    "why": { "zh": "「でんわ」（电话）写作「電話」。", "en": "でんわ (telephone) is written 「電話」." },
+    "wrong": [
+      null,
+      { "zh": "「雷」读「かみなり」（雷），下面是「田」。", "en": "「雷」 is かみなり (thunder), with 「田」 below." },
+      { "zh": "「語」读「ご」，「わ」是「話」。", "en": "「語」 is ご; わ is 「話」." },
+      { "zh": "「詰」读「つめる」，不是「話」。", "en": "「詰」 is つめる, not 「話」." }
+    ]
+  },
+  {
+    "id": "n5-mg-219",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "<<ごぜん>> くじから しごとです。",
+    "options": ["午前", "牛前", "午煎", "干前"],
+    "answer": 0,
+    "tr": { "zh": "我上午九点开始工作。", "en": "I start work at 9 a.m." },
+    "why": { "zh": "「ごぜん」（上午）写作「午前」。", "en": "ごぜん (a.m.) is written 「午前」." },
+    "wrong": [
+      null,
+      { "zh": "「牛」读「うし」，竖线向上出头。", "en": "「牛」 is うし (cow) — its vertical stroke goes through the top." },
+      { "zh": "「煎」读「せん」（煎），下面多了四点。", "en": "「煎」 is せん (roast), with four dots below." },
+      { "zh": "「干」读「ほす」（晒干），少了左上的一撇。", "en": "「干」 is ほす (dry), missing the top-left stroke." }
+    ]
+  },
+  {
+    "id": "n5-mg-220",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "あの <<おとこ>>の ひとは だれですか。",
+    "options": ["男", "思", "界", "胃"],
+    "answer": 0,
+    "tr": { "zh": "那个男人是谁？", "en": "Who is that man?" },
+    "why": { "zh": "「おとこ」（男）写作「男」：上「田」下「力」。", "en": "おとこ (man) is 「男」: 「田」 over 「力」." },
+    "wrong": [
+      null,
+      { "zh": "「思」读「おもう」（想），下面是「心」。", "en": "「思」 is おもう (think), with 「心」 below." },
+      { "zh": "「界」读「かい」（世界），下面是「介」。", "en": "「界」 is かい (world), with 「介」 below." },
+      { "zh": "「胃」读「い」（胃），下面是「月」。", "en": "「胃」 is い (stomach), with 「月」 below." }
+    ]
+  },
+  {
+    "id": "n5-mg-221",
+    "type": "hyouki",
+    "difficulty": 3,
+    "stem": "<<らいしゅう>> りょこうに いきます。",
+    "options": ["来週", "来周", "末週", "来遇"],
+    "answer": 0,
+    "tr": { "zh": "下周我要去旅行。", "en": "I'm going on a trip next week." },
+    "why": { "zh": "「らいしゅう」（下周）写作「来週」，「週」有「辶」。", "en": "らいしゅう (next week) is 「来週」; 「週」 has the 「辶」 radical." },
+    "wrong": [
+      null,
+      { "zh": "少了「辶」：日语表示“星期”要写「週」。", "en": "Missing 「辶」: \"week\" in Japanese is 「週」." },
+      { "zh": "「末」读「すえ」（末尾），不是「来」。", "en": "「末」 is すえ (end), not 「来」." },
+      { "zh": "「遇」读「ぐう」（遇到），不是「週」。", "en": "「遇」 is ぐう (meet by chance), not 「週」." }
+    ]
+  },
+  {
+    "id": "n5-mg-222",
+    "type": "hyouki",
+    "refs": ["lesson15#vocab"],
+    "difficulty": 3,
+    "stem": "まいあさ <<しんぶん>>を よみます。",
+    "options": ["新聞", "新間", "新問", "親聞"],
+    "answer": 0,
+    "tr": { "zh": "我每天早上看报纸。", "en": "I read the newspaper every morning." },
+    "why": { "zh": "「しんぶん」（报纸）写作「新聞」：「門」里面是「耳」。", "en": "しんぶん (newspaper) is 「新聞」: 「耳」 inside 「門」." },
+    "wrong": [
+      null,
+      { "zh": "「間」读「かん／あいだ」，「門」里面是「日」。", "en": "「間」 is かん/あいだ, with 「日」 inside 「門」." },
+      { "zh": "「問」读「もん」（问题），「門」里面是「口」。", "en": "「問」 is もん (question), with 「口」 inside 「門」." },
+      { "zh": "「親」读「しん／おや」，但“报纸”的「しん」是「新」。", "en": "「親」 is しん/おや, but the しん in newspaper is 「新」." }
+    ]
+  },
+  {
+    "id": "n5-mg-223",
+    "type": "hyouki",
+    "refs": ["lesson03#vocab"],
+    "difficulty": 2,
+    "stem": "あした デパートへ <<いきます>>。",
+    "options": ["行きます", "待きます", "街きます", "役きます"],
+    "answer": 0,
+    "tr": { "zh": "我明天去百货商店。", "en": "I'm going to the department store tomorrow." },
+    "why": { "zh": "「いく」（去）写作「行く」。", "en": "いく (go) is written 「行く」." },
+    "wrong": [
+      null,
+      { "zh": "「待」读「まつ」（等），右边是「寺」。", "en": "「待」 is まつ (wait), with 「寺」 on the right." },
+      { "zh": "「街」读「まち」（街道），中间多了「圭」。", "en": "「街」 is まち (street), with 「圭」 in the middle." },
+      { "zh": "「役」读「やく」（职务），右边是「殳」。", "en": "「役」 is やく (role), with 「殳」 on the right." }
+    ]
+  },
+  {
+    "id": "n5-mg-224",
+    "type": "hyouki",
+    "refs": ["lesson01#vocab"],
+    "difficulty": 2,
+    "stem": "あの <<みせ>>の ラーメンは おいしいです。",
+    "options": ["店", "庁", "広", "度"],
+    "answer": 0,
+    "tr": { "zh": "那家店的拉面很好吃。", "en": "The ramen at that shop is good." },
+    "why": { "zh": "「みせ」（店）写作「店」：「广」里面是「占」。", "en": "みせ (shop) is 「店」: 「占」 inside 「广」." },
+    "wrong": [
+      null,
+      { "zh": "「庁」读「ちょう」（政府机关），里面是「丁」。", "en": "「庁」 is ちょう (government office), with 「丁」 inside." },
+      { "zh": "「広」读「ひろい」（宽），里面是「ム」。", "en": "「広」 is ひろい (wide), with 「ム」 inside." },
+      { "zh": "「度」读「ど」（次、度），里面不是「占」。", "en": "「度」 is ど (degree); it doesn't have 「占」 inside." }
+    ]
+  },
+  {
+    "id": "n5-mg-225",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "えきの まえの <<ほてる>>に とまります。",
+    "options": ["ホテル", "ホテハ", "ホラル", "ホラハ"],
+    "answer": 0,
+    "tr": { "zh": "我住在车站前的酒店。", "en": "I'm staying at the hotel in front of the station." },
+    "why": { "zh": "「ほてる」（酒店）写作「ホテル」。", "en": "ほてる (hotel) is 「ホテル」." },
+    "wrong": [
+      null,
+      { "zh": "「る」的片假名是「ル」，不是「ハ」。", "en": "る in katakana is ル, not ハ." },
+      { "zh": "「て」的片假名是「テ」，不是「ラ」。", "en": "て in katakana is テ, not ラ." },
+      { "zh": "「テ」写成了「ラ」，「ル」写成了「ハ」。", "en": "Both are wrong: テ became ラ, and ル became ハ." }
+    ]
+  },
+  {
+    "id": "n5-mg-226",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "よる <<てれび>>を みます。",
+    "options": ["テレビ", "テレピ", "チレビ", "テルビ"],
+    "answer": 0,
+    "tr": { "zh": "我晚上看电视。", "en": "I watch TV in the evening." },
+    "why": { "zh": "「てれび」（电视）写作「テレビ」。", "en": "てれび (TV) is 「テレビ」." },
+    "wrong": [
+      null,
+      { "zh": "「び」是浊音「ビ」，不是半浊音「ピ」。", "en": "び is ビ (voiced), not ピ." },
+      { "zh": "「て」是「テ」，「チ」是「ち」。", "en": "て is テ; チ is ち." },
+      { "zh": "「れ」是「レ」，「ル」是「る」。", "en": "れ is レ; ル is る." }
+    ]
+  },
+  {
+    "id": "n5-mg-227",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "あさ <<こーひー>>を のみます。",
+    "options": ["コーヒー", "コーヒ", "コヒー", "ユーヒー"],
+    "answer": 0,
+    "tr": { "zh": "我早上喝咖啡。", "en": "I drink coffee in the morning." },
+    "why": { "zh": "「こーひー」（咖啡）写作「コーヒー」，两处都有长音符「ー」。", "en": "こーひー (coffee) is 「コーヒー」, with two long marks." },
+    "wrong": [
+      null,
+      { "zh": "少了最后的长音「ー」。", "en": "Missing the final long mark." },
+      { "zh": "少了「コ」后面的长音「ー」。", "en": "Missing the long mark after コ." },
+      { "zh": "「こ」是「コ」，「ユ」是「ゆ」。", "en": "こ is コ; ユ is ゆ." }
+    ]
+  },
+  {
+    "id": "n5-mg-228",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "<<てーぶる>>の うえに ほんが あります。",
+    "options": ["テーブル", "テープル", "テーブレ", "デーブル"],
+    "answer": 0,
+    "tr": { "zh": "桌子上有书。", "en": "There's a book on the table." },
+    "why": { "zh": "「てーぶる」（桌子）写作「テーブル」。", "en": "てーぶる (table) is 「テーブル」." },
+    "wrong": [
+      null,
+      { "zh": "「ぶ」是浊音「ブ」，不是半浊音「プ」。", "en": "ぶ is ブ (voiced), not プ." },
+      { "zh": "「る」是「ル」，「レ」是「れ」。", "en": "る is ル; レ is れ." },
+      { "zh": "开头是清音「テ」，不是「デ」。", "en": "It starts unvoiced: テ, not デ." }
+    ]
+  },
+  {
+    "id": "n5-mg-229",
+    "type": "hyouki",
+    "difficulty": 3,
+    "stem": "あおい <<しゃつ>>を かいました。",
+    "options": ["シャツ", "シヤツ", "ツャツ", "シャシ"],
+    "answer": 0,
+    "tr": { "zh": "我买了一件蓝衬衫。", "en": "I bought a blue shirt." },
+    "why": { "zh": "「しゃつ」（衬衫）写作「シャツ」：「シ」加小写「ャ」，最后是「ツ」。", "en": "しゃつ (shirt) is 「シャツ」: シ with a small ャ, then ツ." },
+    "wrong": [
+      null,
+      { "zh": "「ャ」要小写；大「ヤ」读「や」。", "en": "The ャ must be small; a full-size ヤ reads や." },
+      { "zh": "开头是「シ」（し），「ツ」是「つ」。", "en": "It starts with シ (し); ツ is つ." },
+      { "zh": "最后是「ツ」（つ），「シ」是「し」。", "en": "It ends with ツ (つ); シ is し." }
+    ]
+  },
+  {
+    "id": "n5-mg-230",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "あねは ながい <<すかーと>>を はいて います。",
+    "options": ["スカート", "ヌカート", "スカーナ", "スカード"],
+    "answer": 0,
+    "tr": { "zh": "姐姐穿着长裙。", "en": "My older sister is wearing a long skirt." },
+    "why": { "zh": "「すかーと」（裙子）写作「スカート」。", "en": "すかーと (skirt) is 「スカート」." },
+    "wrong": [
+      null,
+      { "zh": "「す」是「ス」，「ヌ」是「ぬ」。", "en": "す is ス; ヌ is ぬ." },
+      { "zh": "「と」是「ト」，「ナ」是「な」。", "en": "と is ト; ナ is な." },
+      { "zh": "「と」是清音「ト」，不是「ド」。", "en": "と is unvoiced: ト, not ド." }
+    ]
+  }
+]

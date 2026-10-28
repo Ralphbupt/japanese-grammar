@@ -1,0 +1,1271 @@
+[
+  {
+    "id": "n2-l75-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#1",
+      "lesson59#4"
+    ],
+    "difficulty": 2,
+    "stem": "たとえ今から駅まで走った（　）、もう最終電車には間に合わないだろう。",
+    "options": [
+      "ところで",
+      "ものの",
+      "からといって",
+      "とはいえ"
+    ],
+    "answer": 0,
+    "full": "たとえ今から駅まで走った ところで、もう最終電車には間に合わないだろう。",
+    "tr": {
+      "zh": "就算现在跑到车站，也赶不上末班车了吧。",
+      "en": "Even if I ran to the station now, I probably wouldn't make the last train."
+    },
+    "why": {
+      "zh": "「たとえ」引出假设，后句是“也没用”的消极结果，用「た形＋ところで」（就算……也白搭）。",
+      "en": "「たとえ」 sets up a hypothesis and the result is \"no use\": ta-form + 「ところで」 (even if…, it won't help)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ものの」接已经发生的事实（“虽然跑了，但……”），不能和表示假设的「たとえ」一起用。",
+        "en": "「ものの」 concedes a real fact (\"although I ran…\") and can't pair with the hypothetical 「たとえ」."
+      },
+      {
+        "zh": "「からといって」是“不能因为……就……”，后面一般接否定的判断或劝告，和「たとえ」的假设不搭。",
+        "en": "「からといって」 (\"just because…\") leads to a rejected conclusion and doesn't pair with 「たとえ」."
+      },
+      {
+        "zh": "「とはいえ」接已承认的事实（“虽说……”），不接「た形」表示假设，也不和「たとえ」呼应。",
+        "en": "「とはいえ」 concedes an accepted fact; it doesn't express a hypothesis or answer 「たとえ」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l75-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#1",
+      "lesson59#2"
+    ],
+    "difficulty": 2,
+    "stem": "体に悪いと知り（　）、ついタバコに手が伸びてしまう。",
+    "options": [
+      "ところで",
+      "ものの",
+      "つつも",
+      "からといって"
+    ],
+    "answer": 2,
+    "full": "体に悪いと知り つつも、ついタバコに手が伸びてしまう。",
+    "tr": {
+      "zh": "虽然知道对身体不好，却还是忍不住伸手去拿烟。",
+      "en": "Even though I know it's bad for me, I can't help reaching for a cigarette."
+    },
+    "why": {
+      "zh": "空格前是ます形「知り」，能接ます形表示“虽然……却……”的只有书面的「つつ（も）」。",
+      "en": "Before the blank is the masu-stem 「知り」; the only concessive that attaches there is the written 「つつ(も)」."
+    },
+    "wrong": [
+      {
+        "zh": "「ところで」接た形（「知ったところで」），不能接ます形，意思也不对。",
+        "en": "「ところで」 follows the ta-form (「知ったところで」), not the masu-stem, and the meaning is off."
+      },
+      {
+        "zh": "「ものの」接普通形（「知っているものの」），不能接ます形「知り」。",
+        "en": "「ものの」 follows the plain form (「知っているものの」), not the masu-stem 「知り」."
+      },
+      null,
+      {
+        "zh": "「からといって」接普通形，不能接ます形「知り」。",
+        "en": "「からといって」 follows the plain form, not the masu-stem 「知り」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l75-003",
+    "type": "narabe",
+    "refs": [
+      "lesson75#1",
+      "lesson59#5"
+    ],
+    "difficulty": 2,
+    "stem": "試験まであと一週間しかないので、今は [_] [_] [★] [_]。",
+    "options": [
+      "ない",
+      "行く",
+      "旅行に",
+      "どころでは"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "試験まであと一週間しかないので、今は 旅行に 行く どころでは ない。",
+    "tr": {
+      "zh": "离考试只剩一周了，现在哪有心思去旅行。",
+      "en": "With only a week left before the exam, I'm in no position to go on a trip right now."
+    },
+    "why": {
+      "zh": "「動詞辞書形＋どころではない」＝哪有心思/余裕……：旅行に → 行く → どころでは → ない。★ 在第三格，是「どころでは」。",
+      "en": "「dictionary form + どころではない」 = in no position to…: 旅行に → 行く → どころでは → ない. The ★ is the third slot: 「どころでは」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l75-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#2",
+      "lesson60#3"
+    ],
+    "difficulty": 2,
+    "stem": "彼は優勝候補と言われていた（　）、初戦での敗退には誰もが驚いた。",
+    "options": [
+      "からには",
+      "ばこそ",
+      "あまり",
+      "だけに"
+    ],
+    "answer": 3,
+    "full": "彼は優勝候補と言われていた だけに、初戦での敗退には誰もが驚いた。",
+    "tr": {
+      "zh": "正因为他被称为夺冠热门，第一场就被淘汰让所有人都很吃惊。",
+      "en": "Precisely because he was said to be a favourite to win, everyone was shocked when he lost in the first round."
+    },
+    "why": {
+      "zh": "“被看好”和“首战出局”的落差更让人吃惊，「だけに」表示“正因为……所以更加……”。",
+      "en": "The gap between \"favourite\" and \"out in round one\" makes the surprise greater: 「だけに」 (all the more because…)."
+    },
+    "wrong": [
+      {
+        "zh": "「からには」后面要接决心、义务或推断（“既然……就要……”），不接“大家都很吃惊”。",
+        "en": "「からには」 is followed by resolve or obligation (\"since…, must\"), not \"everyone was surprised\"."
+      },
+      {
+        "zh": "「ばこそ」接ば形（「言われていればこそ」），不接た形，而且表示的是积极的“正因为……才”。",
+        "en": "「ばこそ」 follows the ば-form (「言われていればこそ」), not the ta-form, and is used for positive \"only because\"."
+      },
+      {
+        "zh": "「あまり」表示“过于……以致……”，前面要接感情或程度（「心配のあまり」），“被称为夺冠热门”不是过度的感情。",
+        "en": "「あまり」 needs an excessive feeling or degree (「心配のあまり」); being called the favourite isn't one."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l75-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#2",
+      "lesson60#1"
+    ],
+    "difficulty": 2,
+    "stem": "娘から何の連絡もなく、心配の（　）夜も眠れなかった。",
+    "options": [
+      "あまり",
+      "だけに",
+      "ものだから",
+      "からには"
+    ],
+    "answer": 0,
+    "full": "娘から何の連絡もなく、心配の あまり 夜も眠れなかった。",
+    "tr": {
+      "zh": "女儿一点消息都没有，我担心得晚上都睡不着。",
+      "en": "I hadn't heard a thing from my daughter and was so worried I couldn't sleep at night."
+    },
+    "why": {
+      "zh": "「名詞＋の＋あまり」表示“由于过度……而……”，后面是不由自主的结果（睡不着）。空格前的「の」只能接「あまり」。",
+      "en": "「noun + の + あまり」 = so much… that…, followed by an involuntary result (couldn't sleep). Only 「あまり」 attaches to 「の」 here."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「だけに」接名词时要用「名詞＋な/である＋だけに」，不能接「心配の」。",
+        "en": "「だけに」 after a noun needs 「な / である」; it can't follow 「心配の」."
+      },
+      {
+        "zh": "「ものだから」接名词时用「名詞＋な＋ものだから」，不能接「心配の」。",
+        "en": "「ものだから」 after a noun needs 「な」 (「名詞なものだから」), not 「の」."
+      },
+      {
+        "zh": "「からには」接普通形，不能接「心配の」，后面也要接决心或义务。",
+        "en": "「からには」 follows the plain form, not 「心配の」, and leads to a resolve or duty."
+      }
+    ]
+  },
+  {
+    "id": "n2-l75-006",
+    "type": "narabe",
+    "refs": [
+      "lesson75#2"
+    ],
+    "difficulty": 2,
+    "stem": "仕事を [_] [★] [_] [_] べきだ。",
+    "options": [
+      "引き受けた",
+      "最後まで",
+      "以上は",
+      "やり遂げる"
+    ],
+    "order": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "full": "仕事を 引き受けた 以上は 最後まで やり遂げる べきだ。",
+    "tr": {
+      "zh": "既然接了工作，就应该做到最后。",
+      "en": "Once you've taken on a job, you should see it through to the end."
+    },
+    "why": {
+      "zh": "「た形＋以上は、〜べきだ」＝既然……就应该……：引き受けた → 以上は → 最後まで → やり遂げる（＋べきだ）。★ 在第二格，是「以上は」。",
+      "en": "「ta-form + 以上は、…べきだ」 = now that…, you should…: 引き受けた → 以上は → 最後まで → やり遂げる (+ べきだ). The ★ is the second slot: 「以上は」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l75-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#3",
+      "lesson61#3"
+    ],
+    "difficulty": 1,
+    "stem": "疲れた日は、熱いお風呂に入って早く寝る（　）。",
+    "options": [
+      "どころではない",
+      "に過ぎない",
+      "に限って",
+      "に限る"
+    ],
+    "answer": 3,
+    "full": "疲れた日は、熱いお風呂に入って早く寝る に限る。",
+    "tr": {
+      "zh": "累的日子，泡个热水澡早点睡是最好的。",
+      "en": "On days when you're tired, nothing beats a hot bath and an early night."
+    },
+    "why": {
+      "zh": "说话人推荐“累的时候最好这样做”，用「動詞辞書形＋に限る」（……最好）。",
+      "en": "The speaker recommends what's best when tired: dictionary form + 「に限る」 (nothing beats…)."
+    },
+    "wrong": [
+      {
+        "zh": "「どころではない」是“哪有心思……”，和“累的时候就该……”的建议相反。",
+        "en": "「どころではない」 (\"in no state for…\") is the opposite of recommending it."
+      },
+      {
+        "zh": "「に過ぎない」是“只不过……”，贬低语气，和推荐“泡澡早睡”不符。",
+        "en": "「に過ぎない」 (\"merely\") belittles; it doesn't recommend anything."
+      },
+      {
+        "zh": "「に限って」是“偏偏……”，接名词并后接意外的坏事，不能放在句末。",
+        "en": "「に限って」 (\"of all times…\") follows a noun and needs a following clause about bad luck."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l75-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#3"
+    ],
+    "difficulty": 2,
+    "stem": "傘を持っていない日（　）、どういうわけか雨が降るんだから嫌になる。",
+    "options": [
+      "をものともせず",
+      "に過ぎず",
+      "に限って",
+      "に限る"
+    ],
+    "answer": 2,
+    "full": "傘を持っていない日 に限って、どういうわけか雨が降るんだから嫌になる。",
+    "tr": {
+      "zh": "偏偏在没带伞的日子就会下雨，真让人烦。",
+      "en": "It always seems to rain on exactly the days I don't have an umbrella — it drives me mad."
+    },
+    "why": {
+      "zh": "「名詞＋に限って」＝偏偏在……的时候（发生不如意的事），和「どういうわけか」「嫌になる」相呼应。",
+      "en": "「noun + に限って」 = on exactly that occasion (something annoying happens), matching 「どういうわけか」 and 「嫌になる」."
+    },
+    "wrong": [
+      {
+        "zh": "「をものともせず」是“不畏……”，主语要是克服困难的人，这里说的是天气。",
+        "en": "「をものともせず」 (\"undaunted by…\") needs a person overcoming something; this is about the weather."
+      },
+      {
+        "zh": "「に過ぎず」是“只不过……”，“只不过是没带伞的日子”和“偏偏下雨”接不上。",
+        "en": "「に過ぎず」 (\"being merely…\") doesn't connect to \"it rains\"."
+      },
+      null,
+      {
+        "zh": "「に限る」是“……最好”，放句末表示推荐，不能修饰后面的“下雨”。",
+        "en": "「に限る」 ends a sentence with a recommendation; it can't lead into \"it rains\"."
+      }
+    ]
+  },
+  {
+    "id": "n2-l75-009",
+    "type": "narabe",
+    "refs": [
+      "lesson75#3",
+      "lesson61#5"
+    ],
+    "difficulty": 2,
+    "stem": "彼は [_] [_] [★] [_]、最後まで試合に出続けた。",
+    "options": [
+      "足の",
+      "ものとも",
+      "せず",
+      "けがを"
+    ],
+    "order": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "full": "彼は 足の けがを ものとも せず、最後まで試合に出続けた。",
+    "tr": {
+      "zh": "他不顾脚伤，一直坚持比赛到最后。",
+      "en": "Undaunted by his leg injury, he kept playing right to the end."
+    },
+    "why": {
+      "zh": "「名詞＋をものともせず」＝不畏……：足の → けがを → ものとも → せず。★ 在第三格，是「ものとも」。",
+      "en": "「noun + をものともせず」 = undaunted by…: 足の → けがを → ものとも → せず. The ★ is the third slot: 「ものとも」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l75-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#4",
+      "lesson66#1"
+    ],
+    "difficulty": 1,
+    "stem": "大方の予想（　）、無名の新人候補が選挙に勝った。",
+    "options": [
+      "につれて",
+      "に反して",
+      "に伴って",
+      "に対して"
+    ],
+    "answer": 1,
+    "full": "大方の予想 に反して、無名の新人候補が選挙に勝った。",
+    "tr": {
+      "zh": "与大多数人的预想相反，一位无名的新人候选人赢得了选举。",
+      "en": "Contrary to most people's expectations, an unknown newcomer won the election."
+    },
+    "why": {
+      "zh": "“无名新人赢了”和“大方预想”相反，「予想・期待＋に反して」表示结果与预期相反。",
+      "en": "An unknown winning goes against the general forecast: 「予想・期待 + に反して」, contrary to expectations."
+    },
+    "wrong": [
+      {
+        "zh": "「につれて」是“随着……”，表示连动变化，“预想”不是变化的量。",
+        "en": "「につれて」 (\"as…\") describes parallel change; a forecast isn't a changing quantity."
+      },
+      null,
+      {
+        "zh": "「に伴って」是“伴随……”，表示随之发生，“伴随预想而获胜”说不通。",
+        "en": "「に伴って」 (\"along with…\") — \"won along with the forecast\" makes no sense."
+      },
+      {
+        "zh": "「に対して」是“对……”或“与……形成对比”（两者并列比较），不表示“与预想相反”。",
+        "en": "「に対して」 means \"toward\" or contrasts two parallel things; it doesn't mean \"contrary to expectations\"."
+      }
+    ]
+  },
+  {
+    "id": "n2-l75-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#4"
+    ],
+    "difficulty": 2,
+    "stem": "兄が社交的なの（　）、弟は人見知りでおとなしい。",
+    "options": [
+      "に反して",
+      "に対して",
+      "につれて",
+      "に伴って"
+    ],
+    "answer": 1,
+    "full": "兄が社交的なの に対して、弟は人見知りでおとなしい。",
+    "tr": {
+      "zh": "哥哥善于交际，而弟弟却怕生、很文静。",
+      "en": "Whereas the older brother is outgoing, the younger one is shy and quiet."
+    },
+    "why": {
+      "zh": "把两个人的性格对照着说，用「〜のに対して」（与……相对）。",
+      "en": "Setting two people side by side in contrast: 「〜のに対して」 (whereas…)."
+    },
+    "wrong": [
+      {
+        "zh": "「に反して」接预想、期待、规则等，不用来对比两个人的性格。",
+        "en": "「に反して」 follows expectations or rules, not a comparison of two people's personalities."
+      },
+      null,
+      {
+        "zh": "「につれて」是“随着……”的连动变化，不用于对比。",
+        "en": "「につれて」 (\"as…\") describes linked change, not a contrast."
+      },
+      {
+        "zh": "「に伴って」是“伴随……”，哥哥外向和弟弟内向之间没有伴随关系。",
+        "en": "「に伴って」 (\"along with\") — the brothers' personalities don't change together."
+      }
+    ]
+  },
+  {
+    "id": "n2-l75-012",
+    "type": "narabe",
+    "refs": [
+      "lesson75#4",
+      "lesson66#4"
+    ],
+    "difficulty": 2,
+    "stem": "山を [_] [_] [_] [★] なってきた。",
+    "options": [
+      "空気が",
+      "につれて",
+      "薄く",
+      "登る"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "山を 登る につれて 空気が 薄く なってきた。",
+    "tr": {
+      "zh": "随着往山上爬，空气变得稀薄起来。",
+      "en": "As we climbed the mountain, the air grew thinner."
+    },
+    "why": {
+      "zh": "「動詞辞書形＋につれて、〜なってきた」表示连动变化：登る → につれて → 空気が → 薄く（＋なってきた）。★ 在第四格，是「薄く」。",
+      "en": "「dictionary form + につれて、…なってきた」 for linked change: 登る → につれて → 空気が → 薄く (+ なってきた). The ★ is the fourth slot: 「薄く」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l75-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#5",
+      "lesson67#4"
+    ],
+    "difficulty": 1,
+    "stem": "この料理教室は、年齢や経験（　）、どなたでも参加できます。",
+    "options": [
+      "をめぐって",
+      "にしては",
+      "を問わず",
+      "に応じて"
+    ],
+    "answer": 2,
+    "full": "この料理教室は、年齢や経験 を問わず、どなたでも参加できます。",
+    "tr": {
+      "zh": "这个烹饪班不论年龄和经验，谁都可以参加。",
+      "en": "Anyone can join this cooking class, regardless of age or experience."
+    },
+    "why": {
+      "zh": "「どなたでも」说明不设条件，「名詞＋を問わず」表示“不论……”。",
+      "en": "「どなたでも」 says there are no conditions: 「noun + を問わず」, regardless of…."
+    },
+    "wrong": [
+      {
+        "zh": "「をめぐって」是“围绕……（争论）”，后面要接议论、对立等，不接“谁都可以参加”。",
+        "en": "「をめぐって」 (\"over / concerning\") leads to debate or conflict, not \"anyone can join\"."
+      },
+      {
+        "zh": "「にしては」是“就……而言（出乎意料）”，后面要接评价，和这里的通知不符。",
+        "en": "「にしては」 (\"for a…\") introduces a surprising evaluation; this is a notice."
+      },
+      null,
+      {
+        "zh": "「に応じて」是“根据……（而变化）”，和“谁都可以”的无差别相矛盾。",
+        "en": "「に応じて」 (\"according to\") implies variation, contradicting \"anyone at all\"."
+      }
+    ]
+  },
+  {
+    "id": "n2-l75-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#5"
+    ],
+    "difficulty": 2,
+    "stem": "彼は日本に来て半年（　）、日本語がとても上手だ。",
+    "options": [
+      "をめぐって",
+      "に応じて",
+      "としては",
+      "にしては"
+    ],
+    "answer": 3,
+    "full": "彼は日本に来て半年 にしては、日本語がとても上手だ。",
+    "tr": {
+      "zh": "他来日本才半年，就这点来说日语相当好。",
+      "en": "For someone who's only been in Japan six months, his Japanese is very good."
+    },
+    "why": {
+      "zh": "“来日才半年”本来预期日语不会太好，结果却很好，用「にしては」表示“就……来说（出乎意料）”。",
+      "en": "After only six months you'd expect weak Japanese, but it's good: 「にしては」, surprisingly for…."
+    },
+    "wrong": [
+      {
+        "zh": "「をめぐって」是“围绕……”，和“来日半年”没有关系。",
+        "en": "「をめぐって」 (\"concerning\") has nothing to do with \"only six months here\"."
+      },
+      {
+        "zh": "「に応じて」是“根据……相应地”，“根据半年日语很好”说不通。",
+        "en": "「に応じて」 (\"in line with\") — \"good at Japanese in line with six months\" makes no sense."
+      },
+      {
+        "zh": "「としては」是“作为……（立场）来说”，接身份或立场，「半年としては」不成立。",
+        "en": "「としては」 (\"as / from the standpoint of\") takes a role; 「半年としては」 doesn't work."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l75-015",
+    "type": "narabe",
+    "refs": [
+      "lesson75#5",
+      "lesson67#3"
+    ],
+    "difficulty": 2,
+    "stem": "新しい [★] [_] [_] [_]、住民の意見が二つに分かれている。",
+    "options": [
+      "めぐって",
+      "空港の",
+      "建設",
+      "を"
+    ],
+    "order": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "full": "新しい 空港の 建設 を めぐって、住民の意見が二つに分かれている。",
+    "tr": {
+      "zh": "围绕新机场的建设，居民的意见分成了两派。",
+      "en": "Residents are split in two over the construction of the new airport."
+    },
+    "why": {
+      "zh": "「名詞＋をめぐって」后接意见分歧、争论：空港の → 建設 → を → めぐって。★ 在第一格，是「空港の」。",
+      "en": "「noun + をめぐって」 is followed by disagreement or debate: 空港の → 建設 → を → めぐって. The ★ is the first slot: 「空港の」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l75-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#6"
+    ],
+    "difficulty": 2,
+    "stem": "申し訳ございませんが、そのようなご要望にはお応えし（　）。",
+    "options": [
+      "かねます",
+      "がちです",
+      "かねません",
+      "かけます"
+    ],
+    "answer": 0,
+    "full": "申し訳ございませんが、そのようなご要望にはお応えし かねます。",
+    "tr": {
+      "zh": "非常抱歉，这样的要求我们难以满足。",
+      "en": "We're very sorry, but we are unable to meet such a request."
+    },
+    "why": {
+      "zh": "「申し訳ございませんが」引出婉拒，用「ます形＋かねる」（难以……），是服务行业的礼貌拒绝。",
+      "en": "「申し訳ございませんが」 sets up a polite refusal: masu-stem + 「かねる」 (be unable to…)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「がちです」是“往往……”的倾向，不是婉拒。",
+        "en": "「がちです」 expresses a tendency, not a polite refusal."
+      },
+      {
+        "zh": "「かねません」是“说不定会……”（担心坏结果），“说不定会答应您”和「申し訳ございませんが」对不上。",
+        "en": "「かねません」 means \"might (end up)…\"; \"I might comply\" doesn't follow 「申し訳ございませんが」."
+      },
+      {
+        "zh": "「かけます」是“开始……/做到一半”，不表示拒绝。",
+        "en": "「かけます」 means \"start to / half-done\", not a refusal."
+      }
+    ]
+  },
+  {
+    "id": "n2-l75-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#6"
+    ],
+    "difficulty": 2,
+    "stem": "睡眠不足のまま車を運転すると、大きな事故につながり（　）。",
+    "options": [
+      "がたい",
+      "ようがない",
+      "かねない",
+      "かねる"
+    ],
+    "answer": 2,
+    "full": "睡眠不足のまま車を運転すると、大きな事故につながり かねない。",
+    "tr": {
+      "zh": "睡眠不足就开车，很可能会酿成大事故。",
+      "en": "Driving while short on sleep could easily lead to a serious accident."
+    },
+    "why": {
+      "zh": "这是警告“有可能导致坏结果”，用「ます形＋かねない」（说不定会……）。",
+      "en": "It's a warning about a possible bad outcome: masu-stem + 「かねない」 (could well…)."
+    },
+    "wrong": [
+      {
+        "zh": "「がたい」是“难以……”，“难以导致事故”和警告的意思相反。",
+        "en": "「がたい」 means \"hard to…\"; \"hard to lead to an accident\" reverses the warning."
+      },
+      {
+        "zh": "「ようがない」是“没办法……”，“不可能导致事故”和警告相反。",
+        "en": "「ようがない」 means \"no way to…\", which reverses the warning."
+      },
+      null,
+      {
+        "zh": "「かねる」是说话人“难以（做）……”，主语是人的意愿，不用来说“可能导致事故”。",
+        "en": "「かねる」 is the speaker being unable/unwilling to do something, not a risk of causing an accident."
+      }
+    ]
+  },
+  {
+    "id": "n2-l75-018",
+    "type": "narabe",
+    "refs": [
+      "lesson75#6",
+      "lesson68#4"
+    ],
+    "difficulty": 2,
+    "stem": "[_] [★] [_] [_]、お返事はできません。",
+    "options": [
+      "からで",
+      "確認して",
+      "ないと",
+      "上司に"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "上司に 確認して からで ないと、お返事はできません。",
+    "tr": {
+      "zh": "不先跟上司确认的话，我没法答复您。",
+      "en": "I can't give you an answer until I've checked with my manager."
+    },
+    "why": {
+      "zh": "「て形＋からでないと、〜できない」＝不先……就不能……：上司に → 確認して → からで → ないと。★ 在第二格，是「確認して」。",
+      "en": "「te-form + からでないと、…できない」 = can't … until…: 上司に → 確認して → からで → ないと. The ★ is the second slot: 「確認して」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l75-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#7",
+      "lesson73#2"
+    ],
+    "difficulty": 1,
+    "stem": "寝坊しないように、目覚まし時計を三つもセットしておいた。（　）、今朝も寝坊してしまった。",
+    "options": [
+      "それなのに",
+      "すなわち",
+      "しかも",
+      "したがって"
+    ],
+    "answer": 0,
+    "full": "寝坊しないように、目覚まし時計を三つもセットしておいた。それなのに、今朝も寝坊してしまった。",
+    "tr": {
+      "zh": "为了不睡过头，我特地设了三个闹钟。尽管如此，今天早上还是睡过头了。",
+      "en": "I set three alarm clocks so I wouldn't oversleep. And yet I overslept again this morning."
+    },
+    "why": {
+      "zh": "做了充分准备，结果却相反且令人懊恼（「てしまった」），用「それなのに」。",
+      "en": "Careful preparation, then a frustrating opposite result (「てしまった」): 「それなのに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「すなわち」是“即”，后句不是前句的换说法。",
+        "en": "「すなわち」 (\"namely\") — the second sentence isn't a restatement."
+      },
+      {
+        "zh": "「しかも」追加同方向的信息，而“还是睡过头了”与准备相反。",
+        "en": "「しかも」 adds in the same direction, but oversleeping goes against the preparation."
+      },
+      {
+        "zh": "「したがって」是“因此”，设了闹钟推不出“睡过头”。",
+        "en": "「したがって」 (\"therefore\") — setting alarms doesn't lead to oversleeping."
+      }
+    ]
+  },
+  {
+    "id": "n2-l75-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#7",
+      "lesson73#4"
+    ],
+    "difficulty": 2,
+    "stem": "今回の調査では、利用者の8割以上が「満足している」と回答した。（　）、このサービスは多くの利用者に支持されていると言える。",
+    "options": [
+      "それなのに",
+      "しかも",
+      "それにしても",
+      "したがって"
+    ],
+    "answer": 3,
+    "full": "今回の調査では、利用者の8割以上が「満足している」と回答した。したがって、このサービスは多くの利用者に支持されていると言える。",
+    "tr": {
+      "zh": "在这次调查中，八成以上的用户回答“满意”。因此可以说这项服务得到了众多用户的支持。",
+      "en": "In this survey, over 80% of users said they were satisfied. Therefore, it can be said that the service is supported by many users."
+    },
+    "why": {
+      "zh": "前句是调查数据，后句「と言える」是由此推出的结论，书面报告用「したがって」。",
+      "en": "Survey data, then a conclusion drawn from it (「と言える」), in report style: 「したがって」."
+    },
+    "wrong": [
+      {
+        "zh": "「それなのに」表示与预期相反，八成满意推出“受支持”是顺接。",
+        "en": "「それなのに」 marks a contrary result; \"80% satisfied → it's supported\" is a straight consequence."
+      },
+      {
+        "zh": "「しかも」是追加新信息，而后句是从数据得出的结论（「と言える」）。",
+        "en": "「しかも」 adds information, but the second sentence is a conclusion drawn from the data (「と言える」)."
+      },
+      {
+        "zh": "「それにしても」是“即便如此也太……”的感叹，不能引出「と言える」这样的结论。",
+        "en": "「それにしても」 voices surprise; it can't introduce a conclusion like 「と言える」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l75-021",
+    "type": "narabe",
+    "refs": [
+      "lesson75#7",
+      "lesson73#4"
+    ],
+    "difficulty": 2,
+    "stem": "本日は台風の影響により、全便が欠航となった。[_] [_] [★] [_] こととする。",
+    "options": [
+      "手配を",
+      "振替便の",
+      "したがって",
+      "行う"
+    ],
+    "order": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "full": "本日は台風の影響により、全便が欠航となった。したがって 振替便の 手配を 行う こととする。",
+    "tr": {
+      "zh": "今天受台风影响，所有航班取消。因此将安排改签航班。",
+      "en": "Due to the typhoon, all flights today have been cancelled. We will therefore arrange alternative flights."
+    },
+    "why": {
+      "zh": "「したがって」放在句首引出由此采取的措施：したがって → 振替便の → 手配を → 行う（＋こととする）。★ 在第三格，是「手配を」。",
+      "en": "「したがって」 opens the sentence and introduces the resulting measure: したがって → 振替便の → 手配を → 行う (+ こととする). The ★ is the third slot: 「手配を」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l75-022",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#8"
+    ],
+    "difficulty": 2,
+    "stem": "詳しい日程が決まり（　）、参加者の皆様にご連絡いたします。",
+    "options": [
+      "につき",
+      "ぶりに",
+      "次第",
+      "きり"
+    ],
+    "answer": 2,
+    "full": "詳しい日程が決まり 次第、参加者の皆様にご連絡いたします。",
+    "tr": {
+      "zh": "详细日程一确定，就会联系各位参加者。",
+      "en": "As soon as the detailed schedule is decided, we will contact all participants."
+    },
+    "why": {
+      "zh": "「ます形＋次第」＝一……就立刻……，后面接说话人要做的事（联系）。注意和「名詞＋次第だ」（取决于）区分。",
+      "en": "「masu-stem + 次第」 = as soon as…, followed by what the speaker will do. Don't confuse it with 「noun + 次第だ」 (depends on)."
+    },
+    "wrong": [
+      {
+        "zh": "「につき」接名词表示“因为/每”，不能接ます形「決まり」。",
+        "en": "「につき」 follows a noun (\"due to / per\"), not the masu-stem 「決まり」."
+      },
+      {
+        "zh": "「ぶりに」接时间表示“时隔……”，不能接动词ます形。",
+        "en": "「ぶりに」 follows a time span (\"for the first time in…\"), not a masu-stem."
+      },
+      null,
+      {
+        "zh": "「きり」接た形表示“自从……就再没……”，不接ます形，后面也要接否定。",
+        "en": "「きり」 follows the ta-form and leads to a negative; it doesn't follow a masu-stem."
+      }
+    ]
+  },
+  {
+    "id": "n2-l75-023",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#8",
+      "lesson72#4"
+    ],
+    "difficulty": 2,
+    "stem": "これだけ証拠がそろっているのだから、彼ももう言い逃れはでき（　）。",
+    "options": [
+      "まい",
+      "抜く",
+      "げ",
+      "きり"
+    ],
+    "answer": 0,
+    "full": "これだけ証拠がそろっているのだから、彼ももう言い逃れはでき まい。",
+    "tr": {
+      "zh": "证据都这么齐全了，他也已经无法狡辩了吧。",
+      "en": "With this much evidence, he surely can't talk his way out of it any more."
+    },
+    "why": {
+      "zh": "主语是第三人称，表示否定推测“大概不能……了吧”，一段动词「できる」可用ます形接「まい」：「できまい」。",
+      "en": "A third-person negative guess (\"surely can't\"): the ichidan verb 「できる」 can take 「まい」 on its masu-stem — 「できまい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「でき抜く」不成立；「抜く」接表示动作的动词（「やり抜く」），不接「できる」。",
+        "en": "「でき抜く」 isn't a word; 「抜く」 attaches to action verbs (「やり抜く」), not 「できる」."
+      },
+      {
+        "zh": "「げ」接形容词词干表示“看起来……”，不接动词ます形「でき」（「たげ」才接ます形）。",
+        "en": "「げ」 follows an adjective stem (\"looking…\"); it doesn't attach to the masu-stem 「でき」 (only 「たげ」 does)."
+      },
+      {
+        "zh": "「きり」接た形（「できたきり」），而且“只能……”的意思和“已经无法狡辩”不符。",
+        "en": "「きり」 follows the ta-form, and \"only\" doesn't fit \"can no longer wriggle out\"."
+      }
+    ]
+  },
+  {
+    "id": "n2-l75-024",
+    "type": "narabe",
+    "refs": [
+      "lesson75#8",
+      "lesson74#6"
+    ],
+    "difficulty": 1,
+    "stem": "誠に勝手ながら、[_] [★] [_] [_] いたします。",
+    "options": [
+      "改装中",
+      "店内",
+      "につき",
+      "休業"
+    ],
+    "order": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "full": "誠に勝手ながら、店内 改装中 につき 休業 いたします。",
+    "tr": {
+      "zh": "非常抱歉，因店内装修，暂停营业。",
+      "en": "We apologise for the inconvenience, but we are closed due to interior renovation."
+    },
+    "why": {
+      "zh": "告示用语「名詞＋につき」说明原因，再接「休業いたします」：店内 → 改装中 → につき → 休業。★ 在第二格，是「改装中」。",
+      "en": "Notice language: 「noun + につき」 gives the reason, then 「休業いたします」: 店内 → 改装中 → につき → 休業. The ★ is the second slot: 「改装中」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l75-025",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#9",
+      "lesson64#3"
+    ],
+    "difficulty": 2,
+    "stem": "あんなにまじめで正直な彼が、人の物を盗む（　）。何かの間違いだよ。",
+    "options": [
+      "わけがない",
+      "しかない",
+      "わけにはいかない",
+      "に越したことはない"
+    ],
+    "answer": 0,
+    "full": "あんなにまじめで正直な彼が、人の物を盗む わけがない。何かの間違いだよ。",
+    "tr": {
+      "zh": "那么认真老实的他，怎么可能偷别人的东西。肯定是哪里搞错了。",
+      "en": "Someone as serious and honest as him would never steal other people's things. It must be some mistake."
+    },
+    "why": {
+      "zh": "说话人带着感情强烈否定“根本不可能”，用「わけがない」。",
+      "en": "The speaker flatly and emotionally rules it out: 「わけがない」 (there's no way…)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「しかない」是“只能……”，“他只能偷”和“搞错了吧”相反。",
+        "en": "「しかない」 (\"have no choice but\") contradicts \"it must be a mistake\"."
+      },
+      {
+        "zh": "「わけにはいかない」是“（出于情理）不能……”，说的是自己的义务或处境，不是否定他偷东西的可能性。",
+        "en": "「わけにはいかない」 means \"can't (in good conscience)…\" — about obligation, not denying that he'd steal."
+      },
+      {
+        "zh": "「に越したことはない」是“最好……”，“偷东西最好”完全不通。",
+        "en": "「に越したことはない」 (\"it's best to…\") — \"it's best to steal\" makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n2-l75-026",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#9",
+      "lesson64#4"
+    ],
+    "difficulty": 2,
+    "stem": "出かける前に鍵を二回も確かめたのだから、ドアが開いている（　）。",
+    "options": [
+      "べきではない",
+      "はずがない",
+      "はずだ",
+      "ようがない"
+    ],
+    "answer": 1,
+    "full": "出かける前に鍵を二回も確かめたのだから、ドアが開いている はずがない。",
+    "tr": {
+      "zh": "出门前我检查了两遍锁，门不可能开着。",
+      "en": "I checked the lock twice before going out, so there's no way the door is open."
+    },
+    "why": {
+      "zh": "根据“检查了两遍锁”这一依据冷静推断“不可能开着”，用「はずがない」。",
+      "en": "A calm inference from evidence (checked the lock twice): 「はずがない」 (it can't be)."
+    },
+    "wrong": [
+      {
+        "zh": "「べきではない」是“不应该……”，表示义务，不是推断门开没开。",
+        "en": "「べきではない」 (\"ought not to\") is about duty, not an inference about the door."
+      },
+      null,
+      {
+        "zh": "「はずだ」是“应该是（开着的）”，和“检查了两遍锁”矛盾。",
+        "en": "「はずだ」 (\"should be open\") contradicts checking the lock twice."
+      },
+      {
+        "zh": "「ようがない」接ます形（「開きようがない」），不接「開いている」。",
+        "en": "「ようがない」 follows the masu-stem (「開きようがない」), not 「開いている」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l75-027",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#9",
+      "lesson61#1"
+    ],
+    "difficulty": 2,
+    "stem": "私がしたことは、ほんの少しお手伝いしたこと（　）。お礼を言われるようなことではありません。",
+    "options": [
+      "に過ぎません",
+      "に相違ありません",
+      "にほかなりません",
+      "に限ります"
+    ],
+    "answer": 0,
+    "full": "私がしたことは、ほんの少しお手伝いしたこと に過ぎません。お礼を言われるようなことではありません。",
+    "tr": {
+      "zh": "我做的只不过是帮了一点小忙而已，不值得您道谢。",
+      "en": "All I did was help out a little. It's nothing worth thanking me for."
+    },
+    "why": {
+      "zh": "「ほんの少し」和“不值得道谢”是在缩小评价（谦虚），用「に過ぎない」（只不过是……）。",
+      "en": "「ほんの少し」 and \"nothing to thank me for\" play it down modestly: 「に過ぎない」 (merely)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に相違ない」是“一定是……”，表示确信的推断，不能用来说自己做了什么。",
+        "en": "「に相違ない」 (\"must surely be\") is a confident guess, not a modest description of your own act."
+      },
+      {
+        "zh": "「にほかならない」是强调“正是……”，和「ほんの少し」以及谦虚的后句不符。",
+        "en": "「にほかならない」 emphasises (\"is precisely…\"), which clashes with 「ほんの少し」 and the modest follow-up."
+      },
+      {
+        "zh": "「に限る」是“……最好”，用于推荐，不能用来谦虚地评价自己做的事。",
+        "en": "「に限る」 recommends something as best; it isn't a modest description."
+      }
+    ]
+  },
+  {
+    "id": "n2-l75-028",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#9",
+      "lesson61#2"
+    ],
+    "difficulty": 3,
+    "stem": "彼が世界的な賞を受けたのは、運がよかったからではない。二十年間一日も休まずに研究を続けてきた努力の結果（　）。",
+    "options": [
+      "どころではない",
+      "に過ぎない",
+      "にほかならない",
+      "に限る"
+    ],
+    "answer": 2,
+    "full": "彼が世界的な賞を受けたのは、運がよかったからではない。二十年間一日も休まずに研究を続けてきた努力の結果 にほかならない。",
+    "tr": {
+      "zh": "他获得世界级大奖不是因为运气好。那正是他二十年来一天不歇地坚持研究的努力的结果。",
+      "en": "He didn't win a world-class prize because he was lucky. It is nothing other than the result of twenty years of research without a single day off."
+    },
+    "why": {
+      "zh": "前句否定“运气”，后句强调“正是努力的结果”，用「にほかならない」（不外乎、正是）。",
+      "en": "The first sentence rules out luck and the second insists \"it is precisely effort\": 「にほかならない」."
+    },
+    "wrong": [
+      {
+        "zh": "「どころではない」是“哪有心思……”，和“获奖的原因”接不上。",
+        "en": "「どころではない」 (\"in no state for…\") doesn't explain why he won."
+      },
+      {
+        "zh": "「に過ぎない」是缩小评价“不过是……”，和“不是靠运气、二十年不间断”的强调语气相反。",
+        "en": "「に過ぎない」 plays things down, the opposite of the emphatic \"not luck — twenty years without a break\"."
+      },
+      null,
+      {
+        "zh": "「に限る」是推荐“……最好”，不用来说明原因。",
+        "en": "「に限る」 recommends what's best; it doesn't state a cause."
+      }
+    ]
+  },
+  {
+    "id": "n2-l75-029",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#9",
+      "lesson66#5"
+    ],
+    "difficulty": 1,
+    "stem": "地震が起きた場合は、係員の指示（　）、落ち着いて避難してください。",
+    "options": [
+      "にしたがって",
+      "につれて",
+      "に反して",
+      "に伴って"
+    ],
+    "answer": 0,
+    "full": "地震が起きた場合は、係員の指示 にしたがって、落ち着いて避難してください。",
+    "tr": {
+      "zh": "发生地震时，请按照工作人员的指示冷静避难。",
+      "en": "In the event of an earthquake, please follow the staff's instructions and evacuate calmly."
+    },
+    "why": {
+      "zh": "“按照指示/规则”只能用「にしたがって」；「につれて」「に伴って」只表示随之变化。",
+      "en": "\"Following instructions / rules\" is only 「にしたがって」; 「につれて」 and 「に伴って」 only mean change along with something."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「につれて」只表示“随着……（变化）”，不能表示“按照指示”。",
+        "en": "「につれて」 only means \"as (something changes)\"; it can't mean \"following instructions\"."
+      },
+      {
+        "zh": "「に反して」是“违反……”，“违反指示避难”和安全提示的意思相反。",
+        "en": "「に反して」 (\"contrary to\") — evacuating against instructions is the opposite of the message."
+      },
+      {
+        "zh": "「に伴って」是“伴随……发生”，表示因果或同时变化，不能表示“遵照指示”。",
+        "en": "「に伴って」 means \"along with\"; it can't mean \"in accordance with instructions\"."
+      }
+    ]
+  },
+  {
+    "id": "n2-l75-030",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#9",
+      "lesson70#2"
+    ],
+    "difficulty": 2,
+    "stem": "あの部長の前で居眠りでも（　）、大変なことになるよ。",
+    "options": [
+      "できるものなら",
+      "しようものなら",
+      "したところで",
+      "するからには"
+    ],
+    "answer": 1,
+    "full": "あの部長の前で居眠りでも しようものなら、大変なことになるよ。",
+    "tr": {
+      "zh": "要是敢在那个部长面前打瞌睡，可就麻烦大了。",
+      "en": "If you so much as doze off in front of that manager, you'll be in serious trouble."
+    },
+    "why": {
+      "zh": "“要是敢做……就会有严重后果”的警告，用「意向形＋ものなら」。",
+      "en": "A warning that doing something would bring serious consequences: volitional form + 「ものなら」."
+    },
+    "wrong": [
+      {
+        "zh": "「できるものなら」是“如果能……的话（就好了）”，表示难以实现的愿望，和“会出大事”的警告不符。",
+        "en": "「できるものなら」 (\"if only I could\") expresses a wish, not a warning of trouble."
+      },
+      null,
+      {
+        "zh": "「たところで」是“就算……也（没用）”，后面接“没意义”的结果，不接“会出大事”。",
+        "en": "「たところで」 (\"even if…, no use\") leads to a futile result, not \"you'll be in big trouble\"."
+      },
+      {
+        "zh": "「からには」是“既然……就要……”，后面接决心或义务，不接警告。",
+        "en": "「からには」 (\"since…, must\") leads to resolve or duty, not a warning."
+      }
+    ]
+  },
+  {
+    "id": "n2-l75-031",
+    "type": "bunpou",
+    "refs": [
+      "lesson75#9",
+      "lesson70#1"
+    ],
+    "difficulty": 2,
+    "stem": "できる（　）、もう一度学生時代に戻ってやり直したい。",
+    "options": [
+      "からには",
+      "ものなら",
+      "わりに",
+      "ものの"
+    ],
+    "answer": 1,
+    "full": "できる ものなら、もう一度学生時代に戻ってやり直したい。",
+    "tr": {
+      "zh": "如果可能的话，真想再回到学生时代重新来过。",
+      "en": "If only I could, I'd go back to my student days and start over."
+    },
+    "why": {
+      "zh": "后句是愿望「〜たい」，前句是“实际上很难做到”的假设，用「可能形＋ものなら」（如果能……的话）。",
+      "en": "The main clause is a wish (「〜たい」) about something practically impossible: potential form + 「ものなら」 (if only one could)."
+    },
+    "wrong": [
+      {
+        "zh": "「できるからには」是“既然能……就……”，而回到学生时代实际上不可能，和愿望语气不符。",
+        "en": "「できるからには」 (\"since I can…\") — going back to school days isn't possible, so it can't be a premise."
+      },
+      null,
+      {
+        "zh": "「わりに」是“与……相比（出乎意料）”，和愿望无关。",
+        "en": "「わりに」 (\"considering…\") has nothing to do with a wish."
+      },
+      {
+        "zh": "「ものの」是“虽然……但是……”，“虽然能，但想回去”说不通。",
+        "en": "「ものの」 (\"although\") — \"although I can, I want to go back\" makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n2-l75-032",
+    "type": "narabe",
+    "refs": [
+      "lesson75#9",
+      "lesson70#2"
+    ],
+    "difficulty": 2,
+    "stem": "この店では、[_] [_] [★] [_]、店長にひどく叱られる。",
+    "options": [
+      "ものなら",
+      "一度でも",
+      "間違えよう",
+      "注文を"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "この店では、一度でも 注文を 間違えよう ものなら、店長にひどく叱られる。",
+    "tr": {
+      "zh": "在这家店，哪怕弄错一次点单，都会被店长狠狠地骂。",
+      "en": "At this restaurant, get an order wrong even once and the manager will tear into you."
+    },
+    "why": {
+      "zh": "「意向形＋ものなら」表示“万一……就会有严重后果”：一度でも → 注文を → 間違えよう → ものなら。（「注文を一度でも」的语序也可以，★ 都是「間違えよう」。）",
+      "en": "「volitional + ものなら」 warns of serious consequences: 一度でも → 注文を → 間違えよう → ものなら. (注文を 一度でも also works; either way the ★ is 「間違えよう」.)"
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

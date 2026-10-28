@@ -1,0 +1,582 @@
+[
+  {
+    "id": "n3-l44-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson44#1"
+    ],
+    "difficulty": 2,
+    "stem": "何度も 説明し（　）が、彼は 最後まで 聞いて くれなかった。",
+    "options": [
+      "ようとした",
+      "ようがなかった",
+      "かねなかった",
+      "ざるを得なかった"
+    ],
+    "answer": 0,
+    "full": "何度も 説明しようとしたが、彼は 最後まで 聞いて くれなかった。",
+    "tr": {
+      "zh": "我多次试图解释，但他始终不肯听。",
+      "en": "I tried to explain many times, but he wouldn't listen."
+    },
+    "why": {
+      "zh": "“多次想解释，但对方不听”——尝试了却没成功，用「意志形＋とする」的过去式「〜ようとしたが」。",
+      "en": "Tried many times but he wouldn't listen — an attempt that failed: 「volitional ＋ とした が」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「説明しようがなかった」是“根本没办法解释”，和「何度も」（解释了好几次）矛盾。",
+        "en": "「説明しようがなかった」 means there was no way to explain at all, which clashes with 「何度も」 (many times)."
+      },
+      {
+        "zh": "「かねない」表示可能发生坏事，「説明しかねなかった」在这里没有意思。",
+        "en": "「かねない」 warns of a bad outcome; 「説明しかねなかった」 makes no sense here."
+      },
+      {
+        "zh": "「する」接「ざるを得ない」要变成「せざるを得ない」，「説明しざるを得なかった」形式错误。",
+        "en": "With する the form is 「せざるを得ない」; 「説明しざるを得なかった」 is malformed."
+      }
+    ]
+  },
+  {
+    "id": "n3-l44-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson44#1"
+    ],
+    "difficulty": 2,
+    "stem": "駅の ホームで 電車に（　）とき、目の 前で ドアが 閉まって しまった。",
+    "options": [
+      "乗ろうとした",
+      "乗りかねない",
+      "乗りようがない",
+      "乗らざるを得ない"
+    ],
+    "answer": 0,
+    "full": "駅の ホームで 電車に 乗ろうとした とき、目の 前で ドアが 閉まって しまった。",
+    "tr": {
+      "zh": "在站台上正要上车的时候，车门在眼前关上了。",
+      "en": "On the platform, just as I was about to get on the train, the doors shut in front of me."
+    },
+    "why": {
+      "zh": "车门在眼前关上，说明是“正要上车的那一刻”，用「〜ようとしたとき」。",
+      "en": "The doors shut right in front of me, so it was the moment just before boarding: 「〜ようとしたとき」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「乗りかねない」是“有可能（坏事）上车”，和这个场景不符，时态也不对。",
+        "en": "「乗りかねない」 warns that something bad might happen; it doesn't describe this moment, and the tense is wrong."
+      },
+      {
+        "zh": "「乗りようがない」是“没有办法上车”，表示方法不存在，而这里是正要上车时门关了。",
+        "en": "「乗りようがない」 means there's no way to board at all; here I was just about to board when the doors closed."
+      },
+      {
+        "zh": "「乗らざるを得ない」是“不得不上车”，和“门在眼前关上”的瞬间接不上。",
+        "en": "「乗らざるを得ない」 means having no choice but to board; it doesn't fit the instant the doors closed."
+      }
+    ]
+  },
+  {
+    "id": "n3-l44-003",
+    "type": "narabe",
+    "refs": [
+      "lesson44#1"
+    ],
+    "difficulty": 1,
+    "stem": "猫が 窓から [_] [_] [★] [_]、窓が 閉まって いた。",
+    "options": [
+      "したが",
+      "よう",
+      "逃げ",
+      "と"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "猫が 窓から 逃げようと したが、窓が 閉まって いた。",
+    "tr": {
+      "zh": "猫想从窗户逃走，可是窗户关着。",
+      "en": "The cat tried to escape through the window, but it was shut."
+    },
+    "why": {
+      "zh": "逃げ ＋ よう（意志形）＋ と ＋ したが：试图做但没成功。★ 在第三格，是「と」。",
+      "en": "逃げ ＋ よう (volitional) ＋ と ＋ したが: tried but failed. The ★ is the third slot: 「と」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l44-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson44#2"
+    ],
+    "difficulty": 1,
+    "stem": "電話番号も メールアドレスも わからないので、連絡（　）。",
+    "options": [
+      "しようがない",
+      "せざるを得ない",
+      "しかねない",
+      "しようとする"
+    ],
+    "answer": 0,
+    "full": "電話番号も メールアドレスも わからないので、連絡しようがない。",
+    "tr": {
+      "zh": "电话号码和邮箱都不知道，没法联系。",
+      "en": "I don't know the phone number or the email address, so there's no way to get in touch."
+    },
+    "why": {
+      "zh": "没有任何联系方式，“方法本身不存在”，用「ます形去ます＋ようがない」。",
+      "en": "With no contact details, the means simply don't exist: 「masu-stem ＋ ようがない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「せざるを得ない」是“不得不联系”，可前面说根本没有联系方式。",
+        "en": "「せざるを得ない」 means having to contact them, but there's no way to do so."
+      },
+      {
+        "zh": "「かねない」用于担心发生坏事，“联系”在这里不是坏事，也不符合前因。",
+        "en": "「かねない」 warns of a bad outcome; contacting someone isn't that here, and it doesn't follow the reason."
+      },
+      {
+        "zh": "「しようとする」是“试图联系”，可没有联系方式时说“试图联系”和前因接不上。",
+        "en": "「しようとする」 means trying to contact, which doesn't follow from having no contact details."
+      }
+    ]
+  },
+  {
+    "id": "n3-l44-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson44#2"
+    ],
+    "difficulty": 2,
+    "stem": "この 時計は こんなに 壊れて いては、もう（　）ようがない。",
+    "options": [
+      "直し",
+      "直す",
+      "直さ",
+      "直そう"
+    ],
+    "answer": 0,
+    "full": "この 時計は こんなに 壊れて いては、もう 直しようがない。",
+    "tr": {
+      "zh": "这块表坏成这样，已经没法修了。",
+      "en": "With this watch broken this badly, there's no way to fix it anymore."
+    },
+    "why": {
+      "zh": "「ようがない」接在动词ます形去掉「ます」的形式后面：直します → 直しようがない。",
+      "en": "「ようがない」 follows the masu-stem: 直します → 直しようがない."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ようがない」不接辞书形，「直すようがない」不成立。",
+        "en": "「ようがない」 doesn't take the dictionary form; 「直すようがない」 is wrong."
+      },
+      {
+        "zh": "「直さ」是ない形词干，接「ざるを得ない」，不接「ようがない」。",
+        "en": "「直さ」 is the nai-stem, used with 「ざるを得ない」, not 「ようがない」."
+      },
+      {
+        "zh": "「直そう」是意志形，接「とする」，不接「ようがない」。",
+        "en": "「直そう」 is the volitional, used with 「とする」, not 「ようがない」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l44-006",
+    "type": "narabe",
+    "refs": [
+      "lesson44#2"
+    ],
+    "difficulty": 2,
+    "stem": "電話番号も 住所も 知らないので、[_] [_] [★] [_]。",
+    "options": [
+      "ようが",
+      "彼に",
+      "ない",
+      "連絡し"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "電話番号も 住所も 知らないので、彼に 連絡しようが ない。",
+    "tr": {
+      "zh": "电话号码和住址都不知道，没法联系他。",
+      "en": "I don't know his phone number or address, so there's no way to contact him."
+    },
+    "why": {
+      "zh": "彼に ＋ 連絡し（ます形去ます）＋ ようが ＋ ない。★ 在第三格，是「ようが」。",
+      "en": "彼に ＋ 連絡し (masu-stem) ＋ ようが ＋ ない. The ★ is the third slot: 「ようが」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l44-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson44#3"
+    ],
+    "difficulty": 1,
+    "stem": "明日が 締め切りなので、今夜は 残業（　）。",
+    "options": [
+      "せざるを得ない",
+      "しざるを得ない",
+      "さざるを得ない",
+      "するざるを得ない"
+    ],
+    "answer": 0,
+    "full": "明日が 締め切りなので、今夜は 残業せざるを得ない。",
+    "tr": {
+      "zh": "明天就是截止日期，今晚不得不加班。",
+      "en": "The deadline is tomorrow, so I have no choice but to work overtime tonight."
+    },
+    "why": {
+      "zh": "「する」接「ざるを得ない」是特殊变化：せざるを得ない。",
+      "en": "する is irregular with 「ざるを得ない」: せざるを得ない."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「しない」的词干「し」不能接「ざる」，「する」要变成「せ」。",
+        "en": "The stem 「し」 doesn't go with 「ざる」; する becomes 「せ」."
+      },
+      {
+        "zh": "没有「さざる」这种变化，「する」要变成「せざるを得ない」。",
+        "en": "There is no 「さざる」 form; する becomes 「せざるを得ない」."
+      },
+      {
+        "zh": "「ざるを得ない」不接辞书形，「するざる」不成立。",
+        "en": "「ざるを得ない」 doesn't take the dictionary form; 「するざる」 is wrong."
+      }
+    ]
+  },
+  {
+    "id": "n3-l44-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson44#3"
+    ],
+    "difficulty": 2,
+    "stem": "社長の 命令だから、気が 進まないが、（　）。",
+    "options": [
+      "従わざるを得ない",
+      "従いようがない",
+      "従いかねない",
+      "従おうとしない"
+    ],
+    "answer": 0,
+    "full": "社長の 命令だから、気が 進まないが、従わざるを得ない。",
+    "tr": {
+      "zh": "因为是社长的命令，虽然不情愿，也不得不服从。",
+      "en": "It's the president's order, so although I don't feel like it, I have no choice but to obey."
+    },
+    "why": {
+      "zh": "“是命令＋虽然不情愿”，表示无奈地做，用「ない形词干＋ざるを得ない」。",
+      "en": "\"It's an order\" plus \"I don't feel like it\" — doing it reluctantly: 「nai-stem ＋ ざるを得ない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「従いようがない」是“没有办法服从”，可命令已经下了，服从并非做不到。",
+        "en": "「従いようがない」 says there's no way to obey, but obeying an order is perfectly possible."
+      },
+      {
+        "zh": "「かねない」表示可能发生坏事，「従いかねない」在这里不成立。",
+        "en": "「かねない」 warns of a possible bad outcome; 「従いかねない」 doesn't fit."
+      },
+      {
+        "zh": "「従おうとしない」是“不打算服从”，可「が」前后应是“不情愿，但还是要做”，而且主语多为别人。",
+        "en": "「従おうとしない」 means refusing to obey, but 「が」 sets up \"reluctant, yet I'll do it\" — and it usually describes someone else."
+      }
+    ]
+  },
+  {
+    "id": "n3-l44-009",
+    "type": "narabe",
+    "refs": [
+      "lesson44#3"
+    ],
+    "difficulty": 1,
+    "stem": "電車が 止まって しまったので、[_] [_] [★] [_]。",
+    "options": [
+      "得なかった",
+      "タクシーで",
+      "ざるを",
+      "行か"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "電車が 止まって しまったので、タクシーで 行かざるを 得なかった。",
+    "tr": {
+      "zh": "电车停了，只好坐出租车去了。",
+      "en": "The trains stopped, so I had no choice but to take a taxi."
+    },
+    "why": {
+      "zh": "タクシーで ＋ 行か（ない形词干）＋ ざるを ＋ 得なかった。★ 在第三格，是「ざるを」。",
+      "en": "タクシーで ＋ 行か (nai-stem) ＋ ざるを ＋ 得なかった. The ★ is the third slot: 「ざるを」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l44-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson44#4"
+    ],
+    "difficulty": 1,
+    "stem": "お客様、申し訳ございませんが、その ご質問には お答え（　）。",
+    "options": [
+      "しかねます",
+      "しかねません",
+      "せざるを得ません",
+      "しようとします"
+    ],
+    "answer": 0,
+    "full": "お客様、申し訳ございませんが、その ご質問には お答えしかねます。",
+    "tr": {
+      "zh": "这位客人，非常抱歉，这个问题我们不便回答。",
+      "en": "I'm very sorry, but I'm afraid we can't answer that question."
+    },
+    "why": {
+      "zh": "「申し訳ございませんが」引出礼貌的拒绝，用「ます形去ます＋かねます」（难以……、不便……）。",
+      "en": "「申し訳ございませんが」 leads into a polite refusal: 「masu-stem ＋ かねます」 (I'm afraid I can't)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「かねません」是“有可能（坏事）”，「お答えしかねません」意思变成“可能会回答”，和道歉接不上。",
+        "en": "「かねません」 means something bad might happen; \"might answer\" doesn't follow an apology."
+      },
+      {
+        "zh": "「せざるを得ません」是“不得不回答”，和「申し訳ございませんが」的拒绝语气不符。",
+        "en": "「せざるを得ません」 means \"we must answer,\" which doesn't match the apologetic refusal."
+      },
+      {
+        "zh": "「しようとします」是“试图回答”，不是客服的回答方式，也和道歉不搭。",
+        "en": "「しようとします」 means \"we'll try to answer,\" which isn't how staff decline and doesn't fit the apology."
+      }
+    ]
+  },
+  {
+    "id": "n3-l44-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson44#4"
+    ],
+    "difficulty": 2,
+    "stem": "その 件は 私の 立場では 判断（　）ので、上の 者と 相談してから お返事いたします。",
+    "options": [
+      "しかねます",
+      "しかねません",
+      "せざるを得ません",
+      "しようとします"
+    ],
+    "answer": 0,
+    "full": "その 件は 私の 立場では 判断しかねますので、上の 者と 相談してから お返事いたします。",
+    "tr": {
+      "zh": "那件事以我的立场难以判断，所以和上级商量后再答复您。",
+      "en": "I'm not in a position to decide on that matter, so I'll consult my superior and get back to you."
+    },
+    "why": {
+      "zh": "“以我的立场……所以要跟上级商量”，表示自己难以做判断，用「かねます」。",
+      "en": "\"In my position… so I'll consult my superior\" — I can't make the call: 「かねます」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「判断しかねません」是“有可能（坏事）会判断”，意思不通。",
+        "en": "「判断しかねません」 would mean \"I might (badly) decide,\" which makes no sense."
+      },
+      {
+        "zh": "「判断せざるを得ません」是“不得不判断”，那就不用再去和上级商量了。",
+        "en": "「判断せざるを得ません」 means \"I have to decide,\" which contradicts handing it to a superior."
+      },
+      {
+        "zh": "「判断しようとします」是“试图判断”，和“所以和上级商量”接不上。",
+        "en": "「判断しようとします」 means \"I'll try to decide,\" which doesn't lead to consulting a superior."
+      }
+    ]
+  },
+  {
+    "id": "n3-l44-012",
+    "type": "narabe",
+    "refs": [
+      "lesson44#4"
+    ],
+    "difficulty": 2,
+    "stem": "せっかくの お話ですが、その 条件では [_] [_] [★] [_]。",
+    "options": [
+      "し",
+      "ます",
+      "お引き受け",
+      "かね"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "せっかくの お話ですが、その 条件では お引き受けしかねます。",
+    "tr": {
+      "zh": "难得您找我，但那个条件我难以接受。",
+      "en": "Thank you for the kind offer, but I'm afraid I can't accept under those conditions."
+    },
+    "why": {
+      "zh": "お引き受け ＋ し（ます形去ます）＋ かね ＋ ます：礼貌拒绝。★ 在第三格，是「かね」。",
+      "en": "お引き受け ＋ し (masu-stem) ＋ かね ＋ ます: a polite refusal. The ★ is the third slot: 「かね」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l44-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson44#5"
+    ],
+    "difficulty": 1,
+    "stem": "無理を して 毎日 夜中まで 働いて いると、体を 壊し（　）。",
+    "options": [
+      "かねない",
+      "かねる",
+      "ようがない",
+      "ざるを得ない"
+    ],
+    "answer": 0,
+    "full": "無理を して 毎日 夜中まで 働いて いると、体を 壊しかねない。",
+    "tr": {
+      "zh": "勉强自己每天工作到半夜的话，可能会把身体搞垮。",
+      "en": "If you push yourself and work till midnight every day, you could ruin your health."
+    },
+    "why": {
+      "zh": "“勉强自己工作到半夜”会导致坏结果，表示担心、警告，用「ます形去ます＋かねない」。",
+      "en": "Overworking leads to a bad result — a warning: 「masu-stem ＋ かねない」 (could)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「かねる」是“难以做到”（礼貌拒绝），「体を壊しかねる」意思变成“难以搞垮身体”。",
+        "en": "「かねる」 means \"find it hard to\" (a polite refusal); \"find it hard to ruin your health\" makes no sense."
+      },
+      {
+        "zh": "「壊しようがない」是“没有办法搞垮”，和警告的意思相反。",
+        "en": "「壊しようがない」 means \"there's no way to ruin it,\" the opposite of a warning."
+      },
+      {
+        "zh": "「ざるを得ない」接ない形词干（壊さ），「壊しざるを得ない」形式错误，意思也不对。",
+        "en": "「ざるを得ない」 takes the nai-stem (壊さ); 「壊しざる」 is malformed, and the meaning is off too."
+      }
+    ]
+  },
+  {
+    "id": "n3-l44-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson44#5"
+    ],
+    "difficulty": 2,
+    "stem": "言い方に 気を つけて。そんな ことを 言ったら、相手に 誤解され（　）よ。",
+    "options": [
+      "かねない",
+      "かねます",
+      "ようがない",
+      "ようとする"
+    ],
+    "answer": 0,
+    "full": "言い方に 気を つけて。そんな ことを 言ったら、相手に 誤解されかねないよ。",
+    "tr": {
+      "zh": "注意说话方式。说那种话的话，可能会被对方误会哦。",
+      "en": "Watch how you say it. If you say something like that, you might be misunderstood."
+    },
+    "why": {
+      "zh": "「気をつけて」说明是在提醒坏结果可能发生，用「かねない」。",
+      "en": "「気をつけて」 shows it's a warning about a bad outcome: 「かねない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「かねます」是礼貌地表示“难以……”，「誤解されかねます」不成立，也不接「よ」这种口语。",
+        "en": "「かねます」 is a polite \"I can't\"; 「誤解されかねます」 doesn't work, and it clashes with casual 「よ」."
+      },
+      {
+        "zh": "「誤解されようがない」是“不可能被误会”，那就不用提醒“注意说话方式”了。",
+        "en": "「誤解されようがない」 says there's no way to be misunderstood — then there'd be no need to warn."
+      },
+      {
+        "zh": "「誤解されようとする」是“试图被误会”，意思不通，也不是警告。",
+        "en": "「誤解されようとする」 would mean \"trying to be misunderstood,\" which makes no sense and isn't a warning."
+      }
+    ]
+  },
+  {
+    "id": "n3-l44-015",
+    "type": "narabe",
+    "refs": [
+      "lesson44#5"
+    ],
+    "difficulty": 1,
+    "stem": "このまま 何も 対策を しなければ、[_] [_] [★] [_]。",
+    "options": [
+      "事故に",
+      "かねない",
+      "大きな",
+      "なり"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "このまま 何も 対策を しなければ、大きな 事故に なりかねない。",
+    "tr": {
+      "zh": "如果就这样不采取任何措施，可能会酿成大事故。",
+      "en": "If we take no measures, this could lead to a serious accident."
+    },
+    "why": {
+      "zh": "大きな ＋ 事故に ＋ なり（ます形去ます）＋ かねない。★ 在第三格，是「なり」。",
+      "en": "大きな ＋ 事故に ＋ なり (masu-stem) ＋ かねない. The ★ is the third slot: 「なり」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

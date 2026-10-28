@@ -1,0 +1,252 @@
+[
+  {
+    "id": "n5-dk-201",
+    "type": "short",
+    "difficulty": 1,
+    "intro": "マリさんが 学校から 帰ると、テーブルの 上に お母さんの メモが ありました。",
+    "passage": "マリへ\n\nお母さんは 買い物に 行きます。六時ごろ 帰ります。\nれいぞうこに ケーキが あります。食べても いいですよ。\nそれから、五時までに 犬に 水を やって ください。\n\n母",
+    "tr": {
+      "zh": "致真理：妈妈去买东西了，六点左右回来。冰箱里有蛋糕，可以吃哦。还有，五点之前请给狗喂水。妈妈",
+      "en": "Mari — I've gone shopping and will be back around six. There's cake in the fridge; you can have some. Also, please give the dog some water by five. — Mum"
+    },
+    "questions": [
+      {
+        "q": "マリさんは 何を しなければ なりませんか。",
+        "options": ["犬に 水を やります", "ケーキを 食べます", "買い物に 行きます", "六時までに 帰ります"],
+        "answer": 0,
+        "why": { "zh": "メモ里用「〜て ください」请她做的只有「五時までに 犬に 水を やって ください」。", "en": "The only thing the note asks her to do (「〜て ください」) is give the dog water by five." },
+        "wrong": [
+          null,
+          { "zh": "蛋糕是「食べても いいです」，可以吃，不是必须吃。", "en": "The cake is 「食べても いいです」 — allowed, not required." },
+          { "zh": "去买东西的是妈妈，不是真理。", "en": "It's the mother who goes shopping, not Mari." },
+          { "zh": "“六点左右回来”说的是妈妈，而且真理已经在家了。", "en": "\"Back around six\" is about the mother, and Mari is already home." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-202",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "日本語の クラスで、先生が 学生に この 紙を わたしました。",
+    "passage": "みなさんへ\n\nあさっての 金曜日に かんじの テストを すると 言いましたが、来週の 月曜日に なりました。金曜日は テストは ありません。\nテストは 教科書の 二十ページから 三十ページまでです。よく 勉強して ください。\n\n山下",
+    "tr": {
+      "zh": "致各位：我说过后天星期五考汉字，现在改到下星期一了。星期五没有考试。考试范围是课本第20页到第30页。请好好复习。山下",
+      "en": "To everyone: I said the kanji test would be the day after tomorrow, Friday, but it has moved to next Monday. There's no test on Friday. The test covers pages 20 to 30 of the textbook. Please study hard. — Yamashita"
+    },
+    "questions": [
+      {
+        "q": "かんじの テストは いつですか。",
+        "options": ["来週の 月曜日", "あさっての 金曜日", "あしたの 木曜日", "来週の 金曜日"],
+        "answer": 0,
+        "why": { "zh": "「来週の 月曜日に なりました」——考试改到了下星期一。", "en": "「来週の 月曜日に なりました」 — the test has moved to next Monday." },
+        "wrong": [
+          null,
+          { "zh": "后天星期五是原来的日子，已经改了，而且「金曜日は テストは ありません」。", "en": "Friday was the old date; it changed, and 「金曜日は テストは ありません」." },
+          { "zh": "纸上没有说明天考试。", "en": "Nothing says the test is tomorrow." },
+          { "zh": "改的是“下星期一”，不是下星期五。", "en": "It moved to next Monday, not next Friday." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-203",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "ヤンさんは 友だちの 田中さんから メールを もらいました。",
+    "passage": "ヤンさん\n\nあしたは 二時に 駅の 前で 会いましょうと 言いましたね。でも、あしたは 雨ですから、駅の 前じゃなくて、駅の 中の 本屋の 前で 会いましょう。時間は 同じです。映画は 二時半からです。\n\n田中",
+    "tr": {
+      "zh": "小杨：之前说好明天两点在车站前见面对吧。不过明天下雨，所以不在车站前了，在车站里面的书店门口见吧。时间不变。电影两点半开始。田中",
+      "en": "Yang — we said we'd meet in front of the station at two tomorrow. But it's going to rain, so let's meet in front of the bookshop inside the station instead. Same time. The film starts at half past two. — Tanaka"
+    },
+    "questions": [
+      {
+        "q": "ヤンさんは あした 何時に どこで 田中さんに 会いますか。",
+        "options": ["二時に 駅の 中の 本屋の 前", "二時に 駅の 前", "二時半に 駅の 中の 本屋の 前", "二時半に 映画館の 前"],
+        "answer": 0,
+        "why": { "zh": "地点改成「駅の 中の 本屋の 前」，「時間は 同じです」，还是两点。", "en": "The place changed to the bookshop inside the station; 「時間は 同じです」, so still two o'clock." },
+        "wrong": [
+          null,
+          { "zh": "车站前是原来的地点，因为下雨改了。", "en": "In front of the station was the old place; it changed because of the rain." },
+          { "zh": "两点半是电影开始的时间，见面时间还是两点。", "en": "Half past two is when the film starts; they still meet at two." },
+          { "zh": "两点半是电影开始时间，而且邮件里没说在电影院前见面。", "en": "2:30 is the film's start, and the email never mentions meeting at the cinema." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-204",
+    "type": "short",
+    "difficulty": 3,
+    "intro": "これは ジョンさんの 日記です。",
+    "passage": "十月二十日（土）　晴れ\n\nきょうは 朝 十時に 起きました。おそく 起きましたから、朝ごはんは 食べませんでした。\n午後、友だちと テニスを しました。テニスの あとで、いっしょに ラーメンを 食べました。\n夜は うちで 日本語の しゅくだいを しました。",
+    "tr": {
+      "zh": "10月20日（星期六）晴。今天早上十点起床。因为起得晚，没吃早饭。下午和朋友打了网球。打完网球后一起吃了拉面。晚上在家做了日语作业。",
+      "en": "Saturday 20 October, sunny. I got up at ten this morning. Because I got up late, I didn't have breakfast. In the afternoon I played tennis with a friend, and after tennis we had ramen together. In the evening I did my Japanese homework at home."
+    },
+    "questions": [
+      {
+        "q": "ジョンさんは きょう 何を しましたか。",
+        "options": ["テニスを して、ラーメンを 食べました", "朝ごはんを 食べて、テニスを しました", "ラーメンを 食べて、テニスを しました", "テニスを して、友だちの うちで しゅくだいを しました"],
+        "answer": 0,
+        "why": { "zh": "「テニスの あとで、いっしょに ラーメンを 食べました」：先打网球，再吃拉面。", "en": "「テニスの あとで … ラーメンを 食べました」: tennis first, then ramen." },
+        "wrong": [
+          null,
+          { "zh": "起得晚，「朝ごはんは 食べませんでした」。", "en": "He got up late and 「朝ごはんは 食べませんでした」." },
+          { "zh": "顺序反了，拉面是打完网球「あとで」吃的。", "en": "Wrong order — the ramen came 「あとで」, after tennis." },
+          { "zh": "作业是晚上「うちで」做的，不是在朋友家。", "en": "He did his homework 「うちで」 (at home), not at a friend's." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-205",
+    "type": "short",
+    "difficulty": 1,
+    "intro": "パンやの 入り口に この 紙が あります。",
+    "passage": "さくらパン\n\nいつもは 朝 七時から 夜 八時までですが、きょうは 店の 中の そうじを しますから、午後 三時までです。\nあしたからは また 夜 八時までです。\n月曜日は 休みです。",
+    "tr": {
+      "zh": "樱花面包店。平时营业时间是早上七点到晚上八点，但今天要打扫店内，所以只营业到下午三点。从明天起照常营业到晚上八点。星期一休息。",
+      "en": "Sakura Bakery. We're usually open 7 a.m. to 8 p.m., but today we're cleaning the shop, so we close at 3 p.m. From tomorrow we're open until 8 p.m. again. Closed on Mondays."
+    },
+    "questions": [
+      {
+        "q": "きょう、この 店で 何時まで パンを 買う ことが できますか。",
+        "options": ["午後 三時まで", "夜 八時まで", "朝 七時まで", "午後 七時まで"],
+        "answer": 0,
+        "why": { "zh": "「きょうは … 午後 三時までです」，今天只开到下午三点。", "en": "「きょうは … 午後 三時までです」 — today it's open only until 3 p.m." },
+        "wrong": [
+          null,
+          { "zh": "晚上八点是平时和明天起的关门时间，今天因为打扫提前了。", "en": "8 p.m. is the usual closing time (and from tomorrow); today it closes early for cleaning." },
+          { "zh": "早上七点是开门时间，不是关门时间。", "en": "7 a.m. is when it opens, not closes." },
+          { "zh": "纸上的“七点”是早上开门时间，没有下午七点。", "en": "The \"seven\" on the sign is the 7 a.m. opening; there's no 7 p.m." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-206",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "リンさんが うちへ 帰ると、ドアに いっしょに 住んで いる エマさんの メモが ありました。",
+    "passage": "リンさんへ\n\nきょう、わたしは 友だちの うちで 晩ごはんを 食べますから、わたしの 晩ごはんは いりません。十一時ごろ 帰ります。\nあ、さっき リンさんの お母さんから 電話が ありました。あとで 電話して くださいと 言って いました。\n\nエマ",
+    "tr": {
+      "zh": "林：今天我在朋友家吃晚饭，所以不用准备我的晚饭。我十一点左右回来。啊，刚才你妈妈打来电话，说请你回头给她打个电话。艾玛",
+      "en": "Lin — I'm having dinner at a friend's tonight, so I don't need dinner. I'll be back around eleven. Oh, your mother called a little while ago. She said to call her back later. — Emma"
+    },
+    "questions": [
+      {
+        "q": "リンさんは この あと 何を しますか。",
+        "options": ["お母さんに 電話を します", "エマさんに 電話を します", "エマさんの 晩ごはんを 作ります", "十一時に 友だちの うちへ 行きます"],
+        "answer": 0,
+        "why": { "zh": "妈妈说「あとで 電話して ください」，所以林要给妈妈回电话。", "en": "Her mother asked her to 「あとで 電話して ください」, so Lin calls her mother back." },
+        "wrong": [
+          null,
+          { "zh": "请她打电话的是妈妈，对象也是妈妈，不是艾玛。", "en": "The call is to her mother, not to Emma." },
+          { "zh": "艾玛在朋友家吃，「わたしの 晩ごはんは いりません」。", "en": "Emma eats at a friend's: 「わたしの 晩ごはんは いりません」." },
+          { "zh": "去朋友家的是艾玛，十一点是她回来的时间。", "en": "It's Emma who's at a friend's; eleven is when she comes back." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-207",
+    "type": "short",
+    "difficulty": 3,
+    "intro": "先生が クラスの 学生に メールを 送りました。",
+    "passage": "みなさん\n\n金曜日は 学校の 近くの 公園で 絵を かきます。\n紙と えんぴつは 学校に ありますから、持って こなくても いいです。いろえんぴつは みなさんが 持って きて ください。\n雨の ときは 教室で かきますから、かさは いりません。飲み物は 持って きても いいです。",
+    "tr": {
+      "zh": "各位：星期五我们在学校附近的公园画画。纸和铅笔学校有，不用带。彩色铅笔请大家自己带来。下雨的话就在教室里画，所以不需要带伞。可以带饮料。",
+      "en": "Everyone: On Friday we'll draw pictures in the park near the school. The school has paper and pencils, so you don't need to bring them. Please bring your own coloured pencils. If it rains we'll draw in the classroom, so you don't need an umbrella. You may bring a drink."
+    },
+    "questions": [
+      {
+        "q": "学生は 金曜日に 何を 持って 行かなければ なりませんか。",
+        "options": ["いろえんぴつ", "紙と えんぴつ", "かさ", "飲み物"],
+        "answer": 0,
+        "why": { "zh": "只有彩色铅笔是「持って きて ください」，必须带。", "en": "Only the coloured pencils are 「持って きて ください」 — required." },
+        "wrong": [
+          null,
+          { "zh": "纸和铅笔学校有，「持って こなくても いいです」。", "en": "The school has paper and pencils: 「持って こなくても いいです」." },
+          { "zh": "下雨就在教室画，「かさは いりません」。", "en": "If it rains they draw indoors: 「かさは いりません」." },
+          { "zh": "饮料是「持って きても いいです」，可以带，但不是必须带。", "en": "Drinks are 「持って きても いいです」 — allowed, not required." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-208",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "図書館の 入り口に この 紙が あります。",
+    "passage": "図書館を 使う みなさんへ\n\n図書館は 毎週 月曜日が 休みです。\nでも、今月は 二十三日の 月曜日は 休みじゃありません。朝 九時から 開いて います。\nその つぎの 日、二十四日の 火曜日が 休みです。",
+    "tr": {
+      "zh": "致使用图书馆的各位：图书馆每周一闭馆。但是这个月23号星期一不闭馆，早上九点开门。第二天，也就是24号星期二闭馆。",
+      "en": "To library users: The library is closed every Monday. This month, however, Monday the 23rd is not a closing day — we open at 9 a.m. The next day, Tuesday the 24th, is the closing day instead."
+    },
+    "questions": [
+      {
+        "q": "今月の 二十三日と 二十四日、図書館が 休みの 日は どれですか。",
+        "options": ["二十四日だけ", "二十三日だけ", "二十三日と 二十四日", "どちらも 休みじゃ ありません"],
+        "answer": 0,
+        "why": { "zh": "23号星期一「休みじゃありません」，第二天「二十四日の 火曜日が 休みです」。", "en": "Monday the 23rd is 「休みじゃありません」; 「二十四日の 火曜日が 休みです」." },
+        "wrong": [
+          null,
+          { "zh": "平时星期一闭馆，但这个月23号星期一开馆。", "en": "Mondays are usually closed, but this month Monday the 23rd is open." },
+          { "zh": "23号开馆，只有24号闭馆。", "en": "The 23rd is open; only the 24th is closed." },
+          { "zh": "24号星期二闭馆。", "en": "Tuesday the 24th is closed." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-209",
+    "type": "short",
+    "difficulty": 1,
+    "intro": "ワンさんは 先生に メールを 書きました。",
+    "passage": "山下先生\n\nワンです。きのうの 夜から 熱が あります。すみませんが、きょうは 学校を 休みます。\n午前中に 病院へ 行きます。\nきょうの しゅくだいは あした 学校へ 持って いきます。\n\nワン",
+    "tr": {
+      "zh": "山下老师：我是王。我从昨晚开始发烧，对不起，今天请假不去学校了。上午我去医院。今天的作业明天带到学校。王",
+      "en": "Ms. Yamashita — this is Wang. I've had a fever since last night, so I'm sorry, but I'll be absent from school today. I'll go to the hospital this morning. I'll bring today's homework to school tomorrow. — Wang"
+    },
+    "questions": [
+      {
+        "q": "ワンさんは きょう 何を しますか。",
+        "options": ["病院へ 行きます", "病院へ 行ってから、学校へ 行きます", "学校へ しゅくだいを 持って いきます", "あした 病院へ 行きます"],
+        "answer": 0,
+        "why": { "zh": "今天「学校を 休みます」，「午前中に 病院へ 行きます」。", "en": "Today he's 「学校を 休みます」 (absent) and 「午前中に 病院へ 行きます」." },
+        "wrong": [
+          null,
+          { "zh": "他今天请假，「学校を 休みます」，看完病也不去学校。", "en": "He's absent today (「学校を 休みます」), so no school after the hospital." },
+          { "zh": "作业是「あした」带去，不是今天。", "en": "He brings the homework 「あした」, not today." },
+          { "zh": "去医院是今天上午，明天是交作业。", "en": "The hospital is this morning; tomorrow is for the homework." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-dk-210",
+    "type": "short",
+    "difficulty": 3,
+    "intro": "アリさんは 友だちの ケンさんから メールを もらいました。",
+    "passage": "アリさん\n\n来週の 土曜日の パーティーですが、六時からじゃなくて、七時からに なりました。\nパーティーの 前に、いっしょに 飲み物を 買いに 行きませんか。六時半に わたしの うちの 前で 会いましょう。\n\nケン",
+    "tr": {
+      "zh": "阿里：下星期六的聚会不是六点开始了，改成七点开始。聚会之前要不要一起去买饮料？六点半在我家门口见吧。健",
+      "en": "Ali — about next Saturday's party: it now starts at seven, not six. Shall we go and buy drinks together before it? Let's meet in front of my place at half past six. — Ken"
+    },
+    "questions": [
+      {
+        "q": "アリさんは 土曜日 何時に ケンさんの うちの 前へ 行きますか。",
+        "options": ["六時半", "六時", "七時", "七時半"],
+        "answer": 0,
+        "why": { "zh": "「六時半に わたしの うちの 前で 会いましょう」，在健家门口见面是六点半。", "en": "「六時半に わたしの うちの 前で 会いましょう」 — they meet outside Ken's at 6:30." },
+        "wrong": [
+          null,
+          { "zh": "六点是聚会原来的开始时间，已经改了，而且不是见面时间。", "en": "Six was the party's old start time — and it was never the meeting time." },
+          { "zh": "七点是聚会新的开始时间，见面要在那之前。", "en": "Seven is the party's new start; they meet before that." },
+          { "zh": "邮件里没有七点半；见面在聚会之前的六点半。", "en": "There's no 7:30 in the email; they meet at 6:30, before the party." }
+        ]
+      }
+    ]
+  }
+]

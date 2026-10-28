@@ -1,0 +1,582 @@
+[
+  {
+    "id": "n3-l52-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson52#1"
+    ],
+    "difficulty": 1,
+    "stem": "部長の 話は 何度も 聞いた 話だったが、私は 初めて 聞く（　）を して、うなずいて いた。",
+    "options": [
+      "ふり",
+      "よう",
+      "そう",
+      "はず"
+    ],
+    "answer": 0,
+    "full": "部長の 話は 何度も 聞いた 話だったが、私は 初めて 聞く ふりを して、うなずいて いた。",
+    "tr": {
+      "zh": "部长的话我已经听过好多次了，但我装作第一次听，一直点头。",
+      "en": "I'd heard the manager's story many times, but I pretended it was my first time and kept nodding."
+    },
+    "why": {
+      "zh": "其实听过很多次，却装作第一次听：「〜ふりをする」（假装）。空后面是「をして」，能接「を」的只有名词「ふり」。",
+      "en": "He'd heard it many times but acted as if it were new — 「〜ふりをする」. Only the noun 「ふり」 takes 「をして」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「よう」不能接「をする」；要说“像……一样”是「ように」，也没有“假装”的意思。",
+        "en": "「よう」 can't take 「をする」, and 「ように」 wouldn't mean \"pretend\"."
+      },
+      {
+        "zh": "「そう」接动词要用ます形（聞きそう），也不能接「をする」。",
+        "en": "「そう」 attaches to the masu-stem (聞きそう) and can't take 「をする」."
+      },
+      {
+        "zh": "「はず」是“应该”，不能接「をする」，意思也不对。",
+        "en": "「はず」 (\"should be\") can't take 「をする」 and doesn't mean pretend."
+      }
+    ]
+  },
+  {
+    "id": "n3-l52-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson52#1"
+    ],
+    "difficulty": 2,
+    "stem": "彼女は（　）ふりを して、パーティーの 会場に 入った。",
+    "options": [
+      "関係者の",
+      "関係者な",
+      "関係者だ",
+      "関係者で"
+    ],
+    "answer": 0,
+    "full": "彼女は 関係者の ふりを して、パーティーの 会場に 入った。",
+    "tr": {
+      "zh": "她假装是相关人员，进了派对会场。",
+      "en": "She pretended to be staff and got into the party venue."
+    },
+    "why": {
+      "zh": "「ふり」是名词，前面接名词时要加「の」：「関係者のふり」。",
+      "en": "「ふり」 is a noun, so a noun before it takes 「の」: 「関係者のふり」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「な」是な形容词修饰名词的形式，「関係者」是名词，不能接「な」。",
+        "en": "「な」 is for na-adjectives; 「関係者」 is a noun."
+      },
+      {
+        "zh": "名词修饰名词时不能用「だ」，「関係者だふり」不成立。",
+        "en": "「だ」 can't link a noun to a following noun; 「関係者だふり」 is ungrammatical."
+      },
+      {
+        "zh": "「で」是连用形，后面不能直接接名词「ふり」。",
+        "en": "「で」 is a connective form and can't modify the noun 「ふり」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l52-003",
+    "type": "narabe",
+    "refs": [
+      "lesson52#1"
+    ],
+    "difficulty": 1,
+    "stem": "子どもは 母親に 呼ばれても、[_] [★] [_] [_]。",
+    "options": [
+      "して",
+      "ふりを",
+      "返事をしなかった",
+      "寝ている"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "子どもは 母親に 呼ばれても、寝て いる ふりを して 返事を しなかった。",
+    "tr": {
+      "zh": "孩子被妈妈叫了也装睡，没有回答。",
+      "en": "Even when his mother called him, the child pretended to be asleep and didn't answer."
+    },
+    "why": {
+      "zh": "寝ている（普通形）＋ふりを＋して，再接结果「返事をしなかった」。★ 在第二格，是「ふりを」。",
+      "en": "寝ている (plain form) ＋ ふりを ＋ して, then the result 「返事をしなかった」. The ★ is the second slot: 「ふりを」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l52-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson52#2"
+    ],
+    "difficulty": 1,
+    "stem": "A「いつも お世話に なって おります。」\nB「いえ、こちら（　）お世話に なって おります。」",
+    "options": [
+      "こそ",
+      "さえ",
+      "ばかり",
+      "まで"
+    ],
+    "answer": 0,
+    "full": "A「いつも お世話に なって おります。」  B「いえ、こちらこそ お世話に なって おります。」",
+    "tr": {
+      "zh": "A：一直承蒙您关照。 B：哪里，我才是一直承蒙您关照。",
+      "en": "A: Thank you for all your help. B: Not at all — it's I who should thank you."
+    },
+    "why": {
+      "zh": "回应对方的客套话，“我才是……”，用「こちらこそ」强调。",
+      "en": "Returning a courtesy — \"no, it's me who…\" — is 「こちらこそ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「さえ」是“连……都”，「こちらさえ」不能用来回敬对方的客套话。",
+        "en": "「さえ」 means \"even\"; it can't return a courtesy."
+      },
+      {
+        "zh": "「ばかり」是“光是、总是”，「こちらばかり」意思不对。",
+        "en": "「ばかり」 means \"only / always\"; it doesn't fit."
+      },
+      {
+        "zh": "「まで」是“连……也”，「こちらまでお世話に」不是固定的回应说法。",
+        "en": "「まで」 (\"even… too\") isn't how one returns a greeting."
+      }
+    ]
+  },
+  {
+    "id": "n3-l52-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson52#2"
+    ],
+    "difficulty": 1,
+    "stem": "去年は 不合格だったので、今年（　）合格したい。",
+    "options": [
+      "こそ",
+      "さえ",
+      "まで",
+      "なら"
+    ],
+    "answer": 0,
+    "full": "去年は 不合格だったので、今年こそ 合格したい。",
+    "tr": {
+      "zh": "去年没考过，所以今年一定要考过。",
+      "en": "I failed last year, so this year I really want to pass."
+    },
+    "why": {
+      "zh": "去年失败了，强调“这次一定”，用「今年こそ」。",
+      "en": "After last year's failure, \"this year for sure\" is 「今年こそ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「さえ」是“连……都”或“只要……就”，「今年さえ合格したい」意思不通。",
+        "en": "「さえ」 means \"even\" or \"as long as\"; it makes no sense here."
+      },
+      {
+        "zh": "「まで」是“到……为止”，「今年まで合格したい」意思不通。",
+        "en": "「まで」 means \"until\"; \"want to pass until this year\" makes no sense."
+      },
+      {
+        "zh": "「なら」是“如果是……的话”，和前面“去年没考过所以”的语气接不上，也表达不出决心。",
+        "en": "「なら」 (\"if it's\") doesn't follow \"I failed last year, so\" and carries no resolve."
+      }
+    ]
+  },
+  {
+    "id": "n3-l52-006",
+    "type": "narabe",
+    "refs": [
+      "lesson52#2"
+    ],
+    "difficulty": 2,
+    "stem": "人は [_] [_] [★] [_] できる ものだ。",
+    "options": [
+      "こそ",
+      "失敗を",
+      "成長",
+      "経験して"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "人は 失敗を 経験してこそ 成長できる ものだ。",
+    "tr": {
+      "zh": "人正是经历了失败才能成长。",
+      "en": "It is only by experiencing failure that people can grow."
+    },
+    "why": {
+      "zh": "「〜てこそ」（正因为……才）：失敗を＋経験して＋こそ＋成長（できる）。★ 在第三格，是「こそ」。",
+      "en": "「〜てこそ」 (only by…): 失敗を ＋ 経験して ＋ こそ ＋ 成長(できる). The ★ is the third slot: 「こそ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l52-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson52#3"
+    ],
+    "difficulty": 1,
+    "stem": "（　）ことに、旅行の 当日に 台風が 来て、飛行機が 全部 止まって しまった。",
+    "options": [
+      "残念な",
+      "残念",
+      "残念だ",
+      "残念の"
+    ],
+    "answer": 0,
+    "full": "残念な ことに、旅行の 当日に 台風が 来て、飛行機が 全部 止まって しまった。",
+    "tr": {
+      "zh": "遗憾的是，旅行当天来了台风，飞机全都停飞了。",
+      "en": "Unfortunately, a typhoon hit on the day of the trip and all the flights were grounded."
+    },
+    "why": {
+      "zh": "「ことに」前接な形容词时用「な」：「残念なことに」（遗憾的是）。",
+      "en": "Before 「ことに」, a na-adjective takes 「な」: 「残念なことに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "な形容词词干不能直接接名词「こと」，要加「な」。",
+        "en": "A na-adjective stem can't attach directly to 「こと」; it needs 「な」."
+      },
+      {
+        "zh": "「だ」是句末形式，不能修饰「こと」。",
+        "en": "「だ」 ends a sentence; it can't modify 「こと」."
+      },
+      {
+        "zh": "「の」用于名词，「残念」是な形容词，要用「な」。",
+        "en": "「の」 is for nouns; 「残念」 is a na-adjective and takes 「な」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l52-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson52#3"
+    ],
+    "difficulty": 2,
+    "stem": "驚いた（　）、10年ぶりに 会った 友人は、有名な 会社の 社長に なって いた。",
+    "options": [
+      "ことに",
+      "ものに",
+      "ように",
+      "ところに"
+    ],
+    "answer": 0,
+    "full": "驚いた ことに、10年ぶりに 会った 友人は、有名な 会社の 社長に なって いた。",
+    "tr": {
+      "zh": "令人吃惊的是，时隔10年见到的朋友已经当上了知名公司的社长。",
+      "en": "To my surprise, the friend I met after ten years had become president of a well-known company."
+    },
+    "why": {
+      "zh": "句首先表达说话人的感受“吃惊的是”，再说具体内容，用「驚いたことに」。",
+      "en": "The speaker states the feeling first, then what happened: 「驚いたことに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "没有「驚いたものに」这种说法，表示感受的固定形式是「ことに」。",
+        "en": "「驚いたものに」 isn't a pattern; the emotional lead-in is 「ことに」."
+      },
+      {
+        "zh": "「驚いたように」是“像吃惊了一样”，描写样子，不是说话人的评价，和后面接不上。",
+        "en": "「驚いたように」 describes someone looking surprised; it isn't the speaker's comment on the news."
+      },
+      {
+        "zh": "「ところに」是“正在……的时候（来了……）”，后面的内容不是在那个时间点发生的事。",
+        "en": "「ところに」 means \"just when…\"; the friend's job isn't an event that interrupted the surprise."
+      }
+    ]
+  },
+  {
+    "id": "n3-l52-009",
+    "type": "narabe",
+    "refs": [
+      "lesson52#3"
+    ],
+    "difficulty": 2,
+    "stem": "部長に [_] [_] [★] [_]、会議の 資料を 家に 忘れて きて しまった。",
+    "options": [
+      "ことに",
+      "説明する",
+      "困った",
+      "日なのに"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "部長に 説明する 日なのに 困った ことに、会議の 資料を 家に 忘れて きて しまった。",
+    "tr": {
+      "zh": "明明是要向部长汇报的日子，糟糕的是，我把会议资料忘在家里了。",
+      "en": "It was the day I had to brief the manager, and — annoyingly — I'd left the meeting papers at home."
+    },
+    "why": {
+      "zh": "部長に説明する＋日なのに（明明是……的日子），再接表示感受的「困ったことに」。★ 在第三格，是「困った」。",
+      "en": "部長に説明する ＋ 日なのに, then the emotional lead-in 「困ったことに」. The ★ is the third slot: 「困った」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l52-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson52#4"
+    ],
+    "difficulty": 1,
+    "stem": "この 薬は 6時間（　）飲んで ください。",
+    "options": [
+      "ごとに",
+      "たびに",
+      "うちに",
+      "までに"
+    ],
+    "answer": 0,
+    "full": "この 薬は 6時間ごとに 飲んで ください。",
+    "tr": {
+      "zh": "这个药请每6小时吃一次。",
+      "en": "Please take this medicine every six hours."
+    },
+    "why": {
+      "zh": "数量词后表示“每隔一定间隔”，用「ごとに」：「6時間ごとに」。",
+      "en": "After a time span, \"at intervals of\" is 「ごとに」: 「6時間ごとに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「たびに」接动词或「名词の」，表示“每次……都”，不能直接接「6時間」。",
+        "en": "「たびに」 follows a verb or 「noun の」 (\"every time\"); it can't attach to 「6時間」."
+      },
+      {
+        "zh": "「うちに」是“趁……的时候”，「6時間うちに」不成立。",
+        "en": "「うちに」 means \"while\"; 「6時間うちに」 isn't Japanese."
+      },
+      {
+        "zh": "「までに」是“在……之前”，“6小时之前吃”不是吃药的间隔，意思不通。",
+        "en": "「までに」 means \"by\"; it gives a deadline, not a dosing interval."
+      }
+    ]
+  },
+  {
+    "id": "n3-l52-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson52#4"
+    ],
+    "difficulty": 2,
+    "stem": "この 地域は、季節（　）違う 花が 咲くので、何度 来ても 楽しめる。",
+    "options": [
+      "ごとに",
+      "たびに",
+      "について",
+      "までに"
+    ],
+    "answer": 0,
+    "full": "この 地域は、季節ごとに 違う 花が 咲くので、何度 来ても 楽しめる。",
+    "tr": {
+      "zh": "这个地区每个季节开的花都不一样，来多少次都能玩得开心。",
+      "en": "This area has different flowers each season, so you can enjoy it however many times you come."
+    },
+    "why": {
+      "zh": "「季節ごとに」表示“每个季节（各自）”，强调每一个单位都不同。",
+      "en": "「季節ごとに」 means \"each season (in turn)\" — each unit differs."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「たびに」接名词要加「の」，而且表示“每次……都”，「季節たびに」不成立。",
+        "en": "「たびに」 needs 「の」 after a noun; 「季節たびに」 is ungrammatical."
+      },
+      {
+        "zh": "「について」是“关于”，“关于季节开不同的花”意思不通。",
+        "en": "「について」 means \"about\"; it doesn't fit."
+      },
+      {
+        "zh": "「までに」是“在……之前”，“季节之前开花”意思不通。",
+        "en": "「までに」 means \"by\"; it makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n3-l52-012",
+    "type": "narabe",
+    "refs": [
+      "lesson52#4"
+    ],
+    "difficulty": 1,
+    "stem": "この 電車は [_] [_] [★] [_]、都心まで 1時間も かかる。",
+    "options": [
+      "止まる",
+      "ので",
+      "小さな駅",
+      "ごとに"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "この 電車は 小さな 駅ごとに 止まるので、都心まで 1時間も かかる。",
+    "tr": {
+      "zh": "这趟电车每个小站都停，到市中心要花整整1个小时。",
+      "en": "This train stops at every little station, so it takes a whole hour to get downtown."
+    },
+    "why": {
+      "zh": "小さな駅＋ごとに（每个……）＋止まる＋ので（原因）。★ 在第三格，是「止まる」。",
+      "en": "小さな駅 ＋ ごとに ＋ 止まる ＋ ので (reason). The ★ is the third slot: 「止まる」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l52-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson52#5"
+    ],
+    "difficulty": 2,
+    "stem": "昨日 あんなに 大きな 失敗を したのに、彼は 何も なかった（　）、いつもどおり 笑顔で 出社した。",
+    "options": [
+      "かのように",
+      "かどうか",
+      "ことに",
+      "ばかりに"
+    ],
+    "answer": 0,
+    "full": "昨日 あんなに 大きな 失敗を したのに、彼は 何も なかったかの ように、いつもどおり 笑顔で 出社した。",
+    "tr": {
+      "zh": "昨天明明犯了那么大的错，他却像什么都没发生过一样，照常笑着来上班了。",
+      "en": "Despite that huge mistake yesterday, he came to work smiling as usual, as if nothing had happened."
+    },
+    "why": {
+      "zh": "实际上发生了大事，他却表现得“仿佛什么都没发生”，用「かのように」修饰后面的动作。",
+      "en": "Something big did happen, but he acts \"as if nothing had\" — 「かのように」 modifying how he came in."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「かどうか」是“是否”，后面要接「分からない」「知りたい」之类，不能修饰「出社した」。",
+        "en": "「かどうか」 (\"whether\") needs a verb like 分からない; it can't describe how he came in."
+      },
+      {
+        "zh": "「ことに」前接表示感情的词（驚いた、残念な），「何もなかったことに」后面不能接这样的叙述。",
+        "en": "「ことに」 follows an emotion word (驚いた, 残念な); 「何もなかった」 isn't one."
+      },
+      {
+        "zh": "「ばかりに」是“就因为……才（导致坏结果）”，“因为什么都没发生才笑着上班”和前文矛盾。",
+        "en": "「ばかりに」 (\"just because… [bad result]\") contradicts the mistake mentioned first."
+      }
+    ]
+  },
+  {
+    "id": "n3-l52-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson52#5"
+    ],
+    "difficulty": 2,
+    "stem": "10月なのに、まるで 夏が 戻って きた（　）天気だ。",
+    "options": [
+      "かのような",
+      "かのように",
+      "かのようで",
+      "かのようだ"
+    ],
+    "answer": 0,
+    "full": "10月なのに、まるで 夏が 戻って きたかの ような 天気だ。",
+    "tr": {
+      "zh": "明明已经10月了，天气却像夏天又回来了一样。",
+      "en": "It's October, yet the weather is as if summer had come back."
+    },
+    "why": {
+      "zh": "后面紧接名词「天気」，修饰名词要用「かのような」。",
+      "en": "A noun (天気) follows, so the adnominal form 「かのような」 is needed."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「かのように」是副词形式，修饰动词或形容词，不能直接修饰名词「天気」。",
+        "en": "「かのように」 is adverbial; it modifies verbs or adjectives, not the noun 「天気」."
+      },
+      {
+        "zh": "「かのようで」是中顿形式，后面要接另一个分句，不能直接接名词。",
+        "en": "「かのようで」 links to another clause; it can't modify a noun."
+      },
+      {
+        "zh": "「かのようだ」是句末形式，后面不能再接「天気」。",
+        "en": "「かのようだ」 ends a sentence; 「天気」 can't follow it."
+      }
+    ]
+  },
+  {
+    "id": "n3-l52-015",
+    "type": "narabe",
+    "refs": [
+      "lesson52#5"
+    ],
+    "difficulty": 2,
+    "stem": "昨日 あんなに けんかしたのに、彼は [_] [_] [★] [_] 話しかけて きた。",
+    "options": [
+      "かのように",
+      "何も",
+      "まるで",
+      "なかった"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "昨日 あんなに けんかしたのに、彼は まるで 何も なかったかの ように 話しかけて きた。",
+    "tr": {
+      "zh": "昨天明明吵得那么凶，他却像什么都没发生过一样来跟我搭话。",
+      "en": "We had such a fight yesterday, yet he started talking to me as if nothing had happened."
+    },
+    "why": {
+      "zh": "まるで＋何も＋なかった（普通形）＋かのように，修饰「話しかけてきた」。★ 在第三格，是「なかった」。",
+      "en": "まるで ＋ 何も ＋ なかった (plain form) ＋ かのように, modifying 「話しかけてきた」. The ★ is the third slot: 「なかった」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

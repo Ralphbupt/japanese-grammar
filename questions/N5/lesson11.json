@@ -1,0 +1,271 @@
+[
+  {
+    "id": "n5-l11-001",
+    "type": "bunpou",
+    "refs": ["lesson11#1"],
+    "difficulty": 1,
+    "stem": "わたしは まだ 漢字が あまり（　）。",
+    "options": ["読めません", "読まれません", "読みません", "読めれません"],
+    "answer": 0,
+    "full": "わたしは まだ 漢字が あまり 読めません。",
+    "tr": {
+      "zh": "我还不太会读汉字。",
+      "en": "I still can't read kanji very well."
+    },
+    "why": {
+      "zh": "「漢字が」用了「が」，说的是能力“会不会读”，要用可能形。一类动词 読む→読める，否定是「読めません」。",
+      "en": "「漢字が」 with 「が」 and the sense \"can't yet\" call for the potential form. Group 1 読む→読める, negative 「読めません」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「読まれる」是受身形（被读），“我被汉字读”不成立。",
+        "en": "「読まれる」 is the passive (\"be read\"); it makes no sense with \"I\" as the subject here."
+      },
+      {
+        "zh": "普通动词「読む」的对象要用「を」，不能用「が」；而且这里说的是“会不会”，不是“读不读”。",
+        "en": "Plain 「読む」 takes 「を」, not 「が」, and the sentence is about ability, not habit."
+      },
+      {
+        "zh": "一类动词可能形是う段→え段＋る：読める。「読めれる」是多加了「れ」的错误形式。",
+        "en": "A Group 1 potential is う-row → え-row + る: 読める. 「読めれる」 adds an extra 「れ」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l11-002",
+    "type": "bunpou",
+    "refs": ["lesson11#1"],
+    "difficulty": 1,
+    "stem": "A「スキーが（　）か。」\nB「いいえ、一度も した ことが ありません。」",
+    "options": ["できます", "されます", "すれます", "しられます"],
+    "answer": 0,
+    "full": "A「スキーが できますか。」 B「いいえ、一度も した ことが ありません。」",
+    "tr": {
+      "zh": "A：你会滑雪吗？ B：不会，一次都没滑过。",
+      "en": "A: Can you ski? B: No, I've never done it even once."
+    },
+    "why": {
+      "zh": "问的是“会不会滑雪”，用可能形。「する」的可能形是特殊的「できる」。",
+      "en": "A asks whether B can ski, so the potential form. The potential of 「する」 is the irregular 「できる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「される」是「する」的受身形（被做），不能表示“会做”。",
+        "en": "「される」 is the passive of 「する」 (\"be done\"), not \"can do\"."
+      },
+      {
+        "zh": "「する」是不规则动词，没有「すれる」这个形式。",
+        "en": "「する」 is irregular; 「すれる」 isn't a form."
+      },
+      {
+        "zh": "「する」的可能形不是加「られる」，而是「できる」。",
+        "en": "「する」 doesn't take 「られる」 for the potential; it becomes 「できる」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l11-003",
+    "type": "bunpou",
+    "refs": ["lesson11#1"],
+    "difficulty": 2,
+    "stem": "となりの 部屋から ピアノの 音が（　）。うるさくて 寝られません。",
+    "options": ["聞こえます", "聞けます", "聞きます", "聞かれます"],
+    "answer": 0,
+    "full": "となりの 部屋から ピアノの 音が 聞こえます。うるさくて 寝られません。",
+    "tr": {
+      "zh": "从隔壁房间传来钢琴声。太吵了，睡不着。",
+      "en": "I can hear the piano from the next room. It's so noisy I can't sleep."
+    },
+    "why": {
+      "zh": "声音是自己传进耳朵的，不是我想去听，用「聞こえる」（听得见）。",
+      "en": "The sound reaches me whether I want it or not, so 「聞こえる」 (be audible)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「聞ける」是有条件、有机会主动去听，用于“能听音乐”这类场合，不适合不想听却传来的噪音。",
+        "en": "「聞ける」 means having the chance to listen on purpose; it doesn't fit noise you don't want."
+      },
+      {
+        "zh": "「聞く」是主动去听，对象用「を」；这里「音が」是自然传来的声音。",
+        "en": "「聞く」 is listening on purpose and takes 「を」; here 「音が」 is a sound that just reaches you."
+      },
+      {
+        "zh": "「聞かれる」是受身形（被听、被问），意思不通。",
+        "en": "「聞かれる」 is the passive (\"be heard / be asked\"), which doesn't make sense here."
+      }
+    ]
+  },
+  {
+    "id": "n5-l11-004",
+    "type": "narabe",
+    "refs": ["lesson11#1"],
+    "difficulty": 2,
+    "stem": "すみません、この 店で [_] [_] [★] [_] か。",
+    "options": ["ます", "が", "使え", "カード"],
+    "order": [3, 1, 2, 0],
+    "full": "すみません、この 店で カードが 使えますか。",
+    "tr": {
+      "zh": "不好意思，这家店能刷卡吗？",
+      "en": "Excuse me, can I use a card in this shop?"
+    },
+    "why": {
+      "zh": "可能形的对象用「が」：カードが＋使える（使う的可能形）＋ます＋か。★ 在第三格，是「使え」。",
+      "en": "The potential form takes 「が」: カードが ＋ 使える (potential of 使う) ＋ ます ＋ か. The ★ is the third slot: 「使え」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n5-l11-005",
+    "type": "bunpou",
+    "refs": ["lesson11#2"],
+    "difficulty": 1,
+    "stem": "テストが よく できたので、先生に（　）。うれしかったです。",
+    "options": ["ほめられました", "ほめました", "ほめれました", "ほめて いました"],
+    "answer": 0,
+    "full": "テストが よく できたので、先生に ほめられました。うれしかったです。",
+    "tr": {
+      "zh": "因为考得好，被老师表扬了。很高兴。",
+      "en": "I did well on the test, so the teacher praised me. I was happy."
+    },
+    "why": {
+      "zh": "「先生に」是动作的发出者，我是承受者，用直接被动「AはBに＋受身形」。二类动词 ほめる→ほめられる。",
+      "en": "「先生に」 marks who did it and \"I\" am on the receiving end: the direct passive 「AはBに＋受身形」. Group 2 ほめる→ほめられる."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ほめました」是主动态，“我表扬了”的对象不能用「先生に」。",
+        "en": "「ほめました」 is active; \"I praised\" can't take 「先生に」 as its object."
+      },
+      {
+        "zh": "「ほめれる」是口语的ら抜き可能形（能表扬），不是被动。",
+        "en": "「ほめれる」 is the colloquial ら-dropped potential (\"can praise\"), not the passive."
+      },
+      {
+        "zh": "「ほめていました」是“（我）一直在表扬”，主动态，和「先生に」接不上。",
+        "en": "「ほめていました」 is active (\"was praising\") and doesn't fit 「先生に」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l11-006",
+    "type": "bunpou",
+    "refs": ["lesson11#2"],
+    "difficulty": 2,
+    "stem": "電車の 中で だれかに 足を（　）、痛かったです。",
+    "options": ["踏まれて", "踏んで", "踏めて", "踏まって"],
+    "answer": 0,
+    "full": "電車の 中で だれかに 足を 踏まれて、痛かったです。",
+    "tr": {
+      "zh": "在电车里脚被人踩了，好疼。",
+      "en": "Someone stepped on my foot on the train, and it hurt."
+    },
+    "why": {
+      "zh": "我的脚被别人踩：所有者“我”做主语，所有物「足を」，动作者「だれかに」，用受身形。一类 踏む→踏まれる。",
+      "en": "My foot was stepped on: the owner (\"I\") is the subject, 「足を」 the thing affected, 「だれかに」 the doer — the passive. Group 1 踏む→踏まれる."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「踏んで」是主动“踩”，和「だれかに」（被某人）接不上。",
+        "en": "「踏んで」 is active (\"I stepped\"), which clashes with 「だれかに」 (by someone)."
+      },
+      {
+        "zh": "「踏める」是可能形（能踩），意思不通。",
+        "en": "「踏める」 is the potential (\"can step\"), which makes no sense here."
+      },
+      {
+        "zh": "一类动词受身形是う段→あ段＋れる：踏まれる。「踏まって」不是正确变形。",
+        "en": "A Group 1 passive is う-row → あ-row + れる: 踏まれる. 「踏まって」 isn't a form."
+      }
+    ]
+  },
+  {
+    "id": "n5-l11-007",
+    "type": "bunpou",
+    "refs": ["lesson11#2"],
+    "difficulty": 2,
+    "stem": "かさが なかったので、駅から 帰る とき 雨に（　）、たいへんでした。",
+    "options": ["降られて", "降って", "降れて", "降らないで"],
+    "answer": 0,
+    "full": "かさが なかったので、駅から 帰る とき 雨に 降られて、たいへんでした。",
+    "tr": {
+      "zh": "因为没带伞，从车站回家时被雨淋了，真够呛。",
+      "en": "I didn't have an umbrella, so I got caught in the rain on the way home from the station. It was awful."
+    },
+    "why": {
+      "zh": "「雨に」＋受身形是间接被动（迷惑の受身）：下雨这件事让我很困扰。降る→降られる。",
+      "en": "「雨に」 ＋ passive is the nuisance passive: the rain falling caused me trouble. 降る→降られる."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「雨が降って」才是主动说法；用了「雨に」就必须接受身形。",
+        "en": "The active version would be 「雨が降って」; with 「雨に」 the verb must be passive."
+      },
+      {
+        "zh": "「降れる」是可能形（能下），意思不通。",
+        "en": "「降れる」 is the potential (\"can fall\"), which makes no sense."
+      },
+      {
+        "zh": "「降らないで」是“没下雨”，和「たいへんでした」矛盾，也和「雨に」接不上。",
+        "en": "「降らないで」 means \"without raining\", contradicting 「たいへんでした」 and clashing with 「雨に」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l11-008",
+    "type": "narabe",
+    "refs": ["lesson11#2"],
+    "difficulty": 2,
+    "stem": "この 本は [_] [_] [★] [_] います。",
+    "options": ["に", "読まれて", "たくさんの", "人"],
+    "order": [2, 3, 0, 1],
+    "full": "この 本は たくさんの 人に 読まれて います。",
+    "tr": {
+      "zh": "这本书被很多人读着。",
+      "en": "This book is read by a lot of people."
+    },
+    "why": {
+      "zh": "直接被动「AはBに＋受身形」：この本は＋たくさんの人に＋読まれています。★ 在第三格，是「に」。",
+      "en": "Direct passive 「AはBに＋受身形」: この本は ＋ たくさんの人に ＋ 読まれています. The ★ is the third slot: 「に」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n5-l11-009",
+    "type": "bunpou",
+    "refs": ["lesson11#3", "lesson11#2"],
+    "difficulty": 3,
+    "stem": "A「どう したんですか。」\nB「弟に パソコンを（　）んです。」",
+    "options": ["こわされた", "こわせた", "こわした", "こわれた"],
+    "answer": 0,
+    "full": "A「どう したんですか。」 B「弟に パソコンを こわされたんです。」",
+    "tr": {
+      "zh": "A：怎么了？ B：电脑被弟弟弄坏了。",
+      "en": "A: What's wrong? B: My little brother broke my computer."
+    },
+    "why": {
+      "zh": "「弟に」是动作者，「パソコンを」是我的东西，我受害：所有者被动。「こわす」的受身形是 う段→あ段＋れる：こわされる。",
+      "en": "「弟に」 is the doer and 「パソコンを」 my thing — I'm the victim: the possessor passive. 「こわす」 becomes こわされる (う-row → あ-row + れる)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「こわせる」是可能形（能弄坏），一类动词可能形是え段，受身形才是あ段；和「弟に」也接不上。",
+        "en": "「こわせる」 is the potential (え-row); the passive uses the あ-row. It also clashes with 「弟に」."
+      },
+      {
+        "zh": "「こわした」是主动“（我）弄坏了”，不能和「弟に」（被弟弟）一起用。",
+        "en": "「こわした」 is active (\"I broke it\") and can't go with 「弟に」 (by my brother)."
+      },
+      {
+        "zh": "「こわれる」是自动词“坏了”，前面不能用「を」。",
+        "en": "「こわれる」 is intransitive (\"break\"), so it can't take 「を」."
+      }
+    ]
+  }
+]

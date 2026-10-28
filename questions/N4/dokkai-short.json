@@ -1,0 +1,299 @@
+[
+  {
+    "id": "n4-dk-201",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "図書館の 入口に、この お知らせが はって あります。",
+    "passage": "市立図書館からの お知らせ\n\n図書館は 建物の 工事の ため、3月1日（月）から 3月14日（日）まで 休みます。\nこの 間に 本を 返したい 人は、入口の 横に ある 返却ポストに 入れて ください。\nただし、CDと DVDは こわれやすいので、ポストには 入れないで ください。3月15日 からは カウンターで 返す ことが できます。",
+    "tr": {
+      "zh": "市立图书馆通知：图书馆因大楼施工，3月1日（周一）至3月14日（周日）闭馆。这期间想还书的人，请投入入口旁边的还书箱。但是CD和DVD容易损坏，请不要投入还书箱。从3月15日起可以在柜台归还。",
+      "en": "Notice from the City Library: Because of building work, the library will be closed from Monday 1 March to Sunday 14 March. If you want to return books during this time, please put them in the return box next to the entrance. However, CDs and DVDs break easily, so please don't put them in the box. From 15 March you can return them at the counter."
+    },
+    "questions": [
+      {
+        "q": "3月10日に 本と CDを 返したい 人は どう しますか。",
+        "options": [
+          "本は ポストに 入れて、CDは 15日 から カウンターで 返す",
+          "本も CDも ポストに 入れる",
+          "本も CDも 10日に カウンターで 返す",
+          "本は 15日 から カウンターで 返して、CDは ポストに 入れる"
+        ],
+        "answer": 0,
+        "why": { "zh": "闭馆期间书可以投还书箱；CD「ポストには 入れないで」，要等15日以后到柜台还。", "en": "During the closure books go in the return box; CDs must not (「ポストには 入れないで」) and are returned at the counter from the 15th." },
+        "wrong": [
+          null,
+          { "zh": "CD容易坏，通知说「ポストには 入れないで ください」。", "en": "CDs break easily — the notice says not to put them in the box." },
+          { "zh": "10日图书馆在闭馆（1日～14日），柜台不能用。", "en": "On the 10th the library is closed (1st–14th), so there's no counter." },
+          { "zh": "反了：能投还书箱的是书，CD不能投。", "en": "Backwards: books may go in the box, CDs may not." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-202",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "田中さんの 会社の パソコンに、鈴木さんから メールが 来ました。",
+    "passage": "田中さん\n\nあしたの 会議ですが、部長が 午前中 病院へ 行く ことに なったので、10時からではなく、午後 2時からに なりました。場所は 同じ 3階の 会議室です。\nそれから、会議で 使う 資料は もう コピーして あるので、田中さんは コピーしなくても いいです。会議の 前に 一度 読んで おいて ください。\n\n鈴木",
+    "tr": {
+      "zh": "田中：明天的会议，因为部长上午要去医院，所以不是从10点开始，改为下午2点开始。地点还是三楼的会议室。另外，会议要用的资料已经复印好了，田中你不用复印。请在开会前先看一遍。铃木",
+      "en": "Tanaka — About tomorrow's meeting: the manager has to go to the hospital in the morning, so it will start at 2 p.m. instead of 10. It's in the same third-floor meeting room. Also, the handouts for the meeting have already been copied, so you don't need to copy them. Please read them through once before the meeting. — Suzuki"
+    },
+    "questions": [
+      {
+        "q": "田中さんは 会議の 前に 何を しなければ なりませんか。",
+        "options": [
+          "資料を 読んで おく",
+          "資料を コピーして おく",
+          "10時に 会議室へ 行く",
+          "部長に 時間を 聞く"
+        ],
+        "answer": 0,
+        "why": { "zh": "邮件最后请他「会議の 前に 一度 読んで おいて ください」。", "en": "The email ends by asking him to read the handouts before the meeting." },
+        "wrong": [
+          null,
+          { "zh": "资料「もう コピーして ある」，田中「コピーしなくても いい」。", "en": "The handouts are already copied; he 「コピーしなくても いい」." },
+          { "zh": "会议改到下午2点，不是10点了。", "en": "The meeting moved to 2 p.m., not 10." },
+          { "zh": "时间邮件里已经写了（下午2点），没有让他去问部长。", "en": "The email already gives the time (2 p.m.); he isn't asked to check with the manager." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-203",
+    "type": "short",
+    "difficulty": 3,
+    "intro": "ケンさんが 学校から 帰ると、テーブルの 上に お姉さんの メモが ありました。",
+    "passage": "ケンへ\n\n午後、お母さんから 荷物が 届く ことに なって いるけど、わたしは 3時から アルバイトなので、受け取れません。\nもし 荷物が 来た とき 家に だれも いなかったら、ポストに 紙が 入って いるはずだから、その 紙に 書いて ある 番号に 電話して、夜 7時より あとに もう一度 持って 来て もらって。\n\n姉より",
+    "tr": {
+      "zh": "致健：下午妈妈寄的包裹会送到，但我3点开始打工，没法收。如果包裹送来时家里没人，信箱里应该会有一张纸条，你就打纸条上写的号码，让他们晚上7点以后再送一次。姐姐",
+      "en": "Ken — A parcel from Mum is supposed to arrive this afternoon, but I've got my part-time job from 3, so I can't take it. If nobody's home when it comes, there should be a slip in the letterbox; call the number on it and have them bring it again after 7 p.m. — your sister"
+    },
+    "questions": [
+      {
+        "q": "ケンさんが 帰った とき、ポストに 紙が 入って いました。ケンさんは 何を しますか。",
+        "options": [
+          "紙の 番号に 電話して、7時より あとに 持って 来て もらう",
+          "お母さんに 電話して、もう一度 送って もらう",
+          "姉が アルバイトから 帰るまで 何も しない",
+          "紙の 番号に 電話して、すぐ 持って 来て もらう"
+        ],
+        "answer": 0,
+        "why": { "zh": "纸条说明包裹没送到；便条让他打纸上的号码，请对方「夜 7時より あとに」再送。", "en": "The slip means the parcel was missed; the note says call the number on it and have it redelivered after 7 p.m." },
+        "wrong": [
+          null,
+          { "zh": "要打的是「紙に 書いて ある 番号」，不是给妈妈打电话。", "en": "He should call the number on the slip, not his mother." },
+          { "zh": "姐姐要他自己打电话安排再送，不是等她回来。", "en": "His sister asks him to call and arrange it himself, not wait for her." },
+          { "zh": "时间不对：便条说的是晚上7点以后，不是马上。", "en": "Wrong time: the note says after 7 p.m., not right away." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-204",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "わたしは 前は 毎朝 遅くまで 寝て いました。でも、去年から 朝 6時に 起きる ように して います。\n去年の 春、犬を 飼い始めました。犬は 朝 早く 散歩に 行きたがるので、わたしも 起きなければ なりません。最初は 大変でしたが、今は 朝の 静かな 町を 歩くのが 好きに なりました。",
+    "tr": {
+      "zh": "我以前每天早上都睡到很晚。但是从去年开始，我尽量早上6点起床。去年春天我开始养狗。狗早上很早就想去散步，所以我也必须起床。一开始很辛苦，不过现在我喜欢上了在清晨安静的街上散步。",
+      "en": "I used to sleep late every morning. But since last year I've been making a point of getting up at six. Last spring I started keeping a dog. The dog wants to go for a walk early in the morning, so I have to get up too. It was hard at first, but now I've come to love walking through the quiet town in the morning."
+    },
+    "questions": [
+      {
+        "q": "この 人が 朝 早く 起きる ように なったのは どうしてですか。",
+        "options": [
+          "犬を 散歩に 連れて 行かなければ ならないから",
+          "朝の 静かな 町を 歩くのが 好きだったから",
+          "朝 早く 起きるのが 好きに なったから",
+          "犬が 朝 早く 起こして くれるから"
+        ],
+        "answer": 0,
+        "why": { "zh": "「犬は 朝 早く 散歩に 行きたがるので、わたしも 起きなければ なりません」——是为了遛狗。", "en": "「犬は 朝 早く 散歩に 行きたがるので、わたしも 起きなければ なりません」 — it's to walk the dog." },
+        "wrong": [
+          null,
+          { "zh": "喜欢清晨散步是早起以后才「好きに なりました」的，不是原因。", "en": "She only came to like the morning walks later (「好きに なりました」); it isn't the reason." },
+          { "zh": "文中喜欢上的是在安静的街上散步，不是早起本身，而且这是之后的变化。", "en": "What she came to like is the walk, not getting up early, and that came afterwards." },
+          { "zh": "文中说狗想去散步，并没有说狗把她叫醒。", "en": "The dog wants a walk; the text doesn't say it wakes her up." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-205",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "マンションの エレベーターの 中に、この お知らせが はって あります。",
+    "passage": "マンションに 住んで いる みなさんへ\n\n来週から ごみを 出す 日が 変わります。\n燃える ごみ： 月曜日と 木曜日（今までは 火曜日と 金曜日）\nびん・缶： 水曜日（変わりません）\nごみは その 日の 朝 8時までに 出して ください。前の 日の 夜に 出すと、カラスが 来て 道が 汚く なるので、やめて ください。\n\n管理人",
+    "tr": {
+      "zh": "致公寓的各位住户：从下周起倒垃圾的日子有变化。可燃垃圾：周一和周四（以前是周二和周五）。瓶、罐：周三（不变）。垃圾请在当天早上8点之前扔。前一天晚上扔的话，乌鸦会来把路弄脏，所以请不要这样做。管理员",
+      "en": "To all residents: From next week, the rubbish collection days are changing. Burnable rubbish: Monday and Thursday (until now, Tuesday and Friday). Bottles and cans: Wednesday (no change). Please put rubbish out by 8 a.m. on the day. If you put it out the night before, crows come and make the street dirty, so please don't. — The building manager"
+    },
+    "questions": [
+      {
+        "q": "来週、燃える ごみは いつ 出しますか。",
+        "options": [
+          "月曜日か 木曜日の 朝 8時までに",
+          "火曜日か 金曜日の 朝 8時までに",
+          "日曜日か 水曜日の 夜に",
+          "水曜日の 朝 8時までに"
+        ],
+        "answer": 0,
+        "why": { "zh": "可燃垃圾下周起改为周一和周四，要在「その 日の 朝 8時までに」扔。", "en": "From next week burnable rubbish is Monday and Thursday, out by 8 a.m. on the day." },
+        "wrong": [
+          null,
+          { "zh": "周二和周五是「今まで」的日子，下周起改了。", "en": "Tuesday and Friday were the old days (「今まで」); they're changing." },
+          { "zh": "周日、周三晚上就是“前一天晚上”，通知说「やめて ください」。", "en": "Sunday or Wednesday night is 'the night before', which the notice asks people not to do." },
+          { "zh": "周三是扔瓶和罐的日子。", "en": "Wednesday is for bottles and cans." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-206",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "リンさんに 友だちの まりさんから メールが 来ました。",
+    "passage": "リンさん\n\n来週の 土曜日に うちで パーティーを します。よかったら 来ませんか。\n料理は わたしが 作るので、何も 持って 来なくて いいです。ただ、飲み物が 足りないかもしれないので、好きな 飲み物を 一本 持って 来て くれると うれしいです。\n来られるか どうか、木曜日までに 返事を ください。\n\nまり",
+    "tr": {
+      "zh": "林：下周六我在家开派对。方便的话要不要来？菜我来做，所以什么都不用带。只是饮料可能不够，如果你能带一瓶喜欢的饮料来，我会很高兴。能不能来，请在星期四之前回复我。真理",
+      "en": "Lin — I'm having a party at my place next Saturday. Would you like to come? I'll do the cooking, so you don't need to bring anything. The only thing is we might not have enough to drink, so I'd be glad if you could bring a bottle of something you like. Please let me know by Thursday whether you can come. — Mari"
+    },
+    "questions": [
+      {
+        "q": "リンさんが パーティーに 行く 場合、どう すれば いいですか。",
+        "options": [
+          "木曜日までに 返事を して、飲み物を 持って 行く",
+          "木曜日までに 返事を して、料理を 作って 持って 行く",
+          "土曜日に 返事を して、飲み物を 持って 行く",
+          "返事は しないで、料理と 飲み物を 持って 行く"
+        ],
+        "answer": 0,
+        "why": { "zh": "回复期限是「木曜日までに」，并请她带「好きな 飲み物を 一本」。", "en": "The reply is due 「木曜日までに」, and Mari asks for a bottle of something to drink." },
+        "wrong": [
+          null,
+          { "zh": "菜由真理来做（「料理は わたしが 作る」），不用带菜。", "en": "Mari is cooking (「料理は わたしが 作る」), so no food is needed." },
+          { "zh": "回复要在星期四之前，周六就是派对当天，太晚了。", "en": "The reply is due by Thursday; Saturday is the party itself." },
+          { "zh": "真理要求「木曜日までに 返事を ください」，而且菜不用带。", "en": "Mari asks for a reply by Thursday, and food isn't needed." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-207",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "最近、電車の 中で 本を 読んで いる 人が 少なく なりました。ほとんどの 人が スマホを 見て います。スマホでも 本や ニュースが 読めるので、悪い ことでは ないと 思います。\nでも、わたしは やっぱり 紙の 本が 好きです。紙の 本は 目が 疲れにくいし、どこまで 読んだか すぐ 分かるからです。",
+    "tr": {
+      "zh": "最近，在电车上看书的人变少了，大部分人都在看手机。手机上也能看书、看新闻，所以我觉得这不是坏事。但是，我还是喜欢纸质书。因为纸质书看了眼睛不容易累，而且马上就能知道读到哪儿了。",
+      "en": "These days fewer people read books on the train; most are looking at their phones. You can read books and news on a phone too, so I don't think it's a bad thing. But I still prefer paper books, because they're easier on the eyes and you can see at once how far you've read."
+    },
+    "questions": [
+      {
+        "q": "この 人は どう 思って いますか。",
+        "options": [
+          "スマホを 見るのは 悪くないが、自分は 紙の 本の ほうが 好きだ",
+          "電車の 中で スマホを 見るのは やめた ほうが いい",
+          "紙の 本は 目が 疲れやすいので、スマホの ほうが いい",
+          "電車で 本を 読む 人が 少なく なったのは 悪い ことだ"
+        ],
+        "answer": 0,
+        "why": { "zh": "作者说看手机「悪い ことでは ない」，但自己「やっぱり 紙の 本が 好きです」。", "en": "The writer says phones are 「悪い ことでは ない」 but still prefers paper books." },
+        "wrong": [
+          null,
+          { "zh": "作者认为看手机不是坏事，没有说应该停止。", "en": "The writer doesn't think phones are bad, let alone that people should stop." },
+          { "zh": "文中说纸质书「目が 疲れにくい」（不容易累），正好相反。", "en": "The text says paper books are 「疲れにくい」 — the opposite." },
+          { "zh": "作者说「悪い ことでは ないと 思います」。", "en": "The writer says 「悪い ことでは ないと 思います」." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-208",
+    "type": "short",
+    "difficulty": 1,
+    "intro": "アルバイトを して いる 店に、店長の メモが はって ありました。",
+    "passage": "アルバイトの みなさんへ\n\n来週の 月曜日は お店が 休みですが、店の 中の 大そうじを します。来られる 人は 朝 10時に 店に 来て ください。お昼ごはんは 店で 用意します。\n来られない 人は、金曜日までに わたしに 言って ください。\nそうじが 終わったら、2時ごろ 帰って いいです。\n\n店長",
+    "tr": {
+      "zh": "致各位兼职员工：下周一店里休息，但要进行店内大扫除。能来的人请早上10点到店里。午饭由店里准备。不能来的人请在星期五之前告诉我。打扫完以后，2点左右就可以回去了。店长",
+      "en": "To all part-time staff: The shop is closed next Monday, but we'll be giving the inside a big clean. If you can come, please be at the shop at 10 a.m. Lunch will be provided. If you can't come, please tell me by Friday. Once the cleaning is done, you can go home at around two. — The manager"
+    },
+    "questions": [
+      {
+        "q": "月曜日に 来られない 人は どう しなければ なりませんか。",
+        "options": [
+          "金曜日までに 店長に 言う",
+          "月曜日の 朝 10時までに 店長に 電話する",
+          "ほかの 日に 一人で そうじを する",
+          "2時ごろ 店に 来る"
+        ],
+        "answer": 0,
+        "why": { "zh": "便条写着「来られない 人は、金曜日までに わたしに 言って ください」。", "en": "The note says those who can't come should tell the manager by Friday." },
+        "wrong": [
+          null,
+          { "zh": "期限是星期五之前，不是星期一当天早上。", "en": "The deadline is Friday, not Monday morning." },
+          { "zh": "便条里没有要求不能来的人另找时间打扫。", "en": "The note doesn't ask anyone to clean on another day." },
+          { "zh": "2点左右是打扫完可以回去的时间，不是来店的时间。", "en": "Around two is when people can go home, not when to come in." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-209",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "わたしの 祖母は 80歳です。祖母は 電話が 苦手で、前は いつも 手紙を 送って くれました。\nでも、去年 わたしが スマホの 使い方を 教えてから、毎日 写真を 送って くれる ように なりました。手紙は あまり 来なく なりましたが、祖母の 元気な 顔が 毎日 見られるので、わたしは うれしいです。",
+    "tr": {
+      "zh": "我奶奶80岁了。奶奶不擅长打电话，以前总是给我寄信。但是去年我教会她用智能手机以后，她每天都会给我发照片了。信虽然不怎么来了，但我每天都能看到奶奶精神的样子，所以很高兴。",
+      "en": "My grandmother is 80. She doesn't like the phone, so she always used to send me letters. But since I taught her how to use a smartphone last year, she's started sending me photos every day. The letters have mostly stopped, but I'm happy because I get to see her healthy, smiling face every day."
+    },
+    "questions": [
+      {
+        "q": "祖母は 去年から どう 変わりましたか。",
+        "options": [
+          "毎日 スマホで 写真を 送る ように なった",
+          "前より たくさん 手紙を 書く ように なった",
+          "よく 電話を かける ように なった",
+          "スマホの 使い方を 人に 教える ように なった"
+        ],
+        "answer": 0,
+        "why": { "zh": "学会用手机以后，「毎日 写真を 送って くれる ように なりました」。", "en": "After learning the smartphone, 「毎日 写真を 送って くれる ように なりました」." },
+        "wrong": [
+          null,
+          { "zh": "文中说「手紙は あまり 来なく なりました」，信变少了。", "en": "「手紙は あまり 来なく なりました」 — the letters decreased." },
+          { "zh": "奶奶「電話が 苦手」，文中没说她开始常打电话，变化的是发照片。", "en": "She's 「電話が 苦手」; the change is the photos, not phone calls." },
+          { "zh": "教手机用法的是“我”，奶奶是学的一方。", "en": "The writer taught her; the grandmother was the learner." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dk-210",
+    "type": "short",
+    "difficulty": 3,
+    "intro": "日本語学校で、学生に この お知らせが 配られました。",
+    "passage": "学生の みなさんへ\n\n5月20日（金）に 遠足で 動物園へ 行きます。朝 9時に 学校に 集まって ください。\n雨が 降ったら、遠足は 27日（金）に なります。その 日も 雨の 場合は、遠足は 中止です。ふつうの 授業を します。\n雨で 遠足が 変わる ときは、その 日の 朝 7時に 学校の ホームページで お知らせします。",
+    "tr": {
+      "zh": "致各位学生：5月20日（周五）我们去动物园郊游。请早上9点在学校集合。如果下雨，郊游改到27日（周五）。如果那天也下雨，郊游就取消，照常上课。因下雨而变更郊游时，会在当天早上7点在学校网站上通知。",
+      "en": "To all students: On Friday 20 May we're going on a trip to the zoo. Please meet at the school at 9 a.m. If it rains, the trip will move to Friday the 27th. If it rains that day too, the trip is cancelled and there will be normal classes. If rain changes the plan, we'll announce it on the school website at 7 a.m. that day."
+    },
+    "questions": [
+      {
+        "q": "20日も 27日も 雨が 降りました。学生は 27日に 何を しますか。",
+        "options": [
+          "学校で ふつうの 授業を 受ける",
+          "雨でも 動物園へ 行く",
+          "学校が 休みなので、家に いる",
+          "次の 週の 金曜日に 遠足に 行く 準備を する"
+        ],
+        "answer": 0,
+        "why": { "zh": "27日也下雨的话「遠足は 中止です。ふつうの 授業を します」。", "en": "If it rains on the 27th too, the trip is cancelled and there are normal classes." },
+        "wrong": [
+          null,
+          { "zh": "27日也下雨，郊游就取消了，不去动物园。", "en": "Rain on the 27th cancels the trip; nobody goes to the zoo." },
+          { "zh": "通知说要「ふつうの 授業を します」，不是放假。", "en": "The notice says there will be normal classes, not a day off." },
+          { "zh": "第二次下雨就「中止」，通知里没有再延期的说法。", "en": "After the second rain it's cancelled; there's no further postponement." }
+        ]
+      }
+    ]
+  }
+]

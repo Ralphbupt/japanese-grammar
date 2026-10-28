@@ -1,0 +1,582 @@
+[
+  {
+    "id": "n2-l66-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#1"
+    ],
+    "difficulty": 1,
+    "stem": "大方の予想（　）、無名の新人選手が優勝した。",
+    "options": [
+      "に反して",
+      "に応じて",
+      "にしたがって",
+      "につれて"
+    ],
+    "answer": 0,
+    "full": "大方の予想に反して、無名の新人選手が優勝した。",
+    "tr": {
+      "zh": "与大多数人的预测相反，一名无名新人选手夺得了冠军。",
+      "en": "Contrary to most people's predictions, an unknown rookie won the championship."
+    },
+    "why": {
+      "zh": "“无名新人夺冠”是和预测相反的结果，「予想に反して」＝与预想相反。",
+      "en": "An unknown rookie winning is the opposite of what was predicted — 「予想に反して」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に応じて」是“根据……相应地”，“根据预测夺冠”说不通。",
+        "en": "「に応じて」 means \"in line with/depending on\"; winning \"in line with predictions\" contradicts 「無名の新人」."
+      },
+      {
+        "zh": "「にしたがって」是“按照……/随着……”，“按照预测无名新人夺冠”和意外的语气不符。",
+        "en": "「にしたがって」 means \"in accordance with\"; an unknown rookie winning is not what was predicted."
+      },
+      {
+        "zh": "「につれて」是“随着……变化”，「予想」不是持续变化的事物。",
+        "en": "「につれて」 means \"as… changes\"; a prediction isn't a changing quantity."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#1"
+    ],
+    "difficulty": 2,
+    "stem": "会社の規則（　）行為をした社員は、処分の対象となる。",
+    "options": [
+      "に反した",
+      "に反して",
+      "に沿った",
+      "に応じた"
+    ],
+    "answer": 0,
+    "full": "会社の規則に反した行為をした社員は、処分の対象となる。",
+    "tr": {
+      "zh": "做出违反公司规定行为的员工将受到处分。",
+      "en": "Employees who act against company rules are subject to disciplinary action."
+    },
+    "why": {
+      "zh": "后面直接接名词「行為」，要用修饰名词的形式「に反した」（违反……的）；而且会受处分，说明是违反规定。",
+      "en": "The blank directly modifies the noun 「行為」, so the noun-modifying 「に反した」 is needed — and punishment means the rules were broken."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に反して」是连接后句的形式，不能直接修饰名词「行為」。",
+        "en": "「に反して」 links to a following clause; it can't directly modify the noun 「行為」."
+      },
+      {
+        "zh": "「に沿った」是“遵循……的”，遵守规定的行为不会受处分，前后矛盾。",
+        "en": "「に沿った」 means \"following\" the rules — such behaviour wouldn't be punished."
+      },
+      {
+        "zh": "「に応じた」是“与……相应的”，“与规定相应的行为受处分”说不通。",
+        "en": "「に応じた」 means \"appropriate to\"; acting appropriately to the rules wouldn't be punished."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-003",
+    "type": "narabe",
+    "refs": [
+      "lesson66#1"
+    ],
+    "difficulty": 2,
+    "stem": "父は私に医者になってほしかったようだが、私は [_] [★] [_] [_] 道を選んだ。",
+    "options": [
+      "音楽の",
+      "反して",
+      "期待に",
+      "父の"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "父は私に医者になってほしかったようだが、私は父の期待に反して音楽の道を選んだ。",
+    "tr": {
+      "zh": "父亲似乎希望我当医生，但我违背了父亲的期望，选择了音乐之路。",
+      "en": "My father seems to have wanted me to become a doctor, but against his expectations I chose a career in music."
+    },
+    "why": {
+      "zh": "父の＋期待に＋反して（违背期望）＋音楽の＋道を選んだ。★ 在第二格，是「期待に」。",
+      "en": "父の ＋ 期待に ＋ 反して (against) ＋ 音楽の ＋ 道を選んだ. The ★ is the second slot: 「期待に」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l66-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#2"
+    ],
+    "difficulty": 2,
+    "stem": "大企業が過去最高の利益を上げている（　）、中小企業の多くは厳しい経営が続いている。",
+    "options": [
+      "一方で",
+      "ばかりか",
+      "につれて",
+      "にしたがって"
+    ],
+    "answer": 0,
+    "full": "大企業が過去最高の利益を上げている一方で、中小企業の多くは厳しい経営が続いている。",
+    "tr": {
+      "zh": "大企业创下历史最高利润的同时，许多中小企业的经营却依然艰难。",
+      "en": "While big companies are posting record profits, many small and medium-sized firms are still struggling."
+    },
+    "why": {
+      "zh": "前后主语不同（大企业／中小企业），是对比两种情况，用「〜一方で」。",
+      "en": "The two halves have different subjects (big firms vs. small firms) — contrasting two situations is 「〜一方で」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ばかりか」是递进“不仅……而且……”，前后应同方向；这里大企业赚钱、中小企业困难，是对比。",
+        "en": "「ばかりか」 adds in the same direction (\"not only… but also\"); here big firms prosper while small ones struggle — a contrast."
+      },
+      {
+        "zh": "「につれて」是“随着……而变化”，大企业盈利和中小企业困难不是联动变化，而是对比。",
+        "en": "「につれて」 links two changes moving together; this is a contrast, not a parallel change."
+      },
+      {
+        "zh": "「にしたがって」是“随着/按照”，同样不能表示对比。",
+        "en": "「にしたがって」 (\"as / in accordance with\") doesn't express a contrast either."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#2"
+    ],
+    "difficulty": 2,
+    "stem": "物価は上がる（　）なのに、給料は少しも上がらない。",
+    "options": [
+      "一方",
+      "一方で",
+      "反面",
+      "につれて"
+    ],
+    "answer": 0,
+    "full": "物価は上がる一方なのに、給料は少しも上がらない。",
+    "tr": {
+      "zh": "物价一个劲儿地涨，工资却一点儿都不涨。",
+      "en": "Prices just keep rising, yet wages haven't gone up at all."
+    },
+    "why": {
+      "zh": "空后是「なのに」，要用名词性的「一方」构成「上がる一方だ」（一直……下去），这里是「一方なのに」。注意它和表示对比的「一方で」不同。",
+      "en": "The blank is followed by 「なのに」, so it needs 「一方」 as in 「上がる一方だ」 (keeps rising) → 「一方なのに」. Not the contrastive 「一方で」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「一方で」后面不能再接「なのに」，形式不成立。",
+        "en": "「一方で」 can't be followed by 「なのに」."
+      },
+      {
+        "zh": "「反面」后面不能接「なのに」，而且“涨”和“工资不涨”不是同一事物的两面。",
+        "en": "「反面」 can't take 「なのに」, and rising prices and flat wages aren't two sides of one thing."
+      },
+      {
+        "zh": "「につれて」后面不能接「なのに」。",
+        "en": "「につれて」 can't be followed by 「なのに」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-006",
+    "type": "narabe",
+    "refs": [
+      "lesson66#2"
+    ],
+    "difficulty": 2,
+    "stem": "インターネットは [_] [_] [_] [★] 問題がある。",
+    "options": [
+      "一方",
+      "便利である",
+      "信頼性に",
+      "情報の"
+    ],
+    "order": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "full": "インターネットは便利である一方情報の信頼性に問題がある。",
+    "tr": {
+      "zh": "互联网虽然方便，另一方面信息的可靠性存在问题。",
+      "en": "The internet is convenient, but on the other hand there are problems with the reliability of information."
+    },
+    "why": {
+      "zh": "便利である＋一方（另一方面）＋情報の＋信頼性に＋問題がある。★ 在第四格，是「信頼性に」。",
+      "en": "便利である ＋ 一方 (on the other hand) ＋ 情報の ＋ 信頼性に ＋ 問題がある. The ★ is the fourth slot: 「信頼性に」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l66-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#3"
+    ],
+    "difficulty": 2,
+    "stem": "この薬はよく効く（　）、副作用も強いので、使い方に注意が必要だ。",
+    "options": [
+      "反面",
+      "につれて",
+      "に反して",
+      "にしたがって"
+    ],
+    "answer": 0,
+    "full": "この薬はよく効く反面、副作用も強いので、使い方に注意が必要だ。",
+    "tr": {
+      "zh": "这种药效果好，但另一面副作用也很强，所以使用时需要注意。",
+      "en": "This medicine works well, but on the flip side it has strong side effects, so care is needed."
+    },
+    "why": {
+      "zh": "同一事物（这种药）的好的一面（有效）和坏的一面（副作用强）对照，用「〜反面」。",
+      "en": "The good side (it works) and the bad side (side effects) of the same thing — 「〜反面」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「につれて」是“随着……而变化”，“越有效副作用越强”不是这里要说的，而且前后不是渐变。",
+        "en": "「につれて」 links two gradual changes; this sentence contrasts two sides, not two changes."
+      },
+      {
+        "zh": "「に反して」前面接名词（予想、期待等），不接动词「効く」。",
+        "en": "「に反して」 follows nouns like 予想 or 期待, not the verb 「効く」."
+      },
+      {
+        "zh": "「にしたがって」是“随着/按照”，不表示正反两面。",
+        "en": "「にしたがって」 (\"as / according to\") doesn't express two opposite sides."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#3"
+    ],
+    "difficulty": 2,
+    "stem": "ネットで買い物ができるのは便利な（　）、実物を見て選べないという不安もある。",
+    "options": [
+      "反面",
+      "とたん",
+      "末に",
+      "あまり"
+    ],
+    "answer": 0,
+    "full": "ネットで買い物ができるのは便利な反面、実物を見て選べないという不安もある。",
+    "tr": {
+      "zh": "能在网上购物很方便，但反过来也有不能看实物挑选的不安。",
+      "en": "Being able to shop online is convenient, but on the other hand there's the worry of not being able to see the real thing."
+    },
+    "why": {
+      "zh": "前面是好的一面（方便），后面是坏的一面（不安），同一件事的两面性，用「な形容詞な＋反面」。",
+      "en": "A good side (convenient) and a bad side (worry) of the same thing — na-adjective な ＋ 「反面」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「とたん」接动词た形，表示“刚……就”，不接「便利な」。",
+        "en": "「とたん」 follows a verb's た-form (\"the moment…\"), not 「便利な」."
+      },
+      {
+        "zh": "「末に」接动词た形或「名詞の」，表示“经过……最后”，不接形容词。",
+        "en": "「末に」 follows a た-form or noun ＋ の (\"after a long…\"), not an adjective."
+      },
+      {
+        "zh": "「あまり」是“过于……以致”，后面是过度造成的结果，这里是正反对比。",
+        "en": "「あまり」 means \"so… that\" with a result of excess; this sentence is a contrast."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-009",
+    "type": "narabe",
+    "refs": [
+      "lesson66#3"
+    ],
+    "difficulty": 2,
+    "stem": "彼女は [★] [_] [_] [_] 欠けるところがある。",
+    "options": [
+      "協調性に",
+      "反面",
+      "できる",
+      "仕事が"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "彼女は仕事ができる反面協調性に欠けるところがある。",
+    "tr": {
+      "zh": "她工作能力强，但反面也有缺乏协调性的地方。",
+      "en": "She's very capable at work, but on the flip side she lacks a cooperative spirit."
+    },
+    "why": {
+      "zh": "仕事が＋できる（能干）＋反面＋協調性に＋欠ける。★ 在第一格，是「仕事が」。",
+      "en": "仕事が ＋ できる (capable) ＋ 反面 ＋ 協調性に ＋ 欠ける. The ★ is the first slot: 「仕事が」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l66-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#4"
+    ],
+    "difficulty": 1,
+    "stem": "年を取る（　）、体力が落ちてきた。",
+    "options": [
+      "につれて",
+      "に反して",
+      "一方で",
+      "をめぐって"
+    ],
+    "answer": 0,
+    "full": "年を取るにつれて、体力が落ちてきた。",
+    "tr": {
+      "zh": "随着年龄增长，体力下降了。",
+      "en": "As I've got older, my stamina has declined."
+    },
+    "why": {
+      "zh": "“年龄增长”和“体力下降”是联动的变化，用「〜につれて」。",
+      "en": "Getting older and losing stamina change together — 「〜につれて」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に反して」接名词，而且“与年龄增长相反”说不通。",
+        "en": "「に反して」 follows nouns, and \"contrary to ageing\" makes no sense."
+      },
+      {
+        "zh": "「一方で」表示对比，“年龄增长”和“体力下降”不是对比关系，而是因果联动。",
+        "en": "「一方で」 contrasts two things; ageing and losing stamina go together rather than contrast."
+      },
+      {
+        "zh": "「をめぐって」接名词，表示“围绕……（争论）”，意思不通。",
+        "en": "「をめぐって」 follows nouns and means \"over (a dispute)\" — it doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#4"
+    ],
+    "difficulty": 1,
+    "stem": "時間がたつ（　）、その事件のことは人々の記憶から消えていった。",
+    "options": [
+      "につれて",
+      "を中心に",
+      "はともかく",
+      "に反して"
+    ],
+    "answer": 0,
+    "full": "時間がたつにつれて、その事件のことは人々の記憶から消えていった。",
+    "tr": {
+      "zh": "随着时间流逝，那起事件渐渐从人们的记忆中消失了。",
+      "en": "As time passed, the incident gradually faded from people's memories."
+    },
+    "why": {
+      "zh": "“时间流逝”和“渐渐被遗忘（〜ていった）”是同步的渐变，用「〜につれて」。",
+      "en": "Time passing and memories fading (〜ていった) are gradual changes in step — 「〜につれて」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「を中心に」接名词，表示“以……为中心”，意思不通。",
+        "en": "「を中心に」 follows nouns and means \"centred on\" — it doesn't fit."
+      },
+      {
+        "zh": "「はともかく」是“……暂且不论”，“时间流逝暂且不论”说不通。",
+        "en": "「はともかく」 means \"setting aside\"; \"setting aside time passing\" makes no sense."
+      },
+      {
+        "zh": "「に反して」接名词，表示“与……相反”，意思不通。",
+        "en": "「に反して」 follows nouns and means \"contrary to\" — it doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-012",
+    "type": "narabe",
+    "refs": [
+      "lesson66#4"
+    ],
+    "difficulty": 2,
+    "stem": "山では、標高が [_] [_] [★] [_] 下がっていく。",
+    "options": [
+      "につれて",
+      "上がる",
+      "気温が",
+      "周りの"
+    ],
+    "order": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "full": "山では、標高が上がるにつれて周りの気温が下がっていく。",
+    "tr": {
+      "zh": "在山上，随着海拔升高，周围的气温会逐渐下降。",
+      "en": "In the mountains, as altitude increases, the surrounding temperature drops."
+    },
+    "why": {
+      "zh": "上がる＋につれて（随着）＋周りの＋気温が＋下がっていく。★ 在第三格，是「周りの」。",
+      "en": "上がる ＋ につれて (as) ＋ 周りの ＋ 気温が ＋ 下がっていく. The ★ is the third slot: 「周りの」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l66-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#5"
+    ],
+    "difficulty": 1,
+    "stem": "火災報知器が鳴ったら、係員の指示（　）、落ち着いて避難してください。",
+    "options": [
+      "にしたがって",
+      "につれて",
+      "に反して",
+      "をめぐって"
+    ],
+    "answer": 0,
+    "full": "火災報知器が鳴ったら、係員の指示にしたがって、落ち着いて避難してください。",
+    "tr": {
+      "zh": "火灾警报响起时，请按照工作人员的指示冷静地疏散。",
+      "en": "If the fire alarm goes off, please evacuate calmly, following the staff's instructions."
+    },
+    "why": {
+      "zh": "前面是「指示」（指示、规则类名词），表示“按照指示行动”，用「〜にしたがって」（遵从义）。",
+      "en": "「指示」 is an instruction, so this is \"act according to\" — 「〜にしたがって」 in its \"follow\" sense."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「につれて」只表示“随着变化”，没有“按照、遵从”的意思。",
+        "en": "「につれて」 only means \"as… changes\"; it can't mean \"following instructions\"."
+      },
+      {
+        "zh": "「に反して」是“违背指示”，和“冷静疏散”的要求矛盾。",
+        "en": "「に反して」 means \"against the instructions\" — not what a safety notice asks."
+      },
+      {
+        "zh": "「をめぐって」是“围绕……（争论）”，不能表示遵照指示行动。",
+        "en": "「をめぐって」 means \"over (a dispute)\"; it can't mean following instructions."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#5"
+    ],
+    "difficulty": 2,
+    "stem": "経験を積む（　）、仕事に自信が持てるようになった。",
+    "options": [
+      "にしたがって",
+      "に反して",
+      "一方で",
+      "を問わず"
+    ],
+    "answer": 0,
+    "full": "経験を積むにしたがって、仕事に自信が持てるようになった。",
+    "tr": {
+      "zh": "随着经验的积累，对工作有了自信。",
+      "en": "As I gained experience, I became confident in my work."
+    },
+    "why": {
+      "zh": "“积累经验”和“有了自信（〜ようになった）”是联动变化，用表示“随着”的「〜にしたがって」。",
+      "en": "Gaining experience and becoming confident (〜ようになった) change together — 「〜にしたがって」 (\"as\")."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に反して」接名词，“与积累经验相反”说不通。",
+        "en": "「に反して」 follows nouns, and \"contrary to gaining experience\" makes no sense."
+      },
+      {
+        "zh": "「一方で」表示对比，“积累经验”和“有自信”不是对比关系。",
+        "en": "「一方で」 contrasts two things; gaining experience and confidence go together."
+      },
+      {
+        "zh": "「を問わず」接名词，“不论积累经验”说不通。",
+        "en": "「を問わず」 follows nouns, and \"regardless of gaining experience\" makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-015",
+    "type": "narabe",
+    "refs": [
+      "lesson66#5"
+    ],
+    "difficulty": 2,
+    "stem": "この機械は、必ず [_] [_] [_] [★] ください。",
+    "options": [
+      "操作して",
+      "したがって",
+      "手順に",
+      "説明書の"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "この機械は、必ず説明書の手順にしたがって操作してください。",
+    "tr": {
+      "zh": "这台机器请务必按照说明书的步骤操作。",
+      "en": "Please be sure to operate this machine following the steps in the manual."
+    },
+    "why": {
+      "zh": "説明書の＋手順に＋したがって（按照）＋操作して＋ください。★ 在第四格，是「操作して」。",
+      "en": "説明書の ＋ 手順に ＋ したがって (following) ＋ 操作して ＋ ください. The ★ is the fourth slot: 「操作して」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

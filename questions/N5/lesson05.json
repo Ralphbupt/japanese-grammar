@@ -1,0 +1,583 @@
+[
+  {
+    "id": "n5-l05-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson05#3"
+    ],
+    "difficulty": 1,
+    "stem": "A「ここで 写真を（　）。」\nB「はい、どうぞ。」",
+    "options": [
+      "撮っても いいですか",
+      "撮っては いけません",
+      "撮って ください",
+      "撮って います"
+    ],
+    "answer": 0,
+    "full": "A「ここで 写真を 撮っても いいですか。」 B「はい、どうぞ。」",
+    "tr": {
+      "zh": "A：这里可以拍照吗？ B：可以，请。",
+      "en": "A: May I take photos here? B: Sure, go ahead."
+    },
+    "why": {
+      "zh": "B 回答「はい、どうぞ」（可以，请便），说明 A 是在征求许可。征求许可用「〜てもいいですか」。",
+      "en": "B answers 「はい、どうぞ」 (sure, go ahead), so A is asking for permission — that is 「〜てもいいですか」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜てはいけません」是禁止（不可以拍），和「どうぞ」对不上。",
+        "en": "「〜てはいけません」 forbids something; it doesn't fit 「どうぞ」."
+      },
+      {
+        "zh": "「〜てください」是请对方拍，B 不会回答「はい、どうぞ」。",
+        "en": "「〜てください」 asks B to take the photo; 「はい、どうぞ」 isn't a reply to that."
+      },
+      {
+        "zh": "「〜ています」是“正在拍”，是陈述不是提问，后面也没有「か」。",
+        "en": "「〜ています」 states that someone is taking photos — a statement, not a question."
+      }
+    ]
+  },
+  {
+    "id": "n5-l05-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson05#4"
+    ],
+    "difficulty": 1,
+    "stem": "図書館の 中では 静かに して ください。大きい 声で 話して（　）。",
+    "options": [
+      "は いけません",
+      "も いいです",
+      "から です",
+      "います"
+    ],
+    "answer": 0,
+    "full": "図書館の 中では 静かに して ください。大きい 声で 話しては いけません。",
+    "tr": {
+      "zh": "在图书馆里请保持安静。不可以大声说话。",
+      "en": "Please be quiet in the library. You must not talk loudly."
+    },
+    "why": {
+      "zh": "前一句要求“请保持安静”，后一句接着说规矩：不可以大声说话，用表示禁止的「〜てはいけません」。",
+      "en": "The first sentence asks for quiet, so the second states the rule: no loud talking — the prohibition 「〜てはいけません」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜てもいいです」是“可以大声说话”，和前一句“请保持安静”矛盾。",
+        "en": "「〜てもいいです」 would allow loud talking, contradicting \"please be quiet\"."
+      },
+      {
+        "zh": "「〜てからです」不是完整的句尾，这里不成立。",
+        "en": "「〜てからです」 isn't a complete ending here."
+      },
+      {
+        "zh": "「〜ています」是“（有人）正在大声说话”，和前一句的要求接不上，也没有主语。",
+        "en": "「〜ています」 would report someone talking loudly right now — it doesn't follow the request and has no subject."
+      }
+    ]
+  },
+  {
+    "id": "n5-l05-003",
+    "type": "bunpou",
+    "refs": [
+      "lesson05#5"
+    ],
+    "difficulty": 1,
+    "stem": "毎朝 コーヒーを 飲んで（　）、会社へ 行きます。",
+    "options": [
+      "から",
+      "まで",
+      "ので",
+      "が"
+    ],
+    "answer": 0,
+    "full": "毎朝 コーヒーを 飲んでから、会社へ 行きます。",
+    "tr": {
+      "zh": "每天早上喝完咖啡再去公司。",
+      "en": "Every morning I drink coffee and then go to work."
+    },
+    "why": {
+      "zh": "先喝咖啡、再去公司，表示动作的先后顺序用「て形＋から」（做完……之后）。",
+      "en": "First coffee, then work: 「て-form ＋ から」 marks \"after doing\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「まで」接在名词或动词辞书形后面（～为止），不接在て形后面。",
+        "en": "「まで」 follows a noun or dictionary form, not the て-form."
+      },
+      {
+        "zh": "「ので」表示原因，接在普通形后面（飲むので），不接て形。",
+        "en": "「ので」 gives a reason and follows the plain form (飲むので), not the て-form."
+      },
+      {
+        "zh": "「が」表示转折，接在句子后面（飲みますが），不接て形。",
+        "en": "「が」 (but) follows a full clause (飲みますが), not the て-form."
+      }
+    ]
+  },
+  {
+    "id": "n5-l05-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson05#1"
+    ],
+    "difficulty": 1,
+    "stem": "A「田中さんは どこですか。」\nB「となりの 部屋で 本を 読んで（　）よ。」",
+    "options": [
+      "います",
+      "ください",
+      "から",
+      "あります"
+    ],
+    "answer": 0,
+    "full": "A「田中さんは どこですか。」 B「となりの 部屋で 本を 読んで いますよ。」",
+    "tr": {
+      "zh": "A：田中在哪儿？ B：在隔壁房间看书呢。",
+      "en": "A: Where's Tanaka? B: Reading in the next room."
+    },
+    "why": {
+      "zh": "问的是田中现在在做什么，用表示正在进行的「〜ています」。",
+      "en": "A asks what Tanaka is doing right now — the ongoing action is 「〜ています」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜てください」是请求，后面不会接「よ」来回答别人的问题。",
+        "en": "「〜てください」 is a request; it doesn't answer where Tanaka is."
+      },
+      {
+        "zh": "「〜てから」后面要接下一个动作，不能直接接「よ」结束句子。",
+        "en": "「〜てから」 needs a following action; it can't end the sentence with 「よ」."
+      },
+      {
+        "zh": "「〜てあります」表示“（有人）做好了某事”，用于他动词的结果状态，不能说人正在做的动作。",
+        "en": "「〜てあります」 describes a result someone has left in place, not what a person is doing now."
+      }
+    ]
+  },
+  {
+    "id": "n5-l05-005",
+    "type": "narabe",
+    "refs": [
+      "lesson05#3"
+    ],
+    "difficulty": 2,
+    "stem": "A「すみません、この ペンを [_] [_] [★] [_] か。」\nB「ええ、いいですよ。」",
+    "options": [
+      "いい",
+      "も",
+      "です",
+      "使って"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "A「すみません、この ペンを 使っても いいですか。」 B「ええ、いいですよ。」",
+    "tr": {
+      "zh": "A：不好意思，这支笔可以用吗？ B：嗯，可以。",
+      "en": "A: Excuse me, may I use this pen? B: Sure."
+    },
+    "why": {
+      "zh": "征求许可：使って（て形）＋ も ＋ いい ＋ です ＋ か。★ 在第三格，是「いい」。",
+      "en": "Asking permission: 使って (て-form) ＋ も ＋ いい ＋ です ＋ か. The ★ is the third slot: 「いい」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l05-006",
+    "type": "narabe",
+    "refs": [
+      "lesson05#5"
+    ],
+    "difficulty": 2,
+    "stem": "毎朝 [_] [_] [★] [_] 行きます。",
+    "options": [
+      "浴びて",
+      "シャワーを",
+      "学校へ",
+      "から"
+    ],
+    "order": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "full": "毎朝 シャワーを 浴びてから 学校へ 行きます。",
+    "tr": {
+      "zh": "每天早上洗完澡再去学校。",
+      "en": "Every morning I take a shower and then go to school."
+    },
+    "why": {
+      "zh": "「シャワーを浴びる」（洗淋浴）是固定搭配；「浴びて＋から」表示先后；最后「学校へ行きます」。顺序：シャワーを 浴びて から 学校へ，★ 是第三格「から」。",
+      "en": "「シャワーを浴びる」 is the set phrase; 「浴びて＋から」 means \"after\"; then 「学校へ行きます」. Order: シャワーを 浴びて から 学校へ — the ★ is 「から」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l05-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson05#1"
+    ],
+    "difficulty": 2,
+    "stem": "寒いですね。あ、窓が（　）よ。閉めましょうか。",
+    "options": [
+      "開いて います",
+      "開けて います",
+      "開いて ください",
+      "開けて ください"
+    ],
+    "answer": 0,
+    "full": "寒いですね。あ、窓が 開いて いますよ。閉めましょうか。",
+    "tr": {
+      "zh": "好冷啊。啊，窗户开着呢。我把它关上吧？",
+      "en": "It's cold, isn't it? Oh, the window is open. Shall I close it?"
+    },
+    "why": {
+      "zh": "「窓が」用「が」，要接自动词「開く」；「開いています」表示“打开之后的状态”——窗户开着。",
+      "en": "「窓が」 takes the intransitive 「開く」, and 「開いています」 is the resulting state: the window is open."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「開ける」是他动词，要说「窓を開ける」，不能接「窓が」。",
+        "en": "「開ける」 is transitive (「窓を開ける」); it can't follow 「窓が」."
+      },
+      {
+        "zh": "「〜てください」是请求，窗户不能被“请求”打开，后面也接不上「閉めましょうか」。",
+        "en": "「〜てください」 is a request — you can't ask a window to open, and it clashes with 「閉めましょうか」."
+      },
+      {
+        "zh": "「開ける」是他动词，不能接「窓が」；而且说话人正想关窗，不会请人开窗。",
+        "en": "「開ける」 is transitive and can't follow 「窓が」; besides, the speaker wants it closed, not opened."
+      }
+    ]
+  },
+  {
+    "id": "n5-l05-008",
+    "type": "narabe",
+    "refs": [
+      "lesson05#1"
+    ],
+    "difficulty": 1,
+    "stem": "A「お父さんの お仕事は？」\nB「父は [_] [_] [★] [_]。」",
+    "options": [
+      "働いて",
+      "銀行",
+      "います",
+      "で"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "A「お父さんの お仕事は？」 B「父は 銀行で 働いて います。」",
+    "tr": {
+      "zh": "A：你父亲做什么工作？ B：我父亲在银行工作。",
+      "en": "A: What does your father do? B: My father works at a bank."
+    },
+    "why": {
+      "zh": "工作地点用「で」：銀行で；职业这种长期状态用「〜ています」。顺序：銀行 で 働いて います，★ 是第三格「働いて」。",
+      "en": "The workplace takes 「で」 (銀行で), and a job is a long-term state, 「〜ています」. Order: 銀行 で 働いて います — the ★ is 「働いて」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l05-009",
+    "type": "bunpou",
+    "refs": [
+      "lesson05#2"
+    ],
+    "difficulty": 1,
+    "stem": "ここは 病院ですから、タバコを（　）。",
+    "options": [
+      "吸わないで ください",
+      "吸って ください",
+      "吸っても いいです",
+      "吸って います"
+    ],
+    "answer": 0,
+    "full": "ここは 病院ですから、タバコを 吸わないで ください。",
+    "tr": {
+      "zh": "这里是医院，请不要抽烟。",
+      "en": "This is a hospital, so please don't smoke."
+    },
+    "why": {
+      "zh": "“因为这里是医院”，后面自然是请对方不要抽烟，用否定请求「〜ないでください」。",
+      "en": "\"Because this is a hospital\" leads to asking someone not to smoke — the negative request 「〜ないでください」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜てください」是“请抽烟”，在医院里说不通。",
+        "en": "「〜てください」 would ask them to smoke — absurd in a hospital."
+      },
+      {
+        "zh": "「〜てもいいです」是“可以抽烟”，和“这里是医院”的理由矛盾。",
+        "en": "「〜てもいいです」 allows smoking, which contradicts \"this is a hospital\"."
+      },
+      {
+        "zh": "「〜ています」是“正在抽烟”，和前面的理由「病院ですから」接不上。",
+        "en": "「〜ています」 just says someone is smoking; it doesn't follow from 「病院ですから」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l05-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson05#2"
+    ],
+    "difficulty": 1,
+    "stem": "すみません、よく わかりませんでした。もう 一度（　）。",
+    "options": [
+      "言って ください",
+      "言わないで ください",
+      "言いましょうか",
+      "言っては いけません"
+    ],
+    "answer": 0,
+    "full": "すみません、よく わかりませんでした。もう 一度 言って ください。",
+    "tr": {
+      "zh": "对不起，我没太听懂。请再说一遍。",
+      "en": "Sorry, I didn't quite understand. Please say it again."
+    },
+    "why": {
+      "zh": "没听懂，所以请对方“再说一遍”，用请求「〜てください」。",
+      "en": "The speaker didn't understand, so they ask the other person to repeat it: 「〜てください」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜ないでください」是“请不要说”，和“没听懂、再一次”矛盾。",
+        "en": "「〜ないでください」 means \"please don't say it\" — the opposite of what someone who didn't understand needs."
+      },
+      {
+        "zh": "「〜ましょうか」是提议“我来说吧”，没听懂的人不会自己再说一遍。",
+        "en": "「〜ましょうか」 offers to say it oneself; the one who didn't understand wouldn't offer that."
+      },
+      {
+        "zh": "「〜てはいけません」是禁止对方说，和“请再说一遍”的意思相反。",
+        "en": "「〜てはいけません」 forbids the other person from saying it — the opposite of asking for a repeat."
+      }
+    ]
+  },
+  {
+    "id": "n5-l05-011",
+    "type": "narabe",
+    "refs": [
+      "lesson05#2"
+    ],
+    "difficulty": 2,
+    "stem": "授業中に [_] [_] [★] [_]。",
+    "options": [
+      "ないで",
+      "スマホを",
+      "ください",
+      "使わ"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "授業中に スマホを 使わないで ください。",
+    "tr": {
+      "zh": "上课时请不要用手机。",
+      "en": "Please don't use your phone during class."
+    },
+    "why": {
+      "zh": "否定请求是「ない形＋でください」：使わ＋ないで＋ください，前面是宾语「スマホを」。★ 是第三格「ないで」。",
+      "en": "A negative request is ない-form ＋ でください: 使わ ＋ ないで ＋ ください, after the object 「スマホを」. The ★ is 「ないで」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l05-012",
+    "type": "bunpou",
+    "refs": [
+      "lesson05#3"
+    ],
+    "difficulty": 1,
+    "stem": "A「今日の 仕事は 全部 終わりました。」\nB「お疲れさまでした。じゃ、もう 帰って（　）よ。」",
+    "options": [
+      "も いいです",
+      "は いけません",
+      "から です",
+      "いません"
+    ],
+    "answer": 0,
+    "full": "A「今日の 仕事は 全部 終わりました。」 B「お疲れさまでした。じゃ、もう 帰っても いいですよ。」",
+    "tr": {
+      "zh": "A：今天的工作都做完了。 B：辛苦了。那你可以回去了。",
+      "en": "A: I've finished all of today's work. B: Thanks for your hard work. You can go home now."
+    },
+    "why": {
+      "zh": "工作做完了，B 说“辛苦了，那……”，是允许对方回家：「〜てもいいです」。",
+      "en": "The work is done and B says \"good work, so…\" — B is giving permission to leave: 「〜てもいいです」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜てはいけません」是禁止回家，和“工作做完了、辛苦了”接不上。",
+        "en": "「〜てはいけません」 forbids going home, which doesn't follow \"all done, good work\"."
+      },
+      {
+        "zh": "「〜てからです」不是完整的句尾，这里说不通。",
+        "en": "「〜てからです」 isn't a complete ending here."
+      },
+      {
+        "zh": "「〜ていません」是“还没回去”，B 正在和 A 说话，这样说没有意义。",
+        "en": "「〜ていません」 says A hasn't gone home — pointless, since B is talking to A."
+      }
+    ]
+  },
+  {
+    "id": "n5-l05-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson05#4"
+    ],
+    "difficulty": 2,
+    "stem": "この 川は とても 深いです。ここで（　）は いけません。",
+    "options": [
+      "泳いで",
+      "泳いて",
+      "泳んで",
+      "泳って"
+    ],
+    "answer": 0,
+    "full": "この 川は とても 深いです。ここで 泳いでは いけません。",
+    "tr": {
+      "zh": "这条河很深。不可以在这里游泳。",
+      "en": "This river is very deep. You must not swim here."
+    },
+    "why": {
+      "zh": "「〜てはいけません」接动词て形。「泳ぐ」以「ぐ」结尾，て形是「泳いで」。",
+      "en": "「〜てはいけません」 follows the て-form; 「泳ぐ」 ends in 「ぐ」, so its て-form is 「泳いで」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ぐ」结尾的动词变「いで」，不是「いて」（「いて」是「く」结尾的变法）。",
+        "en": "Verbs in 「ぐ」 take 「いで」, not 「いて」 (that's for 「く」 verbs)."
+      },
+      {
+        "zh": "「んで」是「ぬ・ぶ・む」结尾的变法，「泳ぐ」不用。",
+        "en": "「んで」 is for verbs ending in 「ぬ・ぶ・む」, not 「泳ぐ」."
+      },
+      {
+        "zh": "「って」是「う・つ・る」结尾的变法，「泳ぐ」不用。",
+        "en": "「って」 is for verbs ending in 「う・つ・る」, not 「泳ぐ」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l05-014",
+    "type": "narabe",
+    "refs": [
+      "lesson05#4",
+      "lesson05#3"
+    ],
+    "difficulty": 2,
+    "stem": "A「この 水、飲んでも いいですか。」\nB「いいえ、その 水は [_] [_] [★] [_]。」",
+    "options": [
+      "いけません",
+      "よ",
+      "飲んで",
+      "は"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "A「この 水、飲んでも いいですか。」 B「いいえ、その 水は 飲んでは いけませんよ。」",
+    "tr": {
+      "zh": "A：这个水可以喝吗？ B：不行，那个水不可以喝哦。",
+      "en": "A: Can I drink this water? B: No, you mustn't drink that water."
+    },
+    "why": {
+      "zh": "对征求许可的问题回答「いいえ」，用禁止「〜てはいけません」：飲んで は いけません よ。★ 是第三格「いけません」。",
+      "en": "「いいえ」 to a permission question is answered with the prohibition 「〜てはいけません」: 飲んで は いけません よ. The ★ is 「いけません」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l05-015",
+    "type": "bunpou",
+    "refs": [
+      "lesson05#5"
+    ],
+    "difficulty": 2,
+    "stem": "日本に（　）から、もう 三年に なります。",
+    "options": [
+      "来て",
+      "来る",
+      "来ない",
+      "来ます"
+    ],
+    "answer": 0,
+    "full": "日本に 来てから、もう 三年に なります。",
+    "tr": {
+      "zh": "来日本以后，已经三年了。",
+      "en": "It's been three years since I came to Japan."
+    },
+    "why": {
+      "zh": "“来日本之后已经三年”，表示从某个动作之后开始算，用「て形＋から」。",
+      "en": "\"Three years since coming to Japan\" counts from an action: て-form ＋ から."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「来るから」是“因为要来”，表示原因，和“已经三年了”接不上。",
+        "en": "「来るから」 means \"because I'll come\" — a reason, which doesn't fit \"it's been three years\"."
+      },
+      {
+        "zh": "「来ないから」是“因为不来”，意思说不通。",
+        "en": "「来ないから」 means \"because I don't come\" — makes no sense here."
+      },
+      {
+        "zh": "「来ますから」也是表示原因，不是“……之后”。",
+        "en": "「来ますから」 also gives a reason, not \"since/after\"."
+      }
+    ]
+  }
+]

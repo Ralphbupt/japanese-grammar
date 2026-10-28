@@ -1,0 +1,583 @@
+[
+  {
+    "id": "n2-l70-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson70#1"
+    ],
+    "difficulty": 1,
+    "stem": "学生時代に戻れる（　）、もう一度ちゃんと勉強し直したい。",
+    "options": [
+      "ものの",
+      "ものなら",
+      "ものだから",
+      "ものか"
+    ],
+    "answer": 1,
+    "full": "学生時代に戻れるものなら、もう一度ちゃんと勉強し直したい。",
+    "tr": {
+      "zh": "如果能回到学生时代的话，真想再好好重新学一遍。",
+      "en": "If I could go back to my student days, I'd like to study properly all over again."
+    },
+    "why": {
+      "zh": "可能形「戻れる」＋「ものなら」，后接「〜たい」，表示难以实现的愿望“如果能……真想……”。",
+      "en": "Potential form 「戻れる」 + 「ものなら」 with 「〜たい」 — a wish that's hard to realize: \"if only I could ~\"."
+    },
+    "wrong": [
+      {
+        "zh": "「ものの」是“虽然……但是”，“虽然能回去”与事实不符，后面也不是转折。",
+        "en": "「ものの」 (although) would say \"although I can go back\" — untrue and no contrast follows."
+      },
+      null,
+      {
+        "zh": "「ものだから」是“因为……”，“因为能回去所以想学习”与事实不符。",
+        "en": "「ものだから」 (because) would claim one actually can go back."
+      },
+      {
+        "zh": "「ものか」是“哪能……”，表示强烈否定，不接后句的愿望。",
+        "en": "「ものか」 is an emphatic \"no way\" and doesn't lead into a wish."
+      }
+    ]
+  },
+  {
+    "id": "n2-l70-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson70#1",
+      "lesson70#2"
+    ],
+    "difficulty": 2,
+    "stem": "あの日に（　）ものなら、当時の自分にアドバイスしてあげたい。",
+    "options": [
+      "戻ろう",
+      "戻った",
+      "戻れる",
+      "戻る"
+    ],
+    "answer": 2,
+    "full": "あの日に戻れるものなら、当時の自分にアドバイスしてあげたい。",
+    "tr": {
+      "zh": "如果能回到那一天，真想给当时的自己一些建议。",
+      "en": "If I could go back to that day, I'd like to give my younger self some advice."
+    },
+    "why": {
+      "zh": "后面是愿望「〜てあげたい」，是“如果能……的话”，「ものなら」接可能形「戻れる」。",
+      "en": "A wish (「〜てあげたい」) follows, so it's \"if I could\": 「ものなら」 + the potential 「戻れる」."
+    },
+    "wrong": [
+      {
+        "zh": "意志形＋「ものなら」是警告“要是胆敢……就会有严重后果”，后面不接愿望。",
+        "en": "Volitional + 「ものなら」 warns of bad consequences; it isn't followed by a wish."
+      },
+      {
+        "zh": "「ものなら」不接た形。",
+        "en": "「ものなら」 doesn't follow the ta-form."
+      },
+      null,
+      {
+        "zh": "表示愿望的「ものなら」要接可能形，不接普通辞书形。",
+        "en": "For a wish, 「ものなら」 takes the potential form, not the plain dictionary form."
+      }
+    ]
+  },
+  {
+    "id": "n2-l70-003",
+    "type": "narabe",
+    "refs": [
+      "lesson70#1"
+    ],
+    "difficulty": 2,
+    "stem": "この病気を [_] [_] [_] [★] するつもりだ。",
+    "options": [
+      "どんな",
+      "治せる",
+      "ことでも",
+      "ものなら"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "この病気を 治せる ものなら どんな ことでも するつもりだ。",
+    "tr": {
+      "zh": "如果能治好这个病，我什么都愿意做。",
+      "en": "If this illness can be cured, I'm prepared to do anything."
+    },
+    "why": {
+      "zh": "可能形「治せる」＋「ものなら」是条件，后面「どんなことでも」修饰「する」。顺序：治せる → ものなら → どんな → ことでも。★ 是「ことでも」。",
+      "en": "Potential 「治せる」 + 「ものなら」 is the condition; 「どんなことでも」 goes with 「する」. Order: 治せる → ものなら → どんな → ことでも. The ★ is 「ことでも」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l70-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson70#2"
+    ],
+    "difficulty": 2,
+    "stem": "うちの部長は時間に厳しいので、会議に一分でも遅刻し（　）、みんなの前で叱られる。",
+    "options": [
+      "てからでないと",
+      "ようものなら",
+      "ないことには",
+      "た上で"
+    ],
+    "answer": 1,
+    "full": "うちの部長は時間に厳しいので、会議に一分でも遅刻しようものなら、みんなの前で叱られる。",
+    "tr": {
+      "zh": "我们部长对时间很严格，开会哪怕迟到一分钟，都会被当众训斥。",
+      "en": "Our manager is strict about time — if you're even a minute late to a meeting, you get scolded in front of everyone."
+    },
+    "why": {
+      "zh": "“哪怕迟到一分钟就会被当众训斥”，是对做了某事会有严重后果的警告，用意志形＋「ものなら」：「遅刻しようものなら」。",
+      "en": "Even one minute late brings a public scolding — a warning about consequences: volitional + 「ものなら」, 「遅刻しようものなら」."
+    },
+    "wrong": [
+      {
+        "zh": "「てからでないと」是“不先迟到就不能……”，说不通。",
+        "en": "「てからでないと」 (\"not until you're late\") makes no sense."
+      },
+      null,
+      {
+        "zh": "「遅刻しないことには叱られる」是“不迟到就会被骂”，意思相反。",
+        "en": "「遅刻しないことには」 would say you get scolded unless you're late — the opposite."
+      },
+      {
+        "zh": "「た上で」是有意识地“先……之后再……”，迟到不是计划的步骤。",
+        "en": "「た上で」 is a deliberate \"after doing ~\"; being late isn't a planned step."
+      }
+    ]
+  },
+  {
+    "id": "n2-l70-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson70#2"
+    ],
+    "difficulty": 2,
+    "stem": "あの店の主人は頑固で、料理に少しでも文句を（　）ものなら、店から追い出される。",
+    "options": [
+      "言える",
+      "言った",
+      "言う",
+      "言おう"
+    ],
+    "answer": 3,
+    "full": "あの店の主人は頑固で、料理に少しでも文句を言おうものなら、店から追い出される。",
+    "tr": {
+      "zh": "那家店的老板很固执，要是敢对菜挑一点毛病，就会被赶出店。",
+      "en": "The owner of that restaurant is stubborn — if you dare to complain even a little about the food, you'll be thrown out."
+    },
+    "why": {
+      "zh": "后面是“会被赶出去”的严重后果，是警告，用意志形「言おう」＋「ものなら」。",
+      "en": "Being thrown out is a serious consequence — a warning, so the volitional 「言おう」 + 「ものなら」."
+    },
+    "wrong": [
+      {
+        "zh": "可能形＋「ものなら」是愿望“如果能……真想……”，后面不接被赶出去。",
+        "en": "Potential + 「ものなら」 is a wish (\"if only I could\"), not a warning."
+      },
+      {
+        "zh": "「ものなら」不接た形。",
+        "en": "「ものなら」 doesn't follow the ta-form."
+      },
+      {
+        "zh": "警告用法要接意志形，不接辞书形。",
+        "en": "The warning use takes the volitional form, not the dictionary form."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l70-006",
+    "type": "narabe",
+    "refs": [
+      "lesson70#2"
+    ],
+    "difficulty": 2,
+    "stem": "この秘密が [_] [★] [_] [_] 大変なことになる。",
+    "options": [
+      "会社は",
+      "漏れよう",
+      "外に",
+      "ものなら"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "この秘密が 外に 漏れよう ものなら 会社は 大変なことになる。",
+    "tr": {
+      "zh": "这个秘密要是泄露出去，公司就要出大事了。",
+      "en": "If this secret ever got out, the company would be in serious trouble."
+    },
+    "why": {
+      "zh": "「外に漏れよう」是意志形，接「ものなら」表示警告，后面是后果「会社は大変なことになる」。顺序：外に → 漏れよう → ものなら → 会社は。★ 是「漏れよう」。",
+      "en": "「外に漏れよう」 is volitional + 「ものなら」 (a warning), then the consequence 「会社は大変なことになる」. Order: 外に → 漏れよう → ものなら → 会社は. The ★ is 「漏れよう」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l70-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson70#3"
+    ],
+    "difficulty": 1,
+    "stem": "日本語が上手になりたいなら、毎日少しでも日本語を話す（　）。",
+    "options": [
+      "ところだ",
+      "ことだ",
+      "ばかりだ",
+      "ことか"
+    ],
+    "answer": 1,
+    "full": "日本語が上手になりたいなら、毎日少しでも日本語を話すことだ。",
+    "tr": {
+      "zh": "想把日语学好的话，就应该每天多少说一点日语。",
+      "en": "If you want to get good at Japanese, you should speak at least a little every day."
+    },
+    "why": {
+      "zh": "「〜たいなら」后面给出建议，用辞书形＋「ことだ」（应该……）。",
+      "en": "After 「〜たいなら」 comes advice: dictionary form + 「ことだ」 (you should ~)."
+    },
+    "wrong": [
+      {
+        "zh": "「話すところだ」是“正要说”，不是建议。",
+        "en": "「話すところだ」 means \"I'm about to speak\", not advice."
+      },
+      null,
+      {
+        "zh": "「話すばかりだ」是“一直只说／越来越……”，不是建议。",
+        "en": "「話すばかりだ」 (\"does nothing but speak\") isn't advice."
+      },
+      {
+        "zh": "「ことか」是感叹“多么……啊”，不用于给建议。",
+        "en": "「ことか」 is an exclamation (\"how ~!\"), not advice."
+      }
+    ]
+  },
+  {
+    "id": "n2-l70-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson70#3"
+    ],
+    "difficulty": 1,
+    "stem": "医者「風邪を早く治したいなら、無理をしないで、しっかり休む（　）。」",
+    "options": [
+      "はずです",
+      "ばかりです",
+      "ところです",
+      "ことです"
+    ],
+    "answer": 3,
+    "full": "医者「風邪を早く治したいなら、無理をしないで、しっかり休むことです。」",
+    "tr": {
+      "zh": "医生：“想早点治好感冒的话，就别勉强，好好休息。”",
+      "en": "Doctor: \"If you want to get over your cold quickly, don't push yourself — get plenty of rest.\""
+    },
+    "why": {
+      "zh": "医生对病人提出直接的忠告，用「ことです」（应该……）。",
+      "en": "A doctor giving direct advice to a patient — 「ことです」 (you should ~)."
+    },
+    "wrong": [
+      {
+        "zh": "「はずです」是推测“应该会……”，不是忠告。",
+        "en": "「はずです」 expresses expectation (\"should be the case\"), not advice."
+      },
+      {
+        "zh": "「ばかりです」是“只……”，不是忠告。",
+        "en": "「ばかりです」 (\"only ~\") isn't advice."
+      },
+      {
+        "zh": "「ところです」是“正要……”，不是忠告。",
+        "en": "「ところです」 (\"about to ~\") isn't advice."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l70-009",
+    "type": "narabe",
+    "refs": [
+      "lesson70#3"
+    ],
+    "difficulty": 2,
+    "stem": "成功したいなら、 [_] [_] [★] [_] ことだ。",
+    "options": [
+      "恐れずに",
+      "続ける",
+      "挑戦し",
+      "失敗を"
+    ],
+    "order": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "full": "成功したいなら、 失敗を 恐れずに 挑戦し 続ける ことだ。",
+    "tr": {
+      "zh": "想成功的话，就应该不怕失败，持续挑战。",
+      "en": "If you want to succeed, you should keep taking on challenges without fearing failure."
+    },
+    "why": {
+      "zh": "「失敗を恐れずに」修饰后面的动作，「挑戦し続ける」是复合动词，接「ことだ」表建议。顺序：失敗を → 恐れずに → 挑戦し → 続ける。★ 是「挑戦し」。",
+      "en": "「失敗を恐れずに」 describes how, 「挑戦し続ける」 is the compound verb, and 「ことだ」 gives the advice. Order: 失敗を → 恐れずに → 挑戦し → 続ける. The ★ is 「挑戦し」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l70-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson70#4"
+    ],
+    "difficulty": 2,
+    "stem": "旅行先では何があるかわからないので、現金は多めに持っていく（　）。",
+    "options": [
+      "に当たらない",
+      "に越したことはない",
+      "ものがある",
+      "ところだった"
+    ],
+    "answer": 1,
+    "full": "旅行先では何があるかわからないので、現金は多めに持っていくに越したことはない。",
+    "tr": {
+      "zh": "旅行时不知道会发生什么，现金还是多带点最好。",
+      "en": "You never know what might happen on a trip, so it's best to take some extra cash."
+    },
+    "why": {
+      "zh": "“不知道会发生什么，所以……”，后面是“当然是多带点最好”，用「に越したことはない」。",
+      "en": "\"You never know what might happen, so ~\" — \"it's best to take extra\": 「に越したことはない」."
+    },
+    "wrong": [
+      {
+        "zh": "「に当たらない」是“不值得……”，“不值得多带现金”和前面的理由矛盾。",
+        "en": "「に当たらない」 (not worth ~) contradicts the reason given."
+      },
+      null,
+      {
+        "zh": "「ものがある」表示“有一种……的感觉”，不用于提建议。",
+        "en": "「ものがある」 expresses a felt quality, not advice."
+      },
+      {
+        "zh": "「ところだった」是“差点就……”，这里是一般的建议，不是过去差点发生的事。",
+        "en": "「ところだった」 (nearly happened) doesn't fit a general piece of advice."
+      }
+    ]
+  },
+  {
+    "id": "n2-l70-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson70#4"
+    ],
+    "difficulty": 2,
+    "stem": "家は駅から近い（　）が、予算を考えると少し遠くても仕方がない。",
+    "options": [
+      "ものなら",
+      "ことだ",
+      "に越したことはない",
+      "に当たらない"
+    ],
+    "answer": 2,
+    "full": "家は駅から近いに越したことはないが、予算を考えると少し遠くても仕方がない。",
+    "tr": {
+      "zh": "房子当然是离车站近最好，但考虑到预算，远一点也没办法。",
+      "en": "It's best for a home to be close to the station, of course, but given the budget, a little farther is unavoidable."
+    },
+    "why": {
+      "zh": "“当然是近最好，但……”，「に越したことはないが」表示“虽然不是绝对必要，能做到最好”。",
+      "en": "\"Close is best, but ~\": 「に越したことはないが」 — ideal but not essential."
+    },
+    "wrong": [
+      {
+        "zh": "「ものなら」后面要接愿望或后果，不接「が」；“如果能近”也和后句接不上。",
+        "en": "「ものなら」 needs a wish or consequence after it, not 「が」."
+      },
+      {
+        "zh": "「ことだ」是对别人的忠告，“近是应该的，但……”说不通。",
+        "en": "「ことだ」 is advice to someone; \"you should be close, but ~\" makes no sense."
+      },
+      null,
+      {
+        "zh": "「に当たらない」是“不值得……”，“离车站近不值得”说不通。",
+        "en": "「に当たらない」 (not worth ~) makes no sense with \"close to the station\"."
+      }
+    ]
+  },
+  {
+    "id": "n2-l70-012",
+    "type": "narabe",
+    "refs": [
+      "lesson70#4"
+    ],
+    "difficulty": 2,
+    "stem": "トラブルは [★] [_] [_] [_] 万一に備えておこう。",
+    "options": [
+      "ことはない",
+      "起こらない",
+      "が",
+      "に越した"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "トラブルは 起こらない に越した ことはない が 万一に備えておこう。",
+    "tr": {
+      "zh": "当然是不出问题最好，但还是为万一做好准备吧。",
+      "en": "It's best if nothing goes wrong, of course, but let's be prepared just in case."
+    },
+    "why": {
+      "zh": "「起こらない」＋「に越したことはない」，再接「が」转折到后句。顺序：起こらない → に越した → ことはない → が。★ 是「起こらない」。",
+      "en": "「起こらない」 + 「に越したことはない」, then 「が」 turns to the next clause. Order: 起こらない → に越した → ことはない → が. The ★ is 「起こらない」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l70-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson70#5"
+    ],
+    "difficulty": 2,
+    "stem": "若い選手たちの成長ぶりには、目を見張る（　）。",
+    "options": [
+      "ものなら",
+      "ことだ",
+      "ところだった",
+      "ものがある"
+    ],
+    "answer": 3,
+    "full": "若い選手たちの成長ぶりには、目を見張るものがある。",
+    "tr": {
+      "zh": "年轻选手们的成长让人刮目相看。",
+      "en": "There's something truly remarkable about how the young players have developed."
+    },
+    "why": {
+      "zh": "「〜には」＋「目を見張るものがある」，表达说话人感受到的特质：让人惊叹。",
+      "en": "「〜には」 + 「目を見張るものがある」 expresses a quality the speaker feels: there's something striking."
+    },
+    "wrong": [
+      {
+        "zh": "「ものなら」后面要接后句，句子不完整。",
+        "en": "「ものなら」 needs a following clause; the sentence is incomplete."
+      },
+      {
+        "zh": "「ことだ」是忠告“应该……”，对选手的成长说“应该刮目”不成立。",
+        "en": "「ことだ」 is advice; it doesn't describe the players' progress."
+      },
+      {
+        "zh": "「ところだった」是“差点就……”，和成长的评价不符。",
+        "en": "「ところだった」 (nearly ~) doesn't fit an evaluation."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l70-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson70#5"
+    ],
+    "difficulty": 2,
+    "stem": "この町の古い街並みには、どこか人の心を落ち着かせる（　）。",
+    "options": [
+      "ものがある",
+      "ことがある",
+      "ものだ",
+      "ことか"
+    ],
+    "answer": 0,
+    "full": "この町の古い街並みには、どこか人の心を落ち着かせるものがある。",
+    "tr": {
+      "zh": "这个小镇的老街有一种让人心情平静的感觉。",
+      "en": "There's something about this town's old streets that calms the mind."
+    },
+    "why": {
+      "zh": "「〜には」＋「どこか」，表示事物具有某种让人感受到的特质，用「ものがある」。",
+      "en": "「〜には」 with 「どこか」 (somehow) points to a felt quality — 「ものがある」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ことがある」是“有时会……”，不和「〜には」「どこか」这样表示特质的说法搭配。",
+        "en": "「ことがある」 (sometimes happens) doesn't go with 「〜には」 and 「どこか」 describing a quality."
+      },
+      {
+        "zh": "「ものだ」表示一般道理或感叹，不和「〜には」搭配成“有……的特质”。",
+        "en": "「ものだ」 states a general truth; it doesn't pair with 「〜には」 for a quality."
+      },
+      {
+        "zh": "「ことか」是“多么……啊”，前面要有「どんなに」「何と」等词，也不和「〜には」搭配。",
+        "en": "「ことか」 (how ~!) needs 「どんなに」 or 「何と」 and doesn't pair with 「〜には」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l70-015",
+    "type": "narabe",
+    "refs": [
+      "lesson70#5"
+    ],
+    "difficulty": 1,
+    "stem": "彼の作品には、 [_] [_] [★] [_] 。",
+    "options": [
+      "ものがある",
+      "人を",
+      "見る",
+      "引きつける"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "彼の作品には、 見る 人を 引きつける ものがある 。",
+    "tr": {
+      "zh": "他的作品有一种吸引观众的力量。",
+      "en": "There's something about his work that draws people in."
+    },
+    "why": {
+      "zh": "「見る」修饰「人」，「人を引きつける」修饰「もの」，「ものがある」结句。顺序：見る → 人を → 引きつける → ものがある。★ 是「引きつける」。",
+      "en": "「見る」 modifies 「人」, 「人を引きつける」 modifies 「もの」, and 「ものがある」 ends the sentence. Order: 見る → 人を → 引きつける → ものがある. The ★ is 「引きつける」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

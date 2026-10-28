@@ -1,0 +1,427 @@
+[
+  {
+    "id": "n5-l12-001",
+    "type": "bunpou",
+    "refs": ["lesson12#1"],
+    "difficulty": 1,
+    "stem": "もう 12時だ。あしたも 早いから、そろそろ（　）。",
+    "options": ["寝よう", "寝ろう", "寝おう", "寝るよう"],
+    "answer": 0,
+    "full": "もう 12時だ。あしたも 早いから、そろそろ 寝よう。",
+    "tr": {
+      "zh": "已经12点了。明天也要早起，差不多该睡了。",
+      "en": "It's already midnight. I have an early start tomorrow too, so I'd better go to bed."
+    },
+    "why": {
+      "zh": "自言自语“该睡了”是说话人的意志，用意向形。「寝る」是二类动词：る→よう，寝よう。",
+      "en": "Telling yourself \"time for bed\" is the speaker's intention — the volitional form. 「寝る」 is Group 2: る→よう, 「寝よう」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜ろう」是一类动词（如 帰る→帰ろう）的变法，「寝る」是二类动词。",
+        "en": "「〜ろう」 is how Group 1 verbs end (帰る→帰ろう); 「寝る」 is Group 2."
+      },
+      {
+        "zh": "二类动词是去る加「よう」，不是加「おう」。",
+        "en": "Group 2 verbs drop る and add 「よう」, not 「おう」."
+      },
+      {
+        "zh": "意向形不保留辞书形的「る」，「寝るよう」不是意向形。",
+        "en": "The volitional doesn't keep the dictionary-form 「る」; 「寝るよう」 isn't it."
+      }
+    ]
+  },
+  {
+    "id": "n5-l12-002",
+    "type": "bunpou",
+    "refs": ["lesson12#1"],
+    "difficulty": 2,
+    "stem": "来年 日本へ 留学し（　）と 思って います。",
+    "options": ["よう", "ろう", "おう", "ましょう"],
+    "answer": 0,
+    "full": "来年 日本へ 留学しようと 思って います。",
+    "tr": {
+      "zh": "我打算明年去日本留学。",
+      "en": "I'm thinking of going to Japan to study next year."
+    },
+    "why": {
+      "zh": "“意向形＋と思っている”表示打算。「する」的意向形是「しよう」，所以是「留学しよう」。",
+      "en": "\"Volitional ＋ と思っている\" means \"I'm thinking of doing\". The volitional of 「する」 is 「しよう」, giving 「留学しよう」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「する」的意向形是「しよう」，没有「しろう」。",
+        "en": "The volitional of 「する」 is 「しよう」; 「しろう」 doesn't exist."
+      },
+      {
+        "zh": "「おう」接在一类动词的お段后面（買う→買おう），不能接在「し」后面。",
+        "en": "「おう」 is the Group 1 ending (買う→買おう); it doesn't follow 「し」."
+      },
+      {
+        "zh": "「〜ましょう」是对别人说的敬体提议，不能放在「と思っています」前面。",
+        "en": "「〜ましょう」 is a polite suggestion to someone else; it can't go before 「と思っています」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l12-003",
+    "type": "narabe",
+    "refs": ["lesson12#1"],
+    "difficulty": 2,
+    "stem": "週末は [_] [_] [★] [_] います。",
+    "options": ["と", "思って", "料理を", "作ろう"],
+    "order": [2, 3, 0, 1],
+    "full": "週末は 料理を 作ろうと 思って います。",
+    "tr": {
+      "zh": "周末我打算做饭。",
+      "en": "I'm thinking of cooking this weekend."
+    },
+    "why": {
+      "zh": "「料理を作る」→意向形「作ろう」＋「と思っています」（打算）。★ 在第三格，是「と」。",
+      "en": "「料理を作る」 → volitional 「作ろう」 ＋ 「と思っています」 (I'm thinking of). The ★ is the third slot: 「と」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n5-l12-004",
+    "type": "bunpou",
+    "refs": ["lesson12#2"],
+    "difficulty": 1,
+    "stem": "A「夏休みに 何を する（　）ですか。」\nB「国へ 帰ります。」",
+    "options": ["つもり", "たい", "ましょう", "ほしい"],
+    "answer": 0,
+    "full": "A「夏休みに 何を する つもりですか。」 B「国へ 帰ります。」",
+    "tr": {
+      "zh": "A：暑假你打算做什么？ B：回国。",
+      "en": "A: What are you planning to do over the summer break? B: I'm going back to my country."
+    },
+    "why": {
+      "zh": "问对方的打算，用“动词辞书形＋つもりですか”。",
+      "en": "Asking about someone's plans: \"dictionary form ＋ つもりですか\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「たい」接在ます形词干后面（したい），不能接辞书形「する」。",
+        "en": "「たい」 attaches to the ます-stem (したい), not to the dictionary form 「する」."
+      },
+      {
+        "zh": "「ましょう」接ます形词干（しましょう），而且后面不能再加「ですか」。",
+        "en": "「ましょう」 attaches to the ます-stem (しましょう) and can't be followed by 「ですか」."
+      },
+      {
+        "zh": "「ほしい」是“想要（东西）”，接名词＋が，不能接动词辞书形。",
+        "en": "「ほしい」 means wanting a thing and follows 「名詞＋が」, not a dictionary-form verb."
+      }
+    ]
+  },
+  {
+    "id": "n5-l12-005",
+    "type": "bunpou",
+    "refs": ["lesson12#2", "lesson12#4"],
+    "difficulty": 2,
+    "stem": "A「田中さんと 結婚するんですか。」\nB「いいえ、彼と 結婚する（　）は ありません。」",
+    "options": ["つもり", "よう", "たい", "ほしい"],
+    "answer": 0,
+    "full": "A「田中さんと 結婚するんですか。」 B「いいえ、彼と 結婚する つもりは ありません。」",
+    "tr": {
+      "zh": "A：你要和田中结婚吗？ B：不，我没打算和他结婚。",
+      "en": "A: Are you going to marry Tanaka? B: No, I have no intention of marrying him."
+    },
+    "why": {
+      "zh": "“辞书形＋つもりはありません”是“完全没有这个打算”，是 つもり 常见的否定说法。",
+      "en": "\"Dictionary form ＋ つもりはありません\" means \"I have no intention of…\" — the common negative of つもり."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「よう」不是名词，不能说「結婚するようはありません」。",
+        "en": "「よう」 isn't a noun here; 「結婚するようはありません」 isn't Japanese."
+      },
+      {
+        "zh": "「たい」接ます形词干（結婚したい），不接辞书形，也不能后接「はありません」。",
+        "en": "「たい」 follows the ます-stem (結婚したい), not the dictionary form, and can't take 「はありません」."
+      },
+      {
+        "zh": "「ほしい」是想要某物，不能接在动词辞书形后面。",
+        "en": "「ほしい」 is wanting a thing; it can't follow a dictionary-form verb."
+      }
+    ]
+  },
+  {
+    "id": "n5-l12-006",
+    "type": "narabe",
+    "refs": ["lesson12#2"],
+    "difficulty": 1,
+    "stem": "体に よくないので、今年は [_] [_] [★] [_] 。",
+    "options": ["つもり", "飲まない", "です", "お酒を"],
+    "order": [3, 1, 0, 2],
+    "full": "体に よくないので、今年は お酒を 飲まない つもりです。",
+    "tr": {
+      "zh": "因为对身体不好，今年我打算不喝酒。",
+      "en": "It's bad for my health, so this year I intend not to drink."
+    },
+    "why": {
+      "zh": "“打算不做”是“ない形＋つもりだ”：お酒を＋飲まない＋つもり＋です。★ 在第三格，是「つもり」。",
+      "en": "\"Intend not to\" is 「ない形＋つもりだ」: お酒を ＋ 飲まない ＋ つもり ＋ です. The ★ is the third slot: 「つもり」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n5-l12-007",
+    "type": "bunpou",
+    "refs": ["lesson12#3", "lesson12#4"],
+    "difficulty": 1,
+    "stem": "あしたの 会議は 午後 3時に 始まる（　）です。",
+    "options": ["予定", "つもり", "たい", "ほしい"],
+    "answer": 0,
+    "full": "あしたの 会議は 午後 3時に 始まる 予定です。",
+    "tr": {
+      "zh": "明天的会议预定下午3点开始。",
+      "en": "Tomorrow's meeting is scheduled to start at 3 p.m."
+    },
+    "why": {
+      "zh": "主语是「会議」，说的是客观的日程安排，用“辞书形＋予定です”。",
+      "en": "The subject is 「会議」 and this is an objective schedule: \"dictionary form ＋ 予定です\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「つもり」是人的主观打算，会议自己不会“打算”开始。",
+        "en": "「つもり」 is a person's own intention; a meeting can't intend anything."
+      },
+      {
+        "zh": "「たい」接ます形词干，而且表示人的愿望，不能用于会议。",
+        "en": "「たい」 follows the ます-stem and expresses a person's wish, not a meeting's."
+      },
+      {
+        "zh": "「ほしい」是想要某物，不能接动词辞书形。",
+        "en": "「ほしい」 is wanting a thing; it can't follow a dictionary-form verb."
+      }
+    ]
+  },
+  {
+    "id": "n5-l12-008",
+    "type": "bunpou",
+    "refs": ["lesson12#3"],
+    "difficulty": 1,
+    "stem": "あしたは 休み（　）予定です。",
+    "options": ["の", "な", "に", "を"],
+    "answer": 0,
+    "full": "あしたは 休みの 予定です。",
+    "tr": {
+      "zh": "明天预定休息。",
+      "en": "I'm scheduled to have tomorrow off."
+    },
+    "why": {
+      "zh": "「休み」是名词，名词接「予定」要加「の」：名词＋の予定だ。",
+      "en": "「休み」 is a noun, and a noun links to 「予定」 with 「の」: 名詞＋の予定だ."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「な」用于な形容词修饰名词，「休み」是名词。",
+        "en": "「な」 is for な-adjectives before a noun; 「休み」 is a noun."
+      },
+      {
+        "zh": "「に」不能把名词和「予定」连起来。",
+        "en": "「に」 can't link a noun to 「予定」."
+      },
+      {
+        "zh": "「を」是宾语助词，后面要接动词，不能接「予定です」。",
+        "en": "「を」 marks an object and needs a verb after it, not 「予定です」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l12-009",
+    "type": "narabe",
+    "refs": ["lesson12#3"],
+    "difficulty": 2,
+    "stem": "駅の 前の [_] [_] [★] [_] です。",
+    "options": ["できる", "ビルは", "予定", "来年"],
+    "order": [1, 3, 0, 2],
+    "full": "駅の 前の ビルは 来年 できる 予定です。",
+    "tr": {
+      "zh": "车站前的大楼预定明年建成。",
+      "en": "The building in front of the station is scheduled to be finished next year."
+    },
+    "why": {
+      "zh": "「駅の前の」修饰「ビルは」，然后「来年できる」＋「予定です」。★ 在第三格，是「できる」。",
+      "en": "「駅の前の」 modifies 「ビルは」, then 「来年できる」 ＋ 「予定です」. The ★ is the third slot: 「できる」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n5-l12-010",
+    "type": "bunpou",
+    "refs": ["lesson12#5"],
+    "difficulty": 1,
+    "stem": "A「荷物が たくさん ありますね。一つ（　）。」\nB「あ、すみません。ありがとう ございます。」",
+    "options": ["持ちましょうか", "持ちませんか", "持って ください", "持ちたいですか"],
+    "answer": 0,
+    "full": "A「荷物が たくさん ありますね。一つ 持ちましょうか。」 B「あ、すみません。ありがとう ございます。」",
+    "tr": {
+      "zh": "A：你的行李真多啊。我帮你拿一个吧？ B：啊，不好意思。谢谢。",
+      "en": "A: You've got a lot of bags. Shall I carry one for you? B: Oh, sorry — thank you."
+    },
+    "why": {
+      "zh": "B 道谢，说明 A 主动提出帮忙。主动帮忙用「〜ましょうか」（要不要我来……）。",
+      "en": "B thanks A, so A has offered to help. Offering to do something is 「〜ましょうか」 (shall I…?)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜ませんか」是邀请对方一起做（要不要拿一个），B 不会因此道谢。",
+        "en": "「〜ませんか」 invites B to carry one; B wouldn't thank A for that."
+      },
+      {
+        "zh": "「〜てください」是请 B 拿，和 B 道谢的反应对不上。",
+        "en": "「〜てください」 asks B to carry it, which doesn't match B's thanks."
+      },
+      {
+        "zh": "「〜たいですか」是直接问对方愿望，不是提出帮忙，B 不会这样道谢。",
+        "en": "「〜たいですか」 asks what B wants to do; it isn't an offer, so B's thanks don't fit."
+      }
+    ]
+  },
+  {
+    "id": "n5-l12-011",
+    "type": "bunpou",
+    "refs": ["lesson12#5"],
+    "difficulty": 1,
+    "stem": "A「もう 12時ですね。そろそろ 昼ご飯を（　）。」\nB「ええ、そう しましょう。」",
+    "options": ["食べましょう", "食べるましょう", "食べりましょう", "食べてましょう"],
+    "answer": 0,
+    "full": "A「もう 12時ですね。そろそろ 昼ご飯を 食べましょう。」 B「ええ、そう しましょう。」",
+    "tr": {
+      "zh": "A：已经12点了。差不多该吃午饭了吧。 B：嗯，就这么办吧。",
+      "en": "A: It's already noon. Let's have lunch. B: Yes, let's."
+    },
+    "why": {
+      "zh": "「ましょう」接在ます形词干后面。「食べる」是二类动词，词干是「食べ」：食べましょう。",
+      "en": "「ましょう」 attaches to the ます-stem. 「食べる」 is Group 2, so the stem is 「食べ」: 「食べましょう」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ましょう」不接辞书形，要先去掉「る」。",
+        "en": "「ましょう」 doesn't follow the dictionary form; drop 「る」 first."
+      },
+      {
+        "zh": "「食べる」是二类动词，词干是「食べ」，不是「食べり」。",
+        "en": "「食べる」 is Group 2; its stem is 「食べ」, not 「食べり」."
+      },
+      {
+        "zh": "「ましょう」不接て形。",
+        "en": "「ましょう」 doesn't follow the て-form."
+      }
+    ]
+  },
+  {
+    "id": "n5-l12-012",
+    "type": "narabe",
+    "refs": ["lesson12#5"],
+    "difficulty": 1,
+    "stem": "A「この 部屋、暑いですね。[_] [_] [★] [_] か。」\nB「ええ、お願いします。」",
+    "options": ["開け", "窓", "ましょう", "を"],
+    "order": [1, 3, 0, 2],
+    "full": "A「この 部屋、暑いですね。窓を 開けましょうか。」 B「ええ、お願いします。」",
+    "tr": {
+      "zh": "A：这个房间好热啊。我把窗户打开吧？ B：好的，麻烦你了。",
+      "en": "A: It's hot in this room. Shall I open the window? B: Yes, please."
+    },
+    "why": {
+      "zh": "提出帮忙：窓を＋開け（ます形词干）＋ましょう＋か。★ 在第三格，是「開け」。",
+      "en": "An offer: 窓を ＋ 開け (ます-stem) ＋ ましょう ＋ か. The ★ is the third slot: 「開け」."
+    },
+    "wrong": [null, null, null, null]
+  },
+  {
+    "id": "n5-l12-013",
+    "type": "bunpou",
+    "refs": ["lesson12#6"],
+    "difficulty": 1,
+    "stem": "わたしは 新しい 自転車が（　）。",
+    "options": ["ほしいです", "ほしがって います", "買いたがります", "ほしがります"],
+    "answer": 0,
+    "full": "わたしは 新しい 自転車が ほしいです。",
+    "tr": {
+      "zh": "我想要一辆新自行车。",
+      "en": "I want a new bicycle."
+    },
+    "why": {
+      "zh": "主语是「わたし」，说自己想要某物，用“名词＋がほしい”。",
+      "en": "The subject is 「わたし」, wanting a thing: 「名詞＋がほしい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ほしがる」用于第三人称（别人想要），不用来说自己。",
+        "en": "「ほしがる」 is for other people's wants, not your own."
+      },
+      {
+        "zh": "「〜たがる」也是第三人称，而且对象要用「を」，不用「が」。",
+        "en": "「〜たがる」 is also third person, and its object takes 「を」, not 「が」."
+      },
+      {
+        "zh": "「ほしがります」是说别人想要，主语是「わたし」时不用。",
+        "en": "「ほしがります」 describes someone else's want; it isn't used with 「わたし」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l12-014",
+    "type": "bunpou",
+    "refs": ["lesson12#6"],
+    "difficulty": 2,
+    "stem": "妹は いつも わたしの 服を 着（　）。",
+    "options": ["たがります", "たいです", "ほしいです", "ほしがります"],
+    "answer": 0,
+    "full": "妹は いつも わたしの 服を 着たがります。",
+    "tr": {
+      "zh": "妹妹总是想穿我的衣服。",
+      "en": "My little sister always wants to wear my clothes."
+    },
+    "why": {
+      "zh": "主语是「妹」（第三人称），说别人想做某事用“ます形词干＋たがる”。",
+      "en": "The subject is 「妹」 (third person); someone else wanting to do something is \"ます-stem ＋ たがる\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「たい」只用来说自己的愿望，主语是妹妹时不能直接用。",
+        "en": "「たい」 states your own wish; it can't be used directly with 「妹」 as the subject."
+      },
+      {
+        "zh": "「ほしい」接名词，不能接在动词词干「着」后面。",
+        "en": "「ほしい」 follows a noun, not a verb stem like 「着」."
+      },
+      {
+        "zh": "「ほしがる」是“想要某物”，接名词＋を，不能接在动词词干后面。",
+        "en": "「ほしがる」 is wanting a thing (名詞＋を); it doesn't follow a verb stem."
+      }
+    ]
+  },
+  {
+    "id": "n5-l12-015",
+    "type": "narabe",
+    "refs": ["lesson12#6"],
+    "difficulty": 2,
+    "stem": "子どもは いつも [_] [_] [_] [★] います。",
+    "options": ["ものを", "たがって", "甘い", "食べ"],
+    "order": [2, 0, 3, 1],
+    "full": "子どもは いつも 甘い ものを 食べたがって います。",
+    "tr": {
+      "zh": "孩子总是想吃甜的东西。",
+      "en": "Kids always want to eat sweet things."
+    },
+    "why": {
+      "zh": "第三人称的愿望：甘いものを＋食べ（ます形词干）＋たがっています。★ 在第四格，是「たがって」。",
+      "en": "A third person's wish: 甘いものを ＋ 食べ (ます-stem) ＋ たがっています. The ★ is the fourth slot: 「たがって」."
+    },
+    "wrong": [null, null, null, null]
+  }
+]

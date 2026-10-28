@@ -1,0 +1,582 @@
+[
+  {
+    "id": "n3-l36-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson36#1"
+    ],
+    "difficulty": 2,
+    "stem": "今年から 個人情報（　）法律が 一部 変わった。",
+    "options": [
+      "にかけての",
+      "に関する",
+      "にとっての",
+      "にわたる"
+    ],
+    "answer": 1,
+    "full": "今年から 個人情報に関する 法律が 一部 変わった。",
+    "tr": {
+      "zh": "从今年起，有关个人信息的法律有一部分改了。",
+      "en": "From this year, part of the law on personal information has changed."
+    },
+    "why": {
+      "zh": "个人信息是法律涉及的内容，后面紧接名词「法律」，用「に関する」（有关……的）。",
+      "en": "Personal information is what the law is about, and a noun (法律) follows, so it's 「に関する」 (\"concerning\")."
+    },
+    "wrong": [
+      {
+        "zh": "「にかけての」要用「AからBにかけての」表示范围，前面没有「から」，个人信息也不是范围。",
+        "en": "「にかけての」 needs 「AからBにかけての」 (a range); there's no 「から」 and personal data isn't a range."
+      },
+      null,
+      {
+        "zh": "「にとっての法律」是“对个人信息来说的法律”，意思不通。",
+        "en": "「にとっての法律」 (\"a law for personal data\") makes no sense."
+      },
+      {
+        "zh": "「にわたる」接表示期间或范围的词（3日間、広い地域），「個人情報」不是。",
+        "en": "「にわたる」 follows a length of time or an area (3日間, 広い地域); 「個人情報」 is neither."
+      }
+    ]
+  },
+  {
+    "id": "n3-l36-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson36#1"
+    ],
+    "difficulty": 1,
+    "stem": "今回の 事故（　）、社長が 記者会見で 説明した。",
+    "options": [
+      "にとって",
+      "にかけて",
+      "に関して",
+      "を通じて"
+    ],
+    "answer": 2,
+    "full": "今回の 事故に関して、社長が 記者会見で 説明した。",
+    "tr": {
+      "zh": "关于这次事故，社长在记者会上作了说明。",
+      "en": "The company president explained the recent accident at a press conference."
+    },
+    "why": {
+      "zh": "事故是说明的内容，正式场合表示“关于”用「に関して」。",
+      "en": "The accident is what was explained; the formal \"regarding\" is 「に関して」."
+    },
+    "wrong": [
+      {
+        "zh": "「にとって」后面要接评价（重要、困难），不接「説明した」。",
+        "en": "「にとって」 (\"for\") is followed by a judgement, not by 「説明した」."
+      },
+      {
+        "zh": "「にかけて」表示「AからBにかけて」的范围，不能接「事故」。",
+        "en": "「にかけて」 is for ranges like 「AからBにかけて」; it can't follow 「事故」."
+      },
+      null,
+      {
+        "zh": "「を通じて」是“通过（媒介）”，事故不是说明的手段。",
+        "en": "「を通じて」 means \"through (a medium)\"; the accident isn't the means of explaining."
+      }
+    ]
+  },
+  {
+    "id": "n3-l36-003",
+    "type": "narabe",
+    "refs": [
+      "lesson36#1"
+    ],
+    "difficulty": 2,
+    "stem": "新しい 製品 [_] [★] [_] [_] ください。",
+    "options": [
+      "ご質問は",
+      "こちらまで",
+      "お電話",
+      "に関する"
+    ],
+    "order": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "full": "新しい 製品に関する ご質問は こちらまで お電話 ください。",
+    "tr": {
+      "zh": "有关新产品的问题，请打电话到这里。",
+      "en": "For questions about the new product, please call this number."
+    },
+    "why": {
+      "zh": "「に関する」修饰名词「ご質問」，「ご質問は」是主题，再接「こちらまでお電話ください」：に関する → ご質問は → こちらまで → お電話。★ 是「ご質問は」。",
+      "en": "「に関する」 modifies 「ご質問」, which becomes the topic, followed by 「こちらまでお電話ください」: に関する → ご質問は → こちらまで → お電話. The ★ is 「ご質問は」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l36-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson36#2"
+    ],
+    "difficulty": 1,
+    "stem": "日本に 来た ばかりの 外国人（　）、敬語は とても 難しい。",
+    "options": [
+      "に対して",
+      "にとって",
+      "について",
+      "によって"
+    ],
+    "answer": 1,
+    "full": "日本に 来た ばかりの 外国人にとって、敬語は とても 難しい。",
+    "tr": {
+      "zh": "对刚来日本的外国人来说，敬语非常难。",
+      "en": "For foreigners who have just come to Japan, keigo is very difficult."
+    },
+    "why": {
+      "zh": "“很难”是从外国人的立场作出的评价，表示“对……来说”用「にとって」。",
+      "en": "\"Very difficult\" is a judgement from the foreigners' point of view: \"for someone\" is 「にとって」."
+    },
+    "wrong": [
+      {
+        "zh": "「に対して」后面接对人的行为或态度，“敬语对外国人很难”不能用它。",
+        "en": "「に対して」 is followed by behaviour toward someone, not by a judgement like 「難しい」."
+      },
+      null,
+      {
+        "zh": "「について」是“关于”，“关于外国人，敬语很难”意思不对。",
+        "en": "「について」 means \"about\"; \"about foreigners, keigo is hard\" isn't the meaning."
+      },
+      {
+        "zh": "「によって」是“因……而异/由于”，这里不是在说因人而异。",
+        "en": "「によって」 means \"depending on / due to\", which isn't what the sentence says."
+      }
+    ]
+  },
+  {
+    "id": "n3-l36-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson36#2"
+    ],
+    "difficulty": 2,
+    "stem": "A「その 時計、古いのに まだ 使って いるの？」\nB「うん、父に もらった ものだから、私（　）宝物なんだ。」",
+    "options": [
+      "に対しては",
+      "に関しては",
+      "にとっては",
+      "によっては"
+    ],
+    "answer": 2,
+    "full": "A「その 時計、古いのに まだ 使って いるの？」 B「うん、父に もらった ものだから、私にとっては 宝物なんだ。」",
+    "tr": {
+      "zh": "A：那块表那么旧了还在用吗？ B：嗯，是爸爸给我的，对我来说是宝贝。",
+      "en": "A: You're still using that old watch? B: Yes, my father gave it to me, so to me it's a treasure."
+    },
+    "why": {
+      "zh": "“是宝贝”是从我自己的立场作出的评价，用「にとっては」（对我来说）。",
+      "en": "\"It's a treasure\" is a judgement from my own point of view, so 「にとっては」 (\"to me\")."
+    },
+    "wrong": [
+      {
+        "zh": "「に対して」表示行为的对象，“对我是宝贝”不用它。",
+        "en": "「に対して」 marks a target of behaviour; it doesn't introduce a personal judgement."
+      },
+      {
+        "zh": "「に関しては」是“关于……”，“关于我，是宝贝”意思不通。",
+        "en": "「に関しては」 means \"regarding\"; \"regarding me, it's a treasure\" doesn't make sense."
+      },
+      null,
+      {
+        "zh": "「によっては」是“根据……不同（有的）”，“根据我是宝贝”说不通。",
+        "en": "「によっては」 means \"depending on (in some cases)\", which doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n3-l36-006",
+    "type": "narabe",
+    "refs": [
+      "lesson36#2"
+    ],
+    "difficulty": 2,
+    "stem": "駅が できた ことは、この [_] [_] [★] [_] ニュースだ。",
+    "options": [
+      "人々",
+      "うれしい",
+      "町の",
+      "にとって"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "駅が できた ことは、この 町の 人々にとって うれしい ニュースだ。",
+    "tr": {
+      "zh": "车站建成，对这个镇上的人来说是个好消息。",
+      "en": "The opening of the station is happy news for the people of this town."
+    },
+    "why": {
+      "zh": "「この町の人々」是立场的主体，接「にとって」，再接评价「うれしいニュース」：町の → 人々 → にとって → うれしい。★ 是「にとって」。",
+      "en": "「この町の人々」 is whose point of view it is, followed by 「にとって」 and the judgement 「うれしいニュース」: 町の → 人々 → にとって → うれしい. The ★ is 「にとって」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l36-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson36#3"
+    ],
+    "difficulty": 2,
+    "stem": "この 会社では、法律（　）、社員の 個人情報を 管理して いる。",
+    "options": [
+      "にかけて",
+      "に基づいて",
+      "にとって",
+      "にわたって"
+    ],
+    "answer": 1,
+    "full": "この 会社では、法律に基づいて、社員の 個人情報を 管理して いる。",
+    "tr": {
+      "zh": "这家公司依据法律管理员工的个人信息。",
+      "en": "This company manages its employees' personal information in accordance with the law."
+    },
+    "why": {
+      "zh": "法律是管理的依据，表示“以……为依据”用「に基づいて」。",
+      "en": "The law is the basis for how the data is managed: \"in accordance with\" is 「に基づいて」."
+    },
+    "wrong": [
+      {
+        "zh": "「にかけて」要用「AからBにかけて」表示范围，不能接「法律」。",
+        "en": "「にかけて」 needs 「AからBにかけて」 (a range); it can't follow 「法律」."
+      },
+      null,
+      {
+        "zh": "「にとって」后面接评价，“对法律来说管理信息”说不通。",
+        "en": "「にとって」 (\"for\") is followed by a judgement; \"for the law, we manage data\" makes no sense."
+      },
+      {
+        "zh": "「にわたって」表示时间、范围的跨度，法律不是期间或范围。",
+        "en": "「にわたって」 expresses a span of time or area; a law isn't one."
+      }
+    ]
+  },
+  {
+    "id": "n3-l36-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson36#3"
+    ],
+    "difficulty": 2,
+    "stem": "これは 過去 10年の データ（　）予測です。",
+    "options": [
+      "に基づいて",
+      "にかけての",
+      "に基づいた",
+      "にとって"
+    ],
+    "answer": 2,
+    "full": "これは 過去 10年の データに基づいた 予測です。",
+    "tr": {
+      "zh": "这是基于过去10年数据的预测。",
+      "en": "This is a forecast based on data from the past ten years."
+    },
+    "why": {
+      "zh": "空格后紧接名词「予測」，修饰名词要用「に基づいた」或「に基づく」。",
+      "en": "The blank is right before the noun 「予測」, so it needs a noun-modifying form: 「に基づいた」 (or 「に基づく」)."
+    },
+    "wrong": [
+      {
+        "zh": "「に基づいて」修饰动词，不能直接接名词「予測」。",
+        "en": "「に基づいて」 modifies a verb; it can't go straight before the noun 「予測」."
+      },
+      {
+        "zh": "「にかけての」要用「AからBにかけての」，前面没有「から」。",
+        "en": "「にかけての」 needs 「AからBにかけての」, and there's no 「から」 here."
+      },
+      null,
+      {
+        "zh": "「にとって」不能直接修饰名词，意思（对……来说）也不对。",
+        "en": "「にとって」 can't modify a noun directly, and \"for\" is the wrong meaning."
+      }
+    ]
+  },
+  {
+    "id": "n3-l36-009",
+    "type": "narabe",
+    "refs": [
+      "lesson36#3"
+    ],
+    "difficulty": 2,
+    "stem": "医者は 治療の 方法を [_] [_] [★] [_]。",
+    "options": [
+      "基づいて",
+      "検査の",
+      "決めた",
+      "結果に"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "医者は 治療の 方法を 検査の 結果に 基づいて 決めた。",
+    "tr": {
+      "zh": "医生根据检查结果决定了治疗方法。",
+      "en": "The doctor decided on the treatment based on the test results."
+    },
+    "why": {
+      "zh": "「検査の結果」是依据，接「に基づいて」，最后是谓语「決めた」：検査の → 結果に → 基づいて → 決めた。★ 是「基づいて」。",
+      "en": "「検査の結果」 is the basis, followed by 「に基づいて」 and the verb 「決めた」: 検査の → 結果に → 基づいて → 決めた. The ★ is 「基づいて」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l36-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson36#4"
+    ],
+    "difficulty": 1,
+    "stem": "今夜から 明日の 朝（　）、強い 雨が 降るでしょう。",
+    "options": [
+      "によって",
+      "を通じて",
+      "において",
+      "にかけて"
+    ],
+    "answer": 3,
+    "full": "今夜から 明日の 朝にかけて、強い 雨が 降るでしょう。",
+    "tr": {
+      "zh": "从今晚到明天早上，可能会下大雨。",
+      "en": "Heavy rain is expected from tonight through tomorrow morning."
+    },
+    "why": {
+      "zh": "「今夜から」与空格呼应，「AからBにかけて」表示从A到B的大致时间范围。",
+      "en": "「今夜から」 pairs with the blank: 「AからBにかけて」 is \"from A through B\", a rough time range."
+    },
+    "wrong": [
+      {
+        "zh": "「によって」是“根据/因为……”，“因明天早上下雨”说不通，也不和「から」呼应。",
+        "en": "「によって」 means \"depending on / due to\"; it doesn't pair with 「から」 to make a time range."
+      },
+      {
+        "zh": "「を通じて」是“贯穿整个期间”，接「一年」等词，不和「から」搭配。",
+        "en": "「を通じて」 means \"throughout\" a whole period (一年を通じて); it doesn't pair with 「から」."
+      },
+      {
+        "zh": "「において」表示场所、领域，不表示时间范围。",
+        "en": "「において」 marks a place or field, not a time range."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n3-l36-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson36#4"
+    ],
+    "difficulty": 2,
+    "stem": "関東から 東北（　）地域で 大きな 地震が あった。",
+    "options": [
+      "にかけて",
+      "にかけての",
+      "に対する",
+      "にとっての"
+    ],
+    "answer": 1,
+    "full": "関東から 東北にかけての 地域で 大きな 地震が あった。",
+    "tr": {
+      "zh": "从关东到东北一带发生了大地震。",
+      "en": "There was a large earthquake in the area from Kanto to Tohoku."
+    },
+    "why": {
+      "zh": "「AからBにかけて」表示空间范围，后面紧接名词「地域」，所以用「にかけての」。",
+      "en": "「AからBにかけて」 marks a range of places; since a noun (地域) follows, it's 「にかけての」."
+    },
+    "wrong": [
+      {
+        "zh": "「にかけて」不能直接接名词「地域」，要加「の」。",
+        "en": "「にかけて」 can't go straight before the noun 「地域」; it needs 「の」."
+      },
+      null,
+      {
+        "zh": "「に対する地域」是“针对东北的地区”，意思不通，也和「から」接不上。",
+        "en": "「に対する地域」 (\"an area toward Tohoku\") makes no sense and doesn't pair with 「から」."
+      },
+      {
+        "zh": "「にとっての地域」是“对东北来说的地区”，意思不通。",
+        "en": "「にとっての地域」 (\"an area for Tohoku\") makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n3-l36-012",
+    "type": "narabe",
+    "refs": [
+      "lesson36#4"
+    ],
+    "difficulty": 1,
+    "stem": "毎年 [_] [_] [★] [_] 花が 咲きます。",
+    "options": [
+      "いろいろな",
+      "春から",
+      "かけて",
+      "夏に"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "毎年 春から 夏に かけて いろいろな 花が 咲きます。",
+    "tr": {
+      "zh": "每年从春天到夏天，会开各种各样的花。",
+      "en": "Every year all kinds of flowers bloom from spring into summer."
+    },
+    "why": {
+      "zh": "「春から夏にかけて」表示时间范围，「いろいろな」修饰「花」：春から → 夏に → かけて → いろいろな。★ 是「かけて」。",
+      "en": "「春から夏にかけて」 is the time range and 「いろいろな」 modifies 「花」: 春から → 夏に → かけて → いろいろな. The ★ is 「かけて」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l36-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson36#5"
+    ],
+    "difficulty": 1,
+    "stem": "昨日の 会議は 5時間（　）続いた。",
+    "options": [
+      "にかけて",
+      "にわたって",
+      "に対して",
+      "によって"
+    ],
+    "answer": 1,
+    "full": "昨日の 会議は 5時間にわたって 続いた。",
+    "tr": {
+      "zh": "昨天的会议持续了5个小时。",
+      "en": "Yesterday's meeting went on for five hours."
+    },
+    "why": {
+      "zh": "「5時間」是持续的期间，强调时间之长用「にわたって」。",
+      "en": "「5時間」 is how long it lasted; stressing a long span is 「にわたって」."
+    },
+    "wrong": [
+      {
+        "zh": "「にかけて」要用「AからBにかけて」，不能直接接表示时长的「5時間」。",
+        "en": "「にかけて」 needs 「AからBにかけて」; it can't follow a length like 「5時間」."
+      },
+      null,
+      {
+        "zh": "「に対して」表示对象，“对5小时持续”说不通。",
+        "en": "「に対して」 marks a target; \"continued toward five hours\" makes no sense."
+      },
+      {
+        "zh": "「によって」是“因……/根据……”，“因5小时而持续”说不通。",
+        "en": "「によって」 means \"due to / depending on\", which doesn't fit a length of time."
+      }
+    ]
+  },
+  {
+    "id": "n3-l36-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson36#5"
+    ],
+    "difficulty": 2,
+    "stem": "10年（　）研究の 結果が ついに 発表された。",
+    "options": [
+      "にわたって",
+      "にかけての",
+      "に基づく",
+      "にわたる"
+    ],
+    "answer": 3,
+    "full": "10年にわたる 研究の 結果が ついに 発表された。",
+    "tr": {
+      "zh": "长达10年的研究结果终于发表了。",
+      "en": "The results of ten years of research were finally announced."
+    },
+    "why": {
+      "zh": "「10年」是研究持续的期间，空格后紧接名词「研究」，修饰名词用「にわたる」。",
+      "en": "「10年」 is how long the research took, and a noun (研究) follows, so it's 「にわたる」."
+    },
+    "wrong": [
+      {
+        "zh": "「にわたって」修饰动词，不能直接接名词「研究」。",
+        "en": "「にわたって」 modifies a verb; it can't go straight before the noun 「研究」."
+      },
+      {
+        "zh": "「にかけての」要用「AからBにかけての」，前面没有「から」。",
+        "en": "「にかけての」 needs 「AからBにかけての」, and there's no 「から」 here."
+      },
+      {
+        "zh": "「に基づく」是“基于……”，“基于10年的研究”说不通，10年不是依据。",
+        "en": "「に基づく」 means \"based on\"; ten years isn't a basis."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n3-l36-015",
+    "type": "narabe",
+    "refs": [
+      "lesson36#5"
+    ],
+    "difficulty": 2,
+    "stem": "社長の [_] [_] [_] [★] やっと 終わった。",
+    "options": [
+      "に",
+      "話が",
+      "3時間",
+      "わたる"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "社長の 3時間 に わたる 話が やっと 終わった。",
+    "tr": {
+      "zh": "社长长达3小时的讲话终于结束了。",
+      "en": "The president's three-hour speech finally ended."
+    },
+    "why": {
+      "zh": "「3時間にわたる」修饰名词「話」，「話が」是「終わった」的主语：3時間 → に → わたる → 話が。★ 是「話が」。",
+      "en": "「3時間にわたる」 modifies 「話」, and 「話が」 is the subject of 「終わった」: 3時間 → に → わたる → 話が. The ★ is 「話が」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

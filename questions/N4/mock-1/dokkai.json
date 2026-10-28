@@ -1,0 +1,291 @@
+[
+  {
+    "id": "n4-m1-p1",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "留学生の チャンさんが 「日本の ゴミ」に ついて 作文を 書きました。",
+    "passage": "わたしが 日本に 来て、いちばん おどろいたのは ゴミの 出し方です。日本では、ゴミを いくつかの 種類に 分けて、決められた 日に 出さなければ なりません。\n来た ばかりの ころ、わたしは それを 知らなくて、月曜日に びんを 出して [[1]]。すると、となりの 人に 「びんは 木曜日ですよ」と [[2]]。とても はずかしかったです。\n[[3]]、わたしは 市役所で ゴミの カレンダーを もらって、冷蔵庫に はって おきました。今は 毎朝 カレンダーを 見てから ゴミを 出す [[4]]。はじめは めんどうでしたが、もう なれました。",
+    "tr": {
+      "zh": "我来日本后最吃惊的是扔垃圾的方法。在日本，必须把垃圾分成几类，在规定的日子扔。刚来的时候我不知道这些，星期一就把瓶子扔出去了。结果被邻居说：“瓶子是星期四哦。”我非常难为情。所以我在市政府领了垃圾日历，事先贴在了冰箱上。现在我每天早上都会先看日历再扔垃圾。一开始觉得麻烦，现在已经习惯了。",
+      "en": "What surprised me most when I came to Japan was how you put out the rubbish. In Japan you have to sort it into several kinds and put it out on fixed days. When I had just arrived I didn't know that, and I went and put my bottles out on a Monday. Then my neighbour told me, “Bottles are Thursdays.” I was so embarrassed. So I got a rubbish calendar from the city office and stuck it on my fridge. Now I've got into the habit of checking the calendar every morning before putting the rubbish out. It was a nuisance at first, but I'm used to it now."
+    },
+    "questions": [
+      {
+        "options": ["しまいました", "おきました", "ありました", "くれました"],
+        "answer": 0,
+        "why": {
+          "zh": "不知道规定，在错的日子扔了瓶子——无意中做了不好的事，用表示遗憾的「〜て しまいました」。",
+          "en": "Not knowing the rule, the writer put the bottles out on the wrong day — an unintended mistake, so the regretful 「〜て しまいました」."
+        },
+        "wrong": [
+          null,
+          { "zh": "「〜て おきました」是有意事先做好，可作者是因为不知道才扔错的。", "en": "「〜て おきました」 is doing something on purpose in advance, but the writer did it out of ignorance." },
+          { "zh": "「〜て ありました」描述状态，要用「びんが」，不能表示作者自己做的事。", "en": "「〜て ありました」 describes a state (with 「びんが」); it can't narrate what the writer did." },
+          { "zh": "「〜て くれました」是别人为我做，这里扔瓶子的是作者自己。", "en": "「〜て くれました」 is someone doing something for me, but the writer put the bottles out." }
+        ]
+      },
+      {
+        "options": ["言われました", "言いました", "言わせました", "言って あげました"],
+        "answer": 0,
+        "why": {
+          "zh": "说「びんは 木曜日ですよ」的是邻居（「となりの 人に」），作者是被说的一方，用被动「言われました」；所以接着觉得「はずかしかった」。",
+          "en": "The neighbour (「となりの 人に」) said 「びんは 木曜日ですよ」 and the writer was on the receiving end — passive 「言われました」, which is why they felt embarrassed."
+        },
+        "wrong": [
+          null,
+          { "zh": "「言いました」就成了作者对邻居说，可是不懂规定的是作者，而且接不上「はずかしかった」。", "en": "「言いました」 would have the writer telling the neighbour — but the writer is the one who didn't know the rule." },
+          { "zh": "「言わせました」是作者让邻居说，意思不通。", "en": "「言わせました」 means the writer made the neighbour say it — makes no sense." },
+          { "zh": "「言って あげました」是作者好心告诉邻居，方向反了。", "en": "「言って あげました」 has the writer kindly telling the neighbour — the wrong way round." }
+        ]
+      },
+      {
+        "options": ["それで", "しかし", "それに", "たとえば"],
+        "answer": 0,
+        "why": {
+          "zh": "因为扔错被提醒、很难为情，于是去领了垃圾日历——前面是原因，后面是结果，用「それで」。",
+          "en": "Being embarrassed after the mistake is why the writer got the calendar — cause then result, so 「それで」."
+        },
+        "wrong": [
+          null,
+          { "zh": "「しかし」表示转折，可领日历正是扔错之后自然的做法，不是相反的事。", "en": "「しかし」 signals a contrast, but getting the calendar is the natural response, not an opposite." },
+          { "zh": "「それに」是“而且”，用来追加同类的事，这里是因果关系。", "en": "「それに」 adds another point of the same kind; here it's cause and effect." },
+          { "zh": "「たとえば」是举例，后面不是前文的例子。", "en": "「たとえば」 introduces an example, and what follows isn't one." }
+        ]
+      },
+      {
+        "options": ["ように なりました", "ように しましょう", "ことに なりました", "ところでした"],
+        "answer": 0,
+        "why": {
+          "zh": "「今は」＋「もう なれました」：从不知道规定到现在养成了先看日历的习惯，是变化，用「ように なりました」。",
+          "en": "「今は」 and 「もう なれました」: from not knowing the rule to now habitually checking first — a change, so 「ように なりました」."
+        },
+        "wrong": [
+          null,
+          { "zh": "「ように しましょう」是劝诱或号召，不能用来叙述作者现在的习惯。", "en": "「ように しましょう」 is a suggestion (let's try to), not a description of the writer's habit now." },
+          { "zh": "「ことに なりました」表示别人或规则决定，叙述的是作者自己养成的习惯，而且接不上「今は」。", "en": "「ことに なりました」 means it was decided for them; this is a habit the writer formed." },
+          { "zh": "「出す ところでした」是“差点扔了”，和每天早上的习惯不符。", "en": "「出す ところでした」 means \"I almost put it out\" — not an everyday habit." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-m1-p2",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "マンションの 入り口に、この お知らせが はって あります。",
+    "passage": "マンションに 住んで いる みなさんへ\n\n11月10日（水）の 午前9時から 午後3時まで、エレベーターの 工事が あります。この 間、エレベーターは 使えません。\nこの 日に 重い 荷物が とどく 人は、工事の 前の 日までに 管理室に 連絡して ください。管理室の 人が 荷物を 部屋まで 運びます。\n\nさくらマンション 管理室",
+    "tr": {
+      "zh": "致住在本公寓的各位：11月10日（周三）上午9点到下午3点，电梯施工。在此期间电梯不能使用。这天有重的包裹送到的住户，请在施工前一天之前联系管理室。管理室的人会把包裹搬到房间。樱花公寓管理室",
+      "en": "To all residents: On Wednesday 10 November, from 9 am to 3 pm, there will be work on the elevator, and it can't be used during that time. If a heavy delivery is coming to you that day, please contact the management office by the day before the work. Office staff will carry the parcel up to your flat. — Sakura Mansion Management Office"
+    },
+    "questions": [
+      {
+        "q": "10日に 重い 荷物が とどく 人は、どう しなければ なりませんか。",
+        "options": [
+          "9日までに 管理室に 連絡する。",
+          "10日の 午前9時までに 管理室に 連絡する。",
+          "10日に 自分で 荷物を 部屋まで 運ぶ。",
+          "10日の 午後3時から 管理室へ 荷物を 取りに 行く。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "通知要求「工事の 前の 日までに 管理室に 連絡して ください」，施工是10日，前一天是9日。",
+          "en": "The notice says 「工事の 前の 日までに 管理室に 連絡して ください」; the work is on the 10th, so the day before is the 9th."
+        },
+        "wrong": [
+          null,
+          { "zh": "要在施工“前一天”之前联系，当天早上9点前就晚了。", "en": "Contact must be made by the day before; 9 am on the day itself is too late." },
+          { "zh": "通知说包裹由「管理室の 人」搬到房间，不用自己搬。", "en": "The notice says office staff (「管理室の 人」) carry it up — residents don't." },
+          { "zh": "通知没有让住户去管理室取包裹，是管理员把包裹送到房间。", "en": "Residents aren't asked to collect anything; staff bring parcels to the flat." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-m1-p3",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "リンさんに、友だちの ゆかさんから メールが 来ました。",
+    "passage": "リンさん\n\nきのうは 本を 貸して くれて、ありがとう。とても おもしろくて、一晩で 読んで しまいました。\n土曜日に 返す つもりでしたが、妹も 読みたいと 言って いるので、もう 少し 借りても いいですか。来週の 水曜日までに かならず 返します。\nもし 早く 必要だったら、教えて ください。\n\nゆか",
+    "tr": {
+      "zh": "林：谢谢你昨天借书给我。太有意思了，我一个晚上就看完了。本来打算星期六还，但我妹妹也说想看，能再借一阵吗？下周三之前一定还。如果你急着用，请告诉我。由香",
+      "en": "Lin — Thanks for lending me the book yesterday. It was so good I finished it in one night. I meant to give it back on Saturday, but my sister says she wants to read it too — could I keep it a little longer? I'll definitely return it by next Wednesday. If you need it sooner, just tell me. — Yuka"
+    },
+    "questions": [
+      {
+        "q": "ゆかさんが この メールで いちばん 言いたい ことは 何ですか。",
+        "options": [
+          "本を 返す 日を 少し おそく したい。",
+          "本を 全部 読んだので、土曜日に 返したい。",
+          "リンさんに 妹の 本を 貸して ほしい。",
+          "リンさんに もう 一さつ 本を 貸して ほしい。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "原本打算星期六还，但妹妹也想看，所以问「もう 少し 借りても いいですか」，改到下周三之前还——就是想晚一点还。",
+          "en": "She planned to return it Saturday, but her sister wants to read it, so she asks 「もう 少し 借りても いいですか」 and offers next Wednesday — she wants to return it later."
+        },
+        "wrong": [
+          null,
+          { "zh": "她确实看完了，但「土曜日に 返す つもりでしたが」后面改了主意，不想星期六还了。", "en": "She did finish it, but 「土曜日に 返す つもりでしたが」 shows she's changed that plan." },
+          { "zh": "想看书的是由香的妹妹，借的还是林的那本书，不是借妹妹的书。", "en": "It's Yuka's sister who wants to read Lin's book — nobody asks to borrow the sister's book." },
+          { "zh": "她想多借的是同一本书，邮件里没有再借一本的请求。", "en": "She wants to keep the same book longer; she doesn't ask for another one." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-m1-p4",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは 会社員の 森さんが 書いた 文章です。",
+    "passage": "わたしは 毎朝 家から 駅まで バスに 乗って いましたが、先月から 歩いて 行く ように して います。歩くと 二十分 かかるので、前より 十五分 早く 家を 出なければ なりません。はじめは 大変でしたが、朝 歩くと 気持ちが いいし、夜も よく ねむれる ように なりました。でも、雨の 日だけは 今も バスに 乗って います。",
+    "tr": {
+      "zh": "我以前每天早上从家坐公交车到车站，从上个月起尽量走着去。走路要二十分钟，所以必须比以前早十五分钟出门。一开始很辛苦，不过早上走走心情很好，晚上也睡得好了。但是只有下雨天现在还是坐公交车。",
+      "en": "I used to take the bus from home to the station every morning, but since last month I've been making a point of walking. It takes twenty minutes on foot, so I have to leave fifteen minutes earlier than before. It was hard at first, but walking in the morning feels good, and I've started sleeping well at night too. Only on rainy days do I still take the bus."
+    },
+    "questions": [
+      {
+        "q": "森さんに ついて、正しい ものは どれですか。",
+        "options": [
+          "今は、雨が ふらない 日は 駅まで 歩いて いる。",
+          "今も 毎朝 バスで 駅まで 行って いる。",
+          "歩くと、バスより 十五分 早く 駅に 着く。",
+          "歩くように なってから、夜 あまり ねむれない。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "从上个月起「歩いて 行く ように して います」，只有「雨の 日だけは 今も バスに 乗って います」，所以不下雨的日子走路去车站。",
+          "en": "Since last month he's been walking, and 「雨の 日だけは 今も バスに 乗って います」 — so on days without rain he walks."
+        },
+        "wrong": [
+          null,
+          { "zh": "每天坐公交车是以前的事，现在只有下雨天才坐。", "en": "Taking the bus every morning was before; now it's only on rainy days." },
+          { "zh": "反了：走路要比以前早十五分钟出门，说明走路比坐车慢。", "en": "Backwards: he has to leave fifteen minutes earlier, so walking is slower." },
+          { "zh": "文中说「夜も よく ねむれる ように なりました」，是睡得更好了。", "en": "The text says 「夜も よく ねむれる ように なりました」 — he sleeps better now." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-m1-p5",
+    "type": "mid",
+    "difficulty": 2,
+    "intro": "これは 留学生の ハンさんが 書いた 作文です。",
+    "passage": "コンビニの アルバイト\n\nわたしは 半年 前から、家の 近くの コンビニで アルバイトを して います。日本語の 練習に なると 思って、始めました。\nはじめの 一か月は 本当に 大変でした。お客さんと 話す ときは、学校で あまり 習わない ていねいな ことばを たくさん 使わなければ なりません。ある日、お客さんに トイレの 場所を 聞かれて、「あちらに あります」と 答えたら、あとで 店長に 「お客さんには 『あちらに ございます』と 言って ください」と 注意されました。\nそれで、わたしは 店で よく 使う ことばを ノートに 書いて、休み時間に 練習する ように しました。店長も 毎日 少しずつ 教えて くれました。三か月ぐらい たつと、お客さんと 話すのが こわく なくなりました。先週は、よく 来る おばあさんに 「日本語、上手に なったね」と 言われて、とても うれしかったです。\n今 いちばん むずかしいのは 電話です。相手の 顔が 見えないし、みんな 話すのが 速いので、まだ よく 聞き取れません。でも、来月からは 一人で 電話に 出る ことに なって いるので、今は 毎日 店長と 電話の 練習を して います。",
+    "tr": {
+      "zh": "便利店打工。我从半年前开始在家附近的便利店打工。我觉得这能练习日语，就开始了。头一个月真的很辛苦。和客人说话时，必须用很多学校里不怎么学的礼貌用语。有一天，客人问我厕所在哪里，我回答「あちらに あります」，后来被店长提醒：“对客人请说『あちらに ございます』。”所以我把店里常用的说法写在本子上，休息时间练习。店长也每天一点点地教我。过了大约三个月，我和客人说话就不害怕了。上周，常来的一位老奶奶对我说“你日语变好了呢”，我非常高兴。现在最难的是电话。看不见对方的脸，而且大家说话都很快，我还听不太清楚。不过，下个月起我要一个人接电话了，所以现在每天和店长练习打电话。",
+      "en": "My convenience-store job. For the past six months I've worked part-time at a convenience store near my home. I started because I thought it would be good Japanese practice. The first month was really hard. When you talk to customers you have to use lots of polite expressions you hardly learn at school. One day a customer asked me where the toilet was, and I answered 「あちらに あります」; afterwards the manager told me, “With customers, please say 『あちらに ございます』.” So I wrote the phrases we often use in the shop in a notebook and practised them in my breaks. The manager also taught me a little every day. After about three months I wasn't scared of talking to customers any more. Last week an old lady who often comes in said, “Your Japanese has got good,” and I was really happy. What's hardest now is the phone. I can't see the other person's face, and everyone talks fast, so I still can't catch it well. But from next month I'm to answer the phone on my own, so I'm practising phone calls with the manager every day."
+    },
+    "questions": [
+      {
+        "q": "店長は どうして ハンさんに 注意しましたか。",
+        "difficulty": 2,
+        "options": [
+          "お客さんに ていねいな ことばを 使わなかったから",
+          "お客さんに トイレの 場所を まちがえて 教えたから",
+          "お客さんの 話が 聞き取れなかったから",
+          "休み時間に ことばの 練習を しなかったから"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "韩同学回答「あちらに あります」，店长说对客人要说更礼貌的「あちらに ございます」——问题在于没有用礼貌用语。",
+          "en": "Han said 「あちらに あります」 and the manager said to use the politer 「あちらに ございます」 with customers — the problem was not using polite language."
+        },
+        "wrong": [
+          null,
+          { "zh": "店长只是纠正说法（「ございます」），并没有说厕所的位置说错了。", "en": "The manager only corrected the wording (「ございます」), not the location." },
+          { "zh": "听不清的是电话，那是现在的困难，不是被提醒的原因。", "en": "Not catching what people say is about the phone, today's problem — not why the manager spoke up." },
+          { "zh": "休息时间练习是被提醒“之后”才开始的（「それで」），不是被提醒的原因。", "en": "Practising in breaks started after the correction (「それで」); it wasn't the reason for it." }
+        ]
+      },
+      {
+        "q": "ハンさんは お客さんと 話すのが こわく なくなる まえに、何を しましたか。",
+        "difficulty": 2,
+        "options": [
+          "店で 使う ことばを ノートに 書いて、休み時間に 練習した。",
+          "学校で 店の ていねいな ことばを 習った。",
+          "よく 来る おばあさんに 日本語を 教えて もらった。",
+          "毎日 店長と 電話の 練習を した。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "被提醒后，「店で よく 使う ことばを ノートに 書いて、休み時間に 練習する ように しました」，大约三个月后就不怕和客人说话了。",
+          "en": "After the correction he wrote shop phrases in a notebook and practised in his breaks; about three months later he was no longer scared of customers."
+        },
+        "wrong": [
+          null,
+          { "zh": "文中说这些礼貌用语是「学校で あまり 習わない」的。", "en": "The text says these polite phrases are ones 「学校で あまり 習わない」." },
+          { "zh": "老奶奶只是夸他日语变好了，教他的是店长。", "en": "The old lady only praised his Japanese; it was the manager who taught him." },
+          { "zh": "和店长练电话是“现在”为下个月做准备，在不怕和客人说话之后。", "en": "Phone practice with the manager is happening now, to prepare for next month — after he'd stopped being scared." }
+        ]
+      },
+      {
+        "q": "ハンさんに ついて、正しい ものは どれですか。",
+        "difficulty": 3,
+        "options": [
+          "来月から 一人で 電話に 出る ことに なって いる。",
+          "今は 電話の 日本語も よく 聞き取れる。",
+          "来月から 店長と 電話の 練習を 始める。",
+          "今も お客さんと 話すのが こわい。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "最后一段：「来月からは 一人で 電話に 出る ことに なって いる」，所以现在每天和店长练习。",
+          "en": "Last paragraph: 「来月からは 一人で 電話に 出る ことに なって いる」, which is why he practises with the manager now."
+        },
+        "wrong": [
+          null,
+          { "zh": "文中说电话「まだ よく 聞き取れません」。", "en": "The text says he 「まだ よく 聞き取れません」 on the phone." },
+          { "zh": "和店长练电话是现在（「今は 毎日」）就在做的事，下个月起是一个人接电话。", "en": "Phone practice with the manager is already happening (「今は 毎日」); next month he answers alone." },
+          { "zh": "三个月左右以后「お客さんと 話すのが こわく なくなりました」，现在不怕了。", "en": "After about three months 「お客さんと 話すのが こわく なくなりました」 — he isn't scared now." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-m1-p6",
+    "type": "info",
+    "difficulty": 2,
+    "intro": "マリアさんは 市民センターの 教室に 入りたいと 思って います。月曜日から 金曜日まで、午前9時から 午後6時まで 仕事が あります。センターの 会員では ありません。",
+    "passage": "みどり市民センター　秋の 教室（10月〜12月）\n| 教室 | 曜日 | 時間 | 回数 | お金 |\n| 日本料理 | 火 | 10:00〜12:00 | 8回 | 6,000円 |\n| パン作り | 木 | 18:30〜20:30 | 6回 | 5,000円 |\n| ヨガ | 水 | 19:00〜20:00 | 10回 | 4,000円 |\n| 書道 | 土 | 13:00〜15:00 | 8回 | 3,000円 |\n| 生け花 | 日 | 10:00〜12:00 | 5回 | 7,000円 |\n・料理の 教室（日本料理・パン作り）は、上の お金の ほかに、毎回 材料費が 500円 かかります。\n・センターの 会員は、上の お金が 1,000円 安く なります。\n・申し込みは 9月20日までに、センターの 受付か 電話で して ください。",
+    "tr": {
+      "zh": "绿市市民中心 秋季课程（10月至12月）。日本料理：周二 10:00–12:00，8次，6,000日元。面包制作：周四 18:30–20:30，6次，5,000日元。瑜伽：周三 19:00–20:00，10次，4,000日元。书法：周六 13:00–15:00，8次，3,000日元。插花：周日 10:00–12:00，5次，7,000日元。料理课（日本料理、面包制作）除上述费用外，每次另收材料费500日元。中心会员的上述费用便宜1,000日元。请在9月20日之前到中心前台或打电话报名。",
+      "en": "Midori Community Centre — autumn classes (Oct–Dec). Japanese cooking: Tue 10:00–12:00, 8 sessions, ¥6,000. Bread making: Thu 18:30–20:30, 6 sessions, ¥5,000. Yoga: Wed 19:00–20:00, 10 sessions, ¥4,000. Calligraphy: Sat 13:00–15:00, 8 sessions, ¥3,000. Flower arranging: Sun 10:00–12:00, 5 sessions, ¥7,000. The cooking classes (Japanese cooking, bread making) also charge ¥500 for ingredients each session, on top of the fee. Centre members pay ¥1,000 less on the fee. Apply by 20 September at the centre's front desk or by phone."
+    },
+    "questions": [
+      {
+        "q": "マリアさんは 料理の 教室に 入りたいです。全部で いくら はらいますか。",
+        "difficulty": 2,
+        "options": ["8,000円", "5,000円", "7,000円", "10,000円"],
+        "answer": 0,
+        "why": {
+          "zh": "日本料理在周二上午，玛丽亚要上班，只能上周四晚上的面包制作：5,000日元＋材料费500日元×6次＝8,000日元。她不是会员，没有优惠。",
+          "en": "Japanese cooking is Tuesday morning, when Maria works, so it's Thursday evening bread making: ¥5,000 + ¥500 × 6 sessions = ¥8,000. She isn't a member, so no discount."
+        },
+        "wrong": [
+          null,
+          { "zh": "5,000日元只是课程费，忘了料理课每次还要500日元材料费。", "en": "¥5,000 is just the fee — it forgets the ¥500 ingredients charge per session." },
+          { "zh": "7,000日元是减去了会员优惠1,000日元，但玛丽亚不是会员。", "en": "¥7,000 takes off the ¥1,000 member discount, but Maria isn't a member." },
+          { "zh": "10,000日元是日本料理（6,000＋500×8），可那是周二上午，玛丽亚在上班。", "en": "¥10,000 is Japanese cooking (6,000 + 500 × 8), but that's Tuesday morning, when Maria is at work." }
+        ]
+      },
+      {
+        "q": "マリアさんの 友だちの 林さんは センターの 会員です。土曜日か 日曜日の 教室で、いちばん 安い ものに 入りたいです。林さんは どの 教室に いくら はらいますか。",
+        "difficulty": 2,
+        "options": ["書道に 2,000円", "書道に 3,000円", "ヨガに 3,000円", "生け花に 6,000円"],
+        "answer": 0,
+        "why": {
+          "zh": "周末的课只有周六的书法（3,000日元）和周日的插花（7,000日元），书法最便宜；林是会员，便宜1,000日元，所以是2,000日元。",
+          "en": "The weekend classes are Saturday calligraphy (¥3,000) and Sunday flower arranging (¥7,000); calligraphy is cheaper, and as a member Hayashi pays ¥1,000 less: ¥2,000."
+        },
+        "wrong": [
+          null,
+          { "zh": "3,000日元是原价，林是会员，可以便宜1,000日元。", "en": "¥3,000 is the full price; Hayashi is a member and gets ¥1,000 off." },
+          { "zh": "瑜伽在周三，不是周末。", "en": "Yoga is on Wednesday, not at the weekend." },
+          { "zh": "插花是周日的课，但会员价6,000日元比书法贵，不是最便宜的。", "en": "Flower arranging is at the weekend, but ¥6,000 even with the discount is dearer than calligraphy." }
+        ]
+      }
+    ]
+  }
+]

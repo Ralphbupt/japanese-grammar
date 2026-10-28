@@ -1,0 +1,698 @@
+[
+  {
+    "id": "n2-l67-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#1"
+    ],
+    "difficulty": 1,
+    "stem": "旅行に行くにしても行かない（　）、早めに連絡してください。",
+    "options": [
+      "にしても",
+      "にしては",
+      "としては",
+      "につれて"
+    ],
+    "answer": 0,
+    "full": "旅行に行くにしても行かないにしても、早めに連絡してください。",
+    "tr": {
+      "zh": "无论去不去旅行，都请早点联系我。",
+      "en": "Whether you go on the trip or not, please let me know early."
+    },
+    "why": {
+      "zh": "前面已有「行くにしても」，与之成对列举相反的两种情况，用「〜にしても〜にしても」（无论……还是……）。",
+      "en": "「行くにしても」 already appears, so its pair completes \"whether… or…\" — 「〜にしても〜にしても」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「にしては」是“就……而言（出乎意料）”，不能和「行くにしても」成对使用。",
+        "en": "「にしては」 means \"for a… (surprisingly)\" and can't pair with 「行くにしても」."
+      },
+      {
+        "zh": "「としては」接名词，表示立场，不能接在动词「行かない」后面。",
+        "en": "「としては」 follows nouns to mark a standpoint, not the verb 「行かない」."
+      },
+      {
+        "zh": "「につれて」是“随着……变化”，“去不去”不是变化。",
+        "en": "「につれて」 means \"as… changes\"; going or not isn't a change."
+      }
+    ]
+  },
+  {
+    "id": "n2-l67-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#1"
+    ],
+    "difficulty": 2,
+    "stem": "会議でこの案に賛成する（　）反対するにしても、理由をはっきり述べるべきだ。",
+    "options": [
+      "にしても",
+      "にしては",
+      "かわりに",
+      "一方で"
+    ],
+    "answer": 0,
+    "full": "会議でこの案に賛成するにしても反対するにしても、理由をはっきり述べるべきだ。",
+    "tr": {
+      "zh": "在会议上无论赞成还是反对这个方案，都应该明确说明理由。",
+      "en": "At the meeting, whether you support or oppose this proposal, you should state your reasons clearly."
+    },
+    "why": {
+      "zh": "后面有「反対するにしても」，前面要用相同形式成对列举：「賛成するにしても反対するにしても」。",
+      "en": "「反対するにしても」 follows, so the first item takes the same form — 「賛成するにしても反対するにしても」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「にしては」表示“与预期不符”，不能和「反対するにしても」成对。",
+        "en": "「にしては」 expresses surprise and can't pair with 「反対するにしても」."
+      },
+      {
+        "zh": "「かわりに」是“作为交换/代替”，“赞成的代替反对”说不通。",
+        "en": "「かわりに」 means \"instead of / in exchange\"; that doesn't fit with 「反対するにしても」."
+      },
+      {
+        "zh": "「一方で」表示对比，后面不能再接「反対するにしても」组成“无论……还是……”。",
+        "en": "「一方で」 contrasts two facts; it can't form \"whether… or…\" with 「反対するにしても」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l67-003",
+    "type": "narabe",
+    "refs": [
+      "lesson67#1"
+    ],
+    "difficulty": 2,
+    "stem": "転職するにしても [_] [_] [★] [_] 全力でやるべきだ。",
+    "options": [
+      "仕事は",
+      "今の",
+      "にしても",
+      "しない"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "転職するにしてもしないにしても今の仕事は全力でやるべきだ。",
+    "tr": {
+      "zh": "不论换不换工作，现在的工作都应该全力以赴。",
+      "en": "Whether you change jobs or not, you should give your current job everything you've got."
+    },
+    "why": {
+      "zh": "転職するにしても＋しない＋にしても（无论……还是……）＋今の＋仕事は＋全力でやるべきだ。★ 在第三格，是「今の」。",
+      "en": "転職するにしても ＋ しない ＋ にしても ＋ 今の ＋ 仕事は ＋ 全力でやるべきだ. The ★ is the third slot: 「今の」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l67-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#2"
+    ],
+    "difficulty": 1,
+    "stem": "見た目（　）、この店の料理は味がいい。",
+    "options": [
+      "はともかく",
+      "をめぐって",
+      "を中心に",
+      "に応じて"
+    ],
+    "answer": 0,
+    "full": "見た目はともかく、この店の料理は味がいい。",
+    "tr": {
+      "zh": "外观暂且不论，这家店的菜味道很好。",
+      "en": "Looks aside, the food at this restaurant tastes good."
+    },
+    "why": {
+      "zh": "把“外观”放在一边，重点说“味道好”，用「〜はともかく」（……暂且不论）。",
+      "en": "Putting looks aside and focusing on taste — 「〜はともかく」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「をめぐって」是“围绕……（争论）”，后面要有讨论、争议，这里没有。",
+        "en": "「をめぐって」 needs a dispute or debate to follow; there isn't one."
+      },
+      {
+        "zh": "「を中心に」是“以……为中心”，“以外观为中心味道好”说不通。",
+        "en": "「を中心に」 means \"centred on\"; \"centred on looks, it tastes good\" makes no sense."
+      },
+      {
+        "zh": "「に応じて」是“根据……相应地”，“根据外观味道好”说不通。",
+        "en": "「に応じて」 means \"depending on\"; taste doesn't change according to looks here."
+      }
+    ]
+  },
+  {
+    "id": "n2-l67-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#2"
+    ],
+    "difficulty": 2,
+    "stem": "成功するかどうか（　）、まずは挑戦してみることが大切だ。",
+    "options": [
+      "はともかく",
+      "をめぐって",
+      "を中心に",
+      "に応じて"
+    ],
+    "answer": 0,
+    "full": "成功するかどうかはともかく、まずは挑戦してみることが大切だ。",
+    "tr": {
+      "zh": "能否成功暂且不论，首先尝试挑战才是重要的。",
+      "en": "Whether or not you succeed, the important thing is to give it a try first."
+    },
+    "why": {
+      "zh": "「〜かどうかはともかく」＝“能不能……暂且不论”，把结果放一边，强调先挑战。",
+      "en": "「〜かどうかはともかく」 sets the outcome aside to stress trying first."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「をめぐって」后面要接讨论、争议，“围绕能否成功，挑战很重要”说不通。",
+        "en": "「をめぐって」 needs a debate to follow; \"over whether you succeed, trying is important\" doesn't work."
+      },
+      {
+        "zh": "「を中心に」是“以……为中心”，不接「かどうか」。",
+        "en": "「を中心に」 (\"centred on\") doesn't follow 「かどうか」."
+      },
+      {
+        "zh": "「に応じて」是“根据……相应地”，“根据能否成功来挑战”和“首先试试”的意思不符。",
+        "en": "「に応じて」 means \"according to\", which clashes with \"try first anyway\"."
+      }
+    ]
+  },
+  {
+    "id": "n2-l67-006",
+    "type": "narabe",
+    "refs": [
+      "lesson67#2"
+    ],
+    "difficulty": 2,
+    "stem": "この部屋は [_] [★] [_] [_] 便利だ。",
+    "options": [
+      "ともかく",
+      "広さは",
+      "近くて",
+      "駅から"
+    ],
+    "order": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "full": "この部屋は広さはともかく駅から近くて便利だ。",
+    "tr": {
+      "zh": "这个房间面积暂且不论，离车站近，很方便。",
+      "en": "Leaving aside its size, this room is close to the station and convenient."
+    },
+    "why": {
+      "zh": "広さは＋ともかく（暂且不论）＋駅から＋近くて＋便利だ。★ 在第二格，是「ともかく」。",
+      "en": "広さは ＋ ともかく (setting aside) ＋ 駅から ＋ 近くて ＋ 便利だ. The ★ is the second slot: 「ともかく」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l67-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#3"
+    ],
+    "difficulty": 1,
+    "stem": "父親が亡くなった後、遺産（　）、兄弟の間で争いが起きた。",
+    "options": [
+      "をめぐって",
+      "を中心に",
+      "を問わず",
+      "に応じて"
+    ],
+    "answer": 0,
+    "full": "父親が亡くなった後、遺産をめぐって、兄弟の間で争いが起きた。",
+    "tr": {
+      "zh": "父亲去世后，兄弟之间围绕遗产发生了争执。",
+      "en": "After their father died, a dispute broke out between the brothers over the inheritance."
+    },
+    "why": {
+      "zh": "后面是「争いが起きた」（发生争执），争执的焦点是遗产，用「〜をめぐって」（围绕……）。",
+      "en": "The sentence ends in a dispute, and the inheritance is what it's about — 「〜をめぐって」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「を中心に」表示“以……为中心（展开）”，不表示争执的焦点。",
+        "en": "「を中心に」 means \"centred on\" and doesn't mark what a dispute is about."
+      },
+      {
+        "zh": "「を問わず」是“不论……”，“不论遗产发生争执”说不通。",
+        "en": "「を問わず」 means \"regardless of\"; that makes no sense here."
+      },
+      {
+        "zh": "「に応じて」是“根据……相应地”，“根据遗产发生争执”说不通。",
+        "en": "「に応じて」 means \"according to\"; that doesn't describe what the dispute is over."
+      }
+    ]
+  },
+  {
+    "id": "n2-l67-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#3"
+    ],
+    "difficulty": 2,
+    "stem": "この土地の開発（　）問題は、何年たってもまだ解決していない。",
+    "options": [
+      "をめぐる",
+      "をめぐって",
+      "を中心に",
+      "に応じて"
+    ],
+    "answer": 0,
+    "full": "この土地の開発をめぐる問題は、何年たってもまだ解決していない。",
+    "tr": {
+      "zh": "围绕这块土地开发的问题，过了好几年还没有解决。",
+      "en": "The problem surrounding the development of this land is still unresolved after many years."
+    },
+    "why": {
+      "zh": "空后直接接名词「問題」，要用修饰名词的「をめぐる」（围绕……的）。",
+      "en": "The blank directly modifies the noun 「問題」, so the noun-modifying 「をめぐる」 is needed."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「をめぐって」是连用形，后面接谓语，不能直接修饰名词「問題」。",
+        "en": "「をめぐって」 links to a predicate and can't modify the noun 「問題」 directly."
+      },
+      {
+        "zh": "「を中心に」是连用形，不能直接修饰名词，要说「を中心とした」。",
+        "en": "「を中心に」 can't modify a noun directly (that would be 「を中心とした」)."
+      },
+      {
+        "zh": "「に応じて」不能直接修饰名词，要说「に応じた」；意思也不符。",
+        "en": "「に応じて」 can't modify a noun directly (that would be 「に応じた」), and the meaning doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n2-l67-009",
+    "type": "narabe",
+    "refs": [
+      "lesson67#3"
+    ],
+    "difficulty": 2,
+    "stem": "新しい法案を [_] [_] [_] [★] 分かれている。",
+    "options": [
+      "意見が",
+      "野党の",
+      "与党と",
+      "めぐって"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "新しい法案をめぐって与党と野党の意見が分かれている。",
+    "tr": {
+      "zh": "围绕新法案，执政党和在野党的意见存在分歧。",
+      "en": "The ruling and opposition parties are divided over the new bill."
+    },
+    "why": {
+      "zh": "新しい法案を＋めぐって（围绕）＋与党と＋野党の＋意見が＋分かれている。★ 在第四格，是「意見が」。",
+      "en": "新しい法案を ＋ めぐって (over) ＋ 与党と ＋ 野党の ＋ 意見が ＋ 分かれている. The ★ is the fourth slot: 「意見が」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l67-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#4"
+    ],
+    "difficulty": 1,
+    "stem": "この仕事は経験の有無（　）、どなたでも応募できます。",
+    "options": [
+      "を問わず",
+      "をめぐって",
+      "を中心に",
+      "に反して"
+    ],
+    "answer": 0,
+    "full": "この仕事は経験の有無を問わず、どなたでも応募できます。",
+    "tr": {
+      "zh": "这份工作不论有无经验，任何人都可以应聘。",
+      "en": "Anyone can apply for this job, with or without experience."
+    },
+    "why": {
+      "zh": "「有無」（有或没有）和「どなたでも」说明不受条件限制，用「〜を問わず」（不论……）。",
+      "en": "「有無」 (with or without) plus 「どなたでも」 (anyone) means the condition doesn't matter — 「〜を問わず」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「をめぐって」是“围绕……（争论）”，招聘启事里说不通。",
+        "en": "「をめぐって」 means \"over (a dispute)\" — it makes no sense in a job ad."
+      },
+      {
+        "zh": "「を中心に」是“以……为中心”，和「どなたでも」矛盾。",
+        "en": "「を中心に」 means \"centred on\", which contradicts 「どなたでも」."
+      },
+      {
+        "zh": "「に反して」是“与……相反”，“与有无经验相反”说不通。",
+        "en": "「に反して」 means \"contrary to\"; that makes no sense with 「有無」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l67-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#4"
+    ],
+    "difficulty": 1,
+    "stem": "駅前のこのコンビニは、昼夜（　）営業している。",
+    "options": [
+      "を問わず",
+      "に応じて",
+      "につれて",
+      "はともかく"
+    ],
+    "answer": 0,
+    "full": "駅前のこのコンビニは、昼夜を問わず営業している。",
+    "tr": {
+      "zh": "车站前的这家便利店不分昼夜都在营业。",
+      "en": "This convenience store in front of the station is open day and night."
+    },
+    "why": {
+      "zh": "「昼夜を問わず」是固定搭配，“不分白天黑夜”。",
+      "en": "「昼夜を問わず」 is a set phrase: \"regardless of day or night\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に応じて」是“根据……相应地”，“根据昼夜营业”说不通。",
+        "en": "「に応じて」 means \"according to\"; \"open according to day and night\" doesn't work."
+      },
+      {
+        "zh": "「につれて」是“随着……变化”，「昼夜」不是持续变化的事物。",
+        "en": "「につれて」 means \"as… changes\"; 「昼夜」 isn't a changing quantity."
+      },
+      {
+        "zh": "「はともかく」是“暂且不论”，“昼夜暂且不论，在营业”说不通。",
+        "en": "「はともかく」 means \"setting aside\"; that makes no sense with 「昼夜」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l67-012",
+    "type": "narabe",
+    "refs": [
+      "lesson67#4"
+    ],
+    "difficulty": 2,
+    "stem": "このイベントには、 [_] [★] [_] [_] 参加できます。",
+    "options": [
+      "国籍を",
+      "年齢や",
+      "誰でも",
+      "問わず"
+    ],
+    "order": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "full": "このイベントには、年齢や国籍を問わず誰でも参加できます。",
+    "tr": {
+      "zh": "这个活动不论年龄和国籍，谁都可以参加。",
+      "en": "Anyone can take part in this event, regardless of age or nationality."
+    },
+    "why": {
+      "zh": "年齢や＋国籍を＋問わず（不论）＋誰でも＋参加できます。★ 在第二格，是「国籍を」。",
+      "en": "年齢や ＋ 国籍を ＋ 問わず (regardless of) ＋ 誰でも ＋ 参加できます. The ★ is the second slot: 「国籍を」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l67-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#5"
+    ],
+    "difficulty": 1,
+    "stem": "関東地方（　）、大雨による被害が広がっている。",
+    "options": [
+      "を中心に",
+      "を問わず",
+      "をめぐって",
+      "に応じて"
+    ],
+    "answer": 0,
+    "full": "関東地方を中心に、大雨による被害が広がっている。",
+    "tr": {
+      "zh": "以关东地区为中心，暴雨造成的灾害正在扩大。",
+      "en": "Damage from the heavy rain is spreading, centred on the Kanto region."
+    },
+    "why": {
+      "zh": "灾害以关东地区为核心向外扩散，用「〜を中心に」（以……为中心）。",
+      "en": "The damage spreads out from Kanto as its centre — 「〜を中心に」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「を問わず」是“不论……”，“不论关东地区”说不通。",
+        "en": "「を問わず」 means \"regardless of\"; \"regardless of Kanto\" makes no sense."
+      },
+      {
+        "zh": "「をめぐって」是“围绕……（争论）”，灾害扩大不是争论。",
+        "en": "「をめぐって」 is about disputes; damage spreading isn't one."
+      },
+      {
+        "zh": "「に応じて」是“根据……相应地”，“根据关东地区灾害扩大”说不通。",
+        "en": "「に応じて」 means \"according to\"; that doesn't describe where damage spreads."
+      }
+    ]
+  },
+  {
+    "id": "n2-l67-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#5"
+    ],
+    "difficulty": 2,
+    "stem": "この研究会は、大学院生（　）メンバーで運営されている。",
+    "options": [
+      "を中心とした",
+      "をめぐる",
+      "を問わない",
+      "に反する"
+    ],
+    "answer": 0,
+    "full": "この研究会は、大学院生を中心としたメンバーで運営されている。",
+    "tr": {
+      "zh": "这个研究会由以研究生为主的成员运营。",
+      "en": "This study group is run by members who are mainly graduate students."
+    },
+    "why": {
+      "zh": "空后接名词「メンバー」，表示“以研究生为主的成员”，用修饰名词的「を中心とした」。",
+      "en": "The blank modifies the noun 「メンバー」 — \"members mainly made up of grad students\" is 「を中心とした」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「をめぐる」是“围绕……（争议）的”，“围绕研究生的成员”说不通。",
+        "en": "「をめぐる」 means \"concerning (a dispute)\"; \"members concerning grad students\" makes no sense."
+      },
+      {
+        "zh": "「を問わない」是“不论……的”，“不论研究生的成员”说不通。",
+        "en": "「を問わない」 means \"regardless of\"; \"members regardless of grad students\" makes no sense."
+      },
+      {
+        "zh": "「に反する」是“违反……的”，“违反研究生的成员”说不通。",
+        "en": "「に反する」 means \"going against\"; that makes no sense with 「大学院生」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l67-015",
+    "type": "narabe",
+    "refs": [
+      "lesson67#5"
+    ],
+    "difficulty": 2,
+    "stem": "この研究は、 [_] [_] [★] [_] 進められている。",
+    "options": [
+      "して",
+      "中心に",
+      "問題を",
+      "環境"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "この研究は、環境問題を中心にして進められている。",
+    "tr": {
+      "zh": "这项研究以环境问题为中心展开。",
+      "en": "This research is being carried out with environmental issues at its core."
+    },
+    "why": {
+      "zh": "環境＋問題を＋中心に＋して（以……为中心）＋進められている。★ 在第三格，是「中心に」。",
+      "en": "環境 ＋ 問題を ＋ 中心に ＋ して (centred on) ＋ 進められている. The ★ is the third slot: 「中心に」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l67-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#6"
+    ],
+    "difficulty": 1,
+    "stem": "お客様のご予算（　）、さまざまなプランをご用意しております。",
+    "options": [
+      "に応じて",
+      "につれて",
+      "をめぐって",
+      "に反して"
+    ],
+    "answer": 0,
+    "full": "お客様のご予算に応じて、さまざまなプランをご用意しております。",
+    "tr": {
+      "zh": "我们根据客人的预算准备了各种方案。",
+      "en": "We offer a range of plans to suit your budget."
+    },
+    "why": {
+      "zh": "预算不同，方案也相应不同，用表示“根据条件灵活对应”的「〜に応じて」。",
+      "en": "Different budgets get matching plans — 「〜に応じて」 (\"according to\")."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「につれて」是“随着……变化”，「予算」不是持续变化的事物。",
+        "en": "「につれて」 means \"as… changes\"; a budget isn't changing over time here."
+      },
+      {
+        "zh": "「をめぐって」是“围绕……（争论）”，在服务介绍里说不通。",
+        "en": "「をめぐって」 is about disputes — it makes no sense in a service description."
+      },
+      {
+        "zh": "「に反して」是“违背预算”，商家不会这样介绍方案。",
+        "en": "「に反して」 means \"against your budget\" — no business would advertise that."
+      }
+    ]
+  },
+  {
+    "id": "n2-l67-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#6"
+    ],
+    "difficulty": 2,
+    "stem": "この駐車場は、利用時間（　）料金になっています。",
+    "options": [
+      "に応じた",
+      "に応じて",
+      "をめぐる",
+      "に反した"
+    ],
+    "answer": 0,
+    "full": "この駐車場は、利用時間に応じた料金になっています。",
+    "tr": {
+      "zh": "这个停车场的收费是按使用时间计算的。",
+      "en": "This car park charges according to how long you park."
+    },
+    "why": {
+      "zh": "空后直接接名词「料金」，要用修饰名词的「に応じた」（与……相应的）。",
+      "en": "The blank directly modifies the noun 「料金」, so the noun-modifying 「に応じた」 is needed."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に応じて」是连用形，不能直接修饰名词「料金」。",
+        "en": "「に応じて」 links to a predicate and can't modify the noun 「料金」 directly."
+      },
+      {
+        "zh": "「をめぐる」是“围绕……（争议）的”，“围绕使用时间的收费”说不通。",
+        "en": "「をめぐる」 means \"concerning (a dispute)\" — that doesn't fit a parking fee."
+      },
+      {
+        "zh": "「に反した」是“违反……的”，“违反使用时间的收费”说不通。",
+        "en": "「に反した」 means \"going against\" — that makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n2-l67-018",
+    "type": "narabe",
+    "refs": [
+      "lesson67#6"
+    ],
+    "difficulty": 2,
+    "stem": "この工場では、 [★] [_] [_] [_] 生産量を調整している。",
+    "options": [
+      "ごとの",
+      "季節",
+      "応じて",
+      "需要に"
+    ],
+    "order": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "full": "この工場では、季節ごとの需要に応じて生産量を調整している。",
+    "tr": {
+      "zh": "这家工厂根据每个季节的需求调整产量。",
+      "en": "This factory adjusts its output according to seasonal demand."
+    },
+    "why": {
+      "zh": "季節＋ごとの（每个……的）＋需要に＋応じて（根据）＋生産量を調整している。★ 在第一格，是「季節」。",
+      "en": "季節 ＋ ごとの (each) ＋ 需要に ＋ 応じて (according to) ＋ 生産量を調整している. The ★ is the first slot: 「季節」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

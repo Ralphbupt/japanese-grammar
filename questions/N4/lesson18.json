@@ -1,0 +1,392 @@
+[
+  {
+    "id": "n4-l18-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson18#1"
+    ],
+    "difficulty": 1,
+    "stem": "先生は 遅刻した 学生（　）廊下に 立たせた。",
+    "options": [
+      "を",
+      "に",
+      "が",
+      "で"
+    ],
+    "answer": 0,
+    "full": "先生は 遅刻した 学生を 廊下に 立たせた。",
+    "tr": {
+      "zh": "老师罚迟到的学生站在走廊里。",
+      "en": "The teacher made the late student stand in the hallway."
+    },
+    "why": {
+      "zh": "「立つ」是自动词，句中没有「を」宾语，被使役的人用「を」：学生を立たせる。",
+      "en": "立つ is intransitive — there is no を object — so the person made to act takes 「を」: 学生を立たせる."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に」多用于他动词使役（句中已有「を」宾语时）；这里后面已经有「廊下に」，再用「に」标记学生会出现两个「に」，很别扭。",
+        "en": "「に」 marks the person mainly with transitive verbs; here 「廊下に」 already follows, and a second 「に」 for the student is awkward."
+      },
+      {
+        "zh": "用「が」会让学生变成主语，和「先生は」以及使役形「立たせた」对不上。",
+        "en": "「が」 would make the student the subject, clashing with 「先生は」 and the causative 「立たせた」."
+      },
+      {
+        "zh": "「で」表示场所或手段，不能标记被使役的人。",
+        "en": "「で」 marks a place or means, not the person made to act."
+      }
+    ]
+  },
+  {
+    "id": "n4-l18-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson18#1"
+    ],
+    "difficulty": 2,
+    "stem": "A「明日、息子さんと 話したいんですが。」\nB「わかりました。明日 息子を ここに（　）。」",
+    "options": [
+      "来させます",
+      "来られます",
+      "来ます",
+      "来させられます"
+    ],
+    "answer": 0,
+    "full": "A「明日、息子さんと 話したいんですが。」 B「わかりました。明日 息子を ここに 来させます。」",
+    "tr": {
+      "zh": "A：明天想和您儿子谈谈。 B：好的，明天我让儿子到这里来。",
+      "en": "A: I'd like to talk with your son tomorrow. B: All right, I'll have him come here tomorrow."
+    },
+    "why": {
+      "zh": "「息子を」是被使役的人，B 是让儿子来：来る的使役形是「来させる」，自动词使役用「人を」。",
+      "en": "「息子を」 is the person B makes come: the causative of 来る is 「来させる」, and with an intransitive verb the person takes 「を」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「来られます」是可能/尊敬/被动形，都不能带「息子を」。",
+        "en": "「来られます」 (potential / honorific / passive) can't take 「息子を」."
+      },
+      {
+        "zh": "「来ます」是 B 自己来，前面的「息子を」就没有着落了。",
+        "en": "「来ます」 would mean B comes, leaving 「息子を」 with nothing to attach to."
+      },
+      {
+        "zh": "「来させられます」是“被迫来”，主语是被迫的人，不能带「息子を」。",
+        "en": "「来させられます」 means being made to come; it can't take 「息子を」 as its object."
+      }
+    ]
+  },
+  {
+    "id": "n4-l18-003",
+    "type": "bunpou",
+    "refs": [
+      "lesson18#1"
+    ],
+    "difficulty": 2,
+    "stem": "A「この 仕事、ぜひ 私に（　）。」\nB「じゃあ、お願いします。」",
+    "options": [
+      "やらせて ください",
+      "やって ください",
+      "やられて ください",
+      "やらされて ください"
+    ],
+    "answer": 0,
+    "full": "A「この 仕事、ぜひ 私に やらせて ください。」 B「じゃあ、お願いします。」",
+    "tr": {
+      "zh": "A：这份工作请务必交给我来做。 B：那就拜托你了。",
+      "en": "A: Please let me do this job. B: All right, it's yours."
+    },
+    "why": {
+      "zh": "B 回答“那就拜托你了”，说明 A 在请求让自己来做：「私に〜させてください」（请让我做）。",
+      "en": "B answers 「お願いします」 (then please do), so A is asking to be allowed to do it: 「私に〜させてください」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「やってください」是请 B 去做，可 B 回答「お願いします」是把工作交给 A，而且「私に」也接不上。",
+        "en": "「やってください」 asks B to do it, but B hands the job to A, and 「私に」 doesn't fit."
+      },
+      {
+        "zh": "「やられてください」是被动形加「てください」（请你被做），意思不通。",
+        "en": "「やられてください」 (please be done to) makes no sense here."
+      },
+      {
+        "zh": "「やらされてください」是“请被迫去做”，没有人会这样请求。",
+        "en": "「やらされてください」 (please be forced to do it) isn't a request anyone makes."
+      }
+    ]
+  },
+  {
+    "id": "n4-l18-004",
+    "type": "narabe",
+    "refs": [
+      "lesson18#1"
+    ],
+    "difficulty": 2,
+    "stem": "父は 兄に [_] [_] [★] [_]。",
+    "options": [
+      "洗わ",
+      "自分の",
+      "せた",
+      "車を"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "父は 兄に 自分の 車を 洗わせた。",
+    "tr": {
+      "zh": "爸爸让哥哥洗了自己的车。",
+      "en": "Father made my brother wash his car."
+    },
+    "why": {
+      "zh": "他动词使役：人に＋物を＋使役形。自分の 車を 洗わ せた，★ 在第三格，是「洗わ」。",
+      "en": "Transitive causative: person に ＋ object を ＋ causative: 自分の 車を 洗わ せた. The ★ is the third slot: 「洗わ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l18-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson18#2"
+    ],
+    "difficulty": 2,
+    "stem": "母は 私に 好きな ことを（　）。本当に 感謝して いる。",
+    "options": [
+      "させて くれた",
+      "させて あげた",
+      "させて もらった",
+      "させられた"
+    ],
+    "answer": 0,
+    "full": "母は 私に 好きな ことを させて くれた。本当に 感謝して いる。",
+    "tr": {
+      "zh": "妈妈让我做自己喜欢的事。我真的很感激。",
+      "en": "My mother let me do what I loved. I'm truly grateful."
+    },
+    "why": {
+      "zh": "主语是妈妈，妈妈允许“我”做喜欢的事，我心怀感激：别人让我做 → 「させてくれる」。",
+      "en": "The subject is mother, who let me do what I liked, and I'm grateful: someone lets me do → 「させてくれる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「させてあげる」是“我（或我方）让别人做”，妈妈让“我”做不能用「あげる」。",
+        "en": "「させてあげる」 is a favour going away from me; mother letting me do something can't use 「あげる」."
+      },
+      {
+        "zh": "「させてもらう」的主语是被允许的人（我），这里主语是「母は」，变成“妈妈被我允许”，不对。",
+        "en": "「させてもらう」 needs the one allowed (me) as subject; with 「母は」 it would mean I allowed mother."
+      },
+      {
+        "zh": "「させられた」是“被迫做”，主语是妈妈就成了“妈妈被我逼着做”，也和“感激”矛盾。",
+        "en": "「させられた」 (was made to) would mean mother was forced by me, and doesn't fit the gratitude."
+      }
+    ]
+  },
+  {
+    "id": "n4-l18-006",
+    "type": "bunpou",
+    "refs": [
+      "lesson18#2"
+    ],
+    "difficulty": 2,
+    "stem": "すみません、気分が 悪いので、今日は 早く 帰ら（　）。",
+    "options": [
+      "せて もらえませんか",
+      "せて あげませんか",
+      "れて もらえませんか",
+      "せて くれましたか"
+    ],
+    "answer": 0,
+    "full": "すみません、気分が 悪いので、今日は 早く 帰らせて もらえませんか。",
+    "tr": {
+      "zh": "不好意思，我身体不舒服，今天能让我早点回去吗？",
+      "en": "Sorry, I'm not feeling well — could you let me go home early today?"
+    },
+    "why": {
+      "zh": "说话人请求对方允许自己早退：「〜させてもらえませんか」（能让我……吗）。",
+      "en": "The speaker asks to be allowed to leave early: 「〜させてもらえませんか」 (could you let me…)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「させてあげませんか」是提议“让别人回去”，不是请求自己回去。",
+        "en": "「させてあげませんか」 suggests letting someone else go home, not asking for yourself."
+      },
+      {
+        "zh": "「帰られて」是被动形，「帰られてもらえませんか」不成立。",
+        "en": "「帰られて」 is the passive; 「帰られてもらえませんか」 isn't a request."
+      },
+      {
+        "zh": "「させてくれましたか」是问过去的事，和“今天请让我早退”的请求接不上。",
+        "en": "「させてくれましたか」 asks about the past; it isn't a request for today."
+      }
+    ]
+  },
+  {
+    "id": "n4-l18-007",
+    "type": "narabe",
+    "refs": [
+      "lesson18#2"
+    ],
+    "difficulty": 2,
+    "stem": "友達が 私に [_] [_] [★] [_]。",
+    "options": [
+      "くれた",
+      "運転させて",
+      "新しい",
+      "車を"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "友達が 私に 新しい 車を 運転させて くれた。",
+    "tr": {
+      "zh": "朋友让我开了他的新车。",
+      "en": "My friend let me drive his new car."
+    },
+    "why": {
+      "zh": "别人允许我做：「〜させてくれる」。新しい 車を 運転させて くれた，★ 在第三格，是「運転させて」。",
+      "en": "Someone lets me do something: 「〜させてくれる」. 新しい 車を 運転させて くれた — the ★ is the third slot: 「運転させて」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l18-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson18#3",
+      "lesson18#2"
+    ],
+    "difficulty": 2,
+    "stem": "私は 先輩（　）パソコンを 使わせて もらった。",
+    "options": [
+      "に",
+      "が",
+      "を",
+      "で"
+    ],
+    "answer": 0,
+    "full": "私は 先輩に パソコンを 使わせて もらった。",
+    "tr": {
+      "zh": "前辈让我用了他的电脑。",
+      "en": "My senpai let me use his computer."
+    },
+    "why": {
+      "zh": "「させてもらう」的主语是我，允许我的人用「に」：先輩に使わせてもらった。",
+      "en": "With 「させてもらう」 the subject is me and the one who allows it takes 「に」: 先輩に使わせてもらった."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「が」用于「させてくれる」的给予方（先輩が使わせてくれた）；句子已经有「私は」作主语，「させてもらう」这里不能用「が」。",
+        "en": "「が」 goes with 「させてくれる」 (先輩が使わせてくれた); with 「私は」 and 「もらう」 the allower takes 「に」."
+      },
+      {
+        "zh": "后面已经有「パソコンを」，一个句子里不能再用「を」标记人。",
+        "en": "「パソコンを」 is already the object; the person can't take a second 「を」."
+      },
+      {
+        "zh": "「で」表示场所或手段，不能标记允许我做事的人。",
+        "en": "「で」 marks a place or means, not the person who allows it."
+      }
+    ]
+  },
+  {
+    "id": "n4-l18-009",
+    "type": "bunpou",
+    "refs": [
+      "lesson18#3"
+    ],
+    "difficulty": 2,
+    "stem": "面接官「では、始めて ください。」\n学生「はい。まず、自己紹介を（　）。」",
+    "options": [
+      "させて いただきます",
+      "して いただきます",
+      "させて あげます",
+      "されます"
+    ],
+    "answer": 0,
+    "full": "面接官「では、始めて ください。」 学生「はい。まず、自己紹介を させて いただきます。」",
+    "tr": {
+      "zh": "面试官：那么，请开始吧。 学生：好的。首先请允许我做个自我介绍。",
+      "en": "Interviewer: Please begin. Student: Yes. First, allow me to introduce myself."
+    },
+    "why": {
+      "zh": "面试中学生自己要做自我介绍，用最礼貌的「〜させていただきます」（请允许我……）。",
+      "en": "In an interview the student is about to introduce himself — the most polite form is 「〜させていただきます」 (allow me to…)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「していただきます」是“请对方（面试官）做”，可做自我介绍的是学生自己。",
+        "en": "「していただきます」 means having the interviewer do it, but the student is the one introducing himself."
+      },
+      {
+        "zh": "「させてあげます」是“我让你做”，对面试官说既方向不对又失礼。",
+        "en": "「させてあげます」 (I'll let you do it) goes the wrong way and is rude to an interviewer."
+      },
+      {
+        "zh": "「されます」是被动或尊敬形，不能用来说自己要做的事。",
+        "en": "「されます」 is passive or honorific; it can't describe what you yourself are about to do."
+      }
+    ]
+  },
+  {
+    "id": "n4-l18-010",
+    "type": "narabe",
+    "refs": [
+      "lesson18#3",
+      "lesson18#1"
+    ],
+    "difficulty": 3,
+    "stem": "部長、この 資料、もう一度 [_] [_] [★] [_] か。",
+    "options": [
+      "確認",
+      "いただけません",
+      "私に",
+      "させて"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "部長、この 資料、もう一度 私に 確認させて いただけませんか。",
+    "tr": {
+      "zh": "部长，这份资料能再让我确认一遍吗？",
+      "en": "Manager, could you let me check these documents once more?"
+    },
+    "why": {
+      "zh": "对上级请求允许自己做：私に＋确认させて＋いただけませんか。★ 在第三格，是「させて」。",
+      "en": "Asking a superior for permission: 私に 確認 させて いただけません か. The ★ is the third slot: 「させて」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

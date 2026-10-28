@@ -1,0 +1,467 @@
+[
+  {
+    "id": "n2-l72-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson72#1"
+    ],
+    "difficulty": 2,
+    "stem": "この時計は十年使っているが、一度も故障したことがない。さすがに値段が高かった（　）。",
+    "options": [
+      "だけましだ",
+      "どころではない",
+      "に過ぎない",
+      "だけのことはある"
+    ],
+    "answer": 3,
+    "full": "この時計は十年使っているが、一度も故障したことがない。さすがに値段が高かった だけのことはある。",
+    "tr": {
+      "zh": "这块表用了十年，一次都没坏过。贵果然有贵的道理。",
+      "en": "I've used this watch for ten years and it has never broken. It really was worth the high price."
+    },
+    "why": {
+      "zh": "十年不坏的结果证明“贵”是有道理的，再加上「さすがに」，用表示“名副其实、值得”的「だけのことはある」。",
+      "en": "Ten years without a breakdown proves the high price was justified, and 「さすがに」 points to praise: 「だけのことはある」 (lives up to / worth it)."
+    },
+    "wrong": [
+      {
+        "zh": "「だけましだ」用于坏情况中找安慰，这里是在称赞手表，没有坏情况可言。",
+        "en": "「だけましだ」 finds consolation in a bad situation; here the watch is being praised, nothing bad happened."
+      },
+      {
+        "zh": "「どころではない」是“哪有心思……”，和手表耐用这件事连不起来。",
+        "en": "「どころではない」 means \"in no position to…\"; it has nothing to do with the watch lasting."
+      },
+      {
+        "zh": "「に過ぎない」是“只不过是……”的贬低语气，和「さすがに」的称赞相反。",
+        "en": "「に過ぎない」 belittles (\"merely\"), the opposite of the praise in 「さすがに」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l72-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson72#1",
+      "lesson60#4"
+    ],
+    "difficulty": 2,
+    "stem": "さすが一流のシェフ（　）、どの料理も味はもちろん、見た目まで美しい。",
+    "options": [
+      "だけあって",
+      "にしては",
+      "だけましで",
+      "どころか"
+    ],
+    "answer": 0,
+    "full": "さすが一流のシェフ だけあって、どの料理も味はもちろん、見た目まで美しい。",
+    "tr": {
+      "zh": "不愧是一流厨师，每道菜不仅味道好，连外观都很漂亮。",
+      "en": "As you'd expect from a top chef, every dish is beautiful to look at, not just delicious."
+    },
+    "why": {
+      "zh": "「さすが＋名词＋だけあって、……」是固定搭配：后句的好结果与前面的身份相称。「だけのことはある」用在句中时就是「だけあって」。",
+      "en": "「さすが + noun + だけあって、…」 is the set pattern: the good result matches the status. Mid-sentence, 「だけのことはある」 becomes 「だけあって」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「にしては」表示“与预期不符”，而「さすが」表示正符合预期，两者矛盾。",
+        "en": "「にしては」 marks a result that doesn't match expectations, but 「さすが」 says it matches them."
+      },
+      {
+        "zh": "「だけまし」是在坏情况中找安慰，这里全是称赞，而且「だけましで」不接后句。",
+        "en": "「だけまし」 consoles in a bad situation; this is pure praise, and 「だけましで」 doesn't lead into a clause."
+      },
+      {
+        "zh": "「どころか」是“别说……反而……”，前后要形成对比，这里没有。",
+        "en": "「どころか」 needs a contrast (\"far from…\"); there is none here."
+      }
+    ]
+  },
+  {
+    "id": "n2-l72-003",
+    "type": "narabe",
+    "refs": [
+      "lesson72#1"
+    ],
+    "difficulty": 2,
+    "stem": "十年も [_] [★] [_] [_] あって、彼の日本語は完璧だ。",
+    "options": [
+      "住んでいた",
+      "日本に",
+      "ことは",
+      "だけの"
+    ],
+    "order": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "full": "十年も日本に住んでいた だけの ことは あって、彼の日本語は完璧だ。",
+    "tr": {
+      "zh": "不愧是在日本住了十年，他的日语很完美。",
+      "en": "It shows he lived in Japan for ten years — his Japanese is perfect."
+    },
+    "why": {
+      "zh": "「動詞た形＋だけのことはあって」：日本に → 住んでいた → だけの → ことは（＋あって）。★ 在第二格，是「住んでいた」。",
+      "en": "「Verb ta-form + だけのことはあって」: 日本に → 住んでいた → だけの → ことは (+ あって). The ★ is the second slot: 「住んでいた」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l72-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson72#2"
+    ],
+    "difficulty": 2,
+    "stem": "面接の結果はまだわからないが、準備する（　）した。あとは待つしかない。",
+    "options": [
+      "までは",
+      "ばかりは",
+      "だけは",
+      "ほどは"
+    ],
+    "answer": 2,
+    "full": "面接の結果はまだわからないが、準備する だけは した。あとは待つしかない。",
+    "tr": {
+      "zh": "面试结果还不知道，但至少该准备的都准备了。剩下只能等了。",
+      "en": "I don't know the interview result yet, but I did at least prepare. Now all I can do is wait."
+    },
+    "why": {
+      "zh": "「動詞辞書形＋だけは＋同一動詞」表示“至少做了该做的”。「準備するだけはした」和后句“只能等了”相呼应。",
+      "en": "「Verb dictionary form + だけは + the same verb」 means \"at least did what could be done\"; it matches \"now I can only wait\"."
+    },
+    "wrong": [
+      {
+        "zh": "「準備するまではした」不成立；「まで」表示时间或范围的终点，不能接在重复的动词之间。",
+        "en": "「準備するまではした」 is ungrammatical; 「まで」 marks an end point and can't sit between a repeated verb."
+      },
+      {
+        "zh": "「〜ばかりはした」不是成立的说法；「ばかり」不能这样重复动词表示“至少做了”。",
+        "en": "「〜ばかりはした」 isn't a valid pattern; 「ばかり」 can't repeat the verb to mean \"at least did\"."
+      },
+      null,
+      {
+        "zh": "「準備するほどはした」不成立，「ほど」表示程度，不能这样用。",
+        "en": "「準備するほどはした」 doesn't work; 「ほど」 expresses degree and isn't used this way."
+      }
+    ]
+  },
+  {
+    "id": "n2-l72-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson72#2"
+    ],
+    "difficulty": 2,
+    "stem": "部長に頼んでも無駄だろうとは思うが、一応、話す（　）話してみよう。",
+    "options": [
+      "だけまし",
+      "だけは",
+      "だけに",
+      "だけあって"
+    ],
+    "answer": 1,
+    "full": "部長に頼んでも無駄だろうとは思うが、一応、話す だけは 話してみよう。",
+    "tr": {
+      "zh": "我想求部长大概也没用，不过姑且先说说看吧。",
+      "en": "I think asking the manager is probably pointless, but I'll at least talk to him."
+    },
+    "why": {
+      "zh": "「一応」和“大概没用”说明只是“至少做一下”，用「話すだけは話してみる」这种重复动词的「だけは」。",
+      "en": "「一応」 and \"probably pointless\" show it's an \"at least try\" act: 「話すだけは話してみる」, the repeated-verb 「だけは」."
+    },
+    "wrong": [
+      {
+        "zh": "「だけまし」是“至少……还算好”，后面接「だ」，不能再接动词。",
+        "en": "「だけまし」 (\"at least it's better\") ends with 「だ」 and can't be followed by another verb."
+      },
+      null,
+      {
+        "zh": "「だけに」是“正因为……”，表示原因，不能夹在重复的动词中间。",
+        "en": "「だけに」 means \"precisely because…\" and can't sit between a repeated verb."
+      },
+      {
+        "zh": "「だけあって」是“不愧是……”，后面要接与之相称的好结果，不能重复动词。",
+        "en": "「だけあって」 means \"as expected of…\" and is followed by a fitting result, not a repeated verb."
+      }
+    ]
+  },
+  {
+    "id": "n2-l72-006",
+    "type": "narabe",
+    "refs": [
+      "lesson72#2"
+    ],
+    "difficulty": 2,
+    "stem": "[_] [_] [★] [_] から、結果がどうであれ悔いはない。",
+    "options": [
+      "やった",
+      "やる",
+      "のだ",
+      "だけは"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "やる だけは やった のだ から、結果がどうであれ悔いはない。",
+    "tr": {
+      "zh": "该做的都做了，所以不管结果如何都不后悔。",
+      "en": "I did everything I could, so whatever the result, I have no regrets."
+    },
+    "why": {
+      "zh": "「やるだけはやった」是固定说法，后面「のだから」表示理由：やる → だけは → やった → のだ（＋から）。★ 在第三格，是「やった」。",
+      "en": "「やるだけはやった」 is the set phrase, then 「のだから」 gives the reason: やる → だけは → やった → のだ (+ から). The ★ is the third slot: 「やった」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l72-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson72#3"
+    ],
+    "difficulty": 2,
+    "stem": "駅で財布を落としてしまったが、カードが入っていなかった（　）。",
+    "options": [
+      "どころではない",
+      "だけのことはある",
+      "だけましだ",
+      "に限る"
+    ],
+    "answer": 2,
+    "full": "駅で財布を落としてしまったが、カードが入っていなかった だけましだ。",
+    "tr": {
+      "zh": "在车站把钱包丢了，不过卡没在里面，还算好。",
+      "en": "I dropped my wallet at the station, but at least my cards weren't in it."
+    },
+    "why": {
+      "zh": "前半是坏事（丢钱包），后半找到一点值得庆幸的地方（卡不在里面），用「だけましだ」“至少还算好”。",
+      "en": "A bad event (lost wallet) plus a small consolation (no cards inside): 「だけましだ」, \"at least it could be worse\"."
+    },
+    "wrong": [
+      {
+        "zh": "「どころではない」是“哪有心思……”，接在“卡不在里面”后面意思不通。",
+        "en": "「どころではない」 (\"in no position to…\") makes no sense after \"the cards weren't in it\"."
+      },
+      {
+        "zh": "「だけのことはある」是积极评价“名副其实”，丢钱包不是值得称赞的事。",
+        "en": "「だけのことはある」 is positive praise (\"lives up to\"); losing a wallet isn't something to praise."
+      },
+      null,
+      {
+        "zh": "「に限る」是“……最好”，用来推荐，不能用来说丢钱包这件事。",
+        "en": "「に限る」 recommends something as best; it doesn't fit a lost wallet."
+      }
+    ]
+  },
+  {
+    "id": "n2-l72-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson72#3"
+    ],
+    "difficulty": 2,
+    "stem": "今の部屋は狭いけれど、駅から近くて便利な（　）だ。",
+    "options": [
+      "どころ",
+      "だけは",
+      "からには",
+      "だけまし"
+    ],
+    "answer": 3,
+    "full": "今の部屋は狭いけれど、駅から近くて便利な だけまし だ。",
+    "tr": {
+      "zh": "现在的房间虽然窄，但离车站近、方便，这一点还算好。",
+      "en": "My current room is small, but at least it's close to the station and convenient."
+    },
+    "why": {
+      "zh": "“窄”是缺点，“离车站近、方便”是安慰，用「な形容詞＋な＋だけましだ」。",
+      "en": "\"Small\" is the downside and \"convenient\" the consolation: na-adjective + な + 「だけましだ」."
+    },
+    "wrong": [
+      {
+        "zh": "「便利などころだ」不成立；「どころ」要用在「どころではない」「どころか」里。",
+        "en": "「便利などころだ」 isn't Japanese; 「どころ」 only works in 「どころではない」 / 「どころか」."
+      },
+      {
+        "zh": "「だけは」要重复动词（「やるだけはやった」），不能接「便利な」后再接「だ」。",
+        "en": "「だけは」 repeats a verb (「やるだけはやった」); 「便利なだけはだ」 is ungrammatical."
+      },
+      {
+        "zh": "「からには」是“既然……就……”，要接后句，不能直接接「だ」。",
+        "en": "「からには」 (\"since…, then\") needs a following clause; it can't end with 「だ」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l72-009",
+    "type": "narabe",
+    "refs": [
+      "lesson72#3"
+    ],
+    "difficulty": 2,
+    "stem": "ボーナスは去年より減ったが、[_] [★] [_] [_] ことにした。",
+    "options": [
+      "思う",
+      "ましだと",
+      "だけ",
+      "もらえる"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "ボーナスは去年より減ったが、もらえる だけ ましだと 思う ことにした。",
+    "tr": {
+      "zh": "奖金比去年少了，不过我决定这样想：能拿到就算不错了。",
+      "en": "My bonus was smaller than last year's, but I've decided to think that at least I'm getting one."
+    },
+    "why": {
+      "zh": "「もらえるだけましだ」＋「と思う」＋「ことにした」：もらえる → だけ → ましだと → 思う。★ 在第二格，是「だけ」。",
+      "en": "「もらえるだけましだ」 + 「と思う」 + 「ことにした」: もらえる → だけ → ましだと → 思う. The ★ is the second slot: 「だけ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l72-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson72#4"
+    ],
+    "difficulty": 2,
+    "stem": "あの店ではひどい対応をされたので、もう二度と（　）と心に決めた。",
+    "options": [
+      "行くまい",
+      "行くべき",
+      "行かないまい",
+      "行こう"
+    ],
+    "answer": 0,
+    "full": "あの店ではひどい対応をされたので、もう二度と 行くまい と心に決めた。",
+    "tr": {
+      "zh": "在那家店受到很差的对待，所以我下定决心再也不去了。",
+      "en": "I was treated terribly at that shop, so I made up my mind never to go there again."
+    },
+    "why": {
+      "zh": "「二度と」＋「心に決めた」是第一人称的否定决心，用「辞書形＋まい」。",
+      "en": "「二度と」 + 「心に決めた」 is a first-person resolve not to do something: dictionary form + 「まい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「行くべき」是“应该去”，和「二度と」及前文的不满对不上，而且要说「行くべきだと」。",
+        "en": "「行くべき」 (\"should go\") clashes with 「二度と」 and the complaint, and would need 「だと」."
+      },
+      {
+        "zh": "「まい」本身就是否定，接在辞书形后面，不能接「ない」形。",
+        "en": "「まい」 is already negative and attaches to the dictionary form, not the ない-form."
+      },
+      {
+        "zh": "「行こう」是“去吧”，和“受到恶劣对待”“再也不”的决心相反。",
+        "en": "「行こう」 (\"let's go\") contradicts the bad treatment and 「二度と」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l72-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson72#4"
+    ],
+    "difficulty": 3,
+    "stem": "あれほど大きな失敗をしたのだから、まさか彼も同じことを（　）。",
+    "options": [
+      "繰り返すまい",
+      "繰り返すに違いない",
+      "繰り返しつつある",
+      "繰り返しかねない"
+    ],
+    "answer": 0,
+    "full": "あれほど大きな失敗をしたのだから、まさか彼も同じことを 繰り返すまい。",
+    "tr": {
+      "zh": "犯了那么大的错，他总不至于再犯同样的错误吧。",
+      "en": "After such a big failure, surely he won't make the same mistake again."
+    },
+    "why": {
+      "zh": "主语是第三人称「彼」，「まさか」引出否定推测“总不会……吧”，用表示否定推测的「まい」。",
+      "en": "The subject is a third person and 「まさか」 sets up a negative guess (\"surely not\"): conjectural 「まい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に違いない」是“一定会……”，和「まさか」以及“吃过大亏”的语境矛盾。",
+        "en": "「に違いない」 (\"surely will\") contradicts 「まさか」 and the lesson he must have learned."
+      },
+      {
+        "zh": "「つつある」是“正在逐渐……”，描述进行中的变化，和推测“不会再犯”无关。",
+        "en": "「つつある」 describes an ongoing change; it isn't a guess that he won't do it again."
+      },
+      {
+        "zh": "「かねない」是“说不定会……”，和「まさか」（不至于吧）的否定预期相反。",
+        "en": "「かねない」 (\"might well…\") contradicts 「まさか」, which expects \"surely not\"."
+      }
+    ]
+  },
+  {
+    "id": "n2-l72-012",
+    "type": "narabe",
+    "refs": [
+      "lesson72#4"
+    ],
+    "difficulty": 2,
+    "stem": "もう二度と [_] [_] [★] [_] 決めた。",
+    "options": [
+      "彼には",
+      "まいと",
+      "心に",
+      "頼む"
+    ],
+    "order": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "full": "もう二度と 彼には 頼む まいと 心に 決めた。",
+    "tr": {
+      "zh": "我下定决心，再也不求他了。",
+      "en": "I made up my mind never to ask him for anything again."
+    },
+    "why": {
+      "zh": "「二度と〜まい」是决心，「〜まいと心に決めた」引出决定：彼には → 頼む → まいと → 心に（＋決めた）。★ 在第三格，是「まいと」。",
+      "en": "「二度と…まい」 is a resolve, quoted by 「〜まいと心に決めた」: 彼には → 頼む → まいと → 心に (+ 決めた). The ★ is the third slot: 「まいと」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

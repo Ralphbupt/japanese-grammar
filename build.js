@@ -113,6 +113,13 @@ const AI_CSS = fs.readFileSync(path.join(__dirname, "site", "ai-assistant.css"),
 const AI_JS_BUNDLE = `(function(){if(!document.querySelector('article.lesson'))return;var s=document.createElement('style');s.textContent=${JSON.stringify(minifyCss(AI_CSS))};document.head.appendChild(s);})();\n` + AI_JS_SRC;
 const AI_JS_HASH = require("crypto").createHash("md5").update(AI_JS_BUNDLE).digest("hex").slice(0, 8);
 const AI_SCRIPT = `<script src="${SITE_PATH}ai-assistant.js?v=${AI_JS_HASH}" defer></script>`;  // ?v= busts browser caches on every change
+const QUIZ_JS_SRC = fs.readFileSync(path.join(__dirname, "site", "quiz.js"), "utf-8");
+const QUIZ_JS_HASH = require("crypto").createHash("md5").update(QUIZ_JS_SRC).digest("hex").slice(0, 8);
+const QUIZ_CSS = fs.readFileSync(path.join(__dirname, "site", "quiz.css"), "utf-8");
+const FEEDBACK_JS_SRC = fs.readFileSync(path.join(__dirname, "site", "feedback.js"), "utf-8");
+const FEEDBACK_JS_HASH = require("crypto").createHash("md5").update(FEEDBACK_JS_SRC).digest("hex").slice(0, 8);
+// Practice / mock test / flashcard pages; QUIZ_PUBLIC and QUIZ_LINKS are set in build-quiz.js.
+const { buildQuiz, loadLevel: loadQuizLevel, QUIZ_PUBLIC, QUIZ_LINKS } = require("./build-quiz");
 const SETTINGS_JS_HASH = require("crypto").createHash("md5").update(fs.readFileSync(path.join(__dirname, "site", "settings-modal.js"))).digest("hex").slice(0, 8);
 const SETTINGS_SCRIPT = `<script src="${SITE_PATH}settings-modal.js?v=${SETTINGS_JS_HASH}" defer></script>`;
 // Content-Security-Policy connect-src allowlist. This is the technical
@@ -1553,6 +1560,16 @@ async function main() {
   const marked = new Marked({ gfm: true, breaks: false });
 
   const sidebarHtml = [];
+  // Practice / mock test / flashcard links for a level that has questions.
+  const quizPages = (level) => {
+    if (!QUIZ_LINKS || !/^N[2-5]$/.test(level) || !loadQuizLevel(level).qs.length) return [];
+    const lv = level.toLowerCase();
+    return [
+      { href: `${SITE_PATH}${lv}-practice/`, zh: "✍ 练习题", en: "✍ Practice questions" },
+      fs.existsSync(path.join(__dirname, "questions", level, "mock-1")) && { href: `${SITE_PATH}${lv}-mock-test/`, zh: "⏱ 模拟题", en: "⏱ Mock test" },
+      { href: `${SITE_PATH}${lv}-cards/`, zh: "🗂 语法卡片", en: "🗂 Grammar flashcards" },
+    ].filter(Boolean);
+  };
   const articlesHtml = [];
   const audioRequests = [];
   const audioSeen = new Set();
@@ -1852,7 +1869,8 @@ async function main() {
       `<div class="nav-group-wrap" data-level="${group.label}">
     <button type="button" class="nav-group" aria-expanded="false"><span class="nav-group-label">${GROUP_NAMES[group.label] ? `<span class="lang-zh">${groupName(group.label, "zh")}</span><span class="lang-en">${groupName(group.label, "en")}</span>` : group.label}</span><span class="nav-caret" aria-hidden="true">▸</span></button>
     <div class="nav-group-items">
-      <a class="nav-item nav-overview" href="${SITE_PATH}${group.label}/"><span class="lang-zh">${groupName(group.label, "zh")} 总览</span><span class="lang-en">${groupName(group.label, "en")} Overview</span></a>
+      <a class="nav-item nav-overview" href="${SITE_PATH}${group.label}/"><span class="lang-zh">${groupName(group.label, "zh")} 总览</span><span class="lang-en">${groupName(group.label, "en")} Overview</span></a>${quizPages(group.label).map((q) => `
+      <a class="nav-item nav-overview" href="${q.href}"><span class="lang-zh">${q.zh}</span><span class="lang-en">${q.en}</span></a>`).join("")}
       ${groupItems.join("\n      ")}
     </div>
   </div>`
@@ -2087,7 +2105,8 @@ async function main() {
     <button id="settings-btn" type="button" class="nav-tool-btn nav-tool-extra" aria-label="设置 / Settings" title="设置 / Settings">${ICON_SETTINGS}</button>
   </div>
   <div class="nav-scroll">
-  <div class="nav-header"><a href="${SITE_PATH}" style="color:inherit;text-decoration:none;"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a></div>
+  <div class="nav-header"><a href="${SITE_PATH}" style="color:inherit;text-decoration:none;"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a></div>${QUIZ_LINKS ? `
+  <a class="nav-item nav-hub" href="${SITE_PATH}practice/"><span class="lang-zh">✍ 做题 · 模拟 · 卡片</span><span class="lang-en">✍ Practice · mock tests · cards</span></a>` : ""}
   ${sidebarHtml.join("\n  ")}
   </div>
 </nav>
@@ -2202,7 +2221,8 @@ ${SETTINGS_SCRIPT}`;
     </p>
     <div class="home-actions">
       <a class="btn-primary" href="lesson01/"><span class="lang-zh">从第 1 课开始</span><span class="lang-en">Start with lesson 1</span></a>
-      <a class="btn-secondary" href="anki/"><span class="lang-zh">下载 Anki 卡组</span><span class="lang-en">Get the Anki decks</span></a>
+      <a class="btn-secondary" href="anki/"><span class="lang-zh">下载 Anki 卡组</span><span class="lang-en">Get the Anki decks</span></a>${quizPages("N5").length ? `
+      <a class="btn-secondary" href="practice/"><span class="lang-zh">做题 · 模拟 · 卡片</span><span class="lang-en">Practice, mock tests &amp; flashcards</span></a>` : ""}
     </div>
   </header>
   <section class="home-levels">
@@ -2386,7 +2406,51 @@ ${APP_PREFS_JS}
   // ─── Generate individual lesson pages ───
   // Pages published once per language (PAGE_LANGS); links to them on a
   // non-root copy point at that language's copy.
-  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "guides", "about"]);
+  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "guides", "about", "practice", ...["n5", "n4", "n3", "n2"].flatMap((l) => [`${l}-practice`, `${l}-mock-test`, `${l}-cards`])]);
+  // "Practice this point" at the end of every grammar point that has practice
+  // questions (questions/N*/lessonNN.json refs), linking to the practice page.
+  const quizRefCount = {};
+  if (QUIZ_LINKS) for (const lv of ["N5", "N4", "N3", "N2"]) {
+    for (const q of loadQuizLevel(lv).qs) for (const r of q.refs || []) if (/#\d+$/.test(r)) quizRefCount[`${lv}:${r}`] = (quizRefCount[`${lv}:${r}`] || 0) + 1;
+  }
+  const quizLessonCount = {};
+  if (QUIZ_LINKS) for (const lv of ["N5", "N4", "N3", "N2"]) {
+    for (const q of loadQuizLevel(lv).qs) {
+      // Grammar questions, and vocabulary questions on a word from the lesson's table.
+      const ref = q._kind === "lesson" ? q.refs[0] : (q.refs || []).find((r) => /#vocab$/.test(r));
+      if (ref) { const l = ref.split("#")[0]; quizLessonCount[`${lv}:${l}`] = (quizLessonCount[`${lv}:${l}`] || 0) + 1; if (q._kind !== "lesson") quizLessonCount[`${lv}:${l}:vocab`] = 1; }
+    }
+  }
+  const mockLevels = ["N5", "N4", "N3", "N2"].filter((lv) => fs.existsSync(path.join(__dirname, "questions", lv, "mock-1")));
+  const addQuizLinks = (html, id, level) => {
+    if (!QUIZ_LINKS) return html;
+    // JLPT guide: after "时间分配", a pointer to the timed mock tests.
+    if (/^jlpt-/.test(id) && mockLevels.length) {
+      return html.split(/(?=<h2[\s>])/).map((part) => {
+        if (!/^<h2[^>]*\bid="时间分配/.test(part)) return part;
+        const links = mockLevels.map((lv) => `<a href="${SITE_PATH}${lv.toLowerCase()}-mock-test/">⏱ ${lv} <span class="lang-zh">模拟题</span><span class="lang-en">mock test</span></a>`).join(" ");
+        const link = `<p class="quiz-link"><span class="lang-zh">用计时模拟题练时间分配：</span><span class="lang-en">Practise your timing with a timed mock test:</span> ${links}</p>\n`;
+        const hr = part.match(/<hr\s*\/?>\s*$/);
+        return hr ? part.slice(0, hr.index) + link + hr[0] : part + link;
+      }).join("");
+    }
+    if (!/^N[2-5]$/.test(level)) return html;
+    // Whole lesson: before 复习计划 (or at the end).
+    const total = quizLessonCount[`${level}:${id}`];
+    const lessonLink = total ? `<p class="quiz-link quiz-link-lesson"><a href="${SITE_PATH}${level.toLowerCase()}-practice/#lesson=${id}">✍ <span class="lang-zh">练这一课的题（${quizLessonCount[`${level}:${id}:vocab`] ? "语法 + 词汇，" : ""}${total} 题）</span><span class="lang-en">Practice this lesson (${quizLessonCount[`${level}:${id}:vocab`] ? "grammar + vocabulary, " : ""}${total} questions)</span></a></p>\n` : "";
+    let lessonLinkPlaced = !lessonLink;
+    const out = html.split(/(?=<h2[\s>])/).map((part) => {
+      if (!lessonLinkPlaced && /^<h2[^>]*\bid="复习计划/.test(part)) { lessonLinkPlaced = true; return lessonLink + part; }
+      const k = (part.match(/^<h2[^>]*\bid="(\d+)\._/) || [])[1];
+      const n = k && quizRefCount[`${level}:${id}#${k}`];
+      if (!n) return part;
+      // Before the section's closing <hr>, so it reads as part of the point.
+      const link = `<p class="quiz-link"><a href="${SITE_PATH}${level.toLowerCase()}-practice/#ref=${id}.${k}">✍ <span class="lang-zh">练这个语法点（${n} 题）</span><span class="lang-en">Practice this point (${n} questions)</span></a></p>\n`;
+      const hr = part.match(/<hr\s*\/?>\s*$/);
+      return hr ? part.slice(0, hr.index) + link + hr[0] : part + link;
+    }).join("");
+    return lessonLinkPlaced ? out : out + lessonLink;
+  };
   for (let li = 0; li < lessonPages.length; li++) {
     const lesson = lessonPages[li];
     // Prev/next stay inside the course or inside the guides, never across.
@@ -2563,7 +2627,7 @@ ${sidebarMarkupHtml}
     ${prevHtml}
     ${nextHtml}
   </nav>
-  <article class="lesson active">${lesson.html}</article>
+  <article class="lesson active">${addQuizLinks(lesson.html, lesson.id, lessonLevel)}</article>
   <nav class="prev-next" aria-label="lesson navigation">
     ${prevHtml}
     ${nextHtml}
@@ -2847,7 +2911,8 @@ ${sidebarMarkupHtml}
     <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><span>JLPT ${level}</span>
   </nav>
   <h1><span class="lang-zh">JLPT ${level} 语法清单 - ${lessons.length} 课 ${totalPoints}+ 语法点速查</span><span class="lang-en">JLPT ${level} Grammar — ${lessons.length} Lessons, ${totalPoints}+ Grammar Points</span></h1>
-  <p class="overview-intro"><span class="lang-zh">${LEVEL_INTRO[level]}</span><span class="lang-en">${LEVEL_INTRO_EN[level]}</span></p>
+  <p class="overview-intro"><span class="lang-zh">${LEVEL_INTRO[level]}</span><span class="lang-en">${LEVEL_INTRO_EN[level]}</span></p>${quizPages(level).length ? `
+  <p class="ov-quiz">${quizPages(level).map((q) => `<a href="${q.href}"><span class="lang-zh">${q.zh}</span><span class="lang-en">${q.en}</span></a>`).join("")}</p>` : ""}
   <div class="level-stats">
     <div class="level-stat"><strong>${lessons.length}</strong><span><span class="lang-zh">课</span><span class="lang-en">lessons</span></span></div>
     <div class="level-stat"><strong>${totalPoints}+</strong><span><span class="lang-zh">语法点</span><span class="lang-en">points</span></span></div>
@@ -3116,6 +3181,183 @@ ${APP_PREFS_JS}
     console.log("  Generated dist/about/index.html");
   }
 
+  // ─── Practice question pages (build-quiz.js → dist/quiz/*.json, site/quiz.js) ───
+  const quizBundles = await buildQuiz(async (text) => fixReadings(await furiganaText(kuro, text)));
+  const quizPageIds = [];
+  fs.mkdirSync(path.join(__dirname, "dist", "quiz"), { recursive: true });
+  fs.writeFileSync(path.join(__dirname, "dist", "quiz.js"), QUIZ_JS_SRC, "utf-8");
+  fs.writeFileSync(path.join(__dirname, "dist", "feedback.js"), FEEDBACK_JS_SRC, "utf-8");
+  // Each data file gets a content-hash ?v= (the service worker caches it for good).
+  const writeQuizData = (name, obj) => {
+    const json = JSON.stringify(obj);
+    fs.writeFileSync(path.join(__dirname, "dist", "quiz", name), json, "utf-8");
+    return `${SITE_PATH}quiz/${name}?v=${require("crypto").createHash("md5").update(json).digest("hex").slice(0, 8)}`;
+  };
+  const renderQuiz = (lang, m, lv, level, appAttrs, preload) => `<!DOCTYPE html>
+<html lang="${lang.htmlLang}"${lv.htmlAttrs}>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>${LANG_REDIRECT_JS}</script>
+<title>${m.title}</title>
+<meta name="description" content="${m.desc.replace(/"/g, '&quot;')}">${QUIZ_PUBLIC ? "" : '\n<meta name="robots" content="noindex">'}
+<link rel="canonical" href="${lv.url}">${lv.hreflang}
+<meta property="og:type" content="website">
+<meta property="og:title" content="${m.title}">
+<meta property="og:description" content="${m.desc.replace(/"/g, '&quot;')}">
+<meta property="og:url" content="${lv.url}">
+<meta property="og:locale" content="${lang.ogLocale}">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">${preload ? `\n<link rel="preload" href="${preload}" as="fetch" crossorigin>` : ""}
+${CSP_META}
+${THEME_INIT_SCRIPT}
+${GTAG_DEFERRED}
+${SPECULATION_RULES}
+${SW_REGISTER}
+<style>
+${CSS}
+#content { margin: 0 auto !important; max-width: 760px; padding: 2rem 1.5rem 4rem; }
+.breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 1rem; }
+.breadcrumb a { color: var(--text-muted); text-decoration: none; }
+.breadcrumb .sep { margin: 0 .4em; }
+.quiz-head h1 { font-size: var(--text-2xl); margin: 0 0 .6rem; }
+.quiz-head p { color: var(--text-muted); line-height: 1.7; margin: 0; }
+.quiz-head .quiz-nav { margin-top: .6rem; font-size: .92rem; }
+.quiz-head .quiz-nav a { color: var(--link); }
+@media (max-width: 600px) { #content { padding: 1.2rem 1rem 3rem; } }
+${minifyCss(QUIZ_CSS)}
+</style>
+</head>
+<body class="sidebar-collapsed">
+${sidebarMarkupHtml}
+<main id="content">
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span>${level ? `<a href="${SITE_PATH}${level}/">${level}</a><span class="sep">›</span>` : ""}<span>${m.crumb}</span>
+  </nav>
+  <header class="quiz-head"><h1>${m.h1}</h1><p>${m.lead}</p><p class="quiz-nav">${m.nav}</p></header>
+  ${appAttrs === null ? m.body : `<div id="quiz-app" data-level="${level}" ${appAttrs}></div>`}
+  <div id="quiz-feedback"></div>
+  ${siteFooterHtml}
+</main>
+<script>
+${APP_PREFS_JS}
+</script>
+${appAttrs === null ? "" : `<script src="${SITE_PATH}quiz.js?v=${QUIZ_JS_HASH}" defer></script>`}
+<script src="${SITE_PATH}feedback.js?v=${FEEDBACK_JS_HASH}" defer></script>
+</body>
+</html>`;
+  for (const [level, { practice, mocks }] of Object.entries(quizBundles)) {
+    const lv = level.toLowerCase();
+    const practiceId = `${lv}-practice`, mockId = `${lv}-mock-test`, cardsId = `${lv}-cards`;
+    // The three pages link to each other (when the other one exists).
+    const navLinks = (here, en) => [
+      here !== practiceId && `✍ <a href="${SITE_PATH}${practiceId}/">${en ? "Practice by question type" : "按题型练习"}</a>`,
+      here !== mockId && mocks.length && `⏱ <a href="${SITE_PATH}${mockId}/">${en ? `Timed ${level} mock test` : `${level} 模拟题（计时）`}</a>`,
+      here !== cardsId && `🗂 <a href="${SITE_PATH}${cardsId}/">${en ? "Grammar flashcards" : "语法卡片（在线背）"}</a>`,
+    ].filter(Boolean).join(" · ");
+    const src = writeQuizData(`${lv}.json`, practice);
+    const count = practice.questions.length;
+    const meta = {
+      en: {
+        title: `JLPT ${level} Practice Questions — Vocabulary, Grammar & Reading, with Explanations`,
+        desc: `Free JLPT ${level} practice: ${count} exam-style questions — kanji reading, vocabulary, grammar, sentence order and reading — with instant answers, an explanation for every wrong option, and a review list that brings back what you missed.`,
+        h1: `JLPT ${level} Practice Questions`, crumb: `${level} Practice`,
+        lead: `Exam-style ${level} questions in every format of the test except listening. Answer, see why each option is right or wrong, and the ones you miss come back a few days later.`,
+        nav: navLinks(practiceId, true),
+      },
+      zh: {
+        title: `JLPT ${level} 练习题 - 文字词汇・语法・阅读在线做题，附详细解析`,
+        desc: `免费 JLPT ${level} 练习：${count} 道仿真题，覆盖汉字读音、词汇、语法、句子排序和阅读，即时判分，每个错误选项都有解析，错题本按间隔重复自动复习。`,
+        h1: `JLPT ${level} 练习题`, crumb: `${level} 练习`,
+        lead: `除听力外覆盖 ${level} 考试的全部题型。答完马上看每个选项为什么对、为什么错，答错的题过几天会再考你一次。`,
+        nav: navLinks(practiceId, false),
+      },
+    };
+    for (const lang of PAGE_LANGS) {
+      writeLangPage(practiceId, lang, localizePage(renderQuiz(lang, meta[lang.code], langVariant(practiceId, lang), level, `data-src="${src}"`, src), lang, localizedPageIds));
+    }
+    quizPageIds.push(practiceId);
+    console.log(`  Generated dist/${practiceId}/ (${count} questions${QUIZ_PUBLIC ? "" : ", not public"})`);
+    // Flashcards: the data is written by build-anki.js (it runs after this).
+    const cardsMeta = {
+      en: {
+        title: `JLPT ${level} Grammar Flashcards Online — Spaced Repetition, Free`,
+        desc: `Learn every JLPT ${level} grammar point with free online flashcards: meaning, examples with furigana and audio, and Anki-style spaced repetition in your browser — no app or account.`,
+        h1: `JLPT ${level} Grammar Flashcards`, crumb: `${level} Flashcards`,
+        lead: `One card per grammar point in the lessons. Recall it, check the meaning and examples, rate yourself — cards come back just before you'd forget them.`,
+        nav: navLinks(cardsId, true),
+      },
+      zh: {
+        title: `JLPT ${level} 语法卡片在线背 - 间隔重复，免费`,
+        desc: `在线背 JLPT ${level} 全部语法点：含义、带振假名和发音的例句，按 Anki 式间隔重复安排复习，浏览器里直接用，无需下载 App、无需注册。`,
+        h1: `JLPT ${level} 语法卡片`, crumb: `${level} 卡片`,
+        lead: `课文里每个语法点一张卡。先回想，再看含义和例句，给自己打分——快忘的时候它会再出现。`,
+        nav: navLinks(cardsId, false),
+      },
+    };
+    for (const lang of PAGE_LANGS) {
+      writeLangPage(cardsId, lang, localizePage(renderQuiz(lang, cardsMeta[lang.code], langVariant(cardsId, lang), level, `data-mode="cards" data-src="${SITE_PATH}quiz/${lv}-cards.json"`), lang, localizedPageIds));
+    }
+    quizPageIds.push(cardsId);
+    if (!mocks.length) continue;
+    // Mock tests: the test file, and its answer key loaded only after submitting.
+    const sets = mocks.map(({ test, key }) => ({ id: test.id, n: test.n, src: writeQuizData(`${test.id}.json`, test), key: writeQuizData(`${test.id}.key.json`, key) }));
+    const mockMeta = {
+      en: {
+        title: `JLPT ${level} Mock Test Online — Timed, with Scores and Explanations`,
+        desc: `Free timed JLPT ${level} mock test in the real format (vocabulary, grammar and reading), with an estimated score against the pass marks, a breakdown by question type, and explanations for every question.`,
+        h1: `JLPT ${level} Mock Test`, crumb: `${level} Mock test`,
+        lead: `Original questions in the real test's order and timing, not in the practice bank. No answers until you submit; then an estimated score, where the time went, and an explanation for every question.`,
+        nav: navLinks(mockId, true),
+      },
+      zh: {
+        title: `JLPT ${level} 模拟题在线测试 - 计时、估分、逐题解析`,
+        desc: `免费 JLPT ${level} 在线模拟考：按真题结构和时间出题（文字词汇、语法、阅读），交卷后估算分数、对照合格线，按题型分析，每道题都有解析。`,
+        h1: `JLPT ${level} 模拟题`, crumb: `${level} 模拟题`,
+        lead: `原创题目，按真考的顺序和时间作答，和练习题不重复。交卷前不显示答案；交卷后估算分数、看时间花在哪里、逐题看解析。`,
+        nav: navLinks(mockId, false),
+      },
+    };
+    for (const lang of PAGE_LANGS) {
+      writeLangPage(mockId, lang, localizePage(renderQuiz(lang, mockMeta[lang.code], langVariant(mockId, lang), level, `data-mode="mock" data-sets='${JSON.stringify(sets)}'`), lang, localizedPageIds));
+    }
+    quizPageIds.push(mockId);
+    console.log(`  Generated dist/${mockId}/ (${mocks.length} sets${QUIZ_PUBLIC ? "" : ", not public"})`);
+  }
+
+  // Hub for everything you can do rather than read: /practice/, one card per
+  // level (practice, mock tests, flashcards), levels without questions yet greyed out.
+  const hubCard = (level, en) => {
+    const b = quizBundles[level], lv = level.toLowerCase(), L = (zh, e) => (en ? e : zh);
+    if (!b) return `<div class="hub-level hub-soon"><h2>${level}</h2><p>${L("准备中", "Coming soon")}</p></div>`;
+    const types = Object.keys(b.practice.types).length, n = b.practice.questions.length;
+    return `<div class="hub-level"><h2>${level}</h2>
+      <p class="hub-meta">${L(`${n} 道练习题 · ${types} 种题型（除听力外全部）`, `${n} practice questions · ${types} question types (all but listening)`)}</p>
+      <a class="hub-go" href="${SITE_PATH}${lv}-practice/"><b>✍ ${L("练习", "Practice")}</b><span>${L("今日练习、按题型练、错题本；答完马上看解析", "Daily sets, by question type, review list; explanations after each answer")}</span></a>
+      ${b.mocks.length ? `<a class="hub-go" href="${SITE_PATH}${lv}-mock-test/"><b>⏱ ${L("模拟题", "Mock test")}</b><span>${L(`${b.mocks.length} 套，按真考结构计时，交卷后估分`, `${b.mocks.length} timed test${b.mocks.length > 1 ? "s" : ""} in the real format, with an estimated score`)}</span></a>` : ""}
+      <a class="hub-go" href="${SITE_PATH}${lv}-cards/"><b>🗂 ${L("语法卡片", "Grammar flashcards")}</b><span>${L("每个语法点一张卡，间隔复习；认卡 / 填空卡", "One card per grammar point, spaced repetition; recognition / fill-in")}</span></a>
+    </div>`;
+  };
+  const hubMeta = {
+    en: {
+      title: "JLPT Practice Tests Online — N5 to N2 Questions, Mock Tests & Flashcards",
+      desc: "Free JLPT practice in your browser: exam-style questions for every section except listening, timed mock tests with estimated scores, and grammar flashcards with spaced repetition. No sign-up.",
+      h1: "Practice", crumb: "Practice", nav: "",
+      lead: "Everything on this site you do rather than read. Pick your level; progress stays in this browser.",
+    },
+    zh: {
+      title: "JLPT 在线练习题 - N5 到 N2 练习、模拟题、语法卡片",
+      desc: "免费在线做 JLPT 题：除听力外全部题型的仿真练习题、计时模拟题（交卷估分）、语法卡片间隔复习，打开即用，无需注册。",
+      h1: "做题", crumb: "做题", nav: "",
+      lead: "这里是本站所有“动手”的部分：练习、模拟、背卡。选你的级别开始，进度保存在这个浏览器里。",
+    },
+  };
+  for (const lang of PAGE_LANGS) {
+    const en = lang.code === "en";
+    const m = { ...hubMeta[lang.code], body: `<div class="hub">${["N5", "N4", "N3", "N2"].map((l) => hubCard(l, en)).join("")}</div>` };
+    writeLangPage("practice", lang, localizePage(renderQuiz(lang, m, langVariant("practice", lang), "", null), lang, localizedPageIds));
+  }
+  quizPageIds.push("practice");
+
   // Settings used to be a standalone page; it is now a modal on every page.
   const settingsStubDir = path.join(__dirname, "dist", "settings");
   fs.mkdirSync(settingsStubDir, { recursive: true });
@@ -3187,6 +3429,7 @@ ${APP_PREFS_JS}
   };
   // About page (E-E-A-T page, lower priority since not browsed often)
   if (aboutPageGenerated) pushLangUrls("about", gitLastModTime("pages/about.md") || today, "yearly", "0.5");
+  if (QUIZ_PUBLIC) for (const id of quizPageIds) pushLangUrls(id, gitLastModTime("questions") || today, "weekly", "0.8");
   // Anki landing page (downloadable flashcards). Decks are derived from lesson
   // content, so the page effectively changes when any lesson last changed.
   sitemapUrls.push(`  <url>
@@ -3907,6 +4150,11 @@ html.theme-dark .speak-btn:hover { border-color: var(--accent); }
   padding: .6rem 1rem; margin: 1.5rem 0; font-size: .85rem;
 }
 .related-label { font-weight: 600; color: var(--text-muted); margin-right: .5rem; }
+.quiz-link { margin: 1.4rem 0 .4rem; }
+.nav-hub { margin: .2rem .6rem .6rem; font-weight: 600; }
+.quiz-link a, .ov-quiz a { display: inline-block; padding: .35em .95em; border: 1px solid var(--accent); border-radius: 999px; color: var(--accent); text-decoration: none; font-size: .92em; }
+.quiz-link a:hover, .ov-quiz a:hover { background: var(--accent); color: #fff; }
+.ov-quiz { display: flex; flex-wrap: wrap; gap: .5rem; margin: .8rem 0 1.2rem; }
 .cross-link {
   display: inline-block; background: var(--chip-bg); color: var(--chip-text);
   padding: .15rem .55rem; border-radius: var(--radius-sm); margin: .15rem .2rem;

@@ -1,0 +1,815 @@
+[
+  {
+    "id": "n4-l32-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson32#1"
+    ],
+    "difficulty": 1,
+    "stem": "空が 暗く なって きました。午後は 雨が（　）と 思います。",
+    "options": [
+      "降る",
+      "降ろう",
+      "降って",
+      "降りたい"
+    ],
+    "answer": 0,
+    "full": "空が 暗く なって きました。午後は 雨が 降ると 思います。",
+    "tr": {
+      "zh": "天暗下来了。我觉得下午会下雨。",
+      "en": "The sky's getting dark. I think it'll rain this afternoon."
+    },
+    "why": {
+      "zh": "对天气的判断“我觉得会下雨”：普通形＋「と思う」，降る ＋ と思います。",
+      "en": "A guess about the weather: plain form ＋ 「と思う」 → 降ると思います."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "意向形「〜ようと思う」表示自己的打算，雨没有意志，不能用「降ろう」。",
+        "en": "The volitional 「〜ようと思う」 is your own intention; rain has no will, so 「降ろう」 doesn't work."
+      },
+      {
+        "zh": "「と思う」前面要用普通形，不接て形。",
+        "en": "「と思う」 takes the plain form, not the て-form."
+      },
+      {
+        "zh": "「〜たい」是人的愿望，雨不会“想下”。",
+        "en": "「〜たい」 is a person's wish; rain doesn't \"want\" to fall."
+      }
+    ]
+  },
+  {
+    "id": "n4-l32-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson32#1"
+    ],
+    "difficulty": 2,
+    "stem": "わたしは もう 25歳なのに、母は 今でも わたしが 子どもだと（　）。",
+    "options": [
+      "思いましょう",
+      "思いたいです",
+      "思って います",
+      "思って ください"
+    ],
+    "answer": 2,
+    "full": "わたしは もう 25歳なのに、母は 今でも わたしが 子どもだと 思って います。",
+    "tr": {
+      "zh": "我都25岁了，妈妈到现在还觉得我是小孩。",
+      "en": "I'm already 25, but my mother still thinks I'm a child."
+    },
+    "why": {
+      "zh": "说的是别人（母）一直持有的想法，用「と思っている」。",
+      "en": "This is someone else's (the mother's) ongoing belief: 「と思っている」."
+    },
+    "wrong": [
+      {
+        "zh": "「思いましょう」是“一起这样想吧”，主语是「母は」时说不通。",
+        "en": "「思いましょう」 (let's think) doesn't work with the subject 「母は」."
+      },
+      {
+        "zh": "「思いたい」是说话人自己的愿望，不能描述母亲的想法。",
+        "en": "「思いたい」 is the speaker's own wish; it can't describe the mother's belief."
+      },
+      null,
+      {
+        "zh": "「思ってください」是请对方这样想，和「母は」接不上。",
+        "en": "「思ってください」 asks the listener to think so; it doesn't fit 「母は」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l32-003",
+    "type": "narabe",
+    "refs": [
+      "lesson32#1"
+    ],
+    "difficulty": 1,
+    "stem": "駅の 近くの あの 公園は [_] [_] [★] [_]。",
+    "options": [
+      "と",
+      "静か",
+      "思います",
+      "だ"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "駅の 近くの あの 公園は 静かだと 思います。",
+    "tr": {
+      "zh": "我觉得车站附近的那个公园很安静。",
+      "en": "I think that park near the station is quiet."
+    },
+    "why": {
+      "zh": "な形容词接「と思う」要加「だ」：静か ＋ だ ＋ と ＋ 思います。★ 在第三格，是「と」。",
+      "en": "A な-adjective needs 「だ」 before 「と思う」: 静か ＋ だ ＋ と ＋ 思います. The ★ is the third slot: 「と」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l32-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson32#2"
+    ],
+    "difficulty": 1,
+    "stem": "パーティーに だれが 来る（　）、まだ 分かりません。",
+    "options": [
+      "かどうか",
+      "か",
+      "のに",
+      "と"
+    ],
+    "answer": 1,
+    "full": "パーティーに だれが 来るか、まだ 分かりません。",
+    "tr": {
+      "zh": "还不知道谁会来参加派对。",
+      "en": "I don't know yet who's coming to the party."
+    },
+    "why": {
+      "zh": "句中有疑问词「だれ」，间接疑问只用「か」。",
+      "en": "There's a question word (「だれ」), so the embedded question takes just 「か」."
+    },
+    "wrong": [
+      {
+        "zh": "「かどうか」用于没有疑问词的“是否”问题，和「だれ」不能一起用。",
+        "en": "「かどうか」 is for yes/no questions with no question word; it can't go with 「だれ」."
+      },
+      null,
+      {
+        "zh": "「のに」是“明明……却……”，和“还不知道”接不上。",
+        "en": "「のに」 (even though) doesn't lead into \"I don't know yet\"."
+      },
+      {
+        "zh": "「と」不能把「だれが来る」变成“不知道”的内容。",
+        "en": "「と」 can't turn 「だれが来る」 into the thing you don't know."
+      }
+    ]
+  },
+  {
+    "id": "n4-l32-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson32#2"
+    ],
+    "difficulty": 1,
+    "stem": "この 答えが 正しい（　）、先生に 聞いて みます。",
+    "options": [
+      "のに",
+      "ように",
+      "ので",
+      "かどうか"
+    ],
+    "answer": 3,
+    "full": "この 答えが 正しいかどうか、先生に 聞いて みます。",
+    "tr": {
+      "zh": "我去问问老师这个答案对不对。",
+      "en": "I'll ask the teacher whether this answer is right."
+    },
+    "why": {
+      "zh": "“答案对不对”是没有疑问词的二选一问题，用「かどうか」。",
+      "en": "\"Is the answer right or not\" is a yes/no question with no question word: 「かどうか」."
+    },
+    "wrong": [
+      {
+        "zh": "「のに」是“明明对却……”，和“去问老师”的意思不合。",
+        "en": "「のに」 (even though it's right) doesn't fit going to ask the teacher."
+      },
+      {
+        "zh": "「ように」表示目的或比喻，“为了答案正确去问”不自然。",
+        "en": "「ように」 (so that / like) doesn't fit here."
+      },
+      {
+        "zh": "「ので」表示原因，“因为答案正确所以去问”，既然知道对就不用问了。",
+        "en": "「ので」 gives a reason — \"because it's right, I'll ask\" — but then there'd be nothing to ask."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n4-l32-006",
+    "type": "narabe",
+    "refs": [
+      "lesson32#2"
+    ],
+    "difficulty": 2,
+    "stem": "あの 店の ラーメンが [_] [_] [★] [_] 分かりません。",
+    "options": [
+      "かどうか",
+      "みないと",
+      "おいしい",
+      "食べて"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "あの 店の ラーメンが おいしいかどうか 食べて みないと 分かりません。",
+    "tr": {
+      "zh": "那家店的拉面好不好吃，不吃吃看不知道。",
+      "en": "You can't tell whether that shop's ramen is good until you try it."
+    },
+    "why": {
+      "zh": "おいしい ＋ かどうか（是否好吃）＋ 食べて みないと（不尝尝的话）＋ 分かりません。★ 在第三格，是「食べて」。",
+      "en": "おいしい ＋ かどうか (whether it's good) ＋ 食べて みないと (unless you try) ＋ 分かりません. The ★ is the third slot: 「食べて」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l32-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson32#3"
+    ],
+    "difficulty": 1,
+    "stem": "鳥（　）空を 自由に 飛びたいです。",
+    "options": [
+      "のように",
+      "のような",
+      "ように",
+      "らしい"
+    ],
+    "answer": 0,
+    "full": "鳥のように 空を 自由に 飛びたいです。",
+    "tr": {
+      "zh": "想像鸟一样在空中自由地飞。",
+      "en": "I want to fly freely through the sky like a bird."
+    },
+    "why": {
+      "zh": "后面是动词「飛びたい」，修饰动作用「名词＋のように」。",
+      "en": "A verb (「飛びたい」) follows, so the comparison is noun ＋ 「のように」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「のような」后面要接名词，这里后面是动作。",
+        "en": "「のような」 must be followed by a noun, but here an action follows."
+      },
+      {
+        "zh": "名词接「ように」要加「の」：鳥のように。",
+        "en": "A noun needs 「の」 before 「ように」: 鳥のように."
+      },
+      {
+        "zh": "「鳥らしい」是“有鸟的样子”，不能修饰后面的动作。",
+        "en": "「鳥らしい」 (bird-like, typical of birds) can't modify the action that follows."
+      }
+    ]
+  },
+  {
+    "id": "n4-l32-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson32#3"
+    ],
+    "difficulty": 1,
+    "stem": "好きな 歌手に 会えて、昨日は 夢（　）一日でした。",
+    "options": [
+      "のように",
+      "ような",
+      "のような",
+      "みたいに"
+    ],
+    "answer": 2,
+    "full": "好きな 歌手に 会えて、昨日は 夢のような 一日でした。",
+    "tr": {
+      "zh": "见到了喜欢的歌手，昨天像做梦一样的一天。",
+      "en": "I got to meet my favourite singer — yesterday was like a dream."
+    },
+    "why": {
+      "zh": "后面是名词「一日」，修饰名词用「名词＋のような」。",
+      "en": "A noun (「一日」) follows, so it's noun ＋ 「のような」."
+    },
+    "wrong": [
+      {
+        "zh": "「のように」修饰动词或形容词，不能直接接名词「一日」。",
+        "en": "「のように」 modifies verbs and adjectives, not a noun like 「一日」."
+      },
+      {
+        "zh": "名词接「ような」要加「の」：夢のような。",
+        "en": "A noun needs 「の」 before 「ような」: 夢のような."
+      },
+      null,
+      {
+        "zh": "「みたいに」修饰动作，接名词要用「みたいな」。",
+        "en": "「みたいに」 modifies actions; before a noun it would be 「みたいな」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l32-009",
+    "type": "narabe",
+    "refs": [
+      "lesson32#3"
+    ],
+    "difficulty": 2,
+    "stem": "わたしも 日本語の 先生 [_] [_] [★] [_] です。",
+    "options": [
+      "たい",
+      "話し",
+      "上手に",
+      "のように"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "わたしも 日本語の 先生のように 上手に 話したいです。",
+    "tr": {
+      "zh": "我也想像日语老师一样说得那么好。",
+      "en": "I want to speak as well as my Japanese teacher, too."
+    },
+    "why": {
+      "zh": "先生 ＋ のように（像老师一样）＋ 上手に ＋ 話し ＋ たいです。★ 在第三格，是「話し」。",
+      "en": "先生 ＋ のように (like the teacher) ＋ 上手に ＋ 話し ＋ たいです. The ★ is the third slot: 「話し」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l32-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson32#4"
+    ],
+    "difficulty": 1,
+    "stem": "母「もう 8時よ。早く（　）。学校に 遅れるわよ。」",
+    "options": [
+      "起きるなさい",
+      "起きなさい",
+      "起きりなさい",
+      "起きなさって"
+    ],
+    "answer": 1,
+    "full": "母「もう 8時よ。早く 起きなさい。学校に 遅れるわよ。」",
+    "tr": {
+      "zh": "妈妈：已经8点了。快起床！上学要迟到了。",
+      "en": "Mum: It's already eight! Get up — you'll be late for school."
+    },
+    "why": {
+      "zh": "妈妈对孩子下命令用「ます形词干＋なさい」：起きます → 起きなさい。",
+      "en": "A mother giving an order to her child: ます-stem ＋ 「なさい」 → 起きなさい."
+    },
+    "wrong": [
+      {
+        "zh": "「なさい」接ます形词干，不接辞书形。",
+        "en": "「なさい」 attaches to the ます-stem, not the dictionary form."
+      },
+      null,
+      {
+        "zh": "「起きる」是二类动词，词干是「起き」，没有「起きり」。",
+        "en": "「起きる」 is a る-verb with stem 「起き」; 「起きり」 doesn't exist."
+      },
+      {
+        "zh": "「なさって」是尊敬语「なさる」的て形，不是命令，用在这里不通。",
+        "en": "「なさって」 is the て-form of honorific 「なさる」, not a command."
+      }
+    ]
+  },
+  {
+    "id": "n4-l32-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson32#4",
+      "lesson32#7"
+    ],
+    "difficulty": 2,
+    "stem": "（ホテルの 受付で）\n係の人「お客様、こちらに お名前を（　）。」",
+    "options": [
+      "書きなさい",
+      "書け",
+      "書くな",
+      "書いて ください"
+    ],
+    "answer": 3,
+    "full": "（ホテルの 受付で） 係の人「お客様、こちらに お名前を 書いて ください。」",
+    "tr": {
+      "zh": "（在酒店前台）工作人员：客人，请在这里写上您的名字。",
+      "en": "(At a hotel front desk) Staff: Could you write your name here, please?"
+    },
+    "why": {
+      "zh": "工作人员对客人说话，要用礼貌的请求「〜てください」。",
+      "en": "Staff speaking to a guest use the polite request 「〜てください」."
+    },
+    "wrong": [
+      {
+        "zh": "「なさい」是上对下（父母、老师）的命令，不能对客人用。",
+        "en": "「なさい」 is an order from above (parent, teacher) — never to a guest."
+      },
+      {
+        "zh": "命令形「書け」非常粗鲁，不能对客人用。",
+        "en": "The imperative 「書け」 is very blunt; never used to a guest."
+      },
+      {
+        "zh": "「書くな」是禁止“不许写”，和请客人写名字矛盾，也很粗鲁。",
+        "en": "「書くな」 forbids writing — the opposite of what's wanted, and rude."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n4-l32-012",
+    "type": "narabe",
+    "refs": [
+      "lesson32#4"
+    ],
+    "difficulty": 1,
+    "stem": "先生「みなさん、[_] [_] [★] [_]。」",
+    "options": [
+      "教室では",
+      "なさい",
+      "静かに",
+      "し"
+    ],
+    "order": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "full": "先生「みなさん、教室では 静かに しなさい。」",
+    "tr": {
+      "zh": "老师：大家在教室里要安静！",
+      "en": "Teacher: Everyone, be quiet in the classroom."
+    },
+    "why": {
+      "zh": "教室では ＋ 静かに ＋ し（します的词干）＋ なさい：老师对学生的命令。★ 在第三格，是「し」。",
+      "en": "教室では ＋ 静かに ＋ し (stem of します) ＋ なさい: a teacher's command. The ★ is the third slot: 「し」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l32-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson32#5"
+    ],
+    "difficulty": 1,
+    "stem": "となりの 部屋から 大きな 音（　）します。だれか いるのでしょうか。",
+    "options": [
+      "が",
+      "を",
+      "に",
+      "で"
+    ],
+    "answer": 0,
+    "full": "となりの 部屋から 大きな 音が します。だれか いるのでしょうか。",
+    "tr": {
+      "zh": "隔壁房间传来很大的声音。是有人在吗？",
+      "en": "There's a loud noise coming from the next room. Is someone in there?"
+    },
+    "why": {
+      "zh": "感官上“听到声音”用「音がする」，感觉本身作主语，用「が」。",
+      "en": "\"A sound is heard\" is 「音がする」 — the sensation itself is the subject, marked with 「が」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「音をする」不是日语，五感表达固定用「がする」。",
+        "en": "「音をする」 isn't Japanese; sensations take 「がする」."
+      },
+      {
+        "zh": "「音にする」是“决定成声音”之类的意思，这里不通。",
+        "en": "「音にする」 would mean choosing or making something into a sound — not hearing one."
+      },
+      {
+        "zh": "「で」表示手段或地点，「音でします」不成立。",
+        "en": "「で」 marks means or place; 「音でします」 doesn't work."
+      }
+    ]
+  },
+  {
+    "id": "n4-l32-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson32#5"
+    ],
+    "difficulty": 2,
+    "stem": "この ケーキは レモンの 味（　）。さっぱりして いて、おいしいです。",
+    "options": [
+      "を します",
+      "が 見えます",
+      "が します",
+      "が なります"
+    ],
+    "answer": 2,
+    "full": "この ケーキは レモンの 味が します。さっぱりして いて、おいしいです。",
+    "tr": {
+      "zh": "这个蛋糕有柠檬的味道。很清爽，很好吃。",
+      "en": "This cake tastes of lemon. It's refreshing and delicious."
+    },
+    "why": {
+      "zh": "尝到某种味道用「〜の味がする」。",
+      "en": "Tasting a flavour is 「〜の味がする」."
+    },
+    "wrong": [
+      {
+        "zh": "五感表达用「がする」，不用「をする」。",
+        "en": "Sensations use 「がする」, not 「をする」."
+      },
+      {
+        "zh": "味道是尝出来的，不能“看见”。",
+        "en": "A taste can't be \"seen\"."
+      },
+      null,
+      {
+        "zh": "「なる」前面要用「に」，而且“变成柠檬味”和描述味道不合。",
+        "en": "「なる」 needs 「に」, and \"becoming lemon flavour\" isn't describing a taste."
+      }
+    ]
+  },
+  {
+    "id": "n4-l32-015",
+    "type": "narabe",
+    "refs": [
+      "lesson32#5"
+    ],
+    "difficulty": 1,
+    "stem": "もう 夜 10時なのに、外から [_] [_] [★] [_]。",
+    "options": [
+      "が",
+      "します",
+      "子どもの",
+      "声"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "もう 夜 10時なのに、外から 子どもの 声が します。",
+    "tr": {
+      "zh": "都晚上10点了，外面还传来孩子的声音。",
+      "en": "It's already ten at night, but I can hear children's voices outside."
+    },
+    "why": {
+      "zh": "子どもの ＋ 声 ＋ が ＋ します：听到声音用「声がする」。★ 在第三格，是「が」。",
+      "en": "子どもの ＋ 声 ＋ が ＋ します: hearing voices is 「声がする」. The ★ is the third slot: 「が」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l32-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson32#6"
+    ],
+    "difficulty": 1,
+    "stem": "外国へ 行く ときは、パスポートを 忘れないで ください。必ず 持って いく（　）。",
+    "options": [
+      "必要は ありません",
+      "必要が あります",
+      "ことは ありません",
+      "必要を します"
+    ],
+    "answer": 1,
+    "full": "外国へ 行く ときは、パスポートを 忘れないで ください。必ず 持って いく 必要が あります。",
+    "tr": {
+      "zh": "去外国的时候，请别忘了护照。一定要带上。",
+      "en": "When you go abroad, don't forget your passport. You must take it with you."
+    },
+    "why": {
+      "zh": "前面说“别忘了护照”，还有「必ず」，表示有必要带上：「辞书形＋必要がある」。",
+      "en": "\"Don't forget your passport\" plus 「必ず」 — it's a necessity: dictionary form ＋ 「必要がある」."
+    },
+    "wrong": [
+      {
+        "zh": "「必要はありません」是“没必要带”，和“别忘了”「必ず」矛盾。",
+        "en": "「必要はありません」 (no need) contradicts \"don't forget\" and 「必ず」."
+      },
+      null,
+      {
+        "zh": "「ことはありません」也是“没必要”，同样和「必ず」矛盾。",
+        "en": "「ことはありません」 also means \"no need\", which contradicts 「必ず」."
+      },
+      {
+        "zh": "「必要」不和「をする」搭配，要说「必要がある」。",
+        "en": "「必要」 doesn't go with 「をする」; it's 「必要がある」."
+      }
+    ]
+  },
+  {
+    "id": "n4-l32-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson32#6"
+    ],
+    "difficulty": 2,
+    "stem": "この 仕事は 一人で できますから、全員が 来る（　）。",
+    "options": [
+      "必要が あります",
+      "ことが あります",
+      "ように します",
+      "必要は ありません"
+    ],
+    "answer": 3,
+    "full": "この 仕事は 一人で できますから、全員が 来る 必要は ありません。",
+    "tr": {
+      "zh": "这个工作一个人就能做，所以没必要全员都来。",
+      "en": "One person can do this job, so there's no need for everyone to come."
+    },
+    "why": {
+      "zh": "一个人就能完成，所以“没必要全员来”：「辞书形＋必要はない」。",
+      "en": "One person can do it, so there's no need for all to come: dictionary form ＋ 「必要はない」."
+    },
+    "wrong": [
+      {
+        "zh": "「必要があります」是“有必要全员来”，和“一个人就能做”矛盾。",
+        "en": "「必要があります」 (everyone must come) contradicts \"one person can do it\"."
+      },
+      {
+        "zh": "「ことがあります」是“有时会全员来”，和前面的理由接不上。",
+        "en": "「ことがあります」 (sometimes everyone comes) doesn't follow the reason given."
+      },
+      {
+        "zh": "「ようにします」是“努力做到”，“因为一个人能做，所以尽量全员来”说不通。",
+        "en": "「ようにします」 (try to make sure) doesn't follow \"one person can do it\"."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n4-l32-018",
+    "type": "narabe",
+    "refs": [
+      "lesson32#6"
+    ],
+    "difficulty": 1,
+    "stem": "ビザを もらうには、出発の 前に [_] [_] [★] [_]。",
+    "options": [
+      "する",
+      "手続きを",
+      "あります",
+      "必要が"
+    ],
+    "order": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "full": "ビザを もらうには、出発の 前に 手続きを する 必要が あります。",
+    "tr": {
+      "zh": "要拿到签证，出发前有必要办手续。",
+      "en": "To get a visa, you need to complete the paperwork before you leave."
+    },
+    "why": {
+      "zh": "手続きを ＋ する（辞书形）＋ 必要が ＋ あります：“有必要办手续”。★ 在第三格，是「必要が」。",
+      "en": "手続きを ＋ する (dictionary form) ＋ 必要が ＋ あります: \"you need to do the paperwork\". The ★ is the third slot: 「必要が」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-l32-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson32#7"
+    ],
+    "difficulty": 1,
+    "stem": "（マラソン大会で）\n「がんばれ！ あと 1キロだ。あきらめる（　）！」",
+    "options": [
+      "な",
+      "なさい",
+      "ろ",
+      "ない"
+    ],
+    "answer": 0,
+    "full": "（マラソン大会で） 「がんばれ！ あと 1キロだ。あきらめるな！」",
+    "tr": {
+      "zh": "（在马拉松比赛上）加油！还剩1公里。不要放弃！",
+      "en": "(At a marathon) Go on! Just one more kilometre. Don't give up!"
+    },
+    "why": {
+      "zh": "为跑者加油，“不要放弃！”是禁止形：辞书形＋「な」→ あきらめるな。",
+      "en": "Cheering a runner on — \"Don't give up!\" is the prohibitive: dictionary form ＋ 「な」 → あきらめるな."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「なさい」接ます形词干（あきらめなさい），而且意思是“快放弃”，和加油矛盾。",
+        "en": "「なさい」 follows the ます-stem (あきらめなさい), and it would mean \"give up!\" — the opposite of cheering."
+      },
+      {
+        "zh": "「ろ」是二类动词的命令形词尾，要去掉「る」（あきらめろ），而且意思是“放弃吧”。",
+        "en": "「ろ」 replaces the る (あきらめろ), and it would mean \"give up!\" anyway."
+      },
+      {
+        "zh": "否定形是「あきらめない」，没有「あきらめるない」这种形式。",
+        "en": "The negative is 「あきらめない」; 「あきらめるない」 isn't a form."
+      }
+    ]
+  },
+  {
+    "id": "n4-l32-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson32#7"
+    ],
+    "difficulty": 2,
+    "stem": "父「もう 7時半だぞ。早く（　）！ 学校に 遅れるぞ。」",
+    "options": [
+      "起きれ",
+      "起きるな",
+      "起きろ",
+      "起きけ"
+    ],
+    "answer": 2,
+    "full": "父「もう 7時半だぞ。早く 起きろ！ 学校に 遅れるぞ。」",
+    "tr": {
+      "zh": "爸爸：已经7点半了！快起来！上学要迟到了。",
+      "en": "Dad: It's already half past seven! Get up — you'll be late for school!"
+    },
+    "why": {
+      "zh": "「起きる」是二类动词，命令形是去掉「る」加「ろ」：起きろ。",
+      "en": "「起きる」 is a る-verb; its imperative drops る and adds 「ろ」: 起きろ."
+    },
+    "wrong": [
+      {
+        "zh": "「え段」变化（〜れ）是五段动词的规则，二类动词不用。",
+        "en": "Changing to the え-row (〜れ) is the rule for う-verbs, not る-verbs."
+      },
+      {
+        "zh": "「起きるな」是“不许起来”，和“要迟到了”矛盾。",
+        "en": "「起きるな」 means \"don't get up\", which contradicts \"you'll be late\"."
+      },
+      null,
+      {
+        "zh": "没有「起きけ」这种形式。",
+        "en": "「起きけ」 isn't a form."
+      }
+    ]
+  },
+  {
+    "id": "n4-l32-021",
+    "type": "narabe",
+    "refs": [
+      "lesson32#7"
+    ],
+    "difficulty": 1,
+    "stem": "「危ない！ [_] [_] [★] [_]！」",
+    "options": [
+      "触る",
+      "その",
+      "な",
+      "機械に"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "「危ない！ その 機械に 触るな！」",
+    "tr": {
+      "zh": "危险！别碰那台机器！",
+      "en": "Look out! Don't touch that machine!"
+    },
+    "why": {
+      "zh": "その ＋ 機械に ＋ 触る（辞书形）＋ な：禁止形“不许碰”。★ 在第三格，是「触る」。",
+      "en": "その ＋ 機械に ＋ 触る (dictionary form) ＋ な: the prohibitive \"don't touch\". The ★ is the third slot: 「触る」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

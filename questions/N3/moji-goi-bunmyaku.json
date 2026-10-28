@@ -1,0 +1,1511 @@
+[
+  {
+    "id": "n3-mg-301",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson54#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "レポートの（　）は 来週の 金曜日なので、それまでに 出さなければ ならない。",
+    "options": [
+      "計画",
+      "記録",
+      "締め切り",
+      "感想"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "报告的截止日期是下周五，所以必须在那之前交。",
+      "en": "The report's deadline is next Friday, so I have to hand it in before then."
+    },
+    "why": {
+      "zh": "“在那之前必须交”说明是提交的最后期限，即「締め切り」。",
+      "en": "\"Have to hand it in before then\" points to a deadline: 「締め切り」."
+    },
+    "wrong": [
+      {
+        "zh": "「計画」是计划，计划不是某一天，也不是“交”的期限。",
+        "en": "「計画」 is a plan; a plan isn't a date you hand something in by."
+      },
+      {
+        "zh": "「記録」是记录，和交报告的日期无关。",
+        "en": "「記録」 is a record — nothing to do with the date for handing it in."
+      },
+      null,
+      {
+        "zh": "「感想」是感想，不会“是下周五”。",
+        "en": "「感想」 is one's impressions; it can't be \"next Friday\"."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-302",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "旅行の（　）は 一人 五万円までなので、高い ホテルには 泊まれない。",
+    "options": [
+      "予算",
+      "収入",
+      "給料",
+      "物価"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "旅行预算每人最多五万日元，所以住不了贵的酒店。",
+      "en": "The travel budget is up to 50,000 yen per person, so we can't stay at an expensive hotel."
+    },
+    "why": {
+      "zh": "事先定好“最多花多少钱”是「予算」。",
+      "en": "The amount you've decided you can spend at most is the 「予算」 (budget)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「収入」是收入，是赚来的钱，不说“旅行的收入”。",
+        "en": "「収入」 is income — money you earn, not money set aside for a trip."
+      },
+      {
+        "zh": "「給料」是工资，旅行没有工资。",
+        "en": "「給料」 is a salary; a trip doesn't have one."
+      },
+      {
+        "zh": "「物価」是物价水平，不是“每人五万日元”这样的金额。",
+        "en": "「物価」 is the general price level, not a set sum per person."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-303",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "引っ越したら、市役所で 住所を 変える（　）を しなければ ならない。",
+    "options": [
+      "注文",
+      "手続き",
+      "招待",
+      "案内"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "搬家后必须在市政府办理更改地址的手续。",
+      "en": "After moving, you have to go through the procedure for changing your address at city hall."
+    },
+    "why": {
+      "zh": "在政府机关办理变更地址，是「手続きを する」。",
+      "en": "Doing the official paperwork at city hall is 「手続きを する」."
+    },
+    "wrong": [
+      {
+        "zh": "「注文」是点餐、订购，不在市政府“订购”地址变更。",
+        "en": "「注文」 is ordering goods or food, not something done at city hall."
+      },
+      null,
+      {
+        "zh": "「招待」是邀请，和更改地址无关。",
+        "en": "「招待」 is an invitation — unrelated to changing an address."
+      },
+      {
+        "zh": "「案内を する」是给人带路、介绍，不是自己办的事。",
+        "en": "「案内を する」 is guiding or showing someone around, not paperwork you do yourself."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-304",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "前の 車が（　）止まったので、ぶつかりそうに なった。",
+    "options": [
+      "ようやく",
+      "いきなり",
+      "ゆっくり",
+      "そろそろ"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "前面的车突然停下，差点撞上。",
+      "en": "The car in front stopped without warning, and I nearly hit it."
+    },
+    "why": {
+      "zh": "差点撞上，说明停得毫无预兆，是「いきなり」（突然）。",
+      "en": "Nearly crashing means it stopped without warning: 「いきなり」 (suddenly)."
+    },
+    "wrong": [
+      {
+        "zh": "「ようやく」是“终于”，用于等待已久的事，停车不会让人差点撞上。",
+        "en": "「ようやく」 means \"at last\", for something long awaited — it doesn't explain the near-crash."
+      },
+      null,
+      {
+        "zh": "慢慢停下的话不会差点撞上。",
+        "en": "If it had stopped slowly, you wouldn't nearly have hit it."
+      },
+      {
+        "zh": "「そろそろ」是“差不多该……了”，不用来描述已经发生的停车。",
+        "en": "「そろそろ」 means \"it's about time to…\", not how something happened."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-305",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "（　）早く 起きたのに、雨で ピクニックが 中止に なった。",
+    "options": [
+      "ちっとも",
+      "めったに",
+      "せっかく",
+      "まさか"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "特意早起了，却因为下雨野餐取消了。",
+      "en": "I went to the trouble of getting up early, but the picnic was called off because of rain."
+    },
+    "why": {
+      "zh": "“特意做了……却白费了”是「せっかく〜のに」。",
+      "en": "\"Made the effort, but it was wasted\" is 「せっかく〜のに」."
+    },
+    "wrong": [
+      {
+        "zh": "「ちっとも」后面接否定，“一点也不”，这里是肯定句。",
+        "en": "「ちっとも」 goes with a negative (\"not at all\"); this sentence is affirmative."
+      },
+      {
+        "zh": "「めったに」后面要接否定，“很少”，这里是肯定句。",
+        "en": "「めったに」 needs a negative (\"rarely\"); this sentence is affirmative."
+      },
+      null,
+      {
+        "zh": "「まさか」是“难道、万万没想到”，和早起不搭。",
+        "en": "「まさか」 is \"surely not\" — it doesn't go with getting up early."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-306",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "三年間 練習して、（　）試合に 勝つ ことが できた。",
+    "options": [
+      "いきなり",
+      "さっそく",
+      "しばらく",
+      "とうとう"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "练了三年，终于赢了比赛。",
+      "en": "After three years of practice, I finally won a match."
+    },
+    "why": {
+      "zh": "经过长时间努力最后实现，是「とうとう」（终于）。",
+      "en": "Something achieved at last after a long effort is 「とうとう」."
+    },
+    "wrong": [
+      {
+        "zh": "「いきなり」是“突然”，和“练了三年”不符。",
+        "en": "「いきなり」 is \"suddenly\" — it clashes with three years of practice."
+      },
+      {
+        "zh": "「さっそく」是“马上（着手）”，不表示长期努力后的结果。",
+        "en": "「さっそく」 is \"straight away\", not the result of long effort."
+      },
+      {
+        "zh": "「しばらく」是“暂时、一段时间”，不能修饰“能赢了”。",
+        "en": "「しばらく」 is \"for a while\" and can't describe finally winning."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n3-mg-307",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "スタートの ベルが 鳴ると、選手たちは（　）走り出した。",
+    "options": [
+      "いっせいに",
+      "たまに",
+      "めったに",
+      "互いに"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "起跑铃一响，选手们一齐跑了出去。",
+      "en": "When the starting bell rang, the runners all started running at once."
+    },
+    "why": {
+      "zh": "铃声一响大家同时行动，是「いっせいに」（一齐）。",
+      "en": "Everyone moving at the same moment when the bell rings is 「いっせいに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「たまに」是“偶尔”，描述的是一次具体的起跑，不合。",
+        "en": "「たまに」 is \"occasionally\"; this is one particular start."
+      },
+      {
+        "zh": "「めったに」后面要接否定，“很少”。",
+        "en": "「めったに」 needs a negative after it (\"rarely\")."
+      },
+      {
+        "zh": "「互いに」是“互相”，跑步不是互相做的动作。",
+        "en": "「互いに」 is \"each other\" — running isn't done to one another."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-308",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "会議で 使う 資料を 二十部（　）して ください。",
+    "options": [
+      "メモ",
+      "チェック",
+      "サイン",
+      "コピー"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "请把开会用的资料复印二十份。",
+      "en": "Please make twenty copies of the handout for the meeting."
+    },
+    "why": {
+      "zh": "“二十份”说明是复印：「コピーする」。",
+      "en": "\"Twenty copies\" means photocopying: 「コピーする」."
+    },
+    "wrong": [
+      {
+        "zh": "「メモする」是记笔记，不会“记二十份资料”。",
+        "en": "「メモする」 is jotting down notes, not making twenty of a handout."
+      },
+      {
+        "zh": "「チェックする」是检查，检查不按“份数”。",
+        "en": "「チェックする」 is checking; you don't check something \"twenty copies\"."
+      },
+      {
+        "zh": "「サインする」是签名，资料不需要签二十份。",
+        "en": "「サインする」 is signing; a meeting handout isn't signed twenty times."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n3-mg-309",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "新しい スマホは、（　）を 読まなくても 使い方が すぐ 分かった。",
+    "options": [
+      "メニュー",
+      "マニュアル",
+      "カタログ",
+      "ポスター"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "新手机即使不看说明书，也马上就会用了。",
+      "en": "With the new smartphone, I understood how to use it right away without reading the manual."
+    },
+    "why": {
+      "zh": "写着“使用方法”的是说明书「マニュアル」。",
+      "en": "What explains how to use something is the 「マニュアル」."
+    },
+    "wrong": [
+      {
+        "zh": "「メニュー」是菜单，不讲手机的用法。",
+        "en": "「メニュー」 is a menu; it doesn't explain how to use a phone."
+      },
+      null,
+      {
+        "zh": "「カタログ」是商品目录，介绍商品，不教使用方法。",
+        "en": "「カタログ」 is a catalogue for choosing products, not instructions."
+      },
+      {
+        "zh": "「ポスター」是海报，不是看了学用法的东西。",
+        "en": "「ポスター」 is a poster, not something you read to learn how to use a device."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-310",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson37#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "部長が 出張中なので、会議での 説明は 私が（　）。",
+    "options": [
+      "引き受けた",
+      "申し込んだ",
+      "受け取った",
+      "貸した"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "部长出差了，会上的说明由我来承担了。",
+      "en": "The manager is away on business, so I took on the explanation at the meeting."
+    },
+    "why": {
+      "zh": "代替别人承担一项任务是「引き受ける」。",
+      "en": "Taking on a task in someone's place is 「引き受ける」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「申し込む」是报名、申请，不能“申请说明”。",
+        "en": "「申し込む」 is applying or signing up; you don't apply for an explanation."
+      },
+      {
+        "zh": "「受け取る」是收下东西，说明不是能收下的物品。",
+        "en": "「受け取る」 is receiving a thing; an explanation isn't an object you receive."
+      },
+      {
+        "zh": "「貸す」是借给别人东西，说明不能“借出”。",
+        "en": "「貸す」 is lending a thing; you can't lend an explanation."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-311",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson44#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "けがを して、プロの 選手に なる 夢を（　）。",
+    "options": [
+      "我慢した",
+      "諦めた",
+      "断った",
+      "許した"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "因为受伤，放弃了成为职业选手的梦想。",
+      "en": "Because of an injury, I gave up my dream of becoming a professional athlete."
+    },
+    "why": {
+      "zh": "放弃梦想是「夢を 諦める」。",
+      "en": "Giving up a dream is 「夢を 諦める」."
+    },
+    "wrong": [
+      {
+        "zh": "「我慢する」是忍耐，“忍耐梦想”说不通。",
+        "en": "「我慢する」 is putting up with something; you don't \"put up with\" a dream."
+      },
+      null,
+      {
+        "zh": "「断る」是拒绝别人的请求或邀请，梦想不是别人的请求。",
+        "en": "「断る」 is turning down a request or invitation; a dream isn't one."
+      },
+      {
+        "zh": "「許す」是原谅、允许，和放弃梦想无关。",
+        "en": "「許す」 is forgiving or permitting — unrelated to giving up a dream."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-312",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson42#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "電車の 中では、携帯電話で 話すのは（　）して ください。",
+    "options": [
+      "安心",
+      "用心",
+      "遠慮",
+      "反省"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "在电车里请不要打电话。",
+      "en": "Please refrain from talking on your phone on the train."
+    },
+    "why": {
+      "zh": "礼貌地请人“不要做”是「〜は 遠慮して ください」。",
+      "en": "Politely asking people not to do something is 「〜は 遠慮して ください」."
+    },
+    "wrong": [
+      {
+        "zh": "「安心する」是放心，不能请人“放心打电话”。",
+        "en": "「安心する」 is feeling relieved; it makes no sense here."
+      },
+      {
+        "zh": "「用心する」是提防、小心危险，打电话不是危险。",
+        "en": "「用心する」 is being on guard against danger; a phone call isn't a danger."
+      },
+      null,
+      {
+        "zh": "「反省する」是反省过错，不是请别人不做某事。",
+        "en": "「反省する」 is reflecting on a mistake, not refraining from something."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-313",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson39#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "試合は 最後まで 何が 起こるか 分からないから、勝っていても（　）しては いけない。",
+    "options": [
+      "緊張",
+      "油断",
+      "応援",
+      "感謝"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "比赛到最后都不知道会发生什么，所以即使领先也不能大意。",
+      "en": "Anything can happen until the end of a match, so even when you're ahead you mustn't let your guard down."
+    },
+    "why": {
+      "zh": "“领先时也不能……”，指放松警惕，即「油断」。",
+      "en": "\"Even when ahead, you mustn't…\" — let your guard down: 「油断」."
+    },
+    "wrong": [
+      {
+        "zh": "「緊張」是紧张，领先时“不能紧张”和前半句“不知道会发生什么”不连贯。",
+        "en": "「緊張」 is nerves; \"anything can happen\" is a reason to stay alert, not a reason not to be nervous."
+      },
+      null,
+      {
+        "zh": "「応援」是加油、声援，没有理由禁止。",
+        "en": "「応援」 is cheering someone on; there's no reason to forbid it."
+      },
+      {
+        "zh": "「感謝」是感谢，和“不知道会发生什么”无关。",
+        "en": "「感謝」 is gratitude — unrelated to anything happening before the end."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-314",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson41#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "夜 遅くに 洗濯機を 使うと、となりの 人に（　）が かかる。",
+    "options": [
+      "注意",
+      "感動",
+      "迷惑",
+      "責任"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "深夜用洗衣机会给邻居添麻烦。",
+      "en": "Using the washing machine late at night causes trouble for the neighbours."
+    },
+    "why": {
+      "zh": "给别人添麻烦是「迷惑が かかる / 迷惑を かける」。",
+      "en": "Causing trouble for others is 「迷惑が かかる」."
+    },
+    "wrong": [
+      {
+        "zh": "「注意」不和「かかる」搭配，也不是给邻居造成的东西。",
+        "en": "「注意」 doesn't go with 「かかる」 and isn't something you cause your neighbours."
+      },
+      {
+        "zh": "「感動」是感动，深夜的噪音不会让人感动。",
+        "en": "「感動」 is being moved; late-night noise doesn't move anyone."
+      },
+      null,
+      {
+        "zh": "「責任」是责任，用洗衣机不会让邻居“承担责任”。",
+        "en": "「責任」 is responsibility; your washing machine doesn't put responsibility on the neighbours."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-315",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson44#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "歯が 痛かったが、病院が 休みだったので 朝まで（　）した。",
+    "options": [
+      "我慢",
+      "遠慮",
+      "安心",
+      "油断"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "牙很痛，但医院休息，所以一直忍到了早上。",
+      "en": "My tooth hurt, but the clinic was closed, so I put up with it until morning."
+    },
+    "why": {
+      "zh": "忍受疼痛是「我慢する」。",
+      "en": "Putting up with pain is 「我慢する」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「遠慮」是客气、谢绝，不用于忍痛。",
+        "en": "「遠慮」 is holding back out of politeness, not enduring pain."
+      },
+      {
+        "zh": "牙痛又看不了医生，不会“放心”。",
+        "en": "With toothache and no doctor, you wouldn't feel 「安心」 (relieved)."
+      },
+      {
+        "zh": "「油断」是大意，和忍痛无关。",
+        "en": "「油断」 is carelessness — nothing to do with enduring pain."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-316",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson53#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "彼は いつも、料理が まずいとか 量が 少ないとか（　）ばかり 言って いる。",
+    "options": [
+      "お礼",
+      "文句",
+      "お世辞",
+      "あいさつ"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "他总是抱怨，说菜难吃啦、量少啦。",
+      "en": "He's always complaining — the food tastes bad, the portions are small."
+    },
+    "why": {
+      "zh": "“难吃”“量少”是抱怨的话，即「文句」。",
+      "en": "\"Tastes bad\", \"too small\" are complaints: 「文句」."
+    },
+    "wrong": [
+      {
+        "zh": "「お礼」是道谢，内容是抱怨，不是感谢。",
+        "en": "「お礼」 is thanks, but what he says is complaining."
+      },
+      null,
+      {
+        "zh": "「お世辞」是奉承话，说“难吃”不是奉承。",
+        "en": "「お世辞」 is flattery; saying the food is bad isn't flattery."
+      },
+      {
+        "zh": "「あいさつ」是问候，不是这些抱怨的话。",
+        "en": "「あいさつ」 is a greeting, not complaints like these."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-317",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson43#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "あの 店が 来月 閉まると いう（　）を 聞いたが、本当だろうか。",
+    "options": [
+      "噂",
+      "予報",
+      "返事",
+      "命令"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "听到传言说那家店下个月要关门，是真的吗？",
+      "en": "I heard a rumour that that shop is closing next month — I wonder if it's true."
+    },
+    "why": {
+      "zh": "不确定真假、从别人那听来的消息是「噂」。",
+      "en": "Something heard from others that may not be true is a 「噂」 (rumour)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「予報」是天气等的预报，店关门不说“预报”。",
+        "en": "「予報」 is a forecast (weather etc.), not news about a shop."
+      },
+      {
+        "zh": "「返事」是对问题或来信的回复，这里没有提问。",
+        "en": "「返事」 is a reply to a question or letter; nobody asked anything."
+      },
+      {
+        "zh": "「命令」是命令，“店要关门的命令”与“是真的吗”不合。",
+        "en": "「命令」 is an order; it doesn't fit \"I wonder if it's true\"."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-318",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson43#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "台風が 来るので、明日の 運動会は 来週に（　）された。",
+    "options": [
+      "中止",
+      "延期",
+      "予約",
+      "出発"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "因为台风要来，明天的运动会延期到了下周。",
+      "en": "Because a typhoon is coming, tomorrow's sports day has been postponed to next week."
+    },
+    "why": {
+      "zh": "“改到下周”是「来週に 延期する」。",
+      "en": "Moving it to next week is 「来週に 延期する」 (postpone)."
+    },
+    "wrong": [
+      {
+        "zh": "「中止」是取消，取消了就不会“到下周”。",
+        "en": "「中止」 is cancelling; a cancelled event doesn't move \"to next week\"."
+      },
+      null,
+      {
+        "zh": "「予約」是预约，运动会不是“被预约到下周”。",
+        "en": "「予約」 is a reservation; a sports day isn't \"reserved to next week\"."
+      },
+      {
+        "zh": "「出発」是出发，运动会不会出发。",
+        "en": "「出発」 is departure; a sports day doesn't depart."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-319",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson43#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "景気が 悪くて、父の 会社が（　）して しまった。",
+    "options": [
+      "成功",
+      "出勤",
+      "倒産",
+      "発展"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "因为不景气，父亲的公司倒闭了。",
+      "en": "Business was bad, and my father's company went bankrupt."
+    },
+    "why": {
+      "zh": "经济不景气加「〜て しまった」（遗憾），是公司「倒産」。",
+      "en": "A bad economy plus regretful 「〜て しまった」 points to 「倒産」 (bankruptcy)."
+    },
+    "wrong": [
+      {
+        "zh": "“不景气”和“成功”相反，也不会用遗憾的「しまった」。",
+        "en": "A bad economy doesn't lead to success, and 「しまった」 signals something unfortunate."
+      },
+      {
+        "zh": "「出勤」是人去上班，公司不会“出勤”。",
+        "en": "「出勤」 is a person going to work; a company doesn't do that."
+      },
+      null,
+      {
+        "zh": "「発展」是发展，和“不景气”“遗憾”矛盾。",
+        "en": "「発展」 is growth — it contradicts the bad economy and the regret."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-320",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson44#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "仕事が 終わらなくて、毎晩 九時まで（　）して いる。",
+    "options": [
+      "残業",
+      "出張",
+      "休憩",
+      "通勤"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "工作做不完，每天晚上加班到九点。",
+      "en": "My work never gets finished, so I do overtime until nine every night."
+    },
+    "why": {
+      "zh": "工作做不完而在下班后继续工作，是「残業」。",
+      "en": "Staying on after hours because work isn't done is 「残業」 (overtime)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「出張」是出差，不会“每天晚上到九点”出差。",
+        "en": "「出張」 is a business trip — not something done \"until nine every night\"."
+      },
+      {
+        "zh": "工作做不完还“休息到九点”，前后矛盾。",
+        "en": "Resting until nine when work isn't finished contradicts itself."
+      },
+      {
+        "zh": "「通勤」是上下班路上，不是因为工作没做完。",
+        "en": "「通勤」 is commuting; it's not caused by unfinished work."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-321",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson50#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "来週は 大阪へ（　）するので、会議には 出られません。",
+    "options": [
+      "残業",
+      "出張",
+      "出勤",
+      "帰国"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "下周要去大阪出差，所以不能参加会议。",
+      "en": "I'm going to Osaka on business next week, so I can't attend the meeting."
+    },
+    "why": {
+      "zh": "因工作去别的城市是「出張」。",
+      "en": "Going to another city for work is 「出張」."
+    },
+    "wrong": [
+      {
+        "zh": "「残業」是加班，不说「大阪へ 残業する」。",
+        "en": "「残業」 is overtime; you can't 「大阪へ 残業する」."
+      },
+      null,
+      {
+        "zh": "「出勤」是去公司上班，去上班反而能参加会议。",
+        "en": "「出勤」 is going in to work — that wouldn't stop you attending the meeting."
+      },
+      {
+        "zh": "「帰国」是回国，大阪在日本国内。",
+        "en": "「帰国」 is returning to one's country; Osaka is in Japan."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-322",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson50#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "東京は（　）が 高いので、生活するのに お金が かかる。",
+    "options": [
+      "給料",
+      "人口",
+      "物価",
+      "収入"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "东京物价高，生活很花钱。",
+      "en": "Prices are high in Tokyo, so living there costs a lot."
+    },
+    "why": {
+      "zh": "“生活花钱多”的原因是「物価が 高い」。",
+      "en": "Living being expensive is because 「物価が 高い」 (prices are high)."
+    },
+    "wrong": [
+      {
+        "zh": "工资高的话，生活花钱多就不是因果关系。",
+        "en": "High salaries don't explain why living costs a lot."
+      },
+      {
+        "zh": "「人口」不说「高い」，要说「多い」。",
+        "en": "「人口」 isn't 「高い」 — it's 「多い」."
+      },
+      null,
+      {
+        "zh": "收入高和“生活花钱多”不成因果。",
+        "en": "High income isn't the reason living costs a lot."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-323",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson51#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "両親の（　）に こたえる ために、一生懸命 勉強した。",
+    "options": [
+      "心配",
+      "期待",
+      "不満",
+      "迷惑"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "为了不辜负父母的期望，拼命学习了。",
+      "en": "I studied as hard as I could to live up to my parents' expectations."
+    },
+    "why": {
+      "zh": "「期待に こたえる」是不辜负期望。",
+      "en": "「期待に こたえる」 means living up to expectations."
+    },
+    "wrong": [
+      {
+        "zh": "「心配」不和「こたえる」搭配，“回应担心”说不通。",
+        "en": "「心配」 doesn't go with 「こたえる」."
+      },
+      null,
+      {
+        "zh": "“回应不满”而努力学习，不是自然说法。",
+        "en": "\"Responding to their dissatisfaction\" by studying isn't how it's said."
+      },
+      {
+        "zh": "「迷惑」是麻烦，不能“回应麻烦”。",
+        "en": "「迷惑」 is trouble caused; you can't 「こたえる」 it."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-324",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson54#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "若い ときに もっと 勉強して おけば よかったと（　）して いる。",
+    "options": [
+      "満足",
+      "後悔",
+      "感動",
+      "安心"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "后悔年轻时没有多学习一些。",
+      "en": "I regret not studying more when I was young."
+    },
+    "why": {
+      "zh": "「〜ば よかった」表示遗憾，对应「後悔」。",
+      "en": "「〜ば よかった」 expresses regret: 「後悔」."
+    },
+    "wrong": [
+      {
+        "zh": "“要是……就好了”是遗憾，不是满足。",
+        "en": "\"I wish I had…\" is regret, not satisfaction."
+      },
+      null,
+      {
+        "zh": "「感動」是被感动，和对过去的遗憾无关。",
+        "en": "「感動」 is being moved — not regret about the past."
+      },
+      {
+        "zh": "遗憾当初没学习，不会“放心”。",
+        "en": "Wishing you'd studied doesn't make you 「安心」 (relieved)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-325",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson54#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "彼女は（　）な 性格で、人の アドバイスを よく 聞く。",
+    "options": [
+      "わがまま",
+      "素直",
+      "意地悪",
+      "複雑"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "她性格坦率听话，很听得进别人的建议。",
+      "en": "She has an open, receptive nature and listens to other people's advice."
+    },
+    "why": {
+      "zh": "肯听别人意见的性格是「素直」。",
+      "en": "A nature that takes advice well is 「素直」."
+    },
+    "wrong": [
+      {
+        "zh": "「わがまま」是任性，任性的人不听建议。",
+        "en": "「わがまま」 is selfish; such a person doesn't listen to advice."
+      },
+      null,
+      {
+        "zh": "「意地悪」是坏心眼，和“听建议”没有关系。",
+        "en": "「意地悪」 is mean-spirited — unrelated to listening to advice."
+      },
+      {
+        "zh": "「複雑な 性格」是性格复杂，不能解释“很听建议”。",
+        "en": "「複雑な 性格」 is a complicated personality; it doesn't explain taking advice."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-326",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson43#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "夜中に 家の 前を 何度も 行ったり 来たり して いる（　）男が いる。",
+    "options": [
+      "怪しい",
+      "懐かしい",
+      "悔しい",
+      "寂しい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "半夜有个可疑的男人在家门前来回走了好几趟。",
+      "en": "There's a suspicious man walking back and forth in front of the house in the middle of the night."
+    },
+    "why": {
+      "zh": "半夜在别人家门前来回走，是「怪しい」（可疑）。",
+      "en": "Pacing in front of a house at midnight is 「怪しい」 (suspicious)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「懐かしい」是怀念，不用来形容陌生男子。",
+        "en": "「懐かしい」 is nostalgic; it doesn't describe a stranger."
+      },
+      {
+        "zh": "「悔しい」是不甘心，是自己的感受，不形容别人的样子。",
+        "en": "「悔しい」 is one's own frustration, not how someone else looks."
+      },
+      {
+        "zh": "「寂しい」是寂寞，看到的是可疑行为，不是寂寞。",
+        "en": "「寂しい」 is lonely; what's described is suspicious behaviour."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-327",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson57#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "古い アルバムを 見て、子どもの ころを 思い出し、（　）気持ちに なった。",
+    "options": [
+      "怪しい",
+      "懐かしい",
+      "悔しい",
+      "うるさい"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "看旧相册想起小时候，心里很怀念。",
+      "en": "Looking at an old album and remembering my childhood, I felt nostalgic."
+    },
+    "why": {
+      "zh": "回想过去的美好是「懐かしい」。",
+      "en": "Fondly recalling the past is 「懐かしい」."
+    },
+    "wrong": [
+      {
+        "zh": "「怪しい」是可疑，不是看相册的心情。",
+        "en": "「怪しい」 is suspicious, not a feeling about old photos."
+      },
+      null,
+      {
+        "zh": "「悔しい」是输了等的不甘心，想起童年不一定。",
+        "en": "「悔しい」 is frustration (after losing etc.), not what remembering childhood brings."
+      },
+      {
+        "zh": "「うるさい」是吵，不形容心情。",
+        "en": "「うるさい」 is noisy — not a feeling."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-328",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson57#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "あと 一点で 負けて しまって、とても（　）。",
+    "options": [
+      "懐かしい",
+      "うらやましい",
+      "悔しい",
+      "怪しい"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "只差一分输了，非常不甘心。",
+      "en": "I lost by just one point — it's so frustrating."
+    },
+    "why": {
+      "zh": "差一点输掉的心情是「悔しい」。",
+      "en": "How you feel after losing by a hair is 「悔しい」."
+    },
+    "wrong": [
+      {
+        "zh": "「懐かしい」是怀念过去，刚输掉不会怀念。",
+        "en": "「懐かしい」 is nostalgia — not what you feel right after losing."
+      },
+      {
+        "zh": "「うらやましい」是羡慕别人，句子说的是自己输了。",
+        "en": "「うらやましい」 is envying someone; the sentence is about your own loss."
+      },
+      null,
+      {
+        "zh": "「怪しい」是可疑，不是输掉的心情。",
+        "en": "「怪しい」 is suspicious, not how losing feels."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-329",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson55#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "新しい 工場の 工事は（　）に 進んで いて、予定通り 完成しそうだ。",
+    "options": [
+      "複雑",
+      "困難",
+      "順調",
+      "不安"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "新工厂的施工进展顺利，看来能按计划完工。",
+      "en": "Construction of the new factory is going smoothly and looks set to finish on schedule."
+    },
+    "why": {
+      "zh": "“能按计划完成”说明进展「順調」。",
+      "en": "\"Will finish on schedule\" means it's going 「順調」 (smoothly)."
+    },
+    "wrong": [
+      {
+        "zh": "“复杂地进行”和“按计划完成”不连贯。",
+        "en": "Progressing \"in a complicated way\" doesn't lead to finishing on schedule."
+      },
+      {
+        "zh": "进行困难的话，一般不能按计划完成。",
+        "en": "If it were going with difficulty, it wouldn't be on schedule."
+      },
+      null,
+      {
+        "zh": "「不安に 進む」不是自然说法，也和“按计划”矛盾。",
+        "en": "「不安に 進む」 isn't said, and it contradicts \"on schedule\"."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-330",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson47#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "息子は 大学を 出て、（　）な 医者に なった。",
+    "options": [
+      "立派",
+      "簡単",
+      "意外",
+      "退屈"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "儿子大学毕业后，成了一名出色的医生。",
+      "en": "My son graduated from university and became a fine doctor."
+    },
+    "why": {
+      "zh": "称赞人有出息是「立派な 〜に なる」。",
+      "en": "Praising someone for becoming something worthy is 「立派な 〜に なる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「簡単な 医者」说不通，「簡単」形容事情容易。",
+        "en": "「簡単」 describes easy tasks; 「簡単な 医者」 makes no sense."
+      },
+      {
+        "zh": "「意外な 医者」说不通，「意外」形容出乎意料的事。",
+        "en": "「意外」 describes unexpected events; 「意外な 医者」 isn't said."
+      },
+      {
+        "zh": "「退屈」是无聊，父母不会这样说儿子的成就。",
+        "en": "「退屈」 is boring — not how a parent describes this achievement."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-331",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "あの 二人は 双子なので、顔が（　）だ。",
+    "options": [
+      "すっかり",
+      "そっくり",
+      "うっかり",
+      "ぐっすり"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "那两个人是双胞胎，长得一模一样。",
+      "en": "Those two are twins, so they look exactly alike."
+    },
+    "why": {
+      "zh": "双胞胎长得一模一样是「そっくり」。",
+      "en": "Twins looking exactly alike is 「そっくり」."
+    },
+    "wrong": [
+      {
+        "zh": "「すっかり」是“完全（变化了）”，修饰动词，不形容长相相似。",
+        "en": "「すっかり」 is \"completely (changed)\"; it doesn't mean looking alike."
+      },
+      null,
+      {
+        "zh": "「うっかり」是不小心，和长相无关。",
+        "en": "「うっかり」 is \"carelessly\" — nothing to do with looks."
+      },
+      {
+        "zh": "「ぐっすり」是睡得很熟，和长相无关。",
+        "en": "「ぐっすり」 is sleeping soundly — nothing to do with looks."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-332",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "長い 間 会って いなかったので、彼の 名前を（　）忘れて しまった。",
+    "options": [
+      "しっかり",
+      "はっきり",
+      "すっかり",
+      "ぐっすり"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "很久没见，把他的名字忘得一干二净。",
+      "en": "I hadn't seen him for so long that I'd completely forgotten his name."
+    },
+    "why": {
+      "zh": "忘得干干净净是「すっかり 忘れる」。",
+      "en": "Forgetting entirely is 「すっかり 忘れる」."
+    },
+    "wrong": [
+      {
+        "zh": "「しっかり」是“牢牢地”，和“忘记”意思相反。",
+        "en": "「しっかり」 is \"firmly\", the opposite of forgetting."
+      },
+      {
+        "zh": "「はっきり」是清楚地，“清楚地忘了”说不通。",
+        "en": "「はっきり」 is \"clearly\"; \"clearly forgot\" doesn't work."
+      },
+      null,
+      {
+        "zh": "「ぐっすり」只用于睡觉。",
+        "en": "「ぐっすり」 is only for sleeping."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-333",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "（　）して、電車に 傘を 置いて きて しまった。",
+    "options": [
+      "うっかり",
+      "しっかり",
+      "のんびり",
+      "さっぱり"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "一不小心，把伞落在电车上了。",
+      "en": "I carelessly left my umbrella on the train."
+    },
+    "why": {
+      "zh": "不小心忘带东西是「うっかり」。",
+      "en": "Absent-mindedly leaving something behind is 「うっかり」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「しっかりする」是认真、可靠，那样就不会忘伞。",
+        "en": "「しっかりする」 is being careful and alert — then you wouldn't leave it."
+      },
+      {
+        "zh": "「のんびりする」是悠闲，不是忘东西的原因。",
+        "en": "「のんびりする」 is relaxing at leisure, not why you'd lose an umbrella."
+      },
+      {
+        "zh": "「さっぱりする」是清爽、痛快，和忘伞无关。",
+        "en": "「さっぱりする」 is feeling refreshed — unrelated to losing an umbrella."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-334",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "昨日は とても 疲れて いたので、朝まで（　）眠った。",
+    "options": [
+      "ぐっすり",
+      "うっかり",
+      "はっきり",
+      "そっくり"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "昨天很累，一觉睡到了早上。",
+      "en": "I was very tired yesterday, so I slept soundly until morning."
+    },
+    "why": {
+      "zh": "睡得很熟是「ぐっすり 眠る」。",
+      "en": "Sleeping soundly is 「ぐっすり 眠る」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「うっかり 眠る」是不小心睡着，和“因为很累睡到早上”不合。",
+        "en": "「うっかり」 is \"by accident\"; it doesn't fit sleeping deeply from tiredness."
+      },
+      {
+        "zh": "「はっきり」是清楚，不修饰睡觉。",
+        "en": "「はっきり」 is \"clearly\" and doesn't describe sleep."
+      },
+      {
+        "zh": "「そっくり」是一模一样，不修饰睡觉。",
+        "en": "「そっくり」 is \"exactly alike\" and doesn't describe sleep."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-335",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "明日は 雨らしいから、（　）早く 家を 出た ほうが いい。",
+    "options": [
+      "せっかく",
+      "とうとう",
+      "なるべく",
+      "わざわざ"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "听说明天下雨，最好尽量早点出门。",
+      "en": "It's supposed to rain tomorrow, so you'd better leave home as early as you can."
+    },
+    "why": {
+      "zh": "建议“尽可能早”是「なるべく」。",
+      "en": "Advice to do something \"as … as possible\" is 「なるべく」."
+    },
+    "wrong": [
+      {
+        "zh": "「せっかく」用于“难得、特意……”，后接可惜或珍惜，这里是建议。",
+        "en": "「せっかく」 is \"having gone to the trouble\"; this is advice."
+      },
+      {
+        "zh": "「とうとう」是“终于”，用于已经发生的结果。",
+        "en": "「とうとう」 is \"at last\", for results that already happened."
+      },
+      null,
+      {
+        "zh": "「わざわざ」是“特地（费事）”，不修饰“早”。",
+        "en": "「わざわざ」 is \"going out of one's way\" and doesn't modify \"early\"."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-336",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "遠い ところを（　）来て くださって、ありがとうございます。",
+    "options": [
+      "とうとう",
+      "いきなり",
+      "わざわざ",
+      "たまたま"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "您远道特地赶来，非常感谢。",
+      "en": "Thank you for taking the trouble to come all this way."
+    },
+    "why": {
+      "zh": "感谢对方费事前来，是「わざわざ 来て くださって」。",
+      "en": "Thanking someone for going out of their way is 「わざわざ 来て くださって」."
+    },
+    "wrong": [
+      {
+        "zh": "「とうとう」是“终于”，用来感谢对方来访不自然。",
+        "en": "「とうとう」 is \"at last\" — not how you thank a visitor."
+      },
+      {
+        "zh": "「いきなり」是突然，感谢“突然来”说不通。",
+        "en": "「いきなり」 is \"without warning\"; you wouldn't thank someone for that."
+      },
+      null,
+      {
+        "zh": "「たまたま」是偶然，偶然路过就谈不上远道来的感谢。",
+        "en": "「たまたま」 is \"by chance\"; it doesn't fit thanking someone for coming a long way."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-337",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "駅で（　）高校の ときの 友だちに 会った。",
+    "options": [
+      "たまたま",
+      "わざわざ",
+      "いっせいに",
+      "しっかり"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "在车站偶然遇到了高中时的朋友。",
+      "en": "I happened to run into a friend from high school at the station."
+    },
+    "why": {
+      "zh": "没约好、碰巧遇到是「たまたま」。",
+      "en": "Meeting by chance is 「たまたま」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「わざわざ」是特地，特地见面不会在车站碰上。",
+        "en": "「わざわざ」 is \"going out of one's way\", which doesn't fit running into someone."
+      },
+      {
+        "zh": "「いっせいに」是一齐，一个人见一个朋友谈不上“一齐”。",
+        "en": "「いっせいに」 is \"all at once\"; one person meeting one friend isn't."
+      },
+      {
+        "zh": "「しっかり」是牢牢地、认真地，不能修饰“碰见”。",
+        "en": "「しっかり」 is \"firmly, properly\" and can't describe running into someone."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-338",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "会議の 時間が 変わったので、みんなに メールで（　）。",
+    "options": [
+      "預けた",
+      "知らせた",
+      "払った",
+      "貸した"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "会议时间变了，所以用邮件通知了大家。",
+      "en": "The meeting time changed, so I let everyone know by email."
+    },
+    "why": {
+      "zh": "把消息告诉别人是「知らせる」。",
+      "en": "Letting people know a piece of news is 「知らせる」."
+    },
+    "wrong": [
+      {
+        "zh": "「預ける」是寄存东西，消息不能寄存。",
+        "en": "「預ける」 is leaving something in someone's care; news isn't kept like that."
+      },
+      null,
+      {
+        "zh": "「払う」是付钱，和时间变更无关。",
+        "en": "「払う」 is paying — unrelated to a time change."
+      },
+      {
+        "zh": "「貸す」是借出东西，不能“借出”消息。",
+        "en": "「貸す」 is lending; you can't lend news."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-339",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson42#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "夏は 食べ物を 冷蔵庫に 入れて おかないと、すぐ（　）。",
+    "options": [
+      "割れる",
+      "枯れる",
+      "腐る",
+      "破れる"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "夏天食物不放冰箱，很快就会坏。",
+      "en": "In summer, food goes bad quickly if you don't keep it in the fridge."
+    },
+    "why": {
+      "zh": "食物变质是「腐る」。",
+      "en": "Food going off is 「腐る」."
+    },
+    "wrong": [
+      {
+        "zh": "「割れる」是玻璃等碎裂，不用于食物变质。",
+        "en": "「割れる」 is breaking like glass, not food spoiling."
+      },
+      {
+        "zh": "「枯れる」是植物枯萎。",
+        "en": "「枯れる」 is plants withering."
+      },
+      null,
+      {
+        "zh": "「破れる」是纸、布等破了。",
+        "en": "「破れる」 is paper or cloth tearing."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-340",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "大事な 試合の 前で、（　）を 感じて 眠れなかった。",
+    "options": [
+      "アドバイス",
+      "スケジュール",
+      "ルール",
+      "プレッシャー"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "在重要比赛前感到压力，睡不着。",
+      "en": "Before the big match I felt the pressure and couldn't sleep."
+    },
+    "why": {
+      "zh": "比赛前感到、让人睡不着的是「プレッシャー」（压力）。",
+      "en": "What you feel before a big match that keeps you awake is 「プレッシャー」."
+    },
+    "wrong": [
+      {
+        "zh": "「アドバイス」是建议，不说“感到建议”。",
+        "en": "「アドバイス」 is advice; you don't 「感じる」 it."
+      },
+      {
+        "zh": "「スケジュール」是日程，不是感受到的东西。",
+        "en": "「スケジュール」 is a schedule, not something you feel."
+      },
+      {
+        "zh": "「ルール」是规则，不会让人“感到”而睡不着。",
+        "en": "「ルール」 is a rule; you don't feel it so much you can't sleep."
+      },
+      null
+    ]
+  }
+]

@@ -1,0 +1,1106 @@
+[
+  {
+    "id": "n4-mg-201",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "まいあさ こうえんで <<うんどう>>して います。",
+    "options": [
+      "運動",
+      "運働",
+      "連動",
+      "軍動"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我每天早上在公园运动。",
+      "en": "I exercise in the park every morning."
+    },
+    "why": {
+      "zh": "「うんどう」（运动）写作「運動」：「運」+「動」。",
+      "en": "うんどう (exercise) is 「運動」: 「運」 + 「動」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「働」是「はたらく」（工作）的字，多了单人旁。",
+        "en": "「働」 is the kanji of はたらく (to work) — it has an extra person radical."
+      },
+      {
+        "zh": "「連」读「れん」（连接），「連動」读「れんどう」。",
+        "en": "「連」 is れん (link); 「連動」 would be れんどう."
+      },
+      {
+        "zh": "「軍」读「ぐん」（军队），少了走之旁。",
+        "en": "「軍」 is ぐん (army); it lacks the 辶 radical."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-202",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "<<としょかん>>で ほんを かりました。",
+    "options": [
+      "図書館",
+      "図書官",
+      "図書会",
+      "国書館"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我在图书馆借了书。",
+      "en": "I borrowed a book from the library."
+    },
+    "why": {
+      "zh": "「としょかん」（图书馆）写作「図書館」，「館」有食字旁。",
+      "en": "としょかん (library) is 「図書館」; 「館」 has the 食 radical."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「官」读「かん」（官员），没有食字旁，不是建筑物的「館」。",
+        "en": "「官」 is also かん but means an official; the building is 「館」."
+      },
+      {
+        "zh": "「会」读「かい」（会面），不是「かん」。",
+        "en": "「会」 is かい (meet), not かん."
+      },
+      {
+        "zh": "「国」读「こく」（国家）；「と」是「図」。",
+        "en": "「国」 is こく (country); と is 「図」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-203",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "りょこうで たくさん <<しゃしん>>を とりました。",
+    "options": [
+      "写真",
+      "写直",
+      "字真",
+      "与真"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "旅行时拍了很多照片。",
+      "en": "I took a lot of photos on the trip."
+    },
+    "why": {
+      "zh": "「しゃしん」（照片）写作「写真」。",
+      "en": "しゃしん (photo) is 「写真」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「直」读「なおす」（修改）；「真」上面是「十」，下面有两点。",
+        "en": "「直」 is なおす (fix); 「真」 has 十 on top and two dots at the bottom."
+      },
+      {
+        "zh": "「字」读「じ」（文字），宝盖头，不是「写」的秃宝盖。",
+        "en": "「字」 is じ (letter); it has a different top than 「写」."
+      },
+      {
+        "zh": "「与」读「あたえる」（给予），上面少了「冖」。",
+        "en": "「与」 is あたえる (to give); it lacks the 冖 top of 「写」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-204",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "<<ちず>>を みながら あるきました。",
+    "options": [
+      "地図",
+      "池図",
+      "地国",
+      "他図"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我一边看地图一边走。",
+      "en": "I walked while looking at a map."
+    },
+    "why": {
+      "zh": "「ちず」（地图）写作「地図」。",
+      "en": "ちず (map) is 「地図」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「池」读「いけ」（池塘），是三点水，不是土字旁。",
+        "en": "「池」 is いけ (pond), with the water radical instead of 土."
+      },
+      {
+        "zh": "「国」读「くに」（国家）；「ず」是「図」。",
+        "en": "「国」 is くに (country); ず is 「図」."
+      },
+      {
+        "zh": "「他」读「ほか」（其他），是单人旁。",
+        "en": "「他」 is ほか (other), with the person radical."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-205",
+    "type": "hyouki",
+    "refs": [
+      "lesson18#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<きょうしつ>>で まって いて ください。",
+    "options": [
+      "教室",
+      "教屋",
+      "孝室",
+      "教至"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "请在教室里等着。",
+      "en": "Please wait in the classroom."
+    },
+    "why": {
+      "zh": "「きょうしつ」（教室）写作「教室」。",
+      "en": "きょうしつ (classroom) is 「教室」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「屋」读「や」（店、房屋），不是「しつ」。",
+        "en": "「屋」 is や (shop, house), not しつ."
+      },
+      {
+        "zh": "「孝」读「こう」（孝顺），少了右边的「攵」。",
+        "en": "「孝」 is こう (filial piety); it lacks the 攵 on the right."
+      },
+      {
+        "zh": "「至」读「いたる」（到达），少了宝盖头。",
+        "en": "「至」 is いたる (reach); it lacks the 宀 top."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-206",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "にほんごの <<はつおん>>は むずかしいです。",
+    "options": [
+      "発音",
+      "発言",
+      "登音",
+      "発暗"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "日语的发音很难。",
+      "en": "Japanese pronunciation is difficult."
+    },
+    "why": {
+      "zh": "「はつおん」（发音）写作「発音」。",
+      "en": "はつおん (pronunciation) is 「発音」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「発言」读「はつげん」（发言），是另一个词。",
+        "en": "「発言」 is はつげん (a remark) — a different word."
+      },
+      {
+        "zh": "「登」读「のぼる」（登山），下面是「豆」。",
+        "en": "「登」 is のぼる (climb), with 豆 underneath."
+      },
+      {
+        "zh": "「暗」读「くらい」（暗），多了日字旁。",
+        "en": "「暗」 is くらい (dark); it has an extra 日 on the left."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-207",
+    "type": "hyouki",
+    "refs": [
+      "lesson18#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "ひっこしを <<てつだって>> くれて、ありがとう。",
+    "options": [
+      "手伝って",
+      "手云って",
+      "手位って",
+      "手代って"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "谢谢你帮我搬家。",
+      "en": "Thanks for helping me move."
+    },
+    "why": {
+      "zh": "「てつだう」（帮忙）写作「手伝う」，「伝」是单人旁加「云」。",
+      "en": "てつだう (to help) is 「手伝う」; 「伝」 is the person radical + 云."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「云」少了单人旁，不是「伝」。",
+        "en": "「云」 is missing the person radical of 「伝」."
+      },
+      {
+        "zh": "「位」读「くらい」（位置），右边是「立」。",
+        "en": "「位」 is くらい (rank), with 立 on the right."
+      },
+      {
+        "zh": "「代」读「かわる」（代替），右边是「弋」。",
+        "en": "「代」 is かわる (replace), with 弋 on the right."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-208",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "きってを <<あつめる>>のが すきです。",
+    "options": [
+      "集める",
+      "焦める",
+      "進める",
+      "隼める"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我喜欢收集邮票。",
+      "en": "I like collecting stamps."
+    },
+    "why": {
+      "zh": "「あつめる」（收集）写作「集める」：上面「隹」，下面「木」。",
+      "en": "あつめる (to collect) is 「集める」: 隹 above 木."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「焦」读「こげる」（烧焦），下面是四点火。",
+        "en": "「焦」 is こげる (burn), with the fire dots underneath."
+      },
+      {
+        "zh": "「進める」读「すすめる」（推进）。",
+        "en": "「進める」 is すすめる (to advance)."
+      },
+      {
+        "zh": "「隼」读「はやぶさ」（隼），下面是「十」，不是「木」。",
+        "en": "「隼」 is はやぶさ (falcon); it has 十 underneath, not 木."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-209",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "わからない ことばを じしょで <<しらべました>>。",
+    "options": [
+      "調べました",
+      "周べました",
+      "詞べました",
+      "訓べました"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我用词典查了不懂的词。",
+      "en": "I looked up the words I didn't know in a dictionary."
+    },
+    "why": {
+      "zh": "「しらべる」（调查、查）写作「調べる」：言字旁加「周」。",
+      "en": "しらべる (to look up) is 「調べる」: the 言 radical + 周."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「周」读「しゅう」（周围），少了言字旁。",
+        "en": "「周」 is しゅう (around); it lacks the 言 radical."
+      },
+      {
+        "zh": "「詞」读「し」（词），右边是「司」。",
+        "en": "「詞」 is し (word), with 司 on the right."
+      },
+      {
+        "zh": "「訓」读「くん」（训读），右边是「川」。",
+        "en": "「訓」 is くん (kun reading), with 川 on the right."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-210",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "バスで がっこうに <<かよって>> います。",
+    "options": [
+      "通って",
+      "道って",
+      "運って",
+      "遠って"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我坐公交车上学。",
+      "en": "I go to school by bus."
+    },
+    "why": {
+      "zh": "「かよう」（往返、上学上班）写作「通う」。",
+      "en": "かよう (to commute) is 「通う」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「道」读「みち」（道路）。",
+        "en": "「道」 is みち (road)."
+      },
+      {
+        "zh": "「運」读「はこぶ」（搬运）。",
+        "en": "「運」 is はこぶ (carry)."
+      },
+      {
+        "zh": "「遠」读「とおい」（远）。",
+        "en": "「遠」 is とおい (far)."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-211",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "むかしの ことを <<おもいだしました>>。",
+    "options": [
+      "思い出しました",
+      "思い山しました",
+      "恩い出しました",
+      "息い出しました"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我想起了以前的事。",
+      "en": "I remembered the old days."
+    },
+    "why": {
+      "zh": "「おもいだす」（想起）写作「思い出す」。",
+      "en": "おもいだす (to recall) is 「思い出す」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「山」读「やま」（山），不是「出」；「出」像两个「山」叠起来。",
+        "en": "「山」 is やま (mountain); 「出」 looks like two 山 stacked."
+      },
+      {
+        "zh": "「恩」读「おん」（恩情），上面是「因」。",
+        "en": "「恩」 is おん (a favour), with 因 on top."
+      },
+      {
+        "zh": "「息」读「いき」（呼吸），上面是「自」。",
+        "en": "「息」 is いき (breath), with 自 on top."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-212",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "みちで さいふを <<ひろいました>>。",
+    "options": [
+      "拾いました",
+      "捨いました",
+      "恰いました",
+      "給いました"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我在路上捡到了一个钱包。",
+      "en": "I picked up a wallet on the street."
+    },
+    "why": {
+      "zh": "「ひろう」（捡）写作「拾う」：提手旁加「合」。",
+      "en": "ひろう (to pick up) is 「拾う」: the hand radical + 合."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「捨」读「すてる」（扔掉），意思正好相反。",
+        "en": "「捨」 is すてる (throw away) — the opposite."
+      },
+      {
+        "zh": "「恰」读「こう」（恰好），是竖心旁。",
+        "en": "「恰」 is こう (as in 恰好), with the heart radical."
+      },
+      {
+        "zh": "「給」读「きゅう」（给与），是绞丝旁。",
+        "en": "「給」 is きゅう (supply), with the thread radical."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-213",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "きょうは <<きぶん>>が いいです。",
+    "options": [
+      "気分",
+      "汽分",
+      "気今",
+      "気文"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "今天心情很好。",
+      "en": "I feel good today."
+    },
+    "why": {
+      "zh": "「きぶん」（心情、身体感觉）写作「気分」。",
+      "en": "きぶん (mood, feeling) is 「気分」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「汽」读「き」（汽车的汽），是三点水，不是「気」。",
+        "en": "「汽」 is also き (steam), but it has the water radical."
+      },
+      {
+        "zh": "「今」读「いま」（现在），不是「ぶん」。",
+        "en": "「今」 is いま (now), not ぶん."
+      },
+      {
+        "zh": "「文」读「ぶん」（文章），但「きぶん」的「ぶん」是「分」。",
+        "en": "「文」 is also ぶん (writing), but the ぶん of きぶん is 「分」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-214",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "あの みせの ひとは とても <<しんせつ>>です。",
+    "options": [
+      "親切",
+      "新切",
+      "親接",
+      "視切"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "那家店的人非常热情。",
+      "en": "The people at that shop are very kind."
+    },
+    "why": {
+      "zh": "「しんせつ」（亲切、热心）写作「親切」。",
+      "en": "しんせつ (kind) is 「親切」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「新」读「しん」（新的），但「しんせつ」的「しん」是「親」。",
+        "en": "「新」 is also しん (new), but the しん of しんせつ is 「親」."
+      },
+      {
+        "zh": "「接」读「せつ」（接触），但「しんせつ」的「せつ」是「切」。",
+        "en": "「接」 is also せつ (contact), but the せつ of しんせつ is 「切」."
+      },
+      {
+        "zh": "「視」读「し」（视线），左边是示字旁。",
+        "en": "「視」 is し (sight), with the 礻 radical on the left."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-215",
+    "type": "hyouki",
+    "refs": [
+      "lesson30#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "この かばんの <<ねだん>>は いくらですか。",
+    "options": [
+      "値段",
+      "直段",
+      "値投",
+      "植段"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这个包多少钱？",
+      "en": "How much is this bag?"
+    },
+    "why": {
+      "zh": "「ねだん」（价格）写作「値段」。",
+      "en": "ねだん (price) is 「値段」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「直」读「なおす」（修改），少了单人旁。",
+        "en": "「直」 is なおす (fix); it lacks the person radical."
+      },
+      {
+        "zh": "「投」读「なげる」（扔），是提手旁，不是「段」。",
+        "en": "「投」 is なげる (throw), with the hand radical — not 「段」."
+      },
+      {
+        "zh": "「植」读「うえる」（种植），是木字旁。",
+        "en": "「植」 is うえる (plant), with the tree radical."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-216",
+    "type": "hyouki",
+    "refs": [
+      "lesson28#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "えきまで <<あんない>>します。",
+    "options": [
+      "案内",
+      "安内",
+      "案肉",
+      "宴内"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我带你去车站。",
+      "en": "I'll show you the way to the station."
+    },
+    "why": {
+      "zh": "「あんない」（带路、介绍）写作「案内」。",
+      "en": "あんない (guide, show around) is 「案内」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「安」读「やすい」（便宜），少了下面的「木」。",
+        "en": "「安」 is やすい (cheap); it lacks the 木 underneath."
+      },
+      {
+        "zh": "「肉」读「にく」（肉），不是「ない」。",
+        "en": "「肉」 is にく (meat), not ない."
+      },
+      {
+        "zh": "「宴」读「えん」（宴会），不是「あん」。",
+        "en": "「宴」 is えん (banquet), not あん."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-217",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "にわで やさいを <<そだてて>> います。",
+    "options": [
+      "育てて",
+      "盲てて",
+      "背てて",
+      "肯てて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我在院子里种菜。",
+      "en": "I'm growing vegetables in the garden."
+    },
+    "why": {
+      "zh": "「そだてる」（培育、养育）写作「育てる」。",
+      "en": "そだてる (to raise) is 「育てる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「盲」读「もう」（盲），下面是「目」。",
+        "en": "「盲」 is もう (blind), with 目 underneath."
+      },
+      {
+        "zh": "「背」读「せ」（背），上面是「北」。",
+        "en": "「背」 is せ (back), with 北 on top."
+      },
+      {
+        "zh": "「肯」读「こう」（肯定），上面是「止」。",
+        "en": "「肯」 is こう (affirm), with 止 on top."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-218",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "まいあさ <<ぎゅうにゅう>>を のみます。",
+    "options": [
+      "牛乳",
+      "午乳",
+      "牛浮",
+      "生乳"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我每天早上喝牛奶。",
+      "en": "I drink milk every morning."
+    },
+    "why": {
+      "zh": "「ぎゅうにゅう」（牛奶）写作「牛乳」。",
+      "en": "ぎゅうにゅう (milk) is 「牛乳」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「午」读「ご」（午后），上面不出头。",
+        "en": "「午」 is ご (noon); its stroke doesn't stick out the top."
+      },
+      {
+        "zh": "「浮」读「うく」（漂浮），是三点水。",
+        "en": "「浮」 is うく (float), with the water radical."
+      },
+      {
+        "zh": "「生乳」读「せいにゅう」（生奶），不是「ぎゅう」。",
+        "en": "「生乳」 is せいにゅう (raw milk), not ぎゅうにゅう."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-219",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "ともだちを たんじょうびの パーティーに <<しょうたい>>しました。",
+    "options": [
+      "招待",
+      "招持",
+      "紹待",
+      "召待"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我邀请朋友来参加生日派对。",
+      "en": "I invited a friend to my birthday party."
+    },
+    "why": {
+      "zh": "「しょうたい」（邀请）写作「招待」：提手旁的「招」+ 双人旁的「待」。",
+      "en": "しょうたい (invitation) is 「招待」: 招 with the hand radical + 待."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「持」读「もつ」（拿），是提手旁，不是「待」的双人旁。",
+        "en": "「持」 is もつ (hold), with the hand radical instead of 彳."
+      },
+      {
+        "zh": "「紹」读「しょう」（介绍的绍），是绞丝旁。",
+        "en": "「紹」 is also しょう (as in 紹介), but has the thread radical."
+      },
+      {
+        "zh": "「召」读「めす」（召唤），少了提手旁。",
+        "en": "「召」 is めす (summon); it lacks the hand radical."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-220",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "まいばん <<にっき>>を かいて います。",
+    "options": [
+      "日記",
+      "日紀",
+      "日計",
+      "目記"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我每天晚上写日记。",
+      "en": "I write in my diary every night."
+    },
+    "why": {
+      "zh": "「にっき」（日记）写作「日記」，「記」是言字旁。",
+      "en": "にっき (diary) is 「日記」; 「記」 has the 言 radical."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「紀」也读「き」（世纪），但是绞丝旁，不是「記」。",
+        "en": "「紀」 is also き (century), but it has the thread radical."
+      },
+      {
+        "zh": "「計」读「けい」（计算）。",
+        "en": "「計」 is けい (measure)."
+      },
+      {
+        "zh": "「目」读「め」（眼睛），不是「日」。",
+        "en": "「目」 is め (eye), not 「日」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-221",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "こどもの <<きょういく>>に ついて はなしました。",
+    "options": [
+      "教育",
+      "教肯",
+      "孝育",
+      "教盲"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我们谈了孩子的教育问题。",
+      "en": "We talked about children's education."
+    },
+    "why": {
+      "zh": "「きょういく」（教育）写作「教育」。",
+      "en": "きょういく (education) is 「教育」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「肯」读「こう」（肯定），不是「いく」。",
+        "en": "「肯」 is こう (affirm), not いく."
+      },
+      {
+        "zh": "「孝」读「こう」（孝顺），少了「攵」。",
+        "en": "「孝」 is こう (filial piety); it lacks 攵."
+      },
+      {
+        "zh": "「盲」读「もう」（盲），不是「いく」。",
+        "en": "「盲」 is もう (blind), not いく."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-222",
+    "type": "hyouki",
+    "refs": [
+      "lesson22#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "この てがみを ぶちょうに <<とどけて>> ください。",
+    "options": [
+      "届けて",
+      "屈けて",
+      "居けて",
+      "局けて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "请把这封信送给部长。",
+      "en": "Please deliver this letter to the manager."
+    },
+    "why": {
+      "zh": "「とどける」（送到）写作「届ける」：「尸」下面是「由」。",
+      "en": "とどける (to deliver) is 「届ける」: 由 under 尸."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「屈」读「くつ」（屈服），「尸」下面是「出」。",
+        "en": "「屈」 is くつ (bend), with 出 under 尸."
+      },
+      {
+        "zh": "「居」读「いる」（在），「尸」下面是「古」。",
+        "en": "「居」 is いる (be), with 古 under 尸."
+      },
+      {
+        "zh": "「局」读「きょく」（邮局的局）。",
+        "en": "「局」 is きょく (bureau, as in 郵便局)."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-223",
+    "type": "hyouki",
+    "refs": [
+      "lesson30#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "にほんに すむ がいこくじんが <<ふえて>> います。",
+    "options": [
+      "増えて",
+      "憎えて",
+      "贈えて",
+      "層えて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "住在日本的外国人在增加。",
+      "en": "The number of foreigners living in Japan is growing."
+    },
+    "why": {
+      "zh": "「ふえる」（增加）写作「増える」：土字旁加「曽」。",
+      "en": "ふえる (to increase) is 「増える」: the 土 radical + 曽."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「憎」读「にくむ」（憎恨），是竖心旁。",
+        "en": "「憎」 is にくむ (hate), with the heart radical."
+      },
+      {
+        "zh": "「贈」读「おくる」（赠送），是贝字旁。",
+        "en": "「贈」 is おくる (give a gift), with the 貝 radical."
+      },
+      {
+        "zh": "「層」读「そう」（层），上面是「尸」。",
+        "en": "「層」 is そう (layer), under 尸."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-224",
+    "type": "hyouki",
+    "refs": [
+      "lesson30#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "いなかでは わかい ひとが <<へって>> います。",
+    "options": [
+      "減って",
+      "滅って",
+      "感って",
+      "咸って"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "乡下的年轻人在减少。",
+      "en": "In the countryside the number of young people is falling."
+    },
+    "why": {
+      "zh": "「へる」（减少）写作「減る」：三点水加「咸」。",
+      "en": "へる (to decrease) is 「減る」: the water radical + 咸."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「滅」读「めつ」（灭亡），里面有「火」。",
+        "en": "「滅」 is めつ (destroy), with 火 inside."
+      },
+      {
+        "zh": "「感」读「かん」（感觉），下面有「心」。",
+        "en": "「感」 is かん (feel), with 心 underneath."
+      },
+      {
+        "zh": "「咸」少了三点水，不是「減」。",
+        "en": "「咸」 is missing the water radical of 「減」."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-225",
+    "type": "hyouki",
+    "refs": [
+      "lesson33#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "まちがえた ときは すぐ <<あやまります>>。",
+    "options": [
+      "謝ります",
+      "射ります",
+      "討ります",
+      "詞ります"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "做错的时候马上道歉。",
+      "en": "When I make a mistake, I apologize right away."
+    },
+    "why": {
+      "zh": "「あやまる」（道歉）写作「謝る」：言字旁加「射」。",
+      "en": "あやまる (to apologize) is 「謝る」: the 言 radical + 射."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「射」读「いる」（射箭），少了言字旁。",
+        "en": "「射」 is いる (shoot); it lacks the 言 radical."
+      },
+      {
+        "zh": "「討」读「うつ」（讨伐），右边是「寸」。",
+        "en": "「討」 is うつ (attack), with 寸 on the right."
+      },
+      {
+        "zh": "「詞」读「し」（词），右边是「司」。",
+        "en": "「詞」 is し (word), with 司 on the right."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-226",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "だいがくの ちかくで <<あるばいと>>を して います。",
+    "options": [
+      "アルバイト",
+      "アルバイド",
+      "アルパイト",
+      "アルバイトー"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我在大学附近打工。",
+      "en": "I have a part-time job near the university."
+    },
+    "why": {
+      "zh": "「あるばいと」（打工）写作「アルバイト」。",
+      "en": "あるばいと (part-time job) is 「アルバイト」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "最后是清音「ト」，不是「ド」。",
+        "en": "It ends with an unvoiced ト, not ド."
+      },
+      {
+        "zh": "是浊音「バ」，不是半浊音「パ」。",
+        "en": "It's バ, not パ."
+      },
+      {
+        "zh": "最后没有长音「ー」。",
+        "en": "There's no long ー at the end."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-227",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "らいげつ すきな バンドの <<こんさーと>>に いきます。",
+    "options": [
+      "コンサート",
+      "コンサード",
+      "ソンサート",
+      "コンサト"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "下个月我要去喜欢的乐队的演唱会。",
+      "en": "Next month I'm going to my favourite band's concert."
+    },
+    "why": {
+      "zh": "「こんさーと」（音乐会）写作「コンサート」。",
+      "en": "こんさーと (concert) is 「コンサート」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "最后是清音「ト」，不是「ド」。",
+        "en": "It ends with an unvoiced ト, not ド."
+      },
+      {
+        "zh": "开头是「コ」，「ソ」读「so」。",
+        "en": "It starts with コ; ソ is so."
+      },
+      {
+        "zh": "「サ」后面有长音「ー」。",
+        "en": "There's a long ー after サ."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-228",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "デパートの <<えすかれーたー>>で 3がいへ いきました。",
+    "options": [
+      "エスカレーター",
+      "エスカレーダー",
+      "エスカレター",
+      "エスカルーター"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我坐商场的自动扶梯上了三楼。",
+      "en": "I took the escalator in the department store up to the third floor."
+    },
+    "why": {
+      "zh": "「えすかれーたー」（自动扶梯）写作「エスカレーター」。",
+      "en": "えすかれーたー (escalator) is 「エスカレーター」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ター」是清音，不是「ダー」。",
+        "en": "ター is unvoiced, not ダー."
+      },
+      {
+        "zh": "「レ」后面有长音「ー」。",
+        "en": "There's a long ー after レ."
+      },
+      {
+        "zh": "第四个音是「レ」，不是「ル」。",
+        "en": "The fourth sound is レ, not ル."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-229",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "くるまの <<がそりん>>が なくなりそうです。",
+    "options": [
+      "ガソリン",
+      "ガンリン",
+      "ガソリソ",
+      "カソリン"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "车快没油了。",
+      "en": "The car is almost out of petrol."
+    },
+    "why": {
+      "zh": "「がそりん」（汽油）写作「ガソリン」。",
+      "en": "がそりん (gasoline) is 「ガソリン」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "第二个字应是「ソ」（so），写成了「ン」（n）。",
+        "en": "The second letter should be ソ (so), not ン (n)."
+      },
+      {
+        "zh": "最后应是「ン」（n），写成了「ソ」（so）。",
+        "en": "The last letter should be ン (n), not ソ (so)."
+      },
+      {
+        "zh": "开头是浊音「ガ」，不是「カ」。",
+        "en": "It starts with a voiced ガ, not カ."
+      }
+    ]
+  },
+  {
+    "id": "n4-mg-230",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "りょこうの まえに おおきい <<すーつけーす>>を かいました。",
+    "options": [
+      "スーツケース",
+      "スーシケース",
+      "スーツケーズ",
+      "スツケース"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "旅行前我买了一个大行李箱。",
+      "en": "I bought a big suitcase before the trip."
+    },
+    "why": {
+      "zh": "「すーつけーす」（行李箱）写作「スーツケース」。",
+      "en": "すーつけーす (suitcase) is 「スーツケース」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ツ」（tsu）写成了「シ」（shi），两个字很像。",
+        "en": "ツ (tsu) has been written as シ (shi) — they look alike."
+      },
+      {
+        "zh": "最后是清音「ス」，不是「ズ」。",
+        "en": "It ends with an unvoiced ス, not ズ."
+      },
+      {
+        "zh": "「ス」后面有长音「ー」。",
+        "en": "There's a long ー after the first ス."
+      }
+    ]
+  }
+]

@@ -1,0 +1,928 @@
+[
+  {
+    "id": "n3-mg-501",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<延期>>",
+    "options": [
+      "雨のため、運動会は来週に延期された。",
+      "友達と話していたら楽しくて、帰る時間が延期した。",
+      "ズボンが短いので、店で少し延期してもらった。",
+      "電車が遅れて、会議に十分延期してしまった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "延期（えんき）：把预定的日期往后推。正确句：因为下雨，运动会延到了下周。",
+      "en": "延期: postponing a planned date. Correct: Because of the rain, the sports day was postponed to next week."
+    },
+    "why": {
+      "zh": "「延期」是把活动、会议等的日期往后推，常说「〜に延期する／される」。",
+      "en": "「延期」 is putting an event or meeting off to a later date: 「〜に延期する／される」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "时间不知不觉变晚是「遅くなった」，「延期」不能这样用自动词。",
+        "en": "Time getting late is 「遅くなった」; 「延期」 isn't used like this."
+      },
+      {
+        "zh": "把裤子放长是「長くして」或「丈を伸ばして」。",
+        "en": "Lengthening trousers is 「長くして」 or 「丈を伸ばして」."
+      },
+      {
+        "zh": "开会迟到是「遅刻して」或「遅れて」。",
+        "en": "Being late for a meeting is 「遅刻して」 or 「遅れて」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-502",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<解決>>",
+    "options": [
+      "二人でよく話し合って、問題を解決した。",
+      "この数学の問題の答えを解決してください。",
+      "かたいびんのふたを、やっと解決した。",
+      "靴のひもが解決して、転びそうになった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "解決（かいけつ）：把问题、纠纷处理好。正确句：两人好好商量，解决了问题。",
+      "en": "解決: settling a problem or dispute. Correct: The two of us talked it through and solved the problem."
+    },
+    "why": {
+      "zh": "「解決」的对象是「問題」「事件」「トラブル」等需要处理的事情。",
+      "en": "「解決」 takes things that need settling: 「問題」「事件」「トラブル」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "求题目的答案是「答えを出して」或「問題を解いて」。",
+        "en": "Working out an answer is 「答えを出して」 or 「問題を解いて」."
+      },
+      {
+        "zh": "打开瓶盖是「開けた」。",
+        "en": "Getting a lid off is 「開けた」."
+      },
+      {
+        "zh": "鞋带松开是「ほどけて」。",
+        "en": "A shoelace coming undone is 「ほどけて」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-503",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<応募>>",
+    "options": [
+      "雑誌のプレゼントに応募したら、当たった。",
+      "サッカーの試合で、日本チームを応募した。",
+      "友達の誕生日パーティーに応募した。",
+      "先生の質問に、手を挙げて応募した。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "応募（おうぼ）：响应招募，报名参加（招聘、比赛、抽奖等）。正确句：我参加了杂志的礼品抽奖，结果中了。",
+      "en": "応募: applying for something open to the public (a job, contest, prize draw). Correct: I entered a magazine's prize draw and won."
+    },
+    "why": {
+      "zh": "「応募」是对公开招募（「募集」）的东西报名：工作、比赛、抽奖。",
+      "en": "「応募」 is answering an open call (「募集」): a job, a contest, a prize draw."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "给球队加油是「応援した」，字形相近但意思不同。",
+        "en": "Cheering a team on is 「応援した」 — it looks similar but means something else."
+      },
+      {
+        "zh": "去朋友的生日聚会是「参加した」或「行った」。",
+        "en": "Going to a friend's party is 「参加した」 or 「行った」."
+      },
+      {
+        "zh": "回答老师的问题是「答えた」。",
+        "en": "Answering the teacher's question is 「答えた」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-504",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<担当>>",
+    "options": [
+      "このクラスの英語は山田先生が担当している。",
+      "重い荷物を担当して、階段を上った。",
+      "駅まで友達を車で担当した。",
+      "わたしは彼の意見に担当です。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "担当（たんとう）：负责、担任（某项工作）。正确句：这个班的英语由山田老师负责。",
+      "en": "担当: being in charge of a task. Correct: Mr Yamada teaches English to this class."
+    },
+    "why": {
+      "zh": "「担当」是负责某项工作或某个范围：「〜を担当する」「担当者」。",
+      "en": "「担当」 is being responsible for a job or area: 「〜を担当する」, 「担当者」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "扛着重物是「かついで」或「持って」。",
+        "en": "Carrying a heavy load is 「かついで」 or 「持って」."
+      },
+      {
+        "zh": "开车送朋友是「送った」。",
+        "en": "Driving a friend somewhere is 「送った」."
+      },
+      {
+        "zh": "同意别人的意见是「賛成です」。",
+        "en": "Agreeing with an opinion is 「賛成です」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-505",
+    "type": "youhou",
+    "refs": [
+      "lesson39#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<余裕>>",
+    "options": [
+      "早めに家を出たので、時間に余裕がある。",
+      "パーティーの料理が余裕して、たくさん残った。",
+      "買い物のあと、百円の余裕を受け取った。",
+      "お風呂のお湯が余裕しそうなので、止めてください。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "余裕（よゆう）：（时间、金钱、心情上的）富余、从容。正确句：早早出了门，所以时间很充裕。",
+      "en": "余裕: room to spare (time, money, composure). Correct: I left home early, so I have time to spare."
+    },
+    "why": {
+      "zh": "「余裕」是名词，常用「〜に余裕がある／ない」，不能当动词用。",
+      "en": "「余裕」 is a noun, used as 「〜に余裕がある／ない」; it isn't a verb."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "菜剩下是「余って」。",
+        "en": "Food being left over is 「余って」."
+      },
+      {
+        "zh": "找回的零钱是「おつり」。",
+        "en": "Change from a purchase is 「おつり」."
+      },
+      {
+        "zh": "水快溢出来是「あふれそう」。",
+        "en": "Water about to overflow is 「あふれそう」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-506",
+    "type": "youhou",
+    "refs": [
+      "lesson39#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<油断>>",
+    "options": [
+      "簡単な相手だと油断していたら、負けてしまった。",
+      "出発する前に、車に油断を入れた。",
+      "彼は約束を油断して、来なかった。",
+      "この道は油断なので、夜は歩かないでください。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "油断（ゆだん）：大意、放松警惕。正确句：以为对手很弱就大意了，结果输了。",
+      "en": "油断: dropping your guard. Correct: I thought my opponent was easy and got careless, and I lost."
+    },
+    "why": {
+      "zh": "「油断」是该小心的时候不小心，常说「油断する」「油断大敌」。",
+      "en": "「油断」 is not being careful when you should be: 「油断する」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "给车加油是「ガソリンを入れた」，「油断」不是油。",
+        "en": "Filling up a car is 「ガソリンを入れた」 — 「油断」 isn't fuel."
+      },
+      {
+        "zh": "不守约是「約束を破って」。",
+        "en": "Breaking a promise is 「約束を破って」."
+      },
+      {
+        "zh": "路很危险是「危険なので」或「危ないので」。",
+        "en": "A dangerous road is 「危険なので」 or 「危ないので」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-507",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<夢中>>",
+    "options": [
+      "弟はゲームに夢中で、呼んでも返事をしない。",
+      "部屋の夢中に、大きなテーブルが置いてある。",
+      "夢中がかなって、歌手になった。",
+      "この服は夢中なので、もう着られない。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "夢中（むちゅう）：入迷、热衷。正确句：弟弟玩游戏入了迷，叫他也不答应。",
+      "en": "夢中: being absorbed in something. Correct: My brother is so absorbed in his game he doesn't answer when called."
+    },
+    "why": {
+      "zh": "「〜に夢中だ／夢中になる」是全神贯注、入迷。",
+      "en": "「〜に夢中だ／夢中になる」 is being completely absorbed in something."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "房间正中间是「真ん中」。",
+        "en": "The middle of a room is 「真ん中」."
+      },
+      {
+        "zh": "梦想实现是「夢がかなって」。",
+        "en": "A dream coming true is 「夢がかなって」."
+      },
+      {
+        "zh": "衣服旧了、穿不了是「古い」或「小さい」。",
+        "en": "Clothes too old or small to wear are 「古い」 or 「小さい」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-508",
+    "type": "youhou",
+    "difficulty": 1,
+    "stem": "<<ぐっすり>>",
+    "options": [
+      "疲れていたので、朝までぐっすり眠った。",
+      "急に雨が降ってきて、シャツがぐっすりぬれた。",
+      "大事なことなので、ぐっすり考えてから決めてください。",
+      "このケーキはぐっすり甘くて、おいしい。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "ぐっすり：（睡得）很熟、很香。正确句：因为累了，一觉睡到早上。",
+      "en": "ぐっすり: (sleeping) soundly. Correct: I was tired, so I slept soundly until morning."
+    },
+    "why": {
+      "zh": "「ぐっすり」只用于睡觉：「ぐっすり眠る／寝る」。",
+      "en": "「ぐっすり」 is only used of sleep: 「ぐっすり眠る／寝る」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "湿透是「びっしょり」。",
+        "en": "Soaked through is 「びっしょり」."
+      },
+      {
+        "zh": "慢慢地、仔细地考虑是「じっくり」。",
+        "en": "Thinking something over carefully is 「じっくり」."
+      },
+      {
+        "zh": "很甜是「とても甘くて」。",
+        "en": "Very sweet is 「とても甘くて」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-509",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<さっそく>>",
+    "options": [
+      "新しいパソコンが届いたので、さっそく使ってみた。",
+      "彼はさっそく歩くので、いつもついていけない。",
+      "この店はさっそくできたばかりだ。",
+      "あしたは六時にさっそく起きなければならない。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "早速（さっそく）：马上、立刻（着手做某事）。正确句：新电脑到了，我马上试着用了用。",
+      "en": "さっそく: straight away (getting on with something). Correct: My new computer arrived, so I tried it out right away."
+    },
+    "why": {
+      "zh": "「さっそく」是得到某物或听说某事后马上行动。",
+      "en": "「さっそく」 is acting right away after getting or hearing about something."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "走路快是「速く歩く」。",
+        "en": "Walking fast is 「速く歩く」."
+      },
+      {
+        "zh": "刚开的店是「最近できた」。",
+        "en": "A shop that just opened is 「最近できた」."
+      },
+      {
+        "zh": "早起是「早く起きなければ」。",
+        "en": "Getting up early is 「早く起きなければ」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-510",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<たまる>>",
+    "options": [
+      "最近忙しくて、ストレスがたまっている。",
+      "前の車が急にたまったので、びっくりした。",
+      "投げたボールが窓ガラスにたまって、割れてしまった。",
+      "この料理は時間がたまるので、早く作り始めよう。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "たまる（溜まる）：积攒、积累。正确句：最近很忙，积了不少压力。",
+      "en": "たまる: to build up. Correct: I've been busy lately and stress is building up."
+    },
+    "why": {
+      "zh": "「たまる」是一点一点积累起来：「ストレス／お金／ごみがたまる」。",
+      "en": "「たまる」 is piling up bit by bit: stress, money or rubbish 「がたまる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "车停下是「止まった」。",
+        "en": "A car stopping is 「止まった」."
+      },
+      {
+        "zh": "球打到玻璃是「当たって」。",
+        "en": "A ball hitting glass is 「当たって」."
+      },
+      {
+        "zh": "花时间是「かかる」。",
+        "en": "Taking time is 「かかる」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-511",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<いきなり>>",
+    "options": [
+      "前を歩いていた人がいきなり止まったので、ぶつかってしまった。",
+      "いきなり駅に着きますので、もう少し待っていてください。",
+      "わたしは朝ごはんをいきなり食べない。",
+      "いきなり三年間、日本語を勉強している。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "いきなり：突然、冷不防。正确句：走在前面的人突然停下，我撞了上去。",
+      "en": "いきなり: suddenly, without warning. Correct: The person walking in front stopped suddenly and I bumped into them."
+    },
+    "why": {
+      "zh": "「いきなり」是毫无预兆地突然发生。",
+      "en": "「いきなり」 is something happening suddenly, with no warning."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "快到了是「もうすぐ着きます」。",
+        "en": "About to arrive is 「もうすぐ着きます」."
+      },
+      {
+        "zh": "很少吃早饭是「あまり食べない」或「めったに食べない」。",
+        "en": "Rarely eating breakfast is 「あまり／めったに食べない」."
+      },
+      {
+        "zh": "已经学了三年是「もう三年間」。",
+        "en": "Already for three years is 「もう三年間」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-512",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<目立つ>>",
+    "options": [
+      "彼は背が高いので、どこにいても目立つ。",
+      "けさは六時に目立って、散歩に行った。",
+      "この薬はよく目立つので、すぐ治った。",
+      "妹は毎晩目立って、遅くまで勉強している。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "目立つ（めだつ）：显眼、引人注目。正确句：他个子高，在哪儿都很显眼。",
+      "en": "目立つ: to stand out. Correct: He's tall, so he stands out wherever he is."
+    },
+    "why": {
+      "zh": "「目立つ」是容易被看到、与周围不同而显眼。",
+      "en": "「目立つ」 is being easy to see, standing out from what's around."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "醒来是「目が覚めて」。",
+        "en": "Waking up is 「目が覚めて」."
+      },
+      {
+        "zh": "药有效是「よく効く」。",
+        "en": "A medicine working is 「よく効く」."
+      },
+      {
+        "zh": "努力学习是「熱心に」或「がんばって」。",
+        "en": "Studying hard is 「熱心に」 or 「がんばって」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-513",
+    "type": "youhou",
+    "difficulty": 1,
+    "stem": "<<似合う>>",
+    "options": [
+      "その帽子、よく似合っていますね。",
+      "兄とわたしは顔がよく似合っている。",
+      "走ったが、約束の時間に似合わなかった。",
+      "テストのわたしの答えが、正しい答えと似合った。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "似合う（にあう）：（衣着、发型等）相称、合适。正确句：那顶帽子很适合你。",
+      "en": "似合う: to suit (clothes, a hairstyle). Correct: That hat really suits you."
+    },
+    "why": {
+      "zh": "「似合う」是东西和人（或东西和东西）搭配得好看。",
+      "en": "「似合う」 is something looking good on someone (or with something)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "长得像是「似ている」。",
+        "en": "Looking alike is 「似ている」."
+      },
+      {
+        "zh": "赶上时间是「間に合わなかった」。",
+        "en": "Making it in time is 「間に合わなかった」."
+      },
+      {
+        "zh": "答案一致是「合っていた」或「同じだった」。",
+        "en": "Answers matching is 「合っていた」 or 「同じだった」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-514",
+    "type": "youhou",
+    "refs": [
+      "lesson39#vocab",
+      "lesson54#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<落ち着く>>",
+    "options": [
+      "深呼吸をしたら、気持ちが落ち着いた。",
+      "階段で落ち着いて、足にけがをした。",
+      "どこかで財布を落ち着いてしまった。",
+      "試験に落ち着いたので、来年もう一度受ける。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "落ち着く（おちつく）：平静下来、安定。正确句：做了个深呼吸，心情平静下来了。",
+      "en": "落ち着く: to calm down, settle. Correct: I took a deep breath and calmed down."
+    },
+    "why": {
+      "zh": "「落ち着く」是心情、状态安定下来，和「落ちる」「落とす」意思不同。",
+      "en": "「落ち着く」 is feelings or a situation settling down — not the same as 「落ちる」 or 「落とす」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "从楼梯上摔下是「落ちて」或「転んで」。",
+        "en": "Falling on the stairs is 「落ちて」 or 「転んで」."
+      },
+      {
+        "zh": "把钱包弄丢是「落として」。",
+        "en": "Dropping a wallet is 「落として」."
+      },
+      {
+        "zh": "考试没通过是「落ちた」。",
+        "en": "Failing an exam is 「落ちた」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-515",
+    "type": "youhou",
+    "refs": [
+      "lesson44#vocab",
+      "lesson53#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<我慢>>",
+    "options": [
+      "痛いのを我慢して、最後まで走った。",
+      "彼は我慢な人で、人の話を全然聞かない。",
+      "あの店のケーキは我慢で、いつも行列ができている。",
+      "道がわからなかったので、駅員さんに我慢した。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我慢（がまん）：忍耐、忍受。正确句：忍着痛跑到了最后。",
+      "en": "我慢: putting up with something. Correct: I put up with the pain and ran to the end."
+    },
+    "why": {
+      "zh": "「我慢」是忍住痛苦、欲望等：「〜を我慢する」。它是名词／する动词，不能说「我慢な」。",
+      "en": "「我慢」 is holding out against pain or a want: 「〜を我慢する」. It's a noun/suru verb — no 「我慢な」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "不听人说话的人是「わがままな人」。",
+        "en": "Someone who never listens is 「わがままな人」."
+      },
+      {
+        "zh": "受欢迎的店是「人気で」。",
+        "en": "A popular cake is 「人気で」."
+      },
+      {
+        "zh": "问路是「聞いた」或「尋ねた」。",
+        "en": "Asking the way is 「聞いた」 or 「尋ねた」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-516",
+    "type": "youhou",
+    "refs": [
+      "lesson41#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<迷惑>>",
+    "options": [
+      "夜遅くに大きな音で音楽を聞くと、近所の人に迷惑だ。",
+      "知らない町で道に迷惑して、約束に遅れた。",
+      "お世話になった先生に、迷惑の手紙を書いた。",
+      "この問題はとても迷惑で、だれも解けなかった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "迷惑（めいわく）：麻烦、打扰（给别人添的）。正确句：深夜大声放音乐会打扰邻居。",
+      "en": "迷惑: trouble or nuisance caused to others. Correct: Playing loud music late at night is a nuisance to the neighbours."
+    },
+    "why": {
+      "zh": "「迷惑」是给别人添麻烦：「〜に迷惑をかける」「迷惑だ」。",
+      "en": "「迷惑」 is causing others trouble: 「〜に迷惑をかける」, 「迷惑だ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "迷路是「道に迷って」。",
+        "en": "Getting lost is 「道に迷って」."
+      },
+      {
+        "zh": "感谢信是「お礼の手紙」。",
+        "en": "A thank-you letter is 「お礼の手紙」."
+      },
+      {
+        "zh": "题目很难是「難しくて」。",
+        "en": "A hard problem is 「難しくて」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-517",
+    "type": "youhou",
+    "difficulty": 1,
+    "stem": "<<交換>>",
+    "options": [
+      "買ったシャツが小さかったので、大きいサイズと交換してもらった。",
+      "来月、駅の近くのアパートに交換する。",
+      "東京駅で電車を交換して、大阪へ行った。",
+      "この日本語の文を英語に交換してください。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "交換（こうかん）：互换、更换。正确句：买的衬衫小了，请店里换成了大号。",
+      "en": "交換: exchanging one thing for another. Correct: The shirt I bought was too small, so they exchanged it for a bigger size."
+    },
+    "why": {
+      "zh": "「交換」是用一样东西换另一样：「AをBと交換する」。",
+      "en": "「交換」 is swapping one thing for another: 「AをBと交換する」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "搬家是「引っ越す」。",
+        "en": "Moving house is 「引っ越す」."
+      },
+      {
+        "zh": "换乘电车是「乗り換えて」。",
+        "en": "Changing trains is 「乗り換えて」."
+      },
+      {
+        "zh": "翻译成英语是「訳して」或「翻訳して」。",
+        "en": "Putting it into English is 「訳して」 or 「翻訳して」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-518",
+    "type": "youhou",
+    "difficulty": 1,
+    "stem": "<<中止>>",
+    "options": [
+      "台風のため、花火大会は中止になった。",
+      "信号が赤になったので、車が中止した。",
+      "兄は三年前に会社を中止して、店を始めた。",
+      "電池が切れて、時計が中止している。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "中止（ちゅうし）：（预定的活动）取消、停办。正确句：因为台风，烟花大会取消了。",
+      "en": "中止: calling off a planned event. Correct: Because of the typhoon, the fireworks festival was cancelled."
+    },
+    "why": {
+      "zh": "「中止」是决定不举行原定的活动：「〜が中止になる」「〜を中止する」。",
+      "en": "「中止」 is deciding not to hold something planned: 「〜が中止になる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "车停下是「止まった」。",
+        "en": "A car stopping is 「止まった」."
+      },
+      {
+        "zh": "辞职是「会社を辞めて」。",
+        "en": "Leaving a company is 「会社を辞めて」."
+      },
+      {
+        "zh": "钟停了是「止まっている」。",
+        "en": "A clock that has stopped is 「止まっている」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-519",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<詳しい>>",
+    "options": [
+      "田中さんは車に詳しいので、聞いてみよう。",
+      "この部屋は詳しくて、とても気持ちがいい。",
+      "外は詳しい雨が降っていて、出かけられない。",
+      "この服はわたしには詳しすぎて、着られない。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "詳しい（くわしい）：详细；（对某领域）精通、熟悉。正确句：田中很懂车，问问他吧。",
+      "en": "詳しい: detailed; knowing a lot about something. Correct: Tanaka knows a lot about cars, so let's ask him."
+    },
+    "why": {
+      "zh": "「〜に詳しい」是对某方面很了解；也可说「詳しい説明」（详细的说明）。",
+      "en": "「〜に詳しい」 is knowing a field well; also 「詳しい説明」 (a detailed explanation)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "房间宽敞明亮是「広くて」「明るくて」。",
+        "en": "A spacious, bright room is 「広くて」 or 「明るくて」."
+      },
+      {
+        "zh": "大雨是「激しい雨」或「強い雨」。",
+        "en": "Heavy rain is 「激しい雨」 or 「強い雨」."
+      },
+      {
+        "zh": "衣服太小是「小さすぎて」。",
+        "en": "Clothes too small are 「小さすぎて」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-520",
+    "type": "youhou",
+    "refs": [
+      "lesson57#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<悔しい>>",
+    "options": [
+      "あと一点で負けてしまって、本当に悔しい。",
+      "この薬は悔しくて、子どもは飲みたがらない。",
+      "遠くの友達が会いに来てくれて、とても悔しかった。",
+      "今日は悔しい天気で、一日中雨だった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "悔しい（くやしい）：（输了、失败而）不甘心、懊恼。正确句：只差一分输了，真不甘心。",
+      "en": "悔しい: frustrated at losing or failing. Correct: We lost by just one point — it's so frustrating."
+    },
+    "why": {
+      "zh": "「悔しい」是输了、被比下去或失败时的不甘心。",
+      "en": "「悔しい」 is the frustration of losing, being beaten or failing."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "药苦是「苦くて」。",
+        "en": "Bitter medicine is 「苦くて」."
+      },
+      {
+        "zh": "朋友来看自己是高兴的事：「うれしかった」。",
+        "en": "A friend visiting makes you glad: 「うれしかった」."
+      },
+      {
+        "zh": "天气不好是「悪い天気」或「いやな天気」。",
+        "en": "Bad weather is 「悪い天気」 or 「いやな天気」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-521",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<慌てる>>",
+    "options": [
+      "寝坊したので、慌てて家を出た。",
+      "このスープは慌てているので、気をつけて飲んでね。",
+      "庭の花がきれいに慌てている。",
+      "新しい靴が慌てていて、足が痛い。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "慌てる（あわてる）：慌张、急忙。正确句：睡过头了，急急忙忙出了门。",
+      "en": "慌てる: to be flustered, rush. Correct: I overslept, so I rushed out of the house."
+    },
+    "why": {
+      "zh": "「慌てる」是因为急、意外而慌张，「慌てて〜する」是急急忙忙地做。",
+      "en": "「慌てる」 is getting flustered from hurry or surprise; 「慌てて〜する」 is doing it in a rush."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "汤很烫是「熱いので」。",
+        "en": "Hot soup is 「熱いので」."
+      },
+      {
+        "zh": "花开是「咲いている」。",
+        "en": "Flowers blooming is 「咲いている」."
+      },
+      {
+        "zh": "鞋太紧是「きつくて」。",
+        "en": "Shoes that pinch are 「きつくて」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-522",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<ぎりぎり>>",
+    "options": [
+      "駅まで走って、電車にぎりぎり間に合った。",
+      "空が暗くなって、ぎりぎり雨が降り出した。",
+      "大きな地震で、家がぎりぎり揺れた。",
+      "このラーメンはぎりぎりおいしいので、毎日食べている。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "ぎりぎり：勉强、刚好（到极限）。正确句：跑到车站，勉强赶上了电车。",
+      "en": "ぎりぎり: only just, at the very limit. Correct: I ran to the station and only just caught the train."
+    },
+    "why": {
+      "zh": "「ぎりぎり」是刚刚好在界限上：「ぎりぎり間に合う」「ぎりぎりの時間」。",
+      "en": "「ぎりぎり」 is right at the limit: 「ぎりぎり間に合う」, 「ぎりぎりの時間」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "终于下起雨是「とうとう」或「急に」。",
+        "en": "Rain finally starting is 「とうとう」 or 「急に」."
+      },
+      {
+        "zh": "房子剧烈摇晃是「ぐらぐら揺れた」。",
+        "en": "A house shaking violently is 「ぐらぐら揺れた」."
+      },
+      {
+        "zh": "很好吃是「とてもおいしい」。",
+        "en": "Really tasty is 「とてもおいしい」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-523",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<とっくに>>",
+    "options": [
+      "急いで行ったが、バスはとっくに出てしまっていた。",
+      "空が暗いから、とっくに雨が降るでしょう。",
+      "あしたは試験なので、とっくに起きてください。",
+      "大人になったら、とっくに日本へ行ってみたい。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "とっくに：早就（已经）。正确句：我急忙赶去，可公交车早就开走了。",
+      "en": "とっくに: long ago, already. Correct: I hurried there, but the bus had long since left."
+    },
+    "why": {
+      "zh": "「とっくに」表示事情早已完成，后面接过去或完成的说法（「〜てしまった」「〜ている」）。",
+      "en": "「とっくに」 says something was done long before; it goes with a past or completed form (「〜てしまった」, 「〜ている」)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "快要下雨是「もうすぐ」或「そろそろ」。",
+        "en": "Rain coming soon is 「もうすぐ」 or 「そろそろ」."
+      },
+      {
+        "zh": "早起是「早く起きて」。",
+        "en": "Getting up early is 「早く起きて」."
+      },
+      {
+        "zh": "将来某天是「いつか」。",
+        "en": "Some day in the future is 「いつか」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-524",
+    "type": "youhou",
+    "refs": [
+      "lesson54#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<申し込む>>",
+    "options": [
+      "来月の日本語能力試験に申し込んだ。",
+      "書いた宿題を先生に申し込んだ。",
+      "レストランでカレーを申し込んだ。",
+      "道がわからないので、駅員さんに申し込んだ。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "申し込む（もうしこむ）：申请、报名。正确句：我报名了下个月的日语能力考试。",
+      "en": "申し込む: to apply or sign up. Correct: I signed up for next month's JLPT."
+    },
+    "why": {
+      "zh": "「〜に申し込む」是报名参加考试、活动或申请服务。",
+      "en": "「〜に申し込む」 is signing up for an exam or event, or applying for a service."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "交作业是「出した」或「提出した」。",
+        "en": "Handing in homework is 「出した」 or 「提出した」."
+      },
+      {
+        "zh": "在餐厅点菜是「注文した」。",
+        "en": "Ordering food is 「注文した」."
+      },
+      {
+        "zh": "问路是「聞いた」或「尋ねた」。",
+        "en": "Asking the way is 「聞いた」 or 「尋ねた」."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-525",
+    "type": "youhou",
+    "refs": [
+      "lesson54#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<素直>>",
+    "options": [
+      "自分が悪かったと思ったら、素直に謝ったほうがいい。",
+      "彼は素直に足が速くて、だれも勝てない。",
+      "引っ越しは素直に終わって、ほっとした。",
+      "今日は素直な天気で、洗濯物がよく乾く。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "素直（すなお）：坦率、老实、听话。正确句：觉得自己错了，就老老实实地道歉比较好。",
+      "en": "素直: frank, honest, obedient. Correct: If you think you were wrong, it's best to apologize honestly."
+    },
+    "why": {
+      "zh": "「素直」说人的态度不别扭、坦率：「素直に謝る」「素直な子」。",
+      "en": "「素直」 describes an open, unstubborn attitude: 「素直に謝る」, 「素直な子」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "真的跑得快是「本当に」或「とても」。",
+        "en": "Really fast is 「本当に」 or 「とても」."
+      },
+      {
+        "zh": "顺利结束是「無事に」或「順調に」。",
+        "en": "Going off without a hitch is 「無事に」 or 「順調に」."
+      },
+      {
+        "zh": "天气好是「いい天気」。",
+        "en": "Good weather is 「いい天気」."
+      }
+    ]
+  }
+]

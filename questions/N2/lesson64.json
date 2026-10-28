@@ -1,0 +1,466 @@
+[
+  {
+    "id": "n2-l64-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson64#1"
+    ],
+    "difficulty": 2,
+    "stem": "本当は行きたくないが、お世話になった部長の送別会なので、出席（　）。",
+    "options": [
+      "しないわけにはいかない",
+      "するわけにはいかない",
+      "しないわけではない",
+      "するわけがない"
+    ],
+    "answer": 0,
+    "full": "本当は行きたくないが、お世話になった部長の送別会なので、出席しないわけにはいかない。",
+    "tr": {
+      "zh": "其实不想去，但因为是一直关照我的部长的欢送会，不能不出席。",
+      "en": "I don't really want to go, but it's the farewell party for a manager who has done a lot for me, so I can't not attend."
+    },
+    "why": {
+      "zh": "「本当は行きたくないが」（不想去，但……）＋「お世話になった部長の送別会なので」（出于情义），结论是“不去不行”，用双重否定「〜ないわけにはいかない」。",
+      "en": "\"I don't want to go, but\" plus a reason of obligation (a manager who helped me) leads to \"I have to go\" — the double negative 「〜ないわけにはいかない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「するわけにはいかない」是“不能出席”，和“因为是恩人的欢送会”这一理由方向相反。",
+        "en": "「するわけにはいかない」 means \"I can't attend\" — the opposite of what the obligation calls for."
+      },
+      {
+        "zh": "「しないわけではない」是“并不是不出席”，是部分否定，接在“不想去，但因为是恩人的欢送会”后面语气不通。",
+        "en": "「しないわけではない」 is a hedge (\"it's not that I won't attend\"); it doesn't follow from the reason given."
+      },
+      {
+        "zh": "「するわけがない」是“绝不可能出席”，和“因为是恩人的欢送会”的理由矛盾。",
+        "en": "「するわけがない」 says attending is impossible, which contradicts the reason given."
+      }
+    ]
+  },
+  {
+    "id": "n2-l64-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson64#1"
+    ],
+    "difficulty": 2,
+    "stem": "A「明日の飲み会、行く？」\nB「あまり気が進まないけど、課長が幹事だから、行か（　）よ。」",
+    "options": [
+      "ないわけにはいかない",
+      "なくてもいい",
+      "ないことにしている",
+      "ないものか"
+    ],
+    "answer": 0,
+    "full": "A「明日の飲み会、行く？」 B「あまり気が進まないけど、課長が幹事だから、行かないわけにはいかないよ。」",
+    "tr": {
+      "zh": "A：明天的聚餐你去吗？ B：不太想去，但科长是组织者，不能不去啊。",
+      "en": "A: Are you going to the drinks tomorrow? B: I'm not keen, but the section chief is organizing it, so I can't not go."
+    },
+    "why": {
+      "zh": "「気が進まないけど」（不太想去，但）＋「課長が幹事だから」（碍于情面），表示“不去不行”，用「〜ないわけにはいかない」。",
+      "en": "\"I'm not keen, but\" plus a social reason (the boss is organizing it) means \"I have to go\" — 「〜ないわけにはいかない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「なくてもいい」是“不去也行”，和「けど〜だから」的转折逻辑对不上。",
+        "en": "「なくてもいい」 means \"I don't have to go\" — it doesn't fit the \"but… because the boss…\" logic."
+      },
+      {
+        "zh": "「ないことにしている」是“我的习惯是不去”，和“因为科长是组织者”的理由连不起来。",
+        "en": "「ないことにしている」 means \"I make it a rule not to go\", which doesn't follow from the boss organizing it."
+      },
+      {
+        "zh": "「ないものか」表示“能不能……呢”的愿望，不能用来回答“你去不去”。",
+        "en": "「ないものか」 expresses a wish (\"isn't there some way…\"); it doesn't answer \"are you going?\"."
+      }
+    ]
+  },
+  {
+    "id": "n2-l64-003",
+    "type": "narabe",
+    "refs": [
+      "lesson64#1"
+    ],
+    "difficulty": 2,
+    "stem": "明日は大事な取引先との [_] [_] [★] [_] わけにはいかない。",
+    "options": [
+      "出席しない",
+      "ので",
+      "ある",
+      "会議が"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "明日は大事な取引先との会議があるので出席しないわけにはいかない。",
+    "tr": {
+      "zh": "明天有和重要客户的会议，所以不能不出席。",
+      "en": "Tomorrow there's a meeting with an important client, so I can't not attend."
+    },
+    "why": {
+      "zh": "会議が＋ある＋ので（理由）＋出席しない＋わけにはいかない（不能不出席）。★ 在第三格，是「ので」。",
+      "en": "会議が ＋ ある ＋ ので (reason) ＋ 出席しない ＋ わけにはいかない (can't not attend). The ★ is the third slot: 「ので」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l64-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson64#2"
+    ],
+    "difficulty": 2,
+    "stem": "現場に残された指紋が彼のものと一致した。彼が犯人である（　）。",
+    "options": [
+      "に相違ない",
+      "はずがない",
+      "に越したことはない",
+      "にすぎない"
+    ],
+    "answer": 0,
+    "full": "現場に残された指紋が彼のものと一致した。彼が犯人であるに相違ない。",
+    "tr": {
+      "zh": "现场留下的指纹和他的一致。他一定就是犯人。",
+      "en": "The fingerprints left at the scene matched his. He is undoubtedly the culprit."
+    },
+    "why": {
+      "zh": "指纹一致是有力证据，说话人做出确信的判断“一定是”，用书面语「〜に相違ない」。",
+      "en": "Matching fingerprints is strong evidence, so the writer concludes with certainty — the formal 「〜に相違ない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「はずがない」是“不可能是犯人”，和指纹一致的证据矛盾。",
+        "en": "「はずがない」 says he can't be the culprit, contradicting the evidence."
+      },
+      {
+        "zh": "「に越したことはない」是“……最好不过”，“是犯人最好”说不通。",
+        "en": "「に越したことはない」 means \"nothing is better than…\"; \"being the culprit is best\" makes no sense."
+      },
+      {
+        "zh": "「にすぎない」是“只不过是”，“只不过是犯人”不符合由证据推出结论的语境。",
+        "en": "「にすぎない」 means \"merely\"; \"he is merely the culprit\" doesn't fit a conclusion drawn from evidence."
+      }
+    ]
+  },
+  {
+    "id": "n2-l64-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson64#2"
+    ],
+    "difficulty": 2,
+    "stem": "あの慎重な田中さんがこの案に賛成したのだから、事前に十分検討した（　）。",
+    "options": [
+      "に相違ない",
+      "わけがない",
+      "わけにはいかない",
+      "ものではない"
+    ],
+    "answer": 0,
+    "full": "あの慎重な田中さんがこの案に賛成したのだから、事前に十分検討したに相違ない。",
+    "tr": {
+      "zh": "连那么谨慎的田中都赞成了这个方案，他事先一定充分研究过了。",
+      "en": "If even the careful Tanaka agreed to this plan, he must certainly have studied it thoroughly beforehand."
+    },
+    "why": {
+      "zh": "「慎重な田中さんが賛成したのだから」是推断的根据，结论是“一定充分研究过”，用表示确信的「〜に相違ない」。",
+      "en": "\"Since even careful Tanaka agreed\" is the evidence; the conclusion \"he must have studied it\" takes the certainty marker 「〜に相違ない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「わけがない」是“不可能研究过”，和“谨慎的人赞成了”这一根据矛盾。",
+        "en": "「わけがない」 says he can't have studied it — the opposite of what \"careful\" implies."
+      },
+      {
+        "zh": "「わけにはいかない」表示“（出于情理）不能做”，不能接在过去式「検討した」后面表示推断。",
+        "en": "「わけにはいかない」 means \"can't (for moral reasons) do\" and doesn't follow a past tense to make a guess."
+      },
+      {
+        "zh": "「ものではない」是“不应该……”的劝诫，接在「検討した」后面不成立。",
+        "en": "「ものではない」 is a general \"one shouldn't…\"; it doesn't attach to 「検討した」 to make a deduction."
+      }
+    ]
+  },
+  {
+    "id": "n2-l64-006",
+    "type": "narabe",
+    "refs": [
+      "lesson64#2"
+    ],
+    "difficulty": 3,
+    "stem": "窓ガラスが内側に割れていることから考えて、犯人は [_] [_] [_] [★] 相違ない。",
+    "options": [
+      "入った",
+      "窓から",
+      "に",
+      "の"
+    ],
+    "order": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "full": "窓ガラスが内側に割れていることから考えて、犯人は窓から入ったのに相違ない。",
+    "tr": {
+      "zh": "从窗玻璃是向内碎的来看，犯人一定是从窗户进来的。",
+      "en": "Judging from the window glass being broken inward, the culprit must have come in through the window."
+    },
+    "why": {
+      "zh": "窓から＋入った＋の＋に相違ない（「の」把前面名词化，再接「に相違ない」）。★ 在第四格，是「に」。",
+      "en": "窓から ＋ 入った ＋ の (nominalizer) ＋ に相違ない. The ★ is the fourth slot: 「に」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l64-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson64#3"
+    ],
+    "difficulty": 1,
+    "stem": "一度も練習しないで、本番でうまく弾ける（　）。",
+    "options": [
+      "わけがない",
+      "に相違ない",
+      "わけにはいかない",
+      "ことになっている"
+    ],
+    "answer": 0,
+    "full": "一度も練習しないで、本番でうまく弾けるわけがない。",
+    "tr": {
+      "zh": "一次都不练习，正式演出时不可能弹得好。",
+      "en": "There's no way you can play well on the day without practicing even once."
+    },
+    "why": {
+      "zh": "「一度も練習しないで」从常理上推出“不可能弹好”，用表示从道理上完全否定的「〜わけがない」。",
+      "en": "\"Without practicing even once\" makes it logically impossible — 「〜わけがない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に相違ない」是“一定能弹好”，和“一次都不练习”矛盾。",
+        "en": "「に相違ない」 says you'll certainly play well, contradicting \"without practicing\"."
+      },
+      {
+        "zh": "「わけにはいかない」是“出于情理不能做”，“不能弹好”不是义务问题，意思不通。",
+        "en": "「わけにはいかない」 is about what one mustn't do for social reasons; it doesn't fit ability."
+      },
+      {
+        "zh": "「ことになっている」是“按规定……”，“按规定能弹好”说不通。",
+        "en": "「ことになっている」 means \"it's arranged/the rule is…\"; that makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n2-l64-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson64#3"
+    ],
+    "difficulty": 2,
+    "stem": "A「田中さん、試験大丈夫かな。」\nB「毎日10時間も勉強しているんだから、合格し（　）よ。」",
+    "options": [
+      "ないわけがない",
+      "ないわけにはいかない",
+      "ないに相違ない",
+      "ないほうがいい"
+    ],
+    "answer": 0,
+    "full": "A「田中さん、試験大丈夫かな。」 B「毎日10時間も勉強しているんだから、合格しないわけがないよ。」",
+    "tr": {
+      "zh": "A：田中考试没问题吧？ B：他每天学十个小时，不可能考不过的。",
+      "en": "A: I wonder if Tanaka will be OK in the exam. B: He studies ten hours a day — there's no way he won't pass."
+    },
+    "why": {
+      "zh": "A 担心能不能考过，B 根据“每天学十小时”断定“不可能不合格”，用「〜ないわけがない」（双重否定＝一定会）。",
+      "en": "A asks whether he'll pass; B reasons from ten hours a day that failing is impossible — 「〜ないわけがない」 (= he's sure to pass)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ないわけにはいかない」是“（出于义务）不能不做”，回答“能不能考过”这种可能性的问题不对。",
+        "en": "「ないわけにはいかない」 is about obligation (\"can't not do\"), not about how likely something is."
+      },
+      {
+        "zh": "「ないに相違ない」是“一定考不过”，和“每天学十小时”的根据矛盾，而且是生硬的书面语。",
+        "en": "「ないに相違ない」 says he certainly won't pass — contradicting the reason, and far too formal for chat."
+      },
+      {
+        "zh": "「ないほうがいい」是“最好别考过”，说不通。",
+        "en": "「ないほうがいい」 means \"he'd better not pass\" — nonsense here."
+      }
+    ]
+  },
+  {
+    "id": "n2-l64-009",
+    "type": "narabe",
+    "refs": [
+      "lesson64#3"
+    ],
+    "difficulty": 2,
+    "stem": "ピアノを始めたばかりの彼が、一週間で [_] [★] [_] [_] わけがない。",
+    "options": [
+      "なる",
+      "ように",
+      "弾ける",
+      "この曲を"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "ピアノを始めたばかりの彼が、一週間でこの曲を弾けるようになるわけがない。",
+    "tr": {
+      "zh": "刚开始学钢琴的他，不可能一周就能弹这首曲子。",
+      "en": "Someone who has only just started piano can't possibly learn to play this piece in a week."
+    },
+    "why": {
+      "zh": "この曲を＋弾ける＋ように＋なる＋わけがない（「〜ようになる」表示能力变化）。★ 在第二格，是「弾ける」。",
+      "en": "この曲を ＋ 弾ける ＋ ように ＋ なる ＋ わけがない (〜ようになる = come to be able). The ★ is the second slot: 「弾ける」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l64-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson64#4"
+    ],
+    "difficulty": 1,
+    "stem": "出かける前に確かに鍵をかけたのだから、ドアが開いている（　）。",
+    "options": [
+      "はずがない",
+      "はずだ",
+      "に相違ない",
+      "わけにはいかない"
+    ],
+    "answer": 0,
+    "full": "出かける前に確かに鍵をかけたのだから、ドアが開いているはずがない。",
+    "tr": {
+      "zh": "出门前我确实锁了门，门不可能是开着的。",
+      "en": "I definitely locked it before going out, so the door can't be open."
+    },
+    "why": {
+      "zh": "根据“我确实锁了门”这一自己知道的事实，推断“门不可能开着”，用「〜はずがない」。",
+      "en": "Based on what the speaker knows (they locked it), the door can't be open — 「〜はずがない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「はずだ」是“应该开着”，和“确实锁了门”矛盾。",
+        "en": "「はずだ」 says it should be open, contradicting \"I definitely locked it\"."
+      },
+      {
+        "zh": "「に相違ない」是“一定开着”，同样和前句矛盾。",
+        "en": "「に相違ない」 says it's certainly open — also a contradiction."
+      },
+      {
+        "zh": "「わけにはいかない」表示“出于情理不能做”，门开着不是谁的义务问题。",
+        "en": "「わけにはいかない」 is about what one can't do for social reasons; a door being open isn't that."
+      }
+    ]
+  },
+  {
+    "id": "n2-l64-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson64#4"
+    ],
+    "difficulty": 1,
+    "stem": "A「山田さん、今日は休みだって。」\nB「え、そんな（　）。さっき廊下で会ったよ。」",
+    "options": [
+      "はずはない",
+      "はずだ",
+      "わけにはいかない",
+      "に相違ない"
+    ],
+    "answer": 0,
+    "full": "A「山田さん、今日は休みだって。」 B「え、そんなはずはない。さっき廊下で会ったよ。」",
+    "tr": {
+      "zh": "A：听说山田今天请假了。 B：咦，不可能吧。我刚才还在走廊碰到他了。",
+      "en": "A: I heard Yamada is off today. B: What? That can't be. I just ran into him in the corridor."
+    },
+    "why": {
+      "zh": "B 刚才亲眼见过山田，根据自己掌握的信息否定对方的话，用「そんなはずはない」（不可能有那种事）。",
+      "en": "B just saw Yamada, so based on what B knows, A's news can't be true — 「そんなはずはない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「そんなはずだ」是“应该是那样”，和后句“刚才碰到他了”矛盾。",
+        "en": "「そんなはずだ」 would agree that it should be so — contradicting \"I just saw him\"."
+      },
+      {
+        "zh": "「わけにはいかない」不能接在「そんな」后面，意思也不是“不可能”。",
+        "en": "「わけにはいかない」 doesn't follow 「そんな」 and doesn't mean \"that can't be true\"."
+      },
+      {
+        "zh": "「に相違ない」是“一定是那样”，不能接「そんな」，意思也相反。",
+        "en": "「に相違ない」 (\"undoubtedly\") doesn't follow 「そんな」 and means the opposite."
+      }
+    ]
+  },
+  {
+    "id": "n2-l64-012",
+    "type": "narabe",
+    "refs": [
+      "lesson64#4"
+    ],
+    "difficulty": 2,
+    "stem": "[★] [_] [_] [_] まずいはずがない。",
+    "options": [
+      "値段が高い",
+      "こんなに",
+      "料理が",
+      "店の"
+    ],
+    "order": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "full": "こんなに値段が高い店の料理がまずいはずがない。",
+    "tr": {
+      "zh": "价格这么贵的店的菜，不可能难吃。",
+      "en": "Food from a restaurant this expensive can't be bad."
+    },
+    "why": {
+      "zh": "こんなに＋値段が高い＋店の＋料理が＋まずいはずがない。「こんなに」修饰「高い」。★ 在第一格，是「こんなに」。",
+      "en": "こんなに ＋ 値段が高い ＋ 店の ＋ 料理が ＋ まずいはずがない; 「こんなに」 modifies 「高い」. The ★ is the first slot: 「こんなに」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]
