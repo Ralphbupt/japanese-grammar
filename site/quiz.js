@@ -220,7 +220,7 @@
       h += '</ul></section>';
     });
     h += '<details class="q-sec q-settings"><summary>' + t('设置与备份', 'Settings & backup') + '</summary>' +
-      '<label>' + t('每组题数', 'Questions per set') + ' <select data-act="size">' + [5, 10, 20].map(function (n) { return '<option' + (n === size ? ' selected' : '') + '>' + n + '</option>'; }).join('') + '</select></label>' +
+      '<label>' + t('每组题数', 'Questions per set') + ' <select data-act="size">' + [5, 10, 20, 50].map(function (n) { return '<option' + (n === size ? ' selected' : '') + '>' + n + '</option>'; }).join('') + '</select></label>' +
       '<p class="q-muted">' + t('做题记录只存在这个浏览器里。换手机或清缓存前先导出。', 'Your progress lives only in this browser. Export it before switching phones or clearing site data.') + '</p>' +
       '<button class="q-btn" data-act="export">' + t('导出进度', 'Export progress') + '</button> ' +
       '<label class="q-btn">' + t('导入进度', 'Import progress') + '<input type="file" accept="application/json" data-act="import" hidden></label></details>';
