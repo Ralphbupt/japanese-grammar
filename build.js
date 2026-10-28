@@ -2292,10 +2292,10 @@ ${SETTINGS_SCRIPT}`;
     ? `第 ${levelRange[lv].first}–${levelRange[lv].last} 课`
     : `Lessons ${levelRange[lv].first}–${levelRange[lv].last}`;
   const homeMainHtml = `<header class="home-hero">
-    <h1><span class="lang-zh">日语语法笔记 — N5 到 N2，8 周完整体系</span><span class="lang-en">Japanese Grammar Notes — JLPT N5 to N2 in 8 Weeks</span></h1>
+    <h1><span class="lang-zh">日语语法笔记 — JLPT N5 到 N1 全部语法</span><span class="lang-en">Japanese Grammar Notes — JLPT N5 to N1</span></h1>
     <p class="home-intro">
       <span class="lang-zh">免费、双语（中文 + 日语）的日语语法笔记，从 N5 入门到 N2 进阶共 <strong>${totalLessons} 课、${totalPoints}+ 语法点</strong>，每课配接续规则、例句、辨析、练习题与间隔复习勾选清单。</span>
-      <span class="lang-en">Free, bilingual (Chinese + Japanese) grammar notes covering JLPT N5 → N2 in <strong>${totalLessons} lessons, ${totalPoints}+ grammar points</strong>. Each lesson has conjugation rules, example sentences, side-by-side comparisons of confusable patterns, practice questions, and a spaced-repetition checklist.</span>
+      <span class="lang-en">Free, bilingual (Chinese + Japanese) grammar notes covering JLPT N5 → N1 in <strong>${totalLessons} lessons, ${totalPoints}+ grammar points</strong>. Each lesson has conjugation rules, example sentences, side-by-side comparisons of confusable patterns, practice questions, and a spaced-repetition checklist.</span>
     </p>
     <div class="home-actions">
       <a class="btn-primary" href="lesson01/"><span class="lang-zh">从第 1 课开始</span><span class="lang-en">Start with lesson 1</span></a>
@@ -2363,8 +2363,8 @@ ${SETTINGS_SCRIPT}`;
       <span class="lang-en">Mixing up <a href="wa-vs-ga/">は vs が</a> or <a href="kara-vs-node/">から vs ので</a>? The <a href="guides/">guides</a> put confusable patterns side by side; sitting the December exam? See the <a href="jlpt-december-2026/">JLPT exam guide</a>.</span>
     </p>
     <p>
-      <span class="lang-zh">用 Anki 复习？下载 <a href="anki/">免费 JLPT N5-N2 文法卡组</a>（共 {{ANKI_CARDS}} 张，原生 TSV 一键导入）。</span>
-      <span class="lang-en">Use Anki for review? Download the <a href="anki/">free JLPT N5–N2 grammar decks</a> ({{ANKI_CARDS}} cards, native TSV one-click import).</span>
+      <span class="lang-zh">用 Anki 复习？下载 <a href="anki/">免费 JLPT N5–N1 文法卡组</a>（共 {{ANKI_CARDS}} 张，原生 TSV 一键导入）。</span>
+      <span class="lang-en">Use Anki for review? Download the <a href="anki/">free JLPT N5–N1 grammar decks</a> ({{ANKI_CARDS}} cards, native TSV one-click import).</span>
     </p>
     <p>
       <span class="lang-zh">想练听力？试试 <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News 播客</a>——慢速日语新闻 + 英语解说，配套逐句精听与 transcript。</span>
@@ -2378,15 +2378,15 @@ ${SETTINGS_SCRIPT}`;
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Japanese Grammar Notes — Free JLPT N5 to N2 Grammar Lessons | 日语语法笔记</title>
-<meta name="description" content="Free JLPT N5–N2 Japanese grammar lessons: every grammar point with conjugation rules, example sentences with audio, comparisons of confusable patterns, practice questions and Anki decks. 中文版：免费日语语法笔记，N5 到 N2。">
+<title>Japanese Grammar Notes — Free JLPT N5 to N1 Grammar Lessons | 日语语法笔记</title>
+<meta name="description" content="Free JLPT N5–N1 Japanese grammar lessons: every grammar point with conjugation rules, example sentences with audio, comparisons of confusable patterns, practice questions and Anki decks. 中文版：免费日语语法笔记，N5 到 N1。">
 <meta name="keywords" content="Japanese grammar, JLPT N2, N5, N4, N3, 日语语法, 日本語文法, grammar notes, spaced repetition, 语法笔记">
 <link rel="canonical" href="${SITE}">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Japanese Grammar Notes | 日语语法笔记 – N5→N2">
-<meta property="og:description" content="Free JLPT N5–N2 Japanese grammar lessons with conjugation rules, example sentences with audio, comparisons and Anki decks.">
+<meta property="og:title" content="Japanese Grammar Notes | 日语语法笔记 – N5→N1">
+<meta property="og:description" content="Free JLPT N5–N1 Japanese grammar lessons with conjugation rules, example sentences with audio, comparisons and Anki decks.">
 <meta property="og:url" content="${SITE}">
 <meta property="og:image" content="${SITE}og-image.png">
 <meta property="og:image:width" content="1200">
@@ -2396,8 +2396,8 @@ ${SETTINGS_SCRIPT}`;
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Japanese Grammar Notes | 日语语法笔记 – N5→N2">
-<meta name="twitter:description" content="Free JLPT N5–N2 Japanese grammar lessons with examples, audio, comparisons and Anki decks.">
+<meta name="twitter:title" content="Japanese Grammar Notes | 日语语法笔记 – N5→N1">
+<meta name="twitter:description" content="Free JLPT N5–N1 Japanese grammar lessons with examples, audio, comparisons and Anki decks.">
 <meta name="twitter:image" content="${SITE}og-image.png">
 
 <!-- Structured Data -->
@@ -2406,8 +2406,8 @@ ${SETTINGS_SCRIPT}`;
 [{
   "@context": "https://schema.org",
   "@type": "Course",
-  "name": "Japanese Grammar Notes – N5 to N2",
-  "description": "Free structured Japanese grammar notes covering JLPT N5 to N2 in 8 weeks, with bilingual explanations, example sentences, and spaced repetition.",
+  "name": "Japanese Grammar Notes – N5 to N1",
+  "description": "Free structured Japanese grammar notes covering JLPT N5 to N1, with bilingual explanations, example sentences, and spaced repetition.",
   "provider": { "@type": "Person", "name": "Ralphbupt" },
   "inLanguage": ["ja", "zh-CN"],
   "educationalLevel": "Beginner to Intermediate",
@@ -2556,7 +2556,7 @@ ${APP_PREFS_JS}
       : lesson.jaTitle).replace(/^Lesson\s+\d+\s*[–—-]\s*/i, "").trim();
     const seo = SEO_TITLES[lesson.id] || {};
     // Guides aren't a JLPT level; their seo entry may name the level they target.
-    const schemaLevel = seo.level || (GROUP_NAMES[lessonLevel] ? "N5–N2" : lessonLevel);
+    const schemaLevel = seo.level || (GROUP_NAMES[lessonLevel] ? "N5–N1" : lessonLevel);
     let lessonTitle, lessonDesc;
     if (seo.en) {
       lessonTitle = seo.en;
@@ -2657,7 +2657,7 @@ ${APP_PREFS_JS}
   "teaches": [${v.points.slice(0, 5).map(p => `"${p.replace(/"/g, '\\"')}"`).join(", ") || '""'}],
   "audience": { "@type": "EducationalAudience", "educationalRole": "student" },
   "author": { "@type": "Person", "name": "Ralphbupt", "url": "https://github.com/Ralphbupt" },
-  "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N2", "url": "${SITE}" }
+  "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N1", "url": "${SITE}" }
 },
 {
   "@context": "https://schema.org",
@@ -2970,7 +2970,7 @@ html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
   "description": "${m.desc.replace(/"/g, '\\"')}",
   "url": "${lv.url}",
   "inLanguage": ["${lang.htmlLang}", "ja"],
-  "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N2", "url": "${SITE}" },
+  "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N1", "url": "${SITE}" },
   "hasPart": [${lessons.map(l => `{"@type": "Article", "name": "${l.jaTitle.replace(/"/g, '\\"')}", "url": "${SITE}${l.id}/"}`).join(",")}]
 },
 {
@@ -3079,7 +3079,7 @@ ${APP_PREFS_JS}
   "description": "${m.desc.replace(/"/g, '\\"')}",
   "url": "${lv.url}",
   "inLanguage": ["${lang.htmlLang}", "ja"],
-  "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N2", "url": "${SITE}" },
+  "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N1", "url": "${SITE}" },
   "hasPart": [${guidePages.map(l => `{"@type": "Article", "name": "${l.jaTitle.replace(/"/g, '\\"')}", "url": "${SITE}${l.id}/"}`).join(",")}]
 },
 {
@@ -3153,13 +3153,13 @@ ${APP_PREFS_JS}
     const aboutMeta = {
       en: {
         title: "About Japanese Grammar Notes — Who Makes It, Sources & License",
-        desc: "Who makes jpnotes.dev, why, which references it draws on, and how to report a mistake or contribute. Free, open-source JLPT N5–N2 grammar notes under CC BY 4.0, with conjugation rules, examples, comparisons and practice.",
+        desc: "Who makes jpnotes.dev, why, which references it draws on, and how to report a mistake or contribute. Free, open-source JLPT N5–N1 grammar notes under CC BY 4.0, with conjugation rules, examples, comparisons and practice.",
         keywords: "about jpnotes.dev, Japanese grammar notes, JLPT self-study, open source",
         name: "About Japanese Grammar Notes", site: "Japanese Grammar Notes", crumb: "About",
       },
       zh: {
         title: "关于本站 - 日语语法笔记 | 作者、内容来源与开源协议",
-        desc: "了解 jpnotes.dev 日语语法笔记是谁做的、为什么做、参考了哪些资料、如何反馈错误与参与贡献。这是一份免费、开源、采用 CC BY 4.0 许可的 JLPT N5-N2 语法学习笔记，含接续规则、例句、辨析与练习。",
+        desc: "了解 jpnotes.dev 日语语法笔记是谁做的、为什么做、参考了哪些资料、如何反馈错误与参与贡献。这是一份免费、开源、采用 CC BY 4.0 许可的 JLPT N5–N1 语法学习笔记，含接续规则、例句、辨析与练习。",
         keywords: "日语语法笔记关于, 作者, jpnotes.dev, 日语学习, JLPT 自学, 中文母语者",
         name: "关于日语语法笔记", site: "日语语法笔记", crumb: "关于本站",
       },
@@ -3443,7 +3443,7 @@ ${appAttrs === null || /data-mode="cards"/.test(appAttrs) ? "" : AI_SCRIPT}
   };
   for (const lang of PAGE_LANGS) {
     const en = lang.code === "en";
-    const m = { ...hubMeta[lang.code], body: `<div class="hub">${["N5", "N4", "N3", "N2"].map((l) => hubCard(l, en)).join("")}</div>
+    const m = { ...hubMeta[lang.code], body: `<div class="hub">${["N5", "N4", "N3", "N2", "N1"].map((l) => hubCard(l, en)).join("")}</div>
       <p class="hub-listen">${en
         ? `🎧 <b>Listening questions are planned, not built yet.</b> If you want them, <a href="#feedback" class="fb-open">say so</a> — demand decides what comes first. Meanwhile the <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News podcast</a> has slow news with transcripts.`
         : `🎧 <b>听力题在规划中，还没做。</b>想要的话<a href="#feedback" class="fb-open">告诉我们</a>，想要的人多就先做。现在可以先用 <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News 播客</a>练听力（慢速新闻 + 原文）。`}</p>` };
@@ -3589,7 +3589,7 @@ Sitemap: ${SITE}sitemap.xml
   <channel>
     <title>Japanese Grammar Notes | 日语语法笔记</title>
     <link>${SITE}</link>
-    <description>Free structured Japanese grammar notes from N5 to N2 in 8 weeks. Bilingual with examples and spaced repetition.</description>
+    <description>Free structured Japanese grammar notes from N5 to N1. Bilingual with examples and spaced repetition.</description>
     <language>ja</language>
     <atom:link href="${SITE}feed.xml" rel="self" type="application/rss+xml"/>
 ${rssItems.join("\n")}
@@ -3599,7 +3599,7 @@ ${rssItems.join("\n")}
 
   fs.writeFileSync(path.join(__dirname, "dist/llms.txt"), `# Japanese Grammar Notes / 日语语法笔记
 
-> Free, structured Japanese grammar notes covering JLPT N5 → N2 in an 8-week curriculum. Bilingual: Chinese explanations + Japanese examples with furigana annotations. ${lessonPages.length} lessons, 400+ grammar points, each with conjugation rules, 3+ example sentences, comparisons between easily confused patterns, and spaced-repetition checklists.
+> Free, structured Japanese grammar notes covering JLPT N5 → N1. Bilingual: Chinese explanations + Japanese examples with furigana annotations. ${lessonPages.length} lessons, 400+ grammar points, each with conjugation rules, 3+ example sentences, comparisons between easily confused patterns, and spaced-repetition checklists.
 
 Site: ${SITE}
 Author: Ralphbupt (https://github.com/Ralphbupt)
@@ -3652,7 +3652,7 @@ Each \`/lessonNN/\` page contains:
 `, "utf-8");
 
   fs.writeFileSync(path.join(__dirname, "dist/manifest.json"), JSON.stringify({
-    name: "日语语法笔记 – N5→N2",
+    name: "日语语法笔记 – N5→N1",
     short_name: "日语文法",
     start_url: SITE_PATH,
     scope: SITE_PATH,
@@ -3700,7 +3700,7 @@ Each \`/lessonNN/\` page contains:
   <text x="600" y="220" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="96" fill="#ffffff" font-weight="bold">日语语法笔记</text>
   <text x="600" y="320" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="42" fill="#c8c8d8">Japanese Grammar Notes</text>
   <text x="600" y="400" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="36" fill="#e94560">N5 → N4 → N3 → N2</text>
-  <text x="600" y="470" text-anchor="middle" font-family="sans-serif" font-size="24" fill="#888888">Free · Bilingual · 8 Weeks · Spaced Repetition</text>
+  <text x="600" y="470" text-anchor="middle" font-family="sans-serif" font-size="24" fill="#888888">Free · Bilingual · N5 → N1 · Audio</text>
   <text x="600" y="550" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#666666">${SITE_HOST}</text>
 </svg>`;
   fs.writeFileSync(path.join(__dirname, "dist/og-image.svg"), ogSvg, "utf-8");
@@ -3756,8 +3756,8 @@ Each \`/lessonNN/\` page contains:
     { slug: "N3", topLabel: "JLPT N3", mainTitle: "N3 文法チェックリスト", sub: `${ogLevelCounts.N3} 课 · 100+ 语法点`, accent: "#e94560" },
     { slug: "N2", topLabel: "JLPT N2", mainTitle: "N2 文法チェックリスト", sub: `${ogLevelCounts.N2} 课 · 75+ 语法点`, accent: "#e94560" },
     ...(ogLevelCounts.N1 ? [{ slug: "N1", topLabel: "JLPT N1", mainTitle: "N1 文法チェックリスト", sub: `${ogLevelCounts.N1} 课 · 100+ 语法点`, accent: "#e94560" }] : []),
-    { slug: "about", topLabel: "About · 关于", mainTitle: "日语语法笔记", sub: "N5 → N2 · 8 Weeks · Free", accent: "#e94560" },
-    { slug: "anki", topLabel: "Anki Decks", mainTitle: "JLPT 文法 卡组", sub: "N5 · N4 · N3 · N2 · 297 张卡", accent: "#e94560" },
+    { slug: "about", topLabel: "About · 关于", mainTitle: "日语语法笔记", sub: "N5 → N1 · Free · Bilingual", accent: "#e94560" },
+    { slug: "anki", topLabel: "Anki Decks", mainTitle: "JLPT 文法 卡组", sub: "N5 · N4 · N3 · N2 · N1", accent: "#e94560" },
     { slug: "guides", topLabel: "Guides · 专题", mainTitle: "易混語法 対比", sub: "は vs が · から vs ので · JLPT 12月", accent: "#e94560" },
   ];
   for (const p of indexOgPages) {

@@ -570,19 +570,19 @@ async function main() {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>日语语法 Anki 卡组下载（.apkg / TSV）| JLPT N5–N2 Japanese Grammar Anki Decks — jpnotes.dev</title>
-<meta name="description" content="免费下载 JLPT N5/N4/N3/N2 日语语法 Anki 卡组：.apkg 一键导入，含例句日语音频和挖空练习（支持 AnkiDroid / AnkiMobile），共 ${total} 张。Free JLPT N5–N2 Japanese grammar Anki decks with example audio &amp; cloze practice (.apkg &amp; TSV, ${total} cards, works with AnkiDroid &amp; AnkiMobile).">
+<title>日语语法 Anki 卡组下载（.apkg / TSV）| JLPT N5–N1 Japanese Grammar Anki Decks — jpnotes.dev</title>
+<meta name="description" content="免费下载 JLPT N5/N4/N3/N2/N1 日语语法 Anki 卡组：.apkg 一键导入，含例句日语音频和挖空练习（支持 AnkiDroid / AnkiMobile），共 ${total} 张。Free JLPT N5–N1 Japanese grammar Anki decks with example audio &amp; cloze practice (.apkg &amp; TSV, ${total} cards, works with AnkiDroid &amp; AnkiMobile).">
 <link rel="canonical" href="${SITE}anki/">
-<meta property="og:title" content="日语语法 Anki 卡组下载（.apkg）| JLPT N5–N2 Grammar Anki Decks">
-<meta property="og:description" content="免费 JLPT 日语语法 Anki 卡组 / Free JLPT Japanese grammar Anki decks (.apkg, ${total} cards), covering N5–N2.">
+<meta property="og:title" content="日语语法 Anki 卡组下载（.apkg）| JLPT N5–N1 Grammar Anki Decks">
+<meta property="og:description" content="免费 JLPT 日语语法 Anki 卡组 / Free JLPT Japanese grammar Anki decks (.apkg, ${total} cards), covering N5–N1.">
 <meta property="og:url" content="${SITE}anki/">
 <meta property="og:image" content="${SITE}anki/og-image.png">
 <script type="application/ld+json">
 ${JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Dataset",
-  name: "JLPT N5–N2 日语语法 Anki 卡组 / Japanese Grammar Anki Decks",
-  description: `Free JLPT Japanese grammar Anki flashcard decks (${total} cards, N5–N2). Each card has the grammar point, meaning and example sentences, linked to the full lesson on jpnotes.dev.`,
+  name: "JLPT N5–N1 日语语法 Anki 卡组 / Japanese Grammar Anki Decks",
+  description: `Free JLPT Japanese grammar Anki flashcard decks (${total} cards, N5–N1). Each card has the grammar point, meaning and example sentences, linked to the full lesson on jpnotes.dev.`,
   url: `${SITE}anki/`,
   license: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
   creator: { "@type": "Organization", name: "jpnotes.dev", url: SITE },
@@ -666,8 +666,8 @@ body.lang-en div.lang-en, body.lang-en p.lang-en, body.lang-en li.lang-en, body.
   </nav>
     <h1><span class="lang-zh">日语语法 Anki 卡组下载</span><span class="lang-en">Japanese Grammar Anki Decks</span></h1>
   <p class="subtitle">
-    <span class="lang-zh">JLPT N5 → N2 共 ${total} 张卡 · 中文版 / English 版两套独立卡组 · .apkg 版含 🔊 例句日语音频 + 挖空练习子卡组 · 支持 AnkiDroid、AnkiMobile · 每张语法点配含义、例句和跳回 jpnotes.dev 详细讲解的链接</span>
-    <span class="lang-en">JLPT N5 → N2, ${total} cards · separate Chinese and English editions · .apkg includes 🔊 native-style TTS audio on examples + a cloze-practice subdeck · works with AnkiDroid &amp; AnkiMobile · each card has the grammar point, its meaning, examples, and a link back to the full lesson on jpnotes.dev</span>
+    <span class="lang-zh">JLPT N5 → N1 共 ${total} 张卡 · 中文版 / English 版两套独立卡组 · .apkg 版含 🔊 例句日语音频 + 挖空练习子卡组 · 支持 AnkiDroid、AnkiMobile · 每张语法点配含义、例句和跳回 jpnotes.dev 详细讲解的链接</span>
+    <span class="lang-en">JLPT N5 → N1, ${total} cards · separate Chinese and English editions · .apkg includes 🔊 native-style TTS audio on examples + a cloze-practice subdeck · works with AnkiDroid &amp; AnkiMobile · each card has the grammar point, its meaning, examples, and a link back to the full lesson on jpnotes.dev</span>
   </p>${QUIZ_LINKS ? `
   <p class="online-cards" style="margin:1rem 0;padding:.7rem 1rem;border:1px solid #e94560;border-radius:8px;">🗂 <span class="lang-zh">不想装 Anki？<a href="/n5-cards/">在浏览器里背 N5 语法卡片</a>——同样的间隔复习，还有填空卡，进度存在本机。</span><span class="lang-en">Don't want to install Anki? <a href="/n5-cards/">Study the N5 grammar cards in your browser</a> — the same spaced repetition, plus fill-in cards, with progress kept on your device.</span></p>` : ""}
 
