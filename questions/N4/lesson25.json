@@ -15,6 +15,7 @@
     ],
     "answer": 1,
     "full": "さっき、山田 という 人から 電話が ありましたよ。",
+    "kj": "さっき、山田という人から電話がありましたよ。",
     "tr": {
       "zh": "刚才有个叫山田的人打来了电话。",
       "en": "A person called Yamada phoned a little while ago."
@@ -55,6 +56,7 @@
     ],
     "answer": 2,
     "full": "けさ、あしたは 大雪が ふる という ニュースを 見ました。",
+    "kj": "今朝、明日は大雪が降るというニュースを見ました。",
     "tr": {
       "zh": "今天早上看到了明天要下大雪的新闻。",
       "en": "This morning I saw a news report that it's going to snow heavily tomorrow."
@@ -100,6 +102,7 @@
       2
     ],
     "full": "田中 という 人を 知って いますか。",
+    "kj": "田中という人を知っていますか。",
     "tr": {
       "zh": "你认识一个叫田中的人吗？",
       "en": "Do you know a person called Tanaka?"
@@ -131,6 +134,7 @@
     ],
     "answer": 3,
     "full": "彼が 会社を やめた ということ は 本当ですか。",
+    "kj": "彼が会社を辞めたということは本当ですか。",
     "tr": {
       "zh": "他辞职了这件事是真的吗？",
       "en": "Is it true that he quit his job?"
@@ -171,6 +175,7 @@
     ],
     "answer": 0,
     "full": "ニュースに よると、来月から 電車の 料金が 上がる ということです。",
+    "kj": "ニュースによると、来月から電車の料金が上がるということです。",
     "tr": {
       "zh": "据新闻说，从下个月起电车票价要涨。",
       "en": "According to the news, train fares are going up from next month."
@@ -216,6 +221,7 @@
       0
     ],
     "full": "メールの 返事が ない ということは 来ない という こと だろう。",
+    "kj": "メールの返事がないということは来ないということだろう。",
     "tr": {
       "zh": "没回邮件，大概就是说他不来吧。",
       "en": "No reply to the email probably means he isn't coming."
@@ -247,6 +253,7 @@
     ],
     "answer": 1,
     "full": "「節約」というのは、むだな お金を 使わない ことです。",
+    "kj": "「節約」というのは、無駄なお金を使わないことです。",
     "tr": {
       "zh": "所谓“节约”，就是不浪费钱。",
       "en": "\"Setsuyaku\" (saving) means not spending money wastefully."
@@ -287,6 +294,7 @@
     ],
     "answer": 2,
     "full": "「花見」というのは、桜を 見ながら 食事を したり お酒を 飲んだり する ことです。",
+    "kj": "「花見」というのは、桜を見ながら食事をしたりお酒を飲んだりすることです。",
     "tr": {
       "zh": "所谓“花见”，就是一边赏樱花一边吃饭、喝酒。",
       "en": "\"Hanami\" means eating and drinking while looking at the cherry blossoms."
@@ -325,6 +333,12 @@
       "というのは",
       "力を"
     ],
+    "okj": [
+      null,
+      "測る試験の",
+      null,
+      null
+    ],
     "order": [
       2,
       0,
@@ -332,6 +346,7 @@
       1
     ],
     "full": "「JLPT」というのは 日本語の 力を はかる 試験の ことです。",
+    "kj": "「JLPT」というのは日本語の力を測る試験のことです。",
     "tr": {
       "zh": "所谓“JLPT”，就是测试日语能力的考试。",
       "en": "The JLPT is a test that measures your Japanese ability."
@@ -363,6 +378,7 @@
     ],
     "answer": 2,
     "full": "日本 といえば、やっぱり 富士山ですね。",
+    "kj": "日本といえば、やっぱり富士山ですね。",
     "tr": {
       "zh": "说到日本，还是富士山啊。",
       "en": "When you think of Japan, it's got to be Mount Fuji."
@@ -403,6 +419,7 @@
     ],
     "answer": 3,
     "full": "A「来週、北海道へ 旅行に 行くんです。」 B「いいですね。北海道 といえば、ラーメンが おいしいですよね。」",
+    "kj": "A「来週、北海道へ旅行に行くんです。」\nB「いいですね。北海道といえば、ラーメンがおいしいですよね。」",
     "tr": {
       "zh": "A：我下周要去北海道旅行。 B：真好啊。说到北海道，拉面很好吃呢。",
       "en": "A: I'm going on a trip to Hokkaido next week. B: Nice! Speaking of Hokkaido, the ramen there is great."
@@ -448,6 +465,7 @@
       1
     ],
     "full": "日本の 夏 といえば やっぱり 花火 ですね。",
+    "kj": "日本の夏といえばやっぱり花火ですね。",
     "tr": {
       "zh": "说到日本的夏天，还是烟花啊。",
       "en": "When it comes to summer in Japan, it has to be fireworks."
@@ -480,6 +498,7 @@
     ],
     "answer": 0,
     "full": "A「田中さん、パーティーに 来るかな。」 B「うん、きのう 来る って 言って たよ。」",
+    "kj": "A「田中さん、パーティーに来るかな。」\nB「うん、昨日来るって言ってたよ。」",
     "tr": {
       "zh": "A：田中会来派对吗？ B：嗯，他昨天说要来。",
       "en": "A: Do you think Tanaka will come to the party? B: Yeah, he said yesterday he'd come."
@@ -521,6 +540,7 @@
     ],
     "answer": 3,
     "full": "A「ねえ、聞いた？ あしたは 台風で 学校が 休み なんだって。」 B「え、本当？ やった！」",
+    "kj": "A「ねえ、聞いた？明日は台風で学校が休みなんだって。」\nB「え、本当？やった！」",
     "tr": {
       "zh": "A：喂，你听说了吗？明天因为台风学校放假。 B：啊，真的？太好了！",
       "en": "A: Hey, did you hear? School's off tomorrow because of the typhoon. B: Really? Yes!"

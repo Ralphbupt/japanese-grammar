@@ -8,6 +8,7 @@
     "options": ["召し上がりました", "いただきました", "お食べに なりました", "食べさせました"],
     "answer": 0,
     "full": "学生「先生、昨日の パーティーでは 何を 召し上がりましたか。」 先生「おすしを 食べましたよ。」",
+    "kj": "学生「先生、昨日のパーティーでは何を召し上がりましたか。」\n先生「おすしを食べましたよ。」",
     "tr": {
       "zh": "学生：老师，昨天的派对上您吃了什么？ 老师：吃了寿司哦。",
       "en": "Student: Professor, what did you eat at yesterday's party? Professor: I had sushi."
@@ -32,6 +33,7 @@
     "options": ["見ました", "ご覧に なりました", "お見に なりました", "ご覧ください"],
     "answer": 0,
     "full": "部長「この 映画、もう 見た？」 私「はい、先週 見ました。とても おもしろかったです。」",
+    "kj": "部長「この映画、もう見た？」\n私「はい、先週見ました。とても面白かったです。」",
     "tr": {
       "zh": "部长：这部电影你看过了吗？ 我：是的，上周看了。非常有意思。",
       "en": "Manager: Have you seen this movie yet? Me: Yes, I saw it last week. It was really good."
@@ -56,6 +58,7 @@
     "options": ["ご覧ください", "拝見して ください", "お見に なって ください", "見られて ください"],
     "answer": 0,
     "full": "（美術館で） 係の 人「お客様、こちらの 絵を どうぞ ご覧ください。」",
+    "kj": "（美術館で）係の人「お客様、こちらの絵をどうぞご覧ください。」",
     "tr": {
       "zh": "（在美术馆）工作人员：这位客人，请看这幅画。",
       "en": "(At an art museum) Staff: Please take a look at this painting."
@@ -80,6 +83,7 @@
     "options": ["いらっしゃいます", "いらっしゃります", "おります", "参ります"],
     "answer": 0,
     "full": "学生「すみません、田中先生は 今 研究室に いらっしゃいますか。」",
+    "kj": "学生「すみません、田中先生は今研究室にいらっしゃいますか。」",
     "tr": {
       "zh": "学生：请问，田中老师现在在研究室吗？",
       "en": "Student: Excuse me, is Professor Tanaka in his office now?"
@@ -104,6 +108,7 @@
     "options": ["話に ついて", "何か", "ご存じ", "です"],
     "order": [0, 1, 2, 3],
     "full": "先生、この 話に ついて 何か ご存じですか。",
+    "kj": "先生、この話について何かご存じですか。",
     "tr": {
       "zh": "老师，关于这件事您知道些什么吗？",
       "en": "Professor, do you know anything about this matter?"
@@ -123,6 +128,7 @@
     "options": ["に なります", "します", "いたします", "されます"],
     "answer": 0,
     "full": "田中先生は 毎朝 駅の 前の 喫茶店で 新聞を お読みに なります。",
+    "kj": "田中先生は毎朝駅の前の喫茶店で新聞をお読みになります。",
     "tr": {
       "zh": "田中老师每天早上在车站前的咖啡馆看报纸。",
       "en": "Professor Tanaka reads the newspaper every morning at the café in front of the station."
@@ -147,6 +153,7 @@
     "options": ["ご覧に なりました", "お見に なりました", "拝見しました", "お見しました"],
     "answer": 0,
     "full": "部長、きのう お送りした 写真は もう ご覧に なりましたか。",
+    "kj": "部長、昨日お送りした写真はもうご覧になりましたか。",
     "tr": {
       "zh": "部长，昨天发给您的照片您已经看了吗？",
       "en": "Have you looked at the photos I sent yesterday yet, sir?"
@@ -171,6 +178,7 @@
     "options": ["会社に", "お戻り", "に", "なります"],
     "order": [0, 1, 2, 3],
     "full": "部長は 何時ごろ 会社に お戻りに なりますか。",
+    "kj": "部長は何時ごろ会社にお戻りになりますか。",
     "tr": {
       "zh": "部长大概几点回公司？",
       "en": "Around what time will the manager be back at the office?"
@@ -190,6 +198,7 @@
     "options": ["されて", "させて", "いたして", "させられて"],
     "answer": 0,
     "full": "（会社の 同僚の 会話） A「社長は 今週 会社に いらっしゃらないんですか。」 B「ええ、先週から アメリカへ 出張されて いますよ。」",
+    "kj": "（会社の同僚の会話）A「社長は今週会社にいらっしゃらないんですか。」\nB「ええ、先週からアメリカへ出張されていますよ。」",
     "tr": {
       "zh": "（公司同事之间的对话）A：社长这周不在公司吗？ B：对，从上周开始去美国出差了。",
       "en": "(Two coworkers) A: Isn't the president in this week? B: No, he's been away on a business trip to America since last week."
@@ -214,6 +223,7 @@
     "options": ["来られます", "来させます", "参ります", "お来に なります"],
     "answer": 0,
     "full": "A「部長は 明日 何時に 会社に 来られますか。」 B「10時ごろだと 思います。」",
+    "kj": "A「部長は明日何時に会社に来られますか。」\nB「10時ごろだと思います。」",
     "tr": {
       "zh": "A：部长明天几点来公司？ B：我想大概 10 点左右。",
       "en": "A: What time is the manager coming in tomorrow? B: Around ten, I think."
@@ -238,6 +248,7 @@
     "options": ["アメリカの", "大学で", "教え", "られる"],
     "order": [0, 1, 2, 3],
     "full": "山田先生は 来月から 一年間 アメリカの 大学で 教えられる そうです。",
+    "kj": "山田先生は来月から一年間アメリカの大学で教えられるそうです。",
     "tr": {
       "zh": "听说山田老师从下个月起要在美国的大学教一年书。",
       "en": "I hear Professor Yamada will be teaching at an American university for a year starting next month."

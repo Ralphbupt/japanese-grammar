@@ -15,6 +15,7 @@
     ],
     "answer": 0,
     "full": "天気予報に よると 明日は 雨ですが、雨が 降っても、サッカーの 試合は 中止に なりません。",
+    "kj": "天気予報によると明日は雨ですが、雨が降っても、サッカーの試合は中止になりません。",
     "tr": {
       "zh": "天气预报说明天有雨，但即使下雨，足球比赛也不会取消。",
       "en": "The forecast says rain tomorrow, but even if it rains, the football match won't be called off."
@@ -55,6 +56,7 @@
     ],
     "answer": 2,
     "full": "わたしは どんなに 忙しくても、毎朝 ご飯を 食べるように して います。",
+    "kj": "私はどんなに忙しくても、毎朝ご飯を食べるようにしています。",
     "tr": {
       "zh": "我无论多忙，每天早上都尽量吃早饭。",
       "en": "However busy I am, I make sure to eat breakfast every morning."
@@ -100,6 +102,7 @@
       2
     ],
     "full": "明日は 雨が 降っても、旅行に 行きます。",
+    "kj": "明日は雨が降っても、旅行に行きます。",
     "tr": {
       "zh": "明天即使下雨，也要去旅行。",
       "en": "Even if it rains tomorrow, I'm going on the trip."
@@ -131,6 +134,7 @@
     ],
     "answer": 1,
     "full": "パーティーは 7時からです。わたしは 友達に もう 少し 早く 来て ほしいです。",
+    "kj": "パーティーは7時からです。私は友達にもう少し早く来てほしいです。",
     "tr": {
       "zh": "派对7点开始。我希望朋友再早一点来。",
       "en": "The party starts at seven. I'd like my friends to come a bit earlier."
@@ -171,6 +175,7 @@
     ],
     "answer": 3,
     "full": "ここは 病院ですから、たばこを 吸わないで ほしいです。",
+    "kj": "ここは病院ですから、たばこを吸わないでほしいです。",
     "tr": {
       "zh": "这里是医院，希望你不要抽烟。",
       "en": "This is a hospital, so I'd like you not to smoke."
@@ -216,6 +221,7 @@
       1
     ],
     "full": "A「何か 手伝いましょうか。」 B「じゃあ、この 荷物を 二階まで 運んで ほしいんです。」",
+    "kj": "A「何か手伝いましょうか。」\nB「じゃあ、この荷物を二階まで運んでほしいんです。」",
     "tr": {
       "zh": "A：要我帮点什么吗？ B：那么，我想请你把这个行李搬到二楼。",
       "en": "A: Can I help with anything? B: Well, I'd like you to carry this bag up to the second floor."
@@ -247,6 +253,7 @@
     ],
     "answer": 0,
     "full": "最近 だんだん 寒く なって きましたね。",
+    "kj": "最近だんだん寒くなってきましたね。",
     "tr": {
       "zh": "最近渐渐变冷了呢。",
       "en": "It's been getting colder lately, hasn't it?"
@@ -287,6 +294,7 @@
     ],
     "answer": 2,
     "full": "これからも、日本に 住む 外国人は 増えて いくでしょう。",
+    "kj": "これからも、日本に住む外国人は増えていくでしょう。",
     "tr": {
       "zh": "今后住在日本的外国人也会继续增加吧。",
       "en": "The number of foreigners living in Japan will probably keep rising from now on."
@@ -332,6 +340,7 @@
       0
     ],
     "full": "3月に なって、だんだん 暖かく なって きましたね。",
+    "kj": "3月になって、だんだん暖かくなってきましたね。",
     "tr": {
       "zh": "到了3月，渐渐暖和起来了呢。",
       "en": "Now that it's March, it's been getting warmer."
@@ -361,8 +370,15 @@
       "ほしいで",
       "ほしかって"
     ],
+    "okj": [
+      "欲しくて",
+      "欲しがって",
+      null,
+      null
+    ],
     "answer": 1,
     "full": "妹は 友達が 持って いる 新しい スマホを ほしがって います。",
+    "kj": "妹は友達が持っている新しいスマホを欲しがっています。",
     "tr": {
       "zh": "妹妹很想要朋友拿着的那种新手机。",
       "en": "My little sister wants the new smartphone her friend has."
@@ -403,6 +419,7 @@
     ],
     "answer": 3,
     "full": "うちの 子どもは、いつも わたしの スマホを 使いたがります。",
+    "kj": "うちの子どもは、いつも私のスマホを使いたがります。",
     "tr": {
       "zh": "我家孩子总是想用我的手机。",
       "en": "My child always wants to use my phone."
@@ -448,6 +465,7 @@
       1
     ],
     "full": "息子は 大学を 出たら、外国で 働きたがって います。",
+    "kj": "息子は大学を出たら、外国で働きたがっています。",
     "tr": {
       "zh": "儿子大学毕业后想去国外工作。",
       "en": "My son wants to work abroad after he graduates."
@@ -479,6 +497,7 @@
     ],
     "answer": 2,
     "full": "（ケーキ屋で） 店員「新しい ケーキです。どうぞ、一つ 食べて みて ください。」",
+    "kj": "（ケーキ屋で）店員「新しいケーキです。どうぞ、一つ食べてみてください。」",
     "tr": {
       "zh": "（在蛋糕店）店员：这是新出的蛋糕。请尝一个看看。",
       "en": "(At a cake shop) Clerk: This is our new cake. Please try one."
@@ -519,6 +538,7 @@
     ],
     "answer": 0,
     "full": "わたしは まだ 納豆を 食べた ことが ありません。一度 食べて みたいです。",
+    "kj": "私はまだ納豆を食べたことがありません。一度食べてみたいです。",
     "tr": {
       "zh": "我还没吃过纳豆。想尝一次看看。",
       "en": "I've never had natto. I'd like to try it once."
@@ -564,6 +584,7 @@
       1
     ],
     "full": "すみません、この 服、着て みても いいですか。",
+    "kj": "すみません、この服、着てみてもいいですか。",
     "tr": {
       "zh": "不好意思，这件衣服可以试穿一下吗？",
       "en": "Excuse me, may I try this on?"

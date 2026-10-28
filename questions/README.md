@@ -25,6 +25,15 @@ Furigana follows the real test: none in vocabulary; N5/N4 grammar and reading ha
 
 Several files of the same kind (`moji-goi-kanji.json`, `dokkai-info.json` …) are fine; ids must be unique per level. Ranges used for N5: `n5-mg-1xx` kanji, `2xx` hyouki, `3xx` bunmyaku, `4xx` iikae; `n5-dk-1xx` bunshou, `2xx` short, `3xx` mid, `4xx` info.
 
+## Kanji after answering (N5/N4)
+
+N5/N4 write words above the level in kana, like the real test, so a learner can't see what the kanji is. Two optional fields are shown only after answering:
+
+- `kj`: the finished sentence written normally with kanji (the build adds furigana). For grammar it's `full` in kanji; for vocabulary, the stem with the right option filled in (`iikae`: the stem; `youhou`: none). Reading passages carry `kj` for the whole text, blanks filled.
+- `okj`: 4 entries in option order, each option's kanji spelling or `null` (already kanji, a grammar ending, or a word normally written in kana — ある, こと, ください, とても…).
+
+Standard newspaper spellings; words normally written in kana stay kana.
+
 ## Mock tests
 
 `questions/N{level}/mock-N/` holds one test: `moji-goi.json`, `bunpou.json` (grammar, same shape as a lesson file) and `dokkai.json`, with as many questions of each type as the real test:

@@ -5,6 +5,7 @@
     "difficulty": 1,
     "intro": "キムさんは 日本語の クラスで 「じこしょうかい」の さくぶんを 書きました。",
     "passage": "はじめまして。キム・ミンジュンです。かんこくの ソウルから 来ました。\n今、東京の 日本語学校で 日本語を [[1]]。毎朝 電車で 学校へ 行きます。\nわたしは 日本の 料理が 大好きです。[[2]]、まだ 作る ことが できません。来年は 日本人の 友だち [[3]] いっしょに 料理を 作りたいです。\nどうぞ よろしく [[4]]。",
+    "kj": "はじめまして。キム・ミンジュンです。韓国のソウルから来ました。\n今、東京の日本語学校で日本語を勉強しています。毎朝電車で学校へ行きます。\n私は日本の料理が大好きです。でも、まだ作ることができません。来年は日本人の友達と一緒に料理を作りたいです。\nどうぞよろしくお願いします。",
     "tr": {
       "zh": "初次见面。我叫金民俊，从韩国首尔来。现在在东京的日语学校学日语，每天早上坐电车去学校。我特别喜欢日本菜，但是还不会做。明年我想和日本朋友一起做菜。请多关照。",
       "en": "Nice to meet you. I'm Kim Min-jun, from Seoul in Korea. I'm now studying Japanese at a language school in Tokyo, and I take the train there every morning. I love Japanese food, but I can't cook it yet. Next year I'd like to cook with a Japanese friend. I look forward to getting to know you."
@@ -45,6 +46,7 @@
       },
       {
         "options": ["おねがいします", "ありがとう ございました", "しつれいします", "いただきます"],
+        "okj": ["お願いします", null, "失礼します", null],
         "answer": 0,
         "why": { "zh": "自我介绍的结尾固定说「どうぞ よろしく おねがいします」。", "en": "A self-introduction ends with the set phrase 「どうぞ よろしく おねがいします」." },
         "wrong": [
@@ -62,6 +64,7 @@
     "difficulty": 2,
     "intro": "ジョンさんは 「わたしの 週末」の さくぶんを 書きました。",
     "passage": "先週の 土曜日、わたしは 友だちと 山へ 行きました。朝 七時に 駅で 会って、電車に 乗りました。山の 上は 天気が [[1]]、町が よく 見えました。\n山の 上で おべんとうを 食べました。それから、少し [[2]] から、山を 下りました。\n日曜日は 朝から 夜まで 雨でした。[[3]]、どこへも 行かないで、うちで 本を [[4]]。",
+    "kj": "先週の土曜日、私は友達と山へ行きました。朝七時に駅で会って、電車に乗りました。山の上は天気がよくて、町がよく見えました。\n山の上でお弁当を食べました。それから、少し休んでから、山を下りました。\n日曜日は朝から夜まで雨でした。だから、どこへも行かないで、うちで本を読みました。",
     "tr": {
       "zh": "上个星期六，我和朋友去爬山。早上七点在车站见面，然后坐上了电车。山顶天气很好，能清楚地看到城镇。我们在山顶吃了便当，然后稍微休息了一下就下山了。星期天从早到晚都在下雨，所以我哪儿也没去，在家看了书。",
       "en": "Last Saturday I went to the mountains with a friend. We met at the station at seven in the morning and got on the train. The weather at the top was good, and we could see the town clearly. We ate our packed lunches at the top, then rested a little before coming down. On Sunday it rained from morning till night, so I didn't go anywhere and read a book at home."
@@ -69,6 +72,7 @@
     "questions": [
       {
         "options": ["よくて", "わるくて", "いいくて", "よくないで"],
+        "okj": [null, "悪くて", null, null],
         "answer": 0,
         "why": { "zh": "后面“能清楚看到城镇”，说明天气好；「いい」的て形是「よくて」。", "en": "They could see the town clearly, so the weather was good; the て-form of 「いい」 is 「よくて」." },
         "wrong": [
@@ -119,6 +123,7 @@
     "difficulty": 2,
     "intro": "アンナさんは 「わたしの 町」の さくぶんを 書きました。",
     "passage": "わたしは 今、みどり町に 住んで います。みどり町は 東京から 電車で 一時間 [[1]] です。\n駅の 前に 大きい スーパーが あります。スーパーの となりには 古い 本屋が [[2]]。わたしは よく そこで 本を 買います。\n町には 大きい 公園も あります。春は 花が きれいで、人も 少なくて、しずかです。[[3]]、夏は 人が 多くて、うるさいです。\nでも、わたしは この 町が [[4]] 好きです。",
+    "kj": "私は今、みどり町に住んでいます。みどり町は東京から電車で一時間ぐらいです。\n駅の前に大きいスーパーがあります。スーパーの隣には古い本屋があります。私はよくそこで本を買います。\n町には大きい公園もあります。春は花がきれいで、人も少なくて、静かです。でも、夏は人が多くて、うるさいです。\nでも、私はこの町がとても好きです。",
     "tr": {
       "zh": "我现在住在绿町。绿町离东京坐电车大约一个小时。车站前有一家大超市，超市旁边有一家旧书店，我常在那儿买书。镇上还有一个大公园。春天花很漂亮，人也少，很安静。但是夏天人多，很吵。不过，我非常喜欢这个小镇。",
       "en": "I now live in Midori-machi. It's about an hour from Tokyo by train. In front of the station there's a big supermarket, and next to it there's an old bookshop where I often buy books. The town also has a big park. In spring the flowers are lovely, there are few people and it's quiet. But in summer it's crowded and noisy. Still, I like this town very much."
@@ -159,6 +164,7 @@
       },
       {
         "options": ["とても", "あまり", "ぜんぜん", "すこしも"],
+        "okj": [null, null, "全然", "少しも"],
         "answer": 0,
         "why": { "zh": "后面是肯定的「好きです」，只有「とても」能接肯定。", "en": "The verb is affirmative 「好きです」; only 「とても」 works with an affirmative." },
         "wrong": [
@@ -176,6 +182,7 @@
     "difficulty": 3,
     "intro": "リーさんは 「わたしの 家族」の さくぶんを 書きました。",
     "passage": "わたしの 家族は 四人です。父と 母と 兄と わたしです。\n父は 銀行で [[1]]。毎日 おそくまで 仕事を します。母は 料理が とても 上手です。\n兄は 今 アメリカの 大学に 行って います。だから、今 うちに [[2]]。\nわたしは 去年 日本へ 来ました。家族に 会いたいですが、ひこうきが 高いので、まだ 国へ [[3]]。\n夏休みには 国へ 帰る [[4]] です。",
+    "kj": "私の家族は四人です。父と母と兄と私です。\n父は銀行で働いています。毎日遅くまで仕事をします。母は料理がとても上手です。\n兄は今アメリカの大学に行っています。だから、今うちにいません。\n私は去年日本へ来ました。家族に会いたいですが、飛行機が高いので、まだ国へ帰っていません。\n夏休みには国へ帰るつもりです。",
     "tr": {
       "zh": "我家有四口人：爸爸、妈妈、哥哥和我。爸爸在银行工作，每天工作到很晚。妈妈做菜很拿手。哥哥现在在美国上大学，所以现在不在家。我去年来到日本。我想见家人，但机票很贵，所以还没回过国。暑假我打算回国。",
       "en": "There are four people in my family: my father, my mother, my older brother and me. My father works at a bank; he works late every day. My mother is a very good cook. My brother is at university in America now, so he isn't at home. I came to Japan last year. I want to see my family, but plane tickets are expensive, so I haven't gone back yet. I'm planning to go home in the summer holidays."
@@ -183,6 +190,7 @@
     "questions": [
       {
         "options": ["はたらいて います", "はたらきました", "はたらいて いました", "はたらきたいです"],
+        "okj": ["働いています", "働きました", "働いていました", "働きたいです"],
         "answer": 0,
         "why": { "zh": "说现在的职业用「〜て います」；后面「毎日 おそくまで 仕事を します」也是现在的事。", "en": "Someone's current job is stated with 「〜て います」, and the next sentence (he works late every day) is present." },
         "wrong": [
@@ -216,6 +224,7 @@
       },
       {
         "options": ["つもり", "こと", "とき", "まえ"],
+        "okj": [null, null, null, "前"],
         "answer": 0,
         "why": { "zh": "说自己的打算用「动词原形＋つもりです」。", "en": "A plan of one's own is 「dictionary form ＋ つもりです」." },
         "wrong": [
@@ -233,6 +242,7 @@
     "difficulty": 2,
     "intro": "マイクさんは 「りょこう」の さくぶんを 書きました。",
     "passage": "先月、わたしは 友だちと 京都へ 行きました。東京から 新幹線で 行きました。\n京都には 古い お寺が たくさん あります。わたしたちは お寺を 見たり、おいしい 物を [[1]] しました。\n二日目は 朝から 雨でした。[[2]]、わたしたちは お寺へ 行きました。雨の お寺も とても きれいでした。\n京都は とても いい ところでした。今度は 母 [[3]] 二人で 来たいです。",
+    "kj": "先月、私は友達と京都へ行きました。東京から新幹線で行きました。\n京都には古いお寺がたくさんあります。私たちはお寺を見たり、おいしい物を食べたりしました。\n二日目は朝から雨でした。でも、私たちはお寺へ行きました。雨のお寺もとてもきれいでした。\n京都はとてもいいところでした。今度は母と二人で来たいです。",
     "tr": {
       "zh": "上个月，我和朋友去了京都。从东京坐新干线去的。京都有很多古老的寺庙。我们参观寺庙、吃好吃的东西。第二天从早上就下雨，但我们还是去了寺庙。雨中的寺庙也非常漂亮。京都是个很好的地方。下次我想和妈妈两个人一起来。",
       "en": "Last month I went to Kyoto with a friend, by shinkansen from Tokyo. Kyoto has lots of old temples. We visited temples, ate good food and so on. On the second day it rained from the morning, but we went to the temples anyway. The temples in the rain were very beautiful too. Kyoto was a great place. Next time I'd like to come with my mother, just the two of us."
@@ -279,6 +289,7 @@
     "difficulty": 3,
     "intro": "サラさんは 「わたしの しゅみ」の さくぶんを 書きました。",
     "passage": "わたしの しゅみは しゃしんを とる [[1]] です。休みの 日は いつも カメラを 持って 出かけます。\nきのうは 海へ 行きました。海で [[2]] いる 子どもたちの しゃしんを たくさん とりました。\nわたしは まだ 山の しゃしんを とった ことが [[3]]。だから、来月 友だちと 富士山へ しゃしんを [[4]] 行きます。とても たのしみです。",
+    "kj": "私の趣味は写真を撮ることです。休みの日はいつもカメラを持って出かけます。\n昨日は海へ行きました。海で泳いでいる子どもたちの写真をたくさん撮りました。\n私はまだ山の写真を撮ったことがありません。だから、来月友達と富士山へ写真を撮りに行きます。とても楽しみです。",
     "tr": {
       "zh": "我的爱好是拍照。休息日我总是带着相机出门。昨天我去了海边，拍了很多在海里游泳的孩子。我还从来没拍过山，所以下个月要和朋友去富士山拍照。我非常期待。",
       "en": "My hobby is taking photos. On my days off I always go out with my camera. Yesterday I went to the sea and took lots of photos of children swimming. I've never taken photos of mountains, so next month I'm going to Mt. Fuji with a friend to take some. I'm really looking forward to it."
@@ -297,6 +308,7 @@
       },
       {
         "options": ["およいで", "およぎ", "およぐ", "およいだ"],
+        "okj": ["泳いで", "泳ぎ", "泳ぐ", "泳いだ"],
         "answer": 0,
         "why": { "zh": "后面是「いる」，表示正在进行要用て形：「およいで いる」。", "en": "「いる」 follows, so the ongoing 「て-form ＋ いる」: 「およいで いる」." },
         "wrong": [
@@ -319,6 +331,7 @@
       },
       {
         "options": ["とりに", "とるに", "とりへ", "とったに"],
+        "okj": ["撮りに", "撮るに", "撮りへ", "撮ったに"],
         "answer": 0,
         "why": { "zh": "“去做某事”是「ます形词干＋に 行く」：「とり（ます）＋に」。", "en": "\"Go to do something\" is 「ます-stem ＋ に 行く」: 「とりに 行きます」." },
         "wrong": [

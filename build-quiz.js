@@ -136,7 +136,22 @@ const WEEKDAYS = /^[月火水木金土日](\s*[・〜～、]\s*[月火水木金�
 // list, RUBY_FIXES in build.js). Each: [regex on the furigana'd HTML, replacement].
 const R = (k, r) => `<ruby>${k}<rp>(</rp><rt>${r}</rt><rp>)</rp></ruby>`;
 const RX = (k, r) => R(k, r).replace(/[()]/g, "\\$&");
+// Kanji numerals + 日 read as dates / day counts: kuromoji gives 八(はち)日(にち),
+// 二十(にじゅう)日(にち). 一日 is left alone (ついたち or いちにち).
+const DAY_KANJI = { 二: "ふつか", 三: "みっか", 四: "よっか", 五: "いつか", 六: "むいか", 七: "なのか", 八: "ようか", 九: "ここのか", 十: "とおか", 十四: "じゅうよっか", 二十: "はつか", 二十四: "にじゅうよっか" };
+const NUM_RUBY = /((?:<ruby>[一二三四五六七八九十]+<rp>\(<\/rp><rt>[^<]*<\/rt><rp>\)<\/rp><\/ruby>)+)<ruby>日<rp>\(<\/rp><rt>にち<\/rt><rp>\)<\/rp><\/ruby>/g;
+const fixDays = (html) => html.replace(NUM_RUBY, (m, nums) => {
+  const k = nums.replace(/<rp>[^<]*<\/rp>|<rt>[^<]*<\/rt>|<\/?ruby>/g, "");
+  return DAY_KANJI[k] ? R(k + "日", DAY_KANJI[k]) : m;
+});
 const QUIZ_RUBY_FIXES = [
+  [new RegExp(RX("管理人", "かんりじん") + "|" + RX("管理", "かんり") + RX("人", "じん"), "g"), R("管理人", "かんりにん")],
+  [new RegExp(RX("土", "ど") + "(?=[にをがのは])", "g"), R("土", "つち")],
+  // A weekday in brackets or a range: （月）, 月〜金.
+  [new RegExp("(?<=[（(])" + RX("月", "つき") + "(?=[）)])|" + RX("月", "つき") + "(?=[〜～・])", "g"), R("月", "げつ")],
+  // 角を曲がる is かど; 先々週 is せんせんしゅう.
+  [new RegExp(RX("角", "かく") + "(?=を)", "g"), R("角", "かど")],
+  [new RegExp(RX("先々", "さきざき") + RX("週", "しゅう"), "g"), R("先々週", "せんせんしゅう")],
   [new RegExp(RX("富士山", "ふじやま"), "g"), R("富士山", "ふじさん")],
   [new RegExp(RX("日本人", "にっぽんじん"), "g"), R("日本人", "にほんじん")],
   [new RegExp(RX("市場", "しじょう"), "g"), R("市場", "いちば")],
@@ -270,6 +285,8 @@ function validate(level, { qs, passages }, points, mock) {
     if (![1, 2, 3].includes(q.difficulty)) err("difficulty must be 1, 2 or 3");
     if (!isBi(q.why)) err("why needs zh and en");
     if (!Array.isArray(q.wrong) || q.wrong.length !== 4) err("wrong needs 4 entries (null for the right option)");
+    if ("okj" in q && (!Array.isArray(q.okj) || q.okj.length !== 4)) err("okj needs 4 entries (null where the option has no kanji form)");
+    if ("kj" in q && (typeof q.kj !== "string" || !/[一-龯]/.test(q.kj))) err("kj must be the sentence written with kanji");
     const refs = q.refs || [];
     if (q._kind === "lesson" && !refs.length) err("needs at least one ref");
     for (const r of refs) {
@@ -316,6 +333,7 @@ function shuffled(q) {
     ...q,
     options: p.map((o) => q.options[o]),
     wrong: Array.isArray(q.wrong) && q.wrong.length === 4 ? p.map((o) => q.wrong[o]) : q.wrong,
+    ...(Array.isArray(q.okj) ? { okj: p.map((o) => q.okj[o]) } : {}),
     ...(q.type === "narabe" ? { order: q.order.map(at) } : { answer: at(q.answer) }),
   };
 }
@@ -352,6 +370,7 @@ async function bundleLevel(level, ruby, mock) {
       else html += withRuby ? await ruby(part) : esc(part);
     }
     for (const [re, to] of QUIZ_RUBY_FIXES) html = html.replace(re, to);
+    html = fixDays(html);
     return html;
   };
   const refsUsed = {}, lessons = {};
@@ -386,6 +405,10 @@ async function bundleLevel(level, ruby, mock) {
       answer: answerOf(q),
       ...(q.type === "narabe" ? { order: q.order } : {}),
       ...(full ? { full } : {}),
+      // N5/N4 write words above the level in kana, like the real test; after
+      // answering, the sentence in kanji (with furigana) and each option's kanji.
+      ...(q.kj ? { kj: await render(q.kj, true) } : {}),
+      ...(q.okj && q.okj.some(Boolean) ? { okj: q.okj } : {}),
       ...(q.tr ? { tr: q.tr } : {}),
       why: q.why, wrong: q.wrong,
       rev: q.rev || 1,
@@ -394,7 +417,7 @@ async function bundleLevel(level, ruby, mock) {
   const passages = {};
   for (const p of data.passages) {
     const pr = RUBY_LEVELS.has(level);
-    passages[p.id] = { type: p.type, ...(p.intro ? { intro: await render(p.intro, pr) } : {}), html: await render(p.passage, pr), tr: p.tr };
+    passages[p.id] = { type: p.type, ...(p.intro ? { intro: await render(p.intro, pr) } : {}), html: await render(p.passage, pr), tr: p.tr, ...(p.kj ? { kj: await render(p.kj, true) } : {}) };
   }
   const used = new Set(out.map((q) => q.type));
   const types = {};
@@ -408,13 +431,13 @@ async function bundleLevel(level, ruby, mock) {
 async function bundleMock(level, ruby, n) {
   const b = await bundleLevel(level, ruby, n);
   const cfg = MOCK[level];
-  const SECRET = ["answer", "order", "why", "wrong", "full", "tr"];
+  const SECRET = ["answer", "order", "why", "wrong", "full", "tr", "kj", "okj"];
   const key = { questions: {}, passages: {} };
   const qs = b.questions.map((q) => {
     key.questions[q.id] = Object.fromEntries(SECRET.filter((k) => k in q).map((k) => [k, q[k]]));
     return Object.fromEntries(Object.entries(q).filter(([k]) => !SECRET.includes(k)));
   });
-  for (const [id, p] of Object.entries(b.passages)) { key.passages[id] = { tr: p.tr }; delete p.tr; }
+  for (const [id, p] of Object.entries(b.passages)) { key.passages[id] = { tr: p.tr, ...(p.kj ? { kj: p.kj } : {}) }; delete p.tr; delete p.kj; }
   const sections = cfg.sections.map((s) => ({
     ...s,
     problems: s.types.map((t, i) => ({ no: i + 1, type: t, ids: qs.filter((q) => q.type === t).map((q) => q.id) })).filter((p) => p.ids.length),

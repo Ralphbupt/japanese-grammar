@@ -15,6 +15,7 @@
     ],
     "answer": 0,
     "full": "A「きのうの 夜、何か 食べましたか。」 B「いいえ、何も 食べませんでした。」",
+    "kj": "A「昨日の夜、何か食べましたか。」\nB「いいえ、何も食べませんでした。」",
     "tr": {
       "zh": "A：昨天晚上吃了点什么吗？ B：没有，什么都没吃。",
       "en": "A: Did you eat anything last night? B: No, I didn't eat anything."
@@ -55,6 +56,7 @@
     ],
     "answer": 0,
     "full": "この パーティーは お金が いりません。子供も 大人も だれでも 参加できます。",
+    "kj": "このパーティーはお金が要りません。子供も大人もだれでも参加できます。",
     "tr": {
       "zh": "这个派对不用花钱。孩子大人，谁都可以参加。",
       "en": "This party is free. Kids or adults — anyone can join."
@@ -95,6 +97,7 @@
     ],
     "answer": 0,
     "full": "A「週末、どこかへ 行きましたか。」 B「いいえ、雨だったので、どこにも 行きませんでした。」",
+    "kj": "A「週末、どこかへ行きましたか。」\nB「いいえ、雨だったので、どこにも行きませんでした。」",
     "tr": {
       "zh": "A：周末去哪儿了吗？ B：没有，因为下雨，哪儿都没去。",
       "en": "A: Did you go anywhere on the weekend? B: No, it rained, so I didn't go anywhere."
@@ -140,6 +143,7 @@
       2
     ],
     "full": "冷蔵庫の 中を 見ましたが、何も ありませんでした。",
+    "kj": "冷蔵庫の中を見ましたが、何もありませんでした。",
     "tr": {
       "zh": "看了冰箱里面，什么都没有。",
       "en": "I looked in the fridge, but there was nothing."
@@ -171,6 +175,7 @@
     ],
     "answer": 0,
     "full": "この かばんは 高すぎます。もう 少し 安いのは ありますか。",
+    "kj": "このかばんは高すぎます。もう少し安いのはありますか。",
     "tr": {
       "zh": "这个包太贵了。有再便宜一点的吗？",
       "en": "This bag is too expensive. Do you have a slightly cheaper one?"
@@ -211,6 +216,7 @@
     ],
     "answer": 0,
     "full": "きのう お酒を 飲みすぎて、今日は 頭が 痛いです。",
+    "kj": "昨日お酒を飲みすぎて、今日は頭が痛いです。",
     "tr": {
       "zh": "昨天酒喝多了，今天头疼。",
       "en": "I drank too much yesterday, so I have a headache today."
@@ -256,6 +262,7 @@
       1
     ],
     "full": "パーティーで ケーキを 食べすぎたので、おなかが 痛いです。",
+    "kj": "パーティーでケーキを食べすぎたので、お腹が痛いです。",
     "tr": {
       "zh": "在派对上蛋糕吃太多了，肚子疼。",
       "en": "I ate too much cake at the party, so my stomach hurts."
@@ -287,6 +294,7 @@
     ],
     "answer": 0,
     "full": "この 本は 字が 小さくて、読みにくいです。",
+    "kj": "この本は字が小さくて、読みにくいです。",
     "tr": {
       "zh": "这本书字很小，很难读。",
       "en": "The print in this book is small, so it's hard to read."
@@ -327,6 +335,7 @@
     ],
     "answer": 0,
     "full": "この くつは 軽くて 歩きやすいです。",
+    "kj": "この靴は軽くて歩きやすいです。",
     "tr": {
       "zh": "这双鞋很轻，很好走路。",
       "en": "These shoes are light and easy to walk in."
@@ -365,6 +374,12 @@
       "気をつけて",
       "こわれ"
     ],
+    "okj": [
+      null,
+      null,
+      "気を付けて",
+      "壊れ"
+    ],
     "order": [
       3,
       1,
@@ -372,6 +387,7 @@
       2
     ],
     "full": "この コップは こわれやすいので 気をつけて ください。",
+    "kj": "このコップは壊れやすいので気を付けてください。",
     "tr": {
       "zh": "这个杯子容易碎，请小心。",
       "en": "This glass breaks easily, so please be careful."
@@ -403,6 +419,7 @@
     ],
     "answer": 0,
     "full": "わたしは いつも 音楽を 聞きながら、勉強します。",
+    "kj": "私はいつも音楽を聞きながら、勉強します。",
     "tr": {
       "zh": "我总是一边听音乐一边学习。",
       "en": "I always study while listening to music."
@@ -443,6 +460,7 @@
     ],
     "answer": 0,
     "full": "テレビを 見ながら、ご飯を 食べます。",
+    "kj": "テレビを見ながら、ご飯を食べます。",
     "tr": {
       "zh": "一边看电视一边吃饭。",
       "en": "I eat while watching TV."
@@ -488,6 +506,7 @@
       0
     ],
     "full": "父は 毎朝 コーヒーを 飲みながら 新聞を 読みます。",
+    "kj": "父は毎朝コーヒーを飲みながら新聞を読みます。",
     "tr": {
       "zh": "爸爸每天早上一边喝咖啡一边看报纸。",
       "en": "Every morning my father reads the paper while drinking coffee."
@@ -519,6 +538,7 @@
     ],
     "answer": 0,
     "full": "すみません、この 漢字の 読み方を 教えて ください。",
+    "kj": "すみません、この漢字の読み方を教えてください。",
     "tr": {
       "zh": "不好意思，请告诉我这个汉字的读法。",
       "en": "Excuse me, please tell me how to read this kanji."
@@ -559,6 +579,7 @@
     ],
     "answer": 0,
     "full": "A「すみません、駅への 行き方を 教えて ください。」 B「この 道を まっすぐ 行って ください。」",
+    "kj": "A「すみません、駅への行き方を教えてください。」\nB「この道をまっすぐ行ってください。」",
     "tr": {
       "zh": "A：不好意思，请告诉我去车站怎么走。 B：沿着这条路一直走。",
       "en": "A: Excuse me, could you tell me how to get to the station? B: Go straight along this road."
@@ -604,6 +625,7 @@
       2
     ],
     "full": "すみません、この 機械の 使い方を もう一度 教えて ください。",
+    "kj": "すみません、この機械の使い方をもう一度教えてください。",
     "tr": {
       "zh": "不好意思，请再教我一次这台机器的用法。",
       "en": "Excuse me, could you show me how to use this machine once more?"

@@ -15,6 +15,7 @@
     ],
     "answer": 0,
     "full": "あの 公園には きれいな 花が たくさん あります。",
+    "kj": "あの公園にはきれいな花がたくさんあります。",
     "tr": {
       "zh": "那个公园里有很多漂亮的花。",
       "en": "There are lots of beautiful flowers in that park."
@@ -55,6 +56,7 @@
     ],
     "answer": 0,
     "full": "A「田中さんは どこですか。」 B「となりの 部屋に いますよ。」",
+    "kj": "A「田中さんはどこですか。」\nB「隣の部屋にいますよ。」",
     "tr": {
       "zh": "A：田中在哪儿？ B：在隔壁房间哦。",
       "en": "A: Where's Tanaka? B: In the next room."
@@ -100,6 +102,7 @@
       2
     ],
     "full": "池の 中に 赤い 魚が いますよ。",
+    "kj": "池の中に赤い魚がいますよ。",
     "tr": {
       "zh": "池塘里有红色的鱼哦。",
       "en": "There are red fish in the pond."
@@ -131,6 +134,7 @@
     ],
     "answer": 0,
     "full": "あした 図書館へ 本を 借りに 行きます。",
+    "kj": "明日図書館へ本を借りに行きます。",
     "tr": {
       "zh": "明天去图书馆借书。",
       "en": "Tomorrow I'll go to the library to borrow books."
@@ -171,6 +175,7 @@
     ],
     "answer": 0,
     "full": "日曜日、友だちと 映画を 見に 行きました。",
+    "kj": "日曜日、友達と映画を見に行きました。",
     "tr": {
       "zh": "星期天和朋友去看电影了。",
       "en": "On Sunday I went to see a movie with a friend."
@@ -216,6 +221,7 @@
       0
     ],
     "full": "さいふを 忘れたので、家へ 取りに 帰りました。",
+    "kj": "財布を忘れたので、家へ取りに帰りました。",
     "tr": {
       "zh": "因为忘了钱包，回家去拿了。",
       "en": "I forgot my wallet, so I went home to get it."
@@ -247,6 +253,7 @@
     ],
     "answer": 0,
     "full": "わたしは 本を 読むのが 好きです。",
+    "kj": "私は本を読むのが好きです。",
     "tr": {
       "zh": "我喜欢读书。",
       "en": "I like reading books."
@@ -285,8 +292,15 @@
       "苦手",
       "ほしい"
     ],
+    "okj": [
+      null,
+      null,
+      null,
+      "欲しい"
+    ],
     "answer": 0,
     "full": "田中さんは 料理を 作るのが 上手です。田中さんの 料理は いつも おいしいです。",
+    "kj": "田中さんは料理を作るのが上手です。田中さんの料理はいつもおいしいです。",
     "tr": {
       "zh": "田中做菜做得很好。田中做的菜总是很好吃。",
       "en": "Tanaka is good at cooking. Tanaka's food is always delicious."
@@ -325,6 +339,12 @@
       "下手です",
       "かく"
     ],
+    "okj": [
+      null,
+      null,
+      null,
+      "描く"
+    ],
     "order": [
       1,
       3,
@@ -332,6 +352,7 @@
       2
     ],
     "full": "弟は 絵を かくのが 下手です。",
+    "kj": "弟は絵を描くのが下手です。",
     "tr": {
       "zh": "弟弟画画画得不好。",
       "en": "My younger brother is bad at drawing."
@@ -363,6 +384,7 @@
     ],
     "answer": 0,
     "full": "毎日 2時間ぐらい 日本語を 勉強して います。",
+    "kj": "毎日2時間ぐらい日本語を勉強しています。",
     "tr": {
       "zh": "每天学大约两个小时日语。",
       "en": "I study Japanese for about two hours every day."
@@ -403,6 +425,7 @@
     ],
     "answer": 0,
     "full": "東京から 大阪まで 新幹線で 3時間ぐらい かかります。",
+    "kj": "東京から大阪まで新幹線で3時間ぐらいかかります。",
     "tr": {
       "zh": "从东京到大阪坐新干线大约要三个小时。",
       "en": "It takes about three hours from Tokyo to Osaka by shinkansen."
@@ -448,6 +471,7 @@
       0
     ],
     "full": "駅まで 歩いて 10分ぐらい かかります。",
+    "kj": "駅まで歩いて10分ぐらいかかります。",
     "tr": {
       "zh": "走到车站大约要十分钟。",
       "en": "It takes about ten minutes to walk to the station."
@@ -479,6 +503,7 @@
     ],
     "answer": 0,
     "full": "東京や 京都など、日本の いろいろな 町へ 行きたいです。",
+    "kj": "東京や京都など、日本のいろいろな町へ行きたいです。",
     "tr": {
       "zh": "想去东京、京都等日本的各种城市。",
       "en": "I want to go to various cities in Japan, like Tokyo and Kyoto."
@@ -519,6 +544,7 @@
     ],
     "answer": 0,
     "full": "かばんの 中には 本と ペンが あります。ほかの ものは ありません。",
+    "kj": "かばんの中には本とペンがあります。ほかのものはありません。",
     "tr": {
       "zh": "包里有书和笔。没有别的东西。",
       "en": "In the bag there's a book and a pen. Nothing else."
@@ -564,6 +590,7 @@
       1
     ],
     "full": "机の 上に 本や ノートなどが あります。",
+    "kj": "机の上に本やノートなどがあります。",
     "tr": {
       "zh": "桌子上有书、笔记本等。",
       "en": "On the desk there are books, notebooks and so on."
@@ -595,6 +622,7 @@
     ],
     "answer": 0,
     "full": "A「たくさん 食べましたか。」 B「いいえ、少しだけ 食べました。」",
+    "kj": "A「たくさん食べましたか。」\nB「いいえ、少しだけ食べました。」",
     "tr": {
       "zh": "A：吃了很多吗？ B：没有，只吃了一点。",
       "en": "A: Did you eat a lot? B: No, I only ate a little."
@@ -635,6 +663,7 @@
     ],
     "answer": 0,
     "full": "どうしよう。さいふの 中に 100円しか ありません。",
+    "kj": "どうしよう。財布の中に100円しかありません。",
     "tr": {
       "zh": "怎么办，钱包里只有100日元。",
       "en": "What do I do? I only have 100 yen in my wallet."
@@ -680,6 +709,7 @@
       0
     ],
     "full": "アルバイトは 週末だけ して います。",
+    "kj": "アルバイトは週末だけしています。",
     "tr": {
       "zh": "打工只在周末做。",
       "en": "I only do my part-time job on weekends."

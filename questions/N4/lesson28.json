@@ -8,6 +8,7 @@
     "options": ["申します", "おっしゃいます", "言われます", "申し上げます"],
     "answer": 0,
     "full": "はじめまして。ABC会社の 田中と 申します。どうぞ よろしく お願いいたします。",
+    "kj": "はじめまして。ABC会社の田中と申します。どうぞよろしくお願いいたします。",
     "tr": {
       "zh": "初次见面。我是 ABC 公司的田中。请多关照。",
       "en": "How do you do? My name is Tanaka, from ABC Company. It's a pleasure to meet you."
@@ -32,6 +33,7 @@
     "options": ["拝見しました", "ご覧に なりました", "お見しました", "拝見されました"],
     "answer": 0,
     "full": "学生「先生の 新しい 本を 拝見しました。とても 勉強に なりました。」",
+    "kj": "学生「先生の新しい本を拝見しました。とても勉強になりました。」",
     "tr": {
       "zh": "学生：我拜读了老师的新书，受益匪浅。",
       "en": "Student: I read your new book, Professor. I learned a great deal from it."
@@ -56,6 +58,7 @@
     "options": ["先生の", "お宅に", "伺って", "も"],
     "order": [0, 1, 2, 3],
     "full": "来週の 月曜日、先生の お宅に 伺っても よろしいでしょうか。",
+    "kj": "来週の月曜日、先生のお宅に伺ってもよろしいでしょうか。",
     "tr": {
       "zh": "下周一我可以去老师府上拜访吗？",
       "en": "Would it be all right if I visited your home next Monday, Professor?"
@@ -75,6 +78,7 @@
     "options": ["お持ちします", "お持ちに なります", "お持ちください", "持たれます"],
     "answer": 0,
     "full": "店員「お客様、重そうですね。その 荷物、私が お持ちします。」",
+    "kj": "店員「お客様、重そうですね。その荷物、私がお持ちします。」",
     "tr": {
       "zh": "店员：客人，看起来很重呢。行李我来帮您拿。",
       "en": "Clerk: That looks heavy. Let me carry that for you."
@@ -99,6 +103,7 @@
     "options": ["ご案内します", "お案内します", "ご案内に なります", "案内されます"],
     "answer": 0,
     "full": "それでは、会議室まで 私が ご案内します。どうぞ こちらへ。",
+    "kj": "それでは、会議室まで私がご案内します。どうぞこちらへ。",
     "tr": {
       "zh": "那么，我带您去会议室。请这边走。",
       "en": "Well then, I'll show you to the meeting room. This way, please."
@@ -123,6 +128,7 @@
     "options": ["ロビーで", "お待ち", "して", "おります"],
     "order": [0, 1, 2, 3],
     "full": "では、明日の 10時に ロビーで お待ち して おります。",
+    "kj": "では、明日の10時にロビーでお待ちしております。",
     "tr": {
       "zh": "那么，明天 10 点我在大堂等您。",
       "en": "Then I'll be waiting for you in the lobby at ten tomorrow."
@@ -142,6 +148,7 @@
     "options": ["させて いただきます", "して いただきます", "させて くださいます", "されます"],
     "answer": 0,
     "full": "（店の はり紙） 本日は 都合により、午後 6時で 閉店させて いただきます。",
+    "kj": "（店の貼り紙）本日は都合により、午後6時で閉店させていただきます。",
     "tr": {
       "zh": "（店里的告示）因故，本店今日下午 6 点关门。",
       "en": "(Notice in a shop) Due to circumstances, we will be closing at 6 p.m. today."
@@ -166,6 +173,7 @@
     "options": ["せて いただいて", "て いただいて", "れて いただいて", "させて いただいて"],
     "answer": 0,
     "full": "すみません、この お店の 写真を 撮らせて いただいても よろしいですか。",
+    "kj": "すみません、このお店の写真を撮らせていただいてもよろしいですか。",
     "tr": {
       "zh": "不好意思，可以让我拍一下这家店的照片吗？",
       "en": "Excuse me, would it be all right if I took a photo of the shop?"
@@ -190,6 +198,7 @@
     "options": ["私から", "説明", "させて", "いただきます"],
     "order": [0, 1, 2, 3],
     "full": "それでは、新しい 計画に ついて、私から 説明 させて いただきます。",
+    "kj": "それでは、新しい計画について、私から説明させていただきます。",
     "tr": {
       "zh": "那么，关于新计划，由我来为大家说明。",
       "en": "Now, allow me to explain the new plan."
@@ -209,6 +218,7 @@
     "options": ["おります", "いらっしゃいます", "ございます", "参ります"],
     "answer": 0,
     "full": "（ABC会社の 受付で） お客様「田中部長は いらっしゃいますか。」 受付「はい、ただ今 席に おりますので、少々 お待ちください。」",
+    "kj": "（ABC会社の受付で）お客様「田中部長はいらっしゃいますか。」\n受付「はい、ただ今席におりますので、少々お待ちください。」",
     "tr": {
       "zh": "（在 ABC 公司前台）客人：田中部长在吗？ 前台：在的，他现在在座位上，请稍等。",
       "en": "(At ABC Company's reception) Visitor: Is Mr. Tanaka, the manager, in? Receptionist: Yes, he's at his desk now. One moment, please."
@@ -233,6 +243,7 @@
     "options": ["お使いください", "お使いして ください", "お使いいたして ください", "使わせて いただいて ください"],
     "answer": 0,
     "full": "お客様「この ペン、使っても いいですか。」 店員「はい、どうぞ お使いください。」",
+    "kj": "お客様「このペン、使ってもいいですか。」\n店員「はい、どうぞお使いください。」",
     "tr": {
       "zh": "客人：这支笔可以用吗？ 店员：可以，请用。",
       "en": "Customer: May I use this pen? Clerk: Of course, please go ahead."
@@ -257,6 +268,7 @@
     "options": ["奥様が", "作って", "くださった", "料理を"],
     "order": [0, 1, 2, 3],
     "full": "先週 先生の お宅で、奥様が 作って くださった 料理を いただきました。",
+    "kj": "先週先生のお宅で、奥様が作ってくださった料理をいただきました。",
     "tr": {
       "zh": "上周在老师家，吃了师母为我们做的菜。",
       "en": "Last week at my professor's home, I had a meal his wife made for us."

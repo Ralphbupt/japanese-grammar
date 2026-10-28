@@ -8,6 +8,7 @@
     "options": ["です", "ではありません", "ではありませんでした", "じゃなかった"],
     "answer": 1,
     "full": "A「田中さんは 学生ですか。」 B「いいえ、学生ではありません。会社員です。」",
+    "kj": "A「田中さんは学生ですか。」\nB「いいえ、学生ではありません。会社員です。」",
     "tr": {
       "zh": "A：田中是学生吗？ B：不，不是学生。是公司职员。",
       "en": "A: Is Tanaka a student? B: No, he isn't a student. He's an office worker."
@@ -41,6 +42,7 @@
     "options": ["ではありません", "です", "でした", "ではありませんでした"],
     "answer": 2,
     "full": "昨日は 日曜日でした。今日は 月曜日です。",
+    "kj": "昨日は日曜日でした。今日は月曜日です。",
     "tr": {
       "zh": "昨天是星期天。今天是星期一。",
       "en": "Yesterday was Sunday. Today is Monday."
@@ -74,6 +76,7 @@
     "options": ["ありません", "先生", "あの 人は", "では"],
     "order": [2, 1, 3, 0],
     "full": "A「あの 人は 先生ですか。」 B「いいえ、あの 人は 先生では ありません。学生です。」",
+    "kj": "A「あの人は先生ですか。」\nB「いいえ、あの人は先生ではありません。学生です。」",
     "tr": {
       "zh": "A：那个人是老师吗？ B：不，那个人不是老师。是学生。",
       "en": "A: Is that person a teacher? B: No, that person isn't a teacher. They're a student."
@@ -93,6 +96,7 @@
     "options": ["が", "は", "を", "の"],
     "answer": 1,
     "full": "はじめまして。私は リンです。中国から 来ました。どうぞ よろしく。",
+    "kj": "はじめまして。私はリンです。中国から来ました。どうぞよろしく。",
     "tr": {
       "zh": "初次见面。我是林。从中国来的。请多关照。",
       "en": "Nice to meet you. I'm Lin. I came from China. Pleased to meet you."
@@ -126,6 +130,7 @@
     "options": ["も", "に", "が", "は"],
     "answer": 3,
     "full": "肉は よく 食べますが、魚は あまり 食べません。",
+    "kj": "肉はよく食べますが、魚はあまり食べません。",
     "tr": {
       "zh": "肉经常吃，但鱼不怎么吃。",
       "en": "I often eat meat, but I don't eat much fish."
@@ -159,6 +164,7 @@
     "options": ["先生", "私の", "人", "は"],
     "order": [2, 3, 1, 0],
     "full": "あの 人は 私の 先生です。",
+    "kj": "あの人は私の先生です。",
     "tr": {
       "zh": "那个人是我的老师。",
       "en": "That person is my teacher."
@@ -178,6 +184,7 @@
     "options": ["が", "は", "を", "に"],
     "answer": 0,
     "full": "A「だれが 来ましたか。」 B「田中さんが 来ました。」",
+    "kj": "A「だれが来ましたか。」\nB「田中さんが来ました。」",
     "tr": {
       "zh": "A：谁来了？ B：田中来了。",
       "en": "A: Who came? B: Tanaka came."
@@ -211,6 +218,7 @@
     "options": ["を", "と", "が", "に"],
     "answer": 2,
     "full": "マリアさんは 日本語が 少し わかります。",
+    "kj": "マリアさんは日本語が少しわかります。",
     "tr": {
       "zh": "玛丽亚懂一点日语。",
       "en": "Maria understands a little Japanese."
@@ -244,6 +252,7 @@
     "options": ["料理", "母", "作った", "が"],
     "order": [1, 3, 2, 0],
     "full": "これは 母が 作った 料理です。",
+    "kj": "これは母が作った料理です。",
     "tr": {
       "zh": "这是妈妈做的菜。",
       "en": "This is a dish my mother made."
@@ -263,6 +272,7 @@
     "options": ["を", "も", "は", "が"],
     "answer": 3,
     "full": "A「どれが 田中さんの かばんですか。」 B「その 黒い かばんが 田中さんのです。」",
+    "kj": "A「どれが田中さんのかばんですか。」\nB「その黒いかばんが田中さんのです。」",
     "tr": {
       "zh": "A：哪个是田中的包？ B：那个黑色的包是田中的。",
       "en": "A: Which one is Tanaka's bag? B: That black bag is Tanaka's."
@@ -296,6 +306,7 @@
     "options": ["では", "には", "を", "が"],
     "answer": 1,
     "full": "私の 町には 大きい 公園が あります。",
+    "kj": "私の町には大きい公園があります。",
     "tr": {
       "zh": "我住的镇上有一个大公园。",
       "en": "There is a big park in my town."
@@ -329,6 +340,7 @@
     "options": ["が", "を", "で", "は"],
     "answer": 0,
     "full": "むかし むかし、ある 村に おじいさんが 住んで いました。おじいさんは 毎日 山へ 行きました。",
+    "kj": "昔々、ある村におじいさんが住んでいました。おじいさんは毎日山へ行きました。",
     "tr": {
       "zh": "很久很久以前，某个村子里住着一位老爷爷。老爷爷每天都上山。",
       "en": "Long, long ago, an old man lived in a certain village. Every day the old man went to the mountains."
@@ -362,6 +374,7 @@
     "options": ["公園が", "あります", "には", "大きい"],
     "order": [2, 3, 0, 1],
     "full": "この 町には 大きい 公園が あります。",
+    "kj": "この町には大きい公園があります。",
     "tr": {
       "zh": "这个镇上有一个大公园。",
       "en": "There is a big park in this town."

@@ -8,6 +8,7 @@
     "options": ["で", "を", "に", "が"],
     "answer": 1,
     "full": "この 橋を 渡って、右に 曲がって ください。",
+    "kj": "この橋を渡って、右に曲がってください。",
     "tr": {
       "zh": "请过这座桥，然后往右拐。",
       "en": "Please cross this bridge and turn right."
@@ -41,6 +42,7 @@
     "options": ["を", "で", "へ", "に"],
     "answer": 0,
     "full": "私は 毎朝 8時に 家を 出ます。",
+    "kj": "私は毎朝8時に家を出ます。",
     "tr": {
       "zh": "我每天早上8点出门。",
       "en": "I leave home at eight every morning."
@@ -74,6 +76,7 @@
     "options": ["しました", "大学", "卒業", "を"],
     "order": [1, 3, 2, 0],
     "full": "姉は 去年 大学を 卒業しました。",
+    "kj": "姉は去年大学を卒業しました。",
     "tr": {
       "zh": "姐姐去年大学毕业了。",
       "en": "My older sister graduated from university last year."
@@ -93,6 +96,7 @@
     "options": ["で", "を", "に", "が"],
     "answer": 2,
     "full": "私は 毎朝 6時に 起きます。",
+    "kj": "私は毎朝6時に起きます。",
     "tr": {
       "zh": "我每天早上6点起床。",
       "en": "I get up at six every morning."
@@ -126,6 +130,7 @@
     "options": ["に", "を", "で", "へ"],
     "answer": 0,
     "full": "昨日 駅で 友達に 会いました。",
+    "kj": "昨日駅で友達に会いました。",
     "tr": {
       "zh": "昨天在车站碰到了朋友。",
       "en": "Yesterday I ran into a friend at the station."
@@ -159,6 +164,7 @@
     "options": ["見", "映画", "に", "を"],
     "order": [1, 3, 0, 2],
     "full": "週末、新宿へ 映画を 見に 行きます。",
+    "kj": "週末、新宿へ映画を見に行きます。",
     "tr": {
       "zh": "周末去新宿看电影。",
       "en": "This weekend I'm going to Shinjuku to see a movie."
@@ -178,6 +184,7 @@
     "options": ["に", "を", "へ", "で"],
     "answer": 3,
     "full": "私は 毎日 図書館で 勉強します。",
+    "kj": "私は毎日図書館で勉強します。",
     "tr": {
       "zh": "我每天在图书馆学习。",
       "en": "I study at the library every day."
@@ -211,6 +218,7 @@
     "options": ["を", "で", "に", "が"],
     "answer": 1,
     "full": "昨日は 風邪で 学校を 休みました。",
+    "kj": "昨日は風邪で学校を休みました。",
     "tr": {
       "zh": "昨天因为感冒没去上学。",
       "en": "Yesterday I stayed home from school with a cold."
@@ -244,6 +252,7 @@
     "options": ["高い 山", "で", "日本", "一番"],
     "order": [2, 1, 3, 0],
     "full": "富士山は 日本で 一番 高い 山です。",
+    "kj": "富士山は日本で一番高い山です。",
     "tr": {
       "zh": "富士山是日本最高的山。",
       "en": "Mount Fuji is the highest mountain in Japan."
@@ -263,6 +272,7 @@
     "options": ["な", "が", "の", "を"],
     "answer": 2,
     "full": "A「どの かさが あなたのですか。」 B「その 赤いのです。」",
+    "kj": "A「どの傘があなたのですか。」\nB「その赤いのです。」",
     "tr": {
       "zh": "A：哪把伞是你的？ B：那把红色的。",
       "en": "A: Which umbrella is yours? B: That red one."
@@ -296,6 +306,7 @@
     "options": ["を", "で", "に", "の"],
     "answer": 3,
     "full": "山田さんは 私の 日本語の 先生です。",
+    "kj": "山田さんは私の日本語の先生です。",
     "tr": {
       "zh": "山田是我的日语老师。",
       "en": "Ms. Yamada is my Japanese teacher."
@@ -329,6 +340,7 @@
     "options": ["ある", "の", "あそこに", "青い"],
     "order": [2, 0, 3, 1],
     "full": "A「どれが 田中さんの かさですか。」 B「あそこに ある 青いのです。」",
+    "kj": "A「どれが田中さんの傘ですか。」\nB「あそこにある青いのです。」",
     "tr": {
       "zh": "A：哪把是田中的伞？ B：放在那边的那把蓝色的。",
       "en": "A: Which is Tanaka's umbrella? B: The blue one over there."
@@ -348,6 +360,7 @@
     "options": ["が", "も", "を", "は"],
     "answer": 1,
     "full": "朝から 忙しくて、昼まで 何も 食べませんでした。",
+    "kj": "朝から忙しくて、昼まで何も食べませんでした。",
     "tr": {
       "zh": "从早上就很忙，到中午什么都没吃。",
       "en": "I was busy from the morning and didn't eat anything until noon."
@@ -381,6 +394,7 @@
     "options": ["を", "に", "も", "で"],
     "answer": 2,
     "full": "駅で 友達を 2時間も 待ちました。とても 寒かったです。",
+    "kj": "駅で友達を2時間も待ちました。とても寒かったです。",
     "tr": {
       "zh": "我在车站等朋友足足等了两个小时。冷极了。",
       "en": "I waited for my friend at the station for a whole two hours. It was freezing."
@@ -414,6 +428,7 @@
     "options": ["行きませんでした", "も", "どこ", "に"],
     "order": [2, 3, 1, 0],
     "full": "日曜日は 雨だったので、どこにも 行きませんでした。",
+    "kj": "日曜日は雨だったので、どこにも行きませんでした。",
     "tr": {
       "zh": "星期天下雨，所以哪儿都没去。",
       "en": "It rained on Sunday, so I didn't go anywhere."
@@ -433,6 +448,7 @@
     "options": ["までに", "まで", "に", "で"],
     "answer": 1,
     "full": "すみません、今から 5時まで ここで 待って ください。",
+    "kj": "すみません、今から5時までここで待ってください。",
     "tr": {
       "zh": "不好意思，请从现在起在这里等到5点。",
       "en": "Sorry, please wait here from now until five."
@@ -466,6 +482,7 @@
     "options": ["を", "まで", "から", "で"],
     "answer": 2,
     "full": "A「リンさんは どこから 来ましたか。」 B「中国から 来ました。」",
+    "kj": "A「リンさんはどこから来ましたか。」\nB「中国から来ました。」",
     "tr": {
       "zh": "A：林是从哪里来的？ B：从中国来的。",
       "en": "A: Where did you come from, Lin? B: I came from China."
@@ -499,6 +516,7 @@
     "options": ["まで", "夕方", "9時から", "5時"],
     "order": [2, 1, 3, 0],
     "full": "父は 毎日 朝 9時から 夕方 5時まで 働きます。",
+    "kj": "父は毎日朝9時から夕方5時まで働きます。",
     "tr": {
       "zh": "爸爸每天从早上9点工作到傍晚5点。",
       "en": "My father works every day from 9 in the morning to 5 in the evening."
@@ -518,6 +536,7 @@
     "options": ["での", "への", "との", "にの"],
     "answer": 1,
     "full": "来週は 母の 誕生日です。これは 母への プレゼントです。",
+    "kj": "来週は母の誕生日です。これは母へのプレゼントです。",
     "tr": {
       "zh": "下周是妈妈的生日。这是送给妈妈的礼物。",
       "en": "Next week is my mother's birthday. This is a present for her."
@@ -551,6 +570,7 @@
     "options": ["を", "へ", "で", "が"],
     "answer": 1,
     "full": "私は 明日 新幹線で 京都へ 行きます。",
+    "kj": "私は明日新幹線で京都へ行きます。",
     "tr": {
       "zh": "我明天坐新干线去京都。",
       "en": "Tomorrow I'm going to Kyoto by Shinkansen."
@@ -584,6 +604,7 @@
     "options": ["旅行", "日本", "は", "への"],
     "order": [1, 3, 0, 2],
     "full": "日本への 旅行は とても 楽しかったです。",
+    "kj": "日本への旅行はとても楽しかったです。",
     "tr": {
       "zh": "日本之旅非常开心。",
       "en": "The trip to Japan was a lot of fun."
@@ -603,6 +624,7 @@
     "options": ["を", "と", "へ", "に"],
     "answer": 1,
     "full": "週末、私は 友達と いっしょに 映画を 見ました。",
+    "kj": "週末、私は友達と一緒に映画を見ました。",
     "tr": {
       "zh": "周末我和朋友一起看了电影。",
       "en": "On the weekend I watched a movie together with a friend."
@@ -636,6 +658,7 @@
     "options": ["を", "が", "と", "に"],
     "answer": 2,
     "full": "空が 暗いですね。明日は 雨だと 思います。",
+    "kj": "空が暗いですね。明日は雨だと思います。",
     "tr": {
       "zh": "天好暗啊。我觉得明天会下雨。",
       "en": "The sky is dark. I think it will rain tomorrow."
@@ -669,6 +692,7 @@
     "options": ["いました", "行かない", "言って", "と"],
     "order": [1, 3, 2, 0],
     "full": "田中さんは 明日の パーティーに 行かないと 言って いました。",
+    "kj": "田中さんは明日のパーティーに行かないと言っていました。",
     "tr": {
       "zh": "田中说他不去明天的派对。",
       "en": "Tanaka said he isn't going to tomorrow's party."
@@ -688,6 +712,7 @@
     "options": ["か", "ね", "を", "よ"],
     "answer": 3,
     "full": "A「この 本、おもしろいですか。」 B「ええ、とても おもしろいですよ。ぜひ 読んで ください。」",
+    "kj": "A「この本、おもしろいですか。」\nB「ええ、とてもおもしろいですよ。ぜひ読んでください。」",
     "tr": {
       "zh": "A：这本书有意思吗？ B：嗯，非常有意思哦。一定要读读看。",
       "en": "A: Is this book interesting? B: Yes, it's really interesting. You should definitely read it."
@@ -721,6 +746,7 @@
     "options": ["よ", "か", "ね", "な"],
     "answer": 2,
     "full": "（二人で 公園を 歩いて います。） A「今日は いい 天気ですね。」 B「本当に そうですね。」",
+    "kj": "（二人で公園を歩いています。）\nA「今日はいい天気ですね。」\nB「本当にそうですね。」",
     "tr": {
       "zh": "（两个人在公园散步。） A：今天天气真好啊。 B：真是的。",
       "en": "(Two people are walking in the park.) A: Lovely weather today, isn't it? B: It really is."
@@ -754,6 +780,7 @@
     "options": ["よ", "から", "9時", "です"],
     "order": [2, 1, 3, 0],
     "full": "A「明日の テストは 何時からですか。」 B「9時からですよ。」",
+    "kj": "A「明日のテストは何時からですか。」\nB「9時からですよ。」",
     "tr": {
       "zh": "A：明天的考试几点开始？ B：9点开始哦。",
       "en": "A: What time does tomorrow's test start? B: From nine."

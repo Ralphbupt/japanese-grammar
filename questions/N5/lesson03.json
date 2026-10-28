@@ -8,6 +8,7 @@
     "options": ["帰ます", "帰ります", "帰るます", "帰えます"],
     "answer": 1,
     "full": "私は 毎日 7時に 家へ 帰ります。",
+    "kj": "私は毎日7時に家へ帰ります。",
     "tr": {
       "zh": "我每天7点回家。",
       "en": "I go home at seven every day."
@@ -41,6 +42,7 @@
     "options": ["見ります", "見るます", "見ます", "見います"],
     "answer": 2,
     "full": "私は 毎晩 テレビを 見ます。",
+    "kj": "私は毎晩テレビを見ます。",
     "tr": {
       "zh": "我每天晚上看电视。",
       "en": "I watch TV every evening."
@@ -74,6 +76,7 @@
     "options": ["入ます", "入るます", "入いります", "入ります"],
     "answer": 3,
     "full": "私は 毎晩 10時ごろ おふろに 入ります。",
+    "kj": "私は毎晩10時ごろお風呂に入ります。",
     "tr": {
       "zh": "我每天晚上10点左右洗澡。",
       "en": "I take a bath around ten every night."
@@ -107,6 +110,7 @@
     "options": ["食べました", "食べます", "食べませんでした", "食べません"],
     "answer": 2,
     "full": "昨日は とても 忙しくて、朝から 何も 食べませんでした。",
+    "kj": "昨日はとても忙しくて、朝から何も食べませんでした。",
     "tr": {
       "zh": "昨天非常忙，从早上起什么都没吃。",
       "en": "Yesterday I was really busy and didn't eat anything from the morning on."
@@ -140,6 +144,7 @@
     "options": ["来ります", "来ます", "来ました", "来るます"],
     "answer": 1,
     "full": "明日の 午後、友達が 私の 家に 来ます。",
+    "kj": "明日の午後、友達が私の家に来ます。",
     "tr": {
       "zh": "明天下午朋友要来我家。",
       "en": "A friend is coming to my house tomorrow afternoon."
@@ -173,6 +178,7 @@
     "options": ["します", "さます", "しります", "するます"],
     "answer": 0,
     "full": "A「週末は 何を しますか。」 B「友達と テニスを します。」",
+    "kj": "A「週末は何をしますか。」\nB「友達とテニスをします。」",
     "tr": {
       "zh": "A：周末做什么？ B：和朋友打网球。",
       "en": "A: What are you doing this weekend? B: Playing tennis with friends."
@@ -206,6 +212,7 @@
     "options": ["起きます", "か", "何時", "に"],
     "order": [2, 3, 0, 1],
     "full": "A「毎朝 何時に 起きますか。」 B「6時です。」",
+    "kj": "A「毎朝何時に起きますか。」\nB「6時です。」",
     "tr": {
       "zh": "A：每天早上几点起床？ B：6点。",
       "en": "A: What time do you get up every morning? B: At six."

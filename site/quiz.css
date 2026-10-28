@@ -227,3 +227,7 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-report-more textarea { width: 100%; box-sizing: border-box; padding: .5rem .7rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); color: var(--text); font: inherit; resize: vertical; }
 
 body.quiz-busy .quiz-about { display: none; }
+.q-okj { color: var(--text-muted); font-size: .85em; margin-left: .2em; }
+.q-kj-label { display: block; font-size: .78rem; color: var(--text-muted); margin-bottom: .1rem; font-family: var(--font-sans, inherit); }
+.q-sub { border-top: 1px solid var(--border); margin-top: 1.2rem; padding-top: 1rem; }
+.q-subno { margin: 0 0 .3rem; font-size: .85rem; font-weight: 600; color: var(--text-muted); }

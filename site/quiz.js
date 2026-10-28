@@ -228,7 +228,11 @@
   }
 
   // ─── A set of questions ───
-  var cur = null;   // { q, start, picked: [slot → option], guess, done }
+  var cur = null;   // { q, start, picked: [slot → option], guess, done, root }
+  // A passage's questions share one screen: curs holds each one's state (cur is
+  // the one being answered), and every lookup is inside that question's block.
+  var curs = null;
+  function root() { return (cur && cur.root) || app; }
   function start(kind, list, label) {
     if (!list.length) return;
     S.session = { kind: kind, label: label || '', ids: list.map(function (q) { return q.id; }), i: 0, res: [] };
@@ -241,6 +245,12 @@
     var s = S.session;
     if (s.i >= s.ids.length) return summary();
     var q = Q[s.ids[s.i]];
+    curs = null;
+    if (q.passage) {
+      var group = [];
+      for (var j = s.i; j < s.ids.length && Q[s.ids[j]].passage === q.passage; j++) group.push(Q[s.ids[j]]);
+      if (group.length > 1) return askPassage(group);
+    }
     cur = { q: q, start: Date.now(), picked: [null, null, null, null], guess: false, done: false };
     var h = '<div class="q-top"><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button>' +
       '<span>' + (s.i + 1) + ' / ' + s.ids.length + '</span><span class="q-muted">' + esc(bi(D.types[q.type])) + '</span></div>' +
@@ -258,17 +268,48 @@
     app.innerHTML = h;
     window.scrollTo(0, app.offsetTop - 16);
   }
+  function askPassage(group) {
+    var s = S.session, q = group[0];
+    var h = '<div class="q-top"><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button>' +
+      '<span>' + (s.i + 1) + '–' + (s.i + group.length) + ' / ' + s.ids.length + '</span><span class="q-muted">' + esc(bi(D.types[q.type])) + '</span></div>' +
+      '<div class="q-progress"><span style="width:' + (s.i * 100 / s.ids.length) + '%"></span></div>' +
+      '<div class="q-card">' + passageHtml({ passage: q.passage, blank: null });
+    group.forEach(function (g, k) {
+      h += '<div class="q-sub" data-q="' + g.id + '"><p class="q-subno">' + t('问题 ', 'Question ') + (k + 1) + '</p><div class="q-stem" lang="ja">' + stemHtml(g) + '</div>' +
+        '<ol class="q-opts" lang="ja">' + g.options.map(function (o, i) { return '<li><button class="q-opt" data-act="opt" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span>' + o + '</button></li>'; }).join('') + '</ol>' +
+        '<div class="q-actions"><label class="q-guess"><input type="checkbox" data-act="guess"> ' + t('蒙的', 'Guessing') + '</label></div>' +
+        '<div class="q-feedback" aria-live="polite"></div></div>';
+    });
+    app.innerHTML = h + '</div>';
+    curs = {};
+    group.forEach(function (g) { curs[g.id] = { q: g, start: Date.now(), picked: [null, null, null, null], guess: false, done: false, root: app.querySelector('.q-sub[data-q="' + g.id + '"]') }; });
+    cur = curs[group[0].id];
+    window.scrollTo(0, app.offsetTop - 16);
+  }
   // The passage a question belongs to: intro line, then the text in a box.
   // Lines starting with | are a table; [[n]] is a numbered blank (文章の文法).
-  function passageHtml(q) {
-    if (!q.passage) return '';
-    var P = D.passages[q.passage], rows = [], out = '';
-    P.html.split('\n').forEach(function (line) {
+  function textHtml(src) {
+    var rows = [], out = '';
+    src.split('\n').forEach(function (line) {
       if (/^\|/.test(line)) { rows.push(line.replace(/^\||\|$/g, '').split('|')); return; }
       if (rows.length) { out += table(rows); rows = []; }
       out += line ? '<p>' + line + '</p>' : '';
     });
     if (rows.length) out += table(rows);
+    return out;
+  }
+  // N5/N4: after answering, the kanji a kana word or sentence would be written with.
+  function okjOf(q, i) { return q.okj && q.okj[i] ? '<span class="q-okj">（' + q.okj[i] + '）</span>' : ''; }
+  function kjHtml(q, passages) {
+    var h = q.kj ? '<p class="q-full q-kj" lang="ja"><span class="q-kj-label">' + t('汉字写法', 'In kanji') + '</span>' + q.kj + '</p>' : q.full ? '<p class="q-full" lang="ja">' + q.full + '</p>' : '';
+    var P = q.passage && passages && passages[q.passage];
+    if (P && P.kj) h += '<details class="q-tr"><summary>' + t('全文汉字写法', 'The text in kanji') + '</summary><div class="q-passage" lang="ja">' + textHtml(P.kj) + '</div></details>';
+    return h;
+  }
+  function passageHtml(q) {
+    if (!q.passage) return '';
+    var P = D.passages[q.passage];
+    var out = textHtml(P.html);
     out = out.replace(/\[\[(\d+)\]\]/g, function (m, n) { return '<span class="q-pblank' + (+n === q.blank ? ' q-pblank-on' : '') + '" data-n="' + n + '">' + n + '</span>'; });
     return (P.intro ? '<p class="q-intro" lang="ja">' + P.intro + '</p>' : '') + '<div class="q-passage" lang="ja">' + out + '</div>';
   }
@@ -371,11 +412,12 @@
   }
 
   function feedback(q, choice, ok) {
-    var opts = app.querySelectorAll('.q-opt');
+    var opts = root().querySelectorAll('.q-opt');
     for (var i = 0; i < opts.length; i++) {
       opts[i].disabled = true;
       if (i === q.answer) opts[i].classList.add('q-ok');
       else if (i === choice) opts[i].classList.add('q-bad');
+      if (okjOf(q, i)) opts[i].insertAdjacentHTML('beforeend', okjOf(q, i));
     }
     if (q.type === 'narabe') {
       app.querySelectorAll('.q-piece').forEach(function (b) { b.disabled = true; });
@@ -386,14 +428,14 @@
         if (b.classList.contains('q-star')) b.classList.add(ok ? 'q-ok' : 'q-bad');
       });
     } else {
-      var blank = app.querySelector('.q-blank') || app.querySelector('.q-pblank-on');
+      var blank = root().querySelector('.q-blank') || (curs ? app.querySelector('.q-pblank[data-n="' + q.blank + '"]') : app.querySelector('.q-pblank-on'));
       if (blank) { blank.innerHTML = '<span class="q-fill">' + q.options[q.answer] + '</span>'; blank.classList.add('q-filled'); }
     }
-    var g = app.querySelector('[data-act="guess"]'); if (g) g.disabled = true;
-    var sb = app.querySelector('[data-act="submit"]'); if (sb) sb.remove();
+    var g = root().querySelector('[data-act="guess"]'); if (g) g.disabled = true;
+    var sb = root().querySelector('[data-act="submit"]'); if (sb) sb.remove();
 
     cur.choice = choice;
-    var h = '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (ok ? '✓ ' + t('正确', 'Correct') : '✗ ' + t('正确答案是 ', 'The answer is ') + (q.answer + 1) + ' <span lang="ja">' + q.options[q.answer] + '</span>') +
+    var h = '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (ok ? '✓ ' + t('正确', 'Correct') : '✗ ' + t('正确答案是 ', 'The answer is ') + (q.answer + 1) + ' <span lang="ja">' + q.options[q.answer] + okjOf(q, q.answer) + '</span>') +
       (ok && cur.guess ? ' <small>' + t('（蒙对了，已加入错题本，明天再考一次）', '(a lucky guess — it’s on your review list for tomorrow)') + '</small>' : '') + '</p>';
     var aiFirst = !ok || cur.guess;
     if (aiFirst) h += aiBtn(true);
@@ -401,9 +443,9 @@
     if (q.type !== 'narabe') {
       var rows = q.wrong.map(function (w, i) { return w ? { i: i, w: w } : null; }).filter(Boolean);
       rows.sort(function (a, b) { return (b.i === choice) - (a.i === choice); });
-      h += '<ul class="q-wrong">' + rows.map(function (r) { return '<li' + (r.i === choice ? ' class="q-mine"' : '') + '><b lang="ja">' + (r.i + 1) + ' ' + q.options[r.i] + '</b> — ' + esc(bi(r.w)) + '</li>'; }).join('') + '</ul>';
+      h += '<ul class="q-wrong">' + rows.map(function (r) { return '<li' + (r.i === choice ? ' class="q-mine"' : '') + '><b lang="ja">' + (r.i + 1) + ' ' + q.options[r.i] + okjOf(q, r.i) + '</b> — ' + esc(bi(r.w)) + '</li>'; }).join('') + '</ul>';
     }
-    if (q.full) h += '<p class="q-full" lang="ja">' + q.full + '</p>';
+    h += kjHtml(q, D.passages);
     if (q.tr) h += '<p class="q-muted">' + esc(bi(q.tr)) + '</p>';
     if (q.passage) h += '<details class="q-tr"><summary>' + t('全文翻译', 'Translation of the text') + '</summary><p>' + esc(bi(D.passages[q.passage].tr)) + '</p></details>';
     h += '<p class="q-refs">' + (q.refs || []).map(function (r) {
@@ -416,8 +458,10 @@
         .map(function (r) { return '<button class="q-btn" data-act="report" data-k="' + r[0] + '">' + t(r[1], r[2]) + '</button>'; }).join(' ') +
       '<div class="q-report-more" hidden><textarea maxlength="1000" rows="3" placeholder="' + t('哪里不对？可以不写', 'What’s wrong? (optional)') + '"></textarea>' +
       '<button class="q-btn q-btn-primary" data-act="report-send">' + t('提交', 'Send') + '</button></div></details></div>';
-    h += '<div class="q-next"><button class="q-btn q-btn-primary q-btn-big" data-act="next">' + (S.session.i >= S.session.ids.length ? t('看结果', 'See results') : t('下一题', 'Next')) + ' →</button></div>';
-    app.querySelector('.q-feedback').innerHTML = h;
+    var left = curs ? Object.keys(curs).filter(function (id) { return !curs[id].done; }) : [];
+    if (!left.length) h += '<div class="q-next"><button class="q-btn q-btn-primary q-btn-big" data-act="next">' + (S.session.i >= S.session.ids.length ? t('看结果', 'See results') : t('下一题', 'Next')) + ' →</button></div>';
+    root().querySelector('.q-feedback').innerHTML = h;
+    if (left.length) cur = curs[left[0]];   // the keyboard moves on to the next question of the passage
   }
 
   function summary() {
@@ -546,6 +590,10 @@
     if (c.at >= ids.length) c.at = 0;
     var id = ids[c.at], q = Q[id], prob = problemOf(sec, id), a = c.answers[id] || {};
     cur = { q: q, start: Date.now(), picked: a.p ? a.p.slice() : [null, null, null, null], guess: !!a.g, done: false, mock: true };
+    curs = null;
+    // A passage's questions share the screen: [g0, g1] is the run with the same passage.
+    var g0 = c.at, g1 = c.at;
+    if (q.passage) { while (g0 > 0 && Q[ids[g0 - 1]].passage === q.passage) g0--; while (g1 < ids.length - 1 && Q[ids[g1 + 1]].passage === q.passage) g1++; }
     var answered = ids.filter(function (x) { return c.answers[x] && c.answers[x].c != null; }).length;
     var h = '<div class="q-mockbar"><span class="q-clock">' + fmt(remaining()) + '</span><span>' + esc(sec.ja) + '</span><span class="q-muted q-answered">' + answered + '/' + ids.length + '</span>' +
       '<button class="q-btn" data-act="m-sheet">' + t('答题卡', 'Answer sheet') + '</button><button class="q-btn" data-act="m-pause">' + t('暂停', 'Pause') + '</button></div>';
@@ -556,18 +604,33 @@
       }).join('') + '</div>';
     }).join('') + '<button class="q-btn q-btn-primary" data-act="m-end">' + (c.si < c.secs.length - 1 ? t('结束本节，进入下一节', 'End this section') : t('交卷', 'Submit')) + '</button></div>';
     h += '<div class="q-card"><p class="q-prob"><b>' + t('问题 ', 'もんだい') + prob.no + '</b> ' + esc(D.types[prob.type].ja) + ' <small class="q-muted">' + esc(bi(D.types[prob.type])) + '</small><span class="q-qno">' + (c.at + 1) + '</span></p>' +
-      passageHtml(q) + '<div class="q-stem" lang="ja">' + stemHtml(q) + '</div>';
-    if (q.type === 'narabe') {
-      h += '<p class="q-muted q-hint">' + t('按顺序点选项填进空格，点空格可以撤回。', 'Tap the pieces in order; tap a blank to undo.') + '</p><div class="q-pieces" lang="ja">' +
-        q.options.map(function (o, i) { return '<button class="q-piece" data-act="m-piece" data-i="' + i + '">' + o + '</button>'; }).join('') + '</div>';
+      passageHtml(g1 > g0 ? { passage: q.passage, blank: null } : q) + (g1 > g0 ? '' : '<div class="q-stem" lang="ja">' + stemHtml(q) + '</div>');
+    if (g1 > g0) {
+      for (var gi = g0; gi <= g1; gi++) {
+        var gq = Q[ids[gi]], ga = c.answers[gq.id] || {};
+        h += '<div class="q-sub" data-q="' + gq.id + '"><p class="q-subno">' + (gi + 1) + '</p><div class="q-stem" lang="ja">' + stemHtml(gq) + '</div>' +
+          '<ol class="q-opts" lang="ja">' + gq.options.map(function (o, i) { return '<li><button class="q-opt' + (ga.c === i ? ' q-picked' : '') + '" data-act="m-opt" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span>' + o + '</button></li>'; }).join('') + '</ol>' +
+          '<div class="q-actions"><label class="q-guess"><input type="checkbox" data-act="m-guess"' + (ga.g ? ' checked' : '') + '> ' + t('蒙的', 'Guessing') + '</label>' +
+          '<button class="q-btn' + (c.flagsQ[gq.id] ? ' q-flagged' : '') + '" data-act="m-flag">⚑ ' + t('标记', 'Flag') + '</button></div></div>';
+      }
     } else {
-      h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><button class="q-opt' + (a.c === i ? ' q-picked' : '') + '" data-act="m-opt" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span>' + o + '</button></li>'; }).join('') + '</ol>';
+      if (q.type === 'narabe') {
+        h += '<p class="q-muted q-hint">' + t('按顺序点选项填进空格，点空格可以撤回。', 'Tap the pieces in order; tap a blank to undo.') + '</p><div class="q-pieces" lang="ja">' +
+          q.options.map(function (o, i) { return '<button class="q-piece" data-act="m-piece" data-i="' + i + '">' + o + '</button>'; }).join('') + '</div>';
+      } else {
+        h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><button class="q-opt' + (a.c === i ? ' q-picked' : '') + '" data-act="m-opt" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span>' + o + '</button></li>'; }).join('') + '</ol>';
+      }
+      h += '<div class="q-actions"><label class="q-guess"><input type="checkbox" data-act="m-guess"' + (a.g ? ' checked' : '') + '> ' + t('蒙的', 'Guessing') + '</label>' +
+        '<button class="q-btn' + (c.flagsQ[id] ? ' q-flagged' : '') + '" data-act="m-flag">⚑ ' + t('标记', 'Flag') + '</button></div>';
     }
-    h += '<div class="q-actions"><label class="q-guess"><input type="checkbox" data-act="m-guess"' + (a.g ? ' checked' : '') + '> ' + t('蒙的', 'Guessing') + '</label>' +
-      '<button class="q-btn' + (c.flagsQ[id] ? ' q-flagged' : '') + '" data-act="m-flag">⚑ ' + t('标记', 'Flag') + '</button></div>' +
-      '<div class="q-actions q-nav"><button class="q-btn" data-act="m-go" data-k="' + (c.at - 1) + '"' + (c.at ? '' : ' disabled') + '>← ' + t('上一题', 'Prev') + '</button>' +
-      (c.at < ids.length - 1 ? '<button class="q-btn q-btn-primary" data-act="m-go" data-k="' + (c.at + 1) + '">' + t('下一题', 'Next') + ' →</button>' : '<button class="q-btn q-btn-primary" data-act="m-sheet">' + t('检查答题卡', 'Review answer sheet') + '</button>') + '</div></div>';
+    h += '<div class="q-actions q-nav"><button class="q-btn" data-act="m-go" data-k="' + (g0 - 1) + '"' + (g0 ? '' : ' disabled') + '>← ' + t('上一题', 'Prev') + '</button>' +
+      (g1 < ids.length - 1 ? '<button class="q-btn q-btn-primary" data-act="m-go" data-k="' + (g1 + 1) + '">' + t('下一题', 'Next') + ' →</button>' : '<button class="q-btn q-btn-primary" data-act="m-sheet">' + t('检查答题卡', 'Review answer sheet') + '</button>') + '</div></div>';
     app.innerHTML = h;
+    if (g1 > g0) {
+      curs = {};
+      for (var gk = g0; gk <= g1; gk++) { var gid = ids[gk], gaa = c.answers[gid] || {}; curs[gid] = { q: Q[gid], start: Date.now(), picked: [null, null, null, null], guess: !!gaa.g, done: false, mock: true, root: app.querySelector('.q-sub[data-q="' + gid + '"]') }; }
+      cur = curs[id];
+    }
     if (q.type === 'narabe') fillSlots();
     if (!M.timer) M.timer = setInterval(tick, 1000);
     window.scrollTo(0, app.offsetTop - 16);
@@ -706,10 +769,10 @@
           if (q.passage && !shownP[q.passage]) { shownP[q.passage] = 1; h += '<details class="q-revpass"><summary>' + t('原文', 'Text') + '</summary>' + passageHtml(qq) + '<p class="q-muted">' + esc(bi(key.passages[q.passage].tr)) + '</p></details>'; }
           h += '<p class="q-prob"><b>' + (si + 1) + '-' + p.no + '</b> ' + esc(test.types[p.type].ja) + '</p><div class="q-stem" lang="ja">' + stemHtml(qq).replace(/<button[^>]*>(★)?<\/button>/g, function (m, st) { return st ? '＿★＿' : '＿＿'; }) + '</div>';
           if (q.type === 'narabe') h += '<p lang="ja">' + t('正确顺序：', 'Order: ') + kq.order.map(function (i) { return q.options[i]; }).join(' / ') + '</p>';
-          h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><div class="q-opt' + (i === kq.answer ? ' q-ok' : i === a.c ? ' q-bad' : '') + '"><span class="q-num">' + (i + 1) + '</span>' + o + '</div></li>'; }).join('') + '</ol>';
+          h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><div class="q-opt' + (i === kq.answer ? ' q-ok' : i === a.c ? ' q-bad' : '') + '"><span class="q-num">' + (i + 1) + '</span>' + o + okjOf(qq, i) + '</div></li>'; }).join('') + '</ol>';
           h += '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 蒙对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + '</p>';
-          h += '<div class="q-explain"><p>' + esc(bi(kq.why)) + '</p>' + (q.type !== 'narabe' ? '<ul class="q-wrong">' + kq.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + q.options[i] + '</b> — ' + esc(bi(w)) + '</li>' : ''; }).join('') + '</ul>' : '') +
-            (kq.full ? '<p class="q-full" lang="ja">' + kq.full + '</p>' : '') + (kq.tr ? '<p class="q-muted">' + esc(bi(kq.tr)) + '</p>' : '') + '</div>' +
+          h += '<div class="q-explain"><p>' + esc(bi(kq.why)) + '</p>' + (q.type !== 'narabe' ? '<ul class="q-wrong">' + kq.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + q.options[i] + okjOf(qq, i) + '</b> — ' + esc(bi(w)) + '</li>' : ''; }).join('') + '</ul>' : '') +
+            kjHtml(qq, key.passages) + (kq.tr ? '<p class="q-muted">' + esc(bi(kq.tr)) + '</p>' : '') + '</div>' +
             (window.jpAI ? '<p class="q-ai"><button class="q-btn" data-act="m-ai" data-k="' + id + '">🤖 ' + t('AI 讲解', 'Explain with AI') + '</button></p>' : '') + '</div>';
         });
       });
@@ -743,6 +806,8 @@
     var el = e.target.closest('[data-act]');
     if (!el || el.disabled) return;
     var act = el.getAttribute('data-act'), k = el.getAttribute('data-k');
+    var sub = curs && el.closest('.q-sub');
+    if (sub && curs[sub.getAttribute('data-q')]) cur = curs[sub.getAttribute('data-q')];
     if (act === 'm-list') mockList();
     else if (act === 'm-intro') mockIntro(setById(k));
     else if (act === 'm-start') mockStart(k);
@@ -751,7 +816,7 @@
     else if (act === 'm-result') lastResult(setById(k));
     else if (act === 'm-sheet') { var sh = app.querySelector('.q-sheet'); sh.hidden = !sh.hidden; if (!sh.hidden) sh.scrollIntoView({ block: 'nearest' }); }
     else if (act === 'm-go') { cur2().at = +k; save(); mockSection(); }
-    else if (act === 'm-opt') { mockAnswer(+el.getAttribute('data-i')); app.querySelectorAll('.q-opt').forEach(function (b, i) { b.classList.toggle('q-picked', i === +el.getAttribute('data-i')); }); }
+    else if (act === 'm-opt') { mockAnswer(+el.getAttribute('data-i')); root().querySelectorAll('.q-opt').forEach(function (b, i) { b.classList.toggle('q-picked', i === +el.getAttribute('data-i')); }); }
     else if (act === 'm-piece') { var i = cur.picked.indexOf(null); if (i >= 0) { cur.picked[i] = +el.getAttribute('data-i'); fillSlots(); if (cur.picked.indexOf(null) < 0) { var star = [].indexOf.call(app.querySelectorAll('.q-slot'), app.querySelector('.q-star')); mockAnswer(cur.picked[star]); } } }
     else if (act === 'm-slot') { cur.picked[+el.getAttribute('data-k')] = null; fillSlots(); var a = cur2().answers[cur.q.id]; if (a) { a.c = null; a.p = cur.picked.slice(); save(); markSheet(); } }
     else if (act === 'm-flag') { var c = cur2(); c.flagsQ[cur.q.id] = !c.flagsQ[cur.q.id]; save(); el.classList.toggle('q-flagged'); markSheet(); }
@@ -770,6 +835,8 @@
   });
   if (MOCK) app.addEventListener('change', function (e) {
     if (e.target.getAttribute('data-act') !== 'm-guess') return;
+    var sub = curs && e.target.closest('.q-sub');
+    if (sub && curs[sub.getAttribute('data-q')]) cur = curs[sub.getAttribute('data-q')];
     cur.guess = e.target.checked;
     var a = cur2().answers[cur.q.id];
     if (a) { a.g = cur.guess; save(); }
@@ -951,6 +1018,8 @@
     var el = e.target.closest('[data-act]');
     if (!el || el.disabled) return;
     var act = el.getAttribute('data-act');
+    var sub = curs && el.closest('.q-sub');
+    if (sub && curs[sub.getAttribute('data-q')]) cur = curs[sub.getAttribute('data-q')];
     if (act === 'daily' || act === 'type' || act === 'lesson' || act === 'review') startKind(act, el.getAttribute('data-k'));
     else if (act === 'resume') ask();
     else if (act === 'drop') { S.session = null; save(); home(); }
@@ -988,6 +1057,8 @@
   });
   app.addEventListener('change', function (e) {
     var act = e.target.getAttribute('data-act');
+    var sub = curs && e.target.closest('.q-sub');
+    if (sub && curs[sub.getAttribute('data-q')]) cur = curs[sub.getAttribute('data-q')];
     if (act === 'guess') cur.guess = e.target.checked;
     else if (act === 'size') { S.prefs.size = +e.target.value; save(); home(); }
     else if (act === 'import' && e.target.files[0]) {
@@ -1006,7 +1077,7 @@
     if (!cur || cur.mock || e.target.matches('input, textarea, select') || e.metaKey || e.ctrlKey || e.altKey) return;
     if (!document.body.contains(app.querySelector('.q-card'))) return;
     if (!cur.done && cur.q.type !== 'narabe' && /^[1-4]$/.test(e.key)) submit(+e.key - 1);
-    else if (!cur.done && (e.key === 'g' || e.key === 'G')) { var g = app.querySelector('[data-act="guess"]'); if (g) { g.checked = !g.checked; cur.guess = g.checked; } }
+    else if (!cur.done && (e.key === 'g' || e.key === 'G')) { var g = root().querySelector('[data-act="guess"]'); if (g) { g.checked = !g.checked; cur.guess = g.checked; } }
     else if (e.key === 'Enter') {
       var b = app.querySelector('[data-act="next"]') || app.querySelector('[data-act="submit"]:not([disabled])');
       if (b) { e.preventDefault(); b.click(); }

@@ -15,6 +15,7 @@
     ],
     "answer": 0,
     "full": "赤ちゃんに 夜中に 泣かれて、ぜんぜん 寝られなかった。",
+    "kj": "赤ちゃんに夜中に泣かれて、全然寝られなかった。",
     "tr": {
       "zh": "半夜宝宝一直哭，我完全没睡着。",
       "en": "The baby cried in the night, and I couldn't sleep at all."
@@ -55,6 +56,7 @@
     ],
     "answer": 0,
     "full": "電車の 中で、となりの 人に 足を 踏まれた。とても 痛かった。",
+    "kj": "電車の中で、隣の人に足を踏まれた。とても痛かった。",
     "tr": {
       "zh": "在电车里，脚被旁边的人踩了。好疼。",
       "en": "On the train, the person next to me stepped on my foot. It really hurt."
@@ -95,6 +97,7 @@
     ],
     "answer": 0,
     "full": "この 小説は 夏目漱石によって 書かれました。",
+    "kj": "この小説は夏目漱石によって書かれました。",
     "tr": {
       "zh": "这部小说是由夏目漱石写的。",
       "en": "This novel was written by Natsume Soseki."
@@ -135,6 +138,7 @@
     ],
     "answer": 0,
     "full": "テストで 100点を 取って、先生に 褒められた。とても うれしかった。",
+    "kj": "テストで100点を取って、先生に褒められた。とてもうれしかった。",
     "tr": {
       "zh": "考试得了100分，被老师表扬了。我非常高兴。",
       "en": "I got 100 on the test and the teacher praised me. I was so happy."
@@ -180,6 +184,7 @@
       0
     ],
     "full": "駅で 知らない 人に 大切な 財布を 盗まれて しまいました。",
+    "kj": "駅で知らない人に大切な財布を盗まれてしまいました。",
     "tr": {
       "zh": "在车站，重要的钱包被陌生人偷了。",
       "en": "At the station, a stranger stole my precious wallet."
@@ -211,6 +216,7 @@
     ],
     "answer": 0,
     "full": "子供の ころ、母に 毎日 ピアノを 練習させられた。本当は いやだった。",
+    "kj": "子供のころ、母に毎日ピアノを練習させられた。本当は嫌だった。",
     "tr": {
       "zh": "小时候每天被妈妈逼着练钢琴。其实我很讨厌。",
       "en": "As a child, my mother made me practise the piano every day. I actually hated it."
@@ -251,6 +257,7 @@
     ],
     "answer": 0,
     "full": "私は お酒が 弱いのに、飲み会で 先輩に たくさん 飲まされた。",
+    "kj": "私はお酒が弱いのに、飲み会で先輩にたくさん飲まされた。",
     "tr": {
       "zh": "我酒量不行，聚会上却被前辈灌了很多酒。",
       "en": "I can't hold my drink, yet at the party my senpai made me drink a lot."
@@ -296,6 +303,7 @@
       1
     ],
     "full": "きのうは 駅で 友達に 1時間も 待たされて とても 疲れました。",
+    "kj": "昨日は駅で友達に1時間も待たされてとても疲れました。",
     "tr": {
       "zh": "昨天在车站被朋友害得等了整整1个小时，累坏了。",
       "en": "Yesterday my friend kept me waiting at the station for a whole hour, and I was exhausted."
@@ -327,6 +335,7 @@
     ],
     "answer": 0,
     "full": "学生は 先生に 長い 作文を 3枚も 書かされて、とても 大変だった。",
+    "kj": "学生は先生に長い作文を3枚も書かされて、とても大変だった。",
     "tr": {
       "zh": "学生被老师逼着写了整整3页的长作文，非常辛苦。",
       "en": "The students were made to write three whole pages for the teacher, which was really hard."
@@ -368,6 +377,7 @@
     ],
     "answer": 0,
     "full": "出かけた とき、急に 雨に 降られて、困りました。",
+    "kj": "出かけたとき、急に雨に降られて、困りました。",
     "tr": {
       "zh": "出门的时候突然被雨淋了，真头疼。",
       "en": "When I went out, I suddenly got caught in the rain, which was a pain."
@@ -407,6 +417,12 @@
       "野菜を",
       "させられて"
     ],
+    "okj": [
+      "嫌だった",
+      null,
+      null,
+      null
+    ],
     "order": [
       2,
       1,
@@ -414,6 +430,7 @@
       0
     ],
     "full": "小さい とき、母に 野菜を 食べさせられて いやだった。",
+    "kj": "小さいとき、母に野菜を食べさせられて嫌だった。",
     "tr": {
       "zh": "小时候被妈妈逼着吃蔬菜，很讨厌。",
       "en": "When I was little, my mother made me eat vegetables, and I hated it."

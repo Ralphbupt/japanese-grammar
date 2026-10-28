@@ -15,6 +15,7 @@
     ],
     "answer": 0,
     "full": "ゆうべ お酒を 飲みすぎて、今朝は 頭が 痛いです。",
+    "kj": "ゆうべお酒を飲みすぎて、今朝は頭が痛いです。",
     "tr": {
       "zh": "昨晚喝酒喝多了，今天早上头疼。",
       "en": "I drank too much last night, so I have a headache this morning."
@@ -55,6 +56,7 @@
     ],
     "answer": 3,
     "full": "この スープは 味が なさすぎます。塩を 少し 入れましょう。",
+    "kj": "このスープは味がなさすぎます。塩を少し入れましょう。",
     "tr": {
       "zh": "这汤味道太淡了。加一点盐吧。",
       "en": "This soup has far too little flavour. Let's add some salt."
@@ -93,6 +95,12 @@
       "高すぎて",
       "です"
     ],
+    "okj": [
+      null,
+      null,
+      null,
+      null
+    ],
     "order": [
       1,
       3,
@@ -100,6 +108,7 @@
       2
     ],
     "full": "この かばんは すてきですが 高すぎて、買えませんでした。",
+    "kj": "このかばんはすてきですが高すぎて、買えませんでした。",
     "tr": {
       "zh": "这个包很漂亮，但是太贵了，没能买。",
       "en": "This bag is lovely, but it was too expensive, so I couldn't buy it."
@@ -131,6 +140,7 @@
     ],
     "answer": 1,
     "full": "この 本は 字が 大きくて、読みやすいです。",
+    "kj": "この本は字が大きくて、読みやすいです。",
     "tr": {
       "zh": "这本书字很大，容易读。",
       "en": "This book has large print, so it's easy to read."
@@ -171,6 +181,7 @@
     ],
     "answer": 2,
     "full": "この 薬は 大きくて、飲みにくいです。もう 少し 小さければ いいのですが。",
+    "kj": "この薬は大きくて、飲みにくいです。もう少し小さければいいのですが。",
     "tr": {
       "zh": "这药太大了，不好咽。要是再小一点就好了。",
       "en": "These pills are big and hard to swallow. I wish they were a little smaller."
@@ -216,6 +227,7 @@
       1
     ],
     "full": "田中先生の 説明は 分かりやすいので 人気です。",
+    "kj": "田中先生の説明は分かりやすいので人気です。",
     "tr": {
       "zh": "田中老师的讲解很好懂，所以很受欢迎。",
       "en": "Mr Tanaka's explanations are easy to follow, so they're popular."
@@ -247,6 +259,7 @@
     ],
     "answer": 3,
     "full": "A「明日の 試験、落ちたら どうしよう。」 B「そんなに 心配する ことはないよ。たくさん 勉強したから、きっと 大丈夫。」",
+    "kj": "A「明日の試験、落ちたらどうしよう。」\nB「そんなに心配することはないよ。たくさん勉強したから、きっと大丈夫。」",
     "tr": {
       "zh": "A：明天的考试要是没过怎么办。 B：没必要那么担心。你学了那么多，一定没问题。",
       "en": "A: What if I fail tomorrow's exam? B: There's no need to worry so much. You studied hard — you'll be fine."
@@ -287,6 +300,7 @@
     ],
     "answer": 0,
     "full": "電車は 10時に 出ます。まだ 30分 ありますから、急ぐ ことは ありません。",
+    "kj": "電車は10時に出ます。まだ30分ありますから、急ぐことはありません。",
     "tr": {
       "zh": "电车10点出发。还有30分钟，没必要着急。",
       "en": "The train leaves at ten. There are still thirty minutes, so there's no need to hurry."
@@ -332,6 +346,7 @@
       0
     ],
     "full": "電話で いいですから、わざわざ 来る ことは ないよ。",
+    "kj": "電話でいいですから、わざわざ来ることはないよ。",
     "tr": {
       "zh": "打电话就行，没必要特地过来。",
       "en": "A phone call is fine — there's no need to come all this way."
@@ -363,6 +378,7 @@
     ],
     "answer": 1,
     "full": "すみません、この コピー機の 使い方を 教えて ください。",
+    "kj": "すみません、このコピー機の使い方を教えてください。",
     "tr": {
       "zh": "不好意思，请教我这台复印机的用法。",
       "en": "Excuse me, could you show me how to use this copier?"
@@ -403,6 +419,7 @@
     ],
     "answer": 2,
     "full": "駅までの 行き方が 分からないので、地図で 調べます。",
+    "kj": "駅までの行き方が分からないので、地図で調べます。",
     "tr": {
       "zh": "不知道去车站怎么走，所以用地图查一下。",
       "en": "I don't know how to get to the station, so I'll look it up on the map."
@@ -448,6 +465,7 @@
       1
     ],
     "full": "マリアさんは お箸の 持ち方が 上手ですね。",
+    "kj": "マリアさんはお箸の持ち方が上手ですね。",
     "tr": {
       "zh": "玛丽亚拿筷子的方法很好呢。",
       "en": "Maria holds her chopsticks really well."
@@ -479,6 +497,7 @@
     ],
     "answer": 0,
     "full": "さっきまで 晴れて いたのに、急に 雨が 降り出しました。",
+    "kj": "さっきまで晴れていたのに、急に雨が降り出しました。",
     "tr": {
       "zh": "刚才还是晴天，突然下起雨来了。",
       "en": "It was sunny a moment ago, but suddenly it started to rain."
@@ -519,6 +538,7 @@
     ],
     "answer": 3,
     "full": "雨が 3日間 降り続けて、川の 水が 多く なりました。",
+    "kj": "雨が3日間降り続けて、川の水が多くなりました。",
     "tr": {
       "zh": "雨连续下了3天，河水涨了。",
       "en": "It rained for three days straight, and the river rose."
@@ -564,6 +584,7 @@
       1
     ],
     "full": "先月から ピアノを 習い始めました。",
+    "kj": "先月からピアノを習い始めました。",
     "tr": {
       "zh": "我从上个月开始学钢琴了。",
       "en": "I started taking piano lessons last month."
@@ -595,6 +616,7 @@
     ],
     "answer": 1,
     "full": "この ビルの 高さは 100メートルです。",
+    "kj": "このビルの高さは100メートルです。",
     "tr": {
       "zh": "这栋楼的高度是100米。",
       "en": "This building is 100 metres tall."
@@ -635,6 +657,7 @@
     ],
     "answer": 2,
     "full": "病気に なって はじめて、健康の 大切さが 分かりました。",
+    "kj": "病気になって初めて、健康の大切さが分かりました。",
     "tr": {
       "zh": "生了病才明白健康的重要性。",
       "en": "It was only after I got sick that I understood how important health is."
@@ -680,6 +703,7 @@
       2
     ],
     "full": "すみません、この 川の 深さは どの くらいですか。",
+    "kj": "すみません、この川の深さはどのくらいですか。",
     "tr": {
       "zh": "请问，这条河有多深？",
       "en": "Excuse me, how deep is this river?"

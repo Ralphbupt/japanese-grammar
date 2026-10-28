@@ -5,6 +5,7 @@
     "difficulty": 1,
     "intro": "マリさんが 学校から 帰ると、テーブルの 上に お母さんの メモが ありました。",
     "passage": "マリへ\n\nお母さんは 買い物に 行きます。六時ごろ 帰ります。\nれいぞうこに ケーキが あります。食べても いいですよ。\nそれから、五時までに 犬に 水を やって ください。\n\n母",
+    "kj": "マリへ\n\nお母さんは買い物に行きます。六時ごろ帰ります。\n冷蔵庫にケーキがあります。食べてもいいですよ。\nそれから、五時までに犬に水をやってください。\n\n母",
     "tr": {
       "zh": "致真理：妈妈去买东西了，六点左右回来。冰箱里有蛋糕，可以吃哦。还有，五点之前请给狗喂水。妈妈",
       "en": "Mari — I've gone shopping and will be back around six. There's cake in the fridge; you can have some. Also, please give the dog some water by five. — Mum"
@@ -30,6 +31,7 @@
     "difficulty": 2,
     "intro": "日本語の クラスで、先生が 学生に この 紙を わたしました。",
     "passage": "みなさんへ\n\nあさっての 金曜日に かんじの テストを すると 言いましたが、来週の 月曜日に なりました。金曜日は テストは ありません。\nテストは 教科書の 二十ページから 三十ページまでです。よく 勉強して ください。\n\n山下",
+    "kj": "皆さんへ\n\nあさっての金曜日に漢字のテストをすると言いましたが、来週の月曜日になりました。金曜日はテストはありません。\nテストは教科書の二十ページから三十ページまでです。よく勉強してください。\n\n山下",
     "tr": {
       "zh": "致各位：我说过后天星期五考汉字，现在改到下星期一了。星期五没有考试。考试范围是课本第20页到第30页。请好好复习。山下",
       "en": "To everyone: I said the kanji test would be the day after tomorrow, Friday, but it has moved to next Monday. There's no test on Friday. The test covers pages 20 to 30 of the textbook. Please study hard. — Yamashita"
@@ -38,6 +40,7 @@
       {
         "q": "かんじの テストは いつですか。",
         "options": ["来週の 月曜日", "あさっての 金曜日", "あしたの 木曜日", "来週の 金曜日"],
+        "okj": [null, null, "明日の木曜日", null],
         "answer": 0,
         "why": { "zh": "「来週の 月曜日に なりました」——考试改到了下星期一。", "en": "「来週の 月曜日に なりました」 — the test has moved to next Monday." },
         "wrong": [
@@ -55,6 +58,7 @@
     "difficulty": 2,
     "intro": "ヤンさんは 友だちの 田中さんから メールを もらいました。",
     "passage": "ヤンさん\n\nあしたは 二時に 駅の 前で 会いましょうと 言いましたね。でも、あしたは 雨ですから、駅の 前じゃなくて、駅の 中の 本屋の 前で 会いましょう。時間は 同じです。映画は 二時半からです。\n\n田中",
+    "kj": "ヤンさん\n\n明日は二時に駅の前で会いましょうと言いましたね。でも、明日は雨ですから、駅の前じゃなくて、駅の中の本屋の前で会いましょう。時間は同じです。映画は二時半からです。\n\n田中",
     "tr": {
       "zh": "小杨：之前说好明天两点在车站前见面对吧。不过明天下雨，所以不在车站前了，在车站里面的书店门口见吧。时间不变。电影两点半开始。田中",
       "en": "Yang — we said we'd meet in front of the station at two tomorrow. But it's going to rain, so let's meet in front of the bookshop inside the station instead. Same time. The film starts at half past two. — Tanaka"
@@ -80,6 +84,7 @@
     "difficulty": 3,
     "intro": "これは ジョンさんの 日記です。",
     "passage": "十月二十日（土）　晴れ\n\nきょうは 朝 十時に 起きました。おそく 起きましたから、朝ごはんは 食べませんでした。\n午後、友だちと テニスを しました。テニスの あとで、いっしょに ラーメンを 食べました。\n夜は うちで 日本語の しゅくだいを しました。",
+    "kj": "十月二十日（土）　晴れ\n\n今日は朝十時に起きました。遅く起きましたから、朝ご飯は食べませんでした。\n午後、友達とテニスをしました。テニスの後で、一緒にラーメンを食べました。\n夜はうちで日本語の宿題をしました。",
     "tr": {
       "zh": "10月20日（星期六）晴。今天早上十点起床。因为起得晚，没吃早饭。下午和朋友打了网球。打完网球后一起吃了拉面。晚上在家做了日语作业。",
       "en": "Saturday 20 October, sunny. I got up at ten this morning. Because I got up late, I didn't have breakfast. In the afternoon I played tennis with a friend, and after tennis we had ramen together. In the evening I did my Japanese homework at home."
@@ -88,6 +93,7 @@
       {
         "q": "ジョンさんは きょう 何を しましたか。",
         "options": ["テニスを して、ラーメンを 食べました", "朝ごはんを 食べて、テニスを しました", "ラーメンを 食べて、テニスを しました", "テニスを して、友だちの うちで しゅくだいを しました"],
+        "okj": [null, "朝ご飯を食べて、テニスをしました", null, "テニスをして、友達のうちで宿題をしました"],
         "answer": 0,
         "why": { "zh": "「テニスの あとで、いっしょに ラーメンを 食べました」：先打网球，再吃拉面。", "en": "「テニスの あとで … ラーメンを 食べました」: tennis first, then ramen." },
         "wrong": [
@@ -105,6 +111,7 @@
     "difficulty": 1,
     "intro": "パンやの 入り口に この 紙が あります。",
     "passage": "さくらパン\n\nいつもは 朝 七時から 夜 八時までですが、きょうは 店の 中の そうじを しますから、午後 三時までです。\nあしたからは また 夜 八時までです。\n月曜日は 休みです。",
+    "kj": "さくらパン\n\nいつもは朝七時から夜八時までですが、今日は店の中の掃除をしますから、午後三時までです。\n明日からはまた夜八時までです。\n月曜日は休みです。",
     "tr": {
       "zh": "樱花面包店。平时营业时间是早上七点到晚上八点，但今天要打扫店内，所以只营业到下午三点。从明天起照常营业到晚上八点。星期一休息。",
       "en": "Sakura Bakery. We're usually open 7 a.m. to 8 p.m., but today we're cleaning the shop, so we close at 3 p.m. From tomorrow we're open until 8 p.m. again. Closed on Mondays."
@@ -130,6 +137,7 @@
     "difficulty": 2,
     "intro": "リンさんが うちへ 帰ると、ドアに いっしょに 住んで いる エマさんの メモが ありました。",
     "passage": "リンさんへ\n\nきょう、わたしは 友だちの うちで 晩ごはんを 食べますから、わたしの 晩ごはんは いりません。十一時ごろ 帰ります。\nあ、さっき リンさんの お母さんから 電話が ありました。あとで 電話して くださいと 言って いました。\n\nエマ",
+    "kj": "リンさんへ\n\n今日、私は友達のうちで晩ご飯を食べますから、私の晩ご飯はいりません。十一時ごろ帰ります。\nあ、さっきリンさんのお母さんから電話がありました。後で電話してくださいと言っていました。\n\nエマ",
     "tr": {
       "zh": "林：今天我在朋友家吃晚饭，所以不用准备我的晚饭。我十一点左右回来。啊，刚才你妈妈打来电话，说请你回头给她打个电话。艾玛",
       "en": "Lin — I'm having dinner at a friend's tonight, so I don't need dinner. I'll be back around eleven. Oh, your mother called a little while ago. She said to call her back later. — Emma"
@@ -138,6 +146,7 @@
       {
         "q": "リンさんは この あと 何を しますか。",
         "options": ["お母さんに 電話を します", "エマさんに 電話を します", "エマさんの 晩ごはんを 作ります", "十一時に 友だちの うちへ 行きます"],
+        "okj": [null, null, "エマさんの晩ご飯を作ります", "十一時に友達のうちへ行きます"],
         "answer": 0,
         "why": { "zh": "妈妈说「あとで 電話して ください」，所以林要给妈妈回电话。", "en": "Her mother asked her to 「あとで 電話して ください」, so Lin calls her mother back." },
         "wrong": [
@@ -155,6 +164,7 @@
     "difficulty": 3,
     "intro": "先生が クラスの 学生に メールを 送りました。",
     "passage": "みなさん\n\n金曜日は 学校の 近くの 公園で 絵を かきます。\n紙と えんぴつは 学校に ありますから、持って こなくても いいです。いろえんぴつは みなさんが 持って きて ください。\n雨の ときは 教室で かきますから、かさは いりません。飲み物は 持って きても いいです。",
+    "kj": "皆さん\n\n金曜日は学校の近くの公園で絵を描きます。\n紙と鉛筆は学校にありますから、持ってこなくてもいいです。色鉛筆は皆さんが持ってきてください。\n雨のときは教室で描きますから、傘はいりません。飲み物は持ってきてもいいです。",
     "tr": {
       "zh": "各位：星期五我们在学校附近的公园画画。纸和铅笔学校有，不用带。彩色铅笔请大家自己带来。下雨的话就在教室里画，所以不需要带伞。可以带饮料。",
       "en": "Everyone: On Friday we'll draw pictures in the park near the school. The school has paper and pencils, so you don't need to bring them. Please bring your own coloured pencils. If it rains we'll draw in the classroom, so you don't need an umbrella. You may bring a drink."
@@ -163,6 +173,7 @@
       {
         "q": "学生は 金曜日に 何を 持って 行かなければ なりませんか。",
         "options": ["いろえんぴつ", "紙と えんぴつ", "かさ", "飲み物"],
+        "okj": ["色鉛筆", "紙と鉛筆", "傘", null],
         "answer": 0,
         "why": { "zh": "只有彩色铅笔是「持って きて ください」，必须带。", "en": "Only the coloured pencils are 「持って きて ください」 — required." },
         "wrong": [
@@ -180,6 +191,7 @@
     "difficulty": 2,
     "intro": "図書館の 入り口に この 紙が あります。",
     "passage": "図書館を 使う みなさんへ\n\n図書館は 毎週 月曜日が 休みです。\nでも、今月は 二十三日の 月曜日は 休みじゃありません。朝 九時から 開いて います。\nその つぎの 日、二十四日の 火曜日が 休みです。",
+    "kj": "図書館を使う皆さんへ\n\n図書館は毎週月曜日が休みです。\nでも、今月は二十三日の月曜日は休みじゃありません。朝九時から開いています。\nその次の日、二十四日の火曜日が休みです。",
     "tr": {
       "zh": "致使用图书馆的各位：图书馆每周一闭馆。但是这个月23号星期一不闭馆，早上九点开门。第二天，也就是24号星期二闭馆。",
       "en": "To library users: The library is closed every Monday. This month, however, Monday the 23rd is not a closing day — we open at 9 a.m. The next day, Tuesday the 24th, is the closing day instead."
@@ -205,6 +217,7 @@
     "difficulty": 1,
     "intro": "ワンさんは 先生に メールを 書きました。",
     "passage": "山下先生\n\nワンです。きのうの 夜から 熱が あります。すみませんが、きょうは 学校を 休みます。\n午前中に 病院へ 行きます。\nきょうの しゅくだいは あした 学校へ 持って いきます。\n\nワン",
+    "kj": "山下先生\n\nワンです。昨日の夜から熱があります。すみませんが、今日は学校を休みます。\n午前中に病院へ行きます。\n今日の宿題は明日学校へ持っていきます。\n\nワン",
     "tr": {
       "zh": "山下老师：我是王。我从昨晚开始发烧，对不起，今天请假不去学校了。上午我去医院。今天的作业明天带到学校。王",
       "en": "Ms. Yamashita — this is Wang. I've had a fever since last night, so I'm sorry, but I'll be absent from school today. I'll go to the hospital this morning. I'll bring today's homework to school tomorrow. — Wang"
@@ -213,6 +226,7 @@
       {
         "q": "ワンさんは きょう 何を しますか。",
         "options": ["病院へ 行きます", "病院へ 行ってから、学校へ 行きます", "学校へ しゅくだいを 持って いきます", "あした 病院へ 行きます"],
+        "okj": [null, null, "学校へ宿題を持っていきます", "明日病院へ行きます"],
         "answer": 0,
         "why": { "zh": "今天「学校を 休みます」，「午前中に 病院へ 行きます」。", "en": "Today he's 「学校を 休みます」 (absent) and 「午前中に 病院へ 行きます」." },
         "wrong": [
@@ -230,6 +244,7 @@
     "difficulty": 3,
     "intro": "アリさんは 友だちの ケンさんから メールを もらいました。",
     "passage": "アリさん\n\n来週の 土曜日の パーティーですが、六時からじゃなくて、七時からに なりました。\nパーティーの 前に、いっしょに 飲み物を 買いに 行きませんか。六時半に わたしの うちの 前で 会いましょう。\n\nケン",
+    "kj": "アリさん\n\n来週の土曜日のパーティーですが、六時からじゃなくて、七時からになりました。\nパーティーの前に、一緒に飲み物を買いに行きませんか。六時半に私のうちの前で会いましょう。\n\nケン",
     "tr": {
       "zh": "阿里：下星期六的聚会不是六点开始了，改成七点开始。聚会之前要不要一起去买饮料？六点半在我家门口见吧。健",
       "en": "Ali — about next Saturday's party: it now starts at seven, not six. Shall we go and buy drinks together before it? Let's meet in front of my place at half past six. — Ken"

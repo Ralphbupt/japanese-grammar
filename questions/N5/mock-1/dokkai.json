@@ -5,6 +5,7 @@
     "difficulty": 2,
     "intro": "キムさんは 「わたしの アルバイト」の さくぶんを 書きました。",
     "passage": "わたしは 毎週 土曜日と 日曜日に、駅の 前の パン屋で アルバイトを して います。店は 朝 七時からですから、わたしは 六時半に 店へ 行きます。朝は お客さんが たくさん 来ますから、とても [[1]]。でも、店の 人は みんな やさしいですから、だいじょうぶです。\nわたしは 店で パンを [[2]]、お客さんと 話したり します。日本語の 勉強にも なります。\n先週、わたしは はじめて パンを 作りました。店長 [[3]] 「上手ですね」と 言いました。とても うれしかったです。\n[[4]]、自分の 店を 持ちたいです。",
+    "kj": "私は毎週土曜日と日曜日に、駅の前のパン屋でアルバイトをしています。店は朝七時からですから、私は六時半に店へ行きます。朝はお客さんがたくさん来ますから、とても忙しいです。でも、店の人はみんな優しいですから、大丈夫です。\n私は店でパンを売ったり、お客さんと話したりします。日本語の勉強にもなります。\n先週、私は初めてパンを作りました。店長が「上手ですね」と言いました。とてもうれしかったです。\nいつか、自分の店を持ちたいです。",
     "tr": {
       "zh": "我每周六和周日在车站前的面包店打工。店早上七点开门，所以我六点半到店里。早上客人很多，非常忙。不过店里的人都很亲切，所以没问题。我在店里卖卖面包、和客人聊聊天，这对学日语也有帮助。上周我第一次做了面包。店长说：“做得真好啊。”我非常高兴。总有一天，我想拥有自己的店。",
       "en": "Every Saturday and Sunday I work part-time at a bakery in front of the station. The shop opens at seven, so I get there at six-thirty. Lots of customers come in the morning, so it's very busy. But everyone at the shop is kind, so it's fine. At the shop I sell bread, chat with customers and so on — it's good Japanese practice too. Last week I made bread for the first time. The manager said, “That's well done.” I was really happy. Someday I want to have a shop of my own."
@@ -16,6 +17,12 @@
           "いそがしかったです",
           "ひまです",
           "いそがしく ありません"
+        ],
+        "okj": [
+          "忙しいです",
+          "忙しかったです",
+          "暇です",
+          "忙しく ありません"
         ],
         "answer": 0,
         "why": {
@@ -44,6 +51,12 @@
           "うったら",
           "うっても",
           "うれば"
+        ],
+        "okj": [
+          "売ったり",
+          "売ったら",
+          "売っても",
+          "売れば"
         ],
         "answer": 0,
         "why": {
@@ -101,6 +114,12 @@
           "きのう",
           "どこか"
         ],
+        "okj": [
+          null,
+          "何か",
+          "昨日",
+          null
+        ],
         "answer": 0,
         "why": {
           "zh": "「持ちたいです」是将来的愿望，用「いつか」（总有一天）。",
@@ -130,6 +149,7 @@
     "difficulty": 2,
     "intro": "ヤンさんの 机の 上に、この メモが ありました。",
     "passage": "ヤンさん\n\n山田先生から 電話が ありました。あしたの 日本語の クラスは 九時からでしたが、十時からに なりました。きょうしつは 同じです。\nクラスの 前に、図書館で 先生に 本を かえして ください。先生は 九時半まで 図書館に います。\n\n田中",
+    "kj": "ヤンさん\n\n山田先生から電話がありました。明日の日本語のクラスは九時からでしたが、十時からになりました。教室は同じです。\nクラスの前に、図書館で先生に本を返してください。先生は九時半まで図書館にいます。\n\n田中",
     "tr": {
       "zh": "杨同学：山田老师来电话了。明天的日语课本来九点开始，现在改成十点开始了。教室不变。上课前，请在图书馆把书还给老师。老师九点半之前都在图书馆。田中",
       "en": "Yang — Ms. Yamada called. Tomorrow's Japanese class was going to start at nine, but it now starts at ten. Same classroom. Before class, please return the book to her at the library. She'll be in the library until nine-thirty. — Tanaka"
@@ -142,6 +162,12 @@
           "きょうしつで 日本語を 勉強します。",
           "山田先生に 電話を します。",
           "図書館で 田中さんに 本を かえします。"
+        ],
+        "okj": [
+          "図書館で 先生に 本を 返します。",
+          "教室で 日本語を 勉強します。",
+          null,
+          "図書館で 田中さんに 本を 返します。"
         ],
         "answer": 0,
         "why": {
@@ -172,6 +198,7 @@
     "difficulty": 1,
     "intro": "マイクさんが 友だちの さくらさんに メールを 書きました。",
     "passage": "さくらさん\n\nきのうの パーティーは たのしかったですね。さくらさんの ケーキは とても おいしかったです。ほかの 友だちも 「また 食べたい」と 言って いました。\nわたしも ケーキを 作りたいですから、こんど 作り方を 教えて ください。土曜日の 午後は どうですか。\n\nマイク",
+    "kj": "さくらさん\n\n昨日のパーティーは楽しかったですね。さくらさんのケーキはとてもおいしかったです。ほかの友達も「また食べたい」と言っていました。\n私もケーキを作りたいですから、今度作り方を教えてください。土曜日の午後はどうですか。\n\nマイク",
     "tr": {
       "zh": "樱：昨天的派对很开心吧。你做的蛋糕非常好吃。其他朋友也说“还想再吃”。我也想做蛋糕，下次请教我做法吧。星期六下午怎么样？迈克",
       "en": "Sakura — Yesterday's party was fun, wasn't it? Your cake was delicious. The other friends said they'd like to have it again, too. I want to make cakes myself, so please teach me how sometime. How about Saturday afternoon? — Mike"
@@ -184,6 +211,12 @@
           "さくらさんに ケーキの 作り方を 教えたいです。",
           "さくらさんと また パーティーを したいです。",
           "友だちと いっしょに また ケーキを 食べたいです。"
+        ],
+        "okj": [
+          "さくらさんに ケーキの 作り方を 習いたいです。",
+          null,
+          null,
+          "友達と 一緒に また ケーキを 食べたいです。"
         ],
         "answer": 0,
         "why": {
@@ -214,6 +247,7 @@
     "difficulty": 2,
     "intro": "これは 留学生の アナさんが 書いた 作文です。",
     "passage": "自転車\n\nわたしは 去年の 四月に 日本へ 来ました。はじめは 毎日 バスで 学校へ 行って いました。バスは 便利ですが、一回 二百円 かかります。それに、朝は 人が 多くて、いつも 立って いました。\n六月に、となりの 部屋の 林さんから 古い 自転車を もらいました。林さんは 「新しい 自転車を 買いましたから、これは もう 使いません。どうぞ」と 言いました。\n今は 毎朝 自転車で 学校へ 行きます。二十分ぐらい かかりますが、お金は かかりません。でも、雨の 日は あぶないですから、バスに 乗ります。\n休みの 日も 自転車で 町の いろいろな 所へ 行きます。きれいな 公園や おいしい パン屋が ありました。こんど、林さんと いっしょに 自転車で 海まで 行きたいです。",
+    "kj": "自転車\n\n私は去年の四月に日本へ来ました。初めは毎日バスで学校へ行っていました。バスは便利ですが、一回二百円かかります。それに、朝は人が多くて、いつも立っていました。\n六月に、隣の部屋の林さんから古い自転車をもらいました。林さんは「新しい自転車を買いましたから、これはもう使いません。どうぞ」と言いました。\n今は毎朝自転車で学校へ行きます。二十分ぐらいかかりますが、お金はかかりません。でも、雨の日は危ないですから、バスに乗ります。\n休みの日も自転車で町のいろいろな所へ行きます。きれいな公園やおいしいパン屋がありました。今度、林さんと一緒に自転車で海まで行きたいです。",
     "tr": {
       "zh": "自行车。我去年四月来到日本。一开始每天坐公交车去学校。公交车很方便，但是坐一次要两百日元。而且早上人很多，总是站着。六月，我从隔壁房间的林先生那里得到了一辆旧自行车。林先生说：“我买了新自行车，这辆不用了。给你吧。”现在我每天早上骑自行车去学校。大约要二十分钟，但是不花钱。不过下雨天很危险，所以坐公交车。休息日我也骑自行车去城里各种地方，发现了漂亮的公园和好吃的面包店。下次我想和林先生一起骑车去海边。",
       "en": "My bicycle. I came to Japan last April. At first I took the bus to school every day. The bus is convenient, but each ride costs 200 yen. Besides, it was crowded in the mornings and I always had to stand. In June I got an old bicycle from Mr. Hayashi, who lives next door. He said, “I bought a new bike, so I won't use this one any more. Here you go.” Now I ride to school every morning. It takes about twenty minutes, but it costs nothing. On rainy days, though, it's dangerous, so I take the bus. On days off I also ride all over town; I found pretty parks and a good bakery. Next time I'd like to ride to the sea with Mr. Hayashi."
@@ -258,6 +292,12 @@
           "アナさんが バスは 高いと 言ったから",
           "毎日 バスで 会社へ 行くから"
         ],
+        "okj": [
+          null,
+          "自転車に 乗るのが 嫌いだから",
+          null,
+          null
+        ],
         "answer": 0,
         "why": {
           "zh": "林先生说「新しい 自転車を 買いましたから、これは もう 使いません」，「から」表示理由。",
@@ -287,6 +327,7 @@
     "difficulty": 2,
     "intro": "リーさんは 先週 日本へ 来たばかりで、日本語が まだ ぜんぜん 分かりません。月曜日から 金曜日まで、朝 九時から 夜 七時まで 仕事が あります。",
     "passage": "ひかり町 日本語教室\n| クラス | 曜日 | 時間 | 一回の お金 |\n| A（はじめての 人） | 火・木 | 10:00〜12:00 | 300円 |\n| B（はじめての 人） | 土 | 14:00〜16:00 | 500円 |\n| C（少し 話せる 人） | 水 | 19:30〜21:00 | 300円 |\n| D（少し 話せる 人） | 日 | 10:00〜12:00 | 500円 |\n・入りたい 人は、クラスの 一週間 前までに 電話して ください。\n・教室は 駅の 前の ひかり会館の 二階です。",
+    "kj": "ひかり町日本語教室\n| クラス | 曜日 | 時間 | 一回のお金 |\n| A（初めての人） | 火・木 | 10:00〜12:00 | 300円 |\n| B（初めての人） | 土 | 14:00〜16:00 | 500円 |\n| C（少し話せる人） | 水 | 19:30〜21:00 | 300円 |\n| D（少し話せる人） | 日 | 10:00〜12:00 | 500円 |\n・入りたい人は、クラスの一週間前までに電話してください。\n・教室は駅の前のひかり会館の二階です。",
     "tr": {
       "zh": "光町日语教室。A班（零基础）：周二、周四 10:00–12:00，每次300日元。B班（零基础）：周六 14:00–16:00，每次500日元。C班（会说一点的人）：周三 19:30–21:00，每次300日元。D班（会说一点的人）：周日 10:00–12:00，每次500日元。想参加的人请在上课一周前打电话报名。教室在车站前光会馆的二楼。",
       "en": "Hikari Town Japanese Classes. A (beginners): Tue & Thu 10:00–12:00, ¥300 a session. B (beginners): Sat 14:00–16:00, ¥500. C (those who speak a little): Wed 19:30–21:00, ¥300. D (those who speak a little): Sun 10:00–12:00, ¥500. To join, phone at least a week before the class. Classes are held on the second floor of Hikari Hall, in front of the station."

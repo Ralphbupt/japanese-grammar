@@ -8,6 +8,7 @@
     "options": ["行いて", "行って", "行きて", "行んで"],
     "answer": 1,
     "full": "毎朝 駅まで バスで 行って、電車に 乗ります。",
+    "kj": "毎朝駅までバスで行って、電車に乗ります。",
     "tr": {
       "zh": "每天早上坐公交到车站，然后坐电车。",
       "en": "Every morning I take the bus to the station and then get on the train."
@@ -41,6 +42,7 @@
     "options": ["飲みて", "飲って", "飲んて", "飲んで"],
     "answer": 3,
     "full": "昨日の 夜は 薬を 飲んで、早く 寝ました。",
+    "kj": "昨日の夜は薬を飲んで、早く寝ました。",
     "tr": {
       "zh": "昨晚吃了药，早早就睡了。",
       "en": "Last night I took some medicine and went to bed early."
@@ -74,6 +76,7 @@
     "options": ["泳いで", "泳いて", "泳ぎて", "泳って"],
     "answer": 0,
     "full": "夏休みに 海で 泳いで、それから 魚を 食べました。",
+    "kj": "夏休みに海で泳いで、それから魚を食べました。",
     "tr": {
       "zh": "暑假在海里游了泳，然后吃了鱼。",
       "en": "During the summer holiday I swam in the sea and then ate fish."
@@ -107,6 +110,7 @@
     "options": ["ください", "を", "電気", "消して"],
     "order": [2, 1, 3, 0],
     "full": "もう 寝ます。電気を 消して ください。",
+    "kj": "もう寝ます。電気を消してください。",
     "tr": {
       "zh": "我要睡了。请把灯关掉。",
       "en": "I'm going to bed now. Please turn off the light."
@@ -126,6 +130,7 @@
     "options": ["くて", "で", "な", "だ"],
     "answer": 1,
     "full": "この 部屋は 静かで、広いです。",
+    "kj": "この部屋は静かで、広いです。",
     "tr": {
       "zh": "这个房间又安静又宽敞。",
       "en": "This room is quiet and spacious."
@@ -159,6 +164,7 @@
     "options": ["歩くて", "歩って", "歩きて", "歩いて"],
     "answer": 3,
     "full": "家から 駅まで 近いので、毎日 歩いて 行きます。",
+    "kj": "家から駅まで近いので、毎日歩いて行きます。",
     "tr": {
       "zh": "从家到车站很近，所以每天走路去。",
       "en": "The station is close to my house, so I walk there every day."
@@ -192,6 +198,7 @@
     "options": ["走ります", "走りました", "走って", "走りません"],
     "answer": 1,
     "full": "昨日は 朝 早く 起きて、公園を 走りました。",
+    "kj": "昨日は朝早く起きて、公園を走りました。",
     "tr": {
       "zh": "昨天早上早早起来，在公园跑了步。",
       "en": "Yesterday I got up early and went for a run in the park."
@@ -225,6 +232,7 @@
     "options": ["おいしい", "です", "甘く", "て"],
     "order": [2, 3, 0, 1],
     "full": "この ケーキは 甘くて おいしいです。",
+    "kj": "このケーキは甘くておいしいです。",
     "tr": {
       "zh": "这个蛋糕又甜又好吃。",
       "en": "This cake is sweet and delicious."
@@ -244,6 +252,7 @@
     "options": ["帰て", "帰りて", "帰って", "帰んで"],
     "answer": 2,
     "full": "仕事が 終わって、家に 帰って、晩ご飯を 作ります。",
+    "kj": "仕事が終わって、家に帰って、晩ご飯を作ります。",
     "tr": {
       "zh": "下班后回到家，做晚饭。",
       "en": "After work I go home and make dinner."
@@ -277,6 +286,7 @@
     "options": ["いくて", "よくて", "いいで", "いいくて"],
     "answer": 1,
     "full": "田中さんは 頭が よくて、やさしい 人です。",
+    "kj": "田中さんは頭がよくて、優しい人です。",
     "tr": {
       "zh": "田中又聪明又温柔。",
       "en": "Tanaka is smart and kind."
@@ -310,6 +320,7 @@
     "options": ["見って", "見て", "見いて", "見んで"],
     "answer": 1,
     "full": "昨日は 友達と 映画を 見て、いっしょに 晩ご飯を 食べました。",
+    "kj": "昨日は友達と映画を見て、一緒に晩ご飯を食べました。",
     "tr": {
       "zh": "昨天和朋友看了电影，然后一起吃了晚饭。",
       "en": "Yesterday I saw a movie with a friend, and then we had dinner together."

@@ -8,6 +8,7 @@
     "options": ["寝よう", "寝ろう", "寝おう", "寝るよう"],
     "answer": 0,
     "full": "もう 12時だ。あしたも 早いから、そろそろ 寝よう。",
+    "kj": "もう12時だ。明日も早いから、そろそろ寝よう。",
     "tr": {
       "zh": "已经12点了。明天也要早起，差不多该睡了。",
       "en": "It's already midnight. I have an early start tomorrow too, so I'd better go to bed."
@@ -41,6 +42,7 @@
     "options": ["よう", "ろう", "おう", "ましょう"],
     "answer": 0,
     "full": "来年 日本へ 留学しようと 思って います。",
+    "kj": "来年日本へ留学しようと思っています。",
     "tr": {
       "zh": "我打算明年去日本留学。",
       "en": "I'm thinking of going to Japan to study next year."
@@ -74,6 +76,7 @@
     "options": ["と", "思って", "料理を", "作ろう"],
     "order": [2, 3, 0, 1],
     "full": "週末は 料理を 作ろうと 思って います。",
+    "kj": "週末は料理を作ろうと思っています。",
     "tr": {
       "zh": "周末我打算做饭。",
       "en": "I'm thinking of cooking this weekend."
@@ -91,8 +94,10 @@
     "difficulty": 1,
     "stem": "A「夏休みに 何を する（　）ですか。」\nB「国へ 帰ります。」",
     "options": ["つもり", "たい", "ましょう", "ほしい"],
+    "okj": [null, null, null, "欲しい"],
     "answer": 0,
     "full": "A「夏休みに 何を する つもりですか。」 B「国へ 帰ります。」",
+    "kj": "A「夏休みに何をするつもりですか。」\nB「国へ帰ります。」",
     "tr": {
       "zh": "A：暑假你打算做什么？ B：回国。",
       "en": "A: What are you planning to do over the summer break? B: I'm going back to my country."
@@ -124,8 +129,10 @@
     "difficulty": 2,
     "stem": "A「田中さんと 結婚するんですか。」\nB「いいえ、彼と 結婚する（　）は ありません。」",
     "options": ["つもり", "よう", "たい", "ほしい"],
+    "okj": [null, null, null, "欲しい"],
     "answer": 0,
     "full": "A「田中さんと 結婚するんですか。」 B「いいえ、彼と 結婚する つもりは ありません。」",
+    "kj": "A「田中さんと結婚するんですか。」\nB「いいえ、彼と結婚するつもりはありません。」",
     "tr": {
       "zh": "A：你要和田中结婚吗？ B：不，我没打算和他结婚。",
       "en": "A: Are you going to marry Tanaka? B: No, I have no intention of marrying him."
@@ -159,6 +166,7 @@
     "options": ["つもり", "飲まない", "です", "お酒を"],
     "order": [3, 1, 0, 2],
     "full": "体に よくないので、今年は お酒を 飲まない つもりです。",
+    "kj": "体によくないので、今年はお酒を飲まないつもりです。",
     "tr": {
       "zh": "因为对身体不好，今年我打算不喝酒。",
       "en": "It's bad for my health, so this year I intend not to drink."
@@ -176,8 +184,10 @@
     "difficulty": 1,
     "stem": "あしたの 会議は 午後 3時に 始まる（　）です。",
     "options": ["予定", "つもり", "たい", "ほしい"],
+    "okj": [null, null, null, "欲しい"],
     "answer": 0,
     "full": "あしたの 会議は 午後 3時に 始まる 予定です。",
+    "kj": "明日の会議は午後3時に始まる予定です。",
     "tr": {
       "zh": "明天的会议预定下午3点开始。",
       "en": "Tomorrow's meeting is scheduled to start at 3 p.m."
@@ -211,6 +221,7 @@
     "options": ["の", "な", "に", "を"],
     "answer": 0,
     "full": "あしたは 休みの 予定です。",
+    "kj": "明日は休みの予定です。",
     "tr": {
       "zh": "明天预定休息。",
       "en": "I'm scheduled to have tomorrow off."
@@ -244,6 +255,7 @@
     "options": ["できる", "ビルは", "予定", "来年"],
     "order": [1, 3, 0, 2],
     "full": "駅の 前の ビルは 来年 できる 予定です。",
+    "kj": "駅の前のビルは来年できる予定です。",
     "tr": {
       "zh": "车站前的大楼预定明年建成。",
       "en": "The building in front of the station is scheduled to be finished next year."
@@ -263,6 +275,7 @@
     "options": ["持ちましょうか", "持ちませんか", "持って ください", "持ちたいですか"],
     "answer": 0,
     "full": "A「荷物が たくさん ありますね。一つ 持ちましょうか。」 B「あ、すみません。ありがとう ございます。」",
+    "kj": "A「荷物がたくさんありますね。一つ持ちましょうか。」\nB「あ、すみません。ありがとうございます。」",
     "tr": {
       "zh": "A：你的行李真多啊。我帮你拿一个吧？ B：啊，不好意思。谢谢。",
       "en": "A: You've got a lot of bags. Shall I carry one for you? B: Oh, sorry — thank you."
@@ -296,6 +309,7 @@
     "options": ["食べましょう", "食べるましょう", "食べりましょう", "食べてましょう"],
     "answer": 0,
     "full": "A「もう 12時ですね。そろそろ 昼ご飯を 食べましょう。」 B「ええ、そう しましょう。」",
+    "kj": "A「もう12時ですね。そろそろ昼ご飯を食べましょう。」\nB「ええ、そうしましょう。」",
     "tr": {
       "zh": "A：已经12点了。差不多该吃午饭了吧。 B：嗯，就这么办吧。",
       "en": "A: It's already noon. Let's have lunch. B: Yes, let's."
@@ -329,6 +343,7 @@
     "options": ["開け", "窓", "ましょう", "を"],
     "order": [1, 3, 0, 2],
     "full": "A「この 部屋、暑いですね。窓を 開けましょうか。」 B「ええ、お願いします。」",
+    "kj": "A「この部屋、暑いですね。窓を開けましょうか。」\nB「ええ、お願いします。」",
     "tr": {
       "zh": "A：这个房间好热啊。我把窗户打开吧？ B：好的，麻烦你了。",
       "en": "A: It's hot in this room. Shall I open the window? B: Yes, please."
@@ -346,8 +361,10 @@
     "difficulty": 1,
     "stem": "わたしは 新しい 自転車が（　）。",
     "options": ["ほしいです", "ほしがって います", "買いたがります", "ほしがります"],
+    "okj": ["欲しいです", "欲しがって います", null, "欲しがります"],
     "answer": 0,
     "full": "わたしは 新しい 自転車が ほしいです。",
+    "kj": "私は新しい自転車が欲しいです。",
     "tr": {
       "zh": "我想要一辆新自行车。",
       "en": "I want a new bicycle."
@@ -379,8 +396,10 @@
     "difficulty": 2,
     "stem": "妹は いつも わたしの 服を 着（　）。",
     "options": ["たがります", "たいです", "ほしいです", "ほしがります"],
+    "okj": [null, null, "欲しいです", "欲しがります"],
     "answer": 0,
     "full": "妹は いつも わたしの 服を 着たがります。",
+    "kj": "妹はいつも私の服を着たがります。",
     "tr": {
       "zh": "妹妹总是想穿我的衣服。",
       "en": "My little sister always wants to wear my clothes."
@@ -414,6 +433,7 @@
     "options": ["ものを", "たがって", "甘い", "食べ"],
     "order": [2, 0, 3, 1],
     "full": "子どもは いつも 甘い ものを 食べたがって います。",
+    "kj": "子どもはいつも甘いものを食べたがっています。",
     "tr": {
       "zh": "孩子总是想吃甜的东西。",
       "en": "Kids always want to eat sweet things."

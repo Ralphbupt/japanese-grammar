@@ -5,6 +5,7 @@
     "difficulty": 2,
     "intro": "これは 留学生の リンさんが ホームステイの 家族に 書いた 手紙です。",
     "passage": "山田さんの みなさんへ\n\nお元気ですか。東京に 帰ってから、もう 一か月に なりました。\n夏休みの 二週間、本当に お世話に なりました。初めて 山田さんの 家に 着いた 日、わたしは とても きんちょうして いました。日本語が あまり 上手じゃ なかったからです。でも、お母さんが ゆっくり 話して くださったので、だんだん 安心しました。\nいちばん 楽しかったのは、おじいさんと いっしょに はたけで 野菜を 作った ことです。わたしは 大きい 町で 生まれたので、土に さわった ことが ほとんど ありませんでした。朝 早く 起きるのは 大変でしたが、自分で とった トマトは とても おいしかったです。\n東京に 帰ってから、わたしも ベランダで 小さい トマトを 育て始めました。まだ 赤く なりませんが、毎朝 水を やって います。\n来年の 春、もう 一度 遊びに 行っても いいですか。今度は わたしが みなさんに 中国の 料理を 作って あげたいと 思って います。\n\nリン",
+    "kj": "山田さんの皆さんへ\n\nお元気ですか。東京に帰ってから、もう一か月になりました。\n夏休みの二週間、本当にお世話になりました。初めて山田さんの家に着いた日、私はとても緊張していました。日本語があまり上手じゃなかったからです。でも、お母さんがゆっくり話してくださったので、だんだん安心しました。\n一番楽しかったのは、おじいさんと一緒に畑で野菜を作ったことです。私は大きい町で生まれたので、土に触ったことがほとんどありませんでした。朝早く起きるのは大変でしたが、自分で採ったトマトはとてもおいしかったです。\n東京に帰ってから、私もベランダで小さいトマトを育て始めました。まだ赤くなりませんが、毎朝水をやっています。\n来年の春、もう一度遊びに行ってもいいですか。今度は私が皆さんに中国の料理を作ってあげたいと思っています。\n\nリン",
     "tr": {
       "zh": "致山田家的各位：大家好吗？我回到东京已经一个月了。暑假的两个星期，真的承蒙照顾了。第一次到山田家的那天，我非常紧张，因为我的日语不太好。不过妈妈对我说话说得很慢，我渐渐就放心了。最开心的是和爷爷一起在田里种菜。我在大城市出生，几乎没有摸过泥土。早上早起很辛苦，但自己摘的西红柿非常好吃。回到东京以后，我也开始在阳台上种小西红柿了。虽然还没变红，但我每天早上都浇水。明年春天，我可以再去玩吗？下次我想给大家做中国菜。林",
       "en": "Dear Yamada family, How are you? It's already been a month since I came back to Tokyo. Thank you so much for looking after me for those two weeks of the summer holidays. The day I first arrived at your house I was very nervous, because my Japanese wasn't very good. But Mother spoke to me slowly, so little by little I felt at ease. The most fun was growing vegetables in the field with Grandfather. I was born in a big city, so I had hardly ever touched soil. Getting up early was hard, but the tomatoes I picked myself were delicious. Since coming back to Tokyo I've started growing small tomatoes on my balcony too. They haven't turned red yet, but I water them every morning. May I come and visit again next spring? Next time I'd like to cook Chinese food for all of you. Lin"
@@ -18,6 +19,12 @@
           "お母さんが 速く 話したから",
           "朝 早く 起きなければ ならなかったから",
           "土に さわった ことが なかったから"
+        ],
+        "okj": [
+          null,
+          null,
+          null,
+          "土に触ったことがなかったから"
         ],
         "answer": 0,
         "why": {
@@ -48,6 +55,12 @@
           "毎朝 赤い トマトを とって 食べて いる。",
           "山田さんの 家族に 中国の 料理を 作って いる。"
         ],
+        "okj": [
+          null,
+          "おじいさんと畑で野菜を作っている。",
+          "毎朝赤いトマトを採って食べている。",
+          null
+        ],
         "answer": 0,
         "why": {
           "zh": "第四段：回东京以后「ベランダで 小さい トマトを 育て始めました」「毎朝 水を やって います」，这是现在的事。",
@@ -76,6 +89,12 @@
           "夏休みに もう 一度 山田さんの 家に 二週間 とまる。",
           "山田さんの 家族を 東京に よんで、トマトを 見せる。",
           "おじいさんに 中国の 料理の 作り方を 習う。"
+        ],
+        "okj": [
+          null,
+          "夏休みにもう一度山田さんの家に二週間泊まる。",
+          "山田さんの家族を東京に呼んで、トマトを見せる。",
+          null
         ],
         "answer": 0,
         "why": {
@@ -106,6 +125,7 @@
     "difficulty": 2,
     "intro": "これは 大学生の キムさんが 書いた 作文です。",
     "passage": "アルバイトで 分かった こと\n\nわたしは 去年の 秋から 駅の 前の パン屋で アルバイトを して います。最初は お金の ために 始めましたが、今は ほかの 理由も あります。\nはじめの 一か月は 失敗ばかりでした。お客さんの 日本語が 速くて、聞き取れない ことが 多かったです。ある 日、おつりを まちがえて しまい、店長に 注意されました。とても はずかしくて、もう やめようと 思いました。\nでも、その あと 店長が 「だれでも 最初は まちがえるよ。大切なのは 同じ ことを 二回 しない ことだ」と 言って くれました。それから、わたしは 小さい ノートに 失敗した ことを 書くように しました。仕事の 前に いつも その ノートを 読みます。\n今では よく 来る お客さんの 名前も 覚えて、「キムさん、いつも ありがとう」と 言われる ことも あります。アルバイトは お金だけでは なく、人と 話す 楽しさも 教えて くれたと 思います。",
+    "kj": "アルバイトで分かったこと\n\n私は去年の秋から駅の前のパン屋でアルバイトをしています。最初はお金のために始めましたが、今はほかの理由もあります。\n初めの一か月は失敗ばかりでした。お客さんの日本語が速くて、聞き取れないことが多かったです。ある日、おつりを間違えてしまい、店長に注意されました。とても恥ずかしくて、もうやめようと思いました。\nでも、そのあと店長が「誰でも最初は間違えるよ。大切なのは同じことを二回しないことだ」と言ってくれました。それから、私は小さいノートに失敗したことを書くようにしました。仕事の前にいつもそのノートを読みます。\n今ではよく来るお客さんの名前も覚えて、「キムさん、いつもありがとう」と言われることもあります。アルバイトはお金だけではなく、人と話す楽しさも教えてくれたと思います。",
     "tr": {
       "zh": "从打工中明白的事。我从去年秋天开始在车站前的面包店打工。一开始是为了钱才做的，但现在也有别的理由。头一个月净是失败。客人的日语说得很快，我经常听不懂。有一天我找错了零钱，被店长批评了。我非常难为情，想不干了。但是后来店长对我说：“谁一开始都会出错。重要的是同样的错误不犯第二次。”从那以后，我开始把犯过的错写在一个小本子上，每次上班前都会看一遍。现在我也记住了常来的客人的名字，有时客人还会对我说“金同学，一直以来谢谢你”。我觉得打工教给我的不只是钱，还有和人交谈的乐趣。",
       "en": "What my part-time job taught me. Since last autumn I've been working part-time at a bakery in front of the station. I started it for the money, but now I have other reasons too. The first month was nothing but mistakes. Customers spoke Japanese fast and I often couldn't catch what they said. One day I gave the wrong change and the manager told me off. I was so embarrassed that I thought I'd quit. But afterwards the manager said, \"Everyone makes mistakes at first. What matters is not making the same one twice.\" After that I started writing my mistakes in a small notebook, and I always read it before work. Now I know the names of the regulars, and sometimes they say, \"Kim, thanks as always.\" I think the job has taught me not just about money but how enjoyable it is to talk with people."
@@ -118,6 +138,12 @@
           "お客さんの 日本語が 分からなくて、お客さんに おこられたから",
           "仕事が 大変なのに、お金が 少なかったから",
           "よく 来る お客さんの 名前が 覚えられなかったから"
+        ],
+        "okj": [
+          "おつりを間違えて、店長に注意されたから",
+          "お客さんの日本語が分からなくて、お客さんに怒られたから",
+          null,
+          null
         ],
         "answer": 0,
         "why": {
@@ -148,6 +174,12 @@
           "お客さんに ゆっくり 話して もらうように たのむ。",
           "同じ ことを 二回 聞かないように、店長の 話を 書く。"
         ],
+        "okj": [
+          null,
+          null,
+          "お客さんにゆっくり話してもらうように頼む。",
+          null
+        ],
         "answer": 0,
         "why": {
           "zh": "第三段：「小さい ノートに 失敗した ことを 書くように しました。仕事の 前に いつも その ノートを 読みます」。",
@@ -176,6 +208,12 @@
           "お金の ためだけに はたらいて いる。",
           "失敗が 多いので、早く やめたい。",
           "店長が きびしいので、ほかの 店で はたらきたい。"
+        ],
+        "okj": [
+          null,
+          "お金のためだけに働いている。",
+          null,
+          "店長が厳しいので、ほかの店で働きたい。"
         ],
         "answer": 0,
         "why": {
@@ -206,6 +244,7 @@
     "difficulty": 2,
     "intro": "これは 高校生の さとうさんが 書いた 作文です。",
     "passage": "祖母と スマートフォン\n\n祖母は 今年 七十五さいです。先月、祖母は 初めて スマートフォンを 買いました。前から 使って いた 電話が こわれて しまったからです。\n祖母は 「むずかしそうだから、使いたくない」と 言って いましたが、わたしが 週に 二回 祖母の 家へ 行って、使い方を 教える ことに しました。最初は 電話を かける ことしか できませんでしたが、二週間ぐらいで メールが 送れるように なりました。\n先週の 日曜日、祖母から 写真が 送られて きました。祖母が 庭で 育てて いる 花の 写真でした。「きれいに さいたので、見せたかった」と 書いて ありました。わたしは とても うれしく なりました。\n教えるのは 大変だと 思って いましたが、祖母が 少しずつ できるように なるのを 見るのは 楽しかったです。今度は 祖母に ビデオ電話の 使い方を 教える つもりです。そうすれば、遠くに 住んで いる おじとも 顔を 見ながら 話せるからです。",
+    "kj": "祖母とスマートフォン\n\n祖母は今年七十五歳です。先月、祖母は初めてスマートフォンを買いました。前から使っていた電話が壊れてしまったからです。\n祖母は「難しそうだから、使いたくない」と言っていましたが、私が週に二回祖母の家へ行って、使い方を教えることにしました。最初は電話をかけることしかできませんでしたが、二週間ぐらいでメールが送れるようになりました。\n先週の日曜日、祖母から写真が送られてきました。祖母が庭で育てている花の写真でした。「きれいに咲いたので、見せたかった」と書いてありました。私はとてもうれしくなりました。\n教えるのは大変だと思っていましたが、祖母が少しずつできるようになるのを見るのは楽しかったです。今度は祖母にビデオ電話の使い方を教えるつもりです。そうすれば、遠くに住んでいるおじとも顔を見ながら話せるからです。",
     "tr": {
       "zh": "奶奶和智能手机。奶奶今年七十五岁。上个月，奶奶第一次买了智能手机，因为以前用的电话坏了。奶奶说过“看起来很难，不想用”，但我决定每周去奶奶家两次，教她怎么用。一开始她只会打电话，大约两个星期后就能发邮件了。上周日，奶奶给我发来了一张照片，是她在院子里种的花。上面写着：“开得很漂亮，想给你看看。”我非常高兴。我本来以为教人很辛苦，但看着奶奶一点一点学会，觉得很开心。下次我打算教奶奶怎么用视频通话。这样她就能和住在远处的叔叔一边看着脸一边聊天了。",
       "en": "My grandmother and her smartphone. My grandmother is 75 this year. Last month she bought a smartphone for the first time, because the phone she had been using broke. She said, \"It looks hard, so I don't want to use it,\" but I decided to go to her house twice a week and teach her how to use it. At first she could only make calls, but after about two weeks she could send messages. Last Sunday she sent me a photo — of the flowers she grows in her garden. She wrote, \"They bloomed so beautifully I wanted to show you.\" I was really happy. I'd thought teaching would be hard, but watching her learn little by little was fun. Next I plan to teach her video calls. That way she can see my uncle's face while she talks to him, even though he lives far away."
@@ -219,6 +258,12 @@
           "さとうさんに すすめられたから",
           "花の 写真を 送りたかったから",
           "おじと 顔を 見ながら 話したかったから"
+        ],
+        "okj": [
+          "前の電話が壊れたから",
+          "佐藤さんに勧められたから",
+          null,
+          null
         ],
         "answer": 0,
         "why": {
@@ -249,6 +294,12 @@
           "祖母が 初めて さとうさんに 電話を かけた。",
           "祖母が おじと ビデオ電話で 話した。"
         ],
+        "okj": [
+          "祖母が佐藤さんに花の写真を送った。",
+          "佐藤さんが祖母に花の写真を送った。",
+          "祖母が初めて佐藤さんに電話をかけた。",
+          null
+        ],
         "answer": 0,
         "why": {
           "zh": "第三段：「祖母から 写真が 送られて きました」，「〜から 送られて きた」表示照片是奶奶发给佐藤同学的。",
@@ -277,6 +328,12 @@
           "祖母に 「教えて ほしい」と たのまれたから",
           "さとうさんが もう 祖母の 家へ 行けなく なるから",
           "祖母が まだ メールを 送れないから"
+        ],
+        "okj": [
+          null,
+          "祖母に「教えてほしい」と頼まれたから",
+          "佐藤さんがもう祖母の家へ行けなくなるから",
+          null
         ],
         "answer": 0,
         "why": {
@@ -307,6 +364,7 @@
     "difficulty": 3,
     "intro": "これは 留学生の マリアさんが 書いた 作文です。",
     "passage": "ゴミの 日\n\n日本に 来て、いちばん おどろいたのは ゴミの 出し方です。わたしの 国では、ゴミを 全部 いっしょに 出しても いいです。でも、わたしが 住んで いる 町では、ゴミを 四つに 分けなければ なりません。それに、出す 曜日も 決まって います。\n引っ越して 来た 次の 週、わたしは まちがえて、もえない ゴミを 火曜日に 出して しまいました。火曜日は もえる ゴミの 日でした。次の 日の 朝、外に 出ると、わたしの ゴミぶくろだけ 残って いて、「今日は 出せません」と 書いた 紙が はって ありました。\nその 日の 夕方、となりの 田中さんが ゴミの カレンダーを 持って 来て くれました。「わたしも 最初は よく まちがえましたよ」と 笑って いました。\n今は その カレンダーを れいぞうこに はって いるので、もう まちがえません。最初は めんどうだと 思いましたが、この 町が きれいなのは、みんなが ルールを 守って いるからだと 分かりました。",
+    "kj": "ゴミの日\n\n日本に来て、一番驚いたのはゴミの出し方です。私の国では、ゴミを全部一緒に出してもいいです。でも、私が住んでいる町では、ゴミを四つに分けなければなりません。それに、出す曜日も決まっています。\n引っ越して来た次の週、私は間違えて、燃えないゴミを火曜日に出してしまいました。火曜日は燃えるゴミの日でした。次の日の朝、外に出ると、私のゴミ袋だけ残っていて、「今日は出せません」と書いた紙が貼ってありました。\nその日の夕方、隣の田中さんがゴミのカレンダーを持って来てくれました。「私も最初はよく間違えましたよ」と笑っていました。\n今はそのカレンダーを冷蔵庫に貼っているので、もう間違えません。最初は面倒だと思いましたが、この町がきれいなのは、みんながルールを守っているからだと分かりました。",
     "tr": {
       "zh": "倒垃圾的日子。来日本以后，最让我吃惊的是倒垃圾的方法。在我的国家，垃圾全部一起扔也可以。但是在我住的这个镇上，垃圾必须分成四类，而且扔的日子也是固定的。搬来后的第二周，我搞错了，在星期二扔了不可燃垃圾。星期二是可燃垃圾的日子。第二天早上出门一看，只有我的垃圾袋还留在那里，上面贴着一张写着“今天不能扔”的纸。那天傍晚，邻居田中女士给我拿来了一份垃圾日历。她笑着说：“我一开始也经常搞错哦。”现在我把那份日历贴在冰箱上，所以再也不会弄错了。一开始我觉得很麻烦，但后来明白了：这个镇这么干净，是因为大家都遵守规则。",
       "en": "Garbage day. What surprised me most when I came to Japan was how you put out the garbage. In my country you can put it all out together. But in the town where I live, you have to sort it into four kinds, and the days are fixed too. The week after I moved in, I made a mistake and put out non-burnable garbage on a Tuesday. Tuesday was the day for burnable garbage. The next morning when I went out, only my bag was left, with a note stuck on it saying \"Cannot be collected today.\" That evening my neighbour Ms Tanaka brought me a garbage calendar. She laughed and said, \"I often got it wrong at first too.\" Now I have that calendar on my fridge, so I don't make mistakes any more. At first I thought it was a nuisance, but I came to understand that this town is clean because everyone follows the rules."
@@ -319,6 +377,12 @@
           "もえる ゴミを もえない ゴミの 日に 出したから",
           "ゴミを 分けないで、全部 いっしょに 出したから",
           "田中さんの ゴミぶくろと まちがえられたから"
+        ],
+        "okj": [
+          "燃えないゴミを燃えるゴミの日に出したから",
+          "燃えるゴミを燃えないゴミの日に出したから",
+          "ゴミを分けないで、全部一緒に出したから",
+          "田中さんのゴミ袋と間違えられたから"
         ],
         "answer": 0,
         "why": {
@@ -349,6 +413,12 @@
           "カレンダーを れいぞうこに はって くれた。",
           "ルールを 守るように 強く 注意した。"
         ],
+        "okj": [
+          null,
+          null,
+          "カレンダーを冷蔵庫に貼ってくれた。",
+          null
+        ],
         "answer": 0,
         "why": {
           "zh": "第三段：「となりの 田中さんが ゴミの カレンダーを 持って 来て くれました」。",
@@ -377,6 +447,12 @@
           "めんどうなので、自分の 国の ように したい。",
           "四つに 分けるのは 多すぎるので、二つで いい。",
           "カレンダーが ないと 分からないので、むずかしい。"
+        ],
+        "okj": [
+          null,
+          "面倒なので、自分の国のようにしたい。",
+          null,
+          "カレンダーがないと分からないので、難しい。"
         ],
         "answer": 0,
         "why": {
@@ -407,6 +483,7 @@
     "difficulty": 3,
     "intro": "これは 大学生の ジョンさんが 書いた 作文です。",
     "passage": "富士山に 登って\n\n八月の はじめ、友だちの 健太さんと 富士山に 登りました。前から 日本で いちばん 高い 山に 登って みたいと 思って いたからです。\n夜 九時に 山の 下の ほうから 歩き始めました。上で 日の出を 見る つもりだったので、夜の 間に 登らなければ ならなかったのです。最初は 元気でしたが、三時間ぐらい 歩くと、頭が いたく なって きました。健太さんが 「少し 休もう」と 言って、二人で 山小屋で 一時間 休みました。\nその あと また 歩きましたが、ちょうじょうに 着く 前に 空が 明るく なって しまいました。それで、日の出は ちょうじょうでは なく、山の とちゅうで 見ました。それでも、雲の 上から 見る 太陽は 本当に きれいで、何も 言えませんでした。\nちょうじょうに 着いたのは 朝 七時でした。足は とても いたかったですが、健太さんが いっしょだったから、最後まで 登れたと 思います。来年は 弟を つれて 来たいです。",
+    "kj": "富士山に登って\n\n八月の初め、友達の健太さんと富士山に登りました。前から日本で一番高い山に登ってみたいと思っていたからです。\n夜九時に山の下のほうから歩き始めました。上で日の出を見るつもりだったので、夜の間に登らなければならなかったのです。最初は元気でしたが、三時間ぐらい歩くと、頭が痛くなってきました。健太さんが「少し休もう」と言って、二人で山小屋で一時間休みました。\nそのあとまた歩きましたが、頂上に着く前に空が明るくなってしまいました。それで、日の出は頂上ではなく、山の途中で見ました。それでも、雲の上から見る太陽は本当にきれいで、何も言えませんでした。\n頂上に着いたのは朝七時でした。足はとても痛かったですが、健太さんが一緒だったから、最後まで登れたと思います。来年は弟を連れて来たいです。",
     "tr": {
       "zh": "登富士山。八月初，我和朋友健太一起爬了富士山，因为我很早就想爬一爬日本最高的山。晚上九点，我们从山下开始走。因为打算在上面看日出，所以必须在夜里爬。一开始很有精神，但走了大约三个小时后，我开始头疼。健太说“休息一下吧”，我们两个人在山间小屋里休息了一个小时。之后又继续走，但还没到山顶天就亮了。所以日出不是在山顶，而是在半山腰看的。即使这样，从云上看到的太阳真的很美，我什么话都说不出来。到达山顶是早上七点。脚非常疼，但我觉得因为有健太在一起，我才能坚持爬到最后。明年我想带弟弟来。",
       "en": "Climbing Mount Fuji. At the beginning of August I climbed Mount Fuji with my friend Kenta. I'd long wanted to climb the highest mountain in Japan. We started walking from low on the mountain at 9 p.m. We planned to see the sunrise up there, so we had to climb during the night. At first I was full of energy, but after about three hours of walking I started getting a headache. Kenta said, \"Let's rest a bit,\" and we rested for an hour in a mountain hut. After that we walked on, but the sky got light before we reached the summit. So we saw the sunrise not at the top but partway up. Even so, the sun seen from above the clouds was so beautiful I couldn't say a word. We reached the summit at 7 a.m. My feet hurt a lot, but I think I made it all the way because Kenta was with me. Next year I want to bring my younger brother."
@@ -419,6 +496,12 @@
           "昼は 暑くて 登れないから",
           "山小屋で 休みたかったから",
           "朝 七時までに ちょうじょうに 着かなければ ならなかったから"
+        ],
+        "okj": [
+          null,
+          null,
+          null,
+          "朝七時までに頂上に着かなければならなかったから"
         ],
         "answer": 0,
         "why": {
@@ -449,6 +532,12 @@
           "山小屋の 中",
           "山の 下"
         ],
+        "okj": [
+          "山の途中",
+          "山の頂上",
+          null,
+          null
+        ],
         "answer": 0,
         "why": {
           "zh": "第三段：还没到山顶天就亮了，「日の出は ちょうじょうでは なく、山の とちゅうで 見ました」。",
@@ -477,6 +566,12 @@
           "山小屋で 休んで、元気に なったから",
           "雲の 上の 太陽が きれいだったから",
           "弟が いっしょに 来て くれたから"
+        ],
+        "okj": [
+          "健太さんが一緒にいたから",
+          null,
+          null,
+          null
         ],
         "answer": 0,
         "why": {

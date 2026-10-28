@@ -5,6 +5,7 @@
     "difficulty": 2,
     "intro": "リンさんは「わたしの 休みの 日」の さくぶんを 書きました。",
     "passage": "わたしは 日曜日に よく 公園へ 行きます。公園は うちから [[1]]、歩いて 五分です。\n公園で 本を 読んだり、さんぽを したり します。[[2]]、先週の 日曜日は 雨でしたから、どこへも 行きませんでした。うちで えいがを [[3]]。\n来週は 友だちと いっしょに 公園へ 行きたいです。",
+    "kj": "私は日曜日によく公園へ行きます。公園はうちから近くて、歩いて五分です。\n公園で本を読んだり、散歩をしたりします。でも、先週の日曜日は雨でしたから、どこへも行きませんでした。うちで映画を見ました。\n来週は友達と一緒に公園へ行きたいです。",
     "tr": {
       "zh": "我星期天常去公园。公园离家很近，走路五分钟。我在公园看看书、散散步。但是上个星期天下雨，哪儿也没去，在家看了电影。下星期我想和朋友一起去公园。",
       "en": "I often go to the park on Sundays. It's close to my home — a five-minute walk. At the park I read, take walks and so on. But last Sunday it rained, so I didn't go anywhere; I watched a film at home. Next week I want to go to the park with a friend."
@@ -12,6 +13,7 @@
     "questions": [
       {
         "options": ["ちかくて", "とおくて", "ちかいので", "ちかいです"],
+        "okj": ["近くて", "遠くて", "近いので", "近いです"],
         "answer": 0,
         "why": { "zh": "后面接「歩いて 五分です」，近才走路五分钟；形容词连接两个分句用て形「ちかくて」。", "en": "A five-minute walk means it's close; an い-adjective joining two clauses takes the て-form 「ちかくて」." },
         "wrong": [
@@ -51,6 +53,7 @@
     "difficulty": 1,
     "intro": "学校で、先生が 学生に この 紙を わたしました。",
     "passage": "みなさんへ\n\nあしたは 九時に 学校の 前に 来て ください。バスで 山へ 行きます。\nおべんとうと 飲みものを 持って きて ください。かさは いりません。\n\n田中",
+    "kj": "皆さんへ\n\n明日は九時に学校の前に来てください。バスで山へ行きます。\nお弁当と飲み物を持ってきてください。傘はいりません。\n\n田中",
     "tr": {
       "zh": "致各位：明天请九点到学校门口。我们坐巴士去山里。请带便当和饮料。不用带伞。田中",
       "en": "To everyone: Please come to the front of the school at nine tomorrow. We'll go to the mountains by bus. Bring a packed lunch and something to drink. You don't need an umbrella. — Tanaka"
@@ -59,6 +62,7 @@
       {
         "q": "学生は あした 何を 持って 行きますか。",
         "options": ["おべんとうと 飲みもの", "おべんとうと かさ", "飲みものと かさ", "おべんとうと 飲みものと かさ"],
+        "okj": ["お弁当と飲み物", "お弁当と傘", "飲み物と傘", "お弁当と飲み物と傘"],
         "answer": 0,
         "why": { "zh": "纸上写「おべんとうと 飲みものを 持って きて ください」，又说「かさは いりません」。", "en": "The note says bring 「おべんとうと 飲みもの」 and that an umbrella isn't needed." },
         "wrong": [
@@ -76,6 +80,7 @@
     "difficulty": 2,
     "intro": "マリアさんは 日曜日に プールへ 行きたいです。午前中に 行って、おひるごはんの 前に 帰りたいです。",
     "passage": "みどりプール\n| | 月〜金 | 土・日 |\n| 午前 | 9:00〜12:00 | 8:00〜11:00 |\n| 午後 | 1:00〜5:00 | 1:00〜6:00 |\n（お金）大人 500円・子ども 200円\n水曜日は 休みです。",
+    "kj": "みどりプール\n| | 月〜金 | 土・日 |\n| 午前 | 9:00〜12:00 | 8:00〜11:00 |\n| 午後 | 1:00〜5:00 | 1:00〜6:00 |\n（お金）大人 500円・子ども 200円\n水曜日は休みです。",
     "tr": {
       "zh": "绿色游泳池。周一至周五：上午9:00–12:00，下午1:00–5:00；周六、周日：上午8:00–11:00，下午1:00–6:00。费用：大人500日元，儿童200日元。周三休息。",
       "en": "Midori Pool. Mon–Fri: 9:00–12:00 and 1:00–5:00. Sat–Sun: 8:00–11:00 and 1:00–6:00. Adults ¥500, children ¥200. Closed on Wednesdays."

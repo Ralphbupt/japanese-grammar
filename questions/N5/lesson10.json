@@ -8,6 +8,7 @@
     "options": ["分からなかったら", "分からないと", "分からなかったと", "分からなくて"],
     "answer": 0,
     "full": "この 言葉の 意味が 分からなかったら、先生に 聞いて ください。",
+    "kj": "この言葉の意味が分からなかったら、先生に聞いてください。",
     "tr": {
       "zh": "如果不懂这个词的意思，请问老师。",
       "en": "If you don't know what this word means, please ask the teacher."
@@ -41,6 +42,7 @@
     "options": ["暇だったら", "暇たら", "暇かったら", "暇だと"],
     "answer": 0,
     "full": "あした 暇だったら、一緒に 映画を 見に 行こう。",
+    "kj": "明日暇だったら、一緒に映画を見に行こう。",
     "tr": {
       "zh": "明天有空的话，一起去看电影吧。",
       "en": "If you're free tomorrow, let's go see a movie together."
@@ -74,6 +76,7 @@
     "options": ["いません", "何も", "開けたら", "入って"],
     "order": [2, 1, 3, 0],
     "full": "冷蔵庫を 開けたら 何も 入って いませんでした。",
+    "kj": "冷蔵庫を開けたら何も入っていませんでした。",
     "tr": {
       "zh": "打开冰箱一看，里面什么都没有。",
       "en": "When I opened the fridge, there was nothing in it."
@@ -93,6 +96,7 @@
     "options": ["行くなら", "行ったら", "行くと", "行けば"],
     "answer": 0,
     "full": "A「来週、京都へ 行くんです。」 B「京都へ 行くなら、この 地図を 持って 行って ください。」",
+    "kj": "A「来週、京都へ行くんです。」\nB「京都へ行くなら、この地図を持って行ってください。」",
     "tr": {
       "zh": "A：我下周要去京都。 B：要去京都的话，请把这张地图带上。",
       "en": "A: I'm going to Kyoto next week. B: If you're going to Kyoto, take this map with you."
@@ -126,6 +130,7 @@
     "options": ["なら", "でも", "だけ", "より"],
     "answer": 0,
     "full": "A「新しい パソコンを 買いたいんですが…。」 B「パソコンなら、駅の 前の 店が 安いですよ。」",
+    "kj": "A「新しいパソコンを買いたいんですが…。」\nB「パソコンなら、駅の前の店が安いですよ。」",
     "tr": {
       "zh": "A：我想买台新电脑…… B：电脑的话，车站前那家店很便宜哦。",
       "en": "A: I'd like to buy a new computer… B: If it's a computer you want, the shop in front of the station is cheap."
@@ -159,6 +164,7 @@
     "options": ["本が", "なら", "勉強する", "この"],
     "order": [2, 1, 3, 0],
     "full": "A「日本語を 勉強したいです。」 B「勉強するなら この 本が いいですよ。」",
+    "kj": "A「日本語を勉強したいです。」\nB「勉強するならこの本がいいですよ。」",
     "tr": {
       "zh": "A：我想学日语。 B：要学的话，这本书不错哦。",
       "en": "A: I want to study Japanese. B: If you're going to study it, this book is good."
@@ -178,6 +184,7 @@
     "options": ["なると", "なるなら", "なっても", "なりたら"],
     "answer": 0,
     "full": "水は 0度に なると、氷に なります。",
+    "kj": "水は0度になると、氷になります。",
     "tr": {
       "zh": "水一到0度就会结冰。",
       "en": "When water reaches 0 degrees, it turns into ice."
@@ -211,6 +218,7 @@
     "options": ["帰ると", "帰るなら", "帰るまで", "帰っても"],
     "answer": 0,
     "full": "わたしは 毎日 家に 帰ると、すぐ 手を 洗います。",
+    "kj": "私は毎日家に帰ると、すぐ手を洗います。",
     "tr": {
       "zh": "我每天一回到家就马上洗手。",
       "en": "Every day, as soon as I get home, I wash my hands."

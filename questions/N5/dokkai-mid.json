@@ -5,6 +5,7 @@
     "difficulty": 2,
     "intro": "これは 学生の チェンさんが 書いた 作文です。",
     "passage": "北海道の 旅行\n\nわたしは 先月、家族と いっしょに 北海道へ 行きました。東京から ひこうきで 一時間半ぐらいでした。北海道は とても さむかったですが、雪が きれいでした。\n一日目は 大きい 公園で 雪の 中を さんぽしました。父は しゃしんを たくさん とりました。二日目は 朝 早く 市場へ 行って、魚の 店で すしを 食べました。母は 「東京の すしより おいしいです」と 言いました。\n三日目は 雪が たくさん ふりましたから、どこへも 行きませんでした。ホテルで 本を 読みました。わたしは 少し ざんねんでした。\nこんどは 夏に 行きたいです。友だちが 「夏の 北海道は 花が とても きれいですよ」と 言いましたから。",
+    "kj": "北海道の旅行\n\n私は先月、家族と一緒に北海道へ行きました。東京から飛行機で一時間半ぐらいでした。北海道はとても寒かったですが、雪がきれいでした。\n一日目は大きい公園で雪の中を散歩しました。父は写真をたくさん撮りました。二日目は朝早く市場へ行って、魚の店ですしを食べました。母は「東京のすしよりおいしいです」と言いました。\n三日目は雪がたくさん降りましたから、どこへも行きませんでした。ホテルで本を読みました。私は少し残念でした。\n今度は夏に行きたいです。友達が「夏の北海道は花がとてもきれいですよ」と言いましたから。",
     "tr": {
       "zh": "北海道之旅。上个月我和家人一起去了北海道。从东京坐飞机大约一个半小时。北海道非常冷，但是雪很美。第一天，我们在一个大公园里踏着雪散步，爸爸拍了很多照片。第二天一大早我们去了市场，在一家鱼店吃了寿司。妈妈说：“比东京的寿司好吃。”第三天下了很大的雪，所以哪儿也没去，在酒店看了书。我有点遗憾。下次我想夏天去，因为朋友说：“夏天的北海道花非常漂亮哦。”",
       "en": "My trip to Hokkaido. Last month I went to Hokkaido with my family. It was about an hour and a half by plane from Tokyo. Hokkaido was very cold, but the snow was beautiful. On the first day we walked through the snow in a big park, and my father took lots of photos. On the second day we went to the market early in the morning and ate sushi at a fish shop. My mother said, \"It's better than sushi in Tokyo.\" On the third day it snowed heavily, so we didn't go anywhere; we read books at the hotel. I was a little disappointed. Next time I want to go in summer, because a friend told me, \"Hokkaido is really beautiful in summer, with all the flowers.\""
@@ -18,6 +19,12 @@
           "公園で さんぽしました。",
           "市場で すしを 食べました。",
           "しゃしんを たくさん とりました。"
+        ],
+        "okj": [
+          null,
+          "公園で散歩しました。",
+          null,
+          "写真をたくさん撮りました。"
         ],
         "answer": 0,
         "why": {
@@ -48,6 +55,12 @@
           "父が 夏に しゃしんを とりたいと 言ったから",
           "三日目は 雪で どこへも 行けなかったから"
         ],
+        "okj": [
+          "友達が夏は花がきれいだと言ったから",
+          "母が夏のすしはおいしいと言ったから",
+          "父が夏に写真を撮りたいと言ったから",
+          null
+        ],
         "answer": 0,
         "why": {
           "zh": "最后一句说明了理由：朋友说「夏の 北海道は 花が とても きれいですよ」，句尾的「から」表示原因。",
@@ -77,6 +90,7 @@
     "difficulty": 1,
     "intro": "これは 学生の アリさんが 書いた 作文です。",
     "passage": "初めて カレーを 作った 日\n\nきのうは 日曜日でした。わたしは 初めて 一人で カレーを 作りました。\n朝、スーパーへ 行って、肉と やさいを 買いました。おこめは うちに ありましたから、買いませんでした。\n午後 三時から 作りました。やさいを 切りましたが、とても むずかしかったです。一時間ぐらい かかりました。\n六時に 姉が 帰って きました。二人で いっしょに カレーを 食べました。姉は 「おいしいですが、少し からいですね」と 言いました。わたしは からい 料理が 大好きですが、姉は あまり 好きじゃ ありません。\n来週は 姉と いっしょに ケーキを 作りたいです。",
+    "kj": "初めてカレーを作った日\n\n昨日は日曜日でした。私は初めて一人でカレーを作りました。\n朝、スーパーへ行って、肉と野菜を買いました。お米はうちにありましたから、買いませんでした。\n午後三時から作りました。野菜を切りましたが、とても難しかったです。一時間ぐらいかかりました。\n六時に姉が帰ってきました。二人で一緒にカレーを食べました。姉は「おいしいですが、少し辛いですね」と言いました。私は辛い料理が大好きですが、姉はあまり好きじゃありません。\n来週は姉と一緒にケーキを作りたいです。",
     "tr": {
       "zh": "第一次做咖喱的那天。昨天是星期天。我第一次一个人做了咖喱。早上去超市买了肉和蔬菜。家里有米，所以没买。下午三点开始做。我切了菜，但是非常难，花了大约一个小时。六点姐姐回来了，我们两个人一起吃了咖喱。姐姐说：“好吃，不过有点辣呢。”我非常喜欢辣的菜，但是姐姐不太喜欢。下星期我想和姐姐一起做蛋糕。",
       "en": "The day I made curry for the first time. Yesterday was Sunday. I made curry on my own for the first time. In the morning I went to the supermarket and bought meat and vegetables. We had rice at home, so I didn't buy any. I started cooking at three in the afternoon. I cut the vegetables, but it was really hard; it took about an hour. My older sister came home at six and we ate the curry together. She said, \"It's good, but a little spicy.\" I love spicy food, but my sister doesn't much like it. Next week I want to make a cake with her."
@@ -89,6 +103,12 @@
           "肉と おこめ",
           "やさいと おこめ",
           "肉と やさいと おこめ"
+        ],
+        "okj": [
+          "肉と野菜",
+          "肉とお米",
+          "野菜とお米",
+          "肉と野菜とお米"
         ],
         "answer": 0,
         "why": {
@@ -119,6 +139,12 @@
           "あまくて、おいしい",
           "からい 料理が 大好きだ"
         ],
+        "okj": [
+          "おいしいが、少し辛い",
+          "辛くて、おいしくない",
+          "甘くて、おいしい",
+          "辛い料理が大好きだ"
+        ],
         "answer": 0,
         "why": {
           "zh": "姐姐说「おいしいですが、少し からいですね」——好吃，但有点辣。",
@@ -148,6 +174,7 @@
     "difficulty": 2,
     "intro": "これは 大学生の 田中さんが 書いた 作文です。",
     "passage": "わたしの 友だち\n\nわたしの 友だちの キムさんを しょうかいします。キムさんは かんこくから 来ました。わたしと 同じ 大学で べんきょうして います。\nキムさんは 歌が とても 上手です。でも、スポーツは あまり 好きじゃ ありません。わたしは サッカーが 好きですから、よく キムさんを さそいますが、キムさんは いつも 「わたしは 見る だけです」と 言います。\n先週の 土曜日、キムさんの うちで いっしょに ばんごはんを 作りました。キムさんの 国の スープで、とても おいしかったです。\nキムさんは 来年の 三月に 国へ 帰ります。その 前に、二人で 京都へ 行きたいです。",
+    "kj": "私の友達\n\n私の友達のキムさんを紹介します。キムさんは韓国から来ました。私と同じ大学で勉強しています。\nキムさんは歌がとても上手です。でも、スポーツはあまり好きじゃありません。私はサッカーが好きですから、よくキムさんを誘いますが、キムさんはいつも「私は見るだけです」と言います。\n先週の土曜日、キムさんのうちで一緒に晩ご飯を作りました。キムさんの国のスープで、とてもおいしかったです。\nキムさんは来年の三月に国へ帰ります。その前に、二人で京都へ行きたいです。",
     "tr": {
       "zh": "我的朋友。我来介绍一下我的朋友金同学。金同学是从韩国来的，和我在同一所大学学习。金同学唱歌非常好，但是不太喜欢运动。我喜欢足球，所以常常约金同学，可是金同学总是说：“我只看。”上星期六，我们在金同学家一起做了晚饭，是金同学国家的汤，非常好喝。金同学明年三月要回国。在那之前，我想和他两个人去京都。",
       "en": "My friend. Let me introduce my friend Kim. Kim came from Korea and studies at the same university as me. Kim is a very good singer, but doesn't much like sports. I like football, so I often invite Kim, but Kim always says, \"I'll just watch.\" Last Saturday we cooked dinner together at Kim's place — a soup from Kim's country, and it was delicious. Kim is going back home next March. Before that, I want the two of us to go to Kyoto."
@@ -191,6 +218,12 @@
           "いっしょに サッカーを 見たい",
           "かんこくへ 行きたい"
         ],
+        "okj": [
+          null,
+          "一緒に晩ご飯を作りたい",
+          "一緒にサッカーを見たい",
+          "韓国へ行きたい"
+        ],
         "answer": 0,
         "why": {
           "zh": "最后一句：「その 前に、二人で 京都へ 行きたいです」，「その 前」就是金同学回国之前。",
@@ -220,6 +253,7 @@
     "difficulty": 3,
     "intro": "これは 日本語学校の 学生の マイさんが 書いた 作文です。",
     "passage": "わたしの アルバイト\n\nわたしは 夏休みに 友だちと 沖縄へ 旅行に 行きたいです。ですから、四月から アルバイトを 始めました。\n毎週 火曜日と 金曜日に、駅の 前の パンやで はたらいて います。時間は 午後 五時から 九時までです。\n初めは パンの 名前が 分かりませんでしたから、とても 大変でした。でも、店の 山田さんに 何回も 聞きました。今は 全部 分かります。\n店の パンは とても おいしいです。夜 八時から 少し 安く なりますから、わたしは いつも その 時間に 買って、うちへ 帰ります。\nもっと お金が ほしいですから、来月から 土曜日の 午後も はたらきます。土曜日の 午前は 日本語学校が ありますから、はたらく ことが できません。",
+    "kj": "私のアルバイト\n\n私は夏休みに友達と沖縄へ旅行に行きたいです。ですから、四月からアルバイトを始めました。\n毎週火曜日と金曜日に、駅の前のパン屋で働いています。時間は午後五時から九時までです。\n初めはパンの名前が分かりませんでしたから、とても大変でした。でも、店の山田さんに何回も聞きました。今は全部分かります。\n店のパンはとてもおいしいです。夜八時から少し安くなりますから、私はいつもその時間に買って、うちへ帰ります。\nもっとお金が欲しいですから、来月から土曜日の午後も働きます。土曜日の午前は日本語学校がありますから、働くことができません。",
     "tr": {
       "zh": "我的打工。暑假我想和朋友去冲绳旅行，所以从四月开始打工。每周二和周五，我在车站前的面包店工作，时间是下午五点到九点。一开始不知道面包的名字，所以非常辛苦。不过我问了店里的山田先生好多次，现在全都知道了。店里的面包非常好吃。晚上八点以后会便宜一点，所以我总是在那个时候买了再回家。我想多挣点钱，所以从下个月起星期六下午也要工作。星期六上午有日语学校的课，所以不能工作。",
       "en": "My part-time job. I want to go on a trip to Okinawa with a friend in the summer holidays, so in April I started a part-time job. Every Tuesday and Friday I work at the bakery in front of the station, from 5 to 9 p.m. At first I didn't know the names of the breads, so it was really hard. But I asked Mr Yamada at the shop many times, and now I know them all. The shop's bread is delicious. It gets a little cheaper from 8 p.m., so I always buy some then before going home. I want more money, so from next month I'll also work on Saturday afternoons. On Saturday mornings I have Japanese school, so I can't work then."
@@ -232,6 +266,12 @@
           "日本語学校の お金が いるから",
           "パンを 安く 買いたいから",
           "パンの 名前を おぼえたいから"
+        ],
+        "okj": [
+          null,
+          null,
+          null,
+          "パンの名前を覚えたいから"
         ],
         "answer": 0,
         "why": {
@@ -291,6 +331,7 @@
     "difficulty": 2,
     "intro": "リーさんは 日本語の 先生に 手紙を 書きました。",
     "passage": "山本先生\n\nお元気ですか。わたしは 先月、大阪から 東京へ ひっこしました。\n新しい アパートは 駅から 歩いて 十分ぐらいです。前の アパートより 少し せまいですが、新しくて きれいです。\nとなりの へやには 小さい 子どもが いる 家族が すんで います。その 子どもは 毎朝 わたしに 「おはようございます」と 言います。とても かわいいです。\nアパートの 近くに 大きい スーパーは ありませんが、小さい やおやと 本屋が あります。休みの 日は よく その 本屋へ 行きます。\n先生、こんど 東京へ 来る とき、ぜひ あそびに 来て ください。\n\n三月十日\nリー",
+    "kj": "山本先生\n\nお元気ですか。私は先月、大阪から東京へ引っ越しました。\n新しいアパートは駅から歩いて十分ぐらいです。前のアパートより少し狭いですが、新しくてきれいです。\n隣の部屋には小さい子どもがいる家族が住んでいます。その子どもは毎朝私に「おはようございます」と言います。とてもかわいいです。\nアパートの近くに大きいスーパーはありませんが、小さい八百屋と本屋があります。休みの日はよくその本屋へ行きます。\n先生、今度東京へ来るとき、ぜひ遊びに来てください。\n\n三月十日\nリー",
     "tr": {
       "zh": "山本老师：您好吗？我上个月从大阪搬到了东京。新公寓离车站走路大约十分钟。比以前的公寓小一点，但是又新又干净。隔壁住着一家有小孩的人家。那个孩子每天早上都对我说“早上好”，非常可爱。公寓附近没有大超市，但是有一家小蔬菜店和一家书店。休息日我常去那家书店。老师，下次您来东京的时候，请一定来玩。三月十日，李",
       "en": "Dear Mr Yamamoto, How are you? Last month I moved from Osaka to Tokyo. My new flat is about a ten-minute walk from the station. It's a little smaller than my old one, but it's new and clean. A family with a small child lives next door. Every morning the child says \"Good morning\" to me — very sweet. There's no big supermarket near the flat, but there's a small greengrocer and a bookshop. On my days off I often go to that bookshop. Next time you come to Tokyo, please do come and visit. March 10, Lee"
@@ -303,6 +344,12 @@
           "前の アパートより ひろくて、きれいです。",
           "駅から 近いですが、古いです。",
           "駅の 前に あって、少し せまいです。"
+        ],
+        "okj": [
+          "前のアパートより狭いですが、きれいです。",
+          "前のアパートより広くて、きれいです。",
+          null,
+          "駅の前にあって、少し狭いです。"
         ],
         "answer": 0,
         "why": {
@@ -333,6 +380,12 @@
           "小さい スーパーと やおや",
           "大きい スーパーと やおや"
         ],
+        "okj": [
+          "小さい八百屋と本屋",
+          null,
+          "小さいスーパーと八百屋",
+          "大きいスーパーと八百屋"
+        ],
         "answer": 0,
         "why": {
           "zh": "「大きい スーパーは ありませんが、小さい やおやと 本屋が あります」。",
@@ -362,6 +415,7 @@
     "difficulty": 3,
     "intro": "これは 会社員の ジョンさんが 書いた 作文です。",
     "passage": "初めて 山に のぼった 日\n\n先週の 土曜日、わたしは 会社の 人たちと 初めて 山に のぼりました。朝 七時に 駅で みんなと 会って、電車で 一時間 行きました。\n山の 道は 田中さんが よく 知って いました。田中さんは この 山に 何回も 来て いますから。山は 高くて、足が 少し いたかったですが、みんなと たくさん 話しましたから、楽しかったです。\nわたしたちは 山の 上で ひるごはんを 食べたかったです。でも、十二時ごろ 雨が ふりました。山の 上までは あと 一時間でしたが、みんなで 帰りました。山の 下の 店で あたたかい そばを 食べました。\n帰りの 電車の 中では、みんな ねて いました。こんどは 天気が いい 日に 上まで 行きたいです。",
+    "kj": "初めて山に登った日\n\n先週の土曜日、私は会社の人たちと初めて山に登りました。朝七時に駅でみんなと会って、電車で一時間行きました。\n山の道は田中さんがよく知っていました。田中さんはこの山に何回も来ていますから。山は高くて、足が少し痛かったですが、みんなとたくさん話しましたから、楽しかったです。\n私たちは山の上で昼ご飯を食べたかったです。でも、十二時ごろ雨が降りました。山の上まではあと一時間でしたが、みんなで帰りました。山の下の店で温かいそばを食べました。\n帰りの電車の中では、みんな寝ていました。今度は天気がいい日に上まで行きたいです。",
     "tr": {
       "zh": "第一次登山的那天。上星期六，我第一次和公司的同事去爬山。早上七点在车站和大家碰头，坐了一个小时电车。山路田中先生很熟悉，因为他来过这座山好多次。山很高，脚有点疼，但是和大家聊了很多，很开心。我们本来想在山顶吃午饭，可是十二点左右下雨了。离山顶只剩一个小时了，不过大家还是一起下山了。我们在山脚下的店里吃了热乎乎的荞麦面。回程的电车上大家都睡着了。下次我想在天气好的日子爬到山顶。",
       "en": "The day I climbed a mountain for the first time. Last Saturday I climbed a mountain for the first time, with people from work. We met at the station at seven in the morning and went an hour by train. Mr Tanaka knew the mountain path well — he has been to this mountain many times. The mountain was high and my feet hurt a little, but I talked a lot with everyone, so it was fun. We wanted to eat lunch at the top. But around twelve it rained. The top was only an hour away, but we all went back down. We ate hot soba at a shop at the foot of the mountain. On the train home everyone was asleep. Next time I want to reach the top on a day with good weather."
@@ -374,6 +428,12 @@
           "足が いたかったから",
           "時間が なかったから",
           "道が 分からなかったから"
+        ],
+        "okj": [
+          "雨が降ったから",
+          "足が痛かったから",
+          null,
+          null
         ],
         "answer": 0,
         "why": {

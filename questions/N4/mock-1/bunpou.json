@@ -13,8 +13,15 @@
       "ふんで",
       "ふまされて"
     ],
+    "okj": [
+      "踏まれて",
+      "踏ませて",
+      "踏んで",
+      "踏まされて"
+    ],
     "answer": 0,
     "full": "けさ こんで いる 電車の 中で、となりの 人に 足を ふまれて、とても いたかったです。",
+    "kj": "今朝混んでいる電車の中で、隣の人に足を踏まれて、とても痛かったです。",
     "tr": {
       "zh": "今天早上在拥挤的电车里，被旁边的人踩了脚，非常疼。",
       "en": "This morning on a crowded train, the person next to me stepped on my foot, and it really hurt."
@@ -55,6 +62,7 @@
     ],
     "answer": 0,
     "full": "弟は 野菜が きらいですが、母は 毎日 弟に 野菜を 少し 食べさせます。",
+    "kj": "弟は野菜が嫌いですが、母は毎日弟に野菜を少し食べさせます。",
     "tr": {
       "zh": "弟弟讨厌蔬菜，但妈妈每天都让弟弟吃一点蔬菜。",
       "en": "My little brother hates vegetables, but my mother makes him eat a few every day."
@@ -95,6 +103,7 @@
     ],
     "answer": 0,
     "full": "子どもの ころ、わたしは ピアノが きらいでしたが、母に 毎日 一時間 練習させられました。",
+    "kj": "子どものころ、私はピアノが嫌いでしたが、母に毎日一時間練習させられました。",
     "tr": {
       "zh": "小时候我讨厌钢琴，但每天被妈妈逼着练一个小时。",
       "en": "As a child I hated the piano, but my mother made me practise an hour every day."
@@ -135,6 +144,7 @@
     ],
     "answer": 0,
     "full": "駅への 道が 分からなくて こまって いたら、知らない 人が 駅まで いっしょに 来て くれました。",
+    "kj": "駅への道が分からなくて困っていたら、知らない人が駅まで一緒に来てくれました。",
     "tr": {
       "zh": "我不知道去车站的路正发愁，一个不认识的人陪我一起走到了车站。",
       "en": "I didn't know the way to the station and was stuck, and a stranger came all the way there with me."
@@ -175,6 +185,7 @@
     ],
     "answer": 0,
     "full": "体の ために、会社では エレベーターを 使わないで、かいだんを 使う ように して います。",
+    "kj": "体のために、会社ではエレベーターを使わないで、階段を使うようにしています。",
     "tr": {
       "zh": "为了身体，我在公司尽量不坐电梯，走楼梯。",
       "en": "For my health, I make a point of taking the stairs at work instead of the elevator."
@@ -215,6 +226,7 @@
     ],
     "answer": 0,
     "full": "日本へ 来た ときは あいさつしか できませんでしたが、今は 少し 日本語で 電話が できる ように なりました。",
+    "kj": "日本へ来たときは挨拶しかできませんでしたが、今は少し日本語で電話ができるようになりました。",
     "tr": {
       "zh": "刚来日本时我只会打招呼，现在已经能用日语打一点电话了。",
       "en": "When I came to Japan all I could do was say hello, but now I've become able to manage a phone call in Japanese."
@@ -256,6 +268,7 @@
     ],
     "answer": 0,
     "full": "A「来年は どう するんですか。」 B「家族とも 相談しましたが、最後は 自分で 決めて、大学院に 進む ことに しました。」",
+    "kj": "A「来年はどうするんですか。」\nB「家族とも相談しましたが、最後は自分で決めて、大学院に進むことにしました。」",
     "tr": {
       "zh": "A：明年打算怎么办？ B：也和家人商量过了，最后自己决定了要读研究生。",
       "en": "A: What are you doing next year? B: I talked it over with my family, but in the end I decided myself to go on to grad school."
@@ -296,6 +309,7 @@
     ],
     "answer": 0,
     "full": "この パソコンは 先週 買ったばかり なのに、もう 動かなく なって しまいました。",
+    "kj": "このパソコンは先週買ったばかりなのに、もう動かなくなってしまいました。",
     "tr": {
       "zh": "这台电脑上周才刚买，却已经动不了了。",
       "en": "I only bought this computer last week, and it's already stopped working."
@@ -334,8 +348,15 @@
       "あいだに",
       "ばかり"
     ],
+    "okj": [
+      null,
+      null,
+      "間に",
+      null
+    ],
     "answer": 0,
     "full": "レポートは 金曜日 までに 先生に 出して ください。おくれた レポートは 受け取りません。",
+    "kj": "レポートは金曜日までに先生に出してください。遅れたレポートは受け取りません。",
     "tr": {
       "zh": "报告请在星期五之前交给老师。迟交的报告不收。",
       "en": "Please hand your report in to the teacher by Friday. Late reports won't be accepted."
@@ -376,6 +397,7 @@
     ],
     "answer": 0,
     "full": "あしたの 朝、国から 両親が 来るので、今晩の うちに 部屋を そうじして おきます。",
+    "kj": "明日の朝、国から両親が来るので、今晩のうちに部屋を掃除しておきます。",
     "tr": {
       "zh": "明天早上父母从国内过来，所以我今晚先把房间打扫好。",
       "en": "My parents are coming from home tomorrow morning, so I'll clean my room tonight to be ready."
@@ -414,8 +436,15 @@
       "うかがいます",
       "おります"
     ],
+    "okj": [
+      null,
+      "参ります",
+      "伺います",
+      null
+    ],
     "answer": 0,
     "full": "学生「先生、あしたは 何時ごろ 研究室に いらっしゃいますか。」 先生「十時ごろには 行きますよ。」",
+    "kj": "学生「先生、明日は何時ごろ研究室にいらっしゃいますか。」\n先生「十時ごろには行きますよ。」",
     "tr": {
       "zh": "学生：老师，您明天大概几点来研究室？ 老师：十点左右会去的。",
       "en": "Student: Professor, around what time will you be coming to the lab tomorrow? Professor: I'll be there by about ten."
@@ -456,6 +485,7 @@
     ],
     "answer": 0,
     "full": "A「先生、その 荷物、重そうですね。わたしが お持ちします。」 B「ありがとう。じゃ、お願いします。」",
+    "kj": "A「先生、その荷物、重そうですね。私がお持ちします。」\nB「ありがとう。じゃ、お願いします。」",
     "tr": {
       "zh": "A：老师，那个行李看起来很重，我来帮您拿。 B：谢谢，那就拜托了。",
       "en": "A: Professor, that bag looks heavy. Let me carry it for you. B: Thank you — please do."
@@ -496,6 +526,7 @@
     ],
     "answer": 0,
     "full": "この 漢字は 何回 書いても、すぐ わすれて しまいます。",
+    "kj": "この漢字は何回書いても、すぐ忘れてしまいます。",
     "tr": {
       "zh": "这个汉字不管写多少遍，我都很快就忘。",
       "en": "No matter how many times I write this kanji, I forget it right away."
@@ -534,6 +565,12 @@
       "あまい",
       "ので"
     ],
+    "okj": [
+      null,
+      null,
+      "甘い",
+      null
+    ],
     "order": [
       2,
       0,
@@ -541,6 +578,7 @@
       3
     ],
     "full": "きのうの パーティーで あまい ケーキを 食べすぎたので、今日は 朝から おなかが いたいです。",
+    "kj": "昨日のパーティーで甘いケーキを食べすぎたので、今日は朝からおなかが痛いです。",
     "tr": {
       "zh": "昨天在派对上甜蛋糕吃多了，所以今天从早上起肚子就疼。",
       "en": "I ate too much sweet cake at the party yesterday, so my stomach has hurt since this morning."
@@ -570,6 +608,12 @@
       "ので",
       "わって"
     ],
+    "okj": [
+      null,
+      null,
+      null,
+      "割って"
+    ],
     "order": [
       1,
       3,
@@ -577,6 +621,7 @@
       2
     ],
     "full": "妹が 大切に して いた カップを わって しまったので、すぐ あやまりました。",
+    "kj": "妹が大切にしていたカップを割ってしまったので、すぐ謝りました。",
     "tr": {
       "zh": "我把妹妹很珍惜的杯子打碎了，所以马上道了歉。",
       "en": "I broke a cup my sister treasured, so I apologised right away."
@@ -606,6 +651,12 @@
       "出す",
       "あしたまでに"
     ],
+    "okj": [
+      null,
+      null,
+      null,
+      "明日までに"
+    ],
     "order": [
       3,
       2,
@@ -613,6 +664,7 @@
       1
     ],
     "full": "部長に この 書類を あしたまでに 出す ように 言われたので、今日は おそくまで 会社に のこります。",
+    "kj": "部長にこの書類を明日までに出すように言われたので、今日は遅くまで会社に残ります。",
     "tr": {
       "zh": "部长让我明天之前交这份文件，所以今天我要在公司待到很晚。",
       "en": "My manager told me to hand in this document by tomorrow, so I'm staying late at the office today."
@@ -649,6 +701,7 @@
       2
     ],
     "full": "A「来週の 土曜日に 食事会を します。来られるか どうかを 金曜日までに 知らせて ください。」 B「はい、分かりました。」",
+    "kj": "A「来週の土曜日に食事会をします。来られるかどうかを金曜日までに知らせてください。」\nB「はい、分かりました。」",
     "tr": {
       "zh": "A：下周六我们要聚餐。能不能来，请在周五之前告诉我。 B：好的，知道了。",
       "en": "A: We're having a dinner next Saturday. Please let me know by Friday whether you can come. B: OK, will do."

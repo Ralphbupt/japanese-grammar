@@ -15,6 +15,7 @@
     ],
     "answer": 0,
     "full": "わたしは 毎日 電車で 会社へ 行きます。",
+    "kj": "私は毎日電車で会社へ行きます。",
     "tr": {
       "zh": "我每天坐电车去公司。",
       "en": "I go to work by train every day."
@@ -56,6 +57,7 @@
     ],
     "answer": 0,
     "full": "A「日曜日は どこかへ 行きましたか。」 B「いいえ、どこへも 行きませんでした。うちで ねて いました。」",
+    "kj": "A「日曜日はどこかへ行きましたか。」\nB「いいえ、どこへも行きませんでした。うちで寝ていました。」",
     "tr": {
       "zh": "A：星期天去哪儿了吗？ B：没有，哪儿也没去。在家睡觉了。",
       "en": "A: Did you go anywhere on Sunday? B: No, I didn't go anywhere. I was sleeping at home."
@@ -96,6 +98,7 @@
     ],
     "answer": 0,
     "full": "わたしは 子どもの とき、一回 馬に 乗った ことが あります。少し こわかったですが、たのしかったです。",
+    "kj": "私は子どものとき、一回馬に乗ったことがあります。少し怖かったですが、楽しかったです。",
     "tr": {
       "zh": "我小时候骑过一次马。虽然有点害怕，但是很开心。",
       "en": "I rode a horse once when I was a child. It was a little scary, but fun."
@@ -136,6 +139,7 @@
     ],
     "answer": 0,
     "full": "A「夏と 冬と、どちらが 好きですか。」 B「わたしは 冬より 夏の ほうが 好きです。海で およげますから。」",
+    "kj": "A「夏と冬と、どちらが好きですか。」\nB「私は冬より夏のほうが好きです。海で泳げますから。」",
     "tr": {
       "zh": "A：夏天和冬天，你喜欢哪个？ B：比起冬天，我更喜欢夏天。因为可以在海里游泳。",
       "en": "A: Which do you like better, summer or winter? B: I like summer better than winter, because you can swim in the sea."
@@ -174,8 +178,15 @@
       "ふったり",
       "ふるのに"
     ],
+    "okj": [
+      "降ったら",
+      "降っても",
+      "降ったり",
+      "降るのに"
+    ],
     "answer": 0,
     "full": "あした 雨が ふったら、サッカーは しないで、うちで ゲームを しましょう。",
+    "kj": "明日雨が降ったら、サッカーはしないで、うちでゲームをしましょう。",
     "tr": {
       "zh": "明天要是下雨，就不踢足球了，在家玩游戏吧。",
       "en": "If it rains tomorrow, let's not play soccer and play games at home instead."
@@ -216,6 +227,7 @@
     ],
     "answer": 0,
     "full": "兄は いつも 歌を 歌いながら おふろに 入ります。",
+    "kj": "兄はいつも歌を歌いながらお風呂に入ります。",
     "tr": {
       "zh": "哥哥总是一边唱歌一边泡澡。",
       "en": "My older brother always sings while he takes a bath."
@@ -254,8 +266,15 @@
       "食べる あとで",
       "食べながら"
     ],
+    "okj": [
+      "食べる 前に",
+      "食べた 前に",
+      "食べる 後で",
+      null
+    ],
     "answer": 0,
     "full": "ごはんを 食べる まえに、手を 洗って ください。",
+    "kj": "ご飯を食べる前に、手を洗ってください。",
     "tr": {
       "zh": "吃饭之前请洗手。",
       "en": "Please wash your hands before you eat."
@@ -294,8 +313,15 @@
       "ありたいです",
       "ほしがります"
     ],
+    "okj": [
+      "欲しいです",
+      null,
+      null,
+      "欲しがります"
+    ],
     "answer": 0,
     "full": "A「たんじょうびに 何が ほしいですか。」 B「新しい くつが ほしいです。」",
+    "kj": "A「誕生日に何が欲しいですか。」\nB「新しい靴が欲しいです。」",
     "tr": {
       "zh": "A：生日想要什么？ B：想要一双新鞋。",
       "en": "A: What do you want for your birthday? B: I want new shoes."
@@ -337,6 +363,7 @@
     ],
     "answer": 0,
     "full": "A「あした、おべんとうを 持って 来なければ なりませんか。」 B「いいえ、持って 来なくても いいです。昼ごはんは 学校で 出ます。でも、持って 来たい 人は 持って 来ても いいですよ。」",
+    "kj": "A「明日、お弁当を持って来なければなりませんか。」\nB「いいえ、持って来なくてもいいです。昼ご飯は学校で出ます。でも、持って来たい人は持って来てもいいですよ。」",
     "tr": {
       "zh": "A：明天必须带便当来吗？ B：不，不带也可以。午饭学校会提供。不过想带的人也可以带来哦。",
       "en": "A: Do we have to bring a packed lunch tomorrow? B: No, you don't have to. The school provides lunch. But anyone who wants to bring one may."
@@ -382,6 +409,7 @@
       2
     ],
     "full": "A「田中さんは どの 人ですか。」 B「あそこで コーヒーを 飲んで いる 人ですよ。」",
+    "kj": "A「田中さんはどの人ですか。」\nB「あそこでコーヒーを飲んでいる人ですよ。」",
     "tr": {
       "zh": "A：田中先生是哪一位？ B：就是在那边喝咖啡的那个人。",
       "en": "A: Which one is Mr. Tanaka? B: The person drinking coffee over there."
@@ -418,6 +446,7 @@
       0
     ],
     "full": "わたしは 車を 買う ために アルバイトを して います。",
+    "kj": "私は車を買うためにアルバイトをしています。",
     "tr": {
       "zh": "我为了买车在打工。",
       "en": "I'm working a part-time job to buy a car."
@@ -454,6 +483,7 @@
       1
     ],
     "full": "わたしは 朝 早く 起きるのが 苦手です。",
+    "kj": "私は朝早く起きるのが苦手です。",
     "tr": {
       "zh": "我不擅长早起。",
       "en": "I'm bad at getting up early."
@@ -483,6 +513,12 @@
       "五さつ",
       "まで"
     ],
+    "okj": [
+      "借りる",
+      null,
+      "五冊",
+      null
+    ],
     "order": [
       2,
       3,
@@ -490,6 +526,7 @@
       1
     ],
     "full": "この 図書館では 本を 五さつ まで かりる ことが できます。",
+    "kj": "この図書館では本を五冊まで借りることができます。",
     "tr": {
       "zh": "这个图书馆最多可以借五本书。",
       "en": "At this library you can borrow up to five books."

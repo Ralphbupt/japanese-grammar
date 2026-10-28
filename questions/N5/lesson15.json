@@ -15,6 +15,7 @@
     ],
     "answer": 0,
     "full": "わたしは 日本語を 話す ことが できます。",
+    "kj": "私は日本語を話すことができます。",
     "tr": {
       "zh": "我会说日语。",
       "en": "I can speak Japanese."
@@ -56,6 +57,7 @@
     ],
     "answer": 0,
     "full": "【図書館の お知らせ】 本は 一人 三冊まで 借りる ことが できます。",
+    "kj": "【図書館のお知らせ】本は一人三冊まで借りることができます。",
     "tr": {
       "zh": "【图书馆通知】每人最多可以借三本书。",
       "en": "[Library notice] Each person may borrow up to three books."
@@ -94,6 +96,12 @@
       "買う",
       "きっぷを"
     ],
+    "okj": [
+      null,
+      null,
+      null,
+      "切符を"
+    ],
     "order": [
       3,
       2,
@@ -101,6 +109,7 @@
       0
     ],
     "full": "この 駅では インターネットで きっぷを 買う ことが できます。",
+    "kj": "この駅ではインターネットで切符を買うことができます。",
     "tr": {
       "zh": "在这个车站可以在网上买票。",
       "en": "At this station you can buy tickets online."
@@ -132,6 +141,7 @@
     ],
     "answer": 0,
     "full": "いつもは 朝ご飯を 食べますが、時々 食べない ことが あります。",
+    "kj": "いつもは朝ご飯を食べますが、時々食べないことがあります。",
     "tr": {
       "zh": "平时都吃早饭，但有时不吃。",
       "en": "I usually eat breakfast, but sometimes I don't."
@@ -172,6 +182,7 @@
     ],
     "answer": 0,
     "full": "A「あしたの テスト、だいじょうぶかな。」 B「たくさん 勉強したでしょう。そんなに 心配する ことは ないよ。」",
+    "kj": "A「明日のテスト、大丈夫かな。」\nB「たくさん勉強したでしょう。そんなに心配することはないよ。」",
     "tr": {
       "zh": "A：明天的考试，没问题吧…… B：你学了那么多嘛。没必要那么担心。",
       "en": "A: I wonder if tomorrow's test will be OK. B: You studied a lot, right? No need to worry that much."
@@ -217,6 +228,7 @@
       2
     ],
     "full": "駅は 近いですから、タクシーで 行く ことは ありません。歩いて 行きましょう。",
+    "kj": "駅は近いですから、タクシーで行くことはありません。歩いて行きましょう。",
     "tr": {
       "zh": "车站很近，没必要坐出租车去。走着去吧。",
       "en": "The station is close, so there's no need to take a taxi. Let's walk."
@@ -248,6 +260,7 @@
     ],
     "answer": 0,
     "full": "A「どうして きのう 学校を 休んだんですか。」 B「すみません。頭が 痛かった んです。」",
+    "kj": "A「どうして昨日学校を休んだんですか。」\nB「すみません。頭が痛かったんです。」",
     "tr": {
       "zh": "A：昨天为什么没来学校？ B：对不起，因为我头疼。",
       "en": "A: Why were you absent from school yesterday? B: Sorry — I had a headache."
@@ -288,6 +301,7 @@
     ],
     "answer": 0,
     "full": "A「今日は 早く 帰りますね。」 B「ええ、あしたは テストなんです。」",
+    "kj": "A「今日は早く帰りますね。」\nB「ええ、明日はテストなんです。」",
     "tr": {
       "zh": "A：今天早点回去啊。 B：嗯，因为明天有考试。",
       "en": "A: You're going home early today. B: Yes — I have a test tomorrow."
@@ -333,6 +347,7 @@
       2
     ],
     "full": "A「今日は 早く 寝ますね。」 B「ええ、あしたは 大切な テストなんです。」",
+    "kj": "A「今日は早く寝ますね。」\nB「ええ、明日は大切なテストなんです。」",
     "tr": {
       "zh": "A：今天早点睡啊。 B：嗯，明天有很重要的考试。",
       "en": "A: You're going to bed early tonight. B: Yes — I have an important test tomorrow."
@@ -364,6 +379,7 @@
     ],
     "answer": 0,
     "full": "たくさん 勉強したのに、テストは よく なかった。",
+    "kj": "たくさん勉強したのに、テストはよくなかった。",
     "tr": {
       "zh": "明明学了很多，考试却没考好。",
       "en": "Even though I studied a lot, the test didn't go well."
@@ -404,6 +420,7 @@
     ],
     "answer": 0,
     "full": "今日は 日曜日なのに、会社に 行かなければ なりません。",
+    "kj": "今日は日曜日なのに、会社に行かなければなりません。",
     "tr": {
       "zh": "今天明明是星期天，却必须去公司。",
       "en": "Today is Sunday, and yet I have to go to work."
@@ -449,6 +466,7 @@
       1
     ],
     "full": "朝 薬を 飲んだのに まだ 痛い。",
+    "kj": "朝薬を飲んだのにまだ痛い。",
     "tr": {
       "zh": "早上明明吃了药，还是疼。",
       "en": "I took medicine this morning, but it still hurts."
@@ -480,6 +498,7 @@
     ],
     "answer": 0,
     "full": "あしたは 休みなので、友だちと 出かける つもりです。",
+    "kj": "明日は休みなので、友達と出かけるつもりです。",
     "tr": {
       "zh": "因为明天休息，打算和朋友出去。",
       "en": "Tomorrow's a day off, so I'm planning to go out with friends."
@@ -520,6 +539,7 @@
     ],
     "answer": 0,
     "full": "A「どうして 窓を 開けたんですか。」 B「暑かったからです。」",
+    "kj": "A「どうして窓を開けたんですか。」\nB「暑かったからです。」",
     "tr": {
       "zh": "A：为什么开窗了？ B：因为热。",
       "en": "A: Why did you open the window? B: Because it was hot."
@@ -565,6 +585,7 @@
       1
     ],
     "full": "すみません、電車が 遅れて いるので、少し 遅れます。",
+    "kj": "すみません、電車が遅れているので、少し遅れます。",
     "tr": {
       "zh": "不好意思，因为电车晚点，我会晚到一会儿。",
       "en": "Sorry, the train is running late, so I'll be a little late."
@@ -596,6 +617,7 @@
     ],
     "answer": 0,
     "full": "この 店は 安いし、おいしいし、よく 来ます。",
+    "kj": "この店は安いし、おいしいし、よく来ます。",
     "tr": {
       "zh": "这家店又便宜又好吃，所以常来。",
       "en": "This place is cheap and tasty, so I come here often."
@@ -636,6 +658,7 @@
     ],
     "answer": 0,
     "full": "今日は 雨だし、寒いし、出かけたく ない。",
+    "kj": "今日は雨だし、寒いし、出かけたくない。",
     "tr": {
       "zh": "今天又下雨又冷，不想出门。",
       "en": "It's raining and cold today — I don't want to go out."
@@ -681,6 +704,7 @@
       2
     ],
     "full": "時間も ないし お金も ないから 旅行は 無理だ。",
+    "kj": "時間もないしお金もないから旅行は無理だ。",
     "tr": {
       "zh": "又没时间又没钱，所以旅行是不可能的。",
       "en": "I have neither time nor money, so a trip is out of the question."
@@ -712,6 +736,7 @@
     ],
     "answer": 0,
     "full": "寝る 前に、歯を みがきます。",
+    "kj": "寝る前に、歯を磨きます。",
     "tr": {
       "zh": "睡觉之前刷牙。",
       "en": "I brush my teeth before going to bed."
@@ -752,6 +777,7 @@
     ],
     "answer": 0,
     "full": "ご飯を 食べた 後で、散歩します。",
+    "kj": "ご飯を食べた後で、散歩します。",
     "tr": {
       "zh": "吃完饭之后散步。",
       "en": "I take a walk after eating."
@@ -797,6 +823,7 @@
       0
     ],
     "full": "授業の 後で 先生に 質問 しました。",
+    "kj": "授業の後で先生に質問しました。",
     "tr": {
       "zh": "下课后向老师提了问题。",
       "en": "After class, I asked the teacher a question."
@@ -828,6 +855,7 @@
     ],
     "answer": 0,
     "full": "健康の ために、毎日 運動して います。",
+    "kj": "健康のために、毎日運動しています。",
     "tr": {
       "zh": "为了健康，每天都在运动。",
       "en": "I exercise every day for my health."
@@ -868,6 +896,7 @@
     ],
     "answer": 0,
     "full": "家を 買う ために、お金を ためて います。",
+    "kj": "家を買うために、お金をためています。",
     "tr": {
       "zh": "为了买房子，正在攒钱。",
       "en": "I'm saving money to buy a house."
@@ -913,6 +942,7 @@
       1
     ],
     "full": "わたしは 日本語を 勉強する ために 日本へ 来ました。",
+    "kj": "私は日本語を勉強するために日本へ来ました。",
     "tr": {
       "zh": "我为了学日语来了日本。",
       "en": "I came to Japan to study Japanese."
@@ -944,6 +974,7 @@
     ],
     "answer": 0,
     "full": "ひまな とき、よく 映画を 見ます。",
+    "kj": "暇なとき、よく映画を見ます。",
     "tr": {
       "zh": "有空的时候常看电影。",
       "en": "When I'm free, I often watch movies."
@@ -984,6 +1015,7 @@
     ],
     "answer": 0,
     "full": "A「その かばん、どこで 買ったんですか。」 B「去年 フランスへ 行った とき、パリで 買いました。」",
+    "kj": "A「そのかばん、どこで買ったんですか。」\nB「去年フランスへ行ったとき、パリで買いました。」",
     "tr": {
       "zh": "A：那个包是在哪儿买的？ B：去年去法国的时候在巴黎买的。",
       "en": "A: Where did you buy that bag? B: In Paris, when I went to France last year."
@@ -1029,6 +1061,7 @@
       1
     ],
     "full": "困った ことが ある とき、いつでも 電話して ください。",
+    "kj": "困ったことがあるとき、いつでも電話してください。",
     "tr": {
       "zh": "有困难的时候，随时给我打电话。",
       "en": "Whenever you have a problem, call me anytime."

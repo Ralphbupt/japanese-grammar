@@ -8,6 +8,7 @@
     "options": ["わけだ", "わけがない", "わけではない", "ものだ"],
     "answer": 0,
     "full": "A「田中さんは 10年も アメリカに 住んで いたそうですよ。」 B「そうですか。道理で 英語が 上手な わけだ。」",
+    "kj": "A「田中さんは10年もアメリカに住んでいたそうですよ。」\nB「そうですか。道理で英語が上手なわけだ。」",
     "tr": {
       "zh": "A：听说田中在美国住了足足 10 年。 B：是吗。难怪英语那么好。",
       "en": "A: I hear Tanaka lived in America for ten whole years. B: Really? No wonder his English is so good."
@@ -32,6 +33,7 @@
     "options": ["わけです", "ものです", "わけが ありません", "わけには いきません"],
     "answer": 0,
     "full": "会議は 3時から 5時までです。つまり、2時間 会議を する わけですね。",
+    "kj": "会議は3時から5時までです。つまり、2時間会議をするわけですね。",
     "tr": {
       "zh": "会议从 3 点开到 5 点。也就是说，要开两个小时的会啊。",
       "en": "The meeting is from three to five. In other words, we'll be meeting for two hours."
@@ -56,6 +58,7 @@
     "options": ["練習して いる", "から", "上手な", "わけだ"],
     "order": [0, 1, 2, 3],
     "full": "彼女は 毎日 3時間も 練習して いる から 上手な わけだ。",
+    "kj": "彼女は毎日3時間も練習しているから上手なわけだ。",
     "tr": {
       "zh": "她每天练习足足 3 个小时，所以才这么厉害。",
       "en": "She practices three whole hours every day — no wonder she's so good."
@@ -75,6 +78,7 @@
     "options": ["わけが ない", "わけだ", "わけには いかない", "ものだ"],
     "answer": 0,
     "full": "A「田中さんが 約束を 忘れたらしいですよ。」 B「えっ、あの まじめな 田中さんが 忘れる わけが ないよ。きっと 何か 理由が あるんですよ。」",
+    "kj": "A「田中さんが約束を忘れたらしいですよ。」\nB「えっ、あの真面目な田中さんが忘れるわけがないよ。きっと何か理由があるんですよ。」",
     "tr": {
       "zh": "A：听说田中忘了约定。 B：啊？那么认真的田中不可能忘的。肯定有什么原因。",
       "en": "A: Apparently Tanaka forgot the appointment. B: What? Someone as conscientious as Tanaka? There's no way he'd forget. There must be some reason."
@@ -99,6 +103,7 @@
     "options": ["わけでは ない", "わけが ない", "わけだ", "ものだ"],
     "answer": 0,
     "full": "肉が 嫌いな わけでは ないが、今日は 野菜が 食べたい 気分です。",
+    "kj": "肉が嫌いなわけではないが、今日は野菜が食べたい気分です。",
     "tr": {
       "zh": "并不是讨厌吃肉，只是今天想吃蔬菜。",
       "en": "It's not that I dislike meat — I just feel like vegetables today."
@@ -123,6 +128,7 @@
     "options": ["わけには いかない", "わけが ない", "わけでは ない", "わけだ"],
     "answer": 0,
     "full": "まだ 仕事が たくさん 残って いるので、今日は 先に 帰る わけには いかない。",
+    "kj": "まだ仕事がたくさん残っているので、今日は先に帰るわけにはいかない。",
     "tr": {
       "zh": "还剩很多工作，所以今天不能先走。",
       "en": "There's still a lot of work left, so I can't leave early today."
@@ -147,6 +153,7 @@
     "options": ["ない わけには いかない", "ない わけでは ない", "ない わけだ", "ない ものだ"],
     "answer": 0,
     "full": "A「今夜 いっしょに 飲みに 行かない？」 B「ごめん。明日は 大切な 試験だから、勉強しない わけには いかないんだ。」",
+    "kj": "A「今夜一緒に飲みに行かない？」\nB「ごめん。明日は大切な試験だから、勉強しないわけにはいかないんだ。」",
     "tr": {
       "zh": "A：今晚一起去喝一杯吧？ B：抱歉。明天有重要的考试，不能不学习。",
       "en": "A: Want to go for a drink tonight? B: Sorry. I've got an important exam tomorrow, so I have to study."
@@ -171,6 +178,7 @@
     "options": ["誰にも", "話す", "わけには", "いかない"],
     "order": [0, 1, 2, 3],
     "full": "友だちと 約束したので、この 秘密は 誰にも 話す わけには いかない。",
+    "kj": "友達と約束したので、この秘密は誰にも話すわけにはいかない。",
     "tr": {
       "zh": "我和朋友约好了，所以这个秘密不能告诉任何人。",
       "en": "I promised my friend, so I can't tell anyone this secret."
@@ -190,6 +198,7 @@
     "options": ["ものだ", "わけだ", "ばかりだ", "ところだ"],
     "answer": 0,
     "full": "子どもの ころは、よく この 川で 友だちと 泳いだ ものだ。",
+    "kj": "子どものころは、よくこの川で友達と泳いだものだ。",
     "tr": {
       "zh": "小时候常常和朋友在这条河里游泳。",
       "en": "When I was a kid, I often used to swim in this river with my friends."
@@ -214,6 +223,7 @@
     "options": ["ものだ", "ものではない", "わけだ", "わけが ない"],
     "answer": 0,
     "full": "人が 話して いる ときは、最後まで 聞く ものだ。途中で 自分の 話を 始めては いけませんよ。",
+    "kj": "人が話しているときは、最後まで聞くものだ。途中で自分の話を始めてはいけませんよ。",
     "tr": {
       "zh": "别人说话的时候，应该听到最后。不可以中途开始讲自己的事哦。",
       "en": "When someone is talking, you should listen to the end. Don't start talking about yourself halfway through."
@@ -238,6 +248,7 @@
     "options": ["時間が", "経つのは", "早い", "ものだ"],
     "order": [0, 1, 2, 3],
     "full": "もう 12月か。時間が 経つのは 早い ものだ。",
+    "kj": "もう12月か。時間が経つのは早いものだ。",
     "tr": {
       "zh": "已经 12 月了啊。时间过得真快。",
       "en": "December already? Time really flies."
@@ -257,6 +268,7 @@
     "options": ["ものです", "わけです", "はずです", "ところです"],
     "answer": 0,
     "full": "毎年の ことですが、東京の 夏は 本当に 暑い ものですね。",
+    "kj": "毎年のことですが、東京の夏は本当に暑いものですね。",
     "tr": {
       "zh": "虽说每年都这样，东京的夏天真是热啊。",
       "en": "It's the same every year, but Tokyo summers really are hot."
@@ -281,6 +293,7 @@
     "options": ["わけですね", "ものですね", "わけが ないですね", "わけでは ないですね"],
     "answer": 0,
     "full": "A「山田さん、最近 毎晩 夜中の 2時まで 仕事を して いるそうですよ。」 B「それで いつも 眠そうな わけですね。」",
+    "kj": "A「山田さん、最近毎晩夜中の2時まで仕事をしているそうですよ。」\nB「それでいつも眠そうなわけですね。」",
     "tr": {
       "zh": "A：听说山田最近每天晚上工作到半夜两点。 B：所以他总是一副困的样子啊。",
       "en": "A: I hear Yamada's been working until 2 a.m. every night lately. B: So that's why he always looks sleepy."
@@ -305,6 +318,7 @@
     "options": ["の", "こと", "わけ", "もの"],
     "answer": 0,
     "full": "隣の 部屋で 誰かが 歌って いる のが 聞こえる。",
+    "kj": "隣の部屋で誰かが歌っているのが聞こえる。",
     "tr": {
       "zh": "听得见隔壁房间有人在唱歌。",
       "en": "I can hear someone singing in the next room."
@@ -329,6 +343,7 @@
     "options": ["ところ", "はず", "わけ", "もの"],
     "answer": 0,
     "full": "A「もう 晩ご飯を 食べましたか。」 B「いいえ、今から 食べる ところです。」",
+    "kj": "A「もう晩ご飯を食べましたか。」\nB「いいえ、今から食べるところです。」",
     "tr": {
       "zh": "A：已经吃过晚饭了吗？ B：没有，现在正要吃。",
       "en": "A: Have you had dinner yet? B: No, I'm just about to eat."

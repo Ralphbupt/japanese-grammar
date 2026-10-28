@@ -13,8 +13,15 @@
       "までに",
       "おきに"
     ],
+    "okj": [
+      "間に",
+      null,
+      null,
+      null
+    ],
     "answer": 0,
     "full": "家族で 旅行に 行って いる あいだに、家に どろぼうが 入りました。",
+    "kj": "家族で旅行に行っている間に、家に泥棒が入りました。",
     "tr": {
       "zh": "全家出去旅行的时候，家里进了小偷。",
       "en": "While the family was away on a trip, a burglar broke into the house."
@@ -53,8 +60,15 @@
       "あいだ",
       "おきに"
     ],
+    "okj": [
+      "間に",
+      null,
+      "間",
+      null
+    ],
     "answer": 2,
     "full": "電車に 乗って いる あいだ、ずっと 音楽を 聞いて いました。",
+    "kj": "電車に乗っている間、ずっと音楽を聞いていました。",
     "tr": {
       "zh": "坐电车的整段时间里，我一直在听音乐。",
       "en": "The whole time I was on the train, I was listening to music."
@@ -93,6 +107,12 @@
       "登りたいです",
       "あいだに"
     ],
+    "okj": [
+      null,
+      null,
+      null,
+      "間に"
+    ],
     "order": [
       1,
       3,
@@ -100,6 +120,7 @@
       2
     ],
     "full": "日本に いる あいだに 富士山に 登りたいです。",
+    "kj": "日本にいる間に富士山に登りたいです。",
     "tr": {
       "zh": "我想在日本期间爬一次富士山。",
       "en": "I want to climb Mt Fuji while I'm in Japan."
@@ -129,8 +150,15 @@
       "あいだ",
       "おきに"
     ],
+    "okj": [
+      null,
+      null,
+      "間",
+      null
+    ],
     "answer": 1,
     "full": "レポートは 金曜日までに 出して ください。遅れた ものは 受け付けません。",
+    "kj": "レポートは金曜日までに出してください。遅れたものは受け付けません。",
     "tr": {
       "zh": "报告请在周五之前提交。迟交的不受理。",
       "en": "Please hand in your report by Friday. Late ones won't be accepted."
@@ -169,8 +197,15 @@
       "おきに",
       "まで"
     ],
+    "okj": [
+      null,
+      "間に",
+      null,
+      null
+    ],
     "answer": 3,
     "full": "雨が やむ まで、この 喫茶店で 待ちましょう。",
+    "kj": "雨がやむまで、この喫茶店で待ちましょう。",
     "tr": {
       "zh": "在这家咖啡店里一直等到雨停吧。",
       "en": "Let's wait in this café until the rain stops."
@@ -216,6 +251,7 @@
       1
     ],
     "full": "明日の 朝は、授業が 始まる までに 教室に 入って ください。",
+    "kj": "明日の朝は、授業が始まるまでに教室に入ってください。",
     "tr": {
       "zh": "明天早上请在上课之前进教室。",
       "en": "Tomorrow morning, please be in the classroom before class starts."
@@ -247,6 +283,7 @@
     ],
     "answer": 2,
     "full": "この 薬は 4時間おきに 飲んで ください。",
+    "kj": "この薬は4時間おきに飲んでください。",
     "tr": {
       "zh": "这个药请每隔4小时吃一次。",
       "en": "Please take this medicine every four hours."
@@ -287,6 +324,7 @@
     ],
     "answer": 0,
     "full": "わたしは 1日おきに ジムへ 行きます。月曜日に 行ったら、次は 水曜日に 行きます。",
+    "kj": "私は1日おきにジムへ行きます。月曜日に行ったら、次は水曜日に行きます。",
     "tr": {
       "zh": "我隔一天去一次健身房。周一去了的话，下次就是周三去。",
       "en": "I go to the gym every other day. If I go on Monday, next time I go on Wednesday."
@@ -332,6 +370,7 @@
       0
     ],
     "full": "この 道には 木が 10メートルおきに 植えて あります。",
+    "kj": "この道には木が10メートルおきに植えてあります。",
     "tr": {
       "zh": "这条路上每隔10米种着一棵树。",
       "en": "Trees are planted every ten metres along this road."
@@ -363,6 +402,7 @@
     ],
     "answer": 3,
     "full": "地震の 場合は、すぐに 机の 下に 入って ください。",
+    "kj": "地震の場合は、すぐに机の下に入ってください。",
     "tr": {
       "zh": "地震的情况下，请立刻躲到桌子下面。",
       "en": "In case of an earthquake, get under a desk immediately."
@@ -403,6 +443,7 @@
     ],
     "answer": 1,
     "full": "明日の 会議に 都合が 悪い 場合は、メールで 連絡して ください。",
+    "kj": "明日の会議に都合が悪い場合は、メールで連絡してください。",
     "tr": {
       "zh": "如果明天的会议您不方便，请发邮件联系。",
       "en": "If tomorrow's meeting doesn't suit you, please let us know by email."
@@ -448,6 +489,7 @@
       1
     ],
     "full": "パスワードを 忘れた 場合は こちらに 連絡して ください。",
+    "kj": "パスワードを忘れた場合はこちらに連絡してください。",
     "tr": {
       "zh": "忘记密码的情况下，请联系这里。",
       "en": "If you forget your password, please contact us here."
@@ -479,6 +521,7 @@
     ],
     "answer": 0,
     "full": "A「最近、夜 よく 眠れないんです。」 B「一度 医者に 行って みたら どうですか。」",
+    "kj": "A「最近、夜よく眠れないんです。」\nB「一度医者に行ってみたらどうですか。」",
     "tr": {
       "zh": "A：最近晚上总是睡不好。 B：去看一次医生怎么样？",
       "en": "A: I haven't been sleeping well lately. B: Why don't you see a doctor?"
@@ -519,6 +562,7 @@
     ],
     "answer": 2,
     "full": "疲れて いるなら、少し 休んだら どうですか。",
+    "kj": "疲れているなら、少し休んだらどうですか。",
     "tr": {
       "zh": "累了的话，稍微休息一下怎么样？",
       "en": "If you're tired, why not take a short rest?"
@@ -564,6 +608,7 @@
       1
     ],
     "full": "A「日本語の 聞き取りが なかなか 上手に なりません。」 B「日本の 映画を 見たら どうですか。」",
+    "kj": "A「日本語の聞き取りがなかなか上手になりません。」\nB「日本の映画を見たらどうですか。」",
     "tr": {
       "zh": "A：日语听力怎么都提高不了。 B：看看日本电影怎么样？",
       "en": "A: My Japanese listening just isn't improving. B: How about watching Japanese films?"
@@ -595,6 +640,7 @@
     ],
     "answer": 3,
     "full": "朝は 晴れて いましたが、傘を 持って きて よかったです。帰りに 雨が 降り出しました。",
+    "kj": "朝は晴れていましたが、傘を持ってきてよかったです。帰りに雨が降り出しました。",
     "tr": {
       "zh": "早上是晴天，不过带了伞真好。回家路上下起雨来了。",
       "en": "It was sunny this morning, but I'm glad I brought an umbrella — it started raining on my way home."
@@ -635,6 +681,7 @@
     ],
     "answer": 1,
     "full": "試験に 遅れて しまった。もっと 早く 起きれば よかった。",
+    "kj": "試験に遅れてしまった。もっと早く起きればよかった。",
     "tr": {
       "zh": "考试迟到了。要是早点起床就好了。",
       "en": "I was late for the exam. I should have got up earlier."
@@ -673,6 +720,12 @@
       "です",
       "よかった"
     ],
+    "okj": [
+      null,
+      "諦め",
+      null,
+      null
+    ],
     "order": [
       1,
       0,
@@ -680,6 +733,7 @@
       2
     ],
     "full": "やっと 試験に 合格した。あの とき あきらめなくて よかったです。",
+    "kj": "やっと試験に合格した。あのとき諦めなくてよかったです。",
     "tr": {
       "zh": "终于考过了。那时候没有放弃真好。",
       "en": "I finally passed. I'm glad I didn't give up back then."
@@ -711,6 +765,7 @@
     ],
     "answer": 2,
     "full": "（会議に 10分 遅れて 来て） 「遅れて すみません。電車が 止まって いたんです。」",
+    "kj": "（会議に10分遅れて来て）「遅れてすみません。電車が止まっていたんです。」",
     "tr": {
       "zh": "（开会迟到了10分钟）迟到了对不起。电车停运了。",
       "en": "(Arriving ten minutes late to a meeting) Sorry I'm late. The train had stopped."
@@ -751,6 +806,7 @@
     ],
     "answer": 0,
     "full": "昨日は 連絡 しなくて すみませんでした。電話が こわれて いたんです。",
+    "kj": "昨日は連絡しなくてすみませんでした。電話が壊れていたんです。",
     "tr": {
       "zh": "昨天没联系你，对不起。电话坏了。",
       "en": "Sorry I didn't get in touch yesterday. My phone was broken."
@@ -796,6 +852,7 @@
       2
     ],
     "full": "先月 借りた 本、まだ 返さなくて すみません。来週 必ず 返します。",
+    "kj": "先月借りた本、まだ返さなくてすみません。来週必ず返します。",
     "tr": {
       "zh": "上个月借的书还没还，对不起。下周一定还。",
       "en": "Sorry I still haven't returned the book I borrowed last month. I'll definitely return it next week."
