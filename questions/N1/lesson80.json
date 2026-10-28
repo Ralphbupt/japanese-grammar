@@ -1,0 +1,815 @@
+[
+  {
+    "id": "n1-l80-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#1"
+    ],
+    "difficulty": 2,
+    "stem": "もっと早く医者に診てもらえばよかった（　）、彼は痛みを我慢し続けて手遅れになってしまった。",
+    "options": [
+      "ものの",
+      "ものを",
+      "ものだから",
+      "ものなら"
+    ],
+    "answer": 1,
+    "full": "もっと早く医者に診てもらえばよかったものを、彼は痛みを我慢し続けて手遅れになってしまった。",
+    "tr": {
+      "zh": "早点去看医生就好了，他却一直忍着痛，结果耽误了。",
+      "en": "If only he'd seen a doctor sooner — instead he kept putting up with the pain until it was too late."
+    },
+    "why": {
+      "zh": "前项「〜ばよかった」是“本来……就好了”，后项是令人遗憾的结果，用「ものを」。",
+      "en": "「〜ばよかった」 (should have …) followed by a regrettable outcome — 「ものを」."
+    },
+    "wrong": [
+      {
+        "zh": "「ものの」是中性的“虽然……但是”，前面不接「〜ばよかった」这种遗憾的说法。",
+        "en": "「ものの」 is a neutral \"although\" and doesn't follow a regret like 「〜ばよかった」."
+      },
+      null,
+      {
+        "zh": "「ものだから」表示原因，“因为早看医生就好了，所以忍痛”说不通。",
+        "en": "「ものだから」 gives a reason; \"because he should have seen a doctor, he endured\" makes no sense."
+      },
+      {
+        "zh": "「ものなら」是“如果能……的话”，接可能形或意向形，和「よかった」不能连用。",
+        "en": "「ものなら」 (if one could) follows a potential or volitional form, not 「よかった」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l80-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#1"
+    ],
+    "difficulty": 2,
+    "stem": "A「田中さん、結局また無理をして倒れたんだって。」\nB「だから少しは休めと言った（　）。」",
+    "options": [
+      "ものの",
+      "ものか",
+      "ものを",
+      "もので"
+    ],
+    "answer": 2,
+    "full": "A「田中さん、結局また無理をして倒れたんだって。」\nB「だから少しは休めと言ったものを。」",
+    "tr": {
+      "zh": "A：“听说田中又硬撑着，结果倒下了。”\nB：“所以我才叫他多少休息一下嘛……”",
+      "en": "A: \"I hear Tanaka pushed himself too hard again and collapsed.\"\nB: \"I told him to take a break — and now look.\""
+    },
+    "why": {
+      "zh": "“我早就叫他休息了，他却不听”，句末用「ものを」，留下遗憾、责备的语气。",
+      "en": "\"I told him to rest, but he didn't listen\" — 「ものを」 at the end leaves the regret and reproach hanging."
+    },
+    "wrong": [
+      {
+        "zh": "「ものの」是中性转折，后面要接后半句，不能这样放在句末表遗憾。",
+        "en": "「ものの」 is a neutral \"although\" that needs a second clause; it can't end the sentence with regret."
+      },
+      {
+        "zh": "「ものか」是“哪会……”的强烈否定，接在「言った」后意思不通。",
+        "en": "「ものか」 (as if …!) is a strong denial and makes no sense after 「言った」."
+      },
+      null,
+      {
+        "zh": "「もので」是辩解原因（“因为……所以”），这里不是在找理由。",
+        "en": "「もので」 offers an excuse (\"because …\"); B isn't giving a reason."
+      }
+    ]
+  },
+  {
+    "id": "n1-l80-003",
+    "type": "narabe",
+    "refs": [
+      "lesson80#1"
+    ],
+    "difficulty": 1,
+    "stem": "[_] [_] [_] [★]、彼女は意地を張って最後まで謝らなかった。",
+    "options": [
+      "いい",
+      "ものを",
+      "素直に",
+      "謝れば"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "素直に謝ればいいものを、彼女は意地を張って最後まで謝らなかった。",
+    "tr": {
+      "zh": "老老实实道个歉就好了，她却赌气到最后都没有道歉。",
+      "en": "She could simply have apologised, but out of stubbornness she never did."
+    },
+    "why": {
+      "zh": "「〜ばいいものを」：素直に → 謝れば → いい → ものを。★ 是「ものを」。",
+      "en": "「〜ばいいものを」: 素直に → 謝れば → いい → ものを. The ★ is 「ものを」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l80-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#2"
+    ],
+    "difficulty": 1,
+    "stem": "たとえ大臣（　）、法の前では一市民と同じように扱われなければならない。",
+    "options": [
+      "ともなると",
+      "といえども",
+      "とあれば",
+      "ながらも"
+    ],
+    "answer": 1,
+    "full": "たとえ大臣といえども、法の前では一市民と同じように扱われなければならない。",
+    "tr": {
+      "zh": "即使是大臣，在法律面前也必须和普通市民一样对待。",
+      "en": "Even a minister must be treated like any ordinary citizen before the law."
+    },
+    "why": {
+      "zh": "「たとえ」＋地位高的人「大臣」，后项是义务「〜なければならない」，用「といえども」。",
+      "en": "「たとえ」 + a high-ranking person 「大臣」, then an obligation — 「といえども」."
+    },
+    "wrong": [
+      {
+        "zh": "「ともなると」不和「たとえ」呼应，而且意思是“到了……的身份自然……”，和“也不例外”相反。",
+        "en": "「ともなると」 doesn't pair with 「たとえ」 and means \"once one is …, naturally …\" — the opposite of \"no exception\"."
+      },
+      null,
+      {
+        "zh": "「とあれば」是“如果是为了……就（愿意）……”，不和「たとえ」呼应。",
+        "en": "「とあれば」 (if it's for …) doesn't pair with 「たとえ」."
+      },
+      {
+        "zh": "「ながらも」是同一主语的“虽然……却……”，不和「たとえ」的假定呼应。",
+        "en": "「ながらも」 is a factual \"although\" and doesn't pair with hypothetical 「たとえ」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l80-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#2"
+    ],
+    "difficulty": 2,
+    "stem": "いかに優れたAI（　）、誤った情報を出す可能性がゼロになることはない。",
+    "options": [
+      "とはいうものの",
+      "にして",
+      "といえども",
+      "とあれば"
+    ],
+    "answer": 2,
+    "full": "いかに優れたAIといえども、誤った情報を出す可能性がゼロになることはない。",
+    "tr": {
+      "zh": "无论多么出色的AI，出错信息的可能性也不会降到零。",
+      "en": "However advanced an AI may be, the chance of it giving wrong information never drops to zero."
+    },
+    "why": {
+      "zh": "「いかに〜といえども」是固定呼应，“无论多么……也……”。",
+      "en": "「いかに〜といえども」 is the set pairing: however … may be, still …."
+    },
+    "wrong": [
+      {
+        "zh": "「とはいうものの」是承认事实后转折，不和「いかに」呼应。",
+        "en": "「とはいうものの」 concedes a fact and doesn't pair with 「いかに」."
+      },
+      {
+        "zh": "「にして」表示“只有……才能”时要配「初めて」，这里没有，而且后项是否定。",
+        "en": "「にして」 (only … can) needs 「初めて」; it's missing and the clause is negative."
+      },
+      null,
+      {
+        "zh": "「とあれば」是“如果是为了……就（愿意）”，不和「いかに」呼应，意思也不通。",
+        "en": "「とあれば」 (if it's for …) doesn't pair with 「いかに」 and makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n1-l80-006",
+    "type": "narabe",
+    "refs": [
+      "lesson80#2"
+    ],
+    "difficulty": 2,
+    "stem": "[_] [_] [★] [_]、規則を破れば処分の対象となる。",
+    "options": [
+      "といえども",
+      "ことのある",
+      "選手",
+      "優勝した"
+    ],
+    "order": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "full": "優勝したことのある選手といえども、規則を破れば処分の対象となる。",
+    "tr": {
+      "zh": "即使是有夺冠经历的选手，违反规定也会受到处分。",
+      "en": "Even a player who has won a championship will be disciplined for breaking the rules."
+    },
+    "why": {
+      "zh": "「優勝したことのある」修饰「選手」，再接「といえども」：優勝した → ことのある → 選手 → といえども。★ 是「選手」。",
+      "en": "「優勝したことのある」 modifies 「選手」, then 「といえども」: 優勝した → ことのある → 選手 → といえども. The ★ is 「選手」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l80-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#3"
+    ],
+    "difficulty": 1,
+    "stem": "本日はお足元の悪い（　）、遠方よりお越しいただき、誠にありがとうございます。",
+    "options": [
+      "ところに",
+      "ところを",
+      "ところで",
+      "ところが"
+    ],
+    "answer": 1,
+    "full": "本日はお足元の悪いところを、遠方よりお越しいただき、誠にありがとうございます。",
+    "tr": {
+      "zh": "今天天气不好、路不好走，各位还从远方赶来，真是非常感谢。",
+      "en": "Thank you so much for coming all this way today despite the bad weather."
+    },
+    "why": {
+      "zh": "寒暄固定说法「お足元の悪いところを〜いただき」，后面接感谢。",
+      "en": "The set greeting 「お足元の悪いところを〜いただき」, followed by thanks."
+    },
+    "wrong": [
+      {
+        "zh": "「ところに」是“正当……的时候（发生了某事）”，不用于这句感谢的客套话。",
+        "en": "「ところに」 means \"just when … (something happened)\"; it isn't the courtesy formula."
+      },
+      null,
+      {
+        "zh": "「ところで」是“就算……也”或话题转换，不能用在感谢的客套话里。",
+        "en": "「ところで」 is \"even if\" or a topic change, not part of a thank-you formula."
+      },
+      {
+        "zh": "「ところが」是“然而”，表示出乎意料，和感谢不搭。",
+        "en": "「ところが」 (however, unexpectedly) doesn't fit an expression of thanks."
+      }
+    ]
+  },
+  {
+    "id": "n1-l80-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#3"
+    ],
+    "difficulty": 2,
+    "stem": "普通なら罰金を科される（　）、初めての違反ということで、今回は厳重注意だけで済んだ。",
+    "options": [
+      "ところで",
+      "ところを",
+      "ばかりに",
+      "とあれば"
+    ],
+    "answer": 1,
+    "full": "普通なら罰金を科されるところを、初めての違反ということで、今回は厳重注意だけで済んだ。",
+    "tr": {
+      "zh": "一般情况下会被罚款，因为是初次违规，这次只受到了严重警告。",
+      "en": "Normally there would have been a fine, but as it was a first offence, this time it ended with a stern warning."
+    },
+    "why": {
+      "zh": "「普通なら〜ところを」：前项是本来会发生的事，后项是实际不同的处理。",
+      "en": "「普通なら〜ところを」: what would normally happen, then what actually happened instead."
+    },
+    "wrong": [
+      {
+        "zh": "「ところで」是“就算……也（没用）”，后项要是否定的判断，这里不合。",
+        "en": "「ところで」 (even if … it's no use) needs a negative judgement after it."
+      },
+      null,
+      {
+        "zh": "「ばかりに」是“就因为……（导致坏结果）”，而后项是从轻处理的好结果。",
+        "en": "「ばかりに」 (just because … something bad) clashes with the lenient outcome."
+      },
+      {
+        "zh": "「とあれば」是“如果是……就（愿意）”，和「普通なら」的逆接不合。",
+        "en": "「とあれば」 (if it's for …) doesn't give the contrast 「普通なら」 sets up."
+      }
+    ]
+  },
+  {
+    "id": "n1-l80-009",
+    "type": "narabe",
+    "refs": [
+      "lesson80#3"
+    ],
+    "difficulty": 2,
+    "stem": "本来なら [★] [_] [_] [_]、知り合いのよしみで特別に半額にしてもらった。",
+    "options": [
+      "かかる",
+      "ところを",
+      "修理代が",
+      "一万円の"
+    ],
+    "order": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "full": "本来なら一万円の修理代がかかるところを、知り合いのよしみで特別に半額にしてもらった。",
+    "tr": {
+      "zh": "本来修理费要一万日元，看在熟人的情分上特别给我打了对折。",
+      "en": "The repair would normally have cost ten thousand yen, but as an old acquaintance they gave me half off."
+    },
+    "why": {
+      "zh": "「本来なら〜ところを」：一万円の → 修理代が → かかる → ところを。★ 是「一万円の」。",
+      "en": "「本来なら〜ところを」: 一万円の → 修理代が → かかる → ところを. The ★ is 「一万円の」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l80-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#4"
+    ],
+    "difficulty": 2,
+    "stem": "彼はまだ二十代の若さ（　）、百人を超える部下を率いている。",
+    "options": [
+      "つつも",
+      "ながらも",
+      "とあって",
+      "ともなると"
+    ],
+    "answer": 1,
+    "full": "彼はまだ二十代の若さながらも、百人を超える部下を率いている。",
+    "tr": {
+      "zh": "他虽然才二十多岁，却带领着一百多名下属。",
+      "en": "Though still only in his twenties, he leads a team of more than a hundred."
+    },
+    "why": {
+      "zh": "名词「若さ」后接转折“虽然……却……”，用「ながらも」。",
+      "en": "After the noun 「若さ」, \"although\" is 「ながらも」."
+    },
+    "wrong": [
+      {
+        "zh": "「つつも」只接动词ます形，不能接名词「若さ」。",
+        "en": "「つつも」 only follows a verb ます-stem, not the noun 「若さ」."
+      },
+      null,
+      {
+        "zh": "「とあって」是“因为是……”，“因为年轻所以带领百人”因果不通。",
+        "en": "「とあって」 (because it's …) gives \"because young, he leads a hundred\" — no logic."
+      },
+      {
+        "zh": "「ともなると」接较高的阶段（社長、12月），“到了二十多岁的年轻”说不通，也不表示转折。",
+        "en": "「ともなると」 follows a high stage and isn't concessive; \"once young\" makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n1-l80-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#4"
+    ],
+    "difficulty": 2,
+    "stem": "我が家は貧しい（　）、両親は私たち兄弟三人を大学まで行かせてくれた。",
+    "options": [
+      "くせに",
+      "つつも",
+      "ながらも",
+      "ものを"
+    ],
+    "answer": 2,
+    "full": "我が家は貧しいながらも、両親は私たち兄弟三人を大学まで行かせてくれた。",
+    "tr": {
+      "zh": "我家虽然穷，父母还是供我们兄弟三人上了大学。",
+      "en": "Though our family was poor, our parents put all three of us through university."
+    },
+    "why": {
+      "zh": "い形容词「貧しい」＋「ながらも」，表示“虽然……却……”，后项是感激的事实。",
+      "en": "The い-adjective 「貧しい」 + 「ながらも」: \"although …\", followed by a grateful fact."
+    },
+    "wrong": [
+      {
+        "zh": "「くせに」带指责、轻蔑，和后项对父母的感激相矛盾。",
+        "en": "「くせに」 carries blame, clashing with the gratitude in the second half."
+      },
+      {
+        "zh": "「つつも」只接动词ます形，不能接形容词「貧しい」。",
+        "en": "「つつも」 only follows a verb ます-stem, not the adjective 「貧しい」."
+      },
+      null,
+      {
+        "zh": "「ものを」是“本来……就好了，却……”的遗憾，这里没有遗憾。",
+        "en": "「ものを」 expresses regret (if only …); there is no regret here."
+      }
+    ]
+  },
+  {
+    "id": "n1-l80-012",
+    "type": "narabe",
+    "refs": [
+      "lesson80#4"
+    ],
+    "difficulty": 2,
+    "stem": "彼は [_] [★] [_] [_]、最後まで知らないふりを通した。",
+    "options": [
+      "も",
+      "いながら",
+      "真相を",
+      "知って"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "彼は真相を知っていながらも、最後まで知らないふりを通した。",
+    "tr": {
+      "zh": "他明明知道真相，却一直装作不知道。",
+      "en": "Although he knew the truth, he kept pretending not to until the end."
+    },
+    "why": {
+      "zh": "表转折时用「〜ていながら（も）」：真相を → 知って → いながら → も。★ 是「知って」。",
+      "en": "The concessive form is 「〜ていながら（も）」: 真相を → 知って → いながら → も. The ★ is 「知って」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l80-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#5"
+    ],
+    "difficulty": 1,
+    "stem": "プログラミングを独学で始めた（　）、まだ簡単なアプリ一つ作れない。",
+    "options": [
+      "ばかりに",
+      "とはいうものの",
+      "ものを",
+      "とあれば"
+    ],
+    "answer": 1,
+    "full": "プログラミングを独学で始めたとはいうものの、まだ簡単なアプリ一つ作れない。",
+    "tr": {
+      "zh": "虽说已经开始自学编程了，可连一个简单的应用都还做不出来。",
+      "en": "I may have started teaching myself programming, but I still can't build even a simple app."
+    },
+    "why": {
+      "zh": "先承认事实“开始自学了”，再说现实不如预期「まだ〜作れない」，用「とはいうものの」。",
+      "en": "It concedes a fact (I started) and then says reality falls short (「まだ〜作れない」) — 「とはいうものの」."
+    },
+    "wrong": [
+      {
+        "zh": "「ばかりに」是“就因为……才（导致坏结果）”，“因为开始自学所以做不出”因果不通。",
+        "en": "「ばかりに」 (just because …) gives \"because I started, I can't build one\" — no logic."
+      },
+      null,
+      {
+        "zh": "「ものを」要配「〜ばよかった」之类的遗憾，“开始了却……”不是这种用法。",
+        "en": "「ものを」 goes with regret like 「〜ばよかった」; that isn't the sense here."
+      },
+      {
+        "zh": "「とあれば」是“如果是为了……就（愿意）”，后项不是意志。",
+        "en": "「とあれば」 (if it's for …) needs a willing action after it."
+      }
+    ]
+  },
+  {
+    "id": "n1-l80-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#5"
+    ],
+    "difficulty": 2,
+    "stem": "医者から酒を控えるように言われている。（　）、付き合いの席ではつい飲んでしまう。",
+    "options": [
+      "それゆえ",
+      "そればかりか",
+      "とはいうものの",
+      "ともなると"
+    ],
+    "answer": 2,
+    "full": "医者から酒を控えるように言われている。とはいうものの、付き合いの席ではつい飲んでしまう。",
+    "tr": {
+      "zh": "医生叫我少喝酒。话虽这么说，在应酬的场合还是忍不住会喝。",
+      "en": "My doctor has told me to cut down on alcohol. That said, at social events I end up drinking anyway."
+    },
+    "why": {
+      "zh": "句首的「とはいうものの」承接前句“医生叫我少喝”，再转到实际做不到。",
+      "en": "Sentence-initial 「とはいうものの」 concedes the doctor's advice, then turns to what actually happens."
+    },
+    "wrong": [
+      {
+        "zh": "「それゆえ」是“因此”，后项应是顺接的结果，而“还是会喝”是转折。",
+        "en": "「それゆえ」 (therefore) needs a consequence; \"I drink anyway\" is a contrast."
+      },
+      {
+        "zh": "「そればかりか」是“不仅如此，还……”，用于同方向的添加，这里前后相反。",
+        "en": "「そればかりか」 (what's more) adds in the same direction; these two sentences contrast."
+      },
+      null,
+      {
+        "zh": "「ともなると」接在名词后，不能单独放在句首当接续词。",
+        "en": "「ともなると」 follows a noun; it can't open a sentence as a connector."
+      }
+    ]
+  },
+  {
+    "id": "n1-l80-015",
+    "type": "narabe",
+    "refs": [
+      "lesson80#5"
+    ],
+    "difficulty": 1,
+    "stem": "[_] [_] [_] [★]、日中はまだ汗ばむ日が続いている。",
+    "options": [
+      "入った",
+      "十月",
+      "とはいうものの",
+      "に"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "十月に入ったとはいうものの、日中はまだ汗ばむ日が続いている。",
+    "tr": {
+      "zh": "虽说已经进入十月了，白天还是热得让人出汗。",
+      "en": "It may be October already, but the days are still warm enough to make you sweat."
+    },
+    "why": {
+      "zh": "动词普通形＋「とはいうものの」：十月 → に → 入った → とはいうものの。★ 是「とはいうものの」。",
+      "en": "Plain verb + 「とはいうものの」: 十月 → に → 入った → とはいうものの. The ★ is 「とはいうものの」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l80-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#6"
+    ],
+    "difficulty": 2,
+    "stem": "どんなに給料が（　）、休みが一日もないような会社では働きたくない。",
+    "options": [
+      "高いようと",
+      "高かろうと",
+      "高くようと",
+      "高かったものを"
+    ],
+    "answer": 1,
+    "full": "どんなに給料が高かろうと、休みが一日もないような会社では働きたくない。",
+    "tr": {
+      "zh": "工资再高，我也不想在一天都不休息的公司工作。",
+      "en": "However high the pay, I don't want to work for a company with not a single day off."
+    },
+    "why": {
+      "zh": "い形容词要变成「〜かろう」再接「と」：「高かろうと」，和「どんなに」呼应。",
+      "en": "An い-adjective becomes 「〜かろう」 before 「と」: 「高かろうと」, pairing with 「どんなに」."
+    },
+    "wrong": [
+      {
+        "zh": "い形容词不能直接接「ようと」，「高いようと」是错误的变形。",
+        "en": "An い-adjective can't take 「ようと」 directly; 「高いようと」 is a wrong form."
+      },
+      null,
+      {
+        "zh": "「高くようと」也不是正确的变形，い形容词用「〜かろう」。",
+        "en": "「高くようと」 is not a real form; い-adjectives use 「〜かろう」."
+      },
+      {
+        "zh": "「ものを」是遗憾“本来……就好了”，和「どんなに」的让步不呼应。",
+        "en": "「ものを」 is regret and doesn't pair with the concessive 「どんなに」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l80-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#6",
+      "lesson81#4"
+    ],
+    "difficulty": 2,
+    "stem": "周囲がどれほど（　）、私はこの計画を最後までやり遂げるつもりだ。",
+    "options": [
+      "反対したら最後",
+      "反対しようが",
+      "反対するようでは",
+      "反対しないまでも"
+    ],
+    "answer": 1,
+    "full": "周囲がどれほど反対しようが、私はこの計画を最後までやり遂げるつもりだ。",
+    "tr": {
+      "zh": "不管周围的人怎么反对，我都打算把这个计划坚持到底。",
+      "en": "No matter how much those around me object, I intend to see this plan through."
+    },
+    "why": {
+      "zh": "「どれほど」＋意向形「〜ようが」，后项是不受影响的决心「つもりだ」。",
+      "en": "「どれほど」 + volitional 「〜ようが」, followed by an unshaken resolve 「つもりだ」."
+    },
+    "wrong": [
+      {
+        "zh": "「たら最後」后面要接无法挽回的坏结果，不接说话人的决心。",
+        "en": "「たら最後」 needs an irreversible bad outcome after it, not the speaker's resolve."
+      },
+      null,
+      {
+        "zh": "「ようでは」后面要接负面的评价（“不行”），而后项是积极的决心。",
+        "en": "「ようでは」 needs a negative verdict after it; this is a positive resolve."
+      },
+      {
+        "zh": "「ないまでも」是“即使不……至少也……”，“即使不反对也要完成”意思不通。",
+        "en": "「ないまでも」 (even if not …, at least) makes \"even if they don't object\" — nonsense here."
+      }
+    ]
+  },
+  {
+    "id": "n1-l80-018",
+    "type": "narabe",
+    "refs": [
+      "lesson80#6"
+    ],
+    "difficulty": 2,
+    "stem": "[_] [_] [★] [_]、正しいと思うことははっきり言うべきだ。",
+    "options": [
+      "と",
+      "上司",
+      "相手が",
+      "であろう"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "相手が上司であろうと、正しいと思うことははっきり言うべきだ。",
+    "tr": {
+      "zh": "即使对方是上司，自认为正确的事也应该明确说出来。",
+      "en": "Even if the other person is your boss, you should say clearly what you think is right."
+    },
+    "why": {
+      "zh": "名词接「であろう」再接「と」：相手が → 上司 → であろう → と。★ 是「であろう」。",
+      "en": "A noun takes 「であろう」 then 「と」: 相手が → 上司 → であろう → と. The ★ is 「であろう」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l80-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#7"
+    ],
+    "difficulty": 2,
+    "stem": "A「課長、また会議で部下を怒鳴っていたね。」\nB「うん。いくら腹が立った（　）、あんな言い方はないよね。」",
+    "options": [
+      "とあれば",
+      "にしたって",
+      "ともなると",
+      "ものを"
+    ],
+    "answer": 1,
+    "full": "A「課長、また会議で部下を怒鳴っていたね。」\nB「うん。いくら腹が立ったにしたって、あんな言い方はないよね。」",
+    "tr": {
+      "zh": "A：“科长又在会上吼下属了。”\nB：“嗯。就算再生气，也不能那样说话吧。”",
+      "en": "A: \"The section chief was yelling at his staff in the meeting again.\"\nB: \"Yeah. However angry he was, there's no call for talking like that.\""
+    },
+    "why": {
+      "zh": "会话体，「いくら〜にしたって」表示“就算再……也”，后项是不满。",
+      "en": "Casual talk; 「いくら〜にしたって」 = however …, still — followed by a complaint."
+    },
+    "wrong": [
+      {
+        "zh": "「とあれば」是“如果是为了……就（愿意）”，和「いくら」不呼应。",
+        "en": "「とあれば」 (if it's for …) doesn't pair with 「いくら」."
+      },
+      null,
+      {
+        "zh": "「ともなると」接名词表示较高阶段，不接「腹が立った」，也不和「いくら」呼应。",
+        "en": "「ともなると」 follows a noun for a high stage, not 「腹が立った」, and doesn't pair with 「いくら」."
+      },
+      {
+        "zh": "「ものを」是“本来……就好了”的遗憾，不和「いくら」呼应。",
+        "en": "「ものを」 (if only …) doesn't pair with 「いくら」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l80-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#7"
+    ],
+    "difficulty": 2,
+    "stem": "A「部長はどうしてあの案に反対したんでしょう。」\nB「部長（　）、本当は賛成したかったはずだよ。上からの指示で仕方がなかったんだ。」",
+    "options": [
+      "にして",
+      "とあれば",
+      "にしたって",
+      "ともなると"
+    ],
+    "answer": 2,
+    "full": "A「部長はどうしてあの案に反対したんでしょう。」\nB「部長にしたって、本当は賛成したかったはずだよ。上からの指示で仕方がなかったんだ。」",
+    "tr": {
+      "zh": "A：“部长为什么反对那个方案呢？”\nB：“部长其实也一样，心里应该是想赞成的。是上面的指示，没办法。”",
+      "en": "A: \"Why did the manager oppose that plan?\"\nB: \"The manager actually wanted to back it too, I'm sure. Orders from above — he had no choice.\""
+    },
+    "why": {
+      "zh": "「Xにしたって」＝“站在X的立场也一样”，指出部长也有难处，会话体。",
+      "en": "「Xにしたって」 = \"X too, from their side\" — pointing out the manager's own difficulty, in casual talk."
+    },
+    "wrong": [
+      {
+        "zh": "「にして」表示“只有……才”时要配「初めて」，这里没有，意思也不对。",
+        "en": "「にして」 (only … can) needs 「初めて」; it's missing and the meaning is wrong."
+      },
+      {
+        "zh": "「とあれば」是“如果是为了……就（愿意）”，“如果是部长就想赞成”说不通。",
+        "en": "「とあれば」 (if it's for …) gives \"if it's the manager, he wanted to agree\" — nonsense."
+      },
+      null,
+      {
+        "zh": "「ともなると」是“到了部长这个级别自然就……”，但“想赞成”不是身份带来的自然结果。",
+        "en": "「ともなると」 means \"once one is a manager, naturally …\"; wanting to agree isn't a consequence of rank."
+      }
+    ]
+  },
+  {
+    "id": "n1-l80-021",
+    "type": "narabe",
+    "refs": [
+      "lesson80#7"
+    ],
+    "difficulty": 1,
+    "stem": "いくら [_] [★] [_] [_]、二時間の遅刻はひどすぎる。",
+    "options": [
+      "したって",
+      "道が",
+      "に",
+      "混んでいた"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "いくら道が混んでいたにしたって、二時間の遅刻はひどすぎる。",
+    "tr": {
+      "zh": "就算路上再堵，迟到两个小时也太过分了。",
+      "en": "However bad the traffic was, being two hours late is too much."
+    },
+    "why": {
+      "zh": "「いくら〜にしたって」：道が → 混んでいた → に → したって。★ 是「混んでいた」。",
+      "en": "「いくら〜にしたって」: 道が → 混んでいた → に → したって. The ★ is 「混んでいた」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

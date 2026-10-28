@@ -1,0 +1,699 @@
+[
+  {
+    "id": "n1-l88-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson88#1"
+    ],
+    "difficulty": 1,
+    "stem": "式が始まると、花嫁は頭から足元まで白（　）の衣装で静かに入場してきた。",
+    "options": [
+      "ずくめ",
+      "まみれ",
+      "だらけ",
+      "めいた"
+    ],
+    "answer": 0,
+    "full": "式が始まると、花嫁は頭から足元まで白ずくめの衣装で静かに入場してきた。",
+    "tr": {
+      "zh": "仪式一开始，新娘一身洁白，从头到脚都是白色的礼服，静静地入场了。",
+      "en": "When the ceremony began, the bride walked in quietly, dressed all in white from head to toe."
+    },
+    "why": {
+      "zh": "「頭から足元まで」表示全身都是同一种颜色，颜色词接「ずくめ」：「白ずくめ」（一身白）。",
+      "en": "「頭から足元まで」 (head to toe) means one colour everywhere — colour + 「ずくめ」: 「白ずくめ」 (all in white)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「まみれ」用于泥、血、汗等黏在表面的脏东西，颜色不能用「まみれ」。",
+        "en": "「まみれ」 is for dirt, blood or sweat smeared on a surface, not for a colour."
+      },
+      {
+        "zh": "「だらけ」表示负面的东西到处都是，「白だらけ」不能形容一身白色的礼服。",
+        "en": "「だらけ」 means unpleasant things all over; 「白だらけ」 can't describe an all-white wedding outfit."
+      },
+      {
+        "zh": "「めいた」是“有……的气息”，「白めいた」不是固定搭配，也不符合“从头到脚全白”。",
+        "en": "「めいた」 (a touch of …) has no 「白めいた」, and \"from head to toe\" needs \"all\"."
+      }
+    ]
+  },
+  {
+    "id": "n1-l88-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson88#1"
+    ],
+    "difficulty": 2,
+    "stem": "留学した最初の年は、初めての一人暮らしに初めてのアルバイトと、初めて（　）の毎日だった。",
+    "options": [
+      "まみれ",
+      "ぐるみ",
+      "ずくめ",
+      "ながら"
+    ],
+    "answer": 2,
+    "full": "留学した最初の年は、初めての一人暮らしに初めてのアルバイトと、初めてずくめの毎日だった。",
+    "tr": {
+      "zh": "留学的第一年，第一次一个人生活、第一次打工，每天净是第一次。",
+      "en": "My first year abroad was nothing but firsts: living alone for the first time, my first part-time job …"
+    },
+    "why": {
+      "zh": "一连串的“第一次”列举在前，表示那段日子里全是同一类事，用固定搭配「初めてずくめ」。",
+      "en": "A run of \"firsts\" — that period was all one kind of thing: the set phrase 「初めてずくめ」."
+    },
+    "wrong": [
+      {
+        "zh": "「まみれ」只用于沾满表面的附着物，「初めて」这种经历不能“沾满”。",
+        "en": "「まみれ」 is for something smeared on a surface; experiences can't be."
+      },
+      {
+        "zh": "「ぐるみ」前面要接「家族」「町」「会社」等集体名词，表示整体参与。",
+        "en": "「ぐるみ」 follows a group noun (家族, 町, 会社) — a whole group taking part."
+      },
+      null,
+      {
+        "zh": "「ながらの」只有「昔ながらの」「生まれながらの」等固定说法，没有「初めてながらの」。",
+        "en": "「ながらの」 exists only in set phrases like 「昔ながらの」; there is no 「初めてながらの」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l88-003",
+    "type": "narabe",
+    "refs": [
+      "lesson88#1"
+    ],
+    "difficulty": 2,
+    "stem": "この寮は門限から [★] [_] [_] [_] ほとんどない。",
+    "options": [
+      "自由が",
+      "規則",
+      "食事の時間まで",
+      "ずくめで"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "この寮は門限から食事の時間まで規則ずくめで自由がほとんどない。",
+    "tr": {
+      "zh": "这个宿舍从门禁到吃饭时间全是规矩，几乎没有自由。",
+      "en": "This dormitory is all rules, from the curfew to mealtimes; there's hardly any freedom."
+    },
+    "why": {
+      "zh": "「門限から」与「食事の時間まで」呼应，接着是「規則ずくめで」（全是规矩），最后「自由がほとんどない」：食事の時間まで → 規則 → ずくめで → 自由が。★ 是「食事の時間まで」。",
+      "en": "「門限から」 pairs with 「食事の時間まで」, then 「規則ずくめで」 (all rules), then 「自由がほとんどない」: 食事の時間まで → 規則 → ずくめで → 自由が. The ★ is 「食事の時間まで」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l88-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson88#2"
+    ],
+    "difficulty": 1,
+    "stem": "一日中車の修理をしていた父は、作業着も手も油（　）だった。",
+    "options": [
+      "ずくめ",
+      "ぐるみ",
+      "めいて",
+      "まみれ"
+    ],
+    "answer": 3,
+    "full": "一日中車の修理をしていた父は、作業着も手も油まみれだった。",
+    "tr": {
+      "zh": "修了一整天车的父亲，工作服和手上都沾满了油。",
+      "en": "After repairing cars all day, my father's overalls and hands were covered in oil."
+    },
+    "why": {
+      "zh": "油是会黏在表面的液体，“沾满一身”用「まみれ」：「油まみれ」。",
+      "en": "Oil is a liquid that sticks to surfaces — \"covered in\" is 「まみれ」: 「油まみれ」."
+    },
+    "wrong": [
+      {
+        "zh": "「ずくめ」表示全是同一类东西，多为正面或中性的固定搭配，不用于沾在表面的油污（❌「汗ずくめ」同理）。",
+        "en": "「ずくめ」 is \"nothing but\", in set phrases; it isn't used for grime on a surface (like ❌「汗ずくめ」)."
+      },
+      {
+        "zh": "「ぐるみ」接集体名词表示整体参与，「油ぐるみ」不成立。",
+        "en": "「ぐるみ」 follows a group noun; 「油ぐるみ」 doesn't exist."
+      },
+      {
+        "zh": "「めく」接少数名词表示“有……气息”，「油めいて」不成立，后面也接不了「だった」。",
+        "en": "「めく」 (a touch of …) has no 「油めく」, and 「めいてだった」 isn't a form."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l88-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson88#2",
+      "lesson88#1"
+    ],
+    "difficulty": 2,
+    "stem": "急いで書いたせいか、返ってきた答案は赤ペンで直された間違い（　）だった。",
+    "options": [
+      "めいた",
+      "だらけ",
+      "ずくめ",
+      "ぐるみ"
+    ],
+    "answer": 1,
+    "full": "急いで書いたせいか、返ってきた答案は赤ペンで直された間違いだらけだった。",
+    "tr": {
+      "zh": "大概是写得太匆忙，发回来的答卷上满是用红笔改过的错误。",
+      "en": "Maybe because I wrote it in a hurry, the answer sheet came back full of mistakes corrected in red."
+    },
+    "why": {
+      "zh": "错误数量多、散布在答卷各处，用「だらけ」：「間違いだらけ」。「ずくめ」不用于到处散布的东西。",
+      "en": "Many mistakes scattered over the sheet — 「だらけ」: 「間違いだらけ」. 「ずくめ」 isn't used for things scattered about."
+    },
+    "wrong": [
+      {
+        "zh": "「めく」表示“带有……的样子”，接「春」「冗談」等；「間違いめいた」说不通。",
+        "en": "「めく」 means \"having a touch of\" (春めく, 冗談めいた); 「間違いめいた」 doesn't fit."
+      },
+      null,
+      {
+        "zh": "「ずくめ」不用于数量多、到处散布的东西：❌「間違いずくめの答案」。",
+        "en": "「ずくめ」 isn't used for many things scattered about: ❌「間違いずくめの答案」."
+      },
+      {
+        "zh": "「ぐるみ」接集体名词表示全体参与，和“错误很多”无关。",
+        "en": "「ぐるみ」 (a whole group together) has nothing to do with lots of mistakes."
+      }
+    ]
+  },
+  {
+    "id": "n1-l88-006",
+    "type": "narabe",
+    "refs": [
+      "lesson88#2"
+    ],
+    "difficulty": 2,
+    "stem": "物置を片付けていたら、祖父の [_] [★] [_] [_] 出てきた。",
+    "options": [
+      "日記が",
+      "まみれに",
+      "なった",
+      "ほこり"
+    ],
+    "order": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "full": "物置を片付けていたら、祖父のほこりまみれになった日記が出てきた。",
+    "tr": {
+      "zh": "收拾储藏室时，翻出了祖父那本落满灰尘的日记。",
+      "en": "While tidying the storeroom, I found my grandfather's diary, covered in dust."
+    },
+    "why": {
+      "zh": "「ほこりまみれになった」修饰「日記」，「日記が」接「出てきた」：ほこり → まみれに → なった → 日記が。★ 是「まみれに」。",
+      "en": "「ほこりまみれになった」 modifies 「日記」, and 「日記が」 goes with 「出てきた」: ほこり → まみれに → なった → 日記が. The ★ is 「まみれに」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l88-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson88#3"
+    ],
+    "difficulty": 1,
+    "stem": "山田さん一家とは、子どもたちが同じ幼稚園に通っていた頃からの家族（　）の付き合いだ。",
+    "options": [
+      "ごと",
+      "ずくめ",
+      "ぐるみ",
+      "まみれ"
+    ],
+    "answer": 2,
+    "full": "山田さん一家とは、子どもたちが同じ幼稚園に通っていた頃からの家族ぐるみの付き合いだ。",
+    "tr": {
+      "zh": "我们和山田一家是从孩子们上同一所幼儿园时起就开始的全家之间的交情。",
+      "en": "We've been family friends with the Yamadas since our children went to the same kindergarten."
+    },
+    "why": {
+      "zh": "两家人全家一起来往，集体名词「家族」接「ぐるみ」：「家族ぐるみの付き合い」。",
+      "en": "Both whole families are friends — group noun 「家族」 + 「ぐるみ」: 「家族ぐるみの付き合い」."
+    },
+    "wrong": [
+      {
+        "zh": "「ごと」是“连同……一起（不分开）”，如「皮ごと」；「家族ごとの付き合い」会变成“每个家庭各自的交往”。",
+        "en": "「ごと」 means \"along with, not separated\" (皮ごと); 「家族ごとの付き合い」 would mean each family's own dealings."
+      },
+      {
+        "zh": "「ずくめ」是“全是……”，「家族ずくめ」不成立。",
+        "en": "「ずくめ」 is \"nothing but …\"; there's no 「家族ずくめ」."
+      },
+      null,
+      {
+        "zh": "「まみれ」用于沾满表面的脏东西，和交往无关。",
+        "en": "「まみれ」 is for grime covering a surface — nothing to do with a friendship."
+      }
+    ]
+  },
+  {
+    "id": "n1-l88-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson88#3"
+    ],
+    "difficulty": 2,
+    "stem": "検査データの改ざんは一部の社員の独断ではなく、会社（　）で行われていたことが判明した。",
+    "options": [
+      "ぐるみ",
+      "ごと",
+      "ずくめ",
+      "ながら"
+    ],
+    "answer": 0,
+    "full": "検査データの改ざんは一部の社員の独断ではなく、会社ぐるみで行われていたことが判明した。",
+    "tr": {
+      "zh": "调查查明，篡改检测数据并非部分员工的擅自行为，而是整个公司一起干的。",
+      "en": "It came to light that the inspection data had been falsified not by a few employees acting alone but by the company as a whole."
+    },
+    "why": {
+      "zh": "「一部の社員の独断ではなく」说明是公司整体参与，而且是舞弊，用「会社ぐるみ」。",
+      "en": "「一部の社員の独断ではなく」 (not a few staff alone) points to the whole company joining in wrongdoing: 「会社ぐるみ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「会社ごと」是“连公司一起（整个地）”，如「会社ごと売却する」，不能表示全公司参与舞弊。",
+        "en": "「会社ごと」 is \"the company and all\" (会社ごと売却する), not the whole company taking part."
+      },
+      {
+        "zh": "「ずくめ」是“全是同一类东西”，「会社ずくめ」不成立。",
+        "en": "「ずくめ」 is \"nothing but …\"; 「会社ずくめ」 doesn't exist."
+      },
+      {
+        "zh": "「ながら」作状态用法只有「涙ながら」「昔ながら」等固定说法，「会社ながらで」不成立。",
+        "en": "The state-keeping 「ながら」 exists only in set phrases (涙ながら, 昔ながら); 「会社ながらで」 isn't Japanese."
+      }
+    ]
+  },
+  {
+    "id": "n1-l88-009",
+    "type": "narabe",
+    "refs": [
+      "lesson88#3"
+    ],
+    "difficulty": 2,
+    "stem": "今回の選挙違反は、候補者個人によるものではなく、[_] [_] [★] [_] 。",
+    "options": [
+      "行われた",
+      "ぐるみで",
+      "組織的な犯行だった",
+      "後援会"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "今回の選挙違反は、候補者個人によるものではなく、後援会ぐるみで行われた組織的な犯行だった。",
+    "tr": {
+      "zh": "这次的选举违法并非候选人个人所为，而是整个后援会一起实施的有组织的犯罪。",
+      "en": "This electoral violation wasn't the candidate's own doing; it was an organised crime committed by the whole support group."
+    },
+    "why": {
+      "zh": "「後援会ぐるみで」修饰「行われた」，「行われた」再修饰「組織的な犯行」：後援会 → ぐるみで → 行われた → 組織的な犯行だった。★ 是「行われた」。",
+      "en": "「後援会ぐるみで」 modifies 「行われた」, which modifies 「組織的な犯行」: 後援会 → ぐるみで → 行われた → 組織的な犯行だった. The ★ is 「行われた」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l88-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson88#4"
+    ],
+    "difficulty": 1,
+    "stem": "二月も半ばを過ぎ、日差しが少しずつ春（　）きた。",
+    "options": [
+      "じみて",
+      "ぶって",
+      "めいて",
+      "びて"
+    ],
+    "answer": 2,
+    "full": "二月も半ばを過ぎ、日差しが少しずつ春めいてきた。",
+    "tr": {
+      "zh": "过了二月中旬，阳光渐渐有了春意。",
+      "en": "Past mid-February, the sunlight has gradually taken on a touch of spring."
+    },
+    "why": {
+      "zh": "季节词接「めく」表示季节的气息渐渐出现，常用「〜めいてきた」：「春めいてきた」。",
+      "en": "A season word + 「めく」 means its feel is starting to show, usually 「〜めいてきた」: 「春めいてきた」."
+    },
+    "wrong": [
+      {
+        "zh": "「じみる」带负面色彩（「所帯じみる」「年寄りじみた」），不和「春」搭配。",
+        "en": "「じみる」 is negative (所帯じみる, 年寄りじみた) and doesn't go with 「春」."
+      },
+      {
+        "zh": "「ぶる」是“装作……”（「学者ぶる」），阳光不会“装作春天”。",
+        "en": "「ぶる」 is \"put on airs of\" (学者ぶる); sunlight can't pretend to be spring."
+      },
+      null,
+      {
+        "zh": "「びる」只有「大人びる」「古びる」等少数词，没有「春びる」。",
+        "en": "「びる」 exists only in a few words (大人びる, 古びる); there is no 「春びる」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l88-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson88#4"
+    ],
+    "difficulty": 2,
+    "stem": "課長の説教（　）一言で、和やかだった場の空気が一変した。",
+    "options": [
+      "ずくめの",
+      "めいた",
+      "まみれの",
+      "ぐるみの"
+    ],
+    "answer": 1,
+    "full": "課長の説教めいた一言で、和やかだった場の空気が一変した。",
+    "tr": {
+      "zh": "科长一句带着说教味的话，让原本融洽的气氛一下子变了。",
+      "en": "One preachy remark from the section chief completely changed the friendly mood."
+    },
+    "why": {
+      "zh": "「説教めいた一言」=“像是在说教的一句话”：「めく」修饰名词用「めいた」。",
+      "en": "「説教めいた一言」 = a remark with a preachy ring; 「めく」 before a noun is 「めいた」."
+    },
+    "wrong": [
+      {
+        "zh": "「ずくめ」是“全是……”，而这里只有「一言」（一句话），不可能“全是”。",
+        "en": "「ずくめ」 means \"nothing but\", but here there is only 「一言」 (one remark)."
+      },
+      null,
+      {
+        "zh": "「まみれ」只用于沾在表面的脏东西，不能修饰一句话。",
+        "en": "「まみれ」 is for grime on a surface; it can't describe a remark."
+      },
+      {
+        "zh": "「ぐるみ」接集体名词表示整体参与，「説教ぐるみ」不成立。",
+        "en": "「ぐるみ」 follows a group noun; 「説教ぐるみ」 doesn't exist."
+      }
+    ]
+  },
+  {
+    "id": "n1-l88-012",
+    "type": "narabe",
+    "refs": [
+      "lesson88#4"
+    ],
+    "difficulty": 2,
+    "stem": "彼は [_] [_] [_] [★] 、ただ深く頭を下げた。",
+    "options": [
+      "一切口にせず",
+      "めいた",
+      "ことは",
+      "言い訳"
+    ],
+    "order": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "full": "彼は言い訳めいたことは一切口にせず、ただ深く頭を下げた。",
+    "tr": {
+      "zh": "他一句像是辩解的话都没说，只是深深地低下了头。",
+      "en": "He said nothing that sounded like an excuse; he just bowed his head deeply."
+    },
+    "why": {
+      "zh": "「言い訳めいた」修饰「こと」，「ことは」是「一切口にせず」的对象：言い訳 → めいた → ことは → 一切口にせず。★ 是「一切口にせず」。",
+      "en": "「言い訳めいた」 modifies 「こと」, and 「ことは」 is the object of 「一切口にせず」: 言い訳 → めいた → ことは → 一切口にせず. The ★ is 「一切口にせず」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l88-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson88#5"
+    ],
+    "difficulty": 2,
+    "stem": "喫茶店で聞く（　）隣の席の会話を聞いていると、どうやら二人は同じ会社の社員らしかった。",
+    "options": [
+      "ことなく",
+      "ともなく",
+      "までもなく",
+      "ともなると"
+    ],
+    "answer": 1,
+    "full": "喫茶店で聞くともなく隣の席の会話を聞いていると、どうやら二人は同じ会社の社員らしかった。",
+    "tr": {
+      "zh": "在咖啡店里无意中听着邻座的谈话，原来那两人好像是同一家公司的职员。",
+      "en": "As I half-listened to the conversation at the next table in the café, it seemed the two worked for the same company."
+    },
+    "why": {
+      "zh": "「聞く（　）…聞いている」重复同一个动词，表示并非有意去听，用「聞くともなく聞く」。",
+      "en": "The repeated verb 「聞く …聞いている」 shows listening without meaning to: 「聞くともなく聞く」."
+    },
+    "wrong": [
+      {
+        "zh": "「聞くことなく」是“不听”，和后面的「聞いていると」矛盾。",
+        "en": "「聞くことなく」 means \"without listening\", contradicting 「聞いていると」."
+      },
+      null,
+      {
+        "zh": "「までもなく」是“用不着……”，「聞くまでもなく聞いていると」意思不通。",
+        "en": "「までもなく」 (no need to …) makes 「聞くまでもなく聞いていると」 nonsense."
+      },
+      {
+        "zh": "「ともなると」接名词表示“一到了……的程度”，不接「聞く」，意思也不对。",
+        "en": "「ともなると」 (once it gets to …) follows nouns and means something else entirely."
+      }
+    ]
+  },
+  {
+    "id": "n1-l88-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson88#5"
+    ],
+    "difficulty": 1,
+    "stem": "夕暮れの路地を歩いていると、どこから（　）焼き魚のにおいが漂ってきた。",
+    "options": [
+      "とばかりに",
+      "ともなると",
+      "ながらに",
+      "ともなく"
+    ],
+    "answer": 3,
+    "full": "夕暮れの路地を歩いていると、どこからともなく焼き魚のにおいが漂ってきた。",
+    "tr": {
+      "zh": "黄昏时走在小巷里，不知从哪里飘来了烤鱼的香味。",
+      "en": "Walking down a lane at dusk, I caught the smell of grilled fish drifting from somewhere or other."
+    },
+    "why": {
+      "zh": "疑问词「どこから」接「ともなく」表示“不知从哪里”，常与「漂う」「聞こえる」连用。",
+      "en": "Question word 「どこから」 + 「ともなく」 = from who knows where, often with 「漂う」 or 「聞こえる」."
+    },
+    "wrong": [
+      {
+        "zh": "「とばかりに」前面是“心里的话”，表示态度像说出了那句话，「どこからとばかりに」不成立。",
+        "en": "「とばかりに」 follows the words someone's manner seems to say; 「どこからとばかりに」 isn't Japanese."
+      },
+      {
+        "zh": "「ともなると」接名词表示“到了……的程度”，不能接「どこから」。",
+        "en": "「ともなると」 (once it gets to …) follows nouns, not 「どこから」."
+      },
+      {
+        "zh": "「ながらに」只用于「涙ながらに」「生まれながらに」等固定说法。",
+        "en": "「ながらに」 exists only in set phrases like 「涙ながらに」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l88-015",
+    "type": "narabe",
+    "refs": [
+      "lesson88#5"
+    ],
+    "difficulty": 2,
+    "stem": "彼女は窓辺に座り、行き交う人々を [★] [_] [_] [_] 。",
+    "options": [
+      "物思いにふけっていた",
+      "見る",
+      "ともなく",
+      "見ながら"
+    ],
+    "order": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "full": "彼女は窓辺に座り、行き交う人々を見るともなく見ながら物思いにふけっていた。",
+    "tr": {
+      "zh": "她坐在窗边，心不在焉地望着来来往往的人，陷入了沉思。",
+      "en": "She sat by the window, gazing absently at the passers-by, lost in thought."
+    },
+    "why": {
+      "zh": "「見るともなく見ながら」重复同一个动词，最后是主要动作「物思いにふけっていた」：見る → ともなく → 見ながら → 物思いにふけっていた。★ 是「見る」。",
+      "en": "「見るともなく見ながら」 repeats the verb, and the main action 「物思いにふけっていた」 comes last: 見る → ともなく → 見ながら → 物思いにふけっていた. The ★ is 「見る」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l88-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson88#6"
+    ],
+    "difficulty": 1,
+    "stem": "通信販売の普及により、地方に住んでいても、家にい（　）全国の名産品が手に入るようになった。",
+    "options": [
+      "ながらにして",
+      "がてら",
+      "かたわら",
+      "そばから"
+    ],
+    "answer": 0,
+    "full": "通信販売の普及により、地方に住んでいても、家にいながらにして全国の名産品が手に入るようになった。",
+    "tr": {
+      "zh": "随着网购的普及，即使住在地方，待在家里也能买到全国的特产。",
+      "en": "With the spread of mail order, even people living in the regions can get specialities from all over the country without leaving home."
+    },
+    "why": {
+      "zh": "「家にいながらにして」是固定说法，“待在原地不动（就能……）”，后面常接「〜できる」「手に入る」。",
+      "en": "「いながらにして」 is a set phrase — \"without leaving where you are\", usually followed by 「〜できる」 or 「手に入る」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「がてら」是“顺便”，接动作性名词或ます形后多接移动动词；「いる」不是这样的动作，「いがてら」不成立。",
+        "en": "「がてら」 (while also …) goes with an action and usually a movement verb; 「いがてら」 doesn't exist."
+      },
+      {
+        "zh": "「かたわら」接动词辞书形（「いるかたわら」）表示本职之余的长期活动，「いかたわら」接续也不对。",
+        "en": "「かたわら」 takes the dictionary form and means a side activity; 「いかたわら」 is the wrong connection."
+      },
+      {
+        "zh": "「そばから」接辞书形或た形，表示“刚……就又……”，「いそばから」不成立。",
+        "en": "「そばから」 (no sooner … than again) takes the dictionary or た form; 「いそばから」 isn't a form."
+      }
+    ]
+  },
+  {
+    "id": "n1-l88-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson88#6"
+    ],
+    "difficulty": 1,
+    "stem": "この商店街には、昭和の頃から変わらない昔（　）の店が今も数多く残っている。",
+    "options": [
+      "ぐるみ",
+      "まみれ",
+      "ずくめ",
+      "ながら"
+    ],
+    "answer": 3,
+    "full": "この商店街には、昭和の頃から変わらない昔ながらの店が今も数多く残っている。",
+    "tr": {
+      "zh": "这条商店街上，至今仍保留着许多从昭和时代起就没变过的老式店铺。",
+      "en": "This shopping street still has many old-style shops that haven't changed since the Showa era."
+    },
+    "why": {
+      "zh": "「昭和の頃から変わらない」= 一直保持原样，用固定说法「昔ながらの」（传统的、老样子的）。",
+      "en": "「昭和の頃から変わらない」 (unchanged since Showa) — the set phrase 「昔ながらの」 (as it has always been)."
+    },
+    "wrong": [
+      {
+        "zh": "「ぐるみ」接集体名词表示整体参与，「昔ぐるみ」不成立。",
+        "en": "「ぐるみ」 follows a group noun; 「昔ぐるみ」 doesn't exist."
+      },
+      {
+        "zh": "「まみれ」用于沾满表面的脏东西，「昔まみれ」不成立。",
+        "en": "「まみれ」 is for grime on a surface; 「昔まみれ」 doesn't exist."
+      },
+      {
+        "zh": "「ずくめ」是“全是……”的固定搭配，没有「昔ずくめ」。",
+        "en": "「ずくめ」 is \"nothing but\" in set phrases; there's no 「昔ずくめ」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l88-018",
+    "type": "narabe",
+    "refs": [
+      "lesson88#6"
+    ],
+    "difficulty": 2,
+    "stem": "被害者の父親は記者会見で、娘への [_] [★] [_] [_] 。",
+    "options": [
+      "思いを",
+      "語った",
+      "ながらに",
+      "涙"
+    ],
+    "order": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "full": "被害者の父親は記者会見で、娘への思いを涙ながらに語った。",
+    "tr": {
+      "zh": "受害者的父亲在记者会上含着泪讲述了对女儿的思念。",
+      "en": "At the press conference, the victim's father spoke through tears of his feelings for his daughter."
+    },
+    "why": {
+      "zh": "「娘への」修饰「思い」，所以「思いを」紧跟其后，接着是方式「涙ながらに」和动词「語った」：思いを → 涙 → ながらに → 語った。★ 是「涙」。",
+      "en": "「娘への」 modifies 「思い」, so 「思いを」 comes next, then the manner 「涙ながらに」 and the verb 「語った」: 思いを → 涙 → ながらに → 語った. The ★ is 「涙」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

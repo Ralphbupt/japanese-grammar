@@ -1,0 +1,290 @@
+[
+  {
+    "id": "n1-dk-401",
+    "type": "info",
+    "difficulty": 2,
+    "intro": "佐藤さん（28歳）は県外に住む会社員で、来年4月から、あおば県の伝統工芸の研修を受けたいと考えている。木を素材とする仕事に関心がある。研修中も、土日は家族の住む県外の自宅で過ごしたい。貯金が少ないため、研修期間中は生活支援金を受けたい。",
+    "passage": "あおば県　伝統工芸後継者育成事業　研修生募集\n| 工房 | 分野 | 研修期間 | 研修日 | 応募資格（年齢） | 生活支援金 |\n| A | 木工家具 | 3年 | 月〜土 | 40歳以下 | 月12万円 |\n| B | 陶芸 | 2年 | 月〜金 | 不問 | 月8万円 |\n| C | 木彫（欄間・仏像） | 3年 | 月〜金 | 不問 | なし |\n| D | 染織 | 2年 | 月〜金 | 35歳以下 | 月10万円 |\n| E | 木地挽き（椀などの素地づくり） | 2年 | 月〜金 | 30歳以下 | 月10万円 |\n| F | 和紙 | 1年 | 火〜土 | 不問 | なし |\n＊応募資格の年齢は、来年4月1日時点のものとします。\n＊生活支援金は、研修期間中、県内に住所を移して研修を受ける方に支給します。\n＊生活支援金を受けた方は、研修修了後、県内で3年以上製作に従事することが条件となります。これを満たさない場合は、支援金の返還を求めることがあります。\n＊応募は、お一人につき一つの工房に限ります。\n＊応募締切：12月20日（必着）。書類選考の後、1月に各工房で面接と実技体験を行います。\n＊各工房では、応募前の見学（無料・要予約）を受け付けています。",
+    "tr": {
+      "zh": "青叶县 传统工艺接班人培养事业 招收研修生。A 木工家具：研修3年，周一至周六，40岁以下，生活支援金每月12万日元。B 陶艺：2年，周一至周五，年龄不限，每月8万日元。C 木雕（雕花横楣·佛像）：3年，周一至周五，年龄不限，无支援金。D 染织：2年，周一至周五，35岁以下，每月10万日元。E 木胎车旋（碗等的胎体制作）：2年，周一至周五，30岁以下，每月10万日元。F 和纸：1年，周二至周六，年龄不限，无支援金。＊报名资格的年龄以明年4月1日为准。＊生活支援金发给研修期间把住址迁入县内参加研修的人。＊领取生活支援金的人，条件是研修结束后在县内从事制作3年以上。不满足的，可能会要求退还支援金。＊每人只能报名一个工房。＊报名截止：12月20日（必须寄到）。书面审查后，1月在各工房进行面试和实际操作体验。＊各工房接受报名前的参观（免费，需预约）。",
+      "en": "Aoba Prefecture traditional crafts successor training: trainees wanted. A Wooden furniture: 3 years, Mon–Sat, age 40 or under, living allowance ¥120,000/month. B Pottery: 2 years, Mon–Fri, any age, ¥80,000. C Wood carving (transoms, Buddhist statues): 3 years, Mon–Fri, any age, no allowance. D Dyeing and weaving: 2 years, Mon–Fri, 35 or under, ¥100,000. E Wood turning (making bowl blanks): 2 years, Mon–Fri, 30 or under, ¥100,000. F Washi paper: 1 year, Tue–Sat, any age, none. * Age is as of 1 April next year. * The living allowance is paid to those who move their registered address into the prefecture for the training period. * Recipients must work as makers in the prefecture for at least 3 years after finishing; otherwise repayment may be required. * One workshop per applicant. * Deadline: 20 December (must arrive). After document screening, interviews and hands-on trials are held at each workshop in January. * Each workshop welcomes visits before applying (free, booking required)."
+    },
+    "questions": [
+      {
+        "q": "佐藤さんの希望に合う工房はどれか。",
+        "options": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "用木头的是A、C、E。A周六也要研修，周末回不了家；C没有支援金。E周一至周五、30岁以下（他28岁）、有每月10万日元，全部符合。把住址迁入县内并不妨碍周末回县外的家，所以和他的条件不冲突。",
+          "en": "Wood: A, C, E. A runs on Saturdays, so he can't go home; C pays no allowance. E is Mon–Fri, 30 or under (he's 28) and pays ¥100,000 — it fits. Moving his registered address into the prefecture doesn't stop him going home at weekends, so it doesn't conflict with what he wants."
+        },
+        "wrong": [
+          {
+            "zh": "A在「月〜土」，周六也要研修，不符合周末回家的希望。",
+            "en": "A is 「月〜土」, so he'd lose his Saturdays."
+          },
+          {
+            "zh": "C用木头、周一至周五，但生活支援金是「なし」。",
+            "en": "C is wood and Mon–Fri, but the allowance is 「なし」."
+          },
+          {
+            "zh": "D是染织，不是用木头的工作。",
+            "en": "D is dyeing and weaving, not woodwork."
+          },
+          null
+        ]
+      },
+      {
+        "q": "佐藤さんが、希望に合う工房で研修を受ける場合、注意しなければならないことはどれか。",
+        "difficulty": 3,
+        "options": [
+          "応募の前に、必ず工房を見学しなければならない。",
+          "12月20日までに、工房で面接を受けなければならない。",
+          "研修を終えた後、県内で3年以上製作を続けないと、支援金の返還を求められることがある。",
+          "支援金を受けるために、研修中は土日も県内で過ごさなければならない。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "他要领生活支援金，而注意事项写明领取者结业后须在县内制作3年以上，否则「返還を求めることがあります」。",
+          "en": "He'll take the allowance, and recipients must work in the prefecture 3+ years afterwards or 「返還を求めることがあります」."
+        },
+        "wrong": [
+          {
+            "zh": "参观是「受け付けています」，可以参观，并非必须。",
+            "en": "Visits are 「受け付けています」 — offered, not required."
+          },
+          {
+            "zh": "12月20日是报名截止，面试在「1月に」进行。",
+            "en": "20 December is the deadline; interviews are 「1月に」."
+          },
+          null,
+          {
+            "zh": "条件只是「県内に住所を移して」研修，没有要求周末也待在县内。",
+            "en": "The condition is only moving his address 「県内に」; weekends aren't restricted."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-402",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "大学の美術サークルの部長である木村さんは、12月の平日に、部員19人（全員大学生）と顧問の教授（52歳）の計20人で、市立現代美術館の特別展だけを見に行く予定である。部員のうち3人は、学生用の年間パスポートを持っている。授業が終わるのは17時で、大学から美術館までは40分かかる。展示は1時間半以上かけて見たい。",
+    "passage": "市立現代美術館　観覧料のご案内\n| 区分 | 常設展 | 特別展 | 常設展・特別展セット |\n| 一般 | 500円 | 1,400円 | 1,600円 |\n| 大学生・専門学校生 | 300円 | 1,000円 | 1,100円 |\n| 高校生以下 | 無料 | 600円 | 600円 |\n| 65歳以上 | 250円 | 1,000円 | 1,100円 |\n＊20名以上の団体は、各料金の2割引きとなります。ただし、団体の人数には、年間パスポートで入館する方および無料の方は含みません。\n＊年間パスポート（一般3,000円、学生2,000円）をお持ちの方は、常設展は無料、特別展は各区分の料金の半額でご覧いただけます。\n＊障害者手帳をお持ちの方と、付き添いの方1名は無料です。\n＊開館時間：10時〜18時。ただし、特別展の会期中は、金曜日・土曜日のみ20時まで開館します。入館は閉館の30分前まで。\n＊休館日：毎週月曜日（祝日の場合は翌日）\n＊団体でのご来館は、1週間前までにお電話でご予約ください。",
+    "tr": {
+      "zh": "市立现代美术馆 参观费用说明。一般：常设展500日元，特展1,400日元，常设展·特展套票1,600日元。大学生·专科学校学生：300日元，1,000日元，1,100日元。高中生及以下：免费，600日元，600日元。65岁以上：250日元，1,000日元，1,100日元。＊20人以上的团体各项费用打八折。但团体人数不包括持年票入馆者及免费者。＊持年票（一般3,000日元，学生2,000日元）者，常设展免费，特展按各类别费用的半价参观。＊持残疾人手册者及一名陪同者免费。＊开馆时间：10点至18点。但特展期间，仅周五、周六开到20点。闭馆前30分钟停止入馆。＊休馆日：每周一（逢节假日则为次日）。＊团体来馆请在一周前电话预约。",
+      "en": "City Museum of Contemporary Art — admission. General: permanent ¥500, special ¥1,400, combined ¥1,600. University/vocational students: ¥300, ¥1,000, ¥1,100. High school and under: free, ¥600, ¥600. 65 and over: ¥250, ¥1,000, ¥1,100. * Groups of 20 or more get 20% off each fee; however, people entering with an annual pass or free of charge are not counted in the group. * Annual pass holders (general ¥3,000, student ¥2,000) enter the permanent collection free and the special exhibition at half the fee for their category. * Holders of a disability certificate and one companion are free. * Hours 10:00–18:00; during the special exhibition, open until 20:00 on Fridays and Saturdays only. Last entry 30 minutes before closing. * Closed Mondays (the next day if Monday is a holiday). * Groups please book by phone at least one week ahead."
+    },
+    "questions": [
+      {
+        "q": "木村さんたち20人が特別展を見る場合、観覧料は全部でいくらになるか。",
+        "options": [
+          "15,120円",
+          "15,420円",
+          "18,900円",
+          "20,400円"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "持年票的3人不计入团体，剩17人不足20人，不打折。学生16人×1,000＝16,000日元，持年票3人×500＝1,500日元，教授1,400日元，合计18,900日元。",
+          "en": "The 3 pass holders don't count, leaving 17 — no group discount. 16 students × ¥1,000 + 3 × ¥500 + professor ¥1,400 = ¥18,900."
+        },
+        "wrong": [
+          {
+            "zh": "这是把18,900日元整体打八折的结果，但团体人数只有17人，不能打折。",
+            "en": "That's ¥18,900 less 20%, but only 17 count toward the group, so no discount."
+          },
+          {
+            "zh": "这是只给不持年票的17人打八折的结果，但17人不满20人，不能打折。",
+            "en": "That applies 20% off to the 17 non-pass holders, but 17 is under 20."
+          },
+          null,
+          {
+            "zh": "这是忘记年票半价、全员按原价计算的结果。",
+            "en": "That ignores the half-price annual pass."
+          }
+        ]
+      },
+      {
+        "q": "木村さんたちの希望に合う日に行く場合、何曜日に行けばよいか。",
+        "difficulty": 2,
+        "options": [
+          "火曜日",
+          "木曜日",
+          "金曜日",
+          "土曜日"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "17点下课，40分钟后17:40到馆，看1个半小时要到19:10以后。平日只有周五开到20点（入馆至19:30），所以是周五。",
+          "en": "Class ends at 17:00, they arrive at 17:40 and need until 19:10 or later. The only weekday open till 20:00 is Friday."
+        },
+        "wrong": [
+          {
+            "zh": "周二18点闭馆，17:40到馆后看不了1个半小时。",
+            "en": "Tuesday closes at 18:00; from 17:40 they can't get 90 minutes."
+          },
+          {
+            "zh": "周四也是18点闭馆，时间不够。",
+            "en": "Thursday also closes at 18:00 — not enough time."
+          },
+          null,
+          {
+            "zh": "周六虽然开到20点，但不是木村他们计划的「平日」。",
+            "en": "Saturday is open till 20:00 but isn't a 「平日」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-403",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "東京都に住む中村さん夫婦（夫38歳、妻36歳）は、小学5年生と高校1年生の子どもと4人で、来年みどり町に移住するつもりである。町の空き家バンクに登録されている中古住宅を160万円で購入し、町内の工務店に300万円で改修を依頼したうえで住む予定だ。",
+    "passage": "みどり町　移住・定住支援補助金のご案内\n| 補助の種類 | 対象 | 補助額 |\n| ①住宅取得補助 | 空き家バンク登録物件を購入する方 | 購入費の2分の1（上限100万円） |\n| ②改修補助 | 空き家バンク登録物件を改修する方 | 改修費の3分の1（上限150万円） |\n| ③子育て世帯加算 | ①または②を受ける世帯で、中学生以下の子どもがいる場合 | 子ども1人につき20万円 |\n| ④若者世帯加算 | ①または②を受ける世帯で、夫婦がともに40歳未満の場合 | 30万円 |\n| ⑤引越し費用補助 | 町外から転入する世帯 | 実費（上限10万円） |\n＊①と②は、どちらか一方のみ申請できます。両方の対象となる場合は、補助額の多い方を選んでください。\n＊③④は、①または②と同時に申請してください。\n＊②の改修工事は、町内の業者に依頼したものに限ります。\n＊①〜④の申請は、物件の売買契約（②は工事の請負契約）を結ぶ前に行ってください。契約後の申請は受け付けません。\n＊⑤は、転入後3か月以内に申請してください。\n＊補助を受けた世帯は、転入後5年以上町内に居住することが条件です。",
+    "tr": {
+      "zh": "绿町 移居·定居支援补助金说明。①住房购置补助：购买空房银行登记房屋者，购房费的二分之一（上限100万日元）。②改建补助：改建空房银行登记房屋者，改建费的三分之一（上限150万日元）。③育儿家庭加算：领取①或②的家庭中有初中生及以下子女时，每个孩子20万日元。④年轻家庭加算：领取①或②的家庭中夫妻均未满40岁时，30万日元。⑤搬家费用补助：从町外迁入的家庭，按实际费用（上限10万日元）。＊①和②只能申请其中之一。两者都符合时，请选择补助额较多的一项。＊③④请与①或②同时申请。＊②的改建工程仅限委托町内业者的。＊①至④请在签订房屋买卖合同（②为工程承包合同）之前申请。合同签订后的申请不予受理。＊⑤请在迁入后3个月内申请。＊领取补助的家庭，条件是迁入后在町内居住5年以上。",
+      "en": "Midori Town relocation and settlement grants. ① Home purchase: buyers of a property listed in the vacant-house bank — half the price (up to ¥1m). ② Renovation: those renovating a listed property — one third of the cost (up to ¥1.5m). ③ Child-raising supplement: households receiving ① or ② with children of junior-high age or younger — ¥200,000 per child. ④ Young household supplement: households receiving ① or ② where both spouses are under 40 — ¥300,000. ⑤ Moving costs: households moving in from outside the town — actual cost (up to ¥100,000). * Only one of ① and ② may be claimed; if eligible for both, choose the larger. * Apply for ③ and ④ together with ① or ②. * Renovation under ② must be done by a contractor based in the town. * Apply for ①–④ before signing the purchase contract (for ②, the construction contract); applications after signing are not accepted. * Apply for ⑤ within 3 months of moving in. * Households receiving grants must live in the town for at least 5 years after moving in."
+    },
+    "questions": [
+      {
+        "q": "中村さん一家が受けられる補助金は、引越し費用補助を除いて、最大でいくらか。",
+        "options": [
+          "130万円",
+          "150万円",
+          "170万円",
+          "230万円"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "①是160万的一半80万，②是300万的三分之一100万，只能选一个，选②100万。③只有小学生1人符合，20万。④夫妻都未满40岁，30万。合计150万日元。",
+          "en": "① would be ¥800,000, ② ¥1m; only one is allowed, so ② ¥1m. ③ counts only the primary-school child: ¥200,000. ④ both under 40: ¥300,000. Total ¥1.5m."
+        },
+        "wrong": [
+          {
+            "zh": "这是漏掉了③育儿加算（小学5年级的孩子符合「中学生以下」）。",
+            "en": "That leaves out ③ — the fifth-grader counts as 「中学生以下」."
+          },
+          null,
+          {
+            "zh": "这是把高中生也算进③了，但③只限「中学生以下」。",
+            "en": "That counts the high-schooler in ③, which is only for 「中学生以下」."
+          },
+          {
+            "zh": "这是把①和②都算上了，但①和②「どちらか一方のみ」。",
+            "en": "That claims both ① and ②, but only 「どちらか一方のみ」 is allowed."
+          }
+        ]
+      },
+      {
+        "q": "中村さん一家が補助を受けるために、しなければならないことはどれか。",
+        "difficulty": 2,
+        "options": [
+          "家の購入や改修工事の契約を結ぶ前に、補助を申請する。",
+          "転入後3か月以内に、①から⑤までをまとめて申請する。",
+          "改修工事を、町外の大手業者に依頼する。",
+          "転入後5年間は、毎年補助を申請し直す。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "注意事项：①至④须在「売買契約（②は工事の請負契約）を結ぶ前に」申请，签约后不受理。",
+          "en": "The notes: apply for ①–④ 「契約…を結ぶ前に」; applications after signing are refused."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "3个月以内的期限只适用于⑤，①至④必须在签约前申请。",
+            "en": "The 3-month limit is only for ⑤; ①–④ must come before signing."
+          },
+          {
+            "zh": "②的改建工程「町内の業者に依頼したものに限ります」。",
+            "en": "Renovation under ② is 「町内の業者に依頼したものに限ります」."
+          },
+          {
+            "zh": "条件是迁入后居住5年以上，并没有要求每年重新申请。",
+            "en": "The condition is living there 5+ years, not reapplying every year."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-404",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "林さんは大学2年生（20歳）で、来年夏の国際大会でボランティアをしたいと考えている。英語はTOEIC800点で、中国語も日常会話ができる。8月はアルバイトがあるため、参加できるのは8月5日から8日までの4日間だけである。",
+    "passage": "第10回世界ユース陸上競技大会　ボランティア募集\n| 活動 | 内容 | 必要な語学力 | 活動日 | 募集人数 |\n| 競技会場通訳 | 選手・審判の通訳 | 英語（TOEIC850点以上またはそれと同等） | 8/3〜8/10のうち5日以上 | 30名 |\n| 選手村案内 | 選手村での案内・生活支援 | 英語（日常会話程度） | 8/1〜8/12のうち3日以上 | 80名 |\n| 空港送迎 | 空港での出迎え・見送り | 英語または中国語（日常会話程度） | 7/30〜8/2、8/11〜8/13のうち2日以上 | 40名 |\n| 観光案内 | 市内観光案内所での案内 | 英語・中国語・韓国語のいずれか（日常会話程度） | 8/1〜8/12のうち4日以上 | 50名 |\n| 医療通訳 | 医務室での通訳 | 英語（TOEIC900点以上）、医療通訳の経験者 | 8/3〜8/10の全日 | 10名 |\n＊応募資格：来年4月1日時点で18歳以上の方（高校生は除く）。\n＊活動時間は1日約8時間です。交通費として1日1,000円を支給します。宿泊費は自己負担となります。\n＊活動に先立ち、7月の土曜日に行う研修（全2回）にすべて参加していただきます。\n＊応募できる活動は、お一人一つまでです。\n＊応募は1月31日までに大会ホームページから。語学力の条件が「日常会話程度」以外の活動に応募する方は、語学力を証明する書類の写しを添付してください。",
+    "tr": {
+      "zh": "第10届世界青年田径大会 招募志愿者。赛场翻译：为运动员和裁判翻译，英语（TOEIC850分以上或同等水平），8/3至8/10之间5天以上，30名。运动员村向导：在运动员村向导、生活支援，英语（日常会话程度），8/1至8/12之间3天以上，80名。机场接送：在机场迎送，英语或汉语（日常会话程度），7/30至8/2、8/11至8/13之间2天以上，40名。观光向导：在市内旅游咨询处向导，英语、汉语、韩语之一（日常会话程度），8/1至8/12之间4天以上，50名。医疗翻译：在医务室翻译，英语（TOEIC900分以上），有医疗翻译经验者，8/3至8/10全部日期，10名。＊报名资格：截至明年4月1日满18岁者（高中生除外）。＊活动时间每天约8小时。每天发放交通费1,000日元。住宿费自理。＊活动之前，须参加7月周六举行的全部培训（共2次）。＊每人只能报名一项活动。＊1月31日前通过大会官网报名。报名语言条件为“日常会话程度”以外的活动者，请附上语言能力证明文件的复印件。",
+      "en": "10th World Youth Athletics Championships — volunteers wanted. Venue interpreting: for athletes and officials; English (TOEIC 850+ or equivalent); at least 5 days between 3 and 10 Aug; 30 places. Athletes' village guide: guidance and daily support in the village; English (conversational); at least 3 days between 1 and 12 Aug; 80. Airport meet-and-greet: meeting and seeing off at the airport; English or Chinese (conversational); at least 2 days between 30 Jul–2 Aug and 11–13 Aug; 40. Tourist information: at city information centres; English, Chinese or Korean (conversational); at least 4 days between 1 and 12 Aug; 50. Medical interpreting: in the medical room; English (TOEIC 900+) with medical interpreting experience; every day 3–10 Aug; 10. * Eligibility: aged 18+ as of 1 April next year (high-school students excluded). * About 8 hours a day; ¥1,000 a day for transport; accommodation at your own expense. * Before the event, you must attend both training sessions held on Saturdays in July. * One activity per person. * Apply on the website by 31 January. Applicants for activities whose language requirement is other than 'conversational' must attach a copy of proof of language ability."
+    },
+    "questions": [
+      {
+        "q": "林さんの条件で応募できる活動をすべて挙げたものはどれか。",
+        "options": [
+          "選手村案内と観光案内",
+          "競技会場通訳と選手村案内",
+          "選手村案内と空港送迎",
+          "空港送迎と観光案内"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "他只能参加8/5–8/8的4天。选手村向导要3天以上（8/1–12内），观光向导要4天以上（8/1–12内），都符合。赛场翻译要850分和5天，机场接送的日期不在8/5–8/8之内。",
+          "en": "He can do only 5–8 Aug (4 days). The village (3+ days) and tourist information (4+ days) both fit. Venue interpreting needs TOEIC 850 and 5 days; the airport dates fall outside 5–8 Aug."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "赛场翻译要求TOEIC850分以上、5天以上，林只有800分、4天。",
+            "en": "Venue interpreting needs TOEIC 850+ and 5 days; he has 800 and 4 days."
+          },
+          {
+            "zh": "机场接送的日期是7/30–8/2和8/11–8/13，与8/5–8/8完全不重合。",
+            "en": "Airport duty is 30 Jul–2 Aug and 11–13 Aug, none of which overlaps 5–8 Aug."
+          },
+          {
+            "zh": "观光向导可以，但机场接送的日期林都不能参加。",
+            "en": "Tourist information is fine, but he can't make any airport dates."
+          }
+        ]
+      },
+      {
+        "q": "林さんが応募する場合について、正しいものはどれか。",
+        "difficulty": 2,
+        "options": [
+          "TOEICのスコアを証明する書類の写しを、添付しなければならない。",
+          "宿泊費と交通費として、1日1,000円が支給される。",
+          "7月に行われる研修に、2回とも参加しなければならない。",
+          "選手村案内と観光案内の両方に応募することができる。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "注意事项：「7月の土曜日に行う研修（全2回）にすべて参加していただきます」。",
+          "en": "The notes: 「7月の土曜日に行う研修（全2回）にすべて参加していただきます」."
+        },
+        "wrong": [
+          {
+            "zh": "他能报的活动都是「日常会話程度」，不需要附证明文件。",
+            "en": "Both activities open to him are 「日常会話程度」, so no proof is needed."
+          },
+          {
+            "zh": "1,000日元只是交通费，「宿泊費は自己負担」。",
+            "en": "The ¥1,000 is for transport only; 「宿泊費は自己負担」."
+          },
+          null,
+          {
+            "zh": "「応募できる活動は、お一人一つまで」，不能两项都报。",
+            "en": "「お一人一つまで」 — he can apply for only one."
+          }
+        ]
+      }
+    ]
+  }
+]

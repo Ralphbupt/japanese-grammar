@@ -1,0 +1,815 @@
+[
+  {
+    "id": "n1-dk-101",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "次の文章は、新聞のコラムです。",
+    "passage": "駅前の小さな書店が、今月末[[1]]、七十年の歴史に幕を下ろす。店主によれば、ネット通販の普及に加えて近くに大型店が進出したこともあり、ここ数年は赤字続きだったという。\n私がこの店に通い始めたのは中学生のころだ。小遣いを握りしめて棚の前に立ち、一時間近く迷ったあげく、一冊も買わずに帰ったことも一度や二度ではない。それでも店主は、一度[[2]]嫌な顔を見せず、「また来なさい」と声をかけてくれた。\n[[3]]、この店は品ぞろえ[[4]]、店主の人柄で客を引きつけていたのだろう。町の子どもたちにとっては、親や先生以外の大人と言葉を交わせる数少ない場所でもあった。\n効率だけを考えれば、本はネットで買うのがいちばんだ。しかし、目当てでもなかった一冊とふと出会い、店主と二言三言交わすあの時間は、画面の上では望む[[5]]ものである。閉店を惜しむ声が相次いでいるのも、そうした場が町から消えていくことへの寂しさゆえではないだろうか。",
+    "tr": {
+      "zh": "车站前的一家小书店将在本月底结束七十年的历史。据店主说，除了网购的普及，附近又开了大型书店，这几年一直亏损。我是从初中开始常去这家店的。攥着零花钱站在书架前，犹豫将近一个小时，最后一本也没买就回家，这样的事不止一两次。即便如此，店主一次也没有露出过不耐烦的脸色，总是对我说“再来啊”。回想起来，这家店吸引顾客的，品种齐全固然是一方面，更重要的是店主的为人吧。对镇上的孩子们来说，这里也是少有的能和父母、老师以外的大人说上话的地方。如果只考虑效率，书在网上买最方便。但是，偶然遇到一本原本并没打算买的书，和店主寒暄两三句的那段时光，在屏幕上是根本无法指望的。惋惜闭店的声音接连不断，恐怕正是因为人们为这样的场所从镇上消失而感到寂寞吧。",
+      "en": "A small bookshop in front of the station will close at the end of this month, ending seventy years of history. According to the owner, with the spread of online shopping and a large store opening nearby, it has been running at a loss for the past few years. I started going to this shop when I was in junior high. More than once I stood in front of the shelves clutching my pocket money, agonised for nearly an hour, and went home without buying a single book. Even so, the owner never once looked annoyed, and always said, \"Come again.\" Looking back, the shop drew customers not only with its selection but, even more, with the owner's personality. For the town's children it was also one of the few places where they could talk with adults other than their parents and teachers. If efficiency is all you care about, buying books online is best. But the time spent stumbling on a book you weren't looking for and exchanging a few words with the owner is something you could never hope for on a screen. Perhaps the many voices regretting the closure come from sadness that places like this are disappearing from the town."
+    },
+    "questions": [
+      {
+        "options": [
+          "を限りに",
+          "を皮切りに",
+          "をおいて",
+          "をよそに"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "后面是「歴史に幕を下ろす」（结束），以「今月末」为最后期限、此后不再营业，用「を限りに」。",
+          "en": "「歴史に幕を下ろす」 means it ends: 「今月末を限りに」 marks the last day, after which it stops."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「を皮切りに」表示以某事为开端接连发生，与“闭店、结束”正好相反。",
+            "en": "「を皮切りに」 marks the start of a series — the opposite of closing down."
+          },
+          {
+            "zh": "「をおいて」要和「〜ない」呼应，表示“除了…没有”，这里不是在比较人选。",
+            "en": "「をおいて」 needs a 「〜ない」 (no one/nothing but …); nothing is being singled out here."
+          },
+          {
+            "zh": "「をよそに」是“不顾…”，「今月末」不是被无视的担心或反对。",
+            "en": "「をよそに」 means ignoring (worries, objections); 「今月末」 is a date, not something ignored."
+          }
+        ],
+        "refs": [
+          "lesson77#7"
+        ]
+      },
+      {
+        "options": [
+          "たりとも",
+          "ならでは",
+          "からある",
+          "にして"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「一度＋たりとも＋否定」是“一次也不…”，和后面的「嫌な顔を見せず」呼应。",
+          "en": "「一度たりとも」 + negative = not even once, matching 「嫌な顔を見せず」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「ならでは」是“只有…才有的”，要接名词修饰，不能接否定。",
+            "en": "「ならでは」 (unique to …) modifies a noun; it doesn't pair with a negative."
+          },
+          {
+            "zh": "「からある」接在数量上表示“足有…之多”，用于大数量，不用于“一次”。",
+            "en": "「からある」 stresses a large amount (as much as …); it doesn't fit 「一度」 with a negative."
+          },
+          {
+            "zh": "「一度にして」是“一下子就…”，后面要接迅速发生的事，不接否定。",
+            "en": "「にして」 after a number means something happened in an instant; it doesn't take a negative."
+          }
+        ],
+        "refs": [
+          "lesson79#1"
+        ]
+      },
+      {
+        "options": [
+          "思えば",
+          "ところが",
+          "さもなければ",
+          "にもかかわらず"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "作者回顾往事后得出感想「〜のだろう」，用表示“回想起来”的「思えば」。",
+          "en": "After the memories, the writer reflects (「〜のだろう」): 「思えば」 — looking back."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「ところが」引出与预想相反的事，但后文是对前文（店主温和）的自然总结，不是转折。",
+            "en": "「ところが」 introduces something unexpected; what follows sums up the kindness just described."
+          },
+          {
+            "zh": "「さもなければ」是“否则”，要接在命令或条件之后，这里没有可以假设相反的内容。",
+            "en": "「さもなければ」 (otherwise) follows an instruction or condition; there's none here."
+          },
+          {
+            "zh": "「にもかかわらず」表示“尽管…却”，店主温和与“靠人柄吸引顾客”并不矛盾。",
+            "en": "「にもかかわらず」 (despite that) needs a contradiction; a kind owner drawing customers is none."
+          }
+        ]
+      },
+      {
+        "options": [
+          "もさることながら",
+          "はおろか",
+          "にひきかえ",
+          "といわず"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "“品种齐全固然不错，更突出的是店主的为人”，重点在后项，用「もさることながら」。",
+          "en": "The selection counts, but the owner's personality counted more — the weight is on what follows: 「もさることながら」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「はおろか」是“别说A，连B也…”，多接否定且后面要用「も」，这里是肯定，「人柄で」后也没有「も」。",
+            "en": "「はおろか」 (let alone) usually needs a negative and 「も」 on what follows; here neither."
+          },
+          {
+            "zh": "「にひきかえ」对照两件评价相反的事，这里品种和人柄都是正面的。",
+            "en": "「にひきかえ」 contrasts two things judged oppositely; selection and personality are both positives."
+          },
+          {
+            "zh": "「といわず」要成对使用（「AといわずBといわず」），表示“无论哪里都”，与句意不符。",
+            "en": "「といわず」 comes in pairs (「AといわずBといわず」 — everywhere alike), which isn't the meaning here."
+          }
+        ],
+        "refs": [
+          "lesson77#5"
+        ]
+      },
+      {
+        "options": [
+          "べくもない",
+          "ずにはおかない",
+          "に足る",
+          "ないではすまない"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "网上偶遇一本书、和店主交谈的时光，在屏幕上根本不可能得到：「望むべくもない」是固定搭配。",
+          "en": "That chance encounter and chat can't be had on a screen at all: 「望むべくもない」 is the set phrase."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「ずにはおかない」是“必然会…”，「望む」不是自然会引起的结果，意思也与“得不到”相反。",
+            "en": "「ずにはおかない」 (will inevitably …) says the opposite of 'can't be had'."
+          },
+          {
+            "zh": "「望むに足る」是“值得期望”，和前文「しかし」所表达的“网上没有”相反。",
+            "en": "「望むに足る」 (worth hoping for) contradicts the 「しかし」 point that the screen lacks it."
+          },
+          {
+            "zh": "「ないではすまない」是“不…就过不去”，“不得不期望”讲不通。",
+            "en": "「ないではすまない」 (can't get away without …) makes no sense with 'hoping'."
+          }
+        ],
+        "refs": [
+          "lesson86#1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-102",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "次の文章は、雑誌に掲載された評論です。",
+    "passage": "近年、大学の研究費は、短期間で成果が見込める分野に重点的に配分される傾向が強まっている。限られた予算を有効に使う[[1]]、こうした方針にも一理あるだろう。\n[[2]]、科学の歴史を振り返ると、世界を変えた発見の多くは、役に立つかどうかなど誰も考えなかった研究から生まれている。電磁気の研究がよい例だ。当初は実用性を問われることすらなかったその研究が、今日の電力網や通信技術の礎となったのである。\n基礎研究は、成果が出るまでに何十年もかかることが珍しくない。成果主義が行き過ぎれば、すぐに結果を出せない研究者は予算を打ち切られ、研究の継続を断念すること[[3]]。それは、十年後、二十年後の技術の芽を自ら摘むことにほかならない。\n研究者の自由な好奇心[[4]]、科学の発展はありえない。短期的な評価に一喜一憂するのではなく、その好奇心を長い目で支える仕組みを、社会全体で[[5]]。",
+    "tr": {
+      "zh": "近年来，大学的科研经费越来越倾向于集中分配给短期内有望出成果的领域。从有效使用有限预算这一点来说，这种方针也有一定道理吧。但是，回顾科学史就会发现，改变世界的发现大多诞生于没有人考虑过是否有用的研究。电磁学研究就是一个好例子。最初连实用性都没人过问的那项研究，成了今天电网和通信技术的基石。基础研究从开始到出成果花上几十年的情况并不少见。如果成果主义过了头，不能马上拿出结果的研究者就会被削减经费，被迫放弃继续研究。这无异于亲手掐掉十年、二十年后技术的萌芽。没有研究者自由的好奇心，科学就不可能发展。与其为短期评价忽喜忽忧，不如由全社会来考虑如何长远地支持这种好奇心的机制，这才是理所应当的。",
+      "en": "In recent years university research funds have increasingly been concentrated in fields expected to produce results in a short time. In terms of using a limited budget effectively, this policy has some merit. Yet looking back over the history of science, most world-changing discoveries came from research where nobody asked whether it would be useful. Research into electromagnetism is a good example: work whose practical value no one even questioned at first became the foundation of today's power grids and communications. Basic research often takes decades to bear fruit. If results-based funding goes too far, researchers who can't show results quickly will have their funding cut and be forced to give up their work. That is nothing other than nipping in the bud the technology of ten or twenty years from now. Without researchers' free curiosity, scientific progress is impossible. Rather than swinging between joy and despair over short-term evaluations, society as a whole ought to be thinking about systems that support that curiosity over the long run."
+    },
+    "questions": [
+      {
+        "options": [
+          "という点では",
+          "にもかかわらず",
+          "ことなしに",
+          "をよそに"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "作者先从“有效使用预算”的角度承认方针有道理，用「という点では」限定评价的角度。",
+          "en": "The writer grants the policy has merit from one angle — using the budget well: 「という点では」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「にもかかわらず」表示转折，“尽管有效使用预算，方针也有道理”讲不通。",
+            "en": "「にもかかわらず」 (despite) makes 'despite using money well, it has merit' — illogical."
+          },
+          {
+            "zh": "「ことなしに」是“不…（就）”，“不有效使用预算”与句意相反。",
+            "en": "「ことなしに」 (without doing) would mean 'without using it well' — the opposite."
+          },
+          {
+            "zh": "「をよそに」要接名词，表示“不顾…”，不能接在「使う」这样的动词后。",
+            "en": "「をよそに」 follows a noun (ignoring …), not a verb like 「使う」."
+          }
+        ]
+      },
+      {
+        "options": [
+          "だが",
+          "しかも",
+          "つまり",
+          "ゆえに"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "前面承认方针有道理，后面用科学史提出反对意见，是转折，用「だが」。",
+          "en": "After granting the point, the writer turns to the opposing evidence from history: 「だが」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「しかも」是同方向的追加，后文与前文立场相反。",
+            "en": "「しかも」 adds in the same direction; what follows argues the other way."
+          },
+          {
+            "zh": "「つまり」是换句话说，后文不是对前文的重述。",
+            "en": "「つまり」 restates; the next paragraph doesn't restate the first."
+          },
+          {
+            "zh": "「ゆえに」引出结论，“有道理”推不出“发现来自无用的研究”。",
+            "en": "「ゆえに」 draws a conclusion, but the history point doesn't follow from the policy having merit."
+          }
+        ]
+      },
+      {
+        "options": [
+          "を余儀なくされる",
+          "を余儀なくさせる",
+          "を禁じ得ない",
+          "を皮切りにする"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "主语是「研究者」，他们因经费被砍而“被迫放弃”，用被动的「を余儀なくされる」。",
+          "en": "The subject is the researchers, forced to give up by funding cuts: passive 「を余儀なくされる」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「を余儀なくさせる」是使役，主语应是造成局面的一方（如成果主义），这里主语是研究者。",
+            "en": "「を余儀なくさせる」 is causative — its subject forces others; here the researchers are the ones forced."
+          },
+          {
+            "zh": "「を禁じ得ない」接表示感情的名词（「同情」「怒り」等），不接「断念すること」。",
+            "en": "「を禁じ得ない」 takes a feeling (「同情」, 「怒り」), not 「断念すること」."
+          },
+          {
+            "zh": "「を皮切りにする」表示以此为开端，放弃研究不是一连串事件的开始。",
+            "en": "「を皮切りに」 marks the first of a series; giving up research isn't that."
+          }
+        ],
+        "refs": [
+          "lesson84#6"
+        ]
+      },
+      {
+        "options": [
+          "なくして",
+          "ならではの",
+          "とあって",
+          "にひきかえ"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "后面是「ありえない」，“没有好奇心，科学就不可能发展”，用「なくして（は）〜ない」。",
+          "en": "Followed by 「ありえない」: without curiosity, no progress — 「なくして」 … impossible."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「ならではの」后面要接名词，表示“只有…才有的”，与否定的「ありえない」不搭。",
+            "en": "「ならではの」 must modify a noun (unique to …) and doesn't lead to 「ありえない」."
+          },
+          {
+            "zh": "「とあって」表示“因为是（特殊情况）”，“因为是好奇心所以不可能发展”自相矛盾。",
+            "en": "「とあって」 (because it's …) would make curiosity the reason progress is impossible."
+          },
+          {
+            "zh": "「にひきかえ」对照两种相反的事物，这里没有对照的对象。",
+            "en": "「にひきかえ」 contrasts two opposite things; there's nothing to contrast here."
+          }
+        ],
+        "refs": [
+          "lesson81#1"
+        ]
+      },
+      {
+        "options": [
+          "考えてしかるべきだ",
+          "考えるまでもない",
+          "考えてやまない",
+          "考えるにはあたらない"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "作者主张社会理应考虑支持好奇心的机制，用表示“理应…”的「てしかるべきだ」。",
+          "en": "The writer argues society ought to think about such systems: 「てしかるべきだ」 (should by rights)."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「までもない」是“用不着…”，与作者全文的主张相反。",
+            "en": "「までもない」 (no need to) contradicts the whole argument."
+          },
+          {
+            "zh": "「てやまない」接「願う」「祈る」等表示愿望的动词，不接「考える」。",
+            "en": "「てやまない」 goes with wishes (「願う」, 「祈る」), not 「考える」."
+          },
+          {
+            "zh": "「にはあたらない」是“不值得…”，与“全社会都要考虑”的主张矛盾。",
+            "en": "「にはあたらない」 (not worth …) contradicts the call to action."
+          }
+        ],
+        "refs": [
+          "lesson86#2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-103",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "次の文章は、随筆の一部です。",
+    "passage": "祖母が亡くなって半年が過ぎた。遺品を整理していたところ、押し入れの奥から、私が子どものころに祖母へ送った手紙の束が出てきた。誤字だらけで、とても読むに[[1]]ものばかりだが、祖母はそれを一通残らず大切にしまっていたのだ。\nいまや連絡はメッセージアプリで済ませるのが当たり前だ。用件を伝えるだけなら、それで何の不足もない。[[2]]、手書きの手紙には、文字の乱れや書き直しの跡まで含めて、書いた人のその時の気持ちが残る。祖母が捨てずにいたのは、手紙の内容[[3]]、そこに残った幼い私の姿だったのではないか。\n手紙の束を読み返しながら、私は涙を[[4]]。そして、祖母に一度も返事らしい返事を書かなかったことを、今さらながら悔やんだ。書こうと思えば、いつでも書けた[[5]]。",
+    "tr": {
+      "zh": "祖母去世已经半年了。整理遗物时，从壁橱深处找出了一捆我小时候寄给她的信。满是错字，几乎都是不堪入目的东西，可祖母却一封不落地珍藏着。如今用聊天软件联系已是理所当然。只是传达事情的话，那样毫无不足。但是，手写的信，连字迹的潦草和涂改的痕迹在内，都留下了写信人当时的心情。祖母舍不得扔掉的，与其说是信的内容，不如说是留在信里的年幼的我吧。重读那捆信，我不禁泪流满面。并且事到如今才后悔，自己从来没给祖母写过一封像样的回信。想写的话，明明随时都能写的啊。",
+      "en": "Six months have passed since my grandmother died. While sorting through her things, I found at the back of a cupboard a bundle of letters I had sent her as a child. They are full of mistakes and hardly fit to be read, yet she had kept every single one with care. These days it's taken for granted that we keep in touch by messaging app. For simply passing on information, there is nothing lacking in that. But a handwritten letter, down to its shaky characters and corrections, keeps the writer's feelings at that moment. What my grandmother couldn't throw away was perhaps less the content of the letters than the young me that remained in them. Rereading the bundle, I couldn't hold back my tears. And, too late, I regretted never once having written her a proper reply. If I had wanted to, I could have written at any time."
+    },
+    "questions": [
+      {
+        "options": [
+          "堪えない",
+          "足る",
+          "かたくない",
+          "至る"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「誤字だらけ」「とても」都提示负面评价，“不堪一读”是「読むに堪えない」。",
+          "en": "「誤字だらけ」 and 「とても」 point to a negative judgement: 「読むに堪えない」 (not fit to read)."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「読むに足る」是“值得一读”，和「誤字だらけ」「とても」的语气相反，后面的「だが」也说不通。",
+            "en": "「読むに足る」 (worth reading) clashes with 「誤字だらけ」, 「とても」 and the 「だが」 that follows."
+          },
+          {
+            "zh": "「にかたくない」只和「想像」「察する」等搭配，表示“不难…”，不接「読む」。",
+            "en": "「にかたくない」 goes with 「想像」 or 「察する」 (not hard to imagine), not 「読む」."
+          },
+          {
+            "zh": "「に至る」是“达到某种地步”，「読むに至るもの」不成意思。",
+            "en": "「に至る」 (reach a stage) gives no sense in 「読むに至るもの」."
+          }
+        ],
+        "refs": [
+          "lesson85#5"
+        ]
+      },
+      {
+        "options": [
+          "だが",
+          "それゆえ",
+          "しかも",
+          "いわば"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "前面说聊天软件“毫无不足”，后面转而说手写信有软件没有的东西，是转折。",
+          "en": "After 'apps lack nothing', the writer turns to what handwritten letters have that apps don't: 「だが」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「それゆえ」表示因果，“软件没有不足”推不出“手写信留下心情”。",
+            "en": "「それゆえ」 (therefore) — the app being enough doesn't lead to letters keeping feelings."
+          },
+          {
+            "zh": "「しかも」是同方向追加，后文在讲与软件相对的手写信。",
+            "en": "「しかも」 adds in the same direction, but the next sentence sets letters against apps."
+          },
+          {
+            "zh": "「いわば」是“可以说”，用来打比方，后文不是比喻。",
+            "en": "「いわば」 (so to speak) introduces a figure of speech; what follows isn't one."
+          }
+        ]
+      },
+      {
+        "options": [
+          "というより",
+          "はおろか",
+          "にひきかえ",
+          "ならでは"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "“与其说是内容，不如说是留在信里的我”，用「AというよりB」选择更准确的说法。",
+          "en": "Less the content than the child in them: 「AというよりB」 picks the more accurate description."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「はおろか」是“别说A，连B也”，多接否定，这里是肯定判断。",
+            "en": "「はおろか」 (let alone) mostly takes a negative; this is a positive judgement."
+          },
+          {
+            "zh": "「にひきかえ」对照两件评价相反的事，内容和“我”的样子不是这样的对比。",
+            "en": "「にひきかえ」 contrasts things judged oppositely; content and the child aren't that."
+          },
+          {
+            "zh": "「ならでは」要接「の」修饰名词，表示“只有…才有”，接不上后文。",
+            "en": "「ならでは」 needs 「の」 + noun (unique to …) and can't link to what follows."
+          }
+        ]
+      },
+      {
+        "options": [
+          "禁じ得なかった",
+          "余儀なくされた",
+          "流してやまなかった",
+          "流すまでもなかった"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "读着信抑制不住眼泪，用「（涙）を禁じ得ない」，书面语表示“不禁…”。",
+          "en": "Rereading the letters, the writer couldn't hold back tears: 「涙を禁じ得なかった」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「余儀なくされる」接「中止」「撤退」等行为名词，表示被迫，不接「涙」。",
+            "en": "「余儀なくされる」 takes actions like 「中止」 or 「撤退」 (be forced to), not 「涙」."
+          },
+          {
+            "zh": "「てやまない」接「願う」「愛する」等，表示持续的强烈愿望，「流してやまない」不成立。",
+            "en": "「てやまない」 goes with 「願う」 or 「愛する」; 「流してやまない」 isn't used."
+          },
+          {
+            "zh": "「までもない」是“用不着…”，和后文的悔恨不符。",
+            "en": "「までもない」 (no need to) clashes with the grief and regret that follow."
+          }
+        ],
+        "refs": [
+          "lesson84#5"
+        ]
+      },
+      {
+        "options": [
+          "ものを",
+          "ものの",
+          "もので",
+          "ものなら"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "句末的「〜ものを」表示“本来…就好了，却没有”，带着悔恨，和「悔やんだ」呼应。",
+          "en": "Sentence-final 「〜ものを」 — I could have, yet didn't — carries the regret of 「悔やんだ」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「ものの」是“虽然…但是”，后面必须接下文，不能结句。",
+            "en": "「ものの」 (although) must be followed by a clause; it can't end the sentence."
+          },
+          {
+            "zh": "句末「もので」用于辩解原因（“因为…嘛”），不表示悔恨。",
+            "en": "Sentence-final 「もので」 gives an excuse (because …), not regret."
+          },
+          {
+            "zh": "「ものなら」是“如果能…的话”，接可能形表示假设，后面要接下文，且与已过去的事不符。",
+            "en": "「ものなら」 (if I could …) needs a following clause and is for hypotheticals, not past regret."
+          }
+        ],
+        "refs": [
+          "lesson80#1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-104",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "次の文章は、新聞の社説の一部です。",
+    "passage": "大きな災害から十年が経つと、被災地の外では記憶が急速に薄れていく。今年も、追悼の日が過ぎる[[1]]、関連する報道はぱたりと途絶えた。\nしかし、被災地の人々にとって、災害は過去の出来事ではない。家族を失った悲しみは、何年経っても癒えることはないだろう。[[2]]思いを抱えながら、語り部として自らの体験を語り続けている人々がいる。\n彼らが訴えるのは、「自分だけは大丈夫だ」という思い込みの危うさだ。避難の呼びかけ[[3]]、家にとどまって命を落とした人が少なくなかったという。同じような災害がいつ起きてもおかしくない以上、その教訓は、住んでいる地域[[4]]、誰にとっても他人事ではない。\n記憶が風化すれば、同じ悲劇は繰り返される。被災者の声に耳を傾けることは、[[5]]、私たち自身の命を守ることにつながるのである。",
+    "tr": {
+      "zh": "大灾难过去十年，灾区以外的人们的记忆就会迅速淡去。今年也是，悼念日一过，相关报道就戛然而止。但是，对灾区的人们来说，灾难并不是过去的事。失去家人的悲痛，无论过去多少年大概都不会愈合。有人怀着这样的心情，作为讲述者继续讲述自己的亲身经历。他们所呼吁的，是“只有自己不会有事”这种想当然的危险。据说有不少人不顾避难的呼吁，留在家里而丧生。既然同样的灾害随时都可能发生，那么无论住在哪个地区，这个教训对谁来说都不是事不关己。记忆一旦淡化，同样的悲剧就会重演。倾听受灾者的声音，也就是在保护我们自己的生命。",
+      "en": "Ten years after a major disaster, memories fade rapidly outside the affected area. This year too, the moment the day of remembrance passed, coverage stopped dead. Yet for the people of the disaster area, it is not a thing of the past. The grief of losing family will probably never heal, however many years pass. Carrying such feelings, some people go on telling their own experiences as storytellers. What they warn of is the danger of assuming 'I'll be fine'. Many people, it is said, ignored the calls to evacuate, stayed at home and lost their lives. Since a similar disaster could strike at any time, that lesson concerns everyone, whatever region they live in. If memories fade, the same tragedy will be repeated. Listening to the survivors is, in itself, a way of protecting our own lives."
+    },
+    "questions": [
+      {
+        "options": [
+          "や否や",
+          "ともなると",
+          "とあれば",
+          "ところを"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "“悼念日一过，报道就立刻中断”，描述已发生的事实，用「や否や」（一…就立刻）。",
+          "en": "The day passed and coverage stopped at once — a past fact: 「や否や」 (the moment …)."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「ともなると」接名词或动词，表示“一旦到了…的程度（自然就）”，用于一般倾向，不表示“一…就立刻”。",
+            "en": "「ともなると」 (once it gets to the level of …) states a general tendency, not 'the instant …'."
+          },
+          {
+            "zh": "「とあれば」是“如果是为了…（也会去做）”，后面接说话人的意志或判断，与“报道中断”的事实不符。",
+            "en": "「とあれば」 (if it's for …, one would even …) leads to a decision, not a past fact."
+          },
+          {
+            "zh": "「ところを」是“正在…的时候（被）”或“在…之际却”，不能表示一件事紧接着另一件事发生。",
+            "en": "「ところを」 (just when / although …) doesn't mean one event followed instantly by another."
+          }
+        ],
+        "refs": [
+          "lesson76#2"
+        ]
+      },
+      {
+        "options": [
+          "そうした",
+          "いかなる",
+          "いわゆる",
+          "単なる"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "指前文的“失去家人、无法愈合的悲痛”，用承前指代的「そうした」。",
+          "en": "It points back to the unhealed grief just described: 「そうした」 (such)."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「いかなる」在肯定句中要和「も」「〜ても」搭配，“怀着任何心情”不成句。",
+            "en": "「いかなる」 in a statement needs 「も」 or 「〜ても」; alone it doesn't work."
+          },
+          {
+            "zh": "「いわゆる」用于引出一般的叫法（“所谓的”），后面的「思い」不是特定称呼。",
+            "en": "「いわゆる」 (so-called) introduces a common label; 「思い」 isn't one."
+          },
+          {
+            "zh": "「単なる」是“只不过是…”，会贬低前文沉重的悲痛，与文意相反。",
+            "en": "「単なる」 (mere) belittles the grief, the opposite of the text."
+          }
+        ]
+      },
+      {
+        "options": [
+          "をよそに",
+          "を皮切りに",
+          "をもって",
+          "にかこつけて"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "“不顾避难的呼吁，留在家里”，用表示“无视…”的「をよそに」。",
+          "en": "They stayed home ignoring the evacuation calls: 「をよそに」 (paying no heed to)."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「を皮切りに」表示以某事为开端接连发生，与“留在家里丧生”无关。",
+            "en": "「を皮切りに」 marks the first in a series; that's not the relation here."
+          },
+          {
+            "zh": "「をもって」表示手段或期限（“以…”“于…”），“以呼吁留在家里”讲不通。",
+            "en": "「をもって」 (by means of / as of) gives 'stayed home by means of the call' — nonsense."
+          },
+          {
+            "zh": "「にかこつけて」是“以…为借口”做别的事，呼吁不是留在家中的借口。",
+            "en": "「にかこつけて」 means using something as a pretext; the call wasn't a pretext for staying."
+          }
+        ],
+        "refs": [
+          "lesson83#3"
+        ]
+      },
+      {
+        "options": [
+          "のいかんを問わず",
+          "のいかんによっては",
+          "ならではで",
+          "をおいて"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "后面是「誰にとっても他人事ではない」，“不论住在哪个地区”，用「のいかんを問わず」。",
+          "en": "It concerns everyone — whatever region they live in: 「のいかんを問わず」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「のいかんによっては」是“根据…有时会…”，和后面的「誰にとっても」相矛盾。",
+            "en": "「のいかんによっては」 (depending on …, in some cases) contradicts 「誰にとっても」."
+          },
+          {
+            "zh": "「ならでは」是“只有…才有”，与“对谁都适用”相反，形式上也接不上。",
+            "en": "「ならでは」 (unique to …) is the opposite of 'everyone', and doesn't connect here."
+          },
+          {
+            "zh": "「をおいて」要和「〜ない」呼应表示“除了…之外没有”，这里不是挑选唯一对象。",
+            "en": "「をおいて」 needs 「〜ない」 (none but …); nothing is being singled out."
+          }
+        ],
+        "refs": [
+          "lesson83#2"
+        ]
+      },
+      {
+        "options": [
+          "とりもなおさず",
+          "あいにく",
+          "それにしても",
+          "ことによると"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "“倾听受灾者的声音＝保护自己的生命”，表示“即是、也就是”，用「とりもなおさず」。",
+          "en": "Listening to survivors is, in effect, protecting ourselves: 「とりもなおさず」 (that is to say, in itself)."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「あいにく」表示“不凑巧”，带遗憾，与积极的结论不符。",
+            "en": "「あいにく」 (unfortunately) expresses bad luck, which doesn't fit this conclusion."
+          },
+          {
+            "zh": "「それにしても」用于转回话题或表示“即使如此”，放在这里不连贯。",
+            "en": "「それにしても」 (even so / anyway) doesn't link the clauses here."
+          },
+          {
+            "zh": "「ことによると」表示“说不定”，与句末断定的「のである」不搭。",
+            "en": "「ことによると」 (perhaps) clashes with the firm 「のである」 at the end."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n1-dk-105",
+    "type": "bunshou",
+    "difficulty": 3,
+    "intro": "次の文章は、教育関係の雑誌に寄せられた投書です。",
+    "passage": "少年野球の現場には、子どもを怒鳴りつけ、勝つことばかりを求める指導者が今も少なくない。全国大会[[1]]、炎天下で一人の投手が何百球も投げ続けることさえある。\n指導者の言い分はこうだ。「厳しい練習を積む[[2]]、強いチームはつくれない」。確かに、努力を重ねなければ上達はしない。だが、成長期の子どもの体が[[3]]負担に耐えられるかどうかは、また別の問題である。将来を嘱望された選手が肩や肘を痛め、競技を断念する例は後を絶たない。\n勝利を目指すこと自体が悪いわけではない。[[4]]、勝つことが目的になり、子ども一人一人の成長が二の次にされるのでは本末転倒だ。指導者[[5]]者、目先の一勝よりも、子どもたちが生涯スポーツを楽しめる土台をつくることにこそ心を砕くべきだろう。",
+    "tr": {
+      "zh": "少年棒球的现场，至今仍有不少教练冲孩子吼叫，一味追求胜利。到了全国大赛这种级别，甚至会有一名投手在烈日下连续投上几百球。教练们的说法是：“不进行严格的训练，就打造不出强队。”的确，不持续努力就不会进步。但是，正在发育期的孩子的身体能否承受那么大的负担，又是另一个问题。被寄予厚望的选手因肩肘受伤而不得不放弃运动的例子层出不穷。以胜利为目标本身并不是坏事。只是，如果胜利成了目的，每个孩子的成长被放在次要位置，那就本末倒置了。身为教练的人，比起眼前的一场胜利，更应该用心为孩子们打下终身享受运动的基础吧。",
+      "en": "In youth baseball there are still many coaches who yell at children and care only about winning. At the level of a national tournament, a single pitcher may even keep throwing hundreds of pitches under the blazing sun. The coaches' argument goes: 'Without hard training, you can't build a strong team.' It's true that without effort there is no improvement. But whether a growing child's body can bear that much strain is another matter. Promising players who injure their shoulders or elbows and have to give up the sport are a constant story. Aiming to win is not bad in itself. But if winning becomes the goal and each child's development comes second, that is putting the cart before the horse. Anyone who is a coach should take more care to build a foundation for children to enjoy sport all their lives than to win the next game."
+    },
+    "questions": [
+      {
+        "options": [
+          "ともなれば",
+          "ながらに",
+          "にひきかえ",
+          "をもって"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "“一旦到了全国大赛这种级别，（自然）甚至会…”，用「ともなれば」表示程度高的特殊阶段。",
+          "en": "Once it's a national tournament, even this happens: 「ともなれば」 marks the higher stage."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「ながらに」接「生まれ」「涙」等少数名词，表示保持某状态，不接「全国大会」。",
+            "en": "「ながらに」 follows a few nouns like 「生まれ」 or 「涙」 (while still …), not 「全国大会」."
+          },
+          {
+            "zh": "「にひきかえ」对照两件相反的事，这里没有与全国大赛对比的对象。",
+            "en": "「にひきかえ」 contrasts two opposite things; there's nothing set against the tournament."
+          },
+          {
+            "zh": "「をもって」表示手段或时限，“以全国大赛投几百球”讲不通。",
+            "en": "「をもって」 (by means of / as of) makes no sense with the tournament here."
+          }
+        ],
+        "refs": [
+          "lesson81#2"
+        ]
+      },
+      {
+        "options": [
+          "ことなしには",
+          "が最後",
+          "とあれば",
+          "までもなく"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "后面是否定「つくれない」，“不积累严格训练就造不出强队”，用「ことなしには〜ない」。",
+          "en": "Followed by 「つくれない」: no strong team without hard training — 「ことなしには」 … not."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「が最後」接た形，表示“一旦…就完了”，形式和意思都不合。",
+            "en": "「が最後」 follows the た-form (once you … it's all over); neither form nor meaning fits."
+          },
+          {
+            "zh": "「とあれば」是“如果是为了…就（愿意）”，后面不接“造不出”这样的否定。",
+            "en": "「とあれば」 (if it's for …, one would) leads to willingness, not 'can't build'."
+          },
+          {
+            "zh": "「までもなく」是“用不着…”，“用不着训练就造不出强队”自相矛盾。",
+            "en": "「までもなく」 (without needing to) makes the coach's line contradict itself."
+          }
+        ],
+        "refs": [
+          "lesson84#2"
+        ]
+      },
+      {
+        "options": [
+          "それだけの",
+          "これといった",
+          "さしたる",
+          "せめてもの"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "指前文“连投几百球”那样大的负担，用承前的「それだけの」（那么大的）。",
+          "en": "It refers back to the hundreds of pitches: 「それだけの負担」 (that much strain)."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「これといった」要和否定搭配（“没有什么特别的”），这里没有否定。",
+            "en": "「これといった」 needs a negative (nothing in particular); there's none."
+          },
+          {
+            "zh": "「さしたる」也要和否定搭配（“并没什么大不了”），与几百球的重负担相反。",
+            "en": "「さしたる」 also needs a negative (not much of a …), and contradicts the heavy load."
+          },
+          {
+            "zh": "「せめてもの」是“最起码的、聊以…的”，接「救い」「慰め」，不接「負担」。",
+            "en": "「せめてもの」 (the least one can …) goes with 「救い」 or 「慰め」, not 「負担」."
+          }
+        ]
+      },
+      {
+        "options": [
+          "ただ",
+          "なぜなら",
+          "だからこそ",
+          "すなわち"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "先承认“以胜利为目标本身不坏”，再加以保留“但如果…就本末倒置”，用补充限制的「ただ」。",
+          "en": "Having granted that aiming to win isn't bad, the writer adds a reservation: 「ただ」 (but, only)."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「なぜなら」引出原因，要以「〜からだ」结尾，后文不是原因。",
+            "en": "「なぜなら」 introduces a reason, ending in 「〜からだ」; what follows isn't one."
+          },
+          {
+            "zh": "「だからこそ」表示“正因为如此”，“不坏所以本末倒置”讲不通。",
+            "en": "「だからこそ」 (precisely because) makes 'it's not bad, so it's backwards' — illogical."
+          },
+          {
+            "zh": "「すなわち」是换言之，后文与前文意思相反，不是换种说法。",
+            "en": "「すなわち」 (in other words) restates; the next sentence qualifies instead."
+          }
+        ]
+      },
+      {
+        "options": [
+          "たる",
+          "ごとき",
+          "なりの",
+          "ならではの"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "后面是「〜べきだろう」，讲身份应尽的规范，“身为教练的人就应该…”，用「たる者」。",
+          "en": "With 「〜べきだろう」 it states what anyone in that role should do: 「指導者たる者」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「ごとき」接名词是“像……一样的”，单独用时还带轻蔑（「私ごとき」）；「指導者ごとき者」不能表达“作为指导者理应……”。",
+            "en": "「ごとき」 means \"like …\" and, used alone, is dismissive (「私ごとき」); it can't express \"anyone who is a coach should …\"."
+          },
+          {
+            "zh": "「なりの」是“与其相应的”，「指導者なりの者」不成说法。",
+            "en": "「なりの」 (in one's own way) gives the meaningless 「指導者なりの者」."
+          },
+          {
+            "zh": "「ならではの」是“只有…才有的”，「指導者ならではの者」不能和「べきだ」构成规范。",
+            "en": "「ならではの」 (unique to) doesn't form a 'should' rule with 「者」."
+          }
+        ],
+        "refs": [
+          "lesson91#3"
+        ]
+      }
+    ]
+  }
+]

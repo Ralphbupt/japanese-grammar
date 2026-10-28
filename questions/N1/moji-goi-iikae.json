@@ -1,0 +1,908 @@
+[
+  {
+    "id": "n1-mg-401",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<彼の指摘は的を射ていた。>>",
+    "options": [
+      "彼の指摘は要点を正確にとらえていた。",
+      "彼の指摘は要点から外れていた。",
+      "彼の指摘は必要以上に厳しかった。",
+      "彼の指摘は遠回しで分かりにくかった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他的指正切中要害。",
+      "en": "His point was right on target."
+    },
+    "why": {
+      "zh": "「的を射る」＝说中要点、切中要害。",
+      "en": "「的を射る」 is to hit the mark — to grasp the key point exactly."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“偏离要点”正好相反（＝的外れ）。",
+        "en": "Missing the point is the opposite (的外れ)."
+      },
+      {
+        "zh": "「的を射る」说的是准确，不是严厉。",
+        "en": "「的を射る」 is about accuracy, not harshness."
+      },
+      {
+        "zh": "“绕弯子、难懂”与切中要害相反。",
+        "en": "Roundabout and unclear is the opposite of on target."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-402",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<財布もスマホもなくして、途方に暮れた。>>",
+    "options": [
+      "財布もスマホもなくして、どうしたらいいか分からなくなった。",
+      "財布もスマホもなくして、すっかり腹を立てた。",
+      "財布もスマホもなくして、急いで警察に届けた。",
+      "財布もスマホもなくして、夜遅くまで探し続けた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "钱包和手机都丢了，我不知所措。",
+      "en": "I'd lost my wallet and my phone and didn't know what to do."
+    },
+    "why": {
+      "zh": "「途方に暮れる」＝走投无路、不知如何是好。",
+      "en": "「途方に暮れる」 is to be at a loss, not knowing what to do."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「途方に暮れる」是不知所措，不是生气。",
+        "en": "「途方に暮れる」 is being at a loss, not angry."
+      },
+      {
+        "zh": "“赶紧报警”是采取了行动，与不知所措相反。",
+        "en": "Rushing to the police is acting decisively — the opposite."
+      },
+      {
+        "zh": "「暮れる」不是“天黑、到深夜”的意思。",
+        "en": "「暮れる」 here isn't about night falling or searching late."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-403",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<部長の提案に異を唱える者はいなかった。>>",
+    "options": [
+      "部長の提案に反対する者はいなかった。",
+      "部長の提案に賛成する者はいなかった。",
+      "部長の提案について質問する者はいなかった。",
+      "部長の提案を覚えている者はいなかった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "没有人对部长的提案提出异议。",
+      "en": "No one objected to the manager's proposal."
+    },
+    "why": {
+      "zh": "「異を唱える」＝提出不同意见、表示反对。",
+      "en": "「異を唱える」 is to raise an objection."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“没人赞成”意思正好相反。",
+        "en": "\"No one agreed\" is the opposite."
+      },
+      {
+        "zh": "提问不等于反对。",
+        "en": "Asking a question isn't objecting."
+      },
+      {
+        "zh": "与是否记得提案无关。",
+        "en": "Remembering the proposal has nothing to do with it."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-404",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<老人はおもむろに口を開いた。>>",
+    "options": [
+      "老人はゆっくりと話し始めた。",
+      "老人は急に話し始めた。",
+      "老人は小さな声で話し始めた。",
+      "老人は嫌そうに話し始めた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "老人缓缓开了口。",
+      "en": "The old man slowly began to speak."
+    },
+    "why": {
+      "zh": "「おもむろに」＝缓缓地、不慌不忙地，常被误解为“突然”。",
+      "en": "「おもむろに」 is slowly, deliberately — often mistaken for \"suddenly\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“突然”是常见误解，「おもむろに」意思是慢慢地。",
+        "en": "\"Suddenly\" is the classic misreading; 「おもむろに」 means slowly."
+      },
+      {
+        "zh": "「おもむろに」说的是动作的快慢，不是声音大小。",
+        "en": "「おもむろに」 is about pace, not volume."
+      },
+      {
+        "zh": "「おもむろに」不含不情愿的意思。",
+        "en": "「おもむろに」 has no sense of reluctance."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-405",
+    "type": "iikae",
+    "refs": [
+      "lesson91#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "<<この村では過疎化が進んでいる。>>",
+    "options": [
+      "この村では人口がどんどん減っている。",
+      "この村では人口が急に増えている。",
+      "この村では高い建物が増えている。",
+      "この村では物価が上がり続けている。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这个村子人口越来越稀少。",
+      "en": "This village is steadily losing its population."
+    },
+    "why": {
+      "zh": "「過疎化」＝（地方）人口过度减少。",
+      "en": "「過疎化」 is depopulation — an area losing its people."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "人口增加正好相反。",
+        "en": "A rising population is the opposite."
+      },
+      {
+        "zh": "高楼增加是城市化，不是过疏化。",
+        "en": "More tall buildings is urbanization, not depopulation."
+      },
+      {
+        "zh": "「過疎化」与物价无关。",
+        "en": "「過疎化」 has nothing to do with prices."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-406",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<あの店員の態度はいかにも横柄だった。>>",
+    "options": [
+      "あの店員の態度はいかにも偉そうで失礼だった。",
+      "あの店員の態度はいかにも丁寧で親切だった。",
+      "あの店員の態度はいかにもおどおどしていた。",
+      "あの店員の態度はいかにも眠そうだった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "那个店员的态度十分傲慢。",
+      "en": "That shop assistant was really arrogant."
+    },
+    "why": {
+      "zh": "「横柄」＝傲慢无礼、摆架子。",
+      "en": "「横柄」 is arrogant, high-handed."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“礼貌亲切”正好相反。",
+        "en": "Polite and kind is the opposite."
+      },
+      {
+        "zh": "「おどおど」是畏缩胆怯，与傲慢相反。",
+        "en": "「おどおど」 is timid — the opposite of arrogant."
+      },
+      {
+        "zh": "“睡眼惺忪”与傲慢无关。",
+        "en": "Looking sleepy isn't arrogance."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-407",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<先輩は私の頼みを快く引き受けてくれた。>>",
+    "options": [
+      "先輩は私の頼みを喜んで引き受けてくれた。",
+      "先輩は私の頼みをしぶしぶ引き受けてくれた。",
+      "先輩は私の頼みを少し迷ってから引き受けてくれた。",
+      "先輩は私の頼みを条件付きで引き受けてくれた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "前辈爽快地答应了我的请求。",
+      "en": "My senior gladly agreed to help me."
+    },
+    "why": {
+      "zh": "「快く」＝爽快地、欣然。",
+      "en": "「快く」 is gladly, willingly."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「しぶしぶ」是勉强，与「快く」相反。",
+        "en": "「しぶしぶ」 is reluctantly — the opposite."
+      },
+      {
+        "zh": "“犹豫后才答应”不是爽快。",
+        "en": "Hesitating first isn't doing it gladly."
+      },
+      {
+        "zh": "「快く」不含“附加条件”的意思。",
+        "en": "「快く」 says nothing about conditions."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-408",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<この制度には、まだ改善の余地がある。>>",
+    "options": [
+      "この制度は、まだよくすることができる。",
+      "この制度は、これ以上よくすることができない。",
+      "この制度は、もうすぐ廃止される。",
+      "この制度には、まったく問題がない。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这个制度还有改进的余地。",
+      "en": "There's still room for improvement in this system."
+    },
+    "why": {
+      "zh": "「改善の余地がある」＝还可以改进。",
+      "en": "「改善の余地がある」 means it can still be improved."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“无法再改进”正好相反。",
+        "en": "\"Can't be improved further\" is the opposite."
+      },
+      {
+        "zh": "「余地がある」不是要废除。",
+        "en": "Having room to improve isn't being abolished."
+      },
+      {
+        "zh": "有改进余地说明还有不足，不是“完全没问题”。",
+        "en": "Room to improve means it isn't flawless."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-409",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<彼の話はどうもつじつまが合わない。>>",
+    "options": [
+      "彼の話はどうも筋が通らない。",
+      "彼の話はどうも長すぎる。",
+      "彼の話はどうも面白くない。",
+      "彼の話はどうも聞き取りにくい。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他的话怎么也说不通。",
+      "en": "His story just doesn't add up."
+    },
+    "why": {
+      "zh": "「つじつまが合わない」＝前后矛盾、不合逻辑，即「筋が通らない」。",
+      "en": "「つじつまが合わない」 is not adding up — 「筋が通らない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "与话的长短无关。",
+        "en": "It's not about length."
+      },
+      {
+        "zh": "与有没有趣无关。",
+        "en": "It's not about being dull."
+      },
+      {
+        "zh": "与听不听得清无关。",
+        "en": "It's not about being hard to hear."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-410",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<彼はようやく自分の非を認めた。>>",
+    "options": [
+      "彼はようやく自分が間違っていたと認めた。",
+      "彼はようやく自分の才能を認めた。",
+      "彼はようやく相手が間違っていたと認めた。",
+      "彼はようやく自分の考えが正しいと認めさせた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他终于承认了自己的过错。",
+      "en": "He finally admitted he was in the wrong."
+    },
+    "why": {
+      "zh": "「非」＝过错，「非を認める」＝承认自己错了。",
+      "en": "「非」 is fault; 「非を認める」 is admitting you were wrong."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「非」是过错，不是才能。",
+        "en": "「非」 is fault, not talent."
+      },
+      {
+        "zh": "是承认“自己”的错，不是对方的。",
+        "en": "It's his own fault, not the other person's."
+      },
+      {
+        "zh": "意思正好相反，是承认自己错了。",
+        "en": "It's the opposite: admitting he was wrong."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-411",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<その計画は白紙に戻された。>>",
+    "options": [
+      "その計画は何も決まっていない最初の状態に戻された。",
+      "その計画は予定どおりに進められた。",
+      "その計画は一部だけが変更された。",
+      "その計画は詳しく書類にまとめられた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "那个计划被推倒重来了。",
+      "en": "The plan was scrapped and taken back to square one."
+    },
+    "why": {
+      "zh": "「白紙に戻す」＝（计划等）恢复到什么都没定的原始状态。",
+      "en": "「白紙に戻す」 is to go back to a blank slate, as if nothing had been decided."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“按计划进行”正好相反。",
+        "en": "Going ahead as planned is the opposite."
+      },
+      {
+        "zh": "「白紙に戻す」是全部取消，不是只改一部分。",
+        "en": "「白紙に戻す」 is starting over entirely, not changing part of it."
+      },
+      {
+        "zh": "「白紙」不是写在纸上的意思。",
+        "en": "「白紙」 here doesn't mean writing it up on paper."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-412",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<社長は新規出店に難色を示した。>>",
+    "options": [
+      "社長は新規出店に賛成しない様子を見せた。",
+      "社長は新規出店に大いに賛成した。",
+      "社長は新規出店に強い関心を示した。",
+      "社長は新規出店をすぐに決めた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "社长对开新店面露难色。",
+      "en": "The president showed reluctance about opening a new store."
+    },
+    "why": {
+      "zh": "「難色を示す」＝表示不赞成、面露难色。",
+      "en": "「難色を示す」 is to show disapproval or reluctance."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“大力赞成”正好相反。",
+        "en": "Strong approval is the opposite."
+      },
+      {
+        "zh": "「難色」不是兴趣，是不赞成的神色。",
+        "en": "「難色」 isn't interest; it's disapproval."
+      },
+      {
+        "zh": "“马上决定”与表示为难相反。",
+        "en": "Deciding at once is the opposite of balking."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-413",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<今回の遅刻は不問に付すことにした。>>",
+    "options": [
+      "今回の遅刻は問題にしないことにした。",
+      "今回の遅刻は詳しく調べることにした。",
+      "今回の遅刻は上司に報告することにした。",
+      "今回の遅刻には罰を与えることにした。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这次迟到决定不予追究。",
+      "en": "We've decided to let this lateness pass."
+    },
+    "why": {
+      "zh": "「不問に付す」＝不予追究、不当作问题。",
+      "en": "「不問に付す」 is to let something pass without taking it up."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“仔细调查”是追究，正好相反。",
+        "en": "Investigating it is taking it up — the opposite."
+      },
+      {
+        "zh": "“向上司报告”也是当作问题处理。",
+        "en": "Reporting it to a boss is treating it as a problem."
+      },
+      {
+        "zh": "“给予处罚”与不予追究相反。",
+        "en": "Punishing it is the opposite."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-414",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<平日の昼間の商店街は閑散としている。>>",
+    "options": [
+      "平日の昼間の商店街は人が少なくて静かだ。",
+      "平日の昼間の商店街は人が多くてにぎやかだ。",
+      "平日の昼間の商店街は店がほとんど閉まっている。",
+      "平日の昼間の商店街は工事中でうるさい。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "平日白天的商业街冷冷清清。",
+      "en": "On weekday afternoons the shopping street is quiet and nearly empty."
+    },
+    "why": {
+      "zh": "「閑散」＝冷清、人少安静。",
+      "en": "「閑散」 is deserted and quiet."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“热闹”正好相反。",
+        "en": "Busy and lively is the opposite."
+      },
+      {
+        "zh": "「閑散」说的是人少，不是店都关门。",
+        "en": "「閑散」 is about few people, not shops being shut."
+      },
+      {
+        "zh": "「閑散」是安静，与吵闹相反。",
+        "en": "「閑散」 is quiet — not noisy."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-415",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<兄は服装に無頓着だ。>>",
+    "options": [
+      "兄は服装をまったく気にしない。",
+      "兄は服装を細かく気にする。",
+      "兄は服装にお金をかけすぎる。",
+      "兄は服装の流行に詳しい。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "哥哥对穿着毫不在意。",
+      "en": "My brother doesn't care at all about what he wears."
+    },
+    "why": {
+      "zh": "「無頓着」＝不在乎、不讲究。",
+      "en": "「無頓着」 is indifferent, not bothered about."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“非常在意”正好相反。",
+        "en": "Caring a lot is the opposite."
+      },
+      {
+        "zh": "花很多钱说明很在意，与「無頓着」相反。",
+        "en": "Spending a lot on clothes means caring — the opposite."
+      },
+      {
+        "zh": "熟悉流行说明很关心穿着。",
+        "en": "Knowing the trends means paying attention."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-416",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<今日の会議はいささか長すぎた。>>",
+    "options": [
+      "今日の会議は少し長すぎた。",
+      "今日の会議はひどく長すぎた。",
+      "今日の会議は思ったより短かった。",
+      "今日の会議は急に長くなった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "今天的会议稍微长了点。",
+      "en": "Today's meeting went on a bit too long."
+    },
+    "why": {
+      "zh": "「いささか」＝稍微、有点。",
+      "en": "「いささか」 is \"a little, somewhat\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ひどく」程度太重，「いささか」是“有点”。",
+        "en": "「ひどく」 is too strong; 「いささか」 is \"a little\"."
+      },
+      {
+        "zh": "“比想象的短”与原句矛盾。",
+        "en": "Shorter than expected contradicts the original."
+      },
+      {
+        "zh": "「いささか」表示程度，不表示“突然”。",
+        "en": "「いささか」 is degree, not suddenness."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-417",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<患者の容体は一刻を争う。>>",
+    "options": [
+      "患者の容体は少しの時間も無駄にできない状態だ。",
+      "患者の容体は急いで治療しなくてもいい状態だ。",
+      "患者の容体は時間をかけて調べるべき状態だ。",
+      "患者の容体はもう治療が間に合わない状態だ。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "患者的病情刻不容缓。",
+      "en": "The patient's condition can't wait a moment."
+    },
+    "why": {
+      "zh": "「一刻を争う」＝刻不容缓，一点时间也不能耽误。",
+      "en": "「一刻を争う」 is that every moment counts."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“不必急着治疗”正好相反。",
+        "en": "Not needing urgent treatment is the opposite."
+      },
+      {
+        "zh": "“花时间检查”与刻不容缓相反。",
+        "en": "Taking time to examine is the opposite."
+      },
+      {
+        "zh": "「一刻を争う」是还来得及但必须马上，不是已经来不及了。",
+        "en": "「一刻を争う」 means it must be now — not that it's already too late."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-418",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<ネットの情報を鵜呑みにしてはいけない。>>",
+    "options": [
+      "ネットの情報をよく考えずにそのまま信じてはいけない。",
+      "ネットの情報を最初から疑ってかかってはいけない。",
+      "ネットの情報を他人に広めてはいけない。",
+      "ネットの情報をすぐに忘れてはいけない。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "不能对网上的信息囫囵吞枣、照单全收。",
+      "en": "You mustn't swallow what you read online whole."
+    },
+    "why": {
+      "zh": "「鵜呑みにする」＝不加思考地全盘相信。",
+      "en": "「鵜呑みにする」 is to believe something without thinking — swallow it whole."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“一开始就怀疑”正好相反。",
+        "en": "Doubting from the start is the opposite."
+      },
+      {
+        "zh": "「鵜呑み」不是传播的意思。",
+        "en": "「鵜呑み」 isn't about spreading it."
+      },
+      {
+        "zh": "「鵜呑み」与忘记无关。",
+        "en": "「鵜呑み」 has nothing to do with forgetting."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-419",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<両国の交渉は難航している。>>",
+    "options": [
+      "両国の交渉はなかなか進まない。",
+      "両国の交渉は順調に進んでいる。",
+      "両国の交渉はすでにまとまった。",
+      "両国の交渉はまだ始まっていない。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "两国的谈判进展困难。",
+      "en": "The talks between the two countries are making little headway."
+    },
+    "why": {
+      "zh": "「難航」＝（谈判、工作）进展困难。",
+      "en": "「難航」 is (talks, work) struggling to make progress."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“顺利进行”正好相反。",
+        "en": "Going smoothly is the opposite."
+      },
+      {
+        "zh": "“已经谈妥”与进展困难矛盾。",
+        "en": "Already settled contradicts struggling."
+      },
+      {
+        "zh": "「難航」说明谈判正在进行，不是还没开始。",
+        "en": "「難航」 means talks are under way, not that they haven't started."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-420",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<彼は会議の間、終始無言だった。>>",
+    "options": [
+      "彼は会議の間、最初から最後まで何も話さなかった。",
+      "彼は会議の間、最後に一言だけ話した。",
+      "彼は会議の間、ずっと話し続けていた。",
+      "彼は会議の途中から何も話さなくなった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "开会期间他始终一言不发。",
+      "en": "He didn't say a word from start to finish of the meeting."
+    },
+    "why": {
+      "zh": "「終始」＝自始至终，「終始無言」＝从头到尾一句话也没说。",
+      "en": "「終始」 is from start to finish: he never spoke the whole time."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "最后说了一句就不是“始终”无言。",
+        "en": "Saying a word at the end isn't silent throughout."
+      },
+      {
+        "zh": "“一直在说”正好相反。",
+        "en": "Talking the whole time is the opposite."
+      },
+      {
+        "zh": "“从中途开始不说话”不是自始至终。",
+        "en": "Falling silent partway through isn't \"from start to finish\"."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-421",
+    "type": "iikae",
+    "refs": [
+      "lesson86#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<部長は自分の案を強引に通した。>>",
+    "options": [
+      "部長は反対を押し切って無理やり自分の案を通した。",
+      "部長は皆の意見を聞いて慎重に自分の案を通した。",
+      "部長は時間をかけて自分の案を説明した。",
+      "部長は自分の案をあきらめた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "部长强行让自己的方案通过了。",
+      "en": "The manager forced his own plan through."
+    },
+    "why": {
+      "zh": "「強引」＝强行、不顾反对硬来。",
+      "en": "「強引」 is forceful — pushing something through regardless of objections."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“听取意见、慎重”与强行相反。",
+        "en": "Listening and being careful is the opposite."
+      },
+      {
+        "zh": "“花时间说明”不是强行。",
+        "en": "Explaining at length isn't forcing it."
+      },
+      {
+        "zh": "“放弃”与让方案通过矛盾。",
+        "en": "Giving up contradicts getting it through."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-422",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "<<両チームの実力は拮抗している。>>",
+    "options": [
+      "両チームの実力はほぼ同じくらいだ。",
+      "両チームの実力には大きな差がある。",
+      "片方のチームの実力がはるかに上だ。",
+      "両チームの実力は急に伸びている。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "两队实力不相上下。",
+      "en": "The two teams are evenly matched."
+    },
+    "why": {
+      "zh": "「拮抗」＝势均力敌、不相上下。",
+      "en": "「拮抗」 is being evenly matched."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“差距很大”正好相反。",
+        "en": "A big gap is the opposite."
+      },
+      {
+        "zh": "一方远强于另一方，不是势均力敌。",
+        "en": "One being far stronger isn't evenly matched."
+      },
+      {
+        "zh": "「拮抗」说的是双方相当，不是实力增长。",
+        "en": "「拮抗」 is about being equal, not improving."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-423",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "<<資金難で、新工場の建設計画は頓挫した。>>",
+    "options": [
+      "資金難で、新工場の建設計画は途中でだめになった。",
+      "資金難だったが、新工場の建設計画は無事に完了した。",
+      "資金難で、新工場の建設計画は少し遅れたが続いている。",
+      "資金難で、新工場の建設計画は規模を大きくした。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "由于资金困难，新工厂的建设计划受挫中断了。",
+      "en": "Money troubles derailed the plan to build the new factory."
+    },
+    "why": {
+      "zh": "「頓挫」＝（计划、事业）中途受挫、进行不下去。",
+      "en": "「頓挫」 is a plan breaking down midway."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“顺利完成”正好相反。",
+        "en": "Being completed is the opposite."
+      },
+      {
+        "zh": "「頓挫」是进行不下去，不是“稍微推迟但仍在继续”。",
+        "en": "「頓挫」 means it stopped, not that it's continuing with a delay."
+      },
+      {
+        "zh": "资金困难时“扩大规模”不合逻辑，也不是「頓挫」的意思。",
+        "en": "Expanding the plan isn't what 「頓挫」 means."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-424",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<どんなに苦しくても、彼女は弱音を吐かなかった。>>",
+    "options": [
+      "どんなに苦しくても、彼女はつらいと言わなかった。",
+      "どんなに苦しくても、彼女は文句を言い続けた。",
+      "どんなに苦しくても、彼女はうそをつかなかった。",
+      "どんなに苦しくても、彼女は大声を出さなかった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "无论多么艰难，她都没有说过泄气话。",
+      "en": "However hard things got, she never complained it was too much."
+    },
+    "why": {
+      "zh": "「弱音を吐く」＝说泄气话、叫苦。",
+      "en": "「弱音を吐く」 is to whine, say you can't take it."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“一直抱怨”与原句相反。",
+        "en": "Complaining constantly is the opposite."
+      },
+      {
+        "zh": "「弱音」不是谎言。",
+        "en": "「弱音」 isn't a lie."
+      },
+      {
+        "zh": "「弱音」不是大声，而是泄气的话。",
+        "en": "「弱音」 isn't a loud voice; it's words of weakness."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-425",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "<<待ち時間が長く、手持ち無沙汰だった。>>",
+    "options": [
+      "待ち時間が長く、することがなくて退屈だった。",
+      "待ち時間が長く、荷物が重くて大変だった。",
+      "待ち時間が長く、お金が足りなくて困った。",
+      "待ち時間が長く、疲れてとても眠かった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "等待时间很长，闲得无聊。",
+      "en": "The wait was long and I had nothing to do with myself."
+    },
+    "why": {
+      "zh": "「手持ち無沙汰」＝闲着没事、无所事事。",
+      "en": "「手持ち無沙汰」 is having nothing to do, being at a loose end."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「手持ち」不是手里拿着的行李。",
+        "en": "「手持ち」 here isn't about luggage in your hands."
+      },
+      {
+        "zh": "「手持ち」不是指手头的钱。",
+        "en": "「手持ち」 here isn't about cash on hand."
+      },
+      {
+        "zh": "「手持ち無沙汰」是无聊，不是困倦。",
+        "en": "「手持ち無沙汰」 is boredom, not sleepiness."
+      }
+    ]
+  }
+]

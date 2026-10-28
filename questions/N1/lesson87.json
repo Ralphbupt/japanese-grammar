@@ -1,0 +1,698 @@
+[
+  {
+    "id": "n1-l87-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson87#1"
+    ],
+    "difficulty": 1,
+    "stem": "新天地での皆様のご活躍を、心より期待して（　）。",
+    "options": [
+      "たまりません",
+      "いられません",
+      "やみません",
+      "なりません"
+    ],
+    "answer": 2,
+    "full": "新天地での皆様のご活躍を、心より期待してやみません。",
+    "tr": {
+      "zh": "衷心期待各位在新的天地大显身手。",
+      "en": "I sincerely look forward to your success in your new endeavours."
+    },
+    "why": {
+      "zh": "「心より」＋「期待する」是郑重的祝愿，用「てやみません」（衷心……）。",
+      "en": "「心より」 + 「期待する」 is a formal wish — 「てやみません」 (sincerely)."
+    },
+    "wrong": [
+      {
+        "zh": "「てたまらない」用于生理感觉或强烈情绪“受不了”，不用于郑重的祝愿。",
+        "en": "「てたまらない」 (unbearably) is for sensations and raw feelings, not formal wishes."
+      },
+      {
+        "zh": "「ていられない」是“不能一直……”，意思不通。",
+        "en": "「ていられない」 (can't keep …) makes no sense here."
+      },
+      null,
+      {
+        "zh": "「てならない」表示自然涌上的感情（「気がしてならない」），不和「心より期待する」搭配。",
+        "en": "「てならない」 is for feelings that well up (「気がしてならない」), not 「心より期待する」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l87-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson87#1"
+    ],
+    "difficulty": 2,
+    "stem": "この小説は、発表から半世紀を経た今も、多くの読者を魅了して（　）。",
+    "options": [
+      "はばからない",
+      "やまない",
+      "ならない",
+      "たまらない"
+    ],
+    "answer": 1,
+    "full": "この小説は、発表から半世紀を経た今も、多くの読者を魅了してやまない。",
+    "tr": {
+      "zh": "这部小说发表半个世纪后的今天，依然深深吸引着众多读者。",
+      "en": "Half a century after it came out, this novel still never ceases to captivate readers."
+    },
+    "why": {
+      "zh": "「今も」表示长期持续，「魅了する」后接「てやまない」（始终……）。",
+      "en": "「今も」 shows it's ongoing; 「魅了する」 takes 「てやまない」 (never ceases to)."
+    },
+    "wrong": [
+      {
+        "zh": "「てはばからない」接“说”类动词，表示毫无顾忌地说。",
+        "en": "「てはばからない」 follows verbs of saying (says openly)."
+      },
+      null,
+      {
+        "zh": "「てならない」是说话人自己控制不住的感情，不接「読者を魅了する」。",
+        "en": "「てならない」 is the speaker's own uncontrollable feeling, not 「読者を魅了する」."
+      },
+      {
+        "zh": "「てたまらない」是说话人自己“受不了”的感觉，不接「読者を魅了する」。",
+        "en": "「てたまらない」 is the speaker's own unbearable feeling, not 「読者を魅了する」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l87-003",
+    "type": "narabe",
+    "refs": [
+      "lesson87#1"
+    ],
+    "difficulty": 2,
+    "stem": "祖母が [_] [★] [_] [_] は、今も変わらない姿でそこにある。",
+    "options": [
+      "故郷の山",
+      "愛して",
+      "生涯",
+      "やまなかった"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "祖母が生涯愛してやまなかった故郷の山は、今も変わらない姿でそこにある。",
+    "tr": {
+      "zh": "祖母一生深爱的故乡的山，至今依然以不变的姿态矗立在那里。",
+      "en": "The mountain of her home town, which my grandmother loved all her life, still stands there unchanged."
+    },
+    "why": {
+      "zh": "「生涯」修饰「愛してやまなかった」，整个从句修饰「故郷の山」：生涯 → 愛して → やまなかった → 故郷の山。★ 是「愛して」。",
+      "en": "「生涯」 modifies 「愛してやまなかった」, and the clause modifies 「故郷の山」: 生涯 → 愛して → やまなかった → 故郷の山. The ★ is 「愛して」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l87-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson87#2"
+    ],
+    "difficulty": 1,
+    "stem": "夜道を無灯火で自転車に乗るのは、危険（　）。",
+    "options": [
+      "な限りだ",
+      "極まりない",
+      "にかたくない",
+      "に堪えない"
+    ],
+    "answer": 1,
+    "full": "夜道を無灯火で自転車に乗るのは、危険極まりない。",
+    "tr": {
+      "zh": "夜里不开车灯骑自行车，危险至极。",
+      "en": "Riding a bicycle at night without a light is utterly dangerous."
+    },
+    "why": {
+      "zh": "严厉的负面评价，な形容词词干「危険」后接「極まりない」（……至极）。",
+      "en": "A harsh judgement: the な-adjective stem 「危険」 + 「極まりない」 (utterly)."
+    },
+    "wrong": [
+      {
+        "zh": "「限りだ」只接表示说话人感情的形容词，「危険」是客观性质。",
+        "en": "「限りだ」 takes adjectives of the speaker's feelings; 「危険」 is an objective quality."
+      },
+      null,
+      {
+        "zh": "「にかたくない」只接「想像・察する・理解」。",
+        "en": "「にかたくない」 only goes with 想像/察する/理解."
+      },
+      {
+        "zh": "「に堪えない」接「見る・聞く」或感情名词，不接「危険」。",
+        "en": "「に堪えない」 takes 見る/聞く or emotion nouns, not 「危険」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l87-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson87#2"
+    ],
+    "difficulty": 2,
+    "stem": "部長の話はいつも同じ自慢ばかりで、（　）。",
+    "options": [
+      "つまらない極まりない",
+      "退屈な極まりない",
+      "退屈極まりない",
+      "つまらな極まりない"
+    ],
+    "answer": 2,
+    "full": "部長の話はいつも同じ自慢ばかりで、退屈極まりない。",
+    "tr": {
+      "zh": "部长的话总是同样的自我吹嘘，无聊至极。",
+      "en": "The manager's talk is always the same bragging — utterly tedious."
+    },
+    "why": {
+      "zh": "「極まりない」接な形容词的词干：「退屈極まりない」。",
+      "en": "「極まりない」 follows the stem of a な-adjective: 「退屈極まりない」."
+    },
+    "wrong": [
+      {
+        "zh": "「極まりない」不接い形容词，「つまらない極まりない」是错误接续。",
+        "en": "「極まりない」 doesn't follow い-adjectives; 「つまらない極まりない」 is wrong."
+      },
+      {
+        "zh": "接词干，不加「な」；要加「な」须说「退屈なこと極まりない」。",
+        "en": "It takes the bare stem; with 「な」 you'd need 「退屈なこと極まりない」."
+      },
+      null,
+      {
+        "zh": "「つまらない」是い形容词，去掉「い」也不能接「極まりない」。",
+        "en": "「つまらない」 is an い-adjective; dropping 「い」 doesn't make it work."
+      }
+    ]
+  },
+  {
+    "id": "n1-l87-006",
+    "type": "narabe",
+    "refs": [
+      "lesson87#2"
+    ],
+    "difficulty": 2,
+    "stem": "アポもなく [_] [_] [_] [★] 話だ。",
+    "options": [
+      "失礼",
+      "押しかけて",
+      "極まりない",
+      "長居するとは"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "アポもなく押しかけて長居するとは失礼極まりない話だ。",
+    "tr": {
+      "zh": "不预约就闯上门来，还待着不走，真是无礼至极。",
+      "en": "Barging in without an appointment and then overstaying — how utterly rude."
+    },
+    "why": {
+      "zh": "「アポもなく押しかけて長居する」是一连串动作，「とは」表示愤慨，后接「失礼極まりない」：押しかけて → 長居するとは → 失礼 → 極まりない。★ 是「極まりない」。",
+      "en": "「アポもなく押しかけて長居する」 is the sequence, 「とは」 shows indignation, then 「失礼極まりない」: 押しかけて → 長居するとは → 失礼 → 極まりない. The ★ is 「極まりない」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l87-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson87#3"
+    ],
+    "difficulty": 1,
+    "stem": "初めて富士山の頂上から見たご来光の美しさ（　）。",
+    "options": [
+      "といったらありゃしなかった",
+      "限りだった",
+      "極まりなかった",
+      "といったらなかった"
+    ],
+    "answer": 3,
+    "full": "初めて富士山の頂上から見たご来光の美しさといったらなかった。",
+    "tr": {
+      "zh": "第一次在富士山顶看到的日出，美得无法形容。",
+      "en": "The beauty of the sunrise I first saw from the top of Mt Fuji was beyond words."
+    },
+    "why": {
+      "zh": "名词「美しさ」＋「といったらない」表示程度无法形容；说过去的事用「といったらなかった」。",
+      "en": "The noun 「美しさ」 + 「といったらない」 (beyond words); for the past, 「といったらなかった」."
+    },
+    "wrong": [
+      {
+        "zh": "「といったらありゃしない」只用于负面、抱怨，不能形容美景。",
+        "en": "「といったらありゃしない」 is only for complaints, not for beauty."
+      },
+      {
+        "zh": "「限りだ」接感情形容词（「うれしい限りだ」），不接名词「美しさ」。",
+        "en": "「限りだ」 follows an emotion adjective (「うれしい限りだ」), not the noun 「美しさ」."
+      },
+      {
+        "zh": "「極まりない」接な形容词词干，多为批评，不接「美しさ」。",
+        "en": "「極まりない」 follows a な-adjective stem, usually in criticism, not 「美しさ」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l87-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson87#3"
+    ],
+    "difficulty": 2,
+    "stem": "隣の工事の音が朝から晩まで続いて、うるさい（　）。",
+    "options": [
+      "極まりない",
+      "といったらありゃしない",
+      "てやまない",
+      "とは限らない"
+    ],
+    "answer": 1,
+    "full": "隣の工事の音が朝から晩まで続いて、うるさいといったらありゃしない。",
+    "tr": {
+      "zh": "隔壁施工的声音从早到晚不停，吵得要命。",
+      "en": "The construction next door goes on from morning till night — it's unbearably noisy."
+    },
+    "why": {
+      "zh": "抱怨的语气，い形容词「うるさい」后接只用于负面的「といったらありゃしない」。",
+      "en": "A complaint: the い-adjective 「うるさい」 + the negative-only 「といったらありゃしない」."
+    },
+    "wrong": [
+      {
+        "zh": "「極まりない」不接い形容词，「うるさい極まりない」接续错误。",
+        "en": "「極まりない」 doesn't follow い-adjectives; 「うるさい極まりない」 is wrong."
+      },
+      null,
+      {
+        "zh": "「てやまない」接动词て形，形容词「うるさい」不能接。",
+        "en": "「てやまない」 follows a verb's て-form, not the adjective 「うるさい」."
+      },
+      {
+        "zh": "「とは限らない」是“未必……”，和“从早到晚不停”的抱怨矛盾。",
+        "en": "「とは限らない」 (not necessarily) contradicts \"from morning till night\"."
+      }
+    ]
+  },
+  {
+    "id": "n1-l87-009",
+    "type": "narabe",
+    "refs": [
+      "lesson87#3"
+    ],
+    "difficulty": 2,
+    "stem": "大勢の前で [★] [_] [_] [_] 。",
+    "options": [
+      "といったら",
+      "恥ずかしさ",
+      "なかった",
+      "転んだときの"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "大勢の前で転んだときの恥ずかしさといったらなかった。",
+    "tr": {
+      "zh": "在一大群人面前摔倒时的那份难为情，简直无法形容。",
+      "en": "The embarrassment of falling over in front of all those people was beyond words."
+    },
+    "why": {
+      "zh": "「大勢の前で転んだときの」修饰名词「恥ずかしさ」，后接「といったらなかった」：転んだときの → 恥ずかしさ → といったら → なかった。★ 是「転んだときの」。",
+      "en": "「大勢の前で転んだときの」 modifies the noun 「恥ずかしさ」, then 「といったらなかった」: 転んだときの → 恥ずかしさ → といったら → なかった. The ★ is 「転んだときの」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l87-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson87#4"
+    ],
+    "difficulty": 1,
+    "stem": "お世話になった先生が退職なさると聞き、もう教えていただけないと思うと寂しい（　）。",
+    "options": [
+      "極まりないです",
+      "限りです",
+      "てなりません",
+      "にかたくありません"
+    ],
+    "answer": 1,
+    "full": "お世話になった先生が退職なさると聞き、もう教えていただけないと思うと寂しい限りです。",
+    "tr": {
+      "zh": "听说一直关照我的老师要退休了，想到再也不能受教于他，真是寂寞得很。",
+      "en": "Hearing that the teacher who did so much for me is retiring, I feel so sad to think he won't teach me any more."
+    },
+    "why": {
+      "zh": "说话人此刻的感情，感情形容词「寂しい」后接「限りです」（真是太……了）。",
+      "en": "The speaker's own feeling right now: the emotion adjective 「寂しい」 + 「限りです」."
+    },
+    "wrong": [
+      {
+        "zh": "「極まりない」不接い形容词。",
+        "en": "「極まりない」 doesn't follow い-adjectives."
+      },
+      null,
+      {
+        "zh": "「てならない」要接「寂しくて」，「寂しいてなりません」接续错误。",
+        "en": "「てならない」 needs 「寂しくて」; 「寂しいてなりません」 is malformed."
+      },
+      {
+        "zh": "「にかたくない」只接「想像・察する・理解」。",
+        "en": "「にかたくない」 only goes with 想像/察する/理解."
+      }
+    ]
+  },
+  {
+    "id": "n1-l87-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson87#4"
+    ],
+    "difficulty": 2,
+    "stem": "定年後は田舎で畑を耕しながら夫婦でのんびり暮らしているなんて、（　）。",
+    "options": [
+      "うらやましさに堪えない",
+      "うらやましい極まりない",
+      "うらやましくてやまない",
+      "うらやましい限りだ"
+    ],
+    "answer": 3,
+    "full": "定年後は田舎で畑を耕しながら夫婦でのんびり暮らしているなんて、うらやましい限りだ。",
+    "tr": {
+      "zh": "退休后夫妻俩在乡下一边种地一边悠闲度日，真是让人羡慕极了。",
+      "en": "Retired, living a relaxed life in the country with your wife and working the fields — I couldn't be more envious."
+    },
+    "why": {
+      "zh": "说话人此刻的羡慕之情，感情形容词「うらやましい」＋「限りだ」。",
+      "en": "The speaker's own envy: the emotion adjective 「うらやましい」 + 「限りだ」."
+    },
+    "wrong": [
+      {
+        "zh": "「に堪えない」（不胜……）只接「感謝・遺憾・同情」等固定的感情名词，不说「うらやましさに堪えない」。",
+        "en": "「に堪えない」 (deeply) takes set nouns like 感謝, 遺憾, 同情; 「うらやましさに堪えない」 isn't said."
+      },
+      {
+        "zh": "「極まりない」不接い形容词。",
+        "en": "「極まりない」 doesn't follow い-adjectives."
+      },
+      {
+        "zh": "「てやまない」接动词て形，不接形容词。",
+        "en": "「てやまない」 follows a verb's て-form, not an adjective."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l87-012",
+    "type": "narabe",
+    "refs": [
+      "lesson87#4"
+    ],
+    "difficulty": 1,
+    "stem": "長年の夢だった店をようやく [_] [_] [★] [_] 。",
+    "options": [
+      "うれしい",
+      "です",
+      "開くことができて",
+      "限り"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "長年の夢だった店をようやく開くことができてうれしい限りです。",
+    "tr": {
+      "zh": "终于开起了梦想多年的店，真是高兴之至。",
+      "en": "I've finally been able to open the shop I dreamed of for years — I couldn't be happier."
+    },
+    "why": {
+      "zh": "「店をようやく開くことができて」说明原因，后接「うれしい限りです」：開くことができて → うれしい → 限り → です。★ 是「限り」。",
+      "en": "「店をようやく開くことができて」 gives the reason, then 「うれしい限りです」: 開くことができて → うれしい → 限り → です. The ★ is 「限り」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l87-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson87#5"
+    ],
+    "difficulty": 2,
+    "stem": "まさか、あの慎重な彼がこんな初歩的なミスをする（　）。",
+    "options": [
+      "とは限らない",
+      "とは",
+      "とはいえ",
+      "といったら"
+    ],
+    "answer": 1,
+    "full": "まさか、あの慎重な彼がこんな初歩的なミスをするとは。",
+    "tr": {
+      "zh": "真没想到那么谨慎的他竟会犯这么低级的错误。",
+      "en": "To think that someone as careful as him would make such a basic mistake!"
+    },
+    "why": {
+      "zh": "「まさか」表示意外，句末只留「〜とは。」表示惊讶、感叹。",
+      "en": "「まさか」 signals surprise; ending on 「〜とは。」 expresses astonishment."
+    },
+    "wrong": [
+      {
+        "zh": "「とは限らない」（未必）是部分否定，和「まさか」的惊讶语气不搭。",
+        "en": "「とは限らない」 (not necessarily) doesn't go with the surprise of 「まさか」."
+      },
+      null,
+      {
+        "zh": "「とはいえ」（虽说……）是逆接，后面必须有下文。",
+        "en": "「とはいえ」 (even so) is concessive and needs a following clause."
+      },
+      {
+        "zh": "「といったら」提出话题，后面必须接描述，不能结句。",
+        "en": "「といったら」 introduces a topic and needs a description after it."
+      }
+    ]
+  },
+  {
+    "id": "n1-l87-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson87#5"
+    ],
+    "difficulty": 2,
+    "stem": "十年前に植えた小さな苗木が、これほど立派な木に育つ（　）、誰が想像しただろうか。",
+    "options": [
+      "とあって",
+      "ものの",
+      "とは",
+      "とはいえ"
+    ],
+    "answer": 2,
+    "full": "十年前に植えた小さな苗木が、これほど立派な木に育つとは、誰が想像しただろうか。",
+    "tr": {
+      "zh": "十年前种下的小树苗竟能长成这么大的树，谁能想得到呢？",
+      "en": "Who would have imagined that the little sapling planted ten years ago would grow into such a fine tree?"
+    },
+    "why": {
+      "zh": "后句「誰が想像しただろうか」是感叹“没想到”，前面用「とは」（竟然……）。",
+      "en": "「誰が想像しただろうか」 (who would have thought) calls for 「とは」 (to think that)."
+    },
+    "wrong": [
+      {
+        "zh": "「とあって」（因为是……）表示原因，和“谁能想到”不相接。",
+        "en": "「とあって」 (because it's …) gives a reason and doesn't lead into \"who would have imagined\"."
+      },
+      {
+        "zh": "「ものの」（虽然……但）是逆接，前后不构成转折。",
+        "en": "「ものの」 (although) is concessive; there's no contrast here."
+      },
+      null,
+      {
+        "zh": "「とはいえ」（虽说……）是逆接，意思不通。",
+        "en": "「とはいえ」 (even so) is concessive and makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n1-l87-015",
+    "type": "narabe",
+    "refs": [
+      "lesson87#5"
+    ],
+    "difficulty": 2,
+    "stem": "七十歳の祖父が、たった一人で [_] [_] [_] [★] 。",
+    "options": [
+      "とは",
+      "驚いた",
+      "世界一周を",
+      "成し遂げる"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "七十歳の祖父が、たった一人で世界一周を成し遂げるとは驚いた。",
+    "tr": {
+      "zh": "七十岁的祖父竟然独自一人完成了环球旅行，真让人吃惊。",
+      "en": "To think my seventy-year-old grandfather would make it round the world on his own — I was amazed."
+    },
+    "why": {
+      "zh": "宾语「世界一周を」接「成し遂げる」，再用「とは」接感情「驚いた」：世界一周を → 成し遂げる → とは → 驚いた。★ 是「驚いた」。",
+      "en": "The object 「世界一周を」 + 「成し遂げる」, then 「とは」 and the reaction 「驚いた」: 世界一周を → 成し遂げる → とは → 驚いた. The ★ is 「驚いた」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l87-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson87#6"
+    ],
+    "difficulty": 2,
+    "stem": "あの政治家は、自分こそが次の首相にふさわしいと公言して（　）。",
+    "options": [
+      "しかるべきだ",
+      "ならない",
+      "やまない",
+      "はばからない"
+    ],
+    "answer": 3,
+    "full": "あの政治家は、自分こそが次の首相にふさわしいと公言してはばからない。",
+    "tr": {
+      "zh": "那位政治家公然宣称，只有自己才配当下一任首相。",
+      "en": "That politician openly declares that he alone is fit to be the next prime minister."
+    },
+    "why": {
+      "zh": "「公言する」是“说”类动词，自夸的话毫不避讳地说出口，用「てはばからない」。",
+      "en": "「公言する」 is a verb of saying, and he brags without restraint — 「てはばからない」 (openly)."
+    },
+    "wrong": [
+      {
+        "zh": "「てしかるべきだ」（理应……）意思不通：没有“理应宣称自己最合适”的道理。",
+        "en": "「てしかるべきだ」 (ought to) makes no sense: no one ought to proclaim himself the best choice."
+      },
+      {
+        "zh": "「てならない」接自然涌上的感情，不接「公言する」。",
+        "en": "「てならない」 is for feelings that well up, not 「公言する」."
+      },
+      {
+        "zh": "「てやまない」接「願う・愛する」等感情动词，不接「公言する」。",
+        "en": "「てやまない」 follows feeling verbs like 願う, 愛する, not 「公言する」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l87-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson87#6"
+    ],
+    "difficulty": 2,
+    "stem": "空港で十年ぶりに再会した二人は、（　）抱き合って泣いた。",
+    "options": [
+      "人目もはばからない",
+      "人目もはばからず",
+      "人目もはばかって",
+      "人目もかまわない"
+    ],
+    "answer": 1,
+    "full": "空港で十年ぶりに再会した二人は、人目もはばからず抱き合って泣いた。",
+    "tr": {
+      "zh": "时隔十年在机场重逢的两个人，不顾旁人的目光相拥而泣。",
+      "en": "Meeting again at the airport after ten years, the two hugged and cried, not caring who saw."
+    },
+    "why": {
+      "zh": "一次性的动作「抱き合って泣いた」，用副词性的「人目もはばからず」（不顾旁人的眼光）。",
+      "en": "For a one-off action like 「抱き合って泣いた」, use the adverbial 「人目もはばからず」 (heedless of onlookers)."
+    },
+    "wrong": [
+      {
+        "zh": "「はばからない」是连体形/终止形，不能直接修饰动词「抱き合う」。",
+        "en": "「はばからない」 can't modify the verb 「抱き合う」 directly."
+      },
+      null,
+      {
+        "zh": "「はばかって」是“有所顾忌”，和相拥而泣的意思相反，而且「人目も」不接它。",
+        "en": "「はばかって」 (holding back) is the opposite meaning and doesn't follow 「人目も」."
+      },
+      {
+        "zh": "「かまわない」也不能直接修饰动词，要说「人目もかまわず」。",
+        "en": "「かまわない」 can't modify the verb either; it would be 「人目もかまわず」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l87-018",
+    "type": "narabe",
+    "refs": [
+      "lesson87#6"
+    ],
+    "difficulty": 2,
+    "stem": "その評論家は、[★] [_] [_] [_] 。",
+    "options": [
+      "必ず失敗すると",
+      "はばからない",
+      "この政策が",
+      "断言して"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "その評論家は、この政策が必ず失敗すると断言してはばからない。",
+    "tr": {
+      "zh": "那位评论家毫无顾忌地断言这项政策必定失败。",
+      "en": "That critic doesn't hesitate to declare that this policy will fail."
+    },
+    "why": {
+      "zh": "引用的内容「この政策が必ず失敗すると」在前，后接「断言してはばからない」：この政策が → 必ず失敗すると → 断言して → はばからない。★ 是「この政策が」。",
+      "en": "The quoted claim 「この政策が必ず失敗すると」 comes first, then 「断言してはばからない」: この政策が → 必ず失敗すると → 断言して → はばからない. The ★ is 「この政策が」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

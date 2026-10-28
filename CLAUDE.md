@@ -105,7 +105,7 @@ grammar/
   N4/   lesson18-lesson34  (17 lessons incl. keigo 27/28/29, week 3-4)
   N3/   lesson35-lesson58  (24 lessons, week 5-6)
   N2/   lesson59-lesson75  (17 lessons, week 7-8)
-  N1/   lesson76-lesson92  (17 lessons incl. 92 review; no practice questions yet)
+  N1/   lesson76-lesson92  (17 lessons incl. 92 review)
   guides/ comparison pages + JLPT exam guide (not a level)
 pages/
   about.md               (bilingual About page source)

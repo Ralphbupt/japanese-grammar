@@ -1,0 +1,698 @@
+[
+  {
+    "id": "n1-l78-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson78#1"
+    ],
+    "difficulty": 2,
+    "stem": "立地といい設備（　）、この会場なら国際会議にも十分対応できる。",
+    "options": [
+      "といわず",
+      "といい",
+      "なり",
+      "だの"
+    ],
+    "answer": 1,
+    "full": "立地といい設備といい、この会場なら国際会議にも十分対応できる。",
+    "tr": {
+      "zh": "无论是地段还是设施，这个会场应对国际会议都绰绰有余。",
+      "en": "In both location and facilities, this venue could easily handle an international conference."
+    },
+    "why": {
+      "zh": "前面已有「立地といい」，后项「十分対応できる」是说话人的评价，配对用「といい」。",
+      "en": "「立地といい」 comes first and the second half is the speaker's evaluation, so the pair is completed with 「といい」."
+    },
+    "wrong": [
+      {
+        "zh": "「といわず」要成对使用（AといわずBといわず），后项是客观事实，不和「といい」搭配。",
+        "en": "「といわず」 pairs with itself (AといわずBといわず) and describes facts; it doesn't pair with 「といい」."
+      },
+      null,
+      {
+        "zh": "「なり〜なり」后项是建议、命令，而且要成对，这里是评价。",
+        "en": "「なり〜なり」 leads to advice or an order and pairs with itself; this is an evaluation."
+      },
+      {
+        "zh": "「だの」是带不满的列举，和称赞的后项不符，也不和「といい」成对。",
+        "en": "「だの」 lists with a complaint, which clashes with the praise, and doesn't pair with 「といい」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l78-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson78#1"
+    ],
+    "difficulty": 2,
+    "stem": "（　）、このマンションは申し分ない。",
+    "options": [
+      "眺めといわず日当たりといわず",
+      "眺めなり日当たりなり",
+      "眺めといい日当たりといい",
+      "眺めだの日当たりだの"
+    ],
+    "answer": 2,
+    "full": "眺めといい日当たりといい、このマンションは申し分ない。",
+    "tr": {
+      "zh": "无论是景观还是采光，这套公寓都无可挑剔。",
+      "en": "In both its view and its sunlight, this flat leaves nothing to be desired."
+    },
+    "why": {
+      "zh": "后项「申し分ない」是说话人的评价，从两个方面说明整体评价，用「AといいBといい」。",
+      "en": "「申し分ない」 is the speaker's verdict, drawn from two aspects: 「AといいBといい」."
+    },
+    "wrong": [
+      {
+        "zh": "「といわず〜といわず」后项是“到处、全部”的客观事实，不能接「申し分ない」这样的评价。",
+        "en": "「といわず〜といわず」 describes a fact (everywhere, all over), not a verdict like 「申し分ない」."
+      },
+      {
+        "zh": "「なり〜なり」后项是建议、命令，不是评价。",
+        "en": "「なり〜なり」 leads to advice or an order, not an evaluation."
+      },
+      null,
+      {
+        "zh": "「だの〜だの」带不满，和称赞「申し分ない」矛盾。",
+        "en": "「だの〜だの」 is a complaint, which contradicts 「申し分ない」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l78-003",
+    "type": "narabe",
+    "refs": [
+      "lesson78#1"
+    ],
+    "difficulty": 2,
+    "stem": "この部屋は、日当たり [_] [_] [★] [_]。",
+    "options": [
+      "といい",
+      "近さといい",
+      "駅からの",
+      "申し分ない"
+    ],
+    "order": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "full": "この部屋は、日当たりといい駅からの近さといい申し分ない。",
+    "tr": {
+      "zh": "这个房间无论是采光还是离车站近，都无可挑剔。",
+      "en": "This room is perfect, both for its sunlight and for how close it is to the station."
+    },
+    "why": {
+      "zh": "「日当たりといい」与「駅からの近さといい」成对，最后是评价「申し分ない」：といい → 駅からの → 近さといい → 申し分ない。★ 是「近さといい」。",
+      "en": "「日当たりといい」 pairs with 「駅からの近さといい」, and the verdict 「申し分ない」 comes last: といい → 駅からの → 近さといい → 申し分ない. The ★ is 「近さといい」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l78-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson78#2"
+    ],
+    "difficulty": 2,
+    "stem": "大掃除をしたら、棚の上といわず机の下（　）、家じゅうから埃が出てきた。",
+    "options": [
+      "といい",
+      "やら",
+      "といわず",
+      "なり"
+    ],
+    "answer": 2,
+    "full": "大掃除をしたら、棚の上といわず机の下といわず、家じゅうから埃が出てきた。",
+    "tr": {
+      "zh": "一大扫除，不管是架子上还是桌子底下，家里到处都扫出了灰尘。",
+      "en": "When we did the big clean, dust came out from all over the house — on the shelves, under the desk, everywhere."
+    },
+    "why": {
+      "zh": "前面是「棚の上といわず」，后项「家じゅうから」是“到处”的客观事实，成对用「といわず」。",
+      "en": "「棚の上といわず」 comes first and the result is a fact about the whole house: complete the pair with 「といわず」."
+    },
+    "wrong": [
+      {
+        "zh": "「といい〜といい」后项要是评价，而且不和「といわず」成对。",
+        "en": "「といい〜といい」 needs an evaluation and doesn't pair with 「といわず」."
+      },
+      {
+        "zh": "「やら〜やら」要成对使用，不和「といわず」搭配。",
+        "en": "「やら〜やら」 pairs with itself, not with 「といわず」."
+      },
+      null,
+      {
+        "zh": "「なり〜なり」后项是建议、命令，不叙述过去的事。",
+        "en": "「なり〜なり」 leads to advice or an order, not a past event."
+      }
+    ]
+  },
+  {
+    "id": "n1-l78-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson78#2"
+    ],
+    "difficulty": 2,
+    "stem": "締め切り前の一か月、彼女は（　）机に向かい、論文を書き続けた。",
+    "options": [
+      "昼といい夜といい",
+      "昼であれ夜であれ",
+      "昼なり夜なり",
+      "昼といわず夜といわず"
+    ],
+    "answer": 3,
+    "full": "締め切り前の一か月、彼女は昼といわず夜といわず机に向かい、論文を書き続けた。",
+    "tr": {
+      "zh": "截稿前的一个月，她不分白天黑夜地伏案写论文。",
+      "en": "In the month before the deadline, she sat at her desk day and night, writing her thesis."
+    },
+    "why": {
+      "zh": "「昼」和「夜」合起来表示“一天到晚”，后项是客观事实，用「AといわずBといわず」。",
+      "en": "Day and night together mean \"all the time\", and the rest is a plain fact: 「AといわずBといわず」."
+    },
+    "wrong": [
+      {
+        "zh": "「といい〜といい」后项要是说话人的评价，这里是在叙述她的行为。",
+        "en": "「といい〜といい」 needs the speaker's evaluation; this narrates what she did."
+      },
+      {
+        "zh": "「であれ〜であれ」后项多为一般性的判断或规则，不叙述过去的具体行为。",
+        "en": "「であれ〜であれ」 leads to a general judgment or rule, not a specific past action."
+      },
+      {
+        "zh": "「なり〜なり」后项是建议、命令，不叙述过去。",
+        "en": "「なり〜なり」 leads to advice or an order, not past narration."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l78-006",
+    "type": "narabe",
+    "refs": [
+      "lesson78#2"
+    ],
+    "difficulty": 2,
+    "stem": "雨の中を走って帰ってきた息子は、頭 [_] [_] [_] [★]。",
+    "options": [
+      "なっていた",
+      "びしょ濡れに",
+      "といわず",
+      "背中といわず"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "雨の中を走って帰ってきた息子は、頭といわず背中といわずびしょ濡れになっていた。",
+    "tr": {
+      "zh": "冒雨跑回家的儿子，头上背上全都湿透了。",
+      "en": "My son, who had run home through the rain, was soaked through, head and back alike."
+    },
+    "why": {
+      "zh": "「頭といわず」与「背中といわず」成对，后项是事实「びしょ濡れになっていた」：といわず → 背中といわず → びしょ濡れに → なっていた。★ 是「なっていた」。",
+      "en": "「頭といわず」 pairs with 「背中といわず」, then the fact 「びしょ濡れになっていた」: といわず → 背中といわず → びしょ濡れに → なっていた. The ★ is 「なっていた」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l78-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson78#3"
+    ],
+    "difficulty": 2,
+    "stem": "使わない本は、古本屋に売る（　）図書館に寄付するなりして、早く片付けなさい。",
+    "options": [
+      "だの",
+      "なり",
+      "たり",
+      "やら"
+    ],
+    "answer": 1,
+    "full": "使わない本は、古本屋に売るなり図書館に寄付するなりして、早く片付けなさい。",
+    "tr": {
+      "zh": "不用的书，要么卖给旧书店，要么捐给图书馆，赶紧处理掉。",
+      "en": "Sell the books you don't use to a second-hand shop or donate them to the library — just get them cleared away soon."
+    },
+    "why": {
+      "zh": "后面有「寄付するなり」成对，后项「片付けなさい」是命令，用「なり〜なり」。",
+      "en": "「寄付するなり」 completes the pair and the sentence ends in an order (「片付けなさい」): 「なり〜なり」."
+    },
+    "wrong": [
+      {
+        "zh": "「だの」是带不满的列举，不和「なり」成对，也不用于命令。",
+        "en": "「だの」 lists complaints, doesn't pair with 「なり」 and isn't used for orders."
+      },
+      null,
+      {
+        "zh": "「たり」要接た形（売ったり），而且要和「たり」成对。",
+        "en": "「たり」 needs the ta-form (売ったり) and pairs with another 「たり」."
+      },
+      {
+        "zh": "「やら〜やら」表示杂乱，不和「なり」成对，也不用于命令。",
+        "en": "「やら〜やら」 suggests a jumble, doesn't pair with 「なり」 and isn't for orders."
+      }
+    ]
+  },
+  {
+    "id": "n1-l78-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson78#3"
+    ],
+    "difficulty": 2,
+    "stem": "分からない言葉があったら、（　）して、自分で意味を確かめなさい。",
+    "options": [
+      "辞書を引くだのネットで調べるだの",
+      "辞書を引くなりネットで調べるなり",
+      "辞書を引こうがネットで調べまいが",
+      "辞書を引くやらネットで調べるやら"
+    ],
+    "answer": 1,
+    "full": "分からない言葉があったら、辞書を引くなりネットで調べるなりして、自分で意味を確かめなさい。",
+    "tr": {
+      "zh": "有不懂的词，查词典也好上网查也好，要自己弄清楚意思。",
+      "en": "If there's a word you don't know, look it up in a dictionary or online — check the meaning yourself."
+    },
+    "why": {
+      "zh": "举出两种可行的办法，后项是命令「確かめなさい」，用「なり〜なり（する）」。",
+      "en": "Two possible ways are offered and the sentence ends in an order (「確かめなさい」): 「なり〜なり（する）」."
+    },
+    "wrong": [
+      {
+        "zh": "「だの〜だの」带不满、多用于转述牢骚，不用于提建议、下命令。",
+        "en": "「だの〜だの」 reports complaints; it isn't used to give advice or orders."
+      },
+      null,
+      {
+        "zh": "「（よ）うが〜まいが」必须是同一个动词的肯定和否定，表示“不管做不做”，和命令不符。",
+        "en": "「（よ）うが〜まいが」 needs one verb in positive and negative (whether or not), which doesn't fit an order."
+      },
+      {
+        "zh": "「やら〜やら」表示事情杂乱、忙乱，不用于命令。",
+        "en": "「やら〜やら」 describes a jumble of things, not options in an order."
+      }
+    ]
+  },
+  {
+    "id": "n1-l78-009",
+    "type": "narabe",
+    "refs": [
+      "lesson78#3"
+    ],
+    "difficulty": 2,
+    "stem": "休みの日くらい、家でゆっくり休む [★] [_] [_] [_] いいのに。",
+    "options": [
+      "楽しむなり",
+      "なり",
+      "すれば",
+      "趣味を"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "休みの日くらい、家でゆっくり休むなり趣味を楽しむなりすればいいのに。",
+    "tr": {
+      "zh": "至少休息日，在家好好休息也好，享受一下爱好也好，多好啊。",
+      "en": "On your days off at least, you could rest at home or enjoy a hobby or something."
+    },
+    "why": {
+      "zh": "「休むなり」与「趣味を楽しむなり」成对，后接「すればいいのに」：なり → 趣味を → 楽しむなり → すれば。★ 是「なり」。",
+      "en": "「休むなり」 pairs with 「趣味を楽しむなり」, followed by 「すればいいのに」: なり → 趣味を → 楽しむなり → すれば. The ★ is 「なり」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l78-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson78#4"
+    ],
+    "difficulty": 2,
+    "stem": "国内の取引（　）海外の取引であれ、契約書の内容は必ず確認すべきだ。",
+    "options": [
+      "といい",
+      "であれ",
+      "といわず",
+      "なり"
+    ],
+    "answer": 1,
+    "full": "国内の取引であれ海外の取引であれ、契約書の内容は必ず確認すべきだ。",
+    "tr": {
+      "zh": "无论是国内交易还是海外交易，都必须确认合同的内容。",
+      "en": "Whether a deal is domestic or overseas, the contract must always be checked."
+    },
+    "why": {
+      "zh": "后面已有「であれ」成对，后项「確認すべきだ」是一般性的主张，用「AであれBであれ」。",
+      "en": "「であれ」 follows B, and the second half is a general rule (「確認すべきだ」): 「AであれBであれ」."
+    },
+    "wrong": [
+      {
+        "zh": "「といい」不和「であれ」成对，后项要是对某个对象的评价。",
+        "en": "「といい」 doesn't pair with 「であれ」 and needs an evaluation of one thing."
+      },
+      null,
+      {
+        "zh": "「といわず」不和「であれ」成对，后项是客观事实。",
+        "en": "「といわず」 doesn't pair with 「であれ」 and describes a fact."
+      },
+      {
+        "zh": "「なり」不和「であれ」成对，「なり〜なり」后项是建议、命令。",
+        "en": "「なり」 doesn't pair with 「であれ」; 「なり〜なり」 leads to advice or an order."
+      }
+    ]
+  },
+  {
+    "id": "n1-l78-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson78#4"
+    ],
+    "difficulty": 2,
+    "stem": "理由はどう（　）、約束を破ったことに変わりはない。",
+    "options": [
+      "だの",
+      "であれ",
+      "であって",
+      "といい"
+    ],
+    "answer": 1,
+    "full": "理由はどうであれ、約束を破ったことに変わりはない。",
+    "tr": {
+      "zh": "不管理由是什么，违背约定这一点都没有改变。",
+      "en": "Whatever the reason, the fact remains that you broke your promise."
+    },
+    "why": {
+      "zh": "疑问词「どう」+「であれ」= 不管怎样，后项「に変わりはない」，用「であれ」。",
+      "en": "The question word 「どう」 plus 「であれ」 means \"however it may be\", leading to 「に変わりはない」."
+    },
+    "wrong": [
+      {
+        "zh": "「だの」是带不满的列举，不能接疑问词表示“不管怎样”。",
+        "en": "「だの」 lists complaints; it can't follow a question word to mean \"whatever\"."
+      },
+      null,
+      {
+        "zh": "「であって」是“是……而……”，「どうであって」不成立。",
+        "en": "「であって」 means \"is…, and\"; 「どうであって」 isn't Japanese."
+      },
+      {
+        "zh": "「といい」要成对接名词，用于评价，不能接疑问词。",
+        "en": "「といい」 pairs two nouns for an evaluation; it can't follow a question word."
+      }
+    ]
+  },
+  {
+    "id": "n1-l78-012",
+    "type": "narabe",
+    "refs": [
+      "lesson78#4"
+    ],
+    "difficulty": 2,
+    "stem": "相手が [_] [★] [_] [_] 態度を変えるべきではない。",
+    "options": [
+      "であれ",
+      "接客の",
+      "際に",
+      "誰"
+    ],
+    "order": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "full": "相手が誰であれ接客の際に態度を変えるべきではない。",
+    "tr": {
+      "zh": "不管对方是谁，接待客人时都不应该改变态度。",
+      "en": "Whoever the customer is, you shouldn't change your attitude when serving them."
+    },
+    "why": {
+      "zh": "疑问词「誰」接「であれ」，后接「接客の際に」：誰 → であれ → 接客の → 際に。★ 是「であれ」。",
+      "en": "The question word 「誰」 takes 「であれ」, then 「接客の際に」: 誰 → であれ → 接客の → 際に. The ★ is 「であれ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l78-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson78#5"
+    ],
+    "difficulty": 2,
+    "stem": "娘は、服が地味（　）髪型が古いだのと、私の格好にいちいちケチをつける。",
+    "options": [
+      "なり",
+      "であれ",
+      "だの",
+      "といい"
+    ],
+    "answer": 2,
+    "full": "娘は、服が地味だの髪型が古いだのと、私の格好にいちいちケチをつける。",
+    "tr": {
+      "zh": "女儿又说我衣服土气，又说我发型过时，对我的打扮处处挑刺。",
+      "en": "My daughter nitpicks everything about how I look — my clothes are too plain, my hairstyle is dated…"
+    },
+    "why": {
+      "zh": "后面「髪型が古いだの」成对，「いちいちケチをつける」带不满，用「だの〜だの」。",
+      "en": "「髪型が古いだの」 completes the pair and 「いちいちケチをつける」 is a complaint: 「だの〜だの」."
+    },
+    "wrong": [
+      {
+        "zh": "「地味なり」不成立，「なり〜なり」是提建议，不表示抱怨。",
+        "en": "「地味なり」 doesn't work here, and 「なり〜なり」 gives advice, not complaints."
+      },
+      {
+        "zh": "「であれ」是“无论是……”，后项是一般性判断，不和「だの」成对。",
+        "en": "「であれ」 (whether it be) leads to a general judgment and doesn't pair with 「だの」."
+      },
+      null,
+      {
+        "zh": "「といい」只接名词、用于评价，不和「だの」成对。",
+        "en": "「といい」 takes nouns for an evaluation and doesn't pair with 「だの」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l78-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson78#5"
+    ],
+    "difficulty": 2,
+    "stem": "その客は、（　）と、さんざん文句を言って帰っていった。",
+    "options": [
+      "料理が冷めているなり店員の態度が悪いなり",
+      "料理が冷めているだの店員の態度が悪いだの",
+      "料理が冷めていようが店員の態度が悪かろうが",
+      "料理が冷めているといい店員の態度が悪いといい"
+    ],
+    "answer": 1,
+    "full": "その客は、料理が冷めているだの店員の態度が悪いだのと、さんざん文句を言って帰っていった。",
+    "tr": {
+      "zh": "那位客人又说菜凉了，又说店员态度差，大发了一通牢骚才走。",
+      "en": "The customer complained at length — the food was cold, the staff were rude — before leaving."
+    },
+    "why": {
+      "zh": "转述客人的牢骚，后面是「と文句を言って」，用带不满的「だの〜だの」。",
+      "en": "This reports the customer's grumbling, followed by 「と文句を言って」: the complaining 「だの〜だの」."
+    },
+    "wrong": [
+      {
+        "zh": "「なり〜なり」是提出可选的做法，不用来转述抱怨。",
+        "en": "「なり〜なり」 offers options to act on; it doesn't report complaints."
+      },
+      null,
+      {
+        "zh": "「（よ）うが〜うが」是“不管……”，不能作「文句を言う」的内容。",
+        "en": "「（よ）うが〜うが」 means \"no matter whether\"; it can't be the content of a complaint."
+      },
+      {
+        "zh": "「といい」只接名词，用于评价，不能接动词句。",
+        "en": "「といい」 takes nouns for an evaluation, not whole clauses."
+      }
+    ]
+  },
+  {
+    "id": "n1-l78-015",
+    "type": "narabe",
+    "refs": [
+      "lesson78#5"
+    ],
+    "difficulty": 2,
+    "stem": "祖母は、寒い [_] [_] [★] [_]、なかなか散歩に出かけようとしない。",
+    "options": [
+      "言って",
+      "と",
+      "だの",
+      "膝が痛いだの"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "祖母は、寒いだの膝が痛いだのと言って、なかなか散歩に出かけようとしない。",
+    "tr": {
+      "zh": "祖母一会儿说冷，一会儿说膝盖疼，总是不肯出去散步。",
+      "en": "Grandma keeps saying it's too cold or her knees hurt, and just won't go out for a walk."
+    },
+    "why": {
+      "zh": "「寒いだの」与「膝が痛いだの」成对，后接引用的「と言って」：だの → 膝が痛いだの → と → 言って。★ 是「と」。",
+      "en": "「寒いだの」 pairs with 「膝が痛いだの」, then the quotation 「と言って」: だの → 膝が痛いだの → と → 言って. The ★ is 「と」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l78-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson78#6"
+    ],
+    "difficulty": 1,
+    "stem": "客が来ようが（　）、店は毎日決まった時間に開けることにしている。",
+    "options": [
+      "来るまいが",
+      "来ないまいが",
+      "来たまいが",
+      "来てまいが"
+    ],
+    "answer": 0,
+    "full": "客が来ようが来るまいが、店は毎日決まった時間に開けることにしている。",
+    "tr": {
+      "zh": "不管有没有客人来，我都坚持每天在固定的时间开店。",
+      "en": "Whether customers come or not, I make a point of opening the shop at the same time every day."
+    },
+    "why": {
+      "zh": "同一动词的意向形「来よう」和否定的まい形：来る → 来るまい，「来ようが来るまいが」= 不管来不来。",
+      "en": "The same verb in its volitional form (「来よう」) and its まい form: 来る → 来るまい; 「来ようが来るまいが」 = whether they come or not."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「まい」本身就是否定，前面不能再接「ない」。",
+        "en": "「まい」 is already negative; it can't follow 「ない」."
+      },
+      {
+        "zh": "「まい」接辞書形（来る／来），不接た形。",
+        "en": "「まい」 follows the dictionary form (来る／来), not the ta-form."
+      },
+      {
+        "zh": "「まい」不接て形。",
+        "en": "「まい」 doesn't follow the te-form."
+      }
+    ]
+  },
+  {
+    "id": "n1-l78-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson78#6"
+    ],
+    "difficulty": 2,
+    "stem": "彼が会議に出席し（　）、決定はもう変わらない。",
+    "options": [
+      "ようものなら",
+      "たりしなかったり",
+      "ようがするまいが",
+      "ないまでも"
+    ],
+    "answer": 2,
+    "full": "彼が会議に出席しようがするまいが、決定はもう変わらない。",
+    "tr": {
+      "zh": "不管他出不出席会议，决定都已经不会改变了。",
+      "en": "Whether he attends the meeting or not, the decision won't change now."
+    },
+    "why": {
+      "zh": "后项「もう変わらない」不受影响，用同一动词的肯定和否定「（出席）しようがするまいが」。",
+      "en": "The decision is unaffected (「もう変わらない」), so use the verb in positive and negative: 「（出席）しようがするまいが」."
+    },
+    "wrong": [
+      {
+        "zh": "「ようものなら」是“万一……就（会很糟）”，后项是坏结果，和“决定不变”不符。",
+        "en": "「ようものなら」 means \"if… were to happen, trouble would follow\"; \"the decision won't change\" isn't that."
+      },
+      {
+        "zh": "「たりしなかったり」表示“时而出席时而不出席”的反复，不表示“不管……都”。",
+        "en": "「たりしなかったり」 means \"sometimes yes, sometimes no\", not \"whether or not\"."
+      },
+      null,
+      {
+        "zh": "「ないまでも」是“即使不……至少也……”，后项要是最低限度的要求，不符合句意。",
+        "en": "「ないまでも」 (even if not…, at least) needs a minimum demand after it."
+      }
+    ]
+  },
+  {
+    "id": "n1-l78-018",
+    "type": "narabe",
+    "refs": [
+      "lesson78#6"
+    ],
+    "difficulty": 2,
+    "stem": "部長が [_] [_] [_] [★] 予定どおり始めます。",
+    "options": [
+      "会議は",
+      "まいと",
+      "来ようと",
+      "来る"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "部長が来ようと来るまいと会議は予定どおり始めます。",
+    "tr": {
+      "zh": "不管部长来不来，会议都按计划开始。",
+      "en": "Whether the department head comes or not, the meeting will start as planned."
+    },
+    "why": {
+      "zh": "意向形「来ようと」在前，同一动词的否定「来るまいと」在后，再接主题「会議は」：来ようと → 来る → まいと → 会議は。★ 是「会議は」。",
+      "en": "The volitional 「来ようと」 comes first, then the same verb's negative 「来るまいと」, then the topic 「会議は」: 来ようと → 来る → まいと → 会議は. The ★ is 「会議は」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

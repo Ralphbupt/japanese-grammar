@@ -1,0 +1,938 @@
+[
+  {
+    "id": "n1-mg-501",
+    "type": "youhou",
+    "refs": [
+      "lesson87#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<赴任>>",
+    "options": [
+      "来月から、大阪支社に赴任することになった。",
+      "日曜日に、友達の家に赴任して一緒に映画を見た。",
+      "毎朝八時に会社に赴任して、メールを確認する。",
+      "新しいパソコンに赴任するのに一日かかった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "赴任：为就任新职而前往任职地。正确句：从下个月起，我要去大阪分公司赴任。",
+      "en": "赴任: going to take up a post somewhere. Correct: From next month I'm being posted to the Osaka branch."
+    },
+    "why": {
+      "zh": "「赴任」用于调动工作、前往新的任职地，「〜に赴任する」。",
+      "en": "「赴任」 is moving to a new post: 「〜に赴任する」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "去朋友家玩是「遊びに行って」。",
+        "en": "Visiting a friend is 「遊びに行って」."
+      },
+      {
+        "zh": "每天上班是「出勤して」。",
+        "en": "Arriving at work every day is 「出勤して」."
+      },
+      {
+        "zh": "换用新电脑是「慣れる」「移行する」。",
+        "en": "Getting used to a new computer is 「慣れる」 or 「移行する」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-502",
+    "type": "youhou",
+    "refs": [
+      "lesson88#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<発覚>>",
+    "options": [
+      "内部調査によって、帳簿の改ざんが発覚した。",
+      "天文学者が、新しい星を発覚した。",
+      "目覚まし時計が鳴る前に、自然に発覚した。",
+      "大学に入ってから、彼女の音楽の才能が発覚した。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "発覚：（隐瞒的坏事、阴谋）败露。正确句：通过内部调查，账簿篡改的事败露了。",
+      "en": "発覚: (a hidden wrongdoing) coming to light. Correct: An internal investigation brought the doctored accounts to light."
+    },
+    "why": {
+      "zh": "「発覚」只用于隐瞒的坏事被发现，而且是自动词「〜が発覚する」。",
+      "en": "「発覚」 is only for concealed wrongdoing being exposed, and it's intransitive: 「〜が発覚する」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "发现新星是「発見した」，「発覚」也不能带宾语。",
+        "en": "Discovering a star is 「発見した」; 「発覚」 can't take an object either."
+      },
+      {
+        "zh": "醒来是「目が覚めた」。",
+        "en": "Waking up is 「目が覚めた」."
+      },
+      {
+        "zh": "才能显露是「開花した」「見いだされた」，才能不是坏事。",
+        "en": "Talent emerging is 「開花した」 or 「見いだされた」; talent isn't a wrongdoing."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-503",
+    "type": "youhou",
+    "refs": [
+      "lesson88#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<漂う>>",
+    "options": [
+      "会議室には、重苦しい雰囲気が漂っていた。",
+      "毎朝、自転車で駅まで漂って通っている。",
+      "節約したおかげで、貯金が少しずつ漂ってきた。",
+      "久しぶりに友達と電話で漂って、楽しかった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "漂う：漂浮；（气氛、气味）弥漫。正确句：会议室里弥漫着沉重的气氛。",
+      "en": "漂う: to drift; (an atmosphere, a smell) to hang in the air. Correct: A heavy atmosphere hung over the meeting room."
+    },
+    "why": {
+      "zh": "「漂う」用于漂浮在水面、空中，或气氛、香味弥漫。",
+      "en": "「漂う」 is for drifting on water or air, or an atmosphere or scent hanging there."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "骑车去车站是「走って」「通って」，「漂う」没有目的地。",
+        "en": "Cycling to the station is just 「通っている」; drifting has no destination."
+      },
+      {
+        "zh": "存款增加是「たまってきた」「増えてきた」。",
+        "en": "Savings building up is 「たまってきた」 or 「増えてきた」."
+      },
+      {
+        "zh": "和朋友聊天是「話して」「しゃべって」。",
+        "en": "Chatting on the phone is 「話して」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-504",
+    "type": "youhou",
+    "refs": [
+      "lesson91#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<怠る>>",
+    "options": [
+      "安全確認を怠ったことが、事故の原因だった。",
+      "雨が強くなったので、試合が怠った。",
+      "疲れていたので、今日は会社を怠って家で寝ていた。",
+      "この映画は話が単調で、見ていて怠ってしまった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "怠る：懈怠、疏忽（应做的事）。正确句：疏忽安全确认是事故的原因。",
+      "en": "怠る: to neglect (something you should do). Correct: Neglecting the safety checks caused the accident."
+    },
+    "why": {
+      "zh": "「怠る」的宾语是应尽的义务，「確認・注意・努力を怠る」。",
+      "en": "「怠る」 takes a duty as its object: 「確認・注意・努力を怠る」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "比赛停止是「中止になった」「中断された」。",
+        "en": "A match being called off is 「中止になった」 or 「中断された」."
+      },
+      {
+        "zh": "请假不去上班是「休んで」；不能说「会社を怠る」。",
+        "en": "Taking a day off is 「休んで」; 「会社を怠る」 isn't said."
+      },
+      {
+        "zh": "看电影觉得无聊是「退屈して」「飽きて」。",
+        "en": "Getting bored by a film is 「退屈して」 or 「飽きて」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-505",
+    "type": "youhou",
+    "refs": [
+      "lesson84#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<及ぼす>>",
+    "options": [
+      "喫煙は、本人だけでなく周囲の人の健康にも悪影響を及ぼす。",
+      "誕生日に、友人に花束を及ぼした。",
+      "努力の結果、彼の成績はついに学年一位に及ぼした。",
+      "道に迷っている人に、駅までの道を及ぼしてあげた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "及ぼす：使（影响、损害）波及到……。正确句：吸烟不仅影响本人，也会给周围人的健康带来坏影响。",
+      "en": "及ぼす: to bring (an influence, harm) to bear on. Correct: Smoking harms not only the smoker but the health of those around them."
+    },
+    "why": {
+      "zh": "「及ぼす」常说「影響・被害・損害を及ぼす」。",
+      "en": "「及ぼす」 is used as 「影響・被害・損害を及ぼす」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "送花是「贈った」「渡した」。",
+        "en": "Giving flowers is 「贈った」 or 「渡した」."
+      },
+      {
+        "zh": "成绩达到第一是「達した」「及んだ」（自动词）。",
+        "en": "Reaching first place is 「達した」 (or intransitive 「及んだ」)."
+      },
+      {
+        "zh": "指路是「教えて」。",
+        "en": "Showing someone the way is 「教えて」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-506",
+    "type": "youhou",
+    "refs": [
+      "lesson83#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<打ち切る>>",
+    "options": [
+      "視聴率が低迷し、その番組はわずか半年で打ち切られた。",
+      "包丁で、にんじんを細かく打ち切った。",
+      "夕方になって、降り続いていた雨がようやく打ち切った。",
+      "美容院で、長かった髪を短く打ち切ってもらった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "打ち切る：（中途）停止、终止（谈判、连载、节目等）。正确句：收视率低迷，那个节目仅半年就被停播了。",
+      "en": "打ち切る: to cut short, discontinue (talks, a series, a programme). Correct: Ratings were poor, and the show was cancelled after just six months."
+    },
+    "why": {
+      "zh": "「打ち切る」用于中途终止持续的事情，如「交渉・連載・番組を打ち切る」。",
+      "en": "「打ち切る」 is ending something ongoing before its time: 「交渉・連載・番組を打ち切る」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "切菜是「切った」「刻んだ」。",
+        "en": "Chopping vegetables is 「切った」 or 「刻んだ」."
+      },
+      {
+        "zh": "雨停是「やんだ」，「打ち切る」是他动词，主语是人。",
+        "en": "Rain stopping is 「やんだ」; 「打ち切る」 is something people do."
+      },
+      {
+        "zh": "剪头发是「切って」。",
+        "en": "Cutting hair is 「切って」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-507",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<携わる>>",
+    "options": [
+      "父は四十年間、橋の設計に携わってきた。",
+      "駅のホームで、偶然昔の同級生に携わった。",
+      "大きな荷物を携わって、山道を登った。",
+      "この薬は、風邪のひき始めによく携わる。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "携わる：从事、参与（某项工作）。正确句：父亲四十年来一直从事桥梁设计。",
+      "en": "携わる: to be engaged in, involved in (a line of work). Correct: My father has worked in bridge design for forty years."
+    },
+    "why": {
+      "zh": "「携わる」用于长期从事某种工作，「〜に携わる」。",
+      "en": "「携わる」 is to be engaged in work: 「〜に携わる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "偶遇是「出会った」「会った」。",
+        "en": "Bumping into someone is 「出会った」."
+      },
+      {
+        "zh": "带着行李是「携えて」「持って」，「携わる」不能带宾语。",
+        "en": "Carrying luggage is 「携えて」 or 「持って」; 「携わる」 takes no object."
+      },
+      {
+        "zh": "药有效是「効く」。",
+        "en": "A medicine working is 「効く」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-508",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<発足>>",
+    "options": [
+      "来月、環境問題を検討する新しい委員会が発足する。",
+      "最終の電車が、ちょうど駅を発足したところだった。",
+      "旅行の日は、朝五時に家を発足する予定だ。",
+      "彼の発足はいつもユニークで、会議が盛り上がる。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "発足：（组织、机构、制度）成立、开始运作。正确句：下个月，讨论环境问题的新委员会将成立。",
+      "en": "発足: (an organization, a system) being launched. Correct: Next month a new committee on environmental issues will be launched."
+    },
+    "why": {
+      "zh": "「発足」用于团体、组织、制度新成立。",
+      "en": "「発足」 is for a body or system being set up."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "电车开出是「発車した」。",
+        "en": "A train leaving is 「発車した」."
+      },
+      {
+        "zh": "从家出发是「出発する」。",
+        "en": "Setting off from home is 「出発する」."
+      },
+      {
+        "zh": "独特的点子是「発想」。",
+        "en": "A unique idea is 「発想」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-509",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<拍車>>",
+    "options": [
+      "円安が、物価の上昇にさらに拍車をかけた。",
+      "優勝した選手に、観客は大きな拍車を送った。",
+      "自転車の拍車が壊れて、うまく止まれなくなった。",
+      "司会者の上手な拍車で、会議は予定どおりに終わった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "拍車：马刺；「拍車をかける」＝加速、促进（事态发展）。正确句：日元贬值进一步加剧了物价上涨。",
+      "en": "拍車: a spur; 「拍車をかける」 is to spur on, accelerate (a trend). Correct: The weak yen spurred prices even higher."
+    },
+    "why": {
+      "zh": "「拍車」几乎只用于「〜に拍車をかける・がかかる」（加速某种趋势）。",
+      "en": "「拍車」 is almost always 「〜に拍車をかける・がかかる」 (to accelerate a trend)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "鼓掌是「拍手」。",
+        "en": "Applause is 「拍手」."
+      },
+      {
+        "zh": "自行车的刹车是「ブレーキ」。",
+        "en": "A bicycle's brakes are 「ブレーキ」."
+      },
+      {
+        "zh": "主持会议是「進行」「司会」。",
+        "en": "Running a meeting is 「進行」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-510",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<頑な>>",
+    "options": [
+      "彼は周りの忠告に耳を貸さず、頑なに自分のやり方を変えなかった。",
+      "このパンは焼いてから時間がたったので、頑なになってしまった。",
+      "この橋は頑なな作りなので、大きな地震にも耐えられる。",
+      "毎日運動して、頑なな体を作りたい。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "頑な：固执、顽固（态度）。正确句：他不听周围人的劝告，固执地不改变自己的做法。",
+      "en": "頑な: stubborn, obstinate (in attitude). Correct: He ignored everyone's advice and stubbornly refused to change his ways."
+    },
+    "why": {
+      "zh": "「頑な」形容人的态度固执、不肯改变。",
+      "en": "「頑な」 describes a person's obstinate attitude."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "面包变硬是「硬くなって」。",
+        "en": "Bread going stale and hard is 「硬くなって」."
+      },
+      {
+        "zh": "桥梁结实是「頑丈な」。",
+        "en": "A sturdy bridge is 「頑丈な」."
+      },
+      {
+        "zh": "强壮的身体是「丈夫な」「たくましい」。",
+        "en": "A strong body is 「丈夫な」 or 「たくましい」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-511",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<和やか>>",
+    "options": [
+      "パーティーは、終始和やかな雰囲気で進んだ。",
+      "このスープは、牛乳を加えると和やかな味になる。",
+      "この坂は和やかなので、お年寄りでも楽に上れる。",
+      "この薬は効き目が和やかなので、子どもにも使える。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "和やか：（气氛、交谈）和睦、融洽。正确句：派对自始至终在融洽的气氛中进行。",
+      "en": "和やか: (an atmosphere, a conversation) friendly, harmonious. Correct: The party went on in a warm, friendly atmosphere throughout."
+    },
+    "why": {
+      "zh": "「和やか」用于人与人之间的气氛、交谈融洽。",
+      "en": "「和やか」 is for a friendly mood between people."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "味道柔和是「まろやかな」。",
+        "en": "A mellow taste is 「まろやかな」."
+      },
+      {
+        "zh": "坡度平缓是「緩やかな」「なだらかな」。",
+        "en": "A gentle slope is 「緩やかな」 or 「なだらかな」."
+      },
+      {
+        "zh": "药效温和是「穏やか」「緩やか」。",
+        "en": "A mild medicine is 「穏やか」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-512",
+    "type": "youhou",
+    "refs": [
+      "lesson79#vocab"
+    ],
+    "difficulty": 3,
+    "stem": "<<目先>>",
+    "options": [
+      "目先の利益にとらわれず、長い目で物事を考えるべきだ。",
+      "目にゴミが入ったようで、目先が痛くて開けられない。",
+      "祖父は目先がいいので、遠くの看板の字まで読める。",
+      "彼は骨董品の目先が確かで、偽物をすぐに見抜く。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "目先：眼前；「目先の〜」＝眼前的、短期的。正确句：不应拘泥于眼前的利益，而应从长远考虑事情。",
+      "en": "目先: what's right in front of you; 「目先の〜」 is short-term. Correct: Don't be blinkered by short-term gains; think about things in the long run."
+    },
+    "why": {
+      "zh": "「目先の利益・こと」＝只看眼前，与「長い目」相对。",
+      "en": "「目先の利益」 is short-sighted gain, the opposite of 「長い目」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "眼睛疼是「目が痛くて」。",
+        "en": "Sore eyes is 「目が痛くて」."
+      },
+      {
+        "zh": "视力好是「目がいい」。",
+        "en": "Good eyesight is 「目がいい」."
+      },
+      {
+        "zh": "鉴别力强是「目利き」「鑑識眼」。",
+        "en": "A good eye for antiques is 「目利き」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-513",
+    "type": "youhou",
+    "refs": [
+      "lesson92#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<見極める>>",
+    "options": [
+      "情報が本当に正しいかどうか、しっかり見極める必要がある。",
+      "山の頂上から、ふもとの町を見極めた。",
+      "帰国する友人を、空港まで見極めに行った。",
+      "子どもたちが遊ぶ様子を、母親たちがそばで見極めていた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "見極める：看清、辨明（真伪、本质）。正确句：需要好好辨明信息是否真的正确。",
+      "en": "見極める: to see clearly, ascertain (truth, real nature). Correct: You need to judge carefully whether the information is really true."
+    },
+    "why": {
+      "zh": "「見極める」用于看清真伪、本质、时机。",
+      "en": "「見極める」 is to ascertain the truth or real nature of something."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "从山顶眺望是「見渡した」。",
+        "en": "Looking out over a town is 「見渡した」."
+      },
+      {
+        "zh": "送行是「見送りに」。",
+        "en": "Seeing someone off is 「見送りに」."
+      },
+      {
+        "zh": "在旁边看护是「見守っていた」。",
+        "en": "Watching over children is 「見守っていた」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-514",
+    "type": "youhou",
+    "refs": [
+      "lesson87#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<心細い>>",
+    "options": [
+      "初めての一人暮らしで、夜になるといつも心細かった。",
+      "この道は心細くて、車がすれ違えない。",
+      "彼は心細い性格で、ちょっとしたことですぐ怒る。",
+      "彼女は心細い字で、小さな手紙を書いた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "心細い：（没有依靠而）不安、心里没底。正确句：第一次一个人生活，一到晚上总是很不安。",
+      "en": "心細い: feeling helpless, uneasy (with no one to rely on). Correct: Living alone for the first time, I always felt lonely and uneasy at night."
+    },
+    "why": {
+      "zh": "「心細い」是缺乏依靠、感到不安的心情。",
+      "en": "「心細い」 is the uneasy feeling of having no one to rely on."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "路窄是「細くて」「狭くて」。",
+        "en": "A narrow road is 「細くて」 or 「狭くて」."
+      },
+      {
+        "zh": "容易生气是「心が狭い」「短気な」。",
+        "en": "Quick-tempered is 「短気な」."
+      },
+      {
+        "zh": "字迹纤细是「細い字」。",
+        "en": "Thin handwriting is 「細い字」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-515",
+    "type": "youhou",
+    "refs": [
+      "lesson90#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<痛手>>",
+    "options": [
+      "主力選手のけがによる離脱は、チームにとって大きな痛手だ。",
+      "歯の痛手がひどくて、昨夜は眠れなかった。",
+      "数学は子どものころから痛手で、今でも計算が苦手だ。",
+      "駅で手を振る家族に、窓から痛手を振り返した。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "痛手：（精神、经济上的）沉重打击、重创。正确句：主力选手因伤离队，对球队来说是沉重打击。",
+      "en": "痛手: a heavy blow (to a team, finances, morale). Correct: Losing the key player to injury is a heavy blow for the team."
+    },
+    "why": {
+      "zh": "「痛手」用于遭受的重大损失、打击，「〜にとって痛手だ」「痛手を受ける」。",
+      "en": "「痛手」 is a serious blow or loss: 「〜にとって痛手だ」, 「痛手を受ける」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "牙疼是「痛み」。",
+        "en": "Toothache is 「痛み」."
+      },
+      {
+        "zh": "不擅长是「苦手」。",
+        "en": "Being bad at something is 「苦手」."
+      },
+      {
+        "zh": "挥手是「手を振る」。",
+        "en": "Waving is 「手を振る」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-516",
+    "type": "youhou",
+    "refs": [
+      "lesson82#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<打ち出す>>",
+    "options": [
+      "政府は、少子化対策として新たな方針を打ち出した。",
+      "長年の悩みを、思い切って親友に打ち出した。",
+      "雨が強くなったので、試合を途中で打ち出した。",
+      "彼は寝る間も惜しんで研究に打ち出している。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "打ち出す：（明确地）提出、推出（方针、政策）。正确句：政府推出了新的方针作为应对少子化的对策。",
+      "en": "打ち出す: to set out, put forward (a policy, a direction). Correct: The government set out a new policy to tackle the falling birth rate."
+    },
+    "why": {
+      "zh": "「打ち出す」常说「方針・政策・方向性を打ち出す」。",
+      "en": "「打ち出す」 is used as 「方針・政策・方向性を打ち出す」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "倾诉烦恼是「打ち明けた」。",
+        "en": "Confiding a worry is 「打ち明けた」."
+      },
+      {
+        "zh": "中途停止比赛是「打ち切った」。",
+        "en": "Calling a match off midway is 「打ち切った」."
+      },
+      {
+        "zh": "埋头研究是「打ち込んでいる」。",
+        "en": "Throwing yourself into research is 「打ち込んでいる」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-517",
+    "type": "youhou",
+    "refs": [
+      "lesson91#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "<<振る舞い>>",
+    "options": [
+      "酒の席での彼の失礼な振る舞いに、皆があきれた。",
+      "今日の振る舞いは晴れのち雨で、夜には風も強くなるそうだ。",
+      "車は振る舞いを上げて、高速道路を走っていった。",
+      "彼のバットの振る舞いは鋭く、打球も速い。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "振る舞い：举止、行为。正确句：大家对他在酒席上的失礼举止感到无语。",
+      "en": "振る舞い: behaviour, conduct. Correct: Everyone was appalled at how rudely he behaved at the drinking party."
+    },
+    "why": {
+      "zh": "「振る舞い」是人的举止、行为，常与「失礼な・立派な」等连用。",
+      "en": "「振る舞い」 is how a person behaves: 「失礼な振る舞い」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "天气是「天気」「空模様」。",
+        "en": "The weather is 「天気」."
+      },
+      {
+        "zh": "提速是「スピードを上げて」。",
+        "en": "Speeding up is 「スピードを上げて」."
+      },
+      {
+        "zh": "挥棒是「振り」（バットの振り）。",
+        "en": "A batting swing is 「振り」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-518",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<余波>>",
+    "options": [
+      "台風の余波で、今日も交通機関に乱れが出ている。",
+      "時間に余波を持って、早めに家を出た。",
+      "コンサートが終わっても、しばらく感動の余波に浸っていた。",
+      "このノートは余波が広いので、メモを書き込みやすい。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "余波：余波；（事件、灾害）留下的影响。正确句：受台风余波影响，今天交通依然混乱。",
+      "en": "余波: aftermath; the after-effects of an event or disaster. Correct: In the aftermath of the typhoon, transport is still disrupted today."
+    },
+    "why": {
+      "zh": "「余波」是事件、灾害过后仍残留的影响，「〜の余波で」。",
+      "en": "「余波」 is the lingering effect of an event: 「〜の余波で」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "时间宽裕是「余裕」。",
+        "en": "Leaving time to spare is 「余裕」."
+      },
+      {
+        "zh": "沉浸在感动中是「余韻」。",
+        "en": "Basking in emotion afterwards is 「余韻」."
+      },
+      {
+        "zh": "纸张的空白是「余白」。",
+        "en": "Margins on a page are 「余白」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-519",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<手際>>",
+    "options": [
+      "彼女は手際よく、あっという間に十人分の料理を作った。",
+      "天気の手際が悪いので、旅行は延期することにした。",
+      "食事の前には、石けんで手際をよく洗いましょう。",
+      "このかばんは手際な値段で、学生にも人気がある。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "手際：（处理事情的）手法、本领。正确句：她干净利落，转眼间就做好了十个人的饭菜。",
+      "en": "手際: skill, efficiency in handling things. Correct: She deftly made a meal for ten in no time."
+    },
+    "why": {
+      "zh": "「手際」是做事的熟练程度，「手際がいい・悪い」「手際よく」。",
+      "en": "「手際」 is deftness in doing a task: 「手際がいい」, 「手際よく」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "天气情况是「天気の具合」「空模様」。",
+        "en": "The state of the weather is 「天気の具合」."
+      },
+      {
+        "zh": "洗手是「手」。",
+        "en": "Washing your hands is just 「手」."
+      },
+      {
+        "zh": "价格适中是「手頃な」。",
+        "en": "A reasonable price is 「手頃な」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-520",
+    "type": "youhou",
+    "difficulty": 3,
+    "stem": "<<さぞ>>",
+    "options": [
+      "一人で三人の子どもを育てるのは、さぞ大変だったでしょう。",
+      "明日はさぞ雨が降るので、傘を持っていこう。",
+      "締め切りが近いので、さぞ早く提出してください。",
+      "昨日は一日中歩いたので、私はさぞ疲れた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "さぞ：想必、一定（推测他人的心情、处境，多与「でしょう」呼应）。正确句：一个人抚养三个孩子，想必很辛苦吧。",
+      "en": "さぞ: surely, must have been (imagining someone else's feelings; usually with 「でしょう」). Correct: Raising three children on your own must have been really hard."
+    },
+    "why": {
+      "zh": "「さぞ〜でしょう・だろう」用于推测对方的感受或处境。",
+      "en": "「さぞ〜でしょう」 imagines what someone else felt or went through."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "预测天气用「きっと」，而且「さぞ」后要接推量形。",
+        "en": "Predicting weather is 「きっと」; 「さぞ」 also needs でしょう after it."
+      },
+      {
+        "zh": "请求尽快用「なるべく」「できるだけ」。",
+        "en": "\"As soon as possible\" is 「なるべく」 or 「できるだけ」."
+      },
+      {
+        "zh": "说自己的感受用「とても」「ひどく」，「さぞ」是推测别人。",
+        "en": "For your own feelings use 「とても」; 「さぞ」 is for guessing at others'."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-521",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<ひたむき>>",
+    "options": [
+      "彼女のひたむきな努力が、ついに実を結んだ。",
+      "この先はひたむきな道が、何キロもまっすぐ続いている。",
+      "朝から、ひたむきな雨が一日中降り続いた。",
+      "この部屋は南向きで、ひたむきに日が当たる。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "ひたむき：一心一意、专心致志。正确句：她一心一意的努力终于有了结果。",
+      "en": "ひたむき: single-minded, wholehearted. Correct: Her single-minded efforts finally paid off."
+    },
+    "why": {
+      "zh": "「ひたむき」形容人专心投入的态度，「ひたむきな努力・姿勢」。",
+      "en": "「ひたむき」 describes a person's devoted effort: 「ひたむきな努力」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "笔直的路是「まっすぐな」。",
+        "en": "A straight road is 「まっすぐな」."
+      },
+      {
+        "zh": "连续的雨是「激しい雨」「降りしきる雨」。",
+        "en": "Heavy rain is 「激しい雨」."
+      },
+      {
+        "zh": "阳光充足是「よく日が当たる」。",
+        "en": "A sunny room is 「よく日が当たる」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-522",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<手分け>>",
+    "options": [
+      "迷子になった子どもを、近所の人たちと手分けして探した。",
+      "大皿の料理を、それぞれの小皿に手分けした。",
+      "初めて会った人と、笑顔で手分けをした。",
+      "髪が長くなったので、真ん中で手分けしている。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "手分け：分头（做）、分工。正确句：和邻居们分头寻找走失的孩子。",
+      "en": "手分け: splitting a task among people. Correct: We split up with the neighbours to look for the lost child."
+    },
+    "why": {
+      "zh": "「手分けする」是几个人分担同一件事，「手分けして〜する」。",
+      "en": "「手分けする」 is several people dividing one job: 「手分けして探す」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "把菜分到小碟是「取り分けた」。",
+        "en": "Serving food onto small plates is 「取り分けた」."
+      },
+      {
+        "zh": "握手是「握手」。",
+        "en": "Shaking hands is 「握手」."
+      },
+      {
+        "zh": "分头发是「分けている」。",
+        "en": "Parting your hair is 「分けている」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-523",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<一律>>",
+    "options": [
+      "来年度から、全社員の給与が一律に三パーセント引き上げられる。",
+      "子どもたちは、先生の前に一律に並んで座った。",
+      "寝坊して、いつも乗る電車の一律後の電車に乗った。",
+      "今度の大会では、チーム全員が一律して優勝を目指す。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "一律：一律、一样（不加区别地对待所有对象）。正确句：从下一年度起，全体员工的工资将统一上调百分之三。",
+      "en": "一律: uniformly, across the board. Correct: From next year, all employees' pay will rise by a flat three percent."
+    },
+    "why": {
+      "zh": "「一律」是对所有对象同样处理，「一律に〜」「一律〇円」。",
+      "en": "「一律」 is treating everything the same: 「一律に〜」, 「一律千円」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "排成一行是「一列に」。",
+        "en": "Sitting in a line is 「一列に」."
+      },
+      {
+        "zh": "下一班车是「一本」（一本後の電車）。",
+        "en": "The next train is 「一本後」."
+      },
+      {
+        "zh": "团结一致是「一丸となって」「団結して」。",
+        "en": "Uniting as a team is 「一丸となって」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-524",
+    "type": "youhou",
+    "difficulty": 3,
+    "stem": "<<是正>>",
+    "options": [
+      "政府は、地域間の医療格差を是正するための政策を打ち出した。",
+      "作文を書き終えたら、漢字の書き間違いを是正しなさい。",
+      "時計が五分遅れていたので、時刻を是正した。",
+      "薬を飲んで、ひどい風邪を是正した。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "是正：纠正（不合理的状况、制度）。正确句：政府推出了纠正地区间医疗差距的政策。",
+      "en": "是正: correcting (an unfair situation or system). Correct: The government announced a policy to correct regional gaps in healthcare."
+    },
+    "why": {
+      "zh": "「是正」用于纠正社会上的不平等、不当状态，「格差・不均衡を是正する」。",
+      "en": "「是正」 is correcting an unfair state of affairs: 「格差・不均衡を是正する」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "改正错字是「直しなさい」「訂正しなさい」。",
+        "en": "Fixing miswritten kanji is 「直しなさい」 or 「訂正しなさい」."
+      },
+      {
+        "zh": "调准时间是「合わせた」「直した」。",
+        "en": "Setting a clock right is 「合わせた」."
+      },
+      {
+        "zh": "治好感冒是「治した」。",
+        "en": "Getting over a cold is 「治した」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-525",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<重宝>>",
+    "options": [
+      "この小型の電子辞書は軽くて、旅行のときに重宝している。",
+      "祖母の形見の指輪を、重宝として大切にしまってある。",
+      "引っ越しの荷物は重宝なので、二人で運んだほうがいい。",
+      "会議での彼の重宝な発言が、議論の流れを変えた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "重宝：（东西）好用、方便，经常使用。正确句：这个小型电子词典很轻，旅行时很好用。",
+      "en": "重宝: handy, useful (of a thing you use a lot). Correct: This little electronic dictionary is light, so it comes in really handy when I travel."
+    },
+    "why": {
+      "zh": "「重宝する」「重宝な」形容东西方便好用，常常用到。",
+      "en": "「重宝する」 / 「重宝な」 is for something handy that you use a lot."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "珍藏的宝物是「宝物」「大切な物」。",
+        "en": "A treasured keepsake is 「宝物」."
+      },
+      {
+        "zh": "行李很重是「重い」。",
+        "en": "Heavy luggage is 「重い」."
+      },
+      {
+        "zh": "重要的发言是「重要な」。",
+        "en": "An important remark is 「重要な」."
+      }
+    ]
+  }
+]

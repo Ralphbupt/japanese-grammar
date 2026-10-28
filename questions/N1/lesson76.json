@@ -1,0 +1,854 @@
+[
+  {
+    "id": "n1-l76-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson76#1"
+    ],
+    "difficulty": 2,
+    "stem": "試験終了のベルが鳴る（　）、受験生たちは一斉にペンを置いた。",
+    "options": [
+      "なり",
+      "そばから",
+      "が早いか",
+      "に至って"
+    ],
+    "answer": 2,
+    "full": "試験終了のベルが鳴るが早いか、受験生たちは一斉にペンを置いた。",
+    "tr": {
+      "zh": "考试结束的铃声刚一响，考生们就一齐放下了笔。",
+      "en": "The moment the bell rang to end the exam, the candidates all put down their pens."
+    },
+    "why": {
+      "zh": "铃一响考生们立刻放笔，是过去的一次性事实，前后主语不同，用「が早いか」（刚一……就……）。",
+      "en": "The bell rings and the candidates instantly put down their pens — a one-off past fact with two different subjects: 「が早いか」."
+    },
+    "wrong": [
+      {
+        "zh": "「なり」要求前后同一主语，这里是「ベル」和「受験生たち」两个主语。",
+        "en": "「なり」 needs the same subject in both clauses; here it's the bell, then the candidates."
+      },
+      {
+        "zh": "「そばから」表示刚做完就被抵消、反复发生，这里是只发生一次的事。",
+        "en": "「そばから」 is for something undone again and again; this happened once."
+      },
+      null,
+      {
+        "zh": "「に至って」是“事态发展到极端地步才……”，铃响不是事态恶化的极点。",
+        "en": "「に至って」 means \"only when things reached an extreme\"; a bell ringing isn't that."
+      }
+    ]
+  },
+  {
+    "id": "n1-l76-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson76#1"
+    ],
+    "difficulty": 2,
+    "stem": "彼は「お先に失礼します」と言う（　）、オフィスを飛び出していった。",
+    "options": [
+      "次第",
+      "が早いか",
+      "とたん",
+      "そばから"
+    ],
+    "answer": 1,
+    "full": "彼は「お先に失礼します」と言うが早いか、オフィスを飛び出していった。",
+    "tr": {
+      "zh": "他刚说完“我先走了”，就冲出了办公室。",
+      "en": "No sooner had he said \"I'll be off now\" than he dashed out of the office."
+    },
+    "why": {
+      "zh": "「〜と言うが早いか」是常见说法，“话音刚落就……”：接辞書形，后项是过去的迅速动作。",
+      "en": "「〜と言うが早いか」 is a set phrase — the words were barely out when…; it takes the dictionary form and a quick past action."
+    },
+    "wrong": [
+      {
+        "zh": "「次第」接ます形（言い次第），而且后项是意志、请求，不用来叙述过去的事。",
+        "en": "「次第」 takes the masu-stem (言い次第) and leads to an intention or request, not a past narrative."
+      },
+      null,
+      {
+        "zh": "「とたん」要接た形（言ったとたん），不能接辞書形「言う」。",
+        "en": "「とたん」 needs the ta-form (言ったとたん), not 「言う」."
+      },
+      {
+        "zh": "「そばから」用于反复被抵消的事，一次性地冲出办公室不适用。",
+        "en": "「そばから」 is for repeated undoing, not a single exit."
+      }
+    ]
+  },
+  {
+    "id": "n1-l76-003",
+    "type": "narabe",
+    "refs": [
+      "lesson76#1"
+    ],
+    "difficulty": 2,
+    "stem": "父は電話を [_] [★] [_] [_] 飛び出していった。",
+    "options": [
+      "上着をつかんで",
+      "家を",
+      "切る",
+      "が早いか"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "父は電話を切るが早いか上着をつかんで家を飛び出していった。",
+    "tr": {
+      "zh": "父亲一挂电话，就抓起外套冲出了家门。",
+      "en": "The moment Father hung up, he grabbed his coat and rushed out of the house."
+    },
+    "why": {
+      "zh": "「電話を切る」用辞書形接「が早いか」，后项是「上着をつかんで家を飛び出していった」：切る → が早いか → 上着をつかんで → 家を。★ 是「が早いか」。",
+      "en": "「電話を切る」 in the dictionary form takes 「が早いか」, then the quick action 「上着をつかんで家を飛び出していった」: 切る → が早いか → 上着をつかんで → 家を. The ★ is 「が早いか」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l76-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson76#2"
+    ],
+    "difficulty": 2,
+    "stem": "新しいゲーム機は発売される（　）、各地の店で品切れが相次いだ。",
+    "options": [
+      "を皮切りに",
+      "次第",
+      "や否や",
+      "なり"
+    ],
+    "answer": 2,
+    "full": "新しいゲーム機は発売されるや否や、各地の店で品切れが相次いだ。",
+    "tr": {
+      "zh": "新游戏机一上市，各地门店就接连断货。",
+      "en": "As soon as the new game console went on sale, stores everywhere sold out one after another."
+    },
+    "why": {
+      "zh": "一上市就立刻引起反应（断货），是已经发生的事实，前后主语不同，用「や否や」。",
+      "en": "The release is instantly followed by a reaction (sell-outs) — a past fact with different subjects: 「や否や」."
+    },
+    "wrong": [
+      {
+        "zh": "「を皮切りに」只接名词，不能接动词「発売される」。",
+        "en": "「を皮切りに」 takes a noun, not the verb 「発売される」."
+      },
+      {
+        "zh": "「次第」接ます形（発売され次第），后项是将来的安排，不能叙述已经发生的断货。",
+        "en": "「次第」 takes the masu-stem and looks ahead; it can't narrate sell-outs that already happened."
+      },
+      null,
+      {
+        "zh": "「なり」要求同一个人前后连续做两个动作，「ゲーム機」和「品切れ」不符。",
+        "en": "「なり」 needs one person doing both actions; a console and sell-outs don't fit."
+      }
+    ]
+  },
+  {
+    "id": "n1-l76-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson76#2"
+    ],
+    "difficulty": 2,
+    "stem": "首相の辞任が報じられる（　）、市場では円が急落した。",
+    "options": [
+      "そばから",
+      "や否や",
+      "が最後",
+      "なり"
+    ],
+    "answer": 1,
+    "full": "首相の辞任が報じられるや否や、市場では円が急落した。",
+    "tr": {
+      "zh": "首相辞职的消息一经报道，市场上日元就暴跌了。",
+      "en": "The instant the prime minister's resignation was reported, the yen plunged on the markets."
+    },
+    "why": {
+      "zh": "报道一出（A），市场立刻起变化（B），是新闻语体的过去事实，用最书面的「や否や」。",
+      "en": "A report followed instantly by a market reaction, told as past fact in news register: 「や否や」."
+    },
+    "wrong": [
+      {
+        "zh": "「そばから」表示反复被抵消，这里是一次性的事件。",
+        "en": "「そばから」 is for repeated undoing; this is a single event."
+      },
+      null,
+      {
+        "zh": "「が最後」接た形（〜たが最後），意思是“一旦……就无法挽回”，接续和意思都不对。",
+        "en": "「が最後」 follows the ta-form and means \"once…, there's no going back\" — wrong form and meaning."
+      },
+      {
+        "zh": "「なり」前后必须同一主语，「辞任」和「円」不是同一主语。",
+        "en": "「なり」 needs the same subject in both clauses; the resignation and the yen are different."
+      }
+    ]
+  },
+  {
+    "id": "n1-l76-006",
+    "type": "narabe",
+    "refs": [
+      "lesson76#2"
+    ],
+    "difficulty": 2,
+    "stem": "その知らせが [_] [_] [_] [★] 問い合わせが相次いだ。",
+    "options": [
+      "発表される",
+      "窓口に",
+      "や否や",
+      "各地の"
+    ],
+    "order": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "full": "その知らせが発表されるや否や各地の窓口に問い合わせが相次いだ。",
+    "tr": {
+      "zh": "那个消息一公布，各地的窗口就接连收到咨询。",
+      "en": "As soon as the news was announced, inquiries poured into offices everywhere."
+    },
+    "why": {
+      "zh": "「発表される」接「や否や」，后项「各地の窓口に問い合わせが相次いだ」：発表される → や否や → 各地の → 窓口に。★ 是「窓口に」。",
+      "en": "「発表される」 takes 「や否や」, then 「各地の窓口に問い合わせが相次いだ」: 発表される → や否や → 各地の → 窓口に. The ★ is 「窓口に」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l76-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson76#3"
+    ],
+    "difficulty": 2,
+    "stem": "部長は報告書に目を通す（　）、顔色を変えて会議室を出ていった。",
+    "options": [
+      "そばから",
+      "なり",
+      "次第",
+      "ついでに"
+    ],
+    "answer": 1,
+    "full": "部長は報告書に目を通すなり、顔色を変えて会議室を出ていった。",
+    "tr": {
+      "zh": "部长一看报告，就脸色大变地走出了会议室。",
+      "en": "The moment the manager looked over the report, his face changed and he walked out of the meeting room."
+    },
+    "why": {
+      "zh": "同一主语「部長」看完报告紧接着做出了出人意料的举动，第三人称、过去事实，用「なり」。",
+      "en": "The same subject (the manager) reads the report and immediately does something unexpected — third person, past fact: 「なり」."
+    },
+    "wrong": [
+      {
+        "zh": "「そばから」表示反复被抵消，这里是一次性的举动。",
+        "en": "「そばから」 is for repeated undoing; this was a single reaction."
+      },
+      null,
+      {
+        "zh": "「次第」接ます形，用于将来的安排，不叙述过去的事。",
+        "en": "「次第」 takes the masu-stem and is for future arrangements, not past events."
+      },
+      {
+        "zh": "「ついでに」是“顺便”，看报告“顺便”变了脸色说不通。",
+        "en": "「ついでに」 (while at it) makes no sense with his face changing."
+      }
+    ]
+  },
+  {
+    "id": "n1-l76-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson76#3"
+    ],
+    "difficulty": 2,
+    "stem": "母は玄関で私の顔を（　）、「どこへ行っていたの」と怒鳴りつけた。",
+    "options": [
+      "見たなり",
+      "見次第",
+      "見るなり",
+      "見るそばから"
+    ],
+    "answer": 2,
+    "full": "母は玄関で私の顔を見るなり、「どこへ行っていたの」と怒鳴りつけた。",
+    "tr": {
+      "zh": "母亲在门口一看到我的脸，就吼道“你去哪儿了”。",
+      "en": "The moment my mother saw my face at the door, she yelled, \"Where have you been?\""
+    },
+    "why": {
+      "zh": "「なり」接辞書形：「見るなり」= 一看到就……；主语都是「母」，后项是突然的举动。",
+      "en": "「なり」 takes the dictionary form: 「見るなり」 = the moment she saw; same subject, a sudden reaction."
+    },
+    "wrong": [
+      {
+        "zh": "「たなり」是另一个用法，意思接近「たまま」（……之后就一直），不表示“一……就”。",
+        "en": "「たなり」 is a different use, close to 「たまま」 (and stayed that way); it doesn't mean \"the moment\"."
+      },
+      {
+        "zh": "「次第」只用于将来的意志、请求，不能叙述过去发生的事。",
+        "en": "「次第」 is only for future intentions or requests, not past events."
+      },
+      null,
+      {
+        "zh": "「そばから」用于反复被抵消的事，这里只发生一次。",
+        "en": "「そばから」 is for repeated undoing; this happened once."
+      }
+    ]
+  },
+  {
+    "id": "n1-l76-009",
+    "type": "narabe",
+    "refs": [
+      "lesson76#3"
+    ],
+    "difficulty": 2,
+    "stem": "祖父は [★] [_] [_] [_] 黙り込んでしまった。",
+    "options": [
+      "手紙を",
+      "孫からの",
+      "なり",
+      "読み終える"
+    ],
+    "order": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "full": "祖父は孫からの手紙を読み終えるなり黙り込んでしまった。",
+    "tr": {
+      "zh": "祖父一读完孙子的来信，就沉默不语了。",
+      "en": "The moment Grandfather finished reading the letter from his grandchild, he fell silent."
+    },
+    "why": {
+      "zh": "「孫からの手紙を読み終える」用辞書形接「なり」，同一主语「祖父」：孫からの → 手紙を → 読み終える → なり。★ 是「孫からの」。",
+      "en": "「孫からの手紙を読み終える」 in the dictionary form takes 「なり」, same subject 祖父: 孫からの → 手紙を → 読み終える → なり. The ★ is 「孫からの」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l76-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson76#4"
+    ],
+    "difficulty": 2,
+    "stem": "何度メモを取っても、聞いた（　）忘れてしまうので、上司に呆れられている。",
+    "options": [
+      "が早いか",
+      "なり",
+      "そばから",
+      "に至って"
+    ],
+    "answer": 2,
+    "full": "何度メモを取っても、聞いたそばから忘れてしまうので、上司に呆れられている。",
+    "tr": {
+      "zh": "不管记多少次笔记，听完就忘，上司都拿我没辙了。",
+      "en": "However many notes I take, I forget things as soon as I've heard them, so my boss is fed up with me."
+    },
+    "why": {
+      "zh": "刚听完就忘，而且反复发生（「何度〜ても」），带无奈语气，用「そばから」（也可接た形）。",
+      "en": "Forgetting right after hearing, over and over (「何度〜ても」), with a sigh: 「そばから」 (it can follow the ta-form)."
+    },
+    "wrong": [
+      {
+        "zh": "「が早いか」只叙述一次性的过去事实，不用于“总是这样”的反复情况。",
+        "en": "「が早いか」 narrates a single past event, not something that keeps happening."
+      },
+      {
+        "zh": "「なり」接辞書形，「聞いたなり」是“听了就一直……”的意思，而且「なり」不用于反复的事和说自己。",
+        "en": "「なり」 takes the dictionary form (「聞いたなり」 means \"and left it at that\"), and isn't used for repeated events or for yourself."
+      },
+      null,
+      {
+        "zh": "「に至って」表示事态发展到极端才……，接续和意思都不符。",
+        "en": "「に至って」 (only when it came to…) fits neither the form nor the meaning."
+      }
+    ]
+  },
+  {
+    "id": "n1-l76-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson76#4"
+    ],
+    "difficulty": 2,
+    "stem": "部屋を片付けた（　）子どもたちが散らかすので、もう掃除する気にもなれない。",
+    "options": [
+      "そばから",
+      "が早いか",
+      "たびに",
+      "次第"
+    ],
+    "answer": 0,
+    "full": "部屋を片付けたそばから子どもたちが散らかすので、もう掃除する気にもなれない。",
+    "tr": {
+      "zh": "刚收拾好房间，孩子们就又弄乱，我已经连打扫的心思都没有了。",
+      "en": "The kids mess up the room as fast as I tidy it, so I can't even be bothered to clean any more."
+    },
+    "why": {
+      "zh": "刚收拾好就被弄乱，反复发生、成果被抵消，带抱怨，用「そばから」。",
+      "en": "Tidying is undone at once, again and again, with a complaint: 「そばから」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「が早いか」只叙述一次性的过去事实，这里后项是现在时的反复情况。",
+        "en": "「が早いか」 narrates a single past event; here the second clause is a present, repeated situation."
+      },
+      {
+        "zh": "「たびに」接辞書形或「名詞＋の」，不能接た形「片付けた」。",
+        "en": "「たびに」 takes the dictionary form or 「名詞＋の」, not the ta-form 「片付けた」."
+      },
+      {
+        "zh": "「た形＋次第」是“事情的原委”，表示“一……就”的「次第」接ます形且用于将来。",
+        "en": "「た形＋次第」 means \"that's how it came about\"; 「次第」 for \"as soon as\" takes the masu-stem and looks ahead."
+      }
+    ]
+  },
+  {
+    "id": "n1-l76-012",
+    "type": "narabe",
+    "refs": [
+      "lesson76#4"
+    ],
+    "difficulty": 2,
+    "stem": "部下は [_] [_] [★] [_] 繰り返すので困っている。",
+    "options": [
+      "同じ",
+      "そばから",
+      "ミスを",
+      "注意した"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "部下は注意したそばから同じミスを繰り返すので困っている。",
+    "tr": {
+      "zh": "部下刚被我提醒就又犯同样的错，真让人头疼。",
+      "en": "My subordinate makes the same mistake again right after I've warned him — it's a real headache."
+    },
+    "why": {
+      "zh": "た形「注意した」接「そばから」，后项「同じミスを繰り返す」：注意した → そばから → 同じ → ミスを。★ 是「同じ」。",
+      "en": "The ta-form 「注意した」 takes 「そばから」, then 「同じミスを繰り返す」: 注意した → そばから → 同じ → ミスを. The ★ is 「同じ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l76-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson76#5"
+    ],
+    "difficulty": 2,
+    "stem": "娘が留学し（　）、家の中がすっかり静かになってしまった。",
+    "options": [
+      "次第",
+      "てからというもの",
+      "ようものなら",
+      "てからでないと"
+    ],
+    "answer": 1,
+    "full": "娘が留学してからというもの、家の中がすっかり静かになってしまった。",
+    "tr": {
+      "zh": "自从女儿出国留学，家里就变得冷冷清清了。",
+      "en": "Ever since my daughter went abroad to study, the house has gone completely quiet."
+    },
+    "why": {
+      "zh": "以“女儿留学”为分界线，家里的状态彻底改变并持续至今（「すっかり〜てしまった」），用「てからというもの」。",
+      "en": "Her leaving is the turning point, and the house has stayed changed since (「すっかり〜てしまった」): 「てからというもの」."
+    },
+    "wrong": [
+      {
+        "zh": "「次第」用于将来的安排，不能叙述已经持续的变化。",
+        "en": "「次第」 is for future arrangements, not a change that has already lasted."
+      },
+      null,
+      {
+        "zh": "「ようものなら」是“万一……的话（就糟了）”的假设，和已经发生的事实不符。",
+        "en": "「ようものなら」 is a hypothetical (if… were to happen, trouble), not a fact that already happened."
+      },
+      {
+        "zh": "「てからでないと」是“不先……就不能……”，后项应是否定或困难，不符合句意。",
+        "en": "「てからでないと」 (not until…) needs a negative or \"hard to do\" second clause."
+      }
+    ]
+  },
+  {
+    "id": "n1-l76-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson76#5"
+    ],
+    "difficulty": 2,
+    "stem": "半年前に大病を（　）、彼は人が変わったように健康に気を遣っている。",
+    "options": [
+      "患ったからには",
+      "患うが早いか",
+      "患ってからというもの",
+      "患ったからといって"
+    ],
+    "answer": 2,
+    "full": "半年前に大病を患ってからというもの、彼は人が変わったように健康に気を遣っている。",
+    "tr": {
+      "zh": "自从半年前生了一场大病，他就像变了个人似的注意起健康来。",
+      "en": "Ever since a serious illness six months ago, he's been looking after his health like a different man."
+    },
+    "why": {
+      "zh": "以大病为分界，此后状态一直改变并持续（「〜ている」），用「てからというもの」。",
+      "en": "The illness is the turning point and the change has lasted since (「〜ている」): 「てからというもの」."
+    },
+    "wrong": [
+      {
+        "zh": "「からには」后项是“既然……就要……”的决心、义务，这里是持续状态的描述。",
+        "en": "「からには」 (now that…) leads to a resolve or duty, not a description of a lasting state."
+      },
+      {
+        "zh": "「が早いか」后接紧接着发生的一次性动作，不能接持续半年的状态。",
+        "en": "「が早いか」 is followed by one quick action, not a state lasting six months."
+      },
+      null,
+      {
+        "zh": "「からといって」后面要接「〜わけではない」之类的否定，这里没有。",
+        "en": "「からといって」 needs a negative such as 「〜わけではない」 after it."
+      }
+    ]
+  },
+  {
+    "id": "n1-l76-015",
+    "type": "narabe",
+    "refs": [
+      "lesson76#5"
+    ],
+    "difficulty": 2,
+    "stem": "[_] [★] [_] [_]、毎朝の散歩が日課になっている。",
+    "options": [
+      "始めて",
+      "犬を",
+      "飼い",
+      "からというもの"
+    ],
+    "order": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "full": "犬を飼い始めてからというもの、毎朝の散歩が日課になっている。",
+    "tr": {
+      "zh": "自从开始养狗，每天早上散步就成了我的日常。",
+      "en": "Ever since I started keeping a dog, a morning walk has become part of my daily routine."
+    },
+    "why": {
+      "zh": "「犬を飼い始める」的て形「飼い始めて」接「からというもの」：犬を → 飼い → 始めて → からというもの。★ 是「飼い」。",
+      "en": "The te-form 「飼い始めて」 takes 「からというもの」: 犬を → 飼い → 始めて → からというもの. The ★ is 「飼い」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l76-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson76#6"
+    ],
+    "difficulty": 2,
+    "stem": "来月の札幌公演（　）、全国15都市を回るツアーが始まる。",
+    "options": [
+      "をきっかけに",
+      "を限りに",
+      "を皮切りに",
+      "をはじめ"
+    ],
+    "answer": 2,
+    "full": "来月の札幌公演を皮切りに、全国15都市を回るツアーが始まる。",
+    "tr": {
+      "zh": "以下个月的札幌公演为开端，巡回全国15个城市的巡演即将开始。",
+      "en": "Kicking off with next month's Sapporo show, a tour of 15 cities nationwide will begin."
+    },
+    "why": {
+      "zh": "札幌公演是巡演一连串演出中的第一场，用「を皮切りに」。",
+      "en": "The Sapporo show is the first in a series of tour dates: 「を皮切りに」."
+    },
+    "wrong": [
+      {
+        "zh": "「をきっかけに」表示引起变化的契机，札幌公演本身就是巡演的一场，不是巡演的起因。",
+        "en": "「をきっかけに」 marks a trigger; the Sapporo show is part of the tour, not its cause."
+      },
+      {
+        "zh": "「を限りに」表示到此为止、此后不再，和“巡演开始”相反。",
+        "en": "「を限りに」 marks an end point, the opposite of a tour beginning."
+      },
+      null,
+      {
+        "zh": "「をはじめ」是列举代表性的例子，后面一般是「〜も」，不表示时间上的第一个。",
+        "en": "「をはじめ」 lists a leading example (usually with 「〜も」), not the first in time."
+      }
+    ]
+  },
+  {
+    "id": "n1-l76-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson76#6"
+    ],
+    "difficulty": 2,
+    "stem": "新人賞の受賞（　）、彼女は国内外で数々の文学賞を受けた。",
+    "options": [
+      "に至って",
+      "をよそに",
+      "をもって",
+      "を皮切りに"
+    ],
+    "answer": 3,
+    "full": "新人賞の受賞を皮切りに、彼女は国内外で数々の文学賞を受けた。",
+    "tr": {
+      "zh": "以获得新人奖为开端，她在国内外接连获得了多项文学奖。",
+      "en": "Starting with a newcomer's prize, she went on to win numerous literary awards at home and abroad."
+    },
+    "why": {
+      "zh": "新人奖是一连串获奖中的第一个，后项「数々の」表示接连发生，用「を皮切りに」。",
+      "en": "The newcomer's prize is the first of a string of awards (「数々の」): 「を皮切りに」."
+    },
+    "wrong": [
+      {
+        "zh": "「に至って」表示事态发展到极端才……，获奖不是事态恶化的极点。",
+        "en": "「に至って」 (only when things reached…) doesn't fit winning a prize."
+      },
+      {
+        "zh": "「をよそに」是“不顾……”，“不顾自己获奖”说不通。",
+        "en": "「をよそに」 (paying no heed to) makes no sense with her own prize."
+      },
+      {
+        "zh": "「をもって」表示手段或期限（“以……”“到……为止”），不表示一连串事情的开端。",
+        "en": "「をもって」 marks a means or a cut-off, not the start of a series."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l76-018",
+    "type": "narabe",
+    "refs": [
+      "lesson76#6"
+    ],
+    "difficulty": 2,
+    "stem": "この新製品は、[_] [_] [_] [★] アジア各国でも販売される予定だ。",
+    "options": [
+      "発売",
+      "を皮切りに",
+      "国内での",
+      "先行"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "この新製品は、国内での先行発売を皮切りにアジア各国でも販売される予定だ。",
+    "tr": {
+      "zh": "这款新产品计划以在国内率先上市为开端，在亚洲各国也陆续销售。",
+      "en": "Starting with an early release in Japan, the new product is set to go on sale across Asia as well."
+    },
+    "why": {
+      "zh": "名词「国内での先行発売」接「を皮切りに」，后项「アジア各国でも販売される」：国内での → 先行 → 発売 → を皮切りに。★ 是「を皮切りに」。",
+      "en": "The noun 「国内での先行発売」 takes 「を皮切りに」, then 「アジア各国でも販売される」: 国内での → 先行 → 発売 → を皮切りに. The ★ is 「を皮切りに」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l76-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson76#7"
+    ],
+    "difficulty": 2,
+    "stem": "工場周辺の住民に健康被害が出る（　）、会社はようやく排水の問題を認めた。",
+    "options": [
+      "に至っても",
+      "に至っては",
+      "に至って",
+      "に至るまで"
+    ],
+    "answer": 2,
+    "full": "工場周辺の住民に健康被害が出るに至って、会社はようやく排水の問題を認めた。",
+    "tr": {
+      "zh": "直到工厂周边的居民出现健康受损，公司才终于承认了排水问题。",
+      "en": "Only when residents near the factory suffered health damage did the company finally admit the wastewater problem."
+    },
+    "why": {
+      "zh": "「ようやく」提示“事态严重到这种地步才终于……”，用「に至って」。",
+      "en": "「ようやく」 signals \"only when it got this bad did they finally…\": 「に至って」."
+    },
+    "wrong": [
+      {
+        "zh": "「に至っても」后项是“仍然不……”，和「ようやく認めた」相反。",
+        "en": "「に至っても」 leads to \"still didn't…\", the opposite of 「ようやく認めた」."
+      },
+      {
+        "zh": "「に至っては」接名词，是从整体中举出最极端的一个例子，不表示“到这地步才……”。",
+        "en": "「に至っては」 takes a noun and picks the most extreme case from a group; it doesn't mean \"only when it came to\"."
+      },
+      null,
+      {
+        "zh": "「に至るまで」强调范围之广（从……到……），这里没有范围。",
+        "en": "「に至るまで」 stresses a range (from… right down to…); there's no range here."
+      }
+    ]
+  },
+  {
+    "id": "n1-l76-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson76#7"
+    ],
+    "difficulty": 2,
+    "stem": "新しい校則では、制服の着方から靴下の色（　）、細かく定められている。",
+    "options": [
+      "に至るまで",
+      "に至って",
+      "を皮切りに",
+      "に至っては"
+    ],
+    "answer": 0,
+    "full": "新しい校則では、制服の着方から靴下の色に至るまで、細かく定められている。",
+    "tr": {
+      "zh": "新校规从校服的穿法到袜子的颜色，都规定得很细。",
+      "en": "The new school rules set out every detail, from how to wear the uniform right down to the colour of socks."
+    },
+    "why": {
+      "zh": "和前面的「から」呼应，强调范围一直涵盖到细节，用「に至るまで」。",
+      "en": "Paired with 「から」, it stresses that the range reaches the smallest details: 「に至るまで」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に至って」表示事态严重到某地步才采取行动，和“规定得很细”不符。",
+        "en": "「に至って」 means action came only once things got that bad — not about detailed rules."
+      },
+      {
+        "zh": "「を皮切りに」表示一连串事情的开端，不和「から」呼应表示范围。",
+        "en": "「を皮切りに」 marks the start of a series; it doesn't pair with 「から」 for a range."
+      },
+      {
+        "zh": "「に至っては」举出最极端的（多为负面的）一个例子，不和「〜から」一起表示范围。",
+        "en": "「に至っては」 singles out the most extreme case; it doesn't form a range with 「〜から」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l76-021",
+    "type": "bunpou",
+    "refs": [
+      "lesson76#7"
+    ],
+    "difficulty": 3,
+    "stem": "今回の研修では参加者の多くが準備不足で、山田さん（　）資料すら持ってこなかった。",
+    "options": [
+      "に至るまで",
+      "に至っては",
+      "に至っても",
+      "を皮切りに"
+    ],
+    "answer": 1,
+    "full": "今回の研修では参加者の多くが準備不足で、山田さんに至っては資料すら持ってこなかった。",
+    "tr": {
+      "zh": "这次研修很多参加者准备不足，至于山田，连资料都没带来。",
+      "en": "Many of the trainees came unprepared, and as for Yamada, he didn't even bring the materials."
+    },
+    "why": {
+      "zh": "先说整体（多数人准备不足），再举出其中最极端的一个（山田），用「に至っては」。",
+      "en": "First the general picture (most were unprepared), then the most extreme case (Yamada): 「に至っては」."
+    },
+    "wrong": [
+      {
+        "zh": "「に至るまで」表示范围（从……到……），这里没有「から」，也不是在说范围。",
+        "en": "「に至るまで」 marks a range (from… to…); there's no 「から」 and no range here."
+      },
+      null,
+      {
+        "zh": "「に至っても」是“即使到了……地步也……”，「山田さん」不是事态发展到的地步。",
+        "en": "「に至っても」 means \"even when it got to…\"; Yamada isn't a stage things reached."
+      },
+      {
+        "zh": "「を皮切りに」表示一连串事情的开端，和“连资料都没带”不符。",
+        "en": "「を皮切りに」 marks the start of a series, which doesn't fit here."
+      }
+    ]
+  },
+  {
+    "id": "n1-l76-022",
+    "type": "narabe",
+    "refs": [
+      "lesson76#7"
+    ],
+    "difficulty": 2,
+    "stem": "赤字が [★] [_] [_] [_] 改めようとしなかった。",
+    "options": [
+      "なる",
+      "経営陣は方針を",
+      "に至っても",
+      "三期連続と"
+    ],
+    "order": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "full": "赤字が三期連続となるに至っても経営陣は方針を改めようとしなかった。",
+    "tr": {
+      "zh": "即使已经连续三期亏损，管理层仍不打算改变方针。",
+      "en": "Even when the company had run a deficit three terms in a row, management refused to change course."
+    },
+    "why": {
+      "zh": "「三期連続となる」用辞書形接「に至っても」，后项「経営陣は方針を改めようとしなかった」：三期連続と → なる → に至っても → 経営陣は方針を。★ 是「三期連続と」。",
+      "en": "「三期連続となる」 in the dictionary form takes 「に至っても」, then 「経営陣は方針を改めようとしなかった」: 三期連続と → なる → に至っても → 経営陣は方針を. The ★ is 「三期連続と」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

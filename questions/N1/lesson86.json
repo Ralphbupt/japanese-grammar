@@ -1,0 +1,698 @@
+[
+  {
+    "id": "n1-l86-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson86#1"
+    ],
+    "difficulty": 2,
+    "stem": "百年以上前のこの村で何が起きたのか、記録も証言も残っていない今となっては知る（　）。",
+    "options": [
+      "までもない",
+      "べくもない",
+      "に足りない",
+      "にかたくない"
+    ],
+    "answer": 1,
+    "full": "百年以上前のこの村で何が起きたのか、記録も証言も残っていない今となっては知るべくもない。",
+    "tr": {
+      "zh": "一百多年前这个村子里发生过什么，在既无记录也无证言的今天，已经无从得知。",
+      "en": "With no records or testimony left, there is now no way of knowing what happened in this village over a century ago."
+    },
+    "why": {
+      "zh": "「記録も証言も残っていない」是客观条件不允许，「知る」后接「べくもない」（无从……）。",
+      "en": "No records or testimony survive — an objective impossibility: 「知るべくもない」 (no way of knowing)."
+    },
+    "wrong": [
+      {
+        "zh": "「知るまでもない」是“用不着知道”（太明显），和“没有记录”矛盾。",
+        "en": "「知るまでもない」 (no need to know — it's obvious) contradicts \"no records survive\"."
+      },
+      null,
+      {
+        "zh": "「知るに足りない」是“不值得知道”，不是“无从得知”。",
+        "en": "「知るに足りない」 would mean \"not worth knowing\", not \"no way to know\"."
+      },
+      {
+        "zh": "「にかたくない」只接「想像・察する・理解」，不接「知る」。",
+        "en": "「にかたくない」 goes with 想像/察する/理解, not 「知る」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l86-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson86#1"
+    ],
+    "difficulty": 2,
+    "stem": "家賃の安さを考えれば、駅前並みの便利さは望む（　）が、静かで暮らしやすい町だ。",
+    "options": [
+      "に足る",
+      "までだ",
+      "にかたくない",
+      "べくもない"
+    ],
+    "answer": 3,
+    "full": "家賃の安さを考えれば、駅前並みの便利さは望むべくもないが、静かで暮らしやすい町だ。",
+    "tr": {
+      "zh": "考虑到房租便宜，根本谈不上有车站前那样的便利，但这是个安静宜居的小镇。",
+      "en": "Given how cheap the rent is, you can't expect the convenience of a station-front area, but it's a quiet, pleasant town."
+    },
+    "why": {
+      "zh": "「家賃の安さを考えれば」说明条件不允许，「望む」后接「べくもない」（根本谈不上）。",
+      "en": "Cheap rent means it simply isn't on offer — 「望むべくもない」 (can't hope for)."
+    },
+    "wrong": [
+      {
+        "zh": "「望むに足る」不是固定说法，“值得期望”也和「が」后的转折不符。",
+        "en": "「望むに足る」 isn't a set phrase, and \"worth hoping for\" doesn't fit the contrast after 「が」."
+      },
+      {
+        "zh": "「望むまでだ」（大不了期望就是了）意思不通。",
+        "en": "「望むまでだ」 (I'll just hope for it) makes no sense."
+      },
+      {
+        "zh": "「にかたくない」只接「想像・察する・理解」，不接「望む」。",
+        "en": "「にかたくない」 goes with 想像/察する/理解, not 「望む」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l86-003",
+    "type": "narabe",
+    "refs": [
+      "lesson86#1"
+    ],
+    "difficulty": 2,
+    "stem": "技術力では [★] [_] [_] [_] が、わが社には価格という武器がある。",
+    "options": [
+      "比べる",
+      "大手",
+      "べくもない",
+      "とは"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "技術力では大手とは比べるべくもないが、わが社には価格という武器がある。",
+    "tr": {
+      "zh": "论技术实力，根本没法和大企业相比，但我们公司有价格这一武器。",
+      "en": "In technology we can't begin to compare with the big players, but we have price on our side."
+    },
+    "why": {
+      "zh": "比较对象「大手とは」在前，后接固定搭配「比べるべくもない」：大手 → とは → 比べる → べくもない。★ 是「大手」。",
+      "en": "The comparison 「大手とは」 comes first, then the set phrase 「比べるべくもない」: 大手 → とは → 比べる → べくもない. The ★ is 「大手」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l86-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson86#2"
+    ],
+    "difficulty": 2,
+    "stem": "これほどの被害を出した以上、経営陣は責任を問われ（　）。",
+    "options": [
+      "てやまない",
+      "てはばからない",
+      "てしかるべきだ",
+      "てたまらない"
+    ],
+    "answer": 2,
+    "full": "これほどの被害を出した以上、経営陣は責任を問われてしかるべきだ。",
+    "tr": {
+      "zh": "既然造成了这么大的损失，经营层理应被追究责任。",
+      "en": "Having caused this much damage, the management ought to be held responsible."
+    },
+    "why": {
+      "zh": "「以上」提出道理，评论组织理应受到的对待，用「被动＋てしかるべきだ」（理应……）。",
+      "en": "「以上」 gives the reasoning about what an organisation deserves — passive + 「てしかるべきだ」 (ought to)."
+    },
+    "wrong": [
+      {
+        "zh": "「てやまない」只接「願う・祈る・愛する」等感情动词。",
+        "en": "「てやまない」 only follows feeling verbs like 願う, 祈る, 愛する."
+      },
+      {
+        "zh": "「てはばからない」接「言う・公言する」等“说”类动词。",
+        "en": "「てはばからない」 follows verbs of saying like 言う, 公言する."
+      },
+      null,
+      {
+        "zh": "「てたまらない」表示感觉、情绪“受不了”，不接「問われ」。",
+        "en": "「てたまらない」 is for feelings or sensations, not 「問われる」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l86-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson86#2"
+    ],
+    "difficulty": 2,
+    "stem": "住民の声を無視して計画を強行するのではなく、まずは市から十分な説明があって（　）。",
+    "options": [
+      "やまない",
+      "しかるべきだ",
+      "はばからない",
+      "ほかならない"
+    ],
+    "answer": 1,
+    "full": "住民の声を無視して計画を強行するのではなく、まずは市から十分な説明があってしかるべきだ。",
+    "tr": {
+      "zh": "不应无视居民的声音强行推进计划，市里首先理应作出充分的说明。",
+      "en": "Rather than forcing the plan through and ignoring residents, the city ought first to explain it properly."
+    },
+    "why": {
+      "zh": "批评市政府的做法，「あって」后接「しかるべきだ」，表示“理应有……”。",
+      "en": "A criticism of what the city should have done: 「あって」 + 「しかるべきだ」 (there ought to be)."
+    },
+    "wrong": [
+      {
+        "zh": "「てやまない」接感情动词，「あってやまない」不是日语说法。",
+        "en": "「てやまない」 follows feeling verbs; 「あってやまない」 isn't Japanese."
+      },
+      null,
+      {
+        "zh": "「てはばからない」接“说”类动词，不接「ある」。",
+        "en": "「てはばからない」 follows verbs of saying, not 「ある」."
+      },
+      {
+        "zh": "「にほかならない」接名词，不接て形。",
+        "en": "「にほかならない」 follows a noun, not a て-form."
+      }
+    ]
+  },
+  {
+    "id": "n1-l86-006",
+    "type": "narabe",
+    "refs": [
+      "lesson86#2"
+    ],
+    "difficulty": 1,
+    "stem": "納税者の立場からすれば、予算の使い道は [_] [_] [★] [_] 。",
+    "options": [
+      "だ",
+      "公開されて",
+      "もっと",
+      "しかるべき"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "納税者の立場からすれば、予算の使い道はもっと公開されてしかるべきだ。",
+    "tr": {
+      "zh": "从纳税人的立场来看，预算的用途理应更加公开。",
+      "en": "From the taxpayer's point of view, how the budget is spent ought to be made far more public."
+    },
+    "why": {
+      "zh": "「もっと」修饰「公開されて」，后接「しかるべきだ」：もっと → 公開されて → しかるべき → だ。★ 是「しかるべき」。",
+      "en": "「もっと」 modifies 「公開されて」, followed by 「しかるべきだ」: もっと → 公開されて → しかるべき → だ. The ★ is 「しかるべき」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l86-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson86#3"
+    ],
+    "difficulty": 2,
+    "stem": "医師から回復は難しいと告げられた彼が、一年後には自分の足で歩けるようになった。これが奇跡（　）。",
+    "options": [
+      "に違いない",
+      "でなくてなんだろう",
+      "に足りない",
+      "に堪えない"
+    ],
+    "answer": 1,
+    "full": "医師から回復は難しいと告げられた彼が、一年後には自分の足で歩けるようになった。これが奇跡でなくてなんだろう。",
+    "tr": {
+      "zh": "被医生告知很难康复的他，一年后竟能用自己的双脚走路了。这不是奇迹又是什么呢？",
+      "en": "Told by his doctors he was unlikely to recover, a year later he was walking on his own feet. If that isn't a miracle, what is?"
+    },
+    "why": {
+      "zh": "前文讲了一件令人感动的事，再用「これが〜」作感情强烈的断定，用反问「でなくてなんだろう」。",
+      "en": "A moving story followed by 「これが〜」 — the emotional rhetorical question 「でなくてなんだろう」 (if this isn't …, what is)."
+    },
+    "wrong": [
+      {
+        "zh": "「に違いない」是推测，而这里是已经发生的事实，说话人在抒发感慨。",
+        "en": "「に違いない」 is a guess; this is a known fact the speaker is moved by."
+      },
+      null,
+      {
+        "zh": "「奇跡に足りない」（不值得称为奇迹）和前文的感动相反，也不是固定说法。",
+        "en": "「奇跡に足りない」 (not worth calling a miracle) contradicts the story and isn't a set phrase."
+      },
+      {
+        "zh": "「に堪えない」接「見る・聞く」或「感謝・遺憾」，不接「奇跡」。",
+        "en": "「に堪えない」 takes 見る/聞く or 感謝/遺憾, not 「奇跡」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l86-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson86#3"
+    ],
+    "difficulty": 3,
+    "stem": "利益を優先して点検を怠り、多くの犠牲者を出した。これが人災（　）。",
+    "options": [
+      "ではあるまいし",
+      "にすぎないだろう",
+      "でなくてなんであろうか",
+      "とはいえ"
+    ],
+    "answer": 2,
+    "full": "利益を優先して点検を怠り、多くの犠牲者を出した。これが人災でなくてなんであろうか。",
+    "tr": {
+      "zh": "把利益放在首位、疏于检查，造成了众多遇难者。这不是人祸又是什么？",
+      "en": "They put profit first, skimped on inspections, and many died. If that isn't a man-made disaster, what is?"
+    },
+    "why": {
+      "zh": "前文列举了令人愤慨的事实，「これが〜」后用更书面的「でなくてなんであろうか」强烈断定。",
+      "en": "Outrageous facts, then 「これが〜」 — the more literary 「でなくてなんであろうか」 asserts it forcefully."
+    },
+    "wrong": [
+      {
+        "zh": "「ではあるまいし」（又不是……）后面必须接说话人的主张，不能结句。",
+        "en": "「ではあるまいし」 (it's not as if …) needs a following clause and can't end the sentence."
+      },
+      {
+        "zh": "「にすぎない」是“只不过是”，与“众多遇难者”的愤慨语气相反。",
+        "en": "「にすぎない」 (merely) clashes with the outrage over many deaths."
+      },
+      null,
+      {
+        "zh": "「とはいえ」是逆接“虽说……”，后面必须有下文。",
+        "en": "「とはいえ」 (even so) is concessive and needs a following clause."
+      }
+    ]
+  },
+  {
+    "id": "n1-l86-009",
+    "type": "narabe",
+    "refs": [
+      "lesson86#3"
+    ],
+    "difficulty": 2,
+    "stem": "何十年も見返りを求めず、黙々と地域の子どもたちを支えてきた。これが [_] [★] [_] [_] 。",
+    "options": [
+      "優しさ",
+      "なんだろう",
+      "本当の",
+      "でなくて"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "何十年も見返りを求めず、黙々と地域の子どもたちを支えてきた。これが本当の優しさでなくてなんだろう。",
+    "tr": {
+      "zh": "几十年来不求回报，默默地支持着地方上的孩子们。这不是真正的善良又是什么呢？",
+      "en": "For decades, asking nothing in return, they quietly supported the children of the area. If that isn't true kindness, what is?"
+    },
+    "why": {
+      "zh": "「本当の」修饰名词「優しさ」，后接「でなくてなんだろう」：本当の → 優しさ → でなくて → なんだろう。★ 是「優しさ」。",
+      "en": "「本当の」 modifies the noun 「優しさ」, then 「でなくてなんだろう」: 本当の → 優しさ → でなくて → なんだろう. The ★ is 「優しさ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l86-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson86#4"
+    ],
+    "difficulty": 2,
+    "stem": "会社の車をぶつけてしまった。黙っていてもいずれ分かることだし、上司に報告し（　）。",
+    "options": [
+      "ないものでもない",
+      "ないでもない",
+      "ないではすまない",
+      "ずにすむ"
+    ],
+    "answer": 2,
+    "full": "会社の車をぶつけてしまった。黙っていてもいずれ分かることだし、上司に報告しないではすまない。",
+    "tr": {
+      "zh": "把公司的车撞了。瞒着早晚也会被发现，不向上司报告是过不去的。",
+      "en": "I've dented the company car. It'll come out sooner or later anyway, so I can't get away without telling my boss."
+    },
+    "why": {
+      "zh": "情况要求必须这样做，不做就交代不了，用「ないではすまない」（不……就过不去）。",
+      "en": "The situation demands it and there's no getting out of it — 「ないではすまない」 (can't get away without)."
+    },
+    "wrong": [
+      {
+        "zh": "「ないものでもない」是“也不是不……”的消极肯定，和必须报告的语境不符。",
+        "en": "「ないものでもない」 (not out of the question) is a reluctant maybe, not an obligation."
+      },
+      {
+        "zh": "「ないでもない」是“多少有点……”，语气太轻，不表示必须。",
+        "en": "「ないでもない」 (somewhat) is too weak and doesn't express necessity."
+      },
+      null,
+      {
+        "zh": "「ずにすむ」要接「報告せ」（「報告せずにすむ」），「報告しずに」接续错误；意思也相反。",
+        "en": "「ずにすむ」 needs 「報告せ」 (「報告せずにすむ」); 「報告しずに」 is malformed, and the meaning is the opposite."
+      }
+    ]
+  },
+  {
+    "id": "n1-l86-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson86#4"
+    ],
+    "difficulty": 2,
+    "stem": "大切なお客様の注文を間違えて届けてしまった。担当者として、直接お詫びに伺わ（　）だろう。",
+    "options": [
+      "ないではいられない",
+      "ないではすまない",
+      "ないものでもない",
+      "ずにすむ"
+    ],
+    "answer": 1,
+    "full": "大切なお客様の注文を間違えて届けてしまった。担当者として、直接お詫びに伺わないではすまないだろう。",
+    "tr": {
+      "zh": "把重要客户的订单送错了。作为负责人，不亲自登门道歉恐怕说不过去吧。",
+      "en": "I delivered an important client's order wrong. As the person in charge, I'll have to go and apologise in person."
+    },
+    "why": {
+      "zh": "「担当者として」是外部的责任和常识要求，用「ないではすまない」（不……就过不去）。",
+      "en": "「担当者として」 points to what one's role demands — 「ないではすまない」 (can't get away without)."
+    },
+    "wrong": [
+      {
+        "zh": "「ないではいられない」是内心冲动“忍不住……”，不是责任上的必须。",
+        "en": "「ないではいられない」 is an inner urge (can't help …), not what one's role requires."
+      },
+      null,
+      {
+        "zh": "「ないものでもない」是“也不是不……”，与“作为负责人”的责任感不符。",
+        "en": "「ないものでもない」 (not out of the question) is too half-hearted for \"as the person in charge\"."
+      },
+      {
+        "zh": "「ずにすむ」是“不用……就解决了”，意思正相反。",
+        "en": "「ずにすむ」 (get away without) means the opposite."
+      }
+    ]
+  },
+  {
+    "id": "n1-l86-012",
+    "type": "narabe",
+    "refs": [
+      "lesson86#4"
+    ],
+    "difficulty": 2,
+    "stem": "これだけ世間を騒がせた以上、社長も [_] [_] [_] [★] だろう。",
+    "options": [
+      "ないでは",
+      "記者会見を",
+      "すまない",
+      "開か"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "これだけ世間を騒がせた以上、社長も記者会見を開かないではすまないだろう。",
+    "tr": {
+      "zh": "既然引起了这么大的社会风波，社长也不得不召开记者会吧。",
+      "en": "After causing such a public stir, even the president will have to hold a press conference."
+    },
+    "why": {
+      "zh": "宾语「記者会見を」在前，动词ない形「開か」后接「ないではすまない」：記者会見を → 開か → ないでは → すまない。★ 是「すまない」。",
+      "en": "The object 「記者会見を」 first, then 「開か」 + 「ないではすまない」: 記者会見を → 開か → ないでは → すまない. The ★ is 「すまない」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l86-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson86#5"
+    ],
+    "difficulty": 2,
+    "stem": "報酬次第では、その依頼を引き受け（　）。",
+    "options": [
+      "ないではすまない",
+      "ないものでもない",
+      "ないではいられない",
+      "ずにはおかない"
+    ],
+    "answer": 1,
+    "full": "報酬次第では、その依頼を引き受けないものでもない。",
+    "tr": {
+      "zh": "看报酬多少，那个委托也不是不能接。",
+      "en": "Depending on the fee, I might just take on that job."
+    },
+    "why": {
+      "zh": "「報酬次第では」提出条件，有所保留的肯定，用「ないものでもない」（也并非不……）。",
+      "en": "「報酬次第では」 sets a condition for a guarded yes — 「ないものでもない」 (not out of the question)."
+    },
+    "wrong": [
+      {
+        "zh": "「ないではすまない」是“必须……”，和“看报酬”的保留态度矛盾。",
+        "en": "「ないではすまない」 (have no choice but) contradicts the conditional \"depending on the fee\"."
+      },
+      null,
+      {
+        "zh": "「ないではいられない」是忍不住的冲动，和讨价还价的语气不符。",
+        "en": "「ないではいられない」 is an irresistible urge, not haggling over terms."
+      },
+      {
+        "zh": "「ずにはおかない」是“必然会……”，不表示有条件的同意。",
+        "en": "「ずにはおかない」 (will inevitably) doesn't express conditional agreement."
+      }
+    ]
+  },
+  {
+    "id": "n1-l86-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson86#5"
+    ],
+    "difficulty": 2,
+    "stem": "はっきりとは言えないが、最近、彼に避けられている気がし（　）。",
+    "options": [
+      "ないではすまない",
+      "てやまない",
+      "ないものでもない",
+      "ないでもない"
+    ],
+    "answer": 3,
+    "full": "はっきりとは言えないが、最近、彼に避けられている気がしないでもない。",
+    "tr": {
+      "zh": "虽然说不准，但最近总觉得他好像在躲着我。",
+      "en": "I can't say for sure, but lately I somehow get the feeling he's avoiding me."
+    },
+    "why": {
+      "zh": "「はっきりとは言えない」表示“多少有那么一点”的感觉，固定说法「気がしないでもない」。",
+      "en": "「はっきりとは言えない」 signals a vague feeling — the set phrase 「気がしないでもない」."
+    },
+    "wrong": [
+      {
+        "zh": "「ないではすまない」是“必须……”，不能接「気がする」。",
+        "en": "「ないではすまない」 (must) can't go with 「気がする」."
+      },
+      {
+        "zh": "「てやまない」接「願う・愛する」等愿望、感情动词，不接「気がする」（要用「気がしてならない」）。",
+        "en": "「てやまない」 follows wish/love verbs, not 「気がする」 (that would be 「気がしてならない」)."
+      },
+      {
+        "zh": "课文指出一般不说「気がしないものでもない」，固定说法是「気がしないでもない」。",
+        "en": "「気がしないものでもない」 isn't idiomatic; the fixed phrase is 「気がしないでもない」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l86-015",
+    "type": "narabe",
+    "refs": [
+      "lesson86#5"
+    ],
+    "difficulty": 2,
+    "stem": "あと三日 [_] [_] [★] [_] 。",
+    "options": [
+      "一人でも",
+      "ものでもない",
+      "あれば",
+      "仕上げられない"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "あと三日あれば一人でも仕上げられないものでもない。",
+    "tr": {
+      "zh": "如果再有三天，一个人也不是做不完。",
+      "en": "Given three more days, I could probably finish it on my own."
+    },
+    "why": {
+      "zh": "条件「あと三日あれば」在前，再接「一人でも仕上げられないものでもない」：あれば → 一人でも → 仕上げられない → ものでもない。★ 是「仕上げられない」。",
+      "en": "The condition 「あと三日あれば」 first, then 「一人でも仕上げられないものでもない」: あれば → 一人でも → 仕上げられない → ものでもない. The ★ is 「仕上げられない」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l86-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson86#6"
+    ],
+    "difficulty": 2,
+    "stem": "どれほど貴重な資料でも、火事で焼けて（　）。だからこそ、早めのデジタル化が必要なのだ。",
+    "options": [
+      "しまうまでだ",
+      "しまったら最後だ",
+      "しまえばそれまでだ",
+      "しまうにかたくない"
+    ],
+    "answer": 2,
+    "full": "どれほど貴重な資料でも、火事で焼けてしまえばそれまでだ。だからこそ、早めのデジタル化が必要なのだ。",
+    "tr": {
+      "zh": "再珍贵的资料，一旦被火烧了也就完了。正因为如此，才需要尽早数字化。",
+      "en": "However precious the documents, once they burn in a fire, that's the end of them. That's exactly why we need to digitise them soon."
+    },
+    "why": {
+      "zh": "「どれほど〜でも」与「〜てしまえばそれまでだ」呼应，表示一旦发生就一切化为乌有。",
+      "en": "「どれほど〜でも」 pairs with 「〜てしまえばそれまでだ」: once that happens, everything is lost."
+    },
+    "wrong": [
+      {
+        "zh": "「辞書形＋までだ」是说话人“大不了……”的决心，资料被烧不是决心。",
+        "en": "「までだ」 is the speaker's resolve; a fire destroying documents isn't a decision."
+      },
+      {
+        "zh": "「たら最後」后面必须接具体的坏结果，不能直接以「最後だ」结句。",
+        "en": "「たら最後」 must be followed by a concrete bad result; it can't end as 「最後だ」."
+      },
+      null,
+      {
+        "zh": "「にかたくない」只接「想像・察する・理解」。",
+        "en": "「にかたくない」 only goes with 想像/察する/理解."
+      }
+    ]
+  },
+  {
+    "id": "n1-l86-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson86#6"
+    ],
+    "difficulty": 3,
+    "stem": "「時代の流れだ」と言って（　）が、商店街が衰退した背景には行政の無策もあった。",
+    "options": [
+      "しまうにかたくない",
+      "しまえばそれまでだ",
+      "しまったら最後だ",
+      "しまうに足りない"
+    ],
+    "answer": 1,
+    "full": "「時代の流れだ」と言ってしまえばそれまでだが、商店街が衰退した背景には行政の無策もあった。",
+    "tr": {
+      "zh": "说一句“这是时代潮流”也就没什么可说的了，但商店街衰落的背后，也有行政部门的无所作为。",
+      "en": "You could just say \"it's the way things are going\" and leave it there, but behind the shopping street's decline lay the authorities' inaction too."
+    },
+    "why": {
+      "zh": "「言ってしまえばそれまでだが」是固定用法：简单一句话概括就没什么可说了，后面用「が」引出真正想说的话。",
+      "en": "「言ってしまえばそれまでだが」 is a set use: sum it up in a phrase and there's nothing more to say — then 「が」 brings in the real point."
+    },
+    "wrong": [
+      {
+        "zh": "「にかたくない」只接「想像・察する・理解」，不接「言ってしまう」。",
+        "en": "「にかたくない」 goes with 想像/察する/理解, not 「言ってしまう」."
+      },
+      null,
+      {
+        "zh": "「たら最後」后面要接具体的坏结果，不能接「だが」。",
+        "en": "「たら最後」 must be followed by a concrete bad result, not 「だが」."
+      },
+      {
+        "zh": "「に足りない」只用于「取るに足りない」等固定搭配。",
+        "en": "「に足りない」 is limited to set phrases like 「取るに足りない」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l86-018",
+    "type": "narabe",
+    "refs": [
+      "lesson86#6"
+    ],
+    "difficulty": 2,
+    "stem": "どんなにいい企画でも、[★] [_] [_] [_] 。",
+    "options": [
+      "までだ",
+      "会議で",
+      "それ",
+      "通らなければ"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "どんなにいい企画でも、会議で通らなければそれまでだ。",
+    "tr": {
+      "zh": "企划再好，会上通不过也就到此为止了。",
+      "en": "However good a proposal is, if it doesn't get through the meeting, that's the end of it."
+    },
+    "why": {
+      "zh": "「会議で」修饰「通らなければ」，后接固定的「それまでだ」：会議で → 通らなければ → それ → までだ。★ 是「会議で」。",
+      "en": "「会議で」 modifies 「通らなければ」, followed by the fixed 「それまでだ」: 会議で → 通らなければ → それ → までだ. The ★ is 「会議で」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

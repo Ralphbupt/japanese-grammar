@@ -3429,13 +3429,13 @@ ${appAttrs === null || /data-mode="cards"/.test(appAttrs) ? "" : AI_SCRIPT}
   };
   const hubMeta = {
     en: {
-      title: "JLPT Practice Tests Online — N5 to N2 Questions, Mock Tests & Flashcards",
+      title: "JLPT Practice Tests Online — N5 to N1 Questions, Mock Tests & Flashcards",
       desc: "Free JLPT practice in your browser: exam-style questions for every section except listening, timed mock tests with estimated scores, and grammar flashcards with spaced repetition. No sign-up.",
       h1: "Practice", crumb: "Practice", nav: "",
       lead: "Everything on this site you do rather than read. Pick your level; progress stays in this browser.",
     },
     zh: {
-      title: "JLPT 在线练习题 - N5 到 N2 练习、模拟题、语法卡片",
+      title: "JLPT 在线练习题 - N5 到 N1 练习、模拟题、语法卡片",
       desc: "免费在线做 JLPT 题：除听力外全部题型的仿真练习题、计时模拟题（交卷估分）、语法卡片间隔复习，打开即用，无需注册。",
       h1: "做题", crumb: "做题", nav: "",
       lead: "这里是本站所有“动手”的部分：练习、模拟、背卡。选你的级别开始，进度保存在这个浏览器里。",

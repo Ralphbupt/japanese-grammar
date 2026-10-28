@@ -1,0 +1,699 @@
+[
+  {
+    "id": "n1-l91-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson91#1"
+    ],
+    "difficulty": 1,
+    "stem": "休日も返上して働く父（　）、兄は昼過ぎまで寝てばかりいる。",
+    "options": [
+      "と相まって",
+      "に則って",
+      "にひきかえ",
+      "たるもの"
+    ],
+    "answer": 2,
+    "full": "休日も返上して働く父にひきかえ、兄は昼過ぎまで寝てばかりいる。",
+    "tr": {
+      "zh": "和休息日也不休息、照样工作的父亲相反，哥哥却总是睡到过了中午。",
+      "en": "Unlike my father, who works even on his days off, my brother does nothing but sleep till past noon."
+    },
+    "why": {
+      "zh": "勤快的父亲和懒散的哥哥性质相反，说话人带有批评，用「にひきかえ」。",
+      "en": "A hard-working father against an idle brother — opposites, with the speaker's criticism: 「にひきかえ」."
+    },
+    "wrong": [
+      {
+        "zh": "「と相まって」是两个因素相结合产生结果，父亲和哥哥是性质相反的对照，不是相互作用。",
+        "en": "「と相まって」 combines two factors into one result; father and son here are being contrasted."
+      },
+      {
+        "zh": "「に則って」前面要接法律、规则等规范，「父に則って」不成立。",
+        "en": "「に則って」 needs a rule or law before it; 「父に則って」 makes no sense."
+      },
+      null,
+      {
+        "zh": "「たるもの」讲某种身份应有的规范，后接「べきだ」等，不能用来对照两个人。",
+        "en": "「たるもの」 states the norm for a role (with 「べきだ」); it can't contrast two people."
+      }
+    ]
+  },
+  {
+    "id": "n1-l91-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson91#1"
+    ],
+    "difficulty": 2,
+    "stem": "隣の家の子どもたちは、会うたびに元気よく挨拶してくれる。それ（　）、うちの息子は近所の人に会っても目も合わせない。",
+    "options": [
+      "にひきかえ",
+      "ばかりか",
+      "と相まって",
+      "に則り"
+    ],
+    "answer": 0,
+    "full": "隣の家の子どもたちは、会うたびに元気よく挨拶してくれる。それにひきかえ、うちの息子は近所の人に会っても目も合わせない。",
+    "tr": {
+      "zh": "邻居家的孩子们每次见面都精神十足地向我打招呼。与此相反，我家儿子碰到邻居连眼都不对一下。",
+      "en": "The children next door greet me cheerfully every time we meet. My son, by contrast, won't even look the neighbours in the eye."
+    },
+    "why": {
+      "zh": "句首「それにひきかえ」把前后两件性质相反的事对照，带有对自家儿子的不满。",
+      "en": "Sentence-initial 「それにひきかえ」 sets two opposite things side by side, here with frustration at one's own son."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「そればかりか」是“不仅如此（还）”，用于递进，而后句与前句是相反的对照。",
+        "en": "「そればかりか」 (what's more) adds to the previous point; the next sentence is the opposite."
+      },
+      {
+        "zh": "「それと相まって」表示与之结合产生结果，邻居孩子的礼貌不会造成儿子不打招呼。",
+        "en": "「それと相まって」 means combining to produce a result; the neighbours' politeness doesn't cause this."
+      },
+      {
+        "zh": "「に則り」前面要接规则、传统等规范，「それに則り」意思不通。",
+        "en": "「に則り」 needs a rule or tradition before it; 「それに則り」 doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n1-l91-003",
+    "type": "narabe",
+    "refs": [
+      "lesson91#1"
+    ],
+    "difficulty": 2,
+    "stem": "[_] [_] [★] [_] 、弟は黙々と家業を手伝っている。",
+    "options": [
+      "口ばかりで",
+      "兄に",
+      "何もしない",
+      "ひきかえ"
+    ],
+    "order": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "full": "口ばかりで何もしない兄にひきかえ、弟は黙々と家業を手伝っている。",
+    "tr": {
+      "zh": "和光说不做的哥哥相反，弟弟默默地帮着家里干活。",
+      "en": "Unlike his brother, who is all talk and does nothing, the younger son quietly helps with the family business."
+    },
+    "why": {
+      "zh": "「口ばかりで何もしない」修饰「兄」，「兄にひきかえ」与后面的「弟」对照：口ばかりで → 何もしない → 兄に → ひきかえ。★ 是「兄に」。",
+      "en": "「口ばかりで何もしない」 modifies 「兄」, and 「兄にひきかえ」 contrasts with 「弟」: 口ばかりで → 何もしない → 兄に → ひきかえ. The ★ is 「兄に」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l91-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson91#2"
+    ],
+    "difficulty": 1,
+    "stem": "市民の安全を守るべき警察官（　）、飲酒運転で事故を起こすとは信じられない。",
+    "options": [
+      "たるもの",
+      "ともなると",
+      "にしては",
+      "ともあろう者が"
+    ],
+    "answer": 3,
+    "full": "市民の安全を守るべき警察官ともあろう者が、飲酒運転で事故を起こすとは信じられない。",
+    "tr": {
+      "zh": "堂堂应该守护市民安全的警察，竟然酒后驾车出了事故，真令人难以置信。",
+      "en": "That a police officer, of all people, whose job is to keep citizens safe, should cause an accident while drink-driving is unbelievable."
+    },
+    "why": {
+      "zh": "地位应受信赖的「警察官」做了不相称的坏事，句尾「とは信じられない」表示惊讶批评，用「ともあろう者が」。",
+      "en": "A police officer doing something unworthy of the role, ending 「とは信じられない」: 「ともあろう者が」."
+    },
+    "wrong": [
+      {
+        "zh": "「たるもの」讲身份应有的规范，后接「べきだ」等，不用于批评已经发生的具体事件。",
+        "en": "「たるもの」 states the norm for a role (with 「べきだ」), not criticism of a specific incident."
+      },
+      {
+        "zh": "「ともなると」讲到了某个地位后的一般规律，不带批评，后面也不会接「とは信じられない」。",
+        "en": "「ともなると」 states a general rule at a certain level, without criticism."
+      },
+      {
+        "zh": "「にしては」是“就……而言（出乎意料）”，「警察官にしては事故を起こすとは」接续不通。",
+        "en": "「にしては」 (for a …) doesn't fit with 「事故を起こすとは信じられない」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l91-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson91#2"
+    ],
+    "difficulty": 2,
+    "stem": "一国の首相ともあろう人が、記者の前であんな軽率な発言を（　）。",
+    "options": [
+      "すべきだ",
+      "するとは",
+      "するものだ",
+      "してもいい"
+    ],
+    "answer": 1,
+    "full": "一国の首相ともあろう人が、記者の前であんな軽率な発言をするとは。",
+    "tr": {
+      "zh": "堂堂一国首相，竟然在记者面前说出那么轻率的话。",
+      "en": "To think that the prime minister of a country should make such careless remarks in front of reporters!"
+    },
+    "why": {
+      "zh": "「ともあろう人が」后接对具体事件的惊讶、批评，句尾常用「〜とは」。",
+      "en": "「ともあろう人が」 leads to surprise and criticism of a specific act, often ending in 「〜とは」."
+    },
+    "wrong": [
+      {
+        "zh": "「ともあろう人が」后面是与身份不相称的事，“应该发表轻率的言论”自相矛盾。",
+        "en": "After 「ともあろう人が」 comes something unworthy; \"should make careless remarks\" is self-contradictory."
+      },
+      null,
+      {
+        "zh": "「ものだ」讲一般道理，而这里批评的是已经发生的具体发言。",
+        "en": "「ものだ」 states a general truth; here a specific remark is being criticised."
+      },
+      {
+        "zh": "「してもいい」是许可，与「ともあろう」的批评语气相反。",
+        "en": "「してもいい」 grants permission — the opposite of the criticism in 「ともあろう」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l91-006",
+    "type": "narabe",
+    "refs": [
+      "lesson91#2"
+    ],
+    "difficulty": 2,
+    "stem": "[_] [_] [_] [★] 患者の個人情報をネットに書き込むとは、言語道断だ。",
+    "options": [
+      "あろう者が",
+      "預かる",
+      "人の命を",
+      "医師とも"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "人の命を預かる医師ともあろう者が患者の個人情報をネットに書き込むとは、言語道断だ。",
+    "tr": {
+      "zh": "堂堂掌管人命的医生，竟然把患者的个人信息写到网上，简直岂有此理。",
+      "en": "For a doctor, entrusted with people's lives, to post a patient's personal details online is outrageous."
+    },
+    "why": {
+      "zh": "「人の命を預かる」修饰「医師」，再接「ともあろう者が」：人の命を → 預かる → 医師とも → あろう者が。★ 是「あろう者が」。",
+      "en": "「人の命を預かる」 modifies 「医師」, then 「ともあろう者が」: 人の命を → 預かる → 医師とも → あろう者が. The ★ is 「あろう者が」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l91-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson91#3",
+      "lesson91#2"
+    ],
+    "difficulty": 1,
+    "stem": "裁判官（　）、いかなる圧力にも屈することなく、公正な判断を下さなければならない。",
+    "options": [
+      "ともあろう者が",
+      "たるもの",
+      "ではあるまいし",
+      "にひきかえ"
+    ],
+    "answer": 1,
+    "full": "裁判官たるもの、いかなる圧力にも屈することなく、公正な判断を下さなければならない。",
+    "tr": {
+      "zh": "身为法官，就必须不屈服于任何压力，做出公正的判决。",
+      "en": "Anyone who is a judge must give fair judgements without yielding to any pressure."
+    },
+    "why": {
+      "zh": "讲一种身份应有的规范，后项是「なければならない」，用「たるもの」。",
+      "en": "The norm for a role, ending in 「なければならない」: 「たるもの」."
+    },
+    "wrong": [
+      {
+        "zh": "「ともあろう者が」批评已经发生的不相称行为，不能接「なければならない」这种规范。",
+        "en": "「ともあろう者が」 criticises a specific unworthy act; it can't lead to 「なければならない」."
+      },
+      null,
+      {
+        "zh": "「ではあるまいし」是“又不是……”，而主语正是法官，意思相反。",
+        "en": "「ではあるまいし」 is \"it's not as if you were …\", but the subject is a judge."
+      },
+      {
+        "zh": "「にひきかえ」对照两件相反的事，这里没有对照的对象。",
+        "en": "「にひきかえ」 contrasts two opposite things; there's nothing to contrast here."
+      }
+    ]
+  },
+  {
+    "id": "n1-l91-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson91#3"
+    ],
+    "difficulty": 2,
+    "stem": "彼の振る舞いは、一国の代表（　）人物にふさわしいものではなかった。",
+    "options": [
+      "たる",
+      "たるもの",
+      "ごとき",
+      "めいた"
+    ],
+    "answer": 0,
+    "full": "彼の振る舞いは、一国の代表たる人物にふさわしいものではなかった。",
+    "tr": {
+      "zh": "他的举止与一国代表的身份很不相称。",
+      "en": "His behaviour was not befitting a person who represents a nation."
+    },
+    "why": {
+      "zh": "「AたるB」=「AであるB」，修饰名词「人物」，常和「ふさわしい」连用。",
+      "en": "「AたるB」 = 「AであるB」, modifying the noun 「人物」, often with 「ふさわしい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「たるもの」后面接逗号和规范句，不能直接修饰名词「人物」。",
+        "en": "「たるもの」 is followed by a comma and a norm; it can't modify the noun 「人物」."
+      },
+      {
+        "zh": "「Nごとき」带轻视，和「ふさわしい」所要求的崇高身份矛盾。",
+        "en": "「Nごとき」 is contemptuous, clashing with the high status 「ふさわしい」 implies."
+      },
+      {
+        "zh": "「めいた」只接「謎」「冗談」等少数名词，表示“有……的气息”，「代表めいた」不成立。",
+        "en": "「めいた」 goes with a few nouns (謎, 冗談); 「代表めいた」 doesn't exist."
+      }
+    ]
+  },
+  {
+    "id": "n1-l91-009",
+    "type": "narabe",
+    "refs": [
+      "lesson91#3"
+    ],
+    "difficulty": 2,
+    "stem": "[★] [_] [_] [_] 、生徒の前で他人の悪口を言うべきではない。",
+    "options": [
+      "教師",
+      "導く",
+      "たるもの",
+      "子どもを"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "子どもを導く教師たるもの、生徒の前で他人の悪口を言うべきではない。",
+    "tr": {
+      "zh": "身为引导孩子的教师，不应该在学生面前说别人的坏话。",
+      "en": "Anyone who is a teacher, guiding children, should never speak ill of others in front of students."
+    },
+    "why": {
+      "zh": "「子どもを導く」修饰「教師」，「教師たるもの」后接规范「べきではない」：子どもを → 導く → 教師 → たるもの。★ 是「子どもを」。",
+      "en": "「子どもを導く」 modifies 「教師」, and 「教師たるもの」 leads to the norm 「べきではない」: 子どもを → 導く → 教師 → たるもの. The ★ is 「子どもを」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l91-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson91#4"
+    ],
+    "difficulty": 1,
+    "stem": "もう十年もこの仕事をしているんだろう。新人（　）、こんな基本的なミスをしてどうするんだ。",
+    "options": [
+      "のくせに",
+      "にひきかえ",
+      "たるもの",
+      "じゃあるまいし"
+    ],
+    "answer": 3,
+    "full": "もう十年もこの仕事をしているんだろう。新人じゃあるまいし、こんな基本的なミスをしてどうするんだ。",
+    "tr": {
+      "zh": "你干这份工作都十年了吧。又不是新人，犯这种低级错误像什么话。",
+      "en": "You've been doing this job for ten years, haven't you? You're not a newcomer — how could you make such a basic mistake?"
+    },
+    "why": {
+      "zh": "「十年も」说明对方明显不是新人，据此责备，用「じゃあるまいし」（又不是……）。",
+      "en": "「十年も」 shows the listener plainly isn't a newcomer; the rebuke rests on that: 「じゃあるまいし」."
+    },
+    "wrong": [
+      {
+        "zh": "「くせに」的前提A是事实，而对方已经干了十年，并不是新人。",
+        "en": "With 「くせに」, A is true — but the listener has ten years' experience, not a newcomer."
+      },
+      {
+        "zh": "「にひきかえ」对照两个性质相反的人或事，这里没有和新人对照的对象。",
+        "en": "「にひきかえ」 contrasts two opposite people or things; there's no such pair here."
+      },
+      {
+        "zh": "「新人たるもの」讲新人应有的规范，而对方并不是新人。",
+        "en": "「新人たるもの」 states a newcomer's duty, but the listener isn't one."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l91-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson91#4"
+    ],
+    "difficulty": 2,
+    "stem": "宇宙旅行に行くわけではあるまいし、（　）。",
+    "options": [
+      "彼は大きなスーツケースを三つも用意した",
+      "出発は来週の月曜日だ",
+      "そんなに大きな荷物はいらないだろう",
+      "旅の準備は楽しいものだ"
+    ],
+    "answer": 2,
+    "full": "宇宙旅行に行くわけではあるまいし、そんなに大きな荷物はいらないだろう。",
+    "tr": {
+      "zh": "又不是去太空旅行，用不着那么大的行李吧。",
+      "en": "It's not as if you're going to space — you don't need that much luggage."
+    },
+    "why": {
+      "zh": "「わけではあるまいし」后接说话人的判断、劝告：不是去太空 → 不需要那么多行李。",
+      "en": "「わけではあるまいし」 leads to the speaker's judgement: not a space trip, so no need for that much luggage."
+    },
+    "wrong": [
+      {
+        "zh": "后项必须是说话人的主张（劝告、批评、判断），不能是客观叙述。",
+        "en": "The second half must be the speaker's own view (advice, criticism), not a neutral report."
+      },
+      {
+        "zh": "单纯叙述出发日期，不是基于“又不是去太空”提出的主张。",
+        "en": "Just stating the departure date isn't a conclusion drawn from \"it's not a space trip\"."
+      },
+      null,
+      {
+        "zh": "“准备旅行很开心”与“又不是去太空旅行”之间没有逻辑关系。",
+        "en": "\"Packing is fun\" doesn't follow from \"it's not as if you're going to space\"."
+      }
+    ]
+  },
+  {
+    "id": "n1-l91-012",
+    "type": "narabe",
+    "refs": [
+      "lesson91#4"
+    ],
+    "difficulty": 2,
+    "stem": "[_] [★] [_] [_] 、来年のことなんて誰にも分からないよ。",
+    "options": [
+      "わけじゃ",
+      "あるまいし",
+      "見える",
+      "未来が"
+    ],
+    "order": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "full": "未来が見えるわけじゃあるまいし、来年のことなんて誰にも分からないよ。",
+    "tr": {
+      "zh": "又不是能看见未来，明年的事谁也不知道啊。",
+      "en": "It's not as if anyone can see the future — nobody knows what next year will bring."
+    },
+    "why": {
+      "zh": "动词句后用「わけじゃあるまいし」：未来が → 見える → わけじゃ → あるまいし。★ 是「見える」。",
+      "en": "After a verb phrase it's 「わけじゃあるまいし」: 未来が → 見える → わけじゃ → あるまいし. The ★ is 「見える」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l91-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson91#5"
+    ],
+    "difficulty": 2,
+    "stem": "ビザ要件の緩和に円安（　）、今年の外国人観光客の数は過去最高を記録した。",
+    "options": [
+      "も相まって",
+      "に則って",
+      "にひきかえ",
+      "をもって"
+    ],
+    "answer": 0,
+    "full": "ビザ要件の緩和に円安も相まって、今年の外国人観光客の数は過去最高を記録した。",
+    "tr": {
+      "zh": "签证条件放宽，再加上日元贬值，今年的外国游客人数创下了历史新高。",
+      "en": "Eased visa requirements, coupled with the weak yen, brought a record number of foreign tourists this year."
+    },
+    "why": {
+      "zh": "「AにBも相まって」：两个因素共同作用，后项是结果「過去最高を記録した」。",
+      "en": "「AにBも相まって」: two factors working together, leading to the result 「過去最高を記録した」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に則って」前面要接法律、规则等规范，「円安に則って」意思不通。",
+        "en": "「に則って」 needs a rule or law; 「円安に則って」 makes no sense."
+      },
+      {
+        "zh": "「にひきかえ」对照两件相反的事，签证放宽和日元贬值并不相反，而是共同起作用。",
+        "en": "「にひきかえ」 contrasts opposites; easier visas and a weak yen work together."
+      },
+      {
+        "zh": "「をもって」表示手段或截止时间，「円安をもって」不能表示两个因素叠加。",
+        "en": "「をもって」 marks means or a cut-off date; it can't add a second factor."
+      }
+    ]
+  },
+  {
+    "id": "n1-l91-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson91#5"
+    ],
+    "difficulty": 2,
+    "stem": "美しい景観と豊かな食文化が（　）、この町は国内外から多くの観光客を引きつけている。",
+    "options": [
+      "相次いで",
+      "伴って",
+      "加えて",
+      "相まって"
+    ],
+    "answer": 3,
+    "full": "美しい景観と豊かな食文化が相まって、この町は国内外から多くの観光客を引きつけている。",
+    "tr": {
+      "zh": "美丽的景观加上丰富的饮食文化，使这座小镇吸引了大量国内外游客。",
+      "en": "Its beautiful scenery and rich food culture together draw many tourists to this town from home and abroad."
+    },
+    "why": {
+      "zh": "「AとBが相まって」：两个特质共同作用，产生“吸引游客”的结果。",
+      "en": "「AとBが相まって」: two qualities combining to produce the result of drawing tourists."
+    },
+    "wrong": [
+      {
+        "zh": "「相次いで」是“接连发生”，景观和饮食文化不是接连发生的事件。",
+        "en": "「相次いで」 (one after another) is for events; scenery and food culture aren't events."
+      },
+      {
+        "zh": "「伴う」是“随之而来”，「AとBが伴って」不成立。",
+        "en": "「伴う」 is \"accompany\"; 「AとBが伴って」 isn't a pattern."
+      },
+      {
+        "zh": "「加えて」用「AにBを加えて」或「Aに加えて」，「AとBが加えて」接续不对。",
+        "en": "「加えて」 is 「Aに加えて」; 「AとBが加えて」 is the wrong construction."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l91-015",
+    "type": "narabe",
+    "refs": [
+      "lesson91#5"
+    ],
+    "difficulty": 2,
+    "stem": "彼の誠実な [_] [_] [★] [_] 、顧客から厚い信頼を得ている。",
+    "options": [
+      "人柄は",
+      "技術と",
+      "相まって",
+      "高い"
+    ],
+    "order": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "full": "彼の誠実な人柄は高い技術と相まって、顧客から厚い信頼を得ている。",
+    "tr": {
+      "zh": "他诚实的为人加上高超的技术，赢得了客户的深厚信赖。",
+      "en": "His honest character, combined with his high level of skill, has earned him his clients' deep trust."
+    },
+    "why": {
+      "zh": "「誠実な」修饰「人柄」，「AはBと相まって」：人柄は → 高い → 技術と → 相まって。★ 是「技術と」。",
+      "en": "「誠実な」 modifies 「人柄」, then 「AはBと相まって」: 人柄は → 高い → 技術と → 相まって. The ★ is 「技術と」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l91-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson91#6"
+    ],
+    "difficulty": 1,
+    "stem": "事故の責任の所在については、法律（　）厳正に判断されるべきだ。",
+    "options": [
+      "に先立って",
+      "に則って",
+      "にひきかえ",
+      "と相まって"
+    ],
+    "answer": 1,
+    "full": "事故の責任の所在については、法律に則って厳正に判断されるべきだ。",
+    "tr": {
+      "zh": "关于事故责任的归属，应当依照法律严格判断。",
+      "en": "Responsibility for the accident should be judged strictly in accordance with the law."
+    },
+    "why": {
+      "zh": "以法律这一既定规范为标准，用「に則って」。",
+      "en": "Following an established norm, the law: 「に則って」."
+    },
+    "wrong": [
+      {
+        "zh": "「に先立って」是“在……之前”，「法律に先立って判断」意思不通。",
+        "en": "「に先立って」 (prior to) makes no sense with 「法律」."
+      },
+      null,
+      {
+        "zh": "「にひきかえ」对照两件相反的事，这里没有对照。",
+        "en": "「にひきかえ」 contrasts two opposites; there's no contrast here."
+      },
+      {
+        "zh": "「と相まって」是两个因素叠加产生结果，「判断されるべきだ」是主张，不是结果。",
+        "en": "「と相まって」 combines factors into a result; 「判断されるべきだ」 is a demand, not a result."
+      }
+    ]
+  },
+  {
+    "id": "n1-l91-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson91#6"
+    ],
+    "difficulty": 2,
+    "stem": "過去十年分の気象データ（　）、市は新たな防災計画を策定した。",
+    "options": [
+      "に則って",
+      "にひきかえ",
+      "に基づいて",
+      "と相まって"
+    ],
+    "answer": 2,
+    "full": "過去十年分の気象データに基づいて、市は新たな防災計画を策定した。",
+    "tr": {
+      "zh": "市政府以过去十年的气象数据为依据，制定了新的防灾计划。",
+      "en": "Based on ten years of weather data, the city drew up a new disaster-prevention plan."
+    },
+    "why": {
+      "zh": "数据、事实是“依据”，用「に基づいて」；课文指出 ❌「調査結果に則って」。",
+      "en": "Data and facts are a basis: 「に基づいて」. The lesson marks ❌「調査結果に則って」."
+    },
+    "wrong": [
+      {
+        "zh": "「に則って」前面是法律、规则、传统等规范；数据是判断的依据，不是要遵照的规范。",
+        "en": "「に則って」 needs a norm (law, rule, tradition); data is a basis, not a norm to follow."
+      },
+      {
+        "zh": "「にひきかえ」对照两件相反的事，数据和计划不构成对照。",
+        "en": "「にひきかえ」 contrasts opposites; data and a plan aren't a contrast."
+      },
+      null,
+      {
+        "zh": "「と相まって」是两个事物、条件相互作用产生结果，后项不能是“市政府制定计划”这样的有意行为。",
+        "en": "「と相まって」 combines factors into a result; its second half can't be a deliberate act like the city drawing up a plan."
+      }
+    ]
+  },
+  {
+    "id": "n1-l91-018",
+    "type": "narabe",
+    "refs": [
+      "lesson91#6"
+    ],
+    "difficulty": 2,
+    "stem": "選挙は法律で [_] [_] [★] [_] なければならない。",
+    "options": [
+      "行われ",
+      "定められた",
+      "則って",
+      "規則に"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "選挙は法律で定められた規則に則って行われなければならない。",
+    "tr": {
+      "zh": "选举必须依照法律规定的规则进行。",
+      "en": "Elections must be conducted in accordance with the rules laid down by law."
+    },
+    "why": {
+      "zh": "「法律で定められた」修饰「規則」，「規則に則って行われなければならない」：定められた → 規則に → 則って → 行われ。★ 是「則って」。",
+      "en": "「法律で定められた」 modifies 「規則」, then 「規則に則って行われなければならない」: 定められた → 規則に → 則って → 行われ. The ★ is 「則って」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

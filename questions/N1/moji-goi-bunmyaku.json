@@ -1,0 +1,1286 @@
+[
+  {
+    "id": "n1-mg-301",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "出産と育児で五年間仕事を離れていたが、その（　）を感じさせない働きぶりだ。",
+    "options": [
+      "ブランク",
+      "スランプ",
+      "ノルマ",
+      "ジレンマ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "她因生育和育儿离开工作五年，但工作起来丝毫感觉不出这段空白。",
+      "en": "She was away from work for five years having and raising children, but you'd never know it from how she works."
+    },
+    "why": {
+      "zh": "离开工作五年＝中断的空白期，即「ブランク」。「ブランクを感じさせない」是固定说法。",
+      "en": "Five years away from work is a gap: 「ブランク」. 「ブランクを感じさせない」 is a set phrase."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「スランプ」是状态低迷，她并不是状态不好，而是离开了工作。",
+        "en": "「スランプ」 is a slump; she wasn't in a slump, she was away."
+      },
+      {
+        "zh": "「ノルマ」是规定的工作量（指标），与离开工作无关。",
+        "en": "「ノルマ」 is a quota — nothing to do with time away."
+      },
+      {
+        "zh": "「ジレンマ」是左右为难，与五年的空白无关。",
+        "en": "「ジレンマ」 is a dilemma, not a gap in time."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-302",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "翻訳では、原文の微妙な（　）まで伝えるのは難しい。",
+    "options": [
+      "ニュアンス",
+      "ニーズ",
+      "ノウハウ",
+      "コンセンサス"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "翻译时，要把原文的微妙语感都传达出来很难。",
+      "en": "In translation it's hard to convey even the subtle nuances of the original."
+    },
+    "why": {
+      "zh": "原文中“微妙的”东西＝语感、细微差别，即「ニュアンス」。",
+      "en": "What's \"subtle\" in an original text is its shades of meaning: 「ニュアンス」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ニーズ」是需求，原文没有“需求”。",
+        "en": "「ニーズ」 is needs or demand; a text doesn't have needs."
+      },
+      {
+        "zh": "「ノウハウ」是技术诀窍，不是原文中的东西。",
+        "en": "「ノウハウ」 is know-how, not something in a text."
+      },
+      {
+        "zh": "「コンセンサス」是共识，原文没有“共识”。",
+        "en": "「コンセンサス」 is consensus; a text doesn't have one."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-303",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "住民の（　）を得ないまま、市はごみ処理場の建設を決めてしまった。",
+    "options": [
+      "コンセンサス",
+      "ニュアンス",
+      "メカニズム",
+      "ジンクス"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "在没有取得居民共识的情况下，市里就决定了修建垃圾处理厂。",
+      "en": "The city decided to build the waste plant without getting the residents' agreement."
+    },
+    "why": {
+      "zh": "「住民の〜を得る」＝取得居民的同意，即「コンセンサス」（共识）。",
+      "en": "What you get from residents before deciding is agreement: 「コンセンサス」 (consensus)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ニュアンス」是细微差别，不能“取得”。",
+        "en": "「ニュアンス」 is a nuance; you can't obtain it from residents."
+      },
+      {
+        "zh": "「メカニズム」是机制、构造，不说「住民のメカニズムを得る」。",
+        "en": "「メカニズム」 is a mechanism; 「住民のメカニズムを得る」 makes no sense."
+      },
+      {
+        "zh": "「ジンクス」是吉凶的说法，与取得同意无关。",
+        "en": "「ジンクス」 is a jinx or superstition, unrelated to agreement."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-304",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "長年蓄積してきた店舗運営の（　）を、新しい事業にも生かしたい。",
+    "options": [
+      "ノウハウ",
+      "モラル",
+      "ジンクス",
+      "ビジョン"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "想把多年积累的店铺经营诀窍也运用到新业务中。",
+      "en": "We want to apply the store-management know-how we've built up over the years to the new business too."
+    },
+    "why": {
+      "zh": "多年“积累”、可以“运用”的经营方法＝「ノウハウ」（诀窍）。",
+      "en": "Practical knowledge you accumulate and then apply is 「ノウハウ」 (know-how)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「モラル」是道德，不说“店铺经营的道德”。",
+        "en": "「モラル」 is morals; \"store-management morals\" doesn't fit."
+      },
+      {
+        "zh": "「ジンクス」是吉凶的说法，不能积累后运用。",
+        "en": "「ジンクス」 is a superstition, not something you build up and apply."
+      },
+      {
+        "zh": "「ビジョン」是对将来的设想，不是“积累”起来的。",
+        "en": "「ビジョン」 is a vision for the future, not something accumulated."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-305",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "「このスタジアムでは一度も勝ったことがない」という（　）を、チームはついに破った。",
+    "options": [
+      "ジンクス",
+      "タブー",
+      "モットー",
+      "スローガン"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "球队终于打破了“在这个球场从没赢过”的魔咒。",
+      "en": "The team finally broke the jinx of never having won at this stadium."
+    },
+    "why": {
+      "zh": "“在这里从来赢不了”这种不吉的说法＝「ジンクス」，「ジンクスを破る」是固定搭配。",
+      "en": "A belief that you never win somewhere is a jinx: 「ジンクスを破る」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「タブー」是禁忌（不许做的事），“从没赢过”不是禁止的事。",
+        "en": "「タブー」 is a taboo — a forbidden thing; never having won isn't forbidden."
+      },
+      {
+        "zh": "「モットー」是座右铭，不会说“打破座右铭”。",
+        "en": "「モットー」 is a motto; you don't \"break\" one like this."
+      },
+      {
+        "zh": "「スローガン」是口号，“从没赢过”不是口号。",
+        "en": "「スローガン」 is a slogan; \"never won here\" isn't one."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-306",
+    "type": "bunmyaku",
+    "difficulty": 3,
+    "stem": "両社の主張は平行線をたどり、合併交渉は（　）に乗り上げた。",
+    "options": [
+      "暗礁",
+      "瀬戸際",
+      "土壇場",
+      "袋小路"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "两家公司的主张互不相让，合并谈判触礁了。",
+      "en": "The two companies' positions never met, and the merger talks ran aground."
+    },
+    "why": {
+      "zh": "「暗礁に乗り上げる」＝（谈判、计划）触礁、陷入僵局，是固定搭配。",
+      "en": "「暗礁に乗り上げる」 (to run aground on a reef) means talks or plans hit a deadlock."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「瀬戸際」说「瀬戸際に立つ」（处于紧要关头），不与「乗り上げる」搭配。",
+        "en": "「瀬戸際」 is used as 「瀬戸際に立つ」 (on the brink), not with 「乗り上げる」."
+      },
+      {
+        "zh": "「土壇場」是最后关头，说「土壇場で」，不说「土壇場に乗り上げる」。",
+        "en": "「土壇場」 is the last moment (「土壇場で」); it doesn't go with 「乗り上げる」."
+      },
+      {
+        "zh": "「袋小路」说「袋小路に入り込む・陥る」，不说「乗り上げる」。",
+        "en": "「袋小路」 is 「袋小路に入り込む・陥る」, not 「乗り上げる」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-307",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "規制を厳しくしすぎると、かえって経済活動に（　）をもたらすことになる。",
+    "options": [
+      "弊害",
+      "恩恵",
+      "余地",
+      "活気"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "规定过严的话，反而会给经济活动带来弊端。",
+      "en": "Making regulations too strict ends up harming economic activity instead."
+    },
+    "why": {
+      "zh": "「かえって」表示与预期相反的坏结果，「弊害をもたらす」＝带来弊端。",
+      "en": "「かえって」 signals an unwanted result: 「弊害をもたらす」, to do harm."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「恩恵」是好处，与「かえって」（反而）以及“规定过严”的负面语气不符。",
+        "en": "「恩恵」 is a benefit; it clashes with 「かえって」 and \"too strict\"."
+      },
+      {
+        "zh": "「余地」说「〜の余地がある」，不说「余地をもたらす」。",
+        "en": "「余地」 is 「〜の余地がある」, not 「余地をもたらす」."
+      },
+      {
+        "zh": "「活気をもたらす」是带来活力，是好结果，与「かえって」和“规定过严”矛盾。",
+        "en": "「活気をもたらす」 is bringing life — a good result, which clashes with 「かえって」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-308",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "これだけ証拠がそろっている以上、彼が犯人であることに疑いの（　）はない。",
+    "options": [
+      "余地",
+      "余白",
+      "余波",
+      "余興"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "既然证据这么齐全，他是犯人这一点毫无怀疑的余地。",
+      "en": "With this much evidence, there's no room for doubt that he did it."
+    },
+    "why": {
+      "zh": "「疑いの余地はない」＝没有怀疑的余地，是固定说法。",
+      "en": "「疑いの余地はない」 — no room for doubt — is a set phrase."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「余白」是纸面的空白处，不说「疑いの余白」。",
+        "en": "「余白」 is blank space on a page; 「疑いの余白」 isn't said."
+      },
+      {
+        "zh": "「余波」是余波、影响，与怀疑无关。",
+        "en": "「余波」 is aftermath, unrelated to doubt."
+      },
+      {
+        "zh": "「余興」是余兴节目，与怀疑无关。",
+        "en": "「余興」 is entertainment at a party, unrelated to doubt."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-309",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "長く続いた不況にも、ようやく回復の（　）が見えてきた。",
+    "options": [
+      "兆し",
+      "名残",
+      "面影",
+      "弾み"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "长期持续的萧条终于出现了复苏的迹象。",
+      "en": "After the long recession, signs of recovery are finally appearing."
+    },
+    "why": {
+      "zh": "“终于出现复苏的～”＝将要发生的征兆，即「兆し」。",
+      "en": "Signs that something is about to happen are 「兆し」: 「回復の兆しが見える」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「名残」是过去留下的痕迹，复苏还没发生，不能有“名残”。",
+        "en": "「名残」 is a trace of the past; a recovery that hasn't happened can't leave one."
+      },
+      {
+        "zh": "「面影」是旧时的模样，与将来的复苏不符。",
+        "en": "「面影」 is how something used to look, not a sign of the future."
+      },
+      {
+        "zh": "「弾み」说「弾みがつく」（有势头），不说「弾みが見える」。",
+        "en": "「弾み」 is 「弾みがつく」 (gain momentum), not 「弾みが見える」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-310",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "会議で反対意見が出ないよう、事前に関係者への（　）を済ませておいた。",
+    "options": [
+      "根回し",
+      "下見",
+      "手分け",
+      "下心"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "为了不在会上出现反对意见，事先和相关人员疏通好了。",
+      "en": "So that no one would object at the meeting, I'd squared it with everyone involved beforehand."
+    },
+    "why": {
+      "zh": "事先向相关人员打招呼、取得同意＝「根回し」（事先疏通）。",
+      "en": "Lining up the people involved in advance is 「根回し」 (groundwork)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「下見」是事先察看场地，不是对“人”做的。",
+        "en": "「下見」 is checking out a place in advance, not people."
+      },
+      {
+        "zh": "「手分け」是分工合作，不能“对相关人员”做。",
+        "en": "「手分け」 is splitting up work; it isn't done \"to\" people."
+      },
+      {
+        "zh": "「下心」是不良的企图，不能“办完”。",
+        "en": "「下心」 is an ulterior motive; you can't \"get it done\"."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-311",
+    "type": "bunmyaku",
+    "difficulty": 3,
+    "stem": "ずっと迷っていたが、ようやく会社を辞める（　）がついた。",
+    "options": [
+      "踏ん切り",
+      "見切り",
+      "決まり",
+      "歯止め"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "一直犹豫不决，终于下定决心辞职了。",
+      "en": "I'd been torn for ages, but I've finally made up my mind to quit."
+    },
+    "why": {
+      "zh": "“一直犹豫”之后终于下了决心＝「踏ん切りがつく」。",
+      "en": "Finally deciding after hesitating is 「踏ん切りがつく」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「見切り」说「見切りをつける」（放弃、看透），不说「辞める見切りがつく」。",
+        "en": "「見切り」 is 「見切りをつける」 (give up on); 「辞める見切りがつく」 isn't said."
+      },
+      {
+        "zh": "「決まりがつく」是事情得到解决，不用于自己下决心。",
+        "en": "「決まりがつく」 is a matter being settled, not making up your mind."
+      },
+      {
+        "zh": "「歯止めがかかる」是被制止，意思相反。",
+        "en": "「歯止め」 is a brake on something — the wrong idea."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-312",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "地域活性化の（　）として、空き家を改装したカフェが次々に開かれている。",
+    "options": [
+      "一環",
+      "一端",
+      "一律",
+      "一連"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "作为振兴地方的一环，用空房改造的咖啡馆接连开张。",
+      "en": "As part of revitalizing the area, cafés in renovated empty houses are opening one after another."
+    },
+    "why": {
+      "zh": "「〜の一環として」＝作为……的一部分，是固定说法。",
+      "en": "「〜の一環として」 — as part of — is a set phrase."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「一端」是一部分、一端，说「責任の一端」，不说「一端として」。",
+        "en": "「一端」 is a part (「責任の一端」), but not 「〜の一端として」."
+      },
+      {
+        "zh": "「一律」是一律、统一，不能接「として」表示部分。",
+        "en": "「一律」 is uniform; it can't mean \"part of\"."
+      },
+      {
+        "zh": "「一連」是一系列，说「一連の〜」，不说「一連として」。",
+        "en": "「一連」 is a series (「一連の〜」), not 「〜の一連として」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-313",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson91#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "少子化に（　）をかけるため、政府はさまざまな対策を打ち出している。",
+    "options": [
+      "歯止め",
+      "拍車",
+      "磨き",
+      "王手"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "为了遏制少子化，政府推出了各种对策。",
+      "en": "To put a brake on the falling birth rate, the government is rolling out all sorts of measures."
+    },
+    "why": {
+      "zh": "政府的对策是为了“阻止”少子化，「歯止めをかける」＝遏制。",
+      "en": "Government measures aim to stop the decline: 「歯止めをかける」, to put a brake on."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「拍車をかける」是加速，政府不会想加速少子化。",
+        "en": "「拍車をかける」 is to speed something up — the opposite of what the measures want."
+      },
+      {
+        "zh": "「磨きをかける」是磨炼（技术），对象不能是少子化。",
+        "en": "「磨きをかける」 is to polish (a skill); it can't apply to the birth rate."
+      },
+      {
+        "zh": "「王手をかける」是将军、离胜利只差一步，与此无关。",
+        "en": "「王手をかける」 is to be one step from victory (check in shogi); it doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-314",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "前回の失敗を（　）、今回は準備に十分な時間をかけた。",
+    "options": [
+      "踏まえ",
+      "控え",
+      "損ない",
+      "見計らい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "基于上次的失败，这次在准备上花了足够的时间。",
+      "en": "Building on last time's failure, this time we spent plenty of time preparing."
+    },
+    "why": {
+      "zh": "以上次的失败为依据来行动＝「〜を踏まえ（て）」。",
+      "en": "Taking last time's failure into account is 「〜を踏まえ(て)」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「控える」是节制、等候，不说“节制失败”。",
+        "en": "「控える」 is to hold back or wait; \"holding back the failure\" makes no sense."
+      },
+      {
+        "zh": "「損なう」是损害，不说“损害上次的失败”。",
+        "en": "「損なう」 is to damage; it doesn't fit a past failure."
+      },
+      {
+        "zh": "「見計らう」是看准（时机），宾语是「時期・頃合い」。",
+        "en": "「見計らう」 is to judge (the right moment); its object is a time."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-315",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "社長の不用意な一言が、長年築いてきた会社の信用を大きく（　）。",
+    "options": [
+      "損なった",
+      "怠った",
+      "免れた",
+      "補った"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "社长一句不慎重的话，严重损害了公司多年建立的信誉。",
+      "en": "One careless remark from the president badly damaged the trust the company had built over many years."
+    },
+    "why": {
+      "zh": "“不慎的一句话”对“信誉”造成损害＝「信用を損なう」。",
+      "en": "A careless remark damaging trust is 「信用を損なう」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「怠る」是懈怠（义务等），主语不能是“一句话”。",
+        "en": "「怠る」 is to neglect (a duty); a remark can't neglect trust."
+      },
+      {
+        "zh": "「免れる」是避免、免于，“免于信誉”不通。",
+        "en": "「免れる」 is to escape something; it doesn't fit."
+      },
+      {
+        "zh": "「補う」是弥补，“不慎的话弥补信誉”意思相反。",
+        "en": "「補う」 is to make up for; a careless remark wouldn't do that."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-316",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "大きな地震だったが、築三百年の寺は奇跡的に倒壊を（　）。",
+    "options": [
+      "免れた",
+      "遂げた",
+      "果たした",
+      "招いた"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "那是一场大地震，但有三百年历史的寺庙奇迹般地免于倒塌。",
+      "en": "It was a big earthquake, but the three-hundred-year-old temple miraculously escaped collapse."
+    },
+    "why": {
+      "zh": "“奇迹般地”没有倒塌＝「倒壊を免れる」（免于倒塌）。",
+      "en": "Miraculously not collapsing is 「倒壊を免れる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「遂げる」是完成（目标），“完成倒塌”不通。",
+        "en": "「遂げる」 is to accomplish (a goal); \"accomplishing collapse\" makes no sense."
+      },
+      {
+        "zh": "「果たす」是履行（职责、约定），不能接「倒壊」。",
+        "en": "「果たす」 is to fulfil (a duty, a promise); not 「倒壊」."
+      },
+      {
+        "zh": "「招く」是招致，与「奇跡的に」矛盾。",
+        "en": "「招く」 is to bring about, which clashes with 「奇跡的に」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-317",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "資金不足で工事が（　）おり、完成のめどが立っていない。",
+    "options": [
+      "滞って",
+      "漂って",
+      "怠って",
+      "廃れて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "由于资金不足工程停滞，完工遥遥无期。",
+      "en": "Work has stalled for lack of funds, and there's no telling when it will be finished."
+    },
+    "why": {
+      "zh": "“资金不足→工程进展不下去”＝「工事が滞る」（停滞）。",
+      "en": "Work not progressing because of a lack of money is 「工事が滞る」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「漂う」是漂浮、弥漫，工程不能“漂浮”。",
+        "en": "「漂う」 is to drift or hang in the air; work can't drift."
+      },
+      {
+        "zh": "「怠る」需要人做主语，接宾语「〜を怠る」，工程不能“懈怠”。",
+        "en": "「怠る」 needs a person who neglects something; work can't neglect."
+      },
+      {
+        "zh": "「廃れる」是（风俗、流行）衰落、过时，不用于工程停滞。",
+        "en": "「廃れる」 is for customs or fashions falling out of use, not work stalling."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-318",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "判断に迷ったときは、自分だけで決めずに上司の指示を（　）ようにしている。",
+    "options": [
+      "仰ぐ",
+      "敬う",
+      "挑む",
+      "担う"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "拿不定主意时，我不自己做决定，而是请示上司。",
+      "en": "When I'm unsure, I don't decide alone; I ask my boss for instructions."
+    },
+    "why": {
+      "zh": "请求上级指示＝「指示を仰ぐ」，是固定搭配。",
+      "en": "Asking a superior for instructions is 「指示を仰ぐ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「敬う」的宾语是人（尊敬长辈），不说「指示を敬う」。",
+        "en": "「敬う」 takes a person (respect elders); 「指示を敬う」 isn't said."
+      },
+      {
+        "zh": "「挑む」是挑战，不说「指示に挑む」于此意。",
+        "en": "「挑む」 is to challenge — not asking for instructions."
+      },
+      {
+        "zh": "「担う」是承担（责任、角色），不说「指示を担う」。",
+        "en": "「担う」 is to bear (a role, responsibility); not 「指示を担う」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-319",
+    "type": "bunmyaku",
+    "difficulty": 3,
+    "stem": "ミスを隠そうと、彼はその場を適当な言い訳で（　）。",
+    "options": [
+      "取り繕った",
+      "取り締まった",
+      "取り立てた",
+      "取り次いだ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "为了掩盖失误，他用随便的借口敷衍了当时的场面。",
+      "en": "Trying to hide his mistake, he smoothed things over with some excuse."
+    },
+    "why": {
+      "zh": "用借口把场面应付过去＝「その場を取り繕う」。",
+      "en": "Covering up a situation with an excuse is 「その場を取り繕う」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「取り締まる」是取缔、管制（违法行为），与掩盖失误无关。",
+        "en": "「取り締まる」 is to crack down on (offences), not covering up."
+      },
+      {
+        "zh": "「取り立てる」是催收（债款）或提拔，不能接「その場」。",
+        "en": "「取り立てる」 is to collect (debts) or promote; not 「その場」."
+      },
+      {
+        "zh": "「取り次ぐ」是转达（电话、话），不说「その場を取り次ぐ」。",
+        "en": "「取り次ぐ」 is to pass on (a call, a message); not 「その場を」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-320",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson82#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "被害の拡大を防ぐため、政府は早急に対策を（　）べきだ。",
+    "options": [
+      "講じる",
+      "投じる",
+      "称する",
+      "生じる"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "为防止灾害扩大，政府应该尽快采取对策。",
+      "en": "To stop the damage spreading, the government should take measures immediately."
+    },
+    "why": {
+      "zh": "采取对策＝「対策を講じる」，是固定搭配。",
+      "en": "Taking measures is 「対策を講じる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「投じる」说「資金を投じる」「一票を投じる」，不说「対策を投じる」。",
+        "en": "「投じる」 is 「資金を投じる」 or 「一票を投じる」, not 「対策を」."
+      },
+      {
+        "zh": "「称する」是称作、自称，不能接「対策」。",
+        "en": "「称する」 is to call or claim to be; not with 「対策」."
+      },
+      {
+        "zh": "「生じる」是产生（自动词），不能带宾语「対策を」。",
+        "en": "「生じる」 is intransitive (to arise); it can't take 「対策を」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-321",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson89#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "決勝戦では、両チームが最後まで激しい攻防を（　）。",
+    "options": [
+      "繰り広げた",
+      "繰り上げた",
+      "打ち出した",
+      "差し出した"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "决赛中，两队直到最后都展开了激烈的攻防。",
+      "en": "In the final, the two teams fought it out fiercely to the very end."
+    },
+    "why": {
+      "zh": "展开激烈的攻防＝「攻防を繰り広げる」。",
+      "en": "Waging a fierce back-and-forth is 「攻防を繰り広げる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「繰り上げる」是提前（日期、顺序），不能接「攻防」。",
+        "en": "「繰り上げる」 is to move up (a date, an order); not 「攻防」."
+      },
+      {
+        "zh": "「打ち出す」是提出（方针、政策），与比赛不符。",
+        "en": "「打ち出す」 is to put forward (a policy); it doesn't fit a match."
+      },
+      {
+        "zh": "「差し出す」是递出、提交，不能接「攻防」。",
+        "en": "「差し出す」 is to hold out or submit; not 「攻防」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-322",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "手続きのたびに同じ書類を何枚も書かされるのは（　）。",
+    "options": [
+      "煩わしい",
+      "潔い",
+      "心細い",
+      "待ち遠しい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "每次办手续都要写好几张同样的文件，真麻烦。",
+      "en": "Having to fill out the same forms over and over every time is a real nuisance."
+    },
+    "why": {
+      "zh": "重复写同样的文件让人厌烦＝「煩わしい」（麻烦、烦人）。",
+      "en": "Tedious repeated paperwork is 「煩わしい」 (bothersome)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「潔い」是果断、干脆（态度），不形容填文件。",
+        "en": "「潔い」 describes a manly, clean-cut attitude, not paperwork."
+      },
+      {
+        "zh": "「心細い」是不安、没依靠，与重复写文件无关。",
+        "en": "「心細い」 is feeling helpless or uneasy, not annoyed."
+      },
+      {
+        "zh": "「待ち遠しい」是盼望，与厌烦相反。",
+        "en": "「待ち遠しい」 is looking forward to something — the opposite."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-323",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson92#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "この二つの薬は名前が（　）ので、取り違えないよう注意が必要だ。",
+    "options": [
+      "紛らわしい",
+      "慌ただしい",
+      "若々しい",
+      "名残惜しい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这两种药名字容易混淆，必须注意不要拿错。",
+      "en": "These two medicines have confusingly similar names, so you have to be careful not to mix them up."
+    },
+    "why": {
+      "zh": "名字相似容易拿错＝「紛らわしい」（容易混淆）。",
+      "en": "Names that are easily confused are 「紛らわしい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「慌ただしい」是匆忙，不形容名字。",
+        "en": "「慌ただしい」 is hectic; it doesn't describe names."
+      },
+      {
+        "zh": "「若々しい」是年轻有朝气，不形容药名。",
+        "en": "「若々しい」 is youthful; not for drug names."
+      },
+      {
+        "zh": "「名残惜しい」是依依不舍，与拿错无关。",
+        "en": "「名残惜しい」 is being sad to part, unrelated to mix-ups."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-324",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "言い訳を一切せず、自ら責任を取って辞任するとは、（　）態度だ。",
+    "options": [
+      "潔い",
+      "図々しい",
+      "白々しい",
+      "未練がましい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "一句借口都没有，主动承担责任辞职，真是干脆利落的态度。",
+      "en": "Not making a single excuse and resigning to take responsibility — that's a gracious way to act."
+    },
+    "why": {
+      "zh": "不找借口、主动负责＝光明磊落、干脆，即「潔い」。",
+      "en": "Taking responsibility without excuses is 「潔い」 (honourable, clean-cut)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「図々しい」是厚脸皮，与主动辞职相反。",
+        "en": "「図々しい」 is brazen — the opposite of resigning gracefully."
+      },
+      {
+        "zh": "「白々しい」是明显假装、装糊涂，与不找借口矛盾。",
+        "en": "「白々しい」 is transparently insincere, which contradicts making no excuses."
+      },
+      {
+        "zh": "「未練がましい」是恋恋不舍、不死心，与干脆辞职相反。",
+        "en": "「未練がましい」 is clinging on, the opposite of stepping down cleanly."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-325",
+    "type": "bunmyaku",
+    "difficulty": 3,
+    "stem": "難しい問題だからこそ、（　）な結論に飛びつくべきではない。",
+    "options": [
+      "安易",
+      "平易",
+      "安静",
+      "容易"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "正因为是难题，才不应该轻率地下结论。",
+      "en": "Precisely because it's a hard problem, we shouldn't jump at an easy conclusion."
+    },
+    "why": {
+      "zh": "不经深思、图省事的结论＝「安易な結論」。",
+      "en": "A conclusion reached without proper thought is 「安易な結論」 (facile)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「平易」是浅显易懂（文章等），与“轻率下结论”不符。",
+        "en": "「平易」 is plain and easy to understand (of writing); not \"facile\"."
+      },
+      {
+        "zh": "「安静」是静养（病人），不能修饰结论。",
+        "en": "「安静」 is rest (for a patient); it can't describe a conclusion."
+      },
+      {
+        "zh": "「容易」是容易做到，不说「容易な結論に飛びつく」。",
+        "en": "「容易」 is easy to do; 「容易な結論に飛びつく」 isn't said."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-326",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "そのデザインは、これまでの常識にとらわれない（　）な発想から生まれた。",
+    "options": [
+      "斬新",
+      "陳腐",
+      "頑丈",
+      "閑静"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "那个设计诞生于不拘泥于以往常识的新颖构思。",
+      "en": "The design came from a fresh idea that ignored the usual conventions."
+    },
+    "why": {
+      "zh": "“不受以往常识束缚”的构想＝新颖，即「斬新」。",
+      "en": "An idea not bound by convention is 「斬新」 (novel, original)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「陳腐」是陈腐、老套，与“不受常识束缚”矛盾。",
+        "en": "「陳腐」 is hackneyed, which contradicts \"not bound by convention\"."
+      },
+      {
+        "zh": "「頑丈」是结实（东西），不形容构思。",
+        "en": "「頑丈」 is sturdy (of objects), not of ideas."
+      },
+      {
+        "zh": "「閑静」是幽静（住宅区），不形容构思。",
+        "en": "「閑静」 is quiet (of a neighbourhood), not of ideas."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-327",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "全力で走って、最終電車に（　）間に合った。",
+    "options": [
+      "辛うじて",
+      "到底",
+      "一概に",
+      "断じて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "拼命跑，好不容易才赶上了末班电车。",
+      "en": "I ran flat out and only just made the last train."
+    },
+    "why": {
+      "zh": "拼命跑才赶上＝勉强、好不容易，即「辛うじて」。",
+      "en": "Just barely making it is 「辛うじて」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「到底」后接否定（到底無理だ），不能接「間に合った」。",
+        "en": "「到底」 takes a negative (到底無理だ), not 「間に合った」."
+      },
+      {
+        "zh": "「一概に」后接否定（一概には言えない）。",
+        "en": "「一概に」 takes a negative (一概には言えない)."
+      },
+      {
+        "zh": "「断じて」用于“绝对（不）……”的强烈断言，不接“赶上了”。",
+        "en": "「断じて」 is for strong assertions (断じて許さない), not \"made it\"."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-328",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "これだけの量の仕事を一日で終わらせるのは、（　）無理だ。",
+    "options": [
+      "到底",
+      "辛うじて",
+      "あえて",
+      "努めて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "要在一天内完成这么多工作，无论如何都不可能。",
+      "en": "Finishing this much work in one day is simply impossible."
+    },
+    "why": {
+      "zh": "「到底〜ない・無理だ」＝无论如何也（不能）。",
+      "en": "「到底」 + a negative (無理だ) means \"no way, utterly impossible\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「辛うじて」是勉强做到，与「無理だ」矛盾。",
+        "en": "「辛うじて」 is barely managing, which contradicts 「無理だ」."
+      },
+      {
+        "zh": "「あえて」是特意、硬要，不能修饰「無理だ」。",
+        "en": "「あえて」 is \"deliberately, dare to\"; it doesn't modify 「無理だ」."
+      },
+      {
+        "zh": "「努めて」是尽力，与「無理だ」不搭配。",
+        "en": "「努めて」 is \"making an effort to\"; it doesn't go with 「無理だ」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-329",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "本が売れないからといって、若者が本を読まなくなったとは（　）は言えない。",
+    "options": [
+      "一概に",
+      "あえて",
+      "おのずと",
+      "くまなく"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "虽说书卖不出去，但也不能一概而论说年轻人不读书了。",
+      "en": "Books not selling doesn't necessarily mean young people have stopped reading."
+    },
+    "why": {
+      "zh": "「一概には言えない」＝不能一概而论，是固定说法。",
+      "en": "「一概には言えない」 — you can't say so across the board — is a set phrase."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「あえて」不与「は言えない」构成“不能一概而论”的意思。",
+        "en": "「あえて」 doesn't form this \"can't generalize\" phrase."
+      },
+      {
+        "zh": "「おのずと」是自然而然，与「は言えない」不搭配。",
+        "en": "「おのずと」 is \"naturally, of itself\"; it doesn't fit 「は言えない」."
+      },
+      {
+        "zh": "「くまなく」是到处都、毫无遗漏地，不能修饰「言えない」。",
+        "en": "「くまなく」 is \"in every corner\"; it can't modify 「言えない」."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-330",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "毎日こつこつ練習を続けていれば、結果は（　）ついてくるものだ。",
+    "options": [
+      "おのずと",
+      "とっさに",
+      "かねて",
+      "くまなく"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "只要每天坚持练习，结果自然会随之而来。",
+      "en": "If you keep practising steadily every day, results will come of their own accord."
+    },
+    "why": {
+      "zh": "坚持努力，结果“自然”会来＝「おのずと」。",
+      "en": "Results that come naturally from steady effort: 「おのずと」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「とっさに」是一瞬间、下意识地，不能修饰慢慢出现的结果。",
+        "en": "「とっさに」 is \"on the spur of the moment\", not results that come in time."
+      },
+      {
+        "zh": "「かねて」是事先、以前就，不能修饰将来的结果。",
+        "en": "「かねて」 is \"previously, for some time\"; it can't describe future results."
+      },
+      {
+        "zh": "「くまなく」是毫无遗漏地（找、调查），与此无关。",
+        "en": "「くまなく」 is \"thoroughly, everywhere\" (searching); it doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-331",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "警察は、犯人の手がかりを求めて現場周辺を（　）捜索した。",
+    "options": [
+      "くまなく",
+      "めっきり",
+      "おのずと",
+      "辛うじて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "警方为了寻找犯人的线索，把现场周围彻底搜了一遍。",
+      "en": "The police searched every inch of the area around the scene for clues."
+    },
+    "why": {
+      "zh": "搜查“现场周围”的每个角落＝「くまなく」（毫无遗漏地）。",
+      "en": "Searching every corner of an area is 「くまなく」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「めっきり」用于明显的变化（めっきり寒くなった），不修饰搜查。",
+        "en": "「めっきり」 is for a marked change (めっきり寒くなった), not searching."
+      },
+      {
+        "zh": "「おのずと」是自然而然，不修饰有意识的搜查。",
+        "en": "「おのずと」 is \"of its own accord\", not a deliberate search."
+      },
+      {
+        "zh": "「辛うじて」是勉强，“勉强搜查”不通。",
+        "en": "「辛うじて」 is \"barely\"; \"barely searched\" doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-332",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson76#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "秋も深まり、朝晩は（　）冷え込むようになった。",
+    "options": [
+      "めっきり",
+      "きっぱり",
+      "うっかり",
+      "ひっそり"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "秋意渐浓，早晚明显变冷了。",
+      "en": "As autumn deepens, mornings and evenings have turned noticeably cold."
+    },
+    "why": {
+      "zh": "季节带来的明显变化＝「めっきり」（显著地）。",
+      "en": "A marked change with the season is 「めっきり」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「きっぱり」是干脆（拒绝、断言），不形容气温变化。",
+        "en": "「きっぱり」 is flatly (refusing, saying), not a change in temperature."
+      },
+      {
+        "zh": "「うっかり」是不小心，天气不会“不小心”变冷。",
+        "en": "「うっかり」 is \"carelessly\"; weather isn't careless."
+      },
+      {
+        "zh": "「ひっそり」是静悄悄，不修饰变冷。",
+        "en": "「ひっそり」 is \"quietly\"; it doesn't modify getting colder."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-333",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson81#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "新店舗の開店初日には、朝から客が（　）訪れた。",
+    "options": [
+      "ひっきりなしに",
+      "一目散に",
+      "めっきり",
+      "うっかり"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "新店开业第一天，从早上起顾客就络绎不绝。",
+      "en": "On the new shop's first day, customers came in non-stop from the morning on."
+    },
+    "why": {
+      "zh": "顾客一个接一个、不间断地来＝「ひっきりなしに」。",
+      "en": "Customers coming one after another without a break: 「ひっきりなしに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「一目散に」是头也不回地跑（逃跑等），不用于顾客来店。",
+        "en": "「一目散に」 is running off at full speed, not customers arriving."
+      },
+      {
+        "zh": "「めっきり」用于状态明显变化，不形容来访次数。",
+        "en": "「めっきり」 is for a marked change of state, not frequent visits."
+      },
+      {
+        "zh": "「うっかり」是不小心，顾客不会“不小心”来店。",
+        "en": "「うっかり」 is \"carelessly\"; it doesn't describe customers arriving."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-334",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson82#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "初めての失敗だから、今回は（　）に見てあげよう。",
+    "options": [
+      "大目",
+      "長い目",
+      "白い目",
+      "色眼鏡"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "因为是第一次失误，这次就宽容一下吧。",
+      "en": "It's his first mistake, so let's let it go this time."
+    },
+    "why": {
+      "zh": "宽容、不追究＝「大目に見る」。注意助词是「に」。",
+      "en": "Letting something pass is 「大目に見る」 — note the particle に."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「長い目で見る」（从长远看）用「で」，意思也不是宽容。",
+        "en": "「長い目で見る」 (take the long view) uses で, and doesn't mean forgiving."
+      },
+      {
+        "zh": "「白い目で見る」（冷眼相看）用「で」，与“宽容”相反。",
+        "en": "「白い目で見る」 (look coldly on) uses で and is the opposite."
+      },
+      {
+        "zh": "「色眼鏡で見る」（带偏见看）用「で」，意思也不符。",
+        "en": "「色眼鏡で見る」 (see with prejudice) uses で and doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-335",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson79#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "無理をして体を壊してしまったら、（　）もない。",
+    "options": [
+      "元も子",
+      "身も蓋",
+      "根も葉",
+      "血も涙"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "如果硬撑把身体搞垮了，那就鸡飞蛋打、一切白费了。",
+      "en": "If you push yourself and wreck your health, you'll have lost everything."
+    },
+    "why": {
+      "zh": "身体垮了就连本带利全没了＝「元も子もない」。",
+      "en": "Losing everything, gains and all, is 「元も子もない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「身も蓋もない」是说话太直白、毫无余地，与身体垮掉无关。",
+        "en": "「身も蓋もない」 is being blunt to the point of tactlessness — not losing everything."
+      },
+      {
+        "zh": "「根も葉もない」是毫无根据（谣言），不符。",
+        "en": "「根も葉もない」 is groundless (of a rumour); it doesn't fit."
+      },
+      {
+        "zh": "「血も涙もない」是冷酷无情，不符。",
+        "en": "「血も涙もない」 is heartless; it doesn't fit."
+      }
+    ]
+  }
+]

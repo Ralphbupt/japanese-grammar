@@ -1,0 +1,698 @@
+[
+  {
+    "id": "n1-l90-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson90#1"
+    ],
+    "difficulty": 1,
+    "stem": "携帯電話の電池が切れてしまい、家族に連絡し（　）連絡できなかった。",
+    "options": [
+      "ようが",
+      "ようでは",
+      "ようにも",
+      "ながらも"
+    ],
+    "answer": 2,
+    "full": "携帯電話の電池が切れてしまい、家族に連絡しようにも連絡できなかった。",
+    "tr": {
+      "zh": "手机没电了，想联系家人也联系不上。",
+      "en": "My phone battery died, so I couldn't contact my family even though I wanted to."
+    },
+    "why": {
+      "zh": "意向形「連絡しよう」+「にも」+ 同一动词的可能否定「連絡できなかった」：想做却因客观原因做不到。",
+      "en": "Volitional 「連絡しよう」 + 「にも」 + the same verb's negative potential 「連絡できなかった」: wanted to, but couldn't."
+    },
+    "wrong": [
+      {
+        "zh": "「ようが」是“不管……都……”，「連絡しようが連絡できなかった」意思不通。",
+        "en": "「ようが」 is \"no matter whether …\", which makes no sense here."
+      },
+      {
+        "zh": "「ようでは」是“要是……这样的话（就不行）”，接动词普通形，「連絡しようでは」不成立。",
+        "en": "「ようでは」 (if things are like this …) follows the plain form; 「連絡しようでは」 isn't a form."
+      },
+      null,
+      {
+        "zh": "「ながらも」是逆接“虽然……”，“虽然联系了却没能联系”自相矛盾。",
+        "en": "「ながらも」 (although) gives \"although I contacted them, I couldn't\" — a contradiction."
+      }
+    ]
+  },
+  {
+    "id": "n1-l90-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson90#1"
+    ],
+    "difficulty": 2,
+    "stem": "パスワードを忘れてしまい、サイトにログインしようにも（　）。",
+    "options": [
+      "できなかった",
+      "したくなかった",
+      "しなかった",
+      "するしかなかった"
+    ],
+    "answer": 0,
+    "full": "パスワードを忘れてしまい、サイトにログインしようにもできなかった。",
+    "tr": {
+      "zh": "忘了密码，想登录网站也登录不了。",
+      "en": "I'd forgotten my password, so I couldn't log in to the site even though I tried."
+    },
+    "why": {
+      "zh": "忘了密码是客观原因，「ログインしようにも」后接可能否定「できなかった」。",
+      "en": "Forgetting the password is the obstacle: 「ログインしようにも」 takes the negative potential 「できなかった」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "后项必须是客观上的“做不到”，不能是主观的“不想做”：❌「行こうにも行きたくない」。",
+        "en": "The second half must be an objective \"couldn't\", not \"didn't want to\": ❌「行こうにも行きたくない」."
+      },
+      {
+        "zh": "「しなかった」只是“没做”，不表示“做不到”，和「うにも」不呼应。",
+        "en": "「しなかった」 just says \"didn't\"; 「うにも」 needs \"couldn't\"."
+      },
+      {
+        "zh": "「するしかなかった」是“只好做”，与「うにも〜ない」的“想做做不到”相反。",
+        "en": "「するしかなかった」 (had no choice but to) is the opposite of \"wanted to but couldn't\"."
+      }
+    ]
+  },
+  {
+    "id": "n1-l90-003",
+    "type": "narabe",
+    "refs": [
+      "lesson90#1"
+    ],
+    "difficulty": 2,
+    "stem": "部屋を [★] [_] [_] [_] 契約できない。",
+    "options": [
+      "にも",
+      "いなくては",
+      "保証人が",
+      "借りよう"
+    ],
+    "order": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "full": "部屋を借りようにも保証人がいなくては契約できない。",
+    "tr": {
+      "zh": "想租房子，可没有担保人就签不了合同。",
+      "en": "I want to rent a flat, but without a guarantor I can't sign the contract."
+    },
+    "why": {
+      "zh": "意向形「借りよう」+「にも」，后面说明做不到的原因「保証人がいなくては契約できない」：借りよう → にも → 保証人が → いなくては。★ 是「借りよう」。",
+      "en": "Volitional 「借りよう」 + 「にも」, then the obstacle 「保証人がいなくては契約できない」: 借りよう → にも → 保証人が → いなくては. The ★ is 「借りよう」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l90-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson90#2"
+    ],
+    "difficulty": 1,
+    "stem": "山道の入り口には「ここにごみを捨てる（　）」と書かれた古い看板が立っていた。",
+    "options": [
+      "べからず",
+      "べからざる",
+      "べくもない",
+      "まじき"
+    ],
+    "answer": 0,
+    "full": "山道の入り口には「ここにごみを捨てるべからず」と書かれた古い看板が立っていた。",
+    "tr": {
+      "zh": "山路入口立着一块旧牌子，上面写着“不得在此丢弃垃圾”。",
+      "en": "At the start of the mountain path stood an old sign saying \"No dumping of rubbish here\"."
+    },
+    "why": {
+      "zh": "告示牌上的禁止用文语「べからず」，放在句末：「捨てるべからず」。",
+      "en": "A prohibition on a sign uses the literary 「べからず」 at the end: 「捨てるべからず」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「べからざる」只修饰名词，不能结句：❌「捨てるべからざる」+ 引号结束。",
+        "en": "「べからざる」 only modifies a noun; it can't end the sentence on a sign."
+      },
+      {
+        "zh": "「べくもない」是“根本无法……”，不是告示上的禁止。",
+        "en": "「べくもない」 (there's no way to …) isn't a prohibition on a sign."
+      },
+      {
+        "zh": "「まじき」是连体形，要接名词（「許すまじき行為」），不能结句。",
+        "en": "「まじき」 is attributive (許すまじき行為) and can't end a sentence."
+      }
+    ]
+  },
+  {
+    "id": "n1-l90-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson90#2"
+    ],
+    "difficulty": 2,
+    "stem": "罪のない市民を巻き込んだテロは、決して許す（　）暴挙である。",
+    "options": [
+      "べからず",
+      "べからざる",
+      "べき",
+      "べく"
+    ],
+    "answer": 1,
+    "full": "罪のない市民を巻き込んだテロは、決して許すべからざる暴挙である。",
+    "tr": {
+      "zh": "牵连无辜市民的恐怖袭击，是绝不可饶恕的暴行。",
+      "en": "Terrorism that involves innocent citizens is an outrage that can never be forgiven."
+    },
+    "why": {
+      "zh": "修饰名词「暴挙」，用连体形「べからざる」：固定搭配「許すべからざる」（不可饶恕的）。",
+      "en": "Before the noun 「暴挙」 the attributive 「べからざる」 is needed: the set phrase 「許すべからざる」 (unforgivable)."
+    },
+    "wrong": [
+      {
+        "zh": "「べからず」只能结句，不能修饰名词：❌「許すべからず暴挙」。",
+        "en": "「べからず」 only ends a sentence; it can't modify a noun: ❌「許すべからず暴挙」."
+      },
+      null,
+      {
+        "zh": "「許すべき暴挙」是“应该原谅的暴行”，与「決して」和句意矛盾。",
+        "en": "「許すべき暴挙」 would be an outrage that should be forgiven — the opposite of 「決して」."
+      },
+      {
+        "zh": "「べく」是“为了……”，后面要接动词，不能修饰名词「暴挙」。",
+        "en": "「べく」 (in order to) leads into a verb; it can't modify 「暴挙」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l90-006",
+    "type": "narabe",
+    "refs": [
+      "lesson90#2"
+    ],
+    "difficulty": 2,
+    "stem": "この祭りは、地域の住民にとって [_] [★] [_] [_] 。",
+    "options": [
+      "欠く",
+      "べからざる",
+      "なっている",
+      "行事と"
+    ],
+    "order": [
+      0,
+      1,
+      3,
+      2
+    ],
+    "full": "この祭りは、地域の住民にとって欠くべからざる行事となっている。",
+    "tr": {
+      "zh": "这个祭典已经成为当地居民不可缺少的活动。",
+      "en": "This festival has become an indispensable event for local residents."
+    },
+    "why": {
+      "zh": "「欠くべからざる」修饰名词「行事」，再接「となっている」：欠く → べからざる → 行事と → なっている。★ 是「べからざる」。",
+      "en": "「欠くべからざる」 modifies the noun 「行事」, then 「となっている」: 欠く → べからざる → 行事と → なっている. The ★ is 「べからざる」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l90-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson90#3"
+    ],
+    "difficulty": 2,
+    "stem": "あんな新人（　）負けるようでは、レギュラーの座は守れないぞ。",
+    "options": [
+      "ごとくに",
+      "ごときに",
+      "ごとしに",
+      "たるに"
+    ],
+    "answer": 1,
+    "full": "あんな新人ごときに負けるようでは、レギュラーの座は守れないぞ。",
+    "tr": {
+      "zh": "要是输给那种新人，你的主力位置可就保不住了。",
+      "en": "If you lose to a rookie like that, you won't keep your place in the starting line-up."
+    },
+    "why": {
+      "zh": "「Nごとき」不加「の」表示轻视“……之流”，后接助词「に」：「新人ごときに負ける」。",
+      "en": "「Nごとき」 without 「の」 is contemptuous (the likes of …), here with 「に」: 「新人ごときに負ける」."
+    },
+    "wrong": [
+      {
+        "zh": "「ごとく」修饰动词或句子，表示“像……那样”，「新人ごとくに」接续不对，也没有轻视的意思。",
+        "en": "「ごとく」 (like) modifies verbs and needs 「の」 after a noun; it doesn't carry contempt."
+      },
+      null,
+      {
+        "zh": "「ごとし」只能结句，后面不能接「に」。",
+        "en": "「ごとし」 only ends a sentence; it can't take 「に」."
+      },
+      {
+        "zh": "「たる」用于尊重某种身份（「教師たるもの」），不能带轻视，「新人たるに」也不成立。",
+        "en": "「たる」 honours a status (教師たるもの); it can't express contempt, and 「新人たるに」 isn't a form."
+      }
+    ]
+  },
+  {
+    "id": "n1-l90-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson90#3"
+    ],
+    "difficulty": 2,
+    "stem": "歴史が示す（　）、権力の集中はやがて腐敗を生む。",
+    "options": [
+      "ごとき",
+      "ごとし",
+      "がごとき",
+      "ごとく"
+    ],
+    "answer": 3,
+    "full": "歴史が示すごとく、権力の集中はやがて腐敗を生む。",
+    "tr": {
+      "zh": "正如历史所表明的那样，权力的集中终将导致腐败。",
+      "en": "As history shows, concentrated power eventually breeds corruption."
+    },
+    "why": {
+      "zh": "「示すごとく」=「示すように」，修饰后面整个句子，用「ごとく」。",
+      "en": "「示すごとく」 = 「示すように」 (as … shows), modifying the whole clause: 「ごとく」."
+    },
+    "wrong": [
+      {
+        "zh": "「ごとき」修饰名词，这里后面是整个句子，要用「ごとく」。",
+        "en": "「ごとき」 modifies a noun; before a whole clause 「ごとく」 is needed."
+      },
+      {
+        "zh": "「ごとし」只能结句，不能放在句中连接后文。",
+        "en": "「ごとし」 only ends a sentence; it can't link to what follows."
+      },
+      {
+        "zh": "「がごとき」也修饰名词，后面不是名词，接续不对。",
+        "en": "「がごとき」 also modifies a noun; no noun follows here."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l90-009",
+    "type": "narabe",
+    "refs": [
+      "lesson90#3"
+    ],
+    "difficulty": 2,
+    "stem": "彼は [_] [_] [★] [_] 平然と会議に出席していた。",
+    "options": [
+      "なかった",
+      "ごとく",
+      "かの",
+      "何事も"
+    ],
+    "order": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "full": "彼は何事もなかったかのごとく平然と会議に出席していた。",
+    "tr": {
+      "zh": "他就像什么事都没发生过似的，若无其事地出席了会议。",
+      "en": "He attended the meeting calmly, as if nothing had happened."
+    },
+    "why": {
+      "zh": "「何事もなかった」+「かのごとく」（=かのように），与事实相反的“仿佛”：何事も → なかった → かの → ごとく。★ 是「かの」。",
+      "en": "「何事もなかった」 + 「かのごとく」 (= かのように), \"as if\" contrary to fact: 何事も → なかった → かの → ごとく. The ★ is 「かの」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l90-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson90#4"
+    ],
+    "difficulty": 1,
+    "stem": "急ぎの用件ではないので、今日中に返事をせ（　）よい。",
+    "options": [
+      "ずに",
+      "ずして",
+      "ずとも",
+      "ねば"
+    ],
+    "answer": 2,
+    "full": "急ぎの用件ではないので、今日中に返事をせずともよい。",
+    "tr": {
+      "zh": "不是急事，今天之内不回复也可以。",
+      "en": "It isn't urgent, so you needn't reply today."
+    },
+    "why": {
+      "zh": "「〜ずともよい」=「〜なくてもいい」，「する」变成「せずとも」。",
+      "en": "「〜ずともよい」 = 「〜なくてもいい」 (needn't); 「する」 becomes 「せずとも」."
+    },
+    "wrong": [
+      {
+        "zh": "「ずに」表示“不……就（做了）”的方式，不表示让步，「せずによい」不成立。",
+        "en": "「ずに」 (without doing) shows manner, not concession; 「せずによい」 isn't a form."
+      },
+      {
+        "zh": "「ずして」是“不……而……”，后面要接动作，不能直接接「よい」。",
+        "en": "「ずして」 (without …) leads into an action and can't be followed directly by 「よい」."
+      },
+      null,
+      {
+        "zh": "「せねば」是“如果不做”（=しなければ），「せねばよい」意思不通。",
+        "en": "「せねば」 (if one doesn't) makes 「せねばよい」 nonsense."
+      }
+    ]
+  },
+  {
+    "id": "n1-l90-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson90#4"
+    ],
+    "difficulty": 2,
+    "stem": "彼ほどの実力があれば、特別な対策（　）、合格は間違いないだろう。",
+    "options": [
+      "をせずとも",
+      "をしずとも",
+      "をさせずとも",
+      "をせずには"
+    ],
+    "answer": 0,
+    "full": "彼ほどの実力があれば、特別な対策をせずとも、合格は間違いないだろう。",
+    "tr": {
+      "zh": "以他的实力，即使不做特别的准备，也肯定能考上吧。",
+      "en": "With ability like his, he'll surely pass even without any special preparation."
+    },
+    "why": {
+      "zh": "“即使不做……也”是让步，书面说法「ずとも」；「する」变「せずとも」，课文明确 ❌「しずとも」。",
+      "en": "\"Even without doing …\" is concession — written 「ずとも」, with 「する」 → 「せずとも」 (the lesson marks ❌「しずとも」)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「する」的「ず」形是「せず」，「しずとも」是错误的接续。",
+        "en": "The ず form of 「する」 is 「せず」; 「しずとも」 is wrong."
+      },
+      {
+        "zh": "「させずとも」是“不让（别人）做也”，和句意不符。",
+        "en": "「させずとも」 means \"even without making someone do it\", which doesn't fit."
+      },
+      {
+        "zh": "「せずには」后面要接「いられない」「おかない」等，不能接“肯定能合格”。",
+        "en": "「せずには」 needs 「いられない」 or 「おかない」 after it, not \"he'll surely pass\"."
+      }
+    ]
+  },
+  {
+    "id": "n1-l90-012",
+    "type": "narabe",
+    "refs": [
+      "lesson90#4"
+    ],
+    "difficulty": 2,
+    "stem": "この程度のことは、[_] [_] [_] [★] 誰でも分かるはずだ。",
+    "options": [
+      "いちいち",
+      "説明",
+      "ずとも",
+      "せ"
+    ],
+    "order": [
+      0,
+      1,
+      3,
+      2
+    ],
+    "full": "この程度のことは、いちいち説明せずとも誰でも分かるはずだ。",
+    "tr": {
+      "zh": "这种程度的事，就算不一一解释，谁都应该明白。",
+      "en": "Anyone should understand something this simple without having it spelled out."
+    },
+    "why": {
+      "zh": "副词「いちいち」修饰「説明する」，「する」变成「せずとも」：いちいち → 説明 → せ → ずとも。★ 是「ずとも」。",
+      "en": "The adverb 「いちいち」 modifies 「説明する」, and 「する」 becomes 「せずとも」: いちいち → 説明 → せ → ずとも. The ★ is 「ずとも」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l90-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson90#5"
+    ],
+    "difficulty": 2,
+    "stem": "長年の夢だった店をついに開いた日、彼は天にも昇ら（　）気持ちだったという。",
+    "options": [
+      "んばかりの",
+      "とばかりの",
+      "ないばかりの",
+      "ずくめの"
+    ],
+    "answer": 0,
+    "full": "長年の夢だった店をついに開いた日、彼は天にも昇らんばかりの気持ちだったという。",
+    "tr": {
+      "zh": "据说终于开了梦想多年的店那天，他高兴得几乎要飞上天了。",
+      "en": "On the day he finally opened the shop he'd dreamed of for years, he says he felt as if he could float up to heaven."
+    },
+    "why": {
+      "zh": "ない形「昇ら」+「ん」+「ばかりの」修饰名词「気持ち」，夸张地表示“几乎要……”。",
+      "en": "ない stem 「昇ら」 + 「んばかりの」 before the noun 「気持ち」: an exaggerated \"almost …\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「とばかり」前面是一句“心里的话”，「昇らとばかり」接续不对。",
+        "en": "「とばかり」 follows a quoted thought; 「昇らとばかり」 is the wrong connection."
+      },
+      {
+        "zh": "「昇らないばかりの」是“只是没升上去”，不是“几乎要……”，接续也不对。",
+        "en": "「昇らないばかりの」 isn't a pattern; 「んばかり」 is needed for \"almost\"."
+      },
+      {
+        "zh": "「ずくめ」接名词表示“全是……”，不接动词ない形。",
+        "en": "「ずくめ」 (nothing but) follows nouns, not the ない stem."
+      }
+    ]
+  },
+  {
+    "id": "n1-l90-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson90#5"
+    ],
+    "difficulty": 2,
+    "stem": "契約を打ち切られそうになった営業担当者は、土下座（　）勢いで先方に頭を下げた。",
+    "options": [
+      "しんばかりの",
+      "するばかりの",
+      "さんばかりの",
+      "せんばかりの"
+    ],
+    "answer": 3,
+    "full": "契約を打ち切られそうになった営業担当者は、土下座せんばかりの勢いで先方に頭を下げた。",
+    "tr": {
+      "zh": "差点被终止合同的销售负责人，几乎要跪下来似的向对方低头道歉。",
+      "en": "Facing the loss of the contract, the sales rep bowed to the client as if about to get down on his knees."
+    },
+    "why": {
+      "zh": "「土下座する」接「んばかり」时，「する」变成「せ」：「土下座せんばかりの勢い」。",
+      "en": "With 「んばかり」, 「する」 becomes 「せ」: 「土下座せんばかりの勢い」."
+    },
+    "wrong": [
+      {
+        "zh": "「する」的ない形是「し」，但「んばかり」前要用文语形「せ」：❌「しんばかり」。",
+        "en": "Before 「んばかり」 「する」 takes the literary form 「せ」: ❌「しんばかり」."
+      },
+      {
+        "zh": "「するばかり」是“只是在做”，不表示“几乎要……”。",
+        "en": "「するばかり」 means \"does nothing but\", not \"almost\"."
+      },
+      {
+        "zh": "「さ」是使役「させる」的词干，「さんばかり」不成立。",
+        "en": "「さ」 belongs to the causative; 「さんばかり」 isn't a form."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l90-015",
+    "type": "narabe",
+    "refs": [
+      "lesson90#5"
+    ],
+    "difficulty": 1,
+    "stem": "演奏が終わると、ホールは [★] [_] [_] [_] 。",
+    "options": [
+      "割れ",
+      "包まれた",
+      "んばかりの",
+      "拍手に"
+    ],
+    "order": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "full": "演奏が終わると、ホールは割れんばかりの拍手に包まれた。",
+    "tr": {
+      "zh": "演奏一结束，大厅里响起了几乎要把屋顶震塌的掌声。",
+      "en": "When the performance ended, the hall was filled with thunderous applause."
+    },
+    "why": {
+      "zh": "「割れんばかりの」修饰「拍手」，「拍手に包まれた」：割れ → んばかりの → 拍手に → 包まれた。★ 是「割れ」。",
+      "en": "「割れんばかりの」 modifies 「拍手」, then 「拍手に包まれた」: 割れ → んばかりの → 拍手に → 包まれた. The ★ is 「割れ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l90-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson90#6"
+    ],
+    "difficulty": 1,
+    "stem": "当店は誠に勝手ながら、本年三月末日（　）閉店いたします。",
+    "options": [
+      "によって",
+      "をもって",
+      "を通じて",
+      "にあたって"
+    ],
+    "answer": 1,
+    "full": "当店は誠に勝手ながら、本年三月末日をもって閉店いたします。",
+    "tr": {
+      "zh": "本店将于今年三月底停止营业，敬请谅解。",
+      "en": "We regret to announce that this shop will close as of the end of March this year."
+    },
+    "why": {
+      "zh": "郑重的告示中表示结束的时间界限，用「をもって」：「末日をもって閉店」。",
+      "en": "In a formal notice, the end date is marked with 「をもって」: 「末日をもって閉店」 (closing as of)."
+    },
+    "wrong": [
+      {
+        "zh": "「によって」表示手段、原因或被动的施事，不能表示时间的截止。",
+        "en": "「によって」 is means, cause or agent; it can't mark a cut-off date."
+      },
+      null,
+      {
+        "zh": "「を通じて」是“通过”或“在整个期间”，不表示到某天为止。",
+        "en": "「を通じて」 is \"through\" or \"throughout\", not \"as of\"."
+      },
+      {
+        "zh": "「にあたって」是“在……之际”，多接开始做某事的时机，不能表示营业到某天结束。",
+        "en": "「にあたって」 (on the occasion of) doesn't mark the date something ends."
+      }
+    ]
+  },
+  {
+    "id": "n1-l90-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson90#6"
+    ],
+    "difficulty": 2,
+    "stem": "最新の医療技術（　）、この病気を完全に治すことはまだ難しい。",
+    "options": [
+      "をもってすれば",
+      "をもって",
+      "をもってしても",
+      "にもまして"
+    ],
+    "answer": 2,
+    "full": "最新の医療技術をもってしても、この病気を完全に治すことはまだ難しい。",
+    "tr": {
+      "zh": "即使凭借最新的医疗技术，要完全治愈这种病也还很难。",
+      "en": "Even with the latest medical technology, a complete cure for this disease is still difficult."
+    },
+    "why": {
+      "zh": "后项是否定、困难的「まだ難しい」，用「をもってしても」（即使凭借……也不能）。",
+      "en": "The result 「まだ難しい」 is negative, so 「をもってしても」 (even with …, still not)."
+    },
+    "wrong": [
+      {
+        "zh": "「をもってすれば」后项是能做到的事，这里后项是「難しい」，正好相反。",
+        "en": "「をもってすれば」 leads to something achievable; here the result is 「難しい」."
+      },
+      {
+        "zh": "单用「をもって」表示手段，“用最新技术，还很难治愈”缺少“即使……也”的让步，不自然。",
+        "en": "Plain 「をもって」 (by means of) lacks the \"even with\" that 「まだ難しい」 needs."
+      },
+      null,
+      {
+        "zh": "「にもまして」是“比……更”，「医療技術にもまして」意思不通。",
+        "en": "「にもまして」 (even more than) makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n1-l90-018",
+    "type": "narabe",
+    "refs": [
+      "lesson90#6"
+    ],
+    "difficulty": 2,
+    "stem": "長い入院生活を経て、健康の大切さを [_] [★] [_] [_] 。",
+    "options": [
+      "ことになった",
+      "思い知る",
+      "をもって",
+      "身"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "長い入院生活を経て、健康の大切さを身をもって思い知ることになった。",
+    "tr": {
+      "zh": "经过漫长的住院生活，我切身体会到了健康的重要。",
+      "en": "After a long stay in hospital, I learned first-hand how precious health is."
+    },
+    "why": {
+      "zh": "固定说法「身をもって」（亲身）修饰「思い知る」，最后「ことになった」：身 → をもって → 思い知る → ことになった。★ 是「をもって」。",
+      "en": "The set phrase 「身をもって」 (first-hand) modifies 「思い知る」, then 「ことになった」: 身 → をもって → 思い知る → ことになった. The ★ is 「をもって」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

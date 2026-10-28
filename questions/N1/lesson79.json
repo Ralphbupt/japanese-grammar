@@ -1,0 +1,698 @@
+[
+  {
+    "id": "n1-l79-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson79#1"
+    ],
+    "difficulty": 2,
+    "stem": "この金庫に保管されている資料は機密扱いなので、社外の人間には一枚（　）見せてはならない。",
+    "options": [
+      "なりとも",
+      "たりとも",
+      "ばかりか",
+      "からある"
+    ],
+    "answer": 1,
+    "full": "この金庫に保管されている資料は機密扱いなので、社外の人間には一枚たりとも見せてはならない。",
+    "tr": {
+      "zh": "保管在这个保险柜里的资料属于机密，一张也不能给公司以外的人看。",
+      "en": "The documents in this safe are confidential, so not a single page may be shown to anyone outside the company."
+    },
+    "why": {
+      "zh": "「一枚」（一＋量词）后接禁止「〜てはならない」，用「たりとも」表示“哪怕一张也不行”。",
+      "en": "「一枚」 (one + counter) followed by the prohibition 「〜てはならない」 calls for 「たりとも」: not even one page."
+    },
+    "wrong": [
+      {
+        "zh": "「なりとも」是“哪怕一点也好（希望得到）”，后面接愿望，不接禁止。",
+        "en": "「なりとも」 means \"even just a little (I'd like)\" and goes with a wish, not a prohibition."
+      },
+      null,
+      {
+        "zh": "「ばかりか」是“不仅……而且”，要接后续的添加内容，接在「一枚」后不成句。",
+        "en": "「ばかりか」 (not only … but also) needs a following addition; after 「一枚」 it makes no sentence."
+      },
+      {
+        "zh": "「からある」强调数量之大（足有……），“足有一张”说不通。",
+        "en": "「からある」 stresses a large amount (as much as …); \"as much as one page\" makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n1-l79-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson79#1"
+    ],
+    "difficulty": 2,
+    "stem": "手術の間は、患者の容体が急変するおそれがあるため、一瞬（　）気を抜くわけにはいかない。",
+    "options": [
+      "にして",
+      "からの",
+      "たりとも",
+      "の極み"
+    ],
+    "answer": 2,
+    "full": "手術の間は、患者の容体が急変するおそれがあるため、一瞬たりとも気を抜くわけにはいかない。",
+    "tr": {
+      "zh": "手术期间，病人的病情有可能突然恶化，所以一刻也不能松懈。",
+      "en": "During the operation the patient's condition could change suddenly, so we can't relax our attention for even a moment."
+    },
+    "why": {
+      "zh": "「一瞬」＋（　）＋否定「〜わけにはいかない」，表示“连一瞬间也不能……”，用「たりとも」。",
+      "en": "「一瞬」 + （　） + the negative 「〜わけにはいかない」: \"not for a single instant\" — 「たりとも」."
+    },
+    "wrong": [
+      {
+        "zh": "「一瞬にして」是“一瞬间就（发生巨变）”，后面接变化的结果，不接否定的决心。",
+        "en": "「一瞬にして」 means \"in an instant (something changed)\"; it is followed by a sudden change, not a negative resolve."
+      },
+      {
+        "zh": "「からの」接人数等大数量，修饰后面的名词，「一瞬からの」不成立。",
+        "en": "「からの」 follows a large number and modifies a noun; 「一瞬からの」 doesn't exist."
+      },
+      null,
+      {
+        "zh": "「の極み」接「贅沢」「痛恨」等名词，表示“……之极”，不接「一瞬」。",
+        "en": "「の極み」 follows nouns like 「贅沢」「痛恨」 (the height of …), not 「一瞬」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l79-003",
+    "type": "narabe",
+    "refs": [
+      "lesson79#1"
+    ],
+    "difficulty": 2,
+    "stem": "祖母は五十年間、日記を [★] [_] [_] [_]。",
+    "options": [
+      "ことがない",
+      "欠かした",
+      "一日",
+      "たりとも"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "祖母は五十年間、日記を一日たりとも欠かしたことがない。",
+    "tr": {
+      "zh": "五十年来，奶奶一天也没有断过写日记。",
+      "en": "For fifty years my grandmother has never once missed a day of her diary."
+    },
+    "why": {
+      "zh": "「一日」＋「たりとも」＋否定：一日 → たりとも → 欠かした → ことがない。★ 是「一日」。",
+      "en": "「一日」 + 「たりとも」 + a negative: 一日 → たりとも → 欠かした → ことがない. The ★ is 「一日」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l79-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson79#2"
+    ],
+    "difficulty": 1,
+    "stem": "彼はひどく疲れていて、自分の名前（　）まともに書けない有様だった。",
+    "options": [
+      "たりとも",
+      "すら",
+      "ともなると",
+      "とあれば"
+    ],
+    "answer": 1,
+    "full": "彼はひどく疲れていて、自分の名前すらまともに書けない有様だった。",
+    "tr": {
+      "zh": "他累得不行，连自己的名字都写不好了。",
+      "en": "He was so exhausted he couldn't even write his own name properly."
+    },
+    "why": {
+      "zh": "举出最基本的例子「自分の名前」，后接否定「書けない」，表示“连……都不能”，用「すら」。",
+      "en": "The most basic example, 「自分の名前」, plus the negative 「書けない」: \"couldn't even …\" — 「すら」."
+    },
+    "wrong": [
+      {
+        "zh": "「たりとも」只接「一」＋量词（一日、一円），不接「自分の名前」。",
+        "en": "「たりとも」 only follows \"one + counter\" (一日, 一円), not 「自分の名前」."
+      },
+      null,
+      {
+        "zh": "「ともなると」接较高的阶段或身份（社長、12月），“到了自己的名字这个阶段”说不通。",
+        "en": "「ともなると」 follows a high stage or status (社長, 12月); \"once it comes to his own name\" makes no sense."
+      },
+      {
+        "zh": "「とあれば」是“如果是为了……就（愿意）……”，后面是意志，不是“写不了”的状态。",
+        "en": "「とあれば」 (if it's for …, then I'll …) leads to a willing action, not an inability."
+      }
+    ]
+  },
+  {
+    "id": "n1-l79-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson79#2"
+    ],
+    "difficulty": 2,
+    "stem": "この古文書は極めて難解で、長年研究を続けてきた専門家（　）解読に苦労しているという。",
+    "options": [
+      "にして",
+      "あっての",
+      "ですら",
+      "とあれば"
+    ],
+    "answer": 2,
+    "full": "この古文書は極めて難解で、長年研究を続けてきた専門家ですら解読に苦労しているという。",
+    "tr": {
+      "zh": "这份古文献极其难懂，据说连研究多年的专家解读起来都很吃力。",
+      "en": "This old manuscript is extremely hard; reportedly even specialists who have studied it for years struggle to decipher it."
+    },
+    "why": {
+      "zh": "「専門家」是“按理说最不会有困难的人”，作主语时用「ですら」：连专家都……。",
+      "en": "「専門家」 is the person least expected to struggle; as the subject it takes 「ですら」: even the experts …."
+    },
+    "wrong": [
+      {
+        "zh": "「にして」表示“只有……才能”时要配「初めて」，且后项是做到的事，和「苦労している」不合。",
+        "en": "「にして」 (only … can) needs 「初めて」 and an achievement after it, not 「苦労している」."
+      },
+      {
+        "zh": "「あっての」前后都要接名词（AあってのB），这里后面是动词短语，接续不对。",
+        "en": "「あっての」 links two nouns (AあってのB); a verb phrase follows here, so it doesn't connect."
+      },
+      null,
+      {
+        "zh": "「とあれば」表示“如果是……就（愿意做）”，后项是意志；这里是陈述事实，不合。",
+        "en": "「とあれば」 leads to a willingness or decision; this sentence just reports a fact."
+      }
+    ]
+  },
+  {
+    "id": "n1-l79-006",
+    "type": "narabe",
+    "refs": [
+      "lesson79#2"
+    ],
+    "difficulty": 1,
+    "stem": "彼は自分のミスで皆に迷惑をかけたのに、[_] [★] [_] [_] 帰ってしまった。",
+    "options": [
+      "せず",
+      "すら",
+      "に",
+      "謝り"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "彼は自分のミスで皆に迷惑をかけたのに、謝りすらせずに帰ってしまった。",
+    "tr": {
+      "zh": "他因为自己的失误给大家添了麻烦，却连道歉都没有就回去了。",
+      "en": "He caused everyone trouble with his own mistake, yet went home without so much as an apology."
+    },
+    "why": {
+      "zh": "动词ます形＋「すら」＋「しない」：謝り → すら → せず → に。★ 是「すら」。",
+      "en": "Verb ます-stem + 「すら」 + 「しない」: 謝り → すら → せず → に. The ★ is 「すら」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l79-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson79#3"
+    ],
+    "difficulty": 1,
+    "stem": "仕事一筋だった父は、五十歳（　）初めて、家族と過ごす時間の大切さに気づいたという。",
+    "options": [
+      "にしては",
+      "にして",
+      "にしても",
+      "として"
+    ],
+    "answer": 1,
+    "full": "仕事一筋だった父は、五十歳にして初めて、家族と過ごす時間の大切さに気づいたという。",
+    "tr": {
+      "zh": "一心扑在工作上的父亲说，他到了五十岁才第一次意识到和家人相处的时间有多宝贵。",
+      "en": "My father, who lived only for work, says it was only at fifty that he first realised how precious time with his family is."
+    },
+    "why": {
+      "zh": "后面有「初めて」，表示“到了五十岁才……”，用「にして」。",
+      "en": "「初めて」 follows: \"only at fifty did he …\" — 「にして」."
+    },
+    "wrong": [
+      {
+        "zh": "「にしては」是“就……而言（出乎意料）”，后面要接评价，如「若く見える」，不接「初めて」。",
+        "en": "「にしては」 (for a …, surprisingly) needs an evaluation like 「若く見える」, not 「初めて」."
+      },
+      null,
+      {
+        "zh": "「にしても」是“即使……也”，“即使五十岁也第一次”意思不通。",
+        "en": "「にしても」 (even if) gives \"even if fifty, for the first time\" — nonsense."
+      },
+      {
+        "zh": "「として」表示身份、资格，“作为五十岁”不能和「初めて」搭配。",
+        "en": "「として」 marks a role (as a …); \"as fifty\" doesn't combine with 「初めて」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l79-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson79#3"
+    ],
+    "difficulty": 1,
+    "stem": "火災により、百年続いた老舗の建物は一夜（　）灰と化した。",
+    "options": [
+      "たりとも",
+      "にしては",
+      "にして",
+      "からある"
+    ],
+    "answer": 2,
+    "full": "火災により、百年続いた老舗の建物は一夜にして灰と化した。",
+    "tr": {
+      "zh": "一场火灾，让延续百年的老店建筑一夜之间化为灰烬。",
+      "en": "The fire reduced the century-old shop's building to ashes overnight."
+    },
+    "why": {
+      "zh": "「一夜」＋（　）＋巨大的变化「灰と化した」，表示“一夜之间就……”，用「にして」。",
+      "en": "「一夜」 + （　） + a drastic change 「灰と化した」: \"overnight\" — 「にして」."
+    },
+    "wrong": [
+      {
+        "zh": "「たりとも」后面必须是否定，这里是肯定的「化した」。",
+        "en": "「たりとも」 needs a negative; 「化した」 is affirmative."
+      },
+      {
+        "zh": "「にしては」是“就……而言（出乎意料）”，“就一夜而言化为灰烬”说不通。",
+        "en": "「にしては」 (for a …, surprisingly) makes \"for one night, it became ashes\" — nonsense."
+      },
+      null,
+      {
+        "zh": "「からある」强调数量之大，修饰后面的名词；「一夜からある」不成立。",
+        "en": "「からある」 stresses a large amount before a noun; 「一夜からある」 doesn't exist."
+      }
+    ]
+  },
+  {
+    "id": "n1-l79-009",
+    "type": "narabe",
+    "refs": [
+      "lesson79#3"
+    ],
+    "difficulty": 2,
+    "stem": "この難曲は、超一流の [_] [_] [_] [★] と言われている。",
+    "options": [
+      "初めて",
+      "名手",
+      "弾きこなせる",
+      "にして"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "この難曲は、超一流の名手にして初めて弾きこなせると言われている。",
+    "tr": {
+      "zh": "据说这首难曲只有超一流的名家才能驾驭。",
+      "en": "This difficult piece is said to be playable only by a truly world-class virtuoso."
+    },
+    "why": {
+      "zh": "「名詞＋にして初めて＋能做到的事」：名手 → にして → 初めて → 弾きこなせる。★ 是「弾きこなせる」。",
+      "en": "Noun + 「にして初めて」 + what becomes possible: 名手 → にして → 初めて → 弾きこなせる. The ★ is 「弾きこなせる」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l79-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson79#4"
+    ],
+    "difficulty": 2,
+    "stem": "その画家の作品は、小さな素描でも一点500万円（　）という。",
+    "options": [
+      "からある",
+      "からの",
+      "からする",
+      "からして"
+    ],
+    "answer": 2,
+    "full": "その画家の作品は、小さな素描でも一点500万円からするという。",
+    "tr": {
+      "zh": "那位画家的作品，据说就算是小幅素描，一幅也要五百万日元。",
+      "en": "That painter's work reportedly costs as much as five million yen a piece, even a small sketch."
+    },
+    "why": {
+      "zh": "数量是价格「500万円」，强调“足要……之多”用「からする」，还能放在句末作谓语。",
+      "en": "The amount is a price, 「500万円」; \"costs as much as\" is 「からする」, which can also end the clause."
+    },
+    "wrong": [
+      {
+        "zh": "「からある」用于重量、长度、距离，价格要用「からする」。",
+        "en": "「からある」 is for weight, length or distance; prices take 「からする」."
+      },
+      {
+        "zh": "「からの」要修饰后面的名词，不能直接接「という」。",
+        "en": "「からの」 must modify a following noun; it can't go straight into 「という」."
+      },
+      null,
+      {
+        "zh": "「からして」是“单从……来看就”，接在价格后面意思不通。",
+        "en": "「からして」 means \"judging just from …\" and makes no sense after a price."
+      }
+    ]
+  },
+  {
+    "id": "n1-l79-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson79#4"
+    ],
+    "difficulty": 2,
+    "stem": "増税に反対する集会には、全国から1万人（　）市民が詰めかけた。",
+    "options": [
+      "からする",
+      "からの",
+      "からある",
+      "からして"
+    ],
+    "answer": 1,
+    "full": "増税に反対する集会には、全国から1万人からの市民が詰めかけた。",
+    "tr": {
+      "zh": "反对增税的集会上，从全国各地涌来了足有一万名市民。",
+      "en": "As many as ten thousand citizens from all over the country packed into the rally against the tax rise."
+    },
+    "why": {
+      "zh": "数量是人数「1万人」，修饰名词「市民」，强调人多，用「からの」。",
+      "en": "The amount is a head count, 「1万人」, modifying 「市民」 — 「からの」."
+    },
+    "wrong": [
+      {
+        "zh": "「からする」只用于价格，不用于人数。",
+        "en": "「からする」 is only for prices, not numbers of people."
+      },
+      null,
+      {
+        "zh": "「からある」用于重量、长度、距离，人数不说「からある」。",
+        "en": "「からある」 is for weight, length or distance; people aren't counted with it."
+      },
+      {
+        "zh": "「からして」是“单从……来看就”，不能接人数修饰名词。",
+        "en": "「からして」 (judging just from …) can't link a head count to a noun."
+      }
+    ]
+  },
+  {
+    "id": "n1-l79-012",
+    "type": "narabe",
+    "refs": [
+      "lesson79#4"
+    ],
+    "difficulty": 2,
+    "stem": "彼は [_] [_] [★] [_] 軽々と持ち上げた。",
+    "options": [
+      "石を",
+      "からある",
+      "重さ",
+      "50キロ"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "彼は重さ50キロからある石を軽々と持ち上げた。",
+    "tr": {
+      "zh": "他轻而易举地举起了足有五十公斤重的石头。",
+      "en": "He lifted a stone weighing a good fifty kilos with ease."
+    },
+    "why": {
+      "zh": "重量用「からある」，修饰后面的名词：重さ → 50キロ → からある → 石を。★ 是「からある」。",
+      "en": "Weight takes 「からある」 before a noun: 重さ → 50キロ → からある → 石を. The ★ is 「からある」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l79-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson79#5"
+    ],
+    "difficulty": 1,
+    "stem": "どんなに技術が優れていても、使う人の信頼（　）製品だということを忘れてはならない。",
+    "options": [
+      "ならではの",
+      "あっての",
+      "なくして",
+      "からこそ"
+    ],
+    "answer": 1,
+    "full": "どんなに技術が優れていても、使う人の信頼あっての製品だということを忘れてはならない。",
+    "tr": {
+      "zh": "无论技术多么出色，都不能忘记产品是靠使用者的信任才立得住的。",
+      "en": "However good the technology, we must never forget that a product exists only on the trust of those who use it."
+    },
+    "why": {
+      "zh": "「名詞（信頼）＋（　）＋名詞（製品）」，表示“有了A才有B”，用「あっての」。",
+      "en": "Noun 「信頼」 + （　） + noun 「製品」 meaning \"B exists only thanks to A\" — 「あっての」."
+    },
+    "wrong": [
+      {
+        "zh": "「ならではの」是“只有……才有的（特色）”，“只有信任才有的产品”意思不对。",
+        "en": "「ならではの」 (unique to …) gives \"a product unique to trust\" — not the meaning."
+      },
+      null,
+      {
+        "zh": "「なくして」后面要接否定或“不可能”，不能直接接名词「製品」。",
+        "en": "「なくして」 needs a negative or impossibility after it, not a bare noun 「製品」."
+      },
+      {
+        "zh": "「からこそ」要接句子（「信頼があるからこそ」），不能直接接在名词后修饰名词。",
+        "en": "「からこそ」 follows a clause (「信頼があるからこそ」), not a bare noun before another noun."
+      }
+    ]
+  },
+  {
+    "id": "n1-l79-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson79#5"
+    ],
+    "difficulty": 2,
+    "stem": "選手が試合で全力を出せるのは、陰で支えるスタッフ（　）ことだ。",
+    "options": [
+      "にしては",
+      "なくして",
+      "あっての",
+      "からこそ"
+    ],
+    "answer": 2,
+    "full": "選手が試合で全力を出せるのは、陰で支えるスタッフあってのことだ。",
+    "tr": {
+      "zh": "选手能在比赛中拼尽全力，靠的是在幕后支持他们的工作人员。",
+      "en": "Players can give their all in a match only because of the staff supporting them behind the scenes."
+    },
+    "why": {
+      "zh": "「名詞＋あってのことだ」表示“（这个好结果）是多亏有了……”。",
+      "en": "Noun + 「あってのことだ」: \"(this good result) is thanks to …\"."
+    },
+    "wrong": [
+      {
+        "zh": "「にしては」是“就……而言（出乎意料）”，后面不能接「ことだ」。",
+        "en": "「にしては」 (for a …, surprisingly) can't be followed by 「ことだ」."
+      },
+      {
+        "zh": "「なくして」后面要接否定或“不可能”的说法，不接「ことだ」。",
+        "en": "「なくして」 needs a negative or impossibility after it, not 「ことだ」."
+      },
+      null,
+      {
+        "zh": "「からこそ」要接句子，「スタッフからこそ」接续不对（应为「スタッフがいるからこそ」）。",
+        "en": "「からこそ」 follows a clause; 「スタッフからこそ」 doesn't connect (it would be 「スタッフがいるからこそ」)."
+      }
+    ]
+  },
+  {
+    "id": "n1-l79-015",
+    "type": "narabe",
+    "refs": [
+      "lesson79#5"
+    ],
+    "difficulty": 2,
+    "stem": "受賞の挨拶で、彼は「支えてくれた [★] [_] [_] [_] です」と語った。",
+    "options": [
+      "今の",
+      "あっての",
+      "私",
+      "家族"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "受賞の挨拶で、彼は「支えてくれた家族あっての今の私です」と語った。",
+    "tr": {
+      "zh": "他在获奖致辞中说：“有了一直支持我的家人，才有今天的我。”",
+      "en": "In his acceptance speech he said, \"I am who I am today only thanks to my family's support.\""
+    },
+    "why": {
+      "zh": "「AあってのB」，A是不可缺少的前提「家族」，B是「今の私」：家族 → あっての → 今の → 私。★ 是「家族」。",
+      "en": "「AあってのB」 with A = the indispensable 「家族」 and B = 「今の私」: 家族 → あっての → 今の → 私. The ★ is 「家族」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l79-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson79#6"
+    ],
+    "difficulty": 1,
+    "stem": "若いころ、親の反対を押し切って大学を中退したのは、今思えば若気（　）だった。",
+    "options": [
+      "の極み",
+      "の至り",
+      "極まりない",
+      "の限り"
+    ],
+    "answer": 1,
+    "full": "若いころ、親の反対を押し切って大学を中退したのは、今思えば若気の至りだった。",
+    "tr": {
+      "zh": "年轻时不顾父母反对从大学退学，现在想来是年少轻狂。",
+      "en": "Dropping out of university against my parents' wishes was, looking back, the folly of youth."
+    },
+    "why": {
+      "zh": "「若気の至り」是固定说法，意思是“年轻气盛时犯的错”。",
+      "en": "「若気の至り」 is a set phrase: a mistake made in the rashness of youth."
+    },
+    "wrong": [
+      {
+        "zh": "「の極み」不和「若気」搭配，没有「若気の極み」这种说法。",
+        "en": "「の極み」 doesn't go with 「若気」; there's no 「若気の極み」."
+      },
+      null,
+      {
+        "zh": "「極まりない」接な形容词词干（「失礼極まりない」），「若気」是名词，不能接。",
+        "en": "「極まりない」 follows a な-adjective stem (「失礼極まりない」); 「若気」 is a noun."
+      },
+      {
+        "zh": "「限り」用于「うれしい限りだ」这类感情形容词，「若気の限り」不成立。",
+        "en": "「限り」 goes with feeling adjectives (「うれしい限りだ」); 「若気の限り」 doesn't exist."
+      }
+    ]
+  },
+  {
+    "id": "n1-l79-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson79#6"
+    ],
+    "difficulty": 2,
+    "stem": "三日間ほとんど眠らずに作業を続け、チーム全員が疲労（　）にあった。",
+    "options": [
+      "極まりない",
+      "の至り",
+      "の極み",
+      "ずくめ"
+    ],
+    "answer": 2,
+    "full": "三日間ほとんど眠らずに作業を続け、チーム全員が疲労の極みにあった。",
+    "tr": {
+      "zh": "连续三天几乎没睡地工作，全队都疲惫到了极点。",
+      "en": "After three days of work with almost no sleep, the whole team was utterly exhausted."
+    },
+    "why": {
+      "zh": "「疲労」和「の極み」搭配，「疲労の極みにある」表示疲惫到了顶点。",
+      "en": "「疲労」 collocates with 「の極み」; 「疲労の極みにある」 means exhausted to the limit."
+    },
+    "wrong": [
+      {
+        "zh": "「極まりない」是形容词，后面不能接「にあった」；而且一般接な形容词词干（「失礼極まりない」）。",
+        "en": "「極まりない」 is an adjective and can't be followed by 「にあった」; it also attaches to な-adjective stems (「失礼極まりない」)."
+      },
+      {
+        "zh": "「の至り」只用于「光栄」「恐縮」「若気」等固定搭配，不说「疲労の至り」。",
+        "en": "「の至り」 is fixed to words like 「光栄」「恐縮」「若気」; 「疲労の至り」 isn't said."
+      },
+      null,
+      {
+        "zh": "「ずくめ」是“全是……”（「いいことずくめ」），「疲労ずくめにあった」不成立。",
+        "en": "「ずくめ」 means \"nothing but …\" (「いいことずくめ」); 「疲労ずくめにあった」 doesn't work."
+      }
+    ]
+  },
+  {
+    "id": "n1-l79-018",
+    "type": "narabe",
+    "refs": [
+      "lesson79#6"
+    ],
+    "difficulty": 2,
+    "stem": "多忙な社長が、若手の私のために [_] [★] [_] [_] です。",
+    "options": [
+      "くださるとは",
+      "恐縮の至り",
+      "時間を",
+      "割いて"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "多忙な社長が、若手の私のために時間を割いてくださるとは恐縮の至りです。",
+    "tr": {
+      "zh": "百忙的社长竟然为我这个新人抽出时间，真是不胜惶恐。",
+      "en": "That our busy president should make time for a junior like me — I am deeply honoured and humbled."
+    },
+    "why": {
+      "zh": "「時間を割く」＋「てくださる」，再用「とは」引出感受「恐縮の至り」：時間を → 割いて → くださるとは → 恐縮の至り。★ 是「割いて」。",
+      "en": "「時間を割く」 + 「てくださる」, then 「とは」 leads to the feeling 「恐縮の至り」: 時間を → 割いて → くださるとは → 恐縮の至り. The ★ is 「割いて」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

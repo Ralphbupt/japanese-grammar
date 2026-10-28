@@ -1,0 +1,699 @@
+[
+  {
+    "id": "n1-l82-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson82#1"
+    ],
+    "difficulty": 1,
+    "stem": "政府は物価の高騰を抑える（　）、新たな経済対策を打ち出した。",
+    "options": [
+      "とあって",
+      "べく",
+      "ゆえに",
+      "にかこつけて"
+    ],
+    "answer": 1,
+    "full": "政府は物価の高騰を抑えるべく、新たな経済対策を打ち出した。",
+    "tr": {
+      "zh": "为了抑制物价飞涨，政府推出了新的经济对策。",
+      "en": "To curb soaring prices, the government announced new economic measures."
+    },
+    "why": {
+      "zh": "前项「物価の高騰を抑える」是政府有意识要达成的目的，后项是实际采取的行动，用书面的目的表达「べく」（为了）。",
+      "en": "「物価の高騰を抑える」 is a goal the government sets out to reach, and the second half is the action it took — 「べく」 (in order to), the formal purpose form."
+    },
+    "wrong": [
+      {
+        "zh": "「とあって」表示“因为是（特殊情况）”，前面一般是名词或特别的状况，“抑制物价”不是这种情况。",
+        "en": "「とあって」 (it being a special occasion) needs a notable circumstance, not a goal like curbing prices."
+      },
+      null,
+      {
+        "zh": "「ゆえに」表示原因，“因为抑制物价所以推出对策”因果颠倒。",
+        "en": "「ゆえに」 gives a cause; \"because it curbs prices, it announced measures\" gets cause and aim backwards."
+      },
+      {
+        "zh": "「にかこつけて」接名词，表示“以……为借口”，不接动词辞书形，意思也不对。",
+        "en": "「にかこつけて」 (on the pretext of) follows a noun, not a dictionary-form verb, and no pretext is meant here."
+      }
+    ]
+  },
+  {
+    "id": "n1-l82-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson82#1",
+      "lesson82#2"
+    ],
+    "difficulty": 2,
+    "stem": "試験に（　）、毎日少しずつでも勉強を続けなさい。",
+    "options": [
+      "合格すべく",
+      "合格せんがため",
+      "合格するために",
+      "合格するとあって"
+    ],
+    "answer": 2,
+    "full": "試験に合格するために、毎日少しずつでも勉強を続けなさい。",
+    "tr": {
+      "zh": "为了考试合格，哪怕每天一点点也要坚持学习。",
+      "en": "Keep studying every day, even a little, so that you pass the exam."
+    },
+    "why": {
+      "zh": "后项是命令「続けなさい」。「べく」「んがため」的后项不能是请求、命令，只能用普通的「ために」。",
+      "en": "The main clause is a command, 「続けなさい」. 「べく」 and 「んがため」 can't lead into a request or command, so only the plain 「ために」 works."
+    },
+    "wrong": [
+      {
+        "zh": "「べく」后项必须是主体实际采取的行动，不能接「〜なさい」这样的命令。",
+        "en": "After 「べく」 comes an action actually taken, never a command like 「〜なさい」."
+      },
+      {
+        "zh": "「んがため」同样不能接命令，而且语气古旧，和对人说教的「なさい」不搭。",
+        "en": "「んがため」 can't lead into a command either, and its archaic weight clashes with 「なさい」."
+      },
+      null,
+      {
+        "zh": "「とあって」表示“因为是（特殊情况）”，“因为考试合格”和命令接不上。",
+        "en": "「とあって」 (it being a special case) gives a cause, not an aim, and can't lead into a command."
+      }
+    ]
+  },
+  {
+    "id": "n1-l82-003",
+    "type": "narabe",
+    "refs": [
+      "lesson82#1"
+    ],
+    "difficulty": 2,
+    "stem": "記者は [★] [_] [_] [_] 関係者への取材を重ねた。",
+    "options": [
+      "突き止める",
+      "事件の",
+      "べく",
+      "真相を"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "記者は事件の真相を突き止めるべく関係者への取材を重ねた。",
+    "tr": {
+      "zh": "为了查明事件的真相，记者反复采访了相关人员。",
+      "en": "To get to the bottom of the case, the reporter interviewed the people involved again and again."
+    },
+    "why": {
+      "zh": "「事件の真相を突き止める」是目的，后接「べく」，再接实际行动「取材を重ねた」：事件の → 真相を → 突き止める → べく。★ 是「事件の」。",
+      "en": "The goal 「事件の真相を突き止める」 takes 「べく」, then the action 「取材を重ねた」: 事件の → 真相を → 突き止める → べく. The ★ is 「事件の」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l82-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson82#2"
+    ],
+    "difficulty": 2,
+    "stem": "彼が寝る間も惜しんで働いたのは、ひとえに家族を（　）だった。",
+    "options": [
+      "守るんがため",
+      "守らべく",
+      "守らんがため",
+      "守るとあって"
+    ],
+    "answer": 2,
+    "full": "彼が寝る間も惜しんで働いたのは、ひとえに家族を守らんがためだった。",
+    "tr": {
+      "zh": "他之所以连觉都舍不得睡地拼命工作，完全是为了守护家人。",
+      "en": "He worked without even sparing time to sleep purely to protect his family."
+    },
+    "why": {
+      "zh": "「〜のは〜んがためだ」是固定句式（之所以……就是为了……）。「んがため」接动词ない形：守る → 守らんがため。",
+      "en": "「〜のは〜んがためだ」 is the set frame (the reason … is to …). 「んがため」 takes the ない-stem: 守る → 守らんがため."
+    },
+    "wrong": [
+      {
+        "zh": "「んがため」接ない形，不接辞书形，「守るんがため」是典型的错误接法。",
+        "en": "「んがため」 takes the ない-stem, not the dictionary form; 「守るんがため」 is the classic wrong form."
+      },
+      {
+        "zh": "「べく」接辞书形（守るべく），「守らべく」接法错误。",
+        "en": "「べく」 takes the dictionary form (守るべく); 「守らべく」 is malformed."
+      },
+      null,
+      {
+        "zh": "「とあって」表示“因为是（特殊情况）”，不能用在「〜のは〜だった」里表示目的。",
+        "en": "「とあって」 (it being a special case) gives a cause and can't fill 「〜のは〜だった」 as a purpose."
+      }
+    ]
+  },
+  {
+    "id": "n1-l82-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson82#2"
+    ],
+    "difficulty": 2,
+    "stem": "目先の利益を得（　）不正は、いずれ必ず明るみに出るものだ。",
+    "options": [
+      "んがために",
+      "んがための",
+      "ゆえの",
+      "べく"
+    ],
+    "answer": 1,
+    "full": "目先の利益を得んがための不正は、いずれ必ず明るみに出るものだ。",
+    "tr": {
+      "zh": "为了眼前的利益而做的不正当行为，迟早一定会败露。",
+      "en": "Wrongdoing done for short-term gain always comes to light sooner or later."
+    },
+    "why": {
+      "zh": "后面直接接名词「不正」，要用修饰名词的「んがための」。「得る」的ない形是「得」，所以是「得んがための」。",
+      "en": "A noun, 「不正」, follows directly, so the noun-modifying 「んがための」 is needed; the ない-stem of 「得る」 is 「得」, giving 「得んがための」."
+    },
+    "wrong": [
+      {
+        "zh": "「んがために」是副词性的，不能直接修饰名词「不正」。",
+        "en": "「んがために」 is adverbial and can't modify the noun 「不正」 directly."
+      },
+      null,
+      {
+        "zh": "「ゆえの」接名词或普通形（得るゆえの），接在「得」后面不成立，意思也成了原因。",
+        "en": "「ゆえの」 follows a noun or plain form (得るゆえの), not the stem 「得」, and it gives a cause, not an aim."
+      },
+      {
+        "zh": "「べく」接辞书形（得るべく），而且不能直接修饰名词。",
+        "en": "「べく」 takes the dictionary form (得るべく) and can't modify a noun directly."
+      }
+    ]
+  },
+  {
+    "id": "n1-l82-006",
+    "type": "narabe",
+    "refs": [
+      "lesson82#2"
+    ],
+    "difficulty": 3,
+    "stem": "その政治家は目先の [_] [★] [_] [_] 、できもしない公約を次々と掲げた。",
+    "options": [
+      "がため",
+      "集め",
+      "票を",
+      "ん"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "その政治家は目先の票を集めんがため、できもしない公約を次々と掲げた。",
+    "tr": {
+      "zh": "那个政治家为了拉到眼前的选票，接连提出根本做不到的竞选承诺。",
+      "en": "To win votes in the short term, the politician put forward one promise after another he couldn't possibly keep."
+    },
+    "why": {
+      "zh": "「目先の」修饰「票」，后接「集め（ない形）＋ん＋がため」：票を → 集め → ん → がため。★ 是「集め」。",
+      "en": "「目先の」 modifies 「票」, then the ない-stem 「集め」 + 「ん」 + 「がため」: 票を → 集め → ん → がため. The ★ is 「集め」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l82-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson82#3"
+    ],
+    "difficulty": 2,
+    "stem": "前例のない試みである（　）、慎重に検討を重ねる必要がある。",
+    "options": [
+      "とあって",
+      "がゆえに",
+      "べく",
+      "こととて"
+    ],
+    "answer": 1,
+    "full": "前例のない試みであるがゆえに、慎重に検討を重ねる必要がある。",
+    "tr": {
+      "zh": "正因为是史无前例的尝试，所以需要反复慎重研究。",
+      "en": "Because it is an unprecedented attempt, it needs to be examined carefully and repeatedly."
+    },
+    "why": {
+      "zh": "「である＋がゆえに」说明原因，后项可以是「〜必要がある」这样的判断。",
+      "en": "「であるがゆえに」 states the cause, and its main clause may be a judgement like 「〜必要がある」."
+    },
+    "wrong": [
+      {
+        "zh": "「とあって」的后项是观察到的事实、景象，不能是「必要がある」这样的判断。",
+        "en": "After 「とあって」 comes an observed scene, not a judgement like 「必要がある」."
+      },
+      null,
+      {
+        "zh": "「べく」表示目的，“为了是史无前例的尝试”意思不通。",
+        "en": "「べく」 states a purpose; \"in order to be unprecedented\" makes no sense."
+      },
+      {
+        "zh": "「こととて」是请求原谅的原因，后项多为道歉，这里是“需要慎重”的判断。",
+        "en": "「こととて」 is an apologetic reason leading to an apology, not to \"we need to be careful\"."
+      }
+    ]
+  },
+  {
+    "id": "n1-l82-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson82#3"
+    ],
+    "difficulty": 1,
+    "stem": "人気（　）悩みもあるようで、彼女は最近、気軽に外出することもできないという。",
+    "options": [
+      "ゆえに",
+      "ゆえの",
+      "ばこその",
+      "にかこつけた"
+    ],
+    "answer": 1,
+    "full": "人気ゆえの悩みもあるようで、彼女は最近、気軽に外出することもできないという。",
+    "tr": {
+      "zh": "她似乎也有因为人气高而来的烦恼，据说最近连随便出门都不行。",
+      "en": "Popularity seems to bring its own troubles: she apparently can't even go out casually these days."
+    },
+    "why": {
+      "zh": "后面是名词「悩み」，用「名詞＋ゆえの＋名詞」（因……而来的……），如「若さゆえの過ち」。",
+      "en": "The noun 「悩み」 follows, so it's 「名詞＋ゆえの＋名詞」 (… that comes from …), like 「若さゆえの過ち」."
+    },
+    "wrong": [
+      {
+        "zh": "「ゆえに」不能直接修饰名词，修饰「悩み」要用「ゆえの」。",
+        "en": "「ゆえに」 can't modify a noun; before 「悩み」 it must be 「ゆえの」."
+      },
+      null,
+      {
+        "zh": "「ばこそ」接假定形（人気があればこそ），不能直接接名词「人気」。",
+        "en": "「ばこそ」 follows a conditional form (人気があればこそ), not a bare noun like 「人気」."
+      },
+      {
+        "zh": "「にかこつけた」是“以……为借口的”，“以人气为借口的烦恼”意思不通。",
+        "en": "「にかこつけた」 means \"used as an excuse\"; a worry using popularity as an excuse makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n1-l82-009",
+    "type": "narabe",
+    "refs": [
+      "lesson82#3"
+    ],
+    "difficulty": 2,
+    "stem": "彼は [_] [_] [★] [_] 、周囲から誤解されることも少なくない。",
+    "options": [
+      "正直",
+      "がゆえに",
+      "あまりに",
+      "である"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "彼はあまりに正直であるがゆえに、周囲から誤解されることも少なくない。",
+    "tr": {
+      "zh": "他正因为太过正直，被周围人误解的时候也不少。",
+      "en": "Precisely because he is too honest, he is often misunderstood by those around him."
+    },
+    "why": {
+      "zh": "「あまりに」修饰「正直」，「な形容詞＋である＋がゆえに」：あまりに → 正直 → である → がゆえに。★ 是「である」。",
+      "en": "「あまりに」 modifies 「正直」, then な-adjective + 「である」 + 「がゆえに」: あまりに → 正直 → である → がゆえに. The ★ is 「である」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l82-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson82#4"
+    ],
+    "difficulty": 2,
+    "stem": "十年ぶりの地元開催（　）、会場には朝から大勢の観客が詰めかけた。",
+    "options": [
+      "こととて",
+      "とあれば",
+      "とあって",
+      "にかこつけて"
+    ],
+    "answer": 2,
+    "full": "十年ぶりの地元開催とあって、会場には朝から大勢の観客が詰めかけた。",
+    "tr": {
+      "zh": "因为是时隔十年在本地举办，会场从早上起就涌来了大批观众。",
+      "en": "With the event held locally for the first time in ten years, crowds packed the venue from the morning."
+    },
+    "why": {
+      "zh": "「十年ぶりの地元開催」是特别的情况，后项是观察到的景象「大勢の観客が詰めかけた」，用「とあって」。",
+      "en": "「十年ぶりの地元開催」 is a special occasion and the second half is an observed scene (crowds poured in) — 「とあって」."
+    },
+    "wrong": [
+      {
+        "zh": "「こととて」接名词时要加「の」（開催のこととて），而且多用于道歉。",
+        "en": "「こととて」 needs 「の」 after a noun (開催のこととて) and usually leads to an apology."
+      },
+      {
+        "zh": "「とあれば」是假定“如果是……”，而这里是已经发生的事（詰めかけた）。",
+        "en": "「とあれば」 is hypothetical (if it's …), but this already happened (詰めかけた)."
+      },
+      null,
+      {
+        "zh": "「にかこつけて」是“以……为借口”，观众涌来不是在找借口。",
+        "en": "「にかこつけて」 (on the pretext of) — the crowd isn't using the event as an excuse."
+      }
+    ]
+  },
+  {
+    "id": "n1-l82-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson82#4"
+    ],
+    "difficulty": 2,
+    "stem": "初めての海外出張（　）、彼はいつになく緊張した様子だった。",
+    "options": [
+      "にかこつけて",
+      "とあって",
+      "ゆえの",
+      "ことだから"
+    ],
+    "answer": 1,
+    "full": "初めての海外出張とあって、彼はいつになく緊張した様子だった。",
+    "tr": {
+      "zh": "因为是第一次去海外出差，他显得比平时紧张。",
+      "en": "It being his first business trip abroad, he looked unusually nervous."
+    },
+    "why": {
+      "zh": "“第一次海外出差”是特别的情况，后项是从旁观察到的样子「緊張した様子だった」，用「とあって」。",
+      "en": "\"His first business trip abroad\" is a special circumstance and the second half is how he looked to others — 「とあって」."
+    },
+    "wrong": [
+      {
+        "zh": "「にかこつけて」是“以……为借口”，紧张不是借出差做的事。",
+        "en": "「にかこつけて」 (on the pretext of) — being nervous isn't something he did under cover of the trip."
+      },
+      null,
+      {
+        "zh": "「ゆえの」后面要接名词，这里后面是句子。",
+        "en": "「ゆえの」 must be followed by a noun, but a clause follows here."
+      },
+      {
+        "zh": "「ことだから」接「名詞の」，表示“既然是（那个人），一定……”的推测，与这里的叙述不符。",
+        "en": "「ことだから」 needs 「の」 and means \"knowing X, surely …\" — a guess, not this description."
+      }
+    ]
+  },
+  {
+    "id": "n1-l82-012",
+    "type": "narabe",
+    "refs": [
+      "lesson82#4"
+    ],
+    "difficulty": 2,
+    "stem": "[_] [_] [_] [★] 、会場には開場前から長い行列ができていた。",
+    "options": [
+      "無料",
+      "人気歌手の",
+      "とあって",
+      "サイン会が"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "人気歌手のサイン会が無料とあって、会場には開場前から長い行列ができていた。",
+    "tr": {
+      "zh": "因为当红歌手的签名会免费，会场开门前就排起了长队。",
+      "en": "Because the popular singer's signing event was free, a long line had formed before the doors opened."
+    },
+    "why": {
+      "zh": "「人気歌手のサイン会が無料」是特别的情况，后接「とあって」，后项是观察到的景象：人気歌手の → サイン会が → 無料 → とあって。★ 是「とあって」。",
+      "en": "「人気歌手のサイン会が無料」 is the special circumstance, taking 「とあって」 before the observed scene: 人気歌手の → サイン会が → 無料 → とあって. The ★ is 「とあって」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l82-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson82#5"
+    ],
+    "difficulty": 2,
+    "stem": "何分不慣れな（　）、至らない点も多々あるかと存じますが、どうぞよろしくお願いいたします。",
+    "options": [
+      "こととて",
+      "ことだから",
+      "とあって",
+      "ゆえの"
+    ],
+    "answer": 0,
+    "full": "何分不慣れなこととて、至らない点も多々あるかと存じますが、どうぞよろしくお願いいたします。",
+    "tr": {
+      "zh": "毕竟还不熟悉，想必有很多不周之处，还请多多关照。",
+      "en": "As I am still new to this, I'm sure I will fall short in many ways, but I ask for your kind support."
+    },
+    "why": {
+      "zh": "「何分」+ 不得已的原因 + 请求谅解，正是「こととて」的典型用法（因为……，还请原谅）。",
+      "en": "「何分」 + an unavoidable reason + a plea for understanding is the textbook use of 「こととて」 (since …, please forgive)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ことだから」用于根据对某人的了解做推测（彼のことだから），不是谦虚的道歉。",
+        "en": "「ことだから」 guesses from what one knows of someone (彼のことだから); it isn't an apology."
+      },
+      {
+        "zh": "「とあって」接名词或形容动词词干（不慣れとあって），后项是观察到的事实，不接请求。",
+        "en": "「とあって」 follows a bare stem (不慣れとあって) and leads to an observed fact, not a request."
+      },
+      {
+        "zh": "「ゆえの」后面必须接名词，这里后面是句子。",
+        "en": "「ゆえの」 must be followed by a noun, but a clause follows here."
+      }
+    ]
+  },
+  {
+    "id": "n1-l82-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson82#5"
+    ],
+    "difficulty": 2,
+    "stem": "（　）こととて、何かとご迷惑をおかけし、申し訳ございませんでした。",
+    "options": [
+      "慣れず",
+      "慣れぬ",
+      "慣れなくて",
+      "慣れまい"
+    ],
+    "answer": 1,
+    "full": "慣れぬこととて、何かとご迷惑をおかけし、申し訳ございませんでした。",
+    "tr": {
+      "zh": "因为不熟悉，给您添了各种麻烦，实在抱歉。",
+      "en": "Being unaccustomed to it, I caused you all sorts of trouble, and I sincerely apologise."
+    },
+    "why": {
+      "zh": "「こととて」前面的否定常用文言的「ぬ」：「慣れぬこととて」「知らぬこととて」。修饰「こと」要用连体形。",
+      "en": "Before 「こととて」 the negative is usually the classical 「ぬ」: 「慣れぬこととて」, 「知らぬこととて」 — an attributive form that can modify 「こと」."
+    },
+    "wrong": [
+      {
+        "zh": "「慣れず」是连用形，不能修饰名词「こと」。",
+        "en": "「慣れず」 is a continuative form and can't modify the noun 「こと」."
+      },
+      null,
+      {
+        "zh": "「慣れなくて」是て形，不能修饰「こと」。",
+        "en": "「慣れなくて」 is a て-form and can't modify 「こと」."
+      },
+      {
+        "zh": "「慣れまい」表示否定推测或否定意志，“不会习惯吧的事”意思不通。",
+        "en": "「慣れまい」 is a negative guess or resolve; it doesn't give the reason \"not being used to it\"."
+      }
+    ]
+  },
+  {
+    "id": "n1-l82-015",
+    "type": "narabe",
+    "refs": [
+      "lesson82#5"
+    ],
+    "difficulty": 2,
+    "stem": "何分 [★] [_] [_] [_] 、詳しいことはもう覚えておりません。",
+    "options": [
+      "こと",
+      "二十年も",
+      "とて",
+      "昔の"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "何分二十年も昔のこととて、詳しいことはもう覚えておりません。",
+    "tr": {
+      "zh": "毕竟是二十年前的事了，详细情况已经记不得了。",
+      "en": "It was all of twenty years ago, so I'm afraid I no longer remember the details."
+    },
+    "why": {
+      "zh": "「二十年も」修饰「昔」，「名詞の＋こととて」：二十年も → 昔の → こと → とて。★ 是「二十年も」。",
+      "en": "「二十年も」 modifies 「昔」, then 名詞の + 「こととて」: 二十年も → 昔の → こと → とて. The ★ is 「二十年も」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l82-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson82#6"
+    ],
+    "difficulty": 2,
+    "stem": "彼は取引先の接待（　）、実際には友人と会社の経費で飲み歩いていた。",
+    "options": [
+      "ゆえに",
+      "をきっかけに",
+      "にかこつけて",
+      "とあって"
+    ],
+    "answer": 2,
+    "full": "彼は取引先の接待にかこつけて、実際には友人と会社の経費で飲み歩いていた。",
+    "tr": {
+      "zh": "他以招待客户为借口，实际上却是用公司的经费和朋友到处喝酒。",
+      "en": "On the pretext of entertaining clients, he was actually out drinking with friends on the company's money."
+    },
+    "why": {
+      "zh": "「実際には」说明“招待客户”只是表面理由，真正做的是自己想做的事，用「にかこつけて」（以……为借口）。",
+      "en": "「実際には」 shows that entertaining clients was only the cover story for what he wanted to do — 「にかこつけて」 (on the pretext of)."
+    },
+    "wrong": [
+      {
+        "zh": "「ゆえに」表示真正的原因，和「実際には」（其实是另一回事）矛盾。",
+        "en": "「ゆえに」 gives a real cause, contradicting 「実際には」 (in reality something else)."
+      },
+      {
+        "zh": "「をきっかけに」表示真正引起变化的契机，没有“借口”的意思，和「実際には」接不上。",
+        "en": "「をきっかけに」 is a genuine trigger, with no sense of pretext, so 「実際には」 doesn't follow."
+      },
+      null,
+      {
+        "zh": "「とあって」后项是特殊情况下自然出现的景象，不表示“表面理由与实际不同”。",
+        "en": "「とあって」 leads to a scene that naturally follows a special case, not to a hidden real motive."
+      }
+    ]
+  },
+  {
+    "id": "n1-l82-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson82#6"
+    ],
+    "difficulty": 1,
+    "stem": "大型の台風（　）、新幹線は終日運転を見合わせた。",
+    "options": [
+      "にかこつけて",
+      "の接近により",
+      "をよそに",
+      "とあれば"
+    ],
+    "answer": 1,
+    "full": "大型の台風の接近により、新幹線は終日運転を見合わせた。",
+    "tr": {
+      "zh": "由于大型台风逼近，新干线全天停运。",
+      "en": "Because a large typhoon was approaching, the shinkansen was suspended all day."
+    },
+    "why": {
+      "zh": "台风是电车停运的真正原因，用「により」说明客观原因。「にかこつけて」不能用于真正的原因。",
+      "en": "The typhoon is the real cause, so 「により」 states it. 「にかこつけて」 can't be used for a genuine cause."
+    },
+    "wrong": [
+      {
+        "zh": "「にかこつけて」表示“以……为借口”，台风是真正的原因，新干线也不会找借口。",
+        "en": "「にかこつけて」 means using something as an excuse; the typhoon is the real cause."
+      },
+      null,
+      {
+        "zh": "「をよそに」是“不顾……照样进行”，可后项是停运，意思相反。",
+        "en": "「をよそに」 means carrying on regardless, but the trains stopped."
+      },
+      {
+        "zh": "「とあれば」是假定“如果是……”，与已经发生的停运不符。",
+        "en": "「とあれば」 is hypothetical, but the suspension already happened."
+      }
+    ]
+  },
+  {
+    "id": "n1-l82-018",
+    "type": "narabe",
+    "refs": [
+      "lesson82#6"
+    ],
+    "difficulty": 2,
+    "stem": "部長は [_] [★] [_] [_] 、毎年のように京都の紅葉を楽しんでいる。",
+    "options": [
+      "かこつけて",
+      "支社への",
+      "に",
+      "視察"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "部長は支社への視察にかこつけて、毎年のように京都の紅葉を楽しんでいる。",
+    "tr": {
+      "zh": "部长借着视察分公司的名义，几乎每年都去欣赏京都的红叶。",
+      "en": "On the pretext of inspecting the branch office, the manager enjoys the autumn leaves in Kyoto almost every year."
+    },
+    "why": {
+      "zh": "「支社への」修饰「視察」，「名詞＋にかこつけて」：支社への → 視察 → に → かこつけて。★ 是「視察」。",
+      "en": "「支社への」 modifies 「視察」, then noun + 「にかこつけて」: 支社への → 視察 → に → かこつけて. The ★ is 「視察」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

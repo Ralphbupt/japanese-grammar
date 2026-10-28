@@ -1,0 +1,815 @@
+[
+  {
+    "id": "n1-l77-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson77#1"
+    ],
+    "difficulty": 2,
+    "stem": "この複雑な事件を解決できる刑事は、署内では佐藤さん（　）ほかにいないだろう。",
+    "options": [
+      "をめぐって",
+      "をおいて",
+      "にとどまらず",
+      "を皮切りに"
+    ],
+    "answer": 1,
+    "full": "この複雑な事件を解決できる刑事は、署内では佐藤さんをおいてほかにいないだろう。",
+    "tr": {
+      "zh": "能解决这桩复杂案件的刑警，在警署里恐怕非佐藤莫属。",
+      "en": "In the whole station, there's probably no detective but Sato who could solve this complicated case."
+    },
+    "why": {
+      "zh": "后项「ほかにいない」是否定，说佐藤是唯一合适的人选，用「をおいて〜ない」。",
+      "en": "「ほかにいない」 is negative and names Sato as the only one fit for it: 「をおいて〜ない」."
+    },
+    "wrong": [
+      {
+        "zh": "「をめぐって」是“围绕……（争论、展开）”，和「ほかにいない」接不上。",
+        "en": "「をめぐって」 (concerning, over) doesn't connect with 「ほかにいない」."
+      },
+      null,
+      {
+        "zh": "「にとどまらず」表示范围扩大，后项应是“还扩展到……”，不和「ほかにいない」呼应。",
+        "en": "「にとどまらず」 (going beyond) needs a wider scope after it, not 「ほかにいない」."
+      },
+      {
+        "zh": "「を皮切りに」表示一连串事情的开端，和挑选人选无关。",
+        "en": "「を皮切りに」 marks the start of a series, nothing to do with choosing a person."
+      }
+    ]
+  },
+  {
+    "id": "n1-l77-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson77#1",
+      "lesson77#7"
+    ],
+    "difficulty": 2,
+    "stem": "長年の懸案だった本社移転を決断するなら、景気が回復しつつある今（　）ほかに時機はない。",
+    "options": [
+      "を限りに",
+      "を皮切りに",
+      "をおいて",
+      "に至って"
+    ],
+    "answer": 2,
+    "full": "長年の懸案だった本社移転を決断するなら、景気が回復しつつある今をおいてほかに時機はない。",
+    "tr": {
+      "zh": "如果要下决心解决多年悬而未决的总部搬迁，除了经济正在复苏的现在，再没有别的时机了。",
+      "en": "If we're going to decide on the long-pending head-office move, there's no time but now, while the economy is recovering."
+    },
+    "why": {
+      "zh": "后项「ほかに時機はない」，说“现在”是唯一的好时机，用「をおいて〜ない」。",
+      "en": "「ほかに時機はない」 makes \"now\" the one right moment: 「をおいて〜ない」."
+    },
+    "wrong": [
+      {
+        "zh": "「を限りに」表示到某时点为止、此后不再，后项应是“结束”，不是「ほかに〜ない」。",
+        "en": "「を限りに」 marks a point after which something stops; it isn't followed by 「ほかに〜ない」."
+      },
+      {
+        "zh": "「を皮切りに」表示一连串事情的开端，不和「ほかに〜ない」呼应。",
+        "en": "「を皮切りに」 marks the first of a series and doesn't pair with 「ほかに〜ない」."
+      },
+      null,
+      {
+        "zh": "「に至って」是“到了……地步才……”，和「ほかに〜ない」接不上。",
+        "en": "「に至って」 (only when it came to…) doesn't lead into 「ほかに〜ない」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l77-003",
+    "type": "narabe",
+    "refs": [
+      "lesson77#1"
+    ],
+    "difficulty": 2,
+    "stem": "この難しい役を演じられる俳優は、[_] [_] [★] [_] だろう。",
+    "options": [
+      "ほかにいない",
+      "山本さん",
+      "ベテランの",
+      "をおいて"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "この難しい役を演じられる俳優は、ベテランの山本さんをおいてほかにいないだろう。",
+    "tr": {
+      "zh": "能演好这个难度很大的角色的演员，恐怕非资深演员山本莫属。",
+      "en": "The only actor who could play this difficult role is probably the veteran Yamamoto."
+    },
+    "why": {
+      "zh": "「ベテランの山本さん」接「をおいて」，后项是否定「ほかにいない」：ベテランの → 山本さん → をおいて → ほかにいない。★ 是「をおいて」。",
+      "en": "「ベテランの山本さん」 takes 「をおいて」, followed by the negative 「ほかにいない」: ベテランの → 山本さん → をおいて → ほかにいない. The ★ is 「をおいて」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l77-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson77#2"
+    ],
+    "difficulty": 2,
+    "stem": "この祭りでは、雪国（　）幻想的な風景を楽しむことができる。",
+    "options": [
+      "ならではな",
+      "をおいて",
+      "ならではの",
+      "にとどまらず"
+    ],
+    "answer": 2,
+    "full": "この祭りでは、雪国ならではの幻想的な風景を楽しむことができる。",
+    "tr": {
+      "zh": "在这个节日里，可以欣赏到雪国特有的梦幻般的风景。",
+      "en": "At this festival you can enjoy dreamlike scenery found only in snow country."
+    },
+    "why": {
+      "zh": "后面接名词「風景」，称赞只有雪国才有的特色，用「ならではの＋名詞」。",
+      "en": "A noun (「風景」) follows, praising something only snow country has: 「ならではの＋名詞」."
+    },
+    "wrong": [
+      {
+        "zh": "「ならでは」修饰名词时用「の」，没有「ならではな」的说法。",
+        "en": "「ならでは」 modifies a noun with 「の」; 「ならではな」 doesn't exist."
+      },
+      {
+        "zh": "「をおいて」后项必须是「ほかに〜ない」这样的否定，这里没有。",
+        "en": "「をおいて」 needs a negative like 「ほかに〜ない」, which isn't here."
+      },
+      null,
+      {
+        "zh": "「にとどまらず」后接“还扩展到……”的句子，不能直接修饰名词「幻想的な風景」。",
+        "en": "「にとどまらず」 leads into a wider clause; it can't modify the noun 「幻想的な風景」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l77-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson77#2"
+    ],
+    "difficulty": 2,
+    "stem": "素材の味を最大限に引き出したこの一皿は、さすが老舗の料理人（　）。",
+    "options": [
+      "に限ったことではない",
+      "ならではだ",
+      "にとどまらない",
+      "をおいてほかにない"
+    ],
+    "answer": 1,
+    "full": "素材の味を最大限に引き出したこの一皿は、さすが老舗の料理人ならではだ。",
+    "tr": {
+      "zh": "这道菜把食材的味道发挥到了极致，不愧是只有老字号的厨师才做得出来。",
+      "en": "This dish brings out the very best of its ingredients — only a chef from a long-established restaurant could manage that."
+    },
+    "why": {
+      "zh": "「さすが」表示赞赏，这道菜体现了只有老店厨师才有的功夫，句末用「ならではだ」。",
+      "en": "「さすが」 signals praise for a skill only a veteran chef has; sentence-final 「ならではだ」."
+    },
+    "wrong": [
+      {
+        "zh": "「に限ったことではない」说某种（多为负面的）现象不只A才有，和「さすが」的称赞相反。",
+        "en": "「に限ったことではない」 says a (usually negative) thing isn't unique to A — the opposite of 「さすが」 praise."
+      },
+      null,
+      {
+        "zh": "「にとどまらない」表示超出某个范围，“不止于老店厨师”不符合句意。",
+        "en": "「にとどまらない」 (doesn't stop at) doesn't fit \"truly the work of a veteran chef\"."
+      },
+      {
+        "zh": "「をおいてほかにない」说“唯一的人选”，主语「この一皿」是菜，这里不是在挑人。",
+        "en": "「をおいてほかにない」 names the only candidate; the subject is a dish, not a choice of person."
+      }
+    ]
+  },
+  {
+    "id": "n1-l77-006",
+    "type": "narabe",
+    "refs": [
+      "lesson77#2"
+    ],
+    "difficulty": 2,
+    "stem": "職人の話を直接聞けるのは、[★] [_] [_] [_] 魅力だ。",
+    "options": [
+      "ならではの",
+      "この",
+      "工場",
+      "見学ツアー"
+    ],
+    "order": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "full": "職人の話を直接聞けるのは、この工場見学ツアーならではの魅力だ。",
+    "tr": {
+      "zh": "能直接听工匠讲解，是这个工厂参观之旅独有的魅力。",
+      "en": "Hearing straight from the craftspeople is a draw you get only on this factory tour."
+    },
+    "why": {
+      "zh": "名词「この工場見学ツアー」接「ならではの」，再修饰「魅力」：この → 工場 → 見学ツアー → ならではの。★ 是「この」。",
+      "en": "The noun 「この工場見学ツアー」 takes 「ならではの」, which modifies 「魅力」: この → 工場 → 見学ツアー → ならではの. The ★ is 「この」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l77-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson77#3"
+    ],
+    "difficulty": 2,
+    "stem": "その企業の不正問題は一社（　）、業界全体の信頼を揺るがす事態となった。",
+    "options": [
+      "に限って",
+      "にとどまらず",
+      "をおいて",
+      "ならではの"
+    ],
+    "answer": 1,
+    "full": "その企業の不正問題は一社にとどまらず、業界全体の信頼を揺るがす事態となった。",
+    "tr": {
+      "zh": "那家企业的违规问题不止于一家公司，演变成了动摇整个行业信誉的事态。",
+      "en": "The company's misconduct didn't stop at one firm; it shook trust in the entire industry."
+    },
+    "why": {
+      "zh": "问题超出“一家公司”的范围，扩大到“整个行业”，用「にとどまらず」。",
+      "en": "The problem goes beyond one firm and spreads to the whole industry: 「にとどまらず」."
+    },
+    "wrong": [
+      {
+        "zh": "「に限って」是“偏偏在……的时候”，不表示范围扩大。",
+        "en": "「に限って」 (of all times) doesn't express spreading beyond a scope."
+      },
+      null,
+      {
+        "zh": "「をおいて」后面要有「ほかに〜ない」的否定，这里没有。",
+        "en": "「をおいて」 needs 「ほかに〜ない」 after it."
+      },
+      {
+        "zh": "「ならではの」后面接名词，而且是称赞独有的特色，不符合句意。",
+        "en": "「ならではの」 needs a noun after it and praises something unique — neither fits."
+      }
+    ]
+  },
+  {
+    "id": "n1-l77-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson77#3"
+    ],
+    "difficulty": 3,
+    "stem": "彼の研究は新しい理論を提示する（　）、実際の政策づくりにも生かされている。",
+    "options": [
+      "はおろか",
+      "もさることながら",
+      "にとどまらず",
+      "に限らず"
+    ],
+    "answer": 2,
+    "full": "彼の研究は新しい理論を提示するにとどまらず、実際の政策づくりにも生かされている。",
+    "tr": {
+      "zh": "他的研究不止于提出新的理论，还被运用到了实际的政策制定中。",
+      "en": "His research goes beyond proposing a new theory; it is also being put to use in real policymaking."
+    },
+    "why": {
+      "zh": "前面是动词辞書形「提示する」，事情超出“提出理论”这一阶段，扩展到“政策制定”，用「にとどまらず」。",
+      "en": "After the dictionary-form verb 「提示する」, the work goes past the stage of proposing a theory into policy: 「にとどまらず」."
+    },
+    "wrong": [
+      {
+        "zh": "「はおろか」接名词，后项多为否定（连……都不），这里是积极的扩展。",
+        "en": "「はおろか」 takes a noun and is mostly negative (not even…); this is a positive extension."
+      },
+      {
+        "zh": "「もさることながら」接名词，不能接动词「提示する」。",
+        "en": "「もさることながら」 takes a noun, not the verb 「提示する」."
+      },
+      null,
+      {
+        "zh": "「に限らず」一般接名词，表示同类中的一个例子，不直接接动词辞書形。",
+        "en": "「に限らず」 normally takes a noun (one example of a group), not a dictionary-form verb."
+      }
+    ]
+  },
+  {
+    "id": "n1-l77-009",
+    "type": "narabe",
+    "refs": [
+      "lesson77#3"
+    ],
+    "difficulty": 2,
+    "stem": "彼女の活動は [_] [★] [_] [_] 及んでいる。",
+    "options": [
+      "にとどまらず",
+      "教育支援にまで",
+      "途上国の",
+      "国内"
+    ],
+    "order": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "full": "彼女の活動は国内にとどまらず途上国の教育支援にまで及んでいる。",
+    "tr": {
+      "zh": "她的活动不止于国内，已经扩展到发展中国家的教育援助。",
+      "en": "Her work doesn't stop at home; it extends to educational aid in developing countries."
+    },
+    "why": {
+      "zh": "「国内にとどまらず」后接扩展后的范围「途上国の教育支援にまで及んでいる」：国内 → にとどまらず → 途上国の → 教育支援にまで。★ 是「にとどまらず」。",
+      "en": "「国内にとどまらず」 is followed by the wider scope 「途上国の教育支援にまで及んでいる」: 国内 → にとどまらず → 途上国の → 教育支援にまで. The ★ is 「にとどまらず」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l77-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson77#4"
+    ],
+    "difficulty": 2,
+    "stem": "事故の後遺症で、彼は走ること（　）、一人で歩くことさえ難しくなった。",
+    "options": [
+      "にとどまらず",
+      "はおろか",
+      "もさることながら",
+      "に限らず"
+    ],
+    "answer": 1,
+    "full": "事故の後遺症で、彼は走ることはおろか、一人で歩くことさえ難しくなった。",
+    "tr": {
+      "zh": "由于事故后遗症，他别说跑步了，连一个人走路都困难了。",
+      "en": "Because of the after-effects of the accident, he can't even walk on his own, let alone run."
+    },
+    "why": {
+      "zh": "「さえ」呼应：连更基本的“走路”都困难，更难的“跑步”就不用说了，用「はおろか」。",
+      "en": "With 「さえ」: even the basic act of walking is hard, so running is out of the question: 「はおろか」."
+    },
+    "wrong": [
+      {
+        "zh": "「にとどまらず」是范围向外扩大，而“走路”比“跑步”更基本，方向相反。",
+        "en": "「にとどまらず」 widens the scope outward, but walking is more basic than running — the wrong direction."
+      },
+      null,
+      {
+        "zh": "「もさることながら」用于正面评价、重点在后者，不和「さえ〜難しい」这样的否定呼应。",
+        "en": "「もさることながら」 is for positive evaluation focused on B, not 「さえ〜難しい」."
+      },
+      {
+        "zh": "「に限らず」是同类的平行举例，不和「さえ」构成“别说A，连B都……”。",
+        "en": "「に限らず」 lists items side by side; it doesn't build \"let alone A, not even B\" with 「さえ」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l77-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson77#4"
+    ],
+    "difficulty": 2,
+    "stem": "この辺りは開発が遅れていて、鉄道（　）、路線バスさえ一日に数本しか走っていない。",
+    "options": [
+      "に至っては",
+      "はおろか",
+      "をおいて",
+      "もさることながら"
+    ],
+    "answer": 1,
+    "full": "この辺りは開発が遅れていて、鉄道はおろか、路線バスさえ一日に数本しか走っていない。",
+    "tr": {
+      "zh": "这一带开发滞后，别说铁路了，连公交车一天也只有几班。",
+      "en": "Development lags behind here: there's no railway, of course, and even the buses run only a few times a day."
+    },
+    "why": {
+      "zh": "「さえ」呼应：连基本的公交都少得可怜，更不用说铁路，用「はおろか」。",
+      "en": "With 「さえ」: even buses are scarce, let alone a railway: 「はおろか」."
+    },
+    "wrong": [
+      {
+        "zh": "「に至っては」是先描述整体、再举出最极端的一个，「鉄道に至っては、路線バスさえ」说不通。",
+        "en": "「に至っては」 picks the extreme case after a general statement; 「鉄道に至っては、路線バスさえ」 makes no sense."
+      },
+      null,
+      {
+        "zh": "「をおいて」后项要是「ほかに〜ない」，这里没有。",
+        "en": "「をおいて」 needs 「ほかに〜ない」 after it."
+      },
+      {
+        "zh": "「もさることながら」用于正面评价、重点在后者，不用于“连……都没有”的否定。",
+        "en": "「もさることながら」 is for positive evaluation, not \"not even…\"."
+      }
+    ]
+  },
+  {
+    "id": "n1-l77-012",
+    "type": "narabe",
+    "refs": [
+      "lesson77#4"
+    ],
+    "difficulty": 2,
+    "stem": "祖母は機械が苦手で、[_] [_] [★] [_] 一人ではできない。",
+    "options": [
+      "はおろか",
+      "電話を",
+      "メール",
+      "かけることさえ"
+    ],
+    "order": [
+      2,
+      0,
+      1,
+      3
+    ],
+    "full": "祖母は機械が苦手で、メールはおろか電話をかけることさえ一人ではできない。",
+    "tr": {
+      "zh": "祖母不擅长摆弄机器，别说发邮件了，连打电话都没法一个人完成。",
+      "en": "My grandmother is hopeless with gadgets — she can't even make a phone call on her own, let alone send an email."
+    },
+    "why": {
+      "zh": "名词「メール」接「はおろか」，后项用「さえ」呼应：メール → はおろか → 電話を → かけることさえ。★ 是「電話を」。",
+      "en": "The noun 「メール」 takes 「はおろか」, answered by 「さえ」: メール → はおろか → 電話を → かけることさえ. The ★ is 「電話を」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l77-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson77#5"
+    ],
+    "difficulty": 3,
+    "stem": "この小説が多くの読者を引きつけるのは、筋書きの面白さ（　）、登場人物の描写の細やかさによるところが大きい。",
+    "options": [
+      "はおろか",
+      "もさることながら",
+      "に限らず",
+      "をよそに"
+    ],
+    "answer": 1,
+    "full": "この小説が多くの読者を引きつけるのは、筋書きの面白さもさることながら、登場人物の描写の細やかさによるところが大きい。",
+    "tr": {
+      "zh": "这部小说之所以吸引众多读者，情节的趣味固然是一方面，但更主要在于人物描写的细腻。",
+      "en": "This novel draws so many readers partly for its gripping plot, but even more for its finely drawn characters."
+    },
+    "why": {
+      "zh": "先承认“情节有趣”，重点放在“人物描写细腻”上（「〜によるところが大きい」，B后面没有「も」），用「もさることながら」。",
+      "en": "The plot is acknowledged, but the weight falls on the characters (「〜によるところが大きい」, no 「も」 after B): 「もさることながら」."
+    },
+    "wrong": [
+      {
+        "zh": "「はおろか」后项多为否定（连……都不），这里是称赞。",
+        "en": "「はおろか」 is mostly followed by a negative; this is praise."
+      },
+      null,
+      {
+        "zh": "「に限らず」是“不限于A，B也……”的平行列举，后面一般用「も」，不把重点放到B上。",
+        "en": "「に限らず」 lists A and B as equals (usually with 「も」); it doesn't shift the weight onto B."
+      },
+      {
+        "zh": "「をよそに」是“不顾（担心、反对等）”，前面要接别人的情绪或态度；“情节的趣味”不是要被无视的东西。",
+        "en": "「をよそに」 means ignoring others' worries or objections; a gripping plot isn't something being ignored."
+      }
+    ]
+  },
+  {
+    "id": "n1-l77-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson77#5"
+    ],
+    "difficulty": 2,
+    "stem": "就職先を選ぶ際は、給与（　）、職場の雰囲気や人間関係もよく見ておきたい。",
+    "options": [
+      "に至っては",
+      "はおろか",
+      "をおいて",
+      "もさることながら"
+    ],
+    "answer": 3,
+    "full": "就職先を選ぶ際は、給与もさることながら、職場の雰囲気や人間関係もよく見ておきたい。",
+    "tr": {
+      "zh": "选择工作单位时，工资固然重要，我也想好好看看职场的氛围和人际关系。",
+      "en": "When choosing an employer, salary matters, but I also want to take a good look at the atmosphere and relationships at work."
+    },
+    "why": {
+      "zh": "先承认“工资”重要，再把重点放在“氛围和人际关系”上，用「もさることながら」。",
+      "en": "Salary is acknowledged, then the focus moves to atmosphere and relationships: 「もさることながら」."
+    },
+    "wrong": [
+      {
+        "zh": "「に至っては」是举出最极端的（多为负面的）一个例子，不符合句意。",
+        "en": "「に至っては」 singles out the most extreme (usually negative) case, which doesn't fit."
+      },
+      {
+        "zh": "「はおろか」后项多为否定，不能接「〜ておきたい」这样的意志表达。",
+        "en": "「はおろか」 is mostly negative and can't lead into a wish like 「〜ておきたい」."
+      },
+      {
+        "zh": "「をおいて」后项要是「ほかに〜ない」，这里没有。",
+        "en": "「をおいて」 needs 「ほかに〜ない」 after it."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l77-015",
+    "type": "narabe",
+    "refs": [
+      "lesson77#5"
+    ],
+    "difficulty": 2,
+    "stem": "この映画は、[_] [_] [_] [★] 映像の美しさが高く評価されている。",
+    "options": [
+      "ストーリーの",
+      "も",
+      "さることながら",
+      "面白さ"
+    ],
+    "order": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "full": "この映画は、ストーリーの面白さもさることながら映像の美しさが高く評価されている。",
+    "tr": {
+      "zh": "这部电影故事精彩固然不错，但画面之美更是备受好评。",
+      "en": "The film's story is gripping, but it is its visual beauty that has won the highest praise."
+    },
+    "why": {
+      "zh": "名词「ストーリーの面白さ」接「もさることながら」，后面是重点B「映像の美しさが」：ストーリーの → 面白さ → も → さることながら。★ 是「さることながら」。",
+      "en": "The noun 「ストーリーの面白さ」 takes 「もさることながら」, then the real focus 「映像の美しさが」: ストーリーの → 面白さ → も → さることながら. The ★ is 「さることながら」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l77-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson77#6"
+    ],
+    "difficulty": 2,
+    "stem": "彼女が会議の資料を忘れてくるのは、今回（　）。これでもう三度目だ。",
+    "options": [
+      "に限る",
+      "を限りにする",
+      "に限ったことではない",
+      "をおいてほかにない"
+    ],
+    "answer": 2,
+    "full": "彼女が会議の資料を忘れてくるのは、今回に限ったことではない。これでもう三度目だ。",
+    "tr": {
+      "zh": "她忘带会议资料又不是这一次才有的事，这已经是第三次了。",
+      "en": "It's not just this once that she's forgotten the meeting papers — this is already the third time."
+    },
+    "why": {
+      "zh": "后句「もう三度目だ」说明不只是这一次，句末用「に限ったことではない」，带不满语气。",
+      "en": "「もう三度目だ」 shows it isn't only this time; sentence-final 「に限ったことではない」, with irritation."
+    },
+    "wrong": [
+      {
+        "zh": "「に限る」是“……最好”，“这次最好”意思不通。",
+        "en": "「に限る」 (… is best) makes no sense here."
+      },
+      {
+        "zh": "「を限りに」表示以某时为限此后不再，后面要接“结束”的动作，不能这样作谓语。",
+        "en": "「を限りに」 marks a cut-off and needs an ending verb after it; it can't stand as the predicate like this."
+      },
+      null,
+      {
+        "zh": "「をおいてほかにない」意为“非……莫属”，和“已经第三次了”矛盾。",
+        "en": "「をおいてほかにない」 (none but) contradicts \"the third time already\"."
+      }
+    ]
+  },
+  {
+    "id": "n1-l77-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson77#6"
+    ],
+    "difficulty": 2,
+    "stem": "ネット上の誹謗中傷は有名人（　）、ごく普通の人も被害に遭っている。",
+    "options": [
+      "ならではで",
+      "に限ったことではなく",
+      "をおいて",
+      "に限って"
+    ],
+    "answer": 1,
+    "full": "ネット上の誹謗中傷は有名人に限ったことではなく、ごく普通の人も被害に遭っている。",
+    "tr": {
+      "zh": "网络上的诽谤中伤并不只针对名人，很普通的人也会受害。",
+      "en": "Online abuse isn't something only celebrities face; perfectly ordinary people suffer from it too."
+    },
+    "why": {
+      "zh": "句中形式「に限ったことではなく」，说这种负面现象不只名人才有，普通人也有。",
+      "en": "The mid-sentence form 「に限ったことではなく」: this negative phenomenon isn't limited to celebrities."
+    },
+    "wrong": [
+      {
+        "zh": "「ならでは」是称赞独有的优点，不用于诽谤中伤这种负面现象。",
+        "en": "「ならでは」 praises a unique strength; it doesn't suit online abuse."
+      },
+      null,
+      {
+        "zh": "「をおいて」后项要是「ほかに〜ない」，这里没有。",
+        "en": "「をおいて」 needs 「ほかに〜ない」 after it."
+      },
+      {
+        "zh": "「に限って」是“偏偏……”，不表示“不只是……”。",
+        "en": "「に限って」 means \"of all people/times\", not \"not only\"."
+      }
+    ]
+  },
+  {
+    "id": "n1-l77-018",
+    "type": "narabe",
+    "refs": [
+      "lesson77#6"
+    ],
+    "difficulty": 2,
+    "stem": "休日に仕事のメールを確認してしまうのは、[_] [★] [_] [_]。",
+    "options": [
+      "何も",
+      "ことではない",
+      "限った",
+      "管理職に"
+    ],
+    "order": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "full": "休日に仕事のメールを確認してしまうのは、何も管理職に限ったことではない。",
+    "tr": {
+      "zh": "休息日忍不住查看工作邮件的，并不只是管理层。",
+      "en": "It's by no means only managers who end up checking work email on their days off."
+    },
+    "why": {
+      "zh": "「何も」加强否定，后接「管理職に限ったことではない」：何も → 管理職に → 限った → ことではない。★ 是「管理職に」。",
+      "en": "「何も」 strengthens the negative, followed by 「管理職に限ったことではない」: 何も → 管理職に → 限った → ことではない. The ★ is 「管理職に」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l77-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson77#7"
+    ],
+    "difficulty": 2,
+    "stem": "創業五十年の当館は、本年三月末（　）営業を終了いたします。長らくのご愛顧に心より御礼申し上げます。",
+    "options": [
+      "をよそに",
+      "を皮切りに",
+      "を限りに",
+      "に至って"
+    ],
+    "answer": 2,
+    "full": "創業五十年の当館は、本年三月末を限りに営業を終了いたします。長らくのご愛顧に心より御礼申し上げます。",
+    "tr": {
+      "zh": "创业五十年的本馆将于今年三月底停止营业。衷心感谢多年来的惠顾。",
+      "en": "After fifty years in business, we will close at the end of March this year. Thank you sincerely for your long patronage."
+    },
+    "why": {
+      "zh": "时间名词「三月末」+「営業を終了」，以这个时点为限结束营业，用「を限りに」。",
+      "en": "A time noun (「三月末」) plus 「営業を終了」 — business ends at that point: 「を限りに」."
+    },
+    "wrong": [
+      {
+        "zh": "「をよそに」是“不顾……”，和时间名词「三月末」接不上。",
+        "en": "「をよそに」 (paying no heed to) doesn't attach to a date like 「三月末」."
+      },
+      {
+        "zh": "「を皮切りに」表示一连串事情的开端，和“结束营业”相反。",
+        "en": "「を皮切りに」 marks a start, the opposite of closing."
+      },
+      null,
+      {
+        "zh": "「に至って」是“事态发展到……地步才……”，和“到三月底结束营业”不符。",
+        "en": "「に至って」 (only when things reached…) doesn't fit a planned closing date."
+      }
+    ]
+  },
+  {
+    "id": "n1-l77-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson77#7"
+    ],
+    "difficulty": 3,
+    "stem": "迷子になった子どもの名前を、母親は声（　）呼び続けた。",
+    "options": [
+      "にとどまらず",
+      "を限りに",
+      "をおいて",
+      "を皮切りに"
+    ],
+    "answer": 1,
+    "full": "迷子になった子どもの名前を、母親は声を限りに呼び続けた。",
+    "tr": {
+      "zh": "母亲声嘶力竭地不停呼喊着走失孩子的名字。",
+      "en": "The mother kept calling her lost child's name at the top of her voice."
+    },
+    "why": {
+      "zh": "「声を限りに」是固定说法，“用尽全力大声地”，这里的「を限りに」是“用到极限”，与时间无关。",
+      "en": "「声を限りに」 is a set phrase — at the top of one's voice; here 「を限りに」 means \"to the limit\", not a time."
+    },
+    "wrong": [
+      {
+        "zh": "「声にとどまらず」意为“不止声音”，和「呼び続けた」接不上。",
+        "en": "「声にとどまらず」 (not just the voice) doesn't lead into 「呼び続けた」."
+      },
+      null,
+      {
+        "zh": "「をおいて」后项要是「ほかに〜ない」，这里没有。",
+        "en": "「をおいて」 needs 「ほかに〜ない」 after it."
+      },
+      {
+        "zh": "「声を皮切りに」没有意义，「を皮切りに」表示一连串事情的开端。",
+        "en": "「声を皮切りに」 means nothing; 「を皮切りに」 marks the start of a series."
+      }
+    ]
+  },
+  {
+    "id": "n1-l77-021",
+    "type": "narabe",
+    "refs": [
+      "lesson77#7"
+    ],
+    "difficulty": 2,
+    "stem": "この路線バスは、[★] [_] [_] [_] ことが決まった。",
+    "options": [
+      "を限りに",
+      "終了する",
+      "運行を",
+      "本年度"
+    ],
+    "order": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "full": "この路線バスは、本年度を限りに運行を終了することが決まった。",
+    "tr": {
+      "zh": "这条公交线路已确定将于本年度结束后停运。",
+      "en": "It has been decided that this bus route will stop running at the end of this fiscal year."
+    },
+    "why": {
+      "zh": "时间名词「本年度」接「を限りに」，后项是结束的动作「運行を終了する」：本年度 → を限りに → 運行を → 終了する。★ 是「本年度」。",
+      "en": "The time noun 「本年度」 takes 「を限りに」, followed by the ending 「運行を終了する」: 本年度 → を限りに → 運行を → 終了する. The ★ is 「本年度」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

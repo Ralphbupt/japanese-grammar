@@ -1,0 +1,699 @@
+[
+  {
+    "id": "n1-l89-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson89#1"
+    ],
+    "difficulty": 1,
+    "stem": "転勤のご報告（　）、お世話になった取引先を一社ずつ訪問した。",
+    "options": [
+      "かたわら",
+      "かたがた",
+      "ながらに",
+      "なりに"
+    ],
+    "answer": 1,
+    "full": "転勤のご報告かたがた、お世話になった取引先を一社ずつ訪問した。",
+    "tr": {
+      "zh": "我挨家拜访了一直关照我的客户，也顺便报告调职的事。",
+      "en": "I visited each of the clients who had looked after me, also to let them know of my transfer."
+    },
+    "why": {
+      "zh": "「ご報告」+ 拜访类动词「訪問した」，一次拜访兼有报告的目的，用郑重的「かたがた」。",
+      "en": "「ご報告」 + a visiting verb 「訪問した」: one visit that also serves to report — the formal 「かたがた」."
+    },
+    "wrong": [
+      {
+        "zh": "「かたわら」接「名詞の」或辞书形，表示本职之余长期从事的活动，不能直接接「ご報告」，也不是一次拜访。",
+        "en": "「かたわら」 takes 「名詞の」 or the dictionary form and means a long-term side activity — not a one-off visit."
+      },
+      null,
+      {
+        "zh": "「ながらに」只用于「涙ながらに」「生まれながらに」等固定说法。",
+        "en": "「ながらに」 exists only in set phrases like 「涙ながらに」."
+      },
+      {
+        "zh": "「なりに」是“以……相应的方式”，「ご報告なりに訪問した」意思不通。",
+        "en": "「なりに」 (in its own way) makes no sense with 「ご報告」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l89-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson89#1"
+    ],
+    "difficulty": 2,
+    "stem": "まずは略儀ながら書中をもちまして、御礼（　）ご挨拶申し上げます。",
+    "options": [
+      "のかたわら",
+      "ともなく",
+      "かたがた",
+      "とばかりに"
+    ],
+    "answer": 2,
+    "full": "まずは略儀ながら書中をもちまして、御礼かたがたご挨拶申し上げます。",
+    "tr": {
+      "zh": "谨以书信略表谢意，并致问候。",
+      "en": "Please allow me, in this brief letter, to thank you and to send my greetings."
+    },
+    "why": {
+      "zh": "书信结尾的固定说法「お礼かたがたご挨拶申し上げます」：致谢兼问候，用「かたがた」。",
+      "en": "The set closing 「お礼かたがたご挨拶申し上げます」 — thanks combined with greetings — uses 「かたがた」."
+    },
+    "wrong": [
+      {
+        "zh": "「かたわら」表示本职之余长期从事的另一种活动，书信结尾的致谢、问候不是这种关系。",
+        "en": "「かたわら」 is a long-term activity alongside one's main work, not thanks combined with a greeting in a letter."
+      },
+      {
+        "zh": "「ともなく」接动词或疑问词，表示“无意中”“不知……”，不接「御礼」。",
+        "en": "「ともなく」 (without meaning to) follows verbs or question words, not 「御礼」."
+      },
+      null,
+      {
+        "zh": "「とばかりに」表示态度像是说出了某句话，用于描写别人的样子，不是书信用语。",
+        "en": "「とばかりに」 (as if to say) describes someone's manner; it isn't letter language."
+      }
+    ]
+  },
+  {
+    "id": "n1-l89-003",
+    "type": "narabe",
+    "refs": [
+      "lesson89#1"
+    ],
+    "difficulty": 2,
+    "stem": "本日は [_] [_] [★] [_] 参りました。",
+    "options": [
+      "かたがた",
+      "先日の",
+      "お礼",
+      "ご挨拶に"
+    ],
+    "order": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "full": "本日は先日のお礼かたがたご挨拶に参りました。",
+    "tr": {
+      "zh": "今天我是来答谢前几天的关照，也顺便来问候一下。",
+      "en": "I've come today to greet you, and also to thank you for the other day."
+    },
+    "why": {
+      "zh": "「先日の」修饰「お礼」，「お礼かたがた」后接实际的行动「ご挨拶に参りました」：先日の → お礼 → かたがた → ご挨拶に。★ 是「かたがた」。",
+      "en": "「先日の」 modifies 「お礼」, and 「お礼かたがた」 is followed by the actual action 「ご挨拶に参りました」: 先日の → お礼 → かたがた → ご挨拶に. The ★ is 「かたがた」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l89-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson89#2"
+    ],
+    "difficulty": 1,
+    "stem": "引っ越し先の下見（　）、週末に新しい街を一日歩き回ってみるつもりだ。",
+    "options": [
+      "かたわら",
+      "ながらに",
+      "がてら",
+      "ずくめで"
+    ],
+    "answer": 2,
+    "full": "引っ越し先の下見がてら、週末に新しい街を一日歩き回ってみるつもりだ。",
+    "tr": {
+      "zh": "我打算周末去新街区逛上一整天，也顺便提前看看要搬去的地方。",
+      "en": "This weekend I'm going to spend a day walking around the new neighbourhood, partly to check out where I'll be moving."
+    },
+    "why": {
+      "zh": "动作性名词「下見」+ 移动动词「歩き回る」，一次出行兼有两个目的，用日常的「がてら」。",
+      "en": "Action noun 「下見」 + a movement verb 「歩き回る」: one outing with two purposes — everyday 「がてら」."
+    },
+    "wrong": [
+      {
+        "zh": "「かたわら」接「名詞の」，表示本职之余长期从事的活动，周末逛一次不是这种情况。",
+        "en": "「かたわら」 takes 「名詞の」 and means a long-term side activity, not one weekend walk."
+      },
+      {
+        "zh": "「ながらに」只有「涙ながらに」「生まれながらに」等固定说法，「下見ながらに」不成立。",
+        "en": "「ながらに」 exists only in set phrases; 「下見ながらに」 isn't Japanese."
+      },
+      null,
+      {
+        "zh": "「ずくめ」是“全是……”，「下見ずくめ」不成立。",
+        "en": "「ずくめ」 is \"nothing but\"; 「下見ずくめ」 doesn't exist."
+      }
+    ]
+  },
+  {
+    "id": "n1-l89-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson89#2",
+      "lesson89#1"
+    ],
+    "difficulty": 2,
+    "stem": "駅まで友人を見送り（　）、帰りに商店街で夕飯の買い物をしてきた。",
+    "options": [
+      "がてら",
+      "かたがた",
+      "かたわら",
+      "ながら"
+    ],
+    "answer": 0,
+    "full": "駅まで友人を見送りがてら、帰りに商店街で夕飯の買い物をしてきた。",
+    "tr": {
+      "zh": "送朋友去车站，顺便在回来的路上去商店街买了晚饭的菜。",
+      "en": "I saw my friend off at the station and did the shopping for dinner at the shopping street on the way back."
+    },
+    "why": {
+      "zh": "借送朋友这一趟出门，顺便买了晚饭的菜，是私人的小事，用「がてら」。「かたがた」虽然也能接动作名词，但多用于寒暄、致谢、问候等礼节性场合（「ご挨拶かたがた」），书信和商务里常见，不用于顺路买东西。",
+      "en": "Seeing a friend off doubles as a trip to buy dinner — a casual personal errand, so 「がてら」. 「かたがた」 can follow action nouns too, but it's formal and goes with courtesy acts (「ご挨拶かたがた」) in letters and business, not with shopping on the way home."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「かたがた」用于寒暄、致谢、探望等礼节性的事（「お礼かたがた」），语气正式；顺路买菜这种私事不用它。",
+        "en": "「かたがた」 is formal and pairs with courtesy acts (「お礼かたがた」); a casual errand like grocery shopping calls for 「がてら」."
+      },
+      {
+        "zh": "「かたわら」接动词辞书形，表示长期的另一种活动，「見送りかたわら」接续不对。",
+        "en": "「かたわら」 takes the dictionary form and means a long-term activity; 「見送りかたわら」 is the wrong connection."
+      },
+      {
+        "zh": "「ながら」表示两个动作同时进行，但买东西是在送完人的回程，并不同时。",
+        "en": "「ながら」 means two actions at the same time, but the shopping happened on the way back, after seeing the friend off."
+      }
+    ]
+  },
+  {
+    "id": "n1-l89-006",
+    "type": "narabe",
+    "refs": [
+      "lesson89#2"
+    ],
+    "difficulty": 2,
+    "stem": "仕事の [_] [_] [_] [★] 、近所の公園を一回りしてきた。",
+    "options": [
+      "転換",
+      "合間の",
+      "がてら",
+      "気分"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "仕事の合間の気分転換がてら、近所の公園を一回りしてきた。",
+    "tr": {
+      "zh": "趁工作的间隙，我去附近的公园转了一圈，也算是换换心情。",
+      "en": "In a break from work, I took a walk round the local park to clear my head."
+    },
+    "why": {
+      "zh": "「仕事の合間の」修饰「気分転換」，再接「がてら」，后面是移动「一回りしてきた」：合間の → 気分 → 転換 → がてら。★ 是「がてら」。",
+      "en": "「仕事の合間の」 modifies 「気分転換」, then 「がてら」 and the movement 「一回りしてきた」: 合間の → 気分 → 転換 → がてら. The ★ is 「がてら」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l89-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson89#3"
+    ],
+    "difficulty": 1,
+    "stem": "彼女は高校で数学を教える（　）、地元の合唱団で指揮者も務めている。",
+    "options": [
+      "がてら",
+      "かたがた",
+      "とばかりに",
+      "かたわら"
+    ],
+    "answer": 3,
+    "full": "彼女は高校で数学を教えるかたわら、地元の合唱団で指揮者も務めている。",
+    "tr": {
+      "zh": "她在高中教数学之余，还在当地合唱团担任指挥。",
+      "en": "Alongside teaching maths at a high school, she also conducts a local choir."
+    },
+    "why": {
+      "zh": "本职「高校で数学を教える」+ 长期的另一项活动「指揮者も務めている」，辞书形接「かたわら」。",
+      "en": "Main job 「数学を教える」 + a long-term second role 「指揮者も務めている」: dictionary form + 「かたわら」."
+    },
+    "wrong": [
+      {
+        "zh": "「がてら」接名词或ます形，用于一次性的出行，「教えるがてら」接续不对，也不是长期活动。",
+        "en": "「がてら」 takes a noun or ます stem and is for a one-off outing; 「教えるがてら」 is wrong."
+      },
+      {
+        "zh": "「かたがた」只接名词，用于一次拜访，「教えるかたがた」不成立。",
+        "en": "「かたがた」 takes only nouns, for a single visit; 「教えるかたがた」 doesn't exist."
+      },
+      {
+        "zh": "「とばかりに」是“仿佛在说……似的”，与身兼两职无关。",
+        "en": "「とばかりに」 (as if to say) has nothing to do with holding two roles."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l89-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson89#3"
+    ],
+    "difficulty": 2,
+    "stem": "祖母は家業の和菓子店の仕事の（　）、四十年にわたって地域の子どもたちに茶道を教えてきた。",
+    "options": [
+      "かたがた",
+      "かたわら",
+      "がてら",
+      "そばから"
+    ],
+    "answer": 1,
+    "full": "祖母は家業の和菓子店の仕事のかたわら、四十年にわたって地域の子どもたちに茶道を教えてきた。",
+    "tr": {
+      "zh": "祖母在经营家里的和果子店之余，四十年来一直教当地的孩子们茶道。",
+      "en": "Alongside her work at the family sweet shop, my grandmother taught the local children the tea ceremony for forty years."
+    },
+    "why": {
+      "zh": "「名詞の」接「かたわら」，主业（和果子店）之外长期（四十年）从事另一项活动。",
+      "en": "「名詞の」 + 「かたわら」: a long-term (forty-year) activity alongside the main work at the shop."
+    },
+    "wrong": [
+      {
+        "zh": "「かたがた」直接接名词、不加「の」，而且用于一次拜访，不是四十年的活动。",
+        "en": "「かたがた」 follows a noun directly (no 「の」) and is for one visit, not forty years."
+      },
+      null,
+      {
+        "zh": "「がてら」直接接名词、不加「の」，用于一次出行，不能表示长期活动。",
+        "en": "「がてら」 follows a noun directly (no 「の」) and is for a single outing, not a long-term activity."
+      },
+      {
+        "zh": "「そばから」接动词，表示“刚……就又……”，「仕事のそばから」不成立。",
+        "en": "「そばから」 (no sooner … than) follows verbs; 「仕事のそばから」 isn't a form."
+      }
+    ]
+  },
+  {
+    "id": "n1-l89-009",
+    "type": "narabe",
+    "refs": [
+      "lesson89#3"
+    ],
+    "difficulty": 2,
+    "stem": "兄は大学院で [★] [_] [_] [_] 、週に三日は塾で講師をしている。",
+    "options": [
+      "かたわら",
+      "研究を",
+      "博士論文の",
+      "続ける"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "兄は大学院で博士論文の研究を続けるかたわら、週に三日は塾で講師をしている。",
+    "tr": {
+      "zh": "哥哥在研究生院继续博士论文研究之余，每周有三天在补习班当讲师。",
+      "en": "Alongside his doctoral research at graduate school, my brother teaches at a cram school three days a week."
+    },
+    "why": {
+      "zh": "「博士論文の」修饰「研究」，「研究を続ける」是辞书形，接「かたわら」：博士論文の → 研究を → 続ける → かたわら。★ 是「博士論文の」。",
+      "en": "「博士論文の」 modifies 「研究」; 「研究を続ける」 is in the dictionary form and takes 「かたわら」: 博士論文の → 研究を → 続ける → かたわら. The ★ is 「博士論文の」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l89-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson89#4"
+    ],
+    "difficulty": 2,
+    "stem": "試合は終盤まで追い（　）の展開が続き、観客は一瞬たりとも目が離せなかった。",
+    "options": [
+      "つつ追われつつ",
+      "つ追われつ",
+      "ながら追われながら",
+      "ても追われても"
+    ],
+    "answer": 1,
+    "full": "試合は終盤まで追いつ追われつの展開が続き、観客は一瞬たりとも目が離せなかった。",
+    "tr": {
+      "zh": "比赛直到终盘都是你追我赶的局面，观众连一刻都无法移开视线。",
+      "en": "The game was neck and neck right to the end, and the crowd couldn't look away for a moment."
+    },
+    "why": {
+      "zh": "主动和被动交替反复，用固定说法「追いつ追われつ」（你追我赶）。",
+      "en": "Chasing and being chased in turn — the set phrase 「追いつ追われつ」 (neck and neck)."
+    },
+    "wrong": [
+      {
+        "zh": "「つつ」是“一边……”或逆接，没有「追いつつ追われつつ」这种固定说法。",
+        "en": "「つつ」 means \"while\" or \"although\"; there's no set phrase 「追いつつ追われつつ」."
+      },
+      null,
+      {
+        "zh": "「ながら」表示同时进行，不是交替反复的固定说法。",
+        "en": "「ながら」 is simultaneous action, not this set phrase for back-and-forth."
+      },
+      {
+        "zh": "「ても」是让步“即使……也”，「追っても追われても」接续和意思都不对（而且「追い」后不能接「ても」）。",
+        "en": "「ても」 is \"even if\"; 「追いても」 isn't a form and the meaning doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n1-l89-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson89#4"
+    ],
+    "difficulty": 1,
+    "stem": "隣の喫茶店とは、互いに常連客を紹介し合う（　）の関係が長く続いている。",
+    "options": [
+      "持ちつ持たれつ",
+      "行きつ戻りつ",
+      "浮きつ沈みつ",
+      "抜きつ抜かれつ"
+    ],
+    "answer": 0,
+    "full": "隣の喫茶店とは、互いに常連客を紹介し合う持ちつ持たれつの関係が長く続いている。",
+    "tr": {
+      "zh": "我们和隔壁的咖啡店互相介绍常客，这种互相帮衬的关系已经持续了很久。",
+      "en": "We and the café next door have long had a give-and-take relationship, sending regulars to each other."
+    },
+    "why": {
+      "zh": "「互いに…紹介し合う」是互相帮助，用「持ちつ持たれつ」（互相扶持）。",
+      "en": "「互いに…紹介し合う」 (introducing customers to each other) is mutual help: 「持ちつ持たれつ」 (give and take)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「行きつ戻りつ」是“来回踱步”，描写人在原地来回走动。",
+        "en": "「行きつ戻りつ」 is pacing back and forth on the spot."
+      },
+      {
+        "zh": "「浮きつ沈みつ」是“时浮时沉”，描写在水中漂动的东西。",
+        "en": "「浮きつ沈みつ」 is bobbing up and down in water."
+      },
+      {
+        "zh": "「抜きつ抜かれつ」是比赛中“你超我、我超你”，不是互相帮助。",
+        "en": "「抜きつ抜かれつ」 is overtaking each other in a race, not helping each other."
+      }
+    ]
+  },
+  {
+    "id": "n1-l89-012",
+    "type": "narabe",
+    "refs": [
+      "lesson89#4"
+    ],
+    "difficulty": 2,
+    "stem": "告白すべきかどうか迷った彼は、彼女の家の [_] [★] [_] [_] 。",
+    "options": [
+      "前を",
+      "戻りつ",
+      "行きつ",
+      "した"
+    ],
+    "order": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "full": "告白すべきかどうか迷った彼は、彼女の家の前を行きつ戻りつした。",
+    "tr": {
+      "zh": "拿不定主意要不要表白，他在她家门前来回踱步。",
+      "en": "Unable to decide whether to confess his feelings, he paced back and forth in front of her house."
+    },
+    "why": {
+      "zh": "「家の前を」是移动的场所，后接固定说法「行きつ戻りつする」（「行きつ」在前）：前を → 行きつ → 戻りつ → した。★ 是「行きつ」。",
+      "en": "「家の前を」 is the place of movement, then the set phrase 「行きつ戻りつする」 (行きつ first): 前を → 行きつ → 戻りつ → した. The ★ is 「行きつ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l89-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson89#5"
+    ],
+    "difficulty": 2,
+    "stem": "十月（　）暑い日が続き、街では半袖で歩く人の姿も目立つ。",
+    "options": [
+      "なりに",
+      "ながらに",
+      "にしては",
+      "ずくめで"
+    ],
+    "answer": 2,
+    "full": "十月にしては暑い日が続き、街では半袖で歩く人の姿も目立つ。",
+    "tr": {
+      "zh": "就十月来说，天气热得反常，街上穿短袖的人也很显眼。",
+      "en": "It's been hot for October, and you notice plenty of people in short sleeves around town."
+    },
+    "why": {
+      "zh": "十月本该凉爽，实际却热，与预期不符，用「にしては」。课文指出这里不能用「なりに」。",
+      "en": "October should be cool but it's hot — contrary to expectation: 「にしては」. The lesson marks 「なりに」 wrong here."
+    },
+    "wrong": [
+      {
+        "zh": "「なりに」是承认局限、在其范围内相应地做，不表示“与预期不符”：❌「十月なりに暑い」。",
+        "en": "「なりに」 accepts a limit and works within it; it doesn't mean \"unexpectedly\": ❌「十月なりに暑い」."
+      },
+      {
+        "zh": "「ながらに」只用于「涙ながらに」「生まれながらに」等固定说法。",
+        "en": "「ながらに」 exists only in set phrases like 「涙ながらに」."
+      },
+      null,
+      {
+        "zh": "「ずくめ」是“全是……”，「十月ずくめ」不成立。",
+        "en": "「ずくめ」 is \"nothing but\"; 「十月ずくめ」 doesn't exist."
+      }
+    ]
+  },
+  {
+    "id": "n1-l89-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson89#5"
+    ],
+    "difficulty": 2,
+    "stem": "予算が少ないなら少ない（　）、やり方を工夫すれば十分楽しいイベントにできるはずだ。",
+    "options": [
+      "ながらも",
+      "にしては",
+      "がてら",
+      "なりに"
+    ],
+    "answer": 3,
+    "full": "予算が少ないなら少ないなりに、やり方を工夫すれば十分楽しいイベントにできるはずだ。",
+    "tr": {
+      "zh": "预算少就按少的办法来，只要在做法上动动脑筋，应该也能办成一场很有意思的活动。",
+      "en": "If the budget is small, work with what you have; with some ingenuity it can still be a really enjoyable event."
+    },
+    "why": {
+      "zh": "「AならAなりに」：承认预算少的局限，在这个范围内相应地想办法。",
+      "en": "「AならAなりに」: accept the limit (a small budget) and make the most of it within that."
+    },
+    "wrong": [
+      {
+        "zh": "「ながらも」是逆接“虽然……”，没有「少ないなら少ないながらも」这种说法。",
+        "en": "「ながらも」 is \"although\"; 「少ないなら少ないながらも」 isn't a pattern."
+      },
+      {
+        "zh": "「にしては」表示与预期不符，「少ないなら少ないにしては」不成立。",
+        "en": "「にしては」 (unexpectedly for) doesn't fit the 「AならA〜」 frame."
+      },
+      {
+        "zh": "「がてら」接动作性名词或ます形表示“顺便”，不接形容词。",
+        "en": "「がてら」 (while also) follows an action, not an adjective."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l89-015",
+    "type": "narabe",
+    "refs": [
+      "lesson89#5"
+    ],
+    "difficulty": 2,
+    "stem": "今思えば、私の留学に反対したのも、[_] [_] [★] [_] あったからなのだろう。",
+    "options": [
+      "なりの",
+      "考えが",
+      "父",
+      "父には"
+    ],
+    "order": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "full": "今思えば、私の留学に反対したのも、父には父なりの考えがあったからなのだろう。",
+    "tr": {
+      "zh": "现在想来，父亲反对我留学，也是因为他有他自己的想法吧。",
+      "en": "Looking back, my father probably opposed my studying abroad because he had his own reasons."
+    },
+    "why": {
+      "zh": "「AにはAなりの〜がある」：父には → 父 → なりの → 考えが（あった）。★ 是「なりの」。",
+      "en": "「AにはAなりの〜がある」: 父には → 父 → なりの → 考えが (あった). The ★ is 「なりの」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l89-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson89#6"
+    ],
+    "difficulty": 2,
+    "stem": "私が意見を言い終わらないうちに、部長は聞く必要はない（　）資料を閉じてしまった。",
+    "options": [
+      "とばかりに",
+      "んばかりに",
+      "ばかりに",
+      "ともなく"
+    ],
+    "answer": 0,
+    "full": "私が意見を言い終わらないうちに、部長は聞く必要はないとばかりに資料を閉じてしまった。",
+    "tr": {
+      "zh": "我的意见还没说完，部长就像在说“没必要听”似的把资料合上了。",
+      "en": "Before I'd even finished giving my view, the manager shut his file as if to say there was no need to listen."
+    },
+    "why": {
+      "zh": "前面是部长心里的话「聞く必要はない」，他没说出口，但动作表现出了这个意思，用「とばかりに」。",
+      "en": "「聞く必要はない」 is what the manager's action seems to say without words: 「とばかりに」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「んばかりに」接ない形（「泣かんばかりに」），表示几乎要做某动作，前面不能是一句话。",
+        "en": "「んばかりに」 follows the ない stem (泣かんばかりに); it can't follow a whole sentence."
+      },
+      {
+        "zh": "「ばかりに」是“就因为……（导致坏结果）”，“就因为没必要听所以合上资料”意思不通。",
+        "en": "「ばかりに」 means \"just because\" (leading to a bad result), which makes no sense here."
+      },
+      {
+        "zh": "「ともなく」接动词表示“无意中”，不接一句话，部长的动作也明显是有意的。",
+        "en": "「ともなく」 (without meaning to) doesn't follow a sentence, and the manager's action was deliberate."
+      }
+    ]
+  },
+  {
+    "id": "n1-l89-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson89#6"
+    ],
+    "difficulty": 1,
+    "stem": "相手チームの守備が乱れた隙を逃さず、彼はここぞ（　）ゴール前へ駆け上がった。",
+    "options": [
+      "とあって",
+      "ともなく",
+      "とあれば",
+      "とばかりに"
+    ],
+    "answer": 3,
+    "full": "相手チームの守備が乱れた隙を逃さず、彼はここぞとばかりにゴール前へ駆け上がった。",
+    "tr": {
+      "zh": "他抓住对方防守混乱的空当，趁机冲到了球门前。",
+      "en": "Seizing the gap when the other team's defence fell apart, he charged up to the goal, knowing this was the moment."
+    },
+    "why": {
+      "zh": "「ここぞとばかりに」是固定说法：“就是现在”，趁机全力去做。",
+      "en": "「ここぞとばかりに」 is a set phrase: \"now's the time\", seizing the chance."
+    },
+    "wrong": [
+      {
+        "zh": "「とあって」是“因为是……（特殊情况）”，接名词或普通形，「ここぞとあって」不成立。",
+        "en": "「とあって」 (since it is …) follows a noun or plain form; 「ここぞとあって」 isn't Japanese."
+      },
+      {
+        "zh": "「ともなく」是“无意中”，和抓住时机冲上去的有意动作矛盾。",
+        "en": "「ともなく」 (without meaning to) contradicts deliberately seizing the moment."
+      },
+      {
+        "zh": "「とあれば」是“如果是为了……”，「ここぞとあれば」不成立。",
+        "en": "「とあれば」 (if it's for …) can't follow 「ここぞ」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l89-018",
+    "type": "narabe",
+    "refs": [
+      "lesson89#6"
+    ],
+    "difficulty": 2,
+    "stem": "父は無言のまま、[_] [_] [_] [★] ドアのほうを指さした。",
+    "options": [
+      "ばかりに",
+      "出て",
+      "と",
+      "行け"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "父は無言のまま、出て行けとばかりにドアのほうを指さした。",
+    "tr": {
+      "zh": "父亲一言不发，仿佛在说“出去”似的指了指门口。",
+      "en": "Without a word, my father pointed at the door as if to say \"Get out\"."
+    },
+    "why": {
+      "zh": "「とばかりに」前面是那句没说出口的话「出て行け」：出て → 行け → と → ばかりに。★ 是「ばかりに」。",
+      "en": "「とばかりに」 follows the unspoken words 「出て行け」: 出て → 行け → と → ばかりに. The ★ is 「ばかりに」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]
