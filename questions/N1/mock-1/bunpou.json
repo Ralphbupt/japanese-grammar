@@ -1,0 +1,583 @@
+[
+  {
+    "id": "n1-m1-101",
+    "type": "bunpou",
+    "refs": [
+      "lesson77#1"
+    ],
+    "difficulty": 2,
+    "stem": "戦後の日本社会を知るための一冊を挙げるとすれば、この本（　）ほかにないだろう。",
+    "options": [
+      "をおいて",
+      "ならでは",
+      "をよそに",
+      "にひきかえ"
+    ],
+    "answer": 0,
+    "full": "戦後の日本社会を知るための一冊を挙げるとすれば、この本をおいてほかにないだろう。",
+    "tr": {
+      "zh": "如果要举出一本了解战后日本社会的书，恐怕非这本莫属。",
+      "en": "If I had to name one book for understanding post-war Japanese society, it could only be this one."
+    },
+    "why": {
+      "zh": "后面是「ほかにない」，前面是对“这本书”的高度评价：「名詞＋をおいてほかに〜ない」（非……莫属）。",
+      "en": "「ほかにない」 follows and the sentence singles the book out as the only choice: 「名詞＋をおいてほかに〜ない」 (\"none but\")."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ならでは」后接「の＋名词」表示“只有……才有的”，不和「ほかにない」搭配。",
+        "en": "「ならでは」 takes 「の＋noun」 (\"unique to\"); it doesn't combine with 「ほかにない」."
+      },
+      {
+        "zh": "「をよそに」是“不顾（别人的担心、反对）”，前面不能是“这本书”。",
+        "en": "「をよそに」 means paying no heed to others' worries or objections; it can't take 「この本」."
+      },
+      {
+        "zh": "「にひきかえ」是拿两者作对比（与……相反），句中没有对比的另一方。",
+        "en": "「にひきかえ」 contrasts two things (\"in contrast to\"); there's nothing being contrasted."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-102",
+    "type": "bunpou",
+    "refs": [
+      "lesson79#1"
+    ],
+    "difficulty": 2,
+    "stem": "被災地のために寄せられた寄付金である以上、一円（　）無駄にするわけにはいかない。",
+    "options": [
+      "にして",
+      "ならでは",
+      "たりとも",
+      "ずくめ"
+    ],
+    "answer": 2,
+    "full": "被災地のために寄せられた寄付金である以上、一円たりとも無駄にするわけにはいかない。",
+    "tr": {
+      "zh": "既然是为灾区捐来的善款，哪怕一日元也不能浪费。",
+      "en": "Since this money was donated for the disaster area, we can't waste even a single yen of it."
+    },
+    "why": {
+      "zh": "「一＋量词」（一円）后接「〜わけにはいかない」，强调连最小的量也不行：「一円たりとも」（哪怕一日元也不……）。",
+      "en": "「一」 plus a counter (一円) followed by 「〜わけにはいかない」: 「一円たりとも」, \"not even one yen\"."
+    },
+    "wrong": [
+      {
+        "zh": "「にして」接在「一瞬」「一夜」等后表示“一下子就……”，「一円にして」不成立。",
+        "en": "「にして」 follows words like 「一瞬」「一夜」 (\"in an instant\"); 「一円にして」 isn't said."
+      },
+      {
+        "zh": "「ならでは」是“只有……才有的”，不能接在「一円」后加强否定。",
+        "en": "「ならでは」 (\"unique to\") can't follow 「一円」 to strengthen a negative."
+      },
+      null,
+      {
+        "zh": "「ずくめ」是“全是……”（「黒ずくめ」「いいことずくめ」），不接「一円」。",
+        "en": "「ずくめ」 means \"all …\" (「黒ずくめ」); it doesn't attach to 「一円」."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-103",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#1"
+    ],
+    "difficulty": 3,
+    "stem": "一言相談してくれればよかった（　）、彼は一人で問題を抱え込んで、事態をいっそう悪化させてしまった。",
+    "options": [
+      "ものの",
+      "ものを",
+      "ものなら",
+      "ものだから"
+    ],
+    "answer": 1,
+    "full": "一言相談してくれればよかったものを、彼は一人で問題を抱え込んで、事態をいっそう悪化させてしまった。",
+    "tr": {
+      "zh": "本来跟我商量一句就好了，他却一个人扛着问题，让事态变得更糟。",
+      "en": "He only had to ask me, but he kept the problem to himself and made things even worse."
+    },
+    "why": {
+      "zh": "前项「〜ば…た」是没有实现的假设，后项是令人遗憾的实际结果：「ものを」（本来……就好了，却……），带惋惜和责备。",
+      "en": "「〜ば…た」 sets up what could have been, and the result is regrettable: 「ものを」 (\"could have …, but instead\"), with regret and reproach."
+    },
+    "wrong": [
+      {
+        "zh": "「ものの」是中性转折，前项要是已成立的事实；“本来商量一下就好了”是没实现的假设，接不上。",
+        "en": "「ものの」 is a neutral \"although\" after an actual fact; \"he only had to ask\" is counterfactual."
+      },
+      null,
+      {
+        "zh": "「ものなら」是假定“要是能……的话”，后项不能是已发生的过去事实。",
+        "en": "「ものなら」 is hypothetical (\"if it were possible\"); it can't lead into something that already happened."
+      },
+      {
+        "zh": "「ものだから」表示原因、辩解，“商量一下就好了”不是他一个人扛着的原因。",
+        "en": "「ものだから」 gives a reason or excuse; \"he only had to ask\" isn't why he kept it to himself."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-104",
+    "type": "bunpou",
+    "refs": [
+      "lesson81#4"
+    ],
+    "difficulty": 3,
+    "stem": "あの店主は、一度でも客にうそをつかれ（　）、二度とその客を店に入れようとしない。",
+    "options": [
+      "たら最後",
+      "たところで",
+      "たが早いか",
+      "たきり"
+    ],
+    "answer": 0,
+    "full": "あの店主は、一度でも客にうそをつかれたら最後、二度とその客を店に入れようとしない。",
+    "tr": {
+      "zh": "那位店主只要被客人骗过一次，就再也不让那个客人进店了。",
+      "en": "Once a customer has lied to him even once, that shop owner will never let them in again."
+    },
+    "why": {
+      "zh": "「一度でも」是条件（哪怕一次），后项「二度と〜ない」是无法挽回的结果：「たら最後」（一旦……就完了）。",
+      "en": "「一度でも」 makes it a condition, and 「二度と〜ない」 is the point of no return: 「たら最後」, \"once … that's it\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「たところで」是“即使……也（没用）”，“即使被骗也不让进店”说不通。",
+        "en": "「たところで」 is \"even if … it's no use\"; \"even if lied to, he won't let them in\" makes no sense."
+      },
+      {
+        "zh": "「が早いか」只叙述过去一次性的事实，不能和「一度でも」的条件、表示习性的现在时搭配。",
+        "en": "「が早いか」 narrates a one-off past event; it can't go with the condition 「一度でも」 or a habitual present."
+      },
+      {
+        "zh": "「たきり」是“……之后就一直（没有）”，叙述实际发生过的一件事，和条件「一度でも」不合。",
+        "en": "「たきり」 (\"and never since\") reports one actual event; it doesn't fit the condition 「一度でも」."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-105",
+    "type": "bunpou",
+    "refs": [
+      "lesson82#5"
+    ],
+    "difficulty": 3,
+    "stem": "ご事情を知らぬ（　）、大変失礼なことを申し上げてしまいました。どうかお許しください。",
+    "options": [
+      "とあって",
+      "までも",
+      "が早いか",
+      "こととて"
+    ],
+    "answer": 3,
+    "full": "ご事情を知らぬこととて、大変失礼なことを申し上げてしまいました。どうかお許しください。",
+    "tr": {
+      "zh": "因为不了解您的情况，说了非常失礼的话，请您原谅。",
+      "en": "Not knowing your circumstances, I said something very rude. Please forgive me."
+    },
+    "why": {
+      "zh": "「知らぬ」（文语否定）＋不得已的原因，后项是道歉「お許しください」：「知らぬこととて」（因为不知道，请原谅）。",
+      "en": "「知らぬ」 (classical negative) gives an unavoidable reason, followed by an apology (「お許しください」): 「知らぬこととて」."
+    },
+    "wrong": [
+      {
+        "zh": "「とあって」表示因特殊情况而出现的、观察到的景象，后项不能是自己的道歉。",
+        "en": "「とあって」 leads to a scene observed because of a special situation, not to one's own apology."
+      },
+      {
+        "zh": "「ないまでも」是“即使不……至少也……”，后项要是较低程度的希望或评价，和道歉接不上。",
+        "en": "「ないまでも」 (\"even if not …, at least\") needs a lesser goal after it, not an apology."
+      },
+      {
+        "zh": "「が早いか」是“刚一……就……”，叙述迅速发生的动作，和“不知情”这种状态接不上。",
+        "en": "「が早いか」 (\"no sooner than\") is for a quick follow-up action; it doesn't fit a state like not knowing."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-m1-106",
+    "type": "bunpou",
+    "refs": [
+      "lesson84#6"
+    ],
+    "difficulty": 2,
+    "stem": "記録的な大雪の影響で、県内の多くの工場が操業の停止（　）。",
+    "options": [
+      "を禁じ得なかった",
+      "ずにはおかなかった",
+      "を余儀なくされた",
+      "にかたくなかった"
+    ],
+    "answer": 2,
+    "full": "記録的な大雪の影響で、県内の多くの工場が操業の停止を余儀なくされた。",
+    "tr": {
+      "zh": "受创纪录大雪的影响，县内许多工厂被迫停工。",
+      "en": "The record snowfall forced many factories in the prefecture to halt operations."
+    },
+    "why": {
+      "zh": "天灾这种客观原因，迫使工厂做本不想做的事，前面是名词「停止」：「を余儀なくされる」（被迫……）。",
+      "en": "An outside cause (the snow) forces something unwanted, and the noun 「停止」 comes before it: 「を余儀なくされる」, \"be forced to\"."
+    },
+    "wrong": [
+      {
+        "zh": "「を禁じ得ない」接「涙・怒り・同情」等感情，是“不禁……”，不接「停止」。",
+        "en": "「を禁じ得ない」 takes feelings like 「涙」「怒り」 (\"can't help feeling\"), not 「停止」."
+      },
+      {
+        "zh": "「ずにはおかない」接动词ない形，不能直接接名词「停止」。",
+        "en": "「ずにはおかない」 follows a verb's ない stem, not the noun 「停止」."
+      },
+      null,
+      {
+        "zh": "「にかたくない」只和「想像・察する」等搭配，“不难……”，意思不通。",
+        "en": "「にかたくない」 only goes with 「想像」「察する」 (\"easy to imagine\"); it makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-107",
+    "type": "bunpou",
+    "refs": [
+      "lesson85#6"
+    ],
+    "difficulty": 2,
+    "stem": "彼があの好条件の誘いを断った理由は、当時の家庭の事情を考えれば、理解に（　）。",
+    "options": [
+      "足りない",
+      "かたくない",
+      "過ぎない",
+      "ほかならない"
+    ],
+    "answer": 1,
+    "full": "彼があの好条件の誘いを断った理由は、当時の家庭の事情を考えれば、理解にかたくない。",
+    "tr": {
+      "zh": "他拒绝那份条件优厚的邀请的理由，考虑到他当时的家庭情况，不难理解。",
+      "en": "Given his family situation at the time, it isn't hard to understand why he turned down that attractive offer."
+    },
+    "why": {
+      "zh": "「理解に」后面接「かたくない」，表示“（根据情况）不难理解，一定是这样”；前面的「〜を考えれば」就是依据。",
+      "en": "After 「理解に」 comes 「かたくない」: \"it is not hard to understand\", with 「〜を考えれば」 as the grounds."
+    },
+    "wrong": [
+      {
+        "zh": "「理解に足りない」是“不值得理解”，和「〜を考えれば」（考虑到……的话）接不上。",
+        "en": "「理解に足りない」 would mean \"not worth understanding\", which doesn't follow 「〜を考えれば」."
+      },
+      null,
+      {
+        "zh": "「理解に過ぎない」是“只不过是理解”，句意不通。",
+        "en": "「理解に過ぎない」 (\"is merely understanding\") makes no sense."
+      },
+      {
+        "zh": "「理解にほかならない」是“正是理解”，主语是“理由”，句意不通。",
+        "en": "「理解にほかならない」 (\"is nothing but understanding\") doesn't fit 「理由」 as subject."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-108",
+    "type": "bunpou",
+    "refs": [
+      "lesson87#1"
+    ],
+    "difficulty": 2,
+    "stem": "戦地にいる家族の無事を祈って（　）人々の思いが、千羽鶴となって届けられた。",
+    "options": [
+      "やまない",
+      "たまらない",
+      "ならない",
+      "はばからない"
+    ],
+    "answer": 0,
+    "full": "戦地にいる家族の無事を祈ってやまない人々の思いが、千羽鶴となって届けられた。",
+    "tr": {
+      "zh": "人们一心祈祷身在战地的家人平安，这份心意化作千纸鹤送了过去。",
+      "en": "The feelings of people who never stop praying for the safety of family members at the front were sent in the form of a thousand paper cranes."
+    },
+    "why": {
+      "zh": "「祈る」是愿望类动词，表示长久、强烈的祈愿；说别人的感情时用连体修饰：「祈ってやまない人々」（一心祈愿的人们）。",
+      "en": "「祈る」 is a wish verb, and a lasting, heartfelt prayer of other people is put as a modifier: 「祈ってやまない人々」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「てたまらない」用于生理感觉或强烈情绪（“……得受不了”），不说「祈ってたまらない」。",
+        "en": "「てたまらない」 is for sensations or feelings you can't bear; 「祈ってたまらない」 isn't said."
+      },
+      {
+        "zh": "「てならない」接「気がする」「思える」等自发涌上的感情，不接「祈る」。",
+        "en": "「てならない」 goes with spontaneous feelings like 「気がする」「思える」, not 「祈る」."
+      },
+      {
+        "zh": "「てはばからない」是“毫无顾忌地（说、做）”，用于公然的言行，不接「祈る」。",
+        "en": "「てはばからない」 is saying or doing something brazenly; it doesn't go with 「祈る」."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-109",
+    "type": "bunpou",
+    "refs": [
+      "lesson83#3"
+    ],
+    "difficulty": 2,
+    "stem": "長引く不況（　）、駅前のその小さな洋食店だけは、連日客足が途絶えることがない。",
+    "options": [
+      "をおいて",
+      "を皮切りに",
+      "と相まって",
+      "をよそに"
+    ],
+    "answer": 3,
+    "full": "長引く不況をよそに、駅前のその小さな洋食店だけは、連日客足が途絶えることがない。",
+    "tr": {
+      "zh": "不顾持续的经济萧条，只有车站前那家小西餐馆每天顾客络绎不绝。",
+      "en": "Untouched by the prolonged recession, that little Western-style restaurant by the station alone has a steady stream of customers every day."
+    },
+    "why": {
+      "zh": "某事物丝毫不受周围状况（不景气）的影响，照样兴旺：「不況をよそに」（与……毫不相干）。",
+      "en": "Something carries on unaffected by its surroundings (the recession): 「不況をよそに」, \"untouched by\"."
+    },
+    "wrong": [
+      {
+        "zh": "「をおいて」后面要接「ほかに〜ない」，表示“非……莫属”，这里接不上。",
+        "en": "「をおいて」 needs 「ほかに〜ない」 (\"none but\"); it doesn't fit here."
+      },
+      {
+        "zh": "「を皮切りに」是“以……为开端（接连发生）”，不景气不是“顾客不断”的开端。",
+        "en": "「を皮切りに」 marks the first of a series; the recession isn't the start of the customers coming."
+      },
+      {
+        "zh": "「と相まって」是“与……相互作用（产生效果）”，不景气不会和生意兴隆相辅相成，而且有「だけは」表示例外。",
+        "en": "「と相まって」 is two factors combining for an effect; a recession doesn't boost trade, and 「だけは」 marks an exception."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-m1-110",
+    "type": "bunpou",
+    "refs": [
+      "lesson91#2",
+      "lesson91#3"
+    ],
+    "difficulty": 3,
+    "stem": "子どもたちの手本となるべき校長（　）、公の場で差別的な発言をするとは、あきれてものも言えない。",
+    "options": [
+      "たるもの",
+      "ではあるまいし",
+      "ともあろう者が",
+      "にひきかえ"
+    ],
+    "answer": 2,
+    "full": "子どもたちの手本となるべき校長ともあろう者が、公の場で差別的な発言をするとは、あきれてものも言えない。",
+    "tr": {
+      "zh": "堂堂本应成为孩子们榜样的校长，竟然在公开场合发表歧视性言论，真让人目瞪口呆。",
+      "en": "For a head teacher, who ought to be an example to children, to make discriminatory remarks in public leaves me speechless."
+    },
+    "why": {
+      "zh": "身份高、负有责任的「校長」做了不相称的坏事，句尾「〜とは、あきれてものも言えない」是批评：「ともあろう者が」（堂堂……竟然……）。",
+      "en": "A person of responsibility (a head teacher) does something unworthy, and 「〜とは、あきれてものも言えない」 condemns it: 「ともあろう者が」."
+    },
+    "wrong": [
+      {
+        "zh": "「たるもの」讲“作为……就应该……”的一般道理，后项要接「べきだ」等，不针对已发生的具体坏事。",
+        "en": "「たるもの」 states what someone in a role should do (with 「べきだ」); it doesn't condemn a specific act."
+      },
+      {
+        "zh": "「ではあるまいし」是“又不是……”，“又不是校长，竟然发表歧视言论”说不通。",
+        "en": "「ではあるまいし」 means \"it's not as if … were\"; \"it's not as if he were a head teacher\" makes no sense."
+      },
+      null,
+      {
+        "zh": "「にひきかえ」要拿两件事对比，句中没有对比的另一方。",
+        "en": "「にひきかえ」 needs two things to contrast; there's only one here."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-111",
+    "type": "narabe",
+    "refs": [
+      "lesson78#1"
+    ],
+    "difficulty": 2,
+    "stem": "今度の新人は、言葉遣い [_] [_] [_] [★] 社会人としての自覚が感じられない。",
+    "options": [
+      "遅刻の",
+      "多さといい",
+      "まるで",
+      "といい"
+    ],
+    "order": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "full": "今度の新人は、言葉遣いといい遅刻の多さといいまるで社会人としての自覚が感じられない。",
+    "tr": {
+      "zh": "这次的新人，不管是说话方式还是迟到之多，完全感觉不到作为社会人的自觉。",
+      "en": "What with the way he talks and how often he's late, the new recruit shows no sense at all of being a working adult."
+    },
+    "why": {
+      "zh": "「名詞といい名詞といい」举出两个方面，后面接（不满的）评价：言葉遣い＋といい＋遅刻の＋多さといい＋まるで（〜感じられない）。★ 在第四格，是「まるで」。",
+      "en": "「NといいNといい」 names two aspects before a (critical) evaluation: 言葉遣い ＋ といい ＋ 遅刻の ＋ 多さといい ＋ まるで (〜感じられない). The ★ is the fourth slot: 「まるで」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-m1-112",
+    "type": "narabe",
+    "refs": [
+      "lesson89#3"
+    ],
+    "difficulty": 2,
+    "stem": "父は銀行に [★] [_] [_] [_] 続けてきた。",
+    "options": [
+      "小説を",
+      "勤める",
+      "書き",
+      "かたわら"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "父は銀行に勤めるかたわら小説を書き続けてきた。",
+    "tr": {
+      "zh": "父亲一边在银行上班，一边坚持写小说。",
+      "en": "Alongside his job at the bank, my father has kept on writing novels."
+    },
+    "why": {
+      "zh": "「銀行に勤める」是本职，「動詞辞書形＋かたわら」后接长期从事的另一项活动：勤める＋かたわら＋小説を＋書き（続けてきた）。★ 在第一格，是「勤める」。",
+      "en": "「銀行に勤める」 is the main job, and 「辞書形＋かたわら」 introduces a long-term side activity: 勤める ＋ かたわら ＋ 小説を ＋ 書き (続けてきた). The ★ is the first slot: 「勤める」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-m1-113",
+    "type": "narabe",
+    "refs": [
+      "lesson90#5"
+    ],
+    "difficulty": 2,
+    "stem": "第一志望の大学に落ちたと知った妹は、[_] [_] [★] [_] 自分の部屋に閉じこもってしまった。",
+    "options": [
+      "顔で",
+      "泣き出さ",
+      "んばかりの",
+      "今にも"
+    ],
+    "order": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "full": "第一志望の大学に落ちたと知った妹は、今にも泣き出さんばかりの顔で自分の部屋に閉じこもってしまった。",
+    "tr": {
+      "zh": "得知自己没考上第一志愿大学，妹妹一副马上就要哭出来的样子，把自己关进了房间。",
+      "en": "On learning she'd failed to get into her first-choice university, my sister shut herself in her room looking as if she might burst into tears at any moment."
+    },
+    "why": {
+      "zh": "「動詞ない形＋んばかりの＋名詞」（几乎要……的）：「泣き出さ」＋「んばかりの」修饰「顔」，「今にも」放在最前面修饰「泣き出す」：今にも＋泣き出さ＋んばかりの＋顔で。★ 在第三格，是「んばかりの」。",
+      "en": "「ない stem＋んばかりの＋noun」 (\"as if about to\"): 「泣き出さ」 ＋ 「んばかりの」 modifies 「顔」, and 「今にも」 comes first, modifying 「泣き出す」: 今にも ＋ 泣き出さ ＋ んばかりの ＋ 顔で. The ★ is the third slot: 「んばかりの」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-m1-114",
+    "type": "narabe",
+    "refs": [
+      "lesson84#2"
+    ],
+    "difficulty": 3,
+    "stem": "どんな分野であれ、[_] [★] [_] [_] あり得ない。",
+    "options": [
+      "本当の上達は",
+      "失敗を",
+      "ことなしには",
+      "重ねる"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "どんな分野であれ、失敗を重ねることなしには本当の上達はあり得ない。",
+    "tr": {
+      "zh": "无论哪个领域，不经历一次次失败，就不可能真正进步。",
+      "en": "In any field, there can be no real progress without making mistake after mistake."
+    },
+    "why": {
+      "zh": "「動詞辞書形＋ことなしには」后接否定「あり得ない」：失敗を＋重ねる＋ことなしには＋本当の上達は。★ 在第二格，是「重ねる」。",
+      "en": "「辞書形＋ことなしには」 leads to the negative 「あり得ない」: 失敗を ＋ 重ねる ＋ ことなしには ＋ 本当の上達は. The ★ is the second slot: 「重ねる」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-m1-115",
+    "type": "narabe",
+    "refs": [
+      "lesson79#5"
+    ],
+    "difficulty": 3,
+    "stem": "冒険がしたい気持ちは分かるが、[_] [_] [★] [_] 、ろくな装備も持たずに冬山に登るような無茶はやめてほしい。",
+    "options": [
+      "なのだから",
+      "あっての",
+      "命",
+      "物種"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "冒険がしたい気持ちは分かるが、命あっての物種なのだから、ろくな装備も持たずに冬山に登るような無茶はやめてほしい。",
+    "tr": {
+      "zh": "想冒险的心情我理解，但留得青山在，不怕没柴烧，希望你别做那种几乎不带像样装备就去爬冬季山的蛮干之事。",
+      "en": "I understand you want adventure, but nothing is worth anything if you're dead, so please don't do anything as reckless as climbing a winter mountain with hardly any proper gear."
+    },
+    "why": {
+      "zh": "「名詞Aあっての名詞B」（有了A才有B）。惯用语「命あっての物種」（命是一切的根本）：命＋あっての＋物種＋なのだから。★ 在第三格，是「物種」。",
+      "en": "「AあってのB」 (\"B exists only thanks to A\"); the idiom is 「命あっての物種」 (life comes first): 命 ＋ あっての ＋ 物種 ＋ なのだから. The ★ is the third slot: 「物種」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

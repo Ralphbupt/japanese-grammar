@@ -1,0 +1,902 @@
+[
+  {
+    "id": "n1-m1-001",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "彼は褒められても、「まだまだです」と<<謙遜>>するばかりだった。",
+    "options": [
+      "けんそん",
+      "けんすん",
+      "けんぞん",
+      "けいそん"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他即使受到夸奖，也只是谦虚地说“还差得远”。",
+      "en": "Even when praised, he only modestly said, \"I've a long way to go.\""
+    },
+    "why": {
+      "zh": "「謙遜」（谦虚）读「けんそん」，「謙」读「けん」，「遜」读清音「そん」。",
+      "en": "「謙遜」 (modesty) is けんそん: 「謙」 is けん, 「遜」 is unvoiced そん."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「遜」读「そん」，不读「すん」。",
+        "en": "「遜」 is そん, not すん."
+      },
+      {
+        "zh": "「遜」读清音「そん」，在这个词里不浊化。",
+        "en": "「遜」 stays unvoiced そん here."
+      },
+      {
+        "zh": "「謙」读「けん」，不是长音「けい」。",
+        "en": "「謙」 is けん, not the long けい."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-002",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "巧妙な話術で高齢者を<<欺く>>詐欺の手口が、後を絶たない。",
+    "options": [
+      "あなどる",
+      "そむく",
+      "あざむく",
+      "あざける"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "用巧妙的话术欺骗老年人的诈骗手法层出不穷。",
+      "en": "Scams that deceive elderly people with clever talk keep cropping up."
+    },
+    "why": {
+      "zh": "「欺く」（欺骗）读「あざむく」，和「詐欺（さぎ）」的「欺」是同一个字。",
+      "en": "「欺く」 (to deceive) is あざむく — the same kanji as in 「詐欺」."
+    },
+    "wrong": [
+      {
+        "zh": "「あなどる」是「侮る」（轻视）的读法，字和意思都不同。",
+        "en": "あなどる is 「侮る」 (to look down on) — a different kanji and meaning."
+      },
+      {
+        "zh": "「そむく」是「背く」（违背）的读法。",
+        "en": "そむく is 「背く」 (to go against)."
+      },
+      null,
+      {
+        "zh": "「あざける」是「嘲る」（嘲笑）的读法，和「欺」读音相近但不同。",
+        "en": "あざける is 「嘲る」 (to ridicule) — close in sound, but a different word."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-003",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "祖父は機械に<<疎く>>、携帯電話の操作も家族に頼りきりだ。",
+    "options": [
+      "うすく",
+      "うとく",
+      "そく",
+      "おろく"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "祖父不懂机器，连手机的操作都完全依赖家人。",
+      "en": "My grandfather knows little about machines and relies entirely on the family even to work his mobile phone."
+    },
+    "why": {
+      "zh": "「疎い」（不熟悉、不精通）读「うとい」，连用形「うとく」。",
+      "en": "「疎い」 (unfamiliar with) is うとい; its く form is うとく."
+    },
+    "wrong": [
+      {
+        "zh": "「うすく」是「薄い」的读法，不是「疎」。",
+        "en": "うすく is 「薄い」, not 「疎」."
+      },
+      null,
+      {
+        "zh": "「疎」的音读是「そ」（如「過疎」），作形容词时用训读「うとい」。",
+        "en": "「疎」 is そ in compounds like 「過疎」, but the adjective is the kun reading うとい."
+      },
+      {
+        "zh": "「疎か（おろそか）」也用「疎」字，但「疎い」读「うとい」，没有「おろい」这个词。",
+        "en": "「疎」 also appears in 「疎か」 (おろそか), but 「疎い」 is うとい; おろい isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-004",
+    "type": "kanji",
+    "difficulty": 3,
+    "stem": "記念式典の参加者には、記録集が無料で<<頒布>>される。",
+    "options": [
+      "ぶんぷ",
+      "はんふ",
+      "ばんぷ",
+      "はんぷ"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "纪念典礼的参加者将免费获得一本纪念文集。",
+      "en": "Participants in the commemorative ceremony will be given a free copy of the record book."
+    },
+    "why": {
+      "zh": "「頒布」（分发、散发）读「はんぷ」，「布」在拨音「ん」后变成半浊音「ぷ」。",
+      "en": "「頒布」 (distribution) is はんぷ: 「布」 becomes ぷ after ん."
+    },
+    "wrong": [
+      {
+        "zh": "「ぶんぷ」是「分布」（分布），字形和意思都不同。",
+        "en": "ぶんぷ is 「分布」 (distribution, as of species) — a different word."
+      },
+      {
+        "zh": "「布」在「ん」后读「ぷ」，不读清音「ふ」。",
+        "en": "After ん, 「布」 is ぷ, not ふ."
+      },
+      {
+        "zh": "「頒」读清音「はん」，不浊化。",
+        "en": "「頒」 is unvoiced はん, not ばん."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-m1-005",
+    "type": "kanji",
+    "difficulty": 3,
+    "stem": "この地域の人口は、ここ数十年で<<漸次>>減少してきた。",
+    "options": [
+      "ぜんじ",
+      "ざんじ",
+      "せんじ",
+      "ぜんし"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这个地区的人口在近几十年里逐渐减少。",
+      "en": "The population of this area has gradually declined over the past few decades."
+    },
+    "why": {
+      "zh": "「漸次」（逐渐）读「ぜんじ」，「漸」读浊音「ぜん」，「次」读「じ」。",
+      "en": "「漸次」 (gradually) is ぜんじ: 「漸」 is the voiced ぜん, 「次」 is じ."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ざんじ」是「暫時」（暂时），字形相似但意思不同。",
+        "en": "ざんじ is 「暫時」 (for a while) — a look-alike with a different meaning."
+      },
+      {
+        "zh": "「漸」读浊音「ぜん」，不读清音「せん」。",
+        "en": "「漸」 is voiced ぜん, not せん."
+      },
+      {
+        "zh": "「次」在这里读浊音「じ」，不读「し」。",
+        "en": "「次」 here is voiced じ, not し."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-006",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "政府は、長引く物価高が家計に与える影響を<<憂慮>>している。",
+    "options": [
+      "ゆうりょう",
+      "ようりょ",
+      "ゆりょ",
+      "ゆうりょ"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "政府对持续的物价高涨给家庭经济带来的影响感到忧虑。",
+      "en": "The government is concerned about the effect of persistently high prices on household budgets."
+    },
+    "why": {
+      "zh": "「憂慮」（忧虑）读「ゆうりょ」，「慮」读短音「りょ」。",
+      "en": "「憂慮」 (concern) is ゆうりょ; 「慮」 is the short りょ."
+    },
+    "wrong": [
+      {
+        "zh": "「慮」读短音「りょ」，不是长音；「ゆうりょう」是「有料・優良」等词。",
+        "en": "「慮」 is short りょ; ゆうりょう is 「有料」「優良」 and the like."
+      },
+      {
+        "zh": "「憂」读「ゆう」，不读「よう」。",
+        "en": "「憂」 is ゆう, not よう."
+      },
+      {
+        "zh": "「憂」是长音「ゆう」，不能读成短音「ゆ」。",
+        "en": "「憂」 is the long ゆう, not ゆ."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-m1-007",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "長年の地道な研究がようやく（　）、新しい治療法が実用化された。",
+    "options": [
+      "根を下ろし",
+      "実を結び",
+      "芽を摘み",
+      "花を添え"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "多年踏实的研究终于结出成果，新的治疗方法投入了实际应用。",
+      "en": "Years of patient research finally bore fruit, and the new treatment has been put into practical use."
+    },
+    "why": {
+      "zh": "努力、研究“取得成果”说「実を結ぶ」，后文“新疗法实用化”就是成果。",
+      "en": "Effort or research paying off is 「実を結ぶ」 (to bear fruit), and the new treatment is that result."
+    },
+    "wrong": [
+      {
+        "zh": "「根を下ろす」是“扎根、在某地扎下根基”，不表示研究取得成果。",
+        "en": "「根を下ろす」 is to take root or settle somewhere, not to pay off."
+      },
+      null,
+      {
+        "zh": "「芽を摘む」是“把（问题、可能性）扼杀在萌芽状态”，意思相反。",
+        "en": "「芽を摘む」 is to nip something in the bud — the opposite."
+      },
+      {
+        "zh": "「花を添える」是“锦上添花、增光”，用于给活动等增添光彩，不表示研究有成果。",
+        "en": "「花を添える」 is to add lustre to an occasion, not to bear fruit."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-008",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "彼の説明は肝心な点が（　）で、何度聞いても結局何が言いたいのか分からない。",
+    "options": [
+      "明瞭",
+      "緻密",
+      "曖昧",
+      "簡素"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "他的说明关键之处含糊不清，听了好几遍也不明白他到底想说什么。",
+      "en": "The key points of his explanation are vague, so no matter how often I hear it I can't tell what he's getting at."
+    },
+    "why": {
+      "zh": "后文“听几遍也不明白想说什么”，说明关键点“含糊”：「曖昧」。",
+      "en": "\"I can't tell what he means\" shows the key points are vague: 「曖昧」."
+    },
+    "wrong": [
+      {
+        "zh": "「明瞭」是“清楚明了”，和“听不懂”矛盾。",
+        "en": "「明瞭」 means clear, which contradicts not understanding."
+      },
+      {
+        "zh": "「緻密」是“缜密、细致”，是褒义，不是听不懂的原因。",
+        "en": "「緻密」 means meticulous — a virtue, not a reason for confusion."
+      },
+      null,
+      {
+        "zh": "「簡素」是“简朴、朴素”，用于生活、仪式、设计，不形容说明的要点。",
+        "en": "「簡素」 is plain or simple (a lifestyle, a ceremony), not a word for an explanation's points."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-009",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "両者の主張には依然として大きな（　）があり、合意にはまだ時間がかかりそうだ。",
+    "options": [
+      "隔たり",
+      "面持ち",
+      "手応え",
+      "拠り所"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "双方的主张仍然存在很大分歧，看来达成一致还需要时间。",
+      "en": "There is still a wide gap between the two sides' positions, so an agreement looks some way off."
+    },
+    "why": {
+      "zh": "“达成一致还要花时间”，说明双方主张之间有“差距、分歧”：「隔たり」。",
+      "en": "Agreement taking time points to a gap between the positions: 「隔たり」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「面持ち」是“神情、表情”（「緊張した面持ち」），不用于主张。",
+        "en": "「面持ち」 is a facial expression (「緊張した面持ち」), not something positions have."
+      },
+      {
+        "zh": "「手応え」是“（做事时感到的）反应、把握”，“主张有很大把握”和后文接不上。",
+        "en": "「手応え」 is a sense of response or progress; it doesn't explain why agreement is far off."
+      },
+      {
+        "zh": "「拠り所」是“依据、精神支柱”，“主张有很大依据”和“难以达成一致”不构成因果。",
+        "en": "「拠り所」 is a basis or support; it doesn't explain the delay in agreement."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-010",
+    "type": "bunmyaku",
+    "difficulty": 3,
+    "stem": "事故の原因については、現在（　）調査を進めているところでございます。",
+    "options": [
+      "一向に",
+      "一概に",
+      "断じて",
+      "鋭意"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "关于事故原因，目前正在全力调查中。",
+      "en": "We are currently doing our utmost to investigate the cause of the accident."
+    },
+    "why": {
+      "zh": "「鋭意」是“专心致志、全力以赴”，常用于「鋭意調査中」「鋭意努力する」这类正式表态。",
+      "en": "「鋭意」 means wholeheartedly; it's the set word in formal statements like 「鋭意調査中」."
+    },
+    "wrong": [
+      {
+        "zh": "「一向に」后面要接否定（「一向に進まない」），这里是肯定句。",
+        "en": "「一向に」 needs a negative (「一向に進まない」); this sentence is affirmative."
+      },
+      {
+        "zh": "「一概に」后面要接「〜とは言えない」等否定，这里不通。",
+        "en": "「一概に」 goes with a negative like 「〜とは言えない」; it doesn't fit here."
+      },
+      {
+        "zh": "「断じて」多接否定表示“绝不”（「断じて許さない」），不修饰「調査を進める」。",
+        "en": "「断じて」 usually means \"absolutely not\" (「断じて許さない」); it doesn't modify carrying out an investigation."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-m1-011",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "従来の方法では効果が上がらなかったため、今回はまったく異なる（　）で問題の解決に取り組むことにした。",
+    "options": [
+      "キャパシティ",
+      "アプローチ",
+      "インフラ",
+      "ニュアンス"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "由于以往的方法没有效果，这次决定用完全不同的思路来解决问题。",
+      "en": "Since the usual methods hadn't worked, this time we decided to tackle the problem with a completely different approach."
+    },
+    "why": {
+      "zh": "和“以往的方法”相对，“用不同的（方法、思路）来解决”：「アプローチ」。",
+      "en": "Set against 「従来の方法」, a different way of tackling the problem is an 「アプローチ」."
+    },
+    "wrong": [
+      {
+        "zh": "「キャパシティ」是“容量、能力”，不能说「異なるキャパシティで取り組む」。",
+        "en": "「キャパシティ」 is capacity; 「異なるキャパシティで取り組む」 isn't said."
+      },
+      null,
+      {
+        "zh": "「インフラ」是“基础设施”，不是解决问题的方法。",
+        "en": "「インフラ」 is infrastructure, not a way of solving a problem."
+      },
+      {
+        "zh": "「ニュアンス」是“细微的语感、差别”，不能用来“着手解决问题”。",
+        "en": "「ニュアンス」 is a shade of meaning; you can't tackle a problem with one."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-012",
+    "type": "bunmyaku",
+    "difficulty": 3,
+    "stem": "周りの誰もが慌てふためく中、彼だけは（　）として落ち着き払っていた。",
+    "options": [
+      "泰然",
+      "漫然",
+      "歴然",
+      "騒然"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "周围所有人都惊慌失措，只有他泰然自若，镇定得很。",
+      "en": "While everyone around him panicked, he alone stayed perfectly composed."
+    },
+    "why": {
+      "zh": "和“大家都慌了”形成对比、又和「落ち着き払う」一致的是“泰然自若”：「泰然」。",
+      "en": "Contrasting with the panic and matching 「落ち着き払う」 is 「泰然」 (unruffled)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「漫然」是“漫不经心、漫无目的”，是贬义，不表示镇定。",
+        "en": "「漫然」 is aimless or absent-minded, not composed."
+      },
+      {
+        "zh": "「歴然」是“（差距、证据）明显”，不形容人的态度。",
+        "en": "「歴然」 describes something obvious (a difference, evidence), not a person's manner."
+      },
+      {
+        "zh": "「騒然」是“乱哄哄”，正是周围人的样子，和「落ち着き払う」矛盾。",
+        "en": "「騒然」 means in uproar — like everyone else, the opposite of 「落ち着き払う」."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-013",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "上司の不正を見て見ぬふりはできないと考え、彼はついに内部告発に（　）。",
+    "options": [
+      "踏みとどまった",
+      "踏みにじった",
+      "踏み切った",
+      "踏み外した"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "他认为不能对上司的违规行为视而不见，终于下决心进行了内部举报。",
+      "en": "Feeling he couldn't turn a blind eye to his boss's wrongdoing, he finally went ahead and blew the whistle."
+    },
+    "why": {
+      "zh": "经过犹豫后“下决心去做”说「〜に踏み切る」，「ついに」也提示下了决心。",
+      "en": "Deciding at last to take a step is 「〜に踏み切る」, and 「ついに」 points that way."
+    },
+    "wrong": [
+      {
+        "zh": "「踏みとどまる」是“忍住不做、坚守”，和“不能视而不见”的决心相反。",
+        "en": "「踏みとどまる」 is to hold back, the opposite of his resolve."
+      },
+      {
+        "zh": "「踏みにじる」是“践踏（感情、权利）”，不能接「内部告発に」。",
+        "en": "「踏みにじる」 is to trample on feelings or rights; it doesn't take 「内部告発に」."
+      },
+      null,
+      {
+        "zh": "「踏み外す」是“踩空、（人生）走上歧路”，不说「内部告発に踏み外す」。",
+        "en": "「踏み外す」 is to miss your footing or go astray; 「内部告発に踏み外す」 isn't said."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-014",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "連日同じような問い合わせが続き、担当者は<<辟易していた>>。",
+    "options": [
+      "担当者は感心していた。",
+      "担当者は腹を立てていた。",
+      "担当者は慌てていた。",
+      "担当者はうんざりしていた。"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "连日来不断有同样的咨询，负责人已经烦透了。",
+      "en": "With the same kind of inquiry coming in day after day, the person in charge was fed up."
+    },
+    "why": {
+      "zh": "「辟易する」是“厌烦、受不了”，等于「うんざりする」。",
+      "en": "「辟易する」 means to be sick of something — 「うんざりする」."
+    },
+    "wrong": [
+      {
+        "zh": "「感心」是“佩服”，和厌烦相反。",
+        "en": "「感心」 is admiration, the opposite."
+      },
+      {
+        "zh": "「腹を立てる」是“生气、发火”，「辟易」是厌烦、腻烦，不是发怒。",
+        "en": "「腹を立てる」 is getting angry; 「辟易」 is weariness, not anger."
+      },
+      {
+        "zh": "「慌てる」是“慌张”，和“厌烦”意思不同。",
+        "en": "「慌てる」 is being flustered, not fed up."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-m1-015",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "開館初日、会場には<<おびただしい>>数の人が詰めかけた。",
+    "options": [
+      "会場には予想より少ない人が詰めかけた。",
+      "会場には非常に多くの人が詰めかけた。",
+      "会場にはさまざまな国の人が詰めかけた。",
+      "会場には興奮した人が詰めかけた。"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "开馆第一天，会场涌来了大量的人。",
+      "en": "On opening day an enormous crowd packed the venue."
+    },
+    "why": {
+      "zh": "「おびただしい」是“数量极多”，等于「非常に多い」。",
+      "en": "「おびただしい」 means vast in number — 「非常に多い」."
+    },
+    "wrong": [
+      {
+        "zh": "意思相反，「おびただしい」是多。",
+        "en": "The opposite: 「おびただしい」 means many."
+      },
+      null,
+      {
+        "zh": "「おびただしい」说的是数量，不是种类。",
+        "en": "「おびただしい」 is about number, not variety."
+      },
+      {
+        "zh": "「おびただしい」不表示情绪。",
+        "en": "「おびただしい」 says nothing about mood."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-016",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "大臣の発言は<<物議を醸した>>。",
+    "options": [
+      "大臣の発言は、多くの人の間で議論を呼んだ。",
+      "大臣の発言は、多くの人に支持された。",
+      "大臣の発言は、ほとんど注目されなかった。",
+      "大臣の発言は、すぐに取り消された。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "大臣的发言引起了争议。",
+      "en": "The minister's remark caused a controversy."
+    },
+    "why": {
+      "zh": "「物議を醸す」是“引起社会上的议论、争议”，即「多くの人の間で議論を呼んだ」。",
+      "en": "「物議を醸す」 is to stir up public controversy — 「多くの人の間で議論を呼んだ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「物議」是议论、批评，不是“受到支持”。",
+        "en": "「物議」 is controversy, not support."
+      },
+      {
+        "zh": "“没受到关注”和“引起争议”相反。",
+        "en": "Going unnoticed is the opposite of stirring controversy."
+      },
+      {
+        "zh": "「物議を醸す」不包含“撤回”的意思。",
+        "en": "「物議を醸す」 says nothing about a retraction."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-017",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "長年の取引先からの頼みなので、<<むげに>>断るわけにもいかない。",
+    "options": [
+      "理由を説明しないまま断るわけにもいかない。",
+      "今すぐにその場で断るわけにもいかない。",
+      "相手の気持ちを考えずに冷たく断るわけにもいかない。",
+      "電話やメールだけで断るわけにもいかない。"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "因为是多年的老客户的请求，也不能一口回绝。",
+      "en": "Since it's a request from a long-standing client, I can't just turn it down flat."
+    },
+    "why": {
+      "zh": "「むげに」（無下に）是“不考虑对方心情、冷淡地（拒绝）”，即「相手の気持ちを考えずに冷たく」。",
+      "en": "「むげに」 means curtly, without regard for the other's feelings — 「相手の気持ちを考えずに冷たく」."
+    },
+    "wrong": [
+      {
+        "zh": "「むげに」说的是态度冷淡，不是“不说明理由”。",
+        "en": "「むげに」 is about coldness, not about giving no reason."
+      },
+      {
+        "zh": "「むげに」不表示时间上的“马上”。",
+        "en": "「むげに」 isn't about timing."
+      },
+      null,
+      {
+        "zh": "「むげに」和拒绝的手段无关。",
+        "en": "「むげに」 has nothing to do with the means of refusing."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-018",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "専門家たちの予想は、<<ことごとく>>外れた。",
+    "options": [
+      "専門家たちの予想は、大きく外れた。",
+      "専門家たちの予想は、意外にも外れた。",
+      "専門家たちの予想は、半分ほど外れた。",
+      "専門家たちの予想は、一つ残らず外れた。"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "专家们的预测全都落空了。",
+      "en": "The experts' predictions were wrong without exception."
+    },
+    "why": {
+      "zh": "「ことごとく」是“全部、一个不剩”，即「一つ残らず」。",
+      "en": "「ことごとく」 means every single one — 「一つ残らず」."
+    },
+    "wrong": [
+      {
+        "zh": "「ことごとく」说的是“全部”，不是偏差的程度。",
+        "en": "「ことごとく」 is about how many, not how far off."
+      },
+      {
+        "zh": "「ことごとく」没有“出乎意料”的意思。",
+        "en": "「ことごとく」 doesn't mean unexpectedly."
+      },
+      {
+        "zh": "“一半”和“全部”意思不同。",
+        "en": "Half is not all."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-m1-019",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "調査団は被災地の状況を<<つぶさに>>見て回った。",
+    "options": [
+      "調査団は被災地の状況を急いで見て回った。",
+      "調査団は被災地の状況を細かいところまで詳しく見て回った。",
+      "調査団は被災地の状況を何度も繰り返し見て回った。",
+      "調査団は被災地の状況を住民と一緒に見て回った。"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "调查团详细地察看了受灾地区的情况。",
+      "en": "The investigation team went round the disaster area examining the situation in detail."
+    },
+    "why": {
+      "zh": "「つぶさに」是“详尽地、仔细地”，即「細かいところまで詳しく」。",
+      "en": "「つぶさに」 means minutely, in full detail — 「細かいところまで詳しく」."
+    },
+    "wrong": [
+      {
+        "zh": "“匆忙”和“详尽”相反。",
+        "en": "In a hurry is the opposite of in detail."
+      },
+      null,
+      {
+        "zh": "「つぶさに」说的是细致程度，不是次数。",
+        "en": "「つぶさに」 is about thoroughness, not repetition."
+      },
+      {
+        "zh": "「つぶさに」不表示和谁一起。",
+        "en": "「つぶさに」 says nothing about who you go with."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-020",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<打診>>",
+    "options": [
+      "審判は選手の反則を打診し、すぐに退場を命じた。",
+      "彼は自分の過ちを素直に打診し、関係者に謝罪した。",
+      "取引先に新製品の共同開発を打診したところ、前向きな返事が返ってきた。",
+      "台風の進路を打診してから、明日の予定を決めよう。"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "向客户试探了共同开发新产品的意向，对方给出了积极的答复。",
+      "en": "When we sounded out our client about jointly developing a new product, they replied positively."
+    },
+    "why": {
+      "zh": "「打診」是“（事先）试探对方的意向”，「取引先に共同開発を打診する」用法正确。",
+      "en": "「打診」 is sounding someone out in advance; 「取引先に共同開発を打診する」 is right."
+    },
+    "wrong": [
+      {
+        "zh": "裁判对犯规作出判断用「判定」，「打診」是试探意向。",
+        "en": "A referee rules on a foul — 「判定」; 「打診」 is sounding out intentions."
+      },
+      {
+        "zh": "承认错误用「認める」，「打診」没有“承认”的意思。",
+        "en": "Owning up to a mistake is 「認める」; 「打診」 has no such meaning."
+      },
+      null,
+      {
+        "zh": "确认台风路径用「確認する」「見極める」，「打診」只用于向人试探。",
+        "en": "Checking a typhoon's path is 「確認する」 or 「見極める」; you 「打診」 people, not weather."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-021",
+    "type": "youhou",
+    "difficulty": 3,
+    "stem": "<<割愛>>",
+    "options": [
+      "時間の都合により、詳しい説明は割愛させていただきます。",
+      "誕生日のケーキを八つに割愛して、みんなで分けた。",
+      "会議の参加者を、テーマごとに三つのグループに割愛した。",
+      "祖母が長年割愛していた着物を、形見として譲り受けた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "由于时间关系，详细的说明就省略了。",
+      "en": "For reasons of time, I'll leave out the detailed explanation."
+    },
+    "why": {
+      "zh": "「割愛」是“（忍痛）省略、割舍”，「説明を割愛させていただく」用法正确。",
+      "en": "「割愛」 is to omit something (reluctantly); 「説明を割愛させていただく」 is right."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "把蛋糕切开分用「切り分ける」，「割愛」不是物理上的切。",
+        "en": "Cutting a cake is 「切り分ける」; 「割愛」 isn't physical cutting."
+      },
+      {
+        "zh": "把人分组用「分ける」「振り分ける」，「割愛」是省略，不是分配。",
+        "en": "Dividing people into groups is 「分ける」 or 「振り分ける」; 「割愛」 means leaving out."
+      },
+      {
+        "zh": "“长年珍爱、爱用”是「愛用していた」，「割愛」没有“爱惜”的意思。",
+        "en": "\"Treasured for years\" is 「愛用していた」; 「割愛」 doesn't mean cherish."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-022",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<手薄>>",
+    "options": [
+      "この紙は手薄なので、強く引っ張るとすぐに破れてしまう。",
+      "祖母の料理は手薄な味付けで、素材の味がよく分かる。",
+      "都会では、隣近所との手薄な付き合いが当たり前になった。",
+      "年末は警備が手薄になりがちなので、注意が必要だ。"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "年底保安力量往往不足，需要注意。",
+      "en": "Security tends to be thin at the end of the year, so care is needed."
+    },
+    "why": {
+      "zh": "「手薄」是“（人手、防备）不足、薄弱”，「警備が手薄になる」用法正确。",
+      "en": "「手薄」 means short-handed or poorly covered; 「警備が手薄になる」 is right."
+    },
+    "wrong": [
+      {
+        "zh": "纸张薄用「薄い」，「手薄」不表示厚度。",
+        "en": "Thin paper is 「薄い」; 「手薄」 isn't about thickness."
+      },
+      {
+        "zh": "口味清淡用「薄味」「あっさりした」，「手薄」不形容味道。",
+        "en": "A light seasoning is 「薄味」 or 「あっさりした」; 「手薄」 isn't about taste."
+      },
+      {
+        "zh": "人际关系淡薄用「希薄な」，「手薄」不用于人际关系。",
+        "en": "Weak ties between neighbours are 「希薄な」; 「手薄」 isn't used for relationships."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-m1-023",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<おろそか>>",
+    "options": [
+      "式は、おろそかな雰囲気の中で執り行われた。",
+      "部活動に夢中になるあまり、勉強がおろそかになってしまった。",
+      "高原には、おろそかな風が吹いていて気持ちがいい。",
+      "この店では、新鮮な野菜をおろそかな値段で売っている。"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "因为太投入社团活动，学习被疏忽了。",
+      "en": "I got so absorbed in club activities that I neglected my studies."
+    },
+    "why": {
+      "zh": "「おろそか」是“疏忽、马虎”，「勉強がおろそかになる」用法正确。",
+      "en": "「おろそか」 means neglected or careless; 「勉強がおろそかになる」 is right."
+    },
+    "wrong": [
+      {
+        "zh": "庄严的仪式用「厳か（おごそか）な」，「おろそか」字形读音相近，意思相反。",
+        "en": "A solemn ceremony is 「厳か（おごそか）な」 — a look-alike with the opposite sense."
+      },
+      null,
+      {
+        "zh": "风清爽用「さわやかな」，「おろそか」不形容风。",
+        "en": "A refreshing breeze is 「さわやかな」; 「おろそか」 isn't for wind."
+      },
+      {
+        "zh": "价格实惠用「手頃な」，「おろそか」没有便宜的意思。",
+        "en": "A reasonable price is 「手頃な」; 「おろそか」 doesn't mean cheap."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-024",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<見合わせる>>",
+    "options": [
+      "景気の先行きが不透明なため、新規の採用を当面見合わせることにした。",
+      "彼の実力は、今の給料にまったく見合わせていない。",
+      "駅で友人と見合わせて、一緒に映画を見に行った。",
+      "新しい服を鏡の前で体に見合わせてみた。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "由于经济前景不明朗，决定暂时搁置新员工的招聘。",
+      "en": "With the economic outlook unclear, we have decided to put new hiring on hold for the time being."
+    },
+    "why": {
+      "zh": "「見合わせる」有“暂缓、暂不实施”的意思，「採用を当面見合わせる」用法正确。",
+      "en": "「見合わせる」 means to hold off on something; 「採用を当面見合わせる」 is right."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“与……相称”是「見合う」（自动词）：「給料に見合っていない」。",
+        "en": "\"In keeping with\" is the intransitive 「見合う」: 「給料に見合っていない」."
+      },
+      {
+        "zh": "约好在某处碰头用「待ち合わせる」。",
+        "en": "Meeting up at a set place is 「待ち合わせる」."
+      },
+      {
+        "zh": "把衣服在身上比一比用「（体に）当ててみる」「合わせてみる」。",
+        "en": "Holding clothes up to yourself is 「当ててみる」 or 「合わせてみる」."
+      }
+    ]
+  },
+  {
+    "id": "n1-m1-025",
+    "type": "youhou",
+    "difficulty": 3,
+    "stem": "<<心置きなく>>",
+    "options": [
+      "彼は心置きなく人を傷つけるようなことを平気で言う。",
+      "昨夜から雨が心置きなく降り続いている。",
+      "仕事をすべて片付けたので、休暇は心置きなく楽しめる。",
+      "彼女は心置きなく準備をしたうえで、試験に臨んだ。"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "工作全部处理完了，假期可以无牵无挂地尽情享受了。",
+      "en": "I've finished all my work, so I can enjoy my holiday without a care."
+    },
+    "why": {
+      "zh": "「心置きなく」是“没有牵挂、无所顾虑地”，「心置きなく楽しめる」用法正确。",
+      "en": "「心置きなく」 means without worries or reservations; 「心置きなく楽しめる」 is right."
+    },
+    "wrong": [
+      {
+        "zh": "“不体谅人、无情”用「心無い」，「心置きなく」不是贬义。",
+        "en": "Thoughtless and hurtful is 「心無い」; 「心置きなく」 isn't negative."
+      },
+      {
+        "zh": "“不停地”用「絶え間なく」，「心置きなく」用于人的心情。",
+        "en": "\"Without a break\" is 「絶え間なく」; 「心置きなく」 is about a person's feelings."
+      },
+      null,
+      {
+        "zh": "“准备得周全、毫无疏漏”用「抜かりなく」「入念に」。",
+        "en": "Thorough, flawless preparation is 「抜かりなく」 or 「入念に」."
+      }
+    ]
+  }
+]
