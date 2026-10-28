@@ -3475,8 +3475,8 @@ const CSS = minifyCss(`
   --link: var(--accent);
   --selection-bg: #b8d4fb;
   --selection-fg: #1a1a2e;
-  --word-bg: #f9f3df;
-  --word-border: #f5c842;
+  --word-bg: var(--surface-2);
+  --word-border: #cfc8ba;   /* warm grey rule beside lead paragraphs (no yellow) */
   --code-bg: #efece5;
   --surface-2: #efece5;   /* table heads, details, hovered checklist rows */
   --row-alt: #f9f8f4;     /* zebra rows */
@@ -3525,13 +3525,13 @@ const CSS = minifyCss(`
    these ride on .theme-light so every dark-mode rule keeps excluding them. */
 html.tone-white {
   --bg: #ffffff; --card-bg: #ffffff; --sidebar-bg: #f7f7f8; --border: #e4e4e7;
-  --text: #2d2d2d; --word-bg: #fffbe6; --code-bg: #f4f4f5;
+  --text: #2d2d2d; --word-bg: #f2f2f3; --word-border: #d4d4d8; --code-bg: #f4f4f5;
   --surface-2: #f2f2f3; --row-alt: #fafafa; --panel-bg: #f4f6f8; --chip-bg: #eceef1;
 }
 html.tone-sepia {
   --bg: #ece3cf; --card-bg: #f3ecdd; --sidebar-bg: #e3d8c0; --border: #d8ccb2;
   --text: #3a3025; --text-strong: #2a2118; --text-muted: #665846; --text-subtle: #6e604c;
-  --sidebar-text: #594c39; --word-bg: #f0e4c3; --code-bg: #e3d8c0;
+  --sidebar-text: #594c39; --word-bg: #e3d8c0; --word-border: #c2b393; --code-bg: #e3d8c0;
   --surface-2: #e3d8c0; --row-alt: #f0e8d7; --panel-bg: #e6dcc6; --chip-bg: #e0d4ba;
   --accent: #a52238;
 }
@@ -3810,7 +3810,6 @@ tr:nth-child(even) { background: var(--row-alt); }
 }
 
 /* Word table highlight */
-table.word-table { border-left: 4px solid var(--word-border); }
 table.word-table th { background: var(--word-bg); }
 table.word-table td:first-child { font-size: 1.2rem; font-weight: 500; white-space: nowrap; }
 table.word-table td:nth-child(2) { color: var(--text-muted); }
@@ -4083,8 +4082,8 @@ body.sidebar-collapsed #content.home {
     --text-strong: #f0f0f5;
     --text-muted: #a8a8b8;
     --text-subtle: #888;
-    --word-bg: #2a2618;
-    --word-border: #5a4920;
+    --word-bg: #25253a;
+    --word-border: #3a3a55;
     --code-bg: #1f1f2e;
     --ruby-color: #a8a8b8;
     --accent: #e94560;
@@ -4145,8 +4144,8 @@ html.theme-dark {
     --text-strong: #f0f0f5;
     --text-muted: #a8a8b8;
     --text-subtle: #888;
-    --word-bg: #2a2618;
-    --word-border: #5a4920;
+    --word-bg: #25253a;
+    --word-border: #3a3a55;
     --code-bg: #1f1f2e;
     --ruby-color: #a8a8b8;
     --accent: #e94560;
