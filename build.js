@@ -1668,6 +1668,9 @@ async function main() {
           return `<input type="checkbox" data-lesson="${file.id}" data-idx="${idx}"${checked ? ' checked' : ''}>`;
         }
       );
+      // Wrap each item in a <label> so the text names its checkbox (a11y) and
+      // clicking the text ticks it.
+      html = html.replace(/<li>(<input type="checkbox" data-lesson[^>]*>)([\s\S]*?)<\/li>/g, "<li><label>$1$2</label></li>");
 
       // Extract grammar points from h2 headings — feeds the per-level 速查表,
       // lesson pills, RSS descriptions, and SEO titles/descriptions.
@@ -2086,6 +2089,12 @@ async function main() {
     var startCollapsed = sbPref === null
       ? (isHome || window.innerWidth < 1100)
       : sbPref === '1';
+    // Open it without the width animation: animating on load re-wraps every
+    // item as the sidebar grows, which counts as layout shift (CLS).
+    if (!startCollapsed) {
+      sidebar.style.transition = 'none';
+      requestAnimationFrame(function () { requestAnimationFrame(function () { sidebar.style.transition = ''; }); });
+    }
     sidebar.classList.toggle('collapsed', startCollapsed);
     document.body.classList.toggle('sidebar-collapsed', startCollapsed);
   } catch (e) {}
@@ -2574,12 +2583,12 @@ ${APP_PREFS_JS}
   var checks = loadChecks();
   boxes.forEach(function(cb){
     var key = cb.getAttribute('data-lesson') + ':' + cb.getAttribute('data-idx');
-    if (checks[key]) { cb.checked = true; cb.parentElement.classList.add('checked'); }
+    if (checks[key]) { cb.checked = true; cb.closest('li').classList.add('checked'); }
     cb.addEventListener('change', function(){
       var c = loadChecks();
       var k = this.getAttribute('data-lesson') + ':' + this.getAttribute('data-idx');
-      if (this.checked) { c[k] = 1; this.parentElement.classList.add('checked'); }
-      else { delete c[k]; this.parentElement.classList.remove('checked'); }
+      if (this.checked) { c[k] = 1; this.closest('li').classList.add('checked'); }
+      else { delete c[k]; this.closest('li').classList.remove('checked'); }
       saveChecks(c);
       updateProgress();
     });
@@ -3632,8 +3641,7 @@ body:not(:has(article.lesson)) .nav-tool-ai {
 }
 .nav-item:hover { color: var(--sidebar-hover-text); background: var(--sidebar-hover-bg); }
 .nav-item:has(.nav-num) { display: flex; gap: .55rem; }
-.nav-num { flex: none; width: 1.3rem; text-align: right; opacity: .55; font-variant-numeric: tabular-nums; }
-.nav-item.active .nav-num { opacity: .9; }
+.nav-num { flex: none; width: 1.3rem; text-align: right; font-variant-numeric: tabular-nums; }
 .nav-item.active {
   color: var(--sidebar-hover-text); background: rgba(233,69,96,.15);
   border-left-color: var(--accent);
@@ -3776,6 +3784,7 @@ ul:has(input[type="checkbox"]) li {
   padding: .4rem .6rem; border-radius: var(--radius); margin: .2rem 0;
   transition: background .2s;
 }
+ul:has(input[type="checkbox"]) li > label { display: block; cursor: pointer; }
 ul:has(input[type="checkbox"]) li:hover { background: #f5f5f5; }
 ul:has(input[type="checkbox"]) li.checked {
   text-decoration: line-through; color: var(--text-subtle);
@@ -3843,7 +3852,7 @@ html.theme-dark .speak-btn:hover { border-color: var(--accent); }
 }
 .related-label { font-weight: 600; color: var(--text-muted); margin-right: .5rem; }
 .cross-link {
-  display: inline-block; background: #e8f4fd; color: var(--accent);
+  display: inline-block; background: #e8f4fd; color: #c42d48;
   padding: .15rem .55rem; border-radius: var(--radius-sm); margin: .15rem .2rem;
   text-decoration: none; font-size: .82rem;
   line-height: 1.5;
@@ -3852,13 +3861,13 @@ html.theme-dark .speak-btn:hover { border-color: var(--accent); }
 .cross-link:hover .cross-link-desc,
 .cross-link:hover .cross-link-level { color: rgba(255,255,255,.9); background: rgba(255,255,255,.18); }
 .cross-link-term { font-weight: 600; }
-.cross-link-desc { opacity: .8; font-size: .88em; margin-left: .35em; }
+.cross-link-desc { font-size: .88em; margin-left: .35em; }
 h2 .romaji { font-weight: 400; font-size: .7em; color: var(--text-muted); letter-spacing: .01em; }
 .cross-link-desc::before { content: "· "; opacity: .55; }
 .cross-link-level {
   display: inline-block; margin-left: .4em;
   font-size: .68em; font-weight: 700; letter-spacing: .03em;
-  background: rgba(233,69,96,.13); color: var(--accent);
+  background: rgba(233,69,96,.13); color: inherit;
   padding: .05em .4em; border-radius: var(--radius-sm);
   vertical-align: 1px;
 }
@@ -3882,7 +3891,7 @@ summary {
 .site-footer nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .3rem 1.2rem; }
 .site-footer a { color: inherit; text-decoration: none; white-space: nowrap; }
 .site-footer a:hover { color: var(--accent); }
-.site-footer p { margin: .5rem 0 0; opacity: .7; }
+.site-footer p { margin: .5rem 0 0; }
 
 /* Narrow screens: no right margin on content */
 @media (max-width: 900px) {
@@ -4042,7 +4051,7 @@ body.sidebar-collapsed #content.home {
   :root:not(.theme-light) .lesson-meta { color: #a8a8b8; }
   :root:not(.theme-light) .lesson-meta time { color: #b8b8c4; }
   :root:not(.theme-light) .related-grammar { background: #1a223a; border-color: #2a3a55; }
-  :root:not(.theme-light) .cross-link { background: #1f3548; color: #ff7088; }
+  :root:not(.theme-light) .cross-link { background: #1f3548; color: #ff8da0; }
   :root:not(.theme-light) .cross-link:hover { background: var(--accent); color: #fff; }
   :root:not(.theme-light) .checklist-progress { background: #1f1f2e; color: #b8b8c4; }
   :root:not(.theme-light) .checklist-progress .progress-bar { background: #2d2d44; }
@@ -4102,7 +4111,7 @@ html.theme-dark .seo-lead { background: #1f1f2e; color: #c8c8d4; }
 html.theme-dark .lesson-meta { color: #a8a8b8; }
 html.theme-dark .lesson-meta time { color: #b8b8c4; }
 html.theme-dark .related-grammar { background: #1a223a; border-color: #2a3a55; }
-html.theme-dark .cross-link { background: #1f3548; color: #ff7088; }
+html.theme-dark .cross-link { background: #1f3548; color: #ff8da0; }
 html.theme-dark .cross-link:hover { background: var(--accent); color: #fff; }
 html.theme-dark .checklist-progress { background: #1f1f2e; color: #b8b8c4; }
 html.theme-dark .checklist-progress .progress-bar { background: #2d2d44; }

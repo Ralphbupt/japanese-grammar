@@ -139,17 +139,16 @@ html.theme-dark .ai-model-menu { background: #1f1f2e; }
 .ai-settings-btns .ai-save { background: var(--accent); color: #fff; border-color: var(--accent); font-weight: 600; }
 .ai-settings-btns .ai-forget { margin-left: auto; color: var(--text-muted); }
 
-/* 讲解 button after each example sentence's 🔊: faint until the sentence is hovered */
+/* 讲解 button after each example sentence's 🔊: muted grey (still AA), brighter when the sentence is hovered */
 .ai-ex-btn {
   display: inline-flex; align-items: center; vertical-align: middle; margin-left: .3em; padding: 0 .55em;
   font: inherit; font-size: .7rem; line-height: 1; height: 1.75em; box-sizing: border-box;
-  background: none; color: inherit; border: 1px solid var(--border); border-radius: var(--radius-pill);
-  cursor: pointer; opacity: .35; transition: opacity .2s, border-color .2s, color .2s;
+  background: none; color: var(--text-muted); border: 1px solid var(--border); border-radius: var(--radius-pill);
+  cursor: pointer; transition: border-color .2s, color .2s;
   -webkit-user-select: none; user-select: none;
 }
-li:hover .ai-ex-btn { opacity: .8; }
-html .ai-ex-btn.ai-ex-btn:hover { opacity: 1; border-color: var(--accent); color: var(--accent); }
-@media (hover: none) { .ai-ex-btn { opacity: .6; } }
+li:hover .ai-ex-btn { color: var(--text); }
+html .ai-ex-btn.ai-ex-btn:hover { border-color: var(--accent); color: var(--accent); }
 html.theme-dark .ai-ex-btn { border-color: #3a3a55; }
 @media (prefers-color-scheme: dark) { :root:not(.theme-light) .ai-ex-btn { border-color: #3a3a55; } }
 
