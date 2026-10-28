@@ -2523,8 +2523,8 @@ ${CSS}
 .back-link { display: block; margin-bottom: 1.5rem; color: var(--accent); text-decoration: none; font-size: 0.9rem; }
 .back-link:hover { text-decoration: underline; }
 .breadcrumb { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem; }
-.breadcrumb a { color: var(--accent); text-decoration: none; }
-.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb a { color: var(--text-muted); text-decoration: none; }
+.breadcrumb a:hover { color: var(--accent); text-decoration: underline; }
 .breadcrumb .sep { margin: 0 0.4em; }
 .prev-next { display: flex; justify-content: space-between; align-items: flex-start; margin: 2.5rem 0 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); gap: 1rem; }
 .prev-next-top { margin: 0 0 1.75rem; padding: 0 0 1rem; border-top: none; border-bottom: 1px solid var(--border); }
@@ -2670,7 +2670,7 @@ ${APP_PREFS_JS}
   const OVERVIEW_CSS = `/* Keep sidebar (pure-CSS hover navigation); hide other JS-dependent chrome. */
 #content { margin: 0 auto !important; max-width: 1100px; padding: 2rem 1.5rem 4rem; }
 .breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 1rem; }
-.breadcrumb a { color: var(--accent); text-decoration: none; }
+.breadcrumb a { color: var(--text-muted); text-decoration: none; }
 .breadcrumb .sep { margin: 0 .4em; }
 .overview-intro { font-size: 1rem; line-height: 1.8; color: var(--text); margin: 1rem 0 2rem; padding: 1rem 1.2rem; background: var(--card-bg); border-left: 3px solid var(--word-border); border-radius: 0 var(--radius) var(--radius) 0; }
 .overview-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0 2.5rem; }
@@ -3052,7 +3052,7 @@ ${CSS}
 /* Keep sidebar (pure-CSS hover); hide other JS-dependent chrome. */
 #content { margin: 0 auto !important; max-width: 800px; padding: 2rem 2rem 4rem; }
 .breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 1rem; }
-.breadcrumb a { color: var(--accent); text-decoration: none; }
+.breadcrumb a { color: var(--text-muted); text-decoration: none; }
 .breadcrumb .sep { margin: 0 .4em; }
 .about-content h1 { font-size: var(--text-2xl); margin: 0 0 1.5rem; border-bottom: 2px solid var(--accent); padding-bottom: .6rem; }
 .about-content h2 { font-size: var(--text-xl); margin: 2.2rem 0 .9rem; color: var(--text-strong); }
@@ -3450,7 +3450,9 @@ const CSS = minifyCss(`
   --accent-soft: rgba(233,69,96,.12);
   --card-bg: #fbfaf7;
   --border: #e3dfd5;
-  --ruby-color: #b8283f;
+  /* Furigana is a reading aid, not emphasis: muted, so red stays on the
+     grammar point itself. */
+  --ruby-color: var(--text-muted);
   --link: var(--accent);
   --selection-bg: #b8d4fb;
   --selection-fg: #1a1a2e;
@@ -3461,10 +3463,10 @@ const CSS = minifyCss(`
   --row-alt: #f9f8f4;     /* zebra rows */
   --panel-bg: #f0ede5;    /* related-grammar box */
   --chip-bg: #e8e3d7;     /* cross-link chips */
-  --chip-text: #b0263f;
+  --chip-text: var(--text-strong);
   --text: #2b2a27;
   --text-strong: #1a1a2e;
-  --text-muted: #666;
+  --text-muted: #605c55;
   --text-subtle: #7a7a7a;
 
   /* ── Design tokens ──────────────────────────────────────────────
@@ -3511,8 +3513,8 @@ html.tone-sepia {
   --bg: #ece3cf; --card-bg: #f3ecdd; --sidebar-bg: #e3d8c0; --border: #d8ccb2;
   --text: #3a3025; --text-strong: #2a2118; --text-muted: #665846; --text-subtle: #6e604c;
   --sidebar-text: #594c39; --word-bg: #f0e4c3; --code-bg: #e3d8c0;
-  --surface-2: #e3d8c0; --row-alt: #f0e8d7; --panel-bg: #e6dcc6; --chip-bg: #e0d4ba; --chip-text: #9c1f36;
-  --accent: #a52238; --ruby-color: #a52238;
+  --surface-2: #e3d8c0; --row-alt: #f0e8d7; --panel-bg: #e6dcc6; --chip-bg: #e0d4ba;
+  --accent: #a52238;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { font-size: 19px; }
@@ -3656,10 +3658,10 @@ body:not(:has(article.lesson)) .nav-tool-ai {
   background: none; border: none; text-align: left; cursor: pointer;
   font-family: inherit;
   font-size: .75rem; text-transform: uppercase; letter-spacing: .08em;
-  color: var(--accent); padding: .8rem 1.2rem .4rem;
+  color: var(--sidebar-heading); padding: .8rem 1.2rem .4rem;
   font-weight: 700; white-space: nowrap;
 }
-.nav-group:hover { color: var(--sidebar-hover-text); }
+.nav-group:hover { color: var(--accent); }
 .nav-caret { font-size: .65rem; opacity: .75; transition: transform var(--transition); }
 .nav-group-wrap.expanded .nav-caret { transform: rotate(90deg); }
 .nav-group-items { display: none; }
@@ -3895,15 +3897,15 @@ html.theme-dark .speak-btn:hover { border-color: var(--accent); }
 }
 .cross-link:hover { background: var(--accent); color: #fff; }
 .cross-link:hover .cross-link-desc,
-.cross-link:hover .cross-link-level { color: rgba(255,255,255,.9); background: none; }
+.cross-link:hover .cross-link-level { color: rgba(255,255,255,.9); background: none; border-color: rgba(255,255,255,.5); }
 .cross-link-term { font-weight: 600; }
-.cross-link-desc { font-size: .88em; margin-left: .35em; }
+.cross-link-desc { font-size: .88em; margin-left: .35em; color: var(--text-muted); font-weight: 400; }
 h2 .romaji { font-weight: 400; font-size: .7em; color: var(--text-muted); letter-spacing: .01em; }
 .cross-link-desc::before { content: "· "; opacity: .55; }
 .cross-link-level {
   display: inline-block; margin-left: .4em;
   font-size: .68em; font-weight: 700; letter-spacing: .03em;
-  border: 1px solid currentColor; color: inherit;
+  border: 1px solid var(--border); color: var(--text-muted);
   padding: 0 .35em; border-radius: var(--radius-sm);
   vertical-align: 1px;
 }
@@ -3914,9 +3916,12 @@ details {
   padding: .5rem 1rem; margin: .8rem 0;
 }
 summary {
-  cursor: pointer; font-weight: 600; color: var(--link);
+  cursor: pointer; font-weight: 600; color: var(--text-strong);
   padding: .2rem 0;
 }
+
+summary::marker { color: var(--accent); }
+summary:hover { color: var(--link); }
 
 /* Page footer */
 .site-footer {
@@ -4062,7 +4067,7 @@ body.sidebar-collapsed #content.home {
     --word-bg: #2a2618;
     --word-border: #5a4920;
     --code-bg: #1f1f2e;
-    --ruby-color: #ff7088;  /* lighter than --accent so furigana stays readable on dark blockquote tints */
+    --ruby-color: #a8a8b8;
     --accent: #e94560;
     --link: #ff7088;
     --selection-bg: #3b6fd6;
@@ -4088,8 +4093,8 @@ body.sidebar-collapsed #content.home {
   :root:not(.theme-light) .seo-lead { background: #1f1f2e; color: #c8c8d4; }
   :root:not(.theme-light) .lesson-meta { color: #a8a8b8; }
   :root:not(.theme-light) .lesson-meta time { color: #b8b8c4; }
-  :root:not(.theme-light) .related-grammar { background: #1a223a; border-color: #2a3a55; }
-  :root:not(.theme-light) .cross-link { background: #1f3548; color: #ff8da0; }
+  :root:not(.theme-light) .related-grammar { background: #1b1b28; border-color: var(--border); }
+  :root:not(.theme-light) .cross-link { background: #25253a; color: #e4e4ec; }
   :root:not(.theme-light) .cross-link:hover { background: var(--accent); color: #fff; }
   :root:not(.theme-light) .checklist-progress { background: #1f1f2e; color: #b8b8c4; }
   :root:not(.theme-light) .checklist-progress .progress-bar { background: #2d2d44; }
@@ -4124,7 +4129,7 @@ html.theme-dark {
     --word-bg: #2a2618;
     --word-border: #5a4920;
     --code-bg: #1f1f2e;
-    --ruby-color: #ff7088;  /* lighter than --accent so furigana stays readable on dark blockquote tints */
+    --ruby-color: #a8a8b8;
     --accent: #e94560;
     --link: #ff7088;
     --selection-bg: #3b6fd6;
@@ -4150,8 +4155,8 @@ html.theme-dark ul:has(input[type="checkbox"]) li.checked { color: #6a6a78; }
 html.theme-dark .seo-lead { background: #1f1f2e; color: #c8c8d4; }
 html.theme-dark .lesson-meta { color: #a8a8b8; }
 html.theme-dark .lesson-meta time { color: #b8b8c4; }
-html.theme-dark .related-grammar { background: #1a223a; border-color: #2a3a55; }
-html.theme-dark .cross-link { background: #1f3548; color: #ff8da0; }
+html.theme-dark .related-grammar { background: #1b1b28; border-color: var(--border); }
+html.theme-dark .cross-link { background: #25253a; color: #e4e4ec; }
 html.theme-dark .cross-link:hover { background: var(--accent); color: #fff; }
 html.theme-dark .checklist-progress { background: #1f1f2e; color: #b8b8c4; }
 html.theme-dark .checklist-progress .progress-bar { background: #2d2d44; }
