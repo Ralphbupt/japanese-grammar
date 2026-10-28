@@ -110,7 +110,7 @@ const GISCUS_SCRIPT = `<script>
 // with defer on lesson pages only (the panel needs an article.lesson).
 const AI_JS_SRC = fs.readFileSync(path.join(__dirname, "site", "ai-assistant.js"), "utf-8");
 const AI_CSS = fs.readFileSync(path.join(__dirname, "site", "ai-assistant.css"), "utf-8");
-const AI_JS_BUNDLE = `(function(){if(!document.querySelector('article.lesson'))return;var s=document.createElement('style');s.textContent=${JSON.stringify(minifyCss(AI_CSS))};document.head.appendChild(s);})();\n` + AI_JS_SRC;
+const AI_JS_BUNDLE = `(function(){if(!document.querySelector('article.lesson')&&!document.getElementById('quiz-app'))return;var s=document.createElement('style');s.textContent=${JSON.stringify(minifyCss(AI_CSS))};document.head.appendChild(s);})();\n` + AI_JS_SRC;
 const AI_JS_HASH = require("crypto").createHash("md5").update(AI_JS_BUNDLE).digest("hex").slice(0, 8);
 const AI_SCRIPT = `<script src="${SITE_PATH}ai-assistant.js?v=${AI_JS_HASH}" defer></script>`;  // ?v= busts browser caches on every change
 const QUIZ_JS_SRC = fs.readFileSync(path.join(__dirname, "site", "quiz.js"), "utf-8");
@@ -3245,6 +3245,7 @@ ${sidebarMarkupHtml}
 ${APP_PREFS_JS}
 </script>
 ${appAttrs === null ? "" : `<script src="${SITE_PATH}quiz.js?v=${QUIZ_JS_HASH}" defer></script>`}
+${appAttrs === null || /data-mode="cards"/.test(appAttrs) ? "" : AI_SCRIPT}
 </body>
 </html>`;
   for (const [level, { practice, mocks }] of Object.entries(quizBundles)) {
