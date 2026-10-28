@@ -718,7 +718,7 @@ const LESSON_KEYWORDS = {
   lesson84: "なしに, なしには, ことなしに, ずにはおかない, ずにはすまない, を禁じ得ない, を余儀なくされる, JLPT N1",
   lesson85: "までもない, までだ, までのことだ, には及ばない, に足る, に足りない, に堪える, に堪えない, にかたくない, JLPT N1",
   lesson86: "べくもない, てしかるべきだ, でなくてなんだろう, ないではすまない, ないものでもない, ないでもない, ばそれまでだ, JLPT N1",
-  lesson87: "てやまない, 極まりない, 極まる, といったらない, かぎりだ, とは, てはばからない, 感情, JLPT N1",
+  lesson87: "てやまない, 極まりない, 極まる, といったらない, 限りだ, とは, てはばからない, 感情, JLPT N1",
   lesson88: "ずくめ, まみれ, ぐるみ, めく, ともなく, ともなしに, ながらに, 様子, JLPT N1",
   lesson89: "かたがた, がてら, かたわら, つ〜つ, なりに, とばかりに, 並行, JLPT N1",
   lesson90: "うにも〜ない, べからず, べからざる, ごとき, ごとく, ずとも, んばかり, をもって, 文語, JLPT N1",
@@ -1158,6 +1158,45 @@ async function furiganaText(kuro, text) {
 // surrounding plain text all match; `before`/`after` see the text with tags
 // and readings stripped, so a neighbouring ruby reads as its bare kanji.
 const RUBY_FIXES = [
+  // ── N1 lessons (76–92): context-specific readings; listed first so they win
+  // over the general rules below. ──
+  { kanji: "店", from: /^(てん|みせ)$/, before: /(号|人気|高級|飲食|専門|支|本)$/, to: "てん" },
+  { kanji: "今", from: /^(いま|こん)$/, after: /^(シーズン|大会|年度|世紀|学期|週|期)/, to: "こん" },
+  { kanji: "形", from: /^(がた|かたち|けい)$/, before: /(といい|といわず)$/, to: "かたち" },
+  { kanji: "手", from: /^しゅ$/, after: /^といい/, to: "て" },
+  { kanji: "人", from: /^じん$/, after: /^に譲/, to: "ひと" },
+  { kanji: "人", from: /^(じん|にん)$/, before: /(料理|依頼)$/, to: "にん" },
+  // 何人（なんぴと）たりとも
+  { kanji: "人", from: /^(にん|じん|ひと)$/, before: /何$/, after: /^(たりとも|\s*[（(]なんぴと|」 is read)/, to: "ぴと" },
+  { kanji: "来", from: /^(き|きた|く)$/, after: /^(よう|ず|（　+）)/, to: "こ" },
+  { kanji: "中", from: /^ちゅう$/, before: /(部屋|会社|今夜|世界|日本|町|家|学校|体)$/, to: "じゅう" },
+  { kanji: "方", from: /^ほう$/, before: /(立派な|あろう)$/, to: "かた" },
+  { kanji: "物", from: /^ぶつ$/, after: /^も言/, to: "もの" },
+  { kanji: "入", from: /^にゅう$/, after: /^ろう/, to: "はい" },
+  { kanji: "降", from: /^(くだ|お)$/, before: /[雨雪][がはも]$/, after: /^ろう/, to: "ふ" },
+  { kanji: "然", from: /^しか$/, after: /^る」/, to: "さ" },
+  { kanji: "付", from: /^づ$/, before: /盛り$/, to: "つ" },
+  { kanji: "日当", from: /^ひなた$/, after: /^たり/, to: "ひあ" },
+  { kanji: "額", from: /^がく$/, after: /^が汗/, to: "ひたい" },
+  { kanji: "我", from: /^わが$/, after: /^ながら/, to: "われ" },
+  { kanji: "故", from: /^こ$/, after: /^(（に）|に|の)/, to: "ゆえ" },
+  { kanji: "得", from: /^う$/, after: /^ん/, to: "え" },
+  { kanji: "如何", from: /^いか$/, to: "いかん" },
+  { kanji: "堪", from: /^こた$/, before: /に$/, to: "た" },
+  { kanji: "愛", from: /^め$/, before: /の$/, to: "あい" },
+  { kanji: "皆", from: /^かい$/, after: /^(独立|そろ|で|が|、)/, to: "みな" },
+  { kanji: "剥", from: /^へ$/, after: /^が/, to: "は" },
+  { kanji: "遣", from: /^や$/, before: /気を$/, to: "つか" },
+  { kanji: "謝", from: /^しゃ$/, after: /^ろう/, to: "あやま" },
+  { kanji: "一目", from: /^いちもく$/, after: /^(見|で)/, to: "ひとめ" },
+  // 一 + counter: 一歩 いっぽ, 一着 いっちゃく, 一回戦 いっかいせん …; 一駅 ひとえき.
+  { kanji: "一", from: /^いち$/, after: /^(歩|球|着|戸|泊|本|冊|軒|国|点|回|滴|杯|切|発|家)/, to: "いっ" },
+  { kanji: "一", from: /^いち$/, after: /^駅/, to: "ひと" },
+  { kanji: "歩", from: /^ほ$/, before: /一$/, to: "ぽ" },
+  { kanji: "本", from: /^ほん$/, before: /一$/, to: "ぽん" },
+  { kanji: "泊", from: /^はく$/, before: /一$/, to: "ぱく" },
+  { kanji: "杯", from: /^はい$/, before: /一$/, to: "ぱい" },
+  { kanji: "発", from: /^はつ$/, before: /一$/, to: "ぱつ" },
   // 行って/行った is いって/いった — except after を (調査を行った = おこなった).
   { kanji: "行", from: /^(おこな|くだり|ゆ)$/, after: /^っ[たて]/, before: /[^を]$/, to: "い" },
   // 〜た後で / 〜の後で is あとで, never のちで.

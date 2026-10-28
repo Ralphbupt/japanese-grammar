@@ -180,7 +180,7 @@ Restrictions:
 
 限制：
 - 前后同一主语：❌「ベルが鳴るなり、生徒たちは〜」（铃和学生是不同主语）。
-- 一般不用于说话人自己：△「私は家に帰るなり寝た」不自然，说自己的事用「たとたん」或「〜てすぐ」。
+- 一般不用于说话人自己：△「私は家に帰るなり寝た」不自然，说自己的事用「〜とすぐ（に）」或「〜てすぐ」。
 - 只叙述过去的事实，后项不能是意志、命令、未来。
 :::
 :::en
@@ -188,7 +188,7 @@ Restrictions:
 
 Restrictions:
 - Same subject in both clauses: ❌ 「ベルが鳴るなり、生徒たちは〜」 (the bell and the students are different subjects).
-- Not normally used about yourself: △ 「私は家に帰るなり寝た」 sounds odd; for your own actions use 「たとたん」 or 「〜てすぐ」.
+- Not normally used about yourself: △ 「私は家に帰るなり寝た」 sounds odd; for your own actions use 「〜とすぐ（に）」 or 「〜てすぐ」.
 - Only past facts; no volition, command or future in the main clause.
 :::
 
