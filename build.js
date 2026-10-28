@@ -1955,8 +1955,7 @@ async function main() {
       `<div class="nav-group-wrap" data-level="${group.label}">
     <button type="button" class="nav-group" aria-expanded="false"><span class="nav-group-label">${GROUP_NAMES[group.label] ? `<span class="lang-zh">${groupName(group.label, "zh")}</span><span class="lang-en">${groupName(group.label, "en")}</span>` : group.label}</span><span class="nav-caret" aria-hidden="true">▸</span></button>
     <div class="nav-group-items">
-      <a class="nav-item nav-overview" href="${SITE_PATH}${group.label}/"><span class="lang-zh">${groupName(group.label, "zh")} 总览</span><span class="lang-en">${groupName(group.label, "en")} Overview</span></a>${quizPages(group.label).map((q) => `
-      <a class="nav-item nav-overview" href="${q.href}"><span class="lang-zh">${q.zh}</span><span class="lang-en">${q.en}</span></a>`).join("")}
+      <a class="nav-item nav-overview" href="${SITE_PATH}${group.label}/"><span class="lang-zh">${groupName(group.label, "zh")} 总览</span><span class="lang-en">${groupName(group.label, "en")} Overview</span></a>
       ${groupItems.join("\n      ")}
     </div>
   </div>`
@@ -1964,7 +1963,10 @@ async function main() {
   }
   // 做题 group, like 专题: the practice hub, then each level's practice, mock test and flashcards.
   const practiceItems = QUIZ_LINKS ? QUIZ_LEVELS.flatMap((lv) => quizPages(lv).map((q) => ({ ...q, lv }))) : [];
-  if (practiceItems.length) sidebarHtml.push(`<div class="nav-group-wrap" data-level="practice">
+  // 做题 and 专题 go first: they're the most-used entries, and collapsed each is one row.
+  const guidesGroup = sidebarHtml.findIndex((g) => g.includes('data-level="guides"'));
+  if (guidesGroup >= 0) sidebarHtml.unshift(...sidebarHtml.splice(guidesGroup, 1));
+  if (practiceItems.length) sidebarHtml.unshift(`<div class="nav-group-wrap" data-level="practice">
     <button type="button" class="nav-group" aria-expanded="false"><span class="nav-group-label"><span class="lang-zh">做题</span><span class="lang-en">Practice</span></span><span class="nav-caret" aria-hidden="true">▸</span></button>
     <div class="nav-group-items">
       <a class="nav-item nav-overview" href="${SITE_PATH}practice/"><span class="lang-zh">做题总览</span><span class="lang-en">Practice hub</span></a>
@@ -2230,8 +2232,7 @@ async function main() {
     <button id="settings-btn" type="button" class="nav-tool-btn nav-tool-extra" aria-label="设置 / Settings" title="设置 / Settings">${ICON_SETTINGS}</button>
   </div>
   <div class="nav-scroll">
-  <div class="nav-header"><a href="${SITE_PATH}" style="color:inherit;text-decoration:none;"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a></div>${QUIZ_LINKS ? `
-  <a class="nav-item nav-hub" href="${SITE_PATH}practice/"><span class="lang-zh">✍ 做题 · 模拟 · 卡片</span><span class="lang-en">✍ Practice · mock tests · cards</span></a>` : ""}
+  <div class="nav-header"><a href="${SITE_PATH}" style="color:inherit;text-decoration:none;"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a></div>
   ${sidebarHtml.join("\n  ")}
   </div>
 </nav>
@@ -2277,13 +2278,13 @@ async function main() {
     if (btn) btn.setAttribute('aria-expanded', on ? 'true' : 'false');
   }
   // Open the group holding the active item; else the level named in the URL
-  // (/N5/ or N5_grammar_list); else the first group.
+  // (/N5/ or N5_grammar_list); else N5.
   var activeWrap = item ? item.closest('.nav-group-wrap') : null;
   if (!activeWrap) {
     var lvl = (path.match(/\\/(N[1-5])(?=\\b|\\/|_)/) || [])[1] || (slug && (slug.match(/^(N[1-5])/) || [])[1]);
     if (lvl) activeWrap = sidebar.querySelector('.nav-group-wrap[data-level="' + lvl + '"]');
   }
-  if (!activeWrap && wraps.length) activeWrap = wraps[0];
+  if (!activeWrap && wraps.length) activeWrap = sidebar.querySelector('.nav-group-wrap[data-level="N5"]') || wraps[0];
   wraps.forEach(function(w){ setExpanded(w, w === activeWrap); });
   wraps.forEach(function(w){
     var btn = w.querySelector('.nav-group');
