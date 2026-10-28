@@ -22,7 +22,7 @@ const KuromojiAnalyzer = KuromojiMod.default || KuromojiMod;
 const SITE = "https://jpnotes.dev/";
 const SETTINGS_JS_HASH = crypto.createHash("md5").update(fs.readFileSync(path.join(__dirname, "site", "settings-modal.js"))).digest("hex").slice(0, 8);
 const OUT_DIR = path.join(__dirname, "dist", "anki");
-const LEVELS = ["N5", "N4", "N3", "N2"];
+const LEVELS = ["N5", "N4", "N3", "N2", "N1"].filter((l) => fs.existsSync(path.join(__dirname, "grammar", l)));
 
 // Kuroshiro furigana — same engine as build.js so card readings match
 // the website's. Init once, reuse for every example sentence.

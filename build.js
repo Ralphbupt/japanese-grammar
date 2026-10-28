@@ -14,6 +14,7 @@ const GRAMMAR_DIRS = [
   { dir: "grammar/N4", label: "N4" },
   { dir: "grammar/N3", label: "N3" },
   { dir: "grammar/N2", label: "N2" },
+  { dir: "grammar/N1", label: "N1" },
   // Standalone topic pages (A vs B comparisons, exam guides). Served at the
   // site root like lessons (/wa-vs-ga/), with a hub at /guides/. Not a JLPT
   // level: build-anki.js only reads grammar/N*, so no flashcards come from here.
@@ -119,7 +120,7 @@ const QUIZ_CSS = fs.readFileSync(path.join(__dirname, "site", "quiz.css"), "utf-
 const FEEDBACK_JS_SRC = fs.readFileSync(path.join(__dirname, "site", "feedback.js"), "utf-8");
 const FEEDBACK_JS_HASH = require("crypto").createHash("md5").update(FEEDBACK_JS_SRC).digest("hex").slice(0, 8);
 // Practice / mock test / flashcard pages; QUIZ_PUBLIC and QUIZ_LINKS are set in build-quiz.js.
-const { buildQuiz, loadLevel: loadQuizLevel, QUIZ_PUBLIC, QUIZ_LINKS } = require("./build-quiz");
+const { buildQuiz, loadLevel: loadQuizLevel, LEVELS: QUIZ_LEVELS, QUIZ_PUBLIC, QUIZ_LINKS } = require("./build-quiz");
 const SETTINGS_JS_HASH = require("crypto").createHash("md5").update(fs.readFileSync(path.join(__dirname, "site", "settings-modal.js"))).digest("hex").slice(0, 8);
 const SETTINGS_SCRIPT = `<script src="${SITE_PATH}settings-modal.js?v=${SETTINGS_JS_HASH}" defer></script>`;
 // Content-Security-Policy connect-src allowlist. This is the technical
@@ -515,6 +516,7 @@ const JA_TITLES = {
   N4_grammar_list: "N4 文法チェックリスト",
   N3_grammar_list: "N3 文法チェックリスト",
   N2_grammar_list: "N2 文法チェックリスト",
+  N1_grammar_list: "N1 文法チェックリスト",
   // guides (grammar/guides/)
   "wa-vs-ga": "は vs が",
   "jlpt-december-2026": "JLPT 12月 考前指南",
@@ -603,6 +605,23 @@ const JA_TITLES = {
   lesson73: "接続・転折 — それにしても/したがって",
   lesson74: "高頻出 — げ/抜く/次第/きり/ぶりに",
   lesson75: "N2文法総復習",
+  lesson76: "時間・時点 — が早いか/や否や/なり/そばから",
+  lesson77: "限定・範囲 — をおいて/ならでは/はおろか",
+  lesson78: "例示・並列 — といい/といわず/であれ",
+  lesson79: "強調・極限 — たりとも/すら/にして",
+  lesson80: "逆接・譲歩 — ものを/といえども/ところを",
+  lesson81: "条件・仮定 — なくして/ともなると/たら最後",
+  lesson82: "目的・原因 — べく/んがため/ゆえ",
+  lesson83: "関連・無関係 — いかんで/をよそに",
+  lesson84: "付随・強制 — ずにはおかない/を余儀なくされる",
+  lesson85: "評価・判断 — までもない/に足る/に堪えない",
+  lesson86: "評価・判断 — べくもない/てしかるべきだ",
+  lesson87: "感情・強調 — てやまない/極まりない",
+  lesson88: "様子・状態 — ずくめ/まみれ/めく",
+  lesson89: "並行・付帯 — かたがた/がてら/かたわら",
+  lesson90: "書き言葉 — べからず/ごとき/んばかり",
+  lesson91: "立場・対比 — にひきかえ/ともあろう/たる",
+  lesson92: "N1文法総復習",
 };
 
 // SEO keywords per lesson (Japanese, Chinese, English)
@@ -687,6 +706,24 @@ const LESSON_KEYWORDS = {
   lesson73: "それにしても, それなのに, しかも, したがって, すなわち, 接続, 転折, however, therefore, JLPT N2",
   lesson74: "げ, 抜く, 次第だ, 次第で, きり, ぶりに, つき, 高頻出, suffix, JLPT N2",
   lesson75: "N2文法, N2 grammar review, 総復習, JLPT N2 summary",
+  N1_grammar_list: "N1文法一覧, N1语法列表, JLPT N1 grammar list, checklist, 文法チェックリスト",
+  lesson76: "が早いか, や否や, なり, そばから, てからというもの, を皮切りに, に至って, 時間, as soon as, JLPT N1",
+  lesson77: "をおいて, ならでは, にとどまらず, はおろか, もさることながら, に限ったことではない, を限りに, 限定, JLPT N1",
+  lesson78: "といい〜といい, といわず〜といわず, なり〜なり, であれ〜であれ, だの〜だの, うが〜まいが, 例示, JLPT N1",
+  lesson79: "たりとも, すら, ですら, にして, からある, からする, あっての, の極み, の至り, 強調, JLPT N1",
+  lesson80: "ものを, といえども, ところを, ながらも, とはいうものの, うが, うと, にしたって, 逆接, 譲歩, JLPT N1",
+  lesson81: "なくして, ともなると, ともなれば, とあれば, たら最後, が最後, ようでは, ないまでも, 条件, JLPT N1",
+  lesson82: "べく, んがため, ゆえに, とあって, こととて, にかこつけて, 目的, 原因, JLPT N1",
+  lesson83: "いかんで, いかんによっては, いかんにかかわらず, いかんによらず, をよそに, によらず, に即して, にかかわる, JLPT N1",
+  lesson84: "なしに, なしには, ことなしに, ずにはおかない, ずにはすまない, を禁じ得ない, を余儀なくされる, JLPT N1",
+  lesson85: "までもない, までだ, までのことだ, には及ばない, に足る, に足りない, に堪える, に堪えない, にかたくない, JLPT N1",
+  lesson86: "べくもない, てしかるべきだ, でなくてなんだろう, ないではすまない, ないものでもない, ないでもない, ばそれまでだ, JLPT N1",
+  lesson87: "てやまない, 極まりない, 極まる, といったらない, かぎりだ, とは, てはばからない, 感情, JLPT N1",
+  lesson88: "ずくめ, まみれ, ぐるみ, めく, ともなく, ともなしに, ながらに, 様子, JLPT N1",
+  lesson89: "かたがた, がてら, かたわら, つ〜つ, なりに, とばかりに, 並行, JLPT N1",
+  lesson90: "うにも〜ない, べからず, べからざる, ごとき, ごとく, ずとも, んばかり, をもって, 文語, JLPT N1",
+  lesson91: "にひきかえ, ともあろう, たるもの, ではあるまいし, と相まって, に則って, JLPT N1",
+  lesson92: "N1文法, N1 grammar review, 総復習, JLPT N1 summary",
 };
 
 // ─── Helpers ───
@@ -1562,7 +1599,7 @@ async function main() {
   const sidebarHtml = [];
   // Practice / mock test / flashcard links for a level that has questions.
   const quizPages = (level) => {
-    if (!QUIZ_LINKS || !/^N[2-5]$/.test(level) || !loadQuizLevel(level).qs.length) return [];
+    if (!QUIZ_LINKS || !/^N[1-5]$/.test(level) || !loadQuizLevel(level).qs.length) return [];
     const lv = level.toLowerCase();
     return [
       { href: `${SITE_PATH}${lv}-practice/`, zh: "✍ 练习题", en: "✍ Practice questions" },
@@ -2156,7 +2193,7 @@ async function main() {
   // (/N5/ or N5_grammar_list); else the first group.
   var activeWrap = item ? item.closest('.nav-group-wrap') : null;
   if (!activeWrap) {
-    var lvl = (path.match(/\\/(N[2-5])(?=\\b|\\/|_)/) || [])[1] || (slug && (slug.match(/^(N[2-5])/) || [])[1]);
+    var lvl = (path.match(/\\/(N[1-5])(?=\\b|\\/|_)/) || [])[1] || (slug && (slug.match(/^(N[1-5])/) || [])[1]);
     if (lvl) activeWrap = sidebar.querySelector('.nav-group-wrap[data-level="' + lvl + '"]');
   }
   if (!activeWrap && wraps.length) activeWrap = wraps[0];
@@ -2197,8 +2234,8 @@ ${SETTINGS_SCRIPT}`;
   // Don't inline every lesson article into index.html (3.98MB → ~50KB).
   // Replace with a landing-page layout: hero + level cards + how-to.
   // Sidebar links already point to standalone /dayXX/ pages.
-  const levelCounts = { N5: 0, N4: 0, N3: 0, N2: 0 };
-  const levelRange = { N5: {}, N4: {}, N3: {}, N2: {} };
+  const levelCounts = { N5: 0, N4: 0, N3: 0, N2: 0, N1: 0 };
+  const levelRange = { N5: {}, N4: {}, N3: {}, N2: {}, N1: {} };
   let totalPoints = 0;
   let totalLessons = 0;
   for (const l of lessonPages) {
@@ -2261,7 +2298,15 @@ ${SETTINGS_SCRIPT}`;
           <span class="lang-zh">高阶逆接、程度限定、判断主张、对比关系、感情表达、书面专用语法。共 ${levelCounts.N2} 课。</span>
           <span class="lang-en">Advanced concession, degree/limit, assertion, contrast, emotional expressions, and written-only grammar. ${levelCounts.N2} lessons.</span>
         </p>
-      </a>
+      </a>${levelCounts.N1 ? `
+      <a class="level-card" href="N1/">
+        <span class="level-head"><span class="level-tag">N1</span><span class="level-range"><span class="lang-zh">${rangeLabel("N1", "zh")}</span><span class="lang-en">${rangeLabel("N1", "en")}</span></span></span>
+        <h3><span class="lang-zh">报刊・论说文</span><span class="lang-en">News · essays · literature</span></h3>
+        <p>
+          <span class="lang-zh">时点、限定、强调极限、文语与书面表达、评价判断、感情强调——报刊和论说文里的高阶语法。共 ${levelCounts.N1} 课。</span>
+          <span class="lang-en">Timing, limits, extremes, classical and written forms, evaluation, emphatic emotion — the grammar of newspapers, essays and literature. ${levelCounts.N1} lessons.</span>
+        </p>
+      </a>` : ""}
     </div>
   </section>
   <section class="home-howto">
@@ -2408,22 +2453,22 @@ ${APP_PREFS_JS}
   // ─── Generate individual lesson pages ───
   // Pages published once per language (PAGE_LANGS); links to them on a
   // non-root copy point at that language's copy.
-  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "guides", "about", "practice", ...["n5", "n4", "n3", "n2"].flatMap((l) => [`${l}-practice`, `${l}-mock-test`, `${l}-cards`])]);
+  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "about", "practice", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-mock-test`, `${l}-cards`])]);
   // "Practice this point" at the end of every grammar point that has practice
   // questions (questions/N*/lessonNN.json refs), linking to the practice page.
   const quizRefCount = {};
-  if (QUIZ_LINKS) for (const lv of ["N5", "N4", "N3", "N2"]) {
+  if (QUIZ_LINKS) for (const lv of QUIZ_LEVELS) {
     for (const q of loadQuizLevel(lv).qs) for (const r of q.refs || []) if (/#\d+$/.test(r)) quizRefCount[`${lv}:${r}`] = (quizRefCount[`${lv}:${r}`] || 0) + 1;
   }
   const quizLessonCount = {};
-  if (QUIZ_LINKS) for (const lv of ["N5", "N4", "N3", "N2"]) {
+  if (QUIZ_LINKS) for (const lv of QUIZ_LEVELS) {
     for (const q of loadQuizLevel(lv).qs) {
       // Grammar questions, and vocabulary questions on a word from the lesson's table.
       const ref = q._kind === "lesson" ? q.refs[0] : (q.refs || []).find((r) => /#vocab$/.test(r));
       if (ref) { const l = ref.split("#")[0]; quizLessonCount[`${lv}:${l}`] = (quizLessonCount[`${lv}:${l}`] || 0) + 1; if (q._kind !== "lesson") quizLessonCount[`${lv}:${l}:vocab`] = 1; }
     }
   }
-  const mockLevels = ["N5", "N4", "N3", "N2"].filter((lv) => fs.existsSync(path.join(__dirname, "questions", lv, "mock-1")));
+  const mockLevels = QUIZ_LEVELS.filter((lv) => fs.existsSync(path.join(__dirname, "questions", lv, "mock-1")));
   const addQuizLinks = (html, id, level) => {
     if (!QUIZ_LINKS) return html;
     // JLPT guide: after "时间分配", a pointer to the timed mock tests.
@@ -2436,7 +2481,7 @@ ${APP_PREFS_JS}
         return hr ? part.slice(0, hr.index) + link + hr[0] : part + link;
       }).join("");
     }
-    if (!/^N[2-5]$/.test(level)) return html;
+    if (!/^N[1-5]$/.test(level)) return html;
     // Whole lesson: before 复习计划 (or at the end).
     const total = quizLessonCount[`${level}:${id}`];
     const lessonLink = total ? `<p class="quiz-link quiz-link-lesson"><a href="${SITE_PATH}${level.toLowerCase()}-practice/#lesson=${id}">✍ <span class="lang-zh">练这一课的题（${quizLessonCount[`${level}:${id}:vocab`] ? "语法 + 词汇，" : ""}${total} 题）</span><span class="lang-en">Practice this lesson (${quizLessonCount[`${level}:${id}:vocab`] ? "grammar + vocabulary, " : ""}${total} questions)</span></a></p>\n` : "";
@@ -2738,18 +2783,21 @@ ${APP_PREFS_JS}
     N5: "JLPT N5 是日语入门级别，覆盖基础句型、助词、动词三类、ます形/て形/ない形/た形、形容词活用、条件表达、可能/受身/意向形与基础推测样态。",
     N4: "JLPT N4 在 N5 基础上深化使役、受身、使役受身、授受表现、ように系列、ことにする/なる、ばかり/ところ/てしまう、ておく/てある、わけだ/ものだ 等核心日常语法。",
     N3: "JLPT N3 是日语进阶分水岭，覆盖书面助词（において/に対して/について）、原因理由、逆接让步、程度范围、动作相关、并列添加、状态样态、否定与复合表达等核心语法点。",
+    N1: "JLPT N1 是最高级别，语法多见于报刊社论、论说文和文学作品：时点（が早いか/や否や）、限定范围（をおいて/ならでは）、强调极限（たりとも/すら）、文语书面表达（べく/ごとき/んばかり）、评价判断（までもない/に足る）与感情强调（てやまない/極まりない）。",
     N2: "JLPT N2 是商务/学术级别语法，覆盖高阶逆接（からといって/つつも）、程度限定（に過ぎない/はもとより）、判断主张（わけがない/ということだ）、对比关系、感情不可抗、书面表达、仮定条件等高频考点。",
   };
   const LEVEL_INTRO_EN = {
     N5: "JLPT N5 is the beginner level — basic sentence patterns, particles, the three verb groups, ます/て/ない/た forms, adjective conjugation, conditionals, and the potential/passive/volitional forms plus basic conjecture and appearance expressions.",
     N4: "Building on N5, JLPT N4 deepens causative, passive, causative-passive, giving/receiving expressions, the ように series, ことにする/なる, ばかり/ところ/てしまう, ておく/てある, and わけだ/ものだ — the core grammar of everyday Japanese.",
     N3: "JLPT N3 is the watershed into advanced Japanese — written-language particles (において/に対して/について), cause and reason, concession, degree and range, action-related patterns, addition, state and appearance, negation, and compound expressions.",
+    N1: "JLPT N1 is the top level, and its grammar lives in editorials, essays and literature — timing (が早いか/や否や), limits and scope (をおいて/ならでは), extremes (たりとも/すら), classical and written forms (べく/ごとき/んばかり), evaluation (までもない/に足る) and emphatic emotion (てやまない/極まりない).",
     N2: "JLPT N2 is business/academic-level grammar — advanced concession (からといって/つつも), degree and limitation (に過ぎない/はもとより), judgment and assertion (わけがない/ということだ), contrast, involuntary emotion, written expression, and hypothetical conditionals — all high-frequency exam points.",
   };
   const LEVEL_KEYWORDS = {
     N5: "JLPT N5 语法清单, 日语 N5 语法总结, N5 文法一覧, N5 grammar list, 日语入门语法, JLPT N5 备考",
     N4: "JLPT N4 语法清单, 日语 N4 语法总结, N4 文法一覧, N4 grammar list, JLPT N4 备考, 日语进阶语法",
     N3: "JLPT N3 语法清单, 日语 N3 语法总结, N3 文法一覧, N3 grammar list, JLPT N3 备考, 日语进阶语法, N3 语法速查",
+    N1: "JLPT N1 语法清单, 日语 N1 语法总结, N1 文法一覧, N1 grammar list, JLPT N1 备考, 日语高级语法, N1 语法速查",
     N2: "JLPT N2 语法清单, 日语 N2 语法总结, N2 文法一覧, N2 grammar list, JLPT N2 备考, 日语商务语法, N2 语法速查",
   };
   // Shared by the level overview pages and the /guides/ hub.
@@ -2796,12 +2844,12 @@ html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
     const zh = l.cleanPoints[i], en = (l.cleanPointsEn || [])[i] || zh;
     return zh === en ? zh : `<span class="lang-zh">${zh}</span><span class="lang-en">${en}</span>`;
   };
-  const lessonsByLevel = { N5: [], N4: [], N3: [], N2: [] };
+  const lessonsByLevel = { N5: [], N4: [], N3: [], N2: [], N1: [] };
   for (const lesson of lessonPages) {
     if (lessonsByLevel[lesson.level]) lessonsByLevel[lesson.level].push(lesson);
   }
   const levelPageIds = [];
-  for (const level of ["N5", "N4", "N3", "N2"]) {
+  for (const level of ["N5", "N4", "N3", "N2", "N1"]) {
     const lessons = lessonsByLevel[level].filter(l => /^lesson\d+/.test(l.id));
     if (lessons.length === 0) continue;
     const totalPoints = lessons.reduce((sum, l) => sum + (l.cleanPoints || []).length, 0);
@@ -3527,7 +3575,8 @@ License: CC BY 4.0 — attribution required, no full-site mirroring
 - [N5 overview / N5 级别概览](${SITE}N5/): Basic sentence patterns, particles, verb groups, て-form, ない-form, た-form, adjectives, conditionals, potential, passive, volitional, conjecture. ${levelCounts.N5} lessons.
 - [N4 overview / N4 级别概览](${SITE}N4/): Causative, passive, giving/receiving, ように, ことにする/なる, わけだ/ものだ. ${levelCounts.N4} lessons.
 - [N3 overview / N3 级别概览](${SITE}N3/): Formal particles, cause/reason, concession, degree/extent, state, negation, compound expressions. ${levelCounts.N3} lessons.
-- [N2 overview / N2 级别概览](${SITE}N2/): Advanced concession, degree/limitation, judgment, contrast, written-formal grammar. ${levelCounts.N2} lessons.
+- [N2 overview / N2 级别概览](${SITE}N2/): Advanced concession, degree/limitation, judgment, contrast, written-formal grammar. ${levelCounts.N2} lessons.${levelCounts.N1 ? `
+- [N1 overview / N1 级别概览](${SITE}N1/): Timing, limits, extremes, classical and written forms, evaluation, emphatic emotion. ${levelCounts.N1} lessons.` : ""}
 
 ## Grammar checklists (full point-by-point listings)
 
@@ -3657,7 +3706,7 @@ Each \`/lessonNN/\` page contains:
   // Each shareable index page gets a tailored 1200×630 social preview so a
   // share to XHS / X / Threads / WeChat surfaces a distinctive image rather
   // than the generic site-wide one.
-  const ogLevelCounts = { N5: 0, N4: 0, N3: 0, N2: 0 };
+  const ogLevelCounts = { N5: 0, N4: 0, N3: 0, N2: 0, N1: 0 };
   for (const lp of lessonPages) {
     if (lp.level && ogLevelCounts.hasOwnProperty(lp.level)) ogLevelCounts[lp.level]++;
   }
@@ -3666,6 +3715,7 @@ Each \`/lessonNN/\` page contains:
     { slug: "N4", topLabel: "JLPT N4", mainTitle: "N4 文法チェックリスト", sub: `${ogLevelCounts.N4} 课 · 54+ 语法点`, accent: "#e94560" },
     { slug: "N3", topLabel: "JLPT N3", mainTitle: "N3 文法チェックリスト", sub: `${ogLevelCounts.N3} 课 · 100+ 语法点`, accent: "#e94560" },
     { slug: "N2", topLabel: "JLPT N2", mainTitle: "N2 文法チェックリスト", sub: `${ogLevelCounts.N2} 课 · 75+ 语法点`, accent: "#e94560" },
+    ...(ogLevelCounts.N1 ? [{ slug: "N1", topLabel: "JLPT N1", mainTitle: "N1 文法チェックリスト", sub: `${ogLevelCounts.N1} 课 · 100+ 语法点`, accent: "#e94560" }] : []),
     { slug: "about", topLabel: "About · 关于", mainTitle: "日语语法笔记", sub: "N5 → N2 · 8 Weeks · Free", accent: "#e94560" },
     { slug: "anki", topLabel: "Anki Decks", mainTitle: "JLPT 文法 卡组", sub: "N5 · N4 · N3 · N2 · 297 张卡", accent: "#e94560" },
     { slug: "guides", topLabel: "Guides · 专题", mainTitle: "易混語法 対比", sub: "は vs が · から vs ので · JLPT 12月", accent: "#e94560" },

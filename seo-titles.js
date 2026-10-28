@@ -333,6 +333,78 @@ module.exports = {
     en: "JLPT N2 Grammar Review — All N2 Grammar Summary by Topic",
     zh: "JLPT N2 语法总复习 — N2 语法分类总结",
   },
+  lesson76: {
+    en: "が早いか, や否や, なり, そばから, を皮切りに | JLPT N1 Grammar",
+    zh: "が早いか・や否や・なり・そばから・を皮切りに 区别 | JLPT N1",
+  },
+  lesson77: {
+    en: "をおいて, ならでは, はおろか, もさることながら | JLPT N1 Grammar",
+    zh: "をおいて・ならでは・はおろか・もさることながら 用法 | JLPT N1",
+  },
+  lesson78: {
+    en: "といい〜といい, といわず, なり〜なり, であれ〜であれ | JLPT N1 Grammar",
+    zh: "といい・といわず・なり〜なり・であれ 区别 | JLPT N1",
+  },
+  lesson79: {
+    en: "たりとも, すら, にして, からある, あっての, の極み | JLPT N1 Grammar",
+    zh: "たりとも・すら・にして・からある・の極み 用法 | JLPT N1",
+  },
+  lesson80: {
+    en: "ものを, といえども, ところを, ながらも, うが | JLPT N1 Grammar",
+    zh: "ものを・といえども・ところを・ながらも 区别 | JLPT N1",
+  },
+  lesson81: {
+    en: "なくして, ともなると, とあれば, たら最後, ないまでも | JLPT N1 Grammar",
+    zh: "なくして・ともなると・とあれば・たら最後 用法 | JLPT N1",
+  },
+  lesson82: {
+    en: "べく, んがため, ゆえに, とあって, こととて | JLPT N1 Grammar",
+    zh: "べく・んがため・ゆえ・とあって・こととて 区别 | JLPT N1",
+  },
+  lesson83: {
+    en: "いかんで, いかんにかかわらず, をよそに, に即して | JLPT N1 Grammar",
+    zh: "いかん・をよそに・によらず・に即して 用法 | JLPT N1",
+  },
+  lesson84: {
+    en: "ずにはおかない, ずにはすまない, を禁じ得ない, を余儀なくされる | JLPT N1 Grammar",
+    zh: "ずにはおかない・ずにはすまない・を余儀なくされる 区别 | JLPT N1",
+  },
+  lesson85: {
+    en: "までもない, には及ばない, に足る, に堪えない, にかたくない | JLPT N1 Grammar",
+    zh: "までもない・に足る・に堪えない・にかたくない 用法 | JLPT N1",
+  },
+  lesson86: {
+    en: "べくもない, てしかるべきだ, ないではすまない, ばそれまでだ | JLPT N1 Grammar",
+    zh: "べくもない・てしかるべきだ・ばそれまでだ 用法 | JLPT N1",
+  },
+  lesson87: {
+    en: "てやまない, 極まりない, といったらない, かぎりだ | JLPT N1 Grammar",
+    zh: "てやまない・極まりない・といったらない・かぎりだ 用法 | JLPT N1",
+  },
+  lesson88: {
+    en: "ずくめ, まみれ, ぐるみ, めく, ともなく | JLPT N1 Grammar",
+    zh: "ずくめ・まみれ・ぐるみ・めく・ともなく 区别 | JLPT N1",
+  },
+  lesson89: {
+    en: "かたがた vs がてら vs かたわら, なりに, とばかりに | JLPT N1 Grammar",
+    zh: "かたがた・がてら・かたわら 区别 | JLPT N1",
+  },
+  lesson90: {
+    en: "べからず, ごとき, ずとも, んばかり, をもって | JLPT N1 Grammar",
+    zh: "べからず・ごとき・ずとも・んばかり・をもって 用法 | JLPT N1",
+  },
+  lesson91: {
+    en: "にひきかえ, ともあろう, たるもの, ではあるまいし | JLPT N1 Grammar",
+    zh: "にひきかえ・ともあろう・たる・ではあるまいし 用法 | JLPT N1",
+  },
+  lesson92: {
+    en: "JLPT N1 Grammar Review — All N1 Grammar Summary by Topic",
+    zh: "JLPT N1 语法总复习 — N1 语法分类总结",
+  },
+  N1_grammar_list: {
+    en: "JLPT N1 Grammar List — All N1 Grammar Points (Checklist)",
+    zh: "JLPT N1 语法清单 — 全部 N1 语法点一览（可打勾）",
+  },
   N2_grammar_list: {
     en: "JLPT N2 Grammar List — All N2 Grammar Points (Checklist)",
     zh: "JLPT N2 语法清单 — 全部 N2 语法点一览（可打勾）",
