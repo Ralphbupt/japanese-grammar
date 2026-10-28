@@ -60,19 +60,35 @@ const GISCUS_ATTRS = {
   "reactions-enabled": "1",
   "emit-metadata": "0",
   "input-position": "top",
-  theme: "preferred_color_scheme",
   lang: "zh-CN",
   loading: "lazy",
 };
 const GISCUS_SCRIPT = `<script>
 (function() {
   var sec = document.currentScript.parentNode;
+  // Match the site theme (settings → 主题), not just the OS: the paper and
+  // sepia tones have their own giscus themes, served from this site.
+  function giscusTheme() {
+    var c = document.documentElement.classList;
+    var dark = c.contains('theme-dark') ||
+      (!c.contains('theme-light') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    if (dark) return 'transparent_dark';
+    if (c.contains('tone-white')) return 'light';
+    return 'https://jpnotes.dev/giscus-' + (c.contains('tone-sepia') ? 'sepia' : 'paper') + '.css';
+  }
+  function retheme() {
+    var f = sec.querySelector('iframe.giscus-frame');
+    if (f) f.contentWindow.postMessage({ giscus: { setConfig: { theme: giscusTheme() } } }, 'https://giscus.app');
+  }
+  document.addEventListener('jpnotes:theme', retheme);
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', retheme);
   function load() {
     var s = document.createElement('script');
     s.src = 'https://giscus.app/client.js';
     s.crossOrigin = 'anonymous';
     s.async = true;
     var a = ${JSON.stringify(GISCUS_ATTRS)};
+    a.theme = giscusTheme();
     // The /zh/ copy of a page joins the thread of the bilingual page
     // (giscus' pathname term is the path without its leading slash).
     if (location.pathname.indexOf('/zh/') === 0) { a.mapping = 'specific'; a.term = location.pathname.slice(4); }
@@ -2363,6 +2379,9 @@ ${APP_PREFS_JS}
   fs.writeFileSync(path.join(__dirname, "dist", "ai-assistant.js"), AI_JS_BUNDLE, "utf-8");
   fs.copyFileSync(path.join(__dirname, "site", "settings-modal.js"), path.join(__dirname, "dist", "settings-modal.js"));
   fs.copyFileSync(path.join(__dirname, "site", "sw.js"), path.join(__dirname, "dist", "sw.js"));
+  for (const f of ["giscus-paper.css", "giscus-sepia.css"]) {
+    fs.copyFileSync(path.join(__dirname, "site", f), path.join(__dirname, "dist", f));
+  }
 
   // ─── Generate individual lesson pages ───
   // Pages published once per language (PAGE_LANGS); links to them on a
