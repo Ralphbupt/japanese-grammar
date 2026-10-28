@@ -202,7 +202,8 @@
       '<button class="q-btn q-btn-primary q-btn-big" data-act="daily">' + t('今日练习', 'Today’s practice') + ' · ' + size + t(' 题', ' questions') + '</button>' +
       // Today's count and streak once there is one; a first visit says what a set is.
       '<p class="q-muted">' + (S.days[today()] || streak() ? t('今天做了 ', 'Today: ') + (S.days[today()] || 0) + t(' 题', ' answered') + ' · ' + t('连续 ', 'streak ') + streak() + t(' 天', ' days') :
-        t('词汇、语法、阅读混在一起，答完马上看解析', 'Vocabulary, grammar and reading mixed — explanations right after each answer')) + '</p></div>';
+        t('词汇、语法、阅读混在一起，答完马上看解析', 'Vocabulary, grammar and reading mixed — explanations right after each answer')) + '</p>' +
+      '<label class="q-size">' + t('每组 ', 'Sets of ') + '<select data-act="size">' + [5, 10, 20, 50].map(function (n) { return '<option' + (n === size ? ' selected' : '') + '>' + n + '</option>'; }).join('') + '</select>' + t(' 题（今日练习和按题型练都按这个数）', ' questions (daily sets and practice by type)') + '</label>' + '</div>';
     h += '<section class="q-sec"><h2>' + t('错题本', 'Review list') + '</h2><p>' +
       (r ? t('共 ', '') + r + t(' 题，今天到期 ', ' questions, ') + d + t(' 题', ' due today') : t('还没有错题。答错、点了“不会”或“其实是蒙的”的题会出现在这里，隔几天再考你一次。', 'Nothing here yet. Questions you miss, mark “I don’t know”, or flag as a guess show up here and come back a few days later.')) + '</p>' +
       (r ? '<button class="q-btn" data-act="review"' + (d ? '' : ' data-early="1"') + '>' + (d ? t('复习到期的错题', 'Review due questions') : t('提前复习', 'Review early')) + '</button>' : '') + '</section>';
@@ -219,8 +220,7 @@
       });
       h += '</ul></section>';
     });
-    h += '<details class="q-sec q-settings"><summary>' + t('设置与备份', 'Settings & backup') + '</summary>' +
-      '<label>' + t('每组题数', 'Questions per set') + ' <select data-act="size">' + [5, 10, 20, 50].map(function (n) { return '<option' + (n === size ? ' selected' : '') + '>' + n + '</option>'; }).join('') + '</select></label>' +
+    h += '<details class="q-sec q-settings"><summary>' + t('备份进度', 'Back up progress') + '</summary>' +
       '<p class="q-muted">' + t('做题记录只存在这个浏览器里。换手机或清缓存前先导出。', 'Your progress lives only in this browser. Export it before switching phones or clearing site data.') + '</p>' +
       '<button class="q-btn" data-act="export">' + t('导出进度', 'Export progress') + '</button> ' +
       '<label class="q-btn">' + t('导入进度', 'Import progress') + '<input type="file" accept="application/json" data-act="import" hidden></label></details>';
