@@ -133,7 +133,7 @@ async function feedback(req, env, cors) {
   try { b = JSON.parse(raw); } catch (e) { return json({ ok: false, message: 'Bad JSON' }, 400, cors); }
   const kind = b.kind === 'question' ? 'question' : 'general';
   const text = String(b.text || '').trim().slice(0, FEEDBACK_MAX);
-  const qid = /^n[2-5]-[a-z0-9-]{3,24}$/.test(b.qid) ? b.qid : null;
+  const qid = /^n[1-5]-[a-z0-9-]{3,24}$/.test(b.qid) ? b.qid : null;
   const reason = /^(answer|two|stem|other)$/.test(b.reason) ? b.reason : null;
   const choice = Number.isInteger(b.choice) && b.choice >= 0 && b.choice <= 3 ? b.choice : null;
   const page = /^\/[\w\-\/]{0,120}$/.test(b.page) ? b.page : null;

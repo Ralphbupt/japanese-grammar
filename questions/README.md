@@ -35,8 +35,9 @@ Several files of the same kind (`moji-goi-kanji.json`, `dokkai-info.json` …) a
 | N4 | kanji 7, hyouki 5, bunmyaku 8, iikae 4, youhou 4 | bunpou 13, narabe 4, bunshou 1×4 | short 3×1, mid 1×3, info 1×2 |
 | N3 | kanji 8, hyouki 6, bunmyaku 11, iikae 5, youhou 5 | bunpou 13, narabe 5, bunshou 1×5 | short 4×1, mid 2×3, long 1×4, info 1×2 |
 | N2 | kanji 5, hyouki 5, gokeisei 5, bunmyaku 7, iikae 5, youhou 5 | bunpou 12, narabe 5, bunshou 1×5 | short 5×1, mid 3×3, tougou 1×2, shuchou 1×3, info 1×2 |
+| N1 | kanji 6, bunmyaku 7, iikae 6, youhou 6 | bunpou 10, narabe 5, bunshou 1×5 | short 4×1, mid 3×3, long 1×4, tougou 1×3, shuchou 1×4, info 1×2 |
 
-(N5/N4 from the JLPT's 2020 revision notice; N3/N2 are the usual published counts — the JLPT no longer lists them and says they vary slightly.) Ids `n5-m1-001…` (passages `n5-m1-p1…`). Mock questions are new — never copied from or into the practice bank — and go through the same blind review (`node tools/quiz-blind.js sheet N5/mock-1 moji-goi`). The test's sittings, times and pass marks come from `MOCK` in `build-quiz.js`.
+(N5/N4 from the JLPT's 2020 revision notice; N3/N2/N1 are the usual published counts — the JLPT no longer lists them and says they vary slightly.) Ids `n5-m1-001…` (passages `n5-m1-p1…`). Mock questions are new — never copied from or into the practice bank — and go through the same blind review (`node tools/quiz-blind.js sheet N5/mock-1 moji-goi`). The test's sittings, times and pass marks come from `MOCK` in `build-quiz.js`.
 
 ## How many
 

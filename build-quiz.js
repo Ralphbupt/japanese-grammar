@@ -41,7 +41,7 @@ const ROOT = __dirname;
 // once they're public, or in a local preview build (QUIZ_PREVIEW=1).
 const QUIZ_PUBLIC = true;
 const QUIZ_LINKS = QUIZ_PUBLIC || process.env.QUIZ_PREVIEW === "1";
-const LEVELS = ["N5", "N4", "N3", "N2"];
+const LEVELS = ["N5", "N4", "N3", "N2", "N1"].filter((l) => fs.existsSync(path.join(ROOT, "questions", l)));
 const GROUPS = {
   moji: { zh: "文字・语汇", en: "Vocabulary", ja: "文字・語彙" },
   bunpou: { zh: "语法", en: "Grammar", ja: "文法" },
@@ -114,6 +114,16 @@ const MOCK = {
       { ...DOKKAI, max: 60, min: 19, types: ["short", "mid", "tougou", "shuchou", "info"] },
     ],
     listening: LISTENING, pass: 90,
+  },
+  // N1: one 110-minute sitting; no 表記 / 語形成 in the vocabulary part.
+  N1: {
+    sections: [{ key: "all", zh: "言语知识（文字・语汇・语法）・阅读", en: "Language knowledge & reading", ja: "言語知識（文字・語彙・文法）・読解", minutes: 110,
+      types: ["kanji", "bunmyaku", "iikae", "youhou", ...GRAMMAR_TYPES, "short", "mid", "long", "tougou", "shuchou", "info"] }],
+    scoring: [
+      { ...GENGO, max: 60, min: 19, types: ["kanji", "bunmyaku", "iikae", "youhou", ...GRAMMAR_TYPES] },
+      { ...DOKKAI, max: 60, min: 19, types: ["short", "mid", "long", "tougou", "shuchou", "info"] },
+    ],
+    listening: LISTENING, pass: 100,
   },
 };
 const SLOT = /\[(_|★)\]/g;
