@@ -204,7 +204,7 @@
       '<p class="q-muted">' + (S.days[today()] || streak() ? t('今天做了 ', 'Today: ') + (S.days[today()] || 0) + t(' 题', ' answered') + ' · ' + t('连续 ', 'streak ') + streak() + t(' 天', ' days') :
         t('词汇、语法、阅读混在一起，答完马上看解析', 'Vocabulary, grammar and reading mixed — explanations right after each answer')) + '</p></div>';
     h += '<section class="q-sec"><h2>' + t('错题本', 'Review list') + '</h2><p>' +
-      (r ? t('共 ', '') + r + t(' 题，今天到期 ', ' questions, ') + d + t(' 题', ' due today') : t('还没有错题。答错或标了“蒙的”的题会出现在这里，隔几天再考你一次。', 'Nothing here yet. Questions you miss or mark as a guess show up here and come back a few days later.')) + '</p>' +
+      (r ? t('共 ', '') + r + t(' 题，今天到期 ', ' questions, ') + d + t(' 题', ' due today') : t('还没有错题。答错、点了“不会”或“其实是蒙的”的题会出现在这里，隔几天再考你一次。', 'Nothing here yet. Questions you miss, mark “I don’t know”, or flag as a guess show up here and come back a few days later.')) + '</p>' +
       (r ? '<button class="q-btn" data-act="review"' + (d ? '' : ' data-early="1"') + '>' + (d ? t('复习到期的错题', 'Review due questions') : t('提前复习', 'Review early')) + '</button>' : '') + '</section>';
     Object.keys(D.groups).forEach(function (g) {
       var keys = Object.keys(D.types).filter(function (k) { return D.types[k].g === g; });
@@ -262,7 +262,7 @@
     } else {
       h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><button class="q-opt" data-act="opt" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span>' + o + '</button></li>'; }).join('') + '</ol>';
     }
-    h += '<div class="q-actions"><label class="q-guess"><input type="checkbox" data-act="guess"> ' + t('蒙的', 'Guessing') + '</label>' +
+    h += '<div class="q-actions">' + (q.type === 'narabe' ? '' : '<button class="q-btn q-idk" data-act="idk">' + t('不会', 'I don’t know') + '</button>') +
       (q.type === 'narabe' ? '<button class="q-btn q-btn-primary" data-act="submit" disabled>' + t('提交', 'Submit') + '</button>' : '') + '</div>' +
       '<div class="q-feedback" aria-live="polite"></div></div>';
     app.innerHTML = h;
@@ -277,7 +277,7 @@
     group.forEach(function (g, k) {
       h += '<div class="q-sub" data-q="' + g.id + '"><p class="q-subno">' + t('问题 ', 'Question ') + (k + 1) + '</p><div class="q-stem" lang="ja">' + stemHtml(g) + '</div>' +
         '<ol class="q-opts" lang="ja">' + g.options.map(function (o, i) { return '<li><button class="q-opt" data-act="opt" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span>' + o + '</button></li>'; }).join('') + '</ol>' +
-        '<div class="q-actions"><label class="q-guess"><input type="checkbox" data-act="guess"> ' + t('蒙的', 'Guessing') + '</label></div>' +
+        '<div class="q-actions">' + '<button class="q-btn q-idk" data-act="idk">' + t('不会', 'I don’t know') + '</button>' + '</div>' +
         '<div class="q-feedback" aria-live="polite"></div></div>';
     });
     app.innerHTML = h + '</div>';
@@ -431,12 +431,13 @@
       var blank = root().querySelector('.q-blank') || (curs ? app.querySelector('.q-pblank[data-n="' + q.blank + '"]') : app.querySelector('.q-pblank-on'));
       if (blank) { blank.innerHTML = '<span class="q-fill">' + q.options[q.answer] + '</span>'; blank.classList.add('q-filled'); }
     }
-    var g = root().querySelector('[data-act="guess"]'); if (g) g.disabled = true;
+    var g = root().querySelector('[data-act="idk"]'); if (g) g.remove();
     var sb = root().querySelector('[data-act="submit"]'); if (sb) sb.remove();
 
     cur.choice = choice;
-    var h = '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (ok ? '✓ ' + t('正确', 'Correct') : '✗ ' + t('正确答案是 ', 'The answer is ') + (q.answer + 1) + ' <span lang="ja">' + q.options[q.answer] + okjOf(q, q.answer) + '</span>') +
-      (ok && cur.guess ? ' <small>' + t('（蒙对了，已加入错题本，明天再考一次）', '(a lucky guess — it’s on your review list for tomorrow)') + '</small>' : '') + '</p>';
+    // 不会 before answering; 其实是蒙的 after a right answer (both go on the review list).
+    var h = '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (ok ? '✓ ' + t('正确', 'Correct') : '✗ ' + (choice == null ? t('不会 · ', 'Didn’t know · ') : '') + t('正确答案是 ', 'The answer is ') + (q.answer + 1) + ' <span lang="ja">' + q.options[q.answer] + okjOf(q, q.answer) + '</span>') +
+      (ok ? ' <button class="q-btn q-was-guess" data-act="was-guess">' + t('其实是蒙的', 'I guessed') + '</button>' : '') + '</p>';
     var aiFirst = !ok || cur.guess;
     if (aiFirst) h += aiBtn(true);
     h += '<div class="q-explain"><p>' + esc(bi(q.why)) + '</p>';
@@ -478,7 +479,7 @@
         var q = Q[r.id];
         var label = q.type === 'bunshou' ? '<span class="q-pblank">' + q.blank + '</span> ' + D.passages[q.passage].html.split('\n')[0].slice(0, 60) + '…' : stemHtml(q).replace(/<button[^>]*>(★)?<\/button>/g, function (m, st) { return st ? '★' : '＿'; });
         return '<li><div lang="ja" class="q-sumstem">' + label + '</div>' +
-          '<div class="q-muted">' + (r.ok ? t('蒙对', 'Guessed right') : t('你选 ', 'You: ') + '<span lang="ja">' + q.options[r.c] + '</span>') + ' · ' + t('答案 ', 'Answer: ') + '<span lang="ja">' + q.options[q.answer] + '</span></div></li>';
+          '<div class="q-muted">' + (r.ok ? t('蒙对', 'Guessed right') : r.c == null ? t('不会', 'Didn’t know') : t('你选 ', 'You: ') + '<span lang="ja">' + q.options[r.c] + '</span>') + ' · ' + t('答案 ', 'Answer: ') + '<span lang="ja">' + q.options[q.answer] + '</span></div></li>';
       }).join('') + '</ul>';
       // The grammar point missed most often.
       var cnt = {}; bad.forEach(function (r) { var ref = (Q[r.id].refs || [])[0]; if (ref) cnt[ref] = (cnt[ref] || 0) + 1; });
@@ -1029,6 +1030,17 @@
     else if (act === 'slot' && !cur.done) { cur.picked[+el.getAttribute('data-k')] = null; fillSlots(); }
     else if (act === 'submit') { var star = [].indexOf.call(app.querySelectorAll('.q-slot'), app.querySelector('.q-star')); submit(cur.picked[star]); }
     else if (act === 'next') ask();
+    else if (act === 'idk') submit(null);
+    else if (act === 'was-guess') {
+      var gq = cur.q, ans = S.answers[gq.id], last = ans && ans[ans.length - 1];
+      if (last) last.g = true;
+      cur.guess = true;
+      if (S.session) for (var ri = S.session.res.length - 1; ri >= 0; ri--) if (S.session.res[ri].id === gq.id) { S.session.res[ri].g = true; break; }
+      S.review[gq.id] = { lv: 0, due: now() + DAY, src: 'bank' };
+      save();
+      track('quiz_guess', { type: gq.type });
+      el.outerHTML = '<small class="q-muted">' + t('已加入错题本，明天再考一次', 'On your review list for tomorrow') + '</small>';
+    }
     else if (act === 'ai') aiExplain(cur.q, cur.choice, cur.guess, D.types[cur.q.type].ja, D.passages);
     // "这题有问题？": pick a reason, optionally say more, send.
     else if (act === 'report') {
@@ -1077,7 +1089,7 @@
     if (!cur || cur.mock || e.target.matches('input, textarea, select') || e.metaKey || e.ctrlKey || e.altKey) return;
     if (!document.body.contains(app.querySelector('.q-card'))) return;
     if (!cur.done && cur.q.type !== 'narabe' && /^[1-4]$/.test(e.key)) submit(+e.key - 1);
-    else if (!cur.done && (e.key === 'g' || e.key === 'G')) { var g = root().querySelector('[data-act="guess"]'); if (g) { g.checked = !g.checked; cur.guess = g.checked; } }
+    else if (!cur.done && cur.q.type !== 'narabe' && e.key === '0') submit(null);
     else if (e.key === 'Enter') {
       var b = app.querySelector('[data-act="next"]') || app.querySelector('[data-act="submit"]:not([disabled])');
       if (b) { e.preventDefault(); b.click(); }

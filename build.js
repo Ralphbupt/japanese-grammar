@@ -3529,7 +3529,7 @@ ${appAttrs === null || /data-mode="cards"/.test(appAttrs) ? "" : AI_SCRIPT}
 <li>${L("<b>今日练习</b>：每天一组，词汇、语法、阅读混着来。", "<b>Daily set</b>: a short mixed set of vocabulary, grammar and reading each day.")}</li>
 <li>${L("<b>按题型练</b>：专攻一种题型，比如排序题（★）或信息检索。", "<b>By question type</b>: drill one format, such as sentence order (★) or information retrieval.")}</li>
 <li>${L("<b>解析</b>：答完立刻看正确答案为什么对、每个错误选项为什么错，并链到讲这个语法点的课文；还可以让 AI 针对你选的选项讲解。", "<b>Explanations</b>: after each answer, why the right option is right and why each wrong one is wrong, with a link to the lesson that teaches the point — and an AI explanation of the option you picked.")}</li>
-<li>${L("<b>错题本</b>：答错或蒙对的题当天、3 天后、7 天后再考你，答对才移出。", "<b>Review list</b>: questions you miss or guess come back the same day, after 3 days and after 7 days, until you get them right.")}</li>
+<li>${L("<b>错题本</b>：答错、点了「不会」或答对后点「其实是蒙的」的题，当天、3 天后、7 天后再考你，答对才移出。", "<b>Review list</b>: questions you miss, mark “I don’t know”, or flag “I guessed” after getting right come back the same day, after 3 days and after 7 days, until you get them right.")}</li>
 <li>${L("进度只保存在这个浏览器里，不用注册。", "Progress stays in this browser; no account needed.")}</li>
 </ul>
 <h2>${L("常见问题", "Questions")}</h2>
