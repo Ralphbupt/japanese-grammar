@@ -2509,9 +2509,15 @@ ${CSS}
 /* Hide chrome that requires JS (menu toggle, settings overlay) but
    keep the sidebar — it works on hover via pure CSS and links are root-
    relative so they navigate from any standalone page. */
-#content { margin: 0 auto !important; max-width: 1000px; }
+#content { --col: 1000px; margin: 0 auto !important; max-width: var(--col); }
 /* Wide screens: a little more room for tables; prose stays readable. */
-@media (min-width: 1500px) { #content { max-width: 1120px; } }
+@media (min-width: 1500px) { #content { --col: 1120px; } }
+/* Sidebar open: centre in the space to its right, so it never covers the text. */
+@media (min-width: 769px) {
+  body:not(.sidebar-collapsed) #content {
+    margin-left: calc(var(--sidebar-w) + max(0px, (100vw - var(--sidebar-w) - var(--col)) / 2)) !important;
+  }
+}
 .back-link { display: block; margin-bottom: 1.5rem; color: var(--accent); text-decoration: none; font-size: 0.9rem; }
 .back-link:hover { text-decoration: underline; }
 .breadcrumb { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem; }
