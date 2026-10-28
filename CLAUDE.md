@@ -18,7 +18,7 @@ The grammar notes are published as a static site at **https://jpnotes.dev/** (cu
 - Sidebar navigation by JLPT level (hover-to-expand, available on all pages)
 - Element-level furigana on Japanese text via `data-ja` attribute
 - Bilingual content (Chinese + English): lessons, checklists, guides, the N5–N2 overviews, `/guides/` and `/about/` are published once per language (below); the home page and `/anki/` stay bilingual with a language toggle
-- Dark mode (3-state: auto/light/dark) with `theme-dark`/`theme-light` classes on `<html>`
+- Themes (settings → 主题, and the top-bar theme menu): auto / white / paper / sepia / dark. `localStorage.theme` = `white|light|sepia|dark` (`light` is paper; absent = auto, i.e. paper by day, dark at night). Classes on `<html>`: `theme-dark`, or `theme-light` plus `tone-white` / `tone-sepia`, so every dark rule (`:root:not(.theme-light)` / `html.theme-dark`) keeps excluding the light tones. Colours are tokens (`--bg`, `--surface-2`, `--row-alt`, `--panel-bg`, `--chip-bg`, `--accent`, `--link` …); light themes use a deeper accent red so red text passes 4.5:1, dark switches back to `#e94560`
 - 🔊 TTS audio on example sentences (pre-generated Edge TTS, fallback: none)
 - Example sentence layout (build.js, same pass as audio tagging): model sentences get `data-ex` and are set in system Mincho (no web font); the trailing `(translation)` is wrapped in `.ex-tr` and shown as its own muted line, brackets hidden but kept in the text; 🔊 / 讲解 sit after the Japanese, before the translation. Tables are wrapped in `.table-scroll` so wide ones scroll on phones
 - Cross-links between related grammar points (25 per page, descriptive anchor text)
