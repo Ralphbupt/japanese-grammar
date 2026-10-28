@@ -1,0 +1,16 @@
+/* Giscus comment theme for the sepia light theme; see giscus-paper.css. */
+@import url("https://giscus.app/themes/light.css");
+main {
+  --color-canvas-default: #f3ecdd;
+  --color-canvas-overlay: #f3ecdd;
+  --color-canvas-inset: #ece3cf;
+  --color-canvas-subtle: #e3d8c0;
+  --color-border-default: #d8ccb2;
+  --color-border-muted: #d8ccb2;
+  --color-fg-default: #3a3025;
+  --color-fg-muted: #665846;
+  --color-btn-bg: #e3d8c0;
+  --color-btn-hover-bg: #e0d4ba;
+  --color-segmented-control-bg: #e3d8c0;
+  --color-segmented-control-button-bg: #f3ecdd;
+}

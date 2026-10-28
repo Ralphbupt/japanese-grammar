@@ -79,6 +79,7 @@
       else localStorage.setItem('theme', next);
     } catch (e) {}
     sync();
+    document.dispatchEvent(new CustomEvent('jpnotes:theme', { detail: { theme: next } }));
     if (window.gaEvent) window.gaEvent('theme_toggle', { to: next });
   }
 

@@ -1,0 +1,18 @@
+/* Giscus comment theme for the paper light theme (served from jpnotes.dev,
+   loaded by giscus.app inside its iframe). GitHub's light theme with the
+   site's paper surfaces and text colours. */
+@import url("https://giscus.app/themes/light.css");
+main {
+  --color-canvas-default: #fbfaf7;
+  --color-canvas-overlay: #fbfaf7;
+  --color-canvas-inset: #f6f4ef;
+  --color-canvas-subtle: #efece5;
+  --color-border-default: #e3dfd5;
+  --color-border-muted: #e3dfd5;
+  --color-fg-default: #2b2a27;
+  --color-fg-muted: #605c55;
+  --color-btn-bg: #efece5;
+  --color-btn-hover-bg: #e8e3d7;
+  --color-segmented-control-bg: #efece5;
+  --color-segmented-control-button-bg: #fbfaf7;
+}
