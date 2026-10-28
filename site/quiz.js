@@ -122,21 +122,25 @@
   function daily(n) {
     // A passage brings all of its questions, so it counts as that many, and a
     // set has at most one — the rest stays single questions.
-    var pick = [], has = {}, size = 0, passage = null;
+    var pick = [], has = {}, size = 0, passage = null, perType = {};
+    // No question type takes more than 30% of the set — otherwise a weak type
+    // (due misses + the weak-type boost) fills the whole set and feeds itself.
+    var typeCap = Math.max(2, Math.ceil(n * 0.3));
     function cost(q) { return ALL.filter(function (x) { return x.passage === q.passage; }).length; }
     function add(q) {
       if (has[q.id]) return false;
+      if (!q.passage && (perType[q.type] || 0) >= typeCap) return false;
       if (q.passage) {
         if (passage !== q.passage && (passage || size + cost(q) > n)) return false;
         if (passage !== q.passage) { passage = q.passage; size += cost(q); }
       } else if (size >= n) return false;
       else size++;
-      has[q.id] = 1; pick.push(q); return true;
+      has[q.id] = 1; pick.push(q); perType[q.type] = (perType[q.type] || 0) + 1; return true;
     }
     due().sort(function (a, b) { return S.review[a.id].due - S.review[b.id].due; }).slice(0, Math.ceil(n * 0.4)).forEach(add);
     var weak = Object.keys(D.types).map(function (k) { return { k: k, a: accuracy(function (q) { return q.type === k; }) }; })
       .filter(function (x) { return x.a; }).sort(function (a, b) { return a.a.pct - b.a.pct; }).slice(0, 2);
-    var cap = size + Math.ceil(n * 0.4);
+    var cap = size + Math.ceil(n * 0.25);
     weak.forEach(function (w) {
       ALL.filter(function (q) { return q.type === w.k && !seen(q.id); }).forEach(function (q) { if (size < cap) add(q); });
     });
