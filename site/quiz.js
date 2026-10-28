@@ -43,6 +43,9 @@
   var D, Q = {}, ALL = [];
   var MOCK = app.getAttribute('data-mode') === 'mock';
   var CARDS = app.getAttribute('data-mode') === 'cards';
+  // The text under the app (what the level tests, FAQ, lesson links) is for the
+  // start screen; while a set, test or card session is on screen it's hidden.
+  function view(home) { document.body.classList.toggle('quiz-busy', !home); }
   function loadFail() { app.innerHTML = '<p class="q-muted">' + t('题目载入失败，刷新再试一次。', 'Couldn’t load the questions — try reloading.') + '</p>'; }
   app.innerHTML = '<p class="q-muted">' + t('载入题目…', 'Loading questions…') + '</p>';
   // Runs at the end of this file, once every mode's state is set up.
@@ -187,6 +190,7 @@
     return '<span class="q-acc' + (a.pct < 60 ? ' q-acc-low' : '') + '"><span class="q-bar"><span style="width:' + a.pct + '%"></span></span>' + a.pct + '%</span>';
   }
   function home() {
+    view(true);
     var size = S.prefs.size || 10;
     var d = due().length, r = inReview().length;
     var h = '';
@@ -233,6 +237,7 @@
     ask();
   }
   function ask() {
+    view(false);
     var s = S.session;
     if (s.i >= s.ids.length) return summary();
     var q = Q[s.ids[s.i]];
@@ -416,6 +421,7 @@
   }
 
   function summary() {
+    view(false);
     var s = S.session, res = s.res;
     var ok = res.filter(function (r) { return r.ok; }).length;
     var mins = Math.round(res.reduce(function (a, r) { return a + r.ms; }, 0) / 60000);
@@ -476,6 +482,7 @@
   function problemOf(sec, id) { for (var i = 0; i < sec.problems.length; i++) if (sec.problems[i].ids.indexOf(id) >= 0) return sec.problems[i]; }
 
   function mockList() {
+    view(true);
     stopTimer();
     var h = '';
     SETS.forEach(function (set) {
@@ -497,6 +504,7 @@
   function setById(id) { return SETS.filter(function (s) { return s.id === id; })[0]; }
 
   function mockIntro(set) {
+    view(false);
     loadTest(set).then(function (test) {
       var h = '<div class="q-top"><button class="q-link" data-act="m-list">‹ ' + t('返回', 'Back') + '</button></div><div class="q-card"><h2>' + t('第 ' + set.n + ' 套', 'Test ' + set.n) + '</h2><table class="q-table q-plan">';
       test.sections.forEach(function (sec, i) {
@@ -533,6 +541,7 @@
   }
 
   function mockSection() {
+    view(false);
     var c = cur2(), sec = curSec(), ids = secIds(sec);
     if (c.at >= ids.length) c.at = 0;
     var id = ids[c.at], q = Q[id], prob = problemOf(sec, id), a = c.answers[id] || {};
@@ -628,6 +637,7 @@
   }
 
   function mockResult(set, att, key) {
+    view(false);
     var go = function (test) {
       var h = '<div class="q-top"><button class="q-link" data-act="m-list">‹ ' + t('返回', 'Back') + '</button></div><div class="q-card q-result">';
       h += '<h2>' + t('第 ' + set.n + ' 套 · 结果', 'Test ' + set.n + ' · results') + (att.flags.length ? ' <small class="q-tag">' + att.flags.map(flagName).join('、') + '</small>' : '') + '</h2>';
@@ -682,6 +692,7 @@
   }
 
   function mockReview(which) {
+    view(false);
     var test = M.test, key = M.key, att = M.att, h = '<div class="q-top"><button class="q-link" data-act="m-back-result">‹ ' + t('回到结果', 'Back to results') + '</button></div>';
     var shownP = {};
     test.sections.forEach(function (sec, si) {
@@ -800,6 +811,7 @@
     return { all: all, due: due, fresh: fresh, learning: all.filter(function (u) { var x = S.cards[u.key]; return x && x.s === 'learn'; }) };
   }
   function cardsHome() {
+    view(true);
     var q = cardQueue(), k = cardKinds();
     var seen = q.all.filter(function (u) { return S.cards[u.key]; }).length;
     var mature = q.all.filter(function (u) { var x = S.cards[u.key]; return x && x.s === 'review' && x.ivl >= 21; }).length;
@@ -820,6 +832,7 @@
   // A fill-in hint: the translation without the "→ usage" note that would give it away.
   function hint(e) { return String((EN ? e.en : e.zh) || '').split(/\s*→/)[0]; }
   function nextCard() {
+    view(false);
     var q = cardQueue(), n = Date.now();
     // Due learning/review cards first; a new card when nothing is due; a learning
     // card due within a few minutes rather than ending the session early.

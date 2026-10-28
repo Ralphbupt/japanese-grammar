@@ -225,3 +225,5 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-report .q-btn.q-picked { border-color: var(--accent); color: var(--accent); }
 .q-report-more { margin-top: .6rem; display: grid; gap: .5rem; justify-items: start; }
 .q-report-more textarea { width: 100%; box-sizing: border-box; padding: .5rem .7rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); color: var(--text); font: inherit; resize: vertical; }
+
+body.quiz-busy .quiz-about { display: none; }
