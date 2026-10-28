@@ -2691,6 +2691,7 @@ ${APP_PREFS_JS}
 @media (prefers-color-scheme: dark) {
   :root:not(.theme-light) .overview-intro { background: #1f1f2e; color: #c8c8d4; }
   :root:not(.theme-light) .overview-card { background: #1f1f2e; }
+  :root:not(.theme-light) .overview-day { color: #ff7088; }
   :root:not(.theme-light) .overview-title { color: #f0f0f5; }
   :root:not(.theme-light) .grammar-pill { background: #25253a; color: #c8c8d4; }
 }
@@ -2698,6 +2699,7 @@ ${APP_PREFS_JS}
 /* Manual dark override (toggled via JS, mirrors media query rules) */
 html.theme-dark .overview-intro { background: #1f1f2e; color: #c8c8d4; }
 html.theme-dark .overview-card { background: #1f1f2e; }
+html.theme-dark .overview-day { color: #ff7088; }
 html.theme-dark .overview-title { color: #f0f0f5; }
 html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
 `;
@@ -3431,8 +3433,10 @@ Each \`/lessonNN/\` page contains:
 const CSS = minifyCss(`
 :root {
   --sidebar-w: 230px;
-  --bg: #fafaf8;
-  --sidebar-bg: #fff;
+  /* Light theme is "paper": a warm off-white instead of screen white, about
+     91% luminance; body text stays ~13:1. */
+  --bg: #f6f4ef;
+  --sidebar-bg: #efece5;
   --sidebar-text: #5a5a6a;
   --sidebar-heading: var(--text-strong);
   --sidebar-border: var(--border);
@@ -3440,15 +3444,15 @@ const CSS = minifyCss(`
   --sidebar-hover-text: var(--text-strong);
   --accent: #e94560;
   --accent-soft: rgba(233,69,96,.12);
-  --card-bg: #fff;
-  --border: #e2e2e2;
+  --card-bg: #fbfaf7;
+  --border: #e3dfd5;
   --ruby-color: #e94560;
   --selection-bg: #b8d4fb;
   --selection-fg: #1a1a2e;
-  --word-bg: #fffbe6;
+  --word-bg: #f9f3df;
   --word-border: #f5c842;
-  --code-bg: #f4f4f4;
-  --text: #2d2d2d;
+  --code-bg: #efece5;
+  --text: #2b2a27;
   --text-strong: #1a1a2e;
   --text-muted: #666;
   --text-subtle: #7a7a7a;
@@ -3746,8 +3750,8 @@ th, td {
   border: 1px solid var(--border);
   padding: .4rem .7rem; text-align: left;
 }
-th { background: #f0f0f0; font-weight: 600; font-size: .85rem; }
-tr:nth-child(even) { background: #fafafa; }
+th { background: #efece5; font-weight: 600; font-size: .85rem; }
+tr:nth-child(even) { background: #f9f8f4; }
 /* Long URLs / inline code break instead of widening the page on phones. */
 #content { overflow-wrap: break-word; }
 .table-scroll { overflow-x: auto; margin: .8rem 0; }
@@ -3777,7 +3781,7 @@ table.word-table .colloc-ja { font-size: 1.1em; color: var(--text); margin-right
 }
 .checklist-progress .progress-label { white-space: nowrap; }
 .checklist-progress .progress-bar {
-  flex: 1; height: 6px; background: #e8e8e8; border-radius: var(--radius-sm); overflow: hidden;
+  flex: 1; height: 6px; background: #e3dfd5; border-radius: var(--radius-sm); overflow: hidden;
 }
 .checklist-progress .progress-fill {
   height: 100%; background: var(--accent); border-radius: var(--radius-sm); transition: width .3s;
@@ -3791,7 +3795,7 @@ ul:has(input[type="checkbox"]) li {
   transition: background .2s;
 }
 ul:has(input[type="checkbox"]) li > label { display: block; cursor: pointer; }
-ul:has(input[type="checkbox"]) li:hover { background: #f5f5f5; }
+ul:has(input[type="checkbox"]) li:hover { background: #efece5; }
 ul:has(input[type="checkbox"]) li.checked {
   text-decoration: line-through; color: var(--text-subtle);
 }
@@ -3817,7 +3821,7 @@ pre code { background: none; padding: 0; }
 /* SEO lead paragraph (keyword-rich summary after h1) */
 .seo-lead {
   font-size: .95rem; color: var(--text-muted);
-  background: #fafaf2; border-left: 3px solid var(--word-border);
+  background: var(--card-bg); border-left: 3px solid var(--word-border);
   padding: .7rem 1rem; margin: 0 0 1.5rem;
   border-radius: 0 var(--radius) var(--radius) 0;
   line-height: 1.7;
@@ -3853,12 +3857,12 @@ html.theme-dark .speak-btn:hover { border-color: var(--accent); }
 
 /* Cross-links */
 .related-grammar {
-  background: #f0f8ff; border: 1px solid #d0e8f8; border-radius: var(--radius-lg);
+  background: #f0ede5; border: 1px solid var(--border); border-radius: var(--radius-lg);
   padding: .6rem 1rem; margin: 1.5rem 0; font-size: .85rem;
 }
 .related-label { font-weight: 600; color: var(--text-muted); margin-right: .5rem; }
 .cross-link {
-  display: inline-block; background: #e8f4fd; color: #c42d48;
+  display: inline-block; background: #e8e3d7; color: #c42d48;
   padding: .15rem .55rem; border-radius: var(--radius-sm); margin: .15rem .2rem;
   text-decoration: none; font-size: .82rem;
   line-height: 1.5;
@@ -3880,7 +3884,7 @@ h2 .romaji { font-weight: 400; font-size: .7em; color: var(--text-muted); letter
 
 /* Details */
 details {
-  background: #f7f7f7; border-radius: var(--radius);
+  background: #efece5; border-radius: var(--radius);
   padding: .5rem 1rem; margin: .8rem 0;
 }
 summary {
@@ -3973,7 +3977,7 @@ body.sidebar-collapsed #content.home {
 .level-card {
   display: block;
   padding: 1.4rem 1.6rem;
-  background: #fff; border: 1px solid var(--border);
+  background: var(--card-bg); border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   text-decoration: none; color: inherit;
   transition: all .2s;
