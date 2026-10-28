@@ -520,6 +520,11 @@ const JA_TITLES = {
   // guides (grammar/guides/)
   "wa-vs-ga": "は vs が",
   "jlpt-december-2026": "JLPT 12月 考前指南",
+  "jlpt-n5-key-grammar": "N5 高频考点",
+  "jlpt-n4-key-grammar": "N4 高频考点",
+  "jlpt-n3-key-grammar": "N3 高频考点",
+  "jlpt-n2-key-grammar": "N2 高频考点",
+  "jlpt-n1-key-grammar": "N1 高频考点",
   "ni-vs-de": "に vs で",
   "kara-vs-node": "から vs ので",
   "to-ba-tara-nara": "と・ば・たら・なら",
@@ -2017,6 +2022,19 @@ async function main() {
     }
   }
 
+  // Guide pages link a pattern to its lesson ([〜たとたん](/lesson48/)); point
+  // the link at that grammar point's heading when the lesson has one by that name.
+  for (const g of lessonPages.filter((l) => l.level === "guides")) {
+    g.html = g.html.replace(/<a href="\/(lesson\d+)\/">([^<]+)<\/a>/g, (m, id, text) => {
+      const names = text.replace(/^[〜～]/, "").replace(/[（(][^）)]*[）)]/g, "").split(/[／/・、]/).map((t) => t.replace(/^[〜～]/, "").trim()).filter(Boolean);
+      for (const n of names) {
+        const loc = (grammarIndex.get(n) || []).find((l) => l.id === id);
+        if (loc) return `<a href="/${id}/#${loc.slug}">${text}</a>`;
+      }
+      return m;
+    });
+  }
+
   // Insert cross-links: for each lesson, find references to grammar in other
   // lessons. Cap at 25 per lesson (up from 8) for denser internal linking —
   // Google's SEO guide treats internal links as a primary discovery signal.
@@ -2370,8 +2388,8 @@ ${SETTINGS_SCRIPT}`;
       <span class="lang-en">Each lesson covers <strong>conjugation / meaning / examples / comparisons / common mistakes</strong>, plus practice questions and a spaced-repetition checklist (day 0 → 1 → 4 → 7 → 14 → 30).</span>
     </p>
     <p>
-      <span class="lang-zh">从级别概览页（<a href="N5/">N5</a> · <a href="N4/">N4</a> · <a href="N3/">N3</a> · <a href="N2/">N2</a>）查看完整语法清单，或从侧栏直接进入任意一课。</span>
-      <span class="lang-en">Browse the per-level index pages (<a href="N5/">N5</a> · <a href="N4/">N4</a> · <a href="N3/">N3</a> · <a href="N2/">N2</a>) for the full grammar list, or jump to any lesson via the sidebar.</span>
+      <span class="lang-zh">从级别概览页（<a href="N5/">N5</a> · <a href="N4/">N4</a> · <a href="N3/">N3</a> · <a href="N2/">N2</a>${levelCounts.N1 ? ` · <a href="N1/">N1</a>` : ""}）查看完整语法清单，在 <a href="grammar/">日语语法大全</a> 一页看全部语法点，或从侧栏直接进入任意一课。</span>
+      <span class="lang-en">Browse the per-level index pages (<a href="N5/">N5</a> · <a href="N4/">N4</a> · <a href="N3/">N3</a> · <a href="N2/">N2</a>${levelCounts.N1 ? ` · <a href="N1/">N1</a>` : ""}), see every grammar point on one page in the <a href="grammar/">Japanese grammar list</a>, or jump to any lesson via the sidebar.</span>
     </p>
     <p>
       <span class="lang-zh">总分不清 <a href="wa-vs-ga/">は和が</a>、<a href="kara-vs-node/">から和ので</a>？<a href="guides/">专题页</a>把最容易混的语法放在一起对比；12 月考试前看 <a href="jlpt-december-2026/">JLPT 考前指南</a>。</span>
@@ -2507,7 +2525,7 @@ ${APP_PREFS_JS}
   // ─── Generate individual lesson pages ───
   // Pages published once per language (PAGE_LANGS); links to them on a
   // non-root copy point at that language's copy.
-  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "about", "practice", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-mock-test`, `${l}-cards`])]);
+  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "practice", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-mock-test`, `${l}-cards`])]);
   // "Practice this point" at the end of every grammar point that has practice
   // questions (questions/N*/lessonNN.json refs), linking to the practice page.
   const quizRefCount = {};
@@ -3039,6 +3057,116 @@ ${APP_PREFS_JS}
     levelPageIds.push(level);
   }
   console.log(`  Generated ${levelPageIds.length} level overview pages: ${levelPageIds.join(", ")}`);
+
+  // ─── All grammar on one page (/grammar/) ───
+  // Every numbered grammar point of every N5–N1 lesson in one table per level
+  // (pattern · meaning · lesson), for "日语语法大全 / Japanese grammar list"
+  // searches and as one page that links to every point. Built from the lesson
+  // headings, so it never drifts from the lessons.
+  {
+    const esc = (t) => (t || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+    const strip = (h) => h.replace(/<[^>]+>/g, "").replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&").replace(/\s+/g, " ").trim();
+    const rows = { N5: [], N4: [], N3: [], N2: [], N1: [] };
+    // "〜なり（一……就（出人意料地）……）" → ["〜なり", "一……就（出人意料地）……"]: the last balanced bracket group.
+    const gloss = (t) => {
+      if (!/[）)]$/.test(t)) return null;
+      for (let i = t.length - 1, d = 0; i >= 0; i--) {
+        if (/[）)]/.test(t[i])) d++;
+        else if (/[（(]/.test(t[i]) && --d === 0) return i > 0 ? [t.slice(0, i).trim(), t.slice(i + 1, -1)] : null;
+      }
+      return null;
+    };
+    for (const l of lessonPages) {
+      if (!rows[l.level] || !/^lesson\d+/.test(l.id) || /总复习|総復習|五十音/.test(l.jaTitle || "")) continue;
+      for (const m of l.html.matchAll(/<h2[^>]*id="([^"]*)"[^>]*>([\s\S]*?)<\/h2>/g)) {
+        const zh = (m[2].match(/<span class="lang-zh">([\s\S]*?)<\/span>/) || [])[1];
+        const i = m[2].indexOf('<span class="lang-en">'), enRaw = i < 0 ? "" : m[2].slice(i);
+        if (!zh || !/^\d+[.．]/.test(strip(zh))) continue;
+        // 「は — 主题助词」 and 「〜に過ぎない（只不过是……）」: pattern, then its gloss.
+        const z = strip(zh).replace(/^\d+[.．]\s*/, ""), pz = gloss(z) || z.match(/^(.+?) — (.+)$/)?.slice(1);
+        const pattern = (pz ? pz[0] : z).trim();
+        // Section headings that aren't a pattern (「初学者常见错误」, 「い形容词 完整活用表」) have Chinese in them.
+        if (hasSC(pattern) || !/[\u3040-\u30ff]/.test(pattern) || /用法|速览|汇总|対比|模板|区分|\bvs\b/.test(pattern)) continue;
+        const romaji = strip((enRaw.match(/<span class="romaji">([\s\S]*?)<\/span>/) || [])[1] || "");
+        const e = strip(enRaw.replace(/<span class="romaji">[\s\S]*?<\/span>/, "")).replace(/^\d+[.．]\s*/, ""), pe = gloss(e) || e.match(/^(.+?) — (.+)$/)?.slice(1);
+        rows[l.level].push({ id: l.id, slug: m[1], pattern, zh: pz ? pz[1] : "", en: pe ? pe[1] : "", romaji, lesson: l.id.replace("lesson", "") });
+      }
+    }
+    const levels = Object.keys(rows).filter((k) => rows[k].length);
+    const total = levels.reduce((a, k) => a + rows[k].length, 0);
+    const table = (k) => `<div class="table-scroll"><table class="gl-table"><thead><tr><th><span class="lang-zh">语法</span><span class="lang-en">Pattern</span></th><th><span class="lang-zh">意思</span><span class="lang-en">Meaning</span></th><th><span class="lang-zh">课</span><span class="lang-en">Lesson</span></th></tr></thead><tbody>${rows[k].map((r) =>
+      `<tr><td><a href="${SITE}${r.id}/#${encodeURIComponent(r.slug)}" lang="ja">${esc(r.pattern)}</a>${r.romaji ? `<span class="gl-romaji lang-en">${esc(r.romaji)}</span>` : ""}</td><td><span class="lang-zh">${esc(r.zh)}</span><span class="lang-en">${esc(r.en)}</span></td><td><a href="${SITE}${r.id}/">${r.lesson}</a></td></tr>`).join("")}</tbody></table></div>`;
+    const glMeta = {
+      en: { title: `Japanese Grammar List — All ${total} JLPT N5 to N1 Grammar Points`, desc: `Every Japanese grammar point from JLPT N5 to N1 on one page: ${total} patterns with romaji and meaning, grouped by level, each linking to a lesson with conjugation rules, examples with audio and comparisons.`, h1: "Japanese Grammar List: JLPT N5 to N1", crumb: "Grammar list", home: "Japanese Grammar Notes",
+        lead: `All ${total} grammar points taught on this site, from N5 to N1, one row each. Click a pattern for its lesson: how it attaches, what it means, examples with audio and how it differs from look-alikes. For one level as a printable checklist, use the level's checklist page.` },
+      zh: { title: `日语语法大全 — JLPT N5 到 N1 全部 ${total} 个语法点总结`, desc: `日语语法大全：JLPT N5、N4、N3、N2、N1 全部 ${total} 个语法点一页看完，按级别分组，每个语法点附意思并链接到详细讲解（接续、例句带发音、易混辨析）。`, h1: "日语语法大全：JLPT N5 到 N1", crumb: "语法大全", home: "日语语法笔记",
+        lead: `本站 N5 到 N1 的全部 ${total} 个语法点，一行一个。点语法名进入对应课文：接续、含义、带发音的例句和易混辨析。想按级别打勾复习，用各级的语法清单。` },
+    };
+    const renderGl = (lang, m, lv) => `<!DOCTYPE html>
+<html lang="${lang.htmlLang}"${lv.htmlAttrs}>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>${LANG_REDIRECT_JS}</script>
+<title>${esc(m.title)}</title>
+<meta name="description" content="${esc(m.desc)}">
+<link rel="canonical" href="${lv.url}">${lv.hreflang}
+<meta property="og:type" content="website">
+<meta property="og:title" content="${esc(m.title)}">
+<meta property="og:description" content="${esc(m.desc)}">
+<meta property="og:url" content="${lv.url}">
+<meta property="og:locale" content="${lang.ogLocale}">
+<meta property="og:image" content="${SITE}og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">${JSON.stringify([
+  { "@context": "https://schema.org", "@type": "CollectionPage", name: m.h1, description: m.desc, url: lv.url, inLanguage: lang.htmlLang,
+    isPartOf: { "@type": "Course", name: "Japanese Grammar Notes – N5 to N1", url: SITE } },
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+    { "@type": "ListItem", position: 1, name: m.home, item: SITE },
+    { "@type": "ListItem", position: 2, name: m.crumb, item: lv.url }] },
+]).replace(/</g, "\\u003c")}</script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+${CSP_META}
+${THEME_INIT_SCRIPT}
+${GTAG_DEFERRED}
+${SPECULATION_RULES}
+${SW_REGISTER}
+<style>
+${CSS}
+${OVERVIEW_CSS}
+.gl-jump { display: flex; flex-wrap: wrap; gap: .5rem 1rem; margin: 0 0 1.5rem; }
+.gl-table { width: 100%; border-collapse: collapse; font-size: .92rem; margin: .5rem 0 2rem; }
+.gl-table th, .gl-table td { border: 1px solid var(--border); padding: .35rem .6rem; text-align: left; vertical-align: top; }
+.gl-table th { background: var(--word-bg); }
+.gl-table td:first-child { width: 45%; }
+.gl-table td:last-child { text-align: center; width: 3.5rem; }
+.gl-table .gl-romaji { display: block; font-size: .78rem; color: var(--text-muted); }
+</style>
+</head>
+<body class="sidebar-collapsed">
+${sidebarMarkupHtml}
+<main id="content">
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><span><span class="lang-zh">语法大全</span><span class="lang-en">Grammar list</span></span>
+  </nav>
+  <h1><span class="lang-zh">${zhOr(glMeta, "h1")}</span><span class="lang-en">${glMeta.en.h1}</span></h1>
+  <p class="overview-intro"><span class="lang-zh">${glMeta.zh.lead}</span><span class="lang-en">${glMeta.en.lead}</span></p>
+  <p class="gl-jump">${levels.map((k) => `<a href="#${k}">${k}（${rows[k].length}）</a>`).join("")}</p>
+  ${levels.map((k) => `<h2 id="${k}">JLPT ${k} <span class="lang-zh">语法（${rows[k].length} 个）</span><span class="lang-en">grammar (${rows[k].length})</span></h2>
+  <p><a href="${SITE}${k}/"><span class="lang-zh">${k} 总览</span><span class="lang-en">${k} overview</span></a> · <a href="${SITE}${k}_grammar_list/"><span class="lang-zh">${k} 语法清单（可打勾）</span><span class="lang-en">${k} checklist</span></a>${quizPages(k).length ? ` · <a href="${SITE_PATH}${k.toLowerCase()}-practice/"><span class="lang-zh">${k} 练习题</span><span class="lang-en">${k} practice</span></a>` : ""}${fs.existsSync(path.join(__dirname, "grammar", "guides", `jlpt-${k.toLowerCase()}-key-grammar.md`)) ? ` · <a href="${SITE}jlpt-${k.toLowerCase()}-key-grammar/"><span class="lang-zh">${k} 高频考点</span><span class="lang-en">${k} key grammar</span></a>` : ""}</p>
+  ${table(k)}`).join("\n  ")}
+  ${siteFooterHtml}
+</main>
+<script>
+${APP_PREFS_JS}
+</script>
+</body>
+</html>`;
+    const zhOr = (o, k) => o.zh[k];
+    for (const lang of PAGE_LANGS) writeLangPage("grammar", lang, localizePage(renderGl(lang, glMeta[lang.code], langVariant("grammar", lang)), lang, localizedPageIds));
+    levelPageIds.push("grammar");
+    console.log(`  Generated /grammar/ (${total} grammar points)`);
+  }
 
   // ─── Guides hub (/guides/) ───
   // Cards for every page in grammar/guides/, exam guides first, then the
