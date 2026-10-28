@@ -3464,7 +3464,14 @@ ${SPECULATION_RULES}
 ${SW_REGISTER}
 <style>
 ${CSS}
-#content { margin: 0 auto !important; max-width: 760px; padding: 2rem 1.5rem 4rem; }
+/* Same column as the lessons, so the site doesn't narrow when you start practising. */
+#content { --col: 1000px; margin: 0 auto !important; max-width: var(--col); padding: 2rem 1.5rem 4rem; }
+@media (min-width: 1500px) { #content { --col: 1120px; } }
+@media (min-width: 769px) {
+  body:not(.sidebar-collapsed) #content {
+    margin-left: calc(var(--sidebar-w) + max(0px, (100vw - var(--sidebar-w) - var(--col)) / 2)) !important;
+  }
+}
 .breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 1rem; }
 .breadcrumb a { color: var(--text-muted); text-decoration: none; }
 .breadcrumb .sep { margin: 0 .4em; }
@@ -3665,17 +3672,28 @@ ${lessonList}</section>`;
 
   // Hub for everything you can do rather than read: /practice/, one card per
   // level (practice, mock tests, flashcards), levels without questions yet greyed out.
-  const hubCard = (level, en) => {
+  // One row per level (practice · mock test · flashcards); what each mode is,
+  // said once above the table. "已做" comes from this browser's progress.
+  const hubRow = (level, en) => {
     const b = quizBundles[level], lv = level.toLowerCase(), L = (zh, e) => (en ? e : zh);
-    if (!b) return `<div class="hub-level hub-soon"><h2>${level}</h2><p>${L("准备中", "Coming soon")}</p></div>`;
-    const types = Object.keys(b.practice.types).length, n = b.practice.questions.length;
-    return `<div class="hub-level"><h2>${level}</h2>
-      <p class="hub-meta">${L(`${n} 道练习题 · ${types} 种题型（除听力外全部）`, `${n} practice questions · ${types} question types (all but listening)`)}</p>
-      <a class="hub-go" href="${SITE_PATH}${lv}-practice/"><b>✍ ${L("练习", "Practice")}</b><span>${L("今日练习、按题型练、错题本；答完马上看解析", "Daily sets, by question type, review list; explanations after each answer")}</span></a>
-      ${b.mocks.length ? `<a class="hub-go" href="${SITE_PATH}${lv}-mock-test/"><b>⏱ ${L("模拟题", "Mock test")}</b><span>${L(`${b.mocks.length} 套，按真考结构计时，交卷后估分`, `${b.mocks.length} timed test${b.mocks.length > 1 ? "s" : ""} in the real format, with an estimated score`)}</span></a>` : ""}
-      <a class="hub-go" href="${SITE_PATH}${lv}-cards/"><b>🗂 ${L("语法卡片", "Grammar flashcards")}</b><span>${L("每个语法点一张卡，间隔复习；认卡 / 填空卡", "One card per grammar point, spaced repetition; recognition / fill-in")}</span></a>
-    </div>`;
+    if (!b) return `<tr class="hub-soon"><th scope="row">${level}</th><td colspan="3">${L("准备中", "Coming soon")}</td></tr>`;
+    const n = b.practice.questions.length, types = Object.keys(b.practice.types).length;
+    const minutes = QUIZ_MOCK[level] ? QUIZ_MOCK[level].sections.reduce((a, x) => a + x.minutes, 0) : 0;
+    return `<tr><th scope="row">${level}</th>
+      <td><a class="hub-go" href="${SITE_PATH}${lv}-practice/"><b>${L("练习题", "Practice")}</b><span>${L(`${n} 题 · ${types} 种题型`, `${n} questions · ${types} types`)}<span class="hub-done" data-lv="${lv}" data-t="${L(" · 已做 N", " · N done")}" hidden></span></span></a></td>
+      <td>${b.mocks.length ? `<a class="hub-go" href="${SITE_PATH}${lv}-mock-test/"><b>${L("模拟题", "Mock test")}</b><span>${L(`${b.mocks.length} 套 · ${minutes} 分钟`, `${b.mocks.length} test${b.mocks.length > 1 ? "s" : ""} · ${minutes} min`)}</span></a>` : ""}</td>
+      <td><a class="hub-go" href="${SITE_PATH}${lv}-cards/"><b>${L("语法卡片", "Flashcards")}</b><span>${L("每个语法点一张", "one per grammar point")}</span></a></td></tr>`;
   };
+  const hubIntro = (en) => {
+    const L = (zh, e) => (en ? e : zh);
+    return `<ul class="hub-modes">
+      <li><b>✍ ${L("练习题", "Practice")}</b>${L("除听力外的全部题型。今日练习、按题型练、错题本；每题答完马上看解析。", "Every item type but listening. Daily sets, by type, a review list; explanations after each answer.")}</li>
+      <li><b>⏱ ${L("模拟题", "Mock test")}</b>${L("按真考的结构和时间计时，交卷后估分、对照合格线。", "The real test's structure and timing; an estimated score against the pass marks.")}</li>
+      <li><b>🗂 ${L("语法卡片", "Flashcards")}</b>${L("每个语法点一张卡，间隔复习，认卡和填空卡两种。", "A card per grammar point with spaced repetition, recognition or fill-in.")}</li>
+    </ul>`;
+  };
+  // Answered-question counts per level, from this browser's localStorage.
+  const HUB_PROGRESS_JS = `(function(){try{var a=(JSON.parse(localStorage.getItem('jp_quiz_v1'))||{}).answers||{},c={};Object.keys(a).forEach(function(id){var l=id.slice(0,2);c[l]=(c[l]||0)+1;});document.querySelectorAll('.hub-done').forEach(function(el){var n=c[el.getAttribute('data-lv')];if(n){el.textContent=el.getAttribute('data-t').replace('N',n);el.hidden=false;}});}catch(e){}})();`;
   const hubMeta = {
     en: {
       title: "JLPT Practice Tests Online — N5 to N1 Questions, Mock Tests & Flashcards",
@@ -3692,7 +3710,8 @@ ${lessonList}</section>`;
   };
   for (const lang of PAGE_LANGS) {
     const en = lang.code === "en";
-    const m = { ...hubMeta[lang.code], body: `<div class="hub">${["N5", "N4", "N3", "N2", "N1"].map((l) => hubCard(l, en)).join("")}</div>
+    const m = { ...hubMeta[lang.code], body: `${hubIntro(en)}<div class="table-scroll"><table class="hub-table"><tbody>${["N5", "N4", "N3", "N2", "N1"].map((l) => hubRow(l, en)).join("")}</tbody></table></div>
+      <script>${HUB_PROGRESS_JS}</script>
       <p class="hub-listen">${en
         ? `🎧 <b>Listening questions are planned, not built yet.</b> If you want them, <a href="#feedback" class="fb-open">say so</a> — demand decides what comes first. Meanwhile the <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News podcast</a> has slow news with transcripts.`
         : `🎧 <b>听力题在规划中，还没做。</b>想要的话<a href="#feedback" class="fb-open">告诉我们</a>，想要的人多就先做。现在可以先用 <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News 播客</a>练听力（慢速新闻 + 原文）。`}</p>` };
