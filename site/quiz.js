@@ -577,7 +577,7 @@
       });
       if (att.mode === 'full') {
         var L = test.listening, need = Math.max(L.min, test.pass - sum);
-        h += '<p class="q-listen">' + t('聴解未测。', 'Listening isn’t included. ') + (need > L.max ? t('按这个分数，聴解满分也达不到总分线 ' + test.pass + '。', 'At this score even full marks in listening wouldn’t reach the ' + test.pass + ' pass mark.') :
+        h += '<p class="q-listen">' + t('聴解未测（听力题还在规划中）。', 'Listening isn’t included (listening questions are planned). ') + (need > L.max ? t('按这个分数，聴解满分也达不到总分线 ' + test.pass + '。', 'At this score even full marks in listening wouldn’t reach the ' + test.pass + ' pass mark.') :
           t('要合格，聴解需要 ≥ ' + need + ' / ' + L.max + ' 分（总分线 ' + test.pass + '，聴解单科线 ' + L.min + '）。', 'To pass you’d need ≥ ' + need + ' / ' + L.max + ' in listening (pass mark ' + test.pass + ', listening minimum ' + L.min + ').')) + '</p>';
       }
       h += '<p class="q-muted q-small">' + t('估算：按答对比例换算。真考是等化计分，实际分数会有出入。', 'Estimate: share of questions right, scaled. The real test is equated, so your actual score will differ.') + '</p>';

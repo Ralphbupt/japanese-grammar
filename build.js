@@ -2094,9 +2094,11 @@ async function main() {
       <a href="${SITE_PATH}about/"><span class="lang-zh">关于</span><span class="lang-en">About</span></a>
       <a href="https://github.com/Ralphbupt" target="_blank">GitHub</a>
       <a href="https://liko.page/" target="_blank" rel="author">liko.page</a>
+      <a href="#feedback" class="fb-open"><span class="lang-zh">💬 反馈</span><span class="lang-en">💬 Feedback</span></a>
     </nav>
     <p>© ${new Date().getFullYear()} jpnotes.dev</p>
-  </footer>`;
+  </footer>
+  <script src="${SITE_PATH}feedback.js?v=${FEEDBACK_JS_HASH}" defer></script>`;
   const sidebarMarkupHtml = `<nav id="sidebar" class="collapsed">
   <div class="nav-tools">
     <button id="menu-toggle" type="button" class="nav-tool-btn" aria-label="显示/收起侧栏 / Toggle sidebar" title="显示/收起侧栏 / Toggle sidebar">${ICON_SIDEBAR}</button>
@@ -2632,6 +2634,7 @@ ${sidebarMarkupHtml}
     ${prevHtml}
     ${nextHtml}
   </nav>
+  <div id="quiz-feedback" data-fb="lesson"></div>
   <section class="comments-section" aria-label="评论">
     <h2 class="comments-heading"><span class="lang-zh">评论</span><span class="lang-en">Comments</span></h2>
     ${GISCUS_SCRIPT}
@@ -3242,7 +3245,6 @@ ${sidebarMarkupHtml}
 ${APP_PREFS_JS}
 </script>
 ${appAttrs === null ? "" : `<script src="${SITE_PATH}quiz.js?v=${QUIZ_JS_HASH}" defer></script>`}
-<script src="${SITE_PATH}feedback.js?v=${FEEDBACK_JS_HASH}" defer></script>
 </body>
 </html>`;
   for (const [level, { practice, mocks }] of Object.entries(quizBundles)) {
@@ -3353,7 +3355,10 @@ ${appAttrs === null ? "" : `<script src="${SITE_PATH}quiz.js?v=${QUIZ_JS_HASH}" 
   };
   for (const lang of PAGE_LANGS) {
     const en = lang.code === "en";
-    const m = { ...hubMeta[lang.code], body: `<div class="hub">${["N5", "N4", "N3", "N2"].map((l) => hubCard(l, en)).join("")}</div>` };
+    const m = { ...hubMeta[lang.code], body: `<div class="hub">${["N5", "N4", "N3", "N2"].map((l) => hubCard(l, en)).join("")}</div>
+      <p class="hub-listen">${en
+        ? `🎧 <b>Listening questions are planned, not built yet.</b> If you want them, <a href="#feedback" class="fb-open">say so</a> — demand decides what comes first. Meanwhile the <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News podcast</a> has slow news with transcripts.`
+        : `🎧 <b>听力题在规划中，还没做。</b>想要的话<a href="#feedback" class="fb-open">告诉我们</a>，想要的人多就先做。现在可以先用 <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News 播客</a>练听力（慢速新闻 + 原文）。`}</p>` };
     writeLangPage("practice", lang, localizePage(renderQuiz(lang, m, langVariant("practice", lang), "", null), lang, localizedPageIds));
   }
   quizPageIds.push("practice");

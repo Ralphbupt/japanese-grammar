@@ -215,15 +215,12 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .hub-go b { color: var(--accent); }
 .hub-go span { color: var(--text-muted); font-size: .9em; }
 .hub-soon { opacity: .55; }
+.hub-listen { margin: 1.5rem 0 0; padding: .8rem 1rem; border: 1px dashed var(--border); border-radius: var(--radius); background: var(--card-bg); color: var(--text-muted); font-size: .95em; }
+.hub-listen b { color: var(--text); }
 .hub-soon p { margin: .2rem 0 0; color: var(--text-muted); }
 @media (min-width: 700px) { .hub { grid-template-columns: 1fr 1fr; } }
 
 /* Feedback */
 .q-report .q-btn.q-picked { border-color: var(--accent); color: var(--accent); }
 .q-report-more { margin-top: .6rem; display: grid; gap: .5rem; justify-items: start; }
-.q-report-more textarea, .fb textarea { width: 100%; box-sizing: border-box; padding: .5rem .7rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); color: var(--text); font: inherit; resize: vertical; }
-#quiz-feedback { margin: 2.5rem 0 1rem; }
-.fb summary { cursor: pointer; color: var(--text-muted); }
-.fb-note { color: var(--text-muted); font-size: .9em; }
-.fb-row { display: flex; align-items: center; gap: .8rem; margin-top: .5rem; }
-.fb-msg { color: var(--text-muted); font-size: .9em; }
+.q-report-more textarea { width: 100%; box-sizing: border-box; padding: .5rem .7rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); color: var(--text); font: inherit; resize: vertical; }
