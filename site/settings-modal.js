@@ -30,12 +30,20 @@
 
   // The modal and the desktop top bar both render these three settings;
   // every change goes through here and repaints both.
+  // Lucide line icons, the same set as the sidebar toolbar (assets/icons).
+  var SVG = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">';
+  var THEME_ICONS = {
+    dark: SVG + '<path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>',
+    light: SVG + '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>',
+    auto: SVG + '<circle cx="12" cy="12" r="10"/><path d="M12 18a6 6 0 0 0 0-12v12z"/></svg>'
+  };
+
   function sync() {
     var c = currentTheme();
     var hide = document.body.classList.contains('hide-ruby');
     var en = isEnUi();
     document.querySelectorAll('.js-theme-btn').forEach(function (b) {
-      b.textContent = c === 'dark' ? '🌙' : c === 'light' ? '☀️' : '🌓';
+      b.innerHTML = THEME_ICONS[c];
       b.title = c === 'dark' ? '当前: 深色 (点击切浅色)' : c === 'light' ? '当前: 浅色 (点击切自动)' : '当前: 跟随系统 (点击切深色)';
     });
     document.querySelectorAll('.js-ruby-toggle').forEach(function (i) { i.checked = !hide; });
@@ -101,9 +109,9 @@
     var bar = document.createElement('div');
     bar.id = 'top-controls';
     bar.innerHTML =
-      (hasSearch ? '<button type="button" class="tc-pill tc-icon" data-proxy="search-btn" aria-label="搜索 / Search" title="搜索 / Search ( / )">🔍</button>' : '') +
-      (hasAi ? '<button type="button" class="tc-pill tc-icon" id="tc-ai" data-proxy="ai-btn" aria-label="问 AI / Ask AI" title="问 AI / Ask AI">🤖</button>' : '') +
-      '<button type="button" class="tc-pill tc-icon js-theme-btn" aria-label="切换主题 / Toggle theme">🌓</button>' +
+      (hasSearch ? '<button type="button" class="tc-pill tc-icon" data-proxy="search-btn" aria-label="搜索 / Search" title="搜索 / Search ( / )">' + hasSearch.innerHTML + '</button>' : '') +
+      (hasAi ? '<button type="button" class="tc-pill tc-icon" id="tc-ai" data-proxy="ai-btn" aria-label="问 AI / Ask AI" title="问 AI / Ask AI">' + document.getElementById('ai-btn').innerHTML + '</button>' : '') +
+      '<button type="button" class="tc-pill tc-icon js-theme-btn" aria-label="切换主题 / Toggle theme"></button>' +
       (hasRuby ? '<label class="tc-pill"><input type="checkbox" class="js-ruby-toggle" checked> <span class="lang-zh">显示读音</span><span class="lang-en">Furigana</span></label>' : '') +
       '<button type="button" class="tc-pill tc-lang js-lang-btn">EN</button>';
     document.body.appendChild(bar);
@@ -131,7 +139,7 @@
           '<li class="settings-row">' +
             '<div><div class="settings-label"><span class="lang-zh">主题</span><span class="lang-en">Theme</span></div>' +
             '<div class="settings-desc"><span class="lang-zh">自动 · 深色 · 浅色</span><span class="lang-en">Auto · dark · light</span></div></div>' +
-            '<div class="settings-control"><button type="button" class="js-theme-btn" aria-label="切换主题 / Toggle theme">🌓</button></div>' +
+            '<div class="settings-control"><button type="button" class="js-theme-btn" aria-label="切换主题 / Toggle theme"></button></div>' +
           '</li>' +
           '<li class="settings-row">' +
             '<div><div class="settings-label"><span class="lang-zh">汉字注音</span><span class="lang-en">Furigana</span></div>' +

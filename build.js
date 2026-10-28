@@ -281,9 +281,10 @@ const TTS_JS = `document.addEventListener('DOMContentLoaded', function(){
     var last = el.lastElementChild;
     var box = last && last.tagName === 'P' ? last : el;
     // Glue the 🔊 to the sentence's last character, so a full line wraps the
-    // two together instead of leaving the button alone on the next line.
+    // two together instead of leaving the button alone on the next line. The
+    // translation line (.ex-tr) comes after the button, so skip its text.
     var tw = document.createTreeWalker(box, NodeFilter.SHOW_TEXT, { acceptNode: function(n) {
-      return /\\S/.test(n.data) && !n.parentNode.closest('rt, rp') ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+      return /\\S/.test(n.data) && !n.parentNode.closest('rt, rp, .ex-tr') ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
     } });
     var tail = null, n;
     while ((n = tw.nextNode())) tail = n;
@@ -1654,6 +1655,9 @@ async function main() {
           return `<tbody>${newBody}</tbody>`;
         });
       });
+      // Wide tables scroll sideways inside their own box on phones instead of
+      // widening the whole page.
+      html = html.replace(/<table\b[\s\S]*?<\/table>/g, (t) => `<div class="table-scroll">${t}</div>`);
 
       // Enable checklist checkboxes (remove disabled, add data attributes)
       let checkIdx = 0;
@@ -1795,16 +1799,22 @@ async function main() {
           audioSeen.add(audioId);
           audioRequests.push({ id: audioId, text: plain });
         }
+        // The trailing (translation) goes on its own line under the sentence;
+        // the brackets stay in the text (copy, AI quote cleaning) but are hidden.
+        content = content.replace(/\s*([（(])([^（()）]+)([)）])\s*$/, (m, open, inner, close) =>
+          `<span class="ex-tr"><span class="ex-p">${open}</span>${inner}<span class="ex-p">${close}</span></span>`);
         // Only show 🔊 once the mp3 exists (build-audio.py fills the gaps).
-        if (!AUDIO_FILES.has(audioId)) return match;
-        return `<li data-ja${attrs} data-audio="${audioId}">${content}</li>`;
+        if (!AUDIO_FILES.has(audioId)) return `<li data-ja data-ex${attrs}>${content}</li>`;
+        return `<li data-ja data-ex${attrs} data-audio="${audioId}">${content}</li>`;
       });
 
       const lessonMatch = file.id.match(/^lesson(\d+)/);
       const lessonNum = lessonMatch ? lessonMatch[1] : "";
       const jaTitle = JA_TITLES[file.id];
+      // Lessons: the number in its own column, so titles align and wrap
+      // under themselves instead of under "Lesson".
       const sidebarTitle = jaTitle
-        ? (lessonNum ? `Lesson ${lessonNum} – ${jaTitle}` : jaTitle)
+        ? (lessonNum ? `<span class="nav-num">${lessonNum}</span><span class="nav-title">${jaTitle}</span>` : jaTitle)
         : shortTitle;
       groupItems.push(
         `<a class="nav-item" href="${SITE_PATH}${file.id}/" data-target="${file.id}">${sidebarTitle}</a>`
@@ -2037,6 +2047,17 @@ async function main() {
   // Used on home, lesson, and level pages so the directory is reachable
   // from anywhere. Sidebar links are root-relative so they work from any
   // subpath (e.g. clicking from /day01/ correctly navigates to /day05/).
+  // Page footer, last thing inside <main> on every page (so localizePage()
+  // strips the other language and points 关于 at /zh/about/ on zh copies).
+  const siteFooterHtml = `<footer class="site-footer">
+    <nav aria-label="footer">
+      <a href="https://podcast.jpnotes.dev/" target="_blank">Podcast</a>
+      <a href="${SITE_PATH}about/"><span class="lang-zh">关于</span><span class="lang-en">About</span></a>
+      <a href="https://github.com/Ralphbupt" target="_blank">GitHub</a>
+      <a href="https://liko.page/" target="_blank" rel="author">liko.page</a>
+    </nav>
+    <p>© ${new Date().getFullYear()} jpnotes.dev</p>
+  </footer>`;
   const sidebarMarkupHtml = `<nav id="sidebar" class="collapsed">
   <div class="nav-tools">
     <button id="menu-toggle" type="button" class="nav-tool-btn" aria-label="显示/收起侧栏 / Toggle sidebar" title="显示/收起侧栏 / Toggle sidebar">${ICON_SIDEBAR}</button>
@@ -2047,12 +2068,6 @@ async function main() {
   <div class="nav-scroll">
   <div class="nav-header"><a href="${SITE_PATH}" style="color:inherit;text-decoration:none;"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a></div>
   ${sidebarHtml.join("\n  ")}
-  </div>
-  <div class="nav-footer">
-    <a href="https://podcast.jpnotes.dev/" target="_blank">Podcast</a>
-    <a href="${SITE_PATH}about/"><span class="lang-zh">关于</span><span class="lang-en">About</span></a>
-    <a href="https://github.com/Ralphbupt" target="_blank">GitHub</a>
-    <a href="https://liko.page/" target="_blank" rel="author">liko.page</a>
   </div>
 </nav>
 <script>
@@ -2135,6 +2150,7 @@ ${SETTINGS_SCRIPT}`;
   // Replace with a landing-page layout: hero + level cards + how-to.
   // Sidebar links already point to standalone /dayXX/ pages.
   const levelCounts = { N5: 0, N4: 0, N3: 0, N2: 0 };
+  const levelRange = { N5: {}, N4: {}, N3: {}, N2: {} };
   let totalPoints = 0;
   let totalLessons = 0;
   for (const l of lessonPages) {
@@ -2142,26 +2158,31 @@ ${SETTINGS_SCRIPT}`;
     if (/^lesson\d+/.test(l.id) && levelCounts.hasOwnProperty(l.level)) {
       levelCounts[l.level]++;
       totalLessons++;
+      const n = l.id.match(/^lesson(\d+)/)[1];
+      const r = levelRange[l.level];
+      if (!r.first || n < r.first) r.first = n;
+      if (!r.last || n > r.last) r.last = n;
     }
   }
+  const rangeLabel = (lv, lang) => lang === "zh"
+    ? `第 ${levelRange[lv].first}–${levelRange[lv].last} 课`
+    : `Lessons ${levelRange[lv].first}–${levelRange[lv].last}`;
   const homeMainHtml = `<header class="home-hero">
     <h1><span class="lang-zh">日语语法笔记 — N5 到 N2，8 周完整体系</span><span class="lang-en">Japanese Grammar Notes — JLPT N5 to N2 in 8 Weeks</span></h1>
     <p class="home-intro">
       <span class="lang-zh">免费、双语（中文 + 日语）的日语语法笔记，从 N5 入门到 N2 进阶共 <strong>${totalLessons} 课、${totalPoints}+ 语法点</strong>，每课配接续规则、例句、辨析、练习题与间隔复习勾选清单。</span>
       <span class="lang-en">Free, bilingual (Chinese + Japanese) grammar notes covering JLPT N5 → N2 in <strong>${totalLessons} lessons, ${totalPoints}+ grammar points</strong>. Each lesson has conjugation rules, example sentences, side-by-side comparisons of confusable patterns, practice questions, and a spaced-repetition checklist.</span>
     </p>
-    <div class="home-stats">
-      <div class="home-stat"><strong>${totalLessons}</strong><span class="lang-zh">课</span><span class="lang-en">lessons</span></div>
-      <div class="home-stat"><strong>${totalPoints}+</strong><span class="lang-zh">语法点</span><span class="lang-en">grammar points</span></div>
-      <div class="home-stat"><strong>4</strong><span class="lang-zh">JLPT 级别</span><span class="lang-en">JLPT levels</span></div>
-      <div class="home-stat"><strong><span class="lang-zh">免费</span><span class="lang-en">Free</span></strong><span class="lang-zh">双语</span><span class="lang-en">bilingual</span></div>
+    <div class="home-actions">
+      <a class="btn-primary" href="lesson01/"><span class="lang-zh">从第 1 课开始</span><span class="lang-en">Start with lesson 1</span></a>
+      <a class="btn-secondary" href="anki/"><span class="lang-zh">下载 Anki 卡组</span><span class="lang-en">Get the Anki decks</span></a>
     </div>
   </header>
   <section class="home-levels">
     <h2><span class="lang-zh">按级别学习</span><span class="lang-en">Browse by JLPT level</span></h2>
     <div class="level-grid">
       <a class="level-card" href="N5/">
-        <span class="level-tag">N5</span>
+        <span class="level-head"><span class="level-tag">N5</span><span class="level-range"><span class="lang-zh">${rangeLabel("N5", "zh")}</span><span class="lang-en">${rangeLabel("N5", "en")}</span></span></span>
         <h3><span class="lang-zh">入门基础</span><span class="lang-en">Beginner foundations</span></h3>
         <p>
           <span class="lang-zh">判断句、助词、动词分类、て形、ない形、た形、形容词、条件、可能/受身。共 ${levelCounts.N5} 课。</span>
@@ -2169,7 +2190,7 @@ ${SETTINGS_SCRIPT}`;
         </p>
       </a>
       <a class="level-card" href="N4/">
-        <span class="level-tag">N4</span>
+        <span class="level-head"><span class="level-tag">N4</span><span class="level-range"><span class="lang-zh">${rangeLabel("N4", "zh")}</span><span class="lang-en">${rangeLabel("N4", "en")}</span></span></span>
         <h3><span class="lang-zh">日常进阶</span><span class="lang-en">Everyday intermediate</span></h3>
         <p>
           <span class="lang-zh">使役、受身、授受表现、ように系列、ことにする/なる、わけだ/ものだ 等核心日常语法。共 ${levelCounts.N4} 课。</span>
@@ -2177,7 +2198,7 @@ ${SETTINGS_SCRIPT}`;
         </p>
       </a>
       <a class="level-card" href="N3/">
-        <span class="level-tag">N3</span>
+        <span class="level-head"><span class="level-tag">N3</span><span class="level-range"><span class="lang-zh">${rangeLabel("N3", "zh")}</span><span class="lang-en">${rangeLabel("N3", "en")}</span></span></span>
         <h3><span class="lang-zh">书面分水岭</span><span class="lang-en">Written-Japanese watershed</span></h3>
         <p>
           <span class="lang-zh">书面助词、原因理由、逆接让步、程度范围、状态样态、否定与复合表达。共 ${levelCounts.N3} 课。</span>
@@ -2185,7 +2206,7 @@ ${SETTINGS_SCRIPT}`;
         </p>
       </a>
       <a class="level-card" href="N2/">
-        <span class="level-tag">N2</span>
+        <span class="level-head"><span class="level-tag">N2</span><span class="level-range"><span class="lang-zh">${rangeLabel("N2", "zh")}</span><span class="lang-en">${rangeLabel("N2", "en")}</span></span></span>
         <h3><span class="lang-zh">商务・学术</span><span class="lang-en">Business · academic</span></h3>
         <p>
           <span class="lang-zh">高阶逆接、程度限定、判断主张、对比关系、感情表达、书面专用语法。共 ${levelCounts.N2} 课。</span>
@@ -2298,6 +2319,7 @@ ${CSS}
 ${sidebarMarkupHtml}
 <main id="content" class="home">
   ${homeMainHtml}
+  ${siteFooterHtml}
 </main>
 <script>
 ${APP_PREFS_JS}
@@ -2479,6 +2501,8 @@ ${CSS}
    keep the sidebar — it works on hover via pure CSS and links are root-
    relative so they navigate from any standalone page. */
 #content { margin: 0 auto !important; max-width: 1000px; }
+/* Wide screens: a little more room for tables; prose stays readable. */
+@media (min-width: 1500px) { #content { max-width: 1120px; } }
 .back-link { display: block; margin-bottom: 1.5rem; color: var(--accent); text-decoration: none; font-size: 0.9rem; }
 .back-link:hover { text-decoration: underline; }
 .breadcrumb { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem; }
@@ -2512,6 +2536,7 @@ ${sidebarMarkupHtml}
     <h2 class="comments-heading"><span class="lang-zh">评论</span><span class="lang-en">Comments</span></h2>
     ${GISCUS_SCRIPT}
   </section>
+  ${siteFooterHtml}
 </main>
 ${AI_SCRIPT}
 <script>
@@ -2529,7 +2554,7 @@ ${APP_PREFS_JS}
 })();
 // Checklist persistence — the spaced-repetition / mastery checkboxes are
 // keyed by 'lesson:idx' and stored under CHECK_KEY so a tick survives page
-// reloads and navigation. A small progress bar is inserted after the H1.
+// reloads and navigation. A small progress bar shows how many are ticked.
 (function(){
   var CHECK_KEY = 'jp_grammar_checks';
   function loadChecks() { try { return JSON.parse(localStorage.getItem(CHECK_KEY)) || {}; } catch(e) { return {}; } }
@@ -2559,12 +2584,18 @@ ${APP_PREFS_JS}
       updateProgress();
     });
   });
-  var h1 = document.querySelector('#content h1');
-  if (h1 && !document.querySelector('.checklist-progress')) {
+  // Lessons: the boxes are the review schedule at the bottom, so the bar sits
+  // just above that list. Checklist pages: it tracks the whole page, under the H1.
+  var lesson = /^lesson\\d/.test(boxes[0].getAttribute('data-lesson'));
+  var anchor = lesson ? boxes[0].closest('ul') : document.querySelector('#content h1');
+  if (anchor && !document.querySelector('.checklist-progress')) {
     var div = document.createElement('div');
     div.className = 'checklist-progress';
-    div.innerHTML = '<div class="progress-bar"><div class="progress-fill"></div></div><span class="progress-text">0 / 0</span>';
-    h1.after(div);
+    div.innerHTML = '<span class="progress-label">' + (lesson
+        ? '<span class="lang-zh">复习进度</span><span class="lang-en">Reviews done</span>'
+        : '<span class="lang-zh">已掌握</span><span class="lang-en">Learned</span>') +
+      '</span><div class="progress-bar"><div class="progress-fill"></div></div><span class="progress-text">0 / 0</span>';
+    if (lesson) anchor.before(div); else anchor.after(div);
   }
   updateProgress();
 })();
@@ -2787,6 +2818,7 @@ ${sidebarMarkupHtml}
   <h2><span class="lang-zh">分课目录</span><span class="lang-en">Lessons</span></h2>
   <div class="overview-grid">${cardsHtml}</div>
   ${tableHtml}
+  ${siteFooterHtml}
 </main>
 <script>
 ${APP_PREFS_JS}
@@ -2890,6 +2922,7 @@ ${sidebarMarkupHtml}
   <div class="overview-grid">${examGuides.map(card).join("\n")}</div>` : ""}
   <h2><span class="lang-zh">易混语法对比</span><span class="lang-en">Grammar comparisons</span></h2>
   <div class="overview-grid">${compareGuides.map(card).join("\n")}</div>
+  ${siteFooterHtml}
 </main>
 <script>
 ${APP_PREFS_JS}
@@ -3031,6 +3064,7 @@ ${sidebarMarkupHtml}
     <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><span><span class="lang-zh">关于本站</span><span class="lang-en">About</span></span>
   </nav>
   <article class="about-content">${aboutHtml}</article>
+  ${siteFooterHtml}
 </main>
 <script>
 ${APP_PREFS_JS}
@@ -3562,8 +3596,7 @@ body:not(:has(article.lesson)) .nav-tool-ai {
   min-width: 0;
   overflow: hidden;
 }
-#sidebar.collapsed .nav-scroll,
-#sidebar.collapsed .nav-footer {
+#sidebar.collapsed .nav-scroll {
   pointer-events: none;
 }
 .nav-header {
@@ -3598,6 +3631,9 @@ body:not(:has(article.lesson)) .nav-tool-ai {
   line-height: 1.4;
 }
 .nav-item:hover { color: var(--sidebar-hover-text); background: var(--sidebar-hover-bg); }
+.nav-item:has(.nav-num) { display: flex; gap: .55rem; }
+.nav-num { flex: none; width: 1.3rem; text-align: right; opacity: .55; font-variant-numeric: tabular-nums; }
+.nav-item.active .nav-num { opacity: .9; }
 .nav-item.active {
   color: var(--sidebar-hover-text); background: rgba(233,69,96,.15);
   border-left-color: var(--accent);
@@ -3666,6 +3702,21 @@ rp { -webkit-user-select: none; user-select: none; }
    annotation box tight so 2.2 is enough. */
 li[data-ja], p[data-ja], td[data-ja], th[data-ja], blockquote[data-ja], dt[data-ja], dd[data-ja], summary[data-ja] { line-height: 2.2; }
 rt { line-height: 1; }
+/* Model sentences are set in Mincho, like a textbook's example lines, so the
+   Japanese being studied reads apart from the explanation around it. System
+   fonts only (Mac/iOS, Windows, Android/Linux): nothing to download. */
+li[data-ex] {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, "Noto Serif JP", "Noto Serif CJK JP", "Source Han Serif JP", serif;
+  font-size: 1.05em;
+}
+li[data-ex] strong { color: var(--accent); }
+li[data-ex] button { font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "PingFang SC", sans-serif; }
+li .ex-tr {
+  display: block; line-height: 1.6; margin: -.15rem 0 .55rem;
+  font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "PingFang SC", sans-serif;
+  font-size: .78em; color: var(--text-muted);
+}
+li .ex-tr .ex-p { display: none; }
 /* Opaque selection colour: Chrome's translucent default double-paints where
    the ruby rect and its neighbour overlap, leaving a bright 1px seam. */
 ::selection { background: var(--selection-bg); color: var(--selection-fg); }
@@ -3683,11 +3734,21 @@ th, td {
 }
 th { background: #f0f0f0; font-weight: 600; font-size: .85rem; }
 tr:nth-child(even) { background: #fafafa; }
+/* Long URLs / inline code break instead of widening the page on phones. */
+#content { overflow-wrap: break-word; }
+.table-scroll { overflow-x: auto; margin: .8rem 0; }
+.table-scroll > table { margin: 0; }
+/* Phones: tighter cells, but never narrower than a two-character word, so
+   知る / 进入 / 动词 don't break one character per line. */
+@media (max-width: 640px) {
+  th, td { padding: .4rem .45rem; min-width: 2.9em; }
+}
 
 /* Word table highlight */
 table.word-table { border-left: 4px solid var(--word-border); }
 table.word-table th { background: var(--word-bg); }
 table.word-table td:first-child { font-size: 1.2rem; font-weight: 500; white-space: nowrap; }
+table.word-table td:nth-child(2) { color: var(--text-muted); }
 table.word-table .pos { font-size: .75em; color: var(--text-muted); border: 1px solid currentColor; border-radius: 3px; padding: 0 .3em; white-space: nowrap; }
 table.word-table .gloss-note { display: block; font-size: .85em; color: var(--text-muted); margin-top: .15em; }
 table.word-table .collocs { display: block; margin-top: .25em; }
@@ -3698,10 +3759,11 @@ table.word-table .colloc-ja { font-size: 1.1em; color: var(--text); margin-right
 .checklist-progress {
   background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius-lg);
   padding: .8rem 1.2rem; margin: 1rem 0 1.5rem; display: flex; align-items: center; gap: 1rem;
-  font-size: .9rem; color: var(--text-muted); position: sticky; top: 0; z-index: 5;
+  font-size: .85rem; color: var(--text-muted);
 }
+.checklist-progress .progress-label { white-space: nowrap; }
 .checklist-progress .progress-bar {
-  flex: 1; height: 8px; background: #e8e8e8; border-radius: var(--radius-sm); overflow: hidden;
+  flex: 1; height: 6px; background: #e8e8e8; border-radius: var(--radius-sm); overflow: hidden;
 }
 .checklist-progress .progress-fill {
   height: 100%; background: var(--accent); border-radius: var(--radius-sm); transition: width .3s;
@@ -3811,19 +3873,16 @@ summary {
   padding: .2rem 0;
 }
 
-/* Sidebar footer */
-.nav-footer {
-  flex-shrink: 0;
-  padding: .6rem 1.2rem;
-  border-top: 1px solid var(--sidebar-border);
-  display: flex; gap: .8rem;
-  font-size: .75rem;
+/* Page footer */
+.site-footer {
+  margin-top: 3rem; padding-top: 1.2rem;
+  border-top: 1px solid var(--border);
+  text-align: center; font-size: .8rem; color: var(--text-muted);
 }
-.nav-footer a {
-  color: var(--sidebar-text); text-decoration: none;
-  opacity: .7; transition: opacity var(--transition);
-}
-.nav-footer a:hover { opacity: 1; color: var(--sidebar-hover-text); }
+.site-footer nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .3rem 1.2rem; }
+.site-footer a { color: inherit; text-decoration: none; white-space: nowrap; }
+.site-footer a:hover { color: var(--accent); }
+.site-footer p { margin: .5rem 0 0; opacity: .7; }
 
 /* Narrow screens: no right margin on content */
 @media (max-width: 900px) {
@@ -3865,17 +3924,25 @@ body.sidebar-collapsed #content.home {
   line-height: 1.75;
 }
 .home-intro strong { color: var(--accent); font-weight: 600; }
-.home-stats {
-  display: flex; justify-content: center; gap: 2.2rem;
-  flex-wrap: wrap;
-  margin: 1rem 0 .3rem;
+@media (max-width: 640px) {
+  .home-hero { padding-top: 1.5rem; }
+  .home-hero h1 { font-size: 1.45rem; line-height: 1.5; }
+  .home-intro { font-size: .9rem; }
 }
-.home-stat { text-align: center; }
-.home-stat strong {
-  display: block; font-size: 1.7rem; color: var(--accent);
-  font-weight: 700; line-height: 1.1;
+.home-actions {
+  display: flex; justify-content: center; gap: .8rem; flex-wrap: wrap;
+  margin: 1.4rem 0 .4rem;
 }
-.home-stat span { font-size: .78rem; color: var(--text-muted); }
+.home-actions a {
+  display: inline-block; padding: .55rem 1.3rem; border-radius: var(--radius);
+  font-size: .95rem; font-weight: 600; text-decoration: none;
+  border: 1px solid var(--accent);
+}
+/* Same darker red as .level-tag so white text passes AA. */
+.home-actions .btn-primary { background: #d6354c; border-color: #d6354c; color: #fff; }
+.home-actions .btn-primary:hover { background: #c02a40; }
+.home-actions .btn-secondary { color: var(--accent); }
+.home-actions .btn-secondary:hover { background: var(--accent-soft); }
 .home-levels h2, .home-howto h2 {
   font-size: 1.35rem; margin: 2rem 0 1rem; color: var(--text-strong);
 }
@@ -3896,11 +3963,10 @@ body.sidebar-collapsed #content.home {
   text-decoration: none; color: inherit;
   transition: all .2s;
 }
-.level-card:hover {
-  border-color: var(--accent);
-  box-shadow: var(--shadow-hover);
-  transform: translateY(-2px);
-}
+.level-card:hover { border-color: var(--accent); }
+.level-head { display: flex; align-items: center; gap: .7rem; margin-bottom: .9rem; }
+.level-head .level-tag { margin-bottom: 0; }
+.level-range { font-size: .82rem; color: var(--text-muted); }
 .level-tag {
   display: inline-block;
   padding: .2rem .65rem;
@@ -3983,7 +4049,6 @@ body.sidebar-collapsed #content.home {
   /* Home page */
   :root:not(.theme-light) .home-hero h1 { color: #f0f0f5; }
   :root:not(.theme-light) .home-intro { color: #b8b8c4; }
-  :root:not(.theme-light) .home-stat span { color: #888; }
   :root:not(.theme-light) .home-levels h2, :root:not(.theme-light) .home-howto h2 { color: #e4e4ec; }
   :root:not(.theme-light) .level-card { background: #1f1f2e; }
   :root:not(.theme-light) .level-card h3 { color: #f0f0f5; }
@@ -4044,7 +4109,6 @@ html.theme-dark .checklist-progress .progress-bar { background: #2d2d44; }
 /* Home page */
 html.theme-dark .home-hero h1 { color: #f0f0f5; }
 html.theme-dark .home-intro { color: #b8b8c4; }
-html.theme-dark .home-stat span { color: #888; }
 html.theme-dark .home-levels h2, html.theme-dark .home-howto h2 { color: #e4e4ec; }
 html.theme-dark .level-card { background: #1f1f2e; }
 html.theme-dark .level-card h3 { color: #f0f0f5; }
@@ -4086,7 +4150,9 @@ html.theme-dark #search-box { background: #1f1f2e; }
 }
 .tc-pill:hover { border-color: var(--accent); }
 .tc-pill input { margin: 0 .3rem 0 0; vertical-align: -1px; }
-.tc-icon { font-size: 1rem; padding: .32rem .6rem; }
+.tc-icon { padding: .38rem .55rem; display: inline-flex; align-items: center; }
+.tc-icon svg, #settings-box .js-theme-btn svg { width: 17px; height: 17px; display: block; }
+#settings-box .js-theme-btn { display: inline-flex; justify-content: center; align-items: center; }
 .tc-lang { font-weight: 700; }
 body.ai-open #tc-ai { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
 @media (min-width: 769px) { .nav-tool-extra { display: none; } }
