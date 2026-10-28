@@ -440,7 +440,7 @@ async function buildQuiz(ruby) {
   return out;
 }
 
-module.exports = { buildQuiz, loadLevel, loadDir, shuffled, answerOf, LEVELS, TYPES, QUIZ_PUBLIC, QUIZ_LINKS };
+module.exports = { buildQuiz, loadLevel, loadDir, shuffled, answerOf, LEVELS, TYPES, MOCK, QUIZ_PUBLIC, QUIZ_LINKS };
 
 if (require.main === module) {
   let total = 0, bad = 0;

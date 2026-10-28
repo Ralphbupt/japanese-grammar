@@ -20,7 +20,7 @@ Every grammar point covers how it attaches, what it means, example sentences wit
 
 ## Features
 
-- **92 grammar lessons, ~480 grammar points**: N5 (lessons 0–17), N4 (18–34), N3 (35–58), N2 (59–75), N1 (76–92), plus A-vs-B comparison guides and a JLPT exam guide.
+- **93 grammar lessons, 420+ grammar points**: N5 (lessons 0–17), N4 (18–34), N3 (35–58), N2 (59–75), N1 (76–92), plus A-vs-B comparison guides and a JLPT exam guide.
 - **Example sentences** with furigana (can be toggled off), 🔊 audio for every model sentence, and translations.
 - **[Practice](https://jpnotes.dev/practice/)**: 2,000+ exam-style questions covering every non-listening JLPT item type (N5–N2), with an explanation for every option. Also timed mock tests with estimated scores, and grammar flashcards with spaced repetition.
 - **Ask AI**: a side panel on every lesson and after every practice question. It works with no setup (a free relay on Cloudflare Workers AI), or with your own API key, which stays in your browser.
