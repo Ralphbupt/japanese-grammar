@@ -117,9 +117,11 @@ const CSP_META = `<meta http-equiv="Content-Security-Policy" content="connect-sr
 const THEME_INIT_SCRIPT = `<script>
 (function() {
   try {
-    var t = localStorage.getItem('theme');
-    if (t === 'dark') document.documentElement.classList.add('theme-dark');
-    else if (t === 'light') document.documentElement.classList.add('theme-light');
+    // 'light' is the paper theme; white and sepia are light themes with a tone.
+    var t = localStorage.getItem('theme'), c = document.documentElement.classList;
+    if (t === 'dark') c.add('theme-dark');
+    else if (t === 'light' || t === 'white' || t === 'sepia') c.add('theme-light');
+    if (t === 'white' || t === 'sepia') c.add('tone-' + t);
   } catch (e) {}
 })();
 </script>`;
@@ -2670,9 +2672,9 @@ ${APP_PREFS_JS}
 .breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 1rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
 .breadcrumb .sep { margin: 0 .4em; }
-.overview-intro { font-size: 1rem; line-height: 1.8; color: var(--text); margin: 1rem 0 2rem; padding: 1rem 1.2rem; background: #fafaf2; border-left: 3px solid var(--word-border); border-radius: 0 var(--radius) var(--radius) 0; }
+.overview-intro { font-size: 1rem; line-height: 1.8; color: var(--text); margin: 1rem 0 2rem; padding: 1rem 1.2rem; background: var(--card-bg); border-left: 3px solid var(--word-border); border-radius: 0 var(--radius) var(--radius) 0; }
 .overview-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0 2.5rem; }
-.overview-card { display: block; padding: 1rem 1.2rem; background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); text-decoration: none; color: inherit; transition: all var(--transition); }
+.overview-card { display: block; padding: 1rem 1.2rem; background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius-lg); text-decoration: none; color: inherit; transition: all var(--transition); }
 .overview-card:hover { border-color: var(--accent); box-shadow: var(--shadow-hover); transform: translateY(-1px); }
 .overview-card-head { display: flex; align-items: baseline; gap: .6rem; margin-bottom: .5rem; }
 .overview-day { font-size: .75rem; font-weight: 700; color: var(--accent); white-space: nowrap; }
@@ -3442,16 +3444,24 @@ const CSS = minifyCss(`
   --sidebar-border: var(--border);
   --sidebar-hover-bg: rgba(0,0,0,.05);
   --sidebar-hover-text: var(--text-strong);
-  --accent: #e94560;
+  /* Light themes use a deeper red so red text passes 4.5:1 on every light
+     surface; dark mode switches back to the brighter #e94560. */
+  --accent: #b8283f;
   --accent-soft: rgba(233,69,96,.12);
   --card-bg: #fbfaf7;
   --border: #e3dfd5;
-  --ruby-color: #e94560;
+  --ruby-color: #b8283f;
+  --link: var(--accent);
   --selection-bg: #b8d4fb;
   --selection-fg: #1a1a2e;
   --word-bg: #f9f3df;
   --word-border: #f5c842;
   --code-bg: #efece5;
+  --surface-2: #efece5;   /* table heads, details, hovered checklist rows */
+  --row-alt: #f9f8f4;     /* zebra rows */
+  --panel-bg: #f0ede5;    /* related-grammar box */
+  --chip-bg: #e8e3d7;     /* cross-link chips */
+  --chip-text: #b0263f;
   --text: #2b2a27;
   --text-strong: #1a1a2e;
   --text-muted: #666;
@@ -3489,6 +3499,20 @@ const CSS = minifyCss(`
 
   --transition: .15s ease;
   --transition-slow: .25s ease;
+}
+/* Light theme tones (settings → 主题). Paper is the default light theme;
+   these ride on .theme-light so every dark-mode rule keeps excluding them. */
+html.tone-white {
+  --bg: #ffffff; --card-bg: #ffffff; --sidebar-bg: #f7f7f8; --border: #e4e4e7;
+  --text: #2d2d2d; --word-bg: #fffbe6; --code-bg: #f4f4f5;
+  --surface-2: #f2f2f3; --row-alt: #fafafa; --panel-bg: #f4f6f8; --chip-bg: #eceef1;
+}
+html.tone-sepia {
+  --bg: #ece3cf; --card-bg: #f3ecdd; --sidebar-bg: #e3d8c0; --border: #d8ccb2;
+  --text: #3a3025; --text-strong: #2a2118; --text-muted: #665846; --text-subtle: #6e604c;
+  --sidebar-text: #594c39; --word-bg: #f0e4c3; --code-bg: #e3d8c0;
+  --surface-2: #e3d8c0; --row-alt: #f0e8d7; --panel-bg: #e6dcc6; --chip-bg: #e0d4ba; --chip-text: #9c1f36;
+  --accent: #a52238; --ruby-color: #a52238;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { font-size: 19px; }
@@ -3640,7 +3664,7 @@ body:not(:has(article.lesson)) .nav-tool-ai {
 .nav-group-wrap.expanded .nav-caret { transform: rotate(90deg); }
 .nav-group-items { display: none; }
 .nav-group-wrap.expanded .nav-group-items { display: block; }
-.nav-overview { font-style: italic; opacity: .8; }
+.nav-overview { font-style: italic; }
 .nav-overview.active, .nav-overview:hover { font-style: normal; }
 .nav-item {
   display: block; padding: .3rem 1rem;
@@ -3750,8 +3774,10 @@ th, td {
   border: 1px solid var(--border);
   padding: .4rem .7rem; text-align: left;
 }
-th { background: #efece5; font-weight: 600; font-size: .85rem; }
-tr:nth-child(even) { background: #f9f8f4; }
+th { background: var(--surface-2); font-weight: 600; font-size: .85rem; }
+tr:nth-child(even) { background: var(--row-alt); }
+/* Plain links in page content: the theme's link colour, not browser blue. */
+:where(#content a:not([class])) { color: var(--link); text-underline-offset: 2px; }
 /* Long URLs / inline code break instead of widening the page on phones. */
 #content { overflow-wrap: break-word; }
 .table-scroll { overflow-x: auto; margin: .8rem 0; }
@@ -3795,7 +3821,7 @@ ul:has(input[type="checkbox"]) li {
   transition: background .2s;
 }
 ul:has(input[type="checkbox"]) li > label { display: block; cursor: pointer; }
-ul:has(input[type="checkbox"]) li:hover { background: #efece5; }
+ul:has(input[type="checkbox"]) li:hover { background: var(--surface-2); }
 ul:has(input[type="checkbox"]) li.checked {
   text-decoration: line-through; color: var(--text-subtle);
 }
@@ -3857,19 +3883,19 @@ html.theme-dark .speak-btn:hover { border-color: var(--accent); }
 
 /* Cross-links */
 .related-grammar {
-  background: #f0ede5; border: 1px solid var(--border); border-radius: var(--radius-lg);
+  background: var(--panel-bg); border: 1px solid var(--border); border-radius: var(--radius-lg);
   padding: .6rem 1rem; margin: 1.5rem 0; font-size: .85rem;
 }
 .related-label { font-weight: 600; color: var(--text-muted); margin-right: .5rem; }
 .cross-link {
-  display: inline-block; background: #e8e3d7; color: #c42d48;
+  display: inline-block; background: var(--chip-bg); color: var(--chip-text);
   padding: .15rem .55rem; border-radius: var(--radius-sm); margin: .15rem .2rem;
   text-decoration: none; font-size: .82rem;
   line-height: 1.5;
 }
 .cross-link:hover { background: var(--accent); color: #fff; }
 .cross-link:hover .cross-link-desc,
-.cross-link:hover .cross-link-level { color: rgba(255,255,255,.9); background: rgba(255,255,255,.18); }
+.cross-link:hover .cross-link-level { color: rgba(255,255,255,.9); background: none; }
 .cross-link-term { font-weight: 600; }
 .cross-link-desc { font-size: .88em; margin-left: .35em; }
 h2 .romaji { font-weight: 400; font-size: .7em; color: var(--text-muted); letter-spacing: .01em; }
@@ -3877,18 +3903,18 @@ h2 .romaji { font-weight: 400; font-size: .7em; color: var(--text-muted); letter
 .cross-link-level {
   display: inline-block; margin-left: .4em;
   font-size: .68em; font-weight: 700; letter-spacing: .03em;
-  background: rgba(233,69,96,.13); color: inherit;
-  padding: .05em .4em; border-radius: var(--radius-sm);
+  border: 1px solid currentColor; color: inherit;
+  padding: 0 .35em; border-radius: var(--radius-sm);
   vertical-align: 1px;
 }
 
 /* Details */
 details {
-  background: #efece5; border-radius: var(--radius);
+  background: var(--surface-2); border-radius: var(--radius);
   padding: .5rem 1rem; margin: .8rem 0;
 }
 summary {
-  cursor: pointer; font-weight: 600; color: var(--accent);
+  cursor: pointer; font-weight: 600; color: var(--link);
   padding: .2rem 0;
 }
 
@@ -4037,6 +4063,8 @@ body.sidebar-collapsed #content.home {
     --word-border: #5a4920;
     --code-bg: #1f1f2e;
     --ruby-color: #ff7088;  /* lighter than --accent so furigana stays readable on dark blockquote tints */
+    --accent: #e94560;
+    --link: #ff7088;
     --selection-bg: #3b6fd6;
     --selection-fg: #fff;
   }
@@ -4097,6 +4125,8 @@ html.theme-dark {
     --word-border: #5a4920;
     --code-bg: #1f1f2e;
     --ruby-color: #ff7088;  /* lighter than --accent so furigana stays readable on dark blockquote tints */
+    --accent: #e94560;
+    --link: #ff7088;
     --selection-bg: #3b6fd6;
     --selection-fg: #fff;
   }
@@ -4171,7 +4201,31 @@ html.theme-dark #search-box { background: #1f1f2e; }
 .tc-pill input { margin: 0 .3rem 0 0; vertical-align: -1px; }
 .tc-icon { padding: .38rem .55rem; display: inline-flex; align-items: center; }
 .tc-icon svg, #settings-box .js-theme-btn svg { width: 17px; height: 17px; display: block; }
-#settings-box .js-theme-btn { display: inline-flex; justify-content: center; align-items: center; }
+/* Theme picker: five swatch buttons, in the settings modal and in the
+   top-bar menu. Swatches show each theme's own page and text colours. */
+.settings-row-theme > div { flex: 1; }
+.theme-choices { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .6rem; }
+.theme-choice {
+  display: inline-flex; align-items: center; gap: .4rem;
+  padding: .3rem .65rem .3rem .4rem; font: inherit; font-size: .82rem; color: inherit;
+  background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius-pill); cursor: pointer;
+}
+.theme-choice:hover { border-color: var(--accent); }
+.theme-choice[aria-checked="true"] { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.theme-swatch { width: 1.05rem; height: 1.05rem; border-radius: 50%; border: 1px solid rgba(0,0,0,.25); flex: none; }
+.sw-auto { background: linear-gradient(135deg, #f6f4ef 50%, #14141e 50%); }
+.sw-white { background: #ffffff; }
+.sw-light { background: #f6f4ef; }
+.sw-sepia { background: #ece3cf; }
+.sw-dark { background: #14141e; }
+#theme-menu {
+  position: absolute; top: calc(100% + .4rem); right: 0;
+  background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md); padding: .5rem;
+}
+#theme-menu .theme-choices { flex-direction: column; margin: 0; }
+#theme-menu .theme-choice { border-color: transparent; border-radius: var(--radius); }
+#theme-menu .theme-choice[aria-checked="true"] { border-color: var(--accent); box-shadow: none; }
 .tc-lang { font-weight: 700; }
 body.ai-open #tc-ai { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
 @media (min-width: 769px) { .nav-tool-extra { display: none; } }

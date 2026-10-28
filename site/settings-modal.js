@@ -22,10 +22,25 @@
     }
   }
 
+  // Themes: auto follows the system (paper by day, dark at night); 'light'
+  // is the stored name for paper. White and sepia are light-theme tones.
+  var THEMES = [
+    ['auto', '自动', 'Auto'], ['white', '白', 'White'], ['light', '纸张', 'Paper'],
+    ['sepia', '米黄', 'Sepia'], ['dark', '深色', 'Dark']
+  ];
   function currentTheme() {
-    var html = document.documentElement;
-    return html.classList.contains('theme-dark') ? 'dark'
-      : html.classList.contains('theme-light') ? 'light' : 'auto';
+    var c = document.documentElement.classList;
+    return c.contains('theme-dark') ? 'dark'
+      : c.contains('tone-white') ? 'white'
+      : c.contains('tone-sepia') ? 'sepia'
+      : c.contains('theme-light') ? 'light' : 'auto';
+  }
+  function themeChoicesHtml() {
+    return '<div class="theme-choices" role="radiogroup" aria-label="主题 / Theme">' + THEMES.map(function (t) {
+      return '<button type="button" role="radio" class="theme-choice" data-theme="' + t[0] + '">' +
+        '<span class="theme-swatch sw-' + t[0] + '" aria-hidden="true"></span>' +
+        '<span class="lang-zh">' + t[1] + '</span><span class="lang-en">' + t[2] + '</span></button>';
+    }).join('') + '</div>';
   }
 
   // The modal and the desktop top bar both render these three settings;
@@ -43,25 +58,54 @@
     var hide = document.body.classList.contains('hide-ruby');
     var en = isEnUi();
     document.querySelectorAll('.js-theme-btn').forEach(function (b) {
-      b.innerHTML = THEME_ICONS[c];
-      b.title = c === 'dark' ? '当前: 深色 (点击切浅色)' : c === 'light' ? '当前: 浅色 (点击切自动)' : '当前: 跟随系统 (点击切深色)';
+      b.innerHTML = THEME_ICONS[c === 'auto' || c === 'dark' ? c : 'light'];
+      b.title = '主题 / Theme';
+    });
+    document.querySelectorAll('.theme-choice').forEach(function (b) {
+      b.setAttribute('aria-checked', b.getAttribute('data-theme') === c ? 'true' : 'false');
     });
     document.querySelectorAll('.js-ruby-toggle').forEach(function (i) { i.checked = !hide; });
     document.querySelectorAll('.js-lang-btn').forEach(function (b) { b.textContent = en ? '中文' : 'EN'; });
   }
 
-  function cycleTheme() {
-    var next = { auto: 'dark', dark: 'light', light: 'auto' }[currentTheme()];
-    var html = document.documentElement;
-    html.classList.remove('theme-dark', 'theme-light');
-    if (next === 'dark') html.classList.add('theme-dark');
-    else if (next === 'light') html.classList.add('theme-light');
+  function setTheme(next) {
+    var c = document.documentElement.classList;
+    c.remove('theme-dark', 'theme-light', 'tone-white', 'tone-sepia');
+    if (next === 'dark') c.add('theme-dark');
+    else if (next !== 'auto') c.add('theme-light');
+    if (next === 'white' || next === 'sepia') c.add('tone-' + next);
     try {
       if (next === 'auto') localStorage.removeItem('theme');
       else localStorage.setItem('theme', next);
     } catch (e) {}
     sync();
     if (window.gaEvent) window.gaEvent('theme_toggle', { to: next });
+  }
+
+  // Top bar: the theme button opens a small menu of the five themes.
+  function toggleThemeMenu(btn) {
+    var menu = document.getElementById('theme-menu');
+    if (menu) { menu.remove(); btn.setAttribute('aria-expanded', 'false'); return; }
+    menu = document.createElement('div');
+    menu.id = 'theme-menu';
+    menu.innerHTML = themeChoicesHtml();
+    btn.parentNode.appendChild(menu);
+    btn.setAttribute('aria-expanded', 'true');
+    wireChoices(menu);
+    sync();
+    setTimeout(function () {
+      document.addEventListener('click', function off(e) {
+        if (menu.contains(e.target) && !e.target.closest('.theme-choice')) return;
+        if (document.getElementById('theme-menu')) { menu.remove(); btn.setAttribute('aria-expanded', 'false'); }
+        document.removeEventListener('click', off);
+      });
+    }, 0);
+  }
+
+  function wireChoices(root) {
+    root.querySelectorAll('.theme-choice').forEach(function (b) {
+      b.addEventListener('click', function () { setTheme(b.getAttribute('data-theme')); });
+    });
   }
 
   function setRuby(show) {
@@ -91,7 +135,10 @@
   }
 
   function wireControls(root) {
-    root.querySelectorAll('.js-theme-btn').forEach(function (b) { b.addEventListener('click', cycleTheme); });
+    root.querySelectorAll('.js-theme-btn').forEach(function (b) {
+      b.addEventListener('click', function (e) { e.stopPropagation(); toggleThemeMenu(b); });
+    });
+    wireChoices(root);
     root.querySelectorAll('.js-ruby-toggle').forEach(function (i) {
       i.addEventListener('change', function () { setRuby(this.checked); });
     });
@@ -111,7 +158,7 @@
     bar.innerHTML =
       (hasSearch ? '<button type="button" class="tc-pill tc-icon" data-proxy="search-btn" aria-label="搜索 / Search" title="搜索 / Search ( / )">' + hasSearch.innerHTML + '</button>' : '') +
       (hasAi ? '<button type="button" class="tc-pill tc-icon" id="tc-ai" data-proxy="ai-btn" aria-label="问 AI / Ask AI" title="问 AI / Ask AI">' + document.getElementById('ai-btn').innerHTML + '</button>' : '') +
-      '<button type="button" class="tc-pill tc-icon js-theme-btn" aria-label="切换主题 / Toggle theme"></button>' +
+      '<button type="button" class="tc-pill tc-icon js-theme-btn" aria-label="主题 / Theme" aria-haspopup="true" aria-expanded="false"></button>' +
       (hasRuby ? '<label class="tc-pill"><input type="checkbox" class="js-ruby-toggle" checked> <span class="lang-zh">显示读音</span><span class="lang-en">Furigana</span></label>' : '') +
       '<button type="button" class="tc-pill tc-lang js-lang-btn">EN</button>';
     document.body.appendChild(bar);
@@ -136,10 +183,10 @@
           '<p class="settings-lead"><span class="lang-zh">偏好保存在浏览器本地，不会上传到服务器。</span><span class="lang-en">Preferences are stored locally in your browser.</span></p>' +
         '</div>' +
         '<ul class="settings-list">' +
-          '<li class="settings-row">' +
+          '<li class="settings-row settings-row-theme">' +
             '<div><div class="settings-label"><span class="lang-zh">主题</span><span class="lang-en">Theme</span></div>' +
-            '<div class="settings-desc"><span class="lang-zh">自动 · 深色 · 浅色</span><span class="lang-en">Auto · dark · light</span></div></div>' +
-            '<div class="settings-control"><button type="button" class="js-theme-btn" aria-label="切换主题 / Toggle theme"></button></div>' +
+            '<div class="settings-desc"><span class="lang-zh">自动：白天纸张、夜间深色，跟随系统</span><span class="lang-en">Auto: paper by day, dark at night, following your system</span></div>' +
+            themeChoicesHtml() + '</div>' +
           '</li>' +
           '<li class="settings-row">' +
             '<div><div class="settings-label"><span class="lang-zh">汉字注音</span><span class="lang-en">Furigana</span></div>' +
