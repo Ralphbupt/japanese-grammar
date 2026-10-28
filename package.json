@@ -5,7 +5,8 @@
   "scripts": {
     "build": "node build.js && node build-anki.js",
     "build:site": "node build.js",
-    "build:anki": "node build-anki.js"
+    "build:anki": "node build-anki.js",
+    "preview": "cp -R audio dist/ && cd dist && python3 -m http.server 8000"
   },
   "dependencies": {
     "kuroshiro": "^1.2.0",
