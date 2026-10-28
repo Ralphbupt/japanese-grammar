@@ -18,7 +18,11 @@
 (function () {
   'use strict';
   var article = document.querySelector('article.lesson');
-  if (!article || !window.fetch || !window.ReadableStream) return;
+  // Practice / mock test pages: no lesson; the context is the question being
+  // explained, set by quiz.js through window.jpAI.explain() after an answer.
+  var QUIZ = !article && !!document.getElementById('quiz-app');
+  if ((!article && !QUIZ) || !window.fetch || !window.ReadableStream) return;
+  if (QUIZ) article = document.createElement('article');
 
   var CFG_KEY = 'jp_ai_cfg';          // v2: { v, active, profiles: { provider: { base, key, model } }, effort, session }
   var HIST_KEY = 'jp_ai_hist:' + location.pathname.replace(/^\/zh\//, '/');  // /zh/ copy shares the lesson's history
@@ -174,11 +178,14 @@
   var GUIDE_URL = '/about/#ai-setup';
 
   /* ── history (per lesson, survives tab close) ── */
+  // Quiz pages keep no history: the question it was about is gone after a reload.
   function loadHist() {
+    if (QUIZ) return [];
     try { return JSON.parse(localStorage.getItem(HIST_KEY)) || JSON.parse(sessionStorage.getItem(HIST_KEY)) || []; } catch (e) { return []; }
   }
   function saveHist(h) {
     if (h.length > MAX_HISTORY_MSGS) h.splice(0, h.length - MAX_HISTORY_MSGS);
+    if (QUIZ) return;
     try { localStorage.setItem(HIST_KEY, JSON.stringify(h)); sessionStorage.removeItem(HIST_KEY); } catch (e) {}
   }
 
@@ -205,7 +212,7 @@
     if (/HTTP 5\d\d/.test(msg)) return 'http_5xx';
     return 'other';
   }
-  var pendingSource = 'typed';   // 'typed' | 'quick' | 'selection' | 'example' | 'retry' — set before send()
+  var pendingSource = 'typed';   // 'typed' | 'quick' | 'selection' | 'example' | 'quiz' | 'retry' — set before send()
 
   var cfg = loadCfg() || defaultCfg();
   var history = loadHist();      // [{role:'user'|'assistant', content}]
@@ -327,6 +334,13 @@
   }
   function systemPrompt(sc) {
     var ctx = contextText(sc), scoped = sc >= 0 && sections()[sc];
+    if (QUIZ) return isEn()
+      ? 'You are a Japanese grammar tutor helping a JLPT learner who has just answered the practice question below on ' + location.origin + location.pathname + '. ' +
+        'Answer from the question, its explanation and the linked lesson; say so when you add outside knowledge. Reply in English. Start with a one-sentence conclusion, then why the learner\u2019s choice is wrong (meaning, how it attaches, or tone), why the right answer is right, then 1–2 contrasting example sentences. No tables. In Japanese examples, put the kana reading right after each kanji word in full-width parentheses, e.g. 雨（あめ）に降（ふ）られた, and add an English translation. Be concise, no filler.' + effortPrompt(cfg) +
+        '\n\n<question>\n' + ctx + '\n</question>'
+      : '你是一位日语语法老师，正在辅导一位备考 JLPT 的中文母语学习者。学习者刚在 ' + location.origin + location.pathname + ' 做完下面这道练习题。' +
+        '请基于题目、固定解析和对应课文回答；补充其他知识时请说明。回答用中文。先一句话给结论，再说学习者选的选项错在哪（意思 / 接续 / 语气），正确选项为什么对，最后给 1–2 个对比例句。不要用表格。日语例句里的汉字请紧跟全角括号标注假名读音，格式如「雨（あめ）に降（ふ）られた」，并附中文翻译。回答简洁，少说套话。' + effortPrompt(cfg) +
+        '\n\n<question>\n' + ctx + '\n</question>';
     if (!isEn()) {
       return '你是一位日语语法老师，正在辅导一位备考 JLPT 的中文母语学习者。学习者此刻正在阅读' +
         (scoped ? '下面这一课中「' + sectionTitle(sc) + '」这一节' : '下面这一课的笔记') + '（网址 ' + location.origin + location.pathname + '）。' +
@@ -530,7 +544,7 @@
     panel.innerHTML =
       '<div class="ai-resize" title="' + esc(t('拖动调整宽度，双击恢复默认', 'Drag to resize, double-click to reset')) + '"></div>' +
       '<div class="ai-head">' +
-        '<span class="ai-title"><button type="button" class="ai-back"><span class="lang-zh">‹ 课文</span><span class="lang-en">‹ Lesson</span></button>' +
+        '<span class="ai-title"><button type="button" class="ai-back">' + (QUIZ ? '<span class="lang-zh">‹ 题目</span><span class="lang-en">‹ Question</span>' : '<span class="lang-zh">‹ 课文</span><span class="lang-en">‹ Lesson</span>') + '</button>' +
           '<span class="ai-name">🤖 <span class="lang-zh">问 AI</span><span class="lang-en">Ask AI</span></span> ' +
           '<button type="button" class="ai-model" title="' + esc(t('切换模型', 'Switch model')) + '"></button></span>' +
         '<div class="ai-model-menu" hidden></div>' +
@@ -557,6 +571,7 @@
     sendBtn = panel.querySelector('.ai-input button[type=submit]');
     modelLabel = panel.querySelector('.ai-model');
     scopeSel = panel.querySelector('.ai-scope');
+    if (QUIZ) { scopeSel.hidden = true; panel.querySelector('.ai-ctx-label').textContent = '📎 ' + t('AI 看到：这道题、解析和对应课文', 'AI sees: this question, its explanation and lesson'); }
 
     panel.querySelector('.ai-close').addEventListener('click', function () { close(); });
     panel.querySelector('.ai-back').addEventListener('click', function () { close(); });
@@ -642,12 +657,12 @@
     scopeSel.value = String(scope);
     scopeSel.classList.toggle('ai-scope-narrow', scope >= 0);
     var sc = effectiveScope();
-    inputEl.placeholder = sc >= 0 ? t('问关于「' + sectionTitle(sc) + '」的问题…', 'Ask about "' + sectionTitle(sc) + '"…') : t('问关于这一课的任何问题…', 'Ask anything about this lesson…');
+    inputEl.placeholder = QUIZ ? t('接着问这道题…', 'Ask more about this question…') : sc >= 0 ? t('问关于「' + sectionTitle(sc) + '」的问题…', 'Ask about "' + sectionTitle(sc) + '"…') : t('问关于这一课的任何问题…', 'Ask anything about this lesson…');
   }
   // Keep the "follow my reading" label current: on scroll, and again whenever
   // the reader comes back to the panel (scroll events can be throttled).
   function refreshAuto() {
-    if (scope !== -2 || !scopeSel) return;
+    if (QUIZ || scope !== -2 || !scopeSel) return;
     scopeSel.options[0].text = autoLabel();
     var sc = effectiveScope();
     inputEl.placeholder = sc >= 0 ? t('问关于「' + sectionTitle(sc) + '」的问题…', 'Ask about "' + sectionTitle(sc) + '"…') : t('问关于这一课的任何问题…', 'Ask anything about this lesson…');
@@ -688,6 +703,10 @@
     msgsEl.innerHTML = '';
     panel.querySelector('.ai-input').hidden = false;
     panel.querySelector('.ai-clear').hidden = !history.length;
+    if (!history.length && QUIZ) {
+      msgsEl.innerHTML = '<div class="ai-note">' + esc(t('答完一道题后，点解析里的「🤖 AI 讲解」，AI 会针对你选的选项讲为什么错、怎么区分，还可以接着追问。', 'After answering a question, press "🤖 Explain with AI" under the explanation: the AI explains why your choice was wrong and how to tell them apart, and you can ask follow-ups.')) + '</div>';
+      return;
+    }
     if (!history.length) {
       var quick = isEn()
         ? ['Explain the hardest grammar point in this lesson simply', 'Give me 5 fresh example sentences using this lesson’s grammar', 'Quiz me with 5 multiple-choice questions', 'How do the grammar points in this lesson differ from each other?']
@@ -820,7 +839,7 @@
     }
     // A 讲解 button press stands alone: earlier turns would only muddle it, cost more,
     // and keep the relay from answering it from cache (same sentence = same request).
-    var msgs = (source === 'example' ? history.slice(-1) : history.slice(-(cfg.active === 'jpnotes' ? FREE_SEND_TURNS : SEND_TURNS) * 2)).map(function (m) { return { role: m.role, content: m.content }; });
+    var msgs = (source === 'example' || source === 'quiz' ? history.slice(-1) : history.slice(-(cfg.active === 'jpnotes' ? FREE_SEND_TURNS : SEND_TURNS) * 2)).map(function (m) { return { role: m.role, content: m.content }; });
     var sc = source === 'quick' ? -1 : effectiveScope();
     var sys = systemPrompt(sc);
     var call = prov.kind === 'anthropic' ? callAnthropic : callOpenAI;
@@ -1232,6 +1251,24 @@
       speak.parentNode.insertBefore(b, speak.nextSibling);
     });
   }
+
+  /* ── quiz pages: explain the question just answered ──
+   * ctx is the question as plain text (stem, options, answer, the learner's
+   * choice, the fixed explanation, the linked lesson); prompt is the first
+   * message. A new question starts a fresh chat, so follow-ups stay on it.
+   * The first request has no times or dates in it, so the same question and
+   * choice is the same request and the free relay can answer from cache. */
+  if (QUIZ) window.jpAI = {
+    explain: function (ctx, prompt) {
+      if (busy) stop();
+      article.textContent = ctx; wholeCache = null; sectionCache = null;
+      history = []; saveHist(history);
+      if (!panel) build(); else renderAll();
+      pendingSource = 'quiz';
+      track('ai_select', { chars: ctx.length, scoped: true, mode: 'quiz' });
+      open(); send(prompt);
+    }
+  };
 
   // The 🔊 buttons are added on DOMContentLoaded by the page's TTS script;
   // wait a tick so they exist before the 讲解 buttons go in next to them.

@@ -295,6 +295,65 @@
     if (btn) btn.disabled = cur.picked.indexOf(null) >= 0;
   }
 
+  /* ── 🤖 AI 讲解: hand the answered question to the AI panel (ai-assistant.js) ──
+   * Only after answering (in a mock test: only in the review after submitting).
+   * The context is plain text: passage, question, options, the right answer,
+   * the reader's choice, the fixed explanation and the linked lesson section
+   * (fetched from the lesson page). Nothing time- or reader-specific goes in,
+   * so the same question + choice is the same request and can come from cache. */
+  function aiBtn(primary) {
+    if (!window.jpAI) return '';
+    return '<p class="q-ai"><button class="q-btn' + (primary ? ' q-btn-primary' : '') + '" data-act="ai">🤖 ' + t('AI 讲解', 'Explain with AI') + '</button>' +
+      (primary ? ' <span class="q-muted">' + t('针对你选的选项讲，可以追问', 'about the option you picked; ask follow-ups') + '</span>' : '') + '</p>';
+  }
+  function plainJa(html) {
+    var d = document.createElement('div');
+    d.innerHTML = String(html || '').replace(/<br\s*\/?>/g, '\n').replace(/<<([^<>]+)>>/g, '「$1」');
+    d.querySelectorAll('rt, rp').forEach(function (n) { n.remove(); });
+    d.querySelectorAll('u, .q-ul').forEach(function (n) { n.textContent = '「' + n.textContent + '」'; });
+    return d.textContent.trim();
+  }
+  var lessonText = {};
+  function refText(ref) {
+    var p = D.refs && D.refs[ref];
+    if (!p) return Promise.resolve('');
+    var key = p.lesson + '#' + p.slug;
+    if (lessonText[key] != null) return Promise.resolve(lessonText[key]);
+    return fetch(LESSON_BASE + p.lesson + '/').then(function (r) { return r.text(); }).then(function (html) {
+      var doc = new DOMParser().parseFromString(html, 'text/html'), h = doc.getElementById(p.slug), out = [];
+      if (h && /^H[23]$/.test(h.tagName)) {
+        for (var n = h; n && !(n !== h && n.tagName === h.tagName); n = n.nextElementSibling) {
+          n.querySelectorAll('rt, rp, .speak-btn, .quiz-link, script').forEach(function (x) { x.remove(); });
+          out.push(n.textContent.replace(/[ \t]+/g, ' ').trim());
+        }
+      }
+      return (lessonText[key] = out.join('\n').replace(/\n{2,}/g, '\n').slice(0, 6000));
+    }).catch(function () { return (lessonText[key] = ''); });
+  }
+  function aiExplain(q, choice, guess, typeJa, passages) {
+    var L = [], P = q.passage && passages && passages[q.passage];
+    if (P) L.push(t('【文章】', '[Text]') + '\n' + plainJa((P.intro ? P.intro + '<br>' : '') + P.html).replace(/\[\[(\d+)\]\]/g, '（$1）'));
+    L.push(t('【题型】', '[Question type]') + ' ' + typeJa);
+    L.push(t('【题目】', '[Question]') + ' ' + (q.type === 'bunshou' ? t('文章里的空格 ', 'blank ') + q.blank : plainJa(q.stem || q.q).replace(/\[_\]/g, '＿＿').replace(/\[★\]/g, '＿★＿')));
+    L.push(t('【选项】', '[Options]') + '\n' + q.options.map(function (o, i) { return (i + 1) + '. ' + plainJa(o); }).join('\n'));
+    if (q.type === 'narabe') L.push(t('【正确顺序】', '[Correct order]') + ' ' + q.order.map(function (i) { return plainJa(q.options[i]); }).join(' / '));
+    L.push(t('【正确答案】', '[Correct answer]') + ' ' + (q.answer + 1) + '. ' + plainJa(q.options[q.answer]));
+    L.push(t('【学习者选的】', '[Learner chose]') + ' ' + (choice == null ? t('没答', 'no answer') : (choice + 1) + '. ' + plainJa(q.options[choice])) + (guess ? t('（标了"蒙的"）', ' (marked as a guess)') : ''));
+    if (q.full) L.push(t('【完整句子】', '[Full sentence]') + ' ' + plainJa(q.full));
+    L.push(t('【固定解析】', '[Explanation]') + ' ' + bi(q.why) + (q.wrong ? '\n' + q.wrong.map(function (w, i) { return w ? (i + 1) + '. ' + bi(w) : ''; }).filter(Boolean).join('\n') : ''));
+    var ok = choice === q.answer, prompt = choice == null
+      ? t('这题我没答，帮我讲清楚为什么是 ' + (q.answer + 1) + '，下次怎么判断。', 'I didn’t answer this one. Explain why it’s ' + (q.answer + 1) + ' and how to tell next time.')
+      : !ok ? t('我选了 ' + (choice + 1) + '「' + plainJa(q.options[choice]) + '」，为什么不对？它和正确答案的区别是什么？', 'I chose ' + (choice + 1) + ' 「' + plainJa(q.options[choice]) + '」. Why is it wrong, and how does it differ from the right answer?')
+      : guess ? t('这题我是蒙的，帮我讲清楚为什么是 ' + (q.answer + 1) + '，下次怎么判断。', 'I guessed this one. Explain why it’s ' + (q.answer + 1) + ' and how to tell next time.')
+      : t('我答对了。再讲讲这几个选项的区别。', 'I got it right. Explain how these options differ.');
+    track('quiz_ai', { id: q.id, ok: ok, guess: !!guess });
+    Promise.all((q.refs || []).filter(function (r) { return !/#vocab$/.test(r); }).slice(0, 2).map(refText)).then(function (secs) {
+      secs = secs.filter(Boolean);
+      if (secs.length) L.push(t('【对应课文】', '[Lesson section]') + '\n' + secs.join('\n---\n'));
+      window.jpAI.explain(L.join('\n\n'), prompt);
+    });
+  }
+
   function submit(choice) {
     if (cur.done) return;
     cur.done = true;
@@ -328,8 +387,11 @@
     var g = app.querySelector('[data-act="guess"]'); if (g) g.disabled = true;
     var sb = app.querySelector('[data-act="submit"]'); if (sb) sb.remove();
 
+    cur.choice = choice;
     var h = '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (ok ? '✓ ' + t('正确', 'Correct') : '✗ ' + t('正确答案是 ', 'The answer is ') + (q.answer + 1) + ' <span lang="ja">' + q.options[q.answer] + '</span>') +
       (ok && cur.guess ? ' <small>' + t('（蒙对了，已加入错题本，明天再考一次）', '(a lucky guess — it’s on your review list for tomorrow)') + '</small>' : '') + '</p>';
+    var aiFirst = !ok || cur.guess;
+    if (aiFirst) h += aiBtn(true);
     h += '<div class="q-explain"><p>' + esc(bi(q.why)) + '</p>';
     if (q.type !== 'narabe') {
       var rows = q.wrong.map(function (w, i) { return w ? { i: i, w: w } : null; }).filter(Boolean);
@@ -343,6 +405,7 @@
       var p = D.refs[r];
       return '📖 <a href="' + LESSON_BASE + p.lesson + '/#' + encodeURI(p.slug) + '" target="_blank" rel="noopener">' + esc(EN ? p.en : p.zh) + '</a>';
     }).join(' · ') + '</p>';
+    if (!aiFirst) h += aiBtn(false);
     h += '<details class="q-report"><summary>' + t('这题有问题？', 'Something wrong with this question?') + '</summary>' +
       [['answer', '答案不对', 'The answer is wrong'], ['two', '有两个对的', 'Two options work'], ['stem', '题目不通顺', 'The question reads badly'], ['other', '其他', 'Something else']]
         .map(function (r) { return '<button class="q-btn" data-act="report" data-k="' + r[0] + '">' + t(r[1], r[2]) + '</button>'; }).join(' ') +
@@ -635,7 +698,8 @@
           h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><div class="q-opt' + (i === kq.answer ? ' q-ok' : i === a.c ? ' q-bad' : '') + '"><span class="q-num">' + (i + 1) + '</span>' + o + '</div></li>'; }).join('') + '</ol>';
           h += '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 蒙对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + '</p>';
           h += '<div class="q-explain"><p>' + esc(bi(kq.why)) + '</p>' + (q.type !== 'narabe' ? '<ul class="q-wrong">' + kq.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + q.options[i] + '</b> — ' + esc(bi(w)) + '</li>' : ''; }).join('') + '</ul>' : '') +
-            (kq.full ? '<p class="q-full" lang="ja">' + kq.full + '</p>' : '') + (kq.tr ? '<p class="q-muted">' + esc(bi(kq.tr)) + '</p>' : '') + '</div></div>';
+            (kq.full ? '<p class="q-full" lang="ja">' + kq.full + '</p>' : '') + (kq.tr ? '<p class="q-muted">' + esc(bi(kq.tr)) + '</p>' : '') + '</div>' +
+            (window.jpAI ? '<p class="q-ai"><button class="q-btn" data-act="m-ai" data-k="' + id + '">🤖 ' + t('AI 讲解', 'Explain with AI') + '</button></p>' : '') + '</div>';
         });
       });
     });
@@ -685,6 +749,12 @@
     else if (act === 'm-pause') pause(false);
     else if (act === 'm-unpause') unpause();
     else if (act === 'm-review') mockReview(k);
+    else if (act === 'm-ai') {
+      var mq = {}, a2 = M.att.answers[k] || {}, P2 = {};
+      for (var x in Q[k]) mq[x] = Q[k][x]; for (var y in M.key.questions[k]) mq[y] = M.key.questions[k][y];
+      if (mq.passage) { P2[mq.passage] = D.passages[mq.passage]; }
+      aiExplain(mq, a2.c == null ? null : a2.c, a2.g, M.test.types[mq.type].ja, P2);
+    }
     else if (act === 'm-back-result') mockResult(M.set, M.att, M.key);
   });
   if (MOCK) app.addEventListener('change', function (e) {
@@ -877,6 +947,7 @@
     else if (act === 'slot' && !cur.done) { cur.picked[+el.getAttribute('data-k')] = null; fillSlots(); }
     else if (act === 'submit') { var star = [].indexOf.call(app.querySelectorAll('.q-slot'), app.querySelector('.q-star')); submit(cur.picked[star]); }
     else if (act === 'next') ask();
+    else if (act === 'ai') aiExplain(cur.q, cur.choice, cur.guess, D.types[cur.q.type].ja, D.passages);
     // "这题有问题？": pick a reason, optionally say more, send.
     else if (act === 'report') {
       el.parentNode.querySelectorAll('[data-act="report"]').forEach(function (b) { b.classList.toggle('q-picked', b === el); });

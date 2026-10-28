@@ -78,7 +78,7 @@ export default {
     // Only the fields the panel sends; anything else in the request is dropped.
     const messages = body.messages.map((m) => ({ role: m.role === 'assistant' ? 'assistant' : m.role === 'system' ? 'system' : 'user', content: String(m.content || '') }));
     const stream = !!body.stream;
-    const source = /^(typed|quick|selection|example|retry)$/.test(body.source) ? body.source : 'other';
+    const source = /^(typed|quick|selection|example|quiz|retry)$/.test(body.source) ? body.source : 'other';
     const turn = messages.filter((m) => m.role === 'user').length > 1 ? 'followup' : 'first';
     const count = (outcome, neurons) => { try { env.USAGE && env.USAGE.writeDataPoint({ indexes: [source], blobs: [source, turn, outcome], doubles: [1, neurons || 0] }); } catch (e) {} };
     const cacheable = stream && messages.length === 2 && messages[0].role === 'system' && messages[1].role === 'user';
