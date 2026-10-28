@@ -22,6 +22,9 @@ const KuromojiAnalyzer = KuromojiMod.default || KuromojiMod;
 const SITE = "https://jpnotes.dev/";
 const SETTINGS_JS_HASH = crypto.createHash("md5").update(fs.readFileSync(path.join(__dirname, "site", "settings-modal.js"))).digest("hex").slice(0, 8);
 const OUT_DIR = path.join(__dirname, "dist", "anki");
+// No strikethrough (the notes write 越~越~), same as build.js.
+const ankiMarked = new (require("marked").Marked)({ gfm: true });
+ankiMarked.use({ renderer: { del(token) { const t = token.raw.startsWith("~~") ? "~~" : "~"; return t + this.parser.parseInline(token.tokens) + t; } } });
 const LEVELS = ["N5", "N4", "N3", "N2", "N1"].filter((l) => fs.existsSync(path.join(__dirname, "grammar", l)));
 
 // Kuroshiro furigana — same engine as build.js so card readings match
@@ -89,7 +92,7 @@ function stripMd(text) {
 // Lesson links become absolute so they work from /n5-cards/.
 function mdHtml(md) {
   if (!md) return "";
-  return require("marked").marked.parse(md).replace(/href="\//g, 'href="https://jpnotes.dev/').trim();
+  return ankiMarked.parse(md).replace(/href="\//g, 'href="https://jpnotes.dev/').trim();
 }
 
 function extractBilingual(text) {

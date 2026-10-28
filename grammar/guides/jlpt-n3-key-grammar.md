@@ -419,16 +419,16 @@ The N3 grammar part has three question types: **sentence grammar 1** (文の文�
 Choose the best option (a, b or c) for each blank.
 :::
 
-1. 家を出た（　　）、雨が降り出した。　a. 次第　b. とたん　c. うちに
+1. 家を出た（　　）、雨が降り出した。　a. 次第　b. うちに　c. とたん
 2. 資料が届き（　　）、すぐにお送りします。　a. 次第　b. とたん　c. 最中に
-3. 先輩が手伝ってくれた（　　）、仕事が早く終わった。　a. せいで　b. おかげで　c. くせに
-4. 引き受けた（　　）、最後まで責任を持ってやるつもりだ。　a. からには　b. ものの　c. どころか
-5. 彼は何も知らない（　　）、偉そうに話す。　a. からには　b. くせに　c. にしては
-6. この町の人口は年々減り（　　）。　a. つつある　b. 一方だ　c. そうもない
-7. 台風が近づいているため、川の水があふれる（　　）。　a. かねる　b. おそれがある　c. 一方だ
+3. 先輩が手伝ってくれた（　　）、仕事が早く終わった。　a. おかげで　b. せいで　c. くせに
+4. 引き受けた（　　）、最後まで責任を持ってやるつもりだ。　a. ものの　b. からには　c. どころか
+5. 彼は何も知らない（　　）、偉そうに話す。　a. からには　b. にしては　c. くせに
+6. この町の人口は年々減り（　　）。　a. 一方だ　b. つつある　c. そうもない
+7. 台風が近づいているため、川の水があふれる（　　）。　a. おそれがある　b. かねる　c. 一方だ
 8. 忙しくて、休む（　　）、昼ご飯を食べる時間もない。　a. どころか　b. ばかりか　c. ほど
 9. 体調が悪いが、大事な会議なので休む（　　）。　a. ざるを得ない　b. ずにはいられない　c. わけにはいかない
-10. 彼は小学生（　　）、難しい漢字をよく知っている。　a. として　b. にとって　c. にしては
+10. 彼は小学生（　　）、難しい漢字をよく知っている。　a. にしては　b. として　c. にとって
 
 ### 答案||Answers
 
@@ -436,28 +436,28 @@ Choose the best option (a, b or c) for each blank.
 <summary>点击查看答案 / Show answers</summary>
 
 :::zh
-1. **b. とたん** —— 刚出门就下雨，后项是意外发生的事。次第的后项必须是自己要做的事，而且接ます形。
+1. **c. とたん** —— 刚出门就下雨，后项是意外发生的事。次第的后项必须是自己要做的事，而且接ます形。
 2. **a. 次第** —— 接ます形「届き」，后项是自己要做的事（お送りします）。
-3. **b. おかげで** —— 结果是好的（工作早早做完），带感谢。
-4. **a. からには** —— 既然接下了，后项是决心（やるつもりだ）。
-5. **b. くせに** —— 明明什么都不知道，却摆架子说话，是在指责别人。
-6. **a. つつある** —— 「減り」是ます形，接つつある。一方だ要接辞書形（減る一方だ）；そうもない是"看起来不会……"，和「年々」（逐年）矛盾。
-7. **b. おそれがある** —— 有发生坏事的危险，接辞書形「あふれる」，新闻、预报的说法。かねる接ます形，而且意思是"难以……"；一方だ说的是已经在发生的单向变化，不是"可能会"。
+3. **a. おかげで** —— 结果是好的（工作早早做完），带感谢。
+4. **b. からには** —— 既然接下了，后项是决心（やるつもりだ）。
+5. **c. くせに** —— 明明什么都不知道，却摆架子说话，是在指责别人。
+6. **b. つつある** —— 「減り」是ます形，接つつある。一方だ要接辞書形（減る一方だ）；そうもない是"看起来不会……"，和「年々」（逐年）矛盾。
+7. **a. おそれがある** —— 有发生坏事的危险，接辞書形「あふれる」，新闻、预报的说法。かねる接ます形，而且意思是"难以……"；一方だ说的是已经在发生的单向变化，不是"可能会"。
 8. **a. どころか** —— 别说休息，连吃午饭的时间都没有，前后方向相反。ばかりか是同方向的追加。
 9. **c. わけにはいかない** —— 重要的会议，出于责任不能请假。ざるを得ない要接ない形（休まざるを得ない），意思也变成"不得不请假"。
-10. **c. にしては** —— 就小学生这个身份来说，出乎意料。
+10. **a. にしては** —— 就小学生这个身份来说，出乎意料。
 :::
 :::en
-1. **b. とたん** — the rain started the moment I left: an unexpected event. 次第 needs an action you'll do yourself, and follows the ます-stem.
+1. **c. とたん** — the rain started the moment I left: an unexpected event. 次第 needs an action you'll do yourself, and follows the ます-stem.
 2. **a. 次第** — it follows the ます-stem 届き, and the second half is the speaker's own action (お送りします).
-3. **b. おかげで** — a good result (the work finished early), with gratitude.
-4. **a. からには** — now that I've taken it on, followed by a resolve (やるつもりだ).
-5. **b. くせに** — he knows nothing yet talks like an expert: criticism of someone else.
-6. **a. つつある** — 減り is the ます-stem, which takes つつある. 一方だ needs the dictionary form (減る一方だ); そうもない means "unlikely to…", which contradicts 年々 (year after year).
-7. **b. おそれがある** — a risk of something bad, after the dictionary form あふれる; the language of news and forecasts. かねる follows the ます-stem and means "can't"; 一方だ describes a one-way change already under way, not a risk.
+3. **a. おかげで** — a good result (the work finished early), with gratitude.
+4. **b. からには** — now that I've taken it on, followed by a resolve (やるつもりだ).
+5. **c. くせに** — he knows nothing yet talks like an expert: criticism of someone else.
+6. **b. つつある** — 減り is the ます-stem, which takes つつある. 一方だ needs the dictionary form (減る一方だ); そうもない means "unlikely to…", which contradicts 年々 (year after year).
+7. **a. おそれがある** — a risk of something bad, after the dictionary form あふれる; the language of news and forecasts. かねる follows the ます-stem and means "can't"; 一方だ describes a one-way change already under way, not a risk.
 8. **a. どころか** — far from resting, there's not even time for lunch: the two halves point in opposite directions. ばかりか adds something in the same direction.
 9. **c. わけにはいかない** — it's an important meeting, so out of responsibility I can't take the day off. ざるを得ない would need the ない-stem (休まざるを得ない) and would mean the opposite: "have no choice but to stay home".
-10. **c. にしては** — surprising for someone who is only in primary school.
+10. **a. にしては** — surprising for someone who is only in primary school.
 :::
 
 </details>

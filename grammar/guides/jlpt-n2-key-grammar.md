@@ -491,16 +491,16 @@ Both follow the masu-stem and look like a positive/negative pair, but they are t
 Choose the best option (a–d) for each blank.
 :::
 
-1. 何度も失敗を重ねた（　　）、ついに新しい薬の開発に成功した。　a. あげく　b. 末に　c. ばかりに　d. とたんに
-2. 子どもだ（　　）、何をしても許されるわけではない。　a. からには　b. からといって　c. だけあって　d. ものの
-3. 急いでいる時（　　）、電車が遅れる。　a. に限って　b. に限る　c. に限らず　d. にかけては
+1. 何度も失敗を重ねた（　　）、ついに新しい薬の開発に成功した。　a. あげく　b. ばかりに　c. 末に　d. とたんに
+2. 子どもだ（　　）、何をしても許されるわけではない。　a. からといって　b. からには　c. だけあって　d. ものの
+3. 急いでいる時（　　）、電車が遅れる。　a. に限る　b. に限らず　c. にかけては　d. に限って
 4. 彼の話は単なる言い訳に（　　）。　a. ほかならない　b. 過ぎない　c. 越したことはない　d. 反する
-5. この件は部長の許可をもらわ（　　）、先に進められない。　a. ないことには　b. ないものの　c. ないものか　d. ないどころか
+5. この件は部長の許可をもらわ（　　）、先に進められない。　a. ないものの　b. ないものか　c. ないことには　d. ないどころか
 6. 睡眠不足が続くと、病気になり（　　）。　a. かねる　b. かねない　c. がたい　d. 抜く
-7. 薬を飲んだが、熱が下がる（　　）、かえって上がってしまった。　a. ものの　b. どころか　c. ばかりか　d. 以上
+7. 薬を飲んだが、熱が下がる（　　）、かえって上がってしまった。　a. ものの　b. ばかりか　c. 以上　d. どころか
 8. 期待が大きかった（　　）、落選の知らせはショックだった。　a. だけに　b. だけあって　c. からといって　d. ものなら
-9. 父は頑固だから、一度決めたことを変える（　　）。　a. わけがない　b. わけではない　c. ものだから　d. に限る
-10. この講座は、年齢や経験（　　）、誰でも受けられる。　a. を問わず　b. をめぐって　c. に応じて　d. に反して
+9. 父は頑固だから、一度決めたことを変える（　　）。　a. わけではない　b. ものだから　c. わけがない　d. に限る
+10. この講座は、年齢や経験（　　）、誰でも受けられる。　a. をめぐって　b. に応じて　c. に反して　d. を問わず
 
 ### 答案||Answers
 
@@ -508,28 +508,28 @@ Choose the best option (a–d) for each blank.
 <summary>点击查看答案 / Show answers</summary>
 
 :::zh
-1. **b. 末に** —— 失败了很多次、最终成功，过程艰辛而结果是好的；あげく 后面一般是坏结果。
-2. **b. からといって** —— 后面是「わけではない」，"不能因为是孩子就……"。
-3. **a. に限って** —— 句中＋倒霉的事＝"偏偏"；に限る 只能放句末。
+1. **c. 末に** —— 失败了很多次、最终成功，过程艰辛而结果是好的；あげく 后面一般是坏结果。
+2. **a. からといって** —— 后面是「わけではない」，"不能因为是孩子就……"。
+3. **d. に限って** —— 句中＋倒霉的事＝"偏偏"；に限る 只能放句末。
 4. **b. 過ぎない** —— 「単なる」是往小里说，用 に過ぎない。
-5. **a. ないことには** —— "不拿到许可就无法推进"，后面是否定。
+5. **c. ないことには** —— "不拿到许可就无法推进"，后面是否定。
 6. **b. かねない** —— 描述可能发生的坏结果；かねる 是"难以做到"。
-7. **b. どころか** —— "非但没退烧，反而升高了"，前后方向相反；ばかりか 是同方向追加。
+7. **d. どころか** —— "非但没退烧，反而升高了"，前后方向相反；ばかりか 是同方向追加。
 8. **a. だけに** —— "正因为期待大，所以更受打击"，后面是负面，だけあって 不行。
-9. **a. わけがない** —— "固执的父亲不可能改变决定"；わけではない 是部分否定，意思不通。
-10. **a. を問わず** —— "不论年龄、经验"，前面常是并列的条件。
+9. **c. わけがない** —— "固执的父亲不可能改变决定"；わけではない 是部分否定，意思不通。
+10. **d. を問わず** —— "不论年龄、经验"，前面常是并列的条件。
 :::
 :::en
-1. **b. 末に** — many failures, then success: a long, hard process with a good result; あげく normally leads to a bad one.
-2. **b. からといって** — 「わけではない」 follows: "being a child doesn't mean anything goes".
-3. **a. に限って** — mid-sentence with bad luck = "of all times"; に限る only ends a sentence.
+1. **c. 末に** — many failures, then success: a long, hard process with a good result; あげく normally leads to a bad one.
+2. **a. からといって** — 「わけではない」 follows: "being a child doesn't mean anything goes".
+3. **d. に限って** — mid-sentence with bad luck = "of all times"; に限る only ends a sentence.
 4. **b. 過ぎない** — 「単なる」 plays it down, so に過ぎない.
-5. **a. ないことには** — "unless we get approval, we can't proceed"; a negative follows.
+5. **c. ないことには** — "unless we get approval, we can't proceed"; a negative follows.
 6. **b. かねない** — describes a bad outcome that might happen; かねる means "unable to bring oneself to".
-7. **b. どころか** — "far from going down, the fever went up": the two halves point opposite ways; ばかりか adds in the same direction.
+7. **d. どころか** — "far from going down, the fever went up": the two halves point opposite ways; ばかりか adds in the same direction.
 8. **a. だけに** — "precisely because expectations were high, it hit all the harder": the result is negative, so だけあって won't work.
-9. **a. わけがない** — "my stubborn father would never change his mind"; わけではない is a partial denial and doesn't fit.
-10. **a. を問わず** — "regardless of age or experience"; it often follows a pair of conditions.
+9. **c. わけがない** — "my stubborn father would never change his mind"; わけではない is a partial denial and doesn't fit.
+10. **d. を問わず** — "regardless of age or experience"; it often follows a pair of conditions.
 :::
 
 </details>

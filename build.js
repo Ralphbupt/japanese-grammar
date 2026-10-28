@@ -1071,7 +1071,7 @@ function tagElements(html) {
       // Japanese if any =/→/： segment is Japanese: 「これはつまらないだった。
       // → ❌ 错！…」 keeps its furigana; stripChineseSegments later drops the
       // readings from the Chinese segment.
-      if (outsideParens.split(/[=＝→：]/).some(isJapaneseText)) {
+      if (outsideParens.split(/[=＝→：—]/).some(isJapaneseText)) {
         // Japanese element → tag it
         const tagged = openTag.replace(/^<(\w+)/, '<$1 data-ja');
         return tagged + content + closeTag;
@@ -1405,7 +1405,7 @@ function splitGloss(str) {
     else if (ch === ">") inTag = false;
     else if (!inTag && (ch === "（" || ch === "(")) depth++;
     else if (!inTag && (ch === "）" || ch === ")")) depth = Math.max(0, depth - 1);
-    else if (!inTag && depth === 0 && "=＝→：".includes(ch)) {
+    else if (!inTag && depth === 0 && "=＝→：—".includes(ch)) {
       out.push(cur, ch);
       cur = "";
       continue;
@@ -1417,13 +1417,16 @@ function splitGloss(str) {
 }
 
 // Strip ruby from Chinese glosses inside a Japanese element: a segment after
-// =, → or ： that is Chinese (ようにしている = 一直在注意, → ❌ 错！…).
+// =, →, ： or — that is Chinese (〜ものを — 本来就好了，可是却) (ようにしている = 一直在注意, → ❌ 错！…).
 // Quoted 「…」 Japanese doesn't count as kana.
 function stripChineseSegments(html) {
   return html.replace(/(<(li|p|td|th|dd|dt|blockquote|summary)\b[^>]*\bdata-ja\b[^>]*>)([\s\S]*?)(<\/\2>)/g,
-    (m, open, tag, content, close) => {
+    (m, open, tag, content, close) => open + content.split(/(<\/span>\s*<span class="lang-(?:zh|en)"[^>]*>)/).map((piece, k) => (k % 2 ? piece : stripPiece(piece))).join("") + close);
+}
+// One language's half of an element (「中文 // English」 items are two spans).
+function stripPiece(content) {
       const parts = splitGloss(content);
-      if (parts.length === 1) return m;
+      if (parts.length === 1) return content;
       const out = parts.map((seg, i) => {
         if (i % 2) return seg;
         const plain = seg
@@ -1435,8 +1438,7 @@ function stripChineseSegments(html) {
         }
         return seg;
       });
-      return open + out.join("") + close;
-    });
+      return out.join("");
 }
 
 // Process HTML:
@@ -1639,6 +1641,9 @@ async function main() {
   const today = new Date().toISOString().slice(0, 10);
   const groups = discoverFiles();
   const marked = new Marked({ gfm: true, breaks: false });
+  // No strikethrough: the notes write ranges as 越~越~ / 别说~就连~也, which GFM
+  // would turn into <del>. Put the tildes back.
+  marked.use({ renderer: { del(token) { const t = token.raw.startsWith("~~") ? "~~" : "~"; return t + this.parser.parseInline(token.tokens) + t; } } });
 
   const sidebarHtml = [];
   // Practice / mock test / flashcard links for a level that has questions.
@@ -1957,6 +1962,15 @@ async function main() {
   </div>`
     );
   }
+  // 做题 group, like 专题: the practice hub, then each level's practice, mock test and flashcards.
+  const practiceItems = QUIZ_LINKS ? QUIZ_LEVELS.flatMap((lv) => quizPages(lv).map((q) => ({ ...q, lv }))) : [];
+  if (practiceItems.length) sidebarHtml.push(`<div class="nav-group-wrap" data-level="practice">
+    <button type="button" class="nav-group" aria-expanded="false"><span class="nav-group-label"><span class="lang-zh">做题</span><span class="lang-en">Practice</span></span><span class="nav-caret" aria-hidden="true">▸</span></button>
+    <div class="nav-group-items">
+      <a class="nav-item nav-overview" href="${SITE_PATH}practice/"><span class="lang-zh">做题总览</span><span class="lang-en">Practice hub</span></a>
+      ${practiceItems.map((q) => `<a class="nav-item" href="${q.href}"><span class="lang-zh">${q.lv} ${q.zh.replace(/^\S+\s/, "")}</span><span class="lang-en">${q.lv} ${q.en.replace(/^\S+\s/, "")}</span></a>`).join("\n      ")}
+    </div>
+  </div>`);
 
   // ─── Cross-link related grammar points between lessons ───
   // Build an index: grammar term → { lessonId, slug }
@@ -2253,6 +2267,7 @@ async function main() {
 
   // Mark the current lesson/level entry active.
   var item = slug ? (sidebar.querySelector('a[data-target="' + slug + '"]')
+          || sidebar.querySelector('.nav-group-wrap a[href$="/' + slug + '/"]')
           || sidebar.querySelector('a[href$="/' + slug + '/"]')) : null;
   if (item) item.classList.add('active');
 

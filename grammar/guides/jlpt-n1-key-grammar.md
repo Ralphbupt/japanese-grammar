@@ -388,57 +388,57 @@ Each set has a full comparison table under "Key Comparisons" in the [Lesson 92 N
 :::zh
 选出最恰当的一项填入（　）。
 
-1. 幕が上がる（　）、会場から大きな拍手が起こった。　a. なり　b. や否や　c. そばから　d. 次第
+1. 幕が上がる（　）、会場から大きな拍手が起こった。　a. なり　b. そばから　c. や否や　d. 次第
 2. この難しい交渉をまとめられるのは、彼（　）ほかにいない。　a. をおいて　b. をよそに　c. を皮切りに　d. をもって
-3. 予算が限られているので、一円（　）無駄にはできない。　a. ならでは　b. たりとも　c. にして　d. からある
+3. 予算が限られているので、一円（　）無駄にはできない。　a. ならでは　b. にして　c. からある　d. たりとも
 4. 早く相談してくれればよかった（　）、彼は一人で悩んでいた。　a. ものの　b. ものを　c. とあって　d. といえども
-5. 連休（　）、どの観光地も家族連れでにぎわっている。　a. とあれば　b. とあって　c. にひきかえ　d. なくして
+5. 連休（　）、どの観光地も家族連れでにぎわっている。　a. とあれば　b. にひきかえ　c. とあって　d. なくして
 6. 子どものため（　）、どんな苦労もいとわない。　a. とあって　b. とあれば　c. をよそに　d. はおろか
-7. 台風の接近により、大会は中止（　）。　a. を禁じ得なかった　b. を余儀なくされた　c. ずにはおかなかった　d. に堪えなかった
+7. 台風の接近により、大会は中止（　）。　a. を禁じ得なかった　b. ずにはおかなかった　c. に堪えなかった　d. を余儀なくされた
 8. 家族を失った彼の悲しみは、想像（　）。　a. にかたくない　b. までもない　c. に足る　d. べくもない
-9. 教師（　）者が、生徒の前で平気で嘘をつくとは。　a. として　b. ともあろう　c. ともなると　d. ならではの
-10. 客に向かってあんな口をきくとは、失礼（　）。　a. 極まりない　b. 限りだ　c. ならではだ　d. にかたくない
+9. 教師（　）者が、生徒の前で平気で嘘をつくとは。　a. として　b. ともなると　c. ともあろう　d. ならではの
+10. 客に向かってあんな口をきくとは、失礼（　）。　a. 限りだ　b. ならではだ　c. にかたくない　d. 極まりない
 :::
 :::en
 Choose the best option for each blank (　).
 
-1. 幕が上がる（　）、会場から大きな拍手が起こった。　a. なり　b. や否や　c. そばから　d. 次第
+1. 幕が上がる（　）、会場から大きな拍手が起こった。　a. なり　b. そばから　c. や否や　d. 次第
 2. この難しい交渉をまとめられるのは、彼（　）ほかにいない。　a. をおいて　b. をよそに　c. を皮切りに　d. をもって
-3. 予算が限られているので、一円（　）無駄にはできない。　a. ならでは　b. たりとも　c. にして　d. からある
+3. 予算が限られているので、一円（　）無駄にはできない。　a. ならでは　b. にして　c. からある　d. たりとも
 4. 早く相談してくれればよかった（　）、彼は一人で悩んでいた。　a. ものの　b. ものを　c. とあって　d. といえども
-5. 連休（　）、どの観光地も家族連れでにぎわっている。　a. とあれば　b. とあって　c. にひきかえ　d. なくして
+5. 連休（　）、どの観光地も家族連れでにぎわっている。　a. とあれば　b. にひきかえ　c. とあって　d. なくして
 6. 子どものため（　）、どんな苦労もいとわない。　a. とあって　b. とあれば　c. をよそに　d. はおろか
-7. 台風の接近により、大会は中止（　）。　a. を禁じ得なかった　b. を余儀なくされた　c. ずにはおかなかった　d. に堪えなかった
+7. 台風の接近により、大会は中止（　）。　a. を禁じ得なかった　b. ずにはおかなかった　c. に堪えなかった　d. を余儀なくされた
 8. 家族を失った彼の悲しみは、想像（　）。　a. にかたくない　b. までもない　c. に足る　d. べくもない
-9. 教師（　）者が、生徒の前で平気で嘘をつくとは。　a. として　b. ともあろう　c. ともなると　d. ならではの
-10. 客に向かってあんな口をきくとは、失礼（　）。　a. 極まりない　b. 限りだ　c. ならではだ　d. にかたくない
+9. 教師（　）者が、生徒の前で平気で嘘をつくとは。　a. として　b. ともなると　c. ともあろう　d. ならではの
+10. 客に向かってあんな口をきくとは、失礼（　）。　a. 限りだ　b. ならではだ　c. にかたくない　d. 極まりない
 :::
 
 :::zh
 **答案**
 
-1. **b** — 幕和观众主语不同，后项是一次性的过去事实；なり要求同一主语，そばから用于反复的事，次第后面不接过去事实。
+1. **c** — 幕和观众主语不同，后项是一次性的过去事实；なり要求同一主语，そばから用于反复的事，次第后面不接过去事实。
 2. **a** — 「をおいて」与「ほかに〜ない」呼应，表示"非他莫属"。
-3. **b** — 「一＋量词＋たりとも＋否定」，哪怕一日元也不能浪费。
+3. **d** — 「一＋量词＋たりとも＋否定」，哪怕一日元也不能浪费。
 4. **b** — 「〜ばよかった」＋ものを，表示遗憾和责备；ものの只是中性的转折。
-5. **b** — 因为是连休这一特殊情况，描写观察到的景象，用とあって；とあれば是假定，后面接意志。
+5. **c** — 因为是连休这一特殊情况，描写观察到的景象，用とあって；とあれば是假定，后面接意志。
 6. **b** — 「如果是为了孩子」，后项是说话人的决心，用とあれば。
-7. **b** — 台风这一客观情况迫使大会中止，前面是名词「中止」，用を余儀なくされる。
+7. **d** — 台风这一客观情况迫使大会中止，前面是名词「中止」，用を余儀なくされる。
 8. **a** — 固定搭配「想像にかたくない」（不难想象）；までもない接动词辞书形（想像するまでもない），意思也不对。
-9. **b** — 对已经发生的不相称行为表示惊讶和批评，句末是「〜とは」，用ともあろう者が。
-10. **a** — な形容词语干直接接極まりない；限りだ只说说话人自己的心情（うれしい限り、寂しい限り），不用来批评别人；ならでは 只用于正面评价（"只有……才有的"），不能接「失礼」。
+9. **c** — 对已经发生的不相称行为表示惊讶和批评，句末是「〜とは」，用ともあろう者が。
+10. **d** — な形容词语干直接接極まりない；限りだ只说说话人自己的心情（うれしい限り、寂しい限り），不用来批评别人；ならでは 只用于正面评价（"只有……才有的"），不能接「失礼」。
 :::
 :::en
 **Answers**
 
-1. **b** — The curtain and the audience are different subjects, and a one-off past fact follows; なり needs one subject, そばから is for repeated events, and 次第 can't take a past fact.
+1. **c** — The curtain and the audience are different subjects, and a one-off past fact follows; なり needs one subject, そばから is for repeated events, and 次第 can't take a past fact.
 2. **a** — 「をおいて」 pairs with 「ほかに〜ない」: "no one but him".
-3. **b** — 「一 + counter + たりとも + negative」: not a single yen can be wasted.
+3. **d** — 「一 + counter + たりとも + negative」: not a single yen can be wasted.
 4. **b** — 「〜ばよかった」 + ものを expresses regret and reproach; ものの is just a neutral "although".
-5. **b** — A long weekend is a special occasion and the main clause describes an observed scene, so とあって; とあれば is hypothetical and takes the speaker's will.
+5. **c** — A long weekend is a special occasion and the main clause describes an observed scene, so とあって; とあれば is hypothetical and takes the speaker's will.
 6. **b** — "If it's for my children" with the speaker's resolve after it: とあれば.
-7. **b** — An outside circumstance (the typhoon) forced the cancellation, and a noun (中止) comes before it: を余儀なくされる.
+7. **d** — An outside circumstance (the typhoon) forced the cancellation, and a noun (中止) comes before it: を余儀なくされる.
 8. **a** — The set phrase 「想像にかたくない」 ("not hard to imagine"); までもない takes a verb dict. form (想像するまでもない) and means something else anyway.
-9. **b** — Shock and criticism at unworthy behaviour that actually happened, ending in 「〜とは」: ともあろう者が.
-10. **a** — A na-adjective stem takes 極まりない directly; 限りだ is for the speaker's own feelings (うれしい限り, 寂しい限り), not for criticising others; ならでは is for praise only ("unique to…") and can't follow 「失礼」.
+9. **c** — Shock and criticism at unworthy behaviour that actually happened, ending in 「〜とは」: ともあろう者が.
+10. **d** — A na-adjective stem takes 極まりない directly; 限りだ is for the speaker's own feelings (うれしい限り, 寂しい限り), not for criticising others; ならでは is for praise only ("unique to…") and can't follow 「失礼」.
 :::
