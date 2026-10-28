@@ -502,11 +502,17 @@
   }
 
   /* ── panel width (drag the left edge; remembered per browser) ── */
-  var WIDTH_KEY = 'jp_ai_w';
-  function clampWidth(w) { return Math.max(340, Math.min(Math.round(window.innerWidth * 0.6), 760, Math.round(w))); }
+  // Quiz pages have a narrow question column, so the panel may take more of the
+  // screen there (and opens wider by default); each kind of page remembers its own width.
+  var WIDTH_KEY = QUIZ ? 'jp_ai_w_quiz' : 'jp_ai_w';
+  function clampWidth(w) { return Math.max(340, Math.min(window.innerWidth - (QUIZ ? 560 : 640), QUIZ ? 1100 : 900, Math.round(w))); }
   function applyWidth(w) { document.documentElement.style.setProperty('--ai-w', clampWidth(w) + 'px'); }
-  function resetWidth() { document.documentElement.style.removeProperty('--ai-w'); try { localStorage.removeItem(WIDTH_KEY); } catch (e) {} }
-  (function () { try { var w = +localStorage.getItem(WIDTH_KEY); if (w) applyWidth(w); } catch (e) {} })();
+  function defaultWidth() {
+    document.documentElement.style.removeProperty('--ai-w');
+    if (QUIZ && window.innerWidth >= 1100) applyWidth(window.innerWidth * 0.45);
+  }
+  function resetWidth() { defaultWidth(); try { localStorage.removeItem(WIDTH_KEY); } catch (e) {} }
+  (function () { var w = 0; try { w = +localStorage.getItem(WIDTH_KEY); } catch (e) {} if (w) applyWidth(w); else defaultWidth(); })();
   function initResize(handle) {
     var startX = 0, startW = 0, dragging = false;
     function move(e) {
