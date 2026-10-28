@@ -257,7 +257,7 @@ Restrictions:
 > 「親の心配をよそに遊び歩く」= 把父母的担心当耳旁风（批评）  
 > 「人目もかまわず泣き出した」= 不顾别人的眼光哭了起来（不在乎场合）  
 > 「足のけがをものともせず完走した」= 不顾腿伤跑完全程（赞赏）  
-> N1考题里，前面是「心配・反対・期待」时多选をよそに，前面是「困難・けが・悪天候」时多选をものともせず。
+> N1考题里，前面是「心配・期待」时多选をよそに，前面是「困難・けが・悪天候」时多选をものともせず。「反対・批判」两个都能接：「をよそに」是不理会，「をものともせず」是顶着压力（N2第61课「周囲の批判をものともせず」），要看后文是贬是褒。
 :::
 :::en
 | Expression | What comes before | Feel |
@@ -269,7 +269,7 @@ Restrictions:
 > 「親の心配をよそに遊び歩く」 = to go out partying, deaf to one's parents' worries (critical)  
 > 「人目もかまわず泣き出した」 = to burst into tears without caring who was looking (ignoring the setting)  
 > 「足のけがをものともせず完走した」 = to finish the race despite an injured leg (admiring)  
-> On the N1 test, 「心配・反対・期待」 before the blank usually means をよそに; 「困難・けが・悪天候」 usually means をものともせず.
+> On the N1 test, 「心配・期待」 before the blank usually means をよそに; 「困難・けが・悪天候」 usually means をものともせず. 「反対・批判」 can take either: をよそに means ignoring it, をものともせず means pushing through it (N2 Lesson 61: 「周囲の批判をものともせず」) — let the rest of the sentence decide whether it's criticism or praise.
 :::
 
 ---

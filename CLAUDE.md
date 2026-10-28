@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) and Codex (`AGENTS.m
 
 ## Project Overview
 
-This is a Japanese language learning project: structured JLPT N5–N2 grammar notes (written 2026-04-05 → 06-05 while the author learned them), published as jpnotes.dev with Anki decks and TTS audio. The author retakes N2 on 2026-12-06; the site's audience is now other learners (English-speaking first, Chinese second).
+This is a Japanese language learning project: structured JLPT N5–N1 grammar notes (N5–N2 written 2026-04-05 → 06-05 while the author learned them; N1 lessons 76–92 added 2026-10-28, agent-written and agent-reviewed, plan in `docs/n1-plan.md`), published as jpnotes.dev with Anki decks and TTS audio. The author retakes N2 on 2026-12-06; the site's audience is now other learners (English-speaking first, Chinese second).
 
 ## Website
 
@@ -42,7 +42,7 @@ The grammar notes are published as a static site at **https://jpnotes.dev/** (cu
 
 Key concepts:
 
-1. **File discovery**: Reads `grammar/N5/`, `grammar/N4/`, `grammar/N3/`, `grammar/N2/` directories
+1. **File discovery**: Reads `grammar/N5/` … `grammar/N1/` directories
 2. **Sidebar titles**: `JA_TITLES` maps file IDs (e.g. `lesson01`) to Japanese sidebar labels
 3. **SEO keywords**: `LESSON_KEYWORDS` maps file IDs to per-lesson keyword strings
 4. **Furigana**: kuroshiro adds ruby annotations to `data-ja` elements. Chinese text inside （…） is protected
@@ -105,6 +105,7 @@ grammar/
   N4/   lesson18-lesson34  (17 lessons incl. keigo 27/28/29, week 3-4)
   N3/   lesson35-lesson58  (24 lessons, week 5-6)
   N2/   lesson59-lesson75  (17 lessons, week 7-8)
+  N1/   lesson76-lesson92  (17 lessons incl. 92 review; no practice questions yet)
   guides/ comparison pages + JLPT exam guide (not a level)
 pages/
   about.md               (bilingual About page source)
@@ -154,7 +155,7 @@ Bilingual syntax — every visible Chinese string needs its English side, or the
 ## Content Guidelines
 
 - All notes are bilingual: Chinese explanations + English translations
-- Grammar progression: N5 (00–17) → N4 (18–34) → N3 (35–58) → N2 (59–75)
+- Grammar progression: N5 (00–17) → N4 (18–34) → N3 (35–58) → N2 (59–75) → N1 (76–92)
 - Each grammar point needs: meaning, conjugation rules, 3+ example sentences, and comparison with easily confused grammar
 - Example sentences should have both Chinese and English translations in parens
 - After adding/editing examples: `npm run build:site` then `python build-audio.py` to generate the missing mp3s, commit `audio/`. Stale mp3s (no longer requested) can be deleted.

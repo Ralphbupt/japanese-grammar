@@ -276,8 +276,8 @@ This is the comprehensive N1 grammar review. We go back over all the N1 grammar 
 | べくもない | 動詞辞書形＋べくもない | 根本无法……（固定搭配） | 小さな町の病院に、大学病院並みの設備は望む**べくもない**。（小镇的医院，根本谈不上有大学医院那样的设备。） |
 | てしかるべきだ | 動詞て形＋しかるべきだ | 理应……（常暗含批评） | 彼の功績は、もっと評価され**てしかるべきだ**。（他的功绩理应得到更高的评价。） |
 | でなくてなんだろう | 名詞＋でなくてなんだろう | 这不是……又是什么（强烈的感慨） | 二十年ぶりに再会できたなんて、これが奇跡**でなくてなんだろう**。（时隔二十年还能重逢，这不是奇迹又是什么呢？） |
-| ないではすまない | 動詞ない形＋ないではすまない | 不……就过不去 | 約束を破った以上、謝ら**ないではすまない**だろう。（既然失约了，不道歉恐怕是过不去的。） |
-| ないものでもない／ないでもない | 動詞ない形＋ないものでもない | 也并非不……（有所保留的肯定） | 条件次第では、引き受け**ないものでもない**。（看条件，也不是不能接受。） |
+| ないではすまない | 動詞ない形＋ではすまない | 不……就过不去 | 約束を破った以上、謝ら**ないではすまない**だろう。（既然失约了，不道歉恐怕是过不去的。） |
+| ないものでもない／ないでもない | 動詞ない形＋ものでもない | 也并非不……（有所保留的肯定） | 条件次第では、引き受け**ないものでもない**。（看条件，也不是不能接受。） |
 | ばそれまでだ | 動詞ば形＋それまでだ | 如果……就一切都完了 | どんなに高価な器でも、割れてしまえ**ばそれまでだ**。（再贵的器皿，碎了也就完了。） |
 :::
 :::en
@@ -292,8 +292,8 @@ This is the comprehensive N1 grammar review. We go back over all the N1 grammar 
 | べくもない | Verb dict. form + べくもない | can't possibly… (fixed collocations) | 小さな町の病院に、大学病院並みの設備は望む**べくもない**。(A small-town hospital can't possibly have the facilities of a university hospital.) |
 | てしかるべきだ | Verb te-form + しかるべきだ | ought to… (often implying it isn't so) | 彼の功績は、もっと評価され**てしかるべきだ**。(His achievements deserve far more recognition.) |
 | でなくてなんだろう | Noun + でなくてなんだろう | if this isn't…, what is? (strong feeling) | 二十年ぶりに再会できたなんて、これが奇跡**でなくてなんだろう**。(We met again after twenty years — if that isn't a miracle, what is?) |
-| ないではすまない | Verb nai-form + ないではすまない | can't get away without… | 約束を破った以上、謝ら**ないではすまない**だろう。(Having broken your promise, you'll have to apologise.) |
-| ないものでもない／ないでもない | Verb nai-form + ないものでもない | it's not that I won't… (guarded yes) | 条件次第では、引き受け**ないものでもない**。(Depending on the terms, I might take it on.) |
+| ないではすまない | Verb nai-form + ではすまない | can't get away without… | 約束を破った以上、謝ら**ないではすまない**だろう。(Having broken your promise, you'll have to apologise.) |
+| ないものでもない／ないでもない | Verb nai-form + ものでもない | it's not that I won't… (guarded yes) | 条件次第では、引き受け**ないものでもない**。(Depending on the terms, I might take it on.) |
 | ばそれまでだ | Verb ba-form + それまでだ | if…, that's the end of it | どんなに高価な器でも、割れてしまえ**ばそれまでだ**。(However expensive a dish is, once it breaks, that's the end of it.) |
 :::
 
@@ -404,7 +404,7 @@ This is the comprehensive N1 grammar review. We go back over all the N1 grammar 
 :::zh
 | 语法 | 接続 | 含义 | 例句 |
 |------|------|------|------|
-| にひきかえ | 名詞／普通形＋の＋にひきかえ | 与……相反（带褒贬） | 勤勉な兄**にひきかえ**、弟は遊んでばかりいる。（与勤奋的哥哥相反，弟弟整天只顾着玩。） |
+| にひきかえ | 名詞＋にひきかえ；普通形＋の＋にひきかえ | 与……相反（带褒贬） | 勤勉な兄**にひきかえ**、弟は遊んでばかりいる。（与勤奋的哥哥相反，弟弟整天只顾着玩。） |
 | ともあろう者が | 名詞＋ともあろう＋者／人＋が | 堂堂……竟然……（批评） | 教師**ともあろう**者が、生徒に暴力を振るうとは。（堂堂老师竟然对学生动粗。） |
 | たるもの／たる | 名詞＋たるもの、〜べきだ | 作为……就应该…… | 医師**たるもの**、患者の命を第一に考えるべきだ。（身为医生，就应该把患者的生命放在第一位。） |
 | ではあるまいし | 名詞＋ではあるまいし／じゃあるまいし | 又不是……（据此劝告、责备，多用于口语） | 子ども**じゃあるまいし**、自分のことは自分でやりなさい。（又不是小孩了，自己的事自己做。） |
@@ -414,7 +414,7 @@ This is the comprehensive N1 grammar review. We go back over all the N1 grammar 
 :::en
 | Grammar | Conjugation | Meaning | Example |
 |------|------|------|------|
-| にひきかえ | Noun / plain form + の + にひきかえ | in contrast to… (with a value judgement) | 勤勉な兄**にひきかえ**、弟は遊んでばかりいる。(Unlike his hard-working older brother, the younger one does nothing but play.) |
+| にひきかえ | Noun + にひきかえ; plain form + の + にひきかえ | in contrast to… (with a value judgement) | 勤勉な兄**にひきかえ**、弟は遊んでばかりいる。(Unlike his hard-working older brother, the younger one does nothing but play.) |
 | ともあろう者が | Noun + ともあろう + 者／人 + が | for someone who is a… (of all people) to… (criticism) | 教師**ともあろう**者が、生徒に暴力を振るうとは。(For a teacher, of all people, to use violence on a student!) |
 | たるもの／たる | Noun + たるもの、〜べきだ | anyone who is a… should… | 医師**たるもの**、患者の命を第一に考えるべきだ。(Anyone who is a doctor should put patients' lives first.) |
 | ではあるまいし | Noun + ではあるまいし／じゃあるまいし | it's not as if… (so advice or reproach; mostly spoken) | 子ども**じゃあるまいし**、自分のことは自分でやりなさい。(You're not a child — do things for yourself.) |
@@ -732,7 +732,7 @@ This is the comprehensive N1 grammar review. We go back over all the N1 grammar 
 > ⭕ 足のけが**をものともせず**完走した。（不顾腿伤，跑完了全程。）  
 > △ 大雨**をよそに**試合を続けた。（物理上的困难用をものともせず更自然）
 
-**判断方法**：前面是「心配・反対・期待」→ をよそに；前面是「困難・けが・悪天候」→ をものともせず；前面是「人目」→ もかまわず或もはばからず。
+**判断方法**：前面是「心配・期待」→ をよそに（「反対・批判」两者都可能，看后文是贬是褒）；前面是「困難・けが・悪天候」→ をものともせず；前面是「人目」→ もかまわず或もはばからず。
 :::
 :::en
 | Expression | What comes before | Feel |
@@ -746,7 +746,7 @@ This is the comprehensive N1 grammar review. We go back over all the N1 grammar 
 > ⭕ 足のけが**をものともせず**完走した。(Undaunted by his leg injury, he finished the race.)  
 > △ 大雨**をよそに**試合を続けた。(For a physical hardship, をものともせず is more natural.)
 
-**How to decide**: 「心配」, 「反対」 or 「期待」 before it → をよそに; 「困難」, 「けが」 or 「悪天候」 → をものともせず; 「人目」 → もかまわず or もはばからず.
+**How to decide**: 「心配」 or 「期待」 before it → をよそに (「反対」 and 「批判」 can take either — let the rest of the sentence decide); 「困難」, 「けが」 or 「悪天候」 → をものともせず; 「人目」 → もかまわず or もはばからず.
 :::
 
 ### 16-10. いかんで vs いかんにかかわらず vs によらず vs にかかわる||16-10. いかんで vs いかんにかかわらず vs によらず vs にかかわる
@@ -986,7 +986,8 @@ This is the comprehensive N1 grammar review. We go back over all the N1 grammar 
 - 文章の文法：在一篇文章的空格里选词，要结合前后文判断
 
 **2. 先看后项，排除一半选项**
-- 后项不能是意志、命令、请求：が早いか、や否や、なり、はおろか、べく、んがため、とあって、をよそに、ながらも、と相まって、にひきかえ
+- 后项不能是意志、命令、请求：が早いか、や否や、なり、はおろか、とあって、をよそに、と相まって、にひきかえ
+- 后项可以是说话人的意志（「〜したい」「〜します」），但不能是请求、命令、劝诱：べく、んがため、ながらも
 - 后项可以是意志、请求：次第、とあれば、ないまでも、はもとより、にせよ
 - 后项必须是建议、命令、意志等面向未来的表达：なり〜なり
 - 后项必须是否定：たりとも、をおいて、なしには、ことなしには、なくして（は）
@@ -1045,7 +1046,8 @@ This is the comprehensive N1 grammar review. We go back over all the N1 grammar 
 - Text grammar (文章の文法): fill blanks in a passage, judging from the surrounding context
 
 **2. Look at the main clause first — it rules out half the options**
-- No volition, commands or requests after: が早いか, や否や, なり, はおろか, べく, んがため, とあって, をよそに, ながらも, と相まって, にひきかえ
+- No volition, commands or requests after: が早いか, や否や, なり, はおろか, とあって, をよそに, と相まって, にひきかえ
+- The speaker's own intention (「〜したい」, 「〜します」) is fine after these, but not a request, command or invitation: べく, んがため, ながらも
 - Volition or requests allowed after: 次第, とあれば, ないまでも, はもとより, にせよ
 - Must be followed by something forward-looking — advice, a command, an intention: なり〜なり
 - Must be followed by a negative: たりとも, をおいて, なしには, ことなしには, なくして(は)
@@ -1112,13 +1114,13 @@ This is the comprehensive N1 grammar review. We go back over all the N1 grammar 
 3. 平日（　　）、週末も練習しよう。
    a. はおろか　b. はもとより　c. を限りに　d. にとどまらず
 
-4. 親の反対（　　）、彼女は一人で海外へ渡った。
+4. 親の心配（　　）、彼女は一人で海外へ渡った。
    a. をよそに　b. をものともせず　c. にかこつけて　d. と相まって
 
 5. 試験の結果（　　）、進学できるかどうかが決まる。
    a. いかんで　b. のいかんにかかわらず　c. によらず　d. にかかわる
 
-6. 連休（　　）、高速道路は朝から渋滞している。
+6. 今日は連休初日（　　）、高速道路は朝から渋滞している。
    a. とあれば　b. とあって　c. ともなると　d. ともあろう
 
 7. 教師（　　）、生徒の模範とならなければならない。
@@ -1168,9 +1170,9 @@ This is the comprehensive N1 grammar review. We go back over all the N1 grammar 
 1. b（前后主语不同，不能用なり；次第要接ます形；そばから表示反复）
 2. a（后项是"我将联系"这种意志行为，が早いか・や否や・なり都不能用）
 3. b（后项是劝诱，はおろか不能接意志；にとどまらず一般也不接）
-4. a（前面是别人的反对；をものともせず用于困难、伤痛）
+4. a（前面是别人的担心；をものともせず用于困难、伤痛）
 5. a（后项是"由此决定"）
-6. b（后项是观察到的事实）
+6. b（后项是今天观察到的事实；ともなると讲一般规律，不用于某一天的具体情况）
 7. b（讲身份应有的规范，后项是「なければならない」）
 8. b（程度太轻，用不着）
 9. a（祈祷、愿望类动词＋てやまない）
@@ -1179,7 +1181,7 @@ This is the comprehensive N1 grammar review. We go back over all the N1 grammar 
 12. a（固定说法「割れんばかりの拍手」）
 13. a（想……也不能……）
 14. b（「一」＋量词＋たりとも＋否定）
-15. 満点は取らないまでも、合格はしたい。
+15. 満点は取れないまでも、合格はしたい。
 16. 皆さんのご協力なくしては、このプロジェクトの成功はあり得ない。
 17. 首相ともあろう人が、あんなことを言うとは。
 18. 合格するために、毎日勉強しなさい。（べく的后项不能是命令）
@@ -1198,13 +1200,13 @@ This is the comprehensive N1 grammar review. We go back over all the N1 grammar 
 3. 平日（　　）、週末も練習しよう。
    a. はおろか　b. はもとより　c. を限りに　d. にとどまらず
 
-4. 親の反対（　　）、彼女は一人で海外へ渡った。
+4. 親の心配（　　）、彼女は一人で海外へ渡った。
    a. をよそに　b. をものともせず　c. にかこつけて　d. と相まって
 
 5. 試験の結果（　　）、進学できるかどうかが決まる。
    a. いかんで　b. のいかんにかかわらず　c. によらず　d. にかかわる
 
-6. 連休（　　）、高速道路は朝から渋滞している。
+6. 今日は連休初日（　　）、高速道路は朝から渋滞している。
    a. とあれば　b. とあって　c. ともなると　d. ともあろう
 
 7. 教師（　　）、生徒の模範とならなければならない。
@@ -1254,9 +1256,9 @@ This is the comprehensive N1 grammar review. We go back over all the N1 grammar 
 1. b (the subjects differ, so なり can't be used; 次第 needs the masu-stem; そばから is for repeated actions)
 2. a (the main clause is the speaker's own planned action, "I will contact you," so が早いか, や否や and なり are ruled out)
 3. b (the main clause is an invitation; はおろか can't take volition, and にとどまらず normally doesn't either)
-4. a (it's someone else's objection; をものともせず is for hardship or injury)
+4. a (it's someone else's worry; をものともせず is for hardship or injury)
 5. a (the main clause says the outcome is decided by it)
-6. b (the main clause is an observed fact)
+6. b (the main clause is a fact observed today; ともなると states a general tendency, not what is happening on one particular day)
 7. b (a norm for the role, with 「なければならない」 after it)
 8. b (too minor to need it)
 9. a (verbs of praying or wishing + てやまない)
@@ -1265,7 +1267,7 @@ This is the comprehensive N1 grammar review. We go back over all the N1 grammar 
 12. a (the set phrase 「割れんばかりの拍手」)
 13. a (wanting to but being unable to)
 14. b (「一」 + counter + たりとも + negative)
-15. 満点は取らないまでも、合格はしたい。
+15. 満点は取れないまでも、合格はしたい。
 16. 皆さんのご協力なくしては、このプロジェクトの成功はあり得ない。
 17. 首相ともあろう人が、あんなことを言うとは。
 18. 合格するために、毎日勉強しなさい。(べく can't be followed by a command)

@@ -442,7 +442,7 @@ Restrictions:
 "即使不到……的程度，至少也……"。A是较高的程度，B是同一方向上较低的程度：虽然达不到A，但希望或认为至少能达到B。
 
 限制：
-- A和B在同一个尺度上，而且B低于A：「満点は取らないまでも、合格したい」⭕；反过来「合格しないまでも、満点を取りたい」❌。
+- A和B在同一个尺度上，而且B低于A：「満点は取れないまでも、合格したい」⭕；反过来「合格しないまでも、満点を取りたい」❌。
 - 后项多为希望、要求、义务（「〜たい」「〜てほしい」「〜べきだ」「〜なさい」）或评价（「かなりのものだ」「〜はずだ」），可以接意志和命令，这一点和「ともなると」「たら最後」「ようでは」不同。
 - 后项不能是"连B也没做到"的否定：❌「優勝できないまでも、一回戦で負けた」。
 :::
@@ -450,7 +450,7 @@ Restrictions:
 "Even if not…, at least…". A is a higher degree and B a lower one on the same scale: even if A can't be reached, the speaker hopes or judges that at least B can.
 
 Restrictions:
-- A and B are on the same scale, and B is lower than A: 「満点は取らないまでも、合格したい」 ⭕; the other way round is ❌: 「合格しないまでも、満点を取りたい」.
+- A and B are on the same scale, and B is lower than A: 「満点は取れないまでも、合格したい」 ⭕; the other way round is ❌: 「合格しないまでも、満点を取りたい」.
 - The main clause is usually a wish, demand or obligation (「〜たい」, 「〜てほしい」, 「〜べきだ」, 「〜なさい」) or an evaluation (「かなりのものだ」, 「〜はずだ」); unlike 「ともなると」, 「たら最後」 and 「ようでは」, it can take the speaker's will or a command.
 - The main clause can't say that even B failed: ❌ 「優勝できないまでも、一回戦で負けた」.
 :::
