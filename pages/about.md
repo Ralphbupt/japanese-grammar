@@ -15,7 +15,7 @@
 :::
 
 :::en
-"Japanese Grammar Notes" is a free, bilingual (Chinese + Japanese) JLPT N5 → N1 grammar study set: **93 lessons covering 420+ grammar points**. Each grammar point includes:
+"Japanese Grammar Notes" is a free JLPT N5 → N1 grammar study set, with every explanation written in both English and Chinese: **93 lessons covering 420+ grammar points**. Each grammar point includes:
 
 - **Conjugation rules**: how it combines with verbs / adjectives / nouns
 - **3+ example sentences**: covering daily conversation and exam-style contexts

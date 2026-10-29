@@ -2343,8 +2343,8 @@ ${SETTINGS_SCRIPT}`;
   const homeMainHtml = `<header class="home-hero">
     <h1><span class="lang-zh">日语语法笔记 — JLPT N5 到 N1 全部语法</span><span class="lang-en">Japanese Grammar Notes — JLPT N5 to N1</span></h1>
     <p class="home-intro">
-      <span class="lang-zh">免费、双语（中文 + 日语）的日语语法笔记，从 N5 入门到 N2 进阶共 <strong>${totalLessons} 课、${totalPoints}+ 语法点</strong>，每课配接续规则、例句、辨析、练习题与间隔复习勾选清单。</span>
-      <span class="lang-en">Free, bilingual (Chinese + Japanese) grammar notes covering JLPT N5 → N1 in <strong>${totalLessons} lessons, ${totalPoints}+ grammar points</strong>. Each lesson has conjugation rules, example sentences, side-by-side comparisons of confusable patterns, practice questions, and a spaced-repetition checklist.</span>
+      <span class="lang-zh">免费、双语（中文 + 日语）的日语语法笔记，从 N5 到 N1 共 <strong>${totalLessons} 课、${totalPoints}+ 语法点</strong>，每课配接续规则、例句、辨析、练习题与间隔复习勾选清单。</span>
+      <span class="lang-en">Free Japanese grammar notes in plain English, covering JLPT N5 → N1 in <strong>${totalLessons} lessons, ${totalPoints}+ grammar points</strong>. Each lesson has conjugation rules, example sentences, side-by-side comparisons of confusable patterns, practice questions, and a spaced-repetition checklist.</span>
     </p>
     <div class="home-actions">
       <a class="btn-primary" href="lesson01/"><span class="lang-zh">从第 1 课开始</span><span class="lang-en">Start with lesson 1</span></a>
@@ -2480,7 +2480,10 @@ ${SETTINGS_SCRIPT}`;
 }]
 </script>
 
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+<link rel="icon" href="${SITE_PATH}favicon.ico" sizes="32x32">
+<link rel="icon" href="${SITE_PATH}favicon-48.png" type="image/png" sizes="48x48">
+<link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#1a1a2e">
@@ -2537,6 +2540,10 @@ ${AI_SCRIPT}
   fs.copyFileSync(path.join(__dirname, "site", "sw.js"), path.join(__dirname, "dist", "sw.js"));
   for (const f of ["giscus-paper.css", "giscus-sepia.css"]) {
     fs.copyFileSync(path.join(__dirname, "site", f), path.join(__dirname, "dist", f));
+  }
+  // Real icon files: Google's result favicon needs a crawlable URL, not a data: URI
+  for (const f of fs.readdirSync(path.join(__dirname, "site", "icons"))) {
+    fs.copyFileSync(path.join(__dirname, "site", "icons", f), path.join(__dirname, "dist", f));
   }
 
   // ─── Generate individual lesson pages ───
@@ -2719,7 +2726,10 @@ ${AI_SCRIPT}
 }]
 </script>
 <link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+<link rel="icon" href="${SITE_PATH}favicon.ico" sizes="32x32">
+<link rel="icon" href="${SITE_PATH}favicon-48.png" type="image/png" sizes="48x48">
+<link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
 ${CSP_META}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
@@ -3039,7 +3049,10 @@ html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
 }]
 </script>
 <link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+<link rel="icon" href="${SITE_PATH}favicon.ico" sizes="32x32">
+<link rel="icon" href="${SITE_PATH}favicon-48.png" type="image/png" sizes="48x48">
+<link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
 ${CSP_META}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
@@ -3149,7 +3162,10 @@ ${AI_SCRIPT}
     { "@type": "ListItem", position: 1, name: m.home, item: SITE },
     { "@type": "ListItem", position: 2, name: m.crumb, item: lv.url }] },
 ]).replace(/</g, "\\u003c")}</script>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+<link rel="icon" href="${SITE_PATH}favicon.ico" sizes="32x32">
+<link rel="icon" href="${SITE_PATH}favicon-48.png" type="image/png" sizes="48x48">
+<link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
 ${CSP_META}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
@@ -3259,7 +3275,10 @@ ${AI_SCRIPT}
   ]
 }]
 </script>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+<link rel="icon" href="${SITE_PATH}favicon.ico" sizes="32x32">
+<link rel="icon" href="${SITE_PATH}favicon-48.png" type="image/png" sizes="48x48">
+<link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
 ${CSP_META}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
@@ -3384,7 +3403,10 @@ ${AI_SCRIPT}
 }]
 </script>
 <link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+<link rel="icon" href="${SITE_PATH}favicon.ico" sizes="32x32">
+<link rel="icon" href="${SITE_PATH}favicon-48.png" type="image/png" sizes="48x48">
+<link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
 ${CSP_META}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
@@ -3474,7 +3496,10 @@ ${AI_SCRIPT}
 <meta property="og:description" content="${m.desc.replace(/"/g, '&quot;')}">
 <meta property="og:url" content="${lv.url}">
 <meta property="og:locale" content="${lang.ogLocale}">${level ? `\n<meta property="og:image" content="${SITE}${level}/og-image.png">\n<meta name="twitter:card" content="summary_large_image">` : ""}${m.schema ? `\n<script type="application/ld+json">${m.schema}</script>` : ""}
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">${preload ? `\n<link rel="preload" href="${preload}" as="fetch" crossorigin>` : ""}
+<link rel="icon" href="${SITE_PATH}favicon.ico" sizes="32x32">
+<link rel="icon" href="${SITE_PATH}favicon-48.png" type="image/png" sizes="48x48">
+<link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">${preload ? `\n<link rel="preload" href="${preload}" as="fetch" crossorigin>` : ""}
 ${CSP_META}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
@@ -3960,7 +3985,7 @@ Each \`/lessonNN/\` page contains:
     background_color: "#fafaf8",
     theme_color: "#1a1a2e",
     icons: [
-      { src: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>", sizes: "any", type: "image/svg+xml" }
+      { src: `${SITE_PATH}favicon-192.png`, sizes: "192x192", type: "image/png" }
     ]
   }, null, 2), "utf-8");
 
@@ -4042,7 +4067,7 @@ Each \`/lessonNN/\` page contains:
   }
   console.log(`  Generated ${lessonPages.length} per-lesson OG images`);
 
-  // ─── Index-page OG Images (N5/N4/N3/N2 level pages, about, anki) ───
+  // ─── Index-page OG Images (N5–N1 level pages, about, anki) ───
   // Each shareable index page gets a tailored 1200×630 social preview so a
   // share to XHS / X / Threads / WeChat surfaces a distinctive image rather
   // than the generic site-wide one.
