@@ -16,6 +16,7 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
 .q-btn-primary:hover:not(:disabled) { filter: brightness(1.08); }
 .q-btn-big { width: 100%; justify-content: center; min-height: 52px; font-size: 1.05rem; }
+.q-prev { margin-left: .9rem; }
 .q-link { background: none; border: 0; color: var(--link); font: inherit; cursor: pointer; padding: 0; }
 
 .q-today { margin-bottom: 1.6rem; }
@@ -252,3 +253,11 @@ body.quiz-busy .quiz-about { display: none; }
 .q-total-bar span { display: block; height: 100%; background: var(--accent); }
 .q-ai-more { padding: .35em .8em; font-size: .85em; margin-left: .4rem; }
 .q-listen { margin: .8rem 0 0; }
+.q-rl-more { margin-top: .35rem; }
+.q-rl-more summary { cursor: pointer; color: var(--link); font-size: .9em; }
+.q-rl-more .q-btn { margin-top: .4rem; }
+.q-an h2 { font-size: 1.05rem; margin: 1.4rem 0 .5rem; }
+.q-an h2:first-child { margin-top: 0; }
+.q-an-list { padding-left: 1.2rem; margin: 0 0 .6rem; line-height: 1.7; }
+.q-an-bad { color: var(--accent); }
+.q-an-link { margin-left: .6rem; font-size: .92rem; }

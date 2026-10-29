@@ -482,7 +482,14 @@ async function buildQuiz(ruby) {
     if (!loadLevel(level).qs.length) continue;
     const mocks = [];
     if (MOCK[level]) for (const d of mockSets(level)) mocks.push(await bundleMock(level, ruby, +d.split("-")[1]));
-    out[level] = { practice: await bundleLevel(level, ruby), mocks };
+    const practice = await bundleLevel(level, ruby);
+    // For the analysis page: how the real test is scored and paced.
+    if (MOCK[level]) {
+      const cfg = MOCK[level];
+      practice.exam = { scoring: cfg.scoring, listening: cfg.listening, pass: cfg.pass,
+        minutes: cfg.sections.reduce((a, x) => a + x.minutes, 0), items: mocks.length ? mocks[0].test.questions.length : null };
+    }
+    out[level] = { practice, mocks };
   }
   return out;
 }
