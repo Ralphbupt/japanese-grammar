@@ -120,7 +120,7 @@ const QUIZ_CSS = fs.readFileSync(path.join(__dirname, "site", "quiz.css"), "utf-
 const FEEDBACK_JS_SRC = fs.readFileSync(path.join(__dirname, "site", "feedback.js"), "utf-8");
 const FEEDBACK_JS_HASH = require("crypto").createHash("md5").update(FEEDBACK_JS_SRC).digest("hex").slice(0, 8);
 // Practice / mock test / flashcard pages; QUIZ_PUBLIC and QUIZ_LINKS are set in build-quiz.js.
-const { buildQuiz, loadLevel: loadQuizLevel, LEVELS: QUIZ_LEVELS, TYPES: QUIZ_TYPES, MOCK: QUIZ_MOCK, QUIZ_PUBLIC, QUIZ_LINKS } = require("./build-quiz");
+const { buildQuiz, loadLevel: loadQuizLevel, LEVELS: QUIZ_LEVELS, TYPES: QUIZ_TYPES, MOCK: QUIZ_MOCK, QUIZ_PUBLIC, QUIZ_LINKS, AUDIO_REQUESTS: QUIZ_AUDIO_REQUESTS } = require("./build-quiz");
 const SETTINGS_JS_HASH = require("crypto").createHash("md5").update(fs.readFileSync(path.join(__dirname, "site", "settings-modal.js"))).digest("hex").slice(0, 8);
 const SETTINGS_SCRIPT = `<script src="${SITE_PATH}settings-modal.js?v=${SETTINGS_JS_HASH}" defer></script>`;
 // Content-Security-Policy connect-src allowlist. This is the technical
@@ -3432,6 +3432,13 @@ ${APP_PREFS_JS}
 
   // ─── Practice question pages (build-quiz.js → dist/quiz/*.json, site/quiz.js) ───
   const quizBundles = await buildQuiz(async (text) => fixReadings(await furiganaText(kuro, text)));
+  // Reading passages' read-aloud audio goes in the same request list as the examples.
+  {
+    const reqPath = path.join(__dirname, "dist", ".audio-requests.json");
+    const reqs = JSON.parse(fs.readFileSync(reqPath, "utf-8"));
+    fs.writeFileSync(reqPath, JSON.stringify(reqs.concat(QUIZ_AUDIO_REQUESTS)), "utf-8");
+    console.log(`  Requested audio for ${QUIZ_AUDIO_REQUESTS.length} reading passages.`);
+  }
   const quizPageIds = [];
   fs.mkdirSync(path.join(__dirname, "dist", "quiz"), { recursive: true });
   fs.writeFileSync(path.join(__dirname, "dist", "quiz.js"), QUIZ_JS_SRC, "utf-8");

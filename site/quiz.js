@@ -307,6 +307,18 @@
     return out;
   }
   // N5/N4: after answering, the kanji a kana word or sentence would be written with.
+  // Read-aloud of a passage, offered once its questions are answered.
+  function listenBtn(id) { return '<p class="q-listen"><button class="q-btn" data-act="listen" data-k="' + id + '">🔊 ' + t('听全文', 'Listen to the text') + '</button></p>'; }
+  var player = null;
+  function listen(el) {
+    var src = '/audio/' + el.getAttribute('data-k') + '.mp3';
+    if (player && player.src.indexOf(src) >= 0 && !player.paused) { player.pause(); el.textContent = '🔊 ' + t('继续听', 'Resume'); return; }
+    if (!player || player.src.indexOf(src) < 0) { if (player) player.pause(); player = new Audio(src); player.onended = function () { el.textContent = '🔊 ' + t('再听一遍', 'Play again'); }; }
+    el.textContent = '⏸ ' + t('暂停', 'Pause');
+    var pr = player.play();
+    if (pr && pr.catch) pr.catch(function () { el.textContent = '🔊 ' + t('听全文', 'Listen to the text'); });
+    track('quiz_listen', { level: LEVEL });
+  }
   function okjOf(q, i) { return q.okj && q.okj[i] ? '<span class="q-okj">（' + q.okj[i] + '）</span>' : ''; }
   function kjHtml(q, passages) {
     var h = q.kj ? '<p class="q-full q-kj" lang="ja"><span class="q-kj-label">' + t('汉字写法', 'In kanji') + '</span>' + q.kj + '</p>' : q.full ? '<p class="q-full" lang="ja">' + q.full + '</p>' : '';
@@ -355,9 +367,12 @@
    * the reader's choice, the fixed explanation and the linked lesson section
    * (fetched from the lesson page). Nothing time- or reader-specific goes in,
    * so the same question + choice is the same request and can come from cache. */
-  function aiBtn(primary) {
+  function aiBtn(primary, act) {
     if (!window.jpAI) return '';
-    return '<p class="q-ai"><button class="q-btn' + (primary ? ' q-btn-primary' : '') + '" data-act="ai">🤖 ' + t('AI 讲解', 'Explain with AI') + '</button>' +
+    act = act || 'ai';
+    return '<p class="q-ai"><button class="q-btn' + (primary ? ' q-btn-primary' : '') + '" data-act="' + act + '">🤖 ' + t('AI 讲解', 'Explain with AI') + '</button>' +
+      '<button class="q-btn q-ai-more" data-act="' + act + '" data-mode="parse">' + t('拆解句子', 'Break down the sentence') + '</button>' +
+      '<button class="q-btn q-ai-more" data-act="' + act + '" data-mode="sum">' + t('语法点总结', 'Grammar summary') + '</button>' +
       (primary ? ' <span class="q-muted">' + t('针对你选的选项讲，可以追问', 'about the option you picked; ask follow-ups') + '</span>' : '') + '</p>';
   }
   function plainJa(html) {
@@ -384,7 +399,7 @@
       return (lessonText[key] = out.join('\n').replace(/\n{2,}/g, '\n').slice(0, 6000));
     }).catch(function () { return (lessonText[key] = ''); });
   }
-  function aiExplain(q, choice, guess, typeJa, passages) {
+  function aiExplain(q, choice, guess, typeJa, passages, mode) {
     var L = [], P = q.passage && passages && passages[q.passage];
     if (P) L.push(t('【文章】', '[Text]') + '\n' + plainJa((P.intro ? P.intro + '<br>' : '') + P.html).replace(/\[\[(\d+)\]\]/g, '（$1）'));
     L.push(t('【题型】', '[Question type]') + ' ' + typeJa);
@@ -400,7 +415,11 @@
       : !ok ? t('我选了 ' + (choice + 1) + '「' + plainJa(q.options[choice]) + '」，为什么不对？它和正确答案的区别是什么？', 'I chose ' + (choice + 1) + ' 「' + plainJa(q.options[choice]) + '」. Why is it wrong, and how does it differ from the right answer?')
       : guess ? t('这题我是蒙的，帮我讲清楚为什么是 ' + (q.answer + 1) + '，下次怎么判断。', 'I guessed this one. Explain why it’s ' + (q.answer + 1) + ' and how to tell next time.')
       : t('我答对了。再讲讲这几个选项的区别。', 'I got it right. Explain how these options differ.');
-    track('quiz_ai', { id: q.id, ok: ok, guess: !!guess });
+    if (mode === 'parse') prompt = q.passage
+      ? t('把文章里和这道题有关的句子逐句拆开：按意群切分，说明每个词的意思、词性和活用形，标出关键语法，最后给出自然的翻译。', 'Break down the sentences of the text that this question turns on: split them into chunks, give each word\u2019s meaning, part of speech and conjugation, mark the key grammar, then a natural translation.')
+      : t('把这道题的完整句子拆开：按意群切分，说明每个词的意思、词性和活用形，标出关键语法，最后给出自然的翻译。', 'Break down this question\u2019s full sentence: split it into chunks, give each word\u2019s meaning, part of speech and conjugation, mark the key grammar, then a natural translation.');
+    else if (mode === 'sum') prompt = t('总结这道题涉及的语法点：每个写出接续、意思、一个新的例句，以及和容易混淆的语法怎么区分。', 'Summarise the grammar points in this question: for each, how it attaches, what it means, one new example sentence, and how to tell it from the patterns it gets confused with.');
+    track('quiz_ai', { id: q.id, ok: ok, guess: !!guess, mode: mode || 'why' });
     Promise.all((q.refs || []).filter(function (r) { return !/#vocab$/.test(r); }).slice(0, 2).map(refText)).then(function (secs) {
       secs = secs.filter(Boolean);
       if (secs.length) L.push(t('【对应课文】', '[Lesson section]') + '\n' + secs.join('\n---\n'));
@@ -468,6 +487,8 @@
       '<div class="q-report-more" hidden><textarea maxlength="1000" rows="3" placeholder="' + t('哪里不对？可以不写', 'What’s wrong? (optional)') + '"></textarea>' +
       '<button class="q-btn q-btn-primary" data-act="report-send">' + t('提交', 'Send') + '</button></div></details></div>';
     var left = curs ? Object.keys(curs).filter(function (id) { return !curs[id].done; }) : [];
+    var P = q.passage && D.passages[q.passage];
+    if (!left.length && P && P.au) h += listenBtn(P.au);
     if (!left.length) h += '<div class="q-next"><button class="q-btn q-btn-primary q-btn-big" data-act="next">' + (S.session.i >= S.session.ids.length ? t('看结果', 'See results') : t('下一题', 'Next')) + ' →</button></div>';
     root().querySelector('.q-feedback').innerHTML = h;
     if (left.length) cur = curs[left[0]];   // the keyboard moves on to the next question of the passage
@@ -775,14 +796,14 @@
           if (which === 'wrong' && ok && !a.g) return;
           var qq = {}; for (var x in q) qq[x] = q[x]; for (var y in kq) qq[y] = kq[y];
           h += '<div class="q-card q-revcard">';
-          if (q.passage && !shownP[q.passage]) { shownP[q.passage] = 1; h += '<details class="q-revpass"><summary>' + t('原文', 'Text') + '</summary>' + passageHtml(qq) + '<p class="q-muted">' + esc(bi(key.passages[q.passage].tr)) + '</p></details>'; }
+          if (q.passage && !shownP[q.passage]) { shownP[q.passage] = 1; h += '<details class="q-revpass"><summary>' + t('原文', 'Text') + '</summary>' + passageHtml(qq) + (key.passages[q.passage].au ? listenBtn(key.passages[q.passage].au) : '') + '<p class="q-muted">' + esc(bi(key.passages[q.passage].tr)) + '</p></details>'; }
           h += '<p class="q-prob"><b>' + (si + 1) + '-' + p.no + '</b> ' + esc(test.types[p.type].ja) + '</p><div class="q-stem" lang="ja">' + stemHtml(qq).replace(/<button[^>]*>(★)?<\/button>/g, function (m, st) { return st ? '＿★＿' : '＿＿'; }) + '</div>';
           if (q.type === 'narabe') h += '<p lang="ja">' + t('正确顺序：', 'Order: ') + kq.order.map(function (i) { return q.options[i]; }).join(' / ') + '</p>';
           h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><div class="q-opt' + (i === kq.answer ? ' q-ok' : i === a.c ? ' q-bad' : '') + '"><span class="q-num">' + (i + 1) + '</span>' + o + okjOf(qq, i) + '</div></li>'; }).join('') + '</ol>';
           h += '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 蒙对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + '</p>';
           h += '<div class="q-explain"><p>' + esc(bi(kq.why)) + '</p>' + (q.type !== 'narabe' ? '<ul class="q-wrong">' + kq.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + q.options[i] + okjOf(qq, i) + '</b> — ' + esc(bi(w)) + '</li>' : ''; }).join('') + '</ul>' : '') +
             kjHtml(qq, key.passages) + (kq.tr ? '<p class="q-muted">' + esc(bi(kq.tr)) + '</p>' : '') + '</div>' +
-            (window.jpAI ? '<p class="q-ai"><button class="q-btn" data-act="m-ai" data-k="' + id + '">🤖 ' + t('AI 讲解', 'Explain with AI') + '</button></p>' : '') + '</div>';
+            aiBtn(false, 'm-ai').replace(/data-act="m-ai"/g, 'data-act="m-ai" data-k="' + id + '"') + '</div>';
         });
       });
     });
@@ -834,11 +855,12 @@
     else if (act === 'm-pause') pause(false);
     else if (act === 'm-unpause') unpause();
     else if (act === 'm-review') mockReview(k);
+    else if (act === 'listen') listen(el);
     else if (act === 'm-ai') {
       var mq = {}, a2 = M.att.answers[k] || {}, P2 = {};
       for (var x in Q[k]) mq[x] = Q[k][x]; for (var y in M.key.questions[k]) mq[y] = M.key.questions[k][y];
       if (mq.passage) { P2[mq.passage] = D.passages[mq.passage]; }
-      aiExplain(mq, a2.c == null ? null : a2.c, a2.g, M.test.types[mq.type].ja, P2);
+      aiExplain(mq, a2.c == null ? null : a2.c, a2.g, M.test.types[mq.type].ja, P2, el.getAttribute('data-mode'));
     }
     else if (act === 'm-back-result') mockResult(M.set, M.att, M.key);
   });
@@ -1049,7 +1071,8 @@
       track('quiz_guess', { type: gq.type });
       el.outerHTML = '<small class="q-muted">' + t('已加入错题本，明天再考一次', 'On your review list for tomorrow') + '</small>';
     }
-    else if (act === 'ai') aiExplain(cur.q, cur.choice, cur.guess, D.types[cur.q.type].ja, D.passages);
+    else if (act === 'ai') aiExplain(cur.q, cur.choice, cur.guess, D.types[cur.q.type].ja, D.passages, el.getAttribute('data-mode'));
+    else if (act === 'listen') listen(el);
     // "这题有问题？": pick a reason, optionally say more, send.
     else if (act === 'report') {
       el.parentNode.querySelectorAll('[data-act="report"]').forEach(function (b) { b.classList.toggle('q-picked', b === el); });

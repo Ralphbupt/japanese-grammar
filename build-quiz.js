@@ -415,14 +415,38 @@ async function bundleLevel(level, ruby, mock) {
     });
   }
   const passages = {};
+  // Each passage's right answer per blank, for the read-aloud text.
+  const blanks = {};
+  for (const q of data.qs) if (q.type === "bunshou") (blanks[q.passage] = blanks[q.passage] || {})[q._blank] = q.options[q.answer];
   for (const p of data.passages) {
     const pr = RUBY_LEVELS.has(level);
-    passages[p.id] = { type: p.type, ...(p.intro ? { intro: await render(p.intro, pr) } : {}), html: await render(p.passage, pr), tr: p.tr, ...(p.kj ? { kj: await render(p.kj, true) } : {}) };
+    const au = passageAudio(p, blanks[p.id] || {});
+    passages[p.id] = { type: p.type, ...(p.intro ? { intro: await render(p.intro, pr) } : {}), html: await render(p.passage, pr), tr: p.tr, ...(p.kj ? { kj: await render(p.kj, true) } : {}), ...(au ? { au } : {}) };
   }
   const used = new Set(out.map((q) => q.type));
   const types = {};
   for (const k of Object.keys(TYPES)) if (used.has(k)) types[k] = TYPES[k];
   return { level, groups: GROUPS, types, lessons, refs: refsUsed, passages, questions: out };
+}
+
+// Read-aloud audio for a passage (played after its questions are answered):
+// the text in kanji when there is a kanji version, blanks filled with the right
+// answers, without table lines (信息检索 passages aren't read). The id hashes the
+// text, like the lesson examples; build.js adds the request for build-audio.py,
+// and the page gets the id only once audio/{id}.mp3 exists.
+const AUDIO_REQUESTS = [];
+function passageAudio(p, answers) {
+  if (p.type === "info") return null;
+  const text = String(p.kj || p.passage)
+    .replace(/\[\[(\d+)\]\]/g, (m, n) => answers[n] || "")
+    .split("\n").filter((l) => !/^\s*\|/.test(l)).join("\n")
+    .replace(/<<|>>/g, "")
+    .replace(/(?<=[^\x00-\x7f])[ \u3000]+(?=[^\x00-\x7f])/g, "")
+    .replace(/\n{2,}/g, "\n").trim();
+  if (!text) return null;
+  const id = "p" + require("crypto").createHash("sha1").update(text).digest("hex").slice(0, 12);
+  if (!AUDIO_REQUESTS.some((r) => r.id === id)) AUDIO_REQUESTS.push({ id, text });
+  return fs.existsSync(path.join(ROOT, "audio", `${id}.mp3`)) ? id : null;
 }
 
 // A mock test: the questions without anything that gives the answer away,
@@ -437,7 +461,7 @@ async function bundleMock(level, ruby, n) {
     key.questions[q.id] = Object.fromEntries(SECRET.filter((k) => k in q).map((k) => [k, q[k]]));
     return Object.fromEntries(Object.entries(q).filter(([k]) => !SECRET.includes(k)));
   });
-  for (const [id, p] of Object.entries(b.passages)) { key.passages[id] = { tr: p.tr, ...(p.kj ? { kj: p.kj } : {}) }; delete p.tr; delete p.kj; }
+  for (const [id, p] of Object.entries(b.passages)) { key.passages[id] = { tr: p.tr, ...(p.kj ? { kj: p.kj } : {}), ...(p.au ? { au: p.au } : {}) }; delete p.tr; delete p.kj; delete p.au; }
   const sections = cfg.sections.map((s) => ({
     ...s,
     problems: s.types.map((t, i) => ({ no: i + 1, type: t, ids: qs.filter((q) => q.type === t).map((q) => q.id) })).filter((p) => p.ids.length),
@@ -463,7 +487,7 @@ async function buildQuiz(ruby) {
   return out;
 }
 
-module.exports = { buildQuiz, loadLevel, loadDir, shuffled, answerOf, LEVELS, TYPES, MOCK, QUIZ_PUBLIC, QUIZ_LINKS };
+module.exports = { buildQuiz, loadLevel, loadDir, shuffled, answerOf, LEVELS, TYPES, MOCK, QUIZ_PUBLIC, QUIZ_LINKS, AUDIO_REQUESTS };
 
 if (require.main === module) {
   let total = 0, bad = 0;

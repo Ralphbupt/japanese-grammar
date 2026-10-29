@@ -250,3 +250,5 @@ body.quiz-busy .quiz-about { display: none; }
 .q-total-line b { color: var(--text); margin-right: .3rem; }
 .q-total-bar { height: 6px; border-radius: 3px; background: var(--border); overflow: hidden; }
 .q-total-bar span { display: block; height: 100%; background: var(--accent); }
+.q-ai-more { padding: .35em .8em; font-size: .85em; margin-left: .4rem; }
+.q-listen { margin: .8rem 0 0; }
