@@ -111,7 +111,7 @@ const GISCUS_SCRIPT = `<script>
 // with defer on lesson pages only (the panel needs an article.lesson).
 const AI_JS_SRC = fs.readFileSync(path.join(__dirname, "site", "ai-assistant.js"), "utf-8");
 const AI_CSS = fs.readFileSync(path.join(__dirname, "site", "ai-assistant.css"), "utf-8");
-const AI_JS_BUNDLE = `(function(){if(!document.querySelector('article.lesson')&&!document.getElementById('quiz-app'))return;var s=document.createElement('style');s.textContent=${JSON.stringify(minifyCss(AI_CSS))};document.head.appendChild(s);})();\n` + AI_JS_SRC;
+const AI_JS_BUNDLE = `(function(){var s=document.createElement('style');s.textContent=${JSON.stringify(minifyCss(AI_CSS))};document.head.appendChild(s);})();\n` + AI_JS_SRC;
 const AI_JS_HASH = require("crypto").createHash("md5").update(AI_JS_BUNDLE).digest("hex").slice(0, 8);
 const AI_SCRIPT = `<script src="${SITE_PATH}ai-assistant.js?v=${AI_JS_HASH}" defer></script>`;  // ?v= busts browser caches on every change
 const QUIZ_JS_SRC = fs.readFileSync(path.join(__dirname, "site", "quiz.js"), "utf-8");
@@ -2506,6 +2506,7 @@ ${sidebarMarkupHtml}
 <script>
 ${APP_PREFS_JS}
 </script>
+${AI_SCRIPT}
 </body>
 </html>`;
 
@@ -2890,7 +2891,13 @@ ${APP_PREFS_JS}
   };
   // Shared by the level overview pages and the /guides/ hub.
   const OVERVIEW_CSS = `/* Keep sidebar (pure-CSS hover navigation); hide other JS-dependent chrome. */
-#content { margin: 0 auto !important; max-width: 1100px; padding: 2rem 1.5rem 4rem; }
+#content { --col: 1100px; margin: 0 auto !important; max-width: var(--col); padding: 2rem 1.5rem 4rem; }
+/* Sidebar open: centre in the space to its right, as on the lessons. */
+@media (min-width: 769px) {
+  body:not(.sidebar-collapsed) #content {
+    margin-left: calc(var(--sidebar-w) + max(0px, (100vw - var(--sidebar-w) - var(--col)) / 2)) !important;
+  }
+}
 .breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 1rem; }
 .breadcrumb a { color: var(--text-muted); text-decoration: none; }
 .breadcrumb .sep { margin: 0 .4em; }
@@ -3065,6 +3072,7 @@ ${sidebarMarkupHtml}
 <script>
 ${APP_PREFS_JS}
 </script>
+${AI_SCRIPT}
 </body>
 </html>`;
     for (const lang of PAGE_LANGS) {
@@ -3176,6 +3184,7 @@ ${sidebarMarkupHtml}
 <script>
 ${APP_PREFS_JS}
 </script>
+${AI_SCRIPT}
 </body>
 </html>`;
     const zhOr = (o, k) => o.zh[k];
@@ -3279,6 +3288,7 @@ ${sidebarMarkupHtml}
 <script>
 ${APP_PREFS_JS}
 </script>
+${AI_SCRIPT}
 </body>
 </html>`;
     for (const lang of PAGE_LANGS) {
@@ -3421,6 +3431,7 @@ ${sidebarMarkupHtml}
 <script>
 ${APP_PREFS_JS}
 </script>
+${AI_SCRIPT}
 </body>
 </html>`;
     for (const lang of PAGE_LANGS) {
@@ -3513,7 +3524,7 @@ ${sidebarMarkupHtml}
 ${APP_PREFS_JS}
 </script>
 ${appAttrs === null ? "" : `<script src="${SITE_PATH}quiz.js?v=${QUIZ_JS_HASH}" defer></script>`}
-${appAttrs === null || /data-mode="cards"/.test(appAttrs) ? "" : AI_SCRIPT}
+${AI_SCRIPT}
 </body>
 </html>`;
   // Readable text under each practice / mock / flashcard page (like a game
@@ -4275,7 +4286,8 @@ body.ai-open #ai-btn {
   background: rgba(233,69,96,.15);
   filter: drop-shadow(0 0 3px var(--accent));
 }
-body:not(:has(article.lesson)) .nav-tool-ai {
+/* Shown once ai-assistant.js has run on the page (it adds .has-ai). */
+body:not(.has-ai) .nav-tool-ai {
   display: none;
 }
 #sidebar .nav-scroll {

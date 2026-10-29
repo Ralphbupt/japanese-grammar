@@ -152,7 +152,8 @@
   function buildTopBar() {
     if (document.getElementById('top-controls')) return;
     var hasSearch = document.getElementById('search-btn');
-    var hasAi = document.querySelector('article.lesson') && document.getElementById('ai-btn');
+    // Any page that loads the AI panel (lessons, practice pages, and a general mode elsewhere).
+    var hasAi = document.querySelector('script[src*="ai-assistant.js"]') && document.getElementById('ai-btn');
     var hasRuby = document.querySelector('.lesson, #content.home');
     var bar = document.createElement('div');
     bar.id = 'top-controls';

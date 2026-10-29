@@ -20,9 +20,13 @@
   var article = document.querySelector('article.lesson');
   // Practice / mock test pages: no lesson; the context is the question being
   // explained, set by quiz.js through window.jpAI.explain() after an answer.
-  var QUIZ = !article && !!document.getElementById('quiz-app');
-  if ((!article && !QUIZ) || !window.fetch || !window.ReadableStream) return;
-  if (QUIZ) article = document.createElement('article');
+  var quizApp = document.getElementById('quiz-app');
+  var QUIZ = !article && !!quizApp && quizApp.getAttribute('data-mode') !== 'cards';
+  // Every other page (home, overviews, hubs, flashcards): a general tutor with no page context.
+  var GENERAL = !article && !QUIZ;
+  if (!window.fetch || !window.ReadableStream) return;
+  if (!article) article = document.createElement('article');
+  document.body.classList.add('has-ai');
 
   var CFG_KEY = 'jp_ai_cfg';          // v2: { v, active, profiles: { provider: { base, key, model } }, effort, session }
   var HIST_KEY = 'jp_ai_hist:' + location.pathname.replace(/^\/zh\//, '/');  // /zh/ copy shares the lesson's history
@@ -334,6 +338,9 @@
   }
   function systemPrompt(sc) {
     var ctx = contextText(sc), scoped = sc >= 0 && sections()[sc];
+    if (GENERAL) return isEn()
+      ? 'You are a Japanese grammar tutor helping a JLPT learner on ' + location.origin + ' (free grammar notes N5–N1). Answer any Japanese question. Reply in English. In Japanese examples, put the kana reading right after each kanji word in full-width parentheses, e.g. 雨（あめ）に降（ふ）られた, and add an English translation. When a lesson on the site covers the point, say so (lessons are at ' + location.origin + '/lessonNN/). Be concise, example-heavy, no filler.' + effortPrompt(cfg)
+      : '你是一位日语语法老师，正在辅导一位备考 JLPT 的中文母语学习者（网站 ' + location.origin + '，N5–N1 免费语法笔记）。回答任何日语问题，用中文。日语例句里的汉字请紧跟全角括号标注假名读音，格式如「雨（あめ）に降（ふ）られた」，并附中文翻译。回答简洁、多用例句、少说套话。' + effortPrompt(cfg);
     if (QUIZ) return isEn()
       ? 'You are a Japanese grammar tutor helping a JLPT learner who has just answered the practice question below on ' + location.origin + location.pathname + '. ' +
         'Answer from the question, its explanation and the linked lesson; say so when you add outside knowledge. Reply in English. Start with a one-sentence conclusion, then why the learner\u2019s choice is wrong (meaning, how it attaches, or tone), why the right answer is right, then 1–2 contrasting example sentences. No tables. In Japanese examples, put the kana reading right after each kanji word in full-width parentheses, e.g. 雨（あめ）に降（ふ）られた, and add an English translation. Be concise, no filler.' + effortPrompt(cfg) +
@@ -578,6 +585,7 @@
     modelLabel = panel.querySelector('.ai-model');
     scopeSel = panel.querySelector('.ai-scope');
     if (QUIZ) { scopeSel.hidden = true; panel.querySelector('.ai-ctx-label').textContent = '📎 ' + t('AI 看到：这道题、解析和对应课文', 'AI sees: this question, its explanation and lesson'); }
+    if (GENERAL) { scopeSel.hidden = true; panel.querySelector('.ai-ctx-label').textContent = '📎 ' + t('通用提问：AI 看不到页面内容', 'General question: the AI doesn\u2019t see this page'); }
 
     panel.querySelector('.ai-close').addEventListener('click', function () { close(); });
     panel.querySelector('.ai-back').addEventListener('click', function () { close(); });
@@ -663,12 +671,12 @@
     scopeSel.value = String(scope);
     scopeSel.classList.toggle('ai-scope-narrow', scope >= 0);
     var sc = effectiveScope();
-    inputEl.placeholder = QUIZ ? t('接着问这道题…', 'Ask more about this question…') : sc >= 0 ? t('问关于「' + sectionTitle(sc) + '」的问题…', 'Ask about "' + sectionTitle(sc) + '"…') : t('问关于这一课的任何问题…', 'Ask anything about this lesson…');
+    inputEl.placeholder = GENERAL ? t('问任何日语语法问题…', 'Ask any Japanese grammar question…') : QUIZ ? t('接着问这道题…', 'Ask more about this question…') : sc >= 0 ? t('问关于「' + sectionTitle(sc) + '」的问题…', 'Ask about "' + sectionTitle(sc) + '"…') : t('问关于这一课的任何问题…', 'Ask anything about this lesson…');
   }
   // Keep the "follow my reading" label current: on scroll, and again whenever
   // the reader comes back to the panel (scroll events can be throttled).
   function refreshAuto() {
-    if (QUIZ || scope !== -2 || !scopeSel) return;
+    if (QUIZ || GENERAL || scope !== -2 || !scopeSel) return;
     scopeSel.options[0].text = autoLabel();
     var sc = effectiveScope();
     inputEl.placeholder = sc >= 0 ? t('问关于「' + sectionTitle(sc) + '」的问题…', 'Ask about "' + sectionTitle(sc) + '"…') : t('问关于这一课的任何问题…', 'Ask anything about this lesson…');
@@ -709,6 +717,14 @@
     msgsEl.innerHTML = '';
     panel.querySelector('.ai-input').hidden = false;
     panel.querySelector('.ai-clear').hidden = !history.length;
+    if (!history.length && GENERAL) {
+      var gq = isEn()
+        ? ['What\u2019s the difference between は and が?', 'When do I use ために and when ように?', 'Explain the te-form rules simply', 'Which grammar comes up most on the JLPT N2?']
+        : ['は和が有什么区别？', 'ために和ように怎么区分？', '用最简单的话讲讲て形变形规则', 'N2 最常考哪些语法？'];
+      msgsEl.innerHTML = '<div class="ai-note">' + esc(t('这里可以问任何日语问题。想问某一课的内容，到那一课里打开 AI，它会读过整课再回答。', 'Ask any Japanese question here. For a specific lesson, open the AI on that lesson page: it reads the whole lesson first.')) + '</div>' +
+        '<div class="ai-quicks">' + gq.map(function (q) { return '<button type="button" class="ai-quick" data-q="' + esc(q) + '">' + esc(q) + '</button>'; }).join('') + '</div>';
+      return;
+    }
     if (!history.length && QUIZ) {
       msgsEl.innerHTML = '<div class="ai-note">' + esc(t('答完一道题后，点解析里的「🤖 AI 讲解」，AI 会针对你选的选项讲为什么错、怎么区分，还可以接着追问。', 'After answering a question, press "🤖 Explain with AI" under the explanation: the AI explains why your choice was wrong and how to tell them apart, and you can ask follow-ups.')) + '</div>';
       return;
