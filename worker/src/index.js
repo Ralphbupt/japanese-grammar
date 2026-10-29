@@ -33,7 +33,7 @@
  * Otherwise nothing is logged: no questions, answers or IPs. The only record is a
  * usage counter in Analytics Engine (dataset jpnotes_ai_usage), one row per
  * request: which button sent it (the panel's `source`), first question or
- * follow-up, what happened (cache / model / limited / error) and the neurons
+ * follow-up, what happened (cache / model / fallback-groq|cerebras / limited-ip-day|ip-minute|budget / error) and the neurons
  * spent.
  */
 
@@ -107,7 +107,7 @@ export default {
     const ip = req.headers.get('CF-Connecting-IP') || '0.0.0.0';
     const quota = env.QUOTA.get(env.QUOTA.idFromName(new Date().toISOString().slice(0, 10)));
     const verdict = await (await quota.fetch('https://quota/take', { method: 'POST', body: await hashIp(ip, env) })).json();
-    if (!verdict.ok) { count('limited'); return json({ error: { message: verdict.message } }, 429, cors); }
+    if (!verdict.ok) { count('limited-' + (verdict.why || 'ip')); return json({ error: { message: verdict.message } }, 429, cors); }
 
     const params = { messages, stream, max_tokens: Math.min(+body.max_tokens || MAX_TOKENS, MAX_TOKENS) };
     const onCached = (done) => {
@@ -122,7 +122,8 @@ export default {
         if (!stream) return new Response(JSON.stringify(await res.json()), { status: 200, headers });
         return new Response(res.body.pipeThrough(toChunks(onCached)), { status: 200, headers });
       }
-      count(gone ? 'limited' : 'error');
+      // Workers AI couldn't answer and no backup did: the one that needs a look.
+      count(gone ? 'limited-budget' : 'error');
       return json({ error: { message: gone ? QUOTA_GONE : '免费模型现在出错了，请过一会儿再试。 / The free model failed; please try again shortly.' } }, gone ? 429 : 503, cors);
     };
     if (verdict.budgetGone) return backup(true);
@@ -286,8 +287,8 @@ export class Quota {
     const row = this.sql.exec('SELECT day, recent FROM hits WHERE ip = ?', ip).toArray()[0];
     const day = row ? row.day : 0;
     const recent = (row ? JSON.parse(row.recent) : []).filter((t) => now - t < 60000);
-    if (day >= PER_DAY) return Response.json({ ok: false, message: '你今天的 ' + PER_DAY + ' 次免费提问已用完，明天再来；或在设置里填自己的 API key（Groq 的 key 也免费）。 / You have used today\u2019s ' + PER_DAY + ' free questions; come back tomorrow, or add your own API key in settings.' });
-    if (recent.length >= PER_MINUTE) return Response.json({ ok: false, message: '问得太快了，请一分钟后再试。 / Too many questions in a minute; try again shortly.' });
+    if (day >= PER_DAY) return Response.json({ ok: false, why: 'ip-day', message: '你今天的 ' + PER_DAY + ' 次免费提问已用完，明天再来；或在设置里填自己的 API key（Groq 的 key 也免费）。 / You have used today\u2019s ' + PER_DAY + ' free questions; come back tomorrow, or add your own API key in settings.' });
+    if (recent.length >= PER_MINUTE) return Response.json({ ok: false, why: 'ip-minute', message: '问得太快了，请一分钟后再试。 / Too many questions in a minute; try again shortly.' });
     recent.push(now);
     this.sql.exec('INSERT INTO hits (ip, day, recent) VALUES (?, ?, ?) ON CONFLICT(ip) DO UPDATE SET day = excluded.day, recent = excluded.recent', ip, day + 1, JSON.stringify(recent));
     if (!(await this.state.storage.getAlarm())) await this.state.storage.setAlarm(now + 2 * 86400000);

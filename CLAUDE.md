@@ -126,6 +126,7 @@ tools/
   lesson-audience.py      (lookup vs sequential readers per lesson)
   audit-readings.js       (checks the 读音 column of word tables)
   audit-furigana.js       (checks the furigana build.js emitted, reads dist/)
+  ai-usage-report.sh      (free-AI relay usage per day: requests, % of the neuron budget, limited / backup / error)
 ```
 
 ## Lesson File Format
