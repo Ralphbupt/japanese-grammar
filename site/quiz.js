@@ -526,30 +526,35 @@
     if (q.full) L.push(t('【完整句子】', '[Full sentence]') + ' ' + plainJa(q.full));
     L.push(t('【固定解析】', '[Explanation]') + ' ' + bi(q.why) + (q.wrong ? '\n' + q.wrong.map(function (w, i) { return w ? (i + 1) + '. ' + bi(w) : ''; }).filter(Boolean).join('\n') : ''));
     var ok = choice === q.answer, n = q.answer + 1, mine = choice == null ? '' : (choice + 1) + '「' + plainJa(q.options[choice]) + '」';
-    // What the learner is asking: depends on how they did.
-    var ask = choice == null ? t('这题我不会。', 'I didn’t know this one. ')
-      : !ok ? t('我选了 ' + mine + '，正确答案是 ' + n + '。', 'I chose ' + mine + '; the answer is ' + n + '. ')
-      : guess ? t('这题我是蒙对的。', 'I got this right by guessing. ')
-      : t('这题我答对了，想确认判断方法。', 'I got this right and want to check my reasoning. ');
-    // How to explain: depends on the question type.
-    var how = {
-      kanji: t('正确读音是什么，我选的读音错在哪一点。', 'what the right reading is and the one point where mine goes wrong.'),
-      hyouki: t('为什么写这个字，和最容易混的那个字差在哪。', 'why it’s this kanji and how it differs from the one it’s confused with.'),
-      gokeisei: t('这个词缀什么意思，为什么其他的接不上。', 'what the affix means and why the others don’t attach.'),
-      bunmyaku: t('句子里哪个线索决定了答案，我选的为什么放不进来。', 'which clue in the sentence decides it and why mine doesn’t fit.'),
-      iikae: t('划线部分什么意思，为什么正确选项等价。', 'what the underlined part means and why the answer is equivalent.'),
-      youhou: t('这个词怎么用，我选的句子哪里用错了。', 'how the word is used and what’s wrong in the sentence I picked.'),
-      bunpou: t('句子里哪个词或结构决定了答案，我选的错在意思、接续还是语气。', 'which word or structure decides it and whether mine fails on meaning, attachment or tone.'),
-      narabe: t('哪几个片段必须连在一起，所以顺序是什么，★ 是哪个。', 'which pieces must join, so what the order is and what goes in ★.'),
-      bunshou: t('空格前后是什么逻辑关系，为什么只有正确选项接得上。', 'what the logic around the blank is and why only the answer fits.')
-    }[q.type] || t('文章里哪一句给出了答案（引用日语原文），我选的是什么陷阱。', 'which sentence of the text gives the answer (quote it in Japanese) and what trap my option is.');
-    var NO = t('不要表格、标题、emoji，不要复述题目和解析。', ' No tables, headings or emoji; don’t restate the question or the explanation.');
-    var prompt = ask + t('用 3–4 句话讲：', 'In 3–4 sentences: ') + how + t('最后一句说下次怎么快速判断。', ' Last sentence: how to spot it next time.') + NO;
-    if (mode === 'parse') prompt = (q.passage
-      ? t('拆解文章里和这道题有关的那一两句。', 'Break down the one or two sentences of the text this question turns on. ')
-      : t('拆解这道题的完整句子。', 'Break down this question’s full sentence. ')) +
-      t('每个意群一行：日语（读音）— 意思，动词注明原形和变形；关键语法加粗。最后一行给翻译。', 'One line per chunk: Japanese (reading) — meaning; for verbs, the dictionary form and the form used; key grammar in bold. Last line: the translation.') + NO;
-    else if (mode === 'sum') prompt = t('总结正确答案和最主要的一个干扰项：每个最多 3 行——接续、意思、一个' + LEVEL + '水平的新例句；最后一行说两者怎么区分。', 'Summarise the answer and the main distractor: at most 3 lines each — how it attaches, meaning, one new ' + LEVEL + '-level example; last line: how to tell them apart.') + NO;
+    // What shows in the chat: one plain line. How to explain goes to the model
+    // with the question (【讲解要求】), so the bubble doesn't show instructions.
+    var prompt = choice == null ? t('这题我不会，帮我讲讲。', 'I didn’t know this one — explain it, please.')
+      : !ok ? t('我选了 ' + mine + '，正确答案是 ' + n + '，帮我讲讲。', 'I chose ' + mine + '; the answer is ' + n + '. Explain, please.')
+      : guess ? t('这题我是蒙对的，帮我讲讲。', 'I got this right by guessing — explain it, please.')
+      : t('这题我答对了，帮我确认一下思路。', 'I got this right — check my reasoning, please.');
+    var focus = {
+      kanji: t('读音的关键点：我选的读音错在浊音、长音、促音、拗音，还是音读训读搞混', 'the reading: whether mine goes wrong on voicing, long vowels, small っ/ゃゅょ, or on/kun'),
+      hyouki: t('形近或同音汉字各自的意思，为什么这个词用这个字', 'what each look-alike / same-sound kanji means and why this word uses this one'),
+      gokeisei: t('这个词缀的意思和它常接的词', 'what the affix means and what it usually attaches to'),
+      bunmyaku: t('句子里决定答案的线索和常见搭配', 'the clue in the sentence and the usual collocations'),
+      iikae: t('划线部分的意思，为什么正确选项和它等价', 'what the underlined part means and why the answer is equivalent'),
+      youhou: t('这个词的正确用法，错误句子分别错在哪', 'how the word is really used and what is wrong in each other sentence'),
+      bunpou: t('正确答案的接续和意思，和其他选项在意思、接续、语气上的区别', 'how the answer attaches and what it means, versus the others on meaning, attachment and tone'),
+      narabe: t('哪些片段因为接续必须连在一起，由此排出顺序，★ 为什么是这个', 'which pieces must join because of how they attach, the order that follows, and why ★ is this piece'),
+      bunshou: t('空格前后的逻辑关系（转折、因果、举例、总结等）', 'the logic around the blank (contrast, cause, example, summary…)')
+    }[q.type] || t('引用文章里给出答案的那一句（日语原文），其他选项各是哪种陷阱（文中没说 / 说反了 / 只对一半）', 'the sentence of the text that gives the answer (quoted in Japanese), and the trap in each other option (not in the text / the opposite / half right)');
+    var rule = t('不要表格、不要标题、不要 emoji，不要复述题目和固定解析。', ' No tables, headings or emoji; don’t restate the question or the fixed explanation.');
+    var how = t('先一句话给结论。再逐个讲选项，每个一行：这个词或形式 — 意思，放进这句为什么对或不对（汉字词后面注读音，如 昨夜（ゆうべ）；假名写的词有常用汉字就写出来，如 ゆうべ（昨夜）；没有汉字的不加括号）。重点讲' + focus + '。然后补 1 个和正确答案有关、本级别常用的搭配或例句（附翻译）。最后一句说下次怎么快速判断。共 150–250 字，可以用短列表。',
+      'Start with a one-line conclusion. Then each option on its own line: the word or form — meaning, and why it does or doesn’t fit here (kanji words get their reading, e.g. 昨夜（ゆうべ）; kana words that have a common kanji spelling get it, e.g. ゆうべ（昨夜）; otherwise no brackets). Focus on ' + focus + '. Then one common collocation or example at this level related to the answer (with translation). End with one line on how to spot it next time. 100–180 words; short lists are fine.') + rule;
+    if (mode === 'parse') {
+      prompt = t('帮我拆解这个句子。', 'Break down the sentence for me.');
+      how = (q.passage ? t('拆解文章里和这道题有关的那一两句。', 'Break down the one or two sentences of the text this question turns on. ') : t('拆解这道题的完整句子。', 'Break down this question’s full sentence. ')) +
+        t('每个意群一行：日语（汉字注读音）— 意思，动词写原形和变形名称；关键语法加粗并说明它在句中的作用。最后一行给自然的翻译。', 'One line per chunk: Japanese (reading) — meaning; verbs with dictionary form and the form’s name; key grammar in bold with what it does here. Last line: a natural translation.') + rule;
+    } else if (mode === 'sum') {
+      prompt = t('帮我总结这题涉及的语法和词。', 'Summarise the grammar and words in this question.');
+      how = t('总结正确答案和最主要的一两个干扰项：每个写接续或用法、意思、一个' + LEVEL + '水平的新例句（附翻译）；最后说它们怎么区分。可以用短列表。', 'Summarise the answer and the main one or two distractors: for each, how it attaches or is used, its meaning, one new ' + LEVEL + '-level example (with translation); then how to tell them apart. Short lists are fine.') + rule;
+    }
+    L.push(t('【讲解要求】', '[How to explain]') + ' ' + how);
     track('quiz_ai', { id: q.id, ok: ok, guess: !!guess, mode: mode || 'why' });
     Promise.all((q.refs || []).filter(function (r) { return !/#vocab$/.test(r); }).slice(0, 2).map(refText)).then(function (secs) {
       secs = secs.filter(Boolean);

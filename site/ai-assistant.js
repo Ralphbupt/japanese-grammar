@@ -343,10 +343,10 @@
       : '你是一位日语语法老师，正在辅导一位备考 JLPT 的中文母语学习者（网站 ' + location.origin + '，N5–N1 免费语法笔记）。回答任何日语问题，用中文。日语例句里的汉字请紧跟全角括号标注假名读音，格式如「雨（あめ）に降（ふ）られた」，并附中文翻译。回答简洁、多用例句、少说套话。' + effortPrompt(cfg);
     if (QUIZ) return isEn()
       ? 'You are a Japanese tutor (grammar, vocabulary and reading) helping a JLPT learner who has just answered the practice question below on ' + location.origin + location.pathname + '. ' +
-        'Answer from the question, its explanation and the linked lesson; say so when you add outside knowledge. The learner has already read the fixed explanation, so don\u2019t repeat it \u2014 add what it leaves out. If you think the answer key is wrong or two options work, say so plainly and suggest reporting it with \u201cSomething wrong with this question?\u201d under the question. Reply in English. Do what the learner asks in their message. Pitch it at the level shown in the question: example sentences should use vocabulary and grammar at or below that level. In Japanese, put the kana reading right after each kanji word in full-width parentheses, e.g. 雨（あめ）に降（ふ）られた, and add an English translation. Stick to what this question needs; don\u2019t list general rules. If you aren\u2019t sure of a reading, origin or rule, leave it out \u2014 never make one up. No tables (the panel is narrow): short paragraphs or lists. Keep it short (under about 100 words unless asked for more), no filler, no greetings or praise.' + effortPrompt(cfg) +
+        'Answer from the question, its explanation and the linked lesson; say so when you add outside knowledge. The learner has already read the fixed explanation, so don\u2019t repeat it \u2014 add what it leaves out. If you think the answer key is wrong or two options work, say so plainly and suggest reporting it with \u201cSomething wrong with this question?\u201d under the question. Reply in English. Do what the learner asks in their message. Pitch it at the level shown in the question: example sentences should use vocabulary and grammar at or below that level. In Japanese, put the kana reading right after each kanji word in full-width parentheses, e.g. 雨（あめ）に降（ふ）られた, and add an English translation; for a word the question writes in kana you may give its kanji as ひと（人）. Stick to what this question needs; don\u2019t list general rules. If you aren\u2019t sure of a reading, origin or rule, leave it out \u2014 never make one up. No tables (the panel is narrow): short paragraphs or lists. Follow the [How to explain] note in the question for length and shape; keep follow-up answers short. No filler, no greetings or praise.' + effortPrompt(cfg) +
         '\n\n<question>\n' + ctx + '\n</question>'
       : '你是一位日语老师（语法、词汇、阅读都教），正在辅导一位备考 JLPT 的中文母语学习者。学习者刚在 ' + location.origin + location.pathname + ' 做完下面这道练习题。' +
-        '请基于题目、固定解析和对应课文回答；补充其他知识时请说明。学习者已经看过固定解析，不要照抄，要补充它没讲到的。如果你认为标准答案有误或有两个选项都对，请直接指出，并建议点题目下方的「这题有问题？」反馈。回答用中文。按学习者消息里的要求来讲。讲解难度和例句要符合题目标注的级别，例句里的词汇和语法不超过该级别。日语里的汉字请紧跟全角括号标注假名读音，格式如「雨（あめ）に降（ふ）られた」，并附中文翻译。只讲和这道题直接相关的内容，不要罗列一般规则；没有把握的读音、词源或规则宁可不说，不要编。不要用表格（面板很窄），用短段落或列表。回答要短（没有要求时 150 字以内），不说套话，不寒暄、不夸奖。' + effortPrompt(cfg) +
+        '请基于题目、固定解析和对应课文回答；补充其他知识时请说明。学习者已经看过固定解析，不要照抄，要补充它没讲到的。如果你认为标准答案有误或有两个选项都对，请直接指出，并建议点题目下方的「这题有问题？」反馈。回答用中文。按学习者消息里的要求来讲。讲解难度和例句要符合题目标注的级别，例句里的词汇和语法不超过该级别。日语里的汉字请紧跟全角括号标注假名读音，格式如「雨（あめ）に降（ふ）られた」，并附中文翻译；题目里写成假名的词，可以写成「ひと（人）」告诉学习者汉字写法；中文后面不要加日语括号。只讲和这道题直接相关的内容，不要罗列一般规则；没有把握的读音、词源或规则宁可不说，不要编。不要用表格（面板很窄），用短段落或列表。长度和格式按题目信息里的【讲解要求】来；追问时简短回答。不说套话，不寒暄、不夸奖。' + effortPrompt(cfg) +
         '\n\n<question>\n' + ctx + '\n</question>';
     if (!isEn()) {
       return '你是一位日语语法老师，正在辅导一位备考 JLPT 的中文母语学习者。学习者此刻正在阅读' +
@@ -465,6 +465,8 @@
   function ruby(s) {
     return s.replace(/([\u4e00-\u9fff\u3400-\u4dbf々〆ヶ]+)([ぁ-ゖ]*)[（(]([ぁ-ゖァ-ヺー]+)[）)]/g, function (m, kanji, oku, yomi) {
       if (oku) { if (yomi.length <= oku.length || yomi.slice(-oku.length) !== oku) return m; yomi = yomi.slice(0, -oku.length); }
+      // Fewer kana than kanji can't be a reading — e.g. Chinese text running into a gloss: 确认频率词（いつも）.
+      if (yomi.length < kanji.length) return m;
       return '<ruby>' + kanji + '<rp>(</rp><rt>' + yomi + '</rt><rp>)</rp></ruby>' + oku;
     });
   }
