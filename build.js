@@ -2204,6 +2204,7 @@ async function main() {
 
   const ICON_SIDEBAR = loadIcon("sidebar.svg");
   const ICON_SEARCH = loadIcon("search.svg");
+  const ICON_SHARE = loadIcon("share.svg");
   const ICON_CHAT = loadIcon("chat.svg");
   const ICON_SETTINGS = loadIcon("settings.svg");
 
@@ -2228,6 +2229,7 @@ async function main() {
   <div class="nav-tools">
     <button id="menu-toggle" type="button" class="nav-tool-btn" aria-label="显示/收起侧栏 / Toggle sidebar" title="显示/收起侧栏 / Toggle sidebar">${ICON_SIDEBAR}</button>
     <button id="search-btn" type="button" class="nav-tool-btn nav-tool-extra" aria-label="搜索 / Search" title="搜索 / Search ( / )">${ICON_SEARCH}</button>
+    <button id="share-btn" type="button" class="nav-tool-btn nav-tool-extra" aria-label="分享 / Share" title="分享 / Share">${ICON_SHARE}</button>
     <button id="ai-btn" type="button" class="nav-tool-btn nav-tool-extra nav-tool-ai" aria-label="问 AI / Ask AI" title="问 AI / Ask AI">${ICON_CHAT}</button>
     <button id="settings-btn" type="button" class="nav-tool-btn nav-tool-extra" aria-label="设置 / Settings" title="设置 / Settings">${ICON_SETTINGS}</button>
   </div>
@@ -2249,9 +2251,10 @@ async function main() {
   try {
     var sbPref = localStorage.getItem('sb');          // '1' = collapsed, '0' = open
     var isHome = location.pathname === '${SITE_PATH}';   // <main> isn't parsed yet here
-    var startCollapsed = sbPref === null
+    // Phones (<=768px, where it overlays the page) always start closed.
+    var startCollapsed = window.innerWidth <= 768 || (sbPref === null
       ? (isHome || window.innerWidth < 1100)
-      : sbPref === '1';
+      : sbPref === '1');
     // Open it without the width animation: animating on load re-wraps every
     // item as the sidebar grows, which counts as layout shift (CLS).
     if (!startCollapsed) {
@@ -2293,11 +2296,44 @@ async function main() {
 
   // Menu toggle: expand/collapse sidebar + toolbar (same on desktop and mobile).
   var toggle = document.getElementById('menu-toggle');
+  // On phones it works as a drawer: a backdrop that closes it, closed again
+  // when a link is followed, no remembered state, and the back button closes
+  // it (opening pushes a history entry).
+  var phone = window.matchMedia ? matchMedia('(max-width: 768px)') : { matches: false };
+  var backdrop = document.createElement('div');
+  backdrop.id = 'sb-backdrop';
+  document.body.appendChild(backdrop);
+  function setOpen(open) {
+    sidebar.classList.toggle('collapsed', !open);
+    document.body.classList.toggle('sidebar-collapsed', !open);
+    document.documentElement.classList.toggle('sb-lock', open && phone.matches);
+  }
+  function closeDrawer() {
+    if (history.state && history.state.sb) history.back();   // popstate closes it
+    else setOpen(false);
+  }
   if (toggle) toggle.addEventListener('click', function(){
     var collapse = !sidebar.classList.contains('collapsed');
-    sidebar.classList.toggle('collapsed', collapse);
-    document.body.classList.toggle('sidebar-collapsed', collapse);
+    if (phone.matches) {
+      if (collapse) return closeDrawer();
+      setOpen(true);
+      try { history.pushState({ sb: 1 }, ''); } catch (e) {}
+      return;
+    }
+    setOpen(!collapse);
     try { localStorage.setItem('sb', collapse ? '1' : '0'); } catch (e) {}
+  });
+  backdrop.addEventListener('click', closeDrawer);
+  window.addEventListener('popstate', function () { if (phone.matches && !sidebar.classList.contains('collapsed')) setOpen(false); });
+  window.addEventListener('pageshow', function (e) { if (e.persisted && phone.matches) setOpen(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && phone.matches && !sidebar.classList.contains('collapsed')) closeDrawer(); });
+  // Following a link: replace the drawer's history entry, so Back from the
+  // next page goes straight to this one.
+  sidebar.addEventListener('click', function (e) {
+    var a = e.target.closest('a[href]');
+    if (!a || !phone.matches || e.defaultPrevented || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || a.target === '_blank') return;
+    if (history.state && history.state.sb) { e.preventDefault(); location.replace(a.href); }
+    else setOpen(false);
   });
 
   // Center the active item so the user lands on their place in a long list.
@@ -4627,10 +4663,13 @@ summary:hover { color: var(--link); }
 }
 
 /* Mobile: sidebar expands as overlay; content stays full width. */
+#sb-backdrop { display: none; }
 @media (max-width: 768px) {
   #sidebar:not(.collapsed) {
     box-shadow: 2px 0 16px rgba(0,0,0,.25);
   }
+  body:not(.sidebar-collapsed) #sb-backdrop { display: block; position: fixed; inset: 0; z-index: 99; background: rgba(0,0,0,.35); }
+  html.sb-lock, html.sb-lock body { overflow: hidden; }
   #content { margin-left: 0 !important; margin-right: 0; padding: 3.5rem 1rem 4rem; }
 }
 
@@ -4919,6 +4958,12 @@ html.theme-dark #search-box { background: #1f1f2e; }
 #theme-menu .theme-choice { border-color: transparent; border-radius: var(--radius); }
 #theme-menu .theme-choice[aria-checked="true"] { border-color: var(--accent); box-shadow: none; }
 .tc-lang { font-weight: 700; }
+/* Share menu (settings-modal.js jpShare): copy link + a few networks; on
+   touch devices the system share sheet is used instead. */
+#share-menu { position: fixed; z-index: 1100; min-width: 11rem; background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); padding: .35rem; display: flex; flex-direction: column; }
+#share-menu button, #share-menu a { display: block; text-align: left; padding: .45rem .7rem; border-radius: var(--radius); font: inherit; font-size: .88rem; color: inherit; background: none; border: 0; cursor: pointer; text-decoration: none; }
+#share-menu button:hover, #share-menu a:hover { background: rgba(127,127,127,.16); }
+#share-menu .sm-ok { color: var(--accent); }
 body.ai-open #tc-ai { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
 @media (min-width: 769px) { .nav-tool-extra { display: none; } }
 @media (max-width: 768px) { #top-controls { display: none; } }

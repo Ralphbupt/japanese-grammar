@@ -652,6 +652,12 @@
     window.scrollTo(0, app.offsetTop - 16);
   }
 
+  function shareBtn() { return window.jpShare ? '<button class="q-btn" data-act="share">' + t('分享成绩', 'Share my score') + '</button>' : ''; }
+  function shareScore(el) {
+    var o = app._share || {};
+    window.jpShare({ text: o.text, src: o.src, anchor: el, url: location.origin + location.pathname });
+  }
+
   function summary() {
     view(false);
     var s = S.session, res = s.res;
@@ -660,7 +666,7 @@
     var bad = res.filter(function (r) { return !r.ok || r.g; });
     track('quiz_finish', { kind: s.kind, score: ok, size: res.length, level: LEVEL });
     var h = '<div class="q-top"><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button></div>' +
-      '<div class="q-card q-summary"><p class="q-score">' + ok + ' / ' + res.length + '</p><p class="q-muted">' + t('用时约 ', 'About ') + Math.max(mins, 1) + t(' 分钟', ' min') + '</p>';
+      '<div class="q-card q-summary"><p class="q-score">' + ok + ' / ' + res.length + '</p><p class="q-muted">' + t('用时约 ', 'About ') + Math.max(mins, 1) + t(' 分钟', ' min') + '</p>' + (shareBtn() ? '<p class="q-share">' + shareBtn() + '</p>' : '');
     if (bad.length) {
       h += '<h2>' + t('错题和蒙的', 'Missed or guessed') + '</h2><ul class="q-sumlist">' + bad.map(function (r) {
         var q = Q[r.id];
@@ -676,6 +682,7 @@
     }
     h += '<div class="q-actions">' + (bad.length ? '<button class="q-btn" data-act="retry">' + t('重做错题', 'Redo the misses') + '</button>' : '') +
       '<button class="q-btn q-btn-primary" data-act="again">' + t('再来一组', 'Another set') + '</button></div></div>';
+    app._share = { text: t('我在 jpnotes.dev 做了一组 JLPT ' + LEVEL + ' 练习题，' + res.length + ' 题对了 ' + ok + ' 题。免费题库，每题都有解析：', 'I just did a JLPT ' + LEVEL + ' practice set on jpnotes.dev: ' + ok + '/' + res.length + ' right. Free questions, each with an explanation:'), src: 'quiz_result' };
     S.session = null; save();
     app._last = { kind: s.kind, label: s.label, bad: bad.map(function (r) { return r.id; }) };
     app.innerHTML = h;
@@ -733,6 +740,13 @@
       if (last) h += '<button class="q-btn" data-act="m-result" data-k="' + set.id + '">' + t('看上次结果', 'Last result') + '</button>';
       h += '</div></div>';
     });
+    // More sets are on the way: say so, so a reader who finished set 1 knows to come back.
+    if (SETS.length < 3) {
+      var nx = SETS.length + 1, pr = location.pathname.replace(/-mock-test\/$/, '-practice/');
+      h += '<div class="q-card q-set q-set-soon"><h2>' + t('第 ' + nx + ' 套', 'Test ' + nx) + ' <small class="q-tag">' + t('准备中', 'Coming') + '</small></h2>' +
+        '<p class="q-muted">' + t('第 ' + nx + (nx < 3 ? '、3' : '') + ' 套正在出题和审题，做好就会出现在这里。在那之前，可以先在' + '<a href="' + pr + '">练习题</a>' + '里专练薄弱题型，或者隔一两周再做一次第 1 套，看看有没有进步。',
+          'Test ' + nx + (nx < 3 ? ' and 3 are' : ' is') + ' being written and reviewed and will appear here when ready. Meanwhile, drill your weak question types in ' + '<a href="' + pr + '">practice</a>' + ', or retake test 1 in a week or two to see how far you’ve come.') + '</p></div>';
+    }
     app.innerHTML = h;
   }
   function flagName(f) { return { informal: t('非正式（暂停过）', 'informal (paused)'), partial: t('只做了一节', 'one section only'), retake: t('重做', 'retake') }[f] || f; }
@@ -931,7 +945,8 @@
       h += '</ul>';
       var slow = Object.keys(att.answers).sort(function (a, b) { return (att.answers[b].ms || 0) - (att.answers[a].ms || 0); }).slice(0, 3);
       if (slow.length) h += '<p class="q-muted">' + t('用时最长：', 'Slowest: ') + slow.map(function (id) { return id.split('-').pop() + '（' + Math.round((att.answers[id].ms || 0) / 1000) + 's）'; }).join('、') + '</p>';
-      h += '<div class="q-actions"><button class="q-btn q-btn-primary" data-act="m-review" data-k="wrong">' + t('复盘错题和蒙的题', 'Review misses and guesses') + '</button><button class="q-btn" data-act="m-review" data-k="all">' + t('全部题目', 'All questions') + '</button></div></div>';
+      h += '<div class="q-actions"><button class="q-btn q-btn-primary" data-act="m-review" data-k="wrong">' + t('复盘错题和蒙的题', 'Review misses and guesses') + '</button><button class="q-btn" data-act="m-review" data-k="all">' + t('全部题目', 'All questions') + '</button></div>' + shareBtn() + '</div>';
+      app._share = { text: t('我在 jpnotes.dev 做了 JLPT ' + LEVEL + ' 模拟考，' + (att.mode === 'full' ? '言语知识和阅读估分 ' + sum + ' 分。' : '') + '免费模考，按真题结构出题：', 'I took a JLPT ' + LEVEL + ' mock test on jpnotes.dev' + (att.mode === 'full' ? ' — estimated ' + sum + ' without listening' : '') + '. Free mock tests laid out like the real exam:'), src: 'mock_result' };
       M = { set: set, test: test, att: att, key: key };
       app.innerHTML = h;
     };
@@ -1216,6 +1231,7 @@
     else if (act === 'resume') ask();
     else if (act === 'review-list') reviewList();
     else if (act === 'analysis') analysis();
+    else if (act === 'share') shareScore(el);
     else if (act === 'weak') startKind('weak');
     else if (act === 'unreview') { delete S.review[el.getAttribute('data-k')]; save(); var y = window.scrollY; reviewList(); window.scrollTo(0, y); }
     else if (act === 'drop') { S.session = null; save(); home(); }

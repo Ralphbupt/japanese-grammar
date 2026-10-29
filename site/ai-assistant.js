@@ -54,7 +54,7 @@
     openai: { keyUrl: 'https://platform.openai.com/api-keys', group: 'intl', name: 'OpenAI (GPT)', kind: 'openai', needsKey: true,
       base: 'https://api.openai.com/v1', model: 'gpt-5.6', models: ['gpt-6-astra', 'gpt-5.6', 'gpt-5.5', 'gpt-5.6-terra', 'gpt-5.4', 'gpt-5.4-mini', 'gpt-5.6-luna'],
       hintZh: '在 platform.openai.com 创建 API key。', hintEn: 'Create an API key at platform.openai.com.' },
-    gemini: { keyUrl: 'https://aistudio.google.com/apikey', freeZh: 'Flash 模型有免费额度，Google 账号即可', freeEn: 'Flash models are free to a daily limit; just a Google account', group: 'intl', name: 'Google Gemini', kind: 'openai', needsKey: true,
+    gemini: { keyUrl: 'https://aistudio.google.com/apikey', freeZh: 'Flash 模型有免费额度，Google 账号即可（中国大陆需代理）', freeEn: 'Flash models are free to a daily limit; just a Google account', group: 'intl', name: 'Google Gemini', kind: 'openai', needsKey: true,
       base: 'https://generativelanguage.googleapis.com/v1beta/openai', model: 'gemini-3.8-flash', models: ['gemini-3.1-pro-preview', 'gemini-3.8-flash', 'gemini-2.5-pro', 'gemini-2.5-flash', 'gemini-3.5-flash-lite', 'gemini-3.1-flash-lite', 'gemini-2.5-flash-lite'],
       hintZh: '在 aistudio.google.com 创建 API key。Flash / Flash-Lite 有免费额度（Flash-Lite 每天更多次），Pro 需付费。', hintEn: 'Create an API key at aistudio.google.com. Flash / Flash-Lite have a free tier (Flash-Lite allows more requests per day); Pro is paid only.' },
     xai: { keyUrl: 'https://console.x.ai/', group: 'intl', name: 'xAI Grok', kind: 'openai', needsKey: true,
@@ -63,7 +63,7 @@
     mistral: { keyUrl: 'https://console.mistral.ai/api-keys', group: 'intl', name: 'Mistral', kind: 'openai', needsKey: true,
       base: 'https://api.mistral.ai/v1', model: 'mistral-medium-latest', models: ['mistral-medium-latest', 'mistral-large-latest', 'mistral-small-latest', 'mistral-medium-3-5', 'mistral-large-2512', 'mistral-small-2603', 'ministral-14b-2512'],
       hintZh: '在 console.mistral.ai 创建 API key。有免费的 Experiment 档（需手机号验证），所有模型可用，限速。', hintEn: 'Create an API key at console.mistral.ai. The free Experiment tier (phone verification required) covers every model at a reduced rate limit.' },
-    groq: { keyUrl: 'https://console.groq.com/keys', freeZh: '免费、秒回；Google 或 GitHub 账号登录即可，不绑卡', freeEn: 'Free and instant; sign in with Google or GitHub, no card', group: 'intl', name: 'Groq', kind: 'openai', needsKey: true,
+    groq: { keyUrl: 'https://console.groq.com/keys', freeZh: '免费、秒回；Google 或 GitHub 账号登录即可，不绑卡（中国大陆需代理）', freeEn: 'Free and instant; sign in with Google or GitHub, no card', group: 'intl', name: 'Groq', kind: 'openai', needsKey: true,
       base: 'https://api.groq.com/openai/v1', model: 'openai/gpt-oss-120b', models: ['openai/gpt-oss-120b', 'qwen/qwen3.8-27b', 'openai/gpt-oss-20b', 'groq/compound', 'groq/compound-mini'],
       hintZh: '在 console.groq.com 创建 API key（Google / GitHub 登录即可）。免费档每分钟 8000 token，整课提问一次约 5–6k，所以约一分钟一问；把 📎 范围缩到某一节就能连续提问。注意：这不是马斯克的 xAI Grok。', hintEn: 'Create an API key at console.groq.com (sign in with Google / GitHub). The free tier allows 8,000 tokens per minute and a whole-lesson question uses 5–6k, so about one question a minute; narrow the 📎 scope to one grammar point to ask continuously. Not to be confused with xAI\u2019s Grok.' },
 
@@ -112,8 +112,8 @@
       hintEn: 'Any OpenAI-compatible server on this machine (vLLM, llama.cpp, your own relay…). To protect your key, the page security policy only allows the listed providers and localhost / 127.0.0.1.' }
   };
 
-  var GROUPS = [['site', '本站免费 / Free'], ['intl', '国际 / International'], ['cn', '国内 / China'], ['local', '本地 / Local'], ['relay', '聚合与自定义 / Relays & custom']];
-  var RECOMMEND = { zh: ['groq', 'zhipu', 'siliconflow'], en: ['groq', 'gemini', 'openrouter'] };
+  var GROUPS = [['site', '本站免费 / Free'], ['intl', '国际（中国大陆一般要代理） / International'], ['cn', '国内 / China'], ['local', '本地 / Local'], ['relay', '聚合与自定义 / Relays & custom']];
+  var RECOMMEND = { zh: ['zhipu', 'siliconflow', 'deepseek'], en: ['groq', 'gemini', 'openrouter'] };
 
   /* ── config (several providers, one active) ── */
   // cfg.session = true → stored in sessionStorage (gone when the tab closes).
@@ -785,11 +785,11 @@
     var hint = '', p = cfg && PROVIDERS[cfg.active];
     if (cfg.active === 'jpnotes') {
       // The relay's own messages already say what to do; only a dead connection needs a word.
-      if (/Failed to fetch|NetworkError|Load failed/i.test(msg)) hint = t('（连不上本站的 AI 服务，请稍后再试，或在设置里填自己的 API key。）', '(Cannot reach the site\u2019s AI relay; try again later, or add your own API key in settings.)');
+      if (/Failed to fetch|NetworkError|Load failed/i.test(msg)) hint = t('（连不上本站的 AI 服务，请稍后再试。在中国大陆偶尔会连不上，可以在设置里用国内服务商（智谱有免费模型、硅基流动、DeepSeek）自己的 API key。）', '(Cannot reach the site\u2019s AI relay; try again later, or add your own API key in settings.)');
     } else if (/Failed to fetch|NetworkError|Load failed/i.test(msg)) {
       hint = p && p.group === 'local'
         ? t('（连不上本地服务：确认它在运行、Chrome 已允许访问本地网络，且是用 OLLAMA_ORIGINS=' + location.origin + ' 启动的。）', '(Cannot reach the local server: make sure it is running, Chrome allowed local-network access, and it was started with OLLAMA_ORIGINS=' + location.origin + '.)')
-        : t('（网络错误：通常是服务商不允许浏览器直连 (CORS)、base URL 写错，或网络不通。可改用 OpenRouter / 硅基流动等中转。）', '(Network error: usually the provider blocks browser calls (CORS), the base URL is wrong, or you are offline. A relay like OpenRouter works around CORS.)');
+        : t((p && p.group === 'intl' ? '（连不上 ' + p.name + '：在中国大陆，国外服务商一般要开代理才能用；不开代理可以换国内的智谱、硅基流动、DeepSeek。）' : '（网络错误：通常是服务商不允许浏览器直连 (CORS)、base URL 写错，或网络不通。可改用 OpenRouter / 硅基流动等中转。）'), '(Network error: usually the provider blocks browser calls (CORS), the base URL is wrong, or you are offline. A relay like OpenRouter works around CORS.)');
     } else if (/401|403|authentication|invalid.*key/i.test(msg)) {
       hint = t('（请检查 API key。）', '(Check your API key.)');
     } else if (/^HTTP 429|rate limit|too many requests/i.test(msg)) {

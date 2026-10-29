@@ -15,7 +15,8 @@ The grammar notes are published as a static site at **https://jpnotes.dev/** (cu
 - **Deploy**: GitHub Pages via GitHub Actions (`dist/` folder)
 
 ### Features
-- Sidebar navigation by JLPT level (hover-to-expand, available on all pages)
+- Sidebar navigation by JLPT level (hover-to-expand, available on all pages); on phones (≤768px) it is a drawer: always starts closed, backdrop / Esc / Back close it, following a link closes it (desktop remembers open/closed in `localStorage.sb`)
+- Share: the share icon (sidebar toolbar + top bar) and 分享成绩 on practice / mock results call `window.jpShare()` in `site/settings-modal.js` — system share sheet on touch devices, else a menu (copy, Weibo, X, LINE, Facebook); links get `?utm_source=share`; GA events `share_open` / `share` (src, method, page)
 - Element-level furigana on Japanese text via `data-ja` attribute
 - Bilingual content (Chinese + English): lessons, checklists, guides, the N5–N2 overviews, `/guides/` and `/about/` are published once per language (below); the home page and `/anki/` stay bilingual with a language toggle
 - Themes (settings → 主题, and the top-bar theme menu): auto / white / paper / sepia / dark. `localStorage.theme` = `white|light|sepia|dark` (`light` is paper; absent = auto, i.e. paper by day, dark at night). Classes on `<html>`: `theme-dark`, or `theme-light` plus `tone-white` / `tone-sepia`, so every dark rule (`:root:not(.theme-light)` / `html.theme-dark`) keeps excluding the light tones. Colours are tokens (`--bg`, `--surface-2`, `--row-alt`, `--panel-bg`, `--chip-bg`, `--accent`, `--link` …); light themes use a deeper accent red so red text passes 4.5:1, dark switches back to `#e94560`. Red is reserved for the grammar point being taught (bold target in examples) plus links / active states; furigana, cross-link chips, answer summaries, breadcrumbs and sidebar level headings stay neutral and turn red only on hover

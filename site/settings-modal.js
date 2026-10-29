@@ -149,6 +149,77 @@
 
   // Desktop only (CSS hides it at ≤768px, where the sidebar toolbar + modal
   // take over): one-click search / AI / theme / furigana / language, top right.
+  // ─── Share ───
+  // jpShare({ url, title, text, src, anchor }): the system share sheet on touch
+  // devices, otherwise a small menu (copy link, X, Weibo, Facebook, LINE) under
+  // `anchor`. Shared links carry utm_source=share so visits show up in GA.
+  function track(n, p) { if (window.gaEvent) window.gaEvent(n, p); }
+  function pageUrl() {
+    var c = document.querySelector('link[rel="canonical"]');
+    return c ? c.href : location.origin + location.pathname;
+  }
+  function closeShare() { var m = document.getElementById('share-menu'); if (m) m.remove(); }
+  function jpShare(o) {
+    o = o || {};
+    var en = isEnUi(), base = o.url || pageUrl();
+    var url = base + (base.indexOf('?') < 0 ? '?' : '&') + 'utm_source=share';
+    var title = o.title || document.title, text = o.text || '';
+    var src = o.src || 'page', page = location.pathname;
+    if (navigator.share && window.matchMedia && matchMedia('(pointer: coarse)').matches) {
+      track('share_open', { src: src, how: 'native', page: page });
+      navigator.share({ title: title, text: text, url: url })
+        .then(function () { track('share', { src: src, method: 'native', page: page }); })
+        .catch(function () {});
+      return;
+    }
+    if (document.getElementById('share-menu')) { closeShare(); return; }
+    track('share_open', { src: src, how: 'menu', page: page });
+    var msg = (text ? text + ' ' : '') + url, e = encodeURIComponent;
+    var nets = [
+      ['x', 'X', 'https://x.com/intent/post?text=' + e(text || title) + '&url=' + e(url)],
+      ['weibo', '微博', 'https://service.weibo.com/share/share.php?url=' + e(url) + '&title=' + e(text || title)],
+      ['facebook', 'Facebook', 'https://www.facebook.com/sharer/sharer.php?u=' + e(url)],
+      ['line', 'LINE', 'https://social-plugins.line.me/lineit/share?url=' + e(url)]
+    ];
+    if (!en) nets = [nets[1], nets[0], nets[3], nets[2]];
+    var m = document.createElement('div');
+    m.id = 'share-menu';
+    m.setAttribute('role', 'menu');
+    m.innerHTML = '<button type="button" data-net="copy">🔗 ' + (en ? 'Copy link' : '复制链接') + '</button>' +
+      nets.map(function (n) { return '<a href="' + n[2] + '" target="_blank" rel="noopener" data-net="' + n[0] + '">' + n[1] + '</a>'; }).join('');
+    document.body.appendChild(m);
+    var r = (o.anchor || document.body).getBoundingClientRect(), w = m.offsetWidth;
+    m.style.top = Math.min(r.bottom + 6, window.innerHeight - m.offsetHeight - 8) + 'px';
+    m.style.left = Math.max(8, r.left + w <= window.innerWidth - 8 ? r.left : r.right - w) + 'px';
+    m.addEventListener('click', function (ev) {
+      var b = ev.target.closest('[data-net]');
+      if (!b) return;
+      var net = b.getAttribute('data-net');
+      track('share', { src: src, method: net, page: page });
+      if (net !== 'copy') { setTimeout(closeShare, 0); return; }
+      var done = function () { b.textContent = '✓ ' + (en ? 'Copied' : '已复制'); b.classList.add('sm-ok'); setTimeout(closeShare, 900); };
+      // Clipboard API, then the old execCommand route, then show the link to copy by hand.
+      var legacy = function () {
+        var ta = document.createElement('textarea'), ok = false;
+        ta.value = msg; ta.setAttribute('readonly', ''); ta.style.cssText = 'position:fixed;opacity:0';
+        document.body.appendChild(ta); ta.select();
+        try { ok = document.execCommand('copy'); } catch (x) {}
+        ta.remove();
+        if (ok) return done();
+        b.outerHTML = '<input readonly value="' + msg.replace(/"/g, '&quot;') + '" style="font:inherit;font-size:.8rem;margin:.2rem;padding:.3rem">';
+        var inp = m.querySelector('input'); inp.focus(); inp.select();
+      };
+      if (navigator.clipboard) navigator.clipboard.writeText(msg).then(done, legacy); else legacy();
+    });
+    setTimeout(function () {
+      document.addEventListener('click', function off(ev) {
+        if (!m.contains(ev.target)) { closeShare(); document.removeEventListener('click', off); }
+      });
+    }, 0);
+  }
+  window.jpShare = jpShare;
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeShare(); });
+
   function buildTopBar() {
     if (document.getElementById('top-controls')) return;
     var hasSearch = document.getElementById('search-btn');
@@ -159,6 +230,7 @@
     bar.id = 'top-controls';
     bar.innerHTML =
       (hasSearch ? '<button type="button" class="tc-pill tc-icon" data-proxy="search-btn" aria-label="搜索 / Search" title="搜索 / Search ( / )">' + hasSearch.innerHTML + '</button>' : '') +
+      (document.getElementById('share-btn') ? '<button type="button" class="tc-pill tc-icon js-share" aria-label="分享 / Share" title="分享 / Share">' + document.getElementById('share-btn').innerHTML + '</button>' : '') +
       (hasAi ? '<button type="button" class="tc-pill tc-icon" id="tc-ai" data-proxy="ai-btn" aria-label="问 AI / Ask AI" title="问 AI / Ask AI">' + document.getElementById('ai-btn').innerHTML + '</button>' : '') +
       '<button type="button" class="tc-pill tc-icon js-theme-btn" aria-label="主题 / Theme" aria-haspopup="true" aria-expanded="false"></button>' +
       (hasRuby ? '<label class="tc-pill"><input type="checkbox" class="js-ruby-toggle" checked> <span class="lang-zh">显示读音</span><span class="lang-en">Furigana</span></label>' : '') +
@@ -172,6 +244,8 @@
       });
     });
     wireControls(bar);
+    var sb = bar.querySelector('.js-share');
+    if (sb) sb.addEventListener('click', function (e) { e.stopPropagation(); jpShare({ src: 'top', anchor: sb }); });
   }
 
   function buildUI() {
@@ -242,7 +316,11 @@
     });
   }
 
-  function init() { bindBtn(); buildTopBar(); }
+  function init() {
+    bindBtn(); buildTopBar();
+    var sb = document.getElementById('share-btn');
+    if (sb) sb.addEventListener('click', function (e) { e.stopPropagation(); jpShare({ src: 'toolbar', anchor: sb }); });
+  }
   if (document.readyState !== 'loading') init();
   else document.addEventListener('DOMContentLoaded', init);
 })();
