@@ -48,6 +48,18 @@ const CACHE_TTL = 3 * 86400;
 const FEEDBACK_PER_DAY = 20;
 const FEEDBACK_MAX = 1000;                            // characters of text
 
+// Backup providers, tried in order when Workers AI can't answer (the day's
+// neuron budget is gone, or it errors). Each is used only if its key is set as
+// a Worker secret (npx wrangler secret put GROQ_KEY / CEREBRAS_KEY). The model
+// defaults to the one Workers AI runs, so answers keep their character; set
+// GROQ_MODEL / CEREBRAS_MODEL (wrangler.toml [vars]) to use another. Free
+// tiers rate-limit (429) rather than bill; a site-wide daily cap bounds a paid plan.
+const FALLBACKS = [
+  { name: 'groq', url: 'https://api.groq.com/openai/v1/chat/completions', model: 'openai/gpt-oss-120b', key: 'GROQ_KEY', modelVar: 'GROQ_MODEL' },
+  { name: 'cerebras', url: 'https://api.cerebras.ai/v1/chat/completions', model: 'gpt-oss-120b', key: 'CEREBRAS_KEY', modelVar: 'CEREBRAS_MODEL' },
+];
+const FALLBACK_PER_DAY = 1500;                        // requests a day across all backups
+
 const ORIGIN_RE = /^(https:\/\/jpnotes\.dev|http:\/\/(localhost|127\.0\.0\.1)(:\d+)?)$/;
 const QUOTA_GONE = '今天本站的免费额度已用完，明天再来；或在设置里填自己的 API key。 / The site’s free quota for today is used up; come back tomorrow, or add your own API key in settings.';
 
@@ -98,14 +110,28 @@ export default {
     if (!verdict.ok) { count('limited'); return json({ error: { message: verdict.message } }, 429, cors); }
 
     const params = { messages, stream, max_tokens: Math.min(+body.max_tokens || MAX_TOKENS, MAX_TOKENS) };
+    const onCached = (done) => {
+      if (cacheKey && done.content && done.finished) {
+        ctx.waitUntil(caches.default.put(cacheKey, new Response(JSON.stringify({ content: done.content, reasoning: done.reasoning }), { headers: { 'Cache-Control': 'public, max-age=' + CACHE_TTL } })));
+      }
+    };
+    // Workers AI can't answer: try the backups, else say why.
+    const backup = async (gone) => {
+      const res = await viaFallback(env, quota, params, count);
+      if (res) {
+        if (!stream) return new Response(JSON.stringify(await res.json()), { status: 200, headers });
+        return new Response(res.body.pipeThrough(toChunks(onCached)), { status: 200, headers });
+      }
+      count(gone ? 'limited' : 'error');
+      return json({ error: { message: gone ? QUOTA_GONE : '免费模型现在出错了，请过一会儿再试。 / The free model failed; please try again shortly.' } }, gone ? 429 : 503, cors);
+    };
+    if (verdict.budgetGone) return backup(true);
     let result;
     try {
       try { result = await env.AI.run(MODEL, { ...params, reasoning_effort: 'low' }); }
       catch (e) { if (quotaGone(e)) throw e; result = await env.AI.run(MODEL, params); }   // in case the knob is ever rejected
     } catch (e) {
-      const gone = quotaGone(e);
-      count(gone ? 'limited' : 'error');
-      return json({ error: { message: gone ? QUOTA_GONE : '免费模型现在出错了，请过一会儿再试。 / The free model failed; please try again shortly.' } }, gone ? 429 : 503, cors);
+      return backup(quotaGone(e));
     }
     const spend = (neurons) => quota.fetch('https://quota/spend', { method: 'POST', body: String(neurons) });
     if (!stream) {
@@ -118,9 +144,7 @@ export default {
     return new Response(result.pipeThrough(toChunks((done) => {
       count('model', done.neurons);
       ctx.waitUntil(spend(done.neurons));
-      if (cacheKey && done.content && done.finished) {
-        ctx.waitUntil(caches.default.put(cacheKey, new Response(JSON.stringify({ content: done.content, reasoning: done.reasoning }), { headers: { 'Cache-Control': 'public, max-age=' + CACHE_TTL } })));
-      }
+      onCached(done);
     })), { status: 200, headers });
   },
 };
@@ -155,6 +179,27 @@ function quotaGone(e) { return /4006|neuron|allocation/i.test(String(e && e.mess
 function replay(a) {
   const ev = (delta) => 'data: ' + JSON.stringify({ choices: [{ index: 0, delta }] }) + '\n\n';
   return (a.reasoning ? ev({ reasoning: a.reasoning }) : '') + ev({ content: a.content }) + 'data: [DONE]\n\n';
+}
+
+// The first backup with a key that answers (429 / 5xx → the next one). Returns
+// the provider's Response (OpenAI-shaped, streamed or not) or null.
+async function viaFallback(env, quota, params, count) {
+  const ready = FALLBACKS.filter((f) => env[f.key]);
+  if (!ready.length) return null;
+  const allowed = await (await quota.fetch('https://quota/fallback', { method: 'POST' })).json();
+  if (!allowed.ok) return null;
+  for (const f of ready) {
+    try {
+      const res = await fetch(f.url, {
+        method: 'POST',
+        headers: { Authorization: 'Bearer ' + env[f.key], 'Content-Type': 'application/json' },
+        // reasoning_effort only for the gpt-oss models; other models may reject it.
+        body: JSON.stringify({ ...params, model: env[f.modelVar] || f.model, ...(/gpt-oss/.test(env[f.modelVar] || f.model) ? { reasoning_effort: 'low' } : {}) }),
+      });
+      if (res.ok) { count('fallback-' + f.name); return res; }
+    } catch (e) {}
+  }
+  return null;
 }
 
 // Workers AI streams either OpenAI chat.completion.chunk events or its own
@@ -221,7 +266,8 @@ export class Quota {
     this.state = state;
     this.sql = state.storage.sql;
     this.sql.exec('CREATE TABLE IF NOT EXISTS hits (ip TEXT PRIMARY KEY, day INTEGER NOT NULL, recent TEXT NOT NULL)');
-    this.sql.exec('CREATE TABLE IF NOT EXISTS spent (id INTEGER PRIMARY KEY CHECK (id = 1), neurons REAL NOT NULL)');
+        this.sql.exec('CREATE TABLE IF NOT EXISTS spent (id INTEGER PRIMARY KEY CHECK (id = 1), neurons REAL NOT NULL)');
+    this.sql.exec('CREATE TABLE IF NOT EXISTS backup (id INTEGER PRIMARY KEY CHECK (id = 1), n INTEGER NOT NULL)');
   }
   async fetch(req) {
     const path = new URL(req.url).pathname, now = Date.now();
@@ -230,9 +276,13 @@ export class Quota {
       this.sql.exec('INSERT INTO spent (id, neurons) VALUES (1, ?) ON CONFLICT(id) DO UPDATE SET neurons = neurons + excluded.neurons', n);
       return Response.json({ ok: true });
     }
+    if (path === '/fallback') {
+      this.sql.exec('INSERT INTO backup (id, n) VALUES (1, 1) ON CONFLICT(id) DO UPDATE SET n = n + 1');
+      const used = this.sql.exec('SELECT n FROM backup WHERE id = 1').toArray()[0].n;
+      return Response.json({ ok: used <= FALLBACK_PER_DAY });
+    }
     const ip = await req.text();
     const spent = (this.sql.exec('SELECT neurons FROM spent WHERE id = 1').toArray()[0] || { neurons: 0 }).neurons;
-    if (spent >= DAILY_NEURONS) return Response.json({ ok: false, message: QUOTA_GONE });
     const row = this.sql.exec('SELECT day, recent FROM hits WHERE ip = ?', ip).toArray()[0];
     const day = row ? row.day : 0;
     const recent = (row ? JSON.parse(row.recent) : []).filter((t) => now - t < 60000);
@@ -241,7 +291,8 @@ export class Quota {
     recent.push(now);
     this.sql.exec('INSERT INTO hits (ip, day, recent) VALUES (?, ?, ?) ON CONFLICT(ip) DO UPDATE SET day = excluded.day, recent = excluded.recent', ip, day + 1, JSON.stringify(recent));
     if (!(await this.state.storage.getAlarm())) await this.state.storage.setAlarm(now + 2 * 86400000);
-    return Response.json({ ok: true });
+    // Per-reader limits still apply when the site budget is gone: the request then goes to a backup.
+    return Response.json({ ok: true, budgetGone: spent >= DAILY_NEURONS });
   }
   async alarm() { await this.state.storage.deleteAll(); }
 }
