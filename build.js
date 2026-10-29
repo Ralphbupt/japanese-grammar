@@ -3551,7 +3551,7 @@ ${AI_SCRIPT}
     const reqPath = path.join(__dirname, "dist", ".audio-requests.json");
     const reqs = JSON.parse(fs.readFileSync(reqPath, "utf-8"));
     fs.writeFileSync(reqPath, JSON.stringify(reqs.concat(QUIZ_AUDIO_REQUESTS)), "utf-8");
-    console.log(`  Requested audio for ${QUIZ_AUDIO_REQUESTS.length} reading passages.`);
+    console.log(`  Requested audio for ${QUIZ_AUDIO_REQUESTS.length} reading passages and question sentences.`);
   }
   const quizPageIds = [];
   fs.mkdirSync(path.join(__dirname, "dist", "quiz"), { recursive: true });

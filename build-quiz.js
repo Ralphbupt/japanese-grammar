@@ -409,6 +409,7 @@ async function bundleLevel(level, ruby, mock) {
       // answering, the sentence in kanji (with furigana) and each option's kanji.
       ...(q.kj ? { kj: await render(q.kj, true) } : {}),
       ...(q.okj && q.okj.some(Boolean) ? { okj: q.okj } : {}),
+      ...((sa) => sa ? { sa } : {})(sentenceAudio(q)),
       ...(q.tr ? { tr: q.tr } : {}),
       why: q.why, wrong: q.wrong,
       rev: q.rev || 1,
@@ -449,13 +450,34 @@ function passageAudio(p, answers) {
   return fs.existsSync(path.join(ROOT, "audio", `${id}.mp3`)) ? id : null;
 }
 
+// Read-aloud audio for a question's finished sentence (🔊 after answering):
+// the kanji version when there is one, else `full`; dialogue labels (A「…」)
+// dropped. Not for reading questions (the passage has its own) or 用法 (four
+// separate sentences).
+function sentenceAudio(q) {
+  if (q.passage || q.type === "youhou") return null;
+  const text = String(q.kj || q.full || "")
+    .replace(/<<|>>/g, "")
+    // Stage directions （…で）, then speaker labels: 「…」 that ends a line or
+    // is followed by a space is a turn (A「…」 / 受付「…」), not a quote (「…」と).
+    .replace(/(^|\n)（[^）]*）/g, "$1")
+    .replace(/(^|\s)[^\s「」。、]{1,6}[:：]?「([^「」]*)」(?=\s|$)/g, "$1$2\n")
+    .replace(/[「」]/g, "")
+    .replace(/(?<=[^\x00-\x7f])[ \u3000]+(?=[^\x00-\x7f])/g, "")
+    .replace(/\n+/g, "\n").trim();
+  if (!text || /（\s*）|＿/.test(text)) return null;
+  const id = "q" + require("crypto").createHash("sha1").update(text).digest("hex").slice(0, 12);
+  if (!AUDIO_REQUESTS.some((r) => r.id === id)) AUDIO_REQUESTS.push({ id, text });
+  return fs.existsSync(path.join(ROOT, "audio", `${id}.mp3`)) ? id : null;
+}
+
 // A mock test: the questions without anything that gives the answer away,
 // in test order and grouped into sittings and もんだい, plus a separate key
 // (answers, explanations, translations) that the page loads after submitting.
 async function bundleMock(level, ruby, n) {
   const b = await bundleLevel(level, ruby, n);
   const cfg = MOCK[level];
-  const SECRET = ["answer", "order", "why", "wrong", "full", "tr", "kj", "okj"];
+  const SECRET = ["answer", "order", "why", "wrong", "full", "tr", "kj", "okj", "sa"];
   const key = { questions: {}, passages: {} };
   const qs = b.questions.map((q) => {
     key.questions[q.id] = Object.fromEntries(SECRET.filter((k) => k in q).map((k) => [k, q[k]]));

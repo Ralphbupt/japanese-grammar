@@ -355,7 +355,6 @@
     }
     cur = { q: q, start: Date.now(), picked: [null, null, null, null], guess: false, done: false };
     var h = topBar(idx, 1, q) +
-      '<div class="q-progress"><span style="width:' + (s.i * 100 / s.ids.length) + '%"></span></div>' +
       '<div class="q-card">' + passageHtml(q) + '<div class="q-stem" lang="ja">' + stemHtml(q) + '</div>';
     if (q.type === 'narabe') {
       h += '<p class="q-muted q-hint">' + t('按顺序点选项填进空格，点空格可以撤回。选出 ★ 处的词。', 'Tap the pieces in order to fill the blanks; tap a blank to undo. The answer is what goes in ★.') + '</p>' +
@@ -386,6 +385,7 @@
       for (var k = S.session.res.length - 1; k >= 0; k--) if (S.session.res[k].id === g.id) { r = S.session.res[k]; break; }
       if (curs) cur = curs[g.id];
       cur.done = true; cur.guess = r ? r.g : false; cur.past = nextIdx;
+      if (r && r.p) cur.picked = r.p.slice();
       feedback(g, r ? r.c : null, r ? r.ok : false);
       var wg = root().querySelector('[data-act="was-guess"]'); if (wg) wg.remove();
     });
@@ -424,6 +424,15 @@
   // Read-aloud of a passage, offered once its questions are answered.
   function listenBtn(id) { return '<p class="q-listen"><button class="q-btn" data-act="listen" data-k="' + id + '">🔊 ' + t('听全文', 'Listen to the text') + '</button></p>'; }
   var player = null;
+  // 🔊 next to a question's sentence: play it, tap again to stop.
+  function say(el) {
+    var src = '/audio/' + el.getAttribute('data-k') + '.mp3';
+    if (player && player.src.indexOf(src) >= 0 && !player.paused) { player.pause(); return; }
+    if (player) player.pause();
+    player = new Audio(src);
+    player.play().catch(function () {});
+    track('quiz_say', { level: LEVEL });
+  }
   function listen(el) {
     var src = '/audio/' + el.getAttribute('data-k') + '.mp3';
     if (player && player.src.indexOf(src) >= 0 && !player.paused) { player.pause(); el.textContent = '🔊 ' + t('继续听', 'Resume'); return; }
@@ -435,7 +444,8 @@
   }
   function okjOf(q, i) { return q.okj && q.okj[i] ? '<span class="q-okj">（' + q.okj[i] + '）</span>' : ''; }
   function kjHtml(q, passages) {
-    var h = q.kj ? '<p class="q-full q-kj" lang="ja"><span class="q-kj-label">' + t('汉字写法', 'In kanji') + '</span>' + q.kj + '</p>' : q.full ? '<p class="q-full" lang="ja">' + q.full + '</p>' : '';
+    var say = q.sa ? ' <button class="q-say" data-act="say" data-k="' + q.sa + '" aria-label="' + t('听这句', 'Play this sentence') + '" title="' + t('听这句', 'Play this sentence') + '">🔊</button>' : '';
+    var h = q.kj ? '<p class="q-full q-kj" lang="ja"><span class="q-kj-label">' + t('汉字写法', 'In kanji') + '</span>' + q.kj + say + '</p>' : q.full ? '<p class="q-full" lang="ja">' + q.full + say + '</p>' : '';
     var P = q.passage && passages && passages[q.passage];
     if (P && P.kj) h += '<details class="q-tr"><summary>' + t('全文汉字写法', 'The text in kanji') + '</summary><div class="q-passage" lang="ja">' + textHtml(P.kj) + '</div></details>';
     return h;
@@ -568,7 +578,7 @@
     cur.done = true;
     var q = cur.q, ms = Date.now() - cur.start;
     var ok = record(q, choice, cur.guess, ms);
-    S.session.res.push({ id: q.id, c: choice, ok: ok, g: cur.guess, ms: ms });
+    S.session.res.push({ id: q.id, c: choice, ok: ok, g: cur.guess, ms: ms, p: q.type === 'narabe' ? cur.picked.slice() : undefined });
     S.session.i++;
     save();
     feedback(q, choice, ok);
@@ -584,11 +594,15 @@
     }
     if (q.type === 'narabe') {
       app.querySelectorAll('.q-piece').forEach(function (b) { b.disabled = true; });
+      // Keep the reader's own order in the blanks, each marked right or wrong
+      // (the right order is spelled out below when it differs).
+      var mine = cur.picked && cur.picked.every(function (p) { return p != null; }) ? cur.picked : null;
       app.querySelectorAll('.q-slot').forEach(function (b, k) {
         b.disabled = true;
-        b.innerHTML = q.options[q.order[k]];
+        b.innerHTML = q.options[mine ? mine[k] : q.order[k]];
         b.classList.add('q-filled');
-        if (b.classList.contains('q-star')) b.classList.add(ok ? 'q-ok' : 'q-bad');
+        if (mine) b.classList.add(mine[k] === q.order[k] ? 'q-ok' : 'q-bad');
+        else if (b.classList.contains('q-star')) b.classList.add(ok ? 'q-ok' : 'q-bad');
       });
     } else {
       var blank = root().querySelector('.q-blank') || (curs ? app.querySelector('.q-pblank[data-n="' + q.blank + '"]') : app.querySelector('.q-pblank-on'));
@@ -601,6 +615,7 @@
     // 不会 before answering; 其实是蒙的 after a right answer (both go on the review list).
     var h = '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (ok ? '✓ ' + t('正确', 'Correct') : '✗ ' + (choice == null ? t('不会 · ', 'Didn’t know · ') : '') + t('正确答案是 ', 'The answer is ') + (q.answer + 1) + ' <span lang="ja">' + q.options[q.answer] + okjOf(q, q.answer) + '</span>') +
       (ok ? ' <button class="q-btn q-was-guess" data-act="was-guess">' + t('其实是蒙的', 'I guessed') + '</button>' : '') + '</p>';
+    if (q.type === 'narabe' && !ok) h += '<p class="q-order" lang="ja">' + t('正确顺序：', 'Right order: ') + q.order.map(function (i) { return q.options[i]; }).join(' → ') + '</p>';
     var aiFirst = !ok || cur.guess;
     if (aiFirst) h += aiBtn(true);
     h += '<div class="q-explain"><p>' + esc(bi(q.why)) + '</p>';
@@ -1037,6 +1052,7 @@
     else if (act === 'm-unpause') unpause();
     else if (act === 'm-review') mockReview(k);
     else if (act === 'listen') listen(el);
+    else if (act === 'say') say(el);
     else if (act === 'm-ai') {
       var mq = {}, a2 = M.att.answers[k] || {}, P2 = {};
       for (var x in Q[k]) mq[x] = Q[k][x]; for (var y in M.key.questions[k]) mq[y] = M.key.questions[k][y];
@@ -1260,6 +1276,7 @@
     }
     else if (act === 'ai') aiExplain(cur.q, cur.choice, cur.guess, D.types[cur.q.type].ja, D.passages, el.getAttribute('data-mode'));
     else if (act === 'listen') listen(el);
+    else if (act === 'say') say(el);
     // "这题有问题？": pick a reason, optionally say more, send.
     else if (act === 'report') {
       el.parentNode.querySelectorAll('[data-act="report"]').forEach(function (b) { b.classList.toggle('q-picked', b === el); });
