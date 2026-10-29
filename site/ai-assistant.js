@@ -588,6 +588,13 @@
     if (GENERAL) { scopeSel.hidden = true; panel.querySelector('.ai-ctx-label').textContent = '📎 ' + t('通用提问：AI 看不到页面内容', 'General question: the AI doesn\u2019t see this page'); }
 
     panel.querySelector('.ai-close').addEventListener('click', function () { close(); });
+    // 👁 next to a key field: show it in plain text (it stays masked by default).
+    panel.addEventListener('click', function (e) {
+      var eye = e.target.closest && e.target.closest('.ai-eye');
+      if (!eye) return;
+      var inp = eye.parentNode.querySelector('input[name="key"]');
+      if (inp) { inp.type = inp.type === 'password' ? 'text' : 'password'; eye.textContent = inp.type === 'text' ? '🙈' : '👁'; }
+    });
     panel.querySelector('.ai-back').addEventListener('click', function () { close(); });
     initResize(panel.querySelector('.ai-resize'));
     var menu = panel.querySelector('.ai-model-menu');
@@ -926,7 +933,7 @@
           esc(t('，登录后新建一个 API key 并复制。', ', sign in, create an API key and copy it.')) + '</p>' +
         '<p class="ai-wiz-step">' + esc(t('3 · 粘贴到这里', '3 · Paste it here')) + '</p>' +
         '<form class="ai-wiz-form">' +
-          '<input name="key" type="password" autocomplete="off" spellcheck="false" placeholder="sk-…" required>' +
+          '<span class="ai-model-row"><input name="key" type="password" autocomplete="off" spellcheck="false" placeholder="sk-…" required><button type="button" class="ai-eye" title="' + esc(t('显示 / 隐藏 key', 'Show / hide the key')) + '" aria-label="' + esc(t('显示 / 隐藏 key', 'Show / hide the key')) + '">👁</button></span>' +
           '<label class="ai-check"><input type="checkbox" name="session"> ' + esc(t('公用电脑：只保存到本次会话', 'Shared computer: keep for this tab only')) + '</label>' +
           '<p class="ai-hint ai-wiz-msg"></p>' +
           '<div class="ai-settings-btns"><button type="submit" class="ai-save">' + esc(t('连接并开始', 'Connect and start')) + '</button>' +
@@ -980,7 +987,7 @@
         }).join('') +
       '</select></label>' +
       '<label>Base URL<input name="base" type="url" autocomplete="off" spellcheck="false" value="' + esc(cur.base) + '"></label>' +
-      '<label>API Key<span class="ai-model-row"><input name="key" type="password" autocomplete="off" spellcheck="false" value="' + esc(cur.key || '') + '">' +
+      '<label>API Key<span class="ai-model-row"><input name="key" type="password" autocomplete="off" spellcheck="false" value="' + esc(cur.key || '') + '"><button type="button" class="ai-eye" title="' + esc(t('显示 / 隐藏 key', 'Show / hide the key')) + '" aria-label="' + esc(t('显示 / 隐藏 key', 'Show / hide the key')) + '">👁</button>' +
         '<a class="ai-keylink" target="_blank" rel="noopener" title="' + esc(t('去服务商网站创建 key', 'Create a key on the provider’s site')) + '">↗</a></span></label>' +
       '<label>' + esc(t('模型', 'Model')) + '<span class="ai-model-row"><input name="model" autocomplete="off" spellcheck="false" placeholder="' + esc(t('可手动输入任意模型名', 'Type any model name')) + '" value="' + esc(cur.model) + '">' +
         '<button type="button" class="ai-model-dd" title="' + esc(t('选择模型', 'Choose a model')) + '">▾</button>' +

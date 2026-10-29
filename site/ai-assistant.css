@@ -249,3 +249,5 @@ html.theme-dark .ai-settings input, html.theme-dark .ai-settings select { backgr
 html.theme-dark .ai-wiz-card, html.theme-dark .ai-wiz-form input[type=password] { background: #17172a; }
 .ai-free-note { margin-top: .9rem; }
 .ai-own-key { background: none; border: none; padding: 0; font: inherit; color: var(--accent); cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.ai-eye { font: inherit; font-size: 1rem; width: 2.4rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); color: inherit; cursor: pointer; }
+.ai-eye:hover { border-color: var(--accent); }
