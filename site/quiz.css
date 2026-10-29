@@ -245,3 +245,8 @@ body.quiz-busy .quiz-about { display: none; }
   .hub-table tbody th { padding: 0 0 .3rem; }
   .hub-table td { padding: 0 0 .4rem; }
 }
+.q-total { margin: 0 0 1rem; }
+.q-total-line { font-size: .92rem; color: var(--text-muted); margin-bottom: .35rem; }
+.q-total-line b { color: var(--text); margin-right: .3rem; }
+.q-total-bar { height: 6px; border-radius: 3px; background: var(--border); overflow: hidden; }
+.q-total-bar span { display: block; height: 100%; background: var(--accent); }

@@ -202,6 +202,10 @@
       h += '<div class="q-resume">' + t('上一组还剩 ', 'You have ') + (S.session.ids.length - S.session.i) + t(' 题', ' questions left in your last set') +
         ' <button class="q-btn q-btn-primary" data-act="resume">' + t('继续', 'Continue') + '</button> <button class="q-btn" data-act="drop">' + t('放弃', 'Discard') + '</button></div>';
     }
+    // Overall progress: questions seen at least once, and recent accuracy (same window as the per-type bars).
+    var done = ALL.filter(function (q) { return seen(q.id); }).length, all = accuracy(function () { return true; });
+    if (done) h += '<div class="q-total"><div class="q-total-line"><b>' + t('总进度', 'Progress') + '</b> ' + t('已做 ', '') + done + ' / ' + ALL.length + t(' 题', ' questions') + '（' + Math.round(done * 100 / ALL.length) + '%）' +
+      (all ? ' · ' + t('最近正确率 ', 'recent accuracy ') + all.pct + '%' : '') + '</div><div class="q-total-bar"><span style="width:' + (done * 100 / ALL.length) + '%"></span></div></div>';
     h += '<div class="q-today">' +
       '<button class="q-btn q-btn-primary q-btn-big" data-act="daily">' + t('今日练习', 'Today’s practice') + ' · ' + size + t(' 题', ' questions') + '</button>' +
       // Today's count and streak once there is one; a first visit says what a set is.
