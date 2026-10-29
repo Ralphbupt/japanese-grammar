@@ -2225,7 +2225,16 @@ async function main() {
     <p>© ${new Date().getFullYear()} jpnotes.dev</p>
   </footer>
   <script src="${SITE_PATH}feedback.js?v=${FEEDBACK_JS_HASH}" defer></script>`;
-  const sidebarMarkupHtml = `<nav id="sidebar" class="collapsed">
+  // Phones: a top bar (☰ stays the sidebar's own button, at its left end) with
+  // search / AI / share / settings, so they don't hide inside the sidebar.
+  const mobileBarHtml = `<div id="m-bar"><a id="m-title" href="${SITE_PATH}"></a>
+    <button type="button" class="m-btn" data-m="search" aria-label="搜索 / Search">${ICON_SEARCH}</button>
+    <button type="button" class="m-btn" data-m="ai" aria-label="问 AI / Ask AI" hidden>${ICON_CHAT}</button>
+    <button type="button" class="m-btn" data-m="share" aria-label="分享 / Share">${ICON_SHARE}</button>
+    <button type="button" class="m-btn" data-m="settings" aria-label="设置 / Settings">${ICON_SETTINGS}</button>
+  </div>`;
+  const sidebarMarkupHtml = `${mobileBarHtml}
+<nav id="sidebar" class="collapsed">
   <div class="nav-tools">
     <button id="menu-toggle" type="button" class="nav-tool-btn" aria-label="显示/收起侧栏 / Toggle sidebar" title="显示/收起侧栏 / Toggle sidebar">${ICON_SIDEBAR}</button>
     <button id="search-btn" type="button" class="nav-tool-btn nav-tool-extra" aria-label="搜索 / Search" title="搜索 / Search ( / )">${ICON_SEARCH}</button>
@@ -2335,6 +2344,40 @@ async function main() {
     if (history.state && history.state.sb) { e.preventDefault(); location.replace(a.href); }
     else setOpen(false);
   });
+
+  // Phone top bar: where you are (links to the level overview), the tool
+  // buttons, and it slides away while scrolling down.
+  var mbar = document.getElementById('m-bar');
+  if (mbar) {
+    var mt = document.getElementById('m-title'), head = sidebar.querySelector('.nav-header a');
+    var lvl = activeWrap && activeWrap.getAttribute('data-level');
+    if (item) {
+      var label = item.textContent.replace(/\\s+/g, ' ').trim().replace(/^(\\d+)(?=\\S)/, '$1 ');
+      mt.textContent = (lvl && label.indexOf(lvl) !== 0 ? lvl + ' · ' : '') + label;
+      var over = activeWrap && activeWrap.querySelector('a[href]');
+      mt.href = over && over !== item ? over.getAttribute('href') : (head ? head.getAttribute('href') : mt.href);
+    } else if (head) { mt.innerHTML = head.innerHTML; mt.href = head.getAttribute('href'); }
+    // The AI script tag comes later in the page than this one.
+    document.addEventListener('DOMContentLoaded', function () {
+      if (document.querySelector('script[src*="ai-assistant.js"]') && document.getElementById('ai-btn')) mbar.querySelector('[data-m="ai"]').hidden = false;
+    });
+    mbar.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-m]');
+      if (!b) return;
+      var m = b.getAttribute('data-m');
+      if (m === 'share') { e.stopPropagation(); if (window.jpShare) window.jpShare({ src: 'mbar', anchor: b }); return; }
+      var target = document.getElementById({ search: 'search-btn', ai: 'ai-btn', settings: 'settings-btn' }[m]);
+      if (target) target.click();
+    });
+    var lastY = window.scrollY;
+    window.addEventListener('scroll', function () {
+      var y = window.scrollY, dy = y - lastY;
+      if (Math.abs(dy) < 6) return;
+      lastY = y;
+      var hide = phone.matches && dy > 0 && y > 120 && sidebar.classList.contains('collapsed') && !document.body.classList.contains('ai-open');
+      document.documentElement.classList.toggle('mbar-hidden', hide);
+    }, { passive: true });
+  }
 
   // Center the active item so the user lands on their place in a long list.
   if (item) {
@@ -2573,6 +2616,8 @@ ${AI_SCRIPT}
   console.log(`  Wrote search-index.json (${searchPoints.length} grammar points).`);
   fs.writeFileSync(path.join(__dirname, "dist", "ai-assistant.js"), AI_JS_BUNDLE, "utf-8");
   fs.copyFileSync(path.join(__dirname, "site", "settings-modal.js"), path.join(__dirname, "dist", "settings-modal.js"));
+  // QR codes for the share menu's 微信扫一扫 (loaded only when it's opened).
+  fs.copyFileSync(require.resolve("qrcode-generator/qrcode.js"), path.join(__dirname, "dist", "qrcode.js"));
   fs.copyFileSync(path.join(__dirname, "site", "sw.js"), path.join(__dirname, "dist", "sw.js"));
   for (const f of ["giscus-paper.css", "giscus-sepia.css"]) {
     fs.copyFileSync(path.join(__dirname, "site", f), path.join(__dirname, "dist", f));
@@ -4663,8 +4708,27 @@ summary:hover { color: var(--link); }
 }
 
 /* Mobile: sidebar expands as overlay; content stays full width. */
-#sb-backdrop { display: none; }
+#sb-backdrop, #m-bar { display: none; }
 @media (max-width: 768px) {
+  #m-bar {
+    display: flex; align-items: center; gap: 2px;
+    position: fixed; top: 0; left: 0; right: 0; height: 48px; z-index: 90;
+    padding: 4px 6px 4px 54px; background: var(--bg); border-bottom: 1px solid var(--border);
+    transition: transform var(--transition-slow);
+  }
+  #m-title { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text-strong); font-size: .78rem; font-weight: 700; text-decoration: none; }
+  .m-btn { display: flex; align-items: center; justify-content: center; flex: none; width: 38px; height: 40px; padding: 0; border: 0; border-radius: var(--radius-sm); background: none; color: var(--text-muted); cursor: pointer; }
+  .m-btn[hidden] { display: none; }
+  .m-btn svg { width: 20px; height: 20px; }
+  .m-btn:active { background: var(--chip-bg); }
+  body.ai-open .m-btn[data-m="ai"] { color: var(--accent); }
+  /* ☰ sits in the bar's left end: flat, and slides away with it. */
+  #sidebar.collapsed #menu-toggle { background: transparent; box-shadow: none; }
+  .nav-tools { transition: width var(--transition-slow), transform var(--transition-slow); }
+  .nav-tool-extra { display: none !important; }
+  html.mbar-hidden #m-bar, html.mbar-hidden #sidebar.collapsed .nav-tools { transform: translateY(-100%); }
+  html .q-mockbar { transition: top var(--transition-slow); }
+  html:not(.mbar-hidden) .q-mockbar { top: 48px; }
   #sidebar:not(.collapsed) {
     box-shadow: 2px 0 16px rgba(0,0,0,.25);
   }
@@ -4964,6 +5028,10 @@ html.theme-dark #search-box { background: #1f1f2e; }
 #share-menu button, #share-menu a { display: block; text-align: left; padding: .45rem .7rem; border-radius: var(--radius); font: inherit; font-size: .88rem; color: inherit; background: none; border: 0; cursor: pointer; text-decoration: none; }
 #share-menu button:hover, #share-menu a:hover { background: rgba(127,127,127,.16); }
 #share-menu .sm-ok { color: var(--accent); }
+#share-menu .sm-hint { font-size: .8rem; color: var(--text-muted); padding: .45rem .7rem; max-width: 15rem; line-height: 1.5; }
+#share-menu .sm-qr { width: 13rem; margin: .5rem auto .2rem; padding: .4rem; background: #fff; border-radius: var(--radius); }
+#share-menu .sm-qr svg { display: block; width: 100%; height: auto; }
+#share-menu .sm-manual { font: inherit; font-size: .8rem; margin: .3rem; padding: .3rem; width: 15rem; }
 body.ai-open #tc-ai { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
 @media (min-width: 769px) { .nav-tool-extra { display: none; } }
 @media (max-width: 768px) { #top-controls { display: none; } }

@@ -165,7 +165,8 @@
     var url = base + (base.indexOf('?') < 0 ? '?' : '&') + 'utm_source=share';
     var title = o.title || document.title, text = o.text || '';
     var src = o.src || 'page', page = location.pathname;
-    if (navigator.share && window.matchMedia && matchMedia('(pointer: coarse)').matches) {
+    var wechat = /MicroMessenger/i.test(navigator.userAgent);
+    if (!wechat && navigator.share && window.matchMedia && matchMedia('(pointer: coarse)').matches) {
       track('share_open', { src: src, how: 'native', page: page });
       navigator.share({ title: title, text: text, url: url })
         .then(function () { track('share', { src: src, method: 'native', page: page }); })
@@ -173,43 +174,73 @@
       return;
     }
     if (document.getElementById('share-menu')) { closeShare(); return; }
-    track('share_open', { src: src, how: 'menu', page: page });
-    var msg = (text ? text + ' ' : '') + url, e = encodeURIComponent;
-    var nets = [
-      ['x', 'X', 'https://x.com/intent/post?text=' + e(text || title) + '&url=' + e(url)],
-      ['weibo', '微博', 'https://service.weibo.com/share/share.php?url=' + e(url) + '&title=' + e(text || title)],
-      ['facebook', 'Facebook', 'https://www.facebook.com/sharer/sharer.php?u=' + e(url)],
-      ['line', 'LINE', 'https://social-plugins.line.me/lineit/share?url=' + e(url)]
-    ];
-    if (!en) nets = [nets[1], nets[0], nets[3], nets[2]];
+    track('share_open', { src: src, how: wechat ? 'wechat' : 'menu', page: page });
+    var desc = (document.querySelector('meta[name="description"]') || {}).content || '';
+    var msg = (text ? text + ' ' : '') + url;
+    var blurb = text ? msg : title + (desc ? '\n' + desc : '') + '\n' + url, e = encodeURIComponent;
+    var N = {
+      x: ['X', 'https://x.com/intent/post?text=' + e(text || title) + '&url=' + e(url)],
+      facebook: ['Facebook', 'https://www.facebook.com/sharer/sharer.php?u=' + e(url)],
+      line: ['LINE', 'https://social-plugins.line.me/lineit/share?url=' + e(url)],
+      reddit: ['Reddit', 'https://www.reddit.com/submit?url=' + e(url) + '&title=' + e(title)]
+    };
+    // Inside WeChat its own ··· menu is the way to share (to a chat or Moments).
+    var items = wechat ? ['hint', 'copy'] : en ? ['copy', 'x', 'facebook', 'line', 'reddit'] : ['copy', 'qr', 'text', 'x'];
     var m = document.createElement('div');
     m.id = 'share-menu';
     m.setAttribute('role', 'menu');
-    m.innerHTML = '<button type="button" data-net="copy">🔗 ' + (en ? 'Copy link' : '复制链接') + '</button>' +
-      nets.map(function (n) { return '<a href="' + n[2] + '" target="_blank" rel="noopener" data-net="' + n[0] + '">' + n[1] + '</a>'; }).join('');
+    m.innerHTML = items.map(function (k) {
+      if (k === 'hint') return '<p class="sm-hint">' + (en ? 'Tap ··· at the top right → Send to chat / Share to Moments' : '点右上角「···」→ 发送给朋友 / 分享到朋友圈') + '</p>';
+      if (k === 'copy') return '<button type="button" data-net="copy">🔗 ' + (en ? 'Copy link' : '复制链接') + '</button>';
+      if (k === 'qr') return '<button type="button" data-net="qr">微信扫一扫（发朋友圈）</button>';
+      if (k === 'text') return '<button type="button" data-net="text">复制分享文案（小红书 / 朋友圈）</button>';
+      return '<a href="' + N[k][1] + '" target="_blank" rel="noopener" data-net="' + k + '">' + N[k][0] + '</a>';
+    }).join('');
     document.body.appendChild(m);
-    var r = (o.anchor || document.body).getBoundingClientRect(), w = m.offsetWidth;
-    m.style.top = Math.min(r.bottom + 6, window.innerHeight - m.offsetHeight - 8) + 'px';
-    m.style.left = Math.max(8, r.left + w <= window.innerWidth - 8 ? r.left : r.right - w) + 'px';
-    m.addEventListener('click', function (ev) {
-      var b = ev.target.closest('[data-net]');
-      if (!b) return;
-      var net = b.getAttribute('data-net');
-      track('share', { src: src, method: net, page: page });
-      if (net !== 'copy') { setTimeout(closeShare, 0); return; }
-      var done = function () { b.textContent = '✓ ' + (en ? 'Copied' : '已复制'); b.classList.add('sm-ok'); setTimeout(closeShare, 900); };
-      // Clipboard API, then the old execCommand route, then show the link to copy by hand.
+    var place = function () {
+      var r = (o.anchor || document.body).getBoundingClientRect(), w = m.offsetWidth;
+      m.style.top = Math.max(8, Math.min(r.bottom + 6, window.innerHeight - m.offsetHeight - 8)) + 'px';
+      m.style.left = Math.max(8, r.left + w <= window.innerWidth - 8 ? r.left : r.right - w) + 'px';
+    };
+    place();
+    // Copy text: Clipboard API, then the old execCommand route, then show it to copy by hand.
+    var copy = function (b, str, label) {
+      var done = function () { b.textContent = '✓ ' + (en ? 'Copied' : label || '已复制'); b.classList.add('sm-ok'); setTimeout(closeShare, 1100); };
       var legacy = function () {
         var ta = document.createElement('textarea'), ok = false;
-        ta.value = msg; ta.setAttribute('readonly', ''); ta.style.cssText = 'position:fixed;opacity:0';
+        ta.value = str; ta.setAttribute('readonly', ''); ta.style.cssText = 'position:fixed;opacity:0';
         document.body.appendChild(ta); ta.select();
         try { ok = document.execCommand('copy'); } catch (x) {}
         ta.remove();
         if (ok) return done();
-        b.outerHTML = '<input readonly value="' + msg.replace(/"/g, '&quot;') + '" style="font:inherit;font-size:.8rem;margin:.2rem;padding:.3rem">';
-        var inp = m.querySelector('input'); inp.focus(); inp.select();
+        b.outerHTML = '<textarea readonly rows="3" class="sm-manual"></textarea>';
+        var box = m.querySelector('.sm-manual'); box.value = str; box.focus(); box.select();
       };
-      if (navigator.clipboard) navigator.clipboard.writeText(msg).then(done, legacy); else legacy();
+      if (navigator.clipboard) navigator.clipboard.writeText(str).then(done, legacy); else legacy();
+    };
+    var showQr = function () {
+      var draw = function () {
+        var q = window.qrcode(0, 'M'); q.addData(url); q.make();
+        m.innerHTML = '<div class="sm-qr">' + q.createSvgTag({ cellSize: 4, margin: 2, scalable: true }) + '</div>' +
+          '<p class="sm-hint">用微信扫一扫打开，再点右上角「···」→ 分享到朋友圈 / 发送给朋友</p>';
+        place();
+      };
+      if (window.qrcode) return draw();
+      var sc = document.createElement('script');
+      sc.src = '/qrcode.js'; sc.onload = draw;
+      sc.onerror = function () { m.innerHTML = '<p class="sm-hint">二维码载入失败，请复制链接发到微信。</p>'; };
+      document.head.appendChild(sc);
+    };
+    m.addEventListener('click', function (ev) {
+      ev.stopPropagation();
+      var b = ev.target.closest('[data-net]');
+      if (!b) return;
+      var net = b.getAttribute('data-net');
+      track('share', { src: src, method: net, page: page });
+      if (net === 'copy') copy(b, msg);
+      else if (net === 'text') copy(b, blurb, '已复制，去粘贴吧');
+      else if (net === 'qr') showQr();
+      else setTimeout(closeShare, 0);
     });
     setTimeout(function () {
       document.addEventListener('click', function off(ev) {
