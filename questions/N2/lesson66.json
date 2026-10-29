@@ -578,5 +578,161 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l66-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#6"
+    ],
+    "difficulty": 1,
+    "stem": "今日は課長が出張中なので、課長の（　）、私が会議に出席します。",
+    "options": [
+      "くせに",
+      "うえで",
+      "かぎり",
+      "かわりに"
+    ],
+    "answer": 3,
+    "full": "今日は課長が出張中なので、課長のかわりに、私が会議に出席します。",
+    "tr": {
+      "zh": "今天科长出差，由我代替科长出席会议。",
+      "en": "The section chief is away on business today, so I'll attend the meeting in his place."
+    },
+    "why": {
+      "zh": "科长不在，由“我”去，是“代替”，用「名詞の＋かわりに」。",
+      "en": "The chief is away and I go instead — substitution: 「名詞の＋かわりに」."
+    },
+    "wrong": [
+      {
+        "zh": "「くせに」是带责备的“明明……却……”，这里没有责备的意思。",
+        "en": "「くせに」 (despite… — critical) carries blame, which isn't here."
+      },
+      {
+        "zh": "「うえで」是“在……之后／在……方面”，「課長のうえで」不成立。",
+        "en": "「うえで」 (after / in terms of) doesn't work as 「課長のうえで」."
+      },
+      {
+        "zh": "「かぎり」是“只要……／限于……”，「課長のかぎり」说不通。",
+        "en": "「かぎり」 (as long as / limited to) makes no sense as 「課長のかぎり」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l66-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#6"
+    ],
+    "difficulty": 2,
+    "stem": "旅行で留守の間、隣の人に猫の世話をしてもらう（　）、お土産を買ってくると約束した。",
+    "options": [
+      "うちに",
+      "かわりに",
+      "とたんに",
+      "ばかりに"
+    ],
+    "answer": 1,
+    "full": "旅行で留守の間、隣の人に猫の世話をしてもらうかわりに、お土産を買ってくると約束した。",
+    "tr": {
+      "zh": "旅行不在家的期间请邻居帮忙照顾猫，作为交换，答应给他带土特产回来。",
+      "en": "In exchange for the neighbor looking after my cat while I'm away, I promised to bring back a souvenir."
+    },
+    "why": {
+      "zh": "请人照顾猫 ↔ 带土特产回来，是“交换”关系，用「動詞＋かわりに」。",
+      "en": "Having the cat looked after in return for bringing a souvenir is an exchange — 「動詞＋かわりに」."
+    },
+    "wrong": [
+      {
+        "zh": "「うちに」是“趁着……／在……期间不知不觉”，“请人照顾猫的期间答应”说不通。",
+        "en": "「うちに」 (while…) gives \"while having the cat looked after, I promised\", which makes no sense."
+      },
+      null,
+      {
+        "zh": "「とたんに」要接动词た形（〜したとたんに），而且表示“一……就……”，接续和意思都不对。",
+        "en": "「とたんに」 needs the た-form (〜したとたんに) and means \"the moment…\"; both form and meaning are wrong."
+      },
+      {
+        "zh": "「ばかりに」是“就因为……导致坏结果”，答应带土特产不是坏结果。",
+        "en": "「ばかりに」 (only because… bad result) doesn't fit; promising a souvenir isn't a bad outcome."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-018",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#6"
+    ],
+    "difficulty": 2,
+    "stem": "この部屋は駅から遠い（　）、家賃が安くて広い。",
+    "options": [
+      "あげく",
+      "からには",
+      "かわりに",
+      "ばかりか"
+    ],
+    "answer": 2,
+    "full": "この部屋は駅から遠いかわりに、家賃が安くて広い。",
+    "tr": {
+      "zh": "这个房间离车站远，但相应地房租便宜又宽敞。",
+      "en": "This apartment is far from the station, but in return the rent is cheap and it's spacious."
+    },
+    "why": {
+      "zh": "前面是缺点（离车站远），后面是抵消它的优点（便宜、宽敞），有得有失，用「かわりに」。",
+      "en": "A drawback (far from the station) balanced by advantages (cheap, spacious) — a trade-off, so 「かわりに」."
+    },
+    "wrong": [
+      {
+        "zh": "「あげく」要接动词た形，表示“经过一番……最后（坏结果）”，这里不对。",
+        "en": "「あげく」 needs a verb た-form and means \"after much…, (bad) end result\"; it doesn't fit."
+      },
+      {
+        "zh": "「からには」是“既然……就要……”，后面要接决心或义务，这里只是描述。",
+        "en": "「からには」 (now that…) needs a resolve or obligation after it; this is only description."
+      },
+      null,
+      {
+        "zh": "「ばかりか」是“不仅……而且……”，前后要同方向（都好或都坏），这里一坏一好。",
+        "en": "「ばかりか」 (not only…) needs both items pointing the same way; here one is bad and one good."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-019",
+    "type": "narabe",
+    "refs": [
+      "lesson66#6"
+    ],
+    "difficulty": 2,
+    "stem": "この店は [_] [★] [_] [_] 長い。",
+    "options": [
+      "待ち時間が",
+      "かわりに",
+      "料理が",
+      "おいしい"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "この店は料理がおいしいかわりに待ち時間が長い。",
+    "tr": {
+      "zh": "这家店菜好吃，但相应地要等很久。",
+      "en": "The food at this place is delicious, but in return the wait is long."
+    },
+    "why": {
+      "zh": "优点「料理がおいしい」＋「かわりに」＋缺点「待ち時間が長い」：料理が → おいしい → かわりに → 待ち時間が。★ 在第二格，是「おいしい」。",
+      "en": "Good point 「料理がおいしい」 + 「かわりに」 + drawback 「待ち時間が長い」: 料理が → おいしい → かわりに → 待ち時間が. The ★ is the second slot: 「おいしい」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
   }
 ]

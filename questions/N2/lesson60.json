@@ -694,5 +694,162 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l60-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson60#7"
+    ],
+    "difficulty": 1,
+    "stem": "時間に厳しい部長の（　）、会議には10分前に来ているだろう。",
+    "options": [
+      "ものだから",
+      "ことだから",
+      "だけに",
+      "ばかりに"
+    ],
+    "answer": 1,
+    "full": "時間に厳しい部長のことだから、会議には10分前に来ているだろう。",
+    "tr": {
+      "zh": "部长那么守时，开会应该会提前10分钟到吧。",
+      "en": "Knowing how strict the manager is about time, he'll probably be at the meeting ten minutes early."
+    },
+    "why": {
+      "zh": "根据大家熟知的部长的性格（守时）推测「来ているだろう」，「名詞＋の」后接「ことだから」。",
+      "en": "From the manager's well-known punctuality the speaker guesses 「来ているだろう」; after 「noun + の」 it's 「ことだから」."
+    },
+    "wrong": [
+      {
+        "zh": "「ものだから」用来辩解自己的情况，而且不接「名詞＋の」（应为「部長なものだから」）。",
+        "en": "「ものだから」 justifies one's own situation and doesn't follow 「noun + の」."
+      },
+      null,
+      {
+        "zh": "「だけに」接名词时直接接（「部長だけに」），不接「の」；而且后句应是与之相称的结果，不是推测。",
+        "en": "「だけに」 attaches to a noun directly, not via 「の」, and leads to a fitting result, not a guess."
+      },
+      {
+        "zh": "「ばかりに」表示“就因为……导致坏结果”，提前到会不是坏结果，接续也不对。",
+        "en": "「ばかりに」 leads to a bad outcome; arriving early isn't one, and the connection is wrong too."
+      }
+    ]
+  },
+  {
+    "id": "n2-l60-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson60#7"
+    ],
+    "difficulty": 2,
+    "stem": "A「田中さん、まだ来ないね。」\nB「のんびりした彼の（　）、どこかで寄り道でもしているんじゃない？」",
+    "options": [
+      "ことだから",
+      "ものだから",
+      "せいで",
+      "おかげで"
+    ],
+    "answer": 0,
+    "full": "A「田中さん、まだ来ないね。」\nB「のんびりした彼のことだから、どこかで寄り道でもしているんじゃない？」",
+    "tr": {
+      "zh": "A：“田中还没来啊。”\nB：“他那么慢悠悠的，大概是在哪儿顺路逛去了吧？”",
+      "en": "A: \"Tanaka still isn't here.\"\nB: \"Laid-back as he is, he's probably stopped off somewhere on the way, don't you think?\""
+    },
+    "why": {
+      "zh": "B根据两人都了解的田中的性格（慢悠悠）推测「寄り道でもしているんじゃない？」，用「ことだから」。",
+      "en": "B guesses what Tanaka is doing from the easygoing character they both know — 「ことだから」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ものだから」是为自己的行为辩解，不接「名詞＋の」，后句也不能是推测。",
+        "en": "「ものだから」 excuses one's own behavior, doesn't follow 「noun + の」, and isn't followed by a guess."
+      },
+      {
+        "zh": "「せいで」表示“都怪……”，后接已发生的坏结果；“都怪他，他在顺路逛”说不通。",
+        "en": "「せいで」 blames someone for a bad result that happened; \"because of him, he's stopping off\" makes no sense."
+      },
+      {
+        "zh": "「おかげで」表示“多亏……”，后接好结果，和这里的推测不符。",
+        "en": "「おかげで」 credits someone for a good result; it doesn't fit a guess."
+      }
+    ]
+  },
+  {
+    "id": "n2-l60-021",
+    "type": "bunpou",
+    "refs": [
+      "lesson60#7",
+      "lesson60#5"
+    ],
+    "difficulty": 2,
+    "stem": "すみません、電車が止まってしまった（　）、遅れてしまいました。",
+    "options": [
+      "ことだから",
+      "だけに",
+      "くせに",
+      "ものだから"
+    ],
+    "answer": 3,
+    "full": "すみません、電車が止まってしまったものだから、遅れてしまいました。",
+    "tr": {
+      "zh": "对不起，因为电车停了，所以迟到了。",
+      "en": "I'm sorry — the train stopped, you see, so I was late."
+    },
+    "why": {
+      "zh": "说话人在道歉时解释自己迟到的原因（辩解），前面是动词句，用「ものだから」。",
+      "en": "The speaker is apologizing and explaining why they were late — an excuse after a verb clause, so 「ものだから」."
+    },
+    "wrong": [
+      {
+        "zh": "「ことだから」主要用「名詞＋の＋ことだから」根据某人的性格推测，不用于道歉时解释自己迟到的原因。",
+        "en": "「ことだから」 (mainly 「noun + の + ことだから」) infers from someone's character; it isn't used to explain your own lateness in an apology."
+      },
+      {
+        "zh": "「だけに」表示“正因为……所以更……”，后句是与之相称的结果，不用于道歉时的辩解。",
+        "en": "「だけに」 leads to a fitting \"all the more\" result; it isn't used for an apologetic excuse."
+      },
+      {
+        "zh": "「くせに」是“明明……却……”的责备，和道歉的语境不符。",
+        "en": "「くせに」 is a reproachful \"even though\"; it doesn't fit an apology."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l60-022",
+    "type": "narabe",
+    "refs": [
+      "lesson60#7"
+    ],
+    "difficulty": 2,
+    "stem": "一度 [_] [★] [_] [_]、きっと最後までやり遂げるだろう。",
+    "options": [
+      "ことだから",
+      "彼の",
+      "決めたら",
+      "あきらめない"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "一度決めたらあきらめない彼のことだから、きっと最後までやり遂げるだろう。",
+    "tr": {
+      "zh": "他一旦决定就不会放弃，肯定会坚持做到最后吧。",
+      "en": "Knowing him — once he decides something he never gives up — he'll surely see it through to the end."
+    },
+    "why": {
+      "zh": "一度＋決めたら＋あきらめない（修饰「彼」）＋彼の＋ことだから（根据性格推测）。★ 在第二格，是「あきらめない」。",
+      "en": "一度 ＋ 決めたら ＋ あきらめない (describing 彼) ＋ 彼の ＋ ことだから. The ★ is the second slot: 「あきらめない」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
   }
 ]

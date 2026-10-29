@@ -462,5 +462,161 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l64-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson64#5"
+    ],
+    "difficulty": 1,
+    "stem": "最終バスに乗り遅れてしまったので、駅から家まで歩いて帰る（　）。",
+    "options": [
+      "わけがない",
+      "に相違ない",
+      "ほかない",
+      "はずがない"
+    ],
+    "answer": 2,
+    "full": "最終バスに乗り遅れてしまったので、駅から家まで歩いて帰るほかない。",
+    "tr": {
+      "zh": "没赶上末班公交车，只好从车站走回家。",
+      "en": "I missed the last bus, so I have no choice but to walk home from the station."
+    },
+    "why": {
+      "zh": "没赶上末班车，没有别的办法，只能走回去，用「動詞辞書形＋ほかない」。",
+      "en": "Having missed the last bus there's no other way, so 「dictionary form + ほかない」 \"have no choice but to.\""
+    },
+    "wrong": [
+      {
+        "zh": "「わけがない」是“不可能……”，“没赶上车，所以不可能走回去”不合逻辑。",
+        "en": "「わけがない」 means \"there's no way…\"; \"missed the bus, so there's no way I'd walk\" is illogical."
+      },
+      {
+        "zh": "「に相違ない」是“一定是……”的书面推测，不用于说自己只好做什么。",
+        "en": "「に相違ない」 is a written \"surely…\" guess, not a statement of what one has to do."
+      },
+      null,
+      {
+        "zh": "「はずがない」是“不可能……”的推断，同样和「ので」的因果对不上。",
+        "en": "「はずがない」 means \"can't be,\" which again doesn't follow from 「ので」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l64-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson64#5"
+    ],
+    "difficulty": 2,
+    "stem": "誰も手伝ってくれないのだから、自分一人で（　）。",
+    "options": [
+      "やらないよりほかない",
+      "やるよりほかない",
+      "やるまでもない",
+      "やりかねない"
+    ],
+    "answer": 1,
+    "full": "誰も手伝ってくれないのだから、自分一人でやるよりほかない。",
+    "tr": {
+      "zh": "既然没有人帮忙，就只能自己一个人干了。",
+      "en": "Since nobody will help, I'll just have to do it by myself."
+    },
+    "why": {
+      "zh": "没人帮忙，只剩“自己干”这一个办法，用「動詞辞書形＋よりほかない」。",
+      "en": "With no one to help, doing it alone is the only option — 「dictionary form + よりほかない」."
+    },
+    "wrong": [
+      {
+        "zh": "「よりほかない」接辞书形，「やらないよりほかない」变成“只能不做”，意思相反。",
+        "en": "「よりほかない」 takes the dictionary form; 「やらないよりほかない」 would mean \"can only not do it,\" the opposite."
+      },
+      null,
+      {
+        "zh": "「までもない」是“用不着……”，没人帮忙正说明必须自己做，与“用不着做”矛盾。",
+        "en": "「までもない」 means \"there's no need to\"; with nobody helping, the point is that one must do it, not that it's unnecessary."
+      },
+      {
+        "zh": "「かねない」表示“有可能（发生坏事）”，用于担心的事态，不能表示“只好自己做”。",
+        "en": "「かねない」 means \"might (do something bad)\" — a worry about an outcome, not \"have no choice but to\"."
+      }
+    ]
+  },
+  {
+    "id": "n2-l64-015",
+    "type": "bunpou",
+    "refs": [
+      "lesson64#5"
+    ],
+    "difficulty": 2,
+    "stem": "台風で飛行機が全部欠航になってしまった。旅行は来週に延期する（　）。",
+    "options": [
+      "わけにはいかない",
+      "ものではない",
+      "ことはない",
+      "ほかしかたがない"
+    ],
+    "answer": 3,
+    "full": "台風で飛行機が全部欠航になってしまった。旅行は来週に延期するほかしかたがない。",
+    "tr": {
+      "zh": "因为台风，航班全部停飞了。旅行只好推迟到下周。",
+      "en": "Every flight was cancelled because of the typhoon. There's nothing for it but to put the trip off until next week."
+    },
+    "why": {
+      "zh": "航班全部取消，除了延期别无选择，用「ほかしかたがない」（只好……）。",
+      "en": "With every flight cancelled there's no option but to postpone — 「ほかしかたがない」."
+    },
+    "wrong": [
+      {
+        "zh": "「わけにはいかない」是“不能延期”，航班都停了却说不能延期，不合情理。",
+        "en": "「わけにはいかない」 says \"can't postpone,\" which makes no sense when every flight is cancelled."
+      },
+      {
+        "zh": "「ものではない」是“不应该……”的劝诫，“不应该延期”和前句矛盾。",
+        "en": "「ものではない」 is advice — \"one shouldn't postpone\" — which contradicts the situation."
+      },
+      {
+        "zh": "「ことはない」是“没必要……”，航班都停了却说没必要延期，说不通。",
+        "en": "「ことはない」 means \"there's no need to\"; with all flights cancelled that makes no sense."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l64-016",
+    "type": "narabe",
+    "refs": [
+      "lesson64#5"
+    ],
+    "difficulty": 2,
+    "stem": "薬を飲んでも熱が下がらないなら、[★] [_] [_] [_]だろう。",
+    "options": [
+      "ほかない",
+      "行く",
+      "病院へ",
+      "より"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "薬を飲んでも熱が下がらないなら、病院へ行くよりほかないだろう。",
+    "tr": {
+      "zh": "要是吃了药还不退烧，就只能去医院了吧。",
+      "en": "If the fever won't go down even with medicine, I guess there's nothing for it but to go to the hospital."
+    },
+    "why": {
+      "zh": "病院へ＋行く＋より＋ほかない（只能……）＋だろう。★ 在第一格，是「病院へ」。",
+      "en": "病院へ ＋ 行く ＋ より ＋ ほかない ＋ だろう. The ★ is the first slot: 「病院へ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
   }
 ]

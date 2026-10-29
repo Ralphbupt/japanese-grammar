@@ -417,6 +417,76 @@ Can be used for both positive and negative situations.
 
 ---
 
+## 7. 〜ことだから（因为是……所以（肯定）……）||7. 〜ことだから (Knowing what… is like, surely…)
+
+### 接続||Conjugation
+:::zh
+- 名詞 + の + ことだから
+
+※ 前面多是人（彼、母、部長）或团体（あの会社、あの店），常加上修饰语说明其性格：「真面目な田中さんのことだから」。
+:::
+:::en
+- Noun + の + ことだから
+
+※ What comes before is usually a person (彼, 母, 部長) or an organization (あの会社, あの店), often with a modifier describing their character: 「真面目な田中さんのことだから」.
+:::
+
+### 含义||Meaning
+:::zh
+"因为是（那个人），所以（肯定）……"。根据说话人和听话人都了解的某人的性格、习惯，推测他会怎样做。后句多是推测或判断，常和「きっと」「〜だろう」「〜に違いない」「〜はずだ」一起用。可以用于好的评价，也可以用于不好的评价。
+:::
+:::en
+"Knowing (him/her), surely…" — the speaker infers what someone will do from their character or habits, which both speaker and listener know well. The second half is usually a guess or judgment, often with 「きっと」「〜だろう」「〜に違いない」「〜はずだ」. It can be used for good or bad traits.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 真面目な田中さんの**ことだから**、約束の時間にはきっと来るだろう。（认真的田中先生嘛，约好的时间他肯定会来的。）
+2. 心配性の母の**ことだから**、今ごろ何度も電話をかけてきているに違いない。（我妈那么爱操心，现在肯定已经打了好几次电话了。）
+3. 慎重な部長の**ことだから**、もう別の案も用意しているはずだ。（部长做事那么谨慎，应该已经准备好别的方案了。）
+4. 人気のあの店の**ことだから**、週末はかなり混んでいるだろう。（那家店那么受欢迎，周末肯定很挤吧。）
+5. 子どもの**ことだから**、新しいおもちゃにもすぐ飽きてしまうだろう。（毕竟是小孩子，新玩具也很快就会玩腻吧。）
+6. 彼の**ことだから**、また何か言い訳をするに決まっている。（他那个人嘛，肯定又要找什么借口。）
+:::
+:::en
+1. 真面目な田中さんの**ことだから**、約束の時間にはきっと来るだろう。(Knowing how conscientious Tanaka is, he'll surely come at the agreed time.)
+2. 心配性の母の**ことだから**、今ごろ何度も電話をかけてきているに違いない。(My mother being the worrier she is, she must have called several times by now.)
+3. 慎重な部長の**ことだから**、もう別の案も用意しているはずだ。(Our manager is so careful that he's bound to have a backup plan ready already.)
+4. 人気のあの店の**ことだから**、週末はかなり混んでいるだろう。(Popular as that shop is, it'll probably be very crowded on the weekend.)
+5. 子どもの**ことだから**、新しいおもちゃにもすぐ飽きてしまうだろう。(Kids being kids, they'll probably get bored of the new toy soon too.)
+6. 彼の**ことだから**、また何か言い訳をするに決まっている。(Knowing him, he's sure to come up with some excuse again.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| ことだから | 因为是（某人），所以（肯定）…… | 根据熟知的性格推测，后句多为推测 |
+| ものだから | 因为……（辩解） | 解释自己的行为，后句是已发生的事实 |
+| だけに | 正因为…… | 前句是地位、条件等，后句是与之相称的结果或感受 |
+
+> 「時間に厳しい彼のことだから、もう着いているだろう」= 他那么守时，应该已经到了（推测）  
+> 「電車が遅れたものだから、遅刻してしまった」= 因为电车晚点了嘛，所以迟到了（辩解）  
+> 「期待していただけに、がっかりした」= 正因为很期待，所以更失望（相称的结果）
+
+**注意：**「ことだから」一般接「名詞＋の」，前面是人或团体；「ものだから」「だけに」前面接普通形。
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| ことだから | knowing (someone), surely… | Inference from well-known character; the second half is usually a guess |
+| ものだから | because… (excuse) | Explains one's own behavior; the second half is something that already happened |
+| だけに | precisely because… | The first half is a status or condition; the second half is a fitting result or feeling |
+
+> 「時間に厳しい彼のことだから、もう着いているだろう」 = knowing how punctual he is, he's probably already there (inference)  
+> 「電車が遅れたものだから、遅刻してしまった」 = the train was late, you see, so I was late (excuse)  
+> 「期待していただけに、がっかりした」 = precisely because I'd been looking forward to it, I was all the more disappointed (fitting result)
+
+**Note:** 「ことだから」 normally follows 「noun + の」, a person or organization; 「ものだから」 and 「だけに」 follow the plain form.
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

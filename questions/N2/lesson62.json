@@ -310,5 +310,317 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l62-009",
+    "type": "bunpou",
+    "refs": [
+      "lesson62#3"
+    ],
+    "difficulty": 1,
+    "stem": "駅前の新しい定食屋は、値段も（　）、量も多いので、学生に人気だ。",
+    "options": [
+      "安いくせに",
+      "安いうちに",
+      "安ければ",
+      "安いからといって"
+    ],
+    "answer": 2,
+    "full": "駅前の新しい定食屋は、値段も安ければ、量も多いので、学生に人気だ。",
+    "tr": {
+      "zh": "车站前新开的那家定食店价格便宜，分量也足，所以很受学生欢迎。",
+      "en": "The new set-meal place by the station is cheap and the portions are big, so it's popular with students."
+    },
+    "why": {
+      "zh": "「値段も〜、量も多い」两项都是优点，用「AもXければ、BもY」并列：い形容词变「安ければ」。",
+      "en": "「値段も〜、量も多い」 lists two good points, so use 「AもXければ、BもY」: the i-adjective becomes 「安ければ」."
+    },
+    "wrong": [
+      {
+        "zh": "「くせに」带有责备、不满，用在夸店的句子里不对。",
+        "en": "「くせに」 carries criticism, which doesn't fit praise for the shop."
+      },
+      {
+        "zh": "「うちに」是“趁着……”，后面要接动作，「量も多い」不是动作。",
+        "en": "「うちに」 (while still…) needs an action after it; 「量も多い」 isn't one."
+      },
+      null,
+      {
+        "zh": "「からといって」后面要接“并不一定……”的否定，这里是肯定。",
+        "en": "「からといって」 needs a \"doesn't necessarily…\" ending; this sentence is affirmative."
+      }
+    ]
+  },
+  {
+    "id": "n2-l62-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson62#3"
+    ],
+    "difficulty": 2,
+    "stem": "この町は交通も（　）、自然も豊かで、子育てにぴったりだ。",
+    "options": [
+      "便利なら",
+      "便利なばかりに",
+      "便利にしては",
+      "便利どころか"
+    ],
+    "answer": 0,
+    "full": "この町は交通も便利なら、自然も豊かで、子育てにぴったりだ。",
+    "tr": {
+      "zh": "这个小镇交通方便，自然环境也好，非常适合养育孩子。",
+      "en": "This town is well connected and surrounded by nature too — perfect for raising kids."
+    },
+    "why": {
+      "zh": "「交通も〜、自然も豊か」并列两个优点，な形容词用「便利なら」构成「AもXなら、BもY」。",
+      "en": "「交通も〜、自然も豊か」 lists two good points; with a na-adjective it's 「便利なら」: 「AもXなら、BもY」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ばかりに」是“就因为……才导致坏结果”，后面是好事，不对。",
+        "en": "「ばかりに」 (only because… something bad happened) doesn't fit the good result here."
+      },
+      {
+        "zh": "「にしては」是“就……而言，出乎意料”，“交通方便却自然丰富”说不通。",
+        "en": "「にしては」 (surprisingly for…) makes no sense: being convenient doesn't make rich nature surprising."
+      },
+      {
+        "zh": "「どころか」是“别说……反而／甚至……”，要接相反或更进一步的内容，这里只是并列两个优点。",
+        "en": "「どころか」 (far from…) needs the opposite or a step further; here two good points are simply listed."
+      }
+    ]
+  },
+  {
+    "id": "n2-l62-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson62#3"
+    ],
+    "difficulty": 2,
+    "stem": "人生には楽しいこと（　）、つらいこともある。",
+    "options": [
+      "さえあれば",
+      "もあるのに",
+      "どころか",
+      "もあれば"
+    ],
+    "answer": 3,
+    "full": "人生には楽しいこともあれば、つらいこともある。",
+    "tr": {
+      "zh": "人生有快乐的事，也有痛苦的事。",
+      "en": "In life there are happy things and there are painful things."
+    },
+    "why": {
+      "zh": "后半是「つらいこともある」，前半用固定说法「Aもあれば、Bもある」（有A也有B）。",
+      "en": "The second half is 「つらいこともある」, so the first half takes the set phrase 「Aもあれば、Bもある」 (there is A and there is B)."
+    },
+    "wrong": [
+      {
+        "zh": "「さえあれば」是“只要有……就”，“只要有快乐的事就有痛苦的事”说不通。",
+        "en": "「さえあれば」 (as long as there is…) gives \"as long as there are happy things, there are painful ones\" — nonsense."
+      },
+      {
+        "zh": "「のに」表示与预期相反的不满，这里只是平静地陈述两种情况都有。",
+        "en": "「のに」 expresses frustration at something unexpected; the sentence just states that both exist."
+      },
+      {
+        "zh": "「どころか」要接相反或更进一步的内容，而且「楽しいこと」后面缺谓语。",
+        "en": "「どころか」 needs an opposite or stronger statement, and 「楽しいこと」 would be left without a predicate."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l62-012",
+    "type": "narabe",
+    "refs": [
+      "lesson62#3"
+    ],
+    "difficulty": 2,
+    "stem": "彼女は [_] [★] [_] [_]、まさに理想の上司だ。",
+    "options": [
+      "人柄も",
+      "よく",
+      "仕事も",
+      "できれば"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "彼女は仕事もできれば人柄もよく、まさに理想の上司だ。",
+    "tr": {
+      "zh": "她既能干，人品又好，简直是理想的上司。",
+      "en": "She's both capable and a good person — truly the ideal boss."
+    },
+    "why": {
+      "zh": "「AもXば、BもY」：仕事も → できれば → 人柄も → よく。★ 在第二格，是「できれば」。",
+      "en": "「AもXば、BもY」: 仕事も → できれば → 人柄も → よく. The ★ is the second slot: 「できれば」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l62-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson62#4"
+    ],
+    "difficulty": 1,
+    "stem": "この漢字は難しくて、日本人（　）正しく読めないことがある。",
+    "options": [
+      "ばかりか",
+      "でさえ",
+      "をはじめ",
+      "はもとより"
+    ],
+    "answer": 1,
+    "full": "この漢字は難しくて、日本人でさえ正しく読めないことがある。",
+    "tr": {
+      "zh": "这个汉字很难，连日本人有时都读不对。",
+      "en": "This kanji is so hard that even Japanese people sometimes can't read it correctly."
+    },
+    "why": {
+      "zh": "“日本人”是最不该读错的极端例子，用「でさえ」表示“连日本人都……”。",
+      "en": "Japanese people are the least likely to misread it — an extreme example, so 「でさえ」 (even)."
+    },
+    "wrong": [
+      {
+        "zh": "「ばかりか」是“不仅……而且……”，后面要再加一项（〜も），这里没有。",
+        "en": "「ばかりか」 (not only…) needs a second item with 「も」, which isn't there."
+      },
+      null,
+      {
+        "zh": "「をはじめ」是“以……为首”，后面要列举同类的其他人（〜など），这里没有。",
+        "en": "「をはじめ」 (starting with…) needs other members of the group listed after it (〜など); there are none."
+      },
+      {
+        "zh": "「はもとより」是“A自不必说，B也……”，后面要接「〜も」，意思也不通。",
+        "en": "「はもとより」 (not to mention A) needs a following 「〜も」 item and doesn't fit the meaning."
+      }
+    ]
+  },
+  {
+    "id": "n2-l62-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson62#4"
+    ],
+    "difficulty": 1,
+    "stem": "仕事が忙しすぎて、家族とゆっくり話す時間（　）ない。",
+    "options": [
+      "まで",
+      "こそ",
+      "さえ",
+      "ほど"
+    ],
+    "answer": 2,
+    "full": "仕事が忙しすぎて、家族とゆっくり話す時間さえない。",
+    "tr": {
+      "zh": "工作太忙，连和家人好好说话的时间都没有。",
+      "en": "Work is so busy that I don't even have time to talk properly with my family."
+    },
+    "why": {
+      "zh": "“和家人说话的时间”是最起码的东西，连这个都没有，用「さえ〜ない」。",
+      "en": "Time to talk with family is the bare minimum; lacking even that is 「さえ〜ない」."
+    },
+    "wrong": [
+      {
+        "zh": "「まで」表示“甚至还……”的追加，多用于肯定，不用于“连最起码的都没有”。",
+        "en": "「まで」 adds \"even… on top\" in affirmative sentences, not \"lacking even the basics\"."
+      },
+      {
+        "zh": "「こそ」是强调“正是……”，「時間こそない」要接「が…」的转折，单独结句不自然。",
+        "en": "「こそ」 stresses \"it is X that…\"; 「時間こそない」 would need a following 「が…」 contrast."
+      },
+      null,
+      {
+        "zh": "「ほど」表示程度，「時間ほどない」不成立。",
+        "en": "「ほど」 marks degree; 「時間ほどない」 isn't a valid phrase."
+      }
+    ]
+  },
+  {
+    "id": "n2-l62-015",
+    "type": "bunpou",
+    "refs": [
+      "lesson62#4"
+    ],
+    "difficulty": 2,
+    "stem": "何度も話しかけたのに、彼はこちらを見（　）しなかった。",
+    "options": [
+      "ても",
+      "ずに",
+      "ながら",
+      "さえ"
+    ],
+    "answer": 3,
+    "full": "何度も話しかけたのに、彼はこちらを見さえしなかった。",
+    "tr": {
+      "zh": "我跟他搭了好几次话，他却连看都没看我一眼。",
+      "en": "I spoke to him again and again, but he didn't even look my way."
+    },
+    "why": {
+      "zh": "动词ます形＋「さえしない」表示“连……都不做”：「見さえしなかった」。",
+      "en": "Verb masu-stem + 「さえしない」 means \"not even do…\": 「見さえしなかった」."
+    },
+    "wrong": [
+      {
+        "zh": "「見てもしなかった」不成立；「ても」后面要接独立的谓语。",
+        "en": "「見てもしなかった」 is ungrammatical; 「ても」 needs a predicate of its own after it."
+      },
+      {
+        "zh": "「ずに」是“不……而……”，「見ずにしなかった」不成立。",
+        "en": "「ずに」 (without…) gives 「見ずにしなかった」, which is ungrammatical."
+      },
+      {
+        "zh": "「ながら」表示同时进行，「見ながらしなかった」缺少动作，不成立。",
+        "en": "「ながら」 (while…) gives 「見ながらしなかった」 with no real action — ungrammatical."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l62-016",
+    "type": "narabe",
+    "refs": [
+      "lesson62#4"
+    ],
+    "difficulty": 2,
+    "stem": "大人なのに、[_] [_] [_] [★] 知らないなんて驚いた。",
+    "options": [
+      "知っている",
+      "ことを",
+      "小学生",
+      "でさえ"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "大人なのに、小学生でさえ知っていることを知らないなんて驚いた。",
+    "tr": {
+      "zh": "明明是大人，却连小学生都知道的事都不知道，真让人吃惊。",
+      "en": "I was surprised that a grown-up didn't know something even elementary school kids know."
+    },
+    "why": {
+      "zh": "「小学生でさえ知っている」修饰「こと」，再加「を」作宾语：小学生 → でさえ → 知っている → ことを。★ 在第四格，是「ことを」。",
+      "en": "「小学生でさえ知っている」 modifies 「こと」, which takes 「を」 as the object: 小学生 → でさえ → 知っている → ことを. The ★ is the fourth slot: 「ことを」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
   }
 ]

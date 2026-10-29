@@ -346,5 +346,161 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l65-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson65#4"
+    ],
+    "difficulty": 2,
+    "stem": "自分は何もしないで、人の仕事に文句ばかり言うのは、無責任（　）。少しは手伝ったらどうだ。",
+    "options": [
+      "というものではない",
+      "というところだ",
+      "というものだ",
+      "だけのことはある"
+    ],
+    "answer": 2,
+    "full": "自分は何もしないで、人の仕事に文句ばかり言うのは、無責任というものだ。少しは手伝ったらどうだ。",
+    "tr": {
+      "zh": "自己什么都不做，只会对别人的工作挑三拣四，那就叫不负责任。你也多少帮帮忙吧。",
+      "en": "Doing nothing yourself and just complaining about other people's work — that's what you call irresponsible. Why not help a bit?"
+    },
+    "why": {
+      "zh": "说话人对一个具体行为下批评性的断定“那就叫不负责任”，用「名詞＋というものだ」。",
+      "en": "The speaker passes a critical verdict on a specific act — \"that's just irresponsible\" — so 「noun + というものだ」."
+    },
+    "wrong": [
+      {
+        "zh": "「というものではない」是“并不是……”，否定了不负责任，和后句「少しは手伝ったらどうだ」的责备矛盾。",
+        "en": "「というものではない」 denies it (\"it's not irresponsible\"), which clashes with the reproach that follows."
+      },
+      {
+        "zh": "「というところだ」表示“大致是……的程度”，多接数量或程度，不能用来下评价。",
+        "en": "「というところだ」 means \"about / roughly\" for amounts or degrees; it can't pass a verdict."
+      },
+      null,
+      {
+        "zh": "「だけのことはある」是“不愧是……”的正面评价，“不愧是不负责任”说不通。",
+        "en": "「だけのことはある」 is praise (\"lives up to…\"); \"lives up to irresponsibility\" makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n2-l65-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson65#4"
+    ],
+    "difficulty": 2,
+    "stem": "料理は、高い材料を使えばおいしくなる（　）。大事なのは作る人の腕だ。",
+    "options": [
+      "ばかりだ",
+      "というものではない",
+      "わけだ",
+      "というものだ"
+    ],
+    "answer": 1,
+    "full": "料理は、高い材料を使えばおいしくなるというものではない。大事なのは作る人の腕だ。",
+    "tr": {
+      "zh": "做菜并不是用了贵的食材就会好吃。重要的是做菜人的手艺。",
+      "en": "Using expensive ingredients doesn't automatically make food taste good. What matters is the cook's skill."
+    },
+    "why": {
+      "zh": "「〜ば〜」是常见看法“用贵食材就好吃”，后句「大事なのは作る人の腕だ」反驳它，用部分否定「というものではない」。",
+      "en": "「〜ば〜」 is a common belief (\"expensive ingredients make it tasty\") and the next sentence rejects it, so the partial denial 「というものではない」."
+    },
+    "wrong": [
+      {
+        "zh": "「ばかりだ」是“一味地……下去”，表示变化越来越……，和「〜ば」以及后句的反驳都不搭。",
+        "en": "「ばかりだ」 means \"keeps on (getting)…\"; it fits neither 「〜ば」 nor the rebuttal that follows."
+      },
+      null,
+      {
+        "zh": "「わけだ」是“当然会……”，等于肯定了贵食材就好吃，和后句矛盾。",
+        "en": "「わけだ」 (\"naturally…\") affirms the belief, contradicting the next sentence."
+      },
+      {
+        "zh": "「というものだ」是肯定的断定“这才叫……”，同样和后句「大事なのは作る人の腕だ」矛盾。",
+        "en": "「というものだ」 affirms it as a truth, again contradicting \"what matters is the cook's skill.\""
+      }
+    ]
+  },
+  {
+    "id": "n2-l65-012",
+    "type": "bunpou",
+    "refs": [
+      "lesson65#4"
+    ],
+    "difficulty": 2,
+    "stem": "A「部長が、明日までに100ページの資料を全部翻訳しろって。」\nB「一日で100ページなんて、それは無理（　）よ。」",
+    "options": [
+      "というものではない",
+      "に限る",
+      "というものだ",
+      "ばかりだ"
+    ],
+    "answer": 2,
+    "full": "A「部長が、明日までに100ページの資料を全部翻訳しろって。」\nB「一日で100ページなんて、それは無理というものだよ。」",
+    "tr": {
+      "zh": "A：“部长说明天之前要把100页的资料全部翻译完。”\nB：“一天翻100页？那根本是不可能的嘛。”",
+      "en": "A: \"The manager says to translate all 100 pages of the documents by tomorrow.\"\nB: \"100 pages in one day? That's simply impossible.\""
+    },
+    "why": {
+      "zh": "B用「〜なんて」表示不满，对这个要求下断定“那就叫强人所难/不可能”，用「無理というものだ」。",
+      "en": "B's 「〜なんて」 shows disbelief, and B passes a verdict on the demand — 「無理というものだ」 \"that's just impossible.\""
+    },
+    "wrong": [
+      {
+        "zh": "「というものではない」是“并不是不可能”，和「〜なんて」表示的不满相反。",
+        "en": "「というものではない」 would say \"it's not impossible,\" the opposite of B's 「〜なんて」 disbelief."
+      },
+      {
+        "zh": "「に限る」是“……最好”，“不可能最好”说不通。",
+        "en": "「に限る」 means \"… is best\"; \"impossible is best\" makes no sense."
+      },
+      null,
+      {
+        "zh": "「ばかりだ」表示状态一味发展，不能接在「無理」后面下判断。",
+        "en": "「ばかりだ」 describes a trend that keeps going; it can't follow 「無理」 to pass a verdict."
+      }
+    ]
+  },
+  {
+    "id": "n2-l65-013",
+    "type": "narabe",
+    "refs": [
+      "lesson65#4"
+    ],
+    "difficulty": 2,
+    "stem": "外国語は、たくさん [_] [★] [_] [_]。毎日使うことが大切だ。",
+    "options": [
+      "話せるようになる",
+      "というものではない",
+      "単語を",
+      "覚えれば"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "外国語は、たくさん単語を覚えれば話せるようになるというものではない。毎日使うことが大切だ。",
+    "tr": {
+      "zh": "外语并不是背了很多单词就能说的。每天用才是关键。",
+      "en": "Memorizing lots of words doesn't mean you'll be able to speak a foreign language. Using it every day is what matters."
+    },
+    "why": {
+      "zh": "たくさん＋単語を＋覚えれば＋話せるようになる＋というものではない（并不是……就……）。★ 在第二格，是「覚えれば」。",
+      "en": "たくさん ＋ 単語を ＋ 覚えれば ＋ 話せるようになる ＋ というものではない. The ★ is the second slot: 「覚えれば」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
   }
 ]

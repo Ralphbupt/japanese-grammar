@@ -694,5 +694,475 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l67-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#7"
+    ],
+    "difficulty": 1,
+    "stem": "彼の話し方（　）、どうやら関西の出身らしい。",
+    "options": [
+      "からすると",
+      "にとって",
+      "にしたら",
+      "として"
+    ],
+    "answer": 0,
+    "full": "彼の話し方からすると、どうやら関西の出身らしい。",
+    "tr": {
+      "zh": "从他说话的方式来看，他好像是关西出身。",
+      "en": "Judging from the way he talks, he seems to be from Kansai."
+    },
+    "why": {
+      "zh": "「話し方」是判断的依据，后面是推测「らしい」，用「からすると」（从……来判断）。",
+      "en": "「話し方」 is the basis for a guess (「らしい」), so 「からすると」 (judging from) fits."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「にとって」后接评价（大切・難しい），不能表示判断依据。",
+        "en": "「にとって」 is followed by an evaluation, not a basis for a guess."
+      },
+      {
+        "zh": "「にしたら」只接人，「話し方」不是人。",
+        "en": "「にしたら」 only follows a person; 「話し方」 isn't one."
+      },
+      {
+        "zh": "「として」表示身份、资格，“作为说话方式”说不通。",
+        "en": "「として」 marks a role; \"as a way of talking\" makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n2-l67-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#7"
+    ],
+    "difficulty": 2,
+    "stem": "この成績（　）、第一志望の大学にも十分合格できるだろう。",
+    "options": [
+      "に応じて",
+      "をめぐって",
+      "からすれば",
+      "を問わず"
+    ],
+    "answer": 2,
+    "full": "この成績からすれば、第一志望の大学にも十分合格できるだろう。",
+    "tr": {
+      "zh": "从这个成绩来看，第一志愿的大学也完全能考上吧。",
+      "en": "Judging from these grades, you should easily get into your first-choice university."
+    },
+    "why": {
+      "zh": "以「成績」为依据推测「合格できるだろう」，用表示判断依据的「からすれば」。",
+      "en": "The grades are the basis for the guess 「合格できるだろう」, so 「からすれば」 (judging from) fits."
+    },
+    "wrong": [
+      {
+        "zh": "「に応じて」是“根据……相应地调整”，“根据成绩相应地能考上”说不通。",
+        "en": "「に応じて」 means adjusting to something; it doesn't fit a guess about passing."
+      },
+      {
+        "zh": "「をめぐって」是“围绕……（争论）”，这里没有争论。",
+        "en": "「をめぐって」 is about a dispute around something; there's none here."
+      },
+      null,
+      {
+        "zh": "「を問わず」是“不论……”，“不论这个成绩都能考上”与「十分」以成绩为依据的意思矛盾。",
+        "en": "「を問わず」 means \"regardless of\", which clashes with the grades being the reason for 「十分」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l67-021",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#7"
+    ],
+    "difficulty": 1,
+    "stem": "親（　）、子どもはいくつになっても心配なものだ。",
+    "options": [
+      "を問わず",
+      "からすると",
+      "をめぐって",
+      "に応じて"
+    ],
+    "answer": 1,
+    "full": "親からすると、子どもはいくつになっても心配なものだ。",
+    "tr": {
+      "zh": "从父母的角度来说，孩子无论多大都让人放心不下。",
+      "en": "From a parent's point of view, children are a worry however old they get."
+    },
+    "why": {
+      "zh": "「親」是看问题的立场，用「からすると」（从……的立场来看）。",
+      "en": "「親」 is the standpoint from which things are seen, so 「からすると」 fits."
+    },
+    "wrong": [
+      {
+        "zh": "「を問わず」是“不论……”，“不论父母”说不通。",
+        "en": "「を問わず」 means \"regardless of\"; \"regardless of parents\" makes no sense."
+      },
+      null,
+      {
+        "zh": "「をめぐって」是“围绕……争论”，这里没有争论。",
+        "en": "「をめぐって」 is about a dispute; there's none here."
+      },
+      {
+        "zh": "「に応じて」是“根据……相应地”，“根据父母而担心”说不通。",
+        "en": "「に応じて」 means \"in accordance with\"; it doesn't fit 「親」 here."
+      }
+    ]
+  },
+  {
+    "id": "n2-l67-022",
+    "type": "narabe",
+    "refs": [
+      "lesson67#7"
+    ],
+    "difficulty": 2,
+    "stem": "あの [_] [★] [_] [_] 、彼はまだ何も知らないようだ。",
+    "options": [
+      "すると",
+      "落ち着いた",
+      "から",
+      "様子"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "あの落ち着いた様子からすると、彼はまだ何も知らないようだ。",
+    "tr": {
+      "zh": "从他那副镇定的样子来看，他好像还什么都不知道。",
+      "en": "Judging from how calm he looks, he doesn't seem to know anything yet."
+    },
+    "why": {
+      "zh": "あの＋落ち着いた＋様子（判断依据）＋から＋すると（从……来判断）＋、彼はまだ何も知らないようだ。★ 在第二格，是「様子」。",
+      "en": "あの ＋ 落ち着いた ＋ 様子 (the basis) ＋ から ＋ すると (judging from) ＋ 、彼はまだ何も知らないようだ. The ★ is the second slot: 「様子」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l67-023",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#8",
+      "lesson67#7"
+    ],
+    "difficulty": 2,
+    "stem": "この地域の経済（　）、観光業は欠かせない産業だ。",
+    "options": [
+      "にしたら",
+      "に応じて",
+      "を中心に",
+      "にとって"
+    ],
+    "answer": 3,
+    "full": "この地域の経済にとって、観光業は欠かせない産業だ。",
+    "tr": {
+      "zh": "对这个地区的经济来说，旅游业是不可或缺的产业。",
+      "en": "For this region's economy, tourism is an indispensable industry."
+    },
+    "why": {
+      "zh": "后面是评价「欠かせない」，前面「経済」不是人，用「にとって」（对……来说）。",
+      "en": "An evaluation (「欠かせない」) follows and 「経済」 isn't a person, so 「にとって」 fits."
+    },
+    "wrong": [
+      {
+        "zh": "「にしたら」只接人，用来推测某人的心情；「経済」不是人。",
+        "en": "「にしたら」 only follows a person whose feelings you imagine; 「経済」 isn't one."
+      },
+      {
+        "zh": "「に応じて」是“根据……相应地”，“根据经济是不可缺的产业”说不通。",
+        "en": "「に応じて」 means \"in accordance with\"; it doesn't fit here."
+      },
+      {
+        "zh": "「を中心に」是“以……为中心”，后面要接动作，不能接「欠かせない産業だ」。",
+        "en": "「を中心に」 needs an action after it, not 「欠かせない産業だ」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l67-024",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#8",
+      "lesson67#7"
+    ],
+    "difficulty": 2,
+    "stem": "彼（　）親切のつもりで言ったのだろうが、私には迷惑だった。",
+    "options": [
+      "にとって",
+      "にしたら",
+      "をめぐって",
+      "に応じて"
+    ],
+    "answer": 1,
+    "full": "彼にしたら親切のつもりで言ったのだろうが、私には迷惑だった。",
+    "tr": {
+      "zh": "站在他的立场，大概是出于好意才说的，但对我来说却是添麻烦。",
+      "en": "From his point of view he probably meant it kindly, but to me it was a nuisance."
+    },
+    "why": {
+      "zh": "设身处地推测“他”的想法（「〜のつもりで言ったのだろう」），用「にしたら」（站在……的立场）。",
+      "en": "The sentence imagines his intention (「〜のつもりで言ったのだろう」), so 「にしたら」 fits."
+    },
+    "wrong": [
+      {
+        "zh": "「にとって」后接评价（大切・難しい），不能接“他抱着什么想法说了”这种动作和意图。",
+        "en": "「にとって」 is followed by an evaluation, not by what someone meant or did."
+      },
+      null,
+      {
+        "zh": "「をめぐって」是“围绕……争论”，“围绕他”说不通。",
+        "en": "「をめぐって」 is about a dispute; \"concerning him\" doesn't fit."
+      },
+      {
+        "zh": "「に応じて」是“根据……相应地”，“根据他”说不通。",
+        "en": "「に応じて」 means \"in accordance with\"; it makes no sense with 「彼」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l67-025",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#8"
+    ],
+    "difficulty": 1,
+    "stem": "店側（　）、閉店間際に大勢で来られるのは困るだろう。",
+    "options": [
+      "に比べて",
+      "を問わず",
+      "にすれば",
+      "を中心に"
+    ],
+    "answer": 2,
+    "full": "店側にすれば、閉店間際に大勢で来られるのは困るだろう。",
+    "tr": {
+      "zh": "站在店家的立场，快关门时来一大群人会很为难吧。",
+      "en": "From the shop's side, a big group turning up just before closing would be a nuisance."
+    },
+    "why": {
+      "zh": "站在「店側」的立场推测其感受「困るだろう」，用「にすれば」（站在……的立场）。",
+      "en": "It imagines how the shop would feel (「困るだろう」), so 「にすれば」 fits."
+    },
+    "wrong": [
+      {
+        "zh": "「に比べて」是“与……相比”，句中没有比较的对象。",
+        "en": "「に比べて」 means \"compared with\", but nothing is being compared."
+      },
+      {
+        "zh": "「を問わず」是“不论……”，“不论店家”说不通。",
+        "en": "「を問わず」 means \"regardless of\"; it makes no sense with 「店側」."
+      },
+      null,
+      {
+        "zh": "「を中心に」是“以……为中心”，“以店家为中心会为难”说不通。",
+        "en": "「を中心に」 means \"centred on\"; it doesn't fit 「困るだろう」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l67-026",
+    "type": "narabe",
+    "refs": [
+      "lesson67#8"
+    ],
+    "difficulty": 2,
+    "stem": "[_] [_] [★] [_] 、毎日塾に通うのはつらいだろう。",
+    "options": [
+      "にしたら",
+      "盛りの",
+      "子ども",
+      "遊びたい"
+    ],
+    "order": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "full": "遊びたい盛りの子どもにしたら、毎日塾に通うのはつらいだろう。",
+    "tr": {
+      "zh": "对正值贪玩年纪的孩子来说，每天去补习班一定很辛苦吧。",
+      "en": "For a child at the age when all they want is to play, going to cram school every day must be hard."
+    },
+    "why": {
+      "zh": "遊びたい＋盛りの（正想玩的年纪的）＋子ども＋にしたら（站在……的立场）＋、毎日塾に通うのはつらいだろう。★ 在第三格，是「子ども」。",
+      "en": "遊びたい ＋ 盛りの ＋ 子ども ＋ にしたら (from …'s point of view) ＋ 、毎日塾に通うのはつらいだろう. The ★ is the third slot: 「子ども」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l67-027",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#9"
+    ],
+    "difficulty": 1,
+    "stem": "留学中は、有名な教授の（　）経済学を学んだ。",
+    "options": [
+      "もとで",
+      "うえで",
+      "あいだに",
+      "わりに"
+    ],
+    "answer": 0,
+    "full": "留学中は、有名な教授のもとで経済学を学んだ。",
+    "tr": {
+      "zh": "留学期间，我在一位著名教授门下学习了经济学。",
+      "en": "While studying abroad, I studied economics under a famous professor."
+    },
+    "why": {
+      "zh": "“在某人的指导下学习”，用「人＋のもとで」（在……之下）。",
+      "en": "Learning under someone's guidance is 「person ＋ のもとで」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「のうえで」接在行为名词后表示“在……之后/方面”，不能接「教授」。",
+        "en": "「のうえで」 follows action nouns (\"after / in terms of\"), not a person like 「教授」."
+      },
+      {
+        "zh": "「のあいだに」是“在……期间”，不能接「教授」这种人。",
+        "en": "「のあいだに」 means \"during\"; it can't follow a person."
+      },
+      {
+        "zh": "「のわりに」是“与……相比出乎意料”，“教授的意外”说不通。",
+        "en": "「のわりに」 means \"considering\"; it doesn't fit here."
+      }
+    ]
+  },
+  {
+    "id": "n2-l67-028",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#9"
+    ],
+    "difficulty": 2,
+    "stem": "患者本人の同意の（　）、新しい治療が行われた。",
+    "options": [
+      "うえに",
+      "かぎり",
+      "ついでに",
+      "もとに"
+    ],
+    "answer": 3,
+    "full": "患者本人の同意のもとに、新しい治療が行われた。",
+    "tr": {
+      "zh": "在患者本人同意的前提下，进行了新的治疗。",
+      "en": "The new treatment was given with the patient's own consent."
+    },
+    "why": {
+      "zh": "「同意」是行动的前提，用「のもとに」（以……为前提）。",
+      "en": "「同意」 is the premise for the action, so 「のもとに」 fits."
+    },
+    "wrong": [
+      {
+        "zh": "「のうえに」是“不仅……而且”（累加），“同意之上再进行治疗”说不通。",
+        "en": "「のうえに」 means \"on top of / besides\"; it doesn't fit consent as a premise."
+      },
+      {
+        "zh": "「のかぎり」是“尽……之所能”（力のかぎり），不能接「同意」。",
+        "en": "「のかぎり」 means \"to the limit of\" (力のかぎり); it can't follow 「同意」."
+      },
+      {
+        "zh": "「のついでに」是“顺便”，“同意的顺便进行治疗”说不通。",
+        "en": "「のついでに」 means \"while at it\"; it makes no sense with consent."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l67-029",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#9"
+    ],
+    "difficulty": 1,
+    "stem": "新しい監督の（　）、チームは見違えるほど強くなった。",
+    "options": [
+      "中で",
+      "うちに",
+      "もとで",
+      "とおりに"
+    ],
+    "answer": 2,
+    "full": "新しい監督のもとで、チームは見違えるほど強くなった。",
+    "tr": {
+      "zh": "在新教练的带领下，球队强得判若两队。",
+      "en": "Under the new coach, the team became unrecognisably strong."
+    },
+    "why": {
+      "zh": "在「監督」的指导和影响下发生变化，用「のもとで」（在……之下）。",
+      "en": "The change happened under the coach's leadership, so 「のもとで」 fits."
+    },
+    "wrong": [
+      {
+        "zh": "「の中で」表示“在……里面/范围内”，“在教练里面”说不通。",
+        "en": "「の中で」 means \"inside / among\"; \"inside the coach\" makes no sense."
+      },
+      {
+        "zh": "「のうちに」是“趁……期间”，不能接「監督」这种人。",
+        "en": "「のうちに」 means \"while / during\"; it can't follow a person."
+      },
+      null,
+      {
+        "zh": "「のとおりに」是“按照……那样”，要接「指示」「計画」等，不能直接接人。",
+        "en": "「のとおりに」 means \"just as\" and needs 「指示」「計画」 etc., not a person."
+      }
+    ]
+  },
+  {
+    "id": "n2-l67-030",
+    "type": "narabe",
+    "refs": [
+      "lesson67#9"
+    ],
+    "difficulty": 2,
+    "stem": "大学院では、田中教授の [_] [_] [★] [_] 。",
+    "options": [
+      "続けた",
+      "もとで",
+      "指導の",
+      "研究を"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "大学院では、田中教授の指導のもとで研究を続けた。",
+    "tr": {
+      "zh": "在研究生院，我在田中教授的指导下继续做研究。",
+      "en": "In graduate school, I carried on my research under Professor Tanaka's guidance."
+    },
+    "why": {
+      "zh": "田中教授の＋指導の＋もとで（在……之下）＋研究を＋続けた。★ 在第三格，是「研究を」。",
+      "en": "田中教授の ＋ 指導の ＋ もとで (under) ＋ 研究を ＋ 続けた. The ★ is the third slot: 「研究を」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
   }
 ]

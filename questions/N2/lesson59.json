@@ -578,5 +578,161 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l59-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson59#6"
+    ],
+    "difficulty": 1,
+    "stem": "たとえ給料が（　）、やりがいのある仕事を選びたい。",
+    "options": [
+      "安ければ",
+      "安いなら",
+      "安くても",
+      "安かったら"
+    ],
+    "answer": 2,
+    "full": "たとえ給料が安くても、やりがいのある仕事を選びたい。",
+    "tr": {
+      "zh": "即使工资低，也想选有意义的工作。",
+      "en": "Even if the pay is low, I want to choose work that's worth doing."
+    },
+    "why": {
+      "zh": "「たとえ」必须和「ても／でも」呼应，い形容词「安い」变成「安くても」。",
+      "en": "「たとえ」 must be answered by 「ても／でも」; the i-adjective 「安い」 becomes 「安くても」."
+    },
+    "wrong": [
+      {
+        "zh": "「ば」是顺接条件“如果……就……”，不能和「たとえ」搭配，意思也成了“工资低就选”。",
+        "en": "「ば」 is a plain condition and can't go with 「たとえ」; it would mean \"if it's low, then I'll choose it\"."
+      },
+      {
+        "zh": "「なら」是条件，不和表示让步的「たとえ」搭配。",
+        "en": "「なら」 is conditional and doesn't pair with the concessive 「たとえ」."
+      },
+      null,
+      {
+        "zh": "「たら」是条件“如果……”，不和「たとえ」搭配；这里需要的是“即使……也”。",
+        "en": "「たら」 is conditional and doesn't pair with 「たとえ」; the sentence needs \"even if\"."
+      }
+    ]
+  },
+  {
+    "id": "n2-l59-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson59#6"
+    ],
+    "difficulty": 2,
+    "stem": "たとえ社長の（　）、間違っていることには反対すべきだ。",
+    "options": [
+      "意見だから",
+      "意見でも",
+      "意見なら",
+      "意見にしては"
+    ],
+    "answer": 1,
+    "full": "たとえ社長の意見でも、間違っていることには反対すべきだ。",
+    "tr": {
+      "zh": "即使是社长的意见，错误的事情也应该反对。",
+      "en": "Even if it's the president's opinion, you should oppose what's wrong."
+    },
+    "why": {
+      "zh": "名词接「たとえ」时用「名詞＋でも」，表示“即使是社长的意见也……”。",
+      "en": "With a noun, 「たとえ」 takes 「名詞＋でも」: \"even if it's the president's opinion…\"."
+    },
+    "wrong": [
+      {
+        "zh": "「だから」是“因为”，“因为是社长的意见所以反对”不通，也不和「たとえ」搭配。",
+        "en": "「だから」 (because) gives \"oppose it because it's the president's\" and doesn't pair with 「たとえ」."
+      },
+      null,
+      {
+        "zh": "「なら」是条件，不和「たとえ」搭配，“如果是社长的意见就该反对”意思也不对。",
+        "en": "「なら」 is conditional, doesn't pair with 「たとえ」, and gives the wrong meaning."
+      },
+      {
+        "zh": "「にしては」是“作为……来说却……”，表示与预期不符，不和「たとえ」搭配。",
+        "en": "「にしては」 (surprisingly, for…) marks a gap from expectations and doesn't pair with 「たとえ」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l59-018",
+    "type": "bunpou",
+    "refs": [
+      "lesson59#6"
+    ],
+    "difficulty": 2,
+    "stem": "（　）明日世界が終わるとしても、私は今日りんごの木を植える。",
+    "options": [
+      "いくら",
+      "せっかく",
+      "たとえ",
+      "まさか"
+    ],
+    "answer": 2,
+    "full": "たとえ明日世界が終わるとしても、私は今日りんごの木を植える。",
+    "tr": {
+      "zh": "即使明天世界就要毁灭，我今天也要种下苹果树。",
+      "en": "Even if the world were to end tomorrow, I would plant an apple tree today."
+    },
+    "why": {
+      "zh": "「〜としても」表示假设的让步，前面用「たとえ」呼应：“即使……也……”。",
+      "en": "「〜としても」 is a hypothetical concession, answered by 「たとえ」 at the front: \"even if…\"."
+    },
+    "wrong": [
+      {
+        "zh": "「いくら」强调程度、数量（再怎么……），「世界が終わる」没有程度可言。",
+        "en": "「いくら」 stresses degree or amount; the world ending has no degree."
+      },
+      {
+        "zh": "「せっかく」是“好不容易”，后面接珍惜机会的内容，不和「としても」搭配。",
+        "en": "「せっかく」 (having gone to the trouble) leads to making the most of a chance and doesn't pair with 「としても」."
+      },
+      null,
+      {
+        "zh": "「まさか」是“难道……/万万没想到”，与否定推测呼应，不和「としても」搭配。",
+        "en": "「まさか」 (surely not) goes with negative guesses, not 「としても」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l59-019",
+    "type": "narabe",
+    "refs": [
+      "lesson59#6"
+    ],
+    "difficulty": 1,
+    "stem": "[_] [_] [★] [_]、この仕事は今日中に終わらせるつもりだ。",
+    "options": [
+      "徹夜する",
+      "なっても",
+      "たとえ",
+      "ことに"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "たとえ徹夜することになっても、この仕事は今日中に終わらせるつもりだ。",
+    "tr": {
+      "zh": "即使要熬通宵，这项工作我也打算今天之内做完。",
+      "en": "Even if it means staying up all night, I intend to finish this job today."
+    },
+    "why": {
+      "zh": "「たとえ」放在最前，「徹夜する」接「ことになる」，变成「ことになっても」与「たとえ」呼应。顺序：たとえ → 徹夜する → ことに → なっても。★ 是「ことに」。",
+      "en": "「たとえ」 comes first; 「徹夜する」 + 「ことになる」 becomes 「ことになっても」, answering 「たとえ」. Order: たとえ → 徹夜する → ことに → なっても. The ★ is 「ことに」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
   }
 ]

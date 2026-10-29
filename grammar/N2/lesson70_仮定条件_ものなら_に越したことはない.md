@@ -339,6 +339,96 @@ This lesson covers N2 grammar for "hypothetical conditions" and "advice." 「も
 
 ---
 
+## 6. 〜としたら／〜とすれば（假如……的话）||6. 〜としたら／〜とすれば (Supposing… / If it were the case that…)
+
+### 接続||Conjugation
+:::zh
+- 動詞普通形 + としたら／とすれば／とすると
+- い形容詞普通形 + としたら／とすれば／とすると
+- な形容詞語幹 + だ + としたら／とすれば／とすると
+- 名詞 + だ + としたら／とすれば／とすると
+
+※ 名词和な形容词要加「だ」：「本当だとしたら」「学生だとすれば」「無理だとすると」。  
+※ 前面常加「もし」「仮に」，强调这是假设：「もし〜としたら」「仮に〜とすれば」。  
+※ 放在句首时说「だとしたら」「だとすれば」「とすると」，意思是"如果是那样的话""这么说来"，承接对方刚说的话。
+:::
+:::en
+- Verb plain form + としたら / とすれば / とすると
+- i-adjective plain form + としたら / とすれば / とすると
+- na-adjective stem + だ + としたら / とすれば / とすると
+- Noun + だ + としたら / とすれば / とすると
+
+※ Nouns and na-adjectives take 「だ」: 「本当だとしたら」「学生だとすれば」「無理だとすると」.  
+※ Often preceded by 「もし」 or 「仮に」 to mark it clearly as a supposition: 「もし〜としたら」「仮に〜とすれば」.  
+※ At the start of a sentence, 「だとしたら」「だとすれば」「とすると」 mean "if that's the case / so that means…", picking up what the other person just said.
+:::
+
+### 含义||Meaning
+:::zh
+"假如……的话""如果（真的）是……的话"。把一件还不确定、或者和事实不符的事暂且当作成立，在这个前提下说出自己的判断、推测或疑问。后句多是「〜だろう」「〜なければならない」「〜べきだ」「どうする？」之类。
+
+三种形式意思基本相同：「としたら」最口语，「とすれば」稍书面，「とすると」多用于根据听来的信息往下推论（"这么说来……"）。
+
+注意：前项必须是"不确定 / 假想"的事。一定会发生的事、每次都成立的规律，不用「としたら」，用「たら」「と」「ば」。
+:::
+:::en
+"Supposing… / If it were (really) the case that…" — you treat something uncertain, or contrary to fact, as true for the moment and state a judgment, guess or question on that basis. The second clause is typically 「〜だろう」「〜なければならない」「〜べきだ」 or a question like 「どうする？」.
+
+The three forms mean much the same: 「としたら」 is the most conversational, 「とすれば」 a little more formal, and 「とすると」 is often used to reason onward from information you've just heard ("so that means…").
+
+Note: the premise must be uncertain or imagined. For something that will certainly happen, or a rule that always holds, use 「たら」「と」「ば」, not 「としたら」.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. もし宝くじで一億円当たった**としたら**、何に使いますか。（如果中了一亿日元彩票，你会用来干什么？）
+2. 彼の話が本当**だとしたら**、大変なことになる。（如果他说的是真的，那就出大事了。）
+3. 留学する**とすれば**、今年中に準備を始めなければならない。（如果要留学的话，今年之内就得开始准备。）
+4. 仮に明日大きな地震が起きた**とすれば**、この古い建物は大丈夫だろうか。（假如明天发生大地震，这栋老楼能撑得住吗？）
+5. 電車で二時間かかる**とすると**、遅くとも八時には家を出なければならない。（如果坐电车要两个小时，那最晚八点就得出门。）
+6. この雨が明日まで続く**としたら**、試合は中止になるかもしれない。（如果这场雨下到明天，比赛可能会取消。）
+:::
+:::en
+1. もし宝くじで一億円当たった**としたら**、何に使いますか。(If you won a hundred million yen in the lottery, what would you spend it on?)
+2. 彼の話が本当**だとしたら**、大変なことになる。(If what he says is true, we're in serious trouble.)
+3. 留学する**とすれば**、今年中に準備を始めなければならない。(If I'm going to study abroad, I have to start preparing this year.)
+4. 仮に明日大きな地震が起きた**とすれば**、この古い建物は大丈夫だろうか。(Supposing a big earthquake hit tomorrow, would this old building be all right?)
+5. 電車で二時間かかる**とすると**、遅くとも八時には家を出なければならない。(If the train takes two hours, I have to leave home by eight at the latest.)
+6. この雨が明日まで続く**としたら**、試合は中止になるかもしれない。(If this rain keeps up until tomorrow, the match may be called off.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| としたら／とすれば | 假如……的话 | 前项是不确定或假想的事；后项多为判断、推测、疑问 |
+| たら | 如果…… / ……之后 | 也能用于一定会发生的事（「駅に着いたら電話する」） |
+| ば | 如果…… | 一般条件、恒常规律（「春になれば暖かくなる」） |
+| なら | 如果是……的话 | 多接对方的话或已知信息，再给建议（「京都に行くなら、秋がいい」） |
+| ものなら | 如果能……的话 | 接可能形，表达难以实现的愿望，后接「〜たい」 |
+
+> ⭕ 駅に着いたら電話します。（一定会到站）  
+> ❌ 駅に着くとしたら電話します。（到站不是"假设"，不用「としたら」）  
+> 「戻れるものなら戻りたい」= 真想回去（强烈愿望）  
+> 「戻れるとしたら、いつに戻りたい？」= 假如能回去，想回到什么时候？（中性假设，后接疑问）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| としたら / とすれば | supposing… | Premise is uncertain or imagined; result is a judgment, guess or question |
+| たら | if… / when… | Also works for things that will certainly happen (「駅に着いたら電話する」) |
+| ば | if… | General conditions and rules that always hold (「春になれば暖かくなる」) |
+| なら | if (that's the case)… | Usually picks up what someone said or a known fact, then advises (「京都に行くなら、秋がいい」) |
+| ものなら | if one could… | With the potential form; a wish unlikely to come true, followed by 「〜たい」 |
+
+> ⭕ 駅に着いたら電話します。(You will certainly arrive.)  
+> ❌ 駅に着くとしたら電話します。(Arriving isn't a supposition, so 「としたら」 doesn't fit.)  
+> 「戻れるものなら戻りたい」= I'd love to go back (a strong wish)  
+> 「戻れるとしたら、いつに戻りたい？」= If you could go back, when would you go back to? (a neutral supposition, followed by a question)
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

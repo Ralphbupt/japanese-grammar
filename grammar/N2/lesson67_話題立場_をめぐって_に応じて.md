@@ -327,6 +327,218 @@ This lesson covers N2 grammar related to "topics," "standpoints," and "condition
 
 ---
 
+## 7. 〜からすると／〜からすれば（从……来看 / 从……的立场来说）||7. 〜からすると／〜からすれば (Judging from… / From the standpoint of…)
+
+### 接続||Conjugation
+:::zh
+- 名詞 + からすると / からすれば / からしたら
+:::
+:::en
+- Noun + からすると / からすれば / からしたら
+:::
+
+### 含义||Meaning
+:::zh
+有两种用法：
+1. **立场・视角**："从……的立场来看"。前面是人或团体，说明站在这个角度会怎么想、怎么看。
+2. **判断依据**："从……来判断"。前面是看到的事实（表情、样子、成绩、数据等），后面是据此做出的推测，常和「だろう」「ようだ」「らしい」「に違いない」呼应。
+:::
+:::en
+Two uses:
+1. **Standpoint / viewpoint**: "from the point of view of…". A person or group comes before it, and the sentence says how things look from that position.
+2. **Basis for a judgment**: "judging from…". Before it comes something observed (a face, a manner, results, figures), and the sentence draws a guess from it, often ending in 「だろう」「ようだ」「らしい」「に違いない」.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 親**からすると**、子どもが一人で海外へ行くのは心配なものだ。（从父母的角度来说，孩子一个人出国总是让人担心的。）
+2. 彼の話し方**からすると**、たぶん関西の出身だろう。（从他说话的方式来看，大概是关西出身吧。）
+3. 空の様子**からすると**、午後から雨になりそうだ。（看天色，下午好像要下雨。）
+4. 日本人**からすれば**当たり前のことでも、外国人には不思議に見えることがある。（即使在日本人看来是理所当然的事，在外国人眼里也可能显得很奇怪。）
+5. この成績**からすれば**、第一志望の大学にも十分合格できるだろう。（从这个成绩来看，第一志愿的大学也完全能考上吧。）
+6. 専門家**からすると**、この程度のミスは珍しくないらしい。（在专家看来，这种程度的失误似乎并不少见。）
+:::
+:::en
+1. 親**からすると**、子どもが一人で海外へ行くのは心配なものだ。(From a parent's point of view, a child going abroad alone is always a worry.)
+2. 彼の話し方**からすると**、たぶん関西の出身だろう。(Judging from the way he talks, he's probably from Kansai.)
+3. 空の様子**からすると**、午後から雨になりそうだ。(Judging from the sky, it looks like it'll rain from the afternoon.)
+4. 日本人**からすれば**当たり前のことでも、外国人には不思議に見えることがある。(Things that seem obvious to Japanese people can look strange to foreigners.)
+5. この成績**からすれば**、第一志望の大学にも十分合格できるだろう。(Judging from these grades, you should easily get into your first-choice university.)
+6. 専門家**からすると**、この程度のミスは珍しくないらしい。(From an expert's point of view, a mistake like this is apparently nothing unusual.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| からすると／からすれば | 从……的立场看；从……判断 | 立场和判断依据两种用法都有 |
+| から見ると／から見れば | 从……来看 | 用法基本相同，更口语，偏重“看起来” |
+| からして | 光从……就；从……来判断 | 举出最基本的一点“连……都”，多带负面评价 |
+| にとって | 对……来说 | 后接评价（大切・必要・難しい），不表判断依据 |
+
+> ⭕ 表情**からすると**、怒っているようだ。（判断依据：从表情看好像生气了）  
+> ⭕ 先生**から見ると**、学生の気持ちは分かりにくいのかもしれない。（立场）  
+> ⭕ あの店は名前**からして**怪しい。（光看店名就很可疑）  
+> ⭕ 私**にとって**、家族は一番大切な存在だ。（评价“重要”用にとって）  
+> △ 私からすると、家族は一番大切な存在だ。（表评价时にとって更自然）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| からすると／からすれば | from …'s standpoint; judging from | Covers both standpoint and basis for a judgment |
+| から見ると／から見れば | seen from… | Much the same, more conversational, leans on "how it looks" |
+| からして | from … alone; judging from | Picks the most basic point ("even the … is…"), usually negative |
+| にとって | for… | Followed by an evaluation (大切・必要・難しい); not a basis for a guess |
+
+> ⭕ 表情**からすると**、怒っているようだ。(basis: judging from the face, they seem angry)  
+> ⭕ 先生**から見ると**、学生の気持ちは分かりにくいのかもしれない。(standpoint)  
+> ⭕ あの店は名前**からして**怪しい。(even the shop's name is suspicious)  
+> ⭕ 私**にとって**、家族は一番大切な存在だ。(an evaluation like "important" takes にとって)  
+> △ 私からすると、家族は一番大切な存在だ。(for an evaluation, にとって is more natural)
+:::
+
+---
+
+## 8. 〜にしたら／〜にすれば（对……来说 / 站在……的立场）||8. 〜にしたら／〜にすれば (For… / From …'s point of view)
+
+### 接続||Conjugation
+:::zh
+- 人・团体名词 + にしたら / にすれば / にしてみれば / にしてみたら
+:::
+:::en
+- Person / group noun + にしたら / にすれば / にしてみれば / にしてみたら
+:::
+
+### 含义||Meaning
+:::zh
+"站在……的立场（想一想）"。设身处地地推测某人（多为别人）的心情或想法，后面常接「だろう」「かもしれない」「に違いない」「のだろう」。前面只能是人或团体，不能接事物。用于自己时多说「私にしてみれば」，带有“在我看来（其实是……）”的不满语气。
+:::
+:::en
+"If you put yourself in …'s place". Imagines how someone (usually someone else) feels or thinks, so the sentence often ends in 「だろう」「かもしれない」「に違いない」「のだろう」. Only a person or a group can come before it, never a thing. About oneself, 「私にしてみれば」 is the usual form, often with a note of complaint ("as far as I'm concerned…").
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 子ども**にしたら**、毎日塾に通うのはつらいだろう。（站在孩子的角度，每天去补习班一定很辛苦吧。）
+2. 店側**にすれば**、閉店間際に大勢で来られるのは困るかもしれない。（站在店家的立场，快关门时来一大群人可能会很为难。）
+3. 母**にしたら**、私の一人暮らしが心配でたまらないのだろう。（对母亲来说，我一个人生活大概让她担心得不得了吧。）
+4. 新入社員**にすれば**、先輩に質問するのも勇気がいることだ。（对新员工来说，向前辈提问也是需要勇气的事。）
+5. 隣の人**にしたら**、夜中のピアノの音は迷惑に違いない。（对邻居来说，半夜的钢琴声一定很扰民。）
+6. 彼**にしてみれば**、よかれと思ってしたことなのだろう。（站在他的立场，大概是出于好意才那样做的吧。）
+:::
+:::en
+1. 子ども**にしたら**、毎日塾に通うのはつらいだろう。(For a child, going to cram school every day must be hard.)
+2. 店側**にすれば**、閉店間際に大勢で来られるのは困るかもしれない。(From the shop's side, a big group turning up just before closing may be a nuisance.)
+3. 母**にしたら**、私の一人暮らしが心配でたまらないのだろう。(For my mother, my living alone must be a constant worry.)
+4. 新入社員**にすれば**、先輩に質問するのも勇気がいることだ。(For a new employee, even asking a senior colleague a question takes courage.)
+5. 隣の人**にしたら**、夜中のピアノの音は迷惑に違いない。(For the neighbours, piano playing in the middle of the night must be a real nuisance.)
+6. 彼**にしてみれば**、よかれと思ってしたことなのだろう。(From his point of view, he probably did it with good intentions.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 前面接 | 区别 |
+|------|------|------|
+| にしたら／にすれば | 只接人・团体 | 设身处地推测别人的心情，句末多为推测 |
+| にとって | 人・事物都可 | 后接评价（大切・必要・難しい），客观陈述 |
+| からすると | 人・事物都可 | 立场，或以事实为判断依据 |
+| としては | 人・团体（身份） | 以……的身份/立场表明意见，多用于自己：「私としては賛成です」 |
+
+> ⭕ この計画は環境**にとって**よくない。  
+> ❌ この計画は環境にしたらよくない。（「環境」不是人，不能用にしたら）  
+> ⭕ 彼の表情**からすると**、合格したらしい。（判断依据用からすると）  
+> ❌ 彼の表情にしたら、合格したらしい。  
+> ⭕ 私**としては**、その案に反対です。（表明自己的意见用としては）  
+> ❌ 私にしたら、その案に反対です。
+:::
+:::en
+| Expression | Comes after | Difference |
+|------|------|------|
+| にしたら／にすれば | people / groups only | Imagines someone else's feelings; usually ends in a guess |
+| にとって | people or things | Followed by an evaluation (大切・必要・難しい); a plain statement |
+| からすると | people or things | A standpoint, or facts as the basis for a judgment |
+| としては | people / groups (a role) | States an opinion in one's capacity, mostly one's own: 「私としては賛成です」 |
+
+> ⭕ この計画は環境**にとって**よくない。  
+> ❌ この計画は環境にしたらよくない。(「環境」 isn't a person, so にしたら can't be used)  
+> ⭕ 彼の表情**からすると**、合格したらしい。(a basis for a judgment takes からすると)  
+> ❌ 彼の表情にしたら、合格したらしい。  
+> ⭕ 私**としては**、その案に反対です。(stating your own opinion takes としては)  
+> ❌ 私にしたら、その案に反対です。
+:::
+
+---
+
+## 9. 〜のもとで／〜のもとに（在……之下）||9. 〜のもとで／〜のもとに (Under…)
+
+### 接続||Conjugation
+:::zh
+- 名詞 + のもとで / のもとに（也写作「の下で」「の下に」，「下」读「もと」）
+:::
+:::en
+- Noun + のもとで / のもとに (also written 「の下で」「の下に」, with 「下」 read 「もと」)
+:::
+
+### 含义||Meaning
+:::zh
+"在……之下"。表示在某人的指导、保护、影响下，或在某种条件、前提下做某事。
+- 「のもとで」：多接人、指導・管理・監督・環境・条件，表示“在这种环境/影响下”。
+- 「のもとに」：多接名・名目・前提・合意・約束・同意，表示“以此为前提/名义”，更书面。
+两者很多时候可以互换。
+:::
+:::en
+"Under…". Doing something under a person's guidance, protection or influence, or under certain conditions or on a certain premise.
+- 「のもとで」: usually with a person or 指導・管理・監督・環境・条件 — "in that environment / under that influence".
+- 「のもとに」: usually with 名・名目・前提・合意・約束・同意 — "on that premise / in that name"; more formal.
+In many sentences either works.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 大学院では、田中教授**のもとで**三年間研究を続けた。（在研究生院，我在田中教授门下做了三年研究。）
+2. 彼女は両親の温かい愛情**のもとで**育った。（她在父母温暖的爱中长大。）
+3. 新しい監督**のもとで**、チームは見違えるほど強くなった。（在新教练的带领下，球队强得判若两队。）
+4. この実験は厳しい管理**のもとで**行われている。（这项实验在严格的管理下进行。）
+5. 患者本人の同意**のもとに**、新しい治療が行われた。（在患者本人同意的前提下，进行了新的治疗。）
+6. 「国際協力」という名目**のもとに**、多額の資金が使われた。（以“国际合作”为名义，花掉了巨额资金。）
+:::
+:::en
+1. 大学院では、田中教授**のもとで**三年間研究を続けた。(In graduate school I did research under Professor Tanaka for three years.)
+2. 彼女は両親の温かい愛情**のもとで**育った。(She grew up surrounded by her parents' warm love.)
+3. 新しい監督**のもとで**、チームは見違えるほど強くなった。(Under the new coach, the team became unrecognisably strong.)
+4. この実験は厳しい管理**のもとで**行われている。(This experiment is being carried out under strict control.)
+5. 患者本人の同意**のもとに**、新しい治療が行われた。(The new treatment was given with the patient's own consent.)
+6. 「国際協力」という名目**のもとに**、多額の資金が使われた。(Huge sums were spent in the name of "international cooperation".)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 常接的词 | 区别 |
+|------|------|------|
+| のもとで | 人・指導・管理・監督・環境・条件 | 在某人的影响或某种环境、条件下 |
+| のもとに | 名・名目・前提・合意・約束・同意 | 以……为前提、名义，更书面 |
+| 下（した）で | 木・机・橋 等具体事物 | 物理位置“在……下面” |
+
+> ⭕ 先生の指導**のもとで**卒業論文を書いた。（在老师的指导下）  
+> ⭕ 平和という名**のもとに**、戦争が正当化された。（以和平为名）  
+> ⭕ 机の下で猫が寝ている。（具体位置，「下」读「した」）  
+> ❌ 先生の指導のしたで卒業論文を書いた。（抽象的“指导之下”要读「もと」）
+:::
+:::en
+| Expression | Typical nouns | Difference |
+|------|------|------|
+| のもとで | person, 指導・管理・監督・環境・条件 | Under someone's influence, or in an environment / under conditions |
+| のもとに | 名・名目・前提・合意・約束・同意 | On a premise / in the name of; more formal |
+| 下（した）で | 木・机・橋 and other physical things | Physical position: "underneath" |
+
+> ⭕ 先生の指導**のもとで**卒業論文を書いた。(under my teacher's guidance)  
+> ⭕ 平和という名**のもとに**、戦争が正当化された。(in the name of peace)  
+> ⭕ 机の下で猫が寝ている。(a physical place; 「下」 is read 「した」)  
+> ❌ 先生の指導のしたで卒業論文を書いた。(abstract "under guidance" must be read 「もと」)
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

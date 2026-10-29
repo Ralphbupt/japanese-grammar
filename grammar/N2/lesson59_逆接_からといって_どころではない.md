@@ -366,6 +366,90 @@ More formal than 「ても」; often used in writing and formal situations. 「�
 
 ---
 
+## 6. たとえ〜ても／たとえ〜でも（即使……也……）||6. たとえ〜ても／たとえ〜でも (Even if…)
+
+### 接続||Conjugation
+:::zh
+- たとえ + 動詞て形 + も（「反対されても」）
+- たとえ + い形容詞（〜くて）+ も（「安くても」）
+- たとえ + な形容詞語幹 + でも（「不便でも」）
+- たとえ + 名詞 + でも（「冗談でも」）
+- たとえ + 普通形 + としても（「失敗したとしても」，假设的意味更强）
+
+※ 「たとえ」只是加强语气的副词，表示让步的是后面的「ても／でも／としても」，两者必须呼应。  
+※ 「たとえ」不和「たら」「なら」「ば」搭配：❌「たとえ雨なら」→ ⭕「たとえ雨でも」。
+:::
+:::en
+- たとえ + verb te-form + も (「反対されても」)
+- たとえ + i-adjective (〜くて) + も (「安くても」)
+- たとえ + na-adjective stem + でも (「不便でも」)
+- たとえ + noun + でも (「冗談でも」)
+- たとえ + plain form + としても (「失敗したとしても」; more strongly hypothetical)
+
+※ 「たとえ」 is just an intensifying adverb; the concession itself is carried by 「ても／でも／としても」, and the two must go together.  
+※ 「たとえ」 never pairs with 「たら」「なら」「ば」: ❌「たとえ雨なら」→ ⭕「たとえ雨でも」.
+:::
+
+### 含义||Meaning
+:::zh
+"即使……也……""就算……也……"。先假设一种（往往是极端或不利的）情况，表示即使真是那样，后项也不会改变。后项多是说话人的决心、主张或判断，如「〜つもりだ」「〜たい」「〜べきだ」「〜ない」。
+
+和单独的「ても」相比，加上「たとえ」让"假设"和"让步"的语气更强、更郑重。
+:::
+:::en
+"Even if… / Even supposing…" — you posit a situation (often an extreme or unfavourable one) and say that even if it came true, the second clause would not change. The second clause is usually the speaker's resolve, opinion or judgment: 「〜つもりだ」「〜たい」「〜べきだ」「〜ない」.
+
+Compared with a bare 「ても」, adding 「たとえ」 makes the supposition and the concession stronger and more emphatic.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. **たとえ**親に反対され**ても**、自分の夢をあきらめるつもりはない。（即使遭到父母反对，我也不打算放弃自己的梦想。）
+2. **たとえ**冗談**でも**、人の外見を笑うのはよくない。（即使是开玩笑，嘲笑别人的外表也不好。）
+3. **たとえ**給料が安く**ても**、やりがいのある仕事がしたい。（即使工资低，也想做有意义的工作。）
+4. **たとえ**親友の頼み**でも**、できないことはできない。（即使是好朋友的请求，做不到的事就是做不到。）
+5. **たとえ**失敗した**としても**、挑戦したことは無駄にはならない。（就算失败了，挑战过的经历也不会白费。）
+6. **たとえ**小さなミス**でも**、放っておくと大きな問題になる。（即使是小失误，放着不管也会酿成大问题。）
+:::
+:::en
+1. **たとえ**親に反対され**ても**、自分の夢をあきらめるつもりはない。(Even if my parents oppose it, I have no intention of giving up my dream.)
+2. **たとえ**冗談**でも**、人の外見を笑うのはよくない。(Even as a joke, laughing at someone's looks isn't okay.)
+3. **たとえ**給料が安く**ても**、やりがいのある仕事がしたい。(Even if the pay is low, I want a job that's worth doing.)
+4. **たとえ**親友の頼み**でも**、できないことはできない。(Even if my best friend asks, what I can't do, I can't do.)
+5. **たとえ**失敗した**としても**、挑戦したことは無駄にはならない。(Even if you fail, having tried won't have been for nothing.)
+6. **たとえ**小さなミス**でも**、放っておくと大きな問題になる。(Even a small mistake turns into a big problem if you leave it alone.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| たとえ〜ても／でも | 即使……也 | 假设一种（极端的）情况，强调决心、判断不变 |
+| いくら〜ても | 无论怎么……也 | 强调程度、次数（再多、再努力），前项多是可以"加量"的动作或状态 |
+| にしろ／にせよ | 即使……也 | 书面、正式；还可以说「AにしろBにしろ」"无论A还是B" |
+| たところで | 就算……也没用 | 后项是"无用、改变不了"的消极结论 |
+
+> 「たとえ雨でも、試合は行います」= 就算下雨，比赛照常（假设一种情况）  
+> 「いくら練習しても、上手にならない」= 不管练多少都不进步（强调练习的量）  
+> 「たとえ謝っても許さない」= 就算道歉我也不原谅（说话人的决心）  
+> 「今さら謝ったところで、許してもらえない」= 现在道歉也没用（徒劳）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| たとえ〜ても / でも | even if | Posits one (often extreme) case; resolve or judgment stays the same |
+| いくら〜ても | no matter how much | Stresses degree or amount (however much, however hard); the first part is something that can be "turned up" |
+| にしろ / にせよ | even if | Formal, written; also 「AにしろBにしろ」 "whether A or B" |
+| たところで | even if… it's no use | The result is a negative "pointless / changes nothing" conclusion |
+
+> 「たとえ雨でも、試合は行います」= even if it rains, the match goes ahead (one supposed case)  
+> 「いくら練習しても、上手にならない」= however much I practise, I don't improve (stress on amount)  
+> 「たとえ謝っても許さない」= even if you apologize, I won't forgive you (the speaker's resolve)  
+> 「今さら謝ったところで、許してもらえない」= apologizing now won't help (futility)
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

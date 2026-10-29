@@ -579,5 +579,162 @@
       null,
       null
     ]
+  },
+  {
+    "id": "n2-l70-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson70#6",
+      "lesson70#2"
+    ],
+    "difficulty": 1,
+    "stem": "もし宝くじで三億円（　）、何に使いますか。",
+    "options": [
+      "当たろうものなら",
+      "当たったとしたら",
+      "当たったところで",
+      "当たるものなら"
+    ],
+    "answer": 1,
+    "full": "もし宝くじで三億円当たったとしたら、何に使いますか。",
+    "tr": {
+      "zh": "如果彩票中了三亿日元，你会用来干什么？",
+      "en": "If you won three hundred million yen in the lottery, what would you spend it on?"
+    },
+    "why": {
+      "zh": "「もし」提示假想的情况，后句是疑问「何に使いますか」，用「〜としたら」“假如……的话”。",
+      "en": "「もし」 sets up an imagined situation and a question follows (「何に使いますか」), so 「〜としたら」 (supposing…) fits."
+    },
+    "wrong": [
+      {
+        "zh": "「ようものなら」后面必须是严重的负面后果，不能接“用来干什么”的提问。",
+        "en": "「ようものなら」 must lead to a serious bad consequence, not a question about spending."
+      },
+      null,
+      {
+        "zh": "「たところで」后面是“也没用”的消极结论，不能接疑问。",
+        "en": "「たところで」 leads to a \"no use\" conclusion, not a question."
+      },
+      {
+        "zh": "「ものなら」接可能形，表达“如果能……真想……”的愿望，「当たる」不是可能形，后句也不是愿望。",
+        "en": "「ものなら」 takes the potential form and leads to a wish; 「当たる」 isn't potential and a question follows."
+      }
+    ]
+  },
+  {
+    "id": "n2-l70-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson70#6"
+    ],
+    "difficulty": 2,
+    "stem": "あのメールが本物の銀行からのもの（　）、すぐに返事をしなければならない。",
+    "options": [
+      "だとしても",
+      "だからといって",
+      "だとしたら",
+      "であるものなら"
+    ],
+    "answer": 2,
+    "full": "あのメールが本物の銀行からのものだとしたら、すぐに返事をしなければならない。",
+    "tr": {
+      "zh": "如果那封邮件真是银行发来的，就必须马上回复。",
+      "en": "If that email really is from the bank, I have to reply right away."
+    },
+    "why": {
+      "zh": "“是不是真的银行邮件”还不确定，先假设成立，再说出判断「〜なければならない」，名词后用「だとしたら」。",
+      "en": "Whether the email is genuine is uncertain; supposing it is, a judgment follows (「〜なければならない」). After a noun the form is 「だとしたら」."
+    },
+    "wrong": [
+      {
+        "zh": "「だとしても」是“即使是……也”，“即使是真银行也必须马上回复”前后不构成让步。",
+        "en": "「だとしても」 (even if it is) makes no sense: being genuine is the reason to reply, not an obstacle."
+      },
+      {
+        "zh": "「だからといって」后面要接否定（“并不能因此……”），这里后句是肯定的“必须回复”。",
+        "en": "「だからといって」 needs a negative conclusion (\"doesn't mean…\"); here the result is a positive \"must reply\"."
+      },
+      null,
+      {
+        "zh": "「ものなら」接动词可能形表愿望，不接「名詞＋である」，后句也不是愿望。",
+        "en": "「ものなら」 follows a verb's potential form for a wish, not 「名詞＋である」, and no wish follows."
+      }
+    ]
+  },
+  {
+    "id": "n2-l70-018",
+    "type": "bunpou",
+    "refs": [
+      "lesson70#6"
+    ],
+    "difficulty": 2,
+    "stem": "A「飛行機は午後3時に空港に着くそうです。」\nB「3時に着く（　）、ホテルに入れるのは5時ごろですね。」",
+    "options": [
+      "とすると",
+      "ものなら",
+      "ことには",
+      "にしては"
+    ],
+    "answer": 0,
+    "full": "A「飛行機は午後3時に空港に着くそうです。」\nB「3時に着くとすると、ホテルに入れるのは5時ごろですね。」",
+    "tr": {
+      "zh": "A：“听说飞机下午3点到机场。” B：“如果3点到的话，那能进酒店大概是5点左右吧。”",
+      "en": "A: \"I hear the plane gets to the airport at 3 p.m.\" B: \"If it gets in at 3, we'll be able to check in at the hotel around 5, then.\""
+    },
+    "why": {
+      "zh": "B根据A听来的信息先假设“3点到”成立，再往下推论，用「とすると」“如果……的话，那么……”。",
+      "en": "B takes what A heard as given and reasons onward from it — 「とすると」 (if so, then…)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ものなら」表达难以实现的愿望，“3点到”不是愿望，后句也不是「〜たい」。",
+        "en": "「ものなら」 expresses an unlikely wish; arriving at 3 is not a wish and no 「〜たい」 follows."
+      },
+      {
+        "zh": "「ことには」用于「〜ないことには」（不……就不能……），这里没有否定，也不是这个意思。",
+        "en": "「ことには」 is used as 「〜ないことには」 (unless…); there's no negative and that meaning doesn't fit."
+      },
+      {
+        "zh": "「にしては」是“作为……来说，却……”，要有与预期不符的评价，这里只是推算时间。",
+        "en": "「にしては」 (for… it's surprisingly…) needs a contrast with expectations; B is just working out the time."
+      }
+    ]
+  },
+  {
+    "id": "n2-l70-019",
+    "type": "narabe",
+    "refs": [
+      "lesson70#6"
+    ],
+    "difficulty": 1,
+    "stem": "仮に[_] [★] [_] [_]、まず何をしますか。",
+    "options": [
+      "としたら",
+      "会社を",
+      "ことになった",
+      "辞める"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "仮に会社を辞めることになったとしたら、まず何をしますか。",
+    "tr": {
+      "zh": "假如你要辞职了，首先会做什么？",
+      "en": "Supposing you ended up leaving your company, what would you do first?"
+    },
+    "why": {
+      "zh": "「会社を辞める」修饰「こと」，「ことになった」后接「としたら」，与句首的「仮に」呼应。顺序：会社を → 辞める → ことになった → としたら。★ 是「辞める」。",
+      "en": "「会社を辞める」 goes before 「ことになった」, which is followed by 「としたら」 answering 「仮に」. Order: 会社を → 辞める → ことになった → としたら. The ★ is 「辞める」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
   }
 ]
