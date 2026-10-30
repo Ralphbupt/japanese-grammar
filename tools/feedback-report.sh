@@ -14,7 +14,11 @@ WHERE=${2:---remote}
 cd "$(dirname "$0")/../worker"
 q() { npx wrangler d1 execute jpnotes-feedback "$WHERE" --json --command "$1" | node -e '
   let s = ""; process.stdin.on("data", (d) => (s += d)).on("end", () => {
-    const rows = JSON.parse(s)[0].results;
+    let out;
+    try { out = JSON.parse(s); } catch (e) { return console.log("  (wrangler output was not JSON) " + s.slice(0, 300)); }
+    // An API failure comes back as { error: … } instead of [{ results }].
+    if (!Array.isArray(out)) return console.log("  (query failed) " + JSON.stringify(out.error || out).slice(0, 300));
+    const rows = out[0].results;
     if (!rows.length) return console.log("  (none)");
     for (const r of rows) console.log("  " + Object.values(r).map((v) => (v === null ? "" : String(v).replace(/\s+/g, " "))).join(" | "));
   });'; }
