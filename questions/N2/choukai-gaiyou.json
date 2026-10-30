@@ -1,0 +1,75 @@
+[
+ {
+  "id": "n2-ck-301",
+  "type": "gaiyou",
+  "scene": "ラジオで男の人が話しています。",
+  "question": "男の人は何について話していますか。",
+  "lines": [
+   ["M", "最近、朝ごはんを食べない若い人が増えていると言われます。理由を聞くと、「時間がない」という答えが一番多いそうです。でも、詳しく話を聞いてみると、実は時間そのものより、何を食べるか毎朝考えるのが面倒だ、という人が少なくないんです。メニューを考えて、準備をして、片付けまでするとなると、確かに大変ですよね。そこで私がおすすめしたいのは、朝食べるものを、あらかじめ二、三種類に決めてしまうことです。選ぶ手間がなくなるだけで、ずいぶん続けやすくなりますよ。"]
+  ],
+  "spokenOptions": true,
+  "options": ["若い人が朝ごはんを食べない本当の理由", "朝ごはんを短い時間で作る方法", "朝ごはんを食べる習慣を続けるための工夫", "朝ごはんを食べることの大切さ"],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "一个男人在广播里讲话。",
+    "question": "男人在讲什么？",
+    "lines": ["最近据说不吃早饭的年轻人越来越多。问起原因，回答最多的是“没时间”。可是仔细一问，其实比起时间本身，觉得每天早上想吃什么很麻烦的人不在少数。想菜单、准备、再到收拾，确实挺累的。所以我想推荐的是，把早上吃的东西事先定成两三种。光是省去了挑选的工夫，就会容易坚持得多。"],
+    "options": ["年轻人不吃早饭的真正原因", "短时间做早饭的方法", "坚持吃早饭的习惯的窍门", "吃早饭的重要性"]
+   },
+   "en": {
+    "scene": "A man is talking on the radio.",
+    "question": "What is the man talking about?",
+    "lines": ["They say more and more young people skip breakfast. Asked why, the most common answer is \"no time\". But if you ask in more detail, quite a few say it's not really the time — it's that deciding what to eat every morning is a hassle. Planning, preparing and then clearing up is certainly a lot. So what I'd recommend is deciding in advance on two or three things you'll eat in the morning. Just not having to choose makes it much easier to keep it up."],
+    "options": ["The real reason young people skip breakfast", "How to make breakfast quickly", "A way to keep up the habit of eating breakfast", "Why eating breakfast is important"]
+   }
+  },
+  "why": { "zh": "前半说明问题（挑选麻烦），后半「そこで私がおすすめしたいのは」提出办法，全篇是在讲怎样坚持吃早饭。", "en": "The first half sets up the problem (choosing is a hassle); after 「そこで私がおすすめしたいのは」 comes the tip — the talk as a whole is about keeping the habit." },
+  "wrong": [
+   { "zh": "真正的原因只是前半部分，是为后面的建议做铺垫，不是全篇的主题。", "en": "The real reason is only the set-up for the advice, not the topic of the whole talk." },
+   { "zh": "他没有讲怎样快速做饭，讲的是事先决定吃什么。", "en": "He doesn't talk about cooking fast — he talks about deciding in advance what to eat." },
+   null,
+   { "zh": "他没有讲吃早饭对身体有什么好处。", "en": "He never says why breakfast is good for you." }],
+  "traps": ["partial-content", "detail-as-topic"]
+ },
+ {
+  "id": "n2-ck-302",
+  "type": "gaiyou",
+  "scene": "女の人と男の人が映画について話しています。",
+  "question": "男の人は映画についてどう思っていますか。",
+  "lines": [
+   ["F", "ねえ、この前話してた映画、見に行ったんでしょ？　どうだった？"],
+   ["M", "うん、行ってきた。いやあ、映像はすごかったよ。特に海のシーンなんて、本当にその場にいるみたいでさ。"],
+   ["F", "へえ、いいじゃない。"],
+   ["M", "ただね、話のほうがね……。原作の小説、読んだことある？"],
+   ["F", "ううん。"],
+   ["M", "原作だと、主人公がどうして町を出たのか、じっくり書いてあるんだけど、映画だとそこがほとんどカットされててさ。だから最後の場面も、なんか気持ちがついていかないんだよね。"],
+   ["F", "そうなんだ。"],
+   ["M", "まあ、映画館の大きな画面で見る価値はあると思うけど、原作が好きな人には物足りないかな。"]
+  ],
+  "spokenOptions": true,
+  "options": ["映像がすばらしいので、原作を読んでから見るといい", "映像はいいが、話の大事な部分が省かれている", "話が短くなって、原作よりわかりやすくなった", "映像はいいが、大きい画面で見る必要はない"],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在谈论电影。",
+    "question": "男人觉得这部电影怎么样？",
+    "lines": ["诶，之前说的那部电影，你去看了吧？怎么样？", "嗯，去看了。哎呀，画面真厉害。特别是海的那场戏，就跟真的身临其境一样。", "哦，不错嘛。", "不过呢，故事那边……原作小说你看过吗？", "没有。", "原作里主人公为什么离开小镇写得很细，电影里那部分几乎都剪掉了。所以最后那场戏，感觉情绪跟不上。", "这样啊。", "嗯，在电影院大银幕上看还是值得的，不过对喜欢原作的人来说可能有点不过瘾。"],
+    "options": ["画面很棒，最好先读原作再去看", "画面好，但故事的重要部分被省略了", "故事变短了，比原作好懂", "画面好，但没必要在大银幕上看"]
+   },
+   "en": {
+    "scene": "A woman and a man are talking about a film.",
+    "question": "What does the man think of the film?",
+    "lines": ["Hey, you went to see that film we talked about, right? How was it?", "Yeah, I went. Wow, the visuals were amazing. The sea scenes especially — it was like actually being there.", "Oh, sounds good.", "But the story, though… Have you read the original novel?", "No.", "The novel goes into detail about why the main character left town, but the film cuts nearly all of that. So by the last scene I just couldn't feel it.", "I see.", "Well, I think it's worth seeing on a big cinema screen, but people who love the book might find it lacking."],
+    "options": ["The visuals are superb, so read the novel first, then see it", "The visuals are good, but important parts of the story are left out", "The story is shorter, which makes it easier to follow than the novel", "The visuals are good, but there's no need to see it on a big screen"]
+   }
+  },
+  "why": { "zh": "画面「すごかった」；故事方面主人公离开小镇的原因「ほとんどカットされて」，所以结尾「気持ちがついていかない」。选项把「カット」换成了「省かれている」。", "en": "The visuals were 「すごかった」; why the hero left town was 「ほとんどカットされて」, so the ending falls flat. The option paraphrases 「カット」 as 「省かれている」." },
+  "wrong": [
+   { "zh": "他问对方读没读过原作，只是为了说明删减，没有建议先读原作。", "en": "He asks whether she's read the novel only to explain the cuts; he never advises reading it first." },
+   null,
+   { "zh": "故事删减后他觉得「気持ちがついていかない」，是缺点，不是更好懂。", "en": "The cuts leave him unable to feel the ending — a flaw, not easier to follow." },
+   { "zh": "他说「映画館の大きな画面で見る価値はある」，正好相反。", "en": "He says it's worth seeing on a big cinema screen — the opposite." }],
+  "traps": ["attitude-combo", "twisted"]
+ }
+]

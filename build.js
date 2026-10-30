@@ -120,7 +120,7 @@ const QUIZ_CSS = fs.readFileSync(path.join(__dirname, "site", "quiz.css"), "utf-
 const FEEDBACK_JS_SRC = fs.readFileSync(path.join(__dirname, "site", "feedback.js"), "utf-8");
 const FEEDBACK_JS_HASH = require("crypto").createHash("md5").update(FEEDBACK_JS_SRC).digest("hex").slice(0, 8);
 // Practice / mock test / flashcard pages; QUIZ_PUBLIC and QUIZ_LINKS are set in build-quiz.js.
-const { buildQuiz, loadLevel: loadQuizLevel, LEVELS: QUIZ_LEVELS, TYPES: QUIZ_TYPES, MOCK: QUIZ_MOCK, QUIZ_PUBLIC, QUIZ_LINKS, AUDIO_REQUESTS: QUIZ_AUDIO_REQUESTS, ABOVE_LEVEL, aboveLevel } = require("./build-quiz");
+const { buildQuiz, loadLevel: loadQuizLevel, LEVELS: QUIZ_LEVELS, TYPES: QUIZ_TYPES, MOCK: QUIZ_MOCK, QUIZ_PUBLIC, QUIZ_LINKS, AUDIO_REQUESTS: QUIZ_AUDIO_REQUESTS, ABOVE_LEVEL, aboveLevel, CK_IMG_DIR: QUIZ_CK_IMG_DIR } = require("./build-quiz");
 const SETTINGS_JS_HASH = require("crypto").createHash("md5").update(fs.readFileSync(path.join(__dirname, "site", "settings-modal.js"))).digest("hex").slice(0, 8);
 const SETTINGS_SCRIPT = `<script src="${SITE_PATH}settings-modal.js?v=${SETTINGS_JS_HASH}" defer></script>`;
 // Content-Security-Policy connect-src allowlist. This is the technical
@@ -3607,6 +3607,20 @@ ${AI_SCRIPT}
     fs.writeFileSync(reqPath, JSON.stringify(reqs.concat(QUIZ_AUDIO_REQUESTS)), "utf-8");
     console.log(`  Requested audio for ${QUIZ_AUDIO_REQUESTS.length} reading passages and question sentences.`);
   }
+  // Levels whose practice has listening (choukai) questions.
+  const ckLevels = Object.keys(quizBundles).filter((l) => Object.values(quizBundles[l].practice.types).some((t) => t.g === "choukai"));
+  // Listening pictures (tools/choukai-images.py): the ones the questions use. Their
+  // mp3s are in audio/choukai/, which CI copies with the rest of audio/.
+  {
+    const files = new Set();
+    for (const { practice, mocks } of Object.values(quizBundles)) for (const q of [...practice.questions, ...mocks.flatMap((m) => m.test.questions)]) {
+      if (q.pic) for (const f of q.pic.opts || [q.pic.scene]) files.add(f);
+    }
+    const out = path.join(__dirname, "dist", "images", "choukai");
+    fs.mkdirSync(out, { recursive: true });
+    for (const f of files) fs.copyFileSync(path.join(QUIZ_CK_IMG_DIR, f), path.join(out, f));
+    if (files.size) console.log(`  Copied ${files.size} listening pictures.`);
+  }
   const quizPageIds = [];
   fs.mkdirSync(path.join(__dirname, "dist", "quiz"), { recursive: true });
   fs.writeFileSync(path.join(__dirname, "dist", "quiz.js"), QUIZ_JS_SRC, "utf-8");
@@ -3697,19 +3711,20 @@ ${AI_SCRIPT}
     const tName = (k) => `${en ? QUIZ_TYPES[k].en : QUIZ_TYPES[k].zh} · ${QUIZ_TYPES[k].ja}`;
     const lessons = lessonPages.filter((l) => l.level === level && /^lesson\d+/.test(l.id));
     const lessonList = `<ul class="lesson-list">${lessons.map((l) => `<li><a href="${SITE_PATH}${l.id}/">${l.id.replace("lesson", "Lesson ")} — ${JA_TITLES[l.id] || l.id}</a></li>`).join("")}</ul>`;
-    const minutes = cfg.sections.reduce((a, x) => a + x.minutes, 0);
+    const minutes = cfg.sections.filter((x) => !x.listening).reduce((a, x) => a + x.minutes, 0);
+    const ck = ckLevels.includes(level), ckSec = cfg.sections.find((x) => x.listening);
     const scoreRows = cfg.scoring.map((x) => `<tr><td>${en ? x.en : x.zh}</td><td>0–${x.max}</td><td>${x.min}</td></tr>`).join("")
       + `<tr><td>${L("听力", "Listening")}</td><td>0–${cfg.listening.max}</td><td>${cfg.listening.min}</td></tr>`;
     const split = cfg.scoring.length > 1;
     const format = `<h2>${L(`JLPT ${level} 考什么`, `What the JLPT ${level} tests`)}</h2>
-<p>${L(`${level} 考言语知识（文字・词汇・语法）、阅读和听力。${split ? "计分分三科：言语知识、阅读、听力" : "计分分两科：言语知识和阅读合为一科，听力一科"}。言语知识和阅读${cfg.sections.length > 1 ? `分两场，共 ${minutes} 分钟` : `在同一场考，${minutes} 分钟`}，之后是听力。总分 180，合格要同时满足总分 ≥ ${cfg.pass}，以及每科不低于最低分：`,
-  `The ${level} tests language knowledge (vocabulary and grammar), reading and listening. ${split ? "They are scored as three parts" : "They are scored as two parts: language knowledge and reading together, and listening"}. Language knowledge and reading ${cfg.sections.length > 1 ? `are two sittings, ${minutes} minutes in all` : `are one ${minutes}-minute sitting`}, then comes listening. Out of 180, you pass with a total of at least ${cfg.pass} and every part at or above its minimum:`)}</p>
+<p>${L(`${level} 考言语知识（文字・词汇・语法）、阅读和听力。${split ? "计分分三科：言语知识、阅读、听力" : "计分分两科：言语知识和阅读合为一科，听力一科"}。言语知识和阅读${cfg.sections.length > 2 ? `分两场，共 ${minutes} 分钟` : `在同一场考，${minutes} 分钟`}，之后是听力。总分 180，合格要同时满足总分 ≥ ${cfg.pass}，以及每科不低于最低分：`,
+  `The ${level} tests language knowledge (vocabulary and grammar), reading and listening. ${split ? "They are scored as three parts" : "They are scored as two parts: language knowledge and reading together, and listening"}. Language knowledge and reading ${cfg.sections.length > 2 ? `are two sittings, ${minutes} minutes in all` : `are one ${minutes}-minute sitting`}, then comes listening. Out of 180, you pass with a total of at least ${cfg.pass} and every part at or above its minimum:`)}</p>
 <table><tr><th>${L("科目", "Part")}</th><th>${L("分数", "Score")}</th><th>${L("最低分", "Minimum")}</th></tr>${scoreRows}</table>`;
     if (kind === "practice") {
       const types = Object.entries(bundle.practice.types).map(([k]) => ({ k, n: bundle.practice.questions.filter((q) => q.type === k).length }));
       return `<section class="quiz-about">${format}
 <h2>${L(`这里有哪些题（${bundle.practice.questions.length} 道）`, `What's here (${bundle.practice.questions.length} questions)`)}</h2>
-<p>${L("除听力外的全部题型，题目原创，格式和真题一致：", "Every item type on the test except listening, written from scratch in the real format:")}</p>
+<p>${ck ? L("考试的全部题型（含听力），题目原创，格式和真题一致：", "Every item type on the test, listening included, written from scratch in the real format:") : L("除听力外的全部题型，题目原创，格式和真题一致：", "Every item type on the test except listening, written from scratch in the real format:")}</p>
 <ul>${types.map((t) => `<li>${tName(t.k)} — ${t.n}</li>`).join("")}</ul>
 <h2>${L("怎么用", "How it works")}</h2>
 <ul>
@@ -3723,7 +3738,7 @@ ${AI_SCRIPT}
 <dl>
 <dt>${L("免费吗？", "Is it free?")}</dt><dd>${L("完全免费，没有广告，也不用注册。", "Yes — no ads and no sign-up.")}</dd>
 <dt>${L("和真题有多像？", "How close is it to the real JLPT?")}</dt><dd>${L(`题型、题干格式和难度按 ${level} 真题设计，${level === "N5" || level === "N4" ? "语法和阅读带振假名" : "和真考一样不带振假名"}。题目全部原创，不是真题。`, `Item types, layout and difficulty follow the real ${level}; ${level === "N5" || level === "N4" ? "grammar and reading carry furigana, as on the test" : "there's no furigana, as on the test"}. All questions are original, not past papers.`)}</dd>
-<dt>${L("有听力吗？", "Is there listening?")}</dt><dd>${L("还没有，听力题在规划中。", "Not yet; listening questions are planned.")}</dd>
+<dt>${L("有听力吗？", "Is there listening?")}</dt><dd>${ck ? L("有。点播放听一段录音（可以重听），答完看带振假名和翻译的原文，每句都能单独重播。", "Yes. Play the recording (as often as you like), answer, then read the transcript with furigana and a translation, and replay any line on its own.") : L("还没有，听力题在规划中。", "Not yet; listening questions are planned.")}</dd>
 <dt>${L("想计时考一次？", "Want a timed run?")}</dt><dd>${bundle.mocks.length ? L(`做 <a href="${SITE_PATH}${lv}-mock-test/">${level} 模拟题</a>：按真考的结构和时间，交卷后估分。`, `Take the <a href="${SITE_PATH}${lv}-mock-test/">${level} mock test</a>: the real structure and timing, with an estimated score.`) : L("模拟题准备中。", "A mock test is on the way.")}</dd>
 </dl>
 <h2>${L(`${level} 语法课文`, `${level} grammar lessons`)}</h2>
@@ -3744,10 +3759,14 @@ ${lessonList}${(() => {
       return `<section class="quiz-about">${format}
 <h2>${L("模拟题的结构", "How the mock test is laid out")}</h2>
 <table><tr><th>${L("题型", "Item type")}</th><th>${L("题数", "Questions")}</th></tr>${Object.keys(n).map((k) => `<tr><td>${tName(k)}</td><td>${n[k]}</td></tr>`).join("")}</table>
-<p>${L(`一共 ${t.questions.length} 道，限时 ${minutes} 分钟，题目顺序和真考一致。听力不在其中。`, `${t.questions.length} questions in ${minutes} minutes, in the real test's order. Listening isn't included.`)}</p>
+${(() => {
+      const nl = t.sections.filter((x) => x.listening).reduce((a, x) => a + x.problems.reduce((b, p) => b + p.ids.length, 0), 0);
+      return nl ? `<p>${L(`言语知识和阅读 ${t.questions.length - nl} 道，限时 ${minutes} 分钟；之后是听力 ${nl} 道（${ckSec.minutes} 分钟），像真考一样每段只播一次，题与题之间留作答时间。题目顺序和真考一致。`, `${t.questions.length - nl} language knowledge and reading questions in ${minutes} minutes, then ${nl} listening questions (${ckSec.minutes} minutes), each recording played once with time to answer after it, as on the day. In the real test's order.`)}</p>`
+        : `<p>${L(`一共 ${t.questions.length} 道，限时 ${minutes} 分钟，题目顺序和真考一致。听力不在其中。`, `${t.questions.length} questions in ${minutes} minutes, in the real test's order. Listening isn't included.`)}</p>`;
+    })()}
 <h2>${L("交卷后", "After you submit")}</h2>
 <ul>
-<li>${L("每科的估算分数，和最低分、合格线对照；还会算出听力至少要拿几分才能合格。", "An estimated score for each part against its minimum and the pass mark, and the listening score you'd still need to pass.")}</li>
+<li>${t.sections.some((x) => x.listening) ? L("每科（含听力）的估算分数，和最低分、合格线对照，估计能不能合格。", "An estimated score for each part, listening included, against its minimum and the pass mark — and whether that would pass.") : L("每科的估算分数，和最低分、合格线对照；还会算出听力至少要拿几分才能合格。", "An estimated score for each part against its minimum and the pass mark, and the listening score you'd still need to pass.")}</li>
 <li>${L("按题型的正确率，以及时间花在哪里。", "Accuracy by item type, and where your time went.")}</li>
 <li>${L("每道题的解析，可以只看错题。", "An explanation for every question, or just the ones you missed.")}</li>
 </ul>
@@ -3789,17 +3808,17 @@ ${lessonList}</section>`;
     const count = practice.questions.length;
     const meta = {
       en: {
-        title: `JLPT ${level} Practice Questions — Vocabulary, Grammar & Reading, with Explanations`,
-        desc: `Free JLPT ${level} practice: ${count} exam-style questions — kanji reading, vocabulary, grammar, sentence order and reading — with instant answers, an explanation for every wrong option, and a review list that brings back what you missed.`,
+        title: `JLPT ${level} Practice Questions — ${ckLevels.includes(level) ? "Listening, " : ""}Vocabulary, Grammar & Reading, with Explanations`,
+        desc: `Free JLPT ${level} practice: ${count} exam-style questions — ${ckLevels.includes(level) ? "listening with audio, " : ""}kanji reading, vocabulary, grammar, sentence order and reading — with instant answers, an explanation for every wrong option, and a review list that brings back what you missed.`,
         h1: `JLPT ${level} Practice Questions`, crumb: `${level} Practice`,
-        lead: `Exam-style ${level} questions in every format of the test except listening. Answer, see why each option is right or wrong, and the ones you miss come back a few days later.`,
+        lead: `Exam-style ${level} questions in every format of the test${ckLevels.includes(level) ? ", listening included" : " except listening"}. Answer, see why each option is right or wrong, and the ones you miss come back a few days later.`,
         nav: navLinks(practiceId, true),
       },
       zh: {
-        title: `JLPT ${level} 练习题 - 文字词汇・语法・阅读在线做题，附详细解析`,
-        desc: `免费 JLPT ${level} 练习：${count} 道仿真题，覆盖汉字读音、词汇、语法、句子排序和阅读，即时判分，每个错误选项都有解析，错题本按间隔重复自动复习。`,
+        title: `JLPT ${level} 练习题 - ${ckLevels.includes(level) ? "听力・" : ""}文字词汇・语法・阅读在线做题，附详细解析`,
+        desc: `免费 JLPT ${level} 练习：${count} 道仿真题，覆盖${ckLevels.includes(level) ? "听力（带音频）、" : ""}汉字读音、词汇、语法、句子排序和阅读，即时判分，每个错误选项都有解析，错题本按间隔重复自动复习。`,
         h1: `JLPT ${level} 练习题`, crumb: `${level} 练习`,
-        lead: `除听力外覆盖 ${level} 考试的全部题型。答完马上看每个选项为什么对、为什么错，答错的题过几天会再考你一次。`,
+        lead: `${ckLevels.includes(level) ? "覆盖" : "除听力外覆盖 "}${level} 考试的全部题型${ckLevels.includes(level) ? "（含听力）" : ""}。答完马上看每个选项为什么对、为什么错，答错的题过几天会再考你一次。`,
         nav: navLinks(practiceId, false),
       },
     };
@@ -3863,7 +3882,7 @@ ${lessonList}</section>`;
     const b = quizBundles[level], lv = level.toLowerCase(), L = (zh, e) => (en ? e : zh);
     if (!b) return `<tr class="hub-soon"><th scope="row">${level}</th><td colspan="3">${L("准备中", "Coming soon")}</td></tr>`;
     const n = b.practice.questions.length, types = Object.keys(b.practice.types).length;
-    const minutes = QUIZ_MOCK[level] ? QUIZ_MOCK[level].sections.reduce((a, x) => a + x.minutes, 0) : 0;
+    const minutes = b.mocks.length ? b.mocks[0].test.sections.reduce((a, x) => a + x.minutes, 0) : 0;
     return `<tr><th scope="row">${level}</th>
       <td><a class="hub-go" href="${SITE_PATH}${lv}-practice/"><b>${L("练习题", "Practice")}</b><span>${L(`${n} 题 · ${types} 种题型`, `${n} questions · ${types} types`)}<span class="hub-done" data-lv="${lv}" data-t="${L(" · 已做 N", " · N done")}" hidden></span></span></a></td>
       <td>${b.mocks.length ? `<a class="hub-go" href="${SITE_PATH}${lv}-mock-test/"><b>${L("模拟题", "Mock test")}</b><span>${L(`${b.mocks.length} 套 · ${minutes} 分钟`, `${b.mocks.length} test${b.mocks.length > 1 ? "s" : ""} · ${minutes} min`)}</span></a>` : ""}</td>
@@ -3872,7 +3891,7 @@ ${lessonList}</section>`;
   const hubIntro = (en) => {
     const L = (zh, e) => (en ? e : zh);
     return `<ul class="hub-modes">
-      <li><b>✍ ${L("练习题", "Practice")}</b>${L("除听力外的全部题型。今日练习、按题型练、错题本；每题答完马上看解析。", "Every item type but listening. Daily sets, by type, a review list; explanations after each answer.")}</li>
+      <li><b>✍ ${L("练习题", "Practice")}</b>${ckLevels.length ? L(`全部题型；听力目前有 ${ckLevels.join("、")}。今日练习、按题型练、错题本；每题答完马上看解析。`, `Every item type; listening so far at ${ckLevels.join(", ")}. Daily sets, by type, a review list; explanations after each answer.`) : L("除听力外的全部题型。今日练习、按题型练、错题本；每题答完马上看解析。", "Every item type but listening. Daily sets, by type, a review list; explanations after each answer.")}</li>
       <li><b>⏱ ${L("模拟题", "Mock test")}</b>${L("按真考的结构和时间计时，交卷后估分、对照合格线。", "The real test's structure and timing; an estimated score against the pass marks.")}</li>
       <li><b>🗂 ${L("语法卡片", "Flashcards")}</b>${L("每个语法点一张卡，间隔复习，认卡和填空卡两种。", "A card per grammar point with spaced repetition, recognition or fill-in.")}</li>
     </ul>`;
@@ -3898,8 +3917,8 @@ ${lessonList}</section>`;
     const m = { ...hubMeta[lang.code], body: `${hubIntro(en)}<div class="table-scroll"><table class="hub-table"><tbody>${["N5", "N4", "N3", "N2", "N1"].map((l) => hubRow(l, en)).join("")}</tbody></table></div>
       <script>${HUB_PROGRESS_JS}</script>
       <p class="hub-listen">${en
-        ? `🎧 <b>Listening questions are planned, not built yet.</b> If you want them, <a href="#feedback" class="fb-open">say so</a> — demand decides what comes first. Meanwhile the <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News podcast</a> has slow news with transcripts.`
-        : `🎧 <b>听力题在规划中，还没做。</b>想要的话<a href="#feedback" class="fb-open">告诉我们</a>，想要的人多就先做。现在可以先用 <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News 播客</a>练听力（慢速新闻 + 原文）。`}</p>` };
+        ? ckLevels.length ? `🎧 <b>Listening questions: ${ckLevels.join(", ")} so far</b>, other levels on the way. Meanwhile the <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News podcast</a> has slow news with transcripts.` : `🎧 <b>Listening questions are planned, not built yet.</b> If you want them, <a href="#feedback" class="fb-open">say so</a> — demand decides what comes first. Meanwhile the <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News podcast</a> has slow news with transcripts.`
+        : ckLevels.length ? `🎧 <b>听力题目前有 ${ckLevels.join("、")}</b>，其他级别在做。现在也可以用 <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News 播客</a>练听力（慢速新闻 + 原文）。` : `🎧 <b>听力题在规划中，还没做。</b>想要的话<a href="#feedback" class="fb-open">告诉我们</a>，想要的人多就先做。现在可以先用 <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News 播客</a>练听力（慢速新闻 + 原文）。`}</p>` };
     writeLangPage("practice", lang, localizePage(renderQuiz(lang, m, langVariant("practice", lang), "", null), lang, localizedPageIds));
   }
   quizPageIds.push("practice");
@@ -4058,7 +4077,7 @@ ${rssItems.join("\n")}
 Key facts:
 - Free, no ads, no sign-up; progress (review checklists, practice history) stays in the browser.
 - Lessons: N5 (lessons 0–17), N4 (18–34), N3 (35–58), N2 (59–75), N1 (76–92). Every example sentence has furigana and a 🔊 recording.
-- Practice: ${Object.entries(quizBundles).map(([l, b]) => `${l} ${b.practice.questions.length}`).join(", ")} exam-style questions covering every non-listening JLPT item type, each option explained; a review list brings back missed questions. One timed mock test per level with an estimated score against the pass marks. Listening questions are not built yet.
+- Practice: ${Object.entries(quizBundles).map(([l, b]) => `${l} ${b.practice.questions.length}`).join(", ")} exam-style questions covering every non-listening JLPT item type, each option explained; a review list brings back missed questions. One timed mock test per level with an estimated score against the pass marks. Listening questions (recording, then a transcript with translation): ${ckLevels.length ? ckLevels.join(", ") + " so far" : "not built yet"}.
 - Ask AI: a side panel on every lesson and after every practice question answers questions about that page; free without setup, or with the reader's own API key (kept in the browser).
 - Anki decks (.apkg with audio, and TSV) per level at ${SITE}anki/.
 
@@ -4921,6 +4940,7 @@ body.sidebar-collapsed #content.home {
     --text-muted: #a8a8b8;
     --text-subtle: #888;
     --word-bg: #25253a;
+    --surface-2: #25253a;
     --word-border: #3a3a55;
     --code-bg: #1f1f2e;
     --ruby-color: #a8a8b8;
@@ -4983,6 +5003,7 @@ html.theme-dark {
     --text-muted: #a8a8b8;
     --text-subtle: #888;
     --word-bg: #25253a;
+    --surface-2: #25253a;
     --word-border: #3a3a55;
     --code-bg: #1f1f2e;
     --ruby-color: #a8a8b8;

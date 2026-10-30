@@ -1,0 +1,1163 @@
+[
+ {
+  "id": "n5-ck-501",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "すみません、ここに すわっても いいですか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "ええ、どうぞ どうぞ。",
+   "はい、すわりました。",
+   "いいえ、すわって ください。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "不好意思，我可以坐这里吗？"
+    ],
+    "options": [
+     "请坐请坐。",
+     "是的，坐下了。",
+     "不，请坐。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Excuse me, may I sit here?"
+    ],
+    "options": [
+     "Sure, go ahead.",
+     "Yes, I sat down.",
+     "No, please sit."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜ても いいですか」是请求许可，同意时说「どうぞ」，「どうぞ どうぞ」更热情。",
+   "en": "「〜ても いいですか」 asks for permission; 「どうぞ（どうぞ）」 grants it."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「すわりました」是过去式，说的是自己已经坐了，答非所问。",
+    "en": "「すわりました」 is past tense and about yourself — it doesn't answer the request."
+   },
+   {
+    "zh": "先说「いいえ」又说「请坐」，前后矛盾。",
+    "en": "「いいえ」 (no) followed by \"please sit\" contradicts itself."
+   }
+  ],
+  "traps": [
+   "tense",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n5-ck-502",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "田中さん、きのう どこかへ 行きましたか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "はい、あしたは デパートへ 行きます。",
+   "いいえ、どこにも 行きませんでした。",
+   "こんどは デパートへ 行きたいです。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "田中，你昨天去哪儿了吗？"
+    ],
+    "options": [
+     "是的，明天去百货商店。",
+     "没有，哪儿都没去。",
+     "下次想去百货商店。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Tanaka-san, did you go anywhere yesterday?"
+    ],
+    "options": [
+     "Yes, I'm going to the department store tomorrow.",
+     "No, I didn't go anywhere.",
+     "Next time I want to go to the department store."
+    ]
+   }
+  },
+  "why": {
+   "zh": "问的是「きのう」（过去）有没有去哪儿，「どこにも 行きませんでした」用过去否定回答。",
+   "en": "The question is about yesterday; 「どこにも 行きませんでした」 answers it in the past negative."
+  },
+  "wrong": [
+   {
+    "zh": "「あした」是将来，时间对不上。",
+    "en": "「あした」 is about tomorrow — wrong time."
+   },
+   null,
+   {
+    "zh": "「行きたいです」是愿望，没有回答昨天的事。",
+    "en": "「行きたいです」 is a wish; it doesn't say what happened yesterday."
+   }
+  ],
+  "traps": [
+   "tense"
+  ]
+ },
+ {
+  "id": "n5-ck-503",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "その かばん、いいですね。どこで 買いましたか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "駅の 前の 店です。",
+   "きのう 買いました。",
+   "はい、買いました。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "那个包真好看。在哪儿买的？"
+    ],
+    "options": [
+     "车站前面的店。",
+     "昨天买的。",
+     "是的，买了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "That bag is nice. Where did you buy it?"
+    ],
+    "options": [
+     "At the shop in front of the station.",
+     "I bought it yesterday.",
+     "Yes, I bought it."
+    ]
+   }
+  },
+  "why": {
+   "zh": "问的是「どこで」（在哪儿），回答地点「駅の 前の 店」。",
+   "en": "「どこで」 asks where; the answer names a place."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「きのう」回答的是什么时候，不是在哪儿。",
+    "en": "「きのう」 answers when, not where."
+   },
+   {
+    "zh": "疑问词问句不能用「はい」回答。",
+    "en": "A question-word question can't be answered with 「はい」."
+   }
+  ],
+  "traps": [
+   "question-word"
+  ]
+ },
+ {
+  "id": "n5-ck-504",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "いっしょに 昼ごはんを 食べませんか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "いいえ、食べませんでした。",
+   "はい、昼ごはんです。",
+   "ええ、食べましょう。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "要不要一起吃午饭？"
+    ],
+    "options": [
+     "不，没吃。",
+     "是的，是午饭。",
+     "好啊，一起吃吧。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Shall we have lunch together?"
+    ],
+    "options": [
+     "No, I didn't eat.",
+     "Yes, it's lunch.",
+     "Sure, let's eat."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜ませんか」是邀请，接受时说「〜ましょう」。",
+   "en": "「〜ませんか」 is an invitation; 「〜ましょう」 accepts it."
+  },
+  "wrong": [
+   {
+    "zh": "把邀请听成了“你没吃吗”，用过去否定回答，意思不对。",
+    "en": "Hears the invitation as \"didn't you eat?\" and answers in the past — wrong meaning."
+   },
+   {
+    "zh": "只是重复了「昼ごはん」这个词，没有回应邀请。",
+    "en": "Just repeats 「昼ごはん」 without answering the invitation."
+   },
+   null
+  ],
+  "traps": [
+   "intent",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n5-ck-505",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "あした、何時に 来ますか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "九時ごろ 来ます。",
+   "バスで 来ます。",
+   "九時間 かかります。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "明天几点来？"
+    ],
+    "options": [
+     "九点左右来。",
+     "坐公交车来。",
+     "要花九个小时。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "What time are you coming tomorrow?"
+    ],
+    "options": [
+     "Around nine.",
+     "I'll come by bus.",
+     "It takes nine hours."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「何時」问的是几点，回答「九時ごろ」。",
+   "en": "「何時」 asks what time; 「九時ごろ」 gives one."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「バスで」回答的是怎么来，不是几点。",
+    "en": "「バスで」 answers how, not what time."
+   },
+   {
+    "zh": "「九時間」是九个小时（时长），不是九点。",
+    "en": "「九時間」 is nine hours (a duration), not nine o'clock."
+   }
+  ],
+  "traps": [
+   "question-word",
+   "number"
+  ]
+ },
+ {
+  "id": "n5-ck-506",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "この りんご、一つ いくらですか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "三つです。",
+   "百円です。",
+   "一つ ください。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这个苹果一个多少钱？"
+    ],
+    "options": [
+     "三个。",
+     "一百日元。",
+     "请给我一个。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "How much is one of these apples?"
+    ],
+    "options": [
+     "Three.",
+     "100 yen.",
+     "One, please."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「いくら」问价格，回答「百円です」。",
+   "en": "「いくら」 asks the price; 「百円です」 gives it."
+  },
+  "wrong": [
+   {
+    "zh": "听到「一つ」就回答个数，但问的是价格。",
+    "en": "Picks up on 「一つ」 and answers with a number of items, but the question is the price."
+   },
+   null,
+   {
+    "zh": "「一つ ください」是买东西的人说的话，不是回答价格的店员说的。",
+    "en": "「一つ ください」 is what the customer says, not the shop assistant answering the price."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n5-ck-507",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "おいしい ケーキが ありますよ。一つ どうですか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "ええ、とても おいしいです。",
+   "いいえ、ありません。",
+   "じゃあ、いただきます。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "有好吃的蛋糕哦。来一个怎么样？"
+    ],
+    "options": [
+     "嗯，非常好吃。",
+     "不，没有。",
+     "那我就不客气了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "There's some nice cake. Would you like a piece?"
+    ],
+    "options": [
+     "Yes, it's very good.",
+     "No, there isn't.",
+     "Then I'll have some, thanks."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「一つ どうですか」是请对方吃，接受时说「じゃあ、いただきます」。",
+   "en": "「一つ どうですか」 offers some cake; 「いただきます」 accepts it."
+  },
+  "wrong": [
+   {
+    "zh": "把「どうですか」听成问味道，可他还没吃。",
+    "en": "Takes 「どうですか」 as \"how does it taste?\", but he hasn't eaten any yet."
+   },
+   {
+    "zh": "重复了「あります」，但对方是在请他吃，不是问有没有。",
+    "en": "Echoes 「あります」, but she's offering cake, not asking whether there is any."
+   },
+   null
+  ],
+  "traps": [
+   "intent",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n5-ck-508",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "あ、雨ですね。かさ、ありますか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "はい、雨が ふって います。",
+   "いいえ、わすれました。",
+   "はい、雨が すきです。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "啊，下雨了。你带伞了吗？"
+    ],
+    "options": [
+     "是的，在下雨。",
+     "没有，忘带了。",
+     "是的，我喜欢下雨。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Oh, it's raining. Do you have an umbrella?"
+    ],
+    "options": [
+     "Yes, it's raining.",
+     "No, I forgot it.",
+     "Yes, I like rain."
+    ]
+   }
+  },
+  "why": {
+   "zh": "问的是有没有伞，「いいえ、わすれました」（没有，忘带了）回答了这一点。",
+   "en": "The question is whether she has an umbrella; 「いいえ、わすれました」 answers it."
+  },
+  "wrong": [
+   {
+    "zh": "重复了「雨」，但问的是伞，不是天气。",
+    "en": "Echoes 「雨」, but the question is about the umbrella, not the weather."
+   },
+   null,
+   {
+    "zh": "也是抓住「雨」这个词，和伞无关。",
+    "en": "Also latches onto 「雨」 — nothing to do with the umbrella."
+   }
+  ],
+  "traps": [
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n5-ck-509",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "この 本、もう 読みましたか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "はい、これから 読みます。",
+   "いいえ、もう 読みません。",
+   "いいえ、まだ 読んで いません。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这本书你已经看了吗？"
+    ],
+    "options": [
+     "是的，现在开始看。",
+     "不，再也不看了。",
+     "不，还没看。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Have you read this book yet?"
+    ],
+    "options": [
+     "Yes, I'm going to read it now.",
+     "No, I won't read it any more.",
+     "No, I haven't read it yet."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「もう〜ましたか」问“已经…了吗”，没做时用「まだ〜ていません」回答。",
+   "en": "「もう〜ましたか」 asks \"have you … yet?\"; \"not yet\" is 「まだ〜ていません」."
+  },
+  "wrong": [
+   {
+    "zh": "「はい」表示已经看了，后面又说「これから」（接下来才看），前后矛盾。",
+    "en": "「はい」 says yes, then 「これから」 says he hasn't started — contradictory."
+   },
+   {
+    "zh": "「もう＋否定」是“再也不…”，不是“还没…”。",
+    "en": "「もう」 + negative means \"not any more\", not \"not yet\"."
+   },
+   null
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n5-ck-510",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "山田さん、日曜日、ひまですか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "あしたは 日曜日ですね。",
+   "日曜日は ちょっと……。",
+   "はい、日曜日は ひまでした。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "山田，星期天有空吗？"
+    ],
+    "options": [
+     "明天是星期天吧。",
+     "星期天有点……",
+     "是的，星期天那天有空。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Yamada-san, are you free on Sunday?"
+    ],
+    "options": [
+     "Tomorrow's Sunday, isn't it.",
+     "Sunday's a bit…",
+     "Yes, I was free on Sunday."
+    ]
+   }
+  },
+  "why": {
+   "zh": "问星期天有没有空，「日曜日は ちょっと……」是委婉地说没空。",
+   "en": "He asks if she's free on Sunday; 「日曜日は ちょっと……」 is a polite \"no\"."
+  },
+  "wrong": [
+   {
+    "zh": "只重复了「日曜日」，没有回答有没有空。",
+    "en": "Just repeats 「日曜日」 without saying whether she's free."
+   },
+   null,
+   {
+    "zh": "「ひまでした」是过去式，问的是这个星期天（将来）。",
+    "en": "「ひまでした」 is past tense; the question is about the coming Sunday."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "tense"
+  ]
+ },
+ {
+  "id": "n5-ck-511",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "じゃ、いってきます。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "おかえりなさい。",
+   "いってらっしゃい。",
+   "いってきます。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "那我出门了。"
+    ],
+    "options": [
+     "你回来啦。",
+     "路上小心。",
+     "我出门了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Well, I'm off."
+    ],
+    "options": [
+     "Welcome back.",
+     "See you later.",
+     "I'm off."
+    ]
+   }
+  },
+  "why": {
+   "zh": "出门的人说「いってきます」，送行的人回「いってらっしゃい」。",
+   "en": "The person leaving says 「いってきます」; the one staying answers 「いってらっしゃい」."
+  },
+  "wrong": [
+   {
+    "zh": "「おかえりなさい」是对方回家时说的，他现在是要出门。",
+    "en": "「おかえりなさい」 greets someone coming home; he is just leaving."
+   },
+   null,
+   {
+    "zh": "「いってきます」是出门的人自己说的话，留在家的人不说。",
+    "en": "「いってきます」 is the leaving person's own line, not the reply."
+   }
+  ],
+  "traps": [
+   "timing",
+   "perspective",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n5-ck-512",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "ただいま。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "いってらっしゃい。",
+   "ただいま。",
+   "おかえりなさい。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "我回来了。"
+    ],
+    "options": [
+     "路上小心。",
+     "我回来了。",
+     "你回来啦。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I'm home."
+    ],
+    "options": [
+     "See you later.",
+     "I'm home.",
+     "Welcome back."
+    ]
+   }
+  },
+  "why": {
+   "zh": "回家的人说「ただいま」，家里的人回「おかえりなさい」。",
+   "en": "The person coming home says 「ただいま」; the family answers 「おかえりなさい」."
+  },
+  "wrong": [
+   {
+    "zh": "「いってらっしゃい」是送别人出门时说的，她是刚回来。",
+    "en": "「いってらっしゃい」 sees someone off; she has just come back."
+   },
+   {
+    "zh": "「ただいま」是回家的人自己说的，照搬过来不对。",
+    "en": "「ただいま」 is what the person arriving says — echoing it doesn't work."
+   },
+   null
+  ],
+  "traps": [
+   "timing",
+   "perspective",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n5-ck-513",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "きのうは かさ、どうも ありがとう ございました。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "ありがとう ございました。",
+   "いいえ、どう いたしまして。",
+   "いいえ、かさは ありません。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "昨天借我伞，真是谢谢了。"
+    ],
+    "options": [
+     "谢谢您了。",
+     "不，不客气。",
+     "不，没有伞。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Thank you so much for the umbrella yesterday."
+    ],
+    "options": [
+     "Thank you.",
+     "Oh, you're welcome.",
+     "No, I don't have an umbrella."
+    ]
+   }
+  },
+  "why": {
+   "zh": "对方为借伞道谢，回答「いいえ、どう いたしまして」（不客气）。",
+   "en": "He is thanking her for the umbrella; 「いいえ、どう いたしまして」 is the reply to thanks."
+  },
+  "wrong": [
+   {
+    "zh": "伞是她借给对方的，她没有要道谢的事，照搬「ありがとう」不对。",
+    "en": "She lent the umbrella, so she has nothing to thank him for — echoing 「ありがとう」 doesn't fit."
+   },
+   null,
+   {
+    "zh": "抓住了「かさ」这个词，但对方是在道谢，不是问有没有伞。",
+    "en": "Latches onto 「かさ」, but he's thanking her, not asking whether she has one."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n5-ck-514",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "おそく なって、すみません。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "はい、おそく なりました。",
+   "どう いたしまして。",
+   "だいじょうぶですよ。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "来晚了，对不起。"
+    ],
+    "options": [
+     "是的，晚了。",
+     "不客气。",
+     "没关系的。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Sorry I'm late."
+    ],
+    "options": [
+     "Yes, it got late.",
+     "You're welcome.",
+     "That's all right."
+    ]
+   }
+  },
+  "why": {
+   "zh": "对方道歉，回答「だいじょうぶですよ」（没关系）。",
+   "en": "She apologises; 「だいじょうぶですよ」 (it's all right) accepts the apology."
+  },
+  "wrong": [
+   {
+    "zh": "照搬「おそく」，回答的是“确实晚了”，没有回应道歉。",
+    "en": "Echoes 「おそく」 and just agrees she is late — it doesn't answer the apology."
+   },
+   {
+    "zh": "「どう いたしまして」是回应道谢的，不能回应道歉。",
+    "en": "「どう いたしまして」 answers thanks, not an apology."
+   },
+   null
+  ],
+  "traps": [
+   "repeat-word",
+   "intent"
+  ]
+ },
+ {
+  "id": "n5-ck-515",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "じゃ、おさきに しつれいします。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "おつかれさまでした。",
+   "いってらっしゃい。",
+   "はい、しつれいしました。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "那我先走了。"
+    ],
+    "options": [
+     "辛苦了。",
+     "路上小心，早点回来。",
+     "是的，失礼了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Well, I'll be going now."
+    ],
+    "options": [
+     "Thanks for your hard work.",
+     "See you later.",
+     "Yes, excuse me."
+    ]
+   }
+  },
+  "why": {
+   "zh": "下班先走的人说「おさきに しつれいします」，同事回「おつかれさまでした」。",
+   "en": "Leaving work before others, you say 「おさきに しつれいします」; colleagues answer 「おつかれさまでした」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「いってらっしゃい」用于出去还会回来的人，他是下班回家。",
+    "en": "「いってらっしゃい」 is for someone who will come back; he is going home for the day."
+   },
+   {
+    "zh": "照搬「しつれい」，又说成自己失礼了，不是回应对方的话。",
+    "en": "Echoes 「しつれい」 as if she were the one excusing herself — not a reply."
+   }
+  ],
+  "traps": [
+   "timing",
+   "repeat-word",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n5-ck-516",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "おじゃまします。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "おかえりなさい。",
+   "はい、おじゃまします。",
+   "いらっしゃい。どうぞ。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "打扰了。（进门时）"
+    ],
+    "options": [
+     "你回来啦。",
+     "是的，打扰了。",
+     "欢迎，请进。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Sorry to intrude. (coming in)"
+    ],
+    "options": [
+     "Welcome home.",
+     "Yes, sorry to intrude.",
+     "Welcome, come on in."
+    ]
+   }
+  },
+  "why": {
+   "zh": "客人进门说「おじゃまします」，主人回「いらっしゃい。どうぞ」。",
+   "en": "A guest coming in says 「おじゃまします」; the host answers 「いらっしゃい。どうぞ」."
+  },
+  "wrong": [
+   {
+    "zh": "「おかえりなさい」是对回家的家人说的，客人来访时不用。",
+    "en": "「おかえりなさい」 greets family coming home, not a visitor."
+   },
+   {
+    "zh": "照搬客人的「おじゃまします」，主人不这么说。",
+    "en": "Echoes the guest's 「おじゃまします」; the host doesn't say that."
+   },
+   null
+  ],
+  "traps": [
+   "timing",
+   "perspective",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n5-ck-517",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "さあ、どうぞ。たくさん 食べて ください。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "ごちそうさまでした。",
+   "じゃ、いただきます。",
+   "はい、たくさん あります。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "来，请吧。多吃点。"
+    ],
+    "options": [
+     "我吃好了，谢谢款待。",
+     "那我开动了。",
+     "是的，有很多。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Here you are. Please eat as much as you like."
+    ],
+    "options": [
+     "Thank you for the meal.",
+     "Then I'll start, thank you.",
+     "Yes, there's a lot."
+    ]
+   }
+  },
+  "why": {
+   "zh": "还没开始吃，对方请他吃，开吃前说「いただきます」。",
+   "en": "She invites him to start eating; before eating you say 「いただきます」."
+  },
+  "wrong": [
+   {
+    "zh": "「ごちそうさまでした」是吃完以后说的，现在还没吃。",
+    "en": "「ごちそうさまでした」 is said after the meal; he hasn't started yet."
+   },
+   null,
+   {
+    "zh": "照搬「たくさん」，说“有很多”，没有回应对方的劝吃。",
+    "en": "Echoes 「たくさん」 (\"there's a lot\") without answering her invitation to eat."
+   }
+  ],
+  "traps": [
+   "timing",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n5-ck-518",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "新しい 学校は どうですか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "とても たのしいです。",
+   "駅の 近くに あります。",
+   "はい、新しいです。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "新学校怎么样？"
+    ],
+    "options": [
+     "非常开心。",
+     "在车站附近。",
+     "是的，是新的。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "How's your new school?"
+    ],
+    "options": [
+     "It's a lot of fun.",
+     "It's near the station.",
+     "Yes, it's new."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜は どうですか」问感想，回答「とても たのしいです」。",
+   "en": "「〜は どうですか」 asks what she thinks of it; 「とても たのしいです」 gives her impression."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "回答的是学校在哪儿，问的是觉得怎么样。",
+    "en": "Says where the school is, but he asked how she likes it."
+   },
+   {
+    "zh": "照搬「新しい」，而且疑问词问句不能用「はい」回答。",
+    "en": "Echoes 「新しい」, and a question like 「どうですか」 can't be answered with 「はい」."
+   }
+  ],
+  "traps": [
+   "question-word",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n5-ck-519",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "すみません、まどを あけて ください。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "いいえ、あけて いません。",
+   "はい、あけて ください。",
+   "はい、いいですよ。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "不好意思，请把窗户打开。"
+    ],
+    "options": [
+     "不，没开。",
+     "好的，请打开。",
+     "好的，可以啊。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Excuse me, could you open the window?"
+    ],
+    "options": [
+     "No, I haven't opened it.",
+     "Yes, please open it.",
+     "Sure, no problem."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜て ください」是请求，答应时说「はい、いいですよ」。",
+   "en": "「〜て ください」 is a request; 「はい、いいですよ」 agrees to it."
+  },
+  "wrong": [
+   {
+    "zh": "把请求听成了“你开了吗”，回答“没开”，答非所问。",
+    "en": "Hears the request as \"have you opened it?\" and says no — it doesn't answer the request."
+   },
+   {
+    "zh": "照搬「あけて ください」，反过来请对方开，立场反了。",
+    "en": "Echoes 「あけて ください」 back, asking her to do it — the roles are reversed."
+   },
+   null
+  ],
+  "traps": [
+   "intent",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n5-ck-520",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "駅から 学校まで どのぐらい かかりますか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "二十分ぐらいです。",
+   "八時に つきます。",
+   "はい、かかります。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "从车站到学校要多长时间？"
+    ],
+    "options": [
+     "二十分钟左右。",
+     "八点到。",
+     "是的，要花。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "How long does it take from the station to the school?"
+    ],
+    "options": [
+     "About twenty minutes.",
+     "I get there at eight.",
+     "Yes, it takes time."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「どのぐらい かかりますか」问要多长时间，回答「二十分ぐらいです」。",
+   "en": "「どのぐらい かかりますか」 asks how long it takes; 「二十分ぐらいです」 gives a duration."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「八時に」回答的是什么时候到，不是要多久。",
+    "en": "「八時に」 says when she arrives, not how long it takes."
+   },
+   {
+    "zh": "照搬「かかります」，疑问词问句不能用「はい」回答。",
+    "en": "Echoes 「かかります」; a 「どのぐらい」 question can't be answered with 「はい」."
+   }
+  ],
+  "traps": [
+   "question-word",
+   "repeat-word"
+  ]
+ }
+]

@@ -1,0 +1,118 @@
+[
+ {
+  "id": "n2-ck-501",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "あれ？　この書類、まだここにあるけど、課長に出したんじゃなかったっけ？"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "あ、すみません。すっかり忘れてました。",
+   "ええ、きのうのうちに出しておきました。",
+   "じゃあ、出しておいてもらえますか。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "咦？这份文件还在这儿呢，你不是交给科长了吗？"
+    ],
+    "options": [
+     "啊，对不起，我忘得一干二净。",
+     "嗯，昨天就交了。",
+     "那能帮我交一下吗？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Huh? This document is still here — didn't you hand it in to the section chief?"
+    ],
+    "options": [
+     "Oh, sorry. I completely forgot.",
+     "Yes, I handed it in yesterday.",
+     "Then could you hand it in for me?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜んじゃなかったっけ」：文件还在这里，她在确认“你不是交了吗”。回答「すっかり忘れてました」承认忘了交。",
+   "en": "「〜んじゃなかったっけ」: the document is still here, so she's checking — \"didn't you hand it in?\" The reply admits he forgot."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "文件就在眼前，说昨天已经交了，和情况矛盾。",
+    "en": "The document is right here, so \"I handed it in yesterday\" contradicts the situation."
+   },
+   {
+    "zh": "她没有说要帮他交，把确认听成了提议。",
+    "en": "She didn't offer to hand it in — this takes her remark as an offer."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "intent"
+  ]
+ },
+ {
+  "id": "n2-ck-502",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "先週の会議の資料、まだ残ってたら、一部もらえないかな。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "あ、私も一部いただけますか。",
+   "はい、じゃあ、もらっておきますね。",
+   "まだあると思います。持ってきますね。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "上周会议的资料要是还有剩的，能给我一份吗？"
+    ],
+    "options": [
+     "啊，也能给我一份吗？",
+     "好的，那我先收下了。",
+     "应该还有。我去拿过来。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "If there are any handouts left from last week's meeting, could I have one?"
+    ],
+    "options": [
+     "Oh, could I have one too?",
+     "Okay, then I'll take it.",
+     "I think there are some left. I'll bring you one."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「もらえないかな」是向她要一份；回答「まだあると思います。持ってきますね」（应该还有，我去拿）回应了请求。",
+   "en": "「もらえないかな」 asks her for a copy; \"I think there are some — I'll bring you one\" answers the request."
+  },
+  "wrong": [
+   {
+    "zh": "资料是男人向她要的，她反过来也要一份，没有回应请求。",
+    "en": "He's asking her for a copy; asking for one herself ignores his request."
+   },
+   {
+    "zh": "把请求听成了对方要给自己东西，立场反了。",
+    "en": "Hears the request as him offering her something — the roles are reversed."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "repeat-word"
+  ]
+ }
+]

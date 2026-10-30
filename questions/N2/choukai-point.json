@@ -1,0 +1,78 @@
+[
+ {
+  "id": "n2-ck-201",
+  "type": "point",
+  "scene": "男の人と女の人が話しています。",
+  "question": "女の人はどうして引っ越すことにしましたか。",
+  "lines": [
+   ["M", "佐藤さん、引っ越すんだって？　やっぱり会社から遠いから？"],
+   ["F", "ううん、通勤は電車一本だし、それは別に気にしてないの。"],
+   ["M", "じゃあ、部屋が狭いとか？　前に、荷物が入りきらないって言ってたじゃない。"],
+   ["F", "ああ、あれは要らないものを思い切って捨てたら、だいぶ片付いたんだ。"],
+   ["M", "へえ。じゃあ、なんで？"],
+   ["F", "実はね、隣に越してきた人が、毎晩遅くまで音楽かけてて。大家さんにも言ってもらったんだけど、全然変わらなくて。"],
+   ["M", "それはつらいね。"],
+   ["F", "家賃も安いし、本当は気に入ってたんだけどね。"]
+  ],
+  "options": ["会社から遠くて不便だから", "となりの人がうるさいから", "部屋がせまくて不便だから", "家賃が前より高くなったから"],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "女人为什么决定搬家？",
+    "lines": ["佐藤，听说你要搬家？果然是因为离公司远？", "不是，上班坐一趟电车就到，那个我倒不在意。", "那是房间太小？你之前不是说东西放不下吗？", "啊，那个啊，我狠心把不要的东西扔了，收拾得差不多了。", "哦。那为什么？", "其实啊，隔壁新搬来的人每天晚上放音乐放到很晚。也请房东去说过了，一点没变。", "那可真受罪。", "房租也便宜，其实我挺喜欢那儿的。"],
+    "options": ["因为离公司远，不方便", "因为隔壁的人吵", "因为房间小，不方便", "因为房租比以前涨了"]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "Why did the woman decide to move?",
+    "lines": ["Sato-san, I hear you're moving. Is it because it's far from work after all?", "No, it's one train to work, so that doesn't really bother me.", "Then is the place too small? You said before your stuff wouldn't fit.", "Oh, that — I finally threw out what I didn't need, and it's much tidier now.", "Huh. So why, then?", "Actually, the person who moved in next door plays music late every night. I even got the landlord to talk to them, but nothing's changed.", "That sounds rough.", "The rent's cheap too, and I really liked the place."],
+    "options": ["It's far from work and inconvenient", "The neighbour is noisy", "The room is small and inconvenient", "The rent has gone up"]
+   }
+  },
+  "why": { "zh": "两个猜测都被否定，「実はね」后面说出真正原因：隔壁每晚放音乐到很晚。", "en": "Both guesses are denied; after 「実はね」 she gives the real reason — the neighbour's late-night music." },
+  "wrong": [
+   { "zh": "她说通勤只要一趟电车，「別に気にしてない」。", "en": "She says the commute is one train and doesn't bother her." },
+   null,
+   { "zh": "扔掉不要的东西后已经收拾好了。", "en": "Throwing things out solved the space problem." },
+   { "zh": "她说房租「安い」，是喜欢那里的理由，没提涨价。", "en": "She says the rent is cheap — a reason she liked the place; no rise is mentioned." }],
+  "traps": ["denied-guess"]
+ },
+ {
+  "id": "n2-ck-202",
+  "type": "point",
+  "scene": "レストランで店長と女の店員が話しています。",
+  "question": "店長は新しいメニューの何を直したほうがいいと言っていますか。",
+  "lines": [
+   ["F", "店長、新しいランチメニューの案、見ていただけましたか。"],
+   ["M", "うん、見たよ。写真もきれいだし、値段も今のままでいいと思う。"],
+   ["F", "ありがとうございます。字が小さくて読みにくいかなと思ってたんですが……。"],
+   ["M", "ああ、それはお客さんが手に取って見るものだから、あのくらいで問題ないよ。ただね、パスタとサラダのセットなんだけど。"],
+   ["F", "はい。"],
+   ["M", "前から、量が多すぎるってお客さんによく言われてるでしょう。お昼はさっと済ませたい人が多いから、そこはもう少し考えてほしいんだ。"],
+   ["F", "わかりました。じゃあ、サラダを小さくしてみます。"]
+  ],
+  "options": ["料理の量", "写真", "値段", "字の大きさ"],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "餐厅里店长和一个女店员在说话。",
+    "question": "店长说新菜单的什么地方最好改一下？",
+    "lines": ["店长，新午餐菜单的方案您看过了吗？", "嗯，看了。照片很漂亮，价格我觉得维持现在这样就行。", "谢谢。我还担心字太小不好认……", "啊，那是客人拿在手里看的，那么大没问题。不过啊，意面和沙拉的套餐。", "是。", "一直有客人说分量太多了吧。中午想快点吃完的人多，那里希望你再考虑一下。", "明白了。那我把沙拉改小一点试试。"],
+    "options": ["菜的分量", "照片", "价格", "字的大小"]
+   },
+   "en": {
+    "scene": "A restaurant manager and a female staff member are talking.",
+    "question": "What does the manager say should be changed on the new menu?",
+    "lines": ["Did you get a chance to look at the draft of the new lunch menu?", "Yes, I did. The photos are nice, and I think the prices can stay as they are.", "Thank you. I was worried the text might be too small to read…", "Oh, customers hold it in their hands, so that size is fine. But — the pasta and salad set.", "Yes?", "Customers have been saying for a while that it's too much food. A lot of people want a quick lunch, so I'd like you to rethink that.", "Understood. I'll try making the salad smaller."],
+    "options": ["The portion size", "The photos", "The prices", "The text size"]
+   }
+  },
+  "why": { "zh": "店长用「ただね」转折，指出套餐「量が多すぎる」，要她「もう少し考えて」。", "en": "After 「ただね」 he points out the set is too big and asks her to rethink it." },
+  "wrong": [null,
+   { "zh": "店长说照片「きれい」，是夸奖。", "en": "He praises the photos." },
+   { "zh": "价格「今のままでいい」。", "en": "He says the prices can stay." },
+   { "zh": "字的大小是店员自己担心的，店长说「問題ない」。", "en": "The text size was her worry; he says it's fine." }],
+  "traps": ["denied-guess", "mentioned-not-asked"]
+ }
+]

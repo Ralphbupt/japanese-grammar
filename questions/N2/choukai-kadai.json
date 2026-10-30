@@ -1,0 +1,85 @@
+[
+ {
+  "id": "n2-ck-101",
+  "type": "kadai",
+  "scene": "会社で女の人と男の人が話しています。",
+  "question": "男の人はこのあとまず何をしなければなりませんか。",
+  "lines": [
+   ["F", "木村さん、明日の打ち合わせの準備、どう？"],
+   ["M", "はい、資料はできたので、これから人数分コピーしようと思ってたところです。"],
+   ["F", "あ、それなんだけど、先方が何人来るか、まだはっきりしてないんだよね。"],
+   ["M", "そうなんですか。"],
+   ["F", "うん。午後に連絡をくれることになってるから、コピーはそのあとでいいよ。"],
+   ["M", "わかりました。じゃあ、会議室の予約を先に……。"],
+   ["F", "それは昨日、私が取っといたから大丈夫。それより、先方に送った案内のメール、時間が二時になってたよ。本当は三時でしょう？"],
+   ["M", "え、本当ですか。すみません。"],
+   ["F", "向こうが二時に来ちゃったら困るから、すぐ訂正の連絡入れといて。"],
+   ["M", "はい、すぐやります。プロジェクターの確認は、そのあとでいいですか。"],
+   ["F", "うん、それは夕方でも間に合うから。"]
+  ],
+  "options": ["資料をコピーする", "会議室を予約する", "取引先に連絡する", "プロジェクターを確認する"],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个女人和一个男人在说话。",
+    "question": "男人接下来首先必须做什么？",
+    "lines": ["木村，明天碰头会准备得怎么样了？", "资料做好了，正打算按人数复印。", "啊，那个啊，对方来几个人还没定下来。", "是吗。", "嗯，说好下午会联系我们，复印等那之后再说。", "明白了。那我先订会议室……", "那个我昨天已经订好了，没问题。倒是你发给对方的通知邮件，时间写成两点了。其实是三点吧？", "啊，真的吗？对不起。", "要是对方两点就来了可就麻烦了，赶紧联系一下更正。", "好的，马上去办。投影仪的检查可以放在那之后吗？", "嗯，那个傍晚做也来得及。"],
+    "options": ["复印资料", "预订会议室", "联系客户", "检查投影仪"]
+   },
+   "en": {
+    "scene": "A woman and a man are talking at the office.",
+    "question": "What does the man have to do first?",
+    "lines": ["Kimura-san, how's the prep for tomorrow's meeting going?", "The handouts are done, so I was just about to make copies for everyone.", "Ah, about that — we still don't know how many people they're sending.", "Oh, really?", "Yeah. They're supposed to let us know this afternoon, so copy them after that.", "Got it. Then I'll book the meeting room first…", "I booked it yesterday, so that's fine. More importantly, the invitation email you sent them says two o'clock. It's actually three, right?", "What, really? I'm sorry.", "It'd be a problem if they turned up at two, so get in touch with them right away and correct it.", "Yes, I'll do it now. Can I check the projector after that?", "Sure, that can wait till this evening."],
+    "options": ["Copy the handouts", "Book the meeting room", "Contact the client", "Check the projector"]
+   }
+  },
+  "why": { "zh": "女人说时间写错了，「すぐ訂正の連絡入れといて」，男人答「すぐやります」，所以首先要联系对方。", "en": "She says the time in the email is wrong and tells him to send a correction 「すぐ」; he says he'll do it now." },
+  "wrong": [
+   { "zh": "人数下午才知道，复印「そのあとでいい」。", "en": "The headcount comes this afternoon; copying can wait until then." },
+   { "zh": "会议室女人昨天已经订好了。", "en": "She already booked the room yesterday." },
+   null,
+   { "zh": "投影仪「夕方でも間に合う」，放在后面。", "en": "The projector can wait until the evening." }],
+  "traps": ["later", "someone-else"]
+ },
+ {
+  "id": "n2-ck-102",
+  "type": "kadai",
+  "scene": "大学で男の学生と女の学生が話しています。",
+  "question": "女の学生はこのあとまず何をしますか。",
+  "lines": [
+   ["M", "あれ、山下さん、図書館行くの？"],
+   ["F", "うん、レポートで使う本を借りに。でもさっき検索したら、貸し出し中になってて。"],
+   ["M", "予約すれば？"],
+   ["F", "それがね、返却日が来週の金曜で、レポートの締め切りが水曜なの。待ってたら間に合わないんだよね。"],
+   ["M", "そっか。じゃあ、本屋で買っちゃうとか。"],
+   ["F", "調べたんだけど、もう売ってないみたいで。"],
+   ["M", "あ、その本なら、たしか佐藤先生の研究室にあったよ。前に僕も借りたことある。"],
+   ["F", "え、ほんと？　研究室って、勝手に入っていいの？"],
+   ["M", "いや、助手の人に先にメールで頼んどかないとだめなんだ。返事が来たら、取りに行けばいいよ。"],
+   ["F", "そうなんだ、ありがとう。じゃ、図書館はやめて、そっちに頼んでみる。"]
+  ],
+  "options": ["図書館で本を予約する", "本屋で本を買う", "研究室に本を取りに行く", "研究室の人にメールを送る"],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "大学里一个男学生和一个女学生在说话。",
+    "question": "女学生接下来首先要做什么？",
+    "lines": ["咦，山下，你去图书馆？", "嗯，去借写报告用的书。可刚才一查，显示已经借出去了。", "预约一下呢？", "问题是还书日期是下周五，报告截止是周三。等的话就来不及了。", "这样啊。那干脆去书店买？", "查过了，好像已经不卖了。", "啊，那本书的话，佐藤老师的研究室好像有。我以前也借过。", "诶，真的？研究室可以随便进去吗？", "不行，得先发邮件拜托助手。等回复了再去拿就行。", "这样啊，谢谢。那图书馆就不去了，找那边问问看。"],
+    "options": ["在图书馆预约书", "在书店买书", "去研究室拿书", "给研究室的人发邮件"]
+   },
+   "en": {
+    "scene": "A male and a female student are talking at university.",
+    "question": "What will the female student do first?",
+    "lines": ["Oh, Yamashita-san, are you going to the library?", "Yeah, to borrow a book for my report. But when I searched just now, it said it's checked out.", "Why not reserve it?", "The thing is, it's due back next Friday and my report's due Wednesday. If I wait, I won't make it.", "I see. Then just buy it at a bookshop?", "I looked, but it seems it's out of print.", "Oh, that book — I think Professor Sato's lab has a copy. I borrowed it once.", "Really? Can you just walk into the lab?", "No, you have to email the assistant and ask first. Once they reply, you can go and pick it up.", "I see, thanks. Then I'll skip the library and ask them."],
+    "options": ["Reserve the book at the library", "Buy the book at a bookshop", "Go to the lab to get the book", "Email the person at the lab"]
+   }
+  },
+  "why": { "zh": "研究室不能随便进，要「先にメールで頼んどかないと」；她说「そっちに頼んでみる」，就是先给助手发邮件。", "en": "She can't just walk into the lab — the assistant must be emailed first; 「そっちに頼んでみる」 means doing that." },
+  "wrong": [
+   { "zh": "还书日期在截止日之后，预约来不及；她最后也说「図書館はやめて」。", "en": "The book is due back after her deadline, and she ends with 「図書館はやめて」." },
+   { "zh": "书店已经不卖了。", "en": "It's no longer sold in shops." },
+   { "zh": "去拿书要等助手回复之后，不是第一步。", "en": "Picking it up comes after the assistant replies — not the first step." },
+   null],
+  "traps": ["order", "not-possible", "repeat-word"]
+ }
+]

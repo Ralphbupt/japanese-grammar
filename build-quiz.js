@@ -19,6 +19,13 @@
  *                         per blank in order (no `q` text)
  *     short / mid / info  内容理解（短文）/（中文）/ 情報検索; each question has `q`.
  *                         Passage lines starting with | are a table.
+ *   choukai-*.json  listening scripts (format: docs/quiz-listening-spec.md §8)
+ *     kadai / point / gaiyou / hatsuwa / sokuji / tougou (→ `ctougou` here, as
+ *                         `tougou` is the reading one). Options keep their file
+ *                         order (the audio speaks them in it). An item is used
+ *                         only while audio/choukai/index.json has audio made
+ *                         from its current script; pictures likewise from
+ *                         images/choukai/index.json (tools/choukai-*.py).
  *
  * Every question: options (4), answer (index, except narabe), why {zh,en},
  * wrong (one {zh,en} per option, null for the right one), difficulty 1–3.
@@ -46,6 +53,7 @@ const GROUPS = {
   moji: { zh: "文字・语汇", en: "Vocabulary", ja: "文字・語彙" },
   bunpou: { zh: "语法", en: "Grammar", ja: "文法" },
   dokkai: { zh: "阅读", en: "Reading", ja: "読解" },
+  choukai: { zh: "听力", en: "Listening", ja: "聴解" },
 };
 const TYPES = {
   kanji: { g: "moji", zh: "汉字读音", en: "Kanji reading", ja: "漢字読み" },
@@ -63,12 +71,21 @@ const TYPES = {
   tougou: { g: "dokkai", zh: "综合理解", en: "Comparing two texts", ja: "統合理解" },
   shuchou: { g: "dokkai", zh: "主张理解", en: "The author's argument", ja: "主張理解（長文）" },
   info: { g: "dokkai", zh: "信息检索", en: "Finding information", ja: "情報検索" },
+  kadai: { g: "choukai", zh: "课题理解", en: "Task-based listening", ja: "課題理解" },
+  point: { g: "choukai", zh: "要点理解", en: "Listening for the point", ja: "ポイント理解" },
+  gaiyou: { g: "choukai", zh: "概要理解", en: "Listening for the gist", ja: "概要理解" },
+  hatsuwa: { g: "choukai", zh: "说话表达", en: "What do you say?", ja: "発話表現" },
+  sokuji: { g: "choukai", zh: "即时应答", en: "Quick response", ja: "即時応答" },
+  ctougou: { g: "choukai", zh: "综合理解（听力）", en: "Integrated listening", ja: "統合理解" },
 };
 const FILE_TYPES = {
   lesson: ["bunpou", "narabe"],
   "moji-goi": ["kanji", "hyouki", "gokeisei", "bunmyaku", "iikae", "youhou"],
   dokkai: ["bunshou", "short", "mid", "long", "tougou", "shuchou", "info"],
+  choukai: ["kadai", "point", "gaiyou", "hatsuwa", "sokuji", "ctougou"],
 };
+// Options spoken in the audio, not printed: shown only after answering.
+const SPOKEN = new Set(["gaiyou", "hatsuwa", "sokuji"]);
 // Furigana like the real test: never in the vocabulary section, and from N3
 // up not in grammar or reading either. The finished sentence and the
 // explanations shown after answering keep it at every level.
@@ -106,30 +123,33 @@ function aboveLevel(level, q) {
 }
 
 // Mock test layout per level: sittings (minutes, types in order; each type
-// is one もんだい) and scoring (official sections; listening isn't tested).
-// Mock test layout per level: sittings (minutes, types in order; each type
-// is one もんだい) and scoring (official sections, each a set of types;
-// listening isn't tested). Item counts per type: questions/README.md.
+// is one もんだい) and scoring (official sections, each a set of types).
+// The listening sitting is used only by a mock that has listening files; its
+// score part (max/min from `listening`) is added then. `pause`: seconds to
+// answer after each item (docs/quiz-listening-spec.md §6, mock column).
+// Item counts per type: questions/README.md.
 const MOJI = { key: "moji", zh: "言语知识（文字・语汇）", en: "Language knowledge (vocabulary)", ja: "言語知識（文字・語彙）" };
 const BUNPOU = { key: "bunpou", zh: "言语知识（语法）・阅读", en: "Language knowledge (grammar) & reading", ja: "言語知識（文法）・読解" };
 const GENGO_ALL = { key: "gengo", zh: "言语知识・阅读", en: "Language knowledge & reading", ja: "言語知識（文字・語彙・文法）・読解" };
 const GENGO = { key: "gengo", zh: "言语知识（文字・语汇・语法）", en: "Language knowledge", ja: "言語知識（文字・語彙・文法）" };
 const DOKKAI = { key: "dokkai", zh: "阅读", en: "Reading", ja: "読解" };
 const LISTENING = { max: 60, min: 19 };
+const CHOUKAI = { key: "choukai", zh: "听力", en: "Listening", ja: "聴解", listening: true, pause: { kadai: 16, point: 16, gaiyou: 16, ctougou: 16, hatsuwa: 6.5, sokuji: 6.5 } };
+const CK_SHORT = ["kadai", "point", "hatsuwa", "sokuji"], CK_LONG = ["kadai", "point", "gaiyou", "sokuji", "ctougou"];
 const GRAMMAR_TYPES = ["bunpou", "narabe", "bunshou"];
 const MOCK = {
   N5: {
-    sections: [{ ...MOJI, minutes: 20, types: ["kanji", "hyouki", "bunmyaku", "iikae"] }, { ...BUNPOU, minutes: 40, types: [...GRAMMAR_TYPES, "short", "mid", "info"] }],
+    sections: [{ ...MOJI, minutes: 20, types: ["kanji", "hyouki", "bunmyaku", "iikae"] }, { ...BUNPOU, minutes: 40, types: [...GRAMMAR_TYPES, "short", "mid", "info"] }, { ...CHOUKAI, minutes: 30, types: CK_SHORT }],
     scoring: [{ ...GENGO_ALL, max: 120, min: 38, types: ["kanji", "hyouki", "bunmyaku", "iikae", ...GRAMMAR_TYPES, "short", "mid", "info"] }],
     listening: LISTENING, pass: 80,
   },
   N4: {
-    sections: [{ ...MOJI, minutes: 25, types: ["kanji", "hyouki", "bunmyaku", "iikae", "youhou"] }, { ...BUNPOU, minutes: 55, types: [...GRAMMAR_TYPES, "short", "mid", "info"] }],
+    sections: [{ ...MOJI, minutes: 25, types: ["kanji", "hyouki", "bunmyaku", "iikae", "youhou"] }, { ...BUNPOU, minutes: 55, types: [...GRAMMAR_TYPES, "short", "mid", "info"] }, { ...CHOUKAI, minutes: 35, types: CK_SHORT }],
     scoring: [{ ...GENGO_ALL, max: 120, min: 38, types: ["kanji", "hyouki", "bunmyaku", "iikae", "youhou", ...GRAMMAR_TYPES, "short", "mid", "info"] }],
     listening: LISTENING, pass: 90,
   },
   N3: {
-    sections: [{ ...MOJI, minutes: 30, types: ["kanji", "hyouki", "bunmyaku", "iikae", "youhou"] }, { ...BUNPOU, minutes: 70, types: [...GRAMMAR_TYPES, "short", "mid", "long", "info"] }],
+    sections: [{ ...MOJI, minutes: 30, types: ["kanji", "hyouki", "bunmyaku", "iikae", "youhou"] }, { ...BUNPOU, minutes: 70, types: [...GRAMMAR_TYPES, "short", "mid", "long", "info"] }, { ...CHOUKAI, minutes: 40, types: ["kadai", "point", "gaiyou", "hatsuwa", "sokuji"] }],
     scoring: [
       { ...GENGO, max: 60, min: 19, types: ["kanji", "hyouki", "bunmyaku", "iikae", "youhou", ...GRAMMAR_TYPES] },
       { ...DOKKAI, max: 60, min: 19, types: ["short", "mid", "long", "info"] },
@@ -138,7 +158,7 @@ const MOCK = {
   },
   N2: {
     sections: [{ key: "all", zh: "言语知识（文字・语汇・语法）・阅读", en: "Language knowledge & reading", ja: "言語知識（文字・語彙・文法）・読解", minutes: 105,
-      types: ["kanji", "hyouki", "gokeisei", "bunmyaku", "iikae", "youhou", ...GRAMMAR_TYPES, "short", "mid", "tougou", "shuchou", "info"] }],
+      types: ["kanji", "hyouki", "gokeisei", "bunmyaku", "iikae", "youhou", ...GRAMMAR_TYPES, "short", "mid", "tougou", "shuchou", "info"] }, { ...CHOUKAI, minutes: 50, types: CK_LONG }],
     scoring: [
       { ...GENGO, max: 60, min: 19, types: ["kanji", "hyouki", "gokeisei", "bunmyaku", "iikae", "youhou", ...GRAMMAR_TYPES] },
       { ...DOKKAI, max: 60, min: 19, types: ["short", "mid", "tougou", "shuchou", "info"] },
@@ -148,7 +168,7 @@ const MOCK = {
   // N1: one 110-minute sitting; no 表記 / 語形成 in the vocabulary part.
   N1: {
     sections: [{ key: "all", zh: "言语知识（文字・语汇・语法）・阅读", en: "Language knowledge & reading", ja: "言語知識（文字・語彙・文法）・読解", minutes: 110,
-      types: ["kanji", "bunmyaku", "iikae", "youhou", ...GRAMMAR_TYPES, "short", "mid", "long", "tougou", "shuchou", "info"] }],
+      types: ["kanji", "bunmyaku", "iikae", "youhou", ...GRAMMAR_TYPES, "short", "mid", "long", "tougou", "shuchou", "info"] }, { ...CHOUKAI, minutes: 55, types: CK_LONG }],
     scoring: [
       { ...GENGO, max: 60, min: 19, types: ["kanji", "bunmyaku", "iikae", "youhou", ...GRAMMAR_TYPES] },
       { ...DOKKAI, max: 60, min: 19, types: ["short", "mid", "long", "tougou", "shuchou", "info"] },
@@ -187,6 +207,12 @@ const QUIZ_RUBY_FIXES = [
   // A date's 1日 (3月1日) is ついたち; 1日で / 1日おきに stay いちにち.
   [new RegExp("(" + RX("月", "がつ") + ")([1１])" + RX("日", "にち"), "g"), (m, month, one) => month + R(one + "日", "ついたち")],
   [new RegExp(RX("市場", "しじょう"), "g"), R("市場", "いちば")],
+  // 何 before a counter or です is なん (何ばん, 何まい, 何ですか); 何も / 何を stay なに.
+  [new RegExp(RX("何", "なに") + "(?=\\s*(?:ばん|まい|がい|かい|さい|ほん|ぼん|ぽん|にん|です))", "g"), R("何", "なん")],
+  // 九時 is くじ (九時間 stays きゅうじかん); in dates 十七日 / 十九日 are じゅうしちにち / じゅうくにち.
+  [new RegExp(RX("九", "きゅう") + "(?=" + RX("時", "じ") + "(?!間)|" + RX("時半", "じはん") + ")", "g"), R("九", "く")],
+  [new RegExp("(" + RX("十", "じゅう") + ")" + RX("七", "なな") + "(?=" + RX("日", "にち") + ")", "g"), (m, ten) => ten + R("七", "しち")],
+  [new RegExp("(" + RX("十", "じゅう") + ")" + RX("九", "きゅう") + "(?=" + RX("日", "にち") + ")", "g"), (m, ten) => ten + R("九", "く")],
   // 十分 / 二十分 as minutes (ぐらい・かかる・歩いて…) — not じゅうぶん / じゅうふん
   [new RegExp(RX("十分", "じゅうぶん") + "(?=\\s*(ぐらい|くらい|ほど|かか|で|前|後|です))", "g"), R("十分", "じゅっぷん")],
   [new RegExp(RX("十", "じゅう") + RX("分", "ふん"), "g"), R("十", "じゅっ") + R("分", "ぷん")],
@@ -239,8 +265,40 @@ function loadDir(dir, label) {
       passages.push({ ...p, _file: `${level}/${f}` });
       (p.questions || []).forEach((q, i) => qs.push({ ...q, id: `${p.id}-${i + 1}`, type: p.type, passage: p.id, difficulty: q.difficulty || p.difficulty, _file: `${level}/${f}`, _kind: "dokkai", _blank: i + 1 }));
     }
+    // Listening: never shown without its audio.
+    else if (/^choukai-[a-z]+\.json$/.test(f)) for (const q of read(f)) {
+      const skip = q.questions ? "several questions on one recording aren't supported yet" : !ckAudio(q) ? "no audio made from the current script" : null;
+      if (skip) { CHOUKAI_WARNINGS.set(q.id, `${level}/${f} ${q.id}: left out, ${skip}`); continue; }
+      if ((q.optionImages || q.picture) && !ckPic(q)) CHOUKAI_WARNINGS.set(q.id, `${level}/${f} ${q.id}: no up-to-date picture${q.optionImages ? ", shown with text options" : ""}`);
+      qs.push({ ...q, type: q.type === "tougou" ? "ctougou" : q.type, _file: `${level}/${f}`, _kind: "choukai" });
+    }
   }
   return { qs, passages };
+}
+
+// Listening media, read at build time (tools/choukai-audio.py and
+// choukai-images.py may still be adding entries). Each manifest entry keeps the
+// script it was made from (`src`); an entry for an older script is ignored.
+const CK_AUDIO_DIR = path.join(ROOT, "audio", "choukai"), CK_IMG_DIR = path.join(ROOT, "images", "choukai");
+const CHOUKAI_WARNINGS = new Map();   // id → message, printed once per run
+let ckManifests = null;
+const readManifest = (f) => (fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf-8")) : {});
+const manifests = () => ckManifests || (ckManifests = { audio: readManifest(path.join(CK_AUDIO_DIR, "index.json")), images: readManifest(path.join(CK_IMG_DIR, "index.json")) });
+// JSON with object keys sorted, so the comparison doesn't depend on key order.
+const canon = (v) => JSON.stringify(v, (k, x) => (x && typeof x === "object" && !Array.isArray(x) ? Object.fromEntries(Object.keys(x).sort().map((y) => [y, x[y]])) : x));
+function ckAudio(q) {
+  const a = manifests().audio[q.id];
+  const src = Object.fromEntries(["scene", "question", "lines", "options", "respond"].filter((k) => q[k] != null).map((k) => [k, q[k]]));
+  if (!a || canon(a.src) !== canon(src) || !fs.existsSync(path.join(CK_AUDIO_DIR, a.file))) return null;
+  return { f: a.file, dur: a.dur, segs: a.segs };
+}
+// { opts: [4 files] } for picture options, { scene, box } for a 発話表現 scene.
+function ckPic(q) {
+  const m = manifests().images[q.id], ok = (f) => fs.existsSync(path.join(CK_IMG_DIR, f));
+  if (!m) return null;
+  if (q.optionImages) return m.opts && canon(m.src) === canon(q.optionImages) && m.opts.every(ok) ? { opts: m.opts } : null;
+  if (q.picture) return m.scene && canon(m.src) === canon(q.picture) && ok(m.scene) ? { scene: m.scene, box: m.box } : null;
+  return null;
 }
 // Every word in a level's lesson vocabulary tables (本课单词表): word and
 // reading → the lesson it's taught in (the first one, if several).
@@ -306,6 +364,12 @@ function validate(level, { qs, passages }, points, mock) {
   }
   for (const q of qs) {
     const err = (msg) => errors.push(`${q._file} ${q.id || "(no id)"}: ${msg}`);
+    if (q._kind === "choukai") {
+      if (seen.has(q.id)) err("duplicate id");
+      seen.add(q.id);
+      for (const e of validateChoukai(q, m || lv)) err(e);
+      continue;
+    }
     if (m && q._kind !== "dokkai" && !new RegExp(`^${m}-\\d{3}$`).test(q.id || "")) err(`id must look like ${m}-001`);
     if (!m && q._kind === "lesson" && !new RegExp(`^${lv}-l\\d{2}-\\d{3}$`).test(q.id || "")) err(`id must look like ${lv}-l05-001`);
     if (!m && q._kind === "moji-goi" && !new RegExp(`^${lv}-mg-\\d{3}$`).test(q.id || "")) err(`id must look like ${lv}-mg-001`);
@@ -352,11 +416,24 @@ function validate(level, { qs, passages }, points, mock) {
   }
   return errors;
 }
+// What the page needs from a listening item; tools/choukai-check.js checks the rest.
+function validateChoukai(q, prefix) {
+  const out = [], n = q.type === "hatsuwa" || q.type === "sokuji" ? 3 : 4;
+  if (!new RegExp(`^${prefix}-ck-\\d{3}$`).test(q.id || "")) out.push(`id must look like ${prefix}-ck-101`);
+  if (!Array.isArray(q.lines)) out.push("lines must be a list");
+  if (!Array.isArray(q.options) || q.options.length !== n) out.push(`needs exactly ${n} options`);
+  if (!Number.isInteger(q.answer) || q.answer < 0 || q.answer >= n) out.push(`answer must be 0–${n - 1}`);
+  if (!isBi(q.why)) out.push("why needs zh and en");
+  if (!Array.isArray(q.wrong) || q.wrong.length !== n || q.wrong.some((w, i) => (i === q.answer ? w !== null : !isBi(w)))) out.push(`wrong needs ${n} entries, null for the right one`);
+  for (const l of ["zh", "en"]) if (!q.tr || !q.tr[l] || (q.tr[l].lines || []).length !== (q.lines || []).length) out.push(`tr.${l}.lines must match lines`);
+  return out;
+}
 
 // Authors tend to put the right option first, so the published order is a
 // fixed shuffle seeded by the question id: the same on every build (saved
 // answers keep pointing at the same option) and independent of the author.
 function shuffled(q) {
+  if (q._kind === "choukai") return q;   // spoken in this order
   const h = require("crypto").createHash("sha1").update(q.id).digest();
   const p = [0, 1, 2, 3];
   for (let i = 3; i > 0; i--) { const j = h[i] % (i + 1); [p[i], p[j]] = [p[j], p[i]]; }
@@ -418,6 +495,7 @@ async function bundleLevel(level, ruby, mock) {
   const refsUsed = {}, lessons = {};
   const out = [];
   for (const q0 of data.qs) {
+    if (q0._kind === "choukai") { out.push(await choukaiItem(q0, render, rubyMode(level))); continue; }
     const q = shuffled(q0);
     const withRuby = !NO_RUBY.has(q.type) && rubyMode(level);
     const fullRuby = !NO_RUBY.has(q.type);
@@ -473,6 +551,31 @@ async function bundleLevel(level, ruby, mock) {
   return { level, groups: GROUPS, types, lessons, refs: refsUsed, passages, questions: out };
 }
 
+// A listening item. Printed options get the level's furigana; spoken ones
+// (`spoken`), the transcript (`ck`, shown after answering) always have it.
+// `au`: the mp3 in audio/choukai/ and where each segment starts (spec §8);
+// `pic`: picture options or the 発話表現 scene, files in images/choukai/.
+async function choukaiItem(q, render, optRuby) {
+  const spoken = SPOKEN.has(q.type) || !!q.spokenOptions, pic = ckPic(q), all = (s) => render(s, true);
+  return {
+    id: q.id, type: q.type,
+    ...(q.difficulty ? { d: q.difficulty } : {}),
+    options: await Promise.all(q.options.map((o) => render(o, spoken || optRuby))),
+    ...(spoken ? { spoken: true } : {}),
+    answer: q.answer,
+    au: ckAudio(q),
+    ...(pic ? { pic } : {}),
+    ck: {
+      ...(q.scene ? { scene: await all(q.scene) } : {}),
+      ...(q.question ? { question: await all(q.question) } : {}),
+      lines: await Promise.all(q.lines.map(async ([who, text]) => [who, await all(text)])),
+      tr: q.tr,
+    },
+    why: q.why, wrong: q.wrong,
+    rev: q.rev || 1,
+  };
+}
+
 // Read-aloud audio for a passage (played after its questions are answered):
 // the text in kanji when there is a kanji version, blanks filled with the right
 // answers, without table lines (信息检索 passages aren't read). The id hashes the
@@ -520,24 +623,33 @@ function sentenceAudio(q) {
 async function bundleMock(level, ruby, n) {
   const b = await bundleLevel(level, ruby, n);
   const cfg = MOCK[level];
-  const SECRET = ["answer", "order", "why", "wrong", "full", "tr", "kj", "okj", "sa"];
+  const SECRET = ["answer", "order", "why", "wrong", "full", "tr", "kj", "okj", "sa", "ck"];
   const key = { questions: {}, passages: {} };
   const qs = b.questions.map((q) => {
     key.questions[q.id] = Object.fromEntries(SECRET.filter((k) => k in q).map((k) => [k, q[k]]));
+    // Spoken options are part of the transcript: the test keeps only how many.
+    if (q.spoken) { key.questions[q.id].options = q.options; q = { ...q, options: q.options.map(() => "") }; }
     return Object.fromEntries(Object.entries(q).filter(([k]) => !SECRET.includes(k)));
   });
   for (const [id, p] of Object.entries(b.passages)) { key.passages[id] = { tr: p.tr, ...(p.kj ? { kj: p.kj } : {}), ...(p.au ? { au: p.au } : {}) }; delete p.tr; delete p.kj; delete p.au; }
   const sections = cfg.sections.map((s) => ({
     ...s,
     problems: s.types.map((t, i) => ({ no: i + 1, type: t, ids: qs.filter((q) => q.type === t).map((q) => q.id) })).filter((p) => p.ids.length),
-  }));
+  })).filter((s) => s.problems.length);   // the listening sitting, when this mock has none
   const order = sections.flatMap((s) => s.problems.flatMap((p) => p.ids));
   const missing = qs.filter((q) => !order.includes(q.id)).map((q) => q.id);
   if (missing.length) throw new Error(`mock-${n}: questions of a type the ${level} test doesn't have: ${missing.join(", ")}`);
   return {
-    test: { level, n, id: `${level.toLowerCase()}-mock-${n}`, groups: b.groups, types: b.types, refs: b.refs, sections, scoring: cfg.scoring, listening: cfg.listening, pass: cfg.pass, passages: b.passages, questions: qs },
+    test: { level, n, id: `${level.toLowerCase()}-mock-${n}`, groups: b.groups, types: b.types, refs: b.refs, sections, scoring: withListening(cfg, sections), listening: cfg.listening, pass: cfg.pass, passages: b.passages, questions: qs },
     key,
   };
+}
+
+// Score parts, plus listening when `sections` (or a practice bundle's types) has it.
+function withListening(cfg, sections) {
+  const ck = cfg.sections.find((s) => s.listening);
+  const has = Array.isArray(sections) ? sections.some((s) => s.listening) : ck.types.some((t) => sections[t]);
+  return has ? [...cfg.scoring, { key: ck.key, zh: ck.zh, en: ck.en, ja: ck.ja, max: cfg.listening.max, min: cfg.listening.min, types: ck.types }] : cfg.scoring;
 }
 
 // Every level that has questions → { N5: { practice, mocks: [{ test, key }] }, … }.
@@ -548,14 +660,16 @@ async function buildQuiz(ruby) {
     const mocks = [];
     if (MOCK[level]) for (const d of mockSets(level)) mocks.push(await bundleMock(level, ruby, +d.split("-")[1]));
     const practice = await bundleLevel(level, ruby);
-    // For the analysis page: how the real test is scored and paced.
+    // For the analysis page: how the real test is scored, and the pace of the
+    // language knowledge and reading sittings.
     if (MOCK[level]) {
-      const cfg = MOCK[level];
-      practice.exam = { scoring: cfg.scoring, listening: cfg.listening, pass: cfg.pass,
-        minutes: cfg.sections.reduce((a, x) => a + x.minutes, 0), items: mocks.length ? mocks[0].test.questions.length : null };
+      const cfg = MOCK[level], m = mocks.length && mocks[0].test;
+      practice.exam = { scoring: withListening(cfg, practice.types), listening: cfg.listening, pass: cfg.pass,
+        minutes: cfg.sections.filter((x) => !x.listening).reduce((a, x) => a + x.minutes, 0), items: m ? m.questions.filter((q) => m.types[q.type].g !== "choukai").length : null };
     }
     out[level] = { practice, mocks };
   }
+  for (const w of CHOUKAI_WARNINGS.values()) console.warn(`  warning: ${w}`);
   return out;
 }
 
@@ -579,6 +693,7 @@ function cues(practice, mocks) {
   const out = [];
   const longest = {}, stars = {};
   for (const [name, d] of [["practice", practice], ...mocks]) for (const q of d.qs) {
+    if (q._kind === "choukai") continue;   // tools/choukai-check.js
     const k = `${q.type}${name === "practice" ? "" : " (mock)"}`;
     if (q.type === "narabe") {
       const s = [...String(q.stem).matchAll(SLOT)].findIndex((m) => m[1] === "★");
@@ -630,7 +745,7 @@ function cues(practice, mocks) {
   return out;
 }
 
-module.exports = { buildQuiz, loadLevel, loadDir, shuffled, answerOf, LEVELS, TYPES, MOCK, QUIZ_PUBLIC, QUIZ_LINKS, AUDIO_REQUESTS, ABOVE_LEVEL, aboveLevel };
+module.exports = { buildQuiz, loadLevel, loadDir, shuffled, answerOf, LEVELS, TYPES, MOCK, QUIZ_PUBLIC, QUIZ_LINKS, AUDIO_REQUESTS, ABOVE_LEVEL, aboveLevel, CK_IMG_DIR };
 
 if (require.main === module) {
   let total = 0, bad = 0;
@@ -655,6 +770,7 @@ if (require.main === module) {
     }
     for (const w of cues(data, mocks)) console.log(`  warning: ${w}`);
   }
+  for (const w of CHOUKAI_WARNINGS.values()) console.log(`  warning: ${w}`);
   if (!total) console.log("No questions yet.");
   process.exit(bad ? 1 : 0);
 }

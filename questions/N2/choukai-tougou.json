@@ -1,0 +1,90 @@
+[
+ {
+  "id": "n2-ck-601",
+  "type": "tougou",
+  "scene": "会社で三人が新人歓迎会の店について話しています。",
+  "lines": [
+   ["M1", "来月の新人歓迎会の店、そろそろ決めないとね。駅前の居酒屋でいいんじゃない？　安いし、去年もあそこだったし。"],
+   ["F", "うーん、あそこ、金曜の夜はすごく混むでしょう。周りの声が大きくて、新人の人たちとほとんど話せなかったって、去年みんな言ってたよ。"],
+   ["M1", "そっか。じゃあ、この前できたイタリアンは？　料理もおしゃれだし。"],
+   ["F", "あそこは会社から歩いて二十分以上かかるのよね。仕事が終わってから行くにはちょっと……。中村さん、どこかいいところ知らない？"],
+   ["M2", "それなら、会社のすぐ裏の和食の店はどうですか。個室があるので、ゆっくり話せますよ。"],
+   ["M1", "ああ、あそこね。でも、一人五千円ぐらいするんじゃない？　ちょっと高いなあ。"],
+   ["M2", "今年は会社から一人二千円の補助が出るって、総務から聞きました。それなら、去年の居酒屋より五百円高いぐらいで済みますよ。"],
+   ["F", "へえ、それなら決まりじゃない？"],
+   ["M1", "そうだね。じゃ、そこにしよう。"]
+  ],
+  "question": "歓迎会の店は、どうして和食の店に決まりましたか。",
+  "spokenOptions": true,
+  "options": ["個室があって、去年の店より安いから", "料理がおしゃれだから", "静かに話せて、払う金額も高くないから", "去年と同じ店だから"],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "公司里三个人在商量迎新会的店。",
+    "question": "迎新会为什么定在了日料店？",
+    "lines": ["下个月迎新会的店，差不多该定了。站前的居酒屋就行吧？便宜，去年也是那儿。", "嗯……那儿周五晚上特别挤吧。周围声音太大，去年大家都说几乎没法跟新人聊天。", "也是。那前不久新开的意大利餐厅呢？菜也挺时髦的。", "那儿从公司走过去要二十多分钟。下了班再去有点……中村，你知道什么好地方吗？", "那公司正后面那家日料店怎么样？有包间，可以慢慢聊。", "啊，那家啊。不过一个人得五千日元左右吧？有点贵啊。", "听总务说，今年公司每人补贴两千日元。这样的话，比去年的居酒屋只多五百日元左右。", "哦，那不就定了？", "是啊。那就那家吧。"],
+    "options": ["因为有包间，而且比去年的店便宜", "因为菜很时髦", "因为能安静地聊天，自己出的钱也不多", "因为和去年是同一家店"]
+   },
+   "en": {
+    "scene": "Three people at a company are talking about where to hold the welcome party for new staff.",
+    "question": "Why did they choose the Japanese restaurant?",
+    "lines": ["We need to decide on a place for next month's welcome party. The izakaya by the station should be fine, right? It's cheap, and we went there last year.", "Hmm, that place gets really crowded on Friday nights. Everyone said last year it was so loud they could hardly talk to the new people.", "True. Then what about the Italian place that just opened? The food's stylish.", "That's more than twenty minutes' walk from the office. A bit much after work… Nakamura-san, do you know anywhere good?", "Then how about the Japanese restaurant right behind the office? It has private rooms, so we could talk properly.", "Ah, that place. But isn't it about 5,000 yen a head? That's a bit expensive.", "I heard from general affairs that this year the company is giving 2,000 yen per person. Then it'd only be about 500 yen more than the izakaya last year.", "Oh, then that settles it, doesn't it?", "Yeah. Let's go there."],
+    "options": ["It has private rooms and is cheaper than last year's place", "The food is stylish", "They can talk quietly, and what they pay isn't high", "It's the same place as last year"]
+   }
+  },
+  "why": { "zh": "日料店有包间「ゆっくり話せる」，价格的顾虑被第三个人「二千円の補助」打消，于是决定。", "en": "The Japanese restaurant has private rooms, and the price worry is removed by the third person's point about the 2,000-yen subsidy." },
+  "wrong": [
+   { "zh": "有包间没错，但补贴后仍比去年的居酒屋「五百円高い」，不是更便宜。", "en": "It does have private rooms, but even with the subsidy it's about 500 yen more than last year's izakaya, not cheaper." },
+   { "zh": "「料理がおしゃれ」说的是意大利餐厅。", "en": "\"Stylish food\" was the Italian place." },
+   null,
+   { "zh": "去年去的是站前的居酒屋。", "en": "Last year they went to the izakaya by the station." }],
+  "traps": ["third-person-decides", "other-option-attribute", "half-right"]
+ },
+ {
+  "id": "n2-ck-602",
+  "type": "tougou",
+  "scene": "テレビで、市の文化センターの講座について説明しています。",
+  "lines": [
+   ["F1", "市の文化センターでは、来月から四つの新しい講座が始まります。一つ目は「写真教室」です。スマートフォンでの撮り方から教えてもらえるので、カメラをお持ちでない方も、初めての方も大歓迎です。二つ目は「料理教室」。毎回、違う国の家庭料理を作ります。材料費が別にかかりますので、ご注意ください。三つ目は「英会話」です。旅行で使える表現を中心に、少人数で練習します。四つ目は「ヨガ」。仕事帰りでも参加できるよう、平日の夜七時半から始まります。"],
+   ["M", "へえ、どれか行ってみようかな。最近座りっぱなしで、体がかたくなっちゃって。"],
+   ["F2", "じゃあ、ヨガがいいんじゃない？"],
+   ["M", "うん。ただ、平日はいつも帰りが八時過ぎるんだよね。"],
+   ["F2", "ああ、それだと間に合わないね。"],
+   ["M", "来年の夏に海外旅行に行くつもりだし、そっちの準備もしたいから、話す練習をしとこうかな。"],
+   ["F2", "いいね。私はね、写真をちゃんと撮れるようになりたいんだけど、カメラ持ってないんだよね。"],
+   ["M", "スマホからって言ってたじゃない。"],
+   ["F2", "あ、そうか。でも、料理も気になるんだよね。材料費が毎回かかるのはちょっと……。最近節約してるし、やっぱり、スマホで始められるほうにする。"]
+  ],
+  "options": ["写真教室", "料理教室", "英会話", "ヨガ"],
+  "questions": [
+   { "question": "質問1：男の人はどの講座に申し込みますか。", "answer": 2,
+     "why": { "zh": "他想去瑜伽但平日八点后才下班，赶不上七点半；为了明年旅行，决定「話す練習」，即英语会话。", "en": "Yoga starts at 7:30 but he's never home before 8; with a trip next summer, he'll practise speaking — English conversation." },
+     "wrong": [
+      { "zh": "想学拍照的是女人。", "en": "It's the woman who wants to learn photography." },
+      { "zh": "男人没提烹饪。", "en": "He never mentions cooking." },
+      null,
+      { "zh": "瑜伽七点半开始，他平日八点以后才下班，来不及。", "en": "Yoga starts at 7:30 and he's never out before 8." }] },
+   { "question": "質問2：女の人はどの講座に申し込みますか。", "answer": 0,
+     "why": { "zh": "烹饪要另付材料费，她想省钱；「スマホで始められるほう」对应介绍里摄影班「スマートフォンでの撮り方から」。", "en": "Cooking has extra ingredient costs and she wants to save; \"the one I can start on my phone\" matches the photography class, which starts with smartphones." },
+     "wrong": [null,
+      { "zh": "烹饪班要另付材料费，她想省钱，所以放弃了。", "en": "Cooking costs extra for ingredients, so she drops it to save money." },
+      { "zh": "英语会话是男人要报的。", "en": "English conversation is the man's choice." },
+      { "zh": "瑜伽是她推荐给男人的，不是自己要报的。", "en": "She suggests yoga for him, not for herself." }] }
+  ],
+  "tr": {
+   "zh": {
+    "scene": "电视上正在介绍市文化中心的课程。",
+    "questions": ["问题1：男人会报名哪个课程？", "问题2：女人会报名哪个课程？"],
+    "lines": ["市文化中心下个月开始开设四门新课程。第一门是“摄影班”，从怎么用手机拍照教起，没有相机的人和初学者都欢迎。第二门是“烹饪班”，每次做一个不同国家的家常菜。材料费需另付，请注意。第三门是“英语会话”，以旅行中用得上的表达为主，小班练习。第四门是“瑜伽”，为了下班后也能参加，平日晚上七点半开始。", "哦，要不要去上一个呢。最近老是坐着，身体都僵了。", "那瑜伽不是挺好？", "嗯。不过我平日总是八点以后才到家。", "啊，那就赶不上了。", "我打算明年夏天出国旅行，也想为那个做准备，练练说话吧。", "不错啊。我呢，想学会好好拍照，可我没有相机。", "不是说从手机开始教吗？", "啊，对哦。不过烹饪我也挺感兴趣的。每次都要材料费有点……最近在省钱，还是选用手机就能开始的那个吧。"],
+    "options": ["摄影班", "烹饪班", "英语会话", "瑜伽"]
+   },
+   "en": {
+    "scene": "A TV programme is describing courses at the city's cultural centre.",
+    "questions": ["Question 1: Which course will the man sign up for?", "Question 2: Which course will the woman sign up for?"],
+    "lines": ["Four new courses start at the city cultural centre next month. The first is a photography class. It starts with how to take photos on a smartphone, so people without a camera and complete beginners are welcome. The second is a cooking class, making home cooking from a different country each time. Please note that ingredients cost extra. The third is English conversation, practising phrases you can use when travelling, in small groups. The fourth is yoga, starting at 7:30 on weekday evenings so you can come after work.", "Huh, maybe I'll try one. I've been sitting all day lately and I've got really stiff.", "Then wouldn't yoga be good?", "Yeah. But on weekdays I'm never home before eight.", "Ah, then you won't make it.", "I'm planning a trip abroad next summer and want to get ready for that, so maybe I'll practise speaking.", "Nice. Me, I want to learn to take proper photos, but I don't have a camera.", "Didn't they say it starts with smartphones?", "Oh, right. But I'm curious about cooking too. Paying for ingredients every time is a bit… I'm trying to save lately, so I'll go with the one I can start on my phone."],
+    "options": ["Photography class", "Cooking class", "English conversation", "Yoga"]
+   }
+  },
+  "traps": ["condition-conflict", "someone-else"]
+ }
+]

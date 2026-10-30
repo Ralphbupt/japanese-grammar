@@ -268,3 +268,34 @@ body.quiz-busy .quiz-about { display: none; }
 .q-say { background: none; border: 1px solid var(--border); border-radius: var(--radius-pill); cursor: pointer; font-size: .85rem; padding: .05rem .45rem; margin-left: .3rem; vertical-align: .1em; color: inherit; }
 .q-say:hover { border-color: var(--accent); }
 .q-order { margin: .2rem 0 .6rem; font-size: .95rem; }
+
+/* Listening (聴解): player, picture options, the 発話表現 scene with its arrow, transcript. */
+.q-ck-player { display: flex; align-items: center; gap: .7rem; margin: 0 0 .8rem; }
+.q-ck-play { width: 3rem; height: 3rem; justify-content: center; padding: 0; border-radius: 50%; font-size: 1.1rem; }
+.q-ck-bar { flex: 1; height: 6px; border-radius: 3px; background: var(--border); overflow: hidden; }
+.q-ck-bar span { display: block; width: 0; height: 100%; background: var(--accent); }
+.q-ck-time { font-size: .85rem; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.q-ck-wait { margin: -.3rem 0 .8rem; min-height: 1.6em; }
+.q-ck-pics { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: .5rem; }
+@media (min-width: 700px) { .q-ck-pics { grid-template-columns: repeat(4, 1fr); } }
+.q-opt.q-ck-pic { position: relative; display: block; padding: .4rem; min-height: 0; }
+.q-ck-pic .q-num { position: absolute; top: .4rem; left: .4rem; background: var(--bg); }
+.q-ck-pic img { display: block; width: 100%; height: auto; border-radius: 4px; background: #fff; }
+.q-opt.q-ck-pic::after { position: absolute; top: .3rem; right: .5rem; }
+.q-ck-nums { list-style: none; margin: 0; padding: 0; display: flex; gap: .6rem; }
+.q-ck-nums .q-opt { justify-content: center; min-width: 4.5rem; }
+.q-ck-nums.q-ck-shown { display: grid; }
+.q-ck-nums.q-ck-shown .q-opt { justify-content: flex-start; }
+.q-ck-otext small, .q-ck-script small { display: block; color: var(--text-muted); font-size: .85em; }
+.q-ck-scene { position: relative; max-width: 560px; margin: 2rem auto 1rem; }
+.q-ck-scene img { display: block; width: 100%; height: auto; border: 1px solid var(--border); border-radius: var(--radius); background: #fff; }
+.q-ck-arrow { position: absolute; width: clamp(18px, 6%, 34px); transform: translate(-50%, -100%); fill: var(--accent); stroke: #fff; stroke-width: 3; overflow: visible; }
+.q-ck-script { margin: .8rem 0; padding: .7rem .9rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface-2); }
+.q-ck-head { margin: 0 0 .4rem; font-weight: 600; font-size: .92em; }
+.q-ck-script ol { list-style: none; margin: 0; padding: 0; display: grid; gap: .45rem; line-height: 1.7; }
+.q-ck-script li { display: flex; gap: .6rem; }
+.q-ck-nar { color: var(--text-muted); }
+.q-ck-who { flex: none; min-width: 1.6em; }
+.q-sheet-row > .q-ck-mark { display: inline-flex; align-items: center; gap: .2rem; width: auto; margin-right: .7rem; font-size: 1rem; }
+.q-ck-mark small { color: var(--text-muted); margin-right: .1rem; }
+.q-cell:disabled { opacity: .4; cursor: default; }

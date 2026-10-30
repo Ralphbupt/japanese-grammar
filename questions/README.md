@@ -20,6 +20,7 @@ Field-level format: the header comment in `build-quiz.js`. Reference examples: `
 | | `short` / `mid` / `long` / `info` | 内容理解（短文 / 中文 / 長文 (N3)）/ 情報検索 | passage (+ optional `intro` line); each question has `q` | |
 | | `tougou` | 統合理解 (N2) | two texts in one passage, headed `A` and `B` on their own lines | |
 | | `shuchou` | 主張理解（長文）(N2) | one argumentative text | |
+| `choukai-*.json` | `kadai` / `point` / `gaiyou` / `hatsuwa` / `sokuji` / `tougou` | 聴解 | a listening script (format: `docs/quiz-listening-spec.md` §8; checked by `tools/choukai-check.js`) | `answer`; options not shuffled |
 
 Furigana follows the real test: none in vocabulary; N5/N4 grammar and reading have it; N3 grammar and reading have it only on words with kanji above N4 (`BASIC_KANJI` in `build-quiz.js` lists the N5/N4 kanji that go bare); N2/N1 have none in the question (the finished sentence and explanations shown after answering keep it). Never write readings yourself.
 
@@ -36,7 +37,7 @@ Standard newspaper spellings; words normally written in kana stay kana.
 
 ## Mock tests
 
-`questions/N{level}/mock-N/` holds one test: `moji-goi.json`, `bunpou.json` (grammar, same shape as a lesson file) and `dokkai.json`, with as many questions of each type as the real test:
+`questions/N{level}/mock-N/` holds one test: `moji-goi.json`, `bunpou.json` (grammar, same shape as a lesson file), `dokkai.json` and optionally `choukai-*.json` (listening: N5 kadai 7, point 6, hatsuwa 5, sokuji 6; ids `n5-m1-ck-101…`), with as many questions of each type as the real test:
 
 | | vocabulary | grammar | reading |
 |---|---|---|---|
