@@ -11,7 +11,7 @@
  *   POST /feedback              → a reader's note from the practice pages, into D1
  *
  * Guard rails, because the quota is shared by everyone:
- *   - only browsers on jpnotes.dev (or localhost while developing) — CORS + Origin check
+ *   - only browsers on jpnotes.dev — CORS + Origin check (localhost only under wrangler dev)
  *   - one fixed model, so the worst an abuser can do is use up the quota
  *   - request size and reply length capped
  *   - per-IP limits: a burst limit per minute and a daily cap, plus a daily
@@ -61,13 +61,19 @@ const FALLBACKS = [
 ];
 const FALLBACK_PER_DAY = 1500;                        // requests a day across all backups
 
-const ORIGIN_RE = /^(https:\/\/jpnotes\.dev|http:\/\/(localhost|127\.0\.0\.1)(:\d+)?)$/;
+// Production answers jpnotes.dev only. Local pages are allowed just under
+// `wrangler dev` (ALLOW_LOCAL=1 in worker/.dev.vars), so a copy of the site
+// opened on localhost can't use the live relay's quota.
+const ORIGIN_RE = /^https:\/\/jpnotes\.dev$/;
+const LOCAL_RE = /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/;
 const QUOTA_GONE = '今天本站的免费额度已用完，明天再来；或在设置里填自己的 API key。 / The site’s free quota for today is used up; come back tomorrow, or add your own API key in settings.';
 
 export default {
   async fetch(req, env, ctx) {
     const origin = req.headers.get('Origin') || '';
-    if (!ORIGIN_RE.test(origin)) return json({ error: { message: 'Forbidden' } }, 403);
+    if (!ORIGIN_RE.test(origin) && !(env.ALLOW_LOCAL === '1' && LOCAL_RE.test(origin))) {
+      return json({ error: { message: '本站免费 AI 只能在 jpnotes.dev 上使用。 / The free AI only works on jpnotes.dev.' } }, 403, LOCAL_RE.test(origin) ? { 'Access-Control-Allow-Origin': origin, Vary: 'Origin' } : {});
+    }
     const cors = {
       'Access-Control-Allow-Origin': origin,
       'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',

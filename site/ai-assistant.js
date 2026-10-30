@@ -143,7 +143,10 @@
   function forgetCfg() { try { localStorage.removeItem(CFG_KEY); sessionStorage.removeItem(CFG_KEY); } catch (e) {} }
   function active() { return cfg ? cfg.profiles[cfg.active] : null; }
   // Flat view of the active profile, the shape the request builders take.
-  function callCfg() { var a = active(); return { provider: cfg.active, base: a.base, key: a.key, model: a.model, effort: cfg.effort || '' }; }
+  // The live relay only answers jpnotes.dev; on localhost, ?ai=local (or the
+  // feedback box's ?fb=local) sends the free preset to `wrangler dev` instead.
+  var LOCAL_RELAY = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) && /[?&](ai|fb)=local\b/.test(location.search);
+  function callCfg() { var a = active(); return { provider: cfg.active, base: cfg.active === 'jpnotes' && LOCAL_RELAY ? 'http://localhost:8787/v1' : a.base, key: a.key, model: a.model, effort: cfg.effort || '' }; }
   function setProfile(provider, prof, makeActive) {
     if (!cfg) cfg = { v: 2, active: provider, profiles: {}, effort: '', session: false };
     cfg.profiles[provider] = prof;
