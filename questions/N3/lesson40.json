@@ -86,7 +86,7 @@
       "lesson40#1"
     ],
     "difficulty": 2,
-    "stem": "停電で、部屋の 中は 隣の 人の [_] [_] [★] [_]。",
+    "stem": "停電で、部屋の 中は 隣の 人の [_] [_] [_] [★]。",
     "options": [
       "顔が",
       "見えない",
@@ -105,15 +105,16 @@
       "en": "In the blackout, the room was so dark I couldn't see the face of the person next to me."
     },
     "why": {
-      "zh": "「顔が見えない」接「ほど」修饰「暗かった」：暗到看不见脸的程度。★ 是「ほど」。",
-      "en": "「顔が見えない」 ＋ 「ほど」 tells how dark (暗かった) it was. The ★ is 「ほど」."
+      "zh": "「顔が見えない」接「ほど」修饰「暗かった」：暗到看不见脸的程度。★ 在第四格，是「暗かった」。",
+      "en": "「顔が見えない」 ＋ 「ほど」 tells how dark (暗かった) it was. The ★ is the fourth slot: 「暗かった」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l40-004",
@@ -202,7 +203,7 @@
       "lesson40#2"
     ],
     "difficulty": 2,
-    "stem": "この 問題は [_] [_] [★] [_] 簡単だ。",
+    "stem": "この 問題は [★] [_] [_] [_] 簡単だ。",
     "options": [
       "小学生",
       "でも",
@@ -221,15 +222,16 @@
       "en": "This question is so easy even an elementary school kid could do it."
     },
     "why": {
-      "zh": "「小学生でもわかる」（连小学生都懂）＋「くらい」，表示“简单”的程度。★ 是「わかる」。",
-      "en": "「小学生でもわかる」 ＋ 「くらい」 shows how easy it is. The ★ is 「わかる」."
+      "zh": "「小学生でもわかる」（连小学生都懂）＋「くらい」，表示“简单”的程度。★ 在第一格，是「小学生」。",
+      "en": "「小学生でもわかる」 ＋ 「くらい」 shows how easy it is. The ★ is the first slot: 「小学生」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l40-007",
@@ -281,9 +283,9 @@
     "stem": "部屋は 駅に 近ければ（　）、家賃が 高く なる。",
     "options": [
       "近い ほど",
-      "近く ほど",
-      "近かった ほど",
-      "近さ ほど"
+      "近い のに",
+      "近い うちに",
+      "近い から"
     ],
     "answer": 0,
     "full": "部屋は 駅に 近ければ 近いほど、家賃が 高く なる。",
@@ -298,16 +300,16 @@
     "wrong": [
       null,
       {
-        "zh": "「近く」是连用形，不能直接接「ほど」。",
-        "en": "「近く」 is the adverbial form and can't take 「ほど」 here."
+        "zh": "「のに」是逆接，“越近房租越贵”是程度的比例关系，不是转折；「近ければ近いのに」也不成立。",
+        "en": "「のに」 is \"even though\"; the sentence is a proportion (the closer, the higher), and 「近ければ近いのに」 isn't a pattern."
       },
       {
-        "zh": "「ば〜ほど」的后半用现在形，不用过去式。",
-        "en": "The second half of 「ば〜ほど」 is non-past, not past."
+        "zh": "「うちに」是“趁……”，前面已经有「近ければ」，「近ければ近いうちに」不成立。",
+        "en": "「うちに」 is \"while\"; after 「近ければ」, 「近いうちに」 doesn't make a pattern."
       },
       {
-        "zh": "「近さ」是名词（近的程度），不构成「ば〜ほど」。",
-        "en": "「近さ」 is a noun (nearness) and doesn't form 「ば〜ほど」."
+        "zh": "「から」表示原因，「近ければ近いから」不成立；“越……越……”要用「ば〜ほど」。",
+        "en": "「から」 gives a reason, and 「近ければ近いから」 isn't a pattern; \"the more…, the more\" is 「ば〜ほど」."
       }
     ]
   },
@@ -397,9 +399,9 @@
     "stem": "この 書類に 名前を 書き（　）、手続きは 終わりです。",
     "options": [
       "さえ すれば",
-      "さえ あれば",
-      "さえ なれば",
-      "さえ いれば"
+      "は したが",
+      "も しないで",
+      "かけたら"
     ],
     "answer": 0,
     "full": "この 書類に 名前を 書きさえ すれば、手続きは 終わりです。",
@@ -414,16 +416,16 @@
     "wrong": [
       null,
       {
-        "zh": "「さえあれば」接名词或形容词（お金さえあれば、広くさえあれば），不接动词词干。",
-        "en": "「さえあれば」 follows nouns or adjectives (お金さえあれば), not a verb stem."
+        "zh": "「書きはしたが」是“写是写了，但是……”，后面要接转折，和“手续就办完了”接不上。",
+        "en": "「書きはしたが」 is \"I did write it, but…\"; it needs a contrast, not \"and that's it\"."
       },
       {
-        "zh": "没有「動詞ます形＋さえなれば」的说法。",
-        "en": "There is no 「verb stem ＋ さえなれば」 pattern."
+        "zh": "「書きもしないで」是“连写都不写”，没写名字手续不可能办完。",
+        "en": "「書きもしないで」 is \"without even writing\"; the procedure can't be finished without your name."
       },
       {
-        "zh": "「さえいれば」接人（あなたさえいれば）或「〜てさえいれば」，不直接接动词词干。",
-        "en": "「さえいれば」 follows a person (あなたさえいれば) or a て-form (〜てさえいれば), not a bare verb stem."
+        "zh": "「書きかけたら」是“刚写到一半的话”，写一半手续不算完。",
+        "en": "「書きかけたら」 is \"if you start writing\"; half-written doesn't finish the procedure."
       }
     ]
   },
@@ -434,7 +436,7 @@
       "lesson40#4"
     ],
     "difficulty": 2,
-    "stem": "部屋が [_] [_] [★] [_] 遠くても かまわない。",
+    "stem": "部屋が [_] [★] [_] [_] 遠くても かまわない。",
     "options": [
       "広く",
       "さえ",
@@ -453,14 +455,15 @@
       "en": "As long as the room is spacious, I don't mind it being far from the station."
     },
     "why": {
-      "zh": "い形容词：〜く ＋ さえ ＋ あれば（広くさえあれば）；「駅から」接「遠くても」。★ 是「あれば」。",
-      "en": "i-adjective: 〜く ＋ さえ ＋ あれば (広くさえあれば); 「駅から」 goes with 「遠くても」. The ★ is 「あれば」."
+      "zh": "い形容词：〜く ＋ さえ ＋ あれば（広くさえあれば）；「駅から」接「遠くても」。★ 在第二格，是「さえ」。",
+      "en": "i-adjective: 〜く ＋ さえ ＋ あれば (広くさえあれば); 「駅から」 goes with 「遠くても」. The ★ is the second slot: 「さえ」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   }
 ]

@@ -124,6 +124,7 @@
   },
   {
     "id": "n4-l18-004",
+    "rev": 3,
     "type": "narabe",
     "refs": [
       "lesson18#1"
@@ -131,9 +132,9 @@
     "difficulty": 2,
     "stem": "父は 兄に [_] [_] [★] [_]。",
     "options": [
-      "洗わ",
+      "洗わせて",
       "自分の",
-      "せた",
+      "いました",
       "車を"
     ],
     "order": [
@@ -142,15 +143,15 @@
       0,
       2
     ],
-    "full": "父は 兄に 自分の 車を 洗わせた。",
-    "kj": "父は兄に自分の車を洗わせた。",
+    "full": "父は 兄に 自分の 車を 洗わせて いました。",
+    "kj": "父は兄に自分の車を洗わせていました。",
     "tr": {
-      "zh": "爸爸让哥哥洗了自己的车。",
-      "en": "Father made my brother wash his car."
+      "zh": "爸爸以前总让哥哥洗自己的车。",
+      "en": "Father used to make my brother wash his car."
     },
     "why": {
-      "zh": "他动词使役：人に＋物を＋使役形。自分の 車を 洗わ せた，★ 在第三格，是「洗わ」。",
-      "en": "Transitive causative: person に ＋ object を ＋ causative: 自分の 車を 洗わ せた. The ★ is the third slot: 「洗わ」."
+      "zh": "他动词使役：人に＋物を＋使役形。自分の 車を 洗わせて いました，★ 在第三格，是「洗わせて」。",
+      "en": "Transitive causative: person に ＋ object を ＋ causative: 自分の 車を 洗わせて いました. The ★ is the third slot: 「洗わせて」."
     },
     "wrong": [
       null,
@@ -248,7 +249,7 @@
       "lesson18#2"
     ],
     "difficulty": 2,
-    "stem": "友達が 私に [_] [_] [★] [_]。",
+    "stem": "友達が 私に [★] [_] [_] [_]。",
     "options": [
       "くれた",
       "運転させて",
@@ -268,15 +269,16 @@
       "en": "My friend let me drive his new car."
     },
     "why": {
-      "zh": "别人允许我做：「〜させてくれる」。新しい 車を 運転させて くれた，★ 在第三格，是「運転させて」。",
-      "en": "Someone lets me do something: 「〜させてくれる」. 新しい 車を 運転させて くれた — the ★ is the third slot: 「運転させて」."
+      "zh": "别人允许我做：「〜させてくれる」。新しい 車を 運転させて くれた，★ 在第一格，是「新しい」。",
+      "en": "Someone lets me do something: 「〜させてくれる」. 新しい 車を 運転させて くれた — the ★ is the first slot: 「新しい」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l18-008",

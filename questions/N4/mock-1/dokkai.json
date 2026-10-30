@@ -3,69 +3,74 @@
     "id": "n4-m1-p1",
     "type": "bunshou",
     "difficulty": 2,
-    "intro": "留学生の チャンさんが 「日本の ゴミ」に ついて 作文を 書きました。",
-    "passage": "わたしが 日本に 来て、いちばん おどろいたのは ゴミの 出し方です。日本では、ゴミを いくつかの 種類に 分けて、決められた 日に 出さなければ なりません。\n来た ばかりの ころ、わたしは それを 知らなくて、月曜日に びんを 出して [[1]]。すると、となりの 人に 「びんは 木曜日ですよ」と [[2]]。とても はずかしかったです。\n[[3]]、わたしは 市役所で ゴミの カレンダーを もらって、冷蔵庫に はって おきました。今は 毎朝 カレンダーを 見てから ゴミを 出す [[4]]。はじめは めんどうでしたが、もう なれました。",
-    "kj": "私が日本に来て、一番驚いたのはゴミの出し方です。日本では、ゴミをいくつかの種類に分けて、決められた日に出さなければなりません。\n来たばかりのころ、私はそれを知らなくて、月曜日に瓶を出してしまいました。すると、隣の人に「瓶は木曜日ですよ」と言われました。とても恥ずかしかったです。\nそれで、私は市役所でゴミのカレンダーをもらって、冷蔵庫に貼っておきました。今は毎朝カレンダーを見てからゴミを出すようになりました。初めは面倒でしたが、もう慣れました。",
+    "intro": "留学生の キムさんが 「せんとう」に ついて 作文を 書きました。",
+    "passage": "先月、友だちに さそわれて、初めて せんとうに 行きました。せんとうは みんなで 入る 大きい おふろです。\nわたしの 国には せんとうが ないので、行く 前は 少し しんぱいでした。知らない 人と いっしょに おふろに 入るのは はずかしいと [[1]] からです。\nでも、友だちが 入り方を ていねいに 教えて くれました。おふろの お湯は みんなで 使うので、入る 前に 体を [[2]]。\n大きい おふろは とても 気持ちが よかったです。[[3]]、おふろの あとで 飲んだ つめたい 牛乳も おいしかったです。来月は 母が 国から 遊びに 来るので、母にも せんとうの よさを [[4]]。",
+    "kj": "先月、友達に誘われて、初めて銭湯に行きました。銭湯はみんなで入る大きいお風呂です。\n私の国には銭湯がないので、行く前は少し心配でした。知らない人と一緒にお風呂に入るのは恥ずかしいと思っていたからです。\nでも、友達が入り方を丁寧に教えてくれました。お風呂のお湯はみんなで使うので、入る前に体を洗わなければなりません。\n大きいお風呂はとても気持ちがよかったです。それに、お風呂の後で飲んだ冷たい牛乳もおいしかったです。来月は母が国から遊びに来るので、母にも銭湯の良さを教えてあげたいです。",
     "tr": {
-      "zh": "我来日本后最吃惊的是扔垃圾的方法。在日本，必须把垃圾分成几类，在规定的日子扔。刚来的时候我不知道这些，星期一就把瓶子扔出去了。结果被邻居说：“瓶子是星期四哦。”我非常难为情。所以我在市政府领了垃圾日历，事先贴在了冰箱上。现在我每天早上都会先看日历再扔垃圾。一开始觉得麻烦，现在已经习惯了。",
-      "en": "What surprised me most when I came to Japan was how you put out the rubbish. In Japan you have to sort it into several kinds and put it out on fixed days. When I had just arrived I didn't know that, and I went and put my bottles out on a Monday. Then my neighbour told me, “Bottles are Thursdays.” I was so embarrassed. So I got a rubbish calendar from the city office and stuck it on my fridge. Now I've got into the habit of checking the calendar every morning before putting the rubbish out. It was a nuisance at first, but I'm used to it now."
+      "zh": "上个月我被朋友邀请，第一次去了澡堂。澡堂是大家一起泡的大浴池。我的国家没有澡堂，所以去之前有点担心，因为我原来觉得和不认识的人一起泡澡很难为情。不过，朋友仔细地教了我怎么泡。浴池的热水是大家一起用的，所以进去之前必须先洗身体。大浴池非常舒服。而且，泡完澡喝的冰牛奶也很好喝。下个月妈妈要从国内来玩，我也想让妈妈知道澡堂的好处。",
+      "en": "Last month a friend invited me, and I went to a sentō (public bath) for the first time. A sentō is a big bath that everyone gets into together. There are no sentō in my country, so before going I was a little worried, because I had thought it would be embarrassing to get into a bath with strangers. But my friend carefully showed me how to do it. Everyone shares the bath water, so you have to wash your body before you get in. The big bath felt wonderful. On top of that, the cold milk I drank afterwards was delicious too. Next month my mother is coming from home for a visit, so I want to show her how good a sentō is too."
     },
     "questions": [
       {
-        "options": ["しまいました", "おきました", "ありました", "くれました"],
+        "rev": 2,
+        "options": ["思って いた", "思って いる", "思われた", "思わせた"],
         "answer": 0,
         "why": {
-          "zh": "不知道规定，在错的日子扔了瓶子——无意中做了不好的事，用表示遗憾的「〜て しまいました」。",
-          "en": "Not knowing the rule, the writer put the bottles out on the wrong day — an unintended mistake, so the regretful 「〜て しまいました」."
+          "zh": "担心的是“去之前”的事，「行く 前は 少し しんぱいでした」——当时一直那样以为，用「思って いた」。",
+          "en": "The worry was before going (「行く 前は 少し しんぱいでした」) — what the writer had thought then, so 「思って いた」."
         },
         "wrong": [
           null,
-          { "zh": "「〜て おきました」是有意事先做好，可作者是因为不知道才扔错的。", "en": "「〜て おきました」 is doing something on purpose in advance, but the writer did it out of ignorance." },
-          { "zh": "「〜て ありました」描述状态，要用「びんが」，不能表示作者自己做的事。", "en": "「〜て ありました」 describes a state (with 「びんが」); it can't narrate what the writer did." },
-          { "zh": "「〜て くれました」是别人为我做，这里扔瓶子的是作者自己。", "en": "「〜て くれました」 is someone doing something for me, but the writer put the bottles out." }
+          { "zh": "「思って いる」是现在还这么想，可作者已经去过，而且觉得很舒服。", "en": "「思って いる」 is what the writer thinks now, but they've been and enjoyed it." },
+          { "zh": "「思われた」是被动“被别人认为”，觉得难为情的是作者自己。", "en": "「思われた」 is passive (was thought by others), but it's the writer who felt that way." },
+          { "zh": "「思わせた」是使役“让别人这样想”，意思不对。", "en": "「思わせた」 is causative (made someone think so) — wrong meaning." }
         ]
       },
       {
-        "options": ["言われました", "言いました", "言わせました", "言って あげました"],
+        "rev": 2,
+        "options": ["あらわなければ なりません", "あらっては いけません", "あらわなくても いいです", "あらう ところです"],
+        "okj": ["洗わなければなりません", "洗ってはいけません", "洗わなくてもいいです", "洗うところです"],
         "answer": 0,
         "why": {
-          "zh": "说「びんは 木曜日ですよ」的是邻居（「となりの 人に」），作者是被说的一方，用被动「言われました」；所以接着觉得「はずかしかった」。",
-          "en": "The neighbour (「となりの 人に」) said 「びんは 木曜日ですよ」 and the writer was on the receiving end — passive 「言われました」, which is why they felt embarrassed."
+          "zh": "「お湯は みんなで 使うので」：热水大家共用，所以进去前必须先洗身体，用义务「〜なければ なりません」。",
+          "en": "「お湯は みんなで 使うので」: everyone shares the water, so washing first is required — 「〜なければ なりません」."
         },
         "wrong": [
           null,
-          { "zh": "「言いました」就成了作者对邻居说，可是不懂规定的是作者，而且接不上「はずかしかった」。", "en": "「言いました」 would have the writer telling the neighbour — but the writer is the one who didn't know the rule." },
-          { "zh": "「言わせました」是作者让邻居说，意思不通。", "en": "「言わせました」 means the writer made the neighbour say it — makes no sense." },
-          { "zh": "「言って あげました」是作者好心告诉邻居，方向反了。", "en": "「言って あげました」 has the writer kindly telling the neighbour — the wrong way round." }
+          { "zh": "「あらっては いけません」是禁止洗，和“大家共用热水”的理由正好相反。", "en": "「あらっては いけません」 forbids washing — the opposite of what shared water calls for." },
+          { "zh": "「あらわなくても いいです」是“不洗也行”，和「みんなで 使うので」这个理由不合。", "en": "「あらわなくても いいです」 (no need to wash) doesn't follow from 「みんなで 使うので」." },
+          { "zh": "「あらう ところです」是“正要洗”，说的是眼前的动作，不是泡澡的规矩。", "en": "「あらう ところです」 is \"about to wash\" — a moment in time, not a bath rule." }
         ]
       },
       {
-        "options": ["それで", "しかし", "それに", "たとえば"],
+        "rev": 2,
+        "options": ["それに", "でも", "それとも", "たとえば"],
         "okj": [null, null, null, "例えば"],
         "answer": 0,
         "why": {
-          "zh": "因为扔错被提醒、很难为情，于是去领了垃圾日历——前面是原因，后面是结果，用「それで」。",
-          "en": "Being embarrassed after the mistake is why the writer got the calendar — cause then result, so 「それで」."
+          "zh": "前面说浴池很舒服，后面再加一件好事（牛奶「も」好喝），用表示追加的「それに」。",
+          "en": "After \"the bath felt great\" comes another good thing (the milk was good 「も」) — adding a point is 「それに」."
         },
         "wrong": [
           null,
-          { "zh": "「しかし」表示转折，可领日历正是扔错之后自然的做法，不是相反的事。", "en": "「しかし」 signals a contrast, but getting the calendar is the natural response, not an opposite." },
-          { "zh": "「それに」是“而且”，用来追加同类的事，这里是因果关系。", "en": "「それに」 adds another point of the same kind; here it's cause and effect." },
-          { "zh": "「たとえば」是举例，后面不是前文的例子。", "en": "「たとえば」 introduces an example, and what follows isn't one." }
+          { "zh": "「でも」表示转折，可前后都是好事，不是相反的内容。", "en": "「でも」 signals a contrast, but both sentences are positive." },
+          { "zh": "「それとも」是“还是”，用在问两者选哪个的时候，不用于陈述。", "en": "「それとも」 (or) is for choosing between two options in a question, not for statements." },
+          { "zh": "「たとえば」是举例，牛奶不是“浴池舒服”的例子。", "en": "「たとえば」 introduces an example, and the milk isn't an example of the bath feeling good." }
         ]
       },
       {
-        "options": ["ように なりました", "ように しましょう", "ことに なりました", "ところでした"],
+        "rev": 2,
+        "options": ["教えて あげたいです", "教えて もらいたいです", "教えられたいです", "教えさせたいです"],
         "answer": 0,
         "why": {
-          "zh": "「今は」＋「もう なれました」：从不知道规定到现在养成了先看日历的习惯，是变化，用「ように なりました」。",
-          "en": "「今は」 and 「もう なれました」: from not knowing the rule to now habitually checking first — a change, so 「ように なりました」."
+          "zh": "作者想为来玩的妈妈做一件好事——让她知道澡堂的好处，为别人做用「〜て あげたい」。",
+          "en": "The writer wants to do something for the visiting mother — show her how good a sentō is: doing something for someone is 「〜て あげたい」."
         },
         "wrong": [
           null,
-          { "zh": "「ように しましょう」是劝诱或号召，不能用来叙述作者现在的习惯。", "en": "「ように しましょう」 is a suggestion (let's try to), not a description of the writer's habit now." },
-          { "zh": "「ことに なりました」表示别人或规则决定，叙述的是作者自己养成的习惯，而且接不上「今は」。", "en": "「ことに なりました」 means it was decided for them; this is a habit the writer formed." },
-          { "zh": "「出す ところでした」是“差点扔了”，和每天早上的习惯不符。", "en": "「出す ところでした」 means \"I almost put it out\" — not an everyday habit." }
+          { "zh": "「教えて もらいたい」是想让妈妈教我，可妈妈的国家没有澡堂，懂的是作者。", "en": "「教えて もらいたい」 is wanting mother to teach me, but she's never been — the writer is the one who knows." },
+          { "zh": "「教えられたい」是“想被教”，方向反了。", "en": "「教えられたい」 (want to be taught) is the wrong way round." },
+          { "zh": "「教えさせたい」是“想让（别人）去教”，可要教妈妈的是作者自己。", "en": "「教えさせたい」 (want to make someone teach) — but the writer means to tell her themselves." }
         ]
       }
     ]
@@ -75,11 +80,11 @@
     "type": "short",
     "difficulty": 2,
     "intro": "マンションの 入り口に、この お知らせが はって あります。",
-    "passage": "マンションに 住んで いる みなさんへ\n\n11月10日（水）の 午前9時から 午後3時まで、エレベーターの 工事が あります。この 間、エレベーターは 使えません。\nこの 日に 重い 荷物が とどく 人は、工事の 前の 日までに 管理室に 連絡して ください。管理室の 人が 荷物を 部屋まで 運びます。\n\nさくらマンション 管理室",
-    "kj": "マンションに住んでいる皆さんへ\n\n11月10日（水）の午前9時から午後3時まで、エレベーターの工事があります。この間、エレベーターは使えません。\nこの日に重い荷物が届く人は、工事の前の日までに管理室に連絡してください。管理室の人が荷物を部屋まで運びます。\n\nさくらマンション管理室",
+    "passage": "マンションに 住んで いる みなさんへ\n\n11月10日（水）の 午前9時から 午後3時まで、エレベーターの 工事が あります。この 間、エレベーターは 使えません。階段を 使って ください。\nこの 日に 重い 荷物が とどく 人は、工事の 前の 日までに 管理室に 連絡して ください。管理室の 人が 荷物を 部屋まで 運びます。\nごめいわくを おかけしますが、よろしく お願いします。\n\nさくらマンション 管理室",
+    "kj": "マンションに住んでいる皆さんへ\n\n11月10日（水）の午前9時から午後3時まで、エレベーターの工事があります。この間、エレベーターは使えません。階段を使ってください。\nこの日に重い荷物が届く人は、工事の前の日までに管理室に連絡してください。管理室の人が荷物を部屋まで運びます。\nご迷惑をおかけしますが、よろしくお願いします。\n\nさくらマンション管理室",
     "tr": {
-      "zh": "致住在本公寓的各位：11月10日（周三）上午9点到下午3点，电梯施工。在此期间电梯不能使用。这天有重的包裹送到的住户，请在施工前一天之前联系管理室。管理室的人会把包裹搬到房间。樱花公寓管理室",
-      "en": "To all residents: On Wednesday 10 November, from 9 am to 3 pm, there will be work on the elevator, and it can't be used during that time. If a heavy delivery is coming to you that day, please contact the management office by the day before the work. Office staff will carry the parcel up to your flat. — Sakura Mansion Management Office"
+      "zh": "致住在本公寓的各位：11月10日（周三）上午9点到下午3点，电梯施工。在此期间电梯不能使用，请走楼梯。这天有重的包裹送到的住户，请在施工前一天之前联系管理室。管理室的人会把包裹搬到房间。给大家添麻烦了，请多关照。樱花公寓管理室",
+      "en": "To all residents: On Wednesday 10 November, from 9 am to 3 pm, there will be work on the elevator, and it can't be used during that time; please use the stairs. If a heavy delivery is coming to you that day, please contact the management office by the day before the work. Office staff will carry the parcel up to your flat. We apologise for the inconvenience and thank you for your understanding. — Sakura Mansion Management Office"
     },
     "questions": [
       {
@@ -109,11 +114,11 @@
     "type": "short",
     "difficulty": 2,
     "intro": "リンさんに、友だちの ゆかさんから メールが 来ました。",
-    "passage": "リンさん\n\nきのうは 本を 貸して くれて、ありがとう。とても おもしろくて、一晩で 読んで しまいました。\n土曜日に 返す つもりでしたが、妹も 読みたいと 言って いるので、もう 少し 借りても いいですか。来週の 水曜日までに かならず 返します。\nもし 早く 必要だったら、教えて ください。\n\nゆか",
-    "kj": "リンさん\n\n昨日は本を貸してくれて、ありがとう。とても面白くて、一晩で読んでしまいました。\n土曜日に返すつもりでしたが、妹も読みたいと言っているので、もう少し借りてもいいですか。来週の水曜日までに必ず返します。\nもし早く必要だったら、教えてください。\n\nゆか",
+    "passage": "リンさん\n\nきのうは 本を 貸して くれて、ありがとう。とても おもしろくて、一晩で 読んで しまいました。特に 最後の ところで ないて しまいました。\n土曜日に 返す つもりでしたが、妹も 読みたいと 言って いるので、もう 少し 借りても いいですか。来週の 水曜日までに かならず 返します。妹は 本を 大切に 読む 人なので、安心して ください。\nもし 早く 必要だったら、教えて ください。\n\nゆか",
+    "kj": "リンさん\n\n昨日は本を貸してくれて、ありがとう。とても面白くて、一晩で読んでしまいました。特に最後のところで泣いてしまいました。\n土曜日に返すつもりでしたが、妹も読みたいと言っているので、もう少し借りてもいいですか。来週の水曜日までに必ず返します。妹は本を大切に読む人なので、安心してください。\nもし早く必要だったら、教えてください。\n\nゆか",
     "tr": {
-      "zh": "林：谢谢你昨天借书给我。太有意思了，我一个晚上就看完了。本来打算星期六还，但我妹妹也说想看，能再借一阵吗？下周三之前一定还。如果你急着用，请告诉我。由香",
-      "en": "Lin — Thanks for lending me the book yesterday. It was so good I finished it in one night. I meant to give it back on Saturday, but my sister says she wants to read it too — could I keep it a little longer? I'll definitely return it by next Wednesday. If you need it sooner, just tell me. — Yuka"
+      "zh": "林：谢谢你昨天借书给我。太有意思了，我一个晚上就看完了。尤其是最后那部分，我都哭了。本来打算星期六还，但我妹妹也说想看，能再借一阵吗？下周三之前一定还。我妹妹看书很爱惜，请放心。如果你急着用，请告诉我。由香",
+      "en": "Lin — Thanks for lending me the book yesterday. It was so good I finished it in one night. The ending actually made me cry. I meant to give it back on Saturday, but my sister says she wants to read it too — could I keep it a little longer? I'll definitely return it by next Wednesday. My sister takes good care of books, so don't worry. If you need it sooner, just tell me. — Yuka"
     },
     "questions": [
       {
@@ -144,11 +149,11 @@
     "type": "short",
     "difficulty": 2,
     "intro": "これは 会社員の 森さんが 書いた 文章です。",
-    "passage": "わたしは 毎朝 家から 駅まで バスに 乗って いましたが、先月から 歩いて 行く ように して います。歩くと 二十分 かかるので、前より 十五分 早く 家を 出なければ なりません。はじめは 大変でしたが、朝 歩くと 気持ちが いいし、夜も よく ねむれる ように なりました。でも、雨の 日だけは 今も バスに 乗って います。",
-    "kj": "私は毎朝家から駅までバスに乗っていましたが、先月から歩いて行くようにしています。歩くと二十分かかるので、前より十五分早く家を出なければなりません。初めは大変でしたが、朝歩くと気持ちがいいし、夜もよく眠れるようになりました。でも、雨の日だけは今もバスに乗っています。",
+    "passage": "わたしは 毎朝 家から 駅まで バスに 乗って いましたが、先月から 歩いて 行く ように して います。けんこうの ために、もっと 体を 動かしたいと 思ったからです。歩くと 二十分 かかるので、前より 十五分 早く 家を 出なければ なりません。はじめは 大変でしたが、朝 歩くと 気持ちが いいし、夜も よく ねむれる ように なりました。でも、雨の 日だけは 今も バスに 乗って います。道が すべりやすくて あぶないからです。",
+    "kj": "私は毎朝家から駅までバスに乗っていましたが、先月から歩いて行くようにしています。健康のために、もっと体を動かしたいと思ったからです。歩くと二十分かかるので、前より十五分早く家を出なければなりません。初めは大変でしたが、朝歩くと気持ちがいいし、夜もよく眠れるようになりました。でも、雨の日だけは今もバスに乗っています。道が滑りやすくて危ないからです。",
     "tr": {
-      "zh": "我以前每天早上从家坐公交车到车站，从上个月起尽量走着去。走路要二十分钟，所以必须比以前早十五分钟出门。一开始很辛苦，不过早上走走心情很好，晚上也睡得好了。但是只有下雨天现在还是坐公交车。",
-      "en": "I used to take the bus from home to the station every morning, but since last month I've been making a point of walking. It takes twenty minutes on foot, so I have to leave fifteen minutes earlier than before. It was hard at first, but walking in the morning feels good, and I've started sleeping well at night too. Only on rainy days do I still take the bus."
+      "zh": "我以前每天早上从家坐公交车到车站，从上个月起尽量走着去。因为我想为了健康多活动活动身体。走路要二十分钟，所以必须比以前早十五分钟出门。一开始很辛苦，不过早上走走心情很好，晚上也睡得好了。但是只有下雨天现在还是坐公交车，因为路滑很危险。",
+      "en": "I used to take the bus from home to the station every morning, but since last month I've been making a point of walking, because I wanted to move my body more for my health. It takes twenty minutes on foot, so I have to leave fifteen minutes earlier than before. It was hard at first, but walking in the morning feels good, and I've started sleeping well at night too. Only on rainy days do I still take the bus, because the road gets slippery and dangerous."
     },
     "questions": [
       {

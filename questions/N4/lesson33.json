@@ -100,7 +100,7 @@
       "lesson33#1"
     ],
     "difficulty": 1,
-    "stem": "日本に [_] [_] [★] [_]。",
+    "stem": "日本に [_] [★] [_] [_]。",
     "options": [
       "富士山に",
       "いる",
@@ -126,15 +126,16 @@
       "en": "I want to climb Mt Fuji while I'm in Japan."
     },
     "why": {
-      "zh": "いる ＋ あいだに（在日本期间）＋ 富士山に ＋ 登りたいです：期间内完成一件事。★ 在第三格，是「富士山に」。",
-      "en": "いる ＋ あいだに (while in Japan) ＋ 富士山に ＋ 登りたいです: doing one thing within the period. The ★ is the third slot: 「富士山に」."
+      "zh": "いる ＋ あいだに（在日本期间）＋ 富士山に ＋ 登りたいです：期间内完成一件事。★ 在第二格，是「あいだに」。",
+      "en": "いる ＋ あいだに (while in Japan) ＋ 富士山に ＋ 登りたいです: doing one thing within the period. The ★ is the second slot: 「あいだに」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l33-004",
@@ -237,7 +238,7 @@
       "lesson33#2"
     ],
     "difficulty": 1,
-    "stem": "明日の 朝は、[_] [_] [★] [_] ください。",
+    "stem": "明日の 朝は、[_] [★] [_] [_] ください。",
     "options": [
       "始まる",
       "教室に 入って",
@@ -257,15 +258,16 @@
       "en": "Tomorrow morning, please be in the classroom before class starts."
     },
     "why": {
-      "zh": "授業が ＋ 始まる ＋ までに（在上课之前）＋ 教室に 入って ＋ ください。★ 在第三格，是「までに」。",
-      "en": "授業が ＋ 始まる ＋ までに (by the time class starts) ＋ 教室に 入って ＋ ください. The ★ is the third slot: 「までに」."
+      "zh": "授業が ＋ 始まる ＋ までに（在上课之前）＋ 教室に 入って ＋ ください。★ 在第二格，是「始まる」。",
+      "en": "授業が ＋ 始まる ＋ までに (by the time class starts) ＋ 教室に 入って ＋ ください. The ★ is the second slot: 「始まる」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l33-007",
@@ -356,7 +358,7 @@
       "lesson33#3"
     ],
     "difficulty": 1,
-    "stem": "この 道には 木が [_] [_] [★] [_]。",
+    "stem": "この 道には 木が [_] [★] [_] [_]。",
     "options": [
       "あります",
       "植えて",
@@ -376,15 +378,16 @@
       "en": "Trees are planted every ten metres along this road."
     },
     "why": {
-      "zh": "10メートル ＋ おきに（每隔10米）＋ 植えて ＋ あります（〜てある表示状态）。★ 在第三格，是「植えて」。",
-      "en": "10メートル ＋ おきに (every 10 m) ＋ 植えて ＋ あります (〜てある, a resulting state). The ★ is the third slot: 「植えて」."
+      "zh": "10メートル ＋ おきに（每隔10米）＋ 植えて ＋ あります（〜てある表示状态）。★ 在第二格，是「おきに」。",
+      "en": "10メートル ＋ おきに (every 10 m) ＋ 植えて ＋ あります (〜てある, a resulting state). The ★ is the second slot: 「おきに」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l33-010",
@@ -475,7 +478,7 @@
       "lesson33#4"
     ],
     "difficulty": 1,
-    "stem": "パスワードを [_] [_] [★] [_] ください。",
+    "stem": "パスワードを [_] [★] [_] [_] ください。",
     "options": [
       "忘れた",
       "連絡して",
@@ -495,15 +498,16 @@
       "en": "If you forget your password, please contact us here."
     },
     "why": {
-      "zh": "忘れた（た形）＋ 場合は ＋ こちらに ＋ 連絡して ＋ ください。★ 在第三格，是「こちらに」。",
-      "en": "忘れた (た-form) ＋ 場合は ＋ こちらに ＋ 連絡して ＋ ください. The ★ is the third slot: 「こちらに」."
+      "zh": "忘れた（た形）＋ 場合は ＋ こちらに ＋ 連絡して ＋ ください。★ 在第二格，是「場合は」。",
+      "en": "忘れた (た-form) ＋ 場合は ＋ こちらに ＋ 連絡して ＋ ください. The ★ is the second slot: 「場合は」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l33-013",
@@ -594,7 +598,7 @@
       "lesson33#5"
     ],
     "difficulty": 1,
-    "stem": "A「日本語の 聞き取りが なかなか 上手に なりません。」\nB「日本の [_] [_] [★] [_] か。」",
+    "stem": "A「日本語の 聞き取りが なかなか 上手に なりません。」\nB「日本の [_] [_] [_] [★] か。」",
     "options": [
       "どう",
       "です",
@@ -614,15 +618,16 @@
       "en": "A: My Japanese listening just isn't improving. B: How about watching Japanese films?"
     },
     "why": {
-      "zh": "映画を ＋ 見たら ＋ どう ＋ です ＋ か：提建议的「〜たらどうですか」。★ 在第三格，是「どう」。",
-      "en": "映画を ＋ 見たら ＋ どう ＋ です ＋ か: the suggestion 「〜たらどうですか」. The ★ is the third slot: 「どう」."
+      "zh": "映画を ＋ 見たら ＋ どう ＋ です ＋ か：提建议的「〜たらどうですか」。★ 在第四格，是「です」。",
+      "en": "映画を ＋ 見たら ＋ どう ＋ です ＋ か: the suggestion 「〜たらどうですか」. The ★ is the fourth slot: 「です」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l33-016",
@@ -713,7 +718,7 @@
       "lesson33#6"
     ],
     "difficulty": 1,
-    "stem": "やっと 試験に 合格した。あの とき [_] [_] [★] [_]。",
+    "stem": "やっと 試験に 合格した。あの とき [★] [_] [_] [_]。",
     "options": [
       "なくて",
       "あきらめ",
@@ -739,15 +744,16 @@
       "en": "I finally passed. I'm glad I didn't give up back then."
     },
     "why": {
-      "zh": "あきらめ ＋ なくて ＋ よかった ＋ です：“没放弃真好”是「〜なくてよかった」。★ 在第三格，是「よかった」。",
-      "en": "あきらめ ＋ なくて ＋ よかった ＋ です: \"glad I didn't give up\" is 「〜なくてよかった」. The ★ is the third slot: 「よかった」."
+      "zh": "あきらめ ＋ なくて ＋ よかった ＋ です：“没放弃真好”是「〜なくてよかった」。★ 在第一格，是「あきらめ」。",
+      "en": "あきらめ ＋ なくて ＋ よかった ＋ です: \"glad I didn't give up\" is 「〜なくてよかった」. The ★ is the first slot: 「あきらめ」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l33-019",
@@ -801,7 +807,7 @@
     "options": [
       "しなくて",
       "しないと",
-      "しなかって",
+      "しなくても",
       "しなければ"
     ],
     "answer": 0,
@@ -822,8 +828,8 @@
         "en": "「ないと」 means \"if not\"; it can't give the reason for an apology."
       },
       {
-        "zh": "否定的て形是「しなくて」，没有「しなかって」这种形式。",
-        "en": "The negative て-form is 「しなくて」; 「しなかって」 isn't a form."
+        "zh": "「しなくても」是“即使不……也”，不能说明道歉的原因。",
+        "en": "「しなくても」 is \"even without\"; it can't give the reason for an apology."
       },
       {
         "zh": "「なければ」是条件“不……的话”，不能接「すみません」说明原因。",

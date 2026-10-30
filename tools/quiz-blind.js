@@ -37,7 +37,7 @@ if (cmd === "sheet") {
       out.push(`## Passage ${p.id}`, ...(p.intro ? [p.intro] : []), "", p.passage.replace(/\[\[(\d+)\]\]/g, "［$1］"), "");
     }
     lastP = q.passage || null;
-    const how = { narabe: "put the four pieces in order; which piece goes in ★?", kanji: "how is the underlined word read?", hyouki: "how is the underlined word written?", iikae: "which sentence means about the same as the underlined one?", youhou: "which sentence uses the underlined word correctly?", gokeisei: "which part forms the right word with the one next to （　）?", bunshou: `what goes in ［${q._blank}］?` }[q.type] || "fill （　） / answer the question";
+    const how = { narabe: "put the four pieces in order; which piece goes in ★?", kanji: "how is the underlined word read?", hyouki: "how is the underlined word written?", iikae: "which option is closest in meaning to the underlined part?", youhou: "which sentence uses the underlined word correctly?", gokeisei: "which part forms the right word with the one next to （　）?", bunshou: `what goes in ［${q._blank}］?` }[q.type] || "fill （　） / answer the question";
     out.push(`### ${q.id} (${how})`);
     if (q.stem) out.push(q.stem.replace(/\[_\]/g, "＿＿").replace(/\[★\]/g, "＿★＿"));
     if (q.q) out.push(q.q);

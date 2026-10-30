@@ -9,9 +9,9 @@
     "stem": "被災地の状況を確かめるため、市長は自ら現地に<<赴いた>>。",
     "options": [
       "おもむいた",
-      "おもぶいた",
-      "おもぬいた",
-      "おごむいた"
+      "そむいた",
+      "うつむいた",
+      "ふりむいた"
     ],
     "answer": 0,
     "tr": {
@@ -25,16 +25,16 @@
     "wrong": [
       null,
       {
-        "zh": "第三个音是「む」，不是浊音「ぶ」。",
-        "en": "The third sound is む, not ぶ."
+        "zh": "「そむく」是「背く」（违背）。",
+        "en": "そむく is 「背く」, to disobey."
       },
       {
-        "zh": "是「おもむく」，没有「おもぬく」这个读法。",
-        "en": "It's おもむく; おもぬく isn't a reading."
+        "zh": "「うつむく」是「俯く」（低头）。",
+        "en": "うつむく is 「俯く」, to look down."
       },
       {
-        "zh": "第二个音是清音「も」，不是「ご」。",
-        "en": "The second sound is も, not ご."
+        "zh": "「ふりむく」是「振り向く」（回头）。",
+        "en": "ふりむく is 「振り向く」, to turn round."
       }
     ]
   },
@@ -76,39 +76,41 @@
   },
   {
     "id": "n1-mg-103",
+    "rev": 2,
     "type": "kanji",
     "difficulty": 2,
-    "stem": "住民たちは、ダム建設のための立ち退きを最後まで<<拒んだ>>。",
+    "stem": "長年着ているジャケットの袖口が<<綻びて>>きた。",
     "options": [
-      "こばんだ",
-      "はばんだ",
-      "いどんだ",
-      "こがんだ"
+      "ほころびて",
+      "ほどけて",
+      "ほろびて",
+      "こぼれて"
     ],
     "answer": 0,
     "tr": {
-      "zh": "居民们直到最后都拒绝为修建水坝而搬迁。",
-      "en": "The residents refused to the end to move out for the dam."
+      "zh": "穿了很多年的夹克，袖口开线了。",
+      "en": "The cuffs of the jacket I've worn for years have started to come apart."
     },
     "why": {
-      "zh": "「拒む（こばむ）」：拒绝。",
-      "en": "「拒む」 is こばむ: to refuse."
+      "zh": "「綻びる（ほころびる）」：（缝线）开绽，也指花蕾初绽、面露笑容。",
+      "en": "「綻びる」 is ほころびる: to come apart at the seams (also of buds opening, faces breaking into a smile)."
     },
     "wrong": [
       null,
       {
-        "zh": "「はばむ」是「阻む」（阻挡）。",
-        "en": "はばむ is 「阻む」 (to block)."
+        "zh": "「ほどける」是「解ける」（绳结松开），意思相近但不是这个字。",
+        "en": "ほどける is 「解ける」 (a knot coming undone) — similar meaning, different word."
       },
       {
-        "zh": "「いどむ」是「挑む」（挑战）。",
-        "en": "いどむ is 「挑む」 (to challenge)."
+        "zh": "「ほろびる」是「滅びる」（灭亡）。",
+        "en": "ほろびる is 「滅びる」, to perish."
       },
       {
-        "zh": "第二个音是「ば」，不是「が」。",
-        "en": "The second sound is ば, not が."
+        "zh": "「こぼれる」是「零れる」（洒出、溢出）。",
+        "en": "こぼれる is 「零れる」, to spill."
       }
-    ]
+    ],
+    "refs": []
   },
   {
     "id": "n1-mg-104",
@@ -118,8 +120,8 @@
     "options": [
       "うるおい",
       "うれい",
-      "うるわい",
-      "うるい"
+      "いこい",
+      "うるみ"
     ],
     "answer": 0,
     "tr": {
@@ -137,122 +139,128 @@
         "en": "うれい is 「憂い」 (sorrow)."
       },
       {
-        "zh": "「うるわしい」是「麗しい」，「潤い」读「うるおい」。",
-        "en": "「麗しい」 is うるわしい; 「潤い」 is うるおい."
+        "zh": "「いこい」是「憩い」（休憩、放松），意思相近但字不同。",
+        "en": "いこい is 「憩い」, rest — related idea, different word."
       },
       {
-        "zh": "少了「お」，是「うるおい」。",
-        "en": "An お is missing: うるおい."
+        "zh": "「潤い」送假名是「い」，读「うるおい」；「うるみ」要写成「潤み」（眼睛湿润）。",
+        "en": "With い as okurigana it's うるおい; うるみ would be written 「潤み」 (moist eyes)."
       }
     ]
   },
   {
     "id": "n1-mg-105",
+    "rev": 2,
     "type": "kanji",
-    "difficulty": 1,
-    "stem": "他人の失敗に<<寛容>>な人ほど、周りから信頼される。",
+    "difficulty": 2,
+    "stem": "祖父は<<寡黙>>だが、孫たちのことをいつも気にかけている。",
     "options": [
-      "かんよう",
-      "けんよう",
-      "がんよう",
-      "かんにょう"
+      "かもく",
+      "かぼく",
+      "がもく",
+      "かむく"
     ],
     "answer": 0,
     "tr": {
-      "zh": "越是对别人的失误宽容的人，越受周围人信任。",
-      "en": "The more tolerant people are of others' mistakes, the more they're trusted."
+      "zh": "祖父话不多，却一直惦记着孙子孙女们。",
+      "en": "Grandfather is a man of few words, but he always looks out for his grandchildren."
     },
     "why": {
-      "zh": "「寛（かん）」+「容（よう）」：「かんよう」，宽容。",
-      "en": "「寛」 is かん and 「容」 is よう: かんよう, tolerant."
+      "zh": "「寡（か）」+「黙（もく）」：「かもく」，沉默寡言。",
+      "en": "「寡」 is か and 「黙」 is もく: かもく, taciturn."
     },
     "wrong": [
       null,
       {
-        "zh": "「寛」读「かん」，不读「けん」。",
-        "en": "「寛」 is かん, not けん."
+        "zh": "「黙」读「もく」（如「沈黙」），不是「ぼく」。",
+        "en": "「黙」 is もく (as in 「沈黙」), not ぼく."
       },
       {
-        "zh": "「寛」是清音「かん」，不是「がん」。",
-        "en": "「寛」 is unvoiced かん, not がん."
+        "zh": "「寡」是清音「か」（如「寡占」），不是「が」。",
+        "en": "「寡」 is unvoiced か (as in 「寡占」), not が."
       },
       {
-        "zh": "「容」读「よう」（如「内容」），不是「にょう」。",
-        "en": "「容」 is よう (as in 「内容」), not にょう."
+        "zh": "「黙」读「もく」，不是「むく」。",
+        "en": "「黙」 is もく, not むく."
       }
-    ]
+    ],
+    "refs": []
   },
   {
     "id": "n1-mg-106",
+    "rev": 2,
     "type": "kanji",
-    "difficulty": 1,
-    "stem": "政府は、感染の拡大を防ぐための緊急<<措置>>を発表した。",
+    "difficulty": 2,
+    "stem": "大学の就職課では、卒業生にも仕事を<<斡旋>>している。",
     "options": [
-      "そち",
-      "しょち",
-      "そうち",
-      "さくち"
+      "あっせん",
+      "かんせん",
+      "あつせん",
+      "あっぜん"
     ],
     "answer": 0,
     "tr": {
-      "zh": "政府发布了防止感染扩大的紧急措施。",
-      "en": "The government announced emergency measures to stop the spread of infection."
+      "zh": "大学的就业指导处也为毕业生介绍工作。",
+      "en": "The university careers office also finds jobs for its graduates."
     },
     "why": {
-      "zh": "「措置（そち）」：措施，「措置を講じる・とる」。",
-      "en": "「措置」 is そち: a measure (「措置を講じる・とる」)."
+      "zh": "「斡旋（あっせん）」：介绍、居间调停。「斡」读「あつ」，后面接「せ」时促音化为「あっ」。",
+      "en": "「斡旋」 is あっせん: arranging or brokering (jobs, deals). 「斡」 あつ becomes あっ before せ."
     },
     "wrong": [
       null,
       {
-        "zh": "「しょち」是「処置」（处理、处置）。",
-        "en": "しょち is 「処置」 (treatment, handling)."
+        "zh": "「斡」的右半边像「幹・乾」，但读「あつ」，不读「かん」。",
+        "en": "「斡」 looks like 「幹・乾」 but reads あつ, not かん."
       },
       {
-        "zh": "「そうち」是「装置」（装置），「措」是短音「そ」。",
-        "en": "そうち is 「装置」 (a device); 「措」 is short そ."
+        "zh": "「あつ」在「せ」前要变促音：「あっせん」。",
+        "en": "あつ turns into あっ before せ: あっせん."
       },
       {
-        "zh": "「措」读「そ」，不是「さく」（「錯」「索」才读「さく」）。",
-        "en": "「措」 is そ, not さく (that's 「錯」 or 「索」)."
+        "zh": "「旋」是清音「せん」（如「旋回」），不浊化。",
+        "en": "「旋」 is unvoiced せん (as in 「旋回」)."
       }
-    ]
+    ],
+    "refs": []
   },
   {
     "id": "n1-mg-107",
+    "rev": 2,
     "type": "kanji",
     "difficulty": 2,
-    "stem": "急激な人口減少によって、需要と供給の<<均衡>>が崩れつつある。",
+    "stem": "彼の行為は、社会人としての常識を<<逸脱>>している。",
     "options": [
-      "きんこう",
-      "きんかん",
-      "ぎんこう",
-      "きんぎょう"
+      "いつだつ",
+      "いったつ",
+      "いちだつ",
+      "いつたつ"
     ],
     "answer": 0,
     "tr": {
-      "zh": "由于人口急剧减少，供求平衡正在被打破。",
-      "en": "With the population falling sharply, the balance of supply and demand is breaking down."
+      "zh": "他的行为偏离了社会人应有的常识。",
+      "en": "His behaviour goes beyond what's acceptable for a working adult."
     },
     "why": {
-      "zh": "「均（きん）」+「衡（こう）」：「きんこう」，平衡、均衡。",
-      "en": "「均」 is きん and 「衡」 is こう: きんこう, balance."
+      "zh": "「逸（いつ）」+「脱（だつ）」：「いつだつ」，偏离、越出范围。",
+      "en": "「逸」 is いつ and 「脱」 is だつ: いつだつ, deviation."
     },
     "wrong": [
       null,
       {
-        "zh": "「衡」读「こう」，不读「かん」。",
-        "en": "「衡」 is こう, not かん."
+        "zh": "这里不发生促音变化，读「いつだつ」。",
+        "en": "There's no small っ here: いつだつ."
       },
       {
-        "zh": "「ぎんこう」是「銀行」，「均」是清音「きん」。",
-        "en": "ぎんこう is 「銀行」; 「均」 is unvoiced きん."
+        "zh": "「逸」读「いつ」（如「逸話」），不是「いち」。",
+        "en": "「逸」 is いつ (as in 「逸話」), not いち."
       },
       {
-        "zh": "「衡」读「こう」，不是「ぎょう」。",
-        "en": "「衡」 is こう, not ぎょう."
+        "zh": "「脱」是浊音「だつ」（如「脱出」）。",
+        "en": "「脱」 is voiced だつ (as in 「脱出」)."
       }
-    ]
+    ],
+    "refs": []
   },
   {
     "id": "n1-mg-108",
@@ -335,7 +343,7 @@
       "いましめ",
       "いさめ",
       "かいめ",
-      "いましべ"
+      "こらしめ"
     ],
     "answer": 0,
     "tr": {
@@ -357,46 +365,48 @@
         "en": "かい is the on reading (as in 「警戒」); this word uses the kun reading."
       },
       {
-        "zh": "最后是「め」，没有「いましべ」这个读法。",
-        "en": "It ends in め; いましべ isn't a reading."
+        "zh": "「こらしめ」是「懲らしめ」（惩戒）。",
+        "en": "こらしめ is 「懲らしめ」, punishment."
       }
     ]
   },
   {
     "id": "n1-mg-111",
+    "rev": 2,
     "type": "kanji",
-    "difficulty": 2,
-    "stem": "彼は、この辞書の編集に二十年もの歳月を<<費やした>>。",
+    "difficulty": 3,
+    "stem": "休日は、昼過ぎまで惰眠を<<貪る>>のが唯一の楽しみだ。",
     "options": [
-      "ついやした",
-      "ひやした",
-      "こやした",
-      "いやした"
+      "むさぼる",
+      "あさる",
+      "ほおばる",
+      "いたぶる"
     ],
     "answer": 0,
     "tr": {
-      "zh": "他为编这部词典耗费了整整二十年的岁月。",
-      "en": "He spent all of twenty years compiling this dictionary."
+      "zh": "假日睡到午后、贪睡懒觉，是我唯一的乐趣。",
+      "en": "My one pleasure on days off is lazing in bed till past noon."
     },
     "why": {
-      "zh": "「費やす（ついやす）」：花费、耗费（时间、金钱、精力）。",
-      "en": "「費やす」 is ついやす: to spend (time, money, effort)."
+      "zh": "「貪る（むさぼる）」：贪婪地追求，「惰眠を貪る」＝贪睡。",
+      "en": "「貪る」 is むさぼる: to crave greedily; 「惰眠を貪る」 is to idle away hours in bed."
     },
     "wrong": [
       null,
       {
-        "zh": "「ひやす」是「冷やす」（冷却）；「ひ」是「費」的音读。",
-        "en": "ひやす is 「冷やす」 (to cool); ひ is the on reading of 「費」."
+        "zh": "「あさる」是「漁る」（到处搜寻），意思相近但不是这个字。",
+        "en": "あさる is 「漁る」 (to scavenge) — close in meaning, different word."
       },
       {
-        "zh": "「こやす」是「肥やす」（使肥沃）。",
-        "en": "こやす is 「肥やす」 (to fertilize)."
+        "zh": "「ほおばる」是「頬張る」（塞满一嘴）。",
+        "en": "ほおばる is 「頬張る」, to stuff one's mouth."
       },
       {
-        "zh": "「いやす」是「癒やす」（治愈）。",
-        "en": "いやす is 「癒やす」 (to heal)."
+        "zh": "「いたぶる」是欺负、折磨，写作「甚振る」。",
+        "en": "いたぶる is 「甚振る」, to torment."
       }
-    ]
+    ],
+    "refs": []
   },
   {
     "id": "n1-mg-112",
@@ -443,7 +453,7 @@
       "くつがえされた",
       "ひるがえされた",
       "くつかえされた",
-      "おおがえされた"
+      "うらがえされた"
     ],
     "answer": 0,
     "tr": {
@@ -465,8 +475,8 @@
         "en": "The fourth sound is voiced が."
       },
       {
-        "zh": "「おおう」是「覆う」（覆盖），但「覆す」读「くつがえす」。",
-        "en": "おおう is 「覆う」 (to cover), but 「覆す」 is くつがえす."
+        "zh": "「うらがえす」是「裏返す」（翻过来）。",
+        "en": "うらがえす is 「裏返す」, to turn over."
       }
     ]
   },
@@ -515,7 +525,7 @@
       "つつしむ",
       "つつむ",
       "いつくしむ",
-      "つましむ"
+      "おしむ"
     ],
     "answer": 0,
     "tr": {
@@ -537,8 +547,8 @@
         "en": "いつくしむ is 「慈しむ」 (to cherish)."
       },
       {
-        "zh": "没有「つましむ」，是「つつしむ」。",
-        "en": "つましむ isn't a word; it's つつしむ."
+        "zh": "「おしむ」是「惜しむ」（珍惜、吝惜）。",
+        "en": "おしむ is 「惜しむ」, to begrudge or value."
       }
     ]
   },
@@ -583,39 +593,41 @@
   },
   {
     "id": "n1-mg-117",
+    "rev": 2,
     "type": "kanji",
-    "difficulty": 1,
-    "stem": "政府は、外国人観光客の入国規制を段階的に<<緩和>>する方針だ。",
+    "difficulty": 2,
+    "stem": "相手の大きな声にも<<怯む>>ことなく、彼女は堂々と反論した。",
     "options": [
-      "かんわ",
-      "えんわ",
-      "だんわ",
-      "かんな"
+      "ひるむ",
+      "おびむ",
+      "ひがむ",
+      "ちぢむ"
     ],
     "answer": 0,
     "tr": {
-      "zh": "政府打算分阶段放宽对外国游客的入境限制。",
-      "en": "The government plans to ease entry restrictions for foreign tourists in stages."
+      "zh": "面对对方的大嗓门，她毫不退缩，堂堂正正地反驳。",
+      "en": "Undaunted by his raised voice, she argued back with confidence."
     },
     "why": {
-      "zh": "「緩（かん）」+「和（わ）」：「かんわ」，缓和、放宽。",
-      "en": "「緩」 is かん and 「和」 is わ: かんわ, easing."
+      "zh": "「怯む（ひるむ）」：畏缩、胆怯退缩。",
+      "en": "「怯む」 is ひるむ: to flinch, lose one's nerve."
     },
     "wrong": [
       null,
       {
-        "zh": "「緩」读「かん」，形近的「援」才读「えん」。",
-        "en": "「緩」 is かん; えん is the look-alike 「援」."
+        "zh": "「怯」在「怯える」里读「おび」，但「怯む」读「ひるむ」，没有「おびむ」。",
+        "en": "「怯」 is おび in 「怯える」, but 「怯む」 is ひるむ; おびむ isn't a word."
       },
       {
-        "zh": "「だんわ」是「談話」。",
-        "en": "だんわ is 「談話」 (a talk, statement)."
+        "zh": "「ひがむ」是「僻む」（乖僻、怀恨）。",
+        "en": "ひがむ is 「僻む」, to feel resentful."
       },
       {
-        "zh": "「和」读「わ」，不是「な」。",
-        "en": "「和」 is わ, not な."
+        "zh": "「ちぢむ」是「縮む」（缩小）。",
+        "en": "ちぢむ is 「縮む」, to shrink."
       }
-    ]
+    ],
+    "refs": []
   },
   {
     "id": "n1-mg-118",
@@ -665,7 +677,7 @@
       "すこやか",
       "すみやか",
       "すくやか",
-      "けんやか"
+      "しなやか"
     ],
     "answer": 0,
     "tr": {
@@ -687,8 +699,8 @@
         "en": "The second sound is こ, not く."
       },
       {
-        "zh": "「けん」是「健」的音读，这个词用训读。",
-        "en": "けん is the on reading; this word uses the kun reading."
+        "zh": "「しなやか」是柔韧、柔软，写作假名或「嫋やか」。",
+        "en": "しなやか means supple; it isn't written 「健やか」."
       }
     ]
   },
@@ -700,8 +712,8 @@
     "options": [
       "なごり",
       "めいざん",
-      "なのこり",
-      "なざん"
+      "なごみ",
+      "なさけ"
     ],
     "answer": 0,
     "tr": {
@@ -719,12 +731,12 @@
         "en": "It isn't read with the on readings めいざん."
       },
       {
-        "zh": "「残」在这里不读「のこり」，整词读「なごり」。",
-        "en": "「残」 isn't のこり here; the whole word is なごり."
+        "zh": "「なごみ」是「和み」（平和、安宁）。",
+        "en": "なごみ is 「和み」, calm."
       },
       {
-        "zh": "「残」不读「ざん」，整词读「なごり」。",
-        "en": "「残」 isn't ざん here; the whole word is なごり."
+        "zh": "「なさけ」是「情け」（人情、同情）。",
+        "en": "なさけ is 「情け」, compassion."
       }
     ]
   },
@@ -838,75 +850,79 @@
   },
   {
     "id": "n1-mg-124",
+    "rev": 2,
     "type": "kanji",
     "difficulty": 2,
-    "stem": "新しいシステムの導入で、部署間の連絡が<<円滑>>になった。",
+    "stem": "新製品の性能は、従来品をはるかに<<凌ぐ>>。",
     "options": [
-      "えんかつ",
-      "えんこつ",
-      "えんがつ",
-      "えんきつ"
+      "しのぐ",
+      "しのぶ",
+      "かせぐ",
+      "そそぐ"
     ],
     "answer": 0,
     "tr": {
-      "zh": "引入新系统后，部门之间的联络变得顺畅了。",
-      "en": "With the new system in place, communication between departments has gone smoothly."
+      "zh": "新产品的性能远远超过以往的产品。",
+      "en": "The new product far outperforms the old ones."
     },
     "why": {
-      "zh": "「円滑（えんかつ）」：顺利、顺畅。「滑」音读「かつ」。",
-      "en": "「円滑」 is えんかつ: smooth. 「滑」 is かつ."
+      "zh": "「凌ぐ（しのぐ）」：超过、胜过；也指忍受、熬过（「暑さを凌ぐ」）。",
+      "en": "「凌ぐ」 is しのぐ: to surpass (also to endure, as in 「暑さを凌ぐ」)."
     },
     "wrong": [
       null,
       {
-        "zh": "「こつ」是「骨」的读音，「滑」读「かつ」。",
-        "en": "こつ is 「骨」; 「滑」 is かつ."
+        "zh": "「しのぶ」是「忍ぶ・偲ぶ」（忍耐、怀念）。",
+        "en": "しのぶ is 「忍ぶ・偲ぶ」, to endure or to remember fondly."
       },
       {
-        "zh": "「滑」是清音「かつ」。",
-        "en": "「滑」 is unvoiced かつ."
+        "zh": "「かせぐ」是「稼ぐ」（挣钱）。",
+        "en": "かせぐ is 「稼ぐ」, to earn."
       },
       {
-        "zh": "「滑」读「かつ」，不是「きつ」。",
-        "en": "「滑」 is かつ, not きつ."
+        "zh": "「そそぐ」是「注ぐ」（倒入、倾注）。",
+        "en": "そそぐ is 「注ぐ」, to pour."
       }
-    ]
+    ],
+    "refs": []
   },
   {
     "id": "n1-mg-125",
+    "rev": 2,
     "type": "kanji",
     "difficulty": 2,
-    "stem": "応募者が予定より<<若干>>少なかったため、締め切りを延長した。",
+    "stem": "使者は国王の前に進み出て、<<恭しく>>頭を下げた。",
     "options": [
-      "じゃっかん",
-      "じゃくかん",
-      "わかかん",
-      "にゃっかん"
+      "うやうやしく",
+      "ういういしく",
+      "ものものしく",
+      "よそよそしく"
     ],
     "answer": 0,
     "tr": {
-      "zh": "由于应征者比预期稍少，延长了截止日期。",
-      "en": "There were slightly fewer applicants than planned, so the deadline was extended."
+      "zh": "使者走到国王面前，恭恭敬敬地低头行礼。",
+      "en": "The envoy stepped before the king and bowed respectfully."
     },
     "why": {
-      "zh": "「若干（じゃっかん）」：若干、少许。「若」促音化为「じゃっ」。",
-      "en": "「若干」 is じゃっかん: somewhat, a little. 「若」 becomes じゃっ."
+      "zh": "「恭しい（うやうやしい）」：恭敬、毕恭毕敬。",
+      "en": "「恭しい」 is うやうやしい: deeply respectful."
     },
     "wrong": [
       null,
       {
-        "zh": "「若」接「かん」时变成促音「じゃっ」。",
-        "en": "Before かん, 「若」 becomes じゃっ."
+        "zh": "「ういういしい」是「初々しい」（天真、青涩）。",
+        "en": "ういういしい is 「初々しい」, fresh and innocent."
       },
       {
-        "zh": "「わか」是训读（如「若者」），这个词用音读。",
-        "en": "わか is the kun reading (as in 「若者」); this word uses the on reading."
+        "zh": "「ものものしい」是「物々しい」（森严、夸张）。",
+        "en": "ものものしい is 「物々しい」, imposing or overblown."
       },
       {
-        "zh": "「若」读「じゃく・にゃく」，这个词是「じゃっ」。",
-        "en": "「若」 is じゃく or にゃく; in this word it's じゃっ."
+        "zh": "「よそよそしい」是冷淡、见外，与恭敬相反。",
+        "en": "よそよそしい is cold and distant."
       }
-    ]
+    ],
+    "refs": []
   },
   {
     "id": "n1-mg-126",
@@ -954,7 +970,7 @@
     "stem": "この和菓子店は、創業三百年を誇る<<老舗>>だ。",
     "options": [
       "しにせ",
-      "しせ",
+      "ろうほ",
       "ろうてん",
       "しにみせ"
     ],
@@ -970,8 +986,8 @@
     "wrong": [
       null,
       {
-        "zh": "「しせ」漏了中间的「に」，正确是「しにせ」。",
-        "en": "しせ drops the に; it's しにせ."
+        "zh": "「舗」单独读「ほ」（如「店舗」），但「老舗」是特殊读法「しにせ」。",
+        "en": "「舗」 alone is ほ (as in 「店舗」), but 「老舗」 has the special reading しにせ."
       },
       {
         "zh": "「ろうてん」是把「舗」读成了「店」。",
@@ -985,40 +1001,39 @@
   },
   {
     "id": "n1-mg-128",
+    "rev": 2,
     "type": "kanji",
-    "refs": [
-      "lesson76#vocab"
-    ],
-    "difficulty": 1,
-    "stem": "限定商品の発売日には、開店前から客が<<殺到>>した。",
+    "refs": [],
+    "difficulty": 2,
+    "stem": "この化粧品は「肌が若返る」と<<謳って>>いるが、効果は疑わしい。",
     "options": [
-      "さっとう",
-      "さつとう",
-      "せっとう",
-      "さいとう"
+      "うたって",
+      "うったえて",
+      "いつわって",
+      "ほこって"
     ],
     "answer": 0,
     "tr": {
-      "zh": "限定商品发售当天，还没开门顾客就蜂拥而至。",
-      "en": "On the day the limited item went on sale, customers flooded in before the shop even opened."
+      "zh": "这款化妆品宣称“能让肌肤变年轻”，但效果值得怀疑。",
+      "en": "This cosmetic claims to \"rejuvenate your skin\", but the effect is doubtful."
     },
     "why": {
-      "zh": "「殺到（さっとう）」：蜂拥而至。「殺」促音化为「さっ」。",
-      "en": "「殺到」 is さっとう: to rush in, flood. 「殺」 becomes さっ."
+      "zh": "「謳う（うたう）」：明确宣称、标榜（广告、法律条文等）。",
+      "en": "「謳う」 is うたう: to proclaim, to state as a selling point."
     },
     "wrong": [
       null,
       {
-        "zh": "「殺」接「とう」时变成促音「さっ」。",
-        "en": "Before とう, 「殺」 becomes さっ."
+        "zh": "「うったえる」是「訴える」（申诉、呼吁）。",
+        "en": "うったえる is 「訴える」, to appeal or complain."
       },
       {
-        "zh": "「殺」在这里读「さつ」系，不是「せつ」。",
-        "en": "「殺」 is the さつ reading here, not せつ."
+        "zh": "「いつわる」是「偽る」（伪装、说谎）。",
+        "en": "いつわる is 「偽る」, to falsify."
       },
       {
-        "zh": "「殺」读「さつ・さい」，这个词是「さっ」。",
-        "en": "「殺」 is さつ or さい; in this word it's さっ."
+        "zh": "「ほこる」是「誇る」（自豪）。",
+        "en": "ほこる is 「誇る」, to take pride in."
       }
     ]
   },
@@ -1063,40 +1078,39 @@
   },
   {
     "id": "n1-mg-130",
+    "rev": 2,
     "type": "kanji",
-    "refs": [
-      "lesson91#vocab"
-    ],
+    "refs": [],
     "difficulty": 2,
-    "stem": "大臣の<<軽率>>な発言が、国内外から批判を浴びた。",
+    "stem": "人を学歴や肩書きで<<蔑む>>ような態度は、決して許されない。",
     "options": [
-      "けいそつ",
-      "けいりつ",
-      "けいそち",
-      "きょうそつ"
+      "さげすむ",
+      "さいなむ",
+      "いとなむ",
+      "なぐさむ"
     ],
     "answer": 0,
     "tr": {
-      "zh": "大臣的轻率言论遭到国内外的批评。",
-      "en": "The minister's careless remark drew criticism at home and abroad."
+      "zh": "凭学历或头衔轻视他人的态度，是绝对不能容忍的。",
+      "en": "Looking down on people for their schooling or titles is never acceptable."
     },
     "why": {
-      "zh": "「軽率（けいそつ）」：轻率。「率」在这里读「そつ」。",
-      "en": "「軽率」 is けいそつ: rash. 「率」 is そつ here."
+      "zh": "「蔑む（さげすむ）」：轻视、蔑视。",
+      "en": "「蔑む」 is さげすむ: to look down on, despise."
     },
     "wrong": [
       null,
       {
-        "zh": "「率」读「りつ」是在「確率」「効率」里；这里读「そつ」。",
-        "en": "「率」 is りつ in 「確率」 or 「効率」, but そつ here."
+        "zh": "「さいなむ」是「苛む」（折磨），不是轻视。",
+        "en": "さいなむ is 「苛む」, to torment."
       },
       {
-        "zh": "「率」读「そつ」，不是「そち」。",
-        "en": "「率」 is そつ, not そち."
+        "zh": "「いとなむ」是「営む」（经营）。",
+        "en": "いとなむ is 「営む」, to run (a business)."
       },
       {
-        "zh": "「軽」读「けい」，不读「きょう」。",
-        "en": "「軽」 is けい, not きょう."
+        "zh": "「なぐさむ」是「慰む」（得到安慰）。",
+        "en": "なぐさむ is 「慰む」, to be consoled."
       }
     ]
   },
@@ -1147,7 +1161,7 @@
       "はばまれて",
       "こばまれて",
       "はさまれて",
-      "はばかまれて"
+      "はばかられて"
     ],
     "answer": 0,
     "tr": {
@@ -1169,47 +1183,46 @@
         "en": "はさむ is 「挟む」 (to sandwich); wrong reading and meaning."
       },
       {
-        "zh": "把「はばむ」和「はばかる」（憚る）混在一起，没有这个词。",
-        "en": "A blend of はばむ and はばかる (「憚る」); not a word."
+        "zh": "「はばかる」是「憚る」（顾忌），字不同。",
+        "en": "はばかる is 「憚る」, to hold back out of deference."
       }
     ]
   },
   {
     "id": "n1-mg-133",
+    "rev": 2,
     "type": "kanji",
-    "refs": [
-      "lesson91#vocab"
-    ],
+    "refs": [],
     "difficulty": 2,
-    "stem": "創立百周年の記念式典が、来月盛大に<<執り行われる>>。",
+    "stem": "亡くなった祖父を<<弔う>>ため、親戚が集まった。",
     "options": [
-      "とりおこなわれる",
-      "しつりおこなわれる",
-      "しゅうりおこなわれる",
-      "とりいこなわれる"
+      "とむらう",
+      "ともなう",
+      "ねぎらう",
+      "うやまう"
     ],
     "answer": 0,
     "tr": {
-      "zh": "建校一百周年纪念典礼将于下月隆重举行。",
-      "en": "The centenary ceremony will be held with great ceremony next month."
+      "zh": "亲戚们聚在一起，悼念去世的祖父。",
+      "en": "Relatives gathered to mourn my late grandfather."
     },
     "why": {
-      "zh": "「執り行う（とりおこなう）」：（郑重地）举行（仪式等）。",
-      "en": "「執り行う」 is とりおこなう: to hold, conduct (a ceremony)."
+      "zh": "「弔う（とむらう）」：吊唁、祭奠死者。",
+      "en": "「弔う」 is とむらう: to mourn, hold rites for the dead."
     },
     "wrong": [
       null,
       {
-        "zh": "「執」在这里用训读「と（る）」，不是「しつ」。",
-        "en": "「執」 uses the kun reading と(る) here, not しつ."
+        "zh": "「ともなう」是「伴う」（伴随）。",
+        "en": "ともなう is 「伴う」, to accompany."
       },
       {
-        "zh": "「執」不读「しゅう」，这里是「と（る）」。",
-        "en": "「執」 isn't しゅう here; it's と(る)."
+        "zh": "「ねぎらう」是「労う」（慰劳）。",
+        "en": "ねぎらう is 「労う」, to thank for hard work."
       },
       {
-        "zh": "「行う」读「おこなう」。",
-        "en": "「行う」 is おこなう."
+        "zh": "「うやまう」是「敬う」（尊敬）。",
+        "en": "うやまう is 「敬う」, to respect."
       }
     ]
   },
@@ -1252,40 +1265,39 @@
   },
   {
     "id": "n1-mg-135",
+    "rev": 2,
     "type": "kanji",
-    "refs": [
-      "lesson77#vocab"
-    ],
-    "difficulty": 1,
-    "stem": "吹雪の中、登山者三人が<<遭難>>し、救助隊が出動した。",
+    "refs": [],
+    "difficulty": 2,
+    "stem": "顧客の個人情報が、外部に<<漏洩>>していたことが分かった。",
     "options": [
-      "そうなん",
-      "ぞうなん",
-      "そうらん",
-      "そなん"
+      "ろうえい",
+      "ろうしゅつ",
+      "もうえい",
+      "ろえい"
     ],
     "answer": 0,
     "tr": {
-      "zh": "暴风雪中，三名登山者遇险，救援队出动了。",
-      "en": "Three climbers got into trouble in the blizzard and a rescue team was sent out."
+      "zh": "已查明顾客的个人信息泄露到了外部。",
+      "en": "It emerged that customers' personal data had leaked outside the company."
     },
     "why": {
-      "zh": "「遭（そう）」+「難（なん）」：「そうなん」，遇难、遇险。",
-      "en": "「遭」 is そう and 「難」 is なん: そうなん, getting into distress."
+      "zh": "「漏（ろう）」+「洩（えい）」：「ろうえい」，泄露。",
+      "en": "「漏」 is ろう and 「洩」 is えい: ろうえい, a leak."
     },
     "wrong": [
       null,
       {
-        "zh": "「遭」是清音「そう」。",
-        "en": "「遭」 is unvoiced そう."
+        "zh": "「ろうしゅつ」是「漏出」，「洩」读「えい」，不读「しゅつ」。",
+        "en": "ろうしゅつ is 「漏出」; 「洩」 is えい, not しゅつ."
       },
       {
-        "zh": "「難」读「なん」，不是「らん」。",
-        "en": "「難」 is なん, not らん."
+        "zh": "「漏」读「ろう」（如「漏電」），不是「もう」。",
+        "en": "「漏」 is ろう (as in 「漏電」), not もう."
       },
       {
-        "zh": "「遭」是长音「そう」，不能缩短。",
-        "en": "「遭」 is the long そう; don't shorten it."
+        "zh": "「漏」是长音「ろう」，不是「ろ」。",
+        "en": "「漏」 has a long vowel: ろう, not ろ."
       }
     ]
   }

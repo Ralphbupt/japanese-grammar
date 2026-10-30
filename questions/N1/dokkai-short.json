@@ -1,333 +1,333 @@
 [
- {
-  "id": "n1-dk-201",
-  "type": "short",
-  "difficulty": 2,
-  "intro": "これは、ある会社の社内に出された通知です。",
-  "passage": "社員各位\n\n基幹システム更新に伴う利用停止について\n\n来る11月9日（土）から10日（日）にかけて、基幹システムの更新作業を実施いたします。作業期間中は、受発注システムおよび勤怠管理システムがご利用いただけません。両日に出勤される方は、出退勤の時刻を所定の用紙に記入のうえ、11日（月）中に所属長へご提出ください。\nなお、作業の進捗いかんによっては、11日の午前中も一部の機能が停止する場合がございます。その際は、同日8時までに社内ポータルにてお知らせいたします。\n\n情報システム部",
-  "tr": {
-   "zh": "致全体员工：关于基干系统更新导致停用的通知。定于11月9日（周六）至10日（周日）实施基干系统的更新作业。作业期间，订单系统和考勤管理系统无法使用。这两天上班的员工，请将上下班时间填写在指定表格上，并于11日（周一）当天交给所属部门负责人。另外，视作业进展情况，11日上午也可能有部分功能停用。届时将于当天8点前在公司内部门户上通知。信息系统部",
-   "en": "To all staff: Suspension of service for the core system update. From Saturday 9 to Sunday 10 November we will update the core system. During this time the ordering system and the attendance system will be unavailable. Staff working on either day should write their start and finish times on the designated form and submit it to their manager during Monday 11 November. Depending on how the work progresses, some functions may also be down on the morning of the 11th; if so, we will announce it on the intranet portal by 8:00 that day. Information Systems Department"
-  },
-  "questions": [
-   {
-    "q": "11月9日に出勤した社員は、どうしなければならないか。",
-    "options": [
-     "出退勤の時刻を用紙に書き、11日のうちに所属長に提出する。",
-     "11日の8時までに、社内ポータルで出勤したことを報告する。",
-     "11日にシステムが使えるようになってから、出退勤の時刻を入力する。",
-     "出勤する前に、所属長に用紙で出勤の許可を求める。"
-    ],
-    "answer": 0,
-    "why": {
-     "zh": "通知写明两天上班的人要「出退勤の時刻を所定の用紙に記入のうえ、11日（月）中に所属長へご提出ください」。",
-     "en": "The notice says those working either day must write their times on the form and give it to their manager 「11日（月）中に」."
+  {
+    "id": "n1-dk-201",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、ある会社の社内に出された通知です。",
+    "passage": "社員各位\n\n基幹システム更新に伴う利用停止について\n\n来る11月9日（土）から10日（日）にかけて、基幹システムの更新作業を実施いたします。作業期間中は、受発注システムおよび勤怠管理システムがご利用いただけません。両日に出勤される方は、出退勤の時刻を所定の用紙に記入のうえ、11日（月）中に所属長へご提出ください。\nなお、作業の進捗いかんによっては、11日の午前中も一部の機能が停止する場合がございます。その際は、同日8時までに社内ポータルにてお知らせいたします。\n\n情報システム部",
+    "tr": {
+      "zh": "致全体员工：关于基干系统更新导致停用的通知。定于11月9日（周六）至10日（周日）实施基干系统的更新作业。作业期间，订单系统和考勤管理系统无法使用。这两天上班的员工，请将上下班时间填写在指定表格上，并于11日（周一）当天交给所属部门负责人。另外，视作业进展情况，11日上午也可能有部分功能停用。届时将于当天8点前在公司内部门户上通知。信息系统部",
+      "en": "To all staff: Suspension of service for the core system update. From Saturday 9 to Sunday 10 November we will update the core system. During this time the ordering system and the attendance system will be unavailable. Staff working on either day should write their start and finish times on the designated form and submit it to their manager during Monday 11 November. Depending on how the work progresses, some functions may also be down on the morning of the 11th; if so, we will announce it on the intranet portal by 8:00 that day. Information Systems Department"
     },
-    "wrong": [
-     null,
-     {
-      "zh": "「8時までに社内ポータル」是信息系统部发布通知的时间和方式，不是员工报告的方法。",
-      "en": "「8時までに…社内ポータル」 is when and where IT will announce problems, not how staff report."
-     },
-     {
-      "zh": "通知要求填写纸质表格提交，没有说之后再输入系统；而且11日上午系统也可能仍停用。",
-      "en": "Staff are told to use the paper form, not to enter times later — and the system may still be down on the 11th."
-     },
-     {
-      "zh": "表格是记录上下班时间、事后提交的，不是事先申请许可。",
-      "en": "The form records times and is handed in afterwards; it isn't a request for permission."
-     }
+    "questions": [
+      {
+        "q": "11月9日に出勤した社員は、どうしなければならないか。",
+        "options": [
+          "出退勤の時刻を用紙に書き、11日のうちに所属長に提出する。",
+          "11日の8時までに、社内ポータルで出勤したことを報告する。",
+          "11日にシステムが使えるようになってから、出退勤の時刻を入力する。",
+          "出勤する前に、所定の用紙で所属長に出勤の許可を申請しておく。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "通知写明两天上班的人要「出退勤の時刻を所定の用紙に記入のうえ、11日（月）中に所属長へご提出ください」。",
+          "en": "The notice says those working either day must write their times on the form and give it to their manager 「11日（月）中に」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「8時までに社内ポータル」是信息系统部发布通知的时间和方式，不是员工报告的方法。",
+            "en": "「8時までに…社内ポータル」 is when and where IT will announce problems, not how staff report."
+          },
+          {
+            "zh": "通知要求填写纸质表格提交，没有说之后再输入系统；而且11日上午系统也可能仍停用。",
+            "en": "Staff are told to use the paper form, not to enter times later — and the system may still be down on the 11th."
+          },
+          {
+            "zh": "表格是记录上下班时间、事后提交的，不是事先申请出勤许可。",
+            "en": "The form records times and is handed in afterwards; it isn't a request for permission to come in."
+          }
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "n1-dk-202",
-  "type": "short",
-  "difficulty": 2,
-  "passage": "会話の途中で沈黙が訪れると、私たちはつい慌てて何か言葉を探してしまう。沈黙は気まずいもの、埋めるべきものだと思い込んでいるからだろう。しかし、長年連れ添った夫婦や古くからの友人とのあいだでは、何も話さずにいる時間がかえって心地よいことがある。言葉を交わさずとも通じ合えるという安心感が、そこにはあるのだ。してみると、沈黙が気まずいのは沈黙そのもののせいではなく、相手との関係が、まだその沈黙を受け止めるに足るほど深まっていないからなのかもしれない。",
-  "tr": {
-   "zh": "谈话中一旦出现沉默，我们总会慌忙地找些话来说。大概是因为我们认定沉默令人尴尬、必须填满吧。但是，在相伴多年的夫妻或老朋友之间，什么都不说的时间有时反而让人舒服。那里有一种不交谈也能心意相通的安心感。这样看来，沉默令人尴尬，或许并不是沉默本身的缘故，而是因为和对方的关系还没有深到足以接受那份沉默。",
-   "en": "When a silence falls in the middle of a conversation, we tend to scramble for something to say, probably because we're convinced silence is awkward and must be filled. Yet between a long-married couple or old friends, time spent without speaking can actually be pleasant. There is a sense of security that you understand each other even without words. Seen this way, silence may feel awkward not because of the silence itself but because the relationship has not yet grown deep enough to hold it."
   },
-  "questions": [
-   {
-    "q": "筆者は、沈黙が気まずく感じられるのはなぜだと考えているか。",
-    "options": [
-     "沈黙そのものが、本来気まずいものだから",
-     "相手との関係が、沈黙を自然に受け入れられるほどには深まっていないから",
-     "言葉を交わさなければ、互いの気持ちは通じ合えないから",
-     "慌てて言葉を探すと、かえって会話が続かなくなるから"
-    ],
-    "answer": 1,
-    "why": {
-     "zh": "最后一句：「沈黙そのもののせいではなく、相手との関係が…受け止めるに足るほど深まっていないから」。",
-     "en": "The last sentence: not 「沈黙そのもののせい」 but because the relationship isn't yet 「受け止めるに足るほど深まっていない」."
+  {
+    "id": "n1-dk-202",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "会話の途中で沈黙が訪れると、私たちはつい慌てて何か言葉を探してしまう。沈黙は気まずいもの、埋めるべきものだと思い込んでいるからだろう。しかし、長年連れ添った夫婦や古くからの友人とのあいだでは、何も話さずにいる時間がかえって心地よいことがある。言葉を交わさずとも通じ合えるという安心感が、そこにはあるのだ。してみると、沈黙が気まずいのは沈黙そのもののせいではなく、相手との関係が、まだその沈黙を受け止めるに足るほど深まっていないからなのかもしれない。",
+    "tr": {
+      "zh": "谈话中一旦出现沉默，我们总会慌忙地找些话来说。大概是因为我们认定沉默令人尴尬、必须填满吧。但是，在相伴多年的夫妻或老朋友之间，什么都不说的时间有时反而让人舒服。那里有一种不交谈也能心意相通的安心感。这样看来，沉默令人尴尬，或许并不是沉默本身的缘故，而是因为和对方的关系还没有深到足以接受那份沉默。",
+      "en": "When a silence falls in the middle of a conversation, we tend to scramble for something to say, probably because we're convinced silence is awkward and must be filled. Yet between a long-married couple or old friends, time spent without speaking can actually be pleasant. There is a sense of security that you understand each other even without words. Seen this way, silence may feel awkward not because of the silence itself but because the relationship has not yet grown deep enough to hold it."
     },
-    "wrong": [
-     {
-      "zh": "作者明确说「沈黙そのもののせいではなく」，否定了这一点。",
-      "en": "The writer explicitly says 「沈黙そのもののせいではなく」."
-     },
-     null,
-     {
-      "zh": "文中说亲近的人之间「言葉を交わさずとも通じ合える」，正好相反。",
-      "en": "The text says close people 「言葉を交わさずとも通じ合える」 — the opposite."
-     },
-     {
-      "zh": "文中只说我们会慌忙找话，没有说这样会让对话中断。",
-      "en": "The text only says we scramble for words; it never says this kills the conversation."
-     }
+    "questions": [
+      {
+        "q": "筆者は、沈黙が気まずく感じられるのはなぜだと考えているか。",
+        "options": [
+          "沈黙というものが、そもそも人を落ち着かなくさせる性質を持つから",
+          "互いの関係が、黙っていても安心できるほどにはまだ深まっていないから",
+          "言葉を交わさずに通じ合えるのは、長年連れ添った夫婦に限られるから",
+          "慌てて言葉を探そうとするあまり、かえって沈黙が気になってしまうから"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "末句：尴尬「沈黙そのもののせいではなく」，而是和对方的关系还没深到「その沈黙を受け止めるに足るほど」。",
+          "en": "The last sentence: the awkwardness is 「沈黙そのもののせいではなく」 but because the relationship isn't yet deep enough 「その沈黙を受け止めるに足るほど」."
+        },
+        "wrong": [
+          {
+            "zh": "笔者明确否定这一点：「沈黙そのもののせいではなく」。",
+            "en": "The author explicitly rejects this: 「沈黙そのもののせいではなく」."
+          },
+          null,
+          {
+            "zh": "夫妻和老朋友只是举的例子，笔者没有说只限于他们；而且这也不是尴尬的原因。",
+            "en": "Couples and old friends are examples, not the only case, and this isn't given as the cause of awkwardness."
+          },
+          {
+            "zh": "因果颠倒：文中说是因为认定沉默尴尬才慌忙找话，而不是找话导致尴尬。",
+            "en": "Cause and effect reversed: we rush for words because we think silence is awkward, not the other way round."
+          }
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "n1-dk-203",
-  "type": "short",
-  "difficulty": 2,
-  "passage": "古典は難しい、と敬遠する人は多い。確かに、千年前の言葉で書かれた物語を、注釈なしに読むのは容易ではない。だが、私が学生に古典を勧めるのは、そこに書かれた知識が役に立つからではない。恋に悩み、出世を願い、老いを嘆く人々の姿は、時代こそ違え、今の私たちと何ら変わらない。そのことに気づいたとき、人は自分の悩みを、千年来くり返されてきた人間の営みの一つとして、少し離れたところから眺められるようになる。古典を読む意味とは、つまるところそこにあるのではないだろうか。",
-  "tr": {
-   "zh": "很多人觉得古典难懂而敬而远之。的确，不借助注释去读用千年前的语言写成的故事并不容易。但是，我向学生推荐古典，并不是因为书中的知识有用。为恋爱烦恼、盼望出人头地、哀叹衰老的人们，虽然时代不同，却和今天的我们毫无二致。意识到这一点时，人就能把自己的烦恼看作千年来不断重复的人类活动之一，从稍远的地方去看待它。读古典的意义，归根结底不就在这里吗？",
-   "en": "Many people shy away from the classics as too difficult. Certainly, reading a tale written in the language of a thousand years ago without notes is not easy. But I recommend the classics to my students not because the knowledge in them is useful. People agonising over love, longing for advancement and lamenting old age are, different era aside, no different from us. When you realise this, you become able to look at your own troubles from a little distance, as one of the human doings repeated for a thousand years. Isn't that, in the end, where the meaning of reading the classics lies?"
   },
-  "questions": [
-   {
-    "q": "筆者の考える「古典を読む意味」とは何か。",
-    "options": [
-     "千年前の言葉で書かれた物語を、注釈なしで読めるようになること",
-     "古典に書かれている昔の知識を、現代の生活に役立てること",
-     "昔の人も同じことに悩んでいたと知り、自分の悩みを客観的に見られるようになること",
-     "昔と今の人々の違いを知ることで、時代の変化を理解すること"
-    ],
-    "answer": 2,
-    "why": {
-     "zh": "「そこ」指前一句：意识到古人和我们一样，就能把自己的烦恼「少し離れたところから眺められる」。",
-     "en": "「そこ」 points to the sentence before: seeing that people then were like us lets you view your troubles 「少し離れたところから」."
+  {
+    "id": "n1-dk-203",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "古典は難しい、と敬遠する人は多い。確かに、千年前の言葉で書かれた物語を、注釈なしに読むのは容易ではない。だが、私が学生に古典を勧めるのは、そこに書かれた知識が役に立つからではない。恋に悩み、出世を願い、老いを嘆く人々の姿は、時代こそ違え、今の私たちと何ら変わらない。そのことに気づいたとき、人は自分の悩みを、千年来くり返されてきた人間の営みの一つとして、少し離れたところから眺められるようになる。古典を読む意味とは、つまるところそこにあるのではないだろうか。",
+    "tr": {
+      "zh": "很多人觉得古典难懂而敬而远之。的确，不借助注释去读用千年前的语言写成的故事并不容易。但是，我向学生推荐古典，并不是因为书中的知识有用。为恋爱烦恼、盼望出人头地、哀叹衰老的人们，虽然时代不同，却和今天的我们毫无二致。意识到这一点时，人就能把自己的烦恼看作千年来不断重复的人类活动之一，从稍远的地方去看待它。读古典的意义，归根结底不就在这里吗？",
+      "en": "Many people shy away from the classics as too difficult. Certainly, reading a tale written in the language of a thousand years ago without notes is not easy. But I recommend the classics to my students not because the knowledge in them is useful. People agonising over love, longing for advancement and lamenting old age are, different era aside, no different from us. When you realise this, you become able to look at your own troubles from a little distance, as one of the human doings repeated for a thousand years. Isn't that, in the end, where the meaning of reading the classics lies?"
     },
-    "wrong": [
-     {
-      "zh": "作者只承认不借注释读很难，并没有把它当作读古典的目的。",
-      "en": "Reading without notes is only mentioned as hard; it isn't the purpose."
-     },
-     {
-      "zh": "作者明说推荐古典「知識が役に立つからではない」。",
-      "en": "The writer says it is 「知識が役に立つからではない」."
-     },
-     null,
-     {
-      "zh": "作者强调的是古今「何ら変わらない」，不是古今的差异。",
-      "en": "The point is that people are 「何ら変わらない」, not how they differ."
-     }
+    "questions": [
+      {
+        "q": "筆者の考える「古典を読む意味」とは何か。",
+        "options": [
+          "注釈に頼らず、千年前の言葉を自分の力で読み解けるようになること",
+          "古典に記された昔の知識や知恵を、今の暮らしの中で役立てていくこと",
+          "昔の人と変わらぬ姿に気づき、自分の悩みを一歩引いて見られること",
+          "恋や出世に悩む昔の人々の姿から、時代ごとの価値観の違いを学ぶこと"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "笔者说古人的烦恼「今の私たちと何ら変わらない」，意识到这一点就能把自己的烦恼「少し離れたところから眺められる」，这就是读古典的意义。",
+          "en": "Old people's worries are 「今の私たちと何ら変わらない」; realising this lets us see our own worries 「少し離れたところから」 — that is the point of reading classics."
+        },
+        "wrong": [
+          {
+            "zh": "不看注释读懂古文只是说古典难读，不是笔者说的意义。",
+            "en": "Reading without notes is mentioned only as the difficulty, not as the point."
+          },
+          {
+            "zh": "笔者明确说推荐古典「知識が役に立つからではない」。",
+            "en": "The author says outright it is 「知識が役に立つからではない」."
+          },
+          null,
+          {
+            "zh": "笔者强调的是古今「何ら変わらない」，不是时代差异。",
+            "en": "The author stresses that people 「何ら変わらない」 across time, not how values differ."
+          }
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "n1-dk-204",
-  "type": "short",
-  "difficulty": 2,
-  "intro": "これは、大学の教員が送ったメールです。",
-  "passage": "市民大学事務局　山田様\n\nこのたびは、講演のご依頼をいただき、誠にありがとうございます。\nせっかくのお申し出ではございますが、ご指定の12月は学会の準備が重なっており、十分な準備をしてお話しすることが難しい状況です。中途半端な内容でお引き受けするのは、かえって失礼にあたると考え、今回はご辞退申し上げることといたしました。\nなお、来年の春以降でしたら、日程の調整がつくかと存じます。その時期でもよろしければ、改めてご相談いただけますと幸いです。\n\n東西大学　森",
-  "tr": {
-   "zh": "市民大学事务局 山田先生：这次承蒙您邀请演讲，非常感谢。难得您提出邀请，但您指定的12月我同时在准备学会，很难做好充分准备来演讲。我认为以不够完善的内容接受邀请反而失礼，因此决定这次婉拒。另外，如果是明年春天以后，我想日程应该可以安排。如果那个时候也可以的话，希望您能再与我商量。东西大学 森",
-   "en": "To Mr Yamada, Community College Office: Thank you very much for asking me to give a lecture. Kind as the offer is, in December, the month you specified, I am busy preparing for an academic conference, and it would be difficult to prepare properly. I feel that accepting with a half-finished talk would be discourteous, so I must decline this time. From next spring onward, however, I expect I could fit it into my schedule. If that timing would suit you, I would be glad if you would contact me again. Mori, Tozai University"
   },
-  "questions": [
-   {
-    "q": "森さんがこのメールで最も伝えたいことは何か。",
-    "options": [
-     "学会の準備を手伝ってもらえるなら、12月の講演を引き受けたい。",
-     "12月の講演は断るが、春以降であれば引き受けられる可能性がある。",
-     "今後は、市民大学での講演を引き受けるつもりはない。",
-     "準備が不十分でもかまわなければ、12月に講演をしたい。"
-    ],
-    "answer": 1,
-    "why": {
-     "zh": "12月「ご辞退申し上げる」，但「来年の春以降でしたら、日程の調整がつく」，请对方再商量。",
-     "en": "He declines December (「ご辞退申し上げる」) but says spring onward 「日程の調整がつく」 and invites them to ask again."
+  {
+    "id": "n1-dk-204",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、大学の教員が送ったメールです。",
+    "passage": "市民大学事務局　山田様\n\nこのたびは、講演のご依頼をいただき、誠にありがとうございます。\nせっかくのお申し出ではございますが、ご指定の12月は学会の準備が重なっており、十分な準備をしてお話しすることが難しい状況です。中途半端な内容でお引き受けするのは、かえって失礼にあたると考え、今回はご辞退申し上げることといたしました。\nなお、来年の春以降でしたら、日程の調整がつくかと存じます。その時期でもよろしければ、改めてご相談いただけますと幸いです。\n\n東西大学　森",
+    "tr": {
+      "zh": "市民大学事务局 山田先生：这次承蒙您邀请演讲，非常感谢。难得您提出邀请，但您指定的12月我同时在准备学会，很难做好充分准备来演讲。我认为以不够完善的内容接受邀请反而失礼，因此决定这次婉拒。另外，如果是明年春天以后，我想日程应该可以安排。如果那个时候也可以的话，希望您能再与我商量。东西大学 森",
+      "en": "To Mr Yamada, Community College Office: Thank you very much for asking me to give a lecture. Kind as the offer is, in December, the month you specified, I am busy preparing for an academic conference, and it would be difficult to prepare properly. I feel that accepting with a half-finished talk would be discourteous, so I must decline this time. From next spring onward, however, I expect I could fit it into my schedule. If that timing would suit you, I would be glad if you would contact me again. Mori, Tozai University"
     },
-    "wrong": [
-     {
-      "zh": "邮件没有请对方帮忙准备学会，拒绝的理由是自己忙不过来。",
-      "en": "He doesn't ask for help with the conference; he declines because he's too busy."
-     },
-     null,
-     {
-      "zh": "他提出春天以后可以再商量，并不是今后一概不接。",
-      "en": "He invites a request for spring, so he isn't refusing for good."
-     },
-     {
-      "zh": "他正是认为以「中途半端な内容」接受很失礼才拒绝的。",
-      "en": "He declines precisely because a 「中途半端な内容」 would be discourteous."
-     }
+    "questions": [
+      {
+        "q": "森さんがこのメールで最も伝えたいことは何か。",
+        "options": [
+          "学会の準備を手伝ってもらえるなら、12月の講演を引き受けたい。",
+          "12月の講演は辞退するが、来春以降なら改めて相談に応じたい。",
+          "学会の準備が続くため、当面は市民大学からの依頼を受けられない。",
+          "準備不足でもよいと言ってもらえるなら、12月に講演を引き受けたい。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "森先生谢绝了12月的演讲（「今回はご辞退申し上げる」），但说「来年の春以降でしたら、日程の調整がつく」，希望再商量。",
+          "en": "Mori declines December (「今回はご辞退申し上げる」) but says 「来年の春以降でしたら、日程の調整がつく」 and invites them to ask again."
+        },
+        "wrong": [
+          {
+            "zh": "信里没有请对方帮忙准备学会，拒绝的理由只是时间冲突。",
+            "en": "Mori asks for no help with the conference; the reason is simply the clash."
+          },
+          null,
+          {
+            "zh": "信中明说春天以后可以再商量，并不是暂时都不接。",
+            "en": "Mori says spring onwards could work, so this isn't a blanket refusal for now."
+          },
+          {
+            "zh": "森先生认为准备不充分去讲「かえって失礼にあたる」，所以不会这样提议。",
+            "en": "Mori thinks a half-prepared talk 「かえって失礼にあたる」, so would not offer this."
+          }
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "n1-dk-205",
-  "type": "short",
-  "difficulty": 2,
-  "passage": "一年中どんな野菜でも手に入るようになって久しい。冬にトマトを、夏に大根を買うことに、もはや誰も疑問を抱かない。便利になったのは確かだが、その代償として私たちは何を失ったのだろうか。かつて人々は、店先に並ぶ食材の移り変わりで季節を知った。初物を口にしては季節の訪れを喜び、名残のものを味わっては過ぎゆく季節を惜しんだ。旬とは、単に食材がおいしい時期を指す言葉ではなく、暮らしの中で季節を感じ取るための、いわば暦のようなものだったのである。",
-  "tr": {
-   "zh": "一年到头什么蔬菜都能买到，已经很久了。冬天买番茄、夏天买萝卜，早已没有人觉得奇怪。变方便了是事实，但作为代价，我们失去了什么呢？过去，人们通过店头食材的变化来知道季节。吃到当季第一批的东西就为季节的到来而高兴，品尝到季末的东西就为逝去的季节而惋惜。“时令”不只是指食材好吃的时期，可以说它曾是在生活中感受季节的一种历法。",
-   "en": "It has long been possible to get any vegetable all year round. Nobody questions buying tomatoes in winter or daikon in summer any more. It has certainly become convenient, but what have we lost in exchange? People used to know the season from the changing produce in front of shops. Eating the first of something, they rejoiced at a season's arrival; tasting the last of it, they mourned the season's passing. 'Shun' was not just a word for when food tastes best, but a kind of calendar, so to speak, for sensing the seasons in daily life."
   },
-  "questions": [
-   {
-    "q": "筆者によると、「旬」とはどのようなものだったか。",
-    "options": [
-     "一年のうちで、食材がもっとも安く手に入る時期",
-     "食材が一番おいしくなる時期だけを表す言葉",
-     "季節外れの野菜を食べないようにするための決まり",
-     "食べ物を通して、季節の移り変わりを感じさせてくれるもの"
-    ],
-    "answer": 3,
-    "why": {
-     "zh": "最后一句：时令「季節を感じ取るための、いわば暦のようなもの」，即通过食物感受季节。",
-     "en": "The last sentence: shun was 「季節を感じ取るための、いわば暦のようなもの」 — food that lets you feel the seasons."
+  {
+    "id": "n1-dk-205",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "一年中どんな野菜でも手に入るようになって久しい。冬にトマトを、夏に大根を買うことに、もはや誰も疑問を抱かない。便利になったのは確かだが、その代償として私たちは何を失ったのだろうか。かつて人々は、店先に並ぶ食材の移り変わりで季節を知った。初物を口にしては季節の訪れを喜び、名残のものを味わっては過ぎゆく季節を惜しんだ。旬とは、単に食材がおいしい時期を指す言葉ではなく、暮らしの中で季節を感じ取るための、いわば暦のようなものだったのである。",
+    "tr": {
+      "zh": "一年到头什么蔬菜都能买到，已经很久了。冬天买番茄、夏天买萝卜，早已没有人觉得奇怪。变方便了是事实，但作为代价，我们失去了什么呢？过去，人们通过店头食材的变化来知道季节。吃到当季第一批的东西就为季节的到来而高兴，品尝到季末的东西就为逝去的季节而惋惜。“时令”不只是指食材好吃的时期，可以说它曾是在生活中感受季节的一种历法。",
+      "en": "It has long been possible to get any vegetable all year round. Nobody questions buying tomatoes in winter or daikon in summer any more. It has certainly become convenient, but what have we lost in exchange? People used to know the season from the changing produce in front of shops. Eating the first of something, they rejoiced at a season's arrival; tasting the last of it, they mourned the season's passing. 'Shun' was not just a word for when food tastes best, but a kind of calendar, so to speak, for sensing the seasons in daily life."
     },
-    "wrong": [
-     {
-      "zh": "文中没有提到价格。",
-      "en": "Price is never mentioned."
-     },
-     {
-      "zh": "作者说的是「単に…おいしい時期を指す言葉ではなく」，否定了“只是”这一点。",
-      "en": "The writer says it was 「単に…おいしい時期を指す言葉ではなく」 — not only that."
-     },
-     {
-      "zh": "文中说的是人们从食材感知季节，没有说有禁止吃反季节蔬菜的规矩。",
-      "en": "Nothing says there was a rule against out-of-season food."
-     },
-     null
+    "questions": [
+      {
+        "q": "筆者によると、「旬」とはどのようなものだったか。",
+        "options": [
+          "一年のうちで、その食材がもっとも多く出回り、安く買える時期",
+          "その食材がいちばんおいしく味わえる時期だけを指す呼び名",
+          "初物を喜び、名残を惜しむために定められた食べ物の決まり",
+          "食卓を通して季節の移ろいを知らせてくれる、目印のようなもの"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "末句：旬「単に食材がおいしい時期を指す言葉ではなく」，而是在生活中感受季节的「暦のようなもの」。",
+          "en": "The last sentence: 旬 is 「単に食材がおいしい時期を指す言葉ではなく」 but 「暦のようなもの」 for sensing the seasons."
+        },
+        "wrong": [
+          {
+            "zh": "文中没有谈价格。",
+            "en": "Price is never mentioned."
+          },
+          {
+            "zh": "笔者明确说旬「単に…おいしい時期を指す言葉ではなく」，「だけ」正是错在这里。",
+            "en": "The author says it is not 「単に」 the tasty season — the 'only' is what's wrong."
+          },
+          {
+            "zh": "吃初物、尝名残是人们感受季节的方式，不是规定的规矩。",
+            "en": "Eating first and last produce is how people felt the seasons, not a rule laid down."
+          },
+          null
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "n1-dk-206",
-  "type": "short",
-  "difficulty": 3,
-  "passage": "「日本人の平均貯蓄額は千八百万円」といった報道を目にすると、自分の貯金の少なさに肩を落とす人もいるだろう。だが、落ち込むには及ばない。貯蓄額のように、一部の人が極端に大きな値を持つデータでは、平均値はその少数の値に引っ張られ、多くの人の実感よりずっと高くなるからだ。実際、データを小さい順に並べてちょうど真ん中に来る値、すなわち中央値は、平均値の半分にも満たないことが多い。数字そのものは正しくても、どの数字を示すかによって、受け手の印象は大きく変わるのである。",
-  "tr": {
-   "zh": "看到“日本人平均储蓄额为一千八百万日元”之类的报道，有人会因自己存款太少而沮丧吧。但是，用不着沮丧。因为像储蓄额这样少数人拥有极大数值的数据，平均值会被这些少数值拉高，远远高于大多数人的实际感受。事实上，把数据从小到大排列、正好位于中间的数值，即中位数，常常连平均值的一半都不到。即使数字本身是正确的，展示哪个数字也会大大改变接受者的印象。",
-   "en": "Seeing a report like 'Japanese have average savings of 18 million yen', some people may feel downcast at how little they have saved. But there's no need to be. In data like savings, where a few people have extremely large values, the average is pulled up by those few and ends up far higher than most people's experience. In fact the median — the value exactly in the middle when the data are sorted — is often less than half the average. Even when the numbers themselves are correct, which number you show greatly changes the impression the audience takes away."
   },
-  "questions": [
-   {
-    "q": "筆者が「落ち込むには及ばない」と言うのはなぜか。",
-    "options": [
-     "報道されている平均貯蓄額の数字が、そもそも誤っているから",
-     "平均値は、ごく一部の人の多額の貯蓄に引き上げられ、多くの人の実態より高くなっているから",
-     "中央値のほうが、平均値よりも高くなることが多いから",
-     "実際には、多くの人が報道よりも多くの貯金を持っているから"
-    ],
-    "answer": 1,
-    "why": {
-     "zh": "紧接着的理由「〜からだ」：平均值「その少数の値に引っ張られ、多くの人の実感よりずっと高くなる」。",
-     "en": "The reason follows in 「〜からだ」: the average is 「その少数の値に引っ張られ」 and sits far above most people's reality."
+  {
+    "id": "n1-dk-206",
+    "type": "short",
+    "difficulty": 3,
+    "passage": "「日本人の平均貯蓄額は千八百万円」といった報道を目にすると、自分の貯金の少なさに肩を落とす人もいるだろう。だが、落ち込むには及ばない。貯蓄額のように、一部の人が極端に大きな値を持つデータでは、平均値はその少数の値に引っ張られ、多くの人の実感よりずっと高くなるからだ。実際、データを小さい順に並べてちょうど真ん中に来る値、すなわち中央値は、平均値の半分にも満たないことが多い。数字そのものは正しくても、どの数字を示すかによって、受け手の印象は大きく変わるのである。",
+    "tr": {
+      "zh": "看到“日本人平均储蓄额为一千八百万日元”之类的报道，有人会因自己存款太少而沮丧吧。但是，用不着沮丧。因为像储蓄额这样少数人拥有极大数值的数据，平均值会被这些少数值拉高，远远高于大多数人的实际感受。事实上，把数据从小到大排列、正好位于中间的数值，即中位数，常常连平均值的一半都不到。即使数字本身是正确的，展示哪个数字也会大大改变接受者的印象。",
+      "en": "Seeing a report like 'Japanese have average savings of 18 million yen', some people may feel downcast at how little they have saved. But there's no need to be. In data like savings, where a few people have extremely large values, the average is pulled up by those few and ends up far higher than most people's experience. In fact the median — the value exactly in the middle when the data are sorted — is often less than half the average. Even when the numbers themselves are correct, which number you show greatly changes the impression the audience takes away."
     },
-    "wrong": [
-     {
-      "zh": "作者说「数字そのものは正しくても」，并没有说数字有误。",
-      "en": "The writer says 「数字そのものは正しくても」 — the figure isn't wrong."
-     },
-     null,
-     {
-      "zh": "文中说中位数「平均値の半分にも満たない」，正好相反。",
-      "en": "The median is 「平均値の半分にも満たない」 — the opposite."
-     },
-     {
-      "zh": "大多数人的储蓄低于报道的平均值，而不是更多。",
-      "en": "Most people have less than the reported average, not more."
-     }
+    "questions": [
+      {
+        "q": "筆者が「落ち込むには及ばない」と言うのはなぜか。",
+        "options": [
+          "報道された平均貯蓄額は、計算の方法そのものが誤っているから",
+          "平均値は一部の多額の貯蓄に引っ張られ、実態より高く出やすいから",
+          "中央値は平均値より高くなりやすく、本当の水準はもっと高いから",
+          "貯蓄額は人によって違うので、平均と比べること自体に意味がないから"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "笔者解释：少数人数值极大时，平均值「その少数の値に引っ張られ」，比多数人的实感高得多。",
+          "en": "When a few people have huge values, the mean is 「その少数の値に引っ張られ」 and ends up far above most people's reality."
+        },
+        "wrong": [
+          {
+            "zh": "笔者说「数字そのものは正しくても」，问题在选哪个数字，不在计算错误。",
+            "en": "The author says 「数字そのものは正しくても」 — the issue is which figure is shown, not a wrong calculation."
+          },
+          null,
+          {
+            "zh": "正相反，中央值往往「平均値の半分にも満たない」。",
+            "en": "The opposite: the median is often 「平均値の半分にも満たない」."
+          },
+          {
+            "zh": "笔者没有说比较没意义，而是指出要看中央值这类更贴近实感的数字。",
+            "en": "The author doesn't call comparison pointless; the point is that a figure like the median fits reality better."
+          }
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "n1-dk-207",
-  "type": "short",
-  "difficulty": 2,
-  "passage": "忙しい人ほど、休むことに罪悪感を覚えるという。休んでいる間にも仕事は積み上がり、周りに後れを取るような気がするのだろう。しかし、疲れた頭で机に向かい続けても、作業の効率は落ちる一方だ。実際、ある研究では、適度に休憩をはさみながら作業した集団のほうが、休まずに働き続けた集団よりも、作業の正確さで上回ったという。休息は仕事の妨げではない。むしろ、良い仕事をするために欠かせない工程の一つとして、あらかじめ予定に組み込んでおくべきものなのだ。",
-  "tr": {
-   "zh": "据说越忙的人，越会对休息感到内疚。大概是觉得休息时工作也在不断堆积，会落后于周围的人吧。但是，用疲惫的头脑一直坐在桌前，工作效率只会不断下降。事实上，有研究表明，适度穿插休息工作的一组，在工作的准确性上超过了不休息一直工作的一组。休息并不妨碍工作。倒不如说，它是做好工作不可缺少的工序之一，应该事先排进日程里。",
-   "en": "It's said that the busier people are, the guiltier they feel about resting — presumably because work piles up while they rest and they feel they're falling behind. But if you keep sitting at your desk with a tired mind, your efficiency only goes down. In fact, one study found that a group who worked with moderate breaks was more accurate than a group who worked without stopping. Rest doesn't get in the way of work. Rather, it is one of the steps essential to good work, and should be built into the schedule in advance."
   },
-  "questions": [
-   {
-    "q": "筆者が最も言いたいことは何か。",
-    "options": [
-     "忙しい人は、周りに後れを取らないよう、休むのを控えるべきだ。",
-     "休憩の時間は、仕事の量に応じて調整するべきだ。",
-     "休むことは、良い仕事をするために必要なものとして予定に入れておくべきだ。",
-     "疲れを感じたら、仕事をすべて止めて長い休暇を取るべきだ。"
-    ],
-    "answer": 2,
-    "why": {
-     "zh": "结论在最后：休息是「良い仕事をするために欠かせない工程」，应该「あらかじめ予定に組み込んでおく」。",
-     "en": "The conclusion: rest is 「良い仕事をするために欠かせない工程」 to be 「あらかじめ予定に組み込んでおく」."
+  {
+    "id": "n1-dk-207",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "忙しい人ほど、休むことに罪悪感を覚えるという。休んでいる間にも仕事は積み上がり、周りに後れを取るような気がするのだろう。しかし、疲れた頭で机に向かい続けても、作業の効率は落ちる一方だ。実際、ある研究では、適度に休憩をはさみながら作業した集団のほうが、休まずに働き続けた集団よりも、作業の正確さで上回ったという。休息は仕事の妨げではない。むしろ、良い仕事をするために欠かせない工程の一つとして、あらかじめ予定に組み込んでおくべきものなのだ。",
+    "tr": {
+      "zh": "据说越忙的人，越会对休息感到内疚。大概是觉得休息时工作也在不断堆积，会落后于周围的人吧。但是，用疲惫的头脑一直坐在桌前，工作效率只会不断下降。事实上，有研究表明，适度穿插休息工作的一组，在工作的准确性上超过了不休息一直工作的一组。休息并不妨碍工作。倒不如说，它是做好工作不可缺少的工序之一，应该事先排进日程里。",
+      "en": "It's said that the busier people are, the guiltier they feel about resting — presumably because work piles up while they rest and they feel they're falling behind. But if you keep sitting at your desk with a tired mind, your efficiency only goes down. In fact, one study found that a group who worked with moderate breaks was more accurate than a group who worked without stopping. Rest doesn't get in the way of work. Rather, it is one of the steps essential to good work, and should be built into the schedule in advance."
     },
-    "wrong": [
-     {
-      "zh": "这是忙人的想法，作者用「しかし」加以否定。",
-      "en": "That's the busy person's feeling, which the writer rejects with 「しかし」."
-     },
-     {
-      "zh": "文中没有说要根据工作量调整休息时间。",
-      "en": "Nothing says breaks should depend on workload."
-     },
-     null,
-     {
-      "zh": "作者说的是「適度に休憩をはさみながら」，不是停下一切去长假。",
-      "en": "The writer means 「適度に休憩をはさみながら」, not stopping everything for a long holiday."
-     }
+    "questions": [
+      {
+        "q": "筆者が最も言いたいことは何か。",
+        "options": [
+          "忙しい時期こそ、周りに後れを取らないよう休みを控えるべきだ。",
+          "休憩は、作業の正確さが落ちてきたと感じたときに取ればよい。",
+          "休息を仕事の一部とみなし、あらかじめ日程に組み入れておくべきだ。",
+          "疲れを感じたら作業を中断し、まとまった休暇を取って回復を図るべきだ。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "末句：休息不是工作的妨碍，而是好工作「欠かせない工程の一つとして、あらかじめ予定に組み込んでおくべき」。",
+          "en": "The last sentence: rest is not an obstacle but 「欠かせない工程の一つとして、あらかじめ予定に組み込んでおくべき」."
+        },
+        "wrong": [
+          {
+            "zh": "这是忙碌的人的想法，笔者正是要反驳。",
+            "en": "This is what busy people feel; the author argues against it."
+          },
+          {
+            "zh": "笔者主张「あらかじめ」安排休息，而不是等效率下降后再休。",
+            "en": "The author wants rest planned 「あらかじめ」, not taken only once accuracy drops."
+          },
+          null,
+          {
+            "zh": "文中说的是「適度に休憩をはさみながら」，没有主张中断工作去长期休假。",
+            "en": "The study praises 「適度に休憩をはさみながら」 working, not stopping for a long holiday."
+          }
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "id": "n1-dk-208",
-  "type": "short",
-  "difficulty": 3,
-  "intro": "次の文章は、小説の一節である。",
-  "passage": "列車が動き出すと、母は窓の外で小さく手を振った。泣くまいと決めていたのだろう、口元には笑みさえ浮かべていたが、その目は赤かった。\n上京すると告げたとき、母は反対しなかった。「あんたの人生なんだから」と言ったきり、それ以上は何も尋ねなかった。あのとき私は、それを母の物わかりのよさだと思っていた。だが、遠ざかっていくホームの母を見つめながら、私はようやく気づいた。母が何も言わなかったのは、口を開けば引き止めてしまうと分かっていたからなのだ。",
-  "tr": {
-   "zh": "列车一开动，母亲就在窗外轻轻挥手。大概是下定决心不哭吧，她嘴角甚至带着笑意，可眼睛是红的。我告诉她要去东京时，母亲没有反对。她只说了一句“这是你自己的人生”，之后就什么也没再问。那时我以为那是母亲通情达理。可是，望着站台上渐渐远去的母亲，我终于明白了：母亲之所以什么都不说，是因为她知道一开口就会挽留我。",
-   "en": "As the train began to move, my mother gave a small wave outside the window. She must have made up her mind not to cry; there was even a smile on her lips, but her eyes were red. When I told her I was moving to Tokyo, she didn't object. She said only, 'It's your life,' and asked nothing more. At the time I took that for her being understanding. But watching her on the receding platform, I finally realised: she had said nothing because she knew that if she opened her mouth, she would try to stop me going."
   },
-  "questions": [
-   {
-    "q": "「私」が最後に気づいたことは何か。",
-    "options": [
-     "母は、息子の上京に本当は関心がなかったこと",
-     "母は物わかりがよく、初めから上京に賛成していたこと",
-     "母は、別れの場面で泣くことを恥ずかしいと思っていたこと",
-     "母は本当は引き止めたかったが、その気持ちを抑えて何も言わなかったこと"
-    ],
-    "answer": 3,
-    "why": {
-     "zh": "最后一句：「口を開けば引き止めてしまうと分かっていたから」何も言わなかった——其实想挽留，却忍住了。",
-     "en": "The last line: she kept silent 「口を開けば引き止めてしまうと分かっていたから」 — she wanted to stop him but held back."
+  {
+    "id": "n1-dk-208",
+    "type": "short",
+    "difficulty": 3,
+    "intro": "次の文章は、小説の一節である。",
+    "passage": "列車が動き出すと、母は窓の外で小さく手を振った。泣くまいと決めていたのだろう、口元には笑みさえ浮かべていたが、その目は赤かった。\n上京すると告げたとき、母は反対しなかった。「あんたの人生なんだから」と言ったきり、それ以上は何も尋ねなかった。あのとき私は、それを母の物わかりのよさだと思っていた。だが、遠ざかっていくホームの母を見つめながら、私はようやく気づいた。母が何も言わなかったのは、口を開けば引き止めてしまうと分かっていたからなのだ。",
+    "tr": {
+      "zh": "列车一开动，母亲就在窗外轻轻挥手。大概是下定决心不哭吧，她嘴角甚至带着笑意，可眼睛是红的。我告诉她要去东京时，母亲没有反对。她只说了一句“这是你自己的人生”，之后就什么也没再问。那时我以为那是母亲通情达理。可是，望着站台上渐渐远去的母亲，我终于明白了：母亲之所以什么都不说，是因为她知道一开口就会挽留我。",
+      "en": "As the train began to move, my mother gave a small wave outside the window. She must have made up her mind not to cry; there was even a smile on her lips, but her eyes were red. When I told her I was moving to Tokyo, she didn't object. She said only, 'It's your life,' and asked nothing more. At the time I took that for her being understanding. But watching her on the receding platform, I finally realised: she had said nothing because she knew that if she opened her mouth, she would try to stop me going."
     },
-    "wrong": [
-     {
-      "zh": "母亲红着眼睛送行，并非不关心；她不问是因为怕挽留。",
-      "en": "Her red eyes show she cared; she stayed silent for fear of holding him back."
-     },
-     {
-      "zh": "这是「私」当时的误解（「あのとき私は…と思っていた」），后来才明白并非如此。",
-      "en": "That was his earlier misreading (「あのとき私は…と思っていた」), which he now corrects."
-     },
-     {
-      "zh": "「泣くまいと決めていた」是为了不让儿子难过，文中没有说她觉得哭很丢人，而且这不是最后才明白的事。",
-      "en": "She chose not to cry, but nothing says she was ashamed — and that isn't his final realisation."
-     },
-     null
+    "questions": [
+      {
+        "q": "「私」が最後に気づいたことは何か。",
+        "options": [
+          "母は、息子の上京について本当はあまり関心を持っていなかったこと",
+          "母は物わかりがよく、上京にも初めから心から賛成していたこと",
+          "母は、人前で涙を見せるのを恥ずかしく思い、笑顔でごまかしていたこと",
+          "母は引き止めたい気持ちを抑えるために、あえて何も言わなかったこと"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "「私」最后明白：母亲什么都没说，是因为「口を開けば引き止めてしまうと分かっていたから」。",
+          "en": "The narrator realises the mother kept quiet because 「口を開けば引き止めてしまうと分かっていたから」."
+        },
+        "wrong": [
+          {
+            "zh": "母亲眼睛都红了，并非不关心。",
+            "en": "Her eyes were red — she cared."
+          },
+          {
+            "zh": "这是「私」当初的理解（「物わかりのよさ」），最后才发现并非如此。",
+            "en": "This is what the narrator used to think (「物わかりのよさ」); the realisation overturns it."
+          },
+          {
+            "zh": "忍住不哭是开头看到的情景，不是最后的领悟；文中也没说她觉得哭丢脸。",
+            "en": "Holding back tears is what he sees at the start, not the final realisation, and shame is never mentioned."
+          },
+          null
+        ]
+      }
     ]
-   }
-  ]
- }
+  }
 ]

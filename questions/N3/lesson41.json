@@ -9,9 +9,9 @@
     "stem": "明日の 会議は 9時からなので、（　）早く 来て ください。",
     "options": [
       "できるだけ",
-      "できるほど",
-      "できるまで",
-      "できるしか"
+      "これだけ",
+      "それほど",
+      "どれだけ"
     ],
     "answer": 0,
     "full": "明日の 会議は 9時からなので、できるだけ 早く 来て ください。",
@@ -26,16 +26,16 @@
     "wrong": [
       null,
       {
-        "zh": "没有「できるほど早く」这种说法表示“尽量”。",
-        "en": "「できるほど」 isn't used to mean \"as … as possible\"."
+        "zh": "「これだけ」是“这么多／这种程度”，「これだけ早く来てください」不表示“尽量”。",
+        "en": "「これだけ」 is \"this much\"; it doesn't mean \"as … as possible\"."
       },
       {
-        "zh": "「できるまで」是“直到能做到为止”，和「早く来て」接不上。",
-        "en": "「できるまで」 means \"until you can\"; it doesn't go with 「早く来て」."
+        "zh": "「それほど」后面要接否定（それほど早くない），不能用于请求。",
+        "en": "「それほど」 needs a negative after it (それほど早くない); it can't go in a request."
       },
       {
-        "zh": "「しか」要接否定，「できるしか」不成句。",
-        "en": "「しか」 needs a negative; 「できるしか」 isn't grammatical."
+        "zh": "「どれだけ」用于疑问或感叹（多么……），不能用在请求句里表示“尽量”。",
+        "en": "「どれだけ」 is for questions or exclamations (\"how much\"), not \"as … as possible\" in a request."
       }
     ]
   },
@@ -281,9 +281,9 @@
     "stem": "この 部屋は（　）、駅からも 近いので 人気が ある。",
     "options": [
       "静かな ばかりか",
-      "静かだ ばかりか",
-      "静かの ばかりか",
-      "静かで ばかりか"
+      "静かな くせに",
+      "静かな わりに",
+      "静かな せいで"
     ],
     "answer": 0,
     "full": "この 部屋は 静かな ばかりか、駅からも 近いので 人気が ある。",
@@ -298,16 +298,16 @@
     "wrong": [
       null,
       {
-        "zh": "「ばかりか」前面不接「だ」。",
-        "en": "「ばかりか」 doesn't follow 「だ」."
+        "zh": "「くせに」用于责备人，后面“离车站也近、受欢迎”是优点，不是责备。",
+        "en": "「くせに」 criticises a person; \"close to the station, popular\" are good points, not criticism."
       },
       {
-        "zh": "「の」是名词的接法，な形容词不用。",
-        "en": "「の」 is for nouns, not na-adjectives."
+        "zh": "「わりに」表示和预想不符，“安静”和“离车站近”并不意外，而是两个优点的叠加。",
+        "en": "「わりに」 marks something unexpected; quiet and close to the station are just two good points added together."
       },
       {
-        "zh": "「で」是て形，不能接「ばかりか」。",
-        "en": "「で」 is the て-form and can't take 「ばかりか」."
+        "zh": "「せいで」说明坏结果的原因，“安静”不会导致“离车站近”。",
+        "en": "「せいで」 blames a cause for a bad result; being quiet doesn't make a flat close to the station."
       }
     ]
   },
@@ -318,7 +318,7 @@
       "lesson41#3"
     ],
     "difficulty": 2,
-    "stem": "天気が 急に 悪く なって、[_] [_] [★] [_] なって きた。",
+    "stem": "天気が 急に 悪く なって、[★] [_] [_] [_] なって きた。",
     "options": [
       "雨",
       "ばかりか",
@@ -337,15 +337,16 @@
       "en": "The weather suddenly turned bad — not only rain, but the wind picked up too."
     },
     "why": {
-      "zh": "「名詞＋ばかりか」，后半常配「まで」：雨ばかりか風まで；「強く」接「なってきた」。★ 是「風まで」。",
-      "en": "「noun ＋ ばかりか」, with 「まで」 in the second half: 雨ばかりか風まで; 「強く」 goes before 「なってきた」. The ★ is 「風まで」."
+      "zh": "「名詞＋ばかりか」，后半常配「まで」：雨ばかりか風まで；「強く」接「なってきた」。★ 在第一格，是「雨」。",
+      "en": "「noun ＋ ばかりか」, with 「まで」 in the second half: 雨ばかりか風まで; 「強く」 goes before 「なってきた」. The ★ is the first slot: 「雨」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l41-010",
@@ -434,7 +435,7 @@
       "lesson41#4"
     ],
     "difficulty": 2,
-    "stem": "どうして [_] [_] [★] [_] 電車が 遅れるのだろう。",
+    "stem": "どうして [★] [_] [_] [_] 電車が 遅れるのだろう。",
     "options": [
       "私が",
       "急いで いる",
@@ -453,15 +454,16 @@
       "en": "Why is it that the train is late precisely when I'm in a hurry?"
     },
     "why": {
-      "zh": "「私が急いでいる」修饰「時」，「時に限って」= 偏偏在……的时候，后面是不巧的事「電車が遅れる」。★ 是「時に」。",
-      "en": "「私が急いでいる」 modifies 「時」; 「時に限って」 = just when…, followed by the bad luck 「電車が遅れる」. The ★ is 「時に」."
+      "zh": "「私が急いでいる」修饰「時」，「時に限って」= 偏偏在……的时候，后面是不巧的事「電車が遅れる」。★ 在第一格，是「私が」。",
+      "en": "「私が急いでいる」 modifies 「時」; 「時に限って」 = just when…, followed by the bad luck 「電車が遅れる」. The ★ is the first slot: 「私が」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l41-013",

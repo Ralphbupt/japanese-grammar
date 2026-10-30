@@ -13,10 +13,10 @@
       {
         "q": "AとBのどちらの回答にも述べられていることは何か。",
         "options": [
-          "習い事は、子どもの将来に必ず役に立つ。",
-          "何もしない時間の中で、子どもは好きなことを見つける。",
-          "どうするかは、子ども本人の気持ちを聞いて決めたほうがいい。",
-          "疲れているなら、習い事はすべてやめさせたほうがいい。"
+          "習い事は、続けることで将来に役立つ力が身につくものだ。",
+          "何もしない時間の中で、子どもは本当に好きなことを見つける。",
+          "続けるかどうかは、子ども本人の気持ちを聞いて決めるべきだ。",
+          "疲れているなら、まずは習い事の数を減らしたほうがいい。"
         ],
         "answer": 2,
         "why": {
@@ -25,27 +25,27 @@
         },
         "wrong": [
           {
-            "zh": "坚持带来的能力对将来有用，这只是A的观点，B没有提到。",
-            "en": "That lessons help in the future is only A's point; B doesn't make it."
+            "zh": "这是A的观点，B没有提到。",
+            "en": "Only A says this."
           },
           {
-            "zh": "什么都不做的时间里找到喜欢的东西，这只是B的观点。",
-            "en": "Finding what you love in idle time is only B's point."
+            "zh": "这是B的观点，A没有提到。",
+            "en": "Only B says this."
           },
           null,
           {
-            "zh": "A明确说「全部やめさせるのではなく」；B也只是建议「しばらく」暂停，而且想继续的可以继续。",
-            "en": "A says explicitly 「全部やめさせるのではなく」, and B only suggests a break 「しばらく」, keeping any he wants to continue."
+            "zh": "减少数量是A的建议；B建议暂时全部停下。",
+            "en": "Cutting down is A's advice; B suggests pausing them all."
           }
         ]
       },
       {
         "q": "習い事について、AとBはどのように考えているか。",
         "options": [
-          "Aは数を減らすと体力が落ちると心配し、Bは疲れているなら全部やめるべきだと考えている。",
-          "Aは続けることで得られる力を重視し、Bは習い事のない自由な時間に価値があると考えている。",
-          "Aはどれを続けるかは親が決めるべきだと考え、Bは子どもに任せるべきだと考えている。",
-          "AもBも、小学三年生なら習い事は四つまでなら問題ないと考えている。"
+          "Aは数を減らすと体力が落ちると心配し、Bは疲れたら全部やめるべきだと考えている。",
+          "Aは続けて身につく力を重視し、Bは予定のない自由な時間に価値を見ている。",
+          "Aは続ける習い事を親が選ぶべきだとし、Bは本人に任せるべきだと考えている。",
+          "AもBも、子どもが自信をつけるには、習い事を続けることが必要だと考えている。"
         ],
         "answer": 1,
         "why": {
@@ -54,17 +54,17 @@
         },
         "wrong": [
           {
-            "zh": "A没有担心体力下降；B建议的是「しばらく」暂停，不是全部放弃。",
-            "en": "A never worries about losing stamina, and B suggests only a temporary break (「しばらく」), not quitting for good."
+            "zh": "A没有担心体力下降；B建议暂时全部休息，但想继续的不必勉强停。",
+            "en": "A doesn't worry about stamina; B suggests a break but says keep anything he wants to."
           },
           null,
           {
-            "zh": "正相反，A说「親が決めるのではなく」要让本人选。",
-            "en": "The opposite: A says 「親が決めるのではなく」 — the son should choose."
+            "zh": "A明确说「親が決めるのではなく、息子さん本人に選ばせる」。",
+            "en": "A says outright 「親が決めるのではなく、息子さん本人に選ばせる」."
           },
           {
-            "zh": "A说四门「少し多いかもしれません」，B建议全部暂停，两人都没说四门没问题。",
-            "en": "A says four 「少し多いかもしれません」 and B suggests pausing them all; neither says four is fine."
+            "zh": "增强自信是A提到的；B看重的是没有安排的自由时间。",
+            "en": "Confidence is A's point; B values unscheduled time."
           }
         ]
       }
@@ -84,10 +84,10 @@
       {
         "q": "AとBのどちらの文章でも触れられていることは何か。",
         "options": [
-          "災害で停電すると、電子決済が使えなくなること",
-          "現金を使わない支払いには、店の手間を減らす利点があること",
-          "高齢者に支払い方法を教える機会を増やすべきであること",
-          "現金で払うほうが、お金を使いすぎずに済むこと"
+          "災害で停電が起きると、電子決済が使えなくなるということ",
+          "現金を扱わないと、店側の作業の負担が軽くなるということ",
+          "高齢者向けに、支払い方法を教える場を増やすべきだということ",
+          "現金で払ったほうが、お金を使いすぎずに済むということ"
         ],
         "answer": 1,
         "why": {
@@ -96,17 +96,17 @@
         },
         "wrong": [
           {
-            "zh": "停电时电子支付不能用，只有B提到。",
-            "en": "Power cuts disabling electronic payment appear only in B."
+            "zh": "停电问题只有B提到。",
+            "en": "Only B mentions power cuts."
           },
           null,
           {
-            "zh": "增加教使用方法的机会是A的主张，B没有说。",
-            "en": "Teaching people how to pay is A's suggestion; B doesn't say it."
+            "zh": "只有A提出在地区增加教学机会。",
+            "en": "Only A suggests more teaching sessions."
           },
           {
-            "zh": "为了防止花钱过多而用现金，只有B提到，而且B只是说有这样的人。",
-            "en": "Paying cash to avoid overspending is only in B, and B only says some people do so."
+            "zh": "防止花钱过多只有B提到。",
+            "en": "Only B mentions overspending."
           }
         ]
       },
@@ -155,10 +155,10 @@
       {
         "q": "AとBに共通している考えはどれか。",
         "options": [
-          "退職した後も、人や社会とのつながりを持つことは大切だ。",
-          "定年後は、責任の軽い仕事を選んだほうがいい。",
-          "定年後に働くのは、主に生活費のためである。",
-          "退職後は、若いころからの夢だった趣味を始めるといい。"
+          "退職後も、人や社会とのつながりを保つことは大切だ。",
+          "定年後に働くなら、責任の軽い仕事を選んだほうがいい。",
+          "定年後に働く人の多くは、生活費を得るために働いている。",
+          "退職後は、若いころからやりたかった趣味を始めるとよい。"
         ],
         "answer": 0,
         "why": {
@@ -168,26 +168,26 @@
         "wrong": [
           null,
           {
-            "zh": "选责任轻的工作是A个人的做法，B没有谈到。",
-            "en": "Choosing a light-duty job is A's own choice; B doesn't discuss it."
+            "zh": "选择责任轻的工作是A自己的做法，B没有提到。",
+            "en": "Choosing a lighter job is A's own approach; B doesn't discuss it."
           },
           {
-            "zh": "A说「お金のためというより」；B也只说有些人需要为生活工作。",
-            "en": "A says 「お金のためというより」, and B only notes that some people must work to live."
+            "zh": "A说「お金のためというより」；B只说有人需要为生活工作，两人都没说多数如此。",
+            "en": "A says 「お金のためというより」; B only notes some must work to live — neither says most do."
           },
           {
-            "zh": "开始学画画是B个人的经历，A没有提到。",
-            "en": "Taking up painting is B's own experience; A doesn't mention hobbies."
+            "zh": "学画是B的经历，A没有提到。",
+            "en": "Taking up painting is B's story; A doesn't mention it."
           }
         ]
       },
       {
         "q": "定年後に働くことについて、AとBの考えはどう違うか。",
         "options": [
-          "Aは働くべきだと強く主張しているが、Bは働くべきではないと主張している。",
-          "Aは体を壊すので働かないほうがいいと考え、Bは生活のために働くべきだと考えている。",
-          "Aは社会とつながるための手軽な方法だと考えているが、Bはほかの方法でもつながりは保てると考えている。",
-          "Aは自分のペースで働ける仕事は少ないと考え、Bは働くかどうかは会社が決めるべきだと考えている。"
+          "Aは働くことを誰にでも勧めているが、Bは定年後は働くべきではないと主張している。",
+          "Aは生活のリズムを保つために働くべきだとし、Bは生活費が必要な人だけ働けばいいとしている。",
+          "Aは働くことを社会とつながる手軽な方法と見るが、Bは仕事以外の方法もあると考えている。",
+          "Aは責任の重い仕事にも挑戦すべきだと考え、Bは働くかどうかは本人が決めればいいと考えている。"
         ],
         "answer": 2,
         "why": {
@@ -196,17 +196,17 @@
         },
         "wrong": [
           {
-            "zh": "B并没有说不应该工作，而是说由本人「自由に決めればいい」。",
-            "en": "B doesn't say people shouldn't work, only that it's theirs to 「自由に決めればいい」."
+            "zh": "A只说想与社会保持联系的话工作最简便，并未劝所有人工作；B也不反对工作，而是说由本人决定。",
+            "en": "A doesn't urge everyone to work, and B doesn't oppose working — B leaves it to the individual."
           },
           {
-            "zh": "A自己在工作，只是说不要勉强；B也没有主张为生活而工作。",
-            "en": "A does work, just not overdoing it; B doesn't argue for working to live."
+            "zh": "保持生活节奏是A自己工作的理由，A没说人人应该工作；B说不需要生活费的人自己决定，并非只有缺钱的人才该工作。",
+            "en": "Rhythm is A's own reason, not a rule for others; B leaves it to free choice rather than limiting work to those who need money."
           },
           null,
           {
-            "zh": "A找到了按自己节奏的工作；B说由「本人」决定，不是公司。",
-            "en": "A found an at-your-own-pace job, and B says the person (「本人」) decides, not a company."
+            "zh": "B的部分是对的，但A特意选了「責任の重い仕事ではなく」能按自己节奏做的工作。",
+            "en": "B's half is right, but A deliberately chose work that is 「責任の重い仕事ではなく」."
           }
         ]
       }
@@ -226,10 +226,10 @@
       {
         "q": "AとBのどちらにも述べられていることは何か。",
         "options": [
-          "料金を取れば、観光客の数を減らすことができる。",
-          "混雑する時間や場所の情報を発信するべきだ。",
-          "集めたお金で、臨時のバスを走らせるべきだ。",
-          "観光客が町を訪れること自体は、町にとって望ましいことだ。"
+          "料金を取れば、観光客の数をある程度減らすことができる。",
+          "混雑する時間や場所の情報を、観光客に向けて発信するべきだ。",
+          "集めた料金で、ごみ箱を増やしたりバスを走らせたりするべきだ。",
+          "多くの観光客が町を訪れること自体は、歓迎すべきことだ。"
         ],
         "answer": 3,
         "why": {
@@ -238,16 +238,16 @@
         },
         "wrong": [
           {
-            "zh": "A期待游客会减少一些，B却说「減るとは思えず」，看法相反。",
-            "en": "A hopes numbers fall a little, but B says 「減るとは思えず」 — they disagree."
+            "zh": "A期待人数有所减少，B却认为「数百円程度で観光客が減るとは思えず」。",
+            "en": "A hopes for fewer visitors; B doubts 「数百円程度で観光客が減る」."
           },
           {
-            "zh": "发布拥挤信息是B的方案，A没有提到。",
-            "en": "Publishing crowding information is B's idea; A doesn't mention it."
+            "zh": "发布拥挤信息是B的建议，A没有提到。",
+            "en": "Spreading crowd information is B's idea only."
           },
           {
-            "zh": "用收来的钱加开巴士是A的方案，B反对收费。",
-            "en": "Extra buses paid for by the charge is A's plan; B is wary of charging at all."
+            "zh": "用收费增加垃圾箱、开临时巴士是A的设想，B对收费本身持慎重态度。",
+            "en": "Spending the fee on bins and buses is A's plan; B is wary of the fee itself."
           },
           null
         ]
@@ -255,7 +255,7 @@
       {
         "q": "観光客から料金を取ることについて、AとBはどのように考えているか。",
         "options": [
-          "AもBも、料金を取れば混雑の問題は解決すると考えている。",
+          "AもBも、料金を取ることで混雑の問題はかなり解決できると考えている。",
           "Aは住民の負担を減らす方法として必要だと考え、Bは混雑の解決にはつながらないと考えている。",
           "Aは観光客が減りすぎることを心配して反対し、Bは町の収入を増やすために賛成している。",
           "Aは料金をもっと高くするべきだと考え、Bは料金を取るかわりに観光客を増やすべきだと考えている。"

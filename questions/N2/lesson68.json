@@ -1,17 +1,18 @@
 [
   {
     "id": "n2-l68-001",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson68#1"
     ],
     "difficulty": 1,
-    "stem": "来週、10年ぶりに故郷の友人に会う。今から楽しみ（　）しかたがない。",
+    "stem": "来週、10年ぶりに故郷の友人に会う。今から楽しみ（　）。",
     "options": [
-      "くて",
-      "で",
-      "に",
-      "が"
+      "にすぎない",
+      "でしかたがない",
+      "どころではない",
+      "にかぎる"
     ],
     "answer": 1,
     "full": "来週、10年ぶりに故郷の友人に会う。今から楽しみでしかたがない。",
@@ -20,22 +21,22 @@
       "en": "Next week I'm meeting a friend from home for the first time in ten years — I can hardly wait."
     },
     "why": {
-      "zh": "「楽しみ」是名词／な形容词，接「しかたがない」要用「で」：「楽しみでしかたがない」。",
-      "en": "「楽しみ」 is a noun / na-adjective, so it joins 「しかたがない」 with 「で」: 「楽しみでしかたがない」."
+      "zh": "期待得不得了：「楽しみでしかたがない」（名词・な形容词＋で＋しかたがない）。",
+      "en": "Excited beyond words: 「楽しみでしかたがない」 (noun / na-adjective ＋ で ＋ しかたがない)."
     },
     "wrong": [
       {
-        "zh": "「くて」是い形容词的连接形，「楽しみ」不是い形容词。",
-        "en": "「くて」 is the i-adjective link form; 「楽しみ」 isn't an i-adjective."
+        "zh": "「にすぎない」是“只不过是……”，带有轻视语气，和十年后见老朋友的兴奋不符。",
+        "en": "「にすぎない」 means 'merely'; it belittles, not fitting the excitement of meeting old friends."
       },
       null,
       {
-        "zh": "「楽しみにしかたがない」不成立；「楽しみに」只用于「楽しみにする／している」。",
-        "en": "「楽しみにしかたがない」 isn't Japanese; 「楽しみに」 goes with 「する／している」."
+        "zh": "「どころではない」是“哪有心思……”，和期待的心情相反。",
+        "en": "「どころではない」 means 'in no mood for', the opposite of looking forward."
       },
       {
-        "zh": "「楽しみがしかたがない」不成立，「しかたがない」前面要接て形（で）。",
-        "en": "「楽しみがしかたがない」 doesn't work; 「しかたがない」 needs the te-form (で) before it."
+        "zh": "「にかぎる」是“……最好”，接「楽しみ」说不通。",
+        "en": "「にかぎる」 means '… is best'; it doesn't follow 「楽しみ」."
       }
     ]
   },
@@ -51,7 +52,7 @@
     "options": [
       "はいられない",
       "もかまわない",
-      "からでないと",
+      "はいけない",
       "しかたがない"
     ],
     "answer": 3,
@@ -74,8 +75,8 @@
         "en": "「気になってもかまわない」 (\"it's fine to worry\") doesn't lead into the next sentence."
       },
       {
-        "zh": "「てからでないと」后面要接“不能……”，这里句子在这里结束，不完整。",
-        "en": "「てからでないと」 needs a following \"can't ~\" clause; the sentence can't end there."
+        "zh": "「てはいけない」是禁止，“结果不可以在意”和后面“忍不住反复看邮件”接不上。",
+        "en": "「てはいけない」 is a prohibition; it doesn't lead to 'I keep checking my email'."
       },
       null
     ]
@@ -127,8 +128,8 @@
     "options": [
       "してしょうがない",
       "してはいられない",
-      "しないことには",
-      "してからでないと"
+      "しているところだ",
+      "したものだ"
     ],
     "answer": 1,
     "full": "締め切りまであと二日しかない。のんびりしてはいられない。",
@@ -147,12 +148,12 @@
       },
       null,
       {
-        "zh": "「ないことには」后面要接“就不能……”，句子不完整。",
-        "en": "「ないことには」 needs a following \"can't ~\" clause; the sentence is incomplete."
+        "zh": "「しているところだ」是“正在……”，离截止只剩两天，不会说“正在悠闲”。",
+        "en": "「しているところだ」 means 'I'm in the middle of'; with two days left, relaxing isn't the point."
       },
       {
-        "zh": "「てからでないと」后面要接“不能……”，句子不完整。",
-        "en": "「てからでないと」 needs a following \"can't ~\" clause; the sentence is incomplete."
+        "zh": "「したものだ」是回忆过去的习惯，和眼前的截止日期不符。",
+        "en": "「したものだ」 recalls past habits; it doesn't fit a deadline two days away."
       }
     ]
   },
@@ -165,13 +166,13 @@
     "difficulty": 2,
     "stem": "隣の家から煙が出ているのに気づいて、黙って見て（　）、すぐに119番に電話した。",
     "options": [
-      "しかたがなく",
+      "ばかりいて",
       "はいられず",
       "からでないと",
-      "たまらず"
+      "いるうちに"
     ],
     "answer": 1,
-    "full": "隣の家から煙が出ているのに気づいて、黙って見てはいられず、すぐに119番に電话した。",
+    "full": "隣の家から煙が出ているのに気づいて、黙って見てはいられず、すぐに119番に電話した。",
     "tr": {
       "zh": "发现邻居家冒烟，没法光在一旁看着，马上打了119。",
       "en": "Noticing smoke coming from next door, I couldn't just stand and watch, and called 119 right away."
@@ -182,8 +183,8 @@
     },
     "wrong": [
       {
-        "zh": "「見てしかたがなく」不成立；「てしかたがない」表达的是感情、感觉，“看”不是。",
-        "en": "「見てしかたがなく」 doesn't work; 「てしかたがない」 is for feelings and sensations, not 見る."
+        "zh": "「見てばかりいて」是“光看着”，和后面“马上打119”矛盾。",
+        "en": "「見てばかりいて」 means 'just kept watching', contradicting 'called 119 at once'."
       },
       null,
       {
@@ -191,8 +192,8 @@
         "en": "「てからでないと」 needs a negative clause after it, not 「すぐに電話した」."
       },
       {
-        "zh": "「てたまらない」也只接感情（「見たくてたまらない」），「見てたまらず」不成立。",
-        "en": "「てたまらない」 also goes with feelings (「見たくてたまらない」); 「見てたまらず」 isn't Japanese."
+        "zh": "「見ているうちに」是“看着看着”，表示一段时间，和「すぐに」矛盾。",
+        "en": "「見ているうちに」 means 'while watching for a while', which clashes with 「すぐに」."
       }
     ]
   },
@@ -241,10 +242,10 @@
     "difficulty": 1,
     "stem": "この服が似合うかどうかは、実際に着て（　）わからない。",
     "options": [
-      "みたことには",
-      "みることには",
+      "みるまでもなく",
+      "みたうえで",
       "みないことには",
-      "みてからには"
+      "みてはじめて"
     ],
     "answer": 2,
     "full": "この服が似合うかどうかは、実際に着てみないことにはわからない。",
@@ -258,17 +259,17 @@
     },
     "wrong": [
       {
-        "zh": "「たことには」是“令人……的是”（「驚いたことには」），不表示前提条件。",
-        "en": "「たことには」 means \"to my ~\" (「驚いたことには」, to my surprise), not a precondition."
+        "zh": "「みるまでもなく」是“不用……就知道”，后面应接“知道”，和「わからない」矛盾。",
+        "en": "「みるまでもなく」 means 'no need to try — it's obvious', which clashes with 「わからない」."
       },
       {
-        "zh": "「ないことには」要用否定形，辞书形「みることには」不成立。",
-        "en": "The pattern needs the negative: 「みないことには」; the dictionary form doesn't work."
+        "zh": "「みたうえで」是“……之后再（做某事）”，后面要接下一步行动，不接「わからない」。",
+        "en": "「みたうえで」 means 'after trying, then (do)'; it leads to an action, not 「わからない」."
       },
       null,
       {
-        "zh": "「てからには」不成立；「からには」接普通形（「着てみたからには」），意思是“既然……”。",
-        "en": "「てからには」 isn't a form; 「からには」 follows the plain form (「着てみたからには」) and means \"now that\"."
+        "zh": "「てはじめて」是“……之后才（明白）”，后面要接肯定的「わかる」。",
+        "en": "「てはじめて」 means 'only after… (do you realise)'; it needs a positive 「わかる」."
       }
     ]
   },
@@ -284,7 +285,7 @@
       "本当の理由がよくわかった",
       "本当の理由はわからない",
       "すぐに理由を聞いてみよう",
-      "理由を聞くのは失礼だ"
+      "本当の理由がわかるだろう"
     ],
     "answer": 1,
     "full": "本人に直接話を聞かないことには、本当の理由はわからない。",
@@ -307,8 +308,8 @@
         "en": "\"Unless we ask, let's ask right away\" is contradictory, and 「ないことには」 isn't followed by a suggestion."
       },
       {
-        "zh": "“不问的话，问理由是失礼的”逻辑不通。",
-        "en": "\"Unless you ask, asking is rude\" makes no sense."
+        "zh": "「ないことには」后面要接否定的结果（“就……不了”），“会明白吧”是肯定。",
+        "en": "「ないことには」 must be followed by a negative result; 'we'll understand' is positive."
       }
     ]
   },
@@ -358,8 +359,8 @@
     "stem": "この部屋には、受付で手続きを済ませて（　）入れません。",
     "options": [
       "からこそ",
-      "からといって",
-      "からには",
+      "からも",
+      "からなら",
       "からでないと"
     ],
     "answer": 3,
@@ -378,12 +379,12 @@
         "en": "「てからこそ」 (\"precisely after ~\") doesn't lead to \"can't enter\"."
       },
       {
-        "zh": "「からといって」接普通形（「済ませたからといって」），不接て形，意思也是“虽说……”。",
-        "en": "「からといって」 follows the plain form, not the te-form, and means \"just because\"."
+        "zh": "「てからも」是“……之后也”，“办完手续之后也不能进”和规定的意思不符。",
+        "en": "「てからも」 means 'even after'; 'can't enter even after checking in' isn't the rule."
       },
       {
-        "zh": "「からには」接普通形（「済ませたからには」），意思是“既然……”，不接て形。",
-        "en": "「からには」 follows the plain form and means \"now that\"; it doesn't follow the te-form."
+        "zh": "「てからなら」是“……之后的话就（可以）”，后面要接肯定「入れます」，这里是「入れません」。",
+        "en": "「てからなら」 means 'after that, it's fine' and needs 「入れます」; the sentence ends 「入れません」."
       },
       null
     ]

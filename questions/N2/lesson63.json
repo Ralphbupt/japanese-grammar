@@ -48,9 +48,9 @@
     "difficulty": 2,
     "stem": "海外に赴任する（　）、現地の法律や習慣について研修を受けた。",
     "options": [
-      "を機に",
-      "をきっかけに",
-      "にわたって",
+      "からには",
+      "ついでに",
+      "うちに",
       "にあたって"
     ],
     "answer": 3,
@@ -65,16 +65,16 @@
     },
     "wrong": [
       {
-        "zh": "「を機に」接动词时要用「た形＋のを機に」，不能直接接「赴任する」。",
-        "en": "With a verb, 「を機に」 needs 「た形＋の」 (「赴任したのを機に」); it can't follow 「赴任する」."
+        "zh": "「からには」是“既然……就应该”，后面接决心或义务，不接已经做过的研修。",
+        "en": "「からには」 means 'now that…, one must' and leads to a resolve, not a past training."
       },
       {
-        "zh": "「をきっかけに」接动词时同样要用「〜たのをきっかけに」，不能直接接辞书形。",
-        "en": "「をきっかけに」 likewise needs 「〜たのを」; it can't follow the dictionary form."
+        "zh": "「ついでに」是“顺便……”，海外赴任前接受研修不是顺便做的事。",
+        "en": "「ついでに」 means 'while (doing it) anyway'; pre-posting training isn't incidental."
       },
       {
-        "zh": "「にわたって」接表示时间、范围的名词（「三年にわたって」），不接动词。",
-        "en": "「にわたって」 follows a period or area noun (「三年にわたって」), not a verb."
+        "zh": "「うちに」是“趁……的时候”，接“赴任する”意思不通。",
+        "en": "「うちに」 means 'while (still)'; it doesn't fit 'take up a post'."
       },
       null
     ]
@@ -167,7 +167,7 @@
       "を機に",
       "にわたって",
       "に先立って",
-      "をきっかけに"
+      "を通じて"
     ],
     "answer": 2,
     "full": "本番の公演に先立って、関係者だけを招いてリハーサルが行われた。",
@@ -181,17 +181,17 @@
     },
     "wrong": [
       {
-        "zh": "「を機に」是“以……为契机（开始新的变化）”，彩排不是公演带来的变化，时间顺序也反了。",
-        "en": "「を機に」 introduces a change triggered by an event; a rehearsal isn't that, and it comes before."
+        "zh": "「を機に」是“以……为契机”，表示事情发生之后的变化，而彩排在公演之前。",
+        "en": "「を機に」 means 'taking… as a chance' and marks a change after the event; the rehearsal comes before."
       },
       {
-        "zh": "「にわたって」接时间或范围（「三日間にわたって」），不接「公演」。",
-        "en": "「にわたって」 follows a period or area, not 「公演」."
+        "zh": "「にわたって」表示时间或范围的持续，「公演にわたって」意思不通。",
+        "en": "「にわたって」 marks a span of time or space; 「公演にわたって」 makes no sense."
       },
       null,
       {
-        "zh": "「をきっかけに」表示由某事引发的变化，彩排发生在公演之前，不可能由公演引发。",
-        "en": "「をきっかけに」 marks a change set off by an event; a rehearsal before the show can't be set off by it."
+        "zh": "「を通じて」是“通过……/在整个……期间”，不能表示“在……之前”。",
+        "en": "「を通じて」 means 'through / throughout', not 'before'."
       }
     ]
   },
@@ -280,9 +280,9 @@
     "difficulty": 2,
     "stem": "子どもが生まれた（　）、夫婦で生活習慣を見直した。",
     "options": [
-      "をきっかけに",
-      "のきっかけに",
-      "にきっかけを",
+      "とたんに",
+      "ばかりに",
+      "にもかかわらず",
       "のをきっかけに"
     ],
     "answer": 3,
@@ -297,16 +297,16 @@
     },
     "wrong": [
       {
-        "zh": "「をきっかけに」不能直接接动词た形，要加「の」。",
-        "en": "「をきっかけに」 can't attach directly to the ta-form; it needs 「の」."
+        "zh": "「たとたんに」表示“刚……就（意外地发生）”，后面不接“重新审视”这种有意的行为。",
+        "en": "「たとたんに」 means 'the moment… (something unexpected happened)', not a deliberate action like rethinking habits."
       },
       {
-        "zh": "缺少助词「を」，「生まれたのきっかけに」不成立。",
-        "en": "The particle 「を」 is missing; 「生まれたのきっかけに」 isn't a form."
+        "zh": "「ばかりに」是“就因为……才（导致坏结果）”，重新审视生活习惯不是坏结果。",
+        "en": "「ばかりに」 means 'just because… (something bad)'; rethinking habits isn't a bad result."
       },
       {
-        "zh": "「にきっかけを」助词用法错误，句子不成立。",
-        "en": "「にきっかけを」 has the particles wrong and doesn't form a sentence."
+        "zh": "「にもかかわらず」是“尽管……”，表示逆接，与“以此为契机”不符。",
+        "en": "「にもかかわらず」 means 'despite', not 'taking it as a turning point'."
       },
       null
     ]

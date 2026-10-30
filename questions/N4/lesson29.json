@@ -76,7 +76,7 @@
     "refs": ["lesson29#2"],
     "difficulty": 1,
     "stem": "（会社に かかって きた 電話に 出て）\n「はい、ABC商事（　）。」",
-    "options": ["で ございます", "で いらっしゃいます", "で おります", "で なさいます"],
+    "options": ["で ございます", "で いらっしゃいます", "に なります", "さまです"],
     "answer": 0,
     "full": "（会社に かかって きた 電話に 出て） 「はい、ABC商事で ございます。」",
     "kj": "（会社にかかってきた電話に出て）「はい、ABC商事でございます。」",
@@ -91,8 +91,8 @@
     "wrong": [
       null,
       { "zh": "「でいらっしゃいます」是尊敬語，用于对方，不能用来说自己公司。", "en": "「でいらっしゃいます」 is 尊敬語, for the other party — not your own company." },
-      { "zh": "「でおります」不是正确的说法，「おる」表示人“在”。", "en": "「でおります」 isn't a form; 「おる」 means a person \"is (somewhere)\"." },
-      { "zh": "「でなさいます」不成立，「なさる」是「する」的尊敬語。", "en": "「でなさいます」 doesn't exist; 「なさる」 is the honorific 「する」." }
+      { "zh": "「〜に なります」是“变成……”，接电话报公司名不能这么说（打工敬语的误用）。", "en": "「〜に なります」 means \"becomes\"; using it to give your company name on the phone is a known misuse." },
+      { "zh": "「さま」是对别人的敬称，不能加在自己公司的名字后面。", "en": "「さま」 is an honorific for others; you never put it after your own company's name." }
     ]
   },
   {
@@ -122,10 +122,11 @@
   },
   {
     "id": "n4-l29-006",
+    "rev": 2,
     "type": "narabe",
     "refs": ["lesson29#2"],
     "difficulty": 3,
-    "stem": "恐れ入りますが、お戻りに [_] [_] [★] [_] いただけますでしょうか。",
+    "stem": "恐れ入りますが、お戻りに [_] [★] [_] [_] いただけますでしょうか。",
     "options": ["なりましたら", "ABC会社の", "田中まで", "お電話"],
     "order": [0, 1, 2, 3],
     "full": "恐れ入りますが、お戻りに なりましたら ABC会社の 田中まで お電話 いただけますでしょうか。",
@@ -135,8 +136,8 @@
       "en": "Sorry to trouble you, but when he gets back, could he call Tanaka at ABC Company?"
     },
     "why": {
-      "zh": "「お戻りになりましたら」（您回来后）＋「ABC会社の田中まで」（打给 ABC 公司的田中）＋「お電話いただけますでしょうか」。★ 在第三格，是「田中まで」。",
-      "en": "「お戻りになりましたら」 (when he's back) ＋ 「ABC会社の田中まで」 (to Tanaka at ABC) ＋ 「お電話いただけますでしょうか」. The ★ is the third slot: 「田中まで」."
+      "zh": "「お戻りになりましたら」（您回来后）＋「ABC会社の田中まで」（打给 ABC 公司的田中）＋「お電話いただけますでしょうか」。★ 在第二格，是「ABC会社の」。",
+      "en": "「お戻りになりましたら」 (when he's back) ＋ 「ABC会社の田中まで」 (to Tanaka at ABC) ＋ 「お電話いただけますでしょうか」. The ★ is the second slot: 「ABC会社の」."
     },
     "wrong": [null, null, null, null]
   },

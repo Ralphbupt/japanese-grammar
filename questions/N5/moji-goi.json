@@ -1,20 +1,20 @@
 [
   {
     "id": "n5-mg-001",
+    "rev": 2,
     "type": "kanji",
-    "refs": ["lesson05#vocab"],
     "difficulty": 1,
-    "stem": "へやの <<電気>>を けして ください。",
-    "options": ["でんき", "てんき", "でんぎ", "てんぎ"],
-    "kj": "部屋の電気を消してください。",
+    "stem": "クラスに がくせいが <<何人>> いますか。",
+    "options": ["なんにん", "なんじん", "なににん", "なんひと"],
+    "kj": "クラスに学生が何人いますか。",
     "answer": 0,
-    "tr": { "zh": "请把房间的灯关掉。", "en": "Please turn off the light in the room." },
-    "why": { "zh": "「電気」读「でんき」：「電」是浊音「でん」，「気」是清音「き」。", "en": "「電気」 is でんき — voiced でん, unvoiced き." },
+    "tr": { "zh": "班里有几个学生？", "en": "How many students are in the class?" },
+    "why": { "zh": "问人数的「何人」读「なんにん」：「何」读「なん」，「人」读「にん」。", "en": "「何人」 asking how many people is なんにん — 「何」 なん, 「人」 にん." },
     "wrong": [
       null,
-      { "zh": "「てんき」是「天気」（天气），开头是清音。", "en": "てんき is 「天気」 (weather), with an unvoiced て." },
-      { "zh": "「気」不浊化，没有「でんぎ」这个读法。", "en": "「気」 doesn't become ぎ here; でんぎ isn't a word." },
-      { "zh": "两处都读错了：开头要浊、结尾不浊。", "en": "Both sounds are off: the start is voiced, the end isn't." }
+      { "zh": "数人数时「人」读「にん」，不读「じん」（「じん」用在国籍上，如「中国人」）。", "en": "When counting people 「人」 is にん, not じん (じん is for nationality, as in 「中国人」)." },
+      { "zh": "「何」在这里读「なん」，不读「なに」。", "en": "「何」 is なん here, not なに." },
+      { "zh": "「ひと」是「人」单独用时的训读，数人数用「にん」。", "en": "ひと is 「人」 on its own; for counting it's にん." }
     ]
   },
   {

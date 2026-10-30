@@ -405,10 +405,10 @@
       {
         "q": "筆者が最も言いたいことは何か。",
         "options": [
-          "規格外の野菜は、通信販売で買うのが最も得だ。",
+          "規格外の野菜は、農家から通信販売で直接買うのが最も得だ。",
           "店は規格外の野菜を、普通の野菜と同じ値段で売るべきだ。",
           "農家は、形のそろった野菜を作る努力をもっとするべきだ。",
-          "消費者が見た目にこだわらなくなれば、捨てられる野菜は減る。"
+          "消費者が見た目を気にしなければ、廃棄される野菜は減る。"
         ],
         "answer": 3,
         "why": {
@@ -574,10 +574,10 @@
       {
         "q": "担当者によると、信号があることにはどのような問題があるか。",
         "options": [
-          "運転する人が、周りの様子に注意を払わなくなりやすい。",
-          "歩行者が信号を守らずに、道を渡るようになる。",
+          "運転者が信号ばかり見て、周りに注意を払わなくなる。",
+          "歩行者が信号を守らず、車の間を渡るようになりやすい。",
           "車が信号で止まるため、道が混雑しやすくなる。",
-          "子どもや高齢者が、一人で道を渡れなくなる。"
+          "子どもや高齢者が、急いで道を渡らなければならなくなる。"
         ],
         "answer": 0,
         "why": {
@@ -595,8 +595,8 @@
             "en": "Nothing says lights cause congestion."
           },
           {
-            "zh": "孩子和老人是在“没有信号灯”的情况下可能更危险，不是信号灯的问题。",
-            "en": "Children and the elderly are at more risk without lights, not because of them."
+            "zh": "文中没有说信号灯让孩子和老人着急过马路；文中说的是没有信号灯时他们可能更危险。",
+            "en": "Nothing says lights rush children or the elderly; it's without lights that they may be at risk."
           }
         ]
       },
@@ -706,97 +706,100 @@
     "id": "n2-m1-p11",
     "type": "shuchou",
     "difficulty": 3,
-    "passage": "最近、「分かりやすさ」がもてはやされている。書店には「図解で分かる」「三分で理解できる」といった題名の本が並び、テレビのニュースでも、複雑な問題が短い言葉と親しみやすいイラストで説明される。難しいことを易しく伝える工夫そのものは、悪いことではない。専門家の知識を多くの人が共有できるようになったのは、こうした努力の成果である。\nしかし、私には気がかりなことがある。分かりやすい説明に慣れすぎると、分かりにくいものに出会ったとき、それを「説明が悪い」と片付けてしまう人が増えるのではないか、ということだ。\n大学で教えていると、そう感じる場面が少なくない。学生に古典的な名著を読ませると、「何が言いたいのか分からない」「もっと簡単に書いてある本はないのか」という声が必ず出る。確かに、そうした本は読みやすくはない。一つの文を理解するのに何分もかかることもある。だが、すぐには分からない文章と格闘し、何度も読み返し、自分なりの解釈を組み立てていく過程にこそ、考える力を鍛える機会があるのだ。\nそもそも、世の中の問題の多くは、分かりやすくまとめられるほど単純ではない。ある政策に賛成か反対かを短い言葉で言い切ることはできても、その背景にある事情や、それによって影響を受ける人々の立場まで含めて理解しようとすれば、どうしても複雑な話にならざるを得ない。分かりやすさを求めるあまり、こうした複雑さを切り捨ててしまえば、私たちは物事の一面しか見ないまま、分かったつもりになってしまう。\n分かりやすい説明は、言ってみれば、整備された道路のようなものだ。目的地まで速く、楽に連れて行ってくれる。だが、いつも舗装された道ばかり歩いていると、道のない場所を自分の足で進む力は育たない。\n私は、分かりやすい本を読むなと言いたいのではない。入り口として、それらは大いに役に立つ。大切なのは、分かりやすさだけで満足せず、時には分からなさに耐えてみることである。すぐに答えが見つからない状態に耐え、考え続けること。それこそが、本当の意味で「分かる」ための、遠回りに見えて最も確かな道ではないだろうか。",
+    "passage": "「伝統を守る」という言葉を聞くと、多くの人は、昔から伝わるものを少しも変えずに次の世代へ渡すことを思い浮かべるだろう。祭りの手順、料理の作り方、職人の技。どれも「昔のまま」であることに価値がある、と考えられがちだ。\n私の住む町にも、三百年続くといわれる秋祭りがある。ところが十年ほど前、担い手の不足から、この祭りは存続の危機に立たされた。みこしを担ぐ若者が集まらず、中止もやむを得ないという声が上がったのである。そのとき、町の人々の意見は大きく二つに分かれた。一つは、女性や町の外に住む人にもみこしを担いでもらおうという意見。もう一つは、それでは祭りが祭りでなくなる、人が足りないなら規模を小さくしてでも昔のやり方を守るべきだ、という意見である。\n話し合いは何か月も続いたが、最終的に町は前者を選んだ。今では毎年、町の外からも多くの人が参加し、祭りは以前よりにぎやかになっている。もちろん、この変化を残念に思う人もいる。しかし、もしあのとき「昔のまま」にこだわっていたら、祭りそのものが消えていたかもしれない。\nその後、町の古い記録を調べてみて、私は驚いた。この祭りは、三百年の間に何度も姿を変えてきたのである。みこしの形も、町を練り歩く道順も、時代ごとに人々が工夫を重ねてきた結果だった。<<私たちが「昔のまま」だと信じていたものは、ある時代の人々が変えた姿の一つにすぎなかった>>のだ。\n伝統とは、ガラスケースに入れて眺めるものではなく、<<川の流れのようなもの>>ではないだろうか。川の水は絶えず入れ替わっているが、川はずっと同じ場所を流れ続けている。祭りについて言えば、残るべきなのは一つ一つの形ではなく、祭りを通して人々が集まり、つながるという中身のほうだ。\nもちろん、何を変えてもよいわけではない。変えるときには、それが何のために続けられてきたのかを、改めて問い直す必要がある。その問いを抜きにした変化は、伝統を受け継ぐことにはならないだろう。形を守ることに必死になるよりも、なぜ守るのかを考え続けること。それが、伝統を本当の意味で次の世代へ渡すことにつながるのだと思う。",
     "tr": {
-      "zh": "最近，“易懂”备受推崇。书店里摆满了《图解就懂》《三分钟理解》之类书名的书，电视新闻也用简短的话和亲切的插图来解释复杂的问题。把难懂的事情讲得浅显易懂，这种努力本身并不是坏事。专家的知识能够被很多人共享，正是这种努力的成果。但是，我有一件担心的事：太习惯易懂的解释，遇到难懂的东西时，把它归结为“解释得不好”就了事的人，会不会越来越多？在大学教书，我常有这种感觉。让学生读经典名著，一定会有人说“不知道想说什么”“有没有写得更简单的书”。确实，那样的书并不好读，理解一句话有时要花好几分钟。但是，正是在与一时读不懂的文章搏斗、反复重读、构建自己的理解的过程中，才有锻炼思考能力的机会。说到底，世上的很多问题并没有简单到可以概括得浅显易懂。对某项政策赞成还是反对，可以用简短的话断言，但如果想连同其背景情况、受其影响的人们的立场一起理解，就必然会变得复杂。如果因为过于追求易懂而舍弃了这种复杂性，我们就会只看到事物的一面，却自以为懂了。易懂的解释，打个比方，就像修整好的道路，能又快又轻松地把我们带到目的地。但是，如果总是只走铺好的路，在没有路的地方靠自己的双脚前进的能力就培养不起来。我并不是说不要读易懂的书。作为入门，它们大有用处。重要的是，不要只满足于易懂，有时也要试着忍受“不懂”。忍受一时找不到答案的状态，持续思考——这难道不正是通往真正意义上的“懂”的、看似绕远却最可靠的道路吗？",
-      "en": "‘Easy to understand’ is all the rage these days. Bookshops are lined with titles like ‘Understand It in Diagrams’ and ‘Grasp It in Three Minutes’, and TV news explains complex issues in short phrases and friendly illustrations. Taking trouble to convey difficult things simply is not bad in itself; that so many people can now share experts' knowledge is the fruit of such efforts. But one thing worries me: if we grow too used to easy explanations, won't more people, faced with something hard to understand, simply dismiss it as ‘badly explained’? Teaching at a university, I often feel this. When I have students read a classic work, there are always voices saying ‘I don't get what it's trying to say’ or ‘Isn't there a book that puts it more simply?’ True, such books aren't easy reading; one sentence can take minutes to grasp. But it is precisely in the process of wrestling with a text you can't understand at once, rereading it again and again, and building your own interpretation, that the chance to train your thinking lies. In the first place, most problems in the world are not simple enough to be summed up neatly. You can declare in a few words whether you are for or against a policy, but if you try to understand the circumstances behind it and the positions of those it affects, it inevitably becomes complicated. If, in our eagerness for clarity, we cut out that complexity, we end up seeing only one side of things while believing we understand. An easy explanation is, so to speak, like a well-built road: it takes you to your destination quickly and comfortably. But if you only ever walk on paved roads, you never develop the strength to make your own way where there is no road. I'm not saying don't read easy books. As a way in, they are very useful. What matters is not to be satisfied with clarity alone, and sometimes to try enduring not understanding — to bear the state of having no answer yet and keep thinking. Isn't that the surest path to understanding in the true sense, even if it looks like a detour?"
+      "zh": "一听到“守护传统”这句话，很多人大概会想到把自古流传下来的东西原封不动地交给下一代。祭典的流程、料理的做法、工匠的手艺——人们往往认为，它们的价值都在于“保持原样”。\n我住的小镇也有一个据说延续了三百年的秋祭。可是大约十年前，由于缺少承担者，这个祭典面临存亡危机。抬神轿的年轻人凑不齐，甚至有人说只好停办。当时镇上的意见大致分成两派：一派主张让女性和住在镇外的人也来抬神轿；另一派认为那样祭典就不成其为祭典了，人手不够的话，哪怕缩小规模也应该守住过去的做法。\n讨论持续了好几个月，最后小镇选择了前者。如今每年都有很多人从镇外来参加，祭典比以前更热闹了。当然，也有人对这种变化感到惋惜。但如果当时执着于“保持原样”，祭典本身也许已经消失了。\n后来，我查阅镇上的旧记录，吃了一惊：这个祭典在三百年间多次改变过面貌。神轿的样式、绕镇游行的路线，都是各个时代的人们不断下功夫的结果。我们一直以为是“原样”的东西，其实不过是某个时代的人们改变后的样子之一。\n传统难道不是像河流一样的东西，而不是放进玻璃柜里观赏的东西吗？河水不断更替，但河一直在同一个地方流淌。就祭典来说，应该留下来的不是一个个具体的形式，而是人们通过祭典聚在一起、彼此联结这一内涵。\n当然，并不是改什么都可以。改变的时候，需要重新追问它是为了什么而延续下来的。缺少这一追问的改变，恐怕算不上继承传统。与其拼命守住形式，不如不断思考为什么要守护。我认为，这才能真正把传统交给下一代。",
+      "en": "When people hear the phrase ‘preserving tradition’, most probably picture handing something down from the past to the next generation without changing it in the slightest. Festival rituals, ways of cooking, craftsmen's skills — all are often thought valuable precisely because they are ‘just as they always were’.\nMy town has an autumn festival said to be three hundred years old. About ten years ago, however, a shortage of people to run it put its survival at risk. Not enough young men could be found to carry the portable shrine, and some said there was no choice but to cancel. The town split into two camps. One wanted women and people from outside the town to carry the shrine too. The other said the festival would then no longer be the festival; if there weren't enough people, it should keep the old ways even at a smaller scale.\nThe discussion went on for months, but in the end the town chose the first course. Now many people come from outside each year, and the festival is livelier than before. Of course, some regret the change. But had we clung to ‘just as it always was’, the festival itself might have vanished.\nLater, looking through the town's old records, I was surprised: over three hundred years the festival had changed its form many times. The shape of the shrine and the route of the procession were the result of each generation's adjustments. What we believed was ‘just as it always was’ was merely one of the forms that the people of a particular era had changed it into.\nIsn't tradition something like the flow of a river, rather than something to be put in a glass case and admired? The water is constantly replaced, yet the river keeps flowing in the same place. For the festival, what should survive is not each particular form but the substance — people gathering and being connected through it.\nOf course, that doesn't mean anything may be changed. When we change something, we need to ask again what it has been kept going for. Change without that question would hardly count as carrying on a tradition. Rather than struggling desperately to preserve the form, we should keep thinking about why we preserve it. That, I believe, is how a tradition is truly handed on to the next generation."
     },
     "questions": [
       {
-        "q": "筆者が「気がかりなこと」として挙げているのは、どのようなことか。",
+        "rev": 2,
+        "q": "「私たちが「昔のまま」だと信じていたものは、ある時代の人々が変えた姿の一つにすぎなかった」とあるが、どういうことか。",
         "options": [
-          "専門家の知識が、分かりやすい説明によって正しく伝わらなくなること",
-          "分かりにくいものを、説明する側の問題だと考えて済ませる人が増えること",
-          "分かりやすい本ばかりが売れて、名著が書店に並ばなくなること",
-          "学生が、難しい本を読むのに時間をかけすぎるようになること"
+          "今の祭りの形も、昔の人々が変えてきた結果であり、初めからの形ではないということ",
+          "三百年前の祭りの記録はほとんど残っていないので、本当の姿は分からないということ",
+          "昔のやり方を守ろうとした人々も、実は祭りの形を変えることに賛成していたということ",
+          "祭りの形を大きく変えたのは、町の外から参加するようになった人々だったということ"
         ],
-        "answer": 1,
+        "answer": 0,
         "why": {
-          "zh": "紧接着说明：遇到难懂的东西就用「説明が悪い」来了结的人会增加。也就是把问题归于解释的一方。",
-          "en": "The next sentence explains it: more people may dismiss difficult things as 「説明が悪い」 — blaming whoever did the explaining."
+          "zh": "前文说古记录显示祭典三百年间多次改变面貌，神轿和路线都是各时代人们改良的结果。所以大家以为的“原样”，也只是某个时代改过之后的样子。",
+          "en": "The sentences before say the old records show the festival changed many times — shrine and route were each era's adjustments. So the ‘original’ form was itself one changed version."
         },
         "wrong": [
-          {
-            "zh": "作者反而肯定了易懂的解释让专家知识得以共享，没有说传达不准确。",
-            "en": "The writer actually credits easy explanations with spreading expert knowledge; he doesn't say it gets distorted."
-          },
           null,
           {
-            "zh": "书店里易懂的书很多，但文中没有说名著从书店消失。",
-            "en": "Bookshops have many easy books, but nothing says classics disappear from the shelves."
+            "zh": "作者是查了旧记录才知道祭典变过，并没有说记录没留下来。",
+            "en": "The writer learned of the changes from old records; nothing says the records are lost."
           },
           {
-            "zh": "读名著花时间是作者认为有价值的过程，不是他担心的事。",
-            "en": "Spending time on a hard text is what the writer values, not what worries him."
+            "zh": "主张守旧的人反对让外人抬神轿，文中没说他们其实赞成改变。",
+            "en": "The traditionalists opposed outside carriers; nothing says they secretly supported change."
+          },
+          {
+            "zh": "镇外的人参加是近十年的事；下划线说的是三百年间各时代的人改变了祭典。",
+            "en": "Outsiders joining is a recent change; the underlined part is about people of each era over three centuries."
           }
         ]
       },
       {
-        "q": "筆者によると、世の中の問題を分かりやすさだけで理解しようとすると、どうなるか。",
+        "rev": 2,
+        "q": "「川の流れのようなもの」とあるが、筆者は伝統をどのようなものだと考えているか。",
         "options": [
-          "賛成か反対かを、短い言葉で言い切れなくなる。",
-          "政策の背景にある事情に、詳しくなりすぎてしまう。",
-          "物事の一面しか見ずに、理解したと思い込んでしまう。",
-          "影響を受ける人々の立場ばかりを考えるようになる。"
+          "形を少しも変えずに、大切にしまって守っていくべきもの",
+          "一度変わり始めると、だれにも流れを止められなくなるもの",
+          "形は変わっても、人々がつながるという中身が続いていくもの",
+          "古いものが自然に消えて、新しいものと入れ替わっていくもの"
         ],
         "answer": 2,
         "why": {
-          "zh": "「複雑さを切り捨ててしまえば、私たちは物事の一面しか見ないまま、分かったつもりになってしまう」。",
-          "en": "「複雑さを切り捨ててしまえば、私たちは物事の一面しか見ないまま、分かったつもりになってしまう」 — seeing one side and thinking we understand."
+          "zh": "河水不断更替但河一直在流——形式会变，但“人们聚集、联结”这一内涵延续下去。",
+          "en": "The water changes but the river remains: forms change while the substance — people gathering and connecting — carries on."
         },
         "wrong": [
           {
-            "zh": "文中说赞成或反对是「短い言葉で言い切ることはできても」，能简单断言，正好相反。",
-            "en": "The text says you 「言い切ることはできても」 — you can state for or against briefly; this is the reverse."
+            "zh": "这是作者否定的“放进玻璃柜里观赏”的看法。",
+            "en": "That is the ‘glass case’ view the writer rejects."
           },
           {
-            "zh": "追求易懂会舍弃背景等复杂内容，不会变得过于了解背景。",
-            "en": "Seeking clarity cuts out the background; it doesn't make you know too much about it."
+            "zh": "作者用河流比喻的是“变中有不变”，没有说变化停不下来。",
+            "en": "The river image is about something lasting through change, not change that can't be stopped."
           },
           null,
           {
-            "zh": "受影响者的立场是理解时应该考虑却被舍弃的内容，不是只考虑它。",
-            "en": "Those affected are among what gets cut out, not what you'd focus on exclusively."
+            "zh": "文中说河水更替但「川はずっと同じ場所を流れ続けている」，强调的是延续，不是旧的消失。",
+            "en": "The text stresses that 「川はずっと同じ場所を流れ続けている」 — continuity, not the old simply disappearing."
           }
         ]
       },
       {
+        "rev": 2,
         "q": "この文章で筆者が最も言いたいことは何か。",
         "options": [
-          "分かりやすい本は考える力を弱めるので、できるだけ読まないほうがいい。",
-          "難しいことを易しく伝える工夫は、専門家の知識を共有するうえで欠かせない。",
-          "大学では、学生に古典的な名著を読ませることをもっと重視するべきだ。",
-          "分かりやすさに満足せず、すぐには分からないものに向き合って考え続けることが大切だ。"
+          "祭りを続けていくためには、町の外の人にも積極的に参加してもらうべきだ。",
+          "伝統の形は時代によって変わってきたのだから、何を変えてもかまわない。",
+          "何のために続けてきたのかを問い直しながら、形が変わることも受け入れるべきだ。",
+          "伝統の中身を守るためには、昔からの形をできるだけそのまま残すことが大切だ。"
         ],
-        "answer": 3,
+        "answer": 2,
         "why": {
-          "zh": "最后一段：「分かりやすさだけで満足せず、時には分からなさに耐えてみること」「考え続けること」才是真正“懂”的道路。",
-          "en": "The final paragraph: 「分かりやすさだけで満足せず、時には分からなさに耐えてみること」 and keep thinking — the true road to understanding."
+          "zh": "最后一段：改变时要重新追问“为了什么而延续”，与其拼命守住形式，不如思考为什么守护。",
+          "en": "The last paragraph: when changing, ask what it has been kept going for; think about why we preserve rather than clinging to the form."
         },
         "wrong": [
           {
-            "zh": "作者明确说「分かりやすい本を読むなと言いたいのではない」，还说作为入门大有用处。",
-            "en": "The writer says outright 「分かりやすい本を読むなと言いたいのではない」 and calls them useful as a way in."
+            "zh": "镇外的人参加只是作者举的一个例子，不是全文主张。",
+            "en": "Outsiders joining is just the writer's example, not his main point."
           },
           {
-            "zh": "作者在开头承认了这一点，但这是让步，不是主要观点。",
-            "en": "The writer grants this at the start, but it's a concession, not the main point."
+            "zh": "作者明确说「何を変えてもよいわけではない」。",
+            "en": "The writer says plainly 「何を変えてもよいわけではない」."
           },
+          null,
           {
-            "zh": "大学的例子只是用来说明担心的事，文章没有提出大学教育的方針。",
-            "en": "The university is an example of the worry; the essay proposes no teaching policy."
-          },
-          null
+            "zh": "作者认为应保留的是内涵而不是形式，这与他的主张相反。",
+            "en": "The writer says what must remain is the substance, not the form — the opposite."
+          }
         ]
       }
     ]
@@ -804,69 +807,66 @@
   {
     "id": "n2-m1-p12",
     "type": "info",
-    "difficulty": 3,
-    "intro": "次は、みなみ市の「秋の市民講座」の案内である。",
-    "passage": "みなみ市　秋の市民講座　受講者募集\n| 講座名 | 日時 | 回数 | 対象 | 受講料 | 申し込み方法 |\n| ① はじめてのスマートフォン | 毎週火曜 10:00〜11:30 | 4回 | 市内在住の60歳以上の方 | 無料 | 電話 |\n| ② やさしい中国語会話 | 毎週水曜 19:00〜20:30 | 8回 | 市内在住・在勤の方 | 4,000円 | 窓口・ウェブ |\n| ③ 親子で楽しむ料理教室 | 第2・第4土曜 10:00〜12:00 | 4回 | 市内在住の小学生とその保護者 | 1組3,000円（材料費込み） | ウェブ |\n| ④ 写真の撮り方入門 | 毎週日曜 14:00〜16:00 | 6回 | 市内在住・在勤・在学の方 | 3,000円 | 窓口・ウェブ |\n| ⑤ ヨガで体すっきり | 毎週金曜 19:00〜20:00 | 6回 | 市内在住の18歳以上の方 | 2,500円 | 窓口 |\n・申し込み期間：9月1日（月）〜9月15日（月）。定員を超えた場合は抽選となります。\n・窓口での申し込みは、市民センター1階の受付で、平日9:00〜17:00に受け付けます。\n・ウェブでの申し込みは、市のホームページから24時間受け付けます。\n・電話での申し込みは、市民センター（012-345-6789）まで、平日9:00〜17:00にお願いします。\n・「在勤」とは市内の会社などで働いている方、「在学」とは市内の学校に通っている方のことです。\n・②と④は、全体の半分以上の回に出席した方に修了証をお渡しします。\n・受講料は、初回の講座の日に会場でお支払いください。",
+    "difficulty": 2,
+    "intro": "次は、ひかり市の「粗大ごみの出し方」の案内である。",
+    "passage": "ひかり市　粗大ごみの出し方\n粗大ごみとは、一番長い辺が30cmを超える家庭ごみのことです。収集を希望する方は、事前に申し込みをして、品物に合った「粗大ごみ処理券」を購入してください。\n| 品物 | 処理券（1点につき） |\n| いす・小さい家具（高さ1m未満） | 400円 |\n| 自転車・ふとん・カーペット | 600円 |\n| 机・本棚・たんす（高さ1m以上） | 1,000円 |\n| ソファー・ベッド | 1,500円 |\n| 地区 | 収集日 | 申し込みの締め切り |\n| 東地区 | 毎月第1・第3水曜日 | 収集日の8日前まで |\n| 西地区 | 毎月第2・第4木曜日 | 収集日の8日前まで |\n・申し込みは、粗大ごみ受付センターへ、電話（平日9:00〜17:00）またはウェブ（24時間）でお願いします。\n・1回の収集で出せるのは5点までです。\n・処理券は、市内のコンビニエンスストアと市役所で販売しています。品物1点ごとに1枚はってください。\n・収集日の朝8時30分までに、申し込みのときに決めた場所に出してください。\n・エアコン、テレビ、冷蔵庫、洗濯機は、市では収集できません。購入した店などにご相談ください。\n・ご自分で市のクリーンセンターに運ぶ場合は、申し込みは不要で、料金は処理券の金額の半額です。受付は土曜日9:00〜12:00のみで、料金はその場でお支払いください。",
     "tr": {
-      "zh": "南市 秋季市民讲座 招收学员。①初次使用智能手机：每周二10:00–11:30，4次，对象为住在市内的60岁以上者，免费，电话报名。②简易中文会话：每周三19:00–20:30，8次，对象为住在或在市内工作者，4,000日元，窗口・网上报名。③亲子料理教室：每月第2、第4个周六10:00–12:00，4次，对象为住在市内的小学生及其监护人，每组3,000日元（含材料费），网上报名。④摄影入门：每周日14:00–16:00，6次，对象为住在、在市内工作或上学者，3,000日元，窗口・网上报名。⑤瑜伽让身体舒畅：每周五19:00–20:00，6次，对象为住在市内的18岁以上者，2,500日元，窗口报名。报名期间：9月1日（周一）至9月15日（周一），超过名额时抽签。窗口报名在市民中心1楼前台受理，时间为工作日9:00–17:00。网上报名通过市政府主页24小时受理。电话报名请在工作日9:00–17:00拨打市民中心（012-345-6789）。“在勤”指在市内的公司等处工作的人，“在学”指在市内学校上学的人。②和④的出席次数达到全部课程一半以上者，颁发结业证书。学费请在第一次上课当天在会场支付。",
-      "en": "Minami City autumn community courses — now enrolling. (1) Smartphones for Beginners: Tuesdays 10:00–11:30, 4 sessions, city residents aged 60+, free, apply by phone. (2) Easy Chinese Conversation: Wednesdays 19:00–20:30, 8 sessions, people who live or work in the city, ¥4,000, apply at the counter or online. (3) Parent-and-Child Cooking: 2nd and 4th Saturdays 10:00–12:00, 4 sessions, primary-school children living in the city with a parent, ¥3,000 per pair (ingredients included), apply online. (4) Introduction to Photography: Sundays 14:00–16:00, 6 sessions, people who live, work or study in the city, ¥3,000, apply at the counter or online. (5) Feel-Good Yoga: Fridays 19:00–20:00, 6 sessions, city residents aged 18+, ¥2,500, apply at the counter. Application period: Mon 1 Sep – Mon 15 Sep; a lottery is held if a course is oversubscribed. Counter applications are accepted at the Civic Centre's ground-floor reception, weekdays 9:00–17:00. Online applications are accepted 24 hours a day on the city website. Phone applications: call the Civic Centre (012-345-6789), weekdays 9:00–17:00. ‘Work in the city’ means working at a company etc. in the city; ‘study in the city’ means attending a school in the city. For (2) and (4), a certificate is given to those who attend at least half the sessions. Please pay the fee at the venue on the day of the first session."
+      "zh": "光市　大件垃圾的丢弃方法\n大件垃圾是指最长边超过30cm的家庭垃圾。希望回收的人，请事先申请，并购买与物品相应的“大件垃圾处理券”。\n| 物品 | 处理券（每件） |\n| 椅子、小型家具（高不足1m） | 400日元 |\n| 自行车、被褥、地毯 | 600日元 |\n| 桌子、书架、衣柜（高1m以上） | 1,000日元 |\n| 沙发、床 | 1,500日元 |\n| 地区 | 回收日 | 申请截止 |\n| 东区 | 每月第1、第3个星期三 | 回收日8天前 |\n| 西区 | 每月第2、第4个星期四 | 回收日8天前 |\n・请通过电话（工作日9:00〜17:00）或网上（24小时）向大件垃圾受理中心申请。\n・一次回收最多5件。\n・处理券在市内便利店和市政府出售。每件物品请贴一张。\n・请在回收日早上8:30之前，放到申请时确定的地点。\n・空调、电视、冰箱、洗衣机市里不回收，请与购买的商店等商量。\n・自己运到市清洁中心的，无需申请，费用为处理券金额的一半。只在星期六9:00〜12:00受理，费用当场支付。",
+      "en": "Hikari City: how to dispose of large items\nLarge items are household waste whose longest side is over 30 cm. To have them collected, apply in advance and buy the right ‘large-item disposal ticket’ for each item.\n| Item | Ticket (per item) |\n| Chairs, small furniture (under 1 m tall) | ¥400 |\n| Bicycles, futons, carpets | ¥600 |\n| Desks, bookcases, chests of drawers (1 m or taller) | ¥1,000 |\n| Sofas, beds | ¥1,500 |\n| District | Collection days | Application deadline |\n| East | 1st and 3rd Wednesday of each month | 8 days before collection |\n| West | 2nd and 4th Thursday of each month | 8 days before collection |\n・Apply to the Large-Item Reception Centre by phone (weekdays 9:00–17:00) or online (24 hours).\n・Up to 5 items per collection.\n・Tickets are sold at convenience stores in the city and at City Hall. Attach one ticket to each item.\n・Put the items out at the place agreed when you applied, by 8:30 a.m. on the collection day.\n・Air conditioners, TVs, fridges and washing machines are not collected by the city; ask the shop where you bought them.\n・If you take items to the city's Clean Centre yourself, no application is needed and the fee is half the ticket price. Accepted on Saturdays 9:00–12:00 only; pay on the spot."
     },
     "questions": [
       {
-        "q": "林さんは、となりの市に住んでいて、みなみ市内の会社で働いている。平日は18時まで仕事があり、日曜日は毎週用事がある。林さんが申し込めて、受講できる講座はどれか。",
-        "options": [
-          "① はじめてのスマートフォン",
-          "② やさしい中国語会話",
-          "④ 写真の撮り方入門",
-          "⑤ ヨガで体すっきり"
-        ],
-        "answer": 1,
+        "rev": 2,
+        "q": "東地区に住む山田さんは、引っ越しのため、高さ1.2mの本棚を1つ、自転車を1台、いすを2脚、それに古いテレビを1台処分したい。市に収集してもらう場合、処理券は合計いくら必要か。",
+        "options": ["1,800円", "2,000円", "2,400円", "2,800円"],
+        "answer": 2,
         "why": {
-          "zh": "林先生住在邻市、在南市工作，属于「在勤」，能报名的只有写着「在勤」的②和④。④在周日，他每周日有事；②是周三19点，下班后来得及。",
-          "en": "Lin lives next door but works in Minami — 「在勤」 — so only (2) and (4) are open to him. (4) is on Sundays, when he's busy every week; (2) is Wednesday at 19:00, after work."
+          "zh": "本棚高1.2m属于1m以上：1,000日元；自行车600日元；椅子每件400日元×2＝800日元。电视市里不回收，不需要处理券。合计2,400日元。",
+          "en": "The 1.2 m bookcase is in the 1 m-or-taller row: ¥1,000; bicycle ¥600; chairs ¥400 × 2 = ¥800. The city doesn't collect TVs, so no ticket for it. Total ¥2,400."
         },
         "wrong": [
           {
-            "zh": "①只限住在市内的60岁以上者，而且是工作日上午，林先生要上班。",
-            "en": "(1) is for city residents aged 60+, and it's on a weekday morning when Lin works."
+            "zh": "把书架当成了不足1m的小家具（400日元）。书架高1.2m，是1,000日元。",
+            "en": "This prices the bookcase as small furniture (¥400); at 1.2 m it is ¥1,000."
+          },
+          {
+            "zh": "椅子只算了一件。处理券是「1点につき」，两把椅子要两张。",
+            "en": "This counts the chairs once; tickets are 「1点につき」, so two chairs need two."
           },
           null,
           {
-            "zh": "④虽然在市内工作也能报名，但在周日，林先生每周日都有事。",
-            "en": "(4) accepts people who work in the city, but it's on Sundays, when Lin is busy."
-          },
-          {
-            "zh": "⑤虽然在周五晚上，但对象只限「市内在住」，林先生住在邻市。",
-            "en": "(5) is on Friday evening, but only for 「市内在住」 — Lin lives in the next city."
+            "zh": "把电视也按400日元算进去了。电视「市では収集できません」，不用买处理券。",
+            "en": "This adds ¥400 for the TV, but the city 「収集できません」 — no ticket needed."
           }
         ]
       },
       {
-        "q": "みなみ市に住む会社員の木村さん（35歳）は、平日は毎日9時から18時まで仕事があり、金曜日の夜か日曜日の午後なら講座に通える。木村さんが受講できる講座と、その申し込み方法として正しいものはどれか。",
+        "rev": 2,
+        "q": "西地区に住む会社員の中村さんは、古いソファーを1つ処分したい。車を持っていて、土曜日の午前中なら時間がある。平日は毎日9時から18時まで仕事がある。できるだけ安く処分したい場合、どうすればよいか。",
         "options": [
-          "⑤を、窓口で申し込む。",
-          "⑤を、ウェブで申し込む。",
-          "④を、ウェブで申し込む。",
-          "④を、電話で申し込む。"
+          "ウェブで申し込み、1,500円の処理券をはって、収集日に出す。",
+          "申し込みはせずに、土曜日の午前中にクリーンセンターへ運び、750円払う。",
+          "電話で申し込んでから、土曜日の午前中にクリーンセンターへ運び、750円払う。",
+          "申し込みはせずに、土曜日の午後にクリーンセンターへ運び、750円払う。"
         ],
-        "answer": 2,
+        "answer": 1,
         "why": {
-          "zh": "周五晚上有⑤、周日下午有④。但⑤只能窗口报名，窗口只在工作日9–17点受理，木村先生正在上班，去不了。④可以网上报名，24小时受理。",
-          "en": "Friday evening is (5), Sunday afternoon is (4). But (5) is counter-only, and the counter is open weekdays 9–17, when Kimura is at work. (4) can be booked online, 24 hours a day."
+          "zh": "自己运到清洁中心是处理券金额的一半：1,500÷2＝750日元，比回收（1,500日元）便宜；无需申请，只在星期六9:00〜12:00受理，中村星期六上午有空。",
+          "en": "Taking it to the Clean Centre costs half the ticket price — ¥750 instead of ¥1,500 — needs no application, and is open Saturday 9:00–12:00, when Nakamura is free."
         },
         "wrong": [
           {
-            "zh": "窗口只在工作日9:00–17:00受理，木村先生这段时间都在上班。",
-            "en": "The counter is open only on weekdays 9:00–17:00, when Kimura is working."
-          },
-          {
-            "zh": "⑤的报名方法只有「窓口」，不能网上报名。",
-            "en": "(5) can only be applied for 「窓口」, at the counter — not online."
+            "zh": "可以这样做，但要1,500日元；自己运去只要一半，更便宜。",
+            "en": "Possible, but it costs ¥1,500; taking it yourself is half that."
           },
           null,
           {
-            "zh": "④的报名方法是「窓口・ウェブ」，没有电话报名；电话报名只有①。",
-            "en": "(4) takes 「窓口・ウェブ」 only; phone applications are for (1)."
+            "zh": "自己运去「申し込みは不要」；而且电话只在工作日9:00〜17:00受理，中村工作日要上班。",
+            "en": "Taking it yourself needs no application, and the phone line is weekdays 9:00–17:00 only, while Nakamura works."
+          },
+          {
+            "zh": "清洁中心只在星期六「9:00〜12:00」受理，下午不行。",
+            "en": "The Clean Centre accepts items only 「9:00〜12:00」 on Saturdays, not in the afternoon."
           }
         ]
       }

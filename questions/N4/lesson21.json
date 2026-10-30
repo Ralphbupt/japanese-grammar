@@ -88,7 +88,7 @@
       "lesson21#1"
     ],
     "difficulty": 1,
-    "stem": "健康の ために、夜は [_] [_] [★] [_]。",
+    "stem": "健康の ために、夜は [_] [_] [_] [★]。",
     "options": [
       "して います",
       "寝る",
@@ -108,15 +108,16 @@
       "en": "For my health, I make a point of going to bed early."
     },
     "why": {
-      "zh": "有意识地养成习惯：动词辞书形＋「ようにしている」。早く 寝る ように して います，★ 在第三格，是「ように」。",
-      "en": "A habit kept up on purpose: dictionary form ＋ 「ようにしている」. 早く 寝る ように して います — the ★ is the third slot: 「ように」."
+      "zh": "有意识地养成习惯：动词辞书形＋「ようにしている」。早く 寝る ように して います，★ 在第四格，是「して います」。",
+      "en": "A habit kept up on purpose: dictionary form ＋ 「ようにしている」. 早く 寝る ように して います — the ★ is the fourth slot: 「して います」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l21-004",
@@ -327,7 +328,7 @@
       "lesson21#3"
     ],
     "difficulty": 2,
-    "stem": "市は 子供が 安全に [_] [_] [★] [_]。",
+    "stem": "市は 子供が 安全に [★] [_] [_] [_]。",
     "options": [
       "作りました",
       "公園を",
@@ -347,15 +348,16 @@
       "en": "The city built a park so that children can play safely."
     },
     "why": {
-      "zh": "前后主语不同（子供が / 市は），可能形「遊べる」＋「ように」表示目的。遊べる ように 公園を 作りました，★ 在第三格，是「公園を」。",
-      "en": "Different subjects (子供が / 市は) and a potential 「遊べる」 ＋ 「ように」 give the purpose. 遊べる ように 公園を 作りました — the ★ is the third slot: 「公園を」."
+      "zh": "前后主语不同（子供が / 市は），可能形「遊べる」＋「ように」表示目的。遊べる ように 公園を 作りました，★ 在第一格，是「遊べる」。",
+      "en": "Different subjects (子供が / 市は) and a potential 「遊べる」 ＋ 「ように」 give the purpose. 遊べる ように 公園を 作りました — the ★ is the first slot: 「遊べる」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l21-010",

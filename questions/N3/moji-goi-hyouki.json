@@ -47,7 +47,7 @@
       "習慣",
       "習貫",
       "集慣",
-      "習憤"
+      "集貫"
     ],
     "answer": 0,
     "tr": {
@@ -69,8 +69,8 @@
         "en": "「集」 is the kanji of 「集める」 (gather), not 「習」 (learn)."
       },
       {
-        "zh": "「憤」读「ふん」（愤怒），字形相近但不对。",
-        "en": "「憤」 is ふん (anger) — similar shape, wrong kanji."
+        "zh": "两个字都错：应是「習」和「慣」。",
+        "en": "Both kanji are wrong: it should be 「習」 and 「慣」."
       }
     ]
   },
@@ -86,8 +86,8 @@
     "options": [
       "健康",
       "建康",
-      "健庚",
-      "健唐"
+      "健庫",
+      "建庫"
     ],
     "answer": 0,
     "tr": {
@@ -105,12 +105,12 @@
         "en": "「建」 lacks the person radical; it's the kanji of 「建てる」 (build)."
       },
       {
-        "zh": "「庚」比「康」少了下面的部分，不是这个字。",
-        "en": "「庚」 is missing the bottom of 「康」."
+        "zh": "「庫」是「車庫」「倉庫」的库，和「康」都是广字头，但不是这个字。",
+        "en": "「庫」 is the 'storehouse' of 「車庫」「倉庫」; it shares 广 with 「康」 but isn't it."
       },
       {
-        "zh": "「唐」读「とう」（唐朝），不是「康」。",
-        "en": "「唐」 is とう (Tang), not 「康」."
+        "zh": "两个字都错：应是「健」和「康」。",
+        "en": "Both kanji are wrong: it should be 「健」 and 「康」."
       }
     ]
   },
@@ -635,7 +635,7 @@
       "高級",
       "高急",
       "高吸",
-      "高汲"
+      "高組"
     ],
     "answer": 0,
     "tr": {
@@ -657,8 +657,8 @@
         "en": "「吸」 has the 口 radical: すう (breathe in)."
       },
       {
-        "zh": "「汲」是三点水，读「くむ」（汲水），不是「級」。",
-        "en": "「汲」 has the water radical: くむ (draw water)."
+        "zh": "「組」也是绞丝旁，读「くみ」（組む），不是「級」。",
+        "en": "「組」 also has the thread radical but is くみ (組む), not 「級」."
       }
     ]
   },
@@ -672,9 +672,9 @@
     "stem": "子どものころから、宇宙に<<きょうみ>>がある。",
     "options": [
       "興味",
-      "輿味",
+      "共味",
       "興未",
-      "與味"
+      "興妹"
     ],
     "answer": 0,
     "tr": {
@@ -688,16 +688,16 @@
     "wrong": [
       null,
       {
-        "zh": "「輿」读「こし」（轿子），中间是「車」，不是「興」。",
-        "en": "「輿」 (こし, palanquin) has 車 inside; not 「興」."
+        "zh": "「共」读「きょう」（共通），但“兴趣”的「きょう」是「興」。",
+        "en": "「共」 is read きょう (共通), but the きょう of 'interest' is 「興」."
       },
       {
         "zh": "「未」少了口字旁，不是「味」。",
         "en": "「未」 lacks the 口 radical; not 「味」."
       },
       {
-        "zh": "「與」是「与」的旧字，不是「興」。",
-        "en": "「與」 is the old form of 「与」, not 「興」."
+        "zh": "「妹」是女字旁（いもうと），不是口字旁的「味」。",
+        "en": "「妹」 has the woman radical (いもうと); 「味」 has the mouth radical."
       }
     ]
   },
@@ -793,7 +793,7 @@
       "環境",
       "還境",
       "環鏡",
-      "環竟"
+      "還鏡"
     ],
     "answer": 0,
     "tr": {
@@ -815,8 +815,8 @@
         "en": "「鏡」 has the 金 radical: かがみ (mirror)."
       },
       {
-        "zh": "「竟」少了土字旁，不是「境」。",
-        "en": "「竟」 lacks the earth radical; not 「境」."
+        "zh": "两个字都错：应是「環」和「境」。",
+        "en": "Both kanji are wrong: it should be 「環」 and 「境」."
       }
     ]
   },
@@ -911,7 +911,7 @@
       "涙",
       "戻",
       "浪",
-      "渓"
+      "波"
     ],
     "answer": 0,
     "tr": {
@@ -933,8 +933,8 @@
         "en": "「浪」 (ろう, wave) isn't 「涙」."
       },
       {
-        "zh": "「渓」读「けい」（溪谷），不是「涙」。",
-        "en": "「渓」 (けい, ravine) isn't 「涙」."
+        "zh": "「波」读「なみ」（波浪），也是三点水，但不是「涙」。",
+        "en": "「波」 is なみ (wave); it has the water radical too, but isn't 「涙」."
       }
     ]
   },
@@ -950,7 +950,7 @@
       "驚いた",
       "警いた",
       "敬いた",
-      "篤いた"
+      "恐いた"
     ],
     "answer": 0,
     "tr": {
@@ -972,8 +972,8 @@
         "en": "「敬」 lacks 馬: うやまう (respect)."
       },
       {
-        "zh": "「篤」读「とく」（「危篤」），不是「驚」。",
-        "en": "「篤」 (とく, as in 「危篤」) isn't 「驚」."
+        "zh": "「恐」读「おそれる／こわい」（害怕），意思相近，但“吃惊”是「驚く」。",
+        "en": "「恐」 is おそれる / こわい (fear) — close in meaning, but 'be surprised' is 「驚く」."
       }
     ]
   },
@@ -986,7 +986,7 @@
       "比べて",
       "北べて",
       "批べて",
-      "此べて"
+      "並べて"
     ],
     "answer": 0,
     "tr": {
@@ -1008,8 +1008,8 @@
         "en": "「批」 has an extra hand radical: ひ (criticism)."
       },
       {
-        "zh": "「此」读「これ／し」，不是「比」。",
-        "en": "「此」 (これ / し, this) isn't 「比」."
+        "zh": "「並べる」读「ならべる」（排列），不是“比较”。",
+        "en": "「並べる」 is ならべる (line up), not 'compare'."
       }
     ]
   },
@@ -1054,109 +1054,112 @@
   },
   {
     "id": "n3-mg-228",
+    "rev": 2,
     "type": "hyouki",
     "difficulty": 1,
-    "stem": "新しい<<ぱそこん>>を買った。",
+    "stem": "この川は流れが速くて<<きけん>>なので、泳がないでください。",
     "options": [
-      "パソコン",
-      "パンコン",
-      "バソコン",
-      "パソコソ"
+      "危険",
+      "危検",
+      "危験",
+      "気険"
     ],
     "answer": 0,
     "tr": {
-      "zh": "我买了台新电脑。",
-      "en": "I bought a new computer."
+      "zh": "这条河水流很急，很危险，请不要游泳。",
+      "en": "The current in this river is fast and dangerous, so please don't swim."
     },
     "why": {
-      "zh": "「パソコン」（个人电脑）：「パ」半浊音，「ソ」「ン」要分清。",
-      "en": "パソコン (PC): パ with the circle; tell ソ and ン apart."
+      "zh": "「きけん」（危险）写作「危険」：「険」是左耳旁（阝），“险”的意思。",
+      "en": "きけん (danger) is 「危険」: 「険」 has the 阝 radical on the left and means 'steep, risky'."
     },
     "wrong": [
       null,
       {
-        "zh": "「ン」写成了「ソ」的位置：应是「パソ」。",
-        "en": "ン is in ソ's place: it should be パソ."
+        "zh": "「検」是木字旁，是「検査」（检查）的检，读音相同但意思不同。",
+        "en": "「検」 has the tree radical; it's the 'check' of 「検査」 — same sound, different meaning."
       },
       {
-        "zh": "「バ」是浊音，应是半浊音「パ」。",
-        "en": "バ is voiced; it should be パ with the circle."
+        "zh": "「験」是马字旁，是「試験」「経験」的验，读音相同但意思不同。",
+        "en": "「験」 has the horse radical; it's the 「験」 of 「試験」「経験」 — same sound, different meaning."
       },
       {
-        "zh": "最后的「ン」写成了「ソ」。",
-        "en": "The final ン is written as ソ."
+        "zh": "「気」读「き」，但“危险”的「き」是「危」。",
+        "en": "「気」 is read き, but the き of 'danger' is 「危」."
       }
     ]
   },
   {
     "id": "n3-mg-229",
+    "rev": 2,
     "type": "hyouki",
     "difficulty": 1,
-    "stem": "これは大きな<<ちゃんす>>だ。",
+    "stem": "電気代を<<せつやく>>するために、エアコンの温度を一度上げた。",
     "options": [
-      "チャンス",
-      "チャソス",
-      "チヤンス",
-      "シャンス"
+      "節約",
+      "節訳",
+      "説約",
+      "説訳"
     ],
     "answer": 0,
     "tr": {
-      "zh": "这是个好机会。",
-      "en": "This is a big chance."
+      "zh": "为了节省电费，把空调温度调高了一度。",
+      "en": "To save on electricity, I turned the air conditioner up by one degree."
     },
     "why": {
-      "zh": "「チャンス」（机会）：小「ャ」，「ン」不要写成「ソ」。",
-      "en": "チャンス (chance): a small ャ, and ン not ソ."
+      "zh": "「せつやく」（节约）写作「節約」：「節」是竹字头，「約」是绞丝旁。",
+      "en": "せつやく (saving) is 「節約」: 「節」 has the bamboo radical and 「約」 the thread radical."
     },
     "wrong": [
       null,
       {
-        "zh": "「ン」写成了「ソ」。",
-        "en": "ン is written as ソ."
+        "zh": "「訳」是言字旁，读「やく」（翻訳），但“节约”的「やく」是「約」。",
+        "en": "「訳」 has the speech radical (翻訳); the やく of 'saving' is 「約」."
       },
       {
-        "zh": "「ャ」应是小字，「チヤ」读成「ちや」。",
-        "en": "ャ must be small; チヤ reads ちや."
+        "zh": "「説」是言字旁，读「せつ」（説明），但“节约”的「せつ」是「節」。",
+        "en": "「説」 has the speech radical (説明); the せつ of 'saving' is 「節」."
       },
       {
-        "zh": "「シ」读「し」，应是「チ」。",
-        "en": "シ is し; it should be チ."
+        "zh": "两个字都错：应是「節」和「約」。",
+        "en": "Both kanji are wrong: it should be 「節」 and 「約」."
       }
     ]
   },
   {
     "id": "n3-mg-230",
+    "rev": 2,
     "type": "hyouki",
     "difficulty": 2,
-    "stem": "<<えねるぎー>>を節約しよう。",
+    "stem": "こわれた時計を、店で<<なおして>>もらった。",
     "options": [
-      "エネルギー",
-      "エネルキー",
-      "ユネルギー",
-      "エネルギ"
+      "直して",
+      "治して",
+      "植して",
+      "置して"
     ],
     "answer": 0,
     "tr": {
-      "zh": "节约能源吧。",
-      "en": "Let's save energy."
+      "zh": "请店里修好了坏掉的手表。",
+      "en": "I had my broken watch repaired at the shop."
     },
     "why": {
-      "zh": "「エネルギー」（能源）：浊音「ギ」+长音「ー」。",
-      "en": "エネルギー (energy): voiced ギ followed by the long-vowel mark."
+      "zh": "修理东西的「なおす」写「直す」；治病的「なおす」才写「治す」。",
+      "en": "Repairing a thing is 「直す」; 「治す」 is for curing an illness or injury."
     },
     "wrong": [
       null,
       {
-        "zh": "「キ」少了浊点，应是「ギ」。",
-        "en": "キ is missing the voicing marks: ギ."
+        "zh": "「治す」用于治病、治伤（風邪を治す），修理手表用「直す」。",
+        "en": "「治す」 is for curing illness or injury (風邪を治す); a watch is 「直す」."
       },
       {
-        "zh": "「ユ」读「ゆ」，应是「エ」。",
-        "en": "ユ is ゆ; it should be エ."
+        "zh": "「植」是木字旁，读「うえる」（植える），只是含有「直」。",
+        "en": "「植」 has the tree radical and is read うえる (植える); it only contains 「直」."
       },
       {
-        "zh": "少了最后的长音「ー」。",
-        "en": "The final long-vowel mark ー is missing."
+        "zh": "「置」读「おく」（置く），只是含有「直」。",
+        "en": "「置」 is read おく (置く); it only contains 「直」."
       }
     ]
   }

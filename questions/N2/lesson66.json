@@ -10,8 +10,8 @@
     "options": [
       "に反して",
       "に応じて",
-      "にしたがって",
-      "につれて"
+      "をもとに",
+      "に沿って"
     ],
     "answer": 0,
     "full": "大方の予想に反して、無名の新人選手が優勝した。",
@@ -30,12 +30,12 @@
         "en": "「に応じて」 means \"in line with/depending on\"; winning \"in line with predictions\" contradicts 「無名の新人」."
       },
       {
-        "zh": "「にしたがって」是“按照……/随着……”，“按照预测无名新人夺冠”和意外的语气不符。",
-        "en": "「にしたがって」 means \"in accordance with\"; an unknown rookie winning is not what was predicted."
+        "zh": "「をもとに」是“以……为依据”，“以大家的预测为依据，无名新人夺冠”不成立。",
+        "en": "「をもとに」 means 'based on'; an unknown rookie winning wasn't 'based on' the forecast."
       },
       {
-        "zh": "「につれて」是“随着……变化”，「予想」不是持续变化的事物。",
-        "en": "「につれて」 means \"as… changes\"; a prediction isn't a changing quantity."
+        "zh": "「に沿って」是“按照……”，无名新人夺冠恰恰不符合预测。",
+        "en": "「に沿って」 means 'in line with'; an unknown rookie winning went against the forecast."
       }
     ]
   },
@@ -126,8 +126,8 @@
     "options": [
       "一方で",
       "ばかりか",
-      "につれて",
-      "にしたがって"
+      "うえに",
+      "からといって"
     ],
     "answer": 0,
     "full": "大企業が過去最高の利益を上げている一方で、中小企業の多くは厳しい経営が続いている。",
@@ -146,12 +146,12 @@
         "en": "「ばかりか」 adds in the same direction (\"not only… but also\"); here big firms prosper while small ones struggle — a contrast."
       },
       {
-        "zh": "「につれて」是“随着……而变化”，大企业盈利和中小企业困难不是联动变化，而是对比。",
-        "en": "「につれて」 links two changes moving together; this is a contrast, not a parallel change."
+        "zh": "「うえに」是同方向的追加（“不仅……而且……”），而大企业盈利和中小企业困难是对比。",
+        "en": "「うえに」 adds something in the same direction; big firms' profits and small firms' struggles are a contrast."
       },
       {
-        "zh": "「にしたがって」是“随着/按照”，同样不能表示对比。",
-        "en": "「にしたがって」 (\"as / in accordance with\") doesn't express a contrast either."
+        "zh": "「からといって」是“虽说……但也不能……”，后面要接否定的推论，这里是两种情况的对比。",
+        "en": "「からといって」 means 'just because… doesn't mean…'; here two situations are simply contrasted."
       }
     ]
   },
@@ -167,7 +167,7 @@
       "一方",
       "一方で",
       "反面",
-      "につれて"
+      "つもり"
     ],
     "answer": 0,
     "full": "物価は上がる一方なのに、給料は少しも上がらない。",
@@ -190,8 +190,8 @@
         "en": "「反面」 can't take 「なのに」, and rising prices and flat wages aren't two sides of one thing."
       },
       {
-        "zh": "「につれて」后面不能接「なのに」。",
-        "en": "「につれて」 can't be followed by 「なのに」."
+        "zh": "「つもり」表示人的打算，“物价打算上涨”说不通。",
+        "en": "「つもり」 is a person's intention; prices can't 'intend' to rise."
       }
     ]
   },
@@ -242,8 +242,8 @@
     "options": [
       "反面",
       "につれて",
-      "に反して",
-      "にしたがって"
+      "からには",
+      "ことから"
     ],
     "answer": 0,
     "full": "この薬はよく効く反面、副作用も強いので、使い方に注意が必要だ。",
@@ -262,12 +262,12 @@
         "en": "「につれて」 links two gradual changes; this sentence contrasts two sides, not two changes."
       },
       {
-        "zh": "「に反して」前面接名词（予想、期待等），不接动词「効く」。",
-        "en": "「に反して」 follows nouns like 予想 or 期待, not the verb 「効く」."
+        "zh": "「からには」是“既然……就……”，后面接决心或义务，“既然有效，副作用也强”说不通。",
+        "en": "「からには」 means 'now that…' and leads to a resolve or duty; 'now that it works, side effects are strong' makes no sense."
       },
       {
-        "zh": "「にしたがって」是“随着/按照”，不表示正反两面。",
-        "en": "「にしたがって」 (\"as / according to\") doesn't express two opposite sides."
+        "zh": "「ことから」表示根据或理由，“因为有效，所以副作用也强”逻辑不成立，这里是一好一坏两面。",
+        "en": "「ことから」 gives a reason; working well isn't why the side effects are strong — these are two sides."
       }
     ]
   },
@@ -281,8 +281,8 @@
     "stem": "ネットで買い物ができるのは便利な（　）、実物を見て選べないという不安もある。",
     "options": [
       "反面",
-      "とたん",
-      "末に",
+      "うえに",
+      "だけに",
       "あまり"
     ],
     "answer": 0,
@@ -298,12 +298,12 @@
     "wrong": [
       null,
       {
-        "zh": "「とたん」接动词た形，表示“刚……就”，不接「便利な」。",
-        "en": "「とたん」 follows a verb's た-form (\"the moment…\"), not 「便利な」."
+        "zh": "「うえに」是同方向追加，“方便，而且还有不安”前后一好一坏，不能用。",
+        "en": "「うえに」 adds in the same direction; 'convenient' and 'worry' point opposite ways."
       },
       {
-        "zh": "「末に」接动词た形或「名詞の」，表示“经过……最后”，不接形容词。",
-        "en": "「末に」 follows a た-form or noun ＋ の (\"after a long…\"), not an adjective."
+        "zh": "「だけに」是“正因为……所以更……”，方便并不是产生不安的原因，这里是一好一坏的两面。",
+        "en": "「だけに」 means 'precisely because…'; the convenience isn't the reason for the worry — they are two sides."
       },
       {
         "zh": "「あまり」是“过于……以致”，后面是过度造成的结果，这里是正反对比。",
@@ -357,9 +357,9 @@
     "stem": "年を取る（　）、体力が落ちてきた。",
     "options": [
       "につれて",
-      "に反して",
+      "からには",
       "一方で",
-      "をめぐって"
+      "ように"
     ],
     "answer": 0,
     "full": "年を取るにつれて、体力が落ちてきた。",
@@ -374,16 +374,16 @@
     "wrong": [
       null,
       {
-        "zh": "「に反して」接名词，而且“与年龄增长相反”说不通。",
-        "en": "「に反して」 follows nouns, and \"contrary to ageing\" makes no sense."
+        "zh": "「からには」是“既然……就……”，后面接决心或义务，不能接自然变化。",
+        "en": "「からには」 ('now that') leads to a resolve or duty, not a natural change."
       },
       {
         "zh": "「一方で」表示对比，“年龄增长”和“体力下降”不是对比关系，而是因果联动。",
         "en": "「一方で」 contrasts two things; ageing and losing stamina go together rather than contrast."
       },
       {
-        "zh": "「をめぐって」接名词，表示“围绕……（争论）”，意思不通。",
-        "en": "「をめぐって」 follows nouns and means \"over (a dispute)\" — it doesn't fit."
+        "zh": "「ように」表示比喻或目的，“像上年纪一样体力下降”说不通；随年龄变化要用「につれて」。",
+        "en": "「ように」 means 'like / so that'; a change that follows age needs 「につれて」."
       }
     ]
   },
@@ -397,9 +397,9 @@
     "stem": "時間がたつ（　）、その事件のことは人々の記憶から消えていった。",
     "options": [
       "につれて",
-      "を中心に",
-      "はともかく",
-      "に反して"
+      "一方で",
+      "にしても",
+      "までに"
     ],
     "answer": 0,
     "full": "時間がたつにつれて、その事件のことは人々の記憶から消えていった。",
@@ -414,16 +414,16 @@
     "wrong": [
       null,
       {
-        "zh": "「を中心に」接名词，表示“以……为中心”，意思不通。",
-        "en": "「を中心に」 follows nouns and means \"centred on\" — it doesn't fit."
+        "zh": "「一方で」表示对比，时间流逝和记忆消失不是对比，而是一个随着另一个变化。",
+        "en": "「一方で」 contrasts two things; memory fading follows time passing, it doesn't contrast with it."
       },
       {
-        "zh": "「はともかく」是“……暂且不论”，“时间流逝暂且不论”说不通。",
-        "en": "「はともかく」 means \"setting aside\"; \"setting aside time passing\" makes no sense."
+        "zh": "「にしても」是“即使……也……”，后面要接让步后的判断，这里是渐变。",
+        "en": "「にしても」 means 'even if' and needs a concession; this is a gradual change."
       },
       {
-        "zh": "「に反して」接名词，表示“与……相反”，意思不通。",
-        "en": "「に反して」 follows nouns and means \"contrary to\" — it doesn't fit."
+        "zh": "「までに」表示期限（“在……之前”），不能表示随时间推移逐渐变化。",
+        "en": "「までに」 marks a deadline ('by'); it can't show a gradual change over time."
       }
     ]
   },
@@ -473,9 +473,9 @@
     "stem": "火災報知器が鳴ったら、係員の指示（　）、落ち着いて避難してください。",
     "options": [
       "にしたがって",
-      "につれて",
+      "に先立って",
       "に反して",
-      "をめぐって"
+      "にかけては"
     ],
     "answer": 0,
     "full": "火災報知器が鳴ったら、係員の指示にしたがって、落ち着いて避難してください。",
@@ -490,16 +490,16 @@
     "wrong": [
       null,
       {
-        "zh": "「につれて」只表示“随着变化”，没有“按照、遵从”的意思。",
-        "en": "「につれて」 only means \"as… changes\"; it can't mean \"following instructions\"."
+        "zh": "「に先立って」是“在……之前”，“在工作人员指示之前避难”与要求冷静听从指示相反。",
+        "en": "「に先立って」 means 'before'; evacuating before the staff's instructions isn't what's asked."
       },
       {
         "zh": "「に反して」是“违背指示”，和“冷静疏散”的要求矛盾。",
         "en": "「に反して」 means \"against the instructions\" — not what a safety notice asks."
       },
       {
-        "zh": "「をめぐって」是“围绕……（争论）”，不能表示遵照指示行动。",
-        "en": "「をめぐって」 means \"over (a dispute)\"; it can't mean following instructions."
+        "zh": "「にかけては」是“在……方面（擅长）”，不能表示按照指示行动。",
+        "en": "「にかけては」 means 'when it comes to (a skill)'; it can't mean 'following instructions'."
       }
     ]
   },
@@ -513,9 +513,9 @@
     "stem": "経験を積む（　）、仕事に自信が持てるようになった。",
     "options": [
       "にしたがって",
-      "に反して",
+      "うえで",
       "一方で",
-      "を問わず"
+      "からには"
     ],
     "answer": 0,
     "full": "経験を積むにしたがって、仕事に自信が持てるようになった。",
@@ -530,16 +530,16 @@
     "wrong": [
       null,
       {
-        "zh": "「に反して」接名词，“与积累经验相反”说不通。",
-        "en": "「に反して」 follows nouns, and \"contrary to gaining experience\" makes no sense."
+        "zh": "「辞書形＋うえで」是“在……的过程中/为了……”，后面接注意事项或必要条件，不能接逐渐产生的变化。",
+        "en": "「dictionary form ＋ うえで」 means 'in doing / for' and takes a requirement, not a gradual change."
       },
       {
         "zh": "「一方で」表示对比，“积累经验”和“有自信”不是对比关系。",
         "en": "「一方で」 contrasts two things; gaining experience and confidence go together."
       },
       {
-        "zh": "「を問わず」接名词，“不论积累经验”说不通。",
-        "en": "「を問わず」 follows nouns, and \"regardless of gaining experience\" makes no sense."
+        "zh": "「からには」是“既然……就……”，后面接决心或义务，不能接“逐渐有了自信”。",
+        "en": "「からには」 ('now that') leads to a resolve or duty, not 'gradually gained confidence'."
       }
     ]
   },
@@ -589,8 +589,8 @@
     "stem": "今日は課長が出張中なので、課長の（　）、私が会議に出席します。",
     "options": [
       "くせに",
-      "うえで",
-      "かぎり",
+      "ついでに",
+      "わりに",
       "かわりに"
     ],
     "answer": 3,
@@ -609,12 +609,12 @@
         "en": "「くせに」 (despite… — critical) carries blame, which isn't here."
       },
       {
-        "zh": "「うえで」是“在……之后／在……方面”，「課長のうえで」不成立。",
-        "en": "「うえで」 (after / in terms of) doesn't work as 「課長のうえで」."
+        "zh": "「ついでに」是“顺便……”，前面要是说话人自己做的事，“顺便科长”说不通。",
+        "en": "「ついでに」 means 'while doing (something else)'; 'while the section chief' makes no sense."
       },
       {
-        "zh": "「かぎり」是“只要……／限于……”，「課長のかぎり」说不通。",
-        "en": "「かぎり」 (as long as / limited to) makes no sense as 「課長のかぎり」."
+        "zh": "「わりに」是“与……相比出乎意料”，这里是代替科长出席。",
+        "en": "「わりに」 means 'considering…, unexpectedly'; here the speaker is standing in for the chief."
       },
       null
     ]
@@ -630,8 +630,8 @@
     "options": [
       "うちに",
       "かわりに",
-      "とたんに",
-      "ばかりに"
+      "うえに",
+      "からといって"
     ],
     "answer": 1,
     "full": "旅行で留守の間、隣の人に猫の世話をしてもらうかわりに、お土産を買ってくると約束した。",
@@ -650,12 +650,12 @@
       },
       null,
       {
-        "zh": "「とたんに」要接动词た形（〜したとたんに），而且表示“一……就……”，接续和意思都不对。",
-        "en": "「とたんに」 needs the た-form (〜したとたんに) and means \"the moment…\"; both form and meaning are wrong."
+        "zh": "「うえに」是追加（“不仅……而且……”），“请邻居照顾猫”和“答应买礼物”是交换关系，不是追加。",
+        "en": "「うえに」 adds more of the same; here the souvenir is in exchange for the favour."
       },
       {
-        "zh": "「ばかりに」是“就因为……导致坏结果”，答应带土特产不是坏结果。",
-        "en": "「ばかりに」 (only because… bad result) doesn't fit; promising a souvenir isn't a bad outcome."
+        "zh": "「からといって」是“虽说……也不能……”，后面要接否定，这里是交换条件。",
+        "en": "「からといって」 ('just because… doesn't mean') needs a negative ending; this is an exchange."
       }
     ]
   },
@@ -668,10 +668,10 @@
     "difficulty": 2,
     "stem": "この部屋は駅から遠い（　）、家賃が安くて広い。",
     "options": [
-      "あげく",
+      "うえに",
       "からには",
       "かわりに",
-      "ばかりか"
+      "わりに"
     ],
     "answer": 2,
     "full": "この部屋は駅から遠いかわりに、家賃が安くて広い。",
@@ -685,8 +685,8 @@
     },
     "wrong": [
       {
-        "zh": "「あげく」要接动词た形，表示“经过一番……最后（坏结果）”，这里不对。",
-        "en": "「あげく」 needs a verb た-form and means \"after much…, (bad) end result\"; it doesn't fit."
+        "zh": "「うえに」是同方向追加，“离车站远（缺点）”和“便宜宽敞（优点）”方向相反。",
+        "en": "「うえに」 adds in the same direction; 'far from the station' is a minus, 'cheap and roomy' a plus."
       },
       {
         "zh": "「からには」是“既然……就要……”，后面要接决心或义务，这里只是描述。",
@@ -694,8 +694,8 @@
       },
       null,
       {
-        "zh": "「ばかりか」是“不仅……而且……”，前后要同方向（都好或都坏），这里一坏一好。",
-        "en": "「ばかりか」 (not only…) needs both items pointing the same way; here one is bad and one good."
+        "zh": "「わりに」表示“和预想不同”，离车站远房租便宜是意料之中的，不是意外。",
+        "en": "「わりに」 marks something unexpected; cheap rent for a place far from the station is just what you'd expect."
       }
     ]
   },

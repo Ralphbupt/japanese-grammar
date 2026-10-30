@@ -103,31 +103,31 @@
     "type": "bunpou",
     "refs": ["lesson66#1", "lesson66#5"],
     "difficulty": 1,
-    "stem": "大方の予想（　）、決勝戦では無名の新人選手が優勝した。",
+    "stem": "雨になるという予報（　）、運動会の当日は朝から雲一つない青空が広がった。",
     "options": ["に沿って", "に反して", "に応じて", "にしたがって"],
     "answer": 1,
-    "full": "大方の予想に反して、決勝戦では無名の新人選手が優勝した。",
+    "full": "雨になるという予報に反して、運動会の当日は朝から雲一つない青空が広がった。",
     "tr": {
-      "zh": "与大多数人的预料相反，决赛中一位无名新人选手夺得了冠军。",
-      "en": "Contrary to what most people expected, an unknown newcomer won the final."
+      "zh": "与会下雨的预报相反，运动会当天从早上起就是万里无云的晴空。",
+      "en": "Contrary to the forecast of rain, the sky was cloudless from the morning of the sports day."
     },
     "why": {
-      "zh": "大家没想到无名新人会赢，结果和预想相反：「予想に反して」（与预料相反）。",
-      "en": "Nobody expected an unknown newcomer to win, so the result went against predictions: 「予想に反して」."
+      "zh": "预报说会下雨，实际却是晴天，结果和预报相反：「予報に反して」（与预报相反）。",
+      "en": "Rain was forecast but the day was clear — the outcome went against the forecast: 「予報に反して」."
     },
     "wrong": [
       {
-        "zh": "「に沿って」是“按照（方針、计划）”，无名新人夺冠不是按预想发生的。",
-        "en": "「に沿って」 means \"in line with (a plan)\"; an unknown winning didn't follow the predictions."
+        "zh": "「に沿って」是“按照（方针、计划）”；预报说下雨而实际放晴，不是按预报发生的。",
+        "en": "「に沿って」 means \"in line with\"; rain was forecast and it was sunny, so nothing went in line with it."
       },
       null,
       {
-        "zh": "「に応じて」是“根据（变化的条件）相应地……”，和“优胜”这一结果接不上。",
-        "en": "「に応じて」 means \"in response to / according to (varying conditions)\", which doesn't fit a single result."
+        "zh": "「に応じて」是“根据（不同情况）相应地调整”，晴天不是根据预报做出的反应。",
+        "en": "「に応じて」 means adjusting \"in response to\" something; the clear sky isn't a response to the forecast."
       },
       {
-        "zh": "「にしたがって」是“按照……”或“随着……”，都和“出乎预料”的意思相反。",
-        "en": "「にしたがって」 means \"following\" or \"as … changes\"; neither expresses a surprising result."
+        "zh": "「にしたがって」是“按照……”或“随着……”；预报说雨却放晴，两种意思都不成立。",
+        "en": "「にしたがって」 means \"following\" or \"as … changes\"; neither fits a forecast of rain followed by sun."
       }
     ]
   },
@@ -136,31 +136,31 @@
     "type": "bunpou",
     "refs": ["lesson67#4"],
     "difficulty": 1,
-    "stem": "この講座は、年齢や経験（　）、どなたでも参加できます。",
-    "options": ["をめぐって", "を中心に", "を問わず", "を踏まえて"],
+    "stem": "この仕事は季節（　）一年中忙しく、なかなかまとまった休みが取れない。",
+    "options": ["に応じて", "を中心に", "を問わず", "をめぐって"],
     "answer": 2,
-    "full": "この講座は、年齢や経験を問わず、どなたでも参加できます。",
+    "full": "この仕事は季節を問わず一年中忙しく、なかなかまとまった休みが取れない。",
     "tr": {
-      "zh": "这个讲座不论年龄和经验，任何人都可以参加。",
-      "en": "Anyone can join this course, regardless of age or experience."
+      "zh": "这份工作不分季节，一年到头都很忙，很难休个长假。",
+      "en": "This job is busy all year round whatever the season, so it's hard to take a proper break."
     },
     "why": {
-      "zh": "后面有「どなたでも」（任何人都），年龄和经验都不成为条件：「〜を問わず」（不论……）。",
-      "en": "「どなたでも」 (anyone) shows age and experience don't matter: 「〜を問わず」, \"regardless of\"."
+      "zh": "后面有「一年中」，说明季节不构成条件：「〜を問わず」（不论……）。",
+      "en": "「一年中」 shows the season makes no difference: 「〜を問わず」, \"regardless of\"."
     },
     "wrong": [
       {
-        "zh": "「をめぐって」是“围绕（争议的话题）”，后面接争论、对立，不接“谁都能参加”。",
-        "en": "「をめぐって」 is \"over (a disputed issue)\", followed by arguing — not \"anyone can join\"."
+        "zh": "「季節に応じて」是“随季节而变化”，和「一年中」一直忙矛盾。",
+        "en": "「季節に応じて」 means \"varying with the season\", which contradicts 「一年中」."
       },
       {
-        "zh": "「を中心に」是“以……为中心”，和「どなたでも」不受限制的意思矛盾。",
-        "en": "「を中心に」 (\"centred on\") contradicts 「どなたでも」, which says no one is singled out."
+        "zh": "「を中心に」是“以……为中心”，“以季节为中心一年到头都忙”说不通。",
+        "en": "「を中心に」 (\"centred on\") makes no sense with the season and 「一年中」."
       },
       null,
       {
-        "zh": "「を踏まえて」是“在……的基础上”，“基于年龄和经验，谁都能参加”说不通。",
-        "en": "「を踏まえて」 means \"building on\"; \"building on age and experience, anyone can join\" makes no sense."
+        "zh": "「をめぐって」是“围绕（有争议的话题）”，后面接争论、对立，不接“忙”。",
+        "en": "「をめぐって」 is \"over (a disputed issue)\", followed by arguing — not by being busy."
       }
     ]
   },
@@ -268,31 +268,31 @@
     "type": "bunpou",
     "refs": ["lesson74#4"],
     "difficulty": 2,
-    "stem": "兄は三年前に家を出た（　）、一度も連絡をよこさない。",
-    "options": ["ばかりで", "きり", "末に", "とたん"],
+    "stem": "高校の同級生の田中さんとは、卒業式の日に会った（　）、もう二十年も顔を合わせていない。",
+    "options": ["ばかりに", "きり", "とたん", "ところ"],
     "answer": 1,
-    "full": "兄は三年前に家を出たきり、一度も連絡をよこさない。",
+    "full": "高校の同級生の田中さんとは、卒業式の日に会ったきり、もう二十年も顔を合わせていない。",
     "tr": {
-      "zh": "哥哥三年前离开家以后，就一次也没联系过。",
-      "en": "My brother left home three years ago and hasn't been in touch once since."
+      "zh": "我和高中同学田中自从毕业典礼那天见过以后，已经二十年没见面了。",
+      "en": "I last saw my high-school classmate Tanaka on graduation day, and we haven't met in the twenty years since."
     },
     "why": {
-      "zh": "离家后“一次也没联系”的状态一直持续：「〜たきり、〜ない」（自从……就再也没……）。",
-      "en": "Since leaving, nothing has followed — 「〜たきり、〜ない」, \"… and never since\"."
+      "zh": "毕业那天见过之后，“没再见面”的状态一直持续：「〜たきり、〜ない」（自从……就再也没……）。",
+      "en": "After that one meeting nothing followed — 「〜たきり、〜ない」, \"… and never since\"."
     },
     "wrong": [
       {
-        "zh": "「たばかりで」是“刚刚……”，和「三年前」矛盾。",
-        "en": "「たばかりで」 means \"having just …\", which contradicts 「三年前」."
+        "zh": "「たばかりに」是“就因为……（才导致坏结果）”，“就因为见了一面才二十年没见”说不通。",
+        "en": "「たばかりに」 means \"just because …\" (leading to trouble); meeting on graduation day isn't why they haven't met since."
       },
       null,
       {
-        "zh": "「た末に」表示经过长时间努力后的结果，离家不是一个过程，后面也不是结果。",
-        "en": "「た末に」 marks the outcome of a long effort; leaving home isn't a process, and what follows isn't its outcome."
+        "zh": "「たとたん」是“刚一……就（突然发生某事）”，后面不能接持续二十年的状态。",
+        "en": "「たとたん」 is \"the instant …\", followed by a sudden event, not a state lasting twenty years."
       },
       {
-        "zh": "「たとたん」是“刚一……就（发生意外）”，后面不能接持续三年的状态。",
-        "en": "「たとたん」 is \"the instant …\" followed by a sudden event, not a state lasting three years."
+        "zh": "「たところ」是“……之后（发现）……”，后面接做了之后得知的结果，不接一直持续的“没见面”。",
+        "en": "「たところ」 introduces what turned out when one did something, not a state that has lasted ever since."
       }
     ]
   },
@@ -454,10 +454,11 @@
   },
   {
     "id": "n2-m1-116",
+    "rev": 2,
     "type": "narabe",
     "refs": ["lesson65#2"],
     "difficulty": 2,
-    "stem": "毎朝の満員電車は本当につらい。何とかして [★] [_] [_] [_] 考えている。",
+    "stem": "毎朝の満員電車は本当につらい。何とかして [_] [_] [★] [_] 考えている。",
     "options": ["できない", "ものかと", "楽に", "通勤"],
     "order": [2, 3, 0, 1],
     "full": "毎朝の満員電車は本当につらい。何とかして楽に通勤できないものかと考えている。",
@@ -466,8 +467,8 @@
       "en": "The packed trains every morning are really hard. I keep wondering whether there's some way I could commute more comfortably."
     },
     "why": {
-      "zh": "「何とかして〜ないものか」表示强烈希望找到办法。「楽に」修饰「通勤できない」，「ものか」后接「と考えている」：楽に＋通勤＋できない＋ものかと。★ 在第一格，是「楽に」。",
-      "en": "「何とかして〜ないものか」 is a longing for some way to do it. 「楽に」 modifies 「通勤できない」, and 「ものかと」 leads into 「考えている」: 楽に ＋ 通勤 ＋ できない ＋ ものかと. The ★ is the first slot: 「楽に」."
+      "zh": "「何とかして〜ないものか」表示强烈希望找到办法。「楽に」修饰「通勤できない」，「ものか」后接「と考えている」：楽に＋通勤＋できない＋ものかと。★ 在第三格，是「できない」。",
+      "en": "「何とかして〜ないものか」 is a longing for some way to do it. 「楽に」 modifies 「通勤できない」, and 「ものかと」 leads into 「考えている」: 楽に ＋ 通勤 ＋ できない ＋ ものかと. The ★ is the third slot: 「できない」."
     },
     "wrong": [null, null, null, null]
   },

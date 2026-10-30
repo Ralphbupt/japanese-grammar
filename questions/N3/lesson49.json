@@ -358,9 +358,9 @@
     "stem": "彼は 予習を（　）授業に 出て、先生の 質問に 答えられなかった。",
     "options": [
       "せずに",
-      "しずに",
-      "さずに",
-      "すずに"
+      "したまま",
+      "しながら",
+      "したついでに"
     ],
     "answer": 0,
     "full": "彼は 予習を せずに 授業に 出て、先生の 質問に 答えられなかった。",
@@ -369,22 +369,22 @@
       "en": "He went to class without preparing and couldn't answer the teacher's question."
     },
     "why": {
-      "zh": "「する」接「ずに」时是特殊变化「せずに」。",
-      "en": "With 「する」, 「ずに」 takes the special form 「せずに」."
+      "zh": "“没预习就去上课”所以“答不上来”，表示在不做A的状态下做B，用「ずに」；「する」变成「せずに」。",
+      "en": "\"Went to class without preparing\", so he couldn't answer: doing B without A is 「ずに」, and する becomes せずに."
     },
     "wrong": [
       null,
       {
-        "zh": "「しずに」是常见错误，「する」不变成「し＋ずに」。",
-        "en": "「しずに」 is a common mistake; する doesn't become し＋ずに."
+        "zh": "「したまま」是“预习了就那样……”，预习了却答不上来，和前后的因果不符。",
+        "en": "「したまま」 would mean he had prepared, which doesn't explain why he couldn't answer."
       },
       {
-        "zh": "「さずに」是「さす」等动词的形式，不是「する」的。",
-        "en": "「さずに」 belongs to verbs like 「さす」, not 「する」."
+        "zh": "「しながら」是“一边预习一边上课”，也说明不了答不上来的原因。",
+        "en": "「しながら」 is \"while preparing\", which doesn't explain why he couldn't answer."
       },
       {
-        "zh": "「すずに」不存在，「ずに」不接辞书形。",
-        "en": "「すずに」 doesn't exist; 「ずに」 doesn't follow the dictionary form."
+        "zh": "「したついでに」是“预习时顺便……”，意思上也是预习了，和答不上来接不上。",
+        "en": "「したついでに」 is \"while he was at it\", again implying he prepared, which doesn't fit."
       }
     ]
   },
@@ -399,7 +399,7 @@
     "options": [
       "持たずに",
       "持たなくて",
-      "持つまま",
+      "持つために",
       "持ちっぱなしで"
     ],
     "answer": 0,
@@ -419,8 +419,8 @@
         "en": "「なくて」 gives a cause, not \"doing B without doing A\"."
       },
       {
-        "zh": "「まま」要接た形或ない形（持たないまま），「持つまま」不对。",
-        "en": "「まま」 needs the た- or ない-form (持たないまま); 「持つまま」 is wrong."
+        "zh": "「持つために」是“为了拿伞”，出门的目的不是这个，也说明不了被雨淋。",
+        "en": "「持つために」 is \"in order to carry an umbrella\"; that wasn't why he went out, and it doesn't explain getting wet."
       },
       {
         "zh": "「持ちっぱなしで」是“一直拿着不放”，和被雨淋的前因不符。",
@@ -514,9 +514,9 @@
     "stem": "この 絵は 本物の 写真（　）見える ほど、細かく 描かれて いる。",
     "options": [
       "のように",
-      "ように",
-      "なように",
-      "そうに"
+      "として",
+      "のまま",
+      "のために"
     ],
     "answer": 0,
     "full": "この 絵は 本物の 写真のように 見える ほど、細かく 描かれて いる。",
@@ -525,22 +525,22 @@
       "en": "This painting is so detailed it looks like a real photograph."
     },
     "why": {
-      "zh": "名词接「ように見える」要加「の」：写真のように見える。",
-      "en": "A noun needs 「の」 before 「ように見える」: 写真のように見える."
+      "zh": "“看起来像真的照片一样”，比喻用「名词＋のように見える」。",
+      "en": "\"Looks like a real photograph\" is a comparison: 「noun ＋ のように見える」."
     },
     "wrong": [
       null,
       {
-        "zh": "名词后面不能直接接「ように」，要加「の」。",
-        "en": "A noun can't take 「ように」 directly; it needs 「の」."
+        "zh": "「として」是“作为……”，表示身份或资格，不表示“像……一样”。",
+        "en": "「として」 is \"as (a role)\", not \"like\"."
       },
       {
-        "zh": "「なように」是な形容词的接法，「写真」是名词。",
-        "en": "「なように」 is for な-adjectives; 「写真」 is a noun."
+        "zh": "「のまま」是“保持……原样”，这幅画不是照片本身，而是画得像照片。",
+        "en": "「のまま」 is \"just as it is\"; the painting isn't a photo, it only looks like one."
       },
       {
-        "zh": "样态「そう」不接名词，「写真そうに」不对。",
-        "en": "The appearance 「そう」 doesn't attach to nouns; 「写真そうに」 is wrong."
+        "zh": "「のために」是目的或原因，“为了照片看起来”说不通。",
+        "en": "「のために」 gives a purpose or cause; \"looks for the sake of a photo\" makes no sense."
       }
     ]
   },

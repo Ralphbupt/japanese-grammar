@@ -44,7 +44,7 @@
       "未",
       "非",
       "不",
-      "無"
+      "準"
     ],
     "answer": 0,
     "tr": {
@@ -66,8 +66,8 @@
         "en": "「不成年」 isn't a word."
       },
       {
-        "zh": "「無成年」不是词。",
-        "en": "「無成年」 isn't a word."
+        "zh": "「準」表示\"次于、准\"（準決勝・準会員），没有「準成年」。",
+        "en": "準 means \"semi-\" (準決勝, 準会員); 「準成年」 isn't a word."
       }
     ]
   },
@@ -80,7 +80,7 @@
       "無",
       "不",
       "非",
-      "未"
+      "没"
     ],
     "answer": 0,
     "tr": {
@@ -102,8 +102,8 @@
         "en": "「非責任」 isn't a word."
       },
       {
-        "zh": "「未責任」不是词。",
-        "en": "「未責任」 isn't a word."
+        "zh": "「没」构成「没交渉」「没個性」，没有「没責任」。",
+        "en": "没 makes 「没個性」, but 「没責任」 isn't a word."
       }
     ]
   },
@@ -116,7 +116,7 @@
       "不",
       "無",
       "非",
-      "未"
+      "低"
     ],
     "answer": 0,
     "tr": {
@@ -138,44 +138,45 @@
         "en": "「非安定」 isn't a word."
       },
       {
-        "zh": "「未安定」不是词。",
-        "en": "「未安定」 isn't a word."
+        "zh": "「低」接表示程度的词（低価格・低気圧），没有「低安定」。",
+        "en": "低 goes with words of degree (低価格, 低気圧); 「低安定」 isn't a word."
       }
     ]
   },
   {
     "id": "n2-mg-605",
+    "rev": 2,
     "type": "gokeisei",
     "difficulty": 2,
-    "stem": "（　）人気の番組は、すぐに放送が終わってしまう。",
+    "stem": "ドアが閉まる直前に、急いで電車に乗り（　）。",
     "options": [
-      "不",
-      "無",
-      "非",
-      "未"
+      "込んだ",
+      "切った",
+      "越した",
+      "上げた"
     ],
     "answer": 0,
     "tr": {
-      "zh": "不受欢迎的节目很快就会停播。",
-      "en": "Unpopular programmes soon go off the air."
+      "zh": "在车门关上之前，我急忙挤上了电车。",
+      "en": "I hurried onto the train just before the doors closed."
     },
     "why": {
-      "zh": "「人気がない」是「不人気」。",
-      "en": "'Unpopular' is 「不人気」."
+      "zh": "\"进入（交通工具）里面\"是「乗り込む」：「〜込む」表示进入里面（飛び込む・入り込む）。",
+      "en": "Getting into a vehicle is 「乗り込む」: 〜込む means going into something (飛び込む, 入り込む)."
     },
     "wrong": [
       null,
       {
-        "zh": "「無人気」不是词。",
-        "en": "「無人気」 isn't a word."
+        "zh": "「乗り切る」是\"渡过（难关）\"，如「不況を乗り切る」，不能说「電車に乗り切る」。",
+        "en": "「乗り切る」 is to get through a hard time (「不況を乗り切る」), not to board a train."
       },
       {
-        "zh": "「非人気」不是词。",
-        "en": "「非人気」 isn't a word."
+        "zh": "「乗り越す」是\"坐过站\"，如「寝ていて駅を乗り越した」，和\"车门关上之前急忙\"不合。",
+        "en": "「乗り越す」 is to ride past one's stop (「駅を乗り越した」), which doesn't fit hurrying aboard."
       },
       {
-        "zh": "「未人気」不是词。",
-        "en": "「未人気」 isn't a word."
+        "zh": "「乗り上げる」是\"（船、车）冲上、搁浅\"，如「船が岩に乗り上げた」。",
+        "en": "「乗り上げる」 is to run aground or up onto something (「船が岩に乗り上げた」)."
       }
     ]
   },
@@ -258,7 +259,7 @@
     "stem": "社長が出張中なので、（　）社長が会議に出席した。",
     "options": [
       "副",
-      "準",
+      "代",
       "次",
       "補"
     ],
@@ -274,8 +275,8 @@
     "wrong": [
       null,
       {
-        "zh": "「準社長」不是词。「準」用在「準決勝」「準備」等。",
-        "en": "「準社長」 isn't a word. 準 is in words like 「準決勝」."
+        "zh": "「代」构成「代理・代表」，没有「代社長」；代理社长是「社長代理」。",
+        "en": "代 is in 「代理」; there is no 「代社長」 — an acting president is 「社長代理」."
       },
       {
         "zh": "「次社長」不是词。要说下一任社长是「次期社長」。",
@@ -294,7 +295,7 @@
     "stem": "この車は安全（　）が高いと評判だ。",
     "options": [
       "性",
-      "化",
+      "面",
       "力",
       "的"
     ],
@@ -310,8 +311,8 @@
     "wrong": [
       null,
       {
-        "zh": "「安全化」不是常用词，也不能说「が高い」。",
-        "en": "「安全化」 isn't a normal word and can't be 'high'."
+        "zh": "「安全面」是词（安全方面），但它是方面，不能说「安全面が高い」，要说「安全面で優れている」。",
+        "en": "「安全面」 (the safety side) is a word, but it is an aspect, not a quality — you can't say 「安全面が高い」."
       },
       {
         "zh": "「安全力」不是词。「〜力」用在「能力」「体力」等词。",
@@ -370,8 +371,8 @@
     "options": [
       "化",
       "性",
-      "感",
-      "的"
+      "層",
+      "期"
     ],
     "answer": 0,
     "tr": {
@@ -389,12 +390,12 @@
         "en": "「高齢性」 isn't a word."
       },
       {
-        "zh": "「高齢感」不是词。",
-        "en": "「高齢感」 isn't a word."
+        "zh": "「高齢層」是词（老年人群体），但「層」不能接「が進む」；表示过程的是「〜化」。",
+        "en": "「高齢層」 is a word (the elderly as a group), but a group can't 「進む」; a process is 〜化."
       },
       {
-        "zh": "「高齢的」不是词，也不能接「が進む」。",
-        "en": "「高齢的」 isn't a word and can't take 「が進む」."
+        "zh": "「高齢期」是词（老年期），但时期不能「急速に進む」；表示变化过程的是「〜化」。",
+        "en": "「高齢期」 (old age) is a word, but a life stage doesn't 「急速に進む」; a change is 〜化."
       }
     ]
   },
@@ -407,7 +408,7 @@
       "的",
       "化",
       "性",
-      "感"
+      "式"
     ],
     "answer": 0,
     "tr": {
@@ -429,44 +430,45 @@
         "en": "「国際性」 is a noun and can't take 「な」."
       },
       {
-        "zh": "「国際感」不是词。",
-        "en": "「国際感」 isn't a word."
+        "zh": "「〜式」表示方式（日本式・洋式），没有「国際式な」。",
+        "en": "〜式 means a style (日本式); 「国際式な」 isn't used."
       }
     ]
   },
   {
     "id": "n2-mg-613",
+    "rev": 2,
     "type": "gokeisei",
-    "difficulty": 1,
-    "stem": "使用（　）の切手を集めている。",
+    "difficulty": 2,
+    "stem": "かぜ（　）で、朝から少し熱がある。",
     "options": [
-      "済み",
-      "付き",
-      "切れ",
-      "明け"
+      "気味",
+      "向き",
+      "混じり",
+      "だらけ"
     ],
     "answer": 0,
     "tr": {
-      "zh": "我在收集用过的邮票。",
-      "en": "I collect used stamps."
+      "zh": "有点感冒，从早上开始就有点发烧。",
+      "en": "I'm coming down with a cold and have had a slight temperature since this morning."
     },
     "why": {
-      "zh": "「〜済み」表示已经做完：「使用済み」（用过的）。",
-      "en": "〜済み means 'already done': 「使用済み」 (used)."
+      "zh": "\"有点……的样子\"是「〜気味」：「かぜ気味」= 有点感冒。",
+      "en": "\"A bit, slightly\" is 〜気味: 「かぜ気味」 = a touch of a cold."
     },
     "wrong": [
       null,
       {
-        "zh": "「使用付き」不是词。「〜付き」表示附带。",
-        "en": "「使用付き」 isn't a word. 〜付き means 'with ... included'."
+        "zh": "「〜向き」表示\"适合……\"（子ども向き），「かぜ向き」不成立。",
+        "en": "〜向き means \"suited to\" (子ども向き); 「かぜ向き」 doesn't work."
       },
       {
-        "zh": "「使用切れ」不是词。",
-        "en": "「使用切れ」 isn't a word."
+        "zh": "「〜混じり」表示\"夹杂着\"（雨混じりの雪），「かぜ混じり」不成立。",
+        "en": "〜混じり means \"mixed with\" (雨混じりの雪); 「かぜ混じり」 doesn't work."
       },
       {
-        "zh": "「使用明け」不是词。",
-        "en": "「使用明け」 isn't a word."
+        "zh": "「〜だらけ」表示\"满是（不好的东西）\"（泥だらけ），不能用于感冒。",
+        "en": "〜だらけ means \"covered in\" (泥だらけ); it can't be used of a cold."
       }
     ]
   },
@@ -477,9 +479,9 @@
     "stem": "朝食（　）のプランで、ホテルを予約した。",
     "options": [
       "付き",
-      "済み",
-      "明け",
-      "切れ"
+      "入り",
+      "持ち",
+      "連れ"
     ],
     "answer": 0,
     "tr": {
@@ -493,16 +495,16 @@
     "wrong": [
       null,
       {
-        "zh": "「朝食済み」是「已经吃过早饭」，不能修饰套餐。",
-        "en": "「朝食済み」 would mean 'breakfast already eaten' — not a plan."
+        "zh": "「〜入り」表示\"装有、含有\"（ミルク入り），「朝食入りのプラン」不成立。",
+        "en": "〜入り means \"containing\" (ミルク入り); 「朝食入りのプラン」 doesn't work."
       },
       {
-        "zh": "「朝食明け」不是词。",
-        "en": "「朝食明け」 isn't a word."
+        "zh": "「〜持ち」表示\"拥有\"（お金持ち・子ども持ち），没有「朝食持ち」。",
+        "en": "〜持ち means \"owning\" (お金持ち); 「朝食持ち」 isn't a word."
       },
       {
-        "zh": "「朝食切れ」不是词。",
-        "en": "「朝食切れ」 isn't a word."
+        "zh": "「〜連れ」表示\"带着（人）\"（子ども連れ），不能接早餐。",
+        "en": "〜連れ means \"accompanied by\" a person (子ども連れ), not breakfast."
       }
     ]
   },
@@ -588,9 +590,9 @@
     "stem": "（　）時間労働が社会問題になっている。",
     "options": [
       "長",
-      "多",
-      "大",
-      "高"
+      "延",
+      "永",
+      "久"
     ],
     "answer": 0,
     "tr": {
@@ -604,16 +606,16 @@
     "wrong": [
       null,
       {
-        "zh": "「多時間」不是词。",
-        "en": "「多時間」 isn't a word."
+        "zh": "「延」构成「延長」「延べ」，没有「延時間」。",
+        "en": "延 is in 「延長」, but 「延時間」 isn't a word."
       },
       {
-        "zh": "「大時間」不是词。",
-        "en": "「大時間」 isn't a word."
+        "zh": "「永」构成「永住・永遠」，没有「永時間」。",
+        "en": "永 makes 「永住」, but 「永時間」 isn't a word."
       },
       {
-        "zh": "「高時間」不是词。",
-        "en": "「高時間」 isn't a word."
+        "zh": "「久」构成「永久・持久」，没有「久時間」。",
+        "en": "久 is in 「持久」, but 「久時間」 isn't a word."
       }
     ]
   },
@@ -628,8 +630,8 @@
     "options": [
       "大",
       "巨",
-      "多",
-      "高"
+      "広",
+      "重"
     ],
     "answer": 0,
     "tr": {
@@ -647,12 +649,12 @@
         "en": "「巨規模」 isn't a word."
       },
       {
-        "zh": "「多規模」不是词。",
-        "en": "「多規模」 isn't a word."
+        "zh": "「広」构成「広範囲・広域」，没有「広規模」。",
+        "en": "広 makes 「広範囲」, but 「広規模」 isn't a word."
       },
       {
-        "zh": "「高規模」不是词。",
-        "en": "「高規模」 isn't a word."
+        "zh": "「重」构成「重労働・重工業」，没有「重規模」。",
+        "en": "重 makes 「重労働」, but 「重規模」 isn't a word."
       }
     ]
   },
@@ -694,73 +696,75 @@
   },
   {
     "id": "n2-mg-620",
+    "rev": 2,
     "type": "gokeisei",
-    "difficulty": 1,
-    "stem": "会員は五百円、（　）会員は千円です。",
+    "difficulty": 2,
+    "stem": "一か月分の給料を、たった一週間で使い（　）しまった。",
     "options": [
-      "非",
-      "不",
-      "無",
-      "未"
+      "切って",
+      "回して",
+      "合って",
+      "出して"
     ],
     "answer": 0,
     "tr": {
-      "zh": "会员五百日元，非会员一千日元。",
-      "en": "Members pay 500 yen; non-members pay 1,000 yen."
+      "zh": "一个月的工资，才一个星期就花光了。",
+      "en": "I used up a whole month's pay in just one week."
     },
     "why": {
-      "zh": "「不是会员的人」是「非会員」：「非」= 不属于。",
-      "en": "'Non-member' is 「非会員」: 非 = not belonging to."
+      "zh": "\"全部用完\"是「使い切る」：「〜切る」表示做到最后、全部（読み切る・売り切れる）。",
+      "en": "Using up completely is 「使い切る」: 〜切る means doing something to the end (読み切る, 売り切れる)."
     },
     "wrong": [
       null,
       {
-        "zh": "「不会員」不是词。",
-        "en": "「不会員」 isn't a word."
+        "zh": "「使い回す」是\"重复使用（同一个东西）\"，如「同じ資料を使い回す」，不是花钱。",
+        "en": "「使い回す」 is to reuse the same thing (「同じ資料を使い回す」), not to spend money."
       },
       {
-        "zh": "「無会員」不是词。",
-        "en": "「無会員」 isn't a word."
+        "zh": "「〜合う」表示互相（話し合う），「使い合う」不能用于自己花工资。",
+        "en": "〜合う means \"each other\" (話し合う); it doesn't fit spending one's own pay."
       },
       {
-        "zh": "「未会員」不是词。",
-        "en": "「未会員」 isn't a word."
+        "zh": "「〜出す」表示开始或取出（歩き出す），「使い出す」不表示\"用完\"。",
+        "en": "〜出す means starting or taking out (歩き出す); 「使い出す」 doesn't mean using up."
       }
     ]
   },
   {
     "id": "n2-mg-621",
+    "rev": 2,
     "type": "gokeisei",
     "difficulty": 2,
-    "stem": "その事件は十年たった今も（　）解決のままだ。",
+    "stem": "困ったときは、家族で助け（　）ことが大切だ。",
     "options": [
-      "未",
-      "不",
-      "非",
-      "無"
+      "合う",
+      "込む",
+      "切る",
+      "出す"
     ],
     "answer": 0,
     "tr": {
-      "zh": "那起案件过了十年，至今仍未解决。",
-      "en": "Ten years on, the case remains unsolved."
+      "zh": "遇到困难时，家人之间互相帮助很重要。",
+      "en": "When things are hard, it's important for a family to help each other."
     },
     "why": {
-      "zh": "「还没解决」是「未解決」：「未」= 还没。",
-      "en": "'Not yet solved' is 「未解決」: 未 = not yet."
+      "zh": "\"互相帮助\"是「助け合う」：「〜合う」表示互相做某事（話し合う・譲り合う）。「家族で」说明是彼此之间。",
+      "en": "Helping each other is 「助け合う」: 〜合う means doing something mutually (話し合う, 譲り合う); 「家族で」 points to that."
     },
     "wrong": [
       null,
       {
-        "zh": "「不解決」不是词。",
-        "en": "「不解決」 isn't a word."
+        "zh": "没有「助け込む」这个说法。",
+        "en": "「助け込む」 isn't used."
       },
       {
-        "zh": "「非解決」不是词。",
-        "en": "「非解決」 isn't a word."
+        "zh": "没有「助け切る」这个说法。",
+        "en": "「助け切る」 isn't used."
       },
       {
-        "zh": "「無解決」不是词。",
-        "en": "「無解決」 isn't a word."
+        "zh": "「助け出す」是\"救出（某人）\"，如「火事の家から子どもを助け出す」，需要宾语，和\"家人互相\"不合。",
+        "en": "「助け出す」 is to rescue someone out of danger (「子どもを助け出す」); it needs an object and isn't mutual."
       }
     ]
   },
@@ -810,9 +814,9 @@
     "stem": "社員を守るのは、経営（　）としての責任だ。",
     "options": [
       "者",
-      "人",
-      "手",
-      "員"
+      "員",
+      "師",
+      "官"
     ],
     "answer": 0,
     "tr": {
@@ -826,88 +830,90 @@
     "wrong": [
       null,
       {
-        "zh": "「経営人」不是词。",
-        "en": "「経営人」 isn't a word."
+        "zh": "「〜員」接在组织、职务后（会社員・係員），没有「経営員」。",
+        "en": "〜員 follows an organisation or job (会社員, 係員); 「経営員」 isn't a word."
       },
       {
-        "zh": "「経営手」不是词。",
-        "en": "「経営手」 isn't a word."
+        "zh": "「〜師」用于有专门技术的职业（医師・美容師），没有「経営師」。",
+        "en": "〜師 is for skilled professions (医師, 美容師); 「経営師」 isn't a word."
       },
       {
-        "zh": "「経営員」不是词。",
-        "en": "「経営員」 isn't a word."
+        "zh": "「〜官」用于公务员职位（警察官・外交官），没有「経営官」。",
+        "en": "〜官 is for government posts (警察官, 外交官); 「経営官」 isn't a word."
       }
     ]
   },
   {
     "id": "n2-mg-624",
+    "rev": 2,
     "type": "gokeisei",
-    "difficulty": 1,
-    "stem": "（　）意識のうちに、同じ歌を口ずさんでいた。",
+    "difficulty": 2,
+    "stem": "疲れていたので、本を読み（　）まま眠ってしまった。",
     "options": [
-      "無",
-      "不",
-      "非",
-      "未"
+      "かけた",
+      "切った",
+      "返した",
+      "通した"
     ],
     "answer": 0,
     "tr": {
-      "zh": "我不知不觉地哼着同一首歌。",
-      "en": "Without realising it, I was humming the same song."
+      "zh": "因为太累，书读到一半就睡着了。",
+      "en": "I was so tired that I fell asleep halfway through reading a book."
     },
     "why": {
-      "zh": "「无意识」是「無意識」。",
-      "en": "'Unconscious' is 「無意識」."
+      "zh": "\"做到一半\"是「〜かける」：「読みかけたまま」= 读到一半就那样放着。",
+      "en": "\"Half-done\" is 〜かける: 「読みかけたまま」 = left half-read."
     },
     "wrong": [
       null,
       {
-        "zh": "「不意識」不是词。",
-        "en": "「不意識」 isn't a word."
+        "zh": "「読み切る」是\"读完\"，读完和「まま眠ってしまった」（中途睡着）不合。",
+        "en": "「読み切る」 is to read to the end, which clashes with dozing off mid-way (〜まま眠ってしまった)."
       },
       {
-        "zh": "「非意識」不是词。",
-        "en": "「非意識」 isn't a word."
+        "zh": "「読み返す」是重读，和「まま眠ってしまった」（读到一半睡着）不合。",
+        "en": "「読み返す」 is to reread, which doesn't fit dozing off mid-way (〜まま眠ってしまった)."
       },
       {
-        "zh": "「未意識」不是词。",
-        "en": "「未意識」 isn't a word."
+        "zh": "「読み通す」是从头读到尾，读完了就不是「まま」睡着。",
+        "en": "「読み通す」 is to read from start to finish, which clashes with 〜まま (left half-done)."
       }
     ]
   },
   {
     "id": "n2-mg-625",
+    "rev": 2,
     "type": "gokeisei",
-    "difficulty": 1,
-    "stem": "この予算で一か月で完成させるのは（　）可能だ。",
+    "difficulty": 2,
+    "stem": "（　）夜中に電話が鳴って、目が覚めてしまった。",
     "options": [
-      "不",
-      "無",
-      "非",
-      "未"
+      "真",
+      "深",
+      "正",
+      "最"
     ],
     "answer": 0,
     "tr": {
-      "zh": "用这点预算一个月完成是不可能的。",
-      "en": "Finishing it in a month on this budget is impossible."
+      "zh": "半夜三更电话响了，把我吵醒了。",
+      "en": "The phone rang in the middle of the night and woke me up."
     },
     "why": {
-      "zh": "「可能」的否定是「不可能」。",
-      "en": "The negative of 「可能」 is 「不可能」."
+      "zh": "\"正当半夜\"是「真夜中」：「真」接名词表示\"正、完全\"（真冬・真上・真っ白）。",
+      "en": "The dead of night is 「真夜中」: 真 before a noun means \"right in, completely\" (真冬, 真上)."
     },
     "wrong": [
       null,
       {
-        "zh": "「無可能」不是词。",
-        "en": "「無可能」 isn't a word."
+        "zh": "有「深夜」，但没有「深夜中」。",
+        "en": "There is 「深夜」, but not 「深夜中」."
       },
       {
-        "zh": "「非可能」不是词。",
-        "en": "「非可能」 isn't a word."
+        "zh": "「正」构成「正反対」，没有「正夜中」。",
+        "en": "正 makes 「正反対」, but 「正夜中」 isn't a word."
       },
       {
-        "zh": "「未可能」不是词。",
-        "en": "「未可能」 isn't a word."
+        "zh": "「最」构成「最前列・最上階」，没有「最夜中」。",
+        "en": "最 makes 「最上階」, but 「最夜中」 isn't a word."
       }
     ]
   },
@@ -1063,8 +1069,8 @@
     "options": [
       "明け",
       "切れ",
-      "済み",
-      "付き"
+      "抜け",
+      "開き"
     ],
     "answer": 0,
     "tr": {
@@ -1082,12 +1088,12 @@
         "en": "「連休切れ」 isn't a word."
       },
       {
-        "zh": "「連休済み」不是词。",
-        "en": "「連休済み」 isn't a word."
+        "zh": "「〜抜け」表示\"漏掉、缺少\"（手抜け），没有「連休抜け」。",
+        "en": "〜抜け means \"missing\" (手抜け); 「連休抜け」 isn't a word."
       },
       {
-        "zh": "「連休付き」不是词。",
-        "en": "「連休付き」 isn't a word."
+        "zh": "「〜開き」表示\"开（始）\"（店開き・海開き），没有「連休開き」。",
+        "en": "〜開き is an opening (海開き); 「連休開き」 isn't a word."
       }
     ]
   }

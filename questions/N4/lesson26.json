@@ -51,10 +51,11 @@
   },
   {
     "id": "n4-l26-003",
+    "rev": 2,
     "type": "narabe",
     "refs": ["lesson26#1"],
     "difficulty": 2,
-    "stem": "彼女は 毎日 3時間も [_] [_] [★] [_]。",
+    "stem": "彼女は 毎日 3時間も [★] [_] [_] [_]。",
     "options": ["練習して いる", "から", "上手な", "わけだ"],
     "order": [0, 1, 2, 3],
     "full": "彼女は 毎日 3時間も 練習して いる から 上手な わけだ。",
@@ -64,8 +65,8 @@
       "en": "She practices three whole hours every day — no wonder she's so good."
     },
     "why": {
-      "zh": "原因「練習しているから」在前，结论「上手なわけだ」在后；な形容词接「わけ」要用「上手な」。★ 在第三格，是「上手な」。",
-      "en": "The cause 「練習しているから」 comes first, then the conclusion 「上手なわけだ」; a な-adjective takes 「な」 before 「わけ」. The ★ is the third slot: 「上手な」."
+      "zh": "原因「練習しているから」在前，结论「上手なわけだ」在后；な形容词接「わけ」要用「上手な」。★ 在第一格，是「練習して いる」。",
+      "en": "The cause 「練習しているから」 comes first, then the conclusion 「上手なわけだ」; a な-adjective takes 「な」 before 「わけ」. The ★ is the first slot: 「練習して いる」."
     },
     "wrong": [null, null, null, null]
   },
@@ -241,10 +242,11 @@
   },
   {
     "id": "n4-l26-011",
+    "rev": 2,
     "type": "narabe",
     "refs": ["lesson26#3"],
     "difficulty": 2,
-    "stem": "もう 12月か。[_] [_] [★] [_]。",
+    "stem": "もう 12月か。[_] [★] [_] [_]。",
     "options": ["時間が", "経つのは", "早い", "ものだ"],
     "order": [0, 1, 2, 3],
     "full": "もう 12月か。時間が 経つのは 早い ものだ。",
@@ -254,8 +256,8 @@
       "en": "December already? Time really flies."
     },
     "why": {
-      "zh": "「時間が経つの」是主题（时间的流逝），「は」后接「早いものだ」表示感慨。★ 在第三格，是「早い」。",
-      "en": "「時間が経つの」 (time passing) is the topic, followed by 「早いものだ」, an exclamation. The ★ is the third slot: 「早い」."
+      "zh": "「時間が経つの」是主题（时间的流逝），「は」后接「早いものだ」表示感慨。★ 在第二格，是「経つのは」。",
+      "en": "「時間が経つの」 (time passing) is the topic, followed by 「早いものだ」, an exclamation. The ★ is the second slot: 「経つのは」."
     },
     "wrong": [null, null, null, null]
   },

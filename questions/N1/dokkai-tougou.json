@@ -42,58 +42,58 @@
       {
         "q": "利用者の少ない鉄道路線について、AとBはどのように考えているか。",
         "options": [
-          "Aは税金を使わずに残す方法を考えるべきだとし、Bは税金で維持するのは無駄だとしている",
-          "Aは観光列車に限って残すべきだとし、Bは本数を増やして残すべきだとしている",
-          "Aは町の将来を考えて残すべきだとし、Bは住民の利便を優先して別の交通手段に切り替えるべきだとしている",
-          "AもBも、住民の意見を聞いたうえで決めるべきだとしている"
+          "Aは採算の見込みがある限り存続を求め、Bは税金の負担を理由に早期の廃止を求めている",
+          "Aは駅舎の活用で住民の愛着に応えるべきだとし、Bは列車の本数を増やして鉄道の利便を高めるべきだとしている",
+          "Aは町の将来への影響から路線の存続を求め、Bは住民の利便を重んじて別の交通手段への転換を求めている",
+          "AもBも、鉄道は残したうえで、観光や新しい交通手段と組み合わせて活用すべきだとしている"
         ],
         "answer": 2,
         "why": {
-          "zh": "A认为急于废线会加速城镇衰落，主张作为地区资产活用；B主张改为公交车或合乘车辆，更有益于居民生活。",
-          "en": "A warns closure could hasten the town's decline and wants the line used as an asset; B wants buses or shared vehicles for residents' convenience."
+          "zh": "A认为铁路是「町の骨格」，废除会「町の衰退に拍車をかける」，主张保留；B认为该守护的是「住民の移動手段」，主张改成巴士或预约制合乘车辆。",
+          "en": "A wants the line kept because the railway is 「町の骨格」 and closing it could hasten the town's decline; B says what matters is 「住民の移動手段」 and wants buses or on-demand shared vehicles instead."
         },
         "wrong": [
           {
-            "zh": "A没有说不用税金；B也没有说维持是浪费，而是主张把费用转用于新交通。",
-            "en": "A never says to keep it without tax money, and B speaks of redirecting the money, not of waste."
+            "zh": "A明确反对「運賃収入だけで測る」，并不以盈利为条件；B的理由是居民的便利，而不是税金负担。",
+            "en": "A explicitly rejects judging by fare revenue, so profitability is not its condition; B's reason is residents' convenience, not the tax burden."
           },
           {
-            "zh": "B主张的是改为公交车等，不是保留铁路增加班次；B说铁路「本数を増やすこともできず」。",
-            "en": "B wants a switch to buses; on the railway itself B says 「本数を増やすこともできず」."
+            "zh": "B说的增加班次是改成巴士之后才能做到的，B并不主张保留铁路；A提到活用车站，但理由是地区资产，不是居民的感情。",
+            "en": "B's extra services come from switching to buses, not from keeping the railway; A mentions using station buildings, but as a regional asset, not to satisfy attachment."
           },
           null,
           {
-            "zh": "两篇都没有提到要听取居民意见来决定。",
-            "en": "Neither text says the decision should follow consulting residents."
+            "zh": "B主张把维持线路的费用转用到新的交通方式上，不是保留铁路。",
+            "en": "B wants the money spent on the track moved to new transport, not the railway kept."
           }
         ]
       },
       {
         "q": "Bの「本末転倒である」とは、どのようなことを言っているか。",
         "options": [
-          "鉄道を廃止したために、駅を中心とした町の骨格が失われること",
-          "住民の移動を支えるための交通なのに、鉄道という形を守るために住民が不便を強いられること",
-          "赤字を減らすために運賃を値上げし、利用者がさらに減ること",
-          "思い出を大切にするあまり、新しい観光の工夫を怠ること"
+          "鉄道を廃止したことで、駅を中心に成り立っていた町の骨格が失われていくこと",
+          "移動を支えるはずの鉄道を守ることが、かえって住民の日々の不便を生んでいること",
+          "経費を抑えるためにバスに切り替えた結果、かえって利用者が減ってしまうこと",
+          "思い出や象徴としての価値を重んじるあまり、運行経費の削減が後回しになること"
         ],
         "answer": 1,
         "why": {
-          "zh": "B认为应守护的是出行手段而非「鉄道という形」；若因回忆和象征价值让居民「日々の不便を強いられる」，就是本末倒置。",
-          "en": "For B the point is mobility, not 「鉄道という形」; making residents suffer 「日々の不便」 for a symbol reverses ends and means."
+          "zh": "B认为该守护的是「住民の移動手段そのもの」；为了保住铁路这个「形」而让居民「日々の不便を強いられる」，就是本末倒置。",
+          "en": "For B the point is 「住民の移動手段そのもの」; keeping the railway's form while residents 「日々の不便を強いられる」 puts the means before the end."
         },
         "wrong": [
           {
-            "zh": "这是A担心的事，不是B所说的本末倒置。",
-            "en": "That is A's worry, not what B calls 「本末転倒」."
+            "zh": "这是A的担心（「町の骨格」），不是B说的「本末転倒」。",
+            "en": "That is A's worry (「町の骨格」), not what B calls 「本末転倒」."
           },
           null,
           {
-            "zh": "两篇都没有提到涨票价。",
-            "en": "Neither text mentions raising fares."
+            "zh": "改成巴士后乘客反而减少是A举的例子，B没有这么说。",
+            "en": "Bus conversions losing riders is A's example; B says nothing of the kind."
           },
           {
-            "zh": "观光的努力是A的主张，与B所说的本末倒置无关。",
-            "en": "Tourism ideas are A's; they have nothing to do with B's 「本末転倒」."
+            "zh": "B批评的是居民被迫忍受不便，不是经费削减被推迟；「思い出や象徴」只是被当作保留的理由提到。",
+            "en": "B objects to residents being inconvenienced, not to cost-cutting being delayed; 「思い出や象徴」 is only mentioned as the reason given for keeping the line."
           }
         ]
       }
@@ -113,28 +113,28 @@
       {
         "q": "美術館での撮影について、AとBの考えはどのように違うか。",
         "options": [
-          "Aはすべての作品の撮影を認めるべきだとし、Bは撮影を全面的に禁止すべきだとしている",
-          "Aは若い世代に限って撮影を認めるべきだとし、Bは年齢に関係なく制限すべきだとしている",
-          "Aは作品を守ることが美術館の最も大切な役割だとし、Bは来館者の楽しみを優先すべきだとしている",
-          "Aは撮影が鑑賞の機会や楽しみ方を広げると考え、Bは撮影が作品とじっくり向き合うことを妨げると考えている"
+          "Aは権利のある作品も含めて撮影を認めるべきだとし、Bは撮影を原則として禁じるべきだとしている",
+          "Aは若い世代を呼び込むために撮影を認め、Bは静かな環境のために年齢で撮影を制限すべきだとしている",
+          "Aは作品の保護より来館者の数を重視し、Bは来館者の数より作品の保存を重視している",
+          "Aは撮影が美術に親しむ機会を広げるとみて、Bは作品とじっくり向き合う妨げになるとみている"
         ],
         "answer": 3,
         "why": {
-          "zh": "A说照片能成为来馆的契机，回家后还能回看，「鑑賞は展示室の中だけで完結するものではない」；B说隔着屏幕就得不到花时间面对作品的体验。",
-          "en": "A says photos bring people in and let them look again later — 「鑑賞は展示室の中だけで完結するものではない」; B says viewing through a screen loses the experience of facing a work at length."
+          "zh": "A认为照片分享会成为来馆的契机、回家还能细看，扩大了欣赏的方式；B认为拍照让人不再「時間をかけて向き合う」，妨碍静心欣赏。",
+          "en": "A thinks shared photos bring people in and let them study details at home, widening how art is enjoyed; B thinks photographing stops people 「時間をかけて向き合う」."
         },
         "wrong": [
           {
-            "zh": "A承认闪光灯和版权等例外；B只主张限定时段和区域，并非全面禁止。",
-            "en": "A allows exceptions (flash, rights), and B only wants limits on hours and areas, not a ban."
+            "zh": "A明确把有权利问题、会因闪光灯受损的作品排除在外；B说「撮影の効用を否定するつもりはない」，只主张限定时段或区域。",
+            "en": "A explicitly excludes works with rights issues or flash risk; B says 「撮影の効用を否定するつもりはない」 and only wants times or areas limited."
           },
           {
-            "zh": "A提到年轻一代只是作为例子，并没有限定年龄；B也没有谈年龄。",
-            "en": "A mentions the young only as an example, not a condition; B says nothing about age."
+            "zh": "A只说对年轻一代是一个入口，并没有只为年轻人开放；B也没有提年龄限制。",
+            "en": "A only says photos can be a way in for the young, not that it is for them; B never mentions age limits."
           },
           {
-            "zh": "A说美术馆「作品を守るだけの場所ではなく」应开放；B重视的是静心面对作品的环境。",
-            "en": "A says a museum is 「作品を守るだけの場所ではなく」, and B's concern is a calm setting for viewing."
+            "zh": "B担心的是欣赏环境，不是作品保存；A也没有说来馆人数比保护作品更重要。",
+            "en": "B's concern is the viewing experience, not conservation; A never ranks visitor numbers above protecting works."
           },
           null
         ]
@@ -142,58 +142,58 @@
       {
         "q": "Bの「作品を『収集』しているかのようだ」とは、どのような様子を言っているか。",
         "options": [
-          "美術館が、各地から貴重な作品を集めて展示している様子",
-          "作品を写真に収めること自体が目的になり、よく見ないまま次の作品に移っていく様子",
-          "来館者が撮った写真を整理し、帰宅後に見返している様子",
-          "来館者が、気に入った作品の複製や絵はがきを買い集めている様子"
+          "気に入った作品を写真に残して、帰宅後に細部を見返す様子",
+          "撮ることが目的になり、作品をよく見ずに次へ移っていく様子",
+          "人気の作品の前に人が集まり、なかなか前に進めない様子",
+          "作品の複製や絵はがきを、記念として次々に買い集める様子"
         ],
         "answer": 1,
         "why": {
-          "zh": "前句：拍完「すぐに次の作品へ移ってしまう人」，「作品を見ているのではなく」——把拍下作品当成了目的。",
-          "en": "The sentence before: people who 「すぐに次の作品へ移ってしまう」 once they have their shot — 「作品を見ているのではなく」, collecting photos."
+          "zh": "前一句是「撮り終えるとすぐに次の作品へ移ってしまう」：拍下来本身成了目的，并没有在看作品。",
+          "en": "The sentence before: 「撮り終えるとすぐに次の作品へ移ってしまう」 — taking the photo has become the goal, not looking at the work."
         },
         "wrong": [
           {
-            "zh": "这里说的是来馆者的行为，不是美术馆的收藏。",
-            "en": "It describes visitors' behaviour, not the museum's collection."
+            "zh": "回家细看是A说的拍照好处，不是B描述的「収集」。",
+            "en": "Studying photos at home is A's argument for photography, not B's 「収集」."
           },
           null,
           {
-            "zh": "回家后回看是A所说的好处，B这句话说的是在展厅里的样子。",
-            "en": "Looking again at home is A's point; B is describing behaviour in the gallery."
+            "zh": "人群聚集是B描述的现象之一，但「収集」指的是拍完就走、不看作品。",
+            "en": "Crowds are part of B's description, but 「収集」 means snapping and moving on without looking."
           },
           {
-            "zh": "文中没有提到买复制品或明信片，「収集」是比喻拍照的行为。",
-            "en": "No reproductions or postcards are mentioned; 「収集」 is a figure for taking photos."
+            "zh": "文中没有提购买复制品或明信片；「収集」是比喻拍照。",
+            "en": "Buying reproductions isn't mentioned; 「収集」 is a metaphor for taking photos."
           }
         ]
       },
       {
         "q": "AとBのどちらにも述べられていることは何か。",
         "options": [
-          "撮影には一定の利点がある",
-          "フラッシュは作品を傷めるおそれがある",
-          "写真の共有が、実物を見に来るきっかけになる",
-          "撮影に夢中な人は、静かに鑑賞したい人の迷惑になる"
+          "撮影がもたらす利点を、一定程度は認めている",
+          "フラッシュが作品を傷めるおそれを指摘している",
+          "写真の共有が来館のきっかけになると述べている",
+          "撮影できる時間や区域を限るべきだと述べている"
         ],
         "answer": 0,
         "why": {
-          "zh": "A列举了拍照的种种好处；B也说「撮影の効用を否定するつもりはない」。",
-          "en": "A lists the benefits; B too says 「撮影の効用を否定するつもりはない」."
+          "zh": "A整体肯定拍照的好处；B也说「撮影の効用を否定するつもりはない」，所以两人都承认拍照有一定的好处。",
+          "en": "A argues for photography's benefits, and B says 「撮影の効用を否定するつもりはない」, so both grant it some benefit."
         },
         "wrong": [
           null,
           {
-            "zh": "只有A提到闪光灯。",
-            "en": "Only A mentions flash."
+            "zh": "闪光灯会损伤作品只有A提到。",
+            "en": "Only A mentions flash damaging works."
           },
           {
-            "zh": "这是A的论点，B没有提到。",
-            "en": "That is A's point; B doesn't make it."
+            "zh": "分享照片带来访客是A的论点，B没有提。",
+            "en": "Shared photos drawing visitors is A's point; B doesn't make it."
           },
           {
-            "zh": "这是B的论点，A没有提到。",
-            "en": "That is B's point; A doesn't make it."
+            "zh": "限定时段或区域是B的提议，A没有这样说。",
+            "en": "Limiting times or areas is B's proposal, not A's."
           }
         ]
       }
@@ -213,29 +213,29 @@
       {
         "q": "後世に加えられた改変について、AとBはどのように考えているか。",
         "options": [
-          "AもBも、できる限り取り除くべきだとしている",
-          "Aは歴史の一部として残すべきだとし、Bは取り除くべきだとしている",
-          "Aは本来の設計意図を見えにくくするものとし、Bは建物の歴史の一部だとしている",
-          "AもBも、推定が正確であれば取り除いてよいとしている"
+          "AもBも、推定の精度が十分であれば取り除いてかまわないとしている",
+          "Aは当時の技術を伝える証拠とし、Bは当初の設計意図を損なうものとしている",
+          "Aは本来の設計を見えにくくするものとし、Bは建物の歴史の一部とみている",
+          "Aは貴重な証拠を覆い隠すものとし、Bも必要に応じて取り除くべきだとしている"
         ],
         "answer": 2,
         "why": {
-          "zh": "A说后世的扩建改动使「本来の設計意図が見えにくくなっている」；B说「後世の改変もまた、その建物が歩んできた歴史の一部」。",
-          "en": "A says later changes make 「本来の設計意図が見えにくくなっている」; B says 「後世の改変もまた…歴史の一部」."
+          "zh": "A说后世的改动让「本来の設計意図が見えにくくなっている」；B说「後世の改変もまた、その建物が歩んできた歴史の一部である」。",
+          "en": "A says later changes make 「本来の設計意図」 hard to see; B says 「後世の改変もまた、その建物が歩んできた歴史の一部である」."
         },
         "wrong": [
           {
-            "zh": "B反对去除，认为那会抹去「歴史の層」。",
-            "en": "B opposes removal, which would erase the 「歴史の層」."
+            "zh": "B说「たとえ推定が正確であっても」去掉改动也会抹掉历史层，并不同意去掉。",
+            "en": "B says removal erases history 「たとえ推定が正確であっても」, so B does not agree."
           },
           {
-            "zh": "两人的立场说反了。",
-            "en": "This reverses their positions."
+            "zh": "把两人的观点弄反了，而且A视为「証拠」的是当初的彩色，不是后世的改动。",
+            "en": "This reverses the two views; besides, what A calls evidence is the original paint, not the later changes."
           },
           null,
           {
-            "zh": "B明确说「たとえ推定が正確であっても」去除也会抹去历史。",
-            "en": "B says removal erases history 「たとえ推定が正確であっても」."
+            "zh": "A的部分说得通（覆盖当初彩色就是隐藏证据），但B主张保留现状、只做最小限度的修复，并不主张去掉改动。",
+            "en": "A's half fits (covering the original paint hides evidence), but B wants the present state kept with minimal work, not changes removed."
           }
         ]
       },
@@ -243,7 +243,7 @@
         "q": "Aは、修復された建物を「本物らしくない」と感じる人について、どのように述べているか。",
         "options": [
           "当初の姿を推定する技術が、まだ十分ではないからだ",
-          "鮮やかな色は、実際には当初の姿ではないからだ",
+          "復元された鮮やかな色が、実は当初の色とは違うからだ",
           "建物に刻まれた歴史の層が消されたことに、気づいているからだ",
           "古びた姿を見慣れているために、そう感じるにすぎない"
         ],
@@ -258,8 +258,8 @@
             "en": "A says the original can now be inferred 「かなりの精度で」."
           },
           {
-            "zh": "A认为鲜艳的色彩正是恢复了当初的样子。",
-            "en": "For A the vivid colour is the original look restored."
+            "zh": "A说调查技术能相当准确地推定当初的样子，并没有说复原的颜色不对。",
+            "en": "A says the original look can be estimated quite accurately; it never says the restored colours are wrong."
           },
           {
             "zh": "「歴史の層」是B的观点，A没有这么说。",
@@ -271,29 +271,29 @@
       {
         "q": "当初の姿を推定することについて、Bはどのように考えているか。",
         "options": [
-          "推定は覆されることもあるため、それをもとに今ある部分を取り除くのは取り返しがつかない",
-          "調査技術が進歩したので、ほぼ確実に推定できるようになった",
-          "推定が正確でありさえすれば、当初の姿に戻すべきだ",
-          "推定は不可能なので、修復そのものを行うべきではない"
+          "推定は後に覆りうるが、一度除いた部分は復元できない点で危うい",
+          "調査技術の進歩で、当初の姿はかなりの精度で推定できるようになった",
+          "推定が正確であるなら、それに基づいて当初の姿に戻してかまわない",
+          "推定に誤りがありうる以上、修復の作業そのものを控えるべきだ"
         ],
         "answer": 0,
         "why": {
-          "zh": "B：「推定はあくまで推定であり、新たな発見によって覆されることもある」，而「いったん取り除いた部分は二度と戻らない」。",
-          "en": "B: 「推定はあくまで推定であり…覆されることもある」, and 「いったん取り除いた部分は二度と戻らない」."
+          "zh": "B说「推定はあくまで推定であり、新たな発見によって覆されることもある」，而「いったん取り除いた部分は二度と戻らない」。",
+          "en": "B: 「推定はあくまで推定であり、新たな発見によって覆されることもある」, and 「いったん取り除いた部分は二度と戻らない」."
         },
         "wrong": [
           null,
           {
-            "zh": "这是A的说法，B强调推定可能被推翻。",
-            "en": "That is A's claim; B stresses inferences can be overturned."
+            "zh": "调查技术进步、能相当准确地推定，这是A的说法。",
+            "en": "Improved survey techniques giving accurate estimates is A's claim."
           },
           {
-            "zh": "B说即使推定准确，去除也会抹去历史。",
-            "en": "B says even an accurate inference doesn't justify erasing history."
+            "zh": "B说「たとえ推定が正確であっても」也会抹掉历史层。",
+            "en": "B says even 「たとえ推定が正確であっても」 removal erases layers of history."
           },
           {
-            "zh": "B没有说推定不可能，也没有反对修复，只主张动手限于「必要最小限」。",
-            "en": "B says neither that inference is impossible nor that restoration is wrong, only to keep it 「必要最小限」."
+            "zh": "B并不反对修复本身，只主张把动手的范围限于「必要最小限」。",
+            "en": "B doesn't oppose restoration; B wants work kept to 「必要最小限」."
           }
         ]
       }
@@ -316,7 +316,7 @@
           "読み終えて何を感じたかは、人に伝えなくてもかまわない",
           "読書感想文を書くことを苦痛に感じる子どもがいる",
           "感想を言葉にする経験は、ほかではなかなか得られない",
-          "先生が感想文を評価する基準を見直すべきだ"
+          "先生は感想文を評価する際の基準を見直すべきだ"
         ],
         "answer": 1,
         "why": {
@@ -342,57 +342,57 @@
       {
         "q": "Aが「皮肉というほかない」と述べているのは、どのようなことか。",
         "options": [
-          "本を好きにさせるための宿題が、かえって本を嫌いな子どもを生んでいること",
-          "大人が喜びそうな教訓を書いた感想文ほど、先生に高く評価されること",
-          "毎年批判されているのに、読書感想文の宿題がなくならないこと",
-          "夏休みに本を読む子どもが、年々減っていること"
+          "本好きにするための宿題が、逆に本嫌いの子を増やしていること",
+          "大人が喜びそうな教訓を書いた感想文ほど、先生に評価されること",
+          "毎年批判されながらも、感想文の宿題がいっこうになくならないこと",
+          "感想文の例文を、ネットからそのまま写して出す子どもがいること"
         ],
         "answer": 0,
         "why": {
-          "zh": "A：「本を好きにさせるための宿題が、かえって本嫌いを生んでいるのだとすれば、皮肉というほかない」。",
-          "en": "A: 「本を好きにさせるための宿題が、かえって本嫌いを生んでいる」 — that is the irony."
+          "zh": "「皮肉」的内容就在同一句：「本を好きにさせるための宿題が、かえって本嫌いを生んでいる」，目的和结果相反。",
+          "en": "The irony is in the same sentence: 「本を好きにさせるための宿題が、かえって本嫌いを生んでいる」 — the result defeats the purpose."
         },
         "wrong": [
           null,
           {
-            "zh": "A只说孩子会考虑怎样得到好评，并没有说这种读后感真的得到高分。",
-            "en": "A says children think about what will be praised, not that such reports actually get high marks."
+            "zh": "A只说孩子会考虑「何を書けば先生に評価されるか」，没有说加了教训的感想文真的得到高分。",
+            "en": "A only says children wonder 「何を書けば先生に評価されるか」; it doesn't say moralising essays really score higher."
           },
           {
-            "zh": "每年都受批评是B开头的话，不是A所说的讽刺。",
-            "en": "Yearly criticism is B's opening line, not A's irony."
+            "zh": "「毎年のように繰り返される」批评是B开头的话，A的「皮肉」不是指这个。",
+            "en": "Criticism 「毎年のように繰り返される」 is B's opening line; it isn't what A calls ironic."
           },
           {
-            "zh": "文中没有提到读书的孩子逐年减少。",
-            "en": "Nothing says fewer children read each year."
+            "zh": "照抄网上范文是A举的一个现象，但「皮肉」指的是为让孩子喜欢读书的作业反而造成讨厌读书。",
+            "en": "Copying model essays is one symptom A mentions; the irony is that homework meant to foster reading breeds dislike of it."
           }
         ]
       },
       {
         "q": "読書感想文の問題点について、Bはどのように考えているか。",
         "options": [
-          "子どもに苦痛を与えるので、課題そのものをなくすべきだ",
-          "子どもが本を楽しむより先に、先生の評価を気にしてしまう",
-          "長い文章を書かせすぎることに問題がある",
-          "課題そのものより、書き方を十分に教えないまま子どもに任せていることに問題がある"
+          "子どもに苦痛を与えるのだから、課題そのものをやめるべきだ",
+          "子どもが本を楽しむより先に、先生の評価を気にしてしまう点だ",
+          "感想を言葉にする経験が、ほかではなかなか得られない点だ",
+          "課題自体ではなく、書き方を教えずに子どもに任せきりにする点だ"
         ],
         "answer": 3,
         "why": {
-          "zh": "B：「問題は感想文という課題そのものより、書き方を教えないまま子どもに丸投げしていることにある」。",
-          "en": "B: 「問題は…課題そのものより、書き方を教えないまま子どもに丸投げしていることにある」."
+          "zh": "B说「問題は感想文という課題そのものより、書き方を教えないまま子どもに丸投げしていることにある」。",
+          "en": "B: 「問題は感想文という課題そのものより、書き方を教えないまま子どもに丸投げしていることにある」."
         },
         "wrong": [
           {
-            "zh": "这是A的主张；B说「課題をなくす前に、教え方を見直すべき」。",
-            "en": "That is A's position; B says 「課題をなくす前に、教え方を見直すべき」."
+            "zh": "B虽然理解孩子觉得痛苦，但主张「課題をなくす前に、教え方を見直すべき」；取消作业是A的立场。",
+            "en": "B sympathises with the pain but says 「課題をなくす前に、教え方を見直すべき」; scrapping it is A's position."
           },
           {
-            "zh": "这是A指出的问题，B没有提到。",
-            "en": "That is A's complaint; B doesn't raise it."
+            "zh": "在意老师的评价是A指出的问题，B没有这样说。",
+            "en": "Worrying about the teacher's grade is A's complaint, not B's."
           },
           {
-            "zh": "「短い文から書かせる」是B提出的指导方法之一，B并没有说问题在于篇幅长。",
-            "en": "「短い文から書かせる」 is one of B's teaching ideas; B doesn't say length is the problem."
+            "zh": "这是B认为写感想文的价值，不是问题点。",
+            "en": "This is the value B sees in the essay, not a problem."
           },
           null
         ]

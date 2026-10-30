@@ -202,7 +202,7 @@
       "lesson42#2"
     ],
     "difficulty": 2,
-    "stem": "年の せいか、[_] [_] [★] [_] 困って いる。",
+    "stem": "年の せいか、[★] [_] [_] [_] 困って いる。",
     "options": [
       "最近",
       "忘れ",
@@ -221,15 +221,16 @@
       "en": "Maybe it's my age, but I've become forgetful lately and it's a problem."
     },
     "why": {
-      "zh": "「忘れっぽい」变成连用形「忘れっぽく」＋「なって」（变得……）。★ 是「っぽく」。",
-      "en": "「忘れっぽい」 becomes 「忘れっぽく」 before 「なって」 (become forgetful). The ★ is 「っぽく」."
+      "zh": "「忘れっぽい」变成连用形「忘れっぽく」＋「なって」（变得……）。★ 在第一格，是「最近」。",
+      "en": "「忘れっぽい」 becomes 「忘れっぽく」 before 「なって」 (become forgetful). The ★ is the first slot: 「最近」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l42-007",
@@ -318,7 +319,7 @@
       "lesson42#3"
     ],
     "difficulty": 2,
-    "stem": "残業が 続いて [_] [_] [★] [_]、昨日は 早く 寝る ことに した。",
+    "stem": "残業が 続いて [★] [_] [_] [_]、昨日は 早く 寝る ことに した。",
     "options": [
       "疲れ",
       "気味",
@@ -337,15 +338,16 @@
       "en": "After days of overtime I was feeling a bit worn out, so I decided to go to bed early last night."
     },
     "why": {
-      "zh": "ます形词干「疲れ」＋「気味」＋「だった」＋「ので」。★ 是「だった」。",
-      "en": "Stem 「疲れ」 ＋ 「気味」 ＋ 「だった」 ＋ 「ので」. The ★ is 「だった」."
+      "zh": "ます形词干「疲れ」＋「気味」＋「だった」＋「ので」。★ 在第一格，是「疲れ」。",
+      "en": "Stem 「疲れ」 ＋ 「気味」 ＋ 「だった」 ＋ 「ので」. The ★ is the first slot: 「疲れ」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l42-010",
@@ -397,9 +399,9 @@
     "stem": "経済は（　）が、まだ 油断は できない。",
     "options": [
       "回復しつつある",
-      "回復するつつある",
-      "回復しつつない",
-      "回復してつつある"
+      "回復しがちだ",
+      "回復しっぱなしだ",
+      "回復しようがない"
     ],
     "answer": 0,
     "full": "経済は 回復しつつある が、まだ 油断は できない。",
@@ -414,16 +416,16 @@
     "wrong": [
       null,
       {
-        "zh": "「つつ」不接辞书形。",
-        "en": "「つつ」 doesn't follow the dictionary form."
+        "zh": "「がちだ」用于容易出现的坏倾向（休みがち），不用于“经济恢复”这种好的变化。",
+        "en": "「がちだ」 is for a tendency to something bad (休みがち), not for a recovery."
       },
       {
-        "zh": "没有「つつない」的说法，「つつある」是固定形式。",
-        "en": "There's no 「つつない」; the fixed form is 「つつある」."
+        "zh": "「っぱなし」是“一直保持某状态不管”（開けっぱなし），不说「回復しっぱなし」。",
+        "en": "「っぱなし」 is leaving something as it is (開けっぱなし); 「回復しっぱなし」 isn't said."
       },
       {
-        "zh": "「つつ」不接て形。",
-        "en": "「つつ」 doesn't follow the て-form."
+        "zh": "「ようがない」是“没办法……”，“没办法恢复，但还不能大意”前后矛盾。",
+        "en": "「ようがない」 is \"there's no way to\"; \"no way to recover, but don't relax yet\" contradicts itself."
       }
     ]
   },
@@ -434,7 +436,7 @@
       "lesson42#4"
     ],
     "difficulty": 2,
-    "stem": "若い 人が 興味を 持たなく なり、[_] [_] [★] [_]。",
+    "stem": "若い 人が 興味を 持たなく なり、[★] [_] [_] [_]。",
     "options": [
       "この 町の",
       "祭りは",
@@ -453,15 +455,16 @@
       "en": "Young people have lost interest, and the town's festival is gradually dying out."
     },
     "why": {
-      "zh": "「この町の祭りは」是主题，「消える」的ます形词干「消え」＋「つつある」。★ 是「消え」。",
-      "en": "「この町の祭りは」 is the topic; 「消え」 (stem of 消える) ＋ 「つつある」. The ★ is 「消え」."
+      "zh": "「この町の祭りは」是主题，「消える」的ます形词干「消え」＋「つつある」。★ 在第一格，是「この 町の」。",
+      "en": "「この町の祭りは」 is the topic; 「消え」 (stem of 消える) ＋ 「つつある」. The ★ is the first slot: 「この 町の」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l42-013",
@@ -550,7 +553,7 @@
       "lesson42#5"
     ],
     "difficulty": 2,
-    "stem": "いろいろな 対策を して いるが、[_] [_] [★] [_]。",
+    "stem": "いろいろな 対策を して いるが、[★] [_] [_] [_]。",
     "options": [
       "子供の",
       "数は",
@@ -569,15 +572,16 @@
       "en": "Despite all sorts of measures, the number of children just keeps falling."
     },
     "why": {
-      "zh": "「子供の数は」是主题，动词辞书形「減る」＋「一方だ」。★ 是「減る」。",
-      "en": "「子供の数は」 is the topic; dictionary form 「減る」 ＋ 「一方だ」. The ★ is 「減る」."
+      "zh": "「子供の数は」是主题，动词辞书形「減る」＋「一方だ」。★ 在第一格，是「子供の」。",
+      "en": "「子供の数は」 is the topic; dictionary form 「減る」 ＋ 「一方だ」. The ★ is the first slot: 「子供の」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l42-016",

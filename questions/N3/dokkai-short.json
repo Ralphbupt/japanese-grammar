@@ -13,10 +13,10 @@
       {
         "q": "このメールで一番伝えたいことは何か。",
         "options": [
-          "工事の間、会議には5階の会議室を前日までに予約して使ってほしい。",
-          "工事の音が大きいので、二週間は会議をしないでほしい。",
-          "5階の会議室は数が少ないので、3階の会議室を予約してほしい。",
-          "3階の会議室の工事について、総務部に意見を言ってほしい。"
+          "工事中は、5階の会議室を前日までに予約して使ってほしい。",
+          "工事の音が大きいので、二週間は会議室を使わないでほしい。",
+          "5階の会議室は数が少ないので、なるべく使わないでほしい。",
+          "3階の会議室を使いたい場合は、前日までに予約してほしい。"
         ],
         "answer": 0,
         "why": {
@@ -25,9 +25,9 @@
         },
         "wrong": [
           null,
-          { "zh": "施工的声音只是「なお」后面的补充，邮件并没有说不要开会，而是告诉大家去5楼开会。", "en": "The noise is only a side note after 「なお」; the email says to hold meetings on the 5th floor, not to cancel them." },
-          { "zh": "施工期间3楼会议室「使えません」，预约的是5楼。", "en": "The 3rd-floor rooms 「使えません」 during the work; it's the 5th floor you book." },
-          { "zh": "邮件里只有「ご了承ください」（请谅解），没有征求意见。", "en": "The email only asks for understanding (「ご了承ください」); it doesn't ask for opinions." }
+          { "zh": "施工的声音只是「なお」后面的补充，邮件并没有说不要用会议室，而是告诉大家去5楼开会。", "en": "The noise is only a side note after 「なお」; the email says to use the 5th-floor rooms, not to stop using rooms." },
+          { "zh": "5楼会议室少，所以要提前预约，但邮件正是请大家使用5楼。", "en": "The 5th floor has few rooms, so booking is required — but the email asks staff to use them." },
+          { "zh": "施工期间3楼会议室「使えません」，要预约的是5楼。", "en": "The 3rd-floor rooms 「使えません」 during the work; it's the 5th floor that must be booked." }
         ]
       }
     ]
@@ -45,10 +45,10 @@
       {
         "q": "筆者の言いたいことは何か。",
         "options": [
-          "気持ちを伝えたいときは、手で書いたほうが伝わることがある。",
-          "メールは便利だが、これからはすべて手紙で連絡するべきだ。",
+          "気持ちを伝えたいときは、手書きのほうが伝わることがある。",
+          "これからは、普段の連絡もできるだけ手紙でしたほうがいい。",
           "字が上手でない人は、手紙ではなくメールを使ったほうがいい。",
-          "お年寄りには、メールではなくはがきで連絡しなければならない。"
+          "お年寄りへの連絡には、メールより手書きのはがきのほうがいい。"
         ],
         "answer": 0,
         "why": {
@@ -57,9 +57,9 @@
         },
         "wrong": [
           null,
-          { "zh": "作者说「用事を伝えるだけならメールで十分だ」，并不主张全部改用手写。", "en": "He says 「用事を伝えるだけならメールで十分だ」, so he isn't saying to switch everything to letters." },
-          { "zh": "祖母的字有点发抖，却让作者很感动，说明字好不好并不重要。", "en": "His grandmother's shaky writing moved him, so handwriting quality isn't the issue." },
-          { "zh": "文中说的是自己收到祖母明信片的感受，没有说给老人联系必须用明信片。", "en": "He describes receiving his grandmother's card; he never says you must write to older people by post." }
+          { "zh": "作者说「用事を伝えるだけならメールで十分だ」，自己平时也用邮件。", "en": "He says 「用事を伝えるだけならメールで十分だ」 and uses email for everyday contact himself." },
+          { "zh": "祖母的字有点发抖，却让作者很感动，说明字好不好并不重要。", "en": "His grandmother's shaky handwriting moved him — neat writing isn't the point." },
+          { "zh": "文中说的是自己收到祖母明信片的感受，没有说给老人联系要用明信片。", "en": "He describes receiving his grandmother's card; he never says elderly people should be contacted by card." }
         ]
       }
     ]
@@ -143,9 +143,9 @@
       {
         "q": "筆者が一番言いたいことは何か。",
         "options": [
-          "何もしない時間は、むだではなく、必要な時間である。",
+          "何もしない時間も、次のために必要な時間である。",
           "予定がたくさんあることは、自慢してもいいことだ。",
-          "忙しい人ほど、仕事ができる人である。",
+          "予定が多い人ほど、会社にとって必要な人である。",
           "体を壊さないように、毎月一度は仕事を休むべきだ。"
         ],
         "answer": 0,
@@ -155,9 +155,9 @@
         },
         "wrong": [
           null,
-          { "zh": "以日程多为荣是作者「以前」的想法，后来已经改变了。", "en": "Being proud of a full schedule was his view 「以前」 (before), and it changed." },
-          { "zh": "文中没有这样说；作者反而发现自己不在公司也照样运转。", "en": "Nothing says this; he found the company ran fine without him." },
-          { "zh": "休一个月是因为生病，文中没有主张每月休一次。", "en": "His month off was due to illness; he never proposes taking a day off every month." }
+          { "zh": "以日程多为荣是作者「以前」的想法，后来已经改变了。", "en": "Being proud of a full schedule was how he felt 「以前」; he has changed his mind." },
+          { "zh": "正相反，作者发现自己不在公司也照样运转。", "en": "The opposite: he found the company ran fine without him." },
+          { "zh": "休一个月是因为生病，文中没有主张每月休一次。", "en": "He was off for a month because he got ill; he doesn't propose a day off every month." }
         ]
       }
     ]
@@ -176,15 +176,15 @@
       {
         "q": "6月10日も11日も出張で会社にいない人は、どうすればいいか。",
         "options": [
-          "人事部の佐藤さんに連絡する。",
-          "5月30日までに社内サイトから申し込む。",
-          "出張から戻ってから、本社7階の大会議室へ行く。",
+          "人事部の佐藤さんに連絡して、指定の病院で受ける。",
+          "5月30日までに、社内サイトからどちらかの日を申し込む。",
+          "出張から戻ってから、本社7階の大会議室で受ける。",
           "自分で近くの病院を選んで、健康診断を受ける。"
         ],
         "answer": 0,
         "why": {
-          "zh": "两天都不方便的人可以去指定医院检查，「その場合は、人事部の佐藤まで連絡してください」。",
-          "en": "Those who can make neither day can use a designated hospital — 「その場合は、人事部の佐藤まで連絡してください」."
+          "zh": "两天都不方便的人可以去公司指定的医院检查，「その場合は、人事部の佐藤まで連絡してください」。",
+          "en": "Anyone who can make neither day can go to a company-designated hospital — 「その場合は、人事部の佐藤まで連絡してください」."
         },
         "wrong": [
           null,
@@ -208,10 +208,10 @@
       {
         "q": "筆者の言いたいことは何か。",
         "options": [
-          "口コミは点数だけでなく、内容を読んで自分で判断したほうがいい。",
-          "口コミは当てにならないので、参考にしないほうがいい。",
-          "評価の低い店のほうが、実はおいしいことが多い。",
-          "店員の態度が悪い店には、行かないほうがいい。"
+          "口コミは点数より、書かれている内容で判断したほうがいい。",
+          "口コミの点数は当てにならないので、参考にしないほうがいい。",
+          "評価の低い店でも、味についての不満は少ないことが多い。",
+          "店員の態度が悪い店は、味がよくても行かないほうがいい。"
         ],
         "answer": 0,
         "why": {
@@ -220,9 +220,9 @@
         },
         "wrong": [
           null,
-          { "zh": "作者自己「よく見る」，也建议去读评价的内容，并不是说不要参考。", "en": "He says he looks at them often and recommends reading them, not ignoring them." },
-          { "zh": "拉面店只是一个例子，作者没有说评分低的店大多好吃。", "en": "The ramen shop is one example; he never claims low-rated places are usually better." },
-          { "zh": "作者去的店被评「店員の態度が悪い」，可他觉得很好吃，并没有说不要去。", "en": "The shop he liked was criticised for rude staff; he doesn't say to avoid such places." }
+          { "zh": "作者自己「よく見る」，也建议去读评价的内容，并不是说不要参考。", "en": "He reads reviews himself (「よく見る」) and suggests reading what they say — not ignoring them." },
+          { "zh": "拉面店只是一个例子，作者没有说低分店大多对味道没有不满。", "en": "The ramen shop is one example; he doesn't claim low-rated shops usually have few complaints about taste." },
+          { "zh": "作者去的店被评「店員の態度が悪い」，可他觉得很好吃，并没有说不要去。", "en": "His shop was rated 「店員の態度が悪い」, yet he loved it; he doesn't say to avoid such shops." }
         ]
       }
     ]

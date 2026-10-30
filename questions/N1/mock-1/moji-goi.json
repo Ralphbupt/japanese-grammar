@@ -469,14 +469,15 @@
   },
   {
     "id": "n1-m1-014",
+    "rev": 2,
     "type": "iikae",
     "difficulty": 2,
     "stem": "連日同じような問い合わせが続き、担当者は<<辟易していた>>。",
     "options": [
-      "担当者は感心していた。",
-      "担当者は腹を立てていた。",
-      "担当者は慌てていた。",
-      "担当者はうんざりしていた。"
+      "感心していた",
+      "腹を立てていた",
+      "戸惑っていた",
+      "うんざりしていた"
     ],
     "answer": 3,
     "tr": {
@@ -484,35 +485,36 @@
       "en": "With the same kind of inquiry coming in day after day, the person in charge was fed up."
     },
     "why": {
-      "zh": "「辟易する」是“厌烦、受不了”，等于「うんざりする」。",
-      "en": "「辟易する」 means to be sick of something — 「うんざりする」."
+      "zh": "「辟易する」＝厌烦、受不了，即「うんざりする」。",
+      "en": "「辟易する」 is to be fed up — 「うんざりする」."
     },
     "wrong": [
       {
-        "zh": "「感心」是“佩服”，和厌烦相反。",
-        "en": "「感心」 is admiration, the opposite."
+        "zh": "「感心する」是佩服，与厌烦无关。",
+        "en": "「感心する」 is being impressed."
       },
       {
-        "zh": "「腹を立てる」是“生气、发火”，「辟易」是厌烦、腻烦，不是发怒。",
-        "en": "「腹を立てる」 is getting angry; 「辟易」 is weariness, not anger."
+        "zh": "「腹を立てる」是生气，「辟易」是腻烦、吃不消，不一定发火。",
+        "en": "「腹を立てる」 is anger; 「辟易」 is weariness, not necessarily anger."
       },
       {
-        "zh": "「慌てる」是“慌张”，和“厌烦”意思不同。",
-        "en": "「慌てる」 is being flustered, not fed up."
+        "zh": "「戸惑う」是不知所措，同样的询问反复来，不会让人困惑，而是让人厌烦。",
+        "en": "「戸惑う」 is bewilderment; the same repeated enquiries tire you rather than confuse you."
       },
       null
     ]
   },
   {
     "id": "n1-m1-015",
+    "rev": 2,
     "type": "iikae",
     "difficulty": 2,
     "stem": "開館初日、会場には<<おびただしい>>数の人が詰めかけた。",
     "options": [
-      "会場には予想より少ない人が詰めかけた。",
-      "会場には非常に多くの人が詰めかけた。",
-      "会場にはさまざまな国の人が詰めかけた。",
-      "会場には興奮した人が詰めかけた。"
+      "予想外の",
+      "膨大な",
+      "まとまった",
+      "一定の"
     ],
     "answer": 1,
     "tr": {
@@ -520,35 +522,36 @@
       "en": "On opening day an enormous crowd packed the venue."
     },
     "why": {
-      "zh": "「おびただしい」是“数量极多”，等于「非常に多い」。",
-      "en": "「おびただしい」 means vast in number — 「非常に多い」."
+      "zh": "「おびただしい」＝数量极多，即「膨大な」。",
+      "en": "「おびただしい」 is enormous in number — 「膨大な」."
     },
     "wrong": [
       {
-        "zh": "意思相反，「おびただしい」是多。",
-        "en": "The opposite: 「おびただしい」 means many."
+        "zh": "「予想外」是出乎意料，不一定多。",
+        "en": "「予想外の」 is unexpected, not necessarily huge."
       },
       null,
       {
-        "zh": "「おびただしい」说的是数量，不是种类。",
-        "en": "「おびただしい」 is about number, not variety."
+        "zh": "「まとまった数」是“相当数量、成批的”，程度远不及「おびただしい」。",
+        "en": "「まとまった数」 is a fair number, far short of 「おびただしい」."
       },
       {
-        "zh": "「おびただしい」不表示情绪。",
-        "en": "「おびただしい」 says nothing about mood."
+        "zh": "「一定の」是一定程度的、固定的，没有“极多”的意思。",
+        "en": "「一定の」 is a certain, fixed amount — not huge."
       }
     ]
   },
   {
     "id": "n1-m1-016",
+    "rev": 2,
     "type": "iikae",
     "difficulty": 3,
     "stem": "大臣の発言は<<物議を醸した>>。",
     "options": [
-      "大臣の発言は、多くの人の間で議論を呼んだ。",
-      "大臣の発言は、多くの人に支持された。",
-      "大臣の発言は、ほとんど注目されなかった。",
-      "大臣の発言は、すぐに取り消された。"
+      "論議を呼んだ",
+      "支持を集めた",
+      "失笑を買った",
+      "注目を浴びた"
     ],
     "answer": 0,
     "tr": {
@@ -556,35 +559,36 @@
       "en": "The minister's remark caused a controversy."
     },
     "why": {
-      "zh": "「物議を醸す」是“引起社会上的议论、争议”，即「多くの人の間で議論を呼んだ」。",
-      "en": "「物議を醸す」 is to stir up public controversy — 「多くの人の間で議論を呼んだ」."
+      "zh": "「物議を醸す」＝引起社会上的议论、争议，即「論議を呼ぶ」。",
+      "en": "「物議を醸す」 is to stir controversy — 「論議を呼ぶ」."
     },
     "wrong": [
       null,
       {
-        "zh": "「物議」是议论、批评，不是“受到支持”。",
-        "en": "「物議」 is controversy, not support."
+        "zh": "「支持を集める」是得到支持，没有争议的意思。",
+        "en": "「支持を集める」 is winning support, not controversy."
       },
       {
-        "zh": "“没受到关注”和“引起争议”相反。",
-        "en": "Going unnoticed is the opposite of stirring controversy."
+        "zh": "「失笑を買う」是被人嘲笑，不是引起争论。",
+        "en": "「失笑を買う」 is being laughed at, not debated."
       },
       {
-        "zh": "「物議を醸す」不包含“撤回”的意思。",
-        "en": "「物議を醸す」 says nothing about a retraction."
+        "zh": "「注目を浴びる」只是受到关注，不一定有争议。",
+        "en": "「注目を浴びる」 is just attracting attention, not dispute."
       }
     ]
   },
   {
     "id": "n1-m1-017",
+    "rev": 2,
     "type": "iikae",
     "difficulty": 2,
     "stem": "長年の取引先からの頼みなので、<<むげに>>断るわけにもいかない。",
     "options": [
-      "理由を説明しないまま断るわけにもいかない。",
-      "今すぐにその場で断るわけにもいかない。",
-      "相手の気持ちを考えずに冷たく断るわけにもいかない。",
-      "電話やメールだけで断るわけにもいかない。"
+      "遠回しに",
+      "その場で",
+      "冷たく",
+      "改めて"
     ],
     "answer": 2,
     "tr": {
@@ -592,35 +596,36 @@
       "en": "Since it's a request from a long-standing client, I can't just turn it down flat."
     },
     "why": {
-      "zh": "「むげに」（無下に）是“不考虑对方心情、冷淡地（拒绝）”，即「相手の気持ちを考えずに冷たく」。",
-      "en": "「むげに」 means curtly, without regard for the other's feelings — 「相手の気持ちを考えずに冷たく」."
+      "zh": "「むげに」＝不顾对方情面、冷淡地，即「冷たく」。",
+      "en": "「むげに」 is flatly, without regard for the other person — 「冷たく」."
     },
     "wrong": [
       {
-        "zh": "「むげに」说的是态度冷淡，不是“不说明理由”。",
-        "en": "「むげに」 is about coldness, not about giving no reason."
+        "zh": "「遠回しに」是委婉地，正好是顾及情面的做法。",
+        "en": "「遠回しに」 is indirectly — the considerate way, not 「むげに」."
       },
       {
-        "zh": "「むげに」不表示时间上的“马上”。",
-        "en": "「むげに」 isn't about timing."
+        "zh": "「その場で」是当场，说的是时间，不是态度。",
+        "en": "「その場で」 is on the spot — timing, not manner."
       },
       null,
       {
-        "zh": "「むげに」和拒绝的手段无关。",
-        "en": "「むげに」 has nothing to do with the means of refusing."
+        "zh": "「改めて」是重新、另找时间，与态度无关。",
+        "en": "「改めて」 is again, at another time — not about manner."
       }
     ]
   },
   {
     "id": "n1-m1-018",
+    "rev": 2,
     "type": "iikae",
     "difficulty": 2,
     "stem": "専門家たちの予想は、<<ことごとく>>外れた。",
     "options": [
-      "専門家たちの予想は、大きく外れた。",
-      "専門家たちの予想は、意外にも外れた。",
-      "専門家たちの予想は、半分ほど外れた。",
-      "専門家たちの予想は、一つ残らず外れた。"
+      "大きく",
+      "意外にも",
+      "おおむね",
+      "すべて"
     ],
     "answer": 3,
     "tr": {
@@ -628,35 +633,36 @@
       "en": "The experts' predictions were wrong without exception."
     },
     "why": {
-      "zh": "「ことごとく」是“全部、一个不剩”，即「一つ残らず」。",
-      "en": "「ことごとく」 means every single one — 「一つ残らず」."
+      "zh": "「ことごとく」＝全部、无一例外，即「すべて」。",
+      "en": "「ことごとく」 is every single one — 「すべて」."
     },
     "wrong": [
       {
-        "zh": "「ことごとく」说的是“全部”，不是偏差的程度。",
-        "en": "「ことごとく」 is about how many, not how far off."
+        "zh": "「大きく外れた」是偏差大，「ことごとく」说的是数量上全部。",
+        "en": "「大きく」 is by a wide margin; 「ことごとく」 is about all of them."
       },
       {
-        "zh": "「ことごとく」没有“出乎意料”的意思。",
-        "en": "「ことごとく」 doesn't mean unexpectedly."
+        "zh": "「意外にも」是出乎意料，不表示全部。",
+        "en": "「意外にも」 is unexpectedly, not all."
       },
       {
-        "zh": "“一半”和“全部”意思不同。",
-        "en": "Half is not all."
+        "zh": "「おおむね」是大致、大部分，有例外，「ことごとく」没有例外。",
+        "en": "「おおむね」 is mostly, with exceptions; 「ことごとく」 has none."
       },
       null
     ]
   },
   {
     "id": "n1-m1-019",
+    "rev": 2,
     "type": "iikae",
     "difficulty": 3,
     "stem": "調査団は被災地の状況を<<つぶさに>>見て回った。",
     "options": [
-      "調査団は被災地の状況を急いで見て回った。",
-      "調査団は被災地の状況を細かいところまで詳しく見て回った。",
-      "調査団は被災地の状況を何度も繰り返し見て回った。",
-      "調査団は被災地の状況を住民と一緒に見て回った。"
+      "急いで",
+      "詳しく",
+      "繰り返し",
+      "ひそかに"
     ],
     "answer": 1,
     "tr": {
@@ -664,22 +670,22 @@
       "en": "The investigation team went round the disaster area examining the situation in detail."
     },
     "why": {
-      "zh": "「つぶさに」是“详尽地、仔细地”，即「細かいところまで詳しく」。",
-      "en": "「つぶさに」 means minutely, in full detail — 「細かいところまで詳しく」."
+      "zh": "「つぶさに」＝详尽地、一一地，即「詳しく」。",
+      "en": "「つぶさに」 is in full detail — 「詳しく」."
     },
     "wrong": [
       {
-        "zh": "“匆忙”和“详尽”相反。",
-        "en": "In a hurry is the opposite of in detail."
+        "zh": "「急いで」是匆忙，与「つぶさに」的仔细相反方向。",
+        "en": "「急いで」 is hurriedly, not thoroughly."
       },
       null,
       {
-        "zh": "「つぶさに」说的是细致程度，不是次数。",
-        "en": "「つぶさに」 is about thoroughness, not repetition."
+        "zh": "「繰り返し」是反复，说的是次数，不是仔细程度。",
+        "en": "「繰り返し」 is repeatedly — frequency, not detail."
       },
       {
-        "zh": "「つぶさに」不表示和谁一起。",
-        "en": "「つぶさに」 says nothing about who you go with."
+        "zh": "「ひそかに」是偷偷地，与详尽无关。",
+        "en": "「ひそかに」 is secretly, unrelated to detail."
       }
     ]
   },
@@ -761,8 +767,8 @@
     "difficulty": 2,
     "stem": "<<手薄>>",
     "options": [
-      "この紙は手薄なので、強く引っ張るとすぐに破れてしまう。",
-      "祖母の料理は手薄な味付けで、素材の味がよく分かる。",
+      "彼はまだ経験が手薄なので、大きな仕事は任せられない。",
+      "この地域は雨が手薄で、夏はよく水不足になる。",
       "都会では、隣近所との手薄な付き合いが当たり前になった。",
       "年末は警備が手薄になりがちなので、注意が必要だ。"
     ],
@@ -777,12 +783,12 @@
     },
     "wrong": [
       {
-        "zh": "纸张薄用「薄い」，「手薄」不表示厚度。",
-        "en": "Thin paper is 「薄い」; 「手薄」 isn't about thickness."
+        "zh": "经验不足应该用「浅い」；「手薄」是人手、防备等不够。",
+        "en": "Little experience is 「経験が浅い」; 「手薄」 is for staff or defences being thin."
       },
       {
-        "zh": "口味清淡用「薄味」「あっさりした」，「手薄」不形容味道。",
-        "en": "A light seasoning is 「薄味」 or 「あっさりした」; 「手薄」 isn't about taste."
+        "zh": "雨少应该用「少ない」；「手薄」是人员、物资配置不足。",
+        "en": "Little rain is 「少ない」; 「手薄」 is for people or resources being stretched."
       },
       {
         "zh": "人际关系淡薄用「希薄な」，「手薄」不用于人际关系。",
@@ -797,10 +803,10 @@
     "difficulty": 2,
     "stem": "<<おろそか>>",
     "options": [
-      "式は、おろそかな雰囲気の中で執り行われた。",
+      "この机はおろそかな作りで、一年もたたないうちにがたがたになった。",
       "部活動に夢中になるあまり、勉強がおろそかになってしまった。",
-      "高原には、おろそかな風が吹いていて気持ちがいい。",
-      "この店では、新鮮な野菜をおろそかな値段で売っている。"
+      "彼はいつもおろそかな服装で、髪もぼさぼさだ。",
+      "時間がなかったので、おろそかに朝食を済ませた。"
     ],
     "answer": 1,
     "tr": {
@@ -813,17 +819,17 @@
     },
     "wrong": [
       {
-        "zh": "庄严的仪式用「厳か（おごそか）な」，「おろそか」字形读音相近，意思相反。",
-        "en": "A solemn ceremony is 「厳か（おごそか）な」 — a look-alike with the opposite sense."
+        "zh": "做工粗糙应该用「粗末な」「雑な」；「おろそか」是对该做的事不认真、敷衍。",
+        "en": "Shoddy workmanship is 「粗末」 or 「雑」; 「おろそか」 is neglecting what one should do."
       },
       null,
       {
-        "zh": "风清爽用「さわやかな」，「おろそか」不形容风。",
-        "en": "A refreshing breeze is 「さわやかな」; 「おろそか」 isn't for wind."
+        "zh": "衣着邋遢应该用「だらしない」；「おろそか」不形容外表。",
+        "en": "Sloppy clothes are 「だらしない」; 「おろそか」 doesn't describe appearance."
       },
       {
-        "zh": "价格实惠用「手頃な」，「おろそか」没有便宜的意思。",
-        "en": "A reasonable price is 「手頃な」; 「おろそか」 doesn't mean cheap."
+        "zh": "简单吃一下应该用「簡単に」「手早く」；「おろそか」是怠慢该做的事。",
+        "en": "A quick breakfast is 「簡単に」 or 「手早く」; 「おろそか」 is neglecting a duty."
       }
     ]
   },

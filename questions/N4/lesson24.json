@@ -88,7 +88,7 @@
       "lesson24#1"
     ],
     "difficulty": 1,
-    "stem": "友だちが [_] [_] [★] [_] おこう。",
+    "stem": "友だちが [_] [_] [_] [★] おこう。",
     "options": [
       "片付けて",
       "来る",
@@ -108,15 +108,16 @@
       "en": "Let's tidy the room before my friend comes."
     },
     "why": {
-      "zh": "来る ＋ 前に ＋ 部屋を ＋ 片付けて ＋ おこう（ておく的意向形）。★ 在第三格，是「部屋を」。",
-      "en": "来る ＋ 前に ＋ 部屋を ＋ 片付けて ＋ おこう (volitional of ておく). The ★ is the third slot: 「部屋を」."
+      "zh": "来る ＋ 前に ＋ 部屋を ＋ 片付けて ＋ おこう（ておく的意向形）。★ 在第四格，是「片付けて」。",
+      "en": "来る ＋ 前に ＋ 部屋を ＋ 片付けて ＋ おこう (volitional of ておく). The ★ is the fourth slot: 「片付けて」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l24-004",
@@ -207,7 +208,7 @@
       "lesson24#2"
     ],
     "difficulty": 1,
-    "stem": "黒板に [_] [_] [★] [_]。",
+    "stem": "黒板に [_] [★] [_] [_]。",
     "options": [
       "書いて",
       "明日の",
@@ -227,15 +228,16 @@
       "en": "Tomorrow's schedule is written on the blackboard."
     },
     "why": {
-      "zh": "明日の ＋ 予定が ＋ 書いて ＋ あります：「Nが＋他动词て形＋ある」。★ 在第三格，是「書いて」。",
-      "en": "明日の ＋ 予定が ＋ 書いて ＋ あります: 「N が ＋ transitive て-form ＋ ある」. The ★ is the third slot: 「書いて」."
+      "zh": "明日の ＋ 予定が ＋ 書いて ＋ あります：「Nが＋他动词て形＋ある」。★ 在第二格，是「予定が」。",
+      "en": "明日の ＋ 予定が ＋ 書いて ＋ あります: 「N が ＋ transitive て-form ＋ ある」. The ★ is the second slot: 「予定が」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l24-007",
@@ -527,7 +529,7 @@
       "lesson24#5"
     ],
     "difficulty": 2,
-    "stem": "わたしは 10年前に [_] [_] [★] [_] 東京に 住んで います。",
+    "stem": "わたしは 10年前に [★] [_] [_] [_] 東京に 住んで います。",
     "options": [
       "以来",
       "日本へ",
@@ -547,14 +549,15 @@
       "en": "I came to Japan ten years ago and have lived in Tokyo ever since."
     },
     "why": {
-      "zh": "日本へ ＋ 来て ＋ 以来 ＋ ずっと ＋ 東京に住んでいます。★ 在第三格，是「以来」。",
-      "en": "日本へ ＋ 来て ＋ 以来 ＋ ずっと ＋ 東京に住んでいます. The ★ is the third slot: 「以来」."
+      "zh": "日本へ ＋ 来て ＋ 以来 ＋ ずっと ＋ 東京に住んでいます。★ 在第一格，是「日本へ」。",
+      "en": "日本へ ＋ 来て ＋ 以来 ＋ ずっと ＋ 東京に住んでいます. The ★ is the first slot: 「日本へ」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   }
 ]

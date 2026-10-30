@@ -125,8 +125,8 @@
     "difficulty": 2,
     "stem": "彼が寝る間も惜しんで働いたのは、ひとえに家族を（　）だった。",
     "options": [
-      "守るんがため",
-      "守らべく",
+      "守るべく",
+      "守らんばかり",
       "守らんがため",
       "守るとあって"
     ],
@@ -142,12 +142,12 @@
     },
     "wrong": [
       {
-        "zh": "「んがため」接ない形，不接辞书形，「守るんがため」是典型的错误接法。",
-        "en": "「んがため」 takes the ない-stem, not the dictionary form; 「守るんがため」 is the classic wrong form."
+        "zh": "「べく」只能修饰后面的动作（「守るべく働いた」），不能放在「〜のは〜だった」的句末。",
+        "en": "「べく」 modifies a following action; it can't end a 「〜のは〜だった」 sentence."
       },
       {
-        "zh": "「べく」接辞书形（守るべく），「守らべく」接法错误。",
-        "en": "「べく」 takes the dictionary form (守るべく); 「守らべく」 is malformed."
+        "zh": "「んばかり」是“几乎要……”，「家族を守らんばかりだった」意思不通。",
+        "en": "「んばかり」 is \"as if about to\"; 「守らんばかりだった」 makes no sense here."
       },
       null,
       {
@@ -622,41 +622,42 @@
   },
   {
     "id": "n1-l82-017",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson82#6"
     ],
     "difficulty": 1,
-    "stem": "大型の台風（　）、新幹線は終日運転を見合わせた。",
+    "stem": "大型の台風の接近（　）、新幹線は終日運転を見合わせた。",
     "options": [
       "にかこつけて",
-      "の接近により",
+      "に伴い",
       "をよそに",
-      "とあれば"
+      "にひきかえ"
     ],
     "answer": 1,
-    "full": "大型の台風の接近により、新幹線は終日運転を見合わせた。",
+    "full": "大型の台風の接近に伴い、新幹線は終日運転を見合わせた。",
     "tr": {
       "zh": "由于大型台风逼近，新干线全天停运。",
       "en": "Because a large typhoon was approaching, the shinkansen was suspended all day."
     },
     "why": {
-      "zh": "台风是电车停运的真正原因，用「により」说明客观原因。「にかこつけて」不能用于真正的原因。",
-      "en": "The typhoon is the real cause, so 「により」 states it. 「にかこつけて」 can't be used for a genuine cause."
+      "zh": "台风逼近是停运的真正原因，用「に伴い」（随着……）。「にかこつけて」只用于找借口，不用于真正的原因。",
+      "en": "The typhoon is the real cause of the suspension: 「に伴い」. 「にかこつけて」 is only for pretexts."
     },
     "wrong": [
       {
         "zh": "「にかこつけて」表示“以……为借口”，台风是真正的原因，新干线也不会找借口。",
-        "en": "「にかこつけて」 means using something as an excuse; the typhoon is the real cause."
+        "en": "「にかこつけて」 means using something as a pretext; the typhoon is a real cause."
       },
       null,
       {
         "zh": "「をよそに」是“不顾……照样进行”，可后项是停运，意思相反。",
-        "en": "「をよそに」 means carrying on regardless, but the trains stopped."
+        "en": "「をよそに」 is \"carrying on regardless\", but the trains stopped."
       },
       {
-        "zh": "「とあれば」是假定“如果是……”，与已经发生的停运不符。",
-        "en": "「とあれば」 is hypothetical, but the suspension already happened."
+        "zh": "「にひきかえ」是对比两个性质相反的事物，这里没有对比。",
+        "en": "「にひきかえ」 contrasts two opposite things; nothing is contrasted here."
       }
     ]
   },

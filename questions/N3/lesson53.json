@@ -164,10 +164,10 @@
     "difficulty": 2,
     "stem": "部下の 失礼な 態度を 見て、一言 注意（　）。",
     "options": [
-      "せずにはいられなかった",
-      "しずにはいられなかった",
-      "さずにはいられなかった",
-      "するずにはいられなかった"
+      "せずには いられなかった",
+      "しようが なかった",
+      "しっこなかった",
+      "しないで ほしかった"
     ],
     "answer": 0,
     "full": "部下の 失礼な 態度を 見て、一言 注意せずには いられなかった。",
@@ -176,22 +176,22 @@
       "en": "Seeing my subordinate's rude attitude, I couldn't help saying something to him."
     },
     "why": {
-      "zh": "「する」接「ずにはいられない」时变成「せず」：「注意せずにはいられない」。",
-      "en": "With 「ずにはいられない」, 「する」 becomes 「せず」: 「注意せずにはいられない」."
+      "zh": "看到无礼的态度，“忍不住说了一句”，用「ずにはいられない」；「する」变成「せずには」。",
+      "en": "Seeing the rude attitude, I couldn't stop myself saying something: 「ずにはいられない」, with する becoming せずには."
     },
     "wrong": [
       null,
       {
-        "zh": "「する」的ない形是「し（ない）」，但接「ず」时是特殊形「せず」，没有「しず」。",
-        "en": "「する」 is 「しない」, but before 「ず」 it's the special form 「せず」; 「しず」 doesn't exist."
+        "zh": "「しようがなかった」是“想注意也没办法”，可说话人是上司，完全可以说。",
+        "en": "「しようがなかった」 is \"there was no way to\", but as the boss the speaker certainly could."
       },
       {
-        "zh": "「さず」是「さす／さない」类动词的形式，「する」不这样变。",
-        "en": "「さず」 belongs to verbs like 「さす」; 「する」 doesn't conjugate that way."
+        "zh": "「っこない」是口语“不可能……”，一般不用过去形，意思也和“忍不住”相反。",
+        "en": "「っこない」 is casual \"no way that…\", rarely past tense, and the opposite of \"couldn't help it\"."
       },
       {
-        "zh": "「ず」要接在ない形词干后，辞书形「する」不能直接接「ず」。",
-        "en": "「ず」 attaches to the nai-stem, not the dictionary form 「する」."
+        "zh": "「しないでほしかった」是“希望（别人）不要说”，主语和意思都不对。",
+        "en": "「しないでほしかった」 is \"I wished (someone) wouldn't\"; wrong subject and wrong meaning."
       }
     ]
   },
@@ -202,7 +202,7 @@
       "lesson53#2"
     ],
     "difficulty": 1,
-    "stem": "彼は 困って いる 人を 見ると、[_] [_] [★] [_] 性格だ。",
+    "stem": "彼は 困って いる 人を 見ると、[★] [_] [_] [_] 性格だ。",
     "options": [
       "いられない",
       "かけ",
@@ -221,15 +221,16 @@
       "en": "He's the kind of person who can't help speaking up when he sees someone in trouble."
     },
     "why": {
-      "zh": "声を＋かけ（ない形词干）＋ずには＋いられない，整体修饰「性格」。★ 在第三格，是「ずには」。",
-      "en": "声を ＋ かけ (nai-stem) ＋ ずには ＋ いられない, modifying 「性格」. The ★ is the third slot: 「ずには」."
+      "zh": "声を＋かけ（ない形词干）＋ずには＋いられない，整体修饰「性格」。★ 在第一格，是「声を」。",
+      "en": "声を ＋ かけ (nai-stem) ＋ ずには ＋ いられない, modifying 「性格」. The ★ is the first slot: 「声を」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l53-007",
@@ -550,7 +551,7 @@
       "lesson53#5"
     ],
     "difficulty": 2,
-    "stem": "A「その 仕事、やりたくないの？」\nB「[_] [_] [★] [_] けど、少し 不安な んだ。」",
+    "stem": "A「その 仕事、やりたくないの？」\nB「[_] [★] [_] [_] けど、少し 不安な んだ。」",
     "options": [
       "わけじゃない",
       "やりたく",
@@ -569,15 +570,16 @@
       "en": "A: You don't want that job? B: It's not that I don't want to, I'm just a little nervous."
     },
     "why": {
-      "zh": "別に＋やりたく＋ない＋わけじゃない（并不是……）。★ 在第三格，是「ない」。",
-      "en": "別に ＋ やりたく ＋ ない ＋ わけじゃない (\"it's not that…\"). The ★ is the third slot: 「ない」."
+      "zh": "別に＋やりたく＋ない＋わけじゃない（并不是……）。★ 在第二格，是「やりたく」。",
+      "en": "別に ＋ やりたく ＋ ない ＋ わけじゃない (\"it's not that…\"). The ★ is the second slot: 「やりたく」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l53-016",
@@ -586,36 +588,36 @@
       "lesson53#6"
     ],
     "difficulty": 1,
-    "stem": "父は いつも 仕事が 忙しくて、家族で 旅行する ことは（　）。",
+    "stem": "父は いつも 仕事が 忙しくて、家族で 旅行する ことは（　）。最後に 行ったのは 五年前だ。",
     "options": [
       "めったにない",
-      "めったにある",
-      "たまにない",
-      "決してある"
+      "よく ある",
+      "ときどき ある",
+      "一度も ない"
     ],
     "answer": 0,
-    "full": "父は いつも 仕事が 忙しくて、家族で 旅行する ことは めったに ない。",
+    "full": "父は いつも 仕事が 忙しくて、家族で 旅行する ことは めったに ない。最後に 行ったのは 五年前だ。",
     "tr": {
-      "zh": "父亲工作总是很忙，全家一起旅行的机会很少。",
-      "en": "My father is always busy with work, so we rarely travel as a family."
+      "zh": "父亲工作总是很忙，全家一起旅行的机会很少。上一次去已经是五年前了。",
+      "en": "My father is always busy with work, so we rarely travel as a family. The last time was five years ago."
     },
     "why": {
-      "zh": "「めったに」必须和否定搭配，“很少有”是「めったにない」。",
-      "en": "「めったに」 must pair with a negative: \"rarely happens\" is 「めったにない」."
+      "zh": "“总是很忙”“上次是五年前”，说明很少有，用「めったにない」（很少）。",
+      "en": "\"Always busy\" and \"the last time was five years ago\" mean it hardly ever happens: 「めったにない」."
     },
     "wrong": [
       null,
       {
-        "zh": "「めったに」不能和肯定「ある」一起用。",
-        "en": "「めったに」 can't go with the affirmative 「ある」."
+        "zh": "「よくある」是“经常有”，和“总是很忙”“五年前”矛盾。",
+        "en": "「よくある」 is \"often\", which contradicts \"always busy\" and \"five years ago\"."
       },
       {
-        "zh": "「たまに」是“偶尔（有）”，要接肯定，「たまにない」意思不通。",
-        "en": "「たまに」 (\"occasionally\") takes an affirmative; 「たまにない」 makes no sense."
+        "zh": "「ときどきある」是“有时有”，五年才一次不能说“有时”。",
+        "en": "「ときどきある」 is \"sometimes\"; once in five years isn't sometimes."
       },
       {
-        "zh": "「決して」必须接否定，「決してある」不成立。",
-        "en": "「決して」 needs a negative; 「決してある」 is ungrammatical."
+        "zh": "「一度もない」是“一次也没有”，可后面说五年前去过。",
+        "en": "「一度もない」 is \"never once\", but they went five years ago."
       }
     ]
   },

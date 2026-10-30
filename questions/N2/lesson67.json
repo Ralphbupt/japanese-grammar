@@ -11,7 +11,7 @@
       "にしても",
       "にしては",
       "としては",
-      "につれて"
+      "からには"
     ],
     "answer": 0,
     "full": "旅行に行くにしても行かないにしても、早めに連絡してください。",
@@ -34,8 +34,8 @@
         "en": "「としては」 follows nouns to mark a standpoint, not the verb 「行かない」."
       },
       {
-        "zh": "「につれて」是“随着……变化”，“去不去”不是变化。",
-        "en": "「につれて」 means \"as… changes\"; going or not isn't a change."
+        "zh": "「からには」是“既然……就……”，前半已用「行くにしても」，后面要用同一句型「〜にしても」并列。",
+        "en": "「からには」 means 'now that'; the 「行くにしても」 frame needs a matching 「〜にしても」."
       }
     ]
   },
@@ -126,8 +126,8 @@
     "options": [
       "はともかく",
       "をめぐって",
-      "を中心に",
-      "に応じて"
+      "はおろか",
+      "にかけては"
     ],
     "answer": 0,
     "full": "見た目はともかく、この店の料理は味がいい。",
@@ -146,12 +146,12 @@
         "en": "「をめぐって」 needs a dispute or debate to follow; there isn't one."
       },
       {
-        "zh": "「を中心に」是“以……为中心”，“以外观为中心味道好”说不通。",
-        "en": "「を中心に」 means \"centred on\"; \"centred on looks, it tastes good\" makes no sense."
+        "zh": "「はおろか」是“……就不用说了，连……也（不）”，后面一般接否定，这里是“味道好”。",
+        "en": "「はおろか」 ('let alone') is followed by a negative; the sentence says the taste is good."
       },
       {
-        "zh": "「に応じて」是“根据……相应地”，“根据外观味道好”说不通。",
-        "en": "「に応じて」 means \"depending on\"; taste doesn't change according to looks here."
+        "zh": "「にかけては」是“在……方面（最擅长）”，“在外观方面，味道好”前后矛盾。",
+        "en": "「にかけては」 means 'when it comes to'; 'when it comes to looks, the taste is good' contradicts itself."
       }
     ]
   },
@@ -166,8 +166,8 @@
     "options": [
       "はともかく",
       "をめぐって",
-      "を中心に",
-      "に応じて"
+      "はもとより",
+      "次第で"
     ],
     "answer": 0,
     "full": "成功するかどうかはともかく、まずは挑戦してみることが大切だ。",
@@ -186,12 +186,12 @@
         "en": "「をめぐって」 needs a debate to follow; \"over whether you succeed, trying is important\" doesn't work."
       },
       {
-        "zh": "「を中心に」是“以……为中心”，不接「かどうか」。",
-        "en": "「を中心に」 (\"centred on\") doesn't follow 「かどうか」."
+        "zh": "「はもとより」是“……自不必说，……也”，后面要接同方向的追加，这里是把成败放在一边。",
+        "en": "「はもとより」 ('not to mention') needs a matching addition; here success is set aside."
       },
       {
-        "zh": "「に応じて」是“根据……相应地”，“根据能否成功来挑战”和“首先试试”的意思不符。",
-        "en": "「に応じて」 means \"according to\", which clashes with \"try first anyway\"."
+        "zh": "「次第で」是“取决于……”，“先尝试很重要”不取决于能否成功。",
+        "en": "「次第で」 means 'depending on'; trying first doesn't depend on whether you succeed."
       }
     ]
   },
@@ -242,8 +242,8 @@
     "options": [
       "をめぐって",
       "を中心に",
-      "を問わず",
-      "に応じて"
+      "をもとに",
+      "にわたって"
     ],
     "answer": 0,
     "full": "父親が亡くなった後、遺産をめぐって、兄弟の間で争いが起きた。",
@@ -262,12 +262,12 @@
         "en": "「を中心に」 means \"centred on\" and doesn't mark what a dispute is about."
       },
       {
-        "zh": "「を問わず」是“不论……”，“不论遗产发生争执”说不通。",
-        "en": "「を問わず」 means \"regardless of\"; that makes no sense here."
+        "zh": "「をもとに」是“以……为基础（做出某物）”，争执不是以遗产为材料做出来的。",
+        "en": "「をもとに」 means 'based on (to make something)'; a dispute isn't made from the inheritance."
       },
       {
-        "zh": "「に応じて」是“根据……相应地”，“根据遗产发生争执”说不通。",
-        "en": "「に応じて」 means \"according to\"; that doesn't describe what the dispute is over."
+        "zh": "「にわたって」接时间或范围（「三日にわたって」），不能接「遺産」这种争议对象。",
+        "en": "「にわたって」 follows a span of time or space, not the object of a dispute."
       }
     ]
   },
@@ -282,8 +282,8 @@
     "options": [
       "をめぐる",
       "をめぐって",
-      "を中心に",
-      "に応じて"
+      "に関して",
+      "にわたって"
     ],
     "answer": 0,
     "full": "この土地の開発をめぐる問題は、何年たってもまだ解決していない。",
@@ -302,12 +302,12 @@
         "en": "「をめぐって」 links to a predicate and can't modify the noun 「問題」 directly."
       },
       {
-        "zh": "「を中心に」是连用形，不能直接修饰名词，要说「を中心とした」。",
-        "en": "「を中心に」 can't modify a noun directly (that would be 「を中心とした」)."
+        "zh": "「に関して」是连用形，修饰后面的名词「問題」时要用「に関する」。",
+        "en": "「に関して」 modifies a verb; before the noun 「問題」 it would have to be 「に関する」."
       },
       {
-        "zh": "「に応じて」不能直接修饰名词，要说「に応じた」；意思也不符。",
-        "en": "「に応じて」 can't modify a noun directly (that would be 「に応じた」), and the meaning doesn't fit."
+        "zh": "「にわたって」接时间或范围，而且是连用形，不能修饰名词「問題」。",
+        "en": "「にわたって」 follows a span and modifies verbs, not the noun 「問題」."
       }
     ]
   },
@@ -358,8 +358,8 @@
     "options": [
       "を問わず",
       "をめぐって",
-      "を中心に",
-      "に反して"
+      "に応じて",
+      "によって"
     ],
     "answer": 0,
     "full": "この仕事は経験の有無を問わず、どなたでも応募できます。",
@@ -378,12 +378,12 @@
         "en": "「をめぐって」 means \"over (a dispute)\" — it makes no sense in a job ad."
       },
       {
-        "zh": "「を中心に」是“以……为中心”，和「どなたでも」矛盾。",
-        "en": "「を中心に」 means \"centred on\", which contradicts 「どなたでも」."
+        "zh": "「に応じて」是“根据……而变化”，和后面「どなたでも」（谁都可以）矛盾。",
+        "en": "「に応じて」 means 'varying with', which clashes with 「どなたでも」 (anyone)."
       },
       {
-        "zh": "「に反して」是“与……相反”，“与有无经验相反”说不通。",
-        "en": "「に反して」 means \"contrary to\"; that makes no sense with 「有無」."
+        "zh": "「によって」是“根据……而不同”，和「どなたでも」矛盾。",
+        "en": "「によって」 means 'depending on', which clashes with 「どなたでも」."
       }
     ]
   },
@@ -398,8 +398,8 @@
     "options": [
       "を問わず",
       "に応じて",
-      "につれて",
-      "はともかく"
+      "をもとに",
+      "に限って"
     ],
     "answer": 0,
     "full": "駅前のこのコンビニは、昼夜を問わず営業している。",
@@ -418,43 +418,44 @@
         "en": "「に応じて」 means \"according to\"; \"open according to day and night\" doesn't work."
       },
       {
-        "zh": "「につれて」是“随着……变化”，「昼夜」不是持续变化的事物。",
-        "en": "「につれて」 means \"as… changes\"; 「昼夜」 isn't a changing quantity."
+        "zh": "「をもとに」是“以……为依据”，“以昼夜为依据营业”说不通。",
+        "en": "「をもとに」 means 'based on'; 'open based on day and night' makes no sense."
       },
       {
-        "zh": "「はともかく」是“暂且不论”，“昼夜暂且不论，在营业”说不通。",
-        "en": "「はともかく」 means \"setting aside\"; that makes no sense with 「昼夜」."
+        "zh": "「に限って」是“偏偏/唯独……”，和全天营业的意思相反。",
+        "en": "「に限って」 means 'only / of all times', the opposite of being open around the clock."
       }
     ]
   },
   {
     "id": "n2-l67-012",
+    "rev": 2,
     "type": "narabe",
     "refs": [
       "lesson67#4"
     ],
     "difficulty": 2,
-    "stem": "このイベントには、 [_] [★] [_] [_] 参加できます。",
+    "stem": "このイベントには、 [_] [_] [★] [_] 誰でも参加できます。",
     "options": [
-      "国籍を",
+      "国籍",
+      "問わず",
       "年齢や",
-      "誰でも",
-      "問わず"
+      "などを"
     ],
     "order": [
-      1,
+      2,
       0,
       3,
-      2
+      1
     ],
-    "full": "このイベントには、年齢や国籍を問わず誰でも参加できます。",
+    "full": "このイベントには、年齢や国籍などを問わず誰でも参加できます。",
     "tr": {
-      "zh": "这个活动不论年龄和国籍，谁都可以参加。",
-      "en": "Anyone can take part in this event, regardless of age or nationality."
+      "zh": "这个活动不论年龄、国籍等，谁都可以参加。",
+      "en": "Anyone can take part in this event, regardless of age, nationality and so on."
     },
     "why": {
-      "zh": "年齢や＋国籍を＋問わず（不论）＋誰でも＋参加できます。★ 在第二格，是「国籍を」。",
-      "en": "年齢や ＋ 国籍を ＋ 問わず (regardless of) ＋ 誰でも ＋ 参加できます. The ★ is the second slot: 「国籍を」."
+      "zh": "年齢や＋国籍＋などを＋問わず（不论）＋誰でも参加できます。「〜や〜などを問わず」是固定的组合。★ 在第三格，是「などを」。",
+      "en": "年齢や ＋ 国籍 ＋ などを ＋ 問わず (regardless of) ＋ 誰でも参加できます — 「〜や〜などを問わず」 goes together. The ★ is the third slot: 「などを」."
     },
     "wrong": [
       null,
@@ -474,8 +475,8 @@
     "options": [
       "を中心に",
       "を問わず",
-      "をめぐって",
-      "に応じて"
+      "に沿って",
+      "をもとに"
     ],
     "answer": 0,
     "full": "関東地方を中心に、大雨による被害が広がっている。",
@@ -494,12 +495,12 @@
         "en": "「を問わず」 means \"regardless of\"; \"regardless of Kanto\" makes no sense."
       },
       {
-        "zh": "「をめぐって」是“围绕……（争论）”，灾害扩大不是争论。",
-        "en": "「をめぐって」 is about disputes; damage spreading isn't one."
+        "zh": "「に沿って」是“沿着/按照……”，要接河流、道路或方针，“沿着关东地区”说不通。",
+        "en": "「に沿って」 follows a line (river, road, plan); 'along the Kanto region' doesn't work."
       },
       {
-        "zh": "「に応じて」是“根据……相应地”，“根据关东地区灾害扩大”说不通。",
-        "en": "「に応じて」 means \"according to\"; that doesn't describe where damage spreads."
+        "zh": "「をもとに」是“以……为依据”，灾害扩大不是以关东为依据。",
+        "en": "「をもとに」 means 'based on'; damage doesn't spread 'based on' a region."
       }
     ]
   },
@@ -514,8 +515,8 @@
     "options": [
       "を中心とした",
       "をめぐる",
-      "を問わない",
-      "に反する"
+      "に対する",
+      "に沿った"
     ],
     "answer": 0,
     "full": "この研究会は、大学院生を中心としたメンバーで運営されている。",
@@ -534,12 +535,12 @@
         "en": "「をめぐる」 means \"concerning (a dispute)\"; \"members concerning grad students\" makes no sense."
       },
       {
-        "zh": "「を問わない」是“不论……的”，“不论研究生的成员”说不通。",
-        "en": "「を問わない」 means \"regardless of\"; \"members regardless of grad students\" makes no sense."
+        "zh": "「に対する」是“针对……的”，“针对研究生的成员”说不通，这里说成员的主体是谁。",
+        "en": "「に対する」 means 'directed at'; the point is who makes up the members."
       },
       {
-        "zh": "「に反する」是“违反……的”，“违反研究生的成员”说不通。",
-        "en": "「に反する」 means \"going against\"; that makes no sense with 「大学院生」."
+        "zh": "「に沿った」是“符合……的”，后接方针、计划等，不能说“符合研究生的成员”。",
+        "en": "「に沿った」 means 'in line with (a plan)'; it can't describe who the members are."
       }
     ]
   },
@@ -589,8 +590,8 @@
     "stem": "お客様のご予算（　）、さまざまなプランをご用意しております。",
     "options": [
       "に応じて",
-      "につれて",
-      "をめぐって",
+      "にかけては",
+      "に先立って",
       "に反して"
     ],
     "answer": 0,
@@ -606,12 +607,12 @@
     "wrong": [
       null,
       {
-        "zh": "「につれて」是“随着……变化”，「予算」不是持续变化的事物。",
-        "en": "「につれて」 means \"as… changes\"; a budget isn't changing over time here."
+        "zh": "「にかけては」用来夸某方面能力，不能接“预算”。",
+        "en": "「にかけては」 praises a skill; it can't follow 'budget'."
       },
       {
-        "zh": "「をめぐって」是“围绕……（争论）”，在服务介绍里说不通。",
-        "en": "「をめぐって」 is about disputes — it makes no sense in a service description."
+        "zh": "「に先立って」是“在……之前”，“在您的预算之前准备方案”说不通。",
+        "en": "「に先立って」 means 'prior to'; 'plans prior to your budget' makes no sense."
       },
       {
         "zh": "「に反して」是“违背预算”，商家不会这样介绍方案。",
@@ -630,8 +631,8 @@
     "options": [
       "に応じた",
       "に応じて",
-      "をめぐる",
-      "に反した"
+      "にわたる",
+      "に先立つ"
     ],
     "answer": 0,
     "full": "この駐車場は、利用時間に応じた料金になっています。",
@@ -650,12 +651,12 @@
         "en": "「に応じて」 links to a predicate and can't modify the noun 「料金」 directly."
       },
       {
-        "zh": "「をめぐる」是“围绕……（争议）的”，“围绕使用时间的收费”说不通。",
-        "en": "「をめぐる」 means \"concerning (a dispute)\" — that doesn't fit a parking fee."
+        "zh": "「にわたる」是“长达/遍及……的”，“长达使用时间的费用”说不通，这里是按时间计费。",
+        "en": "「にわたる」 means 'spanning'; the fee varies with the time, it doesn't span it."
       },
       {
-        "zh": "「に反した」是“违反……的”，“违反使用时间的收费”说不通。",
-        "en": "「に反した」 means \"going against\" — that makes no sense here."
+        "zh": "「に先立つ」是“在……之前的”，“使用时间之前的费用”与按时间收费的意思不符。",
+        "en": "「に先立つ」 means 'preceding'; the fee depends on the time used."
       }
     ]
   },
@@ -744,8 +745,8 @@
     "difficulty": 2,
     "stem": "この成績（　）、第一志望の大学にも十分合格できるだろう。",
     "options": [
-      "に応じて",
-      "をめぐって",
+      "にしては",
+      "にとって",
       "からすれば",
       "を問わず"
     ],
@@ -761,12 +762,12 @@
     },
     "wrong": [
       {
-        "zh": "「に応じて」是“根据……相应地调整”，“根据成绩相应地能考上”说不通。",
-        "en": "「に応じて」 means adjusting to something; it doesn't fit a guess about passing."
+        "zh": "「にしては」是“按……来说（出乎意料）”，后面要接与预期相反的结果，这里是顺着成绩推断能考上。",
+        "en": "「にしては」 sets up a surprise; here the grades lead naturally to 'you'll pass'."
       },
       {
-        "zh": "「をめぐって」是“围绕……（争论）”，这里没有争论。",
-        "en": "「をめぐって」 is about a dispute around something; there's none here."
+        "zh": "「にとって」前面接人或组织，表示“对……来说”，不能接「成績」来推断。",
+        "en": "「にとって」 follows a person or group ('for…'); it can't base a judgment on grades."
       },
       null,
       {
@@ -784,10 +785,10 @@
     "difficulty": 1,
     "stem": "親（　）、子どもはいくつになっても心配なものだ。",
     "options": [
-      "を問わず",
+      "にしては",
       "からすると",
-      "をめぐって",
-      "に応じて"
+      "にかけては",
+      "を問わず"
     ],
     "answer": 1,
     "full": "親からすると、子どもはいくつになっても心配なものだ。",
@@ -801,17 +802,17 @@
     },
     "wrong": [
       {
-        "zh": "「を問わず」是“不论……”，“不论父母”说不通。",
-        "en": "「を問わず」 means \"regardless of\"; \"regardless of parents\" makes no sense."
+        "zh": "「にしては」是“作为……来说（出乎意料）”，这里说的是父母理所当然的心情。",
+        "en": "「にしては」 sets up a surprise; a parent worrying is the expected feeling."
       },
       null,
       {
-        "zh": "「をめぐって」是“围绕……争论”，这里没有争论。",
-        "en": "「をめぐって」 is about a dispute; there's none here."
+        "zh": "「にかけては」用于夸某方面的能力，“在父母方面”说不通。",
+        "en": "「にかけては」 praises a skill; 'when it comes to parents' doesn't fit."
       },
       {
-        "zh": "「に応じて」是“根据……相应地”，“根据父母而担心”说不通。",
-        "en": "「に応じて」 means \"in accordance with\"; it doesn't fit 「親」 here."
+        "zh": "「を問わず」是“不论……”，“不论父母”说不通。",
+        "en": "「を問わず」 means \"regardless of\"; \"regardless of parents\" makes no sense."
       }
     ]
   },
@@ -862,8 +863,8 @@
     "stem": "この地域の経済（　）、観光業は欠かせない産業だ。",
     "options": [
       "にしたら",
-      "に応じて",
-      "を中心に",
+      "に対して",
+      "として",
       "にとって"
     ],
     "answer": 3,
@@ -882,12 +883,12 @@
         "en": "「にしたら」 only follows a person whose feelings you imagine; 「経済」 isn't one."
       },
       {
-        "zh": "「に応じて」是“根据……相应地”，“根据经济是不可缺的产业”说不通。",
-        "en": "「に応じて」 means \"in accordance with\"; it doesn't fit here."
+        "zh": "「に対して」表示对象或对比，“观光业对地区经济不可缺”应说「にとって」。",
+        "en": "「に対して」 marks a target or contrast; 'indispensable for the economy' needs 「にとって」."
       },
       {
-        "zh": "「を中心に」是“以……为中心”，后面要接动作，不能接「欠かせない産業だ」。",
-        "en": "「を中心に」 needs an action after it, not 「欠かせない産業だ」."
+        "zh": "「として」是“作为……”，“作为地区经济，观光业不可缺”主语对不上。",
+        "en": "「として」 means 'as (a role)'; 'as the local economy, tourism…' doesn't match."
       },
       null
     ]
@@ -904,8 +905,8 @@
     "options": [
       "にとって",
       "にしたら",
-      "をめぐって",
-      "に応じて"
+      "にしては",
+      "にかけては"
     ],
     "answer": 1,
     "full": "彼にしたら親切のつもりで言ったのだろうが、私には迷惑だった。",
@@ -924,12 +925,12 @@
       },
       null,
       {
-        "zh": "「をめぐって」是“围绕……争论”，“围绕他”说不通。",
-        "en": "「をめぐって」 is about a dispute; \"concerning him\" doesn't fit."
+        "zh": "「にしては」是“作为……来说（意外）”，这里是站在他的立场推测他的心情。",
+        "en": "「にしては」 sets up a surprise; here the speaker imagines his point of view."
       },
       {
-        "zh": "「に応じて」是“根据……相应地”，“根据他”说不通。",
-        "en": "「に応じて」 means \"in accordance with\"; it makes no sense with 「彼」."
+        "zh": "「にかけては」用于夸某方面能力，后面不能接“好意”。",
+        "en": "「にかけては」 praises a skill; it doesn't lead into 'meant it kindly'."
       }
     ]
   },
@@ -943,9 +944,9 @@
     "stem": "店側（　）、閉店間際に大勢で来られるのは困るだろう。",
     "options": [
       "に比べて",
-      "を問わず",
+      "にしては",
       "にすれば",
-      "を中心に"
+      "に対して"
     ],
     "answer": 2,
     "full": "店側にすれば、閉店間際に大勢で来られるのは困るだろう。",
@@ -963,13 +964,13 @@
         "en": "「に比べて」 means \"compared with\", but nothing is being compared."
       },
       {
-        "zh": "「を問わず」是“不论……”，“不论店家”说不通。",
-        "en": "「を問わず」 means \"regardless of\"; it makes no sense with 「店側」."
+        "zh": "「にしては」是“作为……来说（意外）”，这里是站在店方立场推测“会很为难”。",
+        "en": "「にしては」 sets up a surprise; here the speaker imagines the shop's side."
       },
       null,
       {
-        "zh": "「を中心に」是“以……为中心”，“以店家为中心会为难”说不通。",
-        "en": "「を中心に」 means \"centred on\"; it doesn't fit 「困るだろう」."
+        "zh": "「に対して」表示动作的对象或对比，“对店方……很为难”说不通，这里要表示立场。",
+        "en": "「に対して」 marks a target or contrast; the sentence needs a point of view."
       }
     ]
   },
@@ -1019,7 +1020,7 @@
     "stem": "留学中は、有名な教授の（　）経済学を学んだ。",
     "options": [
       "もとで",
-      "うえで",
+      "かわりに",
       "あいだに",
       "わりに"
     ],
@@ -1036,8 +1037,8 @@
     "wrong": [
       null,
       {
-        "zh": "「のうえで」接在行为名词后表示“在……之后/方面”，不能接「教授」。",
-        "en": "「のうえで」 follows action nouns (\"after / in terms of\"), not a person like 「教授」."
+        "zh": "「の かわりに」是“代替……”，“代替教授学经济学”说不通。",
+        "en": "「のかわりに」 means 'instead of'; studying economics instead of the professor makes no sense."
       },
       {
         "zh": "「のあいだに」是“在……期间”，不能接「教授」这种人。",
@@ -1060,7 +1061,7 @@
     "options": [
       "うえに",
       "かぎり",
-      "ついでに",
+      "かわりに",
       "もとに"
     ],
     "answer": 3,
@@ -1083,8 +1084,8 @@
         "en": "「のかぎり」 means \"to the limit of\" (力のかぎり); it can't follow 「同意」."
       },
       {
-        "zh": "「のついでに」是“顺便”，“同意的顺便进行治疗”说不通。",
-        "en": "「のついでに」 means \"while at it\"; it makes no sense with consent."
+        "zh": "「の かわりに」是“代替……”，“代替同意进行治疗”和征得同意的意思相反。",
+        "en": "「のかわりに」 means 'instead of'; treatment 'instead of consent' is the opposite."
       },
       null
     ]
@@ -1098,8 +1099,8 @@
     "difficulty": 1,
     "stem": "新しい監督の（　）、チームは見違えるほど強くなった。",
     "options": [
-      "中で",
-      "うちに",
+      "せいで",
+      "かわりに",
       "もとで",
       "とおりに"
     ],
@@ -1115,12 +1116,12 @@
     },
     "wrong": [
       {
-        "zh": "「の中で」表示“在……里面/范围内”，“在教练里面”说不通。",
-        "en": "「の中で」 means \"inside / among\"; \"inside the coach\" makes no sense."
+        "zh": "「せいで」用于坏结果的原因，“球队变强了”是好结果。",
+        "en": "「せいで」 blames a bad result; getting much stronger is good."
       },
       {
-        "zh": "「のうちに」是“趁……期间”，不能接「監督」这种人。",
-        "en": "「のうちに」 means \"while / during\"; it can't follow a person."
+        "zh": "「の かわりに」是“代替……”，“代替新教练，球队变强”说不通。",
+        "en": "「のかわりに」 means 'instead of'; 'instead of the new coach' makes no sense."
       },
       null,
       {

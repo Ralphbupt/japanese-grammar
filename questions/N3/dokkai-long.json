@@ -12,10 +12,10 @@
       {
         "q": "筆者が「この言葉をそのまま信じる気にはなれない」と言うのはなぜか。",
         "options": [
-          "学生たちが毎日たくさんの文字を読んでいることを知っているから",
-          "調査の数字が正しくないと思っているから",
-          "自分の学生は、みんな本をよく読んでいるから",
-          "昔の学生も、今と同じように本を読まなかったから"
+          "学生たちが、本以外の形で毎日多くの文章を読んでいるから",
+          "調査を行った方法に問題があり、数字が信用できないから",
+          "自分が教える学生は、難しい本でも最後まで読み通しているから",
+          "昔の学生も、今の学生と同じくらい本を読まなかったから"
         ],
         "answer": 0,
         "why": {
@@ -25,16 +25,16 @@
         "wrong": [
           null,
           {
-            "zh": "作者引用调查时用了「確かに」，承认了数字，并没有说数字不对。",
-            "en": "The author introduces the survey with 「確かに」, accepting the figure rather than disputing it."
+            "zh": "作者引用调查时用了「確かに」，承认了这个数字，并没有说调查方法有问题。",
+            "en": "The author introduces the survey with 「確かに」 — he accepts the figure and never questions how it was done."
           },
           {
-            "zh": "作者说的是学生读很多「文字」，不是都读很多书；后面还要布置读书作业。",
-            "en": "Students read lots of text, not lots of books — the author even sets a book-reading task."
+            "zh": "读完一本难书是作者布置的作业，而且一开始很多学生还抱怨；这不是他怀疑那句话的理由。",
+            "en": "Finishing a hard book is the assignment he sets, and many students complain at first — it isn't why he doubts the saying."
           },
           {
-            "zh": "文中只说现在的阅读量可能比以前的学生多，没有说以前的学生不读书。",
-            "en": "The text only says students may now read more than before; it says nothing about past students not reading."
+            "zh": "文中只说现在的阅读量可能比以前的学生多，没有说以前的学生也不读书。",
+            "en": "The text only says students today may read more than before; it never says past students didn't read books either."
           }
         ]
       },
@@ -42,9 +42,9 @@
         "q": "筆者によると、スマートフォンで読む文章にはどんな特徴があるか。",
         "options": [
           "分からないところがあっても、すぐにほかの記事に移れる。",
-          "長いので、途中で読むのをやめてしまうことが多い。",
-          "自分とは違う意見に出会うことが多い。",
-          "前に戻って読み直さなければならないことが多い。"
+          "長い文章が多いので、途中で読むのをやめてしまいやすい。",
+          "自分とは違う考え方の意見に、たくさん出会うことができる。",
+          "分からない部分があると、前に戻って読み直す必要がある。"
         ],
         "answer": 0,
         "why": {
@@ -55,15 +55,15 @@
           null,
           {
             "zh": "文中说手机上的文章「多くは短く」，不是长。",
-            "en": "Phone texts are described as 「多くは短く」 — short, not long."
+            "en": "The text says most of what is read on phones is short (「多くは短く」), not long."
           },
           {
-            "zh": "正相反，常常显示的是「自分と同じ意見ばかり」。",
-            "en": "The opposite: you're often shown 「自分と同じ意見ばかり」."
+            "zh": "正相反，常常显示的是「自分と同じ意見ばかり」；和不同的想法相遇是读书带来的。",
+            "en": "The opposite: phones often show 「自分と同じ意見ばかり」; meeting different views is what reading a book brings."
           },
           {
-            "zh": "翻回前面重读是读整本书时的情况。",
-            "en": "Going back to reread is what happens with a whole book."
+            "zh": "翻回前面重读是读整本书时的情况，不是手机阅读的特点。",
+            "en": "Going back to reread is what reading a whole book requires, not a feature of phone reading."
           }
         ]
       },
@@ -71,9 +71,9 @@
         "q": "筆者が学生に課題を出しているのはなぜか。",
         "options": [
           "時間をかけて、少し難しい文章を読む経験をさせたいから",
-          "学生が一日に読む文字の量を増やしたいから",
-          "スマートフォンを使う時間を減らしたいから",
-          "レポートのための論文の探し方を教えたいから"
+          "学生が一日に読む文字の量を、昔の学生より増やしたいから",
+          "スマートフォンで短い文章ばかり読む時間を減らしたいから",
+          "本を読まない学生が半分近くいるという調査を変えたいから"
         ],
         "answer": 0,
         "why": {
@@ -84,44 +84,44 @@
           null,
           {
             "zh": "作者明确说问题「量ではなく」，学生读的量已经很多了。",
-            "en": "The author says explicitly the problem is 「量ではなく」 — students already read plenty."
+            "en": "The author says the problem is 「量ではなく」 — students already read plenty."
           },
           {
-            "zh": "文中没有说要减少用手机的时间。",
-            "en": "Nothing says the aim is to cut phone time."
+            "zh": "作者指出了手机阅读的特点，但没有说要减少用手机的时间。",
+            "en": "He describes phone reading but never says he wants students to spend less time on it."
           },
           {
-            "zh": "找论文是学生已经在做的事，与这个作业无关。",
-            "en": "Finding papers is something students already do; it's unrelated to the task."
+            "zh": "调查数字只是开头引用的说法，作者关心的是读法，不是改变调查结果。",
+            "en": "The survey is just the opening claim; his concern is how students read, not changing survey figures."
           }
         ]
       },
       {
         "q": "筆者がこの文章で最も言いたいことは何か。",
         "options": [
-          "時間をかけて一つの文章とじっくり向き合う経験が大切だ。",
-          "若者は、もっとたくさん本を読むべきだ。",
-          "スマートフォンで文章を読むのはやめたほうがいい。",
-          "今の若者は、昔の若者より多くの文字を読んでいる。"
+          "本でなくても、一つの文章とじっくり向き合う経験が大切だ。",
+          "若者は、スマートフォンより本でたくさん読むようにするべきだ。",
+          "読む量が多くても、自分と同じ意見ばかり読むのはよくない。",
+          "今の若者は、昔の若者より多くの文字を読んでいるので心配ない。"
         ],
         "answer": 0,
         "why": {
           "zh": "最后一段总结：「大切なのは、本という形ではない。時間をかけて一つの文章と向き合う経験なのである」。",
-          "en": "The closing lines sum it up: 「大切なのは、本という形ではない。時間をかけて一つの文章と向き合う経験なのである」."
+          "en": "The last paragraph sums up: 「大切なのは、本という形ではない。時間をかけて一つの文章と向き合う経験なのである」 — not the book form, but time spent with one text."
         },
         "wrong": [
           null,
           {
-            "zh": "作者说「本を読みなさい」とは言わない，也说重要的不是书这个形式。",
-            "en": "The author says they don't tell students 「本を読みなさい」, and that the book form isn't what matters."
+            "zh": "作者说他不对学生说「本を読みなさい」，也说重要的不是书这个形式。",
+            "en": "He says he doesn't tell students 「本を読みなさい」, and that the book form is not what matters."
           },
           {
-            "zh": "作者只指出手机阅读的特点，没有说不要用手机读。",
-            "en": "The author only describes phone reading; they never say to stop."
+            "zh": "「自分と同じ意見ばかり」只是第三段列举的手机阅读特点之一，不是全文的主旨。",
+            "en": "「自分と同じ意見ばかり」 is one feature of phone reading listed in paragraph 3, not the main point."
           },
           {
-            "zh": "这是第二段的一个事实，用来反驳「不读书」的说法，不是全文的主旨。",
-            "en": "That's a point from paragraph two used against the 'don't read' claim, not the main message."
+            "zh": "读的量多是第二段的事实，但作者紧接着说问题在读法，并不是“不用担心”。",
+            "en": "Reading a lot is a fact from paragraph 2, but he goes on to say the problem is how they read — not that there's nothing to worry about."
           }
         ]
       }
@@ -140,29 +140,29 @@
       {
         "q": "筆者が入社したばかりのころ、資料を何度も作り直すことになったのはなぜか。",
         "options": [
-          "完成してから見せたので、上司の考えと違っていても途中で直せなかったから",
-          "資料に間違いが多く、上司に注意されたから",
-          "先輩に、七割できたら見せるように言われたから",
-          "上司の指示が具体的すぎて、分かりにくかったから"
+          "完成するまで見せず、方向の違いに途中で気づけなかったから",
+          "資料に間違いが多く、上司に何度も注意されてしまったから",
+          "一週間では時間が足りず、完璧な資料が作れなかったから",
+          "先輩に言われたとおり、七割の段階で上司に見せていたから"
         ],
         "answer": 0,
         "why": {
-          "zh": "作者想做到完美再交，花一周做完才给上司看，结果被说「方向が違う」只好从头重做——问题在于中途没有确认。",
-          "en": "The author only showed documents once 'perfect', a week later, and heard 「方向が違う」 — with no check along the way, it all had to be redone."
+          "zh": "作者想做到完美再交，花一周做完才给上司看，结果被说「方向が違う」只好从头重做——中途没有确认，方向错了也发现不了。",
+          "en": "He wanted it perfect before handing it in, showed it only after a week, and heard 「方向が違う」 — with no check along the way, he couldn't catch the wrong direction early."
         },
         "wrong": [
           null,
           {
             "zh": "被指出的是「方向が違う」，不是错误多。",
-            "en": "The problem was 「方向が違う」 — the direction — not a lot of mistakes."
+            "en": "He was told 「方向が違う」 (wrong direction), not that it had many mistakes."
           },
           {
-            "zh": "前辈的建议是后来的事，照做之后反而完成得更快了。",
-            "en": "The senior's advice came later, and following it made things faster."
+            "zh": "文中没有说时间不够；问题是一周后才给上司看，方向不对。",
+            "en": "Nothing says a week wasn't enough; the problem was showing it only after a week, in the wrong direction."
           },
           {
-            "zh": "具体的指示是早点给上司看之后得到的，而且很有帮助。",
-            "en": "Specific instructions came after showing the work early, and they helped."
+            "zh": "七成就给上司看是后来照前辈的建议做的，结果反而更快完成了。",
+            "en": "Showing it at 70% came later, on a senior's advice — and it made things faster."
           }
         ]
       },
@@ -199,9 +199,9 @@
         "q": "筆者によると、資料を早く見せるときに必要なことは何か。",
         "options": [
           "自分なりに考えたことが分かるようにすること",
-          "資料の七割に間違いがないようにすること",
-          "上司に時間があるときに見せること",
-          "先に先輩に確認してもらうこと"
+          "見せる部分には、間違いが一つもないようにすること",
+          "上司の時間があるときを選んで見せること",
+          "上司に見せる前に、先輩に確認してもらうこと"
         ],
         "answer": 0,
         "why": {
@@ -211,26 +211,26 @@
         "wrong": [
           null,
           {
-            "zh": "「七割」是完成程度，文中没有要求七成部分没有错误。",
-            "en": "「七割」 is how far along the work is; nothing says that part must be error-free."
+            "zh": "文中没有要求给上司看的部分完全没有错误；作者正是不再追求完美。",
+            "en": "Nothing says the part shown must be error-free — he has stopped aiming for perfection."
           },
           {
-            "zh": "文中没有提到看上司有没有空。",
-            "en": "Nothing is said about choosing a time when the boss is free."
+            "zh": "第四段提到的是浪费上司的时间，但没有说要挑上司有空的时候。",
+            "en": "Paragraph 4 mentions wasting the boss's time, but says nothing about picking a moment when the boss is free."
           },
           {
             "zh": "前辈只是给了建议，没有说要先让前辈确认。",
-            "en": "The senior only gave advice; nothing says to have them check first."
+            "en": "The senior only gave advice; nothing says to have the senior check it first."
           }
         ]
       },
       {
         "q": "この文章で筆者が最も言いたいことは何か。",
         "options": [
-          "仕事は一人で完璧にするより、途中で周りと確かめながら進めるほうがいい。",
-          "資料は、七割できたらすぐに上司に出すべきだ。",
-          "間違いを恐れずに、何でも早く上司に見せることが大切だ。",
-          "後輩を指導するときは、失敗を厳しく注意するべきだ。"
+          "仕事は一人で抱え込まず、周りと確かめ合いながら進めるものだ。",
+          "資料は完璧を目指さず、七割できた段階で上司に出すべきだ。",
+          "間違いを恐れずに、できるだけ早く何でも上司に見せることが大切だ。",
+          "後輩には、失敗しないように一人で完璧に仕上げさせるべきだ。"
         ],
         "answer": 0,
         "why": {
@@ -240,16 +240,16 @@
         "wrong": [
           null,
           {
-            "zh": "「七成」只是前辈的一个建议，作者的结论是中途和周围确认，而且还要有自己思考的痕迹。",
-            "en": "「七割」 was just the senior's tip; the author's conclusion is checking with others along the way — with your own thinking shown."
+            "zh": "「七割」只是前辈的一个建议，作者的结论是中途和周围确认，而且还要有自己思考的痕迹。",
+            "en": "「七割」 was just a senior's tip; his conclusion is about checking with others along the way, with your own thinking visible."
           },
           {
             "zh": "作者明确说「何でも早く見せればいいというわけではない」。",
-            "en": "The author says plainly 「何でも早く見せればいいというわけではない」."
+            "en": "He says outright 「何でも早く見せればいいというわけではない」."
           },
           {
-            "zh": "作者对后辈说的是不要怕出错一个人扛着，不是要严格批评失败。",
-            "en": "The author tells juniors not to bottle things up for fear of mistakes — not to come down hard on failures."
+            "zh": "正相反，作者告诉后辈不要怕出错一个人扛着。",
+            "en": "The opposite: he tells juniors not to fear mistakes and carry everything alone."
           }
         ]
       }
@@ -298,10 +298,10 @@
       {
         "q": "その定食屋の点数が低かったのはなぜか。",
         "options": [
-          "店のせまさや店員の態度について、悪い意見が多かったから",
-          "料理の味がよくないという意見が多かったから",
-          "メニューが少ないという意見が多かったから",
-          "口コミを書いた人の数が少なかったから"
+          "店の広さや接客について、不満を書く人が多かったから",
+          "料理の味について、満足できないという意見が多かったから",
+          "店が古く、メニューも少ないという意見が多かったから",
+          "口コミを書いた人が少なく、平均より低くなったから"
         ],
         "answer": 0,
         "why": {
@@ -312,25 +312,25 @@
           null,
           {
             "zh": "作者说味道非常好，评价里提到的是店面和店员，不是味道。",
-            "en": "The author found the food excellent; the reviews complained about the space and staff, not the taste."
+            "en": "The author found the food excellent; the reviews were about the room and the staff, not the taste."
           },
           {
-            "zh": "菜单少是作者自己的观察，文中没说评价里这样写。",
-            "en": "The short menu is the author's own observation, not what the reviews said."
+            "zh": "店旧、菜单少是作者自己的观察，评价里写的是「店がせまい」「店員が無愛想だ」。",
+            "en": "Old and few dishes is the author's own impression; the reviews said 「店がせまい」「店員が無愛想だ」."
           },
           {
-            "zh": "文中没有提到评价的数量。",
-            "en": "The number of reviews isn't mentioned."
+            "zh": "文中没有提到写评价的人数。",
+            "en": "The text says nothing about how many people wrote reviews."
           }
         ]
       },
       {
         "q": "「他人の意見で味を決めてしまいがちだ」とはどういうことか。",
         "options": [
-          "点数が高い店だと、自分で味わう前においしいと思いこんでしまう。",
-          "ほかの人がすすめる料理ばかり注文してしまう。",
-          "口コミを読むと、自分の意見を書けなくなってしまう。",
-          "点数の低い店には、入らないようにしてしまう。"
+          "点数が高いと、食べる前からおいしいと決めてしまう。",
+          "口コミでほめられている料理ばかり注文してしまう。",
+          "口コミを読むと、自分の感想を書けなくなってしまう。",
+          "点数の低い店には、味を確かめる前から入らなくなる。"
         ],
         "answer": 0,
         "why": {
@@ -341,25 +341,25 @@
           null,
           {
             "zh": "这句话讲的是对味道的判断，不是点什么菜。",
-            "en": "The phrase is about judging taste, not about what you order."
+            "en": "The sentence is about judging the taste, not what you order."
           },
           {
             "zh": "文中没有提到自己写评价的事。",
-            "en": "Writing one's own review isn't discussed."
+            "en": "The text never mentions writing your own review."
           },
           {
             "zh": "这句话说的是吃的时候对味道的感受被左右，不是选不选店。",
-            "en": "It's about how the taste is perceived while eating, not about which places you go into."
+            "en": "It's about how your sense of the taste is swayed while eating, not about which shops you enter."
           }
         ]
       },
       {
         "q": "筆者がこの文章で最も言いたいことは何か。",
         "options": [
-          "口コミだけに頼らず、ときには自分で店を見つけて味わうのもいい。",
-          "口コミは役に立たないので、使わないほうがいい。",
-          "点数の低い店のほうが、実はおいしいことが多い。",
-          "口コミを書くときは、味だけを評価するべきだ。"
+          "口コミも使いながら、ときには調べずに店に入ってみるのもいい。",
+          "口コミの点数は味で決まらないので、見ないほうがいい。",
+          "点数の低い店にこそ、おいしい店が隠れていることが多い。",
+          "口コミを書く人は、店の広さや接客より味を大切にするべきだ。"
         ],
         "answer": 0,
         "why": {
@@ -369,16 +369,16 @@
         "wrong": [
           null,
           {
-            "zh": "作者说评价「役に立つ」，也「使うのをやめるつもりはない」。",
-            "en": "The author says reviews are 「役に立つ」 and 「使うのをやめるつもりはない」."
+            "zh": "作者指出分数不只由味道决定，但也说评价「役に立つ」，「使うのをやめるつもりはない」。",
+            "en": "He notes scores aren't just about taste, but also calls reviews 「役に立つ」 and says 「使うのをやめるつもりはない」."
           },
           {
             "zh": "只有一家店的经历，作者没有说低分店往往更好吃。",
-            "en": "That's one restaurant; the author never claims low-rated places are usually better."
+            "en": "It's one shop; he never says low-scored shops are often better."
           },
           {
-            "zh": "作者只指出分数不只由味道决定，没有要求写评价的人只评味道。",
-            "en": "The author only notes scores aren't based on taste alone; there's no advice to reviewers."
+            "zh": "作者只指出分数不只由味道决定，没有要求写评价的人重视味道。",
+            "en": "He only points out that scores reflect more than taste; he doesn't tell reviewers what to value."
           }
         ]
       }

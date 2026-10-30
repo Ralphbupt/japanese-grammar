@@ -125,7 +125,7 @@
     "difficulty": 2,
     "stem": "この祭りでは、雪国（　）幻想的な風景を楽しむことができる。",
     "options": [
-      "ならではな",
+      "たる",
       "をおいて",
       "ならではの",
       "にとどまらず"
@@ -142,8 +142,8 @@
     },
     "wrong": [
       {
-        "zh": "「ならでは」修饰名词时用「の」，没有「ならではな」的说法。",
-        "en": "「ならでは」 modifies a noun with 「の」; 「ならではな」 doesn't exist."
+        "zh": "「たる」接表示身份、资格的名词，表示“作为……应有的”，「雪国たる」不能修饰「風景」。",
+        "en": "「たる」 marks a role or status (\"as befits a …\"); 「雪国たる」 can't describe scenery."
       },
       {
         "zh": "「をおいて」后项必须是「ほかに〜ない」这样的否定，这里没有。",
@@ -629,7 +629,7 @@
     "difficulty": 2,
     "stem": "ネット上の誹謗中傷は有名人（　）、ごく普通の人も被害に遭っている。",
     "options": [
-      "ならではで",
+      "ともなると",
       "に限ったことではなく",
       "をおいて",
       "に限って"
@@ -646,8 +646,8 @@
     },
     "wrong": [
       {
-        "zh": "「ならでは」是称赞独有的优点，不用于诽谤中伤这种负面现象。",
-        "en": "「ならでは」 praises a unique strength; it doesn't suit online abuse."
+        "zh": "「ともなると」是“一到了……的地步，就自然……”，「有名人ともなると、普通の人も」前后矛盾。",
+        "en": "「ともなると」 is \"once you reach the level of …\"; it clashes with \"ordinary people too\"."
       },
       null,
       {

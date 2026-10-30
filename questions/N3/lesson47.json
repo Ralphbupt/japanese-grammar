@@ -668,7 +668,7 @@
       "lesson47#6"
     ],
     "difficulty": 2,
-    "stem": "入社して [_] [_] [★] [_] 、もったいないと 思う。",
+    "stem": "入社して [_] [_] [_] [★] 、もったいないと 思う。",
     "options": [
       "なんて",
       "一年で",
@@ -687,14 +687,15 @@
       "en": "Quitting after just one year at the company — I think that's a waste."
     },
     "why": {
-      "zh": "「たった」修饰「一年で」，「辞める」＋「なんて」表示惊讶、意外。★ 在第三格，是「辞める」。",
-      "en": "「たった」 goes with 「一年で」; 「辞める」 ＋ 「なんて」 expresses surprise. The ★ is the third slot: 「辞める」."
+      "zh": "「たった」修饰「一年で」，「辞める」＋「なんて」表示惊讶、意外。★ 在第四格，是「なんて」。",
+      "en": "「たった」 goes with 「一年で」; 「辞める」 ＋ 「なんて」 expresses surprise. The ★ is the fourth slot: 「なんて」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   }
 ]

@@ -166,8 +166,8 @@
     "options": [
       "に相違ない",
       "わけがない",
-      "わけにはいかない",
-      "ものではない"
+      "とは限らない",
+      "までもない"
     ],
     "answer": 0,
     "full": "あの慎重な田中さんがこの案に賛成したのだから、事前に十分検討したに相違ない。",
@@ -182,16 +182,16 @@
     "wrong": [
       null,
       {
-        "zh": "「わけがない」是“不可能研究过”，和“谨慎的人赞成了”这一根据矛盾。",
-        "en": "「わけがない」 says he can't have studied it — the opposite of what \"careful\" implies."
+        "zh": "「わけがない」是“不可能……”，与“慎重的田中先生都赞成了”这一根据矛盾。",
+        "en": "「わけがない」 means 'there's no way', contradicting the evidence that careful Tanaka agreed."
       },
       {
-        "zh": "「わけにはいかない」表示“（出于情理）不能做”，不能接在过去式「検討した」后面表示推断。",
-        "en": "「わけにはいかない」 means \"can't (for moral reasons) do\" and doesn't follow a past tense to make a guess."
+        "zh": "「とは限らない」是“未必……”，与「のだから」提出的确定根据不符。",
+        "en": "「とは限らない」 means 'not necessarily', which doesn't follow from the firm reason given by 「のだから」."
       },
       {
-        "zh": "「ものではない」是“不应该……”的劝诫，接在「検討した」后面不成立。",
-        "en": "「ものではない」 is a general \"one shouldn't…\"; it doesn't attach to 「検討した」 to make a deduction."
+        "zh": "「までもない」是“用不着……”，接“事先检讨过”意思不通。",
+        "en": "「までもない」 means 'there's no need to'; it doesn't fit 'must have examined it'."
       }
     ]
   },
@@ -242,7 +242,7 @@
     "options": [
       "わけがない",
       "に相違ない",
-      "わけにはいかない",
+      "に越したことはない",
       "ことになっている"
     ],
     "answer": 0,
@@ -258,16 +258,16 @@
     "wrong": [
       null,
       {
-        "zh": "「に相違ない」是“一定能弹好”，和“一次都不练习”矛盾。",
-        "en": "「に相違ない」 says you'll certainly play well, contradicting \"without practicing\"."
+        "zh": "「に相違ない」是“一定……”，与“一次都没练习”矛盾。",
+        "en": "「に相違ない」 means 'surely', which contradicts 'never practised once'."
       },
       {
-        "zh": "「わけにはいかない」是“出于情理不能做”，“不能弹好”不是义务问题，意思不通。",
-        "en": "「わけにはいかない」 is about what one mustn't do for social reasons; it doesn't fit ability."
+        "zh": "「に越したことはない」是“最好……”，表示建议，与“没练习不可能弹好”的判断不符。",
+        "en": "「に越したことはない」 means 'it's best if', a suggestion, not the judgment needed."
       },
       {
-        "zh": "「ことになっている」是“按规定……”，“按规定能弹好”说不通。",
-        "en": "「ことになっている」 means \"it's arranged/the rule is…\"; that makes no sense here."
+        "zh": "「ことになっている」表示规定或预定，与根据事实的判断不符。",
+        "en": "「ことになっている」 states a rule or arrangement, not a judgment."
       }
     ]
   },
@@ -397,9 +397,9 @@
     "stem": "A「山田さん、今日は休みだって。」\nB「え、そんな（　）。さっき廊下で会ったよ。」",
     "options": [
       "はずはない",
-      "はずだ",
-      "わけにはいかない",
-      "に相違ない"
+      "わけだ",
+      "ものだ",
+      "はずだった"
     ],
     "answer": 0,
     "full": "A「山田さん、今日は休みだって。」 B「え、そんなはずはない。さっき廊下で会ったよ。」",
@@ -414,16 +414,16 @@
     "wrong": [
       null,
       {
-        "zh": "「そんなはずだ」是“应该是那样”，和后句“刚才碰到他了”矛盾。",
-        "en": "「そんなはずだ」 would agree that it should be so — contradicting \"I just saw him\"."
+        "zh": "「そんなわけだ」是“原来如此/就是这么回事”，表示认可，与后面“刚才还见到他”的反驳矛盾。",
+        "en": "「そんなわけだ」 means 'so that's why' — agreement, which contradicts 'I just saw him'."
       },
       {
-        "zh": "「わけにはいかない」不能接在「そんな」后面，意思也不是“不可能”。",
-        "en": "「わけにはいかない」 doesn't follow 「そんな」 and doesn't mean \"that can't be true\"."
+        "zh": "「ものだ」表示常理或感慨，「そんなものだ」是“就是那样”，与反驳不符。",
+        "en": "「そんなものだ」 means 'that's how it is' — acceptance, not denial."
       },
       {
-        "zh": "「に相違ない」是“一定是那样”，不能接「そんな」，意思也相反。",
-        "en": "「に相違ない」 (\"undoubtedly\") doesn't follow 「そんな」 and means the opposite."
+        "zh": "「はずだった」是“本应……（结果没有）”，与“断定不可能”不符。",
+        "en": "「はずだった」 means 'it was supposed to be', not 'it can't be'."
       }
     ]
   },
@@ -473,9 +473,9 @@
     "stem": "最終バスに乗り遅れてしまったので、駅から家まで歩いて帰る（　）。",
     "options": [
       "わけがない",
-      "に相違ない",
+      "までもない",
       "ほかない",
-      "はずがない"
+      "ものか"
     ],
     "answer": 2,
     "full": "最終バスに乗り遅れてしまったので、駅から家まで歩いて帰るほかない。",
@@ -489,17 +489,17 @@
     },
     "wrong": [
       {
-        "zh": "「わけがない」是“不可能……”，“没赶上车，所以不可能走回去”不合逻辑。",
-        "en": "「わけがない」 means \"there's no way…\"; \"missed the bus, so there's no way I'd walk\" is illogical."
+        "zh": "「わけがない」是“不可能……”，与“错过了末班车”这一原因矛盾。",
+        "en": "「わけがない」 means 'there's no way', which contradicts having missed the last bus."
       },
       {
-        "zh": "「に相違ない」是“一定是……”的书面推测，不用于说自己只好做什么。",
-        "en": "「に相違ない」 is a written \"surely…\" guess, not a statement of what one has to do."
+        "zh": "「までもない」是“用不着……”，错过末班车后走回家不是“没必要”。",
+        "en": "「までもない」 means 'there's no need to'; having missed the bus, walking isn't unnecessary."
       },
       null,
       {
-        "zh": "「はずがない」是“不可能……”的推断，同样和「ので」的因果对不上。",
-        "en": "「はずがない」 means \"can't be,\" which again doesn't follow from 「ので」."
+        "zh": "「ものか」是“才不……呢”，与“只好走回去”的无奈相反。",
+        "en": "「ものか」 means 'I'll never…', the opposite of reluctantly having to."
       }
     ]
   },

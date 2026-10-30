@@ -83,17 +83,18 @@
   },
   {
     "id": "n4-l32-003",
+    "rev": 3,
     "type": "narabe",
     "refs": [
       "lesson32#1"
     ],
     "difficulty": 1,
-    "stem": "駅の 近くの あの 公園は [_] [_] [★] [_]。",
+    "stem": "駅の 近くの あの 公園は [_] [★] [_] [_]。",
     "options": [
       "と",
-      "静か",
+      "静かで",
       "思います",
-      "だ"
+      "きれいだ"
     ],
     "order": [
       1,
@@ -101,15 +102,15 @@
       0,
       2
     ],
-    "full": "駅の 近くの あの 公園は 静かだと 思います。",
-    "kj": "駅の近くのあの公園は静かだと思います。",
+    "full": "駅の 近くの あの 公園は 静かで きれいだと 思います。",
+    "kj": "駅の近くのあの公園は静かできれいだと思います。",
     "tr": {
-      "zh": "我觉得车站附近的那个公园很安静。",
-      "en": "I think that park near the station is quiet."
+      "zh": "我觉得车站附近的那个公园又安静又漂亮。",
+      "en": "I think that park near the station is quiet and pretty."
     },
     "why": {
-      "zh": "な形容词接「と思う」要加「だ」：静か ＋ だ ＋ と ＋ 思います。★ 在第三格，是「と」。",
-      "en": "A な-adjective needs 「だ」 before 「と思う」: 静か ＋ だ ＋ と ＋ 思います. The ★ is the third slot: 「と」."
+      "zh": "な形容词接「と思う」要加「だ」：静かで ＋ きれいだ ＋ と ＋ 思います。「静かで」是中顿形，只能放在前面。★ 在第二格，是「きれいだ」。",
+      "en": "A な-adjective needs 「だ」 before 「と思う」: 静かで ＋ きれいだ ＋ と ＋ 思います; 「静かで」 is the linking form, so it comes first. The ★ is the second slot: 「きれいだ」."
     },
     "wrong": [
       null,
@@ -326,7 +327,7 @@
       "lesson32#3"
     ],
     "difficulty": 2,
-    "stem": "わたしも 日本語の 先生 [_] [_] [★] [_] です。",
+    "stem": "わたしも 日本語の 先生 [_] [★] [_] [_] です。",
     "options": [
       "たい",
       "話し",
@@ -346,15 +347,16 @@
       "en": "I want to speak as well as my Japanese teacher, too."
     },
     "why": {
-      "zh": "先生 ＋ のように（像老师一样）＋ 上手に ＋ 話し ＋ たいです。★ 在第三格，是「話し」。",
-      "en": "先生 ＋ のように (like the teacher) ＋ 上手に ＋ 話し ＋ たいです. The ★ is the third slot: 「話し」."
+      "zh": "先生 ＋ のように（像老师一样）＋ 上手に ＋ 話し ＋ たいです。★ 在第二格，是「上手に」。",
+      "en": "先生 ＋ のように (like the teacher) ＋ 上手に ＋ 話し ＋ たいです. The ★ is the second slot: 「上手に」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l32-010",
@@ -365,10 +367,10 @@
     "difficulty": 1,
     "stem": "母「もう 8時よ。早く（　）。学校に 遅れるわよ。」",
     "options": [
-      "起きるなさい",
+      "起きないで",
       "起きなさい",
-      "起きりなさい",
-      "起きなさって"
+      "起きるな",
+      "起きて いた"
     ],
     "answer": 1,
     "full": "母「もう 8時よ。早く 起きなさい。学校に 遅れるわよ。」",
@@ -383,17 +385,17 @@
     },
     "wrong": [
       {
-        "zh": "「なさい」接ます形词干，不接辞书形。",
-        "en": "「なさい」 attaches to the ます-stem, not the dictionary form."
+        "zh": "「起きないで」是“别起来”，和“快点、要迟到了”矛盾。",
+        "en": "「起きないで」 (don't get up) contradicts \"hurry, you'll be late\"."
       },
       null,
       {
-        "zh": "「起きる」是二类动词，词干是「起き」，没有「起きり」。",
-        "en": "「起きる」 is a る-verb with stem 「起き」; 「起きり」 doesn't exist."
+        "zh": "「起きるな」是禁止“不许起来”，意思正好相反。",
+        "en": "「起きるな」 forbids getting up — the opposite."
       },
       {
-        "zh": "「なさって」是尊敬语「なさる」的て形，不是命令，用在这里不通。",
-        "en": "「なさって」 is the て-form of honorific 「なさる」, not a command."
+        "zh": "「起きて いた」是过去的状态“（当时）醒着”，不能用来催促。",
+        "en": "「起きて いた」 is a past state (was awake); it can't urge anyone."
       }
     ]
   },
@@ -446,7 +448,7 @@
       "lesson32#4"
     ],
     "difficulty": 1,
-    "stem": "先生「みなさん、[_] [_] [★] [_]。」",
+    "stem": "先生「みなさん、[★] [_] [_] [_]。」",
     "options": [
       "教室では",
       "なさい",
@@ -466,15 +468,16 @@
       "en": "Teacher: Everyone, be quiet in the classroom."
     },
     "why": {
-      "zh": "教室では ＋ 静かに ＋ し（します的词干）＋ なさい：老师对学生的命令。★ 在第三格，是「し」。",
-      "en": "教室では ＋ 静かに ＋ し (stem of します) ＋ なさい: a teacher's command. The ★ is the third slot: 「し」."
+      "zh": "教室では ＋ 静かに ＋ し（します的词干）＋ なさい：老师对学生的命令。★ 在第一格，是「教室では」。",
+      "en": "教室では ＋ 静かに ＋ し (stem of します) ＋ なさい: a teacher's command. The ★ is the first slot: 「教室では」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l32-013",
@@ -565,7 +568,7 @@
       "lesson32#5"
     ],
     "difficulty": 1,
-    "stem": "もう 夜 10時なのに、外から [_] [_] [★] [_]。",
+    "stem": "もう 夜 10時なのに、外から [_] [_] [_] [★]。",
     "options": [
       "が",
       "します",
@@ -585,15 +588,16 @@
       "en": "It's already ten at night, but I can hear children's voices outside."
     },
     "why": {
-      "zh": "子どもの ＋ 声 ＋ が ＋ します：听到声音用「声がする」。★ 在第三格，是「が」。",
-      "en": "子どもの ＋ 声 ＋ が ＋ します: hearing voices is 「声がする」. The ★ is the third slot: 「が」."
+      "zh": "子どもの ＋ 声 ＋ が ＋ します：听到声音用「声がする」。★ 在第四格，是「します」。",
+      "en": "子どもの ＋ 声 ＋ が ＋ します: hearing voices is 「声がする」. The ★ is the fourth slot: 「します」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l32-016",
@@ -607,7 +611,7 @@
       "必要は ありません",
       "必要が あります",
       "ことは ありません",
-      "必要を します"
+      "ところです"
     ],
     "answer": 1,
     "full": "外国へ 行く ときは、パスポートを 忘れないで ください。必ず 持って いく 必要が あります。",
@@ -631,8 +635,8 @@
         "en": "「ことはありません」 also means \"no need\", which contradicts 「必ず」."
       },
       {
-        "zh": "「必要」不和「をする」搭配，要说「必要がある」。",
-        "en": "「必要」 doesn't go with 「をする」; it's 「必要がある」."
+        "zh": "「持って いく ところです」是“正要带去”，叙述眼前的动作，不能和「必ず」一起表示规定。",
+        "en": "「持って いく ところです」 is \"about to take it\" — a description of now, not a rule with 「必ず」."
       }
     ]
   },
@@ -684,7 +688,7 @@
       "lesson32#6"
     ],
     "difficulty": 1,
-    "stem": "ビザを もらうには、出発の 前に [_] [_] [★] [_]。",
+    "stem": "ビザを もらうには、出発の 前に [_] [_] [_] [★]。",
     "options": [
       "する",
       "手続きを",
@@ -704,15 +708,16 @@
       "en": "To get a visa, you need to complete the paperwork before you leave."
     },
     "why": {
-      "zh": "手続きを ＋ する（辞书形）＋ 必要が ＋ あります：“有必要办手续”。★ 在第三格，是「必要が」。",
-      "en": "手続きを ＋ する (dictionary form) ＋ 必要が ＋ あります: \"you need to do the paperwork\". The ★ is the third slot: 「必要が」."
+      "zh": "手続きを ＋ する（辞书形）＋ 必要が ＋ あります：“有必要办手续”。★ 在第四格，是「あります」。",
+      "en": "手続きを ＋ する (dictionary form) ＋ 必要が ＋ あります: \"you need to do the paperwork\". The ★ is the fourth slot: 「あります」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l32-019",
@@ -764,10 +769,10 @@
     "difficulty": 2,
     "stem": "父「もう 7時半だぞ。早く（　）！ 学校に 遅れるぞ。」",
     "options": [
-      "起きれ",
+      "起きた",
       "起きるな",
       "起きろ",
-      "起きけ"
+      "起きさせろ"
     ],
     "answer": 2,
     "full": "父「もう 7時半だぞ。早く 起きろ！ 学校に 遅れるぞ。」",
@@ -782,8 +787,8 @@
     },
     "wrong": [
       {
-        "zh": "「え段」变化（〜れ）是五段动词的规则，二类动词不用。",
-        "en": "Changing to the え-row (〜れ) is the rule for う-verbs, not る-verbs."
+        "zh": "「起きた」是过去式，催孩子起床要用命令形。",
+        "en": "「起きた」 is the past tense; hurrying a child needs the imperative."
       },
       {
         "zh": "「起きるな」是“不许起来”，和“要迟到了”矛盾。",
@@ -791,8 +796,8 @@
       },
       null,
       {
-        "zh": "没有「起きけ」这种形式。",
-        "en": "「起きけ」 isn't a form."
+        "zh": "「起きさせろ」是使役的命令“让（别人）起来”，可要起床的是孩子自己。",
+        "en": "「起きさせろ」 is a causative command (make someone get up), but it's the child who must get up."
       }
     ]
   },
@@ -803,7 +808,7 @@
       "lesson32#7"
     ],
     "difficulty": 1,
-    "stem": "「危ない！ [_] [_] [★] [_]！」",
+    "stem": "「危ない！ [★] [_] [_] [_]！」",
     "options": [
       "触る",
       "その",
@@ -823,14 +828,15 @@
       "en": "Look out! Don't touch that machine!"
     },
     "why": {
-      "zh": "その ＋ 機械に ＋ 触る（辞书形）＋ な：禁止形“不许碰”。★ 在第三格，是「触る」。",
-      "en": "その ＋ 機械に ＋ 触る (dictionary form) ＋ な: the prohibitive \"don't touch\". The ★ is the third slot: 「触る」."
+      "zh": "その ＋ 機械に ＋ 触る（辞书形）＋ な：禁止形“不许碰”。★ 在第一格，是「その」。",
+      "en": "その ＋ 機械に ＋ 触る (dictionary form) ＋ な: the prohibitive \"don't touch\". The ★ is the first slot: 「その」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   }
 ]

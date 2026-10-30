@@ -37,37 +37,38 @@
   },
   {
     "id": "n1-mg-302",
+    "rev": 2,
     "type": "bunmyaku",
-    "difficulty": 1,
-    "stem": "翻訳では、原文の微妙な（　）まで伝えるのは難しい。",
+    "difficulty": 2,
+    "stem": "（　）発表の新製品の写真が、発売前にネットに流出した。",
     "options": [
-      "ニュアンス",
-      "ニーズ",
-      "ノウハウ",
-      "コンセンサス"
+      "未",
+      "非",
+      "無",
+      "不"
     ],
     "answer": 0,
     "tr": {
-      "zh": "翻译时，要把原文的微妙语感都传达出来很难。",
-      "en": "In translation it's hard to convey even the subtle nuances of the original."
+      "zh": "尚未发布的新产品照片，在开售前就流到了网上。",
+      "en": "Photos of an as-yet-unannounced product leaked online before the launch."
     },
     "why": {
-      "zh": "原文中“微妙的”东西＝语感、细微差别，即「ニュアンス」。",
-      "en": "What's \"subtle\" in an original text is its shades of meaning: 「ニュアンス」."
+      "zh": "“还没有发表”用「未」：「未発表」。「未」表示“尚未”，后面多接动作性名词（未定・未完成・未発表）。",
+      "en": "\"Not yet announced\" is 「未発表」: 「未」 is \"not yet\", before action nouns (未定・未完成)."
     },
     "wrong": [
       null,
       {
-        "zh": "「ニーズ」是需求，原文没有“需求”。",
-        "en": "「ニーズ」 is needs or demand; a text doesn't have needs."
+        "zh": "「非」表示“不是、否定某种性质”（非公開・非常識），没有「非発表」。",
+        "en": "「非」 negates a quality (非公開・非常識); there's no 「非発表」."
       },
       {
-        "zh": "「ノウハウ」是技术诀窍，不是原文中的东西。",
-        "en": "「ノウハウ」 is know-how, not something in a text."
+        "zh": "「無」表示“没有某物”（無料・無関係），没有「無発表」。",
+        "en": "「無」 means \"without\" (無料・無関係); there's no 「無発表」."
       },
       {
-        "zh": "「コンセンサス」是共识，原文没有“共识”。",
-        "en": "「コンセンサス」 is consensus; a text doesn't have one."
+        "zh": "「不」表示“不、不好”（不正確・不公平），没有「不発表」。",
+        "en": "「不」 means \"not, un-\" (不正確・不公平); there's no 「不発表」."
       }
     ]
   },
@@ -109,73 +110,75 @@
   },
   {
     "id": "n1-mg-304",
+    "rev": 2,
     "type": "bunmyaku",
-    "difficulty": 1,
-    "stem": "長年蓄積してきた店舗運営の（　）を、新しい事業にも生かしたい。",
+    "difficulty": 2,
+    "stem": "ネットで安く買ったバッグは、よく見ると（　）ブランド品だった。",
     "options": [
-      "ノウハウ",
-      "モラル",
-      "ジンクス",
-      "ビジョン"
+      "偽",
+      "誤",
+      "虚",
+      "反"
     ],
     "answer": 0,
     "tr": {
-      "zh": "想把多年积累的店铺经营诀窍也运用到新业务中。",
-      "en": "We want to apply the store-management know-how we've built up over the years to the new business too."
+      "zh": "在网上便宜买的包，仔细一看原来是冒牌货。",
+      "en": "The bag I bought cheaply online turned out, on closer look, to be a fake brand item."
     },
     "why": {
-      "zh": "多年“积累”、可以“运用”的经营方法＝「ノウハウ」（诀窍）。",
-      "en": "Practical knowledge you accumulate and then apply is 「ノウハウ」 (know-how)."
+      "zh": "“假冒的名牌货”是「偽ブランド品」，「偽」＝假的、仿冒的（偽札・偽物）。",
+      "en": "A counterfeit designer item is 「偽ブランド品」; 「偽」 is fake (偽札・偽物)."
     },
     "wrong": [
       null,
       {
-        "zh": "「モラル」是道德，不说“店铺经营的道德”。",
-        "en": "「モラル」 is morals; \"store-management morals\" doesn't fit."
+        "zh": "「誤」是错误（誤解・誤作動），不表示“假冒”。",
+        "en": "「誤」 is error (誤解・誤作動), not counterfeit."
       },
       {
-        "zh": "「ジンクス」是吉凶的说法，不能积累后运用。",
-        "en": "「ジンクス」 is a superstition, not something you build up and apply."
+        "zh": "「虚」是空、不实（虚偽・虚栄），不接「ブランド品」。",
+        "en": "「虚」 is empty or untrue (虚偽・虚栄) and doesn't attach to 「ブランド品」."
       },
       {
-        "zh": "「ビジョン」是对将来的设想，不是“积累”起来的。",
-        "en": "「ビジョン」 is a vision for the future, not something accumulated."
+        "zh": "「反」是反对、违反（反社会的），没有「反ブランド品」。",
+        "en": "「反」 is anti- (反社会的); there's no 「反ブランド品」."
       }
     ]
   },
   {
     "id": "n1-mg-305",
+    "rev": 2,
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "「このスタジアムでは一度も勝ったことがない」という（　）を、チームはついに破った。",
+    "stem": "古い商店街を歩くと、どこか懐かしい生活（　）が漂っている。",
     "options": [
-      "ジンクス",
-      "タブー",
-      "モットー",
-      "スローガン"
+      "感",
+      "観",
+      "性",
+      "味"
     ],
     "answer": 0,
     "tr": {
-      "zh": "球队终于打破了“在这个球场从没赢过”的魔咒。",
-      "en": "The team finally broke the jinx of never having won at this stadium."
+      "zh": "走在老商店街上，处处飘着一种令人怀念的生活气息。",
+      "en": "Walking down the old shopping street, you feel a nostalgic sense of everyday life."
     },
     "why": {
-      "zh": "“在这里从来赢不了”这种不吉的说法＝「ジンクス」，「ジンクスを破る」是固定搭配。",
-      "en": "A belief that you never win somewhere is a jinx: 「ジンクスを破る」."
+      "zh": "「生活感」＝生活的气息、居家过日子的感觉；「〜感」表示给人的感觉（季節感・高級感）。",
+      "en": "「生活感」 is the feel of everyday life; 「〜感」 is the impression something gives (季節感・高級感)."
     },
     "wrong": [
       null,
       {
-        "zh": "「タブー」是禁忌（不许做的事），“从没赢过”不是禁止的事。",
-        "en": "「タブー」 is a taboo — a forbidden thing; never having won isn't forbidden."
+        "zh": "「〜観」是看法、观念（人生観・価値観），「生活観」不能“飘荡”。",
+        "en": "「〜観」 is a view or outlook (人生観・価値観); a view of life can't \"hang in the air\"."
       },
       {
-        "zh": "「モットー」是座右铭，不会说“打破座右铭”。",
-        "en": "「モットー」 is a motto; you don't \"break\" one like this."
+        "zh": "「〜性」是性质（安全性・必要性），不说「生活性が漂う」。",
+        "en": "「〜性」 is a property (安全性・必要性); 「生活性が漂う」 isn't said."
       },
       {
-        "zh": "「スローガン」是口号，“从没赢过”不是口号。",
-        "en": "「スローガン」 is a slogan; \"never won here\" isn't one."
+        "zh": "「〜味」是味道、韵味（人間味・面白味），没有「生活味」。",
+        "en": "「〜味」 is a flavour or quality (人間味・面白味); there's no 「生活味」."
       }
     ]
   },
@@ -985,37 +988,38 @@
   },
   {
     "id": "n1-mg-328",
+    "rev": 2,
     "type": "bunmyaku",
-    "difficulty": 1,
-    "stem": "これだけの量の仕事を一日で終わらせるのは、（　）無理だ。",
+    "difficulty": 2,
+    "stem": "若者の活字（　）が進み、雑誌の休刊が相次いでいる。",
     "options": [
-      "到底",
-      "辛うじて",
-      "あえて",
-      "努めて"
+      "離れ",
+      "外れ",
+      "抜け",
+      "切れ"
     ],
     "answer": 0,
     "tr": {
-      "zh": "要在一天内完成这么多工作，无论如何都不可能。",
-      "en": "Finishing this much work in one day is simply impossible."
+      "zh": "年轻人越来越不读书看报，杂志接连停刊。",
+      "en": "As young people drift away from print, magazines are folding one after another."
     },
     "why": {
-      "zh": "「到底〜ない・無理だ」＝无论如何也（不能）。",
-      "en": "「到底」 + a negative (無理だ) means \"no way, utterly impossible\"."
+      "zh": "「〜離れ」接在名词后表示“疏远、不再接触”：「活字離れ」「車離れ」「若者の酒離れ」。",
+      "en": "「〜離れ」 after a noun means drifting away from it: 「活字離れ」, 「車離れ」."
     },
     "wrong": [
       null,
       {
-        "zh": "「辛うじて」是勉强做到，与「無理だ」矛盾。",
-        "en": "「辛うじて」 is barely managing, which contradicts 「無理だ」."
+        "zh": "「〜外れ」是落空、偏离（期待外れ・季節外れ），没有「活字外れ」。",
+        "en": "「〜外れ」 is missing or off (期待外れ・季節外れ); there's no 「活字外れ」."
       },
       {
-        "zh": "「あえて」是特意、硬要，不能修饰「無理だ」。",
-        "en": "「あえて」 is \"deliberately, dare to\"; it doesn't modify 「無理だ」."
+        "zh": "「〜抜け」是缺漏（手抜け・間抜け），没有「活字抜け」。",
+        "en": "「〜抜け」 is something missing (間抜け); there's no 「活字抜け」."
       },
       {
-        "zh": "「努めて」是尽力，与「無理だ」不搭配。",
-        "en": "「努めて」 is \"making an effort to\"; it doesn't go with 「無理だ」."
+        "zh": "「〜切れ」是用完、到期（期限切れ・品切れ），不表示人不再接触。",
+        "en": "「〜切れ」 is running out (期限切れ・品切れ), not people drifting away."
       }
     ]
   },
@@ -1129,40 +1133,39 @@
   },
   {
     "id": "n1-mg-332",
+    "rev": 2,
     "type": "bunmyaku",
-    "refs": [
-      "lesson76#vocab"
-    ],
-    "difficulty": 1,
-    "stem": "秋も深まり、朝晩は（　）冷え込むようになった。",
+    "refs": [],
+    "difficulty": 2,
+    "stem": "試験前の一夜（　）の勉強では、本当の実力はつかない。",
     "options": [
-      "めっきり",
-      "きっぱり",
-      "うっかり",
-      "ひっそり"
+      "漬け",
+      "詰め",
+      "掛け",
+      "込み"
     ],
     "answer": 0,
     "tr": {
-      "zh": "秋意渐浓，早晚明显变冷了。",
-      "en": "As autumn deepens, mornings and evenings have turned noticeably cold."
+      "zh": "考试前临时抱佛脚式的学习，是长不了真本事的。",
+      "en": "Cramming the night before an exam won't build real ability."
     },
     "why": {
-      "zh": "季节带来的明显变化＝「めっきり」（显著地）。",
-      "en": "A marked change with the season is 「めっきり」."
+      "zh": "「一夜漬け」＝临阵磨枪、考前突击；「〜漬け」也有“沉浸于”的意思（勉強漬け）。",
+      "en": "「一夜漬け」 is last-minute cramming; 「〜漬け」 also means steeped in something (勉強漬け)."
     },
     "wrong": [
       null,
       {
-        "zh": "「きっぱり」是干脆（拒绝、断言），不形容气温变化。",
-        "en": "「きっぱり」 is flatly (refusing, saying), not a change in temperature."
+        "zh": "「〜詰め」是塞满、一直（缶詰・立ち詰め），没有「一夜詰め」。",
+        "en": "「〜詰め」 is packed or nonstop (缶詰・立ち詰め); there's no 「一夜詰め」."
       },
       {
-        "zh": "「うっかり」是不小心，天气不会“不小心”变冷。",
-        "en": "「うっかり」 is \"carelessly\"; weather isn't careless."
+        "zh": "「〜掛け」是做到一半（読み掛け），没有「一夜掛け」。",
+        "en": "「〜掛け」 is half-done (読み掛け); there's no 「一夜掛け」."
       },
       {
-        "zh": "「ひっそり」是静悄悄，不修饰变冷。",
-        "en": "「ひっそり」 is \"quietly\"; it doesn't modify getting colder."
+        "zh": "「〜込み」是包含在内（税込み），没有「一夜込み」。",
+        "en": "「〜込み」 is included (税込み); there's no 「一夜込み」."
       }
     ]
   },

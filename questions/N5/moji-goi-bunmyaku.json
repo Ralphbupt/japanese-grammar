@@ -532,36 +532,36 @@
       "lesson03#vocab"
     ],
     "difficulty": 2,
-    "stem": "ともだちに てがみを かいて、えきの まえの（　）に いれました。",
+    "stem": "ともだちに てがみを だしに いきました。えきの まえの（　）に いれました。",
     "options": [
       "ポスト",
-      "ドア",
-      "ベッド",
-      "ペン"
+      "はこ",
+      "かばん",
+      "さいふ"
     ],
-    "kj": "友達に手紙を書いて、駅の前のポストに入れました。",
+    "kj": "友達に手紙を出しに行きました。駅の前のポストに入れました。",
     "answer": 0,
     "tr": {
-      "zh": "给朋友写了信，投进了车站前的邮筒。",
-      "en": "I wrote a letter to a friend and put it in the postbox in front of the station."
+      "zh": "我去给朋友寄信，把信投进了车站前的邮筒。",
+      "en": "I went to mail a letter to a friend and put it in the postbox in front of the station."
     },
     "why": {
-      "zh": "写好的信要投进「ポスト」（邮筒）。",
-      "en": "A finished letter goes into the 「ポスト」 (postbox)."
+      "zh": "「てがみを だす」是寄信，寄信要把信投进「ポスト」（邮筒）。",
+      "en": "「てがみを だす」 is to mail a letter, and mail goes into the 「ポスト」 (postbox)."
     },
     "wrong": [
       null,
       {
-        "zh": "「ドア」（门）不能把信“放进去”。",
-        "en": "You can't put a letter \"into\" a 「ドア」 (door)."
+        "zh": "「はこ」（箱子）不是寄信的地方，信放进去寄不出去。",
+        "en": "A 「はこ」 (box) isn't where you mail letters; it wouldn't get sent."
       },
       {
-        "zh": "车站前不会有「ベッド」（床），也不往床里放信。",
-        "en": "There's no 「ベッド」 (bed) in front of a station to post letters in."
+        "zh": "「かばん」（包）是随身带的，不会“在车站前”，也不能用来寄信。",
+        "en": "A 「かばん」 (bag) is something you carry, not a fixture in front of the station, and it doesn't send mail."
       },
       {
-        "zh": "「ペン」（笔）是写信用的，不能把信放进去。",
-        "en": "A 「ペン」 is for writing the letter, not for putting it in."
+        "zh": "「さいふ」（钱包）是放钱的，不能用来寄信。",
+        "en": "A 「さいふ」 (wallet) holds money; it doesn't send mail."
       }
     ]
   },

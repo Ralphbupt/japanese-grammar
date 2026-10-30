@@ -454,7 +454,7 @@
       "lesson22#4"
     ],
     "difficulty": 1,
-    "stem": "仕事が 忙しい 日は、[_] [_] [★] [_]。",
+    "stem": "仕事が 忙しい 日は、[★] [_] [_] [_]。",
     "options": [
       "あります",
       "昼ご飯を",
@@ -474,15 +474,16 @@
       "en": "On busy days at work, I sometimes skip lunch."
     },
     "why": {
-      "zh": "「ない形＋ことがある」= 有时不……：昼ご飯を ＋ 食べない ＋ ことが ＋ あります。★ 在第三格，是「ことが」。",
-      "en": "「ない-form ＋ ことがある」 = sometimes don't: 昼ご飯を ＋ 食べない ＋ ことが ＋ あります. The ★ is the third slot: 「ことが」."
+      "zh": "「ない形＋ことがある」= 有时不……：昼ご飯を ＋ 食べない ＋ ことが ＋ あります。★ 在第一格，是「昼ご飯を」。",
+      "en": "「ない-form ＋ ことがある」 = sometimes don't: 昼ご飯を ＋ 食べない ＋ ことが ＋ あります. The ★ is the first slot: 「昼ご飯を」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l22-013",
@@ -573,7 +574,7 @@
       "lesson22#5"
     ],
     "difficulty": 2,
-    "stem": "荷物は きのう [_] [_] [★] [_]、まだ 届きません。",
+    "stem": "荷物は きのう [★] [_] [_] [_]、まだ 届きません。",
     "options": [
       "のに",
       "届く",
@@ -593,14 +594,15 @@
       "en": "The package was supposed to arrive yesterday, but it still hasn't come."
     },
     "why": {
-      "zh": "「本应该……却没有」用「はずだったのに」：届く ＋ はず ＋ だった ＋ のに。★ 在第三格，是「だった」。",
-      "en": "\"Was supposed to… but didn't\" is 「はずだったのに」: 届く ＋ はず ＋ だった ＋ のに. The ★ is the third slot: 「だった」."
+      "zh": "「本应该……却没有」用「はずだったのに」：届く ＋ はず ＋ だった ＋ のに。★ 在第一格，是「届く」。",
+      "en": "\"Was supposed to… but didn't\" is 「はずだったのに」: 届く ＋ はず ＋ だった ＋ のに. The ★ is the first slot: 「届く」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   }
 ]

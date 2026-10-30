@@ -129,7 +129,7 @@
     "stem": "彼は優勝候補と言われていた（　）、初戦での敗退には誰もが驚いた。",
     "options": [
       "からには",
-      "ばこそ",
+      "ものの",
       "あまり",
       "だけに"
     ],
@@ -149,8 +149,8 @@
         "en": "「からには」 is followed by resolve or obligation (\"since…, must\"), not \"everyone was surprised\"."
       },
       {
-        "zh": "「ばこそ」接ば形（「言われていればこそ」），不接た形，而且表示的是积极的“正因为……才”。",
-        "en": "「ばこそ」 follows the ば-form (「言われていればこそ」), not the ta-form, and is used for positive \"only because\"."
+        "zh": "「ものの」是“虽然……但”，“虽然被说是夺冠热门，但大家都很惊讶”前后逻辑反了：正因为是热门才吃惊。",
+        "en": "「ものの」 (although) gets the logic backwards: people were surprised precisely because he was the favourite."
       },
       {
         "zh": "「あまり」表示“过于……以致……”，前面要接感情或程度（「心配のあまり」），“被称为夺冠热门”不是过度的感情。",
@@ -170,9 +170,9 @@
     "stem": "娘から何の連絡もなく、心配の（　）夜も眠れなかった。",
     "options": [
       "あまり",
-      "だけに",
-      "ものだから",
-      "からには"
+      "末に",
+      "ついでに",
+      "最中に"
     ],
     "answer": 0,
     "full": "娘から何の連絡もなく、心配の あまり 夜も眠れなかった。",
@@ -187,16 +187,16 @@
     "wrong": [
       null,
       {
-        "zh": "「だけに」接名词时要用「名詞＋な/である＋だけに」，不能接「心配の」。",
-        "en": "「だけに」 after a noun needs 「な / である」; it can't follow 「心配の」."
+        "zh": "「の末に」是“经过长时间……最后”，后面要接最终的结果或决定，不接“晚上睡不着”这种因担心而起的状态。",
+        "en": "「の末に」 (after a long ~) leads to a final outcome, not to sleepless nights caused by worry."
       },
       {
-        "zh": "「ものだから」接名词时用「名詞＋な＋ものだから」，不能接「心配の」。",
-        "en": "「ものだから」 after a noun needs 「な」 (「名詞なものだから」), not 「の」."
+        "zh": "「のついでに」是“顺便”，担心不是可以顺便做的事。",
+        "en": "「のついでに」 (while doing ~ anyway) can't apply to worrying."
       },
       {
-        "zh": "「からには」接普通形，不能接「心配の」，后面也要接决心或义务。",
-        "en": "「からには」 follows the plain form, not 「心配の」, and leads to a resolve or duty."
+        "zh": "「の最中に」是“正在……的时候（发生了别的事）”，后面要接打断的事情，不表示原因。",
+        "en": "「の最中に」 (in the middle of ~) leads to an interruption, not to a cause and result."
       }
     ]
   },
@@ -248,7 +248,7 @@
     "options": [
       "どころではない",
       "に過ぎない",
-      "に限って",
+      "ものがある",
       "に限る"
     ],
     "answer": 3,
@@ -271,8 +271,8 @@
         "en": "「に過ぎない」 (\"merely\") belittles; it doesn't recommend anything."
       },
       {
-        "zh": "「に限って」是“偏偏……”，接名词并后接意外的坏事，不能放在句末。",
-        "en": "「に限って」 (\"of all times…\") follows a noun and needs a following clause about bad luck."
+        "zh": "「ものがある」用于表达感慨（“有令人……之处”），不用于提出建议。",
+        "en": "「ものがある」 expresses being struck by something, not a recommendation."
       },
       null
     ]
@@ -286,10 +286,10 @@
     "difficulty": 2,
     "stem": "傘を持っていない日（　）、どういうわけか雨が降るんだから嫌になる。",
     "options": [
-      "をものともせず",
+      "に限らず",
       "に過ぎず",
       "に限って",
-      "に限る"
+      "にかけては"
     ],
     "answer": 2,
     "full": "傘を持っていない日 に限って、どういうわけか雨が降るんだから嫌になる。",
@@ -303,8 +303,8 @@
     },
     "wrong": [
       {
-        "zh": "「をものともせず」是“不畏……”，主语要是克服困难的人，这里说的是天气。",
-        "en": "「をものともせず」 (\"undaunted by…\") needs a person overcoming something; this is about the weather."
+        "zh": "「に限らず」是“不仅限于……”，“不只是没带伞的日子都下雨”和「どういうわけか」的抱怨接不上。",
+        "en": "「に限らず」 (not only ~) doesn't fit the complaint 「どういうわけか」 about bad luck on those days."
       },
       {
         "zh": "「に過ぎず」是“只不过……”，“只不过是没带伞的日子”和“偏偏下雨”接不上。",
@@ -312,8 +312,8 @@
       },
       null,
       {
-        "zh": "「に限る」是“……最好”，放句末表示推荐，不能修饰后面的“下雨”。",
-        "en": "「に限る」 ends a sentence with a recommendation; it can't lead into \"it rains\"."
+        "zh": "「にかけては」用于提出擅长的领域，后面接对能力的评价，不接“下雨”。",
+        "en": "「にかけては」 names a field someone excels in; it can't introduce \"it rains\"."
       }
     ]
   },
@@ -406,8 +406,8 @@
     "options": [
       "に反して",
       "に対して",
-      "につれて",
-      "に伴って"
+      "にしては",
+      "をよそに"
     ],
     "answer": 1,
     "full": "兄が社交的なの に対して、弟は人見知りでおとなしい。",
@@ -426,12 +426,12 @@
       },
       null,
       {
-        "zh": "「につれて」是“随着……”的连动变化，不用于对比。",
-        "en": "「につれて」 (\"as…\") describes linked change, not a contrast."
+        "zh": "「にしては」是“就……而言（意外）”，“就哥哥善于交际而言弟弟很内向”说不通。",
+        "en": "「にしては」 (for a ~) makes no sense: \"for the elder brother being sociable, the younger is shy\"."
       },
       {
-        "zh": "「に伴って」是“伴随……”，哥哥外向和弟弟内向之间没有伴随关系。",
-        "en": "「に伴って」 (\"along with\") — the brothers' personalities don't change together."
+        "zh": "「をよそに」是“不顾……”，后面要接某人无视周围的行动，不用于对比两个人的性格。",
+        "en": "「をよそに」 (paying no heed to ~) leads to someone ignoring something, not a contrast of two people."
       }
     ]
   },
@@ -522,8 +522,8 @@
     "difficulty": 2,
     "stem": "彼は日本に来て半年（　）、日本語がとても上手だ。",
     "options": [
-      "をめぐって",
-      "に応じて",
+      "にわたって",
+      "に限って",
       "としては",
       "にしては"
     ],
@@ -539,12 +539,12 @@
     },
     "wrong": [
       {
-        "zh": "「をめぐって」是“围绕……”，和“来日半年”没有关系。",
-        "en": "「をめぐって」 (\"concerning\") has nothing to do with \"only six months here\"."
+        "zh": "「にわたって」表示范围遍及整个期间（“在整整半年里”），后面要接持续的事情，而“日语很好”是评价。",
+        "en": "「にわたって」 (throughout ~) needs an ongoing action after it; \"his Japanese is good\" is an evaluation."
       },
       {
-        "zh": "「に応じて」是“根据……相应地”，“根据半年日语很好”说不通。",
-        "en": "「に応じて」 (\"in line with\") — \"good at Japanese in line with six months\" makes no sense."
+        "zh": "「に限って」是“偏偏……的时候”，带不满的语气，后面不接称赞。",
+        "en": "「に限って」 (of all times ~) carries annoyance; it doesn't lead to praise."
       },
       {
         "zh": "「としては」是“作为……（立场）来说”，接身份或立场，「半年としては」不成立。",
@@ -835,10 +835,10 @@
     "difficulty": 2,
     "stem": "詳しい日程が決まり（　）、参加者の皆様にご連絡いたします。",
     "options": [
-      "につき",
-      "ぶりに",
+      "つつ",
+      "ながら",
       "次第",
-      "きり"
+      "がてら"
     ],
     "answer": 2,
     "full": "詳しい日程が決まり 次第、参加者の皆様にご連絡いたします。",
@@ -852,17 +852,17 @@
     },
     "wrong": [
       {
-        "zh": "「につき」接名词表示“因为/每”，不能接ます形「決まり」。",
-        "en": "「につき」 follows a noun (\"due to / per\"), not the masu-stem 「決まり」."
+        "zh": "「つつ」是“一边……一边”，“一边决定一边联系”说不通；先决定、后联系要用「次第」。",
+        "en": "「つつ」 (while ~) doesn't fit; decide first, then contact is 「次第」."
       },
       {
-        "zh": "「ぶりに」接时间表示“时隔……”，不能接动词ます形。",
-        "en": "「ぶりに」 follows a time span (\"for the first time in…\"), not a masu-stem."
+        "zh": "「ながら」也表示同时进行，“日程一边定下来一边联系”说不通。",
+        "en": "「ながら」 is also simultaneous; it doesn't mean \"as soon as it's decided\"."
       },
       null,
       {
-        "zh": "「きり」接た形表示“自从……就再没……”，不接ます形，后面也要接否定。",
-        "en": "「きり」 follows the ta-form and leads to a negative; it doesn't follow a masu-stem."
+        "zh": "「がてら」是“顺便做某事”，前面要接散步、购物等动作，不接“日程定下来”。",
+        "en": "「がてら」 (while doing ~ anyway) follows an activity like a walk, not a schedule being set."
       }
     ]
   },
@@ -877,9 +877,9 @@
     "stem": "これだけ証拠がそろっているのだから、彼ももう言い逃れはでき（　）。",
     "options": [
       "まい",
-      "抜く",
-      "げ",
-      "きり"
+      "かねない",
+      "がちだ",
+      "そうだ"
     ],
     "answer": 0,
     "full": "これだけ証拠がそろっているのだから、彼ももう言い逃れはでき まい。",
@@ -894,16 +894,16 @@
     "wrong": [
       null,
       {
-        "zh": "「でき抜く」不成立；「抜く」接表示动作的动词（「やり抜く」），不接「できる」。",
-        "en": "「でき抜く」 isn't a word; 「抜く」 attaches to action verbs (「やり抜く」), not 「できる」."
+        "zh": "「できかねない」是“说不定能（逃脱）”，和“证据这么齐全”的前因矛盾。",
+        "en": "「できかねない」 (he might well manage) contradicts all the evidence being in."
       },
       {
-        "zh": "「げ」接形容词词干表示“看起来……”，不接动词ます形「でき」（「たげ」才接ます形）。",
-        "en": "「げ」 follows an adjective stem (\"looking…\"); it doesn't attach to the masu-stem 「でき」 (only 「たげ」 does)."
+        "zh": "「がちだ」表示容易出现某种倾向，“言い逃れはできがちだ”说不通。",
+        "en": "「がちだ」 marks a tendency; \"evasion tends to be possible\" makes no sense here."
       },
       {
-        "zh": "「きり」接た形（「できたきり」），而且“只能……”的意思和“已经无法狡辩”不符。",
-        "en": "「きり」 follows the ta-form, and \"only\" doesn't fit \"can no longer wriggle out\"."
+        "zh": "「できそうだ」是“看样子能”，和“证据都齐了”的推理正相反。",
+        "en": "「できそうだ」 (looks like he can) is the opposite of what the evidence suggests."
       }
     ]
   },

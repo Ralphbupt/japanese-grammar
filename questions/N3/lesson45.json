@@ -86,7 +86,7 @@
       "lesson45#1"
     ],
     "difficulty": 1,
-    "stem": "毎日 夜遅くまで 残業が 続いて、[_] [_] [★] [_]。",
+    "stem": "毎日 夜遅くまで 残業が 続いて、[★] [_] [_] [_]。",
     "options": [
       "いる",
       "疲れ",
@@ -105,15 +105,16 @@
       "en": "I've been working overtime late every night, and I'm completely exhausted."
     },
     "why": {
-      "zh": "もう ＋ 疲れ（ます形去ます）＋ きって ＋ いる：「〜きっている」表示极端状态。★ 在第三格，是「きって」。",
-      "en": "もう ＋ 疲れ (masu-stem) ＋ きって ＋ いる: 「〜きっている」 shows an extreme state. The ★ is the third slot: 「きって」."
+      "zh": "もう ＋ 疲れ（ます形去ます）＋ きって ＋ いる：「〜きっている」表示极端状态。★ 在第一格，是「もう」。",
+      "en": "もう ＋ 疲れ (masu-stem) ＋ きって ＋ いる: 「〜きっている」 shows an extreme state. The ★ is the first slot: 「もう」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l45-004",
@@ -202,7 +203,7 @@
       "lesson45#2"
     ],
     "difficulty": 1,
-    "stem": "一日で 単語を 千個も [_] [_] [★] [_]。",
+    "stem": "一日で 単語を 千個も [_] [★] [_] [_]。",
     "options": [
       "なんて",
       "っこない",
@@ -221,15 +222,16 @@
       "en": "Memorizing a thousand words in one day? There's no way you can do that."
     },
     "why": {
-      "zh": "覚える ＋ なんて（……什么的）＋ でき（ます形去ます）＋ っこない。★ 在第三格，是「でき」。",
-      "en": "覚える ＋ なんて ＋ でき (masu-stem) ＋ っこない. The ★ is the third slot: 「でき」."
+      "zh": "覚える ＋ なんて（……什么的）＋ でき（ます形去ます）＋ っこない。★ 在第二格，是「なんて」。",
+      "en": "覚える ＋ なんて ＋ でき (masu-stem) ＋ っこない. The ★ is the second slot: 「なんて」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l45-007",
@@ -318,7 +320,7 @@
       "lesson45#3"
     ],
     "difficulty": 2,
-    "stem": "工場で [_] [_] [★] [_] 起き、生産が 止まった。",
+    "stem": "工場で [★] [_] [_] [_] 起き、生産が 止まった。",
     "options": [
       "事態が",
       "予想し",
@@ -337,14 +339,15 @@
       "en": "Something nobody could have foreseen happened at the factory, and production stopped."
     },
     "why": {
-      "zh": "誰も ＋ 予想し（ます形去ます）＋ えない ＋ 事態が：「誰も予想しえない」修饰「事態」。★ 在第三格，是「えない」。",
-      "en": "誰も ＋ 予想し (masu-stem) ＋ えない ＋ 事態が: 「誰も予想しえない」 modifies 「事態」. The ★ is the third slot: 「えない」."
+      "zh": "誰も ＋ 予想し（ます形去ます）＋ えない ＋ 事態が：「誰も予想しえない」修饰「事態」。★ 在第一格，是「誰も」。",
+      "en": "誰も ＋ 予想し (masu-stem) ＋ えない ＋ 事態が: 「誰も予想しえない」 modifies 「事態」. The ★ is the first slot: 「誰も」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   }
 ]

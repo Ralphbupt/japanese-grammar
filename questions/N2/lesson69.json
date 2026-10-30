@@ -8,10 +8,10 @@
     "difficulty": 1,
     "stem": "この道は川（　）続いているので、散歩にちょうどいい。",
     "options": [
-      "に加えて",
+      "を中心に",
       "に沿って",
       "を除いて",
-      "を踏まえて"
+      "にわたって"
     ],
     "answer": 1,
     "full": "この道は川に沿って続いているので、散歩にちょうどいい。",
@@ -25,8 +25,8 @@
     },
     "wrong": [
       {
-        "zh": "「に加えて」是“加上……”，“路加上河继续延伸”说不通。",
-        "en": "「に加えて」 means \"in addition to\"; \"the path continues in addition to the river\" makes no sense."
+        "zh": "「を中心に」是“以……为中心”，“道路以河为中心延伸”说不通，道路是沿着河走的。",
+        "en": "「を中心に」 means 'centred on'; the path runs along the river."
       },
       null,
       {
@@ -34,8 +34,8 @@
         "en": "「を除いて」 means \"except\"; \"the path continues except the river\" makes no sense."
       },
       {
-        "zh": "「を踏まえて」是以事实、意见为依据，不用于具体的河流、道路。",
-        "en": "「を踏まえて」 builds on facts or opinions, not on a physical river."
+        "zh": "「にわたって」接时间或范围（「10キロにわたって」），不能接「川」表示沿线。",
+        "en": "「にわたって」 follows a span ('for 10 km'), not 「川」 to mean 'along'."
       }
     ]
   },
@@ -49,9 +49,9 @@
     "stem": "今回ご提案するのは、お客様のご要望（　）プランです。",
     "options": [
       "に沿って",
-      "を除いた",
+      "をめぐる",
       "に沿った",
-      "に加えた"
+      "に反した"
     ],
     "answer": 2,
     "full": "今回ご提案するのは、お客様のご要望に沿ったプランです。",
@@ -69,13 +69,13 @@
         "en": "The blank sits right before the noun 「プラン」, which needs 「に沿った」; 「に沿って」 modifies a verb."
       },
       {
-        "zh": "「ご要望を除いたプラン」是“去掉客户需求的方案”，作为提案说不通。",
-        "en": "\"A plan that leaves out your requests\" is an absurd thing to propose."
+        "zh": "「をめぐる」是“围绕……（争议）的”，向客户提议时不说“围绕您需求的方案”。",
+        "en": "「をめぐる」 means 'surrounding (a dispute)'; it doesn't describe a plan for a client."
       },
       null,
       {
-        "zh": "「に加えた」不这样修饰名词；“追加”应说「ご要望を加えた」。",
-        "en": "「に加えた」 doesn't modify a noun like this; adding them would be 「ご要望を加えた」."
+        "zh": "「に反した」是“违背……的”，向客户提议违背其要求的方案不合常理。",
+        "en": "「に反した」 means 'going against'; no one proposes a plan that goes against the client's wishes."
       }
     ]
   },
@@ -125,9 +125,9 @@
     "stem": "昨年の失敗（　）、今年は準備期間を長めに取ることにした。",
     "options": [
       "を踏まえて",
-      "を除いて",
+      "に反して",
       "に加えて",
-      "をめぐって"
+      "に先立って"
     ],
     "answer": 0,
     "full": "昨年の失敗を踏まえて、今年は準備期間を長めに取ることにした。",
@@ -142,33 +142,34 @@
     "wrong": [
       null,
       {
-        "zh": "「を除いて」是“除了去年的失败以外”，和后句接不上。",
-        "en": "「を除いて」 (\"except last year's failure\") doesn't connect to the decision."
+        "zh": "「に反して」是“与……相反”，失败不是预期，“与失败相反”说不通。",
+        "en": "「に反して」 means 'contrary to'; a failure isn't an expectation to go against."
       },
       {
         "zh": "「に加えて」是“除了去年的失败还……”，后句并不是追加的同类事。",
         "en": "「に加えて」 adds something of the same kind; the decision isn't another failure."
       },
       {
-        "zh": "「をめぐって」后面要接争论、议论等，不接“决定留长准备时间”。",
-        "en": "「をめぐって」 needs a dispute or debate after it, not this decision."
+        "zh": "「に先立って」是“在……之前”，去年的失败已经发生，不能“在失败之前”。",
+        "en": "「に先立って」 means 'prior to'; last year's failure has already happened."
       }
     ]
   },
   {
     "id": "n2-l69-005",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson69#2",
       "lesson69#5"
     ],
     "difficulty": 2,
-    "stem": "アンケートの結果を（　）上で、来月の会議で最終決定をします。",
+    "stem": "アンケートの結果を（　）、来月の会議で最終決定をします。",
     "options": [
-      "踏まえる",
-      "踏まえた",
-      "踏まえて",
-      "踏まえ"
+      "踏まえる上で",
+      "踏まえた上で",
+      "踏まえたところで",
+      "踏まえたあげく"
     ],
     "answer": 1,
     "full": "アンケートの結果を踏まえた上で、来月の会議で最終決定をします。",
@@ -177,22 +178,22 @@
       "en": "Taking the survey results into account, we'll make the final decision at next month's meeting."
     },
     "why": {
-      "zh": "表示“先……之后再……”的「上で」接动词た形，所以是「踏まえた上で」。",
-      "en": "「上で」 meaning \"after ~\" takes the ta-form: 「踏まえた上で」."
+      "zh": "「た形＋上で」表示“先……，然后再……”：先参考问卷结果，再在会上做决定。",
+      "en": "「た形 ＋ 上で」 means 'after first…, then': consider the survey results, then decide at the meeting."
     },
     "wrong": [
       {
-        "zh": "辞书形＋「上で」是“在……方面”，“在考虑结果方面做决定”说不通。",
-        "en": "Dictionary form + 「上で」 means \"in doing ~\", which makes no sense here."
+        "zh": "「辞書形＋上で」是“在……过程中/为了……”，这里是“先参考结果，然后再决定”，要用「た形＋上で」。",
+        "en": "「dictionary form ＋ 上で」 means 'in the process of'; 'first consider, then decide' needs 「た形 ＋ 上で」."
       },
       null,
       {
-        "zh": "「上で」前面不能接て形。",
-        "en": "「上で」 can't follow the te-form."
+        "zh": "「たところで」是“即使……也（没用）”，后面要接否定的结果，这里是正常的工作流程。",
+        "en": "「たところで」 means 'even if… (it's no use)'; this is just the next step."
       },
       {
-        "zh": "「上で」前面不能接连用形「踏まえ」。",
-        "en": "「上で」 can't follow the stem 「踏まえ」."
+        "zh": "「あげく」用于折腾半天结果不好，“参考调查结果后做决定”是正常顺序。",
+        "en": "「あげく」 marks a bad outcome after much trouble; this is a normal sequence."
       }
     ]
   },
@@ -241,9 +242,9 @@
     "difficulty": 1,
     "stem": "この図書館は、月曜日（　）毎日開いています。",
     "options": [
-      "に沿って",
+      "に限って",
       "に加えて",
-      "を踏まえて",
+      "をはじめ",
       "を除いて"
     ],
     "answer": 3,
@@ -258,16 +259,16 @@
     },
     "wrong": [
       {
-        "zh": "「に沿って」是“沿着／按照”，不能用于星期。",
-        "en": "「に沿って」 (along / in line with) doesn't fit a day of the week."
+        "zh": "「に限って」是“唯独/偏偏……”，和后面「毎日」矛盾。",
+        "en": "「に限って」 means 'only (on)', which clashes with 「毎日」."
       },
       {
         "zh": "「に加えて」是“加上周一”，可周一本来就包含在“每天”里，说不通。",
         "en": "「に加えて」 (\"in addition to Monday\") makes no sense — Monday is already part of every day."
       },
       {
-        "zh": "「を踏まえて」以事实、意见为依据，不用于星期。",
-        "en": "「を踏まえて」 builds on facts or opinions, not a weekday."
+        "zh": "「をはじめ」是“以……为首（还有……）”，“以周一为首每天开放”说不通，周一是闭馆日。",
+        "en": "「をはじめ」 means 'starting with'; Monday is the day it's closed, not the first example."
       },
       null
     ]
@@ -284,8 +285,8 @@
     "options": [
       "に加えて",
       "を除いて",
-      "の末に",
-      "に沿って"
+      "をはじめ",
+      "に限って"
     ],
     "answer": 1,
     "full": "今回の会議には、出張中の田中さんを除いて、全員が出席した。",
@@ -304,12 +305,12 @@
       },
       null,
       {
-        "zh": "「の末に」是“经过漫长的……最终”，人名后面不能这样用。",
-        "en": "「の末に」 (after a long ~) can't follow a person."
+        "zh": "「をはじめ」是“以……为首都……”，田中在出差，不可能出席。",
+        "en": "「をはじめ」 means 'including first'; Tanaka is away on business, so he can't be among them."
       },
       {
-        "zh": "「に沿って」是“沿着／按照”，人名后面说不通。",
-        "en": "「に沿って」 (along / in line with) makes no sense after a person."
+        "zh": "「に限って」是“唯独/偏偏……”，和「全員」矛盾。",
+        "en": "「に限って」 means 'only', which clashes with 「全員」."
       }
     ]
   },
@@ -359,9 +360,9 @@
     "stem": "この仕事では、日本語の能力（　）、パソコンのスキルも求められる。",
     "options": [
       "を除いて",
-      "の末に",
+      "にかわって",
       "に加えて",
-      "に沿って"
+      "に比べて"
     ],
     "answer": 2,
     "full": "この仕事では、日本語の能力に加えて、パソコンのスキルも求められる。",
@@ -379,53 +380,54 @@
         "en": "「を除いて」 excludes Japanese, which clashes with 「も」 (also)."
       },
       {
-        "zh": "「の末に」是“经过漫长的……最终”，不表示追加。",
-        "en": "「の末に」 (after a long ~) doesn't add an item."
+        "zh": "「にかわって」是“代替……”，后面「パソコンのスキルも」的「も」表示两者都要。",
+        "en": "「にかわって」 means 'in place of', but 「も」 says both are required."
       },
       null,
       {
-        "zh": "「に沿って」是“按照……”，“按照日语能力也要求电脑技能”说不通。",
-        "en": "「に沿って」 (in line with) makes no sense with 「も」 adding a second skill."
+        "zh": "「に比べて」用于比较程度，后面要接「より重視される」之类，和「も」不搭。",
+        "en": "「に比べて」 compares degrees; it doesn't go with 「も」 ('also')."
       }
     ]
   },
   {
     "id": "n2-l69-011",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson69#4"
     ],
     "difficulty": 2,
-    "stem": "最近うちの会社は、人手不足に加え、（　）。",
+    "stem": "最近うちの会社は、人手不足（　）、資金も足りなくなってきた。",
     "options": [
-      "人手は足りている",
-      "資金は十分にある",
-      "資金も足りなくなってきた",
-      "何も問題はない"
+      "に加え",
+      "に反し",
+      "に先立ち",
+      "を除き"
     ],
-    "answer": 2,
+    "answer": 0,
     "full": "最近うちの会社は、人手不足に加え、資金も足りなくなってきた。",
     "tr": {
       "zh": "最近我们公司除了人手不足，资金也开始不够了。",
       "en": "Lately our company has been short of staff, and on top of that money is running short too."
     },
     "why": {
-      "zh": "「に加え」是在已有的事上追加同类的事：人手不足，再加上资金也不够。",
-      "en": "「に加え」 adds something of the same kind: short of staff, and money too."
+      "zh": "「資金も」的「も」表示追加：人手不足，再加上资金也不够了，用「に加え」（=「に加えて」）。",
+      "en": "The 「も」 in 「資金も」 adds a second problem: 「に加え」 (= 「に加えて」) 'on top of the staff shortage'."
     },
     "wrong": [
-      {
-        "zh": "“人手很够”和前面的“人手不足”矛盾。",
-        "en": "\"We have enough staff\" contradicts 「人手不足」."
-      },
-      {
-        "zh": "“资金很充足”是相反方向的情况，不能用「に加え」追加。",
-        "en": "\"We have plenty of money\" goes the other way; 「に加え」 can't add it."
-      },
       null,
       {
-        "zh": "“没有任何问题”和前面的人手不足矛盾。",
-        "en": "\"There are no problems\" contradicts the staff shortage."
+        "zh": "「に反し」是“与……相反”，人手不足和资金不足是同方向的问题，不是相反。",
+        "en": "「に反し」 means 'contrary to'; both problems point the same way."
+      },
+      {
+        "zh": "「に先立ち」是“在……之前（先做某事）”，后面要接人的行动，不接问题的累加。",
+        "en": "「に先立ち」 means 'prior to' and leads to an action, not another problem."
+      },
+      {
+        "zh": "「を除き」是“除了……”，和后面「資金も」的「も」矛盾。",
+        "en": "「を除き」 means 'except', which clashes with 「資金も」 ('also funds')."
       }
     ]
   },
@@ -467,17 +469,18 @@
   },
   {
     "id": "n2-l69-013",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson69#5"
     ],
     "difficulty": 1,
-    "stem": "契約書の内容をよく（　）上で、サインしてください。",
+    "stem": "契約書の内容をよく（　）、サインしてください。",
     "options": [
-      "読む",
-      "読んで",
-      "読もう",
-      "読んだ"
+      "読んでからでないと",
+      "読むついでに",
+      "読んだとたんに",
+      "読んだ上で"
     ],
     "answer": 3,
     "full": "契約書の内容をよく読んだ上で、サインしてください。",
@@ -486,21 +489,21 @@
       "en": "Please read the contract carefully before you sign it."
     },
     "why": {
-      "zh": "“先读再签字”，表示先后的「上で」接动词た形：「読んだ上で」。",
-      "en": "\"Read, then sign\": 「上で」 for sequence takes the ta-form — 「読んだ上で」."
+      "zh": "「た形＋上で」表示“先……，再……”：先仔细读合同，再签字。",
+      "en": "「た形 ＋ 上で」 means 'after first…': read the contract carefully, then sign."
     },
     "wrong": [
       {
-        "zh": "辞书形＋「上で」是“在……方面”，“在读合同方面签字”说不通。",
-        "en": "Dictionary form + 「上で」 means \"in doing ~\" — \"in reading, sign\" makes no sense."
+        "zh": "「てからでないと」后面要接否定（“不……就不能……”），这里是「サインしてください」。",
+        "en": "「てからでないと」 needs a negative ending; this sentence ends 「サインしてください」."
       },
       {
-        "zh": "「上で」前面不能接て形。",
-        "en": "「上で」 can't follow the te-form."
+        "zh": "「ついでに」是“顺便……”，签合同不是读合同时顺手做的事，这里要先读再签。",
+        "en": "「ついでに」 means 'while you're at it'; signing comes after reading, not alongside it."
       },
       {
-        "zh": "「上で」前面不能接意志形。",
-        "en": "「上で」 can't follow the volitional form."
+        "zh": "「たとたんに」表示意外地紧接着发生，不能用于请求，也不接「てください」。",
+        "en": "「たとたんに」 is for a sudden, unplanned event and can't lead into a request."
       },
       null
     ]
@@ -514,9 +517,9 @@
     "difficulty": 2,
     "stem": "外国で生活する（　）、その国の言葉は欠かせない。",
     "options": [
-      "末に",
+      "わりに",
       "上で",
-      "あげく",
+      "ついでに",
       "ことなく"
     ],
     "answer": 1,
@@ -531,13 +534,13 @@
     },
     "wrong": [
       {
-        "zh": "「末に」要接た形或「名词＋の」，表示漫长过程后的结果，这里不是。",
-        "en": "「末に」 takes the ta-form or 「Nの」 and marks the end of a long process — not this."
+        "zh": "「わりに」是“与……相比出乎意料”，后面要接与预想不同的结果，这里是“在国外生活需要当地语言”的条件。",
+        "en": "「わりに」 marks something unexpected; this states a requirement for living abroad."
       },
       null,
       {
-        "zh": "「あげく」要接た形，表示折腾后的（坏）结果，这里不是。",
-        "en": "「あげく」 takes the ta-form and marks a (bad) result after a struggle — not this."
+        "zh": "「ついでに」是“顺便……”，“在国外生活顺便，语言不可缺”说不通。",
+        "en": "「ついでに」 means 'while doing'; it doesn't introduce a requirement."
       },
       {
         "zh": "「ことなく」是“不……就”，“不在国外生活，语言不可缺少”说不通。",
@@ -590,9 +593,9 @@
     "difficulty": 2,
     "stem": "半年にわたる交渉（　）、ようやく契約がまとまった。",
     "options": [
-      "に沿って",
+      "の最中に",
       "に加えて",
-      "を除いて",
+      "のあげく",
       "の末に"
     ],
     "answer": 3,
@@ -607,57 +610,58 @@
     },
     "wrong": [
       {
-        "zh": "「に沿って」是“按照……”，“按照谈判终于谈妥”说不通。",
-        "en": "「に沿って」 (in line with) doesn't fit \"finally agreed\"."
+        "zh": "「の最中に」是“正在……的时候”，后面接突然发生的事，和「ようやく」（终于）不符。",
+        "en": "「の最中に」 means 'in the middle of' and introduces an interruption, not 「ようやく」 ('at last')."
       },
       {
         "zh": "「に加えて」是“加上谈判”，后面没有追加的同类事。",
         "en": "「に加えて」 needs a second item of the same kind; there isn't one."
       },
       {
-        "zh": "「を除いて」是“除了谈判”，说不通。",
-        "en": "「を除いて」 (except the negotiations) makes no sense."
+        "zh": "「あげく」用于折腾后结果不好，“终于签成合同”是好结果，要用「末に」。",
+        "en": "「あげく」 marks a bad end after much trouble; finally closing the deal is a good outcome, so 「末に」."
       },
       null
     ]
   },
   {
     "id": "n2-l69-017",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson69#6"
     ],
     "difficulty": 1,
-    "stem": "いろいろ（　）末、会社を辞めて留学することにした。",
+    "stem": "いろいろ悩んだ（　）、会社を辞めて留学することにした。",
     "options": [
-      "悩んで",
-      "悩んだ",
-      "悩む",
-      "悩み"
+      "とたん",
+      "きり",
+      "末",
+      "うえに"
     ],
-    "answer": 1,
+    "answer": 2,
     "full": "いろいろ悩んだ末、会社を辞めて留学することにした。",
     "tr": {
       "zh": "经过种种苦恼，决定辞职去留学。",
       "en": "After much agonizing, I decided to quit my job and study abroad."
     },
     "why": {
-      "zh": "「末」前面接动词た形（或「名词＋の」）：「悩んだ末」。",
-      "en": "「末」 follows the ta-form (or 「Nの」): 「悩んだ末」."
+      "zh": "经过反复烦恼最终做出决定：「た形＋末（に）」。",
+      "en": "After a long struggle came the decision: 「た形 ＋ 末（に）」."
     },
     "wrong": [
       {
-        "zh": "「末」前面不能接て形。",
-        "en": "「末」 can't follow the te-form."
+        "zh": "「たとたん」表示紧接着发生意外的事，不能接“经过考虑做出的决定”。",
+        "en": "「たとたん」 is for a sudden event, not a decision reached after thought."
+      },
+      {
+        "zh": "「たきり」是“……之后就一直没……”，后面要接否定的持续状态。",
+        "en": "「たきり」 means 'and then never…' and needs a lasting negative state."
       },
       null,
       {
-        "zh": "「末」前面要接た形，不接辞书形。",
-        "en": "「末」 takes the ta-form, not the dictionary form."
-      },
-      {
-        "zh": "名词「悩み」后面要加「の」（「悩みの末」），而且「いろいろ」修饰的是动词。",
-        "en": "The noun 「悩み」 would need 「の」, and 「いろいろ」 here modifies a verb."
+        "zh": "「うえに」是追加（“不仅……而且”），“烦恼”和“决定留学”是先后经过，不是追加。",
+        "en": "「うえに」 adds more of the same; worrying led to the decision, it isn't an addition."
       }
     ]
   },

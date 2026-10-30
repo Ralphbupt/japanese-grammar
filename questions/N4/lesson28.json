@@ -30,7 +30,7 @@
     "refs": ["lesson28#1"],
     "difficulty": 1,
     "stem": "学生「先生の 新しい 本を（　）。とても 勉強に なりました。」",
-    "options": ["拝見しました", "ご覧に なりました", "お見しました", "拝見されました"],
+    "options": ["拝見しました", "ご覧に なりました", "お見せしました", "見られました"],
     "answer": 0,
     "full": "学生「先生の 新しい 本を 拝見しました。とても 勉強に なりました。」",
     "kj": "学生「先生の新しい本を拝見しました。とても勉強になりました。」",
@@ -45,8 +45,8 @@
     "wrong": [
       null,
       { "zh": "「ご覧になる」是尊敬語，不能用于自己的动作。", "en": "「ご覧になる」 is 尊敬語 and can't describe your own action." },
-      { "zh": "「見る」有特殊謙譲語「拝見する」，没有「お見します」这种说法。", "en": "「見る」 has the special humble 「拝見する」; 「お見します」 doesn't exist." },
-      { "zh": "「拝見される」把謙譲語和尊敬的「される」混在一起，是错误说法。", "en": "「拝見される」 mixes a humble verb with honorific 「される」 — incorrect." }
+      { "zh": "「お見せしました」是“我给（别人）看了”，后面“很受益”说明是我自己读了书。", "en": "「お見せしました」 is \"I showed it (to someone)\", but 「勉強に なりました」 shows I read it myself." },
+      { "zh": "「見られました」是尊敬或被动，不能用于自己的动作，也不是谦让。", "en": "「見られました」 is honorific or passive — not for your own action, and not humble." }
     ]
   },
   {
@@ -100,7 +100,7 @@
     "refs": ["lesson28#2"],
     "difficulty": 2,
     "stem": "それでは、会議室まで 私が（　）。どうぞ こちらへ。",
-    "options": ["ご案内します", "お案内します", "ご案内に なります", "案内されます"],
+    "options": ["ご案内します", "ご案内ください", "ご案内に なります", "案内されます"],
     "answer": 0,
     "full": "それでは、会議室まで 私が ご案内します。どうぞ こちらへ。",
     "kj": "それでは、会議室まで私がご案内します。どうぞこちらへ。",
@@ -114,7 +114,7 @@
     },
     "wrong": [
       null,
-      { "zh": "汉语词「案内」前加「ご」，不加「お」。", "en": "Sino-Japanese 「案内」 takes 「ご」, not 「お」." },
+      { "zh": "「ご案内ください」是请对方带路，可主语是「私が」。", "en": "「ご案内ください」 asks the other person to show the way, but the subject is 「私が」." },
       { "zh": "「ご〜になる」是尊敬語，不能用于「私が」的动作。", "en": "「ご〜になる」 is 尊敬語 — not for 「私が」." },
       { "zh": "「案内される」是尊敬或被动，用在自己身上不对。", "en": "「案内される」 is honorific or passive — wrong for your own action." }
     ]
@@ -191,10 +191,11 @@
   },
   {
     "id": "n4-l28-009",
+    "rev": 2,
     "type": "narabe",
     "refs": ["lesson28#3"],
     "difficulty": 2,
-    "stem": "それでは、新しい 計画に ついて、[_] [_] [★] [_]。",
+    "stem": "それでは、新しい 計画に ついて、[_] [_] [_] [★]。",
     "options": ["私から", "説明", "させて", "いただきます"],
     "order": [0, 1, 2, 3],
     "full": "それでは、新しい 計画に ついて、私から 説明 させて いただきます。",
@@ -204,8 +205,8 @@
       "en": "Now, allow me to explain the new plan."
     },
     "why": {
-      "zh": "「私から」（由我）＋「説明させていただきます」（请允许我说明）。★ 在第三格，是「させて」。",
-      "en": "「私から」 (from me) ＋ 「説明させていただきます」 (allow me to explain). The ★ is the third slot: 「させて」."
+      "zh": "「私から」（由我）＋「説明させていただきます」（请允许我说明）。★ 在第四格，是「いただきます」。",
+      "en": "「私から」 (from me) ＋ 「説明させていただきます」 (allow me to explain). The ★ is the fourth slot: 「いただきます」."
     },
     "wrong": [null, null, null, null]
   },
@@ -240,7 +241,7 @@
     "refs": ["lesson28#4", "lesson28#2"],
     "difficulty": 2,
     "stem": "お客様「この ペン、使っても いいですか。」\n店員「はい、どうぞ（　）。」",
-    "options": ["お使いください", "お使いして ください", "お使いいたして ください", "使わせて いただいて ください"],
+    "options": ["お使いください", "お使いして ください", "お使いします", "使わせて ください"],
     "answer": 0,
     "full": "お客様「この ペン、使っても いいですか。」 店員「はい、どうぞ お使いください。」",
     "kj": "お客様「このペン、使ってもいいですか。」\n店員「はい、どうぞお使いください。」",
@@ -255,16 +256,17 @@
     "wrong": [
       null,
       { "zh": "「お〜する」是謙譲語，用在客人的动作上就是贬低对方。", "en": "「お〜する」 is humble; using it for the customer's action lowers them." },
-      { "zh": "「お〜いたす」是更郑重的謙譲語，同样只能用于自己。", "en": "「お〜いたす」 is an even humbler form — still only for yourself." },
-      { "zh": "「させていただく」是“请允许我做”，主语是自己，不能请客人这样做。", "en": "「させていただく」 is \"allow me to\" — about yourself; it can't be a request to the customer." }
+      { "zh": "「お使いします」是谦让语，主语是店员自己，“我来用”和请客人用对不上。", "en": "「お使いします」 is humble, about the clerk using it — not inviting the customer to." },
+      { "zh": "「使わせて ください」是“请让我用”，那是客人说的话，不是店员的回答。", "en": "「使わせて ください」 (please let me use it) is what the customer would say, not the clerk's reply." }
     ]
   },
   {
     "id": "n4-l28-012",
+    "rev": 2,
     "type": "narabe",
     "refs": ["lesson28#4", "lesson28#1"],
     "difficulty": 3,
-    "stem": "先週 先生の お宅で、[_] [_] [★] [_] いただきました。",
+    "stem": "先週 先生の お宅で、[_] [_] [_] [★] いただきました。",
     "options": ["奥様が", "作って", "くださった", "料理を"],
     "order": [0, 1, 2, 3],
     "full": "先週 先生の お宅で、奥様が 作って くださった 料理を いただきました。",
@@ -274,8 +276,8 @@
       "en": "Last week at my professor's home, I had a meal his wife made for us."
     },
     "why": {
-      "zh": "师母做菜用尊敬的「作ってくださった」修饰「料理」，我吃用謙譲語「いただきました」。★ 在第三格，是「くださった」。",
-      "en": "The wife's cooking is honorific 「作ってくださった」, modifying 「料理」; my eating is humble 「いただきました」. The ★ is the third slot: 「くださった」."
+      "zh": "师母做菜用尊敬的「作ってくださった」修饰「料理」，我吃用謙譲語「いただきました」。★ 在第四格，是「料理を」。",
+      "en": "The wife's cooking is honorific 「作ってくださった」, modifying 「料理」; my eating is humble 「いただきました」. The ★ is the fourth slot: 「料理を」."
     },
     "wrong": [null, null, null, null]
   }

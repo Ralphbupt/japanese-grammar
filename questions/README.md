@@ -21,7 +21,7 @@ Field-level format: the header comment in `build-quiz.js`. Reference examples: `
 | | `tougou` | 統合理解 (N2) | two texts in one passage, headed `A` and `B` on their own lines | |
 | | `shuchou` | 主張理解（長文）(N2) | one argumentative text | |
 
-Furigana follows the real test: none in vocabulary; N5/N4 grammar and reading have it; N3/N2 have none in the question (the finished sentence and explanations shown after answering keep it). Never write readings yourself.
+Furigana follows the real test: none in vocabulary; N5/N4 grammar and reading have it; N3 grammar and reading have it only on words with kanji above N4 (`BASIC_KANJI` in `build-quiz.js` lists the N5/N4 kanji that go bare); N2/N1 have none in the question (the finished sentence and explanations shown after answering keep it). Never write readings yourself.
 
 Several files of the same kind (`moji-goi-kanji.json`, `dokkai-info.json` …) are fine; ids must be unique per level. Ranges used for N5: `n5-mg-1xx` kanji, `2xx` hyouki, `3xx` bunmyaku, `4xx` iikae; `n5-dk-1xx` bunshou, `2xx` short, `3xx` mid, `4xx` info.
 

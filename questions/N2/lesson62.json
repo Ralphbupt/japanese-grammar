@@ -48,7 +48,7 @@
     "difficulty": 2,
     "stem": "彼は英語（　）、アラビア語やスワヒリ語まで話せる。",
     "options": [
-      "ばかりに",
+      "に比べて",
       "にしては",
       "はもとより",
       "をきっかけに"
@@ -65,33 +65,34 @@
     },
     "wrong": [
       {
-        "zh": "「ばかりに」是“就因为……导致坏结果”，和“会说多国语言”不符。",
-        "en": "「ばかりに」 (only because… bad result) doesn't fit speaking many languages."
+        "zh": "「に比べて」用于比较两者，后面应接比较的结果，不能接“连……都会说”。",
+        "en": "「に比べて」 compares two things; it can't lead to 'can even speak…'."
       },
       {
-        "zh": "「にしては」是“就……而言（出乎意料）”，“就英语而言会说阿拉伯语”说不通。",
-        "en": "「にしては」 (for a…, surprisingly) makes no sense with English here."
+        "zh": "「にしては」是“就……而言（出乎意料）”，与“英语就不用说了”的递进不符。",
+        "en": "「にしては」 means 'for a…, surprisingly', not 'let alone'."
       },
       null,
       {
-        "zh": "「をきっかけに」是“以……为契机”，后面要接开始或变化，“会说”只是现状。",
-        "en": "「をきっかけに」 needs a change or a start after it; 「話せる」 is just a present ability."
+        "zh": "「をきっかけに」是“以……为契机”，表示开始的原因，不是“……自不必说”。",
+        "en": "「をきっかけに」 means 'triggered by', not 'not to mention'."
       }
     ]
   },
   {
     "id": "n2-l62-003",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson62#1"
     ],
-    "difficulty": 3,
-    "stem": "この地域は道が複雑で、（　）はもとより、地元の人でさえ迷うことがある。",
+    "difficulty": 2,
+    "stem": "この地域は道が複雑で、初めて訪れる観光客（　）、地元の人でさえ迷うことがある。",
     "options": [
-      "長年住んでいる住民",
-      "初めて訪れる観光客",
-      "地元の案内人",
-      "道に詳しい人"
+      "に限って",
+      "はもとより",
+      "に比べて",
+      "にとって"
     ],
     "answer": 1,
     "full": "この地域は道が複雑で、初めて訪れる観光客はもとより、地元の人でさえ迷うことがある。",
@@ -100,22 +101,22 @@
       "en": "The streets here are a maze — first-time visitors aside, even locals sometimes get lost."
     },
     "why": {
-      "zh": "「AはもとよりBでさえ」中A是理所当然的情况，B是出乎意料的情况。当地人都迷路，那初次来的游客迷路当然理所当然。",
-      "en": "In 「AはもとよりBでさえ」, A is the obvious case and B the surprising one. If even locals get lost, first-time tourists getting lost goes without saying."
+      "zh": "「AはもとよりBでさえ」中A是理所当然的情况，B是出乎意料的情况：游客迷路理所当然，连当地人都会迷路。",
+      "en": "In 「AはもとよりBでさえ」, A is the obvious case and B the surprising one: tourists get lost, of course — even locals do."
     },
     "wrong": [
       {
-        "zh": "长年居住的居民就是“当地人”，不能作为比当地人更理所当然会迷路的人。",
-        "en": "Long-time residents are the locals themselves, not the more obvious case."
+        "zh": "「に限って」是“偏偏……/唯独……”，不能和「でさえ」构成递进。",
+        "en": "「に限って」 means 'of all people / only', and can't build up to 「でさえ」."
       },
       null,
       {
-        "zh": "当地向导比当地人更熟悉路，他们迷路不是“理所当然”的。",
-        "en": "A local guide knows the streets better than locals, so their getting lost isn't the obvious case."
+        "zh": "「に比べて」后面应接比较结果，「地元の人でさえ迷う」不是比较。",
+        "en": "「に比べて」 needs a comparison after it; 「地元の人でさえ迷う」 isn't one."
       },
       {
-        "zh": "熟悉路的人迷路并不理所当然，和「はもとより」的逻辑相反。",
-        "en": "People who know the roads well aren't the obvious ones to get lost — that reverses the logic of 「はもとより」."
+        "zh": "「にとって」是“对……来说”，后面应接评价（“很难”等），不能接“连当地人都会迷路”。",
+        "en": "「にとって」 means 'for someone' and needs an evaluation after it, not 'even locals get lost'."
       }
     ]
   },
@@ -165,7 +166,7 @@
     "stem": "喫煙は本人（　）、周囲の人々の健康にも害を及ぼす。",
     "options": [
       "に限り",
-      "ばかりに",
+      "に代わって",
       "にほかならず",
       "のみならず"
     ],
@@ -181,16 +182,16 @@
     },
     "wrong": [
       {
-        "zh": "「に限り」是“只限于……”，和后面的「周囲の人々にも」矛盾。",
-        "en": "「に限り」 (only) contradicts 「周囲の人々にも」."
+        "zh": "「に限り」是“仅限……”，与后面的「も」（也）矛盾。",
+        "en": "「に限り」 means 'only', which clashes with 「も」 (also)."
       },
       {
-        "zh": "「ばかりに」接名词要用「である」，而且表示“就因为……”，意思不通。",
-        "en": "「ばかりに」 needs 「である」 after a noun and means \"only because\", which doesn't fit."
+        "zh": "「に代わって」是“代替……”，与“不仅本人，也……”的递进不符。",
+        "en": "「に代わって」 means 'in place of', not 'not only'."
       },
       {
-        "zh": "「にほかならず」是“正是……”，“吸烟正是本人”意思不通。",
-        "en": "「にほかならず」 (is nothing but) makes no sense here."
+        "zh": "「にほかならず」是“正是……”，用于断定，不表示“不仅”。",
+        "en": "「にほかならず」 means 'is nothing other than', not 'not only'."
       },
       null
     ]
@@ -204,8 +205,8 @@
     "difficulty": 2,
     "stem": "あの歌手は歌がうまい（　）、作詞や作曲の才能もある。",
     "options": [
-      "はもとより",
-      "をはじめ",
+      "わりに",
+      "くせに",
       "のみならず",
       "にしろ"
     ],
@@ -221,17 +222,17 @@
     },
     "wrong": [
       {
-        "zh": "「はもとより」只接名词，不能直接接形容词「うまい」。",
-        "en": "「はもとより」 only follows nouns, not the adjective 「うまい」."
+        "zh": "「わりに」是“与……相比出乎意料”，后面应接相反的情况，而“还有作曲才能”是递进。",
+        "en": "「わりに」 means 'considering…, unexpectedly'; having composing talent too is an addition, not a surprise."
       },
       {
-        "zh": "「をはじめ」是“以……为首”，只接名词。",
-        "en": "「をはじめ」 (starting with) only follows nouns."
+        "zh": "「くせに」是“明明……却”，带责备语气，与称赞的内容不符。",
+        "en": "「くせに」 is reproachful; it doesn't fit praise."
       },
       null,
       {
-        "zh": "「にしろ」是“即使……也”，“即使唱得好，也有才华”逻辑不通。",
-        "en": "「にしろ」 (even if) gives \"even if she sings well, she has talent\", which doesn't follow."
+        "zh": "「にしろ」是“即使……”，表示让步，后面应是转折。",
+        "en": "「にしろ」 means 'even if' and needs a contrast after it."
       }
     ]
   },

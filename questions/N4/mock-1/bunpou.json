@@ -1,48 +1,49 @@
 [
   {
     "id": "n4-m1-101",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson19#1"
     ],
     "difficulty": 1,
-    "stem": "けさ こんで いる 電車の 中で、となりの 人に 足を （　）、とても いたかったです。",
+    "stem": "きのうの 夜、となりの へやの 学生たちに おそくまで （　）、ぜんぜん 寝られませんでした。",
     "options": [
-      "ふまれて",
-      "ふませて",
-      "ふんで",
-      "ふまされて"
+      "さわがれて",
+      "さわがせて",
+      "さわいで",
+      "さわがされて"
     ],
     "okj": [
-      "踏まれて",
-      "踏ませて",
-      "踏んで",
-      "踏まされて"
+      "騒がれて",
+      "騒がせて",
+      "騒いで",
+      "騒がされて"
     ],
     "answer": 0,
-    "full": "けさ こんで いる 電車の 中で、となりの 人に 足を ふまれて、とても いたかったです。",
-    "kj": "今朝混んでいる電車の中で、隣の人に足を踏まれて、とても痛かったです。",
+    "full": "きのうの 夜、となりの へやの 学生たちに おそくまで さわがれて、ぜんぜん 寝られませんでした。",
+    "kj": "昨日の夜、隣の部屋の学生たちに遅くまで騒がれて、全然寝られませんでした。",
     "tr": {
-      "zh": "今天早上在拥挤的电车里，被旁边的人踩了脚，非常疼。",
-      "en": "This morning on a crowded train, the person next to me stepped on my foot, and it really hurt."
+      "zh": "昨天晚上隔壁房间的学生们一直吵到很晚，我完全睡不着。",
+      "en": "Last night the students next door made noise until late, and I couldn't sleep at all."
     },
     "why": {
-      "zh": "「となりの 人に」是动作的发出者，脚被踩、疼的是我，这是受害的被动：「人に 足を ふまれる」。",
-      "en": "「となりの 人に」 is who did it, and I'm the one hurt — the suffering passive: 「人に 足を ふまれる」."
+      "zh": "「学生たちに」是吵闹的人，睡不着、受害的是我：受害被动「人に さわがれる」。",
+      "en": "「学生たちに」 are the ones making noise and I'm the one who suffers — the suffering passive 「人に さわがれる」."
     },
     "wrong": [
       null,
       {
-        "zh": "「ふませて」是使役（让别人踩），没有人会故意让人踩自己的脚然后喊疼。",
-        "en": "「ふませて」 is causative (let someone step on it) — nobody lets a stranger do that and then complains it hurt."
+        "zh": "「さわがせて」是使役（我让他们吵），那我就不会抱怨睡不着。",
+        "en": "「さわがせて」 is causative (I let them make noise) — then why complain I couldn't sleep?"
       },
       {
-        "zh": "「ふんで」是主动（我踩），和「人に」接不上，也说不通“我疼”。",
-        "en": "「ふんで」 is active (I stepped); it doesn't go with 「人に」, and then why would I be the one in pain?"
+        "zh": "「さわいで」是主动（吵闹的是我），和「学生たちに」接不上。",
+        "en": "「さわいで」 is active (I made noise); it doesn't fit 「学生たちに」."
       },
       {
-        "zh": "「ふまされて」是使役被动（被迫去踩），意思完全不对。",
-        "en": "「ふまされて」 is causative-passive (be made to step on something) — wrong meaning."
+        "zh": "「さわがされて」是使役被动（我被迫吵闹），意思不对。",
+        "en": "「さわがされて」 is causative-passive (I was made to make noise) — wrong meaning."
       }
     ]
   },
@@ -89,53 +90,55 @@
   },
   {
     "id": "n4-m1-103",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson19#2"
     ],
     "difficulty": 2,
-    "stem": "子どもの ころ、わたしは ピアノが きらいでしたが、母に 毎日 一時間 （　）。",
+    "stem": "中学生の とき、サッカー部の 練習で、毎日 先輩に グラウンドを 10しゅうも （　）。",
     "options": [
-      "練習させられました",
-      "練習させました",
-      "練習されました",
-      "練習して くれました"
+      "走らされました",
+      "走らせました",
+      "走られました",
+      "走って くれました"
     ],
     "answer": 0,
-    "full": "子どもの ころ、わたしは ピアノが きらいでしたが、母に 毎日 一時間 練習させられました。",
-    "kj": "子どものころ、私はピアノが嫌いでしたが、母に毎日一時間練習させられました。",
+    "full": "中学生の とき、サッカー部の 練習で、毎日 先輩に グラウンドを 10しゅうも 走らされました。",
+    "kj": "中学生のとき、サッカー部の練習で、毎日先輩にグラウンドを10周も走らされました。",
     "tr": {
-      "zh": "小时候我讨厌钢琴，但每天被妈妈逼着练一个小时。",
-      "en": "As a child I hated the piano, but my mother made me practise an hour every day."
+      "zh": "上中学时，足球部训练每天都被前辈逼着绕操场跑十圈。",
+      "en": "In junior high, at football club practice, the older members made me run ten laps of the field every day."
     },
     "why": {
-      "zh": "主语「わたしは」讨厌钢琴，却被「母に」逼着练：不情愿地被迫做，用使役被动「〜させられる」。",
-      "en": "「わたしは」 hated it but was made to practise by 「母に」: doing something against your will is the causative-passive 「〜させられる」."
+      "zh": "「先輩に」逼我跑，「10しゅうも」说明不情愿：被迫做某事用使役被动，一类动词口语缩略为「走らされる」。",
+      "en": "「先輩に」 made me run, and 「10しゅうも」 shows I didn't want to: being made to do something is the causative-passive, contracted to 「走らされる」 for an う-verb."
     },
     "wrong": [
       null,
       {
-        "zh": "「練習させました」是“我让（某人）练”，和「母に」「きらいでしたが」都接不上。",
-        "en": "「練習させました」 is \"I made (someone) practise\" — it fits neither 「母に」 nor \"I hated it, but\"."
+        "zh": "「走らせました」是“我让（别人）跑”，和「先輩に」接不上。",
+        "en": "「走らせました」 is \"I made (someone) run\"; it doesn't fit 「先輩に」."
       },
       {
-        "zh": "「練習されました」是普通被动，“练习”不是对我做的动作，这样说不通。",
-        "en": "「練習されました」 is a plain passive, but practising isn't something done to me."
+        "zh": "「走られました」是受害被动“前辈跑了（我很困扰）”，可跑圈的是我。",
+        "en": "「走られました」 is the suffering passive (the seniors ran, to my annoyance), but I'm the one running laps."
       },
       {
-        "zh": "「〜て くれました」的施动者用「が」，而且是“妈妈为我练琴”，意思不对。",
-        "en": "「〜て くれました」 takes the doer with 「が」, and it would mean my mother practised for me."
+        "zh": "「〜て くれました」的施动者用「が」，而且“前辈为我跑”意思不对。",
+        "en": "「〜て くれました」 takes the doer with 「が」, and \"the seniors ran for me\" is the wrong meaning."
       }
     ]
   },
   {
     "id": "n4-m1-104",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson20#3"
     ],
     "difficulty": 2,
-    "stem": "駅への 道が 分からなくて こまって いたら、知らない 人が 駅まで いっしょに 来て （　）。",
+    "stem": "かぜで 学校を 休んだ 日、友だちが じゅぎょうの ノートを 見せて （　）。",
     "options": [
       "くれました",
       "あげました",
@@ -143,29 +146,29 @@
       "おきました"
     ],
     "answer": 0,
-    "full": "駅への 道が 分からなくて こまって いたら、知らない 人が 駅まで いっしょに 来て くれました。",
-    "kj": "駅への道が分からなくて困っていたら、知らない人が駅まで一緒に来てくれました。",
+    "full": "かぜで 学校を 休んだ 日、友だちが じゅぎょうの ノートを 見せて くれました。",
+    "kj": "風邪で学校を休んだ日、友達が授業のノートを見せてくれました。",
     "tr": {
-      "zh": "我不知道去车站的路正发愁，一个不认识的人陪我一起走到了车站。",
-      "en": "I didn't know the way to the station and was stuck, and a stranger came all the way there with me."
+      "zh": "我感冒没去上学的那天，朋友给我看了上课的笔记。",
+      "en": "On the day I was off school with a cold, a friend let me see their class notes."
     },
     "why": {
-      "zh": "做动作的是「知らない 人が」，受益的是发愁的我：别人为我做，用「〜て くれる」。",
-      "en": "The doer is 「知らない 人が」 and I, the one who was stuck, benefit: someone doing something for me is 「〜て くれる」."
+      "zh": "做动作的是「友だちが」，受益的是没去上课的我：别人为我做，用「〜て くれる」。",
+      "en": "The doer is 「友だちが」 and I, who missed the class, benefit: someone doing something for me is 「〜て くれる」."
     },
     "wrong": [
       null,
       {
-        "zh": "「〜て あげる」是给我以外的人做好事，这里受益的是发愁的我。",
-        "en": "「〜て あげる」 is a favour for someone other than me, but I'm the one being helped."
+        "zh": "「〜て あげる」是给我以外的人做好事，这里受益的是休息的我。",
+        "en": "「〜て あげる」 is a favour for someone other than me, but I'm the one who missed class."
       },
       {
-        "zh": "「〜て もらう」要说「人に 来て もらいました」，施动者不能用「が」。",
-        "en": "「〜て もらう」 would need 「人に 来て もらいました」; the doer can't take 「が」."
+        "zh": "「〜て もらう」要说「友だちに 見せて もらいました」，施动者不能用「が」。",
+        "en": "「〜て もらう」 would need 「友だちに 見せて もらいました」; the doer can't take 「が」."
       },
       {
-        "zh": "「〜て おく」是事先准备，“陌生人预先来了”不合情理。",
-        "en": "「〜て おく」 is doing something in advance — makes no sense for a stranger helping on the spot."
+        "zh": "「〜て おく」是事先准备，朋友是在我休息之后给我看的。",
+        "en": "「〜て おく」 is doing something in advance, but the friend showed me after I'd been absent."
       }
     ]
   },
@@ -295,53 +298,61 @@
   },
   {
     "id": "n4-m1-108",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson23#1"
     ],
     "difficulty": 2,
-    "stem": "この パソコンは 先週 （　） なのに、もう 動かなく なって しまいました。",
+    "stem": "この ケーキは さっき （　） なので、まだ あたたかいです。",
     "options": [
-      "買ったばかり",
-      "買うばかり",
-      "買って ばかり",
-      "買う ところ"
+      "やいたばかり",
+      "やくばかり",
+      "やいて ばかり",
+      "やく ところ"
+    ],
+    "okj": [
+      "焼いたばかり",
+      "焼くばかり",
+      "焼いてばかり",
+      "焼くところ"
     ],
     "answer": 0,
-    "full": "この パソコンは 先週 買ったばかり なのに、もう 動かなく なって しまいました。",
-    "kj": "このパソコンは先週買ったばかりなのに、もう動かなくなってしまいました。",
+    "full": "この ケーキは さっき やいたばかり なので、まだ あたたかいです。",
+    "kj": "このケーキはさっき焼いたばかりなので、まだ温かいです。",
     "tr": {
-      "zh": "这台电脑上周才刚买，却已经动不了了。",
-      "en": "I only bought this computer last week, and it's already stopped working."
+      "zh": "这个蛋糕刚刚才烤好，所以还是热的。",
+      "en": "This cake came out of the oven just now, so it's still warm."
     },
     "why": {
-      "zh": "「先週」＋「なのに、もう」：买了没多久（心理上觉得很新），用「た形＋ばかり」。",
-      "en": "「先週」 with 「なのに、もう」: it was bought only a short time ago — 「た-form ＋ ばかり」."
+      "zh": "「さっき」＋「まだ あたたかい」：刚烤好没多久，用「た形＋ばかり」。",
+      "en": "「さっき」 with 「まだ あたたかい」: it was baked only a moment ago — 「た-form ＋ ばかり」."
     },
     "wrong": [
       null,
       {
-        "zh": "「買うばかり」是“光买（不做别的）”，和「先週」接不上。",
-        "en": "「買うばかり」 means \"does nothing but buy\" — it doesn't fit 「先週」."
+        "zh": "「やくばかり」是“光烤（不做别的）”，和「さっき」接不上。",
+        "en": "「やくばかり」 means \"does nothing but bake\" — it doesn't fit 「さっき」."
       },
       {
-        "zh": "「買って ばかり」是“老是在买”，表示反复做，不是刚买。",
-        "en": "「買って ばかり」 is \"always buying\", a repeated action, not \"just bought\"."
+        "zh": "「やいて ばかり」是“老是在烤”，表示反复做，不是刚烤好。",
+        "en": "「やいて ばかり」 is \"always baking\", a repeated action, not \"just baked\"."
       },
       {
-        "zh": "「買う ところ」是“正要买”，既然已经坏了，就是买过了。",
-        "en": "「買う ところ」 is \"about to buy\" — but it's already broken, so it was bought."
+        "zh": "「やく ところ」是“正要烤”，还没烤的蛋糕不会是热的。",
+        "en": "「やく ところ」 is \"about to bake\" — an unbaked cake can't be warm."
       }
     ]
   },
   {
     "id": "n4-m1-109",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson33#2"
     ],
     "difficulty": 2,
-    "stem": "レポートは 金曜日 （　） 先生に 出して ください。おくれた レポートは 受け取りません。",
+    "stem": "旅行に 行きたい 人は、今月の 20日 （　） 申し込んで ください。それより あとは 受け付けません。",
     "options": [
       "までに",
       "まで",
@@ -355,29 +366,29 @@
       null
     ],
     "answer": 0,
-    "full": "レポートは 金曜日 までに 先生に 出して ください。おくれた レポートは 受け取りません。",
-    "kj": "レポートは金曜日までに先生に出してください。遅れたレポートは受け取りません。",
+    "full": "旅行に 行きたい 人は、今月の 20日 までに 申し込んで ください。それより あとは 受け付けません。",
+    "kj": "旅行に行きたい人は、今月の20日までに申し込んでください。それより後は受け付けません。",
     "tr": {
-      "zh": "报告请在星期五之前交给老师。迟交的报告不收。",
-      "en": "Please hand your report in to the teacher by Friday. Late reports won't be accepted."
+      "zh": "想去旅行的人，请在本月20日之前报名。之后不再受理。",
+      "en": "If you want to go on the trip, please sign up by the 20th of this month. Applications after that won't be accepted."
     },
     "why": {
-      "zh": "“交”是一次性的动作，要在期限前完成：「〜までに」（截止……）。后一句的“迟交不收”也说明这是期限。",
-      "en": "Handing in is a one-off action to be done before a deadline: 「〜までに」. \"Late reports won't be accepted\" confirms it's a deadline."
+      "zh": "“报名”是一次性的动作，要在期限前完成：「〜までに」（在……之前）。后一句“之后不受理”也说明这是期限。",
+      "en": "Signing up is a one-off action to be done before a deadline: 「〜までに」. \"Nothing after that will be accepted\" confirms it's a deadline."
     },
     "wrong": [
       null,
       {
-        "zh": "「まで」表示一直持续到某时，后面要接持续性的动作，「出す」是一次性动作。",
-        "en": "「まで」 is \"(continuously) until\" and needs an ongoing action; 「出す」 happens once."
+        "zh": "「まで」表示一直持续到某时，后面要接持续性的动作，「申し込む」是一次性动作。",
+        "en": "「まで」 is \"(continuously) until\" and needs an ongoing action; 「申し込む」 happens once."
       },
       {
-        "zh": "「あいだに」接名词要说「〜の あいだに」，而且「金曜日の あいだに」也不是截止的意思。",
-        "en": "「あいだに」 after a noun needs 「の」, and \"during Friday\" isn't a deadline anyway."
+        "zh": "「あいだに」接名词要说「〜の あいだに」，而且“20日之间”也不是期限的意思。",
+        "en": "「あいだに」 after a noun needs 「の」, and \"during the 20th\" isn't a deadline anyway."
       },
       {
-        "zh": "「金曜日ばかり」是“净是星期五”，意思不通。",
-        "en": "「金曜日ばかり」 means \"nothing but Fridays\" — makes no sense."
+        "zh": "「20日ばかり」是“净是20日”或“大约20天”，意思不通。",
+        "en": "「20日ばかり」 means \"nothing but the 20th\" or \"about 20 days\" — makes no sense here."
       }
     ]
   },

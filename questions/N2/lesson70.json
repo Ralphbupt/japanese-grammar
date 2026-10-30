@@ -243,7 +243,7 @@
     "options": [
       "ところだ",
       "ことだ",
-      "ばかりだ",
+      "わけだ",
       "ことか"
     ],
     "answer": 1,
@@ -263,8 +263,8 @@
       },
       null,
       {
-        "zh": "「話すばかりだ」是“一直只说／越来越……”，不是建议。",
-        "en": "「話すばかりだ」 (\"does nothing but speak\") isn't advice."
+        "zh": "「わけだ」表示根据前面的事实得出的必然结论（“难怪……”），这里是给想学好日语的人的建议，不是推论。",
+        "en": "「わけだ」 states a conclusion that follows from facts (\"no wonder ~\"); this sentence gives advice, not a deduction."
       },
       {
         "zh": "「ことか」是感叹“多么……啊”，不用于给建议。",
@@ -397,8 +397,8 @@
     "difficulty": 2,
     "stem": "家は駅から近い（　）が、予算を考えると少し遠くても仕方がない。",
     "options": [
-      "ものなら",
-      "ことだ",
+      "に違いない",
+      "にすぎない",
       "に越したことはない",
       "に当たらない"
     ],
@@ -414,12 +414,12 @@
     },
     "wrong": [
       {
-        "zh": "「ものなら」后面要接愿望或后果，不接「が」；“如果能近”也和后句接不上。",
-        "en": "「ものなら」 needs a wish or consequence after it, not 「が」."
+        "zh": "「に違いない」是有把握的推测（“一定很近”），而说话人在谈对房子的希望条件，后面“远一点也没办法”接不上。",
+        "en": "「に違いない」 is a confident guess (\"it must be close\"); the speaker is talking about what they'd prefer, which 「少し遠くても仕方がない」 doesn't follow."
       },
       {
-        "zh": "「ことだ」是对别人的忠告，“近是应该的，但……”说不通。",
-        "en": "「ことだ」 is advice to someone; \"you should be close, but ~\" makes no sense."
+        "zh": "「にすぎない」是“只不过……”，“离车站近只不过是……”既缺内容，也和后面的让步接不上。",
+        "en": "「にすぎない」 (merely ~) makes no sense with \"close to the station\" and doesn't lead into the concession."
       },
       null,
       {
@@ -514,7 +514,7 @@
     "stem": "この町の古い街並みには、どこか人の心を落ち着かせる（　）。",
     "options": [
       "ものがある",
-      "ことがある",
+      "ことになる",
       "ものだ",
       "ことか"
     ],
@@ -531,8 +531,8 @@
     "wrong": [
       null,
       {
-        "zh": "「ことがある」是“有时会……”，不和「〜には」「どこか」这样表示特质的说法搭配。",
-        "en": "「ことがある」 (sometimes happens) doesn't go with 「〜には」 and 「どこか」 describing a quality."
+        "zh": "「ことになる」表示决定或推导的结果（“就会……”），而「には」「どこか」是在说街景本身具有的特质，要用「ものがある」。",
+        "en": "「ことになる」 expresses a decision or result (\"it turns out that ~\"); 「には」 and 「どこか」 point to a quality the streets have, which is 「ものがある」."
       },
       {
         "zh": "「ものだ」表示一般道理或感叹，不和「〜には」搭配成“有……的特质”。",

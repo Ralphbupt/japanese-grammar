@@ -170,7 +170,7 @@
       "lesson19#1"
     ],
     "difficulty": 2,
-    "stem": "駅で 知らない 人に [_] [_] [★] [_]。",
+    "stem": "駅で 知らない 人に [★] [_] [_] [_]。",
     "options": [
       "しまいました",
       "財布を",
@@ -190,15 +190,16 @@
       "en": "At the station, a stranger stole my precious wallet."
     },
     "why": {
-      "zh": "持ち主被动：人に＋物を＋〜られる。大切な 財布を 盗まれて しまいました，★ 在第三格，是「盗まれて」。",
-      "en": "Possessor passive: person に ＋ thing を ＋ passive: 大切な 財布を 盗まれて しまいました. The ★ is the third slot: 「盗まれて」."
+      "zh": "持ち主被动：人に＋物を＋〜られる。大切な 財布を 盗まれて しまいました，★ 在第一格，是「大切な」。",
+      "en": "Possessor passive: person に ＋ thing を ＋ passive: 大切な 財布を 盗まれて しまいました. The ★ is the first slot: 「大切な」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l19-006",
@@ -253,7 +254,7 @@
       "飲まされた",
       "飲ませた",
       "飲まれた",
-      "飲まさせられた"
+      "飲んで もらった"
     ],
     "answer": 0,
     "full": "私は お酒が 弱いのに、飲み会で 先輩に たくさん 飲まされた。",
@@ -277,8 +278,8 @@
         "en": "「飲まれた」 would be senpai drinking (to my annoyance) — unrelated to my low tolerance."
       },
       {
-        "zh": "「飲まさせられた」不是正确形式：使役被动是「飲ませられる」或缩略的「飲まされる」。",
-        "en": "「飲まさせられた」 isn't a real form; it's 「飲ませられる」 or the contracted 「飲まされる」."
+        "zh": "「飲んで もらった」是请前辈替我喝（受益），和「弱いのに」的转折接不上，也不是被迫喝。",
+        "en": "「飲んで もらった」 means senpai drank for me (a favour); it doesn't fit the contrast of 「弱いのに」, and it isn't being forced."
       }
     ]
   },
@@ -404,6 +405,7 @@
   },
   {
     "id": "n4-l19-011",
+    "rev": 2,
     "type": "narabe",
     "refs": [
       "lesson19#3",
@@ -413,31 +415,31 @@
     "stem": "小さい とき、母に [_] [_] [★] [_]。",
     "options": [
       "いやだった",
-      "食べ",
+      "きらいな",
       "野菜を",
-      "させられて"
+      "食べさせられて"
     ],
     "okj": [
       "嫌だった",
-      null,
+      "嫌いな",
       null,
       null
     ],
     "order": [
-      2,
       1,
+      2,
       3,
       0
     ],
-    "full": "小さい とき、母に 野菜を 食べさせられて いやだった。",
-    "kj": "小さいとき、母に野菜を食べさせられて嫌だった。",
+    "full": "小さい とき、母に きらいな 野菜を 食べさせられて いやだった。",
+    "kj": "小さいとき、母に嫌いな野菜を食べさせられて嫌だった。",
     "tr": {
-      "zh": "小时候被妈妈逼着吃蔬菜，很讨厌。",
-      "en": "When I was little, my mother made me eat vegetables, and I hated it."
+      "zh": "小时候被妈妈逼着吃讨厌的蔬菜，很不情愿。",
+      "en": "When I was little, my mother made me eat vegetables I hated, and I didn't like it."
     },
     "why": {
-      "zh": "被妈妈逼着吃：二类动词使役被动「食べさせられる」。野菜を 食べ させられて いやだった，★ 在第三格，是「させられて」。",
-      "en": "Made to eat by mother: the causative-passive of a group 2 verb is 「食べさせられる」. 野菜を 食べ させられて いやだった — the ★ is the third slot: 「させられて」."
+      "zh": "被妈妈逼着吃：二类动词使役被动「食べさせられる」。きらいな 野菜を 食べさせられて いやだった，★ 在第三格，是「食べさせられて」。",
+      "en": "Made to eat by mother: the causative-passive of a group 2 verb is 「食べさせられる」. きらいな 野菜を 食べさせられて いやだった — the ★ is the third slot: 「食べさせられて」."
     },
     "wrong": [
       null,

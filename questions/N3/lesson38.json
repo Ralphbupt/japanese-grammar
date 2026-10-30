@@ -41,41 +41,42 @@
   },
   {
     "id": "n3-l38-002",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson38#1"
     ],
     "difficulty": 2,
-    "stem": "病気（　）にもかかわらず、彼は 休まずに 仕事を 続けた。",
+    "stem": "病気（　）、彼は 休まずに 仕事を 続けた。",
     "options": [
-      "な",
-      "の",
-      "である",
-      "だ"
+      "であるからには",
+      "であるおかげで",
+      "であるにもかかわらず",
+      "であるうえに"
     ],
     "answer": 2,
-    "full": "病気である にもかかわらず、彼は 休まずに 仕事を 続けた。",
+    "full": "病気であるにもかかわらず、彼は 休まずに 仕事を 続けた。",
     "tr": {
       "zh": "尽管生着病，他还是没有休息，继续工作。",
       "en": "Despite being ill, he kept working without taking time off."
     },
     "why": {
-      "zh": "名词接「にもかかわらず」用「名词＋である＋にもかかわらず」（也可以直接接名词）。",
-      "en": "A noun connects to 「にもかかわらず」 as 「noun ＋ である ＋ にもかかわらず」 (or directly)."
+      "zh": "“生着病”却“没休息继续工作”，前后是相反的事，用「名词＋である＋にもかかわらず」（尽管……）。",
+      "en": "Being ill and still working without a break go against each other: 「noun ＋ である ＋ にもかかわらず」 (\"despite\")."
     },
     "wrong": [
       {
-        "zh": "「な」用于な形容词，「病気」是名词，「病気なにもかかわらず」不成立。",
-        "en": "「な」 is for な-adjectives; 「病気」 is a noun."
+        "zh": "「からには」是“既然……就……”，“既然生病了就继续工作”说不通。",
+        "en": "「からには」 is \"since… then\"; \"since I'm ill, I kept working\" makes no sense."
       },
       {
-        "zh": "「の」不能连接名词和「にもかかわらず」。",
-        "en": "「の」 can't link a noun to 「にもかかわらず」."
+        "zh": "「おかげで」说明好结果的原因，生病不是继续工作的原因。",
+        "en": "「おかげで」 credits a cause for a good result; being ill isn't why he kept working."
       },
       null,
       {
-        "zh": "「だ」是句尾形式，后面不能接「にもかかわらず」。",
-        "en": "「だ」 ends a sentence and can't be followed by 「にもかかわらず」."
+        "zh": "「うえに」是“而且”，追加同方向的内容，不能连接相反的两件事。",
+        "en": "「うえに」 adds more of the same (\"on top of\"); it can't join two things that go against each other."
       }
     ]
   },
@@ -86,7 +87,7 @@
       "lesson38#1"
     ],
     "difficulty": 2,
-    "stem": "[_] [_] [★] [_] 計画は 予定どおり 実行された。",
+    "stem": "[_] [_] [_] [★] 計画は 予定どおり 実行された。",
     "options": [
       "人が",
       "にもかかわらず",
@@ -105,15 +106,16 @@
       "en": "Despite many people opposing it, the plan went ahead as scheduled."
     },
     "why": {
-      "zh": "「反対する人が多かった」是前提事实，接「にもかかわらず」，后面是意外的结果：反対する → 人が → 多かった → にもかかわらず。★ 是「多かった」。",
-      "en": "「反対する人が多かった」 is the fact, then 「にもかかわらず」, then the unexpected result: 反対する → 人が → 多かった → にもかかわらず. The ★ is 「多かった」."
+      "zh": "「反対する人が多かった」是前提事实，接「にもかかわらず」，后面是意外的结果：反対する → 人が → 多かった → にもかかわらず。★ 在第四格，是「にもかかわらず」。",
+      "en": "「反対する人が多かった」 is the fact, then 「にもかかわらず」, then the unexpected result: 反対する → 人が → 多かった → にもかかわらず. The ★ is the fourth slot: 「にもかかわらず」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l38-004",
@@ -164,10 +166,10 @@
     "difficulty": 2,
     "stem": "彼は 本当の ことを（　）、何も 言わなかった。",
     "options": [
-      "知って いるながら",
-      "知って いたながら",
+      "知って いた とたん",
+      "知って いる うちに",
       "知って いながら",
-      "知って いてながら"
+      "知って いる ばかりか"
     ],
     "answer": 2,
     "full": "彼は 本当の ことを 知って いながら、何も 言わなかった。",
@@ -181,17 +183,17 @@
     },
     "wrong": [
       {
-        "zh": "「ながら」不接辞书形「いる」，要接ます形「い」。",
-        "en": "「ながら」 doesn't follow the dictionary form 「いる」; it needs the stem 「い」."
+        "zh": "「とたん」是“刚……就……”，表示紧接着发生的变化，和“什么也没说”接不上。",
+        "en": "「とたん」 is \"the moment…\", for a sudden change right after; it doesn't lead into \"said nothing\"."
       },
       {
-        "zh": "「ながら」不接た形「いた」。",
-        "en": "「ながら」 doesn't follow the た-form 「いた」."
+        "zh": "「うちに」是“趁……的时候／在……期间”，这里不是时间范围，而是“明明知道却不说”。",
+        "en": "「うちに」 is \"while (still)…\"; this is about knowing yet keeping quiet, not a time span."
       },
       null,
       {
-        "zh": "「ながら」不接て形「いて」。",
-        "en": "「ながら」 doesn't follow the て-form 「いて」."
+        "zh": "「ばかりか」是“不仅……而且”，追加内容，不能表示“明明知道却不说”的转折。",
+        "en": "「ばかりか」 adds (\"not only… but\"); it can't express \"he knew, yet said nothing\"."
       }
     ]
   },
@@ -318,7 +320,7 @@
       "lesson38#3"
     ],
     "difficulty": 1,
-    "stem": "彼は [_] [_] [★] [_] ばかり 買って いる。",
+    "stem": "彼は [_] [★] [_] [_] ばかり 買って いる。",
     "options": [
       "ない",
       "高いもの",
@@ -337,15 +339,16 @@
       "en": "He has no money, yet he keeps buying expensive things."
     },
     "why": {
-      "zh": "「お金がない」接「くせに」，后面是让人不满的行为「高いものばかり買っている」：お金が → ない → くせに → 高いもの。★ 是「くせに」。",
-      "en": "「お金がない」 takes 「くせに」, followed by the annoying behaviour 「高いものばかり買っている」: お金が → ない → くせに → 高いもの. The ★ is 「くせに」."
+      "zh": "「お金がない」接「くせに」，后面是让人不满的行为「高いものばかり買っている」：お金が → ない → くせに → 高いもの。★ 在第二格，是「ない」。",
+      "en": "「お金がない」 takes 「くせに」, followed by the annoying behaviour 「高いものばかり買っている」: お金が → ない → くせに → 高いもの. The ★ is the second slot: 「ない」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l38-010",
@@ -389,40 +392,41 @@
   },
   {
     "id": "n3-l38-011",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson38#4"
     ],
     "difficulty": 2,
-    "stem": "たとえ 有名な 会社（　）としても、条件が 悪ければ 入りたくない。",
+    "stem": "たとえ 有名な 会社（　）、条件が 悪ければ 入りたくない。",
     "options": [
-      "の",
-      "な",
-      "で",
-      "だ"
+      "だからこそ",
+      "だけあって",
+      "だったおかげで",
+      "だとしても"
     ],
     "answer": 3,
-    "full": "たとえ 有名な 会社だ としても、条件が 悪ければ 入りたくない。",
+    "full": "たとえ 有名な 会社だとしても、条件が 悪ければ 入りたくない。",
     "tr": {
       "zh": "即使是有名的公司，条件不好的话我也不想进。",
       "en": "Even if it's a famous company, I don't want to join if the conditions are bad."
     },
     "why": {
-      "zh": "名词接「としても」要用「名词＋だ＋としても」。",
-      "en": "A noun connects to 「としても」 as 「noun ＋ だ ＋ としても」."
+      "zh": "「たとえ」和「としても」搭配，表示“即使是……也……”。名词接「だ＋としても」：会社だとしても。",
+      "en": "「たとえ」 pairs with 「としても」 — \"even if\". A noun takes 「だ」: 会社だとしても."
     },
     "wrong": [
       {
-        "zh": "「の」不能连接名词和「としても」。",
-        "en": "「の」 can't link a noun to 「としても」."
+        "zh": "「だからこそ」是“正因为……”，和「たとえ」不搭配，“正因为有名才不想进”也说不通。",
+        "en": "「だからこそ」 is \"precisely because\"; it doesn't go with 「たとえ」, and \"precisely because it's famous I won't join\" doesn't follow."
       },
       {
-        "zh": "「な」用于な形容词修饰名词，「会社」是名词。",
-        "en": "「な」 is for な-adjectives; 「会社」 is a noun."
+        "zh": "「だけあって」是“不愧是……”，用来称赞，后面不能接“不想进”。",
+        "en": "「だけあって」 is \"as you'd expect of\", praise; \"I don't want to join\" can't follow it."
       },
       {
-        "zh": "「で」是て形，「会社でとしても」不成立。",
-        "en": "「で」 is a て-form; 「会社でとしても」 isn't grammatical."
+        "zh": "「おかげで」用于已经发生的好结果，和「たとえ」的假设不搭配。",
+        "en": "「おかげで」 is for a good result that has happened; it doesn't fit the hypothetical 「たとえ」."
       },
       null
     ]
@@ -434,7 +438,7 @@
       "lesson38#4"
     ],
     "difficulty": 2,
-    "stem": "[_] [_] [★] [_] 会議は 予定どおり 行います。",
+    "stem": "[★] [_] [_] [_] 会議は 予定どおり 行います。",
     "options": [
       "来られない",
       "しても",
@@ -453,14 +457,15 @@
       "en": "Even if the department manager can't come, the meeting will go ahead as planned."
     },
     "why": {
-      "zh": "「部長が来られない」是假设，接「としても」，后面是不变的结果：部長が → 来られない → と → しても。★ 是「と」。",
-      "en": "「部長が来られない」 is the supposition, then 「としても」, then the unchanged outcome: 部長が → 来られない → と → しても. The ★ is 「と」."
+      "zh": "「部長が来られない」是假设，接「としても」，后面是不变的结果：部長が → 来られない → と → しても。★ 在第一格，是「部長が」。",
+      "en": "「部長が来られない」 is the supposition, then 「としても」, then the unchanged outcome: 部長が → 来られない → と → しても. The ★ is the first slot: 「部長が」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   }
 ]

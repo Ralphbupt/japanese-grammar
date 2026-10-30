@@ -145,7 +145,7 @@
     "type": "kanji",
     "difficulty": 2,
     "stem": "<<外国>>へ いった ことが ありますか。",
-    "options": ["がいこく", "かいこく", "がいごく", "そとこく"],
+    "options": ["がいこく", "かいこく", "がいごく", "かいごく"],
     "kj": "外国へ行ったことがありますか。",
     "answer": 0,
     "tr": { "zh": "你去过外国吗？", "en": "Have you ever been abroad?" },
@@ -154,7 +154,7 @@
       null,
       { "zh": "「外」开头是浊音「が」（「かいこく」是「開国」）。", "en": "「外」 starts voiced: が (かいこく is 「開国」)." },
       { "zh": "「国」在这里读清音「こく」。", "en": "「国」 stays unvoiced here: こく." },
-      { "zh": "「そと」是「外」单独用时的读法，组词用「がい」。", "en": "そと is 「外」 on its own; in this compound it's がい." }
+      { "zh": "两处都读反了：「外」要浊音「が」，「国」不浊，读「こく」。", "en": "Both are flipped: 「外」 is voiced (が) and 「国」 is not (こく)." }
     ]
   },
   {
@@ -417,19 +417,20 @@
   },
   {
     "id": "n5-mg-125",
+    "rev": 2,
     "type": "kanji",
     "difficulty": 2,
-    "stem": "<<新しい>> くつを はいて います。",
-    "options": ["あたらしい", "あらたしい", "あたしらい", "あだらしい"],
-    "kj": "新しい靴を履いています。",
+    "stem": "<<左手>>で じを かきます。",
+    "options": ["ひだりて", "ひだりで", "ひたりて", "さしゅ"],
+    "kj": "左手で字を書きます。",
     "answer": 0,
-    "tr": { "zh": "我穿着新鞋。", "en": "I'm wearing new shoes." },
-    "why": { "zh": "「新しい」读「あたらしい」：あ・た・ら・し・い。", "en": "「新しい」 is あたらしい: a-ta-ra-shi-i." },
+    "tr": { "zh": "我用左手写字。", "en": "I write with my left hand." },
+    "why": { "zh": "「左手」读「ひだりて」：「左」读「ひだり」，「手」读「て」，都是训读。", "en": "「左手」 is ひだりて — 「左」 ひだり, 「手」 て, both native readings." },
     "wrong": [
       null,
-      { "zh": "「た」和「ら」顺序颠倒了（「新た」读「あらた」，是另一个词）。", "en": "た and ら are swapped (「新た」, あらた, is a different word)." },
-      { "zh": "后半部分顺序乱了。", "en": "The second half is scrambled." },
-      { "zh": "「た」不浊化。", "en": "The た isn't voiced." }
+      { "zh": "「手」读清音「て」，这里不浊化。", "en": "「手」 stays unvoiced here: て, not で." },
+      { "zh": "「ひだり」的「だ」是浊音，不读「ひたり」。", "en": "ひだり has a voiced だ; it isn't ひたり." },
+      { "zh": "「さ」「しゅ」是音读，「左手」用训读「ひだりて」。", "en": "さ and しゅ are on-readings; 「左手」 uses the native ひだりて." }
     ]
   },
   {
@@ -612,7 +613,7 @@
     "type": "kanji",
     "difficulty": 2,
     "stem": "リーさんは <<中国語>>を おしえて います。",
-    "options": ["ちゅうごくご", "ちゅうこくご", "ちゅごくご", "なかくにご"],
+    "options": ["ちゅうごくご", "ちゅうこくご", "ちゅごくご", "じゅうごくご"],
     "kj": "リーさんは中国語を教えています。",
     "answer": 0,
     "tr": { "zh": "李先生在教中文。", "en": "Mr. Li teaches Chinese." },
@@ -621,7 +622,7 @@
       null,
       { "zh": "「中国」的「国」要浊化成「ごく」。", "en": "In 「中国」 the 国 is voiced: ごく." },
       { "zh": "「中」是长音「ちゅう」。", "en": "「中」 is the long ちゅう." },
-      { "zh": "「なか」「くに」是训读，「中国語」用音读。", "en": "なか and くに are native readings; 「中国語」 uses on-readings." }
+      { "zh": "「中」读清音「ちゅう」，不是「じゅう」（「じゅう」是「十」）。", "en": "「中」 is ちゅう, not じゅう (じゅう is 「十」)." }
     ]
   },
   {
@@ -629,7 +630,7 @@
     "type": "kanji",
     "difficulty": 1,
     "stem": "きょうは <<時間>>が ありません。",
-    "options": ["じかん", "じっかん", "じがん", "じあいだ"],
+    "options": ["じかん", "じっかん", "じがん", "しかん"],
     "kj": "今日は時間がありません。",
     "answer": 0,
     "tr": { "zh": "今天没有时间。", "en": "I don't have time today." },
@@ -638,7 +639,7 @@
       null,
       { "zh": "中间没有促音（「じっかん」是「実感」）。", "en": "No small っ (じっかん is 「実感」)." },
       { "zh": "「間」读清音「かん」。", "en": "「間」 is unvoiced: かん." },
-      { "zh": "「あいだ」是「間」单独用时的训读，组词用「かん」。", "en": "あいだ is 「間」 on its own; in this compound it's かん." }
+      { "zh": "「時」读浊音「じ」，不是「し」。", "en": "「時」 is voiced: じ, not し." }
     ]
   },
   {
@@ -646,15 +647,15 @@
     "type": "kanji",
     "difficulty": 2,
     "stem": "<<来年>> にほんへ りゅうがくします。",
-    "options": ["らいねん", "らいとし", "くるねん", "らいねい"],
+    "options": ["らいねん", "れいねん", "らんねん", "らいねい"],
     "kj": "来年日本へ留学します。",
     "answer": 0,
     "tr": { "zh": "明年我要去日本留学。", "en": "Next year I'm going to study in Japan." },
     "why": { "zh": "「来年」读「らいねん」：「来」读「らい」，「年」读「ねん」。", "en": "「来年」 is らいねん — 「来」 らい, 「年」 ねん." },
     "wrong": [
       null,
-      { "zh": "「とし」是「年」的训读，「来年」用音读「ねん」。", "en": "とし is the native reading of 「年」; 「来年」 uses ねん." },
-      { "zh": "「くる」是动词「来る」的读法。", "en": "くる is the verb 「来る」." },
+      { "zh": "「来」读「らい」；「れいねん」是另一个词「例年」（往年）。", "en": "「来」 is らい; れいねん is a different word, 「例年」 (an average year)." },
+      { "zh": "「来」读「らい」，不是「らん」。", "en": "「来」 is らい, not らん." },
       { "zh": "「年」读「ねん」，不是「ねい」。", "en": "「年」 is ねん, not ねい." }
     ]
   },

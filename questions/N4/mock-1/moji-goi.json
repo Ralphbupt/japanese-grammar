@@ -75,75 +75,77 @@
   },
   {
     "id": "n4-m1-003",
+    "rev": 2,
     "type": "kanji",
     "difficulty": 2,
-    "stem": "<<世界>>で いちばん ながい かわは どこですか。",
+    "stem": "あした ともだちを <<空港>>まで むかえに いきます。",
     "options": [
-      "せかい",
-      "せいかい",
-      "せっかい",
-      "よかい"
+      "くうこう",
+      "くうごう",
+      "くこう",
+      "こうくう"
     ],
-    "kj": "世界で一番長い川はどこですか。",
+    "kj": "明日友達を空港まで迎えに行きます。",
     "answer": 0,
     "tr": {
-      "zh": "世界上最长的河是哪条？",
-      "en": "What is the longest river in the world?"
+      "zh": "明天我要去机场接朋友。",
+      "en": "Tomorrow I'm going to the airport to meet a friend."
     },
     "why": {
-      "zh": "「世界」读「せかい」，「世」在这里读短音「せ」。",
-      "en": "「世界」 is せかい; 「世」 is the short せ here."
+      "zh": "「空港」（机场）读「くうこう」：「空」是长音「くう」，「港」是清音「こう」。",
+      "en": "「空港」 (airport) is くうこう: 「空」 is long くう and 「港」 is unvoiced こう."
     },
     "wrong": [
       null,
       {
-        "zh": "「せいかい」是「正解」（正确答案），「世界」没有长音。",
-        "en": "せいかい is 「正解」 (correct answer); 「世界」 has no long vowel."
+        "zh": "「港」在这里不浊化，是「こう」不是「ごう」。",
+        "en": "「港」 isn't voiced here: こう, not ごう."
       },
       {
-        "zh": "「世界」中间没有促音「っ」。",
-        "en": "「世界」 has no small っ."
+        "zh": "「空」是长音「くう」，不能读短音「く」。",
+        "en": "「空」 is the long くう; it can't be shortened to く."
       },
       {
-        "zh": "「よ」是「世」的训读（如「世の中」），但「世界」读「せかい」。",
-        "en": "よ is the kun-reading of 「世」 (as in 「世の中」), but 「世界」 is せかい."
+        "zh": "「こうくう」是「航空」（航空），两个音的顺序也不对。",
+        "en": "こうくう is 「航空」 (aviation) — a different word."
       }
     ]
   },
   {
     "id": "n4-m1-004",
+    "rev": 2,
     "type": "kanji",
     "difficulty": 1,
-    "stem": "ちちは まいにち くるまを <<運転>>して かいしゃへ いきます。",
+    "stem": "この かみに でんわ<<番号>>を かいて ください。",
     "options": [
-      "うんてん",
-      "うんでん",
-      "うてん",
-      "うんどう"
+      "ばんごう",
+      "ばんぐみ",
+      "ばんこう",
+      "はんごう"
     ],
-    "kj": "父は毎日車を運転して会社へ行きます。",
+    "kj": "この紙に電話番号を書いてください。",
     "answer": 0,
     "tr": {
-      "zh": "爸爸每天开车去公司。",
-      "en": "My father drives to work every day."
+      "zh": "请把电话号码写在这张纸上。",
+      "en": "Please write your phone number on this sheet."
     },
     "why": {
-      "zh": "「運転」（驾驶）读「うんてん」，「転」不浊化。",
-      "en": "「運転」 (driving) is うんてん; 「転」 stays unvoiced."
+      "zh": "「番号」（号码）读「ばんごう」：「番」是浊音「ばん」，「号」是浊音「ごう」。",
+      "en": "「番号」 (number) is ばんごう: voiced ばん and voiced ごう."
     },
     "wrong": [
       null,
       {
-        "zh": "「転」读「てん」，不浊化成「でん」。",
-        "en": "「転」 is てん, not voiced to でん."
+        "zh": "「ばんぐみ」是「番組」（电视节目），第二个汉字不同。",
+        "en": "ばんぐみ is 「番組」 (TV programme); the second kanji is different."
       },
       {
-        "zh": "「運」读「うん」，不能省掉「ん」。",
-        "en": "「運」 is うん; the ん can't be dropped."
+        "zh": "「号」是浊音「ごう」，不是「こう」。",
+        "en": "「号」 is voiced ごう, not こう."
       },
       {
-        "zh": "「うんどう」是「運動」（运动），第二个汉字不同。",
-        "en": "うんどう is 「運動」 (exercise); the second kanji is different."
+        "zh": "「番」是浊音「ばん」，不是「はん」。",
+        "en": "「番」 is voiced ばん, not はん."
       }
     ]
   },
@@ -224,37 +226,37 @@
   {
     "id": "n4-m1-007",
     "type": "kanji",
-    "difficulty": 3,
-    "stem": "えきの まえの あの たかい <<建物>>は なんですか。",
+    "difficulty": 2,
+    "stem": "この まちは <<交通>>が べんりで、すみやすいです。",
     "options": [
-      "たてもの",
-      "けんもの",
-      "たてぶつ",
-      "たちもの"
+      "こうつう",
+      "きょうつう",
+      "こうとう",
+      "こうどう"
     ],
-    "kj": "駅の前のあの高い建物は何ですか。",
+    "kj": "この町は交通が便利で、住みやすいです。",
     "answer": 0,
     "tr": {
-      "zh": "车站前那栋高楼是什么？",
-      "en": "What is that tall building in front of the station?"
+      "zh": "这个城镇交通方便，很好住。",
+      "en": "This town has good transport links and is easy to live in."
     },
     "why": {
-      "zh": "「建物」（建筑物）两个字都用训读：「建てる」的「たて」＋「もの」，读「たてもの」。",
-      "en": "「建物」 (building) uses kun-readings for both: たて from 「建てる」 plus もの — たてもの."
+      "zh": "「交通」（交通）两个字都用音读：「交」读「こう」，「通」读「つう」，合起来是「こうつう」。",
+      "en": "「交通」 (traffic, transport) uses on-readings: 交 is こう, 通 is つう — こうつう."
     },
     "wrong": [
       null,
       {
-        "zh": "「けん」是「建」的音读，不和训读的「もの」拼在一起。",
-        "en": "けん is the on-reading of 「建」; it doesn't combine with the kun-reading もの."
+        "zh": "「きょうつう」是「共通」（共同的），第一个字是「共」，不是「交」。",
+        "en": "きょうつう is 「共通」 (common, shared); its first kanji is 共, not 交."
       },
       {
-        "zh": "「ぶつ」是「物」的音读（如「動物」），「建物」里读「もの」。",
-        "en": "ぶつ is the on-reading of 「物」 (as in 「動物」); in 「建物」 it's もの."
+        "zh": "「こうとう」是「高等」（如「高等学校」），「通」不读「とう」。",
+        "en": "こうとう is 「高等」 (as in 「高等学校」); 通 isn't read とう."
       },
       {
-        "zh": "「たち」是「立つ」的形式，「建物」读「たて」。",
-        "en": "たち comes from 「立つ」; 「建物」 is たて."
+        "zh": "「こうどう」是「行動」（行动），和「交通」是不同的词。",
+        "en": "こうどう is 「行動」 (action) — a different word."
       }
     ]
   },
@@ -334,38 +336,39 @@
   },
   {
     "id": "n4-m1-010",
+    "rev": 2,
     "type": "hyouki",
     "difficulty": 2,
-    "stem": "わたしの しゅみは きってを <<あつめる>> ことです。",
+    "stem": "でかける まえに まどを <<しめました>>。",
     "options": [
-      "集める",
-      "進める",
-      "隼める",
-      "準める"
+      "閉めました",
+      "開めました",
+      "関めました",
+      "問めました"
     ],
-    "kj": "私の趣味は切手を集めることです。",
+    "kj": "出かける前に窓を閉めました。",
     "answer": 0,
     "tr": {
-      "zh": "我的爱好是集邮。",
-      "en": "My hobby is collecting stamps."
+      "zh": "出门前我把窗户关上了。",
+      "en": "I closed the window before going out."
     },
     "why": {
-      "zh": "「あつめる」（收集）写作「集める」：「隹」下面是「木」。",
-      "en": "あつめる (collect) is 「集める」: 「隹」 with 「木」 underneath."
+      "zh": "「しめる」（关）写作「閉める」：「門」里面是「才」。",
+      "en": "しめる (close) is 「閉める」: 門 with 才 inside."
     },
     "wrong": [
       null,
       {
-        "zh": "「進める」读「すすめる」（推进），不是收集。",
-        "en": "「進める」 is すすめる (advance), not collect."
+        "zh": "「開」读「あける」（打开），意思正好相反，「門」里面是「开」。",
+        "en": "「開」 is あける (open) — the opposite; inside 門 it has 开."
       },
       {
-        "zh": "「隼」（隼鸟）下面是「十」，只是形似，不能写「あつめる」。",
-        "en": "「隼」 (falcon) has 「十」 underneath; it only looks similar."
+        "zh": "「関」读「かん」（关系、玄関），不读「しめる」。",
+        "en": "「関」 is かん (as in 関係, 玄関), not しめる."
       },
       {
-        "zh": "「準」是「準備（じゅんび）」的字，不读「あつめる」。",
-        "en": "「準」 is the kanji of 「準備」 (preparation), not あつめる."
+        "zh": "「問」读「もん」（問題），「門」里面是「口」。",
+        "en": "「問」 is もん (as in 問題), with 口 inside 門."
       }
     ]
   },
@@ -490,85 +493,86 @@
     "id": "n4-m1-014",
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "ともだちを たんじょうびの パーティーに （　）しました。",
+    "stem": "あしたの かいぎには しゃちょうも （　）する よていです。",
     "options": [
-      "しょうたい",
-      "ちゅうもん",
-      "せつめい",
+      "しゅっせき",
+      "しゅっぱつ",
+      "にゅうがく",
       "よやく"
     ],
     "okj": [
-      "招待",
-      "注文",
-      "説明",
+      "出席",
+      "出発",
+      "入学",
       "予約"
     ],
-    "kj": "友達を誕生日のパーティーに招待しました。",
+    "kj": "明日の会議には社長も出席する予定です。",
     "answer": 0,
     "tr": {
-      "zh": "我邀请朋友参加生日派对。",
-      "en": "I invited my friends to my birthday party."
+      "zh": "明天的会议社长也预定出席。",
+      "en": "The company president is also due to attend tomorrow's meeting."
     },
     "why": {
-      "zh": "「人を パーティーに しょうたいする」是邀请某人参加聚会。",
-      "en": "「人を パーティーに しょうたいする」 is inviting someone to a party."
+      "zh": "「かいぎに しゅっせきする」是出席会议。",
+      "en": "「かいぎに しゅっせきする」 is attending a meeting."
     },
     "wrong": [
       null,
       {
-        "zh": "「ちゅうもん」是点餐、订货，对象是东西，不能“订”朋友。",
-        "en": "「ちゅうもん」 is ordering food or goods, not people."
+        "zh": "「しゅっぱつ」是出发，前面接出发地「〜を」或目的地「〜へ」，不能「出发到会议」。",
+        "en": "「しゅっぱつ」 is setting off (from 〜を, for 〜へ); you can't \"depart to\" a meeting."
       },
       {
-        "zh": "「せつめい」是说明，说明的是事情，不是把朋友「说明到派对」。",
-        "en": "「せつめい」 is explaining a matter; you can't explain friends to a party."
+        "zh": "「にゅうがく」是入学，对象是学校，不是会议。",
+        "en": "「にゅうがく」 is entering a school, not a meeting."
       },
       {
-        "zh": "「よやく」是预约座位、房间等，不能预约朋友。",
-        "en": "「よやく」 is booking seats or rooms, not friends."
+        "zh": "「よやく」是预约座位、房间等，不说「かいぎに よやくする」。",
+        "en": "「よやく」 is booking seats or rooms; 「かいぎに よやくする」 doesn't work."
       }
     ]
   },
   {
     "id": "n4-m1-015",
+    "rev": 2,
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "ゆきの ひは みちが （　）やすいので、きを つけて あるいて ください。",
+    "stem": "きょうは あついので、かった アイスクリームが すぐに （　） しまいました。",
     "options": [
-      "すべり",
-      "ころび",
-      "たおれ",
-      "おち"
+      "とけて",
+      "こおって",
+      "ひえて",
+      "かわいて"
     ],
     "okj": [
-      "滑り",
-      "転び",
-      "倒れ",
-      "落ち"
+      "溶けて",
+      "凍って",
+      "冷えて",
+      "乾いて"
     ],
-    "kj": "雪の日は道が滑りやすいので、気を付けて歩いてください。",
+    "kj": "今日は暑いので、買ったアイスクリームがすぐに溶けてしまいました。",
     "answer": 0,
     "tr": {
-      "zh": "下雪天路面容易滑，走路请小心。",
-      "en": "On snowy days the roads get slippery, so please walk carefully."
+      "zh": "今天很热，买的冰淇淋一下子就化了。",
+      "en": "It's hot today, so the ice cream I bought melted right away."
     },
     "why": {
-      "zh": "主语是「みち」，下雪天路面「すべりやすい」（容易滑）。",
-      "en": "The subject is 「みち」: on snowy days roads are 「すべりやすい」 (slippery)."
+      "zh": "天热，冰淇淋会「とける」（融化）。",
+      "en": "In the heat, ice cream 「とける」 (melts)."
     },
     "wrong": [
       null,
       {
-        "zh": "「ころぶ」（摔倒）的是人，不能说路「ころびやすい」。",
-        "en": "People 「ころぶ」 (fall over); a road doesn't."
+        "zh": "「こおる」是结冰，天热时正好相反。",
+        "en": "「こおる」 is to freeze — the opposite of what heat does."
       },
       {
-        "zh": "「たおれる」是树、人等倒下，路不会倒。",
-        "en": "Trees or people 「たおれる」 (fall down); a road doesn't."
+        "zh": "「ひえる」是变凉，天热时冰淇淋不会变得更凉。",
+        "en": "「ひえる」 is to get cold; heat doesn't do that."
       },
       {
-        "zh": "「おちる」是从高处掉下，路面不会掉下去。",
-        "en": "「おちる」 is dropping from a height; a road doesn't."
+        "zh": "「かわく」是变干，用于衣服、喉咙等，不用于冰淇淋。",
+        "en": "「かわく」 is to dry (clothes, your throat), not what ice cream does."
       }
     ]
   },
@@ -617,44 +621,39 @@
   },
   {
     "id": "n4-m1-017",
+    "rev": 2,
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "ひさしぶりに あった おとうとは （　） せが たかく なって いました。",
+    "stem": "むかし ならった えいごの たんごを （　） わすれて しまいました。",
     "options": [
-      "ずいぶん",
-      "けっして",
-      "ちっとも",
-      "もうすぐ"
+      "すっかり",
+      "しっかり",
+      "はっきり",
+      "ゆっくり"
     ],
-    "okj": [
-      null,
-      "決して",
-      null,
-      null
-    ],
-    "kj": "久しぶりに会った弟はずいぶん背が高くなっていました。",
+    "kj": "昔習った英語の単語をすっかり忘れてしまいました。",
     "answer": 0,
     "tr": {
-      "zh": "好久没见的弟弟长高了很多。",
-      "en": "My little brother, whom I hadn't seen in a while, had grown a lot taller."
+      "zh": "以前学过的英语单词我全忘光了。",
+      "en": "I've completely forgotten the English words I learned long ago."
     },
     "why": {
-      "zh": "久别重逢发现长高了“很多”，用「ずいぶん」（相当、很）。",
-      "en": "Seeing him after a long time, he'd grown a lot: 「ずいぶん」 (quite a lot)."
+      "zh": "「すっかり」（完全、全部）常和「わすれる」「かわる」等变化一起用：全忘光了。",
+      "en": "「すっかり」 (completely) goes with changes like 「わすれる」: forgot them all."
     },
     "wrong": [
       null,
       {
-        "zh": "「けっして」后面要接否定（决不〜），这里是肯定句。",
-        "en": "「けっして」 needs a negative (never …); this sentence is positive."
+        "zh": "「しっかり」是“牢牢地、好好地”，常说「しっかり おぼえる」，和“忘了”意思相反。",
+        "en": "「しっかり」 (firmly) goes with remembering (「しっかり おぼえる」), not forgetting."
       },
       {
-        "zh": "「ちっとも」后面也要接否定（一点也不〜）。",
-        "en": "「ちっとも」 also needs a negative (not at all)."
+        "zh": "「はっきり」是“清楚地”，“清楚地忘了”说不通。",
+        "en": "「はっきり」 (clearly) makes no sense with forgetting."
       },
       {
-        "zh": "「もうすぐ」是马上（将来），和已经发生的「なって いました」不合。",
-        "en": "「もうすぐ」 is soon (future); it doesn't fit 「なって いました」, which has already happened."
+        "zh": "「ゆっくり」是“慢慢地”，形容动作的速度，不用于“忘记”。",
+        "en": "「ゆっくり」 (slowly) describes the speed of an action, not forgetting."
       }
     ]
   },
@@ -708,9 +707,15 @@
     "stem": "りょこうの にもつを ぜんぶ （　）に いれました。",
     "options": [
       "スーツケース",
-      "カーテン",
-      "エスカレーター",
-      "アクセサリー"
+      "ポケット",
+      "さいふ",
+      "ふうとう"
+    ],
+    "okj": [
+      null,
+      null,
+      "財布",
+      "封筒"
     ],
     "kj": "旅行の荷物を全部スーツケースに入れました。",
     "answer": 0,
@@ -719,109 +724,110 @@
       "en": "I put all my travel things into the suitcase."
     },
     "why": {
-      "zh": "能装行李的是「スーツケース」（行李箱）。",
-      "en": "What you pack travel things into is a 「スーツケース」 (suitcase)."
+      "zh": "能把旅行的行李“全部”装进去的是「スーツケース」（行李箱）。",
+      "en": "What holds all your travel things is a 「スーツケース」 (suitcase)."
     },
     "wrong": [
       null,
       {
-        "zh": "「カーテン」是窗帘，不能装东西。",
-        "en": "A 「カーテン」 (curtain) can't hold things."
+        "zh": "「ポケット」是衣服口袋，旅行的行李“全部”装不进去。",
+        "en": "A 「ポケット」 (pocket) can't hold all your travel luggage."
       },
       {
-        "zh": "「エスカレーター」是自动扶梯，不能把行李放进去。",
-        "en": "An 「エスカレーター」 (escalator) isn't something you pack things into."
+        "zh": "「さいふ」是钱包，只放钱和卡，装不了行李。",
+        "en": "A 「さいふ」 (wallet) holds money and cards, not luggage."
       },
       {
-        "zh": "「アクセサリー」是饰品，本身就是小东西，装不了行李。",
-        "en": "An 「アクセサリー」 (accessory) is a small item itself, not a container."
+        "zh": "「ふうとう」是信封，用来装信，装不了行李。",
+        "en": "A 「ふうとう」 (envelope) is for letters, not luggage."
       }
     ]
   },
   {
     "id": "n4-m1-020",
+    "rev": 3,
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "みちで さいふを （　）ので、こうばんに もって いきました。",
+    "stem": "としょかんで かりた ほんを 1しゅうかんごに （　）。",
     "options": [
-      "ひろった",
-      "すてた",
-      "おとした",
-      "かざった"
+      "かえしました",
+      "かしました",
+      "かりました",
+      "もどりました"
     ],
     "okj": [
-      "拾った",
-      "捨てた",
-      "落とした",
-      "飾った"
+      "返しました",
+      "貸しました",
+      "借りました",
+      "戻りました"
     ],
-    "kj": "道で財布を拾ったので、交番に持っていきました。",
+    "kj": "図書館で借りた本を1週間後に返しました。",
     "answer": 0,
     "tr": {
-      "zh": "我在路上捡到了钱包，所以拿去了派出所。",
-      "en": "I found a wallet on the street, so I took it to the police box."
+      "zh": "在图书馆借的书，一周后还了。",
+      "en": "I returned the library book a week later."
     },
     "why": {
-      "zh": "能把钱包送到派出所，说明是捡到的：「さいふを ひろう」。",
-      "en": "Taking a wallet to the police box means you picked it up: 「さいふを ひろう」."
+      "zh": "借来的书过一段时间要「かえす」（还）。",
+      "en": "A borrowed book is later 「かえす」 (returned)."
     },
     "wrong": [
       null,
       {
-        "zh": "「すてる」是扔掉，扔了就没法再送到派出所。",
-        "en": "「すてる」 is throwing away; then there'd be nothing to take to the police."
+        "zh": "「かす」是把自己的东西借给别人，书是图书馆的。",
+        "en": "「かす」 is lending your own thing to someone; the book belongs to the library."
       },
       {
-        "zh": "「おとす」是自己弄丢，丢了的钱包不在手上，没法「もって いく」。",
-        "en": "「おとす」 is losing it yourself; you can't carry a wallet you no longer have to the police box."
+        "zh": "「かりる」是借进来，前面已经说「かりた」了，一周后是还。",
+        "en": "「かりる」 is borrowing — the sentence already says 「かりた」; a week later you give it back."
       },
       {
-        "zh": "「かざる」是装饰，在路上装饰钱包说不通。",
-        "en": "「かざる」 is decorating; decorating a wallet on the street makes no sense."
+        "zh": "「もどる」是自动词（人回来），不能带「ほんを」。",
+        "en": "「もどる」 is intransitive (a person returns) and can't take 「ほんを」."
       }
-    ],
-    "rev": 2
+    ]
   },
   {
     "id": "n4-m1-021",
+    "rev": 2,
     "type": "iikae",
     "difficulty": 1,
-    "stem": "<<この みちは きけんです。>>",
+    "stem": "<<こうえんに こどもが おおぜい います。>>",
     "options": [
-      "この みちは あぶないです。",
-      "この みちは あんぜんです。",
-      "この みちは しずかです。",
-      "この みちは せまいです。"
+      "こうえんに こどもが たくさん います。",
+      "こうえんに こどもが すこし います。",
+      "こうえんに こどもが ひとりも いません。",
+      "こうえんに こどもが ふたり います。"
     ],
     "okj": [
-      "この道は危ないです。",
-      "この道は安全です。",
-      "この道は静かです。",
-      "この道は狭いです。"
+      "公園に子供がたくさんいます。",
+      "公園に子供が少しいます。",
+      "公園に子供が一人もいません。",
+      "公園に子供が二人います。"
     ],
-    "kj": "この道は危険です。",
+    "kj": "公園に子供が大勢います。",
     "answer": 0,
     "tr": {
-      "zh": "这条路很危险。",
-      "en": "This road is dangerous."
+      "zh": "公园里有很多孩子。",
+      "en": "There are lots of children in the park."
     },
     "why": {
-      "zh": "「きけん」（危险）＝「あぶない」。",
-      "en": "「きけん」 (dangerous) = 「あぶない」."
+      "zh": "「おおぜい」（大勢）是“（人）很多”＝「たくさん」。",
+      "en": "「おおぜい」 (a crowd of people) = 「たくさん」."
     },
     "wrong": [
       null,
       {
-        "zh": "「あんぜん」是安全，正好相反。",
-        "en": "「あんぜん」 is safe — the opposite."
+        "zh": "「すこし」是“一点儿、少”，和「おおぜい」相反。",
+        "en": "「すこし」 (a few) is the opposite of 「おおぜい」."
       },
       {
-        "zh": "「しずか」是安静，和危险无关。",
-        "en": "「しずか」 is quiet, unrelated to danger."
+        "zh": "「ひとりも いません」是一个人也没有。",
+        "en": "「ひとりも いません」 means there are none at all."
       },
       {
-        "zh": "「せまい」是窄，窄不等于危险。",
-        "en": "「せまい」 is narrow; narrow isn't the same as dangerous."
+        "zh": "「ふたり」只有两个人，不是很多。",
+        "en": "「ふたり」 is just two — not a crowd."
       }
     ]
   },

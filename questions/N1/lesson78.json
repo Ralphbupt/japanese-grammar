@@ -589,9 +589,9 @@
     "stem": "客が来ようが（　）、店は毎日決まった時間に開けることにしている。",
     "options": [
       "来るまいが",
-      "来ないまいが",
-      "来たまいが",
-      "来てまいが"
+      "来ないまでも",
+      "来たところで",
+      "来ようものなら"
     ],
     "answer": 0,
     "full": "客が来ようが来るまいが、店は毎日決まった時間に開けることにしている。",
@@ -606,16 +606,16 @@
     "wrong": [
       null,
       {
-        "zh": "「まい」本身就是否定，前面不能再接「ない」。",
-        "en": "「まい」 is already negative; it can't follow 「ない」."
+        "zh": "「ないまでも」是“即使达不到……至少也……”，不能和「来ようが」成对。",
+        "en": "「ないまでも」 is \"even if not …, at least\"; it doesn't pair with 「来ようが」."
       },
       {
-        "zh": "「まい」接辞書形（来る／来），不接た形。",
-        "en": "「まい」 follows the dictionary form (来る／来), not the ta-form."
+        "zh": "「たところで」是“即使……也没用”，不能和「来ようが」组成“来不来都……”。",
+        "en": "「たところで」 is \"even if … it's no use\"; it can't pair with 「来ようが」."
       },
       {
-        "zh": "「まい」不接て形。",
-        "en": "「まい」 doesn't follow the te-form."
+        "zh": "「ようものなら」是“万一……就糟了”，后项要是坏结果，也不能和「来ようが」成对。",
+        "en": "「ようものなら」 is \"if by any chance … (something bad)\"; it doesn't pair with 「来ようが」."
       }
     ]
   },

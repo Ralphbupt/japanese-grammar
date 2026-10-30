@@ -166,29 +166,29 @@
       {
         "q": "この文書で伝えられていることは何か。",
         "options": [
-          "期間中も、事前に申請すれば、目的を問わず誰でも原本を閲覧することができる。",
-          "期間中、原本の閲覧は原則としてできないが、研究上欠かせない場合は事前の申請に応じて対応が検討される。",
-          "原本の閲覧が停止される期間中は、資料を利用する方法が一切なくなる。",
-          "デジタル化された資料は、すべての作業が終わってから一括して公開される。"
+          "期間中も、事前に申請して作業に支障がないと認められれば、目的を問わず誰でも原本を閲覧できる。",
+          "期間中、原本の閲覧は原則停止となるが、研究上欠かせない場合は申請に応じて個別に検討される。",
+          "原本の閲覧が停止される期間中は、ウェブサイトで公開される画像によって資料を確認するしかない。",
+          "デジタル化した資料は、作業期間が終わる4月以降に、当館のウェブサイトでまとめて公開される。"
         ],
         "answer": 1,
         "why": {
-          "zh": "原件阅览「原則として停止」，但「研究上どうしても…必要がある場合に限り」事先申请后「個別に対応」。",
-          "en": "Viewing is suspended 「原則として」, but 「研究上どうしても…必要がある場合に限り」 applications are handled 「個別に対応」."
+          "zh": "文书说期间原本阅览「原則として停止」，只有「研究上どうしても原本を確認する必要がある場合に限り」事先申请后「個別に対応」。",
+          "en": "The notice says viewing originals is 「原則として停止」; only 「研究上どうしても…必要がある場合に限り」 will an advance request be handled 「個別に」."
         },
         "wrong": [
           {
-            "zh": "申请仅限「研究上どうしても…必要がある場合」，并非任何目的都可以。",
-            "en": "Applications are only for 「研究上どうしても…必要がある場合」, not any purpose."
+            "zh": "申请只限于「研究上どうしても」需要的情况，并不是「目的を問わず誰でも」；「作業の進捗状況を勘案」是审批时的考虑因素，不是放开阅览的条件。",
+            "en": "Requests are only for cases where research really requires it, not for anyone for any purpose; progress of the work is something the library weighs, not a condition that opens access."
           },
           null,
           {
-            "zh": "期间内完成数字化的资料会「順次…公開」，研究需要也可以申请。",
-            "en": "Digitised materials are published 「順次」, and researchers can still apply."
+            "zh": "研究上必须看原本时，可以申请个别处理，所以并非「只能看网站图片」；而且网站是陆续公开，不是所有资料都已上线。",
+            "en": "Researchers who need the originals can apply, so the website images aren't the only way; and items go online one by one, not all at once."
           },
           {
-            "zh": "文中说的是「順次…公開してまいります」，即陆续公开，不是一次性公开。",
-            "en": "The notice says 「順次…公開」 — one by one, not all at once at the end."
+            "zh": "文书说数字化完成的资料「順次」在网站公开，不是等作业期结束后一次性公开。",
+            "en": "The notice says finished items are published 「順次」 — as they're done, not all together after the work period."
           }
         ]
       }
@@ -207,28 +207,28 @@
       {
         "q": "筆者がこの工場の例を通して最も言いたいことは何か。",
         "options": [
-          "失敗した人の責任を問わなければ、同じ失敗が何度も繰り返される。",
-          "小さな失敗をすべて記録すれば、大きな事故を必ず防ぐことができる。",
-          "失敗を記録させるには、まず本人に深く反省させることが大切だ。",
-          "個人の失敗も、記録され共有されれば、組織にとって役立つものになる。"
+          "失敗した本人の責任を問わないようにすれば、記録は正直に書かれるようになる。",
+          "自分の失敗を記録に残して人目にさらすことには、誰もが抵抗を感じるものである。",
+          "失敗を記録させるには、まず、本人が責任を問われないという安心感が欠かせない。",
+          "一人の失敗であっても、記録として積み重ねられれば、組織全体の役に立ちうる。"
         ],
         "answer": 3,
         "why": {
-          "zh": "最后一句是结论：「一人の失敗は恥ではなく、組織全体の財産になり得る」——个人的失误被记录、共享后，对组织有用。",
-          "en": "The last line is the point: 「一人の失敗は恥ではなく、組織全体の財産になり得る」 — shared, one person's mistake helps everyone."
+          "zh": "末句「一人の失敗は恥ではなく、組織全体の財産になり得る」：记录积累后发现别的部门也在重复同样的失败，个人的失败因此能为整个组织所用。",
+          "en": "The last line — 「一人の失敗は恥ではなく、組織全体の財産になり得る」: once records piled up, the same mistakes turned up in other departments, so one person's failure can serve the whole organisation."
         },
         "wrong": [
           {
-            "zh": "这家工厂恰恰是不追究责任，而反复发生的失误是靠记录才发现的，意思相反。",
-            "en": "The factory doesn't assign blame, and the repeats were discovered through the records — the reverse."
+            "zh": "文中确实说不追究责任，但即便如此一开始「誰も書きたがらなかった」；不追责能让人如实记录，并不是文章想说的重点。",
+            "en": "The text does say no one is blamed, yet at first 「誰も書きたがらなかった」 anyway; blame-free honesty isn't the point being made."
           },
           {
-            "zh": "文中没有说“一定能防止大事故”。",
-            "en": "The text never claims it will always prevent major accidents."
+            "zh": "「自分の失敗を人目にさらすのは…気の進まないものだ」是文中的一个细节，用来说明起初没人愿写，并非主旨。",
+            "en": "That exposing one's mistakes is unpleasant is a detail explaining why no one wrote at first, not the main point."
           },
           {
-            "zh": "文中没有提到让本人反省；重点是不追究责任、共享经验。",
-            "en": "Nothing about making people repent; the point is no blame and shared lessons."
+            "zh": "文中说即使不追责，起初仍没人愿写；文章并没有说「安心感」是让人记录的关键。",
+            "en": "Even without blame, nobody wanted to write at first; the passage never names a sense of safety as the key."
           },
           null
         ]
@@ -249,29 +249,29 @@
       {
         "q": "このメールを読んだ高木さんは、何をしなければならないか。",
         "options": [
-          "分けて受け取るか、12月4日にまとめて受け取るかを決めて、今週中に返事をする。",
-          "11月20日に全数を受け取れるよう、材料の調達を急ぐよう森さんに頼む。",
-          "12月4日に届く400個について、改めて注文書を送る。",
-          "1,000個のうち、どの部品を先に受け取りたいかを森さんに伝える。"
+          "分けて納品してもらうか、12月4日に一括で納品してもらうかを選び、今週中に返信する。",
+          "11月20日に600個が届くので、それに間に合うよう社内の受け入れ準備を急いで整える。",
+          "12月4日に届く予定の残り400個について、改めて注文書を作成して森さんに送り直す。",
+          "材料の調達が遅れている理由と今後の見通しを、今週中に森さんに問い合わせて確かめる。"
         ],
         "answer": 0,
         "why": {
-          "zh": "森提出两种方案：分批（20日600个、12月4日400个）或12月4日一次交货，请对方「いずれをご希望か、今週中にご返信」。",
-          "en": "Mori offers two options — split delivery or everything on 4 December — and asks 「いずれをご希望か、今週中にご返信」."
+          "zh": "邮件请对方在「600個を20日、400個を12月4日」的分批交货和「12月4日の一括納品」中选一个，并「今週中にご返信」。",
+          "en": "The email asks Takagi to choose between split delivery (600 on the 20th, 400 on 4 December) and 「12月4日の一括納品」, and to reply 「今週中に」."
         },
         "wrong": [
           null,
           {
-            "zh": "邮件说全部数量在期限前「難しくなりました」，并没有让高木先生催促采购。",
-            "en": "The mail says having all of them by the date 「難しくなりました」; Takagi isn't asked to push for that."
+            "zh": "600个在20日到货只是选项之一；如果选择一次性交货，20日就没有货。高木先要做的是回复选哪种。",
+            "en": "600 arriving on the 20th is only one option — choosing a single delivery means nothing comes that day. What Takagi must do first is reply with a choice."
           },
           {
-            "zh": "400个是原订单1,000个中的一部分，邮件没有要求重新下单。",
-            "en": "The 400 are part of the original order of 1,000; no new order is asked for."
+            "zh": "剩下的400个属于原订单1,000个的一部分，邮件没有要求重新下单。",
+            "en": "The remaining 400 are part of the original order of 1,000; no new order form is requested."
           },
           {
-            "zh": "都是同一种零件B-200，要决定的是交货方式，不是先要哪种零件。",
-            "en": "They're all the same part, B-200; what has to be chosen is the delivery arrangement."
+            "zh": "材料采购延迟是东和精工方面的原因说明，邮件请求的是回复交货方式，不是询问原因。",
+            "en": "The delayed materials are the supplier's explanation; the email asks for a choice of delivery, not for questions about the cause."
           }
         ]
       }
@@ -389,28 +389,28 @@
       {
         "q": "この文章で筆者が最も言いたいことは何か。",
         "options": [
-          "時計に頼らず、太陽の動きに合わせて暮らすべきである。",
-          "標準時が定められたことで、人々は時間を守るようになった。",
-          "時間は、誰にとっても同じように流れる絶対的なものである。",
-          "時刻の決め方は、時代の要請によって作られた約束事にすぎない。"
+          "時計に追われる生活を改め、太陽の動きに合わせた暮らしを取り戻すべきである。",
+          "標準時が定められたことで、人々は初めて時刻を正確に守って暮らすようになった。",
+          "時間は、誰にとっても同じように流れる絶対的なものであり、社会とは関わりがない。",
+          "日々用いている時刻は、時代の要請に応じて社会が作り上げた取り決めにすぎない。"
         ],
         "answer": 3,
         "why": {
-          "zh": "最后一段：日常使用的「時刻」是「社会が必要に応じて作り上げてきた制度の一つにすぎない」。",
-          "en": "The last paragraph: the 「時刻」 we use is 「社会が必要に応じて作り上げてきた制度の一つにすぎない」."
+          "zh": "文章说「全国どこでも同じ時刻」是「交通という技術が要請した、きわめて人為的な取り決め」，末段又说时刻是「社会が必要に応じて作り上げてきた制度の一つにすぎない」。",
+          "en": "The essay calls nationwide time 「交通という技術が要請した、きわめて人為的な取り決め」 and ends by saying clock time is 「社会が必要に応じて作り上げてきた制度の一つにすぎない」."
         },
         "wrong": [
           {
-            "zh": "作者只是说换个角度看，并没有主张回到按太阳生活。",
-            "en": "The writer suggests seeing things differently, not living by the sun."
+            "zh": "笔者只说换个角度看「時計に追われる毎日」会有所不同，并没有主张回到按太阳生活。",
+            "en": "The author only says the clock-driven day may look different; there is no call to go back to living by the sun."
           },
           {
-            "zh": "文中说的是感觉的变化，没有说人们因此变得守时。",
-            "en": "The text speaks of a change in perception, not of punctuality."
+            "zh": "文章说的是标准时改变了人们按钟表划分一天的感觉，没有说人们因此「初めて」守时；这也不是主旨。",
+            "en": "The essay says standard time changed how people divide the day by the clock, not that people first learned punctuality — and that isn't the main point anyway."
           },
           {
-            "zh": "这是作者提出来要反驳的一般看法（「考えられがちである。だが…」）。",
-            "en": "That's the common view the writer questions (「考えられがちである。だが…」)."
+            "zh": "这是笔者要反驳的一般看法：「絶対的なものだと考えられがちである。だが…」。",
+            "en": "That is the common view the author argues against: 「絶対的なものだと考えられがちである。だが…」."
           },
           null
         ]
@@ -430,87 +430,87 @@
       {
         "q": "「思いがけない不満の声」とは、どのようなものか。",
         "options": [
-          "ビデオ判定を導入しても、誤審が少しも減らないというもの",
-          "判定のたびに試合が中断されて、会場の盛り上がりが失われるというもの",
-          "判定に使われた映像が、観客には公開されないというもの",
-          "審判が映像に頼りすぎて、自分で判断しなくなったというもの"
+          "映像で何度確かめても、際どいプレーの判定は結局ほとんど変わらないというもの",
+          "判定のたびに試合が中断され、観客の高まっていた興奮がそがれてしまうというもの",
+          "判定に用いられた映像が、会場にいる観客には少しも示されないままだというもの",
+          "審判が映像に頼りすぎて、自分の目で判断を下そうとしなくなったというもの"
         ],
         "answer": 1,
         "why": {
-          "zh": "紧接着说：「判定のたびに試合が数分間止まり、会場の熱気が冷めてしまう」。",
-          "en": "Right after: 「判定のたびに試合が数分間止まり、会場の熱気が冷めてしまう」."
+          "zh": "紧接着的一句说明了不满：「判定のたびに試合が数分間止まり、会場の熱気が冷めてしまう」。",
+          "en": "The next sentence spells out the complaint: 「判定のたびに試合が数分間止まり、会場の熱気が冷めてしまう」."
         },
         "wrong": [
           {
-            "zh": "文中说视频能作出正确判罚，没有说误判不减少。",
-            "en": "The text says footage gives correct calls; nothing about errors not falling."
+            "zh": "文章开头说用录像能做出正确判罚，观众不满的不是判罚没变。",
+            "en": "The essay says replay makes correct calls possible; the spectators' complaint isn't that calls stay the same."
           },
           null,
           {
-            "zh": "文中没有提到录像不公开。",
-            "en": "Nothing is said about footage being withheld."
+            "zh": "文中没有说录像不给观众看；反而说录像被当作「正解」展示出来。",
+            "en": "Nothing says the footage is hidden; on the contrary it is shown as the 「正解」."
           },
           {
-            "zh": "文中没有批评裁判过度依赖录像。",
-            "en": "The text doesn't criticise referees for over-relying on video."
+            "zh": "文中没有说裁判过度依赖录像、不再自己判断。",
+            "en": "The text never says referees stop judging for themselves."
           }
         ]
       },
       {
         "q": "古くからのファンが嘆いているのは、どのようなことか。",
         "options": [
-          "際どい判定について、観客同士が語り合うことがなくなったこと",
-          "ビデオ判定によって、審判の権威が失われてしまったこと",
-          "際どいプレーを、映像で繰り返し見られなくなったこと",
-          "観客の意見が、判定に反映されなくなったこと"
+          "際どい判定について、観客同士が試合の後まで語り合うことがなくなったこと",
+          "ビデオ判定の導入によって、審判の下す判断そのものが軽んじられるようになったこと",
+          "際どいプレーがあるたびに試合が数分間止まり、会場の熱気が冷めてしまうこと",
+          "試合の勝敗が、終わった後になって映像によって覆されるようになったこと"
         ],
         "answer": 0,
         "why": {
-          "zh": "「際どい判定をめぐって、観客同士が試合の後まで議論を交わした」情景「見られなくなった」。",
-          "en": "That spectators no longer 「際どい判定をめぐって…議論を交わした」 — those scenes are gone."
+          "zh": "老球迷感叹以前观众会围绕微妙判罚「試合の後まで議論を交わした」，有了录像这个「正解」后「そうした光景が見られなくなった」。",
+          "en": "Long-time fans lament that spectators used to argue over close calls 「試合の後まで」, and since replay supplies the 「正解」 「そうした光景が見られなくなった」."
         },
         "wrong": [
           null,
           {
-            "zh": "文中没有说裁判失去权威。",
-            "en": "Nothing is said about referees losing authority."
+            "zh": "文中没有提到裁判的权威或判断被轻视。",
+            "en": "The text says nothing about referees' authority or judgment being slighted."
           },
           {
-            "zh": "视频裁判正是反复看录像，意思相反。",
-            "en": "Video review means replaying footage — the opposite."
+            "zh": "比赛中断、热度冷却是另一部分观众的「不満」，不是老球迷所感叹的事。",
+            "en": "The stoppages and cooling atmosphere are the other spectators' complaint, not what the old fans lament."
           },
           {
-            "zh": "观众的意见过去也不影响判罚，老球迷感叹的是争论的乐趣消失了。",
-            "en": "Spectators never decided calls; what's missed is the arguing."
+            "zh": "文中没有说胜负在赛后被录像推翻；录像是在比赛中判定时使用的。",
+            "en": "Nothing says results are overturned after the match; replay is used to decide calls during play."
           }
         ]
       },
       {
         "q": "筆者の考えに合うものはどれか。",
         "options": [
-          "観る楽しみを守るためには、ビデオ判定をやめるべきだ。",
-          "選手の努力を守るため、すべての判定を機械に任せるべきだ。",
-          "正確さと観る楽しみをどう両立させるかは、各競技が自らの魅力を見つめ直す中で考えるべきことだ。",
-          "誤審も試合の一部なので、そのまま受け入れるべきだ。"
+          "観る楽しみが損なわれる以上、ビデオ判定の使用は必要最小限にとどめるべきだ。",
+          "選手の努力を無にしないためには、何よりも判定の正確さを優先させるべきだ。",
+          "正確さと楽しさの両立は、各競技が自らの魅力を問い直す中で探っていくべきだ。",
+          "際どい判定をめぐる議論も観戦の醍醐味なので、多少の誤審は受け入れるべきだ。"
         ],
         "answer": 2,
         "why": {
-          "zh": "最后一句：如何兼顾准确与乐趣，只有「それぞれの競技が、自らの魅力とは何かを問い直すこと」才能回答。",
-          "en": "The last sentence: only by 「それぞれの競技が、自らの魅力とは何かを問い直すこと」 can accuracy and enjoyment be reconciled."
+          "zh": "末段：既不能放任误判，也不能失去观赛乐趣；如何兼顾，要「それぞれの競技が、自らの魅力とは何かを問い直すこと」才能找到答案。",
+          "en": "Last paragraph: bad calls can't be left alone, nor should the pleasure of watching be lost; how to balance them can only be answered by each sport 「自らの魅力とは何かを問い直すこと」."
         },
         "wrong": [
           {
-            "zh": "作者说「誤審を放置してよいわけではない」，没有主张废除。",
-            "en": "The writer says 「誤審を放置してよいわけではない」 — no call to scrap it."
+            "zh": "笔者认为乐趣受损是问题，但也说「誤審を放置してよいわけではない」，没有主张把录像限制到最少。",
+            "en": "The author sees lost enjoyment as a problem but also says 「誤審を放置してよいわけではない」 — there's no call to keep replay to a minimum."
           },
           {
-            "zh": "作者提出的问题是“哪些交给机器、哪些留给人”，不是全部交给机器。",
-            "en": "The writer asks what to leave to machines and what to people, not all to machines."
+            "zh": "笔者同意不能让选手的努力因漏判白费，但说「正確さを追い求めるあまり」失去乐趣「も見過ごせない」，并不主张正确性压倒一切。",
+            "en": "The author agrees effort mustn't be wasted by a missed call, but warns that chasing accuracy at the cost of enjoyment is also a problem — accuracy is not put first."
           },
           null,
           {
-            "zh": "作者明确说误判不能放任不管。",
-            "en": "The writer says bad calls can't be left alone."
+            "zh": "围绕判罚的争论是老球迷的感受；笔者明确说「誤審を放置してよいわけではない」。",
+            "en": "Arguing over calls is what old fans miss; the author plainly says 「誤審を放置してよいわけではない」."
           }
         ]
       }
@@ -529,57 +529,57 @@
       {
         "q": "「私」が、傘を直してほしい理由を説明するのをやめたのはなぜか。",
         "options": [
-          "説明しても、老人には分かってもらえないだろうと思ったから",
-          "理由を言葉にすると、友人との思い出が軽いものになってしまうように思えたから",
-          "新しい傘を買うほうが安いことは、自分でも分かっていたから",
-          "友人が亡くなったことを、他人に知られたくなかったから"
+          "事情を話したところで、老人に自分の気持ちまでは伝わらないだろうと思ったから",
+          "言葉にしたとたん、友人への思いが安っぽいものになってしまう気がしたから",
+          "新しく買うほうが安いと分かっていながら修理を頼むのが、気恥ずかしかったから",
+          "友人を亡くした悲しみを、見知らぬ人の前で口にするのはつらいと感じたから"
         ],
         "answer": 1,
         "why": {
-          "zh": "文中直接说「言葉にしたとたん、何か大切なものが安っぽくなってしまう気がした」。",
-          "en": "The text says 「言葉にしたとたん、何か大切なものが安っぽくなってしまう気がした」."
+          "zh": "「言葉にしたとたん、何か大切なものが安っぽくなってしまう気がしたのだ」——怕说出口会让和亡友有关的珍贵东西变得廉价。",
+          "en": "「言葉にしたとたん、何か大切なものが安っぽくなってしまう気がしたのだ」 — saying it aloud would cheapen something precious tied to the friend."
         },
         "wrong": [
           {
-            "zh": "作者担心的是说出口会让回忆变廉价，不是对方不理解。",
-            "en": "The worry was cheapening the memory, not being misunderstood."
+            "zh": "文中没有说「我」担心老人不理解；理由是怕说出口会使其变得廉价。",
+            "en": "The narrator doesn't worry the old man won't understand; the fear is of cheapening it by putting it into words."
           },
           null,
           {
-            "zh": "“知道买新的更便宜”是前文的内容，不是停止解释的原因。",
-            "en": "Knowing a new one was cheaper comes earlier; it isn't why he stopped explaining."
+            "zh": "「我」确实知道买新的更便宜，但这不是不说明理由的原因，文中也没写难为情。",
+            "en": "The narrator does know a new one is cheaper, but that isn't why they stopped explaining, and embarrassment isn't mentioned."
           },
           {
-            "zh": "文中没有说不想让人知道朋友去世。",
-            "en": "Nothing says he wanted to hide his friend's death."
+            "zh": "文中没有说「我」说出口会难过，原因写的是怕把重要的东西说得廉价。",
+            "en": "The text doesn't say talking about it would be painful; the stated reason is that words would cheapen it."
           }
         ]
       },
       {
         "q": "老人が黙ってうなずいたのはなぜだと考えられるか。",
         "options": [
-          "古い骨を使えば、安く直せることに気づいたから",
-          "「私」から友人の話を聞いて、事情がよく分かったから",
-          "新しい傘を買うように勧めても、むだだと諦めたから",
-          "「私」がこの傘に特別な思いを抱いていることを察したから"
+          "古い骨を一本使えば、新品を買うよりも安く直せることに気づいたから",
+          "「私」の説明を聞いて、この傘にまつわる事情がよく分かったから",
+          "新しい傘を勧めても、「私」が聞き入れそうにないと諦めたから",
+          "言葉にされなくても、「私」が傘に寄せる特別な思いを察したから"
         ],
         "answer": 3,
         "why": {
-          "zh": "老人先说买新的更便宜，但端详了伞后默默点头；最后一段的「気遣い」也表明他看出了「私」对这把伞的特殊感情。",
-          "en": "He first suggested buying new, then looked at the umbrella and nodded; the 「気遣い」 at the end shows he sensed the umbrella meant something special."
+          "zh": "「我」并没有说明理由，老人看了一会儿伞后「黙ってうなずき」，可见他察觉到这把伞对「我」有特殊意义。",
+          "en": "The narrator never explained; the old man looked at the umbrella for a while and 「黙ってうなずき」 — he sensed it meant something special."
         },
         "wrong": [
           {
-            "zh": "老人最后收了和新伞差不多的钱，修理并不便宜。",
-            "en": "He charged about the price of a new umbrella; the repair wasn't cheap."
+            "zh": "修理费和新伞差不多，并不便宜；用旧伞骨是修理的手段，不是点头的原因。",
+            "en": "The repair cost about as much as a new umbrella; using an old rib is how he fixed it, not why he nodded."
           },
           {
-            "zh": "「私」话说到一半就「やめた」，并没有告诉老人。",
-            "en": "The narrator 「やめた」 — he never told the story."
+            "zh": "「我」「説明しかけて、やめた」，老人并没有听到朋友的事。",
+            "en": "The narrator 「説明しかけて、やめた」 — the old man never heard about the friend."
           },
           {
-            "zh": "最后一段说老人的定价体现了「気遣い」，他是理解了「私」，不是无奈放弃。",
-            "en": "The last paragraph shows his 「気遣い」; he understood rather than gave up."
+            "zh": "老人之后认真修好了伞，并收了经过斟酌的价钱，不是无奈放弃。",
+            "en": "He went on to repair it carefully and charge a considered price; he wasn't giving up."
           },
           null
         ]
@@ -587,20 +587,20 @@
       {
         "q": "「私」は、修理代の金額をどのように受け止めたか。",
         "options": [
-          "新品とほとんど変わらないのなら、新しい傘を買えばよかったと後悔した。",
-          "古い骨を使ったわりには、高すぎる値段だと感じた。",
-          "「私」の気持ちにつけ込むことも、哀れむこともしない、配慮のこもった値段だと感じた。",
-          "老人が「私」の事情を知って、わざと安くしてくれたと感じた。"
+          "新品とほとんど変わらない金額なら、修理せずに買い替えればよかったと思った。",
+          "古い骨を一本取り替えただけにしては、少し高すぎる値段だと感じた。",
+          "「私」の思いにつけ込みも哀れみもしない、心配りのある値段だと感じた。",
+          "老人が「私」の事情を察して、わざと安くしてくれたのだと感じた。"
         ],
         "answer": 2,
         "why": {
-          "zh": "「高く取れば私の思いにつけ込む…ただにすれば私の思いを哀れむ…老人は、そのどちらも選ばなかった」，「私」从中感到「気遣い」。",
-          "en": "「高く取れば…つけ込む…ただにすれば…哀れむ…そのどちらも選ばなかった」 — the narrator feels the old man's 「気遣い」."
+          "zh": "末段：价钱「安くはない。だが、高すぎもしない」，「我」从中感到老人的体贴——收高了是「思いにつけ込む」，不收钱是「哀れむ」，他两者都没选。",
+          "en": "Last paragraph: 「安くはない。だが、高すぎもしない」; the narrator senses care — charging a lot would exploit the feeling, charging nothing would pity it, and he did neither."
         },
         "wrong": [
           {
-            "zh": "「私」从价钱中感到的是体贴，并没有后悔。",
-            "en": "The narrator felt consideration, not regret."
+            "zh": "「我」没有后悔，而是从价钱中感受到了老人的体贴。",
+            "en": "The narrator feels no regret; the price is read as a sign of care."
           },
           {
             "zh": "文中说「高すぎもしない」。",
@@ -608,8 +608,8 @@
           },
           null,
           {
-            "zh": "价钱「安くはない」，而且老人并不知道事情的原委。",
-            "en": "The price was 「安くはない」, and the old man was never told the story."
+            "zh": "价钱和新伞差不多，「安くはない」；老人也没听到事情原委。",
+            "en": "It cost about the same as a new one — 「安くはない」 — and the old man never heard the story."
           }
         ]
       }
@@ -628,86 +628,86 @@
       {
         "q": "筆者は、新しい地名が好まれることについて、どのように考えているか。",
         "options": [
-          "住民が古い地名の意味を知らないために、安易に選ばれているにすぎない。",
-          "古い地名には不吉な字が多いので、避けられるのは当然だ。",
-          "土地の印象がよくなり、経済的な利点もあるので、好まれるのも理解できる。",
-          "明るい名前は土地の歴史を隠してしまうので、付けるべきではない。"
+          "住民が古い地名の由来を知らないまま、聞こえのよさだけで安易に選んでいる。",
+          "古い地名には災害を連想させる字が多いので、避けられるのも当然のことだ。",
+          "土地の印象が良くなり資産価値も上がりうるので、好まれるのも理解できる。",
+          "明るい名前は土地の過去を覆い隠すので、新たに付けることは控えるべきだ。"
         ],
         "answer": 2,
         "why": {
-          "zh": "第一段说土地形象变好对地价也有好处，「無理もない」（也难怪），表示可以理解。",
-          "en": "Paragraph 1: a better image helps land prices too, so it's 「無理もない」 — understandable."
+          "zh": "第一段说土地形象变好，「地価にもよい影響がある」，所以「無理もない」——笔者认为人们喜欢新地名可以理解。",
+          "en": "Paragraph 1: a better image is good for land prices too, so it is 「無理もない」 — the author finds the preference understandable."
         },
         "wrong": [
           {
-            "zh": "作者对新地名受欢迎表示「無理もない」，没有说是因为无知而轻率选择。",
-            "en": "The writer calls it 「無理もない」, not a careless choice born of ignorance."
+            "zh": "居民不知道旧地名是第三段讲的「记忆丢失」，不是笔者对人们喜欢新地名的评价；笔者也没有说这是轻率的选择。",
+            "en": "Residents not knowing the old names is paragraph 3's point about lost memory, not the author's view of why new names are liked; nothing calls the choice careless."
           },
           {
-            "zh": "文中没有说人们是因为不吉利的字才避开旧地名。",
-            "en": "The text never says old names are avoided for ominous characters."
+            "zh": "文中没有说旧地名因字眼不吉利而被避开；笔者给出的理由是土地形象和地价。",
+            "en": "The text never says old names are avoided for ominous characters; the reason given is image and land prices."
           },
           null,
           {
-            "zh": "作者说「地名を変えること自体が悪いわけではない」。",
-            "en": "The writer says 「地名を変えること自体が悪いわけではない」."
+            "zh": "第四段明说「地名を変えること自体が悪いわけではない」，并没有主张不该取明快的新名字。",
+            "en": "Paragraph 4 says 「地名を変えること自体が悪いわけではない」; the author doesn't oppose bright new names."
           }
         ]
       },
       {
         "q": "筆者は、古い地名についてどのように述べているか。",
         "options": [
-          "由来の分からないものも多いが、災害の記憶を伝えている可能性があるものもある。",
-          "どれも、その土地でかつて起きた災害を伝えるものである。",
-          "文字の記録が豊富な時代に付けられたので、信頼できる資料である。",
-          "由来がはっきりしないものは、変えてしまってもかまわない。"
+          "由来の不明なものも少なくないが、かつての災害を伝えている場合もある。",
+          "由来のはっきりしない地名は、災害とは無関係なので変えても差し支えない。",
+          "記録の乏しい時代に付けられたので、土地の歴史を知る資料としては当てにならない。",
+          "「蛇」や「崩」の字を含むものは、土砂崩れの跡地であることが確かめられている。"
         ],
         "answer": 0,
         "why": {
-          "zh": "第二段：「すべての地名がそうだというわけではなく、由来がはっきりしないものも多い」，但「警告であった可能性は否定できない」。",
-          "en": "Paragraph 2: 「すべての地名がそうだというわけではなく…由来がはっきりしないものも多い」, yet 「警告であった可能性は否定できない」."
+          "zh": "第二段：「すべての地名がそうだというわけではなく、由来がはっきりしないものも多い」，但地名可能是一种警告，「可能性は否定できない」。",
+          "en": "Paragraph 2: 「すべての地名がそうだというわけではなく…由来がはっきりしないものも多い」, yet that they were warnings 「可能性は否定できない」."
         },
         "wrong": [
           null,
           {
-            "zh": "作者明确说「すべての地名がそうだというわけではなく」。",
-            "en": "The writer says 「すべての地名がそうだというわけではなく」."
+            "zh": "文中只说由来不明的很多，并没有说它们与灾害无关、可以随便改。",
+            "en": "The text only says many origins are unclear — not that such names are unrelated to disasters or fine to change."
           },
           {
-            "zh": "文中说的是「文字による記録の乏しかった時代」，正好相反。",
-            "en": "The text speaks of 「文字による記録の乏しかった時代」 — the opposite."
+            "zh": "正相反：正因为是「文字による記録の乏しかった時代」，地名才可能是先人留下的警告。",
+            "en": "The reverse: precisely because records were 「乏しかった」, a name may have been a warning left by people of that time."
           },
           {
-            "zh": "文中没有这样的主张；作者主张改名时要确认、记录原来的意义。",
-            "en": "No such claim; the writer wants old meanings checked and recorded."
+            "zh": "文中说的是「示している場合があると言われる」，只是传闻和可能性，并没有被证实。",
+            "en": "The text says only 「示している場合があると言われる」 — a possibility, not something confirmed."
           }
         ]
       },
       {
         "q": "「名前に込められていた記憶もまた、静かに失われていた」とは、どういうことか。",
         "options": [
-          "住民が、地名が新しくなったこと自体をすでに忘れていたということ",
-          "被害を受けた住民が、昔の地名を思い出したくないと感じていたということ",
-          "古い地名を記録した資料が、豪雨によって失われてしまったということ",
-          "地名が変わったことで、その土地の危険を知る手がかりが住民に伝わらなくなっていたということ"
+          "住民が、地名が新しく変わったこと自体を、もう覚えていなかったということ",
+          "被災した住民が、昔の地名を口にすることを避けるようになっていたということ",
+          "古い地名を記した資料が、埋め立てや開発の際に処分されていたということ",
+          "改名によって、土地の危険を知る手がかりが住民に届かなくなったということ"
         ],
         "answer": 3,
         "why": {
-          "zh": "前文：受灾地区的新地名下藏着与水有关的旧地名，而居民「かつてどう呼ばれていたかを知らなかった」——土地危险的线索没有传下来。",
-          "en": "Before this: old water-related names lay under new ones and residents 「かつてどう呼ばれていたかを知らなかった」 — the clue to the danger was lost."
+          "zh": "前文：受灾地区的新地名下藏着与水有关的旧地名，而居民「かつてどう呼ばれていたかを知らなかった」——改名后，提示土地危险的线索没有传到居民那里。",
+          "en": "Before this: water-related old names lay under new ones and residents 「かつてどう呼ばれていたかを知らなかった」 — renaming cut them off from the clue to the danger."
         },
         "wrong": [
           {
-            "zh": "居民不知道的是旧名字是什么，不是忘了改过名。",
-            "en": "What residents didn't know was the old name, not that a change happened."
+            "zh": "居民不知道的是土地过去的名字和含义，不是忘了改过名这件事。",
+            "en": "What residents didn't know was the old name and its meaning, not the fact that the name had changed."
           },
           {
-            "zh": "文中没有说居民不愿意回想旧地名。",
-            "en": "Nothing says residents didn't want to remember."
+            "zh": "文中没有说受灾居民不愿想起旧地名；他们是本来就不知道。",
+            "en": "Nothing says victims avoided mentioning the old name; they simply never knew it."
           },
           {
-            "zh": "消失的是名字所承载的记忆，不是资料被暴雨毁掉。",
-            "en": "What was lost was the memory carried by the names, not documents destroyed by rain."
+            "zh": "文中没有提到记录旧地名的资料被处理掉；第四段只说改名时很少有人去「記録に残す」。",
+            "en": "No records being discarded is mentioned; paragraph 4 says only that few bothered to 「記録に残す」 at all."
           },
           null
         ]
@@ -715,29 +715,29 @@
       {
         "q": "この文章で筆者が最も言いたいことは何か。",
         "options": [
-          "災害を防ぐために、新しい地名を古い地名に戻すべきだ。",
-          "地名を変える際には、元の地名が何を意味していたかを確かめ、記録として残すべきだ。",
-          "住民の誇りを守るためには、古い地名を変えることも必要だ。",
-          "古い地名は、過去を懐かしむための文化財として大切に守るべきだ。"
+          "災害の危険を伝えるため、新しい地名はできる限り元の地名に戻すべきだ。",
+          "地名を改めるなら、旧地名が持っていた意味を確かめ、記録しておくべきだ。",
+          "住民が誇りを持てる町にするには、古い地名を改めることもやむを得ない。",
+          "古い地名は先人の残した文化財であり、過去をしのぶよすがとして守るべきだ。"
         ],
         "answer": 1,
         "why": {
-          "zh": "第四段指出问题在于改名时没有「それまでの名前が何を意味していたのかを確かめ、記録に残す」；最后一段介绍相关尝试，主张两者兼顾。",
-          "en": "Paragraph 4: the problem is the neglect of 「それまでの名前が何を意味していたのかを確かめ、記録に残す」; the last paragraph argues for keeping both."
+          "zh": "第四段指出问题在于改名时没有「それまでの名前が何を意味していたのかを確かめ、記録に残す」；最后一段介绍相关尝试，主张新旧两者兼顾。",
+          "en": "Paragraph 4: the problem is the neglect of 「それまでの名前が何を意味していたのかを確かめ、記録に残す」; the last paragraph argues for living with both."
         },
         "wrong": [
           {
-            "zh": "作者说改名本身不是坏事，没有主张恢复旧名。",
-            "en": "The writer doesn't object to new names or call for restoring old ones."
+            "zh": "笔者并不主张恢复旧地名；第四段说改名本身不坏，最后一段只举了保留一个字、立说明牌等做法。",
+            "en": "The author doesn't call for restoring old names; changing them isn't bad in itself, and the examples are signs or keeping one character."
           },
           null,
           {
-            "zh": "作者承认这是居民的权利，但这不是文章的主旨。",
-            "en": "The writer grants it as a right, but it isn't the main point."
+            "zh": "住民有权选自己引以为豪的名字是笔者承认的一点，但不是全文的主旨；主旨在于改名时要查明并记录旧名的含义。",
+            "en": "The residents' right to a proud name is a point the author concedes, not the main claim, which is about checking and recording the old meaning."
           },
           {
-            "zh": "作者明确说这些尝试「過去を懐かしむためのものではない」。",
-            "en": "The writer says these efforts are 「過去を懐かしむためのものではない」."
+            "zh": "最后一段明说这些尝试「過去を懐かしむためのものではない」，而是把先人的智慧用到今天的生活中。",
+            "en": "The last paragraph says these efforts are 「過去を懐かしむためのものではない」 but about using past wisdom today."
           }
         ]
       }
@@ -786,58 +786,58 @@
       {
         "q": "命名権の売却について、AとBはどのような立場をとっているか。",
         "options": [
-          "Aは運用上の課題があるとしながらも肯定し、Bは条件を付けたうえで認めている。",
-          "Aは全面的に肯定し、Bは全面的に否定している。",
-          "AもBも、市民の声を反映させることを条件に認めている。",
-          "Aは慎重な立場をとり、Bは積極的に推進すべきだとしている。"
+          "Aは運用上の課題を認めつつ売却に賛成し、Bは条件付きで容認している。",
+          "Aは課題を認めつつ売却に賛成し、Bは混乱や収入減を理由に反対している。",
+          "AもBも、市民の意見を名称に反映させることを条件として売却を認めている。",
+          "Aは財源確保の必要性を述べるにとどまり、Bは売却に対して批判的である。"
         ],
         "answer": 0,
         "why": {
           "zh": "A承认有需要事先约定的事，但认为那是「運用の問題」，肯定出售；B说「売るなと言うつもりはない」，但提出「最低限の条件」。",
-          "en": "A grants there are things to settle but calls them 「運用の問題」 and supports it; B says 「売るなと言うつもりはない」 but sets 「最低限の条件」."
+          "en": "A grants there are things to settle but calls them 「運用の問題」 and supports selling; B says 「売るなと言うつもりはない」 but sets 「最低限の条件」."
         },
         "wrong": [
           null,
           {
-            "zh": "B明确说「売るなと言うつもりはない」，并非全面否定。",
-            "en": "B says 「売るなと言うつもりはない」 — not a blanket no."
+            "zh": "A的部分对，但B明说「売るなと言うつもりはない」，并不反对；混乱和收入中断只是B提出条件的理由。",
+            "en": "A is right, but B says 「売るなと言うつもりはない」 — confusion and lost income are reasons for conditions, not for opposing it."
           },
           {
-            "zh": "反映市民意见的条件只有B提出，A没有提。",
-            "en": "Only B makes residents' views a condition."
+            "zh": "以反映市民意见为条件的只有B；A没有提出这样的条件。",
+            "en": "Only B makes citizens' input a condition; A sets no such condition."
           },
           {
-            "zh": "立场颠倒了：A更积极，B更谨慎。",
-            "en": "Reversed: A is the more positive, B the more cautious."
+            "zh": "A不是只陈述财源的必要性：它明确说「否定する理由にはならない」，是赞成的立场；B也不是单纯批评，而是有条件地认可。",
+            "en": "A doesn't merely state the need for revenue — 「否定する理由にはならない」 is support; and B accepts it with conditions rather than just criticising."
           }
         ]
       },
       {
         "q": "Bの筆者は、命名権を売却する際に何が必要だと述べているか。",
         "options": [
-          "契約期間を長くして、施設の名前ができるだけ変わらないようにすること",
-          "契約料を、施設の維持や設備の更新に確実に使うこと",
-          "施設の元の名称を併記し、名前を決める過程に市民の意見を取り入れること",
-          "新しい買い手が見つかるまで、現在の契約を延長すること"
+          "契約期間を長めに設定し、施設の名称が頻繁に変わらないようにすること",
+          "得られた契約料を、施設の維持や老朽化した設備の更新に充てること",
+          "本来の名称を併せて示し、命名の過程に市民の声を反映させること",
+          "契約終了後に収入が途絶えないよう、次の買い手を早めに確保しておくこと"
         ],
         "answer": 2,
         "why": {
-          "zh": "B最后：「施設の本来の名称を必ず併記すること」和「名前を決める過程に市民の声を反映させること」。",
-          "en": "B ends: 「施設の本来の名称を必ず併記すること」 and 「名前を決める過程に市民の声を反映させること」."
+          "zh": "B最后提出两个最低条件：「施設の本来の名称を必ず併記すること」和「名前を決める過程に市民の声を反映させること」。",
+          "en": "B's two minimum conditions: 「施設の本来の名称を必ず併記すること」 and 「名前を決める過程に市民の声を反映させること」."
         },
         "wrong": [
           {
-            "zh": "B指出频繁改名的问题，但提出的条件不是延长合同期限。",
-            "en": "B points to frequent changes but doesn't propose longer contracts."
+            "zh": "B指出名字每几年一变会造成混乱，但并没有提出延长合同期作为对策。",
+            "en": "B notes the confusion of names changing every few years but doesn't propose longer contracts as the remedy."
           },
           {
-            "zh": "把合同费用于维护设施是A的论点，B没有提出这个条件。",
-            "en": "Using the fee for upkeep is A's point; B sets no such condition."
+            "zh": "把合同费用于设施维护和更新是A谈到的好处，不是B提出的条件。",
+            "en": "Using the fee for upkeep and renewal is a benefit A mentions, not a condition B sets."
           },
           null,
           {
-            "zh": "B只指出了找不到买家的风险，没有提出延长合同。",
-            "en": "B only notes the risk of no buyer; it proposes no extension."
+            "zh": "找不到新买家、收入中断是B指出的问题，但B没有要求提前确保下一个买家。",
+            "en": "Losing income when no new buyer appears is a problem B raises, but B doesn't ask for the next buyer to be lined up early."
           }
         ]
       }
@@ -856,39 +856,39 @@
       {
         "q": "筆者は、感想と批評の違いをどのように説明しているか。",
         "options": [
-          "感想は作品を褒めるものであり、批評は作品の欠点を指摘するものだ。",
-          "感想は個人の受け止め方の表明だが、批評は根拠を挙げて作品の狙いとその達成度を論じるものだ。",
-          "感想は誰にでも書けるが、批評は専門家でなければ書けない。",
-          "感想には正しい答えがあるが、批評には正しい答えがない。"
+          "感想は作品の長所を語るものであり、批評は作品の短所を指摘するものだ。",
+          "感想は個人の感じ方の表明で、批評は根拠を挙げて作品の狙いと達成度を論じる。",
+          "感想は誰でも気軽に発信できるが、批評は専門的な知識を持つ者にしか書けない。",
+          "感想には正誤の区別がないが、批評は作品の正しい評価を一つに定めるものだ。"
         ],
         "answer": 1,
         "why": {
           "zh": "第二段：感想是「私はこう感じた」的表白，无所谓对错；批评是「根拠を示しながら」论述作品想做什么、做到了什么程度。",
-          "en": "Paragraph 2: an impression is 「私はこう感じた」 with no right or wrong; criticism argues 「根拠を示しながら」 what a work attempted and achieved."
+          "en": "Paragraph 2: an impression is 「私はこう感じた」 with no right or wrong; criticism argues 「根拠を示しながら」 what a work attempted and how far it achieved it."
         },
         "wrong": [
           {
-            "zh": "批评只是「ときに」指出缺点，其核心是有依据地论述作品的意图和达成度。",
-            "en": "Criticism points out flaws only 「ときに」; its core is reasoned analysis."
+            "zh": "批评「ときに」会指出缺点，但其本质是有根据地论述作品的意图和完成度，不等于专挑短处；感想也不限于称赞。",
+            "en": "Criticism 「ときに」 points out flaws, but it is defined by reasoned argument about aims and achievement, not by fault-finding; impressions aren't only praise."
           },
           null,
           {
-            "zh": "文中把批评定义为“有依据地论述”的活动，并说找回批评需要的「特別な才能ではない」，没有说只有专家才能写。",
-            "en": "Criticism is defined as reasoned argument, and the writer says what's needed is 「特別な才能ではない」; nothing limits it to experts."
+            "zh": "最后一段说找回批评「特別な才能ではない」，文中也没有说只有专家才写得出批评。",
+            "en": "The last paragraph says reviving criticism needs 「特別な才能ではない」; nothing limits criticism to experts."
           },
           {
-            "zh": "文中说感想「正しいも間違いもない」，说反了。",
-            "en": "The text says impressions have 「正しいも間違いもない」 — reversed."
+            "zh": "前半句对，但笔者没有说批评要定出唯一正确的评价；末段反而强调要容许「異論」。",
+            "en": "The first half is right, but criticism isn't said to fix one correct verdict; the end stresses room for 「異論」."
           }
         ]
       },
       {
         "q": "作品の弱点に触れた文章が「わざわざ水を差すな」と疎まれるのはなぜだと、筆者は考えているか。",
         "options": [
-          "人々が、作品を理解することよりも、感動を共有することを求めているから",
-          "弱点を指摘する文章の多くが、十分な根拠を示していないから",
-          "作り手が、批判的な意見を受け入れようとしないから",
-          "弱点を指摘することは、作品を軽んじることにつながるから"
+          "人々が、作品の理解よりも感動を誰かと分かち合うことを望んでいるから",
+          "弱点を指摘する文章の多くが、根拠を示さずに作品をけなしているから",
+          "作り手やその愛好者が、批判的な意見に耳を傾けようとしないから",
+          "弱点を指摘することは、結局のところ作品を軽んじることにほかならないから"
         ],
         "answer": 0,
         "why": {
@@ -898,16 +898,16 @@
         "wrong": [
           null,
           {
-            "zh": "文中没有说这类文章缺乏依据。",
-            "en": "The text doesn't say such writing lacks evidence."
+            "zh": "文中没有说指出缺点的文章大多缺乏根据；笔者认为问题在读者追求的东西。",
+            "en": "Nothing says most critical pieces lack grounds; the author locates the cause in what readers want."
           },
           {
-            "zh": "被嫌弃是读者（共鸣的人）的反应，文中没有说创作者拒绝批评。",
-            "en": "It's readers who resent it; nothing says creators refuse criticism."
+            "zh": "第二段说批评会招致作者和爱好者的反感，但笔者把被嫌弃的原因归于人们想要分享感动，而不是作者不肯听。",
+            "en": "Paragraph 2 says criticism can annoy creators and fans, but the cause given is the wish to share feelings, not creators refusing to listen."
           },
           {
-            "zh": "作者说严厉的评价「作品を軽んじることではなく」，是认真对待的证明。",
-            "en": "The writer says a harsh assessment is 「作品を軽んじることではなく」."
+            "zh": "笔者恰恰否定这一点：「厳しい評価とは、作品を軽んじることではなく」。",
+            "en": "The author denies exactly this: 「厳しい評価とは、作品を軽んじることではなく」."
           }
         ]
       },
@@ -943,10 +943,10 @@
       {
         "q": "この文章で筆者が最も言いたいことは何か。",
         "options": [
-          "共感を求める感想は、作品の理解を妨げるので控えるべきだ。",
-          "批評を取り戻すためには、まず優れた才能を持つ批評家を育てる必要がある。",
-          "自分と異なる評価も作品を見直す手がかりとして受け入れることが、作品と受け手の双方を豊かにする。",
-          "作り手は、称賛の声には耳を貸さず、批判だけを参考にすべきだ。"
+          "共感を求めるだけの感想は作品の理解を妨げるので、なるべく控えるべきだ。",
+          "批評を取り戻すには、何よりもまず優れた才能を持つ批評家を育てる必要がある。",
+          "異論も作品を見直す手がかりとして受け止めれば、作品も受け手も豊かになる。",
+          "作り手は称賛の声よりも、的を射た批判にこそ耳を傾けて次作に生かすべきだ。"
         ],
         "answer": 2,
         "why": {
@@ -955,17 +955,17 @@
         },
         "wrong": [
           {
-            "zh": "作者说「そうした楽しみ方を否定するつもりはない」。",
-            "en": "The writer says 「そうした楽しみ方を否定するつもりはない」."
+            "zh": "笔者明说「そうした楽しみ方を否定するつもりはない」，并不主张克制感想。",
+            "en": "The author says 「そうした楽しみ方を否定するつもりはない」 and doesn't ask people to hold back impressions."
           },
           {
-            "zh": "作者说需要的「特別な才能ではない」，而是接受异议的度量。",
-            "en": "The writer says what's needed is 「特別な才能ではない」 but openness to dissent."
+            "zh": "最后一段说找回批评需要的「特別な才能ではない」，而是接受异见的度量。",
+            "en": "The last paragraph says what's needed is 「特別な才能ではない」 but the generosity to accept other views."
           },
           null,
           {
-            "zh": "作者说批评对创作者也必要，但没有说要无视赞美；而且主旨在接受者一方。",
-            "en": "The writer says creators need criticism, not that they should ignore praise; the main point is about audiences."
+            "zh": "「的を射た批判は…次の作品を育てる」是第五段的一个论点，不是全文主旨；笔者也没有说称赞可以不听。",
+            "en": "「的を射た批判は…次の作品を育てる」 is one point in paragraph 5, not the main claim, and praise isn't to be ignored."
           }
         ]
       }
@@ -985,58 +985,58 @@
       {
         "q": "大学院博士課程に在籍する佐々木さん（28歳）は、来年、海外で開かれる国際学会で研究を発表する予定がある。あわせて、自分の研究にかかる費用の助成も受けたいと考えている。本財団の助成を受けたことはない。佐々木さんの応募方法として正しいものはどれか。",
         "options": [
-          "①と④の両方に、財団ウェブサイトの応募フォームから応募する。",
-          "①にウェブサイトから応募し、④には指導教員の推薦書を添えて郵送で応募する。",
-          "応募できるのは1部門のみなので、①か④のどちらか一方を選んで応募する。",
-          "③に、指導教員の推薦書を添えて郵送で応募する。"
+          "①と④の両方に、財団ウェブサイトの応募フォームからまとめて応募する。",
+          "①はウェブのフォームから、④は指導教員の推薦書を添えて郵送で応募する。",
+          "応募は1部門に限られるので、①か④のどちらかを選んでウェブから応募する。",
+          "③と④の両方に、指導教員の推薦書を添えてそれぞれ郵送で応募する。"
         ],
         "answer": 1,
         "why": {
-          "zh": "28岁的博士生符合①（39岁以下，含博士生），研究费用申请①；海外发表符合④。④可以和①〜③之一同时申请。①用网站申请，④附推荐信邮寄。",
-          "en": "At 28 and a doctoral student, Sasaki qualifies for (1) for research costs and (4) for the conference; (4) can be combined with one of (1)–(3). (1) is online; (4) is by post with a recommendation."
+          "zh": "28岁的博士生符合①（39岁以下，含博士生），研究费用申请①；海外发表符合④。④可以和①〜③之一同时申请。①用网站申请，④附指导教员推荐信邮寄。",
+          "en": "At 28 and a doctoral student, Sasaki qualifies for (1) for research costs and (4) for the conference; (4) can be combined with one of (1)–(3). (1) is online; (4) is by post with a supervisor's recommendation."
         },
         "wrong": [
           {
-            "zh": "④要附指导教师推荐信邮寄申请，不是网上申请。",
-            "en": "(4) is by post with a supervisor's recommendation, not online."
+            "zh": "④要附指导教员的推荐信邮寄，不能用网站申请。",
+            "en": "(4) is by post with a supervisor's recommendation, not through the online form."
           },
           null,
           {
-            "zh": "“只能申请一个部门”限于①〜③之间，④可以同时申请。",
-            "en": "The one-section rule applies within (1)–(3); (4) can be added."
+            "zh": "「1部門のみ」限的是①〜③之间；④可以和其中之一同时申请。",
+            "en": "「1部門のみ」 applies among (1)–(3); (4) can be added to one of them."
           },
           {
-            "zh": "③要求负责人是专职研究者，而且要与地方政府・NPO等合作，佐々木的情况不符合。",
-            "en": "(3) needs a full-time researcher as leader and a partner organisation; Sasaki fits neither."
+            "zh": "③是与自治体、NPO合作的研究，佐々木的研究费不属于这类；③也是网站申请，不是邮寄。",
+            "en": "(3) is for research with a local authority or NPO, which this isn't, and it is applied for online, not by post."
           }
         ]
       },
       {
         "q": "大学に常勤で勤める松田准教授（45歳）は、2024年4月から2026年3月までの2年間、本財団の共同研究の助成を受けた。今回は、市の防災担当部署と連携して行う研究で応募したいと考えている。松田准教授について正しいものはどれか。",
         "options": [
-          "前回の助成期間の終了から2年が経過していないため、今回はどの部門にも応募できない。",
-          "市の防災担当部署の同意書を添付すれば、③に応募できる。",
-          "45歳なので①には応募できないが、防災分野なので②には応募できる。",
-          "①〜③には応募できないが、④には応募できる。"
+          "前回の助成終了から2年たっていないので、今回はどの部門にも応募できない。",
+          "市の防災担当部署の同意書を添付すれば、③の地域連携研究に応募することができる。",
+          "45歳なので①には応募できないが、環境・防災分野の②には応募できる。",
+          "①〜③には応募できないが、④の国際発表支援には単独で応募することができる。"
         ],
         "answer": 0,
         "why": {
-          "zh": "上次资助2026年3月结束，到截止日2026年12月15日还不满2年，所以不能申请①〜③；④只限博士生。",
-          "en": "The last grant ended March 2026; by the deadline of 15 December 2026 two years haven't passed, so (1)–(3) are closed to him, and (4) is for doctoral students only."
+          "zh": "上次资助2026年3月结束，到截止日2026年12月15日还不满2年，所以不能申请①〜③；④只限博士生，他也不符合。",
+          "en": "The last grant ended March 2026; by the deadline of 15 December 2026 two years haven't passed, so (1)–(3) are closed, and (4) is only for doctoral students."
         },
         "wrong": [
           null,
           {
-            "zh": "内容上符合③，但距上次资助结束不满2年，不能申请①〜③。",
-            "en": "The project fits (3), but under two years have passed since his last grant."
+            "zh": "同意书是③的必要文件，但他上次资助结束不满2年，①〜③都不能申请。",
+            "en": "The consent letter is required for (3), but under two years have passed since his last grant, so (1)–(3) are closed."
           },
           {
-            "zh": "②同样受“不满2年不能申请①〜③”的限制，而且②需要多机构的研究小组。",
-            "en": "(2) is also barred by the two-year rule, and it needs a multi-institution group."
+            "zh": "年龄上确实不能申请①，但②同样受「2年を経過していない」的限制。",
+            "en": "He is too old for (1), but (2) is also barred by the 「2年を経過していない」 rule."
           },
           {
-            "zh": "④只限「大学院博士課程在籍者」，副教授不符合。",
-            "en": "(4) is only for 「大学院博士課程在籍者」; an associate professor doesn't qualify."
+            "zh": "不能申请①〜③是对的，但④的对象是博士课程在读生，副教授不符合。",
+            "en": "(1)–(3) are indeed closed, but (4) is for doctoral students, which an associate professor is not."
           }
         ]
       }

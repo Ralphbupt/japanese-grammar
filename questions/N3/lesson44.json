@@ -86,7 +86,7 @@
       "lesson44#1"
     ],
     "difficulty": 1,
-    "stem": "猫が 窓から [_] [_] [★] [_]、窓が 閉まって いた。",
+    "stem": "猫が 窓から [_] [_] [_] [★]、窓が 閉まって いた。",
     "options": [
       "したが",
       "よう",
@@ -105,15 +105,16 @@
       "en": "The cat tried to escape through the window, but it was shut."
     },
     "why": {
-      "zh": "逃げ ＋ よう（意志形）＋ と ＋ したが：试图做但没成功。★ 在第三格，是「と」。",
-      "en": "逃げ ＋ よう (volitional) ＋ と ＋ したが: tried but failed. The ★ is the third slot: 「と」."
+      "zh": "逃げ ＋ よう（意志形）＋ と ＋ したが：试图做但没成功。★ 在第四格，是「したが」。",
+      "en": "逃げ ＋ よう (volitional) ＋ と ＋ したが: tried but failed. The ★ is the fourth slot: 「したが」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l44-004",
@@ -202,7 +203,7 @@
       "lesson44#2"
     ],
     "difficulty": 2,
-    "stem": "電話番号も 住所も 知らないので、[_] [_] [★] [_]。",
+    "stem": "電話番号も 住所も 知らないので、[_] [★] [_] [_]。",
     "options": [
       "ようが",
       "彼に",
@@ -221,15 +222,16 @@
       "en": "I don't know his phone number or address, so there's no way to contact him."
     },
     "why": {
-      "zh": "彼に ＋ 連絡し（ます形去ます）＋ ようが ＋ ない。★ 在第三格，是「ようが」。",
-      "en": "彼に ＋ 連絡し (masu-stem) ＋ ようが ＋ ない. The ★ is the third slot: 「ようが」."
+      "zh": "彼に ＋ 連絡し（ます形去ます）＋ ようが ＋ ない。★ 在第二格，是「連絡し」。",
+      "en": "彼に ＋ 連絡し (masu-stem) ＋ ようが ＋ ない. The ★ is the second slot: 「連絡し」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l44-007",
@@ -241,9 +243,9 @@
     "stem": "明日が 締め切りなので、今夜は 残業（　）。",
     "options": [
       "せざるを得ない",
-      "しざるを得ない",
-      "さざるを得ない",
-      "するざるを得ない"
+      "しかねない",
+      "しようがない",
+      "しようとしない"
     ],
     "answer": 0,
     "full": "明日が 締め切りなので、今夜は 残業せざるを得ない。",
@@ -252,22 +254,22 @@
       "en": "The deadline is tomorrow, so I have no choice but to work overtime tonight."
     },
     "why": {
-      "zh": "「する」接「ざるを得ない」是特殊变化：せざるを得ない。",
-      "en": "する is irregular with 「ざるを得ない」: せざるを得ない."
+      "zh": "“明天截止”所以“今晚不得不加班”，用「ざるを得ない」；「する」变成「せざるを得ない」。",
+      "en": "The deadline is tomorrow, so overtime is unavoidable: 「ざるを得ない」, with する becoming せざるを得ない."
     },
     "wrong": [
       null,
       {
-        "zh": "「しない」的词干「し」不能接「ざる」，「する」要变成「せ」。",
-        "en": "The stem 「し」 doesn't go with 「ざる」; する becomes 「せ」."
+        "zh": "「しかねない」是“很可能会（发生坏事）”，不是“不得不”。",
+        "en": "「しかねない」 is \"might well (do something bad)\", not \"have no choice but\"."
       },
       {
-        "zh": "没有「さざる」这种变化，「する」要变成「せざるを得ない」。",
-        "en": "There is no 「さざる」 form; する becomes 「せざるを得ない」."
+        "zh": "「しようがない」是“想加班也没办法加”，和“明天截止”的理由不符。",
+        "en": "「しようがない」 is \"there's no way to work overtime\", which doesn't follow from the deadline."
       },
       {
-        "zh": "「ざるを得ない」不接辞书形，「するざる」不成立。",
-        "en": "「ざるを得ない」 doesn't take the dictionary form; 「するざる」 is wrong."
+        "zh": "「しようとしない」是“不肯加班”，说的是别人的态度，和“明天截止所以……”接不上。",
+        "en": "「しようとしない」 is \"won't work overtime\", someone's refusal; it doesn't follow from the deadline."
       }
     ]
   },
@@ -434,7 +436,7 @@
       "lesson44#4"
     ],
     "difficulty": 2,
-    "stem": "せっかくの お話ですが、その 条件では [_] [_] [★] [_]。",
+    "stem": "せっかくの お話ですが、その 条件では [★] [_] [_] [_]。",
     "options": [
       "し",
       "ます",
@@ -453,15 +455,16 @@
       "en": "Thank you for the kind offer, but I'm afraid I can't accept under those conditions."
     },
     "why": {
-      "zh": "お引き受け ＋ し（ます形去ます）＋ かね ＋ ます：礼貌拒绝。★ 在第三格，是「かね」。",
-      "en": "お引き受け ＋ し (masu-stem) ＋ かね ＋ ます: a polite refusal. The ★ is the third slot: 「かね」."
+      "zh": "お引き受け ＋ し（ます形去ます）＋ かね ＋ ます：礼貌拒绝。★ 在第一格，是「お引き受け」。",
+      "en": "お引き受け ＋ し (masu-stem) ＋ かね ＋ ます: a polite refusal. The ★ is the first slot: 「お引き受け」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l44-013",
@@ -550,7 +553,7 @@
       "lesson44#5"
     ],
     "difficulty": 1,
-    "stem": "このまま 何も 対策を しなければ、[_] [_] [★] [_]。",
+    "stem": "このまま 何も 対策を しなければ、[★] [_] [_] [_]。",
     "options": [
       "事故に",
       "かねない",
@@ -569,14 +572,15 @@
       "en": "If we take no measures, this could lead to a serious accident."
     },
     "why": {
-      "zh": "大きな ＋ 事故に ＋ なり（ます形去ます）＋ かねない。★ 在第三格，是「なり」。",
-      "en": "大きな ＋ 事故に ＋ なり (masu-stem) ＋ かねない. The ★ is the third slot: 「なり」."
+      "zh": "大きな ＋ 事故に ＋ なり（ます形去ます）＋ かねない。★ 在第一格，是「大きな」。",
+      "en": "大きな ＋ 事故に ＋ なり (masu-stem) ＋ かねない. The ★ is the first slot: 「大きな」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   }
 ]

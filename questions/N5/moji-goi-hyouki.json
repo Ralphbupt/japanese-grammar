@@ -421,19 +421,20 @@
   },
   {
     "id": "n5-mg-225",
+    "rev": 2,
     "type": "hyouki",
     "difficulty": 1,
-    "stem": "えきの まえの <<ほてる>>に とまります。",
-    "options": ["ホテル", "ホテハ", "ホラル", "ホラハ"],
-    "kj": "駅の前のホテルに泊まります。",
+    "stem": "がっこうで <<のーと>>に かんじを かきます。",
+    "options": ["ノート", "メート", "ノーナ", "ソート"],
+    "kj": "学校でノートに漢字を書きます。",
     "answer": 0,
-    "tr": { "zh": "我住在车站前的酒店。", "en": "I'm staying at the hotel in front of the station." },
-    "why": { "zh": "「ほてる」（酒店）写作「ホテル」。", "en": "ほてる (hotel) is 「ホテル」." },
+    "tr": { "zh": "在学校往本子上写汉字。", "en": "At school I write kanji in my notebook." },
+    "why": { "zh": "「のーと」（笔记本）写作「ノート」，长音用「ー」。", "en": "のーと (notebook) is 「ノート」, with ー for the long vowel." },
     "wrong": [
       null,
-      { "zh": "「る」的片假名是「ル」，不是「ハ」。", "en": "る in katakana is ル, not ハ." },
-      { "zh": "「て」的片假名是「テ」，不是「ラ」。", "en": "て in katakana is テ, not ラ." },
-      { "zh": "「テ」写成了「ラ」，「ル」写成了「ハ」。", "en": "Both are wrong: テ became ラ, and ル became ハ." }
+      { "zh": "「の」的片假名是「ノ」，不是「メ」（「メ」是「め」）。", "en": "の in katakana is ノ, not メ (メ is め)." },
+      { "zh": "「と」的片假名是「ト」，不是「ナ」（「ナ」是「な」）。", "en": "と in katakana is ト, not ナ (ナ is な)." },
+      { "zh": "「の」的片假名是「ノ」，不是「ソ」（「ソ」是「そ」）。", "en": "の in katakana is ノ, not ソ (ソ is そ)." }
     ]
   },
   {

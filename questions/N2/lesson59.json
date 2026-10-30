@@ -117,41 +117,42 @@
   },
   {
     "id": "n2-l59-004",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson59#2"
     ],
     "difficulty": 1,
-    "stem": "健康に悪いと知り（　）、つい夜更かしをしてしまう。",
+    "stem": "無駄遣いだと分かり（　）、セールになるとつい買ってしまう。",
     "options": [
-      "ものの",
+      "次第",
       "つつある",
       "つつも",
-      "ながらに"
+      "かけて"
     ],
     "answer": 2,
-    "full": "健康に悪いと知りつつも、つい夜更かしをしてしまう。",
+    "full": "無駄遣いだと分かりつつも、セールになるとつい買ってしまう。",
     "tr": {
-      "zh": "虽然知道对健康不好，却总是忍不住熬夜。",
-      "en": "Although I know it's bad for my health, I end up staying up late anyway."
+      "zh": "虽然知道是浪费钱，一到打折还是忍不住买。",
+      "en": "I know it's a waste of money, yet when there's a sale I end up buying anyway."
     },
     "why": {
-      "zh": "「知り」是ます形词干，后面接「つつも」表示“虽然……却……”，和后半句「ついしてしまう」相呼应。",
-      "en": "「知り」 is the masu-stem; 「つつも」 attaches to it to mean \"although…, yet…\", matching 「つい…してしまう」."
+      "zh": "「分かり」是ます形词干，接「つつも」表示“虽然……却……”，与后半句「ついしてしまう」呼应。",
+      "en": "「分かり」 is the masu-stem; 「つつも」 attached to it means \"although…, yet…\", matching 「つい…してしまう」."
     },
     "wrong": [
       {
-        "zh": "「ものの」接普通形（「知っているものの」），不能接ます形词干「知り」。",
-        "en": "「ものの」 follows the plain form (「知っているものの」), not the stem 「知り」."
+        "zh": "「分かり次第」是“一知道就马上……”，与后半“却忍不住买”的转折不符。",
+        "en": "「分かり次第」 means 'as soon as I know', which doesn't give the 'although… yet' contrast."
       },
       {
-        "zh": "「つつある」是“正在逐渐……”，表示变化的进行，不能用来连接两个分句。",
-        "en": "「つつある」 means \"is gradually…\" — a change in progress — and can't link two clauses."
+        "zh": "「つつある」表示变化正在进行，放在句中接逗号不成句，也没有转折义。",
+        "en": "「つつある」 marks an ongoing change; it can't link the clauses and has no 'although' meaning."
       },
       null,
       {
-        "zh": "「ながらに」只用于「涙ながらに」「生まれながらに」等固定说法，「知りながらに」不成立（应为「知りながら」）。",
-        "en": "「ながらに」 only lives in set phrases like 「涙ながらに」; 「知りながらに」 isn't a form (it would be 「知りながら」)."
+        "zh": "「分かりかけて」是“开始明白”，与后面的转折关系不符。",
+        "en": "「分かりかけて」 means 'starting to understand', not 'although I know'."
       }
     ]
   },
@@ -233,41 +234,42 @@
   },
   {
     "id": "n2-l59-007",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson59#3"
     ],
     "difficulty": 1,
-    "stem": "賛成するにせよ反対する（　）、理由をはっきり述べるべきだ。",
+    "stem": "進学するにせよ就職する（　）、自分でよく考えて決めなさい。",
     "options": [
       "にしては",
       "にせよ",
-      "にしたら",
+      "からには",
       "にもかかわらず"
     ],
     "answer": 1,
-    "full": "賛成するにせよ反対するにせよ、理由をはっきり述べるべきだ。",
+    "full": "進学するにせよ就職するにせよ、自分でよく考えて決めなさい。",
     "tr": {
-      "zh": "无论赞成还是反对，都应该清楚地说明理由。",
-      "en": "Whether you're for or against it, you should state your reasons clearly."
+      "zh": "无论是升学还是就业，都要自己好好想清楚再决定。",
+      "en": "Whether you go on to university or get a job, think it over carefully and decide for yourself."
     },
     "why": {
-      "zh": "前面已经有「賛成するにせよ」，并列两种情况时用「AにせよBにせよ」（无论A还是B）。",
-      "en": "「賛成するにせよ」 is already there; two alternatives are paired as 「AにせよBにせよ」 (whether A or B)."
+      "zh": "前面已有「進学するにせよ」，并列两种选择用「AにせよBにせよ」（无论A还是B）。",
+      "en": "「進学するにせよ」 is already there; two alternatives are paired as 「AにせよBにせよ」 (whether A or B)."
     },
     "wrong": [
       {
-        "zh": "「にしては」是“就……而言（意外）”，不能和「にせよ」配对。",
-        "en": "「にしては」 (for a…, surprisingly) can't pair with 「にせよ」."
+        "zh": "「にしては」是“就……而言（出乎意料）”，不能和「にせよ」成对表示两种选择。",
+        "en": "「にしては」 means 'for a…, surprisingly'; it can't pair with 「にせよ」 to list alternatives."
       },
       null,
       {
-        "zh": "「にしたら」是“站在……的立场”，接人名词，不接动词「反対する」。",
-        "en": "「にしたら」 (from someone's point of view) follows a person, not the verb 「反対する」."
+        "zh": "「からには」是“既然……就”，只能承接一个已定的事实，不能与「進学するにせよ」并列。",
+        "en": "「からには」 means 'now that…' for one settled fact; it can't pair with 「進学するにせよ」."
       },
       {
-        "zh": "「にもかかわらず」是“尽管……”，表示既成事实的逆接，不能和「にせよ」并列。",
-        "en": "「にもかかわらず」 (despite) concedes a fact; it can't pair with 「にせよ」."
+        "zh": "「にもかかわらず」是“尽管……”，表示逆接，不能用于并列两种选择。",
+        "en": "「にもかかわらず」 means 'despite'; it doesn't list alternatives."
       }
     ]
   },
@@ -349,41 +351,42 @@
   },
   {
     "id": "n2-l59-010",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson59#4"
     ],
     "difficulty": 1,
-    "stem": "今から急いで（　）、もう終電には間に合わないだろう。",
+    "stem": "今さら謝った（　）、彼女はもう許してくれないだろう。",
     "options": [
-      "行ったところ",
-      "行くところで",
-      "行ったところで",
-      "行ったところだ"
+      "ところ",
+      "ばかりに",
+      "ところで",
+      "からには"
     ],
     "answer": 2,
-    "full": "今から急いで行ったところで、もう終電には間に合わないだろう。",
+    "full": "今さら謝ったところで、彼女はもう許してくれないだろう。",
     "tr": {
-      "zh": "就算现在赶紧去，也赶不上末班车了吧。",
-      "en": "Even if you hurry there now, you probably won't make the last train."
+      "zh": "事到如今就算道歉，她也不会原谅我了吧。",
+      "en": "Even if I apologize now, she probably won't forgive me."
     },
     "why": {
-      "zh": "“现在赶去也来不及”是“做了也没用”的意思，用「た形＋ところで」。",
-      "en": "\"Even if you go now, you won't make it\" — doing it is pointless: ta-form ＋ 「ところで」."
+      "zh": "“现在道歉也没用”是“即使做了也白费”，用「た形＋ところで」，常与「〜ないだろう」呼应。",
+      "en": "'Apologizing now won't help' — doing it is pointless: ta-form ＋ 「ところで」, typically followed by 「〜ないだろう」."
     },
     "wrong": [
       {
-        "zh": "「たところ」是“（做了之后）结果发现……”，叙述已发生的事，和「今から」「だろう」矛盾。",
-        "en": "「たところ」 reports what happened after doing something, which clashes with 「今から」 and 「だろう」."
+        "zh": "「たところ」表示“做了之后发现……”，后面接已发生的结果，不接推测「だろう」。",
+        "en": "「たところ」 means 'when I did it, it turned out…' and reports a past result, not a guess with 「だろう」."
       },
       {
-        "zh": "「ところで」表示“徒劳”时要接た形，「行くところで」不成立。",
-        "en": "The futile 「ところで」 needs the ta-form; 「行くところで」 doesn't work."
+        "zh": "「ばかりに」是“就因为……才（导致坏结果）”，后接已发生的事，与“即使道歉也没用”不符。",
+        "en": "「ばかりに」 means 'just because… (a bad result happened)'; it doesn't give 'even if'."
       },
       null,
       {
-        "zh": "「行ったところだ」是“刚去了”，是句末形式，后面不能再接分句。",
-        "en": "「行ったところだ」 (have just gone) ends a sentence; it can't lead into another clause."
+        "zh": "「からには」是“既然……就应该”，后面接决心或义务，不接“不会原谅”。",
+        "en": "「からには」 means 'now that…, (one must)' and leads to a resolve or duty, not 'she won't forgive'."
       }
     ]
   },
@@ -465,41 +468,42 @@
   },
   {
     "id": "n2-l59-013",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson59#5"
     ],
     "difficulty": 1,
-    "stem": "来週から期末試験なので、今は旅行の計画を立てる（　）。",
+    "stem": "母が急に入院してしまって、今はのんびり花見をする（　）。",
     "options": [
-      "どころか",
-      "ほどではない",
+      "までもない",
       "どころではない",
-      "に限る"
+      "に越したことはない",
+      "ほどではない"
     ],
-    "answer": 2,
-    "full": "来週から期末試験なので、今は旅行の計画を立てるどころではない。",
+    "answer": 1,
+    "full": "母が急に入院してしまって、今はのんびり花見をするどころではない。",
     "tr": {
-      "zh": "下周开始期末考试，现在哪有心思计划旅行。",
-      "en": "Finals start next week, so this is no time to be planning a trip."
+      "zh": "母亲突然住院了，现在哪有心思悠闲地赏花。",
+      "en": "My mother was suddenly hospitalized, so this is no time to be enjoying the cherry blossoms."
     },
     "why": {
-      "zh": "因为考试在即，根本没有余裕去做别的事，用句末的「どころではない」（哪有心思……）。",
-      "en": "With exams coming, there's no room for anything else — sentence-final 「どころではない」 (no time for…)."
+      "zh": "因为母亲住院，根本没有余裕做别的事，用句末的「どころではない」（哪有心思……）。",
+      "en": "With Mom in hospital there's no room for anything else — sentence-final 「どころではない」 (no time for…)."
     },
     "wrong": [
       {
-        "zh": "「どころか」是“别说……连……”，后面必须接分句，不能结句。",
-        "en": "「どころか」 (let alone) needs a following clause; it can't end the sentence."
-      },
-      {
-        "zh": "「ほどではない」是“没到……的程度”，“没到计划旅行的程度”说不通。",
-        "en": "「ほどではない」 (not to the extent of) makes no sense with planning a trip."
+        "zh": "「までもない」是“用不着……”，表示没必要，不是“没心思”。",
+        "en": "「までもない」 means 'there's no need to', not 'no time/mood for'."
       },
       null,
       {
-        "zh": "「に限る」是“……最好”，“考试前计划旅行最好”和前半句矛盾。",
-        "en": "「に限る」 (best to…) would recommend planning a trip right before exams — the opposite of the point."
+        "zh": "「に越したことはない」是“最好……”，和母亲住院的情况相反。",
+        "en": "「に越したことはない」 means 'it's best to…', the opposite of the situation."
+      },
+      {
+        "zh": "「ほどではない」是“没到……的程度”，用于比较程度，这里说不通。",
+        "en": "「ほどではない」 means 'not to the extent of'; it compares degree and makes no sense here."
       }
     ]
   },

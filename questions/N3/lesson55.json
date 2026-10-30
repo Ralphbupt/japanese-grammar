@@ -49,9 +49,9 @@
     "stem": "本当の 友達（　）、言いにくい ことも はっきり 言うのだ。",
     "options": [
       "だからこそ",
-      "からこそ",
-      "なからこそ",
-      "のからこそ"
+      "だからといって",
+      "なのに",
+      "にしては"
     ],
     "answer": 0,
     "full": "本当の 友達 だからこそ、言いにくい ことも はっきり 言うのだ。",
@@ -60,22 +60,22 @@
       "en": "It's precisely because we're real friends that I say even the hard things plainly."
     },
     "why": {
-      "zh": "名词接「からこそ」时要加「だ」：名词＋だからこそ。",
-      "en": "With a noun, 「からこそ」 needs 「だ」 in front: noun ＋ だからこそ."
+      "zh": "“正因为是真正的朋友，才把难以开口的话说清楚”，强调原因用「からこそ」；名词接「だ＋からこそ」。",
+      "en": "\"It's precisely because we're real friends that…\": the emphatic reason 「からこそ」, with 「だ」 after a noun."
     },
     "wrong": [
       null,
       {
-        "zh": "名词后面不能直接接「からこそ」，中间要有「だ」。",
-        "en": "A noun can't take 「からこそ」 directly; 「だ」 has to come first."
+        "zh": "「だからといって」后面要接否定（不一定……），而句子是肯定的“会说清楚”。",
+        "en": "「だからといって」 needs a denial after it (\"doesn't mean…\"), but the sentence is positive."
       },
       {
-        "zh": "「な」是な形容词修饰名词时的形式，「友達」是名词，也不能接「なから」。",
-        "en": "「な」 is the form of na-adjectives before nouns; 「友達」 is a noun and 「なから」 isn't a form."
+        "zh": "「なのに」是逆接，“是好朋友”和“说真话”不矛盾，句末「のだ」也是在说明原因。",
+        "en": "「なのに」 is \"even though\", but being real friends and speaking plainly don't clash; 「のだ」 explains a reason."
       },
       {
-        "zh": "「の」用于修饰名词，不能接在「から」前面。",
-        "en": "「の」 links nouns; it can't come before 「から」."
+        "zh": "「にしては」是“作为……来说出乎意料”，和“正因为是朋友”的意思不符。",
+        "en": "「にしては」 is \"surprisingly, for a…\", not \"precisely because\"."
       }
     ]
   },
@@ -165,9 +165,9 @@
     "stem": "新しい 店員は 丁寧な ことは（　）、仕事が 遅い。",
     "options": [
       "丁寧だが",
-      "丁寧なが",
-      "丁寧が",
-      "丁寧で"
+      "丁寧だから",
+      "丁寧なら",
+      "丁寧なので"
     ],
     "answer": 0,
     "full": "新しい 店員は 丁寧な ことは 丁寧だが、仕事が 遅い。",
@@ -176,22 +176,22 @@
       "en": "The new shop assistant is polite, all right, but slow at the job."
     },
     "why": {
-      "zh": "な形容词的格式是「〜なことは〜だが」：前面用「な」，后面用「だ」再接「が」。",
-      "en": "With a na-adjective the pattern is 「〜なことは〜だが」: 「な」 the first time, 「だ」 ＋ 「が」 the second."
+      "zh": "「〜ことは〜が」是“……是……，但是……”，先承认一点再转折；后面“干活慢”是缺点，要用「が」：丁寧なことは丁寧だが。",
+      "en": "「〜ことは〜が」 is \"…all right, but…\": grant one point, then turn; \"slow\" is a drawback, so 「が」: 丁寧なことは丁寧だが."
     },
     "wrong": [
       null,
       {
-        "zh": "な形容词句尾接「が」时要用「だ」，不能用「な」。",
-        "en": "Before 「が」 a na-adjective takes 「だ」, not 「な」."
+        "zh": "「から」表示原因，“因为礼貌所以干活慢”说不通，「〜ことは〜」后面要接转折。",
+        "en": "「から」 gives a reason; \"polite, so slow\" doesn't follow, and 「〜ことは〜」 needs a \"but\"."
       },
       {
-        "zh": "な形容词词干不能直接接「が」，要说「丁寧だが」。",
-        "en": "A na-adjective stem can't take 「が」 directly; it's 「丁寧だが」."
+        "zh": "「なら」是假设，店员礼貌是已知的事，后面也要接转折。",
+        "en": "「なら」 is \"if\", but the assistant is known to be polite, and a \"but\" must follow."
       },
       {
-        "zh": "「丁寧で」是て形，没有“但是”的转折，后面的“干活慢”接不上。",
-        "en": "「丁寧で」 is the te-form — no \"but\", so 「仕事が遅い」 doesn't follow."
+        "zh": "「ので」也是原因，“因为礼貌所以慢”不合逻辑，缺少转折。",
+        "en": "「ので」 is also a reason; \"polite, so slow\" doesn't follow and there's no \"but\"."
       }
     ]
   },
@@ -202,7 +202,7 @@
       "lesson55#2"
     ],
     "difficulty": 2,
-    "stem": "この アプリは [_] [_] [★] [_] 、広告が 多すぎる。",
+    "stem": "この アプリは [★] [_] [_] [_] 、広告が 多すぎる。",
     "options": [
       "便利だ",
       "ことは",
@@ -221,15 +221,16 @@
       "en": "This app is handy, sure, but there are far too many ads."
     },
     "why": {
-      "zh": "格式「〜なことは〜だけれど」：便利な＋ことは＋便利だ＋けれど。★ 在第三格，是「便利だ」。",
-      "en": "The pattern 「〜なことは〜だけれど」: 便利な ＋ ことは ＋ 便利だ ＋ けれど. The ★ is the third slot: 「便利だ」."
+      "zh": "格式「〜なことは〜だけれど」：便利な＋ことは＋便利だ＋けれど。★ 在第一格，是「便利な」。",
+      "en": "The pattern 「〜なことは〜だけれど」: 便利な ＋ ことは ＋ 便利だ ＋ けれど. The ★ is the first slot: 「便利な」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l55-007",

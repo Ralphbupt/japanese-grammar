@@ -86,7 +86,7 @@
       "lesson39#1"
     ],
     "difficulty": 2,
-    "stem": "A「さっきのは ただの 冗談だよ。」\nB「[_] [_] [★] [_] は 言わない ほうが いいよ。」",
+    "stem": "A「さっきのは ただの 冗談だよ。」\nB「[_] [_] [_] [★] は 言わない ほうが いいよ。」",
     "options": [
       "冗談",
       "だった",
@@ -105,15 +105,16 @@
       "en": "A: That was just a joke. B: Even if it was a joke, you'd better not say things like that."
     },
     "why": {
-      "zh": "名词接「にしても」要加「だ／だった」：冗談 ＋ だった ＋ にしても；「あんなこと」直接接后面的「は」。★ 是「にしても」。",
-      "en": "A noun takes だ/だった before 「にしても」: 冗談 ＋ だった ＋ にしても; 「あんなこと」 sits right before 「は」. The ★ is 「にしても」."
+      "zh": "名词接「にしても」要加「だ／だった」：冗談 ＋ だった ＋ にしても；「あんなこと」直接接后面的「は」。★ 在第四格，是「あんな こと」。",
+      "en": "A noun takes だ/だった before 「にしても」: 冗談 ＋ だった ＋ にしても; 「あんなこと」 sits right before 「は」. The ★ is the fourth slot: 「あんな こと」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l39-004",
@@ -165,9 +166,9 @@
     "stem": "この 仕事は（　）、やりがいが あって 毎日 楽しい。",
     "options": [
       "大変な ものの",
-      "大変だ ものの",
-      "大変 ものの",
-      "大変の ものの"
+      "大変な どころか",
+      "大変な くせに",
+      "大変な せいで"
     ],
     "answer": 0,
     "full": "この 仕事は 大変な ものの、やりがいが あって 毎日 楽しい。",
@@ -176,22 +177,22 @@
       "en": "This job is tough, but it's rewarding and I enjoy every day."
     },
     "why": {
-      "zh": "な形容词接「ものの」要用「〜な」（或「〜である」）：大変なものの。",
-      "en": "A na-adjective takes 「な」 (or 「である」) before 「ものの」: 大変なものの."
+      "zh": "“工作辛苦”和“有意义、每天开心”是转折关系，用「ものの」（虽然……但是）。な形容词接「な」：大変なものの。",
+      "en": "\"Tough\" and \"rewarding, I enjoy it\" contrast, so 「ものの」 (\"although\"); a na-adjective takes 「な」: 大変なものの."
     },
     "wrong": [
       null,
       {
-        "zh": "「ものの」前面不能用「だ」，这是和「にしても」「とはいえ」的接续区别。",
-        "en": "「ものの」 can't follow 「だ」 — that's the form 「にしても」 and 「とはいえ」 use, not 「ものの」."
+        "zh": "「どころか」是“哪里是……，反而……”，要否定前面的说法，可这里并不否认工作辛苦。",
+        "en": "「どころか」 is \"far from…, actually…\", denying the first part, but the speaker doesn't deny the job is tough."
       },
       {
-        "zh": "な形容词词干不能直接接「ものの」，要加「な」。",
-        "en": "A bare na-adjective stem can't take 「ものの」; it needs 「な」."
+        "zh": "「くせに」用于责备人“明明……却……”，主语是工作，也没有责备的意思。",
+        "en": "「くせに」 criticises a person (\"even though… yet\"); the subject here is a job and nothing is criticised."
       },
       {
-        "zh": "「の」是名词修饰的接法，な形容词不用「の」。",
-        "en": "「の」 is how nouns connect; a na-adjective doesn't use it."
+        "zh": "「せいで」说明坏结果的原因，后面“有意义、开心”是好事。",
+        "en": "「せいで」 blames a cause for a bad result, but \"rewarding and enjoyable\" is good."
       }
     ]
   },

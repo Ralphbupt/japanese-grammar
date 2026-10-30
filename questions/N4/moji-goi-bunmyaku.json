@@ -100,7 +100,7 @@
       "なかなか",
       "ずいぶん",
       "きっと",
-      "ぜひ"
+      "すっかり"
     ],
     "kj": "このドアは固くて、何回も押しましたが、なかなかあきませんでした。",
     "answer": 0,
@@ -123,8 +123,8 @@
         "en": "「きっと」 is a confident guess, but this already happened."
       },
       {
-        "zh": "「ぜひ」用于愿望和请求，不能用于描述门打不开。",
-        "en": "「ぜひ」 goes with wishes and requests, not with a door not opening."
+        "zh": "「すっかり」是“完全、全部”，用于已经完成的变化，不和“打不开”搭配。",
+        "en": "「すっかり」 (completely) describes a finished change; it doesn't go with \"wouldn't open\"."
       }
     ]
   },
@@ -135,15 +135,9 @@
     "stem": "ひさしぶりに 会った めいは、（　）大きく なって いて、びっくりしました。",
     "options": [
       "ずいぶん",
-      "けっして",
-      "ぜひ",
-      "もし"
-    ],
-    "okj": [
-      null,
-      "決して",
-      null,
-      null
+      "なるべく",
+      "もうすぐ",
+      "ときどき"
     ],
     "kj": "久しぶりに会っためいは、ずいぶん大きくなっていて、びっくりしました。",
     "answer": 0,
@@ -158,16 +152,16 @@
     "wrong": [
       null,
       {
-        "zh": "「けっして」后面接否定，表示“绝不”，与“长大了”不搭。",
-        "en": "「けっして」 means \"never\" and needs a negative; it can't go with \"had grown\"."
+        "zh": "「なるべく」是“尽量”，用于人的努力，不能描述侄女长了多少。",
+        "en": "「なるべく」 (as … as possible) is about effort; it can't say how much she'd grown."
       },
       {
-        "zh": "「ぜひ」用于愿望和请求，不能描述变化程度。",
-        "en": "「ぜひ」 is for wishes and requests, not for how much something changed."
+        "zh": "「もうすぐ」是“马上（将要）”，可「なって いて」是已经长大了。",
+        "en": "「もうすぐ」 (soon) is about the future, but 「なって いて」 has already happened."
       },
       {
-        "zh": "「もし」是“如果”，这里说的是已经看到的事实，不是假设。",
-        "en": "「もし」 (if) introduces a supposition; this is something I actually saw."
+        "zh": "「ときどき」是“有时”，长高不是时有时无的事。",
+        "en": "「ときどき」 (sometimes) doesn't fit growing taller, which isn't an on-and-off event."
       }
     ]
   },
@@ -178,9 +172,9 @@
     "stem": "田中さんは まじめな 人ですから、（　）やくそくの 時間に 来ますよ。",
     "options": [
       "きっと",
-      "ぜひ",
-      "もし",
-      "ずいぶん"
+      "やっと",
+      "なるべく",
+      "はじめて"
     ],
     "kj": "田中さんはまじめな人ですから、きっと約束の時間に来ますよ。",
     "answer": 0,
@@ -195,16 +189,16 @@
     "wrong": [
       null,
       {
-        "zh": "「ぜひ」表示说话人的愿望或请求，不能用来推测别人的行动。",
-        "en": "「ぜひ」 expresses the speaker's wish or request, not a guess about someone else."
+        "zh": "「やっと」是“终于”，用于等了很久才实现的事，和“因为他很认真”的推测不合。",
+        "en": "「やっと」 (at last) is for something long awaited; it doesn't fit a guess based on him being reliable."
       },
       {
-        "zh": "「もし」是“如果”，句子里没有假设的条件。",
-        "en": "「もし」 (if) needs a condition, and there's none here."
+        "zh": "「なるべく」是“尽量”，用于说自己的努力或请求，不能推测别人会不会来。",
+        "en": "「なるべく」 (as far as possible) is for your own effort or a request, not a guess about someone else."
       },
       {
-        "zh": "「ずいぶん」表示程度，“很来”说不通。",
-        "en": "「ずいぶん」 expresses degree; \"come very much\" makes no sense."
+        "zh": "「はじめて」是“第一次”，“他很认真所以第一次准时来”说不通。",
+        "en": "「はじめて」 (for the first time) makes no sense with \"he's reliable, so…\"."
       }
     ]
   },
@@ -253,8 +247,8 @@
     "options": [
       "もし",
       "きっと",
-      "ぜひ",
-      "なかなか"
+      "たとえ",
+      "なるべく"
     ],
     "kj": "もし明日雨が降ったら、試合は中止です。",
     "answer": 0,
@@ -273,12 +267,12 @@
         "en": "「きっと」 is a confident guess, not the \"if\" of a supposition."
       },
       {
-        "zh": "「ぜひ」用于愿望和请求，没人会“务必下雨”。",
-        "en": "「ぜひ」 is for wishes and requests — no one is asking for rain here."
+        "zh": "「たとえ」要和「〜ても」呼应（即使……也），这里是「ふったら」。",
+        "en": "「たとえ」 pairs with 「〜ても」 (even if); here the verb is 「ふったら」."
       },
       {
-        "zh": "「なかなか」是“相当／怎么也不”，不能表示假设。",
-        "en": "「なかなか」 means \"quite\" or \"just won't\"; it can't mark a supposition."
+        "zh": "「なるべく」是“尽量”，下雨不是人能努力的事。",
+        "en": "「なるべく」 (as far as possible) is about effort; rain isn't something anyone tries to do."
       }
     ]
   },
@@ -323,36 +317,36 @@
     "id": "n4-mg-309",
     "type": "bunmyaku",
     "difficulty": 1,
-    "stem": "車の（　）が すくなく なったので、スタンドに よりました。",
+    "stem": "ながい ドライブの 前に、車に（　）を 入れて おきました。",
     "options": [
       "ガソリン",
       "ガラス",
       "タイヤ",
       "エンジン"
     ],
-    "kj": "車のガソリンが少なくなったので、スタンドに寄りました。",
+    "kj": "長いドライブの前に、車にガソリンを入れておきました。",
     "answer": 0,
     "tr": {
-      "zh": "车里的汽油不多了，所以去了趟加油站。",
-      "en": "The car was low on petrol, so I stopped at a filling station."
+      "zh": "长途开车之前，先给车加好了油。",
+      "en": "Before the long drive, I filled the car up with petrol."
     },
     "why": {
-      "zh": "会“变少”、要去加油站补的是「ガソリン」（汽油）。",
-      "en": "What runs low and gets topped up at a station is 「ガソリン」 (petrol)."
+      "zh": "长途开车前给车“加（入れる）”的是「ガソリン」（汽油）。",
+      "en": "What you put into a car before a long drive is 「ガソリン」 (petrol)."
     },
     "wrong": [
       null,
       {
-        "zh": "「ガラス」是车窗玻璃，不会“变少”。",
-        "en": "「ガラス」 is the car's glass; it doesn't run low."
+        "zh": "「ガラス」是玻璃，不能往车里“加”。",
+        "en": "「ガラス」 is glass — not something you put into a car."
       },
       {
-        "zh": "「タイヤ」是轮胎，数量不会变少。",
-        "en": "「タイヤ」 are tyres; they don't run low."
+        "zh": "「タイヤ」是装在车上的，说「タイヤを かえる」，不说“加进车里”。",
+        "en": "Tyres are fitted or changed (「タイヤを かえる」), not put into the car."
       },
       {
-        "zh": "「エンジン」是发动机，不会“变少”。",
-        "en": "「エンジン」 is the engine; it can't run low."
+        "zh": "「エンジン」是发动机，出发前不会往车里“加”发动机。",
+        "en": "「エンジン」 is the engine; you don't put one in before a drive."
       }
     ]
   },
@@ -400,9 +394,9 @@
     "stem": "大学の じゅぎょうで、来週までに（　）を 書かなければ なりません。",
     "options": [
       "レポート",
-      "コンサート",
-      "サンダル",
-      "レジ"
+      "テキスト",
+      "テスト",
+      "クラス"
     ],
     "kj": "大学の授業で、来週までにレポートを書かなければなりません。",
     "answer": 0,
@@ -417,16 +411,16 @@
     "wrong": [
       null,
       {
-        "zh": "「コンサート」是音乐会，不能“写”。",
-        "en": "「コンサート」 is a concert; you don't write one for class."
+        "zh": "「テキスト」是课本，学生的作业不是写一本课本。",
+        "en": "「テキスト」 is a textbook; students don't write one as homework."
       },
       {
-        "zh": "「サンダル」是凉鞋，不能“写”。",
-        "en": "「サンダル」 are sandals — not something you write."
+        "zh": "「テスト」是“考”或“参加”（テストを うける），不说“写一份考试”交上去。",
+        "en": "A 「テスト」 is taken (テストを うける), not written by next week."
       },
       {
-        "zh": "「レジ」是收银台，不能“写”。",
-        "en": "「レジ」 is a register — not something you write."
+        "zh": "「クラス」是班级、课，不能“写”。",
+        "en": "「クラス」 is a class; you can't write one."
       }
     ]
   },
@@ -437,9 +431,9 @@
     "stem": "がくひを はらうために、よる コンビニで（　）を して います。",
     "options": [
       "アルバイト",
-      "アクセサリー",
-      "テキスト",
-      "スーツケース"
+      "ボランティア",
+      "ショッピング",
+      "ダイエット"
     ],
     "kj": "学費を払うために、夜コンビニでアルバイトをしています。",
     "answer": 0,
@@ -454,16 +448,16 @@
     "wrong": [
       null,
       {
-        "zh": "「アクセサリー」是首饰，不能“做”来挣学费。",
-        "en": "「アクセサリー」 is jewellery — not something you \"do\" to earn money."
+        "zh": "「ボランティア」是无偿的志愿活动，挣不到学费。",
+        "en": "「ボランティア」 is unpaid volunteering; it can't pay tuition."
       },
       {
-        "zh": "「テキスト」是课本，不能在便利店“做”。",
-        "en": "「テキスト」 is a textbook; you don't \"do\" it at a store."
+        "zh": "「ショッピング」是购物，花钱而不是挣钱。",
+        "en": "「ショッピング」 is shopping — spending money, not earning it."
       },
       {
-        "zh": "「スーツケース」是行李箱，和挣钱无关。",
-        "en": "「スーツケース」 is a suitcase — nothing to do with earning money."
+        "zh": "「ダイエット」是减肥，和交学费无关。",
+        "en": "「ダイエット」 is dieting, nothing to do with paying tuition."
       }
     ]
   },
@@ -521,13 +515,13 @@
     "options": [
       "けいけん",
       "けいかく",
-      "けんとう",
+      "けんぶつ",
       "せつめい"
     ],
     "okj": [
       "経験",
       "計画",
-      "検討",
+      "見物",
       "説明"
     ],
     "kj": "日本で働いた経験がありますか。",
@@ -547,8 +541,8 @@
         "en": "「けいかく」 is a plan, about the future — it clashes with past 「はたらいた」."
       },
       {
-        "zh": "「けんとう」是研究考虑，不说“工作过的考虑”。",
-        "en": "「けんとう」 is consideration; \"consideration of having worked\" isn't said."
+        "zh": "「けんぶつ」是游览、观光，“工作过的游览”说不通。",
+        "en": "「けんぶつ」 is sightseeing; \"sightseeing of having worked\" makes no sense."
       },
       {
         "zh": "「せつめい」是说明，“有工作过的说明吗”意思不通。",
@@ -1161,15 +1155,15 @@
     "stem": "ともだちが 会社を 休んで、1か月 ヨーロッパを 旅行して いると 聞いて、（　）と 思いました。",
     "options": [
       "うらやましい",
-      "きたない",
-      "いたい",
-      "ねむい"
+      "はずかしい",
+      "こわい",
+      "かなしい"
     ],
     "okj": [
       "羨ましい",
-      "汚い",
-      "痛い",
-      "眠い"
+      "恥ずかしい",
+      "怖い",
+      "悲しい"
     ],
     "kj": "友達が会社を休んで、1か月ヨーロッパを旅行していると聞いて、羨ましいと思いました。",
     "answer": 0,
@@ -1184,16 +1178,16 @@
     "wrong": [
       null,
       {
-        "zh": "「きたない」是脏，和听说旅行的感想无关。",
-        "en": "「きたない」 (dirty) isn't a reaction to news of a trip."
+        "zh": "「はずかしい」是难为情，听说朋友去旅行，自己没有理由害羞。",
+        "en": "「はずかしい」 is embarrassed; there's nothing embarrassing for me in a friend's trip."
       },
       {
-        "zh": "「いたい」是疼，听说消息不会疼。",
-        "en": "「いたい」 (painful) isn't how hearing news feels."
+        "zh": "「こわい」是害怕，朋友去欧洲旅行不是可怕的事。",
+        "en": "「こわい」 is scared; a friend travelling in Europe isn't frightening."
       },
       {
-        "zh": "「ねむい」是困，和听到的消息无关。",
-        "en": "「ねむい」 (sleepy) has nothing to do with the news."
+        "zh": "「かなしい」是悲伤，好消息不会让人难过。",
+        "en": "「かなしい」 is sad; good news about a holiday isn't sad."
       }
     ]
   },
@@ -1392,8 +1386,8 @@
     "options": [
       "やっと",
       "なかなか",
-      "ずいぶん",
-      "ぜひ"
+      "もうすぐ",
+      "なるべく"
     ],
     "kj": "3回試験を受けて、やっと合格しました。",
     "answer": 0,
@@ -1412,12 +1406,12 @@
         "en": "Affirmative 「なかなか」 means \"quite\" (an evaluation); \"quite passed\" doesn't work."
       },
       {
-        "zh": "「ずいぶん」表示程度，及格没有程度可言。",
-        "en": "「ずいぶん」 expresses degree; passing has no degree."
+        "zh": "「もうすぐ」是“马上（将要）”，不能和已经发生的「ごうかくしました」连用。",
+        "en": "「もうすぐ」 (soon) can't go with 「ごうかくしました」, which has already happened."
       },
       {
-        "zh": "「ぜひ」用于愿望和请求，不能描述已经发生的事。",
-        "en": "「ぜひ」 is for wishes and requests, not for something that has happened."
+        "zh": "「なるべく」是“尽量”，用于打算或请求，不描述已经考上的结果。",
+        "en": "「なるべく」 (as far as possible) is for plans or requests, not a result that happened."
       }
     ]
   },
@@ -1431,9 +1425,9 @@
     "stem": "ダイエットちゅうなのに、ケーキを 見ると（　）食べて しまいます。",
     "options": [
       "つい",
-      "ぜひ",
+      "なるべく",
       "やっと",
-      "もし"
+      "ちょうど"
     ],
     "kj": "ダイエット中なのに、ケーキを見るとつい食べてしまいます。",
     "answer": 0,
@@ -1448,16 +1442,16 @@
     "wrong": [
       null,
       {
-        "zh": "「ぜひ」表示愿望或请求，和减肥中“忍不住”矛盾。",
-        "en": "「ぜひ」 is for wishes and requests; it clashes with \"I'm on a diet\"."
+        "zh": "「なるべく」是“尽量”，“尽量吃”和“明明在减肥”「なのに」矛盾。",
+        "en": "「なるべく」 (as much as possible) — \"trying to eat it\" clashes with 「ダイエットちゅうなのに」."
       },
       {
         "zh": "「やっと」是“终于”，表示期待已久，和“明明在减肥”矛盾。",
         "en": "「やっと」 (at last) implies a long-awaited result — the opposite of a diet slip."
       },
       {
-        "zh": "「もし」是“如果”，句子里已有「見ると」，不是假设。",
-        "en": "「もし」 (if) doesn't fit; 「見ると」 describes what always happens."
+        "zh": "「ちょうど」是“正好”，“一看到蛋糕正好吃掉”说不通，也没有“忍不住”的意思。",
+        "en": "「ちょうど」 (exactly, just) makes no sense here and lacks the \"can't help it\" meaning."
       }
     ]
   },
@@ -1472,8 +1466,8 @@
     "options": [
       "なるべく",
       "やっと",
-      "ぜひ",
-      "もし"
+      "たまに",
+      "だいたい"
     ],
     "kj": "明日は朝早いので、今夜はなるべく早く寝ます。",
     "answer": 0,
@@ -1492,12 +1486,12 @@
         "en": "「やっと」 (at last) is for a long-awaited result, not tonight's plan."
       },
       {
-        "zh": "「ぜひ」用于强烈的愿望和请求，说自己“早睡”的打算不用它。",
-        "en": "「ぜひ」 is for wishes and requests, not for your own plan to sleep early."
+        "zh": "「たまに」是“偶尔”，说的是习惯，和「こんやは」（今晚这一次）不合。",
+        "en": "「たまに」 (occasionally) describes a habit, not tonight (「こんやは」)."
       },
       {
-        "zh": "「もし」是“如果”，后面没有条件。",
-        "en": "「もし」 (if) has no condition to introduce here."
+        "zh": "「だいたい」是“大致、通常”，也是说平时的习惯，不是今晚的打算。",
+        "en": "「だいたい」 (usually, roughly) is also about habits, not tonight's plan."
       }
     ]
   },
@@ -1512,8 +1506,8 @@
     "options": [
       "きゅうに",
       "なるべく",
-      "ぜひ",
-      "もし"
+      "やっと",
+      "ずっと"
     ],
     "okj": [
       "急に",
@@ -1538,12 +1532,12 @@
         "en": "「なるべく」 (as much as possible) is about effort; rain makes no effort."
       },
       {
-        "zh": "「ぜひ」用于愿望和请求，不能描述天气变化。",
-        "en": "「ぜひ」 is for wishes and requests, not for weather changing."
+        "zh": "「やっと」是“终于”，表示盼了很久，和「はれて いたのに」（明明还晴着）的意外语气矛盾。",
+        "en": "「やっと」 (at last) means it was awaited, which clashes with the surprise in 「はれて いたのに」."
       },
       {
-        "zh": "「もし」是“如果”，这里是已经发生的事。",
-        "en": "「もし」 (if) is for suppositions; this already happened."
+        "zh": "「ずっと」是“一直”，可刚才还是晴天，雨不是一直在下。",
+        "en": "「ずっと」 (all along) contradicts 「さっきまで はれて いた」."
       }
     ]
   },

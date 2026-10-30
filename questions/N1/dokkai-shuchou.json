@@ -12,57 +12,57 @@
       {
         "q": "筆者が十九世紀の科学者たちの例を挙げているのは、何を示すためか。",
         "options": [
-          "昔の科学者は、今の研究者よりも自由に研究ができたこと",
-          "実用を目指した研究こそが、大きな発見を生むこと",
-          "研究が将来役に立つかどうかは、研究している時点では予測できないこと",
-          "基礎研究を進めるには、多額の予算が必要であること"
+          "研究の価値が社会に広く認められるまでには、長い年月がかかること",
+          "当時の科学者は、自分の研究が通信や電力に生かされると見込んでいたこと",
+          "研究が実際に役に立つかどうかは、研究している段階では見通せないこと",
+          "実用とは無縁の研究のほうが、実用を目指す研究よりも成果が大きいこと"
         ],
         "answer": 2,
         "why": {
-          "zh": "第二段论点是「役に立つかどうかは、多くの場合、事前にはわからない」，科学家们「想像もしていなかった」后来会成为通信和电力的基础，就是例证。",
-          "en": "Paragraph two's point is 「事前にはわからない」; the scientists who 「想像もしていなかった」 their work would underpin telecoms and power illustrate it."
+          "zh": "第二段第一论点是「役に立つかどうかは、多くの場合、事前にはわからない」，十九世纪科学家「想像もしていなかっただろう」正是例证。",
+          "en": "Point one in paragraph two is that usefulness 「事前にはわからない」; the 19th-century scientists who 「想像もしていなかっただろう」 the later uses illustrate it."
         },
         "wrong": [
           {
-            "zh": "文中没有比较过去和现在的研究环境。",
-            "en": "The text never compares past and present research conditions."
+            "zh": "例子讲的是研究当时无法预见用途，不是社会认可需要很长时间。",
+            "en": "The example is about uses being unforeseeable at the time, not about recognition taking a long time."
           },
           {
-            "zh": "正相反，例子说明的是始于「実用とは無縁の好奇心」的研究带来了技术。",
-            "en": "The opposite: the example shows research born of 「実用とは無縁の好奇心」 leading to technology."
+            "zh": "正相反，文中说他们「それが後に通信や電力の基盤になるとは想像もしていなかっただろう」。",
+            "en": "The opposite: they 「想像もしていなかっただろう」 that it would underpin communications and power."
           },
           null,
           {
-            "zh": "例子与预算多少无关。",
-            "en": "The example has nothing to do with how much money research needs."
+            "zh": "文中只说很多技术可追溯到出于好奇的研究，并没有比较两种研究成果的大小。",
+            "en": "The text says many technologies trace back to curiosity-driven work; it never claims such work yields more than applied research."
           }
         ]
       },
       {
         "q": "筆者が「一種の保険のようなものなのである」と述べているのはなぜか。",
         "options": [
-          "役に立たない研究にも予算を分けておけば、失敗したときの損失が小さくなるから",
-          "短期間で製品化できる研究が失敗しても、ほかの研究で補えるから",
-          "人間や社会について問う研究は、将来必ず実用化されるから",
-          "すぐには役に立たない問いを考え続ける場があれば、社会は課題の立て方の誤りに気づくことができるから"
+          "役に立たない研究にも予算を分散しておけば、失敗したときの損失を抑えられるから",
+          "短期間で製品化できる研究がつまずいても、ほかの研究がそれを補ってくれるから",
+          "社会のあり方を問う研究が、やがて製品開発の方向を正しく導くことになるから",
+          "目先の役に立たない問いを抱える場があれば、課題の立て方の誤りにも気づけるから"
         ],
         "answer": 3,
         "why": {
-          "zh": "前句：社会若失去怀疑前提的能力，就「課題の立て方そのものが誤っていることには気づけなくなる」；保有这样的问题的场所正是防备这一点。",
-          "en": "The sentence before: without the power to doubt its premises, a society 「課題の立て方そのものが誤っていることには気づけなくなる」; such places guard against that."
+          "zh": "第二段：社会若失去怀疑自身前提的能力，就「課題の立て方そのものが誤っていることには気づけなくなる」；保留「すぐには役に立たない問い」的地方，正是防这一点的保险。",
+          "en": "Paragraph two: without the power to doubt its premises a society 「課題の立て方そのものが誤っていることには気づけなくなる」; keeping a place for questions that aren't immediately useful insures against that."
         },
         "wrong": [
           {
-            "zh": "文中没有谈分散预算以减少损失。",
-            "en": "Nothing is said about spreading the budget to limit losses."
+            "zh": "「保险」说的不是分散投资、减少损失，而是让社会能发现课题本身设错了。",
+            "en": "The 'insurance' isn't spreading the budget to limit losses; it is about noticing a wrongly framed problem."
           },
           {
-            "zh": "这里说的是怀疑前提的能力，不是研究失败时的补救。",
-            "en": "The point is the power to question premises, not covering for failed product research."
+            "zh": "文中没有说别的研究能弥补产品化研究的失败。",
+            "en": "Nothing says other research makes up for failed product-oriented projects."
           },
           {
-            "zh": "笔者没有说「必ず」实用化；保险的意义在于能察觉课题设定的错误。",
-            "en": "The author never says such research will 'certainly' become practical; the insurance is noticing wrongly framed problems."
+            "zh": "文中说的是这类研究让社会察觉课题的设定有误，而不是引导产品开发。",
+            "en": "Such research lets society notice a misframed problem; the text doesn't say it steers product development."
           },
           null
         ]
@@ -70,58 +70,58 @@
       {
         "q": "研究者の説明責任について、筆者はどのように考えているか。",
         "options": [
-          "すぐには役に立たないことを率直に認めたうえで、研究の意義を専門外の人にも伝える努力をすべきだ",
-          "研究の自由を守るためには、成果について説明する必要はない",
-          "予算を得るためには、研究がいずれ役に立つことを強調すべきだ",
-          "研究の意義は、専門家同士の間で十分に説明されていればよい"
+          "すぐには役に立たないと率直に認めつつ、研究の意義を専門外の人に語るべきだ",
+          "公的な資金を使う研究であっても、研究の自由のためには成果の説明は要らない",
+          "予算を得るためには、研究がいずれ役に立つことをわかりやすく強調すべきだ",
+          "研究の意義は、まず専門家同士の間で十分に議論され、共有されていればよい"
         ],
         "answer": 0,
         "why": {
-          "zh": "第四段：研究者不能免除说明责任，要用「専門外の人にもわかる言葉で」讲；被问时不怕答「すぐには役に立たない」，「そのうえで研究の意義を語れる」才是诚实。",
-          "en": "Paragraph four: researchers must explain 「専門外の人にもわかる言葉で」, and be unafraid to say 「すぐには役に立たない」 and then explain the significance."
+          "zh": "第四段：要用外行也懂的话说明研究的意义；不怕回答「すぐには役に立たない」，并在此基础上讲清意义，才是研究者的诚实。",
+          "en": "Paragraph four: explain the research in words non-specialists understand; being unafraid to answer 「すぐには役に立たない」 and still stating its value is the honesty asked of researchers."
         },
         "wrong": [
           null,
           {
             "zh": "笔者明确说「説明の責任を免れてよいと言いたいわけではない」。",
-            "en": "The author states plainly 「説明の責任を免れてよいと言いたいわけではない」."
+            "en": "The author says plainly 「説明の責任を免れてよいと言いたいわけではない」."
           },
           {
-            "zh": "笔者反而批评了用「いずれ役に立つ」这种含糊承诺争取预算的做法。",
-            "en": "The author criticises seeking money with the vague promise 「いずれ役に立つ」."
+            "zh": "笔者反省的正是用「いずれ役に立つ」这种含糊承诺换取预算的做法。",
+            "en": "The author criticises exactly that: winning money with the vague promise 「いずれ役に立つ」."
           },
           {
-            "zh": "笔者要求的是向「専門外の人」说明。",
-            "en": "The author asks for explanations to 「専門外の人」."
+            "zh": "笔者要求的是向「専門外の人にもわかる言葉で」说明，而不是只在专家之间。",
+            "en": "The author asks for explanations 「専門外の人にもわかる言葉で」, not only among experts."
           }
         ]
       },
       {
         "q": "この文章で筆者が最も言いたいことは何か。",
         "options": [
-          "役に立つかどうかで学問を評価する基準は、捨てるべきだ",
-          "役に立つかどうかという基準だけでは測れない価値が学問にあることを、忘れてはならない",
-          "限られた予算は、成果の見込める研究に優先して配分すべきだ",
-          "社会の課題を解決できる研究だけが、学問と呼ぶに値する"
+          "役に立つかで学問を測る物差しは、わかりやすい反面危ういので、捨てるべきだ",
+          "役に立つかという尺度では測りきれない価値が学問にあると、忘れずにいるべきだ",
+          "限られた予算は、まず成果の見込める研究に優先して配分するのが当然のことだ",
+          "研究者は「何の役に立つのか」と問われたら、誠実に研究の意義を語る責任がある"
         ],
         "answer": 1,
         "why": {
-          "zh": "末段：需要的「物差しを捨てることではなく」，而是不忘记「その物差しでは測れないもの」的存在。",
-          "en": "Last paragraph: not to 「物差しを捨てる」, but never to forget 「その物差しでは測れないもの」."
+          "zh": "末段：需要的「物差しを捨てることではなく、その物差しでは測れないものがあることを忘れないこと」。",
+          "en": "Last paragraph: what we need is 「物差しを捨てることではなく、その物差しでは測れないものがあることを忘れないこと」."
         },
         "wrong": [
           {
-            "zh": "末段明确说需要的「物差しを捨てることではなく」。",
-            "en": "The last paragraph says explicitly 「物差しを捨てることではなく」."
+            "zh": "笔者明确说不是要扔掉这把尺子。",
+            "en": "The author explicitly says the point is not to throw the yardstick away."
           },
           null,
           {
-            "zh": "第一段只是承认分配方这么想「当然」，笔者本人对这种风气感到危险。",
-            "en": "Paragraph one only grants that funders naturally think so; the author sees danger in it."
+            "zh": "这是分配预算一方的想法，笔者承认可以理解，但他的主张是对这种风气保持警惕。",
+            "en": "That is the funders' view, which the author grants is natural; his own point is a warning about it."
           },
           {
-            "zh": "笔者认为即使能解决眼前课题，也需要怀疑课题设定的研究，与此相反。",
-            "en": "The author argues for research that questions how problems are framed — the reverse of this."
+            "zh": "研究者的说明责任是第四段的一个补充论点，不是全文最想说的。",
+            "en": "Researchers' duty to explain is a side point in paragraph four, not the main claim."
           }
         ]
       }
@@ -142,84 +142,84 @@
         "options": [
           "当人から直接迷惑を被ったことへの怒り",
           "自分は正しいことをしているという感覚",
-          "当人に対する個人的な悪意",
+          "当人に対して抱いている個人的な悪意",
           "問題を改めさせたいという具体的な目的"
         ],
         "answer": 1,
         "why": {
           "zh": "第一段：驱使他们的「悪意というより、むしろ『正しいことをしている』という感覚」。",
-          "en": "Paragraph one: it is 「悪意というより、むしろ『正しいことをしている』という感覚」."
+          "en": "Paragraph one: what drives them is 「悪意というより、むしろ『正しいことをしている』という感覚」."
         },
         "wrong": [
           {
             "zh": "文中说他们大多「直接迷惑を被ったわけでもない」。",
-            "en": "The text says most 「直接迷惑を被ったわけでもない」."
+            "en": "Most of them 「直接迷惑を被ったわけでもない」."
           },
           null,
           {
-            "zh": "笔者说是「悪意というより」正确感。",
-            "en": "The author says 「悪意というより」 — not so much malice."
+            "zh": "文中说「悪意というより」，否定了恶意是主因。",
+            "en": "「悪意というより」 rules malice out as the main driver."
           },
           {
-            "zh": "第一段没有说他们有具体目的；改正问题是第二段承认的批评的好处。",
-            "en": "Paragraph one names no concrete aim; getting problems fixed is the benefit granted in paragraph two."
+            "zh": "让问题得到纠正是笔者希望批评回归的样子，不是驱使他们的东西。",
+            "en": "Getting the conduct corrected is what the author wants criticism to return to, not what drives these people."
           }
         ]
       },
       {
         "q": "「正しさの感覚がもたらす独特の心地よさ」とは、どのようなものか。",
         "options": [
-          "他人を非難することで、自分は非難される側にいないと確かめられる安心感",
-          "隠されていた問題を明るみに出せたという達成感",
-          "多くの人と同じ意見を持っているという連帯感",
-          "激しい言葉で相手を言い負かしたときの爽快感"
+          "他人を責めることで、自分は責められる側ではないと確かめられる安心",
+          "長く隠されていた不正を、自分たちの声で明るみに出せたという達成感",
+          "大勢の人と同じ意見を表明することで得られる、仲間とつながる感覚",
+          "激しい言葉で相手を言い負かし、議論に勝ったときに味わう爽快感"
         ],
         "answer": 0,
         "why": {
-          "zh": "紧接着的一句：谴责时「自分が非難される側にはいないことを確かめることができる」。",
-          "en": "The next sentence: when condemning, one 「自分が非難される側にはいないことを確かめることができる」."
+          "zh": "第三段紧接着说明：非难别人时，「自分が非難される側にはいないことを確かめることができる」。",
+          "en": "Paragraph three explains it at once: when blaming someone, 「自分が非難される側にはいないことを確かめることができる」."
         },
         "wrong": [
           null,
           {
-            "zh": "揭露问题是第二段承认的批评的意义，不是这里所说的快感。",
-            "en": "Exposing problems is the value granted in paragraph two, not this pleasure."
+            "zh": "问题被揭露是第二段承认的批评的意义，不是笔者担心的「心地よさ」。",
+            "en": "Exposing hidden wrongs is the value of criticism granted in paragraph two, not the worrying 'comfort'."
           },
           {
-            "zh": "文中没有提到与多数人意见一致的连带感。",
-            "en": "Nothing is said about solidarity with the majority."
+            "zh": "文中没有谈与多数人意见一致的连带感。",
+            "en": "The text says nothing about solidarity with the majority."
           },
           {
-            "zh": "文中说的是言辞再激烈也不觉得需要反省，而不是驳倒对方的爽快。",
-            "en": "The text says fierce words bring no urge to reflect — not the thrill of winning an argument."
+            "zh": "文中说的是言辞再激烈也不觉得需要反省，没有说驳倒对方的快感。",
+            "en": "The text says people feel no need to reflect however harsh their words; it says nothing about the thrill of winning."
           }
         ]
       },
       {
         "q": "筆者が「さらに厄介なのは」と述べている問題とは、どのようなことか。",
         "options": [
-          "過激な書き込みをする一部の人が、議論全体を支配してしまうこと",
-          "行為への批判が、人格や家族への攻撃にまで及んでしまうこと",
-          "非難された人が、反論する機会を与えられないこと",
-          "一人ひとりの書き込みは穏やかでも、積み重なると相手には大きな打撃となり、しかも誰もその責任を引き受けないこと"
+          "ごく一部の過激な書き込みが目立ち、議論全体の印象を左右してしまうこと",
+          "行為への批判が、いつの間にか人格の否定や家族への攻撃にまで広がること",
+          "非難された側には反論の場がなく、一方的に責められ続けてしまうこと",
+          "一つ一つは穏やかでも、集まると重い打撃となり、誰も責任を負わないこと"
         ],
         "answer": 3,
         "why": {
-          "zh": "第四段：每条留言「さほど過激ではない」，但累积几万条就等于「社会全体から拒絶された」，而责任分散，「誰もその重みを引き受けようとはしない」。",
-          "en": "Paragraph four: each post is 「さほど過激ではない」, but tens of thousands amount to rejection by society, and 「誰もその重みを引き受けようとはしない」."
+          "zh": "第四段：每条留言「さほど過激ではない」，但累积几万条就有「社会全体から拒絶されたに等しい重み」，而责任分散，「誰もその重みを引き受けようとはしない」。",
+          "en": "Paragraph four: each post is 「さほど過激ではない」, yet tens of thousands weigh like rejection by society, and with responsibility spread out 「誰もその重みを引き受けようとはしない」."
         },
         "wrong": [
           {
-            "zh": "正相反，问题在于每条留言都「さほど過激ではない」。",
-            "en": "The opposite: the problem is that each post is 「さほど過激ではない」."
+            "zh": "正相反，问题在于每条留言本身并不过激。",
+            "en": "The opposite: the problem is that individual posts are not extreme."
           },
           {
-            "zh": "这是第三段的内容；「さらに」引出的是另一个问题。",
-            "en": "That is paragraph three; 「さらに」 introduces a further problem."
+            "zh": "升级为人身攻击是第三段讲的问题，「さらに厄介なのは」引出的是下一个问题。",
+            "en": "Escalation to personal attacks is paragraph three; 「さらに厄介なのは」 introduces a further problem."
           },
           {
-            "zh": "文中没有提到反驳的机会。",
-            "en": "Nothing is said about a chance to respond."
+            "zh": "文中没有谈被非难者没有反驳机会。",
+            "en": "Nothing is said about the target having no chance to reply."
           },
           null
         ]
@@ -227,29 +227,29 @@
       {
         "q": "この文章で筆者が最も言いたいことは何か。",
         "options": [
-          "ネット上の批判は人を傷つけるので、一切控えるべきだ",
-          "事情を詳しく知っている人だけが、他人を批判する資格を持つ",
-          "正しさが他人を傷つける武器にもなりうることを自覚して、批判の言葉を用いるべきだ",
-          "多くの声が上がっている問題にこそ、積極的に加わるべきだ"
+          "ネット上の批判は人を深く傷つけかねないので、できる限り控えるべきだ",
+          "事情を詳しく知らない人は、他人の行為を批判する前に口を閉ざすべきだ",
+          "正しさが人を傷つける武器にもなると自覚して、批判の言葉を使うべきだ",
+          "不正を見過ごさずに声を上げることにこそ、社会を改める大きな意味がある"
         ],
         "answer": 2,
         "why": {
-          "zh": "末段：正确也可能成为「他人を裁くための武器」，只有意识到「その刃が自分の手の中にある」的人才能正确使用；第五段的问题也是为了让批评回到改正行为的话语。",
-          "en": "Last paragraph: rightness can be 「他人を裁くための武器」, and only those aware 「その刃が自分の手の中にある」 use it rightly."
+          "zh": "末段：正确也可能成为审判别人的武器，只有意识到「その刃が自分の手の中にある」的人才能正确使用它；前一段也说那些自问「批判をやめさせるためのものではない」。",
+          "en": "Last paragraph: rightness can be a weapon, and only those aware 「その刃が自分の手の中にある」 use it rightly; the self-questions 「批判をやめさせるためのものではない」."
         },
         "wrong": [
           {
-            "zh": "笔者说「すべて否定するつもりはない」，那些问题也「批判をやめさせるためのものではない」。",
-            "en": "The author says 「すべて否定するつもりはない」, and the questions are 「批判をやめさせるためのものではない」."
+            "zh": "笔者说那些问题「批判をやめさせるためのものではない」，也不全盘否定网上的批评。",
+            "en": "The author says the questions are 「批判をやめさせるためのものではない」 and doesn't reject online criticism as such."
           },
           {
-            "zh": "了解情况只是建议自问的问题之一，笔者没有说只有这种人有资格。",
-            "en": "Knowing the facts is one question to ask oneself, not a qualification only some have."
+            "zh": "「どこまで事情を知っているのか」只是建议自问的问题之一，不是批评的资格条件。",
+            "en": "「どこまで事情を知っているのか」 is one question to ask oneself, not a qualification for criticising."
           },
           null,
           {
-            "zh": "正相反，笔者建议自问在已有足够声音的地方是否还需要加上自己的一句。",
-            "en": "The reverse: the author asks whether one's line is needed where enough voices exist."
+            "zh": "这是第二段承认的一面，笔者在此基础上要说的是正确也可能变成武器。",
+            "en": "Paragraph two grants this; the author's main point is that rightness can turn into a weapon."
           }
         ]
       }
@@ -268,28 +268,28 @@
       {
         "q": "筆者が「自然に優しい」という言葉に「かすかな違和感を覚える」のはなぜか。",
         "options": [
-          "環境への配慮が、商品の宣伝に利用されていることに反発を感じるから",
+          "環境への配慮が、商品を売るための宣伝文句に使われていると感じるから",
           "「優しい」という言葉は、自然に対して使うには意味があいまいすぎるから",
-          "環境保護のための取り組みが、まだ十分に広がっていないから",
-          "その言葉に、人間が自然を守ってやる強い立場にあるという前提が含まれているように感じるから"
+          "環境への取り組みが標語にとどまり、実際の行動に結びついていないから",
+          "人間が自然を守ってやる側にいるという前提が、その言葉に潜んでいるから"
         ],
         "answer": 3,
         "why": {
-          "zh": "第二段：「優しい」是强者对弱者的态度，暗含「人間が自然を守ってやる立場にある」的前提，而人类并没有那么强。",
-          "en": "Paragraph two: 「優しい」 is the strong's attitude to the weak, implying 「人間が自然を守ってやる立場にある」 — and humans are not that strong."
+          "zh": "第二段：「優しい」本是强者对弱者的态度，说「自然に優しく」暗含「人間が自然を守ってやる立場にあるという前提」。",
+          "en": "Paragraph two: 「優しい」 is how the strong treat the weak, so the phrase implies 「人間が自然を守ってやる立場にあるという前提」."
         },
         "wrong": [
           {
-            "zh": "广告只是这个词出现的场合，笔者没有批评被用于宣传；关照环境本身他认为「歓迎すべき」。",
-            "en": "Advertising is just where the phrase appears; the author doesn't object to that and calls the concern 「歓迎すべき」."
+            "zh": "笔者提到广告只是说这个词常见，违和感来自词里的前提，不是商业利用。",
+            "en": "Ads are mentioned only as where the phrase appears; the unease comes from its premise, not commercial use."
           },
           {
-            "zh": "笔者的问题不在意思含糊，而在于它清楚地暗含了强者的立场。",
-            "en": "The issue is not vagueness but the clear implication of a stronger party."
+            "zh": "笔者认为这个词的意思并不含糊：它明确带有强者对弱者的含义。",
+            "en": "The author finds the word's meaning clear enough: it carries the sense of the strong toward the weak."
           },
           {
-            "zh": "笔者说关照环境已「広く求められるようになった」。",
-            "en": "The author says the concern is now 「広く求められるようになった」."
+            "zh": "笔者说重视环境的变化「歓迎すべき」，没有说取得不够或只停留在口号。",
+            "en": "The author calls the change 「歓迎すべき」 and doesn't complain that action falls short."
           },
           null
         ]
@@ -297,87 +297,87 @@
       {
         "q": "筆者が里山の例を挙げているのは、何を示すためか。",
         "options": [
-          "手つかずの自然こそ、生き物が最も豊かに暮らせる環境であること",
-          "昔の日本人は、自然を一方的に利用して暮らしていたこと",
-          "人間が手を入れることで保たれてきた自然もあり、人間を遠ざければ自然が守られるとは限らないこと",
-          "自然災害に備えるには、自然に手を入れる必要があること"
+          "人の手が入らない自然こそ、多様な生き物が最も豊かに暮らせる環境であること",
+          "かつての日本人は、自然を一方的に利用することで暮らしを成り立たせていたこと",
+          "人の手で保たれてきた自然もあり、人を遠ざければ守れるとは限らないこと",
+          "雑木林やため池は、昔の人が災害に備えて計画的に整えてきたものであること"
         ],
         "answer": 2,
         "why": {
-          "zh": "第三段：里山是人们长年打理形成的；不再打理后林荒、生物消失，所以「人間を遠ざけさえすれば自然が守られるとは限らない」。",
-          "en": "Paragraph three: satoyama were shaped by human care, and now decline without it — 「人間を遠ざけさえすれば自然が守られるとは限らない」."
+          "zh": "第三段：里山是人手长期维持的，如今无人打理反而荒废，「人間を遠ざけさえすれば自然が守られるとは限らない」。",
+          "en": "Paragraph three: satoyama were kept up by people and decline when left alone — 「人間を遠ざけさえすれば自然が守られるとは限らない」."
         },
         "wrong": [
           {
-            "zh": "正相反，里山「手つかずの自然ではない」，却有多样的生物。",
-            "en": "The opposite: satoyama are 「手つかずの自然ではない」 yet rich in life."
+            "zh": "正相反：里山「手つかずの自然ではない」，无人打理后生物反而消失。",
+            "en": "The opposite: satoyama are 「手つかずの自然ではない」, and creatures vanish once people stop tending them."
           },
           {
-            "zh": "文中明确说「一方的に利用していたのでもない」。",
-            "en": "The text says explicitly 「一方的に利用していたのでもない」."
+            "zh": "文中说「一方的に利用していたのでもない」。",
+            "en": "The text says 「一方的に利用していたのでもない」."
           },
           null,
           {
-            "zh": "里山的例子与防灾无关；灾害是第二段用来说明人类并不强大的。",
-            "en": "Satoyama have nothing to do with disaster prevention; disasters in paragraph two show human weakness."
+            "zh": "文中说里山是砍树、割草、引水形成的，没有说是为防灾而规划的。",
+            "en": "Satoyama came from cutting, mowing and drawing water; nothing says they were planned against disasters."
           }
         ]
       },
       {
         "q": "筆者のいう「もう一つの落とし穴」とは、どのようなことか。",
         "options": [
-          "人間が自然よりも強い存在だと思い込んでしまうこと",
-          "自然を人間の外にある対象と見ることで、保護か利用かの二者択一でしか考えられなくなること",
-          "自然を保護するために、人間の暮らしを犠牲にしてしまうこと",
-          "里山の手入れをする人が、年々少なくなっていること"
+          "人間が自然を思いのままに扱えるほど、強い存在だと思い込んでしまうこと",
+          "自然を人間の外に置いて見ると、守るか使うかの二択でしか考えられないこと",
+          "人が手を入れなくなった里山で、林が荒れ、生き物が姿を消しつつあること",
+          "自然を保護しようとするあまり、人間の暮らしのほうを犠牲にしてしまうこと"
         ],
         "answer": 1,
         "why": {
-          "zh": "第四段：把自然看作「人間の外にある守るべき対象」，就只能「『保護する』か『利用する』かという二者択一」地思考。",
-          "en": "Paragraph four: treating nature as 「人間の外にある守るべき対象」 leaves only the binary 「『保護する』か『利用する』か」."
+          "zh": "第四段：把自然看成「人間の外にある守るべき対象」，就只能在「保護する」和「利用する」之间二选一。",
+          "en": "Paragraph four: seeing nature as 「人間の外にある守るべき対象」 leaves only the choice between 「保護する」 and 「利用する」."
         },
         "wrong": [
           {
-            "zh": "这是第二段所说的第一个问题，「もう一つ」指的是另外的问题。",
-            "en": "That is the first problem, in paragraph two; 「もう一つ」 is a further one."
+            "zh": "人类自以为能保护自然的强者是第二段说的第一个问题；「もう一つ」指的是二选一的思维。",
+            "en": "Imagining humans as the strong protector is the first problem (paragraph two); 「もう一つ」 is the either-or thinking."
           },
           null,
           {
-            "zh": "文中没有说保护自然会牺牲人类生活。",
-            "en": "Nothing says protecting nature sacrifices human life."
+            "zh": "里山荒废是第三段的事实，是揭示陷阱的例子，不是陷阱本身。",
+            "en": "Neglected satoyama are the fact in paragraph three that reveals the pitfall, not the pitfall itself."
           },
           {
-            "zh": "这是里山的现状，不是「優しい」这种想法中的陷阱。",
-            "en": "That is the state of satoyama, not a pitfall in the 'kind' way of thinking."
+            "zh": "文中没有说保护自然会牺牲人的生活。",
+            "en": "Nothing says protecting nature sacrifices people's lives."
           }
         ]
       },
       {
         "q": "この文章で筆者が最も言いたいことは何か。",
         "options": [
-          "自然の一部として、自分たちがどのように自然と関わって暮らすのかを考え直すべきだ",
-          "「自然に優しい」という言葉は誤りなので、使うのをやめるべきだ",
-          "里山の景観を、全国でかつての姿に戻すべきだ",
-          "人間は自然に対して無力なので、手を加えるべきではない"
+          "自然の一部として、自分たちが自然とどう関わって暮らすかを問い直すべきだ",
+          "「自然に優しい」という言葉は誤解を招くので、もう使わないようにすべきだ",
+          "全国の里山に再び人の手を入れ、かつての景観を取り戻していくべきだ",
+          "人間は自然の前では無力なので、自然にはなるべく手を加えないほうがよい"
         ],
         "answer": 0,
         "why": {
-          "zh": "末段：需要的「自然に優しくすることではなく、自然の一部としての自分たちの暮らし方を問い直すこと」。",
-          "en": "Last paragraph: not being kind to nature but 「自然の一部としての自分たちの暮らし方を問い直すこと」."
+          "zh": "末段：需要的不是对自然温柔，而是「自然の一部としての自分たちの暮らし方を問い直すこと」。",
+          "en": "Last paragraph: the need is not to be kind to nature but 「自然の一部としての自分たちの暮らし方を問い直すこと」."
         },
         "wrong": [
           null,
           {
-            "zh": "笔者说「言葉そのものが悪いわけではない」，只是要停下来重新思考。",
-            "en": "The author says 「言葉そのものが悪いわけではない」; only rethinking is called for."
+            "zh": "笔者说「『優しい』という言葉そのものが悪いわけではない」，只是要停下来重新思考。",
+            "en": "The author says 「『優しい』という言葉そのものが悪いわけではない」; the point is to stop and rethink."
           },
           {
-            "zh": "里山只是例子；笔者说关系「土地ごとに異なり」，没有主张恢复。",
-            "en": "Satoyama are an example; the author says relationships 「土地ごとに異なり」 and calls for no restoration."
+            "zh": "里山只是例子，笔者说如何参与「土地ごとに異なり」，并没有主张全国恢复原貌。",
+            "en": "Satoyama are an example; how to engage 「土地ごとに異なり」, and restoring them everywhere isn't proposed."
           },
           {
-            "zh": "笔者说问题是「どこまで手を入れ、どこからは手を引くのか」，不是完全不动手。",
-            "en": "The question, says the author, is 「どこまで手を入れ、どこからは手を引くのか」, not never intervening."
+            "zh": "里山的例子正说明远离自然不一定能保护自然；问题在于在哪里出手、在哪里收手。",
+            "en": "The satoyama example shows staying away doesn't necessarily protect nature; the question is where to step in and where to hold back."
           }
         ]
       }

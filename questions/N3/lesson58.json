@@ -318,7 +318,7 @@
       "lesson58#3"
     ],
     "difficulty": 2,
-    "stem": "雨は [_] [_] [★] [_] きた。",
+    "stem": "雨は [_] [_] [_] [★] きた。",
     "options": [
       "ますます",
       "強く なって",
@@ -337,15 +337,16 @@
       "en": "Far from stopping, the rain got heavier and heavier."
     },
     "why": {
-      "zh": "やむ＋どころか（别说……反而）＋ますます＋強くなって（きた）。★ 在第三格，是「ますます」。",
-      "en": "やむ ＋ どころか (far from…) ＋ ますます ＋ 強くなって (きた). The ★ is the third slot: 「ますます」."
+      "zh": "やむ＋どころか（别说……反而）＋ますます＋強くなって（きた）。★ 在第四格，是「強く なって」。",
+      "en": "やむ ＋ どころか (far from…) ＋ ますます ＋ 強くなって (きた). The ★ is the fourth slot: 「強く なって」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l58-010",
@@ -666,7 +667,7 @@
       "lesson58#6"
     ],
     "difficulty": 1,
-    "stem": "あんなに 練習したんだから、[_] [_] [★] [_] 。",
+    "stem": "あんなに 練習したんだから、[_] [★] [_] [_] 。",
     "options": [
       "決まって",
       "彼が",
@@ -685,15 +686,16 @@
       "en": "After all that practice, he's bound to win."
     },
     "why": {
-      "zh": "彼が＋勝つに＋決まって＋いる（肯定是……）。★ 在第三格，是「決まって」。",
-      "en": "彼が ＋ 勝つに ＋ 決まって ＋ いる (bound to). The ★ is the third slot: 「決まって」."
+      "zh": "彼が＋勝つに＋決まって＋いる（肯定是……）。★ 在第二格，是「勝つに」。",
+      "en": "彼が ＋ 勝つに ＋ 決まって ＋ いる (bound to). The ★ is the second slot: 「勝つに」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l58-019",
@@ -782,7 +784,7 @@
       "lesson58#7"
     ],
     "difficulty": 2,
-    "stem": "家を [_] [_] [★] [_] 、電話が 鳴った。",
+    "stem": "家を [_] [★] [_] [_] 、電話が 鳴った。",
     "options": [
       "した",
       "出よう",
@@ -801,15 +803,16 @@
       "en": "Just as I was about to leave the house, the phone rang."
     },
     "why": {
-      "zh": "出よう（意向形）＋と＋した＋とき，「ようとする」表示正要做某事。★ 在第三格，是「した」。",
-      "en": "出よう (volitional) ＋ と ＋ した ＋ とき — 「ようとする」 is \"about to\". The ★ is the third slot: 「した」."
+      "zh": "出よう（意向形）＋と＋した＋とき，「ようとする」表示正要做某事。★ 在第二格，是「と」。",
+      "en": "出よう (volitional) ＋ と ＋ した ＋ とき — 「ようとする」 is \"about to\". The ★ is the second slot: 「と」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l58-022",
@@ -898,7 +901,7 @@
       "lesson58#8"
     ],
     "difficulty": 2,
-    "stem": "大事な 会議の [_] [_] [★] [_] 。",
+    "stem": "大事な 会議の [_] [★] [_] [_] 。",
     "options": [
       "鳴って",
       "携帯電話が",
@@ -917,15 +920,16 @@
       "en": "My mobile went off right in the middle of an important meeting."
     },
     "why": {
-      "zh": "会議の＋最中に（正在……的时候）＋携帯電話が＋鳴って（しまった）。★ 在第三格，是「鳴って」。",
-      "en": "会議の ＋ 最中に (right in the middle of) ＋ 携帯電話が ＋ 鳴って (しまった). The ★ is the third slot: 「鳴って」."
+      "zh": "会議の＋最中に（正在……的时候）＋携帯電話が＋鳴って（しまった）。★ 在第二格，是「携帯電話が」。",
+      "en": "会議の ＋ 最中に (right in the middle of) ＋ 携帯電話が ＋ 鳴って (しまった). The ★ is the second slot: 「携帯電話が」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l58-025",
@@ -1014,7 +1018,7 @@
       "lesson58#9"
     ],
     "difficulty": 2,
-    "stem": "歯を 磨く ときは、[_] [_] [★] [_] ください。",
+    "stem": "歯を 磨く ときは、[★] [_] [_] [_] ください。",
     "options": [
       "出し",
       "しないで",
@@ -1033,15 +1037,16 @@
       "en": "When you brush your teeth, please don't leave the tap running."
     },
     "why": {
-      "zh": "水を＋出し（ます形词干）＋っぱなしに＋しないで（ください）。★ 在第三格，是「っぱなしに」。",
-      "en": "水を ＋ 出し (masu-stem) ＋ っぱなしに ＋ しないで (ください). The ★ is the third slot: 「っぱなしに」."
+      "zh": "水を＋出し（ます形词干）＋っぱなしに＋しないで（ください）。★ 在第一格，是「水を」。",
+      "en": "水を ＋ 出し (masu-stem) ＋ っぱなしに ＋ しないで (ください). The ★ is the first slot: 「水を」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l58-028",
@@ -1130,7 +1135,7 @@
       "lesson58#10"
     ],
     "difficulty": 2,
-    "stem": "まだ 半分も できて いないから、[_] [_] [★] [_] 。",
+    "stem": "まだ 半分も できて いないから、[_] [_] [_] [★] 。",
     "options": [
       "そうも",
       "今日中には",
@@ -1149,15 +1154,16 @@
       "en": "I haven't even done half, so it doesn't look like I'll finish today."
     },
     "why": {
-      "zh": "今日中には＋終わり（ます形词干）＋そうも＋ない（看起来不会）。★ 在第三格，是「そうも」。",
-      "en": "今日中には ＋ 終わり (masu-stem) ＋ そうも ＋ ない (doesn't look like). The ★ is the third slot: 「そうも」."
+      "zh": "今日中には＋終わり（ます形词干）＋そうも＋ない（看起来不会）。★ 在第四格，是「ない」。",
+      "en": "今日中には ＋ 終わり (masu-stem) ＋ そうも ＋ ない (doesn't look like). The ★ is the fourth slot: 「ない」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l58-031",
@@ -1246,7 +1252,7 @@
       "lesson58#11"
     ],
     "difficulty": 1,
-    "stem": "説明書に [_] [_] [★] [_] ください。",
+    "stem": "説明書に [★] [_] [_] [_] ください。",
     "options": [
       "組み立てて",
       "ある",
@@ -1265,14 +1271,15 @@
       "en": "Please put it together exactly as the instructions say."
     },
     "why": {
-      "zh": "書いて＋ある＋とおりに（按照）＋組み立てて（ください）。★ 在第三格，是「とおりに」。",
-      "en": "書いて ＋ ある ＋ とおりに (just as) ＋ 組み立てて (ください). The ★ is the third slot: 「とおりに」."
+      "zh": "書いて＋ある＋とおりに（按照）＋組み立てて（ください）。★ 在第一格，是「書いて」。",
+      "en": "書いて ＋ ある ＋ とおりに (just as) ＋ 組み立てて (ください). The ★ is the first slot: 「書いて」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   }
 ]

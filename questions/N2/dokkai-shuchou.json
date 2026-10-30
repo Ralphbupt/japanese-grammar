@@ -70,10 +70,10 @@
       {
         "q": "この文章で筆者が最も言いたいことは何か。",
         "options": [
-          "効率を考えることは人を貧しくするので、やめたほうがいい。",
-          "決まった作業は、できるだけ短い時間で済ませるべきだ。",
-          "映画や本は、倍速や要約ではなく最後までじっくり味わうべきだ。",
-          "効率を重視する時間と、結果を求めずに過ごす時間を使い分けるべきだ。"
+          "効率を求めすぎると人は貧しくなるので、効率は考えないほうがいい。",
+          "決まった作業は、できるだけ短い時間で済ませるようにするべきだ。",
+          "映画や本は、倍速や要約に頼らず、最後までじっくり味わうべきだ。",
+          "効率よく済ませる時間と、結果を求めない時間を使い分けるべきだ。"
         ],
         "answer": 3,
         "why": {
@@ -83,15 +83,15 @@
         "wrong": [
           {
             "zh": "作者明确说「効率を考えることそのものが悪いわけではない」。",
-            "en": "The author says outright 「効率を考えることそのものが悪いわけではない」."
+            "en": "「効率を考えることそのものが悪いわけではない」 — efficiency itself isn't the problem."
           },
           {
-            "zh": "这是作者承认的一部分，只是让步，不是主张的中心。",
-            "en": "That's a concession the author makes along the way, not the main claim."
+            "zh": "作者同意这一点，但这只是让步，不是全文的主张。",
+            "en": "He agrees, but it's a concession, not the main claim."
           },
           {
-            "zh": "电影只是说明论点的例子，作者并没有主张不许倍速看。",
-            "en": "Films are just an example; the author never says you mustn't speed them up."
+            "zh": "电影只是例子，作者的主张针对的是所有时间的用法。",
+            "en": "Films are only an example; the claim is about how we use time in general."
           },
           null
         ]
@@ -169,10 +169,10 @@
       {
         "q": "この文章で筆者が最も言いたいことは何か。",
         "options": [
-          "説明する人は、もっと分かりやすく伝える工夫をするべきだ。",
-          "分かりやすい説明は問題を単純にしてしまうので、避けるべきだ。",
-          "町に大型の商業施設を作るかどうかは、慎重に判断するべきだ。",
-          "分かりやすさに満足せず、問題の分かりにくさと向き合い続けるべきだ。"
+          "説明する側は、受け取る人のために、もっと分かりやすく伝えるべきだ。",
+          "分かりやすい説明は問題を単純にしすぎるので、頼らないほうがいい。",
+          "複雑な問題は、賛成か反対かで判断せず、専門家に任せるべきだ。",
+          "すぐに分からなくても、問題の複雑さから逃げずに考え続けるべきだ。"
         ],
         "answer": 3,
         "why": {
@@ -181,16 +181,16 @@
         },
         "wrong": [
           {
-            "zh": "作者的问题意识在接收一方，不是要求讲解者更易懂。",
-            "en": "The author's concern is with the receivers, not asking explainers for more clarity."
+            "zh": "作者肯定易懂的说明，担心的是接受信息的一方，不是要求说明者做得更好。",
+            "en": "He values clear explanations; his worry is the audience, not the explainers."
           },
           {
-            "zh": "作者说易懂的讲解「悪いことではない」，是「入り口」，并不主张回避。",
-            "en": "The author calls clear explanation 「悪いことではない」 and an entrance — not something to avoid."
+            "zh": "作者说易懂的说明「悪いことではない」，是「理解への入り口」，并不主张不用。",
+            "en": "He calls clarity 「悪いことではない」 and 「理解への入り口」 — not something to avoid."
           },
           {
-            "zh": "商业设施只是说明问题复杂性的例子。",
-            "en": "The shopping complex is only an example of a complex issue."
+            "zh": "商业设施只是例子；作者希望每个人形成「自分なりの判断」，而不是交给专家。",
+            "en": "The shopping centre is just an example; he wants 「自分なりの判断」, not deference to experts."
           },
           null
         ]
@@ -210,10 +210,10 @@
       {
         "q": "筆者の冗談が現地の友人に通じなかったのはなぜか。",
         "options": [
-          "筆者の外国語が不正確で、言葉の意味が伝わらなかったから",
-          "その国では、そうした冗談が相手を見下しているように聞こえるから",
-          "翻訳機を使って話したので、冗談の意味が変わってしまったから",
-          "その友人が、もともと冗談を好まない性格だったから"
+          "筆者の外国語が不正確で、言葉の意味が正しく伝わらなかったから",
+          "その国の感覚では、その冗談が相手を見下す言い方になるから",
+          "翻訳機を通して話したので、冗談の微妙な意味が変わってしまったから",
+          "その友人が、もともと冗談をあまり好まない性格の人だったから"
         ],
         "answer": 1,
         "why": {
@@ -223,16 +223,16 @@
         "wrong": [
           {
             "zh": "文中说「言葉の意味は正確に伝わっていた」。",
-            "en": "The text says 「言葉の意味は正確に伝わっていた」."
+            "en": "「言葉の意味は正確に伝わっていた」 — the meaning got through."
           },
           null,
           {
-            "zh": "这段留学经历里没有提到使用翻译机。",
-            "en": "No translation app is mentioned in the study-abroad story."
+            "zh": "文中没有说留学时是通过翻译机交谈的。",
+            "en": "Nothing says he spoke through a translator there."
           },
           {
-            "zh": "原因是那个国家对这种玩笑的感受方式，不是朋友个人的性格。",
-            "en": "The cause is how that country hears such jokes, not the friend's personality."
+            "zh": "后来知道的原因是那个国家的习惯，不是朋友的性格。",
+            "en": "The cause he learned was the country's norms, not the friend's personality."
           }
         ]
       },
@@ -268,10 +268,10 @@
       {
         "q": "この文章で筆者が最も言いたいことは何か。",
         "options": [
-          "翻訳機は不正確なので、外国語は自分で学んだほうがいい。",
-          "情報のやり取りにも翻訳機を使わず、外国語で行うべきだ。",
-          "翻訳機があっても、他者や自分を理解するために外国語を学ぶ価値がある。",
-          "外国語を学ぶ前に、まず母語をしっかり身につけるべきだ。"
+          "翻訳機はまだ不正確なので、外国語は自分で学んだほうがいい。",
+          "情報のやり取りも翻訳機に任せず、自分の外国語で行うべきだ。",
+          "翻訳機があっても、他者や自分を知るために外国語を学ぶべきだ。",
+          "外国語を学ぶ前に、まず母語の特徴をしっかり理解しておくべきだ。"
         ],
         "answer": 2,
         "why": {
@@ -280,17 +280,17 @@
         },
         "wrong": [
           {
-            "zh": "作者承认翻译机已经很有用，意思「確かに…伝わる」，问题不在于不准确。",
-            "en": "The author grants translators are useful and that meaning 「確かに…伝わる」 — inaccuracy isn't the point."
+            "zh": "作者承认翻译机足以传达意思，问题不在准确度。",
+            "en": "He grants translators get the meaning across; accuracy isn't the issue."
           },
           {
-            "zh": "正相反，作者说「情報のやり取りは機械に任せればいい」。",
-            "en": "The opposite: the author says 「情報のやり取りは機械に任せればいい」."
+            "zh": "作者说「情報のやり取りは機械に任せればいい」，正好相反。",
+            "en": "He says 「情報のやり取りは機械に任せればいい」 — the opposite."
           },
           null,
           {
-            "zh": "作者说的是学外语能帮助重新审视母语，没有说要先学好母语。",
-            "en": "The author says learning a foreign language helps you see your own; nothing about mastering it first."
+            "zh": "作者说学外语反过来能让人看清母语，顺序正好相反。",
+            "en": "He says learning a foreign language reveals your own — the reverse order."
           }
         ]
       }

@@ -157,41 +157,42 @@
   },
   {
     "id": "n3-l57-005",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson57#2"
     ],
     "difficulty": 1,
-    "stem": "来週の 試験の ことが 心配（　）たまらない。",
+    "stem": "来週の 試験の ことが 心配で（　）。夜も よく 眠れない。",
     "options": [
-      "で",
-      "な",
-      "に",
-      "くて"
+      "たまらない",
+      "済む",
+      "かまわない",
+      "ほしい"
     ],
     "answer": 0,
-    "full": "来週の 試験の ことが 心配 で たまらない。",
+    "full": "来週の 試験の ことが 心配で たまらない。夜も よく 眠れない。",
     "tr": {
-      "zh": "担心下周的考试，担心得受不了。",
-      "en": "I'm terribly worried about next week's exam."
+      "zh": "担心下周的考试，担心得受不了，晚上都睡不好。",
+      "en": "I'm terribly worried about next week's exam. I can't sleep properly at night."
     },
     "why": {
-      "zh": "「心配」是な形容词，接「たまらない」用「で」：心配でたまらない。",
-      "en": "「心配」 is a na-adjective, so it joins 「たまらない」 with 「で」: 心配でたまらない."
+      "zh": "“担心得睡不好觉”，表示感情强烈到受不了，用「〜てたまらない」：心配でたまらない。",
+      "en": "Worried enough to lose sleep — a feeling too strong to bear: 「〜てたまらない」, 心配でたまらない."
     },
     "wrong": [
       null,
       {
-        "zh": "「な」用于修饰名词，不能接「たまらない」。",
-        "en": "「な」 goes before nouns, not before 「たまらない」."
+        "zh": "「で済む」是“……就能了事”，「心配で済む」说不通，也和“睡不好”接不上。",
+        "en": "「で済む」 is \"get away with\"; 「心配で済む」 makes no sense and doesn't fit losing sleep."
       },
       {
-        "zh": "「に」是副词形，「心配にたまらない」不成立。",
-        "en": "「に」 is adverbial; 「心配にたまらない」 isn't a form."
+        "zh": "「てかまわない」是“……也没关系”，和“担心得睡不着”相反。",
+        "en": "「てかまわない」 is \"it's fine if\", the opposite of worrying so much you can't sleep."
       },
       {
-        "zh": "「くて」是い形容词的形式，「心配」是な形容词。",
-        "en": "「くて」 is for i-adjectives; 「心配」 is a na-adjective."
+        "zh": "「てほしい」是希望别人做某事，「心配でほしい」不成立。",
+        "en": "「てほしい」 is wanting someone to do something; 「心配でほしい」 isn't a sentence."
       }
     ]
   },
@@ -202,7 +203,7 @@
       "lesson57#2"
     ],
     "difficulty": 1,
-    "stem": "最近 [_] [_] [★] [_] 。",
+    "stem": "最近 [_] [_] [_] [★] 。",
     "options": [
       "食べたくて",
       "料理が",
@@ -221,15 +222,16 @@
       "en": "Lately I've been dying to eat my mum's cooking back home."
     },
     "why": {
-      "zh": "国の母の＋料理が＋食べたくて＋たまらない。★ 在第三格，是「食べたくて」。",
-      "en": "国の母の ＋ 料理が ＋ 食べたくて ＋ たまらない. The ★ is the third slot: 「食べたくて」."
+      "zh": "国の母の＋料理が＋食べたくて＋たまらない。★ 在第四格，是「たまらない」。",
+      "en": "国の母の ＋ 料理が ＋ 食べたくて ＋ たまらない. The ★ is the fourth slot: 「たまらない」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l57-007",
@@ -318,7 +320,7 @@
       "lesson57#3"
     ],
     "difficulty": 2,
-    "stem": "明日の 面接の [_] [_] [★] [_] 。",
+    "stem": "明日の 面接の [_] [★] [_] [_] 。",
     "options": [
       "なって",
       "ならない",
@@ -337,15 +339,16 @@
       "en": "I can't stop thinking about tomorrow's interview."
     },
     "why": {
-      "zh": "ことが＋気に＋なって＋ならない，「気になる」的て形接「ならない」。★ 在第三格，是「なって」。",
-      "en": "ことが ＋ 気に ＋ なって ＋ ならない — the te-form of 「気になる」 plus 「ならない」. The ★ is the third slot: 「なって」."
+      "zh": "ことが＋気に＋なって＋ならない，「気になる」的て形接「ならない」。★ 在第二格，是「気に」。",
+      "en": "ことが ＋ 気に ＋ なって ＋ ならない — the te-form of 「気になる」 plus 「ならない」. The ★ is the second slot: 「気に」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l57-010",
@@ -550,7 +553,7 @@
       "lesson57#5"
     ],
     "difficulty": 2,
-    "stem": "たまに 寝坊して、[_] [_] [★] [_] 。",
+    "stem": "たまに 寝坊して、[_] [_] [_] [★] 。",
     "options": [
       "ことが ある",
       "食べずに",
@@ -569,15 +572,16 @@
       "en": "Now and then I oversleep and head out without breakfast."
     },
     "why": {
-      "zh": "朝ご飯を＋食べずに＋出かける（辞书形）＋ことがある。★ 在第三格，是「出かける」。",
-      "en": "朝ご飯を ＋ 食べずに ＋ 出かける (dictionary form) ＋ ことがある. The ★ is the third slot: 「出かける」."
+      "zh": "朝ご飯を＋食べずに＋出かける（辞书形）＋ことがある。★ 在第四格，是「ことが ある」。",
+      "en": "朝ご飯を ＋ 食べずに ＋ 出かける (dictionary form) ＋ ことがある. The ★ is the fourth slot: 「ことが ある」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l57-016",
@@ -621,41 +625,42 @@
   },
   {
     "id": "n3-l57-017",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson57#6"
     ],
     "difficulty": 1,
-    "stem": "健康診断（　）結果、少し 血圧が 高い ことが 分かった。",
+    "stem": "健康診断の（　）、少し 血圧が 高い ことが 分かった。",
     "options": [
-      "の",
-      "な",
-      "で",
-      "に"
+      "結果",
+      "ついでに",
+      "くせに",
+      "せいで"
     ],
     "answer": 0,
-    "full": "健康診断 の 結果、少し 血圧が 高い ことが 分かった。",
+    "full": "健康診断の 結果、少し 血圧が 高い ことが 分かった。",
     "tr": {
       "zh": "体检的结果显示血压有点高。",
       "en": "My health check showed that my blood pressure is a little high."
     },
     "why": {
-      "zh": "名词接「結果」要用「の」：健康診断の結果。",
-      "en": "A noun joins 「結果」 with 「の」: 健康診断の結果."
+      "zh": "“体检之后知道了血压高”，是检查得出的结论，用「名词＋の結果」（……的结果）。",
+      "en": "High blood pressure was found by the check-up — its outcome: 「noun ＋ の結果」."
     },
     "wrong": [
       null,
       {
-        "zh": "「な」是な形容词的形式，「健康診断」是名词。",
-        "en": "「な」 is for na-adjectives; 「健康診断」 is a noun."
+        "zh": "「ついでに」是“顺便”，知道血压高是体检本身的结论，不是顺便做的事。",
+        "en": "「ついでに」 is \"while I was at it\"; finding the blood pressure was the check-up's result, not a side errand."
       },
       {
-        "zh": "「で」不能连接名词和「結果」。",
-        "en": "「で」 can't link a noun to 「結果」."
+        "zh": "「くせに」用于责备“明明……却……”，这里没有责备的意思。",
+        "en": "「くせに」 criticises (\"even though… yet\"); nothing is criticised here."
       },
       {
-        "zh": "「に」不能连接名词和「結果」。",
-        "en": "「に」 can't link a noun to 「結果」."
+        "zh": "「せいで」是坏结果的原因，体检本身不会让血压变高。",
+        "en": "「せいで」 blames a cause; the check-up didn't make the blood pressure high."
       }
     ]
   },
@@ -666,7 +671,7 @@
       "lesson57#6"
     ],
     "difficulty": 2,
-    "stem": "何度も [_] [_] [★] [_] 完成した。",
+    "stem": "何度も [_] [_] [_] [★] 完成した。",
     "options": [
       "繰り返した",
       "新しい 薬が",
@@ -685,14 +690,15 @@
       "en": "After repeating the experiments many times, the new drug was finally completed."
     },
     "why": {
-      "zh": "実験を＋繰り返した＋結果（过程→结果）＋新しい薬が（完成した）。★ 在第三格，是「結果」。",
-      "en": "実験を ＋ 繰り返した ＋ 結果 (process → result) ＋ 新しい薬が (完成した). The ★ is the third slot: 「結果」."
+      "zh": "実験を＋繰り返した＋結果（过程→结果）＋新しい薬が（完成した）。★ 在第四格，是「新しい 薬が」。",
+      "en": "実験を ＋ 繰り返した ＋ 結果 (process → result) ＋ 新しい薬が (完成した). The ★ is the fourth slot: 「新しい 薬が」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   }
 ]

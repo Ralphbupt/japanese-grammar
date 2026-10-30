@@ -88,7 +88,7 @@
       "lesson20#1"
     ],
     "difficulty": 1,
-    "stem": "これは 入学の お祝いに [_] [_] [★] [_]。",
+    "stem": "これは 入学の お祝いに [★] [_] [_] [_]。",
     "options": [
       "時計",
       "父が",
@@ -108,15 +108,16 @@
       "en": "This is the watch my father gave me to celebrate my starting school."
     },
     "why": {
-      "zh": "「父がくれた」修饰「時計」：父が くれた 時計 です。★ 在第三格，是「時計」。",
-      "en": "「父がくれた」 modifies 「時計」: 父が くれた 時計 です. The ★ is the third slot: 「時計」."
+      "zh": "「父がくれた」修饰「時計」：父が くれた 時計 です。★ 在第一格，是「父が」。",
+      "en": "「父がくれた」 modifies 「時計」: 父が くれた 時計 です. The ★ is the first slot: 「父が」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l20-004",
@@ -499,7 +500,7 @@
       "lesson20#4"
     ],
     "difficulty": 2,
-    "stem": "すみません、駅までの [_] [_] [★] [_] か。",
+    "stem": "すみません、駅までの [★] [_] [_] [_] か。",
     "options": [
       "いただけ",
       "ません",
@@ -519,15 +520,16 @@
       "en": "Excuse me, could you tell me how to get to the station?"
     },
     "why": {
-      "zh": "最礼貌的请求「〜ていただけませんか」：行き方を 教えて いただけ ません か。★ 在第三格，是「いただけ」。",
-      "en": "The most polite request, 「〜ていただけませんか」: 行き方を 教えて いただけ ません か. The ★ is the third slot: 「いただけ」."
+      "zh": "最礼貌的请求「〜ていただけませんか」：行き方を 教えて いただけ ません か。★ 在第一格，是「行き方を」。",
+      "en": "The most polite request, 「〜ていただけませんか」: 行き方を 教えて いただけ ません か. The ★ is the first slot: 「行き方を」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l20-014",
@@ -625,7 +627,7 @@
       "lesson20#3"
     ],
     "difficulty": 2,
-    "stem": "この 写真は 父の 友達が [_] [_] [★] [_]。",
+    "stem": "この 写真は 父の 友達が [★] [_] [_] [_]。",
     "options": [
       "ものです",
       "撮って",
@@ -645,14 +647,15 @@
       "en": "This photo is one my father's friend took for us at the wedding."
     },
     "why": {
-      "zh": "父亲是我方，外人（父の友達）为我方做事用「〜てくれる」：結婚式で 撮って くれた ものです。★ 在第三格，是「くれた」。",
-      "en": "Father is on my side, so his friend doing something for us is 「〜てくれる」: 結婚式で 撮って くれた ものです. The ★ is the third slot: 「くれた」."
+      "zh": "父亲是我方，外人（父の友達）为我方做事用「〜てくれる」：結婚式で 撮って くれた ものです。★ 在第一格，是「結婚式で」。",
+      "en": "Father is on my side, so his friend doing something for us is 「〜てくれる」: 結婚式で 撮って くれた ものです. The ★ is the first slot: 「結婚式で」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   }
 ]

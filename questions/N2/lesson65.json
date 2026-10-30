@@ -10,8 +10,8 @@
     "options": [
       "ということだ",
       "というものだ",
-      "わけにはいかない",
-      "ものか"
+      "というわけではない",
+      "というところだ"
     ],
     "answer": 0,
     "full": "何度メールを送っても返事が来ないということは、彼はこの話に興味がないということだ。",
@@ -30,12 +30,12 @@
         "en": "「というものだ」 states what something essentially is; it doesn't draw a conclusion from a fact."
       },
       {
-        "zh": "「わけにはいかない」是“不能……”，“他不能没兴趣”说不通。",
-        "en": "「わけにはいかない」 means \"can't (do)\"; \"he can't be uninterested\" makes no sense."
+        "zh": "「というわけではない」是“并不是……”，前面「何度送っても返事が来ないということは」已经在推出结论，接否定结论前后矛盾。",
+        "en": "「というわけではない」 means 'it isn't that…'; 「ということは」 sets up a conclusion, so denying it contradicts the sentence."
       },
       {
-        "zh": "「ものか」是“哪能……”的强烈否定，用在这里意思相反且语气不对。",
-        "en": "「ものか」 is an emphatic \"as if…!\" — wrong meaning and tone here."
+        "zh": "「というところだ」表示“大致是……的程度”（多接数量、程度），不能用来推出“他没兴趣”的结论。",
+        "en": "「というところだ」 means 'about / roughly' (with amounts or degrees); it can't state the conclusion 'he isn't interested'."
       }
     ]
   },
@@ -243,7 +243,7 @@
       "としては",
       "にしては",
       "に反して",
-      "をめぐって"
+      "にかけては"
     ],
     "answer": 0,
     "full": "子供が自分で決めたことでも、親としては、危険な仕事には就いてほしくない。",
@@ -266,8 +266,8 @@
         "en": "「に反して」 means \"contrary to\"; \"contrary to a parent\" makes no sense."
       },
       {
-        "zh": "「をめぐって」是“围绕……（争论）”，不表示说话人的立场。",
-        "en": "「をめぐって」 means \"over (a dispute)\"; it doesn't mark the speaker's standpoint."
+        "zh": "「にかけては」是“在……方面（很擅长）”，后面要接能力评价，不能接“不希望孩子做危险工作”。",
+        "en": "「にかけては」 means 'when it comes to (a skill)' and needs an evaluation of ability, not a parent's wish."
       }
     ]
   },
@@ -282,8 +282,8 @@
     "options": [
       "としては",
       "にしては",
-      "につれて",
-      "に応じて"
+      "にかけては",
+      "に限って"
     ],
     "answer": 0,
     "full": "A「この案について、ご意見をお聞かせください。」 B「私としては、この案には賛成できません。」",
@@ -302,12 +302,12 @@
         "en": "「にしては」 means \"surprisingly, for…\"; that doesn't fit giving one's opinion."
       },
       {
-        "zh": "「につれて」是“随着……变化”，前面要接表示变化的词，「私」不是变化。",
-        "en": "「につれて」 means \"as… changes\" and needs a changing quantity, not 「私」."
+        "zh": "「にかけては」用于夸某方面的能力，“我在……方面不能赞成”说不通。",
+        "en": "「にかけては」 praises a skill; it can't introduce someone's stance on a proposal."
       },
       {
-        "zh": "「に応じて」是“根据……相应地”，“根据我来不赞成”说不通。",
-        "en": "「に応じて」 means \"in response to/according to\"; \"according to me, can't support\" is wrong here."
+        "zh": "「に限って」是“偏偏……/唯独……”，用于出乎意料的事或“只有……不会”，这里只是表明自己的立场。",
+        "en": "「に限って」 means 'of all people / only' for surprising cases; B is simply stating a position."
       }
     ]
   },
@@ -437,9 +437,9 @@
     "stem": "A「部長が、明日までに100ページの資料を全部翻訳しろって。」\nB「一日で100ページなんて、それは無理（　）よ。」",
     "options": [
       "というものではない",
-      "に限る",
+      "どころではない",
       "というものだ",
-      "ばかりだ"
+      "というところだ"
     ],
     "answer": 2,
     "full": "A「部長が、明日までに100ページの資料を全部翻訳しろって。」\nB「一日で100ページなんて、それは無理というものだよ。」",
@@ -457,13 +457,13 @@
         "en": "「というものではない」 would say \"it's not impossible,\" the opposite of B's 「〜なんて」 disbelief."
       },
       {
-        "zh": "「に限る」是“……最好”，“不可能最好”说不通。",
-        "en": "「に限る」 means \"… is best\"; \"impossible is best\" makes no sense."
+        "zh": "「どころではない」是“哪顾得上……/根本谈不上……”，接在「無理」后说不通。",
+        "en": "「どころではない」 means 'in no position for…'; it doesn't follow 「無理」 as a verdict."
       },
       null,
       {
-        "zh": "「ばかりだ」表示状态一味发展，不能接在「無理」后面下判断。",
-        "en": "「ばかりだ」 describes a trend that keeps going; it can't follow 「無理」 to pass a verdict."
+        "zh": "「というところだ」是“大概……的程度”，用于数量或程度的估计，不能用来断定“不可能”。",
+        "en": "「というところだ」 gives a rough estimate ('about…'); it can't pass the verdict 'impossible'."
       }
     ]
   },

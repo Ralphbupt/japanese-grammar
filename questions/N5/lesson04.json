@@ -4,10 +4,10 @@
     "type": "bunpou",
     "refs": ["lesson04#1"],
     "difficulty": 1,
-    "stem": "毎朝 駅まで バスで（　）、電車に 乗ります。",
-    "options": ["行いて", "行って", "行きて", "行んで"],
+    "stem": "まいあさ 駅まで バスで（　）、電車に のります。",
+    "options": ["行きます", "行って", "行った", "行く"],
     "answer": 1,
-    "full": "毎朝 駅まで バスで 行って、電車に 乗ります。",
+    "full": "まいあさ 駅まで バスで 行って、電車に のります。",
     "kj": "毎朝駅までバスで行って、電車に乗ります。",
     "tr": {
       "zh": "每天早上坐公交到车站，然后坐电车。",
@@ -19,17 +19,17 @@
     },
     "wrong": [
       {
-        "zh": "「行いて」是按く→いて的规则推出来的，但「行く」是例外，要说「行って」。",
-        "en": "「行いて」 follows the く → いて rule, but 「行く」 is the exception: 「行って」."
+        "zh": "「行きます」是句子的结尾，后面不能用逗号再接「電車に 乗ります」。",
+        "en": "「行きます」 ends a sentence; it can't be followed by a comma and 「電車に 乗ります」."
       },
       null,
       {
-        "zh": "「行きて」是在ます词干后直接加て，て形不是这样变的。",
-        "en": "「行きて」 just adds て to the ます-stem; that's not how the て form works."
+        "zh": "「行った」是た形（简体过去），不能用来连接两个动作，而且时态也不对。",
+        "en": "「行った」 is the plain past; it doesn't link two actions, and the tense is wrong."
       },
       {
-        "zh": "「んで」是ぬ・ぶ・む结尾的变法，「行く」不适用。",
-        "en": "「んで」 is for verbs ending in ぬ・ぶ・む, not 「行く」."
+        "zh": "原形「行く」不能用逗号直接连接下一个动作，要用て形。",
+        "en": "The dictionary form 「行く」 can't link to the next action with a comma; that's the て-form's job."
       }
     ]
   },
@@ -38,10 +38,10 @@
     "type": "bunpou",
     "refs": ["lesson04#1"],
     "difficulty": 1,
-    "stem": "昨日の 夜は 薬を（　）、早く 寝ました。",
-    "options": ["飲みて", "飲って", "飲んて", "飲んで"],
+    "stem": "きのうの よるは くすりを（　）、はやく ねました。",
+    "options": ["飲みました", "飲んだり", "飲む", "飲んで"],
     "answer": 3,
-    "full": "昨日の 夜は 薬を 飲んで、早く 寝ました。",
+    "full": "きのうの よるは くすりを 飲んで、はやく ねました。",
     "kj": "昨日の夜は薬を飲んで、早く寝ました。",
     "tr": {
       "zh": "昨晚吃了药，早早就睡了。",
@@ -53,16 +53,16 @@
     },
     "wrong": [
       {
-        "zh": "「飲みて」是在ます词干后加て，て形有自己的音变规则。",
-        "en": "「飲みて」 adds て to the ます-stem; the て form has its own sound changes."
+        "zh": "「飲みました」是句子的结尾，后面不能用逗号再接「早く 寝ました」。",
+        "en": "「飲みました」 ends a sentence; it can't be followed by a comma and 「早く 寝ました」."
       },
       {
-        "zh": "「って」是つ・る・う结尾的变法，む结尾要变「んで」。",
-        "en": "「って」 is for つ・る・う endings; む becomes 「んで」."
+        "zh": "「〜たり」要成对使用并以「する」结尾（〜たり 〜たり する），这里没有「する」。",
+        "en": "「〜たり」 needs 「する」 to close it (〜たり 〜たり する); there's none here."
       },
       {
-        "zh": "拨音「ん」后面要浊化成「で」，「飲んて」是常见错误。",
-        "en": "After the 「ん」 sound, て turns into 「で」; 「飲んて」 is a common mistake."
+        "zh": "原形「飲む」不能用逗号直接连接下一个动作，要用て形。",
+        "en": "The dictionary form 「飲む」 can't link to the next action with a comma; use the て-form."
       },
       null
     ]
@@ -72,10 +72,11 @@
     "type": "bunpou",
     "refs": ["lesson04#1"],
     "difficulty": 2,
-    "stem": "夏休みに 海で（　）、それから 魚を 食べました。",
-    "options": ["泳いで", "泳いて", "泳ぎて", "泳って"],
+    "stem": "なつやすみに うみで（　）、それから 魚を 食べました。",
+    "options": ["およいで", "およぐ", "およいだり", "およぎます"],
+    "okj": ["泳いで", "泳ぐ", "泳いだり", "泳ぎます"],
     "answer": 0,
-    "full": "夏休みに 海で 泳いで、それから 魚を 食べました。",
+    "full": "なつやすみに うみで およいで、それから 魚を 食べました。",
     "kj": "夏休みに海で泳いで、それから魚を食べました。",
     "tr": {
       "zh": "暑假在海里游了泳，然后吃了鱼。",
@@ -88,16 +89,16 @@
     "wrong": [
       null,
       {
-        "zh": "「いて」是く结尾的变法；ぐ是浊音，要用「いで」。",
-        "en": "「いて」 is for く; ぐ is voiced, so it's 「いで」."
+        "zh": "原形「泳ぐ」不能用逗号直接连接下一个动作，要用て形；而且这是过去的事。",
+        "en": "The dictionary form 「泳ぐ」 can't link to the next action with a comma; and this is in the past."
       },
       {
-        "zh": "「泳ぎて」是在ます词干后加て，不是正确的て形。",
-        "en": "「泳ぎて」 adds て to the ます-stem; it isn't the て form."
+        "zh": "「〜たり」要以「する」结尾（〜たり する），这里后面接的是「それから」。",
+        "en": "「〜たり」 needs 「する」 to close it; here 「それから」 follows instead."
       },
       {
-        "zh": "「って」是つ・る・う结尾的变法，ぐ结尾不适用。",
-        "en": "「って」 is for つ・る・う endings, not ぐ."
+        "zh": "「泳ぎます」是现在形的句尾，既不能接逗号连下去，时态也和「食べました」不符。",
+        "en": "「泳ぎます」 is a non-past sentence ending: it can't run on with a comma, and the story is in the past."
       }
     ]
   },
@@ -106,10 +107,11 @@
     "type": "narabe",
     "refs": ["lesson04#1"],
     "difficulty": 1,
-    "stem": "もう 寝ます。[_] [_] [★] [_]。",
-    "options": ["ください", "を", "電気", "消して"],
+    "stem": "もう ねます。[_] [_] [★] [_]。",
+    "options": ["ください", "を", "電気", "けして"],
+    "okj": [null, null, null, "消して"],
     "order": [2, 1, 3, 0],
-    "full": "もう 寝ます。電気を 消して ください。",
+    "full": "もう ねます。電気を けして ください。",
     "kj": "もう寝ます。電気を消してください。",
     "tr": {
       "zh": "我要睡了。请把灯关掉。",
@@ -126,10 +128,10 @@
     "type": "bunpou",
     "refs": ["lesson04#2"],
     "difficulty": 1,
-    "stem": "この 部屋は 静か（　）、広いです。",
-    "options": ["くて", "で", "な", "だ"],
+    "stem": "この へやは しずか（　）、ひろいです。",
+    "options": ["だから", "で", "な", "だ"],
     "answer": 1,
-    "full": "この 部屋は 静かで、広いです。",
+    "full": "この へやは しずかで、ひろいです。",
     "kj": "この部屋は静かで、広いです。",
     "tr": {
       "zh": "这个房间又安静又宽敞。",
@@ -141,8 +143,8 @@
     },
     "wrong": [
       {
-        "zh": "「くて」是い形容词的て形（大きくて），な形容词不能用。",
-        "en": "「くて」 is the て form of い-adjectives (大きくて), not な-adjectives."
+        "zh": "「静かだから、広いです」是“因为安静所以宽敞”，安静和宽敞没有因果关系。",
+        "en": "「静かだから、広いです」 says it's spacious because it's quiet — there's no cause and effect."
       },
       null,
       {
@@ -160,10 +162,11 @@
     "type": "bunpou",
     "refs": ["lesson04#2"],
     "difficulty": 2,
-    "stem": "家から 駅まで 近いので、毎日（　）行きます。",
-    "options": ["歩くて", "歩って", "歩きて", "歩いて"],
+    "stem": "いえから 駅まで ちかいので、毎日（　）行きます。",
+    "options": ["あるく", "あるいた", "あるきます", "あるいて"],
+    "okj": ["歩く", "歩いた", "歩きます", "歩いて"],
     "answer": 3,
-    "full": "家から 駅まで 近いので、毎日 歩いて 行きます。",
+    "full": "いえから 駅まで ちかいので、毎日 あるいて 行きます。",
     "kj": "家から駅まで近いので、毎日歩いて行きます。",
     "tr": {
       "zh": "从家到车站很近，所以每天走路去。",
@@ -175,16 +178,16 @@
     },
     "wrong": [
       {
-        "zh": "「歩くて」是在辞书形后加て，动词不能这样变。",
-        "en": "「歩くて」 adds て to the dictionary form; verbs don't work that way."
+        "zh": "原形「歩く」不能直接放在「行きます」前面表示方式，要用て形。",
+        "en": "The dictionary form 「歩く」 can't sit before 「行きます」 to say how you go; use the て-form."
       },
       {
-        "zh": "「って」是つ・る・う结尾的变法，く结尾要变「いて」。",
-        "en": "「って」 is for つ・る・う endings; く becomes 「いて」."
+        "zh": "「歩いた」是た形，不能修饰后面的「行きます」表示方式。",
+        "en": "「歩いた」 is the た-form; it can't describe how you go with 「行きます」."
       },
       {
-        "zh": "「歩きて」是在ます词干后加て，不是正确的て形。",
-        "en": "「歩きて」 adds て to the ます-stem; it isn't the て form."
+        "zh": "「歩きます」是句尾形，后面不能再接「行きます」。",
+        "en": "「歩きます」 is a sentence ending; 「行きます」 can't follow it."
       },
       null
     ]
@@ -194,10 +197,11 @@
     "type": "bunpou",
     "refs": ["lesson04#2"],
     "difficulty": 2,
-    "stem": "昨日は 朝 早く 起きて、公園を（　）。",
-    "options": ["走ります", "走りました", "走って", "走りません"],
+    "stem": "きのうは あさ はやく おきて、こうえんを（　）。",
+    "options": ["はしります", "はしりました", "はしって", "はしりません"],
+    "okj": ["走ります", "走りました", "走って", "走りません"],
     "answer": 1,
-    "full": "昨日は 朝 早く 起きて、公園を 走りました。",
+    "full": "きのうは あさ はやく おきて、こうえんを はしりました。",
     "kj": "昨日は朝早く起きて、公園を走りました。",
     "tr": {
       "zh": "昨天早上早早起来，在公园跑了步。",
@@ -229,9 +233,10 @@
     "refs": ["lesson04#2"],
     "difficulty": 1,
     "stem": "この ケーキは [_] [★] [_] [_]。",
-    "options": ["おいしい", "です", "甘く", "て"],
+    "options": ["おいしい", "です", "あまく", "て"],
+    "okj": [null, null, "甘く", null],
     "order": [2, 3, 0, 1],
-    "full": "この ケーキは 甘くて おいしいです。",
+    "full": "この ケーキは あまくて おいしいです。",
     "kj": "このケーキは甘くておいしいです。",
     "tr": {
       "zh": "这个蛋糕又甜又好吃。",
@@ -248,10 +253,11 @@
     "type": "bunpou",
     "refs": ["lesson04#3", "lesson04#1"],
     "difficulty": 2,
-    "stem": "仕事が 終わって、家に（　）、晩ご飯を 作ります。",
-    "options": ["帰て", "帰りて", "帰って", "帰んで"],
+    "stem": "しごとが おわって、いえに（　）、ばんごはんを つくります。",
+    "options": ["かえる", "かえった", "かえって", "かえります"],
+    "okj": ["帰る", "帰った", "帰って", "帰ります"],
     "answer": 2,
-    "full": "仕事が 終わって、家に 帰って、晩ご飯を 作ります。",
+    "full": "しごとが おわって、いえに かえって、ばんごはんを つくります。",
     "kj": "仕事が終わって、家に帰って、晩ご飯を作ります。",
     "tr": {
       "zh": "下班后回到家，做晚饭。",
@@ -263,17 +269,17 @@
     },
     "wrong": [
       {
-        "zh": "「帰て」是把「帰る」当成二类直接去る，但它是一类动词。",
-        "en": "「帰て」 treats 「帰る」 as Group 2 (drop る), but it is Group 1."
+        "zh": "原形「帰る」不能用逗号直接连接下一个动作，要用て形。",
+        "en": "The dictionary form 「帰る」 can't link to the next action with a comma; use the て-form."
       },
       {
-        "zh": "「帰りて」是在ます词干后加て，て形不是这样变的。",
-        "en": "「帰りて」 adds て to the ます-stem; that isn't the て form."
+        "zh": "「帰った」是た形（简体过去），不能连接动作，而且句子说的是每天的习惯。",
+        "en": "「帰った」 is the plain past; it doesn't link actions, and this is a routine."
       },
       null,
       {
-        "zh": "「んで」是ぬ・ぶ・む结尾的变法，る结尾的一类动词要变「って」。",
-        "en": "「んで」 is for ぬ・ぶ・む endings; Group 1 る verbs take 「って」."
+        "zh": "「帰ります」是句尾形，后面不能用逗号再接「晩ご飯を 作ります」。",
+        "en": "「帰ります」 ends a sentence; it can't be followed by a comma and 「晩ご飯を 作ります」."
       }
     ]
   },
@@ -282,10 +288,10 @@
     "type": "bunpou",
     "refs": ["lesson04#3", "lesson04#2"],
     "difficulty": 2,
-    "stem": "田中さんは 頭が（　）、やさしい 人です。",
-    "options": ["いくて", "よくて", "いいで", "いいくて"],
+    "stem": "たなかさんは あたまが（　）、やさしい 人です。",
+    "options": ["いい", "よくて", "よかった", "よくない"],
     "answer": 1,
-    "full": "田中さんは 頭が よくて、やさしい 人です。",
+    "full": "たなかさんは あたまが よくて、やさしい 人です。",
     "kj": "田中さんは頭がよくて、優しい人です。",
     "tr": {
       "zh": "田中又聪明又温柔。",
@@ -297,17 +303,17 @@
     },
     "wrong": [
       {
-        "zh": "「いくて」是按普通い形容词变的，但「いい」的变形要用「よ」开头。",
-        "en": "「いくて」 follows the regular rule, but 「いい」 conjugates from 「よ」."
+        "zh": "「いい」是原形，不能用逗号直接连接下一个形容词，要用て形「よくて」。",
+        "en": "「いい」 is the plain form; it can't link to the next adjective — use the て-form 「よくて」."
       },
       null,
       {
-        "zh": "「で」是な形容词和名词的て形，「いい」是い形容词。",
-        "en": "「で」 is the て form for な-adjectives and nouns; 「いい」 is an い-adjective."
+        "zh": "「よかった」是过去式，不能用来连接两个形容词，而且说的是现在的性格。",
+        "en": "「よかった」 is past; it doesn't link two adjectives, and this describes him now."
       },
       {
-        "zh": "い形容词变て形要去掉「い」再加「くて」，「いいくて」没有去掉「い」。",
-        "en": "An い-adjective drops 「い」 before 「くて」; 「いいくて」 doesn't."
+        "zh": "「よくない」是“不好”，不能用逗号接后面的「やさしい人」，意思也不对。",
+        "en": "「よくない」 (not good) can't link to 「やさしい人」 with a comma, and the meaning is wrong."
       }
     ]
   },
@@ -316,10 +322,10 @@
     "type": "bunpou",
     "refs": ["lesson04#3", "lesson04#1"],
     "difficulty": 2,
-    "stem": "昨日は 友達と 映画を（　）、いっしょに 晩ご飯を 食べました。",
-    "options": ["見って", "見て", "見いて", "見んで"],
+    "stem": "きのうは 友だちと えいがを（　）、いっしょに ばんごはんを 食べました。",
+    "options": ["見る", "見て", "見た", "見たり"],
     "answer": 1,
-    "full": "昨日は 友達と 映画を 見て、いっしょに 晩ご飯を 食べました。",
+    "full": "きのうは 友だちと えいがを 見て、いっしょに ばんごはんを 食べました。",
     "kj": "昨日は友達と映画を見て、一緒に晩ご飯を食べました。",
     "tr": {
       "zh": "昨天和朋友看了电影，然后一起吃了晚饭。",
@@ -331,17 +337,17 @@
     },
     "wrong": [
       {
-        "zh": "「見って」是把「見る」当成一类（る→って），但它是二类，不需要促音。",
-        "en": "「見って」 treats 「見る」 as Group 1 (る → って); it is Group 2 and takes no small っ."
+        "zh": "原形「見る」不能用逗号直接连接下一个动作，要用て形；而且是昨天的事。",
+        "en": "The dictionary form 「見る」 can't link to the next action with a comma; and this was yesterday."
       },
       null,
       {
-        "zh": "「いて」是く结尾的变法，「見る」不适用。",
-        "en": "「いて」 is for く endings, not 「見る」."
+        "zh": "「見た」是た形（简体过去），不能用来连接两个动作。",
+        "en": "「見た」 is the plain past; it can't link two actions."
       },
       {
-        "zh": "「んで」是ぬ・ぶ・む结尾的变法，「見る」不适用。",
-        "en": "「んで」 is for ぬ・ぶ・む endings, not 「見る」."
+        "zh": "「〜たり」要以「する」结尾（〜たり する），这里后面没有「する」。",
+        "en": "「〜たり」 needs 「する」 to close it; there's none here."
       }
     ]
   }

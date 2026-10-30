@@ -49,9 +49,9 @@
     "stem": "あの 二人は いつも 一緒に いるし、よく 手を つないで いる。恋人（　）。",
     "options": [
       "に違いない",
-      "だに違いない",
-      "なに違いない",
-      "のに違いない"
+      "の はずが ない",
+      "な わけが ない",
+      "の おそれが ある"
     ],
     "answer": 0,
     "full": "あの 二人は いつも 一緒に いるし、よく 手を つないで いる。恋人に違いない。",
@@ -60,22 +60,22 @@
       "en": "Those two are always together and often hold hands. They must be a couple."
     },
     "why": {
-      "zh": "名词直接接「に違いない」，中间不加「だ」「な」「の」。",
-      "en": "A noun connects directly to 「に違いない」 — no 「だ」, 「な」 or 「の」 in between."
+      "zh": "“总在一起，还经常牵手”是有力的根据，说话人确信，用「に違いない」（一定是）。名词直接接：恋人に違いない。",
+      "en": "\"Always together and holding hands\" is strong evidence, so the speaker is sure: 「に違いない」 (must be), right after the noun."
     },
     "wrong": [
       null,
       {
-        "zh": "名词后面不加「だ」，「恋人だに違いない」不成立。",
-        "en": "No 「だ」 after the noun; 「恋人だに違いない」 is ungrammatical."
+        "zh": "「はずがない」是“不可能是”，和前面的根据正好相反。",
+        "en": "「はずがない」 is \"can't be\", the opposite of what the evidence says."
       },
       {
-        "zh": "「な」只在な形容词修饰名词时用，名词「恋人」后不能加「な」。",
-        "en": "「な」 belongs to na-adjectives before a noun; it can't follow the noun 「恋人」."
+        "zh": "「わけがない」也是“不可能”，和前面的根据矛盾。",
+        "en": "「わけがない」 also means \"no way\", which contradicts the evidence."
       },
       {
-        "zh": "「に違いない」前不加「の」，「恋人のに違いない」不成立。",
-        "en": "Nothing like 「の」 goes before 「に違いない」; 「恋人のに違いない」 is ungrammatical."
+        "zh": "「おそれがある」用于担心坏事发生，“是恋人”不是要担心的坏事。",
+        "en": "「おそれがある」 is a worry that something bad may happen; being a couple isn't a danger."
       }
     ]
   },
@@ -357,9 +357,9 @@
     "stem": "A「あれ、今日の 会議って 何時から（　）？」\nB「3時からですよ。」",
     "options": [
       "だったっけ",
-      "かったっけ",
-      "たっけ",
-      "なっけ"
+      "だった ものか",
+      "に 決まってる",
+      "だった ことか"
     ],
     "answer": 0,
     "full": "A「あれ、今日の 会議って 何時から だったっけ？」 B「3時からですよ。」",
@@ -374,16 +374,16 @@
     "wrong": [
       null,
       {
-        "zh": "「かったっけ」接在い形容词后面（高かったっけ），不接名词性成分。",
-        "en": "「かったっけ」 follows an i-adjective (高かったっけ), not a noun phrase."
+        "zh": "「ものか」是强烈否定或反问（才不……呢），不是在问自己忘了的事。",
+        "en": "「ものか」 is a strong denial (\"as if…\"), not asking about something you've forgotten."
       },
       {
-        "zh": "「たっけ」接在动词た形后面（行ったっけ），「何時から」后要用「だった」。",
-        "en": "「たっけ」 belongs after a verb's た-form (行ったっけ); 「何時から」 needs 「だった」."
+        "zh": "「に決まってる」是“肯定是”，可A不知道几点，后面还在问对方。",
+        "en": "「に決まってる」 is \"it's bound to be\", but A doesn't know the time and is asking."
       },
       {
-        "zh": "没有「なっけ」这种形式。",
-        "en": "There is no form 「なっけ」."
+        "zh": "「ことか」是感叹“多么……啊”（どんなに待ったことか），不用于询问时间。",
+        "en": "「ことか」 is an exclamation (\"how…!\", どんなに待ったことか), not a question about the time."
       }
     ]
   },
@@ -397,9 +397,9 @@
     "stem": "田中さんの 家って、駅から（　）？ 前に 一度 行ったけど、忘れちゃった。",
     "options": [
       "遠かったっけ",
-      "遠いだっけ",
-      "遠いものか",
-      "遠かったものか"
+      "遠いに 違いない",
+      "遠い ものか",
+      "遠かった ことか"
     ],
     "answer": 0,
     "full": "田中さんの 家って、駅から 遠かったっけ？ 前に 一度 行ったけど、忘れちゃった。",
@@ -414,16 +414,16 @@
     "wrong": [
       null,
       {
-        "zh": "い形容词后不能加「だ」，「遠いだっけ」不成立。",
-        "en": "An i-adjective can't take 「だ」; 「遠いだっけ」 is ungrammatical."
+        "zh": "「に違いない」是“一定是”，可说话人说自己忘了，不能这么确定。",
+        "en": "「に違いない」 is \"it must be\", but the speaker says they've forgotten, so they can't be sure."
       },
       {
         "zh": "「遠いものか」是“哪里远了！”的强烈否定，和“忘了”不符。",
-        "en": "「遠いものか」 is an emphatic \"it's not far at all!\", which doesn't fit \"I've forgotten.\""
+        "en": "「遠いものか」 is a strong denial (\"far? hardly!\"), which doesn't fit \"I've forgotten\"."
       },
       {
-        "zh": "「ものか」接辞书形（遠いものか），不接过去形；意思也是强烈否定，不是回忆。",
-        "en": "「ものか」 takes the dictionary form, not the past, and it's a denial, not a recall."
+        "zh": "「遠かったことか」是感叹“多么远啊”，要和「どんなに」等一起用，也不是在问。",
+        "en": "「遠かったことか」 is an exclamation (\"how far it was!\") used with words like 「どんなに」; it isn't a question."
       }
     ]
   },
@@ -434,7 +434,7 @@
       "lesson43#4"
     ],
     "difficulty": 2,
-    "stem": "A「この 漢字、[_] [_] [★] [_]。」\nB「わたしも わからないなあ。辞書で 調べて みよう。」",
+    "stem": "A「この 漢字、[_] [_] [_] [★]。」\nB「わたしも わからないなあ。辞書で 調べて みよう。」",
     "options": [
       "読む",
       "っけ",
@@ -453,15 +453,16 @@
       "en": "A: How do you read this kanji again? B: I don't know either. Let's look it up in the dictionary."
     },
     "why": {
-      "zh": "何て ＋ 読む ＋ んだ ＋ っけ：动词非过去形用「〜んだっけ」。★ 在第三格，是「んだ」。",
-      "en": "何て ＋ 読む ＋ んだ ＋ っけ: a non-past verb takes 「〜んだっけ」. The ★ is the third slot: 「んだ」."
+      "zh": "何て ＋ 読む ＋ んだ ＋ っけ：动词非过去形用「〜んだっけ」。★ 在第四格，是「っけ」。",
+      "en": "何て ＋ 読む ＋ んだ ＋ っけ: a non-past verb takes 「〜んだっけ」. The ★ is the fourth slot: 「っけ」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l43-013",
@@ -513,9 +514,9 @@
     "stem": "こんな 仕事、簡単（　）。毎日 夜中まで かかって いるんだよ。",
     "options": [
       "なものか",
-      "ものか",
-      "だものか",
-      "のものか"
+      "に違いない",
+      "に決まってる",
+      "なはずだ"
     ],
     "answer": 0,
     "full": "こんな 仕事、簡単なものか。毎日 夜中まで かかって いるんだよ。",
@@ -524,22 +525,22 @@
       "en": "This job, easy? No way. It takes me till midnight every day."
     },
     "why": {
-      "zh": "な形容词接「ものか」时要加「な」：簡単なものか（哪里简单了）。后一句“每天干到半夜”说明是在否定“简单”。",
-      "en": "A na-adjective takes 「な」 before 「ものか」: 簡単なものか. \"Till midnight every day\" shows the speaker is denying it's easy."
+      "zh": "后一句“每天干到半夜”说明是在否定“简单”，强烈否定用「ものか」（哪里……了）。な形容词接「な」：簡単なものか。",
+      "en": "\"Till midnight every day\" shows the speaker is denying it's easy: the strong denial 「ものか」, with 「な」 after a na-adjective: 簡単なものか."
     },
     "wrong": [
       null,
       {
-        "zh": "な形容词词干不能直接接「ものか」，要加「な」。",
-        "en": "A na-adjective stem can't attach to 「ものか」 directly; it needs 「な」."
+        "zh": "「に違いない」是“一定很简单”，和“每天干到半夜”矛盾。",
+        "en": "「に違いない」 would say \"it must be easy\", contradicting \"till midnight every day\"."
       },
       {
-        "zh": "「ものか」前面不加「だ」。",
-        "en": "「だ」 doesn't go before 「ものか」."
+        "zh": "「に決まってる」也是肯定“当然简单”，和后一句矛盾。",
+        "en": "「に決まってる」 also asserts \"of course it's easy\", which contradicts the next sentence."
       },
       {
-        "zh": "「の」是名词修饰名词时用的，な形容词「簡単」要用「な」。",
-        "en": "「の」 links nouns; the na-adjective 「簡単」 needs 「な」."
+        "zh": "「はずだ」是“应该简单”，同样是肯定，和后一句不符。",
+        "en": "「はずだ」 is \"it should be easy\", again a positive claim that doesn't fit."
       }
     ]
   },
@@ -550,7 +551,7 @@
       "lesson43#5"
     ],
     "difficulty": 1,
-    "stem": "あんな 弱い チームに [_] [_] [★] [_]。",
+    "stem": "あんな 弱い チームに [★] [_] [_] [_]。",
     "options": [
       "もの",
       "絶対に",
@@ -569,14 +570,15 @@
       "en": "There's no way we'll lose to a team that weak!"
     },
     "why": {
-      "zh": "絶対に ＋ 負ける（辞书形）＋ もの ＋ か。★ 在第三格，是「もの」。",
-      "en": "絶対に ＋ 負ける (dictionary form) ＋ もの ＋ か. The ★ is the third slot: 「もの」."
+      "zh": "絶対に ＋ 負ける（辞书形）＋ もの ＋ か。★ 在第一格，是「絶対に」。",
+      "en": "絶対に ＋ 負ける (dictionary form) ＋ もの ＋ か. The ★ is the first slot: 「絶対に」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   }
 ]

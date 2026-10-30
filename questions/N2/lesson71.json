@@ -9,9 +9,9 @@
     "stem": "数学（　）、彼はクラスで誰にも負けない。",
     "options": [
       "に沿って",
-      "の末に",
+      "をめぐって",
       "にかけては",
-      "に当たらず"
+      "に先立って"
     ],
     "answer": 2,
     "full": "数学にかけては、彼はクラスで誰にも負けない。",
@@ -29,29 +29,30 @@
         "en": "「に沿って」 (along / in line with) doesn't mark a field of skill."
       },
       {
-        "zh": "「の末に」是“经过漫长的……最终”，数学不是过程。",
-        "en": "「の末に」 (after a long ~) doesn't fit a subject."
+        "zh": "「をめぐって」是“围绕……（争论、对立）”，后面要接争论、议论，不接“谁也比不上他”。",
+        "en": "「をめぐって」 (over / surrounding ~) leads to a dispute or debate, not \"nobody beats him\"."
       },
       null,
       {
-        "zh": "「に当たらず」是“不值得”，前面接动词，「数学に当たらず」说不通。",
-        "en": "「に当たらず」 (not worth) follows a verb; 「数学に当たらず」 makes no sense."
+        "zh": "「に先立って」是“在……之前（先做）”，“在数学之前”说不通。",
+        "en": "「に先立って」 means \"prior to ~\"; \"prior to math\" makes no sense."
       }
     ]
   },
   {
     "id": "n2-l71-002",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson71#1"
     ],
     "difficulty": 2,
-    "stem": "料理にかけては、（　）。",
+    "stem": "料理（　）、母の右に出る者はいない。",
     "options": [
-      "母はあまり上手ではない",
-      "いろいろな本が出ている",
-      "母の右に出る者はいない",
-      "明日みんなで話し合おう"
+      "に際して",
+      "に応じて",
+      "にかけては",
+      "をめぐって"
     ],
     "answer": 2,
     "full": "料理にかけては、母の右に出る者はいない。",
@@ -60,22 +61,22 @@
       "en": "When it comes to cooking, nobody beats my mother."
     },
     "why": {
-      "zh": "「にかけては」后面要接对某人能力的积极评价：“没人能超过妈妈”。",
-      "en": "「にかけては」 must be followed by praise of someone's ability: nobody beats Mom."
+      "zh": "“没有人比得上妈妈”是对能力的高度评价，前面用「にかけては」（在……方面）提出领域。",
+      "en": "\"Nobody beats Mom\" praises a skill; 「にかけては」 (when it comes to ~) names the field."
     },
     "wrong": [
       {
-        "zh": "「にかけては」后面是积极评价，不接“不太擅长”。",
-        "en": "「にかけては」 is followed by praise, not \"not very good\"."
+        "zh": "「に際して」是“在……之际”，接某个时机（入学、出发），不接“做菜”这种领域。",
+        "en": "「に際して」 (on the occasion of ~) takes an occasion like entering school, not a field like cooking."
       },
       {
-        "zh": "“出了很多书”只是关于做菜的话题，没有评价人的能力，应该用「については」。",
-        "en": "\"Lots of books are out\" is just a topic, not a skill evaluation — that's 「については」."
+        "zh": "「に応じて」是“根据……（而变化）”，后面要有随之改变的内容。",
+        "en": "「に応じて」 (in accordance with ~) needs something that changes accordingly."
       },
       null,
       {
-        "zh": "“明天大家一起讨论”只是话题，不是对能力的评价。",
-        "en": "\"Let's discuss it tomorrow\" is a topic, not an evaluation of skill."
+        "zh": "「をめぐって」是“围绕……（争论）”，后面要接争论、对立。",
+        "en": "「をめぐって」 (over ~) leads to a dispute, not to praise of someone's skill."
       }
     ]
   },
@@ -238,15 +239,15 @@
       "lesson71#3"
     ],
     "difficulty": 2,
-    "stem": "店の中を一時間も迷った（　）、結局何も買わずに帰った。",
+    "stem": "店の中で一時間も迷った（　）、結局何も買わずに帰った。",
     "options": [
       "からには",
       "あげく",
       "ところ",
-      "うちに"
+      "とたん"
     ],
     "answer": 1,
-    "full": "店の中を一時間も迷ったあげく、結局何も買わずに帰った。",
+    "full": "店の中で一時間も迷ったあげく、結局何も買わずに帰った。",
     "tr": {
       "zh": "在店里犹豫了整整一个小时，结果什么都没买就回去了。",
       "en": "After dithering in the shop for a whole hour, I ended up going home without buying anything."
@@ -266,8 +267,8 @@
         "en": "「たところ」 is followed by something discovered, not one's own choice to leave."
       },
       {
-        "zh": "「うちに」接「ている」或「ない」形，不接た形。",
-        "en": "「うちに」 follows 「ている」 or 「ない」, not the ta-form."
+        "zh": "「たとたん」是“刚……就（马上发生意外的事）”，和“犹豫了一个小时”“结果”接不上。",
+        "en": "「たとたん」 means \"the moment ~, (something sudden)\"; it doesn't fit an hour of dithering and 「結局」."
       }
     ]
   },
@@ -505,17 +506,18 @@
   },
   {
     "id": "n2-l71-014",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson71#5"
     ],
     "difficulty": 2,
-    "stem": "保険に入っていたので、大きな出費を（　）に済んだ。",
+    "stem": "保険に入っていたので、大きな出費を（　）。",
     "options": [
-      "しず",
-      "せず",
-      "しなく",
-      "さず"
+      "せざるを得なかった",
+      "せずに済んだ",
+      "せずにはいられなかった",
+      "せずにおいた"
     ],
     "answer": 1,
     "full": "保険に入っていたので、大きな出費をせずに済んだ。",
@@ -524,22 +526,22 @@
       "en": "I had insurance, so I was spared a big expense."
     },
     "why": {
-      "zh": "「する」的「ず」形是「せず」：「出費をせずに済んだ」。",
-      "en": "The 「ず」 form of 「する」 is 「せず」: 「出費をせずに済んだ」."
+      "zh": "因为有保险，所以“不用花大钱就解决了”：「ずに済む」表示避免了本来可能发生的事。",
+      "en": "Because of the insurance, a big expense was avoided: 「ずに済む」 = get by without ~."
     },
     "wrong": [
       {
-        "zh": "「する」的「ず」形不是「しず」。",
-        "en": "The 「ず」 form of 「する」 isn't 「しず」."
+        "zh": "「ざるを得なかった」是“不得不花”，和“因为上了保险”的前因相矛盾。",
+        "en": "「ざるを得なかった」 (had no choice but to spend) contradicts having insurance."
       },
       null,
       {
-        "zh": "「しなく」后面不能接「に済む」（口语说「しなくて済む」）。",
-        "en": "「しなく」 can't take 「に済む」 (colloquially it's 「しなくて済む」)."
+        "zh": "「ずにはいられなかった」是“忍不住要……”，表示控制不住的冲动，不用于花钱这件事。",
+        "en": "「ずにはいられなかった」 (couldn't help ~) describes an urge, not an expense."
       },
       {
-        "zh": "「さず」是「さす」的否定，不是「する」的。",
-        "en": "「さず」 is the negative of 「さす」, not of 「する」."
+        "zh": "「ずにおいた」是“特意不做、先放着”，表示有意的选择，和“因为有保险”这个原因接不上。",
+        "en": "「ずにおいた」 (deliberately left undone) is a choice, which doesn't follow from having insurance."
       }
     ]
   },

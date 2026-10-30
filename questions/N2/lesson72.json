@@ -281,9 +281,9 @@
     "difficulty": 2,
     "stem": "今の部屋は狭いけれど、駅から近くて便利な（　）だ。",
     "options": [
-      "どころ",
-      "だけは",
-      "からには",
+      "わけ",
+      "はず",
+      "ばかり",
       "だけまし"
     ],
     "answer": 3,
@@ -298,16 +298,16 @@
     },
     "wrong": [
       {
-        "zh": "「便利などころだ」不成立；「どころ」要用在「どころではない」「どころか」里。",
-        "en": "「便利などころだ」 isn't Japanese; 「どころ」 only works in 「どころではない」 / 「どころか」."
+        "zh": "「便利なわけだ」是“难怪方便”，要有前面说明理由的事实；和“虽然窄”的让步接不上。",
+        "en": "「便利なわけだ」 means \"no wonder it's convenient\", which needs a stated reason, not 「狭いけれど」."
       },
       {
-        "zh": "「だけは」要重复动词（「やるだけはやった」），不能接「便利な」后再接「だ」。",
-        "en": "「だけは」 repeats a verb (「やるだけはやった」); 「便利なだけはだ」 is ungrammatical."
+        "zh": "「はずだ」是根据推理的推测，说话人自己住的房间是否方便自己清楚，不用推测。",
+        "en": "「はずだ」 is an inference; the speaker lives there and knows whether it's convenient."
       },
       {
-        "zh": "「からには」是“既然……就……”，要接后句，不能直接接「だ」。",
-        "en": "「からには」 (\"since…, then\") needs a following clause; it can't end with 「だ」."
+        "zh": "「ばかりだ」接动词表示变化一直朝一个方向发展，不能接「便利な」。",
+        "en": "「ばかりだ」 marks a one-way change after a verb; it can't follow 「便利な」."
       },
       null
     ]
@@ -359,7 +359,7 @@
     "options": [
       "行くまい",
       "行くべき",
-      "行かないまい",
+      "行くまいか",
       "行こう"
     ],
     "answer": 0,
@@ -379,8 +379,8 @@
         "en": "「行くべき」 (\"should go\") clashes with 「二度と」 and the complaint, and would need 「だと」."
       },
       {
-        "zh": "「まい」本身就是否定，接在辞书形后面，不能接「ない」形。",
-        "en": "「まい」 is already negative and attaches to the dictionary form, not the ない-form."
+        "zh": "「行くまいか」用于「行こうか行くまいか」（去还是不去）这种犹豫，不能表达“决心再也不去”。",
+        "en": "「行くまいか」 belongs in 「行こうか行くまいか」 (whether to go or not); it can't express a resolve never to go."
       },
       {
         "zh": "「行こう」是“去吧”，和“受到恶劣对待”“再也不”的决心相反。",

@@ -48,10 +48,10 @@
     "difficulty": 1,
     "stem": "みんなの 応援（　）、優勝する ことが できました。",
     "options": [
-      "おかげで",
+      "のせいで",
       "のおかげで",
-      "なおかげで",
-      "のせいで"
+      "のくせに",
+      "のわりに"
     ],
     "answer": 1,
     "full": "みんなの 応援の おかげで、優勝する ことが できました。",
@@ -60,22 +60,22 @@
       "en": "Thanks to everyone's support, we were able to win."
     },
     "why": {
-      "zh": "「応援」是名词，名词接「おかげで」要加「の」；结果是好事，所以是「のおかげで」。",
-      "en": "「応援」 is a noun, and a noun takes 「の」 before 「おかげで」; the result is good, so 「のおかげで」."
+      "zh": "获得冠军是好结果，原因是大家的支持，表示感谢的原因用「名词＋のおかげで」。",
+      "en": "Winning is a good result and everyone's support caused it, so the grateful 「noun ＋ のおかげで」."
     },
     "wrong": [
       {
-        "zh": "名词后面不能直接接「おかげで」，要加「の」。",
-        "en": "A noun can't take 「おかげで」 directly; it needs 「の」."
+        "zh": "「のせいで」用于坏结果的原因，获得冠军是好事。",
+        "en": "「のせいで」 blames a cause for a bad result, but winning is good."
       },
       null,
       {
-        "zh": "「な」只用于な形容词，「応援」是名词。",
-        "en": "「な」 is for な-adjectives; 「応援」 is a noun."
+        "zh": "「のくせに」是责备“明明……却……”，这里没有可责备的事。",
+        "en": "「のくせに」 criticises (\"even though… yet\"); nothing is being criticised here."
       },
       {
-        "zh": "「せいで」用于坏结果，获得冠军是好事。",
-        "en": "「せいで」 is for bad results; winning is good."
+        "zh": "「のわりに」是“与……相比出乎意料”，支持和获胜之间没有这种落差。",
+        "en": "「のわりに」 is \"for (what you'd expect)\"; there's no such gap between support and winning."
       }
     ]
   },
@@ -389,41 +389,42 @@
   },
   {
     "id": "n3-l37-011",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson37#4"
     ],
     "difficulty": 2,
-    "stem": "プロ（　）以上、どんな 時でも 結果を 出さなければ ならない。",
+    "stem": "プロ（　）、どんな 時でも 結果を 出さなければ ならない。",
     "options": [
-      "の",
-      "な",
-      "である",
-      "で"
+      "であるくせに",
+      "であるおかげで",
+      "である以上",
+      "であるのに"
     ],
     "answer": 2,
-    "full": "プロである 以上、どんな 時でも 結果を 出さなければ ならない。",
+    "full": "プロである以上、どんな 時でも 結果を 出さなければ ならない。",
     "tr": {
       "zh": "既然是专业人士，无论何时都必须拿出成绩。",
       "en": "As a professional, you have to deliver results no matter what."
     },
     "why": {
-      "zh": "名词接「以上」要用「名词＋である＋以上」。",
-      "en": "A noun connects to 「以上」 as 「noun ＋ である ＋ 以上」."
+      "zh": "“既然是专业人士”，后面是“必须……”的义务，用「名词＋である＋以上」（既然……就……）。",
+      "en": "\"Since you're a professional\" is followed by an obligation (must deliver), so 「noun ＋ である ＋ 以上」 (\"since… then\")."
     },
     "wrong": [
       {
-        "zh": "「の」不能连接名词和「以上」（プロの以上 ×）。",
-        "en": "「の」 can't link a noun to 「以上」 (プロの以上 is wrong)."
+        "zh": "「くせに」是责备“明明……却……”，后面要接让人不满的事，不接“必须……”。",
+        "en": "「くせに」 criticises (\"even though… yet\") and is followed by something annoying, not by an obligation."
       },
       {
-        "zh": "「な」用于な形容词修饰名词，「プロ」是名词，「プロな以上」不成立。",
-        "en": "「な」 is for な-adjectives; 「プロな以上」 isn't grammatical."
+        "zh": "「おかげで」说明好结果的原因，后面不能接“必须……”这样的义务。",
+        "en": "「おかげで」 gives the cause of a good result; it can't lead into an obligation like \"must\"."
       },
       null,
       {
-        "zh": "「で」是て形，后面不能直接接「以上」。",
-        "en": "「で」 is a て-form and can't be followed by 「以上」."
+        "zh": "「のに」是逆接，“是专业人士”和“必须出成绩”并不矛盾。",
+        "en": "「のに」 is \"even though\", but being a professional and having to deliver don't contrast."
       }
     ]
   },
@@ -434,7 +435,7 @@
       "lesson37#4"
     ],
     "difficulty": 2,
-    "stem": "日本に 住んで いる [_] [_] [★] [_] ほうが いい。",
+    "stem": "日本に 住んで いる [_] [★] [_] [_] ほうが いい。",
     "options": [
       "ルールを",
       "以上",
@@ -453,15 +454,16 @@
       "en": "As long as you live in Japan, you'd better know the rules here."
     },
     "why": {
-      "zh": "「住んでいる以上」= 既然住在日本，后面是建议「日本のルールを知っておいたほうがいい」：以上 → 日本の → ルールを → 知って おいた。★ 是「ルールを」。",
-      "en": "「住んでいる以上」 = since you live here, followed by the advice 「日本のルールを知っておいたほうがいい」: 以上 → 日本の → ルールを → 知って おいた. The ★ is 「ルールを」."
+      "zh": "「住んでいる以上」= 既然住在日本，后面是建议「日本のルールを知っておいたほうがいい」：以上 → 日本の → ルールを → 知って おいた。★ 在第二格，是「日本の」。",
+      "en": "「住んでいる以上」 = since you live here, followed by the advice 「日本のルールを知っておいたほうがいい」: 以上 → 日本の → ルールを → 知って おいた. The ★ is the second slot: 「日本の」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l37-013",
@@ -550,7 +552,7 @@
       "lesson37#5"
     ],
     "difficulty": 2,
-    "stem": "[_] [_] [★] [_] 責任を 果たします。",
+    "stem": "[★] [_] [_] [_] 責任を 果たします。",
     "options": [
       "仕事を",
       "上は",
@@ -569,15 +571,16 @@
       "en": "Now that I've accepted this job, I will fulfil my responsibility."
     },
     "why": {
-      "zh": "「この仕事を引き受けた」是既成事实，接「上は」，后面是决心「責任を果たします」：この → 仕事を → 引き受けた → 上は。★ 是「引き受けた」。",
-      "en": "「この仕事を引き受けた」 is the settled fact, then 「上は」, then the resolve 「責任を果たします」: この → 仕事を → 引き受けた → 上は. The ★ is 「引き受けた」."
+      "zh": "「この仕事を引き受けた」是既成事实，接「上は」，后面是决心「責任を果たします」：この → 仕事を → 引き受けた → 上は。★ 在第一格，是「この」。",
+      "en": "「この仕事を引き受けた」 is the settled fact, then 「上は」, then the resolve 「責任を果たします」: この → 仕事を → 引き受けた → 上は. The ★ is the first slot: 「この」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l37-016",
@@ -621,41 +624,42 @@
   },
   {
     "id": "n3-l37-017",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson37#6"
     ],
     "difficulty": 2,
-    "stem": "チームの リーダー（　）からには、みんなを まとめる 責任が ある。",
+    "stem": "チームの リーダー（　）、みんなを まとめる 責任が ある。",
     "options": [
-      "の",
-      "である",
-      "な",
-      "に"
+      "でありながら",
+      "であるからには",
+      "であるわりに",
+      "であるくせに"
     ],
     "answer": 1,
-    "full": "チームの リーダーである からには、みんなを まとめる 責任が ある。",
+    "full": "チームの リーダーであるからには、みんなを まとめる 責任が ある。",
     "tr": {
       "zh": "既然是团队的领导，就有责任把大家团结起来。",
       "en": "Since you are the team leader, you have a responsibility to bring everyone together."
     },
     "why": {
-      "zh": "名词接「からには」要用「名词＋である＋からには」。",
-      "en": "A noun connects to 「からには」 as 「noun ＋ である ＋ からには」."
+      "zh": "“既然是领导，就有责任……”，前面是身份，后面是由此产生的责任，用「名词＋である＋からには」。",
+      "en": "\"Since you're the leader, you're responsible…\": a role followed by the duty it brings is 「noun ＋ である ＋ からには」."
     },
     "wrong": [
       {
-        "zh": "「の」不能连接名词和「からには」（リーダーのからには ×）。",
-        "en": "「の」 can't link a noun to 「からには」 (リーダーのからには is wrong)."
+        "zh": "「ながら」是逆接“虽然是……却……”，“是领导”和“有责任”不矛盾。",
+        "en": "「ながら」 here is concessive (\"although\"), but being leader and having a duty don't contrast."
       },
       null,
       {
-        "zh": "「な」用于な形容词，「リーダー」是名词。",
-        "en": "「な」 is for な-adjectives; 「リーダー」 is a noun."
+        "zh": "「わりに」是“与……相比出乎意料”，后面要接意外的结果，“有责任”并不意外。",
+        "en": "「わりに」 is \"for a…, surprisingly\"; having a duty isn't surprising for a leader."
       },
       {
-        "zh": "「リーダーにからには」不成立；「に」后面要接动词（なる等）。",
-        "en": "「リーダーにからには」 isn't grammatical; 「に」 would need a verb such as なる."
+        "zh": "「くせに」是责备“明明……却……”，后面要接让人不满的行为。",
+        "en": "「くせに」 criticises (\"even though… yet\") and needs some annoying behaviour after it."
       }
     ]
   },
@@ -666,7 +670,7 @@
       "lesson37#6"
     ],
     "difficulty": 2,
-    "stem": "[_] [_] [★] [_] 学びたい。",
+    "stem": "[_] [★] [_] [_] 学びたい。",
     "options": [
       "からには",
       "現地の",
@@ -685,15 +689,16 @@
       "en": "Since I'm going to study abroad, I want to learn the local culture too."
     },
     "why": {
-      "zh": "「留学するからには」是前提，后面是愿望「現地の文化も学びたい」：留学する → からには → 現地の → 文化も。★ 是「現地の」。",
-      "en": "「留学するからには」 is the premise, followed by the wish 「現地の文化も学びたい」: 留学する → からには → 現地の → 文化も. The ★ is 「現地の」."
+      "zh": "「留学するからには」是前提，后面是愿望「現地の文化も学びたい」：留学する → からには → 現地の → 文化も。★ 在第二格，是「からには」。",
+      "en": "「留学するからには」 is the premise, followed by the wish 「現地の文化も学びたい」: 留学する → からには → 現地の → 文化も. The ★ is the second slot: 「からには」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l37-019",
@@ -737,41 +742,42 @@
   },
   {
     "id": "n3-l37-020",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson37#7"
     ],
     "difficulty": 2,
-    "stem": "この 地域は 地形が 特殊（　）ことから、独特の 文化が 生まれた。",
+    "stem": "この 地域は 地形が 特殊（　）、独特の 文化が 生まれた。",
     "options": [
-      "の",
-      "だ",
-      "な",
-      "で"
+      "なのに",
+      "なくせに",
+      "なことから",
+      "なわりに"
     ],
     "answer": 2,
-    "full": "この 地域は 地形が 特殊な ことから、独特の 文化が 生まれた。",
+    "full": "この 地域は 地形が 特殊なことから、独特の 文化が 生まれた。",
     "tr": {
       "zh": "这个地区由于地形特殊，产生了独特的文化。",
       "en": "Because the terrain of this region is unusual, a unique culture developed."
     },
     "why": {
-      "zh": "「特殊」是な形容词，接「ことから」要用「特殊な」（或「特殊である」）。",
-      "en": "「特殊」 is a な-adjective, so it joins 「ことから」 as 「特殊な」 (or 「特殊である」)."
+      "zh": "“地形特殊”是“产生独特文化”的原因和由来，用「ことから」（由于……）。な形容词接「な」：特殊なことから。",
+      "en": "The unusual terrain is where the unique culture came from, so 「ことから」 (\"because of / from the fact that\"); a na-adjective takes 「な」: 特殊なことから."
     },
     "wrong": [
       {
-        "zh": "な形容词修饰「こと」要用「な」，不用「の」。",
-        "en": "A な-adjective modifies 「こと」 with 「な」, not 「の」."
+        "zh": "「のに」是逆接，可“地形特殊”和“产生独特文化”是因果，不矛盾。",
+        "en": "「のに」 is \"even though\", but unusual terrain and a unique culture are cause and effect, not a contrast."
       },
       {
-        "zh": "「だ」是句尾形式，不能直接修饰名词「こと」。",
-        "en": "「だ」 ends a sentence; it can't modify the noun 「こと」."
+        "zh": "「くせに」用于责备人，不用于说明地区文化的由来。",
+        "en": "「くせに」 criticises people; it doesn't explain where a region's culture came from."
       },
       null,
       {
-        "zh": "「で」是て形，后面不能接「こと」。",
-        "en": "「で」 is a て-form and can't be followed by 「こと」."
+        "zh": "「わりに」表示和预想不符，“地形特殊所以文化独特”正是预想之中。",
+        "en": "「わりに」 marks something unexpected, but a unique culture from unusual terrain is just what you'd expect."
       }
     ]
   },

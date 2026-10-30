@@ -13,10 +13,10 @@
         "q": "友人は、なぜ不思議がっていたのか。",
         "difficulty": 1,
         "options": [
-          "日本人が、電車で席を譲ろうとしないから",
-          "お礼を言う場面なのに、日本人が謝っているように聞こえるから",
-          "日本人が、悪いことをしたときに謝らないから",
-          "店員が落とし物を拾っても、客がお礼を言わないから"
+          "日本人が、謝るべき場面で「ありがとう」と言っているから",
+          "感謝を伝える場面で、日本人が謝罪の言葉を口にするから",
+          "日本人が、自分が悪いときにも「すみません」と言わないから",
+          "落とし物を拾ってもらっても、客が何もお礼を言わないから"
         ],
         "answer": 1,
         "why": {
@@ -25,27 +25,27 @@
         },
         "wrong": [
           {
-            "zh": "让座只是举的例子，问题在于被让座的人说的话，不是不让座。",
-            "en": "The seat is just an example; the puzzle is what the person given the seat says, not people refusing to give seats."
+            "zh": "正好相反：是在该道谢的场面说「すみません」。",
+            "en": "Reversed: it's 「すみません」 where thanks are due."
           },
           null,
           {
-            "zh": "朋友觉得奇怪的是“没做坏事却道歉”，正好相反。",
-            "en": "His puzzle is apologising when nothing was wrong — the reverse of this."
+            "zh": "文中没有说日本人做错事时不道歉。",
+            "en": "Nothing says Japanese people don't apologise when at fault."
           },
           {
-            "zh": "捡东西的例子是作者自己的经历，而且作者说的是「すみません」，并非不道谢。",
-            "en": "The dropped-item example is the writer's own, and he does say 「すみません」; nothing says customers don't thank."
+            "zh": "捡失物是作者自己的例子，而且作者说的是「すみません」，不是什么都不说。",
+            "en": "The dropped-item case is the writer's own, and he does say 「すみません」."
           }
         ]
       },
       {
         "q": "筆者によると、この「すみません」にはどのような気持ちが込められているか。",
         "options": [
-          "自分が悪いことをしたと反省する気持ちだけ",
-          "相手とこれ以上親しくなりたくないという気持ち",
-          "感謝を言葉にするのは恥ずかしいという気持ち",
-          "相手に手間をかけさせて申し訳ないという気持ちと、感謝の気持ち"
+          "自分が悪いことをしたと反省する気持ちと、おわびの気持ち",
+          "親切にしてくれた相手への感謝と、親しみを伝えたい気持ち",
+          "感謝を口にするのは照れくさいので、ごまかしたい気持ち",
+          "相手に負担をかけたおわびと、親切に対する感謝の気持ち"
         ],
         "answer": 3,
         "why": {
@@ -54,16 +54,16 @@
         },
         "wrong": [
           {
-            "zh": "作者说的是歉意和感谢「両方」，不是只有反省。",
-            "en": "The writer says 「両方」 — both — not only regret."
+            "zh": "作者认为其中既有歉意也有感谢；只说反省和道歉，漏掉了感谢的一面，而且对方并没有做错什么。",
+            "en": "The writer sees both regret and thanks; this drops the gratitude, and no one has done anything wrong."
           },
           {
-            "zh": "文中没有提到不想和对方变亲近。",
-            "en": "Nothing in the text mentions not wanting to get closer."
+            "zh": "感谢是对的，但另一半是给对方添麻烦的歉意，不是亲近感。",
+            "en": "Gratitude is right, but the other half is regret for the trouble, not friendliness."
           },
           {
-            "zh": "文中没有说作者觉得道谢难为情，他之后还特意说「ありがとう」。",
-            "en": "Nothing says thanking is embarrassing; he later makes a point of saying 「ありがとう」."
+            "zh": "文中没有说日本人觉得道谢难为情。",
+            "en": "Nothing says saying thanks feels embarrassing."
           },
           null
         ]
@@ -71,10 +71,10 @@
       {
         "q": "筆者が「ありがとう」と言うようにしてみて、思ったことは何か。",
         "options": [
-          "感謝を伝えたほうが、親切にした人もうれしいのかもしれない。",
-          "「すみません」のほうが、相手に気持ちがよく伝わる。",
-          "「ありがとう」と言うと、相手が不思議に思う。",
-          "謝ることは、相手に対して失礼になる。"
+          "謝られるより感謝されるほうが、親切にした人もうれしいのだろう。",
+          "「すみません」のほうが、申し訳なさと感謝の両方が伝わってよい。",
+          "「ありがとう」と言われても、相手は特に表情を変えなかった。",
+          "お礼を言うべき場面で謝ると、かえって相手に失礼になってしまう。"
         ],
         "answer": 0,
         "why": {
@@ -84,16 +84,16 @@
         "wrong": [
           null,
           {
-            "zh": "作者说「すみません」「気持ちが伝わりにくいこともある」，相反。",
-            "en": "He says 「すみません」 can be 「気持ちが伝わりにくい」 — the reverse."
+            "zh": "作者说「すみません」方便，但「気持ちが伝わりにくいこともある」，所以才改说「ありがとう」。",
+            "en": "The writer finds 「すみません」 handy but says 「気持ちが伝わりにくいこともある」 — that's why he switched."
           },
           {
-            "zh": "对方的表情「明るくなる」，没有感到奇怪。",
-            "en": "Faces 「明るくなる」 (brightened); no one was puzzled."
+            "zh": "相反，作者觉得「相手の表情が少し明るくなる」。",
+            "en": "The opposite: 「相手の表情が少し明るくなる」."
           },
           {
-            "zh": "作者只说被感谢可能更高兴，没有说道歉失礼。",
-            "en": "He only says thanks may please people more, not that apologising is rude."
+            "zh": "作者只说感谢可能更让人高兴，没有说道歉失礼。",
+            "en": "He only suggests thanks may please people more; he never says apologising is rude."
           }
         ]
       }
@@ -171,10 +171,10 @@
       {
         "q": "筆者の考えに合うものはどれか。",
         "options": [
-          "避難訓練は、毎年同じ手順で行うほうが効果がある。",
-          "避難にかかる時間を短くすることが、訓練の一番の目的だ。",
-          "訓練の日時は、混乱しないように前もって社員に知らせるべきだ。",
-          "避難訓練では、予想しない状況でも自分で判断できるようにしておくことが大切だ。"
+          "避難訓練では、毎年同じ手順をくり返して体に覚えさせることが大切だ。",
+          "全員が集まるまでの時間を縮めることが、訓練の最も大きな目的だ。",
+          "混乱を防ぐため、訓練の日時と条件は前もって知らせておくべきだ。",
+          "訓練では、思わぬ事態でも自分で判断できる力をつけることが大切だ。"
         ],
         "answer": 3,
         "why": {
@@ -183,16 +183,16 @@
         },
         "wrong": [
           {
-            "zh": "作者认为照固定步骤只养成了「手順をなぞる習慣」，相反。",
-            "en": "He says fixed procedures only built 「手順をなぞる習慣」 — the reverse."
+            "zh": "作者认为以前的演习只养成了「決められた手順をなぞる習慣」，训练的目的「手順を覚えることではなく」。",
+            "en": "The writer says past drills only built 「決められた手順をなぞる習慣」; the aim is 「手順を覚えることではなく」."
           },
           {
-            "zh": "“比去年快一分钟”正是作者反省的旧做法，他说目的不在于此。",
-            "en": "\"A minute faster\" is the old routine he now questions; he says that isn't the purpose."
+            "zh": "缩短时间只是负责人每年报告的内容，作者认为真正的目的在于自己判断。",
+            "en": "The time is just what the organiser reported each year; the real aim is judging for yourself."
           },
           {
-            "zh": "正是没有事先通知的演习让作者有所领悟，他没有主张提前通知。",
-            "en": "The unannounced drill is what taught him; he doesn't argue for advance notice."
+            "zh": "正是没有预告的演习让作者意识到了问题，作者并没有主张提前通知。",
+            "en": "The unannounced drill is what opened his eyes; he doesn't call for advance notice."
           },
           null
         ]
@@ -213,9 +213,9 @@
         "q": "筆者が修理を頼むかどうか迷ったのはなぜか。",
         "options": [
           "修理代と同じくらいの金額で、もっと便利な時計が買えるから",
-          "修理に一か月かかると、その間、時計がなくて困るから",
-          "店主に、修理してもあまり長くは動かないと言われたから",
-          "祖父の時計に、小さな傷がたくさんついていたから"
+          "修理に一か月もかかり、その間は時計が使えなくなってしまうから",
+          "店主に、修理してもあまり長くは動かないだろうと言われたから",
+          "祖父の時計には、小さな傷がいくつもついていて見栄えが悪いから"
         ],
         "answer": 0,
         "why": {
@@ -225,26 +225,26 @@
         "wrong": [
           null,
           {
-            "zh": "文中没有说这一个月没有表会不方便。",
-            "en": "Nothing says he'd be stuck without a watch for the month."
+            "zh": "文中提到需要一个月，但作者犹豫的理由是花同样的钱能买到更好的表。",
+            "en": "A month is mentioned, but he hesitated because the same money would buy a better watch."
           },
           {
-            "zh": "店主说的是「まだ何十年も動きます」，而且是修好之后说的。",
-            "en": "The owner said 「まだ何十年も動きます」 — and only after the repair."
+            "zh": "店主说的正相反：「まだ何十年も動きますよ」，而且是修好之后才说的。",
+            "en": "The owner says the opposite — 「まだ何十年も動きますよ」 — and only after the repair."
           },
           {
-            "zh": "划痕是作者决定修理的理由，不是犹豫的理由。",
-            "en": "The scratches are why he chose to repair it, not why he hesitated."
+            "zh": "划痕是作者舍不得放手的理由，不是犹豫的理由。",
+            "en": "The scratches are why he couldn't let it go, not why he hesitated."
           }
         ]
       },
       {
         "q": "筆者が最終的に修理を頼んだのはなぜか。",
         "options": [
-          "新しい時計を買うより、修理するほうが安かったから",
-          "店主に、これからも何十年も動くと言われたから",
-          "祖父が長年使ってきた跡が残る時計を、手放したくなかったから",
-          "自分の子どもにこの時計を渡すと、前から決めていたから"
+          "新しい時計を買うより、修理するほうが費用が安く済んだから",
+          "店主から、修理すればこれからも何十年も動くと聞いたから",
+          "祖父の使い込んだ跡が残る時計を、手放したくなかったから",
+          "前から、この時計をいつか自分の子どもに渡すと決めていたから"
         ],
         "answer": 2,
         "why": {
@@ -253,27 +253,27 @@
         },
         "wrong": [
           {
-            "zh": "费用是「新しい時計が一本買えるくらい」，修理并不便宜。",
-            "en": "The cost was 「新しい時計が一本買えるくらい」; repair wasn't cheaper."
+            "zh": "店主说费用「新しい時計が一本買えるくらい」，修理并不便宜。",
+            "en": "The repair costs 「新しい時計が一本買えるくらい」 — it isn't cheaper."
           },
           {
-            "zh": "店主这句话是一个月后取表时说的，在决定修理之后。",
-            "en": "The owner said that a month later, after he'd already decided."
+            "zh": "这句话是一个月后取表时听到的，是在决定修理之后。",
+            "en": "He heard that when collecting the watch a month later, after he had decided."
           },
           null,
           {
-            "zh": "想交给孩子是听了店主的话之后才产生的想法，不是之前就决定的。",
-            "en": "He thought of passing it on only after hearing the owner, not beforehand."
+            "zh": "想传给孩子是听了店主的话之后才产生的想法，不是「前から」决定的。",
+            "en": "Wanting to pass it on came after the owner's remark, not beforehand."
           }
         ]
       },
       {
         "q": "「その価値」とは何か。",
         "options": [
-          "新しい物を買うことで手に入る、より高い性能",
-          "修理しながら長く使い続けることで物に加わっていく、値段では測れない価値",
-          "壊れた物を安く直すことで得られる、お金の面での価値",
-          "古い時計が、店で高い値段で売れるという価値"
+          "新しい物に買い替えることで手に入る、より高い性能という価値",
+          "直しながら使い続けるうちに物に加わる、お金では測れない価値",
+          "壊れた物を安く直すことで得られる、お金を節約できるという価値",
+          "古い時計が持つ、骨董品として高い値段で取り引きされる価値"
         ],
         "answer": 1,
         "why": {
@@ -282,17 +282,17 @@
         },
         "wrong": [
           {
-            "zh": "性能是买新东西的好处，而「その価値」是「新しい物をいくら買っても手に入らない」。",
-            "en": "Performance is what new things offer, but 「その価値」 is 「新しい物をいくら買っても手に入らない」."
+            "zh": "作者承认买新的性能更好，但「その価値」是新东西「いくら買っても手に入らない」的。",
+            "en": "Performance comes with new things, but 「その価値」 is what new things can never give."
           },
           null,
           {
-            "zh": "这种价值「値段…では測れない」，不是金钱上的价值，而且修理并不便宜。",
-            "en": "This value is 「値段…では測れない」 — not about money, and the repair wasn't cheap anyway."
+            "zh": "修理费和买新表差不多，并不省钱；而且这种价值「値段…では測れない」。",
+            "en": "The repair wasn't cheap, and this value 「値段…では測れない」."
           },
           {
-            "zh": "文中没有提到卖表。",
-            "en": "Selling the watch is never mentioned."
+            "zh": "文中没有提到旧表能卖高价；这种价值恰恰不能用价格衡量。",
+            "en": "Nothing about resale value; this value is exactly what price can't measure."
           }
         ]
       }
@@ -311,10 +311,10 @@
       {
         "q": "筆者が以前、質問をしなかったのはなぜか。",
         "options": [
-          "講演や会議の内容が、ほとんど理解できなかったから",
-          "会議では、質問できる時間が最後にしかなかったから",
-          "質問は、名前を書いて紙で出すことになっていたから",
-          "基本的なことを聞いて、恥ずかしい思いをしたくなかったから"
+          "講演や会議の内容が、難しくてほとんど理解できなかったから",
+          "会議では、質問できる時間が最後の数分しかなかったから",
+          "ほかの人の質問を先に聞いてから、質問しようと思ったから",
+          "初歩的なことを尋ねて、恥ずかしい思いをしたくなかったから"
         ],
         "answer": 3,
         "why": {
@@ -323,16 +323,16 @@
         },
         "wrong": [
           {
-            "zh": "「内容がよく分からなかったわけではない」，明确否定了这一点。",
-            "en": "「内容がよく分からなかったわけではない」 rules this out."
+            "zh": "文中说「内容がよく分からなかったわけではない」。",
+            "en": "「内容がよく分からなかったわけではない」 — he did follow the content."
           },
           {
-            "zh": "问题只在会议最后被问到是事实，但文中没有把它当作不提问的理由。",
-            "en": "Questions are invited at the end, but the text never gives that as his reason."
+            "zh": "提问时间在最后只是场景描写，不是他不提问的原因。",
+            "en": "Questions coming at the end is just the setting, not his reason."
           },
           {
-            "zh": "不写名字、用纸提交是那次培训中讲师尝试的方法，不是平时的规定。",
-            "en": "Anonymous paper questions were the instructor's one-off method, not the usual rule."
+            "zh": "文中没有说他在等别人先问；他是怕「基本的なこと」被人笑。",
+            "en": "Nothing says he waited for others; he feared asking 「基本的なこと」."
           },
           null
         ]
@@ -410,10 +410,10 @@
       {
         "q": "「考えるのは早すぎる」とあるが、なぜか。",
         "options": [
-          "ニュースで紹介される数字は、間違っていることが多いから",
-          "平均は一部の金額の多い人に引き上げられ、多くの家庭の実際の姿を表していないことがあるから",
-          "貯蓄の額は、年によって大きく変わるから",
-          "平均より多く貯蓄している家庭が、全体の半分以上いるから"
+          "ニュースで発表される平均の数字は、計算を誤っていることが多いから",
+          "少数の大金持ちが平均を押し上げ、多くの家庭の実態とずれるから",
+          "平均の金額は調査の年によって変わり、すぐに古くなってしまうから",
+          "平均より多く貯蓄している家庭が、実際には半分以上いるから"
         ],
         "answer": 1,
         "why": {
@@ -422,17 +422,17 @@
         },
         "wrong": [
           {
-            "zh": "作者并没有说数字错了，而是说「数字を疑うことは、数字を否定することではない」。",
-            "en": "He never says the figure is wrong — 「数字を疑うことは、数字を否定することではない」."
+            "zh": "作者没有说数字算错了，问题在于平均值反映的是什么。",
+            "en": "The figure isn't miscalculated; the issue is what an average represents."
           },
           null,
           {
-            "zh": "文中没有谈到储蓄额每年的变化。",
-            "en": "Year-to-year changes in savings are never mentioned."
+            "zh": "文中没有谈到数字随调查年份变化。",
+            "en": "Nothing is said about the figure changing from year to year."
           },
           {
-            "zh": "文中说高于平均的家庭「三分の一程度にすぎない」，不是一半以上。",
-            "en": "The text says they are 「三分の一程度にすぎない」, not over half."
+            "zh": "相反，高于平均的家庭只有「全体の三分の一程度」。",
+            "en": "The opposite: only about a third — 「全体の三分の一程度」."
           }
         ]
       },
@@ -440,10 +440,10 @@
         "q": "筆者によると、「中央値」とはどのようなものか。",
         "difficulty": 2,
         "options": [
-          "全員の金額を足して、人数で割った値",
-          "一番多い人と一番少ない人の金額を足して、二で割った値",
-          "平均を半分にした値",
-          "データを小さい順に並べたとき、真ん中に来る値"
+          "全世帯の金額を合計し、世帯の数で割って出した値",
+          "最も多い金額と最も少ない金額の、ちょうど中間の値",
+          "平均から、ごく一部の大金持ちの分を除いて出した値",
+          "金額を低い順に並べて、ちょうど真ん中に来る値"
         ],
         "answer": 3,
         "why": {
@@ -452,16 +452,16 @@
         },
         "wrong": [
           {
-            "zh": "这是「平均」的定义，不是中位数。",
-            "en": "That is the definition of 「平均」 (the mean), not the median."
+            "zh": "这是「平均」的定义。",
+            "en": "That is how the average (「平均」) is defined."
           },
           {
-            "zh": "文中没有这样定义，中位数看的是排列后的位置，不是最大和最小值。",
-            "en": "The text defines it by position in the ordered list, not by the largest and smallest amounts."
+            "zh": "中位数是排好顺序后位于正中间的那一个，不是最大值和最小值的中间。",
+            "en": "The median is the middle item once sorted, not halfway between the highest and lowest amounts."
           },
           {
-            "zh": "文中只说中位数「平均の半分ほどになることも珍しくない」，这是举例的结果，不是定义。",
-            "en": "The text only says it is often 「平均の半分ほど」 — a typical result, not the definition."
+            "zh": "文中只说中位数常常只有平均的一半左右，没有说是去掉富人后算出来的。",
+            "en": "The text only says it is often about half the average; it isn't the average minus the rich."
           },
           null
         ]
@@ -469,10 +469,10 @@
       {
         "q": "筆者が最も言いたいことは何か。",
         "options": [
-          "数字を見るときは、それが実際に何を表しているのかを考えることが大切だ。",
-          "平均という数字は誤解を生むので、使わないほうがいい。",
-          "客観的な数字なので、ニュースの数字はそのまま信じてよい。",
-          "貯蓄が平均より少ない家庭は、もっと貯蓄を増やすべきだ。"
+          "数字を見たら、それが実際に何を表しているかを考えるべきだ。",
+          "平均は誤解を生みやすいので、ニュースでは中央値を示すべきだ。",
+          "数字は客観的に見えても、信用せずに疑い続けることが大切だ。",
+          "貯蓄が平均より少なくても、多くの家庭は同じなので心配ない。"
         ],
         "answer": 0,
         "why": {
@@ -482,16 +482,16 @@
         "wrong": [
           null,
           {
-            "zh": "「数字を疑うことは、数字を否定することではない」，作者没有说不要用平均数。",
-            "en": "「数字を疑うことは、数字を否定することではない」 — he doesn't say to stop using averages."
+            "zh": "作者举中位数是为了说明平均值不代表多数家庭，并没有主张改用中位数。",
+            "en": "The median illustrates the point; the writer doesn't demand it replace the average."
           },
           {
-            "zh": "作者指出我们「そのまま信じてしまいがちだ」是问题，相反。",
-            "en": "He names 「そのまま信じてしまいがちだ」 as the problem — the reverse."
+            "zh": "作者说「数字を疑うことは、数字を否定することではない」，怀疑是为了正确理解，不是一直不信。",
+            "en": "「数字を疑うことは、数字を否定することではない」 — doubt is for understanding, not lasting distrust."
           },
           {
-            "zh": "文中没有劝人增加储蓄，谈的是怎样看待这个数字。",
-            "en": "The text never advises saving more; it is about how to read the figure."
+            "zh": "这只是从例子能推出的一点，不是作者最想说的；作者谈的是怎样看数字。",
+            "en": "That follows from the example but isn't the main point, which is how to read numbers."
           }
         ]
       }

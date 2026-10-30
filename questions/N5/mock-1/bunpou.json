@@ -42,43 +42,43 @@
   },
   {
     "id": "n5-m1-102",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
-      "lesson16#1",
-      "lesson02#5"
+      "lesson16#1"
     ],
     "difficulty": 2,
-    "stem": "A「日曜日は どこかへ 行きましたか。」\nB「いいえ、どこ（　） 行きませんでした。うちで ねて いました。」",
+    "stem": "A「きのうの よる、だれか 来ましたか。」\nB「いいえ、だれ（　） 来ませんでした。ひとりで 本を 読んで いました。」",
     "options": [
-      "へも",
-      "へか",
-      "へは",
-      "へでも"
+      "も",
+      "に",
+      "でも",
+      "が"
     ],
     "answer": 0,
-    "full": "A「日曜日は どこかへ 行きましたか。」 B「いいえ、どこへも 行きませんでした。うちで ねて いました。」",
-    "kj": "A「日曜日はどこかへ行きましたか。」\nB「いいえ、どこへも行きませんでした。うちで寝ていました。」",
+    "full": "A「きのうの よる、だれか 来ましたか。」 B「いいえ、だれも 来ませんでした。ひとりで 本を 読んで いました。」",
+    "kj": "A「昨日の夜、だれか来ましたか。」\nB「いいえ、だれも来ませんでした。一人で本を読んでいました。」",
     "tr": {
-      "zh": "A：星期天去哪儿了吗？ B：没有，哪儿也没去。在家睡觉了。",
-      "en": "A: Did you go anywhere on Sunday? B: No, I didn't go anywhere. I was sleeping at home."
+      "zh": "A：昨天晚上有谁来过吗？ B：没有，谁也没来。我一个人在看书。",
+      "en": "A: Did anyone come over last night? B: No, nobody came. I was reading a book by myself."
     },
     "why": {
-      "zh": "B 说「いいえ」，后面是否定「行きませんでした」：疑问词＋（助词）＋「も」＋否定 = 全否定，“哪儿也没去”。",
-      "en": "B says 「いいえ」 and the verb is negative: question word + (particle) + 「も」 + negative is a total negation, \"didn't go anywhere\"."
+      "zh": "B 说「いいえ」，动词是否定「来ませんでした」，后面又说一个人在家：疑问词「だれ」＋「も」＋否定 = “谁也没……”。",
+      "en": "B says 「いいえ」, the verb is negative and B was alone: question word 「だれ」 ＋ 「も」 ＋ negative means \"nobody\"."
     },
     "wrong": [
       null,
       {
-        "zh": "「どこかへ」是“去了某个地方”，用于肯定或提问，不能和全否定的回答搭配。",
-        "en": "「どこかへ」 means \"somewhere\" — used in questions and positive sentences, not in this flat denial."
+        "zh": "「だれに 来ませんでした」不成立：来的人是主语，不用「に」标。",
+        "en": "「だれに 来ませんでした」 isn't Japanese: the person who comes is the subject, not marked with 「に」."
       },
       {
-        "zh": "「どこへは」不是日语的说法，疑问词后面不接「は」。",
-        "en": "「どこへは」 isn't Japanese; a question word doesn't take 「は」."
+        "zh": "「だれでも」是“谁都（可以）”，和后面的否定「来ませんでした」矛盾。",
+        "en": "「だれでも」 means \"anyone at all\" — it contradicts the negative 「来ませんでした」."
       },
       {
-        "zh": "「どこへでも」是“哪儿都（去）”，和后面的否定矛盾。",
-        "en": "「どこへでも」 means \"anywhere at all (I'd go)\" — it contradicts the negative verb."
+        "zh": "「だれが」是在问“谁”，句末要用「か」提问；B 是在回答，不是提问。",
+        "en": "「だれが」 asks \"who\" and needs 「か」 at the end; B is answering, not asking."
       }
     ]
   },
@@ -125,42 +125,43 @@
   },
   {
     "id": "n5-m1-104",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson08#3"
     ],
     "difficulty": 1,
-    "stem": "A「夏と 冬と、どちらが 好きですか。」\nB「わたしは 冬より 夏（　） 好きです。海で およげますから。」",
+    "stem": "A「コーヒーと こうちゃと、（　）が いいですか。」\nB「こうちゃを おねがいします。」",
     "options": [
-      "の ほうが",
-      "ほど",
-      "より",
-      "も"
+      "どちら",
+      "どれ",
+      "だれ",
+      "どこ"
     ],
     "answer": 0,
-    "full": "A「夏と 冬と、どちらが 好きですか。」 B「わたしは 冬より 夏の ほうが 好きです。海で およげますから。」",
-    "kj": "A「夏と冬と、どちらが好きですか。」\nB「私は冬より夏のほうが好きです。海で泳げますから。」",
+    "full": "A「コーヒーと こうちゃと、どちらが いいですか。」 B「こうちゃを おねがいします。」",
+    "kj": "A「コーヒーと紅茶と、どちらがいいですか。」\nB「紅茶をお願いします。」",
     "tr": {
-      "zh": "A：夏天和冬天，你喜欢哪个？ B：比起冬天，我更喜欢夏天。因为可以在海里游泳。",
-      "en": "A: Which do you like better, summer or winter? B: I like summer better than winter, because you can swim in the sea."
+      "zh": "A：咖啡和红茶，你要哪个？ B：请给我红茶。",
+      "en": "A: Coffee or tea — which would you like? B: Tea, please."
     },
     "why": {
-      "zh": "回答「どちらが〜ですか」用「Aより Bの ほうが〜」，「の ほうが」标出被选中的那一个。",
-      "en": "The answer to 「どちらが〜ですか」 is 「Aより Bの ほうが〜」; 「の ほうが」 marks the one chosen."
+      "zh": "在两样东西里选一样，问“哪一个”用「どちら」：「AとBと、どちらが〜ですか」。",
+      "en": "Choosing between two things, \"which\" is 「どちら」: 「AとBと、どちらが〜ですか」."
     },
     "wrong": [
       null,
       {
-        "zh": "「ほど」要和否定搭配（「〜ほど 好きではない」），这里是肯定句。",
-        "en": "「ほど」 needs a negative (「〜ほど 好きではない」); this sentence is positive."
+        "zh": "「どれ」用于三个以上的东西里选，这里只有咖啡和红茶两样。",
+        "en": "「どれ」 is for choosing among three or more; here there are only two."
       },
       {
-        "zh": "前面已经有「冬より」，再接「より」句子不成立。",
-        "en": "「冬より」 is already there; a second 「より」 makes no sentence."
+        "zh": "「だれ」问的是人，咖啡和红茶不是人。",
+        "en": "「だれ」 asks about a person; coffee and tea aren't people."
       },
       {
-        "zh": "「夏も 好きです」是“夏天也喜欢”，没有回答“更喜欢哪个”，也和「冬より」接不上。",
-        "en": "「夏も」 (I like summer too) doesn't say which is preferred and doesn't fit 「冬より」."
+        "zh": "「どこ」问的是地点，这里是在两种饮料里选。",
+        "en": "「どこ」 asks about a place; this is a choice between two drinks."
       }
     ]
   },
@@ -213,42 +214,43 @@
   },
   {
     "id": "n5-m1-106",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson16#4"
     ],
     "difficulty": 1,
-    "stem": "兄は いつも 歌を（　） おふろに 入ります。",
+    "stem": "兄は いつも 歌を（　） おふろに 入ります。だから おふろから 大きな 声が 聞こえます。",
     "options": [
       "歌いながら",
-      "歌うながら",
-      "歌ってながら",
-      "歌ったながら"
+      "歌ってから",
+      "歌う まえに",
+      "歌ったり"
     ],
     "answer": 0,
-    "full": "兄は いつも 歌を 歌いながら おふろに 入ります。",
-    "kj": "兄はいつも歌を歌いながらお風呂に入ります。",
+    "full": "兄は いつも 歌を 歌いながら おふろに 入ります。だから おふろから 大きな 声が 聞こえます。",
+    "kj": "兄はいつも歌を歌いながらお風呂に入ります。だからお風呂から大きな声が聞こえます。",
     "tr": {
-      "zh": "哥哥总是一边唱歌一边泡澡。",
-      "en": "My older brother always sings while he takes a bath."
+      "zh": "哥哥总是一边唱歌一边泡澡，所以浴室里会传出很大的声音。",
+      "en": "My older brother always sings while he takes a bath, so you can hear a loud voice from the bathroom."
     },
     "why": {
-      "zh": "“一边……一边……”用「ながら」，前面接动词ます形去掉「ます」：歌います → 歌いながら。",
-      "en": "\"While doing\" is 「ながら」, attached to the ます-stem: 歌います → 歌いながら."
+      "zh": "从浴室里传出声音，说明是在洗澡的同时唱歌：“一边……一边……”用「ます形词干＋ながら」，歌います → 歌いながら。",
+      "en": "A voice comes from the bathroom, so he sings during the bath: \"while\" is ます-stem ＋ 「ながら」, 歌います → 歌いながら."
     },
     "wrong": [
       null,
       {
-        "zh": "「ながら」不接辞书形，「歌うながら」不成立。",
-        "en": "「ながら」 doesn't follow the dictionary form; 「歌うながら」 is wrong."
+        "zh": "「歌ってから」是“唱完歌以后再洗澡”，那浴室里就不会传出歌声。",
+        "en": "「歌ってから」 (after singing) — then no voice would come from the bath."
       },
       {
-        "zh": "「ながら」不接て形，「歌ってながら」不成立。",
-        "en": "「ながら」 doesn't follow the て-form; 「歌ってながら」 is wrong."
+        "zh": "「歌う まえに」是“唱歌之前洗澡”，那浴室里也不会传出歌声。",
+        "en": "「歌う まえに」 (before singing) — then no voice would come from the bath either."
       },
       {
-        "zh": "「ながら」不接た形，「歌ったながら」不成立。",
-        "en": "「ながら」 doesn't follow the た-form; 「歌ったながら」 is wrong."
+        "zh": "「〜たり」要以「する」结尾（〜たり する），后面不能直接接「おふろに 入ります」。",
+        "en": "「〜たり」 needs 「する」 to close it; it can't run straight into 「おふろに 入ります」."
       }
     ]
   },
@@ -310,7 +312,7 @@
     "options": [
       "ほしいです",
       "したいです",
-      "ありたいです",
+      "あります",
       "ほしがります"
     ],
     "okj": [
@@ -337,8 +339,8 @@
         "en": "「したいです」 asks what B wants to do, but B names a thing."
       },
       {
-        "zh": "「ありたいです」不是日语的说法。",
-        "en": "「ありたいです」 isn't Japanese."
+        "zh": "「何が ありますか」是问“有什么”，B 回答的是想要什么，对不上。",
+        "en": "「何が ありますか」 asks what there is; B answers what he wants."
       },
       {
         "zh": "「ほしがります」用于第三人称（“他想要”），而且要用「を」，不能当面问对方。",
@@ -348,43 +350,43 @@
   },
   {
     "id": "n5-m1-109",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
-      "lesson06#3",
-      "lesson06#2"
+      "lesson05#2"
     ],
-    "difficulty": 2,
-    "stem": "A「あした、おべんとうを 持って 来なければ なりませんか。」\nB「いいえ、持って 来（　）。昼ごはんは 学校で 出ます。でも、持って 来たい 人は 持って 来ても いいですよ。」",
+    "difficulty": 1,
+    "stem": "この 本は としょかんの 本です。本に 字を（　）。",
     "options": [
-      "なくても いいです",
-      "ては いけません",
-      "なければ なりません",
-      "ないで ください"
+      "書かないで ください",
+      "書いて ください",
+      "書いても いいです",
+      "書きましょう"
     ],
     "answer": 0,
-    "full": "A「あした、おべんとうを 持って 来なければ なりませんか。」 B「いいえ、持って 来なくても いいです。昼ごはんは 学校で 出ます。でも、持って 来たい 人は 持って 来ても いいですよ。」",
-    "kj": "A「明日、お弁当を持って来なければなりませんか。」\nB「いいえ、持って来なくてもいいです。昼ご飯は学校で出ます。でも、持って来たい人は持って来てもいいですよ。」",
+    "full": "この 本は としょかんの 本です。本に 字を 書かないで ください。",
+    "kj": "この本は図書館の本です。本に字を書かないでください。",
     "tr": {
-      "zh": "A：明天必须带便当来吗？ B：不，不带也可以。午饭学校会提供。不过想带的人也可以带来哦。",
-      "en": "A: Do we have to bring a packed lunch tomorrow? B: No, you don't have to. The school provides lunch. But anyone who wants to bring one may."
+      "zh": "这本书是图书馆的书。请不要在书上写字。",
+      "en": "This book belongs to the library. Please don't write in it."
     },
     "why": {
-      "zh": "回答“必须……吗”的否定是“不……也可以”：「〜なくても いいです」；后面又说想带的人也可以带，正好对上。",
-      "en": "\"No\" to \"must we…?\" is \"you don't have to\": 「〜なくても いいです」 — and B then says those who want to may still bring one."
+      "zh": "图书馆的书是大家用的，不能往上写字：请对方不要做某事用「〜ないで ください」。",
+      "en": "A library book is shared, so you mustn't write in it: asking someone not to do something is 「〜ないで ください」."
     },
     "wrong": [
       null,
       {
-        "zh": "「持って 来ては いけません」是禁止带，和后面「持って 来ても いいですよ」矛盾。",
-        "en": "「持って 来ては いけません」 forbids bringing one, contradicting 「持って 来ても いいですよ」."
+        "zh": "「書いて ください」是请对方写，图书馆的书不能写字。",
+        "en": "「書いて ください」 asks them to write — not in a library book."
       },
       {
-        "zh": "B 先说了「いいえ」，再说“必须带”前后矛盾。",
-        "en": "B has just said 「いいえ」; \"you must bring one\" contradicts it."
+        "zh": "「書いても いいです」是允许写，和“这是图书馆的书”矛盾。",
+        "en": "「書いても いいです」 allows writing, which a library book doesn't."
       },
       {
-        "zh": "「持って 来ないで ください」是请对方别带，和后面允许带的话矛盾。",
-        "en": "「持って 来ないで ください」 asks people not to bring one, contradicting the permission that follows."
+        "zh": "「書きましょう」是“一起写吧”，图书馆的书不能写字。",
+        "en": "「書きましょう」 is \"let's write\" — not in a library book."
       }
     ]
   },
@@ -501,39 +503,40 @@
   },
   {
     "id": "n5-m1-113",
+    "rev": 2,
     "type": "narabe",
     "refs": [
       "lesson15#1"
     ],
-    "difficulty": 3,
-    "stem": "この 図書館では 本を [_] [_] [★] [_] が できます。",
+    "difficulty": 2,
+    "stem": "この こうえんでは [_] [_] [★] [_] が できます。",
     "options": [
-      "かりる",
+      "のる",
+      "いけの",
       "こと",
-      "五さつ",
-      "まで"
+      "ボートに"
     ],
     "okj": [
-      "借りる",
+      "乗る",
+      "池の",
       null,
-      "五冊",
       null
     ],
     "order": [
-      2,
+      1,
       3,
       0,
-      1
+      2
     ],
-    "full": "この 図書館では 本を 五さつ まで かりる ことが できます。",
-    "kj": "この図書館では本を五冊まで借りることができます。",
+    "full": "この こうえんでは いけの ボートに のる ことが できます。",
+    "kj": "この公園では池のボートに乗ることができます。",
     "tr": {
-      "zh": "这个图书馆最多可以借五本书。",
-      "en": "At this library you can borrow up to five books."
+      "zh": "在这个公园里可以在池塘上划船。",
+      "en": "In this park you can go out on the pond in a boat."
     },
     "why": {
-      "zh": "「五さつ まで」（最多五本）修饰动作「かりる」，「辞书形＋こと が できます」表示可以：五さつ ＋ まで ＋ かりる ＋ こと。★ 在第三格，是「かりる」。",
-      "en": "「五さつ まで」 (up to five) goes with 「かりる」, and dictionary form + 「こと が できます」 means \"can\": 五さつ ＋ まで ＋ かりる ＋ こと. The ★ is the third slot: 「かりる」."
+      "zh": "「いけの」修饰「ボート」，「ボートに のる」，再接「辞书形＋こと が できます」表示可以：いけの ＋ ボートに ＋ のる ＋ こと。★ 在第三格，是「のる」。",
+      "en": "「いけの」 describes 「ボート」, 「ボートに のる」 is the action, and dictionary form ＋ 「こと が できます」 means \"can\": いけの ＋ ボートに ＋ のる ＋ こと. The ★ is the third slot: 「のる」."
     },
     "wrong": [
       null,

@@ -9,7 +9,7 @@
     "stem": "ゆうべ お酒を（　）、今朝は 頭が 痛いです。",
     "options": [
       "飲みすぎて",
-      "飲むすぎて",
+      "飲みすぎないで",
       "飲みやすくて",
       "飲みにくくて"
     ],
@@ -27,8 +27,8 @@
     "wrong": [
       null,
       {
-        "zh": "「すぎる」接在ます形词干后面，不接辞书形（×飲むすぎる）。",
-        "en": "「すぎる」 attaches to the ます-stem, not the dictionary form (×飲むすぎる)."
+        "zh": "「飲みすぎないで」是“没喝太多”，那就不会头疼，因果说不通。",
+        "en": "「飲みすぎないで」 (without drinking too much) wouldn't explain the headache."
       },
       {
         "zh": "「飲みやすい」是“容易喝”，前面要用「が」，而且“容易喝”不能说明头疼的原因。",
@@ -47,19 +47,19 @@
       "lesson31#1"
     ],
     "difficulty": 2,
-    "stem": "この スープは 味が（　）。塩を 少し 入れましょう。",
+    "stem": "この スープ、飲んで みたら 味が（　）。塩を 少し 入れましょう。",
     "options": [
-      "なすぎます",
-      "なくすぎます",
-      "ないすぎます",
+      "なさそうです",
+      "ないそうです",
+      "なくても いいです",
       "なさすぎます"
     ],
     "answer": 3,
-    "full": "この スープは 味が なさすぎます。塩を 少し 入れましょう。",
-    "kj": "このスープは味がなさすぎます。塩を少し入れましょう。",
+    "full": "この スープ、飲んで みたら 味が なさすぎます。塩を 少し 入れましょう。",
+    "kj": "このスープ、飲んでみたら味がなさすぎます。塩を少し入れましょう。",
     "tr": {
-      "zh": "这汤味道太淡了。加一点盐吧。",
-      "en": "This soup has far too little flavour. Let's add some salt."
+      "zh": "这汤尝了一下，味道太淡了。加一点盐吧。",
+      "en": "I tasted this soup and it has far too little flavour. Let's add some salt."
     },
     "why": {
       "zh": "“味道太淡（太没有味道）”是「ない＋すぎる」，要插入「さ」：なさすぎる。",
@@ -67,16 +67,16 @@
     },
     "wrong": [
       {
-        "zh": "「ない」接「すぎる」时要加「さ」，「なすぎる」是错误形式。",
-        "en": "「ない」 needs 「さ」 before 「すぎる」; 「なすぎる」 is wrong."
+        "zh": "「なさそうです」是看起来像没味道的推测，可说话人已经「飲んで みた」尝过了。",
+        "en": "「なさそうです」 is a guess from appearance, but the speaker has already tasted it (「飲んで みたら」)."
       },
       {
-        "zh": "没有「なくすぎる」这种形式，要说「なさすぎる」。",
-        "en": "「なくすぎる」 isn't a form; it's 「なさすぎる」."
+        "zh": "「ないそうです」是传闻“听说没味道”，自己尝过就不用传闻。",
+        "en": "「ないそうです」 is hearsay (\"I hear it has none\"), but the speaker tasted it."
       },
       {
-        "zh": "「すぎる」不接い形容词的原形，「ないすぎる」不成立。",
-        "en": "「すぎる」 doesn't attach to the full adjective; 「ないすぎる」 is wrong."
+        "zh": "「なくても いいです」是“没有也行”，和后面“加点盐吧”矛盾。",
+        "en": "「なくても いいです」 (it's fine without) contradicts \"let's add salt\"."
       },
       null
     ]
@@ -88,7 +88,7 @@
       "lesson31#1"
     ],
     "difficulty": 2,
-    "stem": "この かばんは [_] [_] [★] [_]、買えませんでした。",
+    "stem": "この かばんは [★] [_] [_] [_]、買えませんでした。",
     "options": [
       "が",
       "すてき",
@@ -114,15 +114,16 @@
       "en": "This bag is lovely, but it was too expensive, so I couldn't buy it."
     },
     "why": {
-      "zh": "すてき ＋ です ＋ が（但是）＋ 高すぎて（太贵，所以）：“漂亮但太贵，买不起”。★ 在第三格，是「が」。",
-      "en": "すてき ＋ です ＋ が (but) ＋ 高すぎて (too expensive, so): lovely but too pricey to buy. The ★ is the third slot: 「が」."
+      "zh": "すてき ＋ です ＋ が（但是）＋ 高すぎて（太贵，所以）：“漂亮但太贵，买不起”。★ 在第一格，是「すてき」。",
+      "en": "すてき ＋ です ＋ が (but) ＋ 高すぎて (too expensive, so): lovely but too pricey to buy. The ★ is the first slot: 「すてき」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l31-004",
@@ -213,7 +214,7 @@
       "lesson31#2"
     ],
     "difficulty": 1,
-    "stem": "田中先生の 説明は [_] [_] [★] [_] です。",
+    "stem": "田中先生の 説明は [_] [_] [_] [★] です。",
     "options": [
       "やすい",
       "人気",
@@ -233,15 +234,16 @@
       "en": "Mr Tanaka's explanations are easy to follow, so they're popular."
     },
     "why": {
-      "zh": "分かり ＋ やすい（容易懂）＋ ので（因为）＋ 人気です。★ 在第三格，是「ので」。",
-      "en": "分かり ＋ やすい (easy to understand) ＋ ので (so) ＋ 人気です. The ★ is the third slot: 「ので」."
+      "zh": "分かり ＋ やすい（容易懂）＋ ので（因为）＋ 人気です。★ 在第四格，是「人気」。",
+      "en": "分かり ＋ やすい (easy to understand) ＋ ので (so) ＋ 人気です. The ★ is the fourth slot: 「人気」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l31-007",
@@ -373,8 +375,8 @@
     "options": [
       "使う方",
       "使い方",
-      "使って方",
-      "使いやすい"
+      "使いやすさ",
+      "使う ところ"
     ],
     "answer": 1,
     "full": "すみません、この コピー機の 使い方を 教えて ください。",
@@ -394,12 +396,12 @@
       },
       null,
       {
-        "zh": "「方」不接て形。",
-        "en": "「方」 doesn't attach to the て-form."
+        "zh": "「使いやすさ」是“好用的程度”，问复印机怎么用，不能说“请告诉我好用程度”。",
+        "en": "「使いやすさ」 is \"ease of use\" — not what you ask for when you want to know how to use the copier."
       },
       {
-        "zh": "「使いやすい」是形容词，不能直接接「を」，也不是“用法”。",
-        "en": "「使いやすい」 is an adjective; it can't take 「を」 and doesn't mean \"how to use\"."
+        "zh": "「使う ところ」是“正要用／用的地方”，前面的「の」也接不上。",
+        "en": "「使う ところ」 means \"about to use / place for using\", and it doesn't follow 「の」."
       }
     ]
   },
@@ -446,33 +448,34 @@
   },
   {
     "id": "n4-l31-012",
+    "rev": 3,
     "type": "narabe",
     "refs": [
       "lesson31#4"
     ],
     "difficulty": 1,
-    "stem": "マリアさんは お箸の [_] [_] [★] [_] ね。",
+    "stem": "わたしは 友だちに [_] [★] [_] [_]。",
     "options": [
-      "持ち",
-      "上手です",
-      "方",
-      "が"
+      "作り方を",
+      "もらいました",
+      "ケーキの",
+      "教えて"
     ],
     "order": [
-      0,
       2,
+      0,
       3,
       1
     ],
-    "full": "マリアさんは お箸の 持ち方が 上手ですね。",
-    "kj": "マリアさんはお箸の持ち方が上手ですね。",
+    "full": "わたしは 友だちに ケーキの 作り方を 教えて もらいました。",
+    "kj": "私は友達にケーキの作り方を教えてもらいました。",
     "tr": {
-      "zh": "玛丽亚拿筷子的方法很好呢。",
-      "en": "Maria holds her chopsticks really well."
+      "zh": "我请朋友教了我做蛋糕的方法。",
+      "en": "A friend taught me how to make a cake."
     },
     "why": {
-      "zh": "持ち（ます形词干）＋ 方 ＋ が ＋ 上手です：「持ち方」是名词，可以接「が」。★ 在第三格，是「が」。",
-      "en": "持ち (stem) ＋ 方 ＋ が ＋ 上手です: 「持ち方」 is a noun, so it takes 「が」. The ★ is the third slot: 「が」."
+      "zh": "「作り方」（ます形词干＋方）是名词，前面接「ケーキの」，后面接「を」：ケーキの 作り方を 教えて もらいました。★ 在第二格，是「作り方を」。",
+      "en": "「作り方」 (stem ＋ 方) is a noun, so 「ケーキの」 comes before it and 「を」 after: ケーキの 作り方を 教えて もらいました. The ★ is the second slot: 「作り方を」."
     },
     "wrong": [
       null,
@@ -570,7 +573,7 @@
       "lesson31#5"
     ],
     "difficulty": 1,
-    "stem": "先月から [_] [_] [★] [_]。",
+    "stem": "先月から [_] [_] [_] [★]。",
     "options": [
       "始め",
       "ました",
@@ -590,15 +593,16 @@
       "en": "I started taking piano lessons last month."
     },
     "why": {
-      "zh": "ピアノを ＋ 習い（ます形词干）＋ 始め ＋ ました：有意识地开始做用「〜始める」。★ 在第三格，是「始め」。",
-      "en": "ピアノを ＋ 習い (stem) ＋ 始め ＋ ました: a deliberate start is 「〜始める」. The ★ is the third slot: 「始め」."
+      "zh": "ピアノを ＋ 習い（ます形词干）＋ 始め ＋ ました：有意识地开始做用「〜始める」。★ 在第四格，是「ました」。",
+      "en": "ピアノを ＋ 習い (stem) ＋ 始め ＋ ました: a deliberate start is 「〜始める」. The ★ is the fourth slot: 「ました」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l31-016",
@@ -689,7 +693,7 @@
       "lesson31#6"
     ],
     "difficulty": 1,
-    "stem": "すみません、この 川の [_] [_] [★] [_] か。",
+    "stem": "すみません、この 川の [★] [_] [_] [_] か。",
     "options": [
       "は",
       "深さ",
@@ -709,14 +713,15 @@
       "en": "Excuse me, how deep is this river?"
     },
     "why": {
-      "zh": "深さ（深度，名词）＋ は ＋ どの くらいです ＋ か：问程度。★ 在第三格，是「どの」。",
-      "en": "深さ (depth, a noun) ＋ は ＋ どの くらいです ＋ か: asking how much. The ★ is the third slot: 「どの」."
+      "zh": "深さ（深度，名词）＋ は ＋ どの くらいです ＋ か：问程度。★ 在第一格，是「深さ」。",
+      "en": "深さ (depth, a noun) ＋ は ＋ どの くらいです ＋ か: asking how much. The ★ is the first slot: 「深さ」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   }
 ]

@@ -49,9 +49,9 @@
     "stem": "彼女は 仕事が 丁寧（　）、スピードも 速い。",
     "options": [
       "な上に",
-      "の上に",
-      "だ上に",
-      "上に"
+      "なのに",
+      "なわりに",
+      "なくせに"
     ],
     "answer": 0,
     "full": "彼女は 仕事が 丁寧な上に、スピードも 速い。",
@@ -60,22 +60,22 @@
       "en": "Her work is careful, and on top of that she's fast."
     },
     "why": {
-      "zh": "な形容词接「上に」时要加「な」：丁寧な上に。",
-      "en": "A na-adjective takes 「な」 before 「上に」: 丁寧な上に."
+      "zh": "“工作仔细”和“速度快”都是优点，追加同方向的内容用「上に」（而且）。な形容词接「な」：丁寧な上に。",
+      "en": "Careful work and speed are both good points; adding more of the same is 「上に」, with 「な」 after a na-adjective: 丁寧な上に."
     },
     "wrong": [
       null,
       {
-        "zh": "「の上に」是名词的接法（而且名词一般要用「である上に」），「丁寧」是な形容词。",
-        "en": "「の上に」 is for nouns (and nouns usually take 「である上に」); 「丁寧」 is a na-adjective."
+        "zh": "「のに」是逆接，两个优点之间没有转折，后面的「も」也说明是追加。",
+        "en": "「のに」 is \"even though\"; two good points don't contrast, and 「も」 shows something is being added."
       },
       {
-        "zh": "「上に」前面不能用「だ」，要用「な」或「である」。",
-        "en": "「だ」 can't come before 「上に」; use 「な」 or 「である」."
+        "zh": "「わりに」表示和预想不符，“仔细”和“快”是并列的优点，不是意外。",
+        "en": "「わりに」 marks a surprise; careful and fast are simply two good points."
       },
       {
-        "zh": "な形容词词干不能直接接「上に」，中间要加「な」。",
-        "en": "A na-adjective stem can't attach to 「上に」 directly; it needs 「な」."
+        "zh": "「くせに」用于责备，后面“速度也快”是表扬。",
+        "en": "「くせに」 criticises, but \"fast too\" is praise."
       }
     ]
   },
@@ -86,7 +86,7 @@
       "lesson46#1"
     ],
     "difficulty": 1,
-    "stem": "今日は 道に [_] [_] [★] [_] 降って きて、さんざんだった。",
+    "stem": "今日は 道に [_] [★] [_] [_] 降って きて、さんざんだった。",
     "options": [
       "雨",
       "迷った",
@@ -105,15 +105,16 @@
       "en": "Today I got lost, and then it even started raining — a terrible day."
     },
     "why": {
-      "zh": "迷った ＋ 上に ＋ 雨 ＋ まで：坏事叠加坏事。★ 在第三格，是「雨」。",
-      "en": "迷った ＋ 上に ＋ 雨 ＋ まで: one bad thing on top of another. The ★ is the third slot: 「雨」."
+      "zh": "迷った ＋ 上に ＋ 雨 ＋ まで：坏事叠加坏事。★ 在第二格，是「上に」。",
+      "en": "迷った ＋ 上に ＋ 雨 ＋ まで: one bad thing on top of another. The ★ is the second slot: 「上に」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l46-004",
@@ -165,9 +166,9 @@
     "stem": "この 図書館は（　）、本の 種類も 多い。",
     "options": [
       "静かなだけでなく",
-      "静かだけでなく",
-      "静かのだけでなく",
-      "静かでだけでなく"
+      "静かなのに",
+      "静かな代わりに",
+      "静かなせいか"
     ],
     "answer": 0,
     "full": "この 図書館は 静かなだけでなく、本の 種類も 多い。",
@@ -182,16 +183,16 @@
     "wrong": [
       null,
       {
-        "zh": "な形容词词干不能直接接「だけでなく」，要加「な」。",
-        "en": "A na-adjective stem can't attach to 「だけでなく」 directly; it needs 「な」."
+        "zh": "「のに」是逆接，“安静”和“书多”都是优点，没有转折，后面的「も」表示追加。",
+        "en": "「のに」 is \"even though\"; quiet and many books are both good points, and 「も」 shows an addition."
       },
       {
-        "zh": "「の」是名词修饰名词用的，な形容词要用「な」。",
-        "en": "「の」 links nouns; a na-adjective needs 「な」."
+        "zh": "「代わりに」是“作为交换／相反地”，后面要接缺点或代价，“书的种类多”不是。",
+        "en": "「代わりに」 trades one thing for another, so a downside should follow; \"many books\" isn't one."
       },
       {
-        "zh": "「で」是な形容词的て形，后面不接「だけでなく」。",
-        "en": "「で」 is the na-adjective's て-form; it doesn't go before 「だけでなく」."
+        "zh": "「せいか」是“也许是因为……（坏结果）”，“安静”不是书多的原因。",
+        "en": "「せいか」 is \"maybe because of (something bad)\"; being quiet doesn't explain having many books."
       }
     ]
   },
@@ -397,9 +398,9 @@
     "stem": "この 大学には、中国（　）、アジアの 国々から 多くの 留学生が 来て いる。",
     "options": [
       "をはじめ",
-      "をはじめて",
-      "からはじめ",
-      "ではじめ"
+      "について",
+      "に代わって",
+      "に限って"
     ],
     "answer": 0,
     "full": "この 大学には、中国をはじめ、アジアの 国々から 多くの 留学生が 来て いる。",
@@ -414,16 +415,16 @@
     "wrong": [
       null,
       {
-        "zh": "「をはじめて」是动词「始める」的て形（开始……），或是“第一次”，不是“以……为首”。",
-        "en": "「をはじめて」 is the て-form of 始める (start) — not the set phrase \"led by.\""
+        "zh": "「について」是“关于”，表示话题，“关于中国，留学生从亚洲各国来”说不通。",
+        "en": "「について」 is \"about\", a topic; \"about China, students come from Asian countries\" makes no sense."
       },
       {
-        "zh": "「からはじめ」是“从……开始做”，和“留学生来自”接不上。",
-        "en": "「からはじめ」 means \"begin with (doing),\" which doesn't fit students coming from places."
+        "zh": "「に代わって」是“代替……”，中国并没有被别的国家代替。",
+        "en": "「に代わって」 is \"in place of\"; China isn't being replaced by anything."
       },
       {
-        "zh": "「をはじめ」的助词是「を」，「ではじめ」不成立。",
-        "en": "The particle in this phrase is 「を」; 「ではじめ」 is wrong."
+        "zh": "「に限って」是“偏偏……／只有……”，后面“亚洲各国”包括很多国家，接不上。",
+        "en": "「に限って」 is \"of all…, just\"; it doesn't lead into \"Asian countries\" in general."
       }
     ]
   },
@@ -434,7 +435,7 @@
       "lesson46#4"
     ],
     "difficulty": 2,
-    "stem": "会議には [_] [_] [★] [_]、多くの 関係者が 出席した。",
+    "stem": "会議には [_] [_] [_] [★]、多くの 関係者が 出席した。",
     "options": [
       "として",
       "を",
@@ -453,15 +454,16 @@
       "en": "Many people involved, including the minister, attended the meeting."
     },
     "why": {
-      "zh": "大臣 ＋ を ＋ はじめ ＋ として：「をはじめとして」是「をはじめ」的完整形。★ 在第三格，是「はじめ」。",
-      "en": "大臣 ＋ を ＋ はじめ ＋ として: 「をはじめとして」 is the full form of 「をはじめ」. The ★ is the third slot: 「はじめ」."
+      "zh": "大臣 ＋ を ＋ はじめ ＋ として：「をはじめとして」是「をはじめ」的完整形。★ 在第四格，是「として」。",
+      "en": "大臣 ＋ を ＋ はじめ ＋ として: 「をはじめとして」 is the full form of 「をはじめ」. The ★ is the fourth slot: 「として」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l46-013",
@@ -550,7 +552,7 @@
       "lesson46#5"
     ],
     "difficulty": 1,
-    "stem": "年を [_] [_] [★] [_] 落ちて きた。",
+    "stem": "年を [_] [_] [_] [★] 落ちて きた。",
     "options": [
       "体力が",
       "と",
@@ -569,15 +571,16 @@
       "en": "As I've gotten older, my stamina has declined."
     },
     "why": {
-      "zh": "取る（辞书形）＋ と ＋ ともに ＋ 体力が。★ 在第三格，是「ともに」。",
-      "en": "取る (dictionary form) ＋ と ＋ ともに ＋ 体力が. The ★ is the third slot: 「ともに」."
+      "zh": "取る（辞书形）＋ と ＋ ともに ＋ 体力が。★ 在第四格，是「体力が」。",
+      "en": "取る (dictionary form) ＋ と ＋ ともに ＋ 体力が. The ★ is the fourth slot: 「体力が」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l46-016",
@@ -589,9 +592,9 @@
     "stem": "人口の 増加（　）、住宅問題が 深刻に なった。",
     "options": [
       "に伴い",
-      "に伴う",
-      "で伴い",
-      "と伴い"
+      "に比べ",
+      "に限らず",
+      "に代わり"
     ],
     "answer": 0,
     "full": "人口の 増加に伴い、住宅問題が 深刻に なった。",
@@ -606,16 +609,16 @@
     "wrong": [
       null,
       {
-        "zh": "「に伴う」后面必须接名词（に伴う問題），这里后面是逗号和句子。",
-        "en": "「に伴う」 must be followed by a noun (に伴う問題); here a comma and a clause follow."
+        "zh": "「に比べ」是比较，“人口增加”和“住房问题”不是在比较。",
+        "en": "「に比べ」 compares, but population growth and the housing problem aren't being compared."
       },
       {
-        "zh": "「伴う」前面的助词是「に」，「で伴い」不成立。",
-        "en": "「伴う」 takes 「に」; 「で伴い」 is wrong."
+        "zh": "「に限らず」是“不仅限于……”，后面要接范围更广的事物，这里是因变化而产生的结果。",
+        "en": "「に限らず」 is \"not just…\", widening a range; here one change brings about another."
       },
       {
-        "zh": "「伴う」前面的助词是「に」，「と伴い」不成立（「とともに」才用「と」）。",
-        "en": "「伴う」 takes 「に」; 「と伴い」 is wrong (「と」 belongs to 「とともに」)."
+        "zh": "「に代わり」是“代替……”，住房问题并没有代替人口增加。",
+        "en": "「に代わり」 is \"in place of\"; the housing problem doesn't replace population growth."
       }
     ]
   },
@@ -666,7 +669,7 @@
       "lesson46#6"
     ],
     "difficulty": 1,
-    "stem": "台風の [_] [_] [★] [_] 強く なって きた。",
+    "stem": "台風の [_] [_] [_] [★] 強く なって きた。",
     "options": [
       "風が",
       "に",
@@ -685,14 +688,15 @@
       "en": "As the typhoon approached, the wind grew stronger."
     },
     "why": {
-      "zh": "接近 ＋ に ＋ 伴って ＋ 風が。★ 在第三格，是「伴って」。",
-      "en": "接近 ＋ に ＋ 伴って ＋ 風が. The ★ is the third slot: 「伴って」."
+      "zh": "接近 ＋ に ＋ 伴って ＋ 風が。★ 在第四格，是「風が」。",
+      "en": "接近 ＋ に ＋ 伴って ＋ 風が. The ★ is the fourth slot: 「風が」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   }
 ]

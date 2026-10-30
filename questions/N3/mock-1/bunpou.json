@@ -1,13 +1,14 @@
 [
   {
     "id": "n3-m1-101",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson37#1",
       "lesson37#2"
     ],
     "difficulty": 1,
-    "stem": "先輩が丁寧に教えてくれた（　）、初めての仕事でも大きな失敗をせずに済んだ。",
+    "stem": "駅前に大きなスーパーができた（　）、買い物がずいぶん便利になった。",
     "options": [
       "おかげで",
       "せいで",
@@ -15,39 +16,40 @@
       "ものの"
     ],
     "answer": 0,
-    "full": "先輩が丁寧に教えてくれたおかげで、初めての仕事でも大きな失敗をせずに済んだ。",
+    "full": "駅前に大きなスーパーができたおかげで、買い物がずいぶん便利になった。",
     "tr": {
-      "zh": "多亏前辈耐心地教我，第一次工作也没有出大错。",
-      "en": "Thanks to my senior teaching me so carefully, I got through my first job without any big mistakes."
+      "zh": "多亏车站前开了一家大超市，买东西方便多了。",
+      "en": "Thanks to the big supermarket that opened by the station, shopping has become much easier."
     },
     "why": {
-      "zh": "前辈耐心地教（原因）带来了“没出大错”这个好结果，表示感谢的原因用「おかげで」。",
-      "en": "The careful teaching (cause) led to a good result — no big mistakes — so the grateful 「おかげで」."
+      "zh": "开了超市（原因）带来了“买东西方便了”这个好结果，用「おかげで」。",
+      "en": "The new supermarket (cause) brought a good result — easier shopping — so 「おかげで」."
     },
     "wrong": [
       null,
       {
-        "zh": "「せいで」用于坏结果的原因，可“没出大错”是好事。",
-        "en": "「せいで」 blames a cause for a bad result, but avoiding mistakes is good."
+        "zh": "「せいで」用于坏结果的原因，可“方便了”是好事。",
+        "en": "「せいで」 blames a cause for a bad result, but easier shopping is good."
       },
       {
-        "zh": "「くせに」是责备“明明……却……”，前辈教了我，后面没有可责备的事。",
-        "en": "「くせに」 criticises (\"even though… yet\"); nothing here is being criticised."
+        "zh": "「くせに」用于责备人“明明……却……”，这里没有责备的对象。",
+        "en": "「くせに」 criticises a person (\"even though… yet\"); there's no one to criticise."
       },
       {
-        "zh": "「ものの」是逆接“虽然……但是”，教得耐心和没出错并不矛盾。",
-        "en": "「ものの」 is concessive (\"although\"), but careful teaching and no mistakes don't contrast."
+        "zh": "「ものの」是逆接“虽然……但是”，开超市和方便了不矛盾。",
+        "en": "「ものの」 is concessive (\"although\"), but a new supermarket and easier shopping don't contrast."
       }
     ]
   },
   {
     "id": "n3-m1-102",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson38#3"
     ],
     "difficulty": 2,
-    "stem": "弟は自分では料理を全然しない（　）、私が作ったものにはいつも文句を言う。",
+    "stem": "弟はまだ中学生の（　）、私の服の選び方にいちいち口を出してくる。",
     "options": [
       "くせに",
       "ついでに",
@@ -55,28 +57,28 @@
       "とおりに"
     ],
     "answer": 0,
-    "full": "弟は自分では料理を全然しないくせに、私が作ったものにはいつも文句を言う。",
+    "full": "弟はまだ中学生のくせに、私の服の選び方にいちいち口を出してくる。",
     "tr": {
-      "zh": "弟弟自己明明从不做饭，却总是对我做的菜挑三拣四。",
-      "en": "My brother never cooks himself, and yet he always complains about whatever I make."
+      "zh": "弟弟明明还是个初中生，却对我怎么挑衣服一一插嘴。",
+      "en": "My brother's only in junior high, yet he has something to say about every bit of clothing I choose."
     },
     "why": {
-      "zh": "自己不做饭却挑别人做的菜，说话人很不满：「〜くせに」表示“明明……却……”的责备。",
-      "en": "He doesn't cook but criticises my cooking, and the speaker resents it: 「〜くせに」, \"even though… (how dare he)\"."
+      "zh": "“还只是初中生”却“对我挑衣服一一插嘴”，带着不满的责备，用「名词＋のくせに」。",
+      "en": "\"Only a junior-high pupil\" yet \"comments on everything I wear\" — an annoyed complaint: 「noun ＋ のくせに」."
     },
     "wrong": [
       null,
       {
-        "zh": "「ついでに」是“顺便”，不做饭不是一个能顺便做别的事的动作。",
-        "en": "「ついでに」 means \"while doing it anyway\"; not cooking isn't an action you do something else alongside."
+        "zh": "「ついでに」是“顺便”，“初中生的顺便”说不通。",
+        "en": "「ついでに」 is \"while at it\"; it doesn't fit \"being in junior high\"."
       },
       {
-        "zh": "「ために」表示目的或原因，“为了不做饭而抱怨”说不通。",
-        "en": "「ために」 gives a purpose or cause; \"complains in order to / because he doesn't cook\" makes no sense."
+        "zh": "「ために」表示目的或原因，“因为是初中生所以插嘴”不合逻辑，也没有不满的语气。",
+        "en": "「ために」 gives a purpose or reason; \"because he's in junior high he comments\" doesn't follow, and there's no annoyance."
       },
       {
-        "zh": "「とおりに」是“按照……”，不能接“不做饭”来连接抱怨。",
-        "en": "「とおりに」 means \"just as / following\"; it can't link not cooking to complaining."
+        "zh": "「とおりに」是“按照……”，“按照初中生那样插嘴”说不通。",
+        "en": "「とおりに」 is \"just as\"; it makes no sense here."
       }
     ]
   },
@@ -163,42 +165,43 @@
   },
   {
     "id": "n3-m1-105",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson36#2",
       "lesson35#2"
     ],
     "difficulty": 1,
-    "stem": "日本に来たばかりの留学生（　）、一番大変なのは住む部屋を探すことだ。",
+    "stem": "毎日遅くまで働いている父（　）、週末の釣りが一番の楽しみだ。",
     "options": [
       "にとって",
       "に対して",
-      "について",
+      "に関して",
       "によって"
     ],
     "answer": 0,
-    "full": "日本に来たばかりの留学生にとって、一番大変なのは住む部屋を探すことだ。",
+    "full": "毎日遅くまで働いている父にとって、週末の釣りが一番の楽しみだ。",
     "tr": {
-      "zh": "对刚来日本的留学生来说，最辛苦的是找住的房子。",
-      "en": "For international students who have just come to Japan, the hardest thing is finding a place to live."
+      "zh": "对每天工作到很晚的父亲来说，周末钓鱼是最大的乐趣。",
+      "en": "For my father, who works late every day, weekend fishing is his greatest pleasure."
     },
     "why": {
-      "zh": "后面是“最辛苦的是……”这样的评价，评价的立场用「〜にとって」（对……来说）。",
-      "en": "What follows is a judgement (\"the hardest thing is…\"), and whose viewpoint it is takes 「〜にとって」 (\"for / to\")."
+      "zh": "“对父亲来说是最大的乐趣”，是从父亲的立场评价，用「にとって」（对……来说）。",
+      "en": "\"His greatest pleasure\" is judged from my father's point of view: 「にとって」 (for)."
     },
     "wrong": [
       null,
       {
-        "zh": "「に対して」表示动作、态度指向的对象（对……），后面要有针对留学生的行为，不是评价。",
-        "en": "「に対して」 marks the target of an action or attitude; it needs something done towards the students, not a judgement."
+        "zh": "「に対して」是对某人采取态度或行动（父に対して怒る），不是“从……的立场看”。",
+        "en": "「に対して」 is an attitude or action towards someone (父に対して怒る), not someone's point of view."
       },
       {
-        "zh": "「について」是“关于……”，“关于留学生，最辛苦的是……”不自然。",
-        "en": "「について」 is \"about\"; \"about the students, the hardest thing is…\" is unnatural."
+        "zh": "「に関して」是“关于”，表示话题，“关于父亲，钓鱼是乐趣”不自然。",
+        "en": "「に関して」 is \"concerning\", a topic; \"concerning my father, fishing is the pleasure\" is unnatural."
       },
       {
-        "zh": "「によって」表示手段、原因或“因……而异”，不表示评价的立场。",
-        "en": "「によって」 is means, cause or \"depending on\" — not whose point of view."
+        "zh": "「によって」表示原因、手段或“因……而不同”，不表示立场。",
+        "en": "「によって」 gives a cause, means or \"depending on\"; it doesn't give a point of view."
       }
     ]
   },
@@ -324,13 +327,14 @@
   },
   {
     "id": "n3-m1-109",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson47#2",
       "lesson47#1"
     ],
     "difficulty": 2,
-    "stem": "リンさんは日本に来てまだ半年（　）、日本語でのあいさつがとても自然だ。",
+    "stem": "兄は初めてケーキを作った（　）、店で売っているもののようにきれいにできた。",
     "options": [
       "にしては",
       "として",
@@ -338,192 +342,196 @@
       "によって"
     ],
     "answer": 0,
-    "full": "リンさんは日本に来てまだ半年にしては、日本語でのあいさつがとても自然だ。",
+    "full": "兄は初めてケーキを作ったにしては、店で売っているもののようにきれいにできた。",
     "tr": {
-      "zh": "林同学来日本才半年，用日语打招呼却非常自然。",
-      "en": "For someone who has only been in Japan six months, Lin's greetings in Japanese are remarkably natural."
+      "zh": "哥哥第一次做蛋糕，却做得像店里卖的一样漂亮。",
+      "en": "For his first-ever cake, my brother's came out as nice as a shop-bought one."
     },
     "why": {
-      "zh": "“才来半年”本来应该还不熟练，结果却很自然——和预期不相符，用「〜にしては」（就……来说，却……）。",
-      "en": "Only six months in, you'd expect awkwardness, but it's natural — against expectation: 「〜にしては」 (\"for…, surprisingly\")."
+      "zh": "“第一次做”一般做不好，结果却很漂亮，和预想不符，用「にしては」（就……而言，出乎意料）。",
+      "en": "A first attempt usually isn't great, but this one was — better than expected: 「にしては」 (for a…)."
     },
     "wrong": [
       null,
       {
-        "zh": "「として」表示身份、资格（作为……），“半年”不是身份。",
-        "en": "「として」 is a role or capacity (\"as…\"); six months isn't a role."
+        "zh": "「として」是“作为……（身份、资格）”，前面要接名词，不表示出乎意料。",
+        "en": "「として」 is \"as (a role)\" after a noun; it doesn't mark a surprise."
       },
       {
-        "zh": "「に対して」表示对象或对比，这里不是对“半年”做什么。",
-        "en": "「に対して」 marks a target or contrast; nothing is done towards \"six months\"."
+        "zh": "「に対して」是对某人或某事的态度，或表示对比，不是“出乎意料”。",
+        "en": "「に対して」 is an attitude towards something or a contrast, not \"surprisingly, for…\"."
       },
       {
-        "zh": "「によって」表示原因或手段，“因为半年所以自然”说不通，而且没有「まだ」的意外感。",
-        "en": "「によって」 is cause or means; \"natural because of six months\" loses the surprise that 「まだ」 sets up."
+        "zh": "「によって」表示原因、手段或“因……而不同”，和句意不符。",
+        "en": "「によって」 gives a cause, means or \"depending on\", which doesn't fit."
       }
     ]
   },
   {
     "id": "n3-m1-110",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson53#3",
       "lesson53#1"
     ],
     "difficulty": 2,
-    "stem": "仕事がまだ山のように残っているので、今夜は終電までに帰れ（　）。",
+    "stem": "この雪では、明日の朝までに電車は（　）。今夜は駅の近くのホテルに泊まろう。",
     "options": [
-      "そうにない",
-      "そうだ",
-      "るに違いない",
-      "ないことはない"
+      "動きそうにない",
+      "動きそうだ",
+      "動くに違いない",
+      "動かないことはない"
     ],
     "answer": 0,
-    "full": "仕事がまだ山のように残っているので、今夜は終電までに帰れそうにない。",
+    "full": "この雪では、明日の朝までに電車は動きそうにない。今夜は駅の近くのホテルに泊まろう。",
     "tr": {
-      "zh": "工作还堆积如山，今晚看样子赶不上末班车回家了。",
-      "en": "I still have a mountain of work left, so it doesn't look like I'll get home before the last train tonight."
+      "zh": "这么大的雪，到明天早上电车大概也不会开。今晚就住车站附近的酒店吧。",
+      "en": "With this snow, the trains don't look like they'll be running by tomorrow morning. Let's stay at a hotel near the station tonight."
     },
     "why": {
-      "zh": "「ので」前面是“工作还剩很多”，自然的结论是“看来回不去”：「〜そうにない」（看样子不会……）。",
-      "en": "The 「ので」 clause says lots of work is left, so the natural conclusion is \"it doesn't look like I can\": 「〜そうにない」."
+      "zh": "“住酒店”说明说话人判断电车不会开，用「ます形＋そうにない」（看样子不会……）。",
+      "en": "Deciding to stay at a hotel shows the speaker thinks the trains won't run: 「ます-stem ＋ そうにない」 (doesn't look like it will)."
     },
     "wrong": [
       null,
       {
-        "zh": "「帰れそうだ」是“看样子能回去”，和“工作堆积如山”的原因相反。",
-        "en": "「帰れそうだ」 means \"looks like I can get home\" — the opposite of what a mountain of work suggests."
+        "zh": "「動きそうだ」是“看样子会开”，那就不用住酒店了。",
+        "en": "「動きそうだ」 is \"looks like they'll run\" — then there'd be no need for a hotel."
       },
       {
-        "zh": "「帰れるに違いない」是“一定能回去”，同样和原因矛盾。",
-        "en": "「帰れるに違いない」 means \"I'm sure I can\", which also contradicts the reason."
+        "zh": "「動くに違いない」是“一定会开”，和住酒店的决定矛盾。",
+        "en": "「動くに違いない」 is \"they're sure to run\", which contradicts staying at a hotel."
       },
       {
-        "zh": "「帰れないことはない」是“也不是回不去”，要和原因用「が」等转折连接，用「ので」接不上。",
-        "en": "「帰れないことはない」 (\"it's not that I can't\") would need a contrast like 「が」, not 「ので」."
+        "zh": "「動かないことはない」是“也不是不开”，偏向会开，和住酒店不符。",
+        "en": "「動かないことはない」 is \"it's not that they won't run\", leaning towards running, which doesn't fit."
       }
     ]
   },
   {
     "id": "n3-m1-111",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson55#5",
       "lesson43#2"
     ],
     "difficulty": 1,
-    "stem": "値段が高いからといって、品質がいい（　）。",
+    "stem": "毎日長い時間勉強しているからといって、成績が上がる（　）。大切なのは勉強のしかただ。",
     "options": [
       "とは限らない",
-      "に違いない",
-      "に決まっている",
-      "からだ"
+      "はずだ",
+      "ものだ",
+      "ことになっている"
     ],
     "answer": 0,
-    "full": "値段が高いからといって、品質がいいとは限らない。",
+    "full": "毎日長い時間勉強しているからといって、成績が上がるとは限らない。大切なのは勉強のしかただ。",
     "tr": {
-      "zh": "价格贵，并不一定质量就好。",
-      "en": "Just because something is expensive doesn't mean it's good quality."
+      "zh": "就算每天学习很长时间，成绩也不一定会提高。重要的是学习方法。",
+      "en": "Studying for hours every day doesn't necessarily mean your grades will go up. What matters is how you study."
     },
     "why": {
-      "zh": "「〜からといって」（虽说因为……）后面常接部分否定，「〜とは限らない」（未必……）。",
-      "en": "「〜からといって」 (\"just because…\") is typically followed by a partial negation: 「〜とは限らない」 (\"doesn't necessarily\")."
+      "zh": "「からといって」和后一句“重要的是方法”说明“学得久不一定提高”，用「とは限らない」（不一定）。",
+      "en": "「からといって」 and \"what matters is how you study\" show long hours don't guarantee results: 「とは限らない」 (not necessarily)."
     },
     "wrong": [
       null,
       {
-        "zh": "「に違いない」是“一定……”，和「からといって」要引出的“未必”相反。",
-        "en": "「に違いない」 (\"must be\") is the opposite of what 「からといって」 sets up."
+        "zh": "「はずだ」是“应该会提高”，和「からといって」及后一句“重要的是方法”矛盾。",
+        "en": "「はずだ」 is \"they should go up\", which contradicts 「からといって」 and \"what matters is how you study\"."
       },
       {
-        "zh": "「に決まっている」是“肯定……”，同样和「からといって」不搭。",
-        "en": "「に決まっている」 (\"is bound to\") likewise clashes with 「からといって」."
+        "zh": "「ものだ」是“本来就会……”的一般道理，和「からといって」的否定方向不符。",
+        "en": "「ものだ」 states a general truth (\"that's how it is\"), which goes against the denial 「からといって」 sets up."
       },
       {
-        "zh": "「からだ」是说明原因，前面已经有「からといって」，句子说不通。",
-        "en": "「からだ」 states a reason; after 「からといって」 the sentence makes no sense."
+        "zh": "「ことになっている」是规定、安排，“规定成绩会提高”说不通。",
+        "en": "「ことになっている」 is a rule or arrangement; \"it's arranged that grades go up\" makes no sense."
       }
     ]
   },
   {
     "id": "n3-m1-112",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson50#5",
       "lesson48#1"
     ],
     "difficulty": 2,
-    "stem": "この歌を聞く（　）、亡くなった祖母のことを思い出して、涙が出てくる。",
+    "stem": "駅前のパン屋の前を通る（　）、いいにおいがして、つい何か買ってしまう。",
     "options": [
       "たびに",
-      "ついでに",
-      "とたんに",
-      "最中に"
+      "代わりに",
+      "最中に",
+      "以上"
     ],
     "answer": 0,
-    "full": "この歌を聞くたびに、亡くなった祖母のことを思い出して、涙が出てくる。",
+    "full": "駅前のパン屋の前を通るたびに、いいにおいがして、つい何か買ってしまう。",
     "tr": {
-      "zh": "每次听到这首歌，就会想起去世的奶奶，眼泪流下来。",
-      "en": "Every time I hear this song, I think of my late grandmother and the tears come."
+      "zh": "每次从车站前的面包店门口经过，都闻到香味，忍不住买点什么。",
+      "en": "Every time I pass the bakery by the station, it smells so good that I end up buying something."
     },
     "why": {
-      "zh": "动词辞书形＋「たびに」表示“每次……都……”，后面是每次都会发生的反应，接续也正确。",
-      "en": "Dictionary form + 「たびに」 means \"every time…\", followed by what happens each time — and the connection is right."
+      "zh": "“每次经过都……忍不住买”，表示每逢A就B的反复，用「辞書形＋たびに」（每当……）。",
+      "en": "\"Every time I pass… I end up buying\" is a repeated A-then-B: 「dictionary form ＋ たびに」."
     },
     "wrong": [
       null,
       {
-        "zh": "「ついでに」是“顺便做某事”，想起奶奶、流泪不是有意顺便去做的。",
-        "en": "「ついでに」 is doing something extra on purpose; remembering and crying aren't deliberate."
+        "zh": "「代わりに」是“代替／作为交换”，经过面包店和买东西不是交换关系。",
+        "en": "「代わりに」 is \"instead of / in exchange\"; passing and buying aren't a trade."
       },
       {
-        "zh": "「とたんに」要接た形（聞いたとたんに），接辞书形不对。",
-        "en": "「とたんに」 needs the ta-form (聞いたとたんに), not the dictionary form."
+        "zh": "「最中に」要接「ている」或名词（通っている最中に），表示正在进行时发生意外，不表示反复。",
+        "en": "「最中に」 needs 「ている」 or a noun and marks an interruption, not a repeated habit."
       },
       {
-        "zh": "「最中に」要接「ている」或「名词＋の」（聞いている最中に），接辞书形不对。",
-        "en": "「最中に」 needs 「ている」 or 「noun + の」 (聞いている最中に), not the dictionary form."
+        "zh": "「以上」是“既然……就……”，“既然经过就买”不自然，也不表示反复。",
+        "en": "「以上」 is \"since… then\"; it isn't natural here and doesn't express repetition."
       }
     ]
   },
   {
     "id": "n3-m1-113",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson56#1",
       "lesson56#2"
     ],
     "difficulty": 2,
-    "stem": "明日は大事な試験があるから、少しくらい熱があっても休む（　）。",
+    "stem": "友だちが一生懸命作ってくれた料理なので、少し苦手な味でも残す（　）。",
     "options": [
       "わけにはいかない",
-      "しかない",
+      "ほかない",
       "べきだ",
-      "ことになっている"
+      "ようにしている"
     ],
     "answer": 0,
-    "full": "明日は大事な試験があるから、少しくらい熱があっても休むわけにはいかない。",
+    "full": "友だちが一生懸命作ってくれた料理なので、少し苦手な味でも残すわけにはいかない。",
     "tr": {
-      "zh": "明天有重要的考试，所以即使有点发烧也不能请假。",
-      "en": "I have an important exam tomorrow, so I can't take the day off even if I have a bit of a fever."
+      "zh": "这是朋友用心为我做的菜，就算有点不合口味，也不能剩下。",
+      "en": "My friend worked hard to cook this for me, so I can't leave any, even if it's not quite my taste."
     },
     "why": {
-      "zh": "因为有重要考试，即使发烧也“不能请假”——出于情理、情况不允许：「〜わけにはいかない」。",
-      "en": "Because of the exam, even with a fever you can't skip it — circumstances won't allow it: 「〜わけにはいかない」."
+      "zh": "“朋友用心做的”，出于情理不能剩下，用「わけにはいかない」（不能……）。",
+      "en": "Because my friend made it with care, leaving some isn't acceptable: 「わけにはいかない」 (can't)."
     },
     "wrong": [
       null,
       {
-        "zh": "「しかない」是“只能请假”，和“因为有考试”“即使发烧也”的逻辑相反。",
-        "en": "「しかない」 would mean \"have no choice but to rest\", the reverse of what the exam and 「ても」 imply."
+        "zh": "「ほかない」是“只能剩下”，和“朋友用心做的”这个理由相反。",
+        "en": "「ほかない」 is \"have no choice but to leave it\", the opposite of what the reason implies."
       },
       {
-        "zh": "「べきだ」是“应该请假”，同样和“有考试”“即使……也”矛盾。",
-        "en": "「べきだ」 (\"should rest\") likewise contradicts the exam and 「ても」."
+        "zh": "「べきだ」是“应该剩下”，不合情理。",
+        "en": "「べきだ」 is \"should leave it\", which makes no sense."
       },
       {
-        "zh": "「ことになっている」是“按规定要请假”，有考试反而规定休息，说不通。",
-        "en": "「ことになっている」 (\"the rule is to rest\") makes no sense given the exam reason."
+        "zh": "「ようにしている」是“（平时）注意尽量剩下”，习惯性地剩饭不合情理，也和“朋友用心做的”接不上。",
+        "en": "「ようにしている」 is \"I make a point of leaving some\", a habit that makes no sense and doesn't follow from the reason."
       }
     ]
   },
@@ -673,32 +681,33 @@
   },
   {
     "id": "n3-m1-118",
+    "rev": 2,
     "type": "narabe",
     "refs": [
       "lesson51#1"
     ],
     "difficulty": 2,
-    "stem": "今日は [_] [_] [_] [★] くらいだ。",
+    "stem": "砂糖を入れすぎたので、このカレーは [_] [★] [_] [_] 味がする。",
     "options": [
+      "甘い",
+      "辛い",
       "むしろ",
-      "暑い",
-      "というより",
-      "暖かい"
+      "というより"
     ],
     "order": [
+      1,
       3,
       2,
-      0,
-      1
+      0
     ],
-    "full": "今日は暖かいというよりむしろ暑いくらいだ。",
+    "full": "砂糖を入れすぎたので、このカレーは辛いというよりむしろ甘い味がする。",
     "tr": {
-      "zh": "今天与其说暖和，不如说简直有点热。",
-      "en": "Today it's not so much warm as actually hot."
+      "zh": "糖放多了，这咖喱与其说辣，不如说是甜的。",
+      "en": "I put in too much sugar, so this curry tastes more sweet than spicy."
     },
     "why": {
-      "zh": "「AというよりむしろB」表示“与其说A，不如说B”，程度更进一步：暖かい＋というより＋むしろ＋暑い，再接「くらいだ」。★ 在第四格，是「暑い」。",
-      "en": "「A というより むしろ B」 is \"not so much A as B\", one step further: 暖かい ＋ というより ＋ むしろ ＋ 暑い + 「くらいだ」. The ★ is the fourth slot: 「暑い」."
+      "zh": "「AというよりむしろB」是“与其说A，不如说B”。糖放多了，所以是“辣→甜”：辛い＋というより＋むしろ＋甘い。★ 在第二格，是「というより」。",
+      "en": "「A というより むしろ B」 is \"not so much A as B\". Too much sugar makes it sweet: 辛い ＋ というより ＋ むしろ ＋ 甘い. The ★ is the second slot: 「というより」."
     },
     "wrong": [
       null,

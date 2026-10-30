@@ -49,7 +49,7 @@
     "stem": "面接の結果を待つ間、彼は（　）様子で何度も時計を見ていた。",
     "options": [
       "不安そうに",
-      "不安がりな",
+      "不安だらけの",
       "不安げな",
       "不安らしい"
     ],
@@ -69,8 +69,8 @@
         "en": "「そうに」 modifies a verb; before the noun 「様子」 it would have to be 「そうな」 (or 「げな」)."
       },
       {
-        "zh": "「〜がり」表示“爱……的人”（「寒がり」），「不安がり」不是常用词，也不是描写神情的形式。",
-        "en": "「〜がり」 marks a person prone to a feeling (「寒がり」); 「不安がりな」 isn't a natural word for a look."
+        "zh": "「だらけ」表示到处都是（多用于负面的东西，如「間違いだらけ」），“满是不安的样子”不说；形容一个人的神情要用「不安げな」。",
+        "en": "「だらけ」 means covered in (「間違いだらけ」); 「不安だらけの様子」 isn't said — a person's look is 「不安げな」."
       },
       null,
       {
@@ -164,10 +164,10 @@
     "difficulty": 2,
     "stem": "将来のことを一晩中考え（　）結果、会社を辞めて留学することにした。",
     "options": [
-      "次第の",
       "かけた",
+      "がちな",
       "抜いた",
-      "きりの"
+      "つつある"
     ],
     "answer": 2,
     "full": "将来のことを一晩中考え 抜いた 結果、会社を辞めて留学することにした。",
@@ -181,17 +181,17 @@
     },
     "wrong": [
       {
-        "zh": "「ます形＋次第」是“一……就……”，不能接「結果」，也不合语义。",
-        "en": "「masu-stem + 次第」 means \"as soon as\"; it can't modify 「結果」."
+        "zh": "「考えかけた」是“想到一半”，和“一整晚”及“结果作出决定”矛盾。",
+        "en": "「考えかけた」 (started thinking, stopped) contradicts \"all night\" and reaching a decision."
       },
       {
-        "zh": "「考えかけた」是“刚开始想、想到一半”，和「一晩中」「結果」（想透后作出决定）矛盾。",
-        "en": "「考えかけた」 means \"started to think\", which clashes with 「一晩中」 and reaching a decision (「結果」)."
+        "zh": "「がち」表示容易出现某种倾向，“一整晚容易思考的结果”不成立。",
+        "en": "「がち」 marks a tendency; \"the result of tending to think all night\" makes no sense."
       },
       null,
       {
-        "zh": "「きり」接动词た形（「考えたきり」），不接ます形，意思也不对。",
-        "en": "「きり」 follows the ta-form (「考えたきり」), not the masu-stem, and the meaning doesn't fit."
+        "zh": "「つつある」表示正在变化中，后面不能接已经得出的「結果」。",
+        "en": "「つつある」 is change in progress; it can't precede a 「結果」 already reached."
       }
     ]
   },
@@ -512,7 +512,7 @@
     "difficulty": 2,
     "stem": "二十年（　）同窓会には、クラスの半分以上が集まった。",
     "options": [
-      "ぶりな",
+      "ぶりから",
       "ぶりで",
       "ぶりに",
       "ぶりの"
@@ -529,8 +529,8 @@
     },
     "wrong": [
       {
-        "zh": "「ぶり」作名词用，修饰名词要用「の」，没有「ぶりな」的说法。",
-        "en": "「ぶり」 is noun-like, so it takes 「の」 before a noun; 「ぶりな」 doesn't exist."
+        "zh": "「ぶり」后面修饰名词要用「の」，「ぶりから」不能接「同窓会」。",
+        "en": "To modify a noun 「ぶり」 takes 「の」; 「ぶりから」 can't precede 「同窓会」."
       },
       {
         "zh": "「ぶりで」是中顿或修饰谓语的形式，不能直接修饰名词「同窓会」。",

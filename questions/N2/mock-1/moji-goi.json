@@ -1,37 +1,38 @@
 [
   {
     "id": "n2-m1-001",
+    "rev": 2,
     "type": "kanji",
     "difficulty": 2,
-    "stem": "今回の地震の被害は、専門家の予想をはるかに超える<<規模>>だった。",
+    "stem": "遠慮しないで、思ったことを<<率直>>に言ってください。",
     "options": [
-      "きぼ",
-      "きぼう",
-      "きも",
-      "ぎぼ"
+      "そっちょく",
+      "そうちょく",
+      "りっちょく",
+      "そっちょう"
     ],
     "answer": 0,
     "tr": {
-      "zh": "这次地震的灾情，规模远远超出了专家的预想。",
-      "en": "The damage from this earthquake was on a scale far beyond what experts had predicted."
+      "zh": "别客气，请把你的想法坦率地说出来。",
+      "en": "Don't hold back — please say frankly what you think."
     },
     "why": {
-      "zh": "「規模」（规模）读「きぼ」，「模」在这里读短音「ぼ」。",
-      "en": "「規模」 (scale) is きぼ; 「模」 here is a short ぼ."
+      "zh": "「率直」读「そっちょく」：「率」在这里读「そつ」，和「直（ちょく）」连读促音化。",
+      "en": "「率直」 is read そっちょく: 率 is そつ here and becomes そっ before ちょく."
     },
     "wrong": [
       null,
       {
-        "zh": "「きぼう」是「希望」（希望），「模」没有长音。",
-        "en": "きぼう is 「希望」 (hope); 「模」 has no long vowel."
+        "zh": "没有长音，「率」读「そつ」，不是「そう」。",
+        "en": "No long vowel: 率 is そつ, not そう."
       },
       {
-        "zh": "「模」读「ぼ」或「も」（如「模様」），但「規模」固定读「きぼ」。",
-        "en": "「模」 can be も (as in 「模様」), but 「規模」 is always きぼ."
+        "zh": "「りつ」是「率」在「確率・効率」里的读法（りつ），这里读「そつ」。",
+        "en": "りつ is how 率 reads in 「効率」; here it is そつ."
       },
       {
-        "zh": "「規」读清音「き」，不浊化成「ぎ」。",
-        "en": "「規」 is the unvoiced き, not ぎ."
+        "zh": "「直」读「ちょく」，不是「ちょう」。",
+        "en": "直 is ちょく here, not ちょう."
       }
     ]
   },
@@ -73,37 +74,38 @@
   },
   {
     "id": "n2-m1-003",
+    "rev": 2,
     "type": "kanji",
     "difficulty": 2,
-    "stem": "最近の若い人には、車を持たない<<傾向>>があるそうだ。",
+    "stem": "梅雨の時期は<<湿気>>が多く、洗濯物がなかなか乾かない。",
     "options": [
-      "けいこう",
-      "けいご",
-      "けこう",
-      "けいきょう"
+      "しっけ",
+      "しつけ",
+      "しっき",
+      "しゅうけ"
     ],
     "answer": 0,
     "tr": {
-      "zh": "据说最近的年轻人有不买车的倾向。",
-      "en": "Young people these days reportedly tend not to own cars."
+      "zh": "梅雨季节湿气重，洗的衣服总是不干。",
+      "en": "In the rainy season it is humid and the washing takes ages to dry."
     },
     "why": {
-      "zh": "「傾向」（倾向）读「けいこう」，两个字都是长音。",
-      "en": "「傾向」 (tendency) is けいこう, with a long vowel in both kanji."
+      "zh": "「湿気」读「しっけ」：「湿（しつ）」和「気（け）」连读促音化。",
+      "en": "「湿気」 is read しっけ: しつ + け with a small っ."
     },
     "wrong": [
       null,
       {
-        "zh": "「けいご」是「敬語」（敬语），「向」读「こう」，是长音。",
-        "en": "けいご is 「敬語」 (honorific language); 「向」 is こう, with a long vowel."
+        "zh": "「しつけ」是另一个词（躾，教养），没有促音。",
+        "en": "しつけ (躾, upbringing) is a different word with no small っ."
       },
       {
-        "zh": "「傾」读「けい」，不是短音「け」。",
-        "en": "「傾」 is けい, not a short け."
+        "zh": "「気」在这里读「け」，不读「き」。",
+        "en": "気 is read け here, not き."
       },
       {
-        "zh": "「向」读「こう」，不读「きょう」（「きょう」是「況・興」等字的音）。",
-        "en": "「向」 is こう, not きょう (きょう is the sound of 「況」「興」 and the like)."
+        "zh": "「湿」读「しつ」，没有「しゅう」的读法。",
+        "en": "湿 is しつ; it has no しゅう reading."
       }
     ]
   },
@@ -217,37 +219,38 @@
   },
   {
     "id": "n2-m1-007",
+    "rev": 2,
     "type": "hyouki",
     "difficulty": 2,
-    "stem": "この冷蔵庫には、3年間のメーカー<<ほしょう>>が付いている。",
+    "stem": "親でも、大人になった子どもの生活に<<かんしょう>>しすぎないほうがいい。",
     "options": [
-      "保証",
-      "保正",
-      "補証",
-      "保称"
+      "干渉",
+      "鑑賞",
+      "感傷",
+      "観賞"
     ],
     "answer": 0,
     "tr": {
-      "zh": "这台冰箱有3年的厂家保修。",
-      "en": "This fridge comes with a three-year manufacturer's warranty."
+      "zh": "即使是父母，也最好不要过多干涉已成年孩子的生活。",
+      "en": "Even parents had better not interfere too much in the lives of their grown-up children."
     },
     "why": {
-      "zh": "表示\"保修、担保\"的「ほしょう」写作「保証」。",
-      "en": "ほしょう meaning a warranty or guarantee is 「保証」."
+      "zh": "\"干预、插手\"别人的事是「干渉」（かんしょう）。",
+      "en": "Interfering in someone else's affairs is 「干渉」."
     },
     "wrong": [
       null,
       {
-        "zh": "「正」虽然也读「しょう」，但没有「保正」这个词。",
-        "en": "「正」 can be read しょう, but 「保正」 isn't a word."
+        "zh": "「鑑賞」是\"欣赏（艺术作品）\"，如「映画を鑑賞する」，不能用于别人的生活。",
+        "en": "「鑑賞」 is appreciating art (「映画を鑑賞する」), not meddling in a life."
       },
       {
-        "zh": "「補」是「補う」（补充）的「補」，「保证」的「ほ」是「保」。",
-        "en": "「補」 is the kanji of 「補う」 (make up for); the ほ here is 「保」."
+        "zh": "「感傷」是\"伤感\"，如「感傷にひたる」，不能接「生活に〜する」。",
+        "en": "「感傷」 is sentimentality (「感傷にひたる」); it can't take 「生活に〜する」."
       },
       {
-        "zh": "「称」是「名称」的「称」，没有「保称」这个词。",
-        "en": "「称」 is the kanji of 「名称」 (name); 「保称」 isn't a word."
+        "zh": "「観賞」是\"观赏（花、鱼等）\"，如「観賞用の魚」。",
+        "en": "「観賞」 is looking at flowers or fish for pleasure (「観賞用の魚」)."
       }
     ]
   },
@@ -260,7 +263,7 @@
       "補って",
       "保って",
       "捕って",
-      "輔って"
+      "償って"
     ],
     "answer": 0,
     "tr": {
@@ -282,8 +285,8 @@
         "en": "「捕って」 is とって (catch) — a different word."
       },
       {
-        "zh": "「輔」是「补助」义的字，但「おぎなう」不写作「輔う」。",
-        "en": "「輔」 means \"assist\", but おぎなう is never written with it."
+        "zh": "「償う」读「つぐなう」，是\"赔偿、补偿（过失）\"，不读「おぎなう」。",
+        "en": "「償う」 is つぐなう — to make amends — not おぎなう."
       }
     ]
   },
@@ -325,73 +328,75 @@
   },
   {
     "id": "n2-m1-010",
+    "rev": 2,
     "type": "hyouki",
     "difficulty": 2,
-    "stem": "この店では、海外から輸入した食品を多く<<あつかって>>いる。",
+    "stem": "友人に旅行に誘われたが、仕事が忙しかったので<<ことわった>>。",
     "options": [
-      "扱って",
-      "吸って",
-      "汲って",
-      "級って"
+      "断った",
+      "絶った",
+      "拒った",
+      "否った"
     ],
     "answer": 0,
     "tr": {
-      "zh": "这家店经营很多从国外进口的食品。",
-      "en": "This shop carries a lot of food imported from abroad."
+      "zh": "朋友约我去旅行，但工作太忙，我拒绝了。",
+      "en": "A friend invited me on a trip, but I was busy with work, so I turned it down."
     },
     "why": {
-      "zh": "「あつかう」（经营、处理）写作「扱う」，提手旁。",
-      "en": "あつかう (handle, deal in) is 「扱う」, with the hand radical."
+      "zh": "\"拒绝（邀请、请求）\"的「ことわる」写作「断る」。",
+      "en": "ことわる, to turn down an invitation or request, is written 「断る」."
     },
     "wrong": [
       null,
       {
-        "zh": "「吸って」读「すって」（吸），是口字旁的另一个词。",
-        "en": "「吸って」 is すって (breathe in, smoke), a different word with the mouth radical."
+        "zh": "「絶つ」读「たつ」（断绝），如「連絡を絶つ」，不读「ことわる」。",
+        "en": "「絶つ」 is たつ, to cut off (「連絡を絶つ」), not ことわる."
       },
       {
-        "zh": "「汲」是三点水，用在「くむ」（汲水），不读「あつかう」。",
-        "en": "「汲」 has the water radical and is used for くむ (draw water), not あつかう."
+        "zh": "「拒」有\"拒绝\"的意思，但训读是「こばむ」（拒む），没有「拒る」的写法。",
+        "en": "拒 does mean refuse, but its verb is 「拒む」 (こばむ); 「拒った」 isn't a spelling."
       },
       {
-        "zh": "「級」是「上級」的「級」，不能当动词用。",
-        "en": "「級」 is the kanji of 「上級」 (grade); it isn't a verb."
+        "zh": "「否」是「否定・拒否」的「否」，没有「否る」这个写法。",
+        "en": "否 is the kanji of 「否定」; there is no verb 「否る」."
       }
     ]
   },
   {
     "id": "n2-m1-011",
+    "rev": 2,
     "type": "gokeisei",
-    "difficulty": 1,
-    "stem": "夜中に大きな声で電話をするなんて、（　）常識だ。",
+    "difficulty": 2,
+    "stem": "この映画には、何度見ても泣いてしまう（　）場面がいくつもある。",
     "options": [
-      "非",
-      "不",
-      "無",
-      "未"
+      "名",
+      "好",
+      "良",
+      "高"
     ],
     "answer": 0,
     "tr": {
-      "zh": "半夜大声打电话，真是没有常识。",
-      "en": "Talking loudly on the phone in the middle of the night is just inconsiderate."
+      "zh": "这部电影里有好几个看多少遍都会让人落泪的名场面。",
+      "en": "This film has several famous scenes that make you cry however many times you see them."
     },
     "why": {
-      "zh": "「常識」的否定是「非常識」（没常识、不合情理）。",
-      "en": "The negative of 「常識」 is 「非常識」 (lacking common sense, inconsiderate)."
+      "zh": "\"有名的、出色的场面\"是「名場面」：「名」接名词表示\"著名、杰出的\"（名作・名曲）。",
+      "en": "A famous, memorable scene is 「名場面」: 名 before a noun means famous or outstanding (名作, 名曲)."
     },
     "wrong": [
       null,
       {
-        "zh": "「不」接「便・満・安」等，没有「不常識」这个词。",
-        "en": "「不」 goes with words like 「便」「満」「安」; 「不常識」 isn't a word."
+        "zh": "「好」构成「好条件・好成績」（好的条件、成绩），但没有「好場面」。",
+        "en": "好 makes 「好成績」 (good results), but 「好場面」 isn't a word."
       },
       {
-        "zh": "「無」接「責任・関心」等，没有「無常識」这个词。",
-        "en": "「無」 goes with words like 「責任」「関心」; 「無常識」 isn't a word."
+        "zh": "「良」构成「良品・良心」，没有「良場面」。",
+        "en": "良 makes 「良品」, but 「良場面」 isn't a word."
       },
       {
-        "zh": "「未」表示\"尚未\"（如「未経験」），没有「未常識」这个词。",
-        "en": "「未」 means \"not yet\" (as in 「未経験」); 「未常識」 isn't a word."
+        "zh": "「高」构成「高収入・高品質」（数值高），没有「高場面」。",
+        "en": "高 makes 「高品質」 (high quality), but 「高場面」 isn't a word."
       }
     ]
   },
@@ -505,37 +510,38 @@
   },
   {
     "id": "n2-m1-015",
+    "rev": 2,
     "type": "gokeisei",
     "difficulty": 2,
-    "stem": "駅前の古い商店街が、5年かけて（　）開発されることになった。",
+    "stem": "久しぶりに広い公園に来て、子どもたちは楽しそうに走り（　）いる。",
     "options": [
-      "再",
-      "復",
-      "重",
-      "後"
+      "回って",
+      "込んで",
+      "切って",
+      "合って"
     ],
     "answer": 0,
     "tr": {
-      "zh": "车站前的旧商店街决定用5年时间进行再开发。",
-      "en": "The old shopping street by the station is to be redeveloped over five years."
+      "zh": "好久没来这么大的公园，孩子们开心地跑来跑去。",
+      "en": "At the big park for the first time in ages, the children are happily running all over the place."
     },
     "why": {
-      "zh": "「再〜」表示\"重新、再次\"，「再開発」就是\"旧城改造、再开发\"。",
-      "en": "「再〜」 means \"again, re-\"; 「再開発」 is redevelopment."
+      "zh": "\"到处跑、跑来跑去\"是「走り回る」：「〜回る」表示在各处做某事（歩き回る・探し回る）。",
+      "en": "Running about all over is 「走り回る」: 〜回る means doing something all around (歩き回る, 探し回る)."
     },
     "wrong": [
       null,
       {
-        "zh": "「復」用在「復興・回復」等词中，不能直接加在「開発」前。",
-        "en": "「復」 appears in words like 「復興」「回復」, but isn't a prefix on 「開発」."
+        "zh": "「走り込む」是\"跑进（某处）\"或\"进行跑步训练\"，和\"开心地在公园里\"不合。",
+        "en": "「走り込む」 is to run into a place or to do running training — not children happily playing."
       },
       {
-        "zh": "「重」用在「重要・重大」等词中，没有「重開発」这个词。",
-        "en": "「重」 is in words like 「重要」「重大」; 「重開発」 isn't a word."
+        "zh": "「走り切る」是\"跑完（全程）\"，如「マラソンを最後まで走り切る」。",
+        "en": "「走り切る」 is to run all the way to the finish (「マラソンを走り切る」)."
       },
       {
-        "zh": "「後」表示\"之后\"，没有「後開発」这个词。",
-        "en": "「後」 means \"after\"; 「後開発」 isn't a word."
+        "zh": "没有「走り合う」这个说法；「〜合う」表示互相（話し合う），跑步不是互相的动作。",
+        "en": "「走り合う」 isn't used: 〜合う means doing something to each other (話し合う)."
       }
     ]
   },
@@ -757,95 +763,98 @@
   },
   {
     "id": "n2-m1-022",
+    "rev": 2,
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "このアプリは、使う人の好みに合わせて画面のデザインを（　）できる。",
+    "stem": "大雨のため、今夜予定されていた花火大会は（　）になった。",
     "options": [
-      "カスタマイズ",
-      "リサイクル",
-      "リフォーム",
-      "キャンセル"
+      "中止",
+      "中断",
+      "中退",
+      "中継"
     ],
     "answer": 0,
     "tr": {
-      "zh": "这个应用可以根据用户的喜好自定义界面设计。",
-      "en": "This app lets you customize the screen design to your taste."
+      "zh": "因为大雨，原定今晚举行的烟花大会取消了。",
+      "en": "Because of the heavy rain, tonight's planned fireworks display has been cancelled."
     },
     "why": {
-      "zh": "\"按喜好改设置\"是「カスタマイズ」（定制、自定义）。",
-      "en": "Adjusting something to your taste is 「カスタマイズ」 (customize)."
+      "zh": "还没开始的活动\"取消\"是「中止」。「予定されていた」说明尚未开始。",
+      "en": "An event called off before it starts is 「中止」; 「予定されていた」 shows it hadn't begun."
     },
     "wrong": [
       null,
       {
-        "zh": "「リサイクル」是\"回收再利用\"，与画面设计无关。",
-        "en": "「リサイクル」 is recycling; it has nothing to do with screen design."
+        "zh": "「中断」是已经开始的事中途停下，如「試合が雨で中断した」；还没开始的活动用「中止」。",
+        "en": "「中断」 is stopping something already under way (「試合が中断した」); an event not yet begun is 「中止」."
       },
       {
-        "zh": "「リフォーム」指房屋\"翻修\"，不用于应用画面。",
-        "en": "「リフォーム」 means renovating a home, not changing an app's screen."
+        "zh": "「中退」是\"中途退学\"，如「大学を中退する」。",
+        "en": "「中退」 is dropping out of school (「大学を中退する」)."
       },
       {
-        "zh": "「キャンセル」是\"取消\"，与\"按喜好\"不符。",
-        "en": "「キャンセル」 is cancelling, which doesn't fit \"to your taste\"."
+        "zh": "「中継」是\"转播\"，如「テレビで中継する」。",
+        "en": "「中継」 is a live broadcast/relay (「テレビで中継する」)."
       }
     ]
   },
   {
     "id": "n2-m1-023",
+    "rev": 2,
     "type": "iikae",
     "difficulty": 2,
-    "stem": "彼の説明は<<あいまいだった>>。",
+    "stem": "先生に注意されている間、彼はずっと<<うつむいて>>いた。",
     "options": [
-      "彼の説明ははっきりしなかった。",
-      "彼の説明はとても長かった。",
-      "彼の説明は分かりやすかった。",
-      "彼の説明は間違っていた。"
+      "下を向いて",
+      "目を閉じて",
+      "黙って",
+      "笑って"
     ],
     "answer": 0,
     "tr": {
-      "zh": "他的说明含糊不清。",
-      "en": "His explanation was vague."
+      "zh": "被老师批评的时候，他一直低着头。",
+      "en": "While the teacher was telling him off, he kept his head down the whole time."
     },
     "why": {
-      "zh": "「あいまい」（曖昧）是\"含糊、不明确\"，等于「はっきりしない」。",
-      "en": "「あいまい」 means vague or unclear — 「はっきりしない」."
+      "zh": "「うつむく」是\"低头、俯首\"，等于「下を向く」。",
+      "en": "「うつむく」 means to hang one's head — 「下を向く」."
     },
     "wrong": [
       null,
       {
-        "zh": "\"长\"与\"含糊\"是两回事。",
-        "en": "Being long isn't the same as being vague."
+        "zh": "「うつむく」说的是头的方向，不是闭眼。",
+        "en": "「うつむく」 is about where the head points, not closing one's eyes."
       },
       {
-        "zh": "\"容易懂\"与\"含糊\"意思相反。",
-        "en": "Easy to understand is the opposite of vague."
+        "zh": "低着头的人可能也不说话，但「うつむく」本身不是\"沉默\"。",
+        "en": "Someone with head bowed may be silent, but 「うつむく」 itself doesn't mean keeping quiet."
       },
       {
-        "zh": "\"含糊\"不等于\"错误\"，可能是对的但说得不清楚。",
-        "en": "Vague isn't wrong: it may be right but unclear."
+        "zh": "「うつむく」是\"低头\"，与笑无关。",
+        "en": "「うつむく」 is bowing the head; it says nothing about smiling."
       }
     ]
   },
   {
     "id": "n2-m1-024",
+    "rev": 2,
     "type": "iikae",
     "difficulty": 2,
     "stem": "休日の朝、町は<<ひっそりしていた>>。",
     "options": [
-      "休日の朝、町は静かだった。",
-      "休日の朝、町は暗かった。",
-      "休日の朝、町はにぎやかだった。",
-      "休日の朝、町は汚れていた。"
+      "静かだった",
+      "暗かった",
+      "寒かった",
+      "きれいだった"
     ],
     "answer": 0,
     "tr": {
-      "zh": "假日的早晨，街上静悄悄的。",
-      "en": "On the holiday morning, the town was quiet."
+      "zh": "休息日的早上，街上静悄悄的。",
+      "en": "On the holiday morning, the town was hushed and still."
     },
     "why": {
-      "zh": "「ひっそりする」是\"寂静、冷清\"，等于「静か」。",
-      "en": "「ひっそりする」 means hushed and deserted — 「静か」."
+      "zh": "「ひっそり」是\"寂静、没有人声\"，最接近「静か」。",
+      "en": "「ひっそり」 means hushed, with no one about — closest to 「静か」."
     },
     "wrong": [
       null,
@@ -854,120 +863,123 @@
         "en": "「ひっそり」 is about quiet and few people, not darkness."
       },
       {
-        "zh": "「にぎやか」（热闹）与「ひっそり」意思相反。",
-        "en": "「にぎやか」 (lively) is the opposite of 「ひっそり」."
+        "zh": "「ひっそり」与气温无关。",
+        "en": "「ひっそり」 has nothing to do with temperature."
       },
       {
-        "zh": "「ひっそり」与\"脏\"无关。",
-        "en": "「ひっそり」 has nothing to do with being dirty."
+        "zh": "「ひっそり」不是\"干净\"，是\"安静、冷清\"。",
+        "en": "「ひっそり」 isn't clean; it is quiet and empty."
       }
     ]
   },
   {
     "id": "n2-m1-025",
+    "rev": 2,
     "type": "iikae",
-    "difficulty": 3,
-    "stem": "子どもが飛び出してきたので、<<とっさに>>ブレーキを踏んだ。",
+    "difficulty": 2,
+    "stem": "その新しいゲーム機は、発売されると<<たちまち>>売り切れた。",
     "options": [
-      "子どもが飛び出してきたので、その瞬間すぐにブレーキを踏んだ。",
-      "子どもが飛び出してきたので、ゆっくりブレーキを踏んだ。",
-      "子どもが飛び出してきたので、何度もブレーキを踏んだ。",
-      "子どもが飛び出してきたので、思い切りブレーキを踏んだ。"
+      "すぐに",
+      "やっと",
+      "意外にも",
+      "次々に"
     ],
     "answer": 0,
     "tr": {
-      "zh": "因为有孩子突然冲出来，我下意识地踩了刹车。",
-      "en": "A child ran out, so I hit the brakes on reflex."
+      "zh": "那款新游戏机一发售就马上卖光了。",
+      "en": "The new games console sold out the moment it went on sale."
     },
     "why": {
-      "zh": "「とっさに」是\"一瞬间、下意识地\"，等于「その瞬間すぐに」。",
-      "en": "「とっさに」 means instantly, without thinking — 「その瞬間すぐに」."
+      "zh": "「たちまち」是\"转眼间、马上\"，等于「すぐに」。",
+      "en": "「たちまち」 means in an instant — 「すぐに」."
     },
     "wrong": [
       null,
       {
-        "zh": "「ゆっくり」（慢慢地）与「とっさに」的\"瞬间\"相反。",
-        "en": "「ゆっくり」 (slowly) is the opposite of the instant 「とっさに」."
+        "zh": "「やっと」是\"终于\"，含有等了很久的意思，与「たちまち」相反方向。",
+        "en": "「やっと」 is \"at last\", after a long wait — not \"in an instant\"."
       },
       {
-        "zh": "「とっさに」说的是反应快，不是次数多。",
-        "en": "「とっさに」 is about reacting instantly, not about how many times."
+        "zh": "「意外にも」是\"出乎意料\"，说的是预期，不是速度。",
+        "en": "「意外にも」 is \"unexpectedly\" — about expectation, not speed."
       },
       {
-        "zh": "「思い切り」是\"用力、使劲\"，说的是力度不是时间。",
-        "en": "「思い切り」 is about force, not timing."
+        "zh": "「次々に」是\"一个接一个\"，说的是连续，不是\"一下子\"。",
+        "en": "「次々に」 is \"one after another\", not \"in an instant\"."
       }
     ]
   },
   {
     "id": "n2-m1-026",
+    "rev": 2,
     "type": "iikae",
     "difficulty": 2,
     "stem": "<<ささやかな>>お礼ですが、どうぞ受け取ってください。",
     "options": [
-      "ちょっとしたお礼ですが、どうぞ受け取ってください。",
-      "高価なお礼ですが、どうぞ受け取ってください。",
-      "手作りのお礼ですが、どうぞ受け取ってください。",
-      "珍しいお礼ですが、どうぞ受け取ってください。"
+      "ちょっとした",
+      "心をこめた",
+      "手作りの",
+      "珍しい"
     ],
     "answer": 0,
     "tr": {
       "zh": "一点小小的谢礼，请收下。",
-      "en": "It's just a small token of thanks, but please accept it."
+      "en": "It's only a small token of thanks, but please accept it."
     },
     "why": {
-      "zh": "「ささやか」是\"微薄、小小的\"，等于「ちょっとした」，常用于谦虚地说自己送的东西。",
-      "en": "「ささやか」 means modest, small — 「ちょっとした」; it's used humbly about your own gift."
+      "zh": "「ささやか」是\"小小的、微薄的\"（谦虚说法），等于「ちょっとした」。",
+      "en": "「ささやか」 means modest, small (a humble word) — 「ちょっとした」."
     },
     "wrong": [
       null,
       {
-        "zh": "「高価」（贵重）与「ささやか」的\"微薄\"相反。",
-        "en": "「高価」 (expensive) is the opposite of modest."
+        "zh": "「ささやか」说的是规模小，不是\"用心\"。",
+        "en": "「ささやか」 is about being small, not heartfelt."
       },
       {
-        "zh": "「ささやか」说的是规模小，不是\"亲手做的\"。",
-        "en": "「ささやか」 is about being small, not handmade."
+        "zh": "「ささやか」不是\"亲手做的\"。",
+        "en": "「ささやか」 doesn't mean handmade."
       },
       {
-        "zh": "「ささやか」不表示\"珍稀\"。",
+        "zh": "「ささやか」不是\"少见的\"。",
         "en": "「ささやか」 doesn't mean rare."
       }
     ]
   },
   {
     "id": "n2-m1-027",
+    "rev": 2,
     "type": "iikae",
     "difficulty": 2,
-    "stem": "面接の前、彼は<<しきりに>>時計を見ていた。",
+    "stem": "彼の小説は<<ありふれた>>話ばかりで、途中で飽きてしまった。",
     "options": [
-      "面接の前、彼は何度も時計を見ていた。",
-      "面接の前、彼はちらっと時計を見ていた。",
-      "面接の前、彼はぼんやり時計を見ていた。",
-      "面接の前、彼は一度だけ時計を見ていた。"
+      "よくある",
+      "古い",
+      "暗い",
+      "長い"
     ],
     "answer": 0,
     "tr": {
-      "zh": "面试前，他频频看表。",
-      "en": "Before the interview, he kept looking at his watch."
+      "zh": "他的小说全是些司空见惯的故事，我读到一半就腻了。",
+      "en": "His novels are all commonplace stories, and I got bored halfway through."
     },
     "why": {
-      "zh": "「しきりに」是\"频频、一再\"，等于「何度も」。",
-      "en": "「しきりに」 means repeatedly — 「何度も」."
+      "zh": "「ありふれた」是\"常见的、司空见惯的\"，等于「よくある」。",
+      "en": "「ありふれた」 means commonplace — 「よくある」."
     },
     "wrong": [
       null,
       {
-        "zh": "「ちらっと」是\"瞥一眼\"，说的是时间短，不是次数多。",
-        "en": "「ちらっと」 is a brief glance, not repeated looking."
+        "zh": "「ありふれた」是\"到处都有\"，不是\"旧\"。",
+        "en": "「ありふれた」 is \"found everywhere\", not \"old\"."
       },
       {
-        "zh": "「ぼんやり」是\"呆呆地\"，不表示次数。",
-        "en": "「ぼんやり」 means absent-mindedly; it says nothing about how often."
+        "zh": "「ありふれた」与内容是否阴暗无关。",
+        "en": "「ありふれた」 says nothing about being gloomy."
       },
       {
-        "zh": "「一度だけ」与\"频频\"意思相反。",
-        "en": "「一度だけ」 (just once) is the opposite of repeatedly."
+        "zh": "「ありふれた」与长度无关。",
+        "en": "「ありふれた」 says nothing about length."
       }
     ]
   },

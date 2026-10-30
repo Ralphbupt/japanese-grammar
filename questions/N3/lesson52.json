@@ -41,41 +41,42 @@
   },
   {
     "id": "n3-l52-002",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson52#1"
     ],
     "difficulty": 2,
-    "stem": "彼女は（　）ふりを して、パーティーの 会場に 入った。",
+    "stem": "彼女は 招待されて いないのに、関係者の（　）パーティーの 会場に 入った。",
     "options": [
-      "関係者の",
-      "関係者な",
-      "関係者だ",
-      "関係者で"
+      "ふりを して",
+      "はずなので",
+      "おかげで",
+      "せいで"
     ],
     "answer": 0,
-    "full": "彼女は 関係者の ふりを して、パーティーの 会場に 入った。",
+    "full": "彼女は 招待されて いないのに、関係者の ふりを して パーティーの 会場に 入った。",
     "tr": {
-      "zh": "她假装是相关人员，进了派对会场。",
-      "en": "She pretended to be staff and got into the party venue."
+      "zh": "她明明没被邀请，却假装是相关人员进了派对会场。",
+      "en": "She hadn't been invited, but she pretended to be staff and got into the party venue."
     },
     "why": {
-      "zh": "「ふり」是名词，前面接名词时要加「の」：「関係者のふり」。",
-      "en": "「ふり」 is a noun, so a noun before it takes 「の」: 「関係者のふり」."
+      "zh": "“没被邀请却进了会场”，是装成相关人员，用「名词＋のふりをする」（假装……）。",
+      "en": "She wasn't invited yet got in — she acted as if she were staff: 「noun ＋ のふりをする」 (pretend to be)."
     },
     "wrong": [
       null,
       {
-        "zh": "「な」是な形容词修饰名词的形式，「関係者」是名词，不能接「な」。",
-        "en": "「な」 is for na-adjectives; 「関係者」 is a noun."
+        "zh": "「はずなので」是“应该是……所以”，可她明明没被邀请，并不是相关人员。",
+        "en": "「はずなので」 is \"since she should be\", but she wasn't invited, so she isn't staff."
       },
       {
-        "zh": "名词修饰名词时不能用「だ」，「関係者だふり」不成立。",
-        "en": "「だ」 can't link a noun to a following noun; 「関係者だふり」 is ungrammatical."
+        "zh": "「おかげで」是“多亏了相关人员”，句子说的是她自己装成相关人员。",
+        "en": "「おかげで」 credits the staff, but the sentence is about her posing as staff herself."
       },
       {
-        "zh": "「で」是连用形，后面不能直接接名词「ふり」。",
-        "en": "「で」 is a connective form and can't modify the noun 「ふり」."
+        "zh": "「せいで」把原因归于相关人员，而进会场是她自己装出来的。",
+        "en": "「せいで」 blames the staff, but she got in by pretending herself."
       }
     ]
   },
@@ -241,9 +242,9 @@
     "stem": "（　）ことに、旅行の 当日に 台風が 来て、飛行機が 全部 止まって しまった。",
     "options": [
       "残念な",
-      "残念",
-      "残念だ",
-      "残念の"
+      "うれしい",
+      "幸いな",
+      "ありがたい"
     ],
     "answer": 0,
     "full": "残念な ことに、旅行の 当日に 台風が 来て、飛行機が 全部 止まって しまった。",
@@ -252,22 +253,22 @@
       "en": "Unfortunately, a typhoon hit on the day of the trip and all the flights were grounded."
     },
     "why": {
-      "zh": "「ことに」前接な形容词时用「な」：「残念なことに」（遗憾的是）。",
-      "en": "Before 「ことに」, a na-adjective takes 「な」: 「残念なことに」."
+      "zh": "“旅行当天来了台风，飞机全停了”是令人遗憾的事，用「残念なことに」（遗憾的是）。",
+      "en": "A typhoon grounding every flight on the day of the trip is a pity: 「残念なことに」 (unfortunately)."
     },
     "wrong": [
       null,
       {
-        "zh": "な形容词词干不能直接接名词「こと」，要加「な」。",
-        "en": "A na-adjective stem can't attach directly to 「こと」; it needs 「な」."
+        "zh": "「うれしいことに」是“令人高兴的是”，飞机停飞不是好事。",
+        "en": "「うれしいことに」 is \"happily\", but grounded flights aren't good news."
       },
       {
-        "zh": "「だ」是句末形式，不能修饰「こと」。",
-        "en": "「だ」 ends a sentence; it can't modify 「こと」."
+        "zh": "「幸いなことに」是“幸运的是”，后面要接好事，和台风停飞相反。",
+        "en": "「幸いなことに」 is \"fortunately\" and needs good news after it."
       },
       {
-        "zh": "「の」用于名词，「残念」是な形容词，要用「な」。",
-        "en": "「の」 is for nouns; 「残念」 is a na-adjective and takes 「な」."
+        "zh": "「ありがたいことに」是“值得感激的是”，飞机全停不是值得感激的事。",
+        "en": "「ありがたいことに」 is \"thankfully\"; all flights being grounded isn't something to be thankful for."
       }
     ]
   },
@@ -434,7 +435,7 @@
       "lesson52#4"
     ],
     "difficulty": 1,
-    "stem": "この 電車は [_] [_] [★] [_]、都心まで 1時間も かかる。",
+    "stem": "この 電車は [★] [_] [_] [_]、都心まで 1時間も かかる。",
     "options": [
       "止まる",
       "ので",
@@ -453,15 +454,16 @@
       "en": "This train stops at every little station, so it takes a whole hour to get downtown."
     },
     "why": {
-      "zh": "小さな駅＋ごとに（每个……）＋止まる＋ので（原因）。★ 在第三格，是「止まる」。",
-      "en": "小さな駅 ＋ ごとに ＋ 止まる ＋ ので (reason). The ★ is the third slot: 「止まる」."
+      "zh": "小さな駅＋ごとに（每个……）＋止まる＋ので（原因）。★ 在第一格，是「小さな駅」。",
+      "en": "小さな駅 ＋ ごとに ＋ 止まる ＋ ので (reason). The ★ is the first slot: 「小さな駅」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l52-013",
@@ -550,7 +552,7 @@
       "lesson52#5"
     ],
     "difficulty": 2,
-    "stem": "昨日 あんなに けんかしたのに、彼は [_] [_] [★] [_] 話しかけて きた。",
+    "stem": "昨日 あんなに けんかしたのに、彼は [_] [★] [_] [_] 話しかけて きた。",
     "options": [
       "かのように",
       "何も",
@@ -569,14 +571,15 @@
       "en": "We had such a fight yesterday, yet he started talking to me as if nothing had happened."
     },
     "why": {
-      "zh": "まるで＋何も＋なかった（普通形）＋かのように，修饰「話しかけてきた」。★ 在第三格，是「なかった」。",
-      "en": "まるで ＋ 何も ＋ なかった (plain form) ＋ かのように, modifying 「話しかけてきた」. The ★ is the third slot: 「なかった」."
+      "zh": "まるで＋何も＋なかった（普通形）＋かのように，修饰「話しかけてきた」。★ 在第二格，是「何も」。",
+      "en": "まるで ＋ 何も ＋ なかった (plain form) ＋ かのように, modifying 「話しかけてきた」. The ★ is the second slot: 「何も」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   }
 ]

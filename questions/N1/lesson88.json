@@ -629,9 +629,9 @@
     "difficulty": 1,
     "stem": "この商店街には、昭和の頃から変わらない昔（　）の店が今も数多く残っている。",
     "options": [
-      "ぐるみ",
-      "まみれ",
       "ずくめ",
+      "ながらに",
+      "ながらにして",
       "ながら"
     ],
     "answer": 3,
@@ -646,16 +646,16 @@
     },
     "wrong": [
       {
-        "zh": "「ぐるみ」接集体名词表示整体参与，「昔ぐるみ」不成立。",
-        "en": "「ぐるみ」 follows a group noun; 「昔ぐるみ」 doesn't exist."
-      },
-      {
-        "zh": "「まみれ」用于沾满表面的脏东西，「昔まみれ」不成立。",
-        "en": "「まみれ」 is for grime on a surface; 「昔まみれ」 doesn't exist."
-      },
-      {
         "zh": "「ずくめ」是“全是……”的固定搭配，没有「昔ずくめ」。",
-        "en": "「ずくめ」 is \"nothing but\" in set phrases; there's no 「昔ずくめ」."
+        "en": "「ずくめ」 is \"nothing but …\"; 「昔ずくめ」 doesn't exist."
+      },
+      {
+        "zh": "「ながらに」是副词性用法（「涙ながらに語る」），后面不能直接接「の＋名词」。",
+        "en": "「ながらに」 is adverbial (「涙ながらに語る」); it can't take 「の」 + noun."
+      },
+      {
+        "zh": "「ながらにして」表示“保持……状态就”（「居ながらにして」），后面不能接「の」修饰名词。",
+        "en": "「ながらにして」 is \"while still in that state\" (「居ながらにして」); it can't take 「の」."
       },
       null
     ]

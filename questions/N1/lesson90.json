@@ -242,8 +242,8 @@
     "options": [
       "ごとくに",
       "ごときに",
-      "ごとしに",
-      "たるに"
+      "ごときを",
+      "ともあろう者に"
     ],
     "answer": 1,
     "full": "あんな新人ごときに負けるようでは、レギュラーの座は守れないぞ。",
@@ -262,12 +262,12 @@
       },
       null,
       {
-        "zh": "「ごとし」只能结句，后面不能接「に」。",
-        "en": "「ごとし」 only ends a sentence; it can't take 「に」."
+        "zh": "「負ける」的对象用「に」，「新人ごときを負ける」助词不对。",
+        "en": "「負ける」 takes 「に」; 「ごときを負ける」 has the wrong particle."
       },
       {
-        "zh": "「たる」用于尊重某种身份（「教師たるもの」），不能带轻视，「新人たるに」也不成立。",
-        "en": "「たる」 honours a status (教師たるもの); it can't express contempt, and 「新人たるに」 isn't a form."
+        "zh": "「ともあろう」用于身份地位高的人（「教師ともあろう者が」），与「あんな新人」的轻视语气矛盾。",
+        "en": "「ともあろう」 is for people of high standing; it clashes with the contempt in 「あんな新人」."
       }
     ]
   },
@@ -397,8 +397,8 @@
     "stem": "彼ほどの実力があれば、特別な対策（　）、合格は間違いないだろう。",
     "options": [
       "をせずとも",
-      "をしずとも",
-      "をさせずとも",
+      "をせんがため",
+      "をすべく",
       "をせずには"
     ],
     "answer": 0,
@@ -414,12 +414,12 @@
     "wrong": [
       null,
       {
-        "zh": "「する」的「ず」形是「せず」，「しずとも」是错误的接续。",
-        "en": "The ず form of 「する」 is 「せず」; 「しずとも」 is wrong."
+        "zh": "「んがため」是“为了……”，「为了做特别的对策，合格没问题」意思不通。",
+        "en": "「んがため」 is \"in order to\"; \"in order to do special prep, passing is certain\" doesn't make sense."
       },
       {
-        "zh": "「させずとも」是“不让（别人）做也”，和句意不符。",
-        "en": "「させずとも」 means \"even without making someone do it\", which doesn't fit."
+        "zh": "「べく」是“为了……而（去做）”，后面要接有意志的动作，不能接「合格は間違いない」。",
+        "en": "「べく」 is \"in order to\" and needs a deliberate action after it, not 「合格は間違いない」."
       },
       {
         "zh": "「せずには」后面要接「いられない」「おかない」等，不能接“肯定能合格”。",
@@ -474,8 +474,8 @@
     "options": [
       "んばかりの",
       "とばかりの",
-      "ないばかりの",
-      "ずくめの"
+      "んがための",
+      "ずじまいの"
     ],
     "answer": 0,
     "full": "長年の夢だった店をついに開いた日、彼は天にも昇らんばかりの気持ちだったという。",
@@ -494,12 +494,12 @@
         "en": "「とばかり」 follows a quoted thought; 「昇らとばかり」 is the wrong connection."
       },
       {
-        "zh": "「昇らないばかりの」是“只是没升上去”，不是“几乎要……”，接续也不对。",
-        "en": "「昇らないばかりの」 isn't a pattern; 「んばかり」 is needed for \"almost\"."
+        "zh": "「んがための」是“为了……的”，「天にも昇らんがための気持ち」意思不通。",
+        "en": "「んがための」 is \"for the purpose of\"; \"a feeling for the purpose of rising to heaven\" makes no sense."
       },
       {
-        "zh": "「ずくめ」接名词表示“全是……”，不接动词ない形。",
-        "en": "「ずくめ」 (nothing but) follows nouns, not the ない stem."
+        "zh": "「ずじまい」是“最终没能……”，和喜悦的心情不符。",
+        "en": "「ずじまい」 is \"ended up never …\", which doesn't fit his joy."
       }
     ]
   },

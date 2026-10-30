@@ -202,7 +202,7 @@
       "lesson54#2"
     ],
     "difficulty": 1,
-    "stem": "A「この 書類の 書き方が よく 分からない んですが…。」\nB「分からない ことが あったら、[_] [_] [★] [_] んですよ。」",
+    "stem": "A「この 書類の 書き方が よく 分からない んですが…。」\nB「分からない ことが あったら、[_] [★] [_] [_] んですよ。」",
     "options": [
       "くれれば",
       "聞いて",
@@ -221,15 +221,16 @@
       "en": "A: I'm not sure how to fill in this form… B: If there's anything you don't understand, just ask me."
     },
     "why": {
-      "zh": "私に＋聞いて＋くれれば＋いい（只要……就行）。★ 在第三格，是「くれれば」。",
-      "en": "私に ＋ 聞いて ＋ くれれば ＋ いい (\"all you need to do is\"). The ★ is the third slot: 「くれれば」."
+      "zh": "私に＋聞いて＋くれれば＋いい（只要……就行）。★ 在第二格，是「聞いて」。",
+      "en": "私に ＋ 聞いて ＋ くれれば ＋ いい (\"all you need to do is\"). The ★ is the second slot: 「聞いて」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l54-007",
@@ -318,7 +319,7 @@
       "lesson54#3"
     ],
     "difficulty": 1,
-    "stem": "雨が 降って きた。出かける ときに [_] [_] [★] [_]。",
+    "stem": "雨が 降って きた。出かける ときに [_] [_] [_] [★]。",
     "options": [
       "持って",
       "よかった",
@@ -337,15 +338,16 @@
       "en": "It's started raining. I should have brought an umbrella when I left."
     },
     "why": {
-      "zh": "傘を＋持って＋くれば（「持ってくる」的ば形）＋よかった（后悔）。★ 在第三格，是「くれば」。",
-      "en": "傘を ＋ 持って ＋ くれば (ば-form of 持ってくる) ＋ よかった (regret). The ★ is the third slot: 「くれば」."
+      "zh": "傘を＋持って＋くれば（「持ってくる」的ば形）＋よかった（后悔）。★ 在第四格，是「よかった」。",
+      "en": "傘を ＋ 持って ＋ くれば (ば-form of 持ってくる) ＋ よかった (regret). The ★ is the fourth slot: 「よかった」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l54-010",
@@ -550,7 +552,7 @@
       "lesson54#5"
     ],
     "difficulty": 2,
-    "stem": "引っ越したばかりの ころは、新しい 町の [_] [_] [★] [_] かかった。",
+    "stem": "引っ越したばかりの ころは、新しい 町の [_] [_] [_] [★] かかった。",
     "options": [
       "時間が",
       "溶け",
@@ -569,15 +571,16 @@
       "en": "When I'd just moved, it took a while to settle into life in the new town."
     },
     "why": {
-      "zh": "生活に＋溶け込む（融入）＋まで＋時間がかかった。★ 在第三格，是「込むまで」。",
-      "en": "生活に ＋ 溶け込む (blend in) ＋ まで ＋ 時間がかかった. The ★ is the third slot: 「込むまで」."
+      "zh": "生活に＋溶け込む（融入）＋まで＋時間がかかった。★ 在第四格，是「時間が」。",
+      "en": "生活に ＋ 溶け込む (blend in) ＋ まで ＋ 時間がかかった. The ★ is the fourth slot: 「時間が」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l54-016",
@@ -666,7 +669,7 @@
       "lesson54#6"
     ],
     "difficulty": 2,
-    "stem": "チームの メンバーで [_] [_] [★] [_] 作った。",
+    "stem": "チームの メンバーで [★] [_] [_] [_] 作った。",
     "options": [
       "合って",
       "新しい企画を",
@@ -685,14 +688,15 @@
       "en": "The team members pooled their ideas and came up with a new project."
     },
     "why": {
-      "zh": "意見を＋出し合って（互相提出）＋新しい企画を＋作った。★ 在第三格，是「合って」。",
-      "en": "意見を ＋ 出し合って (put forward together) ＋ 新しい企画を ＋ 作った. The ★ is the third slot: 「合って」."
+      "zh": "意見を＋出し合って（互相提出）＋新しい企画を＋作った。★ 在第一格，是「意見を」。",
+      "en": "意見を ＋ 出し合って (put forward together) ＋ 新しい企画を ＋ 作った. The ★ is the first slot: 「意見を」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   }
 ]

@@ -153,9 +153,9 @@
     "stem": "<<余裕>>",
     "options": [
       "早めに家を出たので、時間に余裕がある。",
-      "パーティーの料理が余裕して、たくさん残った。",
-      "買い物のあと、百円の余裕を受け取った。",
-      "お風呂のお湯が余裕しそうなので、止めてください。"
+      "パーティーの料理を作りすぎて、たくさん余裕が出た。",
+      "千円出したら、二百円の余裕が返ってきた。",
+      "毎月、給料の一部を余裕として銀行に預けている。"
     ],
     "answer": 0,
     "tr": {
@@ -163,22 +163,22 @@
       "en": "余裕: room to spare (time, money, composure). Correct: I left home early, so I have time to spare."
     },
     "why": {
-      "zh": "「余裕」是名词，常用「〜に余裕がある／ない」，不能当动词用。",
-      "en": "「余裕」 is a noun, used as 「〜に余裕がある／ない」; it isn't a verb."
+      "zh": "「余裕」是（时间、金钱、心情上的）富余、从容，常用「〜に余裕がある／ない」。",
+      "en": "「余裕」 is room to spare (time, money, composure), usually 「〜に余裕がある／ない」."
     },
     "wrong": [
       null,
       {
-        "zh": "菜剩下是「余って」。",
-        "en": "Food being left over is 「余って」."
+        "zh": "做多了剩下的菜是「余り」（余りが出た）。",
+        "en": "Leftover food is 「余り」 (余りが出た)."
       },
       {
         "zh": "找回的零钱是「おつり」。",
         "en": "Change from a purchase is 「おつり」."
       },
       {
-        "zh": "水快溢出来是「あふれそう」。",
-        "en": "Water about to overflow is 「あふれそう」."
+        "zh": "每月存进银行的钱是「貯金」。",
+        "en": "Money you put in the bank every month is 「貯金」."
       }
     ]
   },
@@ -192,9 +192,9 @@
     "stem": "<<油断>>",
     "options": [
       "簡単な相手だと油断していたら、負けてしまった。",
-      "出発する前に、車に油断を入れた。",
-      "彼は約束を油断して、来なかった。",
-      "この道は油断なので、夜は歩かないでください。"
+      "初めての発表なので、朝からとても油断している。",
+      "お客さんなんだから、油断しないでたくさん食べてね。",
+      "道路をわたるときは、車によく油断してください。"
     ],
     "answer": 0,
     "tr": {
@@ -202,22 +202,22 @@
       "en": "油断: dropping your guard. Correct: I thought my opponent was easy and got careless, and I lost."
     },
     "why": {
-      "zh": "「油断」是该小心的时候不小心，常说「油断する」「油断大敌」。",
-      "en": "「油断」 is not being careful when you should be: 「油断する」."
+      "zh": "「油断」是该小心的时候不小心、放松警惕，常说「油断する」「油断大敌」。",
+      "en": "「油断」 is dropping your guard when you should be careful: 「油断する」."
     },
     "wrong": [
       null,
       {
-        "zh": "给车加油是「ガソリンを入れた」，「油断」不是油。",
-        "en": "Filling up a car is 「ガソリンを入れた」 — 「油断」 isn't fuel."
+        "zh": "第一次发表、从早上就紧张，应说「緊張している」。",
+        "en": "Nervous all morning before a first presentation is 「緊張している」."
       },
       {
-        "zh": "不守约是「約束を破って」。",
-        "en": "Breaking a promise is 「約束を破って」."
+        "zh": "劝客人别客气多吃，应说「遠慮しないで」。",
+        "en": "Telling a guest not to hold back is 「遠慮しないで」."
       },
       {
-        "zh": "路很危险是「危険なので」或「危ないので」。",
-        "en": "A dangerous road is 「危険なので」 or 「危ないので」."
+        "zh": "过马路时要注意车辆，应说「注意してください」或「気をつけてください」。",
+        "en": "Watching out for cars when crossing is 「注意してください」 or 「気をつけてください」."
       }
     ]
   },
@@ -228,9 +228,9 @@
     "stem": "<<夢中>>",
     "options": [
       "弟はゲームに夢中で、呼んでも返事をしない。",
-      "部屋の夢中に、大きなテーブルが置いてある。",
-      "夢中がかなって、歌手になった。",
-      "この服は夢中なので、もう着られない。"
+      "山田先生は夢中な先生で、毎日遅くまで学生の質問に答えている。",
+      "姉は料理が夢中で、何を作ってもおいしい。",
+      "社長の話を、社員はみんな夢中な顔で聞いていた。"
     ],
     "answer": 0,
     "tr": {
@@ -238,22 +238,22 @@
       "en": "夢中: being absorbed in something. Correct: My brother is so absorbed in his game he doesn't answer when called."
     },
     "why": {
-      "zh": "「〜に夢中だ／夢中になる」是全神贯注、入迷。",
-      "en": "「〜に夢中だ／夢中になる」 is being completely absorbed in something."
+      "zh": "「〜に夢中だ／夢中になる」是全神贯注、入迷，说的是一时沉迷于某事，不用来形容人的性格或表情。",
+      "en": "「〜に夢中だ／夢中になる」 is being completely absorbed in something; it doesn't describe someone's character or expression."
     },
     "wrong": [
       null,
       {
-        "zh": "房间正中间是「真ん中」。",
-        "en": "The middle of a room is 「真ん中」."
+        "zh": "形容老师对工作热心，应说「熱心な先生」。",
+        "en": "A teacher devoted to the job is 「熱心な先生」."
       },
       {
-        "zh": "梦想实现是「夢がかなって」。",
-        "en": "A dream coming true is 「夢がかなって」."
+        "zh": "做菜做得好，应说「料理が得意で」。",
+        "en": "Being good at cooking is 「料理が得意で」."
       },
       {
-        "zh": "衣服旧了、穿不了是「古い」或「小さい」。",
-        "en": "Clothes too old or small to wear are 「古い」 or 「小さい」."
+        "zh": "认真听讲的表情，应说「真剣な顔」。",
+        "en": "A serious, attentive face is 「真剣な顔」."
       }
     ]
   },
@@ -337,7 +337,7 @@
     "options": [
       "最近忙しくて、ストレスがたまっている。",
       "前の車が急にたまったので、びっくりした。",
-      "投げたボールが窓ガラスにたまって、割れてしまった。",
+      "新しい工場ができて、この町の人口がたまった。",
       "この料理は時間がたまるので、早く作り始めよう。"
     ],
     "answer": 0,
@@ -356,8 +356,8 @@
         "en": "A car stopping is 「止まった」."
       },
       {
-        "zh": "球打到玻璃是「当たって」。",
-        "en": "A ball hitting glass is 「当たって」."
+        "zh": "人口增加，应说「人口が増えた」。",
+        "en": "A population growing is 「人口が増えた」."
       },
       {
         "zh": "花时间是「かかる」。",
@@ -408,9 +408,9 @@
     "stem": "<<目立つ>>",
     "options": [
       "彼は背が高いので、どこにいても目立つ。",
-      "けさは六時に目立って、散歩に行った。",
+      "このアニメは子どもたちに目立っていて、おもちゃがよく売れている。",
       "この薬はよく目立つので、すぐ治った。",
-      "妹は毎晩目立って、遅くまで勉強している。"
+      "この辞書はとても目立つので、毎日使っている。"
     ],
     "answer": 0,
     "tr": {
@@ -424,16 +424,16 @@
     "wrong": [
       null,
       {
-        "zh": "醒来是「目が覚めて」。",
-        "en": "Waking up is 「目が覚めて」."
+        "zh": "在孩子中很受欢迎，应说「人気があって」。",
+        "en": "Being popular with children is 「人気があって」."
       },
       {
-        "zh": "药有效是「よく効く」。",
-        "en": "A medicine working is 「よく効く」."
+        "zh": "药有效，应说「よく効く」。",
+        "en": "A medicine working well is 「よく効く」."
       },
       {
-        "zh": "努力学习是「熱心に」或「がんばって」。",
-        "en": "Studying hard is 「熱心に」 or 「がんばって」."
+        "zh": "词典很有用，应说「役に立つ」。",
+        "en": "A dictionary being useful is 「役に立つ」."
       }
     ]
   },
@@ -524,8 +524,8 @@
     "stem": "<<我慢>>",
     "options": [
       "痛いのを我慢して、最後まで走った。",
-      "彼は我慢な人で、人の話を全然聞かない。",
-      "あの店のケーキは我慢で、いつも行列ができている。",
+      "先生にしかられて、自分のしたことを我慢した。",
+      "旅行に行くために、毎月少しずつお金を我慢している。",
       "道がわからなかったので、駅員さんに我慢した。"
     ],
     "answer": 0,
@@ -534,22 +534,22 @@
       "en": "我慢: putting up with something. Correct: I put up with the pain and ran to the end."
     },
     "why": {
-      "zh": "「我慢」是忍住痛苦、欲望等：「〜を我慢する」。它是名词／する动词，不能说「我慢な」。",
-      "en": "「我慢」 is holding out against pain or a want: 「〜を我慢する」. It's a noun/suru verb — no 「我慢な」."
+      "zh": "「我慢」是忍住痛苦、欲望等：「〜を我慢する」。",
+      "en": "「我慢」 is holding out against pain or a want: 「〜を我慢する」."
     },
     "wrong": [
       null,
       {
-        "zh": "不听人说话的人是「わがままな人」。",
-        "en": "Someone who never listens is 「わがままな人」."
+        "zh": "被批评后回想自己的错，应说「反省した」。",
+        "en": "Thinking over what you did after being told off is 「反省した」."
       },
       {
-        "zh": "受欢迎的店是「人気で」。",
-        "en": "A popular cake is 「人気で」."
+        "zh": "为了旅行一点点存钱，应说「ためている」或「貯金している」。",
+        "en": "Putting money aside for a trip is 「ためている」 or 「貯金している」."
       },
       {
-        "zh": "问路是「聞いた」或「尋ねた」。",
-        "en": "Asking the way is 「聞いた」 or 「尋ねた」."
+        "zh": "向车站工作人员问路是「たずねた」。",
+        "en": "Asking station staff the way is 「たずねた」."
       }
     ]
   },
@@ -598,15 +598,15 @@
     "difficulty": 1,
     "stem": "<<交換>>",
     "options": [
-      "買ったシャツが小さかったので、大きいサイズと交換してもらった。",
-      "来月、駅の近くのアパートに交換する。",
+      "シャツが小さかったので、大きいのと交換してもらった。",
+      "来月、駅の近くの新しいアパートに交換することにした。",
       "東京駅で電車を交換して、大阪へ行った。",
       "この日本語の文を英語に交換してください。"
     ],
     "answer": 0,
     "tr": {
-      "zh": "交換（こうかん）：互换、更换。正确句：买的衬衫小了，请店里换成了大号。",
-      "en": "交換: exchanging one thing for another. Correct: The shirt I bought was too small, so they exchanged it for a bigger size."
+      "zh": "交換（こうかん）：互换、更换。正确句：衬衫小了，请店里换成了大的。",
+      "en": "交換: exchanging one thing for another. Correct: The shirt was too small, so they swapped it for a bigger one."
     },
     "why": {
       "zh": "「交換」是用一样东西换另一样：「AをBと交換する」。",
@@ -671,9 +671,9 @@
     "stem": "<<詳しい>>",
     "options": [
       "田中さんは車に詳しいので、聞いてみよう。",
-      "この部屋は詳しくて、とても気持ちがいい。",
-      "外は詳しい雨が降っていて、出かけられない。",
-      "この服はわたしには詳しすぎて、着られない。"
+      "千円札しかなくて詳しいお金がないので、バスに乗れなかった。",
+      "外は詳しい雨が降っていて、少し寒い。",
+      "この時計はとても詳しくて、一秒も遅れない。"
     ],
     "answer": 0,
     "tr": {
@@ -687,16 +687,16 @@
     "wrong": [
       null,
       {
-        "zh": "房间宽敞明亮是「広くて」「明るくて」。",
-        "en": "A spacious, bright room is 「広くて」 or 「明るくて」."
+        "zh": "零钱是「細かいお金」。",
+        "en": "Small change is 「細かいお金」."
       },
       {
-        "zh": "大雨是「激しい雨」或「強い雨」。",
-        "en": "Heavy rain is 「激しい雨」 or 「強い雨」."
+        "zh": "细雨是「細かい雨」（或「小雨」）。",
+        "en": "Fine rain is 「細かい雨」 (or 「小雨」)."
       },
       {
-        "zh": "衣服太小是「小さすぎて」。",
-        "en": "Clothes too small are 「小さすぎて」."
+        "zh": "钟表走得准，应说「正確で」。",
+        "en": "A clock that keeps good time is 「正確で」."
       }
     ]
   },
@@ -710,9 +710,9 @@
     "stem": "<<悔しい>>",
     "options": [
       "あと一点で負けてしまって、本当に悔しい。",
-      "この薬は悔しくて、子どもは飲みたがらない。",
+      "一人暮らしを始めたばかりで、夜になると悔しくなる。",
       "遠くの友達が会いに来てくれて、とても悔しかった。",
-      "今日は悔しい天気で、一日中雨だった。"
+      "まだ食べられるのに捨てるなんて、悔しい。"
     ],
     "answer": 0,
     "tr": {
@@ -726,16 +726,16 @@
     "wrong": [
       null,
       {
-        "zh": "药苦是「苦くて」。",
-        "en": "Bitter medicine is 「苦くて」."
+        "zh": "一个人生活，晚上感到孤单，应说「寂しくなる」。",
+        "en": "Feeling lonely at night when living alone is 「寂しくなる」."
       },
       {
-        "zh": "朋友来看自己是高兴的事：「うれしかった」。",
-        "en": "A friend visiting makes you glad: 「うれしかった」."
+        "zh": "朋友远道来看我很高兴，应说「うれしかった」。",
+        "en": "Being happy a friend came a long way is 「うれしかった」."
       },
       {
-        "zh": "天气不好是「悪い天気」或「いやな天気」。",
-        "en": "Bad weather is 「悪い天気」 or 「いやな天気」."
+        "zh": "还能吃却扔掉，觉得可惜，应说「もったいない」。",
+        "en": "Throwing away food that's still good is 「もったいない」."
       }
     ]
   },
@@ -746,9 +746,9 @@
     "stem": "<<慌てる>>",
     "options": [
       "寝坊したので、慌てて家を出た。",
-      "このスープは慌てているので、気をつけて飲んでね。",
-      "庭の花がきれいに慌てている。",
-      "新しい靴が慌てていて、足が痛い。"
+      "休み時間になると、子どもたちが教室で慌てていて、うるさい。",
+      "これは慌てる仕事なので、今日中にやってください。",
+      "最近、若い人の間でこの歌が慌てている。"
     ],
     "answer": 0,
     "tr": {
@@ -762,16 +762,16 @@
     "wrong": [
       null,
       {
-        "zh": "汤很烫是「熱いので」。",
-        "en": "Hot soup is 「熱いので」."
+        "zh": "孩子们在教室里吵闹，应说「騒いでいて」。",
+        "en": "Children making a racket in the classroom is 「騒いでいて」."
       },
       {
-        "zh": "花开是「咲いている」。",
-        "en": "Flowers blooming is 「咲いている」."
+        "zh": "急需完成的工作是「急ぎの仕事」。",
+        "en": "A job that's needed urgently is 「急ぎの仕事」."
       },
       {
-        "zh": "鞋太紧是「きつくて」。",
-        "en": "Shoes that pinch are 「きつくて」."
+        "zh": "歌在年轻人中流行，应说「はやっている」。",
+        "en": "A song being popular among young people is 「はやっている」."
       }
     ]
   },
@@ -895,14 +895,14 @@
     "difficulty": 2,
     "stem": "<<素直>>",
     "options": [
-      "自分が悪かったと思ったら、素直に謝ったほうがいい。",
+      "悪いと思ったら、素直に謝ったほうがいい。",
       "彼は素直に足が速くて、だれも勝てない。",
       "引っ越しは素直に終わって、ほっとした。",
-      "今日は素直な天気で、洗濯物がよく乾く。"
+      "この道を素直に行くと、駅に着きます。"
     ],
     "answer": 0,
     "tr": {
-      "zh": "素直（すなお）：坦率、老实、听话。正确句：觉得自己错了，就老老实实地道歉比较好。",
+      "zh": "素直（すなお）：坦率、老实、听话。正确句：觉得自己不对，就老老实实地道歉比较好。",
       "en": "素直: frank, honest, obedient. Correct: If you think you were wrong, it's best to apologize honestly."
     },
     "why": {
@@ -920,8 +920,8 @@
         "en": "Going off without a hitch is 「無事に」 or 「順調に」."
       },
       {
-        "zh": "天气好是「いい天気」。",
-        "en": "Good weather is 「いい天気」."
+        "zh": "沿着路一直走是「まっすぐ行く」。",
+        "en": "Going straight along a road is 「まっすぐ行く」."
       }
     ]
   }

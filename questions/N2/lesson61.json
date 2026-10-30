@@ -48,10 +48,10 @@
     "difficulty": 1,
     "stem": "私にできたのは、ほんの少しの手伝い（　）。",
     "options": [
-      "に限る",
+      "に越したことはない",
       "にほかならない",
       "に過ぎない",
-      "どころではない"
+      "というものだ"
     ],
     "answer": 2,
     "full": "私にできたのは、ほんの少しの手伝いに過ぎない。",
@@ -65,17 +65,17 @@
     },
     "wrong": [
       {
-        "zh": "「に限る」是“……最好”，“一点点帮忙最好”意思不通。",
-        "en": "「に限る」 (… is best) makes no sense here."
+        "zh": "「に越したことはない」是“最好……”，与“我能做的只是一点帮忙”不符。",
+        "en": "「に越したことはない」 means 'it's best to…'; it doesn't fit 'all I could do was a little help'."
       },
       {
-        "zh": "「にほかならない」是强调“正是”，和「ほんの少し」的淡化语气矛盾。",
-        "en": "「にほかならない」 (precisely) is emphatic, clashing with the understatement 「ほんの少し」."
+        "zh": "「にほかならない」是“正是……”，用于强调断定原因或本质，不表示“只不过”的谦虚。",
+        "en": "「にほかならない」 means 'is nothing other than' and asserts; it isn't the modest 'merely'."
       },
       null,
       {
-        "zh": "「どころではない」是“哪有心思……”，“哪有心思帮一点点忙”不符合句意。",
-        "en": "「どころではない」 (no time for) doesn't fit \"all I could do was\"."
+        "zh": "「というものだ」是“这才叫……”，表示评价或感叹，与“只是一点”不符。",
+        "en": "「というものだ」 means 'that's what… is' — a judgment, not 'merely'."
       }
     ]
   },
@@ -240,10 +240,10 @@
     "difficulty": 1,
     "stem": "疲れがたまったときは、何も考えずにゆっくり休む（　）。",
     "options": [
-      "に限って",
+      "までもない",
       "に限る",
-      "に限らず",
-      "に限られる"
+      "わけがない",
+      "ものか"
     ],
     "answer": 1,
     "full": "疲れがたまったときは、何も考えずにゆっくり休むに限る。",
@@ -257,17 +257,17 @@
     },
     "wrong": [
       {
-        "zh": "「に限って」是“偏偏……”，后面要接意外的事，不能结句。",
-        "en": "「に限って」 (of all times) needs a following clause about something unexpected."
+        "zh": "「までもない」是“用不着……”，与“累了就该休息”的建议相反。",
+        "en": "「までもない」 means 'there's no need to', the opposite of the advice."
       },
       null,
       {
-        "zh": "「に限らず」是“不限于……”，后面要接分句，不能结句。",
-        "en": "「に限らず」 (not only) needs a following clause; it can't end the sentence."
+        "zh": "「わけがない」是“不可能……”，与提建议的语境不符。",
+        "en": "「わけがない」 means 'there's no way that', not advice."
       },
       {
-        "zh": "「に限られる」是“限于……”，“限于休息”不是推荐，意思不通。",
-        "en": "「に限られる」 (is limited to) isn't a recommendation and doesn't fit."
+        "zh": "「ものか」是“才不……呢”，表示强烈否定，与建议相反。",
+        "en": "「ものか」 is a strong 'I'll never…', the opposite of advice."
       }
     ]
   },
@@ -281,7 +281,7 @@
     "stem": "体調が悪いときは、無理をしない（　）。",
     "options": [
       "わけにはいかない",
-      "に限らない",
+      "ことはない",
       "どころではない",
       "に限る"
     ],
@@ -297,16 +297,16 @@
     },
     "wrong": [
       {
-        "zh": "「しないわけにはいかない」是“不能不（勉强）”，等于必须勉强，和身体不好的情况矛盾。",
-        "en": "「しないわけにはいかない」 means \"you have to push yourself\", the opposite of sensible advice here."
+        "zh": "「しないわけにはいかない」是“不得不做”，“不得不不勉强”说不通。",
+        "en": "「しないわけにはいかない」 means 'can't not do'; 'can't not avoid overdoing it' makes no sense."
       },
       {
-        "zh": "「に限らない」是“不限于……”，“不限于不勉强”意思不通。",
-        "en": "「に限らない」 (not limited to) makes no sense here."
+        "zh": "「しないことはない」是“并非不……”，与“身体不好时最好别勉强”的建议不符。",
+        "en": "「しないことはない」 means 'it's not that one doesn't'; it isn't advice."
       },
       {
-        "zh": "「どころではない」是“哪有心思……”，“哪有心思不勉强”意思不通。",
-        "en": "「どころではない」 (no time for) makes no sense with 「無理をしない」."
+        "zh": "「どころではない」是“哪有心思……”，接“不勉强”说不通。",
+        "en": "「どころではない」 means 'no time for'; it doesn't fit 'not overdoing it'."
       },
       null
     ]

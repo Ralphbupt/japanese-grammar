@@ -202,7 +202,7 @@
       "lesson56#2"
     ],
     "difficulty": 1,
-    "stem": "ここまで 来たら、[_] [_] [★] [_] 。",
+    "stem": "ここまで 来たら、[_] [_] [_] [★] 。",
     "options": [
       "しか",
       "頑張る",
@@ -221,15 +221,16 @@
       "en": "Having come this far, all I can do is keep going to the end."
     },
     "why": {
-      "zh": "最後まで＋頑張る（辞书形）＋しか＋ない。★ 在第三格，是「しか」。",
-      "en": "最後まで ＋ 頑張る (dictionary form) ＋ しか ＋ ない. The ★ is the third slot: 「しか」."
+      "zh": "最後まで＋頑張る（辞书形）＋しか＋ない。★ 在第四格，是「ない」。",
+      "en": "最後まで ＋ 頑張る (dictionary form) ＋ しか ＋ ない. The ★ is the fourth slot: 「ない」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l56-007",
@@ -282,8 +283,8 @@
     "options": [
       "すべきだった",
       "すべきだ",
-      "したべきだ",
-      "しないべきだった"
+      "する ところだった",
+      "しなくても よかった"
     ],
     "answer": 0,
     "full": "あの とき、もっと 早く 上司に 相談 すべきだった。今 思うと 後悔して いる。",
@@ -302,12 +303,12 @@
         "en": "「すべきだ」 is a present \"should\"; it doesn't fit 「あのとき」 and regret."
       },
       {
-        "zh": "「べき」接在辞书形后，不能接た形。",
-        "en": "「べき」 follows the dictionary form, never the ta-form."
+        "zh": "「するところだった」是“差点就……了”，和“现在想来很后悔”接不上。",
+        "en": "「するところだった」 is \"I almost did\", which doesn't fit \"looking back, I regret it\"."
       },
       {
-        "zh": "「べき」不接「ない」形，而且“当时应该不商量”和后悔的意思相反。",
-        "en": "「べき」 can't follow the nai-form, and \"should not have consulted\" is the opposite of the regret."
+        "zh": "「しなくてもよかった」是“本来不用商量”，和“后悔没早点商量”意思相反。",
+        "en": "「しなくてもよかった」 is \"I needn't have\", the opposite of regretting not doing it sooner."
       }
     ]
   },
@@ -318,7 +319,7 @@
       "lesson56#3"
     ],
     "difficulty": 1,
-    "stem": "自分の ことは [_] [_] [★] [_] 思う。",
+    "stem": "自分の ことは [_] [_] [_] [★] 思う。",
     "options": [
       "べきだ",
       "と",
@@ -337,15 +338,16 @@
       "en": "I think you should decide things about yourself on your own."
     },
     "why": {
-      "zh": "自分で＋決める（辞书形）＋べきだ＋と（思う）。★ 在第三格，是「べきだ」。",
-      "en": "自分で ＋ 決める (dictionary form) ＋ べきだ ＋ と (思う). The ★ is the third slot: 「べきだ」."
+      "zh": "自分で＋決める（辞书形）＋べきだ＋と（思う）。★ 在第四格，是「と」。",
+      "en": "自分で ＋ 決める (dictionary form) ＋ べきだ ＋ と (思う). The ★ is the fourth slot: 「と」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l56-010",
@@ -357,9 +359,9 @@
     "stem": "体調が 悪い ときは、無理を（　）。",
     "options": [
       "すべきでは ない",
-      "しない べきだ",
-      "すべき ない",
-      "する べきだ"
+      "する べきだ",
+      "せざるを 得ない",
+      "した ものだ"
     ],
     "answer": 0,
     "full": "体調が 悪い ときは、無理を すべきでは ない。",
@@ -374,16 +376,16 @@
     "wrong": [
       null,
       {
-        "zh": "「べき」不能接在「ない」形后面，否定要放在「べき」后面。",
-        "en": "「べき」 can't follow the nai-form; the negative goes after 「べき」."
+        "zh": "「するべきだ」是“应该勉强”，身体不舒服时这么说不合常理。",
+        "en": "「するべきだ」 is \"you should push yourself\", which makes no sense when you're unwell."
       },
       {
-        "zh": "「べき」的否定是「べきではない」，不能直接接「ない」。",
-        "en": "The negative of 「べき」 is 「べきではない」; 「べきない」 isn't a form."
+        "zh": "「せざるを得ない」是“不得不勉强”，这里是一般性的劝告，不是迫不得已。",
+        "en": "「せざるを得ない」 is \"have no choice but to\"; this is general advice, not something forced."
       },
       {
-        "zh": "“身体不舒服时应该勉强”意思不对。",
-        "en": "\"When you're unwell you should push yourself\" is the wrong meaning."
+        "zh": "「したものだ」是回忆过去的习惯（以前常常……），和“身体不舒服的时候”这种劝告不符。",
+        "en": "「したものだ」 recalls a past habit (\"I used to\"); it doesn't fit advice about when you're unwell."
       }
     ]
   },
@@ -434,7 +436,7 @@
       "lesson56#4"
     ],
     "difficulty": 1,
-    "stem": "子供の 前で そんな 言葉を [_] [_] [★] [_] 。",
+    "stem": "子供の 前で そんな 言葉を [_] [_] [_] [★] 。",
     "options": [
       "ない",
       "べき",
@@ -453,15 +455,16 @@
       "en": "You shouldn't use words like that in front of children."
     },
     "why": {
-      "zh": "使う（辞书形）＋べき＋では＋ない。★ 在第三格，是「では」。",
-      "en": "使う (dictionary form) ＋ べき ＋ では ＋ ない. The ★ is the third slot: 「では」."
+      "zh": "使う（辞书形）＋べき＋では＋ない。★ 在第四格，是「ない」。",
+      "en": "使う (dictionary form) ＋ べき ＋ では ＋ ない. The ★ is the fourth slot: 「ない」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l56-013",
@@ -550,7 +553,7 @@
       "lesson56#5"
     ],
     "difficulty": 2,
-    "stem": "もう 年末か。[_] [_] [★] [_] ね。",
+    "stem": "もう 年末か。[_] [_] [_] [★] ね。",
     "options": [
       "ものです",
       "時間が たつ",
@@ -569,14 +572,15 @@
       "en": "End of the year already? Time really flies, doesn't it."
     },
     "why": {
-      "zh": "時間がたつ＋のは＋早い＋ものです，表示感慨“真是……啊”。★ 在第三格，是「早い」。",
-      "en": "時間がたつ ＋ のは ＋ 早い ＋ ものです expresses the feeling \"how quickly…\". The ★ is the third slot: 「早い」."
+      "zh": "時間がたつ＋のは＋早い＋ものです，表示感慨“真是……啊”。★ 在第四格，是「ものです」。",
+      "en": "時間がたつ ＋ のは ＋ 早い ＋ ものです expresses the feeling \"how quickly…\". The ★ is the fourth slot: 「ものです」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   }
 ]

@@ -43,10 +43,10 @@
         "q": "佐藤さんが、希望に合う工房で研修を受ける場合、注意しなければならないことはどれか。",
         "difficulty": 3,
         "options": [
-          "応募の前に、必ず工房を見学しなければならない。",
-          "12月20日までに、工房で面接を受けなければならない。",
-          "研修を終えた後、県内で3年以上製作を続けないと、支援金の返還を求められることがある。",
-          "支援金を受けるために、研修中は土日も県内で過ごさなければならない。"
+          "応募する前に、工房の見学を予約して済ませておく必要がある。",
+          "12月20日までに、工房で面接と実技体験を受ける必要がある。",
+          "修了後に県内で3年以上製作しないと、支援金の返還を求められうる。",
+          "支援金を受けるため、研修中は土日も県内で過ごす必要がある。"
         ],
         "answer": 2,
         "why": {
@@ -55,17 +55,17 @@
         },
         "wrong": [
           {
-            "zh": "参观是「受け付けています」，可以参观，并非必须。",
-            "en": "Visits are 「受け付けています」 — offered, not required."
+            "zh": "见学是「受け付けています」，可以参加，但不是应征的条件。",
+            "en": "Visits are offered (「受け付けています」), not required before applying."
           },
           {
-            "zh": "12月20日是报名截止，面试在「1月に」进行。",
-            "en": "20 December is the deadline; interviews are 「1月に」."
+            "zh": "12月20日是报名截止日，面试和实技体验在1月进行。",
+            "en": "20 December is the application deadline; interviews and the practical trial are in January."
           },
           null,
           {
-            "zh": "条件只是「県内に住所を移して」研修，没有要求周末也待在县内。",
-            "en": "The condition is only moving his address 「県内に」; weekends aren't restricted."
+            "zh": "领取生活补助的条件是把「住所」迁到县内，并没有要求周末也待在县内；佐藤周末可以回县外的家。",
+            "en": "The allowance requires moving one's 「住所」 into the prefecture, not staying there at weekends, so Sato can still go home."
           }
         ]
       }

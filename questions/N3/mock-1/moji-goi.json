@@ -37,37 +37,38 @@
   },
   {
     "id": "n3-m1-002",
+    "rev": 2,
     "type": "kanji",
     "difficulty": 1,
-    "stem": "出かける前に、ガスの火が消えているか<<確認>>してください。",
+    "stem": "台風の影響で、飛行機の<<到着>>が二時間遅れた。",
     "options": [
-      "かくにん",
-      "かくいん",
-      "かっにん",
-      "がくにん"
+      "とうちゃく",
+      "とちゃく",
+      "とうじゃく",
+      "どうちゃく"
     ],
     "answer": 0,
     "tr": {
-      "zh": "出门前请确认煤气的火是否关了。",
-      "en": "Before you go out, please check that the gas is off."
+      "zh": "受台风影响，飞机晚到了两个小时。",
+      "en": "Because of the typhoon, the plane arrived two hours late."
     },
     "why": {
-      "zh": "「確認」（确认）读「かくにん」，「認」读「にん」。",
-      "en": "「確認」 (checking) is かくにん; 「認」 is にん."
+      "zh": "「到着」（到达）读「とうちゃく」：「到」是长音「とう」，「着」读「ちゃく」不浊化。",
+      "en": "「到着」 (arrival) is とうちゃく: 「到」 is とう with a long vowel, and 「着」 is ちゃく, unvoiced."
     },
     "wrong": [
       null,
       {
-        "zh": "「認」读「にん」，不读「いん」（「いん」是「院・員」的音）。",
-        "en": "「認」 is にん, not いん (いん is 「院」「員」)."
+        "zh": "「到」是长音「とう」，不是短音「と」。",
+        "en": "「到」 has a long vowel: とう, not と."
       },
       {
-        "zh": "「確」读「かく」，后面没有促音「っ」。",
-        "en": "「確」 is かく; there's no small っ."
+        "zh": "「着」在这里不浊化，读「ちゃく」。",
+        "en": "「着」 isn't voiced here; it's ちゃく."
       },
       {
-        "zh": "「確」读清音「かく」，不浊化成「がく」（「がく」是「学」）。",
-        "en": "「確」 is the unvoiced かく, not がく (がく is 「学」)."
+        "zh": "「到」读清音「とう」，不读「どう」。",
+        "en": "「到」 is unvoiced とう, not どう."
       }
     ]
   },
@@ -80,7 +81,7 @@
       "こまかい",
       "ほそかい",
       "さいかい",
-      "くわしかい"
+      "こまがい"
     ],
     "answer": 0,
     "tr": {
@@ -102,8 +103,8 @@
         "en": "さい is the on-reading of 「細」 (as in 「詳細」); an adjective with kana ending doesn't use it."
       },
       {
-        "zh": "「くわしい」是「詳しい」，汉字不同，也没有「くわしかい」这个词。",
-        "en": "くわしい is 「詳しい」, a different kanji, and くわしかい isn't a word."
+        "zh": "「細かい」的「か」不浊化，读「こまかい」。",
+        "en": "The か of 「細かい」 isn't voiced: こまかい."
       }
     ]
   },
@@ -152,7 +153,7 @@
       "いち",
       "いっち",
       "いじ",
-      "くらいち"
+      "いいち"
     ],
     "answer": 0,
     "tr": {
@@ -174,8 +175,8 @@
         "en": "「置」 is ち, not voiced to じ."
       },
       {
-        "zh": "「くらい」是「位」的训读，但「位置」用音读「い」。",
-        "en": "くらい is the kun-reading of 「位」, but 「位置」 uses the on-reading い."
+        "zh": "「位」读短音「い」，没有长音「いい」。",
+        "en": "「位」 is a short い, not a long いい."
       }
     ]
   },
@@ -217,37 +218,38 @@
   },
   {
     "id": "n3-m1-007",
+    "rev": 2,
     "type": "kanji",
     "difficulty": 2,
-    "stem": "この店では、学生は<<割引>>で買い物ができます。",
+    "stem": "危ないので、ここで道路を<<横断>>しないでください。",
     "options": [
-      "わりびき",
-      "わりひき",
-      "かつびき",
-      "わりいん"
+      "おうだん",
+      "おうたん",
+      "おだん",
+      "こうだん"
     ],
     "answer": 0,
     "tr": {
-      "zh": "在这家店，学生购物可以打折。",
-      "en": "Students get a discount at this shop."
+      "zh": "这里很危险，请不要在这里横穿马路。",
+      "en": "It's dangerous, so please don't cross the road here."
     },
     "why": {
-      "zh": "「割引」（打折）读「わりびき」，「引」在复合词后半要浊化成「びき」。",
-      "en": "「割引」 (discount) is わりびき: 「引」 is voiced to びき as the second half of the compound."
+      "zh": "「横断」（横穿）读「おうだん」：「横」音读「おう」（长音），「断」读浊音「だん」。",
+      "en": "「横断」 (crossing) is おうだん: 「横」 is おう (long vowel) and 「断」 is voiced だん."
     },
     "wrong": [
       null,
       {
-        "zh": "「引き」在这个复合词里要浊化，读「びき」。",
-        "en": "「引き」 is voiced in this compound: びき, not ひき."
+        "zh": "「断」读浊音「だん」，不读「たん」。",
+        "en": "「断」 is voiced: だん, not たん."
       },
       {
-        "zh": "「かつ」是「割」的音读（如「分割」），「割引」用训读「わり」。",
-        "en": "かつ is the on-reading of 「割」 (as in 「分割」); 「割引」 uses the kun-reading わり."
+        "zh": "「横」是长音「おう」，不是短音「お」。",
+        "en": "「横」 has a long vowel: おう, not お."
       },
       {
-        "zh": "「いん」是「引」的音读（如「引用」），「割引」读「びき」。",
-        "en": "いん is the on-reading of 「引」 (as in 「引用」); 「割引」 reads びき."
+        "zh": "「横」的音读是「おう」，「こう」是「黄・広・校」等字的音。",
+        "en": "「横」 is read おう; こう is the reading of 「黄」「広」「校」 and others."
       }
     ]
   },
@@ -289,37 +291,38 @@
   },
   {
     "id": "n3-m1-009",
+    "rev": 2,
     "type": "hyouki",
     "difficulty": 1,
-    "stem": "今学期は<<せいせき>>が上がったので、母にほめられた。",
+    "stem": "会議で決まったことを、部長に<<ほうこく>>した。",
     "options": [
-      "成績",
-      "成積",
-      "正績",
-      "正積"
+      "報告",
+      "報造",
+      "服告",
+      "服造"
     ],
     "answer": 0,
     "tr": {
-      "zh": "这学期成绩提高了，被妈妈表扬了。",
-      "en": "My grades went up this term, so my mother praised me."
+      "zh": "把会上决定的事向部长做了汇报。",
+      "en": "I reported what was decided at the meeting to the department head."
     },
     "why": {
-      "zh": "「せいせき」（成绩）写作「成績」，「績」是绞丝旁。",
-      "en": "せいせき (grades) is 「成績」; 「績」 has the thread radical 糸."
+      "zh": "「ほうこく」（报告、汇报）写作「報告」：“报”的「報」，“告诉”的「告」。",
+      "en": "ほうこく (report) is 「報告」: 「報」 as in 「情報」 and 「告」 as in 「広告」."
     },
     "wrong": [
       null,
       {
-        "zh": "「積」（禾字旁）是「積もる」「面積」的积，成绩的「せき」是「績」。",
-        "en": "「積」 (grain radical) is the 'pile up' of 「積もる」 and 「面積」; the せき of grades is 「績」."
+        "zh": "「造」是「造る」「製造」的造，读「ぞう」，不是「こく」。",
+        "en": "「造」 is the 'make' of 「造る」「製造」, read ぞう, not こく."
       },
       {
-        "zh": "「正」是正确的正，成绩的「せい」是「成」。",
-        "en": "「正」 means correct; the せい of grades is 「成」."
+        "zh": "「服」是衣服的服，读「ふく」；「ほう」是「報」。",
+        "en": "「服」 is 'clothes', read ふく; the ほう here is 「報」."
       },
       {
-        "zh": "两个字都错：应是「成」和「績」。",
-        "en": "Both kanji are wrong: it should be 「成」 and 「績」."
+        "zh": "两个字都错：应是「報」和「告」。",
+        "en": "Both kanji are wrong: it should be 「報」 and 「告」."
       }
     ]
   },
@@ -361,37 +364,38 @@
   },
   {
     "id": "n3-m1-011",
+    "rev": 2,
     "type": "hyouki",
     "difficulty": 2,
-    "stem": "この薬は、飲んでから30分ぐらいで<<こうか>>が出てくる。",
+    "stem": "駅前の新しいビルは、来年の春に<<かんせい>>する予定だ。",
     "options": [
-      "効果",
-      "効課",
-      "功果",
-      "効化"
+      "完成",
+      "完城",
+      "元成",
+      "元城"
     ],
     "answer": 0,
     "tr": {
-      "zh": "这种药吃下后大约30分钟见效。",
-      "en": "This medicine takes effect about 30 minutes after you take it."
+      "zh": "车站前的新大楼预定明年春天竣工。",
+      "en": "The new building in front of the station is due to be finished next spring."
     },
     "why": {
-      "zh": "「こうか」（效果）写作「効果」。",
-      "en": "こうか (effect) is 「効果」."
+      "zh": "「かんせい」（完成）写作「完成」：「完」是宝盖头下面一个「元」，「成」是“成功”的成。",
+      "en": "かんせい (completion) is 「完成」: 「完」 is 「元」 under a roof, and 「成」 as in 「成功」."
     },
     "wrong": [
       null,
       {
-        "zh": "「課」是「課長」「日課」的课，效果的「か」是「果」。",
-        "en": "「課」 is the 課 of 「課長」 and 「日課」; the か of effect is 「果」."
+        "zh": "「城」是城堡的城，读「じょう／しろ」，不是「せい」。",
+        "en": "「城」 is 'castle', read じょう or しろ, not せい."
       },
       {
-        "zh": "「功」读「こう」（如「成功」），但效果的「こう」是「効」。",
-        "en": "「功」 is also こう (as in 「成功」), but the こう of effect is 「効」."
+        "zh": "「元」读「げん／もと」，少了宝盖头，不是「完」。",
+        "en": "「元」 is げん or もと; without the roof it isn't 「完」."
       },
       {
-        "zh": "「化」读「か」（如「文化」），效果的「か」是「果」。",
-        "en": "「化」 is か (as in 「文化」), but the か of effect is 「果」."
+        "zh": "两个字都错：应是「完」和「成」。",
+        "en": "Both kanji are wrong: it should be 「完」 and 「成」."
       }
     ]
   },
@@ -469,73 +473,75 @@
   },
   {
     "id": "n3-m1-014",
+    "rev": 2,
     "type": "hyouki",
     "difficulty": 1,
-    "stem": "来週の<<すけじゅーる>>を確認してから、返事をします。",
+    "stem": "寒い日は、<<あたたかい>>スープが飲みたくなる。",
     "options": [
-      "スケジュール",
-      "スケジェール",
-      "スケジュル",
-      "スケヅュール"
+      "温かい",
+      "暖かい",
+      "援かい",
+      "湿かい"
     ],
     "answer": 0,
     "tr": {
-      "zh": "我确认一下下周的日程再答复你。",
-      "en": "I'll check next week's schedule and then get back to you."
+      "zh": "冷的日子里，就想喝热乎乎的汤。",
+      "en": "On cold days I feel like having some hot soup."
     },
     "why": {
-      "zh": "「すけじゅーる」（日程）写作「スケジュール」：「ジュ」加长音「ー」。",
-      "en": "すけじゅーる (schedule) is 「スケジュール」: ジュ followed by the long-vowel mark ー."
+      "zh": "汤、饭菜、饮料等东西的“温热”写「温かい」；「暖かい」用于天气、房间、衣服等。",
+      "en": "Warm food and drink is 「温かい」; 「暖かい」 is for weather, rooms and clothes."
     },
     "wrong": [
       null,
       {
-        "zh": "「ジェ」是「je」，这里的音是「ju」，要写「ジュ」。",
-        "en": "ジェ is 'je'; the sound here is 'ju', written ジュ."
+        "zh": "「暖かい」用于天气、气温（暖かい春），汤的温度用「温かい」。",
+        "en": "「暖かい」 is for weather and air (暖かい春); warm soup is 「温かい」."
       },
       {
-        "zh": "漏了长音「ー」。",
-        "en": "The long-vowel mark ー is missing."
+        "zh": "「援」是「応援」的援，读「えん」，和「暖」形近但不是“温暖”。",
+        "en": "「援」 is the 'support' of 「応援」, read えん; it only looks like 「暖」."
       },
       {
-        "zh": "「ヅ」一般不用来写「ju」的音，要写「ジュ」。",
-        "en": "ヅ isn't used for 'ju'; it's written ジュ."
+        "zh": "「湿」是「湿度」的湿（潮湿），和「温」形近但意思不同。",
+        "en": "「湿」 is the 'damp' of 「湿度」; it only looks like 「温」."
       }
     ]
   },
   {
     "id": "n3-m1-015",
+    "rev": 2,
     "type": "bunmyaku",
     "difficulty": 1,
-    "stem": "家を出るのが遅くなったが、（　）電車に間に合った。",
+    "stem": "疲れていたのか、授業中も（　）して、先生の話がほとんど頭に入らなかった。",
     "options": [
-      "ぎりぎり",
-      "そろそろ",
-      "のんびり",
-      "ますます"
+      "ぼんやり",
+      "はっきり",
+      "しっかり",
+      "さっぱり"
     ],
     "answer": 0,
     "tr": {
-      "zh": "出门晚了，不过勉强赶上了电车。",
-      "en": "I left home late, but I just barely caught the train."
+      "zh": "可能是累了，上课时也一直发呆，老师讲的几乎没听进去。",
+      "en": "Maybe I was tired: I sat there in a daze through class and hardly took in a word."
     },
     "why": {
-      "zh": "出门晚了却「間に合った」，是勉强赶上：「ぎりぎり間に合う」。",
-      "en": "Leaving late but still making it means 'just barely': 「ぎりぎり間に合う」."
+      "zh": "“累了”“没听进去”说明精神不集中，「ぼんやりする」是发呆、心不在焉。",
+      "en": "Tired and taking nothing in means not concentrating: 「ぼんやりする」 is to be in a daze."
     },
     "wrong": [
       null,
       {
-        "zh": "「そろそろ」是差不多该……了，用于即将做某事，不修饰「間に合った」。",
-        "en": "「そろそろ」 means 'it's about time to'; it doesn't go with 「間に合った」."
+        "zh": "「はっきりする」是清楚、明确，和“没听进去”矛盾。",
+        "en": "「はっきりする」 is to be clear, the opposite of taking nothing in."
       },
       {
-        "zh": "「のんびり」是悠闲，和出门晚了赶车的情况矛盾。",
-        "en": "「のんびり」 is leisurely, which contradicts rushing after a late start."
+        "zh": "「しっかりする」是振作、认真，认真听就不会听不进去。",
+        "en": "「しっかりする」 is to be alert and steady; then you would take it in."
       },
       {
-        "zh": "「ますます」是越来越，用于程度变化，不能修饰一次赶上。",
-        "en": "「ますます」 is 'more and more', for a growing degree, not a single catch."
+        "zh": "「さっぱりする」是清爽、痛快，用于洗澡后等，和上课没听进去无关。",
+        "en": "「さっぱりする」 is to feel refreshed (after a bath, say); it doesn't explain missing the lesson."
       }
     ]
   },
@@ -545,10 +551,10 @@
     "difficulty": 2,
     "stem": "彼は何度も約束を破ったので、みんなの（　）を失ってしまった。",
     "options": [
-      "しんよう",
-      "しんぱい",
-      "きょうみ",
-      "ゆうき"
+      "信用",
+      "心配",
+      "興味",
+      "勇気"
     ],
     "answer": 0,
     "tr": {
@@ -562,16 +568,16 @@
     "wrong": [
       null,
       {
-        "zh": "「しんぱい」是担心，「みんなの心配を失う」说不通。",
-        "en": "「しんぱい」 is worry; 'losing everyone's worry' makes no sense."
+        "zh": "「心配」是担心，「みんなの心配を失う」说不通。",
+        "en": "「心配」 is worry; 'losing everyone's worry' makes no sense."
       },
       {
-        "zh": "「きょうみ」是兴趣，失约和别人的兴趣无关。",
-        "en": "「きょうみ」 is interest; breaking promises has nothing to do with others' interest."
+        "zh": "「興味」是兴趣，失约和别人的兴趣无关。",
+        "en": "「興味」 is interest; breaking promises has nothing to do with others' interest."
       },
       {
-        "zh": "「ゆうき」是勇气，是自己的东西，不说「みんなの勇気を失う」。",
-        "en": "「ゆうき」 is courage, something of one's own; you don't 'lose everyone's courage'."
+        "zh": "「勇気」是勇气，是自己的东西，不说「みんなの勇気を失う」。",
+        "en": "「勇気」 is courage, something of one's own; you don't 'lose everyone's courage'."
       }
     ]
   },
@@ -617,10 +623,10 @@
     "difficulty": 2,
     "stem": "天気予報によると、あしたの雨の（　）は80パーセントだそうだ。",
     "options": [
-      "かくりつ",
-      "ぶぶん",
-      "はんい",
-      "ていど"
+      "確率",
+      "部分",
+      "範囲",
+      "程度"
     ],
     "answer": 0,
     "tr": {
@@ -634,52 +640,53 @@
     "wrong": [
       null,
       {
-        "zh": "「ぶぶん」是部分，不说「雨的部分是80%」。",
-        "en": "「ぶぶん」 is part; you don't say 'the part of rain is 80%'."
+        "zh": "「部分」是部分，不说「雨的部分是80%」。",
+        "en": "「部分」 is part; you don't say 'the part of rain is 80%'."
       },
       {
-        "zh": "「はんい」是范围，不和百分比的降雨预报搭配。",
-        "en": "「はんい」 is range or scope, not used with a rain percentage."
+        "zh": "「範囲」是范围，不和百分比的降雨预报搭配。",
+        "en": "「範囲」 is range or scope, not used with a rain percentage."
       },
       {
-        "zh": "「ていど」是程度，降雨预报的百分比不叫「程度」。",
-        "en": "「ていど」 is degree; a forecast percentage isn't called 「程度」."
+        "zh": "「程度」是程度，降雨预报的百分比不叫「程度」。",
+        "en": "「程度」 is degree; a forecast percentage isn't called 「程度」."
       }
     ]
   },
   {
     "id": "n3-m1-019",
+    "rev": 2,
     "type": "bunmyaku",
     "difficulty": 1,
-    "stem": "日本に来て一年たち、こちらの生活にも（　）なれました。",
+    "stem": "久しぶりに部屋をきれいに片付けたら、気分が（　）した。",
     "options": [
-      "すっかり",
-      "はっきり",
-      "しっかり",
-      "ぐっすり"
+      "すっきり",
+      "がっかり",
+      "びっくり",
+      "ぐったり"
     ],
     "answer": 0,
     "tr": {
-      "zh": "来日本一年了，已经完全习惯了这里的生活。",
-      "en": "It's been a year since I came to Japan, and I've completely got used to life here."
+      "zh": "好久没收拾房间了，收拾干净之后心情很舒畅。",
+      "en": "I tidied my room for the first time in ages, and it felt so refreshing."
     },
     "why": {
-      "zh": "一年过去，完全习惯了：「すっかり慣れる」。",
-      "en": "After a year you've 'completely' got used to it: 「すっかり慣れる」."
+      "zh": "房间收拾干净后心情变好，「気分がすっきりする」是心情舒畅、清爽。",
+      "en": "A tidy room lifts your mood: 「気分がすっきりする」 is to feel refreshed and clear."
     },
     "wrong": [
       null,
       {
-        "zh": "「はっきり」是清楚，用于看、说、记得，不修饰「慣れる」。",
-        "en": "「はっきり」 is clearly (seeing, saying, remembering), not for getting used to."
+        "zh": "「がっかりする」是失望，收拾干净不会让人失望。",
+        "en": "「がっかりする」 is to be disappointed; tidying doesn't disappoint."
       },
       {
-        "zh": "「しっかり」是牢固、可靠，「しっかりなれる」不自然。",
-        "en": "「しっかり」 is firmly or reliably; 「しっかりなれる」 isn't natural."
+        "zh": "「びっくりする」是吃惊，和收拾房间后的心情不符。",
+        "en": "「びっくりする」 is to be surprised, not the feeling after tidying up."
       },
       {
-        "zh": "「ぐっすり」只用于睡得很熟。",
-        "en": "「ぐっすり」 is only for sleeping soundly."
+        "zh": "「ぐったりする」是累得没劲，和“心情”搭配不上，也不是收拾后的好心情。",
+        "en": "「ぐったりする」 is to be worn out; it doesn't describe a lifted mood."
       }
     ]
   },
@@ -725,10 +732,10 @@
     "difficulty": 1,
     "stem": "来週の会議に（　）する人は、金曜日までに名前を書いてください。",
     "options": [
-      "しゅっせき",
-      "しゅっぱつ",
-      "しゅっきん",
-      "しゅっぴん"
+      "出席",
+      "出発",
+      "出勤",
+      "出品"
     ],
     "answer": 0,
     "tr": {
@@ -742,16 +749,16 @@
     "wrong": [
       null,
       {
-        "zh": "「しゅっぱつ」是出发，不说「会議に出発する」。",
-        "en": "「しゅっぱつ」 is departure; you don't 'depart to' a meeting with に like this."
+        "zh": "「出発」是出发，不说「会議に出発する」。",
+        "en": "「出発」 is departure; you don't 'depart to' a meeting with に like this."
       },
       {
-        "zh": "「しゅっきん」是上班，对象是公司，不是会议。",
-        "en": "「しゅっきん」 is going to work; it's about the office, not a meeting."
+        "zh": "「出勤」是上班，对象是公司，不是会议。",
+        "en": "「出勤」 is going to work; it's about the office, not a meeting."
       },
       {
-        "zh": "「しゅっぴん」是展出（作品），不用于会议。",
-        "en": "「しゅっぴん」 is exhibiting (a work), not attending a meeting."
+        "zh": "「出品」是展出（作品），不用于会议。",
+        "en": "「出品」 is exhibiting (a work), not attending a meeting."
       }
     ]
   },
@@ -901,14 +908,15 @@
   },
   {
     "id": "n3-m1-026",
+    "rev": 2,
     "type": "iikae",
     "difficulty": 1,
     "stem": "そのニュースは<<たちまち>>広まった。",
     "options": [
-      "そのニュースはすぐに広まった。",
-      "そのニュースはゆっくり広まった。",
-      "そのニュースは少しずつ広まった。",
-      "そのニュースは世界中に広まった。"
+      "すぐに",
+      "やっと",
+      "ふたたび",
+      "静かに"
     ],
     "answer": 0,
     "tr": {
@@ -922,29 +930,30 @@
     "wrong": [
       null,
       {
-        "zh": "「ゆっくり」是慢慢地，和「たちまち」相反。",
-        "en": "「ゆっくり」 is slowly — the opposite of 「たちまち」."
+        "zh": "「やっと」是“好不容易才”，表示花了很长时间，不是“转眼间”。",
+        "en": "「やっと」 is \"at last\", after a long time, not \"in an instant\"."
       },
       {
-        "zh": "「少しずつ」是一点一点地，也是慢，和「たちまち」相反。",
-        "en": "「少しずつ」 is little by little, also slow — not 「たちまち」."
+        "zh": "「ふたたび」是“再一次”，说的是次数，不是速度。",
+        "en": "「ふたたび」 is \"once again\", about how many times, not how fast."
       },
       {
-        "zh": "「世界中に」说的是范围，不是速度。",
-        "en": "「世界中に」 is about how far, not how fast."
+        "zh": "「静かに」是“悄悄地”，说的是方式，不是速度。",
+        "en": "「静かに」 is \"quietly\", about manner, not speed."
       }
     ]
   },
   {
     "id": "n3-m1-027",
+    "rev": 2,
     "type": "iikae",
     "difficulty": 2,
     "stem": "田中さんは同じミスを<<くりかえして>>いる。",
     "options": [
-      "田中さんは同じミスを何度もしている。",
-      "田中さんは同じミスを一度だけした。",
-      "田中さんは同じミスをなおしている。",
-      "田中さんは同じミスをかくしている。"
+      "何度もして",
+      "気にして",
+      "かくして",
+      "なおして"
     ],
     "answer": 0,
     "tr": {
@@ -952,71 +961,73 @@
       "en": "Tanaka keeps making the same mistake."
     },
     "why": {
-      "zh": "「くりかえす」是反复，＝「何度もする」。",
-      "en": "「くりかえす」 means repeat: 「何度もする」."
+      "zh": "「くりかえす」是反复做同样的事，＝「何度もする」。",
+      "en": "「くりかえす」 is doing the same thing again and again: 「何度もする」."
     },
     "wrong": [
       null,
       {
-        "zh": "「一度だけ」是只有一次，和反复相反。",
-        "en": "「一度だけ」 is only once — the opposite of repeating."
+        "zh": "「気にしている」是在意、放在心上，不是反复犯错。",
+        "en": "「気にしている」 is worrying about it, not making it again and again."
       },
       {
-        "zh": "「なおす」是改正，不是反复犯。",
-        "en": "「なおす」 is correcting it, not repeating it."
+        "zh": "「かくしている」是隐瞒，和“反复”无关。",
+        "en": "「かくしている」 is hiding it, nothing to do with repeating."
       },
       {
-        "zh": "「かくす」是隐瞒，和反复无关。",
-        "en": "「かくす」 is hiding it, unrelated to repeating."
+        "zh": "「なおしている」是在改正，和“反复犯同样的错”不同。",
+        "en": "「なおしている」 is correcting it, not repeating it."
       }
     ]
   },
   {
     "id": "n3-m1-028",
+    "rev": 2,
     "type": "iikae",
     "difficulty": 1,
-    "stem": "あの二人は<<そっくりだ>>。",
+    "stem": "彼の返事は<<あいまいだった>>。",
     "options": [
-      "あの二人はとてもよくにている。",
-      "あの二人はぜんぜんにていない。",
-      "あの二人はとても仲がいい。",
-      "あの二人はいつもいっしょにいる。"
+      "はっきりしなかった",
+      "冷たかった",
+      "短かった",
+      "遅かった"
     ],
     "answer": 0,
     "tr": {
-      "zh": "那两个人长得一模一样。",
-      "en": "Those two look exactly alike."
+      "zh": "他的回答含糊不清。",
+      "en": "His answer was vague."
     },
     "why": {
-      "zh": "「そっくり」是一模一样，＝「とてもよくにている」。",
-      "en": "「そっくり」 means just alike: 「とてもよくにている」."
+      "zh": "「あいまい」是含糊、不明确，＝「はっきりしない」。",
+      "en": "「あいまい」 is vague, unclear: 「はっきりしない」."
     },
     "wrong": [
       null,
       {
-        "zh": "「ぜんぜんにていない」是完全不像，意思相反。",
-        "en": "「ぜんぜんにていない」 is not alike at all — the opposite."
+        "zh": "「冷たかった」是态度冷淡，不是含糊。",
+        "en": "「冷たかった」 is a cold manner, not vagueness."
       },
       {
-        "zh": "「仲がいい」是关系好，不是长得像。",
-        "en": "「仲がいい」 is getting on well, not looking alike."
+        "zh": "「短かった」说的是长度，回答短不等于不明确。",
+        "en": "「短かった」 is about length; a short answer isn't necessarily vague."
       },
       {
-        "zh": "「いつもいっしょにいる」是总在一起，不是长得像。",
-        "en": "「いつもいっしょにいる」 is always being together, not looking alike."
+        "zh": "「遅かった」说的是时间，不是内容是否清楚。",
+        "en": "「遅かった」 is about timing, not whether the answer was clear."
       }
     ]
   },
   {
     "id": "n3-m1-029",
+    "rev": 2,
     "type": "iikae",
     "difficulty": 2,
     "stem": "妹は<<かしこい>>子どもだ。",
     "options": [
-      "妹は頭がいい子どもだ。",
-      "妹はやさしい子どもだ。",
-      "妹は元気な子どもだ。",
-      "妹はおとなしい子どもだ。"
+      "頭がいい",
+      "やさしい",
+      "元気な",
+      "おとなしい"
     ],
     "answer": 0,
     "tr": {
@@ -1030,12 +1041,12 @@
     "wrong": [
       null,
       {
-        "zh": "「やさしい」是温柔，说的是性格，不是聪明。",
-        "en": "「やさしい」 is kind — personality, not cleverness."
+        "zh": "「やさしい」是温柔、和善，说的是性格，不是聪明。",
+        "en": "「やさしい」 is kind, a matter of character, not cleverness."
       },
       {
-        "zh": "「元気」是有活力，和聪明无关。",
-        "en": "「元気」 is lively, unrelated to cleverness."
+        "zh": "「元気な」是有精神、健康，不是聪明。",
+        "en": "「元気な」 is lively and healthy, not clever."
       },
       {
         "zh": "「おとなしい」是文静、老实，不是聪明。",
@@ -1045,37 +1056,38 @@
   },
   {
     "id": "n3-m1-030",
+    "rev": 2,
     "type": "iikae",
     "difficulty": 3,
-    "stem": "あしたの会議は<<えんきになりました>>。",
+    "stem": "この店には、<<あらゆる>>種類のお茶がそろっている。",
     "options": [
-      "あしたの会議は、もっとあとの日にすることになりました。",
-      "あしたの会議は、やらないことになりました。",
-      "あしたの会議は、予定より早く始めることになりました。",
-      "あしたの会議は、ほかの場所ですることになりました。"
+      "すべての",
+      "新しい",
+      "めずらしい",
+      "高い"
     ],
     "answer": 0,
     "tr": {
-      "zh": "明天的会议延期了。",
-      "en": "Tomorrow's meeting has been postponed."
+      "zh": "这家店里各种各样的茶应有尽有。",
+      "en": "This shop has every kind of tea."
     },
     "why": {
-      "zh": "「延期」是延期，＝改到以后的日子再开。",
-      "en": "「延期」 is postponing: holding it on a later day."
+      "zh": "「あらゆる」是所有的、一切的，＝「すべての」。",
+      "en": "「あらゆる」 means every, all: 「すべての」."
     },
     "wrong": [
       null,
       {
-        "zh": "「やらない」是取消（「中止」），延期是以后还要开。",
-        "en": "「やらない」 is cancelling (「中止」); a postponed meeting still happens later."
+        "zh": "「新しい」是新的，不表示“所有”。",
+        "en": "「新しい」 is \"new\", not \"every\"."
       },
       {
-        "zh": "提前开始和延期方向相反。",
-        "en": "Starting earlier is the opposite direction from postponing."
+        "zh": "「めずらしい」是少见的，不表示“所有”。",
+        "en": "「めずらしい」 is \"rare\", not \"every\"."
       },
       {
-        "zh": "换地点是「場所の変更」，不是延期。",
-        "en": "A change of venue is 「場所の変更」, not postponing."
+        "zh": "「高い」说的是价格，不表示“所有”。",
+        "en": "「高い」 is about price, not \"every\"."
       }
     ]
   },
@@ -1189,37 +1201,38 @@
   },
   {
     "id": "n3-m1-034",
+    "rev": 2,
     "type": "youhou",
     "difficulty": 2,
-    "stem": "<<くわしい>>",
+    "stem": "<<うらやましい>>",
     "options": [
-      "道がわからなかったので、このあたりにくわしい人に聞いた。",
-      "この店のラーメンは、味がくわしくておいしい。",
-      "きょうは空がくわしくて、遠くの山までよく見える。",
-      "この道はくわしいので、大きい車は通れない。"
+      "毎年家族で海外旅行に行ける友だちが、うらやましい。",
+      "あしたの試験のことがうらやましくて、よく眠れない。",
+      "久しぶりに友だちから手紙が来て、とてもうらやましかった。",
+      "決勝であと一点で負けてしまい、うらやましくて泣いた。"
     ],
     "answer": 0,
     "tr": {
-      "zh": "我不认路，所以问了熟悉这一带的人。",
-      "en": "I didn't know the way, so I asked someone who knew the area well."
+      "zh": "うらやましい：羡慕。正确句：每年都能全家去国外旅行的朋友，真让人羡慕。",
+      "en": "うらやましい: envious. Correct: I envy my friend, whose family goes abroad every year."
     },
     "why": {
-      "zh": "「〜にくわしい」是对……很熟悉、很了解。",
-      "en": "「〜にくわしい」 means knowing a lot about something or somewhere."
+      "zh": "「うらやましい」是看到别人有自己没有的好东西而羡慕，对象是别人或别人的情况。",
+      "en": "「うらやましい」 is envy at someone else having something good you don't; it's about another person's situation."
     },
     "wrong": [
       null,
       {
-        "zh": "味道浓应说「こい」（濃い）。",
-        "en": "A rich taste is 「こい」 (濃い)."
+        "zh": "为考试担心得睡不着，应说「心配で」。",
+        "en": "Worrying about an exam so you can't sleep is 「心配で」."
       },
       {
-        "zh": "天空晴朗能看远应说「晴れて」或「すんで」。",
-        "en": "A clear sky is 「晴れて」 or 「すんで」."
+        "zh": "收到朋友来信很高兴，应说「うれしかった」。",
+        "en": "Being happy to get a letter is 「うれしかった」."
       },
       {
-        "zh": "路窄大车过不去应说「せまい」。",
-        "en": "A road too narrow for big vehicles is 「せまい」."
+        "zh": "差一分输掉而懊恼，应说「くやしくて」。",
+        "en": "Losing by one point and feeling frustrated is 「くやしくて」."
       }
     ]
   },

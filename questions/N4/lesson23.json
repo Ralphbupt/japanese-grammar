@@ -129,7 +129,7 @@
       "lesson23#1"
     ],
     "difficulty": 1,
-    "stem": "わたしは [_] [_] [★] [_]、まだ 仕事が よく わかりません。",
+    "stem": "わたしは [_] [_] [_] [★]、まだ 仕事が よく わかりません。",
     "options": [
       "なので",
       "入った",
@@ -149,15 +149,16 @@
       "en": "I've only just joined this company, so I don't really know the work yet."
     },
     "why": {
-      "zh": "この会社に ＋ 入った（た形）＋ ばかり ＋ なので。★ 在第三格，是「ばかり」。",
-      "en": "この会社に ＋ 入った (た-form) ＋ ばかり ＋ なので. The ★ is the third slot: 「ばかり」."
+      "zh": "この会社に ＋ 入った（た形）＋ ばかり ＋ なので。★ 在第四格，是「なので」。",
+      "en": "この会社に ＋ 入った (た-form) ＋ ばかり ＋ なので. The ★ is the fourth slot: 「なので」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l23-005",
@@ -289,7 +290,7 @@
       "lesson23#2"
     ],
     "difficulty": 2,
-    "stem": "ちょうど 電話しようと [_] [_] [★] [_]、彼から 電話が 来た。",
+    "stem": "ちょうど 電話しようと [_] [_] [_] [★]、彼から 電話が 来た。",
     "options": [
       "に",
       "ところ",
@@ -309,15 +310,16 @@
       "en": "Just as I was thinking of calling him, he called me."
     },
     "why": {
-      "zh": "「正在……的时候，（发生了）」用「ているところに」：思って ＋ いた ＋ ところ ＋ に。★ 在第三格，是「ところ」。",
-      "en": "\"Right when I was…\" is 「ているところに」: 思って ＋ いた ＋ ところ ＋ に. The ★ is the third slot: 「ところ」."
+      "zh": "「正在……的时候，（发生了）」用「ているところに」：思って ＋ いた ＋ ところ ＋ に。★ 在第四格，是「に」。",
+      "en": "\"Right when I was…\" is 「ているところに」: 思って ＋ いた ＋ ところ ＋ に. The ★ is the fourth slot: 「に」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l23-009",
@@ -408,7 +410,7 @@
       "lesson23#3"
     ],
     "difficulty": 1,
-    "stem": "すみません、[_] [_] [★] [_] んです。",
+    "stem": "すみません、[_] [★] [_] [_] んです。",
     "options": [
       "しまった",
       "割って",
@@ -428,14 +430,15 @@
       "en": "I'm sorry — I broke a precious plate."
     },
     "why": {
-      "zh": "大切な ＋ お皿を ＋ 割って ＋ しまった（遗憾）＋ んです。★ 在第三格，是「割って」。",
-      "en": "大切な ＋ お皿を ＋ 割って ＋ しまった (regret) ＋ んです. The ★ is the third slot: 「割って」."
+      "zh": "大切な ＋ お皿を ＋ 割って ＋ しまった（遗憾）＋ んです。★ 在第二格，是「お皿を」。",
+      "en": "大切な ＋ お皿を ＋ 割って ＋ しまった (regret) ＋ んです. The ★ is the second slot: 「お皿を」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   }
 ]

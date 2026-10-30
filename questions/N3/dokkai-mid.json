@@ -113,10 +113,10 @@
         "q": "筆者は病院で、最初なぜ困ったのか。",
         "difficulty": 1,
         "options": [
-          "スマートフォンがなく、待ち時間をどう過ごせばいいか分からなかったから",
-          "健康教室に申し込みたかったが、方法が分からなかったから",
-          "病院に連絡したかったが、電話を持っていなかったから",
-          "隣のおばあさんに、知らない話をされたから"
+          "スマートフォンがなくて、待つ間にすることがなかったから",
+          "健康教室のお知らせを見たが、申し込み方が分からなかったから",
+          "家族に連絡したかったが、電話を家に忘れてきたから",
+          "隣に座ったおばあさんに、知らない話をされたから"
         ],
         "answer": 0,
         "why": {
@@ -127,25 +127,25 @@
           null,
           {
             "zh": "健康讲座的通知是后来看周围时才发现的，文中没说想报名。",
-            "en": "The health-class notice was only spotted later, and nothing says the author wanted to sign up."
+            "en": "He noticed the health-class notice only later, while looking around, and never says he wanted to sign up."
           },
           {
             "zh": "文中困扰的是怎么打发时间，没有说要联系什么人。",
-            "en": "The problem was how to pass the time; there's no one the author needed to contact."
+            "en": "What troubled him was how to pass the time; he never says he needed to contact anyone."
           },
           {
             "zh": "和老奶奶是自然地聊起天气，而且这是后来的事，并不让人发愁。",
-            "en": "The chat about the weather came naturally and later; it wasn't a problem."
+            "en": "He chatted naturally with the woman about the weather — later, and not a problem."
           }
         ]
       },
       {
         "q": "「こうしたこと」とは何か。",
         "options": [
-          "病院の壁のお知らせや、近くに住む人がいたこと",
-          "スマートフォンを家に忘れてしまったこと",
-          "病院の受付で一時間も待たされること",
-          "スマートフォンがないと困るということ"
+          "壁のお知らせや、隣の人が同じ町内の人だったこと",
+          "スマートフォンを家に忘れてきてしまったこと",
+          "病院の受付で、一時間も待たされるということ",
+          "スマートフォンがないと、とても困るということ"
         ],
         "answer": 0,
         "why": {
@@ -172,9 +172,9 @@
         "q": "この文章で筆者が言いたいことは何か。",
         "options": [
           "スマートフォンを使わずに過ごす時間にも意味がある。",
-          "病院ではスマートフォンを使わないほうがいい。",
-          "スマートフォンは、なくても困らないものだ。",
-          "待ち時間は、近所の人と話すために使うべきだ。"
+          "病院の待ち時間には、スマートフォンを使わないほうがいい。",
+          "スマートフォンは便利だが、なくても困らないものだ。",
+          "待ち時間は、近所の人と話すために使ったほうがいい。"
         ],
         "answer": 0,
         "why": {
@@ -185,15 +185,15 @@
           null,
           {
             "zh": "作者没有说在医院不该用手机，只是说不用的时间也有价值，而且只是「時々」收起来。",
-            "en": "The author doesn't say phones shouldn't be used in hospitals — only that time without them has value, and puts it away just 「時々」."
+            "en": "He doesn't say phones shouldn't be used in hospitals; only that phone-free time has value, and he puts it away just 「時々」."
           },
           {
             "zh": "正相反，文中说「なくては困るものだ」。",
             "en": "The opposite: the text says 「なくては困るものだ」."
           },
           {
-            "zh": "和邻居聊天只是一个例子，作者没有说等待时间「应该」这样用。",
-            "en": "Talking to a neighbour is just one example; the author never says waiting time should be used that way."
+            "zh": "和邻居聊天只是一个例子，作者没有说等待时间应该这样用。",
+            "en": "Talking with a neighbour is one example; he doesn't say waiting time should be used that way."
           }
         ]
       }
@@ -270,10 +270,10 @@
       {
         "q": "本文の内容と合うものはどれか。",
         "options": [
-          "どちらの期限も、開けていない食品を正しく保存した場合のものだ。",
-          "賞味期限が過ぎた食品は、いつまでも安全に食べられる。",
-          "弁当やケーキには、賞味期限が書かれている。",
-          "食品が捨てられる原因は、消費期限が短すぎることだ。"
+          "どちらの期限も、開ける前に正しく保存したときのものだ。",
+          "賞味期限を過ぎても、一週間ぐらいは安全に食べられる。",
+          "弁当やケーキのような食品には、賞味期限が書かれている。",
+          "食品が捨てられる一番の原因は、消費期限が短すぎることだ。"
         ],
         "answer": 0,
         "why": {
@@ -283,16 +283,16 @@
         "wrong": [
           null,
           {
-            "zh": "文中只说过了一天「すぐに食べられなくなるわけではない」，不是一直都安全。",
-            "en": "The text only says one day past 「すぐに食べられなくなるわけではない」 — not that it's safe forever."
+            "zh": "文中只说过了一天「すぐに食べられなくなるわけではない」，没有说一周左右都安全。",
+            "en": "The text only says one day past the date 「すぐに食べられなくなるわけではない」; it never says a week is safe."
           },
           {
             "zh": "便当和蛋糕容易变质，标的是消费期限。",
-            "en": "Lunches and cakes go off quickly, so they carry a use-by date."
+            "en": "Bento and cake spoil quickly, so they carry a use-by date (消費期限)."
           },
           {
             "zh": "文中说原因之一是不知道两种期限的区别，没说消费期限太短。",
-            "en": "The cause given is not knowing the difference between the two dates, not use-by dates being too short."
+            "en": "The text names not knowing the difference as one cause; it never says use-by dates are too short."
           }
         ]
       }
@@ -313,9 +313,9 @@
         "difficulty": 1,
         "options": [
           "新しいアイデアが生まれにくくなったこと",
-          "仕事の効率が下がってしまったこと",
-          "オンラインの会議が多すぎること",
-          "ほかの部の資料が使えなくなったこと"
+          "仕事の効率が前より下がってしまったこと",
+          "オンラインの会議ばかりで、話が長くなること",
+          "ほかの部の資料を使う機会がなくなったこと"
         ],
         "answer": 0,
         "why": {
@@ -326,15 +326,15 @@
           null,
           {
             "zh": "正相反，第一段说「仕事の効率は上がった」。",
-            "en": "The opposite: paragraph one says 「仕事の効率は上がった」."
+            "en": "The opposite: paragraph 1 says 「仕事の効率は上がった」."
           },
           {
-            "zh": "文中说在线会议只谈规定议题，没有说会议太多。",
-            "en": "Online meetings stick to set topics; the text never says there are too many."
+            "zh": "文中说在线会议只谈规定的议题，没有说会议多或者谈得太长。",
+            "en": "Online meetings stick to set topics; nothing says there are too many or they run long."
           },
           {
-            "zh": "「うちの部の資料が使える」只是以前闲聊里出现的话的例子，并没有说现在不能用资料。",
-            "en": "「うちの部の資料が使える」 is just an example of past chat; nothing says the material can't be used now."
+            "zh": "「うちの部の資料が使える」只是以前闲聊里出现的话的例子，作者在意的是新点子少了。",
+            "en": "「うちの部の資料が使える」 is just an example of past small talk; his worry is the lack of new ideas."
           }
         ]
       },
@@ -440,10 +440,10 @@
       {
         "q": "筆者がピアノで素直にうれしいと感じるのはなぜか。",
         "options": [
-          "下手なのが当たり前なので、少しの進歩でもうれしいから",
-          "教室の小学生より上手に弾けるようになったから",
-          "ピアノは仕事より簡単で、失敗しないから",
-          "先生がいつもほめてくれるから"
+          "下手で当然なので、少しできるだけでもうれしいから",
+          "教室の小学生より、上手に弾けるようになったから",
+          "ピアノは思ったより簡単で、すぐに弾けるようになるから",
+          "先生がいつもそばで、手をたたいてほめてくれるから"
         ],
         "answer": 0,
         "why": {
@@ -454,15 +454,15 @@
           null,
           {
             "zh": "正相反，作者听到小学生弹得好会觉得难为情。",
-            "en": "The opposite: hearing the pupils play well makes the author embarrassed."
+            "en": "The opposite: hearing the children play well makes him embarrassed."
           },
           {
-            "zh": "作者说钢琴「思っていた以上に難しい」，并不简单，也会弹错。",
-            "en": "The author calls the piano 「思っていた以上に難しい」 — not easy, and mistakes happen."
+            "zh": "作者说钢琴「思っていた以上に難しい」，一首曲子要一个月。",
+            "en": "He says piano is 「思っていた以上に難しい」 — one piece takes him a month."
           },
           {
             "zh": "文中只有一次和老师一起拍手，没有说老师总是表扬。",
-            "en": "There's one moment of clapping with the teacher; nothing says the teacher always gives praise."
+            "en": "He clapped with his teacher once; nothing says the teacher always praises him."
           }
         ]
       },
@@ -470,9 +470,9 @@
         "q": "筆者の考えに合うものはどれか。",
         "options": [
           "大人になってから初心者として学ぶ時間は貴重だ。",
-          "ピアノは子どものうちに始めたほうがいい。",
-          "仕事でも、失敗を恐れずに挑戦するべきだ。",
-          "大人は子どもより早く上達することができる。"
+          "ピアノは、子どものうちに始めておくべきだった。",
+          "仕事でも、失敗を恐れずに新しいことに挑戦するべきだ。",
+          "大人は子どもより遅くても、毎日練習を続けるべきだ。"
         ],
         "answer": 0,
         "why": {
@@ -482,16 +482,16 @@
         "wrong": [
           null,
           {
-            "zh": "作者说孩子学得快，但没有主张应该小时候开始，而是肯定大人当初学者的价值。",
-            "en": "Children do learn faster in the text, but the author doesn't argue for starting young — they value being an adult beginner."
+            "zh": "作者没有后悔小时候没开始，而是肯定大人当初学者的价值。",
+            "en": "He doesn't regret not starting as a child; he values being a beginner as an adult."
           },
           {
             "zh": "工作只是拿来对比的，文中没有对工作态度提出建议。",
-            "en": "Work is only a contrast; the text gives no advice about how to work."
+            "en": "Work is only a contrast; he gives no advice about attitudes at work."
           },
           {
-            "zh": "正相反，孩子一周能弹的曲子作者要一个月。",
-            "en": "The opposite: a piece a child learns in a week takes the author a month."
+            "zh": "作者确实学得比孩子慢，但文中没有说要每天练习。",
+            "en": "He is slower than the children, but nothing says adults should practise every day."
           }
         ]
       }

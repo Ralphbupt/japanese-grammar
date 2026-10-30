@@ -188,7 +188,7 @@
       "はんい",
       "ばんい",
       "はんいん",
-      "はにい"
+      "はんえい"
     ],
     "answer": 0,
     "tr": {
@@ -210,8 +210,8 @@
         "en": "「囲」 is い, with no ん after it."
       },
       {
-        "zh": "「範」是「はん」，「はに」不是这个词的读音。",
-        "en": "「範」 is はん; はにい isn't a reading of this word."
+        "zh": "「はんえい」是「反映」的读音；「囲」读「い」。",
+        "en": "はんえい is the reading of 「反映」; 囲 here is い."
       }
     ]
   },
@@ -223,7 +223,7 @@
     "options": [
       "きょひ",
       "きょうひ",
-      "きょぴ",
+      "きょび",
       "こひ"
     ],
     "answer": 0,
@@ -242,8 +242,8 @@
         "en": "「拒」 is the short きょ — no long vowel."
       },
       {
-        "zh": "「否」不变半浊音，是「ひ」。",
-        "en": "「否」 doesn't become ぴ: it's ひ."
+        "zh": "「否」读清音「ひ」，不浊化。",
+        "en": "否 stays unvoiced: ひ, not び."
       },
       {
         "zh": "「拒」是拗音「きょ」，不是「こ」。",
@@ -380,7 +380,7 @@
       "ほうふ",
       "ほうぶ",
       "ほふ",
-      "だきふ"
+      "ぼうふ"
     ],
     "answer": 0,
     "tr": {
@@ -402,8 +402,8 @@
         "en": "「抱」 is the long ほう — don't shorten it."
       },
       {
-        "zh": "「だく」是「抱く」的训读，音读词里读「ほう」。",
-        "en": "だく is the kun reading of 「抱く」; in this on-reading word it's ほう."
+        "zh": "「抱」读「ほう」，不浊化成「ぼう」。",
+        "en": "抱 is ほう, unvoiced — not ぼう."
       }
     ]
   },
@@ -419,7 +419,7 @@
       "しょうこ",
       "しょうきょ",
       "しょこ",
-      "せいこ"
+      "しょうご"
     ],
     "answer": 0,
     "tr": {
@@ -441,8 +441,8 @@
         "en": "「証」 is the long しょう — don't shorten it."
       },
       {
-        "zh": "「証」读「しょう」，不是「せい」。",
-        "en": "「証」 is しょう, not せい."
+        "zh": "「しょうご」是「正午」的读音；「拠」在这里读「こ」，是清音。",
+        "en": "しょうご is 「正午」; 拠 here is unvoiced こ."
       }
     ]
   },
@@ -497,7 +497,7 @@
       "さからった",
       "はからった",
       "さがらった",
-      "ぎゃくらった"
+      "ためらった"
     ],
     "answer": 0,
     "tr": {
@@ -519,8 +519,8 @@
         "en": "The second sound is unvoiced か, not が."
       },
       {
-        "zh": "「ぎゃく」是「逆」的音读（如「逆転」），动词用训读「さから」。",
-        "en": "ぎゃく is the on reading (as in 「逆転」); the verb uses the kun reading さから."
+        "zh": "「ためらう」（躊躇）是另一个词，意思是犹豫，不是「逆らう」的读音。",
+        "en": "ためらう (hesitate) is a different word, not the reading of 「逆らう」."
       }
     ]
   },
@@ -613,7 +613,7 @@
     "options": [
       "あやまち",
       "あやまり",
-      "すぎち",
+      "かしつ",
       "かち"
     ],
     "answer": 0,
@@ -632,8 +632,8 @@
         "en": "あやまり is written 「誤り」, with り as okurigana."
       },
       {
-        "zh": "「すぎ」是「過ぎる」的读音，「過ち」不这样读。",
-        "en": "すぎ is from 「過ぎる」; 「過ち」 isn't read that way."
+        "zh": "「かしつ」是「過失」的读音（过失）；单独的「過ち」用训读「あやまち」。",
+        "en": "かしつ is 「過失」; on its own 「過ち」 takes the kun reading あやまち."
       },
       {
         "zh": "「か」是「過」的音读（如「過去」），这里是训读。",
@@ -653,7 +653,7 @@
       "かせつ",
       "けせつ",
       "かぜつ",
-      "かりせつ"
+      "かいせつ"
     ],
     "answer": 0,
     "tr": {
@@ -675,8 +675,8 @@
         "en": "「説」 isn't voiced: せつ."
       },
       {
-        "zh": "「かり」是「仮」的训读（如「仮に」），音读词里读「か」。",
-        "en": "かり is the kun reading (as in 「仮に」); in this on-reading word it's か."
+        "zh": "「かいせつ」是「解説」的读音；「仮説」没有「い」。",
+        "en": "かいせつ is 「解説」; 「仮説」 has no い."
       }
     ]
   },
@@ -923,7 +923,7 @@
       "しゅくしょう",
       "しゅうしょう",
       "しゅくしょ",
-      "ちぢしょう"
+      "しゅっしょう"
     ],
     "answer": 0,
     "tr": {
@@ -945,8 +945,8 @@
         "en": "「小」 is the long しょう — don't shorten it."
       },
       {
-        "zh": "「ちぢ」是「縮む」的训读，音读词里读「しゅく」。",
-        "en": "ちぢ is the kun reading of 「縮む」; in this on-reading word it's しゅく."
+        "zh": "「しゅっしょう」是「出生」的读音；「縮」读「しゅく」。",
+        "en": "しゅっしょう is 「出生」; 縮 is しゅく."
       }
     ]
   },
@@ -1076,7 +1076,7 @@
       "さかえた",
       "さがえた",
       "さかいた",
-      "えいえた"
+      "さえた"
     ],
     "answer": 0,
     "tr": {
@@ -1098,8 +1098,8 @@
         "en": "さかえる is ichidan: さかえた, not さかいた."
       },
       {
-        "zh": "「えい」是「栄」的音读（如「栄養」），动词用训读。",
-        "en": "えい is the on reading (as in 「栄養」); the verb uses the kun reading."
+        "zh": "「さえる」是「冴える」（清醒、出色），不是「栄える」的读音。",
+        "en": "さえる is 「冴える」 (be clear, sharp), not the reading of 「栄える」."
       }
     ]
   },
@@ -1148,7 +1148,7 @@
       "たずさわって",
       "たずさえて",
       "たずわさって",
-      "けいわって"
+      "さずかって"
     ],
     "answer": 0,
     "tr": {
@@ -1170,8 +1170,8 @@
         "en": "さ and わ are the wrong way round."
       },
       {
-        "zh": "「けい」是「携」的音读（如「携帯」），动词用训读。",
-        "en": "けい is the on reading (as in 「携帯」); the verb uses the kun reading."
+        "zh": "「さずかる」是「授かる」（被授予），不是「携わる」的读音。",
+        "en": "さずかる is 「授かる」 (be granted), not the reading of 「携わる」."
       }
     ]
   },
@@ -1256,7 +1256,7 @@
       "いちじるしく",
       "いちしるしく",
       "おびただしく",
-      "あらわしく"
+      "あわただしく"
     ],
     "answer": 0,
     "tr": {
@@ -1278,8 +1278,8 @@
         "en": "おびただしい is 「夥しい」 (vast numbers of), a different word."
       },
       {
-        "zh": "「あらわす」是「著す」（著书）的读音，形容词「著しい」读「いちじるしい」。",
-        "en": "あらわす is 「著す」 (to write a book); the adjective 「著しい」 is いちじるしい."
+        "zh": "「あわただしい」是「慌ただしい」（匆忙），不是「著しい」的读音。",
+        "en": "あわただしい is 「慌ただしい」 (hectic), not the reading of 「著しい」."
       }
     ]
   },

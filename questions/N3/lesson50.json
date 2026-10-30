@@ -318,7 +318,7 @@
       "lesson50#3"
     ],
     "difficulty": 2,
-    "stem": "日本語は [_] [_] [★] [_] 種類が 多いと 言われる。",
+    "stem": "日本語は [_] [_] [_] [★] 種類が 多いと 言われる。",
     "options": [
       "比べて",
       "英語",
@@ -337,15 +337,16 @@
       "en": "Japanese is said to have more kinds of written characters than English."
     },
     "why": {
-      "zh": "「英語」＋「に」＋「比べて」，再接「文字の 種類が 多い」。★ 在第三格，是「比べて」。",
-      "en": "「英語」 ＋ 「に」 ＋ 「比べて」, then 文字の 種類が 多い. The ★ is the third slot: 「比べて」."
+      "zh": "「英語」＋「に」＋「比べて」，再接「文字の 種類が 多い」。★ 在第四格，是「文字の」。",
+      "en": "「英語」 ＋ 「に」 ＋ 「比べて」, then 文字の 種類が 多い. The ★ is the fourth slot: 「文字の」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l50-010",

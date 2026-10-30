@@ -96,10 +96,10 @@
       {
         "q": "筆者の考えに合うものはどれか。",
         "options": [
-          "大人に対しても、結果だけでなく取り組んだ過程を評価する必要がある。",
-          "子どもは能力をほめられると、難しい問題に挑戦するようになる。",
-          "職場では、失敗しそうな仕事は避けたほうがいい。",
-          "結果が出なかった人は、ほめないほうが挑戦するようになる。"
+          "職場でも、結果が出なかったときの取り組み方を認めるべきだ。",
+          "子どもには、能力よりも結果をほめるほうが挑戦する力が育つ。",
+          "職場では、失敗しそうな仕事を避ける人を厳しく評価すべきだ。",
+          "能力をほめられた子どもほど、難しい問題に挑戦するようになる。"
         ],
         "answer": 0,
         "why": {
@@ -109,16 +109,16 @@
         "wrong": [
           null,
           {
+            "zh": "文中主张表扬「取り組み方」（过程），而不是结果。",
+            "en": "The text recommends praising 「取り組み方」 — the effort — not results."
+          },
+          {
+            "zh": "回避有风险的工作是作者指出的现象，作者的对策是认可过程，而不是严厉评价回避的人。",
+            "en": "Avoiding risky work is the effect the writer describes; the remedy is recognising the process, not judging those who avoid it."
+          },
+          {
             "zh": "文中说因能力受表扬的孩子反而「挑戦しなくなる」，正好相反。",
             "en": "The text says such children 「挑戦しなくなる」 — the opposite."
-          },
-          {
-            "zh": "回避可能失败的工作是作者指出的问题，不是建议。",
-            "en": "Avoiding risky jobs is the problem the writer points out, not advice."
-          },
-          {
-            "zh": "作者主张即使没出结果也要认可过程，而不是不表扬。",
-            "en": "The writer says to recognise the process even without results, not to withhold praise."
           }
         ]
       }
@@ -138,10 +138,10 @@
       {
         "q": "すでに参加を申し込んだ人は、何をしなければならないか。",
         "options": [
-          "新しい会場の場所を確認して、森さんに連絡する。",
-          "説明会の資料を、14日までにメールで送る。",
-          "15日に参加できるかどうかを、11日までにもう一度登録する。",
-          "8日の申し込みが有効なので、特に何もしなくてよい。"
+          "15日に参加できるかどうかを、森さんにメールで連絡する。",
+          "資料を受け取ってから、14日までに参加を登録し直す。",
+          "11日までに、15日の参加の可否をシステムで登録し直す。",
+          "8日の申し込みが15日に移るので、改めて登録しなくてよい。"
         ],
         "answer": 2,
         "why": {
@@ -150,17 +150,17 @@
         },
         "wrong": [
           {
-            "zh": "「時間と場所に変更はありません」，会场没有变。",
-            "en": "「時間と場所に変更はありません」 — the venue hasn't changed."
+            "zh": "要「社内システムから」重新登录，不是给森发邮件。",
+            "en": "It must be registered 「社内システムから」, not by emailing Mori."
           },
           {
-            "zh": "资料是森在14日之前发给大家，不是参加者发送。",
-            "en": "Mori sends the materials by the 14th; attendees don't."
+            "zh": "资料14日前才寄出，而登录截止是11日，不能等收到资料再登录。",
+            "en": "The materials come by the 14th, but registration closes on the 11th."
           },
           null,
           {
-            "zh": "已经报名的人也要「改めて」登记，不能什么都不做。",
-            "en": "Even those already signed up must register 「改めて」 (again)."
+            "zh": "文中明确说已报名的人也要「改めて…ご登録ください」。",
+            "en": "Even those already signed up must 「改めて…ご登録ください」."
           }
         ]
       }
@@ -179,10 +179,10 @@
       {
         "q": "筆者の考えに合うものはどれか。",
         "options": [
-          "悩んでいる人には、できるだけ早く解決策を示したほうがいい。",
-          "悩みを聞くときは、助言するより、相手が話し終えるまで聞くほうがいい。",
-          "友人に相談しても、自分で答えを見つけることはできない。",
-          "助言をしない人は、相手のためを思っていない。"
+          "悩みを打ち明けられたら、まず解決策を示すのが相手のためになる。",
+          "相談されたら、助言するより相手の話を最後まで聞くほうがいい。",
+          "友人に相談するより、一人で考えたほうが気持ちが整理できる。",
+          "助言をしない人は冷たく見えるが、実は相手のためを思っている。"
         ],
         "answer": 1,
         "why": {
@@ -191,17 +191,17 @@
         },
         "wrong": [
           {
-            "zh": "作者正是在反省自己马上给办法、让对方「黙り込む」的做法。",
-            "en": "He regrets doing exactly this — it made his friends 「黙り込む」."
+            "zh": "这是作者过去的做法，结果对方常常沉默；作者后来认为对方更需要整理想法的时间。",
+            "en": "That was the writer's old habit, which often silenced friends; he now thinks people need time to sort their thoughts."
           },
           null,
           {
-            "zh": "作者说话时「どうすべきかが自然に見えてきた」，是自己找到了答案。",
-            "en": "While talking, 「どうすべきかが自然に見えてきた」 — he did find his own answer."
+            "zh": "作者是在向只倾听的朋友倾诉的过程中理清了思路，并不是一个人想。",
+            "en": "His thoughts became clear while talking to a friend who just listened, not on his own."
           },
           {
-            "zh": "不给建议的朋友反而帮了作者，文中没有说她不为对方着想。",
-            "en": "The friend who gave no advice is the one who helped; nothing says she didn't care."
+            "zh": "「相手のためを思えばこそ」说的是作者自己急着给建议的心情，不是在评价不给建议的人。",
+            "en": "「相手のためを思えばこそ」 describes the writer's own urge to advise, not people who don't advise."
           }
         ]
       }
@@ -221,10 +221,10 @@
       {
         "q": "このお知らせを読んだ社員がしなければならないことは何か。",
         "options": [
-          "11月中の勤怠を、新しいシステムに入力し直す。",
-          "12月1日に、これまでのパスワードで新システムに入る。",
-          "11月25日までに、情報システム部にメールで連絡する。",
-          "メールで届く案内に従って、28日までに新しいパスワードを設定する。"
+          "11月中の勤怠を、12月1日以降に新システムで入力し直す。",
+          "これまでのパスワードを、28日までに新システムに登録する。",
+          "25日までに届く案内に従って、新しいパスワードを設定する。",
+          "届いた案内を見て、28日までに新しいパスワードを決める。"
         ],
         "answer": 3,
         "why": {
@@ -233,16 +233,16 @@
         },
         "wrong": [
           {
-            "zh": "「11月中の勤怠は、これまでどおり現在のシステムに」，不用输入新系统。",
-            "en": "「11月中の勤怠は、これまでどおり現在のシステムに」 — November goes into the current system."
+            "zh": "11月的考勤「これまでどおり現在のシステムに入力」，不用重新输入。",
+            "en": "November's attendance goes into the current system 「これまでどおり」; nothing is re-entered."
           },
           {
-            "zh": "「これまでのパスワードは使えません」。",
-            "en": "「これまでのパスワードは使えません」 — the old password won't work."
+            "zh": "新系统中「これまでのパスワードは使えません」，必须设置新密码。",
+            "en": "「これまでのパスワードは使えません」 — a new password has to be set."
           },
           {
-            "zh": "25日是说明邮件开始发送的日子，并没有要求员工联系信息系统部。",
-            "en": "The 25th is when the instruction emails start arriving; staff aren't asked to contact anyone."
+            "zh": "通知是「11月25日以降」才寄到的，不是25日之前；截止日期是28日。",
+            "en": "The instructions arrive 「11月25日以降」, not by the 25th; the deadline is the 28th."
           },
           null
         ]
@@ -262,10 +262,10 @@
       {
         "q": "筆者が最も言いたいことは何か。",
         "options": [
-          "電話とメールなどを、用件に合わせて使い分けられるようにするべきだ。",
-          "若い社員は、メールをやめて電話を使うようにするべきだ。",
-          "電話は緊張するので、苦手な人は無理に使わなくてよい。",
-          "細かい確認は、電話よりメールのほうが早く済む。"
+          "電話とメールは、用件によって使い分けられるようにするべきだ。",
+          "若い社員は、細かい確認はなるべくメールでなく電話でするべきだ。",
+          "電話が苦手なのは世代の問題なので、無理に慣れる必要はない。",
+          "声の調子が伝わる分、電話はメールよりも優れた手段だと言える。"
         ],
         "answer": 0,
         "why": {
@@ -275,16 +275,16 @@
         "wrong": [
           null,
           {
-            "zh": "作者说的是「用件に応じて」选择，没有说不用邮件。",
-            "en": "He says to choose 「用件に応じて」, not to drop email."
+            "zh": "作者说细节确认打电话「数分で済むことがある」，但主张是按事情选择手段，不是一律用电话。",
+            "en": "A call can settle details quickly, but the claim is to choose by task, not to always phone."
           },
           {
-            "zh": "「苦手だからと避けるのではなく」，正好否定了这一点。",
-            "en": "「苦手だからと避けるのではなく」 rules this out directly."
+            "zh": "作者理解紧张的心情，但反对「苦手だからと避ける」。",
+            "en": "The writer understands the nerves but argues against 「苦手だからと避ける」."
           },
           {
-            "zh": "文中说细节确认「電話なら数分で済む」，相反。",
-            "en": "The text says such checks 「電話なら数分で済む」 — the opposite."
+            "zh": "这是电话的优点之一，但作者没有说电话比邮件好，而是要根据事情选择。",
+            "en": "That is one merit of the phone, but the writer doesn't rank it above email — the point is choosing to suit the task."
           }
         ]
       }
@@ -304,10 +304,10 @@
       {
         "q": "このメールで、参加者に求められていることは何か。",
         "options": [
-          "発表用の資料を作って、研修初日の午後に提出すること",
-          "講師に評価してもらえるよう、メモを詳しく書くこと",
-          "発表の内容をまとめたメモを、研修の前日の昼までに送ること",
-          "添付の日程表に参加できる日を書いて、返信すること"
+          "発表用の資料を作り、研修の前日までにメールで送ること",
+          "講師の評価を受けるメモを、研修初日の正午までに送ること",
+          "発表内容のメモを、研修の前日の昼までに人事部に送ること",
+          "添付の日程を確認して、参加できる日を人事部に返信すること"
         ],
         "answer": 2,
         "why": {
@@ -316,17 +316,17 @@
         },
         "wrong": [
           {
-            "zh": "「発表用の資料は必要ありません」。",
-            "en": "「発表用の資料は必要ありません」 — no presentation materials needed."
+            "zh": "邮件写着「発表用の資料は必要ありません」，要寄的是简单的备忘录。",
+            "en": "「発表用の資料は必要ありません」 — only a short memo is needed."
           },
           {
-            "zh": "笔记是「簡単にまとめた」，而且「評価には使いません」。",
-            "en": "The memo is 「簡単にまとめた」, and 「評価には使いません」."
+            "zh": "备忘录只是讲师事先过目用的，「評価には使いません」；期限也是前一天中午，不是第一天。",
+            "en": "The memo is 「評価には使いません」, and it's due noon the day before, not on day one."
           },
           null,
           {
-            "zh": "附件只是让大家「ご確認ください」日程，没有要求填写回复。",
-            "en": "The attachment is only to 「ご確認ください」; nothing asks you to fill it in."
+            "zh": "日程只要求「ご確認ください」，没有要求回复能参加的日期。",
+            "en": "You are only asked to check the schedule (「ご確認ください」), not to reply with dates."
           }
         ]
       }

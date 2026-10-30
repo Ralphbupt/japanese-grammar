@@ -86,7 +86,7 @@
       "lesson35#1"
     ],
     "difficulty": 2,
-    "stem": "日本の 職場 [_] [_] [★] [_] だと 言われて いる。",
+    "stem": "日本の 職場 [★] [_] [_] [_] だと 言われて いる。",
     "options": [
       "最大の",
       "人手不足",
@@ -105,15 +105,16 @@
       "en": "The biggest problem in Japanese workplaces is said to be the labour shortage."
     },
     "why": {
-      "zh": "「職場における」修饰名词「最大の課題」，「課題は」是主题，「人手不足だ」是谓语：における → 最大の → 課題は → 人手不足。★ 是「課題は」。",
-      "en": "「職場における」 modifies 「最大の課題」, 「課題は」 is the topic and 「人手不足だ」 the predicate: における → 最大の → 課題は → 人手不足. The ★ is 「課題は」."
+      "zh": "「職場における」修饰名词「最大の課題」，「課題は」是主题，「人手不足だ」是谓语：における → 最大の → 課題は → 人手不足。★ 在第一格，是「における」。",
+      "en": "「職場における」 modifies 「最大の課題」, 「課題は」 is the topic and 「人手不足だ」 the predicate: における → 最大の → 課題は → 人手不足. The ★ is the first slot: 「における」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l35-004",
@@ -164,9 +165,9 @@
     "difficulty": 2,
     "stem": "兄は 背が 高い（　）、弟は クラスで 一番 低い。",
     "options": [
-      "のにとって",
+      "上に",
       "のに対して",
-      "のについて",
+      "ばかりか",
       "ことから"
     ],
     "answer": 1,
@@ -181,13 +182,13 @@
     },
     "wrong": [
       {
-        "zh": "「にとって」接名词，不接「の」，也不表示对比。",
-        "en": "「にとって」 follows a noun, not 「の」, and doesn't express a contrast."
+        "zh": "「上に」是“而且”，追加同一方向的内容，不能连接“高”和“矮”这两件相反的事。",
+        "en": "「上に」 means \"on top of that\", adding more of the same; it can't join two opposite facts like tall and short."
       },
       null,
       {
-        "zh": "「について」是“关于”，「高いのについて」既不通顺也不表示对比。",
-        "en": "「について」 means \"about\"; 「高いのについて」 doesn't work and isn't a contrast."
+        "zh": "「ばかりか」是“不仅……而且”，也是递进，不是对比。",
+        "en": "「ばかりか」 is \"not only… but also\", another adding pattern, not a contrast."
       },
       {
         "zh": "「ことから」表示根据、由来，“因为哥哥高所以弟弟矮”在逻辑上说不通。",
@@ -474,7 +475,7 @@
       "lesson35#4"
     ],
     "difficulty": 2,
-    "stem": "同じ 映画でも 見る [_] [_] [★] [_] 違う。",
+    "stem": "同じ 映画でも 見る [★] [_] [_] [_] 違う。",
     "options": [
       "受ける",
       "によって",
@@ -493,15 +494,16 @@
       "en": "Even the same film leaves a different impression depending on who watches it."
     },
     "why": {
-      "zh": "「見る人」是“看的人”，「人によって」= 因人而异，「受ける印象」作主语接「が」：人 → によって → 受ける → 印象が。★ 是「受ける」。",
-      "en": "「見る人」 is \"the viewer\"; 「人によって」 = depending on the person; 「受ける印象が」 is the subject: 人 → によって → 受ける → 印象が. The ★ is 「受ける」."
+      "zh": "「見る人」是“看的人”，「人によって」= 因人而异，「受ける印象」作主语接「が」：人 → によって → 受ける → 印象が。★ 在第一格，是「人」。",
+      "en": "「見る人」 is \"the viewer\"; 「人によって」 = depending on the person; 「受ける印象が」 is the subject: 人 → によって → 受ける → 印象が. The ★ is the first slot: 「人」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l35-014",
@@ -706,7 +708,7 @@
       "lesson35#6"
     ],
     "difficulty": 2,
-    "stem": "この 報告書は [_] [_] [★] [_] ものです。",
+    "stem": "この 報告書は [_] [_] [_] [★] ものです。",
     "options": [
       "アンケートの",
       "もとに まとめた",
@@ -725,14 +727,15 @@
       "en": "This report was put together based on the results of a staff survey."
     },
     "why": {
-      "zh": "「社員へのアンケート」→「アンケートの結果」→「結果をもとにまとめた」→「ものです」：社員への → アンケートの → 結果を → もとに まとめた。★ 是「結果を」。",
-      "en": "「社員へのアンケート」 → 「アンケートの結果」 → 「結果をもとにまとめた」 → 「ものです」: 社員への → アンケートの → 結果を → もとに まとめた. The ★ is 「結果を」."
+      "zh": "「社員へのアンケート」→「アンケートの結果」→「結果をもとにまとめた」→「ものです」：社員への → アンケートの → 結果を → もとに まとめた。★ 在第四格，是「もとに まとめた」。",
+      "en": "「社員へのアンケート」 → 「アンケートの結果」 → 「結果をもとにまとめた」 → 「ものです」: 社員への → アンケートの → 結果を → もとに まとめた. The ★ is the fourth slot: 「もとに まとめた」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   }
 ]

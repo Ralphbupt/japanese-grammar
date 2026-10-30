@@ -8,10 +8,10 @@
     "difficulty": 1,
     "stem": "休日も返上して働く父（　）、兄は昼過ぎまで寝てばかりいる。",
     "options": [
-      "と相まって",
-      "に則って",
+      "にもまして",
+      "にしては",
       "にひきかえ",
-      "たるもの"
+      "ともなると"
     ],
     "answer": 2,
     "full": "休日も返上して働く父にひきかえ、兄は昼過ぎまで寝てばかりいる。",
@@ -25,17 +25,17 @@
     },
     "wrong": [
       {
-        "zh": "「と相まって」是两个因素相结合产生结果，父亲和哥哥是性质相反的对照，不是相互作用。",
-        "en": "「と相まって」 combines two factors into one result; father and son here are being contrasted."
+        "zh": "「にもまして」是“比……更加……”，用于程度比较，「父にもまして、兄は寝てばかり」说不通。",
+        "en": "「にもまして」 is \"even more than …\"; it compares degrees, which doesn't fit here."
       },
       {
-        "zh": "「に則って」前面要接法律、规则等规范，「父に則って」不成立。",
-        "en": "「に則って」 needs a rule or law before it; 「父に則って」 makes no sense."
+        "zh": "「にしては」是“就……而言（意外）”，用于和标准相比，「働く父にしては」与哥哥无关。",
+        "en": "「にしては」 is \"for a …\" (compared with a standard); it says nothing about the brother."
       },
       null,
       {
-        "zh": "「たるもの」讲某种身份应有的规范，后接「べきだ」等，不能用来对照两个人。",
-        "en": "「たるもの」 states the norm for a role (with 「べきだ」); it can't contrast two people."
+        "zh": "「ともなると」是“一到……的地步”，不能对照两个人。",
+        "en": "「ともなると」 is \"once it comes to …\"; it can't contrast two people."
       }
     ]
   },

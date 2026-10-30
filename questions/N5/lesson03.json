@@ -1,102 +1,106 @@
 [
   {
     "id": "n5-l03-001",
+    "rev": 2,
     "type": "bunpou",
     "refs": ["lesson03#0", "lesson03#1"],
     "difficulty": 2,
-    "stem": "私は 毎日 7時に 家へ（　）。",
-    "options": ["帰ます", "帰ります", "帰るます", "帰えます"],
+    "stem": "今は 毎日 7時に いえへ（　）。",
+    "options": ["かえりました", "かえります", "かえって", "かえりましょう"],
+    "okj": ["帰りました", "帰ります", "帰って", "帰りましょう"],
     "answer": 1,
-    "full": "私は 毎日 7時に 家へ 帰ります。",
-    "kj": "私は毎日7時に家へ帰ります。",
+    "full": "今は 毎日 7時に いえへ かえります。",
+    "kj": "今は毎日7時に家へ帰ります。",
     "tr": {
-      "zh": "我每天7点回家。",
-      "en": "I go home at seven every day."
+      "zh": "现在我每天7点回家。",
+      "en": "These days I go home at seven every day."
     },
     "why": {
-      "zh": "「帰る」看起来像二类，其实是一类动词：る→り＋ます，变成「帰ります」。",
-      "en": "「帰る」 looks like Group 2 but is Group 1: る → り ＋ ます, giving 「帰ります」."
+      "zh": "「今は 毎日」说的是现在的习惯，用现在形「ます」。「帰る」是一类动词：る→り＋ます，变成「帰ります」。",
+      "en": "「今は 毎日」 describes a present habit, so the non-past 「ます」. 「帰る」 is Group 1: る → り ＋ ます, giving 「帰ります」."
     },
     "wrong": [
       {
-        "zh": "「帰ます」是把「帰る」当成二类、直接去る加ます，但它是一类动词。",
-        "en": "「帰ます」 treats 「帰る」 as Group 2 (drop る), but it is Group 1."
+        "zh": "「帰りました」是过去式，和「今は 毎日」（现在每天）不符。",
+        "en": "「帰りました」 is past, but 「今は 毎日」 is about now."
       },
       null,
       {
-        "zh": "ます要接在ます词干后面，不能直接接辞书形「帰る」。",
-        "en": "ます attaches to the ます-stem, never directly to the dictionary form 「帰る」."
+        "zh": "「帰って」是て形，后面还要接别的话，不能单独结束句子。",
+        "en": "「帰って」 is the て-form; it needs something after it and can't end the sentence."
       },
       {
-        "zh": "「帰」读作「かえ」，「帰えます」多写了一个「え」，而且仍然是按二类变形。",
-        "en": "「帰えます」 adds a stray 「え」 and still conjugates it as Group 2."
+        "zh": "「帰りましょう」是“一起回去吧”的邀请，不能用来说自己每天的习惯。",
+        "en": "「帰りましょう」 is \"let's go home\", an invitation, not a statement of your daily habit."
       }
     ]
   },
   {
     "id": "n5-l03-002",
+    "rev": 2,
     "type": "bunpou",
     "refs": ["lesson03#0", "lesson03#1"],
     "difficulty": 2,
-    "stem": "私は 毎晩 テレビを（　）。",
-    "options": ["見ります", "見るます", "見ます", "見います"],
+    "stem": "わたしは まいばん テレビを（　）。ニュースが すきですから。",
+    "options": ["見ません", "見て", "見ます", "見ましょう"],
     "answer": 2,
-    "full": "私は 毎晩 テレビを 見ます。",
-    "kj": "私は毎晩テレビを見ます。",
+    "full": "わたしは まいばん テレビを 見ます。ニュースが すきですから。",
+    "kj": "私は毎晩テレビを見ます。ニュースが好きですから。",
     "tr": {
-      "zh": "我每天晚上看电视。",
-      "en": "I watch TV every evening."
+      "zh": "我每天晚上看电视，因为我喜欢看新闻。",
+      "en": "I watch TV every evening, because I like the news."
     },
     "why": {
-      "zh": "「見る」是二类动词，去掉る直接加ます：見ます。",
-      "en": "「見る」 is a Group 2 verb: drop る and add ます — 見ます."
+      "zh": "「毎晩」是习惯，后面的理由“喜欢新闻”说明是看的：「見る」是二类动词，去掉る加ます，「見ます」。",
+      "en": "「毎晩」 is a habit, and the reason (he likes the news) shows he does watch: 「見る」 is Group 2, drop る and add ます — 「見ます」."
     },
     "wrong": [
       {
-        "zh": "「見ります」是把「見る」当成一类（る→り），但它是二类，直接去る。",
-        "en": "「見ります」 treats 「見る」 as Group 1 (る → り), but it is Group 2."
+        "zh": "「見ません」是“不看”，和后面“因为喜欢新闻”对不上。",
+        "en": "「見ません」 (don't watch) clashes with the reason \"because I like the news\"."
       },
       {
-        "zh": "ます不能直接接在辞书形「見る」后面。",
-        "en": "ます can't attach straight to the dictionary form 「見る」."
+        "zh": "「見て」是て形，后面还要接别的话，不能单独结束句子。",
+        "en": "「見て」 is the て-form; it can't end the sentence on its own."
       },
       null,
       {
-        "zh": "「見います」凭空多了「い」，不是任何一类的变形规则。",
-        "en": "「見います」 adds an 「い」 that no conjugation rule produces."
+        "zh": "「見ましょう」是“一起看吧”的邀请，不能用来说自己每天的习惯。",
+        "en": "「見ましょう」 is \"let's watch\", an invitation, not a statement of your habit."
       }
     ]
   },
   {
     "id": "n5-l03-003",
+    "rev": 2,
     "type": "bunpou",
     "refs": ["lesson03#0", "lesson03#1"],
     "difficulty": 2,
-    "stem": "私は 毎晩 10時ごろ おふろに（　）。",
-    "options": ["入ます", "入るます", "入いります", "入ります"],
+    "stem": "わたしは まいばん 10時ごろ おふろに（　）。それから 11時に ねます。",
+    "options": ["入りました", "入りません", "入って", "入ります"],
     "answer": 3,
-    "full": "私は 毎晩 10時ごろ おふろに 入ります。",
-    "kj": "私は毎晩10時ごろお風呂に入ります。",
+    "full": "わたしは まいばん 10時ごろ おふろに 入ります。それから 11時に ねます。",
+    "kj": "私は毎晩10時ごろお風呂に入ります。それから11時に寝ます。",
     "tr": {
-      "zh": "我每天晚上10点左右洗澡。",
-      "en": "I take a bath around ten every night."
+      "zh": "我每天晚上10点左右洗澡，然后11点睡觉。",
+      "en": "I take a bath around ten every night, and then go to bed at eleven."
     },
     "why": {
-      "zh": "「入る」（はいる）是一类动词里的“陷阱词”：る→り＋ます，变成「入ります」。",
-      "en": "「入る」 is one of the \"trap\" Group 1 verbs: る → り ＋ ます, giving 「入ります」."
+      "zh": "「毎晩」和后面的「寝ます」都是现在的习惯，用现在形。「入る」（はいる）是一类动词：る→り＋ます，变成「入ります」。",
+      "en": "「毎晩」 and the following 「寝ます」 describe a present habit, so non-past. 「入る」 is a Group 1 verb: る → り ＋ ます, 「入ります」."
     },
     "wrong": [
       {
-        "zh": "「入ます」是按二类直接去る，但「入る」是一类动词。",
-        "en": "「入ます」 drops る as if Group 2, but 「入る」 is Group 1."
+        "zh": "「入りました」是过去式，和「毎晩」以及后面的「寝ます」不符。",
+        "en": "「入りました」 is past, but 「毎晩」 and 「寝ます」 describe a present habit."
       },
       {
-        "zh": "ます不能直接接辞书形「入る」。",
-        "en": "ます can't attach directly to the dictionary form 「入る」."
+        "zh": "「入りません」是“不洗澡”，后面「それから」（然后）就接不上了。",
+        "en": "「入りません」 (don't take one) leaves nothing for 「それから」 (after that) to follow."
       },
       {
-        "zh": "「入」本身读「はい」，「入いります」多写了一个「い」。",
-        "en": "「入」 already reads はい; 「入いります」 adds an extra 「い」."
+        "zh": "「入って」是て形，后面还要接别的话，不能单独结束句子。",
+        "en": "「入って」 is the て-form; it can't end the sentence on its own."
       },
       null
     ]
@@ -106,10 +110,10 @@
     "type": "bunpou",
     "refs": ["lesson03#1"],
     "difficulty": 1,
-    "stem": "昨日は とても 忙しくて、朝から 何も（　）。",
+    "stem": "きのうは とても いそがしくて、あさから 何も（　）。",
     "options": ["食べました", "食べます", "食べませんでした", "食べません"],
     "answer": 2,
-    "full": "昨日は とても 忙しくて、朝から 何も 食べませんでした。",
+    "full": "きのうは とても いそがしくて、あさから 何も 食べませんでした。",
     "kj": "昨日はとても忙しくて、朝から何も食べませんでした。",
     "tr": {
       "zh": "昨天非常忙，从早上起什么都没吃。",
@@ -140,23 +144,23 @@
     "type": "bunpou",
     "refs": ["lesson03#1", "lesson03#0"],
     "difficulty": 2,
-    "stem": "明日の 午後、友達が 私の 家に（　）。",
-    "options": ["来ります", "来ます", "来ました", "来るます"],
+    "stem": "あしたの 午後、友だちが わたしの いえに（　）。",
+    "options": ["来たいです", "来ます", "来ました", "来ましょう"],
     "answer": 1,
-    "full": "明日の 午後、友達が 私の 家に 来ます。",
+    "full": "あしたの 午後、友だちが わたしの いえに 来ます。",
     "kj": "明日の午後、友達が私の家に来ます。",
     "tr": {
       "zh": "明天下午朋友要来我家。",
       "en": "A friend is coming to my house tomorrow afternoon."
     },
     "why": {
-      "zh": "「来る」是三类不规则动词，ます形要死记：来ます（きます）；「明日」是将来，用现在形「ます」。",
-      "en": "「来る」 is an irregular Group 3 verb whose ます form is learned by heart: 来ます; 「明日」 is future, so the non-past 「ます」."
+      "zh": "「来る」是三类不规则动词，ます形要死记：来ます（きます）；「明日」是将来，用现在形「ます」。主语是「友達」，就是单纯说事实。",
+      "en": "「来る」 is an irregular Group 3 verb whose ます form is learned by heart: 来ます; 「明日」 is future, so the non-past 「ます」. The subject is the friend, so it's a plain statement."
     },
     "wrong": [
       {
-        "zh": "「来ります」是把「来る」当成一类（る→り），但它是不规则动词。",
-        "en": "「来ります」 treats 「来る」 as Group 1 (る → り), but it is irregular."
+        "zh": "「〜たいです」只能说自己的愿望，不能直接说别人（「友達」）想来。",
+        "en": "「〜たいです」 states your own wish; it can't say directly that someone else (the friend) wants to come."
       },
       null,
       {
@@ -164,8 +168,8 @@
         "en": "「来ました」 is past and clashes with 「明日」 (tomorrow)."
       },
       {
-        "zh": "ます不能直接接辞书形「来る」。",
-        "en": "ます can't attach directly to the dictionary form 「来る」."
+        "zh": "「来ましょう」是邀请“一起来吧”，主语是「友達が」，说不通。",
+        "en": "「来ましょう」 is an invitation (\"let's come\"); it doesn't work with 「友達が」 as the subject."
       }
     ]
   },
@@ -174,32 +178,32 @@
     "type": "bunpou",
     "refs": ["lesson03#1"],
     "difficulty": 1,
-    "stem": "A「週末は 何を（　）か。」\nB「友達と テニスを します。」",
-    "options": ["します", "さます", "しります", "するます"],
+    "stem": "A「しゅうまつは 何を（　）か。」\nB「友だちと テニスを します。」",
+    "options": ["します", "しました", "して", "しませんでした"],
     "answer": 0,
-    "full": "A「週末は 何を しますか。」 B「友達と テニスを します。」",
+    "full": "A「しゅうまつは 何を しますか。」 B「友だちと テニスを します。」",
     "kj": "A「週末は何をしますか。」\nB「友達とテニスをします。」",
     "tr": {
       "zh": "A：周末做什么？ B：和朋友打网球。",
       "en": "A: What are you doing this weekend? B: Playing tennis with friends."
     },
     "why": {
-      "zh": "「する」是三类不规则动词，ます形是「します」，B 的回答里也用了「します」。",
-      "en": "「する」 is irregular; its ます form is 「します」, as in B's answer."
+      "zh": "B 用「します」回答周末的打算，问句也要用现在（将来）形。「する」是三类不规则动词，ます形是「します」。",
+      "en": "B answers with 「します」 about the coming weekend, so the question is non-past too. 「する」 is irregular; its ます form is 「します」."
     },
     "wrong": [
       null,
       {
-        "zh": "「さます」不是「する」的任何变形。",
-        "en": "「さます」 isn't any form of 「する」."
+        "zh": "「しました」是问上周末做了什么，可 B 用「します」回答将来的打算。",
+        "en": "「しました」 asks about last weekend, but B answers with 「します」 about the coming one."
       },
       {
-        "zh": "「しります」是把「する」按一类变形，但「する」是不规则动词。",
-        "en": "「しります」 conjugates 「する」 as if it were Group 1; it is irregular."
+        "zh": "「して」是て形，不能直接接「か」构成问句。",
+        "en": "「して」 is the て-form; it can't take 「か」 to make the question."
       },
       {
-        "zh": "ます不能直接接在辞书形「する」后面。",
-        "en": "ます can't attach directly to the dictionary form 「する」."
+        "zh": "「何を しませんでしたか」是问“没做什么”，和 B 的回答对不上。",
+        "en": "「何を しませんでしたか」 asks what you didn't do — B's answer doesn't fit."
       }
     ]
   },
@@ -208,10 +212,11 @@
     "type": "narabe",
     "refs": ["lesson03#1"],
     "difficulty": 1,
-    "stem": "A「毎朝 [_] [★] [_] [_]。」\nB「6時です。」",
-    "options": ["起きます", "か", "何時", "に"],
+    "stem": "A「まいあさ [_] [★] [_] [_]。」\nB「6時です。」",
+    "options": ["おきます", "か", "何時", "に"],
+    "okj": ["起きます", null, null, null],
     "order": [2, 3, 0, 1],
-    "full": "A「毎朝 何時に 起きますか。」 B「6時です。」",
+    "full": "A「まいあさ 何時に おきますか。」 B「6時です。」",
     "kj": "A「毎朝何時に起きますか。」\nB「6時です。」",
     "tr": {
       "zh": "A：每天早上几点起床？ B：6点。",

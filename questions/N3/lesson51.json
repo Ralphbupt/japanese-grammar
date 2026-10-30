@@ -86,7 +86,7 @@
       "lesson51#1"
     ],
     "difficulty": 2,
-    "stem": "今 やって いる ことは、[_] [_] [★] [_] 延長の ような ものです。",
+    "stem": "今 やって いる ことは、[★] [_] [_] [_] 延長の ような ものです。",
     "options": [
       "むしろ",
       "趣味の",
@@ -105,15 +105,16 @@
       "en": "What I'm doing now is less a job than an extension of my hobby."
     },
     "why": {
-      "zh": "「AというよりむしろB」：仕事＋というより＋むしろ＋趣味の（修饰「延長」）。★ 在第三格，是「むしろ」。",
-      "en": "「AというよりむしろB」: 仕事 ＋ というより ＋ むしろ ＋ 趣味の (modifying 延長). The ★ is the third slot: 「むしろ」."
+      "zh": "「AというよりむしろB」：仕事＋というより＋むしろ＋趣味の（修饰「延長」）。★ 在第一格，是「仕事」。",
+      "en": "「AというよりむしろB」: 仕事 ＋ というより ＋ むしろ ＋ 趣味の (modifying 延長). The ★ is the first slot: 「仕事」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l51-004",
@@ -202,7 +203,7 @@
       "lesson51#2"
     ],
     "difficulty": 2,
-    "stem": "[_] [_] [★] [_] まだ 一人も いない。",
+    "stem": "[★] [_] [_] [_] まだ 一人も いない。",
     "options": [
       "部下は",
       "課長に",
@@ -221,15 +222,16 @@
       "en": "I may have become section chief, but I don't have a single subordinate yet."
     },
     "why": {
-      "zh": "「課長になった」＋「といっても」限定程度，后面接实际情况「部下はまだ一人もいない」。★ 在第三格，是「といっても」。",
-      "en": "「課長になった」 ＋ 「といっても」 qualifies the claim, then the reality: 「部下はまだ一人もいない」. The ★ is the third slot: 「といっても」."
+      "zh": "「課長になった」＋「といっても」限定程度，后面接实际情况「部下はまだ一人もいない」。★ 在第一格，是「課長に」。",
+      "en": "「課長になった」 ＋ 「といっても」 qualifies the claim, then the reality: 「部下はまだ一人もいない」. The ★ is the first slot: 「課長に」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l51-007",
@@ -318,7 +320,7 @@
       "lesson51#3"
     ],
     "difficulty": 2,
-    "stem": "A「この 町の 名物は 何ですか。」\nB「この 町 [_] [_] [★] [_] ですね。」",
+    "stem": "A「この 町の 名物は 何ですか。」\nB「この 町 [_] [_] [_] [★] ですね。」",
     "options": [
       "新鮮な",
       "魚",
@@ -337,15 +339,16 @@
       "en": "A: What is this town known for? B: When it comes to this town, it has to be fresh fish."
     },
     "why": {
-      "zh": "この町＋といえば（说到……）＋やはり＋新鮮な魚。「新鮮な」修饰「魚」，必须紧挨在它前面。★ 在第三格，是「新鮮な」。",
-      "en": "この町 ＋ といえば ＋ やはり ＋ 新鮮な魚; 「新鮮な」 must sit right before 「魚」. The ★ is the third slot: 「新鮮な」."
+      "zh": "この町＋といえば（说到……）＋やはり＋新鮮な魚。「新鮮な」修饰「魚」，必须紧挨在它前面。★ 在第四格，是「魚」。",
+      "en": "この町 ＋ といえば ＋ やはり ＋ 新鮮な魚; 「新鮮な」 must sit right before 「魚」. The ★ is the fourth slot: 「魚」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l51-010",
@@ -399,7 +402,7 @@
       "どおり",
       "とおり",
       "どおりの",
-      "にとおり"
+      "次第"
     ],
     "answer": 0,
     "full": "会議は 予定どおり、午後3時に 終わった。",
@@ -422,8 +425,8 @@
         "en": "「どおりの」 modifies a noun (予定どおりの時間); here a clause follows, so 「の」 is wrong."
       },
       {
-        "zh": "没有「にとおり」这种接法，名词后要用「の」。",
-        "en": "There is no 「にとおり」; a noun takes 「の」."
+        "zh": "「次第」是“一……就……”（決まり次第），「予定次第」是“取决于计划”，和“按计划结束”意思不同。",
+        "en": "「次第」 is \"as soon as\" (決まり次第) or \"depending on\"; 「予定次第」 doesn't mean \"as scheduled\"."
       }
     ],
     "rev": 1

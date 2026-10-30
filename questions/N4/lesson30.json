@@ -49,7 +49,7 @@
     "difficulty": 2,
     "stem": "わたしは どんなに（　）、毎朝 ご飯を 食べるように して います。",
     "options": [
-      "忙しいでも",
+      "忙しければ",
       "忙しかったら",
       "忙しくても",
       "忙しいのに"
@@ -67,8 +67,8 @@
     },
     "wrong": [
       {
-        "zh": "「でも」接在名词和な形容词后面（雨でも、静かでも），い形容词不能直接接「でも」。",
-        "en": "「でも」 follows nouns and な-adjectives (雨でも, 静かでも); an い-adjective can't take it directly."
+        "zh": "「ければ」是条件“如果……就”，不和「どんなに」呼应，后句也不是条件的结果。",
+        "en": "「ければ」 is \"if…, then\"; it doesn't pair with 「どんなに」, and the second half isn't a result of a condition."
       },
       {
         "zh": "「どんなに」要和「ても」呼应，「どんなに忙しかったら」不成立。",
@@ -88,7 +88,7 @@
       "lesson30#1"
     ],
     "difficulty": 1,
-    "stem": "明日は [_] [_] [★] [_]、旅行に 行きます。",
+    "stem": "明日は [★] [_] [_] [_]、旅行に 行きます。",
     "options": [
       "降って",
       "雨",
@@ -108,15 +108,16 @@
       "en": "Even if it rains tomorrow, I'm going on the trip."
     },
     "why": {
-      "zh": "雨 ＋ が ＋ 降って（て形）＋ も：「〜ても」接在て形后面。★ 在第三格，是「降って」。",
-      "en": "雨 ＋ が ＋ 降って (て-form) ＋ も: 「〜ても」 attaches to the て-form. The ★ is the third slot: 「降って」."
+      "zh": "雨 ＋ が ＋ 降って（て形）＋ も：「〜ても」接在て形后面。★ 在第一格，是「雨」。",
+      "en": "雨 ＋ が ＋ 降って (て-form) ＋ も: 「〜ても」 attaches to the て-form. The ★ is the first slot: 「雨」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l30-004",
@@ -207,7 +208,7 @@
       "lesson30#2"
     ],
     "difficulty": 2,
-    "stem": "A「何か 手伝いましょうか。」\nB「じゃあ、この 荷物を [_] [_] [★] [_]。」",
+    "stem": "A「何か 手伝いましょうか。」\nB「じゃあ、この 荷物を [_] [_] [_] [★]。」",
     "options": [
       "運んで",
       "んです",
@@ -227,15 +228,16 @@
       "en": "A: Can I help with anything? B: Well, I'd like you to carry this bag up to the second floor."
     },
     "why": {
-      "zh": "二階まで（到二楼）＋ 運んで ＋ ほしい ＋ んです：「〜てほしい」后面接「んです」说明情况。★ 在第三格，是「ほしい」。",
-      "en": "二階まで (to the 2nd floor) ＋ 運んで ＋ ほしい ＋ んです: 「〜てほしい」 followed by 「んです」. The ★ is the third slot: 「ほしい」."
+      "zh": "二階まで（到二楼）＋ 運んで ＋ ほしい ＋ んです：「〜てほしい」后面接「んです」说明情况。★ 在第四格，是「んです」。",
+      "en": "二階まで (to the 2nd floor) ＋ 運んで ＋ ほしい ＋ んです: 「〜てほしい」 followed by 「んです」. The ★ is the fourth slot: 「んです」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l30-007",
@@ -326,7 +328,7 @@
       "lesson30#3"
     ],
     "difficulty": 1,
-    "stem": "3月に なって、[_] [_] [★] [_] ね。",
+    "stem": "3月に なって、[_] [_] [_] [★] ね。",
     "options": [
       "きました",
       "なって",
@@ -346,15 +348,16 @@
       "en": "Now that it's March, it's been getting warmer."
     },
     "why": {
-      "zh": "だんだん ＋ 暖かく なって ＋ きました：到现在为止的渐变用「〜てきた」。★ 在第三格，是「なって」。",
-      "en": "だんだん ＋ 暖かく なって ＋ きました: gradual change up to now is 「〜てきた」. The ★ is the third slot: 「なって」."
+      "zh": "だんだん ＋ 暖かく なって ＋ きました：到现在为止的渐变用「〜てきた」。★ 在第四格，是「きました」。",
+      "en": "だんだん ＋ 暖かく なって ＋ きました: gradual change up to now is 「〜てきた」. The ★ is the fourth slot: 「きました」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n4-l30-010",
@@ -367,14 +370,14 @@
     "options": [
       "ほしくて",
       "ほしがって",
-      "ほしいで",
-      "ほしかって"
+      "ほしがらせて",
+      "ほしがられて"
     ],
     "okj": [
       "欲しくて",
       "欲しがって",
-      null,
-      null
+      "欲しがらせて",
+      "欲しがられて"
     ],
     "answer": 1,
     "full": "妹は 友達が 持って いる 新しい スマホを ほしがって います。",
@@ -394,12 +397,12 @@
       },
       null,
       {
-        "zh": "「ほしい」是い形容词，没有「ほしいで」这种形式。",
-        "en": "「ほしい」 is an い-adjective; 「ほしいで」 isn't a form."
+        "zh": "「ほしがらせて」是使役“让别人想要”，可想要手机的是妹妹自己。",
+        "en": "「ほしがらせて」 is causative (make someone want it), but it's my sister who wants the phone."
       },
       {
-        "zh": "「ほしかって」不存在，い形容词的て形是「ほしくて」。",
-        "en": "「ほしかって」 doesn't exist; the て-form of 「ほしい」 is 「ほしくて」."
+        "zh": "「ほしがられて」是被动“被别人想要”，主语「妹は」是想要的人，方向反了。",
+        "en": "「ほしがられて」 is passive (be wanted by someone); 「妹は」 is the one wanting — the wrong way round."
       }
     ]
   },
@@ -570,7 +573,7 @@
       "lesson30#5"
     ],
     "difficulty": 1,
-    "stem": "すみません、この 服、[_] [_] [★] [_] か。",
+    "stem": "すみません、この 服、[★] [_] [_] [_] か。",
     "options": [
       "も",
       "いいです",
@@ -590,14 +593,15 @@
       "en": "Excuse me, may I try this on?"
     },
     "why": {
-      "zh": "着て ＋ みて（〜てみる的て形）＋ も ＋ いいです ＋ か：“可以试穿吗”。★ 在第三格，是「も」。",
-      "en": "着て ＋ みて (て-form of 〜てみる) ＋ も ＋ いいです ＋ か: \"may I try it on?\" The ★ is the third slot: 「も」."
+      "zh": "着て ＋ みて（〜てみる的て形）＋ も ＋ いいです ＋ か：“可以试穿吗”。★ 在第一格，是「着て」。",
+      "en": "着て ＋ みて (て-form of 〜てみる) ＋ も ＋ いいです ＋ か: \"may I try it on?\" The ★ is the first slot: 「着て」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   }
 ]

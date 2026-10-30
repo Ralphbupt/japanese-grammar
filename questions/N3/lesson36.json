@@ -202,7 +202,7 @@
       "lesson36#2"
     ],
     "difficulty": 2,
-    "stem": "駅が できた ことは、この [_] [_] [★] [_] ニュースだ。",
+    "stem": "駅が できた ことは、この [★] [_] [_] [_] ニュースだ。",
     "options": [
       "人々",
       "うれしい",
@@ -221,15 +221,16 @@
       "en": "The opening of the station is happy news for the people of this town."
     },
     "why": {
-      "zh": "「この町の人々」是立场的主体，接「にとって」，再接评价「うれしいニュース」：町の → 人々 → にとって → うれしい。★ 是「にとって」。",
-      "en": "「この町の人々」 is whose point of view it is, followed by 「にとって」 and the judgement 「うれしいニュース」: 町の → 人々 → にとって → うれしい. The ★ is 「にとって」."
+      "zh": "「この町の人々」是立场的主体，接「にとって」，再接评价「うれしいニュース」：町の → 人々 → にとって → うれしい。★ 在第一格，是「町の」。",
+      "en": "「この町の人々」 is whose point of view it is, followed by 「にとって」 and the judgement 「うれしいニュース」: 町の → 人々 → にとって → うれしい. The ★ is the first slot: 「町の」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l36-007",
@@ -318,7 +319,7 @@
       "lesson36#3"
     ],
     "difficulty": 2,
-    "stem": "医者は 治療の 方法を [_] [_] [★] [_]。",
+    "stem": "医者は 治療の 方法を [_] [★] [_] [_]。",
     "options": [
       "基づいて",
       "検査の",
@@ -337,15 +338,16 @@
       "en": "The doctor decided on the treatment based on the test results."
     },
     "why": {
-      "zh": "「検査の結果」是依据，接「に基づいて」，最后是谓语「決めた」：検査の → 結果に → 基づいて → 決めた。★ 是「基づいて」。",
-      "en": "「検査の結果」 is the basis, followed by 「に基づいて」 and the verb 「決めた」: 検査の → 結果に → 基づいて → 決めた. The ★ is 「基づいて」."
+      "zh": "「検査の結果」是依据，接「に基づいて」，最后是谓语「決めた」：検査の → 結果に → 基づいて → 決めた。★ 在第二格，是「結果に」。",
+      "en": "「検査の結果」 is the basis, followed by 「に基づいて」 and the verb 「決めた」: 検査の → 結果に → 基づいて → 決めた. The ★ is the second slot: 「結果に」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l36-010",
@@ -434,7 +436,7 @@
       "lesson36#4"
     ],
     "difficulty": 1,
-    "stem": "毎年 [_] [_] [★] [_] 花が 咲きます。",
+    "stem": "毎年 [★] [_] [_] [_] 花が 咲きます。",
     "options": [
       "いろいろな",
       "春から",
@@ -453,15 +455,16 @@
       "en": "Every year all kinds of flowers bloom from spring into summer."
     },
     "why": {
-      "zh": "「春から夏にかけて」表示时间范围，「いろいろな」修饰「花」：春から → 夏に → かけて → いろいろな。★ 是「かけて」。",
-      "en": "「春から夏にかけて」 is the time range and 「いろいろな」 modifies 「花」: 春から → 夏に → かけて → いろいろな. The ★ is 「かけて」."
+      "zh": "「春から夏にかけて」表示时间范围，「いろいろな」修饰「花」：春から → 夏に → かけて → いろいろな。★ 在第一格，是「春から」。",
+      "en": "「春から夏にかけて」 is the time range and 「いろいろな」 modifies 「花」: 春から → 夏に → かけて → いろいろな. The ★ is the first slot: 「春から」."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 2
   },
   {
     "id": "n3-l36-013",
