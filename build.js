@@ -139,6 +139,11 @@ const AI_PROVIDER_HOSTS = [...new Set(
 // script or image from any other host is refused, so an injected tag can't
 // load code or leak data (an <img> beacon) elsewhere.
 const CSP_META = `<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://giscus.app; style-src 'self' 'unsafe-inline' https://giscus.app; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data:; frame-src https://giscus.app; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com ${AI_PROVIDER_HOSTS.join(" ")} http://localhost:* https://localhost:* http://127.0.0.1:* https://127.0.0.1:*">`;
+// Copies of the site (someone rebuilding the repo on their own domain): the
+// host is checked against jpnotes.dev itself — not SITE, which a copy changes —
+// and a copy gets a banner pointing to the original, a canonical link back to
+// it and noindex. Local and LAN previews are left alone.
+const CLONE_GUARD = `<script>(function(){var h=location.hostname;if(/(^|\\.)jpnotes\\.dev$/.test(h)||/^(localhost|127\\.0\\.0\\.1|\\[::1\\]|10\\.|192\\.168\\.|172\\.(1[6-9]|2\\d|3[01])\\.)|\\.(local|localhost|test)$/.test(h)||location.protocol==='file:')return;var u='https://jpnotes.dev'+location.pathname;var c=document.querySelector('link[rel=canonical]');if(c)c.href=u;else{c=document.createElement('link');c.rel='canonical';c.href=u;document.head.appendChild(c);}var r=document.createElement('meta');r.name='robots';r.content='noindex';document.head.appendChild(r);document.addEventListener('DOMContentLoaded',function(){var zh=/^\\/zh\\//.test(location.pathname),d=document.createElement('div');d.setAttribute('style','position:sticky;top:0;z-index:9999;padding:.55rem 1rem;background:#e94560;color:#fff;font:14px/1.5 sans-serif;text-align:center');d.innerHTML=(zh?'这是 jpnotes.dev 的副本，内容可能已过时。最新版：':'This is a copy of jpnotes.dev and may be out of date. The original: ')+'<a style="color:#fff;font-weight:700" href="'+u+'">jpnotes.dev'+location.pathname+'</a>';document.body.insertBefore(d,document.body.firstChild);});})();</script>`;
 
 // Theme init script — runs synchronously in <head> before CSS evaluates,
 // so the saved theme class is on <html> before paint (no flash of wrong theme).
@@ -2227,7 +2232,7 @@ async function main() {
       <a href="https://liko.page/" target="_blank" rel="author">liko.page</a>
       <a href="#feedback" class="fb-open"><span class="lang-zh">💬 反馈</span><span class="lang-en">💬 Feedback</span></a>
     </nav>
-    <p>© ${new Date().getFullYear()} jpnotes.dev</p>
+    <p>© ${new Date().getFullYear()} <a href="https://jpnotes.dev/">jpnotes.dev</a> · <span class="lang-zh">内容采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh-hans" rel="license">CC BY 4.0</a> 授权，转载请注明出处 jpnotes.dev</span><span class="lang-en">Content licensed <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a> — please credit jpnotes.dev when you reuse it</span></p>
   </footer>
   <script src="${SITE_PATH}feedback.js?v=${FEEDBACK_JS_HASH}" defer></script>`;
   // Phones: a top bar (☰ stays the sidebar's own button, at its left end) with
@@ -2582,6 +2587,7 @@ ${SETTINGS_SCRIPT}`;
 <meta name="apple-mobile-web-app-title" content="日语文法">
 
 ${CSP_META}
+${CLONE_GUARD}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 ${SPECULATION_RULES}
@@ -2830,6 +2836,7 @@ ${AI_SCRIPT}
 <link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
 ${CSP_META}
+${CLONE_GUARD}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 ${SPECULATION_RULES}
@@ -3153,6 +3160,7 @@ html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
 <link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
 ${CSP_META}
+${CLONE_GUARD}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 ${SPECULATION_RULES}
@@ -3266,6 +3274,7 @@ ${AI_SCRIPT}
 <link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
 ${CSP_META}
+${CLONE_GUARD}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 ${SPECULATION_RULES}
@@ -3379,6 +3388,7 @@ ${AI_SCRIPT}
 <link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
 ${CSP_META}
+${CLONE_GUARD}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 ${SPECULATION_RULES}
@@ -3507,6 +3517,7 @@ ${AI_SCRIPT}
 <link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
 ${CSP_META}
+${CLONE_GUARD}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 ${SPECULATION_RULES}
@@ -3600,6 +3611,7 @@ ${AI_SCRIPT}
 <link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">${preload ? `\n<link rel="preload" href="${preload}" as="fetch" crossorigin>` : ""}
 ${CSP_META}
+${CLONE_GUARD}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 ${SPECULATION_RULES}
