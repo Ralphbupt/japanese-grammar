@@ -2345,6 +2345,12 @@ async function main() {
     else setOpen(false);
   });
 
+  // Lesson → practice links: which one gets clicked (top / point / end).
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('[data-ql]');
+    if (a && window.gaEvent) window.gaEvent('quiz_link', { where: a.getAttribute('data-ql'), page: location.pathname });
+  });
+
   // Phone top bar: where you are (links to the level overview), the tool
   // buttons, and it slides away while scrolling down.
   var mbar = document.getElementById('m-bar');
@@ -2661,7 +2667,14 @@ ${AI_SCRIPT}
     if (!/^N[1-5]$/.test(level)) return html;
     // Whole lesson: before 复习计划 (or at the end).
     const total = quizLessonCount[`${level}:${id}`];
-    const lessonLink = total ? `<p class="quiz-link quiz-link-lesson"><a href="${SITE_PATH}${level.toLowerCase()}-practice/#lesson=${id}">✍ <span class="lang-zh">练这一课的题（${quizLessonCount[`${level}:${id}:vocab`] ? "语法 + 词汇，" : ""}${total} 题）</span><span class="lang-en">Practice this lesson (${quizLessonCount[`${level}:${id}:vocab`] ? "grammar + vocabulary, " : ""}${total} questions)</span></a></p>\n` : "";
+    const lessonHref = `${SITE_PATH}${level.toLowerCase()}-practice/#lesson=${id}`;
+    const withVocab = quizLessonCount[`${level}:${id}:vocab`];
+    const hasEx = /<h2[^>]*\bid="(练习|今日练|今日練)/.test(html);
+    // Top: right under the meta line, where every reader sees it. End: a card
+    // after the last point. data-ql says which one was clicked (GA quiz_link).
+    const topLink = total ? `<p class="quiz-link quiz-link-top"><a href="${lessonHref}" data-ql="top">✍ <span class="lang-zh">在线做题（${withVocab ? "语法 + 词汇，" : ""}${total} 题）</span><span class="lang-en">Online practice (${withVocab ? "grammar + vocabulary, " : ""}${total} questions)</span></a></p>\n` : "";
+    const lessonLink = total ? `<div class="quiz-cta"><p><span class="lang-zh">${hasEx ? "课里的练习做完了？" : "学完这一课？"}再做 ${total} 道 JLPT 题型的在线题${withVocab ? "（语法 + 词汇）" : ""}：点了就判分、每题有解析，错题会自动记下来。</span><span class="lang-en">${hasEx ? "Done with the exercises above?" : "Finished the lesson?"} Try ${total} JLPT-style questions online${withVocab ? " (grammar + vocabulary)" : ""}: marked as you go, each explained, and the ones you miss are saved for review.</span></p><a href="${lessonHref}" data-ql="end">✍ <span class="lang-zh">在线做题</span><span class="lang-en">Practise online</span> →</a></div>\n` : "";
+    if (topLink) html = html.replace(/(<div class="lesson-meta">[\s\S]*?<\/div>)/, `$1\n${topLink}`);
     let lessonLinkPlaced = !lessonLink;
     const out = html.split(/(?=<h2[\s>])/).map((part) => {
       if (!lessonLinkPlaced && /^<h2[^>]*\bid="复习计划/.test(part)) { lessonLinkPlaced = true; return lessonLink + part; }
@@ -2669,7 +2682,7 @@ ${AI_SCRIPT}
       const n = k && quizRefCount[`${level}:${id}#${k}`];
       if (!n) return part;
       // Before the section's closing <hr>, so it reads as part of the point.
-      const link = `<p class="quiz-link"><a href="${SITE_PATH}${level.toLowerCase()}-practice/#ref=${id}.${k}">✍ <span class="lang-zh">练这个语法点（${n} 题）</span><span class="lang-en">Practice this point (${n} questions)</span></a></p>\n`;
+      const link = `<p class="quiz-link"><a href="${SITE_PATH}${level.toLowerCase()}-practice/#ref=${id}.${k}" data-ql="point">✍ <span class="lang-zh">练这个语法点（${n} 题）</span><span class="lang-en">Practice this point (${n} questions)</span></a></p>\n`;
       const hr = part.match(/<hr\s*\/?>\s*$/);
       return hr ? part.slice(0, hr.index) + link + hr[0] : part + link;
     }).join("");
@@ -4653,6 +4666,11 @@ html.theme-dark .speak-btn:hover { border-color: var(--accent); }
 }
 .related-label { font-weight: 600; color: var(--text-muted); margin-right: .5rem; }
 .quiz-link { margin: 1.4rem 0 .4rem; }
+.quiz-link-top { margin: .2rem 0 1rem; }
+.quiz-cta { margin: 2rem 0 1rem; padding: 1rem 1.2rem; border: 1px solid var(--accent); border-radius: var(--radius-lg); background: rgba(127,127,127,.07); }
+.quiz-cta p { margin: 0 0 .7rem; }
+.quiz-cta a { display: inline-block; padding: .45em 1.2em; border-radius: 999px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 700; }
+.quiz-cta a:hover { filter: brightness(1.1); }
 .nav-hub { margin: .2rem .6rem .6rem; font-weight: 600; }
 .quiz-link a, .ov-quiz a { display: inline-block; padding: .35em .95em; border: 1px solid var(--accent); border-radius: 999px; color: var(--accent); text-decoration: none; font-size: .92em; }
 .quiz-link a:hover, .ov-quiz a:hover { background: var(--accent); color: #fff; }
