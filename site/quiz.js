@@ -362,8 +362,8 @@
     } else {
       h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><button class="q-opt" data-act="opt" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span>' + o + '</button></li>'; }).join('') + '</ol>';
     }
-    h += '<div class="q-actions">' + (q.type === 'narabe' ? '' : '<button class="q-btn q-idk" data-act="idk">' + t('不会', 'I don’t know') + '</button>') +
-      (q.type === 'narabe' ? '<button class="q-btn q-btn-primary" data-act="submit" disabled>' + t('提交', 'Submit') + '</button>' : '') + '</div>' +
+    h += '<div class="q-actions">' + (q.type === 'narabe' ? '<button class="q-btn q-btn-primary" data-act="submit" disabled>' + t('提交', 'Submit') + '</button>' : '') +
+      '<button class="q-btn q-idk" data-act="idk">' + t('不会', 'I don’t know') + '</button></div>' +
       '<div class="q-feedback" aria-live="polite"></div></div>';
     app.innerHTML = h;
     if (idx < s.i) replay([q], idx + 1);
