@@ -239,7 +239,7 @@ const LANG_REDIRECT_JS = `(function(){
   var want = ('isEn' in prefs) ? (prefs.isEn ? 'en' : 'zh')
     : (page === 'en' && /^zh/i.test(navigator.language || '')) ? 'zh' : page;
   var alt = want !== page && html.getAttribute('data-alt-' + want);
-  if (alt) location.replace(alt + location.hash);
+  if (alt) location.replace(alt + location.search + location.hash);   // keep ?utm_… for GA
 })();`;
 
 const RUBY_PREF_JS = `(function(){
