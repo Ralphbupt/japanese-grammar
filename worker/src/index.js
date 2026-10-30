@@ -47,6 +47,7 @@ const DAILY_NEURONS = 9500;                           // Free plan allows 10,000
 const CACHE_TTL = 3 * 86400;
 const FEEDBACK_PER_DAY = 20;
 const FEEDBACK_MAX = 1000;                            // characters of text
+const MAX_MESSAGES = 40;                              // the panel sends the system prompt + the last 6 turns
 
 // Backup providers, tried in order when Workers AI can't answer (the day's
 // neuron budget is gone, or it errors). Each is used only if its key is set as
@@ -86,6 +87,7 @@ export default {
     let body;
     try { body = JSON.parse(raw); } catch (e) { return json({ error: { message: 'Bad JSON' } }, 400, cors); }
     if (!Array.isArray(body.messages) || !body.messages.length) return json({ error: { message: 'messages required' } }, 400, cors);
+    if (body.messages.length > MAX_MESSAGES) return json({ error: { message: 'Too many messages' } }, 400, cors);
 
     // Only the fields the panel sends; anything else in the request is dropped.
     const messages = body.messages.map((m) => ({ role: m.role === 'assistant' ? 'assistant' : m.role === 'system' ? 'system' : 'user', content: String(m.content || '') }));
@@ -249,8 +251,19 @@ async function sha256(str) {
   return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, '0')).join('');
 }
 
+// The first four groups of an IPv6 address (its /64), "::" expanded first.
+function v6prefix(ip) {
+  const [head, tail] = ip.split('::');
+  const h = head ? head.split(':') : [], t = tail !== undefined && tail ? tail.split(':') : [];
+  const full = tail === undefined ? h : h.concat(Array(Math.max(0, 8 - h.length - t.length)).fill('0'), t);
+  return full.slice(0, 4).map((g) => (parseInt(g, 16) || 0).toString(16)).join(':') + '::/64';
+}
+
 // Daily salt, so the stored value cannot be matched to an IP across days.
+// An IPv6 address counts by its /64: one home or phone gets a whole /64 and
+// could otherwise step through addresses to dodge the per-reader limits.
 async function hashIp(ip, env) {
+  if (ip.includes(':')) ip = v6prefix(ip);
   const data = new TextEncoder().encode(new Date().toISOString().slice(0, 10) + '|' + (env.IP_SALT || '') + '|' + ip);
   const buf = await crypto.subtle.digest('SHA-256', data);
   return [...new Uint8Array(buf)].slice(0, 12).map((b) => b.toString(16).padStart(2, '0')).join('');

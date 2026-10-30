@@ -750,7 +750,7 @@
       if (own) own.addEventListener('click', function () { track('ai_wizard', { step: 'start' }); renderWizard(); });
       return;
     }
-    history.forEach(function (m, i) { appendMsg(m.role, m.content, i === history.length - 1); });
+    history.forEach(function (m, i) { appendMsg(m.role, m.shown || m.content, i === history.length - 1); });
     if (history[history.length - 1].role === 'user') {
       var un = document.createElement('div');
       un.className = 'ai-msg ai-error';
@@ -822,10 +822,12 @@
     nodes.slice(Math.max(i, 0)).forEach(function (n) { n.remove(); });
     pendingSource = 'retry';
     track('ai_retry', {});
-    send(last.content);
+    send(last.content, last.shown);
   }
 
-  function send(text) {
+  // `shown`, when given, is what the chat displays instead of `text` (the full
+  // instruction still goes to the model): a button's prompt stays out of view.
+  function send(text, shown) {
     text = (text || '').trim();
     if (!text || busy) return;
     var source = pendingSource, t0 = Date.now();
@@ -833,8 +835,8 @@
     if (!history.length) msgsEl.innerHTML = '';
     msgsEl.querySelectorAll('.ai-error, .ai-actions').forEach(function (n) { n.remove(); });
     inputEl.value = ''; autosize();
-    history.push({ role: 'user', content: text });
-    appendMsg('user', text);
+    history.push(shown ? { role: 'user', content: text, shown: shown } : { role: 'user', content: text });
+    appendMsg('user', shown || text);
     var reply = '', think = '', el = appendMsg('assistant', ''), raf = 0, gotBytes = false;
     var prov = PROVIDERS[cfg.active] || PROVIDERS.custom, c = callCfg();
     el.classList.add('ai-streaming');
@@ -1267,7 +1269,7 @@
     if (sec >= 0 && sec !== scope) { scope = sec; renderScope(); }
     pendingSource = 'example';
     track('ai_select', { chars: sentence.length, scoped: sec >= 0, mode: 'button' });
-    if (!busy) { open(); send(explainPrompt(sentence)); }
+    if (!busy) { open(); send(explainPrompt(sentence), t('讲解这句：「' + sentence + '」', 'Explain this sentence: "' + sentence + '"')); }
     else open(explainPrompt(sentence));
   }
   function addExplainBtns() {

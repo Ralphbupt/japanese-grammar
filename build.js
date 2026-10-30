@@ -133,7 +133,12 @@ const AI_PROVIDER_HOSTS = [...new Set(
   [...AI_JS_SRC.matchAll(/(?:base|altBase): '(https?:\/\/[^'/]+)/g)]
     .map(m => m[1]).filter(h => !/localhost|127\.0\.0\.1/.test(h))
 )];
-const CSP_META = `<meta http-equiv="Content-Security-Policy" content="connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com ${AI_PROVIDER_HOSTS.join(" ")} http://localhost:* https://localhost:* http://127.0.0.1:* https://127.0.0.1:*">`;
+// The rest of the policy: scripts, styles, images, audio, frames only from
+// this site (plus giscus for comments); no plugins, no <base> or form tricks.
+// Inline scripts stay allowed — the pages are built with many of them — but a
+// script or image from any other host is refused, so an injected tag can't
+// load code or leak data (an <img> beacon) elsewhere.
+const CSP_META = `<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://giscus.app; style-src 'self' 'unsafe-inline' https://giscus.app; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data:; frame-src https://giscus.app; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com ${AI_PROVIDER_HOSTS.join(" ")} http://localhost:* https://localhost:* http://127.0.0.1:* https://127.0.0.1:*">`;
 
 // Theme init script — runs synchronously in <head> before CSS evaluates,
 // so the saved theme class is on <html> before paint (no flash of wrong theme).
@@ -4118,7 +4123,7 @@ Each \`/lessonNN/\` page contains:
   <rect x="40" y="40" width="1120" height="550" rx="20" fill="none" stroke="#e94560" stroke-width="2" opacity="0.3"/>
   <text x="600" y="220" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="96" fill="#ffffff" font-weight="bold">日语语法笔记</text>
   <text x="600" y="320" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="42" fill="#c8c8d8">Japanese Grammar Notes</text>
-  <text x="600" y="400" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="36" fill="#e94560">N5 → N4 → N3 → N2</text>
+  <text x="600" y="400" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="36" fill="#e94560">N5 → N4 → N3 → N2 → N1</text>
   <text x="600" y="470" text-anchor="middle" font-family="sans-serif" font-size="24" fill="#888888">Free · Bilingual · N5 → N1 · Audio</text>
   <text x="600" y="550" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#666666">${SITE_HOST}</text>
 </svg>`;
