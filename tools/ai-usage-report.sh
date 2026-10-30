@@ -11,6 +11,8 @@
 #   limited-budget = the site's free budget was gone and no backup answered  ← look at this
 #   error = Workers AI failed and no backup answered                          ← and this
 # Older rows (before 2026-10-29) only say "limited".
+# "you" = requests from the owner's browser (one opted out of GA with ?ga_off);
+# rows before 2026-10-30 don't say, so they count as readers.
 set -e
 DAYS=${1:-14}
 case "$DAYS" in ''|*[!0-9]*) echo "usage: tools/ai-usage-report.sh [days]   (days is a number, default 14)" >&2; exit 1;; esac
@@ -30,8 +32,8 @@ except Exception: sys.exit('Query failed: ' + (raw.strip()[:300] or 'empty respo
 for r in rows: print(json.dumps(r))"
 }
 
-echo "Per day (JST): requests · neurons (% of the $BUDGET budget) · limited · backup · error"
-q "SELECT toStartOfDay(timestamp + INTERVAL '9' HOUR) d, sum(_sample_interval) n, sum(double2 * _sample_interval) neurons,
+echo "Per day (JST): requests (readers + you) · neurons (% of the $BUDGET budget) · limited · backup · error"
+q "SELECT toStartOfDay(timestamp + INTERVAL '9' HOUR) d, sum(_sample_interval) n, sumIf(_sample_interval, blob4 = 'owner') me, sum(double2 * _sample_interval) neurons,
      sumIf(_sample_interval, startsWith(blob3, 'limited')) lim, sumIf(_sample_interval, startsWith(blob3, 'fallback')) fb, sumIf(_sample_interval, blob3 = 'error') err
    FROM jpnotes_ai_usage WHERE timestamp > NOW() - INTERVAL '$DAYS' DAY GROUP BY d ORDER BY d" |
   python3 -c "
@@ -39,7 +41,7 @@ import json, sys
 for r in map(json.loads, sys.stdin):
     n = float(r['neurons'])
     flag = '  <- budget nearly gone' if n >= $BUDGET * 0.8 else ''
-    print(f\"  {r['d'][:10]}  {r['n']:>4} req  {n:7.0f} ({n / $BUDGET:4.0%})  limited {r['lim']:>3}  backup {r['fb']:>3}  error {r['err']:>3}{flag}\")"
+    print(f\"  {r['d'][:10]}  {r['n']:>4} req ({int(r['n']) - int(r['me'])} + {r['me']})  {n:7.0f} ({n / $BUDGET:4.0%})  limited {r['lim']:>3}  backup {r['fb']:>3}  error {r['err']:>3}{flag}\")"
 echo
 echo "By outcome:"
 q "SELECT blob3 outcome, sum(_sample_interval) n FROM jpnotes_ai_usage WHERE timestamp > NOW() - INTERVAL '$DAYS' DAY GROUP BY outcome ORDER BY n DESC" |
@@ -49,8 +51,8 @@ for r in map(json.loads, sys.stdin):
     bad = '  <- check' if r['outcome'] in ('limited-budget', 'error') else ''
     print(f\"  {r['outcome']:<20} {r['n']:>5}{bad}\")"
 echo
-echo "By button (example = 讲解 on a sentence, quiz = practice pages, quick = suggested prompts):"
-q "SELECT blob1 src, sum(_sample_interval) n FROM jpnotes_ai_usage WHERE timestamp > NOW() - INTERVAL '$DAYS' DAY GROUP BY src ORDER BY n DESC" |
+echo "By button, readers only (example = 讲解 on a sentence, quiz = practice pages, quick = suggested prompts):"
+q "SELECT blob1 src, sum(_sample_interval) n FROM jpnotes_ai_usage WHERE timestamp > NOW() - INTERVAL '$DAYS' DAY AND blob4 != 'owner' GROUP BY src ORDER BY n DESC" |
   python3 -c "
 import json, sys
 for r in map(json.loads, sys.stdin): print(f\"  {r['src']:<12} {r['n']:>5}\")"

@@ -33,7 +33,7 @@
  * Otherwise nothing is logged: no questions, answers or IPs. The only record is a
  * usage counter in Analytics Engine (dataset jpnotes_ai_usage), one row per
  * request: which button sent it (the panel's `source`), first question or
- * follow-up, what happened (cache / model / fallback-groq|cerebras / limited-ip-day|ip-minute|budget / error) and the neurons
+ * follow-up, reader or the site owner (blob4), what happened (cache / model / fallback-groq|cerebras / limited-ip-day|ip-minute|budget / error) and the neurons
  * spent.
  */
 
@@ -94,7 +94,10 @@ export default {
     const stream = !!body.stream;
     const source = /^(typed|quick|selection|example|quiz|retry)$/.test(body.source) ? body.source : 'other';
     const turn = messages.filter((m) => m.role === 'user').length > 1 ? 'followup' : 'first';
-    const count = (outcome, neurons) => { try { env.USAGE && env.USAGE.writeDataPoint({ indexes: [source], blobs: [source, turn, outcome], doubles: [1, neurons || 0] }); } catch (e) {} };
+    // The site owner's own browser says so (it opted out of GA), and local
+    // development is the owner too, so reports can leave both out.
+    const who = body.owner === true || !origin.startsWith('https://') ? 'owner' : 'reader';
+    const count = (outcome, neurons) => { try { env.USAGE && env.USAGE.writeDataPoint({ indexes: [source], blobs: [source, turn, outcome, who], doubles: [1, neurons || 0] }); } catch (e) {} };
     const cacheable = stream && messages.length === 2 && messages[0].role === 'system' && messages[1].role === 'user';
     const cacheKey = cacheable ? new Request('https://ai.jpnotes.dev/cache/' + await sha256(MODEL + '\n' + JSON.stringify(messages))) : null;
     const headers = new Headers(cors);

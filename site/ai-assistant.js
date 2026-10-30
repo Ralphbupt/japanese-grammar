@@ -413,6 +413,12 @@
       });
     });
   }
+  // Sent to the free relay only, for its usage counter: which button, and
+  // whether this browser is the site owner's (opted out of GA with ?ga_off).
+  function relayTags(source) {
+    var me = false; try { me = localStorage.getItem('jp_ga_off') === '1'; } catch (e) {}
+    return me ? { source: source, owner: true } : { source: source };
+  }
   function callOpenAI(c, sys, msgs, onDelta, signal, extra) {
     var inThink = false;   // older servers inline <think>…</think> in content
     return fetch(c.base.replace(/\/+$/, '') + '/chat/completions', {
@@ -878,7 +884,7 @@
     var call = prov.kind === 'anthropic' ? callAnthropic : callOpenAI;
     track('ai_ask', { source: source, turn: Math.ceil(history.length / 2), lesson_chars: sys.length, scope: scope === -2 ? 'auto' : scope < 0 ? 'lesson' : 'section' });
     // Only our relay gets the source (it counts which button was used); real providers reject unknown fields.
-    call(c, sys, msgs, onDelta, abort.signal, cfg.active === 'jpnotes' ? { source: source } : null).then(function () {
+    call(c, sys, msgs, onDelta, abort.signal, cfg.active === 'jpnotes' ? relayTags(source) : null).then(function () {
       track('ai_answer', { source: source, ms: Date.now() - t0, chars: reply.length });
     }, function (e) {
       if (e && e.name === 'AbortError') { track('ai_stop', { ms: Date.now() - t0, chars: reply.length }); return; }
