@@ -74,6 +74,36 @@ const FILE_TYPES = {
 // explanations shown after answering keep it at every level.
 const NO_RUBY = new Set(FILE_TYPES["moji-goi"]);
 const RUBY_LEVELS = new Set(["N5", "N4"]);
+// N3, like the real test, has furigana only on words with kanji above N4: a
+// word written entirely in N5/N4 kanji (the usual JLPT lists) goes bare.
+const ABOVE_N4_RUBY = new Set(["N3"]);
+const BASIC_KANJI = new Set([..."日一国人年大十二本中長出三時行見月分後前生五間上東四今金九入学高円子外八六下来気小七山話女北午百書先名川千水半男西電校語土木聞食車何南万毎白天母火右読友左休父雨" +
+  "会同事自社発者地業方新場員立開手力問代明動京目通言理体田主題意不作用度強公持野以思家世多正安院心界教文元重近考画海売知道集別物使品計死特私始朝運終台広住真有口少町料工建空急止送切転研足究楽起着店病質待試族銀早映親験英医仕去味写字答夜音注帰古歌買悪図週室歩風紙黒花春赤青館屋色走秋夏習駅洋旅服夕借曜飲肉貸堂鳥飯勉冬昼茶弟牛魚兄犬妹姉漢光声達部合遅乗寝晩降洗窓雪耳々"]);
+const dropBasicRuby = (html) => html.replace(/<ruby>([^<]+)<rp>\(<\/rp><rt>[^<]*<\/rt><rp>\)<\/rp><\/ruby>/g, (m, k) => ([...k].every((c) => BASIC_KANJI.has(c) || !/[一-龯]/.test(c)) ? k : m));
+const rubyMode = (level) => (RUBY_LEVELS.has(level) ? true : ABOVE_N4_RUBY.has(level) ? "above" : false);
+
+// Grammar the lessons teach earlier than the JLPT tests it: the N5 lessons
+// cover conditionals, potential/passive, そうだ/ようだ … which the usual lists
+// put at N4. Their questions carry `pre` ("N4"): practice by lesson and the
+// review list keep them; daily sets, practice by type and the analysis of
+// the level leave them out. A whole lesson or one grammar point (lessonNN#K);
+// only points every common list puts higher (つもり, 予定, でしょう stay N5).
+const ABOVE_LEVEL = {
+  N5: {
+    "lesson07#4": "N4",                                   // たばかり
+    lesson09: "N4", lesson10: "N4", lesson11: "N4",       // と・ば・たら・なら; 可能形・受身形
+    "lesson12#1": "N4", "lesson12#4": "N4",               // 意向形; つもり vs 予定 vs ようと思う
+    "lesson13#2": "N4", "lesson13#3": "N4", "lesson13#4": "N4",   // かもしれない; そうだ ×2
+    lesson14: "N4", "lesson14#4": "N3",                   // ようだ・みたいだ・らしい; っぽい
+    "lesson15#2": "N4", "lesson15#4": "N4", "lesson15#6": "N4", "lesson15#8": "N4",   // ことがある/ことはない, のに, し, ために
+    "lesson16#2": "N4", "lesson16#3": "N4", "lesson16#5": "N4",   // すぎる, やすい/にくい, 方
+  },
+};
+function aboveLevel(level, q) {
+  const map = ABOVE_LEVEL[level];
+  const ref = map && (q.refs || []).find((r) => !/#vocab$/.test(r));
+  return ref ? map[ref] || map[ref.split("#")[0]] || null : null;
+}
 
 // Mock test layout per level: sittings (minutes, types in order; each type
 // is one もんだい) and scoring (official sections; listening isn't tested).
@@ -154,6 +184,8 @@ const QUIZ_RUBY_FIXES = [
   [new RegExp(RX("先々", "さきざき") + RX("週", "しゅう"), "g"), R("先々週", "せんせんしゅう")],
   [new RegExp(RX("富士山", "ふじやま"), "g"), R("富士山", "ふじさん")],
   [new RegExp(RX("日本人", "にっぽんじん"), "g"), R("日本人", "にほんじん")],
+  // A date's 1日 (3月1日) is ついたち; 1日で / 1日おきに stay いちにち.
+  [new RegExp("(" + RX("月", "がつ") + ")([1１])" + RX("日", "にち"), "g"), (m, month, one) => month + R(one + "日", "ついたち")],
   [new RegExp(RX("市場", "しじょう"), "g"), R("市場", "いちば")],
   // 十分 / 二十分 as minutes (ぐらい・かかる・歩いて…) — not じゅうぶん / じゅうふん
   [new RegExp(RX("十分", "じゅうぶん") + "(?=\\s*(ぐらい|くらい|ほど|かか|で|前|後|です))", "g"), R("十分", "じゅっぷん")],
@@ -350,10 +382,19 @@ const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replac
 // Validated, furigana'd bundle for one level's practice questions, or for
 // one of its mock tests (`mock` = set number). `ruby(text)` → HTML.
 async function bundleLevel(level, ruby, mock) {
-  const points = lessonPoints(level);
+  let points = lessonPoints(level);
   const data = mock ? loadDir(path.join(ROOT, "questions", level, `mock-${mock}`), `${level}/mock-${mock}`) : loadLevel(level);
   const errors = validate(level, data, points, mock);
   if (errors.length) throw new Error(`Invalid questions:\n  ${errors.join("\n  ")}`);
+  // The questions a lower level marks as this level's grammar (ABOVE_LEVEL)
+  // are practice questions here too, as ordinary ones: same ids, so progress
+  // is shared between the two pages.
+  if (!mock) for (const from of Object.keys(ABOVE_LEVEL)) {
+    const borrowed = loadLevel(from).qs.filter((q) => aboveLevel(from, q) === level);
+    if (!borrowed.length) continue;
+    points = { ...lessonPoints(from), ...points };
+    data.qs.push(...borrowed);
+  }
   // Furigana each run of text between markers (slots, blanks, underlines,
   // newlines, table bars), keeping the markers. <<…>> becomes <u>; a
   // vocabulary question gets no furigana at all.
@@ -369,6 +410,7 @@ async function bundleLevel(level, ruby, mock) {
       else if (withRuby && /^\s*[月火水木金土日](?=\s*[0-9０-９])/.test(part)) html += part.replace(/^(\s*)([月火水木金土日])/, (m, sp, k) => `${sp}<ruby>${k}<rp>(</rp><rt>${WEEKDAY_READING[k]}</rt><rp>)</rp></ruby>`) .replace(/^(.*?<\/ruby>)([\s\S]*)$/, (m, a, rest) => a + rest);
       else html += withRuby ? await ruby(part) : esc(part);
     }
+    if (withRuby === "above") html = dropBasicRuby(html);
     for (const [re, to] of QUIZ_RUBY_FIXES) html = html.replace(re, to);
     html = fixDays(html);
     return html;
@@ -377,7 +419,7 @@ async function bundleLevel(level, ruby, mock) {
   const out = [];
   for (const q0 of data.qs) {
     const q = shuffled(q0);
-    const withRuby = !NO_RUBY.has(q.type) && RUBY_LEVELS.has(level);
+    const withRuby = !NO_RUBY.has(q.type) && rubyMode(level);
     const fullRuby = !NO_RUBY.has(q.type);
     for (const r of q.refs || []) {
       const [lesson, k] = r.split("#");
@@ -400,7 +442,7 @@ async function bundleLevel(level, ruby, mock) {
       ...(q.refs && q.refs.length ? { refs: q.refs } : {}),
       ...(q.passage ? { passage: q.passage, blank: q.type === "bunshou" ? q._blank : undefined } : {}),
       ...(q.stem ? { stem: fix(await render(q.stem, withRuby)) } : {}),
-      ...(q.q ? { q: await render(q.q, RUBY_LEVELS.has(level)) } : {}),
+      ...(q.q ? { q: await render(q.q, rubyMode(level)) } : {}),
       options: await Promise.all(q.options.map(opt)),
       answer: answerOf(q),
       ...(q.type === "narabe" ? { order: q.order } : {}),
@@ -413,6 +455,7 @@ async function bundleLevel(level, ruby, mock) {
       ...(q.tr ? { tr: q.tr } : {}),
       why: q.why, wrong: q.wrong,
       rev: q.rev || 1,
+      ...(!mock && aboveLevel(level, q) ? { pre: aboveLevel(level, q) } : {}),
     });
   }
   const passages = {};
@@ -420,7 +463,7 @@ async function bundleLevel(level, ruby, mock) {
   const blanks = {};
   for (const q of data.qs) if (q.type === "bunshou") (blanks[q.passage] = blanks[q.passage] || {})[q._blank] = q.options[q.answer];
   for (const p of data.passages) {
-    const pr = RUBY_LEVELS.has(level);
+    const pr = rubyMode(level);
     const au = passageAudio(p, blanks[p.id] || {});
     passages[p.id] = { type: p.type, ...(p.intro ? { intro: await render(p.intro, pr) } : {}), html: await render(p.passage, pr), tr: p.tr, ...(p.kj ? { kj: await render(p.kj, true) } : {}), ...(au ? { au } : {}) };
   }
@@ -516,7 +559,78 @@ async function buildQuiz(ruby) {
   return out;
 }
 
-module.exports = { buildQuiz, loadLevel, loadDir, shuffled, answerOf, LEVELS, TYPES, MOCK, QUIZ_PUBLIC, QUIZ_LINKS, AUDIO_REQUESTS };
+// Test-taking cues, reported as warnings (2026-10-30 audit against the
+// official samples): (1) per type, how often the right option is the one
+// clearly longest (or clearly shortest) — a test-wise reader just picks it;
+// chance is about 25%. (2) 並べ替え: ★ piling up in one slot. (3) mock
+// questions and passages that are near copies of practice ones, so the mock
+// score isn't inflated by having seen them.
+const plainText = (s) => String(s || "").replace(/<[^>]+>|\[\[\d+\]\]|<<|>>|\s/g, "");
+const bigrams = (s) => { const b = new Map(); for (let i = 0; i < s.length - 1; i++) { const k = s.slice(i, i + 2); b.set(k, (b.get(k) || 0) + 1); } return b; };
+function similarity(a, b) {
+  const x = bigrams(a), y = bigrams(b);
+  let common = 0;
+  for (const [k, n] of x) common += Math.min(n, y.get(k) || 0);
+  return (2 * common) / Math.max(1, a.length - 1 + b.length - 1);
+}
+const LONGEST_MAX = 0.4;   // warn above this share, given at least 8 questions of the type
+const SIMILAR_MAX = 0.8;
+function cues(practice, mocks) {
+  const out = [];
+  const longest = {}, stars = {};
+  for (const [name, d] of [["practice", practice], ...mocks]) for (const q of d.qs) {
+    const k = `${q.type}${name === "practice" ? "" : " (mock)"}`;
+    if (q.type === "narabe") {
+      const s = [...String(q.stem).matchAll(SLOT)].findIndex((m) => m[1] === "★");
+      (stars[k] = stars[k] || [0, 0, 0, 0])[s]++;
+      continue;
+    }
+    if (!Number.isInteger(q.answer) || !Array.isArray(q.options)) continue;
+    const len = q.options.map((o) => plainText(o).length), top = Math.max(...len), low = Math.min(...len);
+    const t = (longest[k] = longest[k] || [0, 0, 0]);
+    t[2]++;
+    if (len[q.answer] === top && len.filter((n) => n >= top * 0.9).length === 1) t[0]++;
+    if (len[q.answer] === low && len.filter((n) => n <= low * 1.1).length === 1) t[1]++;
+  }
+  const pct = (n, all) => `${n}/${all} (${Math.round((100 * n) / all)}%)`;
+  for (const [k, [n, m, all]] of Object.entries(longest)) {
+    if (all >= 8 && n / all > LONGEST_MAX) out.push(`${k}: the right option is clearly the longest in ${pct(n, all)}`);
+    if (all >= 8 && m / all > LONGEST_MAX) out.push(`${k}: the right option is clearly the shortest in ${pct(m, all)}`);
+  }
+  for (const [k, slots] of Object.entries(stars)) {
+    const all = slots.reduce((a, b) => a + b, 0), top = Math.max(...slots);
+    if (all >= 8 && top / all > LONGEST_MAX) out.push(`${k}: ★ is in slot ${slots.indexOf(top) + 1} in ${pct(top, all)}`);
+  }
+  const text = (q) => plainText(q.stem || q.full);
+  const pool = practice.qs.map((q) => [q.id, text(q)]).filter(([, t]) => t.length >= 12)
+    .concat(practice.passages.map((p) => [p.id, plainText(p.passage)]));
+  for (const [name, d] of mocks) {
+    const items = d.qs.filter((q) => q._kind !== "dokkai").map((q) => [q.id, text(q)]).filter(([, t]) => t.length >= 12)
+      .concat(d.passages.map((p) => [p.id, plainText(p.passage)]));
+    for (const [id, t] of items) {
+      let best = [0, ""];
+      for (const [pid, pt] of pool) {
+        if (Math.abs(pt.length - t.length) > t.length / 2) continue;
+        const s = similarity(t, pt);
+        if (s > best[0]) best = [s, pid];
+      }
+      if (best[0] >= SIMILAR_MAX) out.push(`${name} ${id} is a near copy of practice ${best[1]} (${best[0].toFixed(2)})`);
+    }
+    // Vocabulary: the same tested word, or three of the same options, is the
+    // same question even when the sentence differs (用法's stem is just the
+    // word). Grammar items share forms legitimately; they're compared above.
+    const target = (q) => plainText(underlined(q.stem)[0] || "");
+    const opts = (q) => new Set((q.options || []).map(plainText));
+    for (const q of d.qs.filter((x) => x._kind === "moji-goi")) {
+      const twin = practice.qs.find((p) => p.type === q.type && (
+        (target(q) && target(q) === target(p)) || [...opts(q)].filter((o) => opts(p).has(o)).length >= 3));
+      if (twin && !out.some((w) => w.includes(` ${q.id} `))) out.push(`${name} ${q.id} tests the same as practice ${twin.id} (same word or options)`);
+    }
+  }
+  return out;
+}
+
+module.exports = { buildQuiz, loadLevel, loadDir, shuffled, answerOf, LEVELS, TYPES, MOCK, QUIZ_PUBLIC, QUIZ_LINKS, AUDIO_REQUESTS, ABOVE_LEVEL, aboveLevel };
 
 if (require.main === module) {
   let total = 0, bad = 0;
@@ -530,13 +644,16 @@ if (require.main === module) {
     for (const q of data.qs) byType[q.type] = (byType[q.type] || 0) + 1;
     console.log(`${level}: ${data.qs.length} questions (${Object.entries(byType).map(([k, n]) => `${k} ${n}`).join(", ")})${errors.length ? `, ${errors.length} problems` : ", ok"}`);
     for (const e of errors) console.log("  " + e);
+    const mocks = [];
     for (const d of mockSets(level)) {
       const md = loadDir(path.join(ROOT, "questions", level, d), `${level}/${d}`);
       const me = validate(level, md, lessonPoints(level), +d.split("-")[1]);
       bad += me.length;
+      mocks.push([d, md]);
       console.log(`${level} ${d}: ${md.qs.length} questions${me.length ? `, ${me.length} problems` : ", ok"}`);
       for (const e of me) console.log("  " + e);
     }
+    for (const w of cues(data, mocks)) console.log(`  warning: ${w}`);
   }
   if (!total) console.log("No questions yet.");
   process.exit(bad ? 1 : 0);

@@ -46,6 +46,13 @@
   // The text under the app (what the level tests, FAQ, lesson links) is for the
   // start screen; while a set, test or card session is on screen it's hidden.
   function view(home) { document.body.classList.toggle('quiz-busy', !home); }
+  // Scroll the app to the top of the window — below the desktop quick controls
+  // (#top-controls, fixed top right), which would otherwise cover the top bar.
+  function toTop() {
+    var c = document.getElementById('top-controls');
+    var r = c && c.getBoundingClientRect(), gap = r && r.height ? r.bottom + 8 : 16;   // hidden on phones
+    window.scrollTo(0, app.offsetTop - gap);
+  }
   function loadFail() { app.innerHTML = '<p class="q-muted">' + t('题目载入失败，刷新再试一次。', 'Couldn’t load the questions — try reloading.') + '</p>'; }
   app.innerHTML = '<p class="q-muted">' + t('载入题目…', 'Loading questions…') + '</p>';
   // Runs at the end of this file, once every mode's state is set up.
@@ -76,6 +83,10 @@
     return v ? v.split('#')[0] : null;
   }
   function groupOf(q) { return D.types[q.type].g; }
+  // Grammar the lessons teach before the JLPT tests it (N5 lessons on N4
+  // points) carries `pre`: kept in lesson practice and the review list, left
+  // out of daily sets, practice by type, progress and the analysis.
+  function onLevel(q) { return !q.pre; }
   function seen(id) { return (S.answers[id] || []).length > 0; }
   function lastT(id) { var a = S.answers[id] || []; return a.length ? a[a.length - 1].t : 0; }
   function due() { var n = now(); return ALL.filter(function (q) { var r = S.review[q.id]; return r && r.due <= n; }); }
@@ -84,7 +95,7 @@
   // Accuracy over the last RECENT answers to questions matching `pick`.
   function accuracy(pick) {
     var xs = [];
-    ALL.forEach(function (q) { if (pick(q)) (S.answers[q.id] || []).forEach(function (a) { xs.push(a); }); });
+    ALL.forEach(function (q) { if (onLevel(q) && pick(q)) (S.answers[q.id] || []).forEach(function (a) { xs.push(a); }); });
     xs.sort(function (a, b) { return b.t - a.t; });
     xs = xs.slice(0, RECENT);
     if (!xs.length) return null;
@@ -142,14 +153,14 @@
       .filter(function (x) { return x.a; }).sort(function (a, b) { return a.a.pct - b.a.pct; }).slice(0, 2);
     var cap = size + Math.ceil(n * 0.25);
     weak.forEach(function (w) {
-      ALL.filter(function (q) { return q.type === w.k && !seen(q.id); }).forEach(function (q) { if (size < cap) add(q); });
+      ALL.filter(function (q) { return onLevel(q) && q.type === w.k && !seen(q.id); }).forEach(function (q) { if (size < cap) add(q); });
     });
     // Then new questions taken in turn: vocabulary, grammar (single questions,
     // in lesson order), and one passage — 文章の文法 or reading, at random.
     var queues = [
       // vocabulary has no natural order: unseen ones at random, then the oldest
-      shuffle(ALL.filter(function (q) { return !q.passage && groupOf(q) === 'moji' && !seen(q.id); })).concat(freshFirst(ALL.filter(function (q) { return !q.passage && groupOf(q) === 'moji' && seen(q.id); }))),
-      freshFirst(ALL.filter(function (q) { return !q.passage && groupOf(q) === 'bunpou'; })),
+      shuffle(ALL.filter(function (q) { return onLevel(q) && !q.passage && groupOf(q) === 'moji' && !seen(q.id); })).concat(freshFirst(ALL.filter(function (q) { return onLevel(q) && !q.passage && groupOf(q) === 'moji' && seen(q.id); }))),
+      freshFirst(ALL.filter(function (q) { return onLevel(q) && !q.passage && groupOf(q) === 'bunpou'; })),
       shuffle(ALL.filter(function (q) { return q.passage && !seen(q.id); })),
     ];
     for (var k = 0; size < n && queues.some(function (x) { return x.length; }); k++) {
@@ -198,14 +209,15 @@
     var size = S.prefs.size || 10;
     var d = due().length, r = inReview().length;
     var h = '';
-    if (S.session && S.session.ids.every(function (id) { return Q[id]; }) && S.session.i < S.session.ids.length) {
+    // A set belongs to the page it was started on (ids can be on two levels' pages).
+    if (S.session && (S.session.level || LEVEL) === LEVEL && S.session.ids.every(function (id) { return Q[id]; }) && S.session.i < S.session.ids.length) {
       h += '<div class="q-resume">' + t('上一组还剩 ', 'You have ') + (S.session.ids.length - S.session.i) + t(' 题', ' questions left in your last set') +
         ' <button class="q-btn q-btn-primary" data-act="resume">' + t('继续', 'Continue') + '</button> <button class="q-btn" data-act="drop">' + t('放弃', 'Discard') + '</button></div>';
     }
     // Overall progress: questions seen at least once, and recent accuracy (same window as the per-type bars).
-    var done = ALL.filter(function (q) { return seen(q.id); }).length, all = accuracy(function () { return true; });
-    if (done) h += '<div class="q-total"><div class="q-total-line"><b>' + t('总进度', 'Progress') + '</b> ' + t('已做 ', '') + done + ' / ' + ALL.length + t(' 题', ' questions') + '（' + Math.round(done * 100 / ALL.length) + '%）' +
-      (all ? ' · ' + t('最近正确率 ', 'recent accuracy ') + all.pct + '%' : '') + ' <button class="q-link q-an-link" data-act="analysis">' + t('做题分析 ›', 'Analysis ›') + '</button></div><div class="q-total-bar"><span style="width:' + (done * 100 / ALL.length) + '%"></span></div></div>';
+    var LV = ALL.filter(onLevel), done = LV.filter(function (q) { return seen(q.id); }).length, all = accuracy(function () { return true; });
+    if (done) h += '<div class="q-total"><div class="q-total-line"><b>' + t('总进度', 'Progress') + '</b> ' + t('已做 ', '') + done + ' / ' + LV.length + t(' 题', ' questions') + '（' + Math.round(done * 100 / LV.length) + '%）' +
+      (all ? ' · ' + t('最近正确率 ', 'recent accuracy ') + all.pct + '%' : '') + ' <button class="q-link q-an-link" data-act="analysis">' + t('做题分析 ›', 'Analysis ›') + '</button></div><div class="q-total-bar"><span style="width:' + (done * 100 / LV.length) + '%"></span></div></div>';
     h += '<div class="q-today">' +
       '<button class="q-btn q-btn-primary q-btn-big" data-act="daily">' + t('今日练习', 'Today’s practice') + ' · ' + size + t(' 题', ' questions') + '</button>' +
       // Today's count and streak once there is one; a first visit says what a set is.
@@ -213,14 +225,14 @@
         t('词汇、语法、阅读混在一起，答完马上看解析', 'Vocabulary, grammar and reading mixed — explanations right after each answer')) + '</p>' +
       '<label class="q-size">' + t('每组 ', 'Sets of ') + '<select data-act="size">' + [5, 10, 20, 50].map(function (n) { return '<option' + (n === size ? ' selected' : '') + '>' + n + '</option>'; }).join('') + '</select>' + t(' 题（今日练习和按题型练都按这个数）', ' questions (daily sets and practice by type)') + '</label>' + '</div>';
     h += '<section class="q-sec"><h2>' + t('错题本', 'Review list') + '</h2><p>' +
-      (r ? t('共 ', '') + r + t(' 题，今天到期 ', ' questions, ') + d + t(' 题', ' due today') : t('还没有错题。答错、点了“不会”或“其实是蒙的”的题会出现在这里，隔几天再考你一次。', 'Nothing here yet. Questions you miss, mark “I don’t know”, or flag as a guess show up here and come back a few days later.')) + '</p>' +
+      (r ? t('共 ', '') + r + t(' 题，今天到期 ', ' questions, ') + d + t(' 题', ' due today') : t('还没有错题。答错、点了“不会”或“其实是猜的”的题会出现在这里，隔几天再考你一次。', 'Nothing here yet. Questions you miss, mark “I don’t know”, or flag as a guess show up here and come back a few days later.')) + '</p>' +
       (r ? '<button class="q-btn" data-act="review"' + (d ? '' : ' data-early="1"') + '>' + (d ? t('复习到期的错题', 'Review due questions') : t('提前复习', 'Review early')) + '</button> <button class="q-btn" data-act="review-list">' + t('查看错题', 'See the list') + '</button>' : '') + '</section>';
     Object.keys(D.groups).forEach(function (g) {
       var keys = Object.keys(D.types).filter(function (k) { return D.types[k].g === g; });
       if (!keys.length) return;
       h += '<section class="q-sec"><h2>' + esc(bi(D.groups[g])) + ' <small class="q-muted">' + esc(D.groups[g].ja) + '</small></h2><ul class="q-rows">';
       keys.forEach(function (k) {
-        var list = ALL.filter(function (q) { return q.type === k; });
+        var list = ALL.filter(function (q) { return onLevel(q) && q.type === k; });
         if (!list.length) return;
         var done = list.filter(function (q) { return seen(q.id); }).length;
         h += '<li><button class="q-row" data-act="type" data-k="' + k + '"><span class="q-row-name">' + esc(bi(D.types[k])) + ' <small>' + esc(D.types[k].ja) + '</small></span>' +
@@ -228,6 +240,14 @@
       });
       h += '</ul></section>';
     });
+    var pre = ALL.filter(function (q) { return q.pre; });
+    if (pre.length) {
+      var lv = pre[0].pre, pdone = pre.filter(function (q) { return seen(q.id); }).length;
+      h += '<section class="q-sec"><h2>' + t(lv + ' 预习', lv + ' preview') + '</h2><p class="q-muted">' +
+        t('这几课在 ' + LEVEL + ' 阶段教了 ' + lv + ' 的语法（条件形、可能形、推测……）。它们的 ' + pre.length + ' 道题不算进上面的进度和做题分析，按课练习时照常出现。',
+          'Some ' + LEVEL + ' lessons teach ' + lv + ' grammar early (conditionals, potential, そうだ/ようだ …). Their ' + pre.length + ' questions are left out of the progress and analysis above, and still come up when you practise by lesson.') +
+        '</p><button class="q-btn" data-act="pre">' + t('练 ' + lv + ' 预习题', 'Practise the ' + lv + ' preview questions') + ' <span class="q-muted">' + pdone + '/' + pre.length + '</span></button></section>';
+    }
     h += '<details class="q-sec q-settings"><summary>' + t('备份进度', 'Back up progress') + '</summary>' +
       '<p class="q-muted">' + t('做题记录只存在这个浏览器里。换手机或清缓存前先导出。', 'Your progress lives only in this browser. Export it before switching phones or clearing site data.') + '</p>' +
       '<button class="q-btn" data-act="export">' + t('导出进度', 'Export progress') + '</button> ' +
@@ -239,7 +259,7 @@
   // Answers to questions matching `pick`, newest first, at most `max`.
   function answersOf(pick, max) {
     var xs = [];
-    ALL.forEach(function (q) { if (pick(q)) (S.answers[q.id] || []).forEach(function (a) { xs.push(a); }); });
+    ALL.forEach(function (q) { if (onLevel(q) && pick(q)) (S.answers[q.id] || []).forEach(function (a) { xs.push(a); }); });
     xs.sort(function (a, b) { return b.t - a.t; });
     return max ? xs.slice(0, max) : xs;
   }
@@ -256,7 +276,7 @@
     var by = {};
     ALL.forEach(function (q) {
       var a = S.answers[q.id];
-      if (!a || !a.length) return;
+      if (!a || !a.length || !onLevel(q)) return;
       (q.refs || []).filter(function (r) { return !/#vocab$/.test(r) && D.refs[r]; }).slice(0, 1).forEach(function (r) {
         var x = by[r] || (by[r] = { ref: r, n: 0, miss: 0 }), last = a[a.length - 1];
         x.n++; if (!last.ok || last.g) x.miss++;
@@ -273,12 +293,12 @@
       app.innerHTML = h + '<p>' + t('至少做 10 题才有分析，现在做了 ', 'Answer at least 10 questions to see an analysis — so far: ') + all.length + t(' 题。', '.') + '</p></div>';
       return;
     }
-    var done = ALL.filter(function (q) { return seen(q.id); }).length, rec = stats(all.slice(0, 50));
+    var LV = ALL.filter(onLevel), done = LV.filter(function (q) { return seen(q.id); }).length, rec = stats(all.slice(0, 50));
     // Overview + trend (last 50 answers vs the 50 before).
     h += '<h2>' + t('概况', 'Overview') + '</h2><ul class="q-an-list">' +
-      '<li>' + t('做过 ', 'Answered ') + done + ' / ' + ALL.length + t(' 题，共答 ', ' questions, ') + all.length + t(' 次', ' answers in all') + '</li>' +
-      '<li>' + t('最近 ', 'Last ') + rec.n + t(' 次正确率 ', ' answers: ') + '<b>' + rec.pct + '%</b>' + t('（蒙对不算对）', ' correct (guesses count as wrong)') +
-      (rec.idk || rec.g ? t('，其中“不会” ', '; “don’t know” ') + rec.idk + t(' 次、蒙的 ', ', guessed ') + rec.g + t(' 次', '') : '') + '</li>';
+      '<li>' + t('做过 ', 'Answered ') + done + ' / ' + LV.length + t(' 题，共答 ', ' questions, ') + all.length + t(' 次', ' answers in all') + '</li>' +
+      '<li>' + t('最近 ', 'Last ') + rec.n + t(' 次正确率 ', ' answers: ') + '<b>' + rec.pct + '%</b>' + t('（猜对不算对）', ' correct (guesses count as wrong)') +
+      (rec.idk || rec.g ? t('，其中“不会” ', '; “don’t know” ') + rec.idk + t(' 次、猜的 ', ', guessed ') + rec.g + t(' 次', '') : '') + '</li>';
     if (all.length >= 80) {
       var prev = stats(all.slice(50, 100)), d = rec.pct - prev.pct;
       h += '<li>' + t('和之前 ', 'Versus the ') + prev.n + t(' 次（', ' before (') + prev.pct + '%' + t('）相比：', '): ') + (Math.abs(d) < 5 ? t('差不多', 'about the same') : d > 0 ? t('进步了 ', 'up ') + d + t(' 个百分点', ' points') : t('下降了 ', 'down ') + (-d) + t(' 个百分点', ' points')) + '</li>';
@@ -310,7 +330,7 @@
     h += '<h2>' + t('按题型（从弱到强）', 'By question type (weakest first)') + '</h2><ul class="q-rows q-an-types">' + shown.map(function (x) {
       var q = D.types[x.k];
       return '<li><button class="q-row" data-act="type" data-k="' + x.k + '"><span class="q-row-name">' + esc(bi(q)) + ' <small>' + esc(q.ja) + '</small></span>' +
-        '<span class="q-muted">' + x.st.n + t(' 次', '') + (x.st.idk + x.st.g ? ' · ' + t('不会/蒙 ', 'unsure ') + (x.st.idk + x.st.g) : '') + (x.ms && !/^(short|mid|long|info|tougou|shuchou|bunshou)$/.test(x.k) ? ' · ' + Math.round(x.ms / 1000) + t(' 秒/题', 's each') : '') + '</span>' + bar(x.st) + '</button></li>';
+        '<span class="q-muted">' + x.st.n + t(' 次', '') + (x.st.idk + x.st.g ? ' · ' + t('不会/猜 ', 'unsure ') + (x.st.idk + x.st.g) : '') + (x.ms && !/^(short|mid|long|info|tougou|shuchou|bunshou)$/.test(x.k) ? ' · ' + Math.round(x.ms / 1000) + t(' 秒/题', 's each') : '') + '</span>' + bar(x.st) + '</button></li>';
     }).join('') + '</ul>';
     if (few.length) h += '<p class="q-muted">' + t('做得太少还看不出：', 'Too few answers to tell: ') + few.map(function (x) { return esc(bi(D.types[x.k])); }).join('、') + '</p>';
     if (X && X.items) h += '<p class="q-muted">' + t('正式考试这部分 ', 'The real test: ') + X.minutes + t(' 分钟 ', ' minutes for about ') + X.items + t(' 题左右，平均每题约 ', ' questions, about ') + Math.round(X.minutes * 60 / X.items) + t(' 秒（阅读题要更久，词汇、语法题要更快）。', ' seconds each on average (reading takes longer, so vocabulary and grammar need to go faster).') + '</p>';
@@ -323,7 +343,7 @@
       return '<li><a href="' + LESSON_BASE + p.lesson + '/#' + encodeURI(p.slug) + '" target="_blank" rel="noopener">' + esc(EN ? p.en : p.zh) + '</a> <span class="q-muted">— ' + x.n + t(' 题里 ', ' questions, ') + x.miss + t(' 题还没掌握', ' not got yet') + '</span></li>';
     }).join('') + '</ul><p><button class="q-btn q-btn-primary" data-act="weak">' + t('专练这些语法点', 'Practise these') + '</button></p>';
     app.innerHTML = h + '</div>';
-    window.scrollTo(0, app.offsetTop - 16);
+    toTop();
   }
 
   // ─── A set of questions ───
@@ -334,7 +354,7 @@
   function root() { return (cur && cur.root) || app; }
   function start(kind, list, label) {
     if (!list.length) return;
-    S.session = { kind: kind, label: label || '', ids: list.map(function (q) { return q.id; }), i: 0, res: [] };
+    S.session = { kind: kind, label: label || '', level: LEVEL, ids: list.map(function (q) { return q.id; }), i: 0, res: [] };
     save();
     track('quiz_start', { kind: kind, size: list.length, level: LEVEL });
     ask();
@@ -355,7 +375,7 @@
     }
     cur = { q: q, start: Date.now(), picked: [null, null, null, null], guess: false, done: false };
     var h = topBar(idx, 1, q) +
-      '<div class="q-card">' + passageHtml(q) + '<div class="q-stem" lang="ja">' + stemHtml(q) + '</div>';
+      '<div class="q-card">' + (q.pre ? '<p class="q-pre-line"><span class="q-pre">' + t(q.pre + ' 预习', q.pre + ' preview') + '</span> ' + t('这道题考的是 ' + q.pre + ' 语法，课文里提前学过', 'this tests ' + q.pre + ' grammar, taught early in the lessons') + '</p>' : '') + passageHtml(q) + '<div class="q-stem" lang="ja">' + stemHtml(q) + '</div>';
     if (q.type === 'narabe') {
       h += '<p class="q-muted q-hint">' + t('按顺序点选项填进空格，点空格可以撤回。选出 ★ 处的词。', 'Tap the pieces in order to fill the blanks; tap a blank to undo. The answer is what goes in ★.') + '</p>' +
         '<div class="q-pieces" lang="ja">' + q.options.map(function (o, i) { return '<button class="q-piece" data-act="piece" data-i="' + i + '">' + o + '</button>'; }).join('') + '</div>';
@@ -367,7 +387,7 @@
       '<div class="q-feedback" aria-live="polite"></div></div>';
     app.innerHTML = h;
     if (idx < s.i) replay([q], idx + 1);
-    window.scrollTo(0, app.offsetTop - 16);
+    toTop();
   }
   // Back link, previous-question link, position, type, progress bar.
   function topBar(idx, n, q) {
@@ -406,7 +426,7 @@
     group.forEach(function (g) { curs[g.id] = { q: g, start: Date.now(), picked: [null, null, null, null], guess: false, done: false, root: app.querySelector('.q-sub[data-q="' + g.id + '"]') }; });
     cur = curs[group[0].id];
     if (idx < s.i) replay(group, idx + group.length);
-    window.scrollTo(0, app.offsetTop - 16);
+    toTop();
   }
   // The passage a question belongs to: intro line, then the text in a box.
   // Lines starting with | are a table; [[n]] is a numbered blank (文章の文法).
@@ -532,7 +552,7 @@
     L.push(t('【选项】', '[Options]') + '\n' + q.options.map(function (o, i) { return (i + 1) + '. ' + plainJa(o); }).join('\n'));
     if (q.type === 'narabe') L.push(t('【正确顺序】', '[Correct order]') + ' ' + q.order.map(function (i) { return plainJa(q.options[i]); }).join(' / '));
     L.push(t('【正确答案】', '[Correct answer]') + ' ' + (q.answer + 1) + '. ' + plainJa(q.options[q.answer]));
-    L.push(t('【学习者选的】', '[Learner chose]') + ' ' + (choice == null ? t('没答', 'no answer') : (choice + 1) + '. ' + plainJa(q.options[choice])) + (guess ? t('（标了"蒙的"）', ' (marked as a guess)') : ''));
+    L.push(t('【学习者选的】', '[Learner chose]') + ' ' + (choice == null ? t('没答', 'no answer') : (choice + 1) + '. ' + plainJa(q.options[choice])) + (guess ? t('（标了"猜的"）', ' (marked as a guess)') : ''));
     if (q.full) L.push(t('【完整句子】', '[Full sentence]') + ' ' + plainJa(q.full));
     L.push(t('【固定解析】', '[Explanation]') + ' ' + bi(q.why) + (q.wrong ? '\n' + q.wrong.map(function (w, i) { return w ? (i + 1) + '. ' + bi(w) : ''; }).filter(Boolean).join('\n') : ''));
     var ok = choice === q.answer, n = q.answer + 1, mine = choice == null ? '' : (choice + 1) + '「' + plainJa(q.options[choice]) + '」';
@@ -540,7 +560,7 @@
     // with the question (【讲解要求】), so the bubble doesn't show instructions.
     var prompt = choice == null ? t('这题我不会，帮我讲讲。', 'I didn’t know this one — explain it, please.')
       : !ok ? t('我选了 ' + mine + '，正确答案是 ' + n + '，帮我讲讲。', 'I chose ' + mine + '; the answer is ' + n + '. Explain, please.')
-      : guess ? t('这题我是蒙对的，帮我讲讲。', 'I got this right by guessing — explain it, please.')
+      : guess ? t('这题我是猜对的，帮我讲讲。', 'I got this right by guessing — explain it, please.')
       : t('这题我答对了，帮我确认一下思路。', 'I got this right — check my reasoning, please.');
     var focus = {
       kanji: t('读音的关键点：我选的读音错在浊音、长音、促音、拗音，还是音读训读搞混', 'the reading: whether mine goes wrong on voicing, long vowels, small っ/ゃゅょ, or on/kun'),
@@ -612,9 +632,9 @@
     var sb = root().querySelector('[data-act="submit"]'); if (sb) sb.remove();
 
     cur.choice = choice;
-    // 不会 before answering; 其实是蒙的 after a right answer (both go on the review list).
+    // 不会 before answering; 其实是猜的 after a right answer (both go on the review list).
     var h = '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (ok ? '✓ ' + t('正确', 'Correct') : '✗ ' + (choice == null ? t('不会 · ', 'Didn’t know · ') : '') + t('正确答案是 ', 'The answer is ') + (q.answer + 1) + ' <span lang="ja">' + q.options[q.answer] + okjOf(q, q.answer) + '</span>') +
-      (ok ? ' <button class="q-btn q-was-guess" data-act="was-guess">' + t('其实是蒙的', 'I guessed') + '</button>' : '') + '</p>';
+      (ok ? ' <button class="q-btn q-was-guess" data-act="was-guess">' + t('其实是猜的', 'I guessed') + '</button>' : '') + '</p>';
     if (q.type === 'narabe' && !ok) h += '<p class="q-order" lang="ja">' + t('正确顺序：', 'Right order: ') + q.order.map(function (i) { return q.options[i]; }).join(' → ') + '</p>';
     var aiFirst = !ok || cur.guess;
     if (aiFirst) h += aiBtn(true);
@@ -660,7 +680,7 @@
     if (!list.length) h += '<p>' + t('错题本空了。', 'The review list is empty.') + '</p>';
     else h += '<p><button class="q-btn q-btn-primary" data-act="review"' + (due().length ? '' : ' data-early="1"') + '>' + t('开始复习', 'Start reviewing') + '</button></p><ul class="q-sumlist">' + list.map(function (q) {
       var a = S.answers[q.id] || [], last = a[a.length - 1], days = Math.ceil((S.review[q.id].due - n) / DAY);
-      var mine = !last ? '' : last.ok ? t('蒙对', 'Guessed right') : last.c == null ? t('不会', 'Didn’t know') : t('你选 ', 'You: ') + '<span lang="ja">' + q.options[last.c] + '</span>';
+      var mine = !last ? '' : last.ok ? t('猜对', 'Guessed right') : last.c == null ? t('不会', 'Didn’t know') : t('你选 ', 'You: ') + '<span lang="ja">' + q.options[last.c] + '</span>';
       var refs = (q.refs || []).map(function (r) { var p = D.refs[r]; return p ? '📖 <a href="' + LESSON_BASE + p.lesson + '/#' + encodeURI(p.slug) + '" target="_blank" rel="noopener">' + esc(EN ? p.en : p.zh) + '</a>' : ''; }).join(' · ');
       return '<li><div lang="ja" class="q-sumstem">' + sumLabel(q) + '</div>' +
         '<div class="q-muted">' + (mine ? mine + ' · ' : '') + t('答案 ', 'Answer: ') + '<span lang="ja">' + q.options[q.answer] + okjOf(q, q.answer) + '</span> · ' +
@@ -669,7 +689,7 @@
         (refs ? '<p class="q-refs">' + refs + '</p>' : '') + '<button class="q-btn" data-act="unreview" data-k="' + q.id + '">' + t('已经会了，移出错题本', 'I’ve got it — remove') + '</button></details></li>';
     }).join('') + '</ul>';
     app.innerHTML = h + '</div>';
-    window.scrollTo(0, app.offsetTop - 16);
+    toTop();
   }
 
   function shareBtn() { return window.jpShare ? '<button class="q-btn" data-act="share">' + t('分享成绩', 'Share my score') + '</button>' : ''; }
@@ -688,10 +708,10 @@
     var h = '<div class="q-top"><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button></div>' +
       '<div class="q-card q-summary"><p class="q-score">' + ok + ' / ' + res.length + '</p><p class="q-muted">' + t('用时约 ', 'About ') + Math.max(mins, 1) + t(' 分钟', ' min') + '</p>' + (shareBtn() ? '<p class="q-share">' + shareBtn() + '</p>' : '');
     if (bad.length) {
-      h += '<h2>' + t('错题和蒙的', 'Missed or guessed') + '</h2><ul class="q-sumlist">' + bad.map(function (r) {
+      h += '<h2>' + t('错题和猜的', 'Missed or guessed') + '</h2><ul class="q-sumlist">' + bad.map(function (r) {
         var q = Q[r.id];
         return '<li><div lang="ja" class="q-sumstem">' + sumLabel(q) + '</div>' +
-          '<div class="q-muted">' + (r.ok ? t('蒙对', 'Guessed right') : r.c == null ? t('不会', 'Didn’t know') : t('你选 ', 'You: ') + '<span lang="ja">' + q.options[r.c] + '</span>') + ' · ' + t('答案 ', 'Answer: ') + '<span lang="ja">' + q.options[q.answer] + '</span></div></li>';
+          '<div class="q-muted">' + (r.ok ? t('猜对', 'Guessed right') : r.c == null ? t('不会', 'Didn’t know') : t('你选 ', 'You: ') + '<span lang="ja">' + q.options[r.c] + '</span>') + ' · ' + t('答案 ', 'Answer: ') + '<span lang="ja">' + q.options[q.answer] + '</span></div></li>';
       }).join('') + '</ul>';
       // The grammar point missed most often.
       var cnt = {}; bad.forEach(function (r) { var ref = (Q[r.id].refs || [])[0]; if (ref) cnt[ref] = (cnt[ref] || 0) + 1; });
@@ -711,7 +731,8 @@
   function startKind(kind, k) {
     var n = S.prefs.size || 10;
     if (kind === 'daily') start('daily', daily(n));
-    else if (kind === 'type') start('type', subset(function (q) { return q.type === k; }, n), k);
+    else if (kind === 'type') start('type', subset(function (q) { return onLevel(q) && q.type === k; }, n), k);
+    else if (kind === 'pre') start('pre', subset(function (q) { return q.pre; }, n));
     else if (kind === 'lesson') start('lesson', subset(function (q) { return lessonOf(q) === k; }, n), k);
     else if (kind === 'weak') {
       var rs = weakRefs().map(function (x) { return x.ref; });
@@ -781,7 +802,7 @@
       });
       h += '</table><ul class="q-rules"><li>' + t('作答中不显示对错和解析，交卷后统一看。', 'No answers or explanations until you submit.') + '</li>' +
         '<li>' + t('可以前后翻题、改答案；拿不准的题点 ⚑ 标记，最后回来看。', 'Move back and forth and change answers; flag ⚑ anything to come back to.') + '</li>' +
-        '<li>' + t('每节时间到自动结束。不会的题先蒙一个——空着也算错。', 'Each section ends when its time is up. Guess rather than leave a blank — blanks count as wrong.') + '</li>' +
+        '<li>' + t('每节时间到自动结束。不会的题先猜一个——空着也算错。', 'Each section ends when its time is up. Guess rather than leave a blank — blanks count as wrong.') + '</li>' +
         '<li>' + t('可以暂停；切到别的 App 超过 1 分钟会自动暂停。暂停过的成绩标为“非正式”。', 'You can pause; leaving the page for over a minute pauses it too. A paused attempt is marked informal.') + '</li></ul>' +
         '<div class="q-actions q-start"><button class="q-btn q-btn-primary q-btn-big" data-act="m-start" data-k="full">' + t('整套开始', 'Start the full test') + '</button>' +
         test.sections.map(function (sec, i) { return '<button class="q-btn" data-act="m-start" data-k="' + i + '">' + t('只做：', 'Only: ') + esc(sec.ja) + '</button>'; }).join('') + '</div></div>';
@@ -835,7 +856,7 @@
         var gq = Q[ids[gi]], ga = c.answers[gq.id] || {};
         h += '<div class="q-sub" data-q="' + gq.id + '"><p class="q-subno">' + (gi + 1) + '</p><div class="q-stem" lang="ja">' + stemHtml(gq) + '</div>' +
           '<ol class="q-opts" lang="ja">' + gq.options.map(function (o, i) { return '<li><button class="q-opt' + (ga.c === i ? ' q-picked' : '') + '" data-act="m-opt" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span>' + o + '</button></li>'; }).join('') + '</ol>' +
-          '<div class="q-actions"><label class="q-guess"><input type="checkbox" data-act="m-guess"' + (ga.g ? ' checked' : '') + '> ' + t('蒙的', 'Guessing') + '</label>' +
+          '<div class="q-actions"><label class="q-guess"><input type="checkbox" data-act="m-guess"' + (ga.g ? ' checked' : '') + '> ' + t('猜的', 'Guessing') + '</label>' +
           '<button class="q-btn' + (c.flagsQ[gq.id] ? ' q-flagged' : '') + '" data-act="m-flag">⚑ ' + t('标记', 'Flag') + '</button></div></div>';
       }
     } else {
@@ -845,7 +866,7 @@
       } else {
         h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><button class="q-opt' + (a.c === i ? ' q-picked' : '') + '" data-act="m-opt" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span>' + o + '</button></li>'; }).join('') + '</ol>';
       }
-      h += '<div class="q-actions"><label class="q-guess"><input type="checkbox" data-act="m-guess"' + (a.g ? ' checked' : '') + '> ' + t('蒙的', 'Guessing') + '</label>' +
+      h += '<div class="q-actions"><label class="q-guess"><input type="checkbox" data-act="m-guess"' + (a.g ? ' checked' : '') + '> ' + t('猜的', 'Guessing') + '</label>' +
         '<button class="q-btn' + (c.flagsQ[id] ? ' q-flagged' : '') + '" data-act="m-flag">⚑ ' + t('标记', 'Flag') + '</button></div>';
     }
     h += '<div class="q-actions q-nav"><button class="q-btn" data-act="m-go" data-k="' + (g0 - 1) + '"' + (g0 ? '' : ' disabled') + '>← ' + t('上一题', 'Prev') + '</button>' +
@@ -858,7 +879,7 @@
     }
     if (q.type === 'narabe') fillSlots();
     if (!M.timer) M.timer = setInterval(tick, 1000);
-    window.scrollTo(0, app.offsetTop - 16);
+    toTop();
   }
   function mockAnswer(choice) {
     var c = cur2(), id = cur.q.id, a = c.answers[id] || (c.answers[id] = {});
@@ -943,7 +964,7 @@
       }
       h += '<p class="q-muted q-small">' + t('估算：按答对比例换算。真考是等化计分，实际分数会有出入。', 'Estimate: share of questions right, scaled. The real test is equated, so your actual score will differ.') + '</p>';
       // By もんだい
-      h += '<h3>' + t('各题型', 'By question type') + '</h3><table class="q-table q-bytype"><tr><th></th><th>' + t('题型', 'Type') + '</th><th>' + t('对', 'Right') + '</th><th>' + t('蒙对', 'Guessed') + '</th><th></th></tr>';
+      h += '<h3>' + t('各题型', 'By question type') + '</h3><table class="q-table q-bytype"><tr><th></th><th>' + t('题型', 'Type') + '</th><th>' + t('对', 'Right') + '</th><th>' + t('猜对', 'Guessed') + '</th><th></th></tr>';
       test.sections.forEach(function (sec, si) {
         if (att.usedBy && att.mode !== 'full' && +att.mode !== si) return;
         sec.problems.forEach(function (p) {
@@ -965,7 +986,7 @@
       h += '</ul>';
       var slow = Object.keys(att.answers).sort(function (a, b) { return (att.answers[b].ms || 0) - (att.answers[a].ms || 0); }).slice(0, 3);
       if (slow.length) h += '<p class="q-muted">' + t('用时最长：', 'Slowest: ') + slow.map(function (id) { return id.split('-').pop() + '（' + Math.round((att.answers[id].ms || 0) / 1000) + 's）'; }).join('、') + '</p>';
-      h += '<div class="q-actions"><button class="q-btn q-btn-primary" data-act="m-review" data-k="wrong">' + t('复盘错题和蒙的题', 'Review misses and guesses') + '</button><button class="q-btn" data-act="m-review" data-k="all">' + t('全部题目', 'All questions') + '</button></div>' + shareBtn() + '</div>';
+      h += '<div class="q-actions"><button class="q-btn q-btn-primary" data-act="m-review" data-k="wrong">' + t('复盘错题和猜的题', 'Review misses and guesses') + '</button><button class="q-btn" data-act="m-review" data-k="all">' + t('全部题目', 'All questions') + '</button></div>' + shareBtn() + '</div>';
       app._share = { text: t('我在 jpnotes.dev 做了 JLPT ' + LEVEL + ' 模拟考，' + (att.mode === 'full' ? '言语知识和阅读估分 ' + sum + ' 分。' : '') + '免费模考，按真题结构出题：', 'I took a JLPT ' + LEVEL + ' mock test on jpnotes.dev' + (att.mode === 'full' ? ' — estimated ' + sum + ' without listening' : '') + '. Free mock tests laid out like the real exam:'), src: 'mock_result' };
       M = { set: set, test: test, att: att, key: key };
       app.innerHTML = h;
@@ -996,7 +1017,7 @@
           h += '<p class="q-prob"><b>' + (si + 1) + '-' + p.no + '</b> ' + esc(test.types[p.type].ja) + '</p><div class="q-stem" lang="ja">' + stemHtml(qq).replace(/<button[^>]*>(★)?<\/button>/g, function (m, st) { return st ? '＿★＿' : '＿＿'; }) + '</div>';
           if (q.type === 'narabe') h += '<p lang="ja">' + t('正确顺序：', 'Order: ') + kq.order.map(function (i) { return q.options[i]; }).join(' / ') + '</p>';
           h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><div class="q-opt' + (i === kq.answer ? ' q-ok' : i === a.c ? ' q-bad' : '') + '"><span class="q-num">' + (i + 1) + '</span>' + o + okjOf(qq, i) + '</div></li>'; }).join('') + '</ol>';
-          h += '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 蒙对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + '</p>';
+          h += '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 猜对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + '</p>';
           h += '<div class="q-explain"><p>' + esc(bi(kq.why)) + '</p>' + (q.type !== 'narabe' ? '<ul class="q-wrong">' + kq.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + q.options[i] + okjOf(qq, i) + '</b> — ' + esc(bi(w)) + '</li>' : ''; }).join('') + '</ul>' : '') +
             kjHtml(qq, key.passages) + (kq.tr ? '<p class="q-muted">' + esc(bi(kq.tr)) + '</p>' : '') + '</div>' +
             aiBtn(false, 'm-ai').replace(/data-act="m-ai"/g, 'data-act="m-ai" data-k="' + id + '"') + '</div>';
@@ -1004,7 +1025,7 @@
       });
     });
     app.innerHTML = h;
-    window.scrollTo(0, app.offsetTop - 16);
+    toTop();
   }
 
   function pause(auto, awayMs) {
@@ -1149,7 +1170,7 @@
     h += '<div class="q-flash-back" hidden></div>' +
       '<div class="q-next"><button class="q-btn q-btn-primary q-btn-big" data-act="c-show">' + t('显示答案', 'Show answer') + '</button></div></div>';
     app.innerHTML = h;
-    window.scrollTo(0, app.offsetTop - 16);
+    toTop();
   }
   function ivlLabel(ms) {
     if (ms < 3600e3) return Math.max(1, Math.round(ms / 60e3)) + t('分钟', 'm');
@@ -1248,7 +1269,7 @@
     var act = el.getAttribute('data-act');
     var sub = curs && el.closest('.q-sub');
     if (sub && curs[sub.getAttribute('data-q')]) cur = curs[sub.getAttribute('data-q')];
-    if (act === 'daily' || act === 'type' || act === 'lesson' || act === 'review') startKind(act, el.getAttribute('data-k'));
+    if (act === 'daily' || act === 'type' || act === 'lesson' || act === 'review' || act === 'pre') startKind(act, el.getAttribute('data-k'));
     else if (act === 'resume') ask();
     else if (act === 'review-list') reviewList();
     else if (act === 'analysis') analysis();

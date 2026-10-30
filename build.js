@@ -120,7 +120,7 @@ const QUIZ_CSS = fs.readFileSync(path.join(__dirname, "site", "quiz.css"), "utf-
 const FEEDBACK_JS_SRC = fs.readFileSync(path.join(__dirname, "site", "feedback.js"), "utf-8");
 const FEEDBACK_JS_HASH = require("crypto").createHash("md5").update(FEEDBACK_JS_SRC).digest("hex").slice(0, 8);
 // Practice / mock test / flashcard pages; QUIZ_PUBLIC and QUIZ_LINKS are set in build-quiz.js.
-const { buildQuiz, loadLevel: loadQuizLevel, LEVELS: QUIZ_LEVELS, TYPES: QUIZ_TYPES, MOCK: QUIZ_MOCK, QUIZ_PUBLIC, QUIZ_LINKS, AUDIO_REQUESTS: QUIZ_AUDIO_REQUESTS } = require("./build-quiz");
+const { buildQuiz, loadLevel: loadQuizLevel, LEVELS: QUIZ_LEVELS, TYPES: QUIZ_TYPES, MOCK: QUIZ_MOCK, QUIZ_PUBLIC, QUIZ_LINKS, AUDIO_REQUESTS: QUIZ_AUDIO_REQUESTS, ABOVE_LEVEL, aboveLevel } = require("./build-quiz");
 const SETTINGS_JS_HASH = require("crypto").createHash("md5").update(fs.readFileSync(path.join(__dirname, "site", "settings-modal.js"))).digest("hex").slice(0, 8);
 const SETTINGS_SCRIPT = `<script src="${SITE_PATH}settings-modal.js?v=${SETTINGS_JS_HASH}" defer></script>`;
 // Content-Security-Policy connect-src allowlist. This is the technical
@@ -1273,6 +1273,7 @@ const RUBY_FIXES = [
   { kanji: "辛", from: /^(つら|からし)$/, to: "から" },
   // 日本 is にほん in ordinary speech (日本語/日本人 already are).
   { kanji: "日本", from: /^にっぽん$/, to: "にほん" },
+  { kanji: "日本人", from: /^にっぽんじん$/, to: "にほんじん" },
   // Month names: 3月 / 何月 = さんがつ / なんがつ.
   { kanji: "月", from: /^つき$/, before: /[0-9０-９何〇○]$/, to: "がつ" },
   { kanji: "何", from: /^なに$/, after: /^(月|の|て|って)/, to: "なん" },
@@ -1376,6 +1377,9 @@ function fixReadings(html) {
       return pre + ruby(num + kanji, r + (kanji === "日間" ? "かん" : ""));
     }
   );
+  // A date's 1日 (3月1日) is ついたち; elsewhere (1日で, 1日おきに) it stays いちにち.
+  html = html.replace(/(<ruby>月<rp>\(<\/rp><rt>がつ<\/rt><rp>\)<\/rp><\/ruby>)([1１])<ruby>日<rp>\(<\/rp><rt>にち<\/rt><rp>\)<\/rp><\/ruby>/g,
+    (m, month, one) => month + ruby(one + "日", "ついたち"));
   // kuroshiro echoes text it cannot read — a Chinese gloss that slipped into a
   // data-ja element comes back annotated with itself (刚(刚)). Keep the text,
   // drop the ruby.
@@ -1628,6 +1632,8 @@ function audioText(content) {
     /[→⇒=＝+＋]/.test(outside) ||              // glosses, answers, formulas
     /[a-z]{3,}/.test(outside) ||               // English notes (ABC, SNS are fine)
     /(^|\s)[a-dａ-ｄ][.．)）]/.test(outside) || // a. b. c. options
+    /，/.test(outside) ||                       // Chinese comma (Japanese uses 、)
+    /^[^：:぀-ヿ]*[、…"“][^：:぀-ヿ]*[：:]/.test(outside) || // Chinese list label 手段、方法：
     hasSC(outside)                            // Chinese
   ) return "";
   const plain = outside
@@ -2660,6 +2666,9 @@ ${AI_SCRIPT}
       // Grammar questions, and vocabulary questions on a word from the lesson's table.
       const ref = q._kind === "lesson" ? q.refs[0] : (q.refs || []).find((r) => /#vocab$/.test(r));
       if (ref) { const l = ref.split("#")[0]; quizLessonCount[`${lv}:${l}`] = (quizLessonCount[`${lv}:${l}`] || 0) + 1; if (q._kind !== "lesson") quizLessonCount[`${lv}:${l}:vocab`] = 1; }
+      // Also practice questions of the level its grammar belongs to (ABOVE_LEVEL).
+      const up = q._kind === "lesson" && aboveLevel(lv, q);
+      if (up) { const l = q.refs[0].split("#")[0]; quizLessonCount[`${up}:${l}`] = (quizLessonCount[`${up}:${l}`] || 0) + 1; }
     }
   }
   const mockLevels = QUIZ_LEVELS.filter((lv) => fs.existsSync(path.join(__dirname, "questions", lv, "mock-1")));
@@ -2681,11 +2690,27 @@ ${AI_SCRIPT}
     const lessonHref = `${SITE_PATH}${level.toLowerCase()}-practice/#lesson=${id}`;
     const withVocab = quizLessonCount[`${level}:${id}:vocab`];
     const hasEx = /<h2[^>]*\bid="(练习|今日练|今日練)/.test(html);
-    // Top: right under the meta line, where every reader sees it. End: a card
-    // after the last point. data-ql says which one was clicked (GA quiz_link).
-    const topLink = total ? `<p class="quiz-link quiz-link-top"><a href="${lessonHref}" data-ql="top">✍ <span class="lang-zh">在线做题（${withVocab ? "语法 + 词汇，" : ""}${total} 题）</span><span class="lang-en">Online practice (${withVocab ? "grammar + vocabulary, " : ""}${total} questions)</span></a></p>\n` : "";
+    // At the end of the lesson, a card after the last point (the owner chose
+    // the end over a button under the title, 2026-10-30); each point also gets
+    // its own link. data-ql says which one was clicked (GA quiz_link).
     const lessonLink = total ? `<div class="quiz-cta"><p><span class="lang-zh">${hasEx ? "课里的练习做完了？" : "学完这一课？"}再做 ${total} 道 JLPT 题型的在线题${withVocab ? "（语法 + 词汇）" : ""}：点了就判分、每题有解析，错题会自动记下来。</span><span class="lang-en">${hasEx ? "Done with the exercises above?" : "Finished the lesson?"} Try ${total} JLPT-style questions online${withVocab ? " (grammar + vocabulary)" : ""}: marked as you go, each explained, and the ones you miss are saved for review.</span></p><a href="${lessonHref}" data-ql="end">✍ <span class="lang-zh">在线做题</span><span class="lang-en">Practise online</span> →</a></div>\n` : "";
-    if (topLink) html = html.replace(/(<div class="lesson-meta">[\s\S]*?<\/div>)/, `$1\n${topLink}`);
+    // Lessons that teach a higher level's grammar early (ABOVE_LEVEL in
+    // build-quiz.js) say so, and point to that level's practice, which has
+    // these questions as ordinary ones.
+    const above = ABOVE_LEVEL[level] || {};
+    const byLevel = {};
+    if (above[id]) byLevel[above[id]] = ["all"];
+    for (const [ref, lv] of Object.entries(above)) {
+      const [lid, k] = ref.split("#");
+      if (lid === id && k && lv !== above[id]) (byLevel[lv] = byLevel[lv] || []).push(k);
+    }
+    const notes = Object.entries(byLevel).map(([lv, ks]) => {
+      const href = `${SITE_PATH}${lv.toLowerCase()}-practice/#lesson=${id}`;
+      const zh = ks[0] === "all" ? `本课的语法在 JLPT 里属于 ${lv}，这里提前学` : `本课第 ${ks.join("、")} 点在 JLPT 里属于 ${lv}，这里提前学`;
+      const en = ks[0] === "all" ? `This lesson's grammar is JLPT ${lv} level, taught early here` : `Point${ks.length > 1 ? "s" : ""} ${ks.join(", ")} of this lesson ${ks.length > 1 ? "are" : "is"} JLPT ${lv} level, taught early here`;
+      return `<span class="lang-zh">${zh}${quizLessonCount[`${lv}:${id}`] ? `，<a href="${href}">${lv} 练习题</a>里也有本课的题` : ""}。</span><span class="lang-en">${en}${quizLessonCount[`${lv}:${id}`] ? `; its questions are in the <a href="${href}">${lv} practice</a> too` : ""}.</span>`;
+    });
+    if (notes.length) html = html.replace(/(<div class="lesson-meta">[\s\S]*?<\/div>\n?)/, `$1<p class="level-note">${notes.join(" ")}</p>\n`);
     let lessonLinkPlaced = !lessonLink;
     const out = html.split(/(?=<h2[\s>])/).map((part) => {
       if (!lessonLinkPlaced && /^<h2[^>]*\bid="复习计划/.test(part)) { lessonLinkPlaced = true; return lessonLink + part; }
@@ -3691,7 +3716,7 @@ ${AI_SCRIPT}
 <li>${L("<b>今日练习</b>：每天一组，词汇、语法、阅读混着来。", "<b>Daily set</b>: a short mixed set of vocabulary, grammar and reading each day.")}</li>
 <li>${L("<b>按题型练</b>：专攻一种题型，比如排序题（★）或信息检索。", "<b>By question type</b>: drill one format, such as sentence order (★) or information retrieval.")}</li>
 <li>${L("<b>解析</b>：答完立刻看正确答案为什么对、每个错误选项为什么错，并链到讲这个语法点的课文；还可以让 AI 针对你选的选项讲解。", "<b>Explanations</b>: after each answer, why the right option is right and why each wrong one is wrong, with a link to the lesson that teaches the point — and an AI explanation of the option you picked.")}</li>
-<li>${L("<b>错题本</b>：答错、点了「不会」或答对后点「其实是蒙的」的题，当天、3 天后、7 天后再考你，答对才移出。", "<b>Review list</b>: questions you miss, mark “I don’t know”, or flag “I guessed” after getting right come back the same day, after 3 days and after 7 days, until you get them right.")}</li>
+<li>${L("<b>错题本</b>：答错、点了「不会」或答对后点「其实是猜的」的题，当天、3 天后、7 天后再考你，答对才移出。", "<b>Review list</b>: questions you miss, mark “I don’t know”, or flag “I guessed” after getting right come back the same day, after 3 days and after 7 days, until you get them right.")}</li>
 <li>${L("进度只保存在这个浏览器里，不用注册。", "Progress stays in this browser; no account needed.")}</li>
 </ul>
 <h2>${L("常见问题", "Questions")}</h2>
@@ -3703,7 +3728,13 @@ ${AI_SCRIPT}
 </dl>
 <h2>${L(`${level} 语法课文`, `${level} grammar lessons`)}</h2>
 <p>${L(`每道语法题都对应下面某一课的一个语法点。完整清单见 <a href="${SITE_PATH}${level}/">${level} 总览</a>。`, `Every grammar question is tied to a grammar point in one of these lessons. Full list: <a href="${SITE_PATH}${level}/">${level} overview</a>.`)}</p>
-${lessonList}</section>`;
+${lessonList}${(() => {
+      // Lower-level lessons that teach this level's grammar early (ABOVE_LEVEL): their questions are here too.
+      const early = Object.keys(bundle.practice.lessons || {}).filter((id) => !lessons.some((l) => l.id === id)).sort();
+      if (!early.length) return "";
+      const li = early.map((id) => `<li><a href="${SITE_PATH}${id}/">${id.replace("lesson", "Lesson ")} — ${JA_TITLES[id] || id}</a></li>`).join("");
+      return `<p>${L(`另外，下面这几课在更早的阶段提前教了 ${level} 的语法，它们的题也在这里：`, `These earlier lessons teach some ${level} grammar ahead of time; their questions are here too:`)}</p><ul class="lesson-list">${li}</ul>`;
+    })()}</section>`;
     }
     if (kind === "mock") {
       const t = bundle.mocks[0].test, n = {};
@@ -4683,7 +4714,7 @@ html.theme-dark .speak-btn:hover { border-color: var(--accent); }
 }
 .related-label { font-weight: 600; color: var(--text-muted); margin-right: .5rem; }
 .quiz-link { margin: 1.4rem 0 .4rem; }
-.quiz-link-top { margin: .2rem 0 1rem; }
+.level-note { margin: .2rem 0 1rem; font-size: .9em; color: var(--text-muted); }
 .quiz-cta { margin: 2rem 0 1rem; padding: 1rem 1.2rem; border: 1px solid var(--accent); border-radius: var(--radius-lg); background: rgba(127,127,127,.07); }
 .quiz-cta p { margin: 0 0 .7rem; }
 .quiz-cta a { display: inline-block; padding: .45em 1.2em; border-radius: 999px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 700; }

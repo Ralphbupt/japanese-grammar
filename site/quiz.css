@@ -9,6 +9,8 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 #quiz-app { margin: 1.5rem 0 2rem; }
 #quiz-app h2 { font-size: var(--text-lg); margin: 0 0 .6rem; border: 0; padding: 0; }
 .q-muted { color: var(--text-muted); font-size: .92em; }
+.q-pre-line { margin: 0 0 .6rem; font-size: .88em; color: var(--text-muted); }
+.q-pre { display: inline-block; padding: 0 .45em; border: 1px solid var(--border); border-radius: 999px; font-size: .85em; color: var(--text-muted); }
 
 .q-btn { display: inline-flex; align-items: center; gap: .4em; padding: .55em 1em; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card-bg); color: var(--text); font: inherit; cursor: pointer; }
 .q-btn:hover:not(:disabled) { border-color: var(--accent); }
