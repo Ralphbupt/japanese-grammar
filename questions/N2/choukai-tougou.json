@@ -2,13 +2,13 @@
  {
   "id": "n2-ck-601",
   "type": "tougou",
-  "scene": "会社で三人が新人歓迎会の店について話しています。",
+  "scene": "会社で、先輩の男の人と女の人、後輩の男の人の三人が、新人歓迎会の店について話しています。",
   "lines": [
    ["M1", "来月の新人歓迎会の店、そろそろ決めないとね。駅前の居酒屋でいいんじゃない？　安いし、去年もあそこだったし。"],
    ["F", "うーん、あそこ、金曜の夜はすごく混むでしょう。周りの声が大きくて、新人の人たちとほとんど話せなかったって、去年みんな言ってたよ。"],
    ["M1", "そっか。じゃあ、この前できたイタリアンは？　料理もおしゃれだし。"],
-   ["F", "あそこは会社から歩いて二十分以上かかるのよね。仕事が終わってから行くにはちょっと……。中村さん、どこかいいところ知らない？"],
-   ["M2", "それなら、会社のすぐ裏の和食の店はどうですか。個室があるので、ゆっくり話せますよ。"],
+   ["F", "あそこは会社から歩いて二十分以上かかるのよね。仕事が終わってから行くにはちょっと……。中村くん、どこかいいところ知らない？"],
+   ["M2", "あ、それなら、会社のすぐ裏の和食の店はどうですか。僕、この前行ったんですけど、個室があるので、ゆっくり話せますよ。"],
    ["M1", "ああ、あそこね。でも、一人五千円ぐらいするんじゃない？　ちょっと高いなあ。"],
    ["M2", "今年は会社から一人二千円の補助が出るって、総務から聞きました。それなら、去年の居酒屋より五百円高いぐらいで済みますよ。"],
    ["F", "へえ、それなら決まりじゃない？"],
@@ -16,20 +16,20 @@
   ],
   "question": "歓迎会の店は、どうして和食の店に決まりましたか。",
   "spokenOptions": true,
-  "options": ["個室があって、去年の店より安いから", "料理がおしゃれだから", "静かに話せて、払う金額も高くないから", "去年と同じ店だから"],
+  "options": ["個室があって、去年の店より安いから", "料理がおしゃれだから", "周りを気にせず話せて、負担も軽いから", "去年と同じ店だから"],
   "answer": 2,
   "tr": {
    "zh": {
-    "scene": "公司里三个人在商量迎新会的店。",
+    "scene": "公司里，一位男前辈、一位女同事和一位男后辈三个人在商量迎新会的店。",
     "question": "迎新会为什么定在了日料店？",
-    "lines": ["下个月迎新会的店，差不多该定了。站前的居酒屋就行吧？便宜，去年也是那儿。", "嗯……那儿周五晚上特别挤吧。周围声音太大，去年大家都说几乎没法跟新人聊天。", "也是。那前不久新开的意大利餐厅呢？菜也挺时髦的。", "那儿从公司走过去要二十多分钟。下了班再去有点……中村，你知道什么好地方吗？", "那公司正后面那家日料店怎么样？有包间，可以慢慢聊。", "啊，那家啊。不过一个人得五千日元左右吧？有点贵啊。", "听总务说，今年公司每人补贴两千日元。这样的话，比去年的居酒屋只多五百日元左右。", "哦，那不就定了？", "是啊。那就那家吧。"],
-    "options": ["因为有包间，而且比去年的店便宜", "因为菜很时髦", "因为能安静地聊天，自己出的钱也不多", "因为和去年是同一家店"]
+    "lines": ["下个月迎新会的店，差不多该定了。站前的居酒屋就行吧？便宜，去年也是那儿。", "嗯……那儿周五晚上特别挤吧。周围声音太大，去年大家都说几乎没法跟新人聊天。", "也是。那前不久新开的意大利餐厅呢？菜也挺时髦的。", "那儿从公司走过去要二十多分钟。下了班再去有点……中村，你知道什么好地方吗？", "啊，那公司正后面那家日料店怎么样？我前阵子去过，有包间，可以慢慢聊。", "啊，那家啊。不过一个人得五千日元左右吧？有点贵啊。", "听总务说，今年公司每人补贴两千日元。这样的话，比去年的居酒屋只多五百日元左右。", "哦，那不就定了？", "是啊。那就那家吧。"],
+    "options": ["因为有包间，而且比去年的店便宜", "因为菜很时髦", "因为能不在意周围地聊天，负担也不重", "因为和去年是同一家店"]
    },
    "en": {
-    "scene": "Three people at a company are talking about where to hold the welcome party for new staff.",
+    "scene": "At a company, a senior man, a woman and a junior man are talking about where to hold the welcome party for new staff.",
     "question": "Why did they choose the Japanese restaurant?",
-    "lines": ["We need to decide on a place for next month's welcome party. The izakaya by the station should be fine, right? It's cheap, and we went there last year.", "Hmm, that place gets really crowded on Friday nights. Everyone said last year it was so loud they could hardly talk to the new people.", "True. Then what about the Italian place that just opened? The food's stylish.", "That's more than twenty minutes' walk from the office. A bit much after work… Nakamura-san, do you know anywhere good?", "Then how about the Japanese restaurant right behind the office? It has private rooms, so we could talk properly.", "Ah, that place. But isn't it about 5,000 yen a head? That's a bit expensive.", "I heard from general affairs that this year the company is giving 2,000 yen per person. Then it'd only be about 500 yen more than the izakaya last year.", "Oh, then that settles it, doesn't it?", "Yeah. Let's go there."],
-    "options": ["It has private rooms and is cheaper than last year's place", "The food is stylish", "They can talk quietly, and what they pay isn't high", "It's the same place as last year"]
+    "lines": ["We need to decide on a place for next month's welcome party. The izakaya by the station should be fine, right? It's cheap, and we went there last year.", "Hmm, that place gets really crowded on Friday nights. Everyone said last year it was so loud they could hardly talk to the new people.", "True. Then what about the Italian place that just opened? The food's stylish.", "That's more than twenty minutes' walk from the office. A bit much after work… Nakamura, do you know anywhere good?", "Oh, then how about the Japanese restaurant right behind the office? I went there recently — it has private rooms, so we could talk properly.", "Ah, that place. But isn't it about 5,000 yen a head? That's a bit expensive.", "I heard from general affairs that this year the company is giving 2,000 yen per person. Then it'd only be about 500 yen more than the izakaya last year.", "Oh, then that settles it, doesn't it?", "Yeah. Let's go there."],
+    "options": ["It has private rooms and is cheaper than last year's place", "The food is stylish", "They can talk without worrying about others, and the cost isn't a burden", "It's the same place as last year"]
    }
   },
   "why": { "zh": "日料店有包间「ゆっくり話せる」，价格的顾虑被第三个人「二千円の補助」打消，于是决定。", "en": "The Japanese restaurant has private rooms, and the price worry is removed by the third person's point about the 2,000-yen subsidy." },
@@ -51,9 +51,9 @@
    ["M", "うん。ただ、平日はいつも帰りが八時過ぎるんだよね。"],
    ["F2", "ああ、それだと間に合わないね。"],
    ["M", "来年の夏に海外旅行に行くつもりだし、そっちの準備もしたいから、話す練習をしとこうかな。"],
-   ["F2", "いいね。私はね、写真をちゃんと撮れるようになりたいんだけど、カメラ持ってないんだよね。"],
-   ["M", "スマホからって言ってたじゃない。"],
-   ["F2", "あ、そうか。でも、料理も気になるんだよね。材料費が毎回かかるのはちょっと……。最近節約してるし、やっぱり、スマホで始められるほうにする。"]
+   ["F2", "いいね。私は、写真か料理かで迷ってるんだ。旅行できれいな写真が撮れるようになりたいし、料理も前から習ってみたかったし。"],
+   ["M", "写真って、カメラ持ってたっけ？"],
+   ["F2", "ううん、持ってない。でも、それは大丈夫みたい。問題はお金なんだよね。最近節約してるから、あとから毎回お金がかかるのはいやなの。だから、そうじゃないほうにする。"]
   ],
   "options": ["写真教室", "料理教室", "英会話", "ヨガ"],
   "questions": [
@@ -65,7 +65,7 @@
       null,
       { "zh": "瑜伽七点半开始，他平日八点以后才下班，来不及。", "en": "Yoga starts at 7:30 and he's never out before 8." }] },
    { "question": "質問2：女の人はどの講座に申し込みますか。", "answer": 0,
-     "why": { "zh": "烹饪要另付材料费，她想省钱；「スマホで始められるほう」对应介绍里摄影班「スマートフォンでの撮り方から」。", "en": "Cooking has extra ingredient costs and she wants to save; \"the one I can start on my phone\" matches the photography class, which starts with smartphones." },
+     "why": { "zh": "她在摄影和烹饪之间犹豫；介绍里说烹饪班「材料費が別にかかります」，她不想「毎回お金がかかる」，所以选不另收费的摄影班（没有相机也欢迎）。", "en": "She is torn between photography and cooking; the announcer said cooking costs extra for ingredients, and she doesn't want to pay every time, so she takes photography (no camera needed)." },
      "wrong": [null,
       { "zh": "烹饪班要另付材料费，她想省钱，所以放弃了。", "en": "Cooking costs extra for ingredients, so she drops it to save money." },
       { "zh": "英语会话是男人要报的。", "en": "English conversation is the man's choice." },
@@ -75,16 +75,273 @@
    "zh": {
     "scene": "电视上正在介绍市文化中心的课程。",
     "questions": ["问题1：男人会报名哪个课程？", "问题2：女人会报名哪个课程？"],
-    "lines": ["市文化中心下个月开始开设四门新课程。第一门是“摄影班”，从怎么用手机拍照教起，没有相机的人和初学者都欢迎。第二门是“烹饪班”，每次做一个不同国家的家常菜。材料费需另付，请注意。第三门是“英语会话”，以旅行中用得上的表达为主，小班练习。第四门是“瑜伽”，为了下班后也能参加，平日晚上七点半开始。", "哦，要不要去上一个呢。最近老是坐着，身体都僵了。", "那瑜伽不是挺好？", "嗯。不过我平日总是八点以后才到家。", "啊，那就赶不上了。", "我打算明年夏天出国旅行，也想为那个做准备，练练说话吧。", "不错啊。我呢，想学会好好拍照，可我没有相机。", "不是说从手机开始教吗？", "啊，对哦。不过烹饪我也挺感兴趣的。每次都要材料费有点……最近在省钱，还是选用手机就能开始的那个吧。"],
+    "lines": ["市文化中心下个月开始开设四门新课程。第一门是“摄影班”，从怎么用手机拍照教起，没有相机的人和初学者都欢迎。第二门是“烹饪班”，每次做一个不同国家的家常菜。材料费需另付，请注意。第三门是“英语会话”，以旅行中用得上的表达为主，小班练习。第四门是“瑜伽”，为了下班后也能参加，平日晚上七点半开始。", "哦，要不要去上一个呢。最近老是坐着，身体都僵了。", "那瑜伽不是挺好？", "嗯。不过我平日总是八点以后才到家。", "啊，那就赶不上了。", "我打算明年夏天出国旅行，也想为那个做准备，练练说话吧。", "不错啊。我在摄影和烹饪之间犹豫。想学会旅行时拍出好看的照片，烹饪也是一直想学的。", "摄影的话，你有相机吗？", "没有。不过那个好像没关系。问题是钱。我最近在省钱，不想之后每次都要花钱。所以选不用每次另外花钱的那个。"],
     "options": ["摄影班", "烹饪班", "英语会话", "瑜伽"]
    },
    "en": {
     "scene": "A TV programme is describing courses at the city's cultural centre.",
     "questions": ["Question 1: Which course will the man sign up for?", "Question 2: Which course will the woman sign up for?"],
-    "lines": ["Four new courses start at the city cultural centre next month. The first is a photography class. It starts with how to take photos on a smartphone, so people without a camera and complete beginners are welcome. The second is a cooking class, making home cooking from a different country each time. Please note that ingredients cost extra. The third is English conversation, practising phrases you can use when travelling, in small groups. The fourth is yoga, starting at 7:30 on weekday evenings so you can come after work.", "Huh, maybe I'll try one. I've been sitting all day lately and I've got really stiff.", "Then wouldn't yoga be good?", "Yeah. But on weekdays I'm never home before eight.", "Ah, then you won't make it.", "I'm planning a trip abroad next summer and want to get ready for that, so maybe I'll practise speaking.", "Nice. Me, I want to learn to take proper photos, but I don't have a camera.", "Didn't they say it starts with smartphones?", "Oh, right. But I'm curious about cooking too. Paying for ingredients every time is a bit… I'm trying to save lately, so I'll go with the one I can start on my phone."],
+    "lines": ["Four new courses start at the city cultural centre next month. The first is a photography class. It starts with how to take photos on a smartphone, so people without a camera and complete beginners are welcome. The second is a cooking class, making home cooking from a different country each time. Please note that ingredients cost extra. The third is English conversation, practising phrases you can use when travelling, in small groups. The fourth is yoga, starting at 7:30 on weekday evenings so you can come after work.", "Huh, maybe I'll try one. I've been sitting all day lately and I've got really stiff.", "Then wouldn't yoga be good?", "Yeah. But on weekdays I'm never home before eight.", "Ah, then you won't make it.", "I'm planning a trip abroad next summer and want to get ready for that, so maybe I'll practise speaking.", "Nice. I can't decide between photography and cooking. I'd like to take nice photos when I travel, and I've always wanted to learn to cook.", "For photography — do you have a camera?", "No, I don't. But that seems to be fine. The problem is money. I'm trying to save lately, so I don't want something I'll have to keep paying for every time. So I'll go with the one that doesn't."],
     "options": ["Photography class", "Cooking class", "English conversation", "Yoga"]
    }
   },
   "traps": ["condition-conflict", "someone-else"]
+ },
+ {
+  "id": "n2-ck-603",
+  "type": "tougou",
+  "scene": "家族三人が、年末におばあちゃんの家へどうやって行くか話しています。",
+  "lines": [
+   ["M1", "今年の年末も、おばあちゃんちに行くだろ？　新幹線にしないか。速いし、楽だし。"],
+   ["F", "でも、三人分だと、往復でけっこうするのよ。それに、おばあちゃんへのお土産とか、荷物も多いし。"],
+   ["M1", "荷物は、先に宅配便で送っちゃえばいいじゃないか。"],
+   ["F", "送ったって、新幹線代が高いのは変わらないでしょ。夜行バスなら、半分ぐらいで済むけど。"],
+   ["M1", "バスはなあ。俺、バスだと全然眠れないんだよ。着いてから一日中ぼーっとしちゃって。"],
+   ["F", "じゃあ、やっぱり車？　でも去年、高速道路が渋滞して、十時間もかかったじゃない。お父さん、運転でくたくただったし。"],
+   ["M2", "飛行機は？　セールのときなら、けっこう安いよ。"],
+   ["F", "空港からおばあちゃんちまで、バスで二時間かかるのよ。結局、時間はあんまり変わらないの。"],
+   ["M2", "じゃあさ、車でいいんじゃない？　混むのって、年末の最後の二、三日でしょ。父さん、今年は休みが早いんでしょ？　早めに出ちゃえば道もすいてるし、俺、先月免許取ったから、途中で運転代わるよ。"],
+   ["F", "うーん、でも、免許取ったばかりでしょ。冬の高速道路で、もし雪でも降ったら心配よ。……ねえ、最初のお父さんの案に戻らない？　荷物はさっき言ってたみたいに先に送っちゃって、切符は早めに取るの。一か月前までに買えば、けっこう安くなるのよ。今ならまだ間に合うし。"],
+   ["M1", "なるほど。それなら、身軽に行けるし、安く済むな。じゃあ、そうしよう。"]
+  ],
+  "question": "家族は、どうやっておばあちゃんの家に行くことにしましたか。",
+  "spokenOptions": true,
+  "options": ["新幹線を安く予約して行く", "早めに出発して、車で行く", "安いときに、飛行機で行く", "夜行バスで、半額で行く"],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一家三口在商量年底怎么去奶奶家。",
+    "question": "一家人决定怎么去奶奶家？",
+    "lines": ["今年年底也要去奶奶家吧？坐新干线怎么样？又快又轻松。", "可是三个人的往返票挺贵的。而且给奶奶的礼物什么的，行李也多。", "行李先用快递寄过去不就行了。", "就算寄了，新干线票贵这一点也没变啊。夜行大巴的话，大概一半的钱就够了。", "大巴啊……我坐大巴根本睡不着。到了以后一整天都昏昏沉沉的。", "那还是开车？可是去年高速堵车，花了整整十个小时不是吗？你爸开车开得累坏了。", "坐飞机呢？打折的时候挺便宜的。", "从机场到奶奶家坐大巴要两个小时。结果时间也差不了多少。", "那开车不就行了？堵车也就是年底最后两三天吧。爸，你今年放假早吧？早点出发路上也空，而且我上个月拿了驾照，路上可以换我开。", "嗯……可是你刚拿到驾照吧。冬天的高速，万一下雪可让人担心。……要不还是回到你爸最开始的方案？行李就像刚才说的先寄过去，票早点买。提前一个月买的话会便宜不少。现在还来得及。", "原来如此。那样能轻装上路，又省钱。那就这么办。"],
+    "options": ["提前便宜订好新干线去", "早点出发，开车去", "趁便宜的时候坐飞机去", "坐夜行大巴，花一半的钱去"]
+   },
+   "en": {
+    "scene": "A family of three are talking about how to get to grandma's house at the end of the year.",
+    "question": "How did the family decide to get to grandma's house?",
+    "lines": ["We're going to grandma's again at the end of the year, right? Why don't we take the shinkansen? It's fast and easy.", "But for three people, return tickets cost quite a lot. And we'll have lots of luggage, presents for grandma and so on.", "We can just send the luggage ahead by courier.", "Even if we send it, the shinkansen fare is still expensive. The night bus would cost about half.", "The bus, though… I can't sleep at all on buses. I'm in a daze the whole day after we arrive.", "Then the car after all? But last year the expressway was jammed and it took ten hours, didn't it? Dad was exhausted from driving.", "What about flying? It's pretty cheap when there's a sale.", "From the airport to grandma's it's two hours by bus. In the end it's not much faster.", "Then why not the car? It's only the last two or three days of the year that are crowded. Dad, your holiday starts early this year, right? If we leave early the roads will be empty, and I got my licence last month, so I can take over the driving on the way.", "Hmm, but you've only just got your licence. On the expressway in winter, I'd worry if it snowed. … Listen, why don't we go back to Dad's first idea? We send the luggage ahead like he said, and get the tickets early. If you buy at least a month ahead it's quite a bit cheaper. We're still in time now.", "I see. Then we can travel light and it'll be cheaper. All right, let's do that."],
+    "options": ["Book the shinkansen cheaply and go", "Leave early and go by car", "Fly when it's cheap", "Take the night bus for half the price"]
+   }
+  },
+  "why": { "zh": "新干线一开始因为贵和行李多被否定；最后妈妈提议回到爸爸最初的方案（新干线），加上爸爸「宅配便で送る」的主意和「早めに取ると安くなる」，两个问题都解决了，决定寄行李、坐新干线。", "en": "The shinkansen was first rejected for cost and luggage; in the end Mom goes back to Dad's first idea, adding his idea of sending the luggage and buying tickets early for a discount, which solves both problems." },
+  "wrong": [
+   null,
+   { "zh": "儿子提议早点出发、轮流开车，但妈妈担心他刚拿驾照，冬天高速可能下雪，没有采用。「早めに」说的是早点买新干线票。", "en": "The son suggests leaving early and sharing the driving, but Mom worries about a new driver on snowy winter roads. The \"early\" that counts is buying the tickets early." },
+   { "zh": "飞机打折便宜，但机场到奶奶家还要坐两小时大巴，时间差不多，被否定了。", "en": "Flights are cheap in a sale, but it's two more hours by bus from the airport, so it was rejected." },
+   { "zh": "夜行大巴便宜一半，但爸爸在车上睡不着，被否定了。", "en": "The night bus costs half, but Dad can't sleep on buses, so it was rejected." }],
+  "traps": ["condition-conflict", "half-right", "not-possible"]
+ },
+ {
+  "id": "n2-ck-604",
+  "type": "tougou",
+  "scene": "大学で、三人の学生がグループ発表のための調査について話しています。",
+  "lines": [
+   ["M", "「お客さんから見た商店街」っていうテーマの発表だけどさ、図書館で本とか資料を集めれば、すぐできるんじゃない？"],
+   ["F1", "でも先生、自分たちで集めたデータを必ず入れることって言ってたよ。本に書いてあることだけじゃだめだって。"],
+   ["M", "そっか。じゃあ、ネットでアンケートとろうよ。それなら、一日で百人ぐらい集まるし。"],
+   ["F1", "うーん、あの商店街のお客さんって、お年寄りが多いでしょ。ネットだと、答えるのは若い人ばっかりになっちゃうんじゃない？"],
+   ["M", "なるほどね。じゃ、直接商店街に行って、買い物してる人に聞くしかないか。"],
+   ["F2", "それなんだけど、去年の先輩たちが同じことをやったら、お店の前で勝手に声をかけないでって、注意されたらしいよ。先輩が言うには、商店街の事務所に相談すれば、お店の人を紹介してもらえるんだって。お店の人に話を聞くのはどう？"],
+   ["F1", "うーん、でも、私たちのテーマって、お客さんが商店街をどう思ってるか、でしょ。お店の人の話だけじゃ、お客さんの気持ちは分からないよ。それより、その事務所にちゃんとお願いして、許可をもらえばいいんじゃない？　そうすれば、お店の前でお客さんに聞いても、怒られないでしょ。"],
+   ["F2", "あ、そっか。先輩たちが注意されたのは、勝手にやったからだもんね。"],
+   ["M", "じゃ、まず事務所に行って、お願いしてみよう。"]
+  ],
+  "question": "三人は、どうやって調査することにしましたか。",
+  "spokenOptions": true,
+  "options": ["図書館で本や資料を調べる", "ネットでアンケートをとる", "事務所に頼んで店の人に聞く", "断りを入れて、客に直接聞く"],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "大学里三个学生在商量小组发表要做的调查。",
+    "question": "三个人决定怎么做调查？",
+    "lines": ["那个题目叫“顾客眼中的商店街”的发表啊，去图书馆找找书和资料，不是很快就能弄好吗？", "可是老师说过，一定要放进我们自己收集的数据。光是书上写的东西不行。", "也是。那就在网上做问卷吧。那样一天就能收集到一百人左右。", "嗯……那个商店街的顾客老年人很多吧。在网上的话，回答的不就全是年轻人了吗？", "有道理。那只好直接去商店街，问正在买东西的人了。", "说到这个，听说去年的学长学姐做了同样的事，被人提醒说别擅自在店门口跟人搭话。学长说，去找商店街的办事处商量的话，人家会给介绍店里的人。去问问店里的人怎么样？", "嗯……可是我们的题目是顾客怎么看商店街吧。光听店里的人说，是不知道顾客怎么想的。倒不如好好去拜托那个办事处，拿到许可不就行了？那样在店门口问顾客也不会挨说了吧。", "啊，也是。学长他们被提醒，是因为擅自做的嘛。", "那先去办事处拜托一下吧。"],
+    "options": ["在图书馆查书和资料", "在网上做问卷", "请办事处介绍，问店里的人", "先打好招呼，直接问顾客"]
+   },
+   "en": {
+    "scene": "Three university students are talking about the research for their group presentation.",
+    "question": "How did the three decide to do their research?",
+    "lines": ["About our presentation on \"The shopping street through customers' eyes\" — if we gather books and materials at the library, we could finish it quickly, couldn't we?", "But the professor said we must include data we collected ourselves. Just what's written in books won't do.", "Right. Then let's do an online survey. We'd get about a hundred people in a day.", "Hmm, the customers on that shopping street are mostly elderly, aren't they? Online, it'd be only young people answering.", "Good point. Then I guess we'll just have to go to the street and ask people who are shopping.", "About that — apparently when some seniors did the same thing last year, they were told not to stop people in front of the shops without asking. According to them, if you talk to the shopping street's office, they'll introduce you to the shop owners. How about interviewing the shop owners?", "Hmm, but our theme is what customers think of the shopping street, right? Just talking to shop owners won't tell us how customers feel. Instead, why don't we ask that office properly and get permission? Then nobody will tell us off for asking customers in front of the shops.", "Oh, right. The seniors got told off because they did it without asking.", "OK, let's go to the office first and ask."],
+    "options": ["Look up books and materials at the library", "Do an online survey", "Ask the office and interview shop owners", "Ask customers directly after getting the OK"]
+   }
+  },
+  "why": { "zh": "直接问顾客的想法因学长被提醒而一度被否定；女学生指出被提醒是因为「勝手に」，只要通过办事处「許可をもらえば」就行，而且题目要的是顾客的看法，所以决定拿到许可后问顾客。", "en": "Asking shoppers was dropped because the seniors were told off, but one student points out that was only because they had no permission; with the office's permission they can ask shoppers, which is what their theme needs." },
+  "wrong": [
+   { "zh": "老师要求放进自己收集的数据，光查书不行。", "en": "The professor requires data they collect themselves, so books alone won't do." },
+   { "zh": "顾客多是老年人，网上问卷回答的会偏向年轻人。", "en": "The customers are mostly elderly, so an online survey would mostly get young people." },
+   { "zh": "要去找办事处没错，但题目是顾客怎么看商店街，光听店里的人说不行，这个提议被否定了。", "en": "They will go to the office, but only for permission: the theme is customers' views, so interviewing shop owners was rejected." },
+   null],
+  "traps": ["half-right", "not-possible", "condition-conflict"]
+ },
+ {
+  "id": "n2-ck-605",
+  "type": "tougou",
+  "scene": "不動産屋で、女の人と父親が、店の人と部屋について話しています。",
+  "lines": [
+   ["M2", "ご希望に近いお部屋ですと、こちらの四つになります。"],
+   ["F", "この、駅から歩いて三分の部屋、便利そう。"],
+   ["M1", "でも、ここ、ずいぶん狭いぞ。お前、本も服も多いだろう。荷物、入りきらないんじゃないか。"],
+   ["F", "そっか……。じゃあ、こっちの広い部屋は？　家賃もあんまり変わらないし。"],
+   ["M1", "駅まではバスって書いてあるな。朝のバスは混むし、遅れることも多いぞ。"],
+   ["F", "うーん。この新しいマンションは、オートロックもあって安心なんだけど……家賃がお給料の半分近くになっちゃう。さすがに無理か。"],
+   ["M2", "でしたら、こちらはいかがでしょう。建物は少し古いんですが、最寄りの駅から、お勤め先の駅まで、乗り換えなしで行けます。中は昨年すっかりリフォームしましたし、広さも、さっきの広いお部屋とほとんど同じですよ。"],
+   ["M1", "毎朝の満員電車で乗り換えがないっていうのは、ずいぶん楽だぞ。"],
+   ["F", "本当だね。家賃もこれなら払えるし……じゃあ、ここにします。"]
+  ],
+  "question": "女の人は、どの部屋に決めましたか。",
+  "spokenOptions": true,
+  "options": ["駅から歩いて三分の部屋", "通勤が電車一本で済む部屋", "駅までバスで行く広い部屋", "オートロックがある新しい部屋"],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "房产中介店里，一个女人和她父亲在和店员谈房子。",
+    "question": "女人决定了哪间房？",
+    "lines": ["和您的要求比较接近的房子，就是这四套。", "这套，离车站走路三分钟的，好像很方便。", "可是这里挺小的。你书和衣服都多吧。东西放不下吧？", "也是……那这套大的呢？房租也差不多。", "上面写着到车站要坐公交。早上的公交又挤，还经常晚点。", "嗯……这套新公寓有门禁，挺安心的，可是……房租快到工资的一半了。还是不行吧。", "那这套怎么样？楼稍微旧一点，不过从最近的车站到您上班的车站不用换乘。里面去年全部翻新过，面积也和刚才那套大的差不多。", "每天早上挤满员电车不用换乘，那可轻松多了。", "真的。这个房租我也付得起……那就定这套了。"],
+    "options": ["离车站走路三分钟的房子", "上班坐一趟电车就能到的房子", "坐公交去车站的大房子", "有门禁的新房子"]
+   },
+   "en": {
+    "scene": "At an estate agent's, a woman and her father are talking with the agent about flats.",
+    "question": "Which flat did the woman decide on?",
+    "lines": ["These four are the flats closest to what you're looking for.", "This one, three minutes' walk from the station, looks convenient.", "But it's pretty small. You've got lots of books and clothes. Won't your things not fit?", "True… Then what about this big one? The rent's about the same.", "It says you take a bus to the station. Morning buses are crowded and often late.", "Hmm. This new building has an auto-lock, so it'd feel safe, but… the rent would be almost half my salary. That's too much, I guess.", "In that case, how about this one? The building is a little old, but from the nearest station you can get to the station where you work without changing trains. The inside was completely renovated last year, and it's almost as big as the big flat earlier.", "No changing trains on a packed train every morning — that makes a big difference.", "That's true. And I can afford this rent… OK, I'll take this one."],
+    "options": ["The flat three minutes' walk from the station", "The flat with a single train to work", "The big flat with a bus to the station", "The new flat with an auto-lock"]
+   }
+  },
+  "why": { "zh": "店员推荐的旧楼「乗り換えなしで行けます」，里面翻新过、面积也够大，房租也付得起，女人就定了这套。", "en": "The agent's older flat needs no train change to her work, has been renovated, is big enough and affordable, so she takes it." },
+  "wrong": [
+   { "zh": "离车站三分钟的房子太小，东西放不下。", "en": "The flat three minutes from the station is too small for her things." },
+   null,
+   { "zh": "大房子要坐公交去车站，早上挤还常晚点。", "en": "The big flat needs a bus, which is crowded and often late in the morning." },
+   { "zh": "新公寓有门禁很安心，但房租快到工资一半，付不起。", "en": "The new flat feels safe, but the rent is nearly half her salary." }],
+  "traps": ["third-person-decides", "condition-conflict", "other-option-attribute"]
+ },
+ {
+  "id": "n2-ck-606",
+  "type": "tougou",
+  "scene": "パン屋で、店長と女の店員と、アルバイトの男の学生が、夏に売る新しいパンについて話しています。",
+  "lines": [
+   ["M1", "夏はどうしても売り上げが落ちるから、何か新しいパンを出したいんだ。カレーパンを辛口にして売るっていうのはどうかな。"],
+   ["F", "暑いときに揚げたものって、あんまり売れないんじゃないですか。去年も、夏はカレーパンがいちばん残ってましたよ。"],
+   ["M1", "そうか。じゃあ、冷やして食べるクリームパンは？　よその店で、はやってるらしいよ。"],
+   ["F", "いいですね。ただ、冷蔵のケースが今いっぱいで、置く場所がないんですよ。新しいケースを買うと、かなりかかりますし。"],
+   ["M1", "うーん、それじゃ、果物のサンドイッチも無理か。あれも冷やしておかなきゃいけないからなあ。森くんは、何かない？"],
+   ["M2", "あ、はい。僕、一人暮らしなんですけど、普通の大きさの食パンだと、食べきれないうちに、暑くてかびちゃうんですよ。この辺は学生のアパートが多いし、小さいサイズの食パンがあったら、みんな買うと思います。"],
+   ["F", "確かに、うちのお客さん、学生さんが多いですもんね。"],
+   ["M1", "なるほど。それなら今の機械で焼けるし、冷やす場所もいらないな。よし、それでいこう。"]
+  ],
+  "question": "新しく売ることにしたのは、どのパンですか。",
+  "spokenOptions": true,
+  "options": ["辛口のカレーパン", "冷やして食べるクリームパン", "普通より小さめの食パン", "果物を使ったサンドイッチ"],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "面包店里，店长、女店员和打工的男学生在商量夏天要卖的新面包。",
+    "question": "他们决定新卖的是哪种面包？",
+    "lines": ["夏天销量总是会下降，所以想推出点新面包。把咖喱面包做成辣味来卖怎么样？", "天热的时候，油炸的东西不太好卖吧？去年夏天也是咖喱面包剩得最多。", "是吗。那冰着吃的奶油面包呢？听说别的店里很流行。", "不错。不过冷藏柜现在已经满了，没地方放。买新的柜子要花不少钱。", "嗯……那水果三明治也不行了。那个也得冷藏着。小森，你有什么想法吗？", "啊，有。我是一个人住，普通大小的吐司还没吃完，天一热就发霉了。这附近学生公寓很多，要是有小尺寸的吐司，大家肯定会买。", "确实，咱们店的客人学生挺多的。", "原来如此。那用现在的机器就能烤，也不需要冷藏的地方。好，就这么办。"],
+    "options": ["辣味咖喱面包", "冰着吃的奶油面包", "比普通小一点的吐司", "用水果做的三明治"]
+   },
+   "en": {
+    "scene": "At a bakery, the manager, a female employee and a male student who works part-time are talking about a new bread to sell in summer.",
+    "question": "Which bread did they decide to start selling?",
+    "lines": ["Sales always drop in summer, so I'd like to bring out something new. How about selling a spicy version of the curry bun?", "Fried things don't really sell when it's hot, do they? Last summer too, the curry buns were what we had most left over.", "I see. Then what about a cream bun you eat chilled? Apparently they're popular at other shops.", "Sounds good. But the fridge case is full right now, so there's nowhere to put them. And buying a new case would cost quite a lot.", "Hmm, then fruit sandwiches are out too. They have to be kept cold as well. Mori, any ideas?", "Ah, yes. I live alone, and with a normal-sized loaf of sliced bread, it goes mouldy in the heat before I can finish it. There are lots of student flats around here, and if we had small loaves, I think everyone would buy them.", "True, a lot of our customers are students.", "I see. We can bake that with the machines we have, and it doesn't need any cold space. Right, let's do that."],
+    "options": ["A spicy curry bun", "A cream bun eaten chilled", "A smaller-than-usual loaf of sliced bread", "A sandwich made with fruit"]
+   }
+  },
+  "why": { "zh": "冷藏柜已满，要冷藏的都不行；打工的学生说一个人住吃不完普通吐司会发霉、附近学生多，提议小尺寸吐司，店长觉得用现有机器能烤、也不占冷藏位置，于是决定。", "en": "The fridge case is full, ruling out anything chilled; the part-timer, who lives alone, suggests small loaves for the many students nearby, which the manager can bake with the current machines and needs no cold space." },
+  "wrong": [
+   { "zh": "店员说天热时油炸的不好卖，去年夏天咖喱面包剩得最多。", "en": "The employee says fried food doesn't sell in the heat; curry buns were left over most last summer." },
+   { "zh": "冷藏柜满了，没地方放，买新柜子又很贵。", "en": "The fridge case is full and a new one would be expensive." },
+   null,
+   { "zh": "水果三明治也要冷藏，店长自己说不行。", "en": "Fruit sandwiches also need to be kept cold, so the manager rules them out himself." }],
+  "traps": ["third-person-decides", "not-possible", "condition-conflict"]
+ },
+ {
+  "id": "n2-ck-607",
+  "type": "tougou",
+  "scene": "スポーツジムで、係の人が料金プランについて説明しています。",
+  "lines": [
+   ["F1", "当ジムには、四つのプランがございます。一つ目は「朝プラン」です。平日の朝七時から十時までご利用いただけて、料金はいちばんお安くなっております。二つ目は「夜プラン」で、平日の夜六時から、閉館の十一時までです。三つ目は「週末プラン」。土曜日と日曜日に、一日中ご利用いただけます。四つ目は「フルプラン」です。いつでもご利用いただけるうえ、プールとスタジオのレッスンも含まれております。なお、プールとレッスンは、フルプランの方だけのご利用となりますので、ご注意ください。"],
+   ["M", "どうする？　俺は、会社帰りに走ったり、筋トレしたりできればいいんだよね。会社を出るのは、だいたい七時だから……。"],
+   ["F2", "土日は？　時間を気にしないで来られるじゃない。"],
+   ["M", "土日は子どもとでかけることが多いから、なかなか来られないよ。平日の帰りに寄るほうが続くと思う。プールとかも使わないし。"],
+   ["F2", "そうだね。私はね、朝のプランが安くていいなって思ってたの。子どもを保育園に送ったあと、すぐ来られるし。"],
+   ["M", "じゃあ、それにすれば？"],
+   ["F2", "でもね、私がジムに通いたいのは、ヨガをやりたいからなんだよね。"],
+   ["M", "ヨガって、スタジオのレッスンだろ？　それ、さっき……。"],
+   ["F2", "そう、一つのプランでしか受けられないって。ちょっと高いけど、ヨガ教室に別に通うと思えば、そんなに変わらないし、そっちにする。"]
+  ],
+  "options": ["朝プラン", "夜プラン", "週末プラン", "フルプラン"],
+  "questions": [
+   { "question": "質問1：男の人は、どのプランにしますか。", "answer": 1,
+     "why": { "zh": "他七点左右下班，想下班顺路去跑步、练肌肉，周末要陪孩子，也不用游泳池，所以选平日晚六点到十一点的夜间方案。", "en": "He leaves work around seven and wants to drop in on weekday evenings; weekends are for the kids and he won't use the pool, so the evening plan (6–11 pm) fits." },
+     "wrong": [
+      { "zh": "早上的方案是女人原本考虑的，男人是下班后去。", "en": "The morning plan is what the woman first considered; he goes after work." },
+      null,
+      { "zh": "周末方案是女人建议的，但他周末常和孩子出门，来不了。", "en": "The woman suggests weekends, but he's usually out with the kids then." },
+      { "zh": "全天方案包含游泳池和课程，但他说不用游泳池，只要平日晚上能来就行。", "en": "The full plan adds the pool and classes, but he won't use the pool and only needs weekday evenings." }] },
+   { "question": "質問2：女の人は、どのプランにしますか。", "answer": 3,
+     "why": { "zh": "她来健身房是为了瑜伽，瑜伽是工作室课程，介绍里说课程只有全天方案能上，所以虽然贵也选全天方案。", "en": "She wants to do yoga, a studio class, and the staff said classes are only for full-plan members, so she takes the full plan despite the price." },
+     "wrong": [
+      { "zh": "早上的方案便宜又方便，但上不了瑜伽课，所以放弃了。", "en": "The morning plan is cheap and convenient, but it doesn't include yoga, so she drops it." },
+      { "zh": "夜间方案是男人选的。", "en": "The evening plan is the man's choice." },
+      { "zh": "周末方案是她推荐给男人的，不是自己选的。", "en": "She suggests the weekend plan to him, not for herself." },
+      null] }
+  ],
+  "tr": {
+   "zh": {
+    "scene": "健身房里，工作人员在介绍收费方案。",
+    "questions": ["问题1：男人会选哪个方案？", "问题2：女人会选哪个方案？"],
+    "lines": ["本健身房共有四种方案。第一种是“早间方案”，平日早上七点到十点可以使用，费用最便宜。第二种是“夜间方案”，平日晚上六点到闭馆的十一点。第三种是“周末方案”，星期六和星期天全天都可以使用。第四种是“全天方案”，任何时间都可以使用，还包含游泳池和工作室的课程。另外，游泳池和课程只限全天方案的会员使用，请注意。", "怎么办？我只要下班路上能跑跑步、练练肌肉就行。我一般七点左右离开公司……", "周末呢？不用在意时间就能来啊。", "周末经常带孩子出去，很难来。平日下班顺路来更能坚持下去。游泳池什么的我也不用。", "也是。我呢，本来觉得早上的方案便宜挺好的。送孩子去保育园以后马上就能过来。", "那就选那个呗？", "可是啊，我想来健身房，是因为想练瑜伽。", "瑜伽是工作室的课程吧？那个刚才……", "对，说是只有一种方案能上。虽然有点贵，可想想要是另外去瑜伽教室，也差不了多少，我就选那个。"],
+    "options": ["早间方案", "夜间方案", "周末方案", "全天方案"]
+   },
+   "en": {
+    "scene": "At a gym, a staff member is explaining the membership plans.",
+    "questions": ["Question 1: Which plan will the man choose?", "Question 2: Which plan will the woman choose?"],
+    "lines": ["Our gym offers four plans. The first is the Morning Plan: you can use the gym on weekdays from 7 to 10 a.m., and it's the cheapest. The second is the Evening Plan, weekdays from 6 p.m. until we close at 11. The third is the Weekend Plan, all day on Saturdays and Sundays. The fourth is the Full Plan: you can come any time, and it includes the pool and studio classes. Please note that the pool and classes are only available to Full Plan members.", "What shall we do? All I need is to go for a run or do some weights on the way home from work. I usually leave the office around seven…", "What about weekends? You could come without worrying about the time.", "We often go out with the kids at weekends, so I'd hardly ever come. Dropping in on weekdays on the way home is more likely to last. And I won't use the pool or anything.", "True. Me, I was thinking the morning plan looked good because it's cheap. I could come straight after dropping our child at nursery.", "Then why not go with that?", "But the reason I want to join a gym is that I want to do yoga.", "Yoga's a studio class, right? They said earlier…", "Yes, that only one plan gets you classes. It's a bit expensive, but if I think of it as going to a yoga school separately, it's not that different, so I'll go with that one."],
+    "options": ["Morning Plan", "Evening Plan", "Weekend Plan", "Full Plan"]
+   }
+  },
+  "traps": ["condition-conflict", "someone-else", "mentioned-not-asked"]
+ },
+ {
+  "id": "n2-ck-608",
+  "type": "tougou",
+  "scene": "ラジオで、今週のおすすめの本を紹介しています。",
+  "lines": [
+   ["F1", "今週のおすすめの本を、四冊ご紹介します。一冊目は、推理小説『夜の駅』。五百ページを超える長い作品ですが、読み始めたら止まらないと評判です。二冊目は、料理研究家が書いたエッセイ集『台所の窓から』。一つ一つの話が三ページほどと短いので、忙しい方でも、少しずつ楽しめます。三冊目は『写真で見る昭和の暮らし』。昔の町や家の写真が中心で、文章はほとんどありません。四冊目は『仕事が早く終わる手帳術』。手帳の使い方を工夫して、残業を減らすコツが紹介されています。"],
+   ["M", "本かあ。最近、ぜんぜん読んでないなあ。"],
+   ["F2", "私も。通勤の電車で読もうかな。でも、乗ってるの、十五分ぐらいなんだよね。"],
+   ["M", "それなら、短い話がたくさん入ってるのがいいんじゃない？"],
+   ["F2", "そうだね。昔の写真の本も気になるけど、混んでる電車で写真をゆっくり見るのはちょっとね。料理も好きだし、そっちにする。田中くんは？　いつも残業が多いって言ってるじゃない。手帳の本、ちょうどいいんじゃない？"],
+   ["M", "ああいうのは、この前、課長に借りて読んだばかりなんだよ。来週から夏休みで、一週間なんにも予定がないから、せっかくだし、長いのを一気に読みたいな。"]
+  ],
+  "options": ["推理小説", "エッセイ集", "写真の本", "手帳の本"],
+  "questions": [
+   { "question": "質問1：男の人は、どの本を読みますか。", "answer": 0,
+     "why": { "zh": "他说下周起放一周暑假，想「長いのを一気に読みたい」，对应介绍里五百多页、一读就停不下来的推理小说。", "en": "He has a free week of summer holiday and wants to read something long in one go — the 500-page mystery that's hard to put down." },
+     "wrong": [null,
+      { "zh": "短篇的随笔集是女人选的。", "en": "The essay collection with short pieces is the woman's choice." },
+      { "zh": "老照片的书是女人提到的，男人没提。", "en": "The old-photos book is mentioned by the woman, not him." },
+      { "zh": "女人推荐了手帐的书，但他刚向科长借来读过类似的书。", "en": "The woman suggests the planner book, but he's just read a similar one borrowed from his boss." }] },
+   { "question": "質問2：女の人は、どの本を読みますか。", "answer": 1,
+     "why": { "zh": "她只在十五分钟左右的通勤电车上读，又喜欢做菜，所以选每篇约三页的料理研究家随笔集。", "en": "She'll read only on a 15-minute commute and likes cooking, so she picks the cooking writer's essays, about three pages each." },
+     "wrong": [
+      { "zh": "推理小说五百多页很长，是男人想放假时一口气读的。", "en": "The long mystery is what the man wants for his holiday." },
+      null,
+      { "zh": "她对老照片的书也感兴趣，但在拥挤的电车上没法慢慢看照片。", "en": "She's curious about the photo book, but you can't look at photos properly on a crowded train." },
+      { "zh": "手帐的书是她推荐给男人的。", "en": "She suggests the planner book to the man." }] }
+  ],
+  "tr": {
+   "zh": {
+    "scene": "广播里正在介绍本周推荐的书。",
+    "questions": ["问题1：男人会读哪本书？", "问题2：女人会读哪本书？"],
+    "lines": ["为大家介绍本周推荐的四本书。第一本是推理小说《夜晚的车站》，超过五百页的长篇作品，但口碑是一读起来就停不下来。第二本是料理研究家写的随笔集《从厨房的窗口》，每一篇只有三页左右，很短，再忙的人也能一点点地享受。第三本是《照片里的昭和生活》，以过去的街道和房子的照片为主，几乎没有文字。第四本是《让工作早点结束的手帐术》，介绍了如何在手帐的用法上下功夫、减少加班的窍门。", "书啊。最近完全没读过。", "我也是。要不在通勤的电车上读吧。可是我坐车只有十五分钟左右。", "那样的话，收了很多短篇的那本不是挺好？", "也是。老照片的书我也挺感兴趣，可在挤的电车上慢慢看照片有点难。我也喜欢做菜，就选那本吧。田中你呢？你不是老说加班多吗？手帐那本不是正合适？", "那类书我前几天刚找科长借来读过。下周开始放暑假，一个星期什么安排都没有，难得有空，想一口气读本长的。"],
+    "options": ["推理小说", "随笔集", "照片的书", "手帐的书"]
+   },
+   "en": {
+    "scene": "A radio programme is introducing this week's recommended books.",
+    "questions": ["Question 1: Which book will the man read?", "Question 2: Which book will the woman read?"],
+    "lines": ["Here are four recommended books this week. The first is the mystery novel \"Night Station\". It's a long work of over 500 pages, but it's said that once you start, you can't stop. The second is \"From the Kitchen Window\", a collection of essays by a cooking writer. Each piece is only about three pages, so even busy people can enjoy it bit by bit. The third is \"Showa Life in Photographs\", mostly photos of old towns and houses, with hardly any text. The fourth is \"Planner Techniques to Finish Work Early\", with tips on using your planner cleverly to cut overtime.", "Books, huh. I haven't read anything lately.", "Me neither. Maybe I'll read on the train to work. But I'm only on it for about fifteen minutes.", "Then wouldn't the one with lots of short pieces be good?", "True. I'm curious about the old photos book too, but looking at photos properly on a crowded train is a bit hard. And I like cooking, so I'll go with that one. What about you, Tanaka? You're always saying you do a lot of overtime. Wouldn't the planner book be just right?", "I just read one like that the other day, borrowed from my section chief. My summer holiday starts next week and I've got nothing planned for a whole week, so I'd like to read something long in one go."],
+    "options": ["Mystery novel", "Essay collection", "Photo book", "Planner book"]
+   }
+  },
+  "traps": ["done-already", "condition-conflict", "someone-else"]
  }
 ]

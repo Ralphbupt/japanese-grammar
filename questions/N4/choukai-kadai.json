@@ -1,0 +1,2114 @@
+[
+ {
+  "id": "n4-ck-101",
+  "type": "kadai",
+  "scene": "会社で 男の 人と 女の 人が 話しています。",
+  "question": "男の 人は 何時に 会社を 出ますか。",
+  "lines": [
+   [
+    "M",
+    "きょうは 3時に おきゃくさんの 会社へ 行きます。電車で 30分ぐらいですから、2時半に 出ます。"
+   ],
+   [
+    "F",
+    "あの 会社は 入る 前に うけつけで 名前を 書かなければ なりませんから、やくそくの 15分前には 着いて いた ほうが いいですよ。"
+   ],
+   [
+    "M",
+    "そうですか。じゃあ、2時に 出ましょうか。"
+   ],
+   [
+    "F",
+    "そんなに 早くなくても だいじょうぶですよ。"
+   ],
+   [
+    "M",
+    "分かりました。じゃあ、2時半より 15分 早く 出ます。"
+   ]
+  ],
+  "options": [
+   "2時",
+   "2時15分",
+   "2時半",
+   "2時45分"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个男人和一个女人在说话。",
+    "question": "男人几点离开公司？",
+    "lines": [
+     "今天3点要去客户的公司。坐电车30分钟左右，所以两点半出发。",
+     "那家公司进去之前要在前台写名字，所以最好在约定时间的15分钟前就到。",
+     "是吗。那我2点出发吧？",
+     "不用那么早也没关系。",
+     "知道了。那我比两点半早15分钟出发。"
+    ],
+    "options": [
+     "2点",
+     "2点15分",
+     "两点半",
+     "2点45分"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking at the office.",
+    "question": "What time will the man leave the office?",
+    "lines": [
+     "I'm visiting a client's company at three today. It's about thirty minutes by train, so I'll leave at two thirty.",
+     "At that company you have to write your name at reception before you go in, so you'd better be there fifteen minutes before the appointment.",
+     "I see. Then should I leave at two?",
+     "You don't need to leave that early.",
+     "OK. Then I'll leave fifteen minutes earlier than two thirty."
+    ],
+    "options": [
+     "2:00",
+     "2:15",
+     "2:30",
+     "2:45"
+    ]
+   }
+  },
+  "why": {
+   "zh": "要在约定的3点的15分钟前到，所以比原定的两点半早15分钟，也就是2点15分出发。",
+   "en": "He has to arrive 15 minutes before the 3:00 appointment, so he leaves 15 minutes earlier than 2:30 — at 2:15."
+  },
+  "wrong": [
+   {
+    "zh": "2点是男人自己提的，女人说「そんなに 早くなくても だいじょうぶ」。",
+    "en": "Two o'clock was his idea; she says he doesn't need to leave that early."
+   },
+   null,
+   {
+    "zh": "两点半是一开始的打算，没有算上提前15分钟。",
+    "en": "2:30 was his first plan, before the 15 minutes early were added."
+   },
+   {
+    "zh": "2点45分是应该到达的时间（3点的15分钟前），不是出发的时间。",
+    "en": "2:45 is when he should arrive (15 minutes before 3:00), not when he leaves."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "number"
+  ]
+ },
+ {
+  "id": "n4-ck-102",
+  "type": "kadai",
+  "scene": "大学で 女の 学生と 男の 学生が 話しています。",
+  "question": "二人は 何曜日に 図書館へ 行きますか。",
+  "lines": [
+   [
+    "F",
+    "レポートの 本を さがしに、いっしょに 図書館へ 行かない？ 月曜日は どう？"
+   ],
+   [
+    "M",
+    "月曜日は 図書館が 休みだよ。"
+   ],
+   [
+    "F",
+    "あ、そうか。じゃあ、火曜日は？"
+   ],
+   [
+    "M",
+    "火曜日は アルバイトが あるんだ。水曜日の 午後なら あいてるけど。"
+   ],
+   [
+    "F",
+    "水曜日は わたしが だめなの。じゅぎょうが 夜まで あるから。木曜日か 金曜日は？"
+   ],
+   [
+    "M",
+    "金曜日は 図書館が 早く しまるから、木曜日に しよう。"
+   ]
+  ],
+  "options": [
+   "月曜日",
+   "火曜日",
+   "水曜日",
+   "木曜日"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "大学里一个女学生和一个男学生在说话。",
+    "question": "两个人星期几去图书馆？",
+    "lines": [
+     "一起去图书馆找写报告用的书吧？星期一怎么样？",
+     "星期一图书馆休息哦。",
+     "啊，对哦。那星期二呢？",
+     "星期二我要打工。星期三下午的话有空。",
+     "星期三我不行，课一直上到晚上。星期四或者星期五呢？",
+     "星期五图书馆关门早，就定星期四吧。"
+    ],
+    "options": [
+     "星期一",
+     "星期二",
+     "星期三",
+     "星期四"
+    ]
+   },
+   "en": {
+    "scene": "A female student and a male student are talking at university.",
+    "question": "On which day will the two of them go to the library?",
+    "lines": [
+     "Want to go to the library together to look for books for the report? How about Monday?",
+     "The library is closed on Mondays.",
+     "Oh, right. Then what about Tuesday?",
+     "I've got my part-time job on Tuesday. I'm free on Wednesday afternoon, though.",
+     "Wednesday's no good for me — I have classes until the evening. Thursday or Friday?",
+     "The library closes early on Fridays, so let's make it Thursday."
+    ],
+    "options": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday"
+    ]
+   }
+  },
+  "why": {
+   "zh": "星期一闭馆，星期二男生打工，星期三女生有课，星期五关门早，最后定了「木曜日」。",
+   "en": "Monday the library is closed, Tuesday he works, Wednesday she has classes, Friday it closes early — so Thursday."
+  },
+  "wrong": [
+   {
+    "zh": "星期一图书馆「休み」。",
+    "en": "The library is closed on Monday."
+   },
+   {
+    "zh": "星期二男学生要打工。",
+    "en": "He has his part-time job on Tuesday."
+   },
+   {
+    "zh": "星期三男学生有空，但女学生「じゅぎょうが 夜まで ある」。",
+    "en": "He's free on Wednesday, but she has classes until the evening."
+   },
+   null
+  ],
+  "traps": [
+   "not-possible",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n4-ck-103",
+  "type": "kadai",
+  "scene": "店で 女の 人と 店の 人が 話しています。",
+  "question": "女の 人は いくら はらいますか。",
+  "lines": [
+   [
+    "F",
+    "すみません、この セーターは 5000円ですか。"
+   ],
+   [
+    "M",
+    "はい。でも 今週は セールで、1000円 安く なって おります。"
+   ],
+   [
+    "F",
+    "そうですか。それから、この 500円びきの クーポンも 使えますか。"
+   ],
+   [
+    "M",
+    "もうしわけ ございません。そちらは 5000円 以上 お買い物を された 方の クーポンでございます。"
+   ],
+   [
+    "F",
+    "あ、セールの ねだんだと 5000円に なりませんね。"
+   ],
+   [
+    "M",
+    "はい、もうしわけ ございません。"
+   ],
+   [
+    "F",
+    "いいえ。じゃあ、これを ください。"
+   ]
+  ],
+  "options": [
+   "3500円",
+   "4000円",
+   "4500円",
+   "5000円"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "店里一个女人和店员在说话。",
+    "question": "女人付多少钱？",
+    "lines": [
+     "请问，这件毛衣是5000日元吗？",
+     "是的。不过这周打折，便宜1000日元。",
+     "是吗。另外，这张减500日元的优惠券也能用吗？",
+     "非常抱歉。那张优惠券是购物满5000日元以上才能用的。",
+     "啊，按打折的价格就不到5000日元了呢。",
+     "是的，非常抱歉。",
+     "没关系。那我要这件。"
+    ],
+    "options": [
+     "3500日元",
+     "4000日元",
+     "4500日元",
+     "5000日元"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a shop assistant are talking in a shop.",
+    "question": "How much will the woman pay?",
+    "lines": [
+     "Excuse me, is this sweater 5,000 yen?",
+     "Yes. But it's on sale this week, 1,000 yen off.",
+     "I see. And can I use this 500-yen-off coupon too?",
+     "I'm very sorry. That coupon is for purchases of 5,000 yen or more.",
+     "Ah, at the sale price it doesn't come to 5,000 yen.",
+     "No, I'm very sorry.",
+     "That's all right. I'll take this, then."
+    ],
+    "options": [
+     "3,500 yen",
+     "4,000 yen",
+     "4,500 yen",
+     "5,000 yen"
+    ]
+   }
+  },
+  "why": {
+   "zh": "5000日元打折便宜1000日元，是4000日元；优惠券要满5000日元才能用，所以用不了。",
+   "en": "5,000 yen minus the 1,000-yen sale discount is 4,000 yen; the coupon needs 5,000 yen or more, so it can't be used."
+  },
+  "wrong": [
+   {
+    "zh": "3500日元是打折后又用了优惠券，但优惠券用不了。",
+    "en": "3,500 yen assumes the coupon too, but it can't be used."
+   },
+   null,
+   {
+    "zh": "4500日元是只用了优惠券、没算打折。",
+    "en": "4,500 yen takes off the coupon instead of the sale discount."
+   },
+   {
+    "zh": "5000日元是打折前的价格。",
+    "en": "5,000 yen is the price before the sale."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "number"
+  ]
+ },
+ {
+  "id": "n4-ck-104",
+  "type": "kadai",
+  "scene": "日本語学校で 女の 先生と 男の 学生が 話しています。",
+  "question": "男の 学生は しゅくだいで どこを しますか。",
+  "lines": [
+   [
+    "F",
+    "きょうの しゅくだいは テキストの 35ページ、1ばんから 4ばんまでです。"
+   ],
+   [
+    "M",
+    "先生、35ページは 先週 やりましたよ。"
+   ],
+   [
+    "F",
+    "あ、ごめんなさい。45ページでした。45ページの 1ばんから 4ばんまでです。"
+   ],
+   [
+    "M",
+    "4ばんは まだ ならって いない ぶんぽうですが……。"
+   ],
+   [
+    "F",
+    "そうですね。じゃあ、4ばんは 来週 じゅぎょうで やりましょう。それから、2ばんは 今から クラスで いっしょに やります。"
+   ],
+   [
+    "M",
+    "じゃあ、しゅくだいは のこりの 二つですね。"
+   ]
+  ],
+  "options": [
+   "35ページの 1ばんと 3ばん",
+   "45ページの 1ばんと 2ばん",
+   "45ページの 1ばんと 3ばん",
+   "45ページの 1ばんから 4ばん"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "日语学校里女老师和男学生在说话。",
+    "question": "男学生作业做哪里？",
+    "lines": [
+     "今天的作业是课本第35页，第1题到第4题。",
+     "老师，第35页上周做过了。",
+     "啊，对不起。是第45页。第45页的第1题到第4题。",
+     "第4题是还没学过的语法……",
+     "是啊。那第4题下周在课上做吧。还有，第2题现在在班上一起做。",
+     "那作业就是剩下的两道题了。"
+    ],
+    "options": [
+     "第35页的第1题和第3题",
+     "第45页的第1题和第2题",
+     "第45页的第1题和第3题",
+     "第45页的第1题到第4题"
+    ]
+   },
+   "en": {
+    "scene": "A female teacher and a male student are talking at a Japanese language school.",
+    "question": "Which part will the male student do for homework?",
+    "lines": [
+     "Today's homework is page 35 of the textbook, exercises 1 to 4.",
+     "Sensei, we did page 35 last week.",
+     "Oh, sorry. It's page 45. Page 45, exercises 1 to 4.",
+     "Exercise 4 uses grammar we haven't learned yet...",
+     "That's true. Then we'll do exercise 4 in class next week. And we'll do exercise 2 together in class right now.",
+     "So the homework is the remaining two."
+    ],
+    "options": [
+     "Page 35, exercises 1 and 3",
+     "Page 45, exercises 1 and 2",
+     "Page 45, exercises 1 and 3",
+     "Page 45, exercises 1 to 4"
+    ]
+   }
+  },
+  "why": {
+   "zh": "页码改成了第45页；第4题下周做，第2题现在在班上做，剩下的是第1题和第3题。",
+   "en": "The page is 45; exercise 4 is next week and exercise 2 is done in class now, leaving exercises 1 and 3."
+  },
+  "wrong": [
+   {
+    "zh": "第35页上周已经做过了，老师改成了第45页。",
+    "en": "Page 35 was done last week; the teacher corrects it to page 45."
+   },
+   {
+    "zh": "第2题「今から クラスで」做，不是作业。",
+    "en": "Exercise 2 is done in class now, not as homework."
+   },
+   null,
+   {
+    "zh": "第4题下周在课上做，第2题现在做，不是4道题都做。",
+    "en": "Exercise 4 is next week and 2 is done now — not all four."
+   }
+  ],
+  "traps": [
+   "done-already",
+   "later",
+   "number"
+  ]
+ },
+ {
+  "id": "n4-ck-105",
+  "type": "kadai",
+  "scene": "大学で 男の 学生と 女の 学生が 話しています。",
+  "question": "男の 学生は これから なんがいへ 行きますか。",
+  "lines": [
+   [
+    "M",
+    "ねえ、山田先生の 研究室、3階だよね。"
+   ],
+   [
+    "F",
+    "前は 3階だったけど、今年から 5階に かわったよ。でも 先生、今は 研究室に いないと 思う。3時まで 2階の 教室で じゅぎょうだから。"
+   ],
+   [
+    "M",
+    "じゃあ、2階の 教室の 前で 待とうかな。"
+   ],
+   [
+    "F",
+    "あ、先生、きょうは じゅぎょうの あと、すぐ 1階の じむしつに 行くって 言ってたよ。"
+   ],
+   [
+    "M",
+    "そうか。じゃあ、そっちで 待つよ。ありがとう。"
+   ]
+  ],
+  "options": [
+   "1階",
+   "2階",
+   "3階",
+   "5階"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "大学里一个男学生和一个女学生在说话。",
+    "question": "男学生接下来去几楼？",
+    "lines": [
+     "喂，山田老师的研究室是在3楼吧？",
+     "以前在3楼，今年起换到5楼了。不过老师现在应该不在研究室，他3点前在2楼的教室上课。",
+     "那我在2楼教室门口等吧。",
+     "啊，老师说今天下课后马上要去1楼的办公室。",
+     "这样啊。那我去那边等。谢谢。"
+    ],
+    "options": [
+     "1楼",
+     "2楼",
+     "3楼",
+     "5楼"
+    ]
+   },
+   "en": {
+    "scene": "A male student and a female student are talking at university.",
+    "question": "Which floor will the male student go to now?",
+    "lines": [
+     "Hey, Professor Yamada's office is on the third floor, right?",
+     "It used to be on the third, but it moved to the fifth this year. But I don't think he's in his office now — he's teaching in a second-floor classroom until three.",
+     "Then maybe I'll wait outside the second-floor classroom.",
+     "Oh, he said that today he's going straight to the office on the first floor after class.",
+     "I see. Then I'll wait there. Thanks."
+    ],
+    "options": [
+     "The first floor",
+     "The second floor",
+     "The third floor",
+     "The fifth floor"
+    ]
+   }
+  },
+  "why": {
+   "zh": "老师下课后马上去「1階の じむしつ」，男学生说「そっちで 待つ」。",
+   "en": "The professor goes straight to the first-floor office after class, and the student says he'll wait there."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "2楼的教室是老师上课的地方，但下课后老师马上去1楼，所以男学生改去1楼等。",
+    "en": "The second floor is where he's teaching, but he'll go straight to the first floor afterwards, so the student waits there instead."
+   },
+   {
+    "zh": "研究室以前在3楼，今年换到5楼了。",
+    "en": "The office used to be on the third floor; it's on the fifth now."
+   },
+   {
+    "zh": "5楼是现在的研究室，但老师现在不在研究室。",
+    "en": "The fifth floor is the office now, but the professor isn't there."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n4-ck-106",
+  "type": "kadai",
+  "scene": "家で 女の 人と 男の 人が 話しています。",
+  "question": "男の 人は ジュースを なんぼん 買いますか。",
+  "lines": [
+   [
+    "F",
+    "あしたの パーティー、10人 来るから、ジュースを 10本 買って きて くれる？"
+   ],
+   [
+    "M",
+    "いいよ。でも れいぞうこに 4本 あるから、6本で いいんじゃない？"
+   ],
+   [
+    "F",
+    "あ、あれは 弟の だから、使わないで。"
+   ],
+   [
+    "M",
+    "分かった。あ、そうだ。田中さんと 木下さんは、あした 来られないって 言ってたよ。"
+   ],
+   [
+    "F",
+    "あ、そうだった。じゃあ、来る 人の かずだけ 買って きて。"
+   ],
+   [
+    "M",
+    "うん、分かった。"
+   ]
+  ],
+  "options": [
+   "4本",
+   "6本",
+   "8本",
+   "10本"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "家里一个女人和一个男人在说话。",
+    "question": "男人买几瓶果汁？",
+    "lines": [
+     "明天的聚会有10个人来，你能去买10瓶果汁吗？",
+     "好啊。不过冰箱里有4瓶，买6瓶就行了吧？",
+     "啊，那是我弟弟的，别动。",
+     "知道了。啊，对了，田中和木下说明天来不了。",
+     "啊，对哦。那就按来的人数买吧。",
+     "嗯，知道了。"
+    ],
+    "options": [
+     "4瓶",
+     "6瓶",
+     "8瓶",
+     "10瓶"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking at home.",
+    "question": "How many bottles of juice will the man buy?",
+    "lines": [
+     "Ten people are coming to the party tomorrow — could you buy ten bottles of juice?",
+     "Sure. But there are four in the fridge, so six should do, right?",
+     "Oh, those are my brother's, so don't use them.",
+     "Got it. Oh, right — Tanaka-san and Kinoshita-san said they can't come tomorrow.",
+     "Oh, that's right. Then just buy as many as there are people coming.",
+     "OK, got it."
+    ],
+    "options": [
+     "Four",
+     "Six",
+     "Eight",
+     "Ten"
+    ]
+   }
+  },
+  "why": {
+   "zh": "10个人里田中和木下来不了，是8个人；冰箱里的4瓶是弟弟的不能用，所以买8瓶。",
+   "en": "Of the ten people, Tanaka and Kinoshita can't come, so eight; the four in the fridge are her brother's, so he buys eight."
+  },
+  "wrong": [
+   {
+    "zh": "4瓶是冰箱里弟弟的果汁，不能用。",
+    "en": "Four is the number in the fridge, and those are her brother's."
+   },
+   {
+    "zh": "6瓶是男人想用冰箱里的4瓶时的数，但那是弟弟的。",
+    "en": "Six assumes using the four in the fridge, but they're her brother's."
+   },
+   null,
+   {
+    "zh": "10瓶是一开始的人数，后来知道有两个人来不了。",
+    "en": "Ten was the first head count; two people can't come."
+   }
+  ],
+  "traps": [
+   "someone-else",
+   "condition-conflict",
+   "number"
+  ]
+ },
+ {
+  "id": "n4-ck-107",
+  "type": "kadai",
+  "scene": "うちで お母さんと 男の 子が 話しています。",
+  "question": "男の 子は まず 何を しますか。",
+  "lines": [
+   [
+    "F",
+    "たけし、きょう おばあちゃんが 来るから、手つだって くれる？ まず スーパーで ぎゅうにゅうと たまごを 買って きて。"
+   ],
+   [
+    "M",
+    "いいよ。あ、でも その 前に へやの そうじ しなくて いい？"
+   ],
+   [
+    "F",
+    "へやは きのう お父さんが して くれたから、だいじょうぶ。"
+   ],
+   [
+    "M",
+    "そっか。じゃあ、すぐ 買い物に 行って くるね。"
+   ],
+   [
+    "F",
+    "あ、待って。スーパーは 10時からだから、まだ 開いて ないわ。先に にわの 花に 水を やって くれる？ りょうりは お母さんが するから。"
+   ],
+   [
+    "M",
+    "わかった。"
+   ]
+  ],
+  "options": [
+   "へやを そうじする",
+   "買い物に 行く",
+   "花に 水を やる",
+   "りょうりを 作る"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "家里，妈妈和男孩在说话。",
+    "question": "男孩首先要做什么？",
+    "lines": [
+     "小武，今天奶奶要来，能帮个忙吗？先去超市买牛奶和鸡蛋回来。",
+     "好啊。啊，不过在那之前不用打扫房间吗？",
+     "房间昨天爸爸已经打扫过了，没问题。",
+     "这样啊。那我马上去买东西。",
+     "啊，等一下。超市十点才开门，现在还没开呢。你先给院子里的花浇水吧？饭妈妈来做。",
+     "知道了。"
+    ],
+    "options": [
+     "打扫房间",
+     "去买东西",
+     "给花浇水",
+     "做饭"
+    ]
+   },
+   "en": {
+    "scene": "A mother and her son are talking at home.",
+    "question": "What will the boy do first?",
+    "lines": [
+     "Takeshi, Grandma's coming today, so can you help? First go to the supermarket and get milk and eggs.",
+     "Sure. Oh, but shouldn't I clean my room before that?",
+     "Dad cleaned the room yesterday, so it's fine.",
+     "OK. Then I'll go shopping right away.",
+     "Oh, wait. The supermarket opens at ten, so it isn't open yet. Can you water the flowers in the garden first? I'll do the cooking.",
+     "Got it."
+    ],
+    "options": [
+     "Clean the room",
+     "Go shopping",
+     "Water the flowers",
+     "Cook"
+    ]
+   }
+  },
+  "why": {
+   "zh": "超市十点才开门，妈妈让他「先に にわの 花に 水を やって」。",
+   "en": "The supermarket isn't open until ten, so she asks him to water the garden flowers first."
+  },
+  "wrong": [
+   {
+    "zh": "房间昨天爸爸已经打扫过了。",
+    "en": "Dad already cleaned the room yesterday."
+   },
+   {
+    "zh": "超市十点才开门，买东西放在浇花之后。",
+    "en": "The supermarket opens at ten, so shopping comes after watering."
+   },
+   null,
+   {
+    "zh": "做饭是妈妈来做。",
+    "en": "His mother will do the cooking."
+   }
+  ],
+  "traps": [
+   "done-already",
+   "not-possible",
+   "someone-else"
+  ]
+ },
+ {
+  "id": "n4-ck-108",
+  "type": "kadai",
+  "scene": "映画館で 男の 学生と 女の 学生が 話しています。",
+  "question": "二人で いくら はらいますか。",
+  "lines": [
+   [
+    "M",
+    "大人は 1800円で、学生は 1200円だって。"
+   ],
+   [
+    "F",
+    "わたしたち、二人とも 学生だから、2400円だね。"
+   ],
+   [
+    "M",
+    "あっ、ぼく、がくせいしょうを 家に わすれちゃった。"
+   ],
+   [
+    "F",
+    "えっ、じゃあ、学生の ねだんで 買えないね。"
+   ],
+   [
+    "M",
+    "うん、ごめん。ぼくは 大人の ねだんで 買うよ。"
+   ],
+   [
+    "F",
+    "しかたないね。わたしは がくせいしょう、持ってるから だいじょうぶ。"
+   ]
+  ],
+  "options": [
+   "1800円",
+   "2400円",
+   "3000円",
+   "3600円"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "电影院里一个男学生和一个女学生在说话。",
+    "question": "两个人一共付多少钱？",
+    "lines": [
+     "说是成人1800日元，学生1200日元。",
+     "我们俩都是学生，那就是2400日元。",
+     "啊，我把学生证忘在家里了。",
+     "诶，那就不能按学生价买了。",
+     "嗯，对不起。我按成人价买。",
+     "没办法。我带着学生证，没问题。"
+    ],
+    "options": [
+     "1800日元",
+     "2400日元",
+     "3000日元",
+     "3600日元"
+    ]
+   },
+   "en": {
+    "scene": "A male student and a female student are talking at a cinema.",
+    "question": "How much will the two of them pay altogether?",
+    "lines": [
+     "It says adults are 1,800 yen and students 1,200.",
+     "We're both students, so that's 2,400 yen.",
+     "Oh no, I left my student ID at home.",
+     "What? Then you can't get the student price.",
+     "Yeah, sorry. I'll pay the adult price.",
+     "Can't be helped. I've got my student ID, so I'm fine."
+    ],
+    "options": [
+     "1,800 yen",
+     "2,400 yen",
+     "3,000 yen",
+     "3,600 yen"
+    ]
+   }
+  },
+  "why": {
+   "zh": "男学生忘了学生证，按成人价1800日元；女学生按学生价1200日元，一共3000日元。",
+   "en": "He forgot his student ID, so he pays the adult 1,800 yen; she pays the student 1,200 yen — 3,000 yen together."
+  },
+  "wrong": [
+   {
+    "zh": "1800日元只是男学生一个人的票价。",
+    "en": "1,800 yen is only his ticket."
+   },
+   {
+    "zh": "2400日元是两人都按学生价，但男学生忘了学生证。",
+    "en": "2,400 yen is two student tickets, but he forgot his ID."
+   },
+   null,
+   {
+    "zh": "3600日元是两人都按成人价，但女学生带着学生证。",
+    "en": "3,600 yen is two adult tickets, but she has her ID."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "number"
+  ]
+ },
+ {
+  "id": "n4-ck-109",
+  "type": "kadai",
+  "scene": "店で 女の 人と 店の 人が 話しています。",
+  "question": "ソファは 何日に とどきますか。",
+  "lines": [
+   [
+    "M",
+    "ありがとうございました。ソファは 15日に お家に おとどけします。"
+   ],
+   [
+    "F",
+    "15日は 出かけて いて、家に いないんです。16日は どうですか。"
+   ],
+   [
+    "M",
+    "16日は 日曜日なので、はいたつが できないんです。"
+   ],
+   [
+    "F",
+    "じゃあ、19日に おねがいします。"
+   ],
+   [
+    "M",
+    "19日ですね。……もうしわけ ございません。19日は もう よやくが いっぱいで……。その つぎの 日でしたら だいじょうぶですが。"
+   ],
+   [
+    "F",
+    "じゃあ、その 日で おねがいします。"
+   ]
+  ],
+  "options": [
+   "15日",
+   "16日",
+   "19日",
+   "20日"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "店里一个女人和店员在说话。",
+    "question": "沙发几号送到？",
+    "lines": [
+     "谢谢惠顾。沙发15号送到您家。",
+     "15号我出门，不在家。16号可以吗？",
+     "16号是星期天，不能配送。",
+     "那就请19号送。",
+     "19号是吧。……非常抱歉，19号已经约满了。再下一天的话可以。",
+     "那就那天吧。"
+    ],
+    "options": [
+     "15号",
+     "16号",
+     "19号",
+     "20号"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a shop assistant are talking in a shop.",
+    "question": "On what date will the sofa be delivered?",
+    "lines": [
+     "Thank you very much. We'll deliver the sofa to your home on the 15th.",
+     "I'll be out on the 15th, so I won't be home. How about the 16th?",
+     "The 16th is a Sunday, so we can't deliver.",
+     "Then the 19th, please.",
+     "The 19th... I'm very sorry, the 19th is already full. The day after that would be fine, though.",
+     "Then that day, please."
+    ],
+    "options": [
+     "The 15th",
+     "The 16th",
+     "The 19th",
+     "The 20th"
+    ]
+   }
+  },
+  "why": {
+   "zh": "19号已经满了，店员说「その つぎの 日」可以，女人同意了，也就是20号。",
+   "en": "The 19th is full; the assistant offers the next day, the 20th, and she accepts."
+  },
+  "wrong": [
+   {
+    "zh": "15号女人不在家。",
+    "en": "She won't be home on the 15th."
+   },
+   {
+    "zh": "16号是星期天，不能配送。",
+    "en": "The 16th is a Sunday; no deliveries."
+   },
+   {
+    "zh": "19号已经约满了。",
+    "en": "The 19th is already full."
+   },
+   null
+  ],
+  "traps": [
+   "not-possible",
+   "condition-conflict",
+   "number"
+  ]
+ },
+ {
+  "id": "n4-ck-110",
+  "type": "kadai",
+  "scene": "女の 人と 男の 人が 電話で 話しています。",
+  "question": "二人は あした 何時に 駅で 会いますか。",
+  "lines": [
+   [
+    "F",
+    "あしたの 映画、10時半からだよね。駅で 10時に 会おうか。"
+   ],
+   [
+    "M",
+    "駅から 映画館まで 歩いて 20分 かかるよ。チケットも 買わなきゃ いけないし、10時じゃ おそいと 思う。"
+   ],
+   [
+    "F",
+    "そっか。じゃあ、9時半は どう？"
+   ],
+   [
+    "M",
+    "うーん、9時半は ちょっと 早いなあ。チケットは 今夜 インターネットで 買って おくよ。"
+   ],
+   [
+    "F",
+    "ありがとう。じゃあ、10時より 20分 早く 会おう。"
+   ],
+   [
+    "M",
+    "うん、そう しよう。"
+   ]
+  ],
+  "options": [
+   "9時半",
+   "9時40分",
+   "10時",
+   "10時半"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在打电话。",
+    "question": "两个人明天几点在车站见面？",
+    "lines": [
+     "明天的电影是10点半开始吧。10点在车站见吧？",
+     "从车站走到电影院要20分钟。还得买票，10点我觉得太晚了。",
+     "这样啊。那9点半怎么样？",
+     "嗯……9点半有点早。票我今晚在网上买好。",
+     "谢谢。那就比10点早20分钟见吧。",
+     "嗯，就这样。"
+    ],
+    "options": [
+     "9点半",
+     "9点40分",
+     "10点",
+     "10点半"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking on the phone.",
+    "question": "What time will the two of them meet at the station tomorrow?",
+    "lines": [
+     "Tomorrow's film starts at ten thirty, right? Shall we meet at the station at ten?",
+     "It's a twenty-minute walk from the station to the cinema. And we have to buy tickets, so I think ten is too late.",
+     "Right. Then how about nine thirty?",
+     "Hmm, nine thirty's a bit early. I'll buy the tickets online tonight.",
+     "Thanks. Then let's meet twenty minutes earlier than ten.",
+     "Yeah, let's do that."
+    ],
+    "options": [
+     "9:30",
+     "9:40",
+     "10:00",
+     "10:30"
+    ]
+   }
+  },
+  "why": {
+   "zh": "票提前在网上买好，所以比10点早20分钟，9点40分见面。",
+   "en": "He'll buy the tickets online, so they meet 20 minutes earlier than ten — at 9:40."
+  },
+  "wrong": [
+   {
+    "zh": "9点半男人觉得「ちょっと 早い」。",
+    "en": "He thinks 9:30 is a bit early."
+   },
+   null,
+   {
+    "zh": "10点要走20分钟又要买票，男人说太晚了。",
+    "en": "Ten is too late with the 20-minute walk and buying tickets."
+   },
+   {
+    "zh": "10点半是电影开始的时间。",
+    "en": "10:30 is when the film starts."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "number"
+  ]
+ },
+ {
+  "id": "n4-ck-111",
+  "type": "kadai",
+  "scene": "男の 人と 女の 人が 話しています。",
+  "question": "男の 人は あした 何を 着て 行きますか。",
+  "lines": [
+   [
+    "M",
+    "あしたの 会社の バーベキュー、スーツで 行った ほうが いいかな。"
+   ],
+   [
+    "F",
+    "スーツは いらないよ。みんな ふだんの 服で 来るから。"
+   ],
+   [
+    "M",
+    "じゃあ、Tシャツで いいね。"
+   ],
+   [
+    "F",
+    "うーん、川の 近くは 夜 さむく なるし、むしも 多いから、長い そでの ほうが いいよ。"
+   ],
+   [
+    "M",
+    "じゃあ、セーターは？"
+   ],
+   [
+    "F",
+    "セーターは あついよ。まだ 9月だから。"
+   ],
+   [
+    "M",
+    "そうだね。じゃあ、長そでの シャツに するよ。"
+   ]
+  ],
+  "options": [
+   "スーツ",
+   "セーター",
+   "Tシャツ",
+   "長そでの シャツ"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. The same young man in all four panels, standing facing the viewer, full body. He is wearing a business suit with a jacket and a necktie.",
+   "Simple black-and-white line drawing, no text. The same young man in all four panels, standing facing the viewer, full body. He is wearing a thick, chunky knitted sweater with long sleeves.",
+   "Simple black-and-white line drawing, no text. The same young man in all four panels, standing facing the viewer, full body. He is wearing a plain T-shirt with short sleeves (bare forearms clearly visible).",
+   "Simple black-and-white line drawing, no text. The same young man in all four panels, standing facing the viewer, full body. He is wearing a plain button-up shirt with long sleeves down to the wrists, no jacket, no tie."
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "男人明天穿什么去？",
+    "lines": [
+     "明天公司的烧烤，穿西装去比较好吧？",
+     "不用穿西装啦。大家都穿平时的衣服来。",
+     "那穿T恤就行了吧。",
+     "嗯……河边晚上会变冷，虫子也多，还是穿长袖的好。",
+     "那毛衣呢？",
+     "毛衣太热了。现在才9月。",
+     "也是。那我穿长袖衬衫。"
+    ],
+    "options": [
+     "西装",
+     "毛衣",
+     "T恤",
+     "长袖衬衫"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "What will the man wear tomorrow?",
+    "lines": [
+     "For the company barbecue tomorrow, should I go in a suit?",
+     "You don't need a suit. Everyone comes in ordinary clothes.",
+     "Then a T-shirt is fine.",
+     "Hmm, it gets cold by the river at night and there are lots of insects, so long sleeves are better.",
+     "Then what about a sweater?",
+     "A sweater's too hot. It's still September.",
+     "True. I'll go with a long-sleeved shirt, then."
+    ],
+    "options": [
+     "A suit",
+     "A sweater",
+     "A T-shirt",
+     "A long-sleeved shirt"
+    ]
+   }
+  },
+  "why": {
+   "zh": "西装不需要，T恤袖子太短，毛衣太热，最后选了「長そでの シャツ」。",
+   "en": "No suit, a T-shirt has short sleeves, a sweater is too hot — so a long-sleeved shirt."
+  },
+  "wrong": [
+   {
+    "zh": "女人说「スーツは いらない」。",
+    "en": "She says a suit isn't needed."
+   },
+   {
+    "zh": "现在才9月，毛衣「あつい」。",
+    "en": "It's still September; a sweater is too hot."
+   },
+   {
+    "zh": "河边晚上冷、虫子多，要穿长袖，T恤不行。",
+    "en": "It's cold and buggy by the river, so long sleeves, not a T-shirt."
+   },
+   null
+  ],
+  "traps": [
+   "condition-conflict",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n4-ck-112",
+  "type": "kadai",
+  "scene": "駅の 前で 女の 人と 男の 人が 話しています。",
+  "question": "女の 人は どうやって 病院へ 行きますか。",
+  "lines": [
+   [
+    "F",
+    "すみません、さくら病院へ 行きたいんですが、バスは どこから 乗れますか。"
+   ],
+   [
+    "M",
+    "バスは あそこから 出ますが、さっき 出た ところなので、つぎは 30分 あとですよ。"
+   ],
+   [
+    "F",
+    "30分ですか。2時の よやくに 間に合いません。タクシーは ありますか。"
+   ],
+   [
+    "M",
+    "タクシーは 今 20人ぐらい 待って いますね。あそこに 自転車を かす 店も ありますよ。"
+   ],
+   [
+    "F",
+    "わたし、自転車には 乗れないんです。"
+   ],
+   [
+    "M",
+    "じゃあ、歩いて 行っても 15分ぐらいですよ。この 道を まっすぐです。"
+   ],
+   [
+    "F",
+    "15分なら 間に合いますね。そう します。"
+   ]
+  ],
+  "options": [
+   "歩いて 行く",
+   "バスで 行く",
+   "タクシーで 行く",
+   "自転車で 行く"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. The same woman in all four panels, seen from the side. She is walking along a pavement on foot.",
+   "Simple black-and-white line drawing, no text. The same woman in all four panels, seen from the side. She is stepping up into the front door of a city bus.",
+   "Simple black-and-white line drawing, no text. The same woman in all four panels, seen from the side. She is getting into the back seat of a taxi through its open door.",
+   "Simple black-and-white line drawing, no text. The same woman in all four panels, seen from the side. She is riding a bicycle."
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "车站前一个女人和一个男人在说话。",
+    "question": "女人怎么去医院？",
+    "lines": [
+     "请问，我想去樱花医院，在哪里坐公交车？",
+     "公交车从那边发车，不过刚走了一班，下一班要30分钟以后。",
+     "30分钟啊。赶不上2点的预约了。有出租车吗？",
+     "出租车现在大概有20个人在等。那边也有租自行车的店。",
+     "我不会骑自行车。",
+     "那走路去也就15分钟左右。沿这条路一直走。",
+     "15分钟的话来得及。就这样吧。"
+    ],
+    "options": [
+     "走路去",
+     "坐公交车去",
+     "坐出租车去",
+     "骑自行车去"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking in front of a station.",
+    "question": "How will the woman get to the hospital?",
+    "lines": [
+     "Excuse me, I want to go to Sakura Hospital. Where can I get the bus?",
+     "The bus leaves from over there, but one just left, so the next is in thirty minutes.",
+     "Thirty minutes? I won't make my two o'clock appointment. Are there taxis?",
+     "About twenty people are waiting for taxis right now. There's also a shop over there that rents bicycles.",
+     "I can't ride a bicycle.",
+     "Well, it's only about fifteen minutes on foot. Straight down this road.",
+     "Fifteen minutes — then I'll make it. I'll do that."
+    ],
+    "options": [
+     "On foot",
+     "By bus",
+     "By taxi",
+     "By bicycle"
+    ]
+   }
+  },
+  "why": {
+   "zh": "公交车要等30分钟赶不上，出租车排长队，自行车不会骑，走路15分钟来得及，所以走路去。",
+   "en": "The bus is 30 minutes away, the taxi queue is long, she can't ride a bike — walking takes 15 minutes, so she walks."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "下一班公交车30分钟以后，赶不上2点的预约。",
+    "en": "The next bus is in 30 minutes; she'd miss her 2:00 appointment."
+   },
+   {
+    "zh": "出租车有20个人左右在等。",
+    "en": "About 20 people are waiting for taxis."
+   },
+   {
+    "zh": "女人「自転車には 乗れない」。",
+    "en": "She can't ride a bicycle."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n4-ck-113",
+  "type": "kadai",
+  "scene": "店で 女の 人と 男の 人が 話しています。",
+  "question": "男の 人は まず 何を しますか。",
+  "lines": [
+   [
+    "F",
+    "お店を 開ける 前に、テーブルを ふいて、おさらを 洗って、店の 前を そうじして ください。"
+   ],
+   [
+    "M",
+    "はい。外の 花に 水も やりましょうか。"
+   ],
+   [
+    "F",
+    "きょうは 午後から 雨が ふるそうだから、水は いいですよ。"
+   ],
+   [
+    "M",
+    "分かりました。じゃあ、まず テーブルを ふきます。"
+   ],
+   [
+    "F",
+    "あ、テーブルは さっき わたしが ふきました。それから、おさらは あとで まとめて 洗いますから、先に 店の 前の そうじを おねがいします。"
+   ],
+   [
+    "M",
+    "はい、分かりました。"
+   ]
+  ],
+  "options": [
+   "テーブルを ふく",
+   "おさらを 洗う",
+   "店の 前を そうじする",
+   "花に 水を やる"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. The same young male waiter wearing an apron in all four panels. He is wiping a table top with a cloth.",
+   "Simple black-and-white line drawing, no text. The same young male waiter wearing an apron in all four panels. He is washing plates at a kitchen sink.",
+   "Simple black-and-white line drawing, no text. The same young male waiter wearing an apron in all four panels. He is sweeping the ground outside a shop entrance with a broom.",
+   "Simple black-and-white line drawing, no text. The same young male waiter wearing an apron in all four panels. He is watering potted flowers with a watering can."
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "店里一个女人和一个男人在说话。",
+    "question": "男人首先做什么？",
+    "lines": [
+     "开店之前，请擦桌子、洗盘子、打扫店门口。",
+     "好的。外面的花也浇点水吗？",
+     "听说今天下午开始下雨，水就不用浇了。",
+     "知道了。那我先擦桌子。",
+     "啊，桌子刚才我擦过了。还有，盘子之后一起洗，请先打扫店门口。",
+     "好的，知道了。"
+    ],
+    "options": [
+     "擦桌子",
+     "洗盘子",
+     "打扫店门口",
+     "给花浇水"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking in a restaurant.",
+    "question": "What will the man do first?",
+    "lines": [
+     "Before we open, please wipe the tables, wash the plates and clean in front of the shop.",
+     "Sure. Shall I water the flowers outside too?",
+     "It's supposed to rain this afternoon, so no need to water them.",
+     "OK. Then I'll wipe the tables first.",
+     "Oh, I wiped the tables just now. And we'll wash the plates all together later, so please sweep the front of the shop first.",
+     "OK, got it."
+    ],
+    "options": [
+     "Wipe the tables",
+     "Wash the plates",
+     "Clean in front of the shop",
+     "Water the flowers"
+    ]
+   }
+  },
+  "why": {
+   "zh": "桌子女人已经擦过了，盘子之后一起洗，花不用浇，女人说「先に 外を おねがいします」。",
+   "en": "She already wiped the tables, the plates are for later, the flowers don't need water — she asks him to do the outside first."
+  },
+  "wrong": [
+   {
+    "zh": "桌子「さっき わたしが ふきました」。",
+    "en": "She already wiped the tables."
+   },
+   {
+    "zh": "盘子「あとで まとめて 洗います」。",
+    "en": "The plates will be washed together later."
+   },
+   null,
+   {
+    "zh": "下午要下雨，花「水は いい」。",
+    "en": "It will rain, so the flowers don't need watering."
+   }
+  ],
+  "traps": [
+   "done-already",
+   "someone-else",
+   "later",
+   "order"
+  ]
+ },
+ {
+  "id": "n4-ck-114",
+  "type": "kadai",
+  "scene": "女の 人と 男の 人が 話しています。",
+  "question": "女の 人は 何を 持って いきますか。",
+  "lines": [
+   [
+    "F",
+    "あした 山田さんの おみまいに 行くんだけど、花を 持って いこうかな。"
+   ],
+   [
+    "M",
+    "あの 病院は、花を 持って 入っちゃ いけないんだって。"
+   ],
+   [
+    "F",
+    "そうなんだ。じゃあ、ケーキは？"
+   ],
+   [
+    "M",
+    "山田さん、今は 食べる 物に 気を つけなければ いけないって 言ってたよ。"
+   ],
+   [
+    "F",
+    "じゃあ、くだものも だめだね。何が いいかな。"
+   ],
+   [
+    "M",
+    "毎日 ひまで こまってるって 言ってたから、本は どう？"
+   ],
+   [
+    "F",
+    "いいね。じゃあ、山田さんが すきそうな 本を 買って いく。"
+   ]
+  ],
+  "options": [
+   "花",
+   "本",
+   "ケーキ",
+   "くだもの"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A bouquet of flowers wrapped in paper, lying on a plain table. Nothing else.",
+   "Simple black-and-white line drawing, no text. Two hardcover books stacked on a plain table. Nothing else.",
+   "Simple black-and-white line drawing, no text. A whole round cake on a plate, on a plain table. Nothing else.",
+   "Simple black-and-white line drawing, no text. A basket of fruit (apples and bananas) on a plain table. Nothing else."
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在说话。",
+    "question": "女人带什么去？",
+    "lines": [
+     "明天我要去探望山田，带花去吧。",
+     "听说那家医院不能带花进去。",
+     "这样啊。那蛋糕呢？",
+     "山田说他现在吃东西得注意。",
+     "那水果也不行了。带什么好呢？",
+     "他说每天闲得发慌，带书怎么样？",
+     "好主意。那我买本山田可能喜欢的书带去。"
+    ],
+    "options": [
+     "花",
+     "书",
+     "蛋糕",
+     "水果"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking.",
+    "question": "What will the woman take with her?",
+    "lines": [
+     "I'm visiting Yamada-san in hospital tomorrow. Maybe I'll take flowers.",
+     "I heard you're not allowed to bring flowers into that hospital.",
+     "Really? Then what about a cake?",
+     "Yamada-san said he has to be careful about what he eats right now.",
+     "Then fruit's out too. What would be good?",
+     "He said he's bored stiff every day, so how about a book?",
+     "Good idea. I'll buy a book he'd probably like and take it."
+    ],
+    "options": [
+     "Flowers",
+     "A book",
+     "A cake",
+     "Fruit"
+    ]
+   }
+  },
+  "why": {
+   "zh": "医院不能带花，吃的东西要注意，所以蛋糕和水果都不行，最后决定带书。",
+   "en": "Flowers aren't allowed and he has to watch what he eats, so no cake or fruit — she'll take a book."
+  },
+  "wrong": [
+   {
+    "zh": "那家医院不能带花进去。",
+    "en": "Flowers aren't allowed in that hospital."
+   },
+   null,
+   {
+    "zh": "山田吃东西要注意，蛋糕不合适。",
+    "en": "He has to be careful about food, so no cake."
+   },
+   {
+    "zh": "女人自己说「くだものも だめ」。",
+    "en": "She herself says fruit is out too."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n4-ck-115",
+  "type": "kadai",
+  "scene": "会社で 女の 人と 男の 人が 話しています。",
+  "question": "男の 人は あした 何を 持って いきますか。",
+  "lines": [
+   [
+    "F",
+    "あしたの 工場見学ですが、お昼ご飯は 工場の 食堂で 食べられますから、おべんとうは いりません。"
+   ],
+   [
+    "M",
+    "分かりました。カメラは 持って いっても いいですか。"
+   ],
+   [
+    "F",
+    "工場の 中では 写真を とっては いけないんです。"
+   ],
+   [
+    "M",
+    "そうですか。じゃあ、カメラは おいて いきます。メモを する ノートは いりますか。"
+   ],
+   [
+    "F",
+    "ノートは 工場で もらえますよ。それから、中は 歩く ところが 多いので、運動ぐつを 持って きて ください。工場に 着いたら 運動ぐつに かえて もらいます。"
+   ],
+   [
+    "M",
+    "はい、分かりました。"
+   ]
+  ],
+  "options": [
+   "おべんとう",
+   "カメラ",
+   "ノート",
+   "運動ぐつ"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A plastic lunch box with its lid closed, on a plain table. Nothing else.",
+   "Simple black-and-white line drawing, no text. A compact camera on a plain table. Nothing else.",
+   "Simple black-and-white line drawing, no text. A closed spiral notebook on a plain table. Nothing else.",
+   "Simple black-and-white line drawing, no text. A pair of sports sneakers on a plain table. Nothing else."
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个女人和一个男人在说话。",
+    "question": "男人明天带什么去？",
+    "lines": [
+     "关于明天参观工厂，午饭可以在工厂食堂吃，所以不用带便当。",
+     "知道了。可以带相机去吗？",
+     "工厂里面不能拍照。",
+     "是吗。那相机就不带了。记笔记用的本子需要吗？",
+     "笔记本在工厂可以领到。还有，里面要走很多路，请带运动鞋来。到了工厂请换上运动鞋。",
+     "好的，知道了。"
+    ],
+    "options": [
+     "便当",
+     "相机",
+     "笔记本",
+     "运动鞋"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking at the office.",
+    "question": "What will the man take tomorrow?",
+    "lines": [
+     "About tomorrow's factory visit: you can eat lunch in the factory canteen, so you don't need a packed lunch.",
+     "OK. May I bring a camera?",
+     "You're not allowed to take photos inside the factory.",
+     "I see. Then I'll leave the camera. Do I need a notebook for notes?",
+     "You'll get a notebook at the factory. And there's a lot of walking inside, so please bring sneakers. You'll change into them when we get there.",
+     "OK, got it."
+    ],
+    "options": [
+     "A packed lunch",
+     "A camera",
+     "A notebook",
+     "Sneakers"
+    ]
+   }
+  },
+  "why": {
+   "zh": "午饭在食堂吃，不能拍照，笔记本在工厂领，只需要带「運動ぐつ」。",
+   "en": "Lunch is in the canteen, no photos, notebooks are handed out — he only needs to bring sneakers."
+  },
+  "wrong": [
+   {
+    "zh": "午饭在工厂食堂吃，便当「いりません」。",
+    "en": "Lunch is in the canteen; no packed lunch needed."
+   },
+   {
+    "zh": "工厂里不能拍照，男人说相机「おいて いきます」。",
+    "en": "No photos inside, so he leaves the camera."
+   },
+   {
+    "zh": "笔记本「工場で もらえます」。",
+    "en": "He'll get a notebook at the factory."
+   },
+   null
+  ],
+  "traps": [
+   "not-possible",
+   "someone-else"
+  ]
+ },
+ {
+  "id": "n4-ck-116",
+  "type": "kadai",
+  "scene": "店で 女の 人と 店の 人が 話しています。",
+  "question": "女の 人は どの かばんを 買いますか。",
+  "lines": [
+   [
+    "F",
+    "すみません、仕事で 使う かばんが ほしいんですが。"
+   ],
+   [
+    "M",
+    "こちらの 大きい かばんは いかがですか。パソコンも 入りますよ。"
+   ],
+   [
+    "F",
+    "ちょっと 重いですね。毎日 1時間ぐらい 持って 歩くので、もう 少し かるい ほうが……。"
+   ],
+   [
+    "M",
+    "では、こちらの 小さい かばんは いかがでしょうか。とても かるいですよ。"
+   ],
+   [
+    "F",
+    "でも、それだと パソコンが 入りませんね。"
+   ],
+   [
+    "M",
+    "でしたら、この かたに かける かばんは どうですか。パソコンも 入って、かるいです。リュックも ございますが。"
+   ],
+   [
+    "F",
+    "リュックは 仕事の 服に 合わないので……。じゃあ、かたに かける ほうに します。"
+   ]
+  ],
+  "options": [
+   "リュック",
+   "大きい かばん",
+   "かたに かける かばん",
+   "小さい かばん"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A backpack with two shoulder straps, standing on a plain table. Nothing else.",
+   "Simple black-and-white line drawing, no text. A large, boxy briefcase with a short top handle, standing on a plain table. Nothing else.",
+   "Simple black-and-white line drawing, no text. A medium-sized bag with one long shoulder strap, standing on a plain table. Nothing else.",
+   "Simple black-and-white line drawing, no text. A very small handbag with a short handle, standing on a plain table. Nothing else."
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "店里一个女人和店员在说话。",
+    "question": "女人买哪个包？",
+    "lines": [
+     "请问，我想要一个上班用的包。",
+     "这个大包怎么样？电脑也能放进去。",
+     "有点重啊。我每天要拎着走一个小时左右，想要轻一点的……",
+     "那这个小包怎么样？非常轻。",
+     "可是那个放不下电脑。",
+     "那这个挎在肩上的包怎么样？能放电脑，也很轻。也有双肩包。",
+     "双肩包和上班的衣服不搭……那我要挎肩的这个。"
+    ],
+    "options": [
+     "双肩包",
+     "大包",
+     "挎肩的包",
+     "小包"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a shop assistant are talking in a shop.",
+    "question": "Which bag will the woman buy?",
+    "lines": [
+     "Excuse me, I'm looking for a bag for work.",
+     "How about this large bag? It holds a computer too.",
+     "It's a bit heavy. I carry it for about an hour every day, so something a little lighter...",
+     "Then how about this small bag? It's very light.",
+     "But a computer won't fit in that.",
+     "In that case, how about this shoulder bag? It holds a computer and it's light. We also have backpacks.",
+     "A backpack doesn't go with my work clothes... I'll take the shoulder bag."
+    ],
+    "options": [
+     "A backpack",
+     "The large bag",
+     "The shoulder bag",
+     "The small bag"
+    ]
+   }
+  },
+  "why": {
+   "zh": "大包太重，小包放不下电脑，双肩包和上班的衣服不搭，最后买「かたに かける かばん」。",
+   "en": "The large bag is heavy, the small one won't fit a computer, a backpack doesn't suit work clothes — so the shoulder bag."
+  },
+  "wrong": [
+   {
+    "zh": "双肩包「仕事の 服に 合わない」。",
+    "en": "A backpack doesn't go with her work clothes."
+   },
+   {
+    "zh": "大包「ちょっと 重い」，每天要拎一个小时。",
+    "en": "The large bag is too heavy to carry for an hour a day."
+   },
+   null,
+   {
+    "zh": "小包放不下电脑。",
+    "en": "A computer won't fit in the small bag."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n4-ck-117",
+  "type": "kadai",
+  "scene": "レストランで 男の 人と 女の 人が 話しています。",
+  "question": "男の 人は 何を 食べますか。",
+  "lines": [
+   [
+    "M",
+    "何に しようかな。この カレー、おいしそうだね。"
+   ],
+   [
+    "F",
+    "ここの カレー、すごく からいよ。からいの、だめでしょう？"
+   ],
+   [
+    "M",
+    "うん、からいのは ちょっと……。じゃあ、ラーメンに しようかな。"
+   ],
+   [
+    "F",
+    "あ、ラーメンは 夜だけだって。ほら、ここに 書いて あるよ。"
+   ],
+   [
+    "M",
+    "ほんとうだ。じゃあ、すしか サンドイッチだね。"
+   ],
+   [
+    "F",
+    "わたしは すしに する。いっしょに する？"
+   ],
+   [
+    "M",
+    "すしは きのうの 夜 食べたから、きょうは サンドイッチに するよ。"
+   ]
+  ],
+  "options": [
+   "サンドイッチ",
+   "カレー",
+   "ラーメン",
+   "すし"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A plate of sandwiches cut into triangles on a plain table. Nothing else.",
+   "Simple black-and-white line drawing, no text. A plate of curry and rice on a plain table. Nothing else.",
+   "Simple black-and-white line drawing, no text. A bowl of ramen noodles with chopsticks resting on it, on a plain table. Nothing else.",
+   "Simple black-and-white line drawing, no text. A plate of nigiri sushi on a plain table. Nothing else."
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "餐厅里一个男人和一个女人在说话。",
+    "question": "男人吃什么？",
+    "lines": [
+     "吃什么好呢。这个咖喱看起来很好吃。",
+     "这家的咖喱很辣哦。你不能吃辣吧？",
+     "嗯，辣的有点……那吃拉面吧。",
+     "啊，拉面只有晚上才有。你看，这里写着呢。",
+     "真的。那就是寿司或者三明治了。",
+     "我吃寿司。你也一起吗？",
+     "寿司昨天晚上吃过了，今天吃三明治。"
+    ],
+    "options": [
+     "三明治",
+     "咖喱",
+     "拉面",
+     "寿司"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking in a restaurant.",
+    "question": "What will the man eat?",
+    "lines": [
+     "What should I have? This curry looks good.",
+     "The curry here is really spicy. You can't do spicy, right?",
+     "Yeah, spicy's not for me... Then maybe ramen.",
+     "Oh, ramen is evenings only. Look, it says so here.",
+     "So it does. Then it's sushi or sandwiches.",
+     "I'm having sushi. Want the same?",
+     "I had sushi last night, so today I'll have sandwiches."
+    ],
+    "options": [
+     "Sandwiches",
+     "Curry",
+     "Ramen",
+     "Sushi"
+    ]
+   }
+  },
+  "why": {
+   "zh": "咖喱太辣，拉面只有晚上有，寿司昨晚吃过了，所以吃三明治。",
+   "en": "The curry is too spicy, ramen is evenings only, he had sushi last night — so sandwiches."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "咖喱「すごく からい」，男人不能吃辣。",
+    "en": "The curry is very spicy, and he can't handle spicy food."
+   },
+   {
+    "zh": "拉面「夜だけ」。",
+    "en": "Ramen is evenings only."
+   },
+   {
+    "zh": "寿司是女人点的，男人昨晚吃过了。",
+    "en": "Sushi is her order; he had it last night."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "done-already"
+  ]
+ },
+ {
+  "id": "n4-ck-118",
+  "type": "kadai",
+  "scene": "家で 女の 人と 男の 人が 話しています。",
+  "question": "男の 人は 何を 買って きますか。",
+  "lines": [
+   [
+    "F",
+    "ゆうたが ねつを 出したの。くすりやで かぜの くすりを 買って きて くれない？"
+   ],
+   [
+    "M",
+    "いいよ。ねつを はかる ものも いる？"
+   ],
+   [
+    "F",
+    "それは 家に あるから だいじょうぶ。……あ、やっぱり、くすりは いいや。これから 病院に つれて いくから、病院で もらう。"
+   ],
+   [
+    "M",
+    "そうか。じゃあ、何も 買わなくて いい？"
+   ],
+   [
+    "F",
+    "マスクが もう ないから、それを 買って きて。"
+   ],
+   [
+    "M",
+    "分かった。スポーツドリンクも 買って こようか。"
+   ],
+   [
+    "F",
+    "それは きのう 買ったのが まだ あるから いいよ。"
+   ]
+  ],
+  "options": [
+   "かぜの くすり",
+   "ねつを はかる もの",
+   "スポーツドリンク",
+   "マスク"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A small box of medicine tablets on a plain table. Nothing else.",
+   "Simple black-and-white line drawing, no text. A digital thermometer on a plain table. Nothing else.",
+   "Simple black-and-white line drawing, no text. A tall plastic sports-drink bottle with a sports cap, its label showing a simple drawing of a running shoe (no letters) on a plain table. Nothing else.",
+   "Simple black-and-white line drawing, no text. A folded disposable face mask on a plain table. Nothing else."
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "家里一个女人和一个男人在说话。",
+    "question": "男人买什么回来？",
+    "lines": [
+     "雄太发烧了。你能去药店买感冒药吗？",
+     "好啊。量体温的东西也要吗？",
+     "那个家里有，没关系。……啊，药还是算了。我现在带他去医院，在医院拿药。",
+     "这样啊。那什么都不用买了？",
+     "口罩已经没有了，买口罩回来吧。",
+     "知道了。运动饮料也买点回来吧？",
+     "那个昨天买的还有，不用了。"
+    ],
+    "options": [
+     "感冒药",
+     "体温计",
+     "运动饮料",
+     "口罩"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking at home.",
+    "question": "What will the man buy?",
+    "lines": [
+     "Yuta has a fever. Could you go to the pharmacy and buy some cold medicine?",
+     "Sure. Do we need a thermometer too?",
+     "We have one at home, so that's fine. ...Oh, actually, forget the medicine. I'm taking him to the doctor now, so we'll get some there.",
+     "I see. So I don't need to buy anything?",
+     "We're out of masks, so buy those.",
+     "OK. Should I get a sports drink too?",
+     "We still have some from yesterday, so no."
+    ],
+    "options": [
+     "Cold medicine",
+     "A thermometer",
+     "A sports drink",
+     "Masks"
+    ]
+   }
+  },
+  "why": {
+   "zh": "药在医院拿，体温计和运动饮料家里有，只需要买「マスク」。",
+   "en": "The medicine will come from the doctor, and they have a thermometer and drinks — he only needs to buy masks."
+  },
+  "wrong": [
+   {
+    "zh": "女人改口说药「病院で もらう」。",
+    "en": "She changes her mind: they'll get medicine at the hospital."
+   },
+   {
+    "zh": "体温计「家に ある」。",
+    "en": "They have a thermometer at home."
+   },
+   {
+    "zh": "运动饮料昨天买的还有。",
+    "en": "There's still some sports drink from yesterday."
+   },
+   null
+  ],
+  "traps": [
+   "done-already",
+   "someone-else",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n4-ck-119",
+  "type": "kadai",
+  "scene": "会社で 女の 人と 男の 人が 話しています。",
+  "question": "男の 人は これから 何を しますか。",
+  "lines": [
+   [
+    "F",
+    "木下さん、あしたの 会議が 3時からに かわったので、みなさんに メールで 知らせて ください。"
+   ],
+   [
+    "M",
+    "はい。会議の しりょうの コピーも しましょうか。"
+   ],
+   [
+    "F",
+    "コピーは さっき 山田さんが して くれました。"
+   ],
+   [
+    "M",
+    "じゃあ、すぐ メールを 書きます。"
+   ],
+   [
+    "F",
+    "あ、待って。メールの 前に、おきゃくさんに 3時で だいじょうぶか、電話で 聞いて ください。だめなら また 時間が かわりますから。"
+   ],
+   [
+    "M",
+    "分かりました。会議室の いすも ならべて おきましょうか。"
+   ],
+   [
+    "F",
+    "それは あしたの 朝で いいです。"
+   ]
+  ],
+  "options": [
+   "メールを 書く",
+   "おきゃくさんに 電話する",
+   "しりょうを コピーする",
+   "いすを ならべる"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. The same man in a shirt and tie in all four panels. He is sitting at a desk typing on a computer keyboard, looking at the screen.",
+   "Simple black-and-white line drawing, no text. The same man in a shirt and tie in all four panels. He is sitting at a desk holding a telephone receiver to his ear and talking.",
+   "Simple black-and-white line drawing, no text. The same man in a shirt and tie in all four panels. He is standing at a large photocopier, putting paper into it.",
+   "Simple black-and-white line drawing, no text. The same man in a shirt and tie in all four panels. He is lining up folding chairs in an empty room."
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个女人和一个男人在说话。",
+    "question": "男人接下来做什么？",
+    "lines": [
+     "木下，明天的会议改到3点开始了，请发邮件通知大家。",
+     "好的。会议资料也要复印吗？",
+     "复印刚才山田已经帮忙做了。",
+     "那我马上写邮件。",
+     "啊，等一下。发邮件之前，请先打电话问问客户3点行不行。不行的话时间还会变。",
+     "知道了。会议室的椅子也要摆好吗？",
+     "那个明天早上弄就行。"
+    ],
+    "options": [
+     "写邮件",
+     "给客户打电话",
+     "复印资料",
+     "摆椅子"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking at the office.",
+    "question": "What will the man do now?",
+    "lines": [
+     "Kinoshita-san, tomorrow's meeting has moved to three o'clock, so please let everyone know by email.",
+     "Sure. Shall I copy the meeting papers too?",
+     "Yamada-san already made the copies.",
+     "Then I'll write the email right away.",
+     "Oh, wait. Before the email, please phone the client and ask if three is OK. If not, the time will change again.",
+     "OK. Shall I set out the chairs in the meeting room too?",
+     "That can wait until tomorrow morning."
+    ],
+    "options": [
+     "Write the email",
+     "Phone the client",
+     "Copy the papers",
+     "Set out the chairs"
+    ]
+   }
+  },
+  "why": {
+   "zh": "女人说「メールの 前に」先打电话问客户3点行不行，所以男人先打电话。",
+   "en": "She says to phone the client before sending the email, so he phones first."
+  },
+  "wrong": [
+   {
+    "zh": "邮件要在给客户打完电话之后再发。",
+    "en": "The email comes after the phone call to the client."
+   },
+   null,
+   {
+    "zh": "复印山田已经做了。",
+    "en": "Yamada already made the copies."
+   },
+   {
+    "zh": "椅子「あしたの 朝で いい」。",
+    "en": "The chairs can wait until tomorrow morning."
+   }
+  ],
+  "traps": [
+   "order",
+   "done-already",
+   "someone-else",
+   "later"
+  ]
+ },
+ {
+  "id": "n4-ck-120",
+  "type": "kadai",
+  "scene": "女の 人と 男の 人が 話しています。",
+  "question": "女の 人は あした どの くつで 行きますか。",
+  "lines": [
+   [
+    "F",
+    "あしたの ハイキング、どの くつで 行こうかな。この サンダルは どう？"
+   ],
+   [
+    "M",
+    "山の 道は いしが 多いから、サンダルは あぶないよ。運動ぐつが いいよ。"
+   ],
+   [
+    "F",
+    "運動ぐつは きのうの 雨で まだ ぬれて いるんだ。会社に 行く ときの くつは どう？"
+   ],
+   [
+    "M",
+    "あれは すべるから だめだよ。うちの 妹の 運動ぐつを かそうか。サイズ 同じだったよね。"
+   ],
+   [
+    "F",
+    "うん、同じ。でも、山に のぼる ための くつを 買った ほうが いいかな。"
+   ],
+   [
+    "M",
+    "あしたは 高い 山じゃないから、いらないよ。"
+   ],
+   [
+    "F",
+    "じゃあ、妹さんのを かりるね。"
+   ]
+  ],
+  "options": [
+   "運動ぐつ",
+   "サンダル",
+   "会社の くつ",
+   "山に のぼる くつ"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A pair of sneakers with laces on a plain floor. Nothing else.",
+   "Simple black-and-white line drawing, no text. A pair of open sandals with straps on a plain floor. Nothing else.",
+   "Simple black-and-white line drawing, no text. A pair of plain women's office pumps with low heels on a plain floor. Nothing else.",
+   "Simple black-and-white line drawing, no text. A pair of high-topped hiking boots with thick soles on a plain floor. Nothing else."
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在说话。",
+    "question": "女人明天穿哪双鞋去？",
+    "lines": [
+     "明天远足穿哪双鞋去呢？这双凉鞋怎么样？",
+     "山路石头多，凉鞋很危险。运动鞋比较好。",
+     "运动鞋被昨天的雨淋湿了，还没干。上班穿的鞋呢？",
+     "那个容易滑，不行。我把我妹妹的运动鞋借给你吧？尺码一样吧。",
+     "嗯，一样。不过是不是买双登山鞋比较好？",
+     "明天不是高山，不需要。",
+     "那我借你妹妹的。"
+    ],
+    "options": [
+     "运动鞋",
+     "凉鞋",
+     "上班穿的鞋",
+     "登山鞋"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking.",
+    "question": "Which shoes will the woman wear tomorrow?",
+    "lines": [
+     "Which shoes should I wear for the hike tomorrow? How about these sandals?",
+     "Mountain paths are full of stones, so sandals are dangerous. Sneakers are best.",
+     "My sneakers are still wet from yesterday's rain. What about my work shoes?",
+     "Those are slippery — no good. Shall I lend you my sister's sneakers? You're the same size, right?",
+     "Yes, the same. But maybe I should buy proper hiking boots?",
+     "It's not a high mountain tomorrow, so you don't need them.",
+     "Then I'll borrow your sister's."
+    ],
+    "options": [
+     "Sneakers",
+     "Sandals",
+     "Her work shoes",
+     "Hiking boots"
+    ]
+   }
+  },
+  "why": {
+   "zh": "凉鞋危险，上班的鞋会滑，登山鞋不用买，女人借男人妹妹的「運動ぐつ」。",
+   "en": "Sandals are dangerous, work shoes slip, hiking boots aren't needed — she borrows his sister's sneakers."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "山路石头多，凉鞋「あぶない」。",
+    "en": "Stony paths make sandals dangerous."
+   },
+   {
+    "zh": "上班的鞋「すべるから だめ」。",
+    "en": "Her work shoes are slippery."
+   },
+   {
+    "zh": "不是高山，登山鞋「いらない」。",
+    "en": "It's not a high mountain, so hiking boots aren't needed."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "condition-conflict",
+   "denied-guess"
+  ]
+ }
+]

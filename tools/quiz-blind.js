@@ -45,13 +45,14 @@ if (cmd === "sheet" && rest.length && rest.every((f) => f.startsWith("choukai"))
   for (const q of loadChoukai(rest)) {
     out.push(`### ${q.id} (${LISTEN_HOW[q.type]})`);
     const atEnd = q.type === "gaiyou" || (q.type === "tougou" && !q.questions);
-    if (q._part === undefined || q.id.split("-").slice(0, 3).join("-") !== shown) {
+    const parent = q._part === undefined ? q.id : q.id.replace(/-\d+$/, "");
+    if (q._part === undefined || parent !== shown) {
       if (q.scene) out.push(`[narrator] ${q.scene}`);
       if (q.question && !atEnd && !q.questions) out.push(`[narrator] ${q.question}`);
       q.lines.forEach(([who, t]) => out.push(`${who}: ${t}`));
       if (q.question && (atEnd || q.questions)) out.push(`[narrator] ${q.question}`);
     } else out.push("(same audio as above)", `[narrator] ${q.question}`);
-    shown = q.id.split("-").slice(0, 3).join("-");
+    shown = parent;
     if (q.picture) out.push(`[picture in the booklet] ${q.picture.desc}${q.picture.arrow ? ` — arrow points at: ${q.picture.arrow}` : ""}`);
     const spoken = q.spokenOptions || q.type === "sokuji" || q.type === "hatsuwa";
     q.options.forEach((o, i) => out.push(`${i + 1}. ${q.optionImages ? `[picture] ${q.optionImages[i]}` : o}${spoken ? " (spoken)" : ""}`));

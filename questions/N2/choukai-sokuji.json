@@ -114,5 +114,1571 @@
    "perspective",
    "repeat-word"
   ]
+ },
+ {
+  "id": "n2-ck-503",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "この資料、明日の朝までに目を通しといてもらえる？"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "はい、明日の朝お渡しします。",
+   "わかりました。今日中に読んでおきます。",
+   "え、もう読んでいただいたんですか。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这份资料，明天早上之前能帮我过一遍吗？"
+    ],
+    "options": [
+     "好的，明天早上交给您。",
+     "明白了，我今天之内看完。",
+     "诶，您已经看过了吗？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Could you look through these papers by tomorrow morning?"
+    ],
+    "options": [
+     "Sure, I'll hand them to you tomorrow morning.",
+     "Understood. I'll read them today.",
+     "Oh, have you already read them?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「目を通しといて」=「目を通しておいて」，请她先把资料看一遍；回答今天之内看完，接受了请求。",
+   "en": "「目を通しといて」 = 「目を通しておいて」: he's asking her to read through it in advance; \"I'll read it today\" accepts."
+  },
+  "wrong": [
+   {
+    "zh": "他要的是她看资料，不是把资料交给他。",
+    "en": "He wants her to read the papers, not hand them over."
+   },
+   null,
+   {
+    "zh": "要看的是她，不是他；而且还没看。",
+    "en": "She is the one to read them, not him — and nobody has yet."
+   }
+  ],
+  "traps": [
+   "intent",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n2-ck-504",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "田中さん、さっきから電話、鳴りっぱなしだよ。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "あ、すみません。すぐ出ます。",
+   "ええ、さっき鳴りましたね。",
+   "じゃあ、あとでかけてみます。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "田中，电话从刚才一直在响哦。"
+    ],
+    "options": [
+     "啊，不好意思，我马上接。",
+     "嗯，刚才响过呢。",
+     "那我等会儿打过去试试。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Tanaka, your phone's been ringing for a while now."
+    ],
+    "options": [
+     "Oh, sorry. I'll get it right away.",
+     "Yes, it rang a moment ago.",
+     "Then I'll try calling later."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「鳴りっぱなし」是一直在响、没人接，她在提醒他接电话。",
+   "en": "「鳴りっぱなし」 means it keeps ringing unanswered — she's telling him to pick up."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「っぱなし」表示现在还在响，不是刚才响过一次。",
+    "en": "「っぱなし」 means it's still ringing, not that it rang once earlier."
+   },
+   {
+    "zh": "电话正在响，应该马上接，不是之后再打。",
+    "en": "It's ringing now — he should answer, not call later."
+   }
+  ],
+  "traps": [
+   "tense",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n2-ck-505",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "引っ越しの準備で、旅行どころじゃないんだよね。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "へえ、旅行はどこに行くの？",
+   "もう引っ越しは終わったんだね。",
+   "そっか。旅行はまた今度だね。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "忙着准备搬家，哪有心思去旅行啊。"
+    ],
+    "options": [
+     "哦，旅行去哪儿？",
+     "搬家已经搬完了啊。",
+     "这样啊。那旅行下次再说吧。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "With getting ready to move, a trip is out of the question."
+    ],
+    "options": [
+     "Oh, where are you going on your trip?",
+     "So you've finished moving already.",
+     "I see. The trip will have to wait, then."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜どころじゃない」：忙着搬家，根本顾不上旅行。回答「旅行はまた今度だね」接住了这个意思。",
+   "en": "「〜どころじゃない」: busy moving, a trip is out of the question. \"The trip will have to wait\" picks that up."
+  },
+  "wrong": [
+   {
+    "zh": "她说的是去不了旅行，问去哪儿是只听到了「旅行」。",
+    "en": "She's saying she can't go; asking where only picks up the word 「旅行」."
+   },
+   {
+    "zh": "她还在准备搬家，不是已经搬完了。",
+    "en": "She's still preparing to move, not finished."
+   },
+   null
+  ],
+  "traps": [
+   "repeat-word",
+   "tense"
+  ]
+ },
+ {
+  "id": "n2-ck-506",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "すみません、予約してないんですけど、二人、はいれますか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "かしこまりました。では、ご予約を承ります。",
+   "申し訳ございません。ただいま満席なんです。",
+   "はい、二名様でご予約いただいている方ですね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "不好意思，我们没预约，两个人能进去吗？"
+    ],
+    "options": [
+     "好的。那我为您登记预约。",
+     "非常抱歉，现在已经满座了。",
+     "好的，是预约了两位的客人吧。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Excuse me, we haven't booked, but can two of us get in?"
+    ],
+    "options": [
+     "Certainly. I'll take your reservation, then.",
+     "I'm very sorry. We're full at the moment.",
+     "Yes, you're the party of two with a reservation, aren't you?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "客人问现在能不能进去，店员用「ただいま満席なんです」委婉地拒绝。",
+   "en": "She's asking whether they can come in now; 「ただいま満席なんです」 is a polite no."
+  },
+  "wrong": [
+   {
+    "zh": "她问的是现在进店，不是要预约。",
+    "en": "She wants to come in now, not make a booking."
+   },
+   null,
+   {
+    "zh": "她说了「予約してない」，说她有预约和原话矛盾。",
+    "en": "She said she hasn't booked, so this contradicts her."
+   }
+  ],
+  "traps": [
+   "intent",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n2-ck-507",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "あれ、会議って三時からだっけ？"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "ううん、三時半からだよ。",
+   "うん、三時に終わったよ。",
+   "じゃあ、三時に会議室取っとくね。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "咦，会议是三点开始来着？"
+    ],
+    "options": [
+     "不是，三点半开始。",
+     "嗯，三点结束了。",
+     "那我先把三点的会议室订好。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Hang on, was the meeting from three?"
+    ],
+    "options": [
+     "No, from three thirty.",
+     "Yeah, it finished at three.",
+     "Then I'll book the meeting room for three."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜っけ」是在确认自己记得对不对，回答告诉他正确的时间。",
+   "en": "「〜っけ」 checks his memory; the reply gives him the right time."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "他问什么时候开始，回答结束了，时态和内容都不对。",
+    "en": "He asks when it starts; \"it finished\" is the wrong time and the wrong question."
+   },
+   {
+    "zh": "会议已经定了，他只是确认时间，不是让她订会议室。",
+    "en": "The meeting is already set — he's only checking the time, not asking her to book a room."
+   }
+  ],
+  "traps": [
+   "tense",
+   "intent"
+  ]
+ },
+ {
+  "id": "n2-ck-508",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "この企画、部長のオーケーをもらわないことには、先に進められないのよね。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "では、さっそく進めておきます。",
+   "では、部長に確認してみます。",
+   "部長が進めてくださるんですか。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这个企划，不拿到部长的同意，就没法往下推进啊。"
+    ],
+    "options": [
+     "那我马上先推进。",
+     "那我去问问部长。",
+     "部长会帮我们推进吗？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "We can't move this project forward without the department head's OK, you know."
+    ],
+    "options": [
+     "Then I'll get it moving right away.",
+     "Then I'll check with the department head.",
+     "Is the department head going to take it forward?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜ないことには、〜ない」：不先拿到部长的同意就不能推进。回答去问部长，正是要先做的事。",
+   "en": "「〜ないことには、〜ない」: nothing moves until the head says OK. Checking with him is exactly the next step."
+  },
+  "wrong": [
+   {
+    "zh": "她说的是现在还不能推进，马上推进和原话矛盾。",
+    "en": "She says it can't go ahead yet, so pushing on contradicts her."
+   },
+   null,
+   {
+    "zh": "要的是部长的同意，不是让部长来推进。",
+    "en": "What's needed is the head's approval, not the head doing the work."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n2-ck-509",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "もう少しで終電に乗り遅れるところだったよ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "え、じゃあ、どうやって帰ったの？",
+   "終電、もう少しで来るの？",
+   "間に合って、よかったね。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "差一点就没赶上末班车。"
+    ],
+    "options": [
+     "诶，那你怎么回去的？",
+     "末班车马上就来吗？",
+     "赶上了，太好了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I nearly missed the last train."
+    ],
+    "options": [
+     "What? Then how did you get home?",
+     "Is the last train coming soon?",
+     "Good thing you made it."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「もう少しで〜ところだった」是差一点就……，实际上没有发生：他赶上了。",
+   "en": "「もう少しで〜ところだった」 means it almost happened but didn't — he made the train."
+  },
+  "wrong": [
+   {
+    "zh": "他没有错过末班车，问怎么回去的是听反了。",
+    "en": "He didn't miss it; asking how he got home gets it backwards."
+   },
+   {
+    "zh": "「もう少しで」在这里是“差一点”，说的是过去的事，不是车快来了。",
+    "en": "Here 「もう少しで」 means \"almost\", about the past — not that a train is coming soon."
+   },
+   null
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n2-ck-510",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "営業部の山本様と、二時にお約束をいただいているんですが。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "山本でございますね。少々お待ちください。",
+   "では、二時にお約束をお取りしますね。",
+   "山本様は、二時にいらっしゃいましたよ。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "我和营业部的山本先生约了两点见面。"
+    ],
+    "options": [
+     "是山本对吧。请您稍等。",
+     "那我为您约两点。",
+     "山本先生两点来过了哦。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I have an appointment at two with Mr Yamamoto in Sales."
+    ],
+    "options": [
+     "Yamamoto — certainly. One moment, please.",
+     "Then I'll make an appointment for two o'clock.",
+     "Mr Yamamoto came at two."
+    ]
+   }
+  },
+  "why": {
+   "zh": "访客在前台说明来意，前台对外称自己公司的人不加「様」，说「山本でございますね」，然后请他稍等。",
+   "en": "A visitor at reception; the receptionist refers to her own colleague without 「様」—「山本でございますね」— and asks him to wait."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "约已经定好了，他是来赴约的，不是要预约。",
+    "en": "The appointment already exists; he's here for it, not booking one."
+   },
+   {
+    "zh": "山本是前台公司的人，不是来访的客人，而且对自己人用了尊敬语。",
+    "en": "Yamamoto works here — he isn't a visitor — and she'd never use honorifics for her own colleague."
+   }
+  ],
+  "traps": [
+   "intent",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n2-ck-511",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "あ、誰か来た。ごめん、今手が離せないんだけど、出てもらえない？"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "うん、気をつけてね。",
+   "うん、私が出るね。",
+   "え、今から出かけるの？"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "啊，有人来了。不好意思，我现在腾不出手，你能去开个门吗？"
+    ],
+    "options": [
+     "嗯，路上小心。",
+     "好，我去开。",
+     "诶，你现在要出门？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Oh, someone's here. Sorry, my hands are full right now — could you get the door?"
+    ],
+    "options": [
+     "Okay, take care.",
+     "Okay, I'll get it.",
+     "What, you're going out now?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "有人来了，他腾不出手，「出てもらえない？」是请她去应门。",
+   "en": "Someone's at the door and his hands are full: 「出てもらえない？」 asks her to answer it."
+  },
+  "wrong": [
+   {
+    "zh": "「出て」是应门，不是他要出门，「気をつけてね」用错了场合。",
+    "en": "「出て」 means answering the door, not him leaving — \"take care\" is for the wrong moment."
+   },
+   null,
+   {
+    "zh": "把「出る」听成了出门。",
+    "en": "Hears 「出る」 as going out."
+   }
+  ],
+  "traps": [
+   "timing",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n2-ck-512",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "夜遅くまで、お子さんたち、ずいぶん元気ですね。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "ありがとうございます。よく言われるんです。",
+   "すみません、うるさかったですよね。",
+   "じゃあ、一緒に遊ばせましょうか。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这么晚了，您家孩子们还真是精神啊。"
+    ],
+    "options": [
+     "谢谢。经常有人这么说。",
+     "对不起，吵到您了吧。",
+     "那让孩子们一起玩吧？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Your children are certainly lively, so late at night."
+    ],
+    "options": [
+     "Thank you. People often say so.",
+     "I'm sorry, they've been noisy, haven't they?",
+     "Then shall we let them play together?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "邻居说「夜遅くまで……ずいぶん元気ですね」，表面是夸，实际是抱怨太吵。回答道歉才得体。",
+   "en": "A neighbour saying 「夜遅くまで……ずいぶん元気ですね」 sounds like praise but is a complaint about noise; an apology fits."
+  },
+  "wrong": [
+   {
+    "zh": "「夜遅くまで」说明这不是夸奖，道谢是只听了字面。",
+    "en": "「夜遅くまで」 shows it isn't praise; thanking her takes it literally."
+   },
+   null,
+   {
+    "zh": "她是在抱怨，不是邀请孩子一起玩。",
+    "en": "She's complaining, not suggesting the children play together."
+   }
+  ],
+  "traps": [
+   "intent",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n2-ck-513",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "明日のプレゼン、僕が担当だから、休むわけにはいかないんだよ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "じゃあ、明日はゆっくり休んでね。",
+   "そっか。でも、無理しないでね。",
+   "え、プレゼン、休みになったの？"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "明天的发表是我负责的，所以不能请假啊。"
+    ],
+    "options": [
+     "那明天好好休息吧。",
+     "这样啊。不过别太勉强哦。",
+     "诶，发表取消了？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I'm the one giving tomorrow's presentation, so I can't take the day off."
+    ],
+    "options": [
+     "Then take it easy tomorrow.",
+     "I see. But don't overdo it.",
+     "What, the presentation's been cancelled?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「休むわけにはいかない」=不能请假。她接受了他要去的事，同时关心他别太勉强。",
+   "en": "「休むわけにはいかない」 = he can't take the day off. She accepts that and tells him not to push himself."
+  },
+  "wrong": [
+   {
+    "zh": "他说不能休息，让他明天好好休息和原话矛盾。",
+    "en": "He says he can't rest, so \"rest tomorrow\" contradicts him."
+   },
+   null,
+   {
+    "zh": "「休む」说的是他自己，不是发表取消。",
+    "en": "「休む」 is about him, not the presentation being cancelled."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n2-ck-514",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "すみません、これ、プレゼント用に包んでいただけますか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "かしこまりました。リボンの色はいかがなさいますか。",
+   "ありがとうございます。大切に使わせていただきます。",
+   "はい、プレゼントはこちらでお選びいただけます。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "不好意思，这个能帮我包成礼物吗？"
+    ],
+    "options": [
+     "好的。丝带要什么颜色呢？",
+     "谢谢。我会好好用的。",
+     "好的，礼物可以在这边挑选。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Excuse me, could you gift-wrap this, please?"
+    ],
+    "options": [
+     "Certainly. What colour ribbon would you like?",
+     "Thank you. I'll take good care of it.",
+     "Yes, you can choose gifts over here."
+    ]
+   }
+  },
+  "why": {
+   "zh": "客人请店员包装礼物，店员接受并问丝带颜色，是店里自然的应答。",
+   "en": "The customer asks for gift wrapping; the assistant accepts and asks about the ribbon."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "把「プレゼント」听成了送给自己的礼物，立场反了。",
+    "en": "Takes 「プレゼント」 as a gift for himself — the roles are reversed."
+   },
+   {
+    "zh": "她已经选好了东西，要的是包装，不是挑礼物。",
+    "en": "She's already chosen it — she wants it wrapped, not help choosing."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n2-ck-515",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "部長、明日の打ち合わせなんですが、少し遅らせていただくわけにはいかないでしょうか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "じゃあ、打ち合わせは中止にしよう。",
+   "じゃあ、少し早めに始めようか。",
+   "うん、構わないよ。何時ならいい？"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "部长，明天的碰头会，能不能稍微往后推一点？"
+    ],
+    "options": [
+     "那碰头会就取消吧。",
+     "那就稍微提前开始吧。",
+     "嗯，没关系。几点可以？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "About tomorrow's meeting — would it be possible to push it back a little?"
+    ],
+    "options": [
+     "Then let's cancel the meeting.",
+     "Then shall we start a bit earlier?",
+     "Sure, that's fine. What time works?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜ていただくわけにはいかないでしょうか」是很客气的请求：能不能往后推。部长同意并问几点合适。",
+   "en": "「〜ていただくわけにはいかないでしょうか」 is a very polite request to push it back; he agrees and asks what time."
+  },
+  "wrong": [
+   {
+    "zh": "她只是想推迟一点，不是取消。",
+    "en": "She only wants it a little later, not cancelled."
+   },
+   {
+    "zh": "她要的是推迟，提前正好相反。",
+    "en": "She wants it later; earlier is the opposite."
+   },
+   null
+  ],
+  "traps": [
+   "intent",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n2-ck-516",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "この店、雑誌に載ってたわりには、大したことなかったね。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "うん、さすが雑誌に載るだけあるね。",
+   "じゃあ、今度、雑誌で探してみようか。",
+   "そう？　私は結構おいしかったけど。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这家店，说是上过杂志，其实也没什么了不起的嘛。"
+    ],
+    "options": [
+     "嗯，不愧是上过杂志的。",
+     "那下次在杂志上找找看？",
+     "是吗？我觉得挺好吃的。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "For a place that was in a magazine, it wasn't anything special, was it?"
+    ],
+    "options": [
+     "Yeah, no wonder it was in a magazine.",
+     "Then shall we look for one in a magazine next time?",
+     "Really? I thought it was pretty good."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜わりには、大したことなかった」是说不如预期。她表示不同意（自己觉得好吃），是自然的回应。",
+   "en": "「〜わりには、大したことなかった」: it fell short. Disagreeing — she liked it — is a natural reply."
+  },
+  "wrong": [
+   {
+    "zh": "「うん」表示同意，后面却在夸，前后矛盾。",
+    "en": "「うん」 agrees, but then she praises it — it contradicts itself."
+   },
+   {
+    "zh": "他们已经吃过这家店了，照搬「雑誌」，答非所问。",
+    "en": "They've already eaten there; this just reuses 「雑誌」."
+   },
+   null
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n2-ck-517",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "あれ、その傘、僕のだと思うんだけど。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "あ、ごめん。間違えちゃった。",
+   "じゃあ、私のを貸そうか。",
+   "へえ、それ、どこで買ったの？"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "咦，那把伞，我觉得是我的。"
+    ],
+    "options": [
+     "啊，对不起，拿错了。",
+     "那我的借给你吧？",
+     "哦，那是在哪儿买的？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Hang on, I think that umbrella's mine."
+    ],
+    "options": [
+     "Oh, sorry. I got it wrong.",
+     "Then shall I lend you mine?",
+     "Oh, where did you buy that?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "她拿的伞是他的，他委婉地指出；她道歉说拿错了。",
+   "en": "She has his umbrella and he points it out gently; she apologises for the mix-up."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "伞本来就是他的，不需要借给他。",
+    "en": "It's already his — there's nothing to lend."
+   },
+   {
+    "zh": "伞在她手上，问他在哪儿买的，没有回应他的话。",
+    "en": "She's holding it; asking where he bought it ignores what he said."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "question-word"
+  ]
+ },
+ {
+  "id": "n2-ck-518",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "その仕事、私でよかったら手伝おうか？"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "ありがとう。でも、もう終わるから。",
+   "え、もう手伝ってくれたの？",
+   "うん、じゃあ、僕にも手伝わせて。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "那个工作，不嫌弃的话我来帮你吧？"
+    ],
+    "options": [
+     "谢谢。不过马上就做完了。",
+     "诶，你已经帮过我了？",
+     "嗯，那也让我帮忙吧。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "If I'd do, shall I help you with that job?"
+    ],
+    "options": [
+     "Thanks. But I'm almost done.",
+     "What, you've already helped me?",
+     "Yeah, then let me help too."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「手伝おうか」是主动提出帮忙。他道谢，再说快做完了，委婉地谢绝。",
+   "en": "「手伝おうか」 offers help; he thanks her and politely declines — he's nearly done."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "她是现在提出要帮，还没帮。",
+    "en": "She's offering now — she hasn't helped yet."
+   },
+   {
+    "zh": "要帮忙的是她，工作是他的，立场反了。",
+    "en": "She's the one offering; it's his job — the roles are reversed."
+   }
+  ],
+  "traps": [
+   "tense",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n2-ck-519",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "すみません、きのう注文した品物が、まだ届いていないんですが。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "かしこまりました。ご注文を承ります。",
+   "大変失礼しました。すぐお調べします。",
+   "お届けは、きのうでよろしいでしょうか。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "不好意思，我昨天订的东西还没到。"
+    ],
+    "options": [
+     "好的，我为您下单。",
+     "非常抱歉，我马上查一下。",
+     "送货时间定在昨天可以吗？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Excuse me, the item I ordered yesterday still hasn't arrived."
+    ],
+    "options": [
+     "Certainly. I'll take your order.",
+     "I'm very sorry. I'll look into it right away.",
+     "Would yesterday be all right for delivery?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "客人打电话说东西没到，是在投诉；店员道歉并马上查，是合适的应对。",
+   "en": "The customer is complaining that the order hasn't come; apologising and checking is the right response."
+  },
+  "wrong": [
+   {
+    "zh": "他已经订过了，不是要下新订单。",
+    "en": "He's already ordered; he isn't placing a new order."
+   },
+   null,
+   {
+    "zh": "送货时间不能定在过去的「きのう」。",
+    "en": "Delivery can't be arranged for yesterday."
+   }
+  ],
+  "traps": [
+   "intent",
+   "tense"
+  ]
+ },
+ {
+  "id": "n2-ck-520",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "悪いんだけど、今日、少し残ってもらえないかな。急ぎの仕事が入っちゃって。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "わかりました。では、お先に失礼しますね。",
+   "今日はちょっと……明日の朝はどうですか。",
+   "え、課長が代わりに残ってくださるんですか。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "不好意思，今天能稍微留下来一会儿吗？来了件急活。"
+    ],
+    "options": [
+     "明白了。那我先走了。",
+     "今天有点……明天早上怎么样？",
+     "诶，科长您替我留下来吗？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Sorry, but could you stay a bit late today? Something urgent's come in."
+    ],
+    "options": [
+     "Understood. I'll be going, then.",
+     "Today's a bit… How about tomorrow morning?",
+     "Oh, you'll stay instead of me?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "上司请她加班，她用「今日はちょっと……」委婉拒绝，并提出明天早上做，是职场常见的说法。",
+   "en": "The boss asks her to stay late; 「今日はちょっと……」 is a soft no, and she offers tomorrow morning instead."
+  },
+  "wrong": [
+   {
+    "zh": "「わかりました」接受了，却又说先走了，前后矛盾。",
+    "en": "She says \"understood\" and then leaves — it contradicts itself."
+   },
+   null,
+   {
+    "zh": "要留下的是她，不是课长。",
+    "en": "She's the one being asked to stay, not the boss."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n2-ck-521",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "この前貸した本、読み終わったらでいいから、返してくれる？"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "うん、読み終わったら貸してあげる。",
+   "え、もう返してもらえるの？",
+   "うん、あと少しで読み終わるよ。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "上次借你的书，看完了再还就行，能还给我吗？"
+    ],
+    "options": [
+     "嗯，看完了借给你。",
+     "诶，已经可以还给我了吗？",
+     "嗯，马上就看完了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "That book I lent you — whenever you've finished is fine, but could you give it back?"
+    ],
+    "options": [
+     "Sure, I'll lend it to you when I'm done.",
+     "What, I can have it back already?",
+     "Sure, I've nearly finished it."
+    ]
+   }
+  },
+  "why": {
+   "zh": "书是她借给他的，请他看完还；他说快看完了，回应了请求。",
+   "en": "She lent him the book and asks for it back when he's done; he says he's almost finished."
+  },
+  "wrong": [
+   {
+    "zh": "书是她的，他说“借给你”，立场反了。",
+    "en": "It's her book — \"I'll lend it to you\" reverses the roles."
+   },
+   {
+    "zh": "要还书的是他，不是她。",
+    "en": "He's the one returning it, not her."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n2-ck-522",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "チェックアウトのあと、荷物を預かってもらうことってできますか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "チェックアウトは、十時まででございます。",
+   "では、お荷物をお部屋にお持ちします。",
+   "はい、何時ごろお戻りになりますか。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "退房以后，能帮我寄存行李吗？"
+    ],
+    "options": [
+     "退房时间到十点为止。",
+     "那我把您的行李送到房间。",
+     "可以，您大概几点回来？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "After checking out, could you keep my luggage for me?"
+    ],
+    "options": [
+     "Check-out is until ten o'clock.",
+     "Then I'll bring your luggage to your room.",
+     "Yes, about what time will you be back?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "客人问退房后能不能寄存行李；前台答应并问回来的时间，是自然的应答。",
+   "en": "He asks if they'll hold his bags after check-out; she agrees and asks when he'll be back."
+  },
+  "wrong": [
+   {
+    "zh": "他问的是寄存行李，不是退房时间，只抓住了「チェックアウト」。",
+    "en": "He's asking about storing bags, not check-out time — this just catches 「チェックアウト」."
+   },
+   {
+    "zh": "退房后就不在房间了，把行李送到房间不合情况。",
+    "en": "After check-out he has no room; bringing bags there makes no sense."
+   },
+   null
+  ],
+  "traps": [
+   "repeat-word",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n2-ck-523",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "せっかく作ったのに、誰も食べてくれないんだもん。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "ごめん、じゃあ一つもらうね。",
+   "え、もう全部食べちゃったの？",
+   "じゃあ、今度作ってくれる？"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "好不容易做的，结果谁都不吃。"
+    ],
+    "options": [
+     "对不起，那我吃一个。",
+     "诶，已经全吃完了？",
+     "那下次给我做吧？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I went to the trouble of making it, and nobody's eating any."
+    ],
+    "options": [
+     "Sorry, I'll have one, then.",
+     "What, it's all been eaten already?",
+     "Then will you make some next time?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜んだもん」带着不满：做了没人吃。他道歉并说吃一个，是对抱怨的自然回应。",
+   "en": "「〜んだもん」 is a sulky complaint — nobody's eating what she made. He apologises and takes one."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "没人吃，所以不可能吃完了，和她的话矛盾。",
+    "en": "Nobody's eaten any, so it can't be all gone."
+   },
+   {
+    "zh": "她已经做好了，现在就有，不用等下次。",
+    "en": "It's already made and right there — no need for next time."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "tense"
+  ]
+ },
+ {
+  "id": "n2-ck-524",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "この仕事、引き受けたからには、最後までやるしかないよね。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "そうだね。途中でやめちゃおうか。",
+   "うん。大変だけど、頑張ろう。",
+   "え、まだ引き受けてないの？"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这个工作既然接下来了，就只能做到底了。"
+    ],
+    "options": [
+     "是啊，做到一半不干了吧。",
+     "嗯。虽然辛苦，加油吧。",
+     "诶，还没接吗？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Now that we've taken this job on, we have to see it through."
+    ],
+    "options": [
+     "Right. Shall we just give up halfway?",
+     "Yeah. It's tough, but let's do our best.",
+     "What, you haven't taken it on yet?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜からには」=既然……就……。既然接了就得做完；她表示赞同，一起加油。",
+   "en": "「〜からには」: since they've taken it on, they must finish. She agrees: let's do our best."
+  },
+  "wrong": [
+   {
+    "zh": "「そうだね」赞同，却说中途放弃，前后矛盾。",
+    "en": "She agrees, then suggests quitting — it contradicts itself."
+   },
+   null,
+   {
+    "zh": "「引き受けたからには」说明已经接下了。",
+    "en": "「引き受けたからには」 shows they've already taken it on."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "tense"
+  ]
+ },
+ {
+  "id": "n2-ck-525",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "鈴木さん、今日なんか元気ないね。どうかした？"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "うん、おかげさまで元気だよ。",
+   "じゃあ、早く元気出してね。",
+   "そう？　ちょっと寝不足なだけ。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "铃木，你今天好像没什么精神。怎么了？"
+    ],
+    "options": [
+     "嗯，托你的福，挺好的。",
+     "那你快点打起精神来哦。",
+     "是吗？只是有点没睡够。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Suzuki, you seem a bit down today. Is something wrong?"
+    ],
+    "options": [
+     "Yes, I'm fine, thanks.",
+     "Then cheer up soon, okay?",
+     "Do I? I'm just a bit short on sleep."
+    ]
+   }
+  },
+  "why": {
+   "zh": "她关心他为什么没精神，他说只是没睡够，回答了「どうかした？」。",
+   "en": "She asks why he seems low; \"just short on sleep\" answers 「どうかした？」."
+  },
+  "wrong": [
+   {
+    "zh": "「うん」后面接「元気だよ」，和她说的“没精神”对不上；「おかげさまで」也用错了场合。",
+    "en": "\"Yes, I'm fine\" doesn't fit being told he looks down, and 「おかげさまで」 is out of place."
+   },
+   {
+    "zh": "这是她对他说的话，他反过来对她说，立场反了。",
+    "en": "That's what she would say to him — the roles are reversed."
+   },
+   null
+  ],
+  "traps": [
+   "repeat-word",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n2-ck-526",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "担当の者がまもなく参りますので、こちらでお待ちになりますか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "はい、お待ちしております。",
+   "じゃあ、ここで待ちます。",
+   "はい、待っていただけますか。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "负责的人马上就来，您在这里等吗？"
+    ],
+    "options": [
+     "好的，恭候您。",
+     "那我在这儿等。",
+     "好的，能请您等一下吗？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "The person in charge will be here shortly. Would you like to wait here?"
+    ],
+    "options": [
+     "Yes, we look forward to seeing you.",
+     "Then I'll wait here.",
+     "Yes, could you wait, please?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「お待ちになりますか」是问客人要不要在这里等；客人说在这儿等。",
+   "en": "「お待ちになりますか」 asks the visitor if he'll wait here; he says he will."
+  },
+  "wrong": [
+   {
+    "zh": "「お待ちしております」是接待方说的话，客人说不合适。",
+    "en": "「お待ちしております」 is what the host says, not the visitor."
+   },
+   null,
+   {
+    "zh": "要等的是客人自己，不是让对方等。",
+    "en": "He's the one waiting, not her."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n2-ck-527",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "ねえ、さっきから何探してんの？"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "鍵。どこに置いたっけ。",
+   "うん、探してみようか。",
+   "え、何か探してるの？"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "喂，你从刚才开始在找什么呢？"
+    ],
+    "options": [
+     "钥匙。放哪儿来着？",
+     "嗯，我来找找看吧。",
+     "诶，你在找什么吗？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Hey, what have you been looking for all this time?"
+    ],
+    "options": [
+     "My keys. Where did I put them?",
+     "Sure, shall I look for it?",
+     "Huh, are you looking for something?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「探してんの」=「探しているの」，问她在找什么；她说在找钥匙。",
+   "en": "「探してんの」 = 「探しているの」: he asks what she's looking for; she says her keys."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "他问的是“找什么”，不是请她帮忙找。",
+    "en": "He asks what she's looking for, not for her help."
+   },
+   {
+    "zh": "在找东西的是她，反问他立场反了。",
+    "en": "She's the one searching — asking him back reverses the roles."
+   }
+  ],
+  "traps": [
+   "question-word",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n2-ck-528",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "ずいぶんゆっくりだね。会議、もう始まってるよ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "いえ、ゆっくりで大丈夫です。",
+   "では、会議を始めましょうか。",
+   "すみません、電車が遅れまして。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "你来得可真够慢的啊。会议已经开始了。"
+    ],
+    "options": [
+     "不，慢慢来没关系。",
+     "那我们开始开会吧。",
+     "对不起，电车晚点了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "You took your time. The meeting's already started."
+    ],
+    "options": [
+     "No, there's no hurry.",
+     "Then shall we start the meeting?",
+     "I'm sorry, my train was delayed."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「ずいぶんゆっくりだね」是讽刺她迟到。她道歉并说明原因。",
+   "en": "「ずいぶんゆっくりだね」 is a dig at her for being late; she apologises and explains."
+  },
+  "wrong": [
+   {
+    "zh": "他是在批评她来晚了，不是让她慢慢来。",
+    "en": "He's criticising her lateness, not telling her to take her time."
+   },
+   {
+    "zh": "会议已经开始了，再说开始和情况矛盾。",
+    "en": "The meeting has already started, so this contradicts the situation."
+   },
+   null
+  ],
+  "traps": [
+   "intent",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n2-ck-529",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "これ、明日までっていうのは、さすがに無理があるんじゃないでしょうか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "そうか。じゃあ、あさってまでならどう？",
+   "うん、無理しないで、明日までにね。",
+   "え、もうできたの？　早いね。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这个要明天之前完成，再怎么说也太勉强了吧。"
+    ],
+    "options": [
+     "这样啊。那后天之前怎么样？",
+     "嗯，别勉强，明天之前哦。",
+     "诶，已经做好了？好快啊。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Having this by tomorrow — isn't that really asking too much?"
+    ],
+    "options": [
+     "I see. How about by the day after tomorrow, then?",
+     "Yes, don't overdo it — by tomorrow, okay?",
+     "What, it's done already? That was quick."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜んじゃないでしょうか」委婉地表示明天之前做不完；上司放宽到后天，回应了她的意见。",
+   "en": "「〜んじゃないでしょうか」 politely says tomorrow isn't realistic; the boss offers the day after instead."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "嘴上说别勉强，期限却还是明天，没有回应她的意见。",
+    "en": "\"Don't overdo it\" but still \"by tomorrow\" ignores her point."
+   },
+   {
+    "zh": "她说来不及，不是已经做完了。",
+    "en": "She's saying she can't make it, not that it's finished."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "contradiction"
+  ]
  }
 ]

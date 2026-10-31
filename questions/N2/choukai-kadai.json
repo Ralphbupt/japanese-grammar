@@ -81,5 +81,1338 @@
    { "zh": "去拿书要等助手回复之后，不是第一步。", "en": "Picking it up comes after the assistant replies — not the first step." },
    null],
   "traps": ["order", "not-possible", "repeat-word"]
+ },
+ {
+  "id": "n2-ck-103",
+  "type": "kadai",
+  "scene": "大学の留学センターで女の学生と係の人が話しています。",
+  "question": "女の学生はこのあとまず何をしなければなりませんか。",
+  "lines": [
+   [
+    "F",
+    "すみません、来年の交換留学の奨学金に応募したいんですが。"
+   ],
+   [
+    "M",
+    "はい。締め切りは来月の十五日です。必要なのは、申込書と、成績証明書と、語学試験の点数、それから指導の先生の推薦状ですね。"
+   ],
+   [
+    "F",
+    "申込書はもう書き始めてるんで、まずそれを仕上げちゃおうかなって。"
+   ],
+   [
+    "M",
+    "申込書は直前でも間に合いますよ。それより推薦状。先生によっては二、三週間かかることもあるんで、早めにお願いしといたほうがいいです。"
+   ],
+   [
+    "F",
+    "そうですか。成績証明書は？"
+   ],
+   [
+    "M",
+    "それは学生課の機械ですぐ出せますから、最後でいいですよ。"
+   ],
+   [
+    "F",
+    "あと語学試験なんですけど、去年の秋に受けたのがあって。"
+   ],
+   [
+    "M",
+    "二年以内のものなら使えます。"
+   ],
+   [
+    "F",
+    "じゃあ、受け直さなくていいんですね。わかりました。先生、今日は研究室にいらっしゃる日なので、このあとすぐ行ってお願いしてきます。申込書は、そのあとで仕上げます。"
+   ]
+  ],
+  "options": [
+   "先生に推薦状を頼む",
+   "申込書を仕上げる",
+   "成績証明書をもらう",
+   "語学試験を受ける"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "大学留学中心里，一个女学生和工作人员在说话。",
+    "question": "女学生接下来首先必须做什么？",
+    "lines": [
+     "不好意思，我想申请明年交换留学的奖学金。",
+     "好的。截止是下个月十五号。需要申请表、成绩证明、语言考试成绩，还有导师的推荐信。",
+     "申请表我已经开始写了，想先把它写完。",
+     "申请表到最后再写也来得及。倒是推荐信，有的老师要两三周，最好早点去拜托。",
+     "这样啊。成绩证明呢？",
+     "那个在学生科的机器上马上就能打出来，最后再弄就行。",
+     "还有语言考试，我去年秋天考过一次。",
+     "两年以内的成绩就可以用。",
+     "那就不用重考了吧。明白了。老师今天在研究室，我这就去拜托他。申请表之后再写完。"
+    ],
+    "options": [
+     "请老师写推荐信",
+     "写完申请表",
+     "领取成绩证明",
+     "参加语言考试"
+    ]
+   },
+   "en": {
+    "scene": "A female student and a staff member are talking at the university's study-abroad office.",
+    "question": "What does the female student have to do first?",
+    "lines": [
+     "Excuse me, I'd like to apply for next year's exchange-programme scholarship.",
+     "Sure. The deadline is the 15th of next month. You'll need the application form, your transcript, a language-test score, and a recommendation letter from your supervisor.",
+     "I've already started the form, so I was thinking of finishing that first.",
+     "The form can wait until just before the deadline. The letter's the thing — some professors take two or three weeks, so you'd better ask early.",
+     "I see. What about the transcript?",
+     "You can print that right away from the machine at Student Affairs, so leave it till last.",
+     "And the language test — I took one last autumn.",
+     "Anything within the last two years is fine.",
+     "So I don't need to retake it. Got it. My professor is in his office today, so I'll go and ask him right after this. I'll finish the form after that."
+    ],
+    "options": [
+     "Ask the professor for a letter",
+     "Finish the application form",
+     "Get the transcript",
+     "Take the language test"
+    ]
+   }
+  },
+  "why": {
+   "zh": "工作人员说推荐信「二、三週間かかることもある」，要「早めにお願い」；她说「このあとすぐ行ってお願いしてきます」，申请表之后再写。",
+   "en": "The letter can take two or three weeks, so she should ask early; she'll go and ask him right after this and finish the form afterwards."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "她本想先写完申请表，但工作人员说「直前でも間に合います」。",
+    "en": "She meant to finish the form first, but it can wait until just before the deadline."
+   },
+   {
+    "zh": "成绩证明马上能打印，「最後でいい」。",
+    "en": "The transcript prints instantly, so it can be left till last."
+   },
+   {
+    "zh": "去年秋天的成绩在两年以内，可以用，「受け直さなくていい」。",
+    "en": "Last autumn's score is within two years, so she doesn't need to retake it."
+   }
+  ],
+  "traps": [
+   "order",
+   "later",
+   "done-already"
+  ]
+ },
+ {
+  "id": "n2-ck-104",
+  "type": "kadai",
+  "scene": "会社で男の人と女の人が話しています。",
+  "question": "男の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "M",
+    "課長、来週の大阪の出張なんですが、ホテル、もう取っちゃっていいですか。駅の近くはすぐ埋まるって聞いたので。"
+   ],
+   [
+    "F",
+    "あ、ちょっと待って。出張の申請、まだ出してないでしょ？　部長の承認が下りる前に予約しちゃうと、あとで面倒なことになるのよ。"
+   ],
+   [
+    "M",
+    "そうなんですか。じゃあ、申請が先ですね。"
+   ],
+   [
+    "F",
+    "そう。部長、今日はお昼までしかいないから、急いで。"
+   ],
+   [
+    "M",
+    "わかりました。新幹線の切符も、自分で買っておいたほうがいいですか。"
+   ],
+   [
+    "F",
+    "切符は、承認が出たら総務がまとめて手配してくれるから。"
+   ],
+   [
+    "M",
+    "じゃあ、お土産は……。向こうの支店に何か持っていったほうが。"
+   ],
+   [
+    "F",
+    "それは私がもう買ってあるから、当日持ってってくれればいい。"
+   ],
+   [
+    "M",
+    "ありがとうございます。じゃ、すぐ書きます。"
+   ]
+  ],
+  "options": [
+   "ホテルを予約する",
+   "出張の申請を出す",
+   "新幹線の切符を買う",
+   "お土産を用意する"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个男人和一个女人在说话。",
+    "question": "男人接下来首先要做什么？",
+    "lines": [
+     "科长，下周去大阪出差，酒店我可以先订了吗？听说车站附近的很快就满。",
+     "啊，等一下。出差申请你还没交吧？部长批下来之前就订的话，之后会很麻烦。",
+     "是吗。那得先交申请。",
+     "对。部长今天只在到中午，抓紧。",
+     "明白了。新干线的票也要我自己先买好吗？",
+     "票的话，批下来以后总务会统一安排。",
+     "那礼物呢……是不是该给那边的分店带点什么。",
+     "那个我已经买好了，你当天带过去就行。",
+     "谢谢。那我马上写。"
+    ],
+    "options": [
+     "预订酒店",
+     "提交出差申请",
+     "买新干线的票",
+     "准备礼物"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking at the office.",
+    "question": "What will the man do first?",
+    "lines": [
+     "About next week's Osaka trip — can I go ahead and book the hotel? I heard the ones near the station fill up fast.",
+     "Hang on. You haven't submitted the trip request yet, have you? If you book before the director approves it, it causes trouble later.",
+     "Really? Then the request comes first.",
+     "Right. The director's only in until lunchtime today, so hurry.",
+     "Got it. Should I buy the bullet-train ticket myself too?",
+     "Once it's approved, General Affairs arranges the tickets for everyone.",
+     "What about a gift, then… Shouldn't I take something for the branch there?",
+     "I've already bought one — just take it with you on the day.",
+     "Thank you. I'll fill it out right away, then."
+    ],
+    "options": [
+     "Book the hotel",
+     "Submit the trip request",
+     "Buy the bullet-train ticket",
+     "Get a gift ready"
+    ]
+   }
+  },
+  "why": {
+   "zh": "酒店要等部长批准后才能订，部长只在到中午，所以先交出差申请；男人说「すぐ書きます」。",
+   "en": "Nothing can be booked before approval, and the director leaves at noon, so the request comes first; he says he'll write it now."
+  },
+  "wrong": [
+   {
+    "zh": "科长说批准下来之前预订「あとで面倒なことになる」。",
+    "en": "Booking before approval would cause trouble, she says."
+   },
+   null,
+   {
+    "zh": "车票批准后由总务统一安排。",
+    "en": "General Affairs arranges tickets after approval."
+   },
+   {
+    "zh": "礼物科长已经买好了。",
+    "en": "She has already bought the gift."
+   }
+  ],
+  "traps": [
+   "order",
+   "someone-else",
+   "done-already"
+  ]
+ },
+ {
+  "id": "n2-ck-105",
+  "type": "kadai",
+  "scene": "携帯電話の店で女の人と店の人が話しています。",
+  "question": "女の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "F",
+    "すみません、スマホの画面が割れちゃって、修理をお願いしたいんですけど。"
+   ],
+   [
+    "M",
+    "かしこまりました。修理ですと、一週間ほどお預かりすることになります。その間は、代わりの機種をお貸しできますので。"
+   ],
+   [
+    "F",
+    "よかった。あの、修理代って、けっこうかかりますか。"
+   ],
+   [
+    "M",
+    "お客様は補償サービスにご加入いただいてますので、今回は無料になりますね。"
+   ],
+   [
+    "F",
+    "あ、入ってたんだ。よかった。じゃあ、このままお願いします。"
+   ],
+   [
+    "M",
+    "ただ、修理に出すと、中のデータが全部消えてしまうんです。お預かりする前に、ご自分で保存しておいていただく必要があるんですが。"
+   ],
+   [
+    "F",
+    "え、そうなんですか。どのくらいかかります？"
+   ],
+   [
+    "M",
+    "三十分ほどですね。ご自宅のパソコンでもできますし、こちらのカウンターでもお手伝いできます。"
+   ],
+   [
+    "F",
+    "うーん、写真が多いので、家でゆっくりやります。終わったら、また来ます。"
+   ],
+   [
+    "M",
+    "かしこまりました。代わりの機種は、そのときにお渡ししますね。"
+   ]
+  ],
+  "options": [
+   "修理を申し込む",
+   "代わりの機種を借りる",
+   "補償サービスに入る",
+   "データを保存する"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "手机店里一个女人和店员在说话。",
+    "question": "女人接下来首先要做什么？",
+    "lines": [
+     "不好意思，手机屏幕摔裂了，想请你们修一下。",
+     "好的。修理的话需要寄存一周左右。这期间可以借您一部替代机。",
+     "太好了。那个，修理费要很多吗？",
+     "您已经加入了保障服务，这次是免费的。",
+     "啊，原来我加入了。太好了。那就这样拜托了。",
+     "不过，送修的话里面的数据会全部清除。寄存之前需要您自己先保存好。",
+     "诶，是吗。要多长时间？",
+     "三十分钟左右。在家里的电脑上也能弄，在我们柜台这边也可以帮您。",
+     "嗯……照片很多，我回家慢慢弄。弄完再来。",
+     "好的。替代机到时候再给您。"
+    ],
+    "options": [
+     "申请修理",
+     "借替代机",
+     "加入保障服务",
+     "保存数据"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a shop assistant are talking at a mobile phone shop.",
+    "question": "What will the woman do first?",
+    "lines": [
+     "Excuse me, my phone screen cracked and I'd like to get it repaired.",
+     "Certainly. A repair means we keep it for about a week. We can lend you a replacement in the meantime.",
+     "Good. Um, is the repair expensive?",
+     "You're signed up for our protection plan, so this time it's free.",
+     "Oh, I'm on that? Great. Then please go ahead.",
+     "Only, sending it for repair wipes all the data on it. You'll need to back it up yourself before we take it.",
+     "Oh, really? How long does that take?",
+     "About thirty minutes. You can do it on your computer at home, or we can help you here at the counter.",
+     "Hmm, I have lots of photos, so I'll take my time at home. I'll come back when it's done.",
+     "Certainly. We'll give you the replacement then."
+    ],
+    "options": [
+     "Apply for the repair",
+     "Borrow a replacement phone",
+     "Sign up for the protection plan",
+     "Back up the data"
+    ]
+   }
+  },
+  "why": {
+   "zh": "送修前必须自己保存数据；她说「家でゆっくりやります。終わったら、また来ます」，所以先回家保存数据。",
+   "en": "Data must be backed up before the phone is taken in; she'll do it at home and come back."
+  },
+  "wrong": [
+   {
+    "zh": "正式送修要等保存完数据、再来店的时候。",
+    "en": "The repair can only be handed in after the backup, when she comes back."
+   },
+   {
+    "zh": "替代机「そのときにお渡しします」，是再来店时的事。",
+    "en": "The replacement is handed over when she returns."
+   },
+   {
+    "zh": "她已经加入了保障服务，所以修理免费。",
+    "en": "She is already on the protection plan."
+   },
+   null
+  ],
+  "traps": [
+   "order",
+   "done-already",
+   "later"
+  ]
+ },
+ {
+  "id": "n2-ck-106",
+  "type": "kadai",
+  "scene": "町内会の集まりで女の人と男の人が話しています。",
+  "question": "男の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "F",
+    "森さん、来月の公園の掃除の日、係を引き受けてくださってありがとうございます。"
+   ],
+   [
+    "M",
+    "いえいえ。で、何から始めればいいでしょう。お知らせを書いて、回覧板で回すんですよね。"
+   ],
+   [
+    "F",
+    "あ、お知らせは毎年同じ文なので、日にちだけ変えて、私が作っておきます。"
+   ],
+   [
+    "M",
+    "助かります。じゃあ、ごみ袋をもらいに、市役所に行ってきましょうか。"
+   ],
+   [
+    "F",
+    "ごみ袋は、会長がちょうど来週、別の用事で市役所に行くそうなので、ついでに頼みました。"
+   ],
+   [
+    "M",
+    "そうですか。じゃあ、軍手を買ってきます。去年は足りなかったって聞いたので。"
+   ],
+   [
+    "F",
+    "それなんですけど、去年買ったのが、倉庫に少し残ってるはずなんです。買う前に、まずいくつあるか見てきてもらえますか。足りない分だけ買えばいいので。"
+   ],
+   [
+    "M",
+    "わかりました。じゃあ、鍵をお借りしてもいいですか。"
+   ],
+   [
+    "F",
+    "はい、どうぞ。"
+   ]
+  ],
+  "options": [
+   "お知らせを書く",
+   "ごみ袋をもらう",
+   "倉庫を見に行く",
+   "軍手を買いに行く"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "町内会的聚会上一个女人和一个男人在说话。",
+    "question": "男人接下来首先要做什么？",
+    "lines": [
+     "森先生，谢谢您接下下个月公园大扫除的负责工作。",
+     "哪里哪里。那从哪儿开始好呢？要写通知，用传阅板传下去吧。",
+     "啊，通知每年都是一样的内容，我改一下日期做好就行。",
+     "帮大忙了。那我去市政府领垃圾袋吧？",
+     "垃圾袋的话，会长正好下周有别的事要去市政府，我顺便拜托他了。",
+     "这样啊。那我去买劳保手套。听说去年不够。",
+     "说到这个，去年买的应该在仓库里还剩一些。买之前能先去看看有几副吗？只买不够的部分就行。",
+     "明白了。那钥匙能借我一下吗？",
+     "好的，给您。"
+    ],
+    "options": [
+     "写通知",
+     "领垃圾袋",
+     "去看仓库",
+     "去买手套"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking at a neighbourhood association meeting.",
+    "question": "What will the man do first?",
+    "lines": [
+     "Mori-san, thank you for taking charge of next month's park clean-up day.",
+     "Not at all. So where do I start? I write a notice and send it round on the circular board, right?",
+     "Oh, the notice is the same every year, so I'll just change the date and do it myself.",
+     "That helps. Then shall I go to City Hall to pick up the rubbish bags?",
+     "The chairman happens to be going to City Hall next week on other business, so I asked him to get them.",
+     "I see. Then I'll go and buy work gloves. I heard there weren't enough last year.",
+     "About that — there should be a few left in the storeroom from last year. Before you buy any, could you go and see how many there are? Then we only buy what's missing.",
+     "Understood. Could I borrow the key, then?",
+     "Sure, here you are."
+    ],
+    "options": [
+     "Write the notice",
+     "Get the rubbish bags",
+     "Go and check the storeroom",
+     "Go and buy gloves"
+    ]
+   }
+  },
+  "why": {
+   "zh": "买手套之前要先去仓库看看还剩几副，男人借钥匙，所以先去仓库。",
+   "en": "Before buying gloves he must check how many are left in the storeroom; he asks for the key."
+  },
+  "wrong": [
+   {
+    "zh": "通知女人说「私が作っておきます」。",
+    "en": "She will write the notice herself."
+   },
+   {
+    "zh": "垃圾袋拜托了下周去市政府的会长。",
+    "en": "The chairman will pick up the bags next week."
+   },
+   null,
+   {
+    "zh": "买手套是看完仓库之后，只买不够的部分。",
+    "en": "Buying comes after checking, and only for what's missing."
+   }
+  ],
+  "traps": [
+   "order",
+   "someone-else",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n2-ck-107",
+  "type": "kadai",
+  "scene": "大学で先生と男の学生が話しています。",
+  "question": "男の学生はこのあとまず何をしなければなりませんか。",
+  "lines": [
+   [
+    "M",
+    "先生、来週のゼミの発表なんですが、今日からスライドを作り始めようと思っています。"
+   ],
+   [
+    "F",
+    "そう。その前に、この間見せてくれたアンケートの表なんだけど。"
+   ],
+   [
+    "M",
+    "はい。"
+   ],
+   [
+    "F",
+    "答えた人の数、合計が合わないところがあるんですよ。百二十人のはずが、百三十人になってる。"
+   ],
+   [
+    "M",
+    "え、そうですか。"
+   ],
+   [
+    "F",
+    "グラフはその数字から作るんだから、スライドより先に、もう一回数え直してください。"
+   ],
+   [
+    "M",
+    "わかりました。あの、レジュメはいつまでに出せば……。"
+   ],
+   [
+    "F",
+    "レジュメは発表の前の日まででいいですよ。"
+   ],
+   [
+    "M",
+    "それから、答えた人がちょっと少ないかなと思って、もう一回調査をしようかと……。"
+   ],
+   [
+    "F",
+    "それは卒論のときでいいでしょう。今回はこの数字で十分ですから。"
+   ]
+  ],
+  "options": [
+   "データを数え直す",
+   "スライドを作る",
+   "レジュメを出す",
+   "もう一度調査する"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "大学里老师和一个男学生在说话。",
+    "question": "男学生接下来首先必须做什么？",
+    "lines": [
+     "老师，下周研讨课的发表，我打算从今天开始做幻灯片。",
+     "好。在那之前，你上次给我看的问卷表格啊。",
+     "是。",
+     "回答人数有的地方合计对不上。应该是一百二十人，却成了一百三十人。",
+     "诶，是吗。",
+     "图表是根据那个数字做的，所以先别做幻灯片，重新数一遍。",
+     "明白了。那个，讲义要什么时候交……",
+     "讲义在发表前一天交就行。",
+     "还有，我觉得回答的人有点少，想再做一次调查……",
+     "那个等写毕业论文的时候再说吧。这次用这些数字就够了。"
+    ],
+    "options": [
+     "重新统计数据",
+     "做幻灯片",
+     "交讲义",
+     "再调查一次"
+    ]
+   },
+   "en": {
+    "scene": "A professor and a male student are talking at university.",
+    "question": "What does the male student have to do first?",
+    "lines": [
+     "Professor, about my seminar presentation next week — I'm planning to start on the slides today.",
+     "I see. Before that — the survey table you showed me the other day.",
+     "Yes?",
+     "The number of respondents doesn't add up in places. It should be a hundred and twenty, but it says a hundred and thirty.",
+     "Oh, really?",
+     "Your graphs come from those numbers, so recount them before you do the slides.",
+     "Understood. Um, when should I hand in the handout…?",
+     "The handout can wait until the day before the presentation.",
+     "Also, I thought there weren't quite enough respondents, so I was thinking of running the survey again…",
+     "That can wait for your graduation thesis. These numbers are enough for now."
+    ],
+    "options": [
+     "Recount the data",
+     "Make the slides",
+     "Hand in the handout",
+     "Run the survey again"
+    ]
+   }
+  },
+  "why": {
+   "zh": "人数合计有误，图表要用这些数字，老师说「スライドより先に、もう一回数え直して」。",
+   "en": "The totals are wrong and the graphs depend on them, so he must recount before making slides."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "幻灯片要在重新统计之后做。",
+    "en": "The slides come after the recount."
+   },
+   {
+    "zh": "讲义「発表の前の日まででいい」。",
+    "en": "The handout is due the day before the presentation."
+   },
+   {
+    "zh": "再调查「卒論のときでいい」，这次不用。",
+    "en": "A new survey can wait for the thesis."
+   }
+  ],
+  "traps": [
+   "order",
+   "later"
+  ]
+ },
+ {
+  "id": "n2-ck-108",
+  "type": "kadai",
+  "scene": "男の人と女の人が電話で話しています。",
+  "question": "女の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "M",
+    "もしもし、山本さん？　今、取引先からの帰りなんだけど、ちょっとお願いしてもいい？"
+   ],
+   [
+    "F",
+    "はい、どうぞ。"
+   ],
+   [
+    "M",
+    "明日の会議で使うファイル、僕のパソコンに入れたままにしちゃって。共有フォルダにも入ってるから、それを部長にメールで送っといてくれないかな。部長、今日中に目を通したいって言ってて。"
+   ],
+   [
+    "F",
+    "わかりました。部長には、田中さんの戻りが遅くなるって伝えたほうがいいですか。"
+   ],
+   [
+    "M",
+    "あ、それはさっき自分でメッセージ送ったから大丈夫。"
+   ],
+   [
+    "F",
+    "そうですか。あと、さっき取引先の佐藤さんからお電話がありました。折り返しお願いしますって。私からかけておきましょうか。"
+   ],
+   [
+    "M",
+    "いや、それは話が込み入ってるから、戻ってから僕がかけるよ。"
+   ],
+   [
+    "F",
+    "わかりました。明日の資料の印刷は？"
+   ],
+   [
+    "M",
+    "それは明日の朝、自分でやるからいいよ。とりあえず、ファイルだけ急ぎでお願い。"
+   ]
+  ],
+  "options": [
+   "部長に伝える",
+   "ファイルを送る",
+   "資料を印刷する",
+   "取引先に電話する"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在打电话。",
+    "question": "女人接下来首先要做什么？",
+    "lines": [
+     "喂，山本吗？我现在从客户那儿回来的路上，能拜托你点事吗？",
+     "好的，您说。",
+     "明天开会用的文件我放在自己电脑里了。共享文件夹里也有，你能把它用邮件发给部长吗？部长说想今天之内看一遍。",
+     "明白了。要跟部长说一声田中你回来得晚吗？",
+     "啊，那个我刚才自己发消息说了，没事。",
+     "好的。还有，刚才客户那边的佐藤先生来过电话，说请您回电。要我先打过去吗？",
+     "不用，那件事比较复杂，我回去以后自己打。",
+     "明白了。明天资料的打印呢？",
+     "那个我明天早上自己弄，不用了。总之先急着把文件发了。"
+    ],
+    "options": [
+     "告诉部长",
+     "发送文件",
+     "打印资料",
+     "给客户打电话"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking on the phone.",
+    "question": "What will the woman do first?",
+    "lines": [
+     "Hello, Yamamoto-san? I'm on my way back from a client — can I ask you a favour?",
+     "Sure, go ahead.",
+     "I left the file for tomorrow's meeting on my computer. It's in the shared folder too, so could you email it to the director? He wants to look through it today.",
+     "Got it. Should I tell the director you'll be back late?",
+     "Oh, I messaged him myself just now, so that's fine.",
+     "OK. Also, Mr Sato from one of our clients called earlier and asked you to call back. Shall I call him for you?",
+     "No, it's complicated — I'll call him when I'm back.",
+     "All right. What about printing tomorrow's handouts?",
+     "I'll do that myself tomorrow morning. For now, just the file, quickly please."
+    ],
+    "options": [
+     "Tell the director",
+     "Send the file",
+     "Print the handouts",
+     "Call the client"
+    ]
+   }
+  },
+  "why": {
+   "zh": "男人请她把共享文件夹里的文件发给部长，最后说「ファイルだけ急ぎでお願い」。",
+   "en": "He asks her to email the file to the director and ends with 'just the file, quickly'."
+  },
+  "wrong": [
+   {
+    "zh": "晚回去的事男人「自分でメッセージ送った」。",
+    "en": "He already messaged the director himself."
+   },
+   null,
+   {
+    "zh": "打印他「明日の朝、自分でやる」。",
+    "en": "He'll print them himself tomorrow morning."
+   },
+   {
+    "zh": "回电他说「戻ってから僕がかける」。",
+    "en": "He'll call the client himself when he's back."
+   }
+  ],
+  "traps": [
+   "done-already",
+   "someone-else",
+   "later"
+  ]
+ },
+ {
+  "id": "n2-ck-109",
+  "type": "kadai",
+  "scene": "スポーツクラブの受付で男の人と係の人が話しています。",
+  "question": "男の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "M",
+    "すみません、入会したいんですが。"
+   ],
+   [
+    "F",
+    "ありがとうございます。ご入会には、申込書と、身分証明書と、お支払いの口座の届けが必要になります。"
+   ],
+   [
+    "M",
+    "身分証は免許証があります。口座は……通帳、持ってきてないな。"
+   ],
+   [
+    "F",
+    "口座の用紙は、お持ち帰りいただいて、後日ご郵送いただいても大丈夫ですよ。"
+   ],
+   [
+    "M",
+    "よかった。今日からプールを使いたいんですけど。"
+   ],
+   [
+    "F",
+    "申し訳ございません。プールは、初めての方には先に説明会に出ていただくことになっておりまして。次は土曜日です。"
+   ],
+   [
+    "M",
+    "そうですか。じゃ、今日はジムだけにします。ロッカーは、どこで借りればいいですか。"
+   ],
+   [
+    "F",
+    "ロッカーは会員証でお使いいただけます。まずはこちらの申込書にご記入ください。そのあとで会員証をお作りしますので。"
+   ],
+   [
+    "M",
+    "わかりました。"
+   ]
+  ],
+  "options": [
+   "口座を届け出る",
+   "説明会に出る",
+   "ロッカーを借りる",
+   "申込書を書く"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "健身俱乐部前台，一个男人和工作人员在说话。",
+    "question": "男人接下来首先要做什么？",
+    "lines": [
+     "不好意思，我想入会。",
+     "谢谢您。入会需要申请表、身份证件，以及付款账户的登记。",
+     "身份证件有驾照。账户嘛……存折没带来啊。",
+     "账户的表格可以带回去，日后邮寄过来也没关系。",
+     "太好了。我想今天就开始用游泳池。",
+     "非常抱歉。游泳池规定第一次使用的人要先参加说明会。下一次是星期六。",
+     "这样啊。那今天只用健身房吧。储物柜在哪里借？",
+     "储物柜用会员卡就能用。请先填写这张申请表，之后给您办会员卡。",
+     "好的。"
+    ],
+    "options": [
+     "登记账户",
+     "参加说明会",
+     "借储物柜",
+     "填申请表"
+    ]
+   },
+   "en": {
+    "scene": "A man and a staff member are talking at the front desk of a sports club.",
+    "question": "What will the man do first?",
+    "lines": [
+     "Excuse me, I'd like to join.",
+     "Thank you. To join, we need an application form, ID, and your bank account details for payment.",
+     "I have my driving licence for ID. The account… I didn't bring my bankbook.",
+     "You can take the account form home and post it to us later.",
+     "Good. I'd like to use the pool from today.",
+     "I'm sorry. First-time users have to attend an orientation before using the pool. The next one is on Saturday.",
+     "I see. Then just the gym today. Where do I get a locker?",
+     "Lockers work with your membership card. First, please fill in this application form — then we'll make your card.",
+     "All right."
+    ],
+    "options": [
+     "Register his bank account",
+     "Attend the orientation",
+     "Get a locker",
+     "Fill in the application form"
+    ]
+   }
+  },
+  "why": {
+   "zh": "工作人员说「まずはこちらの申込書にご記入ください」，填完才办会员卡、用储物柜。",
+   "en": "She says to fill in the application form first; the card, and so the locker, come after."
+  },
+  "wrong": [
+   {
+    "zh": "账户表格可以带回去「後日ご郵送」。",
+    "en": "The account form can be posted later."
+   },
+   {
+    "zh": "说明会是星期六，今天他只用健身房。",
+    "en": "The orientation is on Saturday; today he'll only use the gym."
+   },
+   {
+    "zh": "储物柜要用会员卡，会员卡在填完申请表之后才办。",
+    "en": "Lockers need the card, which is made after the form."
+   },
+   null
+  ],
+  "traps": [
+   "order",
+   "later",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n2-ck-110",
+  "type": "kadai",
+  "scene": "会社で女の人と男の人が展示会の準備について話しています。",
+  "question": "男の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "F",
+    "来週の展示会、準備、どこまで進んでる？"
+   ],
+   [
+    "M",
+    "展示する商品は、今日の夕方、会場に送る予定です。"
+   ],
+   [
+    "F",
+    "あ、その発送は運送会社に頼んで、総務の人が手配してくれることになったから、やらなくていいよ。"
+   ],
+   [
+    "M",
+    "そうでしたか。じゃあ、配るパンフレットですね。原稿は部長に見てもらって、オーケーが出ました。"
+   ],
+   [
+    "F",
+    "よかった。印刷屋さん、三日はかかるって言ってたよね。今日頼まないと、ぎりぎりになっちゃう。"
+   ],
+   [
+    "M",
+    "はい。あと、ブースの組み立ての時間を、会場に確認しないと……。"
+   ],
+   [
+    "F",
+    "それは昨日、私が電話で聞いといた。朝八時からだって。"
+   ],
+   [
+    "M",
+    "ありがとうございます。名札も作らないといけませんね。"
+   ],
+   [
+    "F",
+    "名札は前の日でいいよ。とにかく、今日中にやらなきゃいけないことを先に片付けて。"
+   ],
+   [
+    "M",
+    "わかりました。じゃ、さっそく頼んできます。"
+   ]
+  ],
+  "options": [
+   "印刷を注文する",
+   "展示品を発送する",
+   "会場に確認する",
+   "名札を用意する"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个女人和一个男人在谈展会的准备。",
+    "question": "男人接下来首先要做什么？",
+    "lines": [
+     "下周的展会，准备到哪一步了？",
+     "展出的商品打算今天傍晚寄到会场。",
+     "啊，那个发货已经交给运输公司，由总务的人安排了，你不用做。",
+     "是吗。那就是要发的宣传册了。原稿请部长看过，已经同意了。",
+     "太好了。印刷厂说要三天吧。今天不下单就太紧了。",
+     "是。还有，得跟会场确认搭展位的时间……",
+     "那个我昨天打电话问过了。说是早上八点开始。",
+     "谢谢。名牌也得做吧。",
+     "名牌前一天做就行。总之，先把今天之内必须做的事办了。",
+     "明白了。那我马上去下单。"
+    ],
+    "options": [
+     "下单印刷",
+     "寄送展品",
+     "向会场确认",
+     "准备名牌"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking at the office about preparing for a trade show.",
+    "question": "What will the man do first?",
+    "lines": [
+     "How far along is the prep for next week's trade show?",
+     "I'm planning to send the display products to the venue this evening.",
+     "Oh, General Affairs is arranging that with a delivery company now, so you don't need to.",
+     "I see. Then the brochures we're handing out. The director checked the draft and gave it the OK.",
+     "Great. The printer said it takes three days, didn't they? If we don't order today, it'll be cutting it close.",
+     "Right. And I need to check with the venue what time we can set up the booth…",
+     "I phoned and asked yesterday. From eight in the morning, they said.",
+     "Thank you. We need to make name badges too.",
+     "Badges can wait till the day before. Just get today's must-do done first.",
+     "Understood. I'll go and place the order now."
+    ],
+    "options": [
+     "Order the printing",
+     "Ship the display items",
+     "Check with the venue",
+     "Prepare name badges"
+    ]
+   }
+  },
+  "why": {
+   "zh": "印刷要三天，「今日頼まないと、ぎりぎり」；女人让他先做今天必须做的事，他说「さっそく頼んできます」。",
+   "en": "Printing takes three days, so it must be ordered today; he goes to place the order."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "发货由总务安排，「やらなくていい」。",
+    "en": "General Affairs is handling the shipping."
+   },
+   {
+    "zh": "搭展位的时间女人昨天已经问过了。",
+    "en": "She already checked the set-up time yesterday."
+   },
+   {
+    "zh": "名牌「前の日でいい」。",
+    "en": "Badges can wait until the day before."
+   }
+  ],
+  "traps": [
+   "someone-else",
+   "done-already",
+   "later"
+  ]
+ },
+ {
+  "id": "n2-ck-111",
+  "type": "kadai",
+  "scene": "大学の就職支援センターで女の学生と係の人が話しています。",
+  "question": "女の学生はこのあとまず何をしなければなりませんか。",
+  "lines": [
+   [
+    "F",
+    "すみません、この会社の夏のインターンシップに応募したいんですけど、まず何をすればいいですか。"
+   ],
+   [
+    "M",
+    "ええと、応募の書類に志望理由を書く欄がありますね。締め切りは来月の末です。"
+   ],
+   [
+    "F",
+    "じゃあ、今日からそれを書き始めます。"
+   ],
+   [
+    "M",
+    "あ、でもね、この会社は、先に会社の説明会に出た人しか応募できないんですよ。説明会の予約、今日の五時までになってますね。"
+   ],
+   [
+    "F",
+    "え、今日ですか。"
+   ],
+   [
+    "M",
+    "ええ。それに、志望理由は説明会で話を聞いてから書いたほうが、いいものが書けると思いますよ。"
+   ],
+   [
+    "F",
+    "わかりました。あと、書類に貼る写真って、撮り直したほうがいいですか。"
+   ],
+   [
+    "M",
+    "先月撮ったものなら、それで大丈夫です。それから、この会社に行った先輩がいるので、話を聞きたければ、こちらから連絡しておきますよ。"
+   ],
+   [
+    "F",
+    "ぜひお願いします。"
+   ]
+  ],
+  "options": [
+   "志望理由を書く",
+   "説明会を予約する",
+   "写真を撮りに行く",
+   "先輩に話を聞く"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "大学就业指导中心里，一个女学生和工作人员在说话。",
+    "question": "女学生接下来首先必须做什么？",
+    "lines": [
+     "不好意思，我想申请这家公司的暑期实习，首先该做什么？",
+     "嗯，申请材料里有写志愿理由的栏。截止是下个月底。",
+     "那我今天就开始写。",
+     "啊，不过这家公司只有先参加过说明会的人才能申请。说明会的预约是到今天五点为止。",
+     "诶，今天吗？",
+     "对。而且志愿理由听完说明会再写，应该能写得更好。",
+     "明白了。还有，材料上贴的照片要不要重拍？",
+     "上个月拍的就没问题。还有，有个学长学姐在这家公司，想听听的话，我们这边可以帮你联系。",
+     "那就拜托了。"
+    ],
+    "options": [
+     "写志愿理由",
+     "预约说明会",
+     "去拍照片",
+     "向学长学姐请教"
+    ]
+   },
+   "en": {
+    "scene": "A female student and a staff member are talking at the university careers centre.",
+    "question": "What does the female student have to do first?",
+    "lines": [
+     "Excuse me, I'd like to apply for this company's summer internship. What should I do first?",
+     "Let's see — the application has a section for your reasons for applying. The deadline is the end of next month.",
+     "Then I'll start writing that today.",
+     "Ah, but with this company, only people who've attended their information session can apply. Bookings for the session close at five today.",
+     "What, today?",
+     "Yes. And I think you'll write better reasons once you've heard them speak.",
+     "Got it. Also, should I retake the photo for the application?",
+     "If it's from last month, that's fine. Also, a graduate of ours works there — if you'd like to talk to them, we can get in touch for you.",
+     "Yes, please."
+    ],
+    "options": [
+     "Write her reasons for applying",
+     "Book the information session",
+     "Go and have a photo taken",
+     "Talk to the graduate"
+    ]
+   }
+  },
+  "why": {
+   "zh": "只有参加过说明会的人才能申请，预约今天五点截止，所以先预约说明会。",
+   "en": "Only those who attended the session can apply, and bookings close at five today."
+  },
+  "wrong": [
+   {
+    "zh": "志愿理由截止是下个月底，而且听完说明会再写更好。",
+    "en": "The deadline is next month, and it's better written after the session."
+   },
+   null,
+   {
+    "zh": "上个月拍的照片可以用。",
+    "en": "Last month's photo is fine."
+   },
+   {
+    "zh": "要等工作人员先帮她联系学长学姐。",
+    "en": "The staff member will contact the graduate first."
+   }
+  ],
+  "traps": [
+   "order",
+   "condition-conflict",
+   "done-already",
+   "someone-else"
+  ]
+ },
+ {
+  "id": "n2-ck-112",
+  "type": "kadai",
+  "scene": "旅行会社で男の人と店の人が話しています。",
+  "question": "男の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "M",
+    "すみません、来月のシンガポールのツアー、申し込みたいんですけど。"
+   ],
+   [
+    "F",
+    "ありがとうございます。パスポートを拝見してもよろしいですか。……あ、お客様、こちら、期限が三月までになっていますね。"
+   ],
+   [
+    "M",
+    "ええ。まだ大丈夫ですよね。"
+   ],
+   [
+    "F",
+    "それが、行き先によっては、残りが半年以上ないと入れないことがありまして。こちらのツアーですと、先に新しいものにしていただく必要があるんです。"
+   ],
+   [
+    "M",
+    "そうなんですか。じゃあ、ツアーの予約は……。"
+   ],
+   [
+    "F",
+    "ご予約には新しいパスポートの番号が必要なので、できてからで大丈夫です。お席にはまだ余裕がありますので。"
+   ],
+   [
+    "M",
+    "更新って、すぐできるんですか。"
+   ],
+   [
+    "F",
+    "申請してから一週間ほどです。申請には写真が要りますが、お持ちですか。"
+   ],
+   [
+    "M",
+    "いや、ないです。じゃあ、駅のところで撮ってから、そのまま申請に行きます。"
+   ],
+   [
+    "F",
+    "かしこまりました。海外旅行の保険も、ツアーのお申し込みのときに、ご一緒にどうぞ。"
+   ]
+  ],
+  "options": [
+   "ツアーを予約する",
+   "保険に申し込む",
+   "更新の手続きをする",
+   "証明写真を撮る"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "旅行社里一个男人和店员在说话。",
+    "question": "男人接下来首先要做什么？",
+    "lines": [
+     "不好意思，我想报名下个月的新加坡旅游团。",
+     "谢谢您。可以看一下您的护照吗？……啊，先生，这本护照的有效期到三月为止。",
+     "对。还没问题吧。",
+     "其实有些目的地要求剩余有效期在半年以上才能入境。这个旅游团的话，需要您先换新护照。",
+     "是吗。那旅游团的预订……",
+     "预订需要新护照的号码，所以办好以后再订就行。座位还很充足。",
+     "更新马上就能办吗？",
+     "申请后一周左右。申请需要照片，您带了吗？",
+     "没有。那我在车站那边拍完，直接去申请。",
+     "好的。海外旅行保险也可以在报名旅游团的时候一起办。"
+    ],
+    "options": [
+     "预订旅游团",
+     "申请保险",
+     "办更新手续",
+     "拍证件照"
+    ]
+   },
+   "en": {
+    "scene": "A man and a travel agent are talking at a travel agency.",
+    "question": "What will the man do first?",
+    "lines": [
+     "Excuse me, I'd like to sign up for next month's Singapore tour.",
+     "Thank you. May I see your passport? … Ah, sir, this one is valid only until March.",
+     "Yes. It's still fine, isn't it?",
+     "Actually, some countries won't let you in unless it has at least six months left. For this tour, you'd need to get a new one first.",
+     "Really? Then what about booking the tour…?",
+     "Booking needs the new passport number, so it can wait until you have it. There are still plenty of seats.",
+     "Can you renew it quickly?",
+     "About a week after you apply. You'll need a photo for the application — do you have one?",
+     "No, I don't. Then I'll get one taken at the station and go straight on to apply.",
+     "Certainly. You can take out travel insurance at the same time as booking the tour."
+    ],
+    "options": [
+     "Book the tour",
+     "Take out insurance",
+     "Apply to renew the passport",
+     "Have an ID photo taken"
+    ]
+   }
+  },
+  "why": {
+   "zh": "更新护照需要照片，他没有，说「駅のところで撮ってから、そのまま申請に行きます」，所以先拍照。",
+   "en": "Renewal needs a photo he doesn't have; he'll get it taken at the station, then apply."
+  },
+  "wrong": [
+   {
+    "zh": "预订要新护照的号码，「できてからで大丈夫」。",
+    "en": "Booking needs the new passport number, so it waits."
+   },
+   {
+    "zh": "保险在报名旅游团时一起办。",
+    "en": "Insurance is arranged together with the tour booking."
+   },
+   {
+    "zh": "更新申请要在拍完照片之后。",
+    "en": "He can only apply once he has the photo."
+   },
+   null
+  ],
+  "traps": [
+   "order",
+   "later",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n2-ck-113",
+  "type": "kadai",
+  "scene": "本屋で店長と新しいアルバイトの女の人が話しています。",
+  "question": "女の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "M",
+    "今日は、最初にレジの使い方を覚えてもらおうと思ってたんだけど、教える係の人が急に休みになっちゃってね。レジは明日にしよう。"
+   ],
+   [
+    "F",
+    "はい。"
+   ],
+   [
+    "M",
+    "代わりに、この新しく入った本を棚に並べてもらえる？　あ、でも、その前に。"
+   ],
+   [
+    "F",
+    "はい？"
+   ],
+   [
+    "M",
+    "この箱は、お客さんに取り寄せを頼まれてた本なんだ。カウンターの後ろの棚に、お客さんの名前の順に分けといてくれる？　今日取りに来る人もいるから、そっちを先に。"
+   ],
+   [
+    "F",
+    "わかりました。届いたこと、お客さんに電話で知らせたほうがいいですか。"
+   ],
+   [
+    "M",
+    "ああ、電話は僕がするから大丈夫。慣れないと、名前を間違えやすいし。"
+   ],
+   [
+    "F",
+    "はい。この空いた段ボールは？"
+   ],
+   [
+    "M",
+    "段ボールは、あとで僕がまとめて出すから、そのままでいいよ。"
+   ]
+  ],
+  "options": [
+   "レジの使い方を習う",
+   "新しい本を棚に並べる",
+   "注文の本を分ける",
+   "お客さんに電話する"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "书店里店长和新来的女兼职在说话。",
+    "question": "女人接下来首先要做什么？",
+    "lines": [
+     "今天本来想先让你学会用收银机的，可负责教的人突然请假了。收银机就明天吧。",
+     "好的。",
+     "作为替代，能把这些新到的书摆上架吗？啊，不过在那之前。",
+     "嗯？",
+     "这箱是客人订购的书。能按客人名字的顺序分好放到柜台后面的架子上吗？今天就有人来取，那个先做。",
+     "明白了。要打电话告诉客人书到了吗？",
+     "啊，电话我来打，没事。不熟的话容易搞错名字。",
+     "好的。这些空纸箱呢？",
+     "纸箱我待会儿一起拿出去，放着就行。"
+    ],
+    "options": [
+     "学用收银机",
+     "把新书摆上架",
+     "分好订购的书",
+     "给客人打电话"
+    ]
+   },
+   "en": {
+    "scene": "A bookshop manager and a new female part-timer are talking.",
+    "question": "What will the woman do first?",
+    "lines": [
+     "I was going to have you learn the register first today, but the person who teaches it is suddenly off. Let's do the register tomorrow.",
+     "OK.",
+     "Instead, could you shelve these new arrivals? Oh — but before that.",
+     "Yes?",
+     "This box is books customers ordered. Could you sort them by customer name onto the shelf behind the counter? Some people are coming for theirs today, so do that first.",
+     "Understood. Should I phone the customers to tell them the books are in?",
+     "No, I'll make the calls. It's easy to get names wrong until you're used to it.",
+     "OK. What about these empty boxes?",
+     "I'll take the boxes out later all together, so just leave them."
+    ],
+    "options": [
+     "Learn to use the register",
+     "Shelve the new books",
+     "Sort the ordered books",
+     "Phone the customers"
+    ]
+   }
+  },
+  "why": {
+   "zh": "店长说摆新书「その前に」，先把客人订的书按名字分好，「そっちを先に」。",
+   "en": "Before shelving, he wants the ordered books sorted by name — 'do that first'."
+  },
+  "wrong": [
+   {
+    "zh": "教收银的人请假了，收银机改到明天。",
+    "en": "The register lesson is moved to tomorrow."
+   },
+   {
+    "zh": "摆新书是分完订购的书之后。",
+    "en": "Shelving comes after sorting the orders."
+   },
+   null,
+   {
+    "zh": "电话店长自己打。",
+    "en": "The manager will make the calls himself."
+   }
+  ],
+  "traps": [
+   "order",
+   "later",
+   "someone-else"
+  ]
  }
 ]

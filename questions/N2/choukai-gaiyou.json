@@ -71,5 +71,906 @@
    { "zh": "故事删减后他觉得「気持ちがついていかない」，是缺点，不是更好懂。", "en": "The cuts leave him unable to feel the ending — a flaw, not easier to follow." },
    { "zh": "他说「映画館の大きな画面で見る価値はある」，正好相反。", "en": "He says it's worth seeing on a big cinema screen — the opposite." }],
   "traps": ["attitude-combo", "twisted"]
+ },
+ {
+  "id": "n2-ck-303",
+  "type": "gaiyou",
+  "scene": "大学の授業で先生が話しています。",
+  "question": "先生は何について話していますか。",
+  "lines": [
+   [
+    "M",
+    "では、きょうは一回目なので、この授業のレポートについて話しておきます。成績は、学期末のレポートで決まります。毎年気になるのは、インターネットで調べたことを、そのまま自分の意見のように書いてくる人が多いことです。調べること自体は、もちろんかまいません。ただ、どこまでがほかの人の考えで、どこからが自分の考えなのか、読む人にはっきり分かるように書いてください。それができていないレポートは、どんなに長くても評価できません。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "ネットで調べてはいけない理由",
+   "レポートを長く書くための方法",
+   "この授業の成績の決まり方",
+   "レポートを書くときの注意点"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一位老师在大学课堂上讲话。",
+    "question": "老师在讲什么？",
+    "lines": [
+     "那么，今天是第一次课，我先讲讲这门课的报告。成绩由期末报告决定。每年让我在意的是，很多人把在网上查到的东西原样写成自己的意见交上来。查资料本身当然没问题。但是请写得让读的人清楚地知道，哪些是别人的想法，从哪里开始是自己的想法。做不到这一点的报告，写得再长也没法给分。"
+    ],
+    "options": [
+     "不能上网查资料的理由",
+     "把报告写长的方法",
+     "这门课成绩的决定方式",
+     "写报告时要注意的地方"
+    ]
+   },
+   "en": {
+    "scene": "A teacher is speaking in a university class.",
+    "question": "What is the teacher talking about?",
+    "lines": [
+     "Well, since this is our first class, let me say something about the report for this course. Your grade is decided by the end-of-term report. What bothers me every year is how many people take what they found on the internet and write it up as if it were their own opinion. Looking things up is fine, of course. But write so that the reader can see clearly which ideas are other people's and where your own begin. A report that doesn't do that can't get credit, however long it is."
+    ],
+    "options": [
+     "Why you mustn't look things up online",
+     "How to make a report longer",
+     "How grades are decided in this course",
+     "Things to watch out for when writing the report"
+    ]
+   }
+  },
+  "why": {
+   "zh": "开头说明成绩靠报告，接着指出常见问题，然后要求「どこまでがほかの人の考えで、どこからが自分の考えなのか」写清楚——全篇讲的是写报告要注意什么。",
+   "en": "He opens with how the report decides the grade, points out a common problem, then asks students to make clear 「どこまでがほかの人の考えで、どこからが自分の考えなのか」— the talk is about what to watch out for in the report."
+  },
+  "wrong": [
+   {
+    "zh": "他说「調べること自体は、もちろんかまいません」，上网查资料是可以的，说反了。",
+    "en": "He says 「調べること自体は、もちろんかまいません」— looking things up is fine; this is the opposite."
+   },
+   {
+    "zh": "「どんなに長くても」是说写得长也没用，不是在教怎么写长。",
+    "en": "「どんなに長くても」 means length won't save it — he isn't teaching how to write more."
+   },
+   {
+    "zh": "成绩由期末报告决定只是开头一句，是细节，不是全篇的主题。",
+    "en": "That the report decides the grade is just the opening line — a detail, not the topic."
+   },
+   null
+  ],
+  "traps": [
+   "twisted",
+   "detail-as-topic"
+  ]
+ },
+ {
+  "id": "n2-ck-304",
+  "type": "gaiyou",
+  "scene": "自転車の店で店員が客に話しています。",
+  "question": "店員は何について話していますか。",
+  "lines": [
+   [
+    "F",
+    "自転車を選ぶとき、まず値段やデザインを見る人が多いんですが、実はそれより先に考えていただきたいことがあるんです。一つは、一回にどのくらいの距離を走るか。駅まで五分なのか、会社まで毎日一時間なのかで、合う自転車はまったく違います。もう一つは、通る道です。坂が多いなら、少し重くても、ギアのついたもののほうが楽ですよ。デザインは、そのあとで選んでいただいても遅くありません。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "自転車選びで先に考えること",
+   "坂道を楽に走るための乗り方",
+   "人気のあるデザインの自転車",
+   "自転車で通勤するときの注意"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在自行车店里，一个店员在跟客人讲话。",
+    "question": "店员在讲什么？",
+    "lines": [
+     "选自行车的时候，很多人先看价格和外观，其实有些事希望您在那之前先考虑。一是每次骑多远。是到车站五分钟，还是每天到公司一个小时，适合的自行车完全不一样。二是走的路。坡多的话，就算重一点，带变速的会轻松些。外观之后再选也不晚。"
+    ],
+    "options": [
+     "选自行车时要先考虑的事",
+     "轻松骑上坡的骑法",
+     "外观受欢迎的自行车",
+     "骑车上班时要注意的事"
+    ]
+   },
+   "en": {
+    "scene": "A shop assistant in a bicycle shop is talking to a customer.",
+    "question": "What is the shop assistant talking about?",
+    "lines": [
+     "When choosing a bike, many people look at the price and design first, but actually there are things I'd like you to think about before that. One is how far you ride each time. Whether it's five minutes to the station or an hour to the office every day, the right bike is completely different. The other is the roads you take. If there are lots of hills, one with gears is easier even if it's a bit heavier. It's not too late to choose the design after that."
+    ],
+    "options": [
+     "What to think about first when choosing a bike",
+     "How to ride up hills easily",
+     "Bikes with popular designs",
+     "Things to watch out for when cycling to work"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「それより先に考えていただきたいことがあるんです」之后列出距离和道路两点，最后说外观之后再选——全篇讲选车时先考虑什么。",
+   "en": "After 「それより先に考えていただきたいことがあるんです」 she gives two points, distance and roads, and ends with design coming later — the talk is about what to consider first."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "坡道只是两点之一，而且讲的是选带变速的车，不是骑法。",
+    "en": "Hills are only one of the two points, and the advice is about choosing a bike with gears, not how to ride."
+   },
+   {
+    "zh": "她说外观「そのあとで選んでいただいても遅くありません」，没有介绍受欢迎的款式。",
+    "en": "She says design can wait — she never talks about popular designs."
+   },
+   {
+    "zh": "上班一个小时只是用来说明距离的例子，是细节。",
+    "en": "Riding an hour to work is just an example of distance — a detail."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n2-ck-305",
+  "type": "gaiyou",
+  "scene": "会社で男の人と女の人が話しています。",
+  "question": "女の人は在宅勤務についてどう思っていますか。",
+  "lines": [
+   [
+    "M",
+    "中村さん、来月から週に三日、在宅勤務になるんだって？"
+   ],
+   [
+    "F",
+    "そうなの。通勤に片道一時間半かかるから、正直、助かるんだけどね。"
+   ],
+   [
+    "M",
+    "いいなあ。うらやましいよ。"
+   ],
+   [
+    "F",
+    "でもね、先月ちょっと試してみたら、ちょっとしたことを聞きたいときに、隣に誰もいないのが意外と困るのよ。メールだと、返事が来るまで仕事が止まっちゃうし。"
+   ],
+   [
+    "M",
+    "ああ、それはあるかもね。"
+   ],
+   [
+    "F",
+    "だから、三日は多いかなって。私は二日ぐらいがちょうどいいと思うんだけど。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "通勤がなくなるので、もっと増やしてほしい",
+   "人に相談しにくいので、やめたほうがいい",
+   "通勤は楽になるが、日数は少なめがいい",
+   "メールで相談できるので、困ることはない"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在公司里，一个男人和一个女人在说话。",
+    "question": "女人觉得在家办公怎么样？",
+    "lines": [
+     "中村，听说你下个月开始每周三天在家办公？",
+     "是啊。上班单程要一个半小时，说实话挺帮忙的。",
+     "真好啊。好羡慕。",
+     "不过呢，上个月稍微试了一下，想问点小事的时候旁边一个人都没有，还真挺麻烦的。发邮件的话，等回复的时候工作就停下来了。",
+     "啊，那倒有可能。",
+     "所以我觉得三天有点多。我觉得两天左右正合适。"
+    ],
+    "options": [
+     "因为不用通勤了，希望再多几天",
+     "因为不好找人商量，最好别搞",
+     "通勤是轻松了，但天数少一点好",
+     "可以用邮件商量，没什么麻烦的"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking at the office.",
+    "question": "What does the woman think about working from home?",
+    "lines": [
+     "Nakamura, I hear you'll be working from home three days a week from next month?",
+     "That's right. My commute is an hour and a half each way, so honestly, it helps.",
+     "Lucky you. I'm jealous.",
+     "But you know, when I tried it a bit last month, it was surprisingly awkward having nobody next to me when I wanted to ask something small. With email, my work stops until the reply comes.",
+     "Ah, that could be a problem.",
+     "So I think three days is a lot. I'd say about two is just right."
+    ],
+    "options": [
+     "Since there's no commute, she wants more days",
+     "It's hard to ask people things, so it'd be better to stop",
+     "The commute gets easier, but fewer days would be better",
+     "She can ask by email, so there's no problem"
+    ]
+   }
+  },
+  "why": {
+   "zh": "她先说通勤一个半小时，在家办公「助かる」；但旁边没人可问很麻烦，所以「三日は多い」「二日ぐらいがちょうどいい」。好处和天数两点都对上的只有这个选项。",
+   "en": "She says it 「助かる」 given her 90-minute commute, but having no one to ask is awkward, so 「三日は多い」 and about two days is right. Only this option has both halves."
+  },
+  "wrong": [
+   {
+    "zh": "她觉得三天都多，希望减少，不是增加。",
+    "en": "She thinks three days is too many — she wants fewer, not more."
+   },
+   {
+    "zh": "她只是想少几天，并没有说不要在家办公。",
+    "en": "She only wants fewer days; she doesn't say it should stop."
+   },
+   null,
+   {
+    "zh": "她说用邮件的话「仕事が止まっちゃう」，正是困扰所在。",
+    "en": "She says email makes her work stop — that's exactly the problem."
+   }
+  ],
+  "traps": [
+   "attitude-combo",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n2-ck-306",
+  "type": "gaiyou",
+  "scene": "町内会の集まりで、会長が話しています。",
+  "question": "会長は何について話していますか。",
+  "lines": [
+   [
+    "M",
+    "毎年秋にやっている防災訓練ですが、ここ数年、参加する人がずいぶん減ってきました。アンケートを取ったところ、平日の昼間では仕事で来られない、という声が一番多かったんです。それから、時間が長すぎるという意見もありました。そこでことしは、日曜日の午前中に変えて、時間も一時間ほどに短くしました。また、お子さんが楽しく参加できるよう、消防車の見学も予定しています。ぜひ、ご家族で来てください。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "訓練に参加する人が減った理由",
+   "災害に備えておくことの大切さ",
+   "子どもが楽しめる見学の内容",
+   "ことしの訓練で変わったところ"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "在町内会的集会上，会长在讲话。",
+    "question": "会长在讲什么？",
+    "lines": [
+     "每年秋天举行的防灾演练，这几年参加的人少了很多。做了问卷调查，最多的意见是平日白天要上班来不了。另外也有人说时间太长。所以今年改到了星期天上午，时间也缩短到一个小时左右。另外，为了让孩子们也能开心地参加，还安排了参观消防车。请大家一定全家一起来。"
+    ],
+    "options": [
+     "参加演练的人减少的原因",
+     "提前防备灾害的重要性",
+     "孩子们能享受的参观内容",
+     "今年演练改变的地方"
+    ]
+   },
+   "en": {
+    "scene": "At a neighbourhood association meeting, the chairman is speaking.",
+    "question": "What is the chairman talking about?",
+    "lines": [
+     "About the disaster drill we hold every autumn: over the last few years, the number of people taking part has dropped a lot. When we did a survey, the most common response was that people can't come on weekday daytimes because of work. Some also said it was too long. So this year we've moved it to Sunday morning and cut it to about an hour. We're also planning a look at a fire engine so children can enjoy taking part. Please do come with your families."
+    ],
+    "options": [
+     "Why fewer people take part in the drill",
+     "The importance of preparing for disasters",
+     "What children can enjoy seeing",
+     "What has changed in this year's drill"
+    ]
+   }
+  },
+  "why": {
+   "zh": "前半的问卷结果是改变的理由，「そこでことしは」之后讲改到星期天上午、缩短时间、加消防车参观——全篇讲今年的演练哪里变了。",
+   "en": "The survey is the reason; after 「そこでことしは」 come the changes — Sunday morning, shorter, a fire-engine visit. The talk is about what's changed this year."
+  },
+  "wrong": [
+   {
+    "zh": "参加人数减少的原因只是前半，是为后面的改变做铺垫。",
+    "en": "Why attendance fell is only the first half — the set-up for the changes."
+   },
+   {
+    "zh": "他没有讲防灾本身有多重要，讲的是演练的安排。",
+    "en": "He never talks about why preparing matters — only how the drill is run."
+   },
+   {
+    "zh": "参观消防车只是改变之一，是细节。",
+    "en": "The fire-engine visit is just one of the changes — a detail."
+   },
+   null
+  ],
+  "traps": [
+   "partial-content",
+   "detail-as-topic"
+  ]
+ },
+ {
+  "id": "n2-ck-307",
+  "type": "gaiyou",
+  "scene": "ラジオで女の人が話しています。",
+  "question": "女の人は何について話していますか。",
+  "lines": [
+   [
+    "F",
+    "部屋で育てている植物がすぐに枯れてしまう、というご相談をよくいただきます。皆さん、日当たりが悪いんじゃないかとか、植物の種類が合わなかったんじゃないかとおっしゃるんですが、お話を伺うと、ほとんどの場合、原因は水のやりすぎなんです。かわいそうだと思って毎日あげていると、根が弱ってしまうんですね。土の表面が乾いてからたっぷり。これだけ覚えておいてください。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "部屋で育てやすい植物の種類",
+   "植物が枯れるいちばんの原因",
+   "植物を置く場所の選び方",
+   "植物の根を強くする方法"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "一个女人在广播里讲话。",
+    "question": "女人在讲什么？",
+    "lines": [
+     "经常有人来咨询，说在屋里养的植物很快就枯了。大家会说是不是光照不好、是不是品种不合适，可是听了情况以后发现，大多数情况下原因是浇水太多。觉得它可怜每天都浇，根就会变弱。等土的表面干了再浇透。请只记住这一点。"
+    ],
+    "options": [
+     "适合在屋里养的植物品种",
+     "植物枯死最主要的原因",
+     "选择摆放植物位置的方法",
+     "让植物的根变强壮的方法"
+    ]
+   },
+   "en": {
+    "scene": "A woman is talking on the radio.",
+    "question": "What is the woman talking about?",
+    "lines": [
+     "I often get questions from people whose houseplants keep dying. People say maybe it's not getting enough sun, or the type of plant was wrong, but when I hear the details, in most cases the cause is too much water. If you water every day because you feel sorry for it, the roots get weak. Water well once the surface of the soil has dried. That's all you need to remember."
+    ],
+    "options": [
+     "Types of plants that are easy to grow indoors",
+     "The main reason plants die",
+     "How to choose where to put a plant",
+     "How to make a plant's roots stronger"
+    ]
+   }
+  },
+  "why": {
+   "zh": "大家猜的光照、品种都被否定，「ほとんどの場合、原因は水のやりすぎ」，最后的建议也是针对浇水——全篇讲植物枯死的主要原因。",
+   "en": "The guesses (sun, plant type) are set aside: 「ほとんどの場合、原因は水のやりすぎ」, and the closing tip is about watering — the talk is about the main cause."
+  },
+  "wrong": [
+   {
+    "zh": "品种只是大家的猜测，她没有介绍哪些品种好养。",
+    "en": "Plant type is only people's guess; she doesn't recommend any."
+   },
+   null,
+   {
+    "zh": "光照也是被否定的猜测，没有讲怎么选位置。",
+    "en": "Sunlight is another rejected guess; she says nothing about where to put plants."
+   },
+   {
+    "zh": "根变弱是浇水太多的结果，她没有讲让根变强的方法。",
+    "en": "Weak roots are the result of overwatering; she gives no way to strengthen them."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "detail-as-topic"
+  ]
+ },
+ {
+  "id": "n2-ck-308",
+  "type": "gaiyou",
+  "scene": "大学で女の学生と男の学生が話しています。",
+  "question": "男の学生は塾のアルバイトについてどう思っていますか。",
+  "lines": [
+   [
+    "F",
+    "先輩、塾で教えるアルバイトしてるんですよね。私もやってみようかなって思ってるんですけど、どうですか。"
+   ],
+   [
+    "M",
+    "うーん、時給は、まあ普通かな。特別いいわけじゃないよ。"
+   ],
+   [
+    "F",
+    "そうなんですか。"
+   ],
+   [
+    "M",
+    "それに、授業の準備にけっこう時間がかかるんだよね。一時間の授業でも、準備に同じぐらいかかったりして。"
+   ],
+   [
+    "F",
+    "へえ、大変そう。"
+   ],
+   [
+    "M",
+    "でもさ、分からないって言ってた子が、テストでいい点取って、報告に来てくれたりすると、やっててよかったなって思うんだよ。だから、俺はまだしばらく続けるつもり。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "準備は大変だが、続ける価値がある",
+   "時給がいいので、ずっと続けたい",
+   "準備が大変なので、人には勧めない",
+   "教えるのは楽しいが、もうやめたい"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在大学里，一个女学生和一个男学生在说话。",
+    "question": "男学生觉得补习班的兼职怎么样？",
+    "lines": [
+     "学长，你在补习班做讲课的兼职对吧？我也在想要不要试试，怎么样？",
+     "嗯……时薪嘛，一般吧。不算特别高。",
+     "这样啊。",
+     "而且备课挺花时间的。哪怕一个小时的课，准备也要差不多那么久。",
+     "哇，听起来好辛苦。",
+     "不过呢，原来说听不懂的孩子考试考了好分数，跑来告诉我，这种时候就会觉得干这个真好。所以我打算再继续干一阵子。"
+    ],
+    "options": [
+     "备课虽然辛苦，但值得继续做",
+     "时薪高，所以想一直做下去",
+     "备课辛苦，所以不推荐给别人",
+     "教书虽然开心，但已经不想干了"
+    ]
+   },
+   "en": {
+    "scene": "A female student and a male student are talking at university.",
+    "question": "What does the male student think of his cram-school job?",
+    "lines": [
+     "You teach at a cram school part-time, right? I'm thinking of trying it too. What's it like?",
+     "Hmm, the pay's, well, average. It's nothing special.",
+     "Oh, really?",
+     "And preparing the lessons takes quite a lot of time. Even for a one-hour lesson, the prep can take about as long.",
+     "Wow, sounds tough.",
+     "But, you know, when a kid who said they didn't get it comes to tell me they got a good score on a test, I think, I'm glad I do this. So I'm planning to keep at it for a while."
+    ],
+    "options": [
+     "Preparing is hard, but it's worth continuing",
+     "The pay is good, so he wants to keep doing it forever",
+     "Preparing is hard, so he wouldn't recommend it",
+     "Teaching is fun, but he wants to quit"
+    ]
+   }
+  },
+  "why": {
+   "zh": "他说备课花时间（缺点），但学生考好时「やっててよかった」，所以「まだしばらく続けるつもり」——辛苦但值得。",
+   "en": "He admits the prep takes time, but when a pupil does well he's glad he does it, so he'll 「まだしばらく続ける」— hard but worth it."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "他说时薪「特別いいわけじゃない」，说反了。",
+    "en": "He says the pay is 「特別いいわけじゃない」— the opposite."
+   },
+   {
+    "zh": "他只说了自己的感受，没有说不推荐；而且他自己还要继续干。",
+    "en": "He never says he wouldn't recommend it — and he's carrying on himself."
+   },
+   {
+    "zh": "他说「まだしばらく続けるつもり」，不是想辞掉。",
+    "en": "He says he'll keep going for a while, not that he wants to quit."
+   }
+  ],
+  "traps": [
+   "attitude-combo",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n2-ck-309",
+  "type": "gaiyou",
+  "scene": "会社の入社式で社長が話しています。",
+  "question": "社長が新入社員に一番伝えたいことは何ですか。",
+  "lines": [
+   [
+    "M",
+    "皆さん、入社おめでとうございます。私が入社したばかりのころの話をしましょう。先輩に頼まれた仕事で、一か所よく分からないところがありました。でも、こんなことを聞いたら仕事ができないと思われる、そう思って、自分で考えたやり方で進めてしまったんです。結果は、お客様に迷惑をかける大きな失敗でした。あとで先輩に、なんでひとこと聞かなかったんだ、と言われました。早く一人前になりたいという焦りは、誰にでもあります。でも、聞くのは恥ずかしいことではありません。皆さんには、私と同じ思いをしてほしくないんです。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "早く仕事を覚えて一人前になってほしい",
+   "恥ずかしがらずに意見を言ってほしい",
+   "先輩のやり方をよく見て学んでほしい",
+   "分からないことはすぐ人に聞いてほしい"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "在公司的入职典礼上，社长在讲话。",
+    "question": "社长最想告诉新员工的是什么？",
+    "lines": [
+     "各位，欢迎加入公司。我来讲讲我刚进公司时的事吧。前辈交给我的工作里有一处不太明白。可是我想，问这种问题会被认为工作能力差，就按自己想的方法做下去了。结果是给客户添了麻烦的大失误。后来前辈对我说：“你为什么不问一句呢？”想早点独当一面的焦急，谁都会有。但是，问别人不是丢人的事。我不希望大家有和我一样的经历。"
+    ],
+    "options": [
+     "希望大家早点学会工作、独当一面",
+     "希望大家不要害羞，说出自己的意见",
+     "希望大家好好看前辈的做法来学习",
+     "希望大家有不懂的马上问别人"
+    ]
+   },
+   "en": {
+    "scene": "The company president is speaking at the welcome ceremony for new employees.",
+    "question": "What does the president most want to tell the new employees?",
+    "lines": [
+     "Everyone, congratulations on joining us. Let me tell you about when I'd just joined the company. In a job a senior colleague gave me, there was one part I didn't really understand. But I thought, if I ask something like this they'll think I can't do the job — so I went ahead my own way. The result was a big mistake that caused trouble for a customer. Afterwards my senior said, \"Why didn't you just ask?\" Everyone feels impatient to become fully capable quickly. But asking is nothing to be ashamed of. I don't want any of you to go through what I did."
+    ],
+    "options": [
+     "He wants them to learn the job fast and become fully capable",
+     "He wants them to speak their minds without being shy",
+     "He wants them to learn by watching how seniors work",
+     "He wants them to ask someone straight away when they don't understand"
+    ]
+   }
+  },
+  "why": {
+   "zh": "社长没有直接说结论，而是讲自己不懂却不问、结果犯大错的经历，前辈说「なんでひとこと聞かなかったんだ」，最后「聞くのは恥ずかしいことではありません」「同じ思いをしてほしくない」——整个故事都指向：不懂就马上问。",
+   "en": "He never states it outright: he tells how he didn't ask, made a big mistake, and was told 「なんでひとこと聞かなかったんだ」, then says asking is nothing to be ashamed of and he doesn't want them to go through the same — the whole story points to asking straight away."
+  },
+  "wrong": [
+   {
+    "zh": "他说想早点独当一面的焦急谁都有，是在提醒别因为着急而不问，不是让大家快点学会。",
+    "en": "He mentions the urge to become capable fast as what led him astray — not as something he wants from them."
+   },
+   {
+    "zh": "「恥ずかしいことではありません」说的是提问，不是发表意见。",
+    "en": "「恥ずかしいことではありません」 is about asking questions, not giving opinions."
+   },
+   {
+    "zh": "前辈出现在故事里是因为他没去问前辈，不是让大家看前辈的做法。",
+    "en": "The senior appears because he failed to ask him — not as someone to watch and copy."
+   },
+   null
+  ],
+  "traps": [
+   "twisted",
+   "detail-as-topic"
+  ]
+ },
+ {
+  "id": "n2-ck-310",
+  "type": "gaiyou",
+  "scene": "男の人と女の人がオンラインの英会話のレッスンについて話しています。",
+  "question": "女の人はこのレッスンについてどう思っていますか。",
+  "lines": [
+   [
+    "M",
+    "最近、オンラインで英会話習ってるんだって？　どう？"
+   ],
+   [
+    "F",
+    "うん、家でできるし、一回の料金も教室に通うよりずっと安いから、そこは気に入ってるんだ。"
+   ],
+   [
+    "M",
+    "へえ、いいね。先生はどんな人？"
+   ],
+   [
+    "F",
+    "それがね、毎回、あいてる先生を選ぶ仕組みだから、同じ先生にはなかなか当たらないのよ。"
+   ],
+   [
+    "M",
+    "ああ、なるほど。"
+   ],
+   [
+    "F",
+    "いろんな人と話せるのは楽しいんだけど、私がどこが苦手か、毎回一から説明しなきゃいけなくて。そこがちょっとね。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "料金は安いが、家でやると集中できない",
+   "いろいろな先生と話せるので、満足している",
+   "便利で安いが、同じ先生に習えないのが不満だ",
+   "先生が毎回変わるので、もうやめようと思う"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在谈论网上英语会话课。",
+    "question": "女人觉得这个课怎么样？",
+    "lines": [
+     "听说你最近在网上学英语会话？怎么样？",
+     "嗯，在家就能上，每次的费用也比去教室便宜多了，这点我挺喜欢的。",
+     "哦，不错嘛。老师是什么样的人？",
+     "这个嘛，因为是每次选有空的老师，很难碰到同一个老师。",
+     "啊，原来如此。",
+     "能和各种人聊天挺开心的，可是我哪里不行，每次都得从头说明。这点就有点……"
+    ],
+    "options": [
+     "费用便宜，但在家上没法集中",
+     "能和各种老师聊，所以很满意",
+     "方便又便宜，但不能跟同一个老师学让她不满",
+     "老师每次都换，所以打算不上了"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking about online English conversation lessons.",
+    "question": "What does the woman think of the lessons?",
+    "lines": [
+     "I hear you've been learning English conversation online lately? How is it?",
+     "Yeah, I can do it at home, and each lesson is much cheaper than going to a school, so I like that.",
+     "Oh, nice. What are the teachers like?",
+     "Well, the system is that you pick whichever teacher is free each time, so you hardly ever get the same one.",
+     "Ah, I see.",
+     "Talking to all sorts of people is fun, but I have to explain from scratch every time what I'm weak at. That's a bit of a downside."
+    ],
+    "options": [
+     "It's cheap, but she can't concentrate at home",
+     "She can talk to lots of teachers, so she's satisfied",
+     "It's convenient and cheap, but she's unhappy she can't learn from the same teacher",
+     "The teacher changes every time, so she's thinking of quitting"
+    ]
+   }
+  },
+  "why": {
+   "zh": "优点是「家でできる」「ずっと安い」；缺点是很难碰到同一个老师，每次都要从头说明，「そこがちょっとね」表示不满。两边都对上的只有这个。",
+   "en": "The plus: at home, much cheaper. The minus: hardly ever the same teacher, so she explains from scratch each time —「そこがちょっとね」 marks her complaint. Only this option has both."
+  },
+  "wrong": [
+   {
+    "zh": "在家上是她喜欢的地方，她没说不能集中。",
+    "en": "Doing it at home is something she likes; she never says she can't concentrate."
+   },
+   {
+    "zh": "和各种人聊天开心只是一半，后面她说出了不满。",
+    "en": "Enjoying different people is only half — she goes on to complain."
+   },
+   null,
+   {
+    "zh": "她只是有点不满，没有说要不上了。",
+    "en": "She's a bit unhappy, but never says she'll quit."
+   }
+  ],
+  "traps": [
+   "attitude-combo",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n2-ck-311",
+  "type": "gaiyou",
+  "scene": "大学で、就職課の職員が学生に話しています。",
+  "question": "職員は何について話していますか。",
+  "lines": [
+   [
+    "F",
+    "三年生の皆さん、夏のインターンシップの募集が始まりました。インターンシップというと、その会社に入るために行くもの、と思っている人が多いようです。もちろん、そういう面もあります。でも、もっと大切なのは、実際に働いてみて、自分がどんな仕事に向いているのか、向いていないのかを知ることなんです。思っていたのと違った、というのも大事な発見です。申し込みの方法は、来週の説明会で詳しくお話しします。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "インターンシップの申し込み方法",
+   "インターンシップに参加する意味",
+   "希望の会社に入るための準備",
+   "仕事に向いている人の特徴"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在大学里，就业处的职员在跟学生讲话。",
+    "question": "职员在讲什么？",
+    "lines": [
+     "三年级的同学们，夏季实习开始招募了。说到实习，好像很多人认为是为了进那家公司才去的。当然也有这方面。但更重要的是，实际工作一下，了解自己适合什么样的工作、不适合什么样的工作。“跟想象的不一样”也是重要的发现。报名方法下周的说明会上详细介绍。"
+    ],
+    "options": [
+     "实习的报名方法",
+     "参加实习的意义",
+     "为进入理想公司做的准备",
+     "适合工作的人的特点"
+    ]
+   },
+   "en": {
+    "scene": "At a university, a careers office staff member is talking to students.",
+    "question": "What is the staff member talking about?",
+    "lines": [
+     "Third-year students, applications for summer internships have opened. When people hear \"internship\", many seem to think it's something you do to get into that company. Of course there's that side to it. But what matters more is actually working and finding out what kind of work suits you — and what doesn't. Finding it wasn't what you expected is an important discovery too. I'll explain how to apply in detail at next week's information session."
+    ],
+    "options": [
+     "How to apply for an internship",
+     "What the point of doing an internship is",
+     "Preparing to get into the company you want",
+     "What kind of people suit a job"
+    ]
+   }
+  },
+  "why": {
+   "zh": "她先提一般人的看法（为了进公司），再用「もっと大切なのは」说出实习真正的价值：了解自己适合什么工作——全篇讲参加实习的意义。",
+   "en": "She mentions the common view (to get into the company), then with 「もっと大切なのは」 gives the real value: finding out what work suits you. The talk is about why to do one."
+  },
+  "wrong": [
+   {
+    "zh": "报名方法她说下周的说明会再讲，今天没讲。",
+    "en": "She says how to apply will be explained next week — not today."
+   },
+   null,
+   {
+    "zh": "为进公司是大家的看法，她认为更重要的是别的。",
+    "en": "Getting into the company is the common view; she says something else matters more."
+   },
+   {
+    "zh": "她讲的是了解自己适不适合，没有说什么样的人适合工作。",
+    "en": "She talks about finding out what suits you, not what kind of people suit a job."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n2-ck-312",
+  "type": "gaiyou",
+  "scene": "ラジオで男の人が話しています。",
+  "question": "男の人は何について話していますか。",
+  "lines": [
+   [
+    "M",
+    "去年から、会社の帰りに、一つ手前の駅で降りて歩くようにしているんです。最初は、運動不足をなんとかしようと思って始めたんですが、続けているうちに、楽しみ方が変わってきました。電車の窓からは見えなかった小さな店を見つけたり、季節によって庭の花が変わるのに気づいたり。毎日通っていた町なのに、知らないことばかりだったんですね。今では、運動のためというより、町の発見が楽しみで歩いています。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "歩いて気づいた、町の新しい魅力",
+   "運動不足を解消するための方法",
+   "駅の近くで見つけた店の話",
+   "通勤の時間を短くする工夫"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个男人在广播里讲话。",
+    "question": "男人在讲什么？",
+    "lines": [
+     "从去年开始，我下班回家时会提前一站下车走回去。一开始是想解决运动不足才开始的，可是坚持下来，乐趣变了。会发现在电车窗外看不到的小店，会注意到院子里的花随季节变化。明明是每天经过的街道，却全是不知道的东西。现在比起为了运动，更多是享受发现街道的乐趣才走的。"
+    ],
+    "options": [
+     "走路时发现的街道的新魅力",
+     "解决运动不足的方法",
+     "在车站附近发现的店",
+     "缩短通勤时间的窍门"
+    ]
+   },
+   "en": {
+    "scene": "A man is talking on the radio.",
+    "question": "What is the man talking about?",
+    "lines": [
+     "Since last year, on my way home from work, I've been getting off one station early and walking. At first I started it to do something about not getting enough exercise, but as I kept it up, what I enjoy about it changed. I find little shops I couldn't see from the train window, I notice the flowers in gardens changing with the seasons. It's a town I passed through every day, and yet there was so much I didn't know. Now I walk less for the exercise and more for the pleasure of discovering the town."
+    ],
+    "options": [
+     "The town's new charms he noticed by walking",
+     "A way to fix a lack of exercise",
+     "A shop he found near the station",
+     "A way to shorten his commute"
+    ]
+   }
+  },
+  "why": {
+   "zh": "开头的运动不足只是起因，「楽しみ方が変わってきました」之后讲发现小店、花，最后「町の発見が楽しみで歩いています」——全篇讲走路发现了街道的新魅力。",
+   "en": "Exercise was only how it started; after 「楽しみ方が変わってきました」 come the shops and flowers, ending 「町の発見が楽しみで歩いています」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "运动不足只是开始的原因，他说现在「運動のためというより」。",
+    "en": "Exercise was just the starting reason — now it's 「運動のためというより」 for the town."
+   },
+   {
+    "zh": "小店只是发现的例子之一，是细节。",
+    "en": "The shops are just one example of what he found — a detail."
+   },
+   {
+    "zh": "提前一站下车走路，通勤时间反而变长了。",
+    "en": "Getting off a stop early makes the trip longer, not shorter."
+   }
+  ],
+  "traps": [
+   "partial-content",
+   "detail-as-topic"
+  ]
+ },
+ {
+  "id": "n2-ck-313",
+  "type": "gaiyou",
+  "scene": "会社で課長と女の人が会議について話しています。",
+  "question": "女の人は会議についてどう考えていますか。",
+  "lines": [
+   [
+    "M",
+    "最近の会議、毎回二時間近くかかってるよね。もう少しなんとかならないかなあ。"
+   ],
+   [
+    "F",
+    "そうですね。私、時間が長くなるのは、会議の場で初めて資料を読んでいるからだと思うんです。"
+   ],
+   [
+    "M",
+    "ああ、確かに、説明だけで三十分は使ってるね。"
+   ],
+   [
+    "F",
+    "ええ。前の日までに資料を送っておいて、読んできてもらうことにすれば、会議では話し合うことだけに時間が使えますよね。"
+   ],
+   [
+    "M",
+    "回数を減らすっていうのは、どう？"
+   ],
+   [
+    "F",
+    "回数より、一回一回の中身を変えるほうが先じゃないでしょうか。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "会議の回数を減らして、時間を短くすべきだ",
+   "資料をもっと短く、分かりやすくすべきだ",
+   "説明の時間を増やして、理解を深めるべきだ",
+   "資料は事前に読み、会議は話し合いに使うべきだ"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "在公司里，科长和一个女人在谈论开会的事。",
+    "question": "女人对开会是怎么想的？",
+    "lines": [
+     "最近的会，每次都要将近两个小时啊。能不能想想办法呢。",
+     "是啊。我觉得会开得长，是因为大家在会上才第一次看资料。",
+     "啊，确实，光是说明就用了三十分钟。",
+     "嗯。如果前一天就把资料发出去，请大家看过再来，开会时就可以只把时间用在讨论上了。",
+     "减少开会次数怎么样？",
+     "比起次数，是不是应该先改变每一次会的内容呢？"
+    ],
+    "options": [
+     "应该减少开会次数，缩短时间",
+     "资料应该写得更短、更好懂",
+     "应该增加说明的时间，加深理解",
+     "资料应该提前看，开会用来讨论"
+    ]
+   },
+   "en": {
+    "scene": "A section chief and a woman are talking about meetings at the office.",
+    "question": "What does the woman think about the meetings?",
+    "lines": [
+     "Our meetings lately take nearly two hours every time. I wish we could do something about it.",
+     "Yes. I think they run long because people read the materials for the first time in the meeting.",
+     "Ah, true, we spend thirty minutes just on explanations.",
+     "Yes. If we send the materials by the day before and ask everyone to read them first, we could spend the meeting time just on discussion.",
+     "What about having fewer meetings?",
+     "Rather than the number, shouldn't we first change what happens in each one?"
+    ],
+    "options": [
+     "They should hold fewer meetings and make them shorter",
+     "The materials should be shorter and clearer",
+     "They should spend more time on explanations to deepen understanding",
+     "Materials should be read beforehand, and meetings used for discussion"
+    ]
+   }
+  },
+  "why": {
+   "zh": "她认为会长是因为会上才看资料，提议「前の日までに資料を送っておいて」，开会「話し合うことだけに」用时间；对减少次数的提议，她说先改内容。",
+   "en": "She blames reading the materials in the meeting, proposes sending them by the day before so the meeting is 「話し合うことだけに」, and answers the fewer-meetings idea with 'change the content first'."
+  },
+  "wrong": [
+   {
+    "zh": "减少次数是科长的提议，她说「回数より……中身を変えるほうが先」。",
+    "en": "Fewer meetings is the chief's idea; she says changing the content comes first."
+   },
+   {
+    "zh": "她没说资料本身有问题，问题是在会上才看。",
+    "en": "She doesn't fault the materials themselves — only that they're read in the meeting."
+   },
+   {
+    "zh": "她想减少会上的说明时间，用来讨论，正好相反。",
+    "en": "She wants less time on explanations, not more — the opposite."
+   },
+   null
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "twisted"
+  ]
  }
 ]

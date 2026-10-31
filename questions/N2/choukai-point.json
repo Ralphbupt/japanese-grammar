@@ -12,7 +12,7 @@
    ["M", "へえ。じゃあ、なんで？"],
    ["F", "実はね、隣に越してきた人が、毎晩遅くまで音楽かけてて。大家さんにも言ってもらったんだけど、全然変わらなくて。"],
    ["M", "それはつらいね。"],
-   ["F", "家賃も安いし、本当は気に入ってたんだけどね。"]
+   ["F", "家賃は来年から少し上がるって言われてるけど、それくらいなら払えるし、本当は気に入ってたんだけどね。"]
   ],
   "options": ["会社から遠くて不便だから", "となりの人がうるさいから", "部屋がせまくて不便だから", "家賃が前より高くなったから"],
   "answer": 1,
@@ -20,13 +20,13 @@
    "zh": {
     "scene": "一个男人和一个女人在说话。",
     "question": "女人为什么决定搬家？",
-    "lines": ["佐藤，听说你要搬家？果然是因为离公司远？", "不是，上班坐一趟电车就到，那个我倒不在意。", "那是房间太小？你之前不是说东西放不下吗？", "啊，那个啊，我狠心把不要的东西扔了，收拾得差不多了。", "哦。那为什么？", "其实啊，隔壁新搬来的人每天晚上放音乐放到很晚。也请房东去说过了，一点没变。", "那可真受罪。", "房租也便宜，其实我挺喜欢那儿的。"],
+    "lines": ["佐藤，听说你要搬家？果然是因为离公司远？", "不是，上班坐一趟电车就到，那个我倒不在意。", "那是房间太小？你之前不是说东西放不下吗？", "啊，那个啊，我狠心把不要的东西扔了，收拾得差不多了。", "哦。那为什么？", "其实啊，隔壁新搬来的人每天晚上放音乐放到很晚。也请房东去说过了，一点没变。", "那可真受罪。", "房东说房租明年起要涨一点，不过那点钱我付得起，其实我挺喜欢那儿的。"],
     "options": ["因为离公司远，不方便", "因为隔壁的人吵", "因为房间小，不方便", "因为房租比以前涨了"]
    },
    "en": {
     "scene": "A man and a woman are talking.",
     "question": "Why did the woman decide to move?",
-    "lines": ["Sato-san, I hear you're moving. Is it because it's far from work after all?", "No, it's one train to work, so that doesn't really bother me.", "Then is the place too small? You said before your stuff wouldn't fit.", "Oh, that — I finally threw out what I didn't need, and it's much tidier now.", "Huh. So why, then?", "Actually, the person who moved in next door plays music late every night. I even got the landlord to talk to them, but nothing's changed.", "That sounds rough.", "The rent's cheap too, and I really liked the place."],
+    "lines": ["Sato-san, I hear you're moving. Is it because it's far from work after all?", "No, it's one train to work, so that doesn't really bother me.", "Then is the place too small? You said before your stuff wouldn't fit.", "Oh, that — I finally threw out what I didn't need, and it's much tidier now.", "Huh. So why, then?", "Actually, the person who moved in next door plays music late every night. I even got the landlord to talk to them, but nothing's changed.", "That sounds rough.", "They say the rent's going up a little next year, but I could afford that, and I really liked the place."],
     "options": ["It's far from work and inconvenient", "The neighbour is noisy", "The room is small and inconvenient", "The rent has gone up"]
    }
   },
@@ -35,7 +35,7 @@
    { "zh": "她说通勤只要一趟电车，「別に気にしてない」。", "en": "She says the commute is one train and doesn't bother her." },
    null,
    { "zh": "扔掉不要的东西后已经收拾好了。", "en": "Throwing things out solved the space problem." },
-   { "zh": "她说房租「安い」，是喜欢那里的理由，没提涨价。", "en": "She says the rent is cheap — a reason she liked the place; no rise is mentioned." }],
+   { "zh": "房租明年要涨一点，但她说「それくらいなら払える」，不是搬家的原因。", "en": "The rent will rise a little next year, but she says she can afford it — not why she's moving." }],
   "traps": ["denied-guess"]
  },
  {
@@ -74,5 +74,1413 @@
    { "zh": "价格「今のままでいい」。", "en": "He says the prices can stay." },
    { "zh": "字的大小是店员自己担心的，店长说「問題ない」。", "en": "The text size was her worry; he says it's fine." }],
   "traps": ["denied-guess", "mentioned-not-asked"]
+ },
+ {
+  "id": "n2-ck-203",
+  "type": "point",
+  "scene": "会社で男の人と女の人が話しています。",
+  "question": "女の人はどうして英会話教室をやめましたか。",
+  "lines": [
+   [
+    "M",
+    "田中さん、英会話やめたんだって？　最近、残業多いもんね。"
+   ],
+   [
+    "F",
+    "うーん、忙しいのは確かだけど、週一回だし、それは何とかなってたの。"
+   ],
+   [
+    "M",
+    "じゃあ、お金？　あそこ、結構高いって言ってたじゃん。"
+   ],
+   [
+    "F",
+    "それは会社が半分出してくれるから。"
+   ],
+   [
+    "M",
+    "そっか。じゃ、なんで？"
+   ],
+   [
+    "F",
+    "春からクラスが変わってね、始めたばかりの人のクラスになっちゃったの。毎回、自己紹介みたいな会話ばっかりで。"
+   ],
+   [
+    "M",
+    "先生は？　前の先生、気に入ってたよね。"
+   ],
+   [
+    "F",
+    "先生は同じ人なの。明るいし、教え方も上手だし、そこは全然不満ないんだけど。つまらないっていうより、もう少し難しいことがやりたいんだよね。だから今、別のところを探してる。"
+   ]
+  ],
+  "options": [
+   "残業で通えないから",
+   "授業料が高すぎるから",
+   "授業が簡単すぎるから",
+   "先生と合わないから"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个男人和一个女人在说话。",
+    "question": "女人为什么不去英语会话班了？",
+    "lines": [
+     "田中，听说你不学英语会话了？最近加班挺多的嘛。",
+     "嗯，忙是真的，不过一周就一次，那倒还应付得过来。",
+     "那是钱？你不是说那儿挺贵的吗？",
+     "那个公司给报一半。",
+     "这样啊。那为什么？",
+     "从春天起换了班，变成了刚开始学的人的班。每次都是自我介绍那样的对话。",
+     "老师呢？你挺喜欢以前那个老师的吧。",
+     "老师还是同一个人。人开朗，教得也好，这点完全没意见。与其说没意思，不如说我想学点更难的。所以现在在找别的地方。"
+    ],
+    "options": [
+     "因为加班去不了",
+     "因为学费太贵",
+     "因为课太简单",
+     "因为和老师合不来"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking at the office.",
+    "question": "Why did the woman quit her English conversation class?",
+    "lines": [
+     "Tanaka-san, I hear you quit English conversation? You've had a lot of overtime lately.",
+     "Well, I am busy, but it's once a week, so I was managing.",
+     "Then money? You said that place was pretty pricey.",
+     "The company pays half of it.",
+     "Right. So why, then?",
+     "My class changed in spring — I ended up in a class for complete beginners. Every time it's just self-introduction-type conversations.",
+     "What about the teacher? You liked the old one, didn't you?",
+     "It's the same teacher. She's cheerful and teaches well — no complaints there at all. It's not so much that it's boring — I just want to do something harder. So I'm looking for somewhere else now."
+    ],
+    "options": [
+     "Overtime kept her from going",
+     "The fees are too high",
+     "The lessons are too easy",
+     "She doesn't get on with the teacher"
+    ]
+   }
+  },
+  "why": {
+   "zh": "换到了初学者的班，每次都是自我介绍式的对话；她「もう少し難しいことがやりたい」，也就是课太简单了。",
+   "en": "She was moved to a beginners' class and wants something harder — the lessons are too easy for her."
+  },
+  "wrong": [
+   {
+    "zh": "她说忙是真的，但一周一次「何とかなってた」。",
+    "en": "She's busy but was managing once a week."
+   },
+   {
+    "zh": "学费公司报一半。",
+    "en": "The company pays half the fee."
+   },
+   null,
+   {
+    "zh": "老师还是同一个人，她说「全然不満ない」。",
+    "en": "It's the same teacher, and she has no complaints about her."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n2-ck-204",
+  "type": "point",
+  "scene": "会社で女の人と男の人が新しいシステムについて話しています。",
+  "question": "男の人は、新しいシステムの一番の問題は何だと言っていますか。",
+  "lines": [
+   [
+    "F",
+    "新しい経費のシステム、使いにくくない？　画面がごちゃごちゃしてて。"
+   ],
+   [
+    "M",
+    "最初はね。でも慣れたら、前より入力は早くなったよ。レシートも、写真を撮るだけだし。"
+   ],
+   [
+    "F",
+    "そう？　私、スマホからだと、うまく写真が送れないんだけど。"
+   ],
+   [
+    "M",
+    "ああ、それはアプリを新しいのにすれば直るらしいよ。それより困るのは、申請してから承認されるまでだよ。"
+   ],
+   [
+    "F",
+    "ああ。"
+   ],
+   [
+    "M",
+    "前は課長がその日のうちに見てくれたのに、今は部長まで回るから、お金が戻ってくるのが一か月後とかになっちゃって。"
+   ],
+   [
+    "F",
+    "それはたしかに困るね。"
+   ],
+   [
+    "M",
+    "立て替えが多い人には、けっこう大きいよね。"
+   ]
+  ],
+  "options": [
+   "お金が戻るのが遅い",
+   "画面が分かりにくい",
+   "入力に手間がかかる",
+   "スマホから送れない"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个女人和一个男人在谈新系统。",
+    "question": "男人说新系统最大的问题是什么？",
+    "lines": [
+     "新的报销系统是不是不好用？界面乱糟糟的。",
+     "刚开始是。不过习惯以后，录入比以前快了。收据也只要拍个照。",
+     "是吗？我用手机怎么都发不了照片。",
+     "啊，那个据说把应用更新到最新版就好了。比那更麻烦的是从申请到批准这一段。",
+     "啊。",
+     "以前科长当天就看了，现在要转到部长那里，钱要一个月后才能回来。",
+     "那确实麻烦。",
+     "对经常垫钱的人来说，影响挺大的。"
+    ],
+    "options": [
+     "钱回来得慢",
+     "界面难懂",
+     "录入费事",
+     "用手机发不了"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking at the office about a new system.",
+    "question": "What does the man say is the biggest problem with the new system?",
+    "lines": [
+     "Isn't the new expenses system hard to use? The screen is so cluttered.",
+     "At first, yes. But once you're used to it, entering things is faster than before. You just take a photo of the receipt.",
+     "Really? I can't get photos to send properly from my phone.",
+     "Oh, apparently that's fixed if you update the app. What's worse is the time from submitting to approval.",
+     "Ah.",
+     "Before, the section chief looked at it the same day, but now it goes up to the director, so you get your money back something like a month later.",
+     "That really is a pain.",
+     "For people who pay for a lot out of pocket, it's a big deal."
+    ],
+    "options": [
+     "Money comes back slowly",
+     "The screen is confusing",
+     "Data entry takes effort",
+     "You can't send from a phone"
+    ]
+   }
+  },
+  "why": {
+   "zh": "男人说「それより困るのは」承认要转到部长，垫的钱一个月后才能回来。",
+   "en": "After 「それより困るのは」 he says approval now goes up to the director, so reimbursement takes about a month."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "界面是女人的抱怨，男人说习惯了就好。",
+    "en": "The cluttered screen is her complaint; he says you get used to it."
+   },
+   {
+    "zh": "男人说录入「前より早くなった」。",
+    "en": "He says entry is faster than before."
+   },
+   {
+    "zh": "这是女人的问题，男人说更新应用就能解决。",
+    "en": "That's her problem, and he says an app update fixes it."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "other-option-attribute"
+  ]
+ },
+ {
+  "id": "n2-ck-205",
+  "type": "point",
+  "scene": "男の人と女の人が話しています。",
+  "question": "女の人はどうして車を買うのをやめましたか。",
+  "lines": [
+   [
+    "M",
+    "車、買うのやめたんだって？"
+   ],
+   [
+    "F",
+    "うん。この間、一か月にどのくらい車で出かけるか、書き出してみたの。そしたら、月に二回くらいしかなくて。それなら、駅前のカーシェアで十分だなって。"
+   ],
+   [
+    "M",
+    "なるほどね。でも、そのために三年もお金ためてたんでしょ？　もったいなくない？"
+   ],
+   [
+    "F",
+    "そのお金は、旅行に使うことにしたの。そっちのほうが楽しそうだし。"
+   ],
+   [
+    "M",
+    "いいね。駐車場は？　マンションのが空いてるって言ってなかった？"
+   ],
+   [
+    "F",
+    "うん、空いてるよ。でも、たまにしか乗らないのに、毎月払うのもね。"
+   ],
+   [
+    "M",
+    "運転、苦手なんだっけ？"
+   ],
+   [
+    "F",
+    "ううん、運転は好き。だから、たまに借りて乗るくらいが、ちょうどいいんだと思う。"
+   ]
+  ],
+  "options": [
+   "お金が足りないから",
+   "駐車場がないから",
+   "運転が苦手だから",
+   "あまり乗らないから"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "女人为什么不买车了？",
+    "lines": [
+     "听说你不买车了？",
+     "嗯。前几天我把一个月开车出门几次写出来看了看。结果一个月也就两次左右。那样的话，用车站前的共享汽车就够了。",
+     "原来如此。可你为这个攒了三年钱吧？不觉得可惜吗？",
+     "那笔钱我决定拿去旅行了。那样好像更开心。",
+     "不错啊。停车场呢？你不是说公寓的停车位空着吗？",
+     "嗯，空着。不过偶尔才开一次，还每个月付钱也不划算。",
+     "你是不擅长开车来着？",
+     "不是，我喜欢开车。所以我觉得偶尔借来开开正合适。"
+    ],
+    "options": [
+     "因为钱不够",
+     "因为没有停车位",
+     "因为不擅长开车",
+     "因为不怎么开"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "Why did the woman decide not to buy a car?",
+    "lines": [
+     "I hear you've decided not to buy a car?",
+     "Yeah. The other day I wrote down how often I'd go out by car in a month. It came to only about twice. So I figured the car-share by the station is enough.",
+     "Makes sense. But you'd been saving for three years for it, right? Isn't that a waste?",
+     "I've decided to spend that money on travel instead. That sounds more fun.",
+     "Nice. What about parking? Didn't you say there was a space free at your building?",
+     "It's free, yes. But paying every month when I'd hardly drive…",
+     "Are you not a confident driver, or something?",
+     "No, I like driving. That's why borrowing one now and then is just right, I think."
+    ],
+    "options": [
+     "She hasn't got enough money",
+     "There's no parking",
+     "She's not good at driving",
+     "She wouldn't use it much"
+    ]
+   }
+  },
+  "why": {
+   "zh": "她一开头就说：算下来一个月只开车出门两次左右，共享汽车就够了；后面也说「たまにしか乗らない」。",
+   "en": "She explains at the start that she'd only drive about twice a month, and repeats that she'd hardly use it."
+  },
+  "wrong": [
+   {
+    "zh": "她攒了三年钱，现在决定拿去旅行，不是钱不够。",
+    "en": "She has the savings and will spend them on travel."
+   },
+   {
+    "zh": "停车位「空いてる」。",
+    "en": "There is a free parking space."
+   },
+   {
+    "zh": "她说「運転は好き」。",
+    "en": "She says she likes driving."
+   },
+   null
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n2-ck-206",
+  "type": "point",
+  "scene": "男の人と女の人が話しています。",
+  "question": "女の人は今、何が一番心配だと言っていますか。",
+  "lines": [
+   [
+    "M",
+    "来週の友達の結婚式、スピーチ頼まれたんだって？"
+   ],
+   [
+    "F",
+    "そうなの。原稿はもう書いたんだけど、読んでみたら五分以上かかっちゃって。三分くらいでって言われてるのに。"
+   ],
+   [
+    "M",
+    "削ればいいじゃん。"
+   ],
+   [
+    "F",
+    "それがね、どれも削りたくない話ばっかりで。"
+   ],
+   [
+    "M",
+    "そっか。人前で話すのは平気なの？"
+   ],
+   [
+    "F",
+    "それは仕事でしょっちゅうプレゼンしてるから、慣れてる。"
+   ],
+   [
+    "M",
+    "会場、遠いんでしょ？　朝早いんじゃない？"
+   ],
+   [
+    "F",
+    "前の日に近くに泊まるから、それは大丈夫。だから今は、とにかくどこを短くするか、なんだよね。"
+   ]
+  ],
+  "options": [
+   "緊張してしまうこと",
+   "話が長すぎること",
+   "会場に遅れること",
+   "原稿が書けないこと"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "女人说她现在最担心什么？",
+    "lines": [
+     "听说下周朋友的婚礼请你致辞？",
+     "是啊。稿子已经写好了，可读了一下要五分钟以上。人家说三分钟左右就好。",
+     "删掉一点不就行了。",
+     "问题是，每段都是舍不得删的故事。",
+     "这样啊。在人前讲话你没问题吗？",
+     "那个我工作上经常做演示，习惯了。",
+     "会场很远吧？早上要很早吧？",
+     "我前一天住在附近，所以没问题。所以现在就是到底删哪儿的问题。"
+    ],
+    "options": [
+     "会紧张",
+     "讲话太长",
+     "去会场迟到",
+     "写不出稿子"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "What does the woman say she's most worried about now?",
+    "lines": [
+     "I hear you've been asked to give a speech at your friend's wedding next week?",
+     "Yes. I've already written it, but when I read it out it took over five minutes. They asked for about three.",
+     "So cut some.",
+     "The thing is, it's all stories I don't want to cut.",
+     "I see. Are you OK speaking in front of people?",
+     "I give presentations all the time at work, so I'm used to it.",
+     "The venue's far, isn't it? Won't it be an early start?",
+     "I'm staying nearby the night before, so that's fine. So right now it's all about what to shorten."
+    ],
+    "options": [
+     "Getting nervous",
+     "The speech being too long",
+     "Being late to the venue",
+     "Not being able to write it"
+    ]
+   }
+  },
+  "why": {
+   "zh": "稿子要讲五分钟以上，要求三分钟，又舍不得删；她最后说「今は、とにかくどこを短くするか」。",
+   "en": "Her speech runs over five minutes against a three-minute request, and she ends with 'it's all about what to shorten'."
+  },
+  "wrong": [
+   {
+    "zh": "她工作上经常做演示，「慣れてる」。",
+    "en": "She's used to speaking from presentations at work."
+   },
+   null,
+   {
+    "zh": "她前一天住在附近，「それは大丈夫」。",
+    "en": "She's staying nearby the night before."
+   },
+   {
+    "zh": "稿子「もう書いた」。",
+    "en": "She has already written it."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "done-already"
+  ]
+ },
+ {
+  "id": "n2-ck-207",
+  "type": "point",
+  "scene": "電器店で女の人と店の人が話しています。",
+  "question": "女の人はどうして掃除機を交換したいのですか。",
+  "lines": [
+   [
+    "F",
+    "すみません、先週こちらで買った掃除機なんですけど、別のものに替えてもらえないでしょうか。"
+   ],
+   [
+    "M",
+    "はい、かしこまりました。何か不具合がございましたか。"
+   ],
+   [
+    "F",
+    "いえ、ちゃんと動きますし、吸う力も十分なんです。"
+   ],
+   [
+    "M",
+    "さようでございますか。では、音がうるさいといったことは……。"
+   ],
+   [
+    "F",
+    "音も、思ってたより静かでした。ただ、うちは二階にも持って上がるんですけど。"
+   ],
+   [
+    "M",
+    "ああ、少し重さがございますね。"
+   ],
+   [
+    "F",
+    "重いっていうより、持つところが太くて、私の手だと握りにくいんです。片手で持って階段を上がるのが、ちょっと怖くて。"
+   ],
+   [
+    "M",
+    "そうしましたら、持つところが細いタイプがこちらにございます。"
+   ]
+  ],
+  "options": [
+   "吸う力が弱いから",
+   "音が大きいから",
+   "持ち手が太いから",
+   "本体が重すぎるから"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "电器店里一个女人和店员在说话。",
+    "question": "女人为什么想换吸尘器？",
+    "lines": [
+     "不好意思，上周在这里买的吸尘器，能给我换一台别的吗？",
+     "好的，明白了。是有什么故障吗？",
+     "没有，运转正常，吸力也很足。",
+     "这样啊。那是声音太吵之类的……",
+     "声音也比想象的安静。只是我家还要拿到二楼去用。",
+     "啊，是有点重量。",
+     "与其说重，不如说把手太粗，我的手不好握。单手拿着上楼梯有点害怕。",
+     "那样的话，这边有把手细一些的款式。"
+    ],
+    "options": [
+     "因为吸力弱",
+     "因为声音大",
+     "因为把手太粗",
+     "因为机身太重"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a shop assistant are talking at an electronics store.",
+    "question": "Why does the woman want to exchange her vacuum cleaner?",
+    "lines": [
+     "Excuse me, about the vacuum cleaner I bought here last week — could I exchange it for a different one?",
+     "Certainly. Was there something wrong with it?",
+     "No, it works fine, and the suction is good.",
+     "I see. Then is it, say, too noisy…?",
+     "It's quieter than I expected, too. It's just that at home I carry it upstairs as well.",
+     "Ah, it is a little heavy.",
+     "It's not so much the weight — the handle is thick, so it's hard for my hand to grip. Carrying it up the stairs in one hand feels a bit scary.",
+     "In that case, we have models with a slimmer handle over here."
+    ],
+    "options": [
+     "The suction is weak",
+     "It's loud",
+     "The handle is too thick",
+     "It's too heavy"
+    ]
+   }
+  },
+  "why": {
+   "zh": "她说「重いっていうより、持つところが太くて…握りにくい」，真正的原因是把手太粗。",
+   "en": "'It's not so much the weight' — the handle is too thick for her to grip."
+  },
+  "wrong": [
+   {
+    "zh": "她说吸力「十分」。",
+    "en": "She says the suction is good."
+   },
+   {
+    "zh": "声音「思ってたより静か」。",
+    "en": "It's quieter than she expected."
+   },
+   null,
+   {
+    "zh": "店员猜是重，她用「重いっていうより」否定了。",
+    "en": "The assistant suggests weight, but she says it's not so much that."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "half-right"
+  ]
+ },
+ {
+  "id": "n2-ck-208",
+  "type": "point",
+  "scene": "女の人と男の人が旅行について話しています。",
+  "question": "男の人は、旅行で何が一番よかったと言っていますか。",
+  "lines": [
+   [
+    "F",
+    "北海道、どうだった？"
+   ],
+   [
+    "M",
+    "よかったよ。魚はやっぱりおいしかったし、二日目は晴れて、山もきれいに見えたし。"
+   ],
+   [
+    "F",
+    "いいなあ。温泉も入った？"
+   ],
+   [
+    "M",
+    "うん、宿の近くに露天風呂があってさ、それも気持ちよかった。でもね、一番よかったのは、泊まった宿のおじいさん。夜、昔の町の話をずっとしてくれて、それが本当に面白くて。"
+   ],
+   [
+    "F",
+    "へえ、景色より？"
+   ],
+   [
+    "M",
+    "景色はね、写真で見てたのとだいたい同じだったから。魚も、東京で食べられないってほどじゃないし。でも、あのおじいさんの話は、あそこに行かないと聞けないでしょう。"
+   ],
+   [
+    "F",
+    "たしかに、それはそうだね。"
+   ]
+  ],
+  "options": [
+   "宿の人と話したこと",
+   "魚がおいしかったこと",
+   "山の景色を見たこと",
+   "温泉に入ったこと"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在聊旅行。",
+    "question": "男人说旅行中什么最好？",
+    "lines": [
+     "北海道怎么样？",
+     "挺好的。鱼果然好吃，第二天也放晴了，山看得很清楚。",
+     "真好。温泉也泡了吗？",
+     "嗯，旅馆附近有露天温泉，那个也很舒服。不过最好的是住的旅馆的老爷爷。晚上一直给我讲以前小镇的事，真的特别有意思。",
+     "哦，比风景还好？",
+     "风景嘛，跟在照片上看到的差不多。鱼也不是在东京吃不到的那种。可那位老爷爷讲的事，不去那儿是听不到的吧。",
+     "确实，是这样。"
+    ],
+    "options": [
+     "和旅馆的人聊天",
+     "鱼很好吃",
+     "看了山景",
+     "泡了温泉"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking about a trip.",
+    "question": "What does the man say was the best part of his trip?",
+    "lines": [
+     "How was Hokkaido?",
+     "Great. The fish was as good as they say, and the second day was clear, so I got a good view of the mountains.",
+     "Lucky you. Did you go in a hot spring too?",
+     "Yeah, there was an open-air bath near the inn, and that was lovely too. But the best part was the old man who ran the inn. In the evening he kept telling me about the town in the old days, and it was really fascinating.",
+     "Oh? Better than the scenery?",
+     "The scenery was pretty much what I'd seen in photos. And the fish isn't something you can't get in Tokyo. But you can only hear that old man's stories if you go there.",
+     "True, that's a fair point."
+    ],
+    "options": [
+     "Talking with the innkeeper",
+     "The delicious fish",
+     "Seeing the mountain views",
+     "Bathing in hot springs"
+    ]
+   }
+  },
+  "why": {
+   "zh": "鱼、山景、温泉都不错，但他说「一番よかったのは」旅馆老爷爷讲以前小镇的事，只有去那儿才听得到。",
+   "en": "Fish, views and the bath were all good, but 'the best part' was the innkeeper's stories, which you can only hear there."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "鱼好吃，但他说东京也吃得到。",
+    "en": "The fish was good, but he can get similar in Tokyo."
+   },
+   {
+    "zh": "山景看到了，但跟照片差不多。",
+    "en": "He saw the mountains, but they were like the photos."
+   },
+   {
+    "zh": "温泉也很舒服，但他用「でもね、一番よかったのは」转到了老爷爷。",
+    "en": "The bath was nice too, but he goes on to name something else as the best."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "half-right"
+  ]
+ },
+ {
+  "id": "n2-ck-209",
+  "type": "point",
+  "scene": "ラジオで男のアナウンサーがパン屋の女の人にインタビューしています。",
+  "question": "女の人は、店が人気になったのはどうしてだと言っていますか。",
+  "lines": [
+   [
+    "M",
+    "こちらのパン屋さん、毎朝、行列ができるそうですね。"
+   ],
+   [
+    "F",
+    "ありがたいことです。でも、お店を始めて最初の二年は、本当にお客さんが来なくて。"
+   ],
+   [
+    "M",
+    "そうなんですか。"
+   ],
+   [
+    "F",
+    "ええ。材料をいいものに替えてみたり、値段を下げてみたり、いろいろやったんですけど、あまり変わらなかったんです。駅からも、歩いて十分ほど離れていますしね。"
+   ],
+   [
+    "M",
+    "それが、どうして今のように？"
+   ],
+   [
+    "F",
+    "ある時、近所の方に、「会社に行く前に寄れたらいいのに」って言われまして。それで、開店を朝六時にしてみたんです。そうしたら、次の月からお客さんが倍になって。今では半分以上が、通勤の途中の方なんですよ。"
+   ],
+   [
+    "M",
+    "なるほど。"
+   ]
+  ],
+  "options": [
+   "いい材料を使っているから",
+   "ほかの店より値段が安いから",
+   "駅のすぐ近くにあるから",
+   "朝早くから開いているから"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "电台里男播音员在采访面包店的女店主。",
+    "question": "女人说店为什么受欢迎？",
+    "lines": [
+     "听说这家面包店每天早上都排长队。",
+     "真是感激。不过刚开店的头两年，真的没什么客人。",
+     "是吗。",
+     "是的。把材料换成好的、降价，试了很多办法，都没什么变化。离车站走路也要十分钟左右。",
+     "那后来怎么变成现在这样的？",
+     "有一次邻居跟我说：「要是上班前能顺路来买就好了」。于是我试着把开门时间改到早上六点。结果从下个月起客人就翻了一倍。现在一半以上都是上班路上的人。",
+     "原来如此。"
+    ],
+    "options": [
+     "因为用好材料",
+     "因为比别的店便宜",
+     "因为紧挨着车站",
+     "因为早上很早就开门"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, a male presenter is interviewing a woman who runs a bakery.",
+    "question": "Why does the woman say her shop became popular?",
+    "lines": [
+     "I hear there's a queue outside your bakery every morning.",
+     "We're very grateful. But for the first two years after we opened, hardly anyone came.",
+     "Really?",
+     "Yes. We tried switching to better ingredients, lowering prices — all sorts — but not much changed. And we're about a ten-minute walk from the station.",
+     "So how did it turn into what it is now?",
+     "One day a neighbour said, 'If only I could drop in on my way to work.' So we tried opening at six in the morning. From the next month our customers doubled. Now more than half are people on their way to work.",
+     "I see."
+    ],
+    "options": [
+     "It uses good ingredients",
+     "It's cheaper than other shops",
+     "It's right by the station",
+     "It opens early in the morning"
+    ]
+   }
+  },
+  "why": {
+   "zh": "换材料、降价都「あまり変わらなかった」；改成早上六点开门后，客人从下个月起翻倍，现在一半以上是上班路上的人。",
+   "en": "Better ingredients and lower prices changed little; opening at six doubled customers, and commuters are now over half."
+  },
+  "wrong": [
+   {
+    "zh": "换了好材料，但「あまり変わらなかった」。",
+    "en": "Better ingredients didn't change much."
+   },
+   {
+    "zh": "降价也试过，但没什么变化。",
+    "en": "Lowering prices didn't help either."
+   },
+   {
+    "zh": "从车站走路要十分钟左右。",
+    "en": "It's a ten-minute walk from the station."
+   },
+   null
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n2-ck-210",
+  "type": "point",
+  "scene": "大学で男の学生と女の学生が話しています。",
+  "question": "女の学生は、発表の準備で何が一番問題だと言っていますか。",
+  "lines": [
+   [
+    "M",
+    "グループ発表の準備、順調？"
+   ],
+   [
+    "F",
+    "資料は、もうほとんどできてるの。スライドも、四人で分けて作ったし。"
+   ],
+   [
+    "M",
+    "じゃあ、問題ないじゃん。"
+   ],
+   [
+    "F",
+    "それがね、来週の発表、十五分って決まってるでしょ。通しでやってみたら、二十五分もかかったの。"
+   ],
+   [
+    "M",
+    "え、それは長いね。"
+   ],
+   [
+    "F",
+    "でもね、時間はそれほど心配してないの。削るところははっきりしてるから。困ってるのは、四人で別々に作ったから、スライドごとに言ってることがばらばらなんだよね。最初と最後で、結論が違うくらい。"
+   ],
+   [
+    "M",
+    "それはまずいね。"
+   ],
+   [
+    "F",
+    "だから今日、もう一回みんなで集まって、話し合うことにしたの。"
+   ]
+  ],
+  "options": [
+   "資料ができていないこと",
+   "内容に統一感がないこと",
+   "発表時間が長すぎること",
+   "全員が集まれないこと"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "大学里一个男学生和一个女学生在说话。",
+    "question": "女学生说发表的准备中最大的问题是什么？",
+    "lines": [
+     "小组发表准备得顺利吗？",
+     "资料差不多都做好了。幻灯片也是四个人分着做的。",
+     "那不是没问题嘛。",
+     "问题是下周的发表规定十五分钟吧。我们完整练了一遍，竟然用了二十五分钟。",
+     "诶，那可够长的。",
+     "不过时间我倒不太担心，要删哪里很清楚。头疼的是四个人分开做的，每张幻灯片说的都不一样。开头和结尾的结论都不一样。",
+     "那可不妙。",
+     "所以今天大家决定再聚一次商量。"
+    ],
+    "options": [
+     "资料还没做好",
+     "内容不统一",
+     "发表时间太长",
+     "大家聚不齐"
+    ]
+   },
+   "en": {
+    "scene": "A male and a female student are talking at university.",
+    "question": "What does the female student say is the biggest problem in preparing the presentation?",
+    "lines": [
+     "Is the group presentation coming along?",
+     "The materials are almost done. We split the slides between the four of us, too.",
+     "Then there's no problem.",
+     "Well, next week's slot is fixed at fifteen minutes, right? We did a full run-through and it took twenty-five.",
+     "Whoa, that's long.",
+     "But I'm not that worried about the time — it's clear what to cut. The trouble is that because we each made our parts separately, every slide says something different. The conclusion at the start and at the end don't even match.",
+     "That's bad.",
+     "So we've decided to all get together again today and talk it through."
+    ],
+    "options": [
+     "The materials aren't ready",
+     "The content doesn't hang together",
+     "The presentation runs too long",
+     "Not everyone can meet"
+    ]
+   }
+  },
+  "why": {
+   "zh": "她说时间「それほど心配してない」，「困ってるのは」每张幻灯片说法不一，结论都对不上。",
+   "en": "She's not too worried about time; the trouble is each slide says something different and the conclusions clash."
+  },
+  "wrong": [
+   {
+    "zh": "资料「もうほとんどできてる」。",
+    "en": "The materials are almost finished."
+   },
+   null,
+   {
+    "zh": "超时了，但她说要删哪里很清楚，不太担心。",
+    "en": "It runs over, but she knows what to cut and isn't worried."
+   },
+   {
+    "zh": "今天大家要再聚一次，不是聚不齐。",
+    "en": "They're all meeting again today."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n2-ck-211",
+  "type": "point",
+  "scene": "会社で男の人と女の人が話しています。",
+  "question": "新しいお菓子の発売が遅れることになった一番の理由は何ですか。",
+  "lines": [
+   [
+    "M",
+    "新しいお菓子、発売が来月に延びたんだって？　袋のデザイン、直してたもんね。"
+   ],
+   [
+    "F",
+    "うん、それもあるんだけど、デザインだけなら、今月中に間に合ってたの。"
+   ],
+   [
+    "M",
+    "じゃあ、工場のほう？"
+   ],
+   [
+    "F",
+    "工場は予定どおり動いてるし、材料もそろってる。延びたのはね、名前のせいなの。ほかの会社のお菓子と、ほとんど同じ名前だってことが分かって。"
+   ],
+   [
+    "M",
+    "え、今になって？"
+   ],
+   [
+    "F",
+    "そう。法律に詳しい人に、このまま出すのはやめたほうがいいって言われて。名前を変えるとなると、袋もまた作り直しだしね。"
+   ],
+   [
+    "M",
+    "それは大変だ。"
+   ]
+  ],
+  "options": [
+   "工場が止まったから",
+   "デザインを直すから",
+   "名前を変えるから",
+   "材料が届かないから"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个男人和一个女人在说话。",
+    "question": "新点心推迟上市的最主要原因是什么？",
+    "lines": [
+     "听说新点心推迟到下个月上市了？包装袋的设计一直在改嘛。",
+     "嗯，也有这个原因，不过光是设计的话，本月之内是来得及的。",
+     "那是工厂那边？",
+     "工厂按计划运转，材料也齐了。推迟是因为名字。发现和别的公司的点心名字几乎一样。",
+     "诶，现在才发现？",
+     "对。懂法律的人说最好别就这样推出。要改名字的话，袋子也得重新做。",
+     "那可麻烦了。"
+    ],
+    "options": [
+     "因为工厂停工了",
+     "因为要改设计",
+     "因为要改名字",
+     "因为材料没到"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking at the office.",
+    "question": "What is the main reason the new snack's launch has been delayed?",
+    "lines": [
+     "I hear the new snack's launch has been pushed back to next month? You were redoing the packaging design, after all.",
+     "Yes, there's that too, but if it were only the design, we'd have made it this month.",
+     "Then the factory?",
+     "The factory's on schedule and the ingredients are all in. It's the name that's delayed it. It turned out it's almost the same as another company's snack.",
+     "What, only now?",
+     "Yes. Someone who knows the law told us we'd better not release it as it is. And if we change the name, the bags have to be redone again too.",
+     "That's a big job."
+    ],
+    "options": [
+     "The factory stopped",
+     "The design is being redone",
+     "The name is being changed",
+     "The ingredients haven't arrived"
+    ]
+   }
+  },
+  "why": {
+   "zh": "她说光改设计「今月中に間に合ってた」，推迟「は名前のせい」：名字和别家点心几乎一样，要改名。",
+   "en": "The design alone would have been ready this month; the delay is because the name must be changed."
+  },
+  "wrong": [
+   {
+    "zh": "工厂「予定どおり動いてる」。",
+    "en": "The factory is on schedule."
+   },
+   {
+    "zh": "改设计也有，但光是设计本月来得及，不是主要原因。",
+    "en": "The design is a factor, but alone it wouldn't have delayed the launch."
+   },
+   null,
+   {
+    "zh": "材料「そろってる」。",
+    "en": "The ingredients are all in."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n2-ck-212",
+  "type": "point",
+  "scene": "会社で女の人と男の人が話しています。",
+  "question": "男の人が娘のことで一番心配しているのは何ですか。",
+  "lines": [
+   [
+    "F",
+    "娘さん、春から一人暮らしなんですって？　心配でしょう。"
+   ],
+   [
+    "M",
+    "ええ、心配し始めたらきりがないですよ。料理は最近ようやく覚えてくれたからいいとして、アルバイトを二つもやるって言ってるんで、勉強のほうは大丈夫かなとか。"
+   ],
+   [
+    "F",
+    "ああ、学生さんは無理しがちですもんね。"
+   ],
+   [
+    "M",
+    "でもまあ、それは本人が決めたことですし、きつければ自分で減らすでしょう。生活費も、足りなければ言ってくるだろうし。"
+   ],
+   [
+    "F",
+    "親としては、言ってきてほしいですよね。"
+   ],
+   [
+    "M",
+    "ええ。ただ、どうしても引っかかってるのが、決めた部屋が一階なことなんです。駅からの道も、暗いところがあって。本人は家賃が安いって喜んでるんですけど、こればっかりは、本人に任せておけなくて。"
+   ]
+  ],
+  "options": [
+   "料理ができないこと",
+   "お金が足りないこと",
+   "バイトで忙しすぎること",
+   "部屋が危なそうなこと"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个女人和一个男人在说话。",
+    "question": "男人关于女儿最担心的是什么？",
+    "lines": [
+     "听说您女儿春天开始一个人住？挺担心的吧。",
+     "是啊，担心起来没完没了。做饭最近总算学会了，这个还好，可她说要同时打两份工，我就想学习那边能不能行。",
+     "啊，学生总爱硬撑。",
+     "不过那是她自己决定的，太累的话自己会减的吧。生活费不够的话也会跟我们说吧。",
+     "作为父母，是希望她能开口说的。",
+     "嗯。不过始终放心不下的是她定的房间在一楼。从车站过去的路上也有黑的地方。她自己因为房租便宜挺高兴的，可只有这件事没法交给她自己。"
+    ],
+    "options": [
+     "不会做饭",
+     "钱不够",
+     "打工太忙",
+     "房间好像不安全"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking at the office.",
+    "question": "What is the man most worried about regarding his daughter?",
+    "lines": [
+     "I hear your daughter's going to live on her own from spring? You must be worried.",
+     "Yes — once you start worrying there's no end to it. She's finally learned to cook, so that's fine, but she says she'll do two part-time jobs, so I wonder about her studies.",
+     "Ah, students do tend to overdo it.",
+     "But it's her decision, and if it's too much she'll cut back herself. And if she runs short of money, she'll tell us.",
+     "As a parent, you'd want her to.",
+     "Yes. But what I just can't get past is that the flat she chose is on the ground floor. And the road from the station has dark stretches. She's pleased because the rent's cheap, but this is one thing I can't leave up to her."
+    ],
+    "options": [
+     "She can't cook",
+     "She'll run short of money",
+     "She'll be too busy with jobs",
+     "Her flat seems unsafe"
+    ]
+   }
+  },
+  "why": {
+   "zh": "打工和钱他都说「本人に任せて」也没关系，「どうしても引っかかってる」的是房间在一楼、路上黑，「こればっかりは」放心不下。",
+   "en": "Jobs and money he leaves to her; what he 'just can't get past' is the ground-floor flat and dark road."
+  },
+  "wrong": [
+   {
+    "zh": "做饭「ようやく覚えてくれたからいい」。",
+    "en": "She has learned to cook, so that's fine."
+   },
+   {
+    "zh": "生活费不够的话她会说，他不太担心。",
+    "en": "He expects her to tell them if money runs short."
+   },
+   {
+    "zh": "打两份工他有点担心，但说「きつければ自分で減らすでしょう」。",
+    "en": "He worries a little about two jobs, but trusts her to cut back."
+   },
+   null
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "half-right"
+  ]
+ },
+ {
+  "id": "n2-ck-213",
+  "type": "point",
+  "scene": "大学で女の学生と先生が話しています。",
+  "question": "先生は、レポートの何がよくなかったと言っていますか。",
+  "lines": [
+   [
+    "F",
+    "先生、この間のレポートの評価のことで、少しお聞きしたいんですが。"
+   ],
+   [
+    "M",
+    "ああ、はい。読んでいて一番気になったのは、調べたことを並べただけになっているところですね。じゃあ、あなた自身はどう考えるのか、それが最後まで出てこない。今回は、そこを見たかったんです。"
+   ],
+   [
+    "F",
+    "そうでしたか……。字数も、少なかったでしょうか。"
+   ],
+   [
+    "M",
+    "いや、字数は十分ですよ。"
+   ],
+   [
+    "F",
+    "一日遅れて出してしまったことは……。"
+   ],
+   [
+    "M",
+    "それは前もって連絡をもらっていたし、関係ありません。資料もよく集めてあって、新しい調査もきちんと使っていましたね。だから、もったいないんですよ。材料はそろっているんだから。"
+   ],
+   [
+    "F",
+    "はい、次は気をつけます。"
+   ]
+  ],
+  "options": [
+   "自分の意見がないこと",
+   "字数が足りないこと",
+   "提出が遅れたこと",
+   "参考資料が古いこと"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "大学里一个女学生和老师在说话。",
+    "question": "老师说报告的什么地方不好？",
+    "lines": [
+     "老师，关于上次报告的分数想问一下。",
+     "啊，好。读的时候我最在意的是，只是把查到的东西罗列了一遍。那你自己怎么想，到最后都没出现。这次我想看的就是这一点。",
+     "原来如此……字数也太少了吗？",
+     "不，字数是够的。",
+     "晚交了一天的事……",
+     "那个你事先说过了，没关系。资料也收集得很好，新的调查也用上了。所以才可惜啊。材料都齐了。",
+     "好的，下次注意。"
+    ],
+    "options": [
+     "没有自己的观点",
+     "字数不够",
+     "交晚了",
+     "参考资料太旧"
+    ]
+   },
+   "en": {
+    "scene": "A female student and a professor are talking at university.",
+    "question": "What does the professor say was wrong with the report?",
+    "lines": [
+     "Professor, could I ask you about the grade for my last report?",
+     "Ah, yes. What bothered me most when reading it was that it just lists what you found. What you yourself think never appears, right to the end. That's what I wanted to see this time.",
+     "I see… Was it also too short?",
+     "No, the length is fine.",
+     "And handing it in a day late…?",
+     "You told me in advance, so that doesn't matter. Your sources were well gathered, and you used recent studies properly. That's why it's a shame — you had all the material.",
+     "Yes, I'll be careful next time."
+    ],
+    "options": [
+     "There's no opinion of her own",
+     "It's too short",
+     "It was handed in late",
+     "The sources are out of date"
+    ]
+   }
+  },
+  "why": {
+   "zh": "老师一开始就说最在意的是只罗列了查到的东西，「あなた自身はどう考えるのか…出てこない」。",
+   "en": "Right at the start he says it only lists findings — her own view never appears."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "老师说「字数は十分」。",
+    "en": "He says the length is fine."
+   },
+   {
+    "zh": "晚交事先联系过，「関係ありません」。",
+    "en": "The late submission was agreed in advance."
+   },
+   {
+    "zh": "老师说资料收集得好，还用了新的调查。",
+    "en": "He praises her sources and says she used recent studies."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n2-ck-214",
+  "type": "point",
+  "scene": "会社で女の人と男の人が話しています。",
+  "question": "男の人はどうして今日早く帰りますか。",
+  "lines": [
+   [
+    "F",
+    "鈴木さん、今日は早いですね。"
+   ],
+   [
+    "M",
+    "ええ。実家の母が、今晩こっちに来るんですよ。"
+   ],
+   [
+    "F",
+    "じゃあ、駅までお迎えですか。"
+   ],
+   [
+    "M",
+    "いや、迎えはいいって言われちゃって。もう子どもじゃないんだからって、逆に怒られました。"
+   ],
+   [
+    "F",
+    "ふふ。じゃあ、夕飯でもご一緒に？"
+   ],
+   [
+    "M",
+    "食事は、明日、妻と三人で行くことになってて。……それより、問題はうちなんですよ。母が泊まる予定の部屋が、まだ段ボールだらけで。先月引っ越してから、手をつけてなかったんです。"
+   ],
+   [
+    "F",
+    "あら。"
+   ],
+   [
+    "M",
+    "母が着くのが八時なんで、それまでに、せめて布団が敷けるくらいにはしておかないと。何を言われるか分かりませんからね。"
+   ]
+  ],
+  "options": [
+   "実家に帰るから",
+   "部屋を片付けるから",
+   "母と食事をするから",
+   "駅へ迎えに行くから"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个女人和一个男人在说话。",
+    "question": "男人今天为什么早回家？",
+    "lines": [
+     "铃木，今天走得挺早啊。",
+     "嗯。老家的母亲今晚要到这边来。",
+     "那是去车站接她？",
+     "不，她说不用接。还反过来数落我说「我又不是小孩子了」。",
+     "呵呵。那是一起吃晚饭？",
+     "吃饭定在明天，和我太太三个人去。……倒是家里才是问题。母亲要住的那个房间还全是纸箱。上个月搬家以后就一直没动过。",
+     "哎呀。",
+     "母亲八点到，在那之前至少得弄到能铺被褥的程度。不然不知道要被说什么呢。"
+    ],
+    "options": [
+     "因为要回老家",
+     "因为要收拾房间",
+     "因为要和母亲吃饭",
+     "因为要去车站接人"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking at the office.",
+    "question": "Why is the man going home early today?",
+    "lines": [
+     "Suzuki-san, you're off early today.",
+     "Yes. My mother's coming from my hometown tonight.",
+     "So you're meeting her at the station?",
+     "No, she told me not to bother. 'I'm not a child,' she said — I got told off, if anything.",
+     "Ha. Then dinner together, maybe?",
+     "Dinner's tomorrow — the three of us with my wife. … The real problem is our place. The room she's meant to sleep in is still full of cardboard boxes. We haven't touched it since we moved last month.",
+     "Oh dear.",
+     "She gets in at eight, so by then I need it at least clear enough to lay out a futon. Who knows what she'd say otherwise."
+    ],
+    "options": [
+     "He's going back to his hometown",
+     "He has to tidy a room",
+     "He's having dinner with his mother",
+     "He's meeting someone at the station"
+    ]
+   }
+  },
+  "why": {
+   "zh": "母亲要住的房间还全是搬家的纸箱，八点前「せめて布団が敷けるくらいにはしておかないと」，所以是回去收拾房间。",
+   "en": "The room his mother will sleep in is full of boxes, and he must clear it before eight — so he's going to tidy it."
+  },
+  "wrong": [
+   {
+    "zh": "是母亲从老家到这边来，不是他回老家。",
+    "en": "His mother is coming here; he isn't going home."
+   },
+   null,
+   {
+    "zh": "吃饭定在明天。",
+    "en": "Dinner is tomorrow."
+   },
+   {
+    "zh": "母亲说「迎えはいい」，不用接。",
+    "en": "His mother told him not to meet her."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "repeat-word",
+   "tense"
+  ]
+ },
+ {
+  "id": "n2-ck-215",
+  "type": "point",
+  "scene": "ラジオで女のアナウンサーが古本屋の男の人にインタビューしています。",
+  "question": "男の人はどうしてこの町に店を開きましたか。",
+  "lines": [
+   [
+    "F",
+    "今日は、去年この町に古本屋さんを開いた中村さんにお話を伺います。中村さん、どうしてこの町を選ばれたんですか。家賃が安いからでしょうか。"
+   ],
+   [
+    "M",
+    "確かに、都心に比べたら安いです。でも正直に言うと、それは来てから気づいたことでして。"
+   ],
+   [
+    "F",
+    "そうなんですか。では、大学が多い町だからですか。"
+   ],
+   [
+    "M",
+    "学生さんにも来てほしいとは思っていますが、それより、ここは私が子どもの頃に住んでいた町なんです。駅前に小さな本屋があって、毎日のように通っていました。その店がなくなったと聞いて、だったら自分がやろうと。"
+   ],
+   [
+    "F",
+    "そうだったんですね。"
+   ],
+   [
+    "M",
+    "ええ。会社を辞めるのは、だいぶ迷いましたけどね。"
+   ]
+  ],
+  "options": [
+   "家賃が安かったから",
+   "学生が多い町だから",
+   "昔住んでいた町だから",
+   "会社を辞めたから"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "电台里女播音员在采访旧书店的男店主。",
+    "question": "男人为什么在这个镇上开店？",
+    "lines": [
+     "今天请到去年在这个镇上开了旧书店的中村先生。中村先生，您为什么选择这个镇呢？是因为房租便宜吗？",
+     "确实比市中心便宜。不过说实话，那是来了以后才发现的。",
+     "是吗。那是因为这里大学多？",
+     "我也希望学生们来，不过更重要的是，这里是我小时候住过的镇。车站前有家小书店，我几乎天天去。听说那家店没了，我就想，那我自己来开吧。",
+     "原来是这样。",
+     "是啊。不过辞掉公司的工作的时候，我犹豫了很久。"
+    ],
+    "options": [
+     "因为房租便宜",
+     "因为镇上学生多",
+     "因为是以前住过的镇",
+     "因为辞了公司的工作"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, a female presenter is interviewing a man who runs a second-hand bookshop.",
+    "question": "Why did the man open his shop in this town?",
+    "lines": [
+     "Today we're talking to Mr Nakamura, who opened a second-hand bookshop in this town last year. Mr Nakamura, why did you choose this town? Because the rent is cheap?",
+     "It's certainly cheaper than central Tokyo. But to be honest, I only realised that after I came.",
+     "Really? Then is it because there are lots of universities here?",
+     "I do hope students will come, but more than that, this is the town where I lived as a child. There was a little bookshop by the station that I went to almost every day. When I heard it had closed, I thought, well then, I'll do it myself.",
+     "So that's how it was.",
+     "Yes. Though I agonised for a long time over quitting my company job."
+    ],
+    "options": [
+     "The rent was cheap",
+     "There are many students",
+     "He used to live there",
+     "He quit his company job"
+    ]
+   }
+  },
+  "why": {
+   "zh": "他用「それより」引出真正的理由：这里是他小时候住过的镇，常去的书店没了，所以自己来开。",
+   "en": "After 「それより」 he gives the real reason: he lived here as a child, and his old bookshop had closed."
+  },
+  "wrong": [
+   {
+    "zh": "房租便宜是「来てから気づいた」，不是理由。",
+    "en": "He only noticed the cheap rent after coming."
+   },
+   {
+    "zh": "希望学生来，但用「それより」引出了别的理由。",
+    "en": "He hopes students will come, but gives another reason with 「それより」."
+   },
+   null,
+   {
+    "zh": "辞职是开店前犹豫的事，不是选这个镇的理由。",
+    "en": "Quitting was a hard decision, not why he chose this town."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
  }
 ]

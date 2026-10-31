@@ -1,0 +1,234 @@
+[
+ {
+  "id": "n3-m1-ck-401",
+  "type": "hatsuwa",
+  "scene": "電車で、降りる駅に着きました。でも、ドアの前に人が立っています。前の人に言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "Inside a train car, the doors are open. Two passengers stand right in front of the open doors with their backs to them. Behind them a young man with a bag on his shoulder leans forward toward the doors and looks at the passenger in front of him.",
+   "arrow": "the young man behind the two passengers"
+  },
+  "options": [
+   "すみません、降ります。",
+   "すみません、乗ります。",
+   "どうぞ、お先に。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在电车上，到了要下车的车站。可是门前站着人。对前面的人说。",
+    "question": "怎么说？",
+    "options": [
+     "不好意思，我要下车。",
+     "不好意思，我要上车。",
+     "您先请。"
+    ]
+   },
+   "en": {
+    "scene": "On a train, you've reached your stop, but people are standing in front of the door. You speak to the person in front of you.",
+    "question": "What do you say?",
+    "options": [
+     "Excuse me, I'm getting off.",
+     "Excuse me, I'm getting on.",
+     "After you."
+    ]
+   }
+  },
+  "why": {
+   "zh": "到站要下车，请前面的人让一下，说「すみません、降ります」。",
+   "en": "You need to get off, so you ask people to let you through: 「すみません、降ります」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「乗ります」是在站台上要上车的人说的，你已经在车上了。",
+    "en": "「乗ります」 is for someone getting on from the platform — you're already aboard."
+   },
+   {
+    "zh": "「どうぞ、お先に」是让别人先走，可是要出去的是你自己。",
+    "en": "「どうぞ、お先に」 lets the other person go first — but you're the one who needs to get out."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "timing"
+  ]
+ },
+ {
+  "id": "n3-m1-ck-402",
+  "type": "hatsuwa",
+  "scene": "友だちが両手に重そうな荷物を持っています。手伝いたいです。友だちに言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A quiet street. Two young women walk side by side. One carries a big heavy bag in each hand and leans slightly from the weight. The other woman has nothing in her hands and is looking at the bags.",
+   "arrow": "the woman with empty hands"
+  },
+  "options": [
+   "重そうだね。一つ持ってくれる？",
+   "重そうだね。一つ持とうか？",
+   "重そうだね。一つ持ってきたの？"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "朋友两只手都提着看起来很重的东西。你想帮忙。对朋友说。",
+    "question": "怎么说？",
+    "options": [
+     "看起来好重。能帮我拿一个吗？",
+     "看起来好重。我帮你拿一个吧？",
+     "看起来好重。你带了一个来吗？"
+    ]
+   },
+   "en": {
+    "scene": "Your friend has a heavy-looking bag in each hand. You want to help. You speak to your friend.",
+    "question": "What do you say?",
+    "options": [
+     "Looks heavy. Could you carry one for me?",
+     "Looks heavy. Shall I take one?",
+     "Looks heavy. Did you bring one?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "想帮朋友拿东西，用「〜（よ）うか」主动提出：「一つ持とうか」。",
+   "en": "To offer help you use 「〜（よ）うか」: 「一つ持とうか」 — shall I take one?"
+  },
+  "wrong": [
+   {
+    "zh": "「持ってくれる？」是请朋友帮你拿，立场反了，拿东西的是朋友。",
+    "en": "「持ってくれる？」 asks your friend to carry something for you — backwards; she's the one carrying."
+   },
+   null,
+   {
+    "zh": "「持ってきたの？」是问朋友带没带来，不是提出帮忙。",
+    "en": "「持ってきたの？」 asks whether she brought it — it doesn't offer help."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "tense"
+  ]
+ },
+ {
+  "id": "n3-m1-ck-403",
+  "type": "hatsuwa",
+  "scene": "店で、棚の高いところにある箱を取りたいですが、手が届きません。近くにいる店の人に言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A shop aisle with tall plain shelves. A short woman stands on tiptoe, reaching up toward a box on the top shelf that is beyond her fingers. A shop assistant in an apron stands a few steps away, arranging goods on a lower shelf.",
+   "arrow": "the short woman reaching up"
+  },
+  "options": [
+   "すみません、あれをお取りしましょうか。",
+   "すみません、あれを取ってもいいですか。",
+   "すみません、あれを取っていただけませんか。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在店里，你想拿架子高处的箱子，可是够不着。对旁边的店员说。",
+    "question": "怎么说？",
+    "options": [
+     "不好意思，我帮您拿那个吧？",
+     "不好意思，我可以拿那个吗？",
+     "不好意思，能帮我拿一下那个吗？"
+    ]
+   },
+   "en": {
+    "scene": "In a shop, you want a box from a high shelf but can't reach it. You speak to a shop assistant nearby.",
+    "question": "What do you say?",
+    "options": [
+     "Excuse me, shall I get that for you?",
+     "Excuse me, may I take that?",
+     "Excuse me, could you get that down for me?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "自己够不着，要请店员帮忙拿：「取っていただけませんか」。",
+   "en": "You can't reach it, so you ask the assistant to get it: 「取っていただけませんか」."
+  },
+  "wrong": [
+   {
+    "zh": "「お取りしましょうか」是店员主动帮忙时说的，立场反了。",
+    "en": "「お取りしましょうか」 is what the assistant would say offering help — the wrong side."
+   },
+   {
+    "zh": "「取ってもいいですか」是问能不能自己拿，可是你够不着，问题没解决。",
+    "en": "「取ってもいいですか」 asks permission to take it yourself — but you can't reach it."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n3-m1-ck-404",
+  "type": "hatsuwa",
+  "scene": "友だちが、大学の入学試験に合格したと教えてくれました。友だちに言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A quiet park path. Two young men stand facing each other. One holds a smartphone in one hand and raises the other hand in a happy fist, smiling broadly. The other young man claps his hands and smiles at him.",
+   "arrow": "the young man who is clapping"
+  },
+  "options": [
+   "おかげさまで、合格したよ。",
+   "合格おめでとう。よかったね。",
+   "あしたの試験、がんばってね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "朋友告诉你他考上大学了。对朋友说。",
+    "question": "怎么说？",
+    "options": [
+     "托你的福，我考上了。",
+     "恭喜你考上了。太好了。",
+     "明天的考试加油哦。"
+    ]
+   },
+   "en": {
+    "scene": "Your friend has just told you he passed his university entrance exam. You speak to your friend.",
+    "question": "What do you say?",
+    "options": [
+     "Thanks to you, I passed.",
+     "Congratulations on passing. That's great.",
+     "Good luck in tomorrow's exam."
+    ]
+   }
+  },
+  "why": {
+   "zh": "听到朋友考上了，要祝贺他：「合格おめでとう」。",
+   "en": "Your friend has passed, so you congratulate him: 「合格おめでとう」."
+  },
+  "wrong": [
+   {
+    "zh": "「おかげさまで、合格した」是考上的人自己说的，立场反了。",
+    "en": "「おかげさまで、合格した」 is what the person who passed says — the wrong side."
+   },
+   null,
+   {
+    "zh": "考试已经结束、已经考上了，「がんばってね」时机不对。",
+    "en": "The exam is over and he has passed — 「がんばってね」 comes too late."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "timing"
+  ]
+ }
+]

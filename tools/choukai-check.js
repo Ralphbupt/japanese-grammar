@@ -28,8 +28,16 @@ const TRAPS = new Set([
   "partial-content", "detail-as-topic", "twisted", "attitude-combo", "third-person-decides",
 ]);
 const SPEAKERS = /^(M|F)[12]?$/;
-// Official listening item counts per mock test (N5: JLPT 2020 revision notice).
-const MOCK_COUNTS = { N5: { kadai: 7, point: 6, hatsuwa: 5, sokuji: 6 } };
+// Official listening item counts per mock test (N5 / N4: JLPT 2020 revision notice; N3 / N2: the
+// guidebook table; N1: the 2022-12 notice). 統合理解 counts recordings: 3 recordings, the last
+// with two questions (= the 4 questions the guidebook lists).
+const MOCK_COUNTS = {
+  N5: { kadai: 7, point: 6, hatsuwa: 5, sokuji: 6 },
+  N4: { kadai: 8, point: 7, hatsuwa: 5, sokuji: 8 },
+  N3: { kadai: 6, point: 6, gaiyou: 3, hatsuwa: 4, sokuji: 9 },
+  N2: { kadai: 5, point: 6, gaiyou: 5, sokuji: 12, tougou: 3 },
+  N1: { kadai: 5, point: 6, gaiyou: 5, sokuji: 11, tougou: 3 },
+};
 const len = (s) => s.replace(/[\s　]/g, "").length;
 const isBi = (o) => o && typeof o.zh === "string" && o.zh.trim() && typeof o.en === "string" && o.en.trim();
 

@@ -22,7 +22,10 @@
  *   choukai-*.json  listening scripts (format: docs/quiz-listening-spec.md §8)
  *     kadai / point / gaiyou / hatsuwa / sokuji / tougou (→ `ctougou` here, as
  *                         `tougou` is the reading one). Options keep their file
- *                         order (the audio speaks them in it). An item is used
+ *                         order (the audio speaks them in it). A recording with
+ *                         several questions (`questions`, 統合理解 2番 on) becomes
+ *                         one question each, n2-ck-602-1, -2 …, kept together
+ *                         like a passage's (`passage` = the item's id). An item is used
  *                         only while audio/choukai/index.json has audio made
  *                         from its current script; pictures likewise from
  *                         images/choukai/index.json (tools/choukai-*.py).
@@ -211,6 +214,8 @@ const QUIZ_RUBY_FIXES = [
   [new RegExp(RX("何", "なに") + "(?=\\s*(?:ばん|まい|がい|かい|さい|ほん|ぼん|ぽん|にん|です))", "g"), R("何", "なん")],
   // 九時 is くじ (九時間 stays きゅうじかん); in dates 十七日 / 十九日 are じゅうしちにち / じゅうくにち.
   [new RegExp(RX("九", "きゅう") + "(?=" + RX("時", "じ") + "(?!間)|" + RX("時半", "じはん") + ")", "g"), R("九", "く")],
+  // 七時 is しちじ, as the test audio says it.
+  [new RegExp(RX("七", "なな") + "(?=" + RX("時", "じ") + "(?!間)|" + RX("時半", "じはん") + ")", "g"), R("七", "しち")],
   [new RegExp("(" + RX("十", "じゅう") + ")" + RX("七", "なな") + "(?=" + RX("日", "にち") + ")", "g"), (m, ten) => ten + R("七", "しち")],
   [new RegExp("(" + RX("十", "じゅう") + ")" + RX("九", "きゅう") + "(?=" + RX("日", "にち") + ")", "g"), (m, ten) => ten + R("九", "く")],
   // 十分 / 二十分 as minutes (ぐらい・かかる・歩いて…) — not じゅうぶん / じゅうふん
@@ -258,6 +263,10 @@ function loadDir(dir, label) {
   if (!fs.existsSync(dir)) return { qs, passages };
   const read = (f) => JSON.parse(fs.readFileSync(path.join(dir, f), "utf-8"));
   const level = label;
+  // A mock's listening sitting is all or nothing: one item without audio leaves the whole sitting out.
+  const ckFiles = fs.readdirSync(dir).filter((f) => /^choukai-[a-z]+\.json$/.test(f));
+  const ckLacking = /mock-\d+$/.test(dir) ? ckFiles.flatMap((f) => read(f).filter((q) => !ckAudio(q)).map((q) => q.id)) : [];
+  if (ckLacking.length) CHOUKAI_WARNINGS.set(`${level}-listening`, `${level}: listening sitting left out, no audio yet for ${ckLacking.length} item(s) (${ckLacking.slice(0, 3).join(", ")}…)`);
   for (const f of fs.readdirSync(dir).sort()) {
     if (/^(lesson\d+|bunpou)\.json$/.test(f)) for (const q of read(f)) qs.push({ ...q, _file: `${level}/${f}`, _kind: "lesson" });
     else if (/^moji-goi(-[a-z]+)?\.json$/.test(f)) for (const q of read(f)) qs.push({ ...q, _file: `${level}/${f}`, _kind: "moji-goi" });
@@ -266,11 +275,14 @@ function loadDir(dir, label) {
       (p.questions || []).forEach((q, i) => qs.push({ ...q, id: `${p.id}-${i + 1}`, type: p.type, passage: p.id, difficulty: q.difficulty || p.difficulty, _file: `${level}/${f}`, _kind: "dokkai", _blank: i + 1 }));
     }
     // Listening: never shown without its audio.
-    else if (/^choukai-[a-z]+\.json$/.test(f)) for (const q of read(f)) {
-      const skip = q.questions ? "several questions on one recording aren't supported yet" : !ckAudio(q) ? "no audio made from the current script" : null;
-      if (skip) { CHOUKAI_WARNINGS.set(q.id, `${level}/${f} ${q.id}: left out, ${skip}`); continue; }
+    else if (/^choukai-[a-z]+\.json$/.test(f)) for (const q of ckLacking.length ? [] : read(f)) {
+      if (!ckAudio(q)) { CHOUKAI_WARNINGS.set(q.id, `${level}/${f} ${q.id}: left out, no audio made from the current script`); continue; }
       if ((q.optionImages || q.picture) && !ckPic(q)) CHOUKAI_WARNINGS.set(q.id, `${level}/${f} ${q.id}: no up-to-date picture${q.optionImages ? ", shown with text options" : ""}`);
-      qs.push({ ...q, type: q.type === "tougou" ? "ctougou" : q.type, _file: `${level}/${f}`, _kind: "choukai" });
+      const type = q.type === "tougou" ? "ctougou" : q.type, at = { _file: `${level}/${f}`, _kind: "choukai" };
+      // Several questions on one recording: each its own question/answer/why/wrong,
+      // the rest shared; `_rec` is the item as written (audio, all question texts).
+      if (q.questions) { const { questions, ...rest } = q; questions.forEach((s, i) => qs.push({ ...rest, ...s, id: `${q.id}-${i + 1}`, type, passage: q.id, _part: i, _rec: q, ...at })); }
+      else qs.push({ ...q, type, ...at });
     }
   }
   return { qs, passages };
@@ -286,10 +298,14 @@ const readManifest = (f) => (fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "u
 const manifests = () => ckManifests || (ckManifests = { audio: readManifest(path.join(CK_AUDIO_DIR, "index.json")), images: readManifest(path.join(CK_IMG_DIR, "index.json")) });
 // JSON with object keys sorted, so the comparison doesn't depend on key order.
 const canon = (v) => JSON.stringify(v, (k, x) => (x && typeof x === "object" && !Array.isArray(x) ? Object.fromEntries(Object.keys(x).sort().map((y) => [y, x[y]])) : x));
+// `src` as tools/choukai-audio.py source() writes it.
 function ckAudio(q) {
   const a = manifests().audio[q.id];
   const src = Object.fromEntries(["scene", "question", "lines", "options", "respond"].filter((k) => q[k] != null).map((k) => [k, q[k]]));
-  if (!a || canon(a.src) !== canon(src) || !fs.existsSync(path.join(CK_AUDIO_DIR, a.file))) return null;
+  if (q.questions) src.questions = q.questions.map((p) => p.question);
+  if (["gaiyou", "tougou", "ctougou"].includes(q.type) && q.spokenOptions && !q.questions) src.spoken = true;   // the narrator reads the options
+  // `hold`: made but not yet passed the checks (a voice in the wrong sex, a misread word).
+  if (!a || a.hold || canon(a.src) !== canon(src) || !fs.existsSync(path.join(CK_AUDIO_DIR, a.file))) return null;
   return { f: a.file, dur: a.dur, segs: a.segs };
 }
 // { opts: [4 files] } for picture options, { scene, box } for a 発話表現 scene.
@@ -419,13 +435,14 @@ function validate(level, { qs, passages }, points, mock) {
 // What the page needs from a listening item; tools/choukai-check.js checks the rest.
 function validateChoukai(q, prefix) {
   const out = [], n = q.type === "hatsuwa" || q.type === "sokuji" ? 3 : 4;
-  if (!new RegExp(`^${prefix}-ck-\\d{3}$`).test(q.id || "")) out.push(`id must look like ${prefix}-ck-101`);
+  if (!new RegExp(`^${prefix}-ck-\\d{3}${q._rec ? "-\\d" : ""}$`).test(q.id || "")) out.push(`id must look like ${prefix}-ck-101`);
   if (!Array.isArray(q.lines)) out.push("lines must be a list");
   if (!Array.isArray(q.options) || q.options.length !== n) out.push(`needs exactly ${n} options`);
   if (!Number.isInteger(q.answer) || q.answer < 0 || q.answer >= n) out.push(`answer must be 0–${n - 1}`);
   if (!isBi(q.why)) out.push("why needs zh and en");
   if (!Array.isArray(q.wrong) || q.wrong.length !== n || q.wrong.some((w, i) => (i === q.answer ? w !== null : !isBi(w)))) out.push(`wrong needs ${n} entries, null for the right one`);
   for (const l of ["zh", "en"]) if (!q.tr || !q.tr[l] || (q.tr[l].lines || []).length !== (q.lines || []).length) out.push(`tr.${l}.lines must match lines`);
+  if (q._rec) for (const l of ["zh", "en"]) if (((q.tr || {})[l] || {}).questions?.length !== q._rec.questions.length) out.push(`tr.${l}.questions must match questions`);
   return out;
 }
 
@@ -555,19 +572,23 @@ async function bundleLevel(level, ruby, mock) {
 // (`spoken`), the transcript (`ck`, shown after answering) always have it.
 // `au`: the mp3 in audio/choukai/ and where each segment starts (spec §8);
 // `pic`: picture options or the 発話表現 scene, files in images/choukai/.
+// One of several questions on a recording has `passage` (the recording's id)
+// and `part` (0, 1 …); its transcript lists every question (`ck.questions`).
 async function choukaiItem(q, render, optRuby) {
-  const spoken = SPOKEN.has(q.type) || !!q.spokenOptions, pic = ckPic(q), all = (s) => render(s, true);
+  const rec = q._rec, spoken = (SPOKEN.has(q.type) || !!q.spokenOptions) && !rec, pic = ckPic(q), all = (s) => render(s, true);
   return {
     id: q.id, type: q.type,
     ...(q.difficulty ? { d: q.difficulty } : {}),
+    ...(rec ? { passage: q.passage, part: q._part } : {}),
     options: await Promise.all(q.options.map((o) => render(o, spoken || optRuby))),
     ...(spoken ? { spoken: true } : {}),
     answer: q.answer,
-    au: ckAudio(q),
+    au: ckAudio(rec || q),
     ...(pic ? { pic } : {}),
     ck: {
       ...(q.scene ? { scene: await all(q.scene) } : {}),
       ...(q.question ? { question: await all(q.question) } : {}),
+      ...(rec ? { questions: await Promise.all(rec.questions.map((p) => all(p.question))) } : {}),
       lines: await Promise.all(q.lines.map(async ([who, text]) => [who, await all(text)])),
       tr: q.tr,
     },
