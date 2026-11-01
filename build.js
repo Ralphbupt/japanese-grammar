@@ -343,7 +343,7 @@ const TTS_JS = `document.addEventListener('DOMContentLoaded', function(){
 // that every visitor used to download and parse). Hits go straight to GA4's
 // /g/collect endpoint, the same one gtag.js uses, so page_view, referrer,
 // custom events (window.gaEvent) and the GSC link keep working; sessions and
-// engagement time are tracked here (30-min idle session, visible-time _et).
+// engagement time are tracked here (30-min idle session; _et = focused, non-idle time).
 // The client id is reused from an existing gtag `_ga` cookie, so returning
 // visitors are not counted as new users after the switch.
 //
@@ -386,11 +386,28 @@ const GTAG_DEFERRED = `<script>
   if (newSession) sess = { id: Math.floor(now() / 1000), n: ((sess && sess.n) || 0) + 1, t: 0, pv: 0 };
 
   var seq = 0, pageId = rnd(), started = false, queue = [];
-  var visibleSince = document.hidden || document.prerendering ? 0 : now(), engagedMs = 0;
-  function takeEngaged() {
-    if (visibleSince) { engagedMs += now() - visibleSince; visibleSince = document.hidden ? 0 : now(); }
-    var e = engagedMs; engagedMs = 0; return e;
+  // Engagement time (_et): only while the tab is visible AND its window has
+  // focus, and only up to IDLE after the last scroll / pointer / key / touch /
+  // audio playback — a tab left open on a second screen no longer racks up
+  // hours. One hit reports at most CAP.
+  var IDLE = 10 * 60 * 1000, CAP = 30 * 60 * 1000, lastAct = now();
+  function activeNow() { return !document.hidden && !document.prerendering && document.hasFocus(); }
+  var visibleSince = activeNow() ? now() : 0, engagedMs = 0;
+  function bank() {
+    if (visibleSince) { var end = Math.min(now(), lastAct + IDLE); if (end > visibleSince) engagedMs += end - visibleSince; }
+    visibleSince = activeNow() ? now() : 0;
   }
+  function takeEngaged() { bank(); var e = Math.min(engagedMs, CAP); engagedMs = 0; return e; }
+  function act() {
+    if (visibleSince && now() - lastAct > IDLE) bank();
+    lastAct = now();
+    if (!visibleSince && activeNow()) visibleSince = now();
+  }
+  ['scroll', 'pointerdown', 'pointermove', 'keydown', 'touchstart', 'wheel'].forEach(function(t) { window.addEventListener(t, act, { passive: true, capture: true }); });
+  document.addEventListener('play', act, true);
+  document.addEventListener('timeupdate', act, true);
+  window.addEventListener('focus', act);
+  window.addEventListener('blur', bank);
   function send(name, params, extra) {
     var q = {
       v: 2, tid: TID, cid: cid, sid: sess.id, sct: sess.n, _p: pageId, _s: ++seq,
@@ -429,7 +446,7 @@ const GTAG_DEFERRED = `<script>
       if (et > 0) send('user_engagement', {}, { _et: et });
     }
     document.addEventListener('visibilitychange', function() {
-      if (document.hidden) flush(); else visibleSince = now();
+      if (document.hidden) flush(); else act();
     });
     window.addEventListener('pagehide', flush);
   }
@@ -456,10 +473,10 @@ const GTAG_DEFERRED = `<script>
     window.addEventListener('touchstart', trigger, opts);
     document.addEventListener('visibilitychange', function() {
       if (started) return;
-      if (document.hidden) { stopTimer(); } else { if (!visibleSince) visibleSince = now(); startTimer(); }
+      if (document.hidden) { stopTimer(); bank(); } else { act(); startTimer(); }
     });
     // A prerendered page (Speculation Rules) is only "viewed" once activated.
-    document.addEventListener('prerenderingchange', function() { visibleSince = now(); startTimer(); });
+    document.addEventListener('prerenderingchange', function() { act(); startTimer(); });
     startTimer();
   }
   if (document.readyState === 'complete') arm();
