@@ -7,6 +7,7 @@
  *
  *   node tools/ai-eval/run.mjs cf:@cf/openai/gpt-oss-120b gemini:gemini-3.8-flash
  *   node tools/ai-eval/run.mjs --only l35-claim-reversed cf:@cf/zai-org/glm-5.3-flash
+ *   node tools/ai-eval/run.mjs --effort medium cf:@cf/openai/gpt-oss-120b
  *
  * cf:<model>      Workers AI over the REST API, with the wrangler login token.
  *                 This spends the account's free daily neurons, the same pool
@@ -25,6 +26,8 @@ const ACCOUNT = 'ac5b0b471a6fa56e6acbaef0f4f0810b';
 const MAX_TOKENS = 2048;   // same as worker/src/index.js
 const args = process.argv.slice(2);
 const only = args[0] === '--only' ? args.splice(0, 2)[1].split(',') : null;
+// --effort low|medium|high: gpt-oss reasoning effort (the relay sends low).
+const effort = args[0] === '--effort' ? args.splice(0, 2)[1] : 'low';
 if (!args.length) { console.log(fs.readFileSync(new URL(import.meta.url), 'utf8').split('*/')[0]); process.exit(1); }
 const { cases } = JSON.parse(fs.readFileSync(path.join(DIR, 'cases.json'), 'utf8'));
 const todo = cases.filter((c) => !only || only.includes(c.id));
@@ -36,7 +39,7 @@ function cfToken() {
 }
 function endpoint(spec) {
   const [kind, ...rest] = spec.split(':'), model = rest.join(':');
-  if (kind === 'cf') return { url: `https://api.cloudflare.com/client/v4/accounts/${ACCOUNT}/ai/v1/chat/completions`, key: cfToken(), model, extra: /gpt-oss/.test(model) ? { reasoning_effort: 'low' } : {} };
+  if (kind === 'cf') return { url: `https://api.cloudflare.com/client/v4/accounts/${ACCOUNT}/ai/v1/chat/completions`, key: cfToken(), model, extra: /gpt-oss/.test(model) ? { reasoning_effort: effort } : {} };
   if (kind === 'gemini') return { url: 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions', key: process.env.GEMINI_API_KEY, model, extra: {} };
   if (kind === 'openai-compatible') { const [base, m] = model.split('|'); return { url: base.replace(/\/$/, '') + '/chat/completions', key: process.env.OPENAI_COMPAT_KEY, model: m, extra: {} }; }
   throw new Error('unknown model spec ' + spec);
@@ -53,7 +56,7 @@ async function ask(ep, messages) {
 // Answers put readings after kanji (面白（おもしろ）くない); drop them before matching.
 const plain = (a) => a.replace(/（[\u3041-\u309f\u30fc]+）/g, '').replace(/\*\*/g, '');
 const check = (c, ans) => { const a = plain(ans); return [
-  ...c.must.filter((s) => !a.includes(s)).map((s) => `missing「${s}」`),
+  ...c.must.filter((s) => !a.includes(s) && !ans.includes(s)).map((s) => `missing「${s}」`),   // a reading may be the point (しか)
   ...c.mustNot.filter((s) => a.includes(s)).map((s) => `has「${s}」`),
   ...(ans.trim() ? [] : ['EMPTY']),
 ]; };
@@ -71,7 +74,7 @@ for (const spec of args) {
       `**Expected:** ${c.expect}`, '', r.error || r.answer, '', `_(${r.ms} ms${r.usage ? ', ' + JSON.stringify(r.usage) : ''})_`, '');
     process.stdout.write(issues.length ? '!' : '.');
   }
-  const dir = path.join(DIR, 'results', day), base = spec.replace(/[^a-z0-9.-]+/gi, '_');
+  const dir = path.join(DIR, 'results', day), base = spec.replace(/[^a-z0-9.-]+/gi, '_') + (/gpt-oss/.test(spec) && effort !== 'low' ? '_' + effort : '');
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, base + '.md'), out.join('\n'));
   fs.writeFileSync(path.join(dir, base + '.json'), JSON.stringify(json, null, 1));
