@@ -88,7 +88,21 @@ Vocabulary ranges: N4 word ids `n4-mg-1xx` kanji, `2xx` hyouki, `3xx` bunmyaku, 
 
 **Level.** (Grammar questions.) Grammar and vocabulary at or below the question's level; for N5 only N5 grammar (lessons 00–17) and common N5 words. Write like the real test: spaces between phrases (分かち書き), kanji the level would use (N5: basic kanji like 学校・先生・行く・食べる; otherwise kana). Furigana is added by the build — never write readings in the text. Natural, everyday situations; dialogues as `A「…」\nB「…」`.
 
-**Explanations.** `why`: one or two sentences — the clue in the sentence and the rule it triggers. `wrong[i]`: one sentence per distractor saying *why it's wrong here* (meaning / connection / doesn't fit the context) — not just "wrong". `tr`: natural translation of `full`. Chinese is simplified, no romaji anywhere. Japanese inside explanations goes in 「」.
+**Explanations.** The answer view shows the finished sentence and its translation first, then `why`, then `wrong`, then the grammar point's 接続 + example (from the lesson). So `why` never restates the translation or the answer; it says *how to get there*, in labelled lines (`\n` between them; the page keeps the breaks):
+- zh `线索：` / en `Clue: ` — the word or structure in the sentence that decides it.
+- zh `规则：` / en `Rule: ` — the rule it triggers, in plain words. If a term like 辞书形 / ます形 is unavoidable, give a two-word example with it (「する」「食べる」).
+- 排序 only: zh `怎么排：` / en `Order: ` — which pieces must join (fixed patterns first, then what modifies what) and the resulting order, ending with which piece is ★.
+- optional zh `容易错：` / en `Trap: ` — the typical mistake, when there is one (always worth it for 排序, which has no `wrong`).
+- optional zh `技巧：` / en `Tip: ` — only when this question is a genuinely good example of a reusable trick; not on most questions.
+- N3 / N2 / N1 (and N4 where useful): zh `辨析：` / en `Contrast: ` — how the answer differs in meaning or nuance from the distractor a learner is most likely to pick, ideally with a short contrasting pair (「〜はずだ」＝根据推断应该…；「〜わけだ」＝由前面的事实自然得出…).
+About 60–120 Chinese characters at N5/N4, up to ~180 at N3 and above (排序 up to ~150 / ~200). No invented rules: if unsure, leave it out. `wrong[i]`: one sentence per distractor saying *why it's wrong here* (meaning / connection / doesn't fit the context) — not just "wrong". For vocabulary, a pair worth learning together can go in `why` (でんき：つける／けす). `tr`: natural translation of `full`. Chinese is simplified, no romaji anywhere. Japanese inside explanations goes in 「」.
+
+Example (排序, n5-l07-006):
+```
+线索：看到「こと」「が」「あります」，先想到句型「〜たことがある」（做过……）。
+怎么排：「こと」前面放修饰它的动词「食べた」；「こと＋が＋ある」中间不插别的词。顺序：食べた → こと → が → あります，★ 是「が」。
+容易错：把「こと」放到动词前面。修饰语总在名词前面：「食べたこと」，不是「こと食べた」。
+```
 
 **ids.** `n5-l05-001`, numbered in file order, never reused or renumbered once published (progress is keyed on them). If you change a published question's answer, bump `rev`.
 

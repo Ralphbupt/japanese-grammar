@@ -307,3 +307,4 @@ body.quiz-busy .quiz-about { display: none; }
 .q-point-h a { font-size: .9em; white-space: nowrap; }
 .q-point-row { display: grid; grid-template-columns: 2.6em 1fr; gap: .6rem; margin-top: .3rem; line-height: 1.7; }
 .q-point-k { color: var(--text-muted); font-size: .88em; padding-top: .1em; }
+.q-why { white-space: pre-line; }

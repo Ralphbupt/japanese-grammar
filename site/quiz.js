@@ -696,14 +696,16 @@
     // A recording with several questions: the transcript (it has every question
     // and its answer) once all of them are answered, under the last one.
     if (isCk(q) && !left.length) h += ckScript(q);
-    h += '<div class="q-explain"><p>' + esc(bi(q.why)) + '</p>';
+    // The finished sentence and its translation first: understand the sentence,
+    // then read why the answer fits it.
+    h += '<div class="q-explain">' + kjHtml(q, D.passages);
+    if (q.tr) h += '<p class="q-muted">' + esc(bi(q.tr)) + '</p>';
+    h += '<p class="q-why">' + esc(bi(q.why)) + '</p>';
     if (q.type !== 'narabe') {
       var rows = q.wrong.map(function (w, i) { return w ? { i: i, w: w } : null; }).filter(Boolean);
       rows.sort(function (a, b) { return (b.i === choice) - (a.i === choice); });
       h += '<ul class="q-wrong">' + rows.map(function (r) { return '<li' + (r.i === choice ? ' class="q-mine"' : '') + '><b lang="ja">' + (r.i + 1) + ' ' + q.options[r.i] + okjOf(q, r.i) + '</b> — ' + esc(bi(r.w)) + '</li>'; }).join('') + '</ul>';
     }
-    h += kjHtml(q, D.passages);
-    if (q.tr) h += '<p class="q-muted">' + esc(bi(q.tr)) + '</p>';
     if (q.passage && !isCk(q)) h += '<details class="q-tr"><summary>' + t('全文翻译', 'Translation of the text') + '</summary><p>' + esc(bi(D.passages[q.passage].tr)) + '</p></details>';
     h += pointsHtml(q);
     if (!aiFirst) h += aiBtn(false);
