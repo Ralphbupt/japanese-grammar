@@ -70,7 +70,9 @@ function hasSC(text) {
 async function withFurigana(text) {
   if (!text || !HAS_KANJI.test(text)) return text;
   try {
-    return await kuro.convert(text, { to: "hiragana", mode: "furigana" });
+    // 3階・何階 are さんがい・なんがい; kuroshiro reads the counter alone as かい.
+    return (await kuro.convert(text, { to: "hiragana", mode: "furigana" }))
+      .replace(/([3３三]|<ruby>何<rp>\(<\/rp><rt>なん<\/rt><rp>\)<\/rp><\/ruby>)<ruby>階<rp>\(<\/rp><rt>かい<\/rt>/g, "$1<ruby>階<rp>(</rp><rt>がい</rt>");
   } catch {
     return text;
   }
