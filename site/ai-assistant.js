@@ -113,7 +113,9 @@
   };
 
   var GROUPS = [['site', '本站免费 / Free'], ['intl', '国际（中国大陆一般要代理） / International'], ['cn', '国内 / China'], ['local', '本地 / Local'], ['relay', '聚合与自定义 / Relays & custom']];
-  var RECOMMEND = { zh: ['zhipu', 'siliconflow', 'deepseek'], en: ['groq', 'gemini', 'openrouter'] };
+  // en: Gemini first, it answered all 13 tools/ai-eval cases right (2026-11-02);
+  // zh keeps providers reachable from mainland China.
+  var RECOMMEND = { zh: ['zhipu', 'siliconflow', 'deepseek'], en: ['gemini', 'groq', 'openrouter'] };
 
   /* ── config (several providers, one active) ── */
   // cfg.session = true → stored in sessionStorage (gone when the tab closes).
@@ -597,12 +599,15 @@
         '<label class="ai-ctx" title="' + esc(t('随问题一起发给模型的笔记范围。选中某一节的例句提问时会自动缩小到那一节。', 'Which part of the notes is sent with your question. Selecting text inside a grammar point narrows it to that point automatically.')) + '">' +
           '<span class="ai-ctx-label">📎 ' + esc(t('AI 看到', 'AI sees')) + '</span><select class="ai-scope"></select>' +
           '<button type="button" class="ai-clear" hidden title="' + esc(t('清空本课的对话记录，模型不再看到之前的问答', 'Clear this lesson\u2019s chat; the model will no longer see earlier turns')) + '">🗑 ' + esc(t('清空对话', 'Clear chat')) + '</button></label>' +
+        '<p class="ai-free-warn" hidden>' + esc(t('免费模型偶尔会讲错，以课文和解析为准 · ', 'The free model sometimes gets things wrong; the notes and explanations come first · ')) +
+          '<button type="button" class="ai-free-switch">' + esc(t('换更强的模型 →', 'Use a stronger model →')) + '</button></p>' +
         '<textarea rows="3"></textarea>' +
         '<div class="ai-input-row"><span class="ai-input-hint">' + esc(t('Enter 发送 · Shift+Enter 换行', 'Enter to send · Shift+Enter for a new line')) + '</span>' +
         '<button type="submit">' + esc(t('发送 ↑', 'Send ↑')) + '</button></div>' +
       '</form>';
     document.body.appendChild(panel);
     msgsEl = panel.querySelector('.ai-msgs');
+    panel.querySelector('.ai-free-switch').addEventListener('click', function () { track('ai_wizard', { step: 'start', from: 'warn' }); renderWizard(); });
     settingsEl = panel.querySelector('.ai-settings');
     inputEl = panel.querySelector('textarea');
     sendBtn = panel.querySelector('.ai-input button[type=submit]');
@@ -749,6 +754,8 @@
     msgsEl.innerHTML = '';
     panel.querySelector('.ai-input').hidden = false;
     panel.querySelector('.ai-clear').hidden = !history.length;
+    // On the free relay, a standing reminder that it can be wrong and a way out.
+    panel.querySelector('.ai-free-warn').hidden = cfg.active !== 'jpnotes';
     if (!history.length && GENERAL) {
       var gq = isEn()
         ? ['What\u2019s the difference between は and が?', 'When do I use ために and when ように?', 'Explain the te-form rules simply', 'Which grammar comes up most on the JLPT N2?']
@@ -810,6 +817,13 @@
       localStorage.setItem('jp_ai_flags', JSON.stringify(f));
     } catch (e) {}
     btn.textContent = '✓ ' + t('已标记', 'Marked'); btn.disabled = true;
+    if (cfg.active === 'jpnotes' && !msgEl.querySelector('.ai-flag-tip')) {
+      var tip = document.createElement('p');
+      tip.className = 'ai-note ai-flag-tip';
+      tip.innerHTML = esc(t('免费模型在细微语感上不太可靠，', 'The free model is unreliable on fine points of usage. ')) + '<button type="button" class="ai-own-key">' + esc(t('试试更强的模型 →', 'Try a stronger model →')) + '</button>';
+      tip.querySelector('button').addEventListener('click', function () { track('ai_wizard', { step: 'start', from: 'flag' }); renderWizard(); });
+      msgEl.appendChild(tip);
+    }
     track('ai_flag', { mode: QUIZ ? 'quiz' : GENERAL ? 'general' : 'lesson' });
   }
   function copyText(s, btn) {
