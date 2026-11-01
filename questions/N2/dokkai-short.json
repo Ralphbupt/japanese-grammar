@@ -331,5 +331,254 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n2-dk-209",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、市立図書館のホームページに掲載されたお知らせです。",
+    "passage": "利用者の皆様へ\n\nシステム入れ替えに伴う休館のお知らせ\n\n貸出・返却を管理するシステムを新しくするため、2月3日（月）から9日（日）まで休館いたします。休館中も、正面入口の横にある返却ポストはご利用いただけますが、CDやDVDは破損するおそれがあるため、ポストには入れず、開館後にカウンターへお返しください。\nまた、休館中はホームページからの予約もできません。なお、休館中に返却期限を迎える資料は、期限を自動的に2月16日まで延長いたします。\n\nさくら市立中央図書館",
+    "tr": {
+      "zh": "致各位读者：系统更换闭馆通知。为更新管理借阅和归还的系统，本馆将于2月3日（周一）至9日（周日）闭馆。闭馆期间，正门入口旁的还书箱仍可使用，但CD和DVD有损坏的可能，请不要投入还书箱，开馆后请到柜台归还。另外，闭馆期间也无法通过官网预约。闭馆期间到期的资料，归还期限将自动延长至2月16日。樱市立中央图书馆",
+      "en": "To all library users: Notice of closure for a system changeover. To replace the system that manages loans and returns, the library will be closed from Monday 3 to Sunday 9 February. The book drop beside the main entrance can still be used during the closure, but CDs and DVDs may be damaged, so please do not put them in the drop; return them at the counter after we reopen. Reservations through the website will also be unavailable during the closure. Items due back during the closure will have their due date automatically extended to 16 February. Sakura City Central Library"
+    },
+    "questions": [
+      {
+        "q": "休館中に返却期限が来るDVDを借りている人は、どうすればよいか。",
+        "options": [
+          "休館中に、正面入口の横の返却ポストに入れる。",
+          "休館の前に、ホームページで期限の延長を申し込む。",
+          "開館してから2月16日までに、カウンターに返す。",
+          "2月9日までに、図書館に電話で連絡しておく。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "DVD「ポストには入れず、開館後にカウンターへ」；期限在闭馆期间的资料「自動的に2月16日まで延長」，所以开馆后到16日前去柜台还。",
+          "en": "DVDs go 「ポストには入れず、開館後にカウンターへ」, and items due during the closure are 「自動的に2月16日まで延長」 — so return it at the counter after reopening, by the 16th."
+        },
+        "wrong": [
+          {
+            "zh": "正好相反：CD和DVD「ポストには入れず」。",
+            "en": "The opposite: CDs and DVDs are 「ポストには入れず」."
+          },
+          {
+            "zh": "期限是「自動的に」延长的，不需要申请。",
+            "en": "The extension is 「自動的に」 — nothing to apply for."
+          },
+          null,
+          {
+            "zh": "通知里没有要求打电话联系。",
+            "en": "The notice asks for no phone call."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-210",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "引っ越しを機に、家の中の物を大幅に減らした。驚いたのは、「いつか使うかもしれない」と取っておいた物の多くが、何年も箱から出されていなかったことだ。結局、そうした物はほとんど処分した。ただ、片付けを通して分かったのは、物を減らすこと自体よりも、何を残すかを決めることのほうが難しく、大切だということだ。古い手紙一通を残すか捨てるか迷う時間は、自分が何を大事にして生きてきたのかを確かめる時間でもあった。",
+    "tr": {
+      "zh": "借着搬家的机会，我大幅减少了家里的东西。让我吃惊的是，很多以“说不定哪天会用到”为由留着的东西，好几年都没从箱子里拿出来过。结果，这些东西我几乎都处理掉了。不过，通过整理我明白了：比起减少东西本身，决定留下什么更难，也更重要。犹豫一封旧信是留还是扔的那段时间，也是确认自己一直以来珍视什么的时间。",
+      "en": "When I moved house, I cut down drastically on my belongings. What surprised me was that many of the things I'd kept because 'I might use them someday' hadn't been taken out of their boxes for years. In the end I got rid of almost all of them. But what tidying up taught me is that deciding what to keep is harder, and more important, than reducing things itself. The time I spent agonising over whether to keep or throw away a single old letter was also time spent confirming what I had valued in my life."
+    },
+    "questions": [
+      {
+        "q": "筆者の考えに合うものはどれか。",
+        "options": [
+          "使わない物は、思い出があっても迷わずに処分したほうがいい。",
+          "物を減らすことが、片付けの中で最も難しく、大切な作業だ。",
+          "古い手紙のように思い出のある物は、何年たっても残しておくべきだ。",
+          "何を残すか考えることで、自分が大切にしてきたものが分かる。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "最后一句：犹豫留不留旧信的时间，「自分が何を大事にして生きてきたのかを確かめる時間」。",
+          "en": "The last sentence: agonising over an old letter was 「自分が何を大事にして生きてきたのかを確かめる時間」."
+        },
+        "wrong": [
+          {
+            "zh": "作者认为犹豫的时间很有意义，并没有主张不加犹豫地扔掉。",
+            "en": "The writer values the time spent hesitating; he doesn't say to throw things out without thinking."
+          },
+          {
+            "zh": "正好相反：比起减少东西本身，「何を残すかを決めることのほうが難しく、大切」。",
+            "en": "The opposite: 「何を残すかを決めることのほうが難しく、大切」, more than reducing itself."
+          },
+          {
+            "zh": "文中没有说有回忆的东西都应该留下，只说了犹豫的过程有意义。",
+            "en": "He never says keepsakes must always be kept — only that deciding about them means something."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-211",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、会社の社員に届いたメールです。",
+    "passage": "社員各位\n\n総務部の小川です。\n今年度の健康診断は、10月7日（火）と8日（水）に本社で行います。当日都合がつかない方は、11月末までに、会社の指定する病院で各自受診してください。その場合、費用はいったんご自身で支払っていただき、領収書を総務部に提出していただければ、後日全額をお返しします。\nなお、指定以外の病院で受診した場合は、費用をお返しできませんので、ご注意ください。指定病院の一覧は、社内のホームページに載せてあります。\n\n総務部　小川",
+    "tr": {
+      "zh": "各位同事：我是总务部的小川。今年的健康检查将于10月7日（周二）和8日（周三）在总公司进行。当天不方便的人，请在11月底之前，各自到公司指定的医院接受检查。这种情况下，费用请先自行支付，把收据交给总务部后，日后会全额返还。另外，在指定医院以外的医院检查的，费用无法返还，请注意。指定医院的名单已登在公司内部网站上。总务部 小川",
+      "en": "To all staff: This is Ogawa from General Affairs. This year's health check will be held at head office on Tuesday 7 and Wednesday 8 October. If you can't make those days, please have the check yourself at one of the company's designated hospitals by the end of November. In that case, please pay the cost yourself first; if you submit the receipt to General Affairs, the full amount will be refunded later. Please note that costs cannot be refunded if you have the check at a hospital that is not designated. The list of designated hospitals is on the company intranet. Ogawa, General Affairs"
+    },
+    "questions": [
+      {
+        "q": "10月7日と8日のどちらも都合が悪い人は、どうしなければならないか。",
+        "options": [
+          "11月末までに好きな病院で受診し、領収書を総務部に出す。",
+          "指定の病院で受診する日を決めて、総務部に知らせておく。",
+          "指定の病院で受診し、費用を払ってから領収書を総務部に出す。",
+          "総務部で費用を受け取ってから、指定の病院で受診する。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "要「会社の指定する病院で各自受診」，费用「いったんご自身で支払って」，再把「領収書を総務部に提出」。",
+          "en": "Have it done 「会社の指定する病院で」, pay 「いったんご自身で」, then hand 「領収書を総務部に」."
+        },
+        "wrong": [
+          {
+            "zh": "必须是指定医院；「指定以外の病院」的费用不退。",
+            "en": "It must be a designated hospital; costs at 「指定以外の病院」 aren't refunded."
+          },
+          {
+            "zh": "邮件没有要求事先告知检查日期。",
+            "en": "The email doesn't ask staff to report their appointment date."
+          },
+          null,
+          {
+            "zh": "顺序反了：先自己付钱，交了收据后「後日」退还。",
+            "en": "Wrong order: you pay first and are refunded 「後日」 after handing in the receipt."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-212",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "大学に入って東京に出てきたとき、私は故郷の言葉が出ないよう気をつけていた。笑われるのが怖かったのだ。ところが、ある日うっかり方言で返事をしてしまうと、周りの友人は笑うどころか、「その言い方、温かくていいね」と言ってくれた。それ以来、無理に隠すのはやめた。今では、初対面の人と話すとき、出身地の話題から会話が広がることも多い。隠していたものが、人とつながるきっかけになったのである。",
+    "tr": {
+      "zh": "上大学来到东京时，我很小心不让家乡话说出口。我怕被人笑话。可是有一天，我不小心用方言回答了一句，周围的朋友非但没有笑，还说“那种说法很温暖，真好”。从那以后，我就不再勉强隐藏了。现在和初次见面的人说话时，话题也常常从出身地展开。我曾经隐藏的东西，成了和人建立联系的契机。",
+      "en": "When I came to Tokyo for university, I was careful not to let my home dialect slip out. I was afraid of being laughed at. But one day, when I accidentally answered in dialect, far from laughing, my friends said, 'That way of saying it is warm — I like it.' Since then I've stopped forcing myself to hide it. Now, when I talk with people I've just met, the conversation often grows from where I come from. What I had been hiding became a way to connect with people."
+    },
+    "questions": [
+      {
+        "q": "筆者が最も言いたいことは何か。",
+        "options": [
+          "方言で話せば、初対面の人とも必ず会話が広がる。",
+          "東京で暮らすなら、故郷の言葉は使わないほうが安全だ。",
+          "隠していた故郷の言葉が、人と親しくなる助けになった。",
+          "故郷の言葉を大切にするために、方言をもっと話すべきだ。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "最后一句是结论：「隠していたものが、人とつながるきっかけになった」，隐藏的东西就是家乡话。",
+          "en": "The closing line sums it up: 「隠していたものが、人とつながるきっかけになった」 — what he hid was his dialect."
+        },
+        "wrong": [
+          {
+            "zh": "作者只说「会話が広がることも多い」，不是“一定”。",
+            "en": "He says only 「会話が広がることも多い」 (often), not always."
+          },
+          {
+            "zh": "这是作者当初的想法，后来他「無理に隠すのはやめた」。",
+            "en": "That was his early fear; later 「無理に隠すのはやめた」."
+          },
+          null,
+          {
+            "zh": "文中没有呼吁大家多说方言，只讲了自己的经历。",
+            "en": "He doesn't urge anyone to speak more dialect; he describes his own experience."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-213",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、スポーツクラブの会員に届いたお知らせです。",
+    "passage": "会員の皆様へ\n\nいつも「フィットネスみなみ」をご利用いただき、ありがとうございます。\n4月1日より、月会費を8,000円から8,800円に改定させていただくことになりました。\nなお、3月31日までに1年分の会費をまとめてお支払いいただいた方は、1年間、現在の会費のままご利用いただけます。お支払いは受付でのみ承ります。\nまた、4月以降、しばらく利用できない方には、月500円で会員資格を残せる休会制度もございます。\n\nフィットネスみなみ",
+    "tr": {
+      "zh": "致各位会员：感谢您一直以来使用“健身南”。自4月1日起，月费将由8,000日元调整为8,800日元。另外，在3月31日之前一次性支付一年会费的会员，一年内可按现行会费使用。付款仅在前台受理。此外，对于4月以后暂时无法使用的会员，还有每月500日元即可保留会员资格的停会制度。健身南",
+      "en": "To all members: Thank you for always using Fitness Minami. From 1 April, the monthly fee will change from ¥8,000 to ¥8,800. Members who pay a full year's fees in one sum by 31 March can continue at the current fee for one year. Payment is accepted at reception only. For members who won't be able to come for a while from April, there is also a suspension scheme that keeps your membership for ¥500 a month. Fitness Minami"
+    },
+    "questions": [
+      {
+        "q": "4月から1年間、今と同じ会費で利用したい会員は、どうすればよいか。",
+        "options": [
+          "3月31日までに、受付で1年分の会費を払う。",
+          "4月1日までに、受付で休会の手続きをしておく。",
+          "3月31日までに、ホームページで1年分を申し込む。",
+          "4月から、毎月の会費を受付で直接支払う。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「3月31日までに1年分の会費をまとめて」付，就能「現在の会費のまま」用一年；付款「受付でのみ」。",
+          "en": "Pay 「1年分の会費をまとめて」 by 31 March and you keep 「現在の会費のまま」 for a year; payment is 「受付でのみ」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "停会制度是给暂时不能来的人保留资格用的，和维持原价无关。",
+            "en": "The suspension scheme is for members who can't come for a while, not for keeping the old fee."
+          },
+          {
+            "zh": "付款「受付でのみ承ります」，不能在网上办。",
+            "en": "Payment is 「受付でのみ」 — not online."
+          },
+          {
+            "zh": "4月以后按月付就是新的8,800日元。",
+            "en": "Paying monthly from April means the new ¥8,800."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-214",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "高速道路の渋滞は、事故や工事がなくても起こる。その原因として多いのが、下り坂から上り坂に変わる、ゆるやかな坂道だ。坂が非常にゆるやかなため、運転している人は上り坂に入ったことに気づかず、知らないうちに速度が落ちる。すると後ろの車がブレーキを踏み、さらに後ろの車はもっと強く踏む。こうして小さな減速が後ろへ伝わるうちに大きくなり、やがて車が止まってしまうのである。上り坂の手前に、速度の低下に注意するよう呼びかける表示が設けられているのは、そのためだ。",
+    "tr": {
+      "zh": "高速公路的拥堵，即使没有事故或施工也会发生。常见的原因之一，是由下坡转为上坡的平缓坡道。因为坡度非常平缓，开车的人没有察觉已经进入上坡，不知不觉中车速就降了下来。于是后面的车踩刹车，再后面的车踩得更重。就这样，小小的减速在向后传递的过程中越来越大，最后车就停了下来。上坡前方设有提醒注意车速下降的标志，就是这个缘故。",
+      "en": "Motorway traffic jams happen even without accidents or roadworks. A common cause is a gentle slope where a downhill stretch turns uphill. Because the slope is so gentle, drivers don't notice they have started going uphill, and their speed drops without their realising. Then the car behind brakes, and the one behind that brakes harder. In this way a small slowdown grows as it passes backwards, until eventually cars come to a stop. That is why signs before such slopes warn drivers to watch for a drop in speed."
+    },
+    "questions": [
+      {
+        "q": "筆者によると、事故や工事がないのに渋滞が起こるのはなぜか。",
+        "options": [
+          "小さな減速が後ろへ伝わり、だんだん大きくなるから",
+          "急な上り坂で、多くの車が速度を大きく落とすから",
+          "下り坂で速度が出すぎた車が、急にブレーキを踏むから",
+          "上り坂に気づいた運転者が、あわてて速度を上げるから"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "司机没察觉进入上坡，「知らないうちに速度が落ちる」，这种「小さな減速が後ろへ伝わるうちに大きくなり」，最后车停下。",
+          "en": "Drivers slow 「知らないうちに」, and 「小さな減速が後ろへ伝わるうちに大きくなり」 until cars stop."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "坡是「非常にゆるやか」的，不是陡坡，开始的减速也很小。",
+            "en": "The slope is 「非常にゆるやか」, not steep, and the first slowdown is small."
+          },
+          {
+            "zh": "文中说的是由下坡转上坡时不知不觉减速，没说下坡超速。",
+            "en": "The text is about slowing unnoticed where downhill turns uphill, not speeding downhill."
+          },
+          {
+            "zh": "正好相反：司机「上り坂に入ったことに気づかず」，速度是下降的。",
+            "en": "The opposite: drivers 「気づかず」 and their speed drops."
+          }
+        ]
+      }
+    ]
   }
 ]

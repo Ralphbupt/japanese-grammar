@@ -1120,5 +1120,1085 @@
         "en": "上 is also じょう, but 「上況」 isn't a word."
       }
     ]
+  },
+  {
+    "id": "n2-mg-231",
+    "type": "hyouki",
+    "difficulty": 3,
+    "stem": "新しい社長のもとで、会社の経営<<たいせい>>が大きく変わった。",
+    "options": [
+      "体制",
+      "体勢",
+      "大勢",
+      "態制"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "在新社长的领导下，公司的经营体制发生了很大变化。",
+      "en": "Under the new president, the company's management structure changed a great deal."
+    },
+    "why": {
+      "zh": "组织、制度的结构是「体制」（「経営体制」「政治体制」）。",
+      "en": "The structure of an organisation or system is 「体制」 (「経営体制」, 「政治体制」)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「体勢」是身体的姿势（「体勢を崩す」），不用于经营。",
+        "en": "「体勢」 is body position (「体勢を崩す」), not a management structure."
+      },
+      {
+        "zh": "「大勢（たいせい）」是大局、大势，不能说「経営大勢」。",
+        "en": "「大勢」 (たいせい) is the general trend; 「経営大勢」 isn't said."
+      },
+      {
+        "zh": "「態制」不是词；「態勢」（准备状态）才是。",
+        "en": "「態制」 isn't a word; 「態勢」 (readiness) is."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-232",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "お正月は毎年、家族で実家に<<きせい>>している。",
+    "options": [
+      "規制",
+      "帰省",
+      "寄生",
+      "帰性"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "每年新年我们全家都回老家。",
+      "en": "Every New Year we go back to my parents' home as a family."
+    },
+    "why": {
+      "zh": "回老家探亲是「帰省」（「お盆に帰省する」）。",
+      "en": "Going back to one's home town to see family is 「帰省」 (「お盆に帰省する」)."
+    },
+    "wrong": [
+      {
+        "zh": "「規制」是限制、管制（「交通規制」）。",
+        "en": "「規制」 is regulation (「交通規制」)."
+      },
+      null,
+      {
+        "zh": "「寄生」是寄生（「寄生虫」）。",
+        "en": "「寄生」 is being a parasite (「寄生虫」)."
+      },
+      {
+        "zh": "「帰性」不是词。",
+        "en": "「帰性」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-233",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "今年の夏は<<いじょう>>な暑さが続いている。",
+    "options": [
+      "以上",
+      "異情",
+      "異常",
+      "移常"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "今年夏天持续异常炎热。",
+      "en": "This summer the heat has been abnormal."
+    },
+    "why": {
+      "zh": "不同寻常是「異常」（「異常気象」）。",
+      "en": "Out of the ordinary is 「異常」 (「異常気象」)."
+    },
+    "wrong": [
+      {
+        "zh": "「以上」是“以上、超过”，不能接「な」修饰名词。",
+        "en": "「以上」 means 'or more, above'; it can't take な before a noun."
+      },
+      {
+        "zh": "「異情」不是词。",
+        "en": "「異情」 isn't a word."
+      },
+      null,
+      {
+        "zh": "「移」是移动的「移」，「移常」不是词。",
+        "en": "「移」 is 'move'; 「移常」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-234",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "他人を傷つけるような<<こうい>>は許されない。",
+    "options": [
+      "好意",
+      "厚意",
+      "行意",
+      "行為"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "伤害他人的行为是不被允许的。",
+      "en": "Acts that hurt other people are not allowed."
+    },
+    "why": {
+      "zh": "“行为、举动”是「行為」。",
+      "en": "An act or deed is 「行為」."
+    },
+    "wrong": [
+      {
+        "zh": "「好意」是好感、善意，不会“伤害他人”。",
+        "en": "「好意」 is goodwill or liking; it doesn't hurt people."
+      },
+      {
+        "zh": "「厚意」是深厚的情意（「ご厚意」），与伤害无关。",
+        "en": "「厚意」 is kindness (「ご厚意」), nothing to do with hurting."
+      },
+      {
+        "zh": "「行意」不是词。",
+        "en": "「行意」 isn't a word."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-mg-235",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "多くの国民が、その政策を<<しじ>>している。",
+    "options": [
+      "指示",
+      "支持",
+      "師事",
+      "支時"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "很多国民支持那项政策。",
+      "en": "Many citizens support that policy."
+    },
+    "why": {
+      "zh": "赞成、拥护是「支持」（「支持率」）。",
+      "en": "Backing or supporting is 「支持」 (「支持率」)."
+    },
+    "wrong": [
+      {
+        "zh": "「指示」是指示、命令，国民不会“指示政策”。",
+        "en": "「指示」 is giving instructions; citizens don't 'instruct' a policy."
+      },
+      null,
+      {
+        "zh": "「師事」是拜某人为师，对象是人，不是政策。",
+        "en": "「師事」 is studying under a teacher — its object is a person."
+      },
+      {
+        "zh": "「支時」不是词。",
+        "en": "「支時」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-236",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "車を買ったので、自動車<<ほけん>>に入った。",
+    "options": [
+      "保健",
+      "保険",
+      "保検",
+      "補険"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "买了车，所以上了汽车保险。",
+      "en": "I bought a car, so I took out car insurance."
+    },
+    "why": {
+      "zh": "“保险”是「保険」（「保険に入る」）。",
+      "en": "Insurance is 「保険」 (「保険に入る」)."
+    },
+    "wrong": [
+      {
+        "zh": "「保健」是保健、卫生（「保健室」），不是保险。",
+        "en": "「保健」 is health care (「保健室」), not insurance."
+      },
+      null,
+      {
+        "zh": "「検」是检查的「検」，「保検」不是词。",
+        "en": "「検」 is 'inspect'; 「保検」 isn't a word."
+      },
+      {
+        "zh": "「補」是补充的「補」，「補険」不是词。",
+        "en": "「補」 is 'supplement'; 「補険」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-237",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "この工場では、一日に千台の車を<<せいさん>>している。",
+    "options": [
+      "精算",
+      "清算",
+      "製算",
+      "生産"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "这家工厂一天生产一千辆汽车。",
+      "en": "This factory makes a thousand cars a day."
+    },
+    "why": {
+      "zh": "制造产品是「生産」（「大量生産」）。",
+      "en": "Making goods is 「生産」 (「大量生産」)."
+    },
+    "wrong": [
+      {
+        "zh": "「精算」是结算费用（「運賃を精算する」）。",
+        "en": "「精算」 is settling a fare or bill (「運賃を精算する」)."
+      },
+      {
+        "zh": "「清算」是清偿债务、了结关系，不是造车。",
+        "en": "「清算」 is clearing debts or ending a relationship, not making cars."
+      },
+      {
+        "zh": "「製算」不是词。",
+        "en": "「製算」 isn't a word."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-mg-238",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "来年、本社を東京から大阪に<<うつす>>予定だ。",
+    "options": [
+      "映す",
+      "移す",
+      "写す",
+      "運す"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "明年计划把总公司从东京迁到大阪。",
+      "en": "Next year the head office is due to move from Tokyo to Osaka."
+    },
+    "why": {
+      "zh": "改变位置是「移す」（「場所を移す」）。",
+      "en": "Moving something to another place is 「移す」 (「場所を移す」)."
+    },
+    "wrong": [
+      {
+        "zh": "「映す」是映照、放映（「鏡に映す」）。",
+        "en": "「映す」 is to reflect or project (「鏡に映す」)."
+      },
+      null,
+      {
+        "zh": "「写す」是抄写、拍照（「ノートを写す」）。",
+        "en": "「写す」 is to copy or photograph (「ノートを写す」)."
+      },
+      {
+        "zh": "「運」读「はこぶ」，没有「運す」这个写法。",
+        "en": "「運」 is はこぶ; 「運す」 isn't a spelling."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-239",
+    "type": "hyouki",
+    "difficulty": 3,
+    "stem": "両国は、話し合いによって問題の解決を<<はかる>>ことにした。",
+    "options": [
+      "諮る",
+      "測る",
+      "図る",
+      "量る"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "两国决定通过对话谋求解决问题。",
+      "en": "The two countries decided to seek a solution through talks."
+    },
+    "why": {
+      "zh": "“谋求、设法实现”是「図る」（「解決を図る」「便宜を図る」）。",
+      "en": "Trying to bring something about is 「図る」 (「解決を図る」, 「便宜を図る」)."
+    },
+    "wrong": [
+      {
+        "zh": "「諮る」是咨询、提交讨论（「会議に諮る」），对象不是“解决”。",
+        "en": "「諮る」 is to refer a matter for discussion (「会議に諮る」), not to seek a solution."
+      },
+      {
+        "zh": "「測る」是测量长度、深度、温度（「体温を測る」）。",
+        "en": "「測る」 is measuring length, depth or temperature (「体温を測る」)."
+      },
+      null,
+      {
+        "zh": "「量る」是称重量、量容积（「重さを量る」）。",
+        "en": "「量る」 is weighing or measuring volume (「重さを量る」)."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-240",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "税金は、期限までに<<おさめる>>必要がある。",
+    "options": [
+      "納める",
+      "収める",
+      "治める",
+      "修める"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "税款需要在期限前缴纳。",
+      "en": "Taxes have to be paid by the deadline."
+    },
+    "why": {
+      "zh": "缴纳税金、会费是「納める」（「税金を納める」）。",
+      "en": "Paying taxes or fees is 「納める」 (「税金を納める」)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「収める」是收进、取得（「成功を収める」）。",
+        "en": "「収める」 is to obtain or put away (「成功を収める」)."
+      },
+      {
+        "zh": "「治める」是治理（「国を治める」）。",
+        "en": "「治める」 is to govern (「国を治める」)."
+      },
+      {
+        "zh": "「修める」是修习（「学問を修める」）。",
+        "en": "「修める」 is to master a study (「学問を修める」)."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-241",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "卒業式で、兄が司会を<<つとめた>>。",
+    "options": [
+      "努めた",
+      "勤めた",
+      "務めた",
+      "勉めた"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "在毕业典礼上，哥哥担任了主持人。",
+      "en": "My brother served as MC at the graduation ceremony."
+    },
+    "why": {
+      "zh": "担任某个角色是「務める」（「司会を務める」「議長を務める」）。",
+      "en": "Filling a role is 「務める」 (「司会を務める」, 「議長を務める」)."
+    },
+    "wrong": [
+      {
+        "zh": "「努める」是努力（「解決に努める」）。",
+        "en": "「努める」 is to strive (「解決に努める」)."
+      },
+      {
+        "zh": "「勤める」是在单位工作（「会社に勤める」）。",
+        "en": "「勤める」 is to work for an employer (「会社に勤める」)."
+      },
+      null,
+      {
+        "zh": "「勉」读「べん」，没有「勉める」这个写法。",
+        "en": "「勉」 is べん; 「勉める」 isn't a standard spelling."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-242",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "混雑を<<さけて>>、朝早く出発した。",
+    "options": [
+      "避けて",
+      "裂けて",
+      "割けて",
+      "壁けて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "为了避开拥挤，一大早就出发了。",
+      "en": "We set off early in the morning to avoid the crowds."
+    },
+    "why": {
+      "zh": "躲开、避免是「避ける」（「混雑を避ける」）。",
+      "en": "Avoiding something is 「避ける」 (「混雑を避ける」)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「裂ける」是裂开（「布が裂ける」）。",
+        "en": "「裂ける」 is to tear (「布が裂ける」)."
+      },
+      {
+        "zh": "「割ける」是「割く」（腾出时间）的可能形，不是避开。",
+        "en": "「割ける」 is the potential of 「割く」 (to spare time), not 'avoid'."
+      },
+      {
+        "zh": "「壁」是墙壁的「壁」，「壁ける」不是词。",
+        "en": "「壁」 is 'wall'; 「壁ける」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-243",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "祖父は駅前で、小さな喫茶店を<<いとなんで>>いる。",
+    "options": [
+      "栄んで",
+      "労んで",
+      "営んで",
+      "蛍んで"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "祖父在车站前经营一家小咖啡店。",
+      "en": "My grandfather runs a small café by the station."
+    },
+    "why": {
+      "zh": "经营店铺、生意是「営む」（「店を営む」）。",
+      "en": "Running a shop or business is 「営む」 (「店を営む」)."
+    },
+    "wrong": [
+      {
+        "zh": "「栄」读「さかえる」，没有「栄む」这个写法。",
+        "en": "「栄」 is さかえる; 「栄む」 isn't a spelling."
+      },
+      {
+        "zh": "「労」是劳动的「労」，没有「労む」这个写法。",
+        "en": "「労」 is 'labour'; 「労む」 isn't a spelling."
+      },
+      null,
+      {
+        "zh": "「蛍」是萤火虫的「蛍」，只是字形相似。",
+        "en": "「蛍」 is 'firefly' — it only looks similar."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-244",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "時間がないので、細かい説明は<<はぶいて>>ください。",
+    "options": [
+      "略いて",
+      "除いて",
+      "削いて",
+      "省いて"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "没有时间了，细节的说明请省略。",
+      "en": "We're short of time, so please skip the detailed explanation."
+    },
+    "why": {
+      "zh": "省掉、略去是「省く」（「説明を省く」）。",
+      "en": "Leaving something out is 「省く」 (「説明を省く」)."
+    },
+    "wrong": [
+      {
+        "zh": "「略」读「りゃく」，没有「略く」这个写法（「省略」）。",
+        "en": "「略」 is りゃく; 「略く」 isn't a spelling (「省略」)."
+      },
+      {
+        "zh": "「除く」读「のぞく」（除去），不读「はぶく」。",
+        "en": "「除く」 is のぞく (to remove), not はぶく."
+      },
+      {
+        "zh": "「削」读「けずる」「そぐ」，不读「はぶく」。",
+        "en": "「削」 is けずる or そぐ, not はぶく."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-mg-245",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "洗濯したら、セーターが<<ちぢんで>>しまった。",
+    "options": [
+      "締んで",
+      "宿んで",
+      "編んで",
+      "縮んで"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "一洗，毛衣就缩水了。",
+      "en": "My sweater shrank in the wash."
+    },
+    "why": {
+      "zh": "变小、收缩是「縮む」（「服が縮む」）。",
+      "en": "Shrinking is 「縮む」 (「服が縮む」)."
+    },
+    "wrong": [
+      {
+        "zh": "「締」读「しめる」，没有「締む」读「ちぢむ」。",
+        "en": "「締」 is しめる; it's never ちぢむ."
+      },
+      {
+        "zh": "「宿」读「やど」，只是右边字形相似。",
+        "en": "「宿」 is やど; it only looks similar."
+      },
+      {
+        "zh": "「編む」读「あむ」（编织），不读「ちぢむ」。",
+        "en": "「編む」 is あむ (to knit), not ちぢむ."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-mg-246",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "この会社では、女性社員が全体の半分以上を<<しめて>>いる。",
+    "options": [
+      "締めて",
+      "閉めて",
+      "絞めて",
+      "占めて"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "这家公司女员工占了一半以上。",
+      "en": "Women make up more than half of this company's staff."
+    },
+    "why": {
+      "zh": "占比例、占位置是「占める」（「半数を占める」）。",
+      "en": "Making up a share is 「占める」 (「半数を占める」)."
+    },
+    "wrong": [
+      {
+        "zh": "「締める」是系紧（「ネクタイを締める」）。",
+        "en": "「締める」 is to tighten (「ネクタイを締める」)."
+      },
+      {
+        "zh": "「閉める」是关（「ドアを閉める」）。",
+        "en": "「閉める」 is to close (「ドアを閉める」)."
+      },
+      {
+        "zh": "「絞める」是勒紧（「首を絞める」）。",
+        "en": "「絞める」 is to strangle (「首を絞める」)."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-mg-247",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "毎朝ジョギングをするのが、父の<<しゅうかん>>だ。",
+    "options": [
+      "習慣",
+      "週間",
+      "習感",
+      "修慣"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "每天早上慢跑是父亲的习惯。",
+      "en": "Jogging every morning is my father's habit."
+    },
+    "why": {
+      "zh": "习惯是「習慣」。",
+      "en": "A habit is 「習慣」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「週間」是一周（「一週間」），不是习惯。",
+        "en": "「週間」 is a week (「一週間」), not a habit."
+      },
+      {
+        "zh": "「感」是感觉的「感」，「習感」不是词。",
+        "en": "「感」 is 'feeling'; 「習感」 isn't a word."
+      },
+      {
+        "zh": "「修」是修理的「修」，「修慣」不是词。",
+        "en": "「修」 is 'repair, study'; 「修慣」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-248",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "その映画は、来月から全国で<<こうかい>>される。",
+    "options": [
+      "後悔",
+      "公開",
+      "航海",
+      "更改"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "那部电影下个月起在全国上映。",
+      "en": "The film opens nationwide next month."
+    },
+    "why": {
+      "zh": "公开、上映是「公開」（「映画が公開される」）。",
+      "en": "Making public or releasing a film is 「公開」 (「映画が公開される」)."
+    },
+    "wrong": [
+      {
+        "zh": "「後悔」是后悔，电影不会“被后悔”。",
+        "en": "「後悔」 is regret; a film isn't 'regretted' into cinemas."
+      },
+      null,
+      {
+        "zh": "「航海」是航海。",
+        "en": "「航海」 is a sea voyage."
+      },
+      {
+        "zh": "「更改」是更改合同等（「契約更改」）。",
+        "en": "「更改」 is renewing a contract (「契約更改」)."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-249",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "この研究には、社会的に大きな<<いぎ>>がある。",
+    "options": [
+      "意義",
+      "異議",
+      "威儀",
+      "意議"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这项研究具有重大的社会意义。",
+      "en": "This research has great social significance."
+    },
+    "why": {
+      "zh": "价值、意义是「意義」（「意義がある」）。",
+      "en": "Significance or value is 「意義」 (「意義がある」)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「異議」是不同意见、异议（「異議あり」），不说“社会上很大的异议”。",
+        "en": "「異議」 is an objection (「異議あり」); 'great social objection' isn't meant here."
+      },
+      {
+        "zh": "「威儀」是威严的仪态，与研究价值无关。",
+        "en": "「威儀」 is dignified bearing, unrelated to research value."
+      },
+      {
+        "zh": "「意議」不是词。",
+        "en": "「意議」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-250",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "この問題を解決するのは<<ようい>>ではない。",
+    "options": [
+      "容易",
+      "用意",
+      "要易",
+      "容意"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "解决这个问题并不容易。",
+      "en": "Solving this problem is not easy."
+    },
+    "why": {
+      "zh": "简单、不费力是「容易」。",
+      "en": "Easy is 「容易」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「用意」是准备，「解決するのは用意ではない」说不通。",
+        "en": "「用意」 is preparation; it makes no sense here."
+      },
+      {
+        "zh": "「要易」不是词。",
+        "en": "「要易」 isn't a word."
+      },
+      {
+        "zh": "「容意」不是词。",
+        "en": "「容意」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-251",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "二人は、結婚を<<ぜんてい>>に付き合っている。",
+    "options": [
+      "全提",
+      "前程",
+      "前提",
+      "前定"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "两人以结婚为前提在交往。",
+      "en": "The two of them are going out with marriage in mind."
+    },
+    "why": {
+      "zh": "先决条件是「前提」（「〜を前提に」）。",
+      "en": "A premise or precondition is 「前提」 (「〜を前提に」)."
+    },
+    "wrong": [
+      {
+        "zh": "「全」是“全部”，「全提」不是词。",
+        "en": "「全」 is 'all'; 「全提」 isn't a word."
+      },
+      {
+        "zh": "「程」是过程的「程」，「前程」在日语里不这样用。",
+        "en": "「程」 is from 「過程」; 「前程」 isn't used in Japanese."
+      },
+      null,
+      {
+        "zh": "「前定」不是词。",
+        "en": "「前定」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-252",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "その計画は、資金不足で実現が<<こんなん>>になった。",
+    "options": [
+      "因難",
+      "困難",
+      "困南",
+      "困灘"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "那个计划因资金不足难以实现了。",
+      "en": "Lack of funds made the plan hard to carry out."
+    },
+    "why": {
+      "zh": "困难是「困難」。",
+      "en": "Difficult is 「困難」."
+    },
+    "wrong": [
+      {
+        "zh": "「因」是原因的「因」，和「困」字形相似。",
+        "en": "「因」 is 'cause' — it only looks like 「困」."
+      },
+      null,
+      {
+        "zh": "「南」是南方的「南」，不是「難」。",
+        "en": "「南」 is 'south', not 「難」."
+      },
+      {
+        "zh": "「灘」是海滩的「灘」，不是「難」。",
+        "en": "「灘」 is 'open sea, rapids', not 「難」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-253",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "<<けいき>>が回復して、会社の売り上げも伸びてきた。",
+    "options": [
+      "契機",
+      "計器",
+      "景気",
+      "景期"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "经济景气恢复，公司的销售额也增长了。",
+      "en": "The economy has picked up, and the company's sales are growing too."
+    },
+    "why": {
+      "zh": "经济状况是「景気」（「景気が回復する」）。",
+      "en": "The state of the economy is 「景気」 (「景気が回復する」)."
+    },
+    "wrong": [
+      {
+        "zh": "「契機」是契机，「契機が回復する」说不通。",
+        "en": "「契機」 is a trigger or turning point; it doesn't 'recover'."
+      },
+      {
+        "zh": "「計器」是仪表。",
+        "en": "「計器」 is a meter or gauge."
+      },
+      null,
+      {
+        "zh": "「景期」不是词。",
+        "en": "「景期」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-254",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "トラブルが起きたら、すぐに<<たいしょ>>しなければならない。",
+    "options": [
+      "対所",
+      "対処",
+      "対書",
+      "待処"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "一旦出现问题，必须马上处理。",
+      "en": "If trouble occurs, you have to deal with it right away."
+    },
+    "why": {
+      "zh": "应对、处理是「対処」（「問題に対処する」）。",
+      "en": "Dealing with something is 「対処」 (「問題に対処する」)."
+    },
+    "wrong": [
+      {
+        "zh": "「所」是场所的「所」，「対所」不是词。",
+        "en": "「所」 is 'place'; 「対所」 isn't a word."
+      },
+      null,
+      {
+        "zh": "「書」是书写的「書」，「対書」不是词。",
+        "en": "「書」 is 'write'; 「対書」 isn't a word."
+      },
+      {
+        "zh": "「待」是等待的「待」，「待処」不是词。",
+        "en": "「待」 is 'wait'; 「待処」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-255",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "授業で学んだことを、仕事で<<じっせん>>している。",
+    "options": [
+      "実践",
+      "実戦",
+      "実銭",
+      "実浅"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我在工作中实践课上学到的东西。",
+      "en": "I put what I learned in class into practice at work."
+    },
+    "why": {
+      "zh": "把理论付诸行动是「実践」。",
+      "en": "Putting ideas into practice is 「実践」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「実戦」是实战（真正的战斗、比赛），不是把知识用到工作中。",
+        "en": "「実戦」 is real combat or a real match, not putting knowledge into practice."
+      },
+      {
+        "zh": "「銭」是钱的「銭」，「実銭」不是词。",
+        "en": "「銭」 is 'coin'; 「実銭」 isn't a word."
+      },
+      {
+        "zh": "「浅」是浅的「浅」，「実浅」不是词。",
+        "en": "「浅」 is 'shallow'; 「実浅」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-256",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "この道は、去年<<ほそう>>されたばかりだ。",
+    "options": [
+      "補装",
+      "捕装",
+      "舗装",
+      "舗相"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "这条路去年刚铺好。",
+      "en": "This road was only paved last year."
+    },
+    "why": {
+      "zh": "给路面铺沥青等是「舗装」（「舗装道路」）。",
+      "en": "Paving a road is 「舗装」 (「舗装道路」)."
+    },
+    "wrong": [
+      {
+        "zh": "「補」是补充的「補」，「補装」不是词。",
+        "en": "「補」 is 'supplement'; 「補装」 isn't a word."
+      },
+      {
+        "zh": "「捕」是捕捉的「捕」，「捕装」不是词。",
+        "en": "「捕」 is 'catch'; 「捕装」 isn't a word."
+      },
+      null,
+      {
+        "zh": "「相」是相互的「相」，「舗相」不是词。",
+        "en": "「相」 is 'mutual'; 「舗相」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-257",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "新入社員の<<かんげい>>会が開かれた。",
+    "options": [
+      "観迎",
+      "勧迎",
+      "歓仰",
+      "歓迎"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "举行了新员工欢迎会。",
+      "en": "A welcome party was held for the new employees."
+    },
+    "why": {
+      "zh": "欢迎是「歓迎」（「歓迎会」）。",
+      "en": "Welcome is 「歓迎」 (「歓迎会」)."
+    },
+    "wrong": [
+      {
+        "zh": "「観」是观看的「観」，「観迎」不是词。",
+        "en": "「観」 is 'view'; 「観迎」 isn't a word."
+      },
+      {
+        "zh": "「勧」是劝的「勧」，「勧迎」不是词。",
+        "en": "「勧」 is 'urge'; 「勧迎」 isn't a word."
+      },
+      {
+        "zh": "「仰」是仰望的「仰」，和「迎」字形相似。",
+        "en": "「仰」 is 'look up to' — it only looks like 「迎」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-mg-258",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "寒さで手が<<ふるえて>>、字がうまく書けなかった。",
+    "options": [
+      "振えて",
+      "揺えて",
+      "震えて",
+      "霜えて"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "冷得手发抖，字写不好。",
+      "en": "My hands were shaking with cold, so I couldn't write properly."
+    },
+    "why": {
+      "zh": "发抖是「震える」（「手が震える」）。",
+      "en": "Trembling is 「震える」 (「手が震える」)."
+    },
+    "wrong": [
+      {
+        "zh": "「振」读「ふる」（「振る」挥），但没有「振える」这个写法。",
+        "en": "「振」 is ふる in 「振る」 (to wave), but 「振える」 isn't a spelling."
+      },
+      {
+        "zh": "「揺」读「ゆれる」，没有「揺える」这个写法。",
+        "en": "「揺」 is ゆれる; 「揺える」 isn't a spelling."
+      },
+      null,
+      {
+        "zh": "「霜」是霜，和「震」字形相似，不是动词。",
+        "en": "「霜」 is 'frost' — it only looks like 「震」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-259",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "学費を<<かせぐ>>ために、アルバイトをしている。",
+    "options": [
+      "嫁ぐ",
+      "稼ぐ",
+      "稲ぐ",
+      "穫ぐ"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "为了挣学费在打工。",
+      "en": "I work part-time to earn my tuition."
+    },
+    "why": {
+      "zh": "挣钱是「稼ぐ」（「お金を稼ぐ」）。",
+      "en": "Earning money is 「稼ぐ」 (「お金を稼ぐ」)."
+    },
+    "wrong": [
+      {
+        "zh": "「嫁ぐ」读「とつぐ」（出嫁），字形相似。",
+        "en": "「嫁ぐ」 is とつぐ (to marry into a family) — it only looks similar."
+      },
+      null,
+      {
+        "zh": "「稲」是稻子，「稲ぐ」不是词。",
+        "en": "「稲」 is 'rice plant'; 「稲ぐ」 isn't a word."
+      },
+      {
+        "zh": "「穫」是收获的「穫」，「穫ぐ」不是词。",
+        "en": "「穫」 is 'harvest'; 「穫ぐ」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-260",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "電車で、お年寄りに席を<<ゆずった>>。",
+    "options": [
+      "護った",
+      "謙った",
+      "譲った",
+      "醸った"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "在电车上给老人让了座。",
+      "en": "I gave up my seat to an elderly person on the train."
+    },
+    "why": {
+      "zh": "让给别人是「譲る」（「席を譲る」）。",
+      "en": "Giving something up to someone is 「譲る」 (「席を譲る」)."
+    },
+    "wrong": [
+      {
+        "zh": "「護る」读「まもる」（保护），不读「ゆずる」。",
+        "en": "「護る」 is まもる (to protect), not ゆずる."
+      },
+      {
+        "zh": "「謙る」读「へりくだる」（谦逊），不读「ゆずる」。",
+        "en": "「謙る」 is へりくだる (to be humble), not ゆずる."
+      },
+      null,
+      {
+        "zh": "「醸」读「かもす」（酿造），没有「醸る」这个写法。",
+        "en": "「醸」 is かもす (to brew); 「醸る」 isn't a spelling."
+      }
+    ]
   }
 ]

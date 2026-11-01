@@ -923,5 +923,905 @@
         "en": "「他人の」 is other people's business."
       }
     ]
+  },
+  {
+    "id": "n2-mg-426",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "この地方で十二月に雪が降るのは<<まれだ>>。",
+    "options": [
+      "毎年のことだ",
+      "めったにない",
+      "危険だ",
+      "予想どおりだ"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "这个地区十二月下雪是很少见的。",
+      "en": "Snow in December is rare in this region."
+    },
+    "why": {
+      "zh": "「まれ」＝很少发生，即「めったにない」。",
+      "en": "「まれ」 is rare — 「めったにない」."
+    },
+    "wrong": [
+      {
+        "zh": "「毎年のことだ」是每年都有，意思相反。",
+        "en": "「毎年のことだ」 is 'happens every year' — the opposite."
+      },
+      null,
+      {
+        "zh": "「危険だ」是危险，与少见无关。",
+        "en": "「危険だ」 is dangerous, not rare."
+      },
+      {
+        "zh": "「予想どおりだ」是和预料一样，不是少见。",
+        "en": "「予想どおりだ」 is 'as expected', not rare."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-427",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "知らない男が、さっきから家の前を<<うろうろして>>いる。",
+    "options": [
+      "行ったり来たりして",
+      "急ぎ足で歩いて",
+      "長い時間座り込んで",
+      "あちこち写真を撮って"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "一个陌生男人从刚才起就在家门口转来转去。",
+      "en": "A man I don't know has been hanging around outside the house for a while."
+    },
+    "why": {
+      "zh": "「うろうろする」＝漫无目的地来回走动，即「行ったり来たりする」。",
+      "en": "「うろうろする」 is wandering back and forth — 「行ったり来たりする」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「急ぎ足で歩く」是快步走，不是来回转。",
+        "en": "「急ぎ足で歩く」 is walking quickly, not loitering."
+      },
+      {
+        "zh": "「座り込む」是坐着不动。",
+        "en": "「座り込む」 is sitting down and staying put."
+      },
+      {
+        "zh": "「写真を撮る」是拍照，与来回走动无关。",
+        "en": "「写真を撮る」 is taking photos, unrelated to wandering."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-428",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "弟は<<ぶつぶつ言いながら>>、部屋を片付けた。",
+    "options": [
+      "歌を歌いながら",
+      "にこにこ笑いながら",
+      "文句を言いながら",
+      "ずっと黙ったまま"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "弟弟一边嘟囔着一边收拾房间。",
+      "en": "My little brother tidied his room, grumbling the whole time."
+    },
+    "why": {
+      "zh": "「ぶつぶつ言う」＝小声嘟囔着发牢骚，即「文句を言う」。",
+      "en": "「ぶつぶつ言う」 is muttering complaints — 「文句を言う」."
+    },
+    "wrong": [
+      {
+        "zh": "「歌を歌う」是唱歌，不是发牢骚。",
+        "en": "「歌を歌う」 is singing, not grumbling."
+      },
+      {
+        "zh": "「笑う」是笑，和不满相反。",
+        "en": "「笑う」 is laughing, the opposite of grumbling."
+      },
+      null,
+      {
+        "zh": "「黙ったまま」是一言不发，与「言いながら」相反。",
+        "en": "「黙ったまま」 is saying nothing — the opposite."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-429",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "今日は、教室が<<いやに>>静かだ。",
+    "options": [
+      "妙に",
+      "少し",
+      "再び",
+      "まだ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "今天教室里静得出奇。",
+      "en": "The classroom is oddly quiet today."
+    },
+    "why": {
+      "zh": "「いやに」＝异常地、出奇地，即「妙に」。",
+      "en": "「いやに」 is oddly, unusually — 「妙に」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「少し」是稍微，程度和“出奇”正好相反。",
+        "en": "「少し」 is 'a little' — not 'unusually'."
+      },
+      {
+        "zh": "「再び」是再次。",
+        "en": "「再び」 is 'again'."
+      },
+      {
+        "zh": "「まだ」是还，不表示异常。",
+        "en": "「まだ」 is 'still', not 'unusually'."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-430",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "珍しい切手を<<入手した>>。",
+    "options": [
+      "人に売った",
+      "手に入れた",
+      "交換した",
+      "人に預けた"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "我弄到了珍贵的邮票。",
+      "en": "I got hold of a rare stamp."
+    },
+    "why": {
+      "zh": "「入手する」＝得到，即「手に入れる」。",
+      "en": "「入手する」 is to obtain — 「手に入れる」."
+    },
+    "wrong": [
+      {
+        "zh": "「売った」是卖掉，方向相反。",
+        "en": "「売った」 is sold — the opposite direction."
+      },
+      null,
+      {
+        "zh": "「交換した」是交换，不一定是得到。",
+        "en": "「交換した」 is exchanged, not simply obtained."
+      },
+      {
+        "zh": "「預けた」是寄存给别人。",
+        "en": "「預けた」 is left it with someone."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-431",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "一日中歩き回って、<<くたくただ>>。",
+    "options": [
+      "おなかがすいている",
+      "とても疲れている",
+      "足が痛い",
+      "眠れない"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "走了一整天，累得筋疲力尽。",
+      "en": "I've been walking around all day and I'm worn out."
+    },
+    "why": {
+      "zh": "「くたくた」＝累得精疲力竭，即「とても疲れている」。",
+      "en": "「くたくた」 is exhausted — 「とても疲れている」."
+    },
+    "wrong": [
+      {
+        "zh": "「おなかがすいている」是饿了，不是累。",
+        "en": "「おなかがすいている」 is hungry, not tired."
+      },
+      null,
+      {
+        "zh": "「足が痛い」只是脚疼，不等于全身疲惫。",
+        "en": "「足が痛い」 is sore feet, not total exhaustion."
+      },
+      {
+        "zh": "「眠れない」是睡不着，与累相反。",
+        "en": "「眠れない」 is can't sleep — not the same."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-432",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "手術のあと、父の体調は順調に<<回復した>>。",
+    "options": [
+      "悪くなった",
+      "変わらなかった",
+      "よくなった",
+      "落ち着かなかった"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "手术后，父亲的身体顺利恢复了。",
+      "en": "After the operation, my father's health recovered well."
+    },
+    "why": {
+      "zh": "「回復する」＝恢复，即「よくなる」。",
+      "en": "「回復する」 is to recover — 「よくなる」."
+    },
+    "wrong": [
+      {
+        "zh": "「悪くなった」是变坏，意思相反。",
+        "en": "「悪くなった」 is got worse — the opposite."
+      },
+      {
+        "zh": "「変わらなかった」是没变化。",
+        "en": "「変わらなかった」 is didn't change."
+      },
+      null,
+      {
+        "zh": "「落ち着かなかった」是不稳定，不是恢复。",
+        "en": "「落ち着かなかった」 is didn't settle, not recovered."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-433",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "彼は<<いきなり>>大声を出した。",
+    "options": [
+      "突然",
+      "何度も",
+      "わざと",
+      "後で"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他突然大喊了一声。",
+      "en": "He suddenly shouted."
+    },
+    "why": {
+      "zh": "「いきなり」＝毫无预兆地，即「突然」。",
+      "en": "「いきなり」 is without warning — 「突然」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「何度も」是好几次。",
+        "en": "「何度も」 is many times."
+      },
+      {
+        "zh": "「わざと」是故意。",
+        "en": "「わざと」 is on purpose."
+      },
+      {
+        "zh": "「後で」是之后，不是突然。",
+        "en": "「後で」 is 'later', not 'suddenly'."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-434",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "徹夜して、レポートを<<仕上げた>>。",
+    "options": [
+      "提出した",
+      "書き始めた",
+      "完成させた",
+      "書き直した"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "熬夜把报告写完了。",
+      "en": "I stayed up all night and finished the report."
+    },
+    "why": {
+      "zh": "「仕上げる」＝做完、完成，即「完成させる」。",
+      "en": "「仕上げる」 is to finish off — 「完成させる」."
+    },
+    "wrong": [
+      {
+        "zh": "「提出した」是交上去，完成后才提交，意思不同。",
+        "en": "「提出した」 is handed in — a different step."
+      },
+      {
+        "zh": "「書き始めた」是开始写，意思相反。",
+        "en": "「書き始めた」 is started writing — the opposite."
+      },
+      null,
+      {
+        "zh": "「書き直した」是重写，不是完成。",
+        "en": "「書き直した」 is rewrote, not finished."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-435",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "明日の面接のことを考えると、<<憂鬱だ>>。",
+    "options": [
+      "気が楽だ",
+      "わくわくする",
+      "自信がある",
+      "気が重い"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "一想到明天的面试就心情沉重。",
+      "en": "Thinking about tomorrow's interview gets me down."
+    },
+    "why": {
+      "zh": "「憂鬱」＝心情沉闷，即「気が重い」。",
+      "en": "「憂鬱」 is gloomy — 「気が重い」."
+    },
+    "wrong": [
+      {
+        "zh": "「気が楽だ」是轻松，意思相反。",
+        "en": "「気が楽だ」 is relaxed — the opposite."
+      },
+      {
+        "zh": "「わくわくする」是兴奋期待，意思相反。",
+        "en": "「わくわくする」 is excited — the opposite."
+      },
+      {
+        "zh": "「自信がある」是有信心，与忧郁不同。",
+        "en": "「自信がある」 is confident, not gloomy."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-mg-436",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "笛が鳴ると、選手たちは<<一斉に>>走り出した。",
+    "options": [
+      "一人ずつ順番に",
+      "思いきり速く",
+      "みんな同時に",
+      "大きな声を出して"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "哨声一响，选手们一齐跑了出去。",
+      "en": "When the whistle blew, the runners all set off together."
+    },
+    "why": {
+      "zh": "「一斉に」＝大家同时，即「みんな同時に」。",
+      "en": "「一斉に」 is all at the same time — 「みんな同時に」."
+    },
+    "wrong": [
+      {
+        "zh": "「一人ずつ順番に」是一个一个，意思相反。",
+        "en": "「一人ずつ順番に」 is one at a time — the opposite."
+      },
+      {
+        "zh": "「思いきり速く」是全力快跑，不表示大家一起。",
+        "en": "「思いきり速く」 is as fast as possible, not all together."
+      },
+      null,
+      {
+        "zh": "「大きな声を出して」是大声喊，与一齐无关。",
+        "en": "「大きな声を出して」 is shouting, unrelated to all together."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-437",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "水は、人間の生活に<<欠かせない>>。",
+    "options": [
+      "少しあればいい",
+      "多すぎてはいけない",
+      "なくてはならない",
+      "害がある"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "水对人的生活来说不可或缺。",
+      "en": "Water is indispensable to human life."
+    },
+    "why": {
+      "zh": "「欠かせない」＝缺少不了，即「なくてはならない」。",
+      "en": "「欠かせない」 is indispensable — 「なくてはならない」."
+    },
+    "wrong": [
+      {
+        "zh": "「少しあればいい」是有一点就行，不是不可缺。",
+        "en": "「少しあればいい」 is 'a little will do', not indispensable."
+      },
+      {
+        "zh": "「多すぎてはいけない」是不能太多。",
+        "en": "「多すぎてはいけない」 is 'mustn't be too much'."
+      },
+      null,
+      {
+        "zh": "「害がある」是有害，意思相反。",
+        "en": "「害がある」 is harmful — the opposite."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-438",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "旅行先で財布をなくして、<<途方に暮れた>>。",
+    "options": [
+      "自分の不注意にとても腹が立った",
+      "どうしたらいいか分からなくなった",
+      "あちこち急いで探し回った",
+      "すぐに近くの警察に届けた"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "在旅行地丢了钱包，不知所措。",
+      "en": "I lost my wallet on a trip and was at a complete loss."
+    },
+    "why": {
+      "zh": "「途方に暮れる」＝不知如何是好，即「どうしたらいいか分からなくなる」。",
+      "en": "「途方に暮れる」 is to be at a loss — 「どうしたらいいか分からなくなる」."
+    },
+    "wrong": [
+      {
+        "zh": "「腹が立った」是生气，不是不知所措。",
+        "en": "「腹が立った」 is got angry, not at a loss."
+      },
+      null,
+      {
+        "zh": "「探し回った」是到处找，是具体行动，不是不知所措。",
+        "en": "「探し回った」 is searched everywhere — an action, not being at a loss."
+      },
+      {
+        "zh": "「警察に届けた」是报警，说明知道该怎么做。",
+        "en": "「警察に届けた」 is reported it — knowing exactly what to do."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-439",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "初めての一人旅は、<<心細かった>>。",
+    "options": [
+      "楽しかった",
+      "疲れた",
+      "不安だった",
+      "退屈だった"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "第一次一个人旅行，心里很没底。",
+      "en": "My first trip alone made me feel uneasy."
+    },
+    "why": {
+      "zh": "「心細い」＝没有依靠、不安，即「不安だ」。",
+      "en": "「心細い」 is feeling helpless and uneasy — 「不安だ」."
+    },
+    "wrong": [
+      {
+        "zh": "「楽しかった」是开心，与不安相反。",
+        "en": "「楽しかった」 is fun — the opposite."
+      },
+      {
+        "zh": "「疲れた」是累了，不是不安。",
+        "en": "「疲れた」 is tired, not uneasy."
+      },
+      null,
+      {
+        "zh": "「退屈だった」是无聊，不是不安。",
+        "en": "「退屈だった」 is boring, not uneasy."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-440",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "その番組は人気がなくて、三か月で<<打ち切られた>>。",
+    "options": [
+      "終わりにされた",
+      "延長された",
+      "内容を変えられた",
+      "再開された"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "那个节目因为没人气，三个月就被停播了。",
+      "en": "The show wasn't popular and was axed after three months."
+    },
+    "why": {
+      "zh": "「打ち切る」＝中途停止，即「終わりにする」。",
+      "en": "「打ち切る」 is to cut short — 「終わりにする」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「延長された」是延长，意思相反。",
+        "en": "「延長された」 is extended — the opposite."
+      },
+      {
+        "zh": "「内容を変えられた」是改内容，节目还在继续。",
+        "en": "「内容を変えられた」 is changed — the show goes on."
+      },
+      {
+        "zh": "「再開された」是重新开始。",
+        "en": "「再開された」 is resumed."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-441",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "この町には、<<かつて>>大きな工場があった。",
+    "options": [
+      "今も",
+      "いくつも",
+      "町の中心に",
+      "以前"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "这个镇上曾经有一家大工厂。",
+      "en": "This town once had a large factory."
+    },
+    "why": {
+      "zh": "「かつて」＝从前、曾经，即「以前」。",
+      "en": "「かつて」 is once, formerly — 「以前」."
+    },
+    "wrong": [
+      {
+        "zh": "「今も」是现在也有，与过去相反。",
+        "en": "「今も」 is 'still now' — the opposite."
+      },
+      {
+        "zh": "「いくつも」是好几个，说的是数量。",
+        "en": "「いくつも」 is 'several' — about number."
+      },
+      {
+        "zh": "「町の中心に」是地点，不是时间。",
+        "en": "「町の中心に」 is a place, not a time."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-mg-442",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "みんなの前でほめられて、彼は<<照れていた>>。",
+    "options": [
+      "得意そうな顔をしていた",
+      "不満そうにしていた",
+      "とても驚いていた",
+      "恥ずかしそうにしていた"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "在大家面前被表扬，他很不好意思。",
+      "en": "Praised in front of everyone, he looked embarrassed."
+    },
+    "why": {
+      "zh": "「照れる」＝难为情、害羞，即「恥ずかしそうにする」。",
+      "en": "「照れる」 is to feel bashful — 「恥ずかしそうにする」."
+    },
+    "wrong": [
+      {
+        "zh": "「得意そう」是得意洋洋，与害羞相反。",
+        "en": "「得意そう」 is looking proud — the opposite."
+      },
+      {
+        "zh": "「不満そう」是不满。",
+        "en": "「不満そう」 is looking dissatisfied."
+      },
+      {
+        "zh": "「驚いていた」是吃惊，不是害羞。",
+        "en": "「驚いていた」 is surprised, not bashful."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-mg-443",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "彼女はとても<<有能な>>社員だ。",
+    "options": [
+      "仕事ができる",
+      "人気がある",
+      "真面目に働く",
+      "経験が長い"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "她是非常能干的员工。",
+      "en": "She's a very capable employee."
+    },
+    "why": {
+      "zh": "「有能」＝有能力、能干，即「仕事ができる」。",
+      "en": "「有能」 is capable — 「仕事ができる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「人気がある」是受欢迎，不等于能干。",
+        "en": "「人気がある」 is popular, not capable."
+      },
+      {
+        "zh": "「真面目に働く」是认真工作，不一定能干。",
+        "en": "「真面目に働く」 is working diligently, not necessarily capable."
+      },
+      {
+        "zh": "「経験が長い」是资历长，不一定能干。",
+        "en": "「経験が長い」 is experienced, not necessarily capable."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-444",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "工事は<<おおむね>>予定どおりに進んでいる。",
+    "options": [
+      "すべて",
+      "ようやく",
+      "だいたい",
+      "意外にも"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "工程大体按计划在推进。",
+      "en": "The construction is going more or less to schedule."
+    },
+    "why": {
+      "zh": "「おおむね」＝大致、大体，即「だいたい」。",
+      "en": "「おおむね」 is roughly, on the whole — 「だいたい」."
+    },
+    "wrong": [
+      {
+        "zh": "「すべて」是全部，比“大体”强。",
+        "en": "「すべて」 is 'entirely' — stronger than 'mostly'."
+      },
+      {
+        "zh": "「ようやく」是好不容易才。",
+        "en": "「ようやく」 is 'finally, at last'."
+      },
+      null,
+      {
+        "zh": "「意外にも」是出乎意料。",
+        "en": "「意外にも」 is 'surprisingly'."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-445",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "一人暮らしの母の健康が<<気がかりだ>>。",
+    "options": [
+      "心配だ",
+      "自慢だ",
+      "うらやましい",
+      "意外だ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我很挂念独居的母亲的健康。",
+      "en": "I'm worried about the health of my mother, who lives alone."
+    },
+    "why": {
+      "zh": "「気がかり」＝放心不下，即「心配だ」。",
+      "en": "「気がかり」 is a worry on your mind — 「心配だ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「自慢だ」是引以为傲。",
+        "en": "「自慢だ」 is something to be proud of."
+      },
+      {
+        "zh": "「うらやましい」是羡慕。",
+        "en": "「うらやましい」 is envious."
+      },
+      {
+        "zh": "「意外だ」是出乎意料。",
+        "en": "「意外だ」 is surprising."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-446",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "市は、ごみの出し方の規則を<<改めた>>。",
+    "options": [
+      "守った",
+      "説明した",
+      "変えた",
+      "なくした"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "市里修改了倒垃圾的规定。",
+      "en": "The city revised its rules on putting out rubbish."
+    },
+    "why": {
+      "zh": "「改める」＝改变、修改，即「変える」。",
+      "en": "「改める」 is to revise — 「変える」."
+    },
+    "wrong": [
+      {
+        "zh": "「守った」是遵守，没有修改。",
+        "en": "「守った」 is kept to them, not changed."
+      },
+      {
+        "zh": "「説明した」是说明，规则没变。",
+        "en": "「説明した」 is explained; the rules stay the same."
+      },
+      null,
+      {
+        "zh": "「なくした」是废除，不是修改。",
+        "en": "「なくした」 is abolished, not revised."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-447",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "イベントの参加者は、予想を<<上回った>>。",
+    "options": [
+      "予想より少なかった",
+      "予想と同じだった",
+      "予想より多かった",
+      "予想できなかった"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "活动的参加者超出了预期。",
+      "en": "More people came to the event than expected."
+    },
+    "why": {
+      "zh": "「上回る」＝超过，即「〜より多い」。",
+      "en": "「上回る」 is to exceed — 「〜より多い」."
+    },
+    "wrong": [
+      {
+        "zh": "「少なかった」是低于预期，意思相反（「下回る」）。",
+        "en": "「少なかった」 is fewer — the opposite (「下回る」)."
+      },
+      {
+        "zh": "「同じだった」是和预期一样。",
+        "en": "「同じだった」 is the same as expected."
+      },
+      null,
+      {
+        "zh": "「予想できなかった」是无法预料，不是超过。",
+        "en": "「予想できなかった」 is couldn't predict, not exceeded."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-448",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "この犬はとても<<賢い>>。",
+    "options": [
+      "元気だ",
+      "頭がいい",
+      "おとなしい",
+      "体が大きい"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "这只狗非常聪明。",
+      "en": "This dog is very clever."
+    },
+    "why": {
+      "zh": "「賢い」＝聪明，即「頭がいい」。",
+      "en": "「賢い」 is clever — 「頭がいい」."
+    },
+    "wrong": [
+      {
+        "zh": "「元気だ」是有精神。",
+        "en": "「元気だ」 is lively."
+      },
+      null,
+      {
+        "zh": "「おとなしい」是老实、温顺，不是聪明。",
+        "en": "「おとなしい」 is quiet and gentle, not clever."
+      },
+      {
+        "zh": "「体が大きい」是个子大。",
+        "en": "「体が大きい」 is big."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-449",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "駅の近くで、<<不審な>>人物が目撃された。",
+    "options": [
+      "有名な",
+      "怪しい",
+      "親切な",
+      "若い"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "在车站附近有人目击到可疑人物。",
+      "en": "A suspicious person was seen near the station."
+    },
+    "why": {
+      "zh": "「不審」＝可疑，即「怪しい」。",
+      "en": "「不審」 is suspicious — 「怪しい」."
+    },
+    "wrong": [
+      {
+        "zh": "「有名な」是有名。",
+        "en": "「有名な」 is famous."
+      },
+      null,
+      {
+        "zh": "「親切な」是亲切。",
+        "en": "「親切な」 is kind."
+      },
+      {
+        "zh": "「若い」是年轻，与可疑无关。",
+        "en": "「若い」 is young, unrelated to suspicious."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-450",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "いろいろ話したのに、<<肝心な>>ことを言い忘れてしまった。",
+    "options": [
+      "一番大切な",
+      "細かい",
+      "面白い",
+      "どうでもいい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "说了那么多，却忘了说最关键的事。",
+      "en": "I talked about all sorts of things but forgot to mention the key point."
+    },
+    "why": {
+      "zh": "「肝心」＝最重要，即「一番大切な」。",
+      "en": "「肝心」 is the most important — 「一番大切な」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「細かい」是细节性的，和最重要相反。",
+        "en": "「細かい」 is minor detail — the opposite."
+      },
+      {
+        "zh": "「面白い」是有趣。",
+        "en": "「面白い」 is interesting."
+      },
+      {
+        "zh": "「どうでもいい」是无关紧要，意思相反。",
+        "en": "「どうでもいい」 is trivial — the opposite."
+      }
+    ]
   }
 ]

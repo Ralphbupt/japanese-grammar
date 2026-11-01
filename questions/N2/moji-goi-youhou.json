@@ -883,5 +883,581 @@
         "en": "Lending money is 「貸した」."
       }
     ]
+  },
+  {
+    "id": "n2-mg-526",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<夢中>>",
+    "options": [
+      "疲れていたので、夢中で寝てしまい、地震に気がつかなかった。",
+      "彼は夢中な顔で、窓の外をぼんやり見ていた。",
+      "その歌手は今、若者たちの夢中だ。",
+      "子どもたちは、新しいゲームに夢中になっている。"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "夢中：入迷、着迷。正确句：孩子们迷上了新游戏。",
+      "en": "夢中: absorbed, crazy about. Correct: The children are hooked on the new game."
+    },
+    "why": {
+      "zh": "「夢中」是全神贯注于某事，常用「〜に夢中になる」「夢中で〜する」（拼命地做）。",
+      "en": "「夢中」 is being absorbed in something: 「〜に夢中になる」, 「夢中で〜する」 (doing frantically)."
+    },
+    "wrong": [
+      {
+        "zh": "睡得很熟是「ぐっすり寝る」，「夢中」不形容睡眠。",
+        "en": "Sleeping soundly is 「ぐっすり寝る」; 「夢中」 doesn't describe sleep."
+      },
+      {
+        "zh": "发呆的表情是「ぼんやりした顔」，「夢中」不接「な」修饰表情。",
+        "en": "A vacant look is 「ぼんやりした顔」; 「夢中な顔」 isn't said."
+      },
+      {
+        "zh": "年轻人崇拜的对象是「あこがれ」「人気の的」，「夢中」不能当“被迷恋的对象”。",
+        "en": "The object of admiration is 「あこがれ」 or 「人気の的」; 「夢中」 isn't the thing people are crazy about."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-mg-527",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<手頃>>",
+    "options": [
+      "彼は手頃にうそをつくので、信用できない。",
+      "電車が遅れたが、約束の時間に手頃に間に合った。",
+      "この店のランチは、手頃な値段でおいしい。",
+      "彼女は手頃な性格で、だれとでもすぐ仲良くなる。"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "手頃：（价格、大小等）合适、不贵。正确句：这家店的午餐价格实惠又好吃。",
+      "en": "手頃: reasonable, handy (price, size). Correct: This restaurant's lunch is good and reasonably priced."
+    },
+    "why": {
+      "zh": "「手頃」是价格、大小、难度等正合适，常用「手頃な値段」「手頃な大きさ」。",
+      "en": "「手頃」 is just right in price, size or difficulty: 「手頃な値段」, 「手頃な大きさ」."
+    },
+    "wrong": [
+      {
+        "zh": "毫不在乎地撒谎是「平気でうそをつく」。",
+        "en": "Lying without a qualm is 「平気でうそをつく」."
+      },
+      {
+        "zh": "刚好赶上是「ぎりぎり間に合った」「ちょうど間に合った」。",
+        "en": "Only just making it is 「ぎりぎり間に合った」 or 「ちょうど間に合った」."
+      },
+      null,
+      {
+        "zh": "性格随和是「気さくな性格」，「手頃」不形容性格。",
+        "en": "An easygoing person is 「気さくな性格」; 「手頃」 doesn't describe personality."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-528",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<慌ただしい>>",
+    "options": [
+      "弟は慌ただしい性格なので、よく忘れ物をする。",
+      "この川は流れが慌ただしいので、泳ぐのは危ない。",
+      "引っ越しの準備で、今週は毎日慌ただしかった。",
+      "急に慌ただしい雨が降ってきて、洗濯物がぬれてしまった。"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "慌ただしい：匆忙、忙乱。正确句：因为准备搬家，这周每天都忙得团团转。",
+      "en": "慌ただしい: hectic, rushed. Correct: With the move to prepare, every day this week was hectic."
+    },
+    "why": {
+      "zh": "「慌ただしい」形容时间、日子、气氛匆忙忙乱。",
+      "en": "「慌ただしい」 describes a time, day or atmosphere as hectic."
+    },
+    "wrong": [
+      {
+        "zh": "冒失、丢三落四的性格是「そそっかしい」，「慌ただしい」不形容性格。",
+        "en": "A careless personality is 「そそっかしい」; 「慌ただしい」 doesn't describe character."
+      },
+      {
+        "zh": "水流急是「流れが速い」「流れが急だ」。",
+        "en": "A fast current is 「流れが速い」 or 「流れが急だ」."
+      },
+      null,
+      {
+        "zh": "下大雨是「激しい雨」，「慌ただしい」不形容雨。",
+        "en": "Heavy rain is 「激しい雨」; 「慌ただしい」 doesn't describe rain."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-529",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<引き止める>>",
+    "options": [
+      "信号が赤になったので、車を引き止めた。",
+      "会社を辞めようとしたが、上司に強く引き止められた。",
+      "大雨のため、試合は途中で引き止められた。",
+      "鼻血を引き止めるために、しばらく上を向いて座っていた。"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "引き止める：挽留、劝阻（要离开的人）。正确句：我想辞职，但被上司极力挽留了。",
+      "en": "引き止める: to hold back someone who wants to leave. Correct: I tried to quit, but my boss strongly urged me to stay."
+    },
+    "why": {
+      "zh": "「引き止める」的对象是要走、要离开的人。",
+      "en": "「引き止める」 is keeping a person from leaving."
+    },
+    "wrong": [
+      {
+        "zh": "停车是「車を止めた」。",
+        "en": "Stopping a car is 「車を止めた」."
+      },
+      null,
+      {
+        "zh": "比赛中断是「中断された」「中止された」。",
+        "en": "A match being halted is 「中断された」 or 「中止された」."
+      },
+      {
+        "zh": "止鼻血是「鼻血を止める」。",
+        "en": "Stopping a nosebleed is 「鼻血を止める」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-530",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<心強い>>",
+    "options": [
+      "彼女は心強い人で、何があっても泣かない。",
+      "先輩が一緒に来てくれるので、とても心強い。",
+      "今日は心強い風が吹いていて、傘がさせない。",
+      "このロープは心強いので、重い荷物を運んでも切れない。"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "心強い：（有依靠而）放心、胆壮。正确句：前辈陪我一起去，我心里很踏实。",
+      "en": "心強い: reassured by having support. Correct: My senior colleague is coming with me, which is very reassuring."
+    },
+    "why": {
+      "zh": "「心強い」是有人或东西可以依靠，所以安心，不是“坚强”或“强”。",
+      "en": "「心強い」 is feeling reassured because you have support — not 'strong'."
+    },
+    "wrong": [
+      {
+        "zh": "性格坚强是「気が強い」「強い人」。",
+        "en": "A tough person is 「気が強い」 or 「強い人」."
+      },
+      null,
+      {
+        "zh": "风大是「強い風」。",
+        "en": "A strong wind is 「強い風」."
+      },
+      {
+        "zh": "绳子结实是「丈夫」。",
+        "en": "A strong rope is 「丈夫」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-531",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<中継>>",
+    "options": [
+      "昼休みなので、会議をいったん中継した。",
+      "成田空港で飛行機を中継して、ロンドンに向かった。",
+      "二人の間に入って話を中継し、けんかをやめさせた。",
+      "決勝戦は、テレビで全国に生中継された。"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "中継：转播。正确句：决赛通过电视向全国现场直播了。",
+      "en": "中継: relay broadcast. Correct: The final was broadcast live on TV nationwide."
+    },
+    "why": {
+      "zh": "「中継」主要指转播（「生中継」「テレビ中継」）。",
+      "en": "「中継」 is mainly a relay broadcast (「生中継」, 「テレビ中継」)."
+    },
+    "wrong": [
+      {
+        "zh": "暂停会议是「中断」。",
+        "en": "Pausing a meeting is 「中断」."
+      },
+      {
+        "zh": "转机是「乗り継いで」。",
+        "en": "Changing planes is 「乗り継いで」."
+      },
+      {
+        "zh": "从中调停是「仲裁」「間を取り持つ」。",
+        "en": "Mediating between people is 「仲裁」 or 「間を取り持つ」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-mg-532",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<解散>>",
+    "options": [
+      "会議の前に、参加者に資料を解散した。",
+      "砂糖をお湯に入れて、よく解散させた。",
+      "見学が終わると、グループは駅前で解散した。",
+      "強い風で雲が解散して、青空が見えてきた。"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "解散：（集体）散开、解散。正确句：参观结束后，小组在车站前解散了。",
+      "en": "解散: (a group) breaking up, dispersing. Correct: After the tour, the group broke up in front of the station."
+    },
+    "why": {
+      "zh": "「解散」用于人的集体、组织散开（「現地解散」「国会を解散する」）。",
+      "en": "「解散」 is a group of people or an organisation breaking up (「現地解散」, 「国会を解散する」)."
+    },
+    "wrong": [
+      {
+        "zh": "分发资料是「配布した」「配った」。",
+        "en": "Handing out documents is 「配布した」 or 「配った」."
+      },
+      {
+        "zh": "使溶化是「溶かした」。",
+        "en": "Dissolving is 「溶かした」."
+      },
+      null,
+      {
+        "zh": "云散开是「雲が消えて」「雲が晴れて」，「解散」不用于云。",
+        "en": "Clouds clearing is 「雲が消えて」; 「解散」 isn't used of clouds."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-533",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<欠かす>>",
+    "options": [
+      "電車の中で財布を欠かして、困ってしまった。",
+      "祖父は、どんなに寒い日でも毎朝の散歩を欠かさない。",
+      "今日の会議は、メンバーが一人欠かしている。",
+      "満月を過ぎると、月は少しずつ欠かしていく。"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "欠かす：缺、漏掉（该做的事），多用否定。正确句：无论多冷，祖父每天早上的散步从不落下。",
+      "en": "欠かす: to miss or skip (something you always do), usually negative. Correct: However cold it is, my grandfather never misses his morning walk."
+    },
+    "why": {
+      "zh": "「欠かす」是他动词，多用「〜を欠かさない」（从不间断）。",
+      "en": "「欠かす」 is transitive, usually 「〜を欠かさない」 (never skip)."
+    },
+    "wrong": [
+      {
+        "zh": "丢钱包是「なくして」「落として」。",
+        "en": "Losing a wallet is 「なくして」 or 「落として」."
+      },
+      null,
+      {
+        "zh": "少一个人是自动词「欠けている」。",
+        "en": "Being one person short is the intransitive 「欠けている」."
+      },
+      {
+        "zh": "月亏是自动词「欠けていく」。",
+        "en": "The moon waning is the intransitive 「欠けていく」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-534",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<はかどる>>",
+    "options": [
+      "静かな図書館だと、いつもより勉強がはかどる。",
+      "道がすいていて、バスがはかどったので早く着いた。",
+      "病気がはかどって、入院することになった。",
+      "一年で背がはかどって、去年の服が着られなくなった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "はかどる：（工作、学习）进展顺利。正确句：在安静的图书馆里，学习比平时更有效率。",
+      "en": "はかどる: (work, study) to make good progress. Correct: In a quiet library my studying goes better than usual."
+    },
+    "why": {
+      "zh": "「はかどる」的主语是工作、学习等任务。",
+      "en": "「はかどる」 takes a task as its subject: work, study."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "车开得顺是「バスが順調に走った」。",
+        "en": "A bus making good time is 「バスが順調に走った」."
+      },
+      {
+        "zh": "病情加重是「悪化して」。",
+        "en": "An illness worsening is 「悪化して」."
+      },
+      {
+        "zh": "长个子是「背が伸びて」。",
+        "en": "Growing taller is 「背が伸びて」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-535",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<ふさわしい>>",
+    "options": [
+      "誠実な彼こそ、リーダーにふさわしい。",
+      "この靴はサイズが私の足にふさわしい。",
+      "計算がふさわしいかどうか、もう一度確かめた。",
+      "二人の意見がふさわしかったので、すぐに決まった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "ふさわしい：相称、适合（身份、场合）。正确句：诚实的他才配当领导。",
+      "en": "ふさわしい: suitable, befitting (a role, an occasion). Correct: Honest as he is, he's the right person to lead."
+    },
+    "why": {
+      "zh": "「ふさわしい」是与身份、场合、角色相称。",
+      "en": "「ふさわしい」 is befitting a role, status or occasion."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "尺寸合脚是「ぴったりだ」「合っている」。",
+        "en": "Shoes that fit are 「ぴったりだ」 or 「合っている」."
+      },
+      {
+        "zh": "计算是否正确是「正しい」。",
+        "en": "Whether a calculation is right is 「正しい」."
+      },
+      {
+        "zh": "意见一致是「一致した」。",
+        "en": "Opinions agreeing is 「一致した」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-536",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<着用>>",
+    "options": [
+      "駅に着用したら、すぐに電話をください。",
+      "新しいエアコンを、業者に頼んで部屋に着用した。",
+      "会議で、新人の彼が出した意見が着用された。",
+      "工事現場では、必ずヘルメットを着用すること。"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "着用：穿戴（衣服、装备）。正确句：在工地必须戴安全帽。",
+      "en": "着用: wearing (clothing, gear). Correct: Helmets must be worn on the building site."
+    },
+    "why": {
+      "zh": "「着用」是穿戴衣物、装备的正式说法（「シートベルトを着用する」）。",
+      "en": "「着用」 is the formal word for wearing clothes or gear (「シートベルトを着用する」)."
+    },
+    "wrong": [
+      {
+        "zh": "到达是「到着した」「着いた」。",
+        "en": "Arriving is 「到着した」 or 「着いた」."
+      },
+      {
+        "zh": "安装空调是「設置した」「取り付けた」。",
+        "en": "Installing an air conditioner is 「設置した」 or 「取り付けた」."
+      },
+      {
+        "zh": "意见被采纳是「採用された」。",
+        "en": "An idea being adopted is 「採用された」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-mg-537",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<見晴らし>>",
+    "options": [
+      "彼は見晴らしがいいので、細かいことによく気がつく。",
+      "この部屋は高い階にあるので、見晴らしがいい。",
+      "景気が悪く、会社の将来の見晴らしは暗い。",
+      "この料理は、味はいいが見晴らしがよくない。"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "見晴らし：（远眺的）景色、视野。正确句：这个房间在高层，视野很好。",
+      "en": "見晴らし: a view (from a height). Correct: This room is on a high floor, so it has a good view."
+    },
+    "why": {
+      "zh": "「見晴らし」是从高处远眺的视野。",
+      "en": "「見晴らし」 is the view looking out from somewhere high."
+    },
+    "wrong": [
+      {
+        "zh": "善于察觉是「よく気が利く」「目が鋭い」。",
+        "en": "Being observant is 「よく気が利く」 or 「目が鋭い」."
+      },
+      null,
+      {
+        "zh": "前景是「見通し」「先行き」。",
+        "en": "Prospects are 「見通し」 or 「先行き」."
+      },
+      {
+        "zh": "料理的外观是「見た目」。",
+        "en": "How food looks is 「見た目」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-538",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<束ねる>>",
+    "options": [
+      "出かける前に、靴のひもをしっかり束ねた。",
+      "二つの会社が束ねて、新しい会社ができた。",
+      "古い新聞をひもで束ねて、資源ごみに出した。",
+      "シャツのボタンを、上まできちんと束ねた。"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "束ねる：捆、扎（成一束）。正确句：把旧报纸用绳子捆好，作为可回收垃圾扔了。",
+      "en": "束ねる: to tie into a bundle. Correct: I tied the old newspapers in a bundle and put them out for recycling."
+    },
+    "why": {
+      "zh": "「束ねる」是把许多细长或扁平的东西捆成一束（「髪を束ねる」）。",
+      "en": "「束ねる」 is gathering many things into a bundle (「髪を束ねる」)."
+    },
+    "wrong": [
+      {
+        "zh": "系鞋带是「結んだ」。",
+        "en": "Tying shoelaces is 「結んだ」."
+      },
+      {
+        "zh": "公司合并是「合併して」。",
+        "en": "Companies merging is 「合併して」."
+      },
+      null,
+      {
+        "zh": "扣扣子是「留めた」「かけた」。",
+        "en": "Doing up buttons is 「留めた」 or 「かけた」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-539",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<交わす>>",
+    "options": [
+      "古いテレビを、新しいものに交わした。",
+      "試合の後、両チームの選手は握手を交わした。",
+      "駅で電車を交わして、会社に行った。",
+      "赤と青の絵の具を交わして、紫色を作った。"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "交わす：互相（握手、问候、交谈）。正确句：比赛结束后，两队选手互相握手。",
+      "en": "交わす: to exchange (a handshake, greetings, words). Correct: After the match, the players of both teams shook hands."
+    },
+    "why": {
+      "zh": "「交わす」是双方互相做同一动作（「言葉を交わす」「約束を交わす」）。",
+      "en": "「交わす」 is both sides doing the same thing to each other (「言葉を交わす」, 「約束を交わす」)."
+    },
+    "wrong": [
+      {
+        "zh": "换成新电视是「取り替えた」「買い替えた」。",
+        "en": "Replacing a TV is 「取り替えた」 or 「買い替えた」."
+      },
+      null,
+      {
+        "zh": "换乘电车是「乗り換えて」。",
+        "en": "Changing trains is 「乗り換えて」."
+      },
+      {
+        "zh": "混合颜料是「混ぜて」。",
+        "en": "Mixing paints is 「混ぜて」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-540",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<用途>>",
+    "options": [
+      "この道具は、いろいろな用途に使える。",
+      "明日は用途があるので、パーティーには行けない。",
+      "夏休みの旅行の用途を立てた。",
+      "この薬は、用途を守って飲んでください。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "用途：用途、用处。正确句：这个工具能用在很多地方。",
+      "en": "用途: a use, purpose. Correct: This tool can be used for many purposes."
+    },
+    "why": {
+      "zh": "「用途」是东西的用处（「用途が広い」）。",
+      "en": "「用途」 is what a thing is used for (「用途が広い」)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "有事是「用事がある」。",
+        "en": "Having something to do is 「用事がある」."
+      },
+      {
+        "zh": "订计划是「計画を立てた」。",
+        "en": "Making a plan is 「計画を立てた」."
+      },
+      {
+        "zh": "按规定的方法和量服药是「用法・用量を守って」。",
+        "en": "Following the dosage is 「用法・用量を守って」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-541",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<一変>>",
+    "options": [
+      "信号が一変して、青になった。",
+      "都合が悪くなったので、会議の日時を一変した。",
+      "駅ができてから、町の様子は一変した。",
+      "一万円札を、千円札に一変してもらった。"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "一変：完全改变、彻底变样。正确句：车站建成后，镇上的样子完全变了。",
+      "en": "一変: to change completely. Correct: Since the station was built, the town has been transformed."
+    },
+    "why": {
+      "zh": "「一変」是情况、样子彻底改变。",
+      "en": "「一変」 is a situation or appearance changing completely."
+    },
+    "wrong": [
+      {
+        "zh": "信号灯变色是「変わって」。",
+        "en": "A traffic light changing is 「変わって」."
+      },
+      {
+        "zh": "改日期是「変更した」。",
+        "en": "Rescheduling is 「変更した」."
+      },
+      null,
+      {
+        "zh": "换零钱是「両替して」「くずして」。",
+        "en": "Changing a note is 「両替して」 or 「くずして」."
+      }
+    ]
   }
 ]

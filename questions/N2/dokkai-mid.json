@@ -496,5 +496,302 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n2-dk-306",
+    "type": "mid",
+    "difficulty": 2,
+    "passage": "三年前、東京の会社を辞めて、瀬戸内海の小さな島に移り住んだ。都会の満員電車にうんざりしていたし、海の近くでのんびり暮らしたいという気持ちもあった。\n移住する前は、島の人たちに受け入れてもらえるかが一番の心配だった。しかし、実際に困ったのは別のことだった。島の人たちは親切で、引っ越した翌日には野菜や魚を持って次々に訪ねてきてくれた。ありがたかったが、私がいつ起きて、どこへ出かけたかまで、すぐに島中に知られてしまう。都会での一人暮らしに慣れていた私には、それがなかなか息苦しかった。\nところが、去年の冬、私が熱を出して寝込んだとき、そのことを知った近所の人が、何も言わなくても薬や食事を届けてくれた。そのとき、私が息苦しいと感じていたものは、ここでは人を守る仕組みでもあるのだと気づいた。互いの生活をよく知っているからこそ、誰かの異変にすぐ気づけるのだ。\n今でも、すべてを知られることに抵抗がないわけではない。それでも、都会で手に入れた自由と引きかえに、私は何かを失っていたのかもしれないと思うようになった。",
+    "tr": {
+      "zh": "三年前，我辞掉东京公司的工作，搬到了濑户内海的一座小岛上。我受够了城市里的满员电车，也想在海边悠闲地生活。搬来之前，我最担心的是岛上的人能不能接纳我。但实际让我为难的却是另一件事。岛上的人很热情，搬来的第二天就接二连三地带着蔬菜和鱼来看我。我很感激，可我几点起床、去了哪里，很快就会传遍全岛。对习惯了城市独居生活的我来说，这让我相当喘不过气。然而去年冬天，我发烧卧床时，得知此事的邻居什么都没说就给我送来了药和饭。那时我才意识到，我觉得让人喘不过气的东西，在这里也是保护人的机制。正因为彼此很了解对方的生活，才能很快察觉到谁出了异常。到现在，我也并不是对一切都被人知道毫无抵触。尽管如此，我开始觉得，以在城市得到的自由为代价，我也许失去了某些东西。",
+      "en": "Three years ago I quit my job at a Tokyo company and moved to a small island in the Seto Inland Sea. I was fed up with packed city trains, and I also wanted to live a relaxed life near the sea. Before moving, my biggest worry was whether the islanders would accept me. But what actually troubled me was something else. The islanders were kind; the day after I moved in, one after another they came round with vegetables and fish. I was grateful, but even what time I got up and where I went soon became known all over the island. Used to living alone in the city, I found that quite suffocating. Last winter, though, when I was in bed with a fever, neighbours who had heard brought me medicine and meals without my saying a word. Then I realised that what I had found suffocating is, here, also a system that protects people. It is precisely because they know each other's lives so well that they notice at once when something is wrong with someone. Even now, I'm not entirely comfortable with everything about me being known. Still, I've come to think that in exchange for the freedom I gained in the city, I may have been losing something."
+    },
+    "questions": [
+      {
+        "q": "移住した後、筆者が実際に困ったことは何か。",
+        "options": [
+          "自分の生活の様子が、すぐに周りの人に知られてしまうこと",
+          "島の人たちが、なかなか筆者を受け入れてくれなかったこと",
+          "島の人たちが毎日訪ねてきて、一人の時間がなくなったこと",
+          "店や病院が少なく、島での生活が思ったより不便だったこと"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「実際に困ったのは別のことだった」之后说明：几点起床、去了哪里「すぐに島中に知られてしまう」，让作者「息苦しかった」。",
+          "en": "After 「実際に困ったのは別のことだった」: when he got up and where he went 「すぐに島中に知られてしまう」, which felt 「息苦しかった」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "这是移居前的担心，实际上岛民很热情。",
+            "en": "That was his worry before moving; in fact the islanders were kind."
+          },
+          {
+            "zh": "岛民是搬来第二天来访，文中没说每天都来；让他为难的是消息传得快。",
+            "en": "They called the day after he arrived, not every day; the trouble was how fast news spread."
+          },
+          {
+            "zh": "文中没有提到生活不便。",
+            "en": "Inconvenience isn't mentioned."
+          }
+        ]
+      },
+      {
+        "q": "「人を守る仕組み」とあるが、どういうことか。",
+        "options": [
+          "島に病院がないので、近所の人が薬を用意しておく決まりがあること",
+          "互いの暮らしを知っているため、誰かに何かあればすぐに分かること",
+          "移住してきた人の生活を、島の人たちが交代で毎日見回っていること",
+          "何でもすぐ島中に伝わるので、悪いことをする人がいないこと"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "后一句解释：「互いの生活をよく知っているからこそ、誰かの異変にすぐ気づける」。",
+          "en": "The next sentence explains it: 「互いの生活をよく知っているからこそ、誰かの異変にすぐ気づける」."
+        },
+        "wrong": [
+          {
+            "zh": "邻居送药是出于好意，文中没说岛上有这样的规定，也没说没有医院。",
+            "en": "The neighbours brought medicine out of kindness; no rule or lack of a hospital is mentioned."
+          },
+          null,
+          {
+            "zh": "文中没有说岛民轮流巡视。",
+            "en": "Nobody is said to patrol in turns."
+          },
+          {
+            "zh": "文中说的是能察觉别人生病等异常，与防止坏事无关。",
+            "en": "The point is noticing when someone is unwell, not deterring wrongdoing."
+          }
+        ]
+      },
+      {
+        "q": "筆者の考えに合うものはどれか。",
+        "options": [
+          "島の暮らしは息苦しいので、いつか都会に戻りたい。",
+          "都会の自由な暮らしでは得られないものが、島にはある。",
+          "島の人たちに生活を知られることにも、今ではすっかり慣れた。",
+          "移住する前に、島の人たちと親しくなっておくべきだった。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "最后一句：以城市的自由为代价，「何かを失っていたのかもしれない」——岛上有城市没有的东西。",
+          "en": "The last line: for the city's freedom 「何かを失っていたのかもしれない」 — the island offers what city life lacked."
+        },
+        "wrong": [
+          {
+            "zh": "作者没有说想回城市，反而重新看待了岛上的生活。",
+            "en": "He never says he wants to go back; he has come to see island life differently."
+          },
+          null,
+          {
+            "zh": "正好相反：「抵抗がないわけではない」，仍有些抵触。",
+            "en": "The opposite: 「抵抗がないわけではない」 — he still minds a little."
+          },
+          {
+            "zh": "文中没有这样的反省。",
+            "en": "He expresses no such regret."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-307",
+    "type": "mid",
+    "difficulty": 2,
+    "passage": "昼食の後、午後の会議中に眠くなってしまった経験は、誰にでもあるだろう。こうした眠気を我慢しながら仕事を続けるより、短い昼寝をしたほうが、かえって仕事の効率が上がると言われている。最近では、社員が昼休みに眠れるよう、専用の部屋を用意する会社も出てきた。ある会社では、昼寝を取り入れてから、午後の仕事でのミスが減ったという。\nただし、昼寝なら何でもよいというわけではない。大切なのは長さである。眠る時間が三十分を超えると、深い眠りに入ってしまい、起きた後もしばらく頭がぼんやりする。また、夜に眠れなくなる原因にもなる。十五分から二十分程度が適当だとされているのは、そのためだ。\n意外なことに、昼寝の前にコーヒーを飲むのもよいそうだ。コーヒーに含まれる成分は、飲んでから効き始めるまでに二十分ほどかかる。そのため、飲んですぐに眠れば、ちょうど起きるころに効果が現れ、すっきりと目覚められるのである。\nとはいえ、昼寝が効果的だと分かっていても、職場で眠ることに抵抗を感じる人はまだ多い。昼寝を「怠けている」と見るのではなく、午後の仕事のための準備だと考える意識の変化が、まず必要なのかもしれない。",
+    "tr": {
+      "zh": "午饭后，下午开会时犯困的经历，谁都有过吧。据说，与其一边忍着困意一边继续工作，不如睡个短短的午觉，工作效率反而会提高。最近，还出现了为让员工午休时能睡觉而准备专用房间的公司。据说某公司引入午睡后，下午工作中的失误减少了。不过，并不是什么样的午睡都好。重要的是时长。睡眠超过三十分钟，就会进入深度睡眠，醒来后头脑也会昏昏沉沉一阵子。而且还会成为晚上睡不着的原因。之所以认为十五到二十分钟左右比较合适，就是这个缘故。出人意料的是，午睡前喝咖啡似乎也不错。咖啡中所含的成分，从喝下到开始起作用大约需要二十分钟。因此，喝完马上睡，正好在快醒的时候发挥效果，就能神清气爽地醒来。话虽如此，即使知道午睡有效，对在职场睡觉感到抵触的人仍然很多。也许首先需要的是意识的转变：不把午睡看成“偷懒”，而是看作为下午工作所做的准备。",
+      "en": "Everyone has probably had the experience of getting sleepy in an afternoon meeting after lunch. It's said that rather than fighting the drowsiness and carrying on working, taking a short nap actually makes you work more efficiently. Recently some companies have even set aside special rooms so that staff can sleep during the lunch break. At one company, mistakes in afternoon work reportedly fell after naps were introduced. But not just any nap will do. What matters is the length. If you sleep for more than thirty minutes, you fall into deep sleep and your head stays foggy for a while after waking. It can also stop you sleeping at night. That's why fifteen to twenty minutes is considered about right. Surprisingly, drinking coffee before a nap is apparently good too. The substance in coffee takes about twenty minutes after you drink it to start working. So if you sleep straight after drinking it, the effect appears just as you wake, and you wake up refreshed. Even so, although naps are known to work, many people still feel uneasy about sleeping at work. What may be needed first is a change in attitude: seeing a nap not as 'slacking off' but as preparation for the afternoon's work."
+    },
+    "questions": [
+      {
+        "q": "筆者によると、昼寝が三十分を超えるとどうなるか。",
+        "options": [
+          "眠気が残るので、起きてすぐにコーヒーを飲む必要がある。",
+          "深く眠ってしまい、起きてもすぐには頭がはっきりしない。",
+          "午後の仕事でのミスは減るが、夜は眠れなくなってしまう。",
+          "深く眠れるので疲れがよく取れ、午後の仕事の効率が上がる。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "「三十分を超えると、深い眠りに入ってしまい、起きた後もしばらく頭がぼんやりする」。",
+          "en": "「三十分を超えると、深い眠りに入ってしまい、起きた後もしばらく頭がぼんやりする」."
+        },
+        "wrong": [
+          {
+            "zh": "咖啡是睡前喝的，文中没有说醒后要喝。",
+            "en": "The coffee is drunk before the nap, not after waking."
+          },
+          null,
+          {
+            "zh": "“晚上睡不着”对，但失误减少是关于午睡的一般效果，不是超过三十分钟的结果。",
+            "en": "Trouble sleeping at night is right, but fewer mistakes is the general effect of napping, not of napping over thirty minutes."
+          },
+          {
+            "zh": "正好相反：睡过三十分钟反而头脑昏沉。",
+            "en": "The opposite: past thirty minutes you wake up foggy."
+          }
+        ]
+      },
+      {
+        "q": "昼寝の前にコーヒーを飲むとよいのはなぜか。",
+        "options": [
+          "コーヒーを飲むと、短い時間でも深く眠れるから",
+          "コーヒーを飲めば、夜に眠れなくなるのを防げるから",
+          "コーヒーの効果が、目が覚めるころに出てくるから",
+          "コーヒーの効果で、昼寝が三十分を超えずに済むから"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "咖啡成分约二十分钟后起效，喝完马上睡，「ちょうど起きるころに効果が現れ」。",
+          "en": "Coffee takes about twenty minutes to work, so sleeping right after means 「ちょうど起きるころに効果が現れ」."
+        },
+        "wrong": [
+          {
+            "zh": "文中没有说咖啡帮助深睡；深睡反而不好。",
+            "en": "Coffee isn't said to deepen sleep — and deep sleep is what to avoid."
+          },
+          {
+            "zh": "晚上睡不着是午睡过长造成的，文中没说咖啡能防止。",
+            "en": "Sleeping badly at night comes from long naps; coffee isn't said to prevent it."
+          },
+          null,
+          {
+            "zh": "文中只说醒时神清气爽，没说咖啡能控制午睡时长。",
+            "en": "The text says you wake refreshed, not that coffee keeps the nap under thirty minutes."
+          }
+        ]
+      },
+      {
+        "q": "筆者は、職場で昼寝が広まるために、まず何が必要だと考えているか。",
+        "options": [
+          "会社が、社員が昼休みに眠れる部屋を用意すること",
+          "昼寝の効果を確かめる研究を、もっと多く行うこと",
+          "昼寝を、怠けではなく仕事の準備だと捉えること",
+          "昼寝の時間を、十五分から二十分と決めること"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "最后一段：不把午睡看成「怠けている」，而当作「午後の仕事のための準備」的「意識の変化が、まず必要」。",
+          "en": "The last paragraph: 「意識の変化が、まず必要」 — seeing a nap not as 「怠けている」 but as 「午後の仕事のための準備」."
+        },
+        "wrong": [
+          {
+            "zh": "有的公司已经准备了房间，但作者说首先需要的是观念的转变。",
+            "en": "Some companies already provide rooms, but the writer says attitudes must change first."
+          },
+          {
+            "zh": "文中没有说需要更多研究。",
+            "en": "More research isn't called for."
+          },
+          null,
+          {
+            "zh": "十五到二十分钟是合适的时长，但不是作者认为“首先需要”的东西。",
+            "en": "Fifteen to twenty minutes is the right length, but not what the writer says is needed first."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-308",
+    "type": "mid",
+    "difficulty": 3,
+    "passage": "旅行先で食事をする店を選ぶとき、私はいつもインターネットの口コミを参考にしている。店は星の数で評価されているので、数字の高い店を選べば失敗しないと思っていたのだ。\nところが先日、星が三つの店と四つ半の店で迷い、時間の都合で仕方なく三つの店に入ったところ、これが驚くほどおいしかった。後で口コミを読み返してみると、星が少ない理由は、「店が狭い」「駅から遠い」「店主が無口だ」といったものばかりで、料理そのものの評価はむしろ高かった。\n考えてみれば、星の数は、料理の味だけでなく、店の雰囲気や接客、さらには書いた人がその店に何を期待していたかによっても変わる。にぎやかに食事を楽しみたい人と、静かにおいしいものを食べたい人とでは、同じ店でも評価が違って当然だ。つまり、星の数は、多くの人の満足度を平均したものにすぎず、私にとってよい店かどうかを示しているわけではないのである。\nそれ以来、私は星の数よりも、口コミの中身を読むようにしている。誰が、何に満足し、何に不満を持ったのか。それを自分の好みと照らし合わせれば、数字だけを見ていたときには見落としていた店に、出会えるかもしれない。",
+    "tr": {
+      "zh": "在旅行地选择吃饭的店时，我总是参考网上的评价。店家是用星级来评分的，所以我一直以为只要选分数高的店就不会失败。可是前几天，我在三星的店和四星半的店之间犹豫，因为时间关系不得已进了三星的那家，结果出乎意料地好吃。事后重读评价才发现，星级低的理由全都是“店面窄”“离车站远”“店主不爱说话”之类的，对菜品本身的评价反而很高。想想看，星级不仅取决于菜的味道，还取决于店的氛围和服务，甚至写评价的人对那家店抱有什么期待。想热热闹闹吃饭的人和想安安静静吃好吃的东西的人，对同一家店的评价不同也是理所当然的。也就是说，星级只不过是许多人满意度的平均，并不表示对我来说是不是一家好店。从那以后，比起星级，我更注重去读评价的内容。是谁、对什么满意、对什么不满？把这些和自己的喜好对照一下，也许就能遇到只看数字时错过的店。",
+      "en": "When choosing where to eat on a trip, I always refer to online reviews. Restaurants are rated with stars, so I thought that if I chose one with a high number I couldn't go wrong. The other day, though, I was torn between a three-star place and a four-and-a-half-star one, and for lack of time I reluctantly went into the three-star one — and it was astonishingly good. When I reread the reviews afterwards, the reasons for the low rating were all things like 'the place is cramped', 'it's far from the station' and 'the owner doesn't talk much'; the food itself was, if anything, rated highly. Come to think of it, the number of stars varies not only with the taste of the food but with the atmosphere and service, and even with what the reviewer expected of the place. Someone who wants a lively meal and someone who wants to eat good food quietly will naturally rate the same restaurant differently. In other words, the star rating is merely an average of many people's satisfaction; it doesn't show whether a place is good for me. Since then, I read what the reviews say rather than the number of stars. Who was satisfied with what, and who was unhappy about what? If I compare that with my own tastes, I may come across restaurants I'd have missed when I looked only at the numbers."
+    },
+    "questions": [
+      {
+        "q": "星が三つの店について、筆者が後で分かったことは何か。",
+        "options": [
+          "料理の味より、店の雰囲気を高く評価する人が多かったこと",
+          "料理以外の点が理由で、評価が低くなっていたこと",
+          "口コミを書いた人の多くが、料理に不満を持っていたこと",
+          "いつも混んでいるので、評価が実際より低かったこと"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "星少的理由是「店が狭い」「駅から遠い」「店主が無口だ」，而「料理そのものの評価はむしろ高かった」。",
+          "en": "The low rating came from 「店が狭い」「駅から遠い」「店主が無口だ」, while 「料理そのものの評価はむしろ高かった」."
+        },
+        "wrong": [
+          {
+            "zh": "正好相反：被批评的是店的环境，菜品评价反而高。",
+            "en": "The opposite: the setting was criticised; the food was rated highly."
+          },
+          null,
+          {
+            "zh": "正好相反：「料理そのものの評価はむしろ高かった」。",
+            "en": "The opposite: 「料理そのものの評価はむしろ高かった」."
+          },
+          {
+            "zh": "理由是店面窄、离车站远，文中没有说店里拥挤。",
+            "en": "The reasons were a cramped room and the distance from the station, not crowds."
+          }
+        ]
+      },
+      {
+        "q": "筆者によると、星の数とはどのようなものか。",
+        "options": [
+          "料理の味だけを、多くの人が正確に評価したもの",
+          "期待の違う多くの人の満足度を、まとめて表したもの",
+          "店の雰囲気や接客を中心に、書いた人が評価したもの",
+          "自分にとってよい店かどうかを、確かめるためのもの"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "星级受各人期待影响，是「多くの人の満足度を平均したものにすぎず」。",
+          "en": "Stars depend on what each reviewer expected; they are 「多くの人の満足度を平均したものにすぎず」."
+        },
+        "wrong": [
+          {
+            "zh": "正好相反：星级「料理の味だけでなく」也受氛围等影响。",
+            "en": "The opposite: stars reflect 「料理の味だけでなく」 other things too."
+          },
+          null,
+          {
+            "zh": "氛围和服务只是影响因素之一，文中没说以它们为中心。",
+            "en": "Atmosphere and service are among the factors, not the main basis."
+          },
+          {
+            "zh": "正好相反：星级「私にとってよい店かどうかを示しているわけではない」。",
+            "en": "The opposite: stars 「私にとってよい店かどうかを示しているわけではない」."
+          }
+        ]
+      },
+      {
+        "q": "筆者が最も言いたいことは何か。",
+        "options": [
+          "口コミは当てにならないので、自分の足で店を探したほうがいい。",
+          "星の数が少ない店のほうが、実際にはおいしいことが多い。",
+          "口コミの中身を自分の好みと比べると、合う店が見つけやすい。",
+          "口コミを書くときは、料理の味だけを評価するべきだ。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "最后一段：比起星级更要读内容，把它「自分の好みと照らし合わせれば」就能遇到错过的店。",
+          "en": "The last paragraph: read the content, not the stars; 「自分の好みと照らし合わせれば」 you may find places you'd have missed."
+        },
+        "wrong": [
+          {
+            "zh": "作者仍然读评价，只是改读内容，没有说评价不可信。",
+            "en": "He still uses reviews — he reads their content instead of the stars."
+          },
+          {
+            "zh": "只是一次经历，作者没有说星少的店通常更好吃。",
+            "en": "That was one experience; he doesn't claim low-rated places are usually better."
+          },
+          null,
+          {
+            "zh": "文中没有谈怎样写评价。",
+            "en": "How to write reviews isn't discussed."
+          }
+        ]
+      }
+    ]
   }
 ]

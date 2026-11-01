@@ -765,5 +765,158 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n2-dk-106",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "次の文章は、新聞に載ったエッセイです。",
+    "passage": "人気のラーメン店の前に、長い行列ができているのを見かけることがある。以前の私は、そうした光景を見る[[1]]、食事のために一時間も待つなんて理解できないと思っていた。\nところが先日、友人に誘われて、断り切れずに初めて行列に並ぶことになった。最初のうちは、時間を無駄にしているような気がして落ち着かなかった。[[2]]、前後に並んでいる人たちの会話を聞いているうちに、少しずつ考えが変わってきた。遠くから電車を乗り継いで来たという学生や、毎月この店に通っているという年配の夫婦など、皆それぞれの思いを持って並んでいたのだ。\n四十分ほど待って、ようやく店に入ることができた。待った時間の長さ[[3]]、運ばれてきたラーメンは格別においしく感じられた。もちろん、味そのものも確かによかった。だが、それだけではなかったように思う。期待しながら待つ時間が、料理の味をいっそう引き立てていた[[4]]。\nすぐに手に入るものがあふれる今の時代、待つことは損だと考えられがちだ。しかし、待つ時間があるからこそ味わえる喜びもある。行列は時間の無駄だと決めつける[[5]]。",
+    "tr": {
+      "zh": "有时会看到人气拉面店门前排着长队。以前的我，每次看到那种情景，都觉得为了吃一顿饭要等一个小时简直不可理喻。可是前几天，朋友邀我去，我推辞不掉，第一次排了队。一开始，我总觉得是在浪费时间，心神不宁。但是，听着前后排队的人聊天，我的想法渐渐变了。有说是换乘好几趟电车从远方赶来的学生，也有说每个月都来这家店的老年夫妇，大家都怀着各自的心情在排队。等了四十分钟左右，终于进了店。也许是因为等了很久，端上来的拉面吃起来格外香。当然，味道本身也确实很好。但我觉得不仅仅是这样。满怀期待地等待的时间，难道不是让菜的味道更加出色了吗？在什么都能马上得到的当今时代，人们往往认为等待是吃亏。但是，也有正因为有等待的时间才能体会到的喜悦。一口断定排队是浪费时间，或许有点可惜。",
+      "en": "You sometimes see a long queue outside a popular ramen shop. In the past, every time I saw such a scene, I thought it incomprehensible to wait as long as an hour for a meal. The other day, though, a friend invited me and I couldn't refuse, so for the first time I joined a queue. At first I felt restless, as if I were wasting time. But as I listened to the conversations of the people in front of and behind me, my thinking gradually changed. There were students who said they had changed trains several times to come from far away, an elderly couple who said they came to this shop every month — everyone was queuing with their own feelings. After about forty minutes, we finally got in. Perhaps partly because of the long wait, the ramen that was brought tasted exceptionally good. Of course, the flavour itself was certainly good too. But I don't think that was all. Wasn't the time spent waiting in anticipation bringing out the taste of the food even more? In today's world, overflowing with things you can get immediately, waiting tends to be seen as a loss. But there are also pleasures you can enjoy precisely because there is time to wait. It would be a shame to dismiss queues as a waste of time."
+    },
+    "questions": [
+      {
+        "options": [
+          "たびに",
+          "ことなく",
+          "どころか",
+          "以上"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "“以前每次看到那种情景都会这么想”，表示每逢某事就会怎样，用「たびに」。",
+          "en": "Every time he saw such a scene he thought this: 「見るたびに」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「見ることなく」是“没看就…”，但他正是看到队伍才这么想的。",
+            "en": "「見ることなく」 means without seeing, but it was seeing the queues that made him think so."
+          },
+          {
+            "zh": "「どころか」是“别说…了，反而”，后面没有和“看到”相反的内容。",
+            "en": "「どころか」 (far from) needs a contrary statement, which doesn't follow."
+          },
+          {
+            "zh": "「以上」表示“既然…就应该”，后面接义务或决心，不接“觉得不可理喻”。",
+            "en": "「以上」 (since) leads to an obligation or resolve, not to 'I thought it incomprehensible'."
+          }
+        ]
+      },
+      {
+        "options": [
+          "そのため",
+          "しかし",
+          "それに",
+          "すなわち"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "前面说“心神不宁”，后面说“想法渐渐变了”，前后转折，用「しかし」。",
+          "en": "He felt restless; then his thinking changed — a contrast: 「しかし」."
+        },
+        "wrong": [
+          {
+            "zh": "「そのため」表示因果，“觉得浪费时间”推不出“想法改变”。",
+            "en": "「そのため」 (so) — feeling time was wasted doesn't cause his change of mind."
+          },
+          null,
+          {
+            "zh": "「それに」是同方向追加，后文和前文方向相反。",
+            "en": "「それに」 adds a similar point; the next sentence goes the other way."
+          },
+          {
+            "zh": "「すなわち」是换个说法，后文不是对前文的解释。",
+            "en": "「すなわち」 (that is) restates; the next sentence isn't a restatement."
+          }
+        ]
+      },
+      {
+        "options": [
+          "もあってか",
+          "を問わず",
+          "に限って",
+          "をめぐって"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "“也许部分是因为等了很久”，所以拉面格外好吃，后文也说不只是味道本身，用「もあってか」。",
+          "en": "Perhaps partly because of the long wait, it tasted special — and he adds it wasn't only the flavour: 「もあってか」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「を問わず」是“不管…”，和下文“等待让味道更好”的意思相反。",
+            "en": "「を問わず」 (regardless of) contradicts the point that the wait made it taste better."
+          },
+          {
+            "zh": "「に限って」是“偏偏在…的时候”，多接不如意的事，不接“格外好吃”。",
+            "en": "「に限って」 (of all times) usually introduces something unwelcome, not a treat."
+          },
+          {
+            "zh": "「をめぐって」是“围绕…（争论等）”，后面不能接“觉得好吃”。",
+            "en": "「をめぐって」 (over, concerning a dispute) can't lead into 'it tasted good'."
+          }
+        ]
+      },
+      {
+        "options": [
+          "のではないだろうか",
+          "わけがない",
+          "ことになっている",
+          "というわけではない"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "前一句「それだけではなかったように思う」，接着委婉地提出自己的看法，用「のではないだろうか」。",
+          "en": "After 「それだけではなかったように思う」 he puts forward his view tentatively: 「のではないだろうか」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「わけがない」是“不可能”，否定了作者自己的看法。",
+            "en": "「わけがない」 (can't possibly) denies the very idea he is proposing."
+          },
+          {
+            "zh": "「ことになっている」表示规定或预定，不用来表达自己的感受。",
+            "en": "「ことになっている」 states a rule or arrangement, not his impression."
+          },
+          {
+            "zh": "「というわけではない」否定了等待的作用，和前一句「それだけではなかった」矛盾。",
+            "en": "「というわけではない」 denies the wait had any effect, contradicting 「それだけではなかった」."
+          }
+        ]
+      },
+      {
+        "options": [
+          "のは、もったいない",
+          "ほかないのである",
+          "に越したことはない",
+          "べきなのである"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "上文说“也有正因为等待才能体会的喜悦”，所以一口断定排队是浪费“有点可惜”，用「のは、もったいない」。",
+          "en": "Since waiting brings its own pleasures, dismissing queues as a waste is a shame: 「のは、もったいない」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「ほかない」是“只能断定”，和作者改变后的想法相反。",
+            "en": "「ほかない」 (have no choice but to dismiss them) is the opposite of his new view."
+          },
+          {
+            "zh": "「に越したことはない」是“最好断定”，和全文的结论相反。",
+            "en": "「に越したことはない」 (it's best to dismiss them) contradicts his conclusion."
+          },
+          {
+            "zh": "「べきなのである」是“应该断定”，和全文的结论相反。",
+            "en": "「べきなのである」 (one should dismiss them) contradicts his conclusion."
+          }
+        ]
+      }
+    ]
   }
 ]
