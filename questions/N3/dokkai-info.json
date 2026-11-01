@@ -20,8 +20,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "田中要在平日晚上（19点左右）和星期六上午都用泳池。能同时满足这两个时间、又包含泳池的只有A。",
-          "en": "Tanaka needs the pool on weekday evenings (from about 19:00) and Saturday mornings. Only A covers both times and includes the pool."
+          "zh": "依据：「平日の夜と土曜日の午前中に、プールで泳ぎたい」；「毎日　7:00〜23:00」；「ジムのみ」\n推理：条件有三个：平日19点左右、星期六上午、要能用泳池。B是「月〜金」，没有周六；C只有周末和节假日，没有平日；E到17点为止；D时间够但「ジムのみ」不能游泳。时间和设施都满足的只有A。周二17–19点泳池停用，他19点才到，不受影响。\n容易错：只核对一个条件就选，例如只看时间选D、只看平日晚上选B。",
+          "en": "Evidence: 「平日の夜と土曜日の午前中に、プールで泳ぎたい」; 「毎日　7:00〜23:00」; 「ジムのみ」\nReasoning: Three conditions: weekdays around 7 p.m., Saturday morning, and the pool. B is 「月〜金」, no Saturday; C is weekends and holidays only, no weekdays; E ends at 17:00; D has the hours but is 「ジムのみ」, no swimming. Only A meets both the hours and the facilities. The pool is closed 17:00–19:00 on Tuesdays, but he arrives at 19:00, so it doesn't matter.\nTrap: Checking only one condition, e.g. picking D for its hours or B for weekday evenings."
         },
         "wrong": [
           null,
@@ -49,8 +49,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "方案A月费9,800日元。田中下个月才办入会手续，不是「今月中」，所以要付入会费3,000日元：9,800＋3,000＝12,800日元。他是上班族，没有学生优惠。",
-          "en": "Plan A is ¥9,800. Tanaka signs up next month, not 「今月中」, so the ¥3,000 joining fee applies: 9,800 + 3,000 = ¥12,800. He's an office worker, so no student discount."
+          "zh": "依据：「入会金は3,000円です。ただし、今月中に入会された方は、入会金が無料になります」；「最初の月は、入会金と一か月分の月会費をお支払いください」\n推理：①方案是A，月费9,800日元。②田中下个月才办手续，不是「今月中」，「ただし」的免费不适用，要付入会费3,000日元。③第一个月付入会费加一个月月费：9,800＋3,000＝12,800日元。他是公司职员，没有学生优惠。\n容易错：看到「入会金が無料」就只算月费，没注意他是下个月入会。",
+          "en": "Evidence: 「入会金は3,000円です。ただし、今月中に入会された方は、入会金が無料になります」; 「最初の月は、入会金と一か月分の月会費をお支払いください」\nReasoning: (1) The plan is A: 9,800 yen a month. (2) Tanaka signs up next month, not 「今月中」, so the free fee after 「ただし」 doesn't apply: he pays the 3,000-yen joining fee. (3) The first month is joining fee plus one month: 9,800 + 3,000 = 12,800 yen. He is an office worker, so no student discount.\nTrap: Seeing 「入会金が無料」 and counting only the monthly fee, missing that he joins next month."
         },
         "wrong": [
           {
@@ -91,8 +91,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "作为大件垃圾扔的是：成人自行车800＋椅子400×2＝800＋高120cm的书架（90cm以上不到180cm）1,200＝2,800日元。冰箱市里不收，微波炉最长边45cm不到50cm，扔不可燃垃圾。",
-          "en": "Oversized items: adult bicycle 800 + two chairs 400 × 2 = 800 + a 120 cm bookshelf (90–under 180 cm) 1,200 = ¥2,800. The fridge isn't collected by the city, and the microwave's longest side is 45 cm, so it's non-burnable garbage."
+          "zh": "依据：「いちばん長い辺が50cm以上のものです。いすと自転車は、大きさに関係なく粗大ごみです」；「テレビ・冷蔵庫・洗濯機・エアコンは、市では集めません」\n推理：先挑出算大件的：冰箱市里不收；微波炉最长边45厘米，不到50厘米，不算。剩下：成人自行车800日元；椅子400×2＝800日元；书架高120厘米，属于「高さ90cm以上180cm未満」，1,200日元。合计800＋800＋1,200＝2,800日元。\n容易错：椅子只算一把，或把书架的高度档次看错。",
+          "en": "Evidence: 「いちばん長い辺が50cm以上のものです。いすと自転車は、大きさに関係なく粗大ごみです」; 「テレビ・冷蔵庫・洗濯機・エアコンは、市では集めません」\nReasoning: First sort out what counts: the city doesn't take fridges, and the microwave's longest side is 45 cm, under 50, so it doesn't count. That leaves the adult bicycle, 800 yen; two chairs, 400 × 2 = 800 yen; the 120 cm bookcase, in 「高さ90cm以上180cm未満」, 1,200 yen. Total 800 + 800 + 1,200 = 2,800 yen.\nTrap: Counting only one chair, or reading the bookcase's height band wrong."
         },
         "wrong": [
           {
@@ -120,8 +120,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "冰箱属于市里不回收的四类家电，要找购买的商店或专业回收商。微波炉最长的一边是45cm，不到50cm，在不可燃垃圾日扔，不收费。",
-          "en": "A fridge is one of the four appliances the city won't collect, so it goes back to the shop or a specialist. The microwave's longest side is 45 cm — under 50 cm — so it goes out on non-burnable day, free."
+          "zh": "依据：「テレビ・冷蔵庫・洗濯機・エアコンは、市では集めません。買った店か、専門の業者に頼んでください」；「いちばん長い辺が50cm未満のものは、燃えないごみの日に出してください」\n推理：冰箱属于市里不回收的四种家电，要找购买的商店或专业回收商。微波炉宽45、高30、深35厘米，最长边45厘米，不到50厘米，不算大件，在不可燃垃圾日扔，不收费。\n容易错：以为大一点的电器都是大件垃圾；其实冰箱另有规定，微波炉按最长边判断。",
+          "en": "Evidence: 「テレビ・冷蔵庫・洗濯機・エアコンは、市では集めません。買った店か、専門の業者に頼んでください」; 「いちばん長い辺が50cm未満のものは、燃えないごみの日に出してください」\nReasoning: The fridge is one of the four appliances the city won't collect, so it goes to the shop it came from or a specialist firm. The microwave is 45 × 30 × 35 cm; its longest side, 45 cm, is under 50, so it isn't oversized waste and goes out on non-burnable day, free.\nTrap: Assuming any sizeable appliance is oversized waste; the fridge has its own rule, and the microwave is judged by its longest side."
         },
         "wrong": [
           {
@@ -162,8 +162,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "全家要一起参加，其中有4岁的孩子，而B·C只限6岁以上；D只在周五·周六。星期天全家都能参加的只有A（虽然没有制作体验）。",
-          "en": "The whole family goes together, including a 4-year-old, and B and C are for ages 6 and up; D runs only Fri/Sat. On a Sunday only A works for everyone (even without the hands-on part)."
+          "zh": "依据：「家族全員で同じコースに参加するつもりだ」；「B・Cコースは、安全のため、6歳以上の方のみ参加できます」；「金・土」\n推理：星期天有的是A、B、C，D只在「金・土」。全家要参加同一个课程，其中有4岁的孩子，而B、C只限6岁以上，所以只剩A。介绍里制作体验前面有「できれば」，只是希望，不是必须满足的条件。\n容易错：被「何かを作る体験もしたい」吸引选B或C，忽略「できれば」和年龄限制。",
+          "en": "Evidence: 「家族全員で同じコースに参加するつもりだ」; 「B・Cコースは、安全のため、6歳以上の方のみ参加できます」; 「金・土」\nReasoning: On Sundays A, B and C run; D is 「金・土」 only. The whole family must join one course, and the 4-year-old can't do B or C, which are 6 and over only, so A is left. The making activity comes after 「できれば」 in the intro: a wish, not a condition.\nTrap: Being drawn by 「何かを作る体験もしたい」 to B or C and overlooking 「できれば」 and the age limit."
         },
         "wrong": [
           null,
@@ -191,8 +191,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "星期天能做东西的是B和C，8岁可以参加。B：大人1,500＋小学生1,000＝2,500日元；C：大人1人加孩子1人3,500日元。所以B的2,500日元最便宜。",
-          "en": "On Sunday the hands-on courses are B and C, and an 8-year-old can join. B: adult 1,500 + primary pupil 1,000 = ¥2,500; C: one adult and one child = ¥3,500. So B at ¥2,500 is cheapest."
+          "zh": "依据：「大人1,500円　小学生1,000円」；「大人1人と子ども1人で3,500円（1人増えるごとに1,500円）」\n推理：星期天能做东西的是B（饼干）和C（蛋糕），8岁满6岁，两种都能参加。B：大人1,500＋小学生1,000＝2,500日元；C：大人1人加孩子1人＝3,500日元。比较后B更便宜。\n容易错：把8岁孩子按大人价算成3,000日元，或因为C叫「親子コース」就选C。",
+          "en": "Evidence: 「大人1,500円　小学生1,000円」; 「大人1人と子ども1人で3,500円（1人増えるごとに1,500円）」\nReasoning: On Sundays the making courses are B (cookies) and C (cake), and an 8-year-old is over 6, so both are open. B: adult 1,500 + primary pupil 1,000 = 2,500 yen; C: one adult and one child = 3,500 yen. B is cheaper.\nTrap: Charging the 8-year-old the adult price (3,000), or choosing C just because it is called 「親子コース」."
         },
         "wrong": [
           null,
@@ -233,8 +233,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "平日16点下课，晚上22点前要结束。A（17–22点）和E（17–21点）都可以，E要求N3以上，玛丽亚有N3。两者比时薪，E的1,300日元更高。",
-          "en": "Classes end at 16:00 on weekdays and she wants to finish by 22:00. A (17–22) and E (17–21) both fit, and E's N3 requirement is met. Of the two, E pays more at ¥1,300."
+          "zh": "依据：「夜は22時までに終わる仕事がいい」；「日本語能力試験N2以上」；「月〜金　17:00〜21:00（週2日以上）」\n推理：她平日16点下课。逐个排除：B只在周末；D是8:00〜17:00，和上课冲突；C到23点，超过22点，又要求N2，她只有N3。剩下A（1,150日元）和E（要求N3以上，她符合），E的1,300日元更高。\n容易错：直接选时薪最高的C，没检查N2条件和下班时间。",
+          "en": "Evidence: 「夜は22時までに終わる仕事がいい」; 「日本語能力試験N2以上」; 「月〜金　17:00〜21:00（週2日以上）」\nReasoning: Her weekday classes end at 16:00. Go through them: B is weekends only; D is 8:00–17:00, clashing with class; C runs to 23:00, past 22:00, and needs N2 while she has N3. That leaves A (1,150 yen) and E (N3 or above, which she has); E's 1,300 yen is higher.\nTrap: Picking C because it pays most, without checking the N2 condition and the finishing time."
         },
         "wrong": [
           {
@@ -262,8 +262,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "B每天11–20点是9小时，超过6小时要休息1小时，实际工作8小时，两天16小时。每周上限28小时，还剩12小时。E每天4小时（不到6小时，无休息），12÷4＝3天。",
-          "en": "B is 11:00–20:00, 9 hours, but over 6 hours means a 1-hour break: 8 working hours a day, 16 for the weekend. That leaves 12 of the 28-hour limit. E is 4 hours a day (no break), so 12 ÷ 4 = 3 days."
+          "zh": "依据：「法律で1週間に28時間までしか働けません」；「勤務時間が6時間を超える日は、1時間の休憩があります。休憩時間は勤務時間に入りません」\n推理：①B是11:00〜20:00，共9小时，超过6小时，减去1小时休息，实际8小时，周六日两天共16小时。②28−16＝12小时。③E是17:00〜21:00，4小时，不到6小时，没有休息。12÷4＝3天。\n容易错：忘了减休息时间，把B算成18小时，得出2天。",
+          "en": "Evidence: 「法律で1週間に28時間までしか働けません」; 「勤務時間が6時間を超える日は、1時間の休憩があります。休憩時間は勤務時間に入りません」\nReasoning: (1) B is 11:00–20:00, 9 hours; that is over 6, so minus a 1-hour break = 8 hours, 16 hours for Saturday and Sunday. (2) 28 − 16 = 12 hours left. (3) E is 17:00–21:00, 4 hours, under 6, no break. 12 ÷ 4 = 3 days.\nTrap: Forgetting to subtract the break, counting B as 18 hours and getting 2 days."
         },
         "wrong": [
           {

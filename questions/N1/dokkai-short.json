@@ -20,8 +20,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "通知写明两天上班的人要「出退勤の時刻を所定の用紙に記入のうえ、11日（月）中に所属長へご提出ください」。",
-          "en": "The notice says those working either day must write their times on the form and give it to their manager 「11日（月）中に」."
+          "zh": "依据：「両日に出勤される方は、出退勤の時刻を所定の用紙に記入のうえ、11日（月）中に所属長へご提出ください」\n推理：「両日」指9日和10日，9日上班的人正属此列。「所定の用紙に記入のうえ」＝写在指定表格上，「11日（月）中に」＝11日之内交给所属长。\n容易错：把「同日8時までに社内ポータルにてお知らせいたします」当成员工要做的事；那是信息系统部发通知的时间和方式。",
+          "en": "Evidence: 「両日に出勤される方は、出退勤の時刻を所定の用紙に記入のうえ、11日（月）中に所属長へご提出ください」.\nReasoning: 「両日」 means the 9th and 10th, so someone who worked on the 9th is covered. 「所定の用紙に記入のうえ」 = fill in the set form, 「11日（月）中に」 = hand it to the manager within the 11th.\nTrap: Reading 「同日8時までに社内ポータルにてお知らせいたします」 as a task for staff; it is when and where the IT department posts its notice."
         },
         "wrong": [
           null,
@@ -61,8 +61,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "末句：尴尬「沈黙そのもののせいではなく」，而是和对方的关系还没深到「その沈黙を受け止めるに足るほど」。",
-          "en": "The last sentence: the awkwardness is 「沈黙そのもののせいではなく」 but because the relationship isn't yet deep enough 「その沈黙を受け止めるに足るほど」."
+          "zh": "依据：「沈黙が気まずいのは沈黙そのもののせいではなく、相手との関係が、まだその沈黙を受け止めるに足るほど深まっていないからなのかもしれない」\n推理：「してみると」引出笔者从前面例子得出的结论。「AではなくB」先否定沉默本身，再给出真正原因：关系还没深到能「受け止める」沉默。前文夫妻、老友之间的「安心感」就是“沉默也能安心”的状态，正确项把这一点和“关系不够深”合在一起说。\n容易错：「ではなく」前面是被否定的说法；把沉默本身让人不安当成原因，正好选了笔者否定的那一半。",
+          "en": "Evidence: 「沈黙が気まずいのは沈黙そのもののせいではなく、相手との関係が、まだその沈黙を受け止めるに足るほど深まっていないからなのかもしれない」.\nReasoning: 「してみると」 introduces the writer's conclusion from the examples. 「AではなくB」 first rules out silence itself, then gives the real cause: the relationship is not yet deep enough to 「受け止める」 silence. The 「安心感」 of old couples and friends is that state of being at ease in silence, and the right option joins it to \"not deep enough yet\".\nTrap: What stands before 「ではなく」 is the rejected view; blaming silence itself picks exactly the half the writer denies."
         },
         "wrong": [
           {
@@ -102,8 +102,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "笔者说古人的烦恼「今の私たちと何ら変わらない」，意识到这一点就能把自己的烦恼「少し離れたところから眺められる」，这就是读古典的意义。",
-          "en": "Old people's worries are 「今の私たちと何ら変わらない」; realising this lets us see our own worries 「少し離れたところから」 — that is the point of reading classics."
+          "zh": "依据：「恋に悩み、出世を願い、老いを嘆く人々の姿は、時代こそ違え、今の私たちと何ら変わらない」；「人は自分の悩みを、千年来くり返されてきた人間の営みの一つとして、少し離れたところから眺められるようになる」\n推理：「つまるところそこにある」的「そこ」指前两句：发现古人「何ら変わらない」＝和古人一样，于是能「少し離れたところから眺められる」＝退一步看自己的烦恼。\n容易错：笔者用「そこに書かれた知識が役に立つからではない」否定了“知识有用”；「時代こそ違え」强调的是古今相同，不是差异。",
+          "en": "Evidence: 「恋に悩み、出世を願い、老いを嘆く人々の姿は、時代こそ違え、今の私たちと何ら変わらない」; 「人は自分の悩みを、千年来くり返されてきた人間の営みの一つとして、少し離れたところから眺められるようになる」.\nReasoning: The 「そこ」 in 「つまるところそこにある」 points to these two sentences: seeing that people then were 「何ら変わらない」 from us lets you view your worries 「少し離れたところから」, i.e. from one step back.\nTrap: The writer rules out useful knowledge with 「そこに書かれた知識が役に立つからではない」; 「時代こそ違え」 stresses sameness across the ages, not difference."
         },
         "wrong": [
           {
@@ -144,8 +144,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "森先生谢绝了12月的演讲（「今回はご辞退申し上げる」），但说「来年の春以降でしたら、日程の調整がつく」，希望再商量。",
-          "en": "Mori declines December (「今回はご辞退申し上げる」) but says 「来年の春以降でしたら、日程の調整がつく」 and invites them to ask again."
+          "zh": "依据：「今回はご辞退申し上げることといたしました」；「来年の春以降でしたら、日程の調整がつくかと存じます」\n推理：信的前半以学会准备为由谢绝12月的演讲；「なお」后补充另一层：春天以后能安排，希望「改めてご相談いただけますと幸いです」。拒绝加替代方案，两部分合起来才是信的主旨。\n容易错：只看到拒绝的理由，以为暂时什么都不接；「来年の春以降」的提议正好否定了这一点。",
+          "en": "Evidence: 「今回はご辞退申し上げることといたしました」; 「来年の春以降でしたら、日程の調整がつくかと存じます」.\nReasoning: The first half turns down the December talk because of conference preparation; after 「なお」 comes a second point: spring onward would work, and 「改めてご相談いただけますと幸いです」. The refusal plus the alternative together are the message.\nTrap: Seeing only the reason for refusing and concluding he won't take any requests for now; the offer of 「来年の春以降」 rules that out."
         },
         "wrong": [
           {
@@ -185,8 +185,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "末句：旬「単に食材がおいしい時期を指す言葉ではなく」，而是在生活中感受季节的「暦のようなもの」。",
-          "en": "The last sentence: 旬 is 「単に食材がおいしい時期を指す言葉ではなく」 but 「暦のようなもの」 for sensing the seasons."
+          "zh": "依据：「旬とは、単に食材がおいしい時期を指す言葉ではなく、暮らしの中で季節を感じ取るための、いわば暦のようなものだったのである」\n推理：「単にAではなく、B」：A（好吃的时期）只是不完整的说法，重点在B。「いわば暦のようなもの」＝像日历一样提示季节的东西，即选项的「目印のようなもの」，「季節を感じ取る」＝告诉人们季节的变化；前文「店先に並ぶ食材の移り変わりで季節を知った」也是这个意思。\n容易错：只说“最好吃的时期”的选项，正是原文用「単に」「ではなく」说不够的那一半。",
+          "en": "Evidence: 「旬とは、単に食材がおいしい時期を指す言葉ではなく、暮らしの中で季節を感じ取るための、いわば暦のようなものだったのである」.\nReasoning: 「単にAではなく、B」: A (the time food tastes best) is only part of it; B is the point. 「いわば暦のようなもの」 = a kind of calendar telling the season, i.e. the option's 「目印のようなもの」 (marker), 「季節を感じ取る」 = it tells people the season is turning; the earlier 「店先に並ぶ食材の移り変わりで季節を知った」 says the same.\nTrap: The option that says only \"the time it tastes best\" is the half the text calls incomplete with 「単に」 … 「ではなく」."
         },
         "wrong": [
           {
@@ -226,8 +226,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "笔者解释：少数人数值极大时，平均值「その少数の値に引っ張られ」，比多数人的实感高得多。",
-          "en": "When a few people have huge values, the mean is 「その少数の値に引っ張られ」 and ends up far above most people's reality."
+          "zh": "依据：「一部の人が極端に大きな値を持つデータでは、平均値はその少数の値に引っ張られ、多くの人の実感よりずっと高くなるからだ」\n推理：「落ち込むには及ばない」＝不必沮丧，紧接着以「からだ」结尾的句子就是理由：少数人的巨额储蓄把平均值往上拉，「多くの人の実感よりずっと高く」＝比实际情况偏高。\n容易错：把中位数和平均数的高低弄反：文中说中位数「平均値の半分にも満たない」，比平均值低得多。",
+          "en": "Evidence: 「一部の人が極端に大きな値を持つデータでは、平均値はその少数の値に引っ張られ、多くの人の実感よりずっと高くなるからだ」.\nReasoning: 「落ち込むには及ばない」 = no need to feel down, and the next sentence, ending in 「からだ」, gives the reason: a few very large savings pull the average up, so it comes out 「多くの人の実感よりずっと高く」, i.e. above the real picture.\nTrap: Getting median and mean the wrong way round: the median is 「平均値の半分にも満たない」, far below the average."
         },
         "wrong": [
           {
@@ -267,8 +267,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "末句：休息不是工作的妨碍，而是好工作「欠かせない工程の一つとして、あらかじめ予定に組み込んでおくべき」。",
-          "en": "The last sentence: rest is not an obstacle but 「欠かせない工程の一つとして、あらかじめ予定に組み込んでおくべき」."
+          "zh": "依据：「休息は仕事の妨げではない」；「良い仕事をするために欠かせない工程の一つとして、あらかじめ予定に組み込んでおくべきものなのだ」\n推理：开头「忙しい人ほど」那种想法是别人的，「しかし」后才是笔者观点，最后用「べきものなのだ」下结论。「工程の一つ」＝工作的一部分，「予定に組み込んでおく」＝事先排进日程。\n容易错：等正确度下降再休息的说法与「あらかじめ」相反；原文的休息是预先安排的，不是出问题后的补救。",
+          "en": "Evidence: 「休息は仕事の妨げではない」; 「良い仕事をするために欠かせない工程の一つとして、あらかじめ予定に組み込んでおくべきものなのだ」.\nReasoning: The 「忙しい人ほど」 view at the start belongs to others; the writer's own view comes after 「しかし」 and closes with 「べきものなのだ」. 「工程の一つ」 = part of the work, 「予定に組み込んでおく」 = put it in the schedule in advance.\nTrap: Resting once accuracy drops contradicts 「あらかじめ」; the text's rest is planned ahead, not a fix after things go wrong."
         },
         "wrong": [
           {
@@ -309,8 +309,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "「私」最后明白：母亲什么都没说，是因为「口を開けば引き止めてしまうと分かっていたから」。",
-          "en": "The narrator realises the mother kept quiet because 「口を開けば引き止めてしまうと分かっていたから」."
+          "zh": "依据：「母が何も言わなかったのは、口を開けば引き止めてしまうと分かっていたからなのだ」\n推理：「あのとき私は、それを母の物わかりのよさだと思っていた」是当初的理解；「だが」「ようやく気づいた」引出新的认识：母亲沉默是为了不把挽留的话说出口，即压住想挽留的心情。开头「泣くまいと決めていた」「その目は赤かった」也说明她心里舍不得。\n容易错：把「だが」前面「私」当初的想法（母亲通情达理、真心赞成）当成最后的领悟。",
+          "en": "Evidence: 「母が何も言わなかったのは、口を開けば引き止めてしまうと分かっていたからなのだ」.\nReasoning: 「あのとき私は、それを母の物わかりのよさだと思っていた」 is how he saw it then; 「だが」 and 「ようやく気づいた」 bring the new understanding: she kept silent so the words asking him to stay would not come out, holding that wish back. The opening 「泣くまいと決めていた」 and 「その目は赤かった」 show she did not want him to go.\nTrap: Taking his earlier view before 「だが」 (that she was understanding and fully agreed) as his final realisation."
         },
         "wrong": [
           {

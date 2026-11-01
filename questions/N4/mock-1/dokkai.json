@@ -16,8 +16,8 @@
         "options": ["思って いた", "思って いる", "思われた", "思わせた"],
         "answer": 0,
         "why": {
-          "zh": "担心的是“去之前”的事，「行く 前は 少し しんぱいでした」——当时一直那样以为，用「思って いた」。",
-          "en": "The worry was before going (「行く 前は 少し しんぱいでした」) — what the writer had thought then, so 「思って いた」."
+          "zh": "线索：前面「行く 前は 少し しんぱいでした」，说的是去之前的心情；后面「からです」说明担心的原因。\n规则：「〜と 思って いた」＝（那时）一直以为……，现在的想法可能已经变了。\n辨析：「思って いる」＝现在还这么想；作者去过以后觉得「とても 気持ちが よかった」，想法已经变了。",
+          "en": "Clue: Before it, 「行く 前は 少し しんぱいでした」 is how the writer felt before going; 「からです」 after the blank gives the reason for the worry.\nRule: 「〜と 思って いた」 = I had thought …, a view held then that may have changed.\nContrast: 「思って いる」 = I still think so; having been, the writer found it 「とても 気持ちが よかった」, so the view has changed."
         },
         "wrong": [
           null,
@@ -32,8 +32,8 @@
         "okj": ["洗わなければなりません", "洗ってはいけません", "洗わなくてもいいです", "洗うところです"],
         "answer": 0,
         "why": {
-          "zh": "「お湯は みんなで 使うので」：热水大家共用，所以进去前必须先洗身体，用义务「〜なければ なりません」。",
-          "en": "「お湯は みんなで 使うので」: everyone shares the water, so washing first is required — 「〜なければ なりません」."
+          "zh": "线索：前面「おふろの お湯は みんなで 使うので」给出理由：大家共用热水；空格前是「入る 前に 体を」。\n规则：「〜なければ なりません」＝必须……，表示规矩、义务；「あらう」→「あらわなければ」。\n辨析：「あらわなくても いいです」＝不洗也行，和「みんなで 使うので」这个理由不合；「あらっては いけません」是禁止洗，正好相反。",
+          "en": "Clue: 「おふろの お湯は みんなで 使うので」 gives the reason (everyone shares the water), and before the blank is 「入る 前に 体を」.\nRule: 「〜なければ なりません」 = must …, a rule or duty; 「あらう」 → 「あらわなければ」.\nContrast: 「あらわなくても いいです」 = you needn't wash, which doesn't fit the reason 「みんなで 使うので」; 「あらっては いけません」 forbids washing, the very opposite."
         },
         "wrong": [
           null,
@@ -48,8 +48,8 @@
         "okj": [null, null, null, "例えば"],
         "answer": 0,
         "why": {
-          "zh": "前面说浴池很舒服，后面再加一件好事（牛奶「も」好喝），用表示追加的「それに」。",
-          "en": "After \"the bath felt great\" comes another good thing (the milk was good 「も」) — adding a point is 「それに」."
+          "zh": "线索：前面「大きい おふろは とても 気持ちが よかったです」，后面「つめたい 牛乳も おいしかったです」，两件都是好事，而且有「も」。\n规则：「それに」放在句首＝而且、再加上，追加同方向的内容。\n辨析：「でも」＝转折，前后要相反；这里两件都是好事。",
+          "en": "Clue: Before it, 「大きい おふろは とても 気持ちが よかったです」; after it, 「つめたい 牛乳も おいしかったです」: two good things, with 「も」.\nRule: 「それに」 at the start of a sentence = and also, adding a point in the same direction.\nContrast: 「でも」 = but, which needs opposite halves; here both are good."
         },
         "wrong": [
           null,
@@ -63,8 +63,8 @@
         "options": ["教えて あげたいです", "教えて もらいたいです", "教えられたいです", "教えさせたいです"],
         "answer": 0,
         "why": {
-          "zh": "作者想为来玩的妈妈做一件好事——让她知道澡堂的好处，为别人做用「〜て あげたい」。",
-          "en": "The writer wants to do something for the visiting mother — show her how good a sentō is: doing something for someone is 「〜て あげたい」."
+          "zh": "线索：前面「母が 国から 遊びに 来るので」；作者的国家「せんとうが ない」，懂澡堂好处的是作者，所以是作者告诉妈妈。\n规则：「〜て あげたい」＝想为别人做；「教えて あげたい」＝想告诉、教给对方。\n辨析：「教えて もらいたい」＝想请别人教我，方向反了。",
+          "en": "Clue: 「母が 国から 遊びに 来るので」; the writer's country has no bathhouses (「せんとうが ない」), so it is the writer who knows how good they are and tells Mum.\nRule: 「〜て あげたい」 = want to do something for someone; 「教えて あげたい」 = want to show / tell them.\nContrast: 「教えて もらいたい」 = want someone to teach me, the wrong direction."
         },
         "wrong": [
           null,
@@ -97,12 +97,12 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "通知要求「工事の 前の 日までに 管理室に 連絡して ください」，施工是10日，前一天是9日。",
-          "en": "The notice says 「工事の 前の 日までに 管理室に 連絡して ください」; the work is on the 10th, so the day before is the 9th."
+          "zh": "依据：「この 日に 重い 荷物が とどく 人は、工事の 前の 日までに 管理室に 連絡して ください」。\n推理：施工日是「11月10日（水）」，「工事の 前の 日」＝9日，所以最晚9日要联系管理室。搬包裹由「管理室の 人」来做，住户不用自己搬。\n容易错：把施工开始的「午前9時」当成联系的期限。",
+          "en": "Evidence: 「この 日に 重い 荷物が とどく 人は、工事の 前の 日までに 管理室に 連絡して ください」.\nReasoning: The work is on 「11月10日（水）」, so 「工事の 前の 日」 = the 9th: contact the office by the 9th. 「管理室の 人」 carry the parcel up; residents don't carry it themselves.\nTrap: Taking the work's start time, 「午前9時」, as the deadline for contacting the office."
         },
         "wrong": [
           null,
-          { "zh": "要在施工“前一天”之前联系，当天早上9点前就晚了。", "en": "Contact must be made by the day before; 9 am on the day itself is too late." },
+          { "zh": "最晚要在施工前一天（9日）联系，当天早上9点前就晚了。", "en": "Contact must be made by the day before; 9 am on the day itself is too late." },
           { "zh": "通知说包裹由「管理室の 人」搬到房间，不用自己搬。", "en": "The notice says office staff (「管理室の 人」) carry it up — residents don't." },
           { "zh": "通知没有让住户去管理室取包裹，是管理员把包裹送到房间。", "en": "Residents aren't asked to collect anything; staff bring parcels to the flat." }
         ]
@@ -132,8 +132,8 @@
         "okj": ["本を返す日を少し遅くしたい。", null, null, "リンさんにもう一冊本を貸してほしい。"],
         "answer": 0,
         "why": {
-          "zh": "原本打算星期六还，但妹妹也想看，所以问「もう 少し 借りても いいですか」，改到下周三之前还——就是想晚一点还。",
-          "en": "She planned to return it Saturday, but her sister wants to read it, so she asks 「もう 少し 借りても いいですか」 and offers next Wednesday — she wants to return it later."
+          "zh": "依据：「土曜日に 返す つもりでしたが、妹も 読みたいと 言って いるので、もう 少し 借りても いいですか」。\n推理：「〜つもりでしたが」表示原来的打算改了；「もう 少し 借りても いいですか」是请求多借几天，改到「来週の 水曜日までに」还。所以重点是晚一点还书，开头的感谢只是寒暄。\n容易错：看到「土曜日に 返す」就选星期六还，没注意「でしたが」的转折。",
+          "en": "Evidence: 「土曜日に 返す つもりでしたが、妹も 読みたいと 言って いるので、もう 少し 借りても いいですか」.\nReasoning: 「〜つもりでしたが」 means the original plan has changed; 「もう 少し 借りても いいですか」 asks to keep the book longer, returning it 「来週の 水曜日までに」. So the point is a later return; the thanks at the start are just the opening.\nTrap: Seeing 「土曜日に 返す」 and choosing Saturday, missing the turn in 「でしたが」."
         },
         "wrong": [
           null,
@@ -167,8 +167,8 @@
         "okj": ["今は、雨が降らない日は駅まで歩いている。", null, null, "歩くようになってから、夜あまり眠れない。"],
         "answer": 0,
         "why": {
-          "zh": "从上个月起「歩いて 行く ように して います」，只有「雨の 日だけは 今も バスに 乗って います」，所以不下雨的日子走路去车站。",
-          "en": "Since last month he's been walking, and 「雨の 日だけは 今も バスに 乗って います」 — so on days without rain he walks."
+          "zh": "依据：「先月から 歩いて 行く ように して います」；「雨の 日だけは 今も バスに 乗って います」。\n推理：「〜ように して います」表示现在坚持的习惯：走路去车站。「だけ」说明例外只有下雨天，所以不下雨的日子都走路。\n容易错：“走路比坐公交早到十五分钟”用了原文的「十五分」，但意思弄反了：要早15分钟出门，是因为走路更慢。",
+          "en": "Evidence: 「先月から 歩いて 行く ように して います」; 「雨の 日だけは 今も バスに 乗って います」.\nReasoning: 「〜ように して います」 is a habit he keeps now: walking to the station. 「だけ」 makes rainy days the only exception, so on days without rain he walks.\nTrap: \"Walking gets there fifteen minutes sooner\" reuses the text's 「十五分」 but backwards: he leaves 15 minutes earlier because walking is slower."
         },
         "wrong": [
           null,
@@ -203,8 +203,8 @@
         "okj": ["お客さんに丁寧な言葉を使わなかったから", "お客さんにトイレの場所を間違えて教えたから", null, "休み時間に言葉の練習をしなかったから"],
         "answer": 0,
         "why": {
-          "zh": "韩同学回答「あちらに あります」，店长说对客人要说更礼貌的「あちらに ございます」——问题在于没有用礼貌用语。",
-          "en": "Han said 「あちらに あります」 and the manager said to use the politer 「あちらに ございます」 with customers — the problem was not using polite language."
+          "zh": "依据：「お客さんには 『あちらに ございます』と 言って ください」。\n推理：韩同学说的「あちらに あります」意思没错，店长要他改成更礼貌的「ございます」。前文也说对客人要用「ていねいな ことば」。所以被提醒是因为没用礼貌用语，不是地方说错了。\n容易错：以为被提醒是因为告诉错了厕所的位置。",
+          "en": "Evidence: 「お客さんには 『あちらに ございます』と 言って ください」.\nReasoning: Han's 「あちらに あります」 was correct in meaning; the manager wanted the politer 「ございます」. The text has already said customers need 「ていねいな ことば」. So the problem was not using polite language, not giving the wrong place.\nTrap: Thinking he was corrected for pointing to the wrong place."
         },
         "wrong": [
           null,
@@ -225,8 +225,8 @@
         "okj": ["店で使う言葉をノートに書いて、休み時間に練習した。", "学校で店の丁寧な言葉を習った。", null, null],
         "answer": 0,
         "why": {
-          "zh": "被提醒后，「店で よく 使う ことばを ノートに 書いて、休み時間に 練習する ように しました」，大约三个月后就不怕和客人说话了。",
-          "en": "After the correction he wrote shop phrases in a notebook and practised in his breaks; about three months later he was no longer scared of customers."
+          "zh": "依据：「それで、わたしは 店で よく 使う ことばを ノートに 書いて、休み時間に 練習する ように しました」；「三か月ぐらい たつと、お客さんと 話すのが こわく なくなりました」。\n推理：顺序是：被提醒 →「それで」开始记本子、休息时练习 → 大约三个月后不怕了。所以不怕之前做的是记本子练习。和店长练电话是「今は」的事，在那之后。\n容易错：把时间顺序弄反，选了现在才做的电话练习。",
+          "en": "Evidence: 「それで、わたしは 店で よく 使う ことばを ノートに 書いて、休み時間に 練習する ように しました」; 「三か月ぐらい たつと、お客さんと 話すのが こわく なくなりました」.\nReasoning: The order: corrected → 「それで」 he starts the notebook and practises on breaks → about three months later he is no longer afraid. So the notebook practice came before. Phone practice with the manager is 「今は」, after that.\nTrap: Reversing the order and choosing the phone practice he does now."
         },
         "wrong": [
           null,
@@ -247,8 +247,8 @@
         "okj": [null, null, null, "今もお客さんと話すのが怖い。"],
         "answer": 0,
         "why": {
-          "zh": "最后一段：「来月からは 一人で 電話に 出る ことに なって いる」，所以现在每天和店长练习。",
-          "en": "Last paragraph: 「来月からは 一人で 電話に 出る ことに なって いる」, which is why he practises with the manager now."
+          "zh": "依据：「来月からは 一人で 電話に 出る ことに なって いるので、今は 毎日 店長と 電話の 練習を して います」。\n推理：「〜ことに なって いる」表示已经定下来的安排：下个月起一个人接电话。和店长练习是「今は 毎日」，已经在做；电话现在还「まだ よく 聞き取れません」。\n容易错：把「来月から」和「今は」两件事的时间对调。",
+          "en": "Evidence: 「来月からは 一人で 電話に 出る ことに なって いるので、今は 毎日 店長と 電話の 練習を して います」.\nReasoning: 「〜ことに なって いる」 is an arrangement already fixed: from next month he answers the phone alone. Practice with the manager is 「今は 毎日」, already happening, and phone calls are still 「まだ よく 聞き取れません」.\nTrap: Swapping the times of 「来月から」 and 「今は」."
         },
         "wrong": [
           null,
@@ -277,8 +277,8 @@
         "options": ["8,000円", "5,000円", "7,000円", "10,000円"],
         "answer": 0,
         "why": {
-          "zh": "日本料理在周二上午，玛丽亚要上班，只能上周四晚上的面包制作：5,000日元＋材料费500日元×6次＝8,000日元。她不是会员，没有优惠。",
-          "en": "Japanese cooking is Tuesday morning, when Maria works, so it's Thursday evening bread making: ¥5,000 + ¥500 × 6 sessions = ¥8,000. She isn't a member, so no discount."
+          "zh": "依据：「18:30〜20:30」；「料理の 教室（日本料理・パン作り）は、上の お金の ほかに、毎回 材料費が 500円 かかります」。\n推理：玛丽亚平日9点到18点上班。料理课里日本料理是周二上午，去不了；面包制作是周四18:30开始，可以。费用5,000日元，加材料费500日元×6次＝3,000日元，合计8,000日元。她不是会员，不减1,000日元。\n容易错：忘了「毎回」的材料费，只算课程费5,000日元。",
+          "en": "Evidence: 「18:30〜20:30」; 「料理の 教室（日本料理・パン作り）は、上の お金の ほかに、毎回 材料費が 500円 かかります」.\nReasoning: Maria works 9 to 6 on weekdays. Of the cooking classes, Japanese cooking is Tuesday morning, so no; bread-making starts Thursday at 18:30, so yes. 5,000 yen plus 500 yen × 6 sessions = 3,000 for ingredients makes 8,000 yen. She is not a member, so no 1,000 yen off.\nTrap: Forgetting the 「毎回」 ingredient fee and paying only the 5,000 yen course fee."
         },
         "wrong": [
           null,
@@ -293,8 +293,8 @@
         "options": ["書道に 2,000円", "書道に 3,000円", "ヨガに 3,000円", "生け花に 6,000円"],
         "answer": 0,
         "why": {
-          "zh": "周末的课只有周六的书法（3,000日元）和周日的插花（7,000日元），书法最便宜；林是会员，便宜1,000日元，所以是2,000日元。",
-          "en": "The weekend classes are Saturday calligraphy (¥3,000) and Sunday flower arranging (¥7,000); calligraphy is cheaper, and as a member Hayashi pays ¥1,000 less: ¥2,000."
+          "zh": "依据：「センターの 会員は、上の お金が 1,000円 安く なります」；「3,000円」。\n推理：周末的课只有周六的书法（3,000日元）和周日的插花（7,000日元），书法便宜。林是会员，减1,000日元：3,000−1,000＝2,000日元。书法不是料理课，没有材料费。\n容易错：忘了会员优惠，选原价3,000日元。",
+          "en": "Evidence: 「センターの 会員は、上の お金が 1,000円 安く なります」; 「3,000円」.\nReasoning: The only weekend classes are calligraphy on Saturday (3,000 yen) and flower arranging on Sunday (7,000 yen); calligraphy is cheaper. Lin is a member, so 1,000 yen off: 3,000 − 1,000 = 2,000 yen. Calligraphy isn't a cooking class, so there is no ingredient fee.\nTrap: Forgetting the member discount and choosing the full 3,000 yen."
         },
         "wrong": [
           null,

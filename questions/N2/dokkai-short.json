@@ -20,8 +20,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "核心是「300個を…20日に、残りの200個を27日に…よろしいでしょうか」：询问能否分两次交货。",
-          "en": "The key line is 「300個を…20日に、残りの200個を27日に…よろしいでしょうか」 — asking if delivery can be split in two."
+          "zh": "依据：「300個を予定どおり20日に、残りの200個を27日にお届けする形でもよろしいでしょうか」。\n推理：前面先说明「期日までに全数をご用意することが難しい」，再用「〜でもよろしいでしょうか」征求同意：20日送300个、27日送剩下的200个，就是“分两次交货可以吗”。\n容易错：「別の方法も検討いたします」是北山工业自己会考虑别的办法，要对方做的只是「今週中にご返信」。",
+          "en": "Evidence: 「300個を予定どおり20日に、残りの200個を27日にお届けする形でもよろしいでしょうか」.\nReasoning: After explaining 「期日までに全数をご用意することが難しい」, the writer asks for consent with 「〜でもよろしいでしょうか」: 300 on the 20th, the remaining 200 on the 27th, i.e. may we deliver in two lots?\nTrap: 「別の方法も検討いたします」 is the supplier offering to consider other options itself; the customer is only asked to reply 「今週中に」."
         },
         "wrong": [
           {
@@ -62,8 +62,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "「予定表の日時にご都合の悪い方は、11月5日までに管理事務所へご連絡ください」。",
-          "en": "「予定表の日時にご都合の悪い方は、11月5日までに管理事務所へご連絡ください」 — contact the office by 5 November."
+          "zh": "依据：「予定表の日時にご都合の悪い方は、11月5日までに管理事務所へご連絡ください」。\n推理：作业要进屋做，「ご都合の悪い方」就是那个时间不在家的人；通知给他们的办法只有一条：5日前联系管理处（15日是备用日，由管理处安排）。\n容易错：「水を流さない」是所有住户在作业前后都要遵守的，不是给不在家的人的办法。",
+          "en": "Evidence: 「予定表の日時にご都合の悪い方は、11月5日までに管理事務所へご連絡ください」.\nReasoning: Workers enter the flat, so 「ご都合の悪い方」 are those who can't be home then; the notice gives them one step: contact the office by the 5th (the 15th is a spare day the office arranges).\nTrap: Not running water (「水を流さない」) applies to every resident around the work, not to those who are out."
         },
         "wrong": [
           {
@@ -103,8 +103,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "「子どもに限った話ではない」把话题扩展到职场，结论是「結果が出なかったときにも、その過程を認める必要がある」。",
-          "en": "「子どもに限った話ではない」 extends the point to the workplace, ending with 「結果が出なかったときにも、その過程を認める必要がある」."
+          "zh": "依据：「これは子どもに限った話ではないだろう」；「新しいことに挑戦する人を増やしたいなら、結果が出なかったときにも、その過程を認める必要があるのではないか」。\n推理：前半是听来的育儿说法，「子どもに限った話ではない」把它推广到职场；结尾「〜必要があるのではないか」是作者的主张：没出结果时也要认可过程，即选项的“认可努力的方式”。\n容易错：“表扬结果”正好和「取り組み方をほめる」相反。",
+          "en": "Evidence: 「これは子どもに限った話ではないだろう」; 「新しいことに挑戦する人を増やしたいなら、結果が出なかったときにも、その過程を認める必要があるのではないか」.\nReasoning: The first half is advice about children the author has heard; 「子どもに限った話ではない」 extends it to the workplace, and the closing 「〜必要があるのではないか」 is the author's own claim: recognise the process even without results, i.e. the option.\nTrap: Praising results is the opposite of 「取り組み方をほめる」."
         },
         "wrong": [
           null,
@@ -145,8 +145,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "「すでに参加を申し込まれた方も…改めて社内システムからご登録ください」，截止日期是11日。",
-          "en": "「すでに参加を申し込まれた方も…改めて社内システムからご登録ください」, with a deadline of the 11th."
+          "zh": "依据：「すでに参加を申し込まれた方も、お手数ですが、15日に参加できるかどうかを、改めて社内システムからご登録ください。登録の締め切りは11月11日（月）です」。\n推理：「〜方も」说明已报名的人也要重新登记；方式是「社内システム」，内容是15日能否参加（＝选项「可否」），期限11日。\n容易错：资料14日前才寄出，比登记截止的11日晚，不能等收到资料再登记。",
+          "en": "Evidence: 「すでに参加を申し込まれた方も、お手数ですが、15日に参加できるかどうかを、改めて社内システムからご登録ください。登録の締め切りは11月11日（月）です」.\nReasoning: 「〜方も」 means those already signed up must register again too: via 「社内システム」, saying whether they can attend on the 15th (the option's 「可否」), by the 11th.\nTrap: The materials arrive by the 14th, after the 11th deadline, so you can't wait for them."
         },
         "wrong": [
           {
@@ -186,8 +186,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "作者被只倾听的朋友帮到了，结论是「必要なのは、答えよりも…時間なのかもしれない」。",
-          "en": "A friend who only listened helped him, leading to 「必要なのは、答えよりも…時間なのかもしれない」."
+          "zh": "依据：「彼女は何も助言せず、ただうなずきながら聞いてくれた」；「悩んでいる人に必要なのは、答えよりも、自分の考えをまとめるための時間なのかもしれない」。\n推理：作者以前急着给建议、对方常常沉默；后来自己被只倾听的朋友帮到了。结论「答えよりも、自分の考えをまとめるための時間」就是“比起给建议，把对方的话听完更好”。\n容易错：“先给出解决办法”是作者过去的做法，正是文章要否定的。",
+          "en": "Evidence: 「彼女は何も助言せず、ただうなずきながら聞いてくれた」; 「悩んでいる人に必要なのは、答えよりも、自分の考えをまとめるための時間なのかもしれない」.\nReasoning: The author used to jump in with advice and often silenced friends, then was helped by a friend who only listened. The conclusion 「答えよりも、自分の考えをまとめるための時間」 means listening to the end beats advising.\nTrap: \"Offer a solution first\" is the author's old habit, which the text rejects."
         },
         "wrong": [
           {
@@ -228,8 +228,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "「案内に従って、11月28日（金）までに新しいパスワードを設定してください」，否则12月起无法记录出勤。",
-          "en": "「案内に従って、11月28日（金）までに新しいパスワードを設定してください」 — otherwise attendance can't be recorded from December."
+          "zh": "依据：「11月25日以降に各自のメールアドレスに届く案内に従って、11月28日（金）までに新しいパスワードを設定してください」。\n推理：要做的是：看邮件里的说明，在28日前设好新密码。选项「新しいパスワードを決める」＝「設定する」。\n容易错：说明是「25日以降」才寄到，不是“25日之前”；旧密码「使えません」，不能沿用。",
+          "en": "Evidence: 「11月25日以降に各自のメールアドレスに届く案内に従って、11月28日（金）までに新しいパスワードを設定してください」.\nReasoning: The task: follow the emailed instructions and set a new password by the 28th. The option's 「新しいパスワードを決める」 = 「設定する」.\nTrap: The instructions arrive 「25日以降」 (from the 25th), not before it; the old password 「使えません」."
         },
         "wrong": [
           {
@@ -269,8 +269,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "最后一句是主张：「苦手だからと避けるのではなく、用件に応じて手段を選べるようになることが大切」。",
-          "en": "The last sentence is the claim: 「苦手だからと避けるのではなく、用件に応じて手段を選べるようになることが大切」."
+          "zh": "依据：「苦手だからと避けるのではなく、用件に応じて手段を選べるようになることが大切なのではないだろうか」。\n推理：前面「しかし」之后列出电话的优点，最后一句「AではなくB」给出主张：不要因为不擅长就躲，要能按事情选择手段。「用件に応じて」＝选项「用件によって」。\n容易错：电话的优点只是论据，作者没说电话比邮件好，也没说细节都要打电话。",
+          "en": "Evidence: 「苦手だからと避けるのではなく、用件に応じて手段を選べるようになることが大切なのではないだろうか」.\nReasoning: After 「しかし」 the author lists the phone's strengths; the last sentence, 「AではなくB」, is the claim: don't avoid it for being hard; choose the tool to suit the task. 「用件に応じて」 = the option's 「用件によって」.\nTrap: The phone's merits are supporting points; the author never says it beats email or must be used for every detail."
         },
         "wrong": [
           null,
@@ -311,8 +311,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "「話す内容を簡単にまとめたメモを、研修の前日の正午までに…お送りください」。",
-          "en": "「話す内容を簡単にまとめたメモを、研修の前日の正午までに…お送りください」 — a memo by noon the day before."
+          "zh": "依据：「話す内容を簡単にまとめたメモを、研修の前日の正午までに私宛てにメールでお送りください」。\n推理：「私」是人事部的田村，所以是寄给人事部；「正午」＝选项的「昼」，「前日」也对上了。\n容易错：「発表用の資料は必要ありません」，要的只是简单的备忘录；备忘录「評価には使いません」。",
+          "en": "Evidence: 「話す内容を簡単にまとめたメモを、研修の前日の正午までに私宛てにメールでお送りください」.\nReasoning: 「私」 is Tamura of HR, so it goes to HR; 「正午」 = the option's 「昼」, and 「前日」 matches.\nTrap: 「発表用の資料は必要ありません」: only a short memo is wanted, and it 「評価には使いません」."
         },
         "wrong": [
           {
@@ -353,8 +353,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "DVD「ポストには入れず、開館後にカウンターへ」；期限在闭馆期间的资料「自動的に2月16日まで延長」，所以开馆后到16日前去柜台还。",
-          "en": "DVDs go 「ポストには入れず、開館後にカウンターへ」, and items due during the closure are 「自動的に2月16日まで延長」 — so return it at the counter after reopening, by the 16th."
+          "zh": "依据：「CDやDVDは破損するおそれがあるため、ポストには入れず、開館後にカウンターへお返しください」；「休館中に返却期限を迎える資料は、期限を自動的に2月16日まで延長いたします」。\n推理：DVD不能投还书箱，只能开馆后去柜台还；期限在闭馆期间的资料会自动延到16日。两句合起来：开馆后、16日前，到柜台还。\n容易错：延期是「自動的に」的，不用在网上申请。",
+          "en": "Evidence: 「CDやDVDは破損するおそれがあるため、ポストには入れず、開館後にカウンターへお返しください」; 「休館中に返却期限を迎える資料は、期限を自動的に2月16日まで延長いたします」.\nReasoning: DVDs can't go in the box, only to the counter after reopening, and items due during the closure are extended to the 16th. Together: return it at the counter after reopening, by the 16th.\nTrap: The extension is 「自動的に」; no online request is needed."
         },
         "wrong": [
           {
@@ -394,8 +394,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "最后一句：犹豫留不留旧信的时间，「自分が何を大事にして生きてきたのかを確かめる時間」。",
-          "en": "The last sentence: agonising over an old letter was 「自分が何を大事にして生きてきたのかを確かめる時間」."
+          "zh": "依据：「古い手紙一通を残すか捨てるか迷う時間は、自分が何を大事にして生きてきたのかを確かめる時間でもあった」。\n推理：前一句先说「何を残すかを決めること」最难也最重要，最后一句说明原因：犹豫留什么的过程，让人确认自己一直珍视什么，就是选项。\n容易错：“减少东西最难最重要”被「物を減らすこと自体よりも」否定了；作者也没说有回忆的东西都该留下。",
+          "en": "Evidence: 「古い手紙一通を残すか捨てるか迷う時間は、自分が何を大事にして生きてきたのかを確かめる時間でもあった」.\nReasoning: The sentence before says deciding 「何を残すか」 is the hard and important part; the last one explains why: weighing what to keep shows you what you have valued. That is the option.\nTrap: \"Reducing things is hardest\" is denied by 「物を減らすこと自体よりも」; nor does the author say keepsakes must all stay."
         },
         "wrong": [
           {
@@ -436,8 +436,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "要「会社の指定する病院で各自受診」，费用「いったんご自身で支払って」，再把「領収書を総務部に提出」。",
-          "en": "Have it done 「会社の指定する病院で」, pay 「いったんご自身で」, then hand 「領収書を総務部に」."
+          "zh": "依据：「当日都合がつかない方は、11月末までに、会社の指定する病院で各自受診してください」；「費用はいったんご自身で支払っていただき、領収書を総務部に提出していただければ」。\n推理：两天都不行的人：在指定医院自己去检查→先自付→交收据→「後日全額をお返しします」。选项的顺序与此一致。\n容易错：不是“随便哪家医院”，「指定以外の病院」的费用不退。",
+          "en": "Evidence: 「当日都合がつかない方は、11月末までに、会社の指定する病院で各自受診してください」; 「費用はいったんご自身で支払っていただき、領収書を総務部に提出していただければ」.\nReasoning: If neither day works: get checked at a designated hospital, pay yourself first, hand in the receipt, and 「後日全額をお返しします」. The option follows that order.\nTrap: Not any hospital you like: costs at 「指定以外の病院」 aren't refunded."
         },
         "wrong": [
           {
@@ -477,8 +477,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "最后一句是结论：「隠していたものが、人とつながるきっかけになった」，隐藏的东西就是家乡话。",
-          "en": "The closing line sums it up: 「隠していたものが、人とつながるきっかけになった」 — what he hid was his dialect."
+          "zh": "依据：「今では、初対面の人と話すとき、出身地の話題から会話が広がることも多い。隠していたものが、人とつながるきっかけになったのである」。\n推理：「隠していたもの」指作者一直不敢说的家乡话；「人とつながるきっかけ」＝选项“和人亲近起来的助力”。结尾「〜のである」是全文的结论。\n容易错：原文是「会話が広がることも多い」（常常），不是“一定”；作者也没号召大家多说方言。",
+          "en": "Evidence: 「今では、初対面の人と話すとき、出身地の話題から会話が広がることも多い。隠していたものが、人とつながるきっかけになったのである」.\nReasoning: 「隠していたもの」 is the home dialect the author had hidden; 「人とつながるきっかけ」 = the option's \"a help in getting close to people\". The closing 「〜のである」 is the conclusion.\nTrap: The text says conversations 「広がることも多い」 (often), not always; and it doesn't urge anyone to speak more dialect."
         },
         "wrong": [
           {
@@ -519,8 +519,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "「3月31日までに1年分の会費をまとめて」付，就能「現在の会費のまま」用一年；付款「受付でのみ」。",
-          "en": "Pay 「1年分の会費をまとめて」 by 31 March and you keep 「現在の会費のまま」 for a year; payment is 「受付でのみ」."
+          "zh": "依据：「3月31日までに1年分の会費をまとめてお支払いいただいた方は、1年間、現在の会費のままご利用いただけます。お支払いは受付でのみ承ります」。\n推理：维持原价的条件有两个：3月31日前一次付清一年会费；付款只能在前台（「のみ」）。选项两点都满足。\n容易错：停会制度是给暂时不能来的人保留资格的，和维持原价无关。",
+          "en": "Evidence: 「3月31日までに1年分の会費をまとめてお支払いいただいた方は、1年間、現在の会費のままご利用いただけます。お支払いは受付でのみ承ります」.\nReasoning: Two conditions keep the old fee: pay a full year by 31 March, and pay at reception only (「のみ」). The option meets both.\nTrap: The suspension plan keeps membership for people who can't come; it has nothing to do with the old price."
         },
         "wrong": [
           null,
@@ -560,8 +560,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "司机没察觉进入上坡，「知らないうちに速度が落ちる」，这种「小さな減速が後ろへ伝わるうちに大きくなり」，最后车停下。",
-          "en": "Drivers slow 「知らないうちに」, and 「小さな減速が後ろへ伝わるうちに大きくなり」 until cars stop."
+          "zh": "依据：「こうして小さな減速が後ろへ伝わるうちに大きくなり、やがて車が止まってしまうのである」。\n推理：「こうして」总结前面的连锁：缓坡上不知不觉减速→后车踩刹车→再后面的车踩得更重。小减速往后传、越传越大，就是渋滞的原因。\n容易错：坡是「非常にゆるやか」的，不是陡坡；司机是没发现上坡而减速，不是加速。",
+          "en": "Evidence: 「こうして小さな減速が後ろへ伝わるうちに大きくなり、やがて車が止まってしまうのである」.\nReasoning: 「こうして」 sums up the chain: unnoticed slowing on a gentle rise, the car behind brakes, the next brakes harder. A small slowdown grows as it passes back, and that causes the jam.\nTrap: The slope is 「非常にゆるやか」, not steep; drivers slow down without noticing the climb, they don't speed up."
         },
         "wrong": [
           null,

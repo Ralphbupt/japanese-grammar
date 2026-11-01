@@ -20,8 +20,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "用木头的是A、C、E。A周六也要研修，周末回不了家；C没有支援金。E周一至周五、30岁以下（他28岁）、有每月10万日元，全部符合。把住址迁入县内并不妨碍周末回县外的家，所以和他的条件不冲突。",
-          "en": "Wood: A, C, E. A runs on Saturdays, so he can't go home; C pays no allowance. E is Mon–Fri, 30 or under (he's 28) and pays ¥100,000 — it fits. Moving his registered address into the prefecture doesn't stop him going home at weekends, so it doesn't conflict with what he wants."
+          "zh": "依据：「木地挽き（椀などの素地づくり）」；「30歳以下」；「生活支援金は、研修期間中、県内に住所を移して研修を受ける方に支給します」\n推理：①用木头的有A木工家具、C木彫、E「木地挽き」。②周末要回家：A是周一至周六，排除。③要支援金：C是「なし」，排除。④E为周一至周五，28岁符合「30歳以下」，每月10万日元。领支援金只要求把住址迁入县内，周末仍可回县外的家。\n容易错：只看“木头”和“有支援金”选A，漏看A周六也要研修。",
+          "en": "Evidence: 「木地挽き（椀などの素地づくり）」; 「30歳以下」; 「生活支援金は、研修期間中、県内に住所を移して研修を受ける方に支給します」.\nReasoning: (1) Wood work: A (furniture), C (carving), E (turning). (2) Weekends at home: A runs Monday to Saturday, out. (3) Needs the allowance: C has 「なし」, out. (4) E runs Monday to Friday, he is 28 so 「30歳以下」 fits, and pays 100,000 yen a month. The allowance only requires moving his registered address into the prefecture; he can still go home on weekends.\nTrap: Picking A for wood plus allowance and missing that A also trains on Saturdays."
         },
         "wrong": [
           {
@@ -50,8 +50,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "他要领生活支援金，而注意事项写明领取者结业后须在县内制作3年以上，否则「返還を求めることがあります」。",
-          "en": "He'll take the allowance, and recipients must work in the prefecture 3+ years afterwards or 「返還を求めることがあります」."
+          "zh": "依据：「生活支援金を受けた方は、研修修了後、県内で3年以上製作に従事することが条件となります」；「これを満たさない場合は、支援金の返還を求めることがあります」\n推理：佐藤要领支援金，这条注意事项就适用于他：结业后在县内制作不满3年，就可能被要求退还。「求めることがあります」是“有可能”，正确项用「うる」对应。\n容易错：把「県内に住所を移して」读成周末也得待在县内；条件只是迁住址。见学是「受け付けています」，不是必须。",
+          "en": "Evidence: 「生活支援金を受けた方は、研修修了後、県内で3年以上製作に従事することが条件となります」; 「これを満たさない場合は、支援金の返還を求めることがあります」.\nReasoning: Sato wants the allowance, so this note applies to him: if he does not make work in the prefecture for 3 years after finishing, he may have to pay it back. 「求めることがあります」 means \"may\", which the right option renders with 「うる」.\nTrap: Reading 「県内に住所を移して」 as having to stay in the prefecture on weekends; the condition is only the address. The visit is 「受け付けています」, offered, not required."
         },
         "wrong": [
           {
@@ -92,8 +92,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "持年票的3人不计入团体，剩17人不足20人，不打折。学生16人×1,000＝16,000日元，持年票3人×500＝1,500日元，教授1,400日元，合计18,900日元。",
-          "en": "The 3 pass holders don't count, leaving 17 — no group discount. 16 students × ¥1,000 + 3 × ¥500 + professor ¥1,400 = ¥18,900."
+          "zh": "依据：「ただし、団体の人数には、年間パスポートで入館する方および無料の方は含みません」；「特別展は各区分の料金の半額でご覧いただけます」\n推理：①20人中3人持年票，不计入团体人数，剩17人，不满20人，不打八折。②不持年票的学生16人×1,000＝16,000日元。③持年票3人按学生价半价：3×500＝1,500日元。④教授52岁按一般价1,400日元。合计18,900日元。\n容易错：看到一共20人就打八折，漏看「ただし」后不计入团体人数的规定。",
+          "en": "Evidence: 「ただし、団体の人数には、年間パスポートで入館する方および無料の方は含みません」; 「特別展は各区分の料金の半額でご覧いただけます」.\nReasoning: (1) 3 of the 20 have annual passes and don't count toward the group, leaving 17: under 20, so no 20% discount. (2) 16 students without passes × 1,000 = 16,000 yen. (3) 3 pass holders at half the student rate: 3 × 500 = 1,500 yen. (4) The professor, 52, pays the general 1,400 yen. Total 18,900 yen.\nTrap: Seeing 20 people and applying the group discount, missing the rule after 「ただし」 about who counts."
         },
         "wrong": [
           {
@@ -122,8 +122,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "12月在特展期间内。17点下课，40分钟后17:40到馆，看1个半小时要到19:10以后。平日只有周五开到20点（入馆至19:30），所以是周五。",
-          "en": "December falls within the special exhibition. Class ends at 17:00, they arrive at 17:40 and need until 19:10 or later. The only weekday open till 20:00 is Friday."
+          "zh": "依据：「ただし、特別展の会期中は、金曜日・土曜日のみ20時まで開館します」；「入館は閉館の30分前まで」\n推理：17点下课，再花40分钟，17:40到馆。平常18点闭馆，只剩20分钟；看1个半小时要待到19:10以后。12月在会期内，只有周五、周六开到20点（入馆到19:30），题干说是「平日」，周六不算，所以是周五。\n容易错：周六也延长开馆，但不是平日。",
+          "en": "Evidence: 「ただし、特別展の会期中は、金曜日・土曜日のみ20時まで開館します」; 「入館は閉館の30分前まで」.\nReasoning: Classes end at 17:00, plus 40 minutes: they arrive at 17:40. On ordinary days it closes at 18:00, leaving 20 minutes; an hour and a half means staying past 19:10. December is within the exhibition period, when only Friday and Saturday run to 20:00 (entry until 19:30). The intro says 「平日」, so Saturday is out: Friday.\nTrap: Saturday also has late opening, but it is not a weekday."
         },
         "wrong": [
           {
@@ -164,8 +164,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "①是160万的一半80万，②是300万的三分之一100万，只能选一个，选②100万。③只有小学生1人符合，20万。④夫妻都未满40岁，30万。合计150万日元。",
-          "en": "① would be ¥800,000, ② ¥1m; only one is allowed, so ② ¥1m. ③ counts only the primary-school child: ¥200,000. ④ both under 40: ¥300,000. Total ¥1.5m."
+          "zh": "依据：「①と②は、どちらか一方のみ申請できます」；「子ども1人につき20万円」；「夫婦がともに40歳未満の場合」\n推理：①160万×1/2＝80万；②300万×1/3＝100万；只能选一项，取多的②100万。③「中学生以下」只有小学5年级的孩子，高中生不算：20万。④夫38岁、妻36岁都不满40岁：30万。100＋20＋30＝150万日元。\n容易错：把高一的孩子也算进③（得170万），或把①②都算上（得230万）。",
+          "en": "Evidence: 「①と②は、どちらか一方のみ申請できます」; 「子ども1人につき20万円」; 「夫婦がともに40歳未満の場合」.\nReasoning: (1) 1.6 million × 1/2 = 0.8 million; (2) 3 million × 1/3 = 1 million; only one may be chosen, so take (2), 1 million. (3) 「中学生以下」 covers only the 5th-grader, not the high-school child: 200,000. (4) Husband 38 and wife 36 are both under 40: 300,000. 1,000,000 + 200,000 + 300,000 = 1.5 million yen.\nTrap: Counting the high-school child under (3) (giving 1.7 million), or adding both (1) and (2) (giving 2.3 million)."
         },
         "wrong": [
           {
@@ -194,8 +194,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "注意事项：①至④须在「売買契約（②は工事の請負契約）を結ぶ前に」申请，签约后不受理。",
-          "en": "The notes: apply for ①–④ 「契約…を結ぶ前に」; applications after signing are refused."
+          "zh": "依据：「①〜④の申請は、物件の売買契約（②は工事の請負契約）を結ぶ前に行ってください」；「契約後の申請は受け付けません」\n推理：中村家要申请的改建补助和③④都在「①〜④」之内，所以必须在签订购房或改建工程合同之前申请；签约后就不受理了。正确项是这条规定的改写。\n容易错：把只适用于⑤搬家费的「転入後3か月以内」套到全部补助上。",
+          "en": "Evidence: 「①〜④の申請は、物件の売買契約（②は工事の請負契約）を結ぶ前に行ってください」; 「契約後の申請は受け付けません」.\nReasoning: The renovation grant and (3), (4) that the Nakamuras would apply for all fall under 「①〜④」, so they must apply before signing the purchase or building contract; after signing, no application is accepted. The right option restates this rule.\nTrap: Applying 「転入後3か月以内」, which is only for the moving-cost grant (5), to all the grants."
         },
         "wrong": [
           null,
@@ -236,8 +236,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "他只能参加8/5–8/8的4天。选手村向导要3天以上（8/1–12内），观光向导要4天以上（8/1–12内），都符合。赛场翻译要850分和5天，机场接送的日期不在8/5–8/8之内。",
-          "en": "He can do only 5–8 Aug (4 days). The village (3+ days) and tourist information (4+ days) both fit. Venue interpreting needs TOEIC 850 and 5 days; the airport dates fall outside 5–8 Aug."
+          "zh": "依据：「8/1〜8/12のうち3日以上」；「8/1〜8/12のうち4日以上」；「850点以上またはそれと同等」\n推理：林只能参加8/5～8/8这4天。选手村向导：8/1～8/12内3天以上，4天够，英语日常会话也满足。观光向导：要4天以上，刚好够。赛场翻译要托业850分以上且5天以上，两项都不够；医疗翻译要900分；机场接送的日期不含8/5～8/8。\n容易错：看到机场接送接受中文就选它，漏看日期完全不重合。",
+          "en": "Evidence: 「8/1〜8/12のうち3日以上」; 「8/1〜8/12のうち4日以上」; 「850点以上またはそれと同等」.\nReasoning: Hayashi can only do the 4 days 8/5–8/8. Athletes' village guide: 3+ days within 8/1–8/12, so 4 days is enough, and everyday English fits. Tourist guide: 4+ days, exactly enough. Venue interpreting needs a TOEIC score of 850+ and 5+ days, both short; medical needs 900; airport transfers have no dates within 8/5–8/8.\nTrap: Choosing airport transfers because Chinese is accepted, missing that the dates don't overlap at all."
         },
         "wrong": [
           null,
@@ -266,8 +266,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "注意事项：「7月の土曜日に行う研修（全2回）にすべて参加していただきます」。",
-          "en": "The notes: 「7月の土曜日に行う研修（全2回）にすべて参加していただきます」."
+          "zh": "依据：「活動に先立ち、7月の土曜日に行う研修（全2回）にすべて参加していただきます」\n推理：这条适用于所有活动：「全2回」「すべて」＝两次都要参加。其他说法都不对：林能报的两项都只要「日常会話程度」，不用附证明；而且「応募できる活動は、お一人一つまで」。\n容易错：把「交通費として1日1,000円」看成连住宿也包了；原文写明「宿泊費は自己負担」。",
+          "en": "Evidence: 「活動に先立ち、7月の土曜日に行う研修（全2回）にすべて参加していただきます」.\nReasoning: This applies to every activity: 「全2回」 plus 「すべて」 = attend both sessions. The others fail: both activities open to him only ask for 「日常会話程度」, so no proof is needed, and 「応募できる活動は、お一人一つまで」.\nTrap: Reading 「交通費として1日1,000円」 as covering lodging too; the text says 「宿泊費は自己負担」."
         },
         "wrong": [
           {
