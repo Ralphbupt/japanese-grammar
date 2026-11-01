@@ -885,10 +885,12 @@
     var sc = source === 'quick' ? -1 : effectiveScope();
     var sys = systemPrompt(sc);
     var call = prov.kind === 'anthropic' ? callAnthropic : callOpenAI;
-    track('ai_ask', { source: source, turn: Math.ceil(history.length / 2), lesson_chars: sys.length, scope: scope === -2 ? 'auto' : scope < 0 ? 'lesson' : 'section' });
+    // `src`, not `source`: GA4 reads an event param named source / medium /
+    // campaign as the session's traffic source ("example" showed up as a referrer).
+    track('ai_ask', { src: source, turn: Math.ceil(history.length / 2), lesson_chars: sys.length, scope: scope === -2 ? 'auto' : scope < 0 ? 'lesson' : 'section' });
     // Only our relay gets the source (it counts which button was used); real providers reject unknown fields.
     call(c, sys, msgs, onDelta, abort.signal, cfg.active === 'jpnotes' ? relayTags(source) : null).then(function () {
-      track('ai_answer', { source: source, ms: Date.now() - t0, chars: reply.length });
+      track('ai_answer', { src: source, ms: Date.now() - t0, chars: reply.length });
     }, function (e) {
       if (e && e.name === 'AbortError') { track('ai_stop', { ms: Date.now() - t0, chars: reply.length }); return; }
       var msg = e && e.message ? e.message : String(e);
