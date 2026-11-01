@@ -311,9 +311,13 @@
       return;
     }
     var LV = ALL.filter(onLevel), done = LV.filter(function (q) { return seen(q.id); }).length, rec = stats(all.slice(0, 50));
+    // First try per question: redoing missed ones can't inflate it.
+    var firsts = LV.filter(function (q) { return seen(q.id); }).map(function (q) { var x = S.answers[q.id][0]; return x.ok && !x.g; });
+    var firstPct = Math.round(100 * firsts.filter(Boolean).length / (firsts.length || 1));
     // Overview + trend (last 50 answers vs the 50 before).
     h += '<h2>' + t('概况', 'Overview') + '</h2><ul class="q-an-list">' +
       '<li>' + t('做过 ', 'Answered ') + done + ' / ' + LV.length + t(' 题，共答 ', ' questions, ') + all.length + t(' 次', ' answers in all') + '</li>' +
+      '<li>' + t('整体正确率 ', 'Overall: ') + '<b>' + firstPct + '%</b>' + t('（每题只算第一次作答）；算上重做和复习，全部 ', ' right the first time (each question counted once); counting redos and reviews, ') + all.length + t(' 次作答正确率 ', ' answers: ') + stats(all).pct + '%' + t('', ' correct') + '</li>' +
       '<li>' + t('最近 ', 'Last ') + rec.n + t(' 次正确率 ', ' answers: ') + '<b>' + rec.pct + '%</b>' + t('（猜对不算对）', ' correct (guesses count as wrong)') +
       (rec.idk || rec.g ? t('，其中“不会” ', '; “don’t know” ') + rec.idk + t(' 次、猜的 ', ', guessed ') + rec.g + t(' 次', '') : '') + '</li>';
     if (all.length >= 80) {
