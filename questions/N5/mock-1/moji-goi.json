@@ -213,7 +213,7 @@
     "kj": "私の家は駅から近いですから、歩いて5分で行けます。",
     "answer": 0,
     "tr": { "zh": "我家离车站很近，走路五分钟就能到。", "en": "My house is close to the station, so I can walk there in five minutes." },
-    "why": { "zh": "走路五分钟就到，说明离车站「ちかい」（近）。", "en": "Five minutes on foot means it's 「ちかい」 (close) to the station." },
+    "why": { "zh": "线索：「あるいて 5ふんで いけます」，走五分钟就到，说明离车站近。\n词义：「ちかい」（近い）＝近：「えきから ちかい」「えきに ちかい」；反义是「とおい」。", "en": "Clue: 「あるいて 5ふんで いけます」 — a five-minute walk means it's close.\nMeaning: 「ちかい」 (近い) means near: 「えきから ちかい」, 「えきに ちかい」. The opposite is 「とおい」." },
     "wrong": [
       null,
       { "zh": "「とおい」是“远”，和走五分钟就到矛盾。", "en": "「とおい」 (far) contradicts a five-minute walk." },
@@ -231,7 +231,7 @@
     "kj": "知らない言葉がありましたから、辞書を引きました。",
     "answer": 0,
     "tr": { "zh": "因为有不认识的词，我查了词典。", "en": "There was a word I didn't know, so I looked it up in the dictionary." },
-    "why": { "zh": "查词典是固定搭配「じしょを ひく」，遇到不认识的词就查词典。", "en": "Looking up a word is 「じしょを ひく」 — the set phrase for using a dictionary." },
+    "why": { "zh": "线索：「しらない ことば」，后面的动词是「ひきました」，查生词。\n词义：「じしょ」（辞書）＝词典，查词典说「じしょを ひく」；也可以说「じしょを つかう」。", "en": "Clue: 「しらない ことば」 and the verb 「ひきました」 — looking up a new word.\nMeaning: 「じしょ」 (辞書) is a dictionary; looking something up is 「じしょを ひく」. You can also say 「じしょを つかう」." },
     "wrong": [
       null,
       { "zh": "「ざっし」（杂志）用「よむ」，不能「ひく」，也查不了生词。", "en": "A 「ざっし」 (magazine) is read, not 「ひく」-ed, and won't explain words." },
@@ -248,7 +248,7 @@
     "kj": "姉は毎日ピアノを弾きます。",
     "answer": 0,
     "tr": { "zh": "姐姐每天弹钢琴。", "en": "My sister plays the piano every day." },
-    "why": { "zh": "弹钢琴说「ピアノを ひく」，四个选项里只有乐器能「ひく」。", "en": "You play the piano with 「ひく」: 「ピアノを ひく」. Only the instrument fits." },
+    "why": { "zh": "线索：「（　）を ひきます」，「ひく」是弹乐器，每天弹的是钢琴。\n词义：「ピアノ」＝钢琴：「ピアノを ひく」，吉他也是「ギターを ひく」；「ひく」还有查的意思：「じしょを ひく」。", "en": "Clue: 「（　）を ひきます」 — 「ひく」 here is playing an instrument, so it's the piano.\nMeaning: 「ピアノ」 is a piano: 「ピアノを ひく」; a guitar too: 「ギターを ひく」. 「ひく」 also means to look up: 「じしょを ひく」." },
     "wrong": [
       null,
       { "zh": "「テレビ」用「みる」或「つける」，不能「ひく」。", "en": "A 「テレビ」 is watched or turned on, not 「ひく」-ed." },
@@ -266,7 +266,7 @@
     "kj": "新しいカメラで富士山の写真を撮りました。",
     "answer": 0,
     "tr": { "zh": "我用新相机拍了富士山的照片。", "en": "I took photos of Mt. Fuji with my new camera." },
-    "why": { "zh": "拍照是「しゃしんを とる」，而且用的是「カメラで」。", "en": "Taking a photo is 「しゃしんを とる」, and it's done 「カメラで」." },
+    "why": { "zh": "线索：「カメラで」+「しゃしんを」，用相机拍照。\n词义：「とる」（撮る）＝拍（照片）：「しゃしんを とる」，请人帮忙拍说「しゃしんを とって ください」。", "en": "Clue: 「カメラで」 and 「しゃしんを」 — taking photos with a camera.\nMeaning: 「とる」 (撮る) is to take a photo: 「しゃしんを とる」; asking someone to take one is 「しゃしんを とって ください」." },
     "wrong": [
       null,
       { "zh": "「かく」是写、画，用相机不能「かく」。", "en": "「かく」 is write / draw — not something a camera does." },
@@ -284,7 +284,7 @@
     "kj": "このお寺はとても有名ですから、外国からも人がたくさん来ます。",
     "answer": 0,
     "tr": { "zh": "这座寺庙非常有名，所以连外国也有很多人来。", "en": "This temple is very famous, so many people come from abroad too." },
-    "why": { "zh": "因为「ゆうめい」（有名），才会有很多外国人来。", "en": "It's 「ゆうめい」 (famous), which is why people come from abroad." },
+    "why": { "zh": "线索：「がいこくからも ひとが たくさん きます」，很多外国人来，因为寺庙有名。\n词义：「ゆうめい」（有名）＝有名，是「な」形容词：「ゆうめいな おてら」「ゆうめいな ひと」。", "en": "Clue: 「がいこくからも ひとが たくさん きます」 — people come from abroad because the temple is famous.\nMeaning: 「ゆうめい」 (有名) means famous; a 「な」-adjective: 「ゆうめいな おてら」, 「ゆうめいな ひと」." },
     "wrong": [
       null,
       { "zh": "「げんき」（健康、有精神）用于人，不说寺庙。", "en": "「げんき」 (healthy, lively) describes people, not a temple." },
@@ -302,7 +302,7 @@
     "kj": "空が暗くなりましたね。明日はたぶん雨でしょう。",
     "answer": 0,
     "tr": { "zh": "天变暗了啊。明天大概会下雨吧。", "en": "The sky has got dark. It'll probably rain tomorrow." },
-    "why": { "zh": "「でしょう」表示推测，和表示“大概”的「たぶん」搭配。", "en": "「でしょう」 is a guess, and 「たぶん」 (probably) goes with it." },
+    "why": { "zh": "线索：句末「でしょう」是推测，前面「そらが くらく なりました」是推测的根据。\n词义：「たぶん」＝大概、也许，常和「でしょう」一起用：「たぶん だいじょうぶでしょう」「たぶん くるでしょう」。", "en": "Clue: the 「でしょう」 at the end is a guess, based on 「そらが くらく なりました」.\nMeaning: 「たぶん」 means probably and often goes with 「でしょう」: 「たぶん だいじょうぶでしょう」, 「たぶん くるでしょう」." },
     "wrong": [
       null,
       { "zh": "「ぜんぜん」后面接否定，「ぜんぜん あめでしょう」不成立。", "en": "「ぜんぜん」 needs a negative; 「ぜんぜん あめでしょう」 doesn't work." },
@@ -330,7 +330,7 @@
     "kj": "この部屋は汚いです。",
     "answer": 0,
     "tr": { "zh": "这个房间很脏。", "en": "This room is dirty." },
-    "why": { "zh": "「きたない」（脏）＝「きれいじゃ ありません」（不干净）。", "en": "「きたない」 (dirty) means 「きれいじゃ ありません」 (not clean)." },
+    "why": { "zh": "线索：划线的「きたない」＝脏，对应「きれいじゃ ありません」。\n词义：「きたない」（汚い）＝脏：「きたない へや」「てが きたない」；反义是「きれい」。", "en": "Clue: the underlined 「きたない」 — dirty — matches 「きれいじゃ ありません」.\nMeaning: 「きたない」 (汚い) means dirty: 「きたない へや」, 「てが きたない」. The opposite is 「きれい」." },
     "wrong": [
       null,
       { "zh": "「きれいです」是干净，和「きたない」相反。", "en": "「きれいです」 (clean) is the opposite of 「きたない」." },
@@ -353,7 +353,7 @@
     "kj": "妹は二十歳です。",
     "answer": 0,
     "tr": { "zh": "妹妹二十岁。", "en": "My younger sister is twenty." },
-    "why": { "zh": "「はたち」是二十岁的特殊说法，＝「20さい」。", "en": "「はたち」 is the special word for twenty years old: 「20さい」." },
+    "why": { "zh": "线索：划线的「はたち」是二十岁的特别说法，对应「20さい」。\n词义：「はたち」（二十歳）＝二十岁，也可以说「にじゅっさい」；别的年龄用「〜さい」：「8さい」（はっさい）。", "en": "Clue: the underlined 「はたち」 is the special word for twenty years old — 「20さい」.\nMeaning: 「はたち」 (二十歳) means twenty years old; 「にじゅっさい」 also works. Other ages use 「〜さい」: 「8さい」 (はっさい)." },
     "wrong": [
       null,
       { "zh": "两岁是「2さい（にさい）」，别和「ふたつ」「ふつか」混。", "en": "Two years old is 「2さい」 (にさい); don't confuse はたち with ふたつ." },
@@ -381,7 +381,7 @@
     "kj": "週末はいつも図書館で勉強します。",
     "answer": 0,
     "tr": { "zh": "周末我总是在图书馆学习。", "en": "On weekends I always study at the library." },
-    "why": { "zh": "「しゅうまつ」（周末）＝「どようびと にちようび」，「いつも」也要保留。", "en": "「しゅうまつ」 (the weekend) is 「どようびと にちようび」, and 「いつも」 has to stay." },
+    "why": { "zh": "线索：划线的「しゅうまつ」＝星期六和星期天，对应「どようびと にちようび」，「いつも」也不变。\n词义：「しゅうまつ」（週末）＝周末：「しゅうまつは なにを しますか」；「どようび」是星期六，「にちようび」是星期天。", "en": "Clue: the underlined 「しゅうまつ」 is Saturday and Sunday — 「どようびと にちようび」 — and 「いつも」 stays.\nMeaning: 「しゅうまつ」 (週末) is the weekend: 「しゅうまつは なにを しますか」. 「どようび」 is Saturday, 「にちようび」 Sunday." },
     "wrong": [
       null,
       { "zh": "星期一和星期二是工作日，不是周末。", "en": "Monday and Tuesday are weekdays, not the weekend." },
