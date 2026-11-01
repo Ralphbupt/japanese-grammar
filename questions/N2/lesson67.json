@@ -20,8 +20,8 @@
       "en": "Whether you go on the trip or not, please let me know early."
     },
     "why": {
-      "zh": "前面已有「行くにしても」，与之成对列举相反的两种情况，用「〜にしても〜にしても」（无论……还是……）。",
-      "en": "「行くにしても」 already appears, so its pair completes \"whether… or…\" — 「〜にしても〜にしても」."
+      "zh": "线索：前面已经有「行くにしても」，空格前又是相反的「行かない」，两种情况成对出现。\n规则：「AにしてもBにしても」把两种相反或不同的情况并列，表示“不管A还是B，后面的结论都一样”；两个「にしても」要成对用，这里前面是动词简体（「行く」「行かない」），名词也可以（「大人にしても子どもにしても」）。\n辨析：「にしては」只差一个字，意思完全不同：「子どもにしては上手だ」＝以孩子来说出乎意料地好；「にしても〜にしても」没有意外的意思，只是“哪种都一样”。",
+      "en": "Clue: 「行くにしても」 is already there, and the blank follows its opposite, 「行かない」: two cases in a pair.\nRule: 「A にしても B にしても」 sets two opposite or different cases side by side: whichever it is, the conclusion stays the same. The two 「にしても」 come as a pair, here after the plain form of a verb (「行く」「行かない」); nouns work too (「大人にしても子どもにしても」).\nContrast: 「にしては」 differs by one kana but means something else: 「子どもにしては上手だ」 = surprisingly good for a child. 「にしても〜にしても」 carries no surprise; it just says either way."
     },
     "wrong": [
       null,
@@ -60,8 +60,8 @@
       "en": "At the meeting, whether you support or oppose this proposal, you should state your reasons clearly."
     },
     "why": {
-      "zh": "后面有「反対するにしても」，前面要用相同形式成对列举：「賛成するにしても反対するにしても」。",
-      "en": "「反対するにしても」 follows, so the first item takes the same form — 「賛成するにしても反対するにしても」."
+      "zh": "线索：空格后面是「反対するにしても」，和空格前的「賛成する」正好是一对相反的选择。\n规则：「にしても〜にしても」前后两半用同一形式；后半已经是「反対するにしても」，前半也要补上「にしても」，后面接不变的结论「理由を述べるべきだ」。\n辨析：「一方で」也连接两件事，但是对比两个事实：「賛成する人がいる一方で、反対する人もいる」；「にしても〜にしても」是假设两种选择，都导向同一个结论。",
+      "en": "Clue: After the blank comes 「反対するにしても」, the exact opposite of 「賛成する」 before it.\nRule: Both halves of 「にしても〜にしても」 take the same form. The second half is already 「反対するにしても」, so the first needs 「にしても」 too, leading to one fixed conclusion: 「理由を述べるべきだ」.\nContrast: 「一方で」 also links two things, but it contrasts two facts: 「賛成する人がいる一方で、反対する人もいる」. 「にしても〜にしても」 supposes two choices that lead to the same conclusion."
     },
     "wrong": [
       null,
@@ -105,8 +105,8 @@
       "en": "Whether you change jobs or not, you should give your current job everything you've got."
     },
     "why": {
-      "zh": "転職するにしても＋しない＋にしても（无论……还是……）＋今の＋仕事は＋全力でやるべきだ。★ 在第三格，是「今の」。",
-      "en": "転職するにしても ＋ しない ＋ にしても ＋ 今の ＋ 仕事は ＋ 全力でやるべきだ. The ★ is the third slot: 「今の」."
+      "zh": "线索：开头是「転職するにしても」，选项里又有「しない」「にしても」，是成对的「〜するにしても、しないにしても」。\n怎么排：先拼出和「転職する」相对的「しない＋にしても」（「しない」前省略了重复的「転職」）；剩下的「今の」修饰「仕事は」，作「全力でやるべきだ」的话题。顺序：しない → にしても → 今の → 仕事は，★ 是「今の」。\n容易错：把「今の仕事は」插到两个「にしても」中间。成对的两半要连着说完，不变的结论放在后面。",
+      "en": "Clue: The sentence opens with 「転職するにしても」, and the pieces include 「しない」 and 「にしても」: the pair 「〜するにしても、しないにしても」.\nOrder: First build 「しない ＋ にしても」 as the opposite of 「転職する」 (the repeated 「転職」 is dropped). 「今の」 then modifies 「仕事は」, the topic of 「全力でやるべきだ」: しない → にしても → 今の → 仕事は. The ★ is 「今の」.\nTrap: Slipping 「今の仕事は」 in between the two 「にしても」. The pair is said in one go; the conclusion that stays the same comes after it."
     },
     "wrong": [
       null,
@@ -136,8 +136,8 @@
       "en": "Looks aside, the food at this restaurant tastes good."
     },
     "why": {
-      "zh": "把“外观”放在一边，重点说“味道好”，用「〜はともかく」（……暂且不论）。",
-      "en": "Putting looks aside and focusing on taste — 「〜はともかく」."
+      "zh": "线索：「見た目」和「味」是同一道菜的两个方面，后半句只夸「味がいい」，对外观不作评价。\n规则：「名词＋はともかく」＝前面的事暂且不论，把焦点放到后面更重要的事上。\n辨析：「はおろか」也是“A……B……”的结构，但意思是“A就不用说了，连B都……”，后面多为否定：「漢字はおろか、ひらがなも読めない」；「はともかく」只是把A放一边，不评价A。",
+      "en": "Clue: 「見た目」 and 「味」 are two sides of the same food; the second half praises only the taste (「味がいい」) and says nothing about the looks.\nRule: 「noun ＋ はともかく」 = leaving that aside for now, and putting the focus on the more important point that follows.\nContrast: 「はおろか」 has a similar A…B shape but means \"never mind A, not even B\", usually with a negative: 「漢字はおろか、ひらがなも読めない」. 「はともかく」 just sets A aside without judging it."
     },
     "wrong": [
       null,
@@ -176,8 +176,8 @@
       "en": "Whether or not you succeed, the important thing is to give it a try first."
     },
     "why": {
-      "zh": "「〜かどうかはともかく」＝“能不能……暂且不论”，把结果放一边，强调先挑战。",
-      "en": "「〜かどうかはともかく」 sets the outcome aside to stress trying first."
+      "zh": "线索：「成功するかどうか」后面是「まずは挑戦してみることが大切だ」，成败的问题被放到一边，先强调行动。\n规则：「动词简体＋かどうかはともかく」＝能不能……暂且不论（「できるかどうかはともかく、やってみよう」）。\n辨析：「次第で」也能接「かどうか」，方向却相反：「結果次第で決める」＝看结果再决定，后面取决于A；「はともかく」是A怎样都先不管。",
+      "en": "Clue: 「成功するかどうか」 is followed by 「まずは挑戦してみることが大切だ」: the question of success is put aside and the action comes first.\nRule: 「plain verb ＋ かどうかはともかく」 = whether or not …, never mind that for now (「できるかどうかはともかく、やってみよう」).\nContrast: 「次第で」 can also follow 「かどうか」 but points the other way: 「結果次第で決める」 = decide once you see the result, so what follows depends on A. With 「はともかく」, A doesn't matter for now."
     },
     "wrong": [
       null,
@@ -221,8 +221,8 @@
       "en": "Leaving aside its size, this room is close to the station and convenient."
     },
     "why": {
-      "zh": "広さは＋ともかく（暂且不论）＋駅から＋近くて＋便利だ。★ 在第二格，是「ともかく」。",
-      "en": "広さは ＋ ともかく (setting aside) ＋ 駅から ＋ 近くて ＋ 便利だ. The ★ is the second slot: 「ともかく」."
+      "zh": "线索：「ともかく」前面要有「〜は」，组成「〜はともかく」，选项里带「は」的是「広さは」。\n怎么排：先拼「広さは＋ともかく」，把面积放一边；后面说优点：「駅から」接「近くて」，「近くて」用て形连到「便利だ」，说明方便的理由。顺序：広さは → ともかく → 駅から → 近くて，★ 是「ともかく」。\n容易错：把「駅から近くて」排在前面。「近くて」是「便利だ」的理由，要紧挨着「便利だ」，所以「広さはともかく」只能放在前面。",
+      "en": "Clue: 「ともかく」 needs 「〜は」 before it to make 「〜はともかく」, and the piece with 「は」 is 「広さは」.\nOrder: Build 「広さは ＋ ともかく」 first to set the size aside; then the selling point: 「駅から」 goes with 「近くて」, whose te-form links to 「便利だ」 as its reason: 広さは → ともかく → 駅から → 近くて. The ★ is 「ともかく」.\nTrap: Putting 「駅から近くて」 first. 「近くて」 gives the reason for 「便利だ」 and has to sit right before it, so 「広さはともかく」 goes in front."
     },
     "wrong": [
       null,
@@ -252,8 +252,8 @@
       "en": "After their father died, a dispute broke out between the brothers over the inheritance."
     },
     "why": {
-      "zh": "后面是「争いが起きた」（发生争执），争执的焦点是遗产，用「〜をめぐって」（围绕……）。",
-      "en": "The sentence ends in a dispute, and the inheritance is what it's about — 「〜をめぐって」."
+      "zh": "线索：后半句是「争いが起きた」，「遺産」是兄弟争执的焦点。\n规则：「名词＋をめぐって」＝围绕某个焦点（多为争议、讨论），后面常接「争う」「議論する」「意見が分かれる」这类对立的内容。\n辨析：「を中心に」中文也可能译成“围绕”，但意思是“以……为核心向外展开”：「東京を中心に被害が広がった」；「をめぐって」是“大家为这件事争来争去”：「遺産をめぐって争う」。",
+      "en": "Clue: The second half is 「争いが起きた」, and 「遺産」 is what the brothers are fighting over.\nRule: 「noun ＋ をめぐって」 = over / surrounding an issue, usually a point of dispute or debate, so it is typically followed by words like 「争う」「議論する」「意見が分かれる」.\nContrast: 「を中心に」 can also come out as \"around\", but it means \"with … at the core, spreading out\": 「東京を中心に被害が広がった」. 「をめぐって」 is people contending over something: 「遺産をめぐって争う」."
     },
     "wrong": [
       null,
@@ -292,8 +292,8 @@
       "en": "The problem surrounding the development of this land is still unresolved after many years."
     },
     "why": {
-      "zh": "空后直接接名词「問題」，要用修饰名词的「をめぐる」（围绕……的）。",
-      "en": "The blank directly modifies the noun 「問題」, so the noun-modifying 「をめぐる」 is needed."
+      "zh": "线索：空格后面紧跟名词「問題」。\n规则：「をめぐって」后面接谓语（「開発をめぐって争う」）；要直接修饰名词，改成「をめぐる＋名词」（「開発をめぐる問題」）。\n容易错：「に関して」意思也通，但同样是接谓语的形式，修饰名词要说「に関する」。\n技巧：「をめぐって／をめぐる」「に関して／に関する」「に応じて／に応じた」这类成对形式，先看空格后：直接修饰紧跟的名词选「る」「た」形，连接后面的谓语（或后面是逗号）选「て」形。",
+      "en": "Clue: The blank is followed directly by the noun 「問題」.\nRule: 「をめぐって」 leads into a predicate (「開発をめぐって争う」); to modify a noun directly it becomes 「をめぐる ＋ noun」 (「開発をめぐる問題」).\nTrap: 「に関して」 makes sense too, but like 「をめぐって」 it is the form that leads into a predicate; before a noun it would have to be 「に関する」.\nTip: For pairs like 「をめぐって／をめぐる」「に関して／に関する」「に応じて／に応じた」, look right after the blank: if it directly modifies the noun that follows, use the 「る」 / 「た」 form; if it leads into a predicate (or a comma follows), use the 「て」 form."
     },
     "wrong": [
       null,
@@ -337,8 +337,8 @@
       "en": "The ruling and opposition parties are divided over the new bill."
     },
     "why": {
-      "zh": "新しい法案を＋めぐって（围绕）＋与党と＋野党の＋意見が＋分かれている。★ 在第四格，是「意見が」。",
-      "en": "新しい法案を ＋ めぐって (over) ＋ 与党と ＋ 野党の ＋ 意見が ＋ 分かれている. The ★ is the fourth slot: 「意見が」."
+      "zh": "线索：「法案を」后面只有「めぐって」能接，组成「〜をめぐって」；句尾「分かれている」正是它常带的“意见分歧”。\n怎么排：「を＋めぐって」先连上；后面是对立的双方：「与党と野党の」一起修饰「意見が」，「意見が」再作「分かれている」的主语。顺序：めぐって → 与党と → 野党の → 意見が，★ 是「意見が」。\n容易错：把「野党の」放到「与党と」前面。「AとBの意見」里「と」连接两个名词，「の」要放在后一个名词后面，再接「意見」。",
+      "en": "Clue: Only 「めぐって」 can follow 「法案を」, giving 「〜をめぐって」; the ending 「分かれている」 is the kind of disagreement it usually introduces.\nOrder: Join 「を ＋ めぐって」 first; then the two sides: 「与党と野党の」 together modify 「意見が」, the subject of 「分かれている」: めぐって → 与党と → 野党の → 意見が. The ★ is 「意見が」.\nTrap: Putting 「野党の」 before 「与党と」. In 「A と B の意見」, 「と」 joins the two nouns and 「の」 comes after the second one, right before 「意見」."
     },
     "wrong": [
       null,
@@ -368,8 +368,8 @@
       "en": "Anyone can apply for this job, with or without experience."
     },
     "why": {
-      "zh": "「有無」（有或没有）和「どなたでも」说明不受条件限制，用「〜を問わず」（不论……）。",
-      "en": "「有無」 (with or without) plus 「どなたでも」 (anyone) means the condition doesn't matter — 「〜を問わず」."
+      "zh": "线索：「有無」（有还是没有）把两种情况都包括了，后面又是「どなたでも」。\n规则：「名词＋を問わず」＝不论……，表示不受这个条件限制；前面常是「有無」「男女」「昼夜」这类包含正反两面的词，多见于招聘、公告。\n辨析：「に応じて」「によって」都是“随条件而变”：「経験に応じて給料が決まる」（工资按经验定）；「を問わず」是条件不影响结果：「経験を問わず応募できる」。",
+      "en": "Clue: 「有無」 (having or not having) covers both cases, and 「どなたでも」 follows.\nRule: 「noun ＋ を問わず」 = regardless of; the condition sets no limit. It often follows words that contain both sides, like 「有無」「男女」「昼夜」, and is common in job ads and notices.\nContrast: 「に応じて」 and 「によって」 mean the result changes with the condition: 「経験に応じて給料が決まる」 (pay is set by experience). With 「を問わず」 the condition makes no difference: 「経験を問わず応募できる」."
     },
     "wrong": [
       null,
@@ -408,8 +408,8 @@
       "en": "This convenience store in front of the station is open day and night."
     },
     "why": {
-      "zh": "「昼夜を問わず」是固定搭配，“不分白天黑夜”。",
-      "en": "「昼夜を問わず」 is a set phrase: \"regardless of day or night\"."
+      "zh": "线索：「昼夜」是白天和黑夜一对相反的词，说的是便利店整天营业。\n规则：「を問わず」前面常放成对的相反概念（「昼夜」「男女」），表示两边都一样、不受限制；「昼夜を問わず」是常见搭配。意思和「にかかわらず」相近，「を問わず」更正式。",
+      "en": "Clue: 「昼夜」 pairs two opposites, day and night: the shop is open around the clock.\nRule: 「を問わず」 often follows a pair of opposites (「昼夜」「男女」), meaning both sides are treated alike, with no limit; 「昼夜を問わず」 is a common set phrase. It is close to 「にかかわらず」 but more formal."
     },
     "wrong": [
       null,
@@ -454,8 +454,8 @@
       "en": "Anyone can take part in this event, regardless of age, nationality and so on."
     },
     "why": {
-      "zh": "年齢や＋国籍＋などを＋問わず（不论）＋誰でも参加できます。「〜や〜などを問わず」是固定的组合。★ 在第三格，是「などを」。",
-      "en": "年齢や ＋ 国籍 ＋ などを ＋ 問わず (regardless of) ＋ 誰でも参加できます — 「〜や〜などを問わず」 goes together. The ★ is the third slot: 「などを」."
+      "zh": "线索：「問わず」前面要有「を」，选项中只有「などを」带着「を」，所以「などを問わず」连在最后。\n怎么排：「AやBなど」是列举的格式：「年齢や」在前，接另一个名词「国籍」，再用「などを」收尾，最后接「問わず」。顺序：年齢や → 国籍 → などを → 問わず，★ 是「などを」。\n容易错：把「国籍」放在最前面。「や」要夹在两个名词之间，「年齢や」后面必须紧跟名词「国籍」，不能直接接「などを」。",
+      "en": "Clue: 「問わず」 needs 「を」 before it, and only 「などを」 has one, so 「などを問わず」 closes the group.\nOrder: 「A や B など」 is the listing frame: 「年齢や」 first, then the second noun 「国籍」, closed by 「などを」, then 「問わず」: 年齢や → 国籍 → などを → 問わず. The ★ is 「などを」.\nTrap: Putting 「国籍」 first. 「や」 sits between two nouns, so 「年齢や」 must be followed by the noun 「国籍」, not directly by 「などを」."
     },
     "wrong": [
       null,
@@ -485,8 +485,8 @@
       "en": "Damage from the heavy rain is spreading, centred on the Kanto region."
     },
     "why": {
-      "zh": "灾害以关东地区为核心向外扩散，用「〜を中心に」（以……为中心）。",
-      "en": "The damage spreads out from Kanto as its centre — 「〜を中心に」."
+      "zh": "线索：后面是「被害が広がっている」，灾害从一个地区向周围扩散。\n规则：「名词＋を中心に」＝以……为核心（向外展开），常和「広がる」「増える」这类表示扩展的动词一起用。\n辨析：中文都说“以……为”，别和「をもとに」混：「データをもとに報告書を書く」＝以数据为依据写报告；「関東を中心に被害が広がる」＝以关东为中心向外扩大。",
+      "en": "Clue: 「被害が広がっている」 follows: the damage is spreading outward from one region.\nRule: 「noun ＋ を中心に」 = with … at the centre (spreading out from it); it often goes with verbs of spreading or growing like 「広がる」「増える」.\nContrast: Don't mix it up with 「をもとに」: 「データをもとに報告書を書く」 = write a report based on data; 「関東を中心に被害が広がる」 = damage spreads with Kanto at its centre."
     },
     "wrong": [
       null,
@@ -525,8 +525,8 @@
       "en": "This study group is run by members who are mainly graduate students."
     },
     "why": {
-      "zh": "空后接名词「メンバー」，表示“以研究生为主的成员”，用修饰名词的「を中心とした」。",
-      "en": "The blank modifies the noun 「メンバー」 — \"members mainly made up of grad students\" is 「を中心とした」."
+      "zh": "线索：空格后面接名词「メンバー」，要说明成员主要是什么人。\n规则：「を中心とした（＝を中心にした）＋名词」＝以……为主的……。四个选项都能修饰名词，所以只能靠意思判断：成员以研究生为主。\n辨析：「をめぐる」中文也常译“围绕……的”，但多用于争议或讨论的焦点：「開発をめぐる問題」；说“以谁为主”要用「を中心とした」：「若者を中心とした客層」。",
+      "en": "Clue: The blank is followed by the noun 「メンバー」; it has to say who the members mostly are.\nRule: 「を中心とした (＝を中心にした) ＋ noun」 = … made up mainly of. All four options can modify a noun, so meaning decides: the members are mostly grad students.\nContrast: 「をめぐる」 can also come out as \"surrounding\", but it mostly marks the focus of a dispute or debate: 「開発をめぐる問題」. \"Mainly made up of\" takes 「を中心とした」: 「若者を中心とした客層」."
     },
     "wrong": [
       null,
@@ -570,8 +570,8 @@
       "en": "This research is being carried out with environmental issues at its core."
     },
     "why": {
-      "zh": "環境＋問題を＋中心に＋して（以……为中心）＋進められている。★ 在第三格，是「中心に」。",
-      "en": "環境 ＋ 問題を ＋ 中心に ＋ して (centred on) ＋ 進められている. The ★ is the third slot: 「中心に」."
+      "zh": "线索：有「中心に」「して」两块，加上「問題を」的「を」，组成「〜を中心にして」。\n怎么排：「環境」先和「問題を」合成「環境問題を」，「を」后接「中心に」，再接「して」，最后连到「進められている」。顺序：環境 → 問題を → 中心に → して，★ 是「中心に」。\n容易错：把「して」放到「中心に」前面。形式是「を中心にして」（也可只说「を中心に」），「して」接在「中心に」后面。",
+      "en": "Clue: 「中心に」 and 「して」, plus the 「を」 of 「問題を」, make 「〜を中心にして」.\nOrder: 「環境」 joins 「問題を」 to make 「環境問題を」; 「を」 is followed by 「中心に」, then 「して」, which leads into 「進められている」: 環境 → 問題を → 中心に → して. The ★ is 「中心に」.\nTrap: Putting 「して」 before 「中心に」. The form is 「を中心にして」 (or just 「を中心に」), with 「して」 after 「中心に」."
     },
     "wrong": [
       null,
@@ -601,8 +601,8 @@
       "en": "We offer a range of plans to suit your budget."
     },
     "why": {
-      "zh": "预算不同，方案也相应不同，用表示“根据条件灵活对应”的「〜に応じて」。",
-      "en": "Different budgets get matching plans — 「〜に応じて」 (\"according to\")."
+      "zh": "线索：「ご予算」因人而异，后面的「さまざまなプラン」说明方案跟着预算不同而不同。\n规则：「名词＋に応じて」＝根据……相应地调整，条件变了，结果也跟着变；常和「さまざまな」「調整する」「変える」这类词一起出现。",
+      "en": "Clue: 「ご予算」 differs from customer to customer, and 「さまざまなプラン」 shows the plans vary to match.\nRule: 「noun ＋ に応じて」 = adjusted to fit; when the condition changes, the result changes with it. It often comes with words like 「さまざまな」「調整する」「変える」."
     },
     "wrong": [
       null,
@@ -641,8 +641,8 @@
       "en": "This car park charges according to how long you park."
     },
     "why": {
-      "zh": "空后直接接名词「料金」，要用修饰名词的「に応じた」（与……相应的）。",
-      "en": "The blank directly modifies the noun 「料金」, so the noun-modifying 「に応じた」 is needed."
+      "zh": "线索：空格后直接是名词「料金」，所以要选能修饰名词的形式。\n规则：「に応じて」后面接谓语（「時間に応じて料金が変わる」）；直接接名词时说「に応じた＋名词」。\n辨析：「にわたる＋名词」也修饰名词，但表示跨度：「三時間にわたる会議」＝长达三小时的会议；「に応じた料金」是随时间长短而变的费用。",
+      "en": "Clue: The blank is followed directly by the noun 「料金」, so the form must be one that modifies a noun.\nRule: 「に応じて」 leads into a predicate (「時間に応じて料金が変わる」); right before a noun it becomes 「に応じた ＋ noun」.\nContrast: 「にわたる ＋ noun」 modifies a noun too, but it means a span: 「三時間にわたる会議」 = a meeting lasting three hours. 「に応じた料金」 is a fee that varies with how long you stay."
     },
     "wrong": [
       null,
@@ -667,7 +667,7 @@
       "lesson67#6"
     ],
     "difficulty": 2,
-    "stem": "この工場では、 [★] [_] [_] [_] 生産量を調整している。",
+    "stem": "この工場では、 [★] [_] [_] [_]、生産量を調整している。",
     "options": [
       "ごとの",
       "季節",
@@ -680,21 +680,22 @@
       3,
       2
     ],
-    "full": "この工場では、季節ごとの需要に応じて生産量を調整している。",
+    "full": "この工場では、季節ごとの需要に応じて、生産量を調整している。",
     "tr": {
       "zh": "这家工厂根据每个季节的需求调整产量。",
       "en": "This factory adjusts its output according to seasonal demand."
     },
     "why": {
-      "zh": "季節＋ごとの（每个……的）＋需要に＋応じて（根据）＋生産量を調整している。★ 在第一格，是「季節」。",
-      "en": "季節 ＋ ごとの (each) ＋ 需要に ＋ 応じて (according to) ＋ 生産量を調整している. The ★ is the first slot: 「季節」."
+      "zh": "线索：「需要に」和「応じて」组成「〜に応じて」，后面的「生産量を調整している」正是“随需求调整”。\n怎么排：「ごとの」要接在名词后面：「季節ごとの」＝每个季节的，修饰「需要」；「需要に」再接「応じて」，以「〜に応じて、」结束，连到「調整している」。顺序：季節 → ごとの → 需要に → 応じて，★ 是「季節」。\n容易错：「需要に応じて季節ごとの」看起来也通，但最后一格后面是逗号，「〜の」后面必须直接接名词，所以「ごとの」不能放在最后。",
+      "en": "Clue: 「需要に」 and 「応じて」 form 「〜に応じて」, and 「生産量を調整している」 is exactly \"adjusting to demand\".\nOrder: 「ごとの」 attaches to a noun: 「季節ごとの」 (each season's) modifies 「需要」; 「需要に」 then takes 「応じて」, which closes the phrase before the comma and leads into 「調整している」: 季節 → ごとの → 需要に → 応じて. The ★ is 「季節」.\nTrap: 「需要に応じて季節ごとの」 also looks possible, but the last slot is followed by a comma, and 「〜の」 must be followed directly by its noun, so 「ごとの」 can't go last."
     },
     "wrong": [
       null,
       null,
       null,
       null
-    ]
+    ],
+    "rev": 1
   },
   {
     "id": "n2-l67-019",
@@ -717,8 +718,8 @@
       "en": "Judging from the way he talks, he seems to be from Kansai."
     },
     "why": {
-      "zh": "「話し方」是判断的依据，后面是推测「らしい」，用「からすると」（从……来判断）。",
-      "en": "「話し方」 is the basis for a guess (「らしい」), so 「からすると」 (judging from) fits."
+      "zh": "线索：「話し方」是看到的事实，句尾「どうやら〜らしい」是推测。\n规则：「からすると」的一种用法是判断依据：前面放观察到的事实（表情、样子、成绩），后面是据此作出的推测，常和「らしい」「ようだ」「だろう」呼应。\n辨析：「にしたら」也可译“从……来看”，但一般接人或团体，是设身处地推测对方的心情：「子どもにしたら、つらいだろう」；以事实为依据推断用「からすると」：「表情からすると、怒っているようだ」。",
+      "en": "Clue: 「話し方」 is something observed, and 「どうやら〜らしい」 at the end is a guess.\nRule: One use of 「からすると」 is the basis for a judgment: an observed fact (a face, a manner, grades) comes before it and a guess drawn from it follows, often ending in 「らしい」「ようだ」「だろう」.\nContrast: 「にしたら」 also translates as \"from …\", but it normally takes a person or group and imagines their feelings: 「子どもにしたら、つらいだろう」. Reasoning from a fact takes 「からすると」: 「表情からすると、怒っているようだ」."
     },
     "wrong": [
       null,
@@ -727,8 +728,8 @@
         "en": "「にとって」 is followed by an evaluation, not a basis for a guess."
       },
       {
-        "zh": "「にしたら」只接人，「話し方」不是人。",
-        "en": "「にしたら」 only follows a person; 「話し方」 isn't one."
+        "zh": "「にしたら」一般接人或团体，用来设想其心情，「話し方」不是人。",
+        "en": "「にしたら」 normally follows a person or group, to imagine how they feel; 「話し方」 is not a person."
       },
       {
         "zh": "「として」表示身份、资格，“作为说话方式”说不通。",
@@ -757,8 +758,8 @@
       "en": "Judging from these grades, you should easily get into your first-choice university."
     },
     "why": {
-      "zh": "以「成績」为依据推测「合格できるだろう」，用表示判断依据的「からすれば」。",
-      "en": "The grades are the basis for the guess 「合格できるだろう」, so 「からすれば」 (judging from) fits."
+      "zh": "线索：「成績」是依据，句尾「合格できるだろう」是顺着成绩推出来的结论。\n规则：「名词＋からすれば（＝からすると）」＝从……来判断，前面是依据，后面是由此作出的推测。\n辨析：「にしては」也接在判断对象后，但表示结果和预期相反：「初心者にしては上手だ」＝以初学者来说出乎意料地好；「からすれば」是顺着依据得出合理的结论，没有意外。",
+      "en": "Clue: 「成績」 is the evidence, and 「合格できるだろう」 is the conclusion that follows naturally from it.\nRule: 「noun ＋ からすれば (＝からすると)」 = judging from; the evidence comes before it and the guess drawn from it after.\nContrast: 「にしては」 also follows what is being judged, but it says the result defies expectation: 「初心者にしては上手だ」 = surprisingly good for a beginner. 「からすれば」 draws the expected conclusion, with no surprise."
     },
     "wrong": [
       {
@@ -766,8 +767,8 @@
         "en": "「にしては」 sets up a surprise; here the grades lead naturally to 'you'll pass'."
       },
       {
-        "zh": "「にとって」前面接人或组织，表示“对……来说”，不能接「成績」来推断。",
-        "en": "「にとって」 follows a person or group ('for…'); it can't base a judgment on grades."
+        "zh": "「にとって」表示“对……来说”，后面接评价，不能表示推断的依据「成績」。",
+        "en": "「にとって」 means for…, followed by an evaluation; it does not mark 「成績」 as the basis for a guess."
       },
       null,
       {
@@ -797,8 +798,8 @@
       "en": "From a parent's point of view, children are a worry however old they get."
     },
     "why": {
-      "zh": "「親」是看问题的立场，用「からすると」（从……的立场来看）。",
-      "en": "「親」 is the standpoint from which things are seen, so 「からすると」 fits."
+      "zh": "线索：「親」是人，后面讲的是站在父母位置上的感受「心配なものだ」。\n规则：「からすると」的另一种用法是立场：前面是人或团体，表示“站在这个角度看”，后面说从那里看到的感受或看法。\n辨析：「にしては」也能接人，但表示和标准不符的意外：「十歳にしては背が高い」；「親からすると心配だ」说的是站在父母位置自然会有的感受，并不意外。",
+      "en": "Clue: 「親」 is a person, and what follows, 「心配なものだ」, is how things feel from a parent's position.\nRule: Another use of 「からすると」 is a standpoint: a person or group comes before it, and the sentence says how things look or feel from there.\nContrast: 「にしては」 can follow a person too, but it marks a surprise against the norm: 「十歳にしては背が高い」. 「親からすると心配だ」 is the feeling you'd naturally expect from a parent, nothing surprising."
     },
     "wrong": [
       {
@@ -842,8 +843,8 @@
       "en": "Judging from how calm he looks, he doesn't seem to know anything yet."
     },
     "why": {
-      "zh": "あの＋落ち着いた＋様子（判断依据）＋から＋すると（从……来判断）＋、彼はまだ何も知らないようだ。★ 在第二格，是「様子」。",
-      "en": "あの ＋ 落ち着いた ＋ 様子 (the basis) ＋ から ＋ すると (judging from) ＋ 、彼はまだ何も知らないようだ. The ★ is the second slot: 「様子」."
+      "zh": "线索：「から」「すると」连成「からすると」，句尾「ようだ」是推测，所以是判断依据的用法，前面要放看到的事实。\n怎么排：「から＋すると」先合起来；依据是名词「様子」，前面放修饰它的「落ち着いた」，句首的「あの」修饰整个「落ち着いた様子」。顺序：落ち着いた → 様子 → から → すると，★ 是「様子」。\n容易错：把「から」当成表示原因的「から」，和「すると」拆开排。这里两块是一个整体，意思是“从……来判断”。",
+      "en": "Clue: 「から」 and 「すると」 make 「からすると」, and 「ようだ」 at the end is a guess, so this is the \"judging from\" use: an observed fact goes before it.\nOrder: Join 「から ＋ すると」 first; the evidence is the noun 「様子」, with 「落ち着いた」 before it, and 「あの」 at the start covers 「落ち着いた様子」: 落ち着いた → 様子 → から → すると. The ★ is 「様子」.\nTrap: Reading 「から」 as \"because\" and separating it from 「すると」. The two pieces form one unit meaning \"judging from\"."
     },
     "wrong": [
       null,
@@ -874,13 +875,13 @@
       "en": "For this region's economy, tourism is an indispensable industry."
     },
     "why": {
-      "zh": "后面是评价「欠かせない」，前面「経済」不是人，用「にとって」（对……来说）。",
-      "en": "An evaluation (「欠かせない」) follows and 「経済」 isn't a person, so 「にとって」 fits."
+      "zh": "线索：前面的「経済」不是人，后面是评价「欠かせない」。\n规则：「にとって」＝对……来说，前面人和事物都可以，后面接评价（「大切」「必要」「欠かせない」）。\n辨析：「にしたら」也是“对……来说”，但一般接人或团体，用来推测对方的心情：「子どもにしたら、つらいだろう」；事物后面接评价用「にとって」：「この計画は環境にとってよくない」。",
+      "en": "Clue: 「経済」 isn't a person, and an evaluation, 「欠かせない」, follows.\nRule: 「にとって」 = for…; it can follow people or things and is followed by an evaluation (「大切」「必要」「欠かせない」).\nContrast: 「にしたら」 also means \"for…\", but normally after a person or group, to imagine their feelings: 「子どもにしたら、つらいだろう」. An evaluation after a thing takes 「にとって」: 「この計画は環境にとってよくない」."
     },
     "wrong": [
       {
-        "zh": "「にしたら」只接人，用来推测某人的心情；「経済」不是人。",
-        "en": "「にしたら」 only follows a person whose feelings you imagine; 「経済」 isn't one."
+        "zh": "「にしたら」一般接人或团体，用来推测某人的心情；「経済」不是人。",
+        "en": "「にしたら」 normally follows a person or group, to imagine how they feel; 「経済」 is not a person."
       },
       {
         "zh": "「に対して」表示对象或对比，“观光业对地区经济不可缺”应说「にとって」。",
@@ -915,8 +916,8 @@
       "en": "From his point of view he probably meant it kindly, but to me it was a nuisance."
     },
     "why": {
-      "zh": "设身处地推测“他”的想法（「〜のつもりで言ったのだろう」），用「にしたら」（站在……的立场）。",
-      "en": "The sentence imagines his intention (「〜のつもりで言ったのだろう」), so 「にしたら」 fits."
+      "zh": "线索：「彼」是人，句子在设想他的意图「親切のつもりで言ったのだろう」，后半又转到说话人自己「私には」。\n规则：「人＋にしたら」＝站在那个人的立场，设想他的心情或想法，句末多是「だろう」「のだろう」等推测。\n辨析：「にとって」后面是对这个人来说的评价：「彼にとって大事な仕事だ」，不接他抱着什么想法做了什么；设想别人的用意用「にしたら」。",
+      "en": "Clue: 「彼」 is a person, the sentence imagines his intention (「親切のつもりで言ったのだろう」), and then turns to the speaker (「私には」).\nRule: 「person ＋ にしたら」 = putting yourself in that person's place to imagine what they feel or think; the sentence usually ends in a guess such as 「だろう」「のだろう」.\nContrast: 「にとって」 is followed by an evaluation from that person's angle: 「彼にとって大事な仕事だ」. It doesn't introduce what he meant by doing something; imagining someone's intent takes 「にしたら」."
     },
     "wrong": [
       {
@@ -955,8 +956,8 @@
       "en": "From the shop's side, a big group turning up just before closing would be a nuisance."
     },
     "why": {
-      "zh": "站在「店側」的立场推测其感受「困るだろう」，用「にすれば」（站在……的立场）。",
-      "en": "It imagines how the shop would feel (「困るだろう」), so 「にすれば」 fits."
+      "zh": "线索：「店側」是团体，句尾「困るだろう」在替店家着想。\n规则：「にすれば」和「にしたら」同义：前面接人或团体，设身处地推测其感受，句末多为「だろう」「かもしれない」。\n辨析：「に対して」是动作、态度指向的对象：「店に対して文句を言う」（向店家抱怨）；「店側にすれば」是换到店家的位置去想。",
+      "en": "Clue: 「店側」 is a group, and 「困るだろう」 at the end imagines how the shop feels.\nRule: 「にすれば」 is the same as 「にしたら」: after a person or group, it imagines their feelings, and the sentence usually ends in 「だろう」 or 「かもしれない」.\nContrast: 「に対して」 marks the target of an action or attitude: 「店に対して文句を言う」 (complain to the shop). 「店側にすれば」 is stepping into the shop's shoes."
     },
     "wrong": [
       {
@@ -1000,8 +1001,8 @@
       "en": "For a child at the age when all they want is to play, going to cram school every day must be hard."
     },
     "why": {
-      "zh": "遊びたい＋盛りの（正想玩的年纪的）＋子ども＋にしたら（站在……的立场）＋、毎日塾に通うのはつらいだろう。★ 在第三格，是「子ども」。",
-      "en": "遊びたい ＋ 盛りの ＋ 子ども ＋ にしたら (from …'s point of view) ＋ 、毎日塾に通うのはつらいだろう. The ★ is the third slot: 「子ども」."
+      "zh": "线索：句尾「つらいだろう」在推测别人的感受，选项里有「にしたら」，前面要放人。\n怎么排：「にしたら」接人，所以「子ども＋にしたら」放在最后；「盛りの」修饰「子ども」；「遊びたい盛り」是一个说法（正贪玩的年纪），「遊びたい」放在「盛り」前面。顺序：遊びたい → 盛りの → 子ども → にしたら，★ 是「子ども」。\n容易错：不认识「盛り」，就把「遊びたい」直接接「子ども」，「盛りの」没处放。「〜たい盛り」＝正想……的年纪，要连在一起。",
+      "en": "Clue: 「つらいだろう」 at the end guesses at someone else's feelings, and with 「にしたら」 among the pieces, a person must come before it.\nOrder: 「にしたら」 follows a person, so 「子ども ＋ にしたら」 goes last; 「盛りの」 modifies 「子ども」; 「遊びたい盛り」 (the age when all they want is to play) is one expression, with 「遊びたい」 before 「盛り」: 遊びたい → 盛りの → 子ども → にしたら. The ★ is 「子ども」.\nTrap: Not knowing 「盛り」 and joining 「遊びたい」 straight to 「子ども」, leaving 「盛りの」 nowhere to go. 「〜たい盛り」 (the age of wanting to …) stays together."
     },
     "wrong": [
       null,
@@ -1031,8 +1032,8 @@
       "en": "While studying abroad, I studied economics under a famous professor."
     },
     "why": {
-      "zh": "“在某人的指导下学习”，用「人＋のもとで」（在……之下）。",
-      "en": "Learning under someone's guidance is 「person ＋ のもとで」."
+      "zh": "线索：「有名な教授の」后面是「経済学を学んだ」，说的是在某人门下学习。\n规则：「人／指導・管理＋のもとで」＝在某人的指导、影响或某种环境下（做某事）。\n辨析：写成汉字「下」时读音随意思变：具体位置读「した」（「机の下で猫が寝ている」）；“在某人门下”这种抽象意思读「もと」（「教授の下で学ぶ」）。",
+      "en": "Clue: 「有名な教授の」 is followed by 「経済学を学んだ」: studying under someone.\nRule: 「person / 指導・管理 ＋ のもとで」 = under someone's guidance or influence, or in a given environment.\nContrast: Written with the kanji 「下」, the reading follows the meaning: a physical place is 「した」 (「机の下で猫が寝ている」); the abstract \"under a teacher\" is 「もと」 (「教授の下で学ぶ」)."
     },
     "wrong": [
       null,
@@ -1041,8 +1042,8 @@
         "en": "「のかわりに」 means 'instead of'; studying economics instead of the professor makes no sense."
       },
       {
-        "zh": "「のあいだに」是“在……期间”，不能接「教授」这种人。",
-        "en": "「のあいだに」 means \"during\"; it can't follow a person."
+        "zh": "「のあいだに」是“在……期间”，接人时表示“在……之间（之中）”，表达不了“在教授门下”学习的意思。",
+        "en": "「のあいだに」 means \"during\" or, after people, \"among\" (「教授たちのあいだに」); it can't express studying under a professor."
       },
       {
         "zh": "「のわりに」是“与……相比出乎意料”，“教授的意外”说不通。",
@@ -1071,8 +1072,8 @@
       "en": "The new treatment was given with the patient's own consent."
     },
     "why": {
-      "zh": "「同意」是行动的前提，用「のもとに」（以……为前提）。",
-      "en": "「同意」 is the premise for the action, so 「のもとに」 fits."
+      "zh": "线索：「同意」是进行新治疗的前提。\n规则：「のもとに」多接「同意」「合意」「名目」等，表示以……为前提、名义，比「のもとで」书面。\n容易错：「同意のうえで」（在征得同意之后）是常见说法，容易让人选「うえに」；但「うえに」是“而且、再加上”，意思不同。\n辨析：「のもとで」偏向在某人影响或某种环境下：「監督のもとで強くなった」；「のもとに」偏向以此为前提、名义：「同意のもとに治療する」。不少句子两者可互换。",
+      "en": "Clue: 「同意」 is the premise for giving the new treatment.\nRule: 「のもとに」 usually follows words like 「同意」「合意」「名目」, meaning \"on that premise / in that name\"; it is more formal than 「のもとで」.\nTrap: 「同意のうえで」 (after getting consent) is a common phrase, which makes 「うえに」 tempting, but 「うえに」 means \"on top of that / besides\".\nContrast: 「のもとで」 leans toward being under someone's influence or in an environment: 「監督のもとで強くなった」; 「のもとに」 leans toward a premise or a name: 「同意のもとに治療する」. In many sentences either works."
     },
     "wrong": [
       {
@@ -1111,8 +1112,8 @@
       "en": "Under the new coach, the team became unrecognisably strong."
     },
     "why": {
-      "zh": "在「監督」的指导和影响下发生变化，用「のもとで」（在……之下）。",
-      "en": "The change happened under the coach's leadership, so 「のもとで」 fits."
+      "zh": "线索：「新しい監督」是人，后面是球队在他带领下发生的变化「強くなった」。\n规则：「人＋のもとで」＝在某人的领导、指导下，后面是在这种影响下发生或进行的事。\n辨析：「せいで」也引出结果的原因，但用于坏结果、带责怪：「監督のせいで負けた」；「監督のもとで強くなった」不是怪谁，是说在谁的带领下。",
+      "en": "Clue: 「新しい監督」 is a person, and what follows is the change in the team under him: 「強くなった」.\nRule: 「person ＋ のもとで」 = under someone's leadership or guidance; what follows happens under that influence.\nContrast: 「せいで」 also gives the cause of a result, but a bad one, with blame: 「監督のせいで負けた」. 「監督のもとで強くなった」 blames no one; it says under whose lead it happened."
     },
     "wrong": [
       {
@@ -1156,8 +1157,8 @@
       "en": "In graduate school, I carried on my research under Professor Tanaka's guidance."
     },
     "why": {
-      "zh": "田中教授の＋指導の＋もとで（在……之下）＋研究を＋続けた。★ 在第三格，是「研究を」。",
-      "en": "田中教授の ＋ 指導の ＋ もとで (under) ＋ 研究を ＋ 続けた. The ★ is the third slot: 「研究を」."
+      "zh": "线索：「もとで」前面要「名词＋の」，选项中「指導の」正好接上，组成「〜の指導のもとで」。\n怎么排：「田中教授の」修饰「指導」，「指導の＋もとで」先连好；后面是在这种指导下做的事：「研究を＋続けた」，动词「続けた」放在句尾。顺序：指導の → もとで → 研究を → 続けた，★ 是「研究を」。\n容易错：把「研究を」放在「もとで」前面。「指導の」的「の」后面要接「もとで」，中间不能插别的词。",
+      "en": "Clue: 「もとで」 needs 「noun ＋ の」 before it, and 「指導の」 fits, giving 「〜の指導のもとで」.\nOrder: 「田中教授の」 modifies 「指導」, so join 「指導の ＋ もとで」 first; then what was done under that guidance: 「研究を ＋ 続けた」, with the verb last: 指導の → もとで → 研究を → 続けた. The ★ is 「研究を」.\nTrap: Putting 「研究を」 before 「もとで」. The 「の」 of 「指導の」 must be followed by 「もとで」, with nothing in between."
     },
     "wrong": [
       null,

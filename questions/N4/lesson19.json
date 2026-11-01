@@ -21,8 +21,8 @@
       "en": "The baby cried in the night, and I couldn't sleep at all."
     },
     "why": {
-      "zh": "这是间接被动（迷惑被动）：别人做了某事让我受困扰，做动作的人用「に」：赤ちゃんに泣かれる。",
-      "en": "This is the nuisance passive: someone's action bothers me, and the one who does it takes 「に」: 赤ちゃんに泣かれる."
+      "zh": "线索：动词是被动「泣かれて」，后面是「ぜんぜん 寝られなかった」（完全没睡着），受困扰的是没写出来的“我”。\n规则：别人的动作让我受困扰，用间接被动（迷惑被动），「泣く」这种自动词也能这样用；做动作的人用「に」：赤ちゃんに 泣かれる。\n容易错：照中文“宝宝哭了”填「が」。动词已经是被动，哭的人要用「に」。",
+      "en": "Clue: The verb is the passive 「泣かれて」, followed by 「ぜんぜん 寝られなかった」 (couldn't sleep at all) — the one bothered is the unstated \"me\".\nRule: When someone's action causes me trouble, Japanese uses the indirect (nuisance) passive, even with intransitive verbs like 「泣く」; the one doing it takes 「に」: 赤ちゃんに 泣かれる.\nTrap: Thinking \"the baby cried\" and choosing 「が」. The verb is already passive, so the one crying takes 「に」."
     },
     "wrong": [
       null,
@@ -62,8 +62,8 @@
       "en": "On the train, the person next to me stepped on my foot. It really hurt."
     },
     "why": {
-      "zh": "脚被别人踩了、我很疼：身体部位被做了某事用持ち主被动「Bに＋部位を＋〜られる」。",
-      "en": "My foot got stepped on and it hurt: something done to my body part is the possessor passive 「Bに＋part を＋〜られる」."
+      "zh": "线索：「となりの 人に」加「足を」，后面是「とても 痛かった」（很疼）：疼的是我，踩的是旁边的人。\n规则：我的身体部位或东西被别人怎么样了，用持ち主被动「Bに＋部位を＋被动形」，主语是部位的主人（我）：足を 踏まれた。\n容易错：照中文说成「私の 足は 踏まれた」。日语一般把我当主语，部位用「を」。",
+      "en": "Clue: 「となりの 人に」 plus 「足を」, then 「とても 痛かった」 (it really hurt): I'm the one in pain, and the neighbour did the stepping.\nRule: When something is done to my body part or belongings, use the possessor passive 「B に ＋ part を ＋ passive」, with the owner (me) as subject: 足を 踏まれた.\nTrap: Translating word for word as 「私の 足は 踏まれた」. Japanese usually makes me the subject and marks the body part with 「を」."
     },
     "wrong": [
       null,
@@ -103,8 +103,8 @@
       "en": "This novel was written by Natsume Soseki."
     },
     "why": {
-      "zh": "作品的作者等创造行为的执行者，在客观描述的被动句里用「によって」。",
-      "en": "In a factual passive, the creator of a work is marked with 「によって」."
+      "zh": "线索：主语是作品「この 小説は」，动词是被动「書かれました」，空格前是作者的名字。\n规则：客观地说作品、建筑、发明是谁创造的（写、建、发明），被动句里的作者用「によって」：夏目漱石によって 書かれた。\n辨析：「によって」＝书面、客观地点出创造者；「に」＝日常的被动（母に 叱られた）。「について」只是“关于……”。",
+      "en": "Clue: The subject is a work, 「この 小説は」, the verb is the passive 「書かれました」, and the blank follows the author's name.\nRule: When stating objectively who created a work, building or invention (write, build, invent), the creator in the passive takes 「によって」: 夏目漱石によって 書かれた.\nContrast: 「によって」 names the creator in a formal, factual way; 「に」 is for everyday passives (母に 叱られた). 「について」 just means \"about\"."
     },
     "wrong": [
       null,
@@ -144,14 +144,14 @@
       "en": "I got 100 on the test and the teacher praised me. I was so happy."
     },
     "why": {
-      "zh": "我考了满分、很高兴，是“被老师表扬”：直接被动「先生に褒められる」。",
-      "en": "I scored 100 and was happy — I was praised by the teacher: the direct passive 「先生に褒められる」."
+      "zh": "线索：主语是考了 100 分的我，「先生に」是做动作的人，后面是「とても うれしかった」（很高兴）。\n规则：别人对我做了某事、我是承受者，用直接被动「人に＋被动形」：先生に 褒められる（褒める→褒められる）。\n容易错：以为被动都是“受害”。直接被动也可以是好事，比如被表扬、被邀请。",
+      "en": "Clue: The subject is me, who scored 100; 「先生に」 is the one acting, and then comes 「とても うれしかった」 (I was so happy).\nRule: When someone does something to me and I receive it, use the direct passive 「person に ＋ passive」: 先生に 褒められる (褒める → 褒められる).\nTrap: Thinking the passive is always about suffering. A direct passive can be good news too, like being praised or invited."
     },
     "wrong": [
       null,
       {
-        "zh": "「先生に褒めた」意思是“我表扬了老师”，和考满分的事接不上。",
-        "en": "「先生に褒めた」 would say I praised the teacher — it doesn't follow my 100 points."
+        "zh": "「先生に褒めた」不成立：「褒める」的对象要用「を」；而且考满分的是我，被表扬的应该是我。",
+        "en": "「先生に褒めた」 doesn't work: 褒める marks the person praised with 「を」, and since I scored 100, I'm the one being praised."
       },
       {
         "zh": "「褒めさせた」是“我让老师表扬（某人）”，不合语境。",
@@ -190,8 +190,8 @@
       "en": "At the station, a stranger stole my precious wallet."
     },
     "why": {
-      "zh": "持ち主被动：人に＋物を＋〜られる。大切な 財布を 盗まれて しまいました，★ 在第一格，是「大切な」。",
-      "en": "Possessor passive: person に ＋ thing を ＋ passive: 大切な 財布を 盗まれて しまいました. The ★ is the first slot: 「大切な」."
+      "zh": "线索：「知らない 人に」加碎片「財布を」「盗まれて」，是持ち主被动「人に 物を 〜られる」。\n怎么排：「盗まれて」和「しまいました」连成「〜て しまいました」（遗憾）放最后；「大切な」修饰「財布を」，放在它前面；「財布を」在「盗まれて」前面。顺序：大切な → 財布を → 盗まれて → しまいました，★ 是「大切な」。\n容易错：把「しまいました」放在中间。「〜て しまう」接在て形「盗まれて」后面，所以它占最后一格。",
+      "en": "Clue: 「知らない 人に」 plus the pieces 「財布を」 and 「盗まれて」 — the possessor passive 「person に thing を 〜られる」.\nOrder: 「盗まれて」 and 「しまいました」 join as 「〜て しまいました」 (regret) at the end; 「大切な」 describes 「財布を」 and goes before it; 「財布を」 comes before 「盗まれて」: 大切な → 財布を → 盗まれて → しまいました. The ★ is 「大切な」.\nTrap: Putting 「しまいました」 in the middle. 「〜て しまう」 follows the て-form 「盗まれて」, so it takes the last slot."
     },
     "wrong": [
       null,
@@ -223,8 +223,8 @@
       "en": "As a child, my mother made me practise the piano every day. I actually hated it."
     },
     "why": {
-      "zh": "“其实很讨厌”说明是被迫的：主语（我）被母亲逼着做，用使役被动「〜させられる」，做逼迫的人用「に」。",
-      "en": "「本当はいやだった」 shows I was forced: the causative-passive 「〜させられる」, with the one forcing me marked by 「に」."
+      "zh": "线索：「母に」，练琴的是我，后面是「本当は いやだった」（其实很讨厌）。\n规则：主语不情愿地被别人逼着做，用使役被动「〜させられる」，逼的人用「に」：母に 練習させられた（練習する→練習させられる）。\n辨析：「させて くれた」＝别人允许我做、我很感激；「させられた」＝被逼着做、我不情愿。「いやだった」配后者。",
+      "en": "Clue: 「母に」, I'm the one practising, and then 「本当は いやだった」 (I actually hated it).\nRule: When the subject is made to do something against their will, use the causative-passive 「〜させられる」, with the one forcing marked by 「に」: 母に 練習させられた (練習する → 練習させられる).\nContrast: 「させて くれた」 — someone let me do it and I'm grateful; 「させられた」 — I was made to do it against my will. 「いやだった」 goes with the second."
     },
     "wrong": [
       null,
@@ -233,8 +233,8 @@
         "en": "「母に練習させた」 would mean I made mother practise."
       },
       {
-        "zh": "「させてくれた」表示别人允许我做、我很感激，和“其实很讨厌”矛盾，而且给予方要用「が」。",
-        "en": "「させてくれた」 is a kindness I'm grateful for — it contradicts 「いやだった」, and the giver would take 「が」."
+        "zh": "「させてくれた」表示别人允许我做、我很感激，和“其实很讨厌”矛盾；而且「くれる」的给予方用「が」或「は」，不用「に」。",
+        "en": "「させてくれた」 is a kindness I'm grateful for — it contradicts 「いやだった」, and the giver with くれる takes が or は, not に."
       },
       {
         "zh": "「させてあげた」是“我让别人做（施恩）”，方向不对。",
@@ -264,8 +264,8 @@
       "en": "I can't hold my drink, yet at the party my senpai made me drink a lot."
     },
     "why": {
-      "zh": "“我酒量不行却……”说明我是被迫喝的：使役被动，一类动词口语缩略为「飲まされる」。",
-      "en": "「弱いのに」 shows I was forced to drink: the causative-passive, contracted for group 1 verbs to 「飲まされる」."
+      "zh": "线索：「お酒が 弱いのに」（明明酒量不行），喝的是我，「先輩に」是让我喝的人。\n规则：被别人逼着做用使役被动。一类动词（飲む、待つ）常缩成「〜される」：飲ませられる → 飲まされる（以「す」结尾的除外：話させられる）。\n辨析：「飲まれた」是被动，喝的是前辈；「飲まされた」是使役被动，喝的是我。",
+      "en": "Clue: 「お酒が 弱いのに」 (even though I can't hold my drink) — I'm the one drinking, and 「先輩に」 is the one making me.\nRule: Being made to do something is the causative-passive. Group 1 verbs (飲む, 待つ) are usually shortened to 「〜される」: 飲ませられる → 飲まされる (except verbs ending in す: 話させられる).\nContrast: 「飲まれた」 is the passive — senpai does the drinking; 「飲まされた」 is the causative-passive — I do the drinking."
     },
     "wrong": [
       null,
@@ -310,8 +310,8 @@
       "en": "Yesterday my friend kept me waiting at the station for a whole hour, and I was exhausted."
     },
     "why": {
-      "zh": "被朋友逼着等：使役被动「待たされる」。1時間も 待たされて とても 疲れました，★ 在第二格，是「待たされて」。",
-      "en": "Kept waiting by a friend: causative-passive 「待たされる」. 1時間も 待たされて とても 疲れました — the ★ is the second slot: 「待たされて」."
+      "zh": "线索：「友達に」加碎片「待たされて」，是使役被动（被朋友害得等）；「疲れました」是结果，放句尾。\n怎么排：「1時間も」（足足一小时）说等了多久，放在「待たされて」前面；「とても」修饰「疲れました」，紧挨在它前面。顺序：1時間も → 待たされて → とても → 疲れました，★ 是「待たされて」。\n容易错：把「とても」放到「待たされて」前面。这里「とても」说的是累，要贴着「疲れました」。",
+      "en": "Clue: 「友達に」 plus the piece 「待たされて」 is the causative-passive (my friend kept me waiting); 「疲れました」 is the result and goes last.\nOrder: 「1時間も」 (a whole hour) says how long I waited and goes before 「待たされて」; 「とても」 describes 「疲れました」 and sits right before it: 1時間も → 待たされて → とても → 疲れました. The ★ is 「待たされて」.\nTrap: Putting 「とても」 before 「待たされて」. Here 「とても」 says how tired I was, so it stays next to 「疲れました」."
     },
     "wrong": [
       null,
@@ -342,8 +342,8 @@
       "en": "The students were made to write three whole pages for the teacher, which was really hard."
     },
     "why": {
-      "zh": "主语是学生，写作文的也是学生，而且很辛苦：被逼着做 → 使役被动「書かされる」。",
-      "en": "The students are the subject and the ones writing, and it was hard: being made to do → causative-passive 「書かされる」."
+      "zh": "线索：主语「学生は」，写作文的也是学生，「先生に」是让他们写的人，后面是「とても 大変だった」（很辛苦）。\n规则：主语被别人逼着做，用使役被动；一类动词常缩成「〜される」：書かせられる → 書かされる（以「す」结尾的除外：話させられる）。\n技巧：先问“动作是谁做的”：主语叫别人做→使役；别人做、落到主语身上→被动；主语自己做但是被逼的→使役被动。",
+      "en": "Clue: The subject is 「学生は」, the students are also the ones writing, 「先生に」 is who made them, and then 「とても 大変だった」 (it was really hard).\nRule: When the subject is made to do something, use the causative-passive; Group 1 verbs usually shorten to 「〜される」: 書かせられる → 書かされる (except verbs ending in す: 話させられる).\nTip: First ask who performs the action: the subject has someone else do it → causative; someone else does it to the subject → passive; the subject does it but was forced → causative-passive."
     },
     "wrong": [
       null,
@@ -356,8 +356,8 @@
         "en": "「書かれて」 (passive) would mean the teacher wrote it, but the students did the writing."
       },
       {
-        "zh": "「書かせてくれて」是“老师好心让学生写”，和“非常辛苦”不合，而且给予方要用「が」。",
-        "en": "「書かせてくれて」 is a kindness — it clashes with 「大変だった」, and the giver would take 「が」."
+        "zh": "「書かせてくれて」是“老师好心让学生写”，和“非常辛苦”不合；而且「くれる」的给予方用「が」或「は」，不用「に」。",
+        "en": "「書かせてくれて」 is a kindness — it clashes with 「大変だった」, and the giver with くれる takes が or は, not に."
       }
     ]
   },
@@ -384,8 +384,8 @@
       "en": "When I went out, I suddenly got caught in the rain, which was a pain."
     },
     "why": {
-      "zh": "下雨让我困扰：自然现象带来的麻烦用迷惑被动「雨に降られる」。",
-      "en": "The rain caused me trouble: a natural event bothering me is the nuisance passive 「雨に降られる」."
+      "zh": "线索：「雨に」，后面是「困りました」（真头疼）：下雨给我添了麻烦。\n规则：自然现象或别人的动作让我受困扰，用间接被动（迷惑被动）：雨に 降られる（被雨淋）。「降る」是自动词，也能这样变被动。\n容易错：想填普通的「降って」。可「降って」要说「雨が 降って」，前面是「雨に」就要用被动。",
+      "en": "Clue: 「雨に」, then 「困りました」 (it was a pain): the rain caused me trouble.\nRule: When nature or someone's action causes me trouble, use the indirect (nuisance) passive: 雨に 降られる (get caught in the rain). 「降る」 is intransitive but can still take this passive.\nTrap: Choosing the plain 「降って」. That needs 「雨が 降って」; after 「雨に」, the passive is required."
     },
     "wrong": [
       null,
@@ -398,8 +398,8 @@
         "en": "「降らせて」 (making it rain) doesn't fit 「困りました」."
       },
       {
-        "zh": "「降って」要说「雨が降って」；前面是「雨に」，只能接被动。",
-        "en": "「降って」 needs 「雨が降って」; after 「雨に」 only the passive works."
+        "zh": "「降って」要说「雨が 降って」；前面是「雨に」，这里要用被动「降られて」。",
+        "en": "「降って」 would need 「雨が降って」; after 「雨に」 the passive 「降られて」 is needed."
       }
     ]
   },
@@ -438,8 +438,8 @@
       "en": "When I was little, my mother made me eat vegetables I hated, and I didn't like it."
     },
     "why": {
-      "zh": "被妈妈逼着吃：二类动词使役被动「食べさせられる」。きらいな 野菜を 食べさせられて いやだった，★ 在第三格，是「食べさせられて」。",
-      "en": "Made to eat by mother: the causative-passive of a group 2 verb is 「食べさせられる」. きらいな 野菜を 食べさせられて いやだった — the ★ is the third slot: 「食べさせられて」."
+      "zh": "线索：「母に」加碎片「食べさせられて」，是使役被动（被妈妈逼着吃）；感受「いやだった」放句尾。\n怎么排：「きらいな」修饰「野菜を」，放在它前面；宾语「野菜を」放在「食べさせられて」前面；て形「食べさせられて」后面接「いやだった」。顺序：きらいな → 野菜を → 食べさせられて → いやだった，★ 是「食べさせられて」。\n容易错：把「きらいな」和「いやだった」弄反。「きらいな」后面要接名词「野菜」，「いやだった」才是句子的结尾。",
+      "en": "Clue: 「母に」 plus the piece 「食べさせられて」 is the causative-passive (mother made me eat); 「いやだった」 (I hated it) is the feeling and goes last.\nOrder: 「きらいな」 describes 「野菜を」 and goes before it; the object 「野菜を」 comes before 「食べさせられて」; the て-form 「食べさせられて」 is followed by 「いやだった」: きらいな → 野菜を → 食べさせられて → いやだった. The ★ is 「食べさせられて」.\nTrap: Swapping 「きらいな」 and 「いやだった」. 「きらいな」 must be followed by a noun (野菜); 「いやだった」 is what ends the sentence."
     },
     "wrong": [
       null,

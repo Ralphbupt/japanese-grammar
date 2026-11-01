@@ -27,8 +27,8 @@
       "en": "The movie I saw yesterday wasn't very interesting."
     },
     "why": {
-      "zh": "「あまり」后面要接否定；い形容词的过去否定是「い→くなかった」：面白くなかったです。",
-      "en": "「あまり」 needs a negative, and an い-adjective's past negative is い → くなかった: 面白くなかったです."
+      "zh": "线索：前面有「あまり」（不太），说的又是「きのう 見た」电影，是过去的事。\n规则：「あまり」后面要接否定；い形容词的过去否定是把「い」换成「くなかった」：「おもしろい」→「おもしろくなかった」。",
+      "en": "Clue: 「あまり」 (not very) is there, and the film is one 「きのう 見た」 — in the past.\nRule: 「あまり」 needs a negative, and an い-adjective's past negative swaps い for くなかった: 「おもしろい」 → 「おもしろくなかった」."
     },
     "wrong": [
       null,
@@ -68,8 +68,8 @@
       "en": "The weather was nice yesterday, so I took a walk in the park."
     },
     "why": {
-      "zh": "「いい」变形时词干变成「よ」，过去形是「よかった」。",
-      "en": "「いい」 conjugates from 「よ-」: the past is 「よかった」."
+      "zh": "线索：「きのうは」是过去；空格后是「から」（因为），结果是去公园散步了，所以天气是好的。\n规则：「いい」变形时要先变成「よ」：「よくない」「よかった」；过去肯定就是「よかった」，不能说「いかった」。",
+      "en": "Clue: 「きのうは」 is past; 「から」 (because) follows the blank and the result is a walk in the park, so the weather was good.\nRule: 「いい」 turns into よ- whenever it conjugates (「よくない」「よかった」); its past affirmative is 「よかった」, never 「いかった」."
     },
     "wrong": [
       null,
@@ -114,8 +114,8 @@
       "en": "A: Do you know a cheap and tasty restaurant near the station? B: Yes, there's a ramen shop."
     },
     "why": {
-      "zh": "い形容词的て形「い→くて」用来连接两个形容词：安くて おいしい，再修饰「レストラン」，最后接「を」。★ 是第一格「安くて」。",
-      "en": "The い-adjective て-form (い → くて) links two adjectives: 安くて おいしい, which modify 「レストラン」, then 「を」. The ★ is 「安くて」."
+      "zh": "线索：「しって いますか」要一个带「を」的宾语；「駅の ちかくの」后面要接名词。\n怎么排：「レストラン＋を」放最后；两个形容词连起来，前一个用て形「安くて」，后一个「おいしい」保持原形，直接放在「レストラン」前面。顺序：安くて → おいしい → レストラン → を，★ 是「安くて」。\n容易错：排成「おいしい 安くて」。「〜くて」是往后连的，必须在前面。",
+      "en": "Clue: 「しって いますか」 needs an object with 「を」, and 「駅の ちかくの」 needs a noun after it.\nOrder: 「レストラン ＋ を」 goes last; of the two adjectives, the first takes the て-form 「安くて」 and the second, 「おいしい」, stays as is right before 「レストラン」: 安くて → おいしい → レストラン → を. The ★ is 「安くて」.\nTrap: 「おいしい 安くて」. The 〜くて form links forward, so it has to come first."
     },
     "wrong": [
       null,
@@ -152,8 +152,8 @@
       "en": "That person is a very famous singer."
     },
     "why": {
-      "zh": "「有名」是な形容词，修饰名词要加「な」：有名な 歌手。",
-      "en": "「有名」 is a な-adjective; before a noun it takes 「な」: 有名な 歌手."
+      "zh": "线索：空格紧挨着名词「かしゅ」；「ゆうめい」是な形容词。\n规则：な形容词修饰名词时加「な」：「ゆうめいな かしゅ」。名词修饰名词才用「の」（「日本の かしゅ」）。",
+      "en": "Clue: The blank sits right before the noun 「かしゅ」, and 「ゆうめい」 is a な-adjective.\nRule: A な-adjective takes 「な」 before a noun: 「ゆうめいな かしゅ」. 「の」 is for a noun describing a noun (「日本の かしゅ」)."
     },
     "wrong": [
       null,
@@ -193,8 +193,8 @@
       "en": "It's clean now, but this room wasn't very clean before."
     },
     "why": {
-      "zh": "「きれい」是な形容词，过去否定是「じゃなかった」；「あまり」也要求否定。",
-      "en": "「きれい」 is a な-adjective, so the past negative is 「じゃなかった」; 「あまり」 also needs a negative."
+      "zh": "线索：「今は きれいですが」和「前は」对比，说的是以前；后面还有「あまり」。\n规则：「あまり」后面接否定；「きれい」是な形容词，过去否定是「きれいじゃなかった」。\n容易错：「きれい」以「い」结尾，但不是い形容词，不能变成「きれくなかった」。",
+      "en": "Clue: 「今は きれいですが」 is contrasted with 「前は」 (before), and 「あまり」 follows.\nRule: 「あまり」 needs a negative, and 「きれい」 is a な-adjective, so its past negative is 「きれいじゃなかった」.\nTrap: 「きれい」 ends in い but isn't an い-adjective — there's no 「きれくなかった」."
     },
     "wrong": [
       null,
@@ -245,8 +245,8 @@
       "en": "A: This is a quiet, pretty town, isn't it? B: Yes, I like this town too."
     },
     "why": {
-      "zh": "な形容词的て形是「で」，用来连接：静かで きれいな 町 です。★ 是第二格「きれいな」。",
-      "en": "A な-adjective's て-form is 「で」: 静かで きれいな 町 です. The ★ is 「きれいな」."
+      "zh": "线索：「ここは〜ですね」，「です」前面要一个名词，就是「まち」。\n怎么排：两个な形容词连起来，前一个用て形「しずかで」，后一个用「きれいな」直接修饰「まち」，「です」放最后。顺序：しずかで → きれいな → まち → です，★ 是「きれいな」。\n容易错：排成「きれいな しずかで まち」。「〜な」必须贴着名词，「〜で」在前面往后连。",
+      "en": "Clue: 「ここは〜ですね」 needs a noun before 「です」, which is 「まち」.\nOrder: Of the two な-adjectives, the first takes the て-form 「しずかで」 and the second, 「きれいな」, describes 「まち」 directly; 「です」 ends it: しずかで → きれいな → まち → です. The ★ is 「きれいな」.\nTrap: 「きれいな しずかで まち」. The な form must touch the noun; the で form comes first and links forward."
     },
     "wrong": [
       null,
@@ -277,8 +277,8 @@
       "en": "Tokyo is bigger than Osaka."
     },
     "why": {
-      "zh": "“A 比 B 更……”是「AはBより〜」。",
-      "en": "\"A is more … than B\" is 「AはBより〜」."
+      "zh": "线索：拿东京和大阪比，句尾是肯定的「大きいです」。\n规则：“A 比 B 更……”是「A は B より〜」，「より」接在被比较的那一方后面。「ほど」也能比较，但后面要接否定。",
+      "en": "Clue: Tokyo is compared with Osaka, and the sentence ends in the affirmative 「大きいです」.\nRule: \"A is more … than B\" is 「A は B より〜」, with 「より」 after the thing being compared against. 「ほど」 compares too, but needs a negative after it."
     },
     "wrong": [
       null,
@@ -318,8 +318,8 @@
       "en": "A: Which do you like better, cats or dogs? B: I prefer cats."
     },
     "why": {
-      "zh": "回答「どちらが」的二选一问题，用「〜のほうが」指出选中的一方。",
-      "en": "A two-way 「どちらが」 question is answered with 「〜のほうが」, marking the chosen one."
+      "zh": "线索：A 问「ねこと いぬと、どちらが すきですか」，是二选一。\n规则：回答“哪一个”时，用「〜の ほうが」指出选中的一方：「ねこの ほうが すきです」。",
+      "en": "Clue: A asks 「ねこと いぬと、どちらが すきですか」 — a choice between two.\nRule: The answer to \"which one\" marks the chosen side with 「〜の ほうが」: 「ねこの ほうが すきです」."
     },
     "wrong": [
       null,
@@ -365,8 +365,8 @@
       "en": "Today isn't as hot as yesterday."
     },
     "why": {
-      "zh": "「AはBほど〜」后面必须接否定：暑くないです（没有那么热）。",
-      "en": "「AはBほど〜」 must end in a negative: 暑くないです (not as hot)."
+      "zh": "线索：空格前面是「きのうほど」。\n规则：「A は B ほど〜ない」是“A 没有 B 那么……”，「ほど」后面一定接否定：「あつくない」。\n技巧：比较句先看比较用的助词：「より」配肯定，「ほど」配否定，选项一下就能去掉一半。",
+      "en": "Clue: 「きのうほど」 comes right before the blank.\nRule: 「A は B ほど〜ない」 means \"A isn't as … as B\"; this 「ほど」 always needs a negative: 「あつくない」.\nTip: In comparisons, check the particle first: 「より」 goes with an affirmative, 「ほど」 with a negative. That rules out half the options at once."
     },
     "wrong": [
       null,
@@ -406,8 +406,8 @@
       "en": "Which fruit do you like the most?"
     },
     "why": {
-      "zh": "「〜の中で、〜が一番〜」：「好き」的对象用「が」，疑问词作主语也用「が」。",
-      "en": "「〜の中で、〜が一番〜」: the object of 「好き」 takes 「が」, and so does a question word."
+      "zh": "线索：「くだものの 中で」「いちばん」，是在一组里问“最……”；空格前是疑问词「何」。\n规则：句型「〜の 中で、〜が いちばん〜」：疑问词做主语用「が」，「すき」的对象也用「が」。",
+      "en": "Clue: 「くだものの 中で」 and 「いちばん」 ask for the top one in a group, and the question word 「何」 comes before the blank.\nRule: The pattern is 「〜の 中で、〜が いちばん〜」: a question word as subject takes 「が」, and so does the object of 「すき」."
     },
     "wrong": [
       null,
@@ -452,8 +452,8 @@
       "en": "A: Are you taking the bus to the station? B: No — the train is faster than the bus."
     },
     "why": {
-      "zh": "「AよりBのほうが〜」：バスより 電車 の ほう が 速い。★ 是第三格「ほう」。",
-      "en": "「AよりBのほうが〜」: バスより 電車 の ほう が 速い. The ★ is 「ほう」."
+      "zh": "线索：前面有「バスより」，后面是「はやいですから」，是句型「A より B の ほうが〜」。\n怎么排：「の＋ほう＋が」是固定的一串，前面放比较后选中的「電車」。顺序：電車 → の → ほう → が，★ 是「ほう」。\n容易错：把「が」直接接在「電車」后面。「が」要接在「ほう」后面：「電車の ほうが」。",
+      "en": "Clue: 「バスより」 before and 「はやいですから」 after point to 「A より B の ほうが〜」.\nOrder: 「の ＋ ほう ＋ が」 is a fixed string, with the winner, 「電車」, in front: 電車 → の → ほう → が. The ★ is 「ほう」.\nTrap: Attaching 「が」 straight to 「電車」. が goes after ほう: 「電車の ほうが」."
     },
     "wrong": [
       null,
@@ -484,8 +484,8 @@
       "en": "The kids are asleep, so please turn the TV down."
     },
     "why": {
-      "zh": "“把……弄成……”是「〜くする」，い形容词「小さい」变「小さく」。",
-      "en": "\"Make it …\" is 「〜くする」: 小さい → 小さく."
+      "zh": "线索：空格后面是「して ください」，要求把音量调成某种样子。\n规则：“把……弄得……”是「い形容词去い＋く＋する」：「小さい」→「小さく する」。",
+      "en": "Clue: 「して ください」 follows the blank — asking to make the volume a certain way.\nRule: \"Make something …\" is an い-adjective with い changed to く, plus 「する」: 「小さい」 → 「小さく する」."
     },
     "wrong": [
       null,
@@ -525,8 +525,8 @@
       "en": "I studied every day, so my Japanese got better."
     },
     "why": {
-      "zh": "“变得……”是な形容词＋「になる」：上手に なりました。",
-      "en": "\"Become …\" for a な-adjective is 「〜になる」: 上手に なりました."
+      "zh": "线索：空格后面是「なりました」（变得）。\n规则：“变得……”：い形容词用「〜く なる」（「大きく なる」），な形容词用「〜に なる」。「上手」是な形容词，所以是「上手に なる」。",
+      "en": "Clue: 「なりました」 (became) follows the blank.\nRule: \"Become …\" is 「〜く なる」 for い-adjectives (「大きく なる」) and 「〜に なる」 for な-adjectives. 「上手」 is a な-adjective, so 「上手に なる」."
     },
     "wrong": [
       null,
@@ -577,8 +577,8 @@
       "en": "Please be quiet in the library."
     },
     "why": {
-      "zh": "な形容词副词化是「〜に」：静か に して ください。★ 在第一格，是「静か」。",
-      "en": "A な-adjective becomes an adverb with 「〜に」: 静か に して ください. The ★ is the first slot: 「静か」."
+      "zh": "线索：有「して」和「ください」，是请求「〜して ください」；还有「しずか」和「に」。\n怎么排：「しずか＋に」把な形容词变成修饰动作的样子，放在「して」前面；「ください」放最后。顺序：しずか → に → して → ください，★ 是「しずか」。\n容易错：把「に」放在「しずか」前面。「に」要接在な形容词后面：「しずかに」。",
+      "en": "Clue: 「して」 and 「ください」 make the request 「〜して ください」, and 「しずか」 pairs with 「に」.\nOrder: 「しずか ＋ に」 turns the な-adjective into a description of the action and goes before 「して」; 「ください」 is last: しずか → に → して → ください. The ★ is 「しずか」.\nTrap: Putting 「に」 before 「しずか」. に follows the な-adjective: 「しずかに」."
     },
     "wrong": [
       null,

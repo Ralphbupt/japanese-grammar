@@ -21,8 +21,8 @@
       "en": "There are lots of beautiful flowers in that park."
     },
     "why": {
-      "zh": "“某处有某物”用「〜に〜がある」；花是植物，日语里植物用「ある」。",
-      "en": "\"There is … at …\" is 「〜に〜がある」; plants count as non-living in Japanese, so 「ある」."
+      "zh": "线索：在公园里存在的是「花」，句型是「〜には 〜が たくさん（　）」。\n规则：说某处有什么，人和动物用「いる」，东西和植物用「ある」。花虽然有生命，日语里也用「ある」。",
+      "en": "Clue: What exists in the park is 「花」 (flowers), in the frame 「〜には 〜が たくさん（　）」.\nRule: For saying something is somewhere, people and animals take 「いる」, things and plants take 「ある」. Flowers are alive, but Japanese still uses 「ある」."
     },
     "wrong": [
       null,
@@ -62,8 +62,8 @@
       "en": "A: Where's Tanaka? B: In the next room."
     },
     "why": {
-      "zh": "田中是人，表示人在某处用「場所に いる」。",
-      "en": "Tanaka is a person, so his location is 「place に いる」."
+      "zh": "线索：问的是「たなかさん」在哪儿，回答里有地点「となりの へやに」。\n规则：人或动物在某处用「場所に いる」；「ある」只用于东西。用「です」时要去掉「に」，说「となりの へやです」。",
+      "en": "Clue: The question is where 「たなかさん」 is, and the reply has a place with 「に」: 「となりの へやに」.\nRule: A person or animal being somewhere is 「場所に いる」; 「ある」 is only for things. To use 「です」 you'd drop the 「に」: 「となりの へやです」."
     },
     "wrong": [
       null,
@@ -114,8 +114,8 @@
       "en": "There are red fish in the pond."
     },
     "why": {
-      "zh": "「場所に＋生物＋が＋いる」：赤い 魚 が います。鱼是动物，用「いる」。★ 在第三格，是「が」。",
-      "en": "「place に ＋ living thing ＋ が ＋ いる」: 赤い 魚 が います — fish are animals, so 「いる」. The ★ is the third slot: 「が」."
+      "zh": "线索：「いけの 中に」是地点，四块里有「が」「います」，是存在句「場所に 〜が いる」。\n怎么排：「あかい」修饰「魚」，放在它前面；「が」接在名词「魚」后面；「います」放最后（鱼是动物，用「いる」）。顺序：あかい → 魚 → が → います，★ 是「が」。\n容易错：把「が」接在「あかい」后面。「が」要接在名词后面：「魚が」。",
+      "en": "Clue: 「いけの 中に」 is a place, and the pieces 「が」「います」 give the existence pattern 「場所に 〜が いる」.\nOrder: 「あかい」 describes 「魚」, so it goes first; 「が」 follows the noun 「魚」; 「います」 ends it (fish are animals, so 「いる」): あかい → 魚 → が → います. The ★ is 「が」.\nTrap: Attaching 「が」 to 「あかい」. 「が」 goes after the noun: 「魚が」."
     },
     "wrong": [
       null,
@@ -146,8 +146,8 @@
       "en": "Tomorrow I'll go to the library to borrow books."
     },
     "why": {
-      "zh": "“去做某事”：ます形（借り）＋「に」＋行く，「に」表示移动的目的。",
-      "en": "\"Go to do\": ます-stem (借り) ＋ 「に」 ＋ 行く — 「に」 marks the purpose of the movement."
+      "zh": "线索：空格前是「かり」（「かります」去掉「ます」），后面是移动动词「行きます」。\n规则：“去做某事”是「ます」前的部分＋「に」＋「行く／来る／帰る」，「に」表示去的目的：「かりに 行く」（去借）。",
+      "en": "Clue: Before the blank is 「かり」 (「かります」 without 「ます」), and after it the movement verb 「行きます」.\nRule: \"Go to do ~\" is the part before 「ます」 ＋ 「に」 ＋ 「行く／来る／帰る」, where 「に」 marks the purpose: 「かりに 行く」 (go to borrow)."
     },
     "wrong": [
       null,
@@ -187,8 +187,8 @@
       "en": "On Sunday I went to see a movie with a friend."
     },
     "why": {
-      "zh": "「に行く」前面接ます形去「ます」：見ます → 見＋に行く。",
-      "en": "「に行く」 follows the ます-stem: 見ます → 見 ＋ に行く."
+      "zh": "线索：空格后面是「に 行きました」，前面有宾语「えいがを」，说的是去的目的。\n规则：表示目的的「に」接在「ます」前面的部分：「見ます」→「見に 行く」。「見る」是二类动词，去掉「ます」只剩「見」。",
+      "en": "Clue: After the blank comes 「に 行きました」, with the object 「えいがを」 before it — the purpose of going.\nRule: The purpose 「に」 joins the part before 「ます」: 「見ます」 → 「見に 行く」. 「見る」 is Group 2, so without 「ます」 only 「見」 is left."
     },
     "wrong": [
       null,
@@ -239,8 +239,8 @@
       "en": "I forgot my wallet, so I went home to get it."
     },
     "why": {
-      "zh": "「家へ」是方向，「取り（ます形）＋に＋帰る」表示回去的目的。★ 在第四格，是「帰りました」。",
-      "en": "「家へ」 is the direction; 「取り (ます-stem) ＋ に ＋ 帰る」 gives the purpose of going back. The ★ is the fourth slot: 「帰りました」."
+      "zh": "线索：「とり」「に」「かえりました」能连成「とりに かえる」（回去拿），是目的移动的句型。\n怎么排：「とり＋に」表示目的，放在移动动词「かえりました」前面；去的地方「いえへ」放最前。顺序：いえへ → とり → に → かえりました，★ 是「かえりました」。\n容易错：把「に」接在「いえへ」后面。「に」要紧跟在「とり」后面，表示去做什么。",
+      "en": "Clue: 「とり」「に」「かえりました」 form 「とりに かえる」 (go back to get), the purpose-of-movement pattern.\nOrder: 「とり」 ＋ 「に」 is the purpose and comes before the movement verb 「かえりました」; the destination 「いえへ」 goes first: いえへ → とり → に → かえりました. The ★ is 「かえりました」.\nTrap: Attaching 「に」 to 「いえへ」. It belongs right after 「とり」, saying what you go back to do."
     },
     "wrong": [
       null,
@@ -272,8 +272,8 @@
       "en": "I like reading books."
     },
     "why": {
-      "zh": "「のが好き」前面接动词辞书形，「の」把动词变成名词：読む＋のが好き。",
-      "en": "「のが好き」 follows the dictionary form; 「の」 turns the verb into a noun: 読む ＋ のが好き."
+      "zh": "线索：空格后面是「のが すきです」。\n规则：「の」把动词变成名词，前面用简体；这里说的是爱好，用辞书形：「読むのが すき」。「読みます」这种礼貌形不能放在「の」前面。",
+      "en": "Clue: The blank is followed by 「のが すきです」.\nRule: 「の」 turns a verb into a noun, and the verb before it is in plain form — here, for a habit, the dictionary form: 「読むのが すき」. A polite form like 「読みます」 can't go before 「の」."
     },
     "wrong": [
       null,
@@ -319,8 +319,8 @@
       "en": "Tanaka is good at cooking. Tanaka's food is always delicious."
     },
     "why": {
-      "zh": "后一句说“做的菜总是好吃”，评价别人做得好用「上手」。",
-      "en": "The next sentence says the food is always good — praising someone else's skill is 「上手」."
+      "zh": "线索：后一句说「たなかさんの りょうりは いつも おいしい」，是在夸田中。\n规则：评价别人某件事做得好，用「〜のが 上手です」；「下手」「にがて」都是做得不好，和后一句矛盾。",
+      "en": "Clue: The next sentence, 「たなかさんの りょうりは いつも おいしい」, praises Tanaka.\nRule: To say someone else is good at doing something, use 「〜のが 上手です」; 「下手」 and 「にがて」 both mean not good at it, which the next sentence contradicts."
     },
     "wrong": [
       null,
@@ -371,8 +371,8 @@
       "en": "My younger brother is bad at drawing."
     },
     "why": {
-      "zh": "「絵をかく」（辞书形）＋「のが」＋「下手です」。★ 在第二格，是「かく」。",
-      "en": "「絵をかく」 (dictionary form) ＋ 「のが」 ＋ 「下手です」. The ★ is the second slot: 「かく」."
+      "zh": "线索：「のが」和「下手です」能连成「〜のが 下手です」（做……做得不好）。\n怎么排：「のが」前面要一个辞书形动词，就是「かく」；「えを」是「かく」的宾语，放在它前面；「下手です」放句尾。顺序：えを → かく → のが → 下手です，★ 是「かく」。\n容易错：把「えを」放在「のが」后面。「の」前面是一整件事「えを かく」，宾语要跟着自己的动词。",
+      "en": "Clue: 「のが」 and 「下手です」 make 「〜のが 下手です」 (bad at doing ~).\nOrder: 「のが」 needs a dictionary-form verb before it — 「かく」; 「えを」 is its object, so it comes first; 「下手です」 ends the sentence: えを → かく → のが → 下手です. The ★ is 「かく」.\nTrap: Putting 「えを」 after 「のが」. The whole activity 「えを かく」 comes before 「の」, object with its verb."
     },
     "wrong": [
       null,
@@ -403,8 +403,8 @@
       "en": "I study Japanese for about two hours every day."
     },
     "why": {
-      "zh": "「2時間」是时长，表示“大约多长时间”用「ぐらい」。",
-      "en": "「2時間」 is a length of time, and \"about\" with an amount is 「ぐらい」."
+      "zh": "线索：「2時間」是一段时间的长度（两个小时），不是时刻（两点）。\n规则：时长、数量后面表示“大约”用「ぐらい／くらい」；「ごろ」接时间点（「2時ごろ」「5月ごろ」），不接时长。\n技巧：看是「時」还是「時間」：「2時」是时刻，配「ごろ」；「2時間」是长度，配「ぐらい」。",
+      "en": "Clue: 「2時間」 is a length of time (two hours), not a point in time (two o'clock).\nRule: \"About\" after a length or amount is 「ぐらい／くらい」; 「ごろ」 follows a point in time (「2時ごろ」, 「5月ごろ」), not a length.\nTip: Check whether it says 「時」 or 「時間」: 「2時」 is a time on the clock and takes 「ごろ」; 「2時間」 is a duration and takes 「ぐらい」."
     },
     "wrong": [
       null,
@@ -444,8 +444,8 @@
       "en": "It takes about three hours from Tokyo to Osaka by shinkansen."
     },
     "why": {
-      "zh": "「かかります」说的是花多长时间，「3時間」是时长，用「ぐらい」表示大约。",
-      "en": "「かかります」 is about how long it takes; 「3時間」 is a duration, so \"about\" is 「ぐらい」."
+      "zh": "线索：句尾「かかります」（花费）说的是要花多久，「3時間」是时长。\n规则：大约花多少时间，用「数量＋ぐらい＋かかります」。「まで」「から」是终点、起点，不表示“大约”。",
+      "en": "Clue: 「かかります」 (takes) at the end is about how long it takes, and 「3時間」 is a duration.\nRule: \"Takes about ~\" is amount ＋ 「ぐらい」 ＋ 「かかります」. 「まで」 and 「から」 mark an end and a start point, not \"about\"."
     },
     "wrong": [
       null,
@@ -496,8 +496,8 @@
       "en": "It takes about ten minutes to walk to the station."
     },
     "why": {
-      "zh": "「歩いて」（走路）表示方式，「10分ぐらい」（大约十分钟）＋「かかります」。★ 在第三格，是「ぐらい」。",
-      "en": "「歩いて」 (on foot) is the means, then 「10分ぐらい」 (about ten minutes) ＋ 「かかります」. The ★ is the third slot: 「ぐらい」."
+      "zh": "线索：「10分」「ぐらい」「かかります」能连成「10分ぐらい かかります」（大约要十分钟）。\n怎么排：「ぐらい」紧接在数量「10分」后面；「あるいて」说怎么去，放在「10分ぐらい かかります」前面。顺序：あるいて → 10分 → ぐらい → かかります，★ 是「ぐらい」。\n容易错：把「ぐらい」放在「10分」前面。「ぐらい」总是接在数量后面：「10分ぐらい」。",
+      "en": "Clue: 「10分」「ぐらい」「かかります」 make 「10分ぐらい かかります」 (takes about ten minutes).\nOrder: 「ぐらい」 goes right after the amount 「10分」; 「あるいて」 says how you go, so it comes before 「10分ぐらい かかります」: あるいて → 10分 → ぐらい → かかります. The ★ is 「ぐらい」.\nTrap: Putting 「ぐらい」 before 「10分」. It always follows the amount: 「10分ぐらい」."
     },
     "wrong": [
       null,
@@ -528,8 +528,8 @@
       "en": "I want to go to various cities in Japan, like Tokyo and Kyoto."
     },
     "why": {
-      "zh": "后面有「など」和「いろいろな町」，只是举几个例子，部分列举用「AやBなど」。",
-      "en": "「など」 and 「いろいろな町」 show these are only examples — partial listing is 「AやBなど」."
+      "zh": "线索：后面有「など」（等等），又说「いろいろな まち」，东京、京都只是举的例子。\n规则：举几个例子、暗示还有别的，用「AやBなど」；全部列完才用「と」。",
+      "en": "Clue: 「など」 (and so on) follows, plus 「いろいろな まち」, so Tokyo and Kyoto are just examples.\nRule: Listing a few examples, with more implied, is 「A や B など」; 「と」 is for a complete list."
     },
     "wrong": [
       null,
@@ -569,8 +569,8 @@
       "en": "In the bag there's a book and a pen. Nothing else."
     },
     "why": {
-      "zh": "后一句说“没有别的东西”，说明全部列出来了，穷举用「と」。",
-      "en": "The next sentence says there's nothing else, so the list is complete — that's 「と」."
+      "zh": "线索：后一句「ほかの ものは ありません」（没有别的东西），说明已经全部列出来了。\n规则：全部列举用「AとB」；「や」表示只是举例、还有别的，和后一句矛盾。\n技巧：「と」「や」二选一时，找“就这些”还是“还有别的”的提示：有「ほかに〜ない」选「と」，有「など」「いろいろ」选「や」。",
+      "en": "Clue: The next sentence, 「ほかの ものは ありません」 (there's nothing else), means the list is complete.\nRule: A complete list uses 「A と B」; 「や」 means these are just examples with more besides, which the next sentence rules out.\nTip: Choosing between 「と」 and 「や」, look for a hint of \"that's all\" or \"and more\": nothing else → 「と」; 「など」 or 「いろいろ」 → 「や」."
     },
     "wrong": [
       null,
@@ -615,8 +615,8 @@
       "en": "On the desk there are books, notebooks and so on."
     },
     "why": {
-      "zh": "「本や ノート など」是部分列举，后接「が あります」。★ 在第四格，是「が」。",
-      "en": "「本や ノート など」 is a partial list, followed by 「が あります」. The ★ is the fourth slot: 「が」."
+      "zh": "线索：「本や」「ノート」「など」是部分列举「AやBなど」，句尾是「あります」。\n怎么排：「本や」后面接第二个名词「ノート」，「など」收在列举最后；存在的东西要加「が」，所以「が」接在「など」后面，紧挨「あります」。顺序：本や → ノート → など → が，★ 是「が」。\n容易错：把「が」放在「など」前面。「など」是列举的一部分，助词要放在整串的后面：「ノートなどが」。",
+      "en": "Clue: 「本や」「ノート」「など」 are a partial list 「A や B など」, and the sentence ends in 「あります」.\nOrder: 「本や」 is followed by the second noun 「ノート」, and 「など」 closes the list; what exists takes 「が」, so 「が」 comes after 「など」, right before 「あります」: 本や → ノート → など → が. The ★ is 「が」.\nTrap: Putting 「が」 before 「など」. 「など」 is part of the list, and the particle goes after the whole string: 「ノートなどが」."
     },
     "wrong": [
       null,
@@ -648,8 +648,8 @@
       "en": "A: Did you eat a lot? B: No, I only ate a little."
     },
     "why": {
-      "zh": "“只吃了一点”，动词是肯定「食べました」，限定用「だけ」。",
-      "en": "\"Only a little\" with a positive verb 「食べました」 is 「だけ」."
+      "zh": "线索：A 问「たくさん」，B 说「いいえ」，句尾却是肯定「食べました」。\n规则：“只……”后面是肯定时用「だけ」：「少しだけ 食べました」。「しか」也是“只”，但后面必须接否定（「少ししか 食べませんでした」）。\n技巧：「だけ」「しか」二选一时只看句尾：肯定选「だけ」，否定选「しか」。",
+      "en": "Clue: A asks about 「たくさん」, B says 「いいえ」, yet the sentence ends in the positive 「食べました」.\nRule: \"Only\" with a positive verb is 「だけ」: 「少しだけ 食べました」. 「しか」 also means \"only\", but must take a negative (「少ししか 食べませんでした」).\nTip: To choose between 「だけ」 and 「しか」, just look at the end of the sentence: positive → 「だけ」, negative → 「しか」."
     },
     "wrong": [
       null,
@@ -689,8 +689,8 @@
       "en": "What do I do? I only have 100 yen in my wallet."
     },
     "why": {
-      "zh": "动词是否定「ありません」，又有「どうしよう」的着急语气，“只有……（太少）”用「しか〜ない」。",
-      "en": "The verb is negative 「ありません」 and 「どうしよう」 shows worry — \"only (too little)\" is 「しか〜ない」."
+      "zh": "线索：句尾是否定「ありません」，前面又说「どうしよう」，说话人嫌钱少。\n规则：「しか」后面一定接否定，意思却是肯定的“只有”，带“太少了”的语气。",
+      "en": "Clue: The sentence ends in the negative 「ありません」, and 「どうしよう」 before it shows the speaker thinks it's too little money.\nRule: 「しか」 always takes a negative, yet the meaning is positive — \"only\" — with a feeling of \"not enough\"."
     },
     "wrong": [
       null,
@@ -741,8 +741,8 @@
       "en": "I only do my part-time job on weekends."
     },
     "why": {
-      "zh": "「週末だけ」（只在周末）＋「しています」。★ 在第三格，是「して」。",
-      "en": "「週末だけ」 (only on weekends) ＋ 「しています」. The ★ is the third slot: 「して」."
+      "zh": "线索：「して」「います」能连成「して います」（一直在做）；「だけ」要接在它限定的词后面。\n怎么排：「だけ」紧接在「しゅうまつ」后面，成“只在周末”；「して＋います」放句尾。顺序：しゅうまつ → だけ → して → います，★ 是「して」。\n容易错：把「だけ」放到「して」后面。「だけ」要紧跟在它限定的词后面：只限周末就是「しゅうまつだけ」。",
+      "en": "Clue: 「して」 and 「います」 make 「して います」 (does regularly), and 「だけ」 must follow whatever it limits.\nOrder: 「だけ」 goes right after 「しゅうまつ」 — \"only on weekends\"; 「して」 ＋ 「います」 ends the sentence: しゅうまつ → だけ → して → います. The ★ is 「して」.\nTrap: Putting 「だけ」 after 「して」. It sits right after what it limits, here the weekends: 「しゅうまつだけ」."
     },
     "wrong": [
       null,

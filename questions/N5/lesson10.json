@@ -14,8 +14,8 @@
       "en": "If you don't know what this word means, please ask the teacher."
     },
     "why": {
-      "zh": "“如果不懂的话，请……”是假设＋请求，用「たら」。否定的たら形是「〜なかったら」：分からない→分からなかったら。",
-      "en": "\"If you don't understand, please…\" is a condition followed by a request, so 「たら」. The negative たら-form is 「〜なかったら」: 分からない→分からなかったら."
+      "zh": "线索：后半是请求「先生に 聞いて ください」，前半是“要是不懂”的假设。\n规则：「たら」后面可以接请求。否定形加「たら」：把「ない」换成「なかったら」，「分からない」→「分からなかったら」。「と」后面不能接请求。",
+      "en": "Clue: The second half is a request, 「先生に 聞いて ください」, and the first is \"if you don't understand\".\nRule: 「たら」 can be followed by a request. For a negative, ない becomes なかったら: 「分からない」 → 「分からなかったら」. 「と」 can't take a request."
     },
     "wrong": [
       null,
@@ -49,8 +49,8 @@
       "en": "If you're free tomorrow, let's go see a movie together."
     },
     "why": {
-      "zh": "「暇」是な形容词，たら形是「暇だったら」。后面是邀请「行こう」，用万能的「たら」。",
-      "en": "「暇」 is a な-adjective, so its たら-form is 「暇だったら」. The invitation 「行こう」 after it is fine with 「たら」."
+      "zh": "线索：「あした」有没有空还不知道；后半是邀请「行こう」。\n规则：「たら」后面可以接邀请。な形容词加「だったら」：「ひま」→「ひまだったら」。「と」后面不能接邀请。",
+      "en": "Clue: Whether you're free 「あした」 isn't known yet, and the second half is the invitation 「行こう」.\nRule: 「たら」 can be followed by an invitation. A な-adjective takes だったら: 「ひま」 → 「ひまだったら」. 「と」 can't take an invitation."
     },
     "wrong": [
       null,
@@ -85,8 +85,8 @@
       "en": "When I opened the fridge, there was nothing in it."
     },
     "why": {
-      "zh": "过去的意外发现：「冷蔵庫を開けたら」（打开冰箱一看）＋「何も入っていませんでした」（什么都没放着）。★ 在第一格，是「開けたら」。",
-      "en": "A past discovery: 「冷蔵庫を開けたら」 (when I opened the fridge) ＋ 「何も入っていませんでした」 (nothing was in it). The ★ is the first slot: 「開けたら」."
+      "zh": "线索：句尾「でした」接在「いません」后面成「いませんでした」，是过去；「れいぞうこを」后面要一个动词。\n怎么排：「れいぞうこを あけたら」（打开一看）放前面；发现的内容是「何も 入って いません」，「入って＋いません」连在一起，「何も」放在前面。顺序：あけたら → 何も → 入って → いません，★ 是「あけたら」。\n容易错：把「何も」放到「入って」后面，拆开了「入って いません」。",
+      "en": "Clue: 「でした」 at the end joins 「いません」 as 「いませんでした」 — past — and 「れいぞうこを」 needs a verb.\nOrder: 「れいぞうこを あけたら」 (on opening it) comes first; what you found is 「何も 入って いません」, with 入って ＋ いません together and 何も in front: あけたら → 何も → 入って → いません. The ★ is 「あけたら」.\nTrap: Putting 「何も」 after 「入って」, which splits 「入って いません」."
     },
     "wrong": [null, null, null, null]
   },
@@ -105,8 +105,8 @@
       "en": "A: I'm going to Kyoto next week. B: If you're going to Kyoto, take this map with you."
     },
     "why": {
-      "zh": "B 承接 A 说的计划给建议，而且“带上地图”发生在出发之前。后句可以先于前句发生的只有「なら」。",
-      "en": "B picks up A's plan and gives advice, and taking the map happens before the trip. Only 「なら」 lets the second clause come first in time."
+      "zh": "线索：B 接过 A 说的计划给建议；“带上地图”是出发前、在这里就要做的事。\n规则：「辞书形＋なら」是“你要……的话”，接着对方的话给建议，后面的动作可以发生在前面之前。「行ったら」是到了京都以后，顺序不对。",
+      "en": "Clue: B picks up A's plan and gives advice, and taking the map happens here, before setting off.\nRule: Dictionary form ＋ 「なら」 means \"if you're going to…\"; it picks up what the other person said, and the advice can come before that action. 「行ったら」 would mean after arriving in Kyoto — the wrong order."
     },
     "wrong": [
       null,
@@ -119,8 +119,8 @@
         "en": "「と」 can't be followed by a request like 「〜てください」."
       },
       {
-        "zh": "「ば」前后同一主语、后面又是请求时很不自然，而且也表示“去了之后”，顺序不对。",
-        "en": "「ば」 with the same subject and a request is unnatural, and it also implies \"after going\", the wrong order."
+        "zh": "「ば」前后是同一个人、后面又是请求时很不自然；接对方说的计划给建议要用「なら」。",
+        "en": "「ば」 with the same person in both halves and a request after it sounds unnatural; advice on someone's stated plan takes 「なら」."
       }
     ]
   },
@@ -139,8 +139,8 @@
       "en": "A: I'd like to buy a new computer… B: If it's a computer you want, the shop in front of the station is cheap."
     },
     "why": {
-      "zh": "B 接过 A 提到的话题“电脑”，给出建议。“名词＋なら”就是“说到……的话”。",
-      "en": "B takes up A's topic, a computer, and gives advice. 「名詞＋なら」 means \"if it's … you're talking about\"."
+      "zh": "线索：A 说想买电脑，B 接过「パソコン」这个话题，推荐一家店。\n规则：「名词＋なら」是“说到……的话”，接过对方提到的东西给建议或信息。\n技巧：B 把 A 刚说过的词重复一遍，接着给建议，这时先想「なら」。",
+      "en": "Clue: A wants a computer, and B takes up 「パソコン」 as the topic and recommends a shop.\nRule: Noun ＋ 「なら」 means \"if it's … you're after\": it takes what the other person mentioned and gives advice or information about it.\nTip: When B repeats a word A just used and then gives advice, think 「なら」 first."
     },
     "wrong": [
       null,
@@ -174,8 +174,8 @@
       "en": "A: I want to study Japanese. B: If you're going to study it, this book is good."
     },
     "why": {
-      "zh": "B 承接 A 的话「勉強するなら」（要学的话），再给建议「この本がいいですよ」。★ 在第二格，是「なら」。",
-      "en": "B picks up A's words — 「勉強するなら」 (if you're going to study) — then advises 「この本がいいですよ」. The ★ is the second slot: 「なら」."
+      "zh": "线索：A 说「べんきょうしたいです」，B 接过来推荐；句尾「いいですよ」前面要一个「〜が」。\n怎么排：先接对方的话：「べんきょうする＋なら」；再给建议：「この 本が いいです」，「この」紧挨着「本」。顺序：べんきょうする → なら → この → 本が，★ 是「なら」。\n容易错：把「この」放到「べんきょうする」前面。「この」后面必须直接是名词。",
+      "en": "Clue: A says 「べんきょうしたいです」 and B follows up with a recommendation; 「いいですよ」 needs a 「〜が」 before it.\nOrder: First pick up A's words, 「べんきょうする ＋ なら」, then advise, 「この 本が いいです」, with この right before 本: べんきょうする → なら → この → 本が. The ★ is 「なら」.\nTrap: Putting 「この」 before 「べんきょうする」. この must be followed directly by a noun."
     },
     "wrong": [null, null, null, null]
   },
@@ -194,8 +194,8 @@
       "en": "When water reaches 0 degrees, it turns into ice."
     },
     "why": {
-      "zh": "这是每次必然发生的自然规律，用「と」最地道。",
-      "en": "This is a law of nature that happens every time — 「と」 is the natural choice."
+      "zh": "线索：「水は 0どに」，说的是自然规律，每次都一定会这样。\n规则：自然规律、必然的结果用「辞书形＋と」：「なる」→「なると」。「なら」是接过对方话题的假设，不能说自然规律。",
+      "en": "Clue: 「水は 0どに」 — a law of nature that happens every time.\nRule: Natural laws and results that always follow use dictionary form ＋ 「と」: 「なる」 → 「なると」. 「なら」 picks up someone's topic and can't state a natural law."
     },
     "wrong": [
       null,
@@ -229,8 +229,8 @@
       "en": "Every day, as soon as I get home, I wash my hands."
     },
     "why": {
-      "zh": "「毎日」说明是每次都这样的习惯：“一回家就……”，用「と」。",
-      "en": "「毎日」 marks a habit that happens every time — \"as soon as I get home\" — so 「と」."
+      "zh": "线索：「毎日」和「すぐ」，说的是每次都这样的习惯。\n规则：“每次一做 A，就 B”用「辞书形＋と」：「かえる」→「かえると」。「なら」不表示“做完 A 再 B”的先后顺序。",
+      "en": "Clue: 「毎日」 and 「すぐ」 describe a habit that happens every time.\nRule: \"Whenever I do A, I B\" is dictionary form ＋ 「と」: 「かえる」 → 「かえると」. 「なら」 doesn't express \"after A, B\"."
     },
     "wrong": [
       null,

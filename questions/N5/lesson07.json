@@ -27,8 +27,8 @@
       "en": "Yesterday I swam in the pool with a friend."
     },
     "why": {
-      "zh": "「きのう」是过去。た形和て形变法一样：泳ぐ→泳いで→泳いだ。",
-      "en": "「きのう」 makes it past. The た-form follows the て-form: 泳ぐ → 泳いで → 泳いだ."
+      "zh": "线索：「きのう」说的是过去，句子到空格就结束，没有「です／ます」，是简体。\n规则：简体的过去用た形（「行く」→「行った」）。「泳ぐ」是「ぐ」结尾：て形「泳いで」，た形同样变成「泳いだ」。\n技巧：た形和て形变法完全一样，想不起た形时，先说出て形，再把「て／で」换成「た／だ」。",
+      "en": "Clue: 「きのう」 puts it in the past, and the sentence ends at the blank with no です / ます — plain style.\nRule: Plain past is the た-form (「行く」 → 「行った」). 「泳ぐ」 ends in ぐ: its て-form is 「泳いで」, so the た-form is 「泳いだ」.\nTip: The た-form is built exactly like the て-form. If you can't recall it, say the て-form and swap て / で for た / だ."
     },
     "wrong": [
       null,
@@ -68,8 +68,8 @@
       "en": "This is the bag I bought at the department store last week."
     },
     "why": {
-      "zh": "「先週」是过去，修饰名词「かばん」要用简体过去形：買った。",
-      "en": "「先週」 is past, so the verb modifying 「かばん」 is the plain past: 買った."
+      "zh": "线索：空格紧挨着名词「かばん」，前面有「先週」。\n规则：动词修饰名词时直接放在名词前面，用简体；上周的事用过去，「買う」→「買った」：「買った かばん」（买的包）。",
+      "en": "Clue: The blank sits right before the noun 「かばん」, and 「先週」 comes earlier.\nRule: A verb describing a noun goes straight in front of it in plain form; last week's event is past, so 「買う」 → 「買った」: 「買った かばん」 (the bag I bought)."
     },
     "wrong": [
       null,
@@ -120,8 +120,8 @@
       "en": "The food my mother made yesterday was very good."
     },
     "why": {
-      "zh": "た形直接修饰名词：「母が作った料理」，再接「は」和「とても おいしかった」。★ 是第二格「料理」。",
-      "en": "The た-form modifies the noun directly — 「母が作った料理」 — then 「は」 and 「とても おいしかった」. The ★ is 「料理」."
+      "zh": "线索：「母が」后面要有它的动词，句尾「おいしかったです」前面要有话题。\n怎么排：「母が つくった」修饰「りょうり」，「りょうり」加「は」当话题；「とても」修饰「おいしかった」，紧放在它前面。顺序：つくった → りょうり → は → とても，★ 是「りょうり」。\n容易错：把「とても」放到「つくった」前面。「とても」说的是“很好吃”，要贴着形容词。",
+      "en": "Clue: 「母が」 needs its verb, and 「おいしかったです」 at the end needs a topic.\nOrder: 「母が つくった」 describes 「りょうり」, which takes 「は」 as the topic; 「とても」 qualifies 「おいしかった」, so it goes right before it: つくった → りょうり → は → とても. The ★ is 「りょうり」.\nTrap: Putting 「とても」 before 「つくった」. It means \"very (tasty)\", so it stays next to the adjective."
     },
     "wrong": [
       null,
@@ -152,8 +152,8 @@
       "en": "A: Have you ever climbed Mt. Fuji? B: Yes, once."
     },
     "why": {
-      "zh": "B 用「一度 あります」回答，问的是经验：「〜たことがありますか」。",
-      "en": "B answers 「一度 あります」, so A is asking about experience: 「〜たことがありますか」."
+      "zh": "线索：B 用「はい、いちど あります」回答，说的是做过几次，是经验。\n规则：问“有没有做过”用「た形＋ことが ありますか」（「のぼる」→「のぼった ことが ある」）。「こと」是事，不是人或动物，所以用「ある」不用「いる」。",
+      "en": "Clue: B answers 「はい、いちど あります」 — a number of times, so the question is about experience.\nRule: \"Have you ever…?\" is た-form ＋ 「ことが ありますか」 (「のぼる」 → 「のぼった ことが ある」). 「こと」 is a thing, not a person or animal, so it takes 「ある」, never 「いる」."
     },
     "wrong": [
       null,
@@ -193,8 +193,8 @@
       "en": "I've never been abroad, not even once."
     },
     "why": {
-      "zh": "「一度も」后面要接否定，“一次都没……过”用「〜たことがありません」。",
-      "en": "「一度も」 requires a negative: \"never once\" is 「〜たことがありません」."
+      "zh": "线索：前面有「まだ いちども」（还一次都……）。\n规则：「いちども」后面一定接否定；“从来没做过”是「た形＋ことが ありません」：「行った ことが ありません」。",
+      "en": "Clue: The sentence has 「まだ いちども」 (not even once yet).\nRule: 「いちども」 always needs a negative, and \"have never done\" is た-form ＋ 「ことが ありません」: 「行った ことが ありません」."
     },
     "wrong": [
       null,
@@ -239,8 +239,8 @@
       "en": "A: Have you ever eaten natto? B: No, not yet."
     },
     "why": {
-      "zh": "经验：た形＋ことがある——食べた こと が あります。★ 是第三格「が」。",
-      "en": "Experience: た-form ＋ ことがある — 食べた こと が あります. The ★ is 「が」."
+      "zh": "线索：看到「こと」「が」「あります」，先想到句型「〜たことがある」（做过……）。\n怎么排：「こと」前面放修饰它的动词「食べた」；「こと＋が＋ある」中间不插别的词。顺序：食べた → こと → が → あります，★ 是「が」。\n容易错：把「こと」放到动词前面。修饰语总在名词前面：「食べたこと」，不是「こと食べた」。",
+      "en": "Clue: 「こと」, 「が」 and 「あります」 together point to 「〜たことがある」 (have done before).\nOrder: 「こと」 is preceded by the verb that describes it, 「食べた」, and nothing goes between こと ＋ が ＋ ある: 食べた → こと → が → あります. The ★ is 「が」.\nTrap: Putting 「こと」 before the verb. The modifier always comes before the noun: 「食べたこと」, not 「こと食べた」."
     },
     "wrong": [
       null,
@@ -271,8 +271,8 @@
       "en": "On my days off I do things like read books and watch movies."
     },
     "why": {
-      "zh": "前面是「読んだり」，后面要配成对的「〜たり」，最后接「します」：見たり します。",
-      "en": "「読んだり」 needs a matching 「〜たり」 before 「します」: 見たり します."
+      "zh": "线索：前面已经有「読んだり、」，句尾是「します」。\n规则：「〜たり、〜たり します」举几个例子说“做做这个、做做那个”，每个动词都用た形加「り」：「見る」→「見た」→「見たり」。",
+      "en": "Clue: 「読んだり、」 already appears, and the sentence ends in 「します」.\nRule: 「〜たり、〜たり します」 lists sample activities, and each verb takes its た-form plus り: 「見る」 → 「見た」 → 「見たり」."
     },
     "wrong": [
       null,
@@ -319,8 +319,8 @@
       "en": "Lately the weather keeps going between hot and cold."
     },
     "why": {
-      "zh": "い形容词的たり形是「い→かったり」，和前面的「暑かったり」一样：寒かったり。",
-      "en": "An い-adjective's たり-form is い → かったり, like 「暑かったり」: 寒かったり."
+      "zh": "线索：前面是「あつかったり、」，句尾是「します」，是「〜たり〜たり する」。\n规则：两边形式要一样。い形容词变「たり」是把「い」换成「かったり」：「さむい」→「さむかったり」，表示一会儿热一会儿冷。",
+      "en": "Clue: 「あつかったり、」 comes first and 「します」 ends the sentence — the 「〜たり〜たり する」 pattern.\nRule: Both sides take the same shape. An い-adjective's たり form swaps い for かったり: 「さむい」 → 「さむかったり」 (hot one day, cold the next)."
     },
     "wrong": [
       null,
@@ -371,8 +371,8 @@
       "en": "On the weekend I hung out with friends, went shopping at a department store, and so on."
     },
     "why": {
-      "zh": "地点「デパートで」在前，然后「買い物したり」，和前面的「遊んだり」成对，最后「しました」。★ 是第三格「買い物」。",
-      "en": "The place 「デパートで」 comes first, then 「買い物したり」 to pair with 「遊んだり」, then 「しました」. The ★ is 「買い物」."
+      "zh": "线索：前面是「あそんだり、」，句尾是「しました」，第二个动作也要用「〜たり」。\n怎么排：「デパート＋で」是地点，连在一起放前面；「かいもの したり」是第二个动作，紧接在「しました」前面。顺序：デパート → で → かいもの → したり，★ 是「かいもの」。\n容易错：把「かいもの」放到「デパートで」前面，拆开了「かいもの＋したり」这个动词。",
+      "en": "Clue: 「あそんだり、」 comes first and 「しました」 ends the sentence, so the second action also needs 〜たり.\nOrder: 「デパート ＋ で」 is the place and goes first; 「かいもの したり」 is the second action, right before 「しました」: デパート → で → かいもの → したり. The ★ is 「かいもの」.\nTrap: Putting 「かいもの」 before 「デパートで」, which splits the verb 「かいもの ＋ したり」."
     },
     "wrong": [
       null,
@@ -403,8 +403,8 @@
       "en": "I only just ate lunch, but I'm already hungry."
     },
     "why": {
-      "zh": "「さっき」和“却又饿了”说明是“刚刚吃完”，用「〜たばかり」。",
-      "en": "「さっき」 and \"already hungry\" point to \"just ate\": 「〜たばかり」."
+      "zh": "线索：「さっき」（刚才）吃了午饭，后面却说「もう おなかが すきました」，强调吃完没多久。\n规则：“刚做完”用「た形＋ばかり」，后面可以接「です」：「食べた ばかりです」。",
+      "en": "Clue: Lunch was 「さっき」 (a moment ago), yet 「もう おなかが すきました」 — the point is how little time has passed.\nRule: \"Just did\" is た-form ＋ 「ばかり」, which can take 「です」: 「食べた ばかりです」."
     },
     "wrong": [
       null,
@@ -444,8 +444,8 @@
       "en": "A: Have you read that book yet? B: No, I only bought it yesterday, so I haven't read it yet."
     },
     "why": {
-      "zh": "“刚刚做完”是「た形＋ばかり」：買った ばかり。",
-      "en": "\"Just did\" is た-form ＋ ばかり: 買った ばかり."
+      "zh": "线索：空格后面是「ばかりですから」，后面又说「まだ 読んで いません」。\n规则：表示“刚做完”的「ばかり」只接た形：「買う」→「買った ばかり」。昨天才买，所以还没读。",
+      "en": "Clue: The blank is followed by 「ばかりですから」, and then 「まだ 読んで いません」.\nRule: 「ばかり」 meaning \"just did\" attaches only to the た-form: 「買う」 → 「買った ばかり」. Bought only yesterday, so not read yet."
     },
     "wrong": [
       null,
@@ -496,8 +496,8 @@
       "en": "I just got up, so I'm still sleepy."
     },
     "why": {
-      "zh": "「今」放在最前，然后「起きた＋ばかり」，再接「だから」说明原因。★ 在第二格，是「起きた」。",
-      "en": "「今」 comes first, then 起きた ＋ ばかり, then 「だから」 for the reason. The ★ is the second slot: 「起きた」."
+      "zh": "线索：后半「まだ ねむいです」是结果，空格里要说原因，「だから」放在逗号前。\n怎么排：「おきた＋ばかり」是固定搭配，后面接「だから」；「今」说的是起床的时间，放在最前面。顺序：今 → おきた → ばかり → だから，★ 是「おきた」。\n容易错：把「ばかり」放到「おきた」前面。表示“刚……”的「ばかり」要跟在た形后面。",
+      "en": "Clue: 「まだ ねむいです」 is the result, so the blanks give the reason, with 「だから」 before the comma.\nOrder: 「おきた ＋ ばかり」 is a fixed pair followed by 「だから」; 「今」 tells when you got up, so it opens: 今 → おきた → ばかり → だから. The ★ is 「おきた」.\nTrap: Putting 「ばかり」 before 「おきた」. The \"just did\" ばかり always follows the た-form."
     },
     "wrong": [
       null,

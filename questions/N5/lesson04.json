@@ -14,8 +14,8 @@
       "en": "Every morning I take the bus to the station and then get on the train."
     },
     "why": {
-      "zh": "「行く」是唯一的例外：按く→いて的规则应该是「行いて」，实际是「行って」。",
-      "en": "「行く」 is the one exception: the く → いて rule would give 「行いて」, but it is 「行って」."
+      "zh": "线索：空格后面是逗号，接着还有「電車に のります」，句子还没结束。\n规则：把两个动作按先后连起来，前一个动词用て形（「食べる」→「食べて」）。「く」结尾的动词一般变「いて」（「書く」→「書いて」），「行く」是例外：「行って」，不是「行いて」。",
+      "en": "Clue: The blank is followed by a comma and then 「電車に のります」 — the sentence keeps going.\nRule: To chain two actions in order, the first verb takes the て-form (「食べる」→「食べて」). Verbs ending in 「く」 usually become 「いて」 (「書く」→「書いて」), but 「行く」 is the exception: 「行って」, not 「行いて」."
     },
     "wrong": [
       {
@@ -48,8 +48,8 @@
       "en": "Last night I took some medicine and went to bed early."
     },
     "why": {
-      "zh": "「飲む」是む结尾的一类动词：ぬ・ぶ・む→んで，变成「飲んで」。",
-      "en": "「飲む」 ends in む: ぬ・ぶ・む → んで, so 「飲んで」."
+      "zh": "线索：逗号后面接「はやく ねました」，先吃药、再睡觉，是两个先后的动作。\n规则：前一个动作用て形。「飲む」以「む」结尾，「ぬ・ぶ・む」的て形都变「んで」：「飲んで」。",
+      "en": "Clue: After the comma comes 「はやく ねました」 — took the medicine, then went to bed: two actions in a row.\nRule: The first action takes the て-form. 「飲む」 ends in む, and verbs ending in ぬ・ぶ・む change to 「んで」: 「飲んで」."
     },
     "wrong": [
       {
@@ -83,8 +83,8 @@
       "en": "During the summer holiday I swam in the sea and then ate fish."
     },
     "why": {
-      "zh": "「泳ぐ」是ぐ结尾：ぐ→いで（和く→いて同组，但用浊音「で」）。",
-      "en": "「泳ぐ」 ends in ぐ: ぐ → いで (same group as く → いて, but voiced 「で」)."
+      "zh": "线索：逗号后面是「それから」（然后），说明前后是两个先后发生的动作。\n规则：前一个动作用て形。「およぐ」以「ぐ」结尾，ぐ→いで：「およいで」。\n容易错：写成「およいて」。「く」才变「いて」，「ぐ」要变浊音「いで」。",
+      "en": "Clue: The comma is followed by 「それから」 (and then), so these are two actions in sequence.\nRule: The first action takes the て-form. 「およぐ」 ends in ぐ, and ぐ becomes 「いで」: 「およいで」.\nTrap: Writing 「およいて」. Only く becomes いて; ぐ takes the voiced 「いで」."
     },
     "wrong": [
       null,
@@ -118,8 +118,8 @@
       "en": "I'm going to bed now. Please turn off the light."
     },
     "why": {
-      "zh": "「消す」是す结尾：す→して；て形后接「ください」表示请求。顺序：電気 を 消して ください，★ 在第三格，是「消して」。",
-      "en": "「消す」 ends in す: す → して, and て form ＋ 「ください」 makes a request. Order: 電気 を 消して ください — the ★ is 「消して」."
+      "zh": "线索：前面说「もう ねます」，四块里有「けして」和「ください」，是请求句型「〜て ください」。\n怎么排：「ください」放最后，前面紧接て形「けして」；要关的东西「電気」加「を」放在最前面。顺序：電気 → を → けして → ください，★ 是「けして」。\n容易错：把「を」放在「けして」后面。「を」要紧跟在宾语「電気」后面。",
+      "en": "Clue: The speaker is going to bed (「もう ねます」), and the pieces 「けして」 and 「ください」 make the request pattern 「〜て ください」.\nOrder: 「ください」 goes last, right after the て-form 「けして」; the thing to switch off, 「電気」 ＋ 「を」, comes first: 電気 → を → けして → ください. The ★ is 「けして」.\nTrap: Putting 「を」 after 「けして」. 「を」 sticks right after its object, 「電気」."
     },
     "wrong": [null, null, null, null]
   },
@@ -138,8 +138,8 @@
       "en": "This room is quiet and spacious."
     },
     "why": {
-      "zh": "「静か」是な形容词，并列时用て形：だ→で，「静かで」。",
-      "en": "「静か」 is a な-adjective; to join it to another description use its て form: だ → で, 「静かで」."
+      "zh": "线索：「しずか」是な形容词，逗号后面又接一个描述「ひろいです」，两个优点并列。\n规则：な形容词要和后面的描述连起来，用「で」：「しずかだ」→「しずかで」。",
+      "en": "Clue: 「しずか」 is a な-adjective, and after the comma comes another description, 「ひろいです」 — two good points side by side.\nRule: To join a な-adjective to what follows, use 「で」: 「しずかだ」→「しずかで」."
     },
     "wrong": [
       {
@@ -173,8 +173,8 @@
       "en": "The station is close to my house, so I walk there every day."
     },
     "why": {
-      "zh": "て形可以表示方式：「歩いて行きます」＝走着去。「歩く」是く结尾，く→いて。",
-      "en": "The て form can show the manner: 「歩いて行きます」 = go on foot. 「歩く」 ends in く: く → いて."
+      "zh": "线索：空格后面直接是「行きます」，前面说家离车站很近，讲的是“怎么去”。\n规则：「て形＋行く」可以表示用什么方式去：「あるいて 行く」＝走着去。「あるく」以「く」结尾，く→いて：「あるいて」。",
+      "en": "Clue: The blank sits right before 「行きます」, and the station is close — this is about how you get there.\nRule: て-form ＋ 「行く」 can say the way you go: 「あるいて 行く」 = go on foot. 「あるく」 ends in く, which becomes 「いて」: 「あるいて」."
     },
     "wrong": [
       {
@@ -208,8 +208,8 @@
       "en": "Yesterday I got up early and went for a run in the park."
     },
     "why": {
-      "zh": "用て形串联动作时，时态由最后一个动词决定；「昨日」是过去，所以句尾用「走りました」。",
-      "en": "When actions are chained with て, the last verb carries the tense; 「昨日」 is past, so 「走りました」."
+      "zh": "线索：句首「きのうは」说的是过去；前面的「おきて」是て形，本身不表示时间。\n规则：用て形串起来的句子，时态由最后一个动词决定，所以句尾要用过去式「〜ました」。\n容易错：以为前面用了て形，句尾也用「はしって」。て形不能放在句尾结束句子。",
+      "en": "Clue: 「きのうは」 puts the sentence in the past, and the earlier 「おきて」 is a て-form, which carries no tense of its own.\nRule: In a chain of て-forms the last verb sets the tense, so it must be past: 「〜ました」.\nTrap: Choosing 「はしって」 because the earlier verb was a て-form. A て-form can't end the sentence."
     },
     "wrong": [
       {
@@ -243,8 +243,8 @@
       "en": "This cake is sweet and delicious."
     },
     "why": {
-      "zh": "い形容词的て形：い→くて，「甘く＋て」后面接「おいしいです」。★ 在第二格，是「て」。",
-      "en": "い-adjective て form: い → くて, so 「甘く ＋ て」 then 「おいしいです」. The ★ is the second slot: 「て」."
+      "zh": "线索：有「あまく」和「て」，是い形容词的て形「あまくて」，用来接第二个形容词。\n怎么排：「あまく」＋「て」连成「あまくて」；后面接「おいしい」，「です」放句尾。顺序：あまく → て → おいしい → です，★ 是「て」。\n容易错：想把「て」接在「おいしい」后面。い形容词要先变成「く」才能接「て」，四块里只有「あまく」是这个形。",
+      "en": "Clue: 「あまく」 and 「て」 form the て-form of an い-adjective, 「あまくて」, used to link to a second adjective.\nOrder: 「あまく」 ＋ 「て」 make 「あまくて」, then 「おいしい」, with 「です」 at the end: あまく → て → おいしい → です. The ★ is 「て」.\nTrap: Trying to attach 「て」 to 「おいしい」. An い-adjective must change to its く form before 「て」, and only 「あまく」 has that form here."
     },
     "wrong": [null, null, null, null]
   },
@@ -264,8 +264,8 @@
       "en": "After work I go home and make dinner."
     },
     "why": {
-      "zh": "「帰る」是一类动词（陷阱词），る→って，变成「帰って」。",
-      "en": "「帰る」 is a Group 1 \"trap\" verb: る → って, giving 「帰って」."
+      "zh": "线索：逗号后面还有「ばんごはんを つくります」，回家之后再做饭，是先后两个动作。\n规则：前一个动作用て形。「かえる」看起来像二类（「る」结尾），其实是一类，る→って：「かえって」，不是「かえて」。",
+      "en": "Clue: After the comma comes 「ばんごはんを つくります」 — get home, then cook: two actions in order.\nRule: The first action takes the て-form. 「かえる」 looks like a Group 2 verb (ends in る) but is Group 1, so る becomes 「って」: 「かえって」, not 「かえて」."
     },
     "wrong": [
       {
@@ -298,8 +298,8 @@
       "en": "Tanaka is smart and kind."
     },
     "why": {
-      "zh": "「いい」是特殊的い形容词，变形都从「よ」开始：て形是「よくて」。",
-      "en": "「いい」 is special: all its forms start from 「よ」, so the て form is 「よくて」."
+      "zh": "线索：逗号后面接另一个形容词「やさしい」，说的是田中的两个优点。\n规则：い形容词用「〜くて」接下一个形容词；「いい」比较特殊，变形都从「よ」开始：「よくて」，不是「いくて」。",
+      "en": "Clue: The comma is followed by another adjective, 「やさしい」 — two good things about Tanaka.\nRule: An い-adjective links to the next one with 「〜くて」. 「いい」 is special: all its forms start from 「よ」, so 「よくて」, not 「いくて」."
     },
     "wrong": [
       {
@@ -332,8 +332,8 @@
       "en": "Yesterday I saw a movie with a friend, and then we had dinner together."
     },
     "why": {
-      "zh": "「見る」是二类动词，去る加て：「見て」。",
-      "en": "「見る」 is Group 2: drop る and add て — 「見て」."
+      "zh": "线索：逗号后面是「いっしょに ばんごはんを 食べました」，先看电影再吃饭。\n规则：前一个动作用て形。「見る」是二类动词，去掉「る」加「て」：「見て」，不是「見って」。\n技巧：「〜たり」一般成对出现，最后接「する」（「見たり 食べたり する」）。句子里没有第二个「〜たり」，也没有「する」，就可以先排除它。",
+      "en": "Clue: After the comma comes 「いっしょに ばんごはんを 食べました」 — the movie first, then dinner.\nRule: The first action takes the て-form. 「見る」 is Group 2: drop 「る」 and add 「て」, giving 「見て」, not 「見って」.\nTip: 「〜たり」 normally comes in a pair closed by 「する」 (「見たり 食べたり する」). With no second 「〜たり」 and no 「する」 in the sentence, rule it out first."
     },
     "wrong": [
       {
