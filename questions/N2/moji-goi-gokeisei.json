@@ -1096,5 +1096,365 @@
         "en": "〜開き is an opening (海開き); 「連休開き」 isn't a word."
       }
     ]
+  },
+  {
+    "id": "n2-mg-631",
+    "type": "gokeisei",
+    "difficulty": 2,
+    "stem": "日本は、（　）外国との関係を大切にしている。",
+    "options": [
+      "多",
+      "他",
+      "諸",
+      "各"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "日本重视与各国的关系。",
+      "en": "Japan values its relations with other countries."
+    },
+    "why": {
+      "zh": "“许多国家”是「諸外国」：「諸」表示“各种、许多”（「諸問題」）。",
+      "en": "Foreign countries in general are 「諸外国」: 諸 means 'various' (「諸問題」)."
+    },
+    "wrong": [
+      {
+        "zh": "「多外国」不是词。「多」接「多目的」「多国籍」等。",
+        "en": "「多外国」 isn't a word. 多 goes with 「多目的」, 「多国籍」."
+      },
+      {
+        "zh": "「他外国」不是词；“其他国家”是「他国」。",
+        "en": "「他外国」 isn't a word; 'other countries' is 「他国」."
+      },
+      null,
+      {
+        "zh": "「各外国」不是词；“各国”是「各国」。",
+        "en": "「各外国」 isn't a word; 'each country' is 「各国」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-632",
+    "type": "gokeisei",
+    "difficulty": 1,
+    "stem": "来月から、バスの運（　）が十円上がる。",
+    "options": [
+      "料",
+      "賃",
+      "代",
+      "費"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "下个月起，公交车费涨十日元。",
+      "en": "From next month, the bus fare goes up by ten yen."
+    },
+    "why": {
+      "zh": "交通工具的费用是「運賃」：「〜賃」用于运费、租金（「家賃」）。",
+      "en": "A transport fare is 「運賃」: 〜賃 is used for fares and rent (「家賃」)."
+    },
+    "wrong": [
+      {
+        "zh": "「運料」不是词。「〜料」接「入場料」「授業料」等。",
+        "en": "「運料」 isn't a word. 〜料 goes with 「入場料」, 「授業料」."
+      },
+      null,
+      {
+        "zh": "「運代」不是词。「〜代」接「電気代」「バス代」等。",
+        "en": "「運代」 isn't a word. 〜代 goes with 「電気代」, 「バス代」."
+      },
+      {
+        "zh": "「運費」不是日语词。「〜費」接「交通費」「生活費」等。",
+        "en": "「運費」 isn't Japanese. 〜費 goes with 「交通費」, 「生活費」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-633",
+    "type": "gokeisei",
+    "difficulty": 2,
+    "stem": "彼女は十代で、芸能（　）にデビューした。",
+    "options": [
+      "部",
+      "層",
+      "域",
+      "界"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "她十几岁就进入了演艺圈。",
+      "en": "She made her debut in show business in her teens."
+    },
+    "why": {
+      "zh": "某个行业的圈子是「〜界」（「芸能界」「政界」）。",
+      "en": "A professional world is 〜界 (「芸能界」, 「政界」)."
+    },
+    "wrong": [
+      {
+        "zh": "「芸能部」不表示演艺圈。「〜部」是部门（「営業部」）。",
+        "en": "「芸能部」 isn't show business. 〜部 is a department (「営業部」)."
+      },
+      {
+        "zh": "「〜層」是阶层（「若者層」），「芸能層」不是词。",
+        "en": "〜層 is a social group (「若者層」); 「芸能層」 isn't a word."
+      },
+      {
+        "zh": "「〜域」是区域（「地域」），「芸能域」不是词。",
+        "en": "〜域 is an area (「地域」); 「芸能域」 isn't a word."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-mg-634",
+    "type": "gokeisei",
+    "difficulty": 2,
+    "stem": "来月、衆議院の（　）選挙が行われる。",
+    "options": [
+      "全",
+      "多",
+      "総",
+      "皆"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "下个月将举行众议院大选。",
+      "en": "A general election for the House of Representatives will be held next month."
+    },
+    "why": {
+      "zh": "全体议员一起改选是「総選挙」：「総〜」表示全体（「総人口」「総会」）。",
+      "en": "Electing the whole house is 「総選挙」: 総〜 means 'all, total' (「総会」)."
+    },
+    "wrong": [
+      {
+        "zh": "「全選挙」不是词。",
+        "en": "「全選挙」 isn't a word."
+      },
+      {
+        "zh": "「多選挙」不是词。",
+        "en": "「多選挙」 isn't a word."
+      },
+      null,
+      {
+        "zh": "「皆選挙」不是词。",
+        "en": "「皆選挙」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-635",
+    "type": "gokeisei",
+    "difficulty": 2,
+    "stem": "駅で、会社員（　）の男性に道を聞かれた。",
+    "options": [
+      "式",
+      "風",
+      "流",
+      "型"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "在车站，一个上班族模样的男人向我问路。",
+      "en": "At the station, a man who looked like an office worker asked me the way."
+    },
+    "why": {
+      "zh": "“看起来像……”是「〜風（ふう）」（「学生風の男」）。",
+      "en": "'Looking like …' is 〜風 (「学生風の男」)."
+    },
+    "wrong": [
+      {
+        "zh": "「〜式」是方式、样式（「日本式」），不接人。",
+        "en": "〜式 is a style or method (「日本式」), not a person's look."
+      },
+      null,
+      {
+        "zh": "「〜流」是流派、做法（「自己流」），不表示外表。",
+        "en": "〜流 is a school or way of doing (「自己流」), not appearance."
+      },
+      {
+        "zh": "「〜型」是类型（「血液型」），「会社員型」不说。",
+        "en": "〜型 is a type (「血液型」); 「会社員型」 isn't said."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-636",
+    "type": "gokeisei",
+    "difficulty": 1,
+    "stem": "結婚式の招待（　）が届いた。",
+    "options": [
+      "状",
+      "書",
+      "証",
+      "票"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "收到了婚礼的请柬。",
+      "en": "A wedding invitation arrived."
+    },
+    "why": {
+      "zh": "书信形式的文书是「〜状」（「招待状」「年賀状」）。",
+      "en": "A formal letter is 〜状 (「招待状」, 「年賀状」)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「招待書」不是词。「〜書」接「申込書」「報告書」。",
+        "en": "「招待書」 isn't a word. 〜書 goes with 「申込書」, 「報告書」."
+      },
+      {
+        "zh": "「〜証」是证件（「学生証」），「招待証」不说。",
+        "en": "〜証 is an ID card (「学生証」); 「招待証」 isn't said."
+      },
+      {
+        "zh": "「〜票」是票据（「投票」「伝票」），「招待票」不说。",
+        "en": "〜票 is a slip or vote (「伝票」); 「招待票」 isn't said."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-637",
+    "type": "gokeisei",
+    "difficulty": 1,
+    "stem": "名簿の名前は、五十音（　）に並んでいる。",
+    "options": [
+      "順",
+      "番",
+      "列",
+      "次"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "名册上的名字按五十音图顺序排列。",
+      "en": "The names on the list are in kana order."
+    },
+    "why": {
+      "zh": "按某种顺序是「〜順」（「五十音順」「年齢順」）。",
+      "en": "In … order is 〜順 (「五十音順」, 「年齢順」)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「五十音番」不是词。",
+        "en": "「五十音番」 isn't a word."
+      },
+      {
+        "zh": "「五十音列」不是词。",
+        "en": "「五十音列」 isn't a word."
+      },
+      {
+        "zh": "「五十音次」不是词。",
+        "en": "「五十音次」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-638",
+    "type": "gokeisei",
+    "difficulty": 2,
+    "stem": "試験前の一か月は、毎日勉強（　）だった。",
+    "options": [
+      "込み",
+      "付け",
+      "漬け",
+      "入り"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "考试前的一个月，每天都泡在学习里。",
+      "en": "In the month before the exam, I did nothing but study."
+    },
+    "why": {
+      "zh": "整天埋头于某事是「〜漬け」（「勉強漬け」「仕事漬け」）。",
+      "en": "Being steeped in something all day is 〜漬け (「勉強漬け」)."
+    },
+    "wrong": [
+      {
+        "zh": "「〜込み」是包含（「税込み」），「勉強込み」说不通。",
+        "en": "〜込み is 'included' (「税込み」); 「勉強込み」 makes no sense."
+      },
+      {
+        "zh": "「勉強付け」不是词。",
+        "en": "「勉強付け」 isn't a word."
+      },
+      null,
+      {
+        "zh": "「〜入り」是装有（「ミルク入り」），「勉強入り」说不通。",
+        "en": "〜入り is 'containing' (「ミルク入り」); 「勉強入り」 makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-639",
+    "type": "gokeisei",
+    "difficulty": 1,
+    "stem": "私は、ご飯よりパン（　）だ。",
+    "options": [
+      "流",
+      "派",
+      "式",
+      "型"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "比起米饭，我更喜欢面包。",
+      "en": "I'm more of a bread person than a rice person."
+    },
+    "why": {
+      "zh": "属于偏好某一方的人是「〜派」（「パン派」「犬派」）。",
+      "en": "Being on one side of a preference is 〜派 (「パン派」, 「犬派」)."
+    },
+    "wrong": [
+      {
+        "zh": "「パン流」不是词。",
+        "en": "「パン流」 isn't a word."
+      },
+      null,
+      {
+        "zh": "「〜式」是方式、样式（「洋式」），「パン式」不是词。",
+        "en": "〜式 is a style (「洋式」); 「パン式」 isn't a word."
+      },
+      {
+        "zh": "「パン型」不表示偏好。",
+        "en": "「パン型」 doesn't mean a preference."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-640",
+    "type": "gokeisei",
+    "difficulty": 2,
+    "stem": "休日の動物園は、子ども（　）の家族でにぎわっていた。",
+    "options": [
+      "連れ",
+      "付き",
+      "込み",
+      "合い"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "假日的动物园挤满了带孩子的家庭。",
+      "en": "On the holiday the zoo was full of families with children."
+    },
+    "why": {
+      "zh": "带着某人是「〜連れ」（「子ども連れ」「家族連れ」）。",
+      "en": "Accompanied by someone is 〜連れ (「子ども連れ」, 「家族連れ」)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜付き」用于附带物品（「朝食付き」），不用于人。",
+        "en": "〜付き is for things included (「朝食付き」), not people."
+      },
+      {
+        "zh": "「子ども込み」不说。",
+        "en": "「子ども込み」 isn't said."
+      },
+      {
+        "zh": "「子ども合い」不是词。",
+        "en": "「子ども合い」 isn't a word."
+      }
+    ]
   }
 ]

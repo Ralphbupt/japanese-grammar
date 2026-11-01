@@ -282,5 +282,147 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n2-dk-605",
+    "type": "tougou",
+    "difficulty": 2,
+    "intro": "次のAとBは、「中学校の制服は必要か」というテーマで新聞に寄せられた投書である。",
+    "passage": "A\n私は中学校の制服に賛成だ。毎朝何を着るか悩まずに済むし、家庭の経済状況による服装の差も目立たない。私自身、中学生のころは、服装で友達と比べられることがなかったので、気楽に過ごせた。地域の人が見れば、どこの学校の生徒かすぐに分かるので、登下校の安全を見守ってもらいやすいという利点もある。さらに、制服を着ることで、学校にいる間は勉強に集中しようと、気持ちを切り替えることもできる。確かに、値段が高いという声もある。それなら、卒業生から譲ってもらった制服を安く売るなど、負担を減らす工夫をすればよい。制服そのものをなくす必要はないと思う。\nB\n制服は本当に必要なのだろうか。私の娘の学校では、制服一式をそろえるのに十万円近くかかった。成長期の子どもはすぐに体が大きくなり、三年間に何度も買い替えることもある。しかも、卒業してしまえば着る機会はほとんどない。家庭の負担は決して小さくない。また、暑い日も寒い日も同じ服を着なければならないのは、体調管理の面からも疑問だ。男女で形の決められた制服に、抵抗を感じる生徒もいると聞く。服を選ぶことは、自分で考えて判断する練習にもなる。すぐに廃止するのが難しいなら、せめて制服と私服を選べるようにしてはどうか。",
+    "tr": {
+      "zh": "下面的A和B是以“初中需要校服吗”为主题寄给报社的读者来信。A：我赞成初中穿校服。每天早上不用为穿什么而烦恼，家庭经济条件造成的穿着差距也不显眼。我自己上初中时，没有因为穿着被拿来和朋友比较，所以过得很轻松。而且，当地居民一看就知道是哪所学校的学生，也有便于大家照看上下学安全的好处。另外，穿上校服，在学校的时候也能切换心态，专心学习。的确，也有人说校服太贵。那样的话，可以想办法减轻负担，比如把毕业生转让的校服便宜卖出。我认为没有必要取消校服本身。B：校服真的有必要吗？我女儿的学校，置办一整套校服就花了将近十万日元。处在成长期的孩子身体长得很快，三年里有时要买好几次。而且，一毕业就几乎没有机会再穿了。家庭的负担绝不算小。而且，无论热天冷天都必须穿同样的衣服，从调节身体状况的角度来看也有疑问。听说也有学生对按男女规定样式的校服感到抵触。选择衣服也是自己思考、判断的练习。如果马上废除有困难，至少让学生可以在校服和便服之间选择，怎么样？",
+      "en": "A and B are letters to a newspaper on the theme 'Do junior high schools need uniforms?' A: I'm in favour of junior-high uniforms. You don't have to agonise every morning over what to wear, and differences in clothing due to family finances don't stand out. When I was at junior high myself, I wasn't compared with friends over clothes, so I felt at ease. Local people can tell at a glance which school a pupil attends, which also makes it easier for them to keep an eye on children's safety on the way to and from school. Wearing a uniform also helps you switch your mind to concentrating on study while you're at school. True, some say uniforms are expensive. In that case, we can find ways to ease the burden, such as selling uniforms handed down by graduates cheaply. I don't think uniforms themselves need to be abolished. B: Are uniforms really necessary? At my daughter's school, a full set cost nearly 100,000 yen. Growing children quickly get bigger and sometimes need new ones several times in three years. And once they graduate, there is almost no occasion to wear them. The burden on families is by no means small. Having to wear the same clothes on hot days and cold days is also questionable from a health point of view. I also hear that some pupils feel uncomfortable with uniforms whose style is fixed by sex. Choosing clothes is practice in thinking and judging for yourself, too. If abolishing uniforms right away is difficult, why not at least let pupils choose between uniform and their own clothes?"
+    },
+    "questions": [
+      {
+        "q": "AとBのどちらの投書でも触れられていることは何か。",
+        "options": [
+          "制服を着ると、勉強に集中しやすくなること",
+          "制服にかかる費用が、家庭の負担になっていること",
+          "服を選ぶことが、子どもの考える力を育てること",
+          "服装による家庭の経済状況の差が、目立たないこと"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "A提到「値段が高いという声もある」并建议「負担を減らす工夫」；B说一整套近十万日元，「家庭の負担は決して小さくない」。",
+          "en": "A mentions 「値段が高いという声もある」 and suggests 「負担を減らす工夫」; B says a set costs nearly ¥100,000 and 「家庭の負担は決して小さくない」."
+        },
+        "wrong": [
+          {
+            "zh": "只有A这样说。",
+            "en": "Only A says this."
+          },
+          null,
+          {
+            "zh": "只有B这样说。",
+            "en": "Only B says this."
+          },
+          {
+            "zh": "只有A这样说。",
+            "en": "Only A says this."
+          }
+        ]
+      },
+      {
+        "q": "制服について、AとBはどのように考えているか。",
+        "options": [
+          "Aは制服をなくすべきではないと考え、Bは私服も選べるようにするべきだと考えている。",
+          "Aは制服の値段を下げるべきだと考え、Bは制服をすぐに廃止するべきだと考えている。",
+          "AもBも、制服と私服を自由に選べるようにするべきだと考えている。",
+          "AもBも、制服は残したうえで、費用を減らす工夫をするべきだと考えている。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "A：「制服そのものをなくす必要はない」；B：「せめて制服と私服を選べるようにしてはどうか」。",
+          "en": "A: 「制服そのものをなくす必要はない」; B: 「せめて制服と私服を選べるようにしてはどうか」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "B说「すぐに廃止するのが難しいなら」，主张的是可以选择，不是马上废除。",
+            "en": "B says 「すぐに廃止するのが難しいなら」 and proposes a choice, not immediate abolition."
+          },
+          {
+            "zh": "A主张保留校服，没有提议让学生选择便服。",
+            "en": "A wants to keep uniforms and doesn't propose a choice."
+          },
+          {
+            "zh": "减轻费用负担是A的建议；B提议的是可以选择便服。",
+            "en": "Cutting costs is A's idea; B proposes allowing own clothes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-606",
+    "type": "tougou",
+    "difficulty": 3,
+    "intro": "次のAとBは、「週休三日制」について書かれた新聞のコラムである。",
+    "passage": "A\n週に三日休める働き方を取り入れる会社が出てきた。休みが増えれば、疲れが取れるだけでなく、家族と過ごしたり、資格の勉強をしたりする時間も持てる。通勤する日が減れば、朝の電車の混雑が和らぐことにもつながる。ある会社では、導入後、働く日の集中力が高まり、全体の仕事量はほとんど変わらなかったという。介護や子育てを理由に仕事を辞める人を減らす効果も期待できる。求人の際に週休三日を示せば、応募する人も増えるはずだ。休みを増やすことは、社員のためだけでなく、人材を確保したい会社にとっても利点が大きいと言えるだろう。\nB\n週休三日制と聞くと魅力的だが、注意も必要だ。休みが一日増える分、働く日の勤務時間が長くなる制度や、給料が減る制度もあるからだ。また、客の対応が必要な仕事や、人手の足りない職場では、簡単には導入できない。取引先が休みの日にも連絡してくるようでは、結局、休みの日まで仕事のことを考えなければならない。休みが増えても、仕事の量が変わらなければ、かえって働く日の負担が重くなるおそれもある。制度そのものの良し悪しより、それぞれの職場の事情に合った形で取り入れられるかどうかが問題なのである。",
+    "tr": {
+      "zh": "下面的A和B是关于“每周休息三天制度”的报纸专栏。A：开始出现引入每周可以休息三天的工作方式的公司。休息增加了，不仅能消除疲劳，还能有时间陪家人、学习考证。通勤的日子少了，也有助于缓解早上电车的拥挤。据说某公司引入后，工作日的专注力提高了，整体工作量几乎没有变化。还可以期待减少因护理家人或育儿而辞职的人。招聘时打出每周休三天的条件，应聘的人也一定会增加。可以说，增加休息不仅对员工有好处，对想要留住人才的公司来说好处也很大。B：听到每周休息三天制度，确实很有吸引力，但也需要注意。因为有的制度会因为多休一天而延长工作日的工作时间，有的则会减少工资。另外，需要接待客人的工作和人手不足的职场，很难轻易引入。如果客户在休息日也照样联系，结果休息日也还得想着工作。即使休息增加了，如果工作量不变，工作日的负担反而可能更重。问题不在于制度本身的好坏，而在于能否以符合各个职场实际情况的方式引入。",
+      "en": "A and B are newspaper columns on the 'three-day weekend' system. A: Some companies have begun introducing ways of working with three days off a week. More days off not only let people recover from fatigue but also give them time to spend with family or study for qualifications. Fewer commuting days would also help ease crowding on morning trains. At one company, after it was introduced, concentration on working days rose and the total amount of work hardly changed. It can also be expected to reduce the number of people who quit to care for relatives or raise children. Offering a three-day weekend in job adverts should also bring in more applicants. Increasing days off can be said to benefit not only employees but also companies that want to secure staff. B: A three-day weekend sounds attractive, but caution is needed. Some schemes lengthen working hours on working days to make up for the extra day off, and some reduce pay. Also, jobs that involve dealing with customers and workplaces short of staff can't easily adopt it. And if business partners keep contacting you on your day off, you end up having to think about work even then. If days off increase but the amount of work doesn't change, the burden on working days may actually grow heavier. The issue is less whether the system itself is good or bad than whether it can be introduced in a form that suits each workplace's circumstances."
+    },
+    "questions": [
+      {
+        "q": "働く日について、AとBはどのように述べているか。",
+        "options": [
+          "AもBも、働く日の勤務時間が長くなると述べている。",
+          "Aは仕事の量が減ると述べ、Bは給料が減ると述べている。",
+          "Aは集中力が高まると述べ、Bは負担が重くなるおそれがあると述べている。",
+          "Aは家族と過ごす時間が増えると述べ、Bは人手が足りなくなると述べている。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "A：导入后「働く日の集中力が高まり」；B：工作量不变的话「働く日の負担が重くなるおそれ」。",
+          "en": "A: 「働く日の集中力が高まり」; B: if work stays the same, 「働く日の負担が重くなるおそれ」."
+        },
+        "wrong": [
+          {
+            "zh": "工作时间变长只有B提到，A没有说。",
+            "en": "Only B mentions longer hours; A doesn't."
+          },
+          {
+            "zh": "A说的是整体工作量「ほとんど変わらなかった」，不是减少。",
+            "en": "A says the workload 「ほとんど変わらなかった」, not that it fell."
+          },
+          null,
+          {
+            "zh": "陪家人是休息日的事；B说的是本来就人手不足的职场难以引入，不是会变得人手不足。",
+            "en": "Family time is about days off; B says short-staffed workplaces can't adopt it, not that staff will run short."
+          }
+        ]
+      },
+      {
+        "q": "週休三日制について、AとBはどのような立場をとっているか。",
+        "options": [
+          "Aは会社にも利点があると考え、Bは職場の事情に合うかが大切だと考えている。",
+          "Aは社員のためだけの制度だと考え、Bはどの職場でもすぐに導入するべきだと考えている。",
+          "AもBも、制度を導入すると給料が減ってしまうことを心配している。",
+          "Aは介護や子育てをする人に限るべきだと考え、Bは制度そのものに反対している。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "A：「会社にとっても利点が大きい」；B：问题在于能否「それぞれの職場の事情に合った形で取り入れられるか」。",
+          "en": "A: 「会社にとっても利点が大きい」; B: the question is whether it fits 「それぞれの職場の事情に合った形で」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "A说「社員のためだけでなく」；B说有些职场「簡単には導入できない」。",
+            "en": "A says 「社員のためだけでなく」; B says some workplaces 「簡単には導入できない」."
+          },
+          {
+            "zh": "只有B提到降薪的制度，A没有担心这一点。",
+            "en": "Only B mentions pay cuts; A doesn't worry about it."
+          },
+          {
+            "zh": "A只说能减少因护理、育儿辞职的人，没说只限这些人；B说问题不在「制度そのものの良し悪し」。",
+            "en": "A doesn't limit it to carers and parents; B says the issue isn't 「制度そのものの良し悪し」."
+          }
+        ]
+      }
+    ]
   }
 ]

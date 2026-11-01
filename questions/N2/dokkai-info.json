@@ -282,5 +282,147 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n2-dk-405",
+    "type": "info",
+    "difficulty": 2,
+    "intro": "大学生の木下さんは、来月から、あおば駅前の駐輪場を定期利用したいと考えている。自転車は通学に毎日使うので、雨にぬれない場所に置きたい。料金はできるだけ安くしたい。",
+    "passage": "あおば市　駅前駐輪場　定期利用のご案内\n| 駐輪場 | 種類 | 屋根 | 一般（1か月） | 学生（1か月） |\n| 第1駐輪場（駅から徒歩1分） | 自転車 | あり | 2,500円 | 1,800円 |\n| 第1駐輪場（駅から徒歩1分） | 原付バイク | あり | 3,500円 | 3,000円 |\n| 第2駐輪場（駅から徒歩5分） | 自転車 | なし | 1,500円 | 1,000円 |\n| 第3駐輪場（駅から徒歩8分） | 自転車 | あり | 2,000円 | 1,500円 |\n| 第3駐輪場（駅から徒歩8分） | 原付バイク | あり | 3,000円 | 2,500円 |\n＊学生料金は、高校生・大学生・専門学校生の方が対象です。お申し込みの際に、学生証をお見せください。\n＊3か月分をまとめてお支払いいただくと、合計金額から10％割引いたします（6か月分の場合は15％）。\n＊お申し込みは、利用を開始する月の前の月の20日から末日まで、各駐輪場の管理室で受け付けます。\n＊第1駐輪場は空きが少ないため、毎月抽選で利用者を決めます。抽選の結果は、前の月の末日までにお知らせします。\n＊定期利用の方には、料金と引きかえに定期シールをお渡しします。自転車の見やすい場所に貼ってください。\n＊原付バイクの場合は、お申し込みの際にナンバープレートの番号をお知らせください。\n＊利用期間の途中で利用をやめた場合、残りの期間の料金はお返しできません。",
+    "tr": {
+      "zh": "青叶市 车站前停车场 定期使用指南。第1停车场（距车站步行1分钟）：自行车，有顶棚，普通（1个月）2,500日元，学生（1个月）1,800日元；电动轻便摩托，有顶棚，3,500日元／3,000日元。第2停车场（步行5分钟）：自行车，无顶棚，1,500日元／1,000日元。第3停车场（步行8分钟）：自行车，有顶棚，2,000日元／1,500日元；电动轻便摩托，有顶棚，3,000日元／2,500日元。＊学生价适用于高中生、大学生、专门学校学生。申请时请出示学生证。＊一次性支付3个月费用的，总金额打九折（6个月的打八五折）。＊申请时间为开始使用月份的前一个月的20日至月底，在各停车场管理室受理。＊第1停车场空位较少，每月通过抽签决定使用者。抽签结果在前一个月的月底之前通知。＊定期使用者付费时领取定期贴纸，请贴在自行车显眼的位置。＊电动轻便摩托请在申请时告知车牌号。＊在使用期间中途停止使用的，剩余期间的费用不予退还。",
+      "en": "Aoba City station bicycle parking — monthly passes. No. 1 (1 min from the station): bicycles, roofed, general ¥2,500 / student ¥1,800 a month; mopeds, roofed, ¥3,500 / ¥3,000. No. 2 (5 min): bicycles, no roof, ¥1,500 / ¥1,000. No. 3 (8 min): bicycles, roofed, ¥2,000 / ¥1,500; mopeds, roofed, ¥3,000 / ¥2,500. * Student rates are for high-school, university and vocational-school students; show your student ID when applying. * Paying for three months at once takes 10% off the total (15% for six months). * Applications are taken at each car park's office from the 20th to the last day of the month before you start. * No. 1 has few spaces, so users are chosen by lottery every month; results are announced by the last day of the previous month. * Pass holders receive a sticker on payment; put it where it can easily be seen on the bicycle. * For mopeds, give the number-plate number when applying. * If you stop using the space part-way through, the fee for the remaining period is not refunded."
+    },
+    "questions": [
+      {
+        "q": "木下さんが条件に合う駐輪場を選び、3か月分をまとめて払う場合、料金はいくらか。",
+        "options": [
+          "2,700円",
+          "4,050円",
+          "4,500円",
+          "4,860円"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "要有顶棚：第1或第3。最便宜的是第3的学生价1,500日元。1,500×3＝4,500，一次付3个月打九折＝4,050日元。",
+          "en": "Roofed means No. 1 or No. 3; the cheaper is No. 3 at the student rate, ¥1,500. ¥1,500 × 3 = ¥4,500, less 10% for three months = ¥4,050."
+        },
+        "wrong": [
+          {
+            "zh": "这是第2停车场（1,000×3打九折）的金额，但第2没有顶棚。",
+            "en": "That's No. 2 (¥1,000 × 3 less 10%), which has no roof."
+          },
+          null,
+          {
+            "zh": "忘了一次付3个月可以打九折。",
+            "en": "That forgets the 10% discount for three months."
+          },
+          {
+            "zh": "这是第1停车场学生价（1,800×3打九折），比第3贵。",
+            "en": "That's No. 1 at the student rate (¥1,800 × 3 less 10%), dearer than No. 3."
+          }
+        ]
+      },
+      {
+        "q": "会社員の村田さんは、来月から第1駐輪場に自転車を置きたい。正しいものはどれか。",
+        "options": [
+          "今月20日から末日までに申し込めば、来月から必ず利用できる。",
+          "今月20日から末日までに申し込み、抽選に当たれば利用できる。",
+          "来月に入ってから申し込めば、その日から利用を始められる。",
+          "申し込みの際に料金を払えば、抽選なしで利用できる。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "申请在「前の月の20日から末日まで」，而第1停车场「毎月抽選で利用者を決めます」，所以要中签才能用。",
+          "en": "Apply 「前の月の20日から末日まで」; No. 1 is 「毎月抽選で利用者を決めます」, so he can use it only if he wins."
+        },
+        "wrong": [
+          {
+            "zh": "第1停车场要抽签，申请了不一定能用。",
+            "en": "No. 1 goes by lottery, so applying doesn't guarantee a space."
+          },
+          null,
+          {
+            "zh": "申请必须在开始使用的前一个月办理。",
+            "en": "You must apply in the month before you start."
+          },
+          {
+            "zh": "文中没有付费就免抽签的规定；费用是领贴纸时付的。",
+            "en": "Nothing lets you skip the lottery by paying; payment comes with the sticker."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-406",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "留学生のチャンさんは、アルバイトを探している。大学の授業は平日の16時に終わり、土曜日と日曜日は授業がない。留学生は1週間に28時間までしか働くことができない。日本語能力試験はN3に合格している。できるだけ時給の高い仕事がしたい。",
+    "passage": "さくら駅前　アルバイト募集一覧\n| | 仕事 | 勤務時間 | 勤務日 | 時給 | 条件 |\n| A | カフェの店員 | 17:00〜22:00 | 週3日以上 | 1,150円 | 特になし |\n| B | ホテルの受付 | 18:00〜23:00 | 週6日 | 1,400円 | 特になし |\n| C | 倉庫での仕分け | 9:00〜15:00 | 平日、週2日以上 | 1,300円 | 特になし |\n| D | 塾の受付事務 | 17:00〜21:00 | 週3日（月・水・金） | 1,250円 | 特になし |\n| E | 空港の案内係 | 17:00〜21:00 | 週4日以上 | 1,500円 | 日本語能力試験N2以上 |\n| F | レストランの調理補助 | 10:00〜15:00 | 土・日 | 1,200円 | 特になし |\n＊応募は、各勤務先へ電話でお申し込みください。面接の日時は、その際にお伝えします。\n＊面接には、写真付きの履歴書をお持ちください。留学生の方は、在留カードもお持ちください。\n＊Dは、面接の際に簡単な計算の試験を行います。\n＊交通費は、A・D・Fのみ、1日500円まで支給します。\n＊どの仕事も、最初の1か月は研修期間のため、時給が100円低くなります。\n＊勤務を始める日は、採用が決まった後で相談して決めます。",
+    "tr": {
+      "zh": "樱站前 招聘兼职一览。A 咖啡店店员：17:00–22:00，每周3天以上，时薪1,150日元，无特别要求。B 酒店前台：18:00–23:00，每周6天，1,400日元，无特别要求。C 仓库分拣：9:00–15:00，工作日、每周2天以上，1,300日元，无特别要求。D 补习班前台事务：17:00–21:00，每周3天（周一、三、五），1,250日元，无特别要求。E 机场问询员：17:00–21:00，每周4天以上，1,500日元，日语能力考试N2以上。F 餐厅帮厨：10:00–15:00，周六、周日，1,200日元，无特别要求。＊应聘请打电话联系各工作单位，届时会告知面试时间。＊面试请携带贴有照片的简历。留学生请同时携带在留卡。＊D在面试时会进行简单的计算测试。＊交通费仅A、D、F每天最多支付500日元。＊所有工作的第一个月为培训期，时薪低100日元。＊开始工作的日期在录用决定后商量确定。",
+      "en": "Sakura Station area — part-time jobs. A Café staff: 17:00–22:00, 3+ days a week, ¥1,150 an hour, no requirements. B Hotel reception: 18:00–23:00, 6 days a week, ¥1,400, none. C Warehouse sorting: 9:00–15:00, weekdays, 2+ days, ¥1,300, none. D Cram-school front desk: 17:00–21:00, 3 days (Mon, Wed, Fri), ¥1,250, none. E Airport information desk: 17:00–21:00, 4+ days, ¥1,500, JLPT N2 or above. F Restaurant kitchen help: 10:00–15:00, Sat and Sun, ¥1,200, none. * Apply by phoning the workplace; you'll be told the interview date and time then. * Bring a CV with a photo to the interview; international students should also bring their residence card. * D gives a simple arithmetic test at the interview. * Travel costs of up to ¥500 a day are paid for A, D and F only. * In every job the first month is a training period, paid ¥100 an hour less. * The start date is agreed after you are hired."
+    },
+    "questions": [
+      {
+        "q": "チャンさんが応募できる仕事のうち、時給が最も高いものはどれか。",
+        "options": [
+          "Bのホテルの受付",
+          "Cの倉庫での仕分け",
+          "Eの空港の案内係",
+          "Dの塾の受付事務"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "B每周6天×5小时＝30小时，超过28小时；C在工作日白天，和上课冲突；E要求N2，她只有N3。剩下的A、D、F中时薪最高的是D（1,250日元）。",
+          "en": "B is 6 × 5 = 30 hours, over 28; C is weekday daytime, during classes; E needs N2 and she has N3. Of A, D and F, D pays most (¥1,250)."
+        },
+        "wrong": [
+          {
+            "zh": "每周6天、每天5小时，共30小时，超过留学生的28小时上限。",
+            "en": "Six five-hour days is 30 hours, over the 28-hour limit."
+          },
+          {
+            "zh": "9点到15点是工作日，她要上课到16点。",
+            "en": "9:00–15:00 on weekdays clashes with classes until 16:00."
+          },
+          {
+            "zh": "要求N2以上，她只通过了N3。",
+            "en": "It requires N2; she has passed only N3."
+          },
+          null
+        ]
+      },
+      {
+        "q": "チャンさんがDの仕事に応募する場合、どうしなければならないか。",
+        "options": [
+          "履歴書を勤務先に郵送してから、面接の日時の連絡を待つ。",
+          "電話で申し込み、面接には履歴書と在留カードを持っていく。",
+          "面接の日より前に、塾で計算の試験を受けて合格しておく。",
+          "電話で申し込んで、面接には写真付きの履歴書だけを持っていく。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "应聘「電話でお申し込み」；面试带「写真付きの履歴書」，留学生还要带「在留カード」。",
+          "en": "Apply 「電話で」; bring 「写真付きの履歴書」 and, as an international student, the 「在留カード」."
+        },
+        "wrong": [
+          {
+            "zh": "是打电话申请，不是邮寄简历。",
+            "en": "You apply by phone, not by posting a CV."
+          },
+          null,
+          {
+            "zh": "计算测试是「面接の際に」进行的，不是面试前。",
+            "en": "The test is 「面接の際に」, not beforehand."
+          },
+          {
+            "zh": "她是留学生，还要带「在留カード」。",
+            "en": "As an international student she must also bring her 「在留カード」."
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -1426,5 +1426,1157 @@
         "en": "けわしい is 「険しい」 (steep, stern)."
       }
     ]
+  },
+  {
+    "id": "n2-mg-141",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "相手の意見を<<尊重>>することが大切だ。",
+    "options": [
+      "そうちょう",
+      "ぞんちょう",
+      "そんちょう",
+      "そんちょ"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "尊重对方的意见很重要。",
+      "en": "It's important to respect other people's opinions."
+    },
+    "why": {
+      "zh": "「尊（そん）」+「重（ちょう）」：「そんちょう」。「重」在这里读「ちょう」（如「慎重」「貴重」）。",
+      "en": "「尊」 is そん and 「重」 is ちょう here (as in 「慎重」, 「貴重」): そんちょう."
+    },
+    "wrong": [
+      {
+        "zh": "「尊」读短音「そん」，不读「そう」。",
+        "en": "「尊」 is そん, not そう."
+      },
+      {
+        "zh": "「尊」是清音「そん」，不浊化成「ぞん」。",
+        "en": "「尊」 is unvoiced そん, not ぞん."
+      },
+      null,
+      {
+        "zh": "「重」是长音「ちょう」，不能缩短成「ちょ」。",
+        "en": "「重」 is the long ちょう — don't shorten it to ちょ."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-142",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "日本は多くの国と<<貿易>>をしている。",
+    "options": [
+      "ぼえき",
+      "ぼうえき",
+      "ほうえき",
+      "ぼうやく"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "日本和很多国家进行贸易。",
+      "en": "Japan trades with many countries."
+    },
+    "why": {
+      "zh": "「貿（ぼう）」+「易（えき）」：「ぼうえき」。",
+      "en": "「貿」 is ぼう and 「易」 is えき: ぼうえき."
+    },
+    "wrong": [
+      {
+        "zh": "「貿」是长音「ぼう」，不能缩短。",
+        "en": "「貿」 is the long ぼう — don't shorten it."
+      },
+      null,
+      {
+        "zh": "「貿」是浊音「ぼう」，不是「ほう」。",
+        "en": "「貿」 is voiced ぼう, not ほう."
+      },
+      {
+        "zh": "「易」在这里读「えき」（「容易」里读「い」），没有「やく」的读法。",
+        "en": "「易」 is えき here (い in 「容易」); it's never やく."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-143",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "彼女は社内でも特に<<優秀>>な社員だ。",
+    "options": [
+      "ゆしゅう",
+      "ゆうしゅ",
+      "ゆうしゅう",
+      "ようしゅう"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "她在公司里也是特别优秀的员工。",
+      "en": "She's one of the most capable people in the company."
+    },
+    "why": {
+      "zh": "「優（ゆう）」+「秀（しゅう）」：两个都是长音，「ゆうしゅう」。",
+      "en": "「優」 is ゆう and 「秀」 is しゅう — both long: ゆうしゅう."
+    },
+    "wrong": [
+      {
+        "zh": "「優」是长音「ゆう」，不能缩短成「ゆ」。",
+        "en": "「優」 is the long ゆう, not ゆ."
+      },
+      {
+        "zh": "「秀」是长音「しゅう」，不能缩短成「しゅ」。",
+        "en": "「秀」 is the long しゅう, not しゅ."
+      },
+      null,
+      {
+        "zh": "「優」读「ゆう」，不读「よう」。",
+        "en": "「優」 is ゆう, not よう."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-144",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "旅行のあいだ、犬を友人に<<預けて>>いる。",
+    "options": [
+      "あづけて",
+      "あすけて",
+      "あたえて",
+      "あずけて"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "旅行期间，我把狗寄放在朋友那里。",
+      "en": "While I'm travelling, my dog is staying with a friend."
+    },
+    "why": {
+      "zh": "「預ける（あずける）」：寄存、托付。现代假名写「ず」。",
+      "en": "「預ける」 is あずける: to leave something in someone's care. Modern spelling uses ず."
+    },
+    "wrong": [
+      {
+        "zh": "现代假名用法写「あずける」，「づ」是旧写法。",
+        "en": "Modern kana spelling is あずける; づ is the old spelling."
+      },
+      {
+        "zh": "第二个音是浊音「ず」，不是「す」。",
+        "en": "The second sound is voiced ず, not す."
+      },
+      {
+        "zh": "「あたえる」是「与える」（给予），不是「預ける」。",
+        "en": "あたえる is 「与える」 (to give), not 「預ける」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-mg-145",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "母はプレゼントを押し入れに<<隠して>>おいた。",
+    "options": [
+      "かこして",
+      "かくして",
+      "かぐして",
+      "かえして"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "妈妈把礼物藏在了壁橱里。",
+      "en": "Mum hid the present in the closet."
+    },
+    "why": {
+      "zh": "「隠す（かくす）」：藏、隐藏。",
+      "en": "「隠す」 is かくす: to hide."
+    },
+    "wrong": [
+      {
+        "zh": "第二个音是「く」，不是「こ」；「かこす」不是词。",
+        "en": "The second sound is く, not こ; かこす isn't a word."
+      },
+      null,
+      {
+        "zh": "第二个音是清音「く」，不是「ぐ」。",
+        "en": "The second sound is unvoiced く, not ぐ."
+      },
+      {
+        "zh": "「かえす」是「返す」（归还），不是「隠す」。",
+        "en": "かえす is 「返す」 (to return), not 「隠す」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-146",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "今年は天気がよく、米の<<収穫>>が多かった。",
+    "options": [
+      "しゅうかく",
+      "しゅかく",
+      "しゅうがく",
+      "しゅうかつ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "今年天气好，大米收成很多。",
+      "en": "The weather was good this year, so the rice harvest was big."
+    },
+    "why": {
+      "zh": "「収（しゅう）」+「穫（かく）」：「しゅうかく」。",
+      "en": "「収」 is しゅう and 「穫」 is かく: しゅうかく."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「収」是长音「しゅう」，不能缩短。",
+        "en": "「収」 is the long しゅう — don't shorten it."
+      },
+      {
+        "zh": "「穫」是清音「かく」；「しゅうがく」是「修学」「就学」。",
+        "en": "「穫」 is unvoiced かく; しゅうがく is 「修学」 or 「就学」."
+      },
+      {
+        "zh": "「穫」读「かく」；「しゅうかつ」是「就活」（求职活动）。",
+        "en": "「穫」 is かく; しゅうかつ is 「就活」 (job hunting)."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-147",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "この工場では自動車の部品を<<製造>>している。",
+    "options": [
+      "せいそう",
+      "せいぞ",
+      "ぜいぞう",
+      "せいぞう"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "这家工厂制造汽车零件。",
+      "en": "This factory makes car parts."
+    },
+    "why": {
+      "zh": "「製（せい）」+「造（ぞう）」：「せいぞう」。",
+      "en": "「製」 is せい and 「造」 is ぞう: せいぞう."
+    },
+    "wrong": [
+      {
+        "zh": "「造」在这里浊化读「ぞう」；「せいそう」是「清掃」（清扫）。",
+        "en": "「造」 is voiced ぞう here; せいそう is 「清掃」 (cleaning)."
+      },
+      {
+        "zh": "「造」是长音「ぞう」，不能缩短。",
+        "en": "「造」 is the long ぞう — don't shorten it."
+      },
+      {
+        "zh": "「製」是清音「せい」，不是「ぜい」。",
+        "en": "「製」 is unvoiced せい, not ぜい."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-mg-148",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "父は自分の仕事に<<誇り>>を持っている。",
+    "options": [
+      "ほごり",
+      "ほまれ",
+      "いかり",
+      "ほこり"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "父亲对自己的工作感到自豪。",
+      "en": "My father takes pride in his work."
+    },
+    "why": {
+      "zh": "「誇り（ほこり）」：自豪、骄傲。「誇りを持つ」是固定搭配。",
+      "en": "「誇り」 is ほこり: pride. 「誇りを持つ」 is the set phrase."
+    },
+    "wrong": [
+      {
+        "zh": "第二个音是清音「こ」，不是「ご」。",
+        "en": "The second sound is unvoiced こ, not ご."
+      },
+      {
+        "zh": "「ほまれ」是「誉れ」（荣誉），不是「誇り」。",
+        "en": "ほまれ is 「誉れ」 (honour), not 「誇り」."
+      },
+      {
+        "zh": "「いかり」是「怒り」（愤怒），不是「誇り」。",
+        "en": "いかり is 「怒り」 (anger), not 「誇り」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-mg-149",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "長時間パソコンを使うときは、<<姿勢>>に気をつけたほうがいい。",
+    "options": [
+      "しぜい",
+      "しいせい",
+      "しせい",
+      "じせい"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "长时间用电脑时，最好注意姿势。",
+      "en": "When you use a computer for hours, mind your posture."
+    },
+    "why": {
+      "zh": "「姿（し）」+「勢（せい）」：「しせい」。",
+      "en": "「姿」 is し and 「勢」 is せい: しせい."
+    },
+    "wrong": [
+      {
+        "zh": "「勢」在这里是清音「せい」，不浊化。",
+        "en": "「勢」 stays unvoiced せい here."
+      },
+      {
+        "zh": "「姿」是短音「し」，不拉长。",
+        "en": "「姿」 is the short し, not しい."
+      },
+      null,
+      {
+        "zh": "「姿」是清音「し」；「じせい」是「自制」「時世」等。",
+        "en": "「姿」 is unvoiced し; じせい is 「自制」, 「時世」 etc."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-150",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "写真を<<拡大>>して、細かいところを確認した。",
+    "options": [
+      "かくたい",
+      "こうだい",
+      "かくだ",
+      "かくだい"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "把照片放大，确认了细节。",
+      "en": "I enlarged the photo to check the details."
+    },
+    "why": {
+      "zh": "「拡（かく）」+「大（だい）」：「かくだい」。",
+      "en": "「拡」 is かく and 「大」 is だい: かくだい."
+    },
+    "wrong": [
+      {
+        "zh": "「大」读浊音「だい」，不是「たい」。",
+        "en": "「大」 is voiced だい here, not たい."
+      },
+      {
+        "zh": "「拡」读「かく」；「こうだい」是「広大」（广阔）。",
+        "en": "「拡」 is かく; こうだい is 「広大」 (vast)."
+      },
+      {
+        "zh": "「大」读「だい」，不能少了「い」。",
+        "en": "「大」 is だい — the い can't be dropped."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-mg-151",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "工場の排水で川が<<汚染>>された。",
+    "options": [
+      "おせん",
+      "おぜん",
+      "おうせん",
+      "おそん"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "工厂的废水污染了河流。",
+      "en": "The river was polluted by waste water from the factory."
+    },
+    "why": {
+      "zh": "「汚（お）」+「染（せん）」：「おせん」。",
+      "en": "「汚」 is お and 「染」 is せん: おせん."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「染」是清音「せん」；「おぜん」是「お膳」。",
+        "en": "「染」 is unvoiced せん; おぜん is 「お膳」 (a meal tray)."
+      },
+      {
+        "zh": "「汚」是短音「お」；「おうせん」是「応戦」。",
+        "en": "「汚」 is the short お; おうせん is 「応戦」 (fighting back)."
+      },
+      {
+        "zh": "「染」读「せん」，不读「そん」。",
+        "en": "「染」 is せん, not そん."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-152",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "先ほどの説明に、少し<<補足>>します。",
+    "options": [
+      "ほうそく",
+      "ほそく",
+      "ほぞく",
+      "ほたく"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "我对刚才的说明稍作补充。",
+      "en": "Let me add a little to what I explained earlier."
+    },
+    "why": {
+      "zh": "「補（ほ）」+「足（そく）」：「ほそく」。",
+      "en": "「補」 is ほ and 「足」 is そく: ほそく."
+    },
+    "wrong": [
+      {
+        "zh": "「補」是短音「ほ」；「ほうそく」是「法則」（法则）。",
+        "en": "「補」 is the short ほ; ほうそく is 「法則」 (a law, rule)."
+      },
+      null,
+      {
+        "zh": "「足」是清音「そく」，不浊化。",
+        "en": "「足」 stays unvoiced そく."
+      },
+      {
+        "zh": "「足」读「そく」，不读「たく」。",
+        "en": "「足」 is そく, not たく."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-153",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "医者に運動を<<勧められて>>、ジムに通い始めた。",
+    "options": [
+      "すすめられて",
+      "すずめられて",
+      "もとめられて",
+      "あらためられて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "医生建议我运动，于是我开始去健身房。",
+      "en": "My doctor told me to exercise, so I started going to a gym."
+    },
+    "why": {
+      "zh": "「勧める（すすめる）」：劝、建议。这里是被动「勧められる」。",
+      "en": "「勧める」 is すすめる: to recommend, urge. Here in the passive 「勧められる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "第二个音是清音「す」，不是「ず」。",
+        "en": "The second sound is unvoiced す, not ず."
+      },
+      {
+        "zh": "「もとめる」是「求める」（要求），不是「勧める」。",
+        "en": "もとめる is 「求める」 (to ask for), not 「勧める」."
+      },
+      {
+        "zh": "「あらためる」是「改める」（改正），不是「勧める」。",
+        "en": "あらためる is 「改める」 (to revise), not 「勧める」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-154",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "新しい製品は、性能の面で他社のものに<<劣って>>いる。",
+    "options": [
+      "おどって",
+      "おとって",
+      "おそって",
+      "おくって"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "新产品在性能方面不如其他公司的产品。",
+      "en": "The new product falls short of the competitors' in performance."
+    },
+    "why": {
+      "zh": "「劣る（おとる）」：比不上、逊色。",
+      "en": "「劣る」 is おとる: to be inferior to."
+    },
+    "wrong": [
+      {
+        "zh": "第二个音是清音「と」；「おどる」是「踊る」（跳舞）。",
+        "en": "The second sound is unvoiced と; おどる is 「踊る」 (to dance)."
+      },
+      null,
+      {
+        "zh": "「おそう」是「襲う」（袭击），不是「劣る」。",
+        "en": "おそう is 「襲う」 (to attack), not 「劣る」."
+      },
+      {
+        "zh": "「おくる」是「送る」，不是「劣る」。",
+        "en": "おくる is 「送る」 (to send), not 「劣る」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-155",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "レポートの<<締め切り>>は来週の金曜日だ。",
+    "options": [
+      "しめぎり",
+      "しめっきり",
+      "ていきり",
+      "しめきり"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "报告的截止日期是下周五。",
+      "en": "The report is due next Friday."
+    },
+    "why": {
+      "zh": "「締め切り（しめきり）」：截止（日期）。「切り」不浊化。",
+      "en": "「締め切り」 is しめきり: the deadline. 「切り」 isn't voiced here."
+    },
+    "wrong": [
+      {
+        "zh": "「切り」在这里不浊化，读「きり」。",
+        "en": "「切り」 is not voiced here: きり."
+      },
+      {
+        "zh": "中间没有促音「っ」。",
+        "en": "There's no small っ in this word."
+      },
+      {
+        "zh": "「締」训读「しめ」；「てい」是音读（「締結」）。",
+        "en": "「締」 here is the kun reading しめ; てい is its on reading (「締結」)."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-mg-156",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "お忙しいところ<<恐縮>>ですが、資料を確認していただけますか。",
+    "options": [
+      "きょしゅく",
+      "きょうしゅく",
+      "きょうじゅく",
+      "こうしゅく"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "百忙之中实在抱歉，能请您确认一下资料吗？",
+      "en": "I'm sorry to trouble you when you're busy, but could you check the documents?"
+    },
+    "why": {
+      "zh": "「恐（きょう）」+「縮（しゅく）」：「きょうしゅく」，客气地表示过意不去。",
+      "en": "「恐」 is きょう and 「縮」 is しゅく: きょうしゅく, a polite 'I'm sorry to trouble you'."
+    },
+    "wrong": [
+      {
+        "zh": "「恐」是长音「きょう」，不能缩短。",
+        "en": "「恐」 is the long きょう — don't shorten it."
+      },
+      null,
+      {
+        "zh": "「縮」是清音「しゅく」，不浊化。",
+        "en": "「縮」 stays unvoiced しゅく."
+      },
+      {
+        "zh": "「恐」读「きょう」，不读「こう」。",
+        "en": "「恐」 is きょう, not こう."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-157",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "鳩は平和の<<象徴>>だと言われている。",
+    "options": [
+      "ぞうちょう",
+      "しょうちょう",
+      "しょうちょ",
+      "しょうちょく"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "鸽子被认为是和平的象征。",
+      "en": "The dove is said to be a symbol of peace."
+    },
+    "why": {
+      "zh": "「象（しょう）」+「徴（ちょう）」：「しょうちょう」。",
+      "en": "「象」 is しょう and 「徴」 is ちょう: しょうちょう."
+    },
+    "wrong": [
+      {
+        "zh": "「象」读「ぞう」是大象，这个词里读「しょう」。",
+        "en": "「象」 is ぞう for 'elephant'; in this word it's しょう."
+      },
+      null,
+      {
+        "zh": "「徴」是长音「ちょう」，不能缩短。",
+        "en": "「徴」 is the long ちょう — don't shorten it."
+      },
+      {
+        "zh": "「徴」读「ちょう」，没有「ちょく」的读法。",
+        "en": "「徴」 is ちょう; it's never ちょく."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-158",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "売り上げが伸びず、その会社は日本市場から<<撤退>>した。",
+    "options": [
+      "てつたい",
+      "てんたい",
+      "てったく",
+      "てったい"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "销售额上不去，那家公司撤出了日本市场。",
+      "en": "Sales didn't grow, so the company pulled out of the Japanese market."
+    },
+    "why": {
+      "zh": "「撤（てつ）」+「退（たい）」，「つ」变成促音：「てったい」。",
+      "en": "「撤」 てつ + 「退」 たい, with つ becoming small っ: てったい."
+    },
+    "wrong": [
+      {
+        "zh": "「てつ」后接「た」行时变成促音「てっ」。",
+        "en": "てつ before a t-sound becomes てっ."
+      },
+      {
+        "zh": "没有拨音「ん」；「てんたい」是「天体」。",
+        "en": "There's no ん; てんたい is 「天体」 (a celestial body)."
+      },
+      {
+        "zh": "「退」读「たい」，不读「たく」。",
+        "en": "「退」 is たい, not たく."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-mg-159",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "兄は今、駅前のレストランに<<雇われて>>働いている。",
+    "options": [
+      "やどわれて",
+      "かこわれて",
+      "やとわれて",
+      "やしなわれて"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "哥哥现在受雇于车站前的一家餐厅。",
+      "en": "My brother is now employed at a restaurant by the station."
+    },
+    "why": {
+      "zh": "「雇う（やとう）」：雇用。被动「雇われる」。",
+      "en": "「雇う」 is やとう: to employ. Passive 「雇われる」."
+    },
+    "wrong": [
+      {
+        "zh": "第二个音是清音「と」，不是「ど」。",
+        "en": "The second sound is unvoiced と, not ど."
+      },
+      {
+        "zh": "「かこう」是「囲う」（围起来），不是「雇う」。",
+        "en": "かこう is 「囲う」 (to enclose), not 「雇う」."
+      },
+      null,
+      {
+        "zh": "「やしなう」是「養う」（抚养），不是「雇う」。",
+        "en": "やしなう is 「養う」 (to support, raise), not 「雇う」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-160",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "大雨で山の斜面が<<崩れて>>、道路が通れなくなった。",
+    "options": [
+      "くづれて",
+      "こわれて",
+      "くずれて",
+      "つぶれて"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "大雨导致山坡塌方，道路无法通行。",
+      "en": "Heavy rain brought the hillside down and the road was blocked."
+    },
+    "why": {
+      "zh": "「崩れる（くずれる）」：崩塌、垮。现代假名写「ず」。",
+      "en": "「崩れる」 is くずれる: to collapse. Modern spelling uses ず."
+    },
+    "wrong": [
+      {
+        "zh": "现代假名用法写「くずれる」，「づ」是旧写法。",
+        "en": "Modern kana spelling is くずれる; づ is the old spelling."
+      },
+      {
+        "zh": "「こわれる」是「壊れる」，汉字「崩」不读「こわ」。",
+        "en": "こわれる is 「壊れる」; 「崩」 is never read こわ."
+      },
+      null,
+      {
+        "zh": "「つぶれる」是「潰れる」（压坏、倒闭），不是「崩れる」。",
+        "en": "つぶれる is 「潰れる」 (to be crushed, go under), not 「崩れる」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-161",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "来週、取引先の会社を<<訪問>>する予定だ。",
+    "options": [
+      "ほうもん",
+      "ほもん",
+      "ぼうもん",
+      "ほうぶん"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "下周计划去拜访客户公司。",
+      "en": "Next week I'm due to visit a client's company."
+    },
+    "why": {
+      "zh": "「訪（ほう）」+「問（もん）」：「ほうもん」。",
+      "en": "「訪」 is ほう and 「問」 is もん: ほうもん."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「訪」是长音「ほう」，不能缩短。",
+        "en": "「訪」 is the long ほう — don't shorten it."
+      },
+      {
+        "zh": "「訪」是清音「ほう」，不是「ぼう」。",
+        "en": "「訪」 is unvoiced ほう, not ぼう."
+      },
+      {
+        "zh": "「問」读「もん」；「ほうぶん」是「邦文」。",
+        "en": "「問」 is もん; ほうぶん is 「邦文」 (Japanese text)."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-162",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "新しい制度には、社員の<<抵抗>>が強かった。",
+    "options": [
+      "ていこ",
+      "てきこう",
+      "たいこう",
+      "ていこう"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "员工对新制度的抵触很强烈。",
+      "en": "Staff pushed back hard against the new system."
+    },
+    "why": {
+      "zh": "「抵（てい）」+「抗（こう）」：「ていこう」。",
+      "en": "「抵」 is てい and 「抗」 is こう: ていこう."
+    },
+    "wrong": [
+      {
+        "zh": "「抗」是长音「こう」，不能缩短。",
+        "en": "「抗」 is the long こう — don't shorten it."
+      },
+      {
+        "zh": "「抵」读「てい」，不读「てき」。",
+        "en": "「抵」 is てい, not てき."
+      },
+      {
+        "zh": "「抵」读「てい」；「たいこう」是「対抗」（对抗）。",
+        "en": "「抵」 is てい; たいこう is 「対抗」 (rivalry, opposing)."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-mg-163",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "彼は自分をだました相手を、今でも<<憎んで>>いる。",
+    "options": [
+      "にがんで",
+      "にくんで",
+      "うらんで",
+      "ぞうんで"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "他到现在还憎恨骗了自己的人。",
+      "en": "He still hates the person who cheated him."
+    },
+    "why": {
+      "zh": "「憎む（にくむ）」：憎恨。",
+      "en": "「憎む」 is にくむ: to hate."
+    },
+    "wrong": [
+      {
+        "zh": "第二个音是「く」；「にがむ」不是词（「苦い」是にがい）。",
+        "en": "The second sound is く; にがむ isn't a word (「苦い」 is にがい)."
+      },
+      null,
+      {
+        "zh": "「うらむ」是「恨む」（怨恨），不是「憎む」。",
+        "en": "うらむ is 「恨む」 (to resent), not 「憎む」."
+      },
+      {
+        "zh": "「ぞう」是音读（「憎悪」），动词用训读「にくむ」。",
+        "en": "ぞう is the on reading (「憎悪」); the verb uses the kun reading にくむ."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-164",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "この鳥は<<絶滅>>のおそれがある。",
+    "options": [
+      "せつめつ",
+      "ぜつめい",
+      "ぜつめつ",
+      "ぜんめつ"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "这种鸟有灭绝的危险。",
+      "en": "This bird is in danger of extinction."
+    },
+    "why": {
+      "zh": "「絶（ぜつ）」+「滅（めつ）」：「ぜつめつ」。",
+      "en": "「絶」 is ぜつ and 「滅」 is めつ: ぜつめつ."
+    },
+    "wrong": [
+      {
+        "zh": "「絶」是浊音「ぜつ」，不是「せつ」。",
+        "en": "「絶」 is voiced ぜつ, not せつ."
+      },
+      {
+        "zh": "「滅」读「めつ」；「ぜつめい」是「絶命」（断气）。",
+        "en": "「滅」 is めつ; ぜつめい is 「絶命」 (death)."
+      },
+      null,
+      {
+        "zh": "「ぜんめつ」是「全滅」（全军覆没），汉字不同。",
+        "en": "ぜんめつ is 「全滅」 (total destruction) — a different word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-165",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "食べ物を<<粗末>>にしてはいけない。",
+    "options": [
+      "そうまつ",
+      "あらまつ",
+      "そまつ",
+      "そばつ"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "不能浪费食物。",
+      "en": "You mustn't waste food."
+    },
+    "why": {
+      "zh": "「粗（そ）」+「末（まつ）」：「そまつ」。「粗末にする」是不珍惜、糟蹋。",
+      "en": "「粗」 is そ and 「末」 is まつ: そまつ. 「粗末にする」 is to waste or treat carelessly."
+    },
+    "wrong": [
+      {
+        "zh": "「粗」是短音「そ」，不拉长。",
+        "en": "「粗」 is the short そ, not そう."
+      },
+      {
+        "zh": "「粗」训读「あら（い）」，但这个词用音读「そ」。",
+        "en": "「粗」 has the kun reading あら(い), but this word uses the on reading そ."
+      },
+      null,
+      {
+        "zh": "「末」读「まつ」，不是「ばつ」。",
+        "en": "「末」 is まつ, not ばつ."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-166",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "この川が、二つの県の<<境>>になっている。",
+    "options": [
+      "さかえ",
+      "きょう",
+      "さかい",
+      "かぎり"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "这条河是两个县的分界。",
+      "en": "This river forms the border between the two prefectures."
+    },
+    "why": {
+      "zh": "「境」单独用时读训读「さかい」（分界、交界）。",
+      "en": "On its own, 「境」 is read さかい: a border or boundary."
+    },
+    "wrong": [
+      {
+        "zh": "「さかえ」是「栄え」（繁荣），不是「境」。",
+        "en": "さかえ is 「栄え」 (prosperity), not 「境」."
+      },
+      {
+        "zh": "「きょう」是音读，用在「国境」「境界」等词里，单独不这么读。",
+        "en": "きょう is the on reading used in compounds (「境界」); on its own it's さかい."
+      },
+      null,
+      {
+        "zh": "「かぎり」是「限り」（限度），不是「境」。",
+        "en": "かぎり is 「限り」 (a limit), not 「境」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-167",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "彼女は<<素直>>な性格で、だれからも好かれている。",
+    "options": [
+      "そちょく",
+      "すなを",
+      "すなお",
+      "もとなお"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "她性格坦率听话，谁都喜欢她。",
+      "en": "She's open and good-natured, and everyone likes her."
+    },
+    "why": {
+      "zh": "「素直」是特殊读法「すなお」：坦率、老实。",
+      "en": "「素直」 has a special reading, すなお: honest, open, good-natured."
+    },
+    "wrong": [
+      {
+        "zh": "「素直」不按音读读成「そちょく」。",
+        "en": "「素直」 isn't read by its on readings as そちょく."
+      },
+      {
+        "zh": "最后是「お」，不是「を」。",
+        "en": "It ends in お, not を."
+      },
+      null,
+      {
+        "zh": "「素直」不分开训读成「もとなお」。",
+        "en": "「素直」 isn't read as separate kun readings, もとなお."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-168",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "犯人は、お年寄りを<<狙って>>電話をかけていた。",
+    "options": [
+      "ねがって",
+      "ねばって",
+      "うかがって",
+      "ねらって"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "犯人专门瞄准老年人打电话。",
+      "en": "The criminals were targeting elderly people with their calls."
+    },
+    "why": {
+      "zh": "「狙う（ねらう）」：瞄准、以……为目标。",
+      "en": "「狙う」 is ねらう: to aim at, target."
+    },
+    "wrong": [
+      {
+        "zh": "「ねがう」是「願う」（希望），不是「狙う」。",
+        "en": "ねがう is 「願う」 (to wish), not 「狙う」."
+      },
+      {
+        "zh": "「ねばる」是「粘る」（坚持），不是「狙う」。",
+        "en": "ねばる is 「粘る」 (to persist), not 「狙う」."
+      },
+      {
+        "zh": "「うかがう」是「伺う」「窺う」，不是「狙う」。",
+        "en": "うかがう is 「伺う」 or 「窺う」, not 「狙う」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-mg-169",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "この地域は、天然資源に<<乏しい>>。",
+    "options": [
+      "とぼしい",
+      "まずしい",
+      "とぼじい",
+      "とおしい"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这个地区天然资源匮乏。",
+      "en": "This region is poor in natural resources."
+    },
+    "why": {
+      "zh": "「乏しい（とぼしい）」：缺乏、不足。",
+      "en": "「乏しい」 is とぼしい: scarce, lacking."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「まずしい」是「貧しい」（贫穷），汉字不同。",
+        "en": "まずしい is 「貧しい」 (poor), a different kanji."
+      },
+      {
+        "zh": "「乏しい」的「し」不浊化，读「とぼしい」，不是「とぼじい」。",
+        "en": "The し in 乏しい stays unvoiced: とぼしい, not とぼじい."
+      },
+      {
+        "zh": "「乏」读「とぼ」，不是「とお」。",
+        "en": "「乏」 is read とぼ, not とお."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-170",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "彼の話には<<矛盾>>がある。",
+    "options": [
+      "むじゅん",
+      "むしゅん",
+      "むじゅう",
+      "ほこじゅん"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他的话里有矛盾。",
+      "en": "There's a contradiction in what he says."
+    },
+    "why": {
+      "zh": "「矛（む）」+「盾（じゅん）」：「むじゅん」。",
+      "en": "「矛」 is む and 「盾」 is じゅん: むじゅん."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「盾」在这个词里是浊音「じゅん」。",
+        "en": "「盾」 is voiced じゅん in this word."
+      },
+      {
+        "zh": "「盾」读「じゅん」，最后是「ん」不是长音。",
+        "en": "「盾」 is じゅん — it ends in ん, not a long vowel."
+      },
+      {
+        "zh": "「矛」训读「ほこ」，但这个词用音读「む」。",
+        "en": "「矛」 has the kun reading ほこ, but this word uses the on reading む."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-171",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "駅で<<偶然>>、昔の友達に会った。",
+    "options": [
+      "ぐぜん",
+      "ぐうせん",
+      "ぐうぜん",
+      "ぐうねん"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "在车站偶然遇到了以前的朋友。",
+      "en": "I ran into an old friend at the station by chance."
+    },
+    "why": {
+      "zh": "「偶（ぐう）」+「然（ぜん）」：「ぐうぜん」。",
+      "en": "「偶」 is ぐう and 「然」 is ぜん: ぐうぜん."
+    },
+    "wrong": [
+      {
+        "zh": "「偶」是长音「ぐう」，不能缩短。",
+        "en": "「偶」 is the long ぐう — don't shorten it."
+      },
+      {
+        "zh": "「然」在这里读浊音「ぜん」（如「自然」）。",
+        "en": "「然」 is voiced ぜん here (as in 「自然」)."
+      },
+      null,
+      {
+        "zh": "「然」读「ぜん」或「ねん」（「天然」），这个词里是「ぜん」。",
+        "en": "「然」 is ぜん or ねん (「天然」); in this word it's ぜん."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-172",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "その件については、部長も<<承知>>している。",
+    "options": [
+      "しょち",
+      "しょうち",
+      "じょうち",
+      "しょうじ"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "那件事部长也知道。",
+      "en": "The department head is aware of that matter too."
+    },
+    "why": {
+      "zh": "「承（しょう）」+「知（ち）」：「しょうち」，知道、同意。",
+      "en": "「承」 is しょう and 「知」 is ち: しょうち — to be aware, to agree."
+    },
+    "wrong": [
+      {
+        "zh": "「承」是长音「しょう」；「しょち」是「処置」。",
+        "en": "「承」 is the long しょう; しょち is 「処置」 (measures)."
+      },
+      null,
+      {
+        "zh": "「承」是清音「しょう」，不是「じょう」。",
+        "en": "「承」 is unvoiced しょう, not じょう."
+      },
+      {
+        "zh": "「知」是清音「ち」；「しょうじ」是「障子」。",
+        "en": "「知」 is unvoiced ち; しょうじ is 「障子」 (a paper screen)."
+      }
+    ]
   }
 ]
