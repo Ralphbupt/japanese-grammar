@@ -196,6 +196,19 @@
     try { localStorage.setItem(HIST_KEY, JSON.stringify(h)); sessionStorage.removeItem(HIST_KEY); } catch (e) {}
   }
 
+  // Practice pages: a log of AI explanations, in this browser only (never
+  // sent anywhere), so a learner can look back at what they asked — newest
+  // last, at most QUIZ_LOG_MAX entries. { t, id, page, model, q, a }.
+  var QUIZ_LOG_KEY = 'jp_ai_quiz_log', QUIZ_LOG_MAX = 50, quizId = null;
+  function logQuiz(q, a, model) {
+    try {
+      var log = JSON.parse(localStorage.getItem(QUIZ_LOG_KEY)) || [];
+      log.push({ t: Date.now(), id: quizId, page: location.pathname, model: model, q: q, a: a });
+      if (log.length > QUIZ_LOG_MAX) log.splice(0, log.length - QUIZ_LOG_MAX);
+      localStorage.setItem(QUIZ_LOG_KEY, JSON.stringify(log));
+    } catch (e) {}
+  }
+
   function isEn() { return document.body.classList.contains('lang-en'); }
   function t(zh, en) { return isEn() ? en : zh; }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
@@ -346,20 +359,20 @@
       : '你是一位日语语法老师，正在辅导一位备考 JLPT 的中文母语学习者（网站 ' + location.origin + '，N5–N1 免费语法笔记）。回答任何日语问题，用中文。日语例句里的汉字请紧跟全角括号标注假名读音，格式如「雨（あめ）に降（ふ）られた」，并附中文翻译。回答简洁、多用例句、少说套话。' + effortPrompt(cfg);
     if (QUIZ) return isEn()
       ? 'You are a Japanese tutor (grammar, vocabulary and reading) helping a JLPT learner who has just answered the practice question below on ' + location.origin + location.pathname + '. ' +
-        'Answer from the question, its explanation and the linked lesson; say so when you add outside knowledge. The learner has already read the fixed explanation, so don\u2019t repeat it \u2014 add what it leaves out. The fixed explanation and the reasons it gives for each wrong option were checked by hand: build on them and never contradict them (e.g. a 〜ませんか form is an invitation or suggestion, not a plain negative). If you think the answer key is wrong or two options work, say so plainly and suggest reporting it with \u201cSomething wrong with this question?\u201d under the question. Reply in English. Do what the learner asks in their message. Pitch it at the level shown in the question: example sentences should use vocabulary and grammar at or below that level. In Japanese, put the kana reading right after each kanji word in full-width parentheses, e.g. 雨（あめ）に降（ふ）られた, and add an English translation; for a word the question writes in kana you may give its kanji as ひと（人）. If asked to rewrite a sentence, the rewrite must actually differ from the original; if the original is already natural, say so instead. Stick to what this question needs; don\u2019t list general rules. If you aren\u2019t sure of a reading, origin or rule, leave it out \u2014 never make one up. No tables (the panel is narrow): short paragraphs or lists. Follow the [How to explain] note in the question for length and shape; keep follow-up answers short. No filler, no greetings or praise.' + effortPrompt(cfg) +
+        'Answer from the question, its explanation and the linked lesson; say so when you add outside knowledge. The learner has already read the fixed explanation, so don\u2019t repeat it \u2014 add what it leaves out. The fixed explanation and the reasons it gives for each wrong option were checked by hand: build on them and never contradict them (e.g. a 〜ませんか form is an invitation or suggestion, not a plain negative). When the learner says the notes or the question are wrong, check carefully before answering: if they are wrong, say so; if not, say plainly that they are right and why — never agree just because the learner said so. If you think the answer key is wrong or two options work, say so plainly and suggest reporting it with \u201cSomething wrong with this question?\u201d under the question. Reply in English. Do what the learner asks in their message. Pitch it at the level shown in the question: example sentences should use vocabulary and grammar at or below that level. In Japanese, put the kana reading right after each kanji word in full-width parentheses, e.g. 雨（あめ）に降（ふ）られた, and add an English translation; for a word the question writes in kana you may give its kanji as ひと（人）. If asked to rewrite a sentence, the rewrite must actually differ from the original; if the original is already natural, say so instead. Stick to what this question needs; don\u2019t list general rules. If you aren\u2019t sure of a reading, origin or rule, leave it out \u2014 never make one up. No tables (the panel is narrow): short paragraphs or lists. Follow the [How to explain] note in the question for length and shape; keep follow-up answers short. No filler, no greetings or praise.' + effortPrompt(cfg) +
         '\n\n<question>\n' + ctx + '\n</question>'
       : '你是一位日语老师（语法、词汇、阅读都教），正在辅导一位备考 JLPT 的中文母语学习者。学习者刚在 ' + location.origin + location.pathname + ' 做完下面这道练习题。' +
-        '请基于题目、固定解析和对应课文回答；补充其他知识时请说明。学习者已经看过固定解析，不要照抄，要补充它没讲到的。固定解析和它对每个错误选项给出的理由都经过人工核对：在它的基础上讲，不要和它矛盾（例如「〜ませんか」是邀请或劝说，不是单纯的否定）。如果你认为标准答案有误或有两个选项都对，请直接指出，并建议点题目下方的「这题有问题？」反馈。回答用中文。按学习者消息里的要求来讲。讲解难度和例句要符合题目标注的级别，例句里的词汇和语法不超过该级别。日语里的汉字请紧跟全角括号标注假名读音，格式如「雨（あめ）に降（ふ）られた」，并附中文翻译；题目里写成假名的词，可以写成「ひと（人）」告诉学习者汉字写法；中文后面不要加日语括号。被要求改写句子时，改写后的句子必须和原句不同；如果原句已经自然，就直说原句没问题。只讲和这道题直接相关的内容，不要罗列一般规则；没有把握的读音、词源或规则宁可不说，不要编。不要用表格（面板很窄），用短段落或列表。长度和格式按题目信息里的【讲解要求】来；追问时简短回答。不说套话，不寒暄、不夸奖。' + effortPrompt(cfg) +
+        '请基于题目、固定解析和对应课文回答；补充其他知识时请说明。学习者已经看过固定解析，不要照抄，要补充它没讲到的。固定解析和它对每个错误选项给出的理由都经过人工核对：在它的基础上讲，不要和它矛盾（例如「〜ませんか」是邀请或劝说，不是单纯的否定）。学习者说笔记或题目有错时，先仔细核对再回答：确实错了就直说，没错就明确说没错并解释原因，不要因为学习者这么说就附和。如果你认为标准答案有误或有两个选项都对，请直接指出，并建议点题目下方的「这题有问题？」反馈。回答用中文。按学习者消息里的要求来讲。讲解难度和例句要符合题目标注的级别，例句里的词汇和语法不超过该级别。日语里的汉字请紧跟全角括号标注假名读音，格式如「雨（あめ）に降（ふ）られた」，并附中文翻译；题目里写成假名的词，可以写成「ひと（人）」告诉学习者汉字写法；中文后面不要加日语括号。被要求改写句子时，改写后的句子必须和原句不同；如果原句已经自然，就直说原句没问题。只讲和这道题直接相关的内容，不要罗列一般规则；没有把握的读音、词源或规则宁可不说，不要编。不要用表格（面板很窄），用短段落或列表。长度和格式按题目信息里的【讲解要求】来；追问时简短回答。不说套话，不寒暄、不夸奖。' + effortPrompt(cfg) +
         '\n\n<question>\n' + ctx + '\n</question>';
     if (!isEn()) {
       return '你是一位日语语法老师，正在辅导一位备考 JLPT 的中文母语学习者。学习者此刻正在阅读' +
         (scoped ? '下面这一课中「' + sectionTitle(sc) + '」这一节' : '下面这一课的笔记') + '（网址 ' + location.origin + location.pathname + '）。' +
-        '请优先基于笔记内容回答；补充笔记之外的知识时请说明。回答用中文。日语例句里的汉字请紧跟全角括号标注假名读音，格式如「雨（あめ）に降（ふ）られた」，并附中文翻译。回答简洁、多用例句、少说套话。' + effortPrompt(cfg) +
+        '请优先基于笔记内容回答；补充笔记之外的知识时请说明。回答用中文。日语例句里的汉字请紧跟全角括号标注假名读音，格式如「雨（あめ）に降（ふ）られた」，并附中文翻译。回答简洁、多用例句、少说套话；不要用表格（面板很窄），用短段落或列表。学习者说笔记或题目有错时，先仔细核对再回答：确实错了就直说，没错就明确说没错并解释原因，不要因为学习者这么说就附和。' + effortPrompt(cfg) +
         '\n\n<lesson>\n' + ctx + '\n</lesson>';
     }
     return 'You are a Japanese grammar tutor helping a JLPT learner. The learner is currently reading ' +
       (scoped ? 'the section "' + sectionTitle(sc) + '" of the lesson notes below' : 'the lesson notes below') + ' (' + location.origin + location.pathname + '). ' +
-      'Answer primarily from the notes and say so when you add outside knowledge. Reply in English. In Japanese examples, put the kana reading right after each kanji word in full-width parentheses, e.g. 雨（あめ）に降（ふ）られた, and add an English translation. Be concise, example-heavy, no filler.' + effortPrompt(cfg) +
+      'Answer primarily from the notes and say so when you add outside knowledge. Reply in English. In Japanese examples, put the kana reading right after each kanji word in full-width parentheses, e.g. 雨（あめ）に降（ふ）られた, and add an English translation. Be concise, example-heavy, no filler; no tables (the panel is narrow), use short paragraphs or lists. When the learner says the notes or the question are wrong, check carefully before answering: if they are wrong, say so; if not, say plainly that they are right and why — never agree just because the learner said so.' + effortPrompt(cfg) +
       '\n\n<lesson>\n' + ctx + '\n</lesson>';
   }
 
@@ -904,6 +917,7 @@
       cancelAnimationFrame(raf); raf = 0;
       render(true);
       el.classList.remove('ai-streaming');
+      if (reply && QUIZ) logQuiz(shown || text, reply, cfg.active + '/' + c.model);
       if (reply) { history.push({ role: 'assistant', content: reply }); el.setAttribute('data-raw', reply); el.appendChild(actionsFor(true)); }
       else el.remove();
       saveHist(history);
@@ -1306,8 +1320,9 @@
    * The first request has no times or dates in it, so the same question and
    * choice is the same request and the free relay can answer from cache. */
   if (QUIZ) window.jpAI = {
-    explain: function (ctx, prompt) {
+    explain: function (ctx, prompt, id) {
       if (busy) stop();
+      quizId = id || null;
       article.textContent = ctx; wholeCache = null; sectionCache = null;
       history = []; saveHist(history);
       if (!panel) build(); else renderAll();
