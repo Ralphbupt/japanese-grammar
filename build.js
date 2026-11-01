@@ -1193,6 +1193,7 @@ const RUBY_FIXES = [
   // ── N1 lessons (76–92): context-specific readings; listed first so they win
   // over the general rules below. ──
   { kanji: "店", from: /^(てん|みせ)$/, before: /(号|人気|高級|飲食|専門|支|本)$/, to: "てん" },
+  { kanji: "階", from: /^かい$/, before: /([3３三]|何)$/, to: "がい" },   // 3階・何階 = さんがい・なんがい
   { kanji: "今", from: /^(いま|こん)$/, after: /^(シーズン|大会|年度|世紀|学期|週|期)/, to: "こん" },
   { kanji: "形", from: /^(がた|かたち|けい)$/, before: /(といい|といわず)$/, to: "かたち" },
   { kanji: "手", from: /^しゅ$/, after: /^といい/, to: "て" },
@@ -2459,18 +2460,37 @@ ${SETTINGS_SCRIPT}`;
   const rangeLabel = (lv, lang) => lang === "zh"
     ? `第 ${levelRange[lv].first}–${levelRange[lv].last} 课`
     : `Lessons ${levelRange[lv].first}–${levelRange[lv].last}`;
+  // Practice first: what readers actually use (GA, 2026-11). One row per level
+  // with its question / listening counts and the practice pages.
+  const roundDown = (n) => (n >= 20 ? Math.floor(n / 10) * 10 + "+" : String(n));
+  const homePracticeHtml = !quizPages("N5").length ? "" : `
+  <section class="home-practice">
+    <h2><span class="lang-zh">做题备考</span><span class="lang-en">Practise for the JLPT</span></h2>
+    <p class="home-practice-lead"><span class="lang-zh">按真题题型出的练习题、听力和计时模拟考，每题都讲清楚：正确答案为什么对，每个错误选项错在哪。做错的题会进错题本，过几天再考你。</span><span class="lang-en">Exam-style questions, listening and timed mock tests. Every question explains why the answer is right and what is wrong with each other option. Missed questions come back a few days later.</span></p>
+    <div class="practice-rows">${QUIZ_LEVELS.filter((lv) => quizPages(lv).length).map((lv) => {
+      const qs = loadQuizLevel(lv).qs, ck = qs.filter((q) => q._kind === "choukai").length, rd = qs.length - ck;
+      return `
+      <div class="practice-row">
+        <span class="level-tag">${lv}</span>
+        <span class="practice-count"><span class="lang-zh">${roundDown(rd)} 题${ck ? ` · 听力 ${ck}` : ""}</span><span class="lang-en">${roundDown(rd)} questions${ck ? ` · ${ck} listening` : ""}</span></span>
+        <span class="practice-links">${quizPages(lv).filter((q) => !/-cards\/$/.test(q.href)).map((q) => `<a href="${q.href}"><span class="lang-zh">${q.zh}</span><span class="lang-en">${q.en}</span></a>`).join("")}</span>
+      </div>`;
+    }).join("")}
+    </div>
+  </section>`;
   const homeMainHtml = `<header class="home-hero">
     <h1><span class="lang-zh">日语语法笔记 — JLPT N5 到 N1 全部语法</span><span class="lang-en">Japanese Grammar Notes — JLPT N5 to N1</span></h1>
     <p class="home-intro">
       <span class="lang-zh">免费、双语（中文 + 日语）的日语语法笔记，从 N5 到 N1 共 <strong>${totalLessons} 课、${totalPoints}+ 语法点</strong>，每课配接续规则、例句、辨析、练习题与间隔复习勾选清单。</span>
       <span class="lang-en">Free Japanese grammar notes in plain English, covering JLPT N5 → N1 in <strong>${totalLessons} lessons, ${totalPoints}+ grammar points</strong>. Each lesson has conjugation rules, example sentences, side-by-side comparisons of confusable patterns, practice questions, and a spaced-repetition checklist.</span>
     </p>
-    <div class="home-actions">
-      <a class="btn-primary" href="lesson01/"><span class="lang-zh">从第 1 课开始</span><span class="lang-en">Start with lesson 1</span></a>
-      <a class="btn-secondary" href="anki/"><span class="lang-zh">下载 Anki 卡组</span><span class="lang-en">Get the Anki decks</span></a>${quizPages("N5").length ? `
-      <a class="btn-secondary" href="practice/"><span class="lang-zh">做题 · 模拟 · 卡片</span><span class="lang-en">Practice, mock tests &amp; flashcards</span></a>` : ""}
+    <div class="home-actions">${quizPages("N5").length ? `
+      <a class="btn-primary" href="practice/"><span class="lang-zh">开始做题</span><span class="lang-en">Start practising</span></a>
+      <a class="btn-secondary" href="lesson01/"><span class="lang-zh">从第 1 课学语法</span><span class="lang-en">Learn from lesson 1</span></a>` : `
+      <a class="btn-primary" href="lesson01/"><span class="lang-zh">从第 1 课开始</span><span class="lang-en">Start with lesson 1</span></a>`}
+      <a class="btn-secondary" href="anki/"><span class="lang-zh">下载 Anki 卡组</span><span class="lang-en">Get the Anki decks</span></a>
     </div>
-  </header>
+  </header>${homePracticeHtml}
   <section class="home-levels">
     <h2><span class="lang-zh">按级别学习</span><span class="lang-en">Browse by JLPT level</span></h2>
     <div class="level-grid">
@@ -4643,6 +4663,12 @@ body.lang-en div.lang-en { display: block; }
 /* Typography */
 h1 { font-size: var(--text-2xl); margin: 0 0 1.4rem; border-bottom: 2px solid var(--accent); padding-bottom: .6rem; }
 h2 { font-size: var(--text-xl); margin: 2.2rem 0 .9rem; color: var(--text-strong); }
+/* Arriving from a practice question's 📖 link: the grammar point clears the
+   phone top bar and flashes once so the eye finds it. */
+h2[id], h3[id] { scroll-margin-top: 4.5rem; }
+h2:target { animation: target-flash 2.4s ease-out; border-radius: 4px; }
+@keyframes target-flash { 0%, 30% { background: color-mix(in srgb, var(--accent) 18%, transparent); } 100% { background: transparent; } }
+@media (prefers-reduced-motion: reduce) { h2:target { animation: none; background: color-mix(in srgb, var(--accent) 12%, transparent); } }
 h3 { font-size: var(--text-lg); margin: 1.6rem 0 .6rem; }
 h4 { font-size: var(--text-md); margin: 1.3rem 0 .5rem; }
 p { margin: .6rem 0; }
@@ -4952,6 +4978,19 @@ body.sidebar-collapsed #content.home {
 .home-actions .btn-primary:hover { background: #c02a40; }
 .home-actions .btn-secondary { color: var(--accent); }
 .home-actions .btn-secondary:hover { background: var(--accent-soft); }
+.home-practice h2 { font-size: 1.35rem; margin: 0 0 .5rem; color: var(--text-strong); }
+.home-practice-lead { color: var(--text-muted); margin: 0 0 1rem; line-height: 1.7; }
+.practice-rows { display: grid; gap: .6rem; margin-bottom: 2.4rem; }
+.practice-row { display: grid; grid-template-columns: auto auto 1fr; align-items: center; gap: .9rem; padding: .7rem 1rem; background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); }
+.practice-row .level-tag { margin: 0; }
+.practice-count { font-size: .9rem; color: var(--text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; min-width: 11.5em; }
+.practice-links { display: flex; flex-wrap: wrap; gap: .3rem 1.1rem; }
+.practice-links a { font-size: .93rem; text-decoration: none; white-space: nowrap; }
+.practice-links a:hover { text-decoration: underline; }
+@media (max-width: 640px) {
+  .practice-row { grid-template-columns: auto 1fr; }
+  .practice-links { grid-column: 1 / -1; }
+}
 .home-levels h2, .home-howto h2 {
   font-size: 1.35rem; margin: 2rem 0 1rem; color: var(--text-strong);
 }
