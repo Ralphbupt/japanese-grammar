@@ -1,0 +1,769 @@
+[
+  {
+    "id": "n2-dk-101",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "次の文章は、新聞に載ったコラムです。",
+    "passage": "スマートフォンの地図アプリを使うようになってから、道に迷うことはほとんどなくなった。目的地を入力し[[1]]、どの角を曲がればいいかまで教えてくれるのだから、これほど便利なものはない。\nところが先日、電池が切れた状態で、以前何度か訪れたことのある町を歩くことになり、私は駅から十分ほどの店にたどり着けなかった。何度も通ったはずの道なのに、周りの景色をまったく覚えていなかったのである。画面の矢印ばかり見て歩いていたのだから、[[2]]。\n地図アプリが悪いと言いたいわけではない。[[3]]、知らない町でも安心して歩けるのは、この技術のおかげだ。ただ、道具に頼りすぎると、自分で考えて判断する機会が失われてしまう。迷うことは時間の無駄だと思われがちだが、迷いながら歩いた[[4]]見えてくる景色もあるはずだ。\n最近、私は時間に余裕がある日だけ、あえてアプリを使わずに歩くようにしている。便利さを手放すのは簡単ではないが、自分の感覚を取り戻すためには、たまには不便を選ぶことも必要[[5]]。",
+    "tr": {
+      "zh": "自从用上手机的地图应用，我几乎再也没迷过路。只要输入目的地，它连该在哪个路口拐弯都会告诉你，没有比这更方便的东西了。可是前几天，我在手机没电的情况下走在一个以前去过好几次的小镇上，结果怎么也找不到离车站只有十分钟左右的那家店。明明是走过好多次的路，周围的景色我却完全不记得。一直只盯着屏幕上的箭头走路，记不住也难怪。我并不是想说地图应用不好。倒不如说，在陌生的城市也能放心地走，正是多亏了这项技术。只是，过于依赖工具，就会失去自己思考、判断的机会。迷路往往被认为是浪费时间，但正因为是一边迷路一边走，才看得到一些风景。最近，我只在时间充裕的日子特意不用应用走路。放下便利并不容易，但为了找回自己的感觉，偶尔选择不便，不也是必要的吗？",
+      "en": "Since I started using the map app on my smartphone, I've hardly ever got lost. As long as you enter your destination, it tells you even which corner to turn at — nothing could be more convenient. The other day, though, my battery was dead while I was walking around a town I had visited several times before, and I couldn't find a shop about ten minutes from the station. It was a road I must have walked many times, yet I didn't remember the scenery around it at all. Since I had walked looking only at the arrow on the screen, it's no wonder I didn't remember. I'm not saying map apps are bad. On the contrary, it's thanks to this technology that I can walk around unfamiliar towns without worry. But if we rely on tools too much, we lose the chance to think and judge for ourselves. Getting lost tends to be seen as a waste of time, yet there must be scenery you see precisely because you walked while lost. Lately, only on days when I have time to spare, I deliberately walk without the app. Giving up convenience isn't easy, but to get my own senses back, isn't it sometimes necessary to choose inconvenience?"
+    },
+    "questions": [
+      {
+        "options": [
+          "たところで",
+          "さえすれば",
+          "ようものなら",
+          "ないことには"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "后面是「教えてくれる」「これほど便利なものはない」，是“只要输入就行”的正面条件，用「〜さえすれば」。",
+          "en": "What follows — 「教えてくれる」, 「これほど便利なものはない」 — is a positive result of one simple condition: 「〜さえすれば」 (as long as you just …)."
+        },
+        "wrong": [
+          {
+            "zh": "「〜たところで」是“即使…也没用”，后面要接否定的结果，和“告诉你怎么走”的便利矛盾。",
+            "en": "「〜たところで」 (even if you do … it's no use) needs a negative result; here the app does tell you the way."
+          },
+          null,
+          {
+            "zh": "「〜ようものなら」是“万一…就会糟糕”，后面接坏结果，这里说的是方便。",
+            "en": "「〜ようものなら」 (if you dare … something bad follows) leads to trouble, but the sentence praises the convenience."
+          },
+          {
+            "zh": "「〜ないことには」后面要接“就不能…”的否定，这里接的是肯定的「教えてくれる」。",
+            "en": "「〜ないことには」 must be followed by a negative (… won't happen), not the positive 「教えてくれる」."
+          }
+        ]
+      },
+      {
+        "options": [
+          "覚えているに違いない",
+          "覚えずにはいられない",
+          "覚えるわけにはいかない",
+          "覚えていないのも無理はない"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "「〜のだから」承接“一直只看箭头走路”这个理由，结论是“记不住也难怪”，和前一句「まったく覚えていなかった」一致。",
+          "en": "「〜のだから」 gives the reason (he only watched the arrow), so the natural conclusion is 「覚えていないのも無理はない」 (no wonder he didn't remember), matching 「まったく覚えていなかった」."
+        },
+        "wrong": [
+          {
+            "zh": "前一句明说「まったく覚えていなかった」，不可能推断“一定记得”。",
+            "en": "The sentence before says 「まったく覚えていなかった」; he can't conclude he must remember."
+          },
+          {
+            "zh": "「〜ずにはいられない」是“忍不住要…”，和完全没记住的事实不符。",
+            "en": "「〜ずにはいられない」 (can't help doing) contradicts the fact that he remembered nothing."
+          },
+          {
+            "zh": "「〜わけにはいかない」是出于情理“不能…”，这里说的是记忆的结果，不是该不该。",
+            "en": "「〜わけにはいかない」 is about what one can't do for social or moral reasons, not about memory."
+          },
+          null
+        ]
+      },
+      {
+        "options": [
+          "むしろ",
+          "とはいえ",
+          "そのうえ",
+          "したがって"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "前面否定了“地图应用不好”，后面反过来说“正是多亏了这项技术”，用“倒不如说”的「むしろ」。",
+          "en": "After denying that map apps are bad, the writer goes the other way — it's thanks to them: 「むしろ」 (if anything, rather)."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「とはいえ」是让步转折，后面应是与前面相反的保留意见，可这里后文和“并非不好”同方向。",
+            "en": "「とはいえ」 introduces a reservation against what came before, but the next sentence agrees that the app isn't bad."
+          },
+          {
+            "zh": "「そのうえ」是在同类事情上再加一项，前面是否定句，没有可以累加的内容。",
+            "en": "「そのうえ」 adds another point of the same kind; the sentence before is a denial, with nothing to add to."
+          },
+          {
+            "zh": "「したがって」表示逻辑结论，“不是说它不好”推不出“多亏了它”。",
+            "en": "「したがって」 states a logical consequence; \"I'm not saying it's bad\" doesn't lead to \"it's thanks to it\" as a conclusion."
+          }
+        ]
+      },
+      {
+        "options": [
+          "からといって",
+          "くせに",
+          "からこそ",
+          "あまり"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "前面说迷路被认为浪费时间，后面强调“正因为迷着路走才看得到”的风景，用强调原因的「からこそ」。",
+          "en": "Getting lost is seen as wasteful, but there is scenery you see precisely because you got lost: 「からこそ」 stresses that very reason."
+        },
+        "wrong": [
+          {
+            "zh": "「からといって」后面要接否定（“并不因此就…”），这里接的是肯定的「見えてくる景色もある」。",
+            "en": "「からといって」 needs a negative after it (that doesn't mean …), but 「見えてくる景色もある」 is positive."
+          },
+          {
+            "zh": "「くせに」带有责备、不满，和作者肯定迷路价值的语气相反。",
+            "en": "「くせに」 carries blame, the opposite of the writer's positive view of getting lost."
+          },
+          null,
+          {
+            "zh": "「〜たあまり」是“过于…以至于（坏结果）”，后面是好的结果，而且也不接在这里的「歩いた」上表示程度。",
+            "en": "「〜たあまり」 means doing something so much that something bad results; here the result is good."
+          }
+        ]
+      },
+      {
+        "options": [
+          "であるわけがない",
+          "なのではないだろうか",
+          "にすぎない",
+          "どころではない"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "作者自己“特意不用应用”，最后委婉地提出主张“偶尔选择不便不也是必要的吗”，用「のではないだろうか」。",
+          "en": "The writer now walks without the app on purpose, so he ends by gently proposing that inconvenience is sometimes needed: 「なのではないだろうか」."
+        },
+        "wrong": [
+          {
+            "zh": "「わけがない」是“不可能必要”，和作者特意不用应用的做法矛盾。",
+            "en": "「わけがない」 (can't possibly be necessary) contradicts his deliberately walking without the app."
+          },
+          null,
+          {
+            "zh": "「にすぎない」是“只不过是”，“只不过是必要”说不通。",
+            "en": "「にすぎない」 (is merely) makes no sense with 「必要」."
+          },
+          {
+            "zh": "「どころではない」是“根本顾不上”，意思和上下文完全不符。",
+            "en": "「どころではない」 (in no position to …) doesn't fit the meaning at all."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-102",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "次の文章は、ビジネス雑誌に載ったコラムです。",
+    "passage": "部下に信頼される上司とは、どのような人だろうか。仕事ができて、決して失敗しない人だと考える人も多い[[1]]。しかし、私がこれまで出会った中で最も信頼できた上司は、自分の失敗をよく話す人だった。部下の前で弱いところを見せることを、少しも恐れていないようだった。\nその上司は、新人時代に大事な書類をなくし、取引先に頭を下げに行った話を、笑いながら何度もしてくれた。[[2]]、私たち部下は、小さなミスでもすぐに相談できるようになった。ミスを隠して後で大きな問題になるより、早く報告したほうがいいと、自然に思えたのである。\n一方、失敗を決して認めない上司の下では、部下は叱られることを恐れて、問題を報告しなくなる。上司が完璧に見えれば見えるほど、部下は「自分だけが失敗するわけにはいかない」と[[3]]のだ。\n[[4]]、失敗を話しさえすればいいというものではない。同じ失敗を何度も繰り返したり、責任を部下に押しつけたりする上司では、信頼される[[5]]。大切なのは、失敗から何を学んだかを、自分の言葉で伝えることなのだろう。",
+    "tr": {
+      "zh": "受下属信赖的上司是什么样的人呢？很多人大概会认为是能干、从不失败的人吧。但是，我至今遇到的上司里最值得信赖的一位，却是经常讲自己失败经历的人。他似乎一点也不怕在下属面前暴露自己的弱点。那位上司笑着给我们讲过好几次他新人时期弄丢了重要文件、去客户那里赔礼道歉的事。也许正是多亏了这一点，我们这些下属即使犯了小错也能马上去找他商量。我们自然而然地觉得，与其隐瞒错误、日后酿成大问题，不如尽早报告。另一方面，在绝不承认失败的上司手下，下属害怕挨骂，就不再报告问题。上司看起来越完美，下属就越会认定“不能只有我一个人失败”。话虽如此，并不是只要讲讲失败就行。同样的失败一犯再犯、把责任推给下属的上司，是不可能得到信赖的。重要的或许是用自己的话讲出从失败中学到了什么。",
+      "en": "What kind of boss do subordinates trust? Many people probably think it's someone capable who never fails. Yet the boss I trusted most of all those I've met was someone who often talked about his own failures. He didn't seem the least bit afraid of showing his weak points in front of his staff. He told us many times, laughing, how as a new employee he had lost an important document and had to go and apologise to a client. Perhaps thanks to that, we on his team came to consult him straight away even about small mistakes. It felt natural to report early rather than hide a mistake and let it grow into a big problem later. Under a boss who never admits failure, on the other hand, subordinates fear being scolded and stop reporting problems. The more perfect the boss looks, the more they become convinced that \"I can't be the only one who fails.\" That said, it isn't enough just to talk about your failures. A boss who repeats the same failures or pushes responsibility onto subordinates can't possibly be trusted. What matters, perhaps, is to say in your own words what you learned from your failures."
+    },
+    "questions": [
+      {
+        "difficulty": 1,
+        "options": [
+          "に限る",
+          "わけにはいかない",
+          "ほかない",
+          "のではないだろうか"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "作者先推测一般人的看法“很多人大概会认为…吧”，下一句再用「しかし」反驳，用推测语气「のではないだろうか」。",
+          "en": "The writer guesses at a common view (\"many probably think …\") before rejecting it with 「しかし」: 「のではないだろうか」."
+        },
+        "wrong": [
+          {
+            "zh": "「〜に限る」是“…最好”，接在「多い」后面不成句。",
+            "en": "「〜に限る」 (… is best) doesn't attach to 「多い」 to make sense."
+          },
+          {
+            "zh": "「わけにはいかない」接在动作动词后表示“不能做”，「多いわけにはいかない」不成立。",
+            "en": "「わけにはいかない」 follows an action verb (can't do); 「多いわけにはいかない」 isn't a sentence."
+          },
+          {
+            "zh": "「ほかない」接在动词后表示“只好”，不能接形容词「多い」。",
+            "en": "「ほかない」 (have no choice but) follows a verb, not the adjective 「多い」."
+          },
+          null
+        ]
+      },
+      {
+        "options": [
+          "そのおかげか",
+          "それにもかかわらず",
+          "それどころか",
+          "とはいえ"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "上司常讲失败经历是原因，下属能马上商量是好的结果，用带推测的原因「そのおかげか」（也许多亏了这一点）。",
+          "en": "The boss's stories are the cause and staff consulting him freely the good result: 「そのおかげか」 (perhaps thanks to that)."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「それにもかかわらず」是“尽管如此”，前后应相反，可这里是顺接的因果。",
+            "en": "「それにもかかわらず」 (despite that) needs a contrast; here one thing leads to the other."
+          },
+          {
+            "zh": "「それどころか」是“不但不…反而”，前面需要被否定的内容，这里没有。",
+            "en": "「それどころか」 (far from it) needs something being denied before it; there is none."
+          },
+          {
+            "zh": "「とはいえ」是让步转折，后文并不是对前文的保留。",
+            "en": "「とはいえ」 introduces a reservation; what follows isn't one."
+          }
+        ]
+      },
+      {
+        "options": [
+          "思わずにすむ",
+          "思うどころではない",
+          "思い込んでしまう",
+          "思うにすぎない"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "「〜ば〜ほど」：上司越完美，下属越“认定”不能失败，因此不敢报告问题，用「思い込んでしまう」。",
+          "en": "With 「〜ば〜ほど」, the more perfect the boss looks, the more staff become convinced they mustn't fail — which is why they stop reporting: 「思い込んでしまう」."
+        },
+        "wrong": [
+          {
+            "zh": "「〜ずにすむ」是“不用那样想也行”，和下属因害怕而不报告的描述相反。",
+            "en": "「〜ずにすむ」 (get away without thinking so) is the opposite of staff too afraid to report."
+          },
+          {
+            "zh": "「どころではない」是“根本顾不上想”，和“越…越…”的递进不符。",
+            "en": "「どころではない」 (in no state to think) doesn't fit the \"the more …, the more …\" pattern."
+          },
+          null,
+          {
+            "zh": "「にすぎない」是“只不过是想想”，削弱了语气，解释不了为什么不报告问题。",
+            "en": "「にすぎない」 (merely think) weakens it and doesn't explain why staff stop reporting."
+          }
+        ]
+      },
+      {
+        "options": [
+          "そのため",
+          "とはいえ",
+          "それどころか",
+          "むしろ"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "前面一直在肯定“讲失败的上司”，这里加上保留“话虽如此，并不是只讲就行”，用让步转折「とはいえ」。",
+          "en": "After praising bosses who talk about failure, the writer adds a reservation — it's not enough just to talk: 「とはいえ」 (that said)."
+        },
+        "wrong": [
+          {
+            "zh": "「そのため」表示因果，“讲失败好”推不出“并不是讲了就行”。",
+            "en": "「そのため」 (therefore) — \"talking about failure helps\" doesn't lead to \"talking isn't enough\"."
+          },
+          null,
+          {
+            "zh": "「それどころか」是更进一步地反驳，后文并不是比前文更强烈的同向内容。",
+            "en": "「それどころか」 pushes further in a contrary direction; the next sentence is a limitation, not an escalation."
+          },
+          {
+            "zh": "「むしろ」是“倒不如说”，后文没有把两者比较后选择另一方。",
+            "en": "「むしろ」 (rather) picks one side over another; the sentence just qualifies the earlier point."
+          }
+        ]
+      },
+      {
+        "options": [
+          "に違いない",
+          "ほかない",
+          "べきだ",
+          "はずがない"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "一犯再犯、推卸责任的上司，当然“不可能被信赖”，用「はずがない」。",
+          "en": "A boss who repeats failures and blames subordinates can't possibly be trusted: 「はずがない」."
+        },
+        "wrong": [
+          {
+            "zh": "「に違いない」是“一定会被信赖”，和推卸责任的描述矛盾。",
+            "en": "「に違いない」 (must surely be trusted) contradicts a boss who blames his staff."
+          },
+          {
+            "zh": "「ほかない」是“只能被信赖”，意思不通。",
+            "en": "「ほかない」 (have no choice but to be trusted) makes no sense."
+          },
+          {
+            "zh": "「べきだ」是“应该被信赖”，和对这种上司的否定评价相反。",
+            "en": "「べきだ」 (ought to be trusted) is the opposite of the writer's judgement of such a boss."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-103",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "次の文章は、新聞に載ったエッセイです。",
+    "passage": "私が子どものころに通っていた駅前の商店街は、今ではシャッターを下ろした店ばかりになってしまった。大型のショッピングモールができ、インターネットでも何でも買えるようになったのだから、客が減るのは当然[[1]]。\n[[2]]、去年久しぶりに帰省したとき、その商店街の一角に小さな本屋が新しく開いているのを見つけて驚いた。店主は東京から移ってきた三十代の女性で、店の奥には誰でも自由に使える机が置かれている。放課後の中学生が宿題をしたり、近所のお年寄りが新聞を読んだりしていて、本を買う客[[3]]、ただ立ち寄るだけの人も多いという。\nこれで商売になるのかと心配になって尋ねると、彼女は「本を売るだけなら、ネットにはかないません。だから、ここに来る理由をつくりたいんです」と答えた。\n商店街の衰退は、時代の流れだから仕方がないと言われる。確かにそうかもしれない。[[4]]、彼女の店を見ていると、人が集まる場所をなくしてきたのは、便利さばかりを追い求めた私たち自身なのではないかと思えてくる。物を買うだけの場所[[5]]、人と人とが出会う場所として、商店街にはまだできることがあるのかもしれない。",
+    "tr": {
+      "zh": "我小时候常去的车站前商店街，如今几乎全是拉下卷帘门的店铺。有了大型购物中心，在网上也什么都能买到，顾客减少或许也是理所当然的。然而，去年我久违地回老家时，惊讶地发现商店街的一角新开了一家小书店。店主是一位从东京搬来的三十多岁的女性，店里头放着谁都可以自由使用的桌子。放学后的中学生在那里写作业，附近的老人在那里看报纸，据说不光有买书的客人，只是顺路进来坐坐的人也很多。我担心这样能不能做得成生意，就问了她，她回答说：“如果只是卖书，是比不过网上的。所以我想创造一个来这里的理由。”人们常说，商店街的衰落是时代的潮流，没有办法。也许确实如此。但是，看着她的店，我不禁觉得，让人们聚集的地方一个个消失的，不正是只顾追求便利的我们自己吗？不是作为只用来买东西的地方，而是作为人与人相遇的地方，商店街或许还有可以做的事。",
+      "en": "The shopping street in front of the station that I used to go to as a child is now almost nothing but shuttered shops. With big shopping malls built and everything available online, it may be only natural that customers have fallen away. Yet when I went home last year for the first time in a while, I was surprised to find a small bookshop newly opened in a corner of that street. The owner is a woman in her thirties who moved from Tokyo, and at the back of the shop there are desks anyone can use freely. Junior high students do their homework there after school and elderly neighbours read the newspaper, and she says many people just drop in, not only customers who buy books. Worried whether she could make a living like that, I asked her, and she answered: \"If all I did was sell books, I couldn't compete with the internet. So I want to create a reason to come here.\" People say the decline of shopping streets is the tide of the times and can't be helped. Perhaps that's true. But looking at her shop, I come to think that it may be we ourselves, chasing only convenience, who have done away with places where people gather. Not as a place only for buying things, but as a place where people meet one another, shopping streets may still have something to offer."
+    },
+    "questions": [
+      {
+        "options": [
+          "かもしれない",
+          "とは限らない",
+          "どころではない",
+          "に越したことはない"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「〜のだから」列出原因后，作者先让步承认“顾客减少也许是理所当然的”，下一段再用转折写出意外的发现，用「かもしれない」。",
+          "en": "After the reasons given with 「〜のだから」, the writer concedes that fewer customers may be natural, before turning to the surprise: 「かもしれない」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「とは限らない」是“未必理所当然”，和前面「〜のだから」给出的理由矛盾。",
+            "en": "「とは限らない」 (not necessarily natural) contradicts the reasons just given with 「〜のだから」."
+          },
+          {
+            "zh": "「どころではない」是“根本顾不上”，接在「当然」后面不成句。",
+            "en": "「どころではない」 (in no position to) doesn't make sense after 「当然」."
+          },
+          {
+            "zh": "「に越したことはない」是“最好…”，“顾客减少最好”意思不通。",
+            "en": "「に越したことはない」 (it's best if …) — \"best that customers fall away\" makes no sense."
+          }
+        ]
+      },
+      {
+        "options": [
+          "それゆえ",
+          "要するに",
+          "ところが",
+          "そのうえ"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "前面说店铺衰落理所当然，后面却发现新开了一家书店并感到「驚いた」，是出乎意料的转折，用「ところが」。",
+          "en": "Decline seemed natural, yet he found a new shop and was 「驚いた」 — an unexpected turn: 「ところが」."
+        },
+        "wrong": [
+          {
+            "zh": "「それゆえ」表示因果，“顾客减少”不是“发现新书店”的原因。",
+            "en": "「それゆえ」 (for that reason) — customers declining isn't why a new shop opened."
+          },
+          {
+            "zh": "「要するに」是总结前文，后文是新的事情，不是总结。",
+            "en": "「要するに」 (in short) sums up; what follows is a new event."
+          },
+          null,
+          {
+            "zh": "「そのうえ」是同方向追加，可后文的新店和前面的衰落方向相反。",
+            "en": "「そのうえ」 adds more of the same, but a new shop runs against the decline just described."
+          }
+        ]
+      },
+      {
+        "options": [
+          "にとって",
+          "ばかりでなく",
+          "にもかかわらず",
+          "に限って"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "后面有「ただ立ち寄るだけの人も多い」的「も」，是“不仅有买书的客人，也有只是来坐坐的人”，用「ばかりでなく」。",
+          "en": "The 「も」 in 「ただ立ち寄るだけの人も多い」 calls for \"not only book buyers but also …\": 「ばかりでなく」."
+        },
+        "wrong": [
+          {
+            "zh": "「にとって」表示“对…来说”，“对买书的客人来说，顺路的人很多”意思不通。",
+            "en": "「にとって」 (for/to) — \"for book buyers, many just drop in\" makes no sense."
+          },
+          null,
+          {
+            "zh": "「にもかかわらず」接在名词后要表示“尽管是…”，“尽管是买书的客人”和后文接不上。",
+            "en": "「にもかかわらず」 (despite being book buyers) doesn't connect to what follows."
+          },
+          {
+            "zh": "「に限って」是“偏偏…就”，用于不如意的事，这里只是在列举来店的人。",
+            "en": "「に限って」 (of all people, …) is for annoying exceptions; here he's just listing who comes."
+          }
+        ]
+      },
+      {
+        "difficulty": 1,
+        "options": [
+          "だから",
+          "それに",
+          "要するに",
+          "だが"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "前面先让步「確かにそうかもしれない」，后面提出不同看法“说不定是我们自己造成的”，用转折「だが」。",
+          "en": "After conceding 「確かにそうかもしれない」, the writer offers a different view: 「だが」 (but)."
+        },
+        "wrong": [
+          {
+            "zh": "「だから」是顺接因果，“也许确实如此”推不出相反的看法。",
+            "en": "「だから」 (so) — conceding the point can't lead to the opposite view."
+          },
+          {
+            "zh": "「それに」是同方向追加，后文和“没有办法”的说法方向相反。",
+            "en": "「それに」 adds in the same direction; what follows challenges \"it can't be helped\"."
+          },
+          {
+            "zh": "「要するに」是总结，后文不是对前文的概括。",
+            "en": "「要するに」 (in short) sums up, but the next sentence isn't a summary."
+          },
+          null
+        ]
+      },
+      {
+        "options": [
+          "ではなく",
+          "にすぎず",
+          "であるからこそ",
+          "であるうえに"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "后面说「人と人とが出会う場所として」，和“只用来买东西的地方”对比，是“不是A而是B”，用「ではなく」。",
+          "en": "The sentence contrasts \"a place only for buying\" with 「人と人とが出会う場所として」: not A but B — 「ではなく」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「にすぎず」是“只不过是买东西的地方”，后面再说“作为相遇的地方”就前后矛盾。",
+            "en": "「にすぎず」 (is merely a place to buy) clashes with going on to call it a meeting place."
+          },
+          {
+            "zh": "「であるからこそ」是“正因为只是买东西的地方”，和后面的“相遇的地方”构不成因果。",
+            "en": "「であるからこそ」 (precisely because it's only for buying) gives no reason for being a meeting place."
+          },
+          {
+            "zh": "「であるうえに」是“不仅只是…而且”，「だけ」和“而且还是”互相矛盾。",
+            "en": "「であるうえに」 (on top of being) clashes with 「だけ」 (only)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-104",
+    "type": "bunshou",
+    "difficulty": 3,
+    "intro": "次の文章は、雑誌に載ったエッセイです。",
+    "passage": "都会のマンションでは、隣にどんな人が住んでいるのか知らないという人も珍しくない。互いの生活に立ち入らずに済むのは、気楽である[[1]]。私も引っ越してきた当初は、近所の人とあいさつ以上の話をすることはほとんどなかった。\nところが去年の夏、大雨で近くの川があふれそうになり、夜中に避難を呼びかける放送が流れた。そのとき真っ先にうちのドアをたたいてくれたのは、それまで名前も知らなかった隣の老夫婦だった。[[2]]、二人は足の悪い上の階の女性にも声をかけ、一緒に避難所まで連れて行ったのである。\n人とのつながりをわずらわしいと感じること自体は、おかしなことではない。[[3]]、つながりを避け続けた結果、いざというときに誰にも頼れなくなってしまうとしたら、それは問題だ。一人で暮らす人が増えている今、近所に知り合いが一人もいないままでは、困ったときに助けを求めることさえできなくなり[[4]]。\n深い付き合いをする必要はないだろう。だが、顔を合わせたときに一言声をかけ合う程度の関係まで、面倒だという理由で手放す[[5]]と私は思う。",
+    "tr": {
+      "zh": "在城市的公寓里，不知道隔壁住着什么人的情况并不少见。不必介入彼此的生活，一定很轻松。我刚搬来的时候，和邻居之间也几乎只是打个招呼而已。可是去年夏天，大雨让附近的河眼看就要决堤，半夜里响起了呼吁避难的广播。那时第一个来敲我家门的，是此前连名字都不知道的隔壁一对老夫妇。而且，两人还招呼了楼上腿脚不好的女士，把她一起带到了避难所。觉得人与人之间的联系很麻烦，这本身并不奇怪。话虽如此，如果一直回避联系，结果到了关键时刻谁也指望不上，那就是问题了。在独居者越来越多的今天，如果附近一个熟人都没有，遇到困难时恐怕连求助都做不到。也许没有必要深交。但是，我认为不应该因为嫌麻烦，就连见面时互相打声招呼这种程度的关系也放弃掉。",
+      "en": "In city apartment blocks it's not unusual for people not to know who lives next door. Not having to intrude on each other's lives must be easy and relaxed. When I first moved in, I too hardly ever said more than hello to my neighbours. Then last summer, heavy rain brought the nearby river close to overflowing, and an announcement in the middle of the night urged us to evacuate. The first to knock on my door was the elderly couple next door, whose names I hadn't even known. What's more, the two of them also called on a woman upstairs who has trouble walking and took her with them to the shelter. Finding ties with other people bothersome isn't strange in itself. Even so, if avoiding ties for good means that when it really matters you have no one to rely on, that's a problem. Now that more and more people live alone, if you don't know a single person in your neighbourhood, you may well be unable even to ask for help when you're in trouble. There's probably no need for close friendships. But I think we shouldn't give up, just because it's a bother, even the kind of relationship where we say a word to each other when we meet."
+    },
+    "questions": [
+      {
+        "options": [
+          "ことはない",
+          "ものか",
+          "に違いない",
+          "わけにはいかない"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "下一句「私も…ほとんどなかった」作者自己当初也这样，所以这里是肯定的推断“一定很轻松”，用「に違いない」。",
+          "en": "The next sentence — the writer too kept to greetings at first — shows he grants the point: 「気楽であるに違いない」 (must be relaxed)."
+        },
+        "wrong": [
+          {
+            "zh": "「〜ことはない」接在动词后表示“不必”，接在「気楽である」后面不成立。",
+            "en": "「〜ことはない」 (no need to) follows a verb; it doesn't work after 「気楽である」."
+          },
+          {
+            "zh": "「ものか」是强烈否定“怎么会轻松”，可作者自己当初也是这样过的，后面还说觉得麻烦「おかしなことではない」。",
+            "en": "「ものか」 (as if it were relaxing!) denies the point, but he lived that way himself and later calls finding ties bothersome 「おかしなことではない」."
+          },
+          null,
+          {
+            "zh": "「わけにはいかない」是出于情理“不能…”，“不能轻松”和作者承认这种生活方式的语气相反。",
+            "en": "「わけにはいかない」 (can't afford to be relaxed) clashes with his granting that this way of life is easy."
+          }
+        ]
+      },
+      {
+        "options": [
+          "にもかかわらず",
+          "しかも",
+          "たとえば",
+          "ところで"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "前面说老夫妇第一个来敲门，后面再加一层：他们还带上了楼上腿脚不好的女士，用递进的「しかも」。",
+          "en": "The couple knocked first, and on top of that took the woman upstairs along too: 「しかも」 (what's more)."
+        },
+        "wrong": [
+          {
+            "zh": "「にもかかわらず」表示逆接，后文和前文并不对立，而是同方向的更进一步。",
+            "en": "「にもかかわらず」 (despite that) needs a contrast; the next sentence goes further in the same direction."
+          },
+          null,
+          {
+            "zh": "「たとえば」用于举例，带上楼上的女士并不是“来敲门”的例子。",
+            "en": "「たとえば」 (for example) — taking the woman upstairs isn't an example of knocking on his door."
+          },
+          {
+            "zh": "「ところで」用于转换话题，后文仍在讲同一晚的事。",
+            "en": "「ところで」 (by the way) changes the subject, but he's still describing the same night."
+          }
+        ]
+      },
+      {
+        "options": [
+          "むしろ",
+          "それどころか",
+          "したがって",
+          "とはいえ"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "先承认“觉得联系麻烦本身不奇怪”，再提出保留“可是如果…就是问题”，用让步转折「とはいえ」。",
+          "en": "He grants that finding ties bothersome isn't strange, then adds a reservation (if …, that's a problem): 「とはいえ」."
+        },
+        "wrong": [
+          {
+            "zh": "「むしろ」是“倒不如说”，后文不是对前文的更好说法，而是提出问题。",
+            "en": "「むしろ」 (rather) prefers one option; the sentence raises a problem instead."
+          },
+          {
+            "zh": "「それどころか」要求后文比前文更进一步，可这里方向相反。",
+            "en": "「それどころか」 (far from it) escalates; here the sentence pulls back with a reservation."
+          },
+          {
+            "zh": "「したがって」表示结论，“并不奇怪”推不出“是问题”。",
+            "en": "「したがって」 (therefore) — \"not strange\" can't lead to \"a problem\"."
+          },
+          null
+        ]
+      },
+      {
+        "options": [
+          "かねない",
+          "かねる",
+          "がたい",
+          "っこない"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "前面说“附近一个熟人都没有”，这是担心会出现坏结果“恐怕连求助都做不到”，用「〜かねない」。",
+          "en": "Knowing no one nearby could lead to a bad outcome — being unable even to ask for help: 「できなくなりかねない」 (may well)."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「〜かねる」是“难以做到”，接在「できなくなり」后面不成句。",
+            "en": "「〜かねる」 (can't bring oneself to) makes no sense after 「できなくなり」."
+          },
+          {
+            "zh": "「〜がたい」是“难以…”，用于「信じがたい」等，不接在「できなくなる」后表示担心。",
+            "en": "「〜がたい」 (hard to …) as in 「信じがたい」 doesn't express a worry after 「できなくなる」."
+          },
+          {
+            "zh": "「〜っこない」是口语的“绝不会”，否定了担心，和前文举出的危险相反，语体也不符。",
+            "en": "「〜っこない」 (no way it'll happen) is casual and denies the very risk he is describing."
+          }
+        ]
+      },
+      {
+        "options": [
+          "にほかならない",
+          "わけだ",
+          "べきではない",
+          "ほかない"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "「だが」承接“不必深交”，作者主张连打招呼的关系也“不应该放弃”，用「べきではない」。",
+          "en": "After 「だが」 (no need for close ties, but …) comes his claim that we shouldn't give up even a nodding relationship: 「べきではない」."
+        },
+        "wrong": [
+          {
+            "zh": "「にほかならない」是“正是…”，“正是放弃”和作者的主张不符。",
+            "en": "「にほかならない」 (is nothing but giving up) doesn't express his claim."
+          },
+          {
+            "zh": "「わけだ」是“所以才放弃”，和「だが」后面应提出的主张不符。",
+            "en": "「わけだ」 (that's why we give it up) doesn't fit the claim that 「だが」 introduces."
+          },
+          null,
+          {
+            "zh": "「ほかない」是“只能放弃”，和全文经历（邻居救了自己）得出的结论相反。",
+            "en": "「ほかない」 (have no choice but to give up) contradicts the lesson of the whole story."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-105",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "次の文章は、雑誌に載ったエッセイです。",
+    "passage": "好きなことを仕事にしたい。若いころの私は、ずっとそう思っていた。そして三十歳のとき、趣味で続けていた写真を仕事にしようと、会社を辞めて独立した。\n写真を撮ること自体は、今でも好きだ。[[1]]、仕事になってからは、楽しいことばかりではなくなった。客の希望に合わせて撮らなければならないので、自分が撮りたいものを撮る時間はほとんどない。休みの日にカメラを持って出かける気にもなれず、趣味として写真を楽しむことは[[2]]。\nでは、好きなことを仕事にしたのは間違いだったのか。そう聞かれたら、私は「いいえ」と答える。仕事にしたことで、光の使い方や構図について、趣味のころとは比べものにならないほど深く考えるようになった。客に「この写真を一生大切にします」と言われたときの喜びは、趣味では[[3]]。\n好きなことを仕事にすれば毎日が楽しくなる、と思っている人がいたら、それは違うと言いたい。[[4]]、好きなことだからこそ、苦しい時期も乗り越えられるのだ。仕事にするかどうかは、楽しさが減ることも覚悟したうえで決める[[5]]。",
+    "tr": {
+      "zh": "我想把喜欢的事当成工作。年轻时的我一直这样想。于是三十岁那年，我辞去公司的工作，独立出来，想把一直作为爱好的摄影变成职业。拍照这件事本身，我现在也依然喜欢。话虽如此，成了工作以后，就不再全是快乐的事了。因为必须按照客户的要求拍，几乎没有时间拍自己想拍的东西。休息日也提不起劲带着相机出门，作为爱好享受摄影的时光已经完全没有了。那么，把喜欢的事当成工作是错的吗？如果被这样问，我会回答“不”。成为工作之后，我对光线的运用和构图的思考，深入到了做爱好时无法相比的程度。客人对我说“我会一辈子珍惜这张照片”时的喜悦，是做爱好时绝对体会不到的。如果有人以为把喜欢的事当成工作就能每天都很开心，我想说并不是这样。倒不如说，正因为是喜欢的事，才能熬过艰难的时期。要不要把它当成工作，难道不应该在做好快乐会减少的心理准备之后再决定吗？",
+      "en": "I want to make what I love my job. When I was young, I always thought that. And at thirty, I quit my company and went freelance to turn photography, which I had kept up as a hobby, into my work. I still love taking photos in itself. Even so, since it became my job, it's no longer all fun. I have to shoot what clients want, so I have almost no time to shoot what I want. I don't even feel like going out with my camera on my days off, and enjoying photography as a hobby has disappeared completely. So was it a mistake to make what I love my job? If asked, I'd say \"no.\" Because it became my work, I've come to think about the use of light and composition far more deeply than I ever did as a hobby. The joy of a client telling me \"I'll treasure this photo all my life\" is something I could never have felt as a hobby. If anyone thinks that making what they love their job will make every day fun, I want to tell them that's not so. Rather, it's precisely because it's something you love that you can get through the hard times. Shouldn't you decide whether to make it your job only after preparing yourself for the fun to shrink?"
+    },
+    "questions": [
+      {
+        "options": [
+          "それどころか",
+          "とはいえ",
+          "むしろ",
+          "だからこそ"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "前面说“现在也依然喜欢拍照”，后面保留“但成了工作就不全是快乐了”，用让步转折「とはいえ」。",
+          "en": "He still loves photography, yet since it became work it's not all fun: a concession and reservation — 「とはいえ」."
+        },
+        "wrong": [
+          {
+            "zh": "「それどころか」是“非但不…反而”，前面是肯定句“喜欢”，后面并没有否定喜欢。",
+            "en": "「それどころか」 (far from it) would deny that he likes it, but he says he still does."
+          },
+          null,
+          {
+            "zh": "「むしろ」是“倒不如说”，后文不是对“喜欢”的更好说法，而是转折。",
+            "en": "「むしろ」 (rather) doesn't fit; the next sentence is a reservation, not a better way of putting it."
+          },
+          {
+            "zh": "「だからこそ」是“正因为喜欢”，推不出“不全是快乐”。",
+            "en": "「だからこそ」 (precisely because he loves it) can't lead to \"it's not all fun\"."
+          }
+        ]
+      },
+      {
+        "options": [
+          "なくてはならなくなった",
+          "せずにはいられなくなった",
+          "ますます増えていった",
+          "すっかりなくなってしまった"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "前面说没有时间拍自己想拍的，休息日也「出かける気にもなれず」，所以作为爱好的摄影“完全没有了”。",
+          "en": "With no time for his own shots and 「出かける気にもなれず」 on days off, hobby photography has 「すっかりなくなってしまった」."
+        },
+        "wrong": [
+          {
+            "zh": "「なくてはならない」是“必须”，和休息日都不想出门的描述矛盾。",
+            "en": "「なくてはならない」 (has become a must) contradicts not even wanting to go out on days off."
+          },
+          {
+            "zh": "「せずにはいられない」是“忍不住要做”，和「出かける気にもなれず」相反。",
+            "en": "「せずにはいられない」 (can't help doing it) is the opposite of 「出かける気にもなれず」."
+          },
+          {
+            "zh": "“越来越多”和“没时间拍自己想拍的”矛盾。",
+            "en": "\"Grew more and more\" contradicts having almost no time for his own photos."
+          },
+          null
+        ]
+      },
+      {
+        "options": [
+          "決して味わえないものだった",
+          "味わえるに決まっている",
+          "味わうわけにはいかなかった",
+          "味わったことがあるに違いない"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "这一段在说成为工作的好处，客人的感谢带来的喜悦是做爱好时“绝对体会不到的”，用「決して味わえないものだった」。",
+          "en": "This paragraph lists what work gave him; a client's thanks is a joy he could never have had as a hobby: 「決して味わえないものだった」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "“当然能体会到”就否定了工作的特别之处，和这一段回答「いいえ」的论点相反。",
+            "en": "\"Of course you could feel it\" would undercut the paragraph's point that work gave him something new."
+          },
+          {
+            "zh": "「わけにはいかない」表示出于情理不能做，和“体会喜悦”这种感受不搭。",
+            "en": "「わけにはいかない」 is about what one mustn't do for social reasons, not about feeling joy."
+          },
+          {
+            "zh": "「に違いない」推测自己过去的经历很不自然，也和“工作带来新的喜悦”的论点矛盾。",
+            "en": "Guessing with 「に違いない」 about his own past is odd, and it contradicts the point that work brought new joy."
+          }
+        ]
+      },
+      {
+        "options": [
+          "したがって",
+          "にもかかわらず",
+          "むしろ",
+          "そのうえ"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "前面否定了“当成工作就每天开心”，后面提出另一种更准确的看法“正因为喜欢才能熬过苦日子”，用「むしろ」。",
+          "en": "After rejecting \"every day will be fun,\" he offers a truer view — love is what gets you through hard times: 「むしろ」 (rather)."
+        },
+        "wrong": [
+          {
+            "zh": "「したがって」表示结论，“不会每天开心”推不出“正因喜欢才能熬过”。",
+            "en": "「したがって」 (therefore) — \"not every day is fun\" doesn't lead logically to the next sentence."
+          },
+          {
+            "zh": "「にもかかわらず」表示“尽管如此”，后文并不是与前文相反的意外结果。",
+            "en": "「にもかかわらず」 (despite that) needs an unexpected contrary result; this is a better way of seeing it."
+          },
+          null,
+          {
+            "zh": "「そのうえ」是同方向追加，后文不是“并不开心”的又一个理由。",
+            "en": "「そのうえ」 adds another point of the same kind; the sentence isn't another reason it's not fun."
+          }
+        ]
+      },
+      {
+        "options": [
+          "わけにはいかない",
+          "べきではないだろうか",
+          "に違いない",
+          "までもない"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "结尾向读者提出建议“难道不应该做好心理准备再决定吗”，用「べきではないだろうか」。",
+          "en": "He closes with advice to the reader: 「べきではないだろうか」 (shouldn't one …?)."
+        },
+        "wrong": [
+          {
+            "zh": "「わけにはいかない」是“不能决定”，和“做好准备后再决定”的建议矛盾。",
+            "en": "「わけにはいかない」 (can't decide) contradicts advising when to decide."
+          },
+          null,
+          {
+            "zh": "「に違いない」是对事实的推测，不是建议，和对读者说话的语气不符。",
+            "en": "「に違いない」 guesses at a fact; the sentence gives advice."
+          },
+          {
+            "zh": "「までもない」是“不必决定”，和全文的建议相反。",
+            "en": "「までもない」 (no need to decide) is the opposite of his advice."
+          }
+        ]
+      }
+    ]
+  }
+]

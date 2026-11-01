@@ -1,0 +1,640 @@
+[
+ {
+  "id": "n1-m1-ck-501",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "先方には、こちらの事情もそれとなく伝えておいてもらえると助かるんだけど。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "では、先方のご事情を詳しく伺ってきます。",
+   "ええ、角が立たないように話しておきます。",
+   "いえ、こちらこそ事情を伝えていただいて。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "如果能把我们这边的情况也委婉地转告对方就好了。"
+    ],
+    "options": [
+     "那我去详细问问对方的情况。",
+     "好的，我会说得不伤和气。",
+     "不，也谢谢您告诉我情况。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "It'd help if you could let them know our situation too, without making a point of it."
+    ],
+    "options": [
+     "Then I'll go and find out about their situation in detail.",
+     "Sure, I'll mention it without ruffling any feathers.",
+     "No, thank you for letting me know the situation."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「それとなく伝えて」是请她委婉地把我方情况告诉对方，答应并说会注意分寸最自然。",
+   "en": "He asks her to convey their situation tactfully; agreeing to do it without causing friction fits."
+  },
+  "wrong": [
+   {
+    "zh": "要传达的是我方的情况，不是去打听对方的。",
+    "en": "It's their own side's situation to convey, not the other party's to ask about."
+   },
+   null,
+   {
+    "zh": "像是对方告诉了自己情况，把请求听成了报告。",
+    "en": "This treats the request as if he had informed her of something."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-502",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "山田さんの企画、部長の鶴の一声でお蔵入りだって。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "えっ、あれだけ準備してたのに、気の毒だな。",
+   "じゃあ、いよいよ来月から動き出すんですね。",
+   "部長、そんなに大きな声で話してたんだ。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "听说山田的企划，部长一句话就给压下来了。"
+    ],
+    "options": [
+     "啊？准备了那么久，真可怜。",
+     "那下个月终于要开始了吧。",
+     "部长说话声音那么大啊。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Apparently Yamada's project got shelved on a single word from the department head."
+    ],
+    "options": [
+     "What? After all that preparation — poor guy.",
+     "So it finally gets going next month, then.",
+     "The head was talking that loudly?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「お蔵入り」是企划被搁置、作废。「鶴の一声」是有权的人一句话就定了。同情山田最自然。",
+   "en": "「お蔵入り」 means shelved; 「鶴の一声」 is one word from someone in power. Sympathy for Yamada fits."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「お蔵入り」是被搁置，不是要开始。",
+    "en": "Shelved means it won't go ahead."
+   },
+   {
+    "zh": "把「鶴の一声」当成说话声音大，照搬了「声」。",
+    "en": "Takes 「一声」 literally as a loud voice."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-503",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "この話、どう転んでも、うちが損をすることはないと思うんだけど。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "損をするなら、今回は見送ったほうがいいですね。",
+   "それなら、思い切って乗ってみる価値はありますね。",
+   "転ばないように、足元に気をつけてくださいね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这件事，我觉得不管怎么发展，我们都不会吃亏。"
+    ],
+    "options": [
+     "要是会吃亏，这次还是不做为好。",
+     "那样的话，值得大胆试一试。",
+     "小心脚下，别摔倒了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "However this turns out, I don't think we can lose on this deal."
+    ],
+    "options": [
+     "If we'd lose, we'd better pass this time.",
+     "Then it's worth taking the plunge.",
+     "Mind your step so you don't fall."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「どう転んでも損はない」是无论结果如何都不会吃亏，回应“那值得一试”最自然。",
+   "en": "「どう転んでも」 means whichever way it goes; with no risk of loss, saying it's worth a try fits."
+  },
+  "wrong": [
+   {
+    "zh": "他说不会吃亏，「損をするなら」与原句矛盾。",
+    "en": "He says they can't lose; this assumes a loss."
+   },
+   null,
+   {
+    "zh": "把「転ぶ」当成真的摔倒。",
+    "en": "Takes 「転ぶ」 literally as falling over."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-504",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "部長のお宅、駅から近いとは名ばかりで、二十分も歩いたよ。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "駅から近いなら、通勤も楽でいいね。",
+   "二十分か。それじゃ近いとは言えないね。",
+   "名前だけでも、教えてもらえばよかったのに。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "部长家说是离车站近，其实名不副实，走了二十分钟呢。"
+    ],
+    "options": [
+     "离车站近的话，通勤也轻松，真好。",
+     "二十分钟啊。那可算不上近。",
+     "哪怕只是名字，问一下就好了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "The head's house is 'close to the station' in name only — I walked a full twenty minutes."
+    ],
+    "options": [
+     "If it's close to the station, commuting must be easy.",
+     "Twenty minutes? You can hardly call that close.",
+     "You should have at least asked the name."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「名ばかり」是有名无实：说近，其实不近。附和说二十分钟算不上近最自然。",
+   "en": "「名ばかり」 means in name only — it isn't really close. Agreeing that twenty minutes isn't close fits."
+  },
+  "wrong": [
+   {
+    "zh": "她说的正是「近い」名不副实，并不近。",
+    "en": "She means it isn't actually close."
+   },
+   null,
+   {
+    "zh": "把「名ばかり」听成“名字”，答非所问。",
+    "en": "Mishears 「名ばかり」 as being about a name."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-505",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "この件、君をおいてほかに任せられる人はいないと思ってるんだ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "ありがとうございます。精一杯務めさせていただきます。",
+   "そうですか。ほかにも候補がいらっしゃるんですね。",
+   "私をおいて、どなたにお願いなさるおつもりですか。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这件事，我觉得除了你没有别人可以交给了。"
+    ],
+    "options": [
+     "谢谢您。我一定尽全力。",
+     "这样啊。原来还有别的人选。",
+     "撇开我，您打算拜托哪一位呢？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "On this one, I don't think there's anyone but you I can hand it to."
+    ],
+    "options": [
+     "Thank you. I'll do my very best.",
+     "I see. So there are other candidates as well.",
+     "Leaving me aside, who do you plan to ask?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「君をおいてほかに〜いない」是“除了你没有别人”，是在重用她。道谢并表示尽力最自然。",
+   "en": "「君をおいてほかに〜いない」 means only she can do it; thanking him and promising her best fits."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "他说的是没有别的人选，正相反。",
+    "en": "He says there's no one else — the opposite."
+   },
+   {
+    "zh": "把「をおいて」理解成“撇开”，意思弄反了。",
+    "en": "Misreads 「をおいて」 as 'leaving aside', reversing the meaning."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-506",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "明日の会議の資料、間に合うかどうか、正直、ごぶごぶってところです。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "五分で終わるなら、ここで待ってるよ。",
+   "へえ、ずいぶん余裕があるんだね。",
+   "手伝えることがあったら、遠慮なく言って。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "明天会议的资料，说实话，赶不赶得上只有一半一半。"
+    ],
+    "options": [
+     "五分钟就能完的话，我在这儿等。",
+     "哦，还挺从容的嘛。",
+     "有我能帮忙的，尽管说。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Honestly, whether the materials for tomorrow's meeting will be ready is fifty-fifty."
+    ],
+    "options": [
+     "If it'll be done in five minutes, I'll wait here.",
+     "Oh, you've got plenty of time, then.",
+     "If there's anything I can help with, just say."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「ごぶごぶ（五分五分）」是成败各半，资料可能赶不上。提出帮忙最自然。",
+   "en": "「ごぶごぶ」 (五分五分) means fifty-fifty — it may not be ready; offering help fits."
+  },
+  "wrong": [
+   {
+    "zh": "把「ごぶごぶ」听成“五分钟”。",
+    "en": "Mishears 「ごぶごぶ」 as 'five minutes'."
+   },
+   {
+    "zh": "她说可能赶不上，「余裕がある」矛盾。",
+    "en": "She may not make it — not plenty of time."
+   },
+   null
+  ],
+  "traps": [
+   "repeat-word",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-507",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "雨が降ろうが槍が降ろうが、明日の決勝だけは見に行くからね。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "そこまで言うなら、もう止めないよ。",
+   "じゃあ、雨だったらやめておこうか。",
+   "槍って、どこでそんな予報が出てたの？"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "就算下雨下刀子，明天的决赛我也非去看不可。"
+    ],
+    "options": [
+     "你都这么说了，我就不拦你了。",
+     "那下雨的话就不去了吧。",
+     "刀子？哪里发了那样的预报？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Come rain or come shine, I'm going to watch tomorrow's final."
+    ],
+    "options": [
+     "If you feel that strongly, I won't stop you.",
+     "Then shall we skip it if it rains?",
+     "Spears? Where was that forecast?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「雨が降ろうが槍が降ろうが」是“无论如何都要去”的强烈决心，表示不再劝阻最自然。",
+   "en": "The idiom means he'll go no matter what; saying she won't stop him fits."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "他说不管下不下雨都去，矛盾。",
+    "en": "He'll go whatever the weather — this contradicts him."
+   },
+   {
+    "zh": "把惯用句当成真的天气预报。",
+    "en": "Takes the idiom literally as a forecast."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-508",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "例の件、課長には私のほうから話を通しておきましたので。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "助かります。じゃあ、あとはこちらで進めますね。",
+   "では、課長に話を通していただけますか。",
+   "そうですか、課長が自ら話してくださったんですね。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "那件事，我已经跟科长打过招呼了。"
+    ],
+    "options": [
+     "太好了。那剩下的我这边来推进。",
+     "那能请您跟科长打个招呼吗？",
+     "这样啊，原来是科长亲自说的。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "About that matter — I've already cleared it with the section chief."
+    ],
+    "options": [
+     "That's a big help. I'll take it from here, then.",
+     "Then could you clear it with the section chief?",
+     "I see, so the section chief spoke about it himself."
+    ]
+   }
+  },
+  "why": {
+   "zh": "她说已经替他跟科长打好招呼了。道谢并表示接下来自己推进最自然。",
+   "en": "She has already squared it with the chief for him; thanking her and taking it on from there fits."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "她已经说了「通しておきました」，再请她去说是矛盾的。",
+    "en": "She's already done it."
+   },
+   {
+    "zh": "说的是她去跟科长讲，不是科长自己讲，立场反了。",
+    "en": "She spoke to the chief, not the other way round."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-509",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "締め切りまであと二日か。こうなったら、徹夜もやむなしだな。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "そうだね、二日もあれば、ゆっくりできるね。",
+   "無理しないでね。何か手伝えることある？",
+   "徹夜はやめることにしたんだ。よかった。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "离截止只剩两天了啊。事到如今，只好熬通宵了。"
+    ],
+    "options": [
+     "是啊，有两天的话，可以慢慢来了。",
+     "别太勉强。有什么我能帮忙的吗？",
+     "决定不熬夜了啊，太好了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Only two days to the deadline. At this point, an all-nighter can't be helped."
+    ],
+    "options": [
+     "Right, with two days you can take it easy.",
+     "Don't overdo it. Is there anything I can help with?",
+     "So you've decided against the all-nighter. Good."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「徹夜もやむなし」是不得不熬通宵。关心他、提出帮忙最自然。",
+   "en": "「徹夜もやむなし」 — an all-nighter is unavoidable; showing concern and offering help fits."
+  },
+  "wrong": [
+   {
+    "zh": "他时间紧得要熬夜，「ゆっくりできる」矛盾。",
+    "en": "He's so short of time he must stay up — not relaxed."
+   },
+   null,
+   {
+    "zh": "「やむなし」是不得不，不是放弃熬夜。",
+    "en": "「やむなし」 means unavoidable, not giving it up."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-510",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "先日は結構なものをいただきまして、家族一同、おいしくいただきました。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "こちらこそ、ごちそうさまでした。",
+   "それは残念でしたね。次はもっといいものを。",
+   "いえいえ、お口に合ったなら何よりです。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "前几天收到您那么好的东西，全家都吃得很开心。"
+    ],
+    "options": [
+     "我才要谢谢您的款待。",
+     "那真遗憾。下次送更好的。",
+     "哪里哪里，合您口味就太好了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Thank you for the lovely gift the other day — the whole family enjoyed it."
+    ],
+    "options": [
+     "No, thank you for the meal.",
+     "That's a shame. I'll send something better next time.",
+     "Not at all — I'm glad it was to your taste."
+    ]
+   }
+  },
+  "why": {
+   "zh": "她为收到的礼物道谢，送礼的人回答「お口に合ったなら何よりです」最自然。",
+   "en": "She thanks him for his gift; the giver replying he's glad she liked it fits."
+  },
+  "wrong": [
+   {
+    "zh": "是他送的东西，说「ごちそうさま」立场反了。",
+    "en": "He gave the gift; thanking her for a meal is the wrong side."
+   },
+   {
+    "zh": "她说很好吃，「残念」矛盾。",
+    "en": "She said it was delicious — 'a shame' contradicts that."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-511",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "お言葉を返すようですが、その方法では、期日に間に合わないかと。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "ええ、お言葉はきちんとお返ししておきます。",
+   "いえ、まだお返事はいただいていません。",
+   "そう。じゃあ、何かほかにいい手はある？"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "恕我直言，用那个方法的话，恐怕赶不上期限。"
+    ],
+    "options": [
+     "好的，我会把您的话好好回过去。",
+     "不，还没收到回复。",
+     "是吗。那有没有别的好办法？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "If I may respectfully disagree, I'm afraid that approach won't meet the deadline."
+    ],
+    "options": [
+     "Yes, I'll be sure to send your words back.",
+     "No, I haven't received a reply yet.",
+     "I see. Then do you have a better idea?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「お言葉を返すようですが」是向上级提出不同意见的开场。上司问有没有别的办法最自然。",
+   "en": "「お言葉を返すようですが」 politely introduces disagreement; the superior asking for a better idea fits."
+  },
+  "wrong": [
+   {
+    "zh": "把「言葉を返す」当成真的“把话还回去”。",
+    "en": "Takes 「言葉を返す」 literally."
+   },
+   {
+    "zh": "把「返す」听成回复，答非所问。",
+    "en": "Hears 「返す」 as a reply — off topic."
+   },
+   null
+  ],
+  "traps": [
+   "repeat-word",
+   "intent"
+  ]
+ }
+]

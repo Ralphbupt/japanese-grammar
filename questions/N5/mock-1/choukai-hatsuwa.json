@@ -1,0 +1,291 @@
+[
+ {
+  "id": "n5-m1-ck-401",
+  "type": "hatsuwa",
+  "scene": "教室で、先生が 字を 書いて います。でも、字が とても 小さいです。先生に 言います。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A classroom. A male teacher stands at the blackboard writing in very small characters. A female student sits at a desk near the back, leaning forward and squinting at the board.",
+   "arrow": "the female student at the back desk"
+  },
+  "options": [
+   "先生、もう すこし 大きく 書いて ください。",
+   "先生、もう すこし 大きく 書きましょうか。",
+   "先生、もう すこし 大きく 書いても いいですか。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在教室里，老师在写字。可是字非常小。对老师说。",
+    "question": "怎么说？",
+    "options": [
+     "老师，请写大一点。",
+     "老师，我写大一点吧？",
+     "老师，我可以写大一点吗？"
+    ]
+   },
+   "en": {
+    "scene": "In the classroom the teacher is writing, but the characters are very small. You say to the teacher:",
+    "question": "What do you say?",
+    "options": [
+     "Could you write a little bigger, please?",
+     "Shall I write a little bigger?",
+     "May I write a little bigger?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "要老师写，是请对方做事，用「〜て ください」：「大きく 書いて ください」。",
+   "en": "The teacher is the one writing, so you ask him to do it with 「〜て ください」: 「大きく 書いて ください」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「書きましょうか」是自己主动提出要写，可是写字的是老师。",
+    "en": "「書きましょうか」 offers to write yourself, but the teacher is the one writing."
+   },
+   {
+    "zh": "「書いても いいですか」是请求自己写的许可，写字的人不是你。",
+    "en": "「書いても いいですか」 asks permission for you to write — you're not the one writing."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n5-m1-ck-402",
+  "type": "hatsuwa",
+  "scene": "友だちの うちに います。テレビで ニュースを 見たいです。友だちに 聞きます。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A living room in a friend's home. A young man sits on a sofa and points at a TV that is switched off, looking toward a young woman, his friend, who is standing nearby holding a cup.",
+   "arrow": "the young man on the sofa"
+  },
+  "options": [
+   "ええ、どうぞ つけて ください。",
+   "テレビ、つけても いいですか。",
+   "テレビ、つけて いますよ。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在朋友家。想看电视新闻。问朋友。",
+    "question": "怎么说？",
+    "options": [
+     "嗯，请打开吧。",
+     "我可以开电视吗？",
+     "电视开着呢。"
+    ]
+   },
+   "en": {
+    "scene": "You're at a friend's house. You want to watch the news on TV. You ask your friend:",
+    "question": "What do you say?",
+    "options": [
+     "Sure, go ahead and turn it on.",
+     "Is it OK if I turn on the TV?",
+     "The TV is on."
+    ]
+   }
+  },
+  "why": {
+   "zh": "在别人家想开电视，先征求主人同意，用「〜ても いいですか」。",
+   "en": "It's your friend's TV, so you ask permission first with 「〜ても いいですか」."
+  },
+  "wrong": [
+   {
+    "zh": "「どうぞ つけて ください」是答应别人，是被问的朋友才会说的话。",
+    "en": "「どうぞ つけて ください」 grants permission — that's your friend's answer, not your question."
+   },
+   null,
+   {
+    "zh": "「つけて いますよ」是说明电视已经开着，可是现在电视是关着的，也不是在征求同意。",
+    "en": "「つけて いますよ」 says the TV is already on; it isn't, and it doesn't ask anything."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n5-m1-ck-403",
+  "type": "hatsuwa",
+  "scene": "先生が 本を たくさん もって、教室の ドアの 前に 立って います。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A school corridor. A middle-aged female teacher stands in front of a classroom door that is still fully CLOSED, holding a tall stack of books in both arms so she cannot open it. A male student stands next to her, not touching the door yet, looking at her.",
+   "arrow": "the male student beside the door"
+  },
+  "options": [
+   "先生、ドアを あけて ください。",
+   "ああ、どうも ありがとう。",
+   "先生、ドアを あけましょうか。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "老师抱着很多书，站在教室门口。",
+    "question": "怎么说？",
+    "options": [
+     "老师，请开门。",
+     "啊，谢谢。",
+     "老师，我来开门吧？"
+    ]
+   },
+   "en": {
+    "scene": "The teacher is standing in front of the classroom door, holding a lot of books.",
+    "question": "What do you say?",
+    "options": [
+     "Please open the door, sir.",
+     "Oh, thank you.",
+     "Shall I open the door for you?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "老师两手都拿着书开不了门，主动提出帮忙，用「〜ましょうか」：「あけましょうか」。",
+   "en": "Her hands are full, so you offer to help with 「〜ましょうか」: 「あけましょうか」."
+  },
+  "wrong": [
+   {
+    "zh": "「あけて ください」是请老师开门，可是老师手里拿满了书，立场反了。",
+    "en": "「あけて ください」 asks the teacher to open it, but her hands are full — the wrong way round."
+   },
+   {
+    "zh": "「どうも ありがとう」是老师被帮忙后才会说的话。",
+    "en": "「どうも ありがとう」 is what the teacher says after you help her."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n5-m1-ck-404",
+  "type": "hatsuwa",
+  "scene": "店に います。あそこに ある 赤い かばんを 近くで 見たいです。店の 人に 言います。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "Inside a bag shop. Several bags are on a high shelf behind the counter; one bag is shaded solid dark so it stands out. A male customer stands at the counter pointing up at that dark bag, talking to a female shop assistant behind the counter.",
+   "arrow": "the male customer pointing at the bag"
+  },
+  "options": [
+   "あの 赤い かばんを 見せて ください。",
+   "あの 赤い かばんですね。どうぞ。",
+   "あの 赤い かばんを 見せましょうか。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在店里。想近一点看看那边的红色包。对店员说。",
+    "question": "怎么说？",
+    "options": [
+     "请让我看看那个红色的包。",
+     "是那个红色的包吧。请看。",
+     "我给您看看那个红色的包吧？"
+    ]
+   },
+   "en": {
+    "scene": "You're in a shop. You want a closer look at the red bag over there. You say to the shop assistant:",
+    "question": "What do you say?",
+    "options": [
+     "Could you show me that red bag, please?",
+     "That red bag? Here you are.",
+     "Shall I show you that red bag?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "想让店员拿给自己看，用「見せて ください」。",
+   "en": "You want the assistant to show it to you: 「見せて ください」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「〜ですね。どうぞ」是店员确认后把包递过来时说的话。",
+    "en": "「〜ですね。どうぞ」 is the assistant confirming and handing it over."
+   },
+   {
+    "zh": "「見せましょうか」是主动提出给对方看，是店员才会说的话。",
+    "en": "「見せましょうか」 offers to show it — that's the assistant's line."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n5-m1-ck-405",
+  "type": "hatsuwa",
+  "scene": "夜 十一時です。これから ねます。ねる 前に お母さんに 言います。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A home at night; a clock on the wall shows eleven. A boy in pajamas stands at the door of his bedroom, looking back at his mother, who is sitting on the sofa in the living room reading.",
+   "arrow": "the boy in pajamas at the bedroom door"
+  },
+  "options": [
+   "お母さん、おはよう。",
+   "お母さん、おやすみなさい。",
+   "お母さん、おかえりなさい。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "晚上十一点。现在要睡觉了。睡前对妈妈说。",
+    "question": "怎么说？",
+    "options": [
+     "妈妈，早上好。",
+     "妈妈，晚安。",
+     "妈妈，你回来啦。"
+    ]
+   },
+   "en": {
+    "scene": "It's eleven at night and you're going to bed. Before you go, you say to your mother:",
+    "question": "What do you say?",
+    "options": [
+     "Good morning, Mum.",
+     "Good night, Mum.",
+     "Welcome home, Mum."
+    ]
+   }
+  },
+  "why": {
+   "zh": "睡觉前说「おやすみなさい」。",
+   "en": "Before going to bed you say 「おやすみなさい」."
+  },
+  "wrong": [
+   {
+    "zh": "「おはよう」是早上的问候，时间不对。",
+    "en": "「おはよう」 is a morning greeting — wrong time."
+   },
+   null,
+   {
+    "zh": "「おかえりなさい」是对回家的人说的，妈妈一直在家，你也不是在迎接人。",
+    "en": "「おかえりなさい」 welcomes someone coming home; your mother isn't arriving."
+   }
+  ],
+  "traps": [
+   "timing"
+  ]
+ }
+]

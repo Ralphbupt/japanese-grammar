@@ -1,0 +1,1873 @@
+[
+  {
+    "id": "n3-ck-101",
+    "type": "kadai",
+    "scene": "会社で女の人と男の人が話しています。",
+    "question": "男の人はこのあとまず何をしますか。",
+    "lines": [
+      [
+        "F",
+        "中村さん、来週の歓迎会の準備、どうなってる？"
+      ],
+      [
+        "M",
+        "はい。お店はきのう予約しました。これから、参加する人たちにメールで時間と場所を知らせようと思っています。"
+      ],
+      [
+        "F",
+        "あ、それは鈴木さんがやってくれるって。さっきそう言ってたよ。"
+      ],
+      [
+        "M",
+        "そうですか。じゃあ、新人の二人に渡すプレゼントを買いに行ってきます。"
+      ],
+      [
+        "F",
+        "それは当日の朝でいいんじゃない？早く買っても、置いておく場所がないし。"
+      ],
+      [
+        "M",
+        "確かにそうですね。"
+      ],
+      [
+        "F",
+        "それより、お店に前の日までにお金を払わなきゃいけないでしょう？みんなから会費を集めるの、急いだほうがいいよ。"
+      ],
+      [
+        "M",
+        "そうでした。じゃあ、すぐ始めます。"
+      ]
+    ],
+    "options": [
+      "店を予約する",
+      "参加者に連絡する",
+      "プレゼントを買う",
+      "会費を集める"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": {
+        "scene": "公司里一个女人和一个男人在说话。",
+        "question": "男人接下来首先要做什么？",
+        "lines": [
+          "中村，下周欢迎会的准备怎么样了？",
+          "嗯，店昨天已经订好了。我正打算给参加的人发邮件，通知时间和地点。",
+          "啊，那个铃木说他来做。刚才他这么说的。",
+          "是吗。那我去买送给两个新人的礼物。",
+          "那个当天早上买就行了吧？早买了也没地方放。",
+          "确实是这样。",
+          "倒是得在前一天之前把钱付给店里吧？赶紧向大家收会费比较好。",
+          "对哦。那我马上开始。"
+        ],
+        "options": [
+          "预订店",
+          "联系参加者",
+          "买礼物",
+          "收会费"
+        ]
+      },
+      "en": {
+        "scene": "A woman and a man are talking at the office.",
+        "question": "What will the man do first?",
+        "lines": [
+          "Nakamura-san, how's the prep for next week's welcome party going?",
+          "The restaurant's booked — I did it yesterday. Now I'm going to email everyone who's coming with the time and place.",
+          "Oh, Suzuki-san said he'd do that. He told me just now.",
+          "I see. Then I'll go and buy the presents for the two new people.",
+          "Can't that wait till the morning of the party? Even if you buy them early, there's nowhere to keep them.",
+          "That's true.",
+          "More to the point, we have to pay the restaurant by the day before, right? You'd better hurry up and collect everyone's share.",
+          "Right. I'll start right away."
+        ],
+        "options": [
+          "Book the restaurant",
+          "Contact the people coming",
+          "Buy the presents",
+          "Collect the fees"
+        ]
+      }
+    },
+    "why": {
+      "zh": "女人说要在前一天之前付钱，「会費を集めるの、急いだほうがいい」，男人答「すぐ始めます」。",
+      "en": "She says the restaurant must be paid by the day before and tells him to hurry with collecting the fees; he says he'll start right away."
+    },
+    "wrong": [
+      {
+        "zh": "店昨天已经订好了。",
+        "en": "He booked the restaurant yesterday."
+      },
+      {
+        "zh": "通知时间地点由铃木负责。",
+        "en": "Suzuki-san is taking care of telling everyone."
+      },
+      {
+        "zh": "礼物「当日の朝でいい」，放到后面。",
+        "en": "The presents can wait until the morning of the party."
+      },
+      null
+    ],
+    "traps": [
+      "done-already",
+      "someone-else",
+      "later"
+    ]
+  },
+  {
+    "id": "n3-ck-102",
+    "type": "kadai",
+    "scene": "大学の事務室で女の留学生と事務の人が話しています。",
+    "question": "女の留学生はあした何を持って来なければなりませんか。",
+    "lines": [
+      [
+        "F",
+        "すみません、奨学金の申し込みのことで来たんですが。"
+      ],
+      [
+        "M",
+        "はい。書類はほとんどそろっていますね。あとは……写真と、成績証明書と、先生の推薦状ですね。"
+      ],
+      [
+        "F",
+        "写真は先週出しました。"
+      ],
+      [
+        "M",
+        "ああ、こちらにありますね。失礼しました。推薦状はどうなっていますか。"
+      ],
+      [
+        "F",
+        "先生が直接こちらに送ってくださるそうです。"
+      ],
+      [
+        "M",
+        "それなら大丈夫です。じゃあ、成績証明書だけ、あした持って来てください。"
+      ],
+      [
+        "F",
+        "分かりました。あの、パスポートのコピーは要りませんか。"
+      ],
+      [
+        "M",
+        "それは面接の日に見せていただければいいです。"
+      ]
+    ],
+    "options": [
+      "成績証明書",
+      "写真",
+      "推薦状",
+      "パスポートのコピー"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": {
+        "scene": "大学办公室里一个女留学生和办公室的工作人员在说话。",
+        "question": "女留学生明天必须带什么来？",
+        "lines": [
+          "不好意思，我是为奖学金申请的事来的。",
+          "好的。材料基本上齐了。还差……照片、成绩证明和老师的推荐信。",
+          "照片我上周交了。",
+          "啊，在这里呢。失礼了。推荐信怎么样了？",
+          "老师说会直接寄到这里。",
+          "那就没问题了。那么只把成绩证明明天带来吧。",
+          "明白了。那个，护照复印件不需要吗？",
+          "那个在面试那天给我们看一下就行。"
+        ],
+        "options": [
+          "成绩证明",
+          "照片",
+          "推荐信",
+          "护照复印件"
+        ]
+      },
+      "en": {
+        "scene": "A female international student and a member of staff are talking in the university office.",
+        "question": "What does the student have to bring tomorrow?",
+        "lines": [
+          "Excuse me, I've come about my scholarship application.",
+          "Right. Your papers are almost all here. What's left is… a photo, your transcript, and a letter of recommendation from your teacher.",
+          "I handed in the photo last week.",
+          "Ah, here it is. Sorry about that. What about the recommendation letter?",
+          "My teacher says she'll send it straight to you.",
+          "Then that's fine. So just bring your transcript tomorrow.",
+          "All right. Um, don't you need a copy of my passport?",
+          "You can just show it to us on the day of the interview."
+        ],
+        "options": [
+          "Her transcript",
+          "A photo",
+          "The recommendation letter",
+          "A copy of her passport"
+        ]
+      }
+    },
+    "why": {
+      "zh": "工作人员说「成績証明書だけ、あした持って来てください」。",
+      "en": "The staff member says 「成績証明書だけ、あした持って来てください」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "照片上周已经交了。",
+        "en": "She handed in the photo last week."
+      },
+      {
+        "zh": "推荐信由老师直接寄过去。",
+        "en": "Her teacher is sending the letter directly."
+      },
+      {
+        "zh": "护照在面试那天给他们看就行。",
+        "en": "The passport only needs to be shown on the interview day."
+      }
+    ],
+    "traps": [
+      "done-already",
+      "someone-else",
+      "later"
+    ]
+  },
+  {
+    "id": "n3-ck-103",
+    "type": "kadai",
+    "scene": "男の人と女の人が電話で話しています。",
+    "question": "二人はあした何時に駅で会いますか。",
+    "lines": [
+      [
+        "M",
+        "もしもし。あしたの映画、7時からだったよね。駅から映画館まで歩いて10分ぐらいだから、6時45分に駅でどう？"
+      ],
+      [
+        "F",
+        "うーん。チケットは予約してあるけど、機械で受け取るのに並ぶかもしれないよ。"
+      ],
+      [
+        "M",
+        "そっか。じゃあ、もう15分早くして、6時半にしようか。"
+      ],
+      [
+        "F",
+        "それがね、あした6時まで仕事なの。会社から駅まで40分かかるから、それより前には着けないんだ。"
+      ],
+      [
+        "M",
+        "そうか。じゃあ、チケットは僕が先に映画館へ行って受け取っておくよ。それから駅に戻る。"
+      ],
+      [
+        "F",
+        "ありがとう。じゃあ、私が着く時間に駅でね。"
+      ]
+    ],
+    "options": [
+      "6時",
+      "6時半",
+      "6時40分",
+      "6時45分"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": {
+        "scene": "一个男人和一个女人在打电话。",
+        "question": "两个人明天几点在车站见面？",
+        "lines": [
+          "喂。明天的电影是7点开始吧。从车站走到电影院大概10分钟，6点45分在车站怎么样？",
+          "嗯……票是预订了，不过在机器上取票可能要排队哦。",
+          "这样啊。那再提前15分钟，定6点半吧？",
+          "问题是，我明天工作到6点。从公司到车站要40分钟，所以在那之前到不了。",
+          "这样啊。那票我先去电影院取好。然后再回车站。",
+          "谢谢。那就在我到的时间车站见。"
+        ],
+        "options": [
+          "6点",
+          "6点半",
+          "6点40分",
+          "6点45分"
+        ]
+      },
+      "en": {
+        "scene": "A man and a woman are talking on the phone.",
+        "question": "What time will they meet at the station tomorrow?",
+        "lines": [
+          "Hi. Tomorrow's film starts at seven, right? It's about a ten-minute walk from the station to the cinema, so how about the station at 6:45?",
+          "Hmm. We've booked the tickets, but we might have to queue to collect them from the machine.",
+          "Right. Then shall we make it fifteen minutes earlier — 6:30?",
+          "The thing is, I'm working till six tomorrow. It takes forty minutes from the office to the station, so I can't get there any earlier than that.",
+          "I see. Then I'll go to the cinema first and pick up the tickets, and then come back to the station.",
+          "Thanks. So, at the station when I get there."
+        ],
+        "options": [
+          "6:00",
+          "6:30",
+          "6:40",
+          "6:45"
+        ]
+      }
+    },
+    "why": {
+      "zh": "女人6点下班，到车站要40分钟，所以6点40分到；票由男人先去取，两人在她到的时间见面。",
+      "en": "She finishes at six and needs forty minutes to the station, so she arrives at 6:40; he collects the tickets first, and they meet when she arrives."
+    },
+    "wrong": [
+      {
+        "zh": "6点是女人下班的时间，不是见面时间。",
+        "en": "Six is when she finishes work, not when they meet."
+      },
+      {
+        "zh": "6点半是男人的第二个提议，女人赶不上。",
+        "en": "6:30 was his second idea; she can't make it."
+      },
+      null,
+      {
+        "zh": "6点45分是最初的提议，后来为了取票改了；女人6点40分就到了。",
+        "en": "6:45 was the first idea; it changed because of the tickets, and she arrives at 6:40 anyway."
+      }
+    ],
+    "traps": [
+      "number",
+      "condition-conflict"
+    ]
+  },
+  {
+    "id": "n3-ck-104",
+    "type": "kadai",
+    "scene": "料理教室で男の人と先生が話しています。",
+    "question": "男の人は次の授業までに何を買いますか。",
+    "lines": [
+      [
+        "M",
+        "先生、次の授業はケーキを作るんですよね。何か用意するものはありますか。"
+      ],
+      [
+        "F",
+        "そうですね。卵や牛乳はこちらで用意しますから、持って来なくていいですよ。"
+      ],
+      [
+        "M",
+        "分かりました。エプロンはこの前買ったので、それを使います。"
+      ],
+      [
+        "F",
+        "ええ。それから、ケーキを入れて持って帰る箱が要るんですが……。"
+      ],
+      [
+        "M",
+        "箱ですか。教室では売っていないんですか。"
+      ],
+      [
+        "F",
+        "売っているんですが、すぐなくなっちゃうんです。駅前の百円ショップにありますから、自分で買っておいてください。"
+      ],
+      [
+        "M",
+        "はい。あの、ケーキの型は？"
+      ],
+      [
+        "F",
+        "それは教室のものを貸しますよ。"
+      ]
+    ],
+    "options": [
+      "卵と牛乳",
+      "持ち帰り用の箱",
+      "新しいエプロン",
+      "ケーキの型"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": {
+        "scene": "烹饪教室里一个男人和老师在说话。",
+        "question": "男人下次上课之前要买什么？",
+        "lines": [
+          "老师，下次课是做蛋糕吧。有什么要准备的吗？",
+          "嗯。鸡蛋和牛奶我们这边准备，不用带。",
+          "明白了。围裙我上次买了，就用那条。",
+          "好。还有，需要一个装蛋糕带回家的盒子……",
+          "盒子啊。教室里不卖吗？",
+          "卖是卖，可是很快就卖完了。车站前的百元店有，请自己先买好。",
+          "好的。那个，蛋糕模具呢？",
+          "那个借你教室的。"
+        ],
+        "options": [
+          "鸡蛋和牛奶",
+          "带回家用的盒子",
+          "新围裙",
+          "蛋糕模具"
+        ]
+      },
+      "en": {
+        "scene": "A man and the teacher are talking at a cooking class.",
+        "question": "What will the man buy before the next class?",
+        "lines": [
+          "We're making a cake next class, aren't we? Is there anything I should get ready?",
+          "Let's see. We'll provide the eggs and milk, so you don't need to bring those.",
+          "OK. I bought an apron last time, so I'll use that.",
+          "Yes. And you'll need a box to carry the cake home in…",
+          "A box? Don't you sell them here?",
+          "We do, but they sell out fast. The hundred-yen shop by the station has them, so please buy one yourself.",
+          "OK. Um, what about a cake tin?",
+          "We'll lend you one of ours."
+        ],
+        "options": [
+          "Eggs and milk",
+          "A box to take the cake home",
+          "A new apron",
+          "A cake tin"
+        ]
+      }
+    },
+    "why": {
+      "zh": "教室的盒子很快就卖完，老师让他「自分で買っておいてください」。",
+      "en": "The class's boxes sell out fast, so the teacher tells him to buy one himself."
+    },
+    "wrong": [
+      {
+        "zh": "鸡蛋和牛奶由教室准备。",
+        "en": "The class provides the eggs and milk."
+      },
+      null,
+      {
+        "zh": "围裙他上次已经买了。",
+        "en": "He already bought an apron last time."
+      },
+      {
+        "zh": "模具借用教室的。",
+        "en": "The class will lend him a tin."
+      }
+    ],
+    "traps": [
+      "someone-else",
+      "done-already"
+    ]
+  },
+  {
+    "id": "n3-ck-105",
+    "type": "kadai",
+    "scene": "市役所で男の人と係の人が話しています。",
+    "question": "男の人はこのあとまず何をしますか。",
+    "lines": [
+      [
+        "M",
+        "すみません、引っ越して来たので、住所の手続きをしたいんですが。"
+      ],
+      [
+        "F",
+        "はい。では、こちらの用紙に新しい住所とお名前を書いてください。"
+      ],
+      [
+        "M",
+        "あ、それ、さっきあちらの机で書いておきました。"
+      ],
+      [
+        "F",
+        "ありがとうございます。……あ、ここ、前の住所が書いてありませんね。"
+      ],
+      [
+        "M",
+        "あ、すみません。"
+      ],
+      [
+        "F",
+        "それから、ご本人だと分かるもの、何かお持ちですか。"
+      ],
+      [
+        "M",
+        "運転免許証ならあります。"
+      ],
+      [
+        "F",
+        "はい、それで大丈夫です。では、前の住所を書いていただいてから、3番の窓口に出してください。"
+      ]
+    ],
+    "options": [
+      "新しい住所を書く",
+      "3番の窓口に行く",
+      "前の住所を書く",
+      "免許証を取りに帰る"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": {
+        "scene": "市政府里一个男人和工作人员在说话。",
+        "question": "男人接下来首先要做什么？",
+        "lines": [
+          "不好意思，我刚搬来，想办理住址手续。",
+          "好的。请在这张表上写新住址和姓名。",
+          "啊，那个我刚才在那边的桌子上写好了。",
+          "谢谢。……啊，这里没写原来的住址呢。",
+          "啊，对不起。",
+          "另外，您带了能证明本人身份的东西吗？",
+          "驾照的话有。",
+          "好的，那个就可以。那么请先写上原来的住址，然后交到3号窗口。"
+        ],
+        "options": [
+          "写新住址",
+          "去3号窗口",
+          "写原来的住址",
+          "回去拿驾照"
+        ]
+      },
+      "en": {
+        "scene": "A man and a clerk are talking at the city office.",
+        "question": "What will the man do first?",
+        "lines": [
+          "Excuse me, I've just moved here and I'd like to register my address.",
+          "Certainly. Please write your new address and your name on this form.",
+          "Oh, I already filled that in at the desk over there.",
+          "Thank you. …Ah, you haven't written your previous address here.",
+          "Oh, sorry.",
+          "Also, do you have anything that shows who you are?",
+          "I have my driving licence.",
+          "Yes, that's fine. Then please add your previous address and hand it in at window 3."
+        ],
+        "options": [
+          "Write his new address",
+          "Go to window 3",
+          "Write his previous address",
+          "Go home for his licence"
+        ]
+      }
+    },
+    "why": {
+      "zh": "工作人员说「前の住所を書いていただいてから、3番の窓口に」，所以先补写原来的住址。",
+      "en": "The clerk says to add the previous address and then go to window 3, so filling that in comes first."
+    },
+    "wrong": [
+      {
+        "zh": "新住址刚才已经写好了。",
+        "en": "He already wrote his new address."
+      },
+      {
+        "zh": "去3号窗口是写完原来的住址之后。",
+        "en": "Window 3 comes after he adds the previous address."
+      },
+      null,
+      {
+        "zh": "驾照他带着，可以用。",
+        "en": "He has his licence with him, and it's accepted."
+      }
+    ],
+    "traps": [
+      "done-already",
+      "order"
+    ]
+  },
+  {
+    "id": "n3-ck-106",
+    "type": "kadai",
+    "scene": "大学で女の学生と男の学生が話しています。",
+    "question": "二人は何を買うことにしましたか。",
+    "lines": [
+      [
+        "F",
+        "ねえ、来週田中先輩の誕生日でしょ。みんなで何かあげない？"
+      ],
+      [
+        "M",
+        "いいね。先輩、コーヒー好きだから、コーヒーカップとかどう？"
+      ],
+      [
+        "F",
+        "それがさ、この前研究室で「カップが多すぎて、もう置くところがない」って言ってたよ。"
+      ],
+      [
+        "M",
+        "そっか。じゃあ、本は？好きな作家の新しいのが出たみたいだし。"
+      ],
+      [
+        "F",
+        "うーん、それ、もう予約したって聞いた。"
+      ],
+      [
+        "M",
+        "そうなんだ。じゃあ、コーヒー豆は？飲めばなくなるし、じゃまにならないよ。"
+      ],
+      [
+        "F",
+        "あ、それいいね。駅のそばにおいしい店あるし。花もつけようか。"
+      ],
+      [
+        "M",
+        "花は持って帰るのが大変だから、やめとこう。"
+      ],
+      [
+        "F",
+        "そうだね。"
+      ]
+    ],
+    "options": [
+      "コーヒーカップ",
+      "コーヒー豆",
+      "作家の新しい本",
+      "小さな花束"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": {
+        "scene": "大学里一个女学生和一个男学生在说话。",
+        "question": "两个人决定买什么？",
+        "lines": [
+          "哎，下周是田中前辈的生日吧。大家一起送点什么？",
+          "好啊。前辈喜欢咖啡，咖啡杯之类的怎么样？",
+          "问题是，前几天他在研究室说「杯子太多了，已经没地方放了」。",
+          "这样啊。那书呢？他喜欢的作家好像出新书了。",
+          "嗯……听说那本他已经预订了。",
+          "这样啊。那咖啡豆呢？喝了就没了，不占地方。",
+          "啊，这个好。车站旁边有家好喝的店。再加上花吧？",
+          "花带回去很麻烦，还是算了吧。",
+          "也是。"
+        ],
+        "options": [
+          "咖啡杯",
+          "咖啡豆",
+          "作家的新书",
+          "小花束"
+        ]
+      },
+      "en": {
+        "scene": "A female and a male student are talking at university.",
+        "question": "What did they decide to buy?",
+        "lines": [
+          "Hey, it's Tanaka-senpai's birthday next week, isn't it? Shall we all get him something?",
+          "Good idea. He loves coffee, so how about a coffee cup?",
+          "The thing is, the other day in the lab he said he has too many cups and nowhere left to put them.",
+          "Oh. Then a book? His favourite author seems to have a new one out.",
+          "Hmm, I heard he's already ordered it.",
+          "Really. Then coffee beans? They get used up, so they won't be in the way.",
+          "Oh, that's good. There's a great shop near the station. Shall we add some flowers too?",
+          "Flowers are a pain to carry home, so let's not.",
+          "True."
+        ],
+        "options": [
+          "A coffee cup",
+          "Coffee beans",
+          "The author's new book",
+          "A small bouquet"
+        ]
+      }
+    },
+    "why": {
+      "zh": "杯子和书都被否定，咖啡豆「それいいね」；花也决定「やめとこう」。",
+      "en": "The cup and the book are ruled out; she likes the coffee beans idea, and the flowers are dropped."
+    },
+    "wrong": [
+      {
+        "zh": "前辈说杯子太多，没地方放了。",
+        "en": "He has too many cups already."
+      },
+      null,
+      {
+        "zh": "那本书前辈已经预订了。",
+        "en": "He's already ordered the book."
+      },
+      {
+        "zh": "花带回去麻烦，「やめとこう」。",
+        "en": "Flowers are hard to carry home, so they drop them."
+      }
+    ],
+    "traps": [
+      "done-already",
+      "condition-conflict"
+    ]
+  },
+  {
+    "id": "n3-ck-107",
+    "type": "kadai",
+    "scene": "男の人と女の人が電話で話しています。",
+    "question": "男の人はまず何をしますか。",
+    "lines": [
+      [
+        "M",
+        "もしもし、山田です。今駅なんですが、事故で電車が止まってしまいまして。"
+      ],
+      [
+        "F",
+        "えっ。2時から青木商事さんと打ち合わせでしょう？間に合う？"
+      ],
+      [
+        "M",
+        "駅の人は30分ぐらいで動くと言っていますが……。"
+      ],
+      [
+        "F",
+        "待っていたら間に合わないかもしれないね。タクシーは？"
+      ],
+      [
+        "M",
+        "乗り場に長い列ができています。あの、資料を先に先方にメールで送っておきましょうか。"
+      ],
+      [
+        "F",
+        "資料はきのう私が送っておいたから大丈夫。それより、まず青木商事さんに、遅れるかもしれないって電話して。それからタクシーに並んで。"
+      ],
+      [
+        "M",
+        "分かりました。すぐかけます。"
+      ]
+    ],
+    "options": [
+      "タクシーに並ぶ",
+      "資料をメールで送る",
+      "電車が動くのを待つ",
+      "取引先に電話する"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": {
+        "scene": "一个男人和一个女人在打电话。",
+        "question": "男人首先要做什么？",
+        "lines": [
+          "喂，我是山田。我现在在车站，因为事故电车停了。",
+          "啊？两点要和青木商事碰头吧？来得及吗？",
+          "车站的人说大概30分钟就能恢复……",
+          "等的话可能就来不及了。出租车呢？",
+          "乘车点排着长队。那个，要不要先把资料用邮件发给对方？",
+          "资料我昨天已经发过了，没问题。倒是你先给青木商事打电话，说可能会迟到。然后再去排出租车。",
+          "明白了。我马上打。"
+        ],
+        "options": [
+          "排队等出租车",
+          "用邮件发资料",
+          "等电车恢复",
+          "给客户打电话"
+        ]
+      },
+      "en": {
+        "scene": "A man and a woman are talking on the phone.",
+        "question": "What will the man do first?",
+        "lines": [
+          "Hello, it's Yamada. I'm at the station, and the trains have stopped because of an accident.",
+          "What? You've got the meeting with Aoki Trading at two, haven't you? Will you make it?",
+          "The station staff say it'll be running again in about thirty minutes…",
+          "If you wait, you might not make it. What about a taxi?",
+          "There's a long queue at the taxi rank. Um, shall I email the documents to them first?",
+          "I sent the documents yesterday, so that's fine. More importantly, first call Aoki Trading and tell them you might be late. Then get in the taxi queue.",
+          "Understood. I'll call them now."
+        ],
+        "options": [
+          "Queue for a taxi",
+          "Email the documents",
+          "Wait for the trains to run",
+          "Call the client"
+        ]
+      }
+    },
+    "why": {
+      "zh": "女人说「まず青木商事さんに……電話して。それからタクシーに並んで」，男人答「すぐかけます」。",
+      "en": "She says first call Aoki Trading, then queue for a taxi; he says he'll call now."
+    },
+    "wrong": [
+      {
+        "zh": "排出租车是打完电话以后。",
+        "en": "Queuing for a taxi comes after the call."
+      },
+      {
+        "zh": "资料女人昨天已经发过了。",
+        "en": "She already sent the documents yesterday."
+      },
+      {
+        "zh": "等的话「間に合わないかもしれない」。",
+        "en": "Waiting might make him late."
+      },
+      null
+    ],
+    "traps": [
+      "order",
+      "done-already"
+    ]
+  },
+  {
+    "id": "n3-ck-108",
+    "type": "kadai",
+    "scene": "家で女の人と男の人が話しています。",
+    "question": "男の人はあした何時に家を出ますか。",
+    "lines": [
+      [
+        "F",
+        "あした、何時の飛行機だっけ？"
+      ],
+      [
+        "M",
+        "10時。国際線だから2時間前には空港に着きたいし、電車で1時間かかるから、7時に家を出るつもり。"
+      ],
+      [
+        "F",
+        "あ、さっき航空会社からメールが来てたよ。飛行機、1時間遅れるって。"
+      ],
+      [
+        "M",
+        "え、本当？じゃあ、8時に出ればいいね。"
+      ],
+      [
+        "F",
+        "電車だと乗り換えがあって大変でしょう？駅前から空港行きのバスが出てるよ。8時20分のバスに乗れば、乗り換えなしで40分で着くって。"
+      ],
+      [
+        "M",
+        "それ、いいね。じゃあ、そのバスにしよう。家からバス乗り場までは歩いて10分だね。"
+      ]
+    ],
+    "options": [
+      "7時",
+      "8時",
+      "8時10分",
+      "8時20分"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": {
+        "scene": "家里一个女人和一个男人在说话。",
+        "question": "男人明天几点出门？",
+        "lines": [
+          "明天是几点的飞机来着？",
+          "10点。国际航班，想提前2小时到机场，坐电车要1个小时，所以打算7点出门。",
+          "啊，刚才航空公司来邮件了。说飞机推迟1个小时。",
+          "啊，真的？那8点出门就行了。",
+          "坐电车要换乘很麻烦吧？车站前有去机场的大巴。坐8点20分的大巴，不用换乘，40分钟就到。",
+          "这个好。那就坐那班大巴。从家走到大巴乘车点要10分钟呢。"
+        ],
+        "options": [
+          "7点",
+          "8点",
+          "8点10分",
+          "8点20分"
+        ]
+      },
+      "en": {
+        "scene": "A woman and a man are talking at home.",
+        "question": "What time will the man leave home tomorrow?",
+        "lines": [
+          "What time's your flight tomorrow again?",
+          "Ten. It's international, so I want to be at the airport two hours early, and the train takes an hour — so I'm planning to leave at seven.",
+          "Oh, an email came from the airline just now. The flight's been delayed by an hour.",
+          "Really? Then I can leave at eight.",
+          "The train means changing, which is a hassle, right? There's an airport bus from in front of the station. If you take the 8:20 bus, it gets there in forty minutes with no changes.",
+          "That's good. I'll take that bus, then. It's a ten-minute walk from home to the bus stop."
+        ],
+        "options": [
+          "7:00",
+          "8:00",
+          "8:10",
+          "8:20"
+        ]
+      }
+    },
+    "why": {
+      "zh": "飞机推迟到11点，要在9点前到机场；8点20分的大巴40分钟到，正好9点；从家走到乘车点10分钟，所以8点10分出门。",
+      "en": "The flight is now at eleven, so he must be at the airport by nine; the 8:20 bus takes forty minutes and arrives at nine, and the stop is ten minutes' walk — so he leaves at 8:10."
+    },
+    "wrong": [
+      {
+        "zh": "7点是飞机推迟之前的计划。",
+        "en": "Seven was the plan before the flight was delayed."
+      },
+      {
+        "zh": "8点是坐电车时的计划，后来改坐大巴了。",
+        "en": "Eight was the plan for going by train; he switches to the bus."
+      },
+      null,
+      {
+        "zh": "8点20分是大巴发车的时间；从家走到乘车点还要10分钟。",
+        "en": "8:20 is when the bus leaves; he needs ten minutes to walk to the stop."
+      }
+    ],
+    "traps": [
+      "number",
+      "condition-conflict"
+    ]
+  },
+  {
+    "id": "n3-ck-109",
+    "type": "kadai",
+    "scene": "男の人が電話でアパートの管理会社の人と話しています。",
+    "question": "男の人は修理の前に何をしなければなりませんか。",
+    "lines": [
+      [
+        "M",
+        "もしもし、2階の森ですが、部屋のエアコンが動かなくなってしまって。"
+      ],
+      [
+        "F",
+        "そうですか。では、あしたの午前中に修理の者が伺いますが、ご在宅ですか。"
+      ],
+      [
+        "M",
+        "いえ、あしたは仕事なんです。鍵を管理人さんに預けておけばいいですか。"
+      ],
+      [
+        "F",
+        "申し訳ありません、それはできないんです。お部屋にどなたもいないときは入らない決まりになっておりまして。"
+      ],
+      [
+        "M",
+        "じゃあ、土曜日なら家にいます。"
+      ],
+      [
+        "F",
+        "では、土曜日の10時に伺います。それと、エアコンの下に物があると作業ができないので、どけておいていただけますか。"
+      ],
+      [
+        "M",
+        "あ、本棚があるんです。動かしておきます。"
+      ],
+      [
+        "F",
+        "お願いします。修理の者からも前の日にお電話しますので。"
+      ]
+    ],
+    "options": [
+      "管理人に鍵を渡す",
+      "エアコンの下を片付ける",
+      "修理の人に電話する",
+      "あしたの仕事を休む"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": {
+        "scene": "一个男人在和公寓管理公司的人打电话。",
+        "question": "男人在修理之前必须做什么？",
+        "lines": [
+          "喂，我是2楼的森，房间的空调不动了。",
+          "这样啊。那么明天上午修理人员会上门，您在家吗？",
+          "不，明天要上班。我把钥匙交给管理员可以吗？",
+          "非常抱歉，那样不行。规定房间里没人的时候不能进去。",
+          "那星期六我在家。",
+          "那就星期六10点上门。还有，空调下面有东西的话没法作业，能请您挪开吗？",
+          "啊，下面有个书架。我会挪开的。",
+          "拜托了。修理人员前一天也会给您打电话。"
+        ],
+        "options": [
+          "把钥匙交给管理员",
+          "收拾空调下面",
+          "给修理人员打电话",
+          "明天请假"
+        ]
+      },
+      "en": {
+        "scene": "A man is talking on the phone with someone from his apartment's management company.",
+        "question": "What does the man have to do before the repair?",
+        "lines": [
+          "Hello, this is Mori on the second floor. The air conditioner in my flat has stopped working.",
+          "I see. Our repair person can come tomorrow morning — will you be at home?",
+          "No, I'm working tomorrow. Can I just leave my key with the caretaker?",
+          "I'm sorry, we can't do that. Our rule is that we don't go in when nobody's home.",
+          "Then I'll be home on Saturday.",
+          "Then we'll come at ten on Saturday. Also, they can't work if there's anything under the air conditioner, so could you move it out of the way?",
+          "Oh, there's a bookcase there. I'll move it.",
+          "Thank you. The repair person will also call you the day before."
+        ],
+        "options": [
+          "Give his key to the caretaker",
+          "Clear the space under the air conditioner",
+          "Call the repair person",
+          "Take tomorrow off work"
+        ]
+      }
+    },
+    "why": {
+      "zh": "工作人员请他把空调下面的东西「どけておいて」，他答「本棚……動かしておきます」。",
+      "en": "She asks him to move whatever is under the air conditioner, and he says he'll move the bookcase."
+    },
+    "wrong": [
+      {
+        "zh": "没人在家时不能进去，交钥匙「できない」。",
+        "en": "Leaving the key isn't allowed — they won't enter when nobody's home."
+      },
+      null,
+      {
+        "zh": "是修理人员前一天给他打电话，不是他打。",
+        "en": "The repair person will call him, not the other way round."
+      },
+      {
+        "zh": "修理改到星期六，他在家，不用请假。",
+        "en": "The repair moved to Saturday when he's home, so he needn't take time off."
+      }
+    ],
+    "traps": [
+      "not-possible",
+      "someone-else"
+    ]
+  },
+  {
+    "id": "n3-ck-110",
+    "type": "kadai",
+    "scene": "高校で女の先輩と男の後輩が話しています。",
+    "question": "男の後輩はきょう何をしますか。",
+    "lines": [
+      [
+        "F",
+        "木村くん、文化祭の準備、きょうは何をする予定？"
+      ],
+      [
+        "M",
+        "駅前のお店にポスターを貼りに行こうと思ってました。"
+      ],
+      [
+        "F",
+        "あ、あれ、先にお店の人に聞かなきゃいけないんだって。今週中に先生が聞いてくれるから、貼るのは来週ね。"
+      ],
+      [
+        "M",
+        "分かりました。じゃあ、教室に机を運びましょうか。"
+      ],
+      [
+        "F",
+        "それは前の日にみんなでやることになったの。それより、入口の看板、まだ色を塗ってないでしょう？時間がかかるから、きょうから始めてくれる？"
+      ],
+      [
+        "M",
+        "はい。でも、ペンキ、足りるかな。"
+      ],
+      [
+        "F",
+        "足りなかったら、あした私が買って来るよ。"
+      ]
+    ],
+    "options": [
+      "看板に色を塗る",
+      "ポスターを貼る",
+      "机を運ぶ",
+      "ペンキを買いに行く"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": {
+        "scene": "高中里一个女前辈和一个男后辈在说话。",
+        "question": "男后辈今天要做什么？",
+        "lines": [
+          "木村，文化节的准备，今天打算做什么？",
+          "我本来想去车站前的店里贴海报。",
+          "啊，那个说是得先问店里的人。老师这周会帮我们去问，所以贴海报是下周。",
+          "明白了。那我把桌子搬到教室去？",
+          "那个定了前一天大家一起做。倒是门口的招牌还没上色吧？很花时间，你今天就开始做好吗？",
+          "好的。不过油漆够不够呢？",
+          "不够的话我明天去买。"
+        ],
+        "options": [
+          "给招牌上色",
+          "贴海报",
+          "搬桌子",
+          "去买油漆"
+        ]
+      },
+      "en": {
+        "scene": "A girl and a younger boy from her club are talking at their high school.",
+        "question": "What will the boy do today?",
+        "lines": [
+          "Kimura-kun, what are you planning to do for the school festival today?",
+          "I was thinking of going to put up posters in the shops by the station.",
+          "Oh, apparently we have to ask the shop owners first. The teacher's going to ask them this week, so we'll put them up next week.",
+          "OK. Then shall I carry the desks into the classroom?",
+          "We decided everyone will do that the day before. More importantly, the sign for the entrance hasn't been painted yet, has it? It'll take a while, so could you start on it today?",
+          "Sure. But I wonder if we have enough paint.",
+          "If it runs out, I'll buy some tomorrow."
+        ],
+        "options": [
+          "Paint the sign",
+          "Put up posters",
+          "Carry the desks",
+          "Go and buy paint"
+        ]
+      }
+    },
+    "why": {
+      "zh": "先辈请他「きょうから始めてくれる？」给招牌上色，他答「はい」。",
+      "en": "She asks him to start painting the sign today, and he agrees."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "要先问店家，贴海报是下周。",
+        "en": "The shops must be asked first; posters go up next week."
+      },
+      {
+        "zh": "搬桌子是前一天大家一起做。",
+        "en": "Everyone will move the desks the day before."
+      },
+      {
+        "zh": "油漆不够的话前辈明天去买。",
+        "en": "If paint runs short, she'll buy it tomorrow."
+      }
+    ],
+    "traps": [
+      "later",
+      "someone-else"
+    ]
+  },
+  {
+    "id": "n3-ck-111",
+    "type": "kadai",
+    "scene": "電気屋で女の人と店の人が話しています。",
+    "question": "女の人はこのあと何をしますか。",
+    "lines": [
+      [
+        "F",
+        "すみません、この掃除機、急に動かなくなってしまったんですが。"
+      ],
+      [
+        "M",
+        "拝見します。……お買いになってから、どのくらいですか。"
+      ],
+      [
+        "F",
+        "一年半ぐらいです。"
+      ],
+      [
+        "M",
+        "保証は二年ですので、無料で修理できます。ただ、保証書が必要なんですが、お持ちですか。"
+      ],
+      [
+        "F",
+        "あ、家に置いてきてしまいました。"
+      ],
+      [
+        "M",
+        "それがないと、修理代をいただくことになってしまうんですが……。"
+      ],
+      [
+        "F",
+        "家はすぐ近くなので、取って来ます。掃除機はここに置いていってもいいですか。"
+      ],
+      [
+        "M",
+        "はい、お預かりします。"
+      ],
+      [
+        "F",
+        "あの、新しいのを買ったほうが安いってことはないですよね。"
+      ],
+      [
+        "M",
+        "いえ、無料ですから、修理のほうがいいと思いますよ。"
+      ]
+    ],
+    "options": [
+      "新しい掃除機を買う",
+      "家に保証書を取りに帰る",
+      "修理代を払う",
+      "掃除機を持って帰る"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": {
+        "scene": "电器店里一个女人和店员在说话。",
+        "question": "女人接下来要做什么？",
+        "lines": [
+          "不好意思，这台吸尘器突然不动了。",
+          "我看一下。……您买了多久了？",
+          "一年半左右。",
+          "保修期是两年，所以可以免费修理。不过需要保修单，您带了吗？",
+          "啊，忘在家里了。",
+          "没有那个的话，就要收修理费了……",
+          "我家就在附近，我去拿。吸尘器可以放在这里吗？",
+          "好的，我们替您保管。",
+          "那个，不会是买台新的更便宜吧？",
+          "不会，因为是免费的，我觉得还是修比较好。"
+        ],
+        "options": [
+          "买新的吸尘器",
+          "回家拿保修单",
+          "付修理费",
+          "把吸尘器带回家"
+        ]
+      },
+      "en": {
+        "scene": "A woman and a shop assistant are talking in an electronics shop.",
+        "question": "What will the woman do next?",
+        "lines": [
+          "Excuse me, this vacuum cleaner suddenly stopped working.",
+          "Let me take a look. …How long ago did you buy it?",
+          "About a year and a half.",
+          "The guarantee is two years, so we can repair it free of charge. But we need the guarantee card — do you have it with you?",
+          "Oh, I've left it at home.",
+          "Without it, I'm afraid we'd have to charge for the repair…",
+          "I live just nearby, so I'll go and get it. Can I leave the vacuum here?",
+          "Yes, we'll look after it.",
+          "Um, it wouldn't be cheaper to just buy a new one, would it?",
+          "No, it's free, so I think repairing it is better."
+        ],
+        "options": [
+          "Buy a new vacuum cleaner",
+          "Go home for the guarantee card",
+          "Pay for the repair",
+          "Take the vacuum cleaner home"
+        ]
+      }
+    },
+    "why": {
+      "zh": "免费修理需要保修单，她说「家はすぐ近くなので、取って来ます」。",
+      "en": "Free repair needs the guarantee card, and she says she'll go home and get it."
+    },
+    "wrong": [
+      {
+        "zh": "店员说免费修理更好，她没有买新的。",
+        "en": "The assistant says the free repair is better; she doesn't buy a new one."
+      },
+      null,
+      {
+        "zh": "有保修单就免费，她回去拿，不付钱。",
+        "en": "With the card it's free, and she's going to fetch it."
+      },
+      {
+        "zh": "吸尘器放在店里保管。",
+        "en": "She leaves the vacuum at the shop."
+      }
+    ],
+    "traps": [
+      "condition-conflict"
+    ]
+  },
+  {
+    "id": "n3-ck-112",
+    "type": "kadai",
+    "scene": "男の人と女の人が話しています。",
+    "question": "男の人はあした何を持って行きますか。",
+    "lines": [
+      [
+        "F",
+        "あしたの引っ越しの手伝い、来てくれるんだよね。ありがとう。"
+      ],
+      [
+        "M",
+        "うん。何か持って行くものある？段ボールとか。"
+      ],
+      [
+        "F",
+        "段ボールは引っ越し屋さんが持って来てくれるから大丈夫。"
+      ],
+      [
+        "M",
+        "じゃ、ガムテープは？"
+      ],
+      [
+        "F",
+        "それはきのう買っちゃった。たくさんあるよ。"
+      ],
+      [
+        "M",
+        "そう。お昼ご飯は？お弁当買っていこうか。"
+      ],
+      [
+        "F",
+        "お昼は近くのそば屋さんでごちそうするよ。あ、そうだ。新しい部屋で棚を組み立てたいんだけど、うちに道具がなくて……。"
+      ],
+      [
+        "M",
+        "ああ、ドライバーなら持ってるよ。持っていくね。"
+      ]
+    ],
+    "options": [
+      "段ボール",
+      "ガムテープ",
+      "お弁当",
+      "ドライバー"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": {
+        "scene": "一个男人和一个女人在说话。",
+        "question": "男人明天带什么去？",
+        "lines": [
+          "明天你会来帮忙搬家吧。谢谢。",
+          "嗯。有什么要带去的吗？纸箱之类的。",
+          "纸箱搬家公司会带来，没问题。",
+          "那胶带呢？",
+          "那个我昨天买了。有很多。",
+          "这样啊。午饭呢？我买便当带过去？",
+          "午饭我请你在附近的荞麦面店吃。啊，对了。我想在新房间里组装架子，可家里没有工具……",
+          "啊，螺丝刀的话我有。我带过去。"
+        ],
+        "options": [
+          "纸箱",
+          "胶带",
+          "便当",
+          "螺丝刀"
+        ]
+      },
+      "en": {
+        "scene": "A man and a woman are talking.",
+        "question": "What will the man take with him tomorrow?",
+        "lines": [
+          "You're coming to help me move tomorrow, right? Thanks.",
+          "Sure. Is there anything I should bring? Cardboard boxes or something?",
+          "The moving company is bringing boxes, so that's fine.",
+          "Then packing tape?",
+          "I bought some yesterday. There's loads.",
+          "OK. What about lunch? Shall I pick up some bento?",
+          "I'll treat you to lunch at the soba place nearby. Oh, that's right — I want to put a shelf together in the new place, but I don't have any tools…",
+          "Oh, I've got a screwdriver. I'll bring it."
+        ],
+        "options": [
+          "Cardboard boxes",
+          "Packing tape",
+          "Bento lunches",
+          "A screwdriver"
+        ]
+      }
+    },
+    "why": {
+      "zh": "女人家里没有组装架子的工具，男人说「ドライバーなら持ってるよ。持っていくね」。",
+      "en": "She has no tools for the shelf, and he says he'll bring his screwdriver."
+    },
+    "wrong": [
+      {
+        "zh": "纸箱由搬家公司带来。",
+        "en": "The moving company is bringing boxes."
+      },
+      {
+        "zh": "胶带女人昨天买了很多。",
+        "en": "She bought plenty of tape yesterday."
+      },
+      {
+        "zh": "午饭女人请他在荞麦面店吃。",
+        "en": "She's treating him to lunch at the soba place."
+      },
+      null
+    ],
+    "traps": [
+      "someone-else",
+      "done-already"
+    ]
+  },
+  {
+    "id": "n3-ck-113",
+    "type": "kadai",
+    "scene": "会社で男の人と女の人が話しています。",
+    "question": "女の人はまず何をしますか。",
+    "lines": [
+      [
+        "M",
+        "来月の大阪出張の件だけど、新幹線の切符はもう取った？"
+      ],
+      [
+        "F",
+        "いえ、まだです。日にちが決まってからと思っていました。"
+      ],
+      [
+        "M",
+        "日にちは決まったよ。15日と16日。"
+      ],
+      [
+        "F",
+        "分かりました。じゃあ、すぐ新幹線を……。"
+      ],
+      [
+        "M",
+        "いや、新幹線は一か月前にならないと予約できないから、まだ早いよ。それよりホテルが先だね。その週は大阪で大きなイベントがあって、すぐいっぱいになるらしいから。"
+      ],
+      [
+        "F",
+        "分かりました。課長に出張の申請書を出すのは……。"
+      ],
+      [
+        "M",
+        "それはホテルが決まってからでいいよ。"
+      ]
+    ],
+    "options": [
+      "ホテルを予約する",
+      "新幹線の切符を取る",
+      "日にちを決める",
+      "申請書を出す"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": {
+        "scene": "公司里一个男人和一个女人在说话。",
+        "question": "女人首先要做什么？",
+        "lines": [
+          "下个月去大阪出差的事，新干线的票已经买了吗？",
+          "没有，还没有。我想等日期定下来再买。",
+          "日期定了。15号和16号。",
+          "明白了。那我马上订新干线……",
+          "不，新干线不到一个月前订不了，现在还早。倒是酒店要先订。那一周大阪有大型活动，听说很快就会满。",
+          "明白了。向科长交出差申请书的事……",
+          "那个等酒店定了再交就行。"
+        ],
+        "options": [
+          "预订酒店",
+          "买新干线的票",
+          "定日期",
+          "交申请书"
+        ]
+      },
+      "en": {
+        "scene": "A man and a woman are talking at the office.",
+        "question": "What will the woman do first?",
+        "lines": [
+          "About next month's trip to Osaka — have you got the bullet train tickets yet?",
+          "No, not yet. I was waiting until the dates were decided.",
+          "They're decided now — the fifteenth and sixteenth.",
+          "OK. Then I'll book the train right—",
+          "No, you can't book the train until a month before, so it's too early. The hotel comes first. There's a big event in Osaka that week, and apparently everywhere fills up fast.",
+          "Got it. And handing the trip request form to the section chief…?",
+          "That can wait until the hotel's sorted."
+        ],
+        "options": [
+          "Book a hotel",
+          "Get the bullet train tickets",
+          "Decide the dates",
+          "Hand in the request form"
+        ]
+      }
+    },
+    "why": {
+      "zh": "男人说「ホテルが先だね」，因为那周大阪有活动，酒店很快会满。",
+      "en": "He says the hotel comes first because an event that week will fill everything up."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "新干线要一个月前才能订，「まだ早い」。",
+        "en": "The train can't be booked until a month before."
+      },
+      {
+        "zh": "日期已经定了。",
+        "en": "The dates are already decided."
+      },
+      {
+        "zh": "申请书「ホテルが決まってからでいい」。",
+        "en": "The form can wait until the hotel is booked."
+      }
+    ],
+    "traps": [
+      "not-possible",
+      "done-already",
+      "later"
+    ]
+  },
+  {
+    "id": "n3-ck-114",
+    "type": "kadai",
+    "scene": "スポーツクラブの受付で男の人と受付の人が話しています。",
+    "question": "男の人はこのあとまず何をしますか。",
+    "lines": [
+      [
+        "M",
+        "すみません、入会したいんですが。"
+      ],
+      [
+        "F",
+        "ありがとうございます。初めての方には、まず体験レッスンを受けていただいているんですが……。"
+      ],
+      [
+        "M",
+        "あ、それは先週受けました。"
+      ],
+      [
+        "F",
+        "失礼しました。では、こちらの申込書にご記入ください。それから、会員カード用の写真を撮りますね。"
+      ],
+      [
+        "M",
+        "はい。お金はきょう払うんですか。"
+      ],
+      [
+        "F",
+        "いいえ、毎月銀行の口座から払っていただくことになりますので、その手続きは通帳とはんこを持って来ていただいたときにします。きょうは申込書と写真だけで大丈夫です。"
+      ],
+      [
+        "M",
+        "そうですか。じゃあ、書きます。"
+      ],
+      [
+        "F",
+        "書き終わったら写真を撮りますので、声をかけてください。"
+      ]
+    ],
+    "options": [
+      "体験レッスンを受ける",
+      "お金を払う",
+      "申込書を書く",
+      "写真を撮る"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": {
+        "scene": "体育俱乐部的前台，一个男人和前台工作人员在说话。",
+        "question": "男人接下来首先要做什么？",
+        "lines": [
+          "不好意思，我想入会。",
+          "谢谢您。第一次来的客人，我们都请先上一次体验课……",
+          "啊，那个我上周上过了。",
+          "失礼了。那么请填写这张申请表。然后给您拍会员卡用的照片。",
+          "好的。钱是今天付吗？",
+          "不，每月从银行账户扣款，所以那个手续等您带存折和印章来的时候再办。今天只要申请表和照片就可以了。",
+          "这样啊。那我来填。",
+          "填完了要拍照，请叫我一声。"
+        ],
+        "options": [
+          "上体验课",
+          "付钱",
+          "填申请表",
+          "拍照"
+        ]
+      },
+      "en": {
+        "scene": "A man and a receptionist are talking at the front desk of a sports club.",
+        "question": "What will the man do first?",
+        "lines": [
+          "Excuse me, I'd like to join.",
+          "Thank you. We ask new members to take a trial lesson first…",
+          "Oh, I took one last week.",
+          "My apologies. Then please fill in this application form. After that we'll take a photo for your membership card.",
+          "OK. Do I pay today?",
+          "No, it's paid from your bank account each month, so we'll set that up when you bring your bankbook and seal. Today, just the form and the photo.",
+          "I see. I'll fill it in, then.",
+          "When you've finished, let me know and we'll take the photo."
+        ],
+        "options": [
+          "Take a trial lesson",
+          "Pay",
+          "Fill in the application form",
+          "Have his photo taken"
+        ]
+      }
+    },
+    "why": {
+      "zh": "体验课已经上过，钱以后办手续；店员说「書き終わったら写真を撮ります」，所以先填申请表。",
+      "en": "He's done the trial, payment is set up later, and the photo is taken after he finishes the form — so the form comes first."
+    },
+    "wrong": [
+      {
+        "zh": "体验课上周已经上过了。",
+        "en": "He took the trial lesson last week."
+      },
+      {
+        "zh": "钱从银行账户扣，今天不付。",
+        "en": "Payment comes from his bank account later, not today."
+      },
+      null,
+      {
+        "zh": "拍照是填完申请表之后。",
+        "en": "The photo comes after the form."
+      }
+    ],
+    "traps": [
+      "done-already",
+      "order",
+      "later"
+    ]
+  },
+  {
+    "id": "n3-ck-115",
+    "type": "kadai",
+    "scene": "女の学生と男の学生が話しています。",
+    "question": "二人は何時に駅で会いますか。",
+    "lines": [
+      [
+        "M",
+        "土曜日の花火大会、何時からだっけ？"
+      ],
+      [
+        "F",
+        "7時半から。いい場所で見たいなら、1時間前には会場に着いてないとだめだって。"
+      ],
+      [
+        "M",
+        "じゃあ、6時半に会場か。駅から会場までは？"
+      ],
+      [
+        "F",
+        "歩いて20分ぐらいだけど、当日は人が多いから、30分は見ておいたほうがいいって姉が言ってた。"
+      ],
+      [
+        "M",
+        "じゃあ、駅に6時だね。"
+      ],
+      [
+        "F",
+        "あ、でもね、姉が言うには、駅の近くの橋の上からでもよく見えるんだって。そこなら駅から10分だし、早く行って場所を取らなくても大丈夫みたい。"
+      ],
+      [
+        "M",
+        "え、そうなの？じゃあ、そっちにしよう。始まる20分前に駅で会えば十分だね。"
+      ],
+      [
+        "F",
+        "うん、そうしよう。"
+      ]
+    ],
+    "options": [
+      "6時",
+      "6時半",
+      "7時10分",
+      "7時半"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": {
+        "scene": "一个女学生和一个男学生在说话。",
+        "question": "两个人几点在车站见面？",
+        "lines": [
+          "星期六的烟花大会是几点开始来着？",
+          "7点半开始。听说想在好位置看的话，得提前1个小时到会场。",
+          "那就是6点半到会场。从车站到会场呢？",
+          "走路20分钟左右，不过我姐姐说当天人多，最好留出30分钟。",
+          "那就是6点在车站。",
+          "啊，不过我姐姐说，从车站附近的桥上也能看得很清楚。那里离车站10分钟，好像不用早去占位置。",
+          "啊，是吗？那就去那边吧。开始前20分钟在车站见就足够了。",
+          "嗯，就这么定了。"
+        ],
+        "options": [
+          "6点",
+          "6点半",
+          "7点10分",
+          "7点半"
+        ]
+      },
+      "en": {
+        "scene": "A female and a male student are talking.",
+        "question": "What time will they meet at the station?",
+        "lines": [
+          "What time does Saturday's fireworks display start again?",
+          "Seven thirty. Apparently if you want a good spot, you have to be at the site an hour early.",
+          "So the site by 6:30. How far is it from the station?",
+          "About twenty minutes on foot, but my sister said it's crowded on the day, so we should allow thirty.",
+          "Then six at the station.",
+          "Oh, but my sister says you can see it well from the bridge near the station too. It's ten minutes from the station, and you don't need to go early to get a spot.",
+          "Really? Then let's go there. Meeting at the station twenty minutes before it starts should be plenty.",
+          "Yeah, let's do that."
+        ],
+        "options": [
+          "6:00",
+          "6:30",
+          "7:10",
+          "7:30"
+        ]
+      }
+    },
+    "why": {
+      "zh": "改成在车站附近的桥上看，男人说「始まる20分前に駅で会えば十分」，7点半开始，所以7点10分见面。",
+      "en": "They switch to watching from the bridge, and he says meeting twenty minutes before the 7:30 start is enough — 7:10."
+    },
+    "wrong": [
+      {
+        "zh": "6点是去会场看时的计划，后来改去桥上了。",
+        "en": "Six was the plan for watching at the site; they switch to the bridge."
+      },
+      {
+        "zh": "6点半是想在会场占好位置时要到的时间。",
+        "en": "6:30 was when they'd have needed to be at the site."
+      },
+      null,
+      {
+        "zh": "7点半是烟花开始的时间。",
+        "en": "7:30 is when the fireworks start."
+      }
+    ],
+    "traps": [
+      "number",
+      "condition-conflict"
+    ]
+  },
+  {
+    "id": "n3-ck-116",
+    "type": "kadai",
+    "scene": "大学で先生と男の学生が話しています。",
+    "question": "男の学生はまず何をしなければなりませんか。",
+    "lines": [
+      [
+        "F",
+        "吉田くん、レポート読みましたよ。内容はよく調べてあって、いいと思います。"
+      ],
+      [
+        "M",
+        "ありがとうございます。字数が少し多すぎたでしょうか。"
+      ],
+      [
+        "F",
+        "それは気にしなくていいです。ただ、使った本や資料の名前が一つも書いてないでしょう。それがないと、受け取れないんです。"
+      ],
+      [
+        "M",
+        "すみません。すぐ書きます。"
+      ],
+      [
+        "F",
+        "それから、タイトルも内容と少し合っていない気がしますね。"
+      ],
+      [
+        "M",
+        "タイトルも変えたほうがいいですか。"
+      ],
+      [
+        "F",
+        "そうですね。でも、それは時間があるときでいいです。まずは本の名前を書いて、金曜日までにもう一度出してください。"
+      ]
+    ],
+    "options": [
+      "字数を減らす",
+      "タイトルを変える",
+      "内容を調べ直す",
+      "参考にした本を書く"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": {
+        "scene": "大学里老师和一个男学生在说话。",
+        "question": "男学生首先必须做什么？",
+        "lines": [
+          "吉田，你的报告我看了。内容调查得很仔细，我觉得不错。",
+          "谢谢。字数是不是有点太多了？",
+          "那个不用在意。不过，用过的书和资料的名字一个都没写吧。没有那个就不能收。",
+          "对不起。我马上写。",
+          "还有，我觉得标题和内容也有点不太相符。",
+          "标题也改一下比较好吗？",
+          "是啊。不过那个有时间的时候再改就行。先把书名写上，星期五之前再交一次。"
+        ],
+        "options": [
+          "减少字数",
+          "改标题",
+          "重新调查内容",
+          "写上参考的书"
+        ]
+      },
+      "en": {
+        "scene": "A teacher and a male student are talking at university.",
+        "question": "What does the student have to do first?",
+        "lines": [
+          "Yoshida-kun, I've read your report. You've researched it well — the content is good.",
+          "Thank you. Was it a bit too long?",
+          "Don't worry about that. But you haven't listed a single book or source you used, have you? Without that, I can't accept it.",
+          "I'm sorry. I'll add them right away.",
+          "Also, I feel the title doesn't quite match the content.",
+          "Should I change the title too?",
+          "Yes. But that can wait until you have time. First add the book titles, and hand it in again by Friday."
+        ],
+        "options": [
+          "Cut the length",
+          "Change the title",
+          "Redo the research",
+          "List the books he used"
+        ]
+      }
+    },
+    "why": {
+      "zh": "老师说没写参考的书就「受け取れない」，最后也说「まずは本の名前を書いて」。",
+      "en": "Without the sources the report can't be accepted, and she ends with 「まずは本の名前を書いて」."
+    },
+    "wrong": [
+      {
+        "zh": "字数「気にしなくていい」。",
+        "en": "She says not to worry about the length."
+      },
+      {
+        "zh": "标题「時間があるときでいい」，不是首先要做的。",
+        "en": "The title can wait until he has time."
+      },
+      {
+        "zh": "内容老师说调查得很好。",
+        "en": "She praised the research."
+      },
+      null
+    ],
+    "traps": [
+      "later",
+      "order"
+    ]
+  },
+  {
+    "id": "n3-ck-117",
+    "type": "kadai",
+    "scene": "家で父親と娘が話しています。",
+    "question": "二人は日曜日に何をしますか。",
+    "lines": [
+      [
+        "M",
+        "日曜日、山に行く予定だったけど、天気予報だと雨らしいよ。"
+      ],
+      [
+        "F",
+        "えー。じゃあ、映画は？見たいのがあるんだ。"
+      ],
+      [
+        "M",
+        "あれはお母さんも見たいって言ってたから、お母さんが出張から帰って来る来週にしよう。"
+      ],
+      [
+        "F",
+        "そっか。じゃあ、水族館は？雨でも大丈夫でしょ。"
+      ],
+      [
+        "M",
+        "いいけど、日曜日はすごく混むよ。"
+      ],
+      [
+        "F",
+        "混んでてもいいよ。行きたい。"
+      ],
+      [
+        "M",
+        "分かった。じゃ、山は天気のいい日にまた行こう。"
+      ]
+    ],
+    "options": [
+      "水族館に行く",
+      "映画を見に行く",
+      "山に登る",
+      "お母さんと出かける"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": {
+        "scene": "家里父亲和女儿在说话。",
+        "question": "两个人星期天做什么？",
+        "lines": [
+          "星期天本来打算去爬山，可天气预报说好像要下雨。",
+          "啊……那看电影呢？我有想看的。",
+          "那部妈妈也说想看，等妈妈出差回来的下周再看吧。",
+          "这样啊。那水族馆呢？下雨也没关系吧。",
+          "可以是可以，不过星期天人特别多哦。",
+          "人多也没关系。我想去。",
+          "好吧。那山就等天气好的时候再去。"
+        ],
+        "options": [
+          "去水族馆",
+          "去看电影",
+          "爬山",
+          "和妈妈出去"
+        ]
+      },
+      "en": {
+        "scene": "A father and his daughter are talking at home.",
+        "question": "What will they do on Sunday?",
+        "lines": [
+          "We were going to go to the mountains on Sunday, but the forecast says rain.",
+          "Oh no. Then what about a film? There's one I want to see.",
+          "Mum said she wants to see that one too, so let's wait till next week when she's back from her business trip.",
+          "OK. Then the aquarium? Rain doesn't matter there.",
+          "Fine, but it'll be really crowded on a Sunday.",
+          "I don't mind the crowds. I want to go.",
+          "All right. We'll go to the mountains another day when the weather's nice."
+        ],
+        "options": [
+          "Go to the aquarium",
+          "Go to see a film",
+          "Go up a mountain",
+          "Go out with Mum"
+        ]
+      }
+    },
+    "why": {
+      "zh": "女儿说人多也想去水族馆，父亲答「分かった」。",
+      "en": "She wants the aquarium even if it's crowded, and her father agrees."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "电影等妈妈回来，下周再看。",
+        "en": "The film waits until Mum is back next week."
+      },
+      {
+        "zh": "星期天下雨，爬山改到天气好的日子。",
+        "en": "It will rain, so the mountains wait for a fine day."
+      },
+      {
+        "zh": "妈妈出差，下周才回来。",
+        "en": "Mum is away on business until next week."
+      }
+    ],
+    "traps": [
+      "later",
+      "condition-conflict"
+    ]
+  }
+]

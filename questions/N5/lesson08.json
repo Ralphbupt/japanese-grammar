@@ -1,0 +1,591 @@
+[
+  {
+    "id": "n5-l08-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson08#1"
+    ],
+    "difficulty": 2,
+    "stem": "きのう 見た えいがは あまり（　）。",
+    "options": [
+      "おもしろくなかったです",
+      "おもしろいです",
+      "おもしろくないです",
+      "おもしろかったです"
+    ],
+    "okj": [
+      "面白くなかったです",
+      "面白いです",
+      "面白くないです",
+      "面白かったです"
+    ],
+    "answer": 0,
+    "full": "きのう 見た えいがは あまり おもしろくなかったです。",
+    "kj": "昨日見た映画はあまり面白くなかったです。",
+    "tr": {
+      "zh": "昨天看的电影不太有意思。",
+      "en": "The movie I saw yesterday wasn't very interesting."
+    },
+    "why": {
+      "zh": "「あまり」后面要接否定；い形容词的过去否定是「い→くなかった」：面白くなかったです。",
+      "en": "「あまり」 needs a negative, and an い-adjective's past negative is い → くなかった: 面白くなかったです."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「あまり」后面要接否定；而且是昨天看的电影，要用过去式。",
+        "en": "「あまり」 needs a negative, and a movie seen yesterday needs the past."
+      },
+      {
+        "zh": "「面白くないです」是现在形，说昨天看的电影要用过去「面白くなかったです」。",
+        "en": "「面白くないです」 is non-past; a movie seen yesterday needs 「面白くなかったです」."
+      },
+      {
+        "zh": "形式对，但「あまり」后面要接否定。",
+        "en": "The form is fine, but 「あまり」 needs a negative."
+      }
+    ]
+  },
+  {
+    "id": "n5-l08-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson08#1"
+    ],
+    "difficulty": 1,
+    "stem": "きのうは 天気が（　）から、こうえんを さんぽしました。",
+    "options": [
+      "よかった",
+      "いい",
+      "よくて",
+      "よくなかった"
+    ],
+    "answer": 0,
+    "full": "きのうは 天気が よかったから、こうえんを さんぽしました。",
+    "kj": "昨日は天気がよかったから、公園を散歩しました。",
+    "tr": {
+      "zh": "昨天天气好，所以去公园散步了。",
+      "en": "The weather was nice yesterday, so I took a walk in the park."
+    },
+    "why": {
+      "zh": "「いい」变形时词干变成「よ」，过去形是「よかった」。",
+      "en": "「いい」 conjugates from 「よ-」: the past is 「よかった」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「いい」是现在形，说的是「きのう」的天气，要用过去「よかった」。",
+        "en": "「いい」 is non-past; yesterday's weather needs the past 「よかった」."
+      },
+      {
+        "zh": "て形「よくて」后面不能接「から」。",
+        "en": "The て-form 「よくて」 can't take 「から」."
+      },
+      {
+        "zh": "「天气不好」所以去公园散步，前后因果说不通。",
+        "en": "\"The weather was bad, so I went for a walk in the park\" doesn't make sense."
+      }
+    ]
+  },
+  {
+    "id": "n5-l08-003",
+    "type": "narabe",
+    "refs": [
+      "lesson08#1"
+    ],
+    "difficulty": 2,
+    "stem": "A「駅の ちかくの [★] [_] [_] [_] しって いますか。」\nB「ええ、ラーメンやが ありますよ。」",
+    "options": [
+      "安くて",
+      "を",
+      "おいしい",
+      "レストラン"
+    ],
+    "order": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "full": "A「駅の ちかくの 安くて おいしい レストランを しって いますか。」 B「ええ、ラーメンやが ありますよ。」",
+    "kj": "A「駅の近くの安くておいしいレストランを知っていますか。」\nB「ええ、ラーメン屋がありますよ。」",
+    "tr": {
+      "zh": "A：你知道车站附近又便宜又好吃的餐厅吗？ B：嗯，有一家拉面店。",
+      "en": "A: Do you know a cheap and tasty restaurant near the station? B: Yes, there's a ramen shop."
+    },
+    "why": {
+      "zh": "い形容词的て形「い→くて」用来连接两个形容词：安くて おいしい，再修饰「レストラン」，最后接「を」。★ 是第一格「安くて」。",
+      "en": "The い-adjective て-form (い → くて) links two adjectives: 安くて おいしい, which modify 「レストラン」, then 「を」. The ★ is 「安くて」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l08-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson08#2"
+    ],
+    "difficulty": 1,
+    "stem": "あの 人は とても（　）かしゅです。",
+    "options": [
+      "ゆうめいな",
+      "ゆうめいの",
+      "ゆうめいに",
+      "ゆうめいだ"
+    ],
+    "okj": [
+      "有名な",
+      "有名の",
+      "有名に",
+      "有名だ"
+    ],
+    "answer": 0,
+    "full": "あの 人は とても ゆうめいな かしゅです。",
+    "kj": "あの人はとても有名な歌手です。",
+    "tr": {
+      "zh": "那个人是很有名的歌手。",
+      "en": "That person is a very famous singer."
+    },
+    "why": {
+      "zh": "「有名」是な形容词，修饰名词要加「な」：有名な 歌手。",
+      "en": "「有名」 is a な-adjective; before a noun it takes 「な」: 有名な 歌手."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「の」用于名词修饰名词，な形容词修饰名词用「な」。",
+        "en": "「の」 links nouns; a な-adjective takes 「な」."
+      },
+      {
+        "zh": "「有名に」是副词形，用来修饰动词（有名に なる），不能修饰名词「歌手」。",
+        "en": "「有名に」 is the adverb form (有名に なる); it can't describe the noun 「歌手」."
+      },
+      {
+        "zh": "「だ」是句尾，不能直接修饰名词。",
+        "en": "「だ」 ends a sentence; it can't modify a noun."
+      }
+    ]
+  },
+  {
+    "id": "n5-l08-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson08#2"
+    ],
+    "difficulty": 2,
+    "stem": "今は きれいですが、この へやは 前は あまり（　）。",
+    "options": [
+      "きれいじゃなかったです",
+      "きれいじゃないです",
+      "きれいです",
+      "きれいでした"
+    ],
+    "answer": 0,
+    "full": "今は きれいですが、この へやは 前は あまり きれいじゃなかったです。",
+    "kj": "今はきれいですが、この部屋は前はあまりきれいじゃなかったです。",
+    "tr": {
+      "zh": "现在很干净，但这个房间以前不太干净。",
+      "en": "It's clean now, but this room wasn't very clean before."
+    },
+    "why": {
+      "zh": "「きれい」是な形容词，过去否定是「じゃなかった」；「あまり」也要求否定。",
+      "en": "「きれい」 is a な-adjective, so the past negative is 「じゃなかった」; 「あまり」 also needs a negative."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「きれいじゃないです」是现在形，句子说的是「前は」（以前），要用过去式。",
+        "en": "「きれいじゃないです」 is non-past; 「前は」 (before) needs the past."
+      },
+      {
+        "zh": "「あまり」后面要接否定，而且「前は」要用过去式。",
+        "en": "「あまり」 needs a negative, and 「前は」 needs the past."
+      },
+      {
+        "zh": "「あまり」后面要接否定；而且「が」表示转折，前后要对比。",
+        "en": "「あまり」 needs a negative, and 「が」 sets up a contrast with \"clean now\"."
+      }
+    ]
+  },
+  {
+    "id": "n5-l08-006",
+    "type": "narabe",
+    "refs": [
+      "lesson08#2"
+    ],
+    "difficulty": 2,
+    "stem": "A「ここは [_] [★] [_] [_] ね。」\nB「ええ、わたしも この まちが すきです。」",
+    "options": [
+      "です",
+      "まち",
+      "きれいな",
+      "しずかで"
+    ],
+    "okj": [
+      null,
+      "町",
+      null,
+      "静かで"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "A「ここは しずかで きれいな まちですね。」 B「ええ、わたしも この まちが すきです。」",
+    "kj": "A「ここは静かできれいな町ですね。」\nB「ええ、私もこの町が好きです。」",
+    "tr": {
+      "zh": "A：这里是个安静又漂亮的小镇呢。 B：是啊，我也喜欢这个小镇。",
+      "en": "A: This is a quiet, pretty town, isn't it? B: Yes, I like this town too."
+    },
+    "why": {
+      "zh": "な形容词的て形是「で」，用来连接：静かで きれいな 町 です。★ 是第二格「きれいな」。",
+      "en": "A な-adjective's て-form is 「で」: 静かで きれいな 町 です. The ★ is 「きれいな」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l08-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson08#3"
+    ],
+    "difficulty": 1,
+    "stem": "とうきょうは おおさか（　）大きいです。",
+    "options": [
+      "より",
+      "ほど",
+      "の ほう",
+      "まで"
+    ],
+    "answer": 0,
+    "full": "とうきょうは おおさかより 大きいです。",
+    "kj": "東京は大阪より大きいです。",
+    "tr": {
+      "zh": "东京比大阪大。",
+      "en": "Tokyo is bigger than Osaka."
+    },
+    "why": {
+      "zh": "“A 比 B 更……”是「AはBより〜」。",
+      "en": "\"A is more … than B\" is 「AはBより〜」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ほど」后面必须接否定（大阪ほど大きくない），这里是肯定。",
+        "en": "「ほど」 must be followed by a negative (大阪ほど大きくない)."
+      },
+      {
+        "zh": "「のほう」后面要接「が」，而且指的是被选中的一方，不是比较的对象。",
+        "en": "「のほう」 needs 「が」 and marks the chosen side, not the thing compared against."
+      },
+      {
+        "zh": "「まで」表示范围（到……为止），不表示比较。",
+        "en": "「まで」 marks a limit (\"until\"), not a comparison."
+      }
+    ]
+  },
+  {
+    "id": "n5-l08-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson08#3"
+    ],
+    "difficulty": 2,
+    "stem": "A「ねこと いぬと、どちらが すきですか。」\nB「ねこ（　）すきです。」",
+    "options": [
+      "の ほうが",
+      "より",
+      "も",
+      "ほど"
+    ],
+    "answer": 0,
+    "full": "A「ねこと いぬと、どちらが すきですか。」 B「ねこの ほうが すきです。」",
+    "kj": "A「猫と犬と、どちらが好きですか。」\nB「猫のほうが好きです。」",
+    "tr": {
+      "zh": "A：猫和狗你更喜欢哪个？ B：更喜欢猫。",
+      "en": "A: Which do you like better, cats or dogs? B: I prefer cats."
+    },
+    "why": {
+      "zh": "回答「どちらが」的二选一问题，用「〜のほうが」指出选中的一方。",
+      "en": "A two-way 「どちらが」 question is answered with 「〜のほうが」, marking the chosen one."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「猫より好き」是“比猫更喜欢（别的）”，意思反了。",
+        "en": "「猫より好き」 means \"like (something) more than cats\" — the opposite."
+      },
+      {
+        "zh": "「猫も好きです」是“猫也喜欢”，没有回答二选一的「どちら」。",
+        "en": "「猫も好きです」 (I like cats too) doesn't answer the either-or 「どちら」 question."
+      },
+      {
+        "zh": "「ほど」后面要接否定，这里是肯定的「好きです」。",
+        "en": "「ほど」 needs a negative; 「好きです」 is positive."
+      }
+    ]
+  },
+  {
+    "id": "n5-l08-009",
+    "type": "bunpou",
+    "refs": [
+      "lesson08#3"
+    ],
+    "difficulty": 1,
+    "stem": "今日は きのうほど（　）。",
+    "options": [
+      "あつくないです",
+      "あついです",
+      "あつかったです",
+      "さむいです"
+    ],
+    "okj": [
+      "暑くないです",
+      "暑いです",
+      "暑かったです",
+      "寒いです"
+    ],
+    "answer": 0,
+    "full": "今日は きのうほど あつくないです。",
+    "kj": "今日は昨日ほど暑くないです。",
+    "tr": {
+      "zh": "今天没有昨天那么热。",
+      "en": "Today isn't as hot as yesterday."
+    },
+    "why": {
+      "zh": "「AはBほど〜」后面必须接否定：暑くないです（没有那么热）。",
+      "en": "「AはBほど〜」 must end in a negative: 暑くないです (not as hot)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ほど」后面不能接肯定。",
+        "en": "「ほど」 can't be followed by a positive."
+      },
+      {
+        "zh": "「ほど」后面要接否定，而且说的是“今天”，不用过去形。",
+        "en": "「ほど」 needs a negative, and 「今日」 isn't past."
+      },
+      {
+        "zh": "「〜ほど」后面要接否定（〜ほど〜ない），「寒いです」是肯定，接不上。",
+        "en": "「〜ほど」 needs a negative after it (〜ほど〜ない); 「寒いです」 is positive."
+      }
+    ]
+  },
+  {
+    "id": "n5-l08-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson08#3"
+    ],
+    "difficulty": 1,
+    "stem": "くだものの 中で、何（　）いちばん すきですか。",
+    "options": [
+      "が",
+      "を",
+      "は",
+      "より"
+    ],
+    "answer": 0,
+    "full": "くだものの 中で、何が いちばん すきですか。",
+    "kj": "果物の中で、何が一番好きですか。",
+    "tr": {
+      "zh": "水果中你最喜欢什么？",
+      "en": "Which fruit do you like the most?"
+    },
+    "why": {
+      "zh": "「〜の中で、〜が一番〜」：「好き」的对象用「が」，疑问词作主语也用「が」。",
+      "en": "「〜の中で、〜が一番〜」: the object of 「好き」 takes 「が」, and so does a question word."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「好き」的对象用「が」，不用「を」。",
+        "en": "「好き」 takes 「が」, not 「を」."
+      },
+      {
+        "zh": "疑问词后面不能用「は」。",
+        "en": "A question word can't take 「は」."
+      },
+      {
+        "zh": "「何より」是“比什么都……”，和「一番」重复，这里问句不成立。",
+        "en": "「何より」 (more than anything) doubles up with 「一番」 and doesn't make a question."
+      }
+    ]
+  },
+  {
+    "id": "n5-l08-011",
+    "type": "narabe",
+    "refs": [
+      "lesson08#3"
+    ],
+    "difficulty": 2,
+    "stem": "A「駅まで バスで 行きますか。」\nB「いいえ、バスより [_] [_] [★] [_] はやいですから。」",
+    "options": [
+      "が",
+      "電車",
+      "ほう",
+      "の"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "A「駅まで バスで 行きますか。」 B「いいえ、バスより 電車の ほうが はやいですから。」",
+    "kj": "A「駅までバスで行きますか。」\nB「いいえ、バスより電車のほうが速いですから。」",
+    "tr": {
+      "zh": "A：坐公交去车站吗？ B：不，因为电车比公交快。",
+      "en": "A: Are you taking the bus to the station? B: No — the train is faster than the bus."
+    },
+    "why": {
+      "zh": "「AよりBのほうが〜」：バスより 電車 の ほう が 速い。★ 是第三格「ほう」。",
+      "en": "「AよりBのほうが〜」: バスより 電車 の ほう が 速い. The ★ is 「ほう」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l08-012",
+    "type": "bunpou",
+    "refs": [
+      "lesson08#4"
+    ],
+    "difficulty": 1,
+    "stem": "こどもが ねて いますから、テレビの おとを（　）して ください。",
+    "options": [
+      "小さく",
+      "小さい",
+      "小さな",
+      "小さくて"
+    ],
+    "answer": 0,
+    "full": "こどもが ねて いますから、テレビの おとを 小さく して ください。",
+    "kj": "子供が寝ていますから、テレビの音を小さくしてください。",
+    "tr": {
+      "zh": "孩子在睡觉，请把电视的声音调小。",
+      "en": "The kids are asleep, so please turn the TV down."
+    },
+    "why": {
+      "zh": "“把……弄成……”是「〜くする」，い形容词「小さい」变「小さく」。",
+      "en": "\"Make it …\" is 「〜くする」: 小さい → 小さく."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "辞书形不能直接接「する」，要变成副词「小さく」。",
+        "en": "The plain adjective can't go before 「する」; use the adverb 「小さく」."
+      },
+      {
+        "zh": "「小さな」只能放在名词前面（小さな 声），不能接「して ください」。",
+        "en": "「小さな」 only goes before a noun (小さな 声); it can't take 「して ください」."
+      },
+      {
+        "zh": "「小さくて」是て形（连接），不能接「して」。",
+        "en": "「小さくて」 is the linking て-form and can't go before 「して」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l08-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson08#4"
+    ],
+    "difficulty": 1,
+    "stem": "毎日 べんきょうしたから、日本語が（　）なりました。",
+    "options": [
+      "上手に",
+      "上手な",
+      "上手だ",
+      "上手で"
+    ],
+    "answer": 0,
+    "full": "毎日 べんきょうしたから、日本語が 上手に なりました。",
+    "kj": "毎日勉強したから、日本語が上手になりました。",
+    "tr": {
+      "zh": "因为每天学习，日语变好了。",
+      "en": "I studied every day, so my Japanese got better."
+    },
+    "why": {
+      "zh": "“变得……”是な形容词＋「になる」：上手に なりました。",
+      "en": "\"Become …\" for a な-adjective is 「〜になる」: 上手に なりました."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「な」用于修饰名词，后面不能接「なる」。",
+        "en": "「な」 is for modifying nouns; it can't come before 「なる」."
+      },
+      {
+        "zh": "「だ」是句尾，不能接「なる」。",
+        "en": "「だ」 ends a sentence and can't come before 「なる」."
+      },
+      {
+        "zh": "「で」是て形（连接），不能接「なる」。",
+        "en": "「で」 is the linking form and can't come before 「なる」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l08-014",
+    "type": "narabe",
+    "refs": [
+      "lesson08#4"
+    ],
+    "difficulty": 1,
+    "stem": "としょかんでは [★] [_] [_] [_]。",
+    "options": [
+      "して",
+      "に",
+      "ください",
+      "しずか"
+    ],
+    "okj": [
+      null,
+      null,
+      null,
+      "静か"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "としょかんでは しずかに して ください。",
+    "kj": "図書館では静かにしてください。",
+    "tr": {
+      "zh": "在图书馆里请保持安静。",
+      "en": "Please be quiet in the library."
+    },
+    "why": {
+      "zh": "な形容词副词化是「〜に」：静か に して ください。★ 在第一格，是「静か」。",
+      "en": "A な-adjective becomes an adverb with 「〜に」: 静か に して ください. The ★ is the first slot: 「静か」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "rev": 2
+  }
+]

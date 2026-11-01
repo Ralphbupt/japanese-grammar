@@ -1,0 +1,605 @@
+[
+ {
+  "id": "n2-m1-ck-101",
+  "type": "kadai",
+  "scene": "市民マラソンのボランティアの説明会で、係の女の人と男の人が話しています。",
+  "question": "男の人は大会の当日、まず何をしなければなりませんか。",
+  "lines": [
+   [
+    "F",
+    "当日は、朝七時までに中央広場のテントで受付をして、それから各自の担当場所に移動してください。"
+   ],
+   [
+    "M",
+    "あの、すみません。僕の家からだと、始発の電車に乗っても七時半ぐらいになっちゃうんですが。"
+   ],
+   [
+    "F",
+    "そうですか。担当はどちらでしたっけ。"
+   ],
+   [
+    "M",
+    "十キロ地点の給水所です。"
+   ],
+   [
+    "F",
+    "それでしたら、受付には寄らずに、直接給水所へ行っていただいてかまいません。名簿はこちらで直しておきますので。"
+   ],
+   [
+    "M",
+    "助かります。スタッフ用の上着は、当日もらえるんですよね。"
+   ],
+   [
+    "F",
+    "いえ、上着はこの説明会が終わったらお渡しします。当日は着てきてくださいね。"
+   ],
+   [
+    "M",
+    "わかりました。で、給水所に着いたら、すぐコップを並べればいいですか。"
+   ],
+   [
+    "F",
+    "その前に、給水所のリーダーに、着いたことを一言伝えてください。人数がそろっているか確認しないといけないので。コップはそれからで大丈夫です。"
+   ]
+  ],
+  "options": [
+   "中央広場で受付をする",
+   "スタッフ用の上着を受け取る",
+   "リーダーに着いたと伝える",
+   "給水所にコップを並べる"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "市民马拉松志愿者说明会上，一个女工作人员和一个男人在说话。",
+    "question": "男人在比赛当天首先必须做什么？",
+    "lines": [
+     "当天请在早上七点之前到中央广场的帐篷签到，然后去各自负责的地方。",
+     "那个，不好意思。从我家过来，就算坐头班电车也得七点半左右才到。",
+     "这样啊。您负责的是哪里来着？",
+     "十公里处的补水站。",
+     "那样的话，不用去签到，直接去补水站就可以。名单我们这边会改好。",
+     "太好了。工作人员穿的外套是当天领的吧？",
+     "不，外套等这个说明会结束后就发给您。当天请穿着来。",
+     "明白了。那到了补水站，马上摆杯子就行吗？",
+     "在那之前，请先跟补水站的负责人说一声您到了。因为要确认人有没有到齐。杯子之后再摆就行。"
+    ],
+    "options": [
+     "在中央广场签到",
+     "领取工作人员的外套",
+     "告诉负责人自己到了",
+     "在补水站摆杯子"
+    ]
+   },
+   "en": {
+    "scene": "At a briefing for city marathon volunteers, a female staff member and a man are talking.",
+    "question": "On the day of the race, what does the man have to do first?",
+    "lines": [
+     "On the day, please check in at the tent in the central square by seven a.m., then move to your assigned spot.",
+     "Um, excuse me. From my place, even on the first train I'd only get there around half past seven.",
+     "I see. Where were you assigned again?",
+     "The water station at the ten-kilometre point.",
+     "In that case, you can skip check-in and go straight to the water station. We'll update the list on our side.",
+     "That helps. I get the staff jacket on the day, right?",
+     "No, we'll hand out the jackets when this briefing is over. Please come wearing it on the day.",
+     "Got it. So when I reach the water station, should I start setting out cups right away?",
+     "Before that, please tell the water station leader you've arrived. They have to check that everyone's there. The cups can wait until after that."
+    ],
+    "options": [
+     "Check in at the central square",
+     "Collect the staff jacket",
+     "Tell the leader he has arrived",
+     "Set out cups at the water station"
+    ]
+   }
+  },
+  "why": {
+   "zh": "他赶不上七点签到，可以直接去补水站；到了以后「その前に、給水所のリーダーに、着いたことを一言伝えてください」，所以第一件事是告诉负责人。",
+   "en": "He can't make the 7:00 check-in, so he goes straight to the water station; once there, 「その前に…リーダーに、着いたことを一言伝えてください」 — telling the leader comes first."
+  },
+  "wrong": [
+   {
+    "zh": "他七点赶不到，女人说「受付には寄らずに」直接去补水站就行。",
+    "en": "He can't arrive by seven, and she says he can go straight there without checking in."
+   },
+   {
+    "zh": "外套今天说明会结束后就发，当天穿着来，不是当天要做的事。",
+    "en": "The jacket is handed out today after the briefing; on the day he just wears it."
+   },
+   null,
+   {
+    "zh": "摆杯子要等跟负责人打过招呼之后（「コップはそれからで」）。",
+    "en": "Cups come after he has reported to the leader (「コップはそれからで」)."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "order"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-102",
+  "type": "kadai",
+  "scene": "女の人が引っ越しの会社の人と電話で話しています。",
+  "question": "女の人は金曜日の夜までに何をしなければなりませんか。",
+  "lines": [
+   [
+    "M",
+    "では、来週の土曜日、朝九時に伺います。当日までに何かご不明な点はございますか。"
+   ],
+   [
+    "F",
+    "あの、段ボールって、自分で買っておかなきゃいけないんでしょうか。"
+   ],
+   [
+    "M",
+    "いえ、段ボールは、明日こちらから二十箱お届けします。足りなければ追加もできますので。"
+   ],
+   [
+    "F",
+    "よかった。それから、洗濯機なんですけど、中の水を抜くのって難しいですか。"
+   ],
+   [
+    "M",
+    "それは当日、うちのスタッフが作業の前にやりますので、そのままで大丈夫です。"
+   ],
+   [
+    "F",
+    "あと、エアコンも外してもらえるんですか。"
+   ],
+   [
+    "M",
+    "はい、別料金になりますが……。"
+   ],
+   [
+    "F",
+    "あ、でも、新しい部屋にはもう付いてるって聞いたから、今のは置いていくことになってるんだった。すみません、それはいいです。"
+   ],
+   [
+    "M",
+    "かしこまりました。あ、それから冷蔵庫ですが、中の物を全部出して、運ぶ十時間ぐらい前には電源を切っておいていただけますか。中の氷が溶けきらないと、運ぶときに水が出てきてしまうので。"
+   ],
+   [
+    "F",
+    "わかりました。気をつけます。"
+   ]
+  ],
+  "options": [
+   "段ボールを買っておく",
+   "洗濯機の水を抜いておく",
+   "エアコンを外しておく",
+   "冷蔵庫を空にしておく"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一个女人在和搬家公司的人通电话。",
+    "question": "女人在星期五晚上之前必须做什么？",
+    "lines": [
+     "那么，下周六早上九点我们上门。到当天为止，还有什么不清楚的地方吗？",
+     "那个，纸箱得我自己先买好吗？",
+     "不用，纸箱明天由我们送二十个过去。不够的话还可以追加。",
+     "太好了。还有洗衣机，把里面的水放掉难吗？",
+     "那个当天我们的工作人员在搬之前会弄，您不用管。",
+     "还有，空调也能帮忙拆吗？",
+     "可以，不过要另外收费……",
+     "啊，不过听说新房间里已经装了，现在这台本来就说好留下的。不好意思，那个不用了。",
+     "好的。啊，还有冰箱，请把里面的东西全部拿出来，在搬运前大约十个小时就把电源关掉。里面的冰没化完的话，搬的时候会漏水。",
+     "明白了。我会注意的。"
+    ],
+    "options": [
+     "先买好纸箱",
+     "把洗衣机的水放掉",
+     "把空调拆下来",
+     "把冰箱清空"
+    ]
+   },
+   "en": {
+    "scene": "A woman is talking on the phone with someone from a removal company.",
+    "question": "What does the woman have to do by Friday night?",
+    "lines": [
+     "So we'll come at nine on Saturday morning next week. Is there anything you're unsure about before then?",
+     "Um, do I have to buy the cardboard boxes myself?",
+     "No, we'll deliver twenty boxes tomorrow. We can add more if you need them.",
+     "Good. And the washing machine — is it hard to drain the water out of it?",
+     "Our staff will do that on the day before moving it, so you can leave it as it is.",
+     "And can you take down the air conditioner too?",
+     "Yes, though there's an extra charge...",
+     "Oh, but I heard the new flat already has one, so we agreed to leave this one behind. Sorry, never mind that.",
+     "Certainly. Oh, and the fridge — could you take everything out and switch it off about ten hours before we move it? If the ice hasn't completely melted, water leaks out while we carry it.",
+     "Understood. I'll make sure to."
+    ],
+    "options": [
+     "Buy cardboard boxes",
+     "Drain the washing machine",
+     "Take down the air conditioner",
+     "Empty the fridge"
+    ]
+   }
+  },
+  "why": {
+   "zh": "搬家是星期六早上九点，冰箱要在「運ぶ十時間ぐらい前」清空并关电源，也就是星期五晚上之前，这是她自己要做的。",
+   "en": "The move is at nine on Saturday morning and the fridge must be emptied and off 「運ぶ十時間ぐらい前」 — i.e. by Friday night; that's her job."
+  },
+  "wrong": [
+   {
+    "zh": "纸箱公司明天送来二十个，不用买。",
+    "en": "The company delivers twenty boxes tomorrow."
+   },
+   {
+    "zh": "洗衣机的水当天由工作人员放，「そのままで大丈夫」。",
+    "en": "Staff drain the washing machine on the day."
+   },
+   {
+    "zh": "新房间已经有空调，现在这台留下，她说「それはいいです」。",
+    "en": "The new flat has one, so this one stays; she says never mind."
+   },
+   null
+  ],
+  "traps": [
+   "someone-else",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-103",
+  "type": "kadai",
+  "scene": "会社で女の人と男の人が、社内報の記事について話しています。",
+  "question": "男の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "M",
+    "鈴木さん、来月号の記事、書き終わったんですが、見ていただけましたか。営業部に新しく入った人たちのインタビューです。"
+   ],
+   [
+    "F",
+    "うん、さっき読んだよ。よく書けてるじゃない。ただ、写真がちょっと暗いかな。"
+   ],
+   [
+    "M",
+    "やっぱりそうですよね。もう一回撮らせてもらいましょうか。"
+   ],
+   [
+    "F",
+    "ああ、あれぐらいならパソコンで明るくできるから、撮り直さなくていいよ。それより、文字数がだいぶオーバーしてたね。"
+   ],
+   [
+    "M",
+    "すみません。どこを削ればいいか迷っちゃって。"
+   ],
+   [
+    "F",
+    "そこはこっちで調整しとくよ。で、インタビューした人たちに、原稿は見てもらった？　名前の字とか部署とか、間違ってたら失礼だから。"
+   ],
+   [
+    "M",
+    "あ、まだです。"
+   ],
+   [
+    "F",
+    "載せる前に、本人に確認してもらっといて。締め切り、あさってだけど、向こうも忙しいだろうから、今日中に頼んどいたほうがいいよ。"
+   ],
+   [
+    "M",
+    "はい。あの、記事のタイトルもまだ仮のままなんですが。"
+   ],
+   [
+    "F",
+    "タイトルは最後でいいよ。全体が決まってからのほうが考えやすいし。"
+   ]
+  ],
+  "options": [
+   "写真を明るく撮り直す",
+   "本人に原稿を見てもらう",
+   "記事の文字数を減らす",
+   "記事のタイトルを考える"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个女人和一个男人在谈论内部刊物上的文章。",
+    "question": "男人接下来首先要做什么？",
+    "lines": [
+     "铃木，下个月那期的文章我写完了，您看过了吗？是采访营业部新来的同事的。",
+     "嗯，刚才看了。写得挺好嘛。就是照片有点暗。",
+     "果然是吧。要不要请他们再让我拍一次？",
+     "啊，那种程度用电脑就能调亮，不用重拍。倒是字数超了不少啊。",
+     "对不起。我拿不准该删哪里。",
+     "那个我这边来调整。对了，稿子给受访的人看过了吗？名字的字、部门什么的，要是错了很失礼。",
+     "啊，还没有。",
+     "登出来之前，先请本人确认一下。截稿是后天，不过对方应该也忙，最好今天之内就拜托好。",
+     "好的。那个，文章的标题也还是暂定的。",
+     "标题最后再定就行。等整体定下来再想也更容易。"
+    ],
+    "options": [
+     "重新拍更亮的照片",
+     "请受访者本人看稿子",
+     "减少文章的字数",
+     "想文章的标题"
+    ]
+   },
+   "en": {
+    "scene": "At a company, a woman and a man are talking about an article for the in-house newsletter.",
+    "question": "What will the man do first?",
+    "lines": [
+     "Suzuki-san, I've finished the article for next month's issue — have you had a look? It's the interviews with the new people in sales.",
+     "Yes, I read it just now. It's well written. The photos are a bit dark, though.",
+     "I thought so. Shall I ask to take them again?",
+     "Oh, I can brighten them that much on the computer, so no need to retake them. More to the point, it's well over the word count.",
+     "Sorry. I couldn't decide what to cut.",
+     "I'll sort that out. So, did you show the draft to the people you interviewed? It'd be rude to get the characters of their names or their departments wrong.",
+     "Oh, not yet.",
+     "Have them check it before it goes in. The deadline's the day after tomorrow, but they'll be busy too, so you'd better ask them today.",
+     "Yes. Um, the article's title is still just a placeholder, too.",
+     "The title can come last. It's easier to think of once everything else is settled."
+    ],
+    "options": [
+     "Retake the photos brighter",
+     "Have the interviewees check the draft",
+     "Cut the article's word count",
+     "Think of a title for the article"
+    ]
+   }
+  },
+  "why": {
+   "zh": "女人说「載せる前に、本人に確認してもらっといて」，还要「今日中に頼んどいたほうがいい」，所以先请受访者确认稿子。",
+   "en": "She tells him to have the interviewees check it, and to ask them today — so that comes first."
+  },
+  "wrong": [
+   {
+    "zh": "照片「パソコンで明るくできる」，「撮り直さなくていい」。",
+    "en": "The photos can be brightened on the computer — no retake needed."
+   },
+   null,
+   {
+    "zh": "字数的问题女人说「こっちで調整しとく」，由她来处理。",
+    "en": "She'll trim the word count herself (「こっちで調整しとく」)."
+   },
+   {
+    "zh": "标题「最後でいい」，放在最后。",
+    "en": "The title can wait until last."
+   }
+  ],
+  "traps": [
+   "someone-else",
+   "later"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-104",
+  "type": "kadai",
+  "scene": "陶芸教室で、先生と男の人が話しています。",
+  "question": "男の人は次の教室までに何を用意しますか。",
+  "lines": [
+   [
+    "M",
+    "先生、今日はありがとうございました。次回から本格的に作るんですよね。何か持ってくるものはありますか。"
+   ],
+   [
+    "F",
+    "そうですね。土で服が汚れますから、エプロンがあるといいんですが……。"
+   ],
+   [
+    "M",
+    "エプロンか。家にあったかなあ。"
+   ],
+   [
+    "F",
+    "なければ、教室のを貸し出していますから、無理に買わなくて大丈夫ですよ。ただ、手を拭くタオルは、教室にも置いてはあるんですけど、皆さんが使うとすぐ足りなくなっちゃうんですよね。土が付いて落ちにくいので、汚れてもいいものがあると……。"
+   ],
+   [
+    "M",
+    "ああ、それなら古いのが家にいくらでもありますよ。材料費は、次回お支払いすればいいですか。"
+   ],
+   [
+    "F",
+    "材料費は、最後の回にまとめていただくことになっているんです。"
+   ],
+   [
+    "M",
+    "そうですか。じゃあ、できた作品を持って帰るのに、箱か何か要りますよね。"
+   ],
+   [
+    "F",
+    "作品は焼くのに一か月ぐらいかかりますし、そのときに教室で包んでお渡ししますから、ご心配なく。"
+   ]
+  ],
+  "options": [
+   "汚れてもいいタオル",
+   "作業用のエプロン",
+   "材料費のお金",
+   "作品を入れる箱"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "陶艺班里，老师和一个男人在说话。",
+    "question": "男人在下次上课之前要准备什么？",
+    "lines": [
+     "老师，今天谢谢您了。下次开始正式做了吧？有什么要带的东西吗？",
+     "这个嘛。泥会弄脏衣服，所以最好有条围裙……",
+     "围裙啊。家里有没有来着。",
+     "没有的话，教室有出借的，不用特意去买。不过擦手的毛巾，教室里虽然也放着，大家一用马上就不够了。沾了泥不好洗，要是有条弄脏也没关系的就……",
+     "啊，那个的话家里旧的有的是。材料费下次交就行吗？",
+     "材料费是最后一次课一起交。",
+     "这样啊。那作品做好了带回去，需要个盒子什么的吧？",
+     "作品烧制要一个月左右，到时候教室会包好交给您，不用担心。"
+    ],
+    "options": [
+     "弄脏也没关系的毛巾",
+     "干活用的围裙",
+     "材料费",
+     "装作品的盒子"
+    ]
+   },
+   "en": {
+    "scene": "At a pottery class, the teacher and a man are talking.",
+    "question": "What will the man get ready before the next class?",
+    "lines": [
+     "Thank you for today. From next time we start making things properly, right? Is there anything I should bring?",
+     "Let's see. The clay gets on your clothes, so an apron would be good...",
+     "An apron... I wonder if I have one at home.",
+     "If not, we lend them out here, so there's no need to buy one. Towels for wiping your hands, though — we do keep some here, but they run out quickly once everyone uses them. Clay doesn't wash out easily, so if you had one that can get dirty...",
+     "Oh, I've got plenty of old ones at home. Should I pay the materials fee next time?",
+     "The materials fee is paid all together at the last class.",
+     "I see. Then I'll need a box or something to take my pieces home in, won't I?",
+     "Firing takes about a month, and we'll wrap the pieces for you here when we hand them over, so don't worry."
+    ],
+    "options": [
+     "A towel that can get dirty",
+     "An apron for working in",
+     "Money for the materials fee",
+     "A box for his pieces"
+    ]
+   }
+  },
+  "why": {
+   "zh": "老师说教室的毛巾「すぐ足りなくなっちゃう」，暗示最好自带弄脏也没关系的；男人说家里旧的有的是，等于答应带来。其他三样都不用他准备。",
+   "en": "The teacher hints that the class towels run out and one that can get dirty would help; he says he has plenty of old ones. None of the other three are his to bring."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "围裙教室可以借，「無理に買わなくて大丈夫」。",
+    "en": "Aprons can be borrowed from the class."
+   },
+   {
+    "zh": "材料费「最後の回にまとめて」交，不是下次。",
+    "en": "The materials fee is paid at the last class."
+   },
+   {
+    "zh": "作品一个月后由教室包好交给他，不用带盒子。",
+    "en": "The class wraps the pieces in a month; no box needed."
+   }
+  ],
+  "traps": [
+   "someone-else",
+   "later"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-105",
+  "type": "kadai",
+  "scene": "大学のサークルの部屋で、男の学生と女の学生が、先輩の送別会の準備をしています。",
+  "question": "男の学生はこれから何を買いに行きますか。",
+  "lines": [
+   [
+    "F",
+    "飲み物は、佐藤くんが車で持ってきてくれるって。"
+   ],
+   [
+    "M",
+    "了解。紙皿とかコップって、まだあったっけ？"
+   ],
+   [
+    "F",
+    "どうだろう。その棚の上、見てみて。"
+   ],
+   [
+    "M",
+    "えーと……あ、あるある。こんだけあれば足りるでしょ。"
+   ],
+   [
+    "F",
+    "よかった。あと氷なんだけど、今買うと溶けちゃうじゃん。始まる直前に私がコンビニで買ってくるよ。"
+   ],
+   [
+    "M",
+    "じゃ、それはお願い。ケーキのほうはどうなってる？"
+   ],
+   [
+    "F",
+    "駅前のケーキ屋さんに頼んであるよ。ろうそくもつけてくれるって言ってたんだけど、さっき電話したら、ちょうど切らしちゃってるんだって。"
+   ],
+   [
+    "M",
+    "えー、ろうそくないと、なんか寂しいよね。"
+   ],
+   [
+    "F",
+    "でしょ？　悪いけど、今から買ってきてくんない？　ケーキは私が四時に取りに行くから。"
+   ],
+   [
+    "M",
+    "オッケー。じゃ、ちょっと行ってくるわ。"
+   ]
+  ],
+  "options": [
+   "紙のお皿",
+   "氷",
+   "飲み物",
+   "ろうそく"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "大学社团的活动室里，一个男学生和一个女学生在准备学长学姐的欢送会。",
+    "question": "男学生接下来要去买什么？",
+    "lines": [
+     "饮料说是佐藤开车带过来。",
+     "了解。纸盘子、杯子什么的，还有吗？",
+     "不知道啊。你看看那个架子上面。",
+     "嗯……啊，有有有。这么多应该够了吧。",
+     "太好了。还有冰块，现在买的话会化掉嘛。快开始的时候我去便利店买。",
+     "那就拜托你了。蛋糕那边怎么样了？",
+     "已经跟车站前的蛋糕店订好了。本来说会附上蜡烛，可刚才打电话，说正好用完了。",
+     "啊，没有蜡烛的话总觉得冷清啊。",
+     "是吧？不好意思，你现在去买一下好吗？蛋糕我四点去取。",
+     "好的。那我去一趟。"
+    ],
+    "options": [
+     "纸盘子",
+     "冰块",
+     "饮料",
+     "蜡烛"
+    ]
+   },
+   "en": {
+    "scene": "In a university club room, a male and a female student are getting ready for a farewell party for the seniors.",
+    "question": "What is the male student going to go and buy?",
+    "lines": [
+     "Sato says he'll bring the drinks in his car.",
+     "Okay. Do we still have paper plates and cups and stuff?",
+     "Not sure. Have a look on top of that shelf.",
+     "Let's see... oh, here they are. This many should be enough.",
+     "Great. And the ice — if we buy it now it'll melt, right? I'll get some at the convenience store just before we start.",
+     "Okay, I'll leave that to you. What's happening with the cake?",
+     "I've ordered it from the cake shop by the station. They said they'd include candles, but when I called just now, they said they'd just run out.",
+     "Oh no, it feels a bit sad without candles.",
+     "Right? Sorry, but could you go and buy some now? I'll pick up the cake at four.",
+     "Okay. I'll be right back."
+    ],
+    "options": [
+     "Paper plates",
+     "Ice",
+     "Drinks",
+     "Candles"
+    ]
+   }
+  },
+  "why": {
+   "zh": "蛋糕店的蜡烛「切らしちゃってる」，女人请他「今から買ってきてくんない？」，他答「オッケー」。",
+   "en": "The cake shop has run out of candles, and she asks him 「今から買ってきてくんない？」 — he agrees."
+  },
+  "wrong": [
+   {
+    "zh": "纸盘子在架子上找到了，「こんだけあれば足りる」。",
+    "en": "They found plates on the shelf — enough of them."
+   },
+   {
+    "zh": "冰块现在买会化，快开始时女人自己去买。",
+    "en": "Ice would melt now; she'll buy it herself just before the party."
+   },
+   {
+    "zh": "饮料由佐藤开车带来。",
+    "en": "Sato is bringing the drinks."
+   },
+   null
+  ],
+  "traps": [
+   "someone-else",
+   "done-already",
+   "later"
+  ]
+ }
+]

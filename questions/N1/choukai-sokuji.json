@@ -1,0 +1,1626 @@
+[
+ {
+  "id": "n1-ck-501",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "あの課長が会議で冗談を言うなんて、明日は雪でも降るんじゃない？"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "ほんとだね。よっぽど機嫌がよかったのかな。",
+   "えっ、明日、雪の予報が出てるの？",
+   "課長って、いつも冗談ばかり言ってるよね。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "那位科长居然在会上开玩笑，明天该不会下雪吧？"
+    ],
+    "options": [
+     "真的。大概心情特别好吧。",
+     "诶，明天有下雪的预报吗？",
+     "科长总是在开玩笑呢。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "That section chief cracking a joke in a meeting? It'll probably snow tomorrow."
+    ],
+    "options": [
+     "Seriously. He must have been in a really good mood.",
+     "What, is snow forecast for tomorrow?",
+     "The chief's always joking, isn't he?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「明日は雪でも降るんじゃない」是在说“太稀奇了”。附和她，并猜原因（心情好），最自然。",
+   "en": "「明日は雪でも降るんじゃない」 means 'how unheard-of'. Agreeing and guessing why fits."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「雪でも降るんじゃない」是形容罕见的比喻，不是在说天气。",
+    "en": "「雪でも降るんじゃない」 is a figure of speech for something rare, not a weather remark."
+   },
+   {
+    "zh": "她的意思是科长很少开玩笑，「いつも」正好相反。",
+    "en": "She means he hardly ever jokes — 「いつも」 is the opposite."
+   }
+  ],
+  "traps": [
+   "intent",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-ck-502",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "この程度の件なら、部長に報告するまでもないと思うけど。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "では、すぐ部長に報告してきます。",
+   "そうですね。こちらで処理しておきます。",
+   "部長からは、もう報告を受けたんですね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这种程度的事，我觉得用不着向部长报告。"
+    ],
+    "options": [
+     "那我马上去向部长报告。",
+     "是啊。我们这边处理掉。",
+     "已经从部长那儿听到报告了吧。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Something this minor doesn't even need reporting to the department head, I'd say."
+    ],
+    "options": [
+     "Then I'll go and report it to him right away.",
+     "True. We'll deal with it ourselves.",
+     "So you've already had a report from him."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜までもない」：用不着做。不报告，自己这边处理，正好接上。",
+   "en": "「〜までもない」: no need to. Handling it themselves follows naturally."
+  },
+  "wrong": [
+   {
+    "zh": "「報告するまでもない」是“用不着报告”，马上去报告正好相反。",
+    "en": "「報告するまでもない」 means there's no need to report — going straight off to report is the opposite."
+   },
+   null,
+   {
+    "zh": "是部下向部长报告，不是部长报告；而且他说的是不用报告。",
+    "en": "Reports go to the department head, not from him — and he says no report is needed."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n1-ck-503",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "あの映画、最後の場面は、さすがに泣かずにはいられなかったよ。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "そうか、最後まで泣くのを我慢したんだ。",
+   "え、泣くほど退屈だったの？",
+   "へえ、そんなに泣ける話なんだ。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "那部电影的最后一幕，我实在是忍不住哭了。"
+    ],
+    "options": [
+     "这样啊，一直忍着没哭到最后。",
+     "诶，无聊得想哭吗？",
+     "哦，是那么催泪的故事啊。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "The last scene of that film — I just couldn't help crying."
+    ],
+    "options": [
+     "I see, so you held back your tears to the end.",
+     "What, was it so dull you could have cried?",
+     "Wow, it's that much of a tear-jerker?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜ずにはいられない」：忍不住要……。她哭了，回应“那么感人啊”最自然。",
+   "en": "「〜ずにはいられない」: can't help doing. She cried, so 'it's that moving?' fits."
+  },
+  "wrong": [
+   {
+    "zh": "「泣かずにはいられない」是忍不住哭，不是忍住了。",
+    "en": "「泣かずにはいられない」 means she couldn't help crying, not that she held back."
+   },
+   {
+    "zh": "她是被感动哭的，「退屈」和内容不符。",
+    "en": "She was moved to tears; 「退屈」 doesn't fit."
+   },
+   null
+  ],
+  "traps": [
+   "contradiction",
+   "intent"
+  ]
+ },
+ {
+  "id": "n1-ck-504",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "あれだけの実績があるんだから、彼はもっと評価されてしかるべきだよ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "そうか、もう十分評価されてるんだね。",
+   "本当にそう。今の扱いは低すぎるよね。",
+   "じゃあ、もっと実績を作ってもらわないと。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "有那么多业绩，他理应得到更高的评价。"
+    ],
+    "options": [
+     "这样啊，已经得到足够的评价了啊。",
+     "真的是。现在对他的待遇太低了。",
+     "那得让他再多做出点业绩才行。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "With a record like that, he really ought to be rated more highly."
+    ],
+    "options": [
+     "I see, so he's already well recognised.",
+     "Absolutely. The way he's treated now is far too low.",
+     "Then he'll have to build up more of a record."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜てしかるべき」：理应……。赞同“现在的待遇太低”，最自然。",
+   "en": "「〜てしかるべき」: ought to be. Agreeing that he's undervalued fits."
+  },
+  "wrong": [
+   {
+    "zh": "「もっと評価されてしかるべき」说明现在评价不够，正好相反。",
+    "en": "「もっと評価されてしかるべき」 implies he isn't rated enough now — the opposite."
+   },
+   null,
+   {
+    "zh": "他说的是业绩已经很多了，要求再多做业绩不对。",
+    "en": "He says the record is already there; asking for more misses the point."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n1-ck-505",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "社長ともなると、休みの日でも気が休まらないんでしょうね。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "だろうね。背負ってるものが違うから。",
+   "へえ、社長になると休みが増えるんだ。",
+   "うん、社長はきのうから休みに入ったよ。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "当到社长，就算休息日也没法放松吧。"
+    ],
+    "options": [
+     "是吧。肩上扛的东西不一样嘛。",
+     "哦，当了社长休息日就变多了啊。",
+     "嗯，社长从昨天开始休假了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Once you're a company president, I suppose you can't relax even on your days off."
+    ],
+    "options": [
+     "I'd think so. The weight on his shoulders is different.",
+     "Oh, so presidents get more days off?",
+     "Yeah, the president started his holiday yesterday."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜ともなると」：到了……这个地位，自然就……。附和“责任重”最自然。",
+   "en": "「〜ともなると」: once you reach that level. Agreeing that the burden is heavier fits."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "她说的是休息日也放松不了，没说休息日变多。",
+    "en": "She says they can't relax on days off, not that they get more of them."
+   },
+   {
+    "zh": "她在泛泛地谈当社长的辛苦，不是在问社长的假期安排。",
+    "en": "She's talking generally about being a president, not asking about his holiday."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "intent"
+  ]
+ },
+ {
+  "id": "n1-ck-506",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "厳しいことを言うのも、君に期待していればこそなんだよ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "期待されていないのは、分かっています。",
+   "では、もう厳しいことはおっしゃらないんですね。",
+   "はい。ご期待に応えられるよう頑張ります。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "我说得严厉，正是因为对你寄予期望啊。"
+    ],
+    "options": [
+     "我知道您对我不抱期望。",
+     "那么，您以后就不再说严厉的话了吧。",
+     "是。我会努力不辜负您的期望。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I'm hard on you precisely because I expect a lot of you."
+    ],
+    "options": [
+     "I know you don't expect anything of me.",
+     "So you won't say harsh things any more, then.",
+     "Yes. I'll do my best to live up to your expectations."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜ばこそ」：正因为……才。对方说严厉是因为期待，表示会努力回应期待最自然。",
+   "en": "「〜ばこそ」: precisely because. Promising to live up to the expectations fits."
+  },
+  "wrong": [
+   {
+    "zh": "「期待していればこそ」是“正因为期待”，正好相反。",
+    "en": "「期待していればこそ」 means precisely because he does expect — the opposite."
+   },
+   {
+    "zh": "他是在解释为什么严厉，没说以后不严厉了。",
+    "en": "He's explaining why he's strict, not promising to stop."
+   },
+   null
+  ],
+  "traps": [
+   "contradiction",
+   "intent"
+  ]
+ },
+ {
+  "id": "n1-ck-507",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "今さら謝ったところで、彼女の気持ちは変わらないと思うよ。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "よかった。謝ったら許してくれたんだね。",
+   "そうかな。謝らないよりはましだろう。",
+   "じゃあ、今すぐ謝れば間に合うかな。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "事到如今就算道歉，我觉得她的心情也不会改变。"
+    ],
+    "options": [
+     "太好了。道歉以后她原谅我了啊。",
+     "是吗？总比不道歉强吧。",
+     "那么，现在马上道歉就来得及吧。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Even if you apologise now, I don't think it'll change how she feels."
+    ],
+    "options": [
+     "Great. So she forgave me once I apologised.",
+     "You think so? It's still better than not apologising.",
+     "Then if I apologise right now, I'll be in time?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜たところで」：就算……也（没用）。反驳一句“总比不道歉强”，最自然。",
+   "en": "「〜たところで」: even if you do, it's no use. Pushing back with 'better than nothing' fits."
+  },
+  "wrong": [
+   {
+    "zh": "「謝ったところで」是假设“就算道歉”，他还没道歉，也没被原谅。",
+    "en": "「謝ったところで」 is hypothetical — he hasn't apologised, and hasn't been forgiven."
+   },
+   null,
+   {
+    "zh": "她说的是现在道歉也没用，「じゃあ」接“来得及”说反了。",
+    "en": "She says apologising now won't help; 'then I'll be in time' turns it around."
+   }
+  ],
+  "traps": [
+   "tense",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-ck-508",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "このまま放っておいたら、大きな事故にもなりかねませんよ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "そうですね。すぐに対策を考えましょう。",
+   "事故にならなくて、本当によかったですね。",
+   "ええ、事故はなかなか起こらないものですね。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "就这样放着不管的话，说不定会酿成大事故。"
+    ],
+    "options": [
+     "是啊。马上想想对策吧。",
+     "没出事故，真是太好了。",
+     "嗯，事故是不太容易发生的啊。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "If we leave it like this, it could even lead to a serious accident."
+    ],
+    "options": [
+     "You're right. Let's work out a fix straight away.",
+     "It's a real relief there wasn't an accident.",
+     "Yes, accidents don't happen easily, do they?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜かねない」：有可能（发生坏事）。听到警告，回应“马上想对策”最自然。",
+   "en": "「〜かねない」: might well (something bad). Responding to the warning with action fits."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "他说的是将来可能出事故，不是已经平安过去了。",
+    "en": "He's warning of a possible future accident, not reporting a near miss."
+   },
+   {
+    "zh": "「〜かねない」是“有可能……”，不是“不会”。",
+    "en": "「〜かねない」 means it could well happen, not that it won't."
+   }
+  ],
+  "traps": [
+   "tense",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-ck-509",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "今回ばかりは、私の顔に免じて、許してやってもらえませんか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "えっ、顔がどうかしたんですか。",
+   "では、あなたが許してあげてください。",
+   "わかりました。そこまでおっしゃるなら。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这次就看在我的面子上，原谅他吧，好吗？"
+    ],
+    "options": [
+     "诶，脸怎么了吗？",
+     "那就请你原谅他吧。",
+     "好吧。既然你都这么说了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Just this once, won't you forgive him — for my sake?"
+    ],
+    "options": [
+     "What, is something wrong with your face?",
+     "Then you forgive him, please.",
+     "All right. If you put it that way."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜に免じて」：看在……的份上。答应她的请求，最自然。",
+   "en": "「〜に免じて」: out of regard for. Agreeing to her request fits."
+  },
+  "wrong": [
+   {
+    "zh": "「顔に免じて」是“看在我的面子上”，和脸本身无关。",
+    "en": "「顔に免じて」 means 'for my sake / out of regard for me' — nothing to do with her actual face."
+   },
+   {
+    "zh": "是她请他原谅别人，他反过来让她原谅，立场颠倒。",
+    "en": "She's asking him to forgive; telling her to do it reverses the roles."
+   },
+   null
+  ],
+  "traps": [
+   "repeat-word",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n1-ck-510",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "言ってくれれば手伝ったものを、どうして一人で全部やっちゃったの。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "ありがとう。手伝ってくれて助かったよ。",
+   "ごめん。忙しそうだったから、つい。",
+   "じゃあ、次からも一人でやるね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "你说一声我就帮你了，为什么一个人全做了呢？"
+    ],
+    "options": [
+     "谢谢。你帮了我，真是帮大忙了。",
+     "对不起。看你好像很忙，就……",
+     "那下次也一个人做吧。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I'd have helped if you'd asked — why did you do it all on your own?"
+    ],
+    "options": [
+     "Thanks. Your help really made a difference.",
+     "Sorry. You looked busy, so I just…",
+     "Then I'll do it alone next time too."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜ものを」：本来……就好了（却没有）。解释为什么没开口，最自然。",
+   "en": "「〜ものを」: if only… (but you didn't). Explaining why she didn't ask fits."
+  },
+  "wrong": [
+   {
+    "zh": "「手伝ったものを」是“本来会帮的”，他实际上没帮。",
+    "en": "「手伝ったものを」 means he would have helped — he didn't actually."
+   },
+   null,
+   {
+    "zh": "他是在说下次叫他帮忙，「次からも一人で」正好相反。",
+    "en": "He wants to be asked next time; 'alone next time too' is the opposite."
+   }
+  ],
+  "traps": [
+   "tense",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-ck-511",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "子どもじゃあるまいし、自分のことくらい自分で決めなさい。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "わかった。もう一度自分で考えてみる。",
+   "じゃあ、お父さんが決めてくれるんだね。",
+   "うん、子どもの意見も聞いてみるね。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "又不是小孩子了，自己的事至少要自己决定。"
+    ],
+    "options": [
+     "知道了。我自己再想想。",
+     "那就是爸爸替我决定吧。",
+     "嗯，我也听听孩子的意见。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "You're not a child — decide your own affairs yourself, at least."
+    ],
+    "options": [
+     "OK. I'll think it over again by myself.",
+     "So you'll decide for me, then, Dad.",
+     "Yeah, I'll ask the children what they think too."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜じゃあるまいし」：又不是……。被说“自己决定”，回答“自己再想想”最自然。",
+   "en": "「〜じゃあるまいし」: you're not a… Told to decide for herself, 'I'll think it over myself' fits."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "他要她自己决定，「お父さんが決めて」正好相反。",
+    "en": "He wants her to decide; 'you'll decide for me' is the opposite."
+   },
+   {
+    "zh": "「子どもじゃあるまいし」是说她不是小孩子，不是说要听孩子的意见。",
+    "en": "「子どもじゃあるまいし」 says she isn't a child — nothing about asking children."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-ck-512",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "差し支えなければ、ご意見をお聞かせ願えませんでしょうか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "はい、ぜひお聞かせください。",
+   "いえいえ、お礼には及びません。",
+   "ええ、私でよろしければ。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "如果方便的话，能请您谈谈您的意见吗？"
+    ],
+    "options": [
+     "好的，请务必说给我听。",
+     "哪里哪里，不用谢。",
+     "好，如果我可以的话。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "If you don't mind, might I ask for your opinion?"
+    ],
+    "options": [
+     "Yes, please do tell me.",
+     "Oh no, there's no need to thank me.",
+     "Certainly, if I can be of use."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「お聞かせ願えませんでしょうか」：能否请您说说。谦虚地答应“如果我可以的话”最自然。",
+   "en": "「お聞かせ願えませんでしょうか」: might I hear your view. A modest 'if I can be of use' fits."
+  },
+  "wrong": [
+   {
+    "zh": "是她请他发表意见，他反过来请她说，立场颠倒。",
+    "en": "She's asking for his opinion; he asks for hers instead."
+   },
+   {
+    "zh": "她是在请求，不是在道谢。",
+    "en": "She's making a request, not thanking him."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n1-ck-513",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "この計画、予算いかんでは、大幅な見直しを余儀なくされるかもしれないね。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "見直しが終わって、ほっとしましたね。",
+   "では、予算が固まるまで様子を見ます。",
+   "予算が余るなら、計画を広げましょうか。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这个计划，视预算情况，可能不得不大幅修改。"
+    ],
+    "options": [
+     "修改结束了，松了口气吧。",
+     "那在预算定下来之前，先观望一下。",
+     "预算有剩余的话，扩大计划吧？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Depending on the budget, we may be forced to overhaul this plan."
+    ],
+    "options": [
+     "What a relief the overhaul is done.",
+     "Then I'll wait and see until the budget is settled.",
+     "If there's budget left over, shall we expand the plan?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜いかんでは」：视……而定；「余儀なくされる」：不得不。预算没定之前先观望，最自然。",
+   "en": "「〜いかんでは」: depending on; 「余儀なくされる」: be forced to. Waiting for the budget fits."
+  },
+  "wrong": [
+   {
+    "zh": "他说的是将来可能要修改，还没开始，更没结束。",
+    "en": "He's talking about a possible future overhaul — nothing is done yet."
+   },
+   null,
+   {
+    "zh": "「余儀なくされる」是“不得不”，和预算有剩余无关。",
+    "en": "「余儀なくされる」 means being forced to — nothing to do with budget left over."
+   }
+  ],
+  "traps": [
+   "tense",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n1-ck-514",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "せっかくの休みなんだし、たまには仕事のことを忘れたってバチは当たらないよ。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "え、何か悪いことでもあったの？",
+   "うん、だから休みの日も仕事してるんだ。",
+   "そうだね。たまにはのんびりするか。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "难得的休息日，偶尔忘掉工作也不会遭报应的。"
+    ],
+    "options": [
+     "诶，出什么坏事了吗？",
+     "嗯，所以休息日也在工作。",
+     "说得也是。偶尔悠闲一下吧。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "It's your day off — it won't kill you to forget about work for once."
+    ],
+    "options": [
+     "What, did something bad happen?",
+     "Yeah, that's why I work on my days off too.",
+     "You're right. I might as well take it easy for once."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜たってバチは当たらない」：……也没关系，劝人放松。接受劝说最自然。",
+   "en": "「〜たってバチは当たらない」: there's no harm in… — urging him to relax. Accepting fits."
+  },
+  "wrong": [
+   {
+    "zh": "「バチは当たらない」是“没关系”的说法，没说发生了坏事。",
+    "en": "「バチは当たらない」 means 'there's no harm in it' — nothing bad has happened."
+   },
+   {
+    "zh": "她劝他忘掉工作，「だから……仕事してる」接不上。",
+    "en": "She's urging him to forget work; 'that's why I work' doesn't follow."
+   },
+   null
+  ],
+  "traps": [
+   "intent",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-ck-515",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "平日の昼間から昼寝とは、結構なご身分だね。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "きょうは代休なんだ。たまにはいいだろう。",
+   "ありがとう。この春、昇進したんだ。",
+   "いや、昼寝はしないことにしてるんだ。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "工作日大白天就睡午觉，你可真是好命啊。"
+    ],
+    "options": [
+     "今天是调休。偶尔一次没关系吧。",
+     "谢谢。今年春天升职了。",
+     "不，我规定自己不睡午觉。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Napping in the middle of a weekday — must be nice to be you."
+    ],
+    "options": [
+     "It's my day off in lieu. Once in a while is fine, right?",
+     "Thanks. I got promoted this spring.",
+     "No, I make a point of never napping."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「結構なご身分だね」是挖苦。解释今天是调休，最自然。",
+   "en": "「結構なご身分だね」 is a dig. Explaining it's his day off fits."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「結構なご身分」是讽刺，不是夸他地位高。",
+    "en": "「結構なご身分」 is sarcasm, not a compliment on his position."
+   },
+   {
+    "zh": "他正在睡午觉，说自己不睡午觉前后矛盾。",
+    "en": "He's napping right now — saying he never naps contradicts it."
+   }
+  ],
+  "traps": [
+   "intent",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-ck-516",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "三十分も遅れてきて連絡もなしなんて、のんきにもほどがあるよ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "のんびりできて、よかったね。",
+   "ごめん。次からは必ず連絡するから。",
+   "じゃあ、あと三十分待ってくれる？"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "迟到三十分钟还不联系，悠闲也该有个限度吧。"
+    ],
+    "options": [
+     "能悠闲一下，真好啊。",
+     "对不起。下次一定先联系。",
+     "那你再等三十分钟好吗？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Turning up half an hour late without a word — that's carefree beyond all reason."
+    ],
+    "options": [
+     "Nice that you could relax.",
+     "Sorry. Next time I'll definitely let you know.",
+     "Then can you wait another thirty minutes?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜にもほどがある」：……也太过分了。被责备，道歉并保证下次联系最自然。",
+   "en": "「〜にもほどがある」: going too far. Apologising and promising to call fits."
+  },
+  "wrong": [
+   {
+    "zh": "他在责备她迟到，不是说他悠闲。",
+    "en": "He's scolding her for being late, not talking about relaxing."
+   },
+   null,
+   {
+    "zh": "她已经到了，迟到被责备时再让对方等，说不通。",
+    "en": "She's already arrived; asking him to wait longer makes no sense."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n1-ck-517",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "データの裏付けもなしに結論を出すのは、いささか早計じゃないかね。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "ありがとうございます。早く仕上げてよかったです。",
+   "では、データを見てから結論を出してください。",
+   "申し訳ありません。根拠となる数字を補足します。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "没有数据支撑就下结论，是不是有点操之过急了？"
+    ],
+    "options": [
+     "谢谢。早点完成真是太好了。",
+     "那请看了数据再下结论。",
+     "非常抱歉。我补充作为根据的数据。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Drawing a conclusion without data to back it up is a little hasty, wouldn't you say?"
+    ],
+    "options": [
+     "Thank you. I'm glad I finished it early.",
+     "Then please look at the data before you conclude.",
+     "I'm sorry. I'll add the figures to support it."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「早計」：考虑不周、操之过急。被指出缺数据，道歉并补充根据，最自然。",
+   "en": "「早計」: hasty. Told the data is missing, apologising and adding it fits."
+  },
+  "wrong": [
+   {
+    "zh": "「早計」是批评“操之过急”，不是夸她快。",
+    "en": "「早計」 is criticism — 'hasty' — not praise for speed."
+   },
+   {
+    "zh": "下结论的是她自己，反过来要求上司，立场颠倒。",
+    "en": "She drew the conclusion; telling the boss to wait for data reverses roles."
+   },
+   null
+  ],
+  "traps": [
+   "intent",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n1-ck-518",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "彼の腕をもってすれば、この程度の仕事は朝飯前でしょうね。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "ええ、彼ならあっという間に片付けるでしょう。",
+   "恐れ入ります。私の腕を褒めていただいて。",
+   "そうですね、彼には少し荷が重いでしょう。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "以他的本事，这种程度的工作简直易如反掌吧。"
+    ],
+    "options": [
+     "是啊，他的话一下子就能搞定吧。",
+     "不敢当。承蒙您夸奖我的本事。",
+     "是啊，对他来说有点担子太重了吧。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "With his skills, a job like this must be a piece of cake."
+    ],
+    "options": [
+     "Yes, he'll have it done in no time.",
+     "You're too kind, praising my skills like that.",
+     "Yes, it's probably a bit much for him."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜をもってすれば」：凭……；「朝飯前」：易如反掌。附和“他一下子就能做完”最自然。",
+   "en": "「〜をもってすれば」: with…; 「朝飯前」: a breeze. Agreeing he'll finish fast fits."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "她夸的是“他”的本事，不是对方的，立场弄反了。",
+    "en": "She is praising his skills, not the listener's: the perspective is wrong."
+   },
+   {
+    "zh": "「朝飯前」是很容易，「荷が重い」正好相反。",
+    "en": "「朝飯前」 means easy; 「荷が重い」 is the opposite."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-ck-519",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "田中さん、例の件、もうお耳に入っていますか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "はい、では、すぐにお調べします。",
+   "いいえ、まだです。何かあったんですか。",
+   "はい、これから田中さんにお伝えします。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "田中，那件事，您已经听说了吗？"
+    ],
+    "options": [
+     "好，那我马上去查。",
+     "不，还没有。出什么事了吗？",
+     "好，我这就转告田中。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Ms Tanaka, have you heard about that matter yet?"
+    ],
+    "options": [
+     "Yes, I'll look into it right away.",
+     "No, not yet. Has something happened?",
+     "Yes, I'll pass it on to Ms Tanaka now."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「お耳に入る」：（敬语）听说。说还没听说并问出了什么事，最自然。",
+   "en": "「お耳に入る」 (honorific): to have heard. Saying not yet and asking what happened fits."
+  },
+  "wrong": [
+   {
+    "zh": "他只是问她听没听说，并没有请她去查。",
+    "en": "He is only asking whether she has heard, not asking her to look into it."
+   },
+   null,
+   {
+    "zh": "被问的就是田中本人，「田中さんにお伝えします」说不通。",
+    "en": "She is Tanaka — 'I'll tell Ms Tanaka' makes no sense."
+   }
+  ],
+  "traps": [
+   "intent",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n1-ck-520",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "ご提案の件ですが、社内で検討しました結果、今回は見送らせていただくことになりました。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "ありがとうございます。では、さっそく準備に入ります。",
+   "では、御社のご提案を拝見します。",
+   "そうですか。残念ですが、またの機会にぜひ。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "关于您的提案，我们公司内部研究后，决定这次暂不采用。"
+    ],
+    "options": [
+     "谢谢。那我马上开始准备。",
+     "那我来拜读贵公司的提案。",
+     "是吗。很遗憾，下次有机会请务必考虑。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "About your proposal — after internal discussion, we've decided to pass on it this time."
+    ],
+    "options": [
+     "Thank you. Then I'll start preparing right away.",
+     "Then I'll take a look at your company's proposal.",
+     "I see. That's a shame, but I hope there'll be another chance."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「見送らせていただく」：婉转地拒绝。表示遗憾、期待下次，最自然。",
+   "en": "「見送らせていただく」: a polite no. Expressing regret and hoping for next time fits."
+  },
+  "wrong": [
+   {
+    "zh": "「見送らせていただく」是婉拒，不是采用。",
+    "en": "「見送らせていただく」 is a polite rejection, not an acceptance."
+   },
+   {
+    "zh": "提案是他提出的，「御社のご提案」把立场弄反了。",
+    "en": "The proposal is his; 'your company's proposal' reverses the roles."
+   },
+   null
+  ],
+  "traps": [
+   "intent",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n1-ck-521",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "せっかく京都まで行ったのに、楽しみにしてた湯豆腐のお店には、結局行かずじまいでさ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "えっ、どうして？　時間が足りなかったの？",
+   "いいなあ。何がおいしかった？",
+   "じゃあ、そのお店には最後に行ったんだね。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "特意去了京都，结果期待的那家汤豆腐店最终还是没去成。"
+    ],
+    "options": [
+     "诶，为什么？时间不够吗？",
+     "真好啊。什么好吃？",
+     "那就是最后去了那家店啊。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I went all the way to Kyoto, and in the end I never made it to the tofu restaurant I'd been looking forward to."
+    ],
+    "options": [
+     "What, why? Did you run out of time?",
+     "Lucky you. What was good?",
+     "So you went there at the very end."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜ずじまい」：最终没能……。问没去成的原因，最自然。",
+   "en": "「〜ずじまい」: never ended up doing. Asking why fits."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「行かずじまい」是最终没去成，问什么好吃说不通。",
+    "en": "「行かずじまい」 means he never went — asking what was good makes no sense."
+   },
+   {
+    "zh": "「結局行かずじまい」是没去，不是最后才去。",
+    "en": "「結局行かずじまい」 means he didn't go, not that he went last."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "tense"
+  ]
+ },
+ {
+  "id": "n1-ck-522",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "まさか、あの山本さんが会社を辞めるとはね。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "うん、やっぱり辞めないと思ってたとおりだね。",
+   "じゃあ、山本さんに辞めるよう言ってみる？",
+   "うん、驚いたよ。仕事が好きそうだったのに。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "真没想到，那个山本居然会辞职。"
+    ],
+    "options": [
+     "嗯，果然和我想的一样，不会辞职呢。",
+     "那要不要劝山本辞职？",
+     "嗯，吓了一跳。他明明看起来很喜欢工作。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Who'd have thought Yamamoto of all people would quit the company?"
+    ],
+    "options": [
+     "Yeah, just as I thought — he's not quitting.",
+     "Then shall we suggest he quit?",
+     "Yeah, I was shocked. He seemed to love his work."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「まさか〜とは」：表示意外。一起表示惊讶，最自然。",
+   "en": "「まさか〜とは」 expresses surprise. Sharing the surprise fits."
+  },
+  "wrong": [
+   {
+    "zh": "山本是要辞职，「辞めないと思ってたとおり」和事实矛盾。",
+    "en": "He is quitting; 'just as I thought, he's not' contradicts the news."
+   },
+   {
+    "zh": "他已经要辞职了，不需要劝。",
+    "en": "He's already quitting; there's no need to suggest it."
+   },
+   null
+  ],
+  "traps": [
+   "contradiction",
+   "intent"
+  ]
+ },
+ {
+  "id": "n1-ck-523",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "先ほどのメールは私の手違いですので、どうぞご放念ください。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "はい、大切に保管しておきます。",
+   "承知しました。では、削除しておきます。",
+   "では、念のため皆さんに転送しておきます。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "刚才那封邮件是我弄错了，请您不必在意。"
+    ],
+    "options": [
+     "好的，我会好好保存。",
+     "知道了。那我删掉。",
+     "那为了保险，我转发给大家。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "The email I sent a moment ago was my mistake, so please disregard it."
+    ],
+    "options": [
+     "Certainly, I'll keep it safe.",
+     "Understood. I'll delete it, then.",
+     "Then I'll forward it to everyone, just in case."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「ご放念ください」：请不必在意（书面敬语）。答应删除，最自然。",
+   "en": "「ご放念ください」: please disregard (formal). Agreeing to delete it fits."
+  },
+  "wrong": [
+   {
+    "zh": "「ご放念ください」是“请忘掉、不必在意”，不是保存。",
+    "en": "「ご放念ください」 means 'please disregard it', not keep it."
+   },
+   null,
+   {
+    "zh": "她说邮件是发错了，转发给大家正好相反。",
+    "en": "She says the email was a mistake — forwarding it is the opposite."
+   }
+  ],
+  "traps": [
+   "intent",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-ck-524",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "部長の言い方、まるで私たちが何もしてないと言わんばかりだったね。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "ほんとだよ。こっちも必死なのに。",
+   "部長、僕たちのこと褒めてくれてたね。",
+   "え、部長、何も言わなかったの？"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "部长那语气，简直就像在说我们什么都没做。"
+    ],
+    "options": [
+     "就是啊。我们明明也在拼命。",
+     "部长夸了我们呢。",
+     "诶，部长什么都没说吗？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "The way the manager talked, it was as if he was saying we'd done nothing at all."
+    ],
+    "options": [
+     "Tell me about it. We're working ourselves ragged.",
+     "The manager was praising us, wasn't he?",
+     "What, didn't he say anything?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜と言わんばかり」：简直就像在说……。一起抱怨“我们也很拼命”最自然。",
+   "en": "「〜と言わんばかり」: as if to say. Sharing the complaint fits."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "她在抱怨部长的语气，不是夸奖。",
+    "en": "She's complaining about his tone, not reporting praise."
+   },
+   {
+    "zh": "「言わんばかり」是“简直像在说”，部长说了话，只是语气让人这么觉得。",
+    "en": "「言わんばかり」 means 'as good as said it' — he did speak, his tone implied it."
+   }
+  ],
+  "traps": [
+   "intent",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-ck-525",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "契約の前に、この書類、一通り目を通しておくに越したことはないよ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "え、もう読まなくていいの？",
+   "じゃあ、契約はやめておこうか。",
+   "そうだね。念のため読んでおく。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "签约之前，这份文件最好先大致看一遍。"
+    ],
+    "options": [
+     "诶，已经不用看了吗？",
+     "那就不签约了吧。",
+     "也是。保险起见我先看看。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Before you sign, it can't hurt to read through these papers."
+    ],
+    "options": [
+     "What, I don't need to read them any more?",
+     "Then shall I not sign?",
+     "True. I'll read them just in case."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜に越したことはない」：最好……。接受建议，先看一遍，最自然。",
+   "en": "「〜に越したことはない」: it's best to. Accepting the advice fits."
+  },
+  "wrong": [
+   {
+    "zh": "「〜に越したことはない」是“最好……”，不是不用看。",
+    "en": "「〜に越したことはない」 means it's best to — not that she needn't."
+   },
+   {
+    "zh": "他只是建议签约前先看文件，没说不签。",
+    "en": "He only advises reading first; he never says not to sign."
+   },
+   null
+  ],
+  "traps": [
+   "contradiction",
+   "intent"
+  ]
+ },
+ {
+  "id": "n1-ck-526",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "お客さんに、毎日とは言わないまでも、週に一回ぐらいは連絡がほしいって言われちゃった。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "え、毎日連絡しなきゃいけないの？",
+   "じゃあ、毎週一回は電話しようか。",
+   "そうか、もう連絡はいらないんだね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "客户说，就算不是每天，至少也希望一周联系一次。"
+    ],
+    "options": [
+     "诶，必须每天联系吗？",
+     "那每周至少打一次电话吧。",
+     "这样啊，已经不需要联系了啊。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "The client told me that, if not every day, they'd at least like to hear from us about once a week."
+    ],
+    "options": [
+     "What, we have to contact them every day?",
+     "Then shall we call them at least once a week?",
+     "I see, so they don't need to hear from us any more."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜ないまでも」：即使不……，至少也……。客户要求一周一次，提出每周打电话最自然。",
+   "en": "「〜ないまでも」: even if not…, at least. Offering a weekly call fits."
+  },
+  "wrong": [
+   {
+    "zh": "「毎日とは言わないまでも」是“不说每天”，要求的是每周一次。",
+    "en": "「毎日とは言わないまでも」 means 'not every day' — they want once a week."
+   },
+   null,
+   {
+    "zh": "客户是希望多联系，正好相反。",
+    "en": "The client wants more contact — the opposite."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-ck-527",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "親の心配をよそに、娘は一人で海外に行っちゃったよ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "心配だよね。でも、もう大人なんだから。",
+   "娘さん、心配して行くのをやめたんだ。",
+   "じゃあ、一緒について行ってあげたんだね。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "不顾父母的担心，女儿一个人去国外了。"
+    ],
+    "options": [
+     "确实担心吧。不过她已经是大人了。",
+     "你女儿担心，所以不去了啊。",
+     "那你陪她一起去了吧。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Ignoring all our worrying, my daughter went off abroad on her own."
+    ],
+    "options": [
+     "You must be worried. But she's an adult now.",
+     "So your daughter got worried and didn't go.",
+     "So you went along with her, then."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜をよそに」：不顾……。体谅父亲的担心并安慰他，最自然。",
+   "en": "「〜をよそに」: ignoring. Sympathising and reassuring him fits."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「〜をよそに」是“不顾”，女儿已经去了。",
+    "en": "「〜をよそに」 means 'ignoring' — she did go."
+   },
+   {
+    "zh": "他说女儿是「一人で」去的。",
+    "en": "He says she went 「一人で」, alone."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n1-ck-528",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "ほかならぬ君の頼みとあれば、断るわけにはいかないな。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "そっか。じゃあ、ほかの人に頼むね。",
+   "えっ、私が頼まれるの？",
+   "ありがとう。本当に助かる。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "既然是你的请求，那我可不能拒绝啊。"
+    ],
+    "options": [
+     "这样啊。那我去找别人。",
+     "诶，是我被拜托吗？",
+     "谢谢。真是帮大忙了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "If it's you asking, I can hardly say no."
+    ],
+    "options": [
+     "I see. Then I'll ask someone else.",
+     "What, you're asking me?",
+     "Thank you. That's a real help."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜とあれば」：如果是……的话（就愿意）。他答应了，道谢最自然。",
+   "en": "「〜とあれば」: if it's for…, I'll do it. He agrees, so thanks fits."
+  },
+  "wrong": [
+   {
+    "zh": "他是答应了，「ほかの人に頼む」把答应听成了拒绝。",
+    "en": "He's agreeing; asking someone else mistakes it for a refusal."
+   },
+   {
+    "zh": "是她拜托他，不是他拜托她。",
+    "en": "She asked him, not the other way round."
+   },
+   null
+  ],
+  "traps": [
+   "intent",
+   "perspective"
+  ]
+ }
+]

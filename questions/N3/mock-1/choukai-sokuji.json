@@ -1,0 +1,524 @@
+[
+ {
+  "id": "n3-m1-ck-501",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "あれ、その本、もう読み終わったの？"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "ううん、まだ借りてないんだ。",
+   "うん、読んでくれてありがとう。",
+   "うん、一晩で読んじゃった。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "咦，那本书你已经看完了？"
+    ],
+    "options": [
+     "没有，我还没借呢。",
+     "嗯，谢谢你看。",
+     "嗯，一个晚上就看完了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Oh, have you finished that book already?"
+    ],
+    "options": [
+     "No, I haven't borrowed it yet.",
+     "Yes, thanks for reading it.",
+     "Yes, I read it in one night."
+    ]
+   }
+  },
+  "why": {
+   "zh": "对方惊讶她这么快看完了，回答「一晩で読んじゃった」最自然。",
+   "en": "He's surprised she's finished already; 「一晩で読んじゃった」 is the natural reply."
+  },
+  "wrong": [
+   {
+    "zh": "书就在她手里，「まだ借りてない」前后矛盾。",
+    "en": "The book is in her hands — 「まだ借りてない」 makes no sense."
+   },
+   {
+    "zh": "「読んでくれてありがとう」是作者或借书给别人的人说的，立场反了。",
+    "en": "「読んでくれてありがとう」 is what the writer or lender would say — the wrong side."
+   },
+   null
+  ],
+  "traps": [
+   "contradiction",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n3-m1-ck-502",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "あれ、田中さん、まだ帰ってなかったんですか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "ええ、これだけ終わらせてから帰ります。",
+   "ええ、もうとっくに帰りましたよ。",
+   "いえ、まだ来ていないみたいですよ。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "咦，田中，你还没回去吗？"
+    ],
+    "options": [
+     "嗯，把这个做完再走。",
+     "嗯，我早就回去了。",
+     "没有，好像还没来。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Oh, Tanaka-san, you haven't gone home yet?"
+    ],
+    "options": [
+     "No, I'll head off once I've finished this.",
+     "Yes, I went home ages ago.",
+     "No, it seems they haven't come yet."
+    ]
+   }
+  },
+  "why": {
+   "zh": "对方惊讶他还在公司，回答还在的理由「これだけ終わらせてから帰ります」最自然。",
+   "en": "She's surprised he's still there; explaining 「これだけ終わらせてから帰ります」 is the natural reply."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "他明明还在这里，「もうとっくに帰りました」前后矛盾。",
+    "en": "He's standing right there — 「もうとっくに帰りました」 makes no sense."
+   },
+   {
+    "zh": "「まだ来ていない」说的是别人没来，可是问的是他自己。",
+    "en": "「まだ来ていない」 talks about someone not arriving — she's asking about him."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n3-m1-ck-503",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "先週の旅行、私も行けたらよかったんだけど……。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "よかったね。行けることになって。",
+   "残念だったね。今度写真見せるね。",
+   "うん、楽しんできてね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "上周的旅行，我要是也能去就好了……"
+    ],
+    "options": [
+     "太好了，你能去了。",
+     "真遗憾。下次给你看照片。",
+     "嗯，好好玩哦。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I wish I could have come on last week's trip too..."
+    ],
+    "options": [
+     "That's great — so you can come after all.",
+     "Shame you missed it. I'll show you the photos.",
+     "Yes, have fun."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「行けたらよかったんだけど」是遗憾自己没能去，回答「残念だったね。今度写真見せるね」最合适。",
+   "en": "「行けたらよかったんだけど」 regrets missing it; 「残念だったね。今度写真見せるね」 fits."
+  },
+  "wrong": [
+   {
+    "zh": "把「よかった」听成了好消息，其实她没能去。",
+    "en": "Takes 「よかった」 as good news — she couldn't go."
+   },
+   null,
+   {
+    "zh": "旅行是上周的事，已经结束了，「楽しんできてね」时态不对。",
+    "en": "The trip was last week and is over — 「楽しんできてね」 is the wrong time."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "tense"
+  ]
+ },
+ {
+  "id": "n3-m1-ck-504",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "田中さんって、甘いもの、嫌いなんですか。いつもケーキ断ってますよね。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "ええ、ケーキは断っておきました。",
+   "いえ、嫌いなわけじゃないんです。",
+   "いえ、断られたことはないですよ。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "田中，你不喜欢吃甜的吗？总是不要蛋糕。"
+    ],
+    "options": [
+     "嗯，蛋糕我已经推掉了。",
+     "不，倒不是不喜欢。",
+     "不，我从来没被拒绝过。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Tanaka-san, don't you like sweet things? You always turn down cake."
+    ],
+    "options": [
+     "Yes, I've turned the cake down.",
+     "No, it's not that I dislike them.",
+     "No, I've never been turned down."
+    ]
+   }
+  },
+  "why": {
+   "zh": "对方问他是不是讨厌甜食，用「嫌いなわけじゃない」（并不是讨厌）否定，后面可以接真正的理由。",
+   "en": "She asks whether he dislikes sweets; 「嫌いなわけじゃない」 denies it, leaving room for the real reason."
+  },
+  "wrong": [
+   {
+    "zh": "照搬「断る」，说的是某一次推掉了蛋糕，没有回答喜不喜欢。",
+    "en": "Echoes 「断る」 about one occasion and never answers whether he likes them."
+   },
+   null,
+   {
+    "zh": "「断られた」是被别人拒绝，立场反了，拒绝的是他自己。",
+    "en": "「断られた」 means being turned down — but he's the one who refuses."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n3-m1-ck-505",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "雨、降ってきたね。よかったら、この傘使って。僕、もう一本あるから。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "ううん、雨は降ってないよ。",
+   "うん、使ってくれてありがとう。",
+   "え、いいの？ありがとう、助かる。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "下起雨来了。不介意的话用这把伞吧。我还有一把。"
+    ],
+    "options": [
+     "没有，没在下雨啊。",
+     "嗯，谢谢你用。",
+     "啊，可以吗？谢谢，帮大忙了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "It's started raining. Take this umbrella if you like — I've got another one."
+    ],
+    "options": [
+     "No, it isn't raining.",
+     "Yes, thanks for using it.",
+     "Really? Thanks, that's a big help."
+    ]
+   }
+  },
+  "why": {
+   "zh": "对方把伞借给自己，回答「いいの？ありがとう、助かる」接受好意。",
+   "en": "He's lending her an umbrella; 「いいの？ありがとう、助かる」 accepts it."
+  },
+  "wrong": [
+   {
+    "zh": "对方说下雨了，「雨は降ってないよ」前后矛盾，也没有回应借伞。",
+    "en": "He says it's raining; 「雨は降ってないよ」 contradicts that and ignores the offer."
+   },
+   {
+    "zh": "「使ってくれてありがとう」是借出东西的人说的，立场反了。",
+    "en": "「使ってくれてありがとう」 is what the lender says — the wrong side."
+   },
+   null
+  ],
+  "traps": [
+   "contradiction",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n3-m1-ck-506",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "小林くん、今日はなんだか元気ないね。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "うん、実はちょっと嫌なことがあって。",
+   "うん、おかげさまで元気になったよ。",
+   "うん、今日もとても元気だよ。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "小林，你今天好像没什么精神啊。"
+    ],
+    "options": [
+     "嗯，其实遇到了点不开心的事。",
+     "嗯，托你的福，我好了。",
+     "嗯，我今天也很有精神。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Kobayashi, you seem a bit down today."
+    ],
+    "options": [
+     "Yeah, actually something bad happened.",
+     "Yes, thanks to you I'm better now.",
+     "Yes, I'm full of energy today too."
+    ]
+   }
+  },
+  "why": {
+   "zh": "对方关心他没精神，说出原因「実はちょっと嫌なことがあって」最自然。",
+   "en": "She's worried he looks down; explaining 「実はちょっと嫌なことがあって」 is natural."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「おかげさまで元気になった」和「元気ない」对不上，也没有可以感谢的事。",
+    "en": "「おかげさまで元気になった」 contradicts looking down, and there's nothing to thank her for."
+   },
+   {
+    "zh": "「うん」表示同意没精神，后面却说「元気だよ」，前后矛盾。",
+    "en": "「うん」 agrees he's down, then 「元気だよ」 says the opposite."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n3-m1-ck-507",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "すみません、このシャツ、試着してもいいですか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "はい、よくお似合いでしたよ。",
+   "はい、試着させていただきます。",
+   "はい、試着室はあちらでございます。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "不好意思，这件衬衫可以试穿吗？"
+    ],
+    "options": [
+     "好的，您穿着很合适。",
+     "好的，那我就试穿了。",
+     "好的，试衣间在那边。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Excuse me, may I try this shirt on?"
+    ],
+    "options": [
+     "Yes, it suited you very well.",
+     "Yes, I'll try it on.",
+     "Of course, the fitting room is over there."
+    ]
+   }
+  },
+  "why": {
+   "zh": "顾客问能不能试穿，店员回答「試着室はあちらでございます」带路。",
+   "en": "The customer asks to try it on; the clerk points the way: 「試着室はあちらでございます」."
+  },
+  "wrong": [
+   {
+    "zh": "还没试穿，「お似合いでした」时机不对。",
+    "en": "He hasn't tried it on yet — 「お似合いでした」 is too early."
+   },
+   {
+    "zh": "「試着させていただきます」是顾客自己的话，立场反了。",
+    "en": "「試着させていただきます」 is what the customer would say — wrong side."
+   },
+   null
+  ],
+  "traps": [
+   "timing",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n3-m1-ck-508",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "ここから美術館まで歩くと、けっこうあるよ。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "へえ、美術館にあるんだ。",
+   "じゃあ、バスで行こうか。",
+   "うん、歩いてよかったね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "从这儿走到美术馆，还挺远的哦。"
+    ],
+    "options": [
+     "哦，在美术馆有啊。",
+     "那我们坐公交去吧。",
+     "嗯，走过来真好。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "It's quite a way to the art museum from here on foot."
+    ],
+    "options": [
+     "Oh, so it's at the museum.",
+     "Then shall we take the bus?",
+     "Yeah, good thing we walked."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「けっこうある」是说距离挺远，所以回答「バスで行こうか」。",
+   "en": "「けっこうある」 means it's quite far, so 「バスで行こうか」 fits."
+  },
+  "wrong": [
+   {
+    "zh": "把「ある」听成了“有东西”，误解了意思。",
+    "en": "Hears 「ある」 as 'there is something' — misses the meaning."
+   },
+   null,
+   {
+    "zh": "还没走，「歩いてよかった」时态不对，也和“很远”对不上。",
+    "en": "They haven't walked yet — wrong tense, and it ignores 'far'."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "tense"
+  ]
+ },
+ {
+  "id": "n3-m1-ck-509",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "あ、もうこんな時間。そろそろ失礼します。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "そうですか。また来てくださいね。",
+   "いらっしゃい。どうぞ上がってください。",
+   "はい、お先に失礼します。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "啊，都这个时间了。我该告辞了。"
+    ],
+    "options": [
+     "是吗。欢迎再来啊。",
+     "欢迎欢迎，请进。",
+     "好的，我先走了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Oh, look at the time. I should be going."
+    ],
+    "options": [
+     "Oh, I see. Please come again.",
+     "Welcome. Please come in.",
+     "Yes, I'll be off first."
+    ]
+   }
+  },
+  "why": {
+   "zh": "客人说要告辞，主人回答「また来てくださいね」送客。",
+   "en": "The guest is leaving, so the host says 「また来てくださいね」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「いらっしゃい、上がって」是客人刚到时说的，时机不对。",
+    "en": "「いらっしゃい、上がって」 is for when a guest arrives — wrong moment."
+   },
+   {
+    "zh": "「お先に失礼します」是要离开的人说的，主人不走，照搬「失礼」不对。",
+    "en": "「お先に失礼します」 is said by the one leaving — the host isn't going anywhere."
+   }
+  ],
+  "traps": [
+   "timing",
+   "repeat-word"
+  ]
+ }
+]

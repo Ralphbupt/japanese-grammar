@@ -1,0 +1,858 @@
+[
+  {
+    "id": "n2-l60-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson60#1"
+    ],
+    "difficulty": 1,
+    "stem": "合格の知らせを聞いて、嬉しさの（　）思わず泣き出してしまった。",
+    "options": [
+      "末に",
+      "反面",
+      "あまり",
+      "かわりに"
+    ],
+    "answer": 2,
+    "full": "合格の知らせを聞いて、嬉しさのあまり思わず泣き出してしまった。",
+    "tr": {
+      "zh": "听到合格的消息，高兴过头，不由得哭了出来。",
+      "en": "Hearing that I'd passed, I was so happy that I burst into tears."
+    },
+    "why": {
+      "zh": "「嬉しさの」是“名词＋の”，能这样接、又表示“由于过度……导致”的是「あまり」。",
+      "en": "「嬉しさの」 is noun ＋ の; the form that takes it and means \"so much… that\" is 「あまり」."
+    },
+    "wrong": [
+      {
+        "zh": "「末に」表示经过长时间努力或曲折之后，「嬉しさの末に」不成立。",
+        "en": "「末に」 means 'after a long process'; 「嬉しさの末に」 doesn't work."
+      },
+      {
+        "zh": "「反面」表示同一事物的另一面（相反），与“高兴得哭了”不是对比关系。",
+        "en": "「反面」 introduces a contrasting side; joy and crying here aren't a contrast."
+      },
+      null,
+      {
+        "zh": "「かわりに」是“代替/作为交换”，不表示原因。",
+        "en": "「かわりに」 means 'instead of / in return', not a cause."
+      }
+    ]
+  },
+  {
+    "id": "n2-l60-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson60#1"
+    ],
+    "difficulty": 2,
+    "stem": "彼は失敗を恐れる（　）、新しいことに何も挑戦できなくなっている。",
+    "options": [
+      "だけあって",
+      "からには",
+      "あまり",
+      "にしろ"
+    ],
+    "answer": 2,
+    "full": "彼は失敗を恐れるあまり、新しいことに何も挑戦できなくなっている。",
+    "tr": {
+      "zh": "他由于过于害怕失败，什么新事物都不敢尝试了。",
+      "en": "He's so afraid of failing that he can no longer try anything new."
+    },
+    "why": {
+      "zh": "“过分害怕失败”导致“什么都不敢尝试”这种不正常的结果，用「動詞辞書形＋あまり」。",
+      "en": "Excessive fear leads to an abnormal result (trying nothing new): dictionary form ＋ 「あまり」."
+    },
+    "wrong": [
+      {
+        "zh": "「だけあって」是“不愧是……”，用于正面评价，与“什么都不敢挑战”矛盾。",
+        "en": "「だけあって」 means 'as you'd expect from' and praises; it clashes with 'can't try anything'."
+      },
+      {
+        "zh": "「からには」是“既然……就”，后面应接决心或义务，不接消极结果。",
+        "en": "「からには」 means 'now that…' and leads to a resolve or duty, not a negative result."
+      },
+      null,
+      {
+        "zh": "「にしろ」是“即使……”，后面应接转折，不表示原因。",
+        "en": "「にしろ」 means 'even if', not a cause."
+      }
+    ]
+  },
+  {
+    "id": "n2-l60-003",
+    "type": "narabe",
+    "refs": [
+      "lesson60#1"
+    ],
+    "difficulty": 2,
+    "stem": "子どもの将来を [_] [_] [_] [★] しまう親もいる。",
+    "options": [
+      "何にでも",
+      "心配する",
+      "干渉しすぎて",
+      "あまり"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "子どもの将来を心配するあまり何にでも干渉しすぎてしまう親もいる。",
+    "tr": {
+      "zh": "也有父母因为过分担心孩子的将来，什么事都过度干涉。",
+      "en": "Some parents worry so much about their children's future that they end up meddling in everything."
+    },
+    "why": {
+      "zh": "「将来を心配する」接「あまり」，后面是结果「何にでも干渉しすぎてしまう」：心配する → あまり → 何にでも → 干渉しすぎて。★ 是「干渉しすぎて」。",
+      "en": "「将来を心配する」 takes 「あまり」, then the result 「何にでも干渉しすぎてしまう」: 心配する → あまり → 何にでも → 干渉しすぎて. The ★ is 「干渉しすぎて」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l60-004",
+    "rev": 2,
+    "type": "bunpou",
+    "refs": [
+      "lesson60#2"
+    ],
+    "difficulty": 2,
+    "stem": "あなたの将来を（　）、あえて厳しいことを言うのです。",
+    "options": [
+      "考えたばかりに",
+      "考えるからといって",
+      "考えればこそ",
+      "考えたところで"
+    ],
+    "answer": 2,
+    "full": "あなたの将来を考えればこそ、あえて厳しいことを言うのです。",
+    "tr": {
+      "zh": "正因为为你的将来着想，我才特意说严厉的话。",
+      "en": "It's precisely because I'm thinking of your future that I'm deliberately being strict."
+    },
+    "why": {
+      "zh": "“正因为为你的将来着想，才特意说严厉的话”强调积极的原因，用「〜ばこそ」，与「のです」呼应。",
+      "en": "\"Precisely because I care about your future, I'm being strict\" stresses a positive reason: 「〜ばこそ」, matching 「のです」."
+    },
+    "wrong": [
+      {
+        "zh": "「ばかりに」表示“就因为……才（导致坏结果）”，与「あえて」的主动意图不符。",
+        "en": "「ばかりに」 means 'just because… (something bad happened)'; it clashes with the deliberate 「あえて」."
+      },
+      {
+        "zh": "「からといって」后面要接否定（“并不因此就……”），这里是肯定句。",
+        "en": "「からといって」 needs a negative after it ('doesn't mean that…'); this sentence is affirmative."
+      },
+      null,
+      {
+        "zh": "「たところで」表示“即使做了也没用”，与“所以才说”的因果相反。",
+        "en": "「たところで」 means 'even if… it's no use', the opposite of a reason."
+      }
+    ]
+  },
+  {
+    "id": "n2-l60-005",
+    "rev": 2,
+    "type": "bunpou",
+    "refs": [
+      "lesson60#2"
+    ],
+    "difficulty": 2,
+    "stem": "信頼関係が（　）、部下も本音を話してくれるのだ。",
+    "options": [
+      "あるにしろ",
+      "あったところで",
+      "あればこそ",
+      "あるくせに"
+    ],
+    "answer": 2,
+    "full": "信頼関係があればこそ、部下も本音を話してくれるのだ。",
+    "tr": {
+      "zh": "正因为有信赖关系，下属才会说真心话。",
+      "en": "It's precisely because there's trust that your staff will tell you what they really think."
+    },
+    "why": {
+      "zh": "“正因为有信赖关系，下属才说真心话”强调原因，用「〜ばこそ」，与句末「のだ」呼应。",
+      "en": "\"It's precisely because there's trust that staff speak frankly\" stresses the reason: 「〜ばこそ」, matching 「のだ」."
+    },
+    "wrong": [
+      {
+        "zh": "「にしろ」是“即使……”，表示让步，后面应是转折。",
+        "en": "「にしろ」 means 'even if' and needs a contrast after it."
+      },
+      {
+        "zh": "「たところで」是“即使……也没用”，与“下属会说真心话”相矛盾。",
+        "en": "「たところで」 means 'even if… no use', contradicting 'staff will speak frankly'."
+      },
+      null,
+      {
+        "zh": "「くせに」是“明明……却”，带责备语气，与后半句的积极结果不符。",
+        "en": "「くせに」 means 'even though (reproachful)'; it doesn't fit a positive result."
+      }
+    ]
+  },
+  {
+    "id": "n2-l60-006",
+    "type": "narabe",
+    "refs": [
+      "lesson60#2"
+    ],
+    "difficulty": 2,
+    "stem": "選手たちが毎日地道な [_] [_] [★] [_] のだ。",
+    "options": [
+      "勝てた",
+      "続けれ",
+      "努力を",
+      "ばこそ"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "選手たちが毎日地道な努力を続ければこそ勝てたのだ。",
+    "tr": {
+      "zh": "正因为选手们每天踏踏实实地坚持努力，才能获胜。",
+      "en": "It's precisely because the players kept up steady effort every day that they won."
+    },
+    "why": {
+      "zh": "「地道な努力を続ける」的假定形「続けれ」加「ばこそ」，再接结果「勝てたのだ」：努力を → 続けれ → ばこそ → 勝てた。★ 是「ばこそ」。",
+      "en": "「地道な努力を続ける」 in the ば-form (続けれ) ＋ 「ばこそ」, then the result 「勝てたのだ」: 努力を → 続けれ → ばこそ → 勝てた. The ★ is 「ばこそ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l60-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson60#3"
+    ],
+    "difficulty": 2,
+    "stem": "期待が大きかった（　）、落選したときの落胆も大きかった。",
+    "options": [
+      "だけあって",
+      "だけに",
+      "にしろ",
+      "わりに"
+    ],
+    "answer": 1,
+    "full": "期待が大きかっただけに、落選したときの落胆も大きかった。",
+    "tr": {
+      "zh": "正因为期望很大，落选时的失落也更大。",
+      "en": "Because my hopes had been so high, the disappointment when I wasn't chosen was all the greater."
+    },
+    "why": {
+      "zh": "“期望大→失落也更大”是“正因为……所以更加……”，结果是负面的，用「だけに」。",
+      "en": "\"High hopes → all the greater disappointment\" is \"all the more because\", with a negative result — 「だけに」."
+    },
+    "wrong": [
+      {
+        "zh": "「だけあって」是“不愧是”，用于正面评价，不能接“失望也大”。",
+        "en": "「だけあって」 means 'as you'd expect from' and praises; it can't lead to 'the disappointment was great'."
+      },
+      null,
+      {
+        "zh": "「にしろ」表示让步“即使……”，与“期待大→失望也大”的因果不符。",
+        "en": "「にしろ」 is concessive ('even if'), not the cause-and-effect needed here."
+      },
+      {
+        "zh": "「わりに」是“与……相比出乎意料”，期待大、失望也大是正比关系，不是意外。",
+        "en": "「わりに」 means 'considering…, unexpectedly'; big hopes → big disappointment is proportional, not unexpected."
+      }
+    ]
+  },
+  {
+    "id": "n2-l60-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson60#3"
+    ],
+    "difficulty": 2,
+    "stem": "大事な試合だった（　）、負けたのは本当に悔しい。",
+    "options": [
+      "からといって",
+      "ものの",
+      "わりには",
+      "だけに"
+    ],
+    "answer": 3,
+    "full": "大事な試合だっただけに、負けたのは本当に悔しい。",
+    "tr": {
+      "zh": "正因为是一场重要的比赛，输了真的很不甘心。",
+      "en": "Precisely because it was such an important match, losing is really frustrating."
+    },
+    "why": {
+      "zh": "“比赛很重要→输了更不甘心”，原因加深负面感受，用正反面都能用的「だけに」。",
+      "en": "\"Important match → all the more bitter loss\": a reason intensifying a negative feeling takes 「だけに」, which works both ways."
+    },
+    "wrong": [
+      {
+        "zh": "「からといって」后面要接否定（“并不因此就……”），这里不成立。",
+        "en": "「からといって」 needs a 'doesn't mean that…' negative after it."
+      },
+      {
+        "zh": "「ものの」是“虽然……但是”，表示逆接，而“重要的比赛→输了很懊恼”是顺接。",
+        "en": "「ものの」 is 'although'; 'it was important → losing hurts' is cause and effect, not a contrast."
+      },
+      {
+        "zh": "「わりには」是“与……相比出乎意料”，这里没有意外的对比。",
+        "en": "「わりには」 means 'considering…, unexpectedly'; there's no surprise here."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l60-009",
+    "type": "narabe",
+    "refs": [
+      "lesson60#3"
+    ],
+    "difficulty": 2,
+    "stem": "長年 [★] [_] [_] [_]、別れはいっそう寂しい。",
+    "options": [
+      "仲間",
+      "だけに",
+      "働いてきた",
+      "一緒に"
+    ],
+    "order": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "full": "長年一緒に働いてきた仲間だけに、別れはいっそう寂しい。",
+    "tr": {
+      "zh": "正因为是多年一起工作的伙伴，分别更加让人寂寞。",
+      "en": "Because we've worked together for so many years, saying goodbye is all the sadder."
+    },
+    "why": {
+      "zh": "「長年一緒に働いてきた」修饰「仲間」，名词后直接接「だけに」：一緒に → 働いてきた → 仲間 → だけに。★ 是「一緒に」。",
+      "en": "「長年一緒に働いてきた」 modifies 「仲間」, which takes 「だけに」 directly: 一緒に → 働いてきた → 仲間 → だけに. The ★ is 「一緒に」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l60-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson60#4"
+    ],
+    "difficulty": 1,
+    "stem": "さすが十年もプロとして活躍してきた（　）、彼の演奏は格が違う。",
+    "options": [
+      "ばかりに",
+      "だけあって",
+      "ものだから",
+      "どころか"
+    ],
+    "answer": 1,
+    "full": "さすが十年もプロとして活躍してきただけあって、彼の演奏は格が違う。",
+    "tr": {
+      "zh": "不愧是当了十年职业演奏家的人，他的演奏就是高出一个档次。",
+      "en": "As you'd expect of someone who's performed professionally for ten years, his playing is in a different class."
+    },
+    "why": {
+      "zh": "「さすが」和正面评价「格が違う」呼应，表示“不愧是”，用「だけあって」。",
+      "en": "「さすが」 and the praise 「格が違う」 call for \"as expected of\" — 「だけあって」."
+    },
+    "wrong": [
+      {
+        "zh": "「ばかりに」表示“就因为……导致坏结果”，和正面评价不符。",
+        "en": "「ばかりに」 leads to a bad result, not praise."
+      },
+      null,
+      {
+        "zh": "「ものだから」是辩解的理由，和「さすが」的赞叹语气不符。",
+        "en": "「ものだから」 gives an excuse; it doesn't fit the admiration of 「さすが」."
+      },
+      {
+        "zh": "「どころか」是“别说……反而……”，表示相反或递进，和「さすが」不搭配。",
+        "en": "「どころか」 (far from…) signals a reversal and doesn't go with 「さすが」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l60-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson60#4"
+    ],
+    "difficulty": 2,
+    "stem": "この店は評判がいい（　）、料理も接客も申し分なかった。",
+    "options": [
+      "わりに",
+      "くせに",
+      "ものの",
+      "だけあって"
+    ],
+    "answer": 3,
+    "full": "この店は評判がいいだけあって、料理も接客も申し分なかった。",
+    "tr": {
+      "zh": "这家店不愧口碑好，菜品和服务都无可挑剔。",
+      "en": "True to its reputation, this restaurant's food and service were impeccable."
+    },
+    "why": {
+      "zh": "口碑好→果然无可挑剔，结果符合期待且是正面评价，用「だけあって」。",
+      "en": "Good reputation → impeccable, as expected: a positive result that lives up to it — 「だけあって」."
+    },
+    "wrong": [
+      {
+        "zh": "「わりに」是“与……相比（出乎意料）”，用于结果和预期不符，这里结果正符合预期。",
+        "en": "「わりに」 is for results that don't match expectations; here they do."
+      },
+      {
+        "zh": "「くせに」是“明明……却”，带指责语气，和赞扬不符。",
+        "en": "「くせに」 (even though, with blame) doesn't fit praise."
+      },
+      {
+        "zh": "「ものの」是“虽然……但是”，后面应接相反的内容，这里前后一致。",
+        "en": "「ものの」 (although) needs a contrast, but both halves agree."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l60-012",
+    "type": "narabe",
+    "refs": [
+      "lesson60#4"
+    ],
+    "difficulty": 2,
+    "stem": "さすが長年 [_] [_] [★] [_]、彼女の訳は正確で読みやすい。",
+    "options": [
+      "だけあって",
+      "翻訳の",
+      "携わってきた",
+      "仕事に"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "さすが長年翻訳の仕事に携わってきただけあって、彼女の訳は正確で読みやすい。",
+    "tr": {
+      "zh": "不愧是多年从事翻译工作的人，她的译文准确又易读。",
+      "en": "As you'd expect from someone who's worked in translation for years, her translations are accurate and easy to read."
+    },
+    "why": {
+      "zh": "「翻訳の仕事に携わってきた」是条件，后接「だけあって」，再接正面评价：翻訳の → 仕事に → 携わってきた → だけあって。★ 是「携わってきた」。",
+      "en": "「翻訳の仕事に携わってきた」 is the background, followed by 「だけあって」 and the praise: 翻訳の → 仕事に → 携わってきた → だけあって. The ★ is 「携わってきた」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l60-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson60#5"
+    ],
+    "difficulty": 1,
+    "stem": "すみません、電車が事故で止まってしまった（　）、会議に遅れてしまいました。",
+    "options": [
+      "からには",
+      "ものの",
+      "ものだから",
+      "ばかりか"
+    ],
+    "answer": 2,
+    "full": "すみません、電車が事故で止まってしまったものだから、会議に遅れてしまいました。",
+    "tr": {
+      "zh": "对不起，因为电车出事故停了，开会迟到了。",
+      "en": "I'm sorry — the train was stopped by an accident, so I was late for the meeting."
+    },
+    "why": {
+      "zh": "「すみません」之后解释迟到的原因（辩解），用「ものだから」。",
+      "en": "After 「すみません」 the speaker explains why they were late — an excuse: 「ものだから」."
+    },
+    "wrong": [
+      {
+        "zh": "「からには」是“既然……就应该”，后面应接决心或义务，不用于道歉时解释原因。",
+        "en": "「からには」 means 'now that…, one must'; it isn't used to explain an excuse."
+      },
+      {
+        "zh": "「ものの」是“虽然……但是”，表示逆接，与因果关系不符。",
+        "en": "「ものの」 is 'although'; it doesn't give a cause."
+      },
+      null,
+      {
+        "zh": "「ばかりか」是“不仅……而且”，表示递进，不是原因。",
+        "en": "「ばかりか」 means 'not only… but also', not a reason."
+      }
+    ]
+  },
+  {
+    "id": "n2-l60-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson60#5"
+    ],
+    "difficulty": 2,
+    "stem": "初めての海外出張な（　）、何を準備すればいいのか分からなくて。",
+    "options": [
+      "のに",
+      "ものだから",
+      "くせに",
+      "ものの"
+    ],
+    "answer": 1,
+    "full": "初めての海外出張なものだから、何を準備すればいいのか分からなくて。",
+    "tr": {
+      "zh": "因为是第一次去海外出差，不知道该准备些什么。",
+      "en": "It's my first business trip abroad, so I don't know what I should prepare."
+    },
+    "why": {
+      "zh": "「出張な」是“名词＋な”，能这样接、又表示辩解原因的是「ものだから」。",
+      "en": "「出張な」 is noun ＋ な; the form that takes it and gives an excuse is 「ものだから」."
+    },
+    "wrong": [
+      {
+        "zh": "「のに」是“明明……却”，表示逆接，这里是说明原因。",
+        "en": "「のに」 is 'even though'; the speaker is giving a reason here."
+      },
+      null,
+      {
+        "zh": "「くせに」带责备语气（“明明……还”），不能用于说自己的情况。",
+        "en": "「くせに」 is reproachful and isn't used about one's own situation."
+      },
+      {
+        "zh": "「ものの」是“虽然……但是”，表示逆接，与说明理由不符。",
+        "en": "「ものの」 is 'although', not a reason."
+      }
+    ]
+  },
+  {
+    "id": "n2-l60-015",
+    "type": "narabe",
+    "refs": [
+      "lesson60#5"
+    ],
+    "difficulty": 2,
+    "stem": "ゆうべ [_] [★] [_] [_]、今朝は寝坊してしまいました。",
+    "options": [
+      "だから",
+      "もの",
+      "遅くまで",
+      "起きていた"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "ゆうべ遅くまで起きていたものだから、今朝は寝坊してしまいました。",
+    "tr": {
+      "zh": "因为昨晚熬到很晚，今天早上睡过头了。",
+      "en": "I stayed up late last night, so I overslept this morning."
+    },
+    "why": {
+      "zh": "「遅くまで起きていた」是原因，后接辩解的「ものだから」：遅くまで → 起きていた → もの → だから。★ 是「起きていた」。",
+      "en": "「遅くまで起きていた」 is the cause, followed by the excuse marker 「ものだから」: 遅くまで → 起きていた → もの → だから. The ★ is 「起きていた」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l60-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson60#6"
+    ],
+    "difficulty": 1,
+    "stem": "確認を怠った（　）、取引先に大きな迷惑をかけてしまった。",
+    "options": [
+      "だけあって",
+      "ところで",
+      "どころか",
+      "ばかりに"
+    ],
+    "answer": 3,
+    "full": "確認を怠ったばかりに、取引先に大きな迷惑をかけてしまった。",
+    "tr": {
+      "zh": "就因为疏于确认，给客户添了很大的麻烦。",
+      "en": "Just because I neglected to check, I caused our client a lot of trouble."
+    },
+    "why": {
+      "zh": "一个原因（没确认）导致令人后悔的结果（「迷惑をかけてしまった」），用「ばかりに」。",
+      "en": "One cause (not checking) led to a regrettable result (「迷惑をかけてしまった」): 「ばかりに」."
+    },
+    "wrong": [
+      {
+        "zh": "「だけあって」是“不愧是”，用于正面评价，与“给对方添了大麻烦”不符。",
+        "en": "「だけあって」 praises ('as you'd expect'); it can't lead to causing trouble."
+      },
+      {
+        "zh": "「たところで」是“即使……也没用”，后面应接否定或无效的结果，不接已发生的事实。",
+        "en": "「たところで」 means 'even if… no use' and isn't followed by a past fact."
+      },
+      {
+        "zh": "「どころか」是“别说……反而”，与“因为疏忽导致麻烦”的因果不符。",
+        "en": "「どころか」 means 'far from…, rather'; it doesn't express a cause."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l60-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson60#6"
+    ],
+    "difficulty": 2,
+    "stem": "お金がない（　）、彼は大学進学を諦めざるを得なかった。",
+    "options": [
+      "ばかりか",
+      "ものの",
+      "ばかりに",
+      "だけあって"
+    ],
+    "answer": 2,
+    "full": "お金がないばかりに、彼は大学進学を諦めざるを得なかった。",
+    "tr": {
+      "zh": "就因为没有钱，他不得不放弃上大学。",
+      "en": "Just because he had no money, he had to give up on going to university."
+    },
+    "why": {
+      "zh": "“没钱”是唯一原因，导致遗憾的结果（不得不放弃升学），用「ばかりに」。",
+      "en": "Lack of money is the single cause of a regrettable result: 「ばかりに」."
+    },
+    "wrong": [
+      {
+        "zh": "「ばかりか」是“不仅……而且”，表示递进，不表示原因。",
+        "en": "「ばかりか」 means 'not only… but also', not a cause."
+      },
+      {
+        "zh": "「ものの」是“虽然……但是”，“没钱”和“放弃升学”不是转折关系。",
+        "en": "「ものの」 is 'although'; having no money and giving up university aren't a contrast."
+      },
+      null,
+      {
+        "zh": "「だけあって」是“不愧是”，用于正面评价，不能接没钱这样的消极原因。",
+        "en": "「だけあって」 praises ('as you'd expect'); it doesn't fit 'having no money'."
+      }
+    ]
+  },
+  {
+    "id": "n2-l60-018",
+    "type": "narabe",
+    "refs": [
+      "lesson60#6"
+    ],
+    "difficulty": 2,
+    "stem": "たった一言 [_] [_] [★] [_] 失ってしまった。",
+    "options": [
+      "言った",
+      "長年の信用を",
+      "余計なことを",
+      "ばかりに"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "たった一言余計なことを言ったばかりに長年の信用を失ってしまった。",
+    "tr": {
+      "zh": "就因为多说了一句多余的话，失去了多年积累的信用。",
+      "en": "Just because I said one thing too many, I lost the trust I'd built up over years."
+    },
+    "why": {
+      "zh": "「一言余計なことを言った」是原因，接「ばかりに」，再接坏结果「長年の信用を失ってしまった」：余計なことを → 言った → ばかりに → 長年の信用を。★ 是「ばかりに」。",
+      "en": "「一言余計なことを言った」 is the cause, then 「ばかりに」 and the bad result 「長年の信用を失ってしまった」: 余計なことを → 言った → ばかりに → 長年の信用を. The ★ is 「ばかりに」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l60-019",
+    "type": "bunpou",
+    "refs": [
+      "lesson60#7"
+    ],
+    "difficulty": 1,
+    "stem": "時間に厳しい部長の（　）、会議には10分前に来ているだろう。",
+    "options": [
+      "くせに",
+      "ことだから",
+      "わりに",
+      "おかげで"
+    ],
+    "answer": 1,
+    "full": "時間に厳しい部長のことだから、会議には10分前に来ているだろう。",
+    "tr": {
+      "zh": "部长那么守时，开会应该会提前10分钟到吧。",
+      "en": "Knowing how strict the manager is about time, he'll probably be at the meeting ten minutes early."
+    },
+    "why": {
+      "zh": "根据大家熟知的部长的性格（守时）推测「来ているだろう」，「名詞＋の」后接「ことだから」。",
+      "en": "From the manager's well-known punctuality the speaker guesses 「来ているだろう」; after 「noun + の」 it's 「ことだから」."
+    },
+    "wrong": [
+      {
+        "zh": "「くせに」是“明明……却”，带责备语气，后面应是与身份不符的行为，不接推测。",
+        "en": "「くせに」 is reproachful ('even though he is…'); it doesn't lead to a guess."
+      },
+      null,
+      {
+        "zh": "「わりに」是“与……相比出乎意料”，“时间观念强的部长早到”并不意外。",
+        "en": "「わりに」 means 'considering…, unexpectedly'; a punctual manager arriving early isn't unexpected."
+      },
+      {
+        "zh": "「おかげで」表示带来好结果的原因，后面接已发生的事，不接推测「だろう」。",
+        "en": "「おかげで」 gives the cause of a good result that happened, not a guess with 「だろう」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l60-020",
+    "type": "bunpou",
+    "refs": [
+      "lesson60#7"
+    ],
+    "difficulty": 2,
+    "stem": "A「田中さん、まだ来ないね。」\nB「のんびりした彼の（　）、どこかで寄り道でもしているんじゃない？」",
+    "options": [
+      "ことだから",
+      "くせに",
+      "せいで",
+      "おかげで"
+    ],
+    "answer": 0,
+    "full": "A「田中さん、まだ来ないね。」\nB「のんびりした彼のことだから、どこかで寄り道でもしているんじゃない？」",
+    "tr": {
+      "zh": "A：“田中还没来啊。”\nB：“他那么慢悠悠的，大概是在哪儿顺路逛去了吧？”",
+      "en": "A: \"Tanaka still isn't here.\"\nB: \"Laid-back as he is, he's probably stopped off somewhere on the way, don't you think?\""
+    },
+    "why": {
+      "zh": "B根据两人都了解的田中的性格（慢悠悠）推测「寄り道でもしているんじゃない？」，用「ことだから」。",
+      "en": "B guesses what Tanaka is doing from the easygoing character they both know — 「ことだから」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「くせに」是“明明……却”，带责备语气，与“根据他的性格来推测”不符。",
+        "en": "「くせに」 is reproachful ('even though he is…'); it doesn't base a guess on his character."
+      },
+      {
+        "zh": "「せいで」表示造成坏结果的原因，后面接已发生的事，不接推测「じゃない？」。",
+        "en": "「せいで」 gives the cause of a bad result that happened, not a guess."
+      },
+      {
+        "zh": "「おかげで」表示带来好结果的原因，与这里的推测不符。",
+        "en": "「おかげで」 gives the cause of a good result; it doesn't make a guess."
+      }
+    ]
+  },
+  {
+    "id": "n2-l60-021",
+    "rev": 2,
+    "type": "bunpou",
+    "refs": [
+      "lesson60#7",
+      "lesson60#5"
+    ],
+    "difficulty": 2,
+    "stem": "A「どうして昨日連絡してくれなかったの？」\nB「ごめん、スマホの充電が切れていた（　）。」",
+    "options": [
+      "ことだから",
+      "だけに",
+      "くせに",
+      "ものだから"
+    ],
+    "answer": 3,
+    "full": "A「どうして昨日連絡してくれなかったの？」\nB「ごめん、スマホの充電が切れていたものだから。」",
+    "tr": {
+      "zh": "A：“昨天为什么没联系我？” B：“对不起，因为手机没电了嘛。”",
+      "en": "A: \"Why didn't you get in touch yesterday?\" B: \"Sorry — my phone's battery had died, you see.\""
+    },
+    "why": {
+      "zh": "B在道歉并解释自己的原因（辩解），句末用「ものだから」。",
+      "en": "B is apologizing and explaining why — an excuse, so sentence-final 「ものだから」."
+    },
+    "wrong": [
+      {
+        "zh": "「ことだから」接在「名词＋の」后，根据人的性格推测，不接动词句，也不用于辩解。",
+        "en": "「ことだから」 follows 'noun ＋ の' to guess from someone's character; it isn't an excuse after a verb clause."
+      },
+      {
+        "zh": "「だけに」是“正因为……所以更加”，后面要接结果，不能这样结句来辩解。",
+        "en": "「だけに」 means 'all the more because' and needs a result after it; it isn't an excuse."
+      },
+      {
+        "zh": "「くせに」是“明明……却”，带责备语气，不用于自己道歉。",
+        "en": "「くせに」 is reproachful and isn't used when apologizing for oneself."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l60-022",
+    "type": "narabe",
+    "refs": [
+      "lesson60#7"
+    ],
+    "difficulty": 2,
+    "stem": "一度 [_] [★] [_] [_]、きっと最後までやり遂げるだろう。",
+    "options": [
+      "ことだから",
+      "彼の",
+      "決めたら",
+      "あきらめない"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "一度決めたらあきらめない彼のことだから、きっと最後までやり遂げるだろう。",
+    "tr": {
+      "zh": "他一旦决定就不会放弃，肯定会坚持做到最后吧。",
+      "en": "Knowing him — once he decides something he never gives up — he'll surely see it through to the end."
+    },
+    "why": {
+      "zh": "一度＋決めたら＋あきらめない（修饰「彼」）＋彼の＋ことだから（根据性格推测）。★ 在第二格，是「あきらめない」。",
+      "en": "一度 ＋ 決めたら ＋ あきらめない (describing 彼) ＋ 彼の ＋ ことだから. The ★ is the second slot: 「あきらめない」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

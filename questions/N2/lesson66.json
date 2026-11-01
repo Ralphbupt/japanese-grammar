@@ -1,0 +1,738 @@
+[
+  {
+    "id": "n2-l66-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#1"
+    ],
+    "difficulty": 1,
+    "stem": "大方の予想（　）、無名の新人選手が優勝した。",
+    "options": [
+      "に反して",
+      "に応じて",
+      "をもとに",
+      "に沿って"
+    ],
+    "answer": 0,
+    "full": "大方の予想に反して、無名の新人選手が優勝した。",
+    "tr": {
+      "zh": "与大多数人的预测相反，一名无名新人选手夺得了冠军。",
+      "en": "Contrary to most people's predictions, an unknown rookie won the championship."
+    },
+    "why": {
+      "zh": "“无名新人夺冠”是和预测相反的结果，「予想に反して」＝与预想相反。",
+      "en": "An unknown rookie winning is the opposite of what was predicted — 「予想に反して」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に応じて」是“根据……相应地”，“根据预测夺冠”说不通。",
+        "en": "「に応じて」 means \"in line with/depending on\"; winning \"in line with predictions\" contradicts 「無名の新人」."
+      },
+      {
+        "zh": "「をもとに」是“以……为依据”，“以大家的预测为依据，无名新人夺冠”不成立。",
+        "en": "「をもとに」 means 'based on'; an unknown rookie winning wasn't 'based on' the forecast."
+      },
+      {
+        "zh": "「に沿って」是“按照……”，无名新人夺冠恰恰不符合预测。",
+        "en": "「に沿って」 means 'in line with'; an unknown rookie winning went against the forecast."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#1"
+    ],
+    "difficulty": 2,
+    "stem": "会社の規則（　）行為をした社員は、処分の対象となる。",
+    "options": [
+      "に反した",
+      "に反して",
+      "に沿った",
+      "に応じた"
+    ],
+    "answer": 0,
+    "full": "会社の規則に反した行為をした社員は、処分の対象となる。",
+    "tr": {
+      "zh": "做出违反公司规定行为的员工将受到处分。",
+      "en": "Employees who act against company rules are subject to disciplinary action."
+    },
+    "why": {
+      "zh": "后面直接接名词「行為」，要用修饰名词的形式「に反した」（违反……的）；而且会受处分，说明是违反规定。",
+      "en": "The blank directly modifies the noun 「行為」, so the noun-modifying 「に反した」 is needed — and punishment means the rules were broken."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に反して」是连接后句的形式，不能直接修饰名词「行為」。",
+        "en": "「に反して」 links to a following clause; it can't directly modify the noun 「行為」."
+      },
+      {
+        "zh": "「に沿った」是“遵循……的”，遵守规定的行为不会受处分，前后矛盾。",
+        "en": "「に沿った」 means \"following\" the rules — such behaviour wouldn't be punished."
+      },
+      {
+        "zh": "「に応じた」是“与……相应的”，“与规定相应的行为受处分”说不通。",
+        "en": "「に応じた」 means \"appropriate to\"; acting appropriately to the rules wouldn't be punished."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-003",
+    "type": "narabe",
+    "refs": [
+      "lesson66#1"
+    ],
+    "difficulty": 2,
+    "stem": "父は私に医者になってほしかったようだが、私は [_] [★] [_] [_] 道を選んだ。",
+    "options": [
+      "音楽の",
+      "反して",
+      "期待に",
+      "父の"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "父は私に医者になってほしかったようだが、私は父の期待に反して音楽の道を選んだ。",
+    "tr": {
+      "zh": "父亲似乎希望我当医生，但我违背了父亲的期望，选择了音乐之路。",
+      "en": "My father seems to have wanted me to become a doctor, but against his expectations I chose a career in music."
+    },
+    "why": {
+      "zh": "父の＋期待に＋反して（违背期望）＋音楽の＋道を選んだ。★ 在第二格，是「期待に」。",
+      "en": "父の ＋ 期待に ＋ 反して (against) ＋ 音楽の ＋ 道を選んだ. The ★ is the second slot: 「期待に」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l66-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#2"
+    ],
+    "difficulty": 2,
+    "stem": "大企業が過去最高の利益を上げている（　）、中小企業の多くは厳しい経営が続いている。",
+    "options": [
+      "一方で",
+      "ばかりか",
+      "うえに",
+      "からといって"
+    ],
+    "answer": 0,
+    "full": "大企業が過去最高の利益を上げている一方で、中小企業の多くは厳しい経営が続いている。",
+    "tr": {
+      "zh": "大企业创下历史最高利润的同时，许多中小企业的经营却依然艰难。",
+      "en": "While big companies are posting record profits, many small and medium-sized firms are still struggling."
+    },
+    "why": {
+      "zh": "前后主语不同（大企业／中小企业），是对比两种情况，用「〜一方で」。",
+      "en": "The two halves have different subjects (big firms vs. small firms) — contrasting two situations is 「〜一方で」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ばかりか」是递进“不仅……而且……”，前后应同方向；这里大企业赚钱、中小企业困难，是对比。",
+        "en": "「ばかりか」 adds in the same direction (\"not only… but also\"); here big firms prosper while small ones struggle — a contrast."
+      },
+      {
+        "zh": "「うえに」是同方向的追加（“不仅……而且……”），而大企业盈利和中小企业困难是对比。",
+        "en": "「うえに」 adds something in the same direction; big firms' profits and small firms' struggles are a contrast."
+      },
+      {
+        "zh": "「からといって」是“虽说……但也不能……”，后面要接否定的推论，这里是两种情况的对比。",
+        "en": "「からといって」 means 'just because… doesn't mean…'; here two situations are simply contrasted."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#2"
+    ],
+    "difficulty": 2,
+    "stem": "物価は上がる（　）なのに、給料は少しも上がらない。",
+    "options": [
+      "一方",
+      "一方で",
+      "反面",
+      "つもり"
+    ],
+    "answer": 0,
+    "full": "物価は上がる一方なのに、給料は少しも上がらない。",
+    "tr": {
+      "zh": "物价一个劲儿地涨，工资却一点儿都不涨。",
+      "en": "Prices just keep rising, yet wages haven't gone up at all."
+    },
+    "why": {
+      "zh": "空后是「なのに」，要用名词性的「一方」构成「上がる一方だ」（一直……下去），这里是「一方なのに」。注意它和表示对比的「一方で」不同。",
+      "en": "The blank is followed by 「なのに」, so it needs 「一方」 as in 「上がる一方だ」 (keeps rising) → 「一方なのに」. Not the contrastive 「一方で」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「一方で」后面不能再接「なのに」，形式不成立。",
+        "en": "「一方で」 can't be followed by 「なのに」."
+      },
+      {
+        "zh": "「反面」后面不能接「なのに」，而且“涨”和“工资不涨”不是同一事物的两面。",
+        "en": "「反面」 can't take 「なのに」, and rising prices and flat wages aren't two sides of one thing."
+      },
+      {
+        "zh": "「つもり」表示人的打算，“物价打算上涨”说不通。",
+        "en": "「つもり」 is a person's intention; prices can't 'intend' to rise."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-006",
+    "type": "narabe",
+    "refs": [
+      "lesson66#2"
+    ],
+    "difficulty": 2,
+    "stem": "インターネットは [_] [_] [_] [★] 問題がある。",
+    "options": [
+      "一方",
+      "便利である",
+      "信頼性に",
+      "情報の"
+    ],
+    "order": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "full": "インターネットは便利である一方情報の信頼性に問題がある。",
+    "tr": {
+      "zh": "互联网虽然方便，另一方面信息的可靠性存在问题。",
+      "en": "The internet is convenient, but on the other hand there are problems with the reliability of information."
+    },
+    "why": {
+      "zh": "便利である＋一方（另一方面）＋情報の＋信頼性に＋問題がある。★ 在第四格，是「信頼性に」。",
+      "en": "便利である ＋ 一方 (on the other hand) ＋ 情報の ＋ 信頼性に ＋ 問題がある. The ★ is the fourth slot: 「信頼性に」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l66-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#3"
+    ],
+    "difficulty": 2,
+    "stem": "この薬はよく効く（　）、副作用も強いので、使い方に注意が必要だ。",
+    "options": [
+      "反面",
+      "につれて",
+      "からには",
+      "ことから"
+    ],
+    "answer": 0,
+    "full": "この薬はよく効く反面、副作用も強いので、使い方に注意が必要だ。",
+    "tr": {
+      "zh": "这种药效果好，但另一面副作用也很强，所以使用时需要注意。",
+      "en": "This medicine works well, but on the flip side it has strong side effects, so care is needed."
+    },
+    "why": {
+      "zh": "同一事物（这种药）的好的一面（有效）和坏的一面（副作用强）对照，用「〜反面」。",
+      "en": "The good side (it works) and the bad side (side effects) of the same thing — 「〜反面」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「につれて」是“随着……而变化”，“越有效副作用越强”不是这里要说的，而且前后不是渐变。",
+        "en": "「につれて」 links two gradual changes; this sentence contrasts two sides, not two changes."
+      },
+      {
+        "zh": "「からには」是“既然……就……”，后面接决心或义务，“既然有效，副作用也强”说不通。",
+        "en": "「からには」 means 'now that…' and leads to a resolve or duty; 'now that it works, side effects are strong' makes no sense."
+      },
+      {
+        "zh": "「ことから」表示根据或理由，“因为有效，所以副作用也强”逻辑不成立，这里是一好一坏两面。",
+        "en": "「ことから」 gives a reason; working well isn't why the side effects are strong — these are two sides."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#3"
+    ],
+    "difficulty": 2,
+    "stem": "ネットで買い物ができるのは便利な（　）、実物を見て選べないという不安もある。",
+    "options": [
+      "反面",
+      "うえに",
+      "だけに",
+      "あまり"
+    ],
+    "answer": 0,
+    "full": "ネットで買い物ができるのは便利な反面、実物を見て選べないという不安もある。",
+    "tr": {
+      "zh": "能在网上购物很方便，但反过来也有不能看实物挑选的不安。",
+      "en": "Being able to shop online is convenient, but on the other hand there's the worry of not being able to see the real thing."
+    },
+    "why": {
+      "zh": "前面是好的一面（方便），后面是坏的一面（不安），同一件事的两面性，用「な形容詞な＋反面」。",
+      "en": "A good side (convenient) and a bad side (worry) of the same thing — na-adjective な ＋ 「反面」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「うえに」是同方向追加，“方便，而且还有不安”前后一好一坏，不能用。",
+        "en": "「うえに」 adds in the same direction; 'convenient' and 'worry' point opposite ways."
+      },
+      {
+        "zh": "「だけに」是“正因为……所以更……”，方便并不是产生不安的原因，这里是一好一坏的两面。",
+        "en": "「だけに」 means 'precisely because…'; the convenience isn't the reason for the worry — they are two sides."
+      },
+      {
+        "zh": "「あまり」是“过于……以致”，后面是过度造成的结果，这里是正反对比。",
+        "en": "「あまり」 means \"so… that\" with a result of excess; this sentence is a contrast."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-009",
+    "type": "narabe",
+    "refs": [
+      "lesson66#3"
+    ],
+    "difficulty": 2,
+    "stem": "彼女は [★] [_] [_] [_] 欠けるところがある。",
+    "options": [
+      "協調性に",
+      "反面",
+      "できる",
+      "仕事が"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "彼女は仕事ができる反面協調性に欠けるところがある。",
+    "tr": {
+      "zh": "她工作能力强，但反面也有缺乏协调性的地方。",
+      "en": "She's very capable at work, but on the flip side she lacks a cooperative spirit."
+    },
+    "why": {
+      "zh": "仕事が＋できる（能干）＋反面＋協調性に＋欠ける。★ 在第一格，是「仕事が」。",
+      "en": "仕事が ＋ できる (capable) ＋ 反面 ＋ 協調性に ＋ 欠ける. The ★ is the first slot: 「仕事が」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l66-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#4"
+    ],
+    "difficulty": 1,
+    "stem": "年を取る（　）、体力が落ちてきた。",
+    "options": [
+      "につれて",
+      "からには",
+      "一方で",
+      "ように"
+    ],
+    "answer": 0,
+    "full": "年を取るにつれて、体力が落ちてきた。",
+    "tr": {
+      "zh": "随着年龄增长，体力下降了。",
+      "en": "As I've got older, my stamina has declined."
+    },
+    "why": {
+      "zh": "“年龄增长”和“体力下降”是联动的变化，用「〜につれて」。",
+      "en": "Getting older and losing stamina change together — 「〜につれて」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「からには」是“既然……就……”，后面接决心或义务，不能接自然变化。",
+        "en": "「からには」 ('now that') leads to a resolve or duty, not a natural change."
+      },
+      {
+        "zh": "「一方で」表示对比，“年龄增长”和“体力下降”不是对比关系，而是因果联动。",
+        "en": "「一方で」 contrasts two things; ageing and losing stamina go together rather than contrast."
+      },
+      {
+        "zh": "「ように」表示比喻或目的，“像上年纪一样体力下降”说不通；随年龄变化要用「につれて」。",
+        "en": "「ように」 means 'like / so that'; a change that follows age needs 「につれて」."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#4"
+    ],
+    "difficulty": 1,
+    "stem": "時間がたつ（　）、その事件のことは人々の記憶から消えていった。",
+    "options": [
+      "につれて",
+      "一方で",
+      "にしても",
+      "までに"
+    ],
+    "answer": 0,
+    "full": "時間がたつにつれて、その事件のことは人々の記憶から消えていった。",
+    "tr": {
+      "zh": "随着时间流逝，那起事件渐渐从人们的记忆中消失了。",
+      "en": "As time passed, the incident gradually faded from people's memories."
+    },
+    "why": {
+      "zh": "“时间流逝”和“渐渐被遗忘（〜ていった）”是同步的渐变，用「〜につれて」。",
+      "en": "Time passing and memories fading (〜ていった) are gradual changes in step — 「〜につれて」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「一方で」表示对比，时间流逝和记忆消失不是对比，而是一个随着另一个变化。",
+        "en": "「一方で」 contrasts two things; memory fading follows time passing, it doesn't contrast with it."
+      },
+      {
+        "zh": "「にしても」是“即使……也……”，后面要接让步后的判断，这里是渐变。",
+        "en": "「にしても」 means 'even if' and needs a concession; this is a gradual change."
+      },
+      {
+        "zh": "「までに」表示期限（“在……之前”），不能表示随时间推移逐渐变化。",
+        "en": "「までに」 marks a deadline ('by'); it can't show a gradual change over time."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-012",
+    "type": "narabe",
+    "refs": [
+      "lesson66#4"
+    ],
+    "difficulty": 2,
+    "stem": "山では、標高が [_] [_] [★] [_] 下がっていく。",
+    "options": [
+      "につれて",
+      "上がる",
+      "気温が",
+      "周りの"
+    ],
+    "order": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "full": "山では、標高が上がるにつれて周りの気温が下がっていく。",
+    "tr": {
+      "zh": "在山上，随着海拔升高，周围的气温会逐渐下降。",
+      "en": "In the mountains, as altitude increases, the surrounding temperature drops."
+    },
+    "why": {
+      "zh": "上がる＋につれて（随着）＋周りの＋気温が＋下がっていく。★ 在第三格，是「周りの」。",
+      "en": "上がる ＋ につれて (as) ＋ 周りの ＋ 気温が ＋ 下がっていく. The ★ is the third slot: 「周りの」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l66-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#5"
+    ],
+    "difficulty": 1,
+    "stem": "火災報知器が鳴ったら、係員の指示（　）、落ち着いて避難してください。",
+    "options": [
+      "にしたがって",
+      "に先立って",
+      "に反して",
+      "にかけては"
+    ],
+    "answer": 0,
+    "full": "火災報知器が鳴ったら、係員の指示にしたがって、落ち着いて避難してください。",
+    "tr": {
+      "zh": "火灾警报响起时，请按照工作人员的指示冷静地疏散。",
+      "en": "If the fire alarm goes off, please evacuate calmly, following the staff's instructions."
+    },
+    "why": {
+      "zh": "前面是「指示」（指示、规则类名词），表示“按照指示行动”，用「〜にしたがって」（遵从义）。",
+      "en": "「指示」 is an instruction, so this is \"act according to\" — 「〜にしたがって」 in its \"follow\" sense."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に先立って」是“在……之前”，“在工作人员指示之前避难”与要求冷静听从指示相反。",
+        "en": "「に先立って」 means 'before'; evacuating before the staff's instructions isn't what's asked."
+      },
+      {
+        "zh": "「に反して」是“违背指示”，和“冷静疏散”的要求矛盾。",
+        "en": "「に反して」 means \"against the instructions\" — not what a safety notice asks."
+      },
+      {
+        "zh": "「にかけては」是“在……方面（擅长）”，不能表示按照指示行动。",
+        "en": "「にかけては」 means 'when it comes to (a skill)'; it can't mean 'following instructions'."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#5"
+    ],
+    "difficulty": 2,
+    "stem": "経験を積む（　）、仕事に自信が持てるようになった。",
+    "options": [
+      "にしたがって",
+      "うえで",
+      "一方で",
+      "からには"
+    ],
+    "answer": 0,
+    "full": "経験を積むにしたがって、仕事に自信が持てるようになった。",
+    "tr": {
+      "zh": "随着经验的积累，对工作有了自信。",
+      "en": "As I gained experience, I became confident in my work."
+    },
+    "why": {
+      "zh": "“积累经验”和“有了自信（〜ようになった）”是联动变化，用表示“随着”的「〜にしたがって」。",
+      "en": "Gaining experience and becoming confident (〜ようになった) change together — 「〜にしたがって」 (\"as\")."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「辞書形＋うえで」是“在……的过程中/为了……”，后面接注意事项或必要条件，不能接逐渐产生的变化。",
+        "en": "「dictionary form ＋ うえで」 means 'in doing / for' and takes a requirement, not a gradual change."
+      },
+      {
+        "zh": "「一方で」表示对比，“积累经验”和“有自信”不是对比关系。",
+        "en": "「一方で」 contrasts two things; gaining experience and confidence go together."
+      },
+      {
+        "zh": "「からには」是“既然……就……”，后面接决心或义务，不能接“逐渐有了自信”。",
+        "en": "「からには」 ('now that') leads to a resolve or duty, not 'gradually gained confidence'."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-015",
+    "type": "narabe",
+    "refs": [
+      "lesson66#5"
+    ],
+    "difficulty": 2,
+    "stem": "この機械は、必ず [_] [_] [_] [★] ください。",
+    "options": [
+      "操作して",
+      "したがって",
+      "手順に",
+      "説明書の"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "この機械は、必ず説明書の手順にしたがって操作してください。",
+    "tr": {
+      "zh": "这台机器请务必按照说明书的步骤操作。",
+      "en": "Please be sure to operate this machine following the steps in the manual."
+    },
+    "why": {
+      "zh": "説明書の＋手順に＋したがって（按照）＋操作して＋ください。★ 在第四格，是「操作して」。",
+      "en": "説明書の ＋ 手順に ＋ したがって (following) ＋ 操作して ＋ ください. The ★ is the fourth slot: 「操作して」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-l66-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#6"
+    ],
+    "difficulty": 1,
+    "stem": "今日は課長が出張中なので、課長の（　）、私が会議に出席します。",
+    "options": [
+      "くせに",
+      "ついでに",
+      "わりに",
+      "かわりに"
+    ],
+    "answer": 3,
+    "full": "今日は課長が出張中なので、課長のかわりに、私が会議に出席します。",
+    "tr": {
+      "zh": "今天科长出差，由我代替科长出席会议。",
+      "en": "The section chief is away on business today, so I'll attend the meeting in his place."
+    },
+    "why": {
+      "zh": "科长不在，由“我”去，是“代替”，用「名詞の＋かわりに」。",
+      "en": "The chief is away and I go instead — substitution: 「名詞の＋かわりに」."
+    },
+    "wrong": [
+      {
+        "zh": "「くせに」是带责备的“明明……却……”，这里没有责备的意思。",
+        "en": "「くせに」 (despite… — critical) carries blame, which isn't here."
+      },
+      {
+        "zh": "「ついでに」是“顺便……”，前面要是说话人自己做的事，“顺便科长”说不通。",
+        "en": "「ついでに」 means 'while doing (something else)'; 'while the section chief' makes no sense."
+      },
+      {
+        "zh": "「わりに」是“与……相比出乎意料”，这里是代替科长出席。",
+        "en": "「わりに」 means 'considering…, unexpectedly'; here the speaker is standing in for the chief."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-l66-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#6"
+    ],
+    "difficulty": 2,
+    "stem": "旅行で留守の間、隣の人に猫の世話をしてもらう（　）、お土産を買ってくると約束した。",
+    "options": [
+      "うちに",
+      "かわりに",
+      "うえに",
+      "からといって"
+    ],
+    "answer": 1,
+    "full": "旅行で留守の間、隣の人に猫の世話をしてもらうかわりに、お土産を買ってくると約束した。",
+    "tr": {
+      "zh": "旅行不在家的期间请邻居帮忙照顾猫，作为交换，答应给他带土特产回来。",
+      "en": "In exchange for the neighbor looking after my cat while I'm away, I promised to bring back a souvenir."
+    },
+    "why": {
+      "zh": "请人照顾猫 ↔ 带土特产回来，是“交换”关系，用「動詞＋かわりに」。",
+      "en": "Having the cat looked after in return for bringing a souvenir is an exchange — 「動詞＋かわりに」."
+    },
+    "wrong": [
+      {
+        "zh": "「うちに」是“趁着……／在……期间不知不觉”，“请人照顾猫的期间答应”说不通。",
+        "en": "「うちに」 (while…) gives \"while having the cat looked after, I promised\", which makes no sense."
+      },
+      null,
+      {
+        "zh": "「うえに」是追加（“不仅……而且……”），“请邻居照顾猫”和“答应买礼物”是交换关系，不是追加。",
+        "en": "「うえに」 adds more of the same; here the souvenir is in exchange for the favour."
+      },
+      {
+        "zh": "「からといって」是“虽说……也不能……”，后面要接否定，这里是交换条件。",
+        "en": "「からといって」 ('just because… doesn't mean') needs a negative ending; this is an exchange."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-018",
+    "type": "bunpou",
+    "refs": [
+      "lesson66#6"
+    ],
+    "difficulty": 2,
+    "stem": "この部屋は駅から遠い（　）、家賃が安くて広い。",
+    "options": [
+      "うえに",
+      "からには",
+      "かわりに",
+      "わりに"
+    ],
+    "answer": 2,
+    "full": "この部屋は駅から遠いかわりに、家賃が安くて広い。",
+    "tr": {
+      "zh": "这个房间离车站远，但相应地房租便宜又宽敞。",
+      "en": "This apartment is far from the station, but in return the rent is cheap and it's spacious."
+    },
+    "why": {
+      "zh": "前面是缺点（离车站远），后面是抵消它的优点（便宜、宽敞），有得有失，用「かわりに」。",
+      "en": "A drawback (far from the station) balanced by advantages (cheap, spacious) — a trade-off, so 「かわりに」."
+    },
+    "wrong": [
+      {
+        "zh": "「うえに」是同方向追加，“离车站远（缺点）”和“便宜宽敞（优点）”方向相反。",
+        "en": "「うえに」 adds in the same direction; 'far from the station' is a minus, 'cheap and roomy' a plus."
+      },
+      {
+        "zh": "「からには」是“既然……就要……”，后面要接决心或义务，这里只是描述。",
+        "en": "「からには」 (now that…) needs a resolve or obligation after it; this is only description."
+      },
+      null,
+      {
+        "zh": "「わりに」表示“和预想不同”，离车站远房租便宜是意料之中的，不是意外。",
+        "en": "「わりに」 marks something unexpected; cheap rent for a place far from the station is just what you'd expect."
+      }
+    ]
+  },
+  {
+    "id": "n2-l66-019",
+    "type": "narabe",
+    "refs": [
+      "lesson66#6"
+    ],
+    "difficulty": 2,
+    "stem": "この店は [_] [★] [_] [_] 長い。",
+    "options": [
+      "待ち時間が",
+      "かわりに",
+      "料理が",
+      "おいしい"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "この店は料理がおいしいかわりに待ち時間が長い。",
+    "tr": {
+      "zh": "这家店菜好吃，但相应地要等很久。",
+      "en": "The food at this place is delicious, but in return the wait is long."
+    },
+    "why": {
+      "zh": "优点「料理がおいしい」＋「かわりに」＋缺点「待ち時間が長い」：料理が → おいしい → かわりに → 待ち時間が。★ 在第二格，是「おいしい」。",
+      "en": "Good point 「料理がおいしい」 + 「かわりに」 + drawback 「待ち時間が長い」: 料理が → おいしい → かわりに → 待ち時間が. The ★ is the second slot: 「おいしい」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

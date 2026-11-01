@@ -1,0 +1,1161 @@
+[
+ {
+  "id": "n5-ck-401",
+  "type": "hatsuwa",
+  "scene": "先生の 話を もう いちど 聞きたいです。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A classroom. A female student sits at her desk, raising her hand slightly with a puzzled face. A male teacher stands at the front by the blackboard, holding a textbook.",
+   "arrow": "the female student at the desk"
+  },
+  "options": [
+   "もう いちど 言いましょうか。",
+   "もう いちど 言って ください。",
+   "もう いちど 聞いて ください。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "想再听一遍老师讲的话。",
+    "question": "怎么说？",
+    "options": [
+     "我再说一遍好吗？",
+     "请再说一遍。",
+     "请再听一遍。"
+    ]
+   },
+   "en": {
+    "scene": "You want to hear what the teacher said one more time.",
+    "question": "What do you say?",
+    "options": [
+     "Shall I say it again?",
+     "Please say it again.",
+     "Please listen again."
+    ]
+   }
+  },
+  "why": {
+   "zh": "想让老师再说一遍，用「〜て ください」请对方做：「もう いちど 言って ください」。",
+   "en": "You want the teacher to repeat it, so you ask him to do it with 「〜て ください」: 「もう いちど 言って ください」."
+  },
+  "wrong": [
+   {
+    "zh": "「言いましょうか」是自己主动提出要说，这是老师才会说的话。",
+    "en": "「言いましょうか」 offers to say it yourself — that's the teacher's line."
+   },
+   null,
+   {
+    "zh": "「聞いて ください」是请对方听，想听的人是自己，方向反了。",
+    "en": "「聞いて ください」 asks him to listen; you're the one who wants to hear."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n5-ck-402",
+  "type": "hatsuwa",
+  "scene": "へやが あついです。まどを あけたいです。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "An office. A man stands next to a closed window, hand near the latch, looking back at a woman working at a desk nearby. He is fanning himself with his other hand.",
+   "arrow": "the man by the window"
+  },
+  "options": [
+   "まどを あけても いいですか。",
+   "まどを あけて ください。",
+   "ええ、あけても いいですよ。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "房间很热。想开窗。",
+    "question": "怎么说？",
+    "options": [
+     "我可以开窗吗？",
+     "请把窗户打开。",
+     "嗯，可以开。"
+    ]
+   },
+   "en": {
+    "scene": "The room is hot. You want to open the window.",
+    "question": "What do you say?",
+    "options": [
+     "May I open the window?",
+     "Please open the window.",
+     "Sure, you can open it."
+    ]
+   }
+  },
+  "why": {
+   "zh": "自己想开窗，先征求旁边人的同意，用「〜ても いいですか」。",
+   "en": "You want to open it yourself, so you ask permission with 「〜ても いいですか」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「あけて ください」是请对方去开，可是窗户就在自己旁边，想开的是自己。",
+    "en": "「あけて ください」 asks her to open it, but you're the one at the window who wants to open it."
+   },
+   {
+    "zh": "「あけても いいですよ」是允许别人开，是被问的人才会说的话。",
+    "en": "「あけても いいですよ」 gives permission — that's the answer from the person being asked."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n5-ck-403",
+  "type": "hatsuwa",
+  "scene": "友だちの うちに 来て います。友だちの お母さんが ばんごはんを つくりました。これから 食べます。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A dining room in a home. A young woman sits at a table with a bowl of rice, soup and side dishes in front of her, holding chopsticks, hands together. A middle-aged woman stands beside the table smiling, and a friend sits across.",
+   "arrow": "the young woman sitting with the food"
+  },
+  "options": [
+   "ごちそうさまでした。",
+   "じゃあ、いただきます。",
+   "どうぞ、食べて ください。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在朋友家。朋友的妈妈做了晚饭。现在要开始吃了。",
+    "question": "怎么说？",
+    "options": [
+     "谢谢款待（吃完后）。",
+     "那我开动了。",
+     "请吃吧。"
+    ]
+   },
+   "en": {
+    "scene": "You're at a friend's house. Your friend's mother has made dinner. You're about to eat.",
+    "question": "What do you say?",
+    "options": [
+     "Thank you for the meal (after eating).",
+     "Well then, itadakimasu (before eating).",
+     "Please, go ahead and eat."
+    ]
+   }
+  },
+  "why": {
+   "zh": "开始吃饭前说「いただきます」；「じゃあ」是接过对方的招呼。",
+   "en": "Before you start eating you say 「いただきます」; 「じゃあ」 just picks up the host's cue."
+  },
+  "wrong": [
+   {
+    "zh": "「ごちそうさまでした」是吃完以后说的，时机不对。",
+    "en": "「ごちそうさまでした」 is said after the meal — wrong moment."
+   },
+   null,
+   {
+    "zh": "「どうぞ、食べて ください」是做饭的妈妈请客人吃时说的话。",
+    "en": "「どうぞ、食べて ください」 is what the mother says to her guest."
+   }
+  ],
+  "traps": [
+   "timing",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n5-ck-404",
+  "type": "hatsuwa",
+  "scene": "駅の かいだんの 前で、おばあさんが 大きい にもつを もって います。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "Stairs at a train station. An old woman stands at the bottom of the stairs with a big suitcase. A young man stands next to her, reaching out a hand toward the suitcase.",
+   "arrow": "the young man next to the old woman"
+  },
+  "options": [
+   "にもつ、もって ください。",
+   "ありがとう ございます。",
+   "にもつ、もちましょうか。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在车站楼梯前，一位老奶奶拿着很大的行李。",
+    "question": "怎么说？",
+    "options": [
+     "请拿一下行李。",
+     "谢谢。",
+     "行李我来帮您拿吧？"
+    ]
+   },
+   "en": {
+    "scene": "In front of the stairs at a station, an old woman is carrying a big bag.",
+    "question": "What do you say?",
+    "options": [
+     "Please carry the bag.",
+     "Thank you very much.",
+     "Shall I carry your bag?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "主动提出帮别人做，用「〜ましょうか」：「もちましょうか」。",
+   "en": "Offering to do something for someone is 「〜ましょうか」: 「もちましょうか」."
+  },
+  "wrong": [
+   {
+    "zh": "「もって ください」是请对方拿，立场反了。",
+    "en": "「もって ください」 asks her to carry it — the wrong way round."
+   },
+   {
+    "zh": "「ありがとう ございます」是被帮的老奶奶说的话。",
+    "en": "「ありがとう ございます」 is what the old woman says when helped."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n5-ck-405",
+  "type": "hatsuwa",
+  "scene": "日曜日に 友だちと えいがを 見たいです。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A school hallway. A girl holds two movie tickets and shows them to a boy, smiling. The boy looks at the tickets.",
+   "arrow": "the girl holding the tickets"
+  },
+  "options": [
+   "ええ、いっしょに 見ましょう。",
+   "いっしょに えいがを 見ましたか。",
+   "いっしょに えいがを 見ませんか。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "星期天想和朋友一起看电影。",
+    "question": "怎么说？",
+    "options": [
+     "好啊，一起看吧。",
+     "一起看电影了吗？",
+     "要不要一起看电影？"
+    ]
+   },
+   "en": {
+    "scene": "You want to see a movie with a friend on Sunday.",
+    "question": "What do you say?",
+    "options": [
+     "Sure, let's watch it together.",
+     "Did you watch a movie together?",
+     "Would you like to see a movie with me?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "邀请对方一起做，用「〜ませんか」。",
+   "en": "To invite someone, use 「〜ませんか」."
+  },
+  "wrong": [
+   {
+    "zh": "「ええ、見ましょう」是接受邀请，是被邀请的人说的话。",
+    "en": "「ええ、見ましょう」 accepts an invitation — that's the friend's reply."
+   },
+   {
+    "zh": "「見ましたか」是过去式，问的是已经看了没有，不是邀请。",
+    "en": "「見ましたか」 is past tense — it asks whether something happened, not an invitation."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "tense"
+  ]
+ },
+ {
+  "id": "n5-ck-406",
+  "type": "hatsuwa",
+  "scene": "店で りんごを 三つ 買いたいです。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A fruit and vegetable shop. A man customer stands at the counter pointing at a box of apples. A woman shop clerk in an apron stands behind the counter.",
+   "arrow": "the man customer pointing at the apples"
+  },
+  "options": [
+   "りんごを 三つ ください。",
+   "りんごを 三つですね。",
+   "いらっしゃいませ。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "想在店里买三个苹果。",
+    "question": "怎么说？",
+    "options": [
+     "请给我三个苹果。",
+     "三个苹果是吧。",
+     "欢迎光临。"
+    ]
+   },
+   "en": {
+    "scene": "You want to buy three apples at a shop.",
+    "question": "What do you say?",
+    "options": [
+     "Three apples, please.",
+     "Three apples, right?",
+     "Welcome!"
+    ]
+   }
+  },
+  "why": {
+   "zh": "买东西时说「〜を ください」。",
+   "en": "When buying something you say 「〜を ください」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「三つですね」是店员确认客人点的东西时说的话。",
+    "en": "「三つですね」 is the clerk confirming the order."
+   },
+   {
+    "zh": "「いらっしゃいませ」是店员迎接客人的话。",
+    "en": "「いらっしゃいませ」 is the clerk's greeting to customers."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n5-ck-407",
+  "type": "hatsuwa",
+  "scene": "あさです。これから 学校へ 行きます。うちを 出ます。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "The front door of a house in the morning. A boy with a school bag on his back is putting on his shoes at the entrance and waving. His mother stands in the hallway behind him.",
+   "arrow": "the boy at the door"
+  },
+  "options": [
+   "いってらっしゃい。",
+   "ただいま。",
+   "いってきます。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "早上。现在要去学校，要出门了。",
+    "question": "怎么说？",
+    "options": [
+     "路上小心（送人出门）。",
+     "我回来了。",
+     "我出门了。"
+    ]
+   },
+   "en": {
+    "scene": "It's morning. You're leaving home to go to school.",
+    "question": "What do you say?",
+    "options": [
+     "Have a good day (to someone leaving).",
+     "I'm home.",
+     "I'm off."
+    ]
+   }
+  },
+  "why": {
+   "zh": "自己出门时说「いってきます」。",
+   "en": "When you leave home you say 「いってきます」."
+  },
+  "wrong": [
+   {
+    "zh": "「いってらっしゃい」是送别人出门的妈妈说的话。",
+    "en": "「いってらっしゃい」 is what the mother says to someone leaving."
+   },
+   {
+    "zh": "「ただいま」是回到家时说的，时机不对。",
+    "en": "「ただいま」 is said when you come home — wrong moment."
+   },
+   null
+  ],
+  "traps": [
+   "timing",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n5-ck-408",
+  "type": "hatsuwa",
+  "scene": "友だちの ペンを ちょっと つかいたいです。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A library table. A woman sits with an open notebook but no pen, pointing at a pen lying next to her friend's notebook. Her friend, another woman, is writing with a pencil.",
+   "arrow": "the woman without a pen, pointing at the pen"
+  },
+  "options": [
+   "この ペン、つかっても いいですか。",
+   "この ペン、つかって ください。",
+   "この ペン、つかいましょうか。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "想用一下朋友的笔。",
+    "question": "怎么说？",
+    "options": [
+     "这支笔我可以用吗？",
+     "这支笔你用吧。",
+     "这支笔我来用吧？"
+    ]
+   },
+   "en": {
+    "scene": "You want to use your friend's pen for a moment.",
+    "question": "What do you say?",
+    "options": [
+     "May I use this pen?",
+     "Please use this pen.",
+     "Shall I use this pen?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "想用别人的东西，先征求同意：「つかっても いいですか」。",
+   "en": "To use someone else's things, ask permission: 「つかっても いいですか」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「つかって ください」是笔的主人让别人用时说的话。",
+    "en": "「つかって ください」 is what the pen's owner would say."
+   },
+   {
+    "zh": "「〜ましょうか」是主动提出帮忙，这里不是帮对方做事。",
+    "en": "「〜ましょうか」 offers to do something for someone; using a pen isn't a favour to her."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n5-ck-409",
+  "type": "hatsuwa",
+  "scene": "雨が ふって います。友だちは かさを もって いません。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "The doorway of a building; heavy rain falling outside. On the left a man holds a long closed umbrella clearly in his right hand, raising it slightly toward the woman beside him. On the right a woman stands with both hands empty, looking out at the rain with a worried face. Only the man has an umbrella.",
+   "arrow": "the man holding the umbrella"
+  },
+  "options": [
+   "かさ、かして ください。",
+   "かさ、かりても いいですか。",
+   "かさ、かしましょうか。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在下雨。朋友没带伞。",
+    "question": "怎么说？",
+    "options": [
+     "请借我伞。",
+     "伞可以借我吗？",
+     "伞借给你吧？"
+    ]
+   },
+   "en": {
+    "scene": "It's raining. Your friend doesn't have an umbrella.",
+    "question": "What do you say?",
+    "options": [
+     "Please lend me an umbrella.",
+     "May I borrow an umbrella?",
+     "Shall I lend you my umbrella?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "有伞的人主动借给没伞的朋友，用「かしましょうか」。",
+   "en": "You have an umbrella and offer to lend it: 「かしましょうか」."
+  },
+  "wrong": [
+   {
+    "zh": "「かして ください」是请别人借给自己，是没有伞的朋友会说的话。",
+    "en": "「かして ください」 asks someone to lend you one — the friend's line."
+   },
+   {
+    "zh": "「かりても いいですか」也是想借伞的人说的，立场反了。",
+    "en": "「かりても いいですか」 is also what the person without an umbrella would say."
+   },
+   null
+  ],
+  "traps": [
+   "perspective"
+  ]
+ },
+ {
+  "id": "n5-ck-410",
+  "type": "hatsuwa",
+  "scene": "先生の へやに 入ります。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A teacher's office door, half open. A male student stands at the door, bowing slightly. A female teacher sits at a desk inside, looking up at him.",
+   "arrow": "the student at the door"
+  },
+  "options": [
+   "しつれいします。",
+   "どうぞ、入って ください。",
+   "しつれいしました。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "要进老师的办公室。",
+    "question": "怎么说？",
+    "options": [
+     "打扰了（进门时）。",
+     "请进。",
+     "打扰了（离开时）。"
+    ]
+   },
+   "en": {
+    "scene": "You're going into the teacher's room.",
+    "question": "What do you say?",
+    "options": [
+     "Excuse me (as you go in).",
+     "Please come in.",
+     "Excuse me (as you leave)."
+    ]
+   }
+  },
+  "why": {
+   "zh": "进别人的房间时说「しつれいします」。",
+   "en": "Going into someone's room you say 「しつれいします」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「どうぞ、入って ください」是屋里的老师说的话。",
+    "en": "「どうぞ、入って ください」 is what the teacher inside says."
+   },
+   {
+    "zh": "「しつれいしました」是过去式，离开房间时说，时机不对。",
+    "en": "「しつれいしました」 (past) is said when leaving the room — wrong moment."
+   }
+  ],
+  "traps": [
+   "timing",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n5-ck-411",
+  "type": "hatsuwa",
+  "scene": "友だちと きっさてんに 来ました。二人とも コーヒーが ほしいです。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A small café. A woman sits at a table with a friend and looks up at a male waiter holding a notepad and a menu. She is holding up two fingers.",
+   "arrow": "the woman sitting at the table, holding up two fingers"
+  },
+  "options": [
+   "コーヒー、飲みませんか。",
+   "コーヒーを 二つ ください。",
+   "コーヒーを 二つですね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "和朋友来到咖啡店，两个人都想要咖啡。",
+    "question": "怎么说？",
+    "options": [
+     "要不要喝咖啡？",
+     "请给我两杯咖啡。",
+     "两杯咖啡是吧。"
+    ]
+   },
+   "en": {
+    "scene": "You are at a café with a friend. You both want coffee.",
+    "question": "What do you say?",
+    "options": [
+     "Would you like some coffee?",
+     "Two coffees, please.",
+     "Two coffees, right?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "点东西用「〜を ください」：「コーヒーを 二つ ください」。",
+   "en": "To order, use 「〜を ください」: 「コーヒーを 二つ ください」."
+  },
+  "wrong": [
+   {
+    "zh": "「飲みませんか」是邀请别人喝，不是向店员点单。",
+    "en": "「飲みませんか」 invites someone to drink — it doesn't order from the waiter."
+   },
+   null,
+   {
+    "zh": "「二つですね」是店员确认的话。",
+    "en": "「二つですね」 is the waiter confirming."
+   }
+  ],
+  "traps": [
+   "intent",
+   "perspective",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n5-ck-412",
+  "type": "hatsuwa",
+  "scene": "休みの 日に 友だちと 山へ 行きたいです。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "An office break room. A man shows a woman colleague a photo of mountains on his phone, smiling. She is holding a cup of tea.",
+   "arrow": "the man showing the phone"
+  },
+  "options": [
+   "きのう 山へ 行きました。",
+   "いっしょに 山へ 行きませんか。",
+   "いっしょに 山へ 行きたいですか。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "休息日想和朋友一起去爬山。",
+    "question": "怎么说？",
+    "options": [
+     "昨天去山里了。",
+     "要不要一起去山里？",
+     "你想一起去山里吗？"
+    ]
+   },
+   "en": {
+    "scene": "You want to go to the mountains with a friend on your day off.",
+    "question": "What do you say?",
+    "options": [
+     "I went to the mountains yesterday.",
+     "Would you like to go to the mountains with me?",
+     "Do you want to go to the mountains together?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "邀请用「〜ませんか」：「いっしょに 山へ 行きませんか」。",
+   "en": "Invite with 「〜ませんか」: 「いっしょに 山へ 行きませんか」."
+  },
+  "wrong": [
+   {
+    "zh": "「行きました」说的是昨天已经去过了，不是邀请。",
+    "en": "「行きました」 reports a past trip; it isn't an invitation."
+   },
+   null,
+   {
+    "zh": "「〜たいですか」直接问别人想不想，日语里不用来邀请，听起来不自然。",
+    "en": "Asking 「〜たいですか」 isn't how Japanese invites someone; it sounds odd."
+   }
+  ],
+  "traps": [
+   "tense",
+   "intent"
+  ]
+ },
+ {
+  "id": "n5-ck-413",
+  "type": "hatsuwa",
+  "scene": "あしたは 休みです。友だちと テニスを したいです。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A university campus. A woman holding a tennis racket talks to a man walking with books under his arm.",
+   "arrow": "the woman holding the tennis racket"
+  },
+  "options": [
+   "あした、テニスを しませんか。",
+   "ええ、テニスを しましょう。",
+   "あした、テニスを して ください。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "明天休息。想和朋友打网球。",
+    "question": "怎么说？",
+    "options": [
+     "明天要不要打网球？",
+     "好啊，打网球吧。",
+     "明天请打网球。"
+    ]
+   },
+   "en": {
+    "scene": "Tomorrow is a day off. You want to play tennis with a friend.",
+    "question": "What do you say?",
+    "options": [
+     "Would you like to play tennis tomorrow?",
+     "Sure, let's play tennis.",
+     "Please play tennis tomorrow."
+    ]
+   }
+  },
+  "why": {
+   "zh": "邀请朋友一起做，用「〜ませんか」。",
+   "en": "Invite your friend with 「〜ませんか」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「ええ、〜しましょう」是接受邀请，是朋友回答时说的。",
+    "en": "「ええ、〜しましょう」 accepts an invitation — the friend's reply."
+   },
+   {
+    "zh": "「して ください」是请求或指示对方做，不是邀请一起做。",
+    "en": "「して ください」 asks or tells him to do it; it doesn't invite him to play with you."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n5-ck-414",
+  "type": "hatsuwa",
+  "scene": "友だちの うちに 来ました。これから 中に 入ります。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "The entrance (genkan) of a Japanese house. A young woman stands at the open front door holding a small gift bag, bowing slightly. Her friend stands inside, welcoming her.",
+   "arrow": "the young woman at the door with the gift bag"
+  },
+  "options": [
+   "いらっしゃい。どうぞ。",
+   "おじゃましました。",
+   "おじゃまします。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "来到朋友家，现在要进去了。",
+    "question": "怎么说？",
+    "options": [
+     "欢迎，请进。",
+     "打扰了（离开时）。",
+     "打扰了（进门时）。"
+    ]
+   },
+   "en": {
+    "scene": "You've arrived at a friend's house and are about to go in.",
+    "question": "What do you say?",
+    "options": [
+     "Welcome, come in.",
+     "Thank you for having me (as you leave).",
+     "Sorry to intrude (as you go in)."
+    ]
+   }
+  },
+  "why": {
+   "zh": "进别人家时说「おじゃまします」。",
+   "en": "Going into someone's home you say 「おじゃまします」."
+  },
+  "wrong": [
+   {
+    "zh": "「いらっしゃい」是主人迎接客人的话。",
+    "en": "「いらっしゃい」 is the host's welcome."
+   },
+   {
+    "zh": "「おじゃましました」是过去式，离开时说，时机不对。",
+    "en": "「おじゃましました」 (past) is said when leaving — wrong moment."
+   },
+   null
+  ],
+  "traps": [
+   "timing",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n5-ck-415",
+  "type": "hatsuwa",
+  "scene": "タクシーに のりました。駅まで 行きたいです。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "Inside a taxi. A man in a suit sits in the back seat, leaning forward to talk. The driver, an older man in a cap, looks back over his shoulder.",
+   "arrow": "the man in the back seat"
+  },
+  "options": [
+   "駅まで 行きましたか。",
+   "駅まで おねがいします。",
+   "駅まで 行きましょうか。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "坐上了出租车。想去车站。",
+    "question": "怎么说？",
+    "options": [
+     "去车站了吗？",
+     "请到车站。",
+     "我送您到车站吧？"
+    ]
+   },
+   "en": {
+    "scene": "You've got into a taxi. You want to go to the station.",
+    "question": "What do you say?",
+    "options": [
+     "Did you go to the station?",
+     "To the station, please.",
+     "Shall I take you to the station?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "告诉司机目的地，说「〜まで おねがいします」。",
+   "en": "Tell the driver where to go with 「〜まで おねがいします」."
+  },
+  "wrong": [
+   {
+    "zh": "「行きましたか」是过去式的问句，问对方去没去过，答非所问。",
+    "en": "「行きましたか」 asks if someone went — past tense, wrong meaning."
+   },
+   null,
+   {
+    "zh": "「行きましょうか」是主动提出带人去，是司机那一方的话。",
+    "en": "「行きましょうか」 offers to take someone — that's the driver's side."
+   }
+  ],
+  "traps": [
+   "tense",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n5-ck-416",
+  "type": "hatsuwa",
+  "scene": "こうえんで 友だちと しゃしんを とりたいです。ちかくの 人に 言います。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A park with trees. Two young women stand together. One of them holds out a camera to a man walking past, smiling and pointing at herself and her friend.",
+   "arrow": "the woman holding out the camera"
+  },
+  "options": [
+   "しゃしん、とりましょうか。",
+   "しゃしんを とって ください。",
+   "しゃしんを とっても いいですか。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在公园想和朋友一起拍照，对旁边的人说。",
+    "question": "怎么说？",
+    "options": [
+     "我来帮你们拍照吧？",
+     "请帮我们拍张照。",
+     "我可以拍照吗？"
+    ]
+   },
+   "en": {
+    "scene": "In the park you want a photo with your friend. You speak to someone nearby.",
+    "question": "What do you say?",
+    "options": [
+     "Shall I take a photo for you?",
+     "Please take a photo of us.",
+     "May I take a photo?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "请别人帮忙拍照，用「〜て ください」：「しゃしんを とって ください」。",
+   "en": "Asking someone to take the photo for you: 「しゃしんを とって ください」."
+  },
+  "wrong": [
+   {
+    "zh": "「とりましょうか」是主动提出帮人拍，是路过的人才会说的话。",
+    "en": "「とりましょうか」 offers to take a photo — what the passer-by would say."
+   },
+   null,
+   {
+    "zh": "「とっても いいですか」是问自己能不能拍，想要的是别人帮拍合影。",
+    "en": "「とっても いいですか」 asks if you may take a photo; you want him to take one of you."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n5-ck-417",
+  "type": "hatsuwa",
+  "scene": "会社で しごとが おわりました。ほかの 人より 先に かえります。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "An office in the evening. A man with a bag on his shoulder stands by the door, bowing slightly toward two colleagues still working at their desks.",
+   "arrow": "the man by the door with a bag"
+  },
+  "options": [
+   "おさきに いただきます。",
+   "おさきに しつれいします。",
+   "どうぞ、おさきに かえって ください。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在公司工作做完了。比别人先回家。",
+    "question": "怎么说？",
+    "options": [
+     "我先吃了。",
+     "我先走了。",
+     "请您先回去吧。"
+    ]
+   },
+   "en": {
+    "scene": "Your work at the office is done. You're going home before the others.",
+    "question": "What do you say?",
+    "options": [
+     "I'll start eating first.",
+     "Excuse me for leaving first.",
+     "Please, go home before me."
+    ]
+   }
+  },
+  "why": {
+   "zh": "比别人先下班离开时说「おさきに しつれいします」。",
+   "en": "Leaving work before others, you say 「おさきに しつれいします」."
+  },
+  "wrong": [
+   {
+    "zh": "「おさきに いただきます」是先开始吃饭时说的，时机不对。",
+    "en": "「おさきに いただきます」 is for starting to eat before others — wrong moment."
+   },
+   null,
+   {
+    "zh": "「おさきに かえって ください」是让别人先走，可要先走的是自己。",
+    "en": "「おさきに かえって ください」 tells someone else to go first, but you're the one leaving."
+   }
+  ],
+  "traps": [
+   "timing",
+   "repeat-word",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n5-ck-418",
+  "type": "hatsuwa",
+  "scene": "会社に ほかの 会社の 人が 来ました。おちゃを 出したいです。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A company meeting room. A man visitor in a suit sits on a sofa. A woman employee stands next to the low table holding a tray with a cup of tea.",
+   "arrow": "the woman holding the tray"
+  },
+  "options": [
+   "おちゃを いただきます。",
+   "おちゃを ください。",
+   "おちゃは いかがですか。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "别的公司的人来公司了。想给客人上茶。",
+    "question": "怎么说？",
+    "options": [
+     "我喝茶了。",
+     "请给我茶。",
+     "要喝点茶吗？"
+    ]
+   },
+   "en": {
+    "scene": "Someone from another company has come to your office. You want to serve tea.",
+    "question": "What do you say?",
+    "options": [
+     "I'll have the tea, thank you.",
+     "Tea, please.",
+     "Would you like some tea?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "请客人喝东西用「〜は いかがですか」。",
+   "en": "Offer something with 「〜は いかがですか」."
+  },
+  "wrong": [
+   {
+    "zh": "「いただきます」是接过茶的客人说的话。",
+    "en": "「いただきます」 is what the visitor says when accepting tea."
+   },
+   {
+    "zh": "「おちゃを ください」是向别人要茶，立场反了。",
+    "en": "「おちゃを ください」 asks for tea — the wrong side."
+   },
+   null
+  ],
+  "traps": [
+   "perspective"
+  ]
+ },
+ {
+  "id": "n5-ck-419",
+  "type": "hatsuwa",
+  "scene": "学校で おなかが いたく なりました。うちへ かえりたいです。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A classroom. A boy stands next to the teacher's desk, one hand on his stomach, looking unwell. A female teacher sits at the desk looking up at him.",
+   "arrow": "the boy with a hand on his stomach"
+  },
+  "options": [
+   "先生、うちへ かえっても いいですか。",
+   "先生、いっしょに かえりましょう。",
+   "うちへ かえっても いいですよ。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在学校肚子疼了起来。想回家。",
+    "question": "怎么说？",
+    "options": [
+     "老师，我可以回家吗？",
+     "老师，我们一起回家吧。",
+     "可以回家哦。"
+    ]
+   },
+   "en": {
+    "scene": "At school you've got a stomachache. You want to go home.",
+    "question": "What do you say?",
+    "options": [
+     "Sir/Ma'am, may I go home?",
+     "Sir/Ma'am, let's go home together.",
+     "You may go home."
+    ]
+   }
+  },
+  "why": {
+   "zh": "想回家要先征得老师同意：「かえっても いいですか」。",
+   "en": "You need the teacher's permission: 「かえっても いいですか」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「いっしょに かえりましょう」是邀请老师一起回去，不是请求许可。",
+    "en": "「いっしょに かえりましょう」 invites the teacher to go home with you — it doesn't ask permission."
+   },
+   {
+    "zh": "「かえっても いいですよ」是老师允许学生时说的话。",
+    "en": "「かえっても いいですよ」 is the teacher giving permission."
+   }
+  ],
+  "traps": [
+   "intent",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n5-ck-420",
+  "type": "hatsuwa",
+  "scene": "レストランで ごはんを 食べました。これから 店を 出ます。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "The exit of a small restaurant. A woman customer, holding her bag, smiles and bows slightly toward the counter. A male cook in a white apron stands behind the counter. Plain walls: no menus, no signs, no posters, no writing of any kind.",
+   "arrow": "the woman customer at the exit"
+  },
+  "options": [
+   "ごちそうさまでした。",
+   "いらっしゃいませ。",
+   "また 来て ください。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在餐厅吃完饭，现在要离开。",
+    "question": "怎么说？",
+    "options": [
+     "多谢款待。",
+     "欢迎光临。",
+     "欢迎再来。"
+    ]
+   },
+   "en": {
+    "scene": "You've eaten at a restaurant and are now leaving.",
+    "question": "What do you say?",
+    "options": [
+     "Thank you for the meal.",
+     "Welcome!",
+     "Please come again."
+    ]
+   }
+  },
+  "why": {
+   "zh": "吃完饭离开店时，客人对店里的人说「ごちそうさまでした」。",
+   "en": "Leaving after a meal, the customer says 「ごちそうさまでした」 to the staff."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「いらっしゃいませ」是店员迎接客人的话。",
+    "en": "「いらっしゃいませ」 is the staff's greeting to customers."
+   },
+   {
+    "zh": "「また 来て ください」是店里的人对客人说的话。",
+    "en": "「また 来て ください」 is what the staff say to the customer."
+   }
+  ],
+  "traps": [
+   "perspective"
+  ]
+ }
+]

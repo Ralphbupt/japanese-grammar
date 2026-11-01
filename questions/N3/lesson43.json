@@ -1,0 +1,584 @@
+[
+  {
+    "id": "n3-l43-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson43#1"
+    ],
+    "difficulty": 1,
+    "stem": "部屋の 電気が ついて いる。田中さんは もう 帰って きて いる（　）。",
+    "options": [
+      "に違いない",
+      "はずがない",
+      "おそれがある",
+      "ものか"
+    ],
+    "answer": 0,
+    "full": "部屋の 電気が ついて いる。田中さんは もう 帰って きて いるに違いない。",
+    "tr": {
+      "zh": "房间的灯亮着。田中一定已经回来了。",
+      "en": "The light in the room is on. Tanaka must already be home."
+    },
+    "why": {
+      "zh": "“灯亮着”是证据，据此做出很有把握的判断，用「に違いない」（一定是……）。",
+      "en": "The light being on is evidence, and from it the speaker draws a confident conclusion: 「に違いない」 (must be)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「はずがない」是“不可能已经回来”，和“灯亮着”这个证据相反。",
+        "en": "「はずがない」 would say he can't be home — the opposite of what the light suggests."
+      },
+      {
+        "zh": "「おそれがある」只用于担心坏事发生，“田中回来了”不是坏事。",
+        "en": "「おそれがある」 is only for feared bad outcomes; Tanaka being home isn't one."
+      },
+      {
+        "zh": "「ものか」是强烈否定（怎么可能回来！），和证据矛盾。",
+        "en": "「ものか」 is an emphatic denial (as if he's home!), which contradicts the evidence."
+      }
+    ]
+  },
+  {
+    "id": "n3-l43-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson43#1"
+    ],
+    "difficulty": 2,
+    "stem": "あの 二人は いつも 一緒に いるし、よく 手を つないで いる。恋人（　）。",
+    "options": [
+      "に違いない",
+      "の はずが ない",
+      "な わけが ない",
+      "の おそれが ある"
+    ],
+    "answer": 0,
+    "full": "あの 二人は いつも 一緒に いるし、よく 手を つないで いる。恋人に違いない。",
+    "tr": {
+      "zh": "那两个人总是在一起，还经常牵着手。一定是恋人。",
+      "en": "Those two are always together and often hold hands. They must be a couple."
+    },
+    "why": {
+      "zh": "“总在一起，还经常牵手”是有力的根据，说话人确信，用「に違いない」（一定是）。名词直接接：恋人に違いない。",
+      "en": "\"Always together and holding hands\" is strong evidence, so the speaker is sure: 「に違いない」 (must be), right after the noun."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「はずがない」是“不可能是”，和前面的根据正好相反。",
+        "en": "「はずがない」 is \"can't be\", the opposite of what the evidence says."
+      },
+      {
+        "zh": "「わけがない」也是“不可能”，和前面的根据矛盾。",
+        "en": "「わけがない」 also means \"no way\", which contradicts the evidence."
+      },
+      {
+        "zh": "「おそれがある」用于担心坏事发生，“是恋人”不是要担心的坏事。",
+        "en": "「おそれがある」 is a worry that something bad may happen; being a couple isn't a danger."
+      }
+    ]
+  },
+  {
+    "id": "n3-l43-003",
+    "type": "narabe",
+    "refs": [
+      "lesson43#1"
+    ],
+    "difficulty": 2,
+    "stem": "こんなに 渋滞して いるのは、どこかで [_] [_] [★] [_]。",
+    "options": [
+      "に",
+      "事故が",
+      "違いない",
+      "あった"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "こんなに 渋滞して いるのは、どこかで 事故が あったに違いない。",
+    "tr": {
+      "zh": "堵成这样，一定是哪里出了事故。",
+      "en": "Traffic this bad — there must have been an accident somewhere."
+    },
+    "why": {
+      "zh": "事故が ＋ あった（普通形）＋ に ＋ 違いない。★ 在第三格，是「に」。",
+      "en": "事故が ＋ あった (plain form) ＋ に ＋ 違いない. The ★ is the third slot: 「に」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l43-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson43#2"
+    ],
+    "difficulty": 2,
+    "stem": "A「今度の 日曜、焼き肉 食べ放題に 行くんだけど、一緒に どう？」\nB「食べ放題？ そんなの、行く（　）じゃない！」",
+    "options": [
+      "に決まってる",
+      "に違いない",
+      "ものか",
+      "おそれがある"
+    ],
+    "answer": 0,
+    "full": "A「今度の 日曜、焼き肉 食べ放題に 行くんだけど、一緒に どう？」 B「食べ放題？ そんなの、行くに決まってるじゃない！」",
+    "tr": {
+      "zh": "A：这个星期天要去烤肉自助，一起去吗？ B：自助？那当然要去啊！",
+      "en": "A: We're going to an all-you-can-eat yakiniku place this Sunday — want to come? B: All-you-can-eat? Of course I'm going!"
+    },
+    "why": {
+      "zh": "B 说的是自己的意愿，带着“那还用说”的激动语气，用口语的「に決まってる（じゃない）」（当然……）。",
+      "en": "B is talking about their own plan with an excited \"isn't it obvious\" tone — the colloquial 「に決まってる（じゃない）」 (of course)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に違いない」是根据证据推断别人或事物，不用来说自己的意愿，也不接「じゃない」。",
+        "en": "「に違いない」 infers something from evidence; it isn't used for your own intention, and 「〜に違いないじゃない」 isn't said."
+      },
+      {
+        "zh": "「ものか」是“才不去呢”，和听到自助餐时兴奋的语气相反，后面也不能接「じゃない」。",
+        "en": "「ものか」 means \"no way I'm going\" — the opposite of B's excitement — and can't take 「じゃない」."
+      },
+      {
+        "zh": "「おそれがある」用于担心坏事，自己去吃自助不是坏事。",
+        "en": "「おそれがある」 is for feared bad outcomes; going to a buffet isn't one."
+      }
+    ]
+  },
+  {
+    "id": "n3-l43-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson43#2"
+    ],
+    "difficulty": 2,
+    "stem": "そんな 甘い 計画、失敗する（　）よ。やめた ほうが いい。",
+    "options": [
+      "に決まってる",
+      "ものか",
+      "っけ",
+      "ことにしている"
+    ],
+    "answer": 0,
+    "full": "そんな 甘い 計画、失敗するに決まってるよ。やめた ほうが いい。",
+    "tr": {
+      "zh": "那么天真的计划，肯定会失败的。还是别做了。",
+      "en": "A plan that naive is bound to fail. You'd better drop it."
+    },
+    "why": {
+      "zh": "后一句劝对方放弃，说明说话人确信会失败，用「に決まってる」（肯定……）。",
+      "en": "The next sentence says \"drop it,\" so the speaker is sure it will fail: 「に決まってる」 (bound to)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「失敗するものか」是“怎么会失败！”，和“还是别做了”矛盾。",
+        "en": "「失敗するものか」 means \"no way it'll fail!\", which contradicts \"you'd better drop it.\""
+      },
+      {
+        "zh": "「っけ」用于回忆确认，接过去形或「んだっけ」，后面也不接「よ」，这里不成立。",
+        "en": "「っけ」 is for recalling something, takes the past or 「んだっけ」, and isn't followed by 「よ」 — it doesn't fit."
+      },
+      {
+        "zh": "「ことにしている」是自己的习惯（规定自己做……），“计划失败”不是习惯。",
+        "en": "「ことにしている」 describes a personal rule or habit; a plan failing isn't a habit."
+      }
+    ]
+  },
+  {
+    "id": "n3-l43-006",
+    "type": "narabe",
+    "refs": [
+      "lesson43#2"
+    ],
+    "difficulty": 1,
+    "stem": "あんなに 毎日 練習して いるんだから、あの チームが [_] [_] [★] [_]。",
+    "options": [
+      "いる",
+      "に",
+      "勝つ",
+      "決まって"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "あんなに 毎日 練習して いるんだから、あの チームが 勝つに決まって いる。",
+    "tr": {
+      "zh": "每天那么努力练习，那支队肯定会赢。",
+      "en": "They practice that hard every day, so that team is definitely going to win."
+    },
+    "why": {
+      "zh": "勝つ（辞书形）＋ に ＋ 決まって ＋ いる。★ 在第三格，是「決まって」。",
+      "en": "勝つ (dictionary form) ＋ に ＋ 決まって ＋ いる. The ★ is the third slot: 「決まって」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l43-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson43#3"
+    ],
+    "difficulty": 2,
+    "stem": "台風の 接近に より、明日は 各地で 洪水の（　）。",
+    "options": [
+      "おそれが あります",
+      "に違いありません",
+      "はずが ありません",
+      "ものです"
+    ],
+    "answer": 0,
+    "full": "台風の 接近に より、明日は 各地で 洪水の おそれが あります。",
+    "tr": {
+      "zh": "由于台风接近，明天各地有发生洪水的危险。",
+      "en": "With the typhoon approaching, there is a risk of flooding in many areas tomorrow."
+    },
+    "why": {
+      "zh": "天气预报里提醒坏事可能发生，用「名词＋の＋おそれがある」（有……的危险）。",
+      "en": "A forecast warning of a possible bad outcome: 「noun ＋ の ＋ おそれがある」 (there is a risk of)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に違いない」前面不能加「の」（应为「洪水に違いない」），而且天气预报不用这种主观断定。",
+        "en": "「に違いない」 can't follow 「の」 (it would be 「洪水に違いない」), and a forecast doesn't make that kind of personal call."
+      },
+      {
+        "zh": "「洪水のはずがありません」是“不可能发洪水”，和台风接近的前提矛盾。",
+        "en": "「洪水のはずがありません」 says a flood is impossible, contradicting the approaching typhoon."
+      },
+      {
+        "zh": "「名词＋のものです」意思是“是……的东西”，这里不成立。",
+        "en": "「〜のものです」 means \"it belongs to / is a thing of,\" which makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n3-l43-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson43#3"
+    ],
+    "difficulty": 2,
+    "stem": "このまま 雨が 降り続くと、山の 道が 崩れる（　）ので、近づかないで ください。",
+    "options": [
+      "おそれが ある",
+      "わけが ない",
+      "ものか",
+      "っけ"
+    ],
+    "answer": 0,
+    "full": "このまま 雨が 降り続くと、山の 道が 崩れる おそれが あるので、近づかないで ください。",
+    "tr": {
+      "zh": "雨再这样下下去，山路恐怕会塌方，请不要靠近。",
+      "en": "If the rain keeps up like this, the mountain road may collapse, so please stay away from it."
+    },
+    "why": {
+      "zh": "“请不要靠近”说明是在警告坏事可能发生，用「辞书形＋おそれがある」。",
+      "en": "\"Please stay away\" shows it's a warning about a possible bad outcome: 「dictionary form ＋ おそれがある」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「崩れるわけがない」是“不可能塌”，那就不需要提醒别靠近了。",
+        "en": "「崩れるわけがない」 says it can't collapse — then there'd be no reason to tell people to stay away."
+      },
+      {
+        "zh": "「ものか」是表示强烈否定的句尾，后面不能接「ので」，意思也相反。",
+        "en": "「ものか」 is an emphatic sentence-ending denial; it can't be followed by 「ので」, and the meaning is the opposite."
+      },
+      {
+        "zh": "「っけ」是回忆确认的句尾，后面不能接「ので」。",
+        "en": "「っけ」 is a sentence-final \"was it…?\"; it can't be followed by 「ので」."
+      }
+    ]
+  },
+  {
+    "id": "n3-l43-009",
+    "type": "narabe",
+    "refs": [
+      "lesson43#3"
+    ],
+    "difficulty": 2,
+    "stem": "このまま 景気が 悪く なると、会社が [_] [★] [_] [_] と 言われて いる。",
+    "options": [
+      "が",
+      "ある",
+      "倒産する",
+      "おそれ"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "このまま 景気が 悪く なると、会社が 倒産する おそれが あると 言われて いる。",
+    "tr": {
+      "zh": "据说经济再这样恶化下去，公司恐怕会倒闭。",
+      "en": "People say that if the economy keeps getting worse, the company may go bankrupt."
+    },
+    "why": {
+      "zh": "倒産する（辞书形）＋ おそれ ＋ が ＋ ある。★ 在第二格，是「おそれ」。",
+      "en": "倒産する (dictionary form) ＋ おそれ ＋ が ＋ ある. The ★ is the second slot: 「おそれ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-l43-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson43#4"
+    ],
+    "difficulty": 2,
+    "stem": "A「あれ、今日の 会議って 何時から（　）？」\nB「3時からですよ。」",
+    "options": [
+      "だったっけ",
+      "だった ものか",
+      "に 決まってる",
+      "だった ことか"
+    ],
+    "answer": 0,
+    "full": "A「あれ、今日の 会議って 何時から だったっけ？」 B「3時からですよ。」",
+    "tr": {
+      "zh": "A：咦，今天的会是几点开始来着？ B：三点开始哦。",
+      "en": "A: Huh, what time does today's meeting start again? B: From three."
+    },
+    "why": {
+      "zh": "「あれ」表示一时想不起来。名词性的「何時から」接「だったっけ」（……来着？）。",
+      "en": "「あれ」 shows A has forgotten. After a noun phrase like 「何時から」, use 「だったっけ」 (…again?)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ものか」是强烈否定或反问（才不……呢），不是在问自己忘了的事。",
+        "en": "「ものか」 is a strong denial (\"as if…\"), not asking about something you've forgotten."
+      },
+      {
+        "zh": "「に決まってる」是“肯定是”，可A不知道几点，后面还在问对方。",
+        "en": "「に決まってる」 is \"it's bound to be\", but A doesn't know the time and is asking."
+      },
+      {
+        "zh": "「ことか」是感叹“多么……啊”（どんなに待ったことか），不用于询问时间。",
+        "en": "「ことか」 is an exclamation (\"how…!\", どんなに待ったことか), not a question about the time."
+      }
+    ]
+  },
+  {
+    "id": "n3-l43-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson43#4"
+    ],
+    "difficulty": 2,
+    "stem": "田中さんの 家って、駅から（　）？ 前に 一度 行ったけど、忘れちゃった。",
+    "options": [
+      "遠かったっけ",
+      "遠いに 違いない",
+      "遠い ものか",
+      "遠かった ことか"
+    ],
+    "answer": 0,
+    "full": "田中さんの 家って、駅から 遠かったっけ？ 前に 一度 行ったけど、忘れちゃった。",
+    "tr": {
+      "zh": "田中家离车站远来着？以前去过一次，但忘了。",
+      "en": "Was Tanaka's place far from the station? I went once before, but I've forgotten."
+    },
+    "why": {
+      "zh": "“去过但忘了”，是回忆确认，用「っけ」。い形容词接「かったっけ」：遠かったっけ。",
+      "en": "\"I went once but forgot\" — recalling something, so 「っけ」. An i-adjective takes 「かったっけ」: 遠かったっけ."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に違いない」是“一定是”，可说话人说自己忘了，不能这么确定。",
+        "en": "「に違いない」 is \"it must be\", but the speaker says they've forgotten, so they can't be sure."
+      },
+      {
+        "zh": "「遠いものか」是“哪里远了！”的强烈否定，和“忘了”不符。",
+        "en": "「遠いものか」 is a strong denial (\"far? hardly!\"), which doesn't fit \"I've forgotten\"."
+      },
+      {
+        "zh": "「遠かったことか」是感叹“多么远啊”，要和「どんなに」等一起用，也不是在问。",
+        "en": "「遠かったことか」 is an exclamation (\"how far it was!\") used with words like 「どんなに」; it isn't a question."
+      }
+    ]
+  },
+  {
+    "id": "n3-l43-012",
+    "type": "narabe",
+    "refs": [
+      "lesson43#4"
+    ],
+    "difficulty": 2,
+    "stem": "A「この 漢字、[_] [_] [_] [★]。」\nB「わたしも わからないなあ。辞書で 調べて みよう。」",
+    "options": [
+      "読む",
+      "っけ",
+      "何て",
+      "んだ"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "A「この 漢字、何て 読むんだっけ。」 B「わたしも わからないなあ。辞書で 調べて みよう。」",
+    "tr": {
+      "zh": "A：这个汉字怎么读来着？ B：我也不知道啊。查查字典吧。",
+      "en": "A: How do you read this kanji again? B: I don't know either. Let's look it up in the dictionary."
+    },
+    "why": {
+      "zh": "何て ＋ 読む ＋ んだ ＋ っけ：动词非过去形用「〜んだっけ」。★ 在第四格，是「っけ」。",
+      "en": "何て ＋ 読む ＋ んだ ＋ っけ: a non-past verb takes 「〜んだっけ」. The ★ is the fourth slot: 「っけ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "rev": 2
+  },
+  {
+    "id": "n3-l43-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson43#5"
+    ],
+    "difficulty": 1,
+    "stem": "あんな 失礼な 店、二度と 行く（　）。",
+    "options": [
+      "ものか",
+      "っけ",
+      "に違いない",
+      "おそれがある"
+    ],
+    "answer": 0,
+    "full": "あんな 失礼な 店、二度と 行くものか。",
+    "tr": {
+      "zh": "那么没礼貌的店，再也不去了！",
+      "en": "A shop that rude? I'm never going there again!"
+    },
+    "why": {
+      "zh": "「二度と」后面要跟否定。「ものか」是带情绪的强烈否定（才不去呢），正好对应。",
+      "en": "「二度と」 needs a negative after it, and 「ものか」 is an emotional, emphatic \"never\" — it fits."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「っけ」是回忆确认（去来着？），和「二度と」及生气的语气都不符。",
+        "en": "「っけ」 asks \"did I…again?\" — it fits neither 「二度と」 nor the angry tone."
+      },
+      {
+        "zh": "「二度と」要求否定，「行くに違いない」是肯定判断，接不上。",
+        "en": "「二度と」 requires a negative; 「行くに違いない」 is an affirmative conclusion."
+      },
+      {
+        "zh": "「二度と」要求否定，而且自己去店里也不是“担心的坏事”。",
+        "en": "「二度と」 requires a negative, and going to a shop isn't a feared outcome."
+      }
+    ]
+  },
+  {
+    "id": "n3-l43-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson43#5"
+    ],
+    "difficulty": 2,
+    "stem": "こんな 仕事、簡単（　）。毎日 夜中まで かかって いるんだよ。",
+    "options": [
+      "なものか",
+      "に違いない",
+      "に決まってる",
+      "なはずだ"
+    ],
+    "answer": 0,
+    "full": "こんな 仕事、簡単なものか。毎日 夜中まで かかって いるんだよ。",
+    "tr": {
+      "zh": "这种工作，哪里简单了！每天都要干到半夜呢。",
+      "en": "This job, easy? No way. It takes me till midnight every day."
+    },
+    "why": {
+      "zh": "后一句“每天干到半夜”说明是在否定“简单”，强烈否定用「ものか」（哪里……了）。な形容词接「な」：簡単なものか。",
+      "en": "\"Till midnight every day\" shows the speaker is denying it's easy: the strong denial 「ものか」, with 「な」 after a na-adjective: 簡単なものか."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に違いない」是“一定很简单”，和“每天干到半夜”矛盾。",
+        "en": "「に違いない」 would say \"it must be easy\", contradicting \"till midnight every day\"."
+      },
+      {
+        "zh": "「に決まってる」也是肯定“当然简单”，和后一句矛盾。",
+        "en": "「に決まってる」 also asserts \"of course it's easy\", which contradicts the next sentence."
+      },
+      {
+        "zh": "「はずだ」是“应该简单”，同样是肯定，和后一句不符。",
+        "en": "「はずだ」 is \"it should be easy\", again a positive claim that doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n3-l43-015",
+    "type": "narabe",
+    "refs": [
+      "lesson43#5"
+    ],
+    "difficulty": 1,
+    "stem": "あんな 弱い チームに [★] [_] [_] [_]。",
+    "options": [
+      "もの",
+      "絶対に",
+      "か",
+      "負ける"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "あんな 弱い チームに 絶対に 負けるものか。",
+    "tr": {
+      "zh": "才不会输给那么弱的队！",
+      "en": "There's no way we'll lose to a team that weak!"
+    },
+    "why": {
+      "zh": "絶対に ＋ 負ける（辞书形）＋ もの ＋ か。★ 在第一格，是「絶対に」。",
+      "en": "絶対に ＋ 負ける (dictionary form) ＋ もの ＋ か. The ★ is the first slot: 「絶対に」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "rev": 2
+  }
+]

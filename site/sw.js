@@ -1,11 +1,12 @@
 /* jpnotes.dev service worker — long-term caching that GitHub Pages can't do
  * (it serves everything with max-age=600 and the headers can't be changed).
  *
- *   /audio/s{hash}.mp3   cache-first, kept for good: the file name is a hash of
+ *   /audio/s{hash}.mp3   cache-first (also /audio/choukai/c{hash}.mp3, listening), kept for good: the file name is a hash of
  *                        the sentence, so a given URL never changes. Range
  *                        requests (Safari's <audio> always sends one) are
  *                        answered with 206 slices of the cached file.
- *   *.js?v={hash}        cache-first: the ?v= changes whenever the file does.
+ *   *.js?v={hash}        cache-first: the ?v= changes whenever the file does
+ *   *.json?v={hash}      (scripts, practice-question bundles).
  *   search-index.json    stale-while-revalidate.
  *   page navigations     network-first (fresh content after every deploy),
  *                        falling back to the cached copy when offline.
@@ -112,8 +113,8 @@ self.addEventListener('fetch', function (e) {
   var url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
 
-  if (/^\/audio\/s[0-9a-f]+\.mp3$/.test(url.pathname)) e.respondWith(audio(e));
-  else if (/\.js$/.test(url.pathname) && url.searchParams.has('v')) e.respondWith(cacheFirst(e, ASSETS));
+  if (/^\/audio\/(s|choukai\/c)[0-9a-f]+\.mp3$/.test(url.pathname)) e.respondWith(audio(e));
+  else if (/\.(js|json)$/.test(url.pathname) && url.searchParams.has('v')) e.respondWith(cacheFirst(e, ASSETS));
   else if (url.pathname === '/search-index.json') e.respondWith(staleWhileRevalidate(e, ASSETS));
   else if (req.mode === 'navigate') e.respondWith(page(e));
 });

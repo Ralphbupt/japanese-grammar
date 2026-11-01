@@ -1,0 +1,603 @@
+[
+ {
+  "id": "n5-m1-ck-201",
+  "type": "point",
+  "scene": "あさ、会社で 女の 人と 男の 人が 話して います。",
+  "question": "男の 人は どうして まいあさ はやく 会社に 来ますか。",
+  "lines": [
+   [
+    "F",
+    "林さん、まいあさ はやいですね。しごとが 多いですか。"
+   ],
+   [
+    "M",
+    "いいえ、しごとは あまり 多く ありません。"
+   ],
+   [
+    "F",
+    "じゃあ、うちが 会社から ちかいですか。"
+   ],
+   [
+    "M",
+    "いいえ、電車で 一時間ぐらいです。"
+   ],
+   [
+    "F",
+    "そうですか。あさの 会社は しずかで いいですね。"
+   ],
+   [
+    "M",
+    "いいえ、ぼくは 八時ごろの 電車が きらいですから、はやく 来ます。人が とても 多いです。"
+   ]
+  ],
+  "options": [
+   "しごとが 多いから",
+   "うちが ちかいから",
+   "会社が しずかだから",
+   "電車に 人が 多いから"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "早上，公司里一个女人和一个男人在说话。",
+    "question": "男人为什么每天早上很早来公司？",
+    "lines": [
+     "林，你每天早上都来得很早啊。工作很多吗？",
+     "不，工作不怎么多。",
+     "那是家离公司近吗？",
+     "不，坐电车要一个小时左右。",
+     "这样啊。早上的公司很安静，挺好的。",
+     "不是，我是因为讨厌八点左右的电车才早来的。人太多了。"
+    ],
+    "options": [
+     "因为工作多",
+     "因为家离得近",
+     "因为公司很安静",
+     "因为电车上人多"
+    ]
+   },
+   "en": {
+    "scene": "In the morning at an office, a woman and a man are talking.",
+    "question": "Why does the man come to the office early every morning?",
+    "lines": [
+     "Hayashi-san, you're early every morning. Do you have a lot of work?",
+     "No, I don't have that much work.",
+     "Then do you live close to the office?",
+     "No, it's about an hour by train.",
+     "I see. The office is nice and quiet in the morning.",
+     "No — I come early because I hate the trains around eight. They're really crowded."
+    ],
+    "options": [
+     "Because he has a lot of work",
+     "Because he lives close by",
+     "Because the office is quiet",
+     "Because the trains are crowded"
+    ]
+   }
+  },
+  "why": {
+   "zh": "男人说「八時ごろの 電車が きらいですから、はやく 来ます。人が とても 多いです」。",
+   "en": "He says 「八時ごろの 電車が きらいですから、はやく 来ます。人が とても 多いです」 — he avoids the crowded trains."
+  },
+  "wrong": [
+   {
+    "zh": "女人猜是工作多，男人说「あまり 多く ありません」。",
+    "en": "She guesses a lot of work; he says it isn't much."
+   },
+   {
+    "zh": "他家坐电车要一个小时，不近。",
+    "en": "His home is an hour away by train — not close."
+   },
+   {
+    "zh": "早上安静是女人说的，男人回答「いいえ」，接着说了真正的理由。",
+    "en": "The quiet office is her idea; he says 「いいえ」 and gives the real reason."
+   },
+   null
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n5-m1-ck-202",
+  "type": "point",
+  "scene": "会社で 女の 人と 男の 人が パーティーの 話を して います。",
+  "question": "来月の パーティーは 何日ですか。",
+  "lines": [
+   [
+    "F",
+    "森さん、来月の パーティーは 五日ですね。"
+   ],
+   [
+    "M",
+    "いいえ、五日は 店が 休みですから、十二日に しました。"
+   ],
+   [
+    "F",
+    "十二日ですか。すみません、わたしは その 日は しごとが あります。"
+   ],
+   [
+    "M",
+    "そうですか。じゃあ、十九日は どうですか。二十六日は ぼくが だめですから。"
+   ],
+   [
+    "F",
+    "十九日は だいじょうぶです。"
+   ],
+   [
+    "M",
+    "じゃあ、十九日に しましょう。店に 電話を します。"
+   ]
+  ],
+  "options": [
+   "五日",
+   "十二日",
+   "十九日",
+   "二十六日"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个女人和一个男人在谈聚会的事。",
+    "question": "下个月的聚会是几号？",
+    "lines": [
+     "森，下个月的聚会是五号吧。",
+     "不，五号那家店休息，所以定在十二号了。",
+     "十二号啊。不好意思，那天我有工作。",
+     "这样啊。那十九号怎么样？二十六号我不行。",
+     "十九号没问题。",
+     "那就定十九号吧。我给店里打电话。"
+    ],
+    "options": [
+     "五号",
+     "十二号",
+     "十九号",
+     "二十六号"
+    ]
+   },
+   "en": {
+    "scene": "At an office, a woman and a man are talking about a party.",
+    "question": "On what date is next month's party?",
+    "lines": [
+     "Mori-san, next month's party is on the 5th, right?",
+     "No, the restaurant is closed on the 5th, so I made it the 12th.",
+     "The 12th? Sorry, I have work that day.",
+     "I see. Then how about the 19th? The 26th is no good for me.",
+     "The 19th is fine.",
+     "Then let's make it the 19th. I'll call the restaurant."
+    ],
+    "options": [
+     "The 5th",
+     "The 12th",
+     "The 19th",
+     "The 26th"
+    ]
+   }
+  },
+  "why": {
+   "zh": "五号店休息，十二号女人要工作，二十六号男人不行，最后「十九日に しましょう」。",
+   "en": "The 5th the restaurant is closed, the 12th she works, the 26th he can't — so 「十九日に しましょう」."
+  },
+  "wrong": [
+   {
+    "zh": "五号那家店休息。",
+    "en": "The restaurant is closed on the 5th."
+   },
+   {
+    "zh": "十二号女人有工作。",
+    "en": "The woman has work on the 12th."
+   },
+   null,
+   {
+    "zh": "二十六号男人不行。",
+    "en": "The 26th doesn't work for the man."
+   }
+  ],
+  "traps": [
+   "number",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n5-m1-ck-203",
+  "type": "point",
+  "scene": "学校で 男の 人と 女の 学生が 話して います。",
+  "question": "女の 学生は だれに 日本語を ならいましたか。",
+  "lines": [
+   [
+    "M",
+    "リンさん、日本語が 上手ですね。国の 大学で ならいましたか。"
+   ],
+   [
+    "F",
+    "いいえ、大学では えいごを べんきょうしました。"
+   ],
+   [
+    "M",
+    "じゃあ、お母さんが 日本語の 先生ですか。"
+   ],
+   [
+    "F",
+    "いいえ。母も 父も 日本語は わかりません。"
+   ],
+   [
+    "M",
+    "じゃあ、日本の 学校で ならいましたか。"
+   ],
+   [
+    "F",
+    "いいえ、日本に 来て、まだ 三か月です。国で、となりの うちの 日本人の おばあさんに ならいました。"
+   ]
+  ],
+  "options": [
+   "大学の 先生",
+   "お母さん",
+   "日本の 学校の 先生",
+   "となりの おばあさん"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "学校里一个男人和一个女学生在说话。",
+    "question": "女学生跟谁学的日语？",
+    "lines": [
+     "林同学，你日语真好啊。是在你们国家的大学学的吗？",
+     "不，在大学学的是英语。",
+     "那你妈妈是日语老师吗？",
+     "不是。我妈妈和爸爸都不懂日语。",
+     "那是在日本的学校学的？",
+     "不，我来日本才三个月。是在国内跟邻居家的一位日本老奶奶学的。"
+    ],
+    "options": [
+     "大学的老师",
+     "妈妈",
+     "日本学校的老师",
+     "邻居家的老奶奶"
+    ]
+   },
+   "en": {
+    "scene": "At school, a man and a female student are talking.",
+    "question": "Who did the student learn Japanese from?",
+    "lines": [
+     "Lin-san, your Japanese is very good. Did you learn it at a university back home?",
+     "No, at university I studied English.",
+     "Then is your mother a Japanese teacher?",
+     "No. Neither my mother nor my father understands Japanese.",
+     "Then did you learn it at a school in Japan?",
+     "No, I've only been in Japan three months. Back home, I learned it from an elderly Japanese woman who lived next door."
+    ],
+    "options": [
+     "A university teacher",
+     "Her mother",
+     "A teacher at a school in Japan",
+     "The elderly woman next door"
+    ]
+   }
+  },
+  "why": {
+   "zh": "男人猜了三次都被否定，最后女学生说「となりの うちの 日本人の おばあさんに ならいました」。",
+   "en": "All three of his guesses are denied; she says 「となりの うちの 日本人の おばあさんに ならいました」."
+  },
+  "wrong": [
+   {
+    "zh": "在大学学的是英语，不是日语。",
+    "en": "At university she studied English, not Japanese."
+   },
+   {
+    "zh": "她父母都不懂日语。",
+    "en": "Neither of her parents knows Japanese."
+   },
+   {
+    "zh": "她来日本才三个月，日语是在国内学的。",
+    "en": "She has only been in Japan three months; she learned Japanese back home."
+   },
+   null
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n5-m1-ck-204",
+  "type": "point",
+  "scene": "しごとの あとで、女の 人と 男の 人が 話して います。",
+  "question": "男の 人は あした どこへ 行きますか。",
+  "lines": [
+   [
+    "F",
+    "木村さん、あしたは 休みですね。また 山へ 行きますか。"
+   ],
+   [
+    "M",
+    "いいえ、あしたは 雨ですから、山は 来週に します。"
+   ],
+   [
+    "F",
+    "そうですか。じゃあ、うちで ゆっくり しますか。"
+   ],
+   [
+    "M",
+    "いいえ。あした あねの 子どもが うちに 来ますから、いっしょに 駅へ 電車を 見に 行きます。"
+   ],
+   [
+    "F",
+    "え、電車を 見に？"
+   ],
+   [
+    "M",
+    "ええ。その 子は 電車が 大すきです。"
+   ]
+  ],
+  "options": [
+   "駅",
+   "山",
+   "うち",
+   "あねの うち"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "下班后，一个女人和一个男人在说话。",
+    "question": "男人明天去哪里？",
+    "lines": [
+     "木村，明天休息吧。又去爬山吗？",
+     "不，明天下雨，爬山改到下周。",
+     "这样啊。那在家好好休息？",
+     "不。明天姐姐的孩子来我家，所以我们一起去车站看电车。",
+     "诶，去看电车？",
+     "嗯。那孩子最喜欢电车了。"
+    ],
+    "options": [
+     "车站",
+     "山",
+     "家里",
+     "姐姐家"
+    ]
+   },
+   "en": {
+    "scene": "After work, a woman and a man are talking.",
+    "question": "Where will the man go tomorrow?",
+    "lines": [
+     "Kimura-san, you're off tomorrow, right? Going to the mountains again?",
+     "No, it's going to rain tomorrow, so the mountains can wait until next week.",
+     "I see. Then will you relax at home?",
+     "No. My sister's child is coming to my place tomorrow, so we're going to the station together to watch the trains.",
+     "Oh, to watch trains?",
+     "Yes. That kid loves trains."
+    ],
+    "options": [
+     "The station",
+     "The mountains",
+     "His home",
+     "His sister's home"
+    ]
+   }
+  },
+  "why": {
+   "zh": "男人说和姐姐的孩子「いっしょに 駅へ 電車を 見に 行きます」。",
+   "en": "He says he and his sister's child will 「いっしょに 駅へ 電車を 見に 行きます」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "明天下雨，爬山改到下周了。",
+    "en": "It will rain, so the mountains are put off until next week."
+   },
+   {
+    "zh": "孩子是来他家，但之后他们一起出去去车站。",
+    "en": "The child comes to his home, but then they go out to the station."
+   },
+   {
+    "zh": "是姐姐的孩子来他家，他不去姐姐家。",
+    "en": "His sister's child comes to him; he doesn't go to his sister's."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "later",
+   "other-option-attribute"
+  ]
+ },
+ {
+  "id": "n5-m1-ck-205",
+  "type": "point",
+  "scene": "こうえんで 男の 人と 女の 人が 話して います。",
+  "question": "女の 人の おとうとは どの 人ですか。",
+  "lines": [
+   [
+    "F",
+    "あ、あそこに わたしの おとうとが います。"
+   ],
+   [
+    "M",
+    "どの 人ですか。あの 白い シャツの 人ですか。"
+   ],
+   [
+    "F",
+    "白い シャツの 人は おとうとの 友だちです。おとうとは くろい シャツを きて います。"
+   ],
+   [
+    "M",
+    "ああ、ギターを もって いる 人ですね。"
+   ],
+   [
+    "F",
+    "はい、そうです。"
+   ]
+  ],
+  "options": [
+   "白い シャツ・ギター ある",
+   "くろい シャツ・ギター ある",
+   "白い シャツ・ギター ない",
+   "くろい シャツ・ギター ない"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A young man standing, facing forward, wearing a plain white T-shirt and holding a guitar.",
+   "Simple black-and-white line drawing, no text. A young man standing, facing forward, wearing a plain solid-black T-shirt and holding a guitar.",
+   "Simple black-and-white line drawing, no text. A young man standing, facing forward, wearing a plain white T-shirt, hands empty at his sides.",
+   "Simple black-and-white line drawing, no text. A young man standing, facing forward, wearing a plain solid-black T-shirt, hands empty at his sides."
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "公园里一个男人和一个女人在说话。",
+    "question": "女人的弟弟是哪个人？",
+    "lines": [
+     "啊，我弟弟在那边。",
+     "哪个人？是那个穿白衬衫的人吗？",
+     "穿白衬衫的是我弟弟的朋友。我弟弟穿着黑衬衫。",
+     "啊，是拿着吉他的那个人吧。",
+     "对，就是他。"
+    ],
+    "options": [
+     "白衬衫・拿吉他",
+     "黑衬衫・拿吉他",
+     "白衬衫・没拿吉他",
+     "黑衬衫・没拿吉他"
+    ]
+   },
+   "en": {
+    "scene": "In a park, a man and a woman are talking.",
+    "question": "Which person is the woman's younger brother?",
+    "lines": [
+     "Oh, my younger brother is over there.",
+     "Which one? The one in the white shirt?",
+     "The one in the white shirt is my brother's friend. My brother is wearing a black shirt.",
+     "Ah, the one holding a guitar.",
+     "Yes, that's him."
+    ],
+    "options": [
+     "White shirt, guitar",
+     "Black shirt, guitar",
+     "White shirt, no guitar",
+     "Black shirt, no guitar"
+    ]
+   }
+  },
+  "why": {
+   "zh": "弟弟「くろい シャツを きて います」，男人说「ギターを もって いる 人」，女人确认「はい、そうです」。",
+   "en": "Her brother 「くろい シャツを きて います」, and she confirms 「はい、そうです」 when he says 「ギターを もって いる 人」."
+  },
+  "wrong": [
+   {
+    "zh": "穿白衬衫的是弟弟的朋友。",
+    "en": "The one in the white shirt is her brother's friend."
+   },
+   null,
+   {
+    "zh": "穿白衬衫的是朋友，而且弟弟拿着吉他。",
+    "en": "White shirt is the friend, and her brother has a guitar."
+   },
+   {
+    "zh": "衬衫对了，但女人确认弟弟拿着吉他。",
+    "en": "The shirt is right, but she confirms he's holding a guitar."
+   }
+  ],
+  "traps": [
+   "other-option-attribute",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n5-m1-ck-206",
+  "type": "point",
+  "scene": "男の 人が 女の 人と 電話で 話して います。",
+  "question": "女の 人の 新しい へやは どれですか。",
+  "lines": [
+   [
+    "M",
+    "新しい へやは どうですか。"
+   ],
+   [
+    "F",
+    "とても いいですよ。まどが 大きくて、あかるいです。"
+   ],
+   [
+    "M",
+    "いいですね。ベッドも 新しいのを 買いましたか。"
+   ],
+   [
+    "F",
+    "いいえ、ベッドは 高いですから、まだ 買って いません。今は ふとんで ねて います。"
+   ],
+   [
+    "M",
+    "そうですか。"
+   ]
+  ],
+  "options": [
+   "まど 大きい・ベッド",
+   "まど 小さい・ベッド",
+   "まど 大きい・ふとん",
+   "まど 小さい・ふとん"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A small room with one large window on the back wall and a bed against the side wall.",
+   "Simple black-and-white line drawing, no text. A small room with one small window on the back wall and a bed against the side wall.",
+   "Simple black-and-white line drawing, no text. A small room with one large window on the back wall and a futon laid out on the floor.",
+   "Simple black-and-white line drawing, no text. A small room with one small window on the back wall and a futon laid out on the floor."
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在打电话。",
+    "question": "女人的新房间是哪一个？",
+    "lines": [
+     "新房间怎么样？",
+     "非常好哦。窗户很大，很亮。",
+     "真好。床也买了新的吗？",
+     "没有，床太贵了，还没买。现在睡在被褥上。",
+     "这样啊。"
+    ],
+    "options": [
+     "窗户大・床",
+     "窗户小・床",
+     "窗户大・被褥",
+     "窗户小・被褥"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking on the phone.",
+    "question": "Which is the woman's new room?",
+    "lines": [
+     "How's your new room?",
+     "It's very nice. The window is big and it's bright.",
+     "Sounds nice. Did you buy a new bed too?",
+     "No, beds are expensive, so I haven't bought one yet. For now I sleep on a futon.",
+     "I see."
+    ],
+    "options": [
+     "Big window, bed",
+     "Small window, bed",
+     "Big window, futon",
+     "Small window, futon"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「まどが 大きくて」，床「まだ 買って いません」，现在「ふとんで ねて います」。",
+   "en": "「まどが 大きくて」, the bed 「まだ 買って いません」, and she sleeps 「ふとんで」 for now."
+  },
+  "wrong": [
+   {
+    "zh": "窗户对了，但床还没买。",
+    "en": "The window is right, but she hasn't bought a bed yet."
+   },
+   {
+    "zh": "窗户很大，而且还没有床。",
+    "en": "Her window is big, and she has no bed yet."
+   },
+   null,
+   {
+    "zh": "被褥对了，但她说窗户很大。",
+    "en": "The futon is right, but she says the window is big."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "denied-guess"
+  ]
+ }
+]

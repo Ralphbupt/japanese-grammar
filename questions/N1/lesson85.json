@@ -1,0 +1,700 @@
+[
+  {
+    "id": "n1-l85-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson85#1"
+    ],
+    "difficulty": 1,
+    "stem": "この程度の不具合なら、わざわざ業者に修理を頼む（　）。説明書を見れば自分で直せる。",
+    "options": [
+      "までもない",
+      "までのことだ",
+      "に堪えない",
+      "にかたくない"
+    ],
+    "answer": 0,
+    "full": "この程度の不具合なら、わざわざ業者に修理を頼むまでもない。説明書を見れば自分で直せる。",
+    "tr": {
+      "zh": "这点小故障的话，用不着特地请人来修。看着说明书自己就能修好。",
+      "en": "A fault this minor doesn't need a repairman. I can fix it myself with the manual."
+    },
+    "why": {
+      "zh": "「この程度」「自分で直せる」说明程度轻，没必要特地去做，用「までもない」（用不着……）。",
+      "en": "「この程度」 and 「自分で直せる」 say it's too minor to bother — 「までもない」 (no need to)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「辞書形＋までのことだ」是“大不了……就是了”的决心，和后句“自己就能修”矛盾。",
+        "en": "「までのことだ」 (I'll just …) is a resolve to do it — the next sentence says it isn't needed."
+      },
+      {
+        "zh": "「に堪えない」只接「見る・聞く・読む」或感情名词，“不堪请人修”说不通。",
+        "en": "「に堪えない」 goes with 見る/聞く/読む or emotion nouns; \"unbearable to ask\" makes no sense."
+      },
+      {
+        "zh": "「にかたくない」几乎只接「想像・察する・理解」，不能接「頼む」。",
+        "en": "「にかたくない」 goes almost only with 想像/察する/理解, not 頼む."
+      }
+    ]
+  },
+  {
+    "id": "n1-l85-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson85#1"
+    ],
+    "difficulty": 2,
+    "stem": "彼女が毎晩遅くまで練習していたことは、チームの誰もが知っている。今回の優勝が努力の結果であることは、（　）。",
+    "options": [
+      "言ったまでだ",
+      "言うまでもない",
+      "言うに堪えない",
+      "言うにかたくない"
+    ],
+    "answer": 1,
+    "full": "彼女が毎晩遅くまで練習していたことは、チームの誰もが知っている。今回の優勝が努力の結果であることは、言うまでもない。",
+    "tr": {
+      "zh": "她每天晚上练到很晚，队里的人都知道。这次夺冠是努力的结果，这一点不用说。",
+      "en": "Everyone on the team knows she practised late every night. It goes without saying that this win is the result of her effort."
+    },
+    "why": {
+      "zh": "前句说大家都知道，事情很明显，用固定说法「言うまでもない」（不用说）。",
+      "en": "Everyone already knows, so it's obvious — the set phrase 「言うまでもない」 (it goes without saying)."
+    },
+    "wrong": [
+      {
+        "zh": "「た形＋までだ」是“我只是说说而已”的辩解，不能作“……这一点”的谓语。",
+        "en": "「言ったまでだ」 (I only said it) is an excuse, not a comment on how obvious something is."
+      },
+      null,
+      {
+        "zh": "「言うに堪えない」意思是“说不出口、不堪说”，和“大家都知道”的语境不符。",
+        "en": "「言うに堪えない」 (too awful to say) doesn't fit \"everyone knows\"."
+      },
+      {
+        "zh": "「にかたくない」只和「想像・察する・理解」搭配，没有「言うにかたくない」的说法。",
+        "en": "「にかたくない」 pairs with 想像/察する/理解; 「言うにかたくない」 isn't said."
+      }
+    ]
+  },
+  {
+    "id": "n1-l85-003",
+    "type": "narabe",
+    "refs": [
+      "lesson85#1"
+    ],
+    "difficulty": 2,
+    "stem": "そんなことは [_] [★] [_] [_] 、誰でも知っている。",
+    "options": [
+      "までも",
+      "わざわざ",
+      "なく",
+      "調べる"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "そんなことはわざわざ調べるまでもなく、誰でも知っている。",
+    "tr": {
+      "zh": "那种事用不着特地去查，谁都知道。",
+      "en": "You don't need to look that up — everyone knows it."
+    },
+    "why": {
+      "zh": "「わざわざ」修饰「調べる」，后接副词性用法「までもなく」：わざわざ → 調べる → までも → なく。★ 是「調べる」。",
+      "en": "「わざわざ」 modifies 「調べる」, followed by the adverbial 「までもなく」: わざわざ → 調べる → までも → なく. The ★ is 「調べる」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l85-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson85#2"
+    ],
+    "difficulty": 2,
+    "stem": "交渉がまとまらなければ、ほかの取引先を探す（　）。こちらから頭を下げるつもりはない。",
+    "options": [
+      "までもない",
+      "には及ばない",
+      "までだ",
+      "に足る"
+    ],
+    "answer": 2,
+    "full": "交渉がまとまらなければ、ほかの取引先を探すまでだ。こちらから頭を下げるつもりはない。",
+    "tr": {
+      "zh": "谈判谈不拢的话，大不了另找客户。我可没打算向对方低头。",
+      "en": "If the negotiations fall through, I'll simply find another client. I have no intention of bowing to them."
+    },
+    "why": {
+      "zh": "「〜なければ」提出假设，后句「頭を下げるつもりはない」显示豁出去的决心，用「辞書形＋までだ」（大不了……就是了）。",
+      "en": "The 「〜なければ」 condition and \"I won't bow to them\" show resolve — dictionary form + 「までだ」 (I'll just …)."
+    },
+    "wrong": [
+      {
+        "zh": "「までもない」是“用不着”，“谈不拢就用不着找别的客户”逻辑不通。",
+        "en": "「までもない」 (no need to) is illogical: \"if talks fail, there's no need to find another client\"."
+      },
+      {
+        "zh": "「には及ばない」多用于礼貌地回绝对方的好意，不用于说话人自己的决定。",
+        "en": "「には及ばない」 politely declines someone else's offer; it isn't a decision of one's own."
+      },
+      null,
+      {
+        "zh": "「に足る」是“值得……”，修饰名词，不能表达决心。",
+        "en": "「に足る」 (worthy of) modifies nouns and can't express a resolve."
+      }
+    ]
+  },
+  {
+    "id": "n1-l85-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson85#2",
+      "lesson87#5"
+    ],
+    "difficulty": 2,
+    "stem": "A「どうしてあんなことを部長に言ったの？」\nB「別に責めるつもりはなかったよ。気づいたことを正直に伝えた（　）。」",
+    "options": [
+      "までもない",
+      "までだ",
+      "に足る",
+      "とは"
+    ],
+    "answer": 1,
+    "full": "A「どうしてあんなことを部長に言ったの？」\nB「別に責めるつもりはなかったよ。気づいたことを正直に伝えたまでだ。」",
+    "tr": {
+      "zh": "A：“你为什么跟部长说那种话？”\nB：“我并没有要指责谁的意思，只是把注意到的事如实告诉他而已。”",
+      "en": "A: \"Why did you say that to the manager?\"\nB: \"I didn't mean to blame anyone. I just told him honestly what I'd noticed.\""
+    },
+    "why": {
+      "zh": "B在为自己的行为辩解（「責めるつもりはなかった」），用「た形＋までだ」（只是……而已）。",
+      "en": "B is explaining away what they did (「責めるつもりはなかった」) — past form + 「までだ」 (I only …)."
+    },
+    "wrong": [
+      {
+        "zh": "「までもない」接辞書形，不接た形，而且“用不着”与辩解的语境不符。",
+        "en": "「までもない」 takes the dictionary form, not the past, and \"no need to\" isn't an excuse."
+      },
+      null,
+      {
+        "zh": "「に足る」是“值得……”，修饰名词，放在句末说不通。",
+        "en": "「に足る」 (worthy of) modifies a noun; it can't end this sentence."
+      },
+      {
+        "zh": "「とは」表示对意外事实的惊讶，B不会对自己做的事感到惊讶。",
+        "en": "「とは」 expresses surprise at an unexpected fact; B isn't surprised at their own action."
+      }
+    ]
+  },
+  {
+    "id": "n1-l85-006",
+    "type": "narabe",
+    "refs": [
+      "lesson85#2"
+    ],
+    "difficulty": 2,
+    "stem": "悪気はなかった。ただ [_] [_] [_] [★] だ。",
+    "options": [
+      "言った",
+      "まで",
+      "冗談",
+      "を"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "悪気はなかった。ただ冗談を言ったまでだ。",
+    "tr": {
+      "zh": "我没有恶意，只是开了个玩笑而已。",
+      "en": "I meant no harm. I was only joking."
+    },
+    "why": {
+      "zh": "「ただ」提示辩解，宾语「冗談を」在前，后接「た形＋までだ」：冗談 → を → 言った → まで。★ 是「まで」。",
+      "en": "「ただ」 signals an excuse; the object 「冗談を」 comes first, then past form + 「までだ」: 冗談 → を → 言った → まで. The ★ is 「まで」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l85-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson85#3",
+      "lesson85#1"
+    ],
+    "difficulty": 1,
+    "stem": "A「お体の具合はいかがですか。近いうちにお見舞いに伺いたいのですが。」\nB「ありがとうございます。でも、もう退院しましたので、お見舞い（　）。」",
+    "options": [
+      "には及びません",
+      "までもありません",
+      "に足りません",
+      "に堪えません"
+    ],
+    "answer": 0,
+    "full": "A「お体の具合はいかがですか。近いうちにお見舞いに伺いたいのですが。」\nB「ありがとうございます。でも、もう退院しましたので、お見舞いには及びません。」",
+    "tr": {
+      "zh": "A：“您身体怎么样？我想最近去探望您。”\nB：“谢谢。不过我已经出院了，您不必来探望。”",
+      "en": "A: \"How are you feeling? I'd like to come and visit you soon.\"\nB: \"Thank you. But I've already left hospital, so there's no need to visit.\""
+    },
+    "why": {
+      "zh": "礼貌地回绝对方的好意，而且前面是名词「お見舞い」，用「名詞＋には及びません」（您不必……）。",
+      "en": "B politely declines A's kind offer, and the word before is the noun 「お見舞い」 — noun + 「には及びません」 (there's no need)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「までもない」只接动词辞書形，不能直接接名词「お見舞い」。",
+        "en": "「までもない」 follows a dictionary-form verb, not a noun like 「お見舞い」."
+      },
+      {
+        "zh": "「に足りない」只用于「取るに足りない」等固定搭配，“不值得探望”也很失礼。",
+        "en": "「に足りない」 lives in set phrases like 「取るに足りない」; \"not worth visiting\" would also be rude."
+      },
+      {
+        "zh": "「に堪えない」接「感謝・遺憾」等感情名词或「見る・聞く」，不接「お見舞い」。",
+        "en": "「に堪えない」 takes emotion nouns (感謝, 遺憾) or 見る/聞く, not 「お見舞い」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l85-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson85#3"
+    ],
+    "difficulty": 2,
+    "stem": "彼もずいぶん上達したが、ピアノの腕前では、まだ師匠の足元にも（　）。",
+    "options": [
+      "足りない",
+      "及ばない",
+      "堪えない",
+      "かたくない"
+    ],
+    "answer": 1,
+    "full": "彼もずいぶん上達したが、ピアノの腕前では、まだ師匠の足元にも及ばない。",
+    "tr": {
+      "zh": "他虽然进步了很多，但论钢琴水平，还远远比不上师父。",
+      "en": "He has improved a lot, but as a pianist he still can't hold a candle to his teacher."
+    },
+    "why": {
+      "zh": "「AはBに及ばない」是“比不上”，固定说法「足元にも及ばない」（望尘莫及）。",
+      "en": "「AはBに及ばない」 means A is no match for B; the set phrase is 「足元にも及ばない」 (can't hold a candle to)."
+    },
+    "wrong": [
+      {
+        "zh": "「足元にも足りない」不是日语说法；「に足りない」用于「取るに足りない」等。",
+        "en": "「足元にも足りない」 isn't Japanese; 「に足りない」 is for phrases like 「取るに足りない」."
+      },
+      null,
+      {
+        "zh": "「に堪えない」是“不堪……”或“不胜……”，不表示水平比较。",
+        "en": "「に堪えない」 (unbearable / deeply) doesn't compare levels of skill."
+      },
+      {
+        "zh": "「にかたくない」只和「想像・察する」搭配，不表示比较。",
+        "en": "「にかたくない」 goes with 想像/察する and doesn't compare."
+      }
+    ]
+  },
+  {
+    "id": "n1-l85-009",
+    "type": "narabe",
+    "refs": [
+      "lesson85#3"
+    ],
+    "difficulty": 1,
+    "stem": "たいした怪我ではないので、[★] [_] [_] [_] 。",
+    "options": [
+      "いただく",
+      "及びません",
+      "ご心配",
+      "には"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "たいした怪我ではないので、ご心配いただくには及びません。",
+    "tr": {
+      "zh": "伤得不重，您不必担心。",
+      "en": "It's not a serious injury, so there's no need to worry."
+    },
+    "why": {
+      "zh": "「ご心配いただく」是对方为说话人做的事，后接「には及びません」：ご心配 → いただく → には → 及びません。★ 是「ご心配」。",
+      "en": "「ご心配いただく」 is what the listener would do for the speaker, followed by 「には及びません」: ご心配 → いただく → には → 及びません. The ★ is 「ご心配」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l85-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson85#4"
+    ],
+    "difficulty": 2,
+    "stem": "彼の主張には、専門家を納得させる（　）根拠が何一つ示されていない。",
+    "options": [
+      "にかたくない",
+      "までもない",
+      "に堪える",
+      "に足る"
+    ],
+    "answer": 3,
+    "full": "彼の主張には、専門家を納得させるに足る根拠が何一つ示されていない。",
+    "tr": {
+      "zh": "他的主张没有提出任何一条足以让专家信服的根据。",
+      "en": "His claim offers not a single piece of evidence capable of convincing experts."
+    },
+    "why": {
+      "zh": "修饰名词「根拠」，表示“足以让人信服”，用「納得させるに足る」。",
+      "en": "It modifies 「根拠」 — evidence good enough to convince: 「納得させるに足る」."
+    },
+    "wrong": [
+      {
+        "zh": "「にかたくない」只接「想像・察する・理解」，不接「納得させる」。",
+        "en": "「にかたくない」 takes 想像/察する/理解, not 「納得させる」."
+      },
+      {
+        "zh": "「までもない根拠」是“用不着说服的根据”，意思不通。",
+        "en": "「納得させるまでもない根拠」 (evidence that needn't convince) makes no sense."
+      },
+      {
+        "zh": "「に堪える」用于作品经得起「鑑賞・批評」，不接「納得させる」。",
+        "en": "「に堪える」 is for work that stands up to 鑑賞/批評, not 「納得させる」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-l85-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson85#4"
+    ],
+    "difficulty": 1,
+    "stem": "新人のころは、今思えば取る（　）ミスで、いちいち落ち込んでいたものだ。",
+    "options": [
+      "までもない",
+      "に足りない",
+      "には及ばない",
+      "に堪えない"
+    ],
+    "answer": 1,
+    "full": "新人のころは、今思えば取るに足りないミスで、いちいち落ち込んでいたものだ。",
+    "tr": {
+      "zh": "刚入职的时候，经常为一些现在想来微不足道的失误而消沉。",
+      "en": "As a newcomer I used to get down over mistakes that, looking back, were utterly trivial."
+    },
+    "why": {
+      "zh": "「取る」后的空是固定搭配「取るに足りない」（微不足道）。",
+      "en": "After 「取る」 the set phrase is 「取るに足りない」 (trivial)."
+    },
+    "wrong": [
+      {
+        "zh": "没有「取るまでもない」这种说法，“用不着拿的失误”不通。",
+        "en": "「取るまでもない」 isn't a phrase; \"a mistake not needing to be taken\" means nothing."
+      },
+      null,
+      {
+        "zh": "「取るには及ばない」不是固定说法，意思也不通。",
+        "en": "「取るには及ばない」 isn't a set phrase and makes no sense here."
+      },
+      {
+        "zh": "「に堪えない」接「見る・聞く・読む」，“不堪取”说不通。",
+        "en": "「に堪えない」 goes with 見る/聞く/読む; 「取るに堪えない」 isn't said."
+      }
+    ]
+  },
+  {
+    "id": "n1-l85-012",
+    "type": "narabe",
+    "refs": [
+      "lesson85#4"
+    ],
+    "difficulty": 2,
+    "stem": "この大きな案件を [_] [_] [★] [_] 。",
+    "options": [
+      "社内にはいない",
+      "に足る",
+      "人材は",
+      "任せる"
+    ],
+    "order": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "full": "この大きな案件を任せるに足る人材は社内にはいない。",
+    "tr": {
+      "zh": "能托付这个大项目的人才，公司内部没有。",
+      "en": "There's nobody in the company capable enough to be entrusted with this big project."
+    },
+    "why": {
+      "zh": "「案件を任せる」接「に足る」，修饰名词「人材」，最后是谓语「社内にはいない」：任せる → に足る → 人材は → 社内にはいない。★ 是「人材は」。",
+      "en": "「案件を任せる」 + 「に足る」 modifies 「人材」, and the predicate 「社内にはいない」 ends it: 任せる → に足る → 人材は → 社内にはいない. The ★ is 「人材は」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l85-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson85#5"
+    ],
+    "difficulty": 2,
+    "stem": "素人が撮った写真とはいえ、どれもプロの批評（　）出来栄えだ。",
+    "options": [
+      "に堪えない",
+      "に足りない",
+      "に堪える",
+      "にかたくない"
+    ],
+    "answer": 2,
+    "full": "素人が撮った写真とはいえ、どれもプロの批評に堪える出来栄えだ。",
+    "tr": {
+      "zh": "虽说是业余爱好者拍的照片，但每一张的完成度都经得起专业人士的评论。",
+      "en": "They may be amateur photos, but every one of them stands up to professional criticism."
+    },
+    "why": {
+      "zh": "「とはいえ」后是正面评价，作品质量经得起检验，用「批評に堪える」。",
+      "en": "After 「とはいえ」 comes praise: work that stands up to scrutiny — 「批評に堪える」."
+    },
+    "wrong": [
+      {
+        "zh": "「批評に堪えない」是“经不起批评”，和「とはいえ」引出的正面评价相反。",
+        "en": "「に堪えない」 (can't stand up to) is the opposite of the praise 「とはいえ」 sets up."
+      },
+      {
+        "zh": "「に足りない」用于「取るに足りない」等固定搭配，而且是负面评价。",
+        "en": "「に足りない」 is for set phrases like 「取るに足りない」, and it's negative."
+      },
+      null,
+      {
+        "zh": "「にかたくない」只接「想像・察する・理解」，不接「批評」。",
+        "en": "「にかたくない」 goes with 想像/察する/理解, not 「批評」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l85-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson85#5"
+    ],
+    "difficulty": 2,
+    "stem": "このたびは、多くの皆様から温かいご支援を賜り、感謝（　）。",
+    "options": [
+      "には及びません",
+      "に堪えません",
+      "に足りません",
+      "にかたくありません"
+    ],
+    "answer": 1,
+    "full": "このたびは、多くの皆様から温かいご支援を賜り、感謝に堪えません。",
+    "tr": {
+      "zh": "这次承蒙各位热情支持，不胜感激。",
+      "en": "We are deeply grateful for the warm support so many of you have given us."
+    },
+    "why": {
+      "zh": "「賜り」说明说话人受到支持，前接感情名词「感謝」，用正式的「感謝に堪えません」（不胜感激）。",
+      "en": "「賜り」 shows the speaker received the support; with the emotion noun 「感謝」 the formal phrase is 「感謝に堪えません」 (deeply grateful)."
+    },
+    "wrong": [
+      {
+        "zh": "「感謝には及びません」是“不必道谢”，是受谢的一方说的，和「賜り」不符。",
+        "en": "「感謝には及びません」 (no need to thank) is said by the one being thanked, not by someone who received support."
+      },
+      null,
+      {
+        "zh": "「感謝に足りません」是“不值得感谢”，意思不通。",
+        "en": "「感謝に足りません」 (not worth thanking) makes no sense here."
+      },
+      {
+        "zh": "「感謝にかたくありません」不是日语说法；「にかたくない」接「想像・察する」。",
+        "en": "「感謝にかたくない」 isn't Japanese; 「にかたくない」 goes with 想像/察する."
+      }
+    ]
+  },
+  {
+    "id": "n1-l85-015",
+    "type": "narabe",
+    "refs": [
+      "lesson85#5"
+    ],
+    "difficulty": 2,
+    "stem": "ネットの掲示板には、[_] [★] [_] [_] が並んでいた。",
+    "options": [
+      "悪口",
+      "読む",
+      "ばかり",
+      "に堪えない"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "ネットの掲示板には、読むに堪えない悪口ばかりが並んでいた。",
+    "tr": {
+      "zh": "网上的留言板上满是不堪入目的谩骂。",
+      "en": "The online forum was full of insults too vile to read."
+    },
+    "why": {
+      "zh": "「読むに堪えない」（不堪入目）修饰「悪口」，再加「ばかり」：読む → に堪えない → 悪口 → ばかり。★ 是「に堪えない」。",
+      "en": "「読むに堪えない」 (too awful to read) modifies 「悪口」, then 「ばかり」: 読む → に堪えない → 悪口 → ばかり. The ★ is 「に堪えない」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l85-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson85#6"
+    ],
+    "difficulty": 2,
+    "stem": "十年かけて育てた果樹園を一晩の豪雨で失った農家の落胆は、同じ農業に携わる者なら想像（　）。",
+    "options": [
+      "しがたい",
+      "にかたくない",
+      "までもない",
+      "に足りない"
+    ],
+    "answer": 1,
+    "full": "十年かけて育てた果樹園を一晩の豪雨で失った農家の落胆は、同じ農業に携わる者なら想像にかたくない。",
+    "tr": {
+      "zh": "花了十年培育的果园一夜暴雨就毁了，那位农户有多沮丧，同样从事农业的人不难想象。",
+      "en": "Anyone who also works the land can easily imagine the despair of a farmer who lost an orchard ten years in the making to one night's downpour."
+    },
+    "why": {
+      "zh": "「同じ農業に携わる者なら」说明很容易体会别人的心情，用固定搭配「想像にかたくない」（不难想象）。",
+      "en": "「同じ農業に携わる者なら」 says such people would easily understand — the set phrase 「想像にかたくない」 (not hard to imagine)."
+    },
+    "wrong": [
+      {
+        "zh": "「想像しがたい」是“难以想象”，和「同じ農業に携わる者なら」（同行的话就能体会）矛盾。",
+        "en": "「想像しがたい」 (hard to imagine) contradicts \"anyone who also farms\" would understand."
+      },
+      null,
+      {
+        "zh": "「までもない」接动词辞書形，不能接名词「想像」。",
+        "en": "「までもない」 follows a dictionary-form verb, not the noun 「想像」."
+      },
+      {
+        "zh": "「想像に足りない」不是日语说法，意思也不通。",
+        "en": "「想像に足りない」 isn't Japanese and makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n1-l85-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson85#6"
+    ],
+    "difficulty": 2,
+    "stem": "長年連れ添った妻を亡くした彼の心中は、察する（　）。",
+    "options": [
+      "に足る",
+      "までだ",
+      "にかたくない",
+      "に堪える"
+    ],
+    "answer": 2,
+    "full": "長年連れ添った妻を亡くした彼の心中は、察するにかたくない。",
+    "tr": {
+      "zh": "失去了相伴多年的妻子，他的心情不难体会。",
+      "en": "It's not hard to imagine how he feels after losing the wife he spent so many years with."
+    },
+    "why": {
+      "zh": "体会别人的心情，「察する」后接「にかたくない」（不难……）。",
+      "en": "Imagining someone else's feelings: 「察する」 + 「にかたくない」 (not hard to …)."
+    },
+    "wrong": [
+      {
+        "zh": "「察するに足る」不是日语说法；「に足る」接「信頼・任せる」等。",
+        "en": "「察するに足る」 isn't Japanese; 「に足る」 goes with 信頼, 任せる, etc."
+      },
+      {
+        "zh": "「辞書形＋までだ」是说话人“大不了……”的决心，与描述他人心情不符。",
+        "en": "「までだ」 states the speaker's own resolve, not someone else's feelings."
+      },
+      null,
+      {
+        "zh": "「に堪える」用于作品经得起鉴赏、批评，不接「察する」。",
+        "en": "「に堪える」 is for work that stands up to appreciation or criticism, not 「察する」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l85-018",
+    "type": "narabe",
+    "refs": [
+      "lesson85#6"
+    ],
+    "difficulty": 1,
+    "stem": "このまま値上げが続けば、[_] [_] [_] [★] 。",
+    "options": [
+      "想像に",
+      "家計が",
+      "かたくない",
+      "苦しくなるのは"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "このまま値上げが続けば、家計が苦しくなるのは想像にかたくない。",
+    "tr": {
+      "zh": "如果涨价持续下去，不难想象家庭开支会越来越吃紧。",
+      "en": "If prices keep rising like this, it's easy to imagine household budgets getting tighter."
+    },
+    "why": {
+      "zh": "「家計が苦しくなるのは」作主题，后接「想像にかたくない」：家計が → 苦しくなるのは → 想像に → かたくない。★ 是「かたくない」。",
+      "en": "「家計が苦しくなるのは」 is the topic, followed by 「想像にかたくない」: 家計が → 苦しくなるのは → 想像に → かたくない. The ★ is 「かたくない」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

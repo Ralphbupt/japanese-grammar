@@ -1,0 +1,1331 @@
+[
+  {
+    "id": "n2-mg-301",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "計画の（　）が甘かったため、予定より大幅に費用がかかってしまった。",
+    "options": [
+      "見通し",
+      "手入れ",
+      "見本",
+      "目印"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "计划的预估太乐观，结果花的钱大大超出了预期。",
+      "en": "The plan's projections were too optimistic, so it cost far more than expected."
+    },
+    "why": {
+      "zh": "“预估太乐观（甘い）→ 超支”说的是对将来的预测，即「見通し」。「見通しが甘い」是固定说法。",
+      "en": "Being too optimistic about how things would go is 「見通しが甘い」 — 「見通し」 is the outlook or forecast."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「手入れ」是保养、修整（庭院、皮肤等），计划没有“保养”。",
+        "en": "「手入れ」 is upkeep or care (of a garden, skin); a plan doesn't have upkeep."
+      },
+      {
+        "zh": "「見本」是样品、榜样，与花费超出预期无关。",
+        "en": "「見本」 is a sample or model — nothing to do with costs overrunning."
+      },
+      {
+        "zh": "「目印」是醒目的标记，不能说“标记太乐观”。",
+        "en": "「目印」 is a landmark or marker; it can't be \"too optimistic\"."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-302",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "この料理は材料を一晩つけておくなど（　）がかかるが、その分とてもおいしい。",
+    "options": [
+      "手間",
+      "手段",
+      "手元",
+      "手順"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这道菜要把材料腌一晚上之类的，很费工夫，但也因此非常好吃。",
+      "en": "This dish takes a lot of work, like marinating the ingredients overnight, but it's all the more delicious for it."
+    },
+    "why": {
+      "zh": "“腌一晚上”说明费工夫，「手間がかかる」＝费事、费工夫。",
+      "en": "Marinating overnight is effort: 「手間がかかる」 means something takes time and trouble."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「手段」是手段、方法，不说「手段がかかる」。",
+        "en": "「手段」 is a means or method; 「手段がかかる」 isn't said."
+      },
+      {
+        "zh": "「手元」是手边，不能“花费”。",
+        "en": "「手元」 is what's at hand; it can't be \"taken\" like effort."
+      },
+      {
+        "zh": "「手順」是步骤，说「手順を踏む」，不说「手順がかかる」。",
+        "en": "「手順」 is the steps; you say 「手順を踏む」, not 「手順がかかる」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-303",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "双方が少しずつ（　）して、ようやく契約がまとまった。",
+    "options": [
+      "妥協",
+      "反省",
+      "納得",
+      "指摘"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "双方各让一步，合同终于谈成了。",
+      "en": "Both sides gave a little ground, and the contract was finally agreed."
+    },
+    "why": {
+      "zh": "“双方各让一点，最后谈成”是互相让步，即「妥協」。",
+      "en": "Each side giving a little so a deal can be reached is 「妥協」 (compromise)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「反省」是反省自己的错误，不是谈判中的让步。",
+        "en": "「反省」 is reflecting on your own mistakes, not giving ground in a negotiation."
+      },
+      {
+        "zh": "「納得」是理解并接受，不能“各自一点点地”做来达成协议。",
+        "en": "「納得」 is being convinced; it isn't something two sides do \"a little each\" to reach a deal."
+      },
+      {
+        "zh": "「指摘」是指出问题，指出问题不会让合同谈成。",
+        "en": "「指摘」 is pointing out a problem — that doesn't get a contract agreed."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-304",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "犯人がだれなのか、まったく見当が（　）。",
+    "options": [
+      "つかない",
+      "決まらない",
+      "出ない",
+      "届かない"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "犯人是谁，完全猜不出来。",
+      "en": "I have no idea at all who the culprit is."
+    },
+    "why": {
+      "zh": "「見当がつく」＝能猜到、有个大概，否定「見当がつかない」＝完全摸不着头脑。",
+      "en": "「見当がつく」 is to have an idea or guess; 「見当がつかない」 is having no idea."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「決まらない」用于“定不下来”，不和「見当」搭配。",
+        "en": "「決まらない」 is \"not decided\"; it doesn't go with 「見当」."
+      },
+      {
+        "zh": "「出ない」可说「答えが出ない」，但不说「見当が出ない」。",
+        "en": "You can say 「答えが出ない」, but not 「見当が出ない」."
+      },
+      {
+        "zh": "「届かない」是够不着、送不到，和「見当」不搭配。",
+        "en": "「届かない」 is \"doesn't reach / arrive\"; it doesn't go with 「見当」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-305",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "薬を飲んだのに、熱は下がるどころか（　）高くなった。",
+    "options": [
+      "いっそう",
+      "せめて",
+      "わざと",
+      "いったん"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "明明吃了药，烧非但没退，反而更高了。",
+      "en": "I took the medicine, but far from going down, my fever got even higher."
+    },
+    "why": {
+      "zh": "「下がるどころか」后面是程度更进一步，「いっそう」＝更加。",
+      "en": "After 「下がるどころか」 (far from going down) comes \"even more\": 「いっそう」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「せめて」是“至少”，后面接愿望，不能修饰“变得更高”。",
+        "en": "「せめて」 is \"at least\" and leads to a wish, not to \"got higher\"."
+      },
+      {
+        "zh": "「わざと」是故意，发烧不能故意。",
+        "en": "「わざと」 is \"on purpose\"; a fever doesn't rise on purpose."
+      },
+      {
+        "zh": "「いったん」是“暂且、一旦”，和“更高”的程度变化不合。",
+        "en": "「いったん」 is \"for now / once\"; it doesn't express \"even more\"."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-306",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "難しいと思っていた試験だったが、（　）簡単だった。",
+    "options": [
+      "案外",
+      "当然",
+      "相変わらず",
+      "あいにく"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "本以为考试很难，没想到挺简单的。",
+      "en": "I'd thought the exam would be hard, but it was surprisingly easy."
+    },
+    "why": {
+      "zh": "“本以为难，结果简单”是和预想不同，「案外」＝出乎意料地。",
+      "en": "Easy when you'd expected it to be hard is 「案外」 — unexpectedly."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「当然」是理所当然，但前面说“以为很难”，简单并不是当然的。",
+        "en": "「当然」 is \"naturally\", but you'd expected it to be hard, so easy wasn't natural."
+      },
+      {
+        "zh": "「相変わらず」是“照旧”，用于和以前一样的情况，这里说的是和预想不同。",
+        "en": "「相変わらず」 is \"as always\"; here the point is that it differed from what you expected."
+      },
+      {
+        "zh": "「あいにく」是“不巧”，用于不如意的事，考试简单不是坏事。",
+        "en": "「あいにく」 is \"unfortunately\"; an easy exam isn't bad luck."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-307",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "台風で電車が止まったので、（　）会議を欠席した。",
+    "options": [
+      "やむを得ず",
+      "思わず",
+      "相変わらず",
+      "少なからず"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "因为台风电车停了，只好缺席了会议。",
+      "en": "The trains stopped because of the typhoon, so I had no choice but to miss the meeting."
+    },
+    "why": {
+      "zh": "电车停了是不得已的原因，「やむを得ず」＝不得已、只好。",
+      "en": "The trains stopping left no choice: 「やむを得ず」 means \"unavoidably, having no option\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「思わず」是不由得、下意识地，缺席会议不是下意识的动作。",
+        "en": "「思わず」 is \"involuntarily\"; missing a meeting isn't a reflex."
+      },
+      {
+        "zh": "「相変わらず」是照旧，和“因为台风”这个特殊原因矛盾。",
+        "en": "「相変わらず」 is \"as usual\", which clashes with the one-off typhoon."
+      },
+      {
+        "zh": "「少なからず」是“不少、很”，修饰程度，不能修饰“缺席”。",
+        "en": "「少なからず」 is \"not a little\"; it describes degree, not missing a meeting."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-308",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "急に用事ができたので、ホテルの予約を（　）した。",
+    "options": [
+      "キャンセル",
+      "リフォーム",
+      "リサイクル",
+      "リハーサル"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "突然有事，所以取消了酒店的预订。",
+      "en": "Something came up suddenly, so I cancelled the hotel booking."
+    },
+    "why": {
+      "zh": "有事去不了，就是取消预订：「予約をキャンセルする」。",
+      "en": "Something came up, so you can't go: 「予約をキャンセルする」 (cancel the booking)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「リフォーム」是装修房子，预订不能装修。",
+        "en": "「リフォーム」 is renovating a home; you can't renovate a booking."
+      },
+      {
+        "zh": "「リサイクル」是回收再利用，和预订无关。",
+        "en": "「リサイクル」 is recycling — unrelated to a booking."
+      },
+      {
+        "zh": "「リハーサル」是彩排，不能“彩排预订”。",
+        "en": "「リハーサル」 is a rehearsal; a booking isn't rehearsed."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-309",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "投資には常に（　）がともなうので、慎重に判断すべきだ。",
+    "options": [
+      "リスク",
+      "ショック",
+      "ブーム",
+      "ペース"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "投资总是伴随着风险，所以应该慎重判断。",
+      "en": "Investing always comes with risk, so you should decide carefully."
+    },
+    "why": {
+      "zh": "“所以要慎重”说明伴随的是可能的损失，即「リスク」。",
+      "en": "\"So decide carefully\" points to possible loss: investing carries 「リスク」 (risk)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ショック」是冲击、打击，不是投资“总是伴随”的东西。",
+        "en": "「ショック」 is a shock; it isn't something that always comes with investing."
+      },
+      {
+        "zh": "「ブーム」是热潮，热潮不会成为需要慎重的理由。",
+        "en": "「ブーム」 is a boom or craze — not a reason to be careful."
+      },
+      {
+        "zh": "「ペース」是速度、节奏，与“慎重判断”无关。",
+        "en": "「ペース」 is pace — unrelated to deciding carefully."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-310",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson62#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "専門家ならともかく、（　）にこの機械の修理は無理だ。",
+    "options": [
+      "素人",
+      "名人",
+      "本人",
+      "主人"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "专家另当别论，外行人是修不了这台机器的。",
+      "en": "An expert might manage, but an amateur couldn't repair this machine."
+    },
+    "why": {
+      "zh": "和「専門家」相对的是没有专业知识的人，即「素人」。",
+      "en": "The opposite of 「専門家」 (expert) is 「素人」 (amateur, layperson)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「名人」是高手，高手能修，和“修不了”矛盾。",
+        "en": "「名人」 is a master — a master could fix it."
+      },
+      {
+        "zh": "「本人」是当事人本人，和专家不构成对比。",
+        "en": "「本人」 is the person themselves; it doesn't contrast with an expert."
+      },
+      {
+        "zh": "「主人」是丈夫、主人，与专业与否无关。",
+        "en": "「主人」 is a husband or master of a house — not about expertise."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-311",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson61#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "彼女は長年の病気を（　）して、再び舞台に立った。",
+    "options": [
+      "克服",
+      "解消",
+      "解散",
+      "削除"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "她战胜了多年的疾病，重新站上了舞台。",
+      "en": "She overcame her long illness and went back on stage."
+    },
+    "why": {
+      "zh": "战胜困难、疾病是「克服する」：「病気を克服する」。",
+      "en": "Beating an illness or difficulty is 「克服する」: 「病気を克服する」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「解消」用于「ストレス」「不安」「契約」等的消除，不说「病気を解消」。",
+        "en": "「解消」 clears away stress, worries or contracts; 「病気を解消」 isn't said."
+      },
+      {
+        "zh": "「解散」是团体解散，疾病不能“解散”。",
+        "en": "「解散」 is a group disbanding; an illness can't disband."
+      },
+      {
+        "zh": "「削除」是删除（数据、文字），不用于疾病。",
+        "en": "「削除」 is deleting data or text, not an illness."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-312",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson62#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "彼は新しい薬の開発を通して、医学の発展に大きく（　）した。",
+    "options": [
+      "貢献",
+      "参加",
+      "援助",
+      "提供"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他通过开发新药，为医学的发展做出了巨大贡献。",
+      "en": "Through developing a new drug, he made a major contribution to the progress of medicine."
+    },
+    "why": {
+      "zh": "「〜に貢献する」＝为……做贡献，「発展に貢献する」是常见搭配。",
+      "en": "「〜に貢献する」 is to contribute to something; 「発展に貢献する」 is a set pairing."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「参加」是参加活动，“发展”不是可以参加的活动。",
+        "en": "「参加」 is taking part in an event; progress isn't an event."
+      },
+      {
+        "zh": "「援助」要用「〜を援助する」，对象是人或团体，不说「発展に援助する」。",
+        "en": "「援助」 takes を and a person or group; 「発展に援助する」 isn't said."
+      },
+      {
+        "zh": "「提供」是提供东西，要用「〜を提供する」。",
+        "en": "「提供」 is supplying something: 「〜を提供する」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-313",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson69#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "一度決めたら変えられないことなので、（　）に判断してください。",
+    "options": [
+      "慎重",
+      "豊富",
+      "盛ん",
+      "器用"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这是一旦决定就改不了的事，请慎重判断。",
+      "en": "Once it's decided it can't be changed, so please think it over carefully."
+    },
+    "why": {
+      "zh": "“决定了就改不了”所以要小心考虑，「慎重に」＝谨慎地。",
+      "en": "Since it can't be undone, decide 「慎重に」 — carefully."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「豊富」是丰富，形容数量多，不修饰“判断”。",
+        "en": "「豊富」 is plentiful; it describes amounts, not a decision."
+      },
+      {
+        "zh": "「盛ん」是兴盛、热烈，不说「盛んに判断する」。",
+        "en": "「盛ん」 is thriving or lively; 「盛んに判断する」 isn't said."
+      },
+      {
+        "zh": "「器用」是手巧、灵巧，和判断要小心无关。",
+        "en": "「器用」 is being handy or deft — not taking care over a decision."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-314",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson66#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "少子高齢化は、この国にとって（　）な問題になっている。",
+    "options": [
+      "深刻",
+      "退屈",
+      "陽気",
+      "気軽"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "少子老龄化已成为这个国家的严重问题。",
+      "en": "The falling birthrate and ageing population have become a serious problem for this country."
+    },
+    "why": {
+      "zh": "社会问题的严重是「深刻な問題」。",
+      "en": "A grave social problem is 「深刻な問題」 (a serious problem)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「退屈」是无聊，不形容社会问题。",
+        "en": "「退屈」 is boring; it doesn't describe a social problem."
+      },
+      {
+        "zh": "「陽気」是开朗、快活，和问题不搭。",
+        "en": "「陽気」 is cheerful — it doesn't fit a problem."
+      },
+      {
+        "zh": "「気軽」是轻松随意，和严峻的问题相反。",
+        "en": "「気軽」 is casual or easy-going, the opposite of a grave problem."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-315",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson66#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "今回の地震は、過去百年で最大（　）のものだった。",
+    "options": [
+      "規模",
+      "程度",
+      "範囲",
+      "単位"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这次地震是过去一百年来规模最大的。",
+      "en": "This earthquake was the largest in scale in the past hundred years."
+    },
+    "why": {
+      "zh": "「最大規模」＝规模最大，是固定说法。",
+      "en": "「最大規模」 (largest in scale) is the set phrase."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「程度」不和「最大」组成词，不说「最大程度のもの」。",
+        "en": "「程度」 doesn't combine with 「最大」 like this; 「最大程度のもの」 isn't said."
+      },
+      {
+        "zh": "「範囲」是范围，地震本身不说“最大范围的”。",
+        "en": "「範囲」 is a range or area; an earthquake isn't \"the largest range\"."
+      },
+      {
+        "zh": "「単位」是单位（米、元等），与地震大小无关。",
+        "en": "「単位」 is a unit (metres, yen …), not an earthquake's size."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-316",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson67#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "夏になると、エアコンの（　）が増えて、工場は忙しくなる。",
+    "options": [
+      "需要",
+      "要求",
+      "必要",
+      "要望"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "一到夏天，空调的需求增加，工厂就忙起来了。",
+      "en": "In summer demand for air conditioners rises and the factories get busy."
+    },
+    "why": {
+      "zh": "商品被想要购买的量是「需要」（需求），工厂因此忙碌。",
+      "en": "How much people want to buy a product is its 「需要」 (demand) — so the factory gets busy."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「要求」是对别人提出的要求，不说“空调的要求增加”。",
+        "en": "「要求」 is a demand made of someone; it isn't the market for a product."
+      },
+      {
+        "zh": "「必要」是必要性，不说「エアコンの必要が増える」。",
+        "en": "「必要」 is necessity; 「エアコンの必要が増える」 isn't said."
+      },
+      {
+        "zh": "「要望」是希望、意见（对服务等），不表示商品的销量需求。",
+        "en": "「要望」 is a request or wish about a service, not demand for goods."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-317",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson67#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "給料や休みなどの（　）がいい会社に転職したい。",
+    "options": [
+      "待遇",
+      "状態",
+      "態度",
+      "姿勢"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "想跳槽到工资、休假等待遇好的公司。",
+      "en": "I want to move to a company with good pay and holidays — good working conditions."
+    },
+    "why": {
+      "zh": "工资、休假等公司给员工的条件是「待遇」。",
+      "en": "Pay and time off — what a company gives its staff — are its 「待遇」 (terms of employment)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「状態」是状态，不能用来概括工资和休假。",
+        "en": "「状態」 is a condition or state; it doesn't cover pay and holidays."
+      },
+      {
+        "zh": "「態度」是态度，工资和休假不是态度。",
+        "en": "「態度」 is an attitude; pay and holidays aren't attitudes."
+      },
+      {
+        "zh": "「姿勢」是姿势、姿态，和工资、休假无关。",
+        "en": "「姿勢」 is posture or stance — unrelated to pay and holidays."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-318",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson68#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "説明を何度聞いても、その理由には（　）できなかった。",
+    "options": [
+      "納得",
+      "安心",
+      "発見",
+      "注目"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "听了多少遍解释，对那个理由还是无法接受。",
+      "en": "However many times I heard the explanation, I couldn't accept the reason."
+    },
+    "why": {
+      "zh": "听了解释还是“想不通、不能接受”，「〜に納得する」＝认可、信服。",
+      "en": "Not being convinced by a reason: 「〜に納得できない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「安心」是放心，不说“对理由放心”。",
+        "en": "「安心」 is feeling relieved; you aren't relieved \"at a reason\"."
+      },
+      {
+        "zh": "「発見」是发现，「〜には発見できない」不成立。",
+        "en": "「発見」 is discovering; 「〜には発見できない」 doesn't work."
+      },
+      {
+        "zh": "「注目」是关注，和“听了解释还不行”的语境不合。",
+        "en": "「注目」 is paying attention — it doesn't fit not being convinced."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-319",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "この方法の一番の（　）は、費用があまりかからないことだ。",
+    "options": [
+      "メリット",
+      "ルール",
+      "テーマ",
+      "ペース"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这个方法最大的好处是不太花钱。",
+      "en": "The biggest advantage of this method is that it doesn't cost much."
+    },
+    "why": {
+      "zh": "“不花钱”是优点，即「メリット」。",
+      "en": "Not costing much is an advantage: 「メリット」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ルール」是规则，“不花钱”不是规则。",
+        "en": "「ルール」 is a rule; low cost isn't a rule."
+      },
+      {
+        "zh": "「テーマ」是主题，方法的“主题”不会是不花钱。",
+        "en": "「テーマ」 is a theme or topic, not a benefit."
+      },
+      {
+        "zh": "「ペース」是速度、节奏，和费用无关。",
+        "en": "「ペース」 is pace — unrelated to cost."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-320",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson70#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "地震に（　）、水や食料を用意しておく。",
+    "options": [
+      "備えて",
+      "構えて",
+      "抑えて",
+      "整えて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "为防备地震，事先准备好水和食物。",
+      "en": "We keep water and food ready in case of an earthquake."
+    },
+    "why": {
+      "zh": "为将来可能发生的事做准备是「〜に備える」。",
+      "en": "Getting ready for something that may happen is 「〜に備える」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「構える」是摆架势、建（店），不说「地震に構える」。",
+        "en": "「構える」 is to take a stance or set up a shop; 「地震に構える」 isn't said."
+      },
+      {
+        "zh": "「抑える」是压住、控制，地震无法控制，也不用「に」。",
+        "en": "「抑える」 is to hold down or control; it takes を, and you can't control an earthquake."
+      },
+      {
+        "zh": "「整える」是整理好（を），不说「地震に整える」。",
+        "en": "「整える」 is to put in order and takes を; 「地震に整える」 isn't said."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-321",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson70#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "子どものころは、親の言うことに（　）なんて考えもしなかった。",
+    "options": [
+      "逆らう",
+      "見送る",
+      "見逃す",
+      "乗り越える"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "小时候，连想都没想过要违抗父母的话。",
+      "en": "As a child, it never even occurred to me to go against what my parents said."
+    },
+    "why": {
+      "zh": "「〜に逆らう」＝违抗、反抗，「親の言うことに逆らう」是常见搭配。",
+      "en": "「〜に逆らう」 is to defy; 「親の言うことに逆らう」 is the usual phrase."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「見送る」是送行或推迟，要用「を」，不能接「言うことに」。",
+        "en": "「見送る」 is to see off or put off; it takes を, not 「言うことに」."
+      },
+      {
+        "zh": "「見逃す」是看漏、放过（を），和“父母的话”不搭。",
+        "en": "「見逃す」 is to miss or let pass (を); it doesn't fit 「親の言うことに」."
+      },
+      {
+        "zh": "「乗り越える」是克服困难（を），父母的话不是要克服的困难。",
+        "en": "「乗り越える」 is to get over a hardship (を); parents' words aren't a hardship."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-322",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson70#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "会議の内容が外部に（　）ないよう、資料の管理を徹底している。",
+    "options": [
+      "漏れ",
+      "溢れ",
+      "こぼれ",
+      "崩れ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "为了不让会议内容泄露到外部，严格管理资料。",
+      "en": "We keep strict control of the documents so the meeting's contents don't leak outside."
+    },
+    "why": {
+      "zh": "信息、秘密传到外面是「漏れる」（泄露）。",
+      "en": "Information getting out is 「漏れる」 (to leak)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「溢れる」是（液体、人）满得溢出，不用于信息泄露。",
+        "en": "「溢れる」 is overflowing (water, crowds), not information leaking."
+      },
+      {
+        "zh": "「こぼれる」是（液体、眼泪）洒出来，不用于秘密、信息。",
+        "en": "「こぼれる」 is spilling (liquid, tears), not secrets getting out."
+      },
+      {
+        "zh": "「崩れる」是倒塌、崩溃，和信息外泄无关。",
+        "en": "「崩れる」 is to collapse — unrelated to a leak."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-323",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson71#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "自転車が急に飛び出してきて、（　）ぶつかるところだった。",
+    "options": [
+      "危うく",
+      "ようやく",
+      "せめて",
+      "かえって"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "自行车突然冲了出来，差点就撞上了。",
+      "en": "A bicycle suddenly shot out and I very nearly hit it."
+    },
+    "why": {
+      "zh": "「危うく〜ところだった」＝差一点就……（实际没发生）。",
+      "en": "「危うく〜ところだった」 is \"very nearly …\" (but it didn't happen)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ようやく」是好不容易，用于盼望已久的事，撞车不是盼望的事。",
+        "en": "「ようやく」 is \"at long last\", for something hoped for — not a crash."
+      },
+      {
+        "zh": "「せめて」是至少，接愿望，和“差点撞上”不合。",
+        "en": "「せめて」 is \"at least\" and leads to a wish, not a near miss."
+      },
+      {
+        "zh": "「かえって」是反而，前面没有相反的预期。",
+        "en": "「かえって」 is \"on the contrary\"; nothing here sets up a reversal."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-324",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson72#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "十年もフランスに住んでいただけあって、（　）発音がきれいだ。",
+    "options": [
+      "さすが",
+      "まさか",
+      "せっかく",
+      "いよいよ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "不愧是在法国住了十年，发音真漂亮。",
+      "en": "As you'd expect from someone who lived in France for ten years, her pronunciation is beautiful."
+    },
+    "why": {
+      "zh": "「だけあって」和「さすが」一起，表示“果然名不虚传”。",
+      "en": "「だけあって」 pairs with 「さすが」: just as you'd expect."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「まさか」是“难道、不会吧”，用于意外或否定，不表示果然。",
+        "en": "「まさか」 is \"surely not\", for disbelief — not \"as expected\"."
+      },
+      {
+        "zh": "「せっかく」是“难得、特意”，后面一般接可惜的结果或请求。",
+        "en": "「せっかく」 is \"after going to the trouble\"; it leads to a wasted effort or a request."
+      },
+      {
+        "zh": "「いよいよ」是“终于要、越发”，不用于称赞符合预期。",
+        "en": "「いよいよ」 is \"at last / more and more\", not praise for living up to expectations."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-325",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson72#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "給料日には、少し（　）をして高いレストランで食事をする。",
+    "options": [
+      "贅沢",
+      "節約",
+      "我慢",
+      "遠慮"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "发工资那天，稍微奢侈一下，去高级餐厅吃饭。",
+      "en": "On payday I treat myself a little and eat at an expensive restaurant."
+    },
+    "why": {
+      "zh": "去高级餐厅是花钱享受，即「贅沢をする」。",
+      "en": "Eating somewhere expensive is treating yourself: 「贅沢をする」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「節約」是节省，和去高级餐厅相反。",
+        "en": "「節約」 is saving money — the opposite of an expensive restaurant."
+      },
+      {
+        "zh": "「我慢」是忍耐，忍着就不会去高级餐厅了。",
+        "en": "「我慢」 is holding back, which wouldn't lead to an expensive meal."
+      },
+      {
+        "zh": "「遠慮」是客气、克制，同样和“去高级餐厅”矛盾。",
+        "en": "「遠慮」 is holding back out of restraint — it also clashes with the meal."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-326",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson73#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "欲しくもないものを買うのは、お金の（　）だ。",
+    "options": [
+      "無駄遣い",
+      "小遣い",
+      "気遣い",
+      "言葉遣い"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "买根本不想要的东西，是浪费钱。",
+      "en": "Buying things you don't even want is a waste of money."
+    },
+    "why": {
+      "zh": "把钱花在没用的地方是「無駄遣い」。",
+      "en": "Spending money on things you don't need is 「無駄遣い」 (waste)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「小遣い」是零花钱，“买不想要的东西是零花钱”说不通。",
+        "en": "「小遣い」 is pocket money; buying things isn't pocket money."
+      },
+      {
+        "zh": "「気遣い」是关心、体贴，与花钱无关。",
+        "en": "「気遣い」 is consideration for others — not about money."
+      },
+      {
+        "zh": "「言葉遣い」是措辞，不能和「お金の」连用。",
+        "en": "「言葉遣い」 is one's choice of words; it can't follow 「お金の」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-327",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson74#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "事故が起きるまでの（　）を、担当者が詳しく説明した。",
+    "options": [
+      "経緯",
+      "由来",
+      "予定",
+      "結論"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "负责人详细说明了事故发生前的来龙去脉。",
+      "en": "The person in charge explained in detail how things unfolded up to the accident."
+    },
+    "why": {
+      "zh": "“到事故发生为止”的过程是「経緯」（来龙去脉）。",
+      "en": "How events developed up to the accident is the 「経緯」 (sequence of events)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「由来」是名称、习俗的由来，不用于事故的经过。",
+        "en": "「由来」 is the origin of a name or custom, not how an accident came about."
+      },
+      {
+        "zh": "「予定」是计划，事故不是预先计划的。",
+        "en": "「予定」 is a plan; an accident isn't planned."
+      },
+      {
+        "zh": "「結論」是结论，和「起きるまでの」（之前的过程）不搭。",
+        "en": "「結論」 is a conclusion; it doesn't fit 「起きるまでの」 (leading up to)."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-328",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson75#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "最近の若者は、テレビよりインターネットでニュースを見る（　）がある。",
+    "options": [
+      "傾向",
+      "方向",
+      "方針",
+      "印象"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "最近的年轻人倾向于在网上而不是电视上看新闻。",
+      "en": "Young people these days tend to get their news online rather than from TV."
+    },
+    "why": {
+      "zh": "“有……的倾向”是「〜傾向がある」，表示整体趋势。",
+      "en": "A general tendency is 「〜傾向がある」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「方向」是方向（东西南北或前进方向），不说「見る方向がある」表示趋势。",
+        "en": "「方向」 is a direction; 「見る方向がある」 doesn't mean a tendency."
+      },
+      {
+        "zh": "「方針」是组织定的方针，年轻人整体没有“方针”。",
+        "en": "「方針」 is a policy someone sets; young people as a group don't have one."
+      },
+      {
+        "zh": "「印象」是印象，「〜を見る印象がある」不自然。",
+        "en": "「印象」 is an impression; 「見る印象がある」 isn't natural."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-329",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson63#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "費用がかかりすぎるので、計画を一から（　）ことにした。",
+    "options": [
+      "見直す",
+      "見逃す",
+      "見送る",
+      "見かける"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "因为花费太多，决定从头重新审视计划。",
+      "en": "It was costing far too much, so we decided to rethink the plan from scratch."
+    },
+    "why": {
+      "zh": "重新检查、修改计划是「見直す」，「一から見直す」＝从头重新审视。",
+      "en": "Going back over a plan to fix it is 「見直す」; 「一から見直す」 is from scratch."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「見逃す」是看漏、放过，“从头看漏计划”说不通。",
+        "en": "「見逃す」 is to miss or overlook; you don't overlook a plan from scratch."
+      },
+      {
+        "zh": "「見送る」是暂缓、放弃，和「一から」（从头来）矛盾。",
+        "en": "「見送る」 is to shelve; that clashes with 「一から」 (from scratch)."
+      },
+      {
+        "zh": "「見かける」是偶然看到（人、物），计划不是偶然看到的。",
+        "en": "「見かける」 is to happen to see someone or something — not a plan."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-330",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson65#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "社員の意見を取り入れて、職場の環境を（　）した。",
+    "options": [
+      "改善",
+      "改正",
+      "修正",
+      "回復"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "采纳员工的意见，改善了职场环境。",
+      "en": "We took on staff suggestions and improved the working environment."
+    },
+    "why": {
+      "zh": "把不好的状况变好是「改善」，「環境を改善する」是常见搭配。",
+      "en": "Making a situation better is 「改善」; 「環境を改善する」 is the usual pairing."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「改正」用于法律、规则的修改，不用于职场环境。",
+        "en": "「改正」 is amending laws or rules, not a workplace."
+      },
+      {
+        "zh": "「修正」是修改错误（文章、数据），环境不是“错误”。",
+        "en": "「修正」 is correcting errors in text or data; an environment isn't an error."
+      },
+      {
+        "zh": "「回復」是恢复到原来的状态，这里是采纳意见改得更好。",
+        "en": "「回復」 is getting back to how it was; here it's being made better."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-331",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson65#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "作業の順番を変えたら、（　）が上がって早く終わるようになった。",
+    "options": [
+      "効率",
+      "評価",
+      "価値",
+      "品質"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "改变了工作顺序后，效率提高了，能早点做完了。",
+      "en": "When we changed the order of the tasks, efficiency went up and we started finishing earlier."
+    },
+    "why": {
+      "zh": "“能早点做完”说明单位时间做得更多，即「効率が上がる」。",
+      "en": "Finishing sooner means more done in less time: 「効率が上がる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「評価」提高不会让工作更快做完。",
+        "en": "A better 「評価」 (evaluation) doesn't make the work finish sooner."
+      },
+      {
+        "zh": "「価値」是价值，价值提高与做得快无关。",
+        "en": "「価値」 is value; higher value doesn't mean finishing sooner."
+      },
+      {
+        "zh": "「品質」是质量，质量提高不等于更快完成。",
+        "en": "「品質」 is quality; better quality isn't faster work."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-332",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson60#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "遅刻した理由をあれこれ説明したが、上司には（　）にしか聞こえなかったようだ。",
+    "options": [
+      "言い訳",
+      "言いつけ",
+      "口癖",
+      "悪口"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "对迟到的理由解释了一大堆，上司似乎只当是借口。",
+      "en": "I gave all kinds of reasons for being late, but to my boss it seems they just sounded like excuses."
+    },
+    "why": {
+      "zh": "为自己的过错辩解是「言い訳」（借口）。",
+      "en": "Explaining away your own fault is a 「言い訳」 (excuse)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「言いつけ」是吩咐、命令，自己解释理由不是命令。",
+        "en": "「言いつけ」 is an order or instruction — not your own explanation."
+      },
+      {
+        "zh": "「口癖」是口头禅，解释迟到原因不是口头禅。",
+        "en": "「口癖」 is a pet phrase; explaining why you're late isn't one."
+      },
+      {
+        "zh": "「悪口」是说别人坏话，这里是在为自己辩解。",
+        "en": "「悪口」 is speaking ill of others; here you're defending yourself."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-333",
+    "type": "bunmyaku",
+    "refs": [
+      "lesson60#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "あのレストランはおいしいと（　）なので、一度行ってみたい。",
+    "options": [
+      "評判",
+      "評価",
+      "判断",
+      "批判"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "听说那家餐厅好吃，口碑很好，想去一次看看。",
+      "en": "That restaurant is said to be good, so I'd like to try it once."
+    },
+    "why": {
+      "zh": "大家都说好吃是口碑，「〜と評判だ」＝都说……。",
+      "en": "Everyone saying it's good is its reputation: 「〜と評判だ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「評価」不说「おいしいと評価だ」，要说「評価が高い」。",
+        "en": "「おいしいと評価だ」 isn't said; it would be 「評価が高い」."
+      },
+      {
+        "zh": "「判断」是自己的判断，「おいしいと判断なので」不成立。",
+        "en": "「判断」 is a judgement; 「おいしいと判断なので」 doesn't work."
+      },
+      {
+        "zh": "「批判」是批评，和“想去试试”矛盾。",
+        "en": "「批判」 is criticism — it clashes with wanting to go."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-334",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "箱の中には、お菓子が（　）詰まっていた。",
+    "options": [
+      "ぎっしり",
+      "ぐっすり",
+      "すっきり",
+      "こっそり"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "箱子里塞满了点心。",
+      "en": "The box was packed full of sweets."
+    },
+    "why": {
+      "zh": "塞得满满的、没有空隙是「ぎっしり」，常和「詰まる」连用。",
+      "en": "Packed tight with no gaps is 「ぎっしり」, often with 「詰まる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ぐっすり」是睡得很熟，只用于睡觉。",
+        "en": "「ぐっすり」 is sleeping soundly — only for sleep."
+      },
+      {
+        "zh": "「すっきり」是清爽、整洁，和塞满相反。",
+        "en": "「すっきり」 is neat or refreshed — the opposite of crammed."
+      },
+      {
+        "zh": "「こっそり」是偷偷地，点心不会“偷偷地塞着”。",
+        "en": "「こっそり」 is secretly; sweets aren't packed in secretly."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-335",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "電子レンジを使えば、（　）においしい料理が作れる。",
+    "options": [
+      "手軽",
+      "頑丈",
+      "身近",
+      "気長"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "用微波炉的话，能轻松做出好吃的菜。",
+      "en": "With a microwave you can make tasty food with very little effort."
+    },
+    "why": {
+      "zh": "不费事、简单方便是「手軽に」。",
+      "en": "Easily, with little effort, is 「手軽に」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「頑丈」是结实，形容东西，不修饰“做菜”。",
+        "en": "「頑丈」 is sturdy and describes objects, not cooking."
+      },
+      {
+        "zh": "「身近」是身边的、亲近的，「身近においしい料理」说不通。",
+        "en": "「身近」 is close at hand or familiar; 「身近においしい料理が作れる」 doesn't work."
+      },
+      {
+        "zh": "「気長」是耐心、不着急，和用微波炉“快捷”相反。",
+        "en": "「気長」 is patient and unhurried — the opposite of a quick microwave."
+      }
+    ]
+  }
+]

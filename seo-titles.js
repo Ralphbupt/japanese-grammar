@@ -333,6 +333,95 @@ module.exports = {
     en: "JLPT N2 Grammar Review — All N2 Grammar Summary by Topic",
     zh: "JLPT N2 语法总复习 — N2 语法分类总结",
   },
+  lesson76: {
+    en: "が早いか vs や否や vs なり (ga hayai ka, ya ina ya) | JLPT N1",
+    zh: "が早いか・や否や・なり・そばから・を皮切りに 区别 | JLPT N1",
+    desc: "が早いか, や否や and なり all mean “as soon as” in JLPT N1 Japanese — how they differ, plus そばから, てからというもの, を皮切りに and に至って, with examples and audio.",
+  },
+  lesson77: {
+    en: "ならでは, はおろか, もさることながら (naradewa, wa oroka) | N1",
+    zh: "をおいて・ならでは・はおろか・もさることながら 用法 | JLPT N1",
+    desc: "N1 grammar for limits and scope: をおいて〜ない, ならでは (unique to), にとどまらず, はおろか (let alone), もさることながら, に限ったことではない and を限りに, with examples.",
+  },
+  lesson78: {
+    en: "といい〜といい vs といわず, であれ (to ii, de are) | JLPT N1",
+    zh: "といい・といわず・なり〜なり・であれ 区别 | JLPT N1",
+    desc: "Listing examples in N1 Japanese: といい〜といい, といわず〜といわず, なり〜なり, であれ〜であれ, だの〜だの and (よ)うが〜まいが (whether or not), compared.",
+  },
+  lesson79: {
+    en: "たりとも, すら, にして, からある, あっての (taritomo) | JLPT N1",
+    zh: "たりとも・すら・にして・からある・の極み 用法 | JLPT N1",
+    desc: "N1 emphasis and extremes: たりとも (not even one), すら／ですら (even), にして, からある／からする (as much as), あっての and の極み／の至り, with examples.",
+  },
+  lesson80: {
+    en: "ものを vs ものの, といえども, ところを (to iedomo) | JLPT N1",
+    zh: "ものを・といえども・ところを・ながらも 区别 | JLPT N1",
+    desc: "N1 concession grammar: ものを (if only), といえども (even though), ところを, ながらも, とはいうものの, (よ)うが／(よ)うと and にしたって — how they differ.",
+  },
+  lesson81: {
+    en: "なくして, ともなると, とあれば, たら最後 (tara saigo) | JLPT N1",
+    zh: "なくして・ともなると・とあれば・たら最後 用法 | JLPT N1",
+    desc: "N1 conditionals: なくして(は) (without), ともなると／ともなれば, とあれば, たら最後／が最後 (once…there's no going back), ようでは and ないまでも, with examples.",
+  },
+  lesson82: {
+    en: "べく vs んがため, ゆえに, とあって, こととて (beku) | JLPT N1",
+    zh: "べく・んがため・ゆえ・とあって・こととて 区别 | JLPT N1",
+    desc: "Purpose and cause in N1 Japanese: べく and んがため (in order to), ゆえ(に) (because), とあって, こととて and にかこつけて (on the pretext of), compared.",
+  },
+  lesson83: {
+    en: "いかんで, いかんにかかわらず, をよそに (ikan, yoso ni) | N1",
+    zh: "いかん・をよそに・によらず・に即して 用法 | JLPT N1",
+    desc: "N1 grammar for depending on / regardless of: いかんで, いかんにかかわらず／によらず, をよそに (ignoring), によらず, に即して and にかかわる, with examples.",
+  },
+  lesson84: {
+    en: "ずにはおかない, を余儀なくされる, を禁じ得ない | JLPT N1",
+    zh: "ずにはおかない・ずにはすまない・を余儀なくされる 区别 | JLPT N1",
+    desc: "N1 grammar: なしに／ことなしに (without), ずにはおかない, ずにはすまない, を禁じ得ない (can't help feeling) and を余儀なくされる (be forced to), with examples.",
+  },
+  lesson85: {
+    en: "までもない, には及ばない, に足る, に堪えない (made mo nai) | N1",
+    zh: "までもない・に足る・に堪えない・にかたくない 用法 | JLPT N1",
+    desc: "N1 evaluation grammar: までもない (needless to), までだ, には及ばない, に足る／に足りない (worth), に堪える／に堪えない and にかたくない (easy to imagine).",
+  },
+  lesson86: {
+    en: "べくもない, てしかるべきだ, ばそれまでだ (beku mo nai) | N1",
+    zh: "べくもない・てしかるべきだ・ばそれまでだ 用法 | JLPT N1",
+    desc: "N1 judgement grammar: べくもない (no way to), てしかるべきだ (ought to), でなくてなんだろう, ないではすまない, ないものでもない and ばそれまでだ, with examples.",
+  },
+  lesson87: {
+    en: "てやまない, 極まりない, といったらない (te yamanai) | JLPT N1",
+    zh: "てやまない・極まりない・といったらない・限りだ 用法 | JLPT N1",
+    desc: "Emotion and emphasis in N1 Japanese: てやまない, 極まりない／極まる, といったらない, 限りだ, とは (to think that) and てはばからない, with examples.",
+  },
+  lesson88: {
+    en: "ずくめ vs まみれ vs だらけ, ぐるみ, めく (zukume) | JLPT N1",
+    zh: "ずくめ・まみれ・ぐるみ・めく・ともなく 区别 | JLPT N1",
+    desc: "N1 suffixes: ずくめ, まみれ (covered in) vs だらけ, ぐるみ, めく (-ish), ともなく and ながらに(して) — what each means and how they differ, with examples.",
+  },
+  lesson89: {
+    en: "かたがた vs がてら vs かたわら (katagata, gatera) | JLPT N1",
+    zh: "かたがた・がてら・かたわら 区别 | JLPT N1",
+    desc: "かたがた, がてら and かたわら all mean doing one thing along with another — how they differ at JLPT N1, plus つ〜つ, なりに and とばかりに, with examples.",
+  },
+  lesson90: {
+    en: "べからず, ごとき, ずとも, んばかり, をもって | JLPT N1",
+    zh: "べからず・ごとき・ずとも・んばかり・をもって 用法 | JLPT N1",
+    desc: "Classical and written N1 grammar: (よ)うにも〜ない, べからず (must not), ごとき／ごとく, ずとも, んばかり (as if about to) and をもって, with examples.",
+  },
+  lesson91: {
+    en: "にひきかえ, ともあろう, たるもの, ではあるまいし | JLPT N1",
+    zh: "にひきかえ・ともあろう・たる・ではあるまいし 用法 | JLPT N1",
+    desc: "N1 grammar: にひきかえ (in contrast to), ともあろう者が, たる(もの), ではあるまいし (it's not as if), と相まって and に則って, with examples.",
+  },
+  lesson92: {
+    en: "JLPT N1 Grammar Review — All N1 Grammar Summary by Topic",
+    zh: "JLPT N1 语法总复习 — N1 语法分类总结",
+    desc: "All JLPT N1 grammar in one review: every pattern from lessons 76–91 grouped by function, the most confusable pairs side by side, and tips for the N1 grammar section.",
+  },
+  N1_grammar_list: {
+    en: "JLPT N1 Grammar List — All N1 Grammar Points (Checklist)",
+    zh: "JLPT N1 语法清单 — 全部 N1 语法点一览（可打勾）",
+  },
   N2_grammar_list: {
     en: "JLPT N2 Grammar List — All N2 Grammar Points (Checklist)",
     zh: "JLPT N2 语法清单 — 全部 N2 语法点一览（可打勾）",
@@ -351,6 +440,41 @@ module.exports = {
     desc: "The difference between は (wa) and が (ga): one-line rule, comparison table, six typical situations, a decision flow and a 10-question self-test with answers.",
     descZh: "日语助词は和が到底怎么区分？一句话结论＋对比总表＋6 种典型场景＋判断流程，最后 10 道自测题带解析。",
     level: "N5",
+  },
+  "jlpt-n5-key-grammar": {
+    en: "JLPT N5 Key Grammar — Top 30 Points That Come Up Most",
+    zh: "日语N5语法高频考点整理 — Top 30 语法总结与易混辨析",
+    desc: "The 30 JLPT N5 grammar points that come up most, with how each attaches, meaning and an example, the pairs learners confuse, exam tips and a 10-question self-test.",
+    descZh: "日语 N5 语法高频考点整理：最常考的 30 个语法点（接续、意思、例句），最容易混的几组辨析，考试技巧，最后 10 道自测题带答案。",
+    level: "N5",
+  },
+  "jlpt-n4-key-grammar": {
+    en: "JLPT N4 Key Grammar — Top 30 Points That Come Up Most",
+    zh: "日语N4语法高频考点整理 — Top 30 语法总结与易混辨析",
+    desc: "The 30 JLPT N4 grammar points that come up most, with how each attaches, meaning and an example, the pairs learners confuse, exam tips and a 10-question self-test.",
+    descZh: "日语 N4 语法高频考点整理：最常考的 30 个语法点（接续、意思、例句），最容易混的几组辨析，考试技巧，最后 10 道自测题带答案。",
+    level: "N4",
+  },
+  "jlpt-n3-key-grammar": {
+    en: "JLPT N3 Key Grammar — Top 40 Points That Come Up Most",
+    zh: "日语N3语法高频考点整理 — Top 40 语法总结与易混辨析",
+    desc: "The 40 JLPT N3 grammar points that come up most, with how each attaches, meaning and an example, the pairs learners confuse, exam tips and a 10-question self-test.",
+    descZh: "日语 N3 语法高频考点整理：最常考的 40 个语法点（接续、意思、例句），最容易混的几组辨析，考试技巧，最后 10 道自测题带答案。",
+    level: "N3",
+  },
+  "jlpt-n2-key-grammar": {
+    en: "JLPT N2 Key Grammar — Top 40 Points That Come Up Most",
+    zh: "日语N2语法高频考点整理 — Top 40 语法总结与易混辨析",
+    desc: "The 40 JLPT N2 grammar points that come up most, with how each attaches, meaning and an example, the pairs learners confuse, exam tips and a 10-question self-test.",
+    descZh: "日语 N2 语法高频考点整理：最常考的 40 个语法点（接续、意思、例句），最容易混的几组辨析，考试技巧，最后 10 道自测题带答案。",
+    level: "N2",
+  },
+  "jlpt-n1-key-grammar": {
+    en: "JLPT N1 Key Grammar — Top 40 Points That Come Up Most",
+    zh: "日语N1语法高频考点整理 — Top 40 语法总结与易混辨析",
+    desc: "The 40 JLPT N1 grammar points that come up most, with how each attaches, meaning and an example, the pairs learners confuse, exam tips and a 10-question self-test.",
+    descZh: "日语 N1 语法高频考点整理：最常考的 40 个语法点（接续、意思、例句），最容易混的几组辨析，考试技巧，最后 10 道自测题带答案。",
+    level: "N1",
   },
   "jlpt-december-2026": {
     en: "JLPT December 2026 Guide — Test Times, Pass Marks & 6-Week Plan",

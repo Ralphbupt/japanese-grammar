@@ -3,7 +3,7 @@
 ## 这是什么||What is this
 
 :::zh
-「日语语法笔记」是一份免费、双语（中文 + 日语）的 JLPT N5 → N2 语法学习材料，按 **8 周节奏**规划，共 **73 课、400+ 个语法点**。每个语法点包含：
+「日语语法笔记」是一份免费、双语（中文 + 日语）的 JLPT N5 → N1 语法学习材料，共 **93 课、420+ 个语法点**。每个语法点包含：
 
 - **接续规则**：动词 / 形容词 / 名词的具体接续方式
 - **3+ 例句**：覆盖日常对话和考试常见语境
@@ -15,7 +15,7 @@
 :::
 
 :::en
-"Japanese Grammar Notes" is a free, bilingual (Chinese + Japanese) JLPT N5 → N2 grammar study set, structured as an **8-week curriculum** of **73 lessons covering 400+ grammar points**. Each grammar point includes:
+"Japanese Grammar Notes" is a free JLPT N5 → N1 grammar study set, with every explanation written in both English and Chinese: **93 lessons covering 420+ grammar points**. Each grammar point includes:
 
 - **Conjugation rules**: how it combines with verbs / adjectives / nouns
 - **3+ example sentences**: covering daily conversation and exam-style contexts
@@ -187,7 +187,7 @@ Your own key never leaves your browser and never passes through this site. See t
 :::zh
 课程页右上角的 🤖「问 AI」侧栏可以把当前课的内容连同你的问题发给一个大模型。它的设计原则是：**本站永远拿不到你的密钥，也不保存你的对话。**
 
-- **默认的免费模型经过本站中转。** 「本站免费」这一项由一个 Cloudflare Worker（ai.jpnotes.dev）把你的问题和这一课的正文交给 Cloudflare Workers AI 上的模型，再把回答传回来。它不记录问题、回答，也不开启请求日志；为了每天限次，它只保存 IP 的加盐哈希，按天计数，两天后自动删除；另外只统计每次请求来自哪个按钮（讲解、快捷提问等）和消耗了多少额度，不含内容和 IP。[中转源码](https://github.com/Ralphbupt/japanese-grammar/blob/main/worker/src/index.js)同样公开。不想经过本站，就用你自己的 key。
+- **默认的免费模型经过本站中转。** 「本站免费」这一项由一个 Cloudflare Worker（ai.jpnotes.dev）把你的问题和这一课的正文交给 Cloudflare Workers AI 上的模型，再把回答传回来。当天 Cloudflare 的免费额度用完或出错时，会改由 Groq 或 Cerebras 上的模型回答：同样只转发问题和这一课的正文，不附带你的 IP，由这些服务商按各自的隐私政策处理。它不记录问题、回答，也不开启请求日志；为了每天限次，它只保存 IP 的加盐哈希，按天计数，两天后自动删除；另外只统计每次请求来自哪个按钮（讲解、快捷提问等）和消耗了多少额度，不含内容和 IP。[中转源码](https://github.com/Ralphbupt/japanese-grammar/blob/main/worker/src/index.js)同样公开。不想经过本站，就用你自己的 key。
 - **你自己的 key 不经过本站。** 网站本身是 GitHub Pages 上的静态 HTML。你填的 API key 只存在你这台设备的浏览器里（默认 localStorage；勾选「只在本次会话保存」则关闭标签页即清除）。
 - **用自己的 key 时请求直连服务商。** 提问时，你的浏览器把这一课的正文和你的问题直接发到你选的服务商（Anthropic、OpenAI、DeepSeek、通义千问……或你本机的 Ollama）。中间没有任何中转。
 - **浏览器层面的白名单。** 每个页面都带有 Content-Security-Policy 的 `connect-src` 规则，只允许连接本站、Google Analytics、预设的服务商域名，以及 localhost / 127.0.0.1。即使页面上某段脚本被篡改，浏览器也会拒绝把数据发往白名单之外的任何地址。
@@ -201,7 +201,7 @@ Your own key never leaves your browser and never passes through this site. See t
 :::en
 The 🤖 "Ask AI" side panel on lesson pages sends the current lesson plus your question to a large language model. Its design rule: **this site never receives your key and never stores your conversation.**
 
-- **The default free model goes through this site's relay.** The "Free" option uses a Cloudflare Worker (ai.jpnotes.dev) that passes your question and the lesson text to a model on Cloudflare Workers AI and streams the answer back. It does not log questions or answers and has request logging turned off; to enforce the daily limit it keeps only a salted hash of your IP, counted per day and deleted after two days. Beyond that it only counts which button each request came from (Explain, quick prompts, …) and how much quota it used — no text, no IP. The [relay source](https://github.com/Ralphbupt/japanese-grammar/blob/main/worker/src/index.js) is public too. To bypass the site entirely, use your own key.
+- **The default free model goes through this site's relay.** The "Free" option uses a Cloudflare Worker (ai.jpnotes.dev) that passes your question and the lesson text to a model on Cloudflare Workers AI and streams the answer back. When the day's Cloudflare quota is used up, or it fails, a model on Groq or Cerebras answers instead: again only the question and the lesson text are sent, not your IP, and those providers handle the request under their own privacy policies. It does not log questions or answers and has request logging turned off; to enforce the daily limit it keeps only a salted hash of your IP, counted per day and deleted after two days. Beyond that it only counts which button each request came from (Explain, quick prompts, …) and how much quota it used — no text, no IP. The [relay source](https://github.com/Ralphbupt/japanese-grammar/blob/main/worker/src/index.js) is public too. To bypass the site entirely, use your own key.
 - **Your own key never touches this site.** The site itself is static HTML on GitHub Pages. Your API key exists only in your browser on your device (localStorage by default; tick "keep for this tab only" and it is cleared when the tab closes).
 - **With your own key, requests go straight to the provider.** When you ask, your browser sends the lesson text and your question straight to the provider you picked (Anthropic, OpenAI, DeepSeek, Qwen… or Ollama on your own machine). Nothing sits in between.
 - **A browser-enforced allowlist.** Every page ships a Content-Security-Policy `connect-src` rule that only permits connections to this site, Google Analytics, the preset provider hosts, and localhost / 127.0.0.1. Even if a script on the page were tampered with, the browser would refuse to send data anywhere else.
@@ -230,6 +230,7 @@ The free model costs you nothing; with your own key, billing is between you and 
 - **GitHub Issues**：[提交 issue](https://github.com/Ralphbupt/japanese-grammar/issues)（推荐，公开追踪）
 - **GitHub PR**：直接提交修复，特别欢迎补充例句和易错点对比
 - **邮箱**：[pengcheng199@gmail.com](mailto:pengcheng199@gmail.com)
+- **页面里直接写**：练习题、模拟题、语法卡片页底部的「💬 反馈 / 建议」，以及每道题解析下的「这题有问题？」。匿名，不用登录。发送的只有：你写的文字、当前页面地址、界面语言；如果是针对某道题，还有题号、你选的选项和你勾的原因。为了防止刷屏，会存一个按日期加盐的 IP 哈希（每天换盐，无法还原 IP，也无法跨天关联），用来限制每人每天最多 20 条。数据存在本站自己的 Cloudflare D1 数据库里，只用来改进题目和网站。
 
 我会回复每一个反馈。
 :::
@@ -240,6 +241,7 @@ Found a typo? Awkward example? Unclear explanation?
 - **GitHub Issues**: [open an issue](https://github.com/Ralphbupt/japanese-grammar/issues) — recommended, publicly tracked
 - **GitHub PR**: submit a fix directly; additions to examples and comparison notes especially welcome
 - **Email**: [pengcheng199@gmail.com](mailto:pengcheng199@gmail.com)
+- **Right on the page**: "💬 Feedback / suggestions" at the bottom of the practice, mock test and flashcard pages, and "Something wrong with this question?" under each explanation. Anonymous, no sign-in. What's sent: the text you write, the page address and the interface language; for a question, also its id, the option you picked and the reason you ticked. To stop flooding, a daily-salted hash of your IP is stored (the salt changes every day, so it can't be turned back into an IP or linked across days) and used to cap each reader at 20 notes a day. It's kept in this site's own Cloudflare D1 database and used only to fix questions and improve the site.
 
 I respond to every piece of feedback.
 :::
@@ -247,17 +249,23 @@ I respond to every piece of feedback.
 ## 许可||License
 
 :::zh
-内容采用 **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh)** 许可：
+内容采用 **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans)**（署名—非商业性使用）许可：
 
-- ✅ 自由分享、引用、改编、用于教学（包括商业教学）
+- ✅ 自由分享、引用、改编，用于自学和课堂教学
 - ✅ 标注来源即可（链接到 jpnotes.dev）
-- ❌ 不要做**全站镜像**——会稀释 Google 索引，对原站和镜像都没好处。引用任意片段、章节都欢迎，但请不要批量复制整个语法点列表
+- ❌ 不得用于商业用途：不要把笔记、题目、音频或卡组拿去售卖，或放进收费课程、付费资料。确有需要请先通过 GitHub 联系
+- ❌ 不要做**全站镜像**——会稀释 Google 索引，对原站和镜像都没好处。引用任意片段、章节都欢迎
+
+网站代码（构建脚本、页面脚本）采用 MIT 许可。
 :::
 
 :::en
-Content is licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)**:
+Content is licensed under **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)** (Attribution-NonCommercial):
 
-- ✅ Free to share, quote, adapt, use for teaching (including commercial teaching)
+- ✅ Free to share, quote, adapt, and use for self-study and classroom teaching
 - ✅ Just attribute the source (link to jpnotes.dev)
-- ❌ Please don't mirror the entire site — full mirrors dilute Google's index and hurt both the original and the mirror. Quote any snippet or chapter freely, but please don't bulk-copy the entire grammar point catalog
+- ❌ No commercial use: don't sell the notes, questions, audio or decks, or put them in paid courses or materials. If you need that, ask first on GitHub
+- ❌ Please don't mirror the entire site — full mirrors dilute Google's index and hurt both the original and the mirror. Quote any snippet or chapter freely
+
+The site's code (build and page scripts) is MIT-licensed.
 :::

@@ -1,0 +1,731 @@
+[
+  {
+    "id": "n4-m1-101",
+    "rev": 2,
+    "type": "bunpou",
+    "refs": [
+      "lesson19#1"
+    ],
+    "difficulty": 1,
+    "stem": "きのうの 夜、となりの へやの 学生たちに おそくまで （　）、ぜんぜん 寝られませんでした。",
+    "options": [
+      "さわがれて",
+      "さわがせて",
+      "さわいで",
+      "さわがされて"
+    ],
+    "okj": [
+      "騒がれて",
+      "騒がせて",
+      "騒いで",
+      "騒がされて"
+    ],
+    "answer": 0,
+    "full": "きのうの 夜、となりの へやの 学生たちに おそくまで さわがれて、ぜんぜん 寝られませんでした。",
+    "kj": "昨日の夜、隣の部屋の学生たちに遅くまで騒がれて、全然寝られませんでした。",
+    "tr": {
+      "zh": "昨天晚上隔壁房间的学生们一直吵到很晚，我完全睡不着。",
+      "en": "Last night the students next door made noise until late, and I couldn't sleep at all."
+    },
+    "why": {
+      "zh": "「学生たちに」是吵闹的人，睡不着、受害的是我：受害被动「人に さわがれる」。",
+      "en": "「学生たちに」 are the ones making noise and I'm the one who suffers — the suffering passive 「人に さわがれる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「さわがせて」是使役（我让他们吵），那我就不会抱怨睡不着。",
+        "en": "「さわがせて」 is causative (I let them make noise) — then why complain I couldn't sleep?"
+      },
+      {
+        "zh": "「さわいで」是主动（吵闹的是我），和「学生たちに」接不上。",
+        "en": "「さわいで」 is active (I made noise); it doesn't fit 「学生たちに」."
+      },
+      {
+        "zh": "「さわがされて」是使役被动（我被迫吵闹），意思不对。",
+        "en": "「さわがされて」 is causative-passive (I was made to make noise) — wrong meaning."
+      }
+    ]
+  },
+  {
+    "id": "n4-m1-102",
+    "type": "bunpou",
+    "refs": [
+      "lesson18#1"
+    ],
+    "difficulty": 1,
+    "stem": "弟は 野菜が きらいですが、母は 毎日 弟に 野菜を 少し （　）。",
+    "options": [
+      "食べさせます",
+      "食べさせられます",
+      "食べたがります",
+      "食べさせて もらいます"
+    ],
+    "answer": 0,
+    "full": "弟は 野菜が きらいですが、母は 毎日 弟に 野菜を 少し 食べさせます。",
+    "kj": "弟は野菜が嫌いですが、母は毎日弟に野菜を少し食べさせます。",
+    "tr": {
+      "zh": "弟弟讨厌蔬菜，但妈妈每天都让弟弟吃一点蔬菜。",
+      "en": "My little brother hates vegetables, but my mother makes him eat a few every day."
+    },
+    "why": {
+      "zh": "主语是「母は」，让「弟に」做吃这个动作：「AはBに〜させる」是使役，“让／叫某人做”。",
+      "en": "The subject is 「母は」 and 「弟に」 is the one who eats: 「AはBに〜させる」 is the causative, \"make / have someone do\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「食べさせられます」是使役被动，主语应该是被迫吃的弟弟，不是妈妈。",
+        "en": "「食べさせられます」 is causative-passive; its subject would be the brother who's forced, not the mother."
+      },
+      {
+        "zh": "「食べたがります」是妈妈自己想吃，和「弟に」接不上。",
+        "en": "「食べたがります」 would mean the mother wants to eat; 「弟に」 has no place then."
+      },
+      {
+        "zh": "「食べさせて もらいます」是妈妈请弟弟允许她吃，意思不通。",
+        "en": "「食べさせて もらいます」 would be the mother getting her son's permission to eat — makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n4-m1-103",
+    "rev": 2,
+    "type": "bunpou",
+    "refs": [
+      "lesson19#2"
+    ],
+    "difficulty": 2,
+    "stem": "中学生の とき、サッカー部の 練習で、毎日 先輩に グラウンドを 10しゅうも （　）。",
+    "options": [
+      "走らされました",
+      "走らせました",
+      "走られました",
+      "走って くれました"
+    ],
+    "answer": 0,
+    "full": "中学生の とき、サッカー部の 練習で、毎日 先輩に グラウンドを 10しゅうも 走らされました。",
+    "kj": "中学生のとき、サッカー部の練習で、毎日先輩にグラウンドを10周も走らされました。",
+    "tr": {
+      "zh": "上中学时，足球部训练每天都被前辈逼着绕操场跑十圈。",
+      "en": "In junior high, at football club practice, the older members made me run ten laps of the field every day."
+    },
+    "why": {
+      "zh": "「先輩に」逼我跑，「10しゅうも」说明不情愿：被迫做某事用使役被动，一类动词口语缩略为「走らされる」。",
+      "en": "「先輩に」 made me run, and 「10しゅうも」 shows I didn't want to: being made to do something is the causative-passive, contracted to 「走らされる」 for an う-verb."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「走らせました」是“我让（别人）跑”，和「先輩に」接不上。",
+        "en": "「走らせました」 is \"I made (someone) run\"; it doesn't fit 「先輩に」."
+      },
+      {
+        "zh": "「走られました」是受害被动“前辈跑了（我很困扰）”，可跑圈的是我。",
+        "en": "「走られました」 is the suffering passive (the seniors ran, to my annoyance), but I'm the one running laps."
+      },
+      {
+        "zh": "「〜て くれました」的施动者用「が」，而且“前辈为我跑”意思不对。",
+        "en": "「〜て くれました」 takes the doer with 「が」, and \"the seniors ran for me\" is the wrong meaning."
+      }
+    ]
+  },
+  {
+    "id": "n4-m1-104",
+    "rev": 2,
+    "type": "bunpou",
+    "refs": [
+      "lesson20#3"
+    ],
+    "difficulty": 2,
+    "stem": "かぜで 学校を 休んだ 日、友だちが じゅぎょうの ノートを 見せて （　）。",
+    "options": [
+      "くれました",
+      "あげました",
+      "もらいました",
+      "おきました"
+    ],
+    "answer": 0,
+    "full": "かぜで 学校を 休んだ 日、友だちが じゅぎょうの ノートを 見せて くれました。",
+    "kj": "風邪で学校を休んだ日、友達が授業のノートを見せてくれました。",
+    "tr": {
+      "zh": "我感冒没去上学的那天，朋友给我看了上课的笔记。",
+      "en": "On the day I was off school with a cold, a friend let me see their class notes."
+    },
+    "why": {
+      "zh": "做动作的是「友だちが」，受益的是没去上课的我：别人为我做，用「〜て くれる」。",
+      "en": "The doer is 「友だちが」 and I, who missed the class, benefit: someone doing something for me is 「〜て くれる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜て あげる」是给我以外的人做好事，这里受益的是休息的我。",
+        "en": "「〜て あげる」 is a favour for someone other than me, but I'm the one who missed class."
+      },
+      {
+        "zh": "「〜て もらう」要说「友だちに 見せて もらいました」，施动者不能用「が」。",
+        "en": "「〜て もらう」 would need 「友だちに 見せて もらいました」; the doer can't take 「が」."
+      },
+      {
+        "zh": "「〜て おく」是事先准备，朋友是在我休息之后给我看的。",
+        "en": "「〜て おく」 is doing something in advance, but the friend showed me after I'd been absent."
+      }
+    ]
+  },
+  {
+    "id": "n4-m1-105",
+    "type": "bunpou",
+    "refs": [
+      "lesson21#1"
+    ],
+    "difficulty": 2,
+    "stem": "体の ために、会社では エレベーターを 使わないで、かいだんを 使う （　） して います。",
+    "options": [
+      "ように",
+      "ために",
+      "ことが",
+      "ところ"
+    ],
+    "answer": 0,
+    "full": "体の ために、会社では エレベーターを 使わないで、かいだんを 使う ように して います。",
+    "kj": "体のために、会社ではエレベーターを使わないで、階段を使うようにしています。",
+    "tr": {
+      "zh": "为了身体，我在公司尽量不坐电梯，走楼梯。",
+      "en": "For my health, I make a point of taking the stairs at work instead of the elevator."
+    },
+    "why": {
+      "zh": "后面是「して います」：「动词辞书形＋ように する」表示努力、注意养成某种习惯。",
+      "en": "It's followed by 「して います」: dictionary form + 「ように する」 means making an effort to do something habitually."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ために」表示目的，后面不能直接接「して います」。",
+        "en": "「ために」 marks a purpose; it can't be followed directly by 「して います」."
+      },
+      {
+        "zh": "「ことが して いる」不是日语；应该是「ことに して いる」或「ことが ある」。",
+        "en": "「ことが して いる」 isn't Japanese — it's 「ことに して いる」 or 「ことが ある」."
+      },
+      {
+        "zh": "「ところ して いる」不成立，「ところ」后面要接「だ」。",
+        "en": "「ところ して いる」 doesn't exist; 「ところ」 is followed by 「だ」."
+      }
+    ]
+  },
+  {
+    "id": "n4-m1-106",
+    "type": "bunpou",
+    "refs": [
+      "lesson21#2"
+    ],
+    "difficulty": 2,
+    "stem": "日本へ 来た ときは あいさつしか できませんでしたが、今は 少し 日本語で 電話が できる （　）。",
+    "options": [
+      "ように なりました",
+      "ように しました",
+      "ことに なりました",
+      "ことに しました"
+    ],
+    "answer": 0,
+    "full": "日本へ 来た ときは あいさつしか できませんでしたが、今は 少し 日本語で 電話が できる ように なりました。",
+    "kj": "日本へ来たときは挨拶しかできませんでしたが、今は少し日本語で電話ができるようになりました。",
+    "tr": {
+      "zh": "刚来日本时我只会打招呼，现在已经能用日语打一点电话了。",
+      "en": "When I came to Japan all I could do was say hello, but now I've become able to manage a phone call in Japanese."
+    },
+    "why": {
+      "zh": "从“只会打招呼”到“现在能打电话”，是能力的变化：可能形＋「ように なる」。",
+      "en": "From \"only greetings\" to \"now I can phone\" is a change in ability: potential form + 「ように なる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ように する」是有意识的努力，不能接表示能力的「できる」来说结果。",
+        "en": "「ように する」 is a deliberate effort; it doesn't report a gained ability with 「できる」."
+      },
+      {
+        "zh": "「ことに なる」是“被决定”，能力的提高不是别人决定的。",
+        "en": "「ことに なる」 means something was decided for you; getting better isn't a decision."
+      },
+      {
+        "zh": "「ことに する」是自己决定，“决定能打电话”说不通。",
+        "en": "「ことに する」 is \"decide to\"; you can't decide to be able to phone."
+      }
+    ]
+  },
+  {
+    "id": "n4-m1-107",
+    "type": "bunpou",
+    "refs": [
+      "lesson22#1",
+      "lesson22#2"
+    ],
+    "difficulty": 2,
+    "stem": "A「来年は どう するんですか。」\nB「家族とも 相談しましたが、最後は 自分で 決めて、大学院に 進む （　）。」",
+    "options": [
+      "ことに しました",
+      "ことに なりました",
+      "ように なりました",
+      "ところでした"
+    ],
+    "answer": 0,
+    "full": "A「来年は どう するんですか。」 B「家族とも 相談しましたが、最後は 自分で 決めて、大学院に 進む ことに しました。」",
+    "kj": "A「来年はどうするんですか。」\nB「家族とも相談しましたが、最後は自分で決めて、大学院に進むことにしました。」",
+    "tr": {
+      "zh": "A：明年打算怎么办？ B：也和家人商量过了，最后自己决定了要读研究生。",
+      "en": "A: What are you doing next year? B: I talked it over with my family, but in the end I decided myself to go on to grad school."
+    },
+    "why": {
+      "zh": "「自分で 決めて」说明是自己做的决定：「〜ことに する」。",
+      "en": "「自分で 決めて」 says it was the speaker's own decision: 「〜ことに する」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ことに なる」表示由别人或情况决定，和「自分で 決めて」矛盾。",
+        "en": "「ことに なる」 means it was decided by others or circumstances — it contradicts 「自分で 決めて」."
+      },
+      {
+        "zh": "「ように なる」是能力或习惯的变化，不表示做决定。",
+        "en": "「ように なる」 is a change in ability or habit, not a decision."
+      },
+      {
+        "zh": "「進む ところでした」是“差点就去读了”，和问明年打算的对话不符。",
+        "en": "「進む ところでした」 is \"I almost went on to\" — not an answer about next year's plans."
+      }
+    ]
+  },
+  {
+    "id": "n4-m1-108",
+    "rev": 2,
+    "type": "bunpou",
+    "refs": [
+      "lesson23#1"
+    ],
+    "difficulty": 2,
+    "stem": "この ケーキは さっき （　） なので、まだ あたたかいです。",
+    "options": [
+      "やいたばかり",
+      "やくばかり",
+      "やいて ばかり",
+      "やく ところ"
+    ],
+    "okj": [
+      "焼いたばかり",
+      "焼くばかり",
+      "焼いてばかり",
+      "焼くところ"
+    ],
+    "answer": 0,
+    "full": "この ケーキは さっき やいたばかり なので、まだ あたたかいです。",
+    "kj": "このケーキはさっき焼いたばかりなので、まだ温かいです。",
+    "tr": {
+      "zh": "这个蛋糕刚刚才烤好，所以还是热的。",
+      "en": "This cake came out of the oven just now, so it's still warm."
+    },
+    "why": {
+      "zh": "「さっき」＋「まだ あたたかい」：刚烤好没多久，用「た形＋ばかり」。",
+      "en": "「さっき」 with 「まだ あたたかい」: it was baked only a moment ago — 「た-form ＋ ばかり」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「やくばかり」是“光烤（不做别的）”，和「さっき」接不上。",
+        "en": "「やくばかり」 means \"does nothing but bake\" — it doesn't fit 「さっき」."
+      },
+      {
+        "zh": "「やいて ばかり」是“老是在烤”，表示反复做，不是刚烤好。",
+        "en": "「やいて ばかり」 is \"always baking\", a repeated action, not \"just baked\"."
+      },
+      {
+        "zh": "「やく ところ」是“正要烤”，还没烤的蛋糕不会是热的。",
+        "en": "「やく ところ」 is \"about to bake\" — an unbaked cake can't be warm."
+      }
+    ]
+  },
+  {
+    "id": "n4-m1-109",
+    "rev": 2,
+    "type": "bunpou",
+    "refs": [
+      "lesson33#2"
+    ],
+    "difficulty": 2,
+    "stem": "旅行に 行きたい 人は、今月の 20日 （　） 申し込んで ください。それより あとは 受け付けません。",
+    "options": [
+      "までに",
+      "まで",
+      "あいだに",
+      "ばかり"
+    ],
+    "okj": [
+      null,
+      null,
+      "間に",
+      null
+    ],
+    "answer": 0,
+    "full": "旅行に 行きたい 人は、今月の 20日 までに 申し込んで ください。それより あとは 受け付けません。",
+    "kj": "旅行に行きたい人は、今月の20日までに申し込んでください。それより後は受け付けません。",
+    "tr": {
+      "zh": "想去旅行的人，请在本月20日之前报名。之后不再受理。",
+      "en": "If you want to go on the trip, please sign up by the 20th of this month. Applications after that won't be accepted."
+    },
+    "why": {
+      "zh": "“报名”是一次性的动作，要在期限前完成：「〜までに」（在……之前）。后一句“之后不受理”也说明这是期限。",
+      "en": "Signing up is a one-off action to be done before a deadline: 「〜までに」. \"Nothing after that will be accepted\" confirms it's a deadline."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「まで」表示一直持续到某时，后面要接持续性的动作，「申し込む」是一次性动作。",
+        "en": "「まで」 is \"(continuously) until\" and needs an ongoing action; 「申し込む」 happens once."
+      },
+      {
+        "zh": "「あいだに」接名词要说「〜の あいだに」，而且“20日之间”也不是期限的意思。",
+        "en": "「あいだに」 after a noun needs 「の」, and \"during the 20th\" isn't a deadline anyway."
+      },
+      {
+        "zh": "「20日ばかり」是“净是20日”或“大约20天”，意思不通。",
+        "en": "「20日ばかり」 means \"nothing but the 20th\" or \"about 20 days\" — makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n4-m1-110",
+    "type": "bunpou",
+    "refs": [
+      "lesson24#1"
+    ],
+    "difficulty": 1,
+    "stem": "あしたの 朝、国から 両親が 来るので、今晩の うちに 部屋を そうじして （　）。",
+    "options": [
+      "おきます",
+      "あります",
+      "います",
+      "みます"
+    ],
+    "answer": 0,
+    "full": "あしたの 朝、国から 両親が 来るので、今晩の うちに 部屋を そうじして おきます。",
+    "kj": "明日の朝、国から両親が来るので、今晩のうちに部屋を掃除しておきます。",
+    "tr": {
+      "zh": "明天早上父母从国内过来，所以我今晚先把房间打扫好。",
+      "en": "My parents are coming from home tomorrow morning, so I'll clean my room tonight to be ready."
+    },
+    "why": {
+      "zh": "为了明天父母来，「今晩の うちに」先做好准备：「〜て おく」（事先做好）。",
+      "en": "Getting ready in advance (「今晩の うちに」) for the parents' visit tomorrow: 「〜て おく」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜て ある」描述别人有意做好后的状态，要用「部屋が」，不能表示我将要做的事。",
+        "en": "「〜て ある」 describes a resulting state (with 「部屋が」); it can't express what I'm going to do."
+      },
+      {
+        "zh": "「そうじして います」是正在打扫或习惯，和「今晩の うちに」（趁今晚完成）不搭。",
+        "en": "「そうじして います」 is \"am cleaning / usually clean\" — it doesn't match \"get it done tonight\"."
+      },
+      {
+        "zh": "「〜て みる」是“试着做”，打扫房间不是尝试性的事，和为父母做准备的理由不符。",
+        "en": "「〜て みる」 is \"try doing\"; cleaning for your parents' visit isn't an experiment."
+      }
+    ]
+  },
+  {
+    "id": "n4-m1-111",
+    "type": "bunpou",
+    "refs": [
+      "lesson27#2"
+    ],
+    "difficulty": 2,
+    "stem": "学生「先生、あしたは 何時ごろ 研究室に （　）か。」\n先生「十時ごろには 行きますよ。」",
+    "options": [
+      "いらっしゃいます",
+      "まいります",
+      "うかがいます",
+      "おります"
+    ],
+    "okj": [
+      null,
+      "参ります",
+      "伺います",
+      null
+    ],
+    "answer": 0,
+    "full": "学生「先生、あしたは 何時ごろ 研究室に いらっしゃいますか。」 先生「十時ごろには 行きますよ。」",
+    "kj": "学生「先生、明日は何時ごろ研究室にいらっしゃいますか。」\n先生「十時ごろには行きますよ。」",
+    "tr": {
+      "zh": "学生：老师，您明天大概几点来研究室？ 老师：十点左右会去的。",
+      "en": "Student: Professor, around what time will you be coming to the lab tomorrow? Professor: I'll be there by about ten."
+    },
+    "why": {
+      "zh": "学生问的是老师的动作（来／去），对上级的动作用尊敬语：「来る・行く・いる」→「いらっしゃる」。",
+      "en": "The student is asking about the teacher's action, so it takes honorific language: 「来る・行く・いる」 → 「いらっしゃる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「まいります」是自谦语，只能用于自己的动作。",
+        "en": "「まいります」 is humble — only for your own actions."
+      },
+      {
+        "zh": "「うかがいます」是自谦语（拜访），不能用于老师。",
+        "en": "「うかがいます」 is humble (to visit) — not for the teacher's action."
+      },
+      {
+        "zh": "「おります」是「いる」的自谦语，用于自己。",
+        "en": "「おります」 is the humble 「いる」, used for yourself."
+      }
+    ]
+  },
+  {
+    "id": "n4-m1-112",
+    "type": "bunpou",
+    "refs": [
+      "lesson28#2"
+    ],
+    "difficulty": 2,
+    "stem": "A「先生、その 荷物、重そうですね。わたしが （　）。」\nB「ありがとう。じゃ、お願いします。」",
+    "options": [
+      "お持ちします",
+      "お持ちに なります",
+      "持って くださいます",
+      "お持ち ください"
+    ],
+    "answer": 0,
+    "full": "A「先生、その 荷物、重そうですね。わたしが お持ちします。」 B「ありがとう。じゃ、お願いします。」",
+    "kj": "A「先生、その荷物、重そうですね。私がお持ちします。」\nB「ありがとう。じゃ、お願いします。」",
+    "tr": {
+      "zh": "A：老师，那个行李看起来很重，我来帮您拿。 B：谢谢，那就拜托了。",
+      "en": "A: Professor, that bag looks heavy. Let me carry it for you. B: Thank you — please do."
+    },
+    "why": {
+      "zh": "「わたしが」拿，是为老师做的自己的动作，用自谦语「お＋ます形＋します」。",
+      "en": "「わたしが」 will carry it — your own action done for a superior takes the humble 「お＋ます-stem＋します」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「お持ちに なります」是尊敬语，不能用于自己的动作。",
+        "en": "「お持ちに なります」 is honorific — it can't describe your own action."
+      },
+      {
+        "zh": "「〜て くださいます」是对方为我做，和「わたしが」矛盾。",
+        "en": "「〜て くださいます」 means the other person does it for me, contradicting 「わたしが」."
+      },
+      {
+        "zh": "「お持ち ください」是请对方拿着，和主动帮忙的意思相反。",
+        "en": "「お持ち ください」 asks the other person to carry it — the opposite of offering."
+      }
+    ]
+  },
+  {
+    "id": "n4-m1-113",
+    "type": "bunpou",
+    "refs": [
+      "lesson30#1"
+    ],
+    "difficulty": 1,
+    "stem": "この 漢字は 何回 （　）、すぐ わすれて しまいます。",
+    "options": [
+      "書いても",
+      "書いたら",
+      "書くと",
+      "書けば"
+    ],
+    "answer": 0,
+    "full": "この 漢字は 何回 書いても、すぐ わすれて しまいます。",
+    "kj": "この漢字は何回書いても、すぐ忘れてしまいます。",
+    "tr": {
+      "zh": "这个汉字不管写多少遍，我都很快就忘。",
+      "en": "No matter how many times I write this kanji, I forget it right away."
+    },
+    "why": {
+      "zh": "「何回」＋「〜ても」＝“不管多少次都……”，后面是与期待相反的结果「すぐ わすれて しまいます」。",
+      "en": "「何回」 + 「〜ても」 = \"no matter how many times\", followed by the disappointing result 「すぐ わすれて しまいます」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「何回 書いたら」是在问“写几遍才……”，后面要接问句，不能接「わすれて しまいます」。",
+        "en": "「何回 書いたら」 asks \"how many times must I write it to…\" — it needs a question, not 「わすれて しまいます」."
+      },
+      {
+        "zh": "「書くと」是“一写就……”，和「何回」搭配说不通。",
+        "en": "「書くと」 is \"whenever I write\"; it doesn't go with 「何回」."
+      },
+      {
+        "zh": "「何回 書けば」也是在问需要写几遍，和后面的结果接不上。",
+        "en": "「何回 書けば」 also asks how many times are needed; it doesn't lead into this result."
+      }
+    ]
+  },
+  {
+    "id": "n4-m1-114",
+    "type": "narabe",
+    "refs": [
+      "lesson31#1"
+    ],
+    "difficulty": 2,
+    "stem": "きのうの パーティーで [_] [_] [★] [_]、今日は 朝から おなかが いたいです。",
+    "options": [
+      "ケーキを",
+      "食べすぎた",
+      "あまい",
+      "ので"
+    ],
+    "okj": [
+      null,
+      null,
+      "甘い",
+      null
+    ],
+    "order": [
+      2,
+      0,
+      1,
+      3
+    ],
+    "full": "きのうの パーティーで あまい ケーキを 食べすぎたので、今日は 朝から おなかが いたいです。",
+    "kj": "昨日のパーティーで甘いケーキを食べすぎたので、今日は朝からおなかが痛いです。",
+    "tr": {
+      "zh": "昨天在派对上甜蛋糕吃多了，所以今天从早上起肚子就疼。",
+      "en": "I ate too much sweet cake at the party yesterday, so my stomach has hurt since this morning."
+    },
+    "why": {
+      "zh": "形容词「あまい」修饰「ケーキを」，然后是动词「食べすぎた」（吃太多），最后「ので」表示原因：あまい ＋ ケーキを ＋ 食べすぎた ＋ ので。★ 在第三格，是「食べすぎた」。",
+      "en": "「あまい」 modifies 「ケーキを」, then the verb 「食べすぎた」 (ate too much), then 「ので」 for the reason: あまい ＋ ケーキを ＋ 食べすぎた ＋ ので. The ★ is the third slot: 「食べすぎた」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-m1-115",
+    "type": "narabe",
+    "refs": [
+      "lesson23#3"
+    ],
+    "difficulty": 2,
+    "stem": "妹が 大切に して いた [_] [★] [_] [_]、すぐ あやまりました。",
+    "options": [
+      "しまった",
+      "カップを",
+      "ので",
+      "わって"
+    ],
+    "okj": [
+      null,
+      null,
+      null,
+      "割って"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "妹が 大切に して いた カップを わって しまったので、すぐ あやまりました。",
+    "kj": "妹が大切にしていたカップを割ってしまったので、すぐ謝りました。",
+    "tr": {
+      "zh": "我把妹妹很珍惜的杯子打碎了，所以马上道了歉。",
+      "en": "I broke a cup my sister treasured, so I apologised right away."
+    },
+    "why": {
+      "zh": "「妹が 大切に して いた」修饰名词「カップを」；「わって しまった」表示遗憾的结果，再加「ので」说明道歉的原因：カップを ＋ わって ＋ しまった ＋ ので。★ 在第二格，是「わって」。",
+      "en": "「妹が 大切に して いた」 modifies 「カップを」; 「わって しまった」 is the regrettable result, and 「ので」 gives the reason for apologising: カップを ＋ わって ＋ しまった ＋ ので. The ★ is the second slot: 「わって」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-m1-116",
+    "type": "narabe",
+    "refs": [
+      "lesson21#4"
+    ],
+    "difficulty": 3,
+    "stem": "部長に この 書類を [_] [_] [_] [★] ので、今日は おそくまで 会社に のこります。",
+    "options": [
+      "ように",
+      "言われた",
+      "出す",
+      "あしたまでに"
+    ],
+    "okj": [
+      null,
+      null,
+      null,
+      "明日までに"
+    ],
+    "order": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "full": "部長に この 書類を あしたまでに 出す ように 言われたので、今日は おそくまで 会社に のこります。",
+    "kj": "部長にこの書類を明日までに出すように言われたので、今日は遅くまで会社に残ります。",
+    "tr": {
+      "zh": "部长让我明天之前交这份文件，所以今天我要在公司待到很晚。",
+      "en": "My manager told me to hand in this document by tomorrow, so I'm staying late at the office today."
+    },
+    "why": {
+      "zh": "「あしたまでに 出す」是要求的内容，接「ように 言われた」（被要求……）转述命令：あしたまでに ＋ 出す ＋ ように ＋ 言われた。★ 在第四格，是「言われた」。",
+      "en": "「あしたまでに 出す」 is what was requested, then 「ように 言われた」 (was told to) reports the instruction: あしたまでに ＋ 出す ＋ ように ＋ 言われた. The ★ is the fourth slot: 「言われた」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-m1-117",
+    "type": "narabe",
+    "refs": [
+      "lesson32#2"
+    ],
+    "difficulty": 2,
+    "stem": "A「来週の 土曜日に 食事会を します。[_] [★] [_] [_] 金曜日までに 知らせて ください。」\nB「はい、分かりました。」",
+    "options": [
+      "どうか",
+      "来られる",
+      "を",
+      "か"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "A「来週の 土曜日に 食事会を します。来られるか どうかを 金曜日までに 知らせて ください。」 B「はい、分かりました。」",
+    "kj": "A「来週の土曜日に食事会をします。来られるかどうかを金曜日までに知らせてください。」\nB「はい、分かりました。」",
+    "tr": {
+      "zh": "A：下周六我们要聚餐。能不能来，请在周五之前告诉我。 B：好的，知道了。",
+      "en": "A: We're having a dinner next Saturday. Please let me know by Friday whether you can come. B: OK, will do."
+    },
+    "why": {
+      "zh": "“能不能来”是「可能形＋かどうか」，整体当宾语再接「を 知らせて」：来られる ＋ か ＋ どうか ＋ を。★ 在第二格，是「か」。",
+      "en": "\"Whether you can come\" is potential form + 「かどうか」, used as the object of 「知らせて」 with 「を」: 来られる ＋ か ＋ どうか ＋ を. The ★ is the second slot: 「か」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

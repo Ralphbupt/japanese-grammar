@@ -1,0 +1,698 @@
+[
+  {
+    "id": "n1-l84-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson84#1"
+    ],
+    "difficulty": 2,
+    "stem": "駅前のあの店は、何の予告（　）、ある日突然閉店してしまった。",
+    "options": [
+      "もなしに",
+      "ことなしに",
+      "なくしては",
+      "をよそに"
+    ],
+    "answer": 0,
+    "full": "駅前のあの店は、何の予告もなしに、ある日突然閉店してしまった。",
+    "tr": {
+      "zh": "车站前那家店没有任何预告，某天突然就关门了。",
+      "en": "That shop by the station closed suddenly one day without any notice at all."
+    },
+    "why": {
+      "zh": "「何の〜もなしに」强调“连……都没有”，在缺少本该有的预告的情况下发生了某事。",
+      "en": "「何の〜もなしに」 stresses \"without even any …\": it happened without the notice one would expect."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ことなしに」接动词辞书形，前面是名词「予告」时接法错误。",
+        "en": "「ことなしに」 follows a dictionary-form verb, not a noun like 「予告」."
+      },
+      {
+        "zh": "「なくしては」后项必须是否定或“不可能”，这里是已发生的「閉店してしまった」。",
+        "en": "「なくしては」 needs a negative or \"impossible\" after it, but the shop did close."
+      },
+      {
+        "zh": "「をよそに」是“不顾（别人的担心等）”，“不顾预告”意思不通，而且前面是「何の」。",
+        "en": "「をよそに」 ignores others' worries; \"ignoring any notice\" makes no sense after 「何の」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l84-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson84#1"
+    ],
+    "difficulty": 2,
+    "stem": "地元の皆さんの協力なしには、（　）。",
+    "options": [
+      "この大会は大成功を収めた",
+      "この大会の成功はあり得なかった",
+      "この大会を成功させよう",
+      "この大会が成功するといい"
+    ],
+    "answer": 1,
+    "full": "地元の皆さんの協力なしには、この大会の成功はあり得なかった。",
+    "tr": {
+      "zh": "没有当地各位的协助，这次大会不可能成功。",
+      "en": "Without the help of everyone in the community, this tournament could never have succeeded."
+    },
+    "why": {
+      "zh": "「なしには」的后项必须是否定或“不可能”（没有A就不能B），只有「あり得なかった」符合。",
+      "en": "After 「なしには」 the main clause must be negative or \"impossible\" (without A, no B) — only 「あり得なかった」 fits."
+    },
+    "wrong": [
+      {
+        "zh": "「大成功を収めた」是肯定句，「なしには」不能接肯定结果。",
+        "en": "「大成功を収めた」 is affirmative; 「なしには」 can't lead into a positive result."
+      },
+      null,
+      {
+        "zh": "「成功させよう」是意志、号召，不是「なしには」要求的否定。",
+        "en": "「成功させよう」 is a call to action, not the negative 「なしには」 requires."
+      },
+      {
+        "zh": "「成功するといい」是愿望，不是否定或“不可能”。",
+        "en": "「成功するといい」 is a wish, not a negative or impossibility."
+      }
+    ]
+  },
+  {
+    "id": "n1-l84-003",
+    "type": "narabe",
+    "refs": [
+      "lesson84#1"
+    ],
+    "difficulty": 2,
+    "stem": "彼は [★] [_] [_] [_] 会社の機密資料を持ち出した。",
+    "options": [
+      "断りも",
+      "上司に",
+      "なしに",
+      "一言の"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "彼は上司に一言の断りもなしに会社の機密資料を持ち出した。",
+    "tr": {
+      "zh": "他没跟上司打一声招呼，就把公司的机密资料带了出去。",
+      "en": "Without a single word to his boss, he took the company's confidential documents out."
+    },
+    "why": {
+      "zh": "「上司に一言の断り」中「一言の」修饰「断り」，后接「もなしに」：上司に → 一言の → 断りも → なしに。★ 是「上司に」。",
+      "en": "In 「上司に一言の断り」 「一言の」 modifies 「断り」, followed by 「もなしに」: 上司に → 一言の → 断りも → なしに. The ★ is 「上司に」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l84-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson84#2"
+    ],
+    "difficulty": 2,
+    "stem": "リスクを取る（　）、大きな成果を得ることはできない。",
+    "options": [
+      "なしに",
+      "ことなしに",
+      "ずにはおかず",
+      "ことだから"
+    ],
+    "answer": 1,
+    "full": "リスクを取ることなしに、大きな成果を得ることはできない。",
+    "tr": {
+      "zh": "不承担风险，就不可能取得大的成果。",
+      "en": "Without taking risks, you cannot achieve great results."
+    },
+    "why": {
+      "zh": "前面是动词辞书形「取る」，后项是「できない」，“不做A就不能B”，用「ことなしに」。",
+      "en": "A dictionary-form verb, 「取る」, comes before and 「できない」 after — \"without doing A, no B\" — 「ことなしに」."
+    },
+    "wrong": [
+      {
+        "zh": "「なしに」接名词，不能直接接动词「取る」。",
+        "en": "「なしに」 follows a noun, not a verb like 「取る」."
+      },
+      null,
+      {
+        "zh": "「ずにはおかず」接ない形（取らずには），「取るずには」接法错误，意思也不对。",
+        "en": "「ずにはおかず」 takes the ない-stem (取らずには), so this is malformed, and the meaning is wrong."
+      },
+      {
+        "zh": "「ことだから」是“既然是……，一定……”的推测，接不上“不能取得成果”。",
+        "en": "「ことだから」 (knowing …, surely) is a guess and doesn't give the condition here."
+      }
+    ]
+  },
+  {
+    "id": "n1-l84-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson84#2"
+    ],
+    "difficulty": 2,
+    "stem": "彼は三十年間、一日も休む（　）、黙々と働き続けた。",
+    "options": [
+      "ことなしには",
+      "なしに",
+      "ことなく",
+      "ずには"
+    ],
+    "answer": 2,
+    "full": "彼は三十年間、一日も休むことなく、黙々と働き続けた。",
+    "tr": {
+      "zh": "他三十年来一天也没休息，默默地工作着。",
+      "en": "For thirty years he worked on quietly without taking a single day off."
+    },
+    "why": {
+      "zh": "这里只是叙述“一天也没休息就一直工作”的事实，用N2的「ことなく」。「ことなしには」用于“不做A就不能B”的条件句。",
+      "en": "This simply narrates what happened (worked without a day off), so it's the N2 「ことなく」. 「ことなしには」 is for \"without A, B is impossible\"."
+    },
+    "wrong": [
+      {
+        "zh": "「ことなしには」后项必须是否定，「働き続けた」是肯定的事实。",
+        "en": "「ことなしには」 needs a negative after it, but 「働き続けた」 is affirmative."
+      },
+      {
+        "zh": "「なしに」接名词，不能直接接动词「休む」。",
+        "en": "「なしに」 follows a noun, not the verb 「休む」."
+      },
+      null,
+      {
+        "zh": "「ずには」接ない形（休まずには），而且后面要接「いられない」等，不能单独用。",
+        "en": "「ずには」 takes the ない-stem (休まずには) and needs something like 「いられない」 after it."
+      }
+    ]
+  },
+  {
+    "id": "n1-l84-006",
+    "type": "narabe",
+    "refs": [
+      "lesson84#2"
+    ],
+    "difficulty": 3,
+    "stem": "現場の [_] [★] [_] [_] 、実効性のある対策は立てられない。",
+    "options": [
+      "なしには",
+      "声に",
+      "こと",
+      "耳を傾ける"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "現場の声に耳を傾けることなしには、実効性のある対策は立てられない。",
+    "tr": {
+      "zh": "不倾听一线的声音，就无法制定出切实有效的对策。",
+      "en": "Without listening to the voices on the ground, no effective measures can be drawn up."
+    },
+    "why": {
+      "zh": "「現場の声に耳を傾ける」是动词短语，后接「ことなしには」，后项是否定「立てられない」：声に → 耳を傾ける → こと → なしには。★ 是「耳を傾ける」。",
+      "en": "「現場の声に耳を傾ける」 is a verb phrase taking 「ことなしには」, with the negative 「立てられない」 after: 声に → 耳を傾ける → こと → なしには. The ★ is 「耳を傾ける」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l84-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson84#3"
+    ],
+    "difficulty": 2,
+    "stem": "この映画のラストシーンは、見る者の胸を打た（　）だろう。",
+    "options": [
+      "ずにはいられない",
+      "ずにはすまない",
+      "ずにはおかない",
+      "ずに済む"
+    ],
+    "answer": 2,
+    "full": "この映画のラストシーンは、見る者の胸を打たずにはおかないだろう。",
+    "tr": {
+      "zh": "这部电影的最后一幕必定会打动观众的心吧。",
+      "en": "The final scene of this film is bound to move everyone who sees it."
+    },
+    "why": {
+      "zh": "主语是作品「ラストシーン」，必然让别人（观众）产生感动，用非意志的「ずにはおかない」（必然会……）。",
+      "en": "The subject is a work (the final scene), which is bound to move others (the viewers) — 「ずにはおかない」 (is bound to)."
+    },
+    "wrong": [
+      {
+        "zh": "「ずにはいられない」表示说话人自己忍不住，主语不能是电影场景。",
+        "en": "「ずにはいられない」 is about the speaker's own urge; a film scene can't be its subject."
+      },
+      {
+        "zh": "「ずにはすまない」是出于责任、情理“不做不行”，电影场景没有这种义务。",
+        "en": "「ずにはすまない」 is about obligation; a film scene has none."
+      },
+      null,
+      {
+        "zh": "「ずに済む」是“不用……就解决了”，“不用打动观众”与句意相反。",
+        "en": "「ずに済む」 (get by without) says the opposite — it wouldn't need to move anyone."
+      }
+    ]
+  },
+  {
+    "id": "n1-l84-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson84#3"
+    ],
+    "difficulty": 1,
+    "stem": "その漫才があまりにおかしくて、思わず声を出して笑わ（　）。",
+    "options": [
+      "ずにはおかなかった",
+      "ずにはいられなかった",
+      "ずにはすまなかった",
+      "ずに済んだ"
+    ],
+    "answer": 1,
+    "full": "その漫才があまりにおかしくて、思わず声を出して笑わずにはいられなかった。",
+    "tr": {
+      "zh": "那段相声太好笑了，我忍不住笑出声来。",
+      "en": "The comedy routine was so funny that I couldn't help laughing out loud."
+    },
+    "why": {
+      "zh": "说话人自己忍不住的感情、动作用「ずにはいられない」，「ずにはおかない」不用于自己的冲动。",
+      "en": "One's own irresistible urge is 「ずにはいられない」; 「ずにはおかない」 isn't used for the speaker's own impulse."
+    },
+    "wrong": [
+      {
+        "zh": "「ずにはおかない」用于事物必然引起别人的反应或强烈决心，不用于自己忍不住笑。",
+        "en": "「ずにはおかない」 is for something bound to affect others, or a strong resolve — not your own laughter."
+      },
+      null,
+      {
+        "zh": "「ずにはすまない」是出于责任、情理不得不做，笑不是义务。",
+        "en": "「ずにはすまない」 is about obligation; laughing isn't a duty."
+      },
+      {
+        "zh": "「ずに済んだ」是“没笑就过去了”，和「あまりにおかしくて」「思わず」矛盾。",
+        "en": "「ずに済んだ」 (got by without laughing) contradicts 「あまりにおかしくて」 and 「思わず」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l84-009",
+    "type": "narabe",
+    "refs": [
+      "lesson84#3"
+    ],
+    "difficulty": 2,
+    "stem": "今回の [_] [_] [★] [_] だろう。",
+    "options": [
+      "業界全体に",
+      "ずにはおかない",
+      "不祥事は",
+      "波紋を広げ"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "今回の不祥事は業界全体に波紋を広げずにはおかないだろう。",
+    "tr": {
+      "zh": "这次的丑闻必然会在整个行业引起波澜吧。",
+      "en": "This scandal is bound to send ripples through the entire industry."
+    },
+    "why": {
+      "zh": "主语「今回の不祥事は」，「業界全体に波紋を広げる」的ない形后接「ずにはおかない」：不祥事は → 業界全体に → 波紋を広げ → ずにはおかない。★ 是「波紋を広げ」。",
+      "en": "Subject 「今回の不祥事は」, then the ない-stem of 「業界全体に波紋を広げる」 + 「ずにはおかない」: 不祥事は → 業界全体に → 波紋を広げ → ずにはおかない. The ★ is 「波紋を広げ」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l84-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson84#4"
+    ],
+    "difficulty": 2,
+    "stem": "相手にけがをさせてしまった以上、直接謝りに行か（　）。",
+    "options": [
+      "ずに済む",
+      "ずにはすまない",
+      "ずにはおかない",
+      "ないわけではない"
+    ],
+    "answer": 1,
+    "full": "相手にけがをさせてしまった以上、直接謝りに行かずにはすまない。",
+    "tr": {
+      "zh": "既然让对方受了伤，就必须亲自去道歉。",
+      "en": "Now that I've injured the other person, I can't get away without going to apologise in person."
+    },
+    "why": {
+      "zh": "「〜以上」表示情理上的原因，不做就说不过去，用「ずにはすまない」（不……就过不去）。",
+      "en": "「〜以上」 gives the situation that makes it unavoidable — 「ずにはすまない」 (can't get away without)."
+    },
+    "wrong": [
+      {
+        "zh": "「ずに済む」是“不用……就解决了”，与「以上」的语气正好相反。",
+        "en": "「ずに済む」 (needn't) is the exact opposite of what 「以上」 implies."
+      },
+      null,
+      {
+        "zh": "「ずにはおかない」的意志用法用于报仇、追究等强烈决心，不用于道歉的义务。",
+        "en": "The resolve sense of 「ずにはおかない」 is for revenge or pursuit, not the duty to apologise."
+      },
+      {
+        "zh": "「ないわけではない」是“并不是不……”的部分否定，和「以上」接不上。",
+        "en": "「ないわけではない」 (it's not that I don't) is a hedge that doesn't follow 「以上」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l84-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson84#4"
+    ],
+    "difficulty": 3,
+    "stem": "部下の不正を見逃していたとなれば、課長も監督責任を問われ（　）だろう。",
+    "options": [
+      "ずにはおかない",
+      "ずに済む",
+      "ずにはすまない",
+      "ずにはいられない"
+    ],
+    "answer": 2,
+    "full": "部下の不正を見逃していたとなれば、課長も監督責任を問われずにはすまないだろう。",
+    "tr": {
+      "zh": "如果放过了下属的违规行为，科长恐怕也免不了被追究监督责任吧。",
+      "en": "If he turned a blind eye to his subordinate's misconduct, the section chief will surely have to answer for his lack of oversight too."
+    },
+    "why": {
+      "zh": "出于责任和社会常识，免不了要受追究，用「ずにはすまない」，常和「だろう」一起用。",
+      "en": "Responsibility and common sense make it unavoidable — 「ずにはすまない」, often with 「だろう」."
+    },
+    "wrong": [
+      {
+        "zh": "「ずにはおかない」主语是引起反应的事物或下决心的人，“科长下决心被追究”意思不通。",
+        "en": "「ずにはおかない」 needs a cause or a resolute agent; the chief isn't resolving to be blamed."
+      },
+      {
+        "zh": "「ずに済む」是“不用被追究”，和「見逃していたとなれば」的语气相反。",
+        "en": "「ずに済む」 (escape being blamed) runs against 「見逃していたとなれば」."
+      },
+      null,
+      {
+        "zh": "「ずにはいられない」表示自己忍不住的冲动，被追究责任不是冲动。",
+        "en": "「ずにはいられない」 is an inner urge; being held responsible isn't one."
+      }
+    ]
+  },
+  {
+    "id": "n1-l84-012",
+    "type": "narabe",
+    "refs": [
+      "lesson84#4"
+    ],
+    "difficulty": 2,
+    "stem": "借りた車を [_] [_] [_] [★] だろう。",
+    "options": [
+      "ずにはすまない",
+      "修理代を",
+      "傷つけた以上",
+      "弁償せ"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "借りた車を傷つけた以上修理代を弁償せずにはすまないだろう。",
+    "tr": {
+      "zh": "既然把借来的车弄坏了，恐怕非赔修理费不可了。",
+      "en": "Having damaged the car I borrowed, I suppose I'll have no choice but to pay for the repairs."
+    },
+    "why": {
+      "zh": "「傷つけた以上」是原因，「修理代を弁償する」的ない形接「ずにはすまない」：傷つけた以上 → 修理代を → 弁償せ → ずにはすまない。★ 是「ずにはすまない」。",
+      "en": "「傷つけた以上」 is the reason, then the ない-stem of 「修理代を弁償する」 + 「ずにはすまない」: 傷つけた以上 → 修理代を → 弁償せ → ずにはすまない. The ★ is 「ずにはすまない」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l84-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson84#5"
+    ],
+    "difficulty": 2,
+    "stem": "罪のない子どもたちまでが犠牲になったことに、強い憤り（　）。",
+    "options": [
+      "を禁じ得ない",
+      "ずにはいられない",
+      "を余儀なくされる",
+      "てならない"
+    ],
+    "answer": 0,
+    "full": "罪のない子どもたちまでが犠牲になったことに、強い憤りを禁じ得ない。",
+    "tr": {
+      "zh": "连无辜的孩子们都成了牺牲品，对此我抑制不住强烈的愤慨。",
+      "en": "That even innocent children were among the victims fills me with an anger I cannot hold back."
+    },
+    "why": {
+      "zh": "前面是感情名词「憤り」，郑重地表达抑制不住的感情，用「を禁じ得ない」。",
+      "en": "「憤り」 is a noun of feeling; to say formally that it can't be held back, use 「を禁じ得ない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ずにはいられない」接动词ない形，不能直接接名词「憤り」。",
+        "en": "「ずにはいられない」 follows a verb's ない-stem, not the noun 「憤り」."
+      },
+      {
+        "zh": "「を余儀なくされる」前面是中止、撤退等行为名词，不接感情。",
+        "en": "「を余儀なくされる」 takes action nouns like cancellation or withdrawal, not feelings."
+      },
+      {
+        "zh": "「てならない」接动词、形容词的て形，不能接名词「憤り」。",
+        "en": "「てならない」 follows a て-form, not the noun 「憤り」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l84-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson84#5"
+    ],
+    "difficulty": 2,
+    "stem": "長年信頼してきた部下に裏切られ、失望（　）。",
+    "options": [
+      "せずにはおかなかった",
+      "を余儀なくされた",
+      "を禁じ得なかった",
+      "せずには済まなかった"
+    ],
+    "answer": 2,
+    "full": "長年信頼してきた部下に裏切られ、失望を禁じ得なかった。",
+    "tr": {
+      "zh": "被多年信任的部下背叛，我不禁深感失望。",
+      "en": "Betrayed by a subordinate I had trusted for years, I could not help feeling deeply disappointed."
+    },
+    "why": {
+      "zh": "说话人当时自己涌起的感情，前面是感情名词「失望」，用过去形「を禁じ得なかった」。",
+      "en": "A feeling that welled up in the speaker at the time, with the feeling noun 「失望」 — past 「を禁じ得なかった」."
+    },
+    "wrong": [
+      {
+        "zh": "「ずにはおかない」不用于说话人自己的感情，而是事物引起别人的反应或强烈决心。",
+        "en": "「ずにはおかない」 isn't for the speaker's own feeling; it's for an effect on others or a resolve."
+      },
+      {
+        "zh": "「を余儀なくされる」是被客观情况逼着做不想做的事，前面要接行为名词，不接感情。",
+        "en": "「を余儀なくされる」 is being forced into an action by circumstances; it doesn't take a feeling."
+      },
+      null,
+      {
+        "zh": "「ずにはすまない」是出于责任、情理不得不做，失望不是义务。",
+        "en": "「ずにはすまない」 is about obligation; disappointment isn't a duty."
+      }
+    ]
+  },
+  {
+    "id": "n1-l84-015",
+    "type": "narabe",
+    "refs": [
+      "lesson84#5"
+    ],
+    "difficulty": 2,
+    "stem": "被災者の [★] [_] [_] [_] 。",
+    "options": [
+      "同情を",
+      "訴えを",
+      "禁じ得なかった",
+      "聞き"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "被災者の訴えを聞き同情を禁じ得なかった。",
+    "tr": {
+      "zh": "听了受灾者的控诉，不禁深感同情。",
+      "en": "Hearing the victims' pleas, I could not help but feel sympathy."
+    },
+    "why": {
+      "zh": "「被災者の訴えを聞き」在前，后接感情名词＋「を禁じ得なかった」：訴えを → 聞き → 同情を → 禁じ得なかった。★ 是「訴えを」。",
+      "en": "「被災者の訴えを聞き」 comes first, then feeling noun + 「を禁じ得なかった」: 訴えを → 聞き → 同情を → 禁じ得なかった. The ★ is 「訴えを」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l84-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson84#6"
+    ],
+    "difficulty": 1,
+    "stem": "業績の悪化により、同社は海外事業からの撤退（　）。",
+    "options": [
+      "を余儀なくさせた",
+      "を余儀なくされた",
+      "を禁じ得なかった",
+      "ざるを得なかった"
+    ],
+    "answer": 1,
+    "full": "業績の悪化により、同社は海外事業からの撤退を余儀なくされた。",
+    "tr": {
+      "zh": "由于业绩恶化，该公司被迫撤出海外业务。",
+      "en": "Because of worsening results, the company was forced to pull out of its overseas business."
+    },
+    "why": {
+      "zh": "主语「同社」因客观原因被迫做不想做的事，用被动的「を余儀なくされた」。",
+      "en": "The subject, 「同社」, was forced by circumstances into something it didn't want — passive 「を余儀なくされた」."
+    },
+    "wrong": [
+      {
+        "zh": "「を余儀なくさせた」的主语是造成局面的原因，「同社は〜を余儀なくさせた」主语不对。",
+        "en": "With 「を余儀なくさせた」 the subject is the cause; 「同社」 is the one forced, not the cause."
+      },
+      null,
+      {
+        "zh": "「を禁じ得ない」前面是感情名词，「撤退」不是感情。",
+        "en": "「を禁じ得ない」 takes feeling nouns; 「撤退」 isn't one."
+      },
+      {
+        "zh": "「ざるを得ない」接动词ない形（撤退せざるを得なかった），不能直接接名词「撤退」。",
+        "en": "「ざるを得ない」 follows a verb's ない-stem (撤退せざるを得なかった), not the bare noun."
+      }
+    ]
+  },
+  {
+    "id": "n1-l84-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson84#6"
+    ],
+    "difficulty": 2,
+    "stem": "度重なるけがが、彼に現役引退を余儀なく（　）。",
+    "options": [
+      "された",
+      "させられた",
+      "させた",
+      "なった"
+    ],
+    "answer": 2,
+    "full": "度重なるけがが、彼に現役引退を余儀なくさせた。",
+    "tr": {
+      "zh": "接连的伤病迫使他退役。",
+      "en": "Repeated injuries forced him to retire from competition."
+    },
+    "why": {
+      "zh": "主语是原因「度重なるけが」，对象用「に」（彼に），所以用主动形「を余儀なくさせた」（迫使）。",
+      "en": "The subject is the cause, 「度重なるけが」, with the person marked by 「に」 (彼に), so the active 「を余儀なくさせた」 (forced)."
+    },
+    "wrong": [
+      {
+        "zh": "「余儀なくされた」主语应是被迫的人（彼は），这里主语是「けが」。",
+        "en": "「余儀なくされた」 needs the person forced as subject (彼は), but here it's 「けが」."
+      },
+      {
+        "zh": "「させられた」是使役被动，主语也应是被迫的人，和「けがが」「彼に」不符。",
+        "en": "「させられた」 is causative-passive, again needing the person as subject."
+      },
+      null,
+      {
+        "zh": "没有「余儀なくなる」这种说法。",
+        "en": "「余儀なくなる」 isn't a form that exists."
+      }
+    ]
+  },
+  {
+    "id": "n1-l84-018",
+    "type": "narabe",
+    "refs": [
+      "lesson84#6"
+    ],
+    "difficulty": 2,
+    "stem": "地震で家を失った住民たちは、 [_] [★] [_] [_] 。",
+    "options": [
+      "を余儀なく",
+      "長期にわたる",
+      "されている",
+      "避難生活"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "地震で家を失った住民たちは、長期にわたる避難生活を余儀なくされている。",
+    "tr": {
+      "zh": "在地震中失去家园的居民们，不得不长期过着避难生活。",
+      "en": "Residents who lost their homes in the earthquake have been forced into a long period of living as evacuees."
+    },
+    "why": {
+      "zh": "「長期にわたる」修饰「避難生活」，后接「を余儀なくされている」：長期にわたる → 避難生活 → を余儀なく → されている。★ 是「避難生活」。",
+      "en": "「長期にわたる」 modifies 「避難生活」, followed by 「を余儀なくされている」: 長期にわたる → 避難生活 → を余儀なく → されている. The ★ is 「避難生活」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

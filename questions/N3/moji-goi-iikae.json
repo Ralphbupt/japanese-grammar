@@ -1,0 +1,843 @@
+[
+  {
+    "id": "n3-mg-401",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<至急>> 連絡して ください。",
+    "options": [
+      "必ず",
+      "すぐに",
+      "直接",
+      "一度"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "请火速联系。",
+      "en": "Please get in touch urgently."
+    },
+    "why": {
+      "zh": "「至急」＝非常急，马上，即「すぐに」。",
+      "en": "「至急」 means urgently, right away: 「すぐに」."
+    },
+    "wrong": [
+      {
+        "zh": "「必ず」是“一定”，强调不能不做，不表示“马上”。",
+        "en": "「必ず」 is \"without fail\"; it doesn't mean \"right away\"."
+      },
+      null,
+      {
+        "zh": "「直接」是“直接（不通过别人）”，说的是方式，不是快慢。",
+        "en": "「直接」 is \"directly\" (not through someone else), about how, not how soon."
+      },
+      {
+        "zh": "「一度」是“一次／先……一下”，没有“急”的意思。",
+        "en": "「一度」 is \"once\"; it has no sense of urgency."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-402",
+    "rev": 2,
+    "type": "iikae",
+    "refs": [
+      "lesson39#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "彼は 今の 給料に <<不満が ある>>。",
+    "options": [
+      "興味が ある",
+      "自信が ある",
+      "文句が ある",
+      "責任が ある"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "他对现在的工资不满。",
+      "en": "He's unhappy with his current pay."
+    },
+    "why": {
+      "zh": "「不満が ある」＝有意见、想抱怨，即「文句が ある」。",
+      "en": "「不満が ある」 means having complaints: 「文句が ある」."
+    },
+    "wrong": [
+      {
+        "zh": "「興味が ある」是感兴趣，不是不满意。",
+        "en": "「興味が ある」 is being interested, not being unhappy."
+      },
+      {
+        "zh": "「自信が ある」是有自信，和对工资的不满无关。",
+        "en": "「自信が ある」 is being confident, nothing to do with complaints about pay."
+      },
+      null,
+      {
+        "zh": "「責任が ある」是有责任，不是有意见。",
+        "en": "「責任が ある」 is being responsible, not having complaints."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-404",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "仕事は <<ほぼ>> 終わった。",
+    "options": [
+      "全部",
+      "だいたい",
+      "半分",
+      "すでに"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "工作基本上做完了。",
+      "en": "The work is almost done."
+    },
+    "why": {
+      "zh": "「ほぼ」＝几乎、大体，即「だいたい」。",
+      "en": "「ほぼ」 means almost: 「だいたい」."
+    },
+    "wrong": [
+      {
+        "zh": "「全部」是全部，「ほぼ」是“差不多全部”，还剩一点。",
+        "en": "「全部」 is \"all of it\"; 「ほぼ」 is \"almost all\", with a little left."
+      },
+      null,
+      {
+        "zh": "「半分」是一半，和“几乎”差得远。",
+        "en": "「半分」 is \"half\", far from \"almost\"."
+      },
+      {
+        "zh": "「すでに」是“已经”，说的是时间，不表示“差不多”。",
+        "en": "「すでに」 is \"already\", about time, not \"almost\"."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-405",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "一日中 歩いて、<<くたくただ>>。",
+    "options": [
+      "わくわくして いる",
+      "おなかが すいて いる",
+      "とても 疲れて いる",
+      "のどが かわいて いる"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "走了一整天，累得筋疲力尽。",
+      "en": "I walked all day and I'm worn out."
+    },
+    "why": {
+      "zh": "「くたくた」＝累得精疲力尽，即「とても 疲れて いる」。",
+      "en": "「くたくた」 means exhausted: 「とても 疲れて いる」."
+    },
+    "wrong": [
+      {
+        "zh": "「わくわく」是兴奋、期待，不是累。",
+        "en": "「わくわく」 is excited, not tired."
+      },
+      {
+        "zh": "“肚子饿”是「おなかが すく」，「くたくた」说的是累。",
+        "en": "Being hungry is 「おなかが すく」; 「くたくた」 is about being tired."
+      },
+      null,
+      {
+        "zh": "“口渴”是「のどが かわく」，「くたくた」说的是累。",
+        "en": "Being thirsty is 「のどが かわく」; 「くたくた」 is about being tired."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-407",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "田中さんは 今日の 授業を <<欠席した>>。",
+    "options": [
+      "予約した",
+      "休んだ",
+      "録音した",
+      "見学した"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "田中今天的课缺席了。",
+      "en": "Tanaka was absent from today's class."
+    },
+    "why": {
+      "zh": "「欠席する」＝没有出席，即「休む」。",
+      "en": "「欠席する」 means not attending: 「休む」."
+    },
+    "wrong": [
+      {
+        "zh": "「予約した」是预约，和缺席无关。",
+        "en": "「予約した」 is booking, nothing to do with being absent."
+      },
+      null,
+      {
+        "zh": "「録音した」是录了音，说明人在课上或至少录了，不是缺席。",
+        "en": "「録音した」 is recording it, not missing it."
+      },
+      {
+        "zh": "「見学した」是去旁听、参观，人是去了的。",
+        "en": "「見学した」 is sitting in to observe — he was there."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-408",
+    "rev": 2,
+    "type": "iikae",
+    "refs": [
+      "lesson55#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "私は 人の 前で 話すのが <<苦手だ>>。",
+    "options": [
+      "習慣だ",
+      "初めてだ",
+      "上手では ない",
+      "楽しみだ"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "我不擅长在别人面前讲话。",
+      "en": "I'm not good at speaking in front of people."
+    },
+    "why": {
+      "zh": "「苦手」＝不擅长，即「上手では ない」。",
+      "en": "「苦手」 means not good at: 「上手では ない」."
+    },
+    "wrong": [
+      {
+        "zh": "「習慣だ」是“是习惯”，说的是经常做，不是擅不擅长。",
+        "en": "「習慣だ」 is \"it's a habit\", about doing it often, not skill."
+      },
+      {
+        "zh": "「初めてだ」是“第一次”，不表示不擅长。",
+        "en": "「初めてだ」 is \"it's my first time\", not \"I'm bad at it\"."
+      },
+      null,
+      {
+        "zh": "「楽しみだ」是期待，不是不擅长。",
+        "en": "「楽しみだ」 is looking forward to it, not being bad at it."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-409",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "駅で <<偶然>> 先生に 会った。",
+    "options": [
+      "久しぶりに",
+      "たまたま",
+      "やっと",
+      "初めて"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "在车站偶然碰到了老师。",
+      "en": "I ran into my teacher at the station by chance."
+    },
+    "why": {
+      "zh": "「偶然」＝碰巧，即「たまたま」。",
+      "en": "「偶然」 means by chance: 「たまたま」."
+    },
+    "wrong": [
+      {
+        "zh": "「久しぶりに」是“隔了很久”，不表示“碰巧”。",
+        "en": "「久しぶりに」 is \"for the first time in ages\", not \"by chance\"."
+      },
+      null,
+      {
+        "zh": "「やっと」是“终于”，表示等了很久，不是碰巧。",
+        "en": "「やっと」 is \"at last\", after waiting, not by chance."
+      },
+      {
+        "zh": "「初めて」是“第一次”，不表示碰巧。",
+        "en": "「初めて」 is \"for the first time\", not \"by chance\"."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-410",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "寝坊して、<<あわてて>> 家を 出た。",
+    "options": [
+      "こっそり",
+      "黙って",
+      "急いで",
+      "一人で"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "睡过头了，慌慌张张地出了门。",
+      "en": "I overslept and rushed out of the house."
+    },
+    "why": {
+      "zh": "「あわてて」＝慌忙地、匆忙地，即「急いで」。",
+      "en": "「あわてて」 means in a flustered hurry: 「急いで」."
+    },
+    "wrong": [
+      {
+        "zh": "「こっそり」是悄悄地，不让人发现，不是匆忙。",
+        "en": "「こっそり」 is secretly, without being noticed — not in a hurry."
+      },
+      {
+        "zh": "「黙って」是不说话、不打招呼，不是匆忙。",
+        "en": "「黙って」 is without a word, not in a hurry."
+      },
+      null,
+      {
+        "zh": "「一人で」是一个人，说的是和谁，不是快慢。",
+        "en": "「一人で」 is \"alone\", about who with, not how fast."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-411",
+    "rev": 2,
+    "type": "iikae",
+    "refs": [
+      "lesson42#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "祖父の 病気が <<回復した>>。",
+    "options": [
+      "見つかった",
+      "よく なった",
+      "変わった",
+      "分かった"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "祖父的病好了。",
+      "en": "My grandfather has recovered from his illness."
+    },
+    "why": {
+      "zh": "「回復する」＝恢复，病好转了，即「よく なる」。",
+      "en": "「回復する」 means recovering: 「よく なる」."
+    },
+    "wrong": [
+      {
+        "zh": "「見つかった」是（病）被查出来了，不是好了。",
+        "en": "「見つかった」 is that the illness was found, not that it got better."
+      },
+      null,
+      {
+        "zh": "「変わった」只是变了，不一定是变好。",
+        "en": "「変わった」 just means it changed, not necessarily for the better."
+      },
+      {
+        "zh": "「分かった」是知道了（是什么病），不是好了。",
+        "en": "「分かった」 is that they found out what it was, not that it got better."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-412",
+    "rev": 2,
+    "type": "iikae",
+    "refs": [
+      "lesson45#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "試験は <<予想より>> 簡単だった。",
+    "options": [
+      "思って いたより",
+      "去年の 試験より",
+      "先生の 話より",
+      "教科書の 問題より"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "考试比预想的简单。",
+      "en": "The exam was easier than I expected."
+    },
+    "why": {
+      "zh": "「予想より」＝比自己事先想的，即「思って いたより」。",
+      "en": "「予想より」 means than one had expected: 「思って いたより」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「去年の試験より」是和去年的考试比，不是和自己的预想比。",
+        "en": "「去年の 試験より」 compares with last year's exam, not with what you expected."
+      },
+      {
+        "zh": "「先生の話より」是和老师说的比，「予想」是自己事先的想法。",
+        "en": "「先生の 話より」 compares with what the teacher said; 「予想」 is your own expectation."
+      },
+      {
+        "zh": "「教科書の問題より」是和课本题比，不是和预想比。",
+        "en": "「教科書の 問題より」 compares with textbook questions, not with your expectation."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-413",
+    "rev": 2,
+    "type": "iikae",
+    "refs": [
+      "lesson41#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "この 店では、学生は <<割引に なる>>。",
+    "options": [
+      "予約が いる",
+      "早く 入れる",
+      "ポイントが もらえる",
+      "安く 買える"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "这家店学生可以打折。",
+      "en": "At this shop, students get a discount."
+    },
+    "why": {
+      "zh": "「割引」＝打折，价格变便宜，即「安く 買える」。",
+      "en": "「割引」 is a discount — you can buy more cheaply: 「安く 買える」."
+    },
+    "wrong": [
+      {
+        "zh": "「予約が いる」是需要预约，和价格无关。",
+        "en": "「予約が いる」 is needing a booking, nothing to do with price."
+      },
+      {
+        "zh": "「早く 入れる」是能早点进店，和价格无关。",
+        "en": "「早く 入れる」 is getting in early, nothing to do with price."
+      },
+      {
+        "zh": "「ポイントが もらえる」是能积分，价格本身没有变便宜。",
+        "en": "「ポイントが もらえる」 is earning points; the price itself doesn't go down."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n3-mg-415",
+    "rev": 2,
+    "type": "iikae",
+    "refs": [
+      "lesson53#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "弟は <<文句>>ばかり 言って いる。",
+    "options": [
+      "冗談",
+      "お礼",
+      "不満",
+      "うそ"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "弟弟总是在抱怨。",
+      "en": "My younger brother does nothing but complain."
+    },
+    "why": {
+      "zh": "「文句を 言う」＝发牢骚，即「不満を 言う」。",
+      "en": "「文句を 言う」 is complaining: 「不満を 言う」."
+    },
+    "wrong": [
+      {
+        "zh": "「冗談」是玩笑，不是抱怨。",
+        "en": "「冗談」 is jokes, not complaints."
+      },
+      {
+        "zh": "「お礼」是道谢，不是抱怨。",
+        "en": "「お礼」 is thanks, not complaints."
+      },
+      null,
+      {
+        "zh": "「うそ」是谎话，不是抱怨。",
+        "en": "「うそ」 is lies, not complaints."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-416",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "この 先の 道は <<通行止めだ>>。",
+    "options": [
+      "混んで いる",
+      "通れない",
+      "一方通行だ",
+      "有料だ"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "前面的路禁止通行。",
+      "en": "The road ahead is closed."
+    },
+    "why": {
+      "zh": "「通行止め」＝禁止通行，即「通れない」。",
+      "en": "「通行止め」 means the road is closed: 「通れない」."
+    },
+    "wrong": [
+      {
+        "zh": "「混んで いる」是拥堵，车多但还能通过。",
+        "en": "「混んで いる」 is congested — busy, but you can still get through."
+      },
+      null,
+      {
+        "zh": "「一方通行」是单行道，一个方向还能走，不是完全禁止通行。",
+        "en": "「一方通行」 is one-way; you can still drive in one direction."
+      },
+      {
+        "zh": "「有料」是收费，付钱就能通过。",
+        "en": "「有料」 is a toll road — you can pass if you pay."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-417",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "この 靴は 少し <<きつい>>。",
+    "options": [
+      "高い",
+      "重い",
+      "古い",
+      "小さい"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "这双鞋有点紧。",
+      "en": "These shoes are a bit tight."
+    },
+    "why": {
+      "zh": "鞋「きつい」＝紧、挤脚，也就是有点小，即「小さい」。",
+      "en": "Shoes that are 「きつい」 are tight — a bit small: 「小さい」."
+    },
+    "wrong": [
+      {
+        "zh": "「高い」是贵，和紧不紧无关。",
+        "en": "「高い」 is expensive, nothing to do with fit."
+      },
+      {
+        "zh": "「重い」是重，和紧不紧无关。",
+        "en": "「重い」 is heavy, nothing to do with fit."
+      },
+      {
+        "zh": "「古い」是旧，和紧不紧无关。",
+        "en": "「古い」 is old, nothing to do with fit."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n3-mg-418",
+    "rev": 2,
+    "type": "iikae",
+    "refs": [
+      "lesson37#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "彼は <<たびたび>> 遅刻する。",
+    "options": [
+      "よく",
+      "急に",
+      "わざと",
+      "必ず"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他经常迟到。",
+      "en": "He's often late."
+    },
+    "why": {
+      "zh": "「たびたび」＝屡次、经常，即「よく」。",
+      "en": "「たびたび」 means often: 「よく」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「急に」是突然，说的是方式，不是次数。",
+        "en": "「急に」 is \"suddenly\", not how often."
+      },
+      {
+        "zh": "「わざと」是故意，说的是意图，不是次数。",
+        "en": "「わざと」 is \"on purpose\", about intention, not frequency."
+      },
+      {
+        "zh": "「必ず」是“每次都一定”，比「たびたび」（经常）程度更绝对。",
+        "en": "「必ず」 is \"every single time\", stronger than 「たびたび」 (often)."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-419",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "夜道は <<用心した>> ほうが いい。",
+    "options": [
+      "急いだ",
+      "気を つけた",
+      "避けた",
+      "静かに した"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "走夜路最好小心点。",
+      "en": "You should be careful on the streets at night."
+    },
+    "why": {
+      "zh": "「用心する」＝提防、小心，即「気を つける」。",
+      "en": "「用心する」 means being careful: 「気を つける」."
+    },
+    "wrong": [
+      {
+        "zh": "「急いだ」是快点走，不是小心。",
+        "en": "「急いだ」 is hurrying, not being careful."
+      },
+      null,
+      {
+        "zh": "「避けた」是避开不走，「用心」是走的时候小心。",
+        "en": "「避けた」 is avoiding it altogether; 「用心」 is taking care when you do go."
+      },
+      {
+        "zh": "「静かに した」是保持安静，不是小心提防。",
+        "en": "「静かに した」 is keeping quiet, not being on your guard."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-420",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "子どもたちは <<いっせいに>> 手を 上げた。",
+    "options": [
+      "まっすぐ",
+      "同時に",
+      "元気よく",
+      "静かに"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "孩子们一齐举起了手。",
+      "en": "The children all raised their hands at once."
+    },
+    "why": {
+      "zh": "「いっせいに」＝大家同时，即「同時に」。",
+      "en": "「いっせいに」 means everyone at the same time: 「同時に」."
+    },
+    "wrong": [
+      {
+        "zh": "「まっすぐ」是笔直地，说的是举手的样子，不是同时。",
+        "en": "「まっすぐ」 is \"straight up\", how the hands went up, not all at once."
+      },
+      null,
+      {
+        "zh": "「元気よく」是有精神地，不表示同时。",
+        "en": "「元気よく」 is \"energetically\", not \"all at once\"."
+      },
+      {
+        "zh": "「静かに」是安静地，不表示同时。",
+        "en": "「静かに」 is \"quietly\", not \"all at once\"."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-421",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<ようやく>> 仕事が 終わった。",
+    "options": [
+      "急に",
+      "簡単に",
+      "やっと",
+      "早めに"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "工作终于做完了。",
+      "en": "The work is finally done."
+    },
+    "why": {
+      "zh": "「ようやく」＝好不容易、终于，即「やっと」。",
+      "en": "「ようやく」 means at last: 「やっと」."
+    },
+    "wrong": [
+      {
+        "zh": "「急に」是突然，「ようやく」是经过很久才。",
+        "en": "「急に」 is \"suddenly\"; 「ようやく」 is \"after a long time\"."
+      },
+      {
+        "zh": "「簡単に」是轻松地，「ようやく」带有“费了好大劲”的意思。",
+        "en": "「簡単に」 is \"easily\"; 「ようやく」 implies it took a lot of effort."
+      },
+      null,
+      {
+        "zh": "「早めに」是提早，和“终于”的意思不同。",
+        "en": "「早めに」 is \"early\", not \"at last\"."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-422",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "この かばんが <<気に 入った>>。",
+    "options": [
+      "好きに なった",
+      "見つかった",
+      "重く なった",
+      "安く なった"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我喜欢上了这个包。",
+      "en": "I've taken a liking to this bag."
+    },
+    "why": {
+      "zh": "「気に 入る」＝中意、喜欢上，即「好きに なる」。",
+      "en": "「気に 入る」 means coming to like something: 「好きに なる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「見つかった」是找到了，不是喜欢上了。",
+        "en": "「見つかった」 is \"was found\", not \"I like it\"."
+      },
+      {
+        "zh": "「重く なった」是变重了，和喜欢无关。",
+        "en": "「重く なった」 is \"got heavier\", nothing to do with liking."
+      },
+      {
+        "zh": "「安く なった」是降价了，和喜欢无关。",
+        "en": "「安く なった」 is \"got cheaper\", nothing to do with liking."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-423",
+    "rev": 2,
+    "type": "iikae",
+    "refs": [
+      "lesson54#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "彼は <<正直な>> 人だ。",
+    "options": [
+      "人に 親切な",
+      "うそを つかない",
+      "よく 働く",
+      "時間を 守る"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "他是个诚实的人。",
+      "en": "He's an honest person."
+    },
+    "why": {
+      "zh": "「正直」＝诚实，即「うそを つかない」。",
+      "en": "「正直」 means honest: 「うそを つかない」."
+    },
+    "wrong": [
+      {
+        "zh": "「人に 親切な」是对人亲切，不是诚实。",
+        "en": "「人に 親切な」 is kind to people, not honest."
+      },
+      null,
+      {
+        "zh": "「よく 働く」是勤快，不是诚实。",
+        "en": "「よく 働く」 is hard-working, not honest."
+      },
+      {
+        "zh": "「時間を 守る」是守时，不是诚实。",
+        "en": "「時間を 守る」 is punctual, not honest."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-424",
+    "rev": 2,
+    "type": "iikae",
+    "refs": [
+      "lesson49#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "弟の 部屋は いつも <<散らかって いる>>。",
+    "options": [
+      "日当たりが 悪い",
+      "冷えて いる",
+      "ごちゃごちゃして いる",
+      "風通しが いい"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "弟弟的房间总是乱七八糟。",
+      "en": "My younger brother's room is always a mess."
+    },
+    "why": {
+      "zh": "「散らかる」＝东西乱放、乱七八糟，即「ごちゃごちゃして いる」。",
+      "en": "「散らかる」 means things strewn all over: 「ごちゃごちゃして いる」 (cluttered)."
+    },
+    "wrong": [
+      {
+        "zh": "「日当たりが 悪い」是采光不好，和乱不乱无关。",
+        "en": "「日当たりが 悪い」 is getting little sun, nothing to do with mess."
+      },
+      {
+        "zh": "「冷えて いる」是冷，和乱不乱无关。",
+        "en": "「冷えて いる」 is cold, nothing to do with mess."
+      },
+      null,
+      {
+        "zh": "「風通しが いい」是通风好，和乱不乱无关。",
+        "en": "「風通しが いい」 is well-ventilated, nothing to do with mess."
+      }
+    ]
+  },
+  {
+    "id": "n3-mg-425",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "冷蔵庫の 中は <<空っぽだ>>。",
+    "options": [
+      "冷えて いない",
+      "古い 物ばかりだ",
+      "片付いて いる",
+      "何も ない"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "冰箱里空空的。",
+      "en": "The fridge is empty."
+    },
+    "why": {
+      "zh": "「空っぽ」＝里面什么都没有，即「何も ない」。",
+      "en": "「空っぽ」 means there's nothing inside: 「何も ない」."
+    },
+    "wrong": [
+      {
+        "zh": "「冷えて いない」是不冷，说的是温度，不是有没有东西。",
+        "en": "「冷えて いない」 is \"not cold\", about temperature, not contents."
+      },
+      {
+        "zh": "「古い 物ばかりだ」是里面都是旧东西，还是有东西的。",
+        "en": "「古い 物ばかりだ」 means it's all old stuff — there is still something inside."
+      },
+      {
+        "zh": "「片付いて いる」是整理得很整齐，但里面还可能有东西。",
+        "en": "「片付いて いる」 is neat and tidy, but there can still be things inside."
+      },
+      null
+    ]
+  }
+]

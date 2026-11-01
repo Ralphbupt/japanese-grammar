@@ -1,0 +1,701 @@
+[
+ {
+  "id": "n3-ck-301",
+  "type": "gaiyou",
+  "scene": "教室で先生が学生に話しています。",
+  "question": "先生が言いたいことは何ですか。",
+  "lines": [
+   [
+    "M",
+    "みなさん、来週までのレポートのことですが、毎年、インターネットで調べたことを、そのまま写して出す人がいます。調べること自体は悪くありません。どんどん調べてください。でも、レポートで大切なのは、調べたことについて、自分がどう考えたかです。長さは気にしなくていいですよ。短くても、自分の言葉で書いてあれば、それで十分です。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "インターネットで調べてはいけない",
+   "レポートは長く書いたほうがいい",
+   "自分の考えを書くことが大切だ",
+   "レポートは来週までに出してほしい"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "老师在教室里对学生讲话。",
+    "question": "老师想说的是什么？",
+    "lines": [
+     "各位，关于下周要交的报告，每年都有人把在网上查到的东西原样抄下来交上来。查资料本身不是坏事，尽管去查。但是，报告里重要的是你对查到的内容自己是怎么想的。长度不用在意。就算短，只要是用自己的话写的，就足够了。"
+    ],
+    "options": [
+     "不能在网上查资料",
+     "报告最好写长一点",
+     "写出自己的想法很重要",
+     "希望大家下周之前交报告"
+    ]
+   },
+   "en": {
+    "scene": "A teacher is talking to his students in class.",
+    "question": "What does the teacher want to say?",
+    "lines": [
+     "Everyone, about the report due next week: every year some people copy what they found online as it is and hand it in. Looking things up isn't bad in itself — go ahead and do plenty of research. But what matters in a report is what you yourself thought about what you found. Don't worry about length. Even a short one is fine, as long as it's in your own words."
+    ],
+    "options": [
+     "You must not look things up online",
+     "It's better to write a long report",
+     "What matters is writing your own ideas",
+     "He wants the report by next week"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「でも、レポートで大切なのは…自分がどう考えたかです」是全篇的中心，最后「自分の言葉で書いてあれば…十分」再强调一次。",
+   "en": "The core is 「でも、レポートで大切なのは…自分がどう考えたかです」, repeated at the end with 「自分の言葉で書いてあれば…十分」."
+  },
+  "wrong": [
+   {
+    "zh": "老师说「調べること自体は悪くありません。どんどん調べてください」，不反对上网查，反对的是照抄。",
+    "en": "He says looking things up 「自体は悪くありません」 — what he objects to is copying, not research."
+   },
+   {
+    "zh": "老师说「長さは気にしなくていい」，短也可以，正好相反。",
+    "en": "He says 「長さは気にしなくていい」 — the opposite."
+   },
+   null,
+   {
+    "zh": "「来週まで」只是开头提到的交作业时间，不是他想说的重点。",
+    "en": "「来週まで」 is just the deadline mentioned at the start, not his point."
+   }
+  ],
+  "traps": [
+   "twisted",
+   "detail-as-topic"
+  ]
+ },
+ {
+  "id": "n3-ck-302",
+  "type": "gaiyou",
+  "scene": "女の人の留守番電話に、男の人からメッセージが入っています。",
+  "question": "男の人が一番伝えたいことは何ですか。",
+  "lines": [
+   [
+    "M",
+    "もしもし、山田です。あしたのバーベキューのことなんだけど、肉と野菜はぼくが買っていくって言ってたよね。実は、あしたの朝、急に仕事が入っちゃって、そっちに行けるのは昼過ぎになりそうなんだ。悪いけど、肉と野菜は、誰かに先に買っておいてもらえないかな。お金はあとでちゃんと払うから。着くのは一時ごろだと思う。じゃ、また連絡するね。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "遅れるので、買い物を頼みたいこと",
+   "あしたのバーベキューに行けないこと",
+   "バーベキューの時間が変わったこと",
+   "肉と野菜のお金はあとで払うこと"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "女人的电话答录机里有一条男人的留言。",
+    "question": "男人最想告诉她的是什么？",
+    "lines": [
+     "喂，我是山田。关于明天烧烤的事，我说过肉和蔬菜由我买了带去对吧。其实明天早上突然有工作，到你们那儿大概要过了中午。不好意思，肉和蔬菜能不能请谁先买好？钱我之后一定给。我估计一点左右到。那我再联系你。"
+    ],
+    "options": [
+     "自己会迟到，想请人买东西",
+     "明天的烧烤去不了",
+     "烧烤的时间改了",
+     "肉和蔬菜的钱之后再付"
+    ]
+   },
+   "en": {
+    "scene": "A man has left a message on a woman's answering machine.",
+    "question": "What does the man most want to tell her?",
+    "lines": [
+     "Hi, it's Yamada. About the barbecue tomorrow — I said I'd buy the meat and vegetables and bring them, right? Actually, some work has suddenly come up tomorrow morning, and I probably won't get there until after noon. Sorry, but could someone buy the meat and vegetables ahead of time? I'll definitely pay you back. I think I'll arrive around one. Okay, I'll be in touch."
+    ],
+    "options": [
+     "That he'll be late, so he wants someone to do the shopping",
+     "That he can't come to the barbecue tomorrow",
+     "That the barbecue's time has changed",
+     "That he'll pay for the meat and vegetables later"
+    ]
+   }
+  },
+  "why": {
+   "zh": "因为有工作「昼過ぎになりそう」，原来自己负责的肉和菜只好「誰かに先に買っておいてもらえないかな」，付钱、几点到都是补充。",
+   "en": "Work means he'll arrive 「昼過ぎ」, so he asks 「誰かに先に買っておいてもらえないかな」 for the shopping he'd promised; the money and arrival time are details."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "他只是晚到，「一時ごろ」会到，不是不去。",
+    "en": "He'll just be late — arriving 「一時ごろ」 — not missing it."
+   },
+   {
+    "zh": "变的是他到的时间，烧烤本身的时间没有说改。",
+    "en": "Only his arrival time changes; nothing says the barbecue's time has."
+   },
+   {
+    "zh": "「お金はあとで払う」只是附带的一句，不是留言的主要目的。",
+    "en": "「お金はあとで払う」 is a side remark, not the purpose of the message."
+   }
+  ],
+  "traps": [
+   "twisted",
+   "detail-as-topic"
+  ]
+ },
+ {
+  "id": "n3-ck-303",
+  "type": "gaiyou",
+  "scene": "スーパーで店の人が話しています。",
+  "question": "何についてのお知らせですか。",
+  "lines": [
+   [
+    "F",
+    "本日もご来店いただき、ありがとうございます。お客様にお知らせいたします。当店では、来月から、レジ袋を無料でお渡しするのをやめ、一枚五円でお分けすることになりました。ご自分の袋をお持ちいただいたお客様には、これまでどおり、お会計から二円をお引きいたします。なお、レジの横で、繰り返し使えるバッグも販売しております。ご協力をお願いいたします。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "来月から品物が安くなること",
+   "レジ袋のきまりが変わること",
+   "新しいバッグを売っていること",
+   "袋がないと買い物ができないこと"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "超市里店员在广播。",
+    "question": "这是关于什么的通知？",
+    "lines": [
+     "感谢各位今天光临本店。现在通知各位顾客：本店从下个月起，不再免费提供购物塑料袋，改为每个五日元出售。自带购物袋的顾客，和以前一样，结账时减去两日元。另外，收银台旁边也在出售可以反复使用的购物袋。感谢您的配合。"
+    ],
+    "options": [
+     "从下个月起商品降价",
+     "购物塑料袋的规定要改了",
+     "开始卖新的购物袋",
+     "没有袋子就不能购物"
+    ]
+   },
+   "en": {
+    "scene": "A staff member is making an announcement in a supermarket.",
+    "question": "What is the announcement about?",
+    "lines": [
+     "Thank you for shopping with us today. An announcement for our customers: from next month, we will stop giving out plastic bags free and will instead charge five yen per bag. Customers who bring their own bag will, as before, get two yen off their bill. We are also selling reusable bags next to the checkouts. Thank you for your cooperation."
+    ],
+    "options": [
+     "Goods will be cheaper from next month",
+     "The rules on plastic bags are changing",
+     "New bags are on sale",
+     "You can't shop without a bag"
+    ]
+   }
+  },
+  "why": {
+   "zh": "通知的核心是塑料袋「無料でお渡しするのをやめ、一枚五円」，后面减两日元、卖购物袋都是相关的补充。",
+   "en": "The core is that plastic bags will no longer be free but 「一枚五円」; the two-yen discount and the bags on sale are follow-ups."
+  },
+  "wrong": [
+   {
+    "zh": "减两日元只针对自带袋子的人，而且「これまでどおり」，不是商品降价。",
+    "en": "The two yen off is only for bringing a bag, and 「これまでどおり」 — goods aren't getting cheaper."
+   },
+   null,
+   {
+    "zh": "卖购物袋是「なお」后面的补充，不是通知的主题。",
+    "en": "The reusable bags come after 「なお」 as an aside, not the topic."
+   },
+   {
+    "zh": "没带袋子可以花五日元买，不是不能购物。",
+    "en": "Without a bag you can buy one for five yen; you can still shop."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n3-ck-304",
+  "type": "gaiyou",
+  "scene": "ラジオで女の人が話しています。",
+  "question": "女の人は何について話していますか。",
+  "lines": [
+   [
+    "F",
+    "お昼ご飯のあと、どうしても眠くなってしまうという方、多いと思います。そんなときは、無理に起きていようとしないで、少しだけ寝てしまうのがおすすめです。そのほうが、午後の仕事や勉強に集中できるんです。ただし、時間は十五分から二十分ぐらいにしてください。それ以上寝ると、かえって頭がぼんやりしてしまいますし、夜、眠れなくなることもあります。また、横にならずに、いすに座ったまま目を閉じるだけでも、効果があるそうですよ。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "昼ご飯のあと眠くなる理由",
+   "夜ぐっすり眠るための方法",
+   "午後の仕事を早く終える方法",
+   "効果のある昼寝のしかた"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一个女人在广播里讲话。",
+    "question": "女人在讲什么？",
+    "lines": [
+     "我想很多人吃完午饭后总是会犯困。这种时候，建议不要硬撑着，干脆睡一小会儿。这样下午工作、学习反而更能集中精神。不过，时间请控制在十五到二十分钟左右。睡得比这更久，反而会头脑发昏，晚上也可能睡不着。另外，据说不躺下，坐在椅子上闭上眼睛也有效果。"
+    ],
+    "options": [
+     "吃完午饭后犯困的原因",
+     "晚上睡个好觉的方法",
+     "早点做完下午工作的方法",
+     "有效的午睡方法"
+    ]
+   },
+   "en": {
+    "scene": "A woman is talking on the radio.",
+    "question": "What is the woman talking about?",
+    "lines": [
+     "I think many of you get sleepy after lunch no matter what. At times like that, I recommend not forcing yourself to stay awake but just having a short sleep. That way you can concentrate better on work or study in the afternoon. But keep it to about fifteen to twenty minutes. Sleep longer and your head actually gets foggy, and you may not sleep at night. Also, apparently just closing your eyes sitting in your chair, without lying down, works too."
+    ],
+    "options": [
+     "Why people get sleepy after lunch",
+     "How to sleep well at night",
+     "How to finish afternoon work early",
+     "How to take an effective nap"
+    ]
+   }
+  },
+  "why": {
+   "zh": "全篇讲午饭后小睡：推荐睡一会儿、睡多久、坐着闭眼也行，都是在讲怎样午睡才有效。",
+   "en": "The whole talk is about napping after lunch — that it helps, how long, and that sitting with eyes closed also works: how to nap effectively."
+  },
+  "wrong": [
+   {
+    "zh": "她只说很多人饭后犯困，没有解释为什么困。",
+    "en": "She only says many people get sleepy; she never explains why."
+   },
+   {
+    "zh": "「夜、眠れなくなる」只是说睡太久的坏处，不是讲晚上怎么睡。",
+    "en": "「夜、眠れなくなる」 is a downside of napping too long, not advice on sleeping at night."
+   },
+   {
+    "zh": "她说小睡后下午能「集中できる」，没说能早点做完工作。",
+    "en": "She says a nap helps you 「集中できる」 in the afternoon, not finish work early."
+   },
+   null
+  ],
+  "traps": [
+   "partial-content",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n3-ck-305",
+  "type": "gaiyou",
+  "scene": "女の人と男の人が話しています。",
+  "question": "男の人はテレビがない生活についてどう思っていますか。",
+  "lines": [
+   [
+    "F",
+    "山田さん、家のテレビ、捨てちゃったんだって？"
+   ],
+   [
+    "M",
+    "うん、もう三か月になるかな。最初は、ニュースが見られなくて、ちょっと不便だったけどね。"
+   ],
+   [
+    "F",
+    "奥さんは何も言わなかったの？"
+   ],
+   [
+    "M",
+    "最初は反対してたよ。でも、今は妻のほうが気に入ってるみたい。夜、二人でゆっくり話す時間が増えたし。"
+   ],
+   [
+    "F",
+    "へえ。"
+   ],
+   [
+    "M",
+    "ニュースもスマホで見られるしね。たまに見たい番組がある時は困るけど、まあ、買い直すつもりはないよ。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "ニュースが見られないので、不便だ",
+   "妻が反対しているので、買い直したい",
+   "不便な時もあるが、ないほうがいい",
+   "家族と話す時間が減って、さびしい"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在聊天。",
+    "question": "男人觉得没有电视的生活怎么样？",
+    "lines": [
+     "山田，听说你把家里的电视扔了？",
+     "嗯，已经三个月了吧。刚开始看不了新闻，是有点不方便。",
+     "你太太什么都没说吗？",
+     "一开始是反对的。不过现在好像是她更喜欢。晚上两个人慢慢聊天的时间也多了。",
+     "哦。",
+     "新闻用手机也能看嘛。偶尔有想看的节目时会有点麻烦，不过嘛，我没打算再买。"
+    ],
+    "options": [
+     "看不了新闻，很不方便",
+     "太太反对，所以想再买一台",
+     "虽然有时不方便，但还是没有好",
+     "和家人说话的时间少了，很寂寞"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking.",
+    "question": "What does the man think about life without a TV?",
+    "lines": [
+     "Mr. Yamada, I hear you got rid of your TV?",
+     "Yeah, it's been about three months. At first it was a bit inconvenient not being able to watch the news.",
+     "Didn't your wife say anything?",
+     "She was against it at first. But now she seems to like it more than I do. We have more time to talk quietly in the evenings.",
+     "Oh.",
+     "And I can watch the news on my phone. It's a pain now and then when there's a programme I want to see, but, well, I've no plans to buy another."
+    ],
+    "options": [
+     "He can't watch the news, so it's inconvenient",
+     "His wife is against it, so he wants to buy another",
+     "It's sometimes inconvenient, but it's better without one",
+     "He has less time to talk with his family, so he's lonely"
+    ]
+   }
+  },
+  "why": {
+   "zh": "看不了新闻只是「最初」，想看节目时「困る」是小麻烦，但和妻子聊天的时间多了，最后「買い直すつもりはない」。",
+   "en": "Missing the news was only 「最初」 and wanting a programme is a small 「困る」, but there's more time to talk and he has no plan to 「買い直す」."
+  },
+  "wrong": [
+   {
+    "zh": "不方便是「最初」的事，现在新闻「スマホで見られる」。",
+    "en": "That was 「最初」; now he watches the news 「スマホで見られる」."
+   },
+   {
+    "zh": "妻子是「最初は反対」，现在反而更喜欢；他也不打算再买。",
+    "en": "His wife was against it only 「最初」 and now likes it; he won't buy another."
+   },
+   null,
+   {
+    "zh": "他说聊天的时间「増えた」，正好相反。",
+    "en": "He says their time to talk has 「増えた」 — the opposite."
+   }
+  ],
+  "traps": [
+   "attitude-combo",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n3-ck-306",
+  "type": "gaiyou",
+  "scene": "会社で部長が新しく入った社員に話しています。",
+  "question": "部長が一番伝えたいことは何ですか。",
+  "lines": [
+   [
+    "F",
+    "みなさん、入社して一か月になりますね。少しずつ仕事にも慣れてきたと思います。今日は一つだけ、話しておきたいことがあります。仕事をしていれば、失敗は誰にでもあります。私も若いころは、ずいぶんしました。大事なのは、失敗したときに、すぐに、上の人に言うことです。小さいことだから、自分で何とかしようと思って黙っていると、あとで大きな問題になることがあるんです。怒られるのが心配かもしれませんが、早く言ってもらえれば、それだけ早く対応できますからね。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "失敗しないように気をつけてほしい",
+   "失敗したらすぐに知らせてほしい",
+   "小さい失敗は自分で直してほしい",
+   "早く仕事に慣れるようにしてほしい"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在公司，部长在对新入职的员工讲话。",
+    "question": "部长最想传达的是什么？",
+    "lines": [
+     "各位，入职已经一个月了吧。我想大家也渐渐习惯工作了。今天我只想说一件事。只要在工作，谁都会失误。我年轻的时候也犯过很多。重要的是，失误的时候要马上告诉上级。觉得是小事、想自己设法解决而不说出来的话，之后有可能变成大问题。也许你们担心挨骂，但越早告诉我们，我们就能越早处理。"
+    ],
+    "options": [
+     "希望大家小心别出错",
+     "希望出错后马上报告",
+     "希望小错自己改正",
+     "希望大家早点习惯工作"
+    ]
+   },
+   "en": {
+    "scene": "At a company, a department head is talking to new employees.",
+    "question": "What does the department head most want to get across?",
+    "lines": [
+     "Everyone, it's been a month since you joined. I think you're slowly getting used to the work. Today there's just one thing I want to tell you. Anyone who works makes mistakes. I made plenty when I was young. What matters is that when you make a mistake, you tell your superior right away. If you keep quiet because it's small and you think you'll handle it yourself, it can turn into a big problem later. You may be worried about being told off, but the sooner you tell us, the sooner we can deal with it."
+    ],
+    "options": [
+     "Be careful not to make mistakes",
+     "Report mistakes right away",
+     "Fix small mistakes yourselves",
+     "Get used to the work quickly"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「大事なのは、失敗したときに、すぐに、上の人に言うことです」是中心，后面说明不说的坏处和早说的好处。",
+   "en": "The point is 「大事なのは、失敗したときに、すぐに、上の人に言うことです」; the rest explains why staying quiet is bad and telling early helps."
+  },
+  "wrong": [
+   {
+    "zh": "她说「失敗は誰にでもあります」，没有要求不出错。",
+    "en": "She says 「失敗は誰にでもあります」; she isn't asking them never to fail."
+   },
+   null,
+   {
+    "zh": "她正是说小事自己处理、不说出来会出问题，正好相反。",
+    "en": "She warns that handling small things yourself and keeping quiet causes trouble — the opposite."
+   },
+   {
+    "zh": "「仕事にも慣れてきた」只是开场白，不是她要说的那件事。",
+    "en": "「仕事にも慣れてきた」 is just the opening, not the one thing she wants to say."
+   }
+  ],
+  "traps": [
+   "twisted",
+   "detail-as-topic"
+  ]
+ },
+ {
+  "id": "n3-ck-307",
+  "type": "gaiyou",
+  "scene": "ラジオで博物館の人が話しています。",
+  "question": "博物館の人は何について話していますか。",
+  "lines": [
+   [
+    "M",
+    "私どもの博物館では、来月から、毎週土曜日だけ、夜八時まで開けることになりました。昼間は仕事や学校があって来られない、という声が多かったからです。夜は、昼間より照明を少し暗くして、落ち着いた雰囲気の中でゆっくり見ていただけるようにします。また、夜の時間には、係の者が展示について説明するツアーも行います。こちらは予約はいりませんので、どうぞお気軽にお越しください。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "博物館が夜も開くようになること",
+   "博物館で新しく始まる展示のこと",
+   "展示の説明ツアーの予約のしかた",
+   "昼間に来る客が少なくなったこと"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "博物馆的人在广播里讲话。",
+    "question": "博物馆的人在讲什么？",
+    "lines": [
+     "我们博物馆从下个月起，每周只有星期六开到晚上八点。因为很多人说白天要上班上学，来不了。晚上会把灯光调得比白天暗一点，让大家在安静的氛围里慢慢参观。另外，晚上还会有工作人员讲解展品的导览。导览不需要预约，欢迎随时来参加。"
+    ],
+    "options": [
+     "博物馆晚上也开放了",
+     "博物馆新开的展览",
+     "讲解导览的预约方法",
+     "白天来的客人变少了"
+    ]
+   },
+   "en": {
+    "scene": "A person from a museum is talking on the radio.",
+    "question": "What is the museum person talking about?",
+    "lines": [
+     "From next month, our museum will stay open until eight in the evening, on Saturdays only. Many people told us they couldn't come during the day because of work or school. In the evening the lights will be a little dimmer than in the daytime, so you can take your time in a calm atmosphere. In the evening there will also be tours where staff explain the exhibits. No booking is needed, so please feel free to come along."
+    ],
+    "options": [
+     "That the museum will open in the evening too",
+     "A new exhibition starting at the museum",
+     "How to book the guided tour",
+     "That fewer people come in the daytime"
+    ]
+   }
+  },
+  "why": {
+   "zh": "开头就说「土曜日だけ、夜八時まで開ける」，后面的理由、灯光、导览都是在介绍晚间开放。",
+   "en": "He opens with 「土曜日だけ、夜八時まで開ける」; the reason, the lighting and the tours all describe the evening opening."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "他讲的是现有展品的讲解导览，没有说有新的展览。",
+    "en": "He mentions tours of the exhibits, not a new exhibition."
+   },
+   {
+    "zh": "他说「予約はいりません」，不需要预约。",
+    "en": "He says 「予約はいりません」 — no booking needed."
+   },
+   {
+    "zh": "他说的是很多人白天来不了，是晚间开放的理由，不是在讲白天客人变少。",
+    "en": "People saying they can't come in the day is the reason for evening hours, not a report of falling numbers."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n3-ck-308",
+  "type": "gaiyou",
+  "scene": "女の人と男の人が、新しくできたショッピングセンターについて話しています。",
+  "question": "男の人はショッピングセンターについてどう思っていますか。",
+  "lines": [
+   [
+    "F",
+    "川の向こうにできたショッピングセンター、もう行った？"
+   ],
+   [
+    "M",
+    "うん、週末に行ってきた。何でもそろってて、便利だね。"
+   ],
+   [
+    "F",
+    "でしょう？　私なんか、仕事の帰りに毎日寄ってるよ。"
+   ],
+   [
+    "M",
+    "ただ、あそこができてから、商店街の八百屋さんとか本屋さんとか、何軒か閉まっちゃったでしょ。"
+   ],
+   [
+    "F",
+    "ああ、そうだね。"
+   ],
+   [
+    "M",
+    "子どものころから通ってた店もあったから、ちょっとさびしいんだよね。便利になったのはいいんだけどさ。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "便利なので、毎日行きたいと思っている",
+   "品物が少ないので、商店街のほうがいい",
+   "商店街に人が増えて、にぎやかになった",
+   "便利だが、古い店がなくなってさびしい"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在谈论新开的购物中心。",
+    "question": "男人觉得购物中心怎么样？",
+    "lines": [
+     "河对面新开的购物中心，你去过了吗？",
+     "嗯，周末去了。什么都有，挺方便的。",
+     "对吧？我每天下班都顺路去。",
+     "不过，自从那里开了以后，商店街的蔬菜店啊书店啊，关了好几家吧。",
+     "啊，是啊。",
+     "有些店我从小就常去，所以有点失落。方便了倒是好事。"
+    ],
+    "options": [
+     "很方便，想每天去",
+     "东西少，还是商店街好",
+     "商店街人多了，热闹起来了",
+     "方便，但老店没了，有点失落"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking about a new shopping centre.",
+    "question": "What does the man think of the shopping centre?",
+    "lines": [
+     "Have you been to the new shopping centre across the river yet?",
+     "Yeah, I went at the weekend. It has everything — it's convenient.",
+     "Right? I drop in every day on my way home from work.",
+     "But since it opened, a few places in the shopping street have closed, like the greengrocer and the bookshop.",
+     "Oh, that's true.",
+     "Some of them I'd been going to since I was a kid, so I feel a bit sad. It's good that things are more convenient, though."
+    ],
+    "options": [
+     "It's convenient, so he wants to go every day",
+     "It has few goods, so the shopping street is better",
+     "The shopping street has got busier and livelier",
+     "It's convenient, but he's sad the old shops are gone"
+    ]
+   }
+  },
+  "why": {
+   "zh": "他先说「何でもそろってて、便利」，然后说商店街的店关了「ちょっとさびしい」，两面都包括的只有这一项。",
+   "en": "He finds it 「何でもそろってて、便利」 but is 「ちょっとさびしい」 about the closed shops; only this option has both."
+  },
+  "wrong": [
+   {
+    "zh": "每天去的是女人，不是男人。",
+    "en": "It's the woman who goes every day, not him."
+   },
+   {
+    "zh": "他说「何でもそろって」，东西不少。",
+    "en": "He says 「何でもそろって」 — it has plenty."
+   },
+   {
+    "zh": "商店街的店「閉まっちゃった」，是变冷清了，不是热闹了。",
+    "en": "Shops in the street 「閉まっちゃった」 — it's quieter, not livelier."
+   },
+   null
+  ],
+  "traps": [
+   "attitude-combo",
+   "other-option-attribute"
+  ]
+ },
+ {
+  "id": "n3-ck-309",
+  "type": "gaiyou",
+  "scene": "市の放送で女の人が話しています。",
+  "question": "何についてのお知らせですか。",
+  "lines": [
+   [
+    "F",
+    "こちらは、みどり市役所です。市民のみなさまにお知らせします。今週の日曜日に予定していた川の掃除は、雨が続いて川の水が多くなっているため、来週の日曜日に変更します。時間と集合場所は変わりません。朝九時に、みどり橋の下に集まってください。ゴミを入れる袋と手袋は市で用意しますので、持ってこなくてもかまいません。飲み物は、各自でお持ちください。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "掃除の集合場所が変わったこと",
+   "川の掃除をする日が変わったこと",
+   "掃除のときに持っていく物のこと",
+   "掃除の始まる時間が変わったこと"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "市里的广播中，一个女人在讲话。",
+    "question": "这是关于什么的通知？",
+    "lines": [
+     "这里是绿市市政府。通知各位市民：原定本周日的清扫河道活动，因连日下雨、河水上涨，改到下周日。时间和集合地点不变。请早上九点到绿桥下面集合。装垃圾的袋子和手套由市里准备，不用自己带。饮料请各自携带。"
+    ],
+    "options": [
+     "清扫的集合地点变了",
+     "清扫河道的日子变了",
+     "清扫时要带的东西",
+     "清扫开始的时间变了"
+    ]
+   },
+   "en": {
+    "scene": "A woman is speaking over the city public announcement system.",
+    "question": "What is the announcement about?",
+    "lines": [
+     "This is Midori City Hall with a notice for residents. The river clean-up planned for this Sunday is moved to next Sunday, because the continuing rain has raised the river. The time and meeting place are unchanged: please gather under Midori Bridge at nine in the morning. The city will provide rubbish bags and gloves, so you don't need to bring them. Please bring your own drinks."
+    ],
+    "options": [
+     "That the meeting place for the clean-up has changed",
+     "That the day of the river clean-up has changed",
+     "What to bring to the clean-up",
+     "That the start time of the clean-up has changed"
+    ]
+   }
+  },
+  "why": {
+   "zh": "通知的主要内容是本周日的清扫「来週の日曜日に変更します」，其余是不变的时间地点和带什么的补充。",
+   "en": "The main news is that this Sunday's clean-up is 「来週の日曜日に変更します」; the rest repeats what stays the same and what to bring."
+  },
+  "wrong": [
+   {
+    "zh": "她明说「時間と集合場所は変わりません」。",
+    "en": "She says plainly 「時間と集合場所は変わりません」."
+   },
+   null,
+   {
+    "zh": "袋子、手套、饮料只是最后的补充说明，不是通知的主题。",
+    "en": "Bags, gloves and drinks are follow-up details, not the topic."
+   },
+   {
+    "zh": "时间也「変わりません」，还是早上九点。",
+    "en": "The time is also 「変わりません」 — still nine a.m."
+   }
+  ],
+  "traps": [
+   "twisted",
+   "detail-as-topic"
+  ]
+ }
+]

@@ -149,15 +149,119 @@
 
   // Desktop only (CSS hides it at ≤768px, where the sidebar toolbar + modal
   // take over): one-click search / AI / theme / furigana / language, top right.
+  // ─── Share ───
+  // jpShare({ url, title, text, src, anchor }): the system share sheet on touch
+  // devices, otherwise a small menu (copy link, X, Weibo, Facebook, LINE) under
+  // `anchor`. Shared links carry utm_source=share so visits show up in GA.
+  function track(n, p) { if (window.gaEvent) window.gaEvent(n, p); }
+  function pageUrl() {
+    var c = document.querySelector('link[rel="canonical"]');
+    return c ? c.href : location.origin + location.pathname;
+  }
+  function closeShare() { var m = document.getElementById('share-menu'); if (m) m.remove(); }
+  function jpShare(o) {
+    o = o || {};
+    var en = isEnUi(), base = o.url || pageUrl();
+    var url = base + (base.indexOf('?') < 0 ? '?' : '&') + 'utm_source=share';
+    var title = o.title || document.title, text = o.text || '';
+    var src = o.src || 'page', page = location.pathname;
+    var wechat = /MicroMessenger/i.test(navigator.userAgent);
+    if (!wechat && navigator.share && window.matchMedia && matchMedia('(pointer: coarse)').matches) {
+      track('share_open', { src: src, how: 'native', page: page });
+      navigator.share({ title: title, text: text, url: url })
+        .then(function () { track('share', { src: src, method: 'native', page: page }); })
+        .catch(function () {});
+      return;
+    }
+    if (document.getElementById('share-menu')) { closeShare(); return; }
+    track('share_open', { src: src, how: wechat ? 'wechat' : 'menu', page: page });
+    var desc = (document.querySelector('meta[name="description"]') || {}).content || '';
+    var msg = (text ? text + ' ' : '') + url;
+    var blurb = text ? msg : title + (desc ? '\n' + desc : '') + '\n' + url, e = encodeURIComponent;
+    var N = {
+      x: ['X', 'https://x.com/intent/post?text=' + e(text || title) + '&url=' + e(url)],
+      facebook: ['Facebook', 'https://www.facebook.com/sharer/sharer.php?u=' + e(url)],
+      line: ['LINE', 'https://social-plugins.line.me/lineit/share?url=' + e(url)],
+      reddit: ['Reddit', 'https://www.reddit.com/submit?url=' + e(url) + '&title=' + e(title)]
+    };
+    // Inside WeChat its own ··· menu is the way to share (to a chat or Moments).
+    var items = wechat ? ['hint', 'copy'] : en ? ['copy', 'x', 'facebook', 'line', 'reddit'] : ['copy', 'qr', 'text', 'x'];
+    var m = document.createElement('div');
+    m.id = 'share-menu';
+    m.setAttribute('role', 'menu');
+    m.innerHTML = items.map(function (k) {
+      if (k === 'hint') return '<p class="sm-hint">' + (en ? 'Tap ··· at the top right → Send to chat / Share to Moments' : '点右上角「···」→ 发送给朋友 / 分享到朋友圈') + '</p>';
+      if (k === 'copy') return '<button type="button" data-net="copy">🔗 ' + (en ? 'Copy link' : '复制链接') + '</button>';
+      if (k === 'qr') return '<button type="button" data-net="qr">微信扫一扫（发朋友圈）</button>';
+      if (k === 'text') return '<button type="button" data-net="text">复制分享文案（小红书 / 朋友圈）</button>';
+      return '<a href="' + N[k][1] + '" target="_blank" rel="noopener" data-net="' + k + '">' + N[k][0] + '</a>';
+    }).join('');
+    document.body.appendChild(m);
+    var place = function () {
+      var r = (o.anchor || document.body).getBoundingClientRect(), w = m.offsetWidth;
+      m.style.top = Math.max(8, Math.min(r.bottom + 6, window.innerHeight - m.offsetHeight - 8)) + 'px';
+      m.style.left = Math.max(8, r.left + w <= window.innerWidth - 8 ? r.left : r.right - w) + 'px';
+    };
+    place();
+    // Copy text: Clipboard API, then the old execCommand route, then show it to copy by hand.
+    var copy = function (b, str, label) {
+      var done = function () { b.textContent = '✓ ' + (en ? 'Copied' : label || '已复制'); b.classList.add('sm-ok'); setTimeout(closeShare, 1100); };
+      var legacy = function () {
+        var ta = document.createElement('textarea'), ok = false;
+        ta.value = str; ta.setAttribute('readonly', ''); ta.style.cssText = 'position:fixed;opacity:0';
+        document.body.appendChild(ta); ta.select();
+        try { ok = document.execCommand('copy'); } catch (x) {}
+        ta.remove();
+        if (ok) return done();
+        b.outerHTML = '<textarea readonly rows="3" class="sm-manual"></textarea>';
+        var box = m.querySelector('.sm-manual'); box.value = str; box.focus(); box.select();
+      };
+      if (navigator.clipboard) navigator.clipboard.writeText(str).then(done, legacy); else legacy();
+    };
+    var showQr = function () {
+      var draw = function () {
+        var q = window.qrcode(0, 'M'); q.addData(url); q.make();
+        m.innerHTML = '<div class="sm-qr">' + q.createSvgTag({ cellSize: 4, margin: 2, scalable: true }) + '</div>' +
+          '<p class="sm-hint">用微信扫一扫打开，再点右上角「···」→ 分享到朋友圈 / 发送给朋友</p>';
+        place();
+      };
+      if (window.qrcode) return draw();
+      var sc = document.createElement('script');
+      sc.src = '/qrcode.js'; sc.onload = draw;
+      sc.onerror = function () { m.innerHTML = '<p class="sm-hint">二维码载入失败，请复制链接发到微信。</p>'; };
+      document.head.appendChild(sc);
+    };
+    m.addEventListener('click', function (ev) {
+      ev.stopPropagation();
+      var b = ev.target.closest('[data-net]');
+      if (!b) return;
+      var net = b.getAttribute('data-net');
+      track('share', { src: src, method: net, page: page });
+      if (net === 'copy') copy(b, msg);
+      else if (net === 'text') copy(b, blurb, '已复制，去粘贴吧');
+      else if (net === 'qr') showQr();
+      else setTimeout(closeShare, 0);
+    });
+    setTimeout(function () {
+      document.addEventListener('click', function off(ev) {
+        if (!m.contains(ev.target)) { closeShare(); document.removeEventListener('click', off); }
+      });
+    }, 0);
+  }
+  window.jpShare = jpShare;
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeShare(); });
+
   function buildTopBar() {
     if (document.getElementById('top-controls')) return;
     var hasSearch = document.getElementById('search-btn');
-    var hasAi = document.querySelector('article.lesson') && document.getElementById('ai-btn');
+    // Any page that loads the AI panel (lessons, practice pages, and a general mode elsewhere).
+    var hasAi = document.querySelector('script[src*="ai-assistant.js"]') && document.getElementById('ai-btn');
     var hasRuby = document.querySelector('.lesson, #content.home');
     var bar = document.createElement('div');
     bar.id = 'top-controls';
     bar.innerHTML =
       (hasSearch ? '<button type="button" class="tc-pill tc-icon" data-proxy="search-btn" aria-label="搜索 / Search" title="搜索 / Search ( / )">' + hasSearch.innerHTML + '</button>' : '') +
+      (document.getElementById('share-btn') ? '<button type="button" class="tc-pill tc-icon js-share" aria-label="分享 / Share" title="分享 / Share">' + document.getElementById('share-btn').innerHTML + '</button>' : '') +
       (hasAi ? '<button type="button" class="tc-pill tc-icon" id="tc-ai" data-proxy="ai-btn" aria-label="问 AI / Ask AI" title="问 AI / Ask AI">' + document.getElementById('ai-btn').innerHTML + '</button>' : '') +
       '<button type="button" class="tc-pill tc-icon js-theme-btn" aria-label="主题 / Theme" aria-haspopup="true" aria-expanded="false"></button>' +
       (hasRuby ? '<label class="tc-pill"><input type="checkbox" class="js-ruby-toggle" checked> <span class="lang-zh">显示读音</span><span class="lang-en">Furigana</span></label>' : '') +
@@ -171,6 +275,8 @@
       });
     });
     wireControls(bar);
+    var sb = bar.querySelector('.js-share');
+    if (sb) sb.addEventListener('click', function (e) { e.stopPropagation(); jpShare({ src: 'top', anchor: sb }); });
   }
 
   function buildUI() {
@@ -241,7 +347,11 @@
     });
   }
 
-  function init() { bindBtn(); buildTopBar(); }
+  function init() {
+    bindBtn(); buildTopBar();
+    var sb = document.getElementById('share-btn');
+    if (sb) sb.addEventListener('click', function (e) { e.stopPropagation(); jpShare({ src: 'toolbar', anchor: sb }); });
+  }
   if (document.readyState !== 'loading') init();
   else document.addEventListener('DOMContentLoaded', init);
 })();

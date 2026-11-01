@@ -1,0 +1,698 @@
+[
+ {
+  "id": "n2-m1-ck-501",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "そんなに慌てて送ったら、宛先、間違えかねないよ。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "はい、さっき間違えずに送っておきました。",
+   "そうですね。もう一度確かめてから送ります。",
+   "じゃあ、急いで送っていただけますか。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "那么慌慌张张地发，可能会把收件人弄错哦。"
+    ],
+    "options": [
+     "是的，刚才已经没弄错地发出去了。",
+     "也是。我再确认一遍再发。",
+     "那能请您赶紧发一下吗？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "If you send it in such a rush, you might get the address wrong."
+    ],
+    "options": [
+     "Yes, I sent it just now without any mistakes.",
+     "You're right. I'll check it again before sending.",
+     "Then could you send it quickly for me?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜かねない」是提醒可能出错。接受提醒、说再确认一次再发，最自然。",
+   "en": "「間違えかねない」 warns he might make a mistake; agreeing to check again before sending fits."
+  },
+  "wrong": [
+   {
+    "zh": "他还没发，说「送っておきました」跟情况矛盾。",
+    "en": "He hasn't sent it yet, so \"I've sent it\" contradicts the situation."
+   },
+   null,
+   {
+    "zh": "发邮件的是他自己，反过来请对方赶紧发，立场和意思都不对。",
+    "en": "He's the one sending; asking her to send it quickly reverses the roles and ignores the warning."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-502",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "お忙しいところ、わざわざお時間をいただいて、恐縮です。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "いえいえ、こちらこそ、お越しいただきまして。",
+   "ええ、今週は本当にとても忙しかったんですよ。",
+   "では、少しお時間をいただいてもよろしいですか。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "百忙之中特意抽出时间，实在过意不去。"
+    ],
+    "options": [
+     "哪里哪里，我才要谢谢您特意过来。",
+     "是啊，这周真的特别忙。",
+     "那可以占用您一点时间吗？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I'm very grateful you've made time for me when you're so busy."
+    ],
+    "options": [
+     "Not at all — thank you for coming all this way.",
+     "Yes, this week has been really, really busy.",
+     "Then may I take a little of your time?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「お時間をいただいて、恐縮です」是来访者的客套话。回答「こちらこそ、お越しいただきまして」最自然。",
+   "en": "「お時間をいただいて、恐縮です」 is a visitor's courtesy; 「こちらこそ、お越しいただきまして」 is the natural reply."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "把客套话当成了真的在问忙不忙，照搬了「忙しい」。",
+    "en": "Takes the courtesy literally and just repeats 「忙しい」."
+   },
+   {
+    "zh": "这是来访者说的话，立场反了。",
+    "en": "That's the visitor's line — reversed roles."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-503",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "連絡先がわからないんじゃ、知らせようがないなあ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "じゃあ、すぐ知らせてあげてください。",
+   "うん、連絡してくれて、ありがとう。",
+   "名簿に載ってないか、事務に聞いてみたら？"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "不知道联系方式的话，就没办法通知了啊。"
+    ],
+    "options": [
+     "那请马上通知他吧。",
+     "嗯，谢谢你联系我。",
+     "问问办公室名册上有没有？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "If we don't have their contact details, there's no way to let them know."
+    ],
+    "options": [
+     "Then please let them know right away.",
+     "Yeah, thanks for getting in touch.",
+     "Why not ask the office if they're on the list?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜ようがない」是“没办法做”。建议去查名册，帮他找联系方式，最自然。",
+   "en": "「知らせようがない」 means there's no way to tell them; suggesting he check the list with the office fits."
+  },
+  "wrong": [
+   {
+    "zh": "他说没法通知，再叫他马上通知，答非所问。",
+    "en": "He just said he can't tell them, so \"tell them now\" ignores that."
+   },
+   {
+    "zh": "他还没联系上任何人，道谢跟情况矛盾。",
+    "en": "He hasn't contacted anyone, so thanking him makes no sense."
+   },
+   null
+  ],
+  "traps": [
+   "contradiction",
+   "intent"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-504",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "来週の飲み会、行けたら行くね。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "よかった。じゃあ、幹事をお願いしてもいい？",
+   "えっ、飲み会はもう終わっちゃったよ。",
+   "うん、忙しかったら無理しないでね。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "下周的聚餐，能去的话就去哦。"
+    ],
+    "options": [
+     "太好了。那能请你当召集人吗？",
+     "啊？聚餐已经结束了。",
+     "嗯，忙的话别勉强哦。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Next week's drinks — I'll come if I can."
+    ],
+    "options": [
+     "Great. Then could you organise it?",
+     "What? The party's already over.",
+     "Sure, don't push it if you're busy."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「行けたら行く」表示不一定能去。回答「無理しないで」体谅对方，最自然。",
+   "en": "「行けたら行く」 means she may not make it; \"don't push it if you're busy\" fits."
+  },
+  "wrong": [
+   {
+    "zh": "她只是说可能去，请她当召集人是把客套话当成了积极参加。",
+    "en": "She's only maybe coming; asking her to organise takes it as eager commitment."
+   },
+   {
+    "zh": "她说的是下周的聚餐，「もう終わった」时间不对。",
+    "en": "She said next week, so \"it's over\" is the wrong time."
+   },
+   null
+  ],
+  "traps": [
+   "intent",
+   "tense"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-505",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "さっきの会議、部長、言いたい放題だったね。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "ほんと。こっちの話は全然聞いてくれないし。",
+   "うん、私も言いたいことはちゃんと言えたよ。",
+   "え、部長、今日の会議には来なかったの？"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "刚才的会，部长真是想说什么就说什么啊。"
+    ],
+    "options": [
+     "真的。我们说的一点都不听。",
+     "嗯，我想说的也都好好说了。",
+     "啊，部长没来今天的会吗？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "In that meeting just now, the manager really said whatever he liked, didn't he?"
+    ],
+    "options": [
+     "Seriously. And he wouldn't listen to us at all.",
+     "Yeah, I got to say what I wanted to, too.",
+     "What, the manager didn't come to today's meeting?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「言いたい放題」是批评部长只顾自己说。附和并补充「こっちの話は全然聞いてくれない」最自然。",
+   "en": "「言いたい放題」 criticises the manager for saying whatever he liked; agreeing that he wouldn't listen fits."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "照搬「言いたい」，但他说的是部长一个人说个不停，不是大家都说了。",
+    "en": "Reuses 「言いたい」, but he means only the manager talked."
+   },
+   {
+    "zh": "部长在会上说了很多，「来なかった」跟情况矛盾。",
+    "en": "The manager talked a lot in the meeting, so he was obviously there."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-506",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "あの、このシャツのしみなんですけど、取れますかね。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "はい、では、こちらで大切に取っておきますね。",
+   "試してみますが、全部は難しいかもしれません。",
+   "ええ、ここにしみがついてしまったんですよ。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "那个，这件衬衫上的污渍，能去掉吗？"
+    ],
+    "options": [
+     "好的，那我们这边好好帮您留着。",
+     "我们试试看，不过可能很难全部去掉。",
+     "是啊，沾上污渍了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Um, this stain on my shirt — do you think it'll come out?"
+    ],
+    "options": [
+     "Yes, we'll keep it safe for you, then.",
+     "We'll try, but it may not all come out.",
+     "Yes, it's got a stain on it."
+    ]
+   }
+  },
+  "why": {
+   "zh": "在洗衣店问「取れますかね」是问污渍能不能洗掉。店员说试试看但不保证完全去掉，最自然。",
+   "en": "At the cleaner's, 「取れますかね」 asks whether the stain will come out; \"we'll try, but maybe not completely\" fits."
+  },
+  "wrong": [
+   {
+    "zh": "把「取れる」（去掉）听成了「取っておく」（留着），照搬了词。",
+    "en": "Confuses 「取れる」 (come out) with 「取っておく」 (keep aside)."
+   },
+   null,
+   {
+    "zh": "沾上污渍是客人说的事，店员这么说立场反了，也没回答问题。",
+    "en": "That's the customer's side of things, and it doesn't answer the question."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-507",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "来月から、山本さんが大阪支社に移られることになりました。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "そうですか。寂しくなりますね。",
+   "じゃあ、大阪から来られるんですね。",
+   "じゃあ、来月はお休みなんですね。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "从下个月起，山本要调到大阪分公司了。"
+    ],
+    "options": [
+     "是吗。会冷清不少啊。",
+     "那他是从大阪过来的吧。",
+     "那他下个月休息吧。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "From next month, Yamamoto-san will be transferring to the Osaka branch."
+    ],
+    "options": [
+     "Is that so? We'll miss him.",
+     "So he's coming here from Osaka, then.",
+     "So he'll be off next month, then."
+    ]
+   }
+  },
+  "why": {
+   "zh": "同事要调走，回答「寂しくなりますね」是自然的反应。",
+   "en": "A colleague is being transferred away; 「寂しくなりますね」 is the natural response."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "山本是调去大阪，不是从大阪来，方向反了。",
+    "en": "He's moving to Osaka, not coming from there."
+   },
+   {
+    "zh": "「移られる」是调动，不是休假。",
+    "en": "「移られる」 means a transfer, not time off."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-508",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "小林くん、今度の企画のリーダー、任されたんだって？　すごいじゃん。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "はい、ぜひ小林さんにお任せしたいです。",
+   "ええ、本当にすごく楽しかったです。",
+   "いえ、うまくやれるか不安でいっぱいですよ。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "小林，听说这次的企划交给你当负责人了？很厉害嘛。"
+    ],
+    "options": [
+     "是的，很想交给小林您来做。",
+     "是的，真的非常开心。",
+     "哪里，我心里全是担心，不知道能不能做好。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Kobayashi, I hear you've been made leader of the new project? That's great."
+    ],
+    "options": [
+     "Yes, I'd really like to leave it to you, Kobayashi.",
+     "Yes, it was really great fun.",
+     "Not really — I'm full of worries about whether I can pull it off."
+    ]
+   }
+  },
+  "why": {
+   "zh": "被夸「すごいじゃん」时，谦虚地说自己很不安是自然的回应。",
+   "en": "Answering 「すごいじゃん」 modestly — saying he's worried he can't pull it off — is natural."
+  },
+  "wrong": [
+   {
+    "zh": "小林就是他自己，「小林さんにお任せしたい」说话人立场乱了。",
+    "en": "He is Kobayashi; \"I'd like to leave it to Kobayashi\" mixes up who's who."
+   },
+   {
+    "zh": "企划才刚开始，「楽しかった」用了过去，时态不对。",
+    "en": "The project is only starting; \"it was fun\" is the wrong tense."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "tense"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-509",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "部長に相談するなら、今のうちだよ。午後から出張だから。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "じゃあ、午後になってから行ってきます。",
+   "ありがとうございます。すぐ行ってきます。",
+   "部長、出張から戻られたんですね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "要找部长商量的话，就趁现在。他下午开始出差。"
+    ],
+    "options": [
+     "那我下午再去。",
+     "谢谢。我马上去。",
+     "部长出差回来了啊。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "If you want to talk to the manager, now's your chance. He's away on business from this afternoon."
+    ],
+    "options": [
+     "Then I'll go this afternoon.",
+     "Thanks. I'll go right away.",
+     "So the manager's back from his trip."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「今のうちだよ」是提醒她趁部长还在赶紧去。道谢后说马上去，最自然。",
+   "en": "「今のうちだよ」 tells her to go while the manager is still here; \"I'll go right away\" fits."
+  },
+  "wrong": [
+   {
+    "zh": "部长下午就出差了，下午去就见不到了。",
+    "en": "The manager leaves this afternoon, so going then would miss him."
+   },
+   null,
+   {
+    "zh": "部长是下午才要出发，不是刚回来，时态不对。",
+    "en": "He's about to leave, not just back — wrong tense."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "tense"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-510",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "この雨じゃ、花火大会、中止にならないとも限らないね。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "よかった。じゃあ、必ずやるんだね。",
+   "念のため、ホームページを見てから出ようか。",
+   "うん、中止になったから、行かなくていいね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这么大的雨，烟花大会说不定会取消。"
+    ],
+    "options": [
+     "太好了。那就是一定会办吧。",
+     "保险起见，看一下官网再出门吧。",
+     "嗯，已经取消了，不用去了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "In this rain, the fireworks might well be cancelled."
+    ],
+    "options": [
+     "Great. So it's definitely on, then.",
+     "Just in case, shall we check the website before we go?",
+     "Yeah, it's been cancelled, so we don't need to go."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜ないとも限らない」是“说不定会”。建议先看官网确认，最自然。",
+   "en": "「中止にならないとも限らない」 means it might be cancelled; checking the website first fits."
+  },
+  "wrong": [
+   {
+    "zh": "她是说可能取消，理解成「必ずやる」正好说反了。",
+    "en": "She means it might be cancelled — \"definitely on\" is the opposite."
+   },
+   null,
+   {
+    "zh": "还没确定取消，「中止になった」时态不对。",
+    "en": "Nothing has been decided yet — wrong tense."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "tense"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-511",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "今日はどのようになさいますか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "はい、では、そのようにいたします。",
+   "じゃあ、そうしていただけますか。",
+   "前髪だけ、少し短くしてください。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "今天想怎么弄？"
+    ],
+    "options": [
+     "好的，那就按那样给您弄。",
+     "那就请您那样弄吧。",
+     "只把刘海剪短一点。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "What would you like done today?"
+    ],
+    "options": [
+     "Certainly, I'll do it that way.",
+     "Then could you do it like that?",
+     "Just trim the fringe a little, please."
+    ]
+   }
+  },
+  "why": {
+   "zh": "美发店的人问「どのようになさいますか」，是问客人想剪成什么样。具体说出要求最自然。",
+   "en": "At the hairdresser's, 「どのようになさいますか」 asks what the customer wants; giving a specific request fits."
+  },
+  "wrong": [
+   {
+    "zh": "这是美发师接受要求时说的话，立场反了。",
+    "en": "That's what the stylist says when accepting a request — reversed roles."
+   },
+   {
+    "zh": "对方还没提出任何方案，「そうして」不知指什么。",
+    "en": "He hasn't proposed anything, so \"like that\" refers to nothing."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-512",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "あの人の説明って、聞けば聞くほど、わかんなくなるんだよね。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "だよね。話があちこち飛ぶっていうか。",
+   "うん、聞けば聞くほどよくわかるよね。",
+   "え、まだ一回も説明聞いてないの？"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "那个人的说明啊，越听越糊涂。"
+    ],
+    "options": [
+     "就是啊。说话东一句西一句的。",
+     "嗯，越听越明白。",
+     "啊，你一次说明都还没听过？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "The more I listen to that guy's explanations, the less I understand."
+    ],
+    "options": [
+     "I know. He kind of jumps all over the place.",
+     "Yeah, the more you listen, the clearer it gets.",
+     "What, you haven't heard his explanation even once?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「聞けば聞くほど、わかんなくなる」是抱怨说明难懂。附和并说他说话东一句西一句，最自然。",
+   "en": "「聞けば聞くほど、わかんなくなる」 complains the explanations are confusing; agreeing that he jumps around fits."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "照搬了「聞けば聞くほど」，意思却说反了。",
+    "en": "Reuses 「聞けば聞くほど」 but says the opposite."
+   },
+   {
+    "zh": "他说越听越糊涂，显然听过，「一回も聞いてない」矛盾。",
+    "en": "He's clearly listened many times, so this contradicts him."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "contradiction"
+  ]
+ }
+]

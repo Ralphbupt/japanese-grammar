@@ -1,0 +1,587 @@
+[
+  {
+    "id": "n5-l06-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson06#1"
+    ],
+    "difficulty": 1,
+    "stem": "今月は お金が ないから、何も（　）。",
+    "options": [
+      "買わない",
+      "買う",
+      "買った",
+      "買いたい"
+    ],
+    "answer": 0,
+    "full": "今月は お金が ないから、何も 買わない。",
+    "kj": "今月はお金がないから、何も買わない。",
+    "tr": {
+      "zh": "这个月没钱，所以什么都不买。",
+      "en": "I have no money this month, so I won't buy anything."
+    },
+    "why": {
+      "zh": "「何も」后面要用否定。「買う」是「う」结尾的一类动词，ない形是「買わない」。",
+      "en": "「何も」 needs a negative. 「買う」 ends in 「う」, so its ない-form is 「買わない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「何も」后面要接否定，「何も 買う」不成立；而且没钱也不会买。",
+        "en": "「何も」 needs a negative; 「何も 買う」 isn't possible — and with no money you wouldn't buy."
+      },
+      {
+        "zh": "「何も」后面要接否定，「何も 買った」不成立。",
+        "en": "「何も」 needs a negative; 「何も 買った」 isn't possible."
+      },
+      {
+        "zh": "「何も」后面要接否定，「何も 買いたい」不成立。",
+        "en": "「何も」 needs a negative; 「何も 買いたい」 isn't possible."
+      }
+    ]
+  },
+  {
+    "id": "n5-l06-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson06#1"
+    ],
+    "difficulty": 1,
+    "stem": "A「今日、時間 ある？」\nB「ごめん、今日は 時間が（　）。」",
+    "options": [
+      "ない",
+      "ある",
+      "あった",
+      "なくない"
+    ],
+    "answer": 0,
+    "full": "A「今日、時間 ある？」 B「ごめん、今日は 時間が ない。」",
+    "kj": "A「今日、時間ある？」\nB「ごめん、今日は時間がない。」",
+    "tr": {
+      "zh": "A：今天有时间吗？ B：抱歉，今天没时间。",
+      "en": "A: Got time today? B: Sorry, I don't have time today."
+    },
+    "why": {
+      "zh": "「ごめん」说明是否定回答。「ある」的ない形是特例，直接变成「ない」。",
+      "en": "「ごめん」 signals a no. The ない-form of 「ある」 is irregular: just 「ない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ある」是“有时间”，和前面的「ごめん」（对不起）矛盾。",
+        "en": "「ある」 (I do have time) contradicts 「ごめん」 (sorry)."
+      },
+      {
+        "zh": "「あった」是过去式“有过”，A 问的是今天还有没有时间，而且和「ごめん」矛盾。",
+        "en": "「あった」 is past (\"had\"); A is asking about time today, and it contradicts 「ごめん」."
+      },
+      {
+        "zh": "「なくない」是“并不是没有”，是双重否定，意思反了。",
+        "en": "「なくない」 is a double negative (\"it's not that there isn't\") — the opposite meaning."
+      }
+    ]
+  },
+  {
+    "id": "n5-l06-003",
+    "type": "narabe",
+    "refs": [
+      "lesson06#1"
+    ],
+    "difficulty": 2,
+    "stem": "A「おねえさんも コーヒー、飲む？」\nB「ううん。あねは コーヒーを [_] [★] [_] [_]。」",
+    "options": [
+      "人",
+      "飲ま",
+      "だよ",
+      "ない"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "A「おねえさんも コーヒー、飲む？」 B「ううん。あねは コーヒーを 飲まない 人だよ。」",
+    "kj": "A「お姉さんもコーヒー、飲む？」\nB「ううん。姉はコーヒーを飲まない人だよ。」",
+    "tr": {
+      "zh": "A：你姐姐也喝咖啡吗？ B：不，我姐姐是不喝咖啡的人。",
+      "en": "A: Does your sister drink coffee too? B: No, she's someone who doesn't drink coffee."
+    },
+    "why": {
+      "zh": "「飲む」的ない形是「飲まない」，简体形可以直接修饰名词「人」：飲ま ない 人 だよ。★ 是第二格「ない」。",
+      "en": "「飲む」 → 「飲まない」, and the plain form can modify the noun 「人」 directly: 飲ま ない 人 だよ. The ★ is 「ない」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l06-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson06#2"
+    ],
+    "difficulty": 1,
+    "stem": "あしたは だいじな しけんが あります。こんやは たくさん べんきょうし（　）。",
+    "options": [
+      "なければ なりません",
+      "なくても いいです",
+      "ても いいです",
+      "ないで ください"
+    ],
+    "answer": 0,
+    "full": "あしたは だいじな しけんが あります。こんやは たくさん べんきょうしなければ なりません。",
+    "kj": "明日は大事な試験があります。今夜はたくさん勉強しなければなりません。",
+    "tr": {
+      "zh": "明天有重要的考试。今晚必须好好学习。",
+      "en": "I have an important exam tomorrow. I have to study a lot tonight."
+    },
+    "why": {
+      "zh": "明天有重要考试，所以今晚“必须”多学习，用「〜なければなりません」。",
+      "en": "An important exam tomorrow means you must study tonight: 「〜なければなりません」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜なくてもいいです」是“不用学习”，和“明天有重要的考试”矛盾。",
+        "en": "「〜なくてもいいです」 means you don't need to study — contradicts the important exam."
+      },
+      {
+        "zh": "「〜てもいいです」是“可以学习”，只是允许，不符合“有考试、要多学”的语气。",
+        "en": "「〜てもいいです」 merely permits studying; it doesn't fit \"important exam, study a lot\"."
+      },
+      {
+        "zh": "「〜ないでください」是请别人不要学习，和上下文矛盾。",
+        "en": "「〜ないでください」 asks someone not to study — the opposite of the context."
+      }
+    ]
+  },
+  {
+    "id": "n5-l06-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson06#2"
+    ],
+    "difficulty": 2,
+    "stem": "いしゃが 言いましたから、毎日 この くすりを（　）なりません。",
+    "options": [
+      "飲まなければ",
+      "飲まないで",
+      "飲まなくて",
+      "飲まなくても"
+    ],
+    "answer": 0,
+    "full": "いしゃが 言いましたから、毎日 この くすりを 飲まなければ なりません。",
+    "kj": "医者が言いましたから、毎日この薬を飲まなければなりません。",
+    "tr": {
+      "zh": "医生说了，所以我每天必须吃这个药。",
+      "en": "The doctor told me to, so I have to take this medicine every day."
+    },
+    "why": {
+      "zh": "后面是「なりません」，前面要用「ない形去い＋ければ」：飲まなければなりません（必须吃）。",
+      "en": "Before 「なりません」 you need ない-form minus い ＋ ければ: 飲まなければなりません (must take)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜ないで」后面接「ください」或别的动作，不能接「なりません」。",
+        "en": "「〜ないで」 goes with 「ください」 or another action, not 「なりません」."
+      },
+      {
+        "zh": "「〜なくて」后面接「もいい」等，「なくてなりません」不成立。",
+        "en": "「〜なくて」 goes with 「もいい」 etc.; 「なくてなりません」 isn't a pattern."
+      },
+      {
+        "zh": "「〜なくても」要接「いい」（不……也可以），不能接「なりません」。",
+        "en": "「〜なくても」 goes with 「いい」 (don't have to), not with 「なりません」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l06-006",
+    "type": "narabe",
+    "refs": [
+      "lesson06#2"
+    ],
+    "difficulty": 1,
+    "stem": "あしたまでに [_] [_] [_] [★]。",
+    "options": [
+      "なければ",
+      "出さ",
+      "なりません",
+      "レポートを"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "あしたまでに レポートを 出さなければ なりません。",
+    "kj": "明日までにレポートを出さなければなりません。",
+    "tr": {
+      "zh": "必须在明天之前交报告。",
+      "en": "I have to hand in the report by tomorrow."
+    },
+    "why": {
+      "zh": "宾语「レポートを」在前，「出す」的ない形去い：出さ＋なければ＋なりません。★ 在第四格，是「なりません」。",
+      "en": "The object 「レポートを」 comes first, then 「出す」 → 出さ ＋ なければ ＋ なりません. The ★ is the fourth slot: 「なりません」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "rev": 2
+  },
+  {
+    "id": "n5-l06-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson06#3"
+    ],
+    "difficulty": 2,
+    "stem": "A「あしたも 来なければ なりませんか。」\nB「いいえ、あしたは 来（　）よ。」",
+    "options": [
+      "なくても いいです",
+      "なければ なりません",
+      "なくても いけません",
+      "ないでも いいです"
+    ],
+    "answer": 0,
+    "full": "A「あしたも 来なければ なりませんか。」 B「いいえ、あしたは 来なくても いいですよ。」",
+    "kj": "A「明日も来なければなりませんか。」\nB「いいえ、明日は来なくてもいいですよ。」",
+    "tr": {
+      "zh": "A：明天也必须来吗？ B：不，明天不来也可以。",
+      "en": "A: Do I have to come tomorrow too? B: No, you don't have to come tomorrow."
+    },
+    "why": {
+      "zh": "对“必须……吗”回答「いいえ」，意思是“不必”，用「〜なくてもいいです」。",
+      "en": "Answering 「いいえ」 to \"must I…?\" means \"you don't have to\": 「〜なくてもいいです」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「いいえ」后面说“必须来”，前后矛盾。",
+        "en": "After 「いいえ」, \"you must come\" contradicts itself."
+      },
+      {
+        "zh": "没有「なくてもいけません」这种说法，「ても」后面接「いい」。",
+        "en": "「なくてもいけません」 isn't a pattern; 「ても」 goes with 「いい」."
+      },
+      {
+        "zh": "形式错了：ない形接「ても」时要变成「なくても」，不说「ないでも」。",
+        "en": "Wrong form: ない becomes 「なくても」, not 「ないでも」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l06-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson06#3"
+    ],
+    "difficulty": 1,
+    "stem": "時間は たくさん ありますから、（　）。ゆっくりで いいですよ。",
+    "options": [
+      "いそがなくても いいです",
+      "いそがなければ なりません",
+      "いそいで ください",
+      "いそいでも いいです"
+    ],
+    "okj": [
+      "急がなくても いいです",
+      "急がなければ なりません",
+      "急いで ください",
+      "急いでも いいです"
+    ],
+    "answer": 0,
+    "full": "時間は たくさん ありますから、いそがなくても いいです。ゆっくりで いいですよ。",
+    "kj": "時間はたくさんありますから、急がなくてもいいです。ゆっくりでいいですよ。",
+    "tr": {
+      "zh": "时间很充裕，不用着急。慢慢来就好。",
+      "en": "There's plenty of time, so you don't have to hurry. Take your time."
+    },
+    "why": {
+      "zh": "“时间很多”“慢慢来就好”，说明“不必着急”，用「〜なくてもいいです」。",
+      "en": "\"Plenty of time\" and \"take your time\" mean \"no need to hurry\": 「〜なくてもいいです」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "“必须着急”和“时间很多”“慢慢来”矛盾。",
+        "en": "\"You must hurry\" contradicts \"plenty of time\" and \"take your time\"."
+      },
+      {
+        "zh": "“请快点”和后面的“慢慢来就好”矛盾。",
+        "en": "\"Please hurry\" contradicts \"take your time\"."
+      },
+      {
+        "zh": "“可以着急”是允许对方着急，和“慢慢来就好”不配。",
+        "en": "\"You may hurry\" grants permission to rush, which doesn't fit \"take your time\"."
+      }
+    ]
+  },
+  {
+    "id": "n5-l06-009",
+    "type": "narabe",
+    "refs": [
+      "lesson06#3"
+    ],
+    "difficulty": 2,
+    "stem": "A「この いえでは くつを [_] [★] [_] [_] か。」\nB「ええ、そのままで いいですよ。」",
+    "options": [
+      "いい",
+      "ぬが",
+      "です",
+      "なくても"
+    ],
+    "okj": [
+      null,
+      "脱が",
+      null,
+      null
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "A「この いえでは くつを ぬがなくても いいですか。」 B「ええ、そのままで いいですよ。」",
+    "kj": "A「この家では靴を脱がなくてもいいですか。」\nB「ええ、そのままでいいですよ。」",
+    "tr": {
+      "zh": "A：在这个家里可以不脱鞋吗？ B：嗯，就那样穿着也行。",
+      "en": "A: Is it okay not to take off my shoes in this house? B: Yes, you can keep them on."
+    },
+    "why": {
+      "zh": "「脱ぐ」的ない形是「脱がない」，变成「脱がなくても」＋いい＋です＋か。★ 是第二格「なくても」。",
+      "en": "「脱ぐ」 → 「脱がない」 → 脱が ＋ なくても ＋ いい ＋ です ＋ か. The ★ is 「なくても」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l06-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson06#4",
+      "lesson06#3"
+    ],
+    "difficulty": 2,
+    "stem": "A「この 本、ぜんぶ 読まなければ なりませんか。」\nB「いいえ、ぜんぶ（　）よ。だいじな ところだけで いいです。」",
+    "options": [
+      "読まなくても いいです",
+      "読んでは いけません",
+      "読まなければ なりません",
+      "読んでも いいです"
+    ],
+    "answer": 0,
+    "full": "A「この 本、ぜんぶ 読まなければ なりませんか。」 B「いいえ、ぜんぶ 読まなくても いいですよ。だいじな ところだけで いいです。」",
+    "kj": "A「この本、全部読まなければなりませんか。」\nB「いいえ、全部読まなくてもいいですよ。大事なところだけでいいです。」",
+    "tr": {
+      "zh": "A：这本书必须全部读完吗？ B：不，不用全部读。只读重要的部分就行。",
+      "en": "A: Do I have to read this whole book? B: No, you don't have to read all of it. Just the important parts is fine."
+    },
+    "why": {
+      "zh": "“必须做吗”的否定回答是“不必做”——「なければならない」的反面是「なくてもいい」，不是「てはいけない」。",
+      "en": "The \"no\" answer to \"must I?\" is \"you don't have to\": the opposite of 「なければならない」 is 「なくてもいい」, not 「てはいけない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜てはいけません」是“不许读”，是「てもいい」的反面，不是回答“必须吗”的「いいえ」。",
+        "en": "「〜てはいけません」 forbids reading — it's the opposite of 「てもいい」, not the \"no\" to \"must I?\"."
+      },
+      {
+        "zh": "「いいえ」后面又说“必须全部读”，前后矛盾。",
+        "en": "After 「いいえ」, \"you must read it all\" contradicts itself."
+      },
+      {
+        "zh": "「〜てもいいです」是“可以全部读”，回答不了“必须吗”，也和“只读重要部分就行”不配。",
+        "en": "「〜てもいいです」 (you may read it all) doesn't answer \"must I?\" and doesn't fit \"just the important parts\"."
+      }
+    ]
+  },
+  {
+    "id": "n5-l06-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson06#4",
+      "lesson05#4"
+    ],
+    "difficulty": 2,
+    "stem": "A「先生、じしょを つかっても いいですか。」\nB「いいえ、今日は テストですから、（　）。」",
+    "options": [
+      "つかっては いけません",
+      "つかわなくても いいです",
+      "つかわなければ なりません",
+      "つかっても いいです"
+    ],
+    "okj": [
+      "使っては いけません",
+      "使わなくても いいです",
+      "使わなければ なりません",
+      "使っても いいです"
+    ],
+    "answer": 0,
+    "full": "A「先生、じしょを つかっても いいですか。」 B「いいえ、今日は テストですから、つかっては いけません。」",
+    "kj": "A「先生、辞書を使ってもいいですか。」\nB「いいえ、今日はテストですから、使ってはいけません。」",
+    "tr": {
+      "zh": "A：老师，可以用词典吗？ B：不行，今天是考试，不可以用。",
+      "en": "A: May I use a dictionary? B: No, it's a test today, so you must not use one."
+    },
+    "why": {
+      "zh": "对“可以……吗”回答「いいえ」，就是“不可以”——「てもいい」的反面是「てはいけない」。",
+      "en": "\"No\" to \"may I?\" means \"you may not\": the opposite of 「てもいい」 is 「てはいけない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜なくてもいいです」是“不用也行”，回答的是“必须吗”，不是“可以吗”；而且考试的理由要求的是禁止。",
+        "en": "「〜なくてもいいです」 (you don't have to) answers \"must I?\", not \"may I?\"; a test calls for a ban."
+      },
+      {
+        "zh": "“必须用词典”和「いいえ」以及“因为是考试”都矛盾。",
+        "en": "\"You must use one\" contradicts both 「いいえ」 and \"it's a test\"."
+      },
+      {
+        "zh": "「いいえ」后面说“可以用”，前后矛盾。",
+        "en": "After 「いいえ」, \"you may use it\" contradicts itself."
+      }
+    ]
+  },
+  {
+    "id": "n5-l06-012",
+    "type": "bunpou",
+    "refs": [
+      "lesson06#5"
+    ],
+    "difficulty": 2,
+    "stem": "けさは 時間が なかったので、あさごはんを 食べ（　）、学校へ 行きました。",
+    "options": [
+      "ないで",
+      "なくて",
+      "なければ",
+      "なくても"
+    ],
+    "answer": 0,
+    "full": "けさは 時間が なかったので、あさごはんを 食べないで、学校へ 行きました。",
+    "kj": "今朝は時間がなかったので、朝ご飯を食べないで、学校へ行きました。",
+    "tr": {
+      "zh": "今天早上没时间，所以没吃早饭就去学校了。",
+      "en": "I had no time this morning, so I went to school without eating breakfast."
+    },
+    "why": {
+      "zh": "“没吃早饭就去了学校”——没做 A 就做了 B，表示行为方式，用「〜ないで」。",
+      "en": "\"Went to school without eating breakfast\" — doing B without doing A is 「〜ないで」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜なくて」表示原因（因为没吃所以……），“因为没吃早饭所以去了学校”说不通。",
+        "en": "「〜なくて」 gives a reason; \"because I didn't eat, I went to school\" makes no sense."
+      },
+      {
+        "zh": "「〜なければ」是“如果不……”，后面不能接已经发生的「行きました」。",
+        "en": "「〜なければ」 means \"if I don't…\" and can't lead into the past fact 「行きました」."
+      },
+      {
+        "zh": "「〜なくても」是“即使不……也”，后面一般接「いい」，这里意思不通。",
+        "en": "「〜なくても」 (even without…) doesn't fit here; it normally goes with 「いい」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l06-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson06#5"
+    ],
+    "difficulty": 2,
+    "stem": "お金が（　）、何も 買えませんでした。",
+    "options": [
+      "なくて",
+      "ないで",
+      "なければ",
+      "なくても"
+    ],
+    "answer": 0,
+    "full": "お金が なくて、何も 買えませんでした。",
+    "kj": "お金がなくて、何も買えませんでした。",
+    "tr": {
+      "zh": "因为没钱，什么都没能买。",
+      "en": "I didn't have any money, so I couldn't buy anything."
+    },
+    "why": {
+      "zh": "“没钱”是“买不了”的原因，表示原因用「〜なくて」。",
+      "en": "Having no money is the reason for not being able to buy: reason → 「〜なくて」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜ないで」表示“不做……就做……”，「お金がない」不是人做的动作，不能用。",
+        "en": "「〜ないで」 means \"without doing\"; 「お金がない」 isn't an action, so it can't be used."
+      },
+      {
+        "zh": "「〜なければ」是假设“如果没有钱”，后面不能接已经发生的过去事实。",
+        "en": "「〜なければ」 is a hypothetical \"if\" and can't lead into a past fact."
+      },
+      {
+        "zh": "「〜なくても」是“即使没钱也……”，和“什么都没能买”逻辑不通。",
+        "en": "「〜なくても」 (even without money) doesn't make sense with \"couldn't buy anything\"."
+      }
+    ]
+  },
+  {
+    "id": "n5-l06-014",
+    "type": "narabe",
+    "refs": [
+      "lesson06#5"
+    ],
+    "difficulty": 2,
+    "stem": "おとうとは けさ [_] [_] [_] [★] 学校へ 行きました。",
+    "options": [
+      "食べ",
+      "を",
+      "ないで",
+      "あさごはん"
+    ],
+    "okj": [
+      null,
+      null,
+      null,
+      "朝ご飯"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "おとうとは けさ あさごはんを 食べないで 学校へ 行きました。",
+    "kj": "弟は今朝朝ご飯を食べないで学校へ行きました。",
+    "tr": {
+      "zh": "弟弟今天早上没吃早饭就去学校了。",
+      "en": "My younger brother went to school this morning without eating breakfast."
+    },
+    "why": {
+      "zh": "“没吃早饭就去了学校”是行为方式，用「ない形＋で」：朝ご飯 を 食べ ないで。★ 是第四格「ないで」。",
+      "en": "\"Went without eating\" is manner: ない-form ＋ で — 朝ご飯 を 食べ ないで. The ★ is 「ないで」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

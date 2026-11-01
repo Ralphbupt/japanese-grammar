@@ -1,0 +1,933 @@
+[
+  {
+    "id": "n1-mg-401",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "彼の指摘は<<的を射ていた>>。",
+    "options": [
+      "要点をついていた",
+      "手厳しかった",
+      "遠回しだった",
+      "当たり障りがなかった"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他的指正切中要害。",
+      "en": "His point was right on target."
+    },
+    "why": {
+      "zh": "「的を射る」＝准确抓住要点，与「要点をつく」同义。",
+      "en": "「的を射る」 is to hit the mark — the same as 「要点をつく」, to get right to the key point."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「手厳しい」是严厉，「的を射る」说的是准确，不是语气严厉。",
+        "en": "「手厳しい」 is harsh; 「的を射る」 is about accuracy, not severity."
+      },
+      {
+        "zh": "「遠回し」是说话绕弯子，和是否说中要点无关。",
+        "en": "「遠回し」 is indirect phrasing, which says nothing about hitting the point."
+      },
+      {
+        "zh": "「当たり障りがない」是说得四平八稳、不得罪人，并不是切中要害。",
+        "en": "「当たり障りがない」 is inoffensive and safe — not incisive."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-402",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "財布もスマホもなくして、<<途方に暮れた>>。",
+    "options": [
+      "困り果てた",
+      "腹を立てた",
+      "気落ちした",
+      "慌てふためいた"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "钱包和手机都丢了，我不知所措。",
+      "en": "I'd lost my wallet and my phone and didn't know what to do."
+    },
+    "why": {
+      "zh": "「途方に暮れる」＝不知如何是好、一筹莫展，最接近「困り果てる」（为难到极点）。",
+      "en": "「途方に暮れる」 is to be at a loss what to do — closest to 「困り果てる」, utterly stuck."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「腹を立てる」是生气，不是不知所措。",
+        "en": "「腹を立てる」 is getting angry, not being at a loss."
+      },
+      {
+        "zh": "「気落ちする」是灰心、沮丧，重点在情绪低落，不在“不知道怎么办”。",
+        "en": "「気落ちする」 is feeling dejected; it says nothing about not knowing what to do."
+      },
+      {
+        "zh": "「慌てふためく」是惊慌失措、手忙脚乱，「途方に暮れる」是呆住、想不出办法。",
+        "en": "「慌てふためく」 is panicking and rushing around; 「途方に暮れる」 is being stuck for any idea."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-403",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "部長の提案に<<異を唱える>>者はいなかった。",
+    "options": [
+      "反対する",
+      "質問する",
+      "補足する",
+      "口を挟む"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "没有人对部长的提案提出异议。",
+      "en": "No one objected to the manager's proposal."
+    },
+    "why": {
+      "zh": "「異を唱える」＝提出不同意见、表示反对。",
+      "en": "「異を唱える」 is to raise an objection — to oppose."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「質問する」只是提问，不等于反对。",
+        "en": "Asking a question is not objecting."
+      },
+      {
+        "zh": "「補足する」是补充说明，是在支持原提案的基础上加内容。",
+        "en": "「補足する」 is adding to the proposal, not opposing it."
+      },
+      {
+        "zh": "「口を挟む」是插嘴、打断别人说话，不一定是反对。",
+        "en": "「口を挟む」 is butting in, not necessarily objecting."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-404",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "老人は<<おもむろに>>口を開いた。",
+    "options": [
+      "ゆっくりと",
+      "不意に",
+      "小声で",
+      "ためらいがちに"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "老人缓缓开了口。",
+      "en": "The old man slowly began to speak."
+    },
+    "why": {
+      "zh": "「おもむろに」＝不慌不忙地、慢慢地。常被误解为“突然”，要注意。",
+      "en": "「おもむろに」 means slowly and deliberately — often misread as \"suddenly\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「不意に」是突然，正是「おもむろに」常见的误解。",
+        "en": "「不意に」 is \"suddenly\" — the common misreading of 「おもむろに」."
+      },
+      {
+        "zh": "「小声で」说的是音量，「おもむろに」说的是动作的节奏。",
+        "en": "「小声で」 is about volume; 「おもむろに」 is about pace."
+      },
+      {
+        "zh": "「ためらいがちに」是犹犹豫豫，「おもむろに」是从容、沉稳，并不犹豫。",
+        "en": "「ためらいがちに」 is hesitantly; 「おもむろに」 is calm and unhurried, not hesitant."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-405",
+    "rev": 2,
+    "type": "iikae",
+    "refs": [
+      "lesson91#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "この村では<<過疎化>>が進んでいる。",
+    "options": [
+      "人口の減少",
+      "高齢化",
+      "都市化",
+      "産業の衰退"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这个村子人口越来越稀少。",
+      "en": "This village is steadily losing its population."
+    },
+    "why": {
+      "zh": "「過疎化」＝人口外流、人口越来越少。",
+      "en": "「過疎化」 is depopulation — the population steadily falling."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「高齢化」是老人比例上升，常与过疎化同时出现，但不是同一回事。",
+        "en": "「高齢化」 is ageing; it often goes with depopulation but is a different thing."
+      },
+      {
+        "zh": "「都市化」是变得城市化，与人口流失的村子方向不同。",
+        "en": "「都市化」 is urbanisation — not what happens to a village losing people."
+      },
+      {
+        "zh": "「産業の衰退」是产业衰落，可能是过疎化的原因，但不是它的意思。",
+        "en": "Industrial decline may cause depopulation, but it isn't what 「過疎化」 means."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-406",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "あの店員の態度はいかにも<<横柄>>だった。",
+    "options": [
+      "偉そう",
+      "無愛想",
+      "冷淡",
+      "いい加減"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "那个店员的态度十分傲慢。",
+      "en": "That shop assistant was really arrogant."
+    },
+    "why": {
+      "zh": "「横柄」＝傲慢无礼、摆架子，即「偉そう」。",
+      "en": "「横柄」 is arrogant and high-handed — 「偉そう」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「無愛想」是冷淡、不和气，不一定摆架子。",
+        "en": "「無愛想」 is curt and unfriendly, not necessarily overbearing."
+      },
+      {
+        "zh": "「冷淡」是冷漠、不热心，「横柄」的重点是居高临下。",
+        "en": "「冷淡」 is cold and uninterested; 「横柄」 is about looking down on people."
+      },
+      {
+        "zh": "「いい加減」是马虎、不认真，与傲慢无关。",
+        "en": "「いい加減」 is sloppy, not arrogant."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-407",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "先輩は私の頼みを<<快く>>引き受けてくれた。",
+    "options": [
+      "喜んで",
+      "即座に",
+      "黙って",
+      "条件付きで"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "前辈爽快地答应了我的请求。",
+      "en": "My senior gladly agreed to help me."
+    },
+    "why": {
+      "zh": "「快く」＝爽快地、乐意地，即「喜んで」。",
+      "en": "「快く」 is willingly, gladly — 「喜んで」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「即座に」是马上，说的是速度，不是是否乐意。",
+        "en": "「即座に」 is about speed, not willingness."
+      },
+      {
+        "zh": "「黙って」是一声不吭，看不出是否乐意。",
+        "en": "「黙って」 is without a word; it says nothing about being glad to."
+      },
+      {
+        "zh": "「条件付きで」是附带条件，和「快く」的爽快意思不符。",
+        "en": "「条件付きで」 means with conditions attached, not gladly."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-408",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "この制度には、まだ改善の<<余地>>がある。",
+    "options": [
+      "可能性",
+      "結果",
+      "予定",
+      "計画"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这个制度还有改进的余地。",
+      "en": "There's still room for improvement in this system."
+    },
+    "why": {
+      "zh": "「余地」＝还有可以做的空间，「改善の余地がある」＝还有改进的可能。",
+      "en": "「余地」 is room — 「改善の余地がある」 means improvement is still possible."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「結果」是事情的结果，「余地」是还留有的空间、可能。",
+        "en": "「結果」 is an outcome; 「余地」 is room still left for something."
+      },
+      {
+        "zh": "「予定」是已经安排好要做，「余地」只是可能性。",
+        "en": "「予定」 is a plan already fixed; 「余地」 is only possibility."
+      },
+      {
+        "zh": "「計画」是具体的计划，与“空间、余地”的意思不同。",
+        "en": "「計画」 is a concrete plan, not room for something."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-409",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "彼の話はどうも<<つじつまが合わない>>。",
+    "options": [
+      "筋が通らない",
+      "要領を得ない",
+      "話がかみ合わない",
+      "歯切れが悪い"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他的话怎么也说不通。",
+      "en": "His story just doesn't add up."
+    },
+    "why": {
+      "zh": "「つじつまが合わない」＝前后矛盾、不合逻辑，即「筋が通らない」。",
+      "en": "「つじつまが合わない」 is inconsistent, not adding up — 「筋が通らない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「要領を得ない」是抓不住要点、说不清楚，不一定前后矛盾。",
+        "en": "「要領を得ない」 is rambling and unclear, not necessarily contradictory."
+      },
+      {
+        "zh": "「話がかみ合わない」是两个人说话对不上茬，说的是对话双方。",
+        "en": "「話がかみ合わない」 is two people talking past each other."
+      },
+      {
+        "zh": "「歯切れが悪い」是说话含糊、吞吞吐吐。",
+        "en": "「歯切れが悪い」 is speaking evasively or haltingly."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-410",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "彼はようやく自分の<<非>>を認めた。",
+    "options": [
+      "誤り",
+      "弱さ",
+      "限界",
+      "本心"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他终于承认了自己的过错。",
+      "en": "He finally admitted he was in the wrong."
+    },
+    "why": {
+      "zh": "「非を認める」＝承认自己的错误，「非」＝过错。",
+      "en": "「非を認める」 is admitting one's fault; 「非」 is a wrong, a mistake."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「弱さ」是软弱，「非」说的是做错了事。",
+        "en": "「弱さ」 is weakness; 「非」 is having done wrong."
+      },
+      {
+        "zh": "「限界」是能力的极限，与对错无关。",
+        "en": "「限界」 is the limit of one's ability, not right or wrong."
+      },
+      {
+        "zh": "「本心」是真心话，「本心を認める」意思完全不同。",
+        "en": "「本心」 is one's true feelings — a different thing to admit."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-411",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "その計画は<<白紙に戻された>>。",
+    "options": [
+      "なかったことにされた",
+      "延期された",
+      "縮小された",
+      "保留された"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "那个计划被推倒重来了。",
+      "en": "The plan was scrapped and taken back to square one."
+    },
+    "why": {
+      "zh": "「白紙に戻す」＝撤销已定的内容，回到什么都没有的原点。",
+      "en": "「白紙に戻す」 is to scrap what was decided and go back to a blank slate."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「延期」是推迟，计划本身还在。",
+        "en": "「延期」 is postponing; the plan still stands."
+      },
+      {
+        "zh": "「縮小」是缩小规模，计划还在。",
+        "en": "「縮小」 is scaling down; the plan still exists."
+      },
+      {
+        "zh": "「保留」是暂时搁置，等以后再定，并没有一笔勾销。",
+        "en": "「保留」 is putting on hold, not wiping the slate clean."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-412",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "社長は新規出店に<<難色を示した>>。",
+    "options": [
+      "渋った",
+      "戸惑った",
+      "驚いた",
+      "黙り込んだ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "社长对开新店面露难色。",
+      "en": "The president showed reluctance about opening a new store."
+    },
+    "why": {
+      "zh": "「難色を示す」＝面露难色、表示不同意，即「渋る」（不情愿、不肯答应）。",
+      "en": "「難色を示す」 is to show disapproval — 「渋る」, to be reluctant to agree."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「戸惑う」是不知所措，不是不同意。",
+        "en": "「戸惑う」 is being bewildered, not disapproving."
+      },
+      {
+        "zh": "「驚く」只是吃惊，看不出赞成还是反对。",
+        "en": "「驚く」 is surprise; it shows no stance."
+      },
+      {
+        "zh": "「黙り込む」是沉默不语，没有表示不同意。",
+        "en": "「黙り込む」 is falling silent, not showing disapproval."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-413",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "今回の遅刻は<<不問に付す>>ことにした。",
+    "options": [
+      "とがめない",
+      "記録しない",
+      "報告しない",
+      "繰り返さない"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这次迟到决定不予追究。",
+      "en": "We've decided to let this lateness pass."
+    },
+    "why": {
+      "zh": "「不問に付す」＝不予追究，即「とがめない」（不责备、不追究）。",
+      "en": "「不問に付す」 is to let something pass — 「とがめない」, not to reproach."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「記録しない」只是不留记录，不等于不追究。",
+        "en": "Not recording it isn't the same as letting it pass."
+      },
+      {
+        "zh": "「報告しない」是不上报，与是否追究责任不同。",
+        "en": "Not reporting it is different from not holding someone to account."
+      },
+      {
+        "zh": "「繰り返さない」是不再犯，说的是迟到的人，不是处理方式。",
+        "en": "「繰り返さない」 is about not doing it again, not about how it's dealt with."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-414",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "平日の昼間の商店街は<<閑散としている>>。",
+    "options": [
+      "ひっそりしている",
+      "雑然としている",
+      "のんびりしている",
+      "古びている"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "平日白天的商业街冷冷清清。",
+      "en": "On weekday afternoons the shopping street is quiet and nearly empty."
+    },
+    "why": {
+      "zh": "「閑散」＝人少、冷清，即「ひっそりしている」。",
+      "en": "「閑散としている」 is deserted and quiet — 「ひっそりしている」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「雑然」是杂乱，说的是乱，不是人少。",
+        "en": "「雑然」 is cluttered — disorder, not emptiness."
+      },
+      {
+        "zh": "「のんびり」是悠闲，不一定人少。",
+        "en": "「のんびり」 is relaxed, not necessarily empty."
+      },
+      {
+        "zh": "「古びている」是陈旧，说的是建筑，不是人气。",
+        "en": "「古びている」 is old and worn — the buildings, not the crowds."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-415",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "兄は服装に<<無頓着だ>>。",
+    "options": [
+      "こだわらない",
+      "疎い",
+      "不慣れだ",
+      "控えめだ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "哥哥对穿着毫不在意。",
+      "en": "My brother doesn't care at all about what he wears."
+    },
+    "why": {
+      "zh": "「無頓着」＝不在乎、不讲究，即「こだわらない」。",
+      "en": "「無頓着」 is not caring about something — 「こだわらない」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「疎い」是不了解、不熟悉，重点是知识，不是在不在乎。",
+        "en": "「疎い」 is not knowing much about it — knowledge, not caring."
+      },
+      {
+        "zh": "「不慣れ」是不习惯、没经验。",
+        "en": "「不慣れ」 is being unused to something."
+      },
+      {
+        "zh": "「控えめ」是朴素、不张扬，可能是刻意讲究的结果。",
+        "en": "「控えめ」 is modest, understated — which may even be deliberate."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-416",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "今日の会議は<<いささか>>長すぎた。",
+    "options": [
+      "少々",
+      "やけに",
+      "案の定",
+      "さすがに"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "今天的会议稍微长了点。",
+      "en": "Today's meeting went on a bit too long."
+    },
+    "why": {
+      "zh": "「いささか」＝稍微、有点儿，即「少々」。",
+      "en": "「いささか」 is a little, somewhat — 「少々」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「やけに」是“格外、出奇地”，程度很高。",
+        "en": "「やけに」 is \"unusually\", a strong degree."
+      },
+      {
+        "zh": "「案の定」是“果然”，表示和预料一样。",
+        "en": "「案の定」 is \"just as expected\"."
+      },
+      {
+        "zh": "「さすがに」是“到底还是、毕竟”，不是表示程度轻。",
+        "en": "「さすがに」 is \"admittedly, as you'd expect\", not a mild degree."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-417",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "患者の容体は<<一刻を争う>>。",
+    "options": [
+      "急を要する",
+      "予断を許さない",
+      "手の施しようがない",
+      "刻々と変わる"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "患者的病情刻不容缓。",
+      "en": "The patient's condition can't wait a moment."
+    },
+    "why": {
+      "zh": "「一刻を争う」＝分秒必争、情况紧急，即「急を要する」。",
+      "en": "「一刻を争う」 is that every moment counts — 「急を要する」, urgent."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「予断を許さない」是情况难以预料，说的是不确定，不是紧急。",
+        "en": "「予断を許さない」 is unpredictable — uncertainty, not urgency."
+      },
+      {
+        "zh": "「手の施しようがない」是已经无法救治，与“必须抢时间”不同。",
+        "en": "「手の施しようがない」 is beyond help — not the same as needing speed."
+      },
+      {
+        "zh": "「刻々と変わる」是时刻在变化，没有“紧急”的意思。",
+        "en": "「刻々と変わる」 is changing by the minute, not urgent as such."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-418",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "ネットの情報を<<鵜呑みにして>>はいけない。",
+    "options": [
+      "そのまま信じて",
+      "軽んじて",
+      "言いふらして",
+      "書き写して"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "不能对网上的信息囫囵吞枣、照单全收。",
+      "en": "You mustn't swallow what you read online whole."
+    },
+    "why": {
+      "zh": "「鵜呑みにする」＝囫囵吞枣，不加思考就全盘相信。",
+      "en": "「鵜呑みにする」 is to swallow something whole — to believe it uncritically."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「軽んじる」是轻视，方向相反。",
+        "en": "「軽んじる」 is making light of it — not believing it blindly."
+      },
+      {
+        "zh": "「言いふらす」是到处散布，说的是传播，不是相信。",
+        "en": "「言いふらす」 is spreading it around, not believing it."
+      },
+      {
+        "zh": "「書き写す」是抄写，与相信无关。",
+        "en": "「書き写す」 is copying it out."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-419",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "両国の交渉は<<難航している>>。",
+    "options": [
+      "はかどらない",
+      "決裂した",
+      "白熱している",
+      "中断している"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "两国的谈判进展困难。",
+      "en": "The talks between the two countries are making little headway."
+    },
+    "why": {
+      "zh": "「難航」＝困难重重、进展不顺，即「はかどらない」。",
+      "en": "「難航している」 is running into difficulties — 「はかどらない」, making little progress."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「決裂」是谈判破裂，已经结束了，「難航」还在继续。",
+        "en": "「決裂」 is a breakdown — talks over; 「難航」 means they continue with difficulty."
+      },
+      {
+        "zh": "「白熱」是讨论激烈，不一定进展不顺。",
+        "en": "「白熱」 is heated debate, not necessarily slow progress."
+      },
+      {
+        "zh": "「中断」是暂停，「難航」是一直在谈但很艰难。",
+        "en": "「中断」 is a pause; 「難航」 is ongoing but hard going."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-420",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "彼は会議の間、<<終始>>無言だった。",
+    "options": [
+      "ずっと",
+      "たびたび",
+      "ほとんど",
+      "しばらく"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "开会期间他始终一言不发。",
+      "en": "He didn't say a word from start to finish of the meeting."
+    },
+    "why": {
+      "zh": "「終始」＝从头到尾、始终，即「ずっと」。",
+      "en": "「終始」 is from start to finish — 「ずっと」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「たびたび」是屡次，表示断断续续，不是一直。",
+        "en": "「たびたび」 is repeatedly, on and off — not throughout."
+      },
+      {
+        "zh": "「ほとんど」是几乎，留有例外，「終始」没有例外。",
+        "en": "「ほとんど」 is \"almost\", allowing exceptions; 「終始」 allows none."
+      },
+      {
+        "zh": "「しばらく」是一段时间，不是整个会议。",
+        "en": "「しばらく」 is for a while, not the whole meeting."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-421",
+    "rev": 2,
+    "type": "iikae",
+    "refs": [
+      "lesson86#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "部長は自分の案を<<強引に>>通した。",
+    "options": [
+      "無理やり",
+      "巧みに",
+      "早々に",
+      "ひそかに"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "部长强行让自己的方案通过了。",
+      "en": "The manager forced his own plan through."
+    },
+    "why": {
+      "zh": "「強引に」＝不顾反对、硬来，即「無理やり」。",
+      "en": "「強引に」 is forcibly, over objections — 「無理やり」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「巧みに」是巧妙地，靠技巧而不是硬来。",
+        "en": "「巧みに」 is skilfully — by craft, not force."
+      },
+      {
+        "zh": "「早々に」是很快地，说的是时间。",
+        "en": "「早々に」 is early, quickly — timing, not force."
+      },
+      {
+        "zh": "「ひそかに」是偷偷地，「強引に」是公开硬推。",
+        "en": "「ひそかに」 is secretly; 「強引に」 is pushing it through openly."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-422",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "両チームの実力は<<拮抗している>>。",
+    "options": [
+      "互角だ",
+      "伸びている",
+      "際立っている",
+      "安定している"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "两队实力不相上下。",
+      "en": "The two teams are evenly matched."
+    },
+    "why": {
+      "zh": "「拮抗」＝势均力敌、不相上下，即「互角」。",
+      "en": "「拮抗している」 is evenly matched — 「互角だ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「伸びている」是在进步，与双方是否相当无关。",
+        "en": "「伸びている」 is improving, not being evenly matched."
+      },
+      {
+        "zh": "「際立っている」是格外突出。",
+        "en": "「際立っている」 is standing out."
+      },
+      {
+        "zh": "「安定している」是稳定，不是双方相当。",
+        "en": "「安定している」 is being stable, not equal."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-423",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "資金難で、新工場の建設計画は<<頓挫した>>。",
+    "options": [
+      "行き詰まった",
+      "先送りされた",
+      "縮小された",
+      "見直された"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "由于资金困难，新工厂的建设计划受挫中断了。",
+      "en": "Money troubles derailed the plan to build the new factory."
+    },
+    "why": {
+      "zh": "「頓挫」＝中途受挫、进行不下去，即「行き詰まる」。",
+      "en": "「頓挫する」 is to stall partway — 「行き詰まる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「先送り」是推迟，计划本身没有受挫。",
+        "en": "「先送り」 is postponing, not stalling."
+      },
+      {
+        "zh": "「縮小」是缩小规模，计划还在推进。",
+        "en": "「縮小」 is scaling down; the plan goes on."
+      },
+      {
+        "zh": "「見直す」是重新评估，不等于进行不下去。",
+        "en": "「見直す」 is reviewing, not getting stuck."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-424",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "どんなに苦しくても、彼女は<<弱音を吐かなかった>>。",
+    "options": [
+      "泣き言を言わなかった",
+      "本音を漏らさなかった",
+      "人を頼らなかった",
+      "涙を見せなかった"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "无论多么艰难，她都没有说过泄气话。",
+      "en": "However hard things got, she never complained it was too much."
+    },
+    "why": {
+      "zh": "「弱音を吐く」＝说丧气话、叫苦，即「泣き言を言う」。",
+      "en": "「弱音を吐く」 is to complain of hardship — 「泣き言を言う」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「本音を漏らす」是说出真心话，不一定是叫苦。",
+        "en": "「本音を漏らす」 is revealing one's true feelings, not whining."
+      },
+      {
+        "zh": "「人を頼らない」是不依赖别人，说的是行动，不是言语。",
+        "en": "Not relying on others is about action, not complaining."
+      },
+      {
+        "zh": "「涙を見せない」是不流泪，「弱音」是说出来的话。",
+        "en": "Not showing tears is different from not voicing complaints."
+      }
+    ]
+  },
+  {
+    "id": "n1-mg-425",
+    "rev": 2,
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "待ち時間が長く、<<手持ち無沙汰だった>>。",
+    "options": [
+      "退屈だった",
+      "気詰まりだった",
+      "いら立っていた",
+      "心細かった"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "等待时间很长，闲得无聊。",
+      "en": "The wait was long and I had nothing to do with myself."
+    },
+    "why": {
+      "zh": "「手持ち無沙汰」＝闲着没事做、无聊。",
+      "en": "「手持ち無沙汰」 is having nothing to do — bored."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「気詰まり」是拘束、不自在，通常因为有人在场。",
+        "en": "「気詰まり」 is feeling awkward or constrained, usually around others."
+      },
+      {
+        "zh": "「いら立つ」是焦躁、生气，「手持ち無沙汰」只是没事干。",
+        "en": "「いら立つ」 is irritation; 「手持ち無沙汰」 is just idleness."
+      },
+      {
+        "zh": "「心細い」是心里没底、不安。",
+        "en": "「心細い」 is feeling uneasy or forlorn."
+      }
+    ]
+  }
+]

@@ -1,0 +1,335 @@
+[
+  {
+    "id": "n2-dk-201",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、取引先から届いたメールです。",
+    "passage": "株式会社ミナト　購買部　佐藤様\n\nいつもお世話になっております。北山工業の村井です。\n先日ご注文いただいた部品500個につきまして、10月20日に納品するお約束でしたが、材料の入荷が遅れているため、期日までに全数をご用意することが難しい状況です。\n大変申し訳ございませんが、300個を予定どおり20日に、残りの200個を27日にお届けする形でもよろしいでしょうか。ご都合が悪い場合は、別の方法も検討いたしますので、今週中にご返信いただけますと幸いです。\n\n北山工業　村井",
+    "tr": {
+      "zh": "湊株式会社 采购部 佐藤先生：一直承蒙关照。我是北山工业的村井。关于前几天您订购的500个零件，原本约定10月20日交货，但由于材料到货延迟，很难在期限前备齐全部数量。非常抱歉，300个按原计划在20日送达，剩下的200个在27日送达，这样可以吗？如果不方便，我们也会考虑其他办法，希望您能在本周内回复。北山工业 村井",
+      "en": "To Mr Sato, Purchasing, Minato Co., Ltd.: Thank you as always for your business. This is Murai from Kitayama Industries. Regarding the 500 parts you recently ordered, we promised delivery on 20 October, but because our materials are arriving late, it will be difficult to have the full quantity ready by the deadline. We are very sorry, but would it be acceptable for us to deliver 300 on the 20th as planned and the remaining 200 on the 27th? If that is inconvenient, we will consider other options, so we would be grateful if you could reply within this week. Murai, Kitayama Industries"
+    },
+    "questions": [
+      {
+        "q": "このメールの用件は何か。",
+        "options": [
+          "材料が届かないので、注文を取り消してほしい。",
+          "部品を二回に分けて納品してもよいか、確認したい。",
+          "500個の部品を、すべて27日に納品させてほしい。",
+          "納品について、別の方法を今週中に提案してほしい。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "核心是「300個を…20日に、残りの200個を27日に…よろしいでしょうか」：询问能否分两次交货。",
+          "en": "The key line is 「300個を…20日に、残りの200個を27日に…よろしいでしょうか」 — asking if delivery can be split in two."
+        },
+        "wrong": [
+          {
+            "zh": "邮件只说材料晚到、难以备齐，并没有要求取消订单。",
+            "en": "The email says materials are late, not that the order should be cancelled."
+          },
+          null,
+          {
+            "zh": "只有剩下的200个是27日，300个仍按原计划20日送。",
+            "en": "Only the remaining 200 come on the 27th; 300 still arrive on the 20th as planned."
+          },
+          {
+            "zh": "「別の方法も検討いたします」是北山工业自己考虑其他办法，对方只需要「ご返信」。",
+            "en": "「別の方法も検討いたします」 — it's Kitayama who would think of alternatives; Sato is only asked to reply."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-202",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、マンションの掲示板に貼られたお知らせです。",
+    "passage": "居住者の皆様へ\n\n排水管清掃作業のお知らせ\n\n11月12日（水）から14日（金）までの3日間、全戸の台所・浴室の排水管の清掃を行います。作業は各戸10分程度で、作業員がお部屋の中に入って行います。お部屋ごとの作業日時は、各戸のポストに入れた予定表でご確認ください。\n予定表の日時にご都合の悪い方は、11月5日までに管理事務所へご連絡ください。15日（土）に予備日を設けております。\nなお、作業の30分前から終了までは、台所と浴室の水を流さないようお願いいたします。\n\n管理事務所",
+    "tr": {
+      "zh": "致各位住户：排水管清洗作业通知。11月12日（周三）至14日（周五）三天，将对所有住户的厨房、浴室排水管进行清洗。每户作业约10分钟，由作业人员进入房间进行。各户的作业日期和时间，请查看放入各户信箱的日程表。日程表上的时间不方便的住户，请于11月5日前联系管理处。15日（周六）设有备用日。另外，从作业前30分钟到结束为止，请不要使用厨房和浴室的水。管理处",
+      "en": "To all residents: Notice of drain-pipe cleaning. For three days, from Wednesday 12 to Friday 14 November, the kitchen and bathroom drain pipes of every flat will be cleaned. The work takes about ten minutes per flat and is done by workers entering your flat. Please check the date and time for your flat on the schedule placed in your letterbox. If the time on the schedule is inconvenient, please contact the management office by 5 November. Saturday the 15th has been set aside as a reserve day. Please also do not run water in the kitchen or bathroom from 30 minutes before the work until it is finished. Management Office"
+    },
+    "questions": [
+      {
+        "q": "予定表の日時に部屋にいられない人は、どうしなければならないか。",
+        "options": [
+          "15日に、自分で排水管を清掃する。",
+          "作業の30分前から、水を流さないようにする。",
+          "予定表をポストに入れて、管理事務所に返す。",
+          "11月5日までに、管理事務所に連絡する。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "「予定表の日時にご都合の悪い方は、11月5日までに管理事務所へご連絡ください」。",
+          "en": "「予定表の日時にご都合の悪い方は、11月5日までに管理事務所へご連絡ください」 — contact the office by 5 November."
+        },
+        "wrong": [
+          {
+            "zh": "15日是备用日，作业仍由作业人员进行，不是自己清洗。",
+            "en": "The 15th is a reserve day for the workers, not a day to clean the pipes yourself."
+          },
+          {
+            "zh": "不用水是所有住户在作业时都要做的事，不是不在家的人的办法。",
+            "en": "Not running water applies to everyone during the work; it isn't what absent residents must do."
+          },
+          {
+            "zh": "日程表是放进信箱给住户查看的，没有要求交回。",
+            "en": "The schedule was put in letterboxes to check; nothing says to return it."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-203",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "子どもをほめるとき、「頭がいいね」と言うのは避けたほうがいいと聞いたことがある。能力をほめられ続けた子どもは、失敗して「頭がよくない」と思われることを恐れ、難しい問題に挑戦しなくなるというのだ。それよりも、「最後までよく頑張ったね」と、取り組み方をほめるほうがいいらしい。\nこれは子どもに限った話ではないだろう。職場でも、結果だけで評価されていると、人は失敗しそうな仕事を避けるようになる。新しいことに挑戦する人を増やしたいなら、結果が出なかったときにも、その過程を認める必要があるのではないか。",
+    "tr": {
+      "zh": "我听说，表扬孩子时最好避免说“你真聪明”。据说一直因能力受到表扬的孩子，会害怕失败后被认为“不聪明”，于是不再挑战难题。比起这样，似乎更好的是像“你坚持到最后，真努力”这样表扬做事的方式。这恐怕不只是孩子的事。在职场上，如果只凭结果来评价，人也会开始回避可能失败的工作。如果想让挑战新事物的人多起来，即使没有出结果，不也需要认可其过程吗？",
+      "en": "I've heard that when praising children it's better to avoid saying \"You're so clever.\" Children who are constantly praised for their ability apparently fear being thought \"not clever\" if they fail, and stop taking on hard problems. It seems better to praise how they went about it — \"You worked hard right to the end.\" This probably isn't true only of children. At work, too, if people are judged on results alone, they start avoiding jobs where they might fail. If we want more people to try new things, don't we need to recognise the process even when it produced no result?"
+    },
+    "questions": [
+      {
+        "q": "筆者の考えに合うものはどれか。",
+        "options": [
+          "職場でも、結果が出なかったときの取り組み方を認めるべきだ。",
+          "子どもには、能力よりも結果をほめるほうが挑戦する力が育つ。",
+          "職場では、失敗しそうな仕事を避ける人を厳しく評価すべきだ。",
+          "能力をほめられた子どもほど、難しい問題に挑戦するようになる。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "「子どもに限った話ではない」把话题扩展到职场，结论是「結果が出なかったときにも、その過程を認める必要がある」。",
+          "en": "「子どもに限った話ではない」 extends the point to the workplace, ending with 「結果が出なかったときにも、その過程を認める必要がある」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "文中主张表扬「取り組み方」（过程），而不是结果。",
+            "en": "The text recommends praising 「取り組み方」 — the effort — not results."
+          },
+          {
+            "zh": "回避有风险的工作是作者指出的现象，作者的对策是认可过程，而不是严厉评价回避的人。",
+            "en": "Avoiding risky work is the effect the writer describes; the remedy is recognising the process, not judging those who avoid it."
+          },
+          {
+            "zh": "文中说因能力受表扬的孩子反而「挑戦しなくなる」，正好相反。",
+            "en": "The text says such children 「挑戦しなくなる」 — the opposite."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-204",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、会社の社員に届いたメールです。",
+    "passage": "営業部　各位\n\nお疲れさまです。企画部の森です。\n11月8日（金）に予定していた新商品の説明会ですが、会場の都合により、11月15日（金）に変更させていただくことになりました。時間と場所に変更はありません。\nつきましては、すでに参加を申し込まれた方も、お手数ですが、15日に参加できるかどうかを、改めて社内システムからご登録ください。登録の締め切りは11月11日（月）です。説明会の資料は、14日までにメールでお送りします。\n\n企画部　森",
+    "tr": {
+      "zh": "营业部各位：辛苦了，我是企划部的森。原定于11月8日（周五）举行的新产品说明会，由于会场方面的原因，改到11月15日（周五）。时间和地点不变。因此，已经报名参加的各位，也麻烦您通过公司内部系统重新登记15日能否参加。登记截止日期是11月11日（周一）。说明会的资料将在14日之前通过邮件发送。企划部 森",
+      "en": "To all Sales staff: Thank you for your hard work. This is Mori from Planning. The new-product briefing scheduled for Friday 8 November has been moved to Friday 15 November because of the venue. The time and place are unchanged. Accordingly, even those who have already signed up are asked, sorry for the trouble, to register again through the company system whether they can attend on the 15th. The registration deadline is Monday 11 November. The briefing materials will be sent by email by the 14th. Mori, Planning"
+    },
+    "questions": [
+      {
+        "q": "すでに参加を申し込んだ人は、何をしなければならないか。",
+        "options": [
+          "15日に参加できるかどうかを、森さんにメールで連絡する。",
+          "資料を受け取ってから、14日までに参加を登録し直す。",
+          "11日までに、15日の参加の可否をシステムで登録し直す。",
+          "8日の申し込みが15日に移るので、改めて登録しなくてよい。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "「すでに参加を申し込まれた方も…改めて社内システムからご登録ください」，截止日期是11日。",
+          "en": "「すでに参加を申し込まれた方も…改めて社内システムからご登録ください」, with a deadline of the 11th."
+        },
+        "wrong": [
+          {
+            "zh": "要「社内システムから」重新登录，不是给森发邮件。",
+            "en": "It must be registered 「社内システムから」, not by emailing Mori."
+          },
+          {
+            "zh": "资料14日前才寄出，而登录截止是11日，不能等收到资料再登录。",
+            "en": "The materials come by the 14th, but registration closes on the 11th."
+          },
+          null,
+          {
+            "zh": "文中明确说已报名的人也要「改めて…ご登録ください」。",
+            "en": "Even those already signed up must 「改めて…ご登録ください」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-205",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "友人から悩みを打ち明けられると、私はつい解決策を考えてしまう。相手のためを思えばこそなのだが、話を最後まで聞かずに「こうすればいいよ」と言ってしまい、相手が黙り込むことも少なくなかった。\nあるとき、私が別の友人に相談すると、彼女は何も助言せず、ただうなずきながら聞いてくれた。不思議なことに、話しているうちに自分の気持ちが整理され、どうすべきかが自然に見えてきた。悩んでいる人に必要なのは、答えよりも、自分の考えをまとめるための時間なのかもしれない。",
+    "tr": {
+      "zh": "朋友向我倾诉烦恼时，我总忍不住去想解决办法。这正是为对方着想，可我常常不听完就说“这样做就好了”，结果对方沉默下来的情况也不少。有一次，我找另一位朋友商量，她什么建议也没给，只是点着头听我说。不可思议的是，说着说着我的心情就理清了，该怎么做也自然而然地看清了。烦恼的人需要的，也许不是答案，而是整理自己想法的时间。",
+      "en": "When a friend confides a worry to me, I can't help thinking up solutions. It comes from wanting to help, but I often said \"Just do this\" before hearing them out, and quite often they fell silent. Once, when I talked something over with another friend, she gave no advice at all and just listened, nodding. Strangely, as I talked, my feelings sorted themselves out and I naturally saw what to do. What a troubled person needs may be not an answer but time to put their own thoughts in order."
+    },
+    "questions": [
+      {
+        "q": "筆者の考えに合うものはどれか。",
+        "options": [
+          "悩みを打ち明けられたら、まず解決策を示すのが相手のためになる。",
+          "相談されたら、助言するより相手の話を最後まで聞くほうがいい。",
+          "友人に相談するより、一人で考えたほうが気持ちが整理できる。",
+          "助言をしない人は冷たく見えるが、実は相手のためを思っている。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "作者被只倾听的朋友帮到了，结论是「必要なのは、答えよりも…時間なのかもしれない」。",
+          "en": "A friend who only listened helped him, leading to 「必要なのは、答えよりも…時間なのかもしれない」."
+        },
+        "wrong": [
+          {
+            "zh": "这是作者过去的做法，结果对方常常沉默；作者后来认为对方更需要整理想法的时间。",
+            "en": "That was the writer's old habit, which often silenced friends; he now thinks people need time to sort their thoughts."
+          },
+          null,
+          {
+            "zh": "作者是在向只倾听的朋友倾诉的过程中理清了思路，并不是一个人想。",
+            "en": "His thoughts became clear while talking to a friend who just listened, not on his own."
+          },
+          {
+            "zh": "「相手のためを思えばこそ」说的是作者自己急着给建议的心情，不是在评价不给建议的人。",
+            "en": "「相手のためを思えばこそ」 describes the writer's own urge to advise, not people who don't advise."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-206",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、会社の社員に届いたお知らせです。",
+    "passage": "社員各位\n\n情報システム部より、勤怠管理システムの更新についてお知らせします。\n12月1日（月）から、新しいシステムに切り替わります。新システムでは、これまでのパスワードは使えません。11月25日以降に各自のメールアドレスに届く案内に従って、11月28日（金）までに新しいパスワードを設定してください。期限までに設定しなかった場合、12月1日から出勤の記録ができなくなりますので、ご注意ください。\nなお、11月中の勤怠は、これまでどおり現在のシステムに入力してください。\n\n情報システム部",
+    "tr": {
+      "zh": "各位员工：信息系统部就考勤管理系统的更新通知如下。从12月1日（周一）起将切换到新系统。新系统中，以前的密码不能再使用。请按照11月25日以后发到各自邮箱的说明，在11月28日（周五）之前设置新密码。如果在期限前没有设置，从12月1日起将无法记录出勤，请注意。另外，11月的考勤请照旧输入现在的系统。信息系统部",
+      "en": "To all staff: Information Systems would like to inform you about the update of the attendance system. From Monday 1 December we will switch to a new system. Your current password cannot be used in the new system. Please follow the instructions that will reach your email address from 25 November onwards and set a new password by Friday 28 November. Please note that if you do not set it by the deadline, you will be unable to record your attendance from 1 December. Attendance for November should be entered into the current system as before. Information Systems"
+    },
+    "questions": [
+      {
+        "q": "このお知らせを読んだ社員がしなければならないことは何か。",
+        "options": [
+          "11月中の勤怠を、12月1日以降に新システムで入力し直す。",
+          "これまでのパスワードを、28日までに新システムに登録する。",
+          "25日までに届く案内に従って、新しいパスワードを設定する。",
+          "届いた案内を見て、28日までに新しいパスワードを決める。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "「案内に従って、11月28日（金）までに新しいパスワードを設定してください」，否则12月起无法记录出勤。",
+          "en": "「案内に従って、11月28日（金）までに新しいパスワードを設定してください」 — otherwise attendance can't be recorded from December."
+        },
+        "wrong": [
+          {
+            "zh": "11月的考勤「これまでどおり現在のシステムに入力」，不用重新输入。",
+            "en": "November's attendance goes into the current system 「これまでどおり」; nothing is re-entered."
+          },
+          {
+            "zh": "新系统中「これまでのパスワードは使えません」，必须设置新密码。",
+            "en": "「これまでのパスワードは使えません」 — a new password has to be set."
+          },
+          {
+            "zh": "通知是「11月25日以降」才寄到的，不是25日之前；截止日期是28日。",
+            "en": "The instructions arrive 「11月25日以降」, not by the 25th; the deadline is the 28th."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-207",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "若い社員の中には、電話に出るのが苦手だという人が多いそうだ。メールやチャットに慣れた世代にとって、相手の顔も見えず、すぐに答えなければならない電話は、確かに緊張するものだろう。\nしかし、電話には電話のよさがある。メールでは何度もやりとりが必要な細かい確認も、電話なら数分で済むことがある。声の調子から、相手がどの程度困っているのかが伝わることもある。苦手だからと避けるのではなく、用件に応じて手段を選べるようになることが大切なのではないだろうか。",
+    "tr": {
+      "zh": "听说年轻员工中有很多人不擅长接电话。对于习惯了邮件和聊天工具的一代人来说，看不见对方的脸、又必须马上回答的电话，确实会让人紧张吧。但是，电话有电话的好处。用邮件需要来回好几次的细节确认，打电话有时几分钟就能解决。从声音的语气中，也能感受到对方有多着急。不是因为不擅长就回避，而是能够根据事情选择手段，这不才是重要的吗？",
+      "en": "Apparently many young employees say they're bad at answering the phone. For a generation used to email and chat, a phone call — where you can't see the other person's face and have to answer immediately — is surely nerve-racking. But the phone has its own merits. Detailed checks that would take several rounds of email can sometimes be settled in a few minutes on the phone. You can also tell from someone's tone of voice how much trouble they're in. Isn't what matters not avoiding it because you're bad at it, but being able to choose the means to suit the matter?"
+    },
+    "questions": [
+      {
+        "q": "筆者が最も言いたいことは何か。",
+        "options": [
+          "電話とメールは、用件によって使い分けられるようにするべきだ。",
+          "若い社員は、細かい確認はなるべくメールでなく電話でするべきだ。",
+          "電話が苦手なのは世代の問題なので、無理に慣れる必要はない。",
+          "声の調子が伝わる分、電話はメールよりも優れた手段だと言える。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "最后一句是主张：「苦手だからと避けるのではなく、用件に応じて手段を選べるようになることが大切」。",
+          "en": "The last sentence is the claim: 「苦手だからと避けるのではなく、用件に応じて手段を選べるようになることが大切」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "作者说细节确认打电话「数分で済むことがある」，但主张是按事情选择手段，不是一律用电话。",
+            "en": "A call can settle details quickly, but the claim is to choose by task, not to always phone."
+          },
+          {
+            "zh": "作者理解紧张的心情，但反对「苦手だからと避ける」。",
+            "en": "The writer understands the nerves but argues against 「苦手だからと避ける」."
+          },
+          {
+            "zh": "这是电话的优点之一，但作者没有说电话比邮件好，而是要根据事情选择。",
+            "en": "That is one merit of the phone, but the writer doesn't rank it above email — the point is choosing to suit the task."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-dk-208",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "これは、研修の参加者に届いたメールです。",
+    "passage": "新入社員研修に参加される皆様\n\n人事部の田村です。\n来週から始まる研修について、ご連絡します。研修初日の午後に、各自の担当業務について5分程度で発表していただきます。発表用の資料は必要ありませんが、話す内容を簡単にまとめたメモを、研修の前日の正午までに私宛てにメールでお送りください。いただいたメモは、講師が事前に目を通すためのもので、評価には使いません。\n研修の日程は、添付のファイルでご確認ください。\n\n人事部　田村",
+    "tr": {
+      "zh": "致参加新员工培训的各位：我是人事部的田村。关于下周开始的培训，通知如下。培训第一天下午，请每人就自己负责的业务做5分钟左右的发言。不需要准备发言用的资料，但请在培训前一天中午12点之前，把简单整理了发言内容的笔记用邮件发给我。收到的笔记是供讲师事先浏览的，不会用于评分。培训日程请查看附件。人事部 田村",
+      "en": "To all attending the new-employee training: This is Tamura from HR. Here is some information about the training that starts next week. On the afternoon of the first day, each of you will give a talk of about five minutes on your own duties. You don't need slides or handouts, but please email me a memo briefly summarising what you will say by noon on the day before the training. The memos are for the instructor to look over in advance and will not be used for evaluation. Please check the attached file for the training schedule. Tamura, HR"
+    },
+    "questions": [
+      {
+        "q": "このメールで、参加者に求められていることは何か。",
+        "options": [
+          "発表用の資料を作り、研修の前日までにメールで送ること",
+          "講師の評価を受けるメモを、研修初日の正午までに送ること",
+          "発表内容のメモを、研修の前日の昼までに人事部に送ること",
+          "添付の日程を確認して、参加できる日を人事部に返信すること"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "「話す内容を簡単にまとめたメモを、研修の前日の正午までに…お送りください」。",
+          "en": "「話す内容を簡単にまとめたメモを、研修の前日の正午までに…お送りください」 — a memo by noon the day before."
+        },
+        "wrong": [
+          {
+            "zh": "邮件写着「発表用の資料は必要ありません」，要寄的是简单的备忘录。",
+            "en": "「発表用の資料は必要ありません」 — only a short memo is needed."
+          },
+          {
+            "zh": "备忘录只是讲师事先过目用的，「評価には使いません」；期限也是前一天中午，不是第一天。",
+            "en": "The memo is 「評価には使いません」, and it's due noon the day before, not on day one."
+          },
+          null,
+          {
+            "zh": "日程只要求「ご確認ください」，没有要求回复能参加的日期。",
+            "en": "You are only asked to check the schedule (「ご確認ください」), not to reply with dates."
+          }
+        ]
+      }
+    ]
+  }
+]
