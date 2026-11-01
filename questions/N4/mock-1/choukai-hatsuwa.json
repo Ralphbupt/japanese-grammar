@@ -1,0 +1,292 @@
+[
+ {
+  "id": "n4-m1-ck-401",
+  "type": "hatsuwa",
+  "scene": "会社で レポートを 書きました。部長に 見て もらいたいです。部長に 言います。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "An office. A young man in a suit stands beside the desk of an older male manager who is sitting down. The young man holds out a few blank sheets of paper toward the manager with both hands.",
+   "arrow": "the young man standing with the papers"
+  },
+  "options": [
+   "部長、この レポートを 見て いただけませんか。",
+   "部長、この レポートを 見せて いただけませんか。",
+   "部長、この レポートを 見て あげましょうか。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在公司写好了报告，想请部长看一下。对部长说。",
+    "question": "怎么说？",
+    "options": [
+     "部长，能请您看一下这份报告吗？",
+     "部长，能请您把这份报告给我看看吗？",
+     "部长，我来帮您看看这份报告吧？"
+    ]
+   },
+   "en": {
+    "scene": "At work you've written a report and want the department manager to look at it. You say to the manager:",
+    "question": "What do you say?",
+    "options": [
+     "Could you take a look at this report, please?",
+     "Could you show me this report, please?",
+     "Shall I look over this report for you?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "要部长看，是请对方做事；对上司用「〜て いただけませんか」：「見て いただけませんか」。",
+   "en": "You want the manager to do the looking, and to a superior you ask with 「〜て いただけませんか」: 「見て いただけませんか」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「見せて」是让对方给你看，可是报告在你手里，要看的人是部长。",
+    "en": "「見せて」 asks him to show it to you — but you're holding the report and he's the one who should look."
+   },
+   {
+    "zh": "「見て あげましょうか」是你主动替对方看，方向反了，对上司说也很失礼。",
+    "en": "「見て あげましょうか」 offers to look at it for him — the wrong way round, and rude to a superior."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n4-m1-ck-402",
+  "type": "hatsuwa",
+  "scene": "駅まで 急いで 行かなければ なりません。友だちの 自転車を 借りたいです。友だちに 聞きます。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "In front of a house. A young woman holding a shoulder bag is glancing at her wristwatch in a hurry. She is talking to another young woman, her friend, who stands next to a bicycle.",
+   "arrow": "the young woman looking at her wristwatch"
+  },
+  "options": [
+   "自転車、貸して あげようか。",
+   "自転車、借りても いい？",
+   "自転車、貸しても いい？"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "必须赶紧去车站。想借朋友的自行车。问朋友。",
+    "question": "怎么说？",
+    "options": [
+     "自行车，我借给你吧？",
+     "自行车，我可以借一下吗？",
+     "自行车，我可以借给别人吗？"
+    ]
+   },
+   "en": {
+    "scene": "You have to hurry to the station and want to borrow your friend's bicycle. You ask your friend:",
+    "question": "What do you say?",
+    "options": [
+     "Want me to lend you my bike?",
+     "Can I borrow your bike?",
+     "Is it OK if I lend out the bike?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "自己从朋友那里借，用「借りる」，征求同意用「〜ても いい？」：「借りても いい？」。",
+   "en": "You are taking the bike from your friend, so it's 「借りる」 (borrow), and you ask permission with 「〜ても いい？」."
+  },
+  "wrong": [
+   {
+    "zh": "「貸して あげようか」是你把自行车借给对方，借和被借的方向反了。",
+    "en": "「貸して あげようか」 offers to lend your bike to her — the direction is reversed."
+   },
+   null,
+   {
+    "zh": "「貸す」是借出去，「貸しても いい？」是问能不能把车借给别人，不是你要借。",
+    "en": "「貸す」 means lend out; 「貸しても いい？」 asks whether you may lend the bike to someone, not borrow it."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n4-m1-ck-403",
+  "type": "hatsuwa",
+  "scene": "友だちが かぜで ねて います。うちに くすりが ありません。あなたが 買いに 行きます。友だちに 言います。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A bedroom. A young man lies in bed under a blanket, looking ill, with a folded towel on his forehead. Another young man, his friend, stands beside the bed wearing a coat and holding a wallet.",
+   "arrow": "the young man standing beside the bed in a coat"
+  },
+  "options": [
+   "くすり、買って きて くれる？",
+   "くすり、もう 買って きたよ。",
+   "くすり、買って こようか。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "朋友感冒在床上躺着。家里没有药。你要去买。对朋友说。",
+    "question": "怎么说？",
+    "options": [
+     "药，你能去买回来吗？",
+     "药，我已经买回来了哦。",
+     "药，我去买回来吧？"
+    ]
+   },
+   "en": {
+    "scene": "Your friend is in bed with a cold, and there's no medicine at home. You're going to buy some. You say to your friend:",
+    "question": "What do you say?",
+    "options": [
+     "Can you go and buy some medicine?",
+     "I've already bought the medicine.",
+     "Shall I go and get some medicine?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "你主动提出去买，用意向形「〜（よ）うか」：「買って こようか」。",
+   "en": "You're offering to go, so you use the volitional 「〜（よ）うか」: 「買って こようか」."
+  },
+  "wrong": [
+   {
+    "zh": "「買って きて くれる？」是请生病的朋友去买，立场反了。",
+    "en": "「買って きて くれる？」 asks your sick friend to go and buy it — the wrong way round."
+   },
+   {
+    "zh": "「もう 買って きた」是已经买回来了，可是你现在才要去。",
+    "en": "「もう 買って きた」 says you've already been and bought it; you haven't gone yet."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "tense"
+  ]
+ },
+ {
+  "id": "n4-m1-ck-404",
+  "type": "hatsuwa",
+  "scene": "図書館で 借りた 本を よごして しまいました。今日 その 本を 返します。図書館の 人に 言います。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A library counter. A young woman hands a book with a large dark stain on its cover to a male librarian standing behind the counter. She is bowing her head slightly.",
+   "arrow": "the young woman handing over the book"
+  },
+  "options": [
+   "すみません、本を よごして しまいました。",
+   "この 本は よごさないで くださいね。",
+   "この 本、よごしても いいでしょうか。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "把从图书馆借的书弄脏了。今天去还书。对图书馆的人说。",
+    "question": "怎么说？",
+    "options": [
+     "对不起，我把书弄脏了。",
+     "这本书请不要弄脏哦。",
+     "这本书，我可以弄脏吗？"
+    ]
+   },
+   "en": {
+    "scene": "You got a library book dirty, and today you're returning it. You say to the librarian:",
+    "question": "What do you say?",
+    "options": [
+     "I'm sorry, I got the book dirty.",
+     "Please don't get this book dirty.",
+     "Would it be all right if I got this book dirty?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "书已经弄脏了，要道歉，用「〜て しまいました」表示做了不好的事：「すみません、よごして しまいました」。",
+   "en": "The damage is done, so you apologise, with 「〜て しまいました」 for something unfortunate: 「すみません、よごして しまいました」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「よごさないで ください」是提醒别人别弄脏，是图书馆的人才会说的话。",
+    "en": "「よごさないで ください」 warns someone not to dirty it — that's the librarian's line."
+   },
+   {
+    "zh": "「よごしても いいでしょうか」是在弄脏之前请求许可，可书已经脏了，也没人会这样请求。",
+    "en": "「よごしても いいでしょうか」 asks permission beforehand — the book is already dirty, and nobody asks that."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "timing"
+  ]
+ },
+ {
+  "id": "n4-m1-ck-405",
+  "type": "hatsuwa",
+  "scene": "会社で、山田さんは あたまが いたいので、今日は 早く 帰ります。山田さんに 言います。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "An office. A woman in a coat, holding a bag, walks toward the door with one hand pressed to her head, looking unwell. A male coworker sitting at his desk turns to look at her.",
+   "arrow": "the man sitting at his desk"
+  },
+  "options": [
+   "山田さん、お先に しつれいします。",
+   "山田さん、お大事に。",
+   "山田さん、おかげさまで。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在公司，山田头疼，今天提早回家。对山田说。",
+    "question": "怎么说？",
+    "options": [
+     "山田，我先走了。",
+     "山田，多保重。",
+     "山田，托您的福。"
+    ]
+   },
+   "en": {
+    "scene": "At work, Ms Yamada has a headache and is going home early today. You say to her:",
+    "question": "What do you say?",
+    "options": [
+     "I'm off now, Ms Yamada.",
+     "Take care of yourself, Ms Yamada.",
+     "Thanks to you, Ms Yamada."
+    ]
+   }
+  },
+  "why": {
+   "zh": "对生病、身体不舒服的人，送别时说「お大事に」。",
+   "en": "To someone who is ill or feeling unwell, you say 「お大事に」 as they leave."
+  },
+  "wrong": [
+   {
+    "zh": "「お先に しつれいします」是自己先下班时说的，现在先走的是山田，不是你。",
+    "en": "「お先に しつれいします」 is what you say when you leave first — here Yamada is leaving, not you."
+   },
+   null,
+   {
+    "zh": "「おかげさまで」是别人问候你的近况时的回答，这里谁也没问你。",
+    "en": "「おかげさまで」 answers someone asking how you are — nobody asked you anything."
+   }
+  ],
+  "traps": [
+   "timing",
+   "perspective"
+  ]
+ }
+]

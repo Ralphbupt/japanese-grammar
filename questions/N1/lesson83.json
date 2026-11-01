@@ -1,0 +1,698 @@
+[
+  {
+    "id": "n1-l83-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson83#1"
+    ],
+    "difficulty": 1,
+    "stem": "今回の交渉の結果（　）、工場を閉鎖するかどうかが決まる。",
+    "options": [
+      "いかんにかかわらず",
+      "をよそに",
+      "いかんで",
+      "に即して"
+    ],
+    "answer": 2,
+    "full": "今回の交渉の結果いかんで、工場を閉鎖するかどうかが決まる。",
+    "tr": {
+      "zh": "这次谈判的结果将决定是否关闭工厂。",
+      "en": "Whether the factory closes will be decided by the outcome of these negotiations."
+    },
+    "why": {
+      "zh": "后项是「決まる」（由此决定），前面是会变化的「結果」，用「いかんで」（取决于……）。",
+      "en": "The main clause is 「決まる」 (gets decided) and 「結果」 can turn out either way — 「いかんで」 (depending on)."
+    },
+    "wrong": [
+      {
+        "zh": "「いかんにかかわらず」是“不管……如何”，与后项“由此决定”矛盾。",
+        "en": "「いかんにかかわらず」 (regardless of) contradicts \"will be decided by it\"."
+      },
+      {
+        "zh": "「をよそに」是“不顾……”，前面应是别人的担心、反对等，不是谈判结果。",
+        "en": "「をよそに」 (paying no heed to) takes others' worries or objections, not an outcome."
+      },
+      null,
+      {
+        "zh": "「に即して」是“按照（事实、规定）”，和「決まる」搭不上，也不表示取决于。",
+        "en": "「に即して」 (in line with facts/rules) doesn't mean \"depending on\" and doesn't fit 「決まる」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l83-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson83#1"
+    ],
+    "difficulty": 2,
+    "stem": "再調査の結果（　）、受賞が取り消される可能性もある。",
+    "options": [
+      "いかんを問わず",
+      "いかんによっては",
+      "にかかわる",
+      "によらず"
+    ],
+    "answer": 1,
+    "full": "再調査の結果いかんによっては、受賞が取り消される可能性もある。",
+    "tr": {
+      "zh": "根据重新调查的结果，也有可能被取消获奖资格。",
+      "en": "Depending on the results of the re-investigation, the award may even be withdrawn."
+    },
+    "why": {
+      "zh": "后项「〜可能性もある」只举出一种（严重的）可能，用「いかんによっては」（根据……情况，有时……）。",
+      "en": "「〜可能性もある」 names one (serious) possible outcome — 「いかんによっては」 (depending on …, possibly even …)."
+    },
+    "wrong": [
+      {
+        "zh": "「いかんを問わず」是“不管……如何”，与“视结果可能被取消”矛盾。",
+        "en": "「いかんを問わず」 (whatever it is) contradicts an outcome that depends on the results."
+      },
+      null,
+      {
+        "zh": "「にかかわる」是“事关……”，要接名词或作谓语，不能用逗号接后句。",
+        "en": "「にかかわる」 (affecting) modifies a noun or ends the clause; it can't link to the next clause like this."
+      },
+      {
+        "zh": "「によらず」是“不论……”，与“视结果而定”的意思相反。",
+        "en": "「によらず」 (regardless of) is the opposite of \"depending on the results\"."
+      }
+    ]
+  },
+  {
+    "id": "n1-l83-003",
+    "type": "narabe",
+    "refs": [
+      "lesson83#1"
+    ],
+    "difficulty": 2,
+    "stem": "この計画が [_] [_] [★] [_] にかかっている。",
+    "options": [
+      "住民の理解",
+      "成功するか",
+      "いかん",
+      "どうかは"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "この計画が成功するかどうかは住民の理解いかんにかかっている。",
+    "tr": {
+      "zh": "这个计划能否成功，取决于居民的理解。",
+      "en": "Whether this plan succeeds depends on how far residents understand it."
+    },
+    "why": {
+      "zh": "主题「成功するかどうかは」在前，后接「名詞＋いかんにかかっている」：成功するか → どうかは → 住民の理解 → いかん。★ 是「住民の理解」。",
+      "en": "The topic 「成功するかどうかは」 comes first, then noun + 「いかんにかかっている」: 成功するか → どうかは → 住民の理解 → いかん. The ★ is 「住民の理解」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l83-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson83#2"
+    ],
+    "difficulty": 2,
+    "stem": "理由の（　）、一度納入された受験料は一切返還いたしません。",
+    "options": [
+      "いかんで",
+      "いかんによっては",
+      "いかんを問わず",
+      "いかんだ"
+    ],
+    "answer": 2,
+    "full": "理由のいかんを問わず、一度納入された受験料は一切返還いたしません。",
+    "tr": {
+      "zh": "无论理由如何，已缴纳的考试费一律不予退还。",
+      "en": "Once paid, the exam fee will not be refunded under any circumstances, whatever the reason."
+    },
+    "why": {
+      "zh": "「一切返還いたしません」是不变的规定，与理由无关，用「のいかんを問わず」（不管……如何）。",
+      "en": "「一切返還いたしません」 is a fixed rule that doesn't depend on the reason — 「のいかんを問わず」 (whatever … may be)."
+    },
+    "wrong": [
+      {
+        "zh": "「いかんで」是“取决于……”，与「一切」（一律）矛盾。",
+        "en": "「いかんで」 (depending on) contradicts 「一切」 (in no case)."
+      },
+      {
+        "zh": "「いかんによっては」是“视情况有时……”，与「一切」矛盾。",
+        "en": "「いかんによっては」 (in some cases, depending on) contradicts 「一切」."
+      },
+      null,
+      {
+        "zh": "「いかんだ」用来结句（要看……），不能接逗号后再接句子。",
+        "en": "「いかんだ」 ends a sentence (it depends on …); it can't be followed by another clause."
+      }
+    ]
+  },
+  {
+    "id": "n1-l83-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson83#2"
+    ],
+    "difficulty": 2,
+    "stem": "監督は、試合の結果の（　）今季限りで退任する意向をすでに固めている。",
+    "options": [
+      "いかんで",
+      "いかんにかかわらず",
+      "いかんによっては",
+      "いかんにかかっている"
+    ],
+    "answer": 1,
+    "full": "監督は、試合の結果のいかんにかかわらず今季限りで退任する意向をすでに固めている。",
+    "tr": {
+      "zh": "教练已经下定决心，不管比赛结果如何，都将在本赛季结束后卸任。",
+      "en": "The coach has already made up his mind to step down at the end of this season, whatever the result of the match."
+    },
+    "why": {
+      "zh": "「すでに固めている」说明决定已定，和比赛结果无关，用「のいかんにかかわらず」（不管……如何）。",
+      "en": "「すでに固めている」 says the decision is already made, whatever the result — 「のいかんにかかわらず」 (regardless of)."
+    },
+    "wrong": [
+      {
+        "zh": "「いかんで」是“取决于结果”，和“已经下定决心”矛盾。",
+        "en": "「いかんで」 (depending on the result) contradicts a decision already made."
+      },
+      null,
+      {
+        "zh": "「いかんによっては」是“视结果有时……”，同样和「すでに固めている」矛盾。",
+        "en": "「いかんによっては」 (depending on the result, possibly) also contradicts 「すでに固めている」."
+      },
+      {
+        "zh": "「いかんにかかっている」是谓语形式（取决于……），不能修饰后面的「今季限りで退任する」。",
+        "en": "「いかんにかかっている」 is a predicate (it depends on …) and can't lead into 「今季限りで退任する」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l83-006",
+    "type": "narabe",
+    "refs": [
+      "lesson83#2"
+    ],
+    "difficulty": 2,
+    "stem": "社内規定では、 [_] [_] [_] [★] 、無断欠勤は処分の対象となる。",
+    "options": [
+      "いかん",
+      "よらず",
+      "事情の",
+      "に"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "社内規定では、事情のいかんによらず、無断欠勤は処分の対象となる。",
+    "tr": {
+      "zh": "按照公司规定，不管有什么情况，无故旷工都将受到处分。",
+      "en": "Under company rules, unauthorised absence is subject to disciplinary action whatever the circumstances."
+    },
+    "why": {
+      "zh": "固定搭配「事情のいかんによらず」：事情の → いかん → に → よらず。★ 是「よらず」。",
+      "en": "The set phrase 「事情のいかんによらず」: 事情の → いかん → に → よらず. The ★ is 「よらず」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l83-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson83#3"
+    ],
+    "difficulty": 1,
+    "stem": "親の心配（　）、息子は大学を辞めて世界一周の旅に出てしまった。",
+    "options": [
+      "をものともせず",
+      "をよそに",
+      "を禁じ得ず",
+      "にかこつけて"
+    ],
+    "answer": 1,
+    "full": "親の心配をよそに、息子は大学を辞めて世界一周の旅に出てしまった。",
+    "tr": {
+      "zh": "儿子不顾父母的担心，退了学去环游世界了。",
+      "en": "Paying no heed to his parents' worries, the son quit university and set off on a trip around the world."
+    },
+    "why": {
+      "zh": "前面是别人（父母）的担心，主语（儿子）毫不理会照自己的意思行动，用「をよそに」。",
+      "en": "Before the blank is someone else's worry (the parents'), which the son ignores to do as he likes — 「をよそに」."
+    },
+    "wrong": [
+      {
+        "zh": "「をものともせず」用于不畏困难、伤痛等，前面不是别人的担心，也不带批评语气。",
+        "en": "「をものともせず」 is for braving hardships or injuries, not for ignoring others' worries."
+      },
+      null,
+      {
+        "zh": "「を禁じ得ず」前面是说话人自己的感情（不禁……），和“儿子退学”接不上。",
+        "en": "「を禁じ得ず」 is about one's own feeling welling up, not about ignoring the parents."
+      },
+      {
+        "zh": "「にかこつけて」是“以……为借口”，“以父母的担心为借口去旅行”意思不通。",
+        "en": "「にかこつけて」 (on the pretext of) — using his parents' worry as an excuse to travel makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n1-l83-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson83#3"
+    ],
+    "difficulty": 2,
+    "stem": "都会の喧騒（　）、この山里では今も昔ながらの暮らしが営まれている。",
+    "options": [
+      "をものともせず",
+      "にかこつけて",
+      "をよそに",
+      "いかんによらず"
+    ],
+    "answer": 2,
+    "full": "都会の喧騒をよそに、この山里では今も昔ながらの暮らしが営まれている。",
+    "tr": {
+      "zh": "这个山村远离都市的喧嚣，至今仍过着传统的生活。",
+      "en": "Untouched by the bustle of the city, this mountain village still lives in the old ways."
+    },
+    "why": {
+      "zh": "某处完全不受周围状况（都市的喧嚣）影响，照样如故，是「をよそに」的第二种用法。",
+      "en": "A place carrying on untouched by its surroundings (the city's bustle) is the second use of 「をよそに」."
+    },
+    "wrong": [
+      {
+        "zh": "「をものともせず」是“不畏（困难）”，都市的喧嚣不是山村要克服的困难。",
+        "en": "「をものともせず」 means braving a hardship; city bustle isn't an obstacle the village overcomes."
+      },
+      {
+        "zh": "「にかこつけて」是“以……为借口”，和句意无关。",
+        "en": "「にかこつけて」 (on the pretext of) has nothing to do with this sentence."
+      },
+      null,
+      {
+        "zh": "「いかんによらず」前面是理由、结果等“内容怎么样”的名词，而且要加「の」，不接「喧騒」。",
+        "en": "「いかんによらず」 takes nouns like reason or result (usually with 「の」), not 「喧騒」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l83-009",
+    "type": "narabe",
+    "refs": [
+      "lesson83#3"
+    ],
+    "difficulty": 2,
+    "stem": "市は [★] [_] [_] [_] 、高層マンションの建設を強行した。",
+    "options": [
+      "よそに",
+      "反対",
+      "住民の",
+      "を"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "市は住民の反対をよそに、高層マンションの建設を強行した。",
+    "tr": {
+      "zh": "市政府不顾居民的反对，强行建设高层公寓。",
+      "en": "Ignoring residents' opposition, the city pushed ahead with building the high-rise apartments."
+    },
+    "why": {
+      "zh": "「住民の反対」是别人的反对，后接「をよそに」：住民の → 反対 → を → よそに。★ 是「住民の」。",
+      "en": "「住民の反対」 is someone else's objection, followed by 「をよそに」: 住民の → 反対 → を → よそに. The ★ is 「住民の」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l83-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson83#4"
+    ],
+    "difficulty": 2,
+    "stem": "この問題は多数決（　）、全員が納得するまで話し合って決めたい。",
+    "options": [
+      "を問わず",
+      "にかかわらず",
+      "によらず",
+      "をよそに"
+    ],
+    "answer": 2,
+    "full": "この問題は多数決によらず、全員が納得するまで話し合って決めたい。",
+    "tr": {
+      "zh": "这个问题我不想靠多数表决，而想讨论到大家都认同为止再决定。",
+      "en": "I'd like to settle this not by majority vote but by talking it over until everyone is satisfied."
+    },
+    "why": {
+      "zh": "“不靠多数表决（这种手段）”，只有「によらず」有“不靠……、不通过……”的意思。",
+      "en": "\"Not by means of a majority vote\" — only 「によらず」 has the sense \"without relying on (a method)\"."
+    },
+    "wrong": [
+      {
+        "zh": "「を問わず」是“不论……”，前面是范围、对立概念，没有“不靠某种手段”的意思。",
+        "en": "「を問わず」 (regardless of) takes ranges or pairs and can't mean \"not by means of\"."
+      },
+      {
+        "zh": "「にかかわらず」是“不论……”，“不论多数表决”意思不通。",
+        "en": "「にかかわらず」 (regardless of) — \"regardless of majority vote\" makes no sense."
+      },
+      null,
+      {
+        "zh": "「をよそに」是“不顾（别人的担心、反对）”，多数表决不是这类东西。",
+        "en": "「をよそに」 ignores others' worries or objections; a majority vote isn't one."
+      }
+    ]
+  },
+  {
+    "id": "n1-l83-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson83#4"
+    ],
+    "difficulty": 1,
+    "stem": "彼は（　）、とても涙もろい人だ。",
+    "options": [
+      "見かけを問わず",
+      "見かけによらず",
+      "見かけにかかわらず",
+      "見かけのいかんで"
+    ],
+    "answer": 1,
+    "full": "彼は見かけによらず、とても涙もろい人だ。",
+    "tr": {
+      "zh": "他看起来不像，其实是个很容易感动落泪的人。",
+      "en": "You wouldn't think it to look at him, but he's easily moved to tears."
+    },
+    "why": {
+      "zh": "「見かけによらず」是固定说法：与外表不同，人不可貌相。",
+      "en": "「見かけによらず」 is the set phrase: contrary to appearances."
+    },
+    "wrong": [
+      {
+        "zh": "「を問わず」没有“与外表不同”的意思，「見かけを問わず」不是固定说法。",
+        "en": "「見かけを問わず」 isn't a set phrase and doesn't mean \"contrary to looks\"."
+      },
+      null,
+      {
+        "zh": "「見かけにかかわらず」是“不论外表如何”，不表示“看不出来其实……”。",
+        "en": "「見かけにかかわらず」 means \"whatever his looks\", not \"contrary to appearances\"."
+      },
+      {
+        "zh": "「いかんで」是“取决于……”，“取决于外表，是爱哭的人”意思不通。",
+        "en": "「いかんで」 (depending on) — \"depending on looks, he cries easily\" makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n1-l83-012",
+    "type": "narabe",
+    "refs": [
+      "lesson83#4"
+    ],
+    "difficulty": 2,
+    "stem": "当社では [_] [★] [_] [_] 、意欲のある人材を積極的に採用している。",
+    "options": [
+      "に",
+      "よらず",
+      "年齢や",
+      "国籍"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "当社では年齢や国籍によらず、意欲のある人材を積極的に採用している。",
+    "tr": {
+      "zh": "本公司不论年龄、国籍，积极录用有干劲的人才。",
+      "en": "Regardless of age or nationality, we actively hire people who are keen to work."
+    },
+    "why": {
+      "zh": "「年齢や国籍」是类别名词，后接「によらず」：年齢や → 国籍 → に → よらず。★ 是「国籍」。",
+      "en": "「年齢や国籍」 are categories, followed by 「によらず」: 年齢や → 国籍 → に → よらず. The ★ is 「国籍」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l83-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson83#5"
+    ],
+    "difficulty": 2,
+    "stem": "この教材は学習者の実態（　）作られているので、現場の教師からの評価が高い。",
+    "options": [
+      "をよそに",
+      "に即して",
+      "にかこつけて",
+      "いかんで"
+    ],
+    "answer": 1,
+    "full": "この教材は学習者の実態に即して作られているので、現場の教師からの評価が高い。",
+    "tr": {
+      "zh": "这套教材是结合学习者的实际情况编写的，所以深受一线教师好评。",
+      "en": "This textbook is built around how learners actually are, so teachers on the ground rate it highly."
+    },
+    "why": {
+      "zh": "「実態」是客观的实际情况，“紧贴实际编写”用「に即して」，所以才受好评。",
+      "en": "「実態」 is the actual state of things; writing closely in line with it is 「に即して」 — hence the praise."
+    },
+    "wrong": [
+      {
+        "zh": "「をよそに」是“不顾……”，不顾实际情况编写不会受好评，和后句矛盾。",
+        "en": "「をよそに」 (ignoring) — ignoring learners' reality wouldn't earn praise."
+      },
+      null,
+      {
+        "zh": "「にかこつけて」是“以……为借口”，“以实际情况为借口编写”意思不通。",
+        "en": "「にかこつけて」 (on the pretext of) makes no sense with how a textbook is written."
+      },
+      {
+        "zh": "「いかんで」是“取决于……”，后项多是「決まる」「変わる」，和「作られている」搭不上。",
+        "en": "「いかんで」 (depending on) leads to 「決まる」 or 「変わる」, not 「作られている」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l83-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson83#5"
+    ],
+    "difficulty": 2,
+    "stem": "被災地で今必要なのは、現場の実情（　）きめ細かな支援だ。",
+    "options": [
+      "に即して",
+      "に即した",
+      "にかかわらず",
+      "いかんで"
+    ],
+    "answer": 1,
+    "full": "被災地で今必要なのは、現場の実情に即したきめ細かな支援だ。",
+    "tr": {
+      "zh": "灾区现在需要的，是符合现场实际情况的细致援助。",
+      "en": "What the disaster area needs now is careful support grounded in the actual conditions on the ground."
+    },
+    "why": {
+      "zh": "后面是名词「支援」，修饰名词用「に即した＋名詞」。",
+      "en": "A noun, 「支援」, follows, so the noun-modifying 「に即した＋名詞」 is needed."
+    },
+    "wrong": [
+      {
+        "zh": "「に即して」是副词性的，修饰动词，不能直接修饰名词「支援」。",
+        "en": "「に即して」 is adverbial and modifies verbs, not the noun 「支援」."
+      },
+      null,
+      {
+        "zh": "「にかかわらず」是“不论……”，不能直接修饰名词，而且“不论实际情况的援助”意思相反。",
+        "en": "「にかかわらず」 (regardless of) can't modify a noun, and the meaning is the opposite."
+      },
+      {
+        "zh": "「いかんで」是“取决于……”，不能修饰名词，也不是灾区“需要”的内容。",
+        "en": "「いかんで」 (depending on) can't modify a noun and doesn't fit the sentence."
+      }
+    ]
+  },
+  {
+    "id": "n1-l83-015",
+    "type": "narabe",
+    "refs": [
+      "lesson83#5"
+    ],
+    "difficulty": 2,
+    "stem": "理論だけでなく、 [_] [_] [★] [_] みることが大切だ。",
+    "options": [
+      "考えて",
+      "事例に",
+      "具体的な",
+      "即して"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "理論だけでなく、具体的な事例に即して考えてみることが大切だ。",
+    "tr": {
+      "zh": "不只是讲理论，结合具体案例来思考也很重要。",
+      "en": "It's important not just to theorise but to think things through in terms of concrete cases."
+    },
+    "why": {
+      "zh": "「具体的な事例」后接「に即して」，再接动词「考えてみる」：具体的な → 事例に → 即して → 考えて。★ 是「即して」。",
+      "en": "「具体的な事例」 takes 「に即して」, then the verb 「考えてみる」: 具体的な → 事例に → 即して → 考えて. The ★ is 「即して」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l83-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson83#6"
+    ],
+    "difficulty": 1,
+    "stem": "頭を強く打った場合は、命（　）こともあるので、すぐに病院へ行ってください。",
+    "options": [
+      "に関する",
+      "にかかわらず",
+      "にかかわる",
+      "いかんだ"
+    ],
+    "answer": 2,
+    "full": "頭を強く打った場合は、命にかかわることもあるので、すぐに病院へ行ってください。",
+    "tr": {
+      "zh": "头部受到重击时有可能危及生命，请马上去医院。",
+      "en": "A hard blow to the head can be life-threatening, so please go to hospital at once."
+    },
+    "why": {
+      "zh": "“危及生命”是固定说法「命にかかわる」（事关重大的东西）。",
+      "en": "\"Life-threatening\" is the set phrase 「命にかかわる」 (affecting something vital)."
+    },
+    "wrong": [
+      {
+        "zh": "「に関する」只表示话题“关于……”，要修饰名词，「命に関すること」意思不对。",
+        "en": "「に関する」 only marks a topic (about …) and doesn't mean \"threatening\"."
+      },
+      {
+        "zh": "「にかかわらず」是“不论……”，和「にかかわる」外形相近但意思无关。",
+        "en": "「にかかわらず」 (regardless of) looks similar but means something unrelated."
+      },
+      null,
+      {
+        "zh": "「いかんだ」用于结句（要看……如何），后面不能接「こともある」。",
+        "en": "「いかんだ」 ends a sentence (depends on …) and can't take 「こともある」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l83-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson83#6"
+    ],
+    "difficulty": 2,
+    "stem": "そんな安い報酬で仕事を引き受けたら、プロとしての沽券（　）。",
+    "options": [
+      "にかかわらず",
+      "に即する",
+      "にかかわる",
+      "いかんだ"
+    ],
+    "answer": 2,
+    "full": "そんな安い報酬で仕事を引き受けたら、プロとしての沽券にかかわる。",
+    "tr": {
+      "zh": "要是用那么低的报酬接活，有失专业人士的身份。",
+      "en": "Taking a job for such a low fee would be beneath my dignity as a professional."
+    },
+    "why": {
+      "zh": "「沽券にかかわる」是固定说法：有损身份、体面。",
+      "en": "「沽券にかかわる」 is a set phrase: it would hurt one's dignity."
+    },
+    "wrong": [
+      {
+        "zh": "「にかかわらず」是“不论……”，不能结句，也和「沽券」不搭配。",
+        "en": "「にかかわらず」 (regardless of) can't end the sentence and doesn't go with 「沽券」."
+      },
+      {
+        "zh": "「に即する」是“符合（事实、规定）”，“符合身份”不是这个说法。",
+        "en": "「に即する」 (conform to facts or rules) doesn't go with 「沽券」."
+      },
+      null,
+      {
+        "zh": "「いかんだ」是“要看……如何”，身份体面不是“结果、内容”类名词，意思不通。",
+        "en": "「いかんだ」 (it depends on) makes no sense with 「沽券」."
+      }
+    ]
+  },
+  {
+    "id": "n1-l83-018",
+    "type": "narabe",
+    "refs": [
+      "lesson83#6"
+    ],
+    "difficulty": 2,
+    "stem": "これは [_] [_] [_] [★] 、慎重に判断してほしい。",
+    "options": [
+      "かかわる",
+      "問題なので",
+      "会社の",
+      "将来に"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "これは会社の将来にかかわる問題なので、慎重に判断してほしい。",
+    "tr": {
+      "zh": "这是关系到公司将来的问题，希望你慎重判断。",
+      "en": "This is a matter that affects the company's future, so I want you to decide carefully."
+    },
+    "why": {
+      "zh": "「会社の将来にかかわる」修饰名词「問題」：会社の → 将来に → かかわる → 問題なので。★ 是「問題なので」。",
+      "en": "「会社の将来にかかわる」 modifies the noun 「問題」: 会社の → 将来に → かかわる → 問題なので. The ★ is 「問題なので」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

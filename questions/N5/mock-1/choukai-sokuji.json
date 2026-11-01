@@ -1,0 +1,351 @@
+[
+ {
+  "id": "n5-m1-ck-501",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "これ、京都の おかしです。どうぞ。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "わあ、ありがとう ございます。",
+   "いいえ、どう いたしまして。",
+   "はい、どうぞ どうぞ。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这是京都的点心。请收下。"
+    ],
+    "options": [
+     "哇，谢谢。",
+     "不，不客气。",
+     "好，请请。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "These are sweets from Kyoto. Here you are."
+    ],
+    "options": [
+     "Oh, thank you very much.",
+     "Not at all, you're welcome.",
+     "Yes, go ahead, go ahead."
+    ]
+   }
+  },
+  "why": {
+   "zh": "对方送东西给你，收下时道谢：「ありがとう ございます」。",
+   "en": "Someone is giving you something, so you thank them: 「ありがとう ございます」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「どう いたしまして」是回应别人道谢的话，是送东西的人才会说的。",
+    "en": "「どう いたしまして」 answers someone's thanks — it's the giver's line."
+   },
+   {
+    "zh": "「どうぞ」是把东西递给别人时说的，这里你是收东西的人。",
+    "en": "「どうぞ」 is said when offering something; you're the one receiving."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "timing"
+  ]
+ },
+ {
+  "id": "n5-m1-ck-502",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "はじめまして。田中です。どうぞ よろしく。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "はい、どう いたしまして。",
+   "山田です。どうぞ よろしく。",
+   "はい、田中です。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "初次见面，我是田中。请多关照。"
+    ],
+    "options": [
+     "好的，不客气。",
+     "我是山田。请多关照。",
+     "是的，我是田中。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Nice to meet you. I'm Tanaka."
+    ],
+    "options": [
+     "Yes, you're welcome.",
+     "I'm Yamada. Nice to meet you.",
+     "Yes, I'm Tanaka."
+    ]
+   }
+  },
+  "why": {
+   "zh": "初次见面对方自我介绍后，也报上自己的名字，说「よろしく」。",
+   "en": "When someone introduces themselves, you give your own name and 「よろしく」 back."
+  },
+  "wrong": [
+   {
+    "zh": "「どう いたしまして」回应的是道谢，对方没有道谢。",
+    "en": "「どう いたしまして」 answers thanks — nobody thanked you."
+   },
+   null,
+   {
+    "zh": "照搬了对方的名字，自己并不是田中。",
+    "en": "Echoes his name — she isn't Tanaka."
+   }
+  ],
+  "traps": [
+   "timing",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n5-m1-ck-503",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "あ、ここに かさが ありますね。だれのですか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "青い かさですね。",
+   "駅で 買いました。",
+   "山田さんのです。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "啊，这里有把伞。是谁的？"
+    ],
+    "options": [
+     "是把蓝色的伞呢。",
+     "在车站买的。",
+     "是山田的。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Oh, there's an umbrella here. Whose is it?"
+    ],
+    "options": [
+     "It's a blue umbrella, isn't it.",
+     "I bought it at the station.",
+     "It's Yamada's."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「だれの」问的是谁的东西，回答要说出主人：「山田さんのです」。",
+   "en": "「だれの」 asks whose it is, so you name the owner: 「山田さんのです」."
+  },
+  "wrong": [
+   {
+    "zh": "说的是伞的颜色，没有回答是谁的。",
+    "en": "It describes the colour, not whose it is."
+   },
+   {
+    "zh": "说的是在哪里买的，回答的是「どこで」。",
+    "en": "It says where it was bought — that answers 「どこで」, not 「だれの」."
+   },
+   null
+  ],
+  "traps": [
+   "question-word",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n5-m1-ck-504",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "きのうの パーティーは どうでしたか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "あしたも 行きます。",
+   "パーティーは 七時からです。",
+   "とても にぎやかでした。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "昨天的聚会怎么样？"
+    ],
+    "options": [
+     "明天也去。",
+     "派对七点开始。",
+     "非常热闹。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "How was the party yesterday?"
+    ],
+    "options": [
+     "I'm going tomorrow too.",
+     "The party starts at seven.",
+     "It was really lively."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「どうでしたか」问的是昨天的感想，用过去式回答：「にぎやかでした」。",
+   "en": "「どうでしたか」 asks how yesterday's party was; answer with an impression in the past: 「にぎやかでした」."
+  },
+  "wrong": [
+   {
+    "zh": "问的是昨天，回答却说明天的打算。",
+    "en": "The question is about yesterday; this talks about tomorrow."
+   },
+   {
+    "zh": "回答的是几点开始，不是派对怎么样；而且问的是昨天的事。",
+    "en": "Answers when it starts, not how it was — and the party was yesterday."
+   },
+   null
+  ],
+  "traps": [
+   "tense",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n5-m1-ck-505",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "あしたの 夜、うちで パーティーを します。山田さんも 来ませんか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "ええ、ぜひ 行きます。",
+   "はい、きのう しました。",
+   "はい、どうぞ 来て ください。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "明天晚上在我家开聚会。山田你也来吧？"
+    ],
+    "options": [
+     "好啊，一定去。",
+     "是的，昨天办了。",
+     "好的，请来吧。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "We're having a party at my place tomorrow evening. Would you like to come too, Yamada?"
+    ],
+    "options": [
+     "Sure, I'd love to come.",
+     "Yes, we had it yesterday.",
+     "Sure, please come."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「来ませんか」是邀请，接受时说「ええ、ぜひ 行きます」。",
+   "en": "「来ませんか」 is an invitation; 「ええ、ぜひ 行きます」 accepts it."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "把邀请听成了报告，而且说的是昨天的事。",
+    "en": "It treats the invitation as news and talks about yesterday."
+   },
+   {
+    "zh": "这是邀请人说的话，立场反了。",
+    "en": "That's what the host would say — the roles are reversed."
+   }
+  ],
+  "traps": [
+   "intent",
+   "tense",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n5-m1-ck-506",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "佐藤さん、いま ちょっと 時間 ありますか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "いま 三時ですよ。",
+   "はい、何ですか。",
+   "はい、時間が かかります。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "佐藤，现在有点时间吗？"
+    ],
+    "options": [
+     "现在三点哦。",
+     "有，什么事？",
+     "是的，要花时间。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Sato, do you have a minute?"
+    ],
+    "options": [
+     "It's three o'clock now.",
+     "Sure, what is it?",
+     "Yes, it takes time."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「時間 ありますか」问的是有没有空，有空就说「はい、何ですか」。",
+   "en": "「時間 ありますか」 asks whether you're free, not the time; 「はい、何ですか」 says yes and asks what's up."
+  },
+  "wrong": [
+   {
+    "zh": "把「時間」听成了问几点，回答了时刻。",
+    "en": "It hears 「時間」 as \"what time\" and gives the clock time."
+   },
+   null,
+   {
+    "zh": "照搬「時間」，「時間が かかります」是说要花时间，答非所问。",
+    "en": "It repeats 「時間」; 「時間が かかります」 means something takes long — not an answer."
+   }
+  ],
+  "traps": [
+   "intent",
+   "repeat-word"
+  ]
+ }
+]

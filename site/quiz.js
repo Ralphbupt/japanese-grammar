@@ -1,0 +1,1668 @@
+/* Practice questions — /n5-practice/ and friends.
+ *
+ * Mounts on <div id="quiz-app" data-level="N5" data-src="/quiz/n5.json?v=…">.
+ * The bundle comes from build-quiz.js (furigana already in the HTML).
+ * Everything the reader does stays in this browser (localStorage
+ * jp_quiz_v1): answer history, the review list (spaced repetition), the
+ * set in progress, daily counts. Spec: docs/quiz-practice-spec.md; listening
+ * (聴解) items: docs/quiz-listening-spec.md.
+ */
+(function () {
+  'use strict';
+  var app = document.getElementById('quiz-app');
+  if (!app || !window.fetch) return;
+
+  var LEVEL = app.getAttribute('data-level');
+  var EN = document.documentElement.getAttribute('data-force-lang') !== 'zh';
+  var LESSON_BASE = '/' + (EN ? '' : 'zh/');
+  var KEY = 'jp_quiz_v1';
+  var DAY = 86400;
+  var KEEP_ANSWERS = 5;          // per question
+  var RECENT = 20;               // answers that make up a type's accuracy
+  var REVIEW_DAYS = [0, 3, 7];   // review level → days until due; past the last level it's learned
+
+  function t(zh, en) { return EN ? en : zh; }
+  function bi(o) { return o ? (EN ? o.en : o.zh) : ''; }
+  function now() { return Math.floor(Date.now() / 1000); }
+  function today() { var d = new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function track(name, p) { try { if (window.gaEvent) window.gaEvent(name, p); } catch (e) {} }
+
+  // ─── Storage ───
+  function fresh() { return { v: 1, answers: {}, review: {}, reported: [], session: null, days: {}, prefs: { size: 10 }, mock: {}, cards: {}, cardDays: {} }; }
+  function load() {
+    try {
+      var s = JSON.parse(localStorage.getItem(KEY));
+      if (s && s.v === 1) { var f = fresh(); for (var k in f) if (!(k in s)) s[k] = f[k]; return s; }
+    } catch (e) {}
+    return fresh();
+  }
+  var S = load();
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} }
+
+  // ─── Data ───
+  var D, Q = {}, ALL = [];
+  var MOCK = app.getAttribute('data-mode') === 'mock';
+  var CARDS = app.getAttribute('data-mode') === 'cards';
+  // The text under the app (what the level tests, FAQ, lesson links) is for the
+  // start screen; while a set, test or card session is on screen it's hidden.
+  // A new screen also stops any listening audio.
+  function view(home) { document.body.classList.toggle('quiz-busy', !home); ckStop(); }
+  // Scroll the app to the top of the window — below the desktop quick controls
+  // (#top-controls, fixed top right), which would otherwise cover the top bar.
+  function toTop() {
+    var c = document.getElementById('top-controls');
+    var r = c && c.getBoundingClientRect(), gap = r && r.height ? r.bottom + 8 : 16;   // hidden on phones
+    window.scrollTo(0, app.offsetTop - gap);
+  }
+  function loadFail() { app.innerHTML = '<p class="q-muted">' + t('题目载入失败，刷新再试一次。', 'Couldn’t load the questions — try reloading.') + '</p>'; }
+  app.innerHTML = '<p class="q-muted">' + t('载入题目…', 'Loading questions…') + '</p>';
+  // Runs at the end of this file, once every mode's state is set up.
+  function boot() {
+    if (MOCK) return mockList();
+    if (CARDS) return cardsLoad();
+    fetch(app.getAttribute('data-src')).then(function (r) { return r.json(); }).then(function (d) {
+    D = d;
+    D.questions.forEach(function (q) { Q[q.id] = q; });
+    // A question whose answer changed (rev bump) starts over.
+    Object.keys(S.answers).forEach(function (id) {
+      var q = Q[id], a = S.answers[id];
+      if (q && a.length && (a[a.length - 1].rev || 1) !== q.rev) { delete S.answers[id]; delete S.review[id]; }
+    });
+    ALL = D.questions.filter(function (q) { return S.reported.indexOf(q.id) < 0; });
+    home();
+    // Deep links from other pages: #type=kanji, #lesson=lesson05, #ref=lesson05.3
+    var m = location.hash.match(/^#(type|lesson|ref)=([\w.]+)$/);
+    if (m) { history.replaceState(null, '', location.pathname); startKind(m[1], m[1] === 'ref' ? m[2].replace('.', '#') : m[2]); }
+  }).catch(loadFail);
+  }
+
+  // Grammar questions belong to their lesson; a vocabulary question to the
+  // lesson whose word table has the word (refs lessonNN#vocab); reading to none.
+  function lessonOf(q) {
+    if (q.type === 'bunpou' || q.type === 'narabe') return q.refs[0].split('#')[0];
+    var v = (q.refs || []).filter(function (r) { return /#vocab$/.test(r); })[0];
+    return v ? v.split('#')[0] : null;
+  }
+  function groupOf(q) { return D.types[q.type].g; }
+  function isCk(q) { return !!D.types[q.type] && D.types[q.type].g === 'choukai'; }
+  // Grammar the lessons teach before the JLPT tests it (N5 lessons on N4
+  // points) carries `pre`: kept in lesson practice and the review list, left
+  // out of daily sets, practice by type, progress and the analysis.
+  function onLevel(q) { return !q.pre; }
+  function seen(id) { return (S.answers[id] || []).length > 0; }
+  function lastT(id) { var a = S.answers[id] || []; return a.length ? a[a.length - 1].t : 0; }
+  function due() { var n = now(); return ALL.filter(function (q) { var r = S.review[q.id]; return r && r.due <= n; }); }
+  function inReview() { return ALL.filter(function (q) { return S.review[q.id]; }); }
+
+  // Accuracy over the last RECENT answers to questions matching `pick`.
+  function accuracy(pick) {
+    var xs = [];
+    ALL.forEach(function (q) { if (onLevel(q) && pick(q)) (S.answers[q.id] || []).forEach(function (a) { xs.push(a); }); });
+    xs.sort(function (a, b) { return b.t - a.t; });
+    xs = xs.slice(0, RECENT);
+    if (!xs.length) return null;
+    var ok = xs.filter(function (a) { return a.ok && !a.g; }).length;
+    return { pct: Math.round(ok * 100 / xs.length), n: xs.length };
+  }
+
+  function shuffle(a) { for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), x = a[i]; a[i] = a[j]; a[j] = x; } return a; }
+  // Order a set: questions on one passage stay together and in passage order
+  // (all of them, even if only one was picked); the rest is shuffled, keeping
+  // two questions on the same grammar point apart where possible.
+  function arrange(list) {
+    var units = [], seenP = {};
+    list.forEach(function (q) {
+      if (!q.passage) units.push([q]);
+      else if (!seenP[q.passage]) { seenP[q.passage] = 1; units.push(ALL.filter(function (x) { return x.passage === q.passage; })); }
+    });
+    shuffle(units);
+    var out = [], key = function (u) { return u.length === 1 && u[0].refs ? u[0].refs[0] : null; };
+    while (units.length) {
+      var prev = out.length ? out[out.length - 1] : null, i = 0;
+      while (i < units.length && prev && key(units[i]) && key(units[i]) === key(prev)) i++;
+      out.push(units.splice(i < units.length ? i : 0, 1)[0]);
+    }
+    return [].concat.apply([], out);
+  }
+  // Unseen first (in lesson order), then the ones seen longest ago.
+  function freshFirst(list) {
+    var unseen = list.filter(function (q) { return !seen(q.id); });
+    var old = list.filter(function (q) { return seen(q.id); }).sort(function (a, b) { return lastT(a.id) - lastT(b.id); });
+    return unseen.concat(old);
+  }
+
+  // 今日练习: due reviews, then the weakest types, then new questions.
+  function daily(n) {
+    // A passage brings all of its questions, so it counts as that many, and a
+    // set has at most one — the rest stays single questions. A recording with
+    // several questions (統合理解, `passage` = its id) is the same, one per set.
+    var pick = [], has = {}, size = 0, one = {}, perType = {};
+    // No question type takes more than 30% of the set — otherwise a weak type
+    // (due misses + the weak-type boost) fills the whole set and feeds itself.
+    var typeCap = Math.max(2, Math.ceil(n * 0.3));
+    function cost(q) { return ALL.filter(function (x) { return x.passage === q.passage; }).length; }
+    function add(q) {
+      if (has[q.id]) return false;
+      if (!q.passage && (perType[q.type] || 0) >= typeCap) return false;
+      if (q.passage) {
+        var u = isCk(q) ? 'ck' : 'text';
+        if (one[u] !== q.passage && (one[u] || size + cost(q) > n)) return false;
+        if (one[u] !== q.passage) { one[u] = q.passage; size += cost(q); }
+      } else if (size >= n) return false;
+      else size++;
+      has[q.id] = 1; pick.push(q); perType[q.type] = (perType[q.type] || 0) + 1; return true;
+    }
+    due().sort(function (a, b) { return S.review[a.id].due - S.review[b.id].due; }).slice(0, Math.ceil(n * 0.4)).forEach(add);
+    var weak = Object.keys(D.types).map(function (k) { return { k: k, a: accuracy(function (q) { return q.type === k; }) }; })
+      .filter(function (x) { return x.a; }).sort(function (a, b) { return a.a.pct - b.a.pct; }).slice(0, 2);
+    var cap = size + Math.ceil(n * 0.25);
+    weak.forEach(function (w) {
+      ALL.filter(function (q) { return onLevel(q) && q.type === w.k && !seen(q.id); }).forEach(function (q) { if (size < cap) add(q); });
+    });
+    // Then new questions taken in turn: vocabulary, grammar (single questions,
+    // in lesson order), one passage — 文章の文法 or reading, at random — and listening.
+    var queues = [
+      // vocabulary has no natural order: unseen ones at random, then the oldest
+      shuffle(ALL.filter(function (q) { return onLevel(q) && !q.passage && groupOf(q) === 'moji' && !seen(q.id); })).concat(freshFirst(ALL.filter(function (q) { return onLevel(q) && !q.passage && groupOf(q) === 'moji' && seen(q.id); }))),
+      freshFirst(ALL.filter(function (q) { return onLevel(q) && !q.passage && groupOf(q) === 'bunpou'; })),
+      shuffle(ALL.filter(function (q) { return q.passage && !isCk(q) && !seen(q.id); })),
+      shuffle(ALL.filter(function (q) { return onLevel(q) && isCk(q) && !seen(q.id); })).concat(freshFirst(ALL.filter(function (q) { return onLevel(q) && isCk(q) && seen(q.id); }))),
+    ];
+    for (var k = 0; size < n && queues.some(function (x) { return x.length; }); k++) {
+      var qu = queues[k % queues.length];
+      while (qu.length && !add(qu.shift())) {}
+    }
+    return arrange(pick);
+  }
+  function subset(pickFn, n) { return arrange(freshFirst(ALL.filter(pickFn)).slice(0, n)); }
+
+  // ─── Recording an answer ───
+  function record(q, choice, guess, ms) {
+    var ok = choice === q.answer, n = now();
+    var a = S.answers[q.id] || (S.answers[q.id] = []);
+    a.push({ t: n, c: choice, ok: ok, ms: ms, g: guess, rev: q.rev });
+    if (a.length > KEEP_ANSWERS) a.splice(0, a.length - KEEP_ANSWERS);
+    S.days[today()] = (S.days[today()] || 0) + 1;
+    var r = S.review[q.id];
+    if (!ok) S.review[q.id] = { lv: 0, due: n, src: 'bank' };
+    else if (guess) S.review[q.id] = { lv: 0, due: n + DAY, src: 'bank' };
+    else if (r && r.due <= n) {
+      r.lv++;
+      if (r.lv >= REVIEW_DAYS.length) delete S.review[q.id];
+      else r.due = n + REVIEW_DAYS[r.lv] * DAY;
+    }
+    // id + choice (1-based, published option order) give per-question accuracy
+    // and the distractor readers pick — register both as GA custom dimensions.
+    track('quiz_answer', { id: q.id, choice: String(choice + 1), level: LEVEL, type: q.type, ok: ok, guess: guess, ms: ms < 10000 ? '<10s' : ms < 30000 ? '10-30s' : ms < 60000 ? '30-60s' : '60s+' });
+    return ok;
+  }
+
+  // ─── Home ───
+  function streak() {
+    var n = 0, d = new Date();
+    if (!S.days[today()]) d.setDate(d.getDate() - 1);   // today not started yet doesn't break it
+    for (;;) {
+      var k = d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2);
+      if (!S.days[k]) return n;
+      n++; d.setDate(d.getDate() - 1);
+    }
+  }
+  function bar(a) {
+    if (!a) return '<span class="q-acc q-muted">—</span>';
+    return '<span class="q-acc' + (a.pct < 60 ? ' q-acc-low' : '') + '"><span class="q-bar"><span style="width:' + a.pct + '%"></span></span>' + a.pct + '%</span>';
+  }
+  function home() {
+    view(true);
+    var size = S.prefs.size || 10;
+    var d = due().length, r = inReview().length;
+    var h = '';
+    // A set belongs to the page it was started on (ids can be on two levels' pages).
+    if (S.session && (S.session.level || LEVEL) === LEVEL && S.session.ids.every(function (id) { return Q[id]; }) && S.session.i < S.session.ids.length) {
+      h += '<div class="q-resume">' + t('上一组还剩 ', 'You have ') + (S.session.ids.length - S.session.i) + t(' 题', ' questions left in your last set') +
+        ' <button class="q-btn q-btn-primary" data-act="resume">' + t('继续', 'Continue') + '</button> <button class="q-btn" data-act="drop">' + t('放弃', 'Discard') + '</button></div>';
+    }
+    // Overall progress: questions seen at least once, and recent accuracy (same window as the per-type bars).
+    var LV = ALL.filter(onLevel), done = LV.filter(function (q) { return seen(q.id); }).length, all = accuracy(function () { return true; });
+    if (done) h += '<div class="q-total"><div class="q-total-line"><b>' + t('总进度', 'Progress') + '</b> ' + t('已做 ', '') + done + ' / ' + LV.length + t(' 题', ' questions') + '（' + Math.round(done * 100 / LV.length) + '%）' +
+      (all ? ' · ' + t('最近正确率 ', 'recent accuracy ') + all.pct + '%' : '') + ' <button class="q-link q-an-link" data-act="analysis">' + t('做题分析 ›', 'Analysis ›') + '</button></div><div class="q-total-bar"><span style="width:' + (done * 100 / LV.length) + '%"></span></div></div>';
+    // The listening page (/n5-listening/) has only listening questions: say so, so
+    // its daily set isn't taken for the mixed one on the practice page.
+    var onlyCk = ALL.length && ALL.every(isCk);
+    h += '<div class="q-today">' +
+      '<button class="q-btn q-btn-primary q-btn-big" data-act="daily">' + (onlyCk ? t('今日听力练习', 'Today’s listening') : t('今日练习', 'Today’s practice')) + ' · ' + size + t(' 题', ' questions') + '</button>' +
+      (onlyCk ? '<p class="q-muted">' + t('这一页只有听力题。词汇、语法、阅读、听力混合练：', 'Listening questions only on this page. Everything mixed: ') + '<a href="' + location.pathname.replace('-listening', '-practice') + '">' + t('练习题', 'practice questions') + '</a></p>' : '') +
+      // Today's count and streak once there is one; a first visit says what a set is.
+      '<p class="q-muted">' + (onlyCk && !(S.days[today()] || streak()) ? t('答完马上看原文和解析', 'Transcript and explanations right after each answer') : S.days[today()] || streak() ? t('今天做了 ', 'Today: ') + (S.days[today()] || 0) + t(' 题', ' answered') + ' · ' + t('连续 ', 'streak ') + streak() + t(' 天', ' days') :
+        (ALL.some(isCk) ? t('词汇、语法、阅读、听力混在一起，答完马上看解析', 'Vocabulary, grammar, reading and listening mixed — explanations right after each answer') : t('词汇、语法、阅读混在一起，答完马上看解析', 'Vocabulary, grammar and reading mixed — explanations right after each answer'))) + '</p>' +
+      '<label class="q-size">' + t('每组 ', 'Sets of ') + '<select data-act="size">' + [5, 10, 20, 50].map(function (n) { return '<option' + (n === size ? ' selected' : '') + '>' + n + '</option>'; }).join('') + '</select>' + t(' 题（今日练习和按题型练都按这个数）', ' questions (daily sets and practice by type)') + '</label>' + '</div>';
+    h += '<section class="q-sec"><h2>' + t('错题本', 'Review list') + '</h2><p>' +
+      (r ? t('共 ', '') + r + t(' 题，今天到期 ', ' questions, ') + d + t(' 题', ' due today') : t('还没有错题。答错、点了“不会”或“其实是猜的”的题会出现在这里，隔几天再考你一次。', 'Nothing here yet. Questions you miss, mark “I don’t know”, or flag as a guess show up here and come back a few days later.')) + '</p>' +
+      (r ? '<button class="q-btn" data-act="review"' + (d ? '' : ' data-early="1"') + '>' + (d ? t('复习到期的错题', 'Review due questions') : t('提前复习', 'Review early')) + '</button> <button class="q-btn" data-act="review-list">' + t('查看错题', 'See the list') + '</button>' : '') + '</section>';
+    Object.keys(D.groups).forEach(function (g) {
+      var keys = Object.keys(D.types).filter(function (k) { return D.types[k].g === g; });
+      if (!keys.length) return;
+      h += '<section class="q-sec"><h2>' + esc(bi(D.groups[g])) + ' <small class="q-muted">' + esc(D.groups[g].ja) + '</small></h2><ul class="q-rows">';
+      keys.forEach(function (k) {
+        var list = ALL.filter(function (q) { return onLevel(q) && q.type === k; });
+        if (!list.length) return;
+        var done = list.filter(function (q) { return seen(q.id); }).length;
+        h += '<li><button class="q-row" data-act="type" data-k="' + k + '"><span class="q-row-name">' + esc(bi(D.types[k])) + ' <small>' + esc(D.types[k].ja) + '</small></span>' +
+          '<span class="q-muted">' + done + '/' + list.length + '</span>' + bar(accuracy(function (q) { return q.type === k; })) + '</button></li>';
+      });
+      h += '</ul></section>';
+    });
+    var pre = ALL.filter(function (q) { return q.pre; });
+    if (pre.length) {
+      var lv = pre[0].pre, pdone = pre.filter(function (q) { return seen(q.id); }).length;
+      h += '<section class="q-sec"><h2>' + t(lv + ' 预习', lv + ' preview') + '</h2><p class="q-muted">' +
+        t('这几课在 ' + LEVEL + ' 阶段教了 ' + lv + ' 的语法（条件形、可能形、推测……）。它们的 ' + pre.length + ' 道题不算进上面的进度和做题分析，按课练习时照常出现。',
+          'Some ' + LEVEL + ' lessons teach ' + lv + ' grammar early (conditionals, potential, そうだ/ようだ …). Their ' + pre.length + ' questions are left out of the progress and analysis above, and still come up when you practise by lesson.') +
+        '</p><button class="q-btn" data-act="pre">' + t('练 ' + lv + ' 预习题', 'Practise the ' + lv + ' preview questions') + ' <span class="q-muted">' + pdone + '/' + pre.length + '</span></button></section>';
+    }
+    h += '<details class="q-sec q-settings"><summary>' + t('备份进度', 'Back up progress') + '</summary>' +
+      '<p class="q-muted">' + t('做题记录只存在这个浏览器里。换手机或清缓存前先导出。', 'Your progress lives only in this browser. Export it before switching phones or clearing site data.') + '</p>' +
+      '<button class="q-btn" data-act="export">' + t('导出进度', 'Export progress') + '</button> ' +
+      '<label class="q-btn">' + t('导入进度', 'Import progress') + '<input type="file" accept="application/json" data-act="import" hidden></label></details>';
+    app.innerHTML = h;
+  }
+
+  // ─── Analysis: level, weak types and grammar points (all computed here) ───
+  // Answers to questions matching `pick`, newest first, at most `max`.
+  function answersOf(pick, max) {
+    var xs = [];
+    ALL.forEach(function (q) { if (onLevel(q) && pick(q)) (S.answers[q.id] || []).forEach(function (a) { xs.push(a); }); });
+    xs.sort(function (a, b) { return b.t - a.t; });
+    return max ? xs.slice(0, max) : xs;
+  }
+  function stats(xs) {
+    if (!xs.length) return null;
+    var ok = 0, idk = 0, g = 0;
+    xs.forEach(function (a) { if (a.ok && !a.g) ok++; if (a.c == null) idk++; if (a.g) g++; });
+    return { n: xs.length, pct: Math.round(ok * 100 / xs.length), idk: idk, g: g };
+  }
+  function median(ns) { ns = ns.slice().sort(function (a, b) { return a - b; }); return ns.length ? ns[Math.floor(ns.length / 2)] : 0; }
+  // Grammar points (lesson sections) whose questions the reader hasn't got:
+  // the latest answer is wrong, "don't know" or a guess.
+  function weakRefs() {
+    var by = {};
+    ALL.forEach(function (q) {
+      var a = S.answers[q.id];
+      if (!a || !a.length || !onLevel(q)) return;
+      (q.refs || []).filter(function (r) { return !/#vocab$/.test(r) && D.refs[r]; }).slice(0, 1).forEach(function (r) {
+        var x = by[r] || (by[r] = { ref: r, n: 0, miss: 0 }), last = a[a.length - 1];
+        x.n++; if (!last.ok || last.g) x.miss++;
+      });
+    });
+    return Object.keys(by).map(function (k) { return by[k]; }).filter(function (x) { return x.miss > 0 && x.n >= 2; })
+      .sort(function (a, b) { return b.miss / b.n - a.miss / a.n || b.miss - a.miss; }).slice(0, 10);
+  }
+  function analysis() {
+    view(false);
+    var h = '<div class="q-top"><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button><span>' + t('做题分析', 'Analysis') + ' · JLPT ' + LEVEL + '</span><span></span></div><div class="q-card q-an">';
+    var all = answersOf(function () { return true; });
+    if (all.length < 10) {
+      app.innerHTML = h + '<p>' + t('至少做 10 题才有分析，现在做了 ', 'Answer at least 10 questions to see an analysis — so far: ') + all.length + t(' 题。', '.') + '</p></div>';
+      return;
+    }
+    var LV = ALL.filter(onLevel), done = LV.filter(function (q) { return seen(q.id); }).length, rec = stats(all.slice(0, 50));
+    // Overview + trend (last 50 answers vs the 50 before).
+    h += '<h2>' + t('概况', 'Overview') + '</h2><ul class="q-an-list">' +
+      '<li>' + t('做过 ', 'Answered ') + done + ' / ' + LV.length + t(' 题，共答 ', ' questions, ') + all.length + t(' 次', ' answers in all') + '</li>' +
+      '<li>' + t('最近 ', 'Last ') + rec.n + t(' 次正确率 ', ' answers: ') + '<b>' + rec.pct + '%</b>' + t('（猜对不算对）', ' correct (guesses count as wrong)') +
+      (rec.idk || rec.g ? t('，其中“不会” ', '; “don’t know” ') + rec.idk + t(' 次、猜的 ', ', guessed ') + rec.g + t(' 次', '') : '') + '</li>';
+    if (all.length >= 80) {
+      var prev = stats(all.slice(50, 100)), d = rec.pct - prev.pct;
+      h += '<li>' + t('和之前 ', 'Versus the ') + prev.n + t(' 次（', ' before (') + prev.pct + '%' + t('）相比：', '): ') + (Math.abs(d) < 5 ? t('差不多', 'about the same') : d > 0 ? t('进步了 ', 'up ') + d + t(' 个百分点', ' points') : t('下降了 ', 'down ') + (-d) + t(' 个百分点', ' points')) + '</li>';
+    }
+    h += '</ul>';
+    // Rough score per official section, from accuracy on its question types.
+    var X = D.exam;
+    if (X) {
+      var est = 0, enough = true, below = false, rows = X.scoring.map(function (sc) {
+        var st = stats(answersOf(function (q) { return sc.types.indexOf(q.type) >= 0; }, 60));
+        if (!st || st.n < 20) { enough = false; return '<li>' + esc(bi(sc)) + '：' + t('数据不够（这部分至少做 20 题）', 'not enough answers yet (20+ needed)') + '</li>'; }
+        var pts = Math.round(st.pct / 100 * sc.max); est += pts; if (pts < sc.min) below = true;
+        return '<li>' + esc(bi(sc)) + '：' + t('约 ', 'about ') + '<b>' + pts + '</b> / ' + sc.max + (pts < sc.min ? ' <span class="q-an-bad">' + t('低于基准分 ', 'below the minimum ') + sc.min + '</span>' : t('（基准分 ', ' (minimum ') + sc.min + t('）', ')')) + '</li>';
+      });
+      var hasL = X.scoring.some(function (sc) { return sc.key === 'choukai'; });
+      h += '<h2>' + t('粗估分数', 'Rough score') + '</h2><p class="q-muted">' + t('按最近的正确率直接换算，真实考试是等化计分，只能当参考。', 'Straight from recent accuracy; the real test uses scaled scores, so treat it as a hint.') + (hasL ? '' : t('没有听力。', ' Listening isn’t included.')) + '</p><ul class="q-an-list">' + rows.join('');
+      if (enough && hasL) {
+        h += '<li>' + t('合计约 ', 'Total about ') + '<b>' + est + '</b> / 180' + t('（合格线 ' + X.pass + '）：', ' (pass mark ' + X.pass + '): ') + (est >= X.pass && !below ? t('够合格', 'enough to pass') : '<span class="q-an-bad">' + t('还不够', 'not yet') + '</span>') + '</li>';
+      } else if (enough) {
+        var need = Math.max(X.listening.min, X.pass - est);
+        h += '<li>' + t('合格要总分 ', 'Passing needs ') + X.pass + t(' 分：听力至少要拿 ', ' in total: you’d need at least ') + '<b>' + need + '</b> / ' + X.listening.max + (need > X.listening.max ? ' <span class="q-an-bad">' + t('（不可能，先提高上面几项）', '(not possible — raise the parts above first)') + '</span>' : '') + t('', ' in listening') + '</li>';
+      }
+      h += '</ul>';
+    }
+    // By question type, weakest first.
+    var types = Object.keys(D.types).map(function (k) {
+      var xs = answersOf(function (q) { return q.type === k; }, 50);
+      return { k: k, st: stats(xs), ms: median(xs.map(function (a) { return a.ms; })) };
+    });
+    var shown = types.filter(function (x) { return x.st && x.st.n >= 5; }).sort(function (a, b) { return a.st.pct - b.st.pct; });
+    var few = types.filter(function (x) { return ALL.some(function (q) { return q.type === x.k; }) && (!x.st || x.st.n < 5); });
+    h += '<h2>' + t('按题型（从弱到强）', 'By question type (weakest first)') + '</h2><ul class="q-rows q-an-types">' + shown.map(function (x) {
+      var q = D.types[x.k];
+      return '<li><button class="q-row" data-act="type" data-k="' + x.k + '"><span class="q-row-name">' + esc(bi(q)) + ' <small>' + esc(q.ja) + '</small></span>' +
+        '<span class="q-muted">' + x.st.n + t(' 次', '') + (x.st.idk + x.st.g ? ' · ' + t('不会/猜 ', 'unsure ') + (x.st.idk + x.st.g) : '') + (x.ms && !/^(short|mid|long|info|tougou|shuchou|bunshou)$/.test(x.k) && D.types[x.k].g !== 'choukai' ? ' · ' + Math.round(x.ms / 1000) + t(' 秒/题', 's each') : '') + '</span>' + bar(x.st) + '</button></li>';
+    }).join('') + '</ul>';
+    if (few.length) h += '<p class="q-muted">' + t('做得太少还看不出：', 'Too few answers to tell: ') + few.map(function (x) { return esc(bi(D.types[x.k])); }).join('、') + '</p>';
+    if (X && X.items) h += '<p class="q-muted">' + t('正式考试这部分 ', 'The real test: ') + X.minutes + t(' 分钟 ', ' minutes for about ') + X.items + t(' 题左右，平均每题约 ', ' questions, about ') + Math.round(X.minutes * 60 / X.items) + t(' 秒（阅读题要更久，词汇、语法题要更快）。', ' seconds each on average (reading takes longer, so vocabulary and grammar need to go faster).') + '</p>';
+    // Weakest grammar points.
+    var weak = weakRefs();
+    h += '<h2>' + t('最该补的语法点', 'Grammar points to work on') + '</h2>';
+    if (!weak.length) h += '<p class="q-muted">' + t('还没有反复出错的语法点。', 'No grammar point keeps tripping you up yet.') + '</p>';
+    else h += '<ul class="q-an-list">' + weak.map(function (x) {
+      var p = D.refs[x.ref];
+      return '<li><a href="' + LESSON_BASE + p.lesson + '/#' + encodeURI(p.slug) + '" target="_blank" rel="noopener">' + esc(EN ? p.en : p.zh) + '</a> <span class="q-muted">— ' + x.n + t(' 题里 ', ' questions, ') + x.miss + t(' 题还没掌握', ' not got yet') + '</span></li>';
+    }).join('') + '</ul><p><button class="q-btn q-btn-primary" data-act="weak">' + t('专练这些语法点', 'Practise these') + '</button></p>';
+    app.innerHTML = h + '</div>';
+    toTop();
+  }
+
+  // ─── A set of questions ───
+  var cur = null;   // { q, start, picked: [slot → option], guess, done, root }
+  // A passage's questions share one screen: curs holds each one's state (cur is
+  // the one being answered), and every lookup is inside that question's block.
+  var curs = null;
+  function root() { return (cur && cur.root) || app; }
+  function start(kind, list, label) {
+    if (!list.length) return;
+    S.session = { kind: kind, label: label || '', level: LEVEL, ids: list.map(function (q) { return q.id; }), i: 0, res: [] };
+    save();
+    track('quiz_start', { kind: kind, size: list.length, level: LEVEL });
+    ask();
+  }
+  // ask() shows the current question; ask(n) with n < s.i shows an answered
+  // one again, read-only, with the reader's answer and the explanation.
+  function ask(at) {
+    view(false);
+    var s = S.session, idx = at == null ? s.i : at;
+    if (idx >= s.i) idx = s.i;
+    if (idx >= s.ids.length) return summary();
+    var q = Q[s.ids[idx]];
+    curs = null;
+    if (q.passage) {
+      var group = [];
+      for (var j = idx; j < s.ids.length && Q[s.ids[j]].passage === q.passage && (idx >= s.i || j < s.i); j++) group.push(Q[s.ids[j]]);
+      if (group.length > 1) return askPassage(group, idx);
+    }
+    cur = { q: q, start: Date.now(), picked: [null, null, null, null], guess: false, done: false };
+    var h = topBar(idx, 1, q) +
+      '<div class="q-card">' + (q.pre ? '<p class="q-pre-line"><span class="q-pre">' + t(q.pre + ' 预习', q.pre + ' preview') + '</span> ' + t('这道题考的是 ' + q.pre + ' 语法，课文里提前学过', 'this tests ' + q.pre + ' grammar, taught early in the lessons') + '</p>' : '') + (isCk(q) ? '' : passageHtml(q) + '<div class="q-stem" lang="ja">' + stemHtml(q) + '</div>');
+    if (isCk(q)) h += ckQuestion(q);
+    else if (q.type === 'narabe') {
+      h += '<p class="q-muted q-hint">' + t('按顺序点选项填进空格，点空格可以撤回。选出 ★ 处的词。', 'Tap the pieces in order to fill the blanks; tap a blank to undo. The answer is what goes in ★.') + '</p>' +
+        '<div class="q-pieces" lang="ja">' + q.options.map(function (o, i) { return '<button class="q-piece" data-act="piece" data-i="' + i + '">' + o + '</button>'; }).join('') + '</div>';
+    } else {
+      h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><button class="q-opt" data-act="opt" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span>' + o + '</button></li>'; }).join('') + '</ol>';
+    }
+    h += '<div class="q-actions">' + (q.type === 'narabe' ? '<button class="q-btn q-btn-primary" data-act="submit" disabled>' + t('提交', 'Submit') + '</button>' : '') +
+      '<button class="q-btn q-idk" data-act="idk">' + t('不会', 'I don’t know') + '</button></div>' +
+      '<div class="q-feedback" aria-live="polite"></div></div>';
+    app.innerHTML = h;
+    if (idx < s.i) replay([q], idx + 1);
+    toTop();
+  }
+  // Back link, previous-question link, position, type, progress bar.
+  function topBar(idx, n, q) {
+    var s = S.session, p = idx - 1;
+    while (p > 0 && Q[s.ids[p]].passage && Q[s.ids[p - 1]].passage === Q[s.ids[p]].passage) p--;
+    return '<div class="q-top"><span><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button>' +
+      (idx > 0 ? ' <button class="q-link q-prev" data-act="prev" data-k="' + p + '" title="' + t('看上一题（←）', 'Previous question (←)') + '">' + t('上一题', 'Previous') + '</button>' : '') + '</span>' +
+      '<span>' + (idx + 1) + (n > 1 ? '–' + (idx + n) : '') + ' / ' + s.ids.length + '</span><span class="q-muted">' + esc(bi(D.types[q.type])) + '</span></div>' +
+      '<div class="q-progress"><span style="width:' + (s.i * 100 / s.ids.length) + '%"></span></div>';
+  }
+  // Re-show answered questions: their recorded choice, then the feedback.
+  function replay(group, nextIdx) {
+    group.forEach(function (g) {
+      var r = null;
+      for (var k = S.session.res.length - 1; k >= 0; k--) if (S.session.res[k].id === g.id) { r = S.session.res[k]; break; }
+      if (curs) cur = curs[g.id];
+      cur.done = true; cur.guess = r ? r.g : false; cur.past = nextIdx;
+      if (r && r.p) cur.picked = r.p.slice();
+      var box = root();   // feedback() moves cur on to the next open question of a group
+      feedback(g, r ? r.c : null, r ? r.ok : false);
+      var wg = box.querySelector('[data-act="was-guess"]'); if (wg) wg.remove();
+    });
+  }
+  // Also the questions on one listening recording: one player, then 質問1, 質問2 …
+  function askPassage(group, idx) {
+    var s = S.session, q = group[0], ck = isCk(q);
+    if (idx == null) idx = s.i;
+    var h = topBar(idx, group.length, q) +
+      '<div class="q-card">' + (ck ? ckIntro(q) : passageHtml({ passage: q.passage, blank: null }));
+    group.forEach(function (g, k) {
+      h += '<div class="q-sub" data-q="' + g.id + '">' + (ck ? ckSubNo(g) + ckOpts(g) : '<p class="q-subno">' + t('问题 ', 'Question ') + (k + 1) + '</p><div class="q-stem" lang="ja">' + stemHtml(g) + '</div>' +
+        '<ol class="q-opts" lang="ja">' + g.options.map(function (o, i) { return '<li><button class="q-opt" data-act="opt" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span>' + o + '</button></li>'; }).join('') + '</ol>') +
+        '<div class="q-actions">' + '<button class="q-btn q-idk" data-act="idk">' + t('不会', 'I don’t know') + '</button>' + '</div>' +
+        '<div class="q-feedback" aria-live="polite"></div></div>';
+    });
+    app.innerHTML = h + '</div>';
+    curs = {};
+    group.forEach(function (g) { curs[g.id] = { q: g, start: Date.now(), picked: [null, null, null, null], guess: false, done: false, root: app.querySelector('.q-sub[data-q="' + g.id + '"]') }; });
+    cur = curs[group[0].id];
+    if (idx < s.i) replay(group, idx + group.length);
+    toTop();
+  }
+  // The passage a question belongs to: intro line, then the text in a box.
+  // Lines starting with | are a table; [[n]] is a numbered blank (文章の文法).
+  function textHtml(src) {
+    var rows = [], out = '';
+    src.split('\n').forEach(function (line) {
+      if (/^\|/.test(line)) { rows.push(line.replace(/^\||\|$/g, '').split('|')); return; }
+      if (rows.length) { out += table(rows); rows = []; }
+      out += line ? '<p>' + line + '</p>' : '';
+    });
+    if (rows.length) out += table(rows);
+    return out;
+  }
+  // N5/N4: after answering, the kanji a kana word or sentence would be written with.
+  // Read-aloud of a passage, offered once its questions are answered.
+  function listenBtn(id) { return '<p class="q-listen"><button class="q-btn" data-act="listen" data-k="' + id + '">🔊 ' + t('听全文', 'Listen to the text') + '</button></p>'; }
+  var player = null;
+  // 🔊 next to a question's sentence: play it, tap again to stop.
+  function say(el) {
+    var src = '/audio/' + el.getAttribute('data-k') + '.mp3';
+    if (player && player.src.indexOf(src) >= 0 && !player.paused) { player.pause(); return; }
+    if (player) player.pause();
+    player = new Audio(src);
+    player.play().catch(function () {});
+    track('quiz_say', { level: LEVEL });
+  }
+  function listen(el) {
+    var src = '/audio/' + el.getAttribute('data-k') + '.mp3';
+    if (player && player.src.indexOf(src) >= 0 && !player.paused) { player.pause(); el.textContent = '🔊 ' + t('继续听', 'Resume'); return; }
+    if (!player || player.src.indexOf(src) < 0) { if (player) player.pause(); player = new Audio(src); player.onended = function () { el.textContent = '🔊 ' + t('再听一遍', 'Play again'); }; }
+    el.textContent = '⏸ ' + t('暂停', 'Pause');
+    var pr = player.play();
+    if (pr && pr.catch) pr.catch(function () { el.textContent = '🔊 ' + t('听全文', 'Listen to the text'); });
+    track('quiz_listen', { level: LEVEL });
+  }
+  function okjOf(q, i) { return q.okj && q.okj[i] ? '<span class="q-okj">（' + q.okj[i] + '）</span>' : ''; }
+  function kjHtml(q, passages) {
+    var say = q.sa ? ' <button class="q-say" data-act="say" data-k="' + q.sa + '" aria-label="' + t('听这句', 'Play this sentence') + '" title="' + t('听这句', 'Play this sentence') + '">🔊</button>' : '';
+    var h = q.kj ? '<p class="q-full q-kj" lang="ja"><span class="q-kj-label">' + t('汉字写法', 'In kanji') + '</span>' + q.kj + say + '</p>' : q.full ? '<p class="q-full" lang="ja">' + q.full + say + '</p>' : '';
+    var P = q.passage && passages && passages[q.passage];
+    if (P && P.kj) h += '<details class="q-tr"><summary>' + t('全文汉字写法', 'The text in kanji') + '</summary><div class="q-passage" lang="ja">' + textHtml(P.kj) + '</div></details>';
+    return h;
+  }
+  function passageHtml(q) {
+    if (!q.passage) return '';
+    var P = D.passages[q.passage];
+    var out = textHtml(P.html);
+    out = out.replace(/\[\[(\d+)\]\]/g, function (m, n) { return '<span class="q-pblank' + (+n === q.blank ? ' q-pblank-on' : '') + '" data-n="' + n + '">' + n + '</span>'; });
+    return (P.intro ? '<p class="q-intro" lang="ja">' + P.intro + '</p>' : '') + '<div class="q-passage" lang="ja">' + out + '</div>';
+  }
+  function table(rows) {
+    return '<div class="table-scroll"><table class="q-table">' + rows.map(function (r, i) {
+      var tag = i === 0 ? 'th' : 'td';
+      return '<tr>' + r.map(function (c) { return '<' + tag + '>' + c.trim() + '</' + tag + '>'; }).join('') + '</tr>';
+    }).join('') + '</table></div>';
+  }
+  function stemHtml(q) {
+    if (q.type === 'bunshou') return '<span class="q-pblank">' + q.blank + '</span> ' + t('处应填入什么？', 'What goes in this blank?');
+    if (!q.stem) return q.q;
+    var k = 0;
+    return q.stem.replace(/\n/g, '<br>')
+      .replace(/（　）/, '<span class="q-blank">（　）</span>')
+      .replace(/\[(_|★)\]/g, function (m, s) { var i = k++; return '<button class="q-slot' + (s === '★' ? ' q-star' : '') + '" data-act="slot" data-k="' + i + '" aria-label="' + (s === '★' ? '★' : t('空格', 'blank')) + ' ' + (i + 1) + '">' + (s === '★' ? '★' : '') + '</button>'; });
+  }
+
+  function fillSlots() {
+    var slots = app.querySelectorAll('.q-slot'), pieces = app.querySelectorAll('.q-piece');
+    var used = {};
+    cur.picked.forEach(function (p, k) {
+      slots[k].innerHTML = p === null ? (slots[k].classList.contains('q-star') ? '★' : '') : cur.q.options[p];
+      slots[k].classList.toggle('q-filled', p !== null);
+      if (p !== null) used[p] = 1;
+    });
+    for (var i = 0; i < pieces.length; i++) pieces[i].disabled = !!used[i];
+    var btn = app.querySelector('[data-act="submit"]');
+    if (btn) btn.disabled = cur.picked.indexOf(null) >= 0;
+  }
+
+  /* ── 🤖 AI 讲解: hand the answered question to the AI panel (ai-assistant.js) ──
+   * Only after answering (in a mock test: only in the review after submitting).
+   * The context is plain text: passage, question, options, the right answer,
+   * the reader's choice, the fixed explanation and the linked lesson section
+   * (fetched from the lesson page). Nothing time- or reader-specific goes in,
+   * so the same question + choice is the same request and can come from cache. */
+  function aiBtn(primary, act) {
+    if (!window.jpAI) return '';
+    act = act || 'ai';
+    return '<p class="q-ai"><button class="q-btn' + (primary ? ' q-btn-primary' : '') + '" data-act="' + act + '">🤖 ' + t('AI 讲解', 'Explain with AI') + '</button>' +
+      '<button class="q-btn q-ai-more" data-act="' + act + '" data-mode="parse">' + t('拆解句子', 'Break down the sentence') + '</button>' +
+      '<button class="q-btn q-ai-more" data-act="' + act + '" data-mode="sum">' + t('语法点总结', 'Grammar summary') + '</button>' +
+      (primary ? ' <span class="q-muted">' + t('针对你选的选项讲，可以追问', 'about the option you picked; ask follow-ups') + '</span>' : '') + '</p>';
+  }
+  function plainJa(html) {
+    var d = document.createElement('div');
+    d.innerHTML = String(html || '').replace(/<br\s*\/?>/g, '\n').replace(/<<([^<>]+)>>/g, '「$1」');
+    d.querySelectorAll('rt, rp').forEach(function (n) { n.remove(); });
+    d.querySelectorAll('u, .q-ul').forEach(function (n) { n.textContent = '「' + n.textContent + '」'; });
+    return d.textContent.trim();
+  }
+  var lessonText = {};
+  function refText(ref) {
+    var p = D.refs && D.refs[ref];
+    if (!p) return Promise.resolve('');
+    var key = p.lesson + '#' + p.slug;
+    if (lessonText[key] != null) return Promise.resolve(lessonText[key]);
+    return fetch(LESSON_BASE + p.lesson + '/').then(function (r) { return r.text(); }).then(function (html) {
+      var doc = new DOMParser().parseFromString(html, 'text/html'), h = doc.getElementById(p.slug), out = [];
+      if (h && /^H[23]$/.test(h.tagName)) {
+        for (var n = h; n && !(n !== h && n.tagName === h.tagName); n = n.nextElementSibling) {
+          n.querySelectorAll('rt, rp, .speak-btn, .quiz-link, script').forEach(function (x) { x.remove(); });
+          out.push(n.textContent.replace(/[ \t]+/g, ' ').trim());
+        }
+      }
+      return (lessonText[key] = out.join('\n').replace(/\n{2,}/g, '\n').slice(0, 6000));
+    }).catch(function () { return (lessonText[key] = ''); });
+  }
+  function aiExplain(q, choice, guess, typeJa, passages, mode) {
+    var L = [], P = q.passage && passages && passages[q.passage];
+    L.push(t('【级别】', '[Level]') + ' JLPT ' + LEVEL);
+    if (P) L.push(t('【文章】', '[Text]') + '\n' + plainJa((P.intro ? P.intro + '<br>' : '') + P.html).replace(/\[\[(\d+)\]\]/g, '（$1）'));
+    if (q.ck) L.push(t('【听力原文】', '[Transcript]') + '\n' + ckPlain(q));
+    L.push(t('【题型】', '[Question type]') + ' ' + typeJa + (q.ck ? t('（听力）', ' (listening)') : ''));
+    L.push(t('【题目】', '[Question]') + ' ' + (q.ck ? plainJa(q.ck.question || '') || t('听一句话，选出合适的回应', 'pick the right reply to the line') : q.type === 'bunshou' ? t('文章里的空格 ', 'blank ') + q.blank : plainJa(q.stem || q.q).replace(/\[_\]/g, '＿＿').replace(/\[★\]/g, '＿★＿')));
+    L.push(t('【选项】', '[Options]') + '\n' + q.options.map(function (o, i) { return (i + 1) + '. ' + plainJa(o); }).join('\n'));
+    if (q.type === 'narabe') L.push(t('【正确顺序】', '[Correct order]') + ' ' + q.order.map(function (i) { return plainJa(q.options[i]); }).join(' / '));
+    L.push(t('【正确答案】', '[Correct answer]') + ' ' + (q.answer + 1) + '. ' + plainJa(q.options[q.answer]));
+    L.push(t('【学习者选的】', '[Learner chose]') + ' ' + (choice == null ? t('没答', 'no answer') : (choice + 1) + '. ' + plainJa(q.options[choice])) + (guess ? t('（标了"猜的"）', ' (marked as a guess)') : ''));
+    if (q.full) L.push(t('【完整句子】', '[Full sentence]') + ' ' + plainJa(q.full));
+    L.push(t('【固定解析】', '[Explanation]') + ' ' + bi(q.why) + (q.wrong ? '\n' + q.wrong.map(function (w, i) { return w ? (i + 1) + '. ' + bi(w) : ''; }).filter(Boolean).join('\n') : ''));
+    var ok = choice === q.answer, n = q.answer + 1, mine = choice == null ? '' : (choice + 1) + '「' + plainJa(q.options[choice]) + '」';
+    // What shows in the chat: one plain line. How to explain goes to the model
+    // with the question (【讲解要求】), so the bubble doesn't show instructions.
+    var prompt = choice == null ? t('这题我不会，帮我讲讲。', 'I didn’t know this one — explain it, please.')
+      : !ok ? t('我选了 ' + mine + '，正确答案是 ' + n + '，帮我讲讲。', 'I chose ' + mine + '; the answer is ' + n + '. Explain, please.')
+      : guess ? t('这题我是猜对的，帮我讲讲。', 'I got this right by guessing — explain it, please.')
+      : t('这题我答对了，帮我确认一下思路。', 'I got this right — check my reasoning, please.');
+    var focus = {
+      kanji: t('读音的关键点：我选的读音错在浊音、长音、促音、拗音，还是音读训读搞混', 'the reading: whether mine goes wrong on voicing, long vowels, small っ/ゃゅょ, or on/kun'),
+      hyouki: t('形近或同音汉字各自的意思，为什么这个词用这个字', 'what each look-alike / same-sound kanji means and why this word uses this one'),
+      gokeisei: t('这个词缀的意思和它常接的词', 'what the affix means and what it usually attaches to'),
+      bunmyaku: t('句子里决定答案的线索和常见搭配', 'the clue in the sentence and the usual collocations'),
+      iikae: t('划线部分的意思，为什么正确选项和它等价', 'what the underlined part means and why the answer is equivalent'),
+      youhou: t('这个词的正确用法，错误句子分别错在哪', 'how the word is really used and what is wrong in each other sentence'),
+      bunpou: t('正确答案的接续和意思，和其他选项在意思、接续、语气上的区别', 'how the answer attaches and what it means, versus the others on meaning, attachment and tone'),
+      narabe: t('哪些片段因为接续必须连在一起，由此排出顺序，★ 为什么是这个', 'which pieces must join because of how they attach, the order that follows, and why ★ is this piece'),
+      bunshou: t('空格前后的逻辑关系（转折、因果、举例、总结等）', 'the logic around the blank (contrast, cause, example, summary…)'),
+      kadai: t('对话里决定答案的那句（引用日语原文），每个错误选项是哪种陷阱（已经做了、别人负责、改到以后、提到了但不是问的那一点）', 'the line of the dialogue that settles it (quoted in Japanese), and the trap in each other option (already done, someone else does it, moved to later, mentioned but not what was asked)'),
+      point: t('对话里给出答案的那句（引用日语原文），说话人否定了哪个表面理由，每个错误选项是哪种陷阱', 'the line that gives the answer (quoted in Japanese), which surface reason the speaker rejects, and the trap in each other option'),
+      hatsuwa: t('这个场景里说话人想做什么，正确的说法为什么合适，其他说法错在立场、时机还是意图', 'what the speaker wants to do in this scene, why the right phrase fits, and whether each other one is wrong on who says it, timing or intent'),
+      sokuji: t('这句话的真正意图，正确回应为什么自然，其他回应错在哪（照搬关键词、时态、答非所问、时机）', 'what the line really means, why the right reply is natural, and what is wrong with each other one (echoing a word, tense, answering a different question, timing)')
+    }[q.type] || t('引用文章里给出答案的那一句（日语原文），其他选项各是哪种陷阱（文中没说 / 说反了 / 只对一半）', 'the sentence of the text that gives the answer (quoted in Japanese), and the trap in each other option (not in the text / the opposite / half right)');
+    var rule = t('不要表格、不要标题、不要 emoji，不要复述题目和固定解析。', ' No tables, headings or emoji; don’t restate the question or the fixed explanation.');
+    var how = t('先一句话给结论。再逐个讲选项，每个一行：这个词或形式 — 意思，放进这句为什么对或不对（汉字词后面注读音，如 昨夜（ゆうべ）；假名写的词有常用汉字就写出来，如 ゆうべ（昨夜）；没有汉字的不加括号）。重点讲' + focus + '。然后补 1 个和正确答案有关、本级别常用的搭配或例句（附翻译）。最后一句说下次怎么快速判断。共 150–250 字，可以用短列表。',
+      'Start with a one-line conclusion. Then each option on its own line: the word or form — meaning, and why it does or doesn’t fit here (kanji words get their reading, e.g. 昨夜（ゆうべ）; kana words that have a common kanji spelling get it, e.g. ゆうべ（昨夜）; otherwise no brackets). Focus on ' + focus + '. Then one common collocation or example at this level related to the answer (with translation). End with one line on how to spot it next time. 100–180 words; short lists are fine.') + rule;
+    if (mode === 'parse') {
+      prompt = t('帮我拆解这个句子。', 'Break down the sentence for me.');
+      how = (q.ck ? t('拆解对话里决定答案的那一两句。', 'Break down the one or two lines of the dialogue the answer turns on. ') : q.passage ? t('拆解文章里和这道题有关的那一两句。', 'Break down the one or two sentences of the text this question turns on. ') : t('拆解这道题的完整句子。', 'Break down this question’s full sentence. ')) +
+        t('每个意群一行：日语（汉字注读音）— 意思，动词写原形和变形名称；关键语法加粗并说明它在句中的作用。最后一行给自然的翻译。', 'One line per chunk: Japanese (reading) — meaning; verbs with dictionary form and the form’s name; key grammar in bold with what it does here. Last line: a natural translation.') + rule;
+    } else if (mode === 'sum') {
+      prompt = t('帮我总结这题涉及的语法和词。', 'Summarise the grammar and words in this question.');
+      how = t('总结正确答案和最主要的一两个干扰项：每个写接续或用法、意思、一个' + LEVEL + '水平的新例句（附翻译）；最后说它们怎么区分。可以用短列表。', 'Summarise the answer and the main one or two distractors: for each, how it attaches or is used, its meaning, one new ' + LEVEL + '-level example (with translation); then how to tell them apart. Short lists are fine.') + rule;
+    }
+    L.push(t('【讲解要求】', '[How to explain]') + ' ' + how);
+    track('quiz_ai', { id: q.id, ok: ok, guess: !!guess, mode: mode || 'why' });
+    Promise.all((q.refs || []).filter(function (r) { return !/#vocab$/.test(r); }).slice(0, 2).map(refText)).then(function (secs) {
+      secs = secs.filter(Boolean);
+      if (secs.length) L.push(t('【对应课文】', '[Lesson section]') + '\n' + secs.join('\n---\n'));
+      window.jpAI.explain(L.join('\n\n'), prompt);
+    });
+  }
+
+  function submit(choice) {
+    if (cur.done) return;
+    cur.done = true;
+    var q = cur.q, ms = Date.now() - cur.start;
+    var ok = record(q, choice, cur.guess, ms);
+    S.session.res.push({ id: q.id, c: choice, ok: ok, g: cur.guess, ms: ms, p: q.type === 'narabe' ? cur.picked.slice() : undefined });
+    S.session.i++;
+    save();
+    feedback(q, choice, ok);
+  }
+
+  function feedback(q, choice, ok) {
+    var opts = root().querySelectorAll('.q-opt');
+    for (var i = 0; i < opts.length; i++) {
+      opts[i].disabled = true;
+      if (i === q.answer) opts[i].classList.add('q-ok');
+      else if (i === choice) opts[i].classList.add('q-bad');
+      if (okjOf(q, i)) opts[i].insertAdjacentHTML('beforeend', okjOf(q, i));
+      if (q.spoken) opts[i].insertAdjacentHTML('beforeend', ckOptText(q, i));
+    }
+    if (q.spoken && opts.length) opts[0].closest('ol').classList.add('q-ck-shown');
+    if (q.type === 'narabe') {
+      app.querySelectorAll('.q-piece').forEach(function (b) { b.disabled = true; });
+      // Keep the reader's own order in the blanks, each marked right or wrong
+      // (the right order is spelled out below when it differs).
+      var mine = cur.picked && cur.picked.every(function (p) { return p != null; }) ? cur.picked : null;
+      app.querySelectorAll('.q-slot').forEach(function (b, k) {
+        b.disabled = true;
+        b.innerHTML = q.options[mine ? mine[k] : q.order[k]];
+        b.classList.add('q-filled');
+        if (mine) b.classList.add(mine[k] === q.order[k] ? 'q-ok' : 'q-bad');
+        else if (b.classList.contains('q-star')) b.classList.add(ok ? 'q-ok' : 'q-bad');
+      });
+    } else {
+      var blank = root().querySelector('.q-blank') || (curs ? app.querySelector('.q-pblank[data-n="' + q.blank + '"]') : app.querySelector('.q-pblank-on'));
+      if (blank) { blank.innerHTML = '<span class="q-fill">' + q.options[q.answer] + '</span>'; blank.classList.add('q-filled'); }
+    }
+    var g = root().querySelector('[data-act="idk"]'); if (g) g.remove();
+    var sb = root().querySelector('[data-act="submit"]'); if (sb) sb.remove();
+
+    cur.choice = choice;
+    // 不会 before answering; 其实是猜的 after a right answer (both go on the review list).
+    var h = '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (ok ? '✓ ' + t('正确', 'Correct') : '✗ ' + (choice == null ? t('不会 · ', 'Didn’t know · ') : '') + t('正确答案是 ', 'The answer is ') + (q.answer + 1) + ' <span lang="ja">' + q.options[q.answer] + okjOf(q, q.answer) + '</span>') +
+      (ok ? ' <button class="q-btn q-was-guess" data-act="was-guess">' + t('其实是猜的', 'I guessed') + '</button>' : '') + '</p>';
+    if (q.type === 'narabe' && !ok) h += '<p class="q-order" lang="ja">' + t('正确顺序：', 'Right order: ') + q.order.map(function (i) { return q.options[i]; }).join(' → ') + '</p>';
+    var left = curs ? Object.keys(curs).filter(function (id) { return !curs[id].done; }) : [];
+    var aiFirst = !ok || cur.guess;
+    if (aiFirst) h += aiBtn(true);
+    // A recording with several questions: the transcript (it has every question
+    // and its answer) once all of them are answered, under the last one.
+    if (isCk(q) && !left.length) h += ckScript(q);
+    h += '<div class="q-explain"><p>' + esc(bi(q.why)) + '</p>';
+    if (q.type !== 'narabe') {
+      var rows = q.wrong.map(function (w, i) { return w ? { i: i, w: w } : null; }).filter(Boolean);
+      rows.sort(function (a, b) { return (b.i === choice) - (a.i === choice); });
+      h += '<ul class="q-wrong">' + rows.map(function (r) { return '<li' + (r.i === choice ? ' class="q-mine"' : '') + '><b lang="ja">' + (r.i + 1) + ' ' + q.options[r.i] + okjOf(q, r.i) + '</b> — ' + esc(bi(r.w)) + '</li>'; }).join('') + '</ul>';
+    }
+    h += kjHtml(q, D.passages);
+    if (q.tr) h += '<p class="q-muted">' + esc(bi(q.tr)) + '</p>';
+    if (q.passage && !isCk(q)) h += '<details class="q-tr"><summary>' + t('全文翻译', 'Translation of the text') + '</summary><p>' + esc(bi(D.passages[q.passage].tr)) + '</p></details>';
+    h += '<p class="q-refs">' + (q.refs || []).map(function (r) {
+      var p = D.refs[r];
+      return '📖 <a href="' + LESSON_BASE + p.lesson + '/#' + encodeURI(p.slug) + '" target="_blank" rel="noopener">' + esc(EN ? p.en : p.zh) + '</a>';
+    }).join(' · ') + '</p>';
+    if (!aiFirst) h += aiBtn(false);
+    h += '<details class="q-report"><summary>' + t('这题有问题？', 'Something wrong with this question?') + '</summary>' +
+      [['answer', '答案不对', 'The answer is wrong'], ['two', '有两个对的', 'Two options work'], ['stem', '题目不通顺', 'The question reads badly'], ['other', '其他', 'Something else']]
+        .map(function (r) { return '<button class="q-btn" data-act="report" data-k="' + r[0] + '">' + t(r[1], r[2]) + '</button>'; }).join(' ') +
+      '<div class="q-report-more" hidden><textarea maxlength="1000" rows="3" placeholder="' + t('哪里不对？可以不写', 'What’s wrong? (optional)') + '"></textarea>' +
+      '<button class="q-btn q-btn-primary" data-act="report-send">' + t('提交', 'Send') + '</button></div></details></div>';
+    var P = q.passage && D.passages[q.passage];
+    if (!left.length && P && P.au) h += listenBtn(P.au);
+    var past = cur.past;
+    if (!left.length) h += '<div class="q-next"><button class="q-btn q-btn-primary q-btn-big" data-act="next"' + (past != null ? ' data-k="' + past + '"' : '') + '>' +
+      (past != null && past >= S.session.i ? (S.session.i >= S.session.ids.length ? t('看结果', 'See results') : t('回到当前题', 'Back to where I was')) : S.session.i >= S.session.ids.length && past == null ? t('看结果', 'See results') : t('下一题', 'Next')) + ' →</button></div>';
+    root().querySelector('.q-feedback').innerHTML = h;
+    if (left.length) cur = curs[left[0]];   // the keyboard moves on to the next question of the passage
+  }
+
+  // One line for a question in a list: the stem, blanks shown as ＿ / ★.
+  function sumLabel(q) {
+    if (isCk(q)) return '🎧 ' + (q.type === 'hatsuwa' ? q.ck.scene : q.ck.question || (q.ck.lines[0] || [])[1] || '');
+    return q.type === 'bunshou' ? '<span class="q-pblank">' + q.blank + '</span> ' + D.passages[q.passage].html.split('\n')[0].slice(0, 60) + '…' : stemHtml(q).replace(/<button[^>]*>(★)?<\/button>/g, function (m, st) { return st ? '★' : '＿'; });
+  }
+
+  // The review list itself: what was missed, the last answer, when it comes back.
+  function reviewList() {
+    view(false);
+    var n = now(), list = inReview().sort(function (a, b) { return S.review[a.id].due - S.review[b.id].due; });
+    var h = '<div class="q-top"><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button><span>' + t('错题本 · ', 'Review list · ') + list.length + t(' 题', '') + '</span><span></span></div><div class="q-card q-summary">';
+    if (!list.length) h += '<p>' + t('错题本空了。', 'The review list is empty.') + '</p>';
+    else h += '<p><button class="q-btn q-btn-primary" data-act="review"' + (due().length ? '' : ' data-early="1"') + '>' + t('开始复习', 'Start reviewing') + '</button></p><ul class="q-sumlist">' + list.map(function (q) {
+      var a = S.answers[q.id] || [], last = a[a.length - 1], days = Math.ceil((S.review[q.id].due - n) / DAY);
+      var mine = !last ? '' : last.ok ? t('猜对', 'Guessed right') : last.c == null ? t('不会', 'Didn’t know') : t('你选 ', 'You: ') + '<span lang="ja">' + q.options[last.c] + '</span>';
+      var refs = (q.refs || []).map(function (r) { var p = D.refs[r]; return p ? '📖 <a href="' + LESSON_BASE + p.lesson + '/#' + encodeURI(p.slug) + '" target="_blank" rel="noopener">' + esc(EN ? p.en : p.zh) + '</a>' : ''; }).join(' · ');
+      return '<li><div lang="ja" class="q-sumstem">' + sumLabel(q) + '</div>' +
+        '<div class="q-muted">' + (mine ? mine + ' · ' : '') + t('答案 ', 'Answer: ') + '<span lang="ja">' + q.options[q.answer] + okjOf(q, q.answer) + '</span> · ' +
+        (days <= 0 ? t('今天复习', 'due today') : days + t(' 天后复习', days === 1 ? ' day to go' : ' days to go')) + '</div>' +
+        '<details class="q-rl-more"><summary>' + t('解析', 'Explanation') + '</summary>' + (isCk(q) ? ckPlayer(q) + ckScript(q) : '') + '<p>' + esc(bi(q.why)) + '</p>' + kjHtml(q, D.passages) + (q.tr ? '<p class="q-muted">' + esc(bi(q.tr)) + '</p>' : '') +
+        (refs ? '<p class="q-refs">' + refs + '</p>' : '') + '<button class="q-btn" data-act="unreview" data-k="' + q.id + '">' + t('已经会了，移出错题本', 'I’ve got it — remove') + '</button></details></li>';
+    }).join('') + '</ul>';
+    app.innerHTML = h + '</div>';
+    toTop();
+  }
+
+  function shareBtn() { return window.jpShare ? '<button class="q-btn" data-act="share">' + t('分享成绩', 'Share my score') + '</button>' : ''; }
+  function shareScore(el) {
+    var o = app._share || {};
+    window.jpShare({ text: o.text, src: o.src, anchor: el, url: location.origin + location.pathname });
+  }
+
+  function summary() {
+    view(false);
+    var s = S.session, res = s.res;
+    var ok = res.filter(function (r) { return r.ok; }).length;
+    var mins = Math.round(res.reduce(function (a, r) { return a + r.ms; }, 0) / 60000);
+    var bad = res.filter(function (r) { return !r.ok || r.g; });
+    track('quiz_finish', { kind: s.kind, score: ok, size: res.length, level: LEVEL });
+    var h = '<div class="q-top"><button class="q-link" data-act="home">‹ ' + t('返回', 'Back') + '</button></div>' +
+      '<div class="q-card q-summary"><p class="q-score">' + ok + ' / ' + res.length + '</p><p class="q-muted">' + t('用时约 ', 'About ') + Math.max(mins, 1) + t(' 分钟', ' min') + '</p>' + (shareBtn() ? '<p class="q-share">' + shareBtn() + '</p>' : '');
+    if (bad.length) {
+      h += '<h2>' + t('错题和猜的', 'Missed or guessed') + '</h2><ul class="q-sumlist">' + bad.map(function (r) {
+        var q = Q[r.id];
+        return '<li><div lang="ja" class="q-sumstem">' + sumLabel(q) + '</div>' +
+          '<div class="q-muted">' + (r.ok ? t('猜对', 'Guessed right') : r.c == null ? t('不会', 'Didn’t know') : t('你选 ', 'You: ') + '<span lang="ja">' + q.options[r.c] + '</span>') + ' · ' + t('答案 ', 'Answer: ') + '<span lang="ja">' + q.options[q.answer] + '</span></div></li>';
+      }).join('') + '</ul>';
+      // The grammar point missed most often.
+      var cnt = {}; bad.forEach(function (r) { var ref = (Q[r.id].refs || [])[0]; if (ref) cnt[ref] = (cnt[ref] || 0) + 1; });
+      var top = Object.keys(cnt).sort(function (a, b) { return cnt[b] - cnt[a]; })[0], p = top && D.refs[top];
+      if (p) h += '<p>📖 ' + t('去复习：', 'Go over: ') + '<a href="' + LESSON_BASE + p.lesson + '/#' + encodeURI(p.slug) + '">' + esc(EN ? p.en : p.zh) + '</a></p>';
+    } else {
+      h += '<p>' + t('全对！', 'All correct!') + '</p>';
+    }
+    h += '<div class="q-actions">' + (bad.length ? '<button class="q-btn" data-act="retry">' + t('重做错题', 'Redo the misses') + '</button>' : '') +
+      '<button class="q-btn q-btn-primary" data-act="again">' + t('再来一组', 'Another set') + '</button></div></div>';
+    app._share = { text: t('我在 jpnotes.dev 做了一组 JLPT ' + LEVEL + ' 练习题，' + res.length + ' 题对了 ' + ok + ' 题。免费题库，每题都有解析：', 'I just did a JLPT ' + LEVEL + ' practice set on jpnotes.dev: ' + ok + '/' + res.length + ' right. Free questions, each with an explanation:'), src: 'quiz_result' };
+    S.session = null; save();
+    app._last = { kind: s.kind, label: s.label, bad: bad.map(function (r) { return r.id; }) };
+    app.innerHTML = h;
+  }
+
+  function startKind(kind, k) {
+    var n = S.prefs.size || 10;
+    if (kind === 'daily') start('daily', daily(n));
+    else if (kind === 'type') start('type', subset(function (q) { return onLevel(q) && q.type === k; }, n), k);
+    else if (kind === 'pre') start('pre', subset(function (q) { return q.pre; }, n));
+    else if (kind === 'lesson') start('lesson', subset(function (q) { return lessonOf(q) === k; }, n), k);
+    else if (kind === 'weak') {
+      var rs = weakRefs().map(function (x) { return x.ref; });
+      start('weak', arrange(freshFirst(ALL.filter(function (q) { return (q.refs || []).some(function (r) { return rs.indexOf(r) >= 0; }); })).slice(0, n)));
+    }
+    else if (kind === 'ref') start('ref', subset(function (q) { return (q.refs || []).indexOf(k) >= 0; }, n), k);
+    else if (kind === 'review') {
+      var list = due();
+      if (!list.length) list = inReview().sort(function (a, b) { return S.review[a.id].due - S.review[b.id].due; });
+      start('review', arrange(list.slice(0, n)));
+    }
+  }
+
+
+  // ─── Mock tests (/n5-mock-test/) ───
+  // A set is one or two sittings (sections) with their own time limits, no
+  // feedback until the end; then an estimated score, a breakdown and a review.
+  // Spec: docs/quiz-mock-spec.md. State: S.mock[setId] = { current, attempts }.
+  var SETS = MOCK ? JSON.parse(app.getAttribute('data-sets')) : [];
+  var M = null;        // { set, test, mode, secs: [section index…], si, qi, timer }
+  var AWAY_GRACE = 60000;   // longer in the background than this pauses the clock and marks the attempt informal
+  function mstate(id) { return S.mock[id] || (S.mock[id] = { current: null, attempts: [] }); }
+  function fmt(ms) { var s = Math.max(0, Math.ceil(ms / 1000)); return Math.floor(s / 60) + ':' + ('0' + s % 60).slice(-2); }
+  function loadTest(set) {
+    return fetch(set.src).then(function (r) { return r.json(); }).then(function (test) {
+      D = test; Q = {}; test.questions.forEach(function (q) { Q[q.id] = q; }); return test;
+    });
+  }
+  function secIds(sec) { return [].concat.apply([], sec.problems.map(function (p) { return p.ids; })); }
+  function problemOf(sec, id) { for (var i = 0; i < sec.problems.length; i++) if (sec.problems[i].ids.indexOf(id) >= 0) return sec.problems[i]; }
+
+  function mockList() {
+    view(true);
+    stopTimer();
+    var h = '';
+    SETS.forEach(function (set) {
+      var st = mstate(set.id), cur = st.current, att = st.attempts;
+      var best = att.filter(function (a) { return a.mode === 'full' && !a.flags.length; }).sort(function (a, b) { return b.total - a.total; })[0];
+      var last = att[att.length - 1];
+      h += '<div class="q-card q-set"><h2>' + t('第 ' + set.n + ' 套', 'Test ' + set.n) + (cur ? ' <small class="q-tag">' + t('进行中', 'In progress') + '</small>' : !att.length ? ' <small class="q-tag q-tag-new">' + t('未做', 'Not taken') + '</small>' : '') + '</h2>';
+      if (best) h += '<p>' + t('最好成绩 ', 'Best: ') + best.score.map(function (x) { return x.score + '/' + x.max; }).join(' · ') + t('（估算）', ' (estimate)') + '</p>';
+      if (last) h += '<p class="q-muted">' + t('上次 ', 'Last: ') + new Date(last.end).toLocaleDateString() + ' · ' + Math.round(last.used / 60000) + t(' 分钟', ' min') + (last.flags.length ? ' · ' + last.flags.map(flagName).join('、') : '') + '</p>';
+      h += '<div class="q-actions">';
+      if (cur) h += '<button class="q-btn q-btn-primary" data-act="m-resume" data-k="' + set.id + '">' + t('继续', 'Continue') + '</button><button class="q-btn" data-act="m-drop" data-k="' + set.id + '">' + t('放弃这次', 'Discard') + '</button>';
+      else h += '<button class="q-btn q-btn-primary" data-act="m-intro" data-k="' + set.id + '">' + (att.length ? t('再做一次', 'Take again') : t('开始', 'Start')) + '</button>';
+      if (last) h += '<button class="q-btn" data-act="m-result" data-k="' + set.id + '">' + t('看上次结果', 'Last result') + '</button>';
+      h += '</div></div>';
+    });
+    // More sets are on the way: say so, so a reader who finished set 1 knows to come back.
+    if (SETS.length < 3) {
+      var nx = SETS.length + 1, pr = location.pathname.replace(/-mock-test\/$/, '-practice/');
+      h += '<div class="q-card q-set q-set-soon"><h2>' + t('第 ' + nx + ' 套', 'Test ' + nx) + ' <small class="q-tag">' + t('准备中', 'Coming') + '</small></h2>' +
+        '<p class="q-muted">' + t('第 ' + nx + (nx < 3 ? '、3' : '') + ' 套正在出题和审题，做好就会出现在这里。在那之前，可以先在' + '<a href="' + pr + '">练习题</a>' + '里专练薄弱题型，或者隔一两周再做一次第 1 套，看看有没有进步。',
+          'Test ' + nx + (nx < 3 ? ' and 3 are' : ' is') + ' being written and reviewed and will appear here when ready. Meanwhile, drill your weak question types in ' + '<a href="' + pr + '">practice</a>' + ', or retake test 1 in a week or two to see how far you’ve come.') + '</p></div>';
+    }
+    app.innerHTML = h;
+  }
+  function flagName(f) { return { informal: t('非正式（暂停过）', 'informal (paused)'), partial: t('只做了一节', 'one section only'), retake: t('重做', 'retake') }[f] || f; }
+  function setById(id) { return SETS.filter(function (s) { return s.id === id; })[0]; }
+
+  function mockIntro(set) {
+    view(false);
+    loadTest(set).then(function (test) {
+      var h = '<div class="q-top"><button class="q-link" data-act="m-list">‹ ' + t('返回', 'Back') + '</button></div><div class="q-card"><h2>' + t('第 ' + set.n + ' 套', 'Test ' + set.n) + '</h2><table class="q-table q-plan">';
+      test.sections.forEach(function (sec, i) {
+        h += '<tr><th>' + esc(sec.ja) + '<br><small>' + esc(bi(sec)) + '</small></th><td>' + secIds(sec).length + t(' 题', ' questions') + '</td><td>' + sec.minutes + t(' 分钟', ' min') + '</td></tr>';
+      });
+      h += '</table><ul class="q-rules"><li>' + t('作答中不显示对错和解析，交卷后统一看。', 'No answers or explanations until you submit.') + '</li>' +
+        '<li>' + t('可以前后翻题、改答案；拿不准的题点 ⚑ 标记，最后回来看。', 'Move back and forth and change answers; flag ⚑ anything to come back to.') + '</li>' +
+        '<li>' + t('每节时间到自动结束。不会的题先猜一个——空着也算错。', 'Each section ends when its time is up. Guess rather than leave a blank — blanks count as wrong.') + '</li>' +
+        '<li>' + t('可以暂停；切到别的 App 超过 1 分钟会自动暂停。暂停过的成绩标为“非正式”。', 'You can pause; leaving the page for over a minute pauses it too. A paused attempt is marked informal.') + '</li>' +
+        (test.sections.some(function (sec) { return sec.listening; }) ? '<li>' + t('聴解和真考一样：点一次开始，录音按顺序每题只放一次，不能回放；每题之后有几秒作答时间。请打开声音，最好戴耳机。', 'Listening works like the real test: one tap starts it, each recording plays once, in order, with no replay, and a few seconds to answer after each. Turn the sound on; headphones help.') + '</li>' : '') + '</ul>' +
+        '<div class="q-actions q-start"><button class="q-btn q-btn-primary q-btn-big" data-act="m-start" data-k="full">' + t('整套开始', 'Start the full test') + '</button>' +
+        test.sections.map(function (sec, i) { return '<button class="q-btn" data-act="m-start" data-k="' + i + '">' + t('只做：', 'Only: ') + esc(sec.ja) + '</button>'; }).join('') + '</div></div>';
+      M = { set: set, test: test };
+      app.innerHTML = h;
+    }).catch(loadFail);
+  }
+
+  function mockStart(mode) {
+    var st = mstate(M.set.id);
+    st.current = { mode: mode, secs: mode === 'full' ? M.test.sections.map(function (_, i) { return i; }) : [+mode], si: 0, start: Date.now(), secStart: Date.now(), pausedMs: 0, used: [], answers: {}, flagsQ: {}, informal: false, at: 0, retake: st.attempts.length > 0 };
+    save();
+    track('mock_start', { set: M.set.id, mode: mode });
+    mockSection();
+  }
+  function cur2() { return mstate(M.set.id).current; }
+  function curSec() { var c = cur2(); return M.test.sections[c.secs[c.si]]; }
+  function remaining() { var c = cur2(), sec = curSec(); return sec.minutes * 60000 - (Date.now() - c.secStart - c.pausedMs) + (c.pauseAt ? Date.now() - c.pauseAt : 0); }
+  function stopTimer() { if (M && M.timer) { clearInterval(M.timer); M.timer = null; } }
+  function tick() {
+    var c = cur2(); if (!c) return stopTimer();
+    if (c.pauseAt) return;
+    var left = remaining(), el = app.querySelector('.q-clock');
+    if (el) { el.textContent = fmt(left); el.classList.toggle('q-clock-low', left < 5 * 60000); }
+    if (left <= 0) endSection(true);
+  }
+
+  function mockSection() {
+    if (curSec().listening) return ckSitting();
+    view(false);
+    var c = cur2(), sec = curSec(), ids = secIds(sec);
+    if (c.at >= ids.length) c.at = 0;
+    var id = ids[c.at], q = Q[id], prob = problemOf(sec, id), a = c.answers[id] || {};
+    cur = { q: q, start: Date.now(), picked: a.p ? a.p.slice() : [null, null, null, null], guess: !!a.g, done: false, mock: true };
+    curs = null;
+    // A passage's questions share the screen: [g0, g1] is the run with the same passage.
+    var g0 = c.at, g1 = c.at;
+    if (q.passage) { while (g0 > 0 && Q[ids[g0 - 1]].passage === q.passage) g0--; while (g1 < ids.length - 1 && Q[ids[g1 + 1]].passage === q.passage) g1++; }
+    var answered = ids.filter(function (x) { return c.answers[x] && c.answers[x].c != null; }).length;
+    var h = '<div class="q-mockbar"><span class="q-clock">' + fmt(remaining()) + '</span><span>' + esc(sec.ja) + '</span><span class="q-muted q-answered">' + answered + '/' + ids.length + '</span>' +
+      '<button class="q-btn" data-act="m-sheet">' + t('答题卡', 'Answer sheet') + '</button><button class="q-btn" data-act="m-pause">' + t('暂停', 'Pause') + '</button></div>';
+    h += '<div class="q-sheet" hidden>' + sec.problems.map(function (p) {
+      return '<div class="q-sheet-row"><span>' + t('问题', 'もんだい') + p.no + '</span>' + p.ids.map(function (x) {
+        var k = ids.indexOf(x), aa = c.answers[x];
+        return '<button class="q-cell' + (aa && aa.c != null ? ' q-cell-done' : '') + (c.flagsQ[x] ? ' q-cell-flag' : '') + (x === id ? ' q-cell-on' : '') + '" data-act="m-go" data-k="' + k + '">' + (k + 1) + '</button>';
+      }).join('') + '</div>';
+    }).join('') + '<button class="q-btn q-btn-primary" data-act="m-end">' + (c.si < c.secs.length - 1 ? t('结束本节，进入下一节', 'End this section') : t('交卷', 'Submit')) + '</button></div>';
+    h += '<div class="q-card"><p class="q-prob"><b>' + t('问题 ', 'もんだい') + prob.no + '</b> ' + esc(D.types[prob.type].ja) + ' <small class="q-muted">' + esc(bi(D.types[prob.type])) + '</small><span class="q-qno">' + (c.at + 1) + '</span></p>' +
+      passageHtml(g1 > g0 ? { passage: q.passage, blank: null } : q) + (g1 > g0 ? '' : '<div class="q-stem" lang="ja">' + stemHtml(q) + '</div>');
+    if (g1 > g0) {
+      for (var gi = g0; gi <= g1; gi++) {
+        var gq = Q[ids[gi]], ga = c.answers[gq.id] || {};
+        h += '<div class="q-sub" data-q="' + gq.id + '"><p class="q-subno">' + (gi + 1) + '</p><div class="q-stem" lang="ja">' + stemHtml(gq) + '</div>' +
+          '<ol class="q-opts" lang="ja">' + gq.options.map(function (o, i) { return '<li><button class="q-opt' + (ga.c === i ? ' q-picked' : '') + '" data-act="m-opt" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span>' + o + '</button></li>'; }).join('') + '</ol>' +
+          '<div class="q-actions"><label class="q-guess"><input type="checkbox" data-act="m-guess"' + (ga.g ? ' checked' : '') + '> ' + t('猜的', 'Guessing') + '</label>' +
+          '<button class="q-btn' + (c.flagsQ[gq.id] ? ' q-flagged' : '') + '" data-act="m-flag">⚑ ' + t('标记', 'Flag') + '</button></div></div>';
+      }
+    } else {
+      if (q.type === 'narabe') {
+        h += '<p class="q-muted q-hint">' + t('按顺序点选项填进空格，点空格可以撤回。', 'Tap the pieces in order; tap a blank to undo.') + '</p><div class="q-pieces" lang="ja">' +
+          q.options.map(function (o, i) { return '<button class="q-piece" data-act="m-piece" data-i="' + i + '">' + o + '</button>'; }).join('') + '</div>';
+      } else {
+        h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><button class="q-opt' + (a.c === i ? ' q-picked' : '') + '" data-act="m-opt" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span>' + o + '</button></li>'; }).join('') + '</ol>';
+      }
+      h += '<div class="q-actions"><label class="q-guess"><input type="checkbox" data-act="m-guess"' + (a.g ? ' checked' : '') + '> ' + t('猜的', 'Guessing') + '</label>' +
+        '<button class="q-btn' + (c.flagsQ[id] ? ' q-flagged' : '') + '" data-act="m-flag">⚑ ' + t('标记', 'Flag') + '</button></div>';
+    }
+    h += '<div class="q-actions q-nav"><button class="q-btn" data-act="m-go" data-k="' + (g0 - 1) + '"' + (g0 ? '' : ' disabled') + '>← ' + t('上一题', 'Prev') + '</button>' +
+      (g1 < ids.length - 1 ? '<button class="q-btn q-btn-primary" data-act="m-go" data-k="' + (g1 + 1) + '">' + t('下一题', 'Next') + ' →</button>' : '<button class="q-btn q-btn-primary" data-act="m-sheet">' + t('检查答题卡', 'Review answer sheet') + '</button>') + '</div></div>';
+    app.innerHTML = h;
+    if (g1 > g0) {
+      curs = {};
+      for (var gk = g0; gk <= g1; gk++) { var gid = ids[gk], gaa = c.answers[gid] || {}; curs[gid] = { q: Q[gid], start: Date.now(), picked: [null, null, null, null], guess: !!gaa.g, done: false, mock: true, root: app.querySelector('.q-sub[data-q="' + gid + '"]') }; }
+      cur = curs[id];
+    }
+    if (q.type === 'narabe') fillSlots();
+    if (!M.timer) M.timer = setInterval(tick, 1000);
+    toTop();
+  }
+  function mockAnswer(choice) {
+    var c = cur2(), id = cur.q.id, a = c.answers[id] || (c.answers[id] = {});
+    a.c = choice; a.g = cur.guess; a.ms = (a.ms || 0) + (Date.now() - cur.start); cur.start = Date.now();
+    if (cur.q.type === 'narabe') a.p = cur.picked.slice();
+    save();
+    markSheet();
+  }
+  // Answered count and answer-sheet cells, after any change to an answer.
+  function markSheet() {
+    if (curSec().listening) return ckSheet();
+    var c = cur2(), ids = secIds(curSec());
+    var n = ids.filter(function (x) { return c.answers[x] && c.answers[x].c != null; }).length;
+    var el = app.querySelector('.q-answered'); if (el) el.textContent = n + '/' + ids.length;
+    app.querySelectorAll('.q-cell').forEach(function (cell) {
+      var x = ids[+cell.getAttribute('data-k')], a = c.answers[x];
+      cell.classList.toggle('q-cell-done', !!(a && a.c != null));
+      cell.classList.toggle('q-cell-flag', !!c.flagsQ[x]);
+    });
+  }
+  function endSection(timeUp) {
+    var c = cur2(), ids = secIds(curSec());
+    if (!timeUp) {
+      var open = ids.filter(function (x) { return !c.answers[x] || c.answers[x].c == null; }).length;
+      var flagged = ids.filter(function (x) { return c.flagsQ[x]; }).length;
+      if ((open || flagged) && !window.confirm(t('还有 ' + open + ' 题没答、' + flagged + ' 题标记了。确定结束这一节？', open + ' unanswered, ' + flagged + ' flagged. End this section anyway?'))) return;
+    }
+    c.used[c.si] = Math.min(curSec().minutes * 60000, Date.now() - c.secStart - c.pausedMs);
+    stopTimer();
+    ckStop();
+    if (c.si < c.secs.length - 1) {
+      c.si++; c.at = 0; c.pausedMs = 0; c.secStart = null; save();
+      app.innerHTML = '<div class="q-card q-break"><h2>' + (timeUp ? t('时间到。', 'Time’s up. ') : '') + t('这一节结束', 'Section done') + '</h2><p>' + t('休息一下。下一节：', 'Take a break. Next: ') + esc(curSec().ja) + '（' + curSec().minutes + t(' 分钟', ' min') + '）</p><button class="q-btn q-btn-primary q-btn-big" data-act="m-next">' + t('开始下一节', 'Start the next section') + '</button></div>';
+    } else submitMock();
+  }
+  function submitMock() {
+    var st = mstate(M.set.id), c = st.current;
+    app.innerHTML = '<p class="q-muted">' + t('判分中…', 'Scoring…') + '</p>';
+    fetch(M.set.key).then(function (r) { return r.json(); }).then(function (key) {
+      var att = { mode: c.mode, start: c.start, end: Date.now(), used: c.used.reduce(function (x, y) { return x + y; }, 0), usedBy: c.used, answers: c.answers, flags: [] };
+      if (c.informal) att.flags.push('informal');
+      if (c.mode !== 'full') att.flags.push('partial');
+      if (c.retake) att.flags.push('retake');
+      scoreAttempt(att, key);
+      st.attempts.push(att); st.current = null; save();
+      track('mock_submit', { set: M.set.id, mode: c.mode, score: att.score.map(function (x) { return x.score; }).join('/'), minutes: Math.round(att.used / 60000), flags: att.flags.join(',') });
+      mockResult(M.set, att, key);
+    }).catch(loadFail);
+  }
+  // Each scored part = share of its questions right × its maximum. The real
+  // test is equated (IRT), so this is only an estimate.
+  function scoreAttempt(att, key) {
+    var right = 0, all = 0;
+    var c = mstate(M.set.id).current || { secs: att.mode === 'full' ? M.test.sections.map(function (_, i) { return i; }) : [+att.mode] };
+    var taken = [];
+    c.secs.forEach(function (i) { taken = taken.concat(secIds(M.test.sections[i])); });
+    // Each scored part is a set of question types (N3/N2 split language
+    // knowledge and reading across the sittings); only sittings taken count.
+    att.score = M.test.scoring.map(function (p) {
+      var ids = taken.filter(function (id) { return p.types.indexOf(Q[id].type) >= 0; });
+      var ok = ids.filter(function (id) { var a = att.answers[id]; return a && a.c === key.questions[id].answer; }).length;
+      right += ok; all += ids.length;
+      return { key: p.key, ok: ok, n: ids.length, score: ids.length ? Math.round(ok / ids.length * p.max) : 0, max: p.max, min: p.min };
+    });
+    att.total = right; att.n = all;
+  }
+
+  function mockResult(set, att, key) {
+    view(false);
+    var go = function (test) {
+      var h = '<div class="q-top"><button class="q-link" data-act="m-list">‹ ' + t('返回', 'Back') + '</button></div><div class="q-card q-result">';
+      h += '<h2>' + t('第 ' + set.n + ' 套 · 结果', 'Test ' + set.n + ' · results') + (att.flags.length ? ' <small class="q-tag">' + att.flags.map(flagName).join('、') + '</small>' : '') + '</h2>';
+      var sum = 0;
+      att.score.forEach(function (x) {
+        if (!x.n && att.mode !== 'full') return;   // a part this sitting doesn't cover
+        var p = test.scoring.filter(function (s) { return s.key === x.key; })[0];
+        sum += x.score;
+        h += '<div class="q-scoreline"><span>' + esc(p.ja) + '<br><small class="q-muted">' + esc(bi(p)) + '</small></span><b>' + x.score + '<small>/' + x.max + '</small></b>' +
+          (att.mode === 'full' ? '<span class="' + (x.score >= x.min ? 'q-v-ok' : 'q-v-bad') + '">' + (x.score >= x.min ? '✓ ' + t('过了 ' + x.min + ' 分单科线', 'above the ' + x.min + ' minimum') : '✗ ' + t('差 ' + (x.min - x.score) + ' 分到单科线 ' + x.min, (x.min - x.score) + ' short of the ' + x.min + ' minimum')) + '</span>' : '<span class="q-muted">' + x.ok + '/' + x.n + t(' 题', ' right') + '</span>') + '</div>';
+      });
+      // With a listening sitting the estimate covers every part: pass or not.
+      var hasL = att.score.some(function (x) { return x.key === 'choukai'; });
+      if (att.mode === 'full' && hasL) {
+        var max = att.score.reduce(function (a, x) { return a + x.max; }, 0), below = att.score.some(function (x) { return x.score < x.min; });
+        h += '<p class="q-listen"><b>' + t('总分 ', 'Total ') + sum + ' / ' + max + '</b> · ' + (sum >= test.pass && !below ? '<span class="q-v-ok">✓ ' + t('估计合格（合格线 ' + test.pass + '，每科都过了单科线）', 'would pass (pass mark ' + test.pass + ', every part above its minimum)') + '</span>' :
+          '<span class="q-v-bad">✗ ' + (sum < test.pass ? t('差 ' + (test.pass - sum) + ' 分到合格线 ' + test.pass, (test.pass - sum) + ' short of the ' + test.pass + ' pass mark') : t('总分够了，但有一科低于单科线', 'enough in total, but a part is below its minimum')) + '</span>') + '</p>';
+      } else if (att.mode === 'full') {
+        var L = test.listening, need = Math.max(L.min, test.pass - sum);
+        h += '<p class="q-listen">' + t('聴解未测（听力题还在规划中）。', 'Listening isn’t included (listening questions are planned). ') + (need > L.max ? t('按这个分数，聴解满分也达不到总分线 ' + test.pass + '。', 'At this score even full marks in listening wouldn’t reach the ' + test.pass + ' pass mark.') :
+          t('要合格，聴解需要 ≥ ' + need + ' / ' + L.max + ' 分（总分线 ' + test.pass + '，聴解单科线 ' + L.min + '）。', 'To pass you’d need ≥ ' + need + ' / ' + L.max + ' in listening (pass mark ' + test.pass + ', listening minimum ' + L.min + ').')) + '</p>';
+      }
+      h += '<p class="q-muted q-small">' + t('估算：按答对比例换算。真考是等化计分，实际分数会有出入。', 'Estimate: share of questions right, scaled. The real test is equated, so your actual score will differ.') + '</p>';
+      // By もんだい
+      h += '<h3>' + t('各题型', 'By question type') + '</h3><table class="q-table q-bytype"><tr><th></th><th>' + t('题型', 'Type') + '</th><th>' + t('对', 'Right') + '</th><th>' + t('猜对', 'Guessed') + '</th><th></th></tr>';
+      test.sections.forEach(function (sec, si) {
+        if (att.usedBy && att.mode !== 'full' && +att.mode !== si) return;
+        sec.problems.forEach(function (p) {
+          var ok = 0, g = 0;
+          p.ids.forEach(function (id) { var a = att.answers[id]; if (a && a.c === key.questions[id].answer) { ok++; if (a.g) g++; } });
+          var low = ok / p.ids.length < 0.5;
+          h += '<tr' + (low ? ' class="q-low"' : '') + '><td>' + (si + 1) + '-' + p.no + '</td><td>' + esc(test.types[p.type].ja) + '<br><small class="q-muted">' + esc(bi(test.types[p.type])) + '</small></td><td>' + ok + '/' + p.ids.length + '</td><td>' + (g || '') + '</td>' +
+            '<td><a href="' + LESSON_BASE + LEVEL.toLowerCase() + '-practice/#type=' + p.type + '" title="' + t('练这个题型', 'Practice this type') + '">✍ ' + t('练', 'Practice') + '</a></td></tr>';
+        });
+      });
+      h += '</table>';
+      // Time
+      h += '<h3>' + t('时间', 'Time') + '</h3><ul class="q-time">';
+      var secs = att.mode === 'full' ? test.sections.map(function (_, i) { return i; }) : [+att.mode];
+      secs.forEach(function (si, k) {
+        var sec = test.sections[si], used = (att.usedBy || [])[k] || 0;
+        h += '<li>' + esc(sec.ja) + '：' + Math.round(used / 60000) + ' / ' + sec.minutes + t(' 分钟', ' min') + (used >= sec.minutes * 60000 - 1000 ? ' · ' + t('用满了', 'used it all') : '') + '</li>';
+      });
+      h += '</ul>';
+      var slow = Object.keys(att.answers).filter(function (id) { return Q[id] && !isCk(Q[id]); }).sort(function (a, b) { return (att.answers[b].ms || 0) - (att.answers[a].ms || 0); }).slice(0, 3);
+      if (slow.length) h += '<p class="q-muted">' + t('用时最长：', 'Slowest: ') + slow.map(function (id) { return id.split('-').pop() + '（' + Math.round((att.answers[id].ms || 0) / 1000) + 's）'; }).join('、') + '</p>';
+      h += '<div class="q-actions"><button class="q-btn q-btn-primary" data-act="m-review" data-k="wrong">' + t('复盘错题和猜的题', 'Review misses and guesses') + '</button><button class="q-btn" data-act="m-review" data-k="all">' + t('全部题目', 'All questions') + '</button></div>' + shareBtn() + '</div>';
+      app._share = { text: t('我在 jpnotes.dev 做了 JLPT ' + LEVEL + ' 模拟考，' + (att.mode === 'full' ? (hasL ? '估分 ' + sum + ' / 180。' : '言语知识和阅读估分 ' + sum + ' 分。') : '') + '免费模考，按真题结构出题：', 'I took a JLPT ' + LEVEL + ' mock test on jpnotes.dev' + (att.mode === 'full' ? (hasL ? ' — estimated ' + sum + '/180' : ' — estimated ' + sum + ' without listening') : '') + '. Free mock tests laid out like the real exam:'), src: 'mock_result' };
+      M = { set: set, test: test, att: att, key: key };
+      app.innerHTML = h;
+    };
+    if (M && M.test && M.set === set) go(M.test); else loadTest(set).then(go).catch(loadFail);
+  }
+  function lastResult(set) {
+    var att = mstate(set.id).attempts.slice(-1)[0];
+    loadTest(set).then(function (test) {
+      M = { set: set, test: test };
+      return fetch(set.key).then(function (r) { return r.json(); }).then(function (key) { mockResult(set, att, key); });
+    }).catch(loadFail);
+  }
+
+  function mockReview(which) {
+    view(false);
+    var test = M.test, key = M.key, att = M.att, h = '<div class="q-top"><button class="q-link" data-act="m-back-result">‹ ' + t('回到结果', 'Back to results') + '</button></div>';
+    var shownP = {};
+    test.sections.forEach(function (sec, si) {
+      if (att.mode !== 'full' && +att.mode !== si) return;
+      sec.problems.forEach(function (p) {
+        p.ids.forEach(function (id, k) {
+          var q = Q[id], kq = key.questions[id], a = att.answers[id] || {}, ok = a.c === kq.answer;
+          if (which === 'wrong' && ok && !a.g) return;
+          var qq = {}; for (var x in q) qq[x] = q[x]; for (var y in kq) qq[y] = kq[y];
+          if (isCk(q)) {
+            var again = q.passage && shownP[q.passage]; if (q.passage) shownP[q.passage] = 1;
+            h += '<div class="q-card q-revcard"><p class="q-prob"><b>' + (si + 1) + '-' + p.no + '</b> ' + esc(test.types[p.type].ja) + '<span class="q-qno">' + ckNo(p, id) + '番</span></p>' + ckReview(qq, a, again) + aiBtn(false, 'm-ai').replace(/data-act="m-ai"/g, 'data-act="m-ai" data-k="' + id + '"') + '</div>';
+            return;
+          }
+          h += '<div class="q-card q-revcard">';
+          if (q.passage && !shownP[q.passage]) { shownP[q.passage] = 1; h += '<details class="q-revpass"><summary>' + t('原文', 'Text') + '</summary>' + passageHtml(qq) + (key.passages[q.passage].au ? listenBtn(key.passages[q.passage].au) : '') + '<p class="q-muted">' + esc(bi(key.passages[q.passage].tr)) + '</p></details>'; }
+          h += '<p class="q-prob"><b>' + (si + 1) + '-' + p.no + '</b> ' + esc(test.types[p.type].ja) + '</p><div class="q-stem" lang="ja">' + stemHtml(qq).replace(/<button[^>]*>(★)?<\/button>/g, function (m, st) { return st ? '＿★＿' : '＿＿'; }) + '</div>';
+          if (q.type === 'narabe') h += '<p lang="ja">' + t('正确顺序：', 'Order: ') + kq.order.map(function (i) { return q.options[i]; }).join(' / ') + '</p>';
+          h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><div class="q-opt' + (i === kq.answer ? ' q-ok' : i === a.c ? ' q-bad' : '') + '"><span class="q-num">' + (i + 1) + '</span>' + o + okjOf(qq, i) + '</div></li>'; }).join('') + '</ol>';
+          h += '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 猜对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + '</p>';
+          h += '<div class="q-explain"><p>' + esc(bi(kq.why)) + '</p>' + (q.type !== 'narabe' ? '<ul class="q-wrong">' + kq.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + q.options[i] + okjOf(qq, i) + '</b> — ' + esc(bi(w)) + '</li>' : ''; }).join('') + '</ul>' : '') +
+            kjHtml(qq, key.passages) + (kq.tr ? '<p class="q-muted">' + esc(bi(kq.tr)) + '</p>' : '') + '</div>' +
+            aiBtn(false, 'm-ai').replace(/data-act="m-ai"/g, 'data-act="m-ai" data-k="' + id + '"') + '</div>';
+        });
+      });
+    });
+    app.innerHTML = h;
+    toTop();
+  }
+
+  function pause(auto, awayMs) {
+    var c = cur2(); if (!c || c.pauseAt || !c.secStart) return;
+    c.pauseAt = Date.now() - (awayMs || 0); save();
+    ckHold();
+    var overlay = document.createElement('div');
+    overlay.className = 'q-paused';
+    overlay.innerHTML = '<div class="q-card"><h2>' + t('已暂停', 'Paused') + '</h2><p>' + (auto ? t('离开页面超过 1 分钟，计时已暂停。', 'You were away for over a minute, so the clock stopped.') : '') + t('这次成绩会标为“非正式”。', 'This attempt will be marked informal.') + '</p><button class="q-btn q-btn-primary q-btn-big" data-act="m-unpause">' + t('继续', 'Resume') + '</button></div>';
+    app.appendChild(overlay);
+  }
+  function unpause() {
+    var c = cur2(); if (!c || !c.pauseAt) return;
+    c.pausedMs += Date.now() - c.pauseAt; c.pauseAt = null; c.informal = true; save();
+    var o = app.querySelector('.q-paused'); if (o) o.remove();
+    ckGo();
+    tick();
+  }
+  var hiddenAt = null;
+  document.addEventListener('visibilitychange', function () {
+    if (!MOCK || !M || !cur2() || !cur2().secStart) return;
+    if (document.hidden) hiddenAt = Date.now();
+    else if (hiddenAt) { var away = Date.now() - hiddenAt; hiddenAt = null; if (away > AWAY_GRACE && !cur2().pauseAt) pause(true, away); else tick(); }
+  });
+
+  if (MOCK) app.addEventListener('click', function (e) {
+    var el = e.target.closest('[data-act]');
+    if (!el || el.disabled) return;
+    var act = el.getAttribute('data-act'), k = el.getAttribute('data-k');
+    var sub = curs && el.closest('.q-sub');
+    if (sub && curs[sub.getAttribute('data-q')]) cur = curs[sub.getAttribute('data-q')];
+    if (act === 'm-list') mockList();
+    else if (act === 'm-intro') mockIntro(setById(k));
+    else if (act === 'm-start') mockStart(k);
+    else if (act === 'm-resume') { var set = setById(k); loadTest(set).then(function (test) { M = { set: set, test: test }; var c = cur2(); if (!c.secStart) { c.secStart = Date.now(); save(); } if (c.pauseAt) { mockSection(); pause(false); } else mockSection(); }).catch(loadFail); }
+    else if (act === 'm-drop') { if (window.confirm(t('放弃这次作答？', 'Discard this attempt?'))) { mstate(k).current = null; save(); mockList(); } }
+    else if (act === 'm-result') lastResult(setById(k));
+    else if (act === 'm-sheet') { var sh = app.querySelector('.q-sheet'); sh.hidden = !sh.hidden; if (!sh.hidden) sh.scrollIntoView({ block: 'nearest' }); }
+    else if (act === 'm-go') { cur2().at = +k; save(); mockSection(); }
+    else if (act === 'm-opt') { mockAnswer(+el.getAttribute('data-i')); root().querySelectorAll('.q-opt').forEach(function (b, i) { b.classList.toggle('q-picked', i === +el.getAttribute('data-i')); }); }
+    else if (act === 'm-piece') { var i = cur.picked.indexOf(null); if (i >= 0) { cur.picked[i] = +el.getAttribute('data-i'); fillSlots(); if (cur.picked.indexOf(null) < 0) { var star = [].indexOf.call(app.querySelectorAll('.q-slot'), app.querySelector('.q-star')); mockAnswer(cur.picked[star]); } } }
+    else if (act === 'm-slot') { cur.picked[+el.getAttribute('data-k')] = null; fillSlots(); var a = cur2().answers[cur.q.id]; if (a) { a.c = null; a.p = cur.picked.slice(); save(); markSheet(); } }
+    else if (act === 'm-flag') { var c = cur2(); c.flagsQ[cur.q.id] = !c.flagsQ[cur.q.id]; save(); el.classList.toggle('q-flagged'); markSheet(); }
+    else if (act === 'm-end') endSection(false);
+    else if (act === 'm-next') { var c2 = cur2(); c2.secStart = Date.now(); save(); mockSection(); }
+    else if (act === 'm-pause') pause(false);
+    else if (act === 'm-unpause') unpause();
+    else if (act === 'm-review') mockReview(k);
+    else if (act === 'ck-start') ckItem(CK.i);
+    else if (act === 'ck-mark') ckMark(k, +el.getAttribute('data-i'));
+    else if (act === 'm-ai') {
+      var mq = {}, a2 = M.att.answers[k] || {}, P2 = {};
+      for (var x in Q[k]) mq[x] = Q[k][x]; for (var y in M.key.questions[k]) mq[y] = M.key.questions[k][y];
+      if (mq.passage) { P2[mq.passage] = D.passages[mq.passage]; }
+      aiExplain(mq, a2.c == null ? null : a2.c, a2.g, M.test.types[mq.type].ja, P2, el.getAttribute('data-mode'));
+    }
+    else if (act === 'm-back-result') mockResult(M.set, M.att, M.key);
+  });
+  if (MOCK) app.addEventListener('change', function (e) {
+    if (e.target.getAttribute('data-act') !== 'm-guess') return;
+    var sub = curs && e.target.closest('.q-sub');
+    if (sub && curs[sub.getAttribute('data-q')]) cur = curs[sub.getAttribute('data-q')];
+    cur.guess = e.target.checked;
+    var a = cur2().answers[cur.q.id];
+    if (a) { a.g = cur.guess; save(); }
+  });
+
+
+  // ─── Listening (聴解) ───
+  // An item carries `au` (its mp3 in /audio/choukai/, the whole item in test
+  // order, and where each segment starts: scene, q, line, num, opt …), `ck`
+  // (the transcript and its translations, shown after answering; in a mock
+  // test it's in the key) and maybe `pic` (picture options, or the 発話表現
+  // scene and the box of the person who speaks). `spoken`: the options are only
+  // heard, so the page shows 1 / 2 / 3 until the answer is in.
+  // One <audio> element plays everything. iOS starts audio only from a tap;
+  // once that element has played, it may go on to the next file by itself,
+  // which the mock test's back-to-back items rely on.
+  var CK_AUDIO = '/audio/choukai/', CK_IMG = '/images/choukai/';
+  var ck = { el: null, mode: 'all', end: null, onEnd: null };
+  function ckEl() {
+    if (ck.el) return ck.el;
+    var a = ck.el = new Audio();
+    a.preload = 'auto';
+    a.addEventListener('timeupdate', function () {
+      if (ck.end != null && a.currentTime >= ck.end) { a.pause(); ck.end = null; }
+      ckShow();
+    });
+    a.addEventListener('play', ckShow);
+    a.addEventListener('pause', ckShow);
+    a.addEventListener('ended', function () { ckShow(); var f = ck.onEnd; ck.onEnd = null; if (f) f(); });
+    a.addEventListener('error', function () { if (CK && CK.on) ckFail(); });
+    return a;
+  }
+  // Before the file has loaded, a seek can be lost: set it again once it can play.
+  function ckSeek(a, at) {
+    if (a.readyState >= 1) a.currentTime = at;
+    else a.addEventListener('canplay', function () { if (Math.abs(a.currentTime - at) > 0.3) a.currentTime = at; }, { once: true });
+  }
+  // Practice and review: ▶ plays the whole item (tap again to pause, once more
+  // to go on); a transcript line's ▶ plays just that segment.
+  function ckPlay(file, from, len) {
+    if (player) player.pause();
+    var a = ckEl(), src = CK_AUDIO + file, same = a.src.indexOf(src) >= 0;
+    if (!same) a.src = src;
+    if (from == null) {
+      if (same && ck.mode === 'all' && !a.paused) { a.pause(); return; }
+      var resume = same && ck.mode === 'all' && !a.ended && a.currentTime > 0;
+      ck.mode = 'all'; ck.end = null;
+      if (!resume) ckSeek(a, 0);
+    } else { ck.mode = 'seg'; ck.end = from + len; ckSeek(a, from); }
+    a.play().catch(function () {});
+    track('quiz_listen_play', { level: LEVEL, part: from == null ? 'all' : 'line' });
+  }
+  function ckStop() {
+    ck.onEnd = null; ck.end = null;
+    if (ck.el) ck.el.pause();
+    if (CK) { clearInterval(CK.timer); CK = null; }
+  }
+  // Every player on screen: progress of the file playing, ▶ / ⏸.
+  function ckShow() {
+    var a = ck.el;
+    if (!a) return;
+    app.querySelectorAll('.q-ck-player').forEach(function (p) {
+      var on = a.src.indexOf(CK_AUDIO + p.getAttribute('data-k')) >= 0, dur = +p.getAttribute('data-dur'), at = on ? a.currentTime : 0;
+      p.querySelector('.q-ck-bar span').style.width = Math.min(100, at * 100 / dur) + '%';
+      p.querySelector('.q-ck-time').textContent = fmt(at * 1000) + ' / ' + fmt(dur * 1000);
+      var b = p.querySelector('.q-ck-play');
+      if (b) b.textContent = on && !a.paused && ck.mode === 'all' ? '⏸' : '▶';
+    });
+  }
+  // The progress bar; practice has a ▶ button, the mock test only the bar.
+  function ckPlayer(q, mock) {
+    return '<div class="q-ck-player" data-k="' + q.au.f + '" data-dur="' + q.au.dur + '">' +
+      (mock ? '' : '<button class="q-btn q-ck-play" data-act="ck-play" data-k="' + q.au.f + '" aria-label="' + t('播放 / 暂停', 'Play / pause') + '">▶</button>') +
+      '<span class="q-ck-bar"><span></span></span><span class="q-ck-time">0:00 / ' + fmt(q.au.dur * 1000) + '</span></div>';
+  }
+  // The 発話表現 scene, with an arrow pointing down at the top of the speaker's
+  // box (box = [ymin, xmin, ymax, xmax] on 0–1000) — drawn here, not in the picture.
+  function ckScene(q) {
+    var b = q.pic.box;
+    return '<figure class="q-ck-scene"><img src="' + CK_IMG + q.pic.scene + '" alt="' + t('场景图', 'The scene') + '" width="720" height="538">' +
+      '<svg class="q-ck-arrow" style="left:' + (b[1] + b[3]) / 20 + '%;top:' + b[0] / 10 + '%" viewBox="0 0 40 60" aria-hidden="true"><path d="M13 1h14v31h11L20 58 2 32h11z"/></svg></figure>';
+  }
+  var CK_HOW = {
+    kadai: ['听对话，回答录音里的问题。', 'Listen to the conversation and answer the question in the recording.'],
+    point: ['先听问题，再听对话，选出答案。', 'Hear the question, then the conversation, and pick the answer.'],
+    gaiyou: ['听完整段，问题和选项都在录音最后。', 'Listen to the end: the question and the options come last.'],
+    hatsuwa: ['看图，听场景说明：箭头指的人该说哪一句？', 'Look at the picture and listen: what does the person with the arrow say?'],
+    sokuji: ['听一句话和三个回应，选最合适的回应。', 'Hear a line and three replies; pick the one that fits.'],
+    last: ['听完整段，问题在录音最后。', 'Listen to the end: the question comes last.'],
+    several: ['先听说明，再听两个人的讨论；最后有两个问题，选项印在下面。', 'First an explanation, then two people discuss it; two questions come at the end, their options are printed below.'],
+  };
+  // The item as the test booklet prints it: printed options or pictures, the
+  // scene picture, or just the numbers of the spoken options. One of several
+  // questions on a recording (`passage`) is headed 質問1, 質問2 … as in the booklet.
+  function ckQuestion(q, mock, picked) { return (mock ? '' : ckIntro(q)) + (q.passage ? ckSubNo(q) : '') + ckOpts(q, mock, picked); }
+  // Practice: the player and what to do.
+  function ckIntro(q) {
+    var how = CK_HOW[q.type !== 'ctougou' ? q.type : q.passage ? 'several' : q.spoken ? 'gaiyou' : 'last'] || CK_HOW.kadai;
+    return ckPlayer(q) + '<p class="q-muted q-hint">' + t(how[0], how[1]) + t('可以重听。', ' Replay as often as you like.') + '</p>';
+  }
+  function ckSubNo(q) { return '<p class="q-subno" lang="ja">質問' + (q.part + 1) + '</p>'; }
+  function ckOpts(q, mock, picked) {
+    var act = mock ? 'm-opt' : 'opt', cls = function (i) { return 'q-opt' + (picked === i ? ' q-picked' : ''); }, h = '';
+    if (q.pic && q.pic.scene) h += ckScene(q);
+    if (q.pic && q.pic.opts) h += '<ol class="q-ck-pics">' + q.pic.opts.map(function (f, i) {
+      return '<li><button class="' + cls(i) + ' q-ck-pic" data-act="' + act + '" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span><img src="' + CK_IMG + f + '" alt="' + esc(plainJa(q.options[i])) + '" width="304" height="343"></button></li>';
+    }).join('') + '</ol>';
+    else if (q.spoken) h += '<ol class="q-ck-nums">' + q.options.map(function (o, i) { return '<li><button class="' + cls(i) + '" data-act="' + act + '" data-i="' + i + '" aria-label="' + (i + 1) + '"><span class="q-num">' + (i + 1) + '</span></button></li>'; }).join('') + '</ol>';
+    else h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><button class="' + cls(i) + '" data-act="' + act + '" data-i="' + i + '"><span class="q-num">' + (i + 1) + '</span>' + o + '</button></li>'; }).join('') + '</ol>';
+    return h;
+  }
+  function ckTr(q) { return (q.ck.tr && q.ck.tr[EN ? 'en' : 'zh']) || {}; }
+  function ckWho(s) { return EN ? s : s.replace(/^M/, '男').replace(/^F/, '女'); }
+  // A spoken option revealed after answering: its text and translation.
+  function ckOptText(q, i) { var tr = (ckTr(q).options || [])[i]; return '<span class="q-ck-otext"><span lang="ja">' + q.options[i] + '</span>' + (tr ? '<small>' + esc(tr) + '</small>' : '') + '</span>'; }
+  function ckSegBtn(q, k, i) {
+    var sg = (q.au.segs || []).filter(function (x) { return x.k === k && x.i === i; })[0];
+    return sg ? '<button class="q-say" data-act="ck-seg" data-k="' + q.au.f + '" data-t="' + sg.t + '" data-d="' + sg.d + '" aria-label="' + t('听这句', 'Play this line') + '" title="' + t('听这句', 'Play this line') + '">▶</button>' : '';
+  }
+  // The transcript in the order it is heard (the segments of `au`): narrator's
+  // scene and question(s), each line with its speaker, the spoken options; a ▶
+  // per segment and the translation under each.
+  function ckScript(q) {
+    var row = function (who, ja, sub, btn, cls) { return '<li' + (cls ? ' class="' + cls + '"' : '') + '>' + (who ? '<b class="q-ck-who">' + esc(who) + '</b>' : '') + '<span><span lang="ja">' + ja + '</span>' + btn + (sub ? '<small>' + esc(sub) + '</small>' : '') + '</span></li>'; };
+    return '<div class="q-ck-script"><p class="q-ck-head">' + t('听力原文', 'Transcript') + '</p><ol>' + ckParts(q).map(function (p) {
+      return row(p.who, p.ja, p.tr, ckSegBtn(q, p.k, p.i), p.who ? '' : 'q-ck-nar');
+    }).join('') + '</ol></div>';
+  }
+  // Plain text of the transcript for the AI context.
+  function ckPlain(q) {
+    return ckParts(q).map(function (p) { return (p.who ? p.who + '：' : '') + plainJa(p.ja) + (p.tr ? '（' + p.tr + '）' : ''); }).join('\n');
+  }
+  // The transcript's parts { k, i, who, ja, tr }: scene, question(s), lines,
+  // spoken options, ordered like the recording (a question asked after the talk
+  // comes after it; the repeated question and the numbers are left out).
+  function ckParts(q) {
+    var tr = ckTr(q), c = q.ck, out = [], add = function (k, i, who, ja, sub) { out.push({ k: k, i: i, who: who, ja: ja, tr: sub }); };
+    if (c.scene) add('scene', 0, '', c.scene, tr.scene);
+    if (c.questions) c.questions.forEach(function (x, i) { add('q', i, '', x, (tr.questions || [])[i]); });
+    else if (c.question) add('q', 0, '', c.question, tr.question);
+    c.lines.forEach(function (l, i) { add('line', i, ckWho(l[0]), l[1], (tr.lines || [])[i]); });
+    if (q.spoken) q.options.forEach(function (o, i) { add('opt', i, String(i + 1), o, (tr.options || [])[i]); });
+    var segs = (q.au && q.au.segs) || [], at = function (p) { for (var k = 0; k < segs.length; k++) if (segs[k].k === p.k && segs[k].i === p.i) return k; return 1e9; };
+    return out.map(function (p, n) { return { p: p, n: n }; }).sort(function (a, b) { return at(a.p) - at(b.p) || a.n - b.n; }).map(function (x) { return x.p; });
+  }
+  // A mock test's listening item in the review: replayable, then as in practice.
+  // `again`: another question on a recording already shown above (no player or transcript).
+  function ckReview(q, a, again) {
+    var ok = a.c === q.answer, mark = function (i) { return i === q.answer ? ' q-ok' : i === a.c ? ' q-bad' : ''; };
+    var h = (again ? '' : ckPlayer(q)) + (q.passage ? ckSubNo(q) : '') + (q.pic && q.pic.scene ? ckScene(q) : '');
+    if (q.pic && q.pic.opts) h += '<ol class="q-ck-pics">' + q.pic.opts.map(function (f, i) { return '<li><div class="q-opt q-ck-pic' + mark(i) + '"><span class="q-num">' + (i + 1) + '</span><img src="' + CK_IMG + f + '" alt="' + esc(plainJa(q.options[i])) + '" width="304" height="343" loading="lazy"></div></li>'; }).join('') + '</ol>';
+    else h += '<ol class="q-opts' + (q.spoken ? ' q-ck-nums q-ck-shown' : '') + '" lang="ja">' + q.options.map(function (o, i) { return '<li><div class="q-opt' + mark(i) + '"><span class="q-num">' + (i + 1) + '</span>' + (q.spoken ? ckOptText(q, i) : o) + '</div></li>'; }).join('') + '</ol>';
+    h += '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 猜对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + '</p>';
+    return h + (again ? '' : ckScript(q)) + '<div class="q-explain"><p>' + esc(bi(q.why)) + '</p><ul class="q-wrong">' + q.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + (q.pic && q.pic.opts ? '' : q.options[i]) + '</b> — ' + esc(bi(w)) + '</li>' : ''; }).join('') + '</ul></div>';
+  }
+
+  // The mock test's listening sitting, like the real one: one tap starts it,
+  // then every item plays once, in order, with no replay or seeking, and a
+  // silent pause to answer after it (sec.pause[type] seconds, with a
+  // countdown). The current item's options are on screen; the answer sheet
+  // keeps every item heard so far answerable until the sitting ends.
+  // c.ckAt (saved) is the item playing, so a reload can go on from there.
+  // A recording with several questions (統合理解) is one item: its questions are
+  // on screen together, it plays once, and the pause is the type's for each.
+  var CK = null;   // { ids, i, n (questions in item i), on, wait (deadline ms), left (ms, while paused), timer }
+  // The ids heard in the recording that starts at CK.ids[i].
+  function ckGroup(i) {
+    var p = Q[CK.ids[i]].passage, out = [CK.ids[i]];
+    for (var j = i + 1; p && j < CK.ids.length && Q[CK.ids[j]].passage === p; j++) out.push(CK.ids[j]);
+    return out;
+  }
+  // The 番 of a listening question within its もんだい: recordings, not questions, are counted.
+  function ckNo(p, id) {
+    var n = 0, last = null;
+    for (var k = 0; k <= p.ids.indexOf(id); k++) { var r = Q[p.ids[k]].passage || p.ids[k]; if (r !== last) { n++; last = r; } }
+    return n;
+  }
+  function ckSitting() {
+    view(false);
+    var c = cur2(), sec = curSec(), ids = secIds(sec);
+    cur = null; curs = null;
+    CK = { ids: ids, i: Math.min(c.ckAt || 0, ids.length - 1), n: 1, on: false, wait: null, left: null, timer: null };
+    app.innerHTML = '<div class="q-mockbar"><span class="q-clock">' + fmt(remaining()) + '</span><span>' + esc(sec.ja) + '</span><span class="q-muted q-answered"></span>' +
+      '<button class="q-btn" data-act="m-sheet">' + t('答题卡', 'Answer sheet') + '</button><button class="q-btn" data-act="m-pause">' + t('暂停', 'Pause') + '</button></div>' +
+      '<div class="q-sheet q-ck-sheet" hidden></div><div class="q-card q-ck-now"><h2>' + esc(sec.ja) + ' <small class="q-muted">' + esc(bi(sec)) + '</small></h2><ul class="q-rules">' +
+      '<li>' + t('一共 ' + ids.length + ' 题，按顺序播放，每题只放一次，不能回放。', ids.length + ' items, played in order, each once, no replay.') + '</li>' +
+      '<li>' + t('每题播完后有几秒作答时间，倒计时结束自动播下一题。', 'After each one there are a few seconds to answer; then the next one starts by itself.') + '</li>' +
+      '<li>' + t('听过的题可以在答题卡上改答案，直到听力结束。', 'Until the end you can change any answer so far on the answer sheet.') + '</li>' +
+      '<li>' + t('请打开声音，最好戴耳机。', 'Turn the sound on; headphones help.') + '</li></ul>' +
+      '<div class="q-actions q-start"><button class="q-btn q-btn-primary q-btn-big" data-act="ck-start">▶ ' + (CK.i ? t('从第 ' + (CK.i + 1) + ' 题接着听', 'Go on from item ' + (CK.i + 1)) : t('开始听力', 'Start listening')) + '</button></div></div>';
+    ckSheet();
+    if (!M.timer) M.timer = setInterval(tick, 1000);
+    toTop();
+  }
+  // Plays item i (called from a tap the first time, then from the countdown).
+  function ckItem(i) {
+    var c = cur2(), sec = curSec();
+    if (i >= CK.ids.length) { c.ckAt = CK.ids.length; save(); return endSection(true); }
+    var group = ckGroup(i);
+    CK.i = c.ckAt = i; CK.n = group.length; CK.on = true; save();
+    var id = CK.ids[i], q = Q[id], prob = problemOf(sec, id);
+    var guess = function (a) { return '<div class="q-actions"><label class="q-guess"><input type="checkbox" data-act="m-guess"' + (a.g ? ' checked' : '') + '> ' + t('猜的', 'Guessing') + '</label></div>'; };
+    app.querySelector('.q-ck-now').innerHTML = '<p class="q-prob"><b>' + t('问题 ', 'もんだい') + prob.no + '</b> ' + esc(D.types[prob.type].ja) + ' <small class="q-muted">' + esc(bi(D.types[prob.type])) + '</small><span class="q-qno">' + ckNo(prob, id) + '番 · ' + (i + group.length) + '/' + CK.ids.length + '</span></p>' +
+      ckPlayer(q, true) + '<p class="q-ck-wait q-muted">🎧 ' + t('正在播放…', 'Playing…') + '</p>' +
+      group.map(function (x) { var a = c.answers[x] || {}; return group.length > 1 ? '<div class="q-sub" data-q="' + x + '">' + ckQuestion(Q[x], true, a.c) + guess(a) + '</div>' : ckQuestion(Q[x], true, a.c) + guess(a); }).join('');
+    // Each question its own state (cur is the one a tap is in, as for a passage).
+    curs = group.length > 1 ? {} : null;
+    group.forEach(function (x) {
+      var st = { q: Q[x], start: Date.now(), picked: [], guess: !!(c.answers[x] || {}).g, done: false, mock: true, root: curs ? app.querySelector('.q-ck-now .q-sub[data-q="' + x + '"]') : null };
+      if (curs) curs[x] = st; else cur = st;
+    });
+    if (curs) cur = curs[id];
+    ckSheet();
+    var el = ckEl();
+    ck.mode = 'all'; ck.end = null;
+    el.src = CK_AUDIO + q.au.f;
+    ck.onEnd = function () { ckWait(group.length * ((sec.pause || {})[q.type] || 10) * 1000); };
+    el.play().catch(ckFail);
+  }
+  function ckWait(ms) {
+    CK.wait = Date.now() + ms;
+    ckCount();
+    CK.timer = setInterval(ckCount, 250);
+  }
+  function ckCount() {
+    var c = cur2();
+    if (!CK || !c || c.pauseAt) return;
+    var left = CK.wait - Date.now(), el = app.querySelector('.q-ck-wait');
+    if (el) el.textContent = '✎ ' + t('作答时间 ', 'Time to answer: ') + Math.max(0, Math.ceil(left / 1000)) + t(' 秒', ' s');
+    if (left > 0) return;
+    clearInterval(CK.timer); CK.timer = null; CK.wait = null;
+    ckItem(CK.i + CK.n);
+  }
+  // The audio wouldn't play (no tap yet after a reload, or a network error): a tap retries.
+  function ckFail() {
+    var el = app.querySelector('.q-ck-wait');
+    if (el) el.innerHTML = '<button class="q-btn q-btn-primary" data-act="ck-start">▶ ' + t('点这里播放', 'Tap to play') + '</button> <span class="q-muted">' + t('录音没能播放', 'The recording didn’t start') + '</span>';
+  }
+  function ckHold() { if (!CK || !CK.on) return; if (ck.el) ck.el.pause(); if (CK.wait) CK.left = CK.wait - Date.now(); }
+  function ckGo() {
+    if (!CK || !CK.on) return;
+    if (CK.wait) CK.wait = Date.now() + CK.left;
+    else if (ck.el && !ck.el.ended) ck.el.play().catch(ckFail);
+  }
+  // The answer sheet: every item, numbers to mark; items not played yet are locked.
+  function ckSheet() {
+    var c = cur2(), sec = curSec(), sh = app.querySelector('.q-ck-sheet');
+    if (!sh || !CK) return;
+    sh.innerHTML = sec.problems.map(function (p) {
+      return '<div class="q-sheet-row"><span>' + t('问题', 'もんだい') + p.no + '</span>' + p.ids.map(function (x) {
+        var at = CK.ids.indexOf(x), open = at < CK.i + CK.n && CK.on, now = at >= CK.i && open, aa = c.answers[x];
+        return '<span class="q-ck-mark"><small>' + ckNo(p, x) + (Q[x].passage ? '-' + (Q[x].part + 1) : '') + '</small>' + Q[x].options.map(function (o, i) {
+          return '<button class="q-cell' + (aa && aa.c === i ? ' q-cell-done' : '') + (now ? ' q-cell-on' : '') + '" data-act="ck-mark" data-k="' + x + '" data-i="' + i + '"' + (open ? '' : ' disabled') + '>' + (i + 1) + '</button>';
+        }).join('') + '</span>';
+      }).join('') + '</div>';
+    }).join('') + '<button class="q-btn" data-act="m-end">' + t('交卷', 'Submit') + '</button>';
+    var n = CK.ids.filter(function (x) { return c.answers[x] && c.answers[x].c != null; }).length, el = app.querySelector('.q-answered');
+    if (el) el.textContent = n + '/' + CK.ids.length;
+  }
+  function ckMark(id, i) {
+    var c = cur2(), a = c.answers[id] || (c.answers[id] = {});
+    a.c = a.c === i ? null : i;   // tapping the marked number again clears it
+    save();
+    ckSheet();
+    var blk = curs ? curs[id] && curs[id].root : cur && cur.q.id === id && app.querySelector('.q-ck-now');
+    if (blk) blk.querySelectorAll('.q-opt').forEach(function (b, k) { b.classList.toggle('q-picked', k === a.c); });
+  }
+
+
+  // ─── Flashcards (/n5-cards/) ───
+  // One grammar point (data from build-anki.js) gives up to two cards, each
+  // switchable in settings:
+  //   recognition (key = id)    the pattern → meaning, rules, examples
+  //   fill-in     (key = id|c)  an example with its grammar blanked and the
+  //                             translation as the hint → the full sentence
+  // Scheduled like Anki: new cards go through two short learning steps, then
+  // review intervals grow by the card's ease. State: S.cards[key] = { s:
+  // 'learn' | 'review', step, due (ms), ivl (days), ease, lapses };
+  // S.cardDays[date] = { n: new cards started, r: reviews }.
+  var CARD_STEPS = [60e3, 10 * 60e3];    // learning steps: 1 min, 10 min
+  var MIN_EASE = 1.3, DAY_MS = 86400e3;
+  var C = [], cq = null;                  // all grammar points; the card on screen { key, c, kind, ex }
+  function cardsLoad() {
+    fetch(app.getAttribute('data-src')).then(function (r) { return r.json(); }).then(function (d) { C = d; cardsHome(); }).catch(loadFail);
+  }
+  function cday() { return S.cardDays[today()] || (S.cardDays[today()] = { n: 0, r: 0 }); }
+  function newLimit() { return S.prefs.newCards || 10; }
+  function cardKinds() { var k = S.prefs.cardKinds || { r: true, c: false }; return (k.r || k.c) ? k : { r: true, c: false }; }
+  // Every enabled card, recognition before fill-in for the same point.
+  function units() {
+    var k = cardKinds(), out = [];
+    C.forEach(function (c) {
+      if (k.r) out.push({ key: c.id, c: c, kind: 'r' });
+      if (k.c && c.cloze && c.cloze.length) out.push({ key: c.id + '|c', c: c, kind: 'c' });
+    });
+    return out;
+  }
+  function cardQueue() {
+    var n = Date.now(), all = units();
+    var due = all.filter(function (u) { var x = S.cards[u.key]; return x && x.due <= n; }).sort(function (a, b) { return S.cards[a.key].due - S.cards[b.key].due; });
+    var fresh = all.filter(function (u) { return !S.cards[u.key]; }).slice(0, Math.max(0, newLimit() - cday().n));
+    return { all: all, due: due, fresh: fresh, learning: all.filter(function (u) { var x = S.cards[u.key]; return x && x.s === 'learn'; }) };
+  }
+  function cardsHome() {
+    view(true);
+    var q = cardQueue(), k = cardKinds();
+    var seen = q.all.filter(function (u) { return S.cards[u.key]; }).length;
+    var mature = q.all.filter(function (u) { var x = S.cards[u.key]; return x && x.s === 'review' && x.ivl >= 21; }).length;
+    var nextDue = q.all.map(function (u) { return S.cards[u.key] && S.cards[u.key].due; }).filter(function (x) { return x && x > Date.now(); }).sort()[0];
+    var h = '<div class="q-today"><div class="q-cardstats"><span><b>' + q.fresh.length + '</b>' + t('新卡', 'new') + '</span><span><b>' + q.due.length + '</b>' + t('待复习', 'due') + '</span></div>' +
+      ((q.fresh.length || q.due.length) ? '<button class="q-btn q-btn-primary q-btn-big" data-act="c-start">' + t('开始背', 'Study now') + '</button>' :
+        '<p class="q-done">' + t('今天背完了 🎉', 'All done for today 🎉') + (nextDue ? ' ' + t('下一张：', 'Next card: ') + new Date(nextDue).toLocaleString([], { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }) : '') + '</p>') +
+      '<p class="q-muted">' + t('已学 ', 'Learned ') + seen + ' / ' + q.all.length + t(' 张 · 熟记 ', ' cards · mature ') + mature + t('（间隔 ≥ 21 天）', ' (interval ≥ 21 days)') + '</p></div>';
+    h += '<details class="q-sec q-settings"><summary>' + t('设置：卡片类型（认卡 / 填空卡）、每天新卡', 'Settings: card types (recognition / fill-in), new cards per day') + '</summary>' +
+      '<fieldset class="q-kinds"><legend>' + t('卡片类型', 'Card types') + '</legend>' +
+      '<label><input type="checkbox" data-act="c-kind" data-k="r"' + (k.r ? ' checked' : '') + '> <b>' + t('认卡', 'Recognition') + '</b> <span class="q-muted">' + t('看语法点，想含义和用法', 'see the pattern, recall what it means and how it’s used') + '</span></label>' +
+      '<label><input type="checkbox" data-act="c-kind" data-k="c"' + (k.c ? ' checked' : '') + '> <b>' + t('填空卡', 'Fill-in') + '</b> <span class="q-muted">' + t('看例句和翻译，想挖掉的语法部分（学过再开）', 'see a sentence and its translation, recall the missing grammar (best after recognition)') + '</span></label></fieldset>' +
+      '<label>' + t('每天新卡', 'New cards per day') + ' <select data-act="c-new">' +
+      [5, 10, 15, 20, 30].map(function (n) { return '<option' + (n === newLimit() ? ' selected' : '') + '>' + n + '</option>'; }).join('') + '</select></label>' +
+      '<p class="q-muted">' + t('进度和练习题记录存在一起，可以在练习页导出备份。', 'Progress is stored with your practice record; export it from the practice page.') + '</p></details>';
+    app.innerHTML = h;
+  }
+  // A fill-in hint: the translation without the "→ usage" note that would give it away.
+  function hint(e) { return String((EN ? e.en : e.zh) || '').split(/\s*→/)[0]; }
+  function nextCard() {
+    view(false);
+    var q = cardQueue(), n = Date.now();
+    // Due learning/review cards first; a new card when nothing is due; a learning
+    // card due within a few minutes rather than ending the session early.
+    var u = q.due[0] || q.fresh[0];
+    if (!u) u = q.learning.filter(function (x) { return S.cards[x.key].due - n < 20 * 60e3; }).sort(function (a, b) { return S.cards[a.key].due - S.cards[b.key].due; })[0];
+    if (!u) { cq = null; track('cards_done', { level: LEVEL }); return cardsHome(); }
+    var c = u.c, x = S.cards[u.key];
+    cq = { key: u.key, c: c, kind: u.kind, ex: u.kind === 'c' ? c.cloze[Math.floor(Math.random() * c.cloze.length)] : null };
+    var h = '<div class="q-top"><button class="q-link" data-act="c-home">‹ ' + t('返回', 'Back') + '</button><span class="q-muted">' + t('新 ', 'New ') + q.fresh.length + ' · ' + t('待复习 ', 'Due ') + q.due.length + '</span></div>' +
+      '<div class="q-card q-flash"><p class="q-muted q-flash-tag">' + (u.kind === 'c' ? t('填空', 'Fill-in') + ' · ' : '') + (x ? (x.s === 'learn' ? t('学习中', 'Learning') : t('复习', 'Review')) : t('新卡', 'New')) + ' · ' + c.lesson.replace('lesson', 'Lesson ') + '</p>';
+    if (u.kind === 'c') {
+      h += '<div class="q-flash-cloze" lang="ja">' + cq.ex.ja.replace(/<b class="cl">[\s\S]*?<\/b>/g, '<span class="q-cl">？</span>') + '</div>' +
+        '<p class="q-flash-hinttext">' + esc(hint(cq.ex)) + '</p>' +
+        '<p class="q-muted q-flash-hint">' + t('想一想：空的地方是什么？', 'What goes in the gap?') + '</p>';
+    } else {
+      h += '<div class="q-flash-term" lang="ja">' + esc(bi(c.term)) + '</div>' +
+        '<p class="q-muted q-flash-hint">' + t('想一想：什么意思？怎么接续？举个例句。', 'Think: what does it mean, what does it attach to, an example?') + '</p>';
+    }
+    h += '<div class="q-flash-back" hidden></div>' +
+      '<div class="q-next"><button class="q-btn q-btn-primary q-btn-big" data-act="c-show">' + t('显示答案', 'Show answer') + '</button></div></div>';
+    app.innerHTML = h;
+    toTop();
+  }
+  function ivlLabel(ms) {
+    if (ms < 3600e3) return Math.max(1, Math.round(ms / 60e3)) + t('分钟', 'm');
+    if (ms < DAY_MS) return Math.round(ms / 3600e3) + t('小时', 'h');
+    var d = Math.round(ms / DAY_MS);
+    return d < 31 ? d + t('天', 'd') : Math.round(d / 30) + t('个月', 'mo');
+  }
+  // What each button would do to card state x (null = new). Returns the new state.
+  function schedule(x, grade) {
+    var n = Date.now();
+    x = x ? JSON.parse(JSON.stringify(x)) : { s: 'learn', step: 0, ivl: 0, ease: 2.5, lapses: 0 };
+    if (x.s === 'learn') {
+      if (grade === 0) { x.step = 0; x.due = n + CARD_STEPS[0]; }
+      else if (grade === 1) x.due = n + CARD_STEPS[x.step] * 1.5;
+      else if (grade === 3 || x.step + 1 >= CARD_STEPS.length) { x.s = 'review'; x.ivl = grade === 3 ? 4 : 1; x.due = n + x.ivl * DAY_MS; }
+      else { x.step++; x.due = n + CARD_STEPS[x.step]; }
+      return x;
+    }
+    if (grade === 0) { x.lapses++; x.ease = Math.max(MIN_EASE, x.ease - 0.2); x.ivl = Math.max(1, Math.round(x.ivl * 0.3)); x.s = 'learn'; x.step = 1; x.due = n + CARD_STEPS[1]; return x; }
+    if (grade === 1) { x.ease = Math.max(MIN_EASE, x.ease - 0.15); x.ivl = Math.max(x.ivl + 1, Math.round(x.ivl * 1.2)); }
+    else if (grade === 2) x.ivl = Math.max(x.ivl + 1, Math.round(x.ivl * x.ease));
+    else { x.ease += 0.15; x.ivl = Math.max(x.ivl + 2, Math.round(x.ivl * x.ease * 1.3)); }
+    x.due = n + x.ivl * DAY_MS;
+    return x;
+  }
+  function audioBtn(a) { return a ? ' <button class="q-link" data-act="c-audio" data-k="' + esc(a) + '" aria-label="' + t('播放', 'Play') + '">🔊</button>' : ''; }
+  function showBack() {
+    var c = cq.c, x = S.cards[cq.key], back = app.querySelector('.q-flash-back');
+    var h = '';
+    if (cq.kind === 'c') {
+      // The sentence with the answer filled in and highlighted, then the point.
+      app.querySelector('.q-flash-cloze').innerHTML = cq.ex.ja + audioBtn(cq.ex.audio);
+      app.querySelector('.q-flash-hinttext').textContent = (EN ? cq.ex.en : cq.ex.zh) || '';
+      h += '<p class="q-flash-pt"><b lang="ja">' + esc(bi(c.term)) + '</b>' + (bi(c.desc) ? ' — ' + esc(bi(c.desc)) : '') + '</p>';
+      var others = c.cloze.filter(function (e) { return e !== cq.ex; }).slice(0, 2);
+      if (others.length) h += '<ul class="q-flash-ex">' + others.map(function (e) { return '<li><span lang="ja">' + e.ja + '</span>' + audioBtn(e.audio) + '<br><span class="q-muted">' + esc(EN ? e.en : e.zh) + '</span></li>'; }).join('') + '</ul>';
+    } else {
+      if (bi(c.desc)) h += '<p class="q-flash-desc">' + esc(bi(c.desc)) + '</p>';
+      // meaning is HTML built from the lesson markdown (tables, bold, lists).
+      if (bi(c.meaning)) h += '<div class="q-flash-meaning">' + bi(c.meaning) + '</div>';
+      if (c.ex.length) h += '<ul class="q-flash-ex">' + c.ex.map(function (e) {
+        return '<li><span lang="ja">' + e.ja + '</span>' + audioBtn(e.audio) + '<br><span class="q-muted">' + esc(EN ? e.en : e.zh) + '</span></li>';
+      }).join('') + '</ul>';
+    }
+    h += '<p class="q-refs">📖 <a href="' + LESSON_BASE + c.lesson + '/" target="_blank" rel="noopener">' + t('看课文', 'Open the lesson') + '</a> · <a href="' + LESSON_BASE + LEVEL.toLowerCase() + '-practice/#lesson=' + c.lesson + '" target="_blank" rel="noopener">' + t('练这一课的题', 'Practice this lesson') + '</a></p>';
+    back.innerHTML = h; back.hidden = false;
+    app.querySelector('.q-flash-hint').hidden = true;
+    var names = [t('忘了', 'Again'), t('难', 'Hard'), t('记得', 'Good'), t('简单', 'Easy')];
+    app.querySelector('.q-next').innerHTML = '<div class="q-grades">' + names.map(function (nm, g) {
+      return '<button class="q-btn q-grade q-grade-' + g + '" data-act="c-grade" data-k="' + g + '"><b>' + nm + '</b><small>' + ivlLabel(schedule(x, g).due - Date.now()) + '</small></button>';
+    }).join('') + '</div>';
+  }
+  function grade(g) {
+    var wasNew = !S.cards[cq.key];
+    S.cards[cq.key] = schedule(S.cards[cq.key], g);
+    if (wasNew) cday().n++; else cday().r++;
+    save();
+    track('card_grade', { level: LEVEL, grade: g, isNew: wasNew, kind: cq.kind });
+    nextCard();
+  }
+  if (CARDS) {
+    app.addEventListener('click', function (e) {
+      var el = e.target.closest('[data-act]');
+      if (!el) return;
+      var act = el.getAttribute('data-act');
+      if (act === 'c-start') { track('cards_start', { level: LEVEL, kinds: (cardKinds().r ? 'r' : '') + (cardKinds().c ? 'c' : '') }); nextCard(); }
+      else if (act === 'c-home') cardsHome();
+      else if (act === 'c-show') showBack();
+      else if (act === 'c-grade') grade(+el.getAttribute('data-k'));
+      else if (act === 'c-audio') new Audio('/audio/' + el.getAttribute('data-k')).play().catch(function () {});
+    });
+    app.addEventListener('change', function (e) {
+      var act = e.target.getAttribute('data-act');
+      if (act === 'c-new') { S.prefs.newCards = +e.target.value; save(); cardsHome(); }
+      else if (act === 'c-kind') {
+        var k = cardKinds(); k = { r: k.r, c: k.c };
+        k[e.target.getAttribute('data-k')] = e.target.checked;
+        if (!k.r && !k.c) { e.target.checked = true; return; }    // keep at least one
+        S.prefs.cardKinds = k; save(); cardsHome();
+        app.querySelector('.q-settings').open = true;
+        track('cards_kinds', { level: LEVEL, kinds: (k.r ? 'r' : '') + (k.c ? 'c' : '') });
+      }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (!cq || e.metaKey || e.ctrlKey || e.altKey || e.target.matches('input, select, textarea')) return;
+      var show = app.querySelector('[data-act="c-show"]');
+      if (show && (e.key === ' ' || e.key === 'Enter')) { e.preventDefault(); showBack(); }
+      else if (!show && /^[1-4]$/.test(e.key)) grade(+e.key - 1);
+    });
+  }
+
+  // ─── Events ───
+  app.addEventListener('click', function (e) {
+    var el = e.target.closest('[data-act]');
+    if (!el || el.disabled) return;
+    var act = el.getAttribute('data-act');
+    var sub = curs && el.closest('.q-sub');
+    if (sub && curs[sub.getAttribute('data-q')]) cur = curs[sub.getAttribute('data-q')];
+    if (act === 'daily' || act === 'type' || act === 'lesson' || act === 'review' || act === 'pre') startKind(act, el.getAttribute('data-k'));
+    else if (act === 'resume') ask();
+    else if (act === 'review-list') reviewList();
+    else if (act === 'analysis') analysis();
+    else if (act === 'share') shareScore(el);
+    else if (act === 'weak') startKind('weak');
+    else if (act === 'unreview') { delete S.review[el.getAttribute('data-k')]; save(); var y = window.scrollY; reviewList(); window.scrollTo(0, y); }
+    else if (act === 'drop') { S.session = null; save(); home(); }
+    else if (act === 'home') home();
+    else if (act === 'opt') submit(+el.getAttribute('data-i'));
+    else if (act === 'piece' && !cur.done) { var k = cur.picked.indexOf(null); if (k >= 0) { cur.picked[k] = +el.getAttribute('data-i'); fillSlots(); } }
+    else if (act === 'slot' && !cur.done) { cur.picked[+el.getAttribute('data-k')] = null; fillSlots(); }
+    else if (act === 'submit') { var star = [].indexOf.call(app.querySelectorAll('.q-slot'), app.querySelector('.q-star')); submit(cur.picked[star]); }
+    else if (act === 'next') ask(el.hasAttribute('data-k') ? +el.getAttribute('data-k') : undefined);
+    else if (act === 'prev') ask(+el.getAttribute('data-k'));
+    else if (act === 'idk') submit(null);
+    else if (act === 'was-guess') {
+      var gq = cur.q, ans = S.answers[gq.id], last = ans && ans[ans.length - 1];
+      if (last) last.g = true;
+      cur.guess = true;
+      if (S.session) for (var ri = S.session.res.length - 1; ri >= 0; ri--) if (S.session.res[ri].id === gq.id) { S.session.res[ri].g = true; break; }
+      S.review[gq.id] = { lv: 0, due: now() + DAY, src: 'bank' };
+      save();
+      track('quiz_guess', { type: gq.type });
+      el.outerHTML = '<small class="q-muted">' + t('已加入错题本，明天再考一次', 'On your review list for tomorrow') + '</small>';
+    }
+    else if (act === 'ai') aiExplain(cur.q, cur.choice, cur.guess, D.types[cur.q.type].ja, D.passages, el.getAttribute('data-mode'));
+    else if (act === 'listen') listen(el);
+    else if (act === 'say') say(el);
+    else if (act === 'ck-play') ckPlay(el.getAttribute('data-k'));
+    else if (act === 'ck-seg') ckPlay(el.getAttribute('data-k'), +el.getAttribute('data-t'), +el.getAttribute('data-d'));
+    // "这题有问题？": pick a reason, optionally say more, send.
+    else if (act === 'report') {
+      el.parentNode.querySelectorAll('[data-act="report"]').forEach(function (b) { b.classList.toggle('q-picked', b === el); });
+      el.closest('details').setAttribute('data-reason', el.getAttribute('data-k'));
+      var more = el.closest('details').querySelector('.q-report-more'); more.hidden = false; more.querySelector('textarea').focus();
+    }
+    else if (act === 'report-send') {
+      var det = el.closest('details'), id = cur.q.id, reason = det.getAttribute('data-reason');
+      var last = (S.answers[id] || []).slice(-1)[0];
+      if (S.reported.indexOf(id) < 0) S.reported.push(id);
+      save();
+      track('quiz_report', { id: id, reason: reason });
+      var done = function (ok) { det.outerHTML = '<p class="q-muted q-report">' + (ok ? t('谢谢！这题之后不会再出给你，我会检查。', 'Thanks — you won’t see this one again, and it’ll be checked.') : t('没发出去，但这题之后不会再出给你。', 'Couldn’t send it, but you won’t see this one again.')) + '</p>'; };
+      if (window.jpFeedback) window.jpFeedback.send({ kind: 'question', qid: id, reason: reason, choice: last ? last.c : null, text: det.querySelector('textarea').value.trim() }).then(function () { done(true); }, function () { done(false); });
+      else done(false);
+    }
+    else if (act === 'retry') start('retry', arrange(app._last.bad.map(function (id) { return Q[id]; })));
+    else if (act === 'again') { if (app._last.kind === 'retry') startKind('daily'); else startKind(app._last.kind, app._last.label); }
+    else if (act === 'export') {
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(new Blob([JSON.stringify(S)], { type: 'application/json' }));
+      a.download = 'jpnotes-quiz-' + today() + '.json';
+      a.click();
+    }
+  });
+  app.addEventListener('change', function (e) {
+    var act = e.target.getAttribute('data-act');
+    var sub = curs && e.target.closest('.q-sub');
+    if (sub && curs[sub.getAttribute('data-q')]) cur = curs[sub.getAttribute('data-q')];
+    if (act === 'guess') cur.guess = e.target.checked;
+    else if (act === 'size') { S.prefs.size = +e.target.value; save(); home(); }
+    else if (act === 'import' && e.target.files[0]) {
+      var fr = new FileReader();
+      fr.onload = function () {
+        try {
+          var s = JSON.parse(fr.result);
+          if (!s || s.v !== 1 || typeof s.answers !== 'object') throw 0;
+          S = s; save(); ALL = D.questions.filter(function (q) { return S.reported.indexOf(q.id) < 0; }); home();
+        } catch (err) { alert(t('这不是有效的进度文件。', 'That isn’t a valid progress file.')); }
+      };
+      fr.readAsText(e.target.files[0]);
+    }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (!cur || cur.mock || e.target.matches('input, textarea, select') || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (!document.body.contains(app.querySelector('.q-card'))) return;
+    if (!cur.done && cur.q.type !== 'narabe' && /^[1-4]$/.test(e.key) && +e.key <= cur.q.options.length) submit(+e.key - 1);
+    else if (!cur.done && cur.q.type !== 'narabe' && e.key === '0') submit(null);
+    else if (e.key === 'ArrowLeft' && app.querySelector('[data-act="prev"]')) { e.preventDefault(); app.querySelector('[data-act="prev"]').click(); }
+    else if (e.key === 'Enter') {
+      var b = app.querySelector('[data-act="next"]') || app.querySelector('[data-act="submit"]:not([disabled])');
+      if (b) { e.preventDefault(); b.click(); }
+    }
+  });
+  boot();
+})();

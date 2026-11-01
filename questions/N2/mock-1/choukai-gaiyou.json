@@ -1,0 +1,417 @@
+[
+ {
+  "id": "n2-m1-ck-301",
+  "type": "gaiyou",
+  "scene": "大学の授業で、先生が話しています。",
+  "lines": [
+   [
+    "M",
+    "最近は、ノートをパソコンでとる人が多くなりました。ある調査で、手書きの学生とパソコンの学生に、講義のあとテストをしたところ、手で書いた学生のほうが内容をよく理解していたそうです。手で書くのは遅いですから、聞いたことを全部は書けません。そこで、どこが大事か考えて、自分の言葉でまとめる。この手間が頭を働かせるんです。パソコンなら、聞いたことをそのまま打てる。一見よさそうですが、考えなくても書けてしまうんですね。もちろん、パソコンにも、あとで検索できるよさがありますから、どちらがいいとは言えませんが。"
+   ]
+  ],
+  "question": "先生は何について話していますか。",
+  "spokenOptions": true,
+  "options": [
+   "授業でパソコンを使わないほうがいい理由",
+   "手で書くと内容が理解しやすくなるわけ",
+   "パソコンでノートを速くとるための工夫",
+   "パソコンでノートをとる学生が増えた背景"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "大学的课上，老师在讲话。",
+    "question": "老师在讲什么？",
+    "lines": [
+     "最近用电脑记课堂笔记的人多起来了。有一项调查，让手写的学生和用电脑打字的学生在听完同一堂课后考试，结果手写的学生对内容理解得更好。手写慢，听到的没法全写下来。于是就得想哪里重要，用自己的话简短地归纳。这个工夫让大脑运转起来。而用电脑的话，听到的几乎可以原样打下来。乍一看挺好，可是不用思考也能写下来。当然，电脑也有事后能搜索之类的好处，所以也不能说哪个更好。"
+    ],
+    "options": [
+     "上课最好不要用电脑的理由",
+     "手写更容易理解内容的原因",
+     "用电脑快速记笔记的窍门",
+     "用电脑记笔记的学生增多的背景"
+    ]
+   },
+   "en": {
+    "scene": "A teacher is speaking in a university class.",
+    "question": "What is the teacher talking about?",
+    "lines": [
+     "These days lots of you take lecture notes on a laptop. In one study, students who wrote by hand and students who typed were tested after the same lecture, and the handwriting group understood the content better. Writing by hand is slow, so you can't get down everything you hear. So you think about what matters and summarise it briefly in your own words. That effort is what gets your brain working. With a laptop, on the other hand, you can type almost everything as you hear it. It looks like an advantage, but you can write without thinking. Of course, laptops have their merits too, like being able to search your notes later, so you can't say one is better than the other."
+    ],
+    "options": [
+     "Why it's better not to use laptops in class",
+     "Why writing by hand helps you understand",
+     "Tips for taking notes quickly on a laptop",
+     "Why more students take notes on laptops"
+    ]
+   }
+  },
+  "why": {
+   "zh": "调查之后讲的都是手写为什么有助于理解：写不全→要想哪里重要、自己归纳→大脑运转；电脑能原样打下来，反而不用思考。",
+   "en": "After the study, the talk explains why handwriting aids understanding: you can't write everything, so you choose and summarise, which gets you thinking — while typing lets you skip thinking."
+  },
+  "wrong": [
+   {
+    "zh": "他最后说电脑也有好处，「どちらがいいとは言えません」。",
+    "en": "He ends by saying laptops have merits and that you can't say one is better."
+   },
+   null,
+   {
+    "zh": "他只说电脑能原样打下来，没讲怎样记得更快。",
+    "en": "He only says you can type everything; no speed tips."
+   },
+   {
+    "zh": "用电脑的人多只是开场白，没讲为什么增多。",
+    "en": "That more students use laptops is only the opening; he gives no reasons."
+   }
+  ],
+  "traps": [
+   "twisted",
+   "detail-as-topic"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-302",
+  "type": "gaiyou",
+  "scene": "男の人と女の人が、電子書籍について話しています。",
+  "lines": [
+   [
+    "M",
+    "去年、本を全部電子書籍にするって言ってたよね。どう？"
+   ],
+   [
+    "F",
+    "うん、部屋は広くなったし、旅行にも何冊でも持っていけるし、便利は便利なんだけどね。"
+   ],
+   [
+    "M",
+    "画面だと目が疲れるとか？"
+   ],
+   [
+    "F",
+    "それはそうでもないの。ただね、読み終わった本って、画面の中に消えちゃうじゃない。前は、棚に並んでる背表紙を眺めて、ああ、この本のこういう場面がよかったなって、ふと思い出したりしてたんだけど、そういうことが全然なくなっちゃって。"
+   ],
+   [
+    "M",
+    "へえ。"
+   ],
+   [
+    "F",
+    "値段もそんなに変わらないしね。結局、気に入った本は、もう一回、紙で買い直しちゃった。"
+   ]
+  ],
+  "question": "女の人は電子書籍を使ってみて、どう思っていますか。",
+  "spokenOptions": true,
+  "options": [
+   "便利なので、紙の本はもう必要ないと思っている",
+   "画面を見ると目が疲れるので、使うのをやめた",
+   "紙の本より安いので、これからも使い続けたい",
+   "使ってみて、紙の本のよさに改めて気づいた"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在谈论电子书。",
+    "question": "女人用了电子书以后有什么想法？",
+    "lines": [
+     "你去年说要把书全换成电子书吧。怎么样？",
+     "嗯，房间宽敞了，旅行也能想带几本就带几本，方便倒是方便。",
+     "是屏幕看着眼睛累？",
+     "那倒还好。只是，读完的书就消失在屏幕里了嘛。以前看着书架上一排排书脊，会突然想起“啊，这本书的那个场景真好”，现在完全没有这种事了。",
+     "哦。",
+     "价格也没差多少。结果喜欢的书，我又重新买了纸质的。"
+    ],
+    "options": [
+     "很方便，觉得不再需要纸质书",
+     "看屏幕眼睛累，不用了",
+     "比纸质书便宜，想继续用",
+     "用了以后，重新认识到纸质书的好"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking about e-books.",
+    "question": "Having tried e-books, what does the woman think?",
+    "lines": [
+     "Last year you said you'd switch all your books to e-books. How's it going?",
+     "Well, my room's more spacious, and I can take as many books as I like on trips. It's convenient, I'll give it that.",
+     "Is it that your eyes get tired on a screen?",
+     "Not really. It's just that once you've finished a book, it disappears into the screen. I used to look at the spines lined up on my shelf and suddenly remember a scene I loved — and that's completely stopped happening.",
+     "Huh.",
+     "And the price isn't much different. In the end, I bought my favourite books again on paper."
+    ],
+    "options": [
+     "It's so convenient she no longer needs paper books",
+     "Screens tire her eyes, so she stopped using them",
+     "They're cheaper than paper, so she'll keep using them",
+     "Trying them made her see what's good about paper books"
+    ]
+   }
+  },
+  "why": {
+   "zh": "她承认方便，但读完的书「画面の中に消えちゃう」，看书脊回想的乐趣没了，最后把喜欢的书「紙で買い直しちゃった」——用了才发现纸质书的好。",
+   "en": "She grants the convenience, but finished books vanish into the screen and she misses glancing at her shelf; in the end she rebought favourites on paper — using e-books showed her what paper offers."
+  },
+  "wrong": [
+   {
+    "zh": "她把喜欢的书又买了纸质的，并不是觉得不需要了。",
+    "en": "She rebought favourites on paper, so she hasn't given paper up."
+   },
+   {
+    "zh": "眼睛累她说「そうでもない」。",
+    "en": "She says her eyes don't really get tired."
+   },
+   {
+    "zh": "价格「そんなに変わらない」，不是便宜。",
+    "en": "The price is about the same."
+   },
+   null
+  ],
+  "traps": [
+   "attitude-combo",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-303",
+  "type": "gaiyou",
+  "scene": "動物園で、係の人が来園者に話しています。",
+  "lines": [
+   [
+    "M",
+    "皆さん、こちらのサルの運動場、変わっていると思いませんか。えさ入れが見当たりませんよね。実は、えさは毎朝、岩のすき間や木の上など、あちこちに隠してあるんです。以前は決まった時間にえさをやっていたんですが、それだと、サルたちは食べ終わると一日中ほとんど動かなくなってしまっていました。野生のサルは、一日の大半を食べ物を探して過ごします。ここでも、自分で探して見つけるようにしたところ、動き回る時間がぐんと増えて、けんかも減ったんですよ。皆さんも、サルが何かを探している姿を、ゆっくり見ていってください。"
+   ]
+  ],
+  "question": "係の人は何について話していますか。",
+  "spokenOptions": true,
+  "options": [
+   "サルが自分でえさを探すようにした工夫",
+   "サルにえさをやる時間が変わったこと",
+   "野生のサルが一日をどう過ごすか",
+   "サルのけんかを減らすための決まり"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "动物园里，工作人员在对游客讲话。",
+    "question": "工作人员在讲什么？",
+    "lines": [
+     "各位，大家不觉得这个猴子活动场不太一样吗？找不到食盆吧。其实，食物每天早上都藏在岩石缝里、树上等各个地方。以前是在固定的时间喂食，可那样的话，猴子们吃完以后一整天几乎都不动了。野生的猴子一天大部分时间都在找吃的。在这里也改成让它们自己找，结果活动的时间大大增加，打架也少了。请大家也慢慢看看猴子找东西的样子。"
+    ],
+    "options": [
+     "让猴子自己找食物的做法",
+     "给猴子喂食的时间变了",
+     "野生猴子怎样度过一天",
+     "减少猴子打架的规定"
+    ]
+   },
+   "en": {
+    "scene": "At a zoo, a staff member is speaking to visitors.",
+    "question": "What is the staff member talking about?",
+    "lines": [
+     "Everyone, don't you think this monkey enclosure is a bit unusual? You can't see any feeding bowls, can you? In fact, every morning the food is hidden all over — in cracks in the rocks, up in the trees. We used to feed them at set times, but then, once they'd eaten, the monkeys hardly moved for the rest of the day. Wild monkeys spend most of the day looking for food. When we had them search for it themselves here too, the time they spend moving around went up sharply, and there are fewer fights. Please take your time watching the monkeys searching for things."
+    ],
+    "options": [
+     "Getting the monkeys to find their own food",
+     "That the monkeys' feeding time has changed",
+     "How wild monkeys spend their day",
+     "Rules to reduce fighting among the monkeys"
+    ]
+   }
+  },
+  "why": {
+   "zh": "全篇讲把食物藏起来、让猴子自己找的做法，以及这样做的理由和效果（活动增加、打架减少）。",
+   "en": "The whole talk is about hiding the food so the monkeys find it themselves — why they do it and what it changed."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "不是改了喂食时间，而是不再定时喂食、改成把食物藏起来。",
+    "en": "It's not a new feeding time — they stopped set-time feeding and hide the food instead."
+   },
+   {
+    "zh": "野生猴子的生活只是用来说明理由的一部分。",
+    "en": "Wild monkeys' habits are only part of the reasoning."
+   },
+   {
+    "zh": "打架减少是结果之一，没有讲什么规定。",
+    "en": "Fewer fights is one result; no rules are discussed."
+   }
+  ],
+  "traps": [
+   "partial-content",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-304",
+  "type": "gaiyou",
+  "scene": "会社で、女の人と男の人が、職場の新しい席の決まりについて話しています。",
+  "lines": [
+   [
+    "F",
+    "席が自由になって、もう三か月か。森さん、始まる前は、ずいぶん文句言ってたよね。"
+   ],
+   [
+    "M",
+    "言ってた言ってた。毎日机の上を全部片付けて帰るなんて、面倒でやってられないって。"
+   ],
+   [
+    "F",
+    "で、実際は？"
+   ],
+   [
+    "M",
+    "それが、一週間もしたら慣れちゃってさ。それより、毎日違う部署の人の隣に座るでしょう。営業の人が、お客さんからこんなこと言われたって話してるのが聞こえてきて、それが企画のヒントになったりするんだよ。"
+   ],
+   [
+    "F",
+    "へえ。朝、空いてる席を探すのは大変じゃない？"
+   ],
+   [
+    "M",
+    "うーん、たまにね。でも、少し早めに来ればいいだけだし。前の決まった席に戻りたいかって聞かれたら、今はもう、そうは思わないなあ。"
+   ]
+  ],
+  "question": "男の人は、席が決まっていない今のやり方についてどう思っていますか。",
+  "spokenOptions": true,
+  "options": [
+   "片付けが面倒なので、元の席に戻してほしい",
+   "席を探すのが大変で、仕事に集中できない",
+   "最初は嫌だったが、今は悪くないと感じている",
+   "ほかの部署の人と話す時間が増えて困っている"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "公司里，一个女人和一个男人在谈论职场新的座位制度。",
+    "question": "男人对现在不固定座位的做法怎么看？",
+    "lines": [
+     "座位变成自由的，都三个月了啊。森，开始之前你可是抱怨了不少吧。",
+     "说过说过。每天下班都要把桌上全收拾干净，麻烦得受不了。",
+     "那实际呢？",
+     "结果一周就习惯了。比起那个，每天都坐在不同部门的人旁边吧。能听到营业部的人说客户讲了些什么，那些有时还成了做企划的灵感。",
+     "哦。早上找空座位不费劲吗？",
+     "嗯，偶尔吧。不过稍微早点来就行了。要是问我想不想回到以前固定座位的时候，现在已经不这么想了。"
+    ],
+    "options": [
+     "收拾太麻烦，希望恢复原来的座位",
+     "找座位太费劲，没法集中工作",
+     "一开始不愿意，现在觉得还不错",
+     "和其他部门的人说话的时间变多，很困扰"
+    ]
+   },
+   "en": {
+    "scene": "At a company, a woman and a man are talking about the office's new seating system.",
+    "question": "What does the man think about the current system of no fixed desks?",
+    "lines": [
+     "Three months since desks went free. Mori-san, you complained a lot before it started, didn't you?",
+     "I sure did. Clearing everything off the desk every day before going home — I said it'd be too much hassle.",
+     "And in reality?",
+     "Turns out I got used to it within a week. More than that — you sit next to people from different departments every day, right? I overhear the sales people talking about what customers told them, and sometimes that gives me ideas for planning.",
+     "Huh. Isn't it hard finding a free desk in the morning?",
+     "Hmm, sometimes. But I just need to come in a bit earlier. If you asked me whether I want to go back to fixed desks, I'd say I don't anymore."
+    ],
+    "options": [
+     "Clearing up is a hassle, so he wants fixed desks back",
+     "Finding a desk is hard and he can't concentrate",
+     "He disliked it at first but now thinks it's not bad",
+     "He's bothered by having more chats with other departments"
+    ]
+   }
+  },
+  "why": {
+   "zh": "开始前他抱怨收拾麻烦，但一周就习惯了，还从别的部门的话里得到灵感，现在不想回到固定座位——从反对变成了接受。",
+   "en": "He complained beforehand, but got used to it in a week, gets ideas from other departments, and no longer wants fixed desks — he's come round to it."
+  },
+  "wrong": [
+   {
+    "zh": "收拾麻烦是开始前的想法，现在「慣れちゃって」，也不想回去了。",
+    "en": "The hassle was his view beforehand; he's used to it now and doesn't want to go back."
+   },
+   {
+    "zh": "找座位只是「たまに」费劲，早点来就行。",
+    "en": "Finding a desk is only occasionally hard and easily solved."
+   },
+   null,
+   {
+    "zh": "坐在别的部门旁边给了他企划灵感，是好处不是困扰。",
+    "en": "Sitting near other departments gives him ideas — a plus, not a problem."
+   }
+  ],
+  "traps": [
+   "attitude-combo",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-305",
+  "type": "gaiyou",
+  "scene": "ラジオで、気象予報士が話しています。",
+  "lines": [
+   [
+    "M",
+    "「雨の確率三十パーセント」と聞くと、少しだけ降る、とか、一日のうち三割ぐらいの時間降る、と思う方が多いようです。実は、どちらも違います。これは、同じような天気の日が十回あったら、そのうち三回ぐらいは雨が降る、という意味なんですね。ですから、確率が高いから強い雨になる、というわけではありません。確率三十パーセントでも、降るときは激しく降ることがありますし、七十パーセントでも小雨で終わることもあります。傘を持っていくか迷ったら、数字と一緒に、雨の強さの予報にも目を向けてみてください。"
+   ]
+  ],
+  "question": "気象予報士は何について話していますか。",
+  "spokenOptions": true,
+  "options": [
+   "雨の確率の数字が当たらない理由",
+   "強い雨が降る日を予想する方法",
+   "雨の確率の正しい意味と見方",
+   "一日のうちで雨が降りやすい時間"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "广播里，一位气象预报员在讲话。",
+    "question": "气象预报员在讲什么？",
+    "lines": [
+     "一听到“降雨概率百分之三十”，好像很多人会以为是只下一点点，或者一天里有三成左右的时间在下雨。其实两种都不对。它的意思是，类似天气的日子如果有十天，其中大约有三天会下雨。所以，并不是概率高就会下大雨。概率百分之三十，下的时候也可能下得很猛；百分之七十，也可能只是小雨就结束了。拿不准要不要带伞的时候，除了数字，也请看看雨的强度预报。"
+    ],
+    "options": [
+     "降雨概率的数字不准的原因",
+     "预测下大雨的日子的方法",
+     "降雨概率的正确含义和看法",
+     "一天中容易下雨的时间"
+    ]
+   },
+   "en": {
+    "scene": "A weather forecaster is speaking on the radio.",
+    "question": "What is the weather forecaster talking about?",
+    "lines": [
+     "When people hear \"30% chance of rain\", many seem to think it means a little rain, or rain for about 30% of the day. In fact, neither is right. It means that out of ten days with similar weather, it rains on about three. So a higher percentage doesn't mean heavier rain. Even at 30% it can pour when it does rain, and at 70% it may be just a drizzle. If you can't decide whether to take an umbrella, look at the forecast for how heavy the rain will be, alongside the number."
+    ],
+    "options": [
+     "Why rain percentages are often wrong",
+     "How to predict heavy-rain days",
+     "What rain percentages really mean and how to read them",
+     "The times of day when rain is most likely"
+    ]
+   }
+  },
+  "why": {
+   "zh": "全篇先纠正对降雨概率的两种误解，说明它的真正意思，再建议结合雨的强度来判断——讲的是降雨概率的含义和怎么看。",
+   "en": "He corrects two misunderstandings, explains what the percentage means, and suggests reading it alongside rain intensity — the meaning and how to use it."
+  },
+  "wrong": [
+   {
+    "zh": "他没说预报不准，说的是大家理解错了。",
+    "en": "He doesn't say forecasts are wrong — people misread them."
+   },
+   {
+    "zh": "他只建议看雨的强度信息，没讲怎样预测大雨。",
+    "en": "He only suggests checking intensity information; no prediction method."
+   },
+   null,
+   {
+    "zh": "「一日のうち三割ぐらいの時間」是他否定的误解。",
+    "en": "Rain for 30% of the day is one of the misunderstandings he rejects."
+   }
+  ],
+  "traps": [
+   "twisted",
+   "partial-content"
+  ]
+ }
+]

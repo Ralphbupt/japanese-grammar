@@ -1,0 +1,700 @@
+[
+  {
+    "id": "n1-l81-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson81#1"
+    ],
+    "difficulty": 1,
+    "stem": "被災地の復興は、国による継続的な支援（　）実現しえないだろう。",
+    "options": [
+      "あっての",
+      "なくしては",
+      "ともなると",
+      "とあれば"
+    ],
+    "answer": 1,
+    "full": "被災地の復興は、国による継続的な支援なくしては実現しえないだろう。",
+    "tr": {
+      "zh": "灾区的重建，没有国家持续的支援恐怕是无法实现的。",
+      "en": "Rebuilding the disaster area will probably be impossible without continued support from the state."
+    },
+    "why": {
+      "zh": "名词「支援」＋（　）＋“不可能”「実現しえない」，用「なくしては」：没有……就不可能。",
+      "en": "Noun 「支援」 + （　） + impossibility 「実現しえない」 — 「なくしては」: without …, impossible."
+    },
+    "wrong": [
+      {
+        "zh": "「あっての」后面要接名词（AあってのB），这里接的是动词「実現しえない」。",
+        "en": "「あっての」 needs a noun after it (AあってのB); a verb follows here."
+      },
+      null,
+      {
+        "zh": "「ともなると」是“到了……阶段自然就……”，“到了支援的阶段”说不通。",
+        "en": "「ともなると」 (once it reaches …) gives \"once it's support\" — nonsense."
+      },
+      {
+        "zh": "「とあれば」是“如果是为了……就（愿意）”，后项不是意志，意思不通。",
+        "en": "「とあれば」 (if it's for …) needs a willing action; it makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n1-l81-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson81#1"
+    ],
+    "difficulty": 2,
+    "stem": "地元住民の理解（　）、新しい空港の建設は一歩も進まないだろう。",
+    "options": [
+      "ないことには",
+      "あっての",
+      "なくして",
+      "ないまでも"
+    ],
+    "answer": 2,
+    "full": "地元住民の理解なくして、新しい空港の建設は一歩も進まないだろう。",
+    "tr": {
+      "zh": "没有当地居民的理解，新机场的建设恐怕一步也推进不了。",
+      "en": "Without the understanding of local residents, construction of the new airport won't move forward a single step."
+    },
+    "why": {
+      "zh": "名词「理解」直接接「なくして」，后项是否定「進まない」。",
+      "en": "The noun 「理解」 takes 「なくして」 directly, followed by the negative 「進まない」."
+    },
+    "wrong": [
+      {
+        "zh": "「ないことには」接动词ない形（「理解が得られないことには」），不能直接接名词。",
+        "en": "「ないことには」 follows a verb's ない-form (「理解が得られないことには」), not a bare noun."
+      },
+      {
+        "zh": "「あっての」后面要接名词，而且意思是“有了才有”，和后项的否定接不上。",
+        "en": "「あっての」 must be followed by a noun, and its \"thanks to\" sense doesn't lead into a negative."
+      },
+      null,
+      {
+        "zh": "「ないまでも」接动词ない形，「理解ないまでも」接续不对。",
+        "en": "「ないまでも」 follows a verb's ない-form; 「理解ないまでも」 doesn't connect."
+      }
+    ]
+  },
+  {
+    "id": "n1-l81-003",
+    "type": "narabe",
+    "refs": [
+      "lesson81#1"
+    ],
+    "difficulty": 1,
+    "stem": "この町の歴史は、[★] [_] [_] [_]。",
+    "options": [
+      "語る",
+      "ことはできない",
+      "港の発展",
+      "なくして"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "この町の歴史は、港の発展なくして語ることはできない。",
+    "tr": {
+      "zh": "这座城市的历史，离开港口的发展就无从谈起。",
+      "en": "You can't tell this town's history without the growth of its port."
+    },
+    "why": {
+      "zh": "「名詞＋なくして＋不可能」：港の発展 → なくして → 語る → ことはできない。★ 是「港の発展」。",
+      "en": "Noun + 「なくして」 + impossibility: 港の発展 → なくして → 語る → ことはできない. The ★ is 「港の発展」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l81-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson81#2"
+    ],
+    "difficulty": 1,
+    "stem": "さすがに大晦日（　）、駅前の商店街も買い物客であふれかえる。",
+    "options": [
+      "といえども",
+      "ともなると",
+      "にしたって",
+      "ながらも"
+    ],
+    "answer": 1,
+    "full": "さすがに大晦日ともなると、駅前の商店街も買い物客であふれかえる。",
+    "tr": {
+      "zh": "到了除夕，车站前的商店街果然也挤满了购物的人。",
+      "en": "Come New Year's Eve, sure enough, even the shopping street by the station overflows with shoppers."
+    },
+    "why": {
+      "zh": "「大晦日」是特别的时候，到了这一天自然就人多，用「ともなると」，和「さすがに」呼应。",
+      "en": "「大晦日」 is a special time and crowds follow naturally — 「ともなると」, which matches 「さすがに」."
+    },
+    "wrong": [
+      {
+        "zh": "「といえども」是“即使是……也”，“即使是除夕也人多”与「さすがに」不合。",
+        "en": "「といえども」 (even …) gives \"even on New Year's Eve it's crowded\", clashing with 「さすがに」."
+      },
+      null,
+      {
+        "zh": "「にしたって」是口语的“就算……也”，后项多为不满，这里是描述自然的倾向。",
+        "en": "「にしたって」 (even if, casual) leads to a complaint; this states a natural tendency."
+      },
+      {
+        "zh": "「ながらも」是“虽然……却”，前后没有相反的关系。",
+        "en": "「ながらも」 (although) needs a contrast; there is none here."
+      }
+    ]
+  },
+  {
+    "id": "n1-l81-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson81#2"
+    ],
+    "difficulty": 2,
+    "stem": "一国の首相（　）、その何気ない一言が外交問題に発展することもある。",
+    "options": [
+      "ともあろう",
+      "ともなれば",
+      "たりとも",
+      "ながらも"
+    ],
+    "answer": 1,
+    "full": "一国の首相ともなれば、その何気ない一言が外交問題に発展することもある。",
+    "tr": {
+      "zh": "到了一国首相的位置，随口一句话也可能演变成外交问题。",
+      "en": "Once you are a country's prime minister, even an offhand remark can turn into a diplomatic issue."
+    },
+    "why": {
+      "zh": "「首相」是地位很高的身份，到了这个地位自然会有这种情况，用「ともなれば」。",
+      "en": "「首相」 is a high position, and this follows naturally from it — 「ともなれば」."
+    },
+    "wrong": [
+      {
+        "zh": "「ともあろう」后面要接「人が／者が」再批评“竟然……”，这里直接接句子，也没有批评。",
+        "en": "「ともあろう」 needs 「人が／者が」 and leads to a rebuke; neither is here."
+      },
+      null,
+      {
+        "zh": "「たりとも」只接「一」＋量词，后面要否定，「首相たりとも」不成立。",
+        "en": "「たりとも」 only follows \"one + counter\" with a negative; 「首相たりとも」 doesn't work."
+      },
+      {
+        "zh": "「ながらも」是“虽然……却”，“虽然是首相，一句话却可能成为外交问题”逻辑相反。",
+        "en": "「ながらも」 (although) inverts the logic: being PM is the reason, not an obstacle."
+      }
+    ]
+  },
+  {
+    "id": "n1-l81-006",
+    "type": "narabe",
+    "refs": [
+      "lesson81#2"
+    ],
+    "difficulty": 2,
+    "stem": "プロ [_] [_] [_] [★] だ。",
+    "options": [
+      "体調管理も",
+      "仕事のうち",
+      "の選手",
+      "ともなれば"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "プロの選手ともなれば体調管理も仕事のうちだ。",
+    "tr": {
+      "zh": "当了职业选手，管理身体状况也是工作的一部分。",
+      "en": "Once you're a professional athlete, looking after your condition is part of the job."
+    },
+    "why": {
+      "zh": "「名詞＋ともなれば」后接自然的判断：の選手 → ともなれば → 体調管理も → 仕事のうち。★ 是「仕事のうち」。",
+      "en": "Noun + 「ともなれば」, then a natural judgement: の選手 → ともなれば → 体調管理も → 仕事のうち. The ★ is 「仕事のうち」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l81-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson81#3"
+    ],
+    "difficulty": 2,
+    "stem": "かわいい孫のため（　）、祖父は老後の蓄えをはたくことも厭わないだろう。",
+    "options": [
+      "とあって",
+      "からには",
+      "とあれば",
+      "ながらも"
+    ],
+    "answer": 2,
+    "full": "かわいい孫のためとあれば、祖父は老後の蓄えをはたくことも厭わないだろう。",
+    "tr": {
+      "zh": "如果是为了可爱的孙子，爷爷恐怕连养老的积蓄都舍得拿出来。",
+      "en": "If it's for his beloved grandchild, Grandpa probably wouldn't hesitate to spend his retirement savings."
+    },
+    "why": {
+      "zh": "「〜のためとあれば」表示特别的理由，后项是“在所不惜”的决心「厭わない」。",
+      "en": "「〜のためとあれば」 gives a weighty reason, followed by willingness 「厭わない」."
+    },
+    "wrong": [
+      {
+        "zh": "「とあって」后面是已经观察到的事实，不能接推测的意志「厭わないだろう」。",
+        "en": "「とあって」 needs an observed fact after it, not a guessed willingness 「厭わないだろう」."
+      },
+      {
+        "zh": "「からには」要接句子（「孫のためであるからには」），不能直接接「ため」。",
+        "en": "「からには」 follows a clause (「孫のためであるからには」), not bare 「ため」."
+      },
+      null,
+      {
+        "zh": "「ながらも」是“虽然……却”，“虽然为了孙子却舍得”逻辑相反。",
+        "en": "「ながらも」 (although) inverts the logic: the grandchild is the reason, not an obstacle."
+      }
+    ]
+  },
+  {
+    "id": "n1-l81-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson81#3",
+      "lesson82#4"
+    ],
+    "difficulty": 2,
+    "stem": "必要（　）、担当者が直接御社に伺って詳しくご説明いたします。",
+    "options": [
+      "とあって",
+      "とあれば",
+      "ともなると",
+      "といえども"
+    ],
+    "answer": 1,
+    "full": "必要とあれば、担当者が直接御社に伺って詳しくご説明いたします。",
+    "tr": {
+      "zh": "如有需要，我们的负责人可以直接到贵公司拜访并详细说明。",
+      "en": "If you require it, our representative will visit your office and explain in detail."
+    },
+    "why": {
+      "zh": "「必要とあれば」是固定说法，后项是说话人的意志「ご説明いたします」。",
+      "en": "「必要とあれば」 is a set phrase, followed by the speaker's offer 「ご説明いたします」."
+    },
+    "wrong": [
+      {
+        "zh": "「とあって」后项是观察到的事实，不能接说话人的意志「いたします」。",
+        "en": "「とあって」 can't be followed by the speaker's own intention 「いたします」."
+      },
+      null,
+      {
+        "zh": "「ともなると」接较高的阶段或身份，“到了需要的阶段”不自然，也不接意志。",
+        "en": "「ともなると」 follows a high stage and isn't followed by an offer."
+      },
+      {
+        "zh": "「といえども」是“即使……也”，“即使需要也去说明”意思相反。",
+        "en": "「といえども」 (even …) gives \"even if you need it, we'll come\" — the wrong logic."
+      }
+    ]
+  },
+  {
+    "id": "n1-l81-009",
+    "type": "narabe",
+    "refs": [
+      "lesson81#3"
+    ],
+    "difficulty": 1,
+    "stem": "[_] [_] [★] [_]、彼はどんな危険な場所にも出かけていく。",
+    "options": [
+      "撮れる",
+      "とあれば",
+      "写真が",
+      "いい"
+    ],
+    "order": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "full": "いい写真が撮れるとあれば、彼はどんな危険な場所にも出かけていく。",
+    "tr": {
+      "zh": "只要能拍到好照片，再危险的地方他都会去。",
+      "en": "If it means getting a good photo, he'll go anywhere, however dangerous."
+    },
+    "why": {
+      "zh": "动词普通形＋「とあれば」：いい → 写真が → 撮れる → とあれば。★ 是「撮れる」。",
+      "en": "Plain verb + 「とあれば」: いい → 写真が → 撮れる → とあれば. The ★ is 「撮れる」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l81-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson81#4"
+    ],
+    "difficulty": 2,
+    "stem": "この漫画は、一度読み始め（　）、最終巻まで手が止まらなくなる。",
+    "options": [
+      "たところで",
+      "たら最後",
+      "たきり",
+      "たものを"
+    ],
+    "answer": 1,
+    "full": "この漫画は、一度読み始めたら最後、最終巻まで手が止まらなくなる。",
+    "tr": {
+      "zh": "这部漫画一旦开始看，不看到最后一卷就停不下来。",
+      "en": "Once you start reading this manga, you can't stop until the final volume."
+    },
+    "why": {
+      "zh": "「一度」＋「たら最後」，后项是“停不下来”的状态。",
+      "en": "「一度」 + 「たら最後」, followed by a state of being unable to stop."
+    },
+    "wrong": [
+      {
+        "zh": "「たところで」是“就算……也（没用）”，后项要是否定判断，意思不通。",
+        "en": "「たところで」 (even if … it's no use) doesn't fit; there's no futility here."
+      },
+      null,
+      {
+        "zh": "「たきり」是“……之后就再也没有……”，后面接否定，「読み始めたきり止まらなくなる」不通。",
+        "en": "「たきり」 (and then never …) needs a negative and doesn't fit \"can't stop\"."
+      },
+      {
+        "zh": "「たものを」是“本来……就好了，却……”的遗憾，这里没有遗憾。",
+        "en": "「たものを」 expresses regret (if only …); there's none here."
+      }
+    ]
+  },
+  {
+    "id": "n1-l81-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson81#4"
+    ],
+    "difficulty": 2,
+    "stem": "あの人は一度へそを曲げた（　）、何日も口をきいてくれない。",
+    "options": [
+      "ものを",
+      "ところを",
+      "が最後",
+      "といえども"
+    ],
+    "answer": 2,
+    "full": "あの人は一度へそを曲げたが最後、何日も口をきいてくれない。",
+    "tr": {
+      "zh": "那个人一旦闹起别扭，就好几天都不跟人说话。",
+      "en": "Once that person gets in a huff, he won't speak to you for days."
+    },
+    "why": {
+      "zh": "动词た形＋「が最後」，描写某人的习性：一……就（没救了）。",
+      "en": "Verb た-form + 「が最後」 describes a habit: once …, there's no turning back."
+    },
+    "wrong": [
+      {
+        "zh": "「ものを」是遗憾“本来……就好了”，这里是描述习性，没有遗憾。",
+        "en": "「ものを」 is regret (if only …); this describes a habit."
+      },
+      {
+        "zh": "「ところを」表示“本该……却”或客套，“闹别扭的时候却好几天不说话”说不通。",
+        "en": "「ところを」 (when it would normally … / courtesy) doesn't fit a habit like this."
+      },
+      null,
+      {
+        "zh": "「といえども」是“即使……也”，“即使闹别扭也好几天不说话”逻辑不通。",
+        "en": "「といえども」 (even …) gives \"even though he sulks, he won't talk\" — wrong logic."
+      }
+    ]
+  },
+  {
+    "id": "n1-l81-012",
+    "type": "narabe",
+    "refs": [
+      "lesson81#4"
+    ],
+    "difficulty": 2,
+    "stem": "この契約書は、[★] [_] [_] [_]、二度と取り消すことはできない。",
+    "options": [
+      "しまった",
+      "署名して",
+      "が最後",
+      "一度"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "この契約書は、一度署名してしまったが最後、二度と取り消すことはできない。",
+    "tr": {
+      "zh": "这份合同一旦签了字，就再也无法撤销。",
+      "en": "Once you've signed this contract, there's no cancelling it."
+    },
+    "why": {
+      "zh": "「一度」＋动词た形＋「が最後」：一度 → 署名して → しまった → が最後。★ 是「一度」。",
+      "en": "「一度」 + verb た-form + 「が最後」: 一度 → 署名して → しまった → が最後. The ★ is 「一度」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l81-013",
+    "type": "bunpou",
+    "refs": [
+      "lesson81#5"
+    ],
+    "difficulty": 1,
+    "stem": "この程度の練習で音を上げる（　）、プロの選手になるなど夢のまた夢だ。",
+    "options": [
+      "からには",
+      "ようでは",
+      "とあれば",
+      "ことなく"
+    ],
+    "answer": 1,
+    "full": "この程度の練習で音を上げるようでは、プロの選手になるなど夢のまた夢だ。",
+    "tr": {
+      "zh": "这种程度的练习就叫苦连天的话，当职业选手简直是做梦。",
+      "en": "If you're already crying uncle at this level of training, becoming a pro is a pipe dream."
+    },
+    "why": {
+      "zh": "「この程度で〜」贬低现状，后项是负面评价「夢のまた夢」，用「ようでは」。",
+      "en": "「この程度で〜」 belittles the current state and a negative verdict follows — 「ようでは」."
+    },
+    "wrong": [
+      {
+        "zh": "「からには」是“既然……就（一定要）……”，后项要接决心或义务，不是否定评价。",
+        "en": "「からには」 (now that …) leads to resolve or duty, not a negative verdict."
+      },
+      null,
+      {
+        "zh": "「とあれば」是“如果是为了……就（愿意）”，后项不是意志，意思不通。",
+        "en": "「とあれば」 (if it's for …) needs a willing action; it makes no sense here."
+      },
+      {
+        "zh": "「ことなく」是“不……而……”，“不叫苦而做梦”说不通。",
+        "en": "「ことなく」 (without …ing) makes no sense here."
+      }
+    ]
+  },
+  {
+    "id": "n1-l81-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson81#5"
+    ],
+    "difficulty": 2,
+    "stem": "入社五年目にもなって、こんな初歩的なミスを繰り返している（　）、大きな仕事は任せられない。",
+    "options": [
+      "ところを",
+      "ものを",
+      "ようでは",
+      "とはいうものの"
+    ],
+    "answer": 2,
+    "full": "入社五年目にもなって、こんな初歩的なミスを繰り返しているようでは、大きな仕事は任せられない。",
+    "tr": {
+      "zh": "都进公司第五年了，还在一再犯这种低级错误的话，可没法把大工作交给你。",
+      "en": "If you're still making such basic mistakes in your fifth year, we can't trust you with major work."
+    },
+    "why": {
+      "zh": "批评现状「初歩的なミスを繰り返している」，后项是否定的结论「任せられない」，用「ようでは」。",
+      "en": "It criticises the current state and draws a negative conclusion 「任せられない」 — 「ようでは」."
+    },
+    "wrong": [
+      {
+        "zh": "「ところを」表示“本该……却”，前项不是“本来的预期”，意思不通。",
+        "en": "「ところを」 (when one would normally …) needs an expected course of events, which isn't here."
+      },
+      {
+        "zh": "「ものを」是“本来……就好了”的遗憾，前项是现实中的错误，不是“本来可以”的事。",
+        "en": "「ものを」 (if only …) needs what should have happened; the mistakes are what is happening."
+      },
+      null,
+      {
+        "zh": "「とはいうものの」是“话虽如此”，“虽然一再犯错，却不能交给你”逻辑不通。",
+        "en": "「とはいうものの」 (that said) makes \"though he keeps erring, we can't trust him\" — wrong logic."
+      }
+    ]
+  },
+  {
+    "id": "n1-l81-015",
+    "type": "narabe",
+    "refs": [
+      "lesson81#5"
+    ],
+    "difficulty": 2,
+    "stem": "[_] [★] [_] [_]、リーダーとして部下の信頼を得ることはできない。",
+    "options": [
+      "人のせいにする",
+      "ようでは",
+      "失敗を",
+      "自分の"
+    ],
+    "order": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "full": "自分の失敗を人のせいにするようでは、リーダーとして部下の信頼を得ることはできない。",
+    "tr": {
+      "zh": "把自己的失败推到别人身上的话，作为领导是得不到下属信任的。",
+      "en": "If you blame others for your own failures, you'll never win your team's trust as a leader."
+    },
+    "why": {
+      "zh": "动词辞书形＋「ようでは」，后项否定：自分の → 失敗を → 人のせいにする → ようでは。★ 是「失敗を」。",
+      "en": "Dictionary form + 「ようでは」 with a negative result: 自分の → 失敗を → 人のせいにする → ようでは. The ★ is 「失敗を」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-l81-016",
+    "type": "bunpou",
+    "refs": [
+      "lesson81#6",
+      "lesson85#1"
+    ],
+    "difficulty": 2,
+    "stem": "満点は取れ（　）、せめて平均点以上は取りたい。",
+    "options": [
+      "ないことには",
+      "るまでもなく",
+      "ないまでも",
+      "ないばかりか"
+    ],
+    "answer": 2,
+    "full": "満点は取れないまでも、せめて平均点以上は取りたい。",
+    "tr": {
+      "zh": "就算拿不到满分，至少也想考到平均分以上。",
+      "en": "Even if I can't get full marks, I'd like to at least score above average."
+    },
+    "why": {
+      "zh": "前项是较高的目标「満点」，后项「せめて」是较低的目标，用「ないまでも」。",
+      "en": "A higher goal 「満点」, then a lower one with 「せめて」 — 「ないまでも」."
+    },
+    "wrong": [
+      {
+        "zh": "「ないことには」是“不……就不能……”，后项要是否定，和「せめて〜たい」不合。",
+        "en": "「ないことには」 (unless …, can't) needs a negative after it, not 「せめて〜たい」."
+      },
+      {
+        "zh": "「までもない」是“用不着……”，「取れるまでもなく」意思不通，也不接「せめて」。",
+        "en": "「までもない」 means \"no need to\"; 「取れるまでもなく」 makes no sense with 「せめて」."
+      },
+      null,
+      {
+        "zh": "「ないばかりか」是“不仅不……反而……”，后项要是更坏的情况，不接愿望。",
+        "en": "「ないばかりか」 (not only not …) needs something worse after it, not a wish."
+      }
+    ]
+  },
+  {
+    "id": "n1-l81-017",
+    "type": "bunpou",
+    "refs": [
+      "lesson81#6"
+    ],
+    "difficulty": 2,
+    "stem": "全額返金とはいか（　）、せめて半額くらいは返してもらいたいものだ。",
+    "options": [
+      "ないばかりか",
+      "ないまでも",
+      "ないことには",
+      "なくして"
+    ],
+    "answer": 1,
+    "full": "全額返金とはいかないまでも、せめて半額くらいは返してもらいたいものだ。",
+    "tr": {
+      "zh": "就算不能全额退款，至少也希望能退一半。",
+      "en": "Even if a full refund is too much to ask, I'd at least like half back."
+    },
+    "why": {
+      "zh": "「〜とはいかないまでも」是固定说法，后项「せめて〜くらいは」是退而求其次的希望。",
+      "en": "「〜とはいかないまでも」 is a set phrase, followed by the lesser hope 「せめて〜くらいは」."
+    },
+    "wrong": [
+      {
+        "zh": "「ないばかりか」是“不仅不……反而……”，后项要是更坏的情况，不接愿望。",
+        "en": "「ないばかりか」 (not only not …) needs something worse after it, not a wish."
+      },
+      null,
+      {
+        "zh": "「ないことには」是“不……就不能……”，后项要是否定，和愿望不合。",
+        "en": "「ないことには」 (unless …, can't) needs a negative after it, not a wish."
+      },
+      {
+        "zh": "「なくして」接名词，「いかなくして」接续不对。",
+        "en": "「なくして」 follows a noun; 「いかなくして」 doesn't connect."
+      }
+    ]
+  },
+  {
+    "id": "n1-l81-018",
+    "type": "narabe",
+    "refs": [
+      "lesson81#6"
+    ],
+    "difficulty": 2,
+    "stem": "[_] [_] [_] [★]、せめて電話の一本くらいはするべきだ。",
+    "options": [
+      "とは言わない",
+      "直接",
+      "までも",
+      "謝りに来い"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "直接謝りに来いとは言わないまでも、せめて電話の一本くらいはするべきだ。",
+    "tr": {
+      "zh": "我不说要你当面来道歉，但至少也该打个电话吧。",
+      "en": "I won't say you have to come and apologise in person, but you should at least make a phone call."
+    },
+    "why": {
+      "zh": "「〜とは言わないまでも、せめて〜」：直接 → 謝りに来い → とは言わない → までも。★ 是「までも」。",
+      "en": "「〜とは言わないまでも、せめて〜」: 直接 → 謝りに来い → とは言わない → までも. The ★ is 「までも」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

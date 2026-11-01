@@ -1,0 +1,1124 @@
+[
+  {
+    "id": "n2-mg-201",
+    "type": "hyouki",
+    "difficulty": 3,
+    "stem": "国は、すべての国民に最低限の生活を<<ほしょう>>しなければならない。",
+    "options": [
+      "保障",
+      "保証",
+      "補償",
+      "保章"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "国家必须保障全体国民的最低生活。",
+      "en": "The state must guarantee every citizen a minimum standard of living."
+    },
+    "why": {
+      "zh": "保护权利、生活不受侵害是「保障」（「社会保障」「生活を保障する」）。",
+      "en": "Safeguarding rights or livelihoods is 「保障」 (「社会保障」, 「生活を保障する」)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「保証」是担保品质、身份（「品質を保証する」「保証人」），不用于国家保障生活。",
+        "en": "「保証」 vouches for quality or a person (「品質を保証する」, 「保証人」); not the state securing livelihoods."
+      },
+      {
+        "zh": "「補償」是赔偿损失（「損害を補償する」），这里没有损失。",
+        "en": "「補償」 is compensation for a loss (「損害を補償する」); there's no loss here."
+      },
+      {
+        "zh": "「章」是文章的「章」，「保章」不是词。",
+        "en": "「章」 is 'chapter'; 「保章」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-202",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "提出する前に、レポートの間違いを<<しゅうせい>>した。",
+    "options": [
+      "修正",
+      "習正",
+      "終正",
+      "修生"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "提交之前，我修改了报告里的错误。",
+      "en": "Before handing it in, I corrected the mistakes in my report."
+    },
+    "why": {
+      "zh": "改正错误是「修正」：「修」（修理的修）+「正」（正确的正）。",
+      "en": "Correcting mistakes is 「修正」: 「修」 (repair) + 「正」 (right)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「習」是学习的「習」，「習正」不是词。",
+        "en": "「習」 is 'learn'; 「習正」 isn't a word."
+      },
+      {
+        "zh": "「終」是结束的「終」，「終正」不是词。",
+        "en": "「終」 is 'end'; 「終正」 isn't a word."
+      },
+      {
+        "zh": "「生」不对，「修生」不是词。",
+        "en": "「生」 is wrong; 「修生」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-203",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "この調査は、二十代の若者を<<たいしょう>>に行われた。",
+    "options": [
+      "対象",
+      "対照",
+      "対称",
+      "大将"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这项调查以二十多岁的年轻人为对象进行。",
+      "en": "This survey was carried out among people in their twenties."
+    },
+    "why": {
+      "zh": "调查、研究针对的人或物是「対象」。",
+      "en": "The people or things a survey targets are its 「対象」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「対照」是对照、对比（「AとBを対照する」）。",
+        "en": "「対照」 is contrast or comparison (「AとBを対照する」)."
+      },
+      {
+        "zh": "「対称」是对称（「左右対称」）。",
+        "en": "「対称」 is symmetry (「左右対称」)."
+      },
+      {
+        "zh": "「大将」是将军、头领，意思不符。",
+        "en": "「大将」 is a general or boss — wrong meaning."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-204",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "あの静かな彼がスピーチで笑いを取るとは<<いがい>>だった。",
+    "options": [
+      "意外",
+      "以外",
+      "意害",
+      "異外"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "没想到那么安静的他会在演讲里逗笑大家，真意外。",
+      "en": "It was a surprise that someone as quiet as him got laughs in his speech."
+    },
+    "why": {
+      "zh": "「没想到」是「意外」：出乎意料。",
+      "en": "'Unexpected' is 「意外」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「以外」是「除……以外」，不能单独作谓语表示意外。",
+        "en": "「以外」 means 'other than' and can't stand as 'surprising'."
+      },
+      {
+        "zh": "「害」是伤害的「害」，「意害」不是词。",
+        "en": "「害」 is 'harm'; 「意害」 isn't a word."
+      },
+      {
+        "zh": "「異外」不是词。",
+        "en": "「異外」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-205",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "ご協力いただける方は、このアンケートに<<かいとう>>してください。",
+    "options": [
+      "回答",
+      "解答",
+      "回当",
+      "会答"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "愿意协助的人请回答这份问卷。",
+      "en": "If you're willing to help, please fill in this questionnaire."
+    },
+    "why": {
+      "zh": "回复问卷、询问是「回答」；「解答」是解题（考题的答案）。",
+      "en": "Answering a questionnaire or an enquiry is 「回答」; 「解答」 is solving a problem (test answers)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「解答」用于解答问题、考试题，问卷没有「正确答案」。",
+        "en": "「解答」 is for solving problems or exam questions; a questionnaire has no right answer."
+      },
+      {
+        "zh": "「回当」不是词，「当」不对。",
+        "en": "「回当」 isn't a word; 「当」 is wrong."
+      },
+      {
+        "zh": "「会答」不是词，「会」不对。",
+        "en": "「会答」 isn't a word; 「会」 is wrong."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-206",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "忙しくて、留学の<<きかい>>を逃してしまった。",
+    "options": [
+      "機会",
+      "機械",
+      "器械",
+      "期会"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "太忙了，错过了留学的机会。",
+      "en": "I was so busy that I missed my chance to study abroad."
+    },
+    "why": {
+      "zh": "机会、时机是「機会」。",
+      "en": "A chance or opportunity is 「機会」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「機械」是机器。",
+        "en": "「機械」 is a machine."
+      },
+      {
+        "zh": "「器械」是器具、器械（「医療器械」）。",
+        "en": "「器械」 is apparatus (「医療器械」)."
+      },
+      {
+        "zh": "「期会」不是词。",
+        "en": "「期会」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-207",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "最近、環境問題に<<かんしん>>を持つ若者が増えている。",
+    "options": [
+      "関心",
+      "感心",
+      "歓心",
+      "官心"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "最近，关心环境问题的年轻人越来越多。",
+      "en": "More and more young people are taking an interest in environmental issues."
+    },
+    "why": {
+      "zh": "「に関心を持つ」：对……感兴趣、关心。",
+      "en": "「〜に関心を持つ」 is 'take an interest in'."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「感心」是佩服（「感心する」），不和「を持つ」搭配。",
+        "en": "「感心」 is admiration (「感心する」); it doesn't go with 「を持つ」."
+      },
+      {
+        "zh": "「歓心」是欢心（「歓心を買う」讨好），意思不符。",
+        "en": "「歓心」 is favour (「歓心を買う」, curry favour) — wrong meaning."
+      },
+      {
+        "zh": "「官心」不是词。",
+        "en": "「官心」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-208",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "十年後の自分の姿を<<そうぞう>>してみてください。",
+    "options": [
+      "想像",
+      "創造",
+      "相像",
+      "想象"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "请试着想象一下十年后的自己。",
+      "en": "Try to imagine yourself ten years from now."
+    },
+    "why": {
+      "zh": "在脑中想象是「想像」（日语写「像」）。",
+      "en": "Picturing something in your mind is 「想像」 (with 「像」 in Japanese)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「創造」是创造（「新しい文化を創造する」），不是想象。",
+        "en": "「創造」 is creation (「新しい文化を創造する」), not imagining."
+      },
+      {
+        "zh": "「相像」不是日语词。",
+        "en": "「相像」 isn't a Japanese word."
+      },
+      {
+        "zh": "「想象」是中文写法，日语写「想像」。",
+        "en": "「想象」 is the Chinese spelling; Japanese writes 「想像」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-209",
+    "type": "hyouki",
+    "difficulty": 3,
+    "stem": "企業は利益を<<ついきゅう>>するだけでなく、社会への責任も果たすべきだ。",
+    "options": [
+      "追求",
+      "追及",
+      "追究",
+      "追救"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "企业不应只追求利益，也应承担社会责任。",
+      "en": "Companies should not just pursue profit but also meet their responsibilities to society."
+    },
+    "why": {
+      "zh": "追求利益、幸福等目标是「追求」。",
+      "en": "Pursuing a goal such as profit or happiness is 「追求」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「追及」是追究责任（「責任を追及する」）。",
+        "en": "「追及」 is pressing someone on responsibility (「責任を追及する」)."
+      },
+      {
+        "zh": "「追究」是探究真理、原因（「原因を追究する」）。",
+        "en": "「追究」 is investigating truth or causes (「原因を追究する」)."
+      },
+      {
+        "zh": "「追救」不是词。",
+        "en": "「追救」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-210",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "勉強は、結果だけでなく、そこに至る<<かてい>>も大切だ。",
+    "options": [
+      "過程",
+      "課程",
+      "家庭",
+      "仮定"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "学习不仅结果重要，达到结果的过程也很重要。",
+      "en": "In study, not just the result but the process of getting there matters."
+    },
+    "why": {
+      "zh": "「そこに至る」（达到结果的）提示是过程：「過程」。",
+      "en": "「そこに至る」 (leading up to it) points to the process: 「過程」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「課程」是课程（「博士課程」）。",
+        "en": "「課程」 is a course of study (「博士課程」)."
+      },
+      {
+        "zh": "「家庭」是家庭，接不上「そこに至る」。",
+        "en": "「家庭」 is household; it doesn't fit 「そこに至る」."
+      },
+      {
+        "zh": "「仮定」是假设（「仮定の話」）。",
+        "en": "「仮定」 is a supposition (「仮定の話」)."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-211",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "この映画の<<せいさく>>には三年かかったそうだ。",
+    "options": [
+      "制作",
+      "政策",
+      "成策",
+      "精作"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "听说这部电影制作花了三年。",
+      "en": "Apparently this film took three years to make."
+    },
+    "why": {
+      "zh": "电影、节目等作品的制作写「制作」。",
+      "en": "Making a work such as a film is 「制作」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「政策」是政策，读音相同但意思不符。",
+        "en": "「政策」 is policy — same sound, wrong meaning."
+      },
+      {
+        "zh": "「成策」不是词。",
+        "en": "「成策」 isn't a word."
+      },
+      {
+        "zh": "「精作」不是词。",
+        "en": "「精作」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-212",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "スマートフォンは、この十年で急速に<<ふきゅう>>した。",
+    "options": [
+      "普及",
+      "不朽",
+      "普急",
+      "普吸"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "智能手机在这十年里迅速普及。",
+      "en": "Smartphones spread rapidly over the past decade."
+    },
+    "why": {
+      "zh": "广泛推广、普及是「普及」。",
+      "en": "Becoming widespread is 「普及」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「不朽」是不朽（「不朽の名作」），意思不符。",
+        "en": "「不朽」 is immortal (「不朽の名作」) — wrong meaning."
+      },
+      {
+        "zh": "「急」不对，「普急」不是词。",
+        "en": "「急」 is wrong; 「普急」 isn't a word."
+      },
+      {
+        "zh": "「吸」是呼吸的「吸」，「普吸」不是词。",
+        "en": "「吸」 is 'inhale'; 「普吸」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-213",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "大学に入ってからは、親に<<たよらず>>生活している。",
+    "options": [
+      "頼らず",
+      "依らず",
+      "託らず",
+      "任らず"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "上大学以后，我不依靠父母生活。",
+      "en": "Since starting university, I've lived without relying on my parents."
+    },
+    "why": {
+      "zh": "「頼る（たよる）」：依靠。",
+      "en": "「頼る」 (たよる) is 'rely on'."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「依る」读「よる」（依据），不读「たよる」。",
+        "en": "「依る」 is よる (be based on), not たよる."
+      },
+      {
+        "zh": "「託」是「託す（たくす）」（委托）的字，没有「託る」这个写法。",
+        "en": "託 is from 「託す」 (entrust); 「託る」 isn't a spelling."
+      },
+      {
+        "zh": "「任」是「任せる（まかせる）」的字，没有「任る」这个写法。",
+        "en": "任 is from 「任せる」 (leave to); 「任る」 isn't a spelling."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-214",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "来年度は、交通費の予算を<<けずる>>ことになった。",
+    "options": [
+      "削る",
+      "減る",
+      "省る",
+      "欠る"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "明年度决定削减交通费预算。",
+      "en": "We've been told to cut the transport budget next year."
+    },
+    "why": {
+      "zh": "「削る（けずる）」：削、削减。",
+      "en": "「削る」 (けずる) is 'shave, cut back'."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「減る」读「へる」（减少），是自动词，不读「けずる」。",
+        "en": "「減る」 is へる (decrease), not けずる."
+      },
+      {
+        "zh": "「省」的训读是「はぶく」（省く），没有「省る」这个写法。",
+        "en": "省's verb is 「省く」 (はぶく); 「省る」 isn't a spelling."
+      },
+      {
+        "zh": "「欠」的训读是「かける」（欠ける），没有「欠る」这个写法。",
+        "en": "欠's verb is 「欠ける」; 「欠る」 isn't a spelling."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-215",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "患者は、医者に胸の痛みを<<うったえた>>。",
+    "options": [
+      "訴えた",
+      "伝えた",
+      "告えた",
+      "述えた"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "患者向医生诉说胸痛。",
+      "en": "The patient complained to the doctor of chest pain."
+    },
+    "why": {
+      "zh": "「訴える（うったえる）」：诉说、控诉。",
+      "en": "「訴える」 (うったえる) is 'complain of, appeal'."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「伝える」读「つたえる」（传达），不读「うったえる」。",
+        "en": "「伝える」 is つたえる (convey), not うったえる."
+      },
+      {
+        "zh": "「告」的训读是「告げる（つげる）」，没有「告える」。",
+        "en": "告's verb is 「告げる」; 「告える」 isn't a spelling."
+      },
+      {
+        "zh": "「述」的训读是「述べる（のべる）」，没有「述える」。",
+        "en": "述's verb is 「述べる」; 「述える」 isn't a spelling."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-216",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "会議の日程を<<ちょうせい>>して、来週連絡します。",
+    "options": [
+      "調整",
+      "調製",
+      "調正",
+      "朝整"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我调整一下会议日程，下周联系您。",
+      "en": "I'll sort out the meeting schedule and get back to you next week."
+    },
+    "why": {
+      "zh": "协调日程、意见是「調整」。",
+      "en": "Coordinating a schedule or views is 「調整」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「調製」是调制（药、食品等），不用于日程。",
+        "en": "「調製」 is preparing (medicine, food); not for schedules."
+      },
+      {
+        "zh": "「調正」不是词。",
+        "en": "「調正」 isn't a word."
+      },
+      {
+        "zh": "「朝」是早上的「朝」，字形相近。",
+        "en": "「朝」 is 'morning' — similar shape."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-217",
+    "type": "hyouki",
+    "refs": [
+      "lesson65#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "新しいソフトを使って、作業の<<こうりつ>>を上げた。",
+    "options": [
+      "効率",
+      "高率",
+      "効律",
+      "交率"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "用新软件提高了工作效率。",
+      "en": "We raised our efficiency with new software."
+    },
+    "why": {
+      "zh": "效率是「効率」：「効」（效果的效）+「率」。",
+      "en": "Efficiency is 「効率」: 「効」 (effect) + 「率」 (rate)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「高率」也读「こうりつ」，但意思是\"高比率\"（高率の税金），不能说\"作业的高比率\"。",
+        "en": "「高率」 is also こうりつ but means a high rate (高率の税金), not efficiency."
+      },
+      {
+        "zh": "「律」也读「りつ」（法律），但没有「効律」这个词。",
+        "en": "律 is also read りつ (法律), but 「効律」 isn't a word."
+      },
+      {
+        "zh": "「交」也读「こう」，但没有「交率」这个词。",
+        "en": "交 is also こう, but 「交率」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-218",
+    "type": "hyouki",
+    "refs": [
+      "lesson65#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "会社は職場の環境を<<かいぜん>>するため、意見を集めている。",
+    "options": [
+      "改善",
+      "改繕",
+      "改全",
+      "解善"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "公司为了改善职场环境，正在收集意见。",
+      "en": "The company is gathering opinions to improve the workplace."
+    },
+    "why": {
+      "zh": "改善是「改善」：「改」+「善」（善良的善）。",
+      "en": "Improvement is 「改善」: 「改」 + 「善」 (good)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「繕」是修缮（「修繕」）的字，多了糸字旁。",
+        "en": "「繕」 is from 「修繕」 (repair) — it has the thread radical."
+      },
+      {
+        "zh": "「全」也读「ぜん」，但没有「改全」这个词。",
+        "en": "全 is also ぜん, but 「改全」 isn't a word."
+      },
+      {
+        "zh": "「解」是解决的「解」，「解善」不是词。",
+        "en": "「解」 is 'solve'; 「解善」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-219",
+    "type": "hyouki",
+    "refs": [
+      "lesson66#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "この業界は<<きょうそう>>が激しい。",
+    "options": [
+      "競争",
+      "競走",
+      "協争",
+      "共争"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这个行业竞争激烈。",
+      "en": "Competition in this industry is fierce."
+    },
+    "why": {
+      "zh": "企业、人之间的竞争是「競争」。",
+      "en": "Rivalry between companies or people is 「競争」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「競走」是赛跑（「100メートル競走」）。",
+        "en": "「競走」 is a race (「100メートル競走」)."
+      },
+      {
+        "zh": "「協」也读「きょう」（協力），但没有「協争」这个词。",
+        "en": "協 is also きょう (協力), but 「協争」 isn't a word."
+      },
+      {
+        "zh": "「共」也读「きょう」（共通），但没有「共争」这个词。",
+        "en": "共 is also きょう (共通), but 「共争」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-220",
+    "type": "hyouki",
+    "refs": [
+      "lesson67#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "その案については、次の会議で<<けんとう>>します。",
+    "options": [
+      "検討",
+      "健闘",
+      "見当",
+      "検当"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "关于那个方案，下次会议再研究。",
+      "en": "We'll consider that proposal at the next meeting."
+    },
+    "why": {
+      "zh": "仔细研究、讨论是「検討」。",
+      "en": "Considering something carefully is 「検討」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「健闘」是奋战（「健闘を祈る」），意思不符。",
+        "en": "「健闘」 is putting up a good fight (「健闘を祈る」) — wrong meaning."
+      },
+      {
+        "zh": "「見当」是估计、头绪（「見当がつく」），不用「〜について見当する」。",
+        "en": "「見当」 is a rough guess (「見当がつく」); not 「〜について見当する」."
+      },
+      {
+        "zh": "「当」也读「とう」，但没有「検当」这个词；\"估计\"是「見当」。",
+        "en": "当 is also とう, but 「検当」 isn't a word (a guess is 「見当」)."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-221",
+    "type": "hyouki",
+    "refs": [
+      "lesson67#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "わが社は、新しい方法を<<さいよう>>することにした。",
+    "options": [
+      "採用",
+      "再用",
+      "採要",
+      "菜用"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我们公司决定采用新方法。",
+      "en": "Our company decided to adopt the new method."
+    },
+    "why": {
+      "zh": "采用是「採用」：提手旁的「採」+「用」。",
+      "en": "Adopting is 「採用」: 「採」 with the hand radical + 「用」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「再」也读「さい」，但没有「再用」这个词（重复使用是「再利用」）。",
+        "en": "再 is also さい, but 「再用」 isn't a word (reuse is 「再利用」)."
+      },
+      {
+        "zh": "「要」也读「よう」，但没有「採要」这个词。",
+        "en": "要 is also よう, but 「採要」 isn't a word."
+      },
+      {
+        "zh": "「菜」也读「さい」（野菜），但没有「菜用」这个词。",
+        "en": "菜 is also さい (野菜), but 「菜用」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-222",
+    "type": "hyouki",
+    "refs": [
+      "lesson69#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "部屋を借りるときは、<<けいやく>>書をよく読んだほうがいい。",
+    "options": [
+      "契約",
+      "経約",
+      "計約",
+      "契役"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "租房时最好仔细阅读合同。",
+      "en": "When you rent a room, read the contract carefully."
+    },
+    "why": {
+      "zh": "合同是「契約」：「契」+ 糸字旁的「約」。",
+      "en": "A contract is 「契約」: 「契」 + 「約」 with the thread radical."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「経」也读「けい」（経験），但没有「経約」这个词。",
+        "en": "経 is also けい (経験), but 「経約」 isn't a word."
+      },
+      {
+        "zh": "「計」也读「けい」（計画），但没有「計約」这个词。",
+        "en": "計 is also けい (計画), but 「計約」 isn't a word."
+      },
+      {
+        "zh": "「役」也读「やく」（役所），但没有「契役」这个词。",
+        "en": "役 is also やく (役所), but 「契役」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-223",
+    "type": "hyouki",
+    "refs": [
+      "lesson69#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "社員は会社の<<ほうしん>>に従って行動する。",
+    "options": [
+      "方針",
+      "方心",
+      "放針",
+      "方信"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "员工按照公司的方针行动。",
+      "en": "Employees act in line with company policy."
+    },
+    "why": {
+      "zh": "方针是「方針」：「方」+「針」（针）。",
+      "en": "A policy is 「方針」: 「方」 + 「針」 (needle)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「心」也读「しん」，但没有「方心」这个词。",
+        "en": "心 is also しん, but 「方心」 isn't a word."
+      },
+      {
+        "zh": "「放」也读「ほう」（放送），但方针的「ほう」是「方」（方向）。",
+        "en": "放 is also ほう (放送), but the ほう of a policy is 方 (方向)."
+      },
+      {
+        "zh": "「信」也读「しん」（信用），但没有「方信」这个词。",
+        "en": "信 is also しん (信用), but 「方信」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-224",
+    "type": "hyouki",
+    "refs": [
+      "lesson70#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "手を洗って、かぜを<<よぼう>>しましょう。",
+    "options": [
+      "予防",
+      "予妨",
+      "余防",
+      "予坊"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "洗手预防感冒吧。",
+      "en": "Wash your hands to prevent colds."
+    },
+    "why": {
+      "zh": "预防是「予防」：「予」+ 阝旁的「防」。",
+      "en": "Prevention is 「予防」: 「予」 + 「防」 with the 阝 radical."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「妨」是妨碍的「妨」，女字旁。",
+        "en": "「妨」 is 'hinder', with the woman radical."
+      },
+      {
+        "zh": "「余」是剩余的「余」，「余防」不是词。",
+        "en": "「余」 is 'surplus'; 「余防」 isn't a word."
+      },
+      {
+        "zh": "「坊」是土字旁的「坊」（「坊や」）。",
+        "en": "「坊」 has the earth radical (as in 「坊や」)."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-225",
+    "type": "hyouki",
+    "refs": [
+      "lesson70#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "今日は歯医者で虫歯の<<ちりょう>>を受けた。",
+    "options": [
+      "治療",
+      "治料",
+      "知療",
+      "治量"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "今天在牙科治疗了蛀牙。",
+      "en": "Today I had a cavity treated at the dentist."
+    },
+    "why": {
+      "zh": "治疗是「治療」：病字旁的「療」。",
+      "en": "Treatment is 「治療」; 「療」 has the sickness radical."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「料」也读「りょう」（料金），但没有「治料」这个词。",
+        "en": "料 is also りょう (料金), but 「治料」 isn't a word."
+      },
+      {
+        "zh": "「知」也读「ち」（知識），但治疗的「ち」是「治」。",
+        "en": "知 is also ち (知識), but the ち of treatment is 治."
+      },
+      {
+        "zh": "「量」也读「りょう」（分量），但没有「治量」这个词。",
+        "en": "量 is also りょう (分量), but 「治量」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-226",
+    "type": "hyouki",
+    "refs": [
+      "lesson70#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "地震に<<そなえて>>、水と食料を買っておいた。",
+    "options": [
+      "備えて",
+      "供えて",
+      "揃えて",
+      "構えて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "为防备地震，我事先买好了水和食物。",
+      "en": "I've stocked up on water and food in case of an earthquake."
+    },
+    "why": {
+      "zh": "「〜に備える」：为……做准备、防备。",
+      "en": "「〜に備える」 is 'prepare for'."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「供える」也读「そなえる」，但意思是供奉（「お墓に花を供える」）。",
+        "en": "「供える」 is also そなえる, but means 'offer' (「お墓に花を供える」)."
+      },
+      {
+        "zh": "「揃える」读「そろえる」（备齐、使一致），不读「そなえる」。",
+        "en": "「揃える」 is そろえる (gather, match), not そなえる."
+      },
+      {
+        "zh": "「構える」读「かまえる」（摆好架势），不读「そなえる」。",
+        "en": "「構える」 is かまえる (take a stance), not そなえる."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-227",
+    "type": "hyouki",
+    "refs": [
+      "lesson69#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "姉は将来の進路について<<なやんで>>いる。",
+    "options": [
+      "悩んで",
+      "苦んで",
+      "悔んで",
+      "憎んで"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "姐姐在为将来的出路烦恼。",
+      "en": "My sister is agonising over what to do in the future."
+    },
+    "why": {
+      "zh": "「悩む（なやむ）」：烦恼，竖心旁。",
+      "en": "「悩む」 (なやむ) is 'worry', with the heart radical."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「苦」的训读是「苦しむ（くるしむ）」，没有「苦む」这个写法。",
+        "en": "苦's verb is 「苦しむ」; 「苦んで」 isn't a spelling."
+      },
+      {
+        "zh": "「悔」是「悔やむ」（后悔）的字，送假名不同。",
+        "en": "「悔」 is from 「悔やむ」 (regret); the okurigana differs."
+      },
+      {
+        "zh": "「憎」是「憎む（にくむ）」（憎恨），读音不同。",
+        "en": "「憎」 is 「憎む」 (にくむ, hate) — a different reading."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-228",
+    "type": "hyouki",
+    "refs": [
+      "lesson71#vocab"
+    ],
+    "difficulty": 2,
+    "stem": "彼の無責任な発言は、多くの人から<<ひなん>>された。",
+    "options": [
+      "非難",
+      "避難",
+      "悲難",
+      "比難"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他不负责任的发言遭到了很多人的指责。",
+      "en": "His irresponsible remarks were criticised by many people."
+    },
+    "why": {
+      "zh": "「人から〜される」和「無責任な発言」提示是指责：「非難」。",
+      "en": "「人から〜された」 and 'irresponsible remarks' point to criticism: 「非難」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「避難」是避难（「小学校に避難する」），不能「被人避难」。",
+        "en": "「避難」 is taking refuge (「小学校に避難する」); people can't 'take refuge' at you."
+      },
+      {
+        "zh": "「悲」是悲伤的「悲」，「悲難」不是词。",
+        "en": "「悲」 is 'sad'; 「悲難」 isn't a word."
+      },
+      {
+        "zh": "「比」也读「ひ」（比較），但没有「比難」这个词。",
+        "en": "比 is also ひ (比較), but 「比難」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-229",
+    "type": "hyouki",
+    "refs": [
+      "lesson64#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "税金を納めるのは国民の<<ぎむ>>だ。",
+    "options": [
+      "義務",
+      "議務",
+      "儀務",
+      "犠務"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "纳税是国民的义务。",
+      "en": "Paying taxes is a citizen's duty."
+    },
+    "why": {
+      "zh": "义务是「義務」：「義」+「務」。",
+      "en": "Duty is 「義務」: 「義」 + 「務」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「議」是会议的「議」，多了言字旁。",
+        "en": "「議」 is 'debate' — it has the speech radical."
+      },
+      {
+        "zh": "「儀」是礼仪的「儀」，多了单人旁。",
+        "en": "「儀」 is 'ceremony' — it has the person radical."
+      },
+      {
+        "zh": "「犠」是牺牲的「犠」，多了牛字旁。",
+        "en": "「犠」 is 'sacrifice' — it has the cow radical."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-230",
+    "type": "hyouki",
+    "refs": [
+      "lesson65#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "毎週金曜日に、仕事の<<じょうきょう>>を部長に報告している。",
+    "options": [
+      "状況",
+      "条況",
+      "常況",
+      "上況"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "每周五我向部长汇报工作情况。",
+      "en": "Every Friday I report on how work is going to the department head."
+    },
+    "why": {
+      "zh": "情况是「状況」：「状」+ 三点水的「況」。",
+      "en": "Situation is 「状況」: 「状」 + 「況」 with the water radical."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「条」也读「じょう」（条件），但没有「条況」这个词。",
+        "en": "条 is also じょう (条件), but 「条況」 isn't a word."
+      },
+      {
+        "zh": "「常」也读「じょう」（日常），但没有「常況」这个词。",
+        "en": "常 is also じょう (日常), but 「常況」 isn't a word."
+      },
+      {
+        "zh": "「上」也读「じょう」（上下），但没有「上況」这个词。",
+        "en": "上 is also じょう, but 「上況」 isn't a word."
+      }
+    ]
+  }
+]

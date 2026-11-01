@@ -1,0 +1,231 @@
+[
+  {
+    "id": "n5-l03-001",
+    "rev": 2,
+    "type": "bunpou",
+    "refs": ["lesson03#0", "lesson03#1"],
+    "difficulty": 2,
+    "stem": "今は 毎日 7時に いえへ（　）。",
+    "options": ["かえりました", "かえります", "かえって", "かえりましょう"],
+    "okj": ["帰りました", "帰ります", "帰って", "帰りましょう"],
+    "answer": 1,
+    "full": "今は 毎日 7時に いえへ かえります。",
+    "kj": "今は毎日7時に家へ帰ります。",
+    "tr": {
+      "zh": "现在我每天7点回家。",
+      "en": "These days I go home at seven every day."
+    },
+    "why": {
+      "zh": "「今は 毎日」说的是现在的习惯，用现在形「ます」。「帰る」是一类动词：る→り＋ます，变成「帰ります」。",
+      "en": "「今は 毎日」 describes a present habit, so the non-past 「ます」. 「帰る」 is Group 1: る → り ＋ ます, giving 「帰ります」."
+    },
+    "wrong": [
+      {
+        "zh": "「帰りました」是过去式，和「今は 毎日」（现在每天）不符。",
+        "en": "「帰りました」 is past, but 「今は 毎日」 is about now."
+      },
+      null,
+      {
+        "zh": "「帰って」是て形，后面还要接别的话，不能单独结束句子。",
+        "en": "「帰って」 is the て-form; it needs something after it and can't end the sentence."
+      },
+      {
+        "zh": "「帰りましょう」是“一起回去吧”的邀请，不能用来说自己每天的习惯。",
+        "en": "「帰りましょう」 is \"let's go home\", an invitation, not a statement of your daily habit."
+      }
+    ]
+  },
+  {
+    "id": "n5-l03-002",
+    "rev": 2,
+    "type": "bunpou",
+    "refs": ["lesson03#0", "lesson03#1"],
+    "difficulty": 2,
+    "stem": "わたしは まいばん テレビを（　）。ニュースが すきですから。",
+    "options": ["見ません", "見て", "見ます", "見ましょう"],
+    "answer": 2,
+    "full": "わたしは まいばん テレビを 見ます。ニュースが すきですから。",
+    "kj": "私は毎晩テレビを見ます。ニュースが好きですから。",
+    "tr": {
+      "zh": "我每天晚上看电视，因为我喜欢看新闻。",
+      "en": "I watch TV every evening, because I like the news."
+    },
+    "why": {
+      "zh": "「毎晩」是习惯，后面的理由“喜欢新闻”说明是看的：「見る」是二类动词，去掉る加ます，「見ます」。",
+      "en": "「毎晩」 is a habit, and the reason (he likes the news) shows he does watch: 「見る」 is Group 2, drop る and add ます — 「見ます」."
+    },
+    "wrong": [
+      {
+        "zh": "「見ません」是“不看”，和后面“因为喜欢新闻”对不上。",
+        "en": "「見ません」 (don't watch) clashes with the reason \"because I like the news\"."
+      },
+      {
+        "zh": "「見て」是て形，后面还要接别的话，不能单独结束句子。",
+        "en": "「見て」 is the て-form; it can't end the sentence on its own."
+      },
+      null,
+      {
+        "zh": "「見ましょう」是“一起看吧”的邀请，不能用来说自己每天的习惯。",
+        "en": "「見ましょう」 is \"let's watch\", an invitation, not a statement of your habit."
+      }
+    ]
+  },
+  {
+    "id": "n5-l03-003",
+    "rev": 2,
+    "type": "bunpou",
+    "refs": ["lesson03#0", "lesson03#1"],
+    "difficulty": 2,
+    "stem": "わたしは まいばん 10時ごろ おふろに（　）。それから 11時に ねます。",
+    "options": ["入りました", "入りません", "入って", "入ります"],
+    "answer": 3,
+    "full": "わたしは まいばん 10時ごろ おふろに 入ります。それから 11時に ねます。",
+    "kj": "私は毎晩10時ごろお風呂に入ります。それから11時に寝ます。",
+    "tr": {
+      "zh": "我每天晚上10点左右洗澡，然后11点睡觉。",
+      "en": "I take a bath around ten every night, and then go to bed at eleven."
+    },
+    "why": {
+      "zh": "「毎晩」和后面的「寝ます」都是现在的习惯，用现在形。「入る」（はいる）是一类动词：る→り＋ます，变成「入ります」。",
+      "en": "「毎晩」 and the following 「寝ます」 describe a present habit, so non-past. 「入る」 is a Group 1 verb: る → り ＋ ます, 「入ります」."
+    },
+    "wrong": [
+      {
+        "zh": "「入りました」是过去式，和「毎晩」以及后面的「寝ます」不符。",
+        "en": "「入りました」 is past, but 「毎晩」 and 「寝ます」 describe a present habit."
+      },
+      {
+        "zh": "「入りません」是“不洗澡”，后面「それから」（然后）就接不上了。",
+        "en": "「入りません」 (don't take one) leaves nothing for 「それから」 (after that) to follow."
+      },
+      {
+        "zh": "「入って」是て形，后面还要接别的话，不能单独结束句子。",
+        "en": "「入って」 is the て-form; it can't end the sentence on its own."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n5-l03-004",
+    "type": "bunpou",
+    "refs": ["lesson03#1"],
+    "difficulty": 1,
+    "stem": "きのうは とても いそがしくて、あさから 何も（　）。",
+    "options": ["食べました", "食べます", "食べませんでした", "食べません"],
+    "answer": 2,
+    "full": "きのうは とても いそがしくて、あさから 何も 食べませんでした。",
+    "kj": "昨日はとても忙しくて、朝から何も食べませんでした。",
+    "tr": {
+      "zh": "昨天非常忙，从早上起什么都没吃。",
+      "en": "Yesterday I was really busy and didn't eat anything from the morning on."
+    },
+    "why": {
+      "zh": "「昨日」是过去，「何も」后面要接否定，所以用过去否定「〜ませんでした」。",
+      "en": "「昨日」 is past and 「何も」 needs a negative, so the past negative 「〜ませんでした」."
+    },
+    "wrong": [
+      {
+        "zh": "「何も」后面要接否定，「何も食べました」不成立。",
+        "en": "「何も」 requires a negative; 「何も食べました」 isn't possible."
+      },
+      {
+        "zh": "「食べます」是现在肯定，时态和「昨日」不符，也不能接在「何も」后面。",
+        "en": "「食べます」 is present affirmative — wrong tense for 「昨日」 and impossible after 「何も」."
+      },
+      null,
+      {
+        "zh": "「食べません」是现在/将来否定，说昨天的事要用过去形。",
+        "en": "「食べません」 is present/future negative; yesterday needs the past form."
+      }
+    ]
+  },
+  {
+    "id": "n5-l03-005",
+    "type": "bunpou",
+    "refs": ["lesson03#1", "lesson03#0"],
+    "difficulty": 2,
+    "stem": "あしたの 午後、友だちが わたしの いえに（　）。",
+    "options": ["来たいです", "来ます", "来ました", "来ましょう"],
+    "answer": 1,
+    "full": "あしたの 午後、友だちが わたしの いえに 来ます。",
+    "kj": "明日の午後、友達が私の家に来ます。",
+    "tr": {
+      "zh": "明天下午朋友要来我家。",
+      "en": "A friend is coming to my house tomorrow afternoon."
+    },
+    "why": {
+      "zh": "「来る」是三类不规则动词，ます形要死记：来ます（きます）；「明日」是将来，用现在形「ます」。主语是「友達」，就是单纯说事实。",
+      "en": "「来る」 is an irregular Group 3 verb whose ます form is learned by heart: 来ます; 「明日」 is future, so the non-past 「ます」. The subject is the friend, so it's a plain statement."
+    },
+    "wrong": [
+      {
+        "zh": "「〜たいです」只能说自己的愿望，不能直接说别人（「友達」）想来。",
+        "en": "「〜たいです」 states your own wish; it can't say directly that someone else (the friend) wants to come."
+      },
+      null,
+      {
+        "zh": "「来ました」是过去，和表示将来的「明日」矛盾。",
+        "en": "「来ました」 is past and clashes with 「明日」 (tomorrow)."
+      },
+      {
+        "zh": "「来ましょう」是邀请“一起来吧”，主语是「友達が」，说不通。",
+        "en": "「来ましょう」 is an invitation (\"let's come\"); it doesn't work with 「友達が」 as the subject."
+      }
+    ]
+  },
+  {
+    "id": "n5-l03-006",
+    "type": "bunpou",
+    "refs": ["lesson03#1"],
+    "difficulty": 1,
+    "stem": "A「しゅうまつは 何を（　）か。」\nB「友だちと テニスを します。」",
+    "options": ["します", "しました", "して", "しませんでした"],
+    "answer": 0,
+    "full": "A「しゅうまつは 何を しますか。」 B「友だちと テニスを します。」",
+    "kj": "A「週末は何をしますか。」\nB「友達とテニスをします。」",
+    "tr": {
+      "zh": "A：周末做什么？ B：和朋友打网球。",
+      "en": "A: What are you doing this weekend? B: Playing tennis with friends."
+    },
+    "why": {
+      "zh": "B 用「します」回答周末的打算，问句也要用现在（将来）形。「する」是三类不规则动词，ます形是「します」。",
+      "en": "B answers with 「します」 about the coming weekend, so the question is non-past too. 「する」 is irregular; its ます form is 「します」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「しました」是问上周末做了什么，可 B 用「します」回答将来的打算。",
+        "en": "「しました」 asks about last weekend, but B answers with 「します」 about the coming one."
+      },
+      {
+        "zh": "「して」是て形，不能直接接「か」构成问句。",
+        "en": "「して」 is the て-form; it can't take 「か」 to make the question."
+      },
+      {
+        "zh": "「何を しませんでしたか」是问“没做什么”，和 B 的回答对不上。",
+        "en": "「何を しませんでしたか」 asks what you didn't do — B's answer doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n5-l03-007",
+    "type": "narabe",
+    "refs": ["lesson03#1"],
+    "difficulty": 1,
+    "stem": "A「まいあさ [_] [★] [_] [_]。」\nB「6時です。」",
+    "options": ["おきます", "か", "何時", "に"],
+    "okj": ["起きます", null, null, null],
+    "order": [2, 3, 0, 1],
+    "full": "A「まいあさ 何時に おきますか。」 B「6時です。」",
+    "kj": "A「毎朝何時に起きますか。」\nB「6時です。」",
+    "tr": {
+      "zh": "A：每天早上几点起床？ B：6点。",
+      "en": "A: What time do you get up every morning? B: At six."
+    },
+    "why": {
+      "zh": "时间点「何時に」＋ 动词ます形「起きます」＋ 疑问的「か」。★ 在第二格，是「に」。",
+      "en": "Time point 「何時に」 ＋ ます form 「起きます」 ＋ question 「か」. The ★ is the second slot: 「に」."
+    },
+    "wrong": [null, null, null, null]
+  }
+]

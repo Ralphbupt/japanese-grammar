@@ -1,0 +1,1058 @@
+[
+ {
+  "id": "n1-ck-601",
+  "type": "tougou",
+  "scene": "地方の鉄道会社で、営業部長と女の社員、新人の男の社員の三人が、新しい観光列車の宣伝について話しています。",
+  "lines": [
+   [
+    "M1",
+    "来月走り始める観光列車の宣伝なんだけど、予算が限られてるから、一つに絞りたいんだ。条件は二つ。若い人の目に触れること、それから、運行が始まる前に間に合うこと。"
+   ],
+   [
+    "F",
+    "新聞広告は年配の方向けですから、今回は外していいと思います。大手の旅行会社に頼んで、ツアーのパンフレットに載せてもらうのはどうでしょう。若い人もよく手に取りますし。"
+   ],
+   [
+    "M2",
+    "あとは、社長が地元のラジオで持っている、沿線の話をするコーナーですかね。ネットで後からも聞けるので、通学中の学生がよく聞いているそうですよ。"
+   ],
+   [
+    "F",
+    "それと、沿線の大学の近くにある小さな旅行会社に、チラシを置いてもらえないか頼んでみるとか。学生がよく寄るお店ですし。"
+   ],
+   [
+    "M1",
+    "ふむ。どれも悪くないな。"
+   ],
+   [
+    "M2",
+    "あ、ただ、大手のパンフレットって、次に出るのは春だって、この前、担当の方がおっしゃってました。"
+   ],
+   [
+    "F",
+    "え、そうなの。……それと、社長のコーナー、番組の改編で、来月から半年はお休みになるって聞いたけど。"
+   ],
+   [
+    "M2",
+    "あ、そうでした。"
+   ],
+   [
+    "M1",
+    "そうか……。じゃあ田中くん、悪いけど、来週、そのあたりのお店を回ってもらえるかな。チラシは今週中に刷っておくから。"
+   ]
+  ],
+  "question": "観光列車の宣伝は、どうすることになりましたか。",
+  "spokenOptions": true,
+  "options": [
+   "新聞に広告を出して、年配の客に知らせる",
+   "学生がよく行く店に、チラシを置いてもらう",
+   "社長が話している番組で、紹介してもらう",
+   "大手の旅行会社の冊子に、載せてもらう"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "地方铁路公司里，营业部长、一位女职员和一位新来的男职员三个人在商量新观光列车的宣传。",
+    "question": "观光列车的宣传最后决定怎么做？",
+    "lines": [
+     "下个月开始运行的观光列车的宣传，预算有限，想集中做一件事。条件有两个：要让年轻人看到，还有要在开始运行之前来得及。",
+     "报纸广告是面向年长的人的，这次可以不考虑。请大旅行社把它登在旅游团的宣传册上怎么样？年轻人也常拿来看。",
+     "另外还有社长在当地电台的那个讲沿线故事的栏目吧。网上也能回听，听说很多学生在上学路上听。",
+     "还有，可以去请沿线大学附近的小旅行社放我们的传单。那是学生常去的店。",
+     "嗯。都不错啊。",
+     "啊，不过，大旅行社的宣传册，听负责人前几天说，下一期要到春天才出。",
+     "啊，是吗。……还有，听说社长的栏目因为节目调整，从下个月起要停半年。",
+     "啊，对。",
+     "这样啊……那田中，麻烦你下周去那一带的店跑一趟吧。传单我这周内印好。"
+    ],
+    "options": [
+     "在报纸上登广告，告诉年长的乘客",
+     "请学生常去的店放传单",
+     "请社长出演的节目介绍",
+     "请大旅行社登在宣传册上"
+    ]
+   },
+   "en": {
+    "scene": "At a regional railway company, the sales manager, a woman employee and a new male employee are talking about promoting a new sightseeing train.",
+    "question": "What did they decide to do to promote the sightseeing train?",
+    "lines": [
+     "About promoting the sightseeing train that starts next month — the budget's limited, so I want to focus on one thing. Two conditions: young people have to see it, and it has to be ready before the service starts.",
+     "Newspaper ads are for older people, so I think we can leave them out this time. How about asking the big travel agencies to put it in their tour brochures? Young people pick those up too.",
+     "Then there's the president's slot on local radio about places along the line. You can listen later online, so apparently lots of students listen on their way to school.",
+     "And we could ask the small travel agencies near the universities along the line to display our flyers. Students drop in there a lot.",
+     "Hmm. None of those is bad.",
+     "Oh, but the person in charge said the other day that the big agencies' next brochure won't come out until spring.",
+     "Oh, really? ...And I heard the president's slot is going off air for six months from next month because of a schedule change.",
+     "Oh, that's right.",
+     "I see... Then, Tanaka, sorry, but could you go round the shops in that area next week? I'll have the flyers printed this week."
+    ],
+    "options": [
+     "Advertise in a newspaper for older passengers",
+     "Have shops students often visit display flyers",
+     "Have it introduced on the president's programme",
+     "Get it into the big travel agencies' brochure"
+    ]
+   }
+  },
+  "why": {
+   "zh": "条件是让年轻人看到、开始运行前来得及。报纸不面向年轻人；大旅行社宣传册下一期春天才出，赶不上下个月；社长的栏目下个月起停播半年。剩下的只有大学附近学生常去的小旅行社，部长让田中下周去那一带的店。",
+   "en": "The conditions: reach young people and be ready before next month's start. Newspapers miss the young, the big agencies' next brochure isn't until spring, and the president's slot is off air from next month. Only the small agencies near the universities remain — the manager sends Tanaka round those shops."
+  },
+  "wrong": [
+   {
+    "zh": "女职员说报纸面向年长的人，这次不考虑。",
+    "en": "The woman says newspapers are for older people and can be left out."
+   },
+   null,
+   {
+    "zh": "社长的栏目从下个月起停播半年，赶不上开始运行。",
+    "en": "The president's slot is off air for six months from next month — too late."
+   },
+   {
+    "zh": "大旅行社的宣传册下一期要到春天，赶不上下个月开始运行。",
+    "en": "The next brochure isn't out until spring, after the service starts."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "not-possible",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n1-ck-602",
+  "type": "tougou",
+  "scene": "植物園で、園長と男の職員、入り口の窓口を担当している女の人の三人が話しています。",
+  "lines": [
+   [
+    "F1",
+    "来園者が三年続けて減っていてね。来年度は、何か一つ新しいことを始めたいと思っているの。"
+   ],
+   [
+    "M",
+    "平日の夜、例えば金曜日だけでも、八時まで開けてはどうでしょう。仕事帰りの人が寄れるようになります。"
+   ],
+   [
+    "F1",
+    "気持ちは分かるけど、夜も照明をつけて、警備の人を置くとなると、それだけで予算のほとんどが消えてしまうのよ。"
+   ],
+   [
+    "M",
+    "そうですか……。では、温室の珍しい植物の写真を、毎日ネットで紹介するのはどうでしょう。うちの温室は質の割に知られていないので、知ってもらうきっかけになるかと。"
+   ],
+   [
+    "F1",
+    "それは前から考えてはいるんだけど、画面で見て満足して、かえって足を運ばなくなるという話も聞くし……。"
+   ],
+   [
+    "F2",
+    "あの、窓口でお客様とお話ししていて気づいたんですが、閉園の時間を聞かれることがとても多いんです。駅前の温泉に泊まりにいらした方が、夕食までの空いた時間に寄ってくださるんですけど、うちは五時に閉まるので、ゆっくり見られない、と。"
+   ],
+   [
+    "M",
+    "それなら、温泉の旅館と組んで、共通の割引券を作るのも手ですね。"
+   ],
+   [
+    "F1",
+    "それは先方との話し合いに時間がかかるから、来年度にはとても間に合わないわね。"
+   ],
+   [
+    "M",
+    "やっぱり、夜遅くまで開けるべきなんじゃないですか。"
+   ],
+   [
+    "F2",
+    "いえ、旅館の夕食はだいたい六時ごろからなので、そういうお客様は、それまでに見られれば十分なんです。ですから、一時間延ばすだけでも、ずいぶん違うと思うんです。"
+   ],
+   [
+    "F1",
+    "一時間なら、今の警備の人の勤務時間の中でやりくりできそうね。来年度の計画は、その方向で書き直してみるわ。割引券のほうは、再来年に向けて、先方に話だけしておきましょう。"
+   ]
+  ],
+  "question": "植物園は、来年度何をすることにしましたか。",
+  "spokenOptions": true,
+  "options": [
+   "閉める時刻を、夕食の前まで延ばす",
+   "金曜日に限って、夜八時まで開ける",
+   "珍しい植物の写真を、ネットで紹介する",
+   "温泉旅館と、共通の割引券を作る"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "植物园里，园长、一位男职员和负责入口窗口的女士三个人在谈话。",
+    "question": "植物园决定明年做什么？",
+    "lines": [
+     "入园人数连续三年在减少。明年我想开始做一件新的事情。",
+     "平日晚上，比如只在周五，开到八点怎么样？下班的人就能顺路来看了。",
+     "心情我理解，可晚上要开着照明、还要安排保安，光这一项就会用掉大部分预算。",
+     "这样啊……那每天在网上介绍温室里珍稀植物的照片怎么样？我们的温室质量不错却不太有名，可以成为让人知道的契机。",
+     "这个我以前就在考虑，但也听说有人在屏幕上看过就满足了，反而不来了……",
+     "那个，我在窗口和客人聊天时发现，被问闭馆时间的情况特别多。来站前温泉住宿的客人，会在晚饭前的空闲时间顺路过来，可我们五点就关门，他们说没法慢慢看。",
+     "那样的话，和温泉旅馆合作做联合优惠券也是个办法。",
+     "那个要和对方商量，很花时间，明年肯定来不及。",
+     "还是应该开到很晚吧？",
+     "不是的，旅馆的晚饭一般六点左右开始，那样的客人在那之前能看完就够了。所以我觉得哪怕只延长一个小时，也会很不一样。",
+     "一个小时的话，在现在保安的工作时间内应该能调配过来。明年的计划我就按这个方向重写一下。优惠券那边，为后年做准备，先跟对方打个招呼吧。"
+    ],
+    "options": [
+     "把关门时间延到晚饭之前",
+     "只在周五开到晚上八点",
+     "在网上介绍珍稀植物的照片",
+     "和温泉旅馆做联合优惠券"
+    ]
+   },
+   "en": {
+    "scene": "At a botanical garden, the director, a male staff member and the woman who works at the entrance counter are talking.",
+    "question": "What has the botanical garden decided to do next year?",
+    "lines": [
+     "Visitor numbers have fallen three years in a row. Next year I'd like to start one new thing.",
+     "How about staying open until eight on weekday evenings — say just Fridays? People could drop in on their way home from work.",
+     "I understand, but keeping the lights on and security staff at night would eat up most of the budget on its own.",
+     "I see... Then how about introducing photos of the rare plants in the greenhouse online every day? Our greenhouse is little known for its quality, so it could make people aware of it.",
+     "I've been thinking about that for a while, but I also hear people get satisfied seeing things on screen and stop coming...",
+     "Um, talking with visitors at the counter, I've noticed we get asked about closing time a lot. Guests staying at the hot spring by the station drop in during their free time before dinner, but since we close at five, they say they can't look properly.",
+     "Then teaming up with the inns for a joint discount ticket would be one option.",
+     "That needs talks with them and would take time — it'd never be ready for next year.",
+     "Shouldn't we stay open late after all?",
+     "No — inn dinners start around six, so those guests only need to be able to look until then. So I think extending by just one hour would make a big difference.",
+     "One hour we could manage within the security staff's current hours. I'll rewrite next year's plan along those lines. As for the discount ticket, let's just raise it with them, with the year after next in mind."
+    ],
+    "options": [
+     "Stay open until just before dinner time",
+     "Open until 8 p.m. on Fridays only",
+     "Introduce photos of rare plants online",
+     "Make a joint discount ticket with the inns"
+    ]
+   }
+  },
+  "why": {
+   "zh": "晚开到八点因照明和保安费用被否定；窗口的人说温泉客人六点左右吃晚饭，把五点闭园延长一小时（到晚饭前）就够了，园长说明年的计划按这个方向重写。",
+   "en": "Opening till eight costs too much. The counter clerk says hot-spring guests dine around six, so closing an hour later — just before dinner — is enough; the director will rewrite next year's plan that way."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "这是职员最初的方案，但照明和保安费用太高被否定，最后只延长一个小时。",
+    "en": "The staff member's first idea, rejected because of lighting and security costs; they extend by only one hour."
+   },
+   {
+    "zh": "园长担心人们在网上看过就满足了，反而不来了，没有采用。",
+    "en": "The director worries people would be satisfied online and not come."
+   },
+   {
+    "zh": "优惠券明年来不及，只是为后年先跟对方打个招呼。",
+    "en": "The joint ticket can't be ready next year; they'll only sound out the inns for the year after."
+   }
+  ],
+  "traps": [
+   "twisted",
+   "condition-conflict",
+   "later"
+  ]
+ },
+ {
+  "id": "n1-ck-603",
+  "type": "tougou",
+  "scene": "漆器の工房で、親方と娘、若い弟子の三人が、ホテルからの大きな注文について話しています。",
+  "lines": [
+   [
+    "F",
+    "お父さん、例のホテルの件、来週までに返事をしなきゃいけないんだけど。来年三月の開業に合わせて、客室用のお椀を三百組。うちの今の人数だと、三月までに作れるのは、せいぜいその半分でしょう。"
+   ],
+   [
+    "M1",
+    "無理をして質を落とすくらいなら、断るしかないだろうな。"
+   ],
+   [
+    "F",
+    "でも、これだけの注文、もう二度と来ないかもしれないよ。数を半分に減らしてもらえないか、聞いてみようか。"
+   ],
+   [
+    "M1",
+    "向こうは、全部の部屋で同じ器を使いたいと言ってたんだろう。数を減らしたら、話の意味がなくなる。"
+   ],
+   [
+    "F",
+    "じゃあ、下地を塗るところだけでも、隣町の工房に手伝ってもらうのは？"
+   ],
+   [
+    "M1",
+    "下地は器の寿命を決める一番大事なところだ。よそに任せるわけにはいかん。"
+   ],
+   [
+    "M2",
+    "あの、ちょっと伺いたいんですが、そのホテルって、開業の日に全部の部屋を開けるんでしょうか。大きいホテルだと、少しずつ開けるところもあると聞いたので。"
+   ],
+   [
+    "F",
+    "え、ちょっと待って。打ち合わせのメモ……あ、本当だ。最初は本館だけで、新館は秋に開けるって書いてある。本館は、ちょうど全体の半分の部屋数。"
+   ],
+   [
+    "M2",
+    "それなら、三月までは本館の分だけで、残りは秋までに納めればいいことになりますね。"
+   ],
+   [
+    "M1",
+    "なるほどな。それなら、うちのやり方を変えずに済む。その線で先方に話してみてくれ。"
+   ]
+  ],
+  "question": "工房は、ホテルにどう返事をすることにしましたか。",
+  "spokenOptions": true,
+  "options": [
+   "質を守るために、今回は注文を断る",
+   "注文の数そのものを、半分に減らしてもらう",
+   "下地を塗る作業を、ほかの工房に任せる",
+   "器を納める時期を、二回に分けてもらう"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "漆器作坊里，师傅、他的女儿和年轻的徒弟三个人在商量酒店下的一笔大订单。",
+    "question": "作坊决定怎么答复酒店？",
+    "lines": [
+     "爸，那家酒店的事，下周之前得回复。配合明年三月开业，要三百套客房用的碗。按我们现在的人手，到三月最多也就能做一半吧。",
+     "与其勉强做、降低质量，还不如推掉。",
+     "可是这么大的订单，说不定再也不会有了。要不问问能不能把数量减到一半？",
+     "对方说过所有房间都想用同样的器皿吧。减了数量，这事就没意义了。",
+     "那至少打底漆那一步，请邻镇的作坊帮忙怎么样？",
+     "底漆是决定器皿寿命最关键的一步，不能交给别人。",
+     "那个，我想问一下，那家酒店开业那天是所有房间都开放吗？听说大酒店也有一点点分批开的。",
+     "啊，等一下。开会的记录……啊，真的。上面写着一开始只开主楼，新楼秋天再开。主楼正好是全部房间的一半。",
+     "那样的话，到三月只交主楼的部分，剩下的秋天之前交就行了。",
+     "原来如此。那样就不用改变我们的做法了。就按这个思路去跟对方谈吧。"
+    ],
+    "options": [
+     "为了保证质量，这次拒绝订单",
+     "请对方把订单数量本身减一半",
+     "把打底漆的工作交给别的作坊",
+     "请对方把交货分成两次"
+    ]
+   },
+   "en": {
+    "scene": "At a lacquerware workshop, the master, his daughter and a young apprentice are talking about a large order from a hotel.",
+    "question": "How did the workshop decide to answer the hotel?",
+    "lines": [
+     "Dad, about that hotel — we have to reply by next week. Three hundred sets of bowls for the guest rooms, in time for the opening next March. With the people we have, we can make half that by March at most.",
+     "Rather than force it and lower the quality, we'll just have to turn it down.",
+     "But an order this big might never come again. Shall I ask if they could cut it to half?",
+     "They said they want the same bowls in every room, didn't they? Cutting the number would defeat the purpose.",
+     "Then what about getting the workshop in the next town to help, just with the undercoat?",
+     "The undercoat decides how long a piece lasts — it's the most important part. We can't hand it to anyone else.",
+     "Um, may I ask — will the hotel open all its rooms on opening day? I've heard big hotels sometimes open bit by bit.",
+     "Oh, wait. My notes from the meeting... oh, you're right. It says only the main building opens first, and the new wing opens in autumn. The main building has exactly half the rooms.",
+     "Then we'd only need the main building's share by March, and the rest by autumn.",
+     "I see. Then we won't have to change how we work. Talk to them along those lines."
+    ],
+    "options": [
+     "Turn down the order to protect the quality",
+     "Have them cut the order itself in half",
+     "Have another workshop do the undercoat",
+     "Have them take delivery in two stages"
+    ]
+   }
+  },
+  "why": {
+   "zh": "酒店先只开主楼（一半房间），新楼秋天开，所以三月先交一半、剩下的秋天交，数量不减，也不用外包，师傅同意按这个去谈。",
+   "en": "The hotel opens only the main building (half the rooms) first and the new wing in autumn, so they deliver half by March and the rest by autumn — no cut in number, no outsourcing."
+  },
+  "wrong": [
+   {
+    "zh": "师傅一开始这么想，但发现可以分两次交货后，决定接下订单。",
+    "en": "The master's first thought, but once they can deliver in two stages they take the order."
+   },
+   {
+    "zh": "对方想所有房间用同样的器皿，减少数量没有意义。总数仍是三百套，只是三月先交一半。",
+    "en": "The hotel wants the same bowls in every room; the total stays 300, only half comes first."
+   },
+   {
+    "zh": "师傅说底漆最关键，不能交给别的作坊。",
+    "en": "The master says the undercoat is too important to hand to another workshop."
+   },
+   null
+  ],
+  "traps": [
+   "not-possible",
+   "condition-conflict",
+   "half-right"
+  ]
+ },
+ {
+  "id": "n1-ck-604",
+  "type": "tougou",
+  "scene": "テレビ局で、プロデューサーの女の人と、ディレクターの男の人、取材を担当している若い女の人の三人が、ドキュメンタリー番組について話しています。",
+  "lines": [
+   [
+    "M",
+    "例の棚田の村の番組、やっぱり移住してきた若い夫婦を軸にしたいんですよ。都会から来て米作りを始めたっていうのは、見る人も共感しやすいですし。"
+   ],
+   [
+    "F1",
+    "移住者の話は、ここ何年か、どこの局もやり尽くしてるでしょう。今さら新鮮味はないわね。"
+   ],
+   [
+    "M",
+    "じゃあ、棚田を五十年守ってきた高橋さんはどうですか。あの方の言葉には重みがあります。"
+   ],
+   [
+    "F1",
+    "それは私も考えた。ただ、高橋さん、カメラを向けると急に口が重くなるって、前回の取材で聞いたわよ。一時間の番組を一人で引っ張ってもらうのは、ちょっと酷じゃない？"
+   ],
+   [
+    "F2",
+    "あの、取材していて気になったことがあるんです。村の中学校で、毎年、高橋さんが生徒に田植えから教えてるんですけど、そこだと高橋さん、すごくよく話すんですよ。生徒に聞かれると、昔の苦労とか、棚田をやめようと思った時期のことまで。"
+   ],
+   [
+    "M",
+    "へえ。カメラに向かってじゃなくて、子どもに向かって話すからですかね。"
+   ],
+   [
+    "F2",
+    "ええ。生徒の中には、将来村を出るかどうか、迷っている子もいるんです。"
+   ],
+   [
+    "F1",
+    "面白いじゃない。授業の場面を軸にすれば、高橋さんの言葉も無理なく引き出せるわね。それでいきましょう。"
+   ]
+  ],
+  "question": "番組で、中学校の授業を中心に取り上げることにしたのは、どうしてですか。",
+  "spokenOptions": true,
+  "options": [
+   "移住した夫婦の話より、見る人が共感しやすいから",
+   "口の重い人の言葉も、自然な形で引き出せるから",
+   "村に残ると決めた生徒たちの、思いを伝えられるから",
+   "高橋さんが、カメラの前でもよく話してくれるから"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "电视台里，女制片人、男导演和负责采访的年轻女性三个人在商量一档纪录片节目。",
+    "question": "节目为什么决定以中学的课为中心？",
+    "lines": [
+     "那个梯田村的节目，我还是想以搬来的年轻夫妇为主线。从城里来开始种稻，观众也容易产生共鸣。",
+     "移居者的故事，这几年各家台都拍烂了吧。现在再拍没有新鲜感了。",
+     "那守了梯田五十年的高桥先生怎么样？他的话很有分量。",
+     "这个我也想过。不过上次采访时听说，高桥先生一对着镜头就突然不爱说话了。让他一个人撑一小时的节目，有点难为他吧？",
+     "那个，我采访时注意到一件事。高桥先生每年在村里的中学从插秧开始教学生，在那里他特别能说。学生一问，连以前的辛苦、想放弃梯田的那段时期都会讲。",
+     "哦，是因为不是对着镜头，而是对着孩子说吧。",
+     "对。学生里也有正在犹豫将来要不要离开村子的孩子。",
+     "挺有意思啊。以上课的场面为主线，高桥先生的话也能自然地引出来。就这么定了。"
+    ],
+    "options": [
+     "因为比移居夫妇的故事更容易让观众共鸣",
+     "因为不爱说话的人的话也能自然地引出来",
+     "因为能传达决定留在村里的学生们的想法",
+     "因为高桥先生在镜头前也很能说"
+    ]
+   },
+   "en": {
+    "scene": "At a TV station, a woman producer, a male director and a young woman who does the research are talking about a documentary.",
+    "question": "Why did they decide to centre the programme on the classes at the junior high school?",
+    "lines": [
+     "For that programme on the terraced-rice-field village, I still want to build it around the young couple who moved there. Coming from the city and starting to grow rice — viewers can relate to that easily.",
+     "Every station has done migrant stories to death these past few years. There's nothing fresh about it now.",
+     "Then what about Mr Takahashi, who's kept the terraces going for fifty years? His words carry weight.",
+     "I thought of that too. But I heard on the last shoot that he suddenly clams up when a camera is pointed at him. Making him carry an hour-long programme alone seems a bit cruel, doesn't it?",
+     "Um, something caught my attention while researching. Every year Mr Takahashi teaches the pupils at the village junior high school, starting from rice planting, and there he talks a lot. When pupils ask, he tells them about past hardships, even the time he thought of giving up the terraces.",
+     "Huh. Maybe because he's talking to children, not to a camera.",
+     "Yes. Some of the pupils are also unsure whether to leave the village in the future.",
+     "That's interesting. If we build it around the classes, we can draw out Mr Takahashi's words without forcing it. Let's go with that."
+    ],
+    "options": [
+     "Viewers can relate to it more than to the migrant couple",
+     "It draws out the words of a reticent man naturally",
+     "It conveys the feelings of pupils who decided to stay",
+     "Mr Takahashi talks a lot even in front of the camera"
+    ]
+   }
+  },
+  "why": {
+   "zh": "高桥先生对着镜头不爱说话，但在中学给学生上课时很能说。制片人说以课堂为主线「高橋さんの言葉も無理なく引き出せる」，把高桥先生和课堂两个想法结合起来了。",
+   "en": "Mr Takahashi clams up on camera but talks freely when teaching pupils. The producer says building it around the classes will draw out his words without forcing it — combining the Takahashi idea with the classroom."
+  },
+  "wrong": [
+   {
+    "zh": "「共感しやすい」是导演说移居夫妇时的理由，那个方案因为没有新鲜感被否定了。",
+    "en": "\"Easy to relate to\" was the director's reason for the migrant couple, rejected as stale."
+   },
+   null,
+   {
+    "zh": "学生是在犹豫要不要离开村子，并没有决定留下。",
+    "en": "The pupils are unsure whether to leave; none has decided to stay."
+   },
+   {
+    "zh": "正相反，高桥先生一对着镜头就不爱说话，他能说是在对学生讲的时候。",
+    "en": "The opposite — he clams up on camera; he talks freely only with pupils."
+   }
+  ],
+  "traps": [
+   "twisted",
+   "other-option-attribute",
+   "third-person-decides"
+  ]
+ },
+ {
+  "id": "n1-ck-605",
+  "type": "tougou",
+  "scene": "マンションの管理組合の集まりで、年配の理事長と女の理事、若い男の住民の三人が、自転車置き場について話しています。",
+  "lines": [
+   [
+    "M1",
+    "自転車置き場の件ですが、通路にまではみ出していて、この前の消防の点検でも注意されてしまいました。今日は、総会に出す案を一つ決めたいと思います。"
+   ],
+   [
+    "M2",
+    "あの、置き場を使う人から、利用料を取るのはどうでしょう。一台につき月百円とか。"
+   ],
+   [
+    "F",
+    "お金を取るとなると、反発が大きいんじゃないかしら。今までずっとただだったんですもの。それより、二段式の置き場に替えて、置ける台数を増やすほうが喜ばれますよ。"
+   ],
+   [
+    "M1",
+    "二段式は見積もりを取ったんですが、三百万円近くかかるんです。修繕のための積立金から出すとなると、ほかの工事が遅れてしまいます。"
+   ],
+   [
+    "F",
+    "そうですか……。じゃあ、持ち主のいない古い自転車を処分するとか。"
+   ],
+   [
+    "M1",
+    "それは去年やったんですよ。張り紙をして、名乗り出なかった分は全部片付けました。それでこの状態なんです。"
+   ],
+   [
+    "F",
+    "あら、そうでしたか。じゃあ、裏の駐車場を少し削って、置き場にするのは？"
+   ],
+   [
+    "M2",
+    "駐車場は、空くのを待っている人が何人もいるって聞きましたけど。"
+   ],
+   [
+    "F",
+    "そうなの？……でも、去年片付けたのにまたいっぱいってことは、持ち主はいても、乗らないまま置いている人が多いってことよね。毎朝見ていると、ほこりをかぶったままのも結構あるし。"
+   ],
+   [
+    "M2",
+    "ええ。ただだと、とりあえず置いておこうってなるんですよね。"
+   ],
+   [
+    "F",
+    "確かに、月に百円でもかかるとなれば、乗らない人は手放すかもしれない。さっきの案、案外悪くないわね。"
+   ],
+   [
+    "M1",
+    "集まったお金は、置き場の手入れにも回せますしね。では、それを総会に出しましょう。"
+   ]
+  ],
+  "question": "総会には、どんな案を出すことになりましたか。",
+  "spokenOptions": true,
+  "options": [
+   "二段式の置き場に替えて、置ける台数を増やす",
+   "持ち主のいない自転車を、まとめて片付ける",
+   "置き場を使う人から、毎月少しずつお金を取る",
+   "駐車場の一部を、自転車の置き場に変える"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "公寓业主管理委员会的会上，年长的理事长、一位女理事和一位年轻的男住户三个人在商量自行车停放处的事。",
+    "question": "决定向全体大会提出什么方案？",
+    "lines": [
+     "关于自行车停放处，车都停到通道上了，上次消防检查也被提醒了。今天想定下一个提交给全体大会的方案。",
+     "那个，向使用停车处的人收使用费怎么样？比如每辆每月一百日元。",
+     "要收钱的话，反对的人会很多吧。一直都是免费的嘛。还不如换成双层车架，增加能停的数量，大家会更高兴。",
+     "双层的我拿过报价，要将近三百万日元。从维修公积金里出的话，别的工程就要推迟了。",
+     "这样啊……那处理掉没有主人的旧自行车呢？",
+     "那个去年做过了。贴了告示，没人认领的全都清理了。结果还是这样。",
+     "哎呀，是吗。那把后面的停车场削掉一点，改成自行车停放处呢？",
+     "听说停车场有好几个人在等空位。",
+     "是吗？……不过，去年清理过又停满了，说明有很多人车有主，却一直不骑就放着。我每天早上看，落满灰的车也不少。",
+     "是的。免费的话，大家就想先放着再说。",
+     "确实，哪怕每月要花一百日元，不骑的人可能就会处理掉了。刚才那个方案，其实还不错。",
+     "收来的钱也可以用来维护停放处。那就把这个提交给大会吧。"
+    ],
+    "options": [
+     "换成双层停放架，增加能停的数量",
+     "把没有主人的自行车统一清理掉",
+     "向使用停放处的人每月收少量费用",
+     "把停车场的一部分改成自行车停放处"
+    ]
+   },
+   "en": {
+    "scene": "At a meeting of a condominium residents' association, the elderly chairman, a woman board member and a young male resident are talking about the bicycle parking.",
+    "question": "What proposal did they decide to put to the general meeting?",
+    "lines": [
+     "About the bicycle parking — bikes are spilling into the corridor, and we were warned about it at the last fire inspection. Today I'd like to settle on one proposal for the general meeting.",
+     "Um, how about charging the people who use it? Say a hundred yen a month per bike.",
+     "If we charge money, won't there be a lot of opposition? It's always been free. People would be happier if we switched to two-tier racks and fitted in more bikes.",
+     "I got a quote for two-tier racks — nearly three million yen. If it came out of the repair reserve fund, other work would be delayed.",
+     "I see... Then how about getting rid of old bikes with no owners?",
+     "We did that last year. We put up notices and cleared away every bike nobody claimed. And it's still like this.",
+     "Oh, really? Then what about cutting into the car park at the back a little and using that?",
+     "I heard several people are waiting for a car park space.",
+     "Are they? ...But if it filled up again after last year's clear-out, that means a lot of people own bikes but just leave them there without riding them. When I look each morning, quite a few are covered in dust.",
+     "Yes. When it's free, people think they'll just leave it there for now.",
+     "True — if it cost even a hundred yen a month, people who don't ride might let them go. That earlier idea isn't so bad after all.",
+     "And we could put the money towards maintaining the parking area. Then let's take that to the general meeting."
+    ],
+    "options": [
+     "Switch to two-tier racks to fit in more bikes",
+     "Clear away all ownerless bikes at once",
+     "Charge users a small amount every month",
+     "Turn part of the car park into bicycle parking"
+    ]
+   }
+  },
+  "why": {
+   "zh": "一开始年轻住户提议收费，女理事反对；后来双层车架太贵、清理已做过、停车场有人排队都不行。女理事想到是有主却不骑的车占地方，觉得收费可以让人放手，转而赞成最初的方案。",
+   "en": "The young resident first suggests a fee and the woman objects. Then racks are too expensive, the clear-out was done last year and the car park has a waiting list. She realises unused bikes with owners are the problem and comes round to the first idea."
+  },
+  "wrong": [
+   {
+    "zh": "女理事的提议，但要将近三百万日元，会推迟别的工程。",
+    "en": "The woman's idea, but it costs nearly three million yen and would delay other work."
+   },
+   {
+    "zh": "去年已经清理过了，可还是停满了。",
+    "en": "That was done last year, and it still filled up."
+   },
+   null,
+   {
+    "zh": "停车场有好几个人在等空位，不能减少。",
+    "en": "Several people are waiting for car park spaces, so it can't be reduced."
+   }
+  ],
+  "traps": [
+   "done-already",
+   "condition-conflict",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n1-ck-606",
+  "type": "tougou",
+  "scene": "コーヒー豆の店で、店の人が豆について説明しています。",
+  "lines": [
+   [
+    "F1",
+    "ただいま、こちらの四種類をおすすめしております。一つ目は、エチオピア産の浅煎りです。果物を思わせる華やかな酸味と香りが特徴ですが、ミルクを入れると、せっかくの風味が隠れてしまいますので、ぜひブラックでお楽しみください。二つ目は、深煎りのブレンドです。しっかりした苦みとこくがあって、ミルクに負けませんので、カフェオレにぴったりです。時間がたって冷めても、味が崩れにくいのも特徴です。三つ目は、季節限定の中煎りです。酸味と苦みのバランスがよく、どなたにも飲みやすい味ですが、冷めると酸味が立ちやすいので、いれたてをお楽しみください。来月までの販売です。四つ目は、カフェインを九割以上取り除いた豆です。すっきりした味わいで、夜遅い時間に飲まれる方にも、安心してお飲みいただけます。"
+   ],
+   [
+    "M",
+    "いろいろあるんだね。どれにしようかな。"
+   ],
+   [
+    "F2",
+    "あなた、最近、夜中に原稿を書きながら何杯も飲んでるでしょう。それで寝つきが悪いって言ってたじゃない。"
+   ],
+   [
+    "M",
+    "ああ、そうなんだよ。昼間はほとんど飲む暇がないから、どうしても夜になっちゃうんだ。季節限定っていうのも気になるけど、今回は、ぐっすり眠れるほうにしとくよ。君は？　酸っぱいの、好きだったよね。"
+   ],
+   [
+    "F2",
+    "うん、本当はああいう華やかなのが一番好きなんだけど、私が飲むのは、朝作ってミルクをたっぷり入れて、水筒で会社に持っていく分なの。お昼までちびちび飲むから、そういうのには向かないでしょう。"
+   ],
+   [
+    "M",
+    "じゃあ、今回はそっちに合わせたほうがいいね。"
+   ]
+  ],
+  "options": [
+   "浅煎りの豆",
+   "深煎りのブレンド",
+   "季節限定の豆",
+   "カフェインを抜いた豆"
+  ],
+  "questions": [
+   {
+    "question": "質問1：男の人は、どの豆を買いますか。",
+    "answer": 3,
+    "why": {
+     "zh": "他白天没空，只在深夜写稿时喝好几杯，因此睡不好，所以放弃季节限定，选去掉九成以上咖啡因、「夜遅い時間に」也能放心喝的豆子。",
+     "en": "He only has time to drink late at night while writing and has trouble sleeping, so he skips the seasonal beans and takes the ones with over 90% of the caffeine removed — fine late at night."
+    },
+    "wrong": [
+     {
+      "zh": "浅烘的豆子是女人最喜欢的口味，男人没打算买。",
+      "en": "The light roast is the woman's favourite taste; he doesn't consider it."
+     },
+     {
+      "zh": "深烘拼配适合加牛奶、凉了也不走味，是女人的选择。",
+      "en": "The dark blend suits milk and keeps its taste when cold — the woman's choice."
+     },
+     {
+      "zh": "他说季节限定的也很在意，但这次要选能睡好觉的。",
+      "en": "He's curious about the seasonal beans but wants the one that lets him sleep."
+     },
+     null
+    ]
+   },
+   {
+    "question": "質問2：女の人は、どの豆を買いますか。",
+    "answer": 1,
+    "why": {
+     "zh": "她早上做好咖啡、加大量牛奶装进保温杯带去公司，慢慢喝到中午，所以选「ミルクに負けない」「冷めても味が崩れにくい」的深烘拼配。",
+     "en": "She makes coffee in the morning with lots of milk and sips it from a flask until lunch, so she needs the dark blend that stands up to milk and keeps its taste when cool."
+    },
+    "wrong": [
+     {
+      "zh": "她其实最喜欢浅烘那种华丽的酸味，但加牛奶会掩盖风味，适合黑咖啡，不适合她的喝法。",
+      "en": "She loves the light roast's bright acidity, but milk hides its flavour — it's for black coffee, not her way of drinking."
+     },
+     null,
+     {
+      "zh": "季节限定的豆子凉了酸味会变重，要趁刚冲好喝，不适合她装进保温杯慢慢喝到中午。",
+      "en": "The seasonal beans turn sour as they cool and are best freshly brewed — no good for sipping from a flask until lunch."
+     },
+     {
+      "zh": "去掉咖啡因的豆子是男人的选择，因为他深夜喝。",
+      "en": "The decaf beans are the man's choice because he drinks late at night."
+     }
+    ]
+   }
+  ],
+  "tr": {
+   "zh": {
+    "scene": "咖啡豆店里，店员正在介绍咖啡豆。",
+    "questions": [
+     "问题1：男人买哪种豆子？",
+     "问题2：女人买哪种豆子？"
+    ],
+    "lines": [
+     "现在我们推荐这四种。第一种是埃塞俄比亚产的浅烘豆，特点是让人联想到水果的华丽酸味和香气，但一加牛奶，难得的风味就被盖住了，所以请一定喝黑咖啡。第二种是深烘拼配，苦味和醇厚感都很扎实，不会被牛奶压住，非常适合做咖啡欧蕾。放久了凉了，味道也不容易变，这也是它的特点。第三种是季节限定的中烘豆，酸味和苦味很平衡，谁都容易入口，不过凉了酸味容易变重，请趁刚冲好时品尝。只卖到下个月。第四种是去掉了九成以上咖啡因的豆子，口感清爽，深夜喝的人也可以放心饮用。",
+     "种类真多啊。选哪个呢？",
+     "你最近半夜写稿的时候一喝就是好几杯吧。你不是说因此睡不着吗？",
+     "啊，是啊。白天几乎没空喝，总是拖到晚上。季节限定的我也挺在意，不过这次还是选能睡好觉的吧。你呢？你喜欢酸一点的吧？",
+     "嗯，其实我最喜欢那种华丽的，可我喝的是早上做好、加很多牛奶、装进保温杯带去公司的。要一点一点喝到中午，那种不合适吧。",
+     "那这次还是配合那种喝法比较好。"
+    ],
+    "options": [
+     "浅烘的豆子",
+     "深烘拼配",
+     "季节限定的豆子",
+     "去掉咖啡因的豆子"
+    ]
+   },
+   "en": {
+    "scene": "At a coffee bean shop, a member of staff is describing the beans.",
+    "questions": [
+     "Question 1: Which beans will the man buy?",
+     "Question 2: Which beans will the woman buy?"
+    ],
+    "lines": [
+     "We're currently recommending these four. The first is a light roast from Ethiopia. It has a bright, fruity acidity and aroma, but milk hides that lovely flavour, so please enjoy it black. The second is a dark-roast blend. It has a solid bitterness and body that stand up to milk, so it's perfect for café au lait. Another feature is that its taste holds up even when it cools over time. The third is a seasonal medium roast. Acidity and bitterness are well balanced, so anyone finds it easy to drink, but it turns sour as it cools, so enjoy it freshly brewed. It's on sale until next month. The fourth is beans with over 90 percent of the caffeine removed. It has a clean taste, and those who drink coffee late at night can enjoy it without worry.",
+     "There are lots of kinds. Which shall I get?",
+     "Lately you've been drinking cup after cup in the middle of the night while writing, haven't you? And you said you can't get to sleep because of it.",
+     "Yeah, that's right. I hardly have time to drink any during the day, so it always ends up being at night. The seasonal one appeals too, but this time I'll go for the one that lets me sleep. What about you? You like the acidic ones, don't you?",
+     "Yes, I actually like that bright kind best, but what I drink is what I make in the morning with lots of milk and take to work in a flask. I sip it until lunch, so that kind won't suit it, will it?",
+     "Then you'd better go with what suits that this time."
+    ],
+    "options": [
+     "Light-roast beans",
+     "Dark-roast blend",
+     "Seasonal beans",
+     "Decaffeinated beans"
+    ]
+   }
+  },
+  "traps": [
+   "condition-conflict",
+   "someone-else",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-ck-607",
+  "type": "tougou",
+  "scene": "会社の旅行で、自然公園に来ています。ビジターセンターの係の人が、散策のコースについて説明しています。",
+  "lines": [
+   [
+    "F1",
+    "本日は、四つのコースをご案内しております。一つ目は湿原コースです。木で作られた遊歩道を歩く、段差のない平らなコースで、一周一時間半ほどです。今はちょうど高山植物の花が見ごろで、写真を撮る方に人気ですが、日差しをさえぎるものがありませんので、帽子をお忘れなく。二つ目は尾根コースです。山頂まで往復四時間ほどで、晴れていれば遠くの海まで見渡せます。ただ、午後は霧が出やすいので、十時までには出発してください。三つ目は沢沿いのコースです。森の中を沢に沿って歩くので、一日中日陰になっていて、夏でもひんやりしています。往復二時間ほどですが、ぬれた岩の上を歩くところがありますので、滑りにくい靴が必要です。靴はこちらでお貸ししています。四つ目は野鳥観察のコースです。ガイドがご案内する一時間ほどのコースで、午後二時に出発します。鳥が逃げてしまいますので、歩いている間はおしゃべりを控えていただきます。"
+   ],
+   [
+    "M",
+    "集合は三時だったよね。せっかくだから、山頂から景色を見たかったんだけど。"
+   ],
+   [
+    "F2",
+    "もう十時半だよ。"
+   ],
+   [
+    "M",
+    "だよなあ。それにしても今日は暑いね。暑いのはほんとに苦手でさ。少しでも涼しいところを歩きたいよ。ただ、この靴、底がつるつるなんだよなあ……。まあ、借りればいいか。"
+   ],
+   [
+    "F2",
+    "私は、佐藤さんたちと一緒に回る約束をしてるの。佐藤さん、赤ちゃんを連れてきてて、ベビーカーなんだって。"
+   ],
+   [
+    "M",
+    "へえ。じゃあ、鳥を見るのはどう？　のんびり歩けそうだし。"
+   ],
+   [
+    "F2",
+    "赤ちゃんがいたら、静かにっていうのは無理でしょう。それに、二時まで待ってたら、お昼寝の時間とぶつかっちゃうし。"
+   ]
+  ],
+  "options": [
+   "湿原コース",
+   "尾根コース",
+   "沢沿いのコース",
+   "野鳥観察のコース"
+  ],
+  "questions": [
+   {
+    "question": "質問1：男の人は、どのコースを歩きますか。",
+    "answer": 2,
+    "why": {
+     "zh": "现在已经十点半，山脊路线来不及；他怕热，想走凉快的地方，还说鞋底滑「借りればいい」，对应全天背阴、需要防滑鞋、可以借鞋的沿溪路线。",
+     "en": "It's already 10:30, too late for the ridge. He hates the heat, wants somewhere cool and says he'll borrow shoes for his slippery soles — the shaded streamside course, where non-slip shoes can be borrowed."
+    },
+    "wrong": [
+     {
+      "zh": "湿原路线没有遮挡阳光的地方，他怕热；这是女人选的。",
+      "en": "The wetland has no shade and he hates the heat; it's the woman's choice."
+     },
+     {
+      "zh": "他想从山顶看风景，但必须十点前出发，现在已经十点半了。",
+      "en": "He wanted the summit view, but you must set off by ten and it's already 10:30."
+     },
+     null,
+     {
+      "zh": "观鸟路线他没有提到；他说的借鞋只对沿溪路线有意义。",
+      "en": "He never mentions the birdwatching walk; borrowing shoes only makes sense for the streamside course."
+     }
+    ]
+   },
+   {
+    "question": "質問2：女の人は、どのコースを歩きますか。",
+    "answer": 0,
+    "why": {
+     "zh": "她要和推着婴儿车的佐藤一起走，需要「段差のない平らな」湿原路线；山脊来不及，沿溪要走湿岩石，观鸟要安静而且两点出发会撞上午睡。",
+     "en": "She'll walk with Sato, who has a pushchair, so she needs the flat wetland course with no steps. The ridge is too late, the streamside has wet rocks, and birdwatching needs quiet and leaves at two, clashing with the nap."
+    },
+    "wrong": [
+     null,
+     {
+      "zh": "山脊路线十点前要出发，已经来不及；到山顶的路也推不了婴儿车。",
+      "en": "The ridge needed a start before ten, and a pushchair can't go up to the summit."
+     },
+     {
+      "zh": "沿溪路线要走湿的岩石，婴儿车过不去；这是男人选的。",
+      "en": "The streamside course has wet rocks — no good for a pushchair; it's the man's choice."
+     },
+     {
+      "zh": "男人建议去看鸟，但带着宝宝没法保持安静，而且两点出发会和午睡撞上。",
+      "en": "The man suggests birdwatching, but a baby can't keep quiet and the 2 p.m. start clashes with the nap."
+     }
+    ]
+   }
+  ],
+  "tr": {
+   "zh": {
+    "scene": "公司旅游来到了自然公园。游客中心的工作人员正在介绍散步路线。",
+    "questions": [
+     "问题1：男人走哪条路线？",
+     "问题2：女人走哪条路线？"
+    ],
+    "lines": [
+     "今天为大家介绍四条路线。第一条是湿原路线，走在木头搭的步道上，没有台阶，路很平，一圈大约一个半小时。现在正是高山植物开花的时候，很受拍照的人欢迎，不过没有遮挡阳光的地方，请别忘了带帽子。第二条是山脊路线，到山顶往返大约四个小时，天晴的话能一直望到远处的海。不过下午容易起雾，请在十点之前出发。第三条是沿溪路线，在森林里沿着小溪走，一整天都在树荫下，夏天也很凉爽。往返大约两个小时，不过有些地方要走在湿的岩石上，需要防滑的鞋。我们这里可以借鞋。第四条是观鸟路线，由导游带领，大约一个小时，下午两点出发。为了不把鸟吓跑，走的时候请尽量不要聊天。",
+     "集合是三点吧。难得来一趟，本来想从山顶看看风景的。",
+     "已经十点半了哦。",
+     "是啊。话说今天真热。我真的很怕热。想尽量走凉快的地方。不过我这双鞋鞋底很滑……算了，借一双就行。",
+     "我和佐藤他们约好了一起逛。佐藤带着宝宝来的，说是推着婴儿车。",
+     "哦。那去看鸟怎么样？好像能慢慢走。",
+     "带着宝宝，要安静是不可能的吧。而且等到两点的话，就和宝宝午睡的时间撞上了。"
+    ],
+    "options": [
+     "湿原路线",
+     "山脊路线",
+     "沿溪路线",
+     "观鸟路线"
+    ]
+   },
+   "en": {
+    "scene": "On a company trip to a nature park, a member of staff at the visitor centre is describing the walking courses.",
+    "questions": [
+     "Question 1: Which course will the man walk?",
+     "Question 2: Which course will the woman walk?"
+    ],
+    "lines": [
+     "Today we have four courses. The first is the wetland course: a flat walk with no steps along a wooden boardwalk, about an hour and a half round. The alpine flowers are at their best right now, so it's popular with photographers, but there's nothing to block the sun, so don't forget a hat. The second is the ridge course: about four hours there and back to the summit, and on a clear day you can see all the way to the sea. But fog tends to come in in the afternoon, so please set off by ten. The third is the streamside course. You walk through the forest along a stream, so it's in shade all day and cool even in summer. It's about two hours there and back, but there are places where you walk on wet rocks, so you need non-slip shoes. We lend shoes here. The fourth is the birdwatching course: about an hour with a guide, leaving at 2 p.m. The birds fly off otherwise, so we ask you to keep chatting to a minimum while walking.",
+     "We meet at three, right? Since we're here, I wanted to see the view from the summit.",
+     "It's already half past ten.",
+     "Yeah, I know. It's hot today, though. I really can't stand the heat. I'd like to walk somewhere at least a bit cool. Only, these shoes have really slippery soles... Well, I can borrow some.",
+     "I've promised to go round with Sato and the others. Sato's brought her baby — in a pushchair, apparently.",
+     "Oh. Then how about the birdwatching? It sounds like an easy walk.",
+     "You can't keep quiet with a baby around, can you? And waiting till two would clash with the baby's nap."
+    ],
+    "options": [
+     "Wetland course",
+     "Ridge course",
+     "Streamside course",
+     "Birdwatching course"
+    ]
+   }
+  },
+  "traps": [
+   "condition-conflict",
+   "not-possible",
+   "someone-else"
+  ]
+ },
+ {
+  "id": "n1-ck-608",
+  "type": "tougou",
+  "scene": "ラジオで、市民劇場の来月の公演を紹介しています。",
+  "lines": [
+   [
+    "F1",
+    "市民劇場の来月の公演をご紹介します。まずは能の公演です。始まる前に三十分、専門家による解説がありますので、初めての方でも筋がよく分かります。上演は、休憩なしで二時間ほど続きます。次は「はじめての落語会」。若手の落語家三人による、一時間半ほどの気軽な会です。ただ、落語の面白さは、テンポの速いやりとりにありますので、言葉をしっかり聞き取ることが大切です。三つ目は文楽です。人形と語りで物語を見せる伝統芸能で、今回は名場面だけを集めた、一時間の公演です。座席の前の小さな画面に、日本語と英語の字幕が出ます。最後は歌舞伎です。若手の役者を中心にした華やかな舞台で、上演時間は三時間半と長めですが、途中で二回休憩があります。英語のイヤホンガイドもご用意しています。公演はいずれも、日曜日の午後一時の開演です。"
+   ],
+   [
+    "M",
+    "来月、海外の取引先の人が来るんだけど、日曜の午後しか空いてなくてさ。何か日本らしいものを見せたいんだよね。ただ、三時には空港まで送っていかなきゃいけないんだ。"
+   ],
+   [
+    "F2",
+    "その人、日本語は？"
+   ],
+   [
+    "M",
+    "あいさつぐらいかな。歌舞伎の英語のガイド、よさそうなんだけどなあ。"
+   ],
+   [
+    "F2",
+    "それじゃ時間が全然足りないでしょう。"
+   ],
+   [
+    "M",
+    "だよね。じゃあ、英語が出てくるもう一つのほうにするよ。君はお義父さんを誘うんだっけ。落語、好きだったよね。"
+   ],
+   [
+    "F2",
+    "うん。でも、父、最近耳が遠くなって、テレビの声も聞き返してばかりなの。能は前に一緒に行ったら、途中でずっと寝てたし。それに、腰のこともあるから、ときどき立って体を伸ばさないとつらいみたい。"
+   ],
+   [
+    "M",
+    "人形のほうなら、一時間で終わるよ。"
+   ],
+   [
+    "F2",
+    "父は人形が苦手なのよ。役者の顔が見えないと、気持ちが入らないって。"
+   ]
+  ],
+  "options": [
+   "能",
+   "落語",
+   "文楽",
+   "歌舞伎"
+  ],
+  "questions": [
+   {
+    "question": "質問1：男の人は、どの公演に行きますか。",
+    "answer": 2,
+    "why": {
+     "zh": "客人几乎不会日语，三点前要送去机场。下午一点开演只有一小时、有英日字幕的文乐符合条件，歌舞伎时间不够。",
+     "en": "His guest speaks almost no Japanese and must be at the airport by three. Bunraku — one hour from 1 p.m., with English subtitles — fits; kabuki is far too long."
+    },
+    "wrong": [
+     {
+      "zh": "能的讲解是日语，而且演出两个小时不休息，三点前赶不到机场。",
+      "en": "The Noh talk is in Japanese and the two-hour show wouldn't get him to the airport by three."
+     },
+     {
+      "zh": "落语靠听懂快节奏的对话，客人只会打招呼程度的日语。",
+      "en": "Rakugo depends on catching fast dialogue; his guest only knows greetings."
+     },
+     null,
+     {
+      "zh": "歌舞伎有英语导览，但要三个半小时，时间远远不够。",
+      "en": "Kabuki has an English guide but lasts three and a half hours — far too long."
+     }
+    ]
+   },
+   {
+    "question": "質問2：女の人は、どの公演に行きますか。",
+    "answer": 3,
+    "why": {
+     "zh": "父亲耳背听不清，落语不行；以前看能睡着了；腰不好要不时站起来活动，需要中途有休息；又不喜欢看不见演员脸的人偶戏。只有中途休息两次、由演员表演的歌舞伎合适。",
+     "en": "Her father is hard of hearing (no rakugo), slept through Noh before, needs to stand and stretch now and then (needs breaks) and dislikes puppets. Only kabuki — actors on stage, two intervals — fits."
+    },
+    "wrong": [
+     {
+      "zh": "父亲以前看能时一直在睡，而且两个小时不休息，他腰不好受不了。",
+      "en": "Her father slept through Noh before, and two hours without a break is hard on his back."
+     },
+     {
+      "zh": "父亲喜欢落语，但最近耳背，听不清快节奏的对话。",
+      "en": "He likes rakugo, but he's hard of hearing now and couldn't follow the fast dialogue."
+     },
+     {
+      "zh": "文乐一小时就结束，但父亲不喜欢看不见演员脸的人偶戏。这是男人的选择。",
+      "en": "Bunraku is short, but her father dislikes puppets; it's the man's choice."
+     },
+     null
+    ]
+   }
+  ],
+  "tr": {
+   "zh": {
+    "scene": "广播里正在介绍市民剧场下个月的演出。",
+    "questions": [
+     "问题1：男人去看哪场演出？",
+     "问题2：女人去看哪场演出？"
+    ],
+    "lines": [
+     "为大家介绍市民剧场下个月的演出。首先是能乐演出。开演前有专家三十分钟的讲解，第一次看的人也能很好地理解剧情。演出中间不休息，持续大约两个小时。其次是“第一次的落语会”，由三位年轻落语家表演，大约一个半小时，可以轻松欣赏。不过，落语的乐趣在于节奏很快的对话，所以听清楚每句话很重要。第三是文乐，这是用人偶和说唱来讲述故事的传统艺能，这次是只选名场面的一小时演出。座位前的小屏幕上会显示日语和英语字幕。最后是歌舞伎，以年轻演员为主的华丽舞台，演出时间较长，有三个半小时，不过中间有两次休息。还备有英语耳机导览。所有演出都在星期天下午一点开演。",
+     "下个月有海外客户要来，只有星期天下午有空。我想让他看点有日本特色的东西。不过三点之前得把他送到机场。",
+     "那个人会日语吗？",
+     "大概只会打招呼吧。歌舞伎的英语导览看起来挺不错的……",
+     "那时间根本不够吧。",
+     "也是。那就选另一个有英语的吧。你是要约你爸去吧？他喜欢落语吧。",
+     "嗯。不过我爸最近耳背，看电视也老是要再问一遍。以前一起去看能，他半路一直在睡。而且他腰不好，好像不时站起来伸伸身子才好受。",
+     "人偶那个的话，一个小时就结束了。",
+     "我爸不喜欢人偶。他说看不见演员的脸就入不了戏。"
+    ],
+    "options": [
+     "能",
+     "落语",
+     "文乐",
+     "歌舞伎"
+    ]
+   },
+   "en": {
+    "scene": "A radio programme is introducing next month's performances at the civic theatre.",
+    "questions": [
+     "Question 1: Which performance will the man go to?",
+     "Question 2: Which performance will the woman go to?"
+    ],
+    "lines": [
+     "Here are next month's performances at the civic theatre. First, Noh. Before it starts there's a thirty-minute talk by an expert, so even first-timers can follow the story. The performance runs for about two hours without a break. Next is \"Rakugo for Beginners\": an easygoing show of about an hour and a half by three young storytellers. But the fun of rakugo lies in the fast-paced exchanges, so it's important to catch every word. Third is bunraku, a traditional art that tells stories with puppets and chanting; this time it's a one-hour show of famous scenes only. Japanese and English subtitles appear on a small screen in front of your seat. Last is kabuki: a colourful show centred on young actors. At three and a half hours it's on the long side, but there are two intervals. An English earphone guide is also available. All performances start at 1 p.m. on Sunday.",
+     "A business contact from abroad is coming next month, and he's only free on Sunday afternoon. I'd like to show him something really Japanese. But I have to take him to the airport by three.",
+     "Does he speak Japanese?",
+     "Just greetings, I think. The English guide for the kabuki sounds good, though...",
+     "But there's nowhere near enough time for that.",
+     "True. Then I'll go with the other one that has English. You're inviting your dad, right? He likes rakugo, doesn't he?",
+     "Yes. But lately he's gone hard of hearing — he keeps asking what the TV just said. When I took him to Noh before, he slept through most of it. And with his back, it seems he needs to stand up and stretch now and then.",
+     "The puppet one finishes in an hour.",
+     "Dad doesn't like puppets. He says he can't get into it if he can't see the actors' faces."
+    ],
+    "options": [
+     "Noh",
+     "Rakugo",
+     "Bunraku",
+     "Kabuki"
+    ]
+   }
+  },
+  "traps": [
+   "condition-conflict",
+   "not-possible",
+   "done-already"
+  ]
+ }
+]

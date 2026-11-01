@@ -1,0 +1,245 @@
+[
+ {
+  "id": "n3-m1-ck-301",
+  "type": "gaiyou",
+  "scene": "テレビでアナウンサーが話しています。",
+  "question": "アナウンサーは何について話していますか。",
+  "lines": [
+   [
+    "F",
+    "この町の商店街には、店を閉めてしまったところが少なくありません。そこで、近くの高校の生徒たちが、使われていなかった店を借りて、週末だけのカフェを始めました。メニューを考えるのも、料理を作るのも、全部生徒たちです。初めはお客さんが少なかったそうですが、今では近所のお年寄りが毎週のように集まって、生徒たちとのおしゃべりを楽しんでいます。町の人たちからは、商店街に明るさが戻ってきた、という声も聞かれます。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "閉まった店が多い商店街の問題",
+   "高校生がメニューや料理を考える大変さ",
+   "高校生のカフェが商店街を元気にしたこと",
+   "お年寄りと高校生のおしゃべりの楽しさ"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "电视上播音员在讲话。",
+    "question": "播音员在讲什么？",
+    "lines": [
+     "这个镇的商店街上，关门的店不在少数。于是，附近高中的学生们借下一间空着的店面，开了一家只在周末营业的咖啡馆。想菜单、做菜，全都是学生们自己来。听说一开始客人很少，现在附近的老人们几乎每周都来，和学生们开心地聊天。镇上的人也说，商店街又热闹起来了。"
+    ],
+    "options": [
+     "关门的店很多的商店街的问题",
+     "高中生想菜单、做菜的辛苦",
+     "高中生的咖啡馆让商店街恢复了活力",
+     "老人和高中生聊天的乐趣"
+    ]
+   },
+   "en": {
+    "scene": "An announcer is speaking on television.",
+    "question": "What is the announcer talking about?",
+    "lines": [
+     "Quite a few shops on this town's shopping street have closed down. So students from a nearby high school rented an empty shop and opened a weekend-only café. The students do everything, from planning the menu to cooking. At first there were apparently few customers, but now elderly people from the neighbourhood gather almost every week to enjoy chatting with the students. Townspeople say the shopping street has come back to life."
+    ],
+    "options": [
+     "The problem of a shopping street full of closed shops",
+     "How hard it is for the students to plan menus and cook",
+     "How the students' café livened up the shopping street",
+     "The fun of elderly people chatting with students"
+    ]
+   }
+  },
+  "why": {
+   "zh": "开头的关店只是背景，主体是高中生开的咖啡馆让老人们聚在一起、商店街重新热闹起来。",
+   "en": "The closed shops are only the background; the talk is about the students' café drawing elderly people in and bringing the street back to life."
+  },
+  "wrong": [
+   {
+    "zh": "关店的问题只是开头的背景，后面讲的是怎样让商店街重新热闹起来。",
+    "en": "The closed shops are only the opening background; the talk goes on to how the street came back to life."
+   },
+   {
+    "zh": "菜单和做菜全由学生负责只是一个细节，也没有说辛苦。",
+    "en": "That the students do the menu and cooking is one detail, and nothing is said about it being hard."
+   },
+   null,
+   {
+    "zh": "老人和学生聊天是咖啡馆带来的结果之一，只是一部分内容。",
+    "en": "The elderly chatting with students is one result of the café — only part of the talk."
+   }
+  ],
+  "traps": [
+   "partial-content",
+   "detail-as-topic"
+  ]
+ },
+ {
+  "id": "n3-m1-ck-302",
+  "type": "gaiyou",
+  "scene": "男の人と女の人が、家で仕事をすることについて話しています。",
+  "question": "女の人は家で仕事をすることについてどう思っていますか。",
+  "lines": [
+   [
+    "M",
+    "中村さんの会社、四月から家で仕事ができるようになったんだって？"
+   ],
+   [
+    "F",
+    "うん。週に三日ぐらい、家でやってる。"
+   ],
+   [
+    "M",
+    "どう？"
+   ],
+   [
+    "F",
+    "通勤の時間がないから、朝ゆっくりできるし、すごく楽だよ。仕事にも集中できるし。"
+   ],
+   [
+    "M",
+    "いいなあ。"
+   ],
+   [
+    "F",
+    "ただね、一日中誰とも話さない日もあって、ちょっとさびしいんだ。ちょっとしたことを聞きたいときも、メールだと時間がかかるし。だから、全部家で、っていうのは私には合わないかな。週に何日かは会社に行きたいと思う。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "楽だが、ときどきは会社に行きたい",
+   "楽なので、ずっと家で仕事をしたい",
+   "大変なので、毎日会社に行きたい",
+   "大変だが、会社には行きたくない"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在聊在家工作的事。",
+    "question": "女人对在家工作是怎么想的？",
+    "lines": [
+     "听说中村你们公司从四月开始可以在家上班了？",
+     "嗯，每周大概三天在家做。",
+     "怎么样？",
+     "不用花时间通勤，早上可以从容些，特别轻松。工作也能集中精神。",
+     "真好啊。",
+     "不过啊，有时候一整天都不跟人说话，有点寂寞。想问点小事的时候，用邮件也很费时间。所以全部在家做的话，我觉得不太适合我。我还是想每周去几天公司。"
+    ],
+    "options": [
+     "很轻松，但想偶尔去公司",
+     "很轻松，所以想一直在家工作",
+     "很辛苦，所以想每天去公司",
+     "很辛苦，但不想去公司"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking about working from home.",
+    "question": "What does the woman think about working from home?",
+    "lines": [
+     "I hear that since April your company lets you work from home?",
+     "Yes, I do about three days a week at home.",
+     "How is it?",
+     "There's no commute, so I can take my time in the morning — it's really easy. And I can concentrate on my work.",
+     "Lucky you.",
+     "The thing is, some days I don't talk to anyone all day, and it gets a bit lonely. And when I want to ask something small, email takes ages. So doing it all from home doesn't really suit me. I'd like to go into the office a few days a week."
+    ],
+    "options": [
+     "It's easy, but she wants to go in sometimes",
+     "It's easy, so she wants to work from home always",
+     "It's hard, so she wants to go in every day",
+     "It's hard, but she doesn't want to go in"
+    ]
+   }
+  },
+  "why": {
+   "zh": "她说在家工作「すごく楽」，但一个人有点寂寞、问事情费时间，所以「週に何日かは会社に行きたい」。",
+   "en": "She finds it 「すごく楽」, but it's lonely and slow to ask things, so 「週に何日かは会社に行きたい」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "她说「全部家で」不适合自己，不想一直在家。",
+    "en": "She says doing it 「全部家で」 doesn't suit her."
+   },
+   {
+    "zh": "她觉得在家很轻松，也只是想每周去几天，不是每天。",
+    "en": "She finds home working easy and wants only a few office days, not every day."
+   },
+   {
+    "zh": "她觉得轻松，而且想去公司，两点都反了。",
+    "en": "She finds it easy and does want to go in — both halves reversed."
+   }
+  ],
+  "traps": [
+   "attitude-combo"
+  ]
+ },
+ {
+  "id": "n3-m1-ck-303",
+  "type": "gaiyou",
+  "scene": "テレビで、植物を育てる仕事をしている人が話しています。",
+  "question": "この人が一番言いたいことは何ですか。",
+  "lines": [
+   [
+    "M",
+    "部屋で植物を育てている方から、よく、すぐに枯れてしまう、という相談を受けます。日当たりが悪いからだと考える方が多いんですが、実は、一番多い原因は水のやりすぎなんです。かわいいので、毎日でも水をあげたくなりますよね。でも、土がいつもぬれていると、根が弱ってしまいます。土の表面が乾いているのを指で確かめてから、たっぷりあげる。これだけで、植物はずいぶん元気になりますよ。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "植物は日の当たる場所に置くといい",
+   "植物について相談する人が多い",
+   "植物には毎日水をあげたほうがいい",
+   "植物の水は土が乾いてからあげるといい"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "电视上，一位从事植物栽培工作的人在讲话。",
+    "question": "这个人最想说的是什么？",
+    "lines": [
+     "在屋里养植物的人常来找我商量，说植物很快就枯了。很多人以为是因为光照不好，其实最常见的原因是浇水太多。植物很可爱，就会想每天都浇水对吧。可是土一直是湿的，根就会变弱。先用手指确认土的表面干了，再浇透。光是这样，植物就会精神很多。"
+    ],
+    "options": [
+     "植物最好放在有阳光的地方",
+     "来咨询植物问题的人很多",
+     "最好每天给植物浇水",
+     "植物等土干了再浇水比较好"
+    ]
+   },
+   "en": {
+    "scene": "On television, a person who grows plants for a living is speaking.",
+    "question": "What is this person's main point?",
+    "lines": [
+     "People who keep plants indoors often come to me saying their plants wilt and die quickly. Many think it's because of poor sunlight, but in fact the most common cause is overwatering. They're so lovely you feel like watering them every day. But if the soil is always wet, the roots get weak. Check with your finger that the surface of the soil is dry, and then water generously. That alone makes plants much healthier."
+    ],
+    "options": [
+     "Put plants somewhere sunny",
+     "Many people ask for advice about plants",
+     "Water plants every day",
+     "Water plants once the soil is dry"
+    ]
+   }
+  },
+  "why": {
+   "zh": "他否定了光照的说法，指出原因是浇水太多，最后建议确认土干了再浇透：重点是土干了再浇水。",
+   "en": "He rejects the sunlight idea, names overwatering as the cause, and ends with 'check the soil is dry, then water' — that's his point."
+  },
+  "wrong": [
+   {
+    "zh": "很多人以为是光照问题，但他说「実は、一番多い原因は水のやりすぎ」。",
+    "en": "Many blame sunlight, but he says 「実は、一番多い原因は水のやりすぎ」."
+   },
+   {
+    "zh": "很多人来咨询只是开头引出话题，不是他想说的重点。",
+    "en": "That many people ask him is just how he opens the topic, not his point."
+   },
+   {
+    "zh": "每天浇水正是他说的错误做法。",
+    "en": "Watering every day is exactly the mistake he describes."
+   },
+   null
+  ],
+  "traps": [
+   "denied-guess",
+   "detail-as-topic",
+   "twisted"
+  ]
+ }
+]

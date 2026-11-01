@@ -26,3 +26,12 @@ new_sqlite_classes = ["Quota"]
 
 # Secrets (set once, never committed):
 #   npx wrangler secret put IP_SALT      # any random string
+
+# Reader feedback (POST /feedback). Created 2026-10-28 with:
+#   npx wrangler d1 create jpnotes-feedback
+#   npx wrangler d1 migrations apply jpnotes-feedback --remote
+[[d1_databases]]
+binding = "FEEDBACK"
+database_name = "jpnotes-feedback"
+database_id = "fb4067ba-3c82-4014-bf38-3afb8fc2e6df"
+migrations_dir = "migrations"

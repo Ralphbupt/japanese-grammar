@@ -1,0 +1,586 @@
+[
+ {
+  "id": "n2-m1-ck-201",
+  "type": "point",
+  "scene": "男の人と女の人が話しています。",
+  "question": "女の人が髪を短くした一番の理由は何ですか。",
+  "lines": [
+   [
+    "M",
+    "あれ、髪、ずいぶん短くしたね。美容院ですすめられたの？"
+   ],
+   [
+    "F",
+    "ううん、あそこはいつも、長いほうが似合うって言うんだよ。今回もちょっと止められたくらい。"
+   ],
+   [
+    "M",
+    "へえ。じゃあ、これから暑くなるし？"
+   ],
+   [
+    "F",
+    "まあ、それもなくはないけど……。先月から、仕事の帰りにプールに通い始めたの、言ったっけ？　週に三回も行ってると、長いと乾かすだけで三十分はかかっちゃって。帰ってからも何もできないんだよね。"
+   ],
+   [
+    "M",
+    "ああ、そういうことか。会社で何か言われたのかと思ったよ。"
+   ],
+   [
+    "F",
+    "まさか。うちの会社、髪形なんて誰も気にしないもん。"
+   ]
+  ],
+  "options": [
+   "暑くなってきたから",
+   "会社で注意されたから",
+   "泳ぎに行き始めたから",
+   "美容院にすすめられたから"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "女人把头发剪短的最主要原因是什么？",
+    "lines": [
+     "咦，头发剪短了好多啊。是美发店推荐的？",
+     "不是，那家店总说我留长发好看。这次还差点被劝住呢。",
+     "哦。那是因为接下来要热了？",
+     "嗯，也不是没有那个原因……我上个月开始下班后去游泳池，跟你说过吗？一周去三次的话，头发长光吹干就要三十分钟。回家以后什么都干不了。",
+     "啊，原来是这样。我还以为公司里有人说了什么呢。",
+     "怎么可能。我们公司谁都不在乎发型。"
+    ],
+    "options": [
+     "因为天热起来了",
+     "因为在公司被说了",
+     "因为开始去游泳了",
+     "因为美发店推荐"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "What is the main reason the woman cut her hair short?",
+    "lines": [
+     "Oh, you've cut your hair really short. Did the hairdresser talk you into it?",
+     "No, they always say long hair suits me. They even tried to talk me out of it this time.",
+     "Huh. Then because it's going to get hot?",
+     "Well, that's not nothing... Did I tell you I started going to the pool after work last month? Going three times a week, with long hair it took half an hour just to dry it. I couldn't get anything done after I got home.",
+     "Ah, that's it. I thought someone at work had said something.",
+     "No way. Nobody at my company cares about hairstyles."
+    ],
+    "options": [
+     "It's getting hot",
+     "She was told off at work",
+     "She started going swimming",
+     "The hairdresser recommended it"
+    ]
+   }
+  },
+  "why": {
+   "zh": "天热只是「それもなくはない」；她真正讲的是开始去游泳，头发长吹干要三十分钟。所以最主要的原因是开始游泳。",
+   "en": "Heat is only a minor factor (「それもなくはない」); what she dwells on is that she started swimming and long hair took half an hour to dry."
+  },
+  "wrong": [
+   {
+    "zh": "「それもなくはない」只是次要的理由，不是最主要的。",
+    "en": "「それもなくはない」 makes the heat a minor factor, not the main one."
+   },
+   {
+    "zh": "公司「髪形なんて誰も気にしない」。",
+    "en": "Nobody at her company cares about hairstyles."
+   },
+   null,
+   {
+    "zh": "美发店反而劝她留长发。",
+    "en": "The hairdresser actually prefers her with long hair."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-202",
+  "type": "point",
+  "scene": "美術館で、ボランティアガイドの女の人と、新しく入った男の人が話しています。",
+  "question": "女の人は、案内するとき何が一番大切だと言っていますか。",
+  "lines": [
+   [
+    "M",
+    "来週から案内に出ることになったので、今、作品のことを詳しく調べてるんです。質問されて答えられなかったら困りますし。"
+   ],
+   [
+    "F",
+    "熱心ですね。でも、わからない質問は、あとで調べてお知らせします、で構わないんですよ。"
+   ],
+   [
+    "M",
+    "そうなんですか。回る順番は、この案内図のとおりですよね。"
+   ],
+   [
+    "F",
+    "一応はね。混んでいたら、入れ替えてもいいですよ。……私が最初のころ失敗したのはね、覚えた説明を全部言おうとしたことなんです。途中でお客さんがすっかり疲れた顔をしてたのに、気がつかなくて。あとで、長すぎたって言われちゃいました。"
+   ],
+   [
+    "M",
+    "ああ……。"
+   ],
+   [
+    "F",
+    "それからは、話しながら、いつもお客さんの顔を見るようにしているの。じっと絵を見ている人がいたら少し待つし、疲れていそうなら短くして次に行く。調べたことを全部話せなくても、それでいいんです。"
+   ]
+  ],
+  "options": [
+   "客の様子に合わせて話すこと",
+   "作品について詳しく調べること",
+   "客の質問にすぐに答えること",
+   "案内図の順番どおりに回ること"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "美术馆里，一位女志愿讲解员和一位新来的男人在说话。",
+    "question": "女人说讲解时什么最重要？",
+    "lines": [
+     "下周开始我要去讲解了，所以现在正在仔细查作品的资料。被问到答不上来就糟了。",
+     "真用心啊。不过，答不上来的问题，说一句“之后查好再告诉您”也没关系。",
+     "是吗。参观的顺序是按这张导览图来的吧？",
+     "大致是。人多的话调换顺序也行。……我刚开始的时候失败的地方，就是想把记住的说明全讲完。中途客人已经一脸疲惫了，我却没注意到。后来被说讲得太长了。",
+     "啊……",
+     "从那以后，我讲的时候总是看着客人的脸。有人盯着画看就稍微等一等，看起来累了就讲短一点去下一个。查到的东西讲不完也没关系。"
+    ],
+    "options": [
+     "根据客人的状态来讲",
+     "仔细查作品的资料",
+     "马上回答客人的问题",
+     "按导览图的顺序参观"
+    ]
+   },
+   "en": {
+    "scene": "At an art museum, a female volunteer guide and a man who has just joined are talking.",
+    "question": "What does the woman say matters most when guiding visitors?",
+    "lines": [
+     "I start guiding next week, so I'm reading up on the works in detail. It'd be awful to be asked something I can't answer.",
+     "You're keen. But for questions you can't answer, it's fine to say you'll look it up and let them know later.",
+     "Really? And the route follows this guide map, right?",
+     "Roughly. If it's crowded you can switch things around. ... Where I went wrong at first was trying to say everything I'd memorised. Halfway through the visitors looked completely worn out, and I didn't notice. Afterwards they told me it was too long.",
+     "Oh...",
+     "Since then, I always watch the visitors' faces as I talk. If someone's gazing at a painting I wait a little; if they look tired I keep it short and move on. It's fine if you don't get to say everything you looked up."
+    ],
+    "options": [
+     "Adjusting what you say to the visitors",
+     "Researching the works in detail",
+     "Answering visitors' questions at once",
+     "Following the order on the guide map"
+    ]
+   }
+  },
+  "why": {
+   "zh": "她用自己失败的经历说明：要一直看客人的脸，客人看得入神就等，累了就缩短——也就是根据客人的状态来讲。",
+   "en": "Her own early mistake makes the point: watch the visitors' faces, wait if they're absorbed, cut it short if they're tired — adapt to them."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "查资料他已经在做，她说查到的「全部話せなくても、それでいい」。",
+    "en": "He's already researching, and she says it's fine not to use it all."
+   },
+   {
+    "zh": "答不上来的可以「あとで調べてお知らせします」，不用马上回答。",
+    "en": "He can look things up and answer later."
+   },
+   {
+    "zh": "顺序「入れ替えてもいい」。",
+    "en": "The order can be switched."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-203",
+  "type": "point",
+  "scene": "男の人の留守番電話に、マンションの管理会社からメッセージが入っています。",
+  "question": "管理会社の人は何のために電話をしましたか。",
+  "lines": [
+   [
+    "F",
+    "もしもし、ひまわりハウス管理センターの木村です。三百五号室の原田様に、来週の水道管の点検についてご連絡いたしました。"
+   ],
+   [
+    "F",
+    "点検の日は、お知らせのとおり来週の木曜日で、変更はございません。点検中の一時間ほどは、水が出なくなります。原田様のお部屋では、台所の下の水道管を見せていただく必要があるんですが、その時間、お留守のようでしたら、こちらで鍵をお預かりして、係の者がお部屋に入らせていただいてもよろしいでしょうか。"
+   ],
+   [
+    "F",
+    "お手数ですが、それでよろしいかどうか、今週中にお電話でお返事をお願いいたします。"
+   ]
+  ],
+  "options": [
+   "点検の日が変わったと知らせるため",
+   "水が出ない時間を知らせるため",
+   "台所の水道管を直してもらうため",
+   "留守中に部屋に入っていいか聞くため"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "男人的语音信箱里有一条公寓管理公司的留言。",
+    "question": "管理公司的人打电话是为了什么？",
+    "lines": [
+     "喂，我是向日葵公寓管理中心的木村。关于下周的水管检查，联系一下305号房的原田先生。",
+     "检查日期如通知所说是下周四，没有变更。检查期间约一个小时停水。原田先生的房间需要看一下厨房下面的水管，那个时间如果您不在家，可以由我们保管钥匙，让工作人员进房间吗？",
+     "麻烦您在本周之内打电话答复是否可以。"
+    ],
+    "options": [
+     "为了通知检查日期改了",
+     "为了通知停水的时间",
+     "为了让他修厨房的水管",
+     "为了问不在家时能否进房间"
+    ]
+   },
+   "en": {
+    "scene": "There's a message from the building management company on a man's voicemail.",
+    "question": "Why did the person from the management company call?",
+    "lines": [
+     "Hello, this is Kimura from the Himawari House management office, calling Mr Harada in room 305 about next week's water pipe inspection.",
+     "The inspection is next Thursday as announced — no change. The water will be off for about an hour during it. We'll need to see the pipe under your kitchen sink, Mr Harada, so if you're out at that time, may we hold your key and have our staff enter the flat?",
+     "We'd be grateful if you could call us this week to let us know whether that's all right."
+    ],
+    "options": [
+     "To say the inspection date has changed",
+     "To tell him when the water will be off",
+     "To have him fix the kitchen pipe",
+     "To ask if staff may enter while he's out"
+    ]
+   }
+  },
+  "why": {
+   "zh": "她问「お留守のようでしたら…係の者がお部屋に入らせていただいてもよろしいでしょうか」，并请他本周内答复，所以打电话是为了确认能否进房间。",
+   "en": "She asks 「お留守のようでしたら…お部屋に入らせていただいてもよろしいでしょうか」 and wants an answer this week — the call is to get permission to enter."
+  },
+  "wrong": [
+   {
+    "zh": "日期是下周四，「変更はございません」。",
+    "en": "The date is unchanged."
+   },
+   {
+    "zh": "停水一小时是附带说明，她要的是关于进房间的答复。",
+    "en": "The water cut-off is extra information; what she needs is his answer about entering."
+   },
+   {
+    "zh": "厨房下的水管是工作人员要「見せていただく」检查的，不是让他修。",
+    "en": "Staff need to look at the kitchen pipe; he isn't asked to fix it."
+   },
+   null
+  ],
+  "traps": [
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-204",
+  "type": "point",
+  "scene": "ラジオで、アナウンサーが写真コンテストの審査員にインタビューしています。",
+  "question": "審査員は、一位の写真のどこが一番よかったと言っていますか。",
+  "lines": [
+   [
+    "F",
+    "今年の一位は、雨の商店街を写した一枚でしたね。審査はすぐに決まったんですか。"
+   ],
+   [
+    "M",
+    "ええ、ほぼ全員一致でした。手前で傘をさして急いでいる親子がいるでしょう。雨の中なのに、二人とも笑っている。あれで、ただの風景じゃなくて、その町の暮らしが見えてくるんです。審査員はみんな、まずあそこに目が行きました。"
+   ],
+   [
+    "F",
+    "色もとてもきれいだと、話題になっていますね。"
+   ],
+   [
+    "M",
+    "ぬれた道に店の明かりが映って、確かにきれいです。ただ、そういう写真は、ほかにもかなり応募がありましたから。"
+   ],
+   [
+    "F",
+    "撮ったのは、夕方のほんの数分だったそうですね。"
+   ],
+   [
+    "M",
+    "そうらしいですね。運もあったんでしょう。構図は、正直に言うと少し左に寄りすぎていて、そこは惜しかったんですが。"
+   ]
+  ],
+  "options": [
+   "店の明かりの色",
+   "写っている人の表情",
+   "写真を撮った時間",
+   "全体の構図"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "广播里，主持人在采访一位摄影比赛的评委。",
+    "question": "评委说第一名的照片最好的地方是什么？",
+    "lines": [
+     "今年的第一名是一张拍雨中商店街的照片。评审是很快就定下来的吗？",
+     "是的，几乎全体一致。前面有一对撑着伞匆匆赶路的亲子吧。下着雨，两个人却都在笑。正因为这个，它不只是风景，还让人看到了那个镇上的生活。评委们第一眼看的都是那里。",
+     "大家也都在说颜色很漂亮。",
+     "店里的灯光映在湿漉漉的路上，确实漂亮。不过那样的照片，投稿里还有不少。",
+     "听说是在傍晚短短的几分钟里拍的。",
+     "好像是。也有运气的成分吧。构图说实话有点太偏左了，那里有点可惜。"
+    ],
+    "options": [
+     "店里灯光的颜色",
+     "照片里人物的表情",
+     "拍照片的时间",
+     "整体的构图"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, an announcer is interviewing a judge from a photo contest.",
+    "question": "What does the judge say was best about the winning photo?",
+    "lines": [
+     "This year's winner was a shot of a shopping street in the rain. Was it an easy decision?",
+     "Yes, it was almost unanimous. There's a parent and child hurrying under an umbrella in the foreground, right? They're both smiling, even in the rain. That turns it from a mere landscape into a glimpse of the town's life. That's where every judge's eye went first.",
+     "People are also talking about how beautiful the colours are.",
+     "The shop lights reflected on the wet road — it's certainly lovely. But we had quite a few entries like that.",
+     "I hear it was taken in just a few minutes in the evening.",
+     "So I hear. There was probably some luck involved. To be honest the composition leans a little too far left, which was a pity."
+    ],
+    "options": [
+     "The colours of the shop lights",
+     "The expressions of the people in it",
+     "The time it was taken",
+     "The overall composition"
+    ]
+   }
+  },
+  "why": {
+   "zh": "评委一开始就说，雨中两人都在笑，让人看到镇上的生活，「審査員はみんな、まずあそこに目が行きました」。后面谈到的颜色、时间、构图都不是最好的地方。",
+   "en": "Right at the start the judge says the two smiling in the rain show the town's life and caught every judge's eye; colour, timing and composition come up later, but none is the highlight."
+  },
+  "wrong": [
+   {
+    "zh": "颜色漂亮，但那样的照片「ほかにもかなり応募がありました」。",
+    "en": "Lovely colours, but many entries had them."
+   },
+   null,
+   {
+    "zh": "拍摄时间他只说「運もあった」。",
+    "en": "On the timing he only says luck played a part."
+   },
+   {
+    "zh": "构图「左に寄りすぎていて」，是可惜的地方。",
+    "en": "The composition leans too far left — a weak point."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-205",
+  "type": "point",
+  "scene": "駅で、アナウンスが流れています。",
+  "question": "みどり線が遅れているのはどうしてですか。",
+  "lines": [
+   [
+    "F",
+    "みどり線をご利用のお客様にお知らせいたします。ただいま、みどり線は、上り、下りとも十五分ほど遅れて運転しております。"
+   ],
+   [
+    "F",
+    "先ほど、ひがし台駅で電車のドアが閉まらなくなるトラブルがありましたが、こちらはすでに直っております。また、海沿いを走るさくら線は、強い風のため運転を見合わせておりますが、みどり線への影響はございません。本日は中央公園で音楽祭が開かれておりまして、みどり線をご利用のお客様が大変多くなっております。そのため、各駅での乗り降りに、時間がかかっております。"
+   ],
+   [
+    "F",
+    "なお、今夜は線路の点検のため、最終電車の時刻が早まります。お急ぎのところ大変ご迷惑をおかけいたしますが、ご理解とご協力をお願いいたします。"
+   ]
+  ],
+  "options": [
+   "強い風が吹いているから",
+   "電車のドアが故障したから",
+   "線路の点検をしているから",
+   "いつもより乗る客が多いから"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "车站里正在广播。",
+    "question": "绿线为什么晚点？",
+    "lines": [
+     "各位乘坐绿线的乘客请注意。目前绿线上行、下行均晚点约十五分钟运行。",
+     "刚才在东台站发生了电车门关不上的故障，现已修好。另外，沿海运行的樱花线因大风暂停运行，但对绿线没有影响。今天中央公园举办音乐节，乘坐绿线的乘客非常多。因此各站上下车都很花时间。",
+     "另外，今晚因轨道检查，末班车时间提前。给赶时间的各位带来不便，深表歉意，敬请理解与配合。"
+    ],
+    "options": [
+     "因为在刮大风",
+     "因为电车的门坏了",
+     "因为在检查轨道",
+     "因为乘客比平时多"
+    ]
+   },
+   "en": {
+    "scene": "An announcement is playing at a station.",
+    "question": "Why is the Midori Line running late?",
+    "lines": [
+     "Attention, Midori Line passengers. Midori Line trains in both directions are currently running about fifteen minutes late.",
+     "Earlier there was a problem at Higashidai Station with a train's doors not closing, but that has already been fixed. The Sakura Line, which runs along the coast, is suspended because of strong winds, but this does not affect the Midori Line. There is a music festival in Central Park today, and a great many passengers are using the Midori Line. As a result, getting on and off at each station is taking time.",
+     "Also, because of track inspections tonight, the last train will leave earlier. We apologise for the inconvenience and thank you for your understanding."
+    ],
+    "options": [
+     "Strong winds are blowing",
+     "A train's doors broke down",
+     "The track is being inspected",
+     "There are more passengers than usual"
+    ]
+   }
+  },
+  "why": {
+   "zh": "广播说因为音乐节，绿线乘客「大変多くなっております」，「そのため」上下车费时间，所以晚点。",
+   "en": "The announcement says the delay is because the music festival has brought a great many passengers, so boarding takes longer."
+  },
+  "wrong": [
+   {
+    "zh": "大风让樱花线停运，但「みどり線への影響はございません」。",
+    "en": "The wind stopped the Sakura Line, which has no effect on the Midori Line."
+   },
+   {
+    "zh": "门的故障「すでに直っております」。",
+    "en": "The door problem has already been fixed."
+   },
+   {
+    "zh": "轨道检查是今晚的事，影响的是末班车时间。",
+    "en": "The track inspection is tonight and only affects the last train."
+   },
+   null
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "other-option-attribute"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-206",
+  "type": "point",
+  "scene": "会社で男の人と女の人が、取引先を訪問する日について話しています。",
+  "question": "二人は何曜日に取引先を訪問しますか。",
+  "lines": [
+   [
+    "M",
+    "東山商事への訪問、来週のいつにしようか。月曜日はどう？"
+   ],
+   [
+    "F",
+    "月曜日は、向こうの担当の方が一日中会議だって、この前おっしゃってましたよ。"
+   ],
+   [
+    "M",
+    "そっか。じゃあ火曜日は？"
+   ],
+   [
+    "F",
+    "火曜日から水曜日まで、私、大阪に出張なんです。戻るのは水曜日の夜です。"
+   ],
+   [
+    "M",
+    "となると、木曜日か金曜日か。僕、木曜日は午後から研修が入ってるんだよな。"
+   ],
+   [
+    "F",
+    "金曜日なら、二人とも空いてますね。"
+   ],
+   [
+    "M",
+    "うーん、でも金曜日は、先方が四時までしかいられないって言ってたから、ゆっくり話せないかもしれないなあ。今回は新しい見積もりの説明もあるし。"
+   ],
+   [
+    "F",
+    "その研修って、ずらせないんですか。"
+   ],
+   [
+    "M",
+    "あ、たしか同じ研修が再来週にもあったはずだ。そっちに変えてもらうよ。"
+   ],
+   [
+    "F",
+    "じゃあ、その日の午後に伺うって、先方に連絡しておきますね。"
+   ]
+  ],
+  "options": [
+   "月曜日",
+   "火曜日",
+   "木曜日",
+   "金曜日"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个男人和一个女人在商量拜访客户的日子。",
+    "question": "两个人星期几去拜访客户？",
+    "lines": [
+     "去东山商事拜访，定在下周哪天好呢？星期一怎么样？",
+     "星期一的话，对方负责人上次说一整天都在开会。",
+     "这样啊。那星期二呢？",
+     "星期二到星期三我去大阪出差。星期三晚上才回来。",
+     "这么说，就是星期四或星期五了。我星期四下午有培训。",
+     "星期五的话，我们俩都有空。",
+     "嗯，可是星期五对方说只能待到四点，可能没法好好谈。这次还要讲新的报价。",
+     "那个培训不能改期吗？",
+     "啊，同样的培训下下周好像也有。我改到那边去。",
+     "那我跟对方说，我们那天下午过去拜访。"
+    ],
+    "options": [
+     "星期一",
+     "星期二",
+     "星期四",
+     "星期五"
+    ]
+   },
+   "en": {
+    "scene": "At a company, a man and a woman are discussing which day to visit a client.",
+    "question": "On which day will they visit the client?",
+    "lines": [
+     "When next week should we visit Higashiyama Trading? How about Monday?",
+     "On Monday, their contact said the other day that he's in meetings all day.",
+     "Right. Then Tuesday?",
+     "I'm on a business trip to Osaka from Tuesday to Wednesday. I'm back Wednesday night.",
+     "So that leaves Thursday or Friday. I've got training on Thursday afternoon.",
+     "On Friday we're both free.",
+     "Hmm, but on Friday they said they can only stay until four, so we might not be able to talk properly. This time we also have to explain the new quote.",
+     "Can't you move that training?",
+     "Oh, I think the same training runs the week after next as well. I'll get it switched to that.",
+     "Then I'll let them know we'll come by that afternoon."
+    ],
+    "options": [
+     "Monday",
+     "Tuesday",
+     "Thursday",
+     "Friday"
+    ]
+   }
+  },
+  "why": {
+   "zh": "星期五对方只能到四点，谈不充分；男人把星期四下午的培训改到下下周，所以定在星期四下午。",
+   "en": "Friday is too short because the client leaves at four; he moves his Thursday afternoon training to the week after next, so it's Thursday afternoon."
+  },
+  "wrong": [
+   {
+    "zh": "星期一对方负责人一整天开会。",
+    "en": "On Monday their contact is in meetings all day."
+   },
+   {
+    "zh": "星期二女人去大阪出差。",
+    "en": "On Tuesday the woman is on a trip to Osaka."
+   },
+   null,
+   {
+    "zh": "两人星期五有空，但对方只能待到四点，「ゆっくり話せないかもしれない」，所以换成了星期四。",
+    "en": "They're free on Friday, but the client can only stay until four, so they go with Thursday instead."
+   }
+  ],
+  "traps": [
+   "condition-conflict"
+  ]
+ }
+]

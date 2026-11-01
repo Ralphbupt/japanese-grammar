@@ -18,7 +18,15 @@
 (function () {
   'use strict';
   var article = document.querySelector('article.lesson');
-  if (!article || !window.fetch || !window.ReadableStream) return;
+  // Practice / mock test pages: no lesson; the context is the question being
+  // explained, set by quiz.js through window.jpAI.explain() after an answer.
+  var quizApp = document.getElementById('quiz-app');
+  var QUIZ = !article && !!quizApp && quizApp.getAttribute('data-mode') !== 'cards';
+  // Every other page (home, overviews, hubs, flashcards): a general tutor with no page context.
+  var GENERAL = !article && !QUIZ;
+  if (!window.fetch || !window.ReadableStream) return;
+  if (!article) article = document.createElement('article');
+  document.body.classList.add('has-ai');
 
   var CFG_KEY = 'jp_ai_cfg';          // v2: { v, active, profiles: { provider: { base, key, model } }, effort, session }
   var HIST_KEY = 'jp_ai_hist:' + location.pathname.replace(/^\/zh\//, '/');  // /zh/ copy shares the lesson's history
@@ -46,7 +54,7 @@
     openai: { keyUrl: 'https://platform.openai.com/api-keys', group: 'intl', name: 'OpenAI (GPT)', kind: 'openai', needsKey: true,
       base: 'https://api.openai.com/v1', model: 'gpt-5.6', models: ['gpt-6-astra', 'gpt-5.6', 'gpt-5.5', 'gpt-5.6-terra', 'gpt-5.4', 'gpt-5.4-mini', 'gpt-5.6-luna'],
       hintZh: '在 platform.openai.com 创建 API key。', hintEn: 'Create an API key at platform.openai.com.' },
-    gemini: { keyUrl: 'https://aistudio.google.com/apikey', freeZh: 'Flash 模型有免费额度，Google 账号即可', freeEn: 'Flash models are free to a daily limit; just a Google account', group: 'intl', name: 'Google Gemini', kind: 'openai', needsKey: true,
+    gemini: { keyUrl: 'https://aistudio.google.com/apikey', freeZh: 'Flash 模型有免费额度，Google 账号即可（中国大陆需代理）', freeEn: 'Flash models are free to a daily limit; just a Google account', group: 'intl', name: 'Google Gemini', kind: 'openai', needsKey: true,
       base: 'https://generativelanguage.googleapis.com/v1beta/openai', model: 'gemini-3.8-flash', models: ['gemini-3.1-pro-preview', 'gemini-3.8-flash', 'gemini-2.5-pro', 'gemini-2.5-flash', 'gemini-3.5-flash-lite', 'gemini-3.1-flash-lite', 'gemini-2.5-flash-lite'],
       hintZh: '在 aistudio.google.com 创建 API key。Flash / Flash-Lite 有免费额度（Flash-Lite 每天更多次），Pro 需付费。', hintEn: 'Create an API key at aistudio.google.com. Flash / Flash-Lite have a free tier (Flash-Lite allows more requests per day); Pro is paid only.' },
     xai: { keyUrl: 'https://console.x.ai/', group: 'intl', name: 'xAI Grok', kind: 'openai', needsKey: true,
@@ -55,7 +63,7 @@
     mistral: { keyUrl: 'https://console.mistral.ai/api-keys', group: 'intl', name: 'Mistral', kind: 'openai', needsKey: true,
       base: 'https://api.mistral.ai/v1', model: 'mistral-medium-latest', models: ['mistral-medium-latest', 'mistral-large-latest', 'mistral-small-latest', 'mistral-medium-3-5', 'mistral-large-2512', 'mistral-small-2603', 'ministral-14b-2512'],
       hintZh: '在 console.mistral.ai 创建 API key。有免费的 Experiment 档（需手机号验证），所有模型可用，限速。', hintEn: 'Create an API key at console.mistral.ai. The free Experiment tier (phone verification required) covers every model at a reduced rate limit.' },
-    groq: { keyUrl: 'https://console.groq.com/keys', freeZh: '免费、秒回；Google 或 GitHub 账号登录即可，不绑卡', freeEn: 'Free and instant; sign in with Google or GitHub, no card', group: 'intl', name: 'Groq', kind: 'openai', needsKey: true,
+    groq: { keyUrl: 'https://console.groq.com/keys', freeZh: '免费、秒回；Google 或 GitHub 账号登录即可，不绑卡（中国大陆需代理）', freeEn: 'Free and instant; sign in with Google or GitHub, no card', group: 'intl', name: 'Groq', kind: 'openai', needsKey: true,
       base: 'https://api.groq.com/openai/v1', model: 'openai/gpt-oss-120b', models: ['openai/gpt-oss-120b', 'qwen/qwen3.8-27b', 'openai/gpt-oss-20b', 'groq/compound', 'groq/compound-mini'],
       hintZh: '在 console.groq.com 创建 API key（Google / GitHub 登录即可）。免费档每分钟 8000 token，整课提问一次约 5–6k，所以约一分钟一问；把 📎 范围缩到某一节就能连续提问。注意：这不是马斯克的 xAI Grok。', hintEn: 'Create an API key at console.groq.com (sign in with Google / GitHub). The free tier allows 8,000 tokens per minute and a whole-lesson question uses 5–6k, so about one question a minute; narrow the 📎 scope to one grammar point to ask continuously. Not to be confused with xAI\u2019s Grok.' },
 
@@ -104,8 +112,8 @@
       hintEn: 'Any OpenAI-compatible server on this machine (vLLM, llama.cpp, your own relay…). To protect your key, the page security policy only allows the listed providers and localhost / 127.0.0.1.' }
   };
 
-  var GROUPS = [['site', '本站免费 / Free'], ['intl', '国际 / International'], ['cn', '国内 / China'], ['local', '本地 / Local'], ['relay', '聚合与自定义 / Relays & custom']];
-  var RECOMMEND = { zh: ['groq', 'zhipu', 'siliconflow'], en: ['groq', 'gemini', 'openrouter'] };
+  var GROUPS = [['site', '本站免费 / Free'], ['intl', '国际（中国大陆一般要代理） / International'], ['cn', '国内 / China'], ['local', '本地 / Local'], ['relay', '聚合与自定义 / Relays & custom']];
+  var RECOMMEND = { zh: ['zhipu', 'siliconflow', 'deepseek'], en: ['groq', 'gemini', 'openrouter'] };
 
   /* ── config (several providers, one active) ── */
   // cfg.session = true → stored in sessionStorage (gone when the tab closes).
@@ -135,7 +143,10 @@
   function forgetCfg() { try { localStorage.removeItem(CFG_KEY); sessionStorage.removeItem(CFG_KEY); } catch (e) {} }
   function active() { return cfg ? cfg.profiles[cfg.active] : null; }
   // Flat view of the active profile, the shape the request builders take.
-  function callCfg() { var a = active(); return { provider: cfg.active, base: a.base, key: a.key, model: a.model, effort: cfg.effort || '' }; }
+  // The live relay only answers jpnotes.dev; on localhost, ?ai=local (or the
+  // feedback box's ?fb=local) sends the free preset to `wrangler dev` instead.
+  var LOCAL_RELAY = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) && /[?&](ai|fb)=local\b/.test(location.search);
+  function callCfg() { var a = active(); return { provider: cfg.active, base: cfg.active === 'jpnotes' && LOCAL_RELAY ? 'http://localhost:8787/v1' : a.base, key: a.key, model: a.model, effort: cfg.effort || '' }; }
   function setProfile(provider, prof, makeActive) {
     if (!cfg) cfg = { v: 2, active: provider, profiles: {}, effort: '', session: false };
     cfg.profiles[provider] = prof;
@@ -174,11 +185,14 @@
   var GUIDE_URL = '/about/#ai-setup';
 
   /* ── history (per lesson, survives tab close) ── */
+  // Quiz pages keep no history: the question it was about is gone after a reload.
   function loadHist() {
+    if (QUIZ) return [];
     try { return JSON.parse(localStorage.getItem(HIST_KEY)) || JSON.parse(sessionStorage.getItem(HIST_KEY)) || []; } catch (e) { return []; }
   }
   function saveHist(h) {
     if (h.length > MAX_HISTORY_MSGS) h.splice(0, h.length - MAX_HISTORY_MSGS);
+    if (QUIZ) return;
     try { localStorage.setItem(HIST_KEY, JSON.stringify(h)); sessionStorage.removeItem(HIST_KEY); } catch (e) {}
   }
 
@@ -205,7 +219,7 @@
     if (/HTTP 5\d\d/.test(msg)) return 'http_5xx';
     return 'other';
   }
-  var pendingSource = 'typed';   // 'typed' | 'quick' | 'selection' | 'example' | 'retry' — set before send()
+  var pendingSource = 'typed';   // 'typed' | 'quick' | 'selection' | 'example' | 'quiz' | 'retry' — set before send()
 
   var cfg = loadCfg() || defaultCfg();
   var history = loadHist();      // [{role:'user'|'assistant', content}]
@@ -327,6 +341,16 @@
   }
   function systemPrompt(sc) {
     var ctx = contextText(sc), scoped = sc >= 0 && sections()[sc];
+    if (GENERAL) return isEn()
+      ? 'You are a Japanese grammar tutor helping a JLPT learner on ' + location.origin + ' (free grammar notes N5–N1). Answer any Japanese question. Reply in English. In Japanese examples, put the kana reading right after each kanji word in full-width parentheses, e.g. 雨（あめ）に降（ふ）られた, and add an English translation. When a lesson on the site covers the point, say so (lessons are at ' + location.origin + '/lessonNN/). Be concise, example-heavy, no filler.' + effortPrompt(cfg)
+      : '你是一位日语语法老师，正在辅导一位备考 JLPT 的中文母语学习者（网站 ' + location.origin + '，N5–N1 免费语法笔记）。回答任何日语问题，用中文。日语例句里的汉字请紧跟全角括号标注假名读音，格式如「雨（あめ）に降（ふ）られた」，并附中文翻译。回答简洁、多用例句、少说套话。' + effortPrompt(cfg);
+    if (QUIZ) return isEn()
+      ? 'You are a Japanese tutor (grammar, vocabulary and reading) helping a JLPT learner who has just answered the practice question below on ' + location.origin + location.pathname + '. ' +
+        'Answer from the question, its explanation and the linked lesson; say so when you add outside knowledge. The learner has already read the fixed explanation, so don\u2019t repeat it \u2014 add what it leaves out. If you think the answer key is wrong or two options work, say so plainly and suggest reporting it with \u201cSomething wrong with this question?\u201d under the question. Reply in English. Do what the learner asks in their message. Pitch it at the level shown in the question: example sentences should use vocabulary and grammar at or below that level. In Japanese, put the kana reading right after each kanji word in full-width parentheses, e.g. 雨（あめ）に降（ふ）られた, and add an English translation; for a word the question writes in kana you may give its kanji as ひと（人）. Stick to what this question needs; don\u2019t list general rules. If you aren\u2019t sure of a reading, origin or rule, leave it out \u2014 never make one up. No tables (the panel is narrow): short paragraphs or lists. Follow the [How to explain] note in the question for length and shape; keep follow-up answers short. No filler, no greetings or praise.' + effortPrompt(cfg) +
+        '\n\n<question>\n' + ctx + '\n</question>'
+      : '你是一位日语老师（语法、词汇、阅读都教），正在辅导一位备考 JLPT 的中文母语学习者。学习者刚在 ' + location.origin + location.pathname + ' 做完下面这道练习题。' +
+        '请基于题目、固定解析和对应课文回答；补充其他知识时请说明。学习者已经看过固定解析，不要照抄，要补充它没讲到的。如果你认为标准答案有误或有两个选项都对，请直接指出，并建议点题目下方的「这题有问题？」反馈。回答用中文。按学习者消息里的要求来讲。讲解难度和例句要符合题目标注的级别，例句里的词汇和语法不超过该级别。日语里的汉字请紧跟全角括号标注假名读音，格式如「雨（あめ）に降（ふ）られた」，并附中文翻译；题目里写成假名的词，可以写成「ひと（人）」告诉学习者汉字写法；中文后面不要加日语括号。只讲和这道题直接相关的内容，不要罗列一般规则；没有把握的读音、词源或规则宁可不说，不要编。不要用表格（面板很窄），用短段落或列表。长度和格式按题目信息里的【讲解要求】来；追问时简短回答。不说套话，不寒暄、不夸奖。' + effortPrompt(cfg) +
+        '\n\n<question>\n' + ctx + '\n</question>';
     if (!isEn()) {
       return '你是一位日语语法老师，正在辅导一位备考 JLPT 的中文母语学习者。学习者此刻正在阅读' +
         (scoped ? '下面这一课中「' + sectionTitle(sc) + '」这一节' : '下面这一课的笔记') + '（网址 ' + location.origin + location.pathname + '）。' +
@@ -392,6 +416,12 @@
       });
     });
   }
+  // Sent to the free relay only, for its usage counter: which button, and
+  // whether this browser is the site owner's (opted out of GA with ?ga_off).
+  function relayTags(source) {
+    var me = false; try { me = localStorage.getItem('jp_ga_off') === '1'; } catch (e) {}
+    return me ? { source: source, owner: true } : { source: source };
+  }
   function callOpenAI(c, sys, msgs, onDelta, signal, extra) {
     var inThink = false;   // older servers inline <think>…</think> in content
     return fetch(c.base.replace(/\/+$/, '') + '/chat/completions', {
@@ -444,6 +474,8 @@
   function ruby(s) {
     return s.replace(/([\u4e00-\u9fff\u3400-\u4dbf々〆ヶ]+)([ぁ-ゖ]*)[（(]([ぁ-ゖァ-ヺー]+)[）)]/g, function (m, kanji, oku, yomi) {
       if (oku) { if (yomi.length <= oku.length || yomi.slice(-oku.length) !== oku) return m; yomi = yomi.slice(0, -oku.length); }
+      // Fewer kana than kanji can't be a reading — e.g. Chinese text running into a gloss: 确认频率词（いつも）.
+      if (yomi.length < kanji.length) return m;
       return '<ruby>' + kanji + '<rp>(</rp><rt>' + yomi + '</rt><rp>)</rp></ruby>' + oku;
     });
   }
@@ -488,11 +520,17 @@
   }
 
   /* ── panel width (drag the left edge; remembered per browser) ── */
-  var WIDTH_KEY = 'jp_ai_w';
-  function clampWidth(w) { return Math.max(340, Math.min(Math.round(window.innerWidth * 0.6), 760, Math.round(w))); }
+  // Quiz pages have a narrow question column, so the panel may take more of the
+  // screen there (and opens wider by default); each kind of page remembers its own width.
+  var WIDTH_KEY = QUIZ ? 'jp_ai_w_quiz' : 'jp_ai_w';
+  function clampWidth(w) { return Math.max(340, Math.min(window.innerWidth - (QUIZ ? 560 : 640), QUIZ ? 1100 : 900, Math.round(w))); }
   function applyWidth(w) { document.documentElement.style.setProperty('--ai-w', clampWidth(w) + 'px'); }
-  function resetWidth() { document.documentElement.style.removeProperty('--ai-w'); try { localStorage.removeItem(WIDTH_KEY); } catch (e) {} }
-  (function () { try { var w = +localStorage.getItem(WIDTH_KEY); if (w) applyWidth(w); } catch (e) {} })();
+  function defaultWidth() {
+    document.documentElement.style.removeProperty('--ai-w');
+    if (QUIZ && window.innerWidth >= 1100) applyWidth(window.innerWidth * 0.45);
+  }
+  function resetWidth() { defaultWidth(); try { localStorage.removeItem(WIDTH_KEY); } catch (e) {} }
+  (function () { var w = 0; try { w = +localStorage.getItem(WIDTH_KEY); } catch (e) {} if (w) applyWidth(w); else defaultWidth(); })();
   function initResize(handle) {
     var startX = 0, startW = 0, dragging = false;
     function move(e) {
@@ -530,7 +568,7 @@
     panel.innerHTML =
       '<div class="ai-resize" title="' + esc(t('拖动调整宽度，双击恢复默认', 'Drag to resize, double-click to reset')) + '"></div>' +
       '<div class="ai-head">' +
-        '<span class="ai-title"><button type="button" class="ai-back"><span class="lang-zh">‹ 课文</span><span class="lang-en">‹ Lesson</span></button>' +
+        '<span class="ai-title"><button type="button" class="ai-back">' + (QUIZ ? '<span class="lang-zh">‹ 题目</span><span class="lang-en">‹ Question</span>' : '<span class="lang-zh">‹ 课文</span><span class="lang-en">‹ Lesson</span>') + '</button>' +
           '<span class="ai-name">🤖 <span class="lang-zh">问 AI</span><span class="lang-en">Ask AI</span></span> ' +
           '<button type="button" class="ai-model" title="' + esc(t('切换模型', 'Switch model')) + '"></button></span>' +
         '<div class="ai-model-menu" hidden></div>' +
@@ -557,8 +595,17 @@
     sendBtn = panel.querySelector('.ai-input button[type=submit]');
     modelLabel = panel.querySelector('.ai-model');
     scopeSel = panel.querySelector('.ai-scope');
+    if (QUIZ) { scopeSel.hidden = true; panel.querySelector('.ai-ctx-label').textContent = '📎 ' + t('AI 看到：这道题、解析和对应课文', 'AI sees: this question, its explanation and lesson'); }
+    if (GENERAL) { scopeSel.hidden = true; panel.querySelector('.ai-ctx-label').textContent = '📎 ' + t('通用提问：AI 看不到页面内容', 'General question: the AI doesn\u2019t see this page'); }
 
     panel.querySelector('.ai-close').addEventListener('click', function () { close(); });
+    // 👁 next to a key field: show it in plain text (it stays masked by default).
+    panel.addEventListener('click', function (e) {
+      var eye = e.target.closest && e.target.closest('.ai-eye');
+      if (!eye) return;
+      var inp = eye.parentNode.querySelector('input[name="key"]');
+      if (inp) { inp.type = inp.type === 'password' ? 'text' : 'password'; eye.textContent = inp.type === 'text' ? '🙈' : '👁'; }
+    });
     panel.querySelector('.ai-back').addEventListener('click', function () { close(); });
     initResize(panel.querySelector('.ai-resize'));
     var menu = panel.querySelector('.ai-model-menu');
@@ -642,12 +689,12 @@
     scopeSel.value = String(scope);
     scopeSel.classList.toggle('ai-scope-narrow', scope >= 0);
     var sc = effectiveScope();
-    inputEl.placeholder = sc >= 0 ? t('问关于「' + sectionTitle(sc) + '」的问题…', 'Ask about "' + sectionTitle(sc) + '"…') : t('问关于这一课的任何问题…', 'Ask anything about this lesson…');
+    inputEl.placeholder = GENERAL ? t('问任何日语语法问题…', 'Ask any Japanese grammar question…') : QUIZ ? t('接着问这道题…', 'Ask more about this question…') : sc >= 0 ? t('问关于「' + sectionTitle(sc) + '」的问题…', 'Ask about "' + sectionTitle(sc) + '"…') : t('问关于这一课的任何问题…', 'Ask anything about this lesson…');
   }
   // Keep the "follow my reading" label current: on scroll, and again whenever
   // the reader comes back to the panel (scroll events can be throttled).
   function refreshAuto() {
-    if (scope !== -2 || !scopeSel) return;
+    if (QUIZ || GENERAL || scope !== -2 || !scopeSel) return;
     scopeSel.options[0].text = autoLabel();
     var sc = effectiveScope();
     inputEl.placeholder = sc >= 0 ? t('问关于「' + sectionTitle(sc) + '」的问题…', 'Ask about "' + sectionTitle(sc) + '"…') : t('问关于这一课的任何问题…', 'Ask anything about this lesson…');
@@ -688,6 +735,18 @@
     msgsEl.innerHTML = '';
     panel.querySelector('.ai-input').hidden = false;
     panel.querySelector('.ai-clear').hidden = !history.length;
+    if (!history.length && GENERAL) {
+      var gq = isEn()
+        ? ['What\u2019s the difference between は and が?', 'When do I use ために and when ように?', 'Explain the te-form rules simply', 'Which grammar comes up most on the JLPT N2?']
+        : ['は和が有什么区别？', 'ために和ように怎么区分？', '用最简单的话讲讲て形变形规则', 'N2 最常考哪些语法？'];
+      msgsEl.innerHTML = '<div class="ai-note">' + esc(t('这里可以问任何日语问题。想问某一课的内容，到那一课里打开 AI，它会读过整课再回答。', 'Ask any Japanese question here. For a specific lesson, open the AI on that lesson page: it reads the whole lesson first.')) + '</div>' +
+        '<div class="ai-quicks">' + gq.map(function (q) { return '<button type="button" class="ai-quick" data-q="' + esc(q) + '">' + esc(q) + '</button>'; }).join('') + '</div>';
+      return;
+    }
+    if (!history.length && QUIZ) {
+      msgsEl.innerHTML = '<div class="ai-note">' + esc(t('答完一道题后，点解析里的「🤖 AI 讲解」，AI 会针对你选的选项讲为什么错、怎么区分，还可以接着追问。', 'After answering a question, press "🤖 Explain with AI" under the explanation: the AI explains why your choice was wrong and how to tell them apart, and you can ask follow-ups.')) + '</div>';
+      return;
+    }
     if (!history.length) {
       var quick = isEn()
         ? ['Explain the hardest grammar point in this lesson simply', 'Give me 5 fresh example sentences using this lesson’s grammar', 'Quiz me with 5 multiple-choice questions', 'How do the grammar points in this lesson differ from each other?']
@@ -700,7 +759,7 @@
       if (own) own.addEventListener('click', function () { track('ai_wizard', { step: 'start' }); renderWizard(); });
       return;
     }
-    history.forEach(function (m, i) { appendMsg(m.role, m.content, i === history.length - 1); });
+    history.forEach(function (m, i) { appendMsg(m.role, m.shown || m.content, i === history.length - 1); });
     if (history[history.length - 1].role === 'user') {
       var un = document.createElement('div');
       un.className = 'ai-msg ai-error';
@@ -737,11 +796,11 @@
     var hint = '', p = cfg && PROVIDERS[cfg.active];
     if (cfg.active === 'jpnotes') {
       // The relay's own messages already say what to do; only a dead connection needs a word.
-      if (/Failed to fetch|NetworkError|Load failed/i.test(msg)) hint = t('（连不上本站的 AI 服务，请稍后再试，或在设置里填自己的 API key。）', '(Cannot reach the site\u2019s AI relay; try again later, or add your own API key in settings.)');
+      if (/Failed to fetch|NetworkError|Load failed/i.test(msg)) hint = t('（连不上本站的 AI 服务，请稍后再试。在中国大陆偶尔会连不上，可以在设置里用国内服务商（智谱有免费模型、硅基流动、DeepSeek）自己的 API key。）', '(Cannot reach the site\u2019s AI relay; try again later, or add your own API key in settings.)');
     } else if (/Failed to fetch|NetworkError|Load failed/i.test(msg)) {
       hint = p && p.group === 'local'
         ? t('（连不上本地服务：确认它在运行、Chrome 已允许访问本地网络，且是用 OLLAMA_ORIGINS=' + location.origin + ' 启动的。）', '(Cannot reach the local server: make sure it is running, Chrome allowed local-network access, and it was started with OLLAMA_ORIGINS=' + location.origin + '.)')
-        : t('（网络错误：通常是服务商不允许浏览器直连 (CORS)、base URL 写错，或网络不通。可改用 OpenRouter / 硅基流动等中转。）', '(Network error: usually the provider blocks browser calls (CORS), the base URL is wrong, or you are offline. A relay like OpenRouter works around CORS.)');
+        : t((p && p.group === 'intl' ? '（连不上 ' + p.name + '：在中国大陆，国外服务商一般要开代理才能用；不开代理可以换国内的智谱、硅基流动、DeepSeek。）' : '（网络错误：通常是服务商不允许浏览器直连 (CORS)、base URL 写错，或网络不通。可改用 OpenRouter / 硅基流动等中转。）'), '(Network error: usually the provider blocks browser calls (CORS), the base URL is wrong, or you are offline. A relay like OpenRouter works around CORS.)');
     } else if (/401|403|authentication|invalid.*key/i.test(msg)) {
       hint = t('（请检查 API key。）', '(Check your API key.)');
     } else if (/^HTTP 429|rate limit|too many requests/i.test(msg)) {
@@ -772,10 +831,12 @@
     nodes.slice(Math.max(i, 0)).forEach(function (n) { n.remove(); });
     pendingSource = 'retry';
     track('ai_retry', {});
-    send(last.content);
+    send(last.content, last.shown);
   }
 
-  function send(text) {
+  // `shown`, when given, is what the chat displays instead of `text` (the full
+  // instruction still goes to the model): a button's prompt stays out of view.
+  function send(text, shown) {
     text = (text || '').trim();
     if (!text || busy) return;
     var source = pendingSource, t0 = Date.now();
@@ -783,8 +844,8 @@
     if (!history.length) msgsEl.innerHTML = '';
     msgsEl.querySelectorAll('.ai-error, .ai-actions').forEach(function (n) { n.remove(); });
     inputEl.value = ''; autosize();
-    history.push({ role: 'user', content: text });
-    appendMsg('user', text);
+    history.push(shown ? { role: 'user', content: text, shown: shown } : { role: 'user', content: text });
+    appendMsg('user', shown || text);
     var reply = '', think = '', el = appendMsg('assistant', ''), raf = 0, gotBytes = false;
     var prov = PROVIDERS[cfg.active] || PROVIDERS.custom, c = callCfg();
     el.classList.add('ai-streaming');
@@ -820,13 +881,13 @@
     }
     // A 讲解 button press stands alone: earlier turns would only muddle it, cost more,
     // and keep the relay from answering it from cache (same sentence = same request).
-    var msgs = (source === 'example' ? history.slice(-1) : history.slice(-(cfg.active === 'jpnotes' ? FREE_SEND_TURNS : SEND_TURNS) * 2)).map(function (m) { return { role: m.role, content: m.content }; });
+    var msgs = (source === 'example' || source === 'quiz' ? history.slice(-1) : history.slice(-(cfg.active === 'jpnotes' ? FREE_SEND_TURNS : SEND_TURNS) * 2)).map(function (m) { return { role: m.role, content: m.content }; });
     var sc = source === 'quick' ? -1 : effectiveScope();
     var sys = systemPrompt(sc);
     var call = prov.kind === 'anthropic' ? callAnthropic : callOpenAI;
     track('ai_ask', { source: source, turn: Math.ceil(history.length / 2), lesson_chars: sys.length, scope: scope === -2 ? 'auto' : scope < 0 ? 'lesson' : 'section' });
     // Only our relay gets the source (it counts which button was used); real providers reject unknown fields.
-    call(c, sys, msgs, onDelta, abort.signal, cfg.active === 'jpnotes' ? { source: source } : null).then(function () {
+    call(c, sys, msgs, onDelta, abort.signal, cfg.active === 'jpnotes' ? relayTags(source) : null).then(function () {
       track('ai_answer', { source: source, ms: Date.now() - t0, chars: reply.length });
     }, function (e) {
       if (e && e.name === 'AbortError') { track('ai_stop', { ms: Date.now() - t0, chars: reply.length }); return; }
@@ -885,7 +946,7 @@
           esc(t('，登录后新建一个 API key 并复制。', ', sign in, create an API key and copy it.')) + '</p>' +
         '<p class="ai-wiz-step">' + esc(t('3 · 粘贴到这里', '3 · Paste it here')) + '</p>' +
         '<form class="ai-wiz-form">' +
-          '<input name="key" type="password" autocomplete="off" spellcheck="false" placeholder="sk-…" required>' +
+          '<span class="ai-model-row"><input name="key" type="password" autocomplete="off" spellcheck="false" placeholder="sk-…" required><button type="button" class="ai-eye" title="' + esc(t('显示 / 隐藏 key', 'Show / hide the key')) + '" aria-label="' + esc(t('显示 / 隐藏 key', 'Show / hide the key')) + '">👁</button></span>' +
           '<label class="ai-check"><input type="checkbox" name="session"> ' + esc(t('公用电脑：只保存到本次会话', 'Shared computer: keep for this tab only')) + '</label>' +
           '<p class="ai-hint ai-wiz-msg"></p>' +
           '<div class="ai-settings-btns"><button type="submit" class="ai-save">' + esc(t('连接并开始', 'Connect and start')) + '</button>' +
@@ -939,7 +1000,7 @@
         }).join('') +
       '</select></label>' +
       '<label>Base URL<input name="base" type="url" autocomplete="off" spellcheck="false" value="' + esc(cur.base) + '"></label>' +
-      '<label>API Key<span class="ai-model-row"><input name="key" type="password" autocomplete="off" spellcheck="false" value="' + esc(cur.key || '') + '">' +
+      '<label>API Key<span class="ai-model-row"><input name="key" type="password" autocomplete="off" spellcheck="false" value="' + esc(cur.key || '') + '"><button type="button" class="ai-eye" title="' + esc(t('显示 / 隐藏 key', 'Show / hide the key')) + '" aria-label="' + esc(t('显示 / 隐藏 key', 'Show / hide the key')) + '">👁</button>' +
         '<a class="ai-keylink" target="_blank" rel="noopener" title="' + esc(t('去服务商网站创建 key', 'Create a key on the provider’s site')) + '">↗</a></span></label>' +
       '<label>' + esc(t('模型', 'Model')) + '<span class="ai-model-row"><input name="model" autocomplete="off" spellcheck="false" placeholder="' + esc(t('可手动输入任意模型名', 'Type any model name')) + '" value="' + esc(cur.model) + '">' +
         '<button type="button" class="ai-model-dd" title="' + esc(t('选择模型', 'Choose a model')) + '">▾</button>' +
@@ -1217,7 +1278,7 @@
     if (sec >= 0 && sec !== scope) { scope = sec; renderScope(); }
     pendingSource = 'example';
     track('ai_select', { chars: sentence.length, scoped: sec >= 0, mode: 'button' });
-    if (!busy) { open(); send(explainPrompt(sentence)); }
+    if (!busy) { open(); send(explainPrompt(sentence), t('讲解这句：「' + sentence + '」', 'Explain this sentence: "' + sentence + '"')); }
     else open(explainPrompt(sentence));
   }
   function addExplainBtns() {
@@ -1232,6 +1293,24 @@
       speak.parentNode.insertBefore(b, speak.nextSibling);
     });
   }
+
+  /* ── quiz pages: explain the question just answered ──
+   * ctx is the question as plain text (stem, options, answer, the learner's
+   * choice, the fixed explanation, the linked lesson); prompt is the first
+   * message. A new question starts a fresh chat, so follow-ups stay on it.
+   * The first request has no times or dates in it, so the same question and
+   * choice is the same request and the free relay can answer from cache. */
+  if (QUIZ) window.jpAI = {
+    explain: function (ctx, prompt) {
+      if (busy) stop();
+      article.textContent = ctx; wholeCache = null; sectionCache = null;
+      history = []; saveHist(history);
+      if (!panel) build(); else renderAll();
+      pendingSource = 'quiz';
+      track('ai_select', { chars: ctx.length, scoped: true, mode: 'quiz' });
+      open(); send(prompt);
+    }
+  };
 
   // The 🔊 buttons are added on DOMContentLoaded by the page's TTS script;
   // wait a tick so they exist before the 讲解 buttons go in next to them.

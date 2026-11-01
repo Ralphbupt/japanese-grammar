@@ -277,6 +277,100 @@ Relays information heard from others or the news. Equivalent to 「〜そうだ 
 
 ---
 
+## 4. 〜というものだ／〜というものではない（这才叫…… / 并不是……就……）||4. 〜というものだ／〜というものではない (That's what… is / It doesn't follow that…)
+
+### 接続||Conjugation
+:::zh
+- 名詞 / 普通形 + というものだ
+- 普通形 + というものではない / というものでもない
+
+※ 「というものではない」前面常用「〜ば（いい）」「〜たら」「〜さえ〜ば」：「高ければいいというものではない」。  
+※ 口语中常缩为「ってもんだ」「ってもんじゃない」。
+:::
+:::en
+- Noun / plain form + というものだ
+- Plain form + というものではない / というものでもない
+
+※ 「というものではない」 often follows 「〜ば（いい）」「〜たら」「〜さえ〜ば」: 「高ければいいというものではない」.  
+※ In casual speech, often shortened to 「ってもんだ」「ってもんじゃない」.
+:::
+
+### 含义||Meaning
+:::zh
+**というものだ：**说话人对某件事下的断定："这才叫……""这就是所谓的……"。常用于说明某事物的本质（「それが人生というものだ」），也常用于批评某个具体行为（「それはわがままというものだ」= 那就叫任性）。
+
+**というものではない：**部分否定，反驳一种常见的想法："并不是……就（一定）……"。前面通常是"只要A就B"这类看法，说话人指出它不一定成立。
+:::
+:::en
+**というものだ:** the speaker's verdict on something — "that's what… is," "that's what you call…." Used to state the essence of something (「それが人生というものだ」 — that's life), and often to criticize a specific act (「それはわがままというものだ」 — that's just selfish).
+
+**というものではない:** a partial denial that pushes back on a common assumption — "it doesn't follow that…," "it's not as if… automatically…." What comes before is usually an "if A, then B" belief, which the speaker says doesn't necessarily hold.
+:::
+
+### 例句||Example Sentences
+:::zh
+**【というものだ】**
+1. 困っている時に黙って助けてくれる、それが本当の友情**というものだ**。（在困难的时候默默地帮你，这才叫真正的友情。）
+2. 自分の意見ばかり通そうとするのは、わがまま**というものだ**。（一味只想让自己的意见通过，那就叫任性。）
+3. 思いどおりにいかないこともある。それが人生**というものだ**。（也有事与愿违的时候。人生就是这样。）
+4. 一度も練習に来ないで試合に出たいなんて、それは無理**というものだ**。（一次都不来练习，却想上场比赛，那是不可能的。）
+
+**【というものではない】**
+
+5. 値段が高ければ品質もいい**というものではない**。（并不是价格贵质量就一定好。）
+6. 練習時間が長ければ上手になる**というものではない**。効率も大切だ。（并不是练习时间长就能变好。效率也很重要。）
+7. お金さえあれば幸せになれる**というものでもない**。（也并不是只要有钱就能幸福。）
+:::
+:::en
+**[というものだ]**
+1. 困っている時に黙って助けてくれる、それが本当の友情**というものだ**。(Helping you quietly when you're in trouble — that's what true friendship is.)
+2. 自分の意見ばかり通そうとするのは、わがまま**というものだ**。(Always trying to push only your own opinion through — that's just being selfish.)
+3. 思いどおりにいかないこともある。それが人生**というものだ**。(Sometimes things don't go the way you want. That's life.)
+4. 一度も練習に来ないで試合に出たいなんて、それは無理**というものだ**。(Wanting to play in the match without coming to a single practice — that's simply asking too much.)
+
+**[というものではない]**
+
+5. 値段が高ければ品質もいい**というものではない**。(Just because something is expensive doesn't mean it's good quality.)
+6. 練習時間が長ければ上手になる**というものではない**。効率も大切だ。(Practicing longer doesn't automatically make you better. Efficiency matters too.)
+7. お金さえあれば幸せになれる**というものでもない**。(Having money doesn't necessarily make you happy, either.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| というものだ | 这才叫…… / 那就叫…… | 对某事下断定（本质、批评） |
+| ということだ | 也就是说…… / 据说…… | 从事实推出结论，或转述消息 |
+| ものだ | ……本来就是这样 | 一般规律、感慨、回忆，不针对具体一件事 |
+| わけだ | 怪不得…… / 也就是说…… | 由理由推出理所当然的结果 |
+| というものではない | 并不是……就（一定）…… | 反驳"只要A就B"的看法 |
+| わけではない | 并不是…… | 否定从情况推出的某个判断（部分否定） |
+
+> 「それはわがままというものだ」= 那就叫任性（对具体行为的评价）  
+> 「子どもはわがままなものだ」= 孩子本来就任性（一般规律）  
+> 「返事が来ないということは、興味がないということだ」= 没回音，也就是说没兴趣（推出结论）  
+> 「高ければいいというものではない」= 并不是贵就好（反驳常见看法）  
+> 「高いものが嫌いなわけではない」= 并不是讨厌贵的东西（否定对方的推测）
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| というものだ | that's what… is / that's just… | A verdict on something (essence, criticism) |
+| ということだ | that means… / I hear that… | Conclusion drawn from a fact, or hearsay |
+| ものだ | that's the way… is | General truth, feeling or recollection, not about one specific act |
+| わけだ | no wonder… / so that means… | Natural result that follows from a reason |
+| というものではない | it doesn't follow that… | Pushes back on an "if A, then B" belief |
+| わけではない | it's not that… | Denies a conclusion someone might draw from the situation (partial denial) |
+
+> 「それはわがままというものだ」 = that's just selfish (judging a specific act)  
+> 「子どもはわがままなものだ」 = children are naturally selfish (general truth)  
+> 「返事が来ないということは、興味がないということだ」 = no reply means no interest (drawing a conclusion)  
+> 「高ければいいというものではない」 = expensive doesn't automatically mean good (rejecting a common belief)  
+> 「高いものが嫌いなわけではない」 = it's not that I dislike expensive things (denying an inference)
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

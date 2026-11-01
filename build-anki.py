@@ -30,7 +30,7 @@ except ImportError:
     sys.exit(1)
 
 
-LEVELS = ["N5", "N4", "N3", "N2"]
+LEVELS = ["N5", "N4", "N3", "N2", "N1"]
 ROOT = os.path.dirname(__file__)
 OUT_DIR = os.path.join(ROOT, "dist", "anki")
 AUDIO_DIR = os.path.join(ROOT, "audio")
@@ -43,8 +43,8 @@ MODEL_ID = 1729384756
 CLOZE_MODEL_ID = 1729384757
 EDITIONS = {
     "zh": {
-        "deck_ids": {"N5": 1729384701, "N4": 1729384702, "N3": 1729384703, "N2": 1729384704},
-        "cloze_deck_ids": {"N5": 1729384711, "N4": 1729384712, "N3": 1729384713, "N2": 1729384714},
+        "deck_ids": {"N5": 1729384701, "N4": 1729384702, "N3": 1729384703, "N2": 1729384704, "N1": 1729384705},
+        "cloze_deck_ids": {"N5": 1729384711, "N4": 1729384712, "N3": 1729384713, "N2": 1729384714, "N1": 1729384715},
         "deck_name": "日语语法 {level} · jpnotes.dev",
         "cloze_subdeck": "挖空练习",
         "guid_ns": "jpnotes",
@@ -53,8 +53,8 @@ EDITIONS = {
         "trans_key": "zh",
     },
     "en": {
-        "deck_ids": {"N5": 1729384721, "N4": 1729384722, "N3": 1729384723, "N2": 1729384724},
-        "cloze_deck_ids": {"N5": 1729384731, "N4": 1729384732, "N3": 1729384733, "N2": 1729384734},
+        "deck_ids": {"N5": 1729384721, "N4": 1729384722, "N3": 1729384723, "N2": 1729384724, "N1": 1729384725},
+        "cloze_deck_ids": {"N5": 1729384731, "N4": 1729384732, "N3": 1729384733, "N2": 1729384734, "N1": 1729384735},
         "deck_name": "Japanese Grammar {level} · jpnotes.dev",
         "cloze_subdeck": "Cloze Practice",
         "guid_ns": "jpnotes-en",

@@ -1,0 +1,589 @@
+[
+ {
+  "id": "n1-m1-ck-101",
+  "type": "kadai",
+  "scene": "結婚式場で、プランナーの女の人と、式を挙げる男の人が話しています。",
+  "question": "男の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "F",
+    "招待状のお返事、ほぼそろいましたね。お席の配置ですが、ご親族とご友人のテーブル、この案でよろしいでしょうか。"
+   ],
+   [
+    "M",
+    "はい、大丈夫です。ただ、大学時代の友人が二人、まだ返事をくれていなくて。昨日もう一度連絡したので、今はそれ待ちなんですが。"
+   ],
+   [
+    "F",
+    "そうですか。お料理の数は、二週間前までに確定していただければ間に合いますので、まだ余裕があります。気になるのは引き出物のほうで、ご注文からお届けまで一か月ほどかかるんです。"
+   ],
+   [
+    "M",
+    "引き出物は、人数が決まらないと頼めないですよね。"
+   ],
+   [
+    "F",
+    "いえ、少し多めに頼んでおいて、余った分をご家族用にされる方も多いですよ。"
+   ],
+   [
+    "M",
+    "なるほど。じゃあ、二人の分も入れて……あ、でも、品物は彼女のお母さんが選びたいって言ってたんだった。まだ何にするか決まってないんです。"
+   ],
+   [
+    "F",
+    "でしたら、お品物が決まらないことには、ご注文のしようがありませんね。カタログはお渡ししてありますので。"
+   ],
+   [
+    "M",
+    "分かりました。今夜、彼女からお母さんに急いでもらうように話します。席の配置は、二人の返事が来てからでいいですか。"
+   ],
+   [
+    "F",
+    "ええ、席次表の印刷は来月ですから。"
+   ]
+  ],
+  "options": [
+   "友人二人に出欠を問い合わせる",
+   "料理の数を式場に知らせる",
+   "引き出物の品を選んでもらう",
+   "テーブルの配置を考え直す"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "婚礼会场里，女策划师和要办婚礼的男人在说话。",
+    "question": "男人接下来首先要做什么？",
+    "lines": [
+     "请柬的回复差不多都齐了。座位的安排，亲属和朋友的桌子，按这个方案可以吗？",
+     "嗯，没问题。不过大学时的两个朋友还没回复。昨天我又联系了一次，现在在等。",
+     "这样啊。菜品的数量在两周前确定就来得及，还有余地。我比较担心的是回礼，从下单到送达要一个月左右。",
+     "回礼的话，人数不定下来就没法订吧。",
+     "不，也有很多人稍微多订一些，多出来的留给家里人用。",
+     "原来如此。那就把那两个人的也算上……啊，不过，她妈妈说想自己挑东西来着。还没定买什么。",
+     "那样的话，东西不定下来就没法下单了。目录已经给您了。",
+     "明白了。今晚我让她跟她妈妈说，请她抓紧。座位安排等那两个人回复了再定可以吗？",
+     "可以，座次表下个月才印。"
+    ],
+    "options": [
+     "向两位朋友询问是否出席",
+     "把菜品数量告诉会场",
+     "请人挑选回礼",
+     "重新考虑桌子的安排"
+    ]
+   },
+   "en": {
+    "scene": "At a wedding venue, a female wedding planner and a man who is getting married are talking.",
+    "question": "What will the man do first?",
+    "lines": [
+     "Almost all the RSVPs are in. About the seating — are the family and friends' tables all right as in this plan?",
+     "Yes, that's fine. But two friends from university still haven't replied. I contacted them again yesterday, so I'm waiting to hear.",
+     "I see. The number of meals only needs to be fixed two weeks before, so there's still time. What concerns me is the guests' gifts — they take about a month from order to delivery.",
+     "We can't order the gifts until the numbers are settled, can we?",
+     "Actually, many couples order a few extra and give the leftovers to family.",
+     "I see. Then I'll include those two… oh, wait — her mother said she wanted to choose them. We haven't decided what to get yet.",
+     "In that case, there's no way to order until the item is chosen. You already have the catalogue.",
+     "Understood. Tonight I'll get her to ask her mother to hurry. Can the seating wait until those two reply?",
+     "Yes, the seating chart isn't printed until next month."
+    ],
+    "options": [
+     "Ask the two friends if they're coming",
+     "Tell the venue the number of meals",
+     "Get the gifts chosen",
+     "Rethink the table plan"
+    ]
+   }
+  },
+  "why": {
+   "zh": "回礼要一个月才到，人数可以多订解决，但东西要由新娘的母亲挑，「品物が決まらないことには、ご注文のしようがありません」，所以他今晚先请新娘让母亲赶快挑。",
+   "en": "The gifts take a month, and numbers can be covered by ordering extra, but nothing can be ordered until the bride's mother chooses — so he'll get that moving tonight."
+  },
+  "wrong": [
+   {
+    "zh": "他昨天已经再联系过了，现在「それ待ち」。",
+    "en": "He contacted them again yesterday and is waiting."
+   },
+   {
+    "zh": "菜品数量两周前确定就行，「まだ余裕があります」。",
+    "en": "Meal numbers can wait until two weeks before."
+   },
+   null,
+   {
+    "zh": "座位方案他说「大丈夫です」，要等朋友回复再调整。",
+    "en": "He's fine with the table plan; any change waits for the replies."
+   }
+  ],
+  "traps": [
+   "done-already",
+   "later",
+   "someone-else"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-102",
+  "type": "kadai",
+  "scene": "会社で、男の人と女の人が話しています。",
+  "question": "男の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "M",
+    "さて、午前中に北山商事さんの見積書を仕上げて、午後は金曜の会議の資料を直すか。"
+   ],
+   [
+    "F",
+    "あ、ちょっと待って。今、北山商事の田中さんからメールが来た。読むね。「明日のお打ち合わせですが、こちらの都合で、午後三時から午前十時に変更していただくことは可能でしょうか。なお、お見積もりにつきましては、社内での検討が来週になりましたので、その際で結構です。明日は、先日お話のあった新しいカタログの色見本を、実際に拝見できればと存じます。」だって。"
+   ],
+   [
+    "M",
+    "見積もりは来週でいいのか。それは助かるけど、色見本か……。印刷所から届くの、あさっての予定なんだよな。"
+   ],
+   [
+    "F",
+    "明日の十時に持っていくなら、今日のうちに印刷所から出してもらわないと無理だよね。"
+   ],
+   [
+    "M",
+    "だよね。時間を変える件も、早く返事しないと失礼だし……。"
+   ],
+   [
+    "F",
+    "でも、色見本が間に合うかどうか分からないうちに、「十時で大丈夫です」とは書けないでしょう。"
+   ],
+   [
+    "M",
+    "それもそうか。金曜の会議は、さっき課長が来週に延びたって言ってたから、資料は後回しでいいし。"
+   ]
+  ],
+  "options": [
+   "印刷所に色見本を急いで送ってもらう",
+   "北山商事の見積書を仕上げる",
+   "金曜の会議の資料を直す",
+   "打ち合わせの時間変更に返事をする"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "公司里，一个男人和一个女人在说话。",
+    "question": "男人接下来首先要做什么？",
+    "lines": [
+     "好，上午把北山商事的报价单做完，下午改周五会议的资料吧。",
+     "啊，等一下。北山商事的田中刚来了邮件。我念一下：“关于明天的洽谈，因我方原因，能否从下午三点改到上午十点？另外，报价方面，公司内部的讨论推到了下周，届时再给即可。明天希望能实际看看前几天提到的新产品目录的色样。”",
+     "报价下周就行啊。这倒是帮了忙，可色样……印刷厂那边预定后天才送到啊。",
+     "要是明天十点带过去，不让印刷厂今天就发出来是不可能的吧。",
+     "是啊。改时间的事，不早点回复也不礼貌……",
+     "可是色样能不能赶上还不知道，总不能写“十点没问题”吧。",
+     "也是。周五的会，科长刚才说推到下周了，资料可以往后放。"
+    ],
+    "options": [
+     "让印刷厂赶紧把色样发过来",
+     "把北山商事的报价单做完",
+     "修改周五会议的资料",
+     "回复洽谈改时间的事"
+    ]
+   },
+   "en": {
+    "scene": "At a company, a man and a woman are talking.",
+    "question": "What will the man do first?",
+    "lines": [
+     "Right — I'll finish the quote for Kitayama Trading this morning, and revise the materials for Friday's meeting this afternoon.",
+     "Oh, hold on. An email just came in from Tanaka at Kitayama Trading. I'll read it: 'Regarding tomorrow's meeting, would it be possible, for our own reasons, to move it from 3 p.m. to 10 a.m.? As for the quote, our internal review has moved to next week, so that will be fine then. Tomorrow, we would very much like to see the colour proofs of the new catalogue you mentioned the other day in person.'",
+     "So the quote can wait until next week. That helps, but the colour proof… it's not due from the printer until the day after tomorrow.",
+     "If you're taking it at ten tomorrow, the printer would have to send it out today.",
+     "Right. And I should answer about the time change soon, or it'll be rude…",
+     "But you can't write 'ten o'clock is fine' before you know whether the colour proof will make it.",
+     "True. And the section chief just said Friday's meeting has been pushed to next week, so the materials can wait."
+    ],
+    "options": [
+     "Get the printer to rush the colour proof",
+     "Finish the quote for Kitayama Trading",
+     "Revise the materials for Friday's meeting",
+     "Reply about the change of meeting time"
+    ]
+   }
+  },
+  "why": {
+   "zh": "邮件说报价下周再给、明天要看色样；色样后天才到，要赶上十点得让印刷厂今天发出。改时间的回复要等确认色样能否赶上，会议资料也推后了，所以先联系印刷厂。",
+   "en": "The email defers the quote and asks to see the colour proof tomorrow; it's due the day after, so the printer must send it today. The reply about the time waits on that, and Friday's materials are no longer urgent — so the printer comes first."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "邮件说报价「来週になりましたので、その際で結構です」。",
+    "en": "The email says the quote can wait until next week."
+   },
+   {
+    "zh": "科长说周五的会推到下周了，资料「後回しでいい」。",
+    "en": "Friday's meeting was pushed back, so the materials can wait."
+   },
+   {
+    "zh": "不知道色样能否赶上之前，不能回复“十点没问题”。",
+    "en": "He can't confirm ten o'clock before knowing if the colour proof will arrive."
+   }
+  ],
+  "traps": [
+   "later",
+   "order",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-103",
+  "type": "kadai",
+  "scene": "市民合唱団の練習のあとで、団長の女の人と、会計係の男の人が、定期演奏会の準備について話しています。",
+  "question": "男の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "F",
+    "定期演奏会まで、二か月を切ったわね。会計のほうはどう？"
+   ],
+   [
+    "M",
+    "ホールの使用料、そろそろ振り込んでおこうかと思ってるんですが。"
+   ],
+   [
+    "F",
+    "あれは来月末まででいいはずよ。早く払ったからって、割り引いてもらえるわけでもないし。"
+   ],
+   [
+    "M",
+    "そうでしたか。じゃあ、チラシの印刷を先に頼んでしまいましょうか。"
+   ],
+   [
+    "F",
+    "チラシは、曲目がまだ一曲決まってないのよ。指揮の先生が木曜の練習で決めるって。それは私が先生に確かめておく。"
+   ],
+   [
+    "M",
+    "分かりました。チラシの裏には、去年みたいに、協賛してくださるお店の名前を載せるんですよね。"
+   ],
+   [
+    "F",
+    "そうそう。去年のお店に、今年もお願いできるかどうか、一軒ずつ回ってもらえない？　名前がそろわないと、曲目が決まったところで、どのみち印刷には出せないんだから。"
+   ],
+   [
+    "M",
+    "去年は八軒でしたね。ただ、駅前の喫茶店は、先月お店を閉めたと聞きましたけど。"
+   ],
+   [
+    "F",
+    "あら、そうなの。じゃあ、残りの七軒ね。"
+   ]
+  ],
+  "options": [
+   "ホールの使用料を振り込む",
+   "チラシの印刷を注文する",
+   "指揮者に曲目を確かめる",
+   "協賛を頼みに店を訪ねる"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "市民合唱团练习结束后，女团长和负责会计的男人在谈定期演出的准备。",
+    "question": "男人接下来首先要做什么？",
+    "lines": [
+     "离定期演出不到两个月了。会计那边怎么样？",
+     "大厅的使用费，我想差不多该汇过去了。",
+     "那个下个月底之前付就行。早付也不会给打折。",
+     "是吗。那先把传单的印刷订了吧？",
+     "传单的话，曲目还有一首没定。指挥老师说周四练习时定。这个我去跟老师确认。",
+     "明白了。传单背面还是像去年那样，印上赞助店铺的名字吧。",
+     "对对。能不能请你一家一家去问问去年的店今年还能不能赞助？名字不齐的话，就算曲目定了，反正也没法拿去印。",
+     "去年是八家吧。不过听说车站前的咖啡馆上个月关门了。",
+     "哎呀，是吗。那就剩下的七家吧。"
+    ],
+    "options": [
+     "汇大厅的使用费",
+     "订印传单",
+     "向指挥确认曲目",
+     "去店里拜托赞助"
+    ]
+   },
+   "en": {
+    "scene": "After a community choir rehearsal, the female leader and the man who keeps the accounts are talking about preparations for the annual concert.",
+    "question": "What will the man do first?",
+    "lines": [
+     "Less than two months to the concert now. How are the accounts?",
+     "I was thinking it's about time to transfer the hall fee.",
+     "That's due by the end of next month. Paying early doesn't get us a discount or anything.",
+     "Oh, right. Then shall I go ahead and order the flyers?",
+     "The programme still has one piece undecided. The conductor says she'll choose at Thursday's rehearsal. I'll check with her.",
+     "Got it. And the back of the flyer will list the sponsoring shops, like last year?",
+     "Yes. Could you go round last year's shops one by one and ask if they'll sponsor us again? Without the names, we can't send it to print anyway, even once the programme's settled.",
+     "Last year it was eight. Though I heard the café by the station closed last month.",
+     "Oh, did it? Then the other seven."
+    ],
+    "options": [
+     "Pay the hall fee",
+     "Order the flyers",
+     "Check the programme with the conductor",
+     "Visit shops to ask for sponsorship"
+    ]
+   }
+  },
+  "why": {
+   "zh": "使用费下月底付就行，曲目团长去问；传单要等赞助店名字齐了才能印，团长请他「一軒ずつ回って」，所以他先去拜访店铺。",
+   "en": "The fee can wait, the leader will ask the conductor, and the flyer can't be printed until the sponsors' names are in — so he goes round the shops first."
+  },
+  "wrong": [
+   {
+    "zh": "使用费「来月末まででいい」，早付也没好处。",
+    "en": "The fee isn't due until the end of next month."
+   },
+   {
+    "zh": "传单要等曲目和赞助店名字都定了才能印。",
+    "en": "The flyer needs both the programme and the sponsors first."
+   },
+   {
+    "zh": "曲目的事团长说「私が先生に確かめておく」。",
+    "en": "The leader will check the programme herself."
+   },
+   null
+  ],
+  "traps": [
+   "later",
+   "someone-else",
+   "order"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-104",
+  "type": "kadai",
+  "scene": "音響機器の会社で、女の人と男の人が、新しいヘッドホンのモニター調査について話しています。",
+  "question": "男の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "F",
+    "来週のモニター調査、準備はどう？"
+   ],
+   [
+    "M",
+    "会議室は押さえましたし、アンケートの案もできてます。営業部からも何人か参加したいって話があるので、人数を確かめてから、工場に試作品を頼もうと思ってます。"
+   ],
+   [
+    "F",
+    "工場って、今週は午後から設備の点検に入るから、注文の受け付けは今日のお昼までって言ってなかった？"
+   ],
+   [
+    "M",
+    "あ、そうでした。点検が終わるのは来週の水曜日だから、それからじゃ調査に間に合わないな。"
+   ],
+   [
+    "F",
+    "試作品は、多めにあっても困らないでしょう。余った分は展示会で使えるし。"
+   ],
+   [
+    "M",
+    "ですね。じゃあ、営業部の分も見込んで、二十個で出しちゃいます。人数はあとで聞けば済みますし。"
+   ],
+   [
+    "F",
+    "うん。それと、アンケート、二十問は多くない？　後半はみんな適当に丸をつけちゃうよ。"
+   ],
+   [
+    "M",
+    "半分ぐらいに絞ります。それは今日中にやれば十分間に合います。"
+   ],
+   [
+    "F",
+    "あと、前回つけ心地の評価がばらばらだったのは、つけている時間を決めてなかったせいみたいなの。タイマーを用意しといて。"
+   ],
+   [
+    "M",
+    "総務で借りられます。それは前の日で大丈夫ですね。"
+   ]
+  ],
+  "options": [
+   "営業部に参加の人数を聞く",
+   "工場に試作品を注文する",
+   "アンケートの質問を減らす",
+   "総務からタイマーを借りる"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "音响设备公司里，一个女人和一个男人在谈新耳机的试用调查。",
+    "question": "男人接下来首先要做什么？",
+    "lines": [
+     "下周的试用调查，准备得怎么样了？",
+     "会议室订好了，问卷初稿也做好了。营业部也有几个人说想参加，所以我打算先确认人数，再跟工厂要试制品。",
+     "工厂不是说这周下午开始设备检修，订单只受理到今天中午吗？",
+     "啊，对了。检修要到下周三才结束，那之后就赶不上调查了。",
+     "试制品多一点也没关系吧。多出来的展会上能用。",
+     "是啊。那我把营业部的也算上，按二十个下单。人数之后再问就行。",
+     "嗯。还有，问卷二十道题是不是多了？后半部分大家都会随便打勾的。",
+     "我精简到一半左右。这个今天之内弄完就完全来得及。",
+     "还有，上次佩戴感的评价很分散，好像是因为没规定戴多长时间。准备一下计时器。",
+     "总务那里能借到。那个前一天弄就行吧。"
+    ],
+    "options": [
+     "问营业部参加人数",
+     "向工厂订试制品",
+     "减少问卷的题目",
+     "向总务借计时器"
+    ]
+   },
+   "en": {
+    "scene": "At an audio equipment company, a woman and a man are talking about a user trial for new headphones.",
+    "question": "What will the man do first?",
+    "lines": [
+     "How are the preparations for next week's user trial going?",
+     "I've booked the meeting room and drafted the questionnaire. A few people from Sales want to take part too, so I'm planning to confirm the numbers and then ask the factory for prototypes.",
+     "Didn't the factory say they start equipment inspections this afternoon, so they only take orders until noon today?",
+     "Oh, right. The inspection doesn't finish until next Wednesday, so after that would be too late for the trial.",
+     "Having extra prototypes won't hurt. We can use the spares at the trade show.",
+     "True. Then I'll allow for Sales and put in for twenty. I can ask about the numbers later.",
+     "Good. Also, isn't twenty questions too many? People will just tick anything in the second half.",
+     "I'll cut it to about half. If I do that today, there's plenty of time.",
+     "And it seems the comfort ratings were all over the place last time because we never set how long to wear them. Get some timers ready.",
+     "General Affairs can lend them. That can wait until the day before."
+    ],
+    "options": [
+     "Ask Sales how many will take part",
+     "Order prototypes from the factory",
+     "Cut down the questionnaire",
+     "Borrow timers from General Affairs"
+    ]
+   }
+  },
+  "why": {
+   "zh": "工厂订单只受理到今天中午，之后检修到下周三就来不及了；人数可以多订解决、之后再问，问卷今天内改完就行，计时器前一天借——所以先向工厂下单。",
+   "en": "The factory only takes orders until noon today and is then closed for inspection too long; numbers can be covered by ordering extra, the questionnaire can be done later today, timers the day before — so ordering comes first."
+  },
+  "wrong": [
+   {
+    "zh": "他原本打算先问人数，但改成多订，「人数はあとで聞けば済みます」。",
+    "en": "He drops this: he'll order extra and ask about numbers later."
+   },
+   null,
+   {
+    "zh": "问卷「今日中にやれば十分間に合います」，没有中午的期限紧。",
+    "en": "The questionnaire can be done any time today; the factory has a noon cutoff."
+   },
+   {
+    "zh": "计时器「前の日で大丈夫」。",
+    "en": "Timers can be borrowed the day before."
+   }
+  ],
+  "traps": [
+   "order",
+   "condition-conflict",
+   "later"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-105",
+  "type": "kadai",
+  "scene": "税理士の事務所で、税理士の男の人と、デザインの仕事をしている女の人が話しています。",
+  "question": "女の人は次に来るとき、何を持ってきますか。",
+  "lines": [
+   [
+    "M",
+    "領収書はこれで全部ですね。月ごとに分けてくださって、助かります。"
+   ],
+   [
+    "F",
+    "去年、ずいぶんご迷惑をおかけしましたから。"
+   ],
+   [
+    "M",
+    "いえいえ。で、このパソコンなんですが、二十万円を超えていますので、一度に経費にはできないんです。購入した日付の分かるものが要るので、保証書か何かの写しをいただけますか。"
+   ],
+   [
+    "F",
+    "保証書なら、箱と一緒に取ってあります。"
+   ],
+   [
+    "M",
+    "それから、ご自宅で仕事をされているので、家賃の一部を経費にできます。お部屋の広さが分かる、賃貸の契約書を……。"
+   ],
+   [
+    "F",
+    "あれ、それ、去年お渡ししませんでしたっけ。"
+   ],
+   [
+    "M",
+    "……ああ、こちらにありますね。お引っ越しされていなければ、これでけっこうです。"
+   ],
+   [
+    "F",
+    "ずっと同じところです。あと、海外のお客さんからの入金なんですが、ドルで受け取っていて。"
+   ],
+   [
+    "M",
+    "その場合は、入金された日の相場で計算しますので、銀行の記録を……と思ったら、もう明細を印刷してきてくださってますね。じゃあ、そちらは大丈夫です。"
+   ]
+  ],
+  "options": [
+   "購入した日付が分かる書類",
+   "部屋の広さが分かる契約書",
+   "ドルの入金が分かる明細",
+   "月ごとに分けた領収書"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "税务师事务所里，男税务师和一个做设计工作的女人在说话。",
+    "question": "女人下次来的时候要带什么？",
+    "lines": [
+     "收据就是这些了吧。您按月分好了，帮了大忙。",
+     "去年给您添了不少麻烦。",
+     "哪里哪里。那个，这台电脑超过了二十万日元，不能一次算作经费。需要能看出购买日期的东西，能给我保修单之类的复印件吗？",
+     "保修单的话，我和盒子一起留着。",
+     "还有，您在家工作，房租的一部分可以算经费。需要能看出房间面积的租赁合同……",
+     "咦，那个去年不是给过您了吗？",
+     "……啊，在这里。如果您没搬家，用这份就可以。",
+     "一直住在同一个地方。还有，海外客户的汇款，我是用美元收的。",
+     "那样的话要按到账当天的汇率计算，所以需要银行的记录……我正要说，您已经把明细打印出来了啊。那这个就没问题了。"
+    ],
+    "options": [
+     "能看出购买日期的文件",
+     "能看出房间面积的合同",
+     "能看出美元到账的明细",
+     "按月分好的收据"
+    ]
+   },
+   "en": {
+    "scene": "At a tax accountant's office, a male accountant and a woman who works as a designer are talking.",
+    "question": "What will the woman bring next time?",
+    "lines": [
+     "So these are all the receipts. Thank you for sorting them by month — that helps.",
+     "I caused you a lot of trouble last year.",
+     "Not at all. Now, this computer — it's over two hundred thousand yen, so it can't all be expensed at once. I need something showing the purchase date — could you give me a copy of the warranty or something similar?",
+     "I've kept the warranty, with the box.",
+     "Also, since you work from home, part of your rent can be expensed. I'd need the lease showing the size of the flat…",
+     "Hm, didn't I give you that last year?",
+     "…Ah yes, here it is. As long as you haven't moved, this will do.",
+     "I'm still in the same place. Also, payments from my overseas clients come in dollars.",
+     "In that case we calculate at the rate on the day it arrived, so I'd need the bank record… oh, you've already printed out the statement. Then that's taken care of."
+    ],
+    "options": [
+     "A document showing the purchase date",
+     "The lease showing the flat's size",
+     "The statement of dollar payments",
+     "Receipts sorted by month"
+    ]
+   }
+  },
+  "why": {
+   "zh": "电脑要证明购买日期，税务师请她拿保修单的复印件；合同去年给过，明细和收据今天已经带来了。",
+   "en": "For the computer he needs proof of the purchase date (a copy of the warranty); the lease was handed in last year and the statement and receipts are already here."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "租赁合同去年已经交了，没搬家就用那份。",
+    "en": "The lease was given last year and is still valid."
+   },
+   {
+    "zh": "美元的明细她已经「印刷してきて」了。",
+    "en": "She has already brought the printed statement."
+   },
+   {
+    "zh": "收据今天已经全部交了。",
+    "en": "The receipts were all handed in today."
+   }
+  ],
+  "traps": [
+   "done-already"
+  ]
+ }
+]

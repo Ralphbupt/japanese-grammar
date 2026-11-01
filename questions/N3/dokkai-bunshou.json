@@ -1,0 +1,500 @@
+[
+  {
+    "id": "n3-dk-101",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "次の文章は、雑誌に載ったコラムです。",
+    "passage": "三年前から、私の会社では週に二日、家で仕事をしてもいい[[1]]。最初は、通勤の時間がなくなってうれしかった。朝はゆっくり起きられるし、昼ご飯も自分の好きなものが作れる。[[2]]、半年ほどたつと、だんだん困ることが出てきた。同僚と話す機会が減って、ちょっとしたことでもメールで聞かなければならない。返事を待っている間、仕事が進まないこともある。\n家で仕事をするのが嫌になった[[3]]。ただ、会社で顔を合わせて話すことにも、思っていた以上に意味があったのだ。[[4]]、何でもない雑談の中から新しいアイデアが生まれることも多かったのである。\n今は、相談したいことがある日は会社へ行き、一人で集中したい日は家で働く[[5]]。働く場所を自分で選べることが、一番の利点なのかもしれない。",
+    "tr": {
+      "zh": "三年前开始，我们公司规定每周有两天可以在家工作。一开始，没有了通勤时间，我很高兴。早上可以慢慢起床，午饭也能自己做喜欢吃的。可是过了半年左右，渐渐出现了让人头疼的事。和同事说话的机会少了，一点小事也得发邮件问。等回复的时候，工作有时也推进不下去。并不是说我讨厌在家工作了。只是，在公司当面交谈，比我原先想的更有意义。比如，很多新点子正是从不起眼的闲聊中产生的。现在，我尽量在有事要商量的日子去公司，想一个人专心的日子在家工作。能自己选择工作地点，也许才是最大的好处。",
+      "en": "Three years ago my company made it the rule that we may work from home two days a week. At first I was glad to have no commute. I could get up slowly in the morning and make whatever I liked for lunch. But after about six months, problems gradually appeared. I had fewer chances to talk with colleagues, and even small things had to be asked by email. Sometimes work stalled while I waited for a reply. It isn't that I've come to dislike working from home. It's just that talking face to face at the office meant more than I had thought. For example, new ideas often came out of casual chat. Now I make a point of going to the office on days I need to consult someone and working at home on days I want to concentrate alone. Being able to choose where I work may be the biggest advantage."
+    },
+    "questions": [
+      {
+        "options": ["ことになっている", "ことがある", "ところだ", "ものだ"],
+        "answer": 0,
+        "why": {
+          "zh": "主语是「私の会社では」，讲的是公司从三年前起定下的规定，用表示规则、制度的「ことになっている」。",
+          "en": "「私の会社では」 and 「三年前から」 describe a company rule in force since then: 「ことになっている」."
+        },
+        "wrong": [
+          null,
+          { "zh": "「ことがある」是“有时会”，和「週に二日」这种固定的规定对不上。", "en": "「ことがある」 (sometimes happens) clashes with a fixed rule of 「週に二日」." },
+          { "zh": "「ところだ」表示正要做或刚做，和「三年前から」持续至今的制度不搭。", "en": "「ところだ」 (about to / just now) doesn't fit a rule running 「三年前から」." },
+          { "zh": "「ものだ」讲一般道理或感慨，不能用来说明某家公司的具体规定。", "en": "「ものだ」 states a general truth or feeling, not one company's specific rule." }
+        ]
+      },
+      {
+        "options": ["ところが", "そのため", "それに", "つまり"],
+        "answer": 0,
+        "why": {
+          "zh": "前面说一开始很高兴，后面说出现了麻烦，前后相反，用表示出乎意料的转折「ところが」。",
+          "en": "First he was glad, then problems appeared — an unexpected turn: 「ところが」."
+        },
+        "wrong": [
+          null,
+          { "zh": "「そのため」表示因果，可“出现麻烦”并不是“高兴”造成的。", "en": "「そのため」 (because of that) — the problems weren't caused by his being glad." },
+          { "zh": "「それに」是追加同方向的内容，可后面是坏事，和前面的好处方向相反。", "en": "「それに」 adds more of the same, but what follows are problems, the opposite of the good points before." },
+          { "zh": "「つまり」是换句话说，后文并不是前文的总结。", "en": "「つまり」 (in other words) — what follows isn't a restatement of what came before." }
+        ]
+      },
+      {
+        "options": ["わけではない", "わけだ", "ことにした", "はずだ"],
+        "answer": 0,
+        "why": {
+          "zh": "后面用「ただ」补充，并且最后他仍然在家工作，说明是部分否定：“并不是讨厌了”，用「わけではない」。",
+          "en": "The next sentence starts with 「ただ」 and he still works from home at the end, so it's a partial denial: 「わけではない」 (it's not that…)."
+        },
+        "wrong": [
+          null,
+          { "zh": "「わけだ」是“难怪、也就是说”，等于承认讨厌了，可最后一段他还在家工作。", "en": "「わけだ」 would confirm he dislikes it, but in the last paragraph he still works from home." },
+          { "zh": "「嫌になったことにした」意思不通，“讨厌”不是自己能决定的事。", "en": "「嫌になったことにした」 makes no sense — disliking isn't something you decide to do." },
+          { "zh": "「はずだ」是根据推测“应该会”，用来说自己的心情不自然，也和后文的「ただ」接不上。", "en": "「はずだ」 is an inference about what should be true, odd for one's own feelings and it doesn't lead into 「ただ」." }
+        ]
+      },
+      {
+        "options": ["例えば", "ところで", "それとも", "それなのに"],
+        "answer": 0,
+        "why": {
+          "zh": "“闲聊中产生新点子”是“当面交谈有意义”的具体例子，用「例えば」。",
+          "en": "Ideas coming out of casual chat is a concrete example of why face-to-face talk mattered: 「例えば」."
+        },
+        "wrong": [
+          null,
+          { "zh": "「ところで」用于转换话题，可后文还在说当面交谈的意义。", "en": "「ところで」 changes the subject, but the text is still on the value of talking in person." },
+          { "zh": "「それとも」用于疑问句中的“还是”，这里不是选择。", "en": "「それとも」 (or) offers alternatives in a question; there's no choice here." },
+          { "zh": "「それなのに」表示“尽管如此却”，可后文是对前文的支持，不是相反。", "en": "「それなのに」 (and yet) — the next sentence supports the previous one rather than contradicting it." }
+        ]
+      },
+      {
+        "options": ["ようにしている", "ところだった", "わけがない", "ばかりだ"],
+        "answer": 0,
+        "why": {
+          "zh": "后文说「働く場所を自分で選べる」，是自己的习惯和努力，用「ようにしている」。",
+          "en": "The next sentence says he chooses the place himself, so it's his own practice: 「ようにしている」 (I make a point of)."
+        },
+        "wrong": [
+          null,
+          { "zh": "「働くところだった」是“差点儿就在家工作了”，和现在实际的做法不符。", "en": "「働くところだった」 (nearly worked) doesn't describe what he actually does now." },
+          { "zh": "「わけがない」是“不可能”，和后文说能自由选择相矛盾。", "en": "「わけがない」 (can't possibly) contradicts his being free to choose." },
+          { "zh": "「ばかりだ」表示越来越……或光是……，意思接不上。", "en": "「ばかりだ」 (only / keeps getting) doesn't make sense with this sentence." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-102",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "次の文章は、本についてのエッセイです。",
+    "passage": "私は昔から、本は紙で読むものだと思っていた。ページをめくる感覚が好きだったし、画面で長い文章を読むと目が疲れる[[1]]。\nところが、去年引っ越しをしたとき、考えが変わった。段ボール二十箱分の本を運ぶのは大変で、新しい部屋には本棚を置く場所もほとんどなかった。[[2]]、思い切って半分以上の本を手放し、これからは電子書籍で買うことにしたのだ。\n使ってみると、意外に便利だった。何百冊入れても重さは変わらないし、夜中でも読みたい本がすぐ手に入る。文字の大きさも変えられるので、心配していたほど目も疲れない。今では通勤電車の中で、前より多くの本を読む[[3]]。\n[[4]]、紙の本が要らなくなったわけではない。何度も読み返したい本や、人にプレゼントしたい本は、今でも書店で買っている。私にとって電子書籍は、紙の本の代わりというより、[[5]]。",
+    "tr": {
+      "zh": "我一直以为书就该读纸质的。我喜欢翻页的感觉，而且总觉得在屏幕上读长文章眼睛会累。可是去年搬家的时候，我的想法变了。搬二十箱书太辛苦，新房间里也几乎没有放书架的地方。于是我下决心处理掉了一半以上的书，决定以后买电子书。用了才发现出乎意料地方便。装几百本重量也不变，半夜想读的书也能马上买到。字的大小也能调，所以眼睛也没有我担心的那么累。现在在通勤的电车上，我读的书比以前多了。不过，这并不是说纸质书就不需要了。想反复读的书、想送人的书，我现在还是去书店买。对我来说，电子书与其说是纸质书的替代品，不如说是又多了一个书架。",
+      "en": "I always thought books were meant to be read on paper. I liked the feel of turning pages, and I had the feeling that reading long texts on a screen tired my eyes. But when I moved house last year, my view changed. Carrying twenty boxes of books was hard work, and the new room had almost no space for bookshelves. So I took the plunge, got rid of more than half my books and decided to buy e-books from then on. Once I tried them, they were surprisingly convenient. Hundreds of books weigh no more, and I can get a book I want to read right away, even at midnight. I can change the text size too, so my eyes don't get as tired as I'd feared. Now I read more books on the commuter train than before. That doesn't mean, though, that I no longer need paper books. Books I want to reread and books I want to give as presents I still buy at a bookshop. For me, e-books are less a replacement for paper books than one more bookshelf."
+    },
+    "questions": [
+      {
+        "options": ["気がしたからだ", "ことにしていたからだ", "わけではなかったからだ", "はずがなかったからだ"],
+        "answer": 0,
+        "why": {
+          "zh": "这句在说以前爱读纸书的理由；后文「心配していたほど目も疲れない」说明他当时担心眼睛累，用「気がした（から）」。",
+          "en": "This gives his reason for preferring paper; later 「心配していたほど目も疲れない」 shows he used to worry about eye strain: 「気がしたからだ」 (I felt that…)."
+        },
+        "wrong": [
+          null,
+          { "zh": "「目が疲れることにしていた」意思不通，眼睛累不是自己决定的事。", "en": "「目が疲れることにしていた」 is nonsense — eye strain isn't something you decide on." },
+          { "zh": "「疲れるわけではなかった」是说不累，那就不成为喜欢纸书的理由，也和后文“担心眼睛累”矛盾。", "en": "Saying his eyes didn't get tired gives no reason to prefer paper and contradicts his later worry about it." },
+          { "zh": "「疲れるはずがなかった」是“不可能累”，同样和后文的担心相矛盾。", "en": "「はずがなかった」 (couldn't possibly) also contradicts the worry mentioned later." }
+        ]
+      },
+      {
+        "options": ["そこで", "それに", "ところが", "つまり"],
+        "answer": 0,
+        "why": {
+          "zh": "前面是遇到的困难（书太多、没地方），后面是针对这种情况采取的行动，用「そこで」。",
+          "en": "First the problem (too many books, no space), then the action taken in response: 「そこで」 (so / therefore)."
+        },
+        "wrong": [
+          null,
+          { "zh": "「それに」是追加并列的事情，可“处理掉书”是对困难的应对，不是又一个困难。", "en": "「それに」 adds another item, but getting rid of books is the response to the problem, not another problem." },
+          { "zh": "「ところが」表示意外的转折，可处理掉书正是顺着前文的结果。", "en": "「ところが」 marks an unexpected turn, but getting rid of the books follows naturally from the problem." },
+          { "zh": "「つまり」是换个说法，后文不是对前文的重新表述。", "en": "「つまり」 (in other words) — the next sentence doesn't restate the previous one." }
+        ]
+      },
+      {
+        "options": ["ようになった", "ことになった", "ところだ", "はずだ"],
+        "answer": 0,
+        "why": {
+          "zh": "「今では」「前より」表示状态的变化：用电子书以后，渐渐比以前读得多了，用「ようになった」。",
+          "en": "「今では」 and 「前より」 mark a change over time: he has come to read more — 「ようになった」."
+        },
+        "wrong": [
+          null,
+          { "zh": "「ことになった」表示（由别人或情况）决定了，可读书多是自然发生的变化，不是被决定的。", "en": "「ことになった」 means something was decided; reading more is a change that happened, not an arrangement." },
+          { "zh": "「読むところだ」是“正要读”，和「今では」「前より」比较的意思不符。", "en": "「読むところだ」 (about to read) doesn't fit a comparison with 「前より」." },
+          { "zh": "「はずだ」是推测，作者说的是自己的实际情况，不需要推测。", "en": "「はずだ」 is an inference; he is describing his own habits as fact." }
+        ]
+      },
+      {
+        "options": ["だからといって", "そのうえ", "例えば", "すると"],
+        "answer": 0,
+        "why": {
+          "zh": "前面说电子书很方便，后面否定“所以就不需要纸书了”这个推论，用「だからといって〜わけではない」。",
+          "en": "After praising e-books he denies the obvious conclusion: 「だからといって〜わけではない」 (that doesn't mean…)."
+        },
+        "wrong": [
+          null,
+          { "zh": "「そのうえ」是“而且”，追加电子书的优点，可后文是在为纸书辩护。", "en": "「そのうえ」 (moreover) would add another merit of e-books, but the text turns to defend paper." },
+          { "zh": "「例えば」后面应是前文的例子，可「紙の本が要らなくなったわけではない」不是方便的例子。", "en": "「例えば」 would need an example of convenience, which this sentence is not." },
+          { "zh": "「すると」表示接着发生的结果，和后面的「わけではない」否定推论不搭。", "en": "「すると」 (whereupon) introduces what happened next, not a denial with 「わけではない」." }
+        ]
+      },
+      {
+        "options": ["紙の本と一緒に使う、もう一つの本棚のようなものだ", "紙の本の代わりになるものだ", "紙の本をすべて手放すためのものだ", "いつか使わなくなるものだ"],
+        "answer": 0,
+        "why": {
+          "zh": "「AというよりB」要求B和“替代品”不同；他纸书电子书都用，电子书是空间之外“又一个书架”。",
+          "en": "「AというよりB」 needs a B different from a replacement; he uses both, so e-books are like an extra bookshelf."
+        },
+        "wrong": [
+          null,
+          { "zh": "「代わりというより、代わりになるもの」前后重复，和「というより」的用法矛盾。", "en": "Saying 'less a replacement than a replacement' repeats itself and breaks 「というより」." },
+          { "zh": "他只处理了一半以上的书，现在还在书店买纸书，并没有全部放弃。", "en": "He gave away only half his books and still buys paper ones, so it isn't about getting rid of them all." },
+          { "zh": "文中他觉得电子书很方便，读得更多了，没有说以后不用。", "en": "He finds e-books convenient and reads more; nothing suggests he'll stop using them." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-103",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "次の文章は、新聞の投書です。",
+    "passage": "私の住む町では、毎年八月に小さな夏祭りが開かれる。祭りの準備は、昔から町内会の人たちが中心になって[[1]]。しかし最近は、参加する人がずいぶん減ってしまった。若い人は仕事が忙しいし、お年寄りには力仕事が難しい。[[2]]、このままでは祭りを続けられなくなるかもしれないと、去年の会議で問題になった。\nそこで今年は、近くの大学の学生にボランティアを頼んでみた。来てくれる人がいるか心配だったが、二十人以上が手伝いに来てくれた。学生たちは会場の準備[[3]]、子ども向けのゲームまで考えてくれた。そのおかげで、祭りには例年の倍の子どもたちが集まった。\nある学生は「この町に四年住んでいたのに、近所の人と話したのは初めてです」と言っていた。祭りは町の人にとってだけでなく、[[4]]大切な場だったのだ。準備は大変だが、来年もぜひ続けて[[5]]。",
+    "tr": {
+      "zh": "我住的镇上每年八月都会举办一个小小的夏日祭。祭典的准备工作一直以来都是以町内会的人为中心进行的。但是最近，参加的人少了很多。年轻人工作忙，老年人又干不了体力活。因此，去年开会时有人提出：照这样下去，祭典也许办不下去了。于是今年我们试着请附近大学的学生来当志愿者。我们担心会不会有人来，结果来了二十多人帮忙。学生们不仅布置会场，还想了给孩子们玩的游戏。多亏了他们，来参加祭典的孩子是往年的两倍。有个学生说：“我在这个镇上住了四年，这还是第一次和邻居说话。”祭典不仅对镇上的人，对学生们来说也是一个重要的场所。准备工作虽然辛苦，但我希望明年也一定继续办下去。",
+      "en": "In my town a small summer festival is held every August. Preparations have always been led by members of the neighbourhood association. Recently, though, far fewer people take part. Young people are busy with work, and heavy work is hard for the elderly. Because of that, at last year's meeting it was raised that at this rate we might not be able to keep the festival going. So this year we tried asking students from a nearby university to volunteer. We worried whether anyone would come, but more than twenty came to help. The students not only set up the venue but even came up with games for children. Thanks to them, twice as many children as usual came to the festival. One student said, 'I've lived in this town for four years, but this is the first time I've talked to my neighbours.' The festival was an important place not only for the townspeople but for the students too. The preparation is hard work, but I'd really like us to keep it going next year as well."
+    },
+    "questions": [
+      {
+        "options": ["行ってきた", "行っていく", "行うつもりだ", "行うところだ"],
+        "answer": 0,
+        "why": {
+          "zh": "「昔から」表示从过去一直持续到现在，用「〜てきた」。",
+          "en": "「昔から」 (since long ago) describes something continuing up to now: 「〜てきた」."
+        },
+        "wrong": [
+          null,
+          { "zh": "「〜ていく」是从现在往将来延续，和「昔から」的方向相反。", "en": "「〜ていく」 points from now into the future, the opposite of 「昔から」." },
+          { "zh": "「つもりだ」是今后的打算，不能和「昔から」一起用。", "en": "「つもりだ」 is a future intention and can't go with 「昔から」." },
+          { "zh": "「行うところだ」是“正要做”，和长期以来的做法不符。", "en": "「行うところだ」 (about to do) doesn't describe a long-standing practice." }
+        ]
+      },
+      {
+        "options": ["そのため", "ところが", "それとも", "例えば"],
+        "answer": 0,
+        "why": {
+          "zh": "前面是原因（人少、年轻人忙、老人干不了），后面是结果（担心办不下去），用「そのため」。",
+          "en": "Before: the causes (fewer helpers, busy young people, frail elderly); after: the result (worry about continuing) — 「そのため」."
+        },
+        "wrong": [
+          null,
+          { "zh": "「ところが」是意外转折，可“办不下去”正是前面情况的自然结果。", "en": "「ところが」 marks a surprise, but the worry follows naturally from the situation." },
+          { "zh": "「それとも」用于疑问中的选择，这里不是问句。", "en": "「それとも」 (or) is for alternatives in a question; this isn't one." },
+          { "zh": "「例えば」后面应举前文的例子，可后文是结论，不是例子。", "en": "「例えば」 needs an example; the next sentence is a consequence, not an example." }
+        ]
+      },
+      {
+        "options": ["だけでなく", "のかわりに", "のわりに", "どころではなく"],
+        "answer": 0,
+        "why": {
+          "zh": "后面有「ゲームまで」（甚至连游戏也），和「〜だけでなく」呼应：不仅布置会场，还……",
+          "en": "「ゲームまで」 (even games) pairs with 「〜だけでなく」: not only the setup but even games."
+        },
+        "wrong": [
+          null,
+          { "zh": "「のかわりに」是“代替”，说明没布置会场，可「まで」表示在准备之外又多做了。", "en": "「のかわりに」 (instead of) would mean they skipped the setup, but 「まで」 means they did extra on top." },
+          { "zh": "「のわりに」是“与……相比出乎意料”，「準備のわりに」意思不通。", "en": "「のわりに」 (considering) makes no sense with 「準備」 here." },
+          { "zh": "「どころではなく」是“根本顾不上”，和学生们来帮忙准备的内容矛盾。", "en": "「どころではなく」 (no time for) contradicts the students coming to help prepare." }
+        ]
+      },
+      {
+        "options": ["学生たちにとっても", "町の人にとっても", "学生たちにとっては", "お年寄りにとってだけ"],
+        "answer": 0,
+        "why": {
+          "zh": "前面引用了学生的话（第一次和邻居说话），说明祭典对学生也重要；「〜だけでなく」后面要用「も」。",
+          "en": "The student's quote shows the festival mattered to the students too, and 「〜だけでなく」 calls for 「も」: 「学生たちにとっても」."
+        },
+        "wrong": [
+          null,
+          { "zh": "前面已经说了「町の人にとってだけでなく」，再说“对镇上的人也”就重复了。", "en": "「町の人」 was just mentioned in 「だけでなく」, so repeating it makes no sense." },
+          { "zh": "「だけでなく」要和「も」呼应，用「は」不对。", "en": "After 「だけでなく」 you need 「も」, not 「は」." },
+          { "zh": "「だけ」和前面的「だけでなく」矛盾，而且文中说的是学生，不是老人。", "en": "「だけ」 clashes with 「だけでなく」, and the text is about the students, not the elderly." }
+        ]
+      },
+      {
+        "options": ["いきたい", "みたかった", "おきたい", "しまいたい"],
+        "answer": 0,
+        "why": {
+          "zh": "「来年も」表示希望今后继续下去，用「続けていきたい」。",
+          "en": "「来年も」 looks ahead: 「続けていきたい」 (I want to keep it going)."
+        },
+        "wrong": [
+          null,
+          { "zh": "「みたかった」是过去式，和「来年も」对不上。", "en": "「みたかった」 is past and clashes with 「来年も」." },
+          { "zh": "「〜ておきたい」是事先做好准备，「祭りを続けておく」不自然。", "en": "「〜ておきたい」 is doing something in advance; 「続けておく」 is unnatural for keeping a festival going." },
+          { "zh": "「〜てしまいたい」是“想做完了事”，和希望长期办下去的心情不符。", "en": "「〜てしまいたい」 (want to get it over with) doesn't fit wanting it to go on." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-104",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "次の文章は、料理についてのエッセイです。",
+    "passage": "一人暮らしを始めてから、私はほとんど料理をしなかった。仕事から帰るのは毎晩九時過ぎで、コンビニの弁当を買って食べるのが当たり前になっていた。\n変わったのは、去年の健康診断がきっかけだ。医者に「このままの食生活を続けると、病気になるかもしれませんよ」と言われたのだ。[[1]]、週末だけでも自分で作ってみることにした。\n最初は失敗ばかりだった。レシピのとおりに作った[[2]]、なぜか味が薄かったり、焦がしたりした。それでも続けているうちに、少しずつうまくできる[[3]]。今では、日曜日に一週間分のおかずをまとめて作り、冷凍しておく。\n料理をするのは、健康のためだけではない。野菜を切ったり煮込んだりしている間は、仕事のことを忘れられる。私にとって料理は、家事[[4]]、気分転換なのだ。\n外食が悪いと言う[[5]]。ただ、自分で作る楽しさを知らないのは、もったいないと思う。",
+    "tr": {
+      "zh": "自从开始一个人生活，我几乎不做饭。每晚下班回家都过了九点，买便利店的盒饭吃已经成了理所当然的事。改变的契机是去年的体检。医生对我说：“照现在这样的饮食习惯下去，可能会生病哦。”于是我决定至少周末自己试着做饭。一开始总是失败。明明自以为是照着菜谱做的，却不知为什么味道很淡，或者烧焦了。即便如此，坚持下来以后，渐渐能做好了。现在我在星期天一次做好一周的菜，冻起来。做饭不只是为了健康。切菜、炖菜的时候，可以忘掉工作的事。对我来说，做饭与其说是家务，不如说是换换心情。我并不打算说在外面吃饭不好。只是，我觉得不知道自己做饭的乐趣是很可惜的。",
+      "en": "After I started living alone I hardly ever cooked. I got home from work after nine every night, and buying a convenience-store bento had become the norm. What changed things was last year's health check. The doctor told me, 'If you keep eating like this, you may get ill.' So I decided to try cooking for myself, at least at weekends. At first it was one failure after another. Even though I thought I had followed the recipe, for some reason the taste was weak or I burned things. Still, as I kept at it, I gradually became able to do it well. Now on Sundays I make a week's side dishes at once and freeze them. I cook not only for my health. While I'm chopping vegetables or simmering them, I can forget about work. For me cooking is less a chore than a change of mood. I don't mean to say that eating out is bad. It's just that I think it's a shame not to know the pleasure of making your own food."
+    },
+    "questions": [
+      {
+        "options": ["それで", "それとも", "ところが", "なぜなら"],
+        "answer": 0,
+        "why": {
+          "zh": "医生的话是原因，决定自己做饭是结果，用表示顺接因果的「それで」。",
+          "en": "The doctor's warning is the reason and deciding to cook is the result: 「それで」 (so)."
+        },
+        "wrong": [
+          null,
+          { "zh": "「それとも」用于疑问句中的选择，这里不是问句。", "en": "「それとも」 (or) offers alternatives in a question; this isn't one." },
+          { "zh": "「ところが」是意外转折，可听了医生的话开始做饭是顺理成章的。", "en": "「ところが」 marks a surprise, but starting to cook follows naturally from the warning." },
+          { "zh": "「なぜなら」后面要说理由（〜からだ），可后文是结果。", "en": "「なぜなら」 introduces a reason (ending in 〜からだ), but what follows is the result." }
+        ]
+      },
+      {
+        "options": ["つもりなのに", "ために", "おかげで", "からこそ"],
+        "answer": 0,
+        "why": {
+          "zh": "「なぜか」（不知为什么）说明结果出乎意料：自以为照菜谱做了，却失败了，用「つもりなのに」。",
+          "en": "「なぜか」 (for some reason) signals an unexpected result: he thought he'd followed the recipe, yet it failed — 「つもりなのに」."
+        },
+        "wrong": [
+          null,
+          { "zh": "「ために」表示原因，可照菜谱做不会是失败的原因，也和「なぜか」矛盾。", "en": "「ために」 makes following the recipe the cause of failure, which clashes with 「なぜか」." },
+          { "zh": "「おかげで」用于好的结果，后面是味道淡、烧焦等坏结果。", "en": "「おかげで」 is for good results; weak taste and burning are bad ones." },
+          { "zh": "「からこそ」强调“正因为”，把照菜谱做当成失败原因，说不通。", "en": "「からこそ」 (precisely because) makes no sense with a failure following the recipe." }
+        ]
+      },
+      {
+        "options": ["ようになった", "ことになった", "ことにした", "はずだった"],
+        "answer": 0,
+        "why": {
+          "zh": "「続けているうちに、少しずつ」表示能力随时间渐渐变化，可能形「できる」后用「ようになった」。",
+          "en": "「続けているうちに、少しずつ」 describes ability changing over time; after potential 「できる」 use 「ようになった」."
+        },
+        "wrong": [
+          null,
+          { "zh": "「ことになった」是被决定，能做好不是安排出来的。", "en": "「ことになった」 means something was arranged; getting better isn't arranged." },
+          { "zh": "「ことにした」是自己决定，可“会做”这种能力不能靠决定得到。", "en": "「ことにした」 is a decision, and you can't decide to be able to do something." },
+          { "zh": "「はずだった」表示“本应该……（结果没有）”，和后面“现在一次做一周的菜”矛盾。", "en": "「はずだった」 (was supposed to, but didn't) contradicts his now cooking a week's food at once." }
+        ]
+      },
+      {
+        "options": ["というより", "というと", "によって", "のおかげで"],
+        "answer": 0,
+        "why": {
+          "zh": "前文说做饭能让人忘掉工作，所以对他来说与其说是家务，不如说是换心情：「AというよりB」。",
+          "en": "Cooking lets him forget work, so for him it's less a chore than a change of mood: 「AというよりB」."
+        },
+        "wrong": [
+          null,
+          { "zh": "「というと」用于提起话题或联想，「家事というと、気分転換」意思不通。", "en": "「というと」 (speaking of) raises an association; 「家事というと、気分転換」 makes no sense." },
+          { "zh": "「によって」表示手段或根据，放在这里句子不成立。", "en": "「によって」 (by means of) doesn't make a sentence here." },
+          { "zh": "「家事のおかげで、気分転換」意思不通，文中是在给做饭重新定位，不是讲原因。", "en": "「家事のおかげで」 (thanks to housework) makes no sense; the sentence redefines cooking, it doesn't give a cause." }
+        ]
+      },
+      {
+        "options": ["つもりはない", "ようになった", "ことになっている", "ところだ"],
+        "answer": 0,
+        "why": {
+          "zh": "后面用「ただ」补充自己的真正想法，前面是先否定“我并不打算说外食不好”，用「つもりはない」。",
+          "en": "The next sentence, starting with 「ただ」, gives his real point, so first he disclaims: 「言うつもりはない」 (I don't mean to say)."
+        },
+        "wrong": [
+          null,
+          { "zh": "「言うようになった」是“变得会说了”，等于他在批评外食，和后面「ただ」的补充对不上。", "en": "「言うようになった」 (have started saying) would have him attacking eating out, which doesn't lead into 「ただ」." },
+          { "zh": "「ことになっている」是规定，说话是个人意见，不是规定。", "en": "「ことになっている」 is a rule; this is his personal opinion." },
+          { "zh": "「言うところだ」是“正要说”，和后面的补充说明接不上。", "en": "「言うところだ」 (about to say) doesn't connect to the qualifying 「ただ」 sentence." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-105",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "次の文章は、健康についてのコラムです。",
+    "passage": "寝る前にスマートフォンを見る人は多いだろう。私もその一人で、ベッドに入ってから一時間以上ニュースや動画を見ることも[[1]]。\nところが、最近ある本を読んで驚いた。画面の強い光は、脳に「まだ昼だ」と思わせてしまう。[[2]]、スマートフォンを見ていると、なかなか眠くならないというのだ。そういえば私も、朝起きたときに疲れが取れていないと感じることが多かった。\nそこで、一か月前から、夜十時以降はスマートフォンを使わない[[3]]。最初の数日は落ち着かなかったが、代わりに紙の本を読むようにしたら、前より早く眠れるようになった。\n[[4]]、スマートフォンをまったく使うなと言いたいのではない。連絡や調べものに欠かせない道具であることは確かだ。大切なのは、使う[[5]]、使う時間を自分で決めることだ。",
+    "tr": {
+      "zh": "睡前看手机的人应该很多吧。我也是其中之一，上床以后看一个多小时新闻和视频的情况也不少见。可是最近读了一本书，我吃了一惊。屏幕的强光会让大脑以为“还是白天”。因此，一直看着手机，就很难有困意。这么说来，我早上起床时也常常觉得疲劳没有消除。于是从一个月前开始，我决定晚上十点以后不用手机。头几天心神不定，但改为读纸质书以后，比以前睡得早了。当然，我并不是想说完全不要用手机。它确实是联系和查资料时不可缺少的工具。重要的不是用不用，而是自己决定使用的时间。",
+      "en": "Many people probably look at their smartphones before going to sleep. I'm one of them; it isn't unusual for me to watch news and videos for over an hour after getting into bed. But recently I read a book that surprised me. The strong light of the screen makes the brain think 'it's still daytime'. Because of that, while you're looking at your phone you don't get sleepy, it says. Come to think of it, I too often felt in the morning that I hadn't recovered from my tiredness. So a month ago I decided not to use my phone after ten at night. The first few days I felt restless, but once I started reading a paper book instead, I fell asleep earlier than before. Of course, I don't mean that you should never use a smartphone. It is certainly an essential tool for keeping in touch and looking things up. What matters is not whether you use it, but deciding for yourself when you use it."
+    },
+    "questions": [
+      {
+        "options": ["珍しくなかった", "少なかった", "できなかった", "決まっていた"],
+        "answer": 0,
+        "why": {
+          "zh": "「私もその一人で」说明作者也常在睡前看手机，所以“看一个多小时也不少见”，用「珍しくなかった」。",
+          "en": "「私もその一人で」 says he's one of those people, so watching for over an hour 'was not unusual': 「珍しくなかった」."
+        },
+        "wrong": [
+          null,
+          { "zh": "「少なかった」是很少这样做，和「私もその一人で」矛盾。", "en": "「少なかった」 (rarely) contradicts 「私もその一人で」." },
+          { "zh": "「できなかった」是做不到，可他说的正是自己常看手机。", "en": "「できなかった」 (couldn't) contradicts his saying he's one of the phone-watchers." },
+          { "zh": "「ことも決まっていた」意思不通，看手机不是被规定的事。", "en": "「ことも決まっていた」 makes no sense — watching his phone wasn't a fixed rule." }
+        ]
+      },
+      {
+        "options": ["そのため", "それとも", "ところで", "それなのに"],
+        "answer": 0,
+        "why": {
+          "zh": "强光让大脑以为是白天（原因）→ 所以睡不着（结果），用「そのため」。",
+          "en": "The light fools the brain (cause) → you don't get sleepy (result): 「そのため」."
+        },
+        "wrong": [
+          null,
+          { "zh": "「それとも」用于疑问中的选择，这里不是问句。", "en": "「それとも」 (or) is for alternatives in a question; this isn't one." },
+          { "zh": "「ところで」是转换话题，可后文还在讲光和睡眠的关系。", "en": "「ところで」 changes the subject, but the text continues on light and sleep." },
+          { "zh": "「それなのに」表示“尽管如此却”，可睡不着正是强光的结果，不矛盾。", "en": "「それなのに」 (and yet) — not getting sleepy is the expected result of the light, not a contradiction." }
+        ]
+      },
+      {
+        "options": ["ことにした", "ことがある", "わけだ", "ところだった"],
+        "answer": 0,
+        "why": {
+          "zh": "「そこで」后面是读书后自己做出的决定，从一个月前开始执行，用「ことにした」。",
+          "en": "After 「そこで」 comes his own decision, in effect since a month ago: 「ことにした」."
+        },
+        "wrong": [
+          null,
+          { "zh": "「ことがある」是“有时（不用）”，和「一か月前から」「十時以降」这种固定的规则不符。", "en": "「ことがある」 (sometimes) doesn't fit a fixed rule like 「一か月前から」「十時以降」." },
+          { "zh": "「わけだ」是“也就是说、难怪”，前面没有能推出这个结论的内容。", "en": "「わけだ」 (that means) — nothing before leads to this as a conclusion; it's a new action." },
+          { "zh": "「ところだった」是“差点儿就……”，和后文已经实行了一个月矛盾。", "en": "「ところだった」 (nearly did) contradicts his having done it for a month." }
+        ]
+      },
+      {
+        "options": ["もちろん", "なぜなら", "その結果", "例えば"],
+        "answer": 0,
+        "why": {
+          "zh": "前面劝人少用手机，这里先承认“当然不是说完全不用”，以防误会，用「もちろん」。",
+          "en": "Having urged less phone use, he heads off a misunderstanding: 「もちろん」 (of course) I don't mean never use it."
+        },
+        "wrong": [
+          null,
+          { "zh": "「なぜなら」后面要说理由，可这句是在限定自己的主张，不是理由。", "en": "「なぜなら」 introduces a reason, but this sentence qualifies his claim." },
+          { "zh": "「その結果」后面是结果，可「使うなと言いたいのではない」不是早睡的结果。", "en": "「その結果」 needs a result, and 'I don't mean never use it' isn't the result of sleeping earlier." },
+          { "zh": "「例えば」后面要举例，这句不是前文的例子。", "en": "「例えば」 needs an example; this sentence isn't one." }
+        ]
+      },
+      {
+        "options": ["かどうかではなく", "ばかりでなく", "うちに", "ために"],
+        "answer": 0,
+        "why": {
+          "zh": "前面说不是要人完全不用，所以重点不在“用不用”，而在“什么时候用”：「AかどうかではなくB」。",
+          "en": "He's just said he isn't against using it at all, so the point is not whether you use it but when: 「かどうかではなく」."
+        },
+        "wrong": [
+          null,
+          { "zh": "「使うばかりでなく」是“不仅使用，还……”，意思接不上后面的“决定使用时间”。", "en": "「使うばかりでなく」 (not only using it) doesn't lead sensibly to deciding when to use it." },
+          { "zh": "「使ううちに、時間を決める」是“用着用着就决定”，和作者主动定规则的意思不符。", "en": "「使ううちに」 (while using it, gradually) doesn't fit deliberately setting your own limits." },
+          { "zh": "「使うために、時間を決める」是“为了用而定时间”，和前文要限制使用的意思相反。", "en": "「使うために」 (in order to use it) runs against the point of limiting use." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-dk-106",
+    "type": "bunshou",
+    "difficulty": 3,
+    "intro": "次の文章は、日本で働く外国人が書いたものです。",
+    "passage": "日本に来て五年になるが、来たばかりのころは、日本語で話すのが怖かった。間違えたら笑われる[[1]]と思っていたからだ。だから、会社でも分からないことがあると、分かったふりをしていた。\nある日、先輩に頼まれた書類を、私は全く違う意味に理解して作ってしまった。先輩は怒る[[2]]、「分からないときは、何度でも聞いていいんだよ」と笑ってくれた。その言葉を聞いて、肩の力が抜けた気がした。\nそれからは、分からないことはその場で聞く[[3]]。今でも間違えることは多いが、聞けば聞くほど言葉を覚えるのも早くなった。[[4]]、間違いを恐れていたころより、ずっと日本語が上達したのだ。\n今思えば、あのころの私に足りなかったのは、日本語の力[[5]]、間違える勇気だったのかもしれない。",
+    "tr": {
+      "zh": "我来日本已经五年了，刚来的时候很怕用日语说话，因为我觉得说错了会不会被人笑话。所以在公司里遇到不懂的事，我也装作懂了。有一天，前辈让我做的文件，我完全理解错了意思，做错了。前辈非但没有生气，反而笑着对我说：“不懂的时候，问多少次都可以哦。”听了这句话，我觉得肩上的劲儿一下子松了。从那以后，我尽量不懂的事当场就问。现在我也还常常出错，但问得越多，记词也越快。结果，比起害怕犯错的那段时间，我的日语进步了很多。现在想来，当时的我缺少的也许不是日语能力，而是犯错的勇气。",
+      "en": "I've been in Japan for five years, but when I'd just arrived I was afraid of speaking Japanese, because I thought people might laugh at me if I made a mistake. So even at work, when I didn't understand something, I pretended I did. One day I completely misunderstood a document a senior colleague had asked me for and made it wrong. Far from getting angry, he smiled and said, 'When you don't understand, you can ask as many times as you like.' Hearing that, I felt the tension leave my shoulders. Since then I make a point of asking on the spot when I don't understand. I still make lots of mistakes, but the more I ask, the faster I learn words. As a result, my Japanese has improved far more than when I was afraid of mistakes. Looking back, what I lacked then was perhaps not Japanese ability but the courage to make mistakes."
+    },
+    "questions": [
+      {
+        "options": ["のではないか", "わけがない", "ことにしている", "ようにしている"],
+        "answer": 0,
+        "why": {
+          "zh": "前面说「怖かった」，这里是他担心的内容：“会不会被笑话”，用表示担心、推测的「のではないか（と思う）」。",
+          "en": "He was 「怖かった」 (afraid), so this is his worry: 'that I might be laughed at' — 「のではないかと思っていた」."
+        },
+        "wrong": [
+          null,
+          { "zh": "「笑われるわけがない」是“不可能被笑”，那他就不会害怕，和「怖かった」矛盾。", "en": "「笑われるわけがない」 (no way I'd be laughed at) contradicts his being afraid." },
+          { "zh": "「笑われることにしている」意思不通，被笑不是自己定的习惯。", "en": "「笑われることにしている」 is nonsense — being laughed at isn't a habit you choose." },
+          { "zh": "「笑われるようにしている」是“设法让自己被笑”，和害怕的心情相反。", "en": "「笑われるようにしている」 (make sure I'm laughed at) is the opposite of being afraid." }
+        ]
+      },
+      {
+        "options": ["どころか", "ために", "うえに", "ばかりで"],
+        "answer": 0,
+        "why": {
+          "zh": "本以为会挨骂，前辈却笑着安慰他，结果和预想完全相反，用「Aどころか（B）」：非但没有生气，反而……",
+          "en": "He expected anger but got a smile — the very opposite: 「怒るどころか」 (far from getting angry)."
+        },
+        "wrong": [
+          null,
+          { "zh": "「怒るために」是“为了生气”，意思不通。", "en": "「怒るために」 (in order to get angry) makes no sense." },
+          { "zh": "「怒るうえに」是“不但生气还……”，和后面「笑ってくれた」矛盾。", "en": "「怒るうえに」 (got angry and also…) contradicts 「笑ってくれた」." },
+          { "zh": "「怒るばかりで」是“光是生气”，和前辈笑着安慰他的内容矛盾。", "en": "「怒るばかりで」 (did nothing but get angry) contradicts his smiling and reassuring words." }
+        ]
+      },
+      {
+        "options": ["ようにしている", "わけがない", "ばかりだ", "ところだった"],
+        "answer": 0,
+        "why": {
+          "zh": "「それからは」表示从那以后养成的做法，现在仍在坚持，用「ようにしている」。",
+          "en": "「それからは」 introduces a habit he has kept up since then: 「ようにしている」 (I make a point of)."
+        },
+        "wrong": [
+          null,
+          { "zh": "「聞くわけがない」是“不可能问”，和后文「聞けば聞くほど」矛盾。", "en": "「聞くわけがない」 (I'd never ask) contradicts 「聞けば聞くほど」 later." },
+          { "zh": "「聞くばかりだ」是“光是问”，和后文说他记词变快、进步的意思不符。", "en": "「聞くばかりだ」 (do nothing but ask) doesn't fit the improvement described next." },
+          { "zh": "「聞くところだった」是“差点儿就问了”，可后文说他一直在问。", "en": "「聞くところだった」 (nearly asked) contradicts his asking all the time afterwards." }
+        ]
+      },
+      {
+        "options": ["その結果", "それなのに", "ところで", "それとも"],
+        "answer": 0,
+        "why": {
+          "zh": "前面是坚持提问、记词变快，后面是由此带来的日语进步，用「その結果」。",
+          "en": "Asking a lot and learning faster led to the improvement that follows: 「その結果」 (as a result)."
+        },
+        "wrong": [
+          null,
+          { "zh": "「それなのに」表示相反，可日语进步正是提问的结果。", "en": "「それなのに」 (and yet) — the improvement comes from asking, it doesn't contradict it." },
+          { "zh": "「ところで」是转换话题，后文仍在说日语进步。", "en": "「ところで」 changes the subject, but the text is still on his progress." },
+          { "zh": "「それとも」用于疑问中的选择，这里不是问句。", "en": "「それとも」 (or) offers alternatives in a question; this isn't one." }
+        ]
+      },
+      {
+        "options": ["ではなく", "として", "によって", "のために"],
+        "answer": 0,
+        "why": {
+          "zh": "全文说他的问题是害怕犯错，而不是能力，用「AではなくB」：缺少的不是日语能力，而是勇气。",
+          "en": "The whole text says his problem was fear, not ability: 「AではなくB」 — not Japanese ability but courage."
+        },
+        "wrong": [
+          null,
+          { "zh": "「日本語の力として、勇気」意思不通。", "en": "「日本語の力として」 (as Japanese ability) makes no sense with 'courage'." },
+          { "zh": "「によって」表示手段或原因，「日本語の力によって、勇気だった」句子不成立。", "en": "「によって」 (by means of) doesn't form a sentence here." },
+          { "zh": "「日本語の力のために、勇気だった」意思不通，也不符合全文“缺的是勇气”的结论。", "en": "「日本語の力のために」 (for the sake of ability) makes no sense and misses his conclusion about courage." }
+        ]
+      }
+    ]
+  }
+]

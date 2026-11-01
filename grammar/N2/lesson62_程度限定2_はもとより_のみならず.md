@@ -261,6 +261,222 @@ The two have exactly the same meaning; the only difference is register:
 
 ---
 
+## 3. 〜も〜ば〜も／〜も〜なら〜も（既……又…… / 也……也……）||3. 〜も〜ば〜も／〜も〜なら〜も (Both… and… / … and also…)
+
+### 接続||Conjugation
+:::zh
+- 名詞A + も + 動詞ば形 + 名詞B + も + 動詞
+- 名詞A + も + い形容詞（去い）ければ + 名詞B + も + い形容詞
+- 名詞A + も + な形容詞なら + 名詞B + も + な形容詞
+- 名詞A + も + 名詞なら + 名詞B + も + 名詞だ
+
+※ 前后两项一般方向相同：都是好事，或都是坏事。  
+※ 「AもあればBもある」是固定说法，表示"有A的情况，也有B的情况"，这时A和B可以是相反的两面。  
+※ 「親も親なら子も子だ」这类"名詞も名詞なら"是惯用句，表示双方一样不像话（批评）。
+:::
+:::en
+- Noun A + も + verb ば-form + Noun B + も + verb
+- Noun A + も + i-adjective (drop い) + ければ + Noun B + も + i-adjective
+- Noun A + も + na-adjective + なら + Noun B + も + na-adjective
+- Noun A + も + noun + なら + Noun B + も + noun + だ
+
+※ The two items normally point the same way: both good, or both bad.  
+※ 「AもあればBもある」 is a set phrase meaning "there are cases of A and cases of B"; here A and B may be opposites.  
+※ 「親も親なら子も子だ」-type "noun も noun なら" is an idiom: both sides are equally bad (criticism).
+:::
+
+### 含义||Meaning
+:::zh
+"既……又……""……也……，……也……"，把同一个人或事物的两个特点（或两件事）并列起来，强调"两方面都是这样"。这里的「ば」「なら」不是条件，只起并列作用。
+
+结构：「AもXば、BもY」
+- X、Y 分别是A、B各自的谓语
+- 后半句的谓语照常结句（「〜もいい」「〜も吸う」）
+:::
+:::en
+"Both… and…", "… and … too" — lists two features of the same person or thing (or two facts) side by side, stressing that both are true. The 「ば」 / 「なら」 here is not a condition; it only links the two items.
+
+Structure: 「AもXば、BもY」
+- X and Y are the predicates of A and B respectively
+- The second predicate ends the sentence normally (「〜もいい」「〜も吸う」)
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 父は酒**も**飲め**ば**、タバコ**も**吸う。（父亲既喝酒又抽烟。）
+2. この店は値段**も**安けれ**ば**、味**も**いい。（这家店价格便宜，味道也好。）
+3. 新しい部長は仕事**も**できれ**ば**、人柄**も**いいと評判だ。（新部长既能干，人品也好，口碑很不错。）
+4. この町は交通**も**便利**なら**、自然**も**豊かだ。（这个小镇交通方便，自然环境也很丰富。）
+5. 人生にはいい時**も**あれ**ば**、悪い時**も**ある。（人生有顺的时候，也有不顺的时候。）
+6. 子どもが店の中で騒いでいるのに、親は注意もしない。親**も**親**なら**、子**も**子だ。（孩子在店里吵闹，父母却连说都不说一句。父母不像话，孩子也不像话。）
+:::
+:::en
+1. 父は酒**も**飲め**ば**、タバコ**も**吸う。(My father both drinks and smokes.)
+2. この店は値段**も**安けれ**ば**、味**も**いい。(This place is cheap, and the food is good too.)
+3. 新しい部長は仕事**も**できれ**ば**、人柄**も**いいと評判だ。(The new department head is known as both capable and a good person.)
+4. この町は交通**も**便利**なら**、自然**も**豊かだ。(This town is well connected, and it is surrounded by nature too.)
+5. 人生にはいい時**も**あれ**ば**、悪い時**も**ある。(In life there are good times and bad times.)
+6. 子どもが店の中で騒いでいるのに、親は注意もしない。親**も**親**なら**、子**も**子だ。(The kids are running riot in the shop and the parents don't even tell them off. The parents are as bad as the kids.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| AもXば、BもY | 既……又…… | 固定两项，各有自己的谓语，强调"两方面都" |
+| 〜し、〜し | 又……又……（列举理由） | 项数不限，常用来列举理由，后面引出结论（だから…） |
+| AもBも〜 | A和B都…… | 两个名词共用一个谓语 |
+| AもあればBもある | 有A也有B | 固定说法，A、B可以相反 |
+
+> 「この店は安いし、おいしいし、よく来る」= 又便宜又好吃，所以常来（列举理由）  
+> 「この店は値段も安ければ味もいい」= 价格便宜，味道也好（描述两个特点，不必引出结论）  
+> 「りんごもみかんも好きだ」= 苹果和橘子都喜欢（共用「好きだ」）
+
+**常见错误：前后方向不一致**
+
+> ✕ この店は値段も安ければ、味も悪い。→ 好坏混在一起，不自然  
+> ○ この店は値段は安いが、味が悪い。→ 好坏对比用「が」「けれど」
+
+**注意：这里的「ば」不是条件**
+
+> 「値段も安ければ味もいい」≠ "如果便宜的话味道就好"  
+> 条件句不会像这样用「AもXば、BもY」把两项成对并列。
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| AもXば、BもY | both… and… | Exactly two items, each with its own predicate; stresses "both" |
+| 〜し、〜し | … and … (listing reasons) | Any number of items; often lists reasons leading to a conclusion (だから…) |
+| AもBも〜 | both A and B … | Two nouns share one predicate |
+| AもあればBもある | there is A and there is B | Set phrase; A and B can be opposites |
+
+> 「この店は安いし、おいしいし、よく来る」= it's cheap and tasty, so I come often (reasons)  
+> 「この店は値段も安ければ味もいい」= it's cheap, and the food is good too (two features; no conclusion needed)  
+> 「りんごもみかんも好きだ」= I like both apples and oranges (shared 「好きだ」)
+
+**Common mistake: mixing good and bad**
+
+> ✕ この店は値段も安ければ、味も悪い。→ one good, one bad: unnatural  
+> ○ この店は値段は安いが、味が悪い。→ use 「が」/「けれど」 for a good–bad contrast
+
+**Note: this 「ば」 is not a condition**
+
+> 「値段も安ければ味もいい」 ≠ "if it's cheap, the food is good"  
+> A conditional never pairs two items in this 「AもXば、BもY」 frame.
+:::
+
+---
+
+## 4. 〜でさえ／〜さえ（连……都……）||4. 〜でさえ／〜さえ (Even…)
+
+### 接続||Conjugation
+:::zh
+- 名詞 + さえ / でさえ
+- 名詞 + 助詞（に・と・から等）+ さえ
+- 動詞ます形（去ます）+ さえ + する / しない
+
+※ 「が」「を」被「さえ」替换：「名前**を**知らない」→「名前**さえ**知らない」。  
+※ 「でさえ」多用于主语（人、组织）：「専門家でさえ」「子どもでさえ」。  
+※ 其他助词保留在前面：「家族**に**さえ」「友達**と**さえ」。
+:::
+:::en
+- Noun + さえ / でさえ
+- Noun + particle (に, と, から, etc.) + さえ
+- Verb masu-stem + さえ + する / しない
+
+※ 「が」 and 「を」 are replaced by 「さえ」: 「名前**を**知らない」 → 「名前**さえ**知らない」.  
+※ 「でさえ」 is mostly used with a subject (a person or group): 「専門家でさえ」「子どもでさえ」.  
+※ Other particles stay in front: 「家族**に**さえ」「友達**と**さえ」.
+:::
+
+### 含义||Meaning
+:::zh
+"连……都……"，举出一个极端的例子，暗示"连这个都这样，其他的就更不用说了"。多用于否定或消极的内容（「〜さえない」「〜さえできない」），也可用于肯定（「子どもでさえできる」= 连小孩都会，大人当然会）。
+
+结构：「A（で）さえ〜」
+- A = 最不可能/最起码的那一项
+- 言外之意 = 其他的当然也……
+:::
+:::en
+"Even…" — gives an extreme example and implies "if even this is so, everything else is too." Most common with negative content (「〜さえない」「〜さえできない」), but also used in the affirmative (「子どもでさえできる」 = even a child can do it, so an adult certainly can).
+
+Structure: 「A（で）さえ〜」
+- A = the least likely / most basic case
+- Implication = the rest goes without saying
+:::
+
+### 例句||Example Sentences
+:::zh
+1. この問題は専門家**でさえ**解けないそうだ。（听说这道题连专家都解不出来。）
+2. 忙しくて、昼ご飯を食べる時間**さえ**ない。（忙得连吃午饭的时间都没有。）
+3. 引っ越してきたばかりで、隣の人の名前**さえ**知らない。（刚搬来，连邻居的名字都不知道。）
+4. 会社を辞めることは、まだ家族に**さえ**話していない。（辞职的事连家人都还没告诉。）
+5. こんな簡単な操作は、小学生**でさえ**できる。（这么简单的操作，连小学生都会。）
+6. 彼は謝るどころか、こちらを見**さえ**しなかった。（他别说道歉了，连看都没看我们一眼。）
+:::
+:::en
+1. この問題は専門家**でさえ**解けないそうだ。(I hear even experts can't solve this problem.)
+2. 忙しくて、昼ご飯を食べる時間**さえ**ない。(I'm so busy I don't even have time to eat lunch.)
+3. 引っ越してきたばかりで、隣の人の名前**さえ**知らない。(I've only just moved in, so I don't even know my neighbor's name.)
+4. 会社を辞めることは、まだ家族に**さえ**話していない。(I haven't even told my family yet that I'm quitting.)
+5. こんな簡単な操作は、小学生**でさえ**できる。(Even an elementary school kid can do something this simple.)
+6. 彼は謝るどころか、こちらを見**さえ**しなかった。(Far from apologizing, he didn't even look at us.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| （で）さえ | 连……都…… | 举极端例子，肯定否定都可，最常用 |
+| （で）すら | 连……都…… | 意思同「さえ」，更书面、更生硬，多接否定（N1 Lesson 79） |
+| まで | 连……也（竟然） | 在已有的基础上再加一项，多用于肯定句 |
+| も | 也 | 只是"也"，没有"极端例子"的意味 |
+| 〜さえ〜ば | 只要……就…… | 完全不同的句型：最低条件（N3 Lesson 40） |
+
+> 「子どもでさえ知っている」= 连小孩都知道（大人更应该知道）  
+> 「子どもも知っている」= 小孩也知道（只是并列）  
+> 「家族まで反対した」= 连家人都（竟然）反对了（在别人反对的基础上再加一项）
+
+**「さえ」vs「まで」**
+
+> ○ 名前さえ知らない。（连名字都不知道）  
+> △ 顔は知っているが、名前までは知らない。→ 意思变成"认识脸，但还没熟到知道名字"，不是"连名字都不知道"  
+> ○ 名前まで覚えていてくれた。（连名字都记得）→ 肯定的"甚至"，「まで」自然
+
+**「さえ」vs「〜さえ〜ば」**
+
+> 「時間さえない」= 连时间都没有（极端例子）  
+> 「時間さえあれば行ける」= 只要有时间就能去（最低条件）  
+> 后面接「ば／たら」就是条件句型，要分清。
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| （で）さえ | even | Extreme example; affirmative or negative; the most common |
+| （で）すら | even | Same meaning as 「さえ」 but more written and stiff; mostly with negatives (N1 Lesson 79) |
+| まで | even (going as far as) | Adds one more item on top of others; mostly affirmative |
+| も | also | Just "too"; no sense of an extreme example |
+| 〜さえ〜ば | as long as… | A different pattern: a minimum condition (N3 Lesson 40) |
+
+> 「子どもでさえ知っている」= even children know (so adults should)  
+> 「子どもも知っている」= children know too (plain addition)  
+> 「家族まで反対した」= even my family opposed it (one more on top of the others)
+
+**「さえ」 vs 「まで」**
+
+> ○ 名前さえ知らない。(I don't even know the name.)  
+> △ 顔は知っているが、名前までは知らない。→ means "I know the face, but not as far as the name" — not "I don't even know the name"  
+> ○ 名前まで覚えていてくれた。(They even remembered my name.) → affirmative "even" suits 「まで」
+
+**「さえ」 vs 「〜さえ〜ば」**
+
+> 「時間さえない」= I don't even have time (extreme example)  
+> 「時間さえあれば行ける」= as long as I have time, I can go (minimum condition)  
+> When 「ば」/「たら」 follows, it's the conditional pattern — keep them apart.
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

@@ -1,0 +1,1167 @@
+[
+ {
+  "id": "n4-ck-501",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "じつは かぜを ひいて、きのうから 会社を 休んで いるんです。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "それは いけませんね。お大事に。",
+   "それは よかったですね。",
+   "いいえ、わたしは 元気です。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "其实我感冒了，从昨天开始请假没去公司。"
+    ],
+    "options": [
+     "那可不好，多保重。",
+     "那太好了。",
+     "不，我很健康。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Actually, I caught a cold and I've been off work since yesterday."
+    ],
+    "options": [
+     "Oh, that's too bad. Take care of yourself.",
+     "That's great.",
+     "No, I'm fine."
+    ]
+   }
+  },
+  "why": {
+   "zh": "对生病的人说「それは いけませんね」表示同情，再加「お大事に」（多保重）。",
+   "en": "To someone who is ill you say 「それは いけませんね」 (sorry to hear that) and 「お大事に」 (take care)."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「よかったですね」是听到好消息时说的，对方生病了，不合适。",
+    "en": "「よかったですね」 reacts to good news — he's ill."
+   },
+   {
+    "zh": "生病的是对方，不是问你身体怎么样，说自己很健康答非所问。",
+    "en": "He's the one who is ill; nobody asked how you are."
+   }
+  ],
+  "traps": [
+   "timing",
+   "intent"
+  ]
+ },
+ {
+  "id": "n4-ck-502",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "お待たせしました。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "いいえ、どう いたしまして。",
+   "はい、では しばらく お待ちください。",
+   "いいえ、わたしも 今 来た ところです。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "让你久等了。"
+    ],
+    "options": [
+     "不，不客气。",
+     "好的，那请稍等一下。",
+     "没有，我也刚到。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Sorry to keep you waiting."
+    ],
+    "options": [
+     "No, you're welcome.",
+     "Yes, then please wait a moment.",
+     "Not at all, I just got here myself."
+    ]
+   }
+  },
+  "why": {
+   "zh": "对「お待たせしました」，客气地回答「いいえ」，再说自己「今 来た ところ」（刚到），让对方别在意。",
+   "en": "To 「お待たせしました」 you politely say you weren't waiting long: 「今 来た ところです」 (I just arrived)."
+  },
+  "wrong": [
+   {
+    "zh": "「どう いたしまして」回应的是道谢，不是道歉。",
+    "en": "「どう いたしまして」 answers thanks, not an apology for being late."
+   },
+   {
+    "zh": "「お待ちください」是让别人等的一方（如店员）说的，对方已经到了。",
+    "en": "「お待ちください」 is what someone making you wait says (a clerk) — she has just arrived."
+   },
+   null
+  ],
+  "traps": [
+   "timing",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n4-ck-503",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "じゃあ、きょうは これで。お先に しつれいします。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "はい、おじゃましました。",
+   "おつかれさまでした。",
+   "おはよう ございます。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "那今天就到这里。我先走了。"
+    ],
+    "options": [
+     "好的，打扰了（告辞）。",
+     "辛苦了。",
+     "早上好。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Well, that's it for today. I'm leaving before you."
+    ],
+    "options": [
+     "Yes, sorry for the intrusion (said when leaving).",
+     "Thanks for your hard work.",
+     "Good morning."
+    ]
+   }
+  },
+  "why": {
+   "zh": "同事下班先走时说「お先に しつれいします」，留下的人回答「おつかれさまでした」。",
+   "en": "A colleague leaving work first says 「お先に しつれいします」; the one staying answers 「おつかれさまでした」."
+  },
+  "wrong": [
+   {
+    "zh": "「おじゃましました」是客人离开别人家时说的，这里是公司，而且是要走的人的话。",
+    "en": "「おじゃましました」 is a visitor leaving someone's home — wrong place, and it's the leaver's line."
+   },
+   null,
+   {
+    "zh": "「おはよう ございます」是早上见面时说的，对方要下班回家了。",
+    "en": "「おはよう ございます」 is a morning greeting — he is going home."
+   }
+  ],
+  "traps": [
+   "timing",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n4-ck-504",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "お母さんの けがは もう よく なりましたか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "けがを したんですか。大変でしたね。",
+   "ええ、おかげさまで よく なりました。",
+   "はい、けがを して しまいました。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "你妈妈的伤已经好了吗？"
+    ],
+    "options": [
+     "受伤了吗？真够受的。",
+     "嗯，托您的福，好了。",
+     "是的，受伤了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Is your mother's injury better now?"
+    ],
+    "options": [
+     "She was hurt? That must have been hard.",
+     "Yes, thank you, she's better now.",
+     "Yes, she got hurt."
+    ]
+   }
+  },
+  "why": {
+   "zh": "别人关心家人的身体时，回答「おかげさまで」（托您的福）再说情况。",
+   "en": "When someone asks after your family's health, you answer with 「おかげさまで」 (thanks to you) and how they are."
+  },
+  "wrong": [
+   {
+    "zh": "「大変でしたね」是听到别人受伤时说的同情话，是问候的一方的话；这里你是被问的家人。",
+    "en": "「大変でしたね」 is the sympathy of someone hearing the news — the asker's line; you are the family being asked."
+   },
+   null,
+   {
+    "zh": "问的是现在好了没有，「けがを して しまいました」只说受伤了，没有回答。",
+    "en": "He asks whether she's better now; 「けがを して しまいました」 only says she got hurt."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n4-ck-505",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "お母さん、ちょっと コンビニに 行って くるね。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "いってらっしゃい。気を つけてね。",
+   "おかえり。早かったね。",
+   "いってきます。すぐ もどるね。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "妈妈，我去一下便利店。"
+    ],
+    "options": [
+     "路上小心，早点回来。",
+     "回来啦，好快啊。",
+     "我走了，马上回来。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Mom, I'm just going to the convenience store."
+    ],
+    "options": [
+     "See you. Be careful.",
+     "Welcome back. That was quick.",
+     "I'm off. I'll be right back."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「行って くる」是要出门，送的人说「いってらっしゃい」。",
+   "en": "「行って くるね」 means he's heading out; the one staying says 「いってらっしゃい」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「おかえり」是对回家的人说的，他还没出门。",
+    "en": "「おかえり」 greets someone coming home — he hasn't left yet."
+   },
+   {
+    "zh": "「いってきます」是出门的人自己说的，立场反了。",
+    "en": "「いってきます」 is what the person leaving says — wrong side."
+   }
+  ],
+  "traps": [
+   "timing",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n4-ck-506",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "きょうは どうも おじゃましました。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "どうぞ、上がって ください。",
+   "はい、ごちそうさまでした。",
+   "また 遊びに 来て くださいね。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "今天打扰了。"
+    ],
+    "options": [
+     "请进，请上来。",
+     "好的，谢谢款待。",
+     "下次再来玩啊。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Thank you for having me today."
+    ],
+    "options": [
+     "Please, come on in.",
+     "Yes, thank you for the meal.",
+     "Please come and visit again."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「おじゃましました」（过去式）是客人告辞时说的，主人回答「また 来て ください」。",
+   "en": "「おじゃましました」 (past) is what a guest says when leaving; the host replies 「また 遊びに 来て くださいね」."
+  },
+  "wrong": [
+   {
+    "zh": "「上がって ください」是客人到的时候说的，客人现在要走了。",
+    "en": "「上がって ください」 welcomes a guest arriving — she's leaving."
+   },
+   {
+    "zh": "「ごちそうさまでした」是客人吃完、告辞时对主人说的，你是主人，立场反了。",
+    "en": "「ごちそうさまでした」 is what the guest says to the host — you are the host."
+   },
+   null
+  ],
+  "traps": [
+   "timing",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n4-ck-507",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "ねえ、この 箱、重いから ちょっと 持って くれない？"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "ありがとう。たすかるよ。",
+   "うん、いいよ。どこに 置く？",
+   "ううん、持って いないよ。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "哎，这个箱子很重，能帮我拿一下吗？"
+    ],
+    "options": [
+     "谢谢，帮大忙了。",
+     "嗯，好啊。放哪儿？",
+     "不，我没拿着。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Hey, this box is heavy — could you hold it for me?"
+    ],
+    "options": [
+     "Thanks, that helps.",
+     "Sure. Where should I put it?",
+     "No, I don't have it."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜て くれない？」是朋友之间的请求，答应时说「いいよ」，再问放哪儿。",
+   "en": "「〜て くれない？」 is a casual request; 「うん、いいよ」 accepts it."
+  },
+  "wrong": [
+   {
+    "zh": "「ありがとう、たすかる」是请求的人道谢时说的，立场反了。",
+    "en": "「ありがとう、たすかるよ」 is what the one asking says — wrong side."
+   },
+   null,
+   {
+    "zh": "把「くれない」听成了「持って いない」（没拿着），没听出这是请求。",
+    "en": "Hears 「持って くれない」 as 「持って いない」 (not holding) and misses the request."
+   }
+  ],
+  "traps": [
+   "intent",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n4-ck-508",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "この 作文、先生に 出す 前に 見て もらえますか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "はい、先生に 見て もらいました。",
+   "いいえ、見せて くれませんでした。",
+   "ええ、いいですよ。見せて ください。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这篇作文，交给老师之前能帮我看看吗？"
+    ],
+    "options": [
+     "是的，请老师看过了。",
+     "没有，他没给我看。",
+     "嗯，可以啊。给我看看吧。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Could you look over this essay before I hand it in to the teacher?"
+    ],
+    "options": [
+     "Yes, I had the teacher look at it.",
+     "No, he didn't show it to me.",
+     "Sure. Let me see it."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜て もらえますか」是请求，答应时说「いいですよ」，再让对方把作文给自己看。",
+   "en": "「〜て もらえますか」 is a request; 「ええ、いいですよ。見せて ください」 agrees to it."
+  },
+  "wrong": [
+   {
+    "zh": "说的是自己已经请老师看过了，时态和立场都不对。",
+    "en": "Talks about having had the teacher look at something — past, and the wrong person."
+   },
+   {
+    "zh": "「見せて くれませんでした」是过去的事，也没回答请求。",
+    "en": "「見せて くれませんでした」 is about the past and doesn't answer the request."
+   },
+   null
+  ],
+  "traps": [
+   "intent",
+   "perspective",
+   "tense"
+  ]
+ },
+ {
+  "id": "n4-ck-509",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "今度の 土曜日、みんなで 山に 行くんだけど、いっしょに 行かない？"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "ごめん、その 日は ちょっと……。",
+   "うん、わたしは 山には 行かないよ。",
+   "へえ、土曜日は 楽しかった？"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这个星期六大家要去爬山，一起去吗？"
+    ],
+    "options": [
+     "抱歉，那天有点……",
+     "嗯，我不去山里。",
+     "哦，星期六玩得开心吗？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "We're all going to the mountains this Saturday. Want to come?"
+    ],
+    "options": [
+     "Sorry, that day's a bit…",
+     "Yeah, I'm not going to the mountains.",
+     "Oh, did you have fun on Saturday?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「行かない？」是邀请。「その 日は ちょっと……」是委婉的拒绝，日语里很常见。",
+   "en": "「行かない？」 is an invitation; 「その 日は ちょっと……」 is the usual polite way to turn it down."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "把「行かない？」听成了否定的「不去」，没听出是邀请。",
+    "en": "Takes 「行かない？」 as a plain negative and misses the invitation."
+   },
+   {
+    "zh": "「楽しかった？」是过去式，可是星期六还没到。",
+    "en": "「楽しかった？」 is past, but Saturday hasn't come yet."
+   }
+  ],
+  "traps": [
+   "intent",
+   "tense"
+  ]
+ },
+ {
+  "id": "n4-ck-510",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "この ケーキ、わたしが 作ったんです。よかったら どうぞ。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "どうぞ、たくさん 食べて くださいね。",
+   "いいえ、わたしは 作って いませんよ。",
+   "ありがとう ございます。いただきます。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这个蛋糕是我做的。不嫌弃的话请尝尝。"
+    ],
+    "options": [
+     "请多吃点啊。",
+     "不，我没有做。",
+     "谢谢。那我就不客气了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I made this cake. Please have some if you like."
+    ],
+    "options": [
+     "Please, eat as much as you like.",
+     "No, I didn't make it.",
+     "Thank you. I'll have some."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「よかったら どうぞ」是请对方吃，接受时说「ありがとう ございます。いただきます」。",
+   "en": "「よかったら どうぞ」 offers you some; 「ありがとう ございます。いただきます」 accepts it."
+  },
+  "wrong": [
+   {
+    "zh": "「どうぞ、たくさん 食べて ください」是请客的一方（做蛋糕的人）说的，立场反了。",
+    "en": "「どうぞ、たくさん 食べて ください」 is the offerer's line — wrong side."
+   },
+   {
+    "zh": "没有人问你做没做，只是照搬了「作った」。",
+    "en": "Nobody asked whether you made it — it just echoes 「作った」."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "repeat-word",
+   "intent"
+  ]
+ },
+ {
+  "id": "n4-ck-511",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "あたまが いたいなら、きょうは 早く 帰ったら どうですか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "ありがとう ございます。そう します。",
+   "ええ、きのうも 早く 帰りました。",
+   "じゃあ、帰っても いいですよ。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "要是头疼的话，今天早点回去怎么样？"
+    ],
+    "options": [
+     "谢谢，我就这么办。",
+     "嗯，昨天也早回去了。",
+     "那你可以回去了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "If you have a headache, why don't you go home early today?"
+    ],
+    "options": [
+     "Thank you. I'll do that.",
+     "Yes, I went home early yesterday too.",
+     "Well then, you may go home."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜たら どうですか」是建议，接受时道谢并说「そう します」。",
+   "en": "「〜たら どうですか」 is a suggestion; 「ありがとう ございます。そう します」 accepts it."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "说的是昨天的事，没有回应今天的建议。",
+    "en": "Talks about yesterday and doesn't respond to the suggestion for today."
+   },
+   {
+    "zh": "「帰っても いいですよ」是允许别人回去的话，是上司那一方说的，立场反了。",
+    "en": "「帰っても いいですよ」 gives permission — the boss's line, not hers."
+   }
+  ],
+  "traps": [
+   "tense",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n4-ck-512",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "あしたの パーティーの 店、もう よやくして ある？"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "うん、とても いい 店だったよ。",
+   "うん、きのう 電話して おいたよ。",
+   "えっ、もう よやくして くれたの？"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "明天聚会的店，已经订好了吗？"
+    ],
+    "options": [
+     "嗯，那家店很不错。",
+     "嗯，昨天已经打电话订了。",
+     "咦，你已经帮我订了？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Is the restaurant for tomorrow's party booked yet?"
+    ],
+    "options": [
+     "Yeah, it was a really nice place.",
+     "Yeah, I called them yesterday.",
+     "Oh, you booked it already?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜て ある」问的是有没有预先办好。回答「電話して おいた」说明已经打电话订好了。",
+   "en": "「よやくして ある？」 asks whether it's been done in advance; 「電話して おいたよ」 says he took care of it."
+  },
+  "wrong": [
+   {
+    "zh": "「だった」是过去式，好像聚会已经开过了，可是聚会在明天。",
+    "en": "「店だった」 sounds as if the party already happened — it's tomorrow."
+   },
+   null,
+   {
+    "zh": "问的人是她，不是她替自己订了，立场反了。",
+    "en": "She is asking him; 「よやくして くれたの？」 assumes she did it — wrong way round."
+   }
+  ],
+  "traps": [
+   "tense",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n4-ck-513",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "山田さんは けっこんして いますか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "いいえ、けっこんしきには 行きません。",
+   "はい、来年の 春に します。",
+   "いいえ、まだ して いません。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "山田，你结婚了吗？"
+    ],
+    "options": [
+     "不，我不去参加婚礼。",
+     "是的，明年春天结。",
+     "不，还没结。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Yamada-san, are you married?"
+    ],
+    "options": [
+     "No, I'm not going to the wedding.",
+     "Yes, I'm getting married next spring.",
+     "No, not yet."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「けっこんして いますか」问的是现在的状态（已婚吗）。还没结就说「まだ して いません」。",
+   "en": "「けっこんして いますか」 asks about her present state; 「まだ して いません」 means not yet."
+  },
+  "wrong": [
+   {
+    "zh": "问的是她自己结没结婚，不是去不去别人的婚礼，只是照搬了「けっこん」。",
+    "en": "He asks whether she is married, not whether she's going to a wedding — it just echoes 「けっこん」."
+   },
+   {
+    "zh": "明年才结，现在就是没结婚，说「はい」前后矛盾。",
+    "en": "Marrying next spring means she isn't married now, so 「はい」 contradicts it."
+   },
+   null
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n4-ck-514",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "ねえ、どうして 先生に しかられたの？"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "じゅぎょう中に ねて いたから。",
+   "先生に しかられて、かなしかった。",
+   "わたしは しかって いないよ。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "哎，你为什么被老师骂了？"
+    ],
+    "options": [
+     "因为上课的时候睡觉了。",
+     "被老师骂了，很难过。",
+     "我没有骂人啊。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Hey, why did the teacher tell you off?"
+    ],
+    "options": [
+     "Because I was asleep in class.",
+     "The teacher told me off and I felt sad.",
+     "I didn't tell anyone off."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「しかられた」是被动：她被老师骂了。问的是「どうして」，回答原因「〜から」。",
+   "en": "「しかられた」 is passive — she was scolded. 「どうして」 asks why, so the answer gives a reason with 〜から."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "说的是心情，没有回答「どうして」（为什么）。",
+    "en": "Describes how she felt, not why."
+   },
+   {
+    "zh": "把被动「しかられた」听成了「しかった」（骂别人），方向反了。",
+    "en": "Hears passive 「しかられた」 as active 「しかった」 — the wrong direction."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "question-word"
+  ]
+ },
+ {
+  "id": "n4-ck-515",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "その しごと、わたしに やらせて ください。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "はい、やらせて いただきます。",
+   "たすかります。おねがいします。",
+   "ええ、きのう やって もらいました。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "那份工作，请让我来做吧。"
+    ],
+    "options": [
+     "好的，请让我来做。",
+     "帮大忙了，拜托你了。",
+     "嗯，昨天请人做了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Please let me do that job."
+    ],
+    "options": [
+     "Yes, please let me do it.",
+     "That's a big help. Please do.",
+     "Yes, I had someone do it yesterday."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「〜させて ください」是请对方让自己做，同意时说「たすかります。おねがいします」。",
+   "en": "「やらせて ください」 asks to be allowed to do it; 「たすかります。おねがいします」 gratefully hands it over."
+  },
+  "wrong": [
+   {
+    "zh": "「やらせて いただきます」是想做的人（对方）说的话，立场反了。",
+    "en": "「やらせて いただきます」 is the volunteer's own line — wrong side."
+   },
+   null,
+   {
+    "zh": "对方是主动要帮忙，回答过去的事答非所问。",
+    "en": "He's offering to do the job; talking about yesterday doesn't answer that."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "tense"
+  ]
+ },
+ {
+  "id": "n4-ck-516",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "この 料理、どうやって 作ったんですか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "はい、わたしが 作りました。",
+   "きのうの 夜、作りました。",
+   "やさいを 切って やくだけです。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这道菜是怎么做的？"
+    ],
+    "options": [
+     "是的，是我做的。",
+     "昨天晚上做的。",
+     "只是把蔬菜切了烤一下。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "How did you make this dish?"
+    ],
+    "options": [
+     "Yes, I made it.",
+     "I made it last night.",
+     "You just cut the vegetables and grill them."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「どうやって」问做法，回答具体步骤。",
+   "en": "「どうやって」 asks how; the answer gives the steps."
+  },
+  "wrong": [
+   {
+    "zh": "「はい」回答的是“是不是你做的”，不是怎么做。",
+    "en": "「はい、わたしが」 answers who made it, not how."
+   },
+   {
+    "zh": "回答的是什么时候做的，不是怎么做。",
+    "en": "Answers when, not how."
+   },
+   null
+  ],
+  "traps": [
+   "question-word",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n4-ck-517",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "夏休みは どこかへ 行く よていですか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "ええ、とても 楽しかったです。",
+   "ええ、海に 行こうと 思って います。",
+   "はい、夏休みは 七月からです。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "暑假打算去哪儿吗？"
+    ],
+    "options": [
+     "嗯，非常开心。",
+     "嗯，我打算去海边。",
+     "是的，暑假从七月开始。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Are you planning to go anywhere for the summer vacation?"
+    ],
+    "options": [
+     "Yes, it was a lot of fun.",
+     "Yes, I'm thinking of going to the beach.",
+     "Yes, summer vacation starts in July."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「よていですか」问以后的计划，用「〜ようと 思って います」回答打算。",
+   "en": "「よていですか」 asks about plans; 「行こうと 思って います」 says what she intends to do."
+  },
+  "wrong": [
+   {
+    "zh": "「楽しかった」是过去式，暑假还没到。",
+    "en": "「楽しかった」 is past — the vacation hasn't happened."
+   },
+   null,
+   {
+    "zh": "说的是暑假什么时候开始，没回答去哪儿。",
+    "en": "Says when the vacation starts, not where she's going."
+   }
+  ],
+  "traps": [
+   "tense",
+   "question-word",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n4-ck-518",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "コーヒー、もう 一ぱい いかがですか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "いいえ、もう けっこうです。",
+   "ええ、もう いただきました。",
+   "いいえ、えんりょ しないで ください。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "再来一杯咖啡怎么样？"
+    ],
+    "options": [
+     "不了，已经够了。",
+     "嗯，已经喝过了。",
+     "不，请别客气。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Would you like another cup of coffee?"
+    ],
+    "options": [
+     "No, I'm fine, thank you.",
+     "Yes, I've already had some.",
+     "No, please don't hold back."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「いかがですか」是劝对方再来一杯。「もう けっこうです」不是“很好”，而是客气地拒绝“不用了”。",
+   "en": "「いかがですか」 offers more; 「もう けっこうです」 here means \"no, thank you\" — a polite refusal."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「いただきました」是过去式，没有回答要不要再来一杯。",
+    "en": "「いただきました」 is past and doesn't say whether he wants another."
+   },
+   {
+    "zh": "「えんりょ しないで ください」是劝别人的主人说的话，立场反了。",
+    "en": "「えんりょ しないで ください」 is the host urging a guest — wrong side."
+   }
+  ],
+  "traps": [
+   "intent",
+   "tense",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n4-ck-519",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "田中さん、今 ちょっと 時間 ありますか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "えっと、今 三時半ですね。",
+   "ええ、いいですよ。何ですか。",
+   "はい、少し 時間が かかります。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "田中，现在有点时间吗？"
+    ],
+    "options": [
+     "嗯……现在三点半。",
+     "嗯，可以啊。什么事？",
+     "是的，要花一点时间。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Tanaka-san, do you have a minute?"
+    ],
+    "options": [
+     "Um, it's half past three.",
+     "Sure. What is it?",
+     "Yes, it takes a little time."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「時間 ありますか」问的是有没有空，不是问几点。有空就说「いいですよ。何ですか」。",
+   "en": "「時間 ありますか」 asks if you're free, not what time it is."
+  },
+  "wrong": [
+   {
+    "zh": "把「時間」理解成了钟点，回答了现在几点。",
+    "en": "Takes 「時間」 as clock time and tells the time."
+   },
+   null,
+   {
+    "zh": "「時間が かかります」是需要花时间，照搬了「時間」，答非所问。",
+    "en": "「時間が かかります」 means something takes time — it only echoes 「時間」."
+   }
+  ],
+  "traps": [
+   "intent",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n4-ck-520",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "ねえ、さっき たのんだ 手紙、もう 出して くれた？"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "ううん、ごめん。今から 出して くるね。",
+   "うん、きのう ちゃんと 出して くれたよ。",
+   "ううん、手紙は まだ 来て いないよ。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "哎，刚才拜托你的信，已经帮我寄了吗？"
+    ],
+    "options": [
+     "没有，对不起。我现在去寄。",
+     "嗯，昨天他好好地给寄了。",
+     "没有，信还没到。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Hey, did you post that letter I asked you to?"
+    ],
+    "options": [
+     "No, sorry. I'll go and post it now.",
+     "Yeah, they posted it for me properly yesterday.",
+     "No, the letter hasn't arrived yet."
+    ]
+   }
+  },
+  "why": {
+   "zh": "「出して くれた？」问她有没有替自己寄信。还没寄，就道歉并说「今から 出して くる」。",
+   "en": "「出して くれた？」 asks whether she posted it for him; she hasn't, so she apologizes and goes now."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「出して くれた」是别人为说话人做，她自己回答应该说「出したよ」；而且他「さっき」才拜托，不可能是「きのう」。",
+    "en": "「出して くれたよ」 is the asker's viewpoint (someone did it for me), and he only asked a moment ago, not yesterday."
+   },
+   {
+    "zh": "「来て いない」说的是收信，他问的是寄信。",
+    "en": "「来て いない」 is about receiving a letter; he asked about sending one."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "tense",
+   "repeat-word"
+  ]
+ }
+]

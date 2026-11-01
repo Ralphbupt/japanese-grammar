@@ -1,0 +1,1098 @@
+[
+ {
+  "id": "n1-ck-301",
+  "type": "gaiyou",
+  "scene": "科学館の館長が、展示について話しています。",
+  "question": "館長は何について話していますか。",
+  "lines": [
+   [
+    "F",
+    "科学館では、展示の横に説明のパネルを置くのが当たり前になっています。私たちも長い間、できるだけ詳しく書くことが来館者への親切だと信じてきました。ところが、館内で皆さんの様子を観察してみると、パネルを読み終えた方の多くが、装置にはほとんど触れないまま、次へ進んでしまうんです。説明を読んだだけで、分かった気になってしまうんですね。そこで今回の展示の入れ替えでは、思い切って解説を最小限にとどめ、詳しい仕組みは、体験した後で読める冊子にまとめました。まずは自分の手で動かしてみて、不思議だと感じてから知識に触れていただきたいと考えたからです。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "来館者が展示の装置に触れない理由",
+   "パネルに詳しい説明を書く難しさ",
+   "体験を先にしてもらうための展示の工夫",
+   "体験した後で読む冊子に書かれた内容"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "科学馆的馆长在谈展览。",
+    "question": "馆长在讲什么？",
+    "lines": [
+     "在科学馆，展品旁边放说明展板已经是理所当然的事。我们也一直认为，写得越详细，就越是为观众着想。可是在馆内观察大家，我们发现很多人读完展板后，几乎不碰装置就走向下一个了。光读了说明，就觉得自己懂了。所以这次更换展品，我们下决心把解说压到最少，详细的原理编成一本小册子，体验之后再读。因为我们希望大家先自己动手试试，觉得不可思议之后，再去接触知识。"
+    ],
+    "options": [
+     "观众不碰装置的原因",
+     "在展板上写详细说明的难处",
+     "让观众先体验的展示方法",
+     "体验后读的小册子的内容"
+    ]
+   },
+   "en": {
+    "scene": "The director of a science museum is talking about the exhibits.",
+    "question": "What is the director talking about?",
+    "lines": [
+     "In science museums it has become standard to put an explanatory panel next to each exhibit. We too long believed that writing as much detail as possible was the considerate thing to do for visitors. But when we watched people in the museum, many finished reading the panel and moved on with hardly a touch of the device. Reading the explanation made them feel they'd understood. So in this round of new exhibits we boldly kept the commentary to a minimum and put the detailed workings in a booklet you can read after trying things out. We want people first to work the exhibits with their own hands, feel puzzled, and only then meet the knowledge."
+    ],
+    "options": [
+     "Why visitors don't touch the devices",
+     "How hard it is to write detailed explanations",
+     "How the exhibits are arranged so people try them first",
+     "What is in the booklet to read afterwards"
+    ]
+   }
+  },
+  "why": {
+   "zh": "前半：详细的展板让人「分かった気になって」不碰装置；后半：解说压到最少、原理放进体验后才读的小册子，为的是「まずは自分の手で動かしてみて」。全篇讲的是让人先体验的展示方法。",
+   "en": "First half: detailed panels make people feel they've understood, so they skip the devices. Second half: minimal commentary and a booklet for afterwards, so people 「まずは自分の手で動かしてみて」. The whole talk is about arranging things so people try first."
+  },
+  "wrong": [
+   {
+    "zh": "观众只看展板不动手是开头提出的问题，后面讲的是因此改变了展示方式，这只是一部分。",
+    "en": "Visitors not touching the devices is only the problem raised at the start; the talk goes on to how the exhibits were changed."
+   },
+   {
+    "zh": "她没有说写说明难，而是说详细的说明反而让人不动手。",
+    "en": "She never says explanations are hard to write — she says detailed ones stop people trying."
+   },
+   null,
+   {
+    "zh": "小册子只是做法中的一个细节，内容本身她一句也没讲。",
+    "en": "The booklet is just one detail of the change; she says nothing about what's in it."
+   }
+  ],
+  "traps": [
+   "partial-content",
+   "detail-as-topic"
+  ]
+ },
+ {
+  "id": "n1-ck-302",
+  "type": "gaiyou",
+  "scene": "ラジオで、心理学者が話しています。",
+  "question": "心理学者は何について話していますか。",
+  "lines": [
+   [
+    "M",
+    "年を取るほど一年が短く感じられる、とよく言われますね。その理由としてよく挙げられるのが、五十歳の人にとっての一年は、人生の五十分の一にすぎない、という説明です。分かりやすい説ですが、私はそれだけでは足りないと考えています。子どものころは、見るもの聞くもの、初めてのことばかりでした。新しい経験は記憶に残りやすく、後で振り返ったとき、その時間を長く感じさせるんです。逆に、毎日同じ道を通って、同じ仕事を繰り返していると、一か月がまるごと一つの記憶にまとまってしまう。ですから、通勤の道を一本変えてみる、入ったことのない店に入ってみる。そんな小さな新しさが、時間を取り戻す鍵になるのだと思います。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "人生の長さと、一年の感じ方との関係",
+   "記憶に残りやすくするための勉強の仕方",
+   "新しい経験と、時間の感じ方との関係",
+   "同じことを毎日繰り返すことの大切さ"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "一位心理学家在广播里讲话。",
+    "question": "心理学家在讲什么？",
+    "lines": [
+     "常听人说，年纪越大，越觉得一年过得快。常被举出的理由是：对五十岁的人来说，一年只不过是人生的五十分之一。这个说法好懂，但我认为光这样还不够。小时候，看到的、听到的，全是第一次的事。新的经历容易留在记忆里，事后回想时，会让人觉得那段时间很长。反过来，每天走同样的路、重复同样的工作，一个月就整个归成一段记忆了。所以，上班换一条路走走，进一家没进过的店看看。我认为，这样小小的新鲜感，就是找回时间的关键。"
+    ],
+    "options": [
+     "人生的长度和对一年长短的感觉之间的关系",
+     "为了容易记住的学习方法",
+     "新的经历和对时间的感觉之间的关系",
+     "每天重复同样的事的重要性"
+    ]
+   },
+   "en": {
+    "scene": "A psychologist is speaking on the radio.",
+    "question": "What is the psychologist talking about?",
+    "lines": [
+     "People often say the older you get, the shorter a year feels. The usual explanation is that for a fifty-year-old, a year is only a fiftieth of their life. It's an easy theory to grasp, but I don't think it's enough. As children, nearly everything we saw and heard was new. New experiences stick in the memory, and when we look back they make that time feel long. Conversely, if you walk the same route and repeat the same work every day, a whole month gets lumped into a single memory. So try a different street on your commute, go into a shop you've never been in. I think small bits of novelty like that are the key to getting time back."
+    ],
+    "options": [
+     "How the length of one's life relates to how long a year feels",
+     "How to study so that things stick in the memory",
+     "How new experiences relate to how long time feels",
+     "The importance of repeating the same things every day"
+    ]
+   }
+  },
+  "why": {
+   "zh": "他认为光靠“五十分之一”解释不够：新经历「記憶に残りやすく」让时间显得长，重复则让时间缩成一段记忆，所以建议加入「小さな新しさ」。全篇讲的是新经历和时间感的关系。",
+   "en": "He finds the 'one fiftieth' theory insufficient: new experiences 「記憶に残りやすく」 and stretch time, repetition compresses it, so he recommends 「小さな新しさ」. The talk is about new experiences and the sense of time."
+  },
+  "wrong": [
+   {
+    "zh": "“五十分之一”的说法是他认为「それだけでは足りない」的常见解释，不是他的主题。",
+    "en": "The 'one fiftieth' idea is the common explanation he finds 「それだけでは足りない」, not his topic."
+   },
+   {
+    "zh": "他说新经历容易留在记忆里，但讲的不是学习方法。",
+    "en": "He says new experiences stick in memory, but he isn't talking about study methods."
+   },
+   null,
+   {
+    "zh": "他说每天重复会让一个月归成一段记忆，正好相反。",
+    "en": "He says daily repetition lumps a month into one memory — the opposite."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n1-ck-303",
+  "type": "gaiyou",
+  "scene": "テレビで、インタビュアーが子どものサッカーチームのコーチに話を聞いています。",
+  "question": "コーチは、子どもたちの指導についてどう考えていますか。",
+  "lines": [
+   [
+    "F",
+    "子どもたちを指導するうえで、大切にされていることは何ですか。"
+   ],
+   [
+    "M",
+    "私が選手だったころは、監督の指示は絶対で、理由を尋ねることさえ許されませんでした。おかげで、我慢強さは身についたと思います。ただ、言われたことしかできない選手が多くて、試合で思いがけない展開になると、みんな固まってしまったんです。今の子どもたちに同じやり方をしても、伸びないでしょう。ですから私は、なぜこの練習をするのか、理由はできるだけ言葉で説明するようにしています。とはいえ、試合の中で、一瞬のうちに何を選ぶかという判断だけは、教えようがない。そこばかりは、自分で何度も失敗しながら、身につけてもらうしかないんです。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "我慢強さが身につくので、指示に従わせるのが一番だ",
+   "言葉で伝えられることと、経験で学ぶことは分けるべきだ",
+   "昔のやり方は厳しすぎたので、すべて言葉で教えるべきだ",
+   "失敗から学ばせるため、練習の理由は説明しないほうがいい"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "电视上，采访者在采访一位少儿足球队的教练。",
+    "question": "教练对指导孩子们是怎么想的？",
+    "lines": [
+     "在指导孩子们方面，您最看重的是什么？",
+     "我当球员的时候，教练的指示是绝对的，连问一句理由都不允许。托这个的福，我觉得自己练出了忍耐力。可是，很多球员只会做被吩咐的事，比赛一出现意想不到的局面，大家就僵住了。对现在的孩子用同样的做法，是不会有进步的。所以我尽量用语言说明为什么要做这个练习。话虽如此，比赛中一瞬间选择做什么的判断，是没法教的。只有那部分，只能让他们自己一次次失败着去掌握。"
+    ],
+    "options": [
+     "能练出忍耐力，所以让他们服从指示最好",
+     "应该把能用语言传达的和只能靠经验学到的分开",
+     "过去的做法太严，应该全部用语言教",
+     "为了让他们从失败中学习，最好不说明练习的理由"
+    ]
+   },
+   "en": {
+    "scene": "On TV, an interviewer is talking to the coach of a children's football team.",
+    "question": "What does the coach think about coaching the children?",
+    "lines": [
+     "What do you value most in coaching the children?",
+     "When I was a player, the manager's instructions were absolute — we weren't even allowed to ask why. Thanks to that, I think I learned endurance. But many players could only do what they were told, and when a match took an unexpected turn, everyone froze. Do the same with children today and they won't develop. So I try to explain in words, as far as I can, why we do each drill. That said, the judgement of what to choose in a split second during a match just can't be taught. That part they have to pick up themselves, failing again and again."
+    ],
+    "options": [
+     "It builds endurance, so making them follow orders is best",
+     "One should separate what can be put into words from what only experience teaches",
+     "The old way was too harsh, so everything should be taught in words",
+     "To let them learn from failure, it's better not to explain the drills"
+    ]
+   }
+  },
+  "why": {
+   "zh": "练习的理由「できるだけ言葉で説明する」，比赛中一瞬间的判断「教えようがない」，只能「自分で何度も失敗しながら」掌握。选项把两部分都概括了。",
+   "en": "He explains the reasons for drills 「できるだけ言葉で」; split-second match judgement 「教えようがない」 and must be learned by failing. The option covers both halves."
+  },
+  "wrong": [
+   {
+    "zh": "他承认练出了忍耐力，但接着说那样只会听吩咐，比赛中会僵住。",
+    "en": "He grants it built endurance, but says it left players who froze in matches."
+   },
+   null,
+   {
+    "zh": "他说比赛中的判断「教えようがない」，并不是全部都用语言教。",
+    "en": "He says match judgement 「教えようがない」 — not everything can be taught in words."
+   },
+   {
+    "zh": "他正相反，练习的理由「できるだけ言葉で説明する」；靠失败掌握的只是比赛中的判断。",
+    "en": "The opposite: he explains the reasons for drills; only match judgement is learned by failing."
+   }
+  ],
+  "traps": [
+   "partial-content",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n1-ck-304",
+  "type": "gaiyou",
+  "scene": "ラジオで、女の人が話しています。",
+  "question": "女の人は、便利な道具についてどう考えていますか。",
+  "lines": [
+   [
+    "F",
+    "スマートフォンの地図に頼るようになってから、道が覚えられなくなった、という話をよく耳にします。かく言う私もその一人です。便利な道具が人間の能力を衰えさせる、というのは、ある意味ではその通りなのでしょう。けれども、電卓が広まって暗算をしなくなった私たちが、その分、より複雑な計算に取り組めるようになったように、道具に任せた分だけ、頭はほかのことに使えるようになっているとも言えます。考えるべきなのは、道具を使うことの是非ではないと思うんです。空いた頭を何に使うのか。それを考えないまま、ただ道具に身を任せてしまうこと、そのほうがよほど問題ではないでしょうか。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "道具は能力を衰えさせるので、なるべく頼らないほうがいい",
+   "道具を使えば、誰でも複雑な問題に取り組めるようになる",
+   "地図の道具に頼らず、道を覚える努力をしたほうがいい",
+   "使うかどうかより、それで生まれた余裕の生かし方が大切だ"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一个女人在广播里讲话。",
+    "question": "女人对便利的工具是怎么想的？",
+    "lines": [
+     "常听人说，自从依赖手机地图以后，就记不住路了。说这话的我也是其中之一。便利的工具会让人的能力退化，从某种意义上说确实如此吧。但是，就像计算器普及后我们不再心算，相应地能去处理更复杂的计算一样，交给工具的那部分，也可以说让头脑能用在别的事情上了。我认为该思考的不是用不用工具的对错。空出来的头脑用在什么上？不想这个，只是一味把自己交给工具，那才是更大的问题吧。"
+    ],
+    "options": [
+     "工具会让能力退化，所以最好尽量不依赖",
+     "只要用工具，谁都能处理复杂的问题",
+     "不依赖地图工具，应该努力记路",
+     "比起用不用，怎样利用由此产生的余力更重要"
+    ]
+   },
+   "en": {
+    "scene": "A woman is speaking on the radio.",
+    "question": "What does the woman think about convenient tools?",
+    "lines": [
+     "I often hear people say that since they started relying on smartphone maps, they can't remember routes. I'm one of them, actually. That convenient tools weaken human abilities is, in a sense, true. But just as we stopped doing mental arithmetic when calculators spread and could take on more complex calculations instead, you could say that whatever we hand to a tool frees our minds for other things. What we should think about isn't whether using tools is right or wrong. It's what we use the freed-up mind for. Simply surrendering to the tools without thinking about that — isn't that far more of a problem?"
+    ],
+    "options": [
+     "Tools weaken our abilities, so we should rely on them as little as possible",
+     "With tools, anyone can take on complex problems",
+     "We should make an effort to learn routes without map apps",
+     "What matters is less whether we use them than how we use the room they free up"
+    ]
+   }
+  },
+  "why": {
+   "zh": "她说该想的不是「道具を使うことの是非」，而是「空いた頭を何に使うのか」；不想这个就交给工具，才是「よほど問題」。",
+   "en": "She says the question isn't 「道具を使うことの是非」 but 「空いた頭を何に使うのか」 — surrendering to tools without thinking about that is the real problem."
+  },
+  "wrong": [
+   {
+    "zh": "她承认「ある意味ではその通り」，但接着说问题不在用不用工具。",
+    "en": "She grants it's true 「ある意味では」, but then says the issue isn't whether to use tools."
+   },
+   {
+    "zh": "计算器只是例子，她并没有说用了工具就自然能做复杂的事；关键是自己去想怎么用空出来的头脑。",
+    "en": "The calculator is only an example; she doesn't say tools make anyone capable — the point is deciding how to use the freed mind."
+   },
+   {
+    "zh": "地图只是开头的例子，她没有建议不用地图去记路。",
+    "en": "The map is just the opening example; she never advises learning routes without it."
+   },
+   null
+  ],
+  "traps": [
+   "denied-guess",
+   "detail-as-topic"
+  ]
+ },
+ {
+  "id": "n1-ck-305",
+  "type": "gaiyou",
+  "scene": "写真コンテストの表彰式で、審査員が話しています。",
+  "question": "審査員は何について話していますか。",
+  "lines": [
+   [
+    "M",
+    "今回、応募作品のレベルが年々上がっていることを、改めて実感いたしました。カメラの性能が上がったおかげで、ピントや明るさで失敗している作品は、ほとんど見当たりません。ただ、率直に申し上げますと、どれも上手なのに、どれも似通っている、という印象を受けたのも事実です。人気のある場所で、よく見かける角度から撮られた写真が多いんですね。そうした中で私たちが大賞に選んだのは、技術的にはまだ粗さの残る一枚でした。それでも、撮った方がその瞬間に何に心を動かされたのかが、見る側にまっすぐ伝わってくる。審査員全員の意見が一致したのは、まさにその点だったのです。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "技術より撮る人の感動が伝わる写真を選んだこと",
+   "応募作品が似たものばかりになってしまう原因",
+   "カメラの性能が上がって、失敗した写真が減ったこと",
+   "技術的に粗さのある写真を撮らないための注意"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在摄影比赛的颁奖典礼上，一位评委在讲话。",
+    "question": "评委在讲什么？",
+    "lines": [
+     "这次我再次切实感受到，参赛作品的水平一年比一年高。多亏相机性能提高，对焦或亮度失败的作品几乎看不到。不过，坦率地说，我也确实有这样的印象：每一张都拍得好，可每一张都很相似。在热门的地方、从常见的角度拍的照片很多。在这样的作品中，我们选为大奖的，是一张技术上还有些粗糙的照片。尽管如此，拍摄者在那一瞬间被什么打动了，能直接传达给看的人。全体评委意见一致的，正是这一点。"
+    ],
+    "options": [
+     "比起技术，更看重能传达拍摄者感动的照片",
+     "参赛作品都变得相似的原因",
+     "相机性能提高，失败少了",
+     "怎样避免拍出技术粗糙的照片"
+    ]
+   },
+   "en": {
+    "scene": "A judge is speaking at the awards ceremony of a photo contest.",
+    "question": "What is the judge talking about?",
+    "lines": [
+     "This time I was struck once again by how the standard of entries rises every year. Thanks to better cameras, there are hardly any shots that fail on focus or exposure. Frankly, though, it's also true that I came away feeling they were all skilful and all alike — many were taken at popular spots from familiar angles. Among them, the one we chose for the grand prize was a picture that is still technically rough. And yet what moved the photographer at that moment comes straight across to the viewer. That is exactly the point on which all the judges agreed."
+    ],
+    "options": [
+     "That photos conveying what moved the photographer were valued over technique",
+     "Why the entries all end up looking alike",
+     "That better cameras mean fewer failed shots",
+     "Tips for avoiding technically rough photos"
+    ]
+   }
+  },
+  "why": {
+   "zh": "他先说作品都好但「どれも似通っている」，再说大奖是「技術的にはまだ粗さの残る」一张，因为拍摄者被什么打动「まっすぐ伝わってくる」。全篇讲的是评选看重的是什么。",
+   "en": "He says the entries are skilful but 「どれも似通っている」, then that the winner is technically rough yet what moved the photographer 「まっすぐ伝わってくる」. The talk is about what the judging valued."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "作品相似只是前半的印象，后半讲大奖为什么选那一张；而且原因他只是顺带提了一句。",
+    "en": "Entries looking alike is only the first-half impression; the talk goes on to why the winner was chosen."
+   },
+   {
+    "zh": "这是开头的一个细节，不是讲话的主题。",
+    "en": "That's a detail at the start, not the topic."
+   },
+   {
+    "zh": "大奖恰恰是技术粗糙的照片，他没有讲怎样避免粗糙。",
+    "en": "The winner is the rough photo — he gives no tips for avoiding roughness."
+   }
+  ],
+  "traps": [
+   "partial-content",
+   "detail-as-topic"
+  ]
+ },
+ {
+  "id": "n1-ck-306",
+  "type": "gaiyou",
+  "scene": "ラジオで、旅行作家が話しています。",
+  "question": "旅行作家は何について話していますか。",
+  "lines": [
+   [
+    "M",
+    "旅に出る前に、行きたい場所を調べ尽くして、分刻みの予定を立てる方が増えているようです。限られた休みを無駄にしたくない、というお気持ちはよく分かります。ただ、そういう旅の話を伺うと、写真で見たとおりの景色を確かめて回っただけで終わってしまった、という感想が意外に多いんですね。私がこれまでの旅で一番よく覚えているのは、乗るはずのバスを逃して、仕方なく入った食堂で、地元の人と話し込んだ午後のことです。予定にない出来事というのは、計画を詰め込みすぎると、起きる余地がなくなってしまう。ですから私は、一日のうち半分ぐらいは、あえて何も決めずにおくことにしているんです。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "限られた休みを無駄なく使うための計画の立て方",
+   "予定を決めすぎず、偶然に出会う余地を残す旅",
+   "旅先で地元の人と親しくなるための工夫",
+   "写真で見た景色と実際の景色との違い"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "一位旅行作家在广播里讲话。",
+    "question": "旅行作家在讲什么？",
+    "lines": [
+     "出门旅行前把想去的地方查个遍、定下精确到分钟的日程的人，好像越来越多了。不想浪费有限的假期，这种心情我很理解。不过，听这样旅行的人讲，意外地常有人说，结果只是一个个去确认了和照片上一样的风景。我至今的旅行中记得最清楚的，是错过了本该坐的公交车，没办法走进一家小饭馆，和当地人聊了一下午的事。计划里没有的事，如果日程排得太满，就没有发生的余地了。所以我一天里大约有一半时间，会特意什么都不定。"
+    ],
+    "options": [
+     "怎样制定计划，不浪费有限的假期",
+     "不把日程定得太死、留出偶遇余地的旅行",
+     "在旅行地和当地人变熟的方法",
+     "照片上的风景和实际风景的不同"
+    ]
+   },
+   "en": {
+    "scene": "A travel writer is speaking on the radio.",
+    "question": "What is the travel writer talking about?",
+    "lines": [
+     "More and more people seem to research every place they want to visit and plan their trips to the minute. I understand not wanting to waste limited holidays. But when I hear about such trips, a surprising number of people say it ended up being just going round confirming scenery exactly as it looked in the photos. What I remember best from all my travels is the afternoon I missed the bus I was meant to catch, went into a little eatery for want of anything better, and ended up deep in conversation with the locals. If you pack your plans too full, unplanned things have no room to happen. So I make a point of leaving about half of each day deliberately undecided."
+    ],
+    "options": [
+     "How to plan so as not to waste limited holidays",
+     "Travel that doesn't over-plan and leaves room for chance",
+     "Ways to get to know local people when travelling",
+     "How scenery in photos differs from the real thing"
+    ]
+   }
+  },
+  "why": {
+   "zh": "排得太满的旅行只是「確かめて回っただけ」；没计划的事「起きる余地がなくなってしまう」，所以他「あえて何も決めずにおく」。全篇讲的是留出偶遇余地的旅行。",
+   "en": "Over-planned trips end up just 「確かめて回っただけ」; unplanned things lose their 「余地」, so he leaves half the day 「あえて何も決めずに」. The talk is about travel that leaves room for chance."
+  },
+  "wrong": [
+   {
+    "zh": "他理解不想浪费假期的心情，但讲的正是不要排得太满。",
+    "en": "He understands not wanting to waste holidays, but his point is precisely not to over-plan."
+   },
+   null,
+   {
+    "zh": "和当地人聊天只是他举的经历，不是主题。",
+    "en": "Talking with locals is just the anecdote he tells, not the topic."
+   },
+   {
+    "zh": "他说的是“和照片一样的风景”只是去确认，没讲两者的不同。",
+    "en": "He says people only confirm scenery 'as in the photos' — he doesn't compare the two."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n1-ck-307",
+  "type": "gaiyou",
+  "scene": "ラジオで、ピアニストが話しています。",
+  "question": "ピアニストは、演奏についてどう考えていますか。",
+  "lines": [
+   [
+    "F",
+    "演奏の話になると、楽譜に忠実に弾くべきか、自分なりの解釈を加えるべきか、とよく聞かれます。でも私は、その二つのどちらかを選ぶ、という考え方自体に、少し違和感があるんです。たとえば、二百年前の楽器と今のピアノとでは、音の伸び方がまるで違います。楽譜の指示を一つ一つ正確に守っても、作曲家が思い描いた響きにはならないことがある。かといって、自分の好みで勝手に変えてしまえば、それはもう別の曲です。私が目指しているのは、その曲が初めて演奏されたときに聴き手が味わった驚きや喜びを、今の聴き手にも味わってもらうこと。そのためなら、ある所では楽譜どおりに、ある所では思い切った工夫を選ぶ、ということなんです。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "楽譜どおりでは響きが違うので、自由に弾くべきだ",
+   "作曲家の意図を守るため、なるべく楽譜どおりに弾くべきだ",
+   "楽器による響きの違いを、聴き手に知ってもらうべきだ",
+   "初めて聴いた人と同じ感動が届くよう、弾き方を選ぶべきだ"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一位钢琴家在广播里讲话。",
+    "question": "钢琴家对演奏是怎么想的？",
+    "lines": [
+     "一谈到演奏，常有人问我：应该忠实于乐谱弹奏，还是加入自己的诠释？可是，我对“二者选一”这种想法本身就有点不以为然。比如说，两百年前的乐器和现在的钢琴，声音的延续方式完全不同。就算一条条准确地遵守乐谱的指示，有时也弹不出作曲家心中的音响。话虽如此，如果按自己的喜好随意改动，那就已经是另一首曲子了。我追求的，是让现在的听众也尝到这首曲子首次演奏时听众尝到的那种惊讶和喜悦。为此，有的地方照谱弹，有的地方选择大胆的处理。"
+    ],
+    "options": [
+     "照谱弹音响不一样，所以应该自由地弹",
+     "为了守住作曲家的意图，应尽量照谱弹",
+     "应该让听众了解乐器带来的音响差异",
+     "应该选择弹法，让听众得到和最初的听众一样的感动"
+    ]
+   },
+   "en": {
+    "scene": "A pianist is speaking on the radio.",
+    "question": "What does the pianist think about performing?",
+    "lines": [
+     "When performing comes up, people often ask me whether one should play faithfully to the score or add one's own interpretation. But I feel a little uneasy about the very idea of choosing one or the other. For example, an instrument from two hundred years ago and a modern piano sustain notes completely differently. Even if you follow each marking in the score precisely, it sometimes won't produce the sound the composer imagined. Yet if you change things to suit your own taste, it's a different piece. What I aim for is that today's listeners experience the surprise and joy that listeners felt when the piece was first performed. For that, I'll play exactly as written in one place and make a bold choice in another."
+    ],
+    "options": [
+     "Playing as written sounds different, so one should play freely",
+     "To respect the composer's intent, one should keep to the score as much as possible",
+     "Listeners should be made aware of how instruments differ in sound",
+     "One should choose how to play so listeners feel what the first audience felt"
+    ]
+   }
+  },
+  "why": {
+   "zh": "她对「どちらかを選ぶ」的想法「違和感がある」，目标是让现在的听众尝到「初めて演奏されたときに聴き手が味わった驚きや喜び」，为此照谱、大胆处理都用。",
+   "en": "She's uneasy with 'choosing one', aims for today's listeners to feel what the first audience did, and plays as written or boldly as that requires."
+  },
+  "wrong": [
+   {
+    "zh": "她也说按自己的喜好随意改就成了「別の曲」，并不主张自由弹。",
+    "en": "She also says changing things to taste makes 「別の曲」 — she doesn't advocate playing freely."
+   },
+   {
+    "zh": "她说照谱一条条遵守也可能弹不出作曲家心中的音响，并不主张尽量照谱。",
+    "en": "She says following every marking may still miss the composer's sound — not 'as written as possible'."
+   },
+   {
+    "zh": "乐器的差异只是例子，她没有说要让听众了解这一点。",
+    "en": "The instrument difference is only an example; she never says listeners should learn about it."
+   },
+   null
+  ],
+  "traps": [
+   "twisted",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n1-ck-308",
+  "type": "gaiyou",
+  "scene": "大学の授業で、先生が話しています。",
+  "question": "先生は何について話していますか。",
+  "lines": [
+   [
+    "M",
+    "以前、ある村に残る古い記録を調べていたときのことです。田畑の収穫や川の工事のことは、毎年細かく記されているのに、ある十年間だけ、よその村との取引についての記述が、ぱったり途絶えているんです。最初は、単なる書き漏らしだろうと思っていました。ところが、周りの村の資料と照らし合わせていくと、ちょうどその時期に、村の暮らしの仕組みが大きく変わっていたことが見えてきた。記録を書く人にとって、当たり前すぎることや、できれば書きたくないことは、紙の上には残らないものです。つまり、史料が黙っている部分こそ、時には書かれた言葉以上に、多くを語ってくれるのです。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "古い記録に書き漏らしが多い理由",
+   "ある村の暮らしの仕組みが変わった時期",
+   "周りの村の資料を比べるという研究方法",
+   "記録に残っていないことから読み取れること"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "在大学的课上，老师在讲话。",
+    "question": "老师在讲什么？",
+    "lines": [
+     "以前，我在调查某个村子留下的旧记录时，有过这么一件事。田地的收成、河道的工程，每年都记得很细，可唯独有十年，关于和别的村子交易的记载突然断了。起初我以为只是漏写了。可是，和周围村子的资料一对照，就发现恰好在那段时期，村里生活的结构发生了很大的变化。对写记录的人来说，太理所当然的事、或者可能的话不想写的事，是不会留在纸上的。也就是说，史料沉默的部分，有时反而比写下来的文字诉说得更多。"
+    ],
+    "options": [
+     "旧记录里漏写多的原因",
+     "某个村子生活结构发生变化的时期",
+     "比较周围村子资料的研究方法",
+     "能从没有留在记录里的事情中读出的东西"
+    ]
+   },
+   "en": {
+    "scene": "A professor is speaking in a university class.",
+    "question": "What is the professor talking about?",
+    "lines": [
+     "Once, when I was going through old records kept in a certain village, I found that while harvests and river works were noted in detail every year, for one ten-year stretch the entries about trade with other villages suddenly stopped. At first I assumed it was simply an omission. But as I compared them with records from neighbouring villages, it emerged that exactly then the way village life was organised had changed greatly. Things too obvious to the record-keeper, or things they'd rather not write, don't make it onto paper. In other words, it's the parts where the sources fall silent that sometimes tell us more than the written words."
+    ],
+    "options": [
+     "Why old records have so many omissions",
+     "When the way of life in a certain village changed",
+     "The research method of comparing records from neighbouring villages",
+     "What can be read from what the records leave out"
+    ]
+   }
+  },
+  "why": {
+   "zh": "通过记录突然中断的例子，结论是「史料が黙っている部分こそ……多くを語ってくれる」：没写下来的地方也能读出东西。",
+   "en": "Through the example of entries suddenly stopping, he concludes 「史料が黙っている部分こそ……多くを語ってくれる」 — what's left out can be read too."
+  },
+  "wrong": [
+   {
+    "zh": "“漏写”是他起初的猜测，后来被推翻了。",
+    "en": "An omission was his first guess, which turned out wrong."
+   },
+   {
+    "zh": "村子的变化是讲解用的例子，不是主题。",
+    "en": "The village's change is the example, not the topic."
+   },
+   {
+    "zh": "对照资料只是发现问题的经过，他讲的不是方法。",
+    "en": "Comparing records is just how he found out — he isn't teaching a method."
+   },
+   null
+  ],
+  "traps": [
+   "detail-as-topic",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n1-ck-309",
+  "type": "gaiyou",
+  "scene": "家で、夫と妻が話しています。",
+  "question": "夫は、娘がピアノをやめることについてどう考えていますか。",
+  "lines": [
+   [
+    "F",
+    "ねえ、ゆいがまた、ピアノやめたいって言い出したの。"
+   ],
+   [
+    "M",
+    "またか。今度は何が嫌だって？"
+   ],
+   [
+    "F",
+    "練習がつまらないんだって。でも、ここでやめさせたら、嫌なことからすぐ逃げる癖がつきそうで。"
+   ],
+   [
+    "M",
+    "うーん、その心配も分かるけどね。でも、嫌々続けさせて、ピアノそのものが嫌いになっちゃったら、元も子もないだろう。"
+   ],
+   [
+    "F",
+    "じゃあ、やめさせるの？"
+   ],
+   [
+    "M",
+    "いや、すぐにってわけじゃないよ。来月、発表会があるんだろう？　まずはそれをやり遂げさせて、それでもやめたいって言うなら、そのときは本人の気持ちを尊重してやったらどうかな。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "嫌なことから逃げる癖がつくので、やめさせるべきではない",
+   "嫌がっているのなら、すぐにでもやめさせたほうがいい",
+   "区切りまでやらせて、その先は本人の意思に任せればいい",
+   "発表会には出させずに、今のうちにやめさせたほうがいい"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在家里，丈夫和妻子在说话。",
+    "question": "丈夫对女儿不学钢琴是怎么想的？",
+    "lines": [
+     "哎，小唯又说不想学钢琴了。",
+     "又来了。这次是哪儿不喜欢？",
+     "说练琴没意思。可是，要是现在让她放弃，我怕她养成一遇到不喜欢的事就逃的习惯。",
+     "嗯，你的担心我也明白。可是，硬让她勉强学下去，要是连钢琴本身都讨厌了，那就得不偿失了。",
+     "那就让她不学了？",
+     "不，不是马上。下个月有汇报演出吧？先让她把那个完成，如果那样还说不想学，到时候就尊重她自己的想法吧，你看怎么样？"
+    ],
+    "options": [
+     "会养成逃避的习惯，所以不应该让她放弃",
+     "既然她不愿意，最好马上就让她放弃",
+     "让她坚持到一个段落，之后交给她自己决定",
+     "不让她参加汇报演出，趁现在让她放弃"
+    ]
+   },
+   "en": {
+    "scene": "A husband and wife are talking at home.",
+    "question": "What does the husband think about their daughter quitting piano?",
+    "lines": [
+     "Hey, Yui's saying she wants to quit piano again.",
+     "Again? What's the problem this time?",
+     "She says practising is boring. But if we let her quit now, I'm afraid she'll get into the habit of running away from anything she doesn't like.",
+     "Hmm, I understand the worry. But if we make her keep going against her will and she ends up hating the piano itself, we'll have lost everything.",
+     "So we let her quit?",
+     "No, not right away. There's a recital next month, isn't there? Let her see that through first, and if she still wants to quit after that, why don't we respect her wishes then?"
+    ],
+    "options": [
+     "She'd learn to run from things she dislikes, so she shouldn't be allowed to quit",
+     "If she doesn't want to, she should be allowed to quit right away",
+     "Let her go on to a natural break, then leave it up to her",
+     "She should quit now, without doing the recital"
+    ]
+   }
+  },
+  "why": {
+   "zh": "丈夫不赞成马上放弃，也不想硬逼她：先让她完成下个月的汇报演出，之后还想放弃就「本人の気持ちを尊重」。选项把演出说成「区切り」。",
+   "en": "He's against quitting at once and against forcing her: finish next month's recital first, then 「本人の気持ちを尊重」. The option paraphrases the recital as 「区切り」."
+  },
+  "wrong": [
+   {
+    "zh": "这是妻子的担心，丈夫说「分かるけど」，接着提出了不同的意见。",
+    "en": "That's the wife's worry; he says he understands, then offers a different view."
+   },
+   {
+    "zh": "妻子问「やめさせるの？」时，他说「すぐにってわけじゃない」。",
+    "en": "When asked whether to let her quit, he says 「すぐにってわけじゃない」."
+   },
+   null,
+   {
+    "zh": "他正相反，要她「まずはそれをやり遂げさせて」。",
+    "en": "The opposite — he wants her to see the recital through first."
+   }
+  ],
+  "traps": [
+   "attitude-combo",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-ck-310",
+  "type": "gaiyou",
+  "scene": "ラジオで、アナウンサーがロボットの研究者に話を聞いています。",
+  "question": "研究者は、ロボットについてどう考えていますか。",
+  "lines": [
+   [
+    "F",
+    "先生の研究室のロボットは、あえて人の顔をしていないそうですね。"
+   ],
+   [
+    "M",
+    "ええ。以前は、できるだけ人間そっくりに作ることを目指していたんです。表情も、肌の感じも。ところが、実際に高齢者の施設で使っていただくと、似ていれば似ているほど、かえって気味が悪いと言われてしまいまして。ほんの少しの不自然さが、目立ってしまうんでしょうね。それで方針を改めて、目は丸い光だけ、声もはっきり機械だと分かるものにしました。すると、皆さん、まるで昔からの知り合いのように、気軽に話しかけてくださるようになったんです。人に受け入れられるかどうかは、どれだけ人に近いかでは決まらない。今はそう考えています。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "機械らしさを残したほうが、かえって親しまれやすい",
+   "人そっくりにするには、もっと技術を磨く必要がある",
+   "高齢者が使いやすいよう、操作を簡単にすべきだ",
+   "気味悪く思われないよう、表情をもっと自然にすべきだ"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "广播里，播音员在采访一位机器人研究者。",
+    "question": "研究者对机器人是怎么想的？",
+    "lines": [
+     "听说您研究室的机器人，特意没有做成人的脸。",
+     "是的。以前我们的目标是尽可能做得和人一模一样，表情也好，皮肤的质感也好。可是实际放到老人院使用后，被说越像反而越让人发毛。大概是一点点的不自然就会很显眼吧。所以我们改变了方针，眼睛只是两个圆圆的光点，声音也做成一听就知道是机器的。结果，大家就像对老熟人一样，很随意地跟它搭话了。能不能被人接受，不是由它多像人决定的。我现在是这么想的。"
+    ],
+    "options": [
+     "保留机器的样子，反而更容易让人亲近",
+     "要做得和人一样，还需要提高技术",
+     "为了方便老人使用，应该让操作变简单",
+     "为了不让人发毛，应该让表情更自然"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, an announcer is interviewing a robotics researcher.",
+    "question": "What does the researcher think about robots?",
+    "lines": [
+     "I hear the robots in your lab deliberately don't have human faces.",
+     "Yes. We used to aim to make them as human-like as possible — the expressions, the feel of the skin. But when they were actually used in a care home for the elderly, people told us the more lifelike they were, the creepier they found them. I suppose the slightest unnaturalness stands out. So we changed course: the eyes are just round lights, and the voice is clearly a machine's. After that, people started chatting to them casually, like old acquaintances. Whether people accept a robot isn't decided by how close to human it is. That's what I think now."
+    ],
+    "options": [
+     "Keeping it machine-like actually makes it easier to warm to",
+     "Making it truly human-like needs better technology",
+     "Operation should be simplified so elderly people can use it",
+     "Its expressions should be made more natural so people don't find it creepy"
+    ]
+   }
+  },
+  "why": {
+   "zh": "越像人越「気味が悪い」，改成一听一看就是机器之后，大家「気軽に話しかけて」；结论是被接受与否「どれだけ人に近いかでは決まらない」。",
+   "en": "The more lifelike, the creepier; once clearly a machine, people chatted 「気軽に」. He concludes acceptance 「どれだけ人に近いかでは決まらない」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "他提到一点不自然就显眼，但结论是不再追求像人，而不是继续改进技术。",
+    "en": "He notes small flaws stand out, but concludes against chasing likeness — not for better tech."
+   },
+   {
+    "zh": "老人院只是使用的场所，他没讲操作难易。",
+    "en": "The care home is just where they were used; he says nothing about ease of operation."
+   },
+   {
+    "zh": "他正相反，把表情去掉，只留圆形的光点。",
+    "en": "The opposite: he removed the expressions, leaving just round lights."
+   }
+  ],
+  "traps": [
+   "twisted",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-ck-311",
+  "type": "gaiyou",
+  "scene": "講演会で、家計の専門家が話しています。",
+  "question": "専門家は何について話していますか。",
+  "lines": [
+   [
+    "F",
+    "節約を始めても長続きしない、というご相談をよくいただきます。お話を伺うと、皆さん、コーヒー一杯、雑誌一冊といった、小さな楽しみから削っていらっしゃるんですね。でも、それで浮くお金はわずかなのに、毎日がずいぶん味気なくなる。そして結局、その反動で大きな買い物をしてしまう、というのがよくある流れです。私がお勧めしているのは、まず一か月、何にお金を使ったかと、そのときうれしかったかどうかを書き出してみることです。そうすると、なんとなく払い続けていたけれど、なくても困らないものが見えてきます。削るのはそこなんです。逆に、自分を本当に満たしてくれる出費は、堂々と続けていいんですよ。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "小さな出費を減らして、お金をためる方法",
+   "小さな楽しみを我慢して、節約を続けるこつ",
+   "大きな買い物をしないための心構え",
+   "自分にとって必要な出費を見分けること"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "在讲座上，一位家庭理财专家在讲话。",
+    "question": "专家在讲什么？",
+    "lines": [
+     "常有人来咨询，说开始节约了却坚持不下去。听他们一说，大家都是从一杯咖啡、一本杂志这样的小乐趣开始削减的。可是，这样省下的钱很少，每天却变得索然无味。结果反弹，买了大件东西——这是常见的过程。我推荐的是，先用一个月，把钱花在什么上、当时高不高兴写出来。这样一来，就能看出那些一直不知不觉在付、但没有也无所谓的东西。要削减的是那些。反过来，真正让自己满足的开销，大可以理直气壮地继续。"
+    ],
+    "options": [
+     "减少小额开销来存钱的方法",
+     "忍住小乐趣、坚持节约的诀窍",
+     "避免买大件东西的心态",
+     "分辨对自己来说必要的开销"
+    ]
+   },
+   "en": {
+    "scene": "A household-finance expert is speaking at a lecture.",
+    "question": "What is the expert talking about?",
+    "lines": [
+     "I often hear from people who start saving but can't keep it up. When I ask, they've all started by cutting small pleasures — a cup of coffee, a magazine. But the money that frees up is tiny, while every day becomes rather dreary. And then the rebound comes and they make a big purchase — that's the usual pattern. What I recommend is first, for one month, writing down what you spent money on and whether it made you happy at the time. Then you start to see the things you've kept paying for without thinking but wouldn't miss. That's what you cut. Conversely, spending that truly satisfies you, you can carry on with, no apology needed."
+    ],
+    "options": [
+     "How to save money by cutting small expenses",
+     "Tips for keeping up savings by giving up small pleasures",
+     "The right mindset to avoid big purchases",
+     "Telling apart the spending that matters to you"
+    ]
+   }
+  },
+  "why": {
+   "zh": "她建议把开销和当时「うれしかったかどうか」写出来，削减「なくても困らないもの」，「自分を本当に満たしてくれる出費」照样继续。全篇讲的是分辨该花的钱。",
+   "en": "She advises noting each expense and whether it made you happy, cutting what you 「なくても困らない」, and keeping 「自分を本当に満たしてくれる出費」. The talk is about telling which spending matters."
+  },
+  "wrong": [
+   {
+    "zh": "她说从小乐趣削减省不了多少钱，还会反弹，正好相反。",
+    "en": "She says cutting small pleasures saves little and backfires — the opposite."
+   },
+   {
+    "zh": "她说削减小乐趣会让日子「味気なくなる」、还会反弹，正是坚持不下去的原因。",
+    "en": "She says cutting small pleasures makes life dreary and backfires: that is why saving fails."
+   },
+   {
+    "zh": "买大件只是反弹的一个例子，不是主题。",
+    "en": "The big purchase is just an example of the rebound, not the topic."
+   },
+   null
+  ],
+  "traps": [
+   "twisted",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n1-ck-312",
+  "type": "gaiyou",
+  "scene": "ホテルで、支配人と女の人が話しています。",
+  "question": "支配人は、接客のマニュアルについてどう考えていますか。",
+  "lines": [
+   [
+    "F",
+    "支配人、新人向けの接客マニュアルですが、もっと細かく書いたほうがいいでしょうか。先月、お客様への対応で迷ってしまった新人がいまして。"
+   ],
+   [
+    "M",
+    "へえ、どんな場面だったの？"
+   ],
+   [
+    "F",
+    "お子さん連れのお客様に、レストランで、決まりにない席の移動を頼まれて、どうしていいか分からなかったようです。"
+   ],
+   [
+    "M",
+    "なるほどね。でも、ああいう場面を一つ一つ書き出していったら、きりがないよ。それに、書いてないことはしちゃいけないんだ、って思わせてしまうのも心配でね。"
+   ],
+   [
+    "F",
+    "では、マニュアルは今のままで？"
+   ],
+   [
+    "M",
+    "安全とか料金とか、絶対に守ってほしいことは、きちんと書く。そのうえで、それ以外のことは、お客様のためになるかどうかで、自分で判断してかまわない、ってひとこと、はっきり書いておきたいね。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "新人が迷わないよう、あらゆる場面を細かく書くべきだ",
+   "守るべきことだけを示し、あとは現場の判断に任せたい",
+   "書いてもきりがないので、マニュアルはなくしてもいい",
+   "決まりにない頼みは、断るようにはっきり書くべきだ"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在酒店里，经理和一个女人在说话。",
+    "question": "经理对接待客人的手册是怎么想的？",
+    "lines": [
+     "经理，给新人的接待手册，是不是写得更细一些比较好？上个月有个新人在接待客人时不知所措。",
+     "哦，是什么情况？",
+     "在餐厅里，带孩子的客人提出要换到规定之外的座位，他好像不知道该怎么办。",
+     "原来如此。不过，那样的情况一个个写出来的话，就没完没了了。而且，我也担心会让他们以为“没写的事就不能做”。",
+     "那么，手册就维持现状？",
+     "安全啦、费用啦，这些一定要遵守的事写清楚。在此基础上，我想明确写上一句：除此之外的事，可以根据是否对客人有益自己判断。"
+    ],
+    "options": [
+     "为了让新人不迷茫，应该把所有情况都写细",
+     "只写出必须遵守的，其余交给一线自己判断",
+     "写也写不完，所以手册取消也可以",
+     "规定之外的请求，应该明确写上要拒绝"
+    ]
+   },
+   "en": {
+    "scene": "At a hotel, the manager and a woman are talking.",
+    "question": "What does the manager think about the customer-service manual?",
+    "lines": [
+     "Sir, about the service manual for new staff — should we make it more detailed? Last month one of the new staff didn't know how to handle a guest.",
+     "Oh, what was the situation?",
+     "In the restaurant, a guest with children asked to move to a seat that the rules don't cover, and he didn't know what to do.",
+     "I see. But if we wrote out every situation like that, there'd be no end to it. And I'd worry it makes them think anything not written down is forbidden.",
+     "So we leave the manual as it is?",
+     "Things they absolutely must follow, like safety and charges, we write down properly. On top of that, I want one clear line saying that for anything else, they may judge for themselves by whether it helps the guest."
+    ],
+    "options": [
+     "Every situation should be written out in detail so new staff don't get stuck",
+     "Set out only what must be followed and leave the rest to staff's judgement",
+     "There's no end to writing it, so the manual could be scrapped",
+     "The manual should clearly say to refuse requests the rules don't cover"
+    ]
+   }
+  },
+  "why": {
+   "zh": "必须遵守的「きちんと書く」，其余「自分で判断してかまわない」——这两部分合起来才是他的想法。",
+   "en": "What must be followed is 「きちんと書く」; everything else 「自分で判断してかまわない」 — the option needs both halves."
+  },
+  "wrong": [
+   {
+    "zh": "这是女人的提议，经理说那样「きりがない」。",
+    "en": "That's the woman's suggestion; he says there'd be 「きりがない」."
+   },
+   null,
+   {
+    "zh": "他说的是不必写尽所有场面，安全和费用还要「きちんと書く」，没说取消手册。",
+    "en": "He says not every case needs writing, but safety and charges must be 「きちんと書く」 — he doesn't scrap it."
+   },
+   {
+    "zh": "他正相反：规定之外的事，可以看是否对客人有益「自分で判断してかまわない」。",
+    "en": "The opposite: for anything outside the rules, staff 「自分で判断してかまわない」 by whether it helps the guest."
+   }
+  ],
+  "traps": [
+   "twisted",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-ck-313",
+  "type": "gaiyou",
+  "scene": "料理教室で、料理研究家が話しています。",
+  "question": "料理研究家は何について話していますか。",
+  "lines": [
+   [
+    "F",
+    "私のレシピには、塩やしょうゆの量を「適量」としか書いていないものがあります。不親切だというお叱りを受けることもあるんですが、これにはちゃんと理由があるんです。同じ野菜でも、季節や育った土地によって、甘みや水分がずいぶん違いますし、何より、おいしいと感じる塩加減は、人によって違う。何グラムと書いてしまうと、皆さん、その数字を守ることに一生懸命になって、味見をなさらなくなるんですね。数字どおりに作って、なんだか物足りないと思っても、こういうものなんだろう、で済ませてしまう。ですから、少し入れては味を見て、また足す。その繰り返しの中で、ご自分の舌を育てていただきたいんです。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "味見をしながら自分の好みの味を知ること",
+   "季節によって野菜の味が変わる理由",
+   "レシピの分量を正確に量ることの大切さ",
+   "塩やしょうゆを入れすぎないための注意"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在烹饪教室里，一位烹饪研究家在讲话。",
+    "question": "烹饪研究家在讲什么？",
+    "lines": [
+     "我的食谱里，有的盐和酱油的量只写着“适量”。有时会被批评说不贴心，不过这是有理由的。同样的蔬菜，季节和产地不同，甜味和水分会差很多；更重要的是，觉得好吃的咸淡因人而异。一旦写了多少克，大家就一心想着守住那个数字，不再尝味道了。按数字做出来，就算觉得有点不够味，也会以为“大概就是这样吧”而作罢。所以，放一点，尝一尝，再加一点。我希望大家在这样的反复中，培养自己的味觉。"
+    ],
+    "options": [
+     "边尝边了解自己喜欢的味道",
+     "蔬菜味道随季节变化的原因",
+     "准确称量食谱分量的重要性",
+     "怎样避免盐和酱油放太多"
+    ]
+   },
+   "en": {
+    "scene": "A cookery expert is speaking at a cooking class.",
+    "question": "What is the cookery expert talking about?",
+    "lines": [
+     "Some of my recipes say only 'to taste' for salt and soy sauce. I sometimes get told off for being unhelpful, but there's a proper reason. The same vegetable varies a lot in sweetness and moisture depending on the season and where it was grown, and above all, the saltiness that tastes good differs from person to person. Once I write so many grams, everyone concentrates on sticking to the number and stops tasting. Even if the result seems a bit lacking, they settle for 'I suppose that's how it is'. So add a little, taste, add more. Through that repetition, I want you to train your own palate."
+    ],
+    "options": [
+     "Getting to know the taste you like by tasting as you go",
+     "Why vegetables taste different in different seasons",
+     "The importance of measuring recipe quantities precisely",
+     "Tips for not adding too much salt or soy sauce"
+    ]
+   }
+  },
+  "why": {
+   "zh": "写「適量」是因为写了克数大家就「味見をなさらなくなる」；她希望「少し入れては味を見て、また足す」，「ご自分の舌を育てて」。",
+   "en": "She writes 「適量」 because with grams people 「味見をなさらなくなる」; she wants you to add, taste, add again, and 「ご自分の舌を育てて」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "季节差异只是不写克数的理由之一，她没解释为什么会变。",
+    "en": "Seasonal difference is just one reason for not giving grams; she doesn't explain why it happens."
+   },
+   {
+    "zh": "她说守着数字就不尝味道了，正好相反。",
+    "en": "She says sticking to numbers stops people tasting — the opposite."
+   },
+   {
+    "zh": "她没讲放多了怎么办，讲的是一点点加、边尝边调。",
+    "en": "She isn't warning against too much; she's saying add a little and taste."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n1-ck-314",
+  "type": "gaiyou",
+  "scene": "男の人と女の人が、年賀状について話しています。",
+  "question": "女の人は、年賀状についてどうしようと思っていますか。",
+  "lines": [
+   [
+    "M",
+    "今年から、年賀状やめようと思ってるんだ。最近はみんな、メッセージで済ませてるしさ。"
+   ],
+   [
+    "F",
+    "そうなんだ。実は私も、毎年あれだけの枚数を書くのは、正直しんどいなって思ってた。"
+   ],
+   [
+    "M",
+    "だよね。"
+   ],
+   [
+    "F",
+    "でもね、この前、昔お世話になった先生から、手書きでひとこと添えた年賀状が届いたの。もう何年も会ってないのに、それだけで、まだつながってるんだなって感じられて。"
+   ],
+   [
+    "M",
+    "へえ。"
+   ],
+   [
+    "F",
+    "だから、全部やめちゃうのは、もったいない気がするんだ。習慣だからって誰にでも出すのはやめて、本当に気持ちを伝えたい人にだけ、ちゃんと書こうかなって。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "書くのが大変なので、メッセージで済ませたい",
+   "先生のように、全員にひとこと添えて出したい",
+   "習慣で出すのはやめて、相手を選んで心を込めたい",
+   "うれしいものなので、これまでどおり続けたい"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在谈论贺年卡。",
+    "question": "女人打算怎样对待贺年卡？",
+    "lines": [
+     "我打算从今年起不寄贺年卡了。最近大家都用消息就打发了嘛。",
+     "这样啊。其实我也觉得，每年写那么多张，说实话挺累的。",
+     "就是嘛。",
+     "不过呢，前些日子，以前很照顾我的老师寄来一张手写附言的贺年卡。都好几年没见了，光凭这个，就觉得我们还连着呢。",
+     "哦。",
+     "所以我觉得全都不寄了太可惜。我想不再因为是习惯就谁都寄，只给真正想传达心意的人好好写。"
+    ],
+    "options": [
+     "写起来太累，想用消息打发",
+     "想像老师那样，给所有人都写上附言寄出",
+     "不再出于习惯寄，而是选对象用心写",
+     "因为收到让人高兴，想照旧继续"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking about New Year cards.",
+    "question": "What does the woman intend to do about New Year cards?",
+    "lines": [
+     "I'm thinking of giving up New Year cards from this year. Everyone just sends messages these days anyway.",
+     "Oh, really? Actually, I've honestly been finding it exhausting writing that many every year.",
+     "Right?",
+     "But the other day I got a card from a teacher who was good to me years ago, with a handwritten note. We haven't met in years, but just that made me feel we're still connected.",
+     "Huh.",
+     "So I think giving them all up would be a waste. I'll stop sending them to everyone just out of habit, and write properly only to the people I really want to reach."
+    ],
+    "options": [
+     "Writing them is a chore, so she'll just send messages",
+     "Like her teacher, she'll add a note on every card she sends to everyone",
+     "Stop sending out of habit and write with care to chosen people",
+     "Cards are a joy, so she'll carry on as before"
+    ]
+   }
+  },
+  "why": {
+   "zh": "她不想全部停掉，而是「習慣だからって誰にでも出すのはやめて」，只给「本当に気持ちを伝えたい人」好好写。",
+   "en": "She won't stop entirely: she'll quit 「習慣だからって誰にでも出す」 and write properly only to 「本当に気持ちを伝えたい人」."
+  },
+  "wrong": [
+   {
+    "zh": "她承认写很累，但接着说全部不寄「もったいない」。",
+    "en": "She admits it's tiring, but then says giving them all up would be 「もったいない」."
+   },
+   {
+    "zh": "老师的卡只是让她改变想法的契机；她说的是不再「誰にでも出す」。",
+    "en": "The teacher's card is only what changed her mind; she says she'll stop sending to everyone."
+   },
+   null,
+   {
+    "zh": "她说要停止「習慣だからって誰にでも出す」，不是照旧。",
+    "en": "She'll stop sending 「習慣だからって誰にでも」 — not carry on as before."
+   }
+  ],
+  "traps": [
+   "attitude-combo",
+   "partial-content"
+  ]
+ }
+]

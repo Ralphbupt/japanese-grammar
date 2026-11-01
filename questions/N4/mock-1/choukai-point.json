@@ -1,0 +1,714 @@
+[
+ {
+  "id": "n4-m1-ck-201",
+  "type": "point",
+  "scene": "男の 人と 女の 人が 話して います。",
+  "question": "女の 人は どうして ひっこしますか。",
+  "lines": [
+   [
+    "M",
+    "中村さん、来月 ひっこすんだって？ 今の アパート、駅から 遠いの？"
+   ],
+   [
+    "F",
+    "ううん、駅までは 歩いて 五分で、べんりなんだけど……。"
+   ],
+   [
+    "M",
+    "じゃあ、へやが せまいとか？"
+   ],
+   [
+    "F",
+    "へやは 一人だから、ちょうど いいの。じつは、私の 会社が 遠くへ ひっこす ことに なったの。今の うちからだと、二時間も かかっちゃうんだ。"
+   ],
+   [
+    "M",
+    "そうか。それは 大変だね。"
+   ],
+   [
+    "F",
+    "うん。新しい アパートは やちんが ちょっと 高いけど、しかたないね。"
+   ]
+  ],
+  "options": [
+   "会社が ひっこすから",
+   "駅から 遠いから",
+   "へやが せまいから",
+   "やちんが 高いから"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "女人为什么要搬家？",
+    "lines": [
+     "中村，听说你下个月要搬家？现在的公寓离车站远吗？",
+     "不，走到车站五分钟，很方便的……",
+     "那是房间太小？",
+     "房间一个人住刚好。其实是我们公司要搬到很远的地方去了。从现在住的地方去要两个小时呢。",
+     "这样啊。那可真够呛。",
+     "嗯。新公寓房租有点贵，不过也没办法。"
+    ],
+    "options": [
+     "因为公司要搬",
+     "因为离车站远",
+     "因为房间小",
+     "因为房租贵"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "Why is the woman moving?",
+    "lines": [
+     "Nakamura-san, I heard you're moving next month. Is your current apartment far from the station?",
+     "No, it's a five-minute walk to the station, so it's convenient...",
+     "Then is the room too small or something?",
+     "The room is just right for one person. Actually, my company is moving somewhere far away. From where I live now it would take two whole hours.",
+     "I see. That's tough.",
+     "Yeah. The rent at the new apartment is a bit high, but it can't be helped."
+    ],
+    "options": [
+     "Her company is moving",
+     "It's far from the station",
+     "The room is small",
+     "The rent is high"
+    ]
+   }
+  },
+  "why": {
+   "zh": "女人说「じつは、私の 会社が 遠くへ ひっこす ことに なったの」，从现在的家去要两个小时。",
+   "en": "She says 「じつは、私の 会社が 遠くへ ひっこす ことに なったの」 — commuting from her current place would take two hours."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "离车站走路五分钟，很方便。",
+    "en": "It's a five-minute walk to the station — convenient."
+   },
+   {
+    "zh": "房间一个人住刚好。",
+    "en": "The room is just right for one person."
+   },
+   {
+    "zh": "房租贵说的是新公寓，不是搬家的理由。",
+    "en": "The high rent is about the new apartment, not the reason for moving."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n4-m1-ck-202",
+  "type": "point",
+  "scene": "学校で 女の 学生と 先生が 話して います。",
+  "question": "女の 学生は 何曜日までに レポートを 出しますか。",
+  "lines": [
+   [
+    "F",
+    "先生、レポートは 金曜日までですよね。"
+   ],
+   [
+    "M",
+    "そうだったんですが、金曜日は 学校が 休みに なったので、木曜日までに 出して ください。"
+   ],
+   [
+    "F",
+    "えっ、木曜日ですか。水曜日も 木曜日も アルバイトで、夜 おそいんです……。"
+   ],
+   [
+    "M",
+    "そうですか。じゃあ、来週の 月曜日でも いいですよ。でも、それより おそく なったら だめですよ。"
+   ],
+   [
+    "F",
+    "ありがとうございます。月曜日までに かならず 出します。"
+   ]
+  ],
+  "options": [
+   "水曜日",
+   "木曜日",
+   "金曜日",
+   "月曜日"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "学校里一个女学生和老师在说话。",
+    "question": "女学生星期几之前交报告？",
+    "lines": [
+     "老师，报告是星期五之前交吧。",
+     "本来是这样，不过星期五学校放假了，所以请星期四之前交。",
+     "啊？星期四吗？星期三和星期四我都要打工，晚上很晚……",
+     "这样啊。那下周一也可以。不过再晚就不行了。",
+     "谢谢您。我一定在星期一之前交。"
+    ],
+    "options": [
+     "星期三",
+     "星期四",
+     "星期五",
+     "星期一"
+    ]
+   },
+   "en": {
+    "scene": "At school, a female student and a teacher are talking.",
+    "question": "By which day will the student hand in her report?",
+    "lines": [
+     "Sir, the report is due by Friday, isn't it?",
+     "It was, but the school is now closed on Friday, so please hand it in by Thursday.",
+     "What, Thursday? I work part-time on both Wednesday and Thursday, until late at night...",
+     "I see. Then next Monday is fine too. But any later than that is not okay.",
+     "Thank you. I'll definitely hand it in by Monday."
+    ],
+    "options": [
+     "Wednesday",
+     "Thursday",
+     "Friday",
+     "Monday"
+    ]
+   }
+  },
+  "why": {
+   "zh": "老师说「来週の 月曜日でも いいですよ」，学生说「月曜日までに かならず 出します」。",
+   "en": "The teacher says 「来週の 月曜日でも いいですよ」 and she says 「月曜日までに かならず 出します」."
+  },
+  "wrong": [
+   {
+    "zh": "星期三是学生打工的日子之一，不是期限。",
+    "en": "Wednesday is one of her part-time job days, not the deadline."
+   },
+   {
+    "zh": "老师先说星期四，学生打工没时间，老师改到了下周一。",
+    "en": "Thursday was the new deadline, but she works then, so he moved it to Monday."
+   },
+   {
+    "zh": "星期五是原来的期限，学校放假所以改了。",
+    "en": "Friday was the original deadline, changed because school is closed."
+   },
+   null
+  ],
+  "traps": [
+   "condition-conflict",
+   "later"
+  ]
+ },
+ {
+  "id": "n4-m1-ck-203",
+  "type": "point",
+  "scene": "男の 人と 女の 人が 話して います。",
+  "question": "女の 人は どうやって ケーキの 作り方を おぼえましたか。",
+  "lines": [
+   [
+    "M",
+    "田中さん、この ケーキ、おいしいね。料理の 教室に 通って いるの？"
+   ],
+   [
+    "F",
+    "ううん、教室は 高いから、行って いないの。"
+   ],
+   [
+    "M",
+    "じゃあ、お母さんに ならったの？"
+   ],
+   [
+    "F",
+    "母は あまり 料理を しないんだ。さいしょは 料理の 本を 買って 作って みたんだけど、写真だけじゃ よく わからなくて。"
+   ],
+   [
+    "M",
+    "そうなんだ。"
+   ],
+   [
+    "F",
+    "それで、インターネットで 作り方の 動画を 毎日 見るように したの。そしたら、上手に 作れるように なったんだ。"
+   ]
+  ],
+  "options": [
+   "料理の 教室で",
+   "インターネットで",
+   "母に ならって",
+   "料理の 本で"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "女人是怎么学会做蛋糕的？",
+    "lines": [
+     "田中，这个蛋糕真好吃。你在上烹饪班吗？",
+     "没有，烹饪班太贵了，没去。",
+     "那是跟妈妈学的？",
+     "我妈不怎么做饭。一开始我买了烹饪书照着做，可是光看照片不太明白。",
+     "原来是这样。",
+     "所以我就每天在网上看做法的视频。然后就做得好了。"
+    ],
+    "options": [
+     "在烹饪班",
+     "在网上",
+     "跟妈妈学",
+     "看烹饪书"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "How did the woman learn to make cakes?",
+    "lines": [
+     "Tanaka-san, this cake is delicious. Do you go to a cooking class?",
+     "No, classes are expensive, so I don't go.",
+     "Then did your mom teach you?",
+     "My mom doesn't really cook. At first I bought a cookbook and tried making things, but I couldn't really follow it from just the pictures.",
+     "I see.",
+     "So I made a point of watching recipe videos online every day. Then I got good at making them."
+    ],
+    "options": [
+     "At a cooking class",
+     "On the internet",
+     "From her mother",
+     "From a cookbook"
+    ]
+   }
+  },
+  "why": {
+   "zh": "女人说每天在网上看做法的视频，「上手に 作れるように なった」。",
+   "en": "She watched recipe videos online every day and 「上手に 作れるように なった」."
+  },
+  "wrong": [
+   {
+    "zh": "烹饪班太贵，她没去。",
+    "en": "Classes are too expensive; she doesn't go."
+   },
+   null,
+   {
+    "zh": "她妈妈不怎么做饭。",
+    "en": "Her mother doesn't really cook."
+   },
+   {
+    "zh": "她试过烹饪书，但只看照片不明白。",
+    "en": "She tried a cookbook but couldn't follow it from the pictures."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "half-right"
+  ]
+ },
+ {
+  "id": "n4-m1-ck-204",
+  "type": "point",
+  "scene": "会社で 男の 人と 女の 人が 旅行の 話を して います。",
+  "question": "女の 人は 旅行で 何が 一ばん よかったと 言って いますか。",
+  "lines": [
+   [
+    "M",
+    "先週の 旅行、どうだった？"
+   ],
+   [
+    "F",
+    "よかったよ。おんせんも 気持ちよかったし、料理も おいしかった。"
+   ],
+   [
+    "M",
+    "いいなあ。山にも のぼったんでしょう？"
+   ],
+   [
+    "F",
+    "うん。でも 雨で、けしきは 何も 見えなかったの。"
+   ],
+   [
+    "M",
+    "それは ざんねんだったね。"
+   ],
+   [
+    "F",
+    "でも、帰る 日に 行った 古い おてらが すごく よかったの。にわが きれいで、一時間も すわって いたよ。あそこが 一ばん よかったな。"
+   ]
+  ],
+  "options": [
+   "おんせん",
+   "料理",
+   "古い おてら",
+   "山の けしき"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个男人和一个女人在聊旅行。",
+    "question": "女人说旅行中什么最好？",
+    "lines": [
+     "上周的旅行怎么样？",
+     "挺好的。温泉很舒服，菜也很好吃。",
+     "真好啊。你们还爬山了吧？",
+     "嗯。可是下雨，风景什么都看不见。",
+     "那真遗憾。",
+     "不过，回来那天去的一座古寺特别好。院子很漂亮，我坐了足足一个小时。那里是最好的。"
+    ],
+    "options": [
+     "温泉",
+     "饭菜",
+     "古寺",
+     "山上的风景"
+    ]
+   },
+   "en": {
+    "scene": "At an office, a man and a woman are talking about a trip.",
+    "question": "What does the woman say was the best part of her trip?",
+    "lines": [
+     "How was your trip last week?",
+     "It was nice. The hot spring felt great, and the food was delicious too.",
+     "Lucky you. You climbed a mountain too, right?",
+     "Yeah. But it rained, so we couldn't see any of the view.",
+     "That's too bad.",
+     "But the old temple we went to on the day we came back was wonderful. The garden was beautiful — I sat there for a whole hour. That was the best part."
+    ],
+    "options": [
+     "The hot spring",
+     "The food",
+     "The old temple",
+     "The mountain view"
+    ]
+   }
+  },
+  "why": {
+   "zh": "女人说古寺「すごく よかった」，最后说「あそこが 一ばん よかったな」。",
+   "en": "She says the temple was 「すごく よかった」 and ends with 「あそこが 一ばん よかったな」."
+  },
+  "wrong": [
+   {
+    "zh": "温泉很舒服，但她没说是最好的。",
+    "en": "The hot spring was nice, but she doesn't call it the best."
+   },
+   {
+    "zh": "菜好吃，但不是她说的「一ばん」。",
+    "en": "The food was good, but not her 「一ばん」."
+   },
+   null,
+   {
+    "zh": "下雨了，风景什么都没看见。",
+    "en": "It rained and she couldn't see the view."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n4-m1-ck-205",
+  "type": "point",
+  "scene": "女の 人と 男の 人が 話して います。",
+  "question": "男の 人は 新しい 仕事で 何が 大変だと 言って いますか。",
+  "lines": [
+   [
+    "F",
+    "新しい 仕事、どう？ 朝 早くて 大変でしょう？"
+   ],
+   [
+    "M",
+    "六時に 起きるのは もう なれたよ。会社まで 電車で 一時間 かかるけど、本が 読めるから いいんだ。"
+   ],
+   [
+    "F",
+    "そう。じゃあ、仕事を おぼえるのが 大変？"
+   ],
+   [
+    "M",
+    "仕事は 先ぱいが ていねいに 教えて くれるから、だいじょうぶ。"
+   ],
+   [
+    "F",
+    "よかったね。"
+   ],
+   [
+    "M",
+    "ただ、お客さんと 話す ときの けいごが なかなか 上手に 使えなくて……。毎日 先ぱいに なおされて いるんだ。"
+   ],
+   [
+    "F",
+    "だいじょうぶ、すぐ なれるよ。"
+   ]
+  ],
+  "options": [
+   "朝 早く 起きる こと",
+   "けいごを 使う こと",
+   "仕事を おぼえる こと",
+   "電車に 長く 乗る こと"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在说话。",
+    "question": "男人说新工作什么很辛苦？",
+    "lines": [
+     "新工作怎么样？早上很早，很辛苦吧？",
+     "六点起床已经习惯了。到公司坐电车要一个小时，不过可以看书，挺好的。",
+     "是吗。那记工作内容很辛苦？",
+     "工作前辈会很耐心地教我，没问题。",
+     "那太好了。",
+     "只是跟客人说话时的敬语总是用不好……每天都被前辈纠正。",
+     "没事的，很快就会习惯的。"
+    ],
+    "options": [
+     "早上早起",
+     "用敬语",
+     "记工作内容",
+     "长时间坐电车"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking.",
+    "question": "What does the man say is hard about his new job?",
+    "lines": [
+     "How's the new job? Mornings are early, so it must be tough.",
+     "I'm used to getting up at six now. It takes an hour by train to the office, but I can read, so that's fine.",
+     "I see. Then is learning the work hard?",
+     "My senior teaches me the work carefully, so it's fine.",
+     "That's good.",
+     "It's just that I can't use honorific language well when I talk to customers... My senior corrects me every day.",
+     "Don't worry, you'll get used to it soon."
+    ],
+    "options": [
+     "Getting up early",
+     "Using honorific language",
+     "Learning the work",
+     "The long train ride"
+    ]
+   }
+  },
+  "why": {
+   "zh": "男人说「お客さんと 話す ときの けいごが なかなか 上手に 使えなくて」，每天被前辈纠正。",
+   "en": "He says 「お客さんと 話す ときの けいごが なかなか 上手に 使えなくて」 and gets corrected every day."
+  },
+  "wrong": [
+   {
+    "zh": "六点起床他说已经习惯了。",
+    "en": "He says he's used to getting up at six."
+   },
+   null,
+   {
+    "zh": "工作前辈耐心地教，他说没问题。",
+    "en": "His senior teaches him carefully, so the work is fine."
+   },
+   {
+    "zh": "坐一个小时电车，但可以看书，他觉得挺好。",
+    "en": "The hour on the train is fine — he can read."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n4-m1-ck-206",
+  "type": "point",
+  "scene": "男の 人と 女の 人が 話して います。",
+  "question": "女の 人の 新しい めがねは どれですか。",
+  "lines": [
+   [
+    "M",
+    "あれ、めがね、かえた？"
+   ],
+   [
+    "F",
+    "うん、先週 買ったの。"
+   ],
+   [
+    "M",
+    "前も まるい めがねだったよね。今度も まるいのに したんだ。"
+   ],
+   [
+    "F",
+    "ううん、よく 見て。今度は しかくいの。"
+   ],
+   [
+    "M",
+    "あ、ほんとうだ。それに、フレームも 前より ほそいね。"
+   ],
+   [
+    "F",
+    "うん。前のは フレームが ふとくて 重かったから、ほそいのに したの。"
+   ]
+  ],
+  "options": [
+   "まるい・ふとい",
+   "まるい・ほそい",
+   "しかく・ふとい",
+   "しかく・ほそい"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A pair of eyeglasses lying on a table, with round lenses and a thick, heavy, solid frame.",
+   "Simple black-and-white line drawing, no text. A pair of eyeglasses lying on a table, with round lenses and a thin wire frame.",
+   "Simple black-and-white line drawing, no text. A pair of eyeglasses lying on a table, with square lenses and a thick, heavy, solid frame.",
+   "Simple black-and-white line drawing, no text. A pair of eyeglasses lying on a table, with square lenses and a thin wire frame."
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "女人的新眼镜是哪一副？",
+    "lines": [
+     "咦，你换眼镜了？",
+     "嗯，上周买的。",
+     "以前也是圆眼镜吧。这次也选了圆的啊。",
+     "不是，你仔细看。这次是方的。",
+     "啊，真的。而且镜框也比以前细了。",
+     "嗯。以前那副镜框又粗又重，所以选了细的。"
+    ],
+    "options": [
+     "圆・粗框",
+     "圆・细框",
+     "方・粗框",
+     "方・细框"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "Which are the woman's new glasses?",
+    "lines": [
+     "Huh, did you change your glasses?",
+     "Yeah, I bought them last week.",
+     "Your old ones were round too, weren't they. So you went with round again.",
+     "No, look closely. These ones are square.",
+     "Oh, you're right. And the frame is thinner than before too.",
+     "Yeah. The old frame was thick and heavy, so I picked a thin one."
+    ],
+    "options": [
+     "Round, thick frame",
+     "Round, thin frame",
+     "Square, thick frame",
+     "Square, thin frame"
+    ]
+   }
+  },
+  "why": {
+   "zh": "女人说「今度は しかくいの」，又说选了「ほそいの」，所以是方形细框。",
+   "en": "She says 「今度は しかくいの」 and that she chose 「ほそいの」 — square with a thin frame."
+  },
+  "wrong": [
+   {
+    "zh": "圆形粗框是她以前的眼镜。",
+    "en": "Round with a thick frame is her old pair."
+   },
+   {
+    "zh": "镜框细对了，但新眼镜是方的，不是圆的。",
+    "en": "The thin frame is right, but the new ones are square, not round."
+   },
+   {
+    "zh": "形状对了，但她说以前的框太粗太重，选了细的。",
+    "en": "The shape is right, but she picked a thin frame because the old thick one was heavy."
+   },
+   null
+  ],
+  "traps": [
+   "other-option-attribute",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n4-m1-ck-207",
+  "type": "point",
+  "scene": "会社で 男の 人と 女の 人が 話して います。",
+  "question": "新しい 部長は どの 人ですか。",
+  "lines": [
+   [
+    "M",
+    "今日から 来た 新しい 部長、もう 会った？"
+   ],
+   [
+    "F",
+    "まだ。どの 人？ あそこで 電話を して いる、ひげの ある 人？"
+   ],
+   [
+    "M",
+    "ちがうよ。あの 人は となりの 会社の 人。部長は ひげは ないよ。ほら、まどの そばに 立って いる 人。"
+   ],
+   [
+    "F",
+    "あ、ネクタイを して いる 人？"
+   ],
+   [
+    "M",
+    "ううん、その となりの、ネクタイを して いない 人。今日は あついから、はずして いるんだって。"
+   ],
+   [
+    "F",
+    "ああ、あの 人ね。"
+   ]
+  ],
+  "options": [
+   "ひげ ない・ネクタイ ない",
+   "ひげ ある・ネクタイ ある",
+   "ひげ ある・ネクタイ ない",
+   "ひげ ない・ネクタイ ある"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A middle-aged man standing, facing forward, clean-shaven, in a long-sleeved shirt with the collar open and no necktie.",
+   "Simple black-and-white line drawing, no text. A middle-aged man standing, facing forward, with a thick mustache, in a long-sleeved shirt and a necktie.",
+   "Simple black-and-white line drawing, no text. A middle-aged man standing, facing forward, with a thick mustache, in a long-sleeved shirt with the collar open and no necktie.",
+   "Simple black-and-white line drawing, no text. A middle-aged man standing, facing forward, clean-shaven, in a long-sleeved shirt and a necktie."
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个男人和一个女人在说话。",
+    "question": "新部长是哪个人？",
+    "lines": [
+     "今天新来的部长，你见过了吗？",
+     "还没有。是哪个人？那边在打电话、留着胡子的人吗？",
+     "不是。那个人是隔壁公司的。部长没有胡子。你看，站在窗边的那个人。",
+     "啊，系着领带的那个人？",
+     "不是，他旁边那个没系领带的人。听说因为今天热，把领带摘了。",
+     "啊，是那个人啊。"
+    ],
+    "options": [
+     "没胡子・没领带",
+     "有胡子・有领带",
+     "有胡子・没领带",
+     "没胡子・有领带"
+    ]
+   },
+   "en": {
+    "scene": "At an office, a man and a woman are talking.",
+    "question": "Which person is the new manager?",
+    "lines": [
+     "Have you met the new manager who started today?",
+     "Not yet. Which one is he? The man with the mustache on the phone over there?",
+     "No. He's from the company next door. The manager doesn't have a mustache. Look, the man standing by the window.",
+     "Oh, the one wearing a tie?",
+     "No, the one next to him, without a tie. Apparently he took it off because it's hot today.",
+     "Ah, that one."
+    ],
+    "options": [
+     "No mustache, no tie",
+     "Mustache, tie",
+     "Mustache, no tie",
+     "No mustache, tie"
+    ]
+   }
+  },
+  "why": {
+   "zh": "男人说部长「ひげは ないよ」，又说是「ネクタイを して いない 人」。",
+   "en": "He says the manager has 「ひげは ないよ」 and is 「ネクタイを して いない 人」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "有胡子的是隔壁公司的人，而且部长没系领带。",
+    "en": "The man with the mustache is from next door, and the manager wears no tie."
+   },
+   {
+    "zh": "部长没有胡子。",
+    "en": "The manager has no mustache."
+   },
+   {
+    "zh": "系领带的是部长旁边的人。",
+    "en": "The man with the tie is the one next to the manager."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "other-option-attribute"
+  ]
+ }
+]

@@ -363,6 +363,104 @@ This lesson covers N2 grammar for expressing "contrast" and "correlated change."
 
 ---
 
+## 6. 〜かわりに（代替…… / 作为交换 / 虽然……但……）||6. 〜かわりに (Instead of… / In exchange for… / But in return…)
+
+### 接続||Conjugation
+:::zh
+- 名詞 + の + かわりに
+- 動詞普通形 + かわりに
+- い形容詞普通形 + かわりに
+- な形容詞 + な + かわりに
+
+※ 也写作「代わりに」。基本用法见 N3 Lesson 50，本课重点是N2常考的第③种用法。  
+※ 句首可以用「その代わり（に）」承接上文：「手伝うよ。その代わり、ランチおごってね。」
+:::
+:::en
+- Noun + の + かわりに
+- Verb plain form + かわりに
+- i-adjective plain form + かわりに
+- na-adjective + な + かわりに
+
+※ Also written 「代わりに」. The basics are in N3 Lesson 50; this lesson focuses on use ③, which N2 tests often.  
+※ 「その代わり（に）」 can open a sentence, picking up what came before: 「手伝うよ。その代わり、ランチおごってね。」
+:::
+
+### 含义||Meaning
+:::zh
+1. **代替**：不用A，改用B；由B代替A。（名詞の / 動詞辞書形 + かわりに）
+2. **作为交换**：做了A，相应地得到/付出B。
+3. **有得有失（虽然……但……）**：某事物有A这个优点（或缺点），与之相抵，也有B这个缺点（或优点）。前后一好一坏，像"交换"一样互相抵消。
+:::
+:::en
+1. **Substitution**: B instead of A; B takes A's place. (noun の / verb dictionary form + かわりに)
+2. **Exchange**: doing A, and getting or giving B in return.
+3. **Trade-off (… but on the other hand …)**: something has advantage A (or drawback A), and to balance it, drawback B (or advantage B). One good, one bad — they cancel out like a trade.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 今日は部長の**かわりに**、私が会議に出席します。（今天由我代替部长出席会议。）
+2. 最近は年賀状を書く**かわりに**、メッセージアプリで新年のあいさつをする人が多い。（最近不写贺年卡、改用聊天软件拜年的人很多。）
+3. 週末に出勤する**かわりに**、来週の月曜日に休みをもらった。（周末上班，作为交换，下周一给了我一天假。）
+4. 引っ越しを手伝ってもらう**かわりに**、友人に焼肉をおごる約束をした。（我请朋友帮忙搬家，作为交换，答应请他吃烤肉。）
+5. この仕事は給料がいい**かわりに**、休みが少ない。（这份工作工资高，但相应地休息少。）
+6. うちは駅から遠い**かわりに**、静かで広い。（我家离车站远，但相应地又安静又宽敞。）
+:::
+:::en
+1. 今日は部長の**かわりに**、私が会議に出席します。(Today I'll attend the meeting in place of the department head.)
+2. 最近は年賀状を書く**かわりに**、メッセージアプリで新年のあいさつをする人が多い。(These days many people send New Year greetings by messaging app instead of writing New Year cards.)
+3. 週末に出勤する**かわりに**、来週の月曜日に休みをもらった。(In exchange for working the weekend, I got next Monday off.)
+4. 引っ越しを手伝ってもらう**かわりに**、友人に焼肉をおごる約束をした。(In exchange for my friend helping me move, I promised to treat them to yakiniku.)
+5. この仕事は給料がいい**かわりに**、休みが少ない。(This job pays well, but in return there are few days off.)
+6. うちは駅から遠い**かわりに**、静かで広い。(Our place is far from the station, but in return it's quiet and spacious.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| かわりに③ | 有得有失 | 一好一坏互相抵消，像"交换"；口语书面都用 |
+| 反面 | ……的反面 | 同一事物本身具有的两种相反性质，不含"抵消"的意思 |
+| 一方（で） | 另一方面 | 客观对比，可以对比两个不同的主体 |
+| に代わって | 代替…… | 只有"代替"义，多用于人或时代交替（N3 Lesson 50） |
+
+**「かわりに」vs「一方で」：能不能对比两个不同主体**
+
+> ✕ 兄は背が高いかわりに、弟は低い。→「かわりに」讲的是同一事物的得失，不能对比两个人  
+> ○ 兄は背が高い一方で、弟は低い。→ 对比两个不同主体用「一方で」
+
+**「かわりに」vs「反面」：是"交换"还是"性格的两面"**
+
+> ○ 彼は優しい反面、優柔不断なところがある。（他温柔的反面，是优柔寡断）  
+> △ 彼は優しいかわりに、優柔不断だ。→ 性格的两面不是"交换"，用「かわりに」不自然  
+> ○ この部屋は狭いかわりに、家賃が安い。（房间小，但相应地房租便宜）→ 一失一得，「かわりに」最自然
+
+> 判断方法：能换成"作为代价／作为补偿"说得通 →「かわりに」。
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| かわりに③ | trade-off | One good, one bad that cancel out, like a trade; spoken and written |
+| 反面 | the flip side | Two opposite qualities inherent in one thing; no sense of compensation |
+| 一方（で） | on the other hand | Objective contrast; can compare two different subjects |
+| に代わって | in place of | Only "substitution"; mostly people or eras taking over (N3 Lesson 50) |
+
+**「かわりに」 vs 「一方で」: can it compare two different subjects?**
+
+> ✕ 兄は背が高いかわりに、弟は低い。→ 「かわりに」 is about the pros and cons of one thing; it can't contrast two people  
+> ○ 兄は背が高い一方で、弟は低い。→ use 「一方で」 to contrast two subjects
+
+**「かわりに」 vs 「反面」: a trade, or two sides of a character?**
+
+> ○ 彼は優しい反面、優柔不断なところがある。(He's kind, but on the flip side indecisive.)  
+> △ 彼は優しいかわりに、優柔不断だ。→ two sides of a personality aren't a trade; 「かわりに」 sounds odd  
+> ○ この部屋は狭いかわりに、家賃が安い。(The room is small, but the rent is cheap to make up for it.) → a loss paid back by a gain: 「かわりに」 fits best
+
+> Rule of thumb: if "as the price / to make up for it" makes sense → 「かわりに」.
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

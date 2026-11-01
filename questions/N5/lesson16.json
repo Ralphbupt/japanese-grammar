@@ -1,0 +1,671 @@
+[
+  {
+    "id": "n5-l16-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson16#1"
+    ],
+    "difficulty": 1,
+    "stem": "A「きのうの よる、何か 食べましたか。」\nB「いいえ、（　）食べませんでした。」",
+    "options": [
+      "何も",
+      "何か",
+      "何でも",
+      "何を"
+    ],
+    "answer": 0,
+    "full": "A「きのうの よる、何か 食べましたか。」 B「いいえ、何も 食べませんでした。」",
+    "kj": "A「昨日の夜、何か食べましたか。」\nB「いいえ、何も食べませんでした。」",
+    "tr": {
+      "zh": "A：昨天晚上吃了点什么吗？ B：没有，什么都没吃。",
+      "en": "A: Did you eat anything last night? B: No, I didn't eat anything."
+    },
+    "why": {
+      "zh": "B 回答「いいえ」，后面是否定「食べませんでした」，“什么都没……”用「何も＋否定」。",
+      "en": "B says 「いいえ」 and the verb is negative — \"nothing at all\" is 「何も ＋ negative」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「何か」是“某个东西”，「何か食べませんでした」不是“什么都没吃”。",
+        "en": "「何か」 means \"something\"; it doesn't give \"didn't eat anything\"."
+      },
+      {
+        "zh": "「何でも」是“无论什么都”，后面接肯定（何でも食べる），不接这里的否定。",
+        "en": "「何でも」 means \"anything at all\" and goes with a positive (何でも食べる), not this negative."
+      },
+      {
+        "zh": "「何を」是疑问句用的（何を食べましたか），B 是在回答。",
+        "en": "「何を」 is for asking (何を食べましたか), but B is answering."
+      }
+    ]
+  },
+  {
+    "id": "n5-l16-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson16#1"
+    ],
+    "difficulty": 2,
+    "stem": "この パーティーは お金が いりません。こどもも 大人も（　）さんかできます。",
+    "options": [
+      "だれでも",
+      "だれも",
+      "だれか",
+      "だれが"
+    ],
+    "answer": 0,
+    "full": "この パーティーは お金が いりません。こどもも 大人も だれでも さんかできます。",
+    "kj": "このパーティーはお金が要りません。子供も大人もだれでも参加できます。",
+    "tr": {
+      "zh": "这个派对不用花钱。孩子大人，谁都可以参加。",
+      "en": "This party is free. Kids or adults — anyone can join."
+    },
+    "why": {
+      "zh": "“孩子大人都……”，“无论谁都可以”用「だれでも」，后接肯定。",
+      "en": "\"Kids or adults\" — \"anyone at all can\" is 「だれでも」 with a positive verb."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「だれも」后面要接否定（だれも来ない），这里是肯定「参加できます」。",
+        "en": "「だれも」 needs a negative (だれも来ない), but 「参加できます」 is positive."
+      },
+      {
+        "zh": "「だれか」是“某个人”，和“孩子大人都可以”的意思不符。",
+        "en": "「だれか」 means \"someone\", which doesn't match \"kids or adults alike\"."
+      },
+      {
+        "zh": "「だれが」是疑问词，句末没有「か」，这里也不是提问。",
+        "en": "「だれが」 asks \"who\", but this isn't a question."
+      }
+    ]
+  },
+  {
+    "id": "n5-l16-003",
+    "type": "bunpou",
+    "refs": [
+      "lesson16#1"
+    ],
+    "difficulty": 2,
+    "stem": "A「しゅうまつ、どこかへ 行きましたか。」\nB「いいえ、雨だったので、どこ（　）行きませんでした。」",
+    "options": [
+      "にも",
+      "が",
+      "でも",
+      "には"
+    ],
+    "answer": 0,
+    "full": "A「しゅうまつ、どこかへ 行きましたか。」 B「いいえ、雨だったので、どこにも 行きませんでした。」",
+    "kj": "A「週末、どこかへ行きましたか。」\nB「いいえ、雨だったので、どこにも行きませんでした。」",
+    "tr": {
+      "zh": "A：周末去哪儿了吗？ B：没有，因为下雨，哪儿都没去。",
+      "en": "A: Did you go anywhere on the weekend? B: No, it rained, so I didn't go anywhere."
+    },
+    "why": {
+      "zh": "“哪儿都没去”是「どこ＋に＋も＋否定」；助词「に」要放在「も」前面。",
+      "en": "\"Didn't go anywhere\" is 「どこ ＋ に ＋ も ＋ negative」; the particle 「に」 comes before 「も」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「どこが」是把「どこ」当主语，“哪里没去”不成立；而且全否定要用「も」。",
+        "en": "「どこが」 makes 「どこ」 the subject, which doesn't work with 行く; a total negation needs 「も」."
+      },
+      {
+        "zh": "「どこでも」是“无论哪里都”，后接肯定，不接否定。",
+        "en": "「どこでも」 means \"anywhere at all\" and goes with a positive, not a negative."
+      },
+      {
+        "zh": "疑问词后面不能接「は」，「どこには」不成立；全否定要用「も」。",
+        "en": "A question word can't take 「は」; total negation needs 「も」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l16-004",
+    "type": "narabe",
+    "refs": [
+      "lesson16#1"
+    ],
+    "difficulty": 1,
+    "stem": "れいぞうこの 中を 見ましたが、[_] [_] [_] [★]。",
+    "options": [
+      "ありません",
+      "何",
+      "でした",
+      "も"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "れいぞうこの 中を 見ましたが、何も ありませんでした。",
+    "kj": "冷蔵庫の中を見ましたが、何もありませんでした。",
+    "tr": {
+      "zh": "看了冰箱里面，什么都没有。",
+      "en": "I looked in the fridge, but there was nothing."
+    },
+    "why": {
+      "zh": "「何も＋否定」表示什么都没有；「ありません」的过去式是「ありませんでした」。★ 在第四格，是「でした」。",
+      "en": "「何も ＋ negative」 means nothing at all; the past of 「ありません」 is 「ありませんでした」. The ★ is the fourth slot: 「でした」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "rev": 2
+  },
+  {
+    "id": "n5-l16-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson16#2"
+    ],
+    "difficulty": 1,
+    "stem": "この かばんは 高（　）。もう 少し 安いのは ありますか。",
+    "options": [
+      "すぎます",
+      "くないです",
+      "かったです",
+      "く なります"
+    ],
+    "answer": 0,
+    "full": "この かばんは 高すぎます。もう 少し 安いのは ありますか。",
+    "kj": "このかばんは高すぎます。もう少し安いのはありますか。",
+    "tr": {
+      "zh": "这个包太贵了。有再便宜一点的吗？",
+      "en": "This bag is too expensive. Do you have a slightly cheaper one?"
+    },
+    "why": {
+      "zh": "い形容词接「すぎる」要去掉「い」：高い → 高すぎる。",
+      "en": "An い-adjective drops its 「い」 before 「すぎる」: 高い → 高すぎる."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「高くないです」是“不贵”，那就不用问有没有更便宜的了。",
+        "en": "「高くないです」 (not expensive) — then there'd be no need to ask for a cheaper one."
+      },
+      {
+        "zh": "「高かったです」是过去式，在店里看着包说话要用现在。",
+        "en": "「高かったです」 is past; you're looking at the bag in the shop now."
+      },
+      {
+        "zh": "「高く なります」是“会变贵”，不是在说现在价格太高。",
+        "en": "「高く なります」 (will get pricier) doesn't say the price is too high now."
+      }
+    ]
+  },
+  {
+    "id": "n5-l16-006",
+    "type": "bunpou",
+    "refs": [
+      "lesson16#2"
+    ],
+    "difficulty": 2,
+    "stem": "きのう おさけを 飲（　）、今日は あたまが いたいです。",
+    "options": [
+      "みすぎて",
+      "みたくて",
+      "まなくて",
+      "みながら"
+    ],
+    "answer": 0,
+    "full": "きのう おさけを 飲みすぎて、今日は あたまが いたいです。",
+    "kj": "昨日お酒を飲みすぎて、今日は頭が痛いです。",
+    "tr": {
+      "zh": "昨天酒喝多了，今天头疼。",
+      "en": "I drank too much yesterday, so I have a headache today."
+    },
+    "why": {
+      "zh": "动词接「すぎる」用ます形去「ます」：飲みます → 飲み＋すぎる；后接分句用て形「すぎて」。",
+      "en": "A verb takes 「すぎる」 on its ます-stem: 飲みます → 飲み ＋ すぎる; 「すぎて」 links to the next clause."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「飲みたくて」是“想喝”，想喝不会让今天头疼。",
+        "en": "「飲みたくて」 (wanting to drink) doesn't explain today's headache."
+      },
+      {
+        "zh": "「飲まなくて」是“没喝”，没喝酒不会头疼。",
+        "en": "「飲まなくて」 (didn't drink) wouldn't give you a headache."
+      },
+      {
+        "zh": "「飲みながら」是“一边喝一边……”，后面要接同时做的动作，不能表示原因。",
+        "en": "「飲みながら」 (while drinking) needs a simultaneous action, not a result."
+      }
+    ]
+  },
+  {
+    "id": "n5-l16-007",
+    "type": "narabe",
+    "refs": [
+      "lesson16#2"
+    ],
+    "difficulty": 1,
+    "stem": "パーティーで [★] [_] [_] [_]、おなかが いたいです。",
+    "options": [
+      "すぎた",
+      "ので",
+      "ケーキを",
+      "食べ"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "パーティーで ケーキを 食べすぎたので、おなかが いたいです。",
+    "kj": "パーティーでケーキを食べすぎたので、お腹が痛いです。",
+    "tr": {
+      "zh": "在派对上蛋糕吃太多了，肚子疼。",
+      "en": "I ate too much cake at the party, so my stomach hurts."
+    },
+    "why": {
+      "zh": "「ケーキを食べ」＋「すぎた」（吃太多）＋「ので」（因为）。★ 在第一格，是「ケーキを」。",
+      "en": "「ケーキを食べ」 ＋ 「すぎた」 (too much) ＋ 「ので」 (so). The ★ is the first slot: 「ケーキを」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "rev": 2
+  },
+  {
+    "id": "n5-l16-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson16#3"
+    ],
+    "difficulty": 1,
+    "stem": "この 本は じが 小さくて、読み（　）です。",
+    "options": [
+      "にくい",
+      "やすい",
+      "たい",
+      "ながら"
+    ],
+    "answer": 0,
+    "full": "この 本は じが 小さくて、読みにくいです。",
+    "kj": "この本は字が小さくて、読みにくいです。",
+    "tr": {
+      "zh": "这本书字很小，很难读。",
+      "en": "The print in this book is small, so it's hard to read."
+    },
+    "why": {
+      "zh": "字小是读起来困难的原因，“难以……”用「ます形＋にくい」。",
+      "en": "Small print makes reading hard — \"hard to…\" is 「ます-stem ＋ にくい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「読みやすい」是“容易读”，和“字很小”矛盾。",
+        "en": "「読みやすい」 means \"easy to read\", which contradicts the small print."
+      },
+      {
+        "zh": "「読みたい」是“想读”，“字很小所以想读”说不通。",
+        "en": "「読みたい」 means \"want to read\"; small print isn't a reason to want to."
+      },
+      {
+        "zh": "「ながら」是“一边……一边”，后面不能接「です」结句。",
+        "en": "「ながら」 means \"while…\" and can't end the sentence with 「です」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l16-009",
+    "type": "bunpou",
+    "refs": [
+      "lesson16#3"
+    ],
+    "difficulty": 1,
+    "stem": "この くつは かるくて（　）です。",
+    "options": [
+      "あるきやすい",
+      "あるきにくい",
+      "あるきながら",
+      "あるきかた"
+    ],
+    "okj": [
+      "歩きやすい",
+      "歩きにくい",
+      "歩きながら",
+      "歩きかた"
+    ],
+    "answer": 0,
+    "full": "この くつは かるくて あるきやすいです。",
+    "kj": "この靴は軽くて歩きやすいです。",
+    "tr": {
+      "zh": "这双鞋很轻，很好走路。",
+      "en": "These shoes are light and easy to walk in."
+    },
+    "why": {
+      "zh": "鞋轻是好走的原因，用「ます形＋やすい」：歩き＋やすい。",
+      "en": "Light shoes make walking easy: ます-stem ＋ やすい → 歩きやすい."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「歩きにくい」是“不好走”，和前面「軽くて」（很轻）的好评不符。",
+        "en": "「歩きにくい」 (hard to walk in) doesn't follow from 「軽くて」 (light)."
+      },
+      {
+        "zh": "「歩きながら」是“一边走一边……”，后面不能接「です」。",
+        "en": "「歩きながら」 (while walking) can't be followed by 「です」."
+      },
+      {
+        "zh": "「歩きかた」是“走路的方法”，“鞋很轻，是走法”说不通。",
+        "en": "「歩きかた」 (way of walking) — \"the shoes are light and are a way of walking\" makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n5-l16-010",
+    "type": "narabe",
+    "refs": [
+      "lesson16#3"
+    ],
+    "difficulty": 2,
+    "stem": "この コップは [_] [_] [★] [_] ください。",
+    "options": [
+      "ので",
+      "やすい",
+      "気をつけて",
+      "こわれ"
+    ],
+    "okj": [
+      null,
+      null,
+      "気を付けて",
+      "壊れ"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "この コップは こわれやすいので 気をつけて ください。",
+    "kj": "このコップは壊れやすいので気を付けてください。",
+    "tr": {
+      "zh": "这个杯子容易碎，请小心。",
+      "en": "This glass breaks easily, so please be careful."
+    },
+    "why": {
+      "zh": "「こわれ」（ます形）＋「やすい」（容易……）＋「ので」（因为）＋「気をつけてください」。★ 在第三格，是「ので」。",
+      "en": "「こわれ」 (ます-stem) ＋ 「やすい」 (easily) ＋ 「ので」 (so) ＋ 「気をつけてください」. The ★ is the third slot: 「ので」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l16-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson16#4"
+    ],
+    "difficulty": 1,
+    "stem": "わたしは いつも おんがくを 聞き（　）、べんきょうします。",
+    "options": [
+      "ながら",
+      "たり",
+      "てから",
+      "ので"
+    ],
+    "answer": 0,
+    "full": "わたしは いつも おんがくを 聞きながら、べんきょうします。",
+    "kj": "私はいつも音楽を聞きながら、勉強します。",
+    "tr": {
+      "zh": "我总是一边听音乐一边学习。",
+      "en": "I always study while listening to music."
+    },
+    "why": {
+      "zh": "空格前是ます形「聞き」，能接ます形的是「ながら」（一边……一边……）。",
+      "en": "The blank follows the ます-stem 「聞き」, which takes 「ながら」 (while)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「たり」接た形（聞いたり），不接ます形。",
+        "en": "「たり」 follows the た-form (聞いたり), not the ます-stem."
+      },
+      {
+        "zh": "「てから」要接て形（聞いてから），「聞きてから」不成立。",
+        "en": "「てから」 needs the て-form (聞いてから); 「聞きてから」 isn't a form."
+      },
+      {
+        "zh": "「ので」接简体（聞くので），不接ます形。",
+        "en": "「ので」 follows the plain form (聞くので), not the ます-stem."
+      }
+    ]
+  },
+  {
+    "id": "n5-l16-012",
+    "type": "bunpou",
+    "refs": [
+      "lesson16#4"
+    ],
+    "difficulty": 1,
+    "stem": "テレビを（　）ながら、ごはんを 食べます。",
+    "options": [
+      "見",
+      "見る",
+      "見て",
+      "見た"
+    ],
+    "answer": 0,
+    "full": "テレビを 見ながら、ごはんを 食べます。",
+    "kj": "テレビを見ながら、ご飯を食べます。",
+    "tr": {
+      "zh": "一边看电视一边吃饭。",
+      "en": "I eat while watching TV."
+    },
+    "why": {
+      "zh": "「ながら」接ます形去「ます」：見ます → 見＋ながら。",
+      "en": "「ながら」 attaches to the ます-stem: 見ます → 見 ＋ ながら."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "辞书形「見る」不能接「ながら」。",
+        "en": "The dictionary form 「見る」 can't take 「ながら」."
+      },
+      {
+        "zh": "て形「見て」不能接「ながら」。",
+        "en": "The て-form 「見て」 can't take 「ながら」."
+      },
+      {
+        "zh": "た形「見た」不能接「ながら」。",
+        "en": "The た-form 「見た」 can't take 「ながら」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l16-013",
+    "type": "narabe",
+    "refs": [
+      "lesson16#4"
+    ],
+    "difficulty": 1,
+    "stem": "父は まいあさ コーヒーを [_] [_] [★] [_]。",
+    "options": [
+      "読みます",
+      "ながら",
+      "新聞を",
+      "飲み"
+    ],
+    "order": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "full": "父は まいあさ コーヒーを 飲みながら 新聞を 読みます。",
+    "kj": "父は毎朝コーヒーを飲みながら新聞を読みます。",
+    "tr": {
+      "zh": "爸爸每天早上一边喝咖啡一边看报纸。",
+      "en": "Every morning my father reads the paper while drinking coffee."
+    },
+    "why": {
+      "zh": "「コーヒーを」后面接「飲み」，「飲みながら」是次要动作，主要动作「新聞を読みます」放最后。★ 在第三格，是「新聞を」。",
+      "en": "「コーヒーを」 takes 「飲み」; 「飲みながら」 is the side action and the main action 「新聞を読みます」 comes last. The ★ is the third slot: 「新聞を」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l16-014",
+    "type": "bunpou",
+    "refs": [
+      "lesson16#5"
+    ],
+    "difficulty": 1,
+    "stem": "すみません、この かんじの 読み（　）を おしえて ください。",
+    "options": [
+      "かた",
+      "ほうほう",
+      "こと",
+      "とき"
+    ],
+    "okj": [
+      "方",
+      "方法",
+      null,
+      null
+    ],
+    "answer": 0,
+    "full": "すみません、この かんじの よみかたを おしえて ください。",
+    "kj": "すみません、この漢字の読み方を教えてください。",
+    "tr": {
+      "zh": "不好意思，请告诉我这个汉字的读法。",
+      "en": "Excuse me, please tell me how to read this kanji."
+    },
+    "why": {
+      "zh": "“读法”是「ます形＋方」：読み＋方。",
+      "en": "\"How to read\" is 「ます-stem ＋ 方」: 読み ＋ 方."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「方法」是独立名词，前面要接「の」（勉強の方法），不能直接接ます形。",
+        "en": "「方法」 is a standalone noun that follows 「の」 (勉強の方法), not a ます-stem."
+      },
+      {
+        "zh": "「こと」接辞书形（読むこと），不接ます形「読み」。",
+        "en": "「こと」 follows the dictionary form (読むこと), not the ます-stem."
+      },
+      {
+        "zh": "「とき」接简体（読むとき），不接ます形「読み」。",
+        "en": "「とき」 follows the plain form (読むとき), not the ます-stem."
+      }
+    ]
+  },
+  {
+    "id": "n5-l16-015",
+    "type": "bunpou",
+    "refs": [
+      "lesson16#5"
+    ],
+    "difficulty": 2,
+    "stem": "A「すみません、駅への（　）を おしえて ください。」\nB「この 道を まっすぐ 行って ください。」",
+    "options": [
+      "いきかた",
+      "行くこと",
+      "行くとき",
+      "行ったこと"
+    ],
+    "okj": [
+      "行き方",
+      null,
+      null,
+      null
+    ],
+    "answer": 0,
+    "full": "A「すみません、駅への いきかたを おしえて ください。」 B「この 道を まっすぐ 行って ください。」",
+    "kj": "A「すみません、駅への行き方を教えてください。」\nB「この道をまっすぐ行ってください。」",
+    "tr": {
+      "zh": "A：不好意思，请告诉我去车站怎么走。 B：沿着这条路一直走。",
+      "en": "A: Excuse me, could you tell me how to get to the station? B: Go straight along this road."
+    },
+    "why": {
+      "zh": "问“怎么去”，用「ます形＋方」：行きます → 行き方。",
+      "en": "Asking \"how to get there\" is 「ます-stem ＋ 方」: 行きます → 行き方."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「駅への 行くこと」不成立；问路要用「行き方」（走法）。",
+        "en": "「駅への 行くこと」 isn't possible; to ask the way you need 「行き方」."
+      },
+      {
+        "zh": "「行くとき」是“去的时候”，问的不是时间，是路线。",
+        "en": "「行くとき」 (when you go) — the question is about the route, not the time."
+      },
+      {
+        "zh": "「行ったこと」是“去过的经历”，问路不用这个。",
+        "en": "「行ったこと」 (having been) is about experience, not directions."
+      }
+    ]
+  },
+  {
+    "id": "n5-l16-016",
+    "type": "narabe",
+    "refs": [
+      "lesson16#5"
+    ],
+    "difficulty": 2,
+    "stem": "すみません、この きかいの [_] [_] [_] [★] ください。",
+    "options": [
+      "もういちど",
+      "つかい",
+      "おしえて",
+      "かたを"
+    ],
+    "okj": [
+      "もう一度",
+      "使い",
+      "教えて",
+      "方を"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "すみません、この きかいの つかいかたを もういちど おしえて ください。",
+    "kj": "すみません、この機械の使い方をもう一度教えてください。",
+    "tr": {
+      "zh": "不好意思，请再教我一次这台机器的用法。",
+      "en": "Excuse me, could you show me how to use this machine once more?"
+    },
+    "why": {
+      "zh": "「この機械の」后面接名词「使い方」（用法）；「もう一度」修饰「教えてください」。★ 在第四格，是「教えて」。",
+      "en": "「この機械の」 is followed by the noun 「使い方」 (how to use); 「もう一度」 modifies 「教えてください」. The ★ is the fourth slot: 「教えて」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "rev": 2
+  }
+]

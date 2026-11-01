@@ -5,12 +5,14 @@
   "scripts": {
     "build": "node build.js && node build-anki.js",
     "build:site": "node build.js",
-    "build:anki": "node build-anki.js"
+    "build:anki": "node build-anki.js",
+    "preview": "cp -R audio dist/ && cd dist && python3 -m http.server 8000"
   },
   "dependencies": {
     "kuroshiro": "^1.2.0",
     "kuroshiro-analyzer-kuromoji": "^1.1.0",
     "marked": "^15.0.0",
-    "sharp": "^0.33.5"
+    "qrcode-generator": "^1.4.4",
+    "sharp": "^0.35.5"
   }
 }

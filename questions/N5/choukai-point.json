@@ -1,0 +1,1992 @@
+[
+ {
+  "id": "n5-ck-201",
+  "type": "point",
+  "scene": "男の人と 女の人が 話しています。",
+  "question": "二人は 何曜日に えいがを 見に 行きますか。",
+  "lines": [
+   [
+    "M",
+    "山田さん、いっしょに えいがを 見に 行きませんか。"
+   ],
+   [
+    "F",
+    "いいですね。いつが いいですか。"
+   ],
+   [
+    "M",
+    "土曜日は どうですか。"
+   ],
+   [
+    "F",
+    "すみません、土曜日と 日曜日は しごとが あります。月曜日は どうですか。"
+   ],
+   [
+    "M",
+    "月曜日は ちょっと……。じゃあ、金曜日の よるは？"
+   ],
+   [
+    "F",
+    "金曜日ですね。いいですよ。"
+   ]
+  ],
+  "options": [
+   "月曜日",
+   "金曜日",
+   "土曜日",
+   "日曜日"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "两个人星期几去看电影？",
+    "lines": [
+     "山田，一起去看电影吧？",
+     "好啊。什么时候好呢？",
+     "星期六怎么样？",
+     "不好意思，星期六和星期天我要上班。星期一怎么样？",
+     "星期一有点……那星期五晚上呢？",
+     "星期五啊。可以呀。"
+    ],
+    "options": [
+     "星期一",
+     "星期五",
+     "星期六",
+     "星期天"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "On what day will the two go to see a film?",
+    "lines": [
+     "Yamada-san, would you like to go and see a film together?",
+     "Sounds good. When suits you?",
+     "How about Saturday?",
+     "Sorry, I have my part-time job on Saturday and Sunday. How about Monday?",
+     "Monday's a bit... Then how about Friday evening?",
+     "Friday, then. Sure."
+    ],
+    "options": [
+     "Monday",
+     "Friday",
+     "Saturday",
+     "Sunday"
+    ]
+   }
+  },
+  "why": {
+   "zh": "周六、周日女人要上班，周一男人不方便（「ちょっと……」），最后两人定在星期五晚上。",
+   "en": "She works on Saturday and Sunday, he can't do Monday (「ちょっと……」); they settle on Friday evening."
+  },
+  "wrong": [
+   {
+    "zh": "星期一是女人提的，男人用「ちょっと……」婉拒了。",
+    "en": "Monday was her suggestion; he turns it down with 「ちょっと……」."
+   },
+   null,
+   {
+    "zh": "星期六是男人最先提的，但女人那天要上班。",
+    "en": "Saturday was his first idea, but she works that day."
+   },
+   {
+    "zh": "星期天女人也要上班。",
+    "en": "She works on Sunday too."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n5-ck-202",
+  "type": "point",
+  "scene": "店で 男の人と 店の 人が 話しています。",
+  "question": "男の人は りんごを いくつ 買いますか。",
+  "lines": [
+   [
+    "F",
+    "いらっしゃいませ。"
+   ],
+   [
+    "M",
+    "すみません、この りんごを 五つ ください。"
+   ],
+   [
+    "F",
+    "はい、五つですね。こちらの みかんも やすいですよ。"
+   ],
+   [
+    "M",
+    "じゃあ、みかんも ください。あ、りんごは 家に 二つ ありますから、三つに します。"
+   ],
+   [
+    "F",
+    "はい、りんご 三つと みかんですね。"
+   ]
+  ],
+  "options": [
+   "二つ",
+   "三つ",
+   "五つ",
+   "七つ"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在店里，一个男人和店员在说话。",
+    "question": "男人买几个苹果？",
+    "lines": [
+     "欢迎光临。",
+     "你好，这个苹果请给我五个。",
+     "好的，五个是吧。这边的橘子也很便宜哦。",
+     "那橘子也要。啊，家里还有两个苹果，那就要三个吧。",
+     "好的，三个苹果和橘子。"
+    ],
+    "options": [
+     "两个",
+     "三个",
+     "五个",
+     "七个"
+    ]
+   },
+   "en": {
+    "scene": "In a shop, a man and a shop assistant are talking.",
+    "question": "How many apples does the man buy?",
+    "lines": [
+     "Welcome.",
+     "Excuse me, five of these apples, please.",
+     "Five, certainly. These mandarins are cheap too.",
+     "Then some mandarins as well, please. Oh, I have two apples at home, so I'll make it three.",
+     "Right, three apples and the mandarins."
+    ],
+    "options": [
+     "Two",
+     "Three",
+     "Five",
+     "Seven"
+    ]
+   }
+  },
+  "why": {
+   "zh": "他先说要五个，后来想起家里有两个，改成「三つに します」，店员也确认了「りんご 三つ」。",
+   "en": "He first asks for five, then remembers two at home and changes to 「三つに します」; the assistant confirms 「りんご 三つ」."
+  },
+  "wrong": [
+   {
+    "zh": "两个是他家里已经有的苹果。",
+    "en": "Two is how many he already has at home."
+   },
+   null,
+   {
+    "zh": "五个是他一开始说的，后来改了。",
+    "en": "Five was his first order, which he changes."
+   },
+   {
+    "zh": "七个是五加二，对话里没有人这么说。",
+    "en": "Seven is five plus two — nobody says that."
+   }
+  ],
+  "traps": [
+   "number",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n5-ck-203",
+  "type": "point",
+  "scene": "男の人と 女の人が 話しています。",
+  "question": "女の人は かさを いくらで 買いましたか。",
+  "lines": [
+   [
+    "M",
+    "田中さん、新しい かさですね。"
+   ],
+   [
+    "F",
+    "ええ、きのう 駅の 前の 店で 買いました。"
+   ],
+   [
+    "M",
+    "高かったですか。三千円ぐらいですか。"
+   ],
+   [
+    "F",
+    "いいえ、二千円でした。千円の かさも ありましたが、小さかったです。"
+   ],
+   [
+    "M",
+    "そうですか。いい かさですね。"
+   ],
+   [
+    "F",
+    "ありがとう。前の かさは 千五百円でした。"
+   ]
+  ],
+  "options": [
+   "千円",
+   "千五百円",
+   "二千円",
+   "三千円"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "女人花多少钱买的伞？",
+    "lines": [
+     "田中，新伞啊。",
+     "嗯，昨天在车站前面的店里买的。",
+     "贵吗？三千日元左右？",
+     "不是，两千日元。也有一千日元的伞，可是太小了。",
+     "这样啊。伞真不错。",
+     "谢谢。以前那把是一千五百日元。"
+    ],
+    "options": [
+     "一千日元",
+     "一千五百日元",
+     "两千日元",
+     "三千日元"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "How much did the woman pay for her umbrella?",
+    "lines": [
+     "Tanaka-san, that's a new umbrella.",
+     "Yes, I bought it yesterday at the shop in front of the station.",
+     "Was it expensive? About 3,000 yen?",
+     "No, it was 2,000 yen. There were 1,000-yen umbrellas too, but they were small.",
+     "I see. It's a nice umbrella.",
+     "Thanks. My old umbrella was 1,500 yen."
+    ],
+    "options": [
+     "1,000 yen",
+     "1,500 yen",
+     "2,000 yen",
+     "3,000 yen"
+    ]
+   }
+  },
+  "why": {
+   "zh": "男人猜三千日元，她用「いいえ、二千円でした」否定并说出价格。",
+   "en": "He guesses 3,000; she says 「いいえ、二千円でした」."
+  },
+  "wrong": [
+   {
+    "zh": "一千日元的伞太小，她没买。",
+    "en": "The 1,000-yen umbrellas were too small; she didn't buy one."
+   },
+   {
+    "zh": "一千五百日元是以前那把伞的价格。",
+    "en": "1,500 yen was her old umbrella."
+   },
+   null,
+   {
+    "zh": "三千日元是男人的猜测，被她否定了。",
+    "en": "3,000 yen is his guess, which she denies."
+   }
+  ],
+  "traps": [
+   "number",
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n5-ck-204",
+  "type": "point",
+  "scene": "男の人と 女の人が 話しています。",
+  "question": "男の人は 今日 どこで 昼ごはんを 食べますか。",
+  "lines": [
+   [
+    "F",
+    "木村さん、昼ごはんは いつも 会社の しょくどうですか。"
+   ],
+   [
+    "M",
+    "いいえ、しょくどうは 人が おおいですから、いつもは こうえんで 食べます。"
+   ],
+   [
+    "F",
+    "今日も こうえんですか。"
+   ],
+   [
+    "M",
+    "今日は 雨ですから……。駅の 前の 店で ラーメンを 食べます。"
+   ],
+   [
+    "F",
+    "そうですか。わたしは 会社の 近くの きっさてんに 行きます。"
+   ]
+  ],
+  "options": [
+   "会社の しょくどう",
+   "こうえん",
+   "きっさてん",
+   "駅の 前の 店"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "男人今天在哪里吃午饭？",
+    "lines": [
+     "木村，你午饭总是在公司食堂吃吗？",
+     "不是，食堂人多，我平时在公园吃。",
+     "今天也去公园吗？",
+     "今天下雨……我去车站前面的店吃拉面。",
+     "这样啊。我去公司附近的咖啡馆。"
+    ],
+    "options": [
+     "公司食堂",
+     "公园",
+     "咖啡馆",
+     "车站前面的店"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "Where will the man eat lunch today?",
+    "lines": [
+     "Kimura-san, do you always have lunch in the company cafeteria?",
+     "No, the cafeteria is crowded, so I usually eat in the park.",
+     "The park today too?",
+     "It's raining today, so... I'll have ramen at the shop in front of the station.",
+     "I see. I'm going to the café near the office."
+    ],
+    "options": [
+     "The company cafeteria",
+     "The park",
+     "The café",
+     "The shop in front of the station"
+    ]
+   }
+  },
+  "why": {
+   "zh": "平时在公园，但今天下雨，所以去「駅の 前の 店」吃拉面。",
+   "en": "He usually eats in the park, but it's raining, so today it's ramen at 「駅の 前の 店」."
+  },
+  "wrong": [
+   {
+    "zh": "食堂人多，他说「いいえ」，不去。",
+    "en": "He says no — the cafeteria is too crowded."
+   },
+   {
+    "zh": "公园是他平时吃饭的地方，今天下雨不去。",
+    "en": "The park is where he usually eats, not today in the rain."
+   },
+   {
+    "zh": "咖啡馆是女人要去的地方。",
+    "en": "The café is where the woman is going."
+   },
+   null
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked",
+   "other-option-attribute"
+  ]
+ },
+ {
+  "id": "n5-ck-205",
+  "type": "point",
+  "scene": "女の人と 男の人が 話しています。",
+  "question": "男の人は どうして きのう 学校を 休みましたか。",
+  "lines": [
+   [
+    "F",
+    "林さん、きのう 学校を 休みましたね。かぜですか。"
+   ],
+   [
+    "M",
+    "いいえ、かぜじゃ ありません。"
+   ],
+   [
+    "F",
+    "じゃあ、あたまが いたかったんですか。"
+   ],
+   [
+    "M",
+    "いいえ。国から 母が 来ましたから、くうこうへ 行きました。"
+   ],
+   [
+    "F",
+    "そうですか。お母さんは 元気ですか。"
+   ],
+   [
+    "M",
+    "はい、元気です。来週 国へ 帰ります。"
+   ]
+  ],
+  "options": [
+   "国から 母が 来たから",
+   "かぜを ひいたから",
+   "あたまが いたかったから",
+   "国へ 帰ったから"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在说话。",
+    "question": "男人昨天为什么没去学校？",
+    "lines": [
+     "林，你昨天没来学校啊。感冒了？",
+     "不是，不是感冒。",
+     "那是头疼？",
+     "不是。我妈妈从国内来了，我去机场了。",
+     "这样啊。你妈妈身体好吗？",
+     "嗯，很好。她下周回国。"
+    ],
+    "options": [
+     "因为妈妈从国内来了",
+     "因为感冒了",
+     "因为头疼",
+     "因为回国了"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking.",
+    "question": "Why was the man absent from school yesterday?",
+    "lines": [
+     "Hayashi-san, you were off school yesterday. Did you have a cold?",
+     "No, it wasn't a cold.",
+     "Then did you have a headache?",
+     "No. My mother came from my home country, so I went to the airport.",
+     "I see. Is your mother well?",
+     "Yes, she's fine. She goes back home next week."
+    ],
+    "options": [
+     "His mother came from his home country",
+     "He caught a cold",
+     "He had a headache",
+     "He went back to his home country"
+    ]
+   }
+  },
+  "why": {
+   "zh": "两个猜测都被「いいえ」否定，真正的原因是「国から 母が 来ましたから」。",
+   "en": "Both guesses get 「いいえ」; the real reason is 「国から 母が 来ましたから」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "他说「かぜじゃ ありません」。",
+    "en": "He says 「かぜじゃ ありません」 — not a cold."
+   },
+   {
+    "zh": "头疼的猜测也被「いいえ」否定了。",
+    "en": "The headache guess is also denied with 「いいえ」."
+   },
+   {
+    "zh": "回国的是妈妈，而且是下周，不是他昨天。",
+    "en": "It's his mother who goes home, and next week — not him, yesterday."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n5-ck-206",
+  "type": "point",
+  "scene": "男の人と 女の人が 電話で 話しています。",
+  "question": "二人は あした なんじに 会いますか。",
+  "lines": [
+   [
+    "M",
+    "もしもし、佐藤さん。あした、駅で なんじに 会いましょうか。"
+   ],
+   [
+    "F",
+    "十時は どうですか。"
+   ],
+   [
+    "M",
+    "すみません、午前は 店の しごとが あります。十二時までです。"
+   ],
+   [
+    "F",
+    "じゃあ、二時は どうですか。"
+   ],
+   [
+    "M",
+    "二時は ちょっと……。昼ごはんの あとで 友だちと 会います。三時は どうですか。"
+   ],
+   [
+    "F",
+    "三時ですね。いいですよ。"
+   ]
+  ],
+  "options": [
+   "十時",
+   "十二時",
+   "二時",
+   "三時"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在打电话。",
+    "question": "两个人明天几点见面？",
+    "lines": [
+     "喂，佐藤。明天我们几点在车站见？",
+     "十点怎么样？",
+     "不好意思，上午我在店里有工作，到十二点。",
+     "那两点怎么样？",
+     "两点有点……吃完午饭我要见朋友。三点怎么样？",
+     "三点是吧。可以哦。"
+    ],
+    "options": [
+     "十点",
+     "十二点",
+     "两点",
+     "三点"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking on the phone.",
+    "question": "What time will the two meet tomorrow?",
+    "lines": [
+     "Hello, Sato-san. What time shall we meet at the station tomorrow?",
+     "How about ten?",
+     "Sorry, I have work at the shop in the morning. Until twelve.",
+     "Then how about two?",
+     "Two's a bit... I'm meeting a friend after lunch. How about three?",
+     "Three, then. Fine."
+    ],
+    "options": [
+     "Ten",
+     "Twelve",
+     "Two",
+     "Three"
+    ]
+   }
+  },
+  "why": {
+   "zh": "十点他上午要工作，两点他要见朋友，最后他提出三点，女人说「いいですよ」。",
+   "en": "Ten is out (he works in the morning), two is out (he meets a friend); he suggests three and she agrees."
+  },
+  "wrong": [
+   {
+    "zh": "十点他在店里工作。",
+    "en": "At ten he's working at the shop."
+   },
+   {
+    "zh": "十二点是他工作结束的时间，不是见面时间。",
+    "en": "Twelve is when his work ends, not when they meet."
+   },
+   {
+    "zh": "两点他用「ちょっと……」拒绝了，要见朋友。",
+    "en": "He turns down two with 「ちょっと……」 — he's meeting a friend."
+   },
+   null
+  ],
+  "traps": [
+   "number",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n5-ck-207",
+  "type": "point",
+  "scene": "男の人と 女の人が 話しています。",
+  "question": "かぎは どこに ありましたか。",
+  "lines": [
+   [
+    "M",
+    "あれ、へやの かぎが ありません。"
+   ],
+   [
+    "F",
+    "かばんの 中は 見ましたか。"
+   ],
+   [
+    "M",
+    "はい、かばんの 中には ありませんでした。"
+   ],
+   [
+    "F",
+    "じゃあ、コートの ポケットは？"
+   ],
+   [
+    "M",
+    "ポケットにも ありません。……あ、ありました。つくえの 下に ありました。"
+   ],
+   [
+    "F",
+    "よかったですね。わたしは つくえの 上は 見ましたが、下は 見ませんでした。"
+   ]
+  ],
+  "options": [
+   "つくえの 下",
+   "かばんの 中",
+   "コートの ポケット",
+   "つくえの 上"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "钥匙在哪里？",
+    "lines": [
+     "咦，房间钥匙不见了。",
+     "包里看了吗？",
+     "看了，包里没有。",
+     "那大衣口袋呢？",
+     "口袋里也没有。……啊，找到了。在桌子下面。",
+     "太好了。我看了桌子上面，没看下面。"
+    ],
+    "options": [
+     "桌子下面",
+     "包里",
+     "大衣口袋",
+     "桌子上面"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "Where was the key?",
+    "lines": [
+     "Huh, my room key isn't here.",
+     "Did you look in your bag?",
+     "Yes, it wasn't in my bag.",
+     "Then your coat pocket?",
+     "Not in the pocket either... Oh, here it is. It was under the desk.",
+     "Good. I looked on the desk, but not under it."
+    ],
+    "options": [
+     "Under the desk",
+     "In the bag",
+     "In the coat pocket",
+     "On the desk"
+    ]
+   }
+  },
+  "why": {
+   "zh": "包里和口袋里都没有，最后「つくえの 下に ありました」。",
+   "en": "Not in the bag or the pocket; finally 「つくえの 下に ありました」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "他说包里「ありませんでした」。",
+    "en": "He says it wasn't in the bag."
+   },
+   {
+    "zh": "口袋里「にも ありません」。",
+    "en": "Not in the pocket either."
+   },
+   {
+    "zh": "桌子上面是女人看过的地方，钥匙在下面。",
+    "en": "On the desk is where she looked; the key was under it."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n5-ck-208",
+  "type": "point",
+  "scene": "男の人と 女の人が 話しています。",
+  "question": "日曜日の パーティーには なんにん 来ますか。",
+  "lines": [
+   [
+    "F",
+    "中村さん、日曜日の パーティーは なんにん 来ますか。"
+   ],
+   [
+    "M",
+    "十人です。あ、でも、山田さんと 林さんは 来ません。けさ 電話が ありました。"
+   ],
+   [
+    "F",
+    "じゃあ、八人ですね。"
+   ],
+   [
+    "M",
+    "はい、八人です。"
+   ],
+   [
+    "F",
+    "いすは 六つ ありますから、あと 二つ 買いましょう。"
+   ]
+  ],
+  "options": [
+   "二人",
+   "六人",
+   "八人",
+   "十人"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "星期天的聚会来几个人？",
+    "lines": [
+     "中村，星期天的聚会来几个人？",
+     "十个人。啊，不过山田和林不来了，今天早上打电话来了。",
+     "那就是八个人吧。",
+     "对，八个人。",
+     "椅子有六把，再买两把吧。"
+    ],
+    "options": [
+     "两个人",
+     "六个人",
+     "八个人",
+     "十个人"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "How many people are coming to Sunday's party?",
+    "lines": [
+     "Nakamura-san, how many people are coming to Sunday's party?",
+     "Ten. Oh, but Yamada-san and Hayashi-san aren't coming. They phoned this morning.",
+     "So that's eight, then.",
+     "Yes, eight.",
+     "We have six chairs, so let's buy two more."
+    ],
+    "options": [
+     "Two",
+     "Six",
+     "Eight",
+     "Ten"
+    ]
+   }
+  },
+  "why": {
+   "zh": "本来十个人，山田和林两个人不来，两人都确认是「八人」。",
+   "en": "Ten minus Yamada and Hayashi; both say 「八人」."
+  },
+  "wrong": [
+   {
+    "zh": "两个人是不来的人数，也是要再买的椅子数。",
+    "en": "Two is who isn't coming, and the extra chairs."
+   },
+   {
+    "zh": "六是现有椅子的数量。",
+    "en": "Six is the number of chairs they have."
+   },
+   null,
+   {
+    "zh": "十个人是原来的人数，有两个人不来了。",
+    "en": "Ten was the original number, before two dropped out."
+   }
+  ],
+  "traps": [
+   "number",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n5-ck-209",
+  "type": "point",
+  "scene": "男の人と 女の人が 話しています。",
+  "question": "女の人は どうして 今日 じてんしゃで 来ませんでしたか。",
+  "lines": [
+   [
+    "M",
+    "大野さん、けさ バスに のって いましたね。いつもは じてんしゃですね。"
+   ],
+   [
+    "F",
+    "ええ。"
+   ],
+   [
+    "M",
+    "今日は いい 天気ですよ。あしが いたいんですか。"
+   ],
+   [
+    "F",
+    "いいえ、あしは だいじょうぶです。じてんしゃは 弟に かしました。"
+   ],
+   [
+    "M",
+    "そうですか。あしたは じてんしゃですか。"
+   ],
+   [
+    "F",
+    "いいえ、あしたは 雨ですから、あしたも バスです。"
+   ]
+  ],
+  "options": [
+   "雨が ふったから",
+   "あしが いたいから",
+   "弟に かしたから",
+   "あしたは 雨だから"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "女人今天为什么没骑自行车来？",
+    "lines": [
+     "大野，你今天早上坐公交车了吧。你平时都骑自行车的。",
+     "嗯。",
+     "今天天气很好啊。是腿疼吗？",
+     "不是，腿没事。自行车借给我弟弟了。",
+     "这样啊。明天骑自行车吗？",
+     "不，明天下雨，明天也坐公交车。"
+    ],
+    "options": [
+     "因为下雨了",
+     "因为腿疼",
+     "因为借给弟弟了",
+     "因为明天下雨"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "Why didn't the woman come by bicycle today?",
+    "lines": [
+     "Ono-san, you were on the bus this morning, weren't you? You usually cycle.",
+     "Yes.",
+     "It's nice weather today. Does your leg hurt?",
+     "No, my leg's fine. I lent my bike to my younger brother.",
+     "I see. Will you cycle tomorrow?",
+     "No, it'll rain tomorrow, so it's the bus tomorrow too."
+    ],
+    "options": [
+     "Because it rained",
+     "Because her leg hurts",
+     "Because she lent it to her brother",
+     "Because it will rain tomorrow"
+    ]
+   }
+  },
+  "why": {
+   "zh": "腿疼的猜测被否定，原因是「じてんしゃは 弟に かしました」。",
+   "en": "The leg guess is denied; the reason is 「じてんしゃは 弟に かしました」."
+  },
+  "wrong": [
+   {
+    "zh": "今天天气很好，没有下雨。",
+    "en": "It's nice weather today — no rain."
+   },
+   {
+    "zh": "她说「あしは だいじょうぶです」。",
+    "en": "She says her leg is fine."
+   },
+   null,
+   {
+    "zh": "明天下雨是明天坐公交车的理由，不是今天的。",
+    "en": "Tomorrow's rain explains tomorrow's bus, not today's."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked",
+   "tense"
+  ]
+ },
+ {
+  "id": "n5-ck-210",
+  "type": "point",
+  "scene": "女の人と 男の人が 話しています。",
+  "question": "男の人は だれと 山へ 行きますか。",
+  "lines": [
+   [
+    "F",
+    "小林さん、なつ休みは どこかへ 行きますか。"
+   ],
+   [
+    "M",
+    "はい、山へ 行きます。"
+   ],
+   [
+    "F",
+    "いいですね。お父さんや お母さんと 行きますか。"
+   ],
+   [
+    "M",
+    "いいえ、父と 母は しごとが ありますから、行きません。"
+   ],
+   [
+    "F",
+    "じゃあ、お友だちと？"
+   ],
+   [
+    "M",
+    "友だちは いそがしいですから……。兄と 二人で 行きます。"
+   ]
+  ],
+  "options": [
+   "お兄さん",
+   "お父さん",
+   "お母さん",
+   "友だち"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在说话。",
+    "question": "男人和谁去山里？",
+    "lines": [
+     "小林，暑假要去哪儿吗？",
+     "嗯，去山里。",
+     "真好。和爸爸妈妈一起去吗？",
+     "不，爸爸妈妈要工作，不去。",
+     "那是和朋友？",
+     "朋友很忙……我和哥哥两个人去。"
+    ],
+    "options": [
+     "哥哥",
+     "爸爸",
+     "妈妈",
+     "朋友"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking.",
+    "question": "Who is the man going to the mountains with?",
+    "lines": [
+     "Kobayashi-san, are you going anywhere in the summer holidays?",
+     "Yes, to the mountains.",
+     "Nice. Are you going with your father and mother?",
+     "No, my father and mother have work, so they're not going.",
+     "Then with friends?",
+     "My friends are busy, so... I'm going with my older brother, just the two of us."
+    ],
+    "options": [
+     "His older brother",
+     "His father",
+     "His mother",
+     "A friend"
+    ]
+   }
+  },
+  "why": {
+   "zh": "父母要工作、朋友很忙，最后「兄と 二人で 行きます」。",
+   "en": "His parents work and his friends are busy; 「兄と 二人で 行きます」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "爸爸要工作，不去。",
+    "en": "His father has work and isn't going."
+   },
+   {
+    "zh": "妈妈也要工作，不去。",
+    "en": "His mother has work too."
+   },
+   {
+    "zh": "朋友很忙，不去。",
+    "en": "His friends are busy."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n5-ck-211",
+  "type": "point",
+  "scene": "パーティーで 男の人と 女の人が 話しています。",
+  "question": "田中さんは どの 人ですか。",
+  "lines": [
+   [
+    "F",
+    "田中さんは どの 人ですか。"
+   ],
+   [
+    "M",
+    "あそこの、めがねを かけて いる 男の 人です。"
+   ],
+   [
+    "F",
+    "めがねの 人は 二人 いますよ。ぼうしを かぶって いる 人ですか。"
+   ],
+   [
+    "M",
+    "いいえ、田中さんは ぼうしを かぶって いません。"
+   ],
+   [
+    "F",
+    "ああ、あの 人ですね。"
+   ]
+  ],
+  "options": [
+   "めがねと ぼうし",
+   "ぼうしだけ",
+   "どちらも ない",
+   "めがねだけ"
+  ],
+  "optionImages": [
+   "A simple black-and-white line drawing, no text: a man standing, facing forward, wearing glasses and a hat.",
+   "A simple black-and-white line drawing, no text: a man standing, facing forward, wearing a hat, no glasses.",
+   "A simple black-and-white line drawing, no text: a man standing, facing forward, no glasses and no hat.",
+   "A simple black-and-white line drawing, no text: a man standing, facing forward, wearing glasses, no hat."
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "在聚会上，一个男人和一个女人在说话。",
+    "question": "田中是哪个人？",
+    "lines": [
+     "田中是哪个人？",
+     "那边那个戴眼镜的男人。",
+     "戴眼镜的有两个人啊。是戴帽子的那个吗？",
+     "不是，田中没戴帽子。",
+     "啊，是那个人啊。"
+    ],
+    "options": [
+     "戴眼镜、戴帽子",
+     "只戴帽子",
+     "都没戴",
+     "只戴眼镜"
+    ]
+   },
+   "en": {
+    "scene": "At a party, a man and a woman are talking.",
+    "question": "Which person is Tanaka-san?",
+    "lines": [
+     "Which one is Tanaka-san?",
+     "The man over there wearing glasses.",
+     "There are two people with glasses. Is it the one in the hat?",
+     "No, Tanaka-san isn't wearing a hat.",
+     "Ah, that person."
+    ],
+    "options": [
+     "Glasses and a hat",
+     "Only a hat",
+     "Neither",
+     "Only glasses"
+    ]
+   }
+  },
+  "why": {
+   "zh": "先说「めがねを かけて いる」，再说「ぼうしを かぶって いません」：戴眼镜、不戴帽子。",
+   "en": "First 「めがねを かけて いる」, then 「ぼうしを かぶって いません」: glasses, no hat."
+  },
+  "wrong": [
+   {
+    "zh": "戴眼镜对，但他说没戴帽子。",
+    "en": "Glasses is right, but he says no hat."
+   },
+   {
+    "zh": "田中戴眼镜，这个人没戴，而且戴着帽子。",
+    "en": "Tanaka wears glasses; this man doesn't, and has a hat."
+   },
+   {
+    "zh": "田中戴着眼镜。",
+    "en": "Tanaka is wearing glasses."
+   },
+   null
+  ],
+  "traps": [
+   "half-right",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n5-ck-212",
+  "type": "point",
+  "scene": "えいがかんの 前で 男の人と 女の人が 話しています。",
+  "question": "女の人の おねえさんは どの 人ですか。",
+  "lines": [
+   [
+    "M",
+    "山田さん、おねえさんは どの 人ですか。"
+   ],
+   [
+    "F",
+    "あそこに いる 女の 人です。"
+   ],
+   [
+    "M",
+    "いすに すわって いる 人ですか。"
+   ],
+   [
+    "F",
+    "いいえ、立って いる 人です。"
+   ],
+   [
+    "M",
+    "立って いる 人は 二人 いますね。"
+   ],
+   [
+    "F",
+    "花を もって いる ほうです。"
+   ]
+  ],
+  "options": [
+   "すわって いる・花",
+   "立って いる・花",
+   "立って いる・本",
+   "すわって いる・本"
+  ],
+  "optionImages": [
+   "A simple black-and-white line drawing, no text: a young woman sitting on a chair, holding a bunch of flowers.",
+   "A simple black-and-white line drawing, no text: a young woman standing, holding a bunch of flowers.",
+   "A simple black-and-white line drawing, no text: a young woman standing, holding a book.",
+   "A simple black-and-white line drawing, no text: a young woman sitting on a chair, holding a book."
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在电影院前面，一个男人和一个女人在说话。",
+    "question": "女人的姐姐是哪个人？",
+    "lines": [
+     "山田，你姐姐是哪个人？",
+     "那边那个女的。",
+     "是坐在椅子上的人吗？",
+     "不是，是站着的人。",
+     "站着的有两个人啊。",
+     "是拿着花的那个。"
+    ],
+    "options": [
+     "坐着・花",
+     "站着・花",
+     "站着・书",
+     "坐着・书"
+    ]
+   },
+   "en": {
+    "scene": "In front of a cinema, a man and a woman are talking.",
+    "question": "Which person is the woman's older sister?",
+    "lines": [
+     "Yamada-san, which one is your sister?",
+     "That woman over there.",
+     "The one sitting on the chair?",
+     "No, the one standing.",
+     "There are two people standing.",
+     "The one holding flowers."
+    ],
+    "options": [
+     "Sitting, flowers",
+     "Standing, flowers",
+     "Standing, book",
+     "Sitting, book"
+    ]
+   }
+  },
+  "why": {
+   "zh": "「すわって いる」被否定，是「立って いる」而且「花を もって いる」的人。",
+   "en": "Sitting is denied; she's standing and holding flowers."
+  },
+  "wrong": [
+   {
+    "zh": "拿着花对，但姐姐是站着的。",
+    "en": "Flowers is right, but her sister is standing."
+   },
+   null,
+   {
+    "zh": "站着对，但姐姐拿的是花，不是书。",
+    "en": "Standing is right, but she's holding flowers, not a book."
+   },
+   {
+    "zh": "坐着被否定了，拿的也不是花。",
+    "en": "Sitting is denied, and she's not holding flowers."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n5-ck-213",
+  "type": "point",
+  "scene": "駅で 女の人と 駅の 人が 話しています。",
+  "question": "女の人の かばんは どれですか。",
+  "lines": [
+   [
+    "F",
+    "すみません、電車の 中に かばんを わすれました。"
+   ],
+   [
+    "M",
+    "どんな かばんですか。"
+   ],
+   [
+    "F",
+    "前に ポケットが ある かばんです。"
+   ],
+   [
+    "M",
+    "ポケットが ある かばんは 二つ ありますよ。大きいのと 小さいのです。"
+   ],
+   [
+    "F",
+    "大きい ほうです。中に 本が たくさん 入って います。"
+   ],
+   [
+    "M",
+    "じゃあ、これですね。"
+   ]
+  ],
+  "options": [
+   "大きい・ポケット ある",
+   "小さい・ポケット ある",
+   "大きい・ポケット ない",
+   "小さい・ポケット ない"
+  ],
+  "optionImages": [
+   "A simple black-and-white line drawing, no text: a large bag with a pocket on the front.",
+   "A simple black-and-white line drawing, no text: a small bag with a pocket on the front.",
+   "A simple black-and-white line drawing, no text: a large plain bag with no pocket.",
+   "A simple black-and-white line drawing, no text: a small plain bag with no pocket."
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在车站，一个女人和车站工作人员在说话。",
+    "question": "女人的包是哪个？",
+    "lines": [
+     "不好意思，我把包忘在电车上了。",
+     "什么样的包？",
+     "前面有口袋的包。",
+     "有口袋的包有两个哦，一个大的一个小的。",
+     "是大的那个。里面装了很多书。",
+     "那就是这个吧。"
+    ],
+    "options": [
+     "大・有口袋",
+     "小・有口袋",
+     "大・没口袋",
+     "小・没口袋"
+    ]
+   },
+   "en": {
+    "scene": "At a station, a woman and a station attendant are talking.",
+    "question": "Which bag is the woman's?",
+    "lines": [
+     "Excuse me, I left my bag on the train.",
+     "What kind of bag?",
+     "One with a pocket on the front.",
+     "There are two bags with pockets — a big one and a small one.",
+     "The big one. It's got lots of books in it.",
+     "Then it's this one."
+    ],
+    "options": [
+     "Large, with pocket",
+     "Small, with pocket",
+     "Large, no pocket",
+     "Small, no pocket"
+    ]
+   }
+  },
+  "why": {
+   "zh": "先说「前に ポケットが ある」，再从两个有口袋的包里选「大きい ほう」。",
+   "en": "First 「前に ポケットが ある」, then of the two with pockets, 「大きい ほう」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "有口袋，但她说是「大きい ほう」。",
+    "en": "It has a pocket, but she says the big one."
+   },
+   {
+    "zh": "大的没错，但她的包「前に ポケットが ある」。",
+    "en": "Big, yes, but hers has a front pocket."
+   },
+   {
+    "zh": "既小又没有口袋，两点都不对。",
+    "en": "Small and no pocket — wrong on both counts."
+   }
+  ],
+  "traps": [
+   "half-right"
+  ]
+ },
+ {
+  "id": "n5-ck-214",
+  "type": "point",
+  "scene": "女の人と 男の人が 男の人の かぞくの しゃしんを 見て います。",
+  "question": "男の人の 妹は どの 人ですか。",
+  "lines": [
+   [
+    "F",
+    "これは ごかぞくの しゃしんですか。"
+   ],
+   [
+    "M",
+    "はい、なつ休みの しゃしんです。"
+   ],
+   [
+    "F",
+    "妹さんは どの 人ですか。ズボンの 人ですか。"
+   ],
+   [
+    "M",
+    "いいえ、妹は ズボンが あまり すきじゃ ありません。スカートの 人です。"
+   ],
+   [
+    "F",
+    "スカートの 人は 二人 いますね。"
+   ],
+   [
+    "M",
+    "かみが 長い ほうが 妹です。"
+   ]
+  ],
+  "options": [
+   "ズボン・かみが 長い",
+   "ズボン・かみが みじかい",
+   "スカート・かみが 長い",
+   "スカート・かみが みじかい"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A girl standing, facing forward, wearing long trousers, with very long straight hair reaching down to her waist.",
+   "Simple black-and-white line drawing, no text. A girl standing, facing forward, wearing long trousers, with short chin-length bob hair (clearly a girl, with a hair clip).",
+   "Simple black-and-white line drawing, no text. A girl standing, facing forward, wearing a knee-length skirt, with very long straight hair reaching down to her waist.",
+   "Simple black-and-white line drawing, no text. A girl standing, facing forward, wearing a knee-length skirt, with short chin-length bob hair (clearly a girl, with a hair clip)."
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在看男人的家庭照片。",
+    "question": "男人的妹妹是哪个人？",
+    "lines": [
+     "这是你家人的照片吗？",
+     "对，是暑假的照片。",
+     "你妹妹是哪个？穿裤子的那个？",
+     "不是，我妹妹不太喜欢穿裤子。是穿裙子的那个。",
+     "穿裙子的有两个人呢。",
+     "头发长的那个是我妹妹。"
+    ],
+    "options": [
+     "裤子・长头发",
+     "裤子・短头发",
+     "裙子・长头发",
+     "裙子・短头发"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are looking at a photo of the man's family.",
+    "question": "Which person is the man's younger sister?",
+    "lines": [
+     "Is this a photo of your family?",
+     "Yes, it's from the summer holidays.",
+     "Which one is your sister? The one in trousers?",
+     "No, my sister doesn't like trousers much. She's the one in the skirt.",
+     "There are two people in skirts.",
+     "The one with long hair is my sister."
+    ],
+    "options": [
+     "Trousers, long hair",
+     "Trousers, short hair",
+     "Skirt, long hair",
+     "Skirt, short hair"
+    ]
+   }
+  },
+  "why": {
+   "zh": "裤子被否定，是「スカートの 人」，而且「かみが 長い ほう」。",
+   "en": "Trousers are denied; she's in a skirt, with long hair."
+  },
+  "wrong": [
+   {
+    "zh": "长头发对，但裤子被否定了，妹妹穿裙子。",
+    "en": "Long hair is right, but trousers are denied — she wears a skirt."
+   },
+   {
+    "zh": "裤子被否定了，头发也不对。",
+    "en": "Trousers are denied, and the hair is wrong."
+   },
+   null,
+   {
+    "zh": "穿裙子对，但妹妹是长头发。",
+    "en": "The skirt is right, but she has long hair."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n5-ck-215",
+  "type": "point",
+  "scene": "男の人と 女の人が 話しています。",
+  "question": "女の人の 家は どれですか。",
+  "lines": [
+   [
+    "M",
+    "鈴木さんの 家は どれですか。"
+   ],
+   [
+    "F",
+    "駅から 近いですよ。大きい 木が ある 家です。"
+   ],
+   [
+    "M",
+    "木が ある 家は 二つ ありますよ。前に 車が ない 家ですか。"
+   ],
+   [
+    "F",
+    "ええ。あ、ちがいます。先月、車を 買いましたから、今は 車が あります。"
+   ],
+   [
+    "M",
+    "ああ、じゃあ、あの 家ですね。"
+   ]
+  ],
+  "options": [
+   "木が ある・車が ある",
+   "木が ない・車が ある",
+   "木が ない・車が ない",
+   "木が ある・車が ない"
+  ],
+  "optionImages": [
+   "A simple black-and-white line drawing, no text: a small two-storey house with a big tree beside it and a car parked in front.",
+   "A simple black-and-white line drawing, no text: a small two-storey house with no tree and a car parked in front.",
+   "A simple black-and-white line drawing, no text: a small two-storey house with no tree and no car.",
+   "A simple black-and-white line drawing, no text: a small two-storey house with a big tree beside it and no car."
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "女人的家是哪一个？",
+    "lines": [
+     "铃木家是哪一栋？",
+     "离车站很近。是有棵大树的那栋。",
+     "有树的房子有两栋哦。是门前没有车的那栋吗？",
+     "嗯。啊，不对。上个月买了车，现在门前有车。",
+     "啊，那就是那栋了。"
+    ],
+    "options": [
+     "有树・有车",
+     "没树・有车",
+     "没树・没车",
+     "有树・没车"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "Which house is the woman's?",
+    "lines": [
+     "Which one is your house, Suzuki-san?",
+     "It's near the station. The one with a big tree.",
+     "There are two houses with trees. Is it the one without a car in front?",
+     "Yes. Oh, no — we bought a car last month, so there's a car now.",
+     "Ah, then it's that one."
+    ],
+    "options": [
+     "Tree, car",
+     "No tree, car",
+     "No tree, no car",
+     "Tree, no car"
+    ]
+   }
+  },
+  "why": {
+   "zh": "有大树；她先说「ええ」，马上改口「ちがいます」，上个月买了车，「今は 車が あります」。",
+   "en": "It has the big tree; she first says 「ええ」, then corrects herself — they bought a car last month, so there's a car now."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "有车，但她家有大树。",
+    "en": "There's a car, but her house has the big tree."
+   },
+   {
+    "zh": "没有树也没有车，两点都不对。",
+    "en": "No tree and no car — wrong on both."
+   },
+   {
+    "zh": "她一开始说「ええ」，但马上改口说现在有车了。",
+    "en": "She first says yes, but corrects herself: there's a car now."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n5-ck-216",
+  "type": "point",
+  "scene": "パーティーで 男の人と 女の人が 話しています。",
+  "question": "木村先生は どの 人ですか。",
+  "lines": [
+   [
+    "M",
+    "木村先生は どなたですか。あの ケーキを 食べて いる 人ですか。"
+   ],
+   [
+    "F",
+    "いいえ、先生は コーヒーを 飲んで いますよ。"
+   ],
+   [
+    "M",
+    "コーヒーを 飲んで いる 人は 二人 いますね。"
+   ],
+   [
+    "F",
+    "めがねを かけて いる 人が 木村先生です。"
+   ],
+   [
+    "M",
+    "ああ、あの 人ですね。"
+   ]
+  ],
+  "options": [
+   "ケーキ・めがね ある",
+   "コーヒー・めがね ある",
+   "コーヒー・めがね ない",
+   "ケーキ・めがね ない"
+  ],
+  "optionImages": [
+   "A simple black-and-white line drawing, no text: a middle-aged man standing, eating cake from a small plate, wearing glasses.",
+   "A simple black-and-white line drawing, no text: a middle-aged man standing, drinking from a coffee cup, wearing glasses.",
+   "A simple black-and-white line drawing, no text: a middle-aged man standing, drinking from a coffee cup, no glasses.",
+   "A simple black-and-white line drawing, no text: a middle-aged man standing, eating cake from a small plate, no glasses."
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在聚会上，一个男人和一个女人在说话。",
+    "question": "木村老师是哪个人？",
+    "lines": [
+     "木村老师是哪一位？是那个在吃蛋糕的人吗？",
+     "不是，老师在喝咖啡哦。",
+     "喝咖啡的有两个人呢。",
+     "戴眼镜的那个是木村老师。",
+     "啊，是那个人啊。"
+    ],
+    "options": [
+     "蛋糕・戴眼镜",
+     "咖啡・戴眼镜",
+     "咖啡・不戴眼镜",
+     "蛋糕・不戴眼镜"
+    ]
+   },
+   "en": {
+    "scene": "At a party, a man and a woman are talking.",
+    "question": "Which person is Mr Kimura, the teacher?",
+    "lines": [
+     "Which one is Professor Kimura? The one eating cake?",
+     "No, he's drinking coffee.",
+     "There are two people drinking coffee.",
+     "The one wearing glasses is Mr Kimura.",
+     "Ah, that person."
+    ],
+    "options": [
+     "Cake, glasses",
+     "Coffee, glasses",
+     "Coffee, no glasses",
+     "Cake, no glasses"
+    ]
+   }
+  },
+  "why": {
+   "zh": "吃蛋糕被否定，是「コーヒーを 飲んで いる」而且「めがねを かけて いる」的人。",
+   "en": "Eating cake is denied; he's drinking coffee and wearing glasses."
+  },
+  "wrong": [
+   {
+    "zh": "戴眼镜对，但老师在喝咖啡，不是吃蛋糕。",
+    "en": "Glasses is right, but he's drinking coffee, not eating cake."
+   },
+   null,
+   {
+    "zh": "喝咖啡对，但老师戴着眼镜。",
+    "en": "Coffee is right, but he wears glasses."
+   },
+   {
+    "zh": "吃蛋糕被否定了，也没戴眼镜。",
+    "en": "Cake is denied, and no glasses."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n5-ck-217",
+  "type": "point",
+  "scene": "ケーキの 店で 男の人と 店の 人が 話しています。",
+  "question": "男の人は どの ケーキを 買いますか。",
+  "lines": [
+   [
+    "M",
+    "すみません、妹の たんじょうびの ケーキが ほしいです。"
+   ],
+   [
+    "F",
+    "こちらの 大きい ケーキは どうですか。"
+   ],
+   [
+    "M",
+    "かぞくは 三人ですから、小さいのが いいです。"
+   ],
+   [
+    "F",
+    "小さい ケーキは この 二つです。"
+   ],
+   [
+    "M",
+    "妹は いちごが あまり すきじゃ ありませんから、いちごが ないのを ください。"
+   ]
+  ],
+  "options": [
+   "大きい・いちご ある",
+   "小さい・いちご ある",
+   "小さい・いちご ない",
+   "大きい・いちご ない"
+  ],
+  "optionImages": [
+   "A simple black-and-white line drawing, no text: a round cake on a plate, large, topped with strawberries.",
+   "A simple black-and-white line drawing, no text: a round cake on a plate, small, topped with strawberries.",
+   "A simple black-and-white line drawing, no text: a round cake on a plate, small, plain top with cream only, no fruit.",
+   "A simple black-and-white line drawing, no text: a round cake on a plate, large, plain top with cream only, no fruit."
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在蛋糕店，一个男人和店员在说话。",
+    "question": "男人买哪个蛋糕？",
+    "lines": [
+     "你好，我想要一个给妹妹过生日的蛋糕。",
+     "这边的大蛋糕怎么样？",
+     "家里就三个人，小的就好。",
+     "小蛋糕是这两个。",
+     "我妹妹不太喜欢草莓，请给我没有草莓的那个。"
+    ],
+    "options": [
+     "大・有草莓",
+     "小・有草莓",
+     "小・没草莓",
+     "大・没草莓"
+    ]
+   },
+   "en": {
+    "scene": "In a cake shop, a man and a shop assistant are talking.",
+    "question": "Which cake does the man buy?",
+    "lines": [
+     "Excuse me, I'd like a cake for my younger sister's birthday.",
+     "How about this large cake?",
+     "There are only three of us, so a small one is better.",
+     "These two are the small cakes.",
+     "My sister doesn't really like strawberries, so the one without strawberries, please."
+    ],
+    "options": [
+     "Large, strawberries",
+     "Small, strawberries",
+     "Small, no strawberries",
+     "Large, no strawberries"
+    ]
+   }
+  },
+  "why": {
+   "zh": "店员推荐的大蛋糕他不要（「小さいのが いい」），又因为妹妹不喜欢草莓，要「いちごが ない の」。",
+   "en": "He turns down the large one (「小さいのが いい」) and asks for the one without strawberries."
+  },
+  "wrong": [
+   {
+    "zh": "大蛋糕是店员推荐的，他说要小的，而且要没有草莓的。",
+    "en": "The large one is the assistant's suggestion; he wants small, without strawberries."
+   },
+   {
+    "zh": "小的对，但妹妹不太喜欢草莓。",
+    "en": "Small is right, but his sister doesn't like strawberries."
+   },
+   null,
+   {
+    "zh": "没有草莓对，但他要的是小蛋糕。",
+    "en": "No strawberries is right, but he wants a small cake."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n5-ck-218",
+  "type": "point",
+  "scene": "こうえんで 女の人と 男の人が 話しています。",
+  "question": "男の人の 子どもは どの 子ですか。",
+  "lines": [
+   [
+    "F",
+    "森さんの 子どもは どの 子ですか。あそこで はしって いる 子ですか。"
+   ],
+   [
+    "M",
+    "ええ、そうです。"
+   ],
+   [
+    "F",
+    "犬と いっしょに はしって いる 子ですね。"
+   ],
+   [
+    "M",
+    "いいえ、あの 犬は となりの 家の 犬です。うちの 子は 一人で はしって います。"
+   ],
+   [
+    "F",
+    "ああ、あの 子ですね。"
+   ]
+  ],
+  "options": [
+   "はしる・犬 いる",
+   "はしる・犬 いない",
+   "すわる・犬 いる",
+   "すわる・犬 いない"
+  ],
+  "optionImages": [
+   "A simple black-and-white line drawing, no text: a small boy in a park, running, with a small dog running beside him.",
+   "A simple black-and-white line drawing, no text: a small boy in a park, running alone, no dog.",
+   "A simple black-and-white line drawing, no text: a small boy in a park, sitting on a bench, with a small dog beside him.",
+   "A simple black-and-white line drawing, no text: a small boy in a park, sitting alone on a bench, no dog."
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在公园里，一个女人和一个男人在说话。",
+    "question": "男人的孩子是哪个？",
+    "lines": [
+     "森先生的孩子是哪个？是在那边跑的孩子吗？",
+     "对，是的。",
+     "是和狗一起跑的那个吧。",
+     "不是，那只狗是邻居家的。我家孩子是一个人在跑。",
+     "啊，是那个孩子啊。"
+    ],
+    "options": [
+     "跑・有狗",
+     "跑・没有狗",
+     "坐・有狗",
+     "坐・没有狗"
+    ]
+   },
+   "en": {
+    "scene": "In a park, a woman and a man are talking.",
+    "question": "Which child is the man's?",
+    "lines": [
+     "Which one is your child, Mori-san? The one running over there?",
+     "Yes, that's right.",
+     "The one running with the dog, then.",
+     "No, that dog is the neighbours'. Ours is running on his own.",
+     "Ah, that one."
+    ],
+    "options": [
+     "Running, with dog",
+     "Running, no dog",
+     "Sitting, with dog",
+     "Sitting, no dog"
+    ]
+   }
+  },
+  "why": {
+   "zh": "在跑——男人说「ええ、そうです」；但不是和狗一起，「一人で はしって います」。",
+   "en": "Running — he confirms; but not with the dog: 「一人で はしって います」."
+  },
+  "wrong": [
+   {
+    "zh": "和狗一起跑的是邻居家的狗那边，他说自家孩子「一人で」。",
+    "en": "The dog belongs to the neighbours; his child is running alone."
+   },
+   null,
+   {
+    "zh": "孩子在跑，不是坐着。",
+    "en": "His child is running, not sitting."
+   },
+   {
+    "zh": "孩子在跑，不是坐在长椅上。",
+    "en": "His child is running, not sitting on the bench."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n5-ck-219",
+  "type": "point",
+  "scene": "男の人と 女の人が ねこの しゃしんを 見て います。",
+  "question": "女の人の ねこは どれですか。",
+  "lines": [
+   [
+    "M",
+    "大野さんの ねこは どれですか。この 大きい ねこですか。"
+   ],
+   [
+    "F",
+    "いいえ、うちの ねこは 小さいです。"
+   ],
+   [
+    "M",
+    "小さい ねこは 二ひき いますね。ごはんを 食べて いる ねこですか。"
+   ],
+   [
+    "F",
+    "いいえ、ねて いる ほうです。うちの ねこは よく ねます。"
+   ]
+  ],
+  "options": [
+   "大きい・ねて いる",
+   "小さい・食べて いる",
+   "大きい・食べて いる",
+   "小さい・ねて いる"
+  ],
+  "optionImages": [
+   "A simple black-and-white line drawing, no text: a cat, large, curled up asleep with eyes closed.",
+   "A simple black-and-white line drawing, no text: a cat, small, eating from a bowl.",
+   "A simple black-and-white line drawing, no text: a cat, large, eating from a bowl.",
+   "A simple black-and-white line drawing, no text: a cat, small, curled up asleep with eyes closed."
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在看猫的照片。",
+    "question": "女人的猫是哪一只？",
+    "lines": [
+     "大野，你的猫是哪只？是这只大猫吗？",
+     "不是，我家的猫很小。",
+     "小猫有两只呢。是在吃东西的那只吗？",
+     "不是，是在睡觉的那只。我家的猫很爱睡觉。"
+    ],
+    "options": [
+     "大・在睡觉",
+     "小・在吃东西",
+     "大・在吃东西",
+     "小・在睡觉"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are looking at photos of cats.",
+    "question": "Which cat is the woman's?",
+    "lines": [
+     "Ono-san, which one is your cat? This big one?",
+     "No, our cat is small.",
+     "There are two small cats. The one eating?",
+     "No, the one sleeping. Our cat sleeps a lot."
+    ],
+    "options": [
+     "Large, sleeping",
+     "Small, eating",
+     "Large, eating",
+     "Small, sleeping"
+    ]
+   }
+  },
+  "why": {
+   "zh": "大猫被否定，吃东西也被否定：是「小さい」而且「ねて いる」的猫。",
+   "en": "Big is denied, eating is denied: it's small and sleeping."
+  },
+  "wrong": [
+   {
+    "zh": "在睡觉对，但她的猫很小。",
+    "en": "Sleeping is right, but her cat is small."
+   },
+   {
+    "zh": "小对，但吃东西被否定了。",
+    "en": "Small is right, but eating is denied."
+   },
+   {
+    "zh": "大和吃东西都被否定了。",
+    "en": "Both big and eating are denied."
+   },
+   null
+  ],
+  "traps": [
+   "half-right",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n5-ck-220",
+  "type": "point",
+  "scene": "駅で 男の人と 女の人が 話しています。",
+  "question": "女の人の お父さんは どの 人ですか。",
+  "lines": [
+   [
+    "M",
+    "中山さん、お父さんは どの 人ですか。あの 新聞を 読んで いる 人ですか。"
+   ],
+   [
+    "F",
+    "いいえ、父は 今 電話で 話して います。"
+   ],
+   [
+    "M",
+    "電話で 話して いる 人は 二人 いますよ。"
+   ],
+   [
+    "F",
+    "大きい かばんを もって いる ほうです。"
+   ]
+  ],
+  "options": [
+   "新聞・かばん ある",
+   "電話・かばん ある",
+   "電話・かばん ない",
+   "新聞・かばん ない"
+  ],
+  "optionImages": [
+   "A simple black-and-white line drawing, no text: an older man standing at a station, reading a newspaper, a big bag in his other hand.",
+   "A simple black-and-white line drawing, no text: an older man standing at a station, talking on a mobile phone, a big bag in his other hand.",
+   "A simple black-and-white line drawing, no text: an older man standing at a station, talking on a mobile phone, no bag.",
+   "A simple black-and-white line drawing, no text: an older man standing at a station, reading a newspaper, no bag."
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在车站，一个男人和一个女人在说话。",
+    "question": "女人的爸爸是哪个人？",
+    "lines": [
+     "中山，你爸爸是哪个人？是在看报纸的那个吗？",
+     "不是，我爸爸现在在打电话。",
+     "在打电话的有两个人啊。",
+     "是拿着大包的那个。"
+    ],
+    "options": [
+     "报纸・有包",
+     "电话・有包",
+     "电话・没有包",
+     "报纸・没有包"
+    ]
+   },
+   "en": {
+    "scene": "At a station, a man and a woman are talking.",
+    "question": "Which person is the woman's father?",
+    "lines": [
+     "Nakayama-san, which one is your father? The man reading a newspaper?",
+     "No, my father is on the phone now.",
+     "There are two people on the phone.",
+     "The one holding a big bag."
+    ],
+    "options": [
+     "Newspaper, bag",
+     "Phone, bag",
+     "Phone, no bag",
+     "Newspaper, no bag"
+    ]
+   }
+  },
+  "why": {
+   "zh": "看报纸被否定，是「電話で 話して いる」而且「大きい かばんを もって いる」的人。",
+   "en": "Reading the paper is denied; he's on the phone, holding a big bag."
+  },
+  "wrong": [
+   {
+    "zh": "拿着包对，但爸爸在打电话，不是看报纸。",
+    "en": "The bag is right, but he's on the phone, not reading."
+   },
+   null,
+   {
+    "zh": "在打电话对，但爸爸拿着大包。",
+    "en": "The phone is right, but he holds a big bag."
+   },
+   {
+    "zh": "看报纸被否定了，也没有包。",
+    "en": "The newspaper is denied, and no bag."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "denied-guess"
+  ]
+ }
+]

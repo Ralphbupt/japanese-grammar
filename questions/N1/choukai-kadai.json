@@ -1,0 +1,1669 @@
+[
+ {
+  "id": "n1-ck-101",
+  "type": "kadai",
+  "scene": "出版社で編集長と男の人が話しています。",
+  "question": "男の人はこのあとまず何をしなければなりませんか。",
+  "lines": [
+   [
+    "F",
+    "来月刊行の美術史の本、入稿まであと十日だけど、図版の件はどうなってる？"
+   ],
+   [
+    "M",
+    "はい、美術館が所蔵している作品は、すべて掲載の許可が下りました。残っているのは個人のコレクターの方がお持ちの二点で、まだお返事待ちです。"
+   ],
+   [
+    "F",
+    "その二点、返事が来なかったらどうするの。"
+   ],
+   [
+    "M",
+    "念のため、代わりの図版を探しておこうかと思っていたんですが。"
+   ],
+   [
+    "F",
+    "それもいいけど、まずは催促ね。ただ、先方はご高齢で、メールはご覧にならないって著者の先生がおっしゃってたから、手紙か電話で。"
+   ],
+   [
+    "M",
+    "では、すぐにお電話してみます。あ、それと、巻末の索引の項目も、そろそろ拾い始めようと思っているんですが。"
+   ],
+   [
+    "F",
+    "索引は、最終の校正刷りが出てからにして。ページが動くかもしれないから。それより、電話の前に、先生に一言断っておいて。先方とは先生が個人的に親しいらしくて、いきなり出版社から催促が行ったら、先生の顔をつぶしかねないから。"
+   ],
+   [
+    "M",
+    "承知しました。"
+   ]
+  ],
+  "options": [
+   "個人の所蔵者に電話をかける",
+   "代わりの図版を探しておく",
+   "著者に事情を伝えておく",
+   "索引の項目を拾い出す"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "出版社里，总编和一个男人在说话。",
+    "question": "男人接下来首先必须做什么？",
+    "lines": [
+     "下个月出的那本美术史的书，离交稿还有十天，图片的事怎么样了？",
+     "是。美术馆收藏的作品都已经拿到刊登许可了。剩下的是一位个人收藏家手里的两件，还在等回复。",
+     "那两件要是一直没回音怎么办？",
+     "我想以防万一，先找找替代的图片。",
+     "那也行，不过先得催一下。只是对方年纪大了，作者老师说过他不看邮件，所以要写信或打电话。",
+     "那我马上打电话。啊，还有，我想差不多该开始挑书末索引的条目了。",
+     "索引等最终校样出来再做，页码可能会变。比起那个，打电话之前先跟老师打声招呼。老师和对方私交好像很好，出版社突然去催的话，可能会让老师很没面子。",
+     "明白了。"
+    ],
+    "options": [
+     "给个人收藏者打电话",
+     "先找好替代的图片",
+     "先把情况告诉作者",
+     "挑出索引的条目"
+    ]
+   },
+   "en": {
+    "scene": "At a publishing house, the editor-in-chief and a man are talking.",
+    "question": "What must the man do first?",
+    "lines": [
+     "The art history book coming out next month goes to the printer in ten days. Where are we with the illustrations?",
+     "Yes. Everything held by museums has been cleared for use. What's left are two pieces owned by a private collector; we're still waiting to hear back.",
+     "And if no answer comes on those two?",
+     "I was thinking of looking for substitute images, just in case.",
+     "That's fine too, but first we chase them. Only, the author said the owner is elderly and doesn't read email, so it'll have to be a letter or a call.",
+     "Then I'll call right away. Oh, and I was thinking of starting to pick out the entries for the index at the back.",
+     "Leave the index until the final proofs are out — the pages may still shift. More importantly, before you call, let the author know. He's apparently a personal friend of the owner, and if the publisher suddenly starts pressing them, it could embarrass him.",
+     "Understood."
+    ],
+    "options": [
+     "Phone the private owner",
+     "Look for substitute images",
+     "Let the author know what's going on",
+     "Pick out the index entries"
+    ]
+   }
+  },
+  "why": {
+   "zh": "总编要他先催收藏家，但「電話の前に、先生に一言断っておいて」——打电话之前要先跟作者（先生）说一声。",
+   "en": "She wants the owner chased, but says 「電話の前に、先生に一言断っておいて」 — tell the author before phoning."
+  },
+  "wrong": [
+   {
+    "zh": "电话要打，但要在跟作者打过招呼之后。",
+    "en": "The call comes after telling the author."
+   },
+   {
+    "zh": "找替代图片「それもいいけど、まずは催促」，不是先做的事。",
+    "en": "Substitutes are fine, but chasing comes first — and the author before that."
+   },
+   null,
+   {
+    "zh": "索引要等最终校样出来再做。",
+    "en": "The index waits for the final proofs."
+   }
+  ],
+  "traps": [
+   "order",
+   "later"
+  ]
+ },
+ {
+  "id": "n1-ck-102",
+  "type": "kadai",
+  "scene": "新聞社で、デスクの男の人と記者の女の人が話しています。",
+  "question": "女の人はこのあとまず何をしなければなりませんか。",
+  "lines": [
+   [
+    "F",
+    "デスク、例の農業体験の記事、原稿ができました。明日の夕刊に載せられますか。"
+   ],
+   [
+    "M",
+    "読んだよ。よく書けてる。ただ、参加者の半分が海外からの人だって書いてあるけど、これ、どこから出てきた数字？"
+   ],
+   [
+    "F",
+    "主催している農家の方に、取材のときに伺いました。"
+   ],
+   [
+    "M",
+    "本人の話だけじゃ弱いな。町の観光課が参加者の統計を取ってるはずだから、裏を取っておいて。"
+   ],
+   [
+    "F",
+    "わかりました。あと、写真なんですが、参加者の顔がはっきり写っているものしかなくて……。撮り直しに行ったほうがいいでしょうか。"
+   ],
+   [
+    "M",
+    "いや、写っている人に、載せていいか確認が取れれば、それでいい。連絡先はわかる？"
+   ],
+   [
+    "F",
+    "主催者の方を通せば、連絡がつくと思います。"
+   ],
+   [
+    "M",
+    "じゃあ、それは主催者にお願いしておいて。返事待ちになるから、そっちを先に頼んだほうがいいな。数字のほうは、役所に電話すればすぐわかるだろう。"
+   ],
+   [
+    "F",
+    "はい。見出しは、どうしましょう。"
+   ],
+   [
+    "M",
+    "見出しはこっちで付けるから。"
+   ]
+  ],
+  "options": [
+   "写真掲載の了承を依頼する",
+   "観光課に数字を確認する",
+   "写真を撮り直しに行く",
+   "記事の見出しを考える"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "报社里，男编辑主任和一个女记者在说话。",
+    "question": "女人接下来首先必须做什么？",
+    "lines": [
+     "主任，那篇农业体验的报道，稿子写好了。明天的晚报能登吗？",
+     "看过了，写得不错。不过你写参加者有一半来自海外，这个数字是哪儿来的？",
+     "采访的时候问主办的农户得知的。",
+     "光凭本人的说法太弱了。镇上的观光科应该有参加者的统计，去核实一下。",
+     "明白了。还有照片，只有参加者的脸拍得很清楚的那些……是不是该再去重拍？",
+     "不用，只要跟照片里的人确认可以刊登就行。知道联系方式吗？",
+     "通过主办方应该能联系上。",
+     "那就拜托主办方。那个要等回复，最好先去拜托。数字的话，给政府打个电话马上就知道了吧。",
+     "好的。标题怎么办？",
+     "标题我这边来定。"
+    ],
+    "options": [
+     "请人去取得照片刊登的同意",
+     "向观光科核实数字",
+     "去重拍照片",
+     "想报道的标题"
+    ]
+   },
+   "en": {
+    "scene": "At a newspaper, a male news editor and a female reporter are talking.",
+    "question": "What must the woman do first?",
+    "lines": [
+     "The piece on the farm-stay experience is written. Can it go in tomorrow's evening edition?",
+     "I read it. It's well written. But you say half the participants come from abroad — where's that figure from?",
+     "The farmer who runs it told me during the interview.",
+     "Just his word isn't enough. The town's tourism office should keep statistics on participants, so get it confirmed.",
+     "Understood. Also, the only photos I have show participants' faces clearly… Should I go back and reshoot?",
+     "No, as long as the people in them agree to be printed, that's fine. Do you have a way to reach them?",
+     "I think I can reach them through the organizer.",
+     "Then ask the organizer to do that. You'll be waiting on replies, so better to ask that first. The figure you can get straight away with a call to the town office.",
+     "Right. What about the headline?",
+     "I'll write the headline."
+    ],
+    "options": [
+     "Ask for consent to print the photos",
+     "Check the figure with the tourism office",
+     "Go and reshoot the photos",
+     "Think of a headline"
+    ]
+   }
+  },
+  "why": {
+   "zh": "照片只要取得本人同意就能用；要通过主办方联系，「返事待ちになるから、そっちを先に」——先请主办方去确认。",
+   "en": "The photos can run with consent, obtained via the organizer; since that means waiting for replies, he says to ask for it first."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "核实数字也要做，但打个电话马上就知道，所以排在后面。",
+    "en": "The figure must be checked too, but a quick call will do — it comes second."
+   },
+   {
+    "zh": "主任说不用重拍，取得同意就行。",
+    "en": "He says no reshoot is needed if consent is given."
+   },
+   {
+    "zh": "标题由主任来定。",
+    "en": "The editor will write the headline."
+   }
+  ],
+  "traps": [
+   "order",
+   "someone-else"
+  ]
+ },
+ {
+  "id": "n1-ck-103",
+  "type": "kadai",
+  "scene": "市役所で、NPOの男の人と市の職員が話しています。",
+  "question": "男の人はこのあとまず何をしなければなりませんか。",
+  "lines": [
+   [
+    "M",
+    "来年度の地域活動助成金に応募したいと考えておりまして、必要な書類を伺いたいんですが。"
+   ],
+   [
+    "F",
+    "はい。申請書と事業計画書、それから団体の規約と、前年度の決算書が必要です。決算書は、総会の承認を受けたものの写しをお願いします。"
+   ],
+   [
+    "M",
+    "決算書は五月の総会で承認されていますし、規約と一緒にすぐお出しできます。計画書は、今、理事会で中身を詰めているところでして。"
+   ],
+   [
+    "F",
+    "そうですか。ただ、こちらの助成は、申請の前に事前相談を受けていただくことが条件になっておりまして。"
+   ],
+   [
+    "M",
+    "相談ですか。それはいつまでに？"
+   ],
+   [
+    "F",
+    "今月末までです。予約制なんですが、すでにかなり埋まっておりまして。"
+   ],
+   [
+    "M",
+    "月末ですか……。理事会が来週なので、計画書を固めてから伺おうと思っていたんですが。"
+   ],
+   [
+    "F",
+    "相談の時点では、計画書は案の段階でかまいませんよ。"
+   ],
+   [
+    "M",
+    "そうなんですか。じゃあ、枠がなくなる前に、今日のうちに押さえておかないと。"
+   ]
+  ],
+  "options": [
+   "理事会で計画書を固める",
+   "事前相談の予約を入れる",
+   "総会で決算の承認を得る",
+   "規約と決算書を提出する"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "市政府里，一个NPO的男人和市里的职员在说话。",
+    "question": "男人接下来首先必须做什么？",
+    "lines": [
+     "我们想申请明年度的地区活动资助金，想问一下需要哪些材料。",
+     "好的。需要申请书和项目计划书，还有团体章程和上一年度的决算书。决算书请提交经过全体大会批准的复印件。",
+     "决算书五月的大会已经批准了，可以和章程一起马上交。计划书现在理事会正在敲定内容。",
+     "这样啊。不过这项资助有个条件，申请之前必须先接受事前咨询。",
+     "咨询吗？要在什么时候之前？",
+     "本月底之前。需要预约，不过已经约满了不少。",
+     "月底啊……理事会在下周，我本来想等计划书定了再来。",
+     "咨询的时候，计划书还是草案也没关系。",
+     "是吗。那得趁名额还没满，今天就先订下来。"
+    ],
+    "options": [
+     "在理事会上敲定计划书",
+     "预约事前咨询",
+     "在大会上让决算获批",
+     "提交章程和决算书"
+    ]
+   },
+   "en": {
+    "scene": "At city hall, a man from a nonprofit and a city official are talking.",
+    "question": "What must the man do first?",
+    "lines": [
+     "We'd like to apply for next year's community activity grant, and I wanted to ask what documents are needed.",
+     "Certainly. You'll need the application form and a project plan, plus your bylaws and last year's financial statement — a copy of the one approved by your general meeting.",
+     "The statement was approved at our May general meeting, so I can submit it with the bylaws right away. The plan is still being finalized by the board.",
+     "I see. However, this grant requires a preliminary consultation before you apply.",
+     "A consultation? By when?",
+     "By the end of this month. It's by appointment, and it's already quite booked.",
+     "The end of the month… The board meets next week, so I'd hoped to come once the plan was final.",
+     "At the consultation, the plan can still be a draft.",
+     "Is that so? Then I'd better secure a slot today, before they run out."
+    ],
+    "options": [
+     "Get the board to finalize the plan",
+     "Book a preliminary consultation",
+     "Get the accounts approved at a general meeting",
+     "Submit the bylaws and financial statement"
+    ]
+   }
+  },
+  "why": {
+   "zh": "申请前必须事前咨询，月底截止且预约快满了；计划书是草案也可以，所以他说今天就去「押さえておかないと」。",
+   "en": "The consultation is a precondition, closes at month's end and is filling up; the plan can be a draft, so he will secure a slot today."
+  },
+  "wrong": [
+   {
+    "zh": "咨询时计划书「案の段階でかまいません」，不用等理事会。",
+    "en": "The plan can be a draft at the consultation; no need to wait for the board."
+   },
+   null,
+   {
+    "zh": "决算五月大会已经批准了。",
+    "en": "The accounts were already approved in May."
+   },
+   {
+    "zh": "材料是申请时交的，而申请要在事前咨询之后。",
+    "en": "Documents go in with the application, which comes after the consultation."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "done-already",
+   "order"
+  ]
+ },
+ {
+  "id": "n1-ck-104",
+  "type": "kadai",
+  "scene": "アプリの開発会社で女の人と男の人が話しています。",
+  "question": "男の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "F",
+    "家計簿アプリの新しいバージョン、来週の水曜日のリリースでいけそう？"
+   ],
+   [
+    "M",
+    "はい。テストで見つかったグラフの色の不具合は、表示だけの問題なので、次の更新に回すことになりました。今日はストアに載せる説明文を直そうと思ってたんですが……。"
+   ],
+   [
+    "F",
+    "あ、ちょうど今、法務の高橋さんからメールが来た。読むね。「利用規約の改定案は、ストアへの申請の前に、法務の確認を受けてください。確認には通常三営業日いただいています。なお、私は明日から一週間、出張で不在にします」だって。"
+   ],
+   [
+    "M",
+    "えっ、明日から……。三営業日かかるとなると、今日、高橋さんがいらっしゃるうちに渡さないと、水曜には間に合いませんね。"
+   ],
+   [
+    "F",
+    "そうなるね。英語版はまだなんでしょ？"
+   ],
+   [
+    "M",
+    "ええ。でも英語版は、日本語版が固まってからでいいと言われています。説明文のほうは、申請の直前でも直せますし。"
+   ],
+   [
+    "F",
+    "じゃ、そういうことで。"
+   ]
+  ],
+  "options": [
+   "表示の不具合を修正する",
+   "ストアの説明文を直す",
+   "規約の改定案を法務に渡す",
+   "規約の英語版を作成する"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "应用开发公司里，一个女人和一个男人在说话。",
+    "question": "男人接下来首先要做什么？",
+    "lines": [
+     "记账应用的新版本，下周三能发布吗？",
+     "是。测试中发现的图表颜色问题只是显示上的，决定放到下次更新。我今天本来打算改应用商店上的说明文字……",
+     "啊，正好法务的高桥发来邮件了。我念一下：「使用条款的修改案，请在向商店提交申请之前接受法务审核。审核一般需要三个工作日。另外，我从明天起出差一周，不在公司。」",
+     "啊？从明天起……要三个工作日的话，不趁今天高桥在的时候交过去，周三就赶不上了。",
+     "是这样。英文版还没做吧？",
+     "是的。不过说英文版等日文版定下来以后再做就行。说明文字的话，提交之前改也来得及。",
+     "那就这么办。"
+    ],
+    "options": [
+     "修正显示的问题",
+     "修改商店的说明文字",
+     "把条款修改案交给法务",
+     "制作条款的英文版"
+    ]
+   },
+   "en": {
+    "scene": "At an app development company, a woman and a man are talking.",
+    "question": "What will the man do first?",
+    "lines": [
+     "Is the new version of the budgeting app on track for next Wednesday?",
+     "Yes. The chart-colour bug from testing is only cosmetic, so it's been pushed to the next update. Today I was going to revise the store description…",
+     "Oh, an email just came in from Takahashi-san in Legal. I'll read it: 'Please have the revised terms of use checked by Legal before submitting to the store. Reviews usually take three business days. Note that I'll be away on a business trip for a week from tomorrow.'",
+     "What, from tomorrow… If it takes three business days, unless I hand it over today while Takahashi-san is still here, we won't make Wednesday.",
+     "Looks like it. The English version isn't done yet, is it?",
+     "No. But I've been told the English can wait until the Japanese is final. And the description can be fixed right before we submit.",
+     "Right, then that's the plan."
+    ],
+    "options": [
+     "Fix the display bug",
+     "Revise the store description",
+     "Hand the revised terms to Legal",
+     "Write the English version of the terms"
+    ]
+   }
+  },
+  "why": {
+   "zh": "法务审核要三个工作日，负责人明天起出差一周；他自己得出结论：今天就得交给法务，否则赶不上周三。",
+   "en": "Legal needs three business days and the reviewer is away from tomorrow; he works out that the terms must go to Legal today."
+  },
+  "wrong": [
+   {
+    "zh": "显示问题改到下次更新处理。",
+    "en": "The display bug was pushed to the next update."
+   },
+   {
+    "zh": "他本来想今天改，但说明文字提交前改也来得及。",
+    "en": "He'd planned this, but it can be done right before submitting."
+   },
+   null,
+   {
+    "zh": "英文版等日文版定稿以后再做。",
+    "en": "The English version waits until the Japanese is final."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "later"
+  ]
+ },
+ {
+  "id": "n1-ck-105",
+  "type": "kadai",
+  "scene": "病院の事務室で男の人と女の人が話しています。",
+  "question": "女の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "M",
+    "先月の外来の満足度調査、回収は終わったんだよね。集計はどこまで進んでる？"
+   ],
+   [
+    "F",
+    "用紙の入力はほぼ済みました。自由記述欄に書いてくださった方が多くて、そこを分類するのに時間がかかりそうです。"
+   ],
+   [
+    "M",
+    "自由記述はね、毎年、外部の調査会社に分類をお願いしてるんだ。"
+   ],
+   [
+    "F",
+    "あ、そうなんですか。じゃあ、このまま送れば……。"
+   ],
+   [
+    "M",
+    "いや、そこが肝心でね。記述の中に、患者さんの名前とか、担当の医師の名前が書かれていることがあるでしょう。外に出す前に、それを全部消しておかないと。"
+   ],
+   [
+    "F",
+    "わかりました。それと、院長に速報を出すというお話がありましたよね。グラフを作っておきましょうか。"
+   ],
+   [
+    "M",
+    "速報は来月の会議に間に合えばいいから、後回しでいいよ。まずは委託先に渡すほうを。向こうも、作業に二週間は見てほしいって言ってたから。"
+   ],
+   [
+    "F",
+    "はい、承知しました。"
+   ]
+  ],
+  "options": [
+   "調査会社に記述を送る",
+   "記述から個人名を削除する",
+   "院長への速報を作成する",
+   "自由記述を自分で分類する"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "医院的事务室里，一个男人和一个女人在说话。",
+    "question": "女人接下来首先要做什么？",
+    "lines": [
+     "上个月门诊的满意度调查已经收回来了吧。统计进行到哪里了？",
+     "问卷的录入差不多完成了。在自由填写栏写了意见的人很多，分类那部分可能要花些时间。",
+     "自由填写的部分啊，我们每年都委托外面的调查公司分类。",
+     "啊，是吗。那直接发过去就……",
+     "不，关键就在这儿。写的内容里有时会有患者的名字、主治医生的名字吧。拿出去之前，得把这些全部删掉。",
+     "明白了。还有，之前说要给院长出一份速报吧。要我先做图表吗？",
+     "速报赶得上下个月的会议就行，可以往后放。先弄要交给委托方的那部分。对方也说了，希望给他们留两周的时间。",
+     "好的，明白了。"
+    ],
+    "options": [
+     "把填写内容发给调查公司",
+     "从填写内容中删去人名",
+     "制作给院长的速报",
+     "自己给自由填写的内容分类"
+    ]
+   },
+   "en": {
+    "scene": "In a hospital's administration office, a man and a woman are talking.",
+    "question": "What will the woman do first?",
+    "lines": [
+     "Last month's outpatient satisfaction survey has all been collected, right? How far along is the tally?",
+     "The forms are nearly all entered. A lot of people wrote in the free-comment box, so sorting those will take some time.",
+     "Ah, the free comments — we have an outside research firm sort those every year.",
+     "Oh, really? Then if I just send them as they are…",
+     "No, that's the key point. Sometimes the comments include patients' names or the names of their doctors. Before anything goes outside, all of that has to be removed.",
+     "I see. Also, there was talk of a quick report for the hospital director. Shall I make some charts?",
+     "The quick report only needs to be ready for next month's meeting, so leave it for later. First, the part going to the contractor. They said they need a good two weeks for the work.",
+     "Yes, understood."
+    ],
+    "options": [
+     "Send the comments to the research firm",
+     "Remove personal names from the comments",
+     "Prepare the quick report for the director",
+     "Sort the free comments herself"
+    ]
+   }
+  },
+  "why": {
+   "zh": "交给外部公司之前「それを全部消しておかないと」——要先删掉患者、医生的名字，然后才能发出去。",
+   "en": "Before the comments go outside, the names in them must be removed — that comes before sending."
+  },
+  "wrong": [
+   {
+    "zh": "要先删掉人名才能发，发送是第二步。",
+    "en": "Sending comes after removing the names."
+   },
+   null,
+   {
+    "zh": "速报「後回しでいい」。",
+    "en": "The quick report can wait."
+   },
+   {
+    "zh": "分类每年都委托外部调查公司做。",
+    "en": "Sorting is done by the outside firm."
+   }
+  ],
+  "traps": [
+   "order",
+   "later",
+   "someone-else"
+  ]
+ },
+ {
+  "id": "n1-ck-106",
+  "type": "kadai",
+  "scene": "翻訳会社の女の人と翻訳者の男の人が電話で話しています。",
+  "question": "男の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "F",
+    "もしもし、佐藤さん？　工作機械の取扱説明書の翻訳、進み具合はいかがですか。"
+   ],
+   [
+    "M",
+    "半分ほど終わりました。ただ、お客様からいただいた用語集と、原文の用語が合わないところがありまして。"
+   ],
+   [
+    "F",
+    "ああ、それね。先方、今年から用語を一部変えたらしいんです。新しい用語集を送ってもらうよう頼んであるので、届いたら転送します。"
+   ],
+   [
+    "M",
+    "助かります。それまでは、残りを先に訳し進めておきますね。"
+   ],
+   [
+    "F",
+    "うーん、用語が変わると、あとで全部直すことになって、二度手間になりませんか。それより、前に佐藤さんが訳してくださった旧版の説明書、あれと今回の原文とで重なっている部分が多いでしょう。"
+   ],
+   [
+    "M",
+    "ええ、三割ぐらいは同じ文章です。"
+   ],
+   [
+    "F",
+    "先にその部分を洗い出しておいてください。用語集が来たら、そこは置き換えるだけで済みますから。"
+   ],
+   [
+    "M",
+    "なるほど。あ、図の中の文字はどうしましょう。"
+   ],
+   [
+    "F",
+    "図はデザイン会社のほうで差し替えるので、そちらは触らなくて大丈夫です。"
+   ]
+  ],
+  "options": [
+   "新しい用語集を取り寄せる",
+   "残りの原文を訳し進める",
+   "旧版と重なる箇所を探す",
+   "図の中の文字を訳しておく"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "翻译公司的女人和翻译员男人在打电话。",
+    "question": "男人接下来首先要做什么？",
+    "lines": [
+     "喂，佐藤吗？机床使用说明书的翻译，进展怎么样？",
+     "完成了一半左右。不过客户给的术语表和原文的用词有对不上的地方。",
+     "啊，那个啊。对方今年好像改了一部分术语。我已经请他们发新的术语表了，到了就转给你。",
+     "太好了。那在那之前，我先把剩下的往下翻。",
+     "嗯……术语一变，之后又得全部改，不是白费两遍工夫吗？比起那个，你以前翻过的旧版说明书，和这次的原文重合的部分很多吧。",
+     "是的，大概三成是一样的句子。",
+     "请先把那部分找出来。术语表来了以后，那部分替换一下就行了。",
+     "原来如此。啊，图里的文字怎么办？",
+     "图由设计公司那边替换，你不用管。"
+    ],
+    "options": [
+     "索取新的术语表",
+     "继续翻译剩下的原文",
+     "找出与旧版重合的地方",
+     "先把图里的文字翻好"
+    ]
+   },
+   "en": {
+    "scene": "A woman at a translation agency and a male translator are talking on the phone.",
+    "question": "What will the man do first?",
+    "lines": [
+     "Hello, Sato-san? How's the translation of the machine-tool manual coming along?",
+     "About half done. But in places the client's glossary doesn't match the terms in the source text.",
+     "Ah, that. They seem to have changed some of their terms this year. I've asked them to send the new glossary, and I'll forward it when it comes.",
+     "That helps. Until then, I'll press on with the rest.",
+     "Hmm, if the terms change you'd have to fix it all afterwards — isn't that doing it twice? Rather, the old edition you translated for us before overlaps a lot with this text, doesn't it?",
+     "Yes, about thirty percent is the same text.",
+     "Please pick those parts out first. When the glossary arrives, they'll only need the terms swapped.",
+     "I see. Oh, what about the text inside the diagrams?",
+     "The design company will replace the diagrams, so you needn't touch them."
+    ],
+    "options": [
+     "Get hold of the new glossary",
+     "Carry on translating the rest",
+     "Find the parts shared with the old edition",
+     "Translate the text in the diagrams"
+    ]
+   }
+  },
+  "why": {
+   "zh": "他想先往下翻，女人说术语变了会白费工夫，让他「先にその部分を洗い出して」——找出和旧版重合的部分。",
+   "en": "His plan to carry on is rejected as wasted effort; she asks him first to pick out what overlaps with the old edition."
+  },
+  "wrong": [
+   {
+    "zh": "新术语表女人已经向客户要了，到了会转给他。",
+    "en": "She has already asked for the glossary and will forward it."
+   },
+   {
+    "zh": "术语一变就得全部重改，女人不赞成现在往下翻。",
+    "en": "She advises against it — it would mean redoing everything."
+   },
+   null,
+   {
+    "zh": "图由设计公司替换，「触らなくて大丈夫」。",
+    "en": "The design company will replace the diagrams."
+   }
+  ],
+  "traps": [
+   "someone-else",
+   "not-possible",
+   "order"
+  ]
+ },
+ {
+  "id": "n1-ck-107",
+  "type": "kadai",
+  "scene": "大学の図書館で、ほかの大学の男の大学院生と図書館の人が話しています。",
+  "question": "男の人はこのあとまず何をしなければなりませんか。",
+  "lines": [
+   [
+    "M",
+    "すみません、こちらで所蔵されている江戸時代の地図を閲覧したいんですが。"
+   ],
+   [
+    "F",
+    "貴重書ですね。学外の方ですと、閲覧の一週間前までに申請書を出していただくことになっております。"
+   ],
+   [
+    "M",
+    "申請書は、こちらのホームページから印刷してきました。"
+   ],
+   [
+    "F",
+    "ありがとうございます。それから、学外の方は、所属先の紹介状が必要になるんですが。"
+   ],
+   [
+    "M",
+    "紹介状ですか。大学院生なので、指導教員に書いてもらえばいいんでしょうか。"
+   ],
+   [
+    "F",
+    "はい、それで結構です。あと、撮影をご希望でしたら、別に撮影許可の申請が必要です。"
+   ],
+   [
+    "M",
+    "撮影もしたいんですが、それも今日出したほうが？"
+   ],
+   [
+    "F",
+    "撮影のほうは、閲覧が認められてからの申請になります。閲覧の申請も、紹介状と一緒でないとお受けできませんので……。"
+   ],
+   [
+    "M",
+    "そうですか。じゃあ、出直してきます。"
+   ]
+  ],
+  "options": [
+   "閲覧の申請書を印刷する",
+   "撮影の許可を申請する",
+   "閲覧の申請書を提出する",
+   "紹介状を書いてもらう"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "大学图书馆里，一个外校的男研究生和图书馆的人在说话。",
+    "question": "男人接下来首先必须做什么？",
+    "lines": [
+     "不好意思，我想阅览这里收藏的江户时代的地图。",
+     "是珍本吧。校外的人需要在阅览的一周前提交申请书。",
+     "申请书我已经从这里的网站上打印好带来了。",
+     "谢谢。另外，校外的人还需要所属单位的介绍信。",
+     "介绍信吗？我是研究生，请导师写就可以吗？",
+     "可以的。还有，如果想拍照，需要另外申请拍摄许可。",
+     "我也想拍照，那个也是今天交比较好吗？",
+     "拍摄要等阅览批准以后才能申请。阅览申请也必须和介绍信一起交，否则不能受理……",
+     "这样啊。那我改天再来。"
+    ],
+    "options": [
+     "打印阅览申请书",
+     "申请拍摄许可",
+     "提交阅览申请书",
+     "请人写介绍信"
+    ]
+   },
+   "en": {
+    "scene": "At a university library, a male graduate student from another university and a librarian are talking.",
+    "question": "What must the man do first?",
+    "lines": [
+     "Excuse me, I'd like to view the Edo-period maps in your collection.",
+     "Those are rare materials. For visitors from outside, the application has to be submitted at least a week before viewing.",
+     "I printed out the application form from your website.",
+     "Thank you. Also, outside visitors need a letter of introduction from their institution.",
+     "A letter of introduction? I'm a graduate student — would one from my supervisor do?",
+     "Yes, that's fine. And if you'd like to take photographs, there's a separate application for permission.",
+     "I'd like to take photos too. Should I submit that today as well?",
+     "The photography application comes after viewing has been approved. And we can only accept the viewing application together with the letter…",
+     "I see. Then I'll come back another time."
+    ],
+    "options": [
+     "Print the viewing application",
+     "Apply for permission to photograph",
+     "Submit the viewing application",
+     "Get a letter of introduction written"
+    ]
+   }
+  },
+  "why": {
+   "zh": "阅览申请必须和介绍信一起交，他手上没有，所以要先请导师写介绍信，再来提交（「出直してきます」）。",
+   "en": "The application is only accepted with the letter, which he doesn't have — so first he must get his supervisor to write it."
+  },
+  "wrong": [
+   {
+    "zh": "申请书他已经打印好带来了。",
+    "en": "He has already printed the form."
+   },
+   {
+    "zh": "拍摄许可要在阅览批准以后才能申请。",
+    "en": "Photography can only be applied for after viewing is approved."
+   },
+   {
+    "zh": "没有介绍信就不能受理，所以还不能交。",
+    "en": "It can't be accepted without the letter."
+   },
+   null
+  ],
+  "traps": [
+   "done-already",
+   "order",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n1-ck-108",
+  "type": "kadai",
+  "scene": "美術館で学芸員の女の人と男の人が話しています。",
+  "question": "男の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "F",
+    "来年の春の企画展で、金沢の美術館から屏風を二点お借りする件、正式に貸していただけることになったよ。"
+   ],
+   [
+    "M",
+    "よかったです。では、輸送の業者に見積もりを頼んでおきます。"
+   ],
+   [
+    "F",
+    "うん、お願い。ただ、向こうの条件で、展示室の温度と湿度の記録を、一年分、先に送ることになってるの。輸送の手配は、それを見て了解が出てからにしてほしいって。"
+   ],
+   [
+    "M",
+    "記録なら毎日つけていますから、すぐ送れますよ。"
+   ],
+   [
+    "F",
+    "それがね、去年の夏に空調を入れ替えたでしょう。設備課の人の話だと、その前と後で、記録の形式が違うんだって。"
+   ],
+   [
+    "M",
+    "ああ、そうでした。そのまま送ったら、向こうも比べようがないですね。"
+   ],
+   [
+    "F",
+    "設備課に言えば、そろえてくれるそうよ。"
+   ],
+   [
+    "M",
+    "わかりました。見積もりは、それが向こうに通ってからですね。保険のほうは？"
+   ],
+   [
+    "F",
+    "保険は、向こうの評価額が出てからね。"
+   ]
+  ],
+  "options": [
+   "輸送の見積もりを依頼する",
+   "設備課に記録の整理を頼む",
+   "保険の見積もりを依頼する",
+   "温湿度の記録をすぐに送る"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "美术馆里，女学艺员和一个男人在说话。",
+    "question": "男人接下来首先要做什么？",
+    "lines": [
+     "明年春季特展要从金泽的美术馆借两件屏风的事，对方正式同意借了。",
+     "太好了。那我去请运输公司报价。",
+     "嗯，拜托了。不过对方有个条件，要我们先把展厅一年的温湿度记录寄过去。他们希望看过、点头以后再安排运输。",
+     "记录我们每天都有，马上就能寄。",
+     "问题是，去年夏天换了空调吧。设备科的人说，前后记录的格式不一样。",
+     "啊，对。直接寄过去，对方也没法比较。",
+     "听说跟设备科说一声，他们会帮忙统一。",
+     "明白了。报价要等那个对方通过以后吧。保险呢？",
+     "保险要等对方定出评估金额以后。"
+    ],
+    "options": [
+     "请运输公司报价",
+     "请设备科整理记录",
+     "请保险公司报价",
+     "马上寄出温湿度记录"
+    ]
+   },
+   "en": {
+    "scene": "At an art museum, a female curator and a man are talking.",
+    "question": "What will the man do first?",
+    "lines": [
+     "The two folding screens from the Kanazawa museum for next spring's exhibition — they've formally agreed to lend them.",
+     "Great. Then I'll ask the shipping firm for a quote.",
+     "Yes, please. Only, their condition is that we send a year's record of the gallery's temperature and humidity first. They'd like shipping arranged only after they've seen it and approved.",
+     "We log those every day, so I can send them straight away.",
+     "The thing is, we replaced the air conditioning last summer. According to Facilities, the records are in a different format before and after.",
+     "Ah, that's right. If we send them as they are, they'll have no way to compare.",
+     "Facilities say they can put them in one format if we ask.",
+     "Got it. The quote comes after they've approved that, then. And the insurance?",
+     "Insurance waits until they've set the valuation."
+    ],
+    "options": [
+     "Ask for a shipping quote",
+     "Ask Facilities to put the records in order",
+     "Ask for an insurance quote",
+     "Send the temperature and humidity records at once"
+    ]
+   }
+  },
+  "why": {
+   "zh": "对方要先看温湿度记录才同意安排运输，而记录前后格式不同、不能直接寄；设备科能统一格式——所以先找设备科。",
+   "en": "The lender wants the records before any shipping, and they can't go as they are; Facilities can reformat them — so that comes first."
+  },
+  "wrong": [
+   {
+    "zh": "女人先说「お願い」，接着补充：运输要等对方看过记录同意以后。",
+    "en": "She first agrees, then adds that shipping must wait for the lender's approval."
+   },
+   null,
+   {
+    "zh": "保险要等对方的评估金额。",
+    "en": "Insurance waits for the lender's valuation."
+   },
+   {
+    "zh": "格式前后不同，直接寄过去对方没法比较。",
+    "en": "In their current format the records can't be compared."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "order",
+   "later"
+  ]
+ },
+ {
+  "id": "n1-ck-109",
+  "type": "kadai",
+  "scene": "設計事務所で男の人と女の人が話しています。",
+  "question": "女の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "M",
+    "中山さんのお宅の件、施主さんから変更の希望が来たんだって？"
+   ],
+   [
+    "F",
+    "はい。二階の壁を一枚取って、子ども部屋を一つの広い部屋にしたいそうです。それと、キッチンの位置を窓側に。"
+   ],
+   [
+    "M",
+    "キッチンは配管が絡むから、設備の業者さんに相談しないとな。"
+   ],
+   [
+    "F",
+    "それは昨日お話しして、窓側でも問題ないと言われました。それで、図面を描き直そうと思っているんですが。"
+   ],
+   [
+    "M",
+    "うん。ただ、壁のほうが気になるな。あの壁、建物を支える役目もしてたはずなんだよ。取れるかどうかは、構造の計算をやり直してみないとわからない。"
+   ],
+   [
+    "F",
+    "では、図面の前に……。"
+   ],
+   [
+    "M",
+    "うん。取れないとなったら、間取りから考え直しだからね。構造の佐々木さん、今週なら手が空いてるって言ってたよ。"
+   ],
+   [
+    "F",
+    "施主さんには、今の段階で一度ご連絡しておいたほうがいいでしょうか。"
+   ],
+   [
+    "M",
+    "結果が出てからでいいよ。中途半端なことを言うと、かえって不安にさせるから。"
+   ]
+  ],
+  "options": [
+   "構造の担当者に依頼する",
+   "設備の業者に相談する",
+   "施主に経過を報告する",
+   "新しい図面を作成する"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "设计事务所里，一个男人和一个女人在说话。",
+    "question": "女人接下来首先要做什么？",
+    "lines": [
+     "中山家那个项目，听说业主提出了修改要求？",
+     "是的。他们想拆掉二楼的一面墙，把儿童房改成一个大房间。还有，把厨房移到窗户那边。",
+     "厨房牵涉到管道，得找设备公司商量。",
+     "那个昨天谈过了，对方说移到窗边也没问题。所以我想重新画图纸。",
+     "嗯。不过墙那边让人担心。那面墙应该也起着支撑建筑的作用。能不能拆，不重新做结构计算就不知道。",
+     "那么，在画图之前……",
+     "嗯。要是拆不了，就得从房间布局重新考虑了。负责结构的佐佐木说这周有空。",
+     "现阶段要不要先跟业主联系一下？",
+     "等结果出来再说吧。说些不上不下的话，反而会让他们不安。"
+    ],
+    "options": [
+     "委托负责结构的人",
+     "和设备公司商量",
+     "向业主汇报进展",
+     "绘制新的图纸"
+    ]
+   },
+   "en": {
+    "scene": "At an architecture firm, a man and a woman are talking.",
+    "question": "What will the woman do first?",
+    "lines": [
+     "I hear the Nakayamas, the clients, have asked for changes to their house?",
+     "Yes. They'd like one of the upstairs walls taken out to make the children's rooms into one big room. And the kitchen moved to the window side.",
+     "The kitchen involves plumbing, so we'll need to talk to the services contractor.",
+     "I talked to them yesterday, and they said the window side is no problem. So I was going to redraw the plans.",
+     "OK. But the wall worries me. I think that wall also helps hold the building up. Whether it can come out, we won't know until the structural calculations are redone.",
+     "Then before the drawings…",
+     "Yes. If it can't come out, we're back to rethinking the floor plan. Sasaki-san on the structural side said he has time this week.",
+     "Should I contact the clients once at this stage?",
+     "Wait until we have the result. Telling them something half-baked will only make them anxious."
+    ],
+    "options": [
+     "Ask the structural engineer",
+     "Consult the services contractor",
+     "Update the clients",
+     "Draw up new plans"
+    ]
+   }
+  },
+  "why": {
+   "zh": "墙能不能拆要重新做结构计算，拆不了就得重新考虑布局，图纸取决于这个结果；负责结构的佐佐木这周有空——所以先请他计算。",
+   "en": "Whether the wall can go needs new structural calculations, the drawings depend on the result, and the structural engineer is free this week — so she asks him first."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "设备公司她昨天已经谈过了。",
+    "en": "She already spoke to the contractor yesterday."
+   },
+   {
+    "zh": "男人说等结果出来再联系业主。",
+    "en": "He says to wait for the result before contacting the clients."
+   },
+   {
+    "zh": "图纸要看结构计算的结果，不能先画。",
+    "en": "The drawings depend on the structural result."
+   }
+  ],
+  "traps": [
+   "done-already",
+   "order",
+   "later"
+  ]
+ },
+ {
+  "id": "n1-ck-110",
+  "type": "kadai",
+  "scene": "食品会社で女の人と男の人が話しています。",
+  "question": "男の人はこのあとまず何をしなければなりませんか。",
+  "lines": [
+   [
+    "F",
+    "新しいドレッシングのラベル、印刷所から見本が届いたんだけど、アレルギーの表示から、くるみが抜けてるの。"
+   ],
+   [
+    "M",
+    "えっ……本当ですね。こちらで渡したデータが古かったのかもしれません。すぐに直して、送り直します。"
+   ],
+   [
+    "F",
+    "あ、そういえば、印刷所から留守番電話が入ってたの。聞いてみるね。……「本番の印刷は、本日の午後二時から始めます。変更がございましたら、それまでにご連絡ください」。"
+   ],
+   [
+    "M",
+    "二時……あと三十分ほどしかないですね。"
+   ],
+   [
+    "F",
+    "データを直すのには、どのくらいかかりそう？"
+   ],
+   [
+    "M",
+    "原材料の欄を全部確かめ直したいので、一時間はかかると思います。"
+   ],
+   [
+    "F",
+    "そうよね。品質保証部への報告は、私のほうからしておくから。"
+   ],
+   [
+    "M",
+    "申し訳ありません。発売日は、延ばすことになるでしょうか。"
+   ],
+   [
+    "F",
+    "それは、印刷所と話してから決めましょう。"
+   ]
+  ],
+  "options": [
+   "印刷所に開始を待ってもらう",
+   "ラベルのデータを修正する",
+   "品質保証部に報告を上げる",
+   "発売日の延期を検討する"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "食品公司里，一个女人和一个男人在说话。",
+    "question": "男人接下来首先必须做什么？",
+    "lines": [
+     "新沙拉酱的标签，印刷厂寄来了样品，可是过敏原标示里漏了核桃。",
+     "啊……真的。可能是我们给的数据是旧的。我马上改好重新发过去。",
+     "啊，对了，印刷厂给我留了语音。我听一下。……「正式印刷将于今天下午两点开始。如有变更，请在那之前联系我们。」",
+     "两点……只剩三十分钟左右了。",
+     "改数据大概要多久？",
+     "原料那一栏我想全部重新核对一遍，估计要一个小时。",
+     "也是。向品质保证部报告的事，我来做。",
+     "非常抱歉。发售日期会要推迟吗？",
+     "那个跟印刷厂谈过以后再决定吧。"
+    ],
+    "options": [
+     "请印刷厂暂缓开印",
+     "修改标签的数据",
+     "向品质保证部报告",
+     "考虑推迟发售日期"
+    ]
+   },
+   "en": {
+    "scene": "At a food company, a woman and a man are talking.",
+    "question": "What must the man do first?",
+    "lines": [
+     "The printer sent a sample of the new dressing label, and walnuts are missing from the allergen information.",
+     "What… you're right. The data we gave them may have been an old version. I'll fix it and resend it right away.",
+     "Oh, that reminds me — the printer left a voicemail. Let me play it. … 'The main print run will start at two o'clock this afternoon. If there are any changes, please contact us before then.'",
+     "Two o'clock… That's only about thirty minutes from now.",
+     "How long would fixing the data take?",
+     "I'd like to recheck the whole ingredients section, so at least an hour, I think.",
+     "Right. I'll handle the report to Quality Assurance.",
+     "I'm very sorry. Will we have to push back the launch date?",
+     "Let's decide that after talking to the printer."
+    ],
+    "options": [
+     "Ask the printer to hold off starting",
+     "Correct the label data",
+     "Report to Quality Assurance",
+     "Consider delaying the launch"
+    ]
+   }
+  },
+  "why": {
+   "zh": "两点开印，只剩三十分钟，改数据要一个小时；有变更要在开印前联系——所以必须先请印刷厂等一等。",
+   "en": "Printing starts in thirty minutes and the fix takes an hour; changes must be reported before the start — so he must first get the printer to hold off."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "改数据要一个小时，来不及在开印前完成。",
+    "en": "The fix takes an hour — too long to finish before printing starts."
+   },
+   {
+    "zh": "向品质保证部报告由女人来做。",
+    "en": "She will report to QA herself."
+   },
+   {
+    "zh": "延不延期等和印刷厂谈过再定。",
+    "en": "The launch date is decided after talking to the printer."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "someone-else",
+   "later"
+  ]
+ },
+ {
+  "id": "n1-ck-111",
+  "type": "kadai",
+  "scene": "NPOの事務所で男の人と女の人が話しています。",
+  "question": "女の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "M",
+    "古い民家を改修して、地域の交流の場にする件、クラウドファンディングでお金を集めることになったよね。準備はどう？"
+   ],
+   [
+    "F",
+    "募集ページの文章は下書きができました。あとは写真を撮り直して、支援してくださった方へのお礼の品を決めて……。"
+   ],
+   [
+    "M",
+    "お礼の品って、地元の農家さんの野菜のセットにするって話だったっけ。"
+   ],
+   [
+    "F",
+    "はい。ただ、送料を計算してみたら、思っていたよりずっと高くて。このままだと、集まったお金の半分近くが送料に消えちゃうんです。"
+   ],
+   [
+    "M",
+    "それじゃ本末転倒だな。"
+   ],
+   [
+    "F",
+    "なので、品物を変えるか、支援額の設定を見直すか、どちらかだと思うんです。"
+   ],
+   [
+    "M",
+    "うん。それ、まず農家さんに相談してみたら？　干したものみたいに軽いものなら、作ってるかもしれないし。そこが決まらないと、金額の設定も決まらないでしょう。"
+   ],
+   [
+    "F",
+    "確かに。写真はどうしましょう。"
+   ],
+   [
+    "M",
+    "写真は来週、改修が少し進んでからのほうが見栄えがするよ。"
+   ],
+   [
+    "F",
+    "そうですね。じゃあ、さっそく連絡してみます。"
+   ]
+  ],
+  "options": [
+   "募集の文章を仕上げる",
+   "支援額の設定を見直す",
+   "交流の場の写真を撮る",
+   "農家に品物を相談する"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "NPO的办公室里，一个男人和一个女人在说话。",
+    "question": "女人接下来首先要做什么？",
+    "lines": [
+     "改造老民居做成社区交流场所的事，决定用众筹来筹钱了吧。准备得怎么样？",
+     "募集页面的文字已经有草稿了。接下来要重拍照片，再定下给支持者的回礼……",
+     "回礼不是说好用本地农户的蔬菜套装吗？",
+     "是的。不过算了一下运费，比想象的贵多了。这样下去，筹到的钱有将近一半要花在运费上。",
+     "那就本末倒置了。",
+     "所以我想，要么换回礼，要么重新设定支持金额，二选一。",
+     "嗯。那先找农户商量一下吧？像干货那样轻的东西，他们说不定也在做。那个不定下来，金额也定不了吧。",
+     "确实。照片怎么办？",
+     "照片下周等改造有点进展了再拍，会更好看。",
+     "也是。那我马上联系看看。"
+    ],
+    "options": [
+     "完成募集的文字",
+     "重新设定支持金额",
+     "拍交流场所的照片",
+     "和农户商量回礼"
+    ]
+   },
+   "en": {
+    "scene": "At a nonprofit's office, a man and a woman are talking.",
+    "question": "What will the woman do first?",
+    "lines": [
+     "The plan to renovate the old house into a community space — we decided to raise the money by crowdfunding, right? How's the preparation going?",
+     "There's a draft of the text for the campaign page. Then I need to reshoot the photos and decide on thank-you gifts for supporters…",
+     "The gifts — weren't we going with a box of vegetables from local farmers?",
+     "Yes. But when I worked out the postage, it was much higher than I'd thought. As things stand, nearly half the money raised would go on shipping.",
+     "That would defeat the whole purpose.",
+     "So I think it's either change the gifts or rethink the pledge levels.",
+     "Right. Why not talk to the farmers first? They may make something light, like dried produce. Until that's settled, the pledge levels can't be set either.",
+     "True. What about the photos?",
+     "The photos will look better next week, once the renovation has moved along a bit.",
+     "That's true. I'll get in touch right away, then."
+    ],
+    "options": [
+     "Finish the campaign text",
+     "Rethink the pledge levels",
+     "Photograph the community space",
+     "Talk to the farmers about the gifts"
+    ]
+   }
+  },
+  "why": {
+   "zh": "运费太高，男人建议「まず農家さんに相談してみたら」，回礼不定，金额也定不了；她说马上联系。",
+   "en": "He suggests talking to the farmers first — the pledge levels depend on the gifts — and she agrees to contact them."
+  },
+  "wrong": [
+   {
+    "zh": "文字已有草稿，对话里没有说要现在完成。",
+    "en": "The text is already drafted; nothing says finishing it comes first."
+   },
+   {
+    "zh": "金额要等回礼定下来才能定。",
+    "en": "Pledge levels depend on the gifts being decided first."
+   },
+   {
+    "zh": "照片等下周改造有进展以后再拍。",
+    "en": "The photos wait until next week."
+   },
+   null
+  ],
+  "traps": [
+   "order",
+   "later",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n1-ck-112",
+  "type": "kadai",
+  "scene": "ラジオ局で、ディレクターの女の人と男の人が話しています。",
+  "question": "男の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "F",
+    "来週の番組のゲスト、経済学者の森さんに決まったから。"
+   ],
+   [
+    "M",
+    "はい、伺いました。さっそく森さんのご著書を読み込んでおこうと思ってます。"
+   ],
+   [
+    "F",
+    "それはもちろんだけど、森さん、事前に質問を全部見ておきたいっていう方なんだって。事務所の人に言われたの。"
+   ],
+   [
+    "M",
+    "そうですか。じゃあ、質問の案を作って……。"
+   ],
+   [
+    "F",
+    "うん、そうなるね。今回は前半が対談で、後半はリスナーからのメールに答えてもらう形にしたいでしょう。"
+   ],
+   [
+    "M",
+    "ええ。"
+   ],
+   [
+    "F",
+    "メールの募集は今週の放送で告知するから、その原稿も要るよね。"
+   ],
+   [
+    "M",
+    "告知の原稿なら、今日の午後に書きます。"
+   ],
+   [
+    "F",
+    "いや、それは今週の放送の担当がやってくれることになってる。それに、前半と後半をどう分けるか、まだ決めてなかったよね。対談を長くするか、メールのほうを厚くするかで、聞くことの数もずいぶん変わるでしょう。"
+   ],
+   [
+    "M",
+    "確かにそうですね。じゃあ、そこを固めて、見ていただいてからにします。"
+   ]
+  ],
+  "options": [
+   "ゲストの著書を読み込む",
+   "番組の流れを組み立てる",
+   "事前の質問案を作成する",
+   "メール募集の原稿を書く"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "广播电台里，女导演和一个男人在说话。",
+    "question": "男人接下来首先要做什么？",
+    "lines": [
+     "下周节目的嘉宾定了，是经济学家森先生。",
+     "是，听说了。我打算马上把森先生的著作好好读一读。",
+     "那当然要读，不过听说森先生是那种想事先看到全部问题的人。他事务所的人跟我说的。",
+     "是吗。那我来拟问题……",
+     "嗯，是要这样。这次前半是对谈，后半想请他回答听众来信吧。",
+     "是的。",
+     "征集来信要在这周的节目里预告，那个稿子也需要吧。",
+     "预告的稿子我今天下午写。",
+     "不，那个由这周节目的负责人来做。而且前后半怎么分，我们还没定吧。对谈拉长还是来信部分多一些，要问的问题数量也会差很多。",
+     "确实。那我先把那部分定下来，请您看过以后再说。"
+    ],
+    "options": [
+     "仔细阅读嘉宾的著作",
+     "安排节目的流程",
+     "拟写事先给的问题",
+     "写征集来信的稿子"
+    ]
+   },
+   "en": {
+    "scene": "At a radio station, a female director and a man are talking.",
+    "question": "What will the man do first?",
+    "lines": [
+     "Next week's guest is confirmed: Mori-san, the economist.",
+     "Yes, I heard. I'm planning to read through his books right away.",
+     "Of course, but apparently he likes to see all the questions in advance. His office told me.",
+     "I see. Then I'll draft the questions and…",
+     "Yes, that's how it'll go. This time we want a conversation in the first half and him answering listeners' emails in the second, right?",
+     "Right.",
+     "We'll announce the call for emails on this week's show, so we'll need a script for that too.",
+     "I'll write the announcement this afternoon.",
+     "No, the person handling this week's show is doing that. Besides, we haven't decided how to split the first and second halves, have we? Whether the conversation runs long or the emails get more time changes how many questions you'll need.",
+     "True. Then I'll settle that and show it to you before going on."
+    ],
+    "options": [
+     "Read the guest's books",
+     "Plan the programme's running order",
+     "Draft the questions to send in advance",
+     "Write the call-for-emails announcement"
+    ]
+   }
+  },
+  "why": {
+   "zh": "嘉宾要事先看全部问题，而问题多少取决于前后半怎么分，前后半还没定；他说「そこを固めて」——先定节目流程。",
+   "en": "The guest wants all questions in advance, and how many depends on how the halves are split, which isn't decided — so he settles the running order first."
+  },
+  "wrong": [
+   {
+    "zh": "读书当然要做，但女人要他先做的是节目结构。",
+    "en": "Reading is a given, but she wants the structure first."
+   },
+   null,
+   {
+    "zh": "问题要等流程定了以后再拟。",
+    "en": "The questions come after the structure is settled."
+   },
+   {
+    "zh": "预告稿由这周节目的负责人写。",
+    "en": "This week's show staff will write the announcement."
+   }
+  ],
+  "traps": [
+   "order",
+   "someone-else"
+  ]
+ },
+ {
+  "id": "n1-ck-113",
+  "type": "kadai",
+  "scene": "大学の国際交流課で、男の先生と女の職員が話しています。",
+  "question": "男の先生はこのあとまず何をしなければなりませんか。",
+  "lines": [
+   [
+    "M",
+    "来年の四月から、ドイツの研究者を半年間お招きすることになりまして、手続きを伺いたいんですが。"
+   ],
+   [
+    "F",
+    "はい。まず、在留資格の申請に必要な書類をこちらでそろえます。その中に、受け入れ先の先生の推薦書がありまして、それを先生にお書きいただくことになります。"
+   ],
+   [
+    "M",
+    "推薦書ですね。"
+   ],
+   [
+    "F",
+    "ただ、推薦書は、先方との受け入れの契約書が学内で決裁されてからでないと、作成できないことになっておりまして。"
+   ],
+   [
+    "M",
+    "契約書は、先方にもう署名をもらってあります。"
+   ],
+   [
+    "F",
+    "でしたら、あとは学部長の決裁をいただければ。先生の学部の事務室に提出していただく形になります。"
+   ],
+   [
+    "M",
+    "わかりました。宿舎のほうはどうなりますか。"
+   ],
+   [
+    "F",
+    "宿舎は、在留資格の申請が済んでからでも十分間に合います。"
+   ],
+   [
+    "M",
+    "それと、向こうの研究者が、家族も連れてきたいと言っているんですが。"
+   ],
+   [
+    "F",
+    "ご家族の分は、ご本人の申請と一緒に出しますので、またそのときに。"
+   ]
+  ],
+  "options": [
+   "学部の事務室に契約書を出す",
+   "先方に契約書の署名を頼む",
+   "推薦書を作成して提出する",
+   "研究者用の宿舎を予約する"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "大学的国际交流科里，一位男老师和一位女职员在说话。",
+    "question": "男老师接下来首先必须做什么？",
+    "lines": [
+     "明年四月起要邀请一位德国研究者来半年，想问一下手续。",
+     "好的。首先，申请在留资格需要的材料由我们这边准备。其中有一份接收方老师的推荐书，要请您来写。",
+     "推荐书是吧。",
+     "不过，推荐书必须等和对方签的接收合同在校内审批通过以后才能写。",
+     "合同已经让对方签好字了。",
+     "那就只差学部长的审批了。请您交到您所在学部的办公室。",
+     "明白了。宿舍那边怎么办？",
+     "宿舍等在留资格申请办完以后再弄，也完全来得及。",
+     "还有，对方研究者说想带家人一起来。",
+     "家属的部分和本人的申请一起提交，到时候再说。"
+    ],
+    "options": [
+     "把合同交到学部办公室",
+     "请对方在合同上签字",
+     "写好推荐书并提交",
+     "预订研究者的宿舍"
+    ]
+   },
+   "en": {
+    "scene": "At a university's international office, a male professor and a female staff member are talking.",
+    "question": "What must the professor do first?",
+    "lines": [
+     "We're inviting a researcher from Germany for six months from next April, and I'd like to ask about the procedures.",
+     "Certainly. First, we gather the documents needed for the residence-status application. One of them is a recommendation from the host professor, which you would write.",
+     "A recommendation, then.",
+     "However, the recommendation can only be written after the hosting agreement with the researcher has been approved internally.",
+     "The researcher has already signed the agreement.",
+     "Then all that's left is the dean's approval. You submit it to your faculty's office.",
+     "I see. What about accommodation?",
+     "There's plenty of time for accommodation after the residence application is done.",
+     "Also, the researcher says he'd like to bring his family.",
+     "The family's papers go in with his own application, so we'll deal with that then."
+    ],
+    "options": [
+     "Submit the agreement to the faculty office",
+     "Ask the researcher to sign the agreement",
+     "Write and submit the recommendation",
+     "Book accommodation for the researcher"
+    ]
+   }
+  },
+  "why": {
+   "zh": "推荐书要等合同在校内审批后才能写；对方已经签字，剩下的是交到学部办公室请学部长审批。",
+   "en": "The recommendation must wait for internal approval of the agreement; it's signed, so he submits it to the faculty office for the dean's approval."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "对方「もう署名をもらってあります」。",
+    "en": "The researcher has already signed."
+   },
+   {
+    "zh": "推荐书要等合同审批以后才能写。",
+    "en": "The recommendation can't be written until the agreement is approved."
+   },
+   {
+    "zh": "宿舍在留资格申请以后再办也来得及。",
+    "en": "Accommodation can wait until after the residence application."
+   }
+  ],
+  "traps": [
+   "order",
+   "done-already",
+   "later"
+  ]
+ },
+ {
+  "id": "n1-ck-114",
+  "type": "kadai",
+  "scene": "調査会社で男の人と女の人が話しています。",
+  "question": "女の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "M",
+    "観光客の動向調査の報告書、来週、市に提出だったよね。どう？"
+   ],
+   [
+    "F",
+    "本文はほぼ書き終わりました。あとは要約を書いて、図表を整えれば完成です。"
+   ],
+   [
+    "M",
+    "そう。ところで、アンケートの回答、ウェブで集めた分が、最後に追加で届いてたでしょう。あれは反映されてる？"
+   ],
+   [
+    "F",
+    "いえ、届いたのが締め切りのあとでしたので、入れていません。"
+   ],
+   [
+    "M",
+    "それがね、市の担当の方から、締め切り後の分も含めてほしいって連絡があったんだ。二百件近くあるから、数字がかなり動くかもしれない。"
+   ],
+   [
+    "F",
+    "そうなると、本文の数字も変わってきますね。"
+   ],
+   [
+    "M",
+    "うん。要約はもちろん最後でいい。図表も、どうせ作り直しになるし。"
+   ],
+   [
+    "F",
+    "では、本文の書き直しから……。"
+   ],
+   [
+    "M",
+    "うーん、二百件入ったら、どの数字がどれだけ動くか、まだわからないよね。"
+   ],
+   [
+    "F",
+    "あ、そうか。それがわからないと、直すところも決まりませんね。"
+   ]
+  ],
+  "options": [
+   "報告書の要約を書く",
+   "図表を見やすく整える",
+   "本文の数値を書き直す",
+   "追加分を含めて集計する"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "调查公司里，一个男人和一个女人在说话。",
+    "question": "女人接下来首先要做什么？",
+    "lines": [
+     "游客动向调查的报告书，下周要交给市里吧。怎么样了？",
+     "正文差不多写完了。剩下写摘要、整理图表就完成了。",
+     "是吗。对了，问卷回答里网上收集的那部分，最后又追加送来了吧。那些反映进去了吗？",
+     "没有，因为是截止以后才到的，就没加进去。",
+     "问题是，市里的负责人联系说，希望把截止以后的部分也算进去。有将近两百份，数字可能会变动不小。",
+     "那样的话，正文里的数字也会变了。",
+     "嗯。摘要当然最后写。图表反正也要重做。",
+     "那我从改写正文开始……",
+     "嗯……加进两百份以后，哪个数字会变多少，现在还不知道吧。",
+     "啊，对。不知道那个，要改的地方也定不下来。"
+    ],
+    "options": [
+     "写报告书的摘要",
+     "把图表整理得清楚易看",
+     "改写正文里的数值",
+     "加上追加的部分重新统计"
+    ]
+   },
+   "en": {
+    "scene": "At a research consultancy, a man and a woman are talking.",
+    "question": "What will the woman do first?",
+    "lines": [
+     "The tourist trends report is due to the city next week, isn't it? How's it going?",
+     "The main text is nearly done. Then I write the summary, tidy up the charts, and it's finished.",
+     "OK. By the way, a last batch of the online survey responses came in, didn't it? Is that included?",
+     "No, it arrived after the cut-off, so I didn't include it.",
+     "Well, the person at the city asked us to include the late ones too. There are nearly two hundred, so the figures may shift quite a bit.",
+     "Then the figures in the main text will change too.",
+     "Yes. The summary can obviously come last. And the charts will have to be redone anyway.",
+     "Then I'll start by rewriting the text…",
+     "Hmm, once two hundred more go in, we don't yet know which figures will move, or by how much.",
+     "Oh, right. Until we know that, I can't tell what to change."
+    ],
+    "options": [
+     "Write the report summary",
+     "Tidy up the charts",
+     "Rewrite the figures in the text",
+     "Redo the tally including the late responses"
+    ]
+   }
+  },
+  "why": {
+   "zh": "要加入截止后的两百份回答；不知道数字怎么变，就定不了正文改哪里——所以先加上追加部分重新统计。",
+   "en": "The late responses must be added; until the new figures are known she can't tell what to rewrite, so she redoes the tally first."
+  },
+  "wrong": [
+   {
+    "zh": "摘要「最後でいい」。",
+    "en": "The summary comes last."
+   },
+   {
+    "zh": "图表反正要重做，要等新数字。",
+    "en": "The charts will be redone after the new numbers."
+   },
+   {
+    "zh": "她想先改正文，但不知道数字怎么变就定不了改哪里。",
+    "en": "She proposes this, but she can't know what to change until the figures are redone."
+   },
+   null
+  ],
+  "traps": [
+   "order",
+   "later"
+  ]
+ }
+]

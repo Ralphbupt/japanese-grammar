@@ -1,0 +1,637 @@
+[
+ {
+  "id": "n3-ck-401",
+  "type": "hatsuwa",
+  "scene": "会社で、課長が去年の会議の資料を持っています。自分もその資料をコピーして使いたいです。課長は忙しそうなので、コピーは自分でします。課長に言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "An office. A young man stands beside the desk of a busy middle-aged man who is typing at a computer. The seated man has a thin folder of papers on his desk; the young man points politely at the folder with an open hand.",
+   "arrow": "the young man standing beside the desk"
+  },
+  "options": [
+   "課長、その資料、コピーさせていただけますか。",
+   "課長、その資料、コピーしていただけますか。",
+   "いいですよ。終わったら返してくださいね。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在公司，科长手里有去年会议的资料。自己也想复印一份来用。科长看起来很忙，所以复印自己来。对科长说。",
+    "question": "怎么说？",
+    "options": [
+     "科长，那份资料能让我复印一下吗？",
+     "科长，那份资料能请您复印一下吗？",
+     "可以啊。用完了还给我。"
+    ]
+   },
+   "en": {
+    "scene": "At work, the section chief has the handouts from last year's meeting. You want to copy them for your own use. He looks busy, so you'll make the copy yourself. You speak to him.",
+    "question": "What do you say?",
+    "options": [
+     "Chief, may I make a copy of those papers?",
+     "Chief, could you make a copy of those papers?",
+     "Sure. Give them back when you're done."
+    ]
+   }
+  },
+  "why": {
+   "zh": "想得到对方允许、由自己来做，用「〜させていただけますか」：「コピーさせていただけますか」。",
+   "en": "To ask permission to do something yourself, use 「〜させていただけますか」: 「コピーさせていただけますか」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「コピーしていただけますか」是请科长去复印，可是科长很忙，复印是自己来做。",
+    "en": "「コピーしていただけますか」 asks the busy chief to do the copying — but you're doing it yourself."
+   },
+   {
+    "zh": "「終わったら返してくださいね」是借出资料的科长说的话。",
+    "en": "「終わったら返してくださいね」 is what the chief would say when lending the papers."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n3-ck-402",
+  "type": "hatsuwa",
+  "scene": "大学の図書館で本を借りたいです。でも、学生証を家に忘れてきました。図書館の人に聞きます。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A library counter. A young woman student stands at the counter holding one book and looking into her open bag with a worried face. A male librarian sits behind the counter.",
+   "arrow": "the young woman holding the book"
+  },
+  "options": [
+   "学生証がないと、借りられませんよ。",
+   "学生証を忘れたんですが、借りられますか。",
+   "この本、返すのを忘れていたんですが。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "想在大学图书馆借书。可是把学生证忘在家里了。问图书馆的工作人员。",
+    "question": "怎么说？",
+    "options": [
+     "没有学生证的话不能借哦。",
+     "我忘带学生证了，还能借吗？",
+     "这本书我忘了还了……"
+    ]
+   },
+   "en": {
+    "scene": "You want to borrow a book from the university library, but you've left your student ID at home. You ask the librarian.",
+    "question": "What do you say?",
+    "options": [
+     "You can't borrow without a student ID.",
+     "I've forgotten my student ID — can I still borrow books?",
+     "I forgot to return this book…"
+    ]
+   }
+  },
+  "why": {
+   "zh": "先说明情况「学生証を忘れたんですが」，再问「借りられますか」。",
+   "en": "State the problem 「学生証を忘れたんですが」, then ask 「借りられますか」."
+  },
+  "wrong": [
+   {
+    "zh": "「借りられませんよ」是图书馆工作人员回答时说的话。",
+    "en": "「借りられませんよ」 is the librarian's answer."
+   },
+   null,
+   {
+    "zh": "忘的是学生证，不是忘了还书；现在是要借书。",
+    "en": "What you forgot is your ID, not to return a book; you're trying to borrow."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n3-ck-403",
+  "type": "hatsuwa",
+  "scene": "夜十一時です。となりの部屋の人の音楽がうるさくて、眠れません。となりの部屋に行きました。となりの人に言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "An apartment corridor at night. A woman in pyjamas with a cardigan stands at a neighbour's open door, looking tired. A young man stands inside the doorway, holding the door open.",
+   "arrow": "the woman in pyjamas at the door"
+  },
+  "options": [
+   "遅くまでうるさくして、本当にすみません。",
+   "あ、すみません。すぐに音を小さくしますね。",
+   "すみません、音を少し小さくしてもらえますか。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "晚上十一点。隔壁的人放音乐很吵，睡不着。去了隔壁，对邻居说。",
+    "question": "怎么说？",
+    "options": [
+     "这么晚还这么吵，真对不起。",
+     "啊，对不起。我马上把声音关小。",
+     "不好意思，能把声音关小一点吗？"
+    ]
+   },
+   "en": {
+    "scene": "It's 11 p.m. Your neighbour's music is so loud you can't sleep. You go next door and speak to the neighbour.",
+    "question": "What do you say?",
+    "options": [
+     "I'm so sorry for making noise this late.",
+     "Oh, sorry. I'll turn it down right away.",
+     "Excuse me, could you turn the volume down a little?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "请对方把声音关小，用「音を少し小さくしてもらえますか」。",
+   "en": "You're asking the neighbour to turn it down: 「音を少し小さくしてもらえますか」."
+  },
+  "wrong": [
+   {
+    "zh": "吵的是邻居，不是自己；这句是制造噪音的人道歉的话。",
+    "en": "The neighbour is the noisy one; this is the noisy person's apology."
+   },
+   {
+    "zh": "「すぐに音を小さくしますね」是邻居听到请求后的回答。",
+    "en": "「すぐに音を小さくしますね」 is the neighbour's reply."
+   },
+   null
+  ],
+  "traps": [
+   "perspective"
+  ]
+ },
+ {
+  "id": "n3-ck-404",
+  "type": "hatsuwa",
+  "scene": "あしたまでに先生に作文を出さなければなりません。でも、まだ終わっていません。一日だけ遅れて出したいです。先生に言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A university teacher's office. A young man stands in front of a seated older woman teacher, bowing slightly, holding a few handwritten sheets against his chest. The teacher looks up at him from her desk.",
+   "arrow": "the young man who is bowing"
+  },
+  "options": [
+   "先生、作文、あと一日待っていただけませんか。",
+   "じゃあ、あしたまでに出してくださいね。",
+   "先生、作文を一日早く出してもいいですか。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "明天之前必须把作文交给老师，可是还没写完。想晚交一天。对老师说。",
+    "question": "怎么说？",
+    "options": [
+     "老师，作文能再等我一天吗？",
+     "那么，明天之前交吧。",
+     "老师，作文我可以提前一天交吗？"
+    ]
+   },
+   "en": {
+    "scene": "You have to hand in an essay to your teacher by tomorrow, but it isn't finished. You want to hand it in just one day late. You speak to your teacher.",
+    "question": "What do you say?",
+    "options": [
+     "Could you wait one more day for my essay?",
+     "All right, hand it in by tomorrow, then.",
+     "May I hand in my essay a day early?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "请老师多等一天，用客气的「あと一日待っていただけませんか」。",
+   "en": "You ask the teacher to wait a day, politely: 「あと一日待っていただけませんか」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「あしたまでに出してくださいね」是老师说的话。",
+    "en": "「あしたまでに出してくださいね」 is the teacher's line."
+   },
+   {
+    "zh": "作文还没写完，想晚一天交，不是提前交。",
+    "en": "The essay isn't finished — you want to hand it in later, not earlier."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n3-ck-405",
+  "type": "hatsuwa",
+  "scene": "会社で、課長からもらった大切な書類を、まちがえて捨ててしまいました。課長にあやまります。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "An office. A young woman bows deeply in front of a middle-aged man sitting at his desk. Next to her stands a small office wastebasket.",
+   "arrow": "the young woman who is bowing deeply"
+  },
+  "options": [
+   "すみません。この書類、捨ててもいいですか。",
+   "いいよ、気にしないで。また作ればいいから。",
+   "申し訳ありません。書類を捨ててしまいました。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在公司，把科长给的重要文件不小心扔掉了。向科长道歉。",
+    "question": "怎么说？",
+    "options": [
+     "不好意思，这份文件可以扔吗？",
+     "没事，别在意。再做一份就好了。",
+     "非常抱歉，我把文件扔掉了。"
+    ]
+   },
+   "en": {
+    "scene": "At work, you've thrown away an important document the section chief gave you by mistake. You apologise to him.",
+    "question": "What do you say?",
+    "options": [
+     "Excuse me, may I throw this document away?",
+     "It's fine, don't worry. We can just make it again.",
+     "I'm terribly sorry. I threw the document away."
+    ]
+   }
+  },
+  "why": {
+   "zh": "已经扔掉了，所以用「申し訳ありません」道歉，并说明「捨ててしまいました」。",
+   "en": "It's already done, so you apologise with 「申し訳ありません」 and say 「捨ててしまいました」."
+  },
+  "wrong": [
+   {
+    "zh": "「捨ててもいいですか」是扔之前请求许可，可是文件已经扔掉了。",
+    "en": "「捨ててもいいですか」 asks permission beforehand — but you've already thrown it away."
+   },
+   {
+    "zh": "「気にしないで」是科长原谅你时说的话。",
+    "en": "「気にしないで」 is what the chief says when he forgives you."
+   },
+   null
+  ],
+  "traps": [
+   "timing",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n3-ck-406",
+  "type": "hatsuwa",
+  "scene": "会社で、新しく入った山下さんがコピー機の前で困っています。使い方が分からないようです。自分は使い方を知っています。山下さんに言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "An office corner with a large photocopier. A young woman stands in front of the photocopier, looking at it with a puzzled face, holding a few sheets of paper. A man in a shirt and tie walks up to her from the side.",
+   "arrow": "the man walking up to her"
+  },
+  "options": [
+   "すみません、使い方を教えてもらえますか。",
+   "よかったら、使い方を教えましょうか。",
+   "あ、助かります。お願いしてもいいですか。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在公司，新来的山下在复印机前一脸为难，好像不会用。自己会用。对山下说。",
+    "question": "怎么说？",
+    "options": [
+     "不好意思，能教我怎么用吗？",
+     "要不要我教你怎么用？",
+     "啊，帮大忙了。可以拜托你吗？"
+    ]
+   },
+   "en": {
+    "scene": "At work, Ms. Yamashita, who's new, looks stuck in front of the photocopier — she doesn't seem to know how to use it. You know how. You speak to her.",
+    "question": "What do you say?",
+    "options": [
+     "Excuse me, could you show me how to use it?",
+     "If you like, shall I show you how to use it?",
+     "Oh, that'd help. Could I ask you to?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "主动提出帮忙，用「よかったら、〜ましょうか」。",
+   "en": "Offering help: 「よかったら、〜ましょうか」."
+  },
+  "wrong": [
+   {
+    "zh": "会用的是自己，请对方教自己，立场反了。",
+    "en": "You're the one who knows how; asking her to teach you reverses the roles."
+   },
+   null,
+   {
+    "zh": "「助かります。お願いしても」是接受帮助的山下说的话。",
+    "en": "「助かります。お願いしても」 is what Ms. Yamashita says accepting help."
+   }
+  ],
+  "traps": [
+   "perspective"
+  ]
+ },
+ {
+  "id": "n3-ck-407",
+  "type": "hatsuwa",
+  "scene": "きのう、この店でくつを買いました。家ではいてみたら、少し小さかったです。もう少し大きいくつと取り替えてほしいです。店の人に言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A shoe shop counter. A woman stands at the counter and puts a shoe box on it, opening the lid to show a pair of shoes. A male shop assistant stands behind the counter.",
+   "arrow": "the woman putting the shoe box on the counter"
+  },
+  "options": [
+   "これ、大きいのと替えてもらえますか。",
+   "では、大きいサイズをお持ちしますね。",
+   "すみません、小さいのはありませんか。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "昨天在这家店买了鞋。回家一穿，有点小。想换一双大一点的。对店员说。",
+    "question": "怎么说？",
+    "options": [
+     "这双能帮我换成大一点的吗？",
+     "那我去拿大一号的过来。",
+     "不好意思，有小一点的吗？"
+    ]
+   },
+   "en": {
+    "scene": "Yesterday you bought shoes in this shop. When you tried them on at home they were a little small. You want to exchange them for a bigger pair. You speak to the shop assistant.",
+    "question": "What do you say?",
+    "options": [
+     "Could I exchange these for a bigger size?",
+     "Then I'll bring you a bigger size.",
+     "Excuse me, do you have a smaller one?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "鞋小了，要换大的：「大きいのと替えてもらえますか」。",
+   "en": "The shoes are too small, so you ask to swap them: 「大きいのと替えてもらえますか」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「お持ちしますね」是店员说的话。",
+    "en": "「お持ちしますね」 is the shop assistant's line."
+   },
+   {
+    "zh": "鞋已经小了，要的是大一点的，不是小的。",
+    "en": "They're already too small — you need a bigger pair, not a smaller one."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n3-ck-408",
+  "type": "hatsuwa",
+  "scene": "大学で、先生の研究室に質問をしに来ました。質問が終わって、これから部屋を出ます。先生に言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A small university office. A young woman student stands at the open door on her way out, holding a notebook, turning back toward the room and bowing. An older man sits at a desk with books, looking at her.",
+   "arrow": "the young woman at the door"
+  },
+  "options": [
+   "先生、失礼します。今、よろしいですか。",
+   "はい、また何かあったら来てくださいね。",
+   "ありがとうございました。失礼しました。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在大学，来老师的研究室问问题。问完了，现在要离开房间。对老师说。",
+    "question": "怎么说？",
+    "options": [
+     "老师，打扰了。现在方便吗？",
+     "好的，以后有什么事再来吧。",
+     "谢谢您。打扰了。（离开时）"
+    ]
+   },
+   "en": {
+    "scene": "At university, you came to your teacher's office with a question. You're finished and about to leave the room. You speak to your teacher.",
+    "question": "What do you say?",
+    "options": [
+     "Excuse me, sir. Do you have a moment now?",
+     "Okay, come again if there's anything else.",
+     "Thank you very much. Excuse me for disturbing you."
+    ]
+   }
+  },
+  "why": {
+   "zh": "离开老师的房间时道谢，再说过去式的「失礼しました」。",
+   "en": "Leaving the teacher's room, you thank him and say the past-tense 「失礼しました」."
+  },
+  "wrong": [
+   {
+    "zh": "「失礼します。今、よろしいですか」是进门时说的，现在是要离开。",
+    "en": "「失礼します。今、よろしいですか」 is said on entering; you're leaving."
+   },
+   {
+    "zh": "「また何かあったら来てください」是老师送学生时说的话。",
+    "en": "「また何かあったら来てください」 is the teacher's line seeing you off."
+   },
+   null
+  ],
+  "traps": [
+   "timing",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n3-ck-409",
+  "type": "hatsuwa",
+  "scene": "会社の会議で、みんなが話しています。自分も意見を言いたいので、手を挙げました。会議の司会の人に言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A meeting room with a long table. Four people sit around it. A woman at one side raises her hand. A man standing at the front of the room holding a few papers looks toward her.",
+   "arrow": "the woman raising her hand"
+  },
+  "options": [
+   "すみません、もう一度言っていただけますか。",
+   "すみません、ちょっとよろしいでしょうか。",
+   "はい、どうぞ。何でも言ってくださいね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在公司的会议上，大家正在讨论。自己也想发表意见，举起了手。对会议主持人说。",
+    "question": "怎么说？",
+    "options": [
+     "不好意思，能再说一遍吗？",
+     "不好意思，我可以说两句吗？",
+     "好的，请说。什么都可以说。"
+    ]
+   },
+   "en": {
+    "scene": "In a meeting at work, everyone is talking. You want to give your opinion too, so you've raised your hand. You speak to the person chairing the meeting.",
+    "question": "What do you say?",
+    "options": [
+     "Excuse me, could you say that again?",
+     "Excuse me, may I say something?",
+     "Yes, go ahead. Say whatever you like."
+    ]
+   }
+  },
+  "why": {
+   "zh": "想发言时，先说「ちょっとよろしいでしょうか」请求说话的机会。",
+   "en": "To ask for the floor, you say 「ちょっとよろしいでしょうか」."
+  },
+  "wrong": [
+   {
+    "zh": "「もう一度言っていただけますか」是没听清时说的，自己是想发表意见。",
+    "en": "「もう一度言っていただけますか」 is for when you didn't catch something; you want to speak."
+   },
+   null,
+   {
+    "zh": "「はい、どうぞ」是主持人允许发言时说的话。",
+    "en": "「はい、どうぞ」 is the chair's reply giving you the floor."
+   }
+  ],
+  "traps": [
+   "intent",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n3-ck-410",
+  "type": "hatsuwa",
+  "scene": "来週、旅行で一週間、家にいません。その間に届く荷物を、となりの家の人に預かってほしいです。となりの人に言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "Outside two neighbouring houses. A young man with a small travel bag on his shoulder stands at the gate of the next house, talking to an elderly woman who is watering plants in her front garden.",
+   "arrow": "the young man with the travel bag"
+  },
+  "options": [
+   "留守の間、荷物を預かっていただけませんか。",
+   "留守の間、荷物を預かってあげましょうか。",
+   "いいですよ。気をつけて行ってきてくださいね。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "下周要去旅行，一个星期不在家。想请隔壁的人帮忙代收这期间送来的包裹。对邻居说。",
+    "question": "怎么说？",
+    "options": [
+     "我不在家的时候，能请您帮我代收一下包裹吗？",
+     "你不在家的时候，我帮你代收包裹吧？",
+     "好啊。路上小心。"
+    ]
+   },
+   "en": {
+    "scene": "Next week you'll be away on a trip for a week. You want your neighbour to take in any parcels that arrive while you're gone. You speak to her.",
+    "question": "What do you say?",
+    "options": [
+     "While I'm away, could you take in my parcels for me?",
+     "While you're away, shall I take in your parcels for you?",
+     "Of course. Have a safe trip."
+    ]
+   }
+  },
+  "why": {
+   "zh": "请邻居为自己做事，用「預かっていただけませんか」。",
+   "en": "You're asking the neighbour to do this for you: 「預かっていただけませんか」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「預かってあげましょうか」是主动提出帮对方代收，可要出门的是自己。",
+    "en": "「預かってあげましょうか」 offers to take in someone else's parcels — but you're the one going away."
+   },
+   {
+    "zh": "「気をつけて行ってきて」是答应请求的邻居说的话。",
+    "en": "「気をつけて行ってきて」 is what the neighbour says when she agrees."
+   }
+  ],
+  "traps": [
+   "perspective"
+  ]
+ },
+ {
+  "id": "n3-ck-411",
+  "type": "hatsuwa",
+  "scene": "レストランでカレーを注文しました。でも、店の人が持ってきたのはスパゲッティでした。店の人に言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A restaurant table. A man sits at the table looking up at a waitress, raising one hand slightly. The waitress has just put a plate of spaghetti in front of him.",
+   "arrow": "the man sitting at the table"
+  },
+  "options": [
+   "失礼しました。すぐにお取り替えします。",
+   "すみません、これ、頼んでいないんですが。",
+   "すみません、これ、もう一つお願いします。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在餐厅点了咖喱，可店员端来的是意大利面。对店员说。",
+    "question": "怎么说？",
+    "options": [
+     "非常抱歉，马上给您换。",
+     "不好意思，这个我没点。",
+     "不好意思，这个再来一份。"
+    ]
+   },
+   "en": {
+    "scene": "At a restaurant you ordered curry, but the waitress brought spaghetti. You speak to her.",
+    "question": "What do you say?",
+    "options": [
+     "I'm so sorry. I'll change it right away.",
+     "Excuse me, I didn't order this.",
+     "Excuse me, one more of these, please."
+    ]
+   }
+  },
+  "why": {
+   "zh": "端错了菜，告诉店员「これ、頼んでいないんですが」。",
+   "en": "The wrong dish came, so you tell her 「これ、頼んでいないんですが」."
+  },
+  "wrong": [
+   {
+    "zh": "「失礼しました。すぐにお取り替えします」是店员道歉时说的话。",
+    "en": "「失礼しました。すぐにお取り替えします」 is the waitress's apology."
+   },
+   null,
+   {
+    "zh": "这道菜不是自己点的，再要一份不合情理。",
+    "en": "You didn't order this dish, so asking for another makes no sense."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ }
+]

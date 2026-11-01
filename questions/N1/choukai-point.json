@@ -1,0 +1,1668 @@
+[
+ {
+  "id": "n1-ck-201",
+  "type": "point",
+  "scene": "ラジオで、アナウンサーが生物学者の男の人にインタビューしています。",
+  "question": "男の人が研究の拠点を海辺の町に移した一番の理由は何ですか。",
+  "lines": [
+   [
+    "F",
+    "今日は、十年前に大学の研究所を離れて、海辺の小さな町に研究の拠点を移された、生物学者の石井さんにお話を伺います。思い切ったご決断だったのでは？"
+   ],
+   [
+    "M",
+    "周りからはずいぶん止められましたね。研究費にしても設備にしても、大学にいたほうがはるかに恵まれていますから。"
+   ],
+   [
+    "F",
+    "それでも移られたのは、やはり海のそばで研究なさりたかったから？"
+   ],
+   [
+    "M",
+    "もちろん、それもあります。毎日、生きたままの魚を観察できるのは大きいです。ただ、それだけなら、大学の臨海実験所を使えば済む話で。"
+   ],
+   [
+    "F",
+    "なるほど。"
+   ],
+   [
+    "M",
+    "当時、論文を書くたびに頭に浮かんでいたのが、漁師さんたちの話でした。何十年も同じ海で漁をしてきた人たちは、魚の群れの動きについて、論文には書かれていないことを体で知っているんです。ただ、そういう知恵は、年に何度か聞き取りに行くぐらいでは、とても教えてもらえないんですよ。"
+   ],
+   [
+    "F",
+    "町の皆さんとは、すぐに打ち解けられたんですか。"
+   ],
+   [
+    "M",
+    "いえいえ、最初の二、三年はよそ者扱いでしたよ。今では、新しい漁のやり方を一緒に考えるような間柄になりましたが。"
+   ]
+  ],
+  "options": [
+   "生きた魚を日々観察できるから",
+   "漁師の経験的な知識を学べるから",
+   "大学の研究費に不満があったから",
+   "地元と新たな漁法を作りたいから"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "广播里，播音员在采访一位男生物学家。",
+    "question": "男人把研究据点迁到海边小镇的最主要原因是什么？",
+    "lines": [
+     "今天请到的是十年前离开大学研究所、把研究据点迁到海边小镇的生物学家石井先生。那是个很大胆的决定吧？",
+     "周围的人都极力劝阻。不论是研究经费还是设备，留在大学里条件都要好得多。",
+     "即便如此还是搬了过去，果然是因为想在海边做研究？",
+     "当然也有这个原因。每天能观察活鱼，这一点很重要。不过如果只是这样，用大学的临海实验站就够了。",
+     "原来如此。",
+     "那时候，我每写一篇论文，脑子里都会浮现渔民们说的话。几十年在同一片海里打鱼的人，对鱼群的动向，身体里就知道论文里没写的东西。不过，这种智慧，一年去访谈几次是根本学不到的。",
+     "和镇上的人很快就打成一片了吗？",
+     "哪里哪里，头两三年一直被当外人。现在倒是成了一起琢磨新捕鱼方法的关系。"
+    ],
+    "options": [
+     "因为每天都能观察活鱼",
+     "因为能学到渔民的经验知识",
+     "因为对大学的研究经费不满",
+     "因为想和当地一起开发新渔法"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, an announcer is interviewing a male biologist.",
+    "question": "What was the main reason the man moved his research base to a seaside town?",
+    "lines": [
+     "Today we're talking to biologist Ishii-san, who left his university institute ten years ago and moved his research base to a small seaside town. That must have been a bold decision?",
+     "A lot of people tried to talk me out of it. Whether it's funding or equipment, you're far better off staying at a university.",
+     "And yet you moved — was it because you wanted to do research right by the sea?",
+     "That was part of it, of course. Being able to observe live fish every day matters a lot. But if that were all, I could simply have used the university's marine station.",
+     "I see.",
+     "Back then, every time I wrote a paper, what came to mind was what the fishermen had told me. People who've fished the same sea for decades know things about how schools of fish move that aren't in any paper — they know it in their bones. But that kind of wisdom is never going to be shared with you if you only come to interview them a few times a year.",
+     "Did you get on with the townspeople right away?",
+     "Not at all — for the first two or three years I was treated as an outsider. These days, though, we even work out new fishing methods together."
+    ],
+    "options": [
+     "He could observe live fish every day",
+     "He could learn the fishermen's hands-on knowledge",
+     "He was unhappy with university funding",
+     "He wanted to develop new fishing methods with locals"
+    ]
+   }
+  },
+  "why": {
+   "zh": "观察活鱼「それもあります」但用临海实验站就能做到；渔民的知识论文里没有，偶尔去访谈学不到——所以要住到那里去学。",
+   "en": "Live fish were part of it but a marine station would do; the fishermen's unwritten knowledge can't be learned on occasional visits — so he moved there."
+  },
+  "wrong": [
+   {
+    "zh": "他说这也是原因，但「それだけなら」用大学的临海实验站就够了，不是决定性的。",
+    "en": "Part of it, but a marine station would have covered that — not the deciding factor."
+   },
+   null,
+   {
+    "zh": "恰恰相反，他说经费和设备都是大学更好。",
+    "en": "The opposite: he says the university is better funded and equipped."
+   },
+   {
+    "zh": "一起想新渔法是现在的结果，不是搬家的理由。",
+    "en": "Working on new methods together is how things turned out, not why he moved."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-ck-202",
+  "type": "point",
+  "scene": "家電メーカーで男の人と女の人が話しています。",
+  "question": "女の人は、新しい掃除ロボットが売れない一番の原因は何だと考えていますか。",
+  "lines": [
+   [
+    "M",
+    "例の小型の掃除ロボット、発売から三か月で、目標の半分にも届いてないらしいね。"
+   ],
+   [
+    "F",
+    "この前、家電量販店の売り場を見てきたんです。一人暮らしらしい若い男の人が、うちのパンフレットを手に取って、しばらく眺めてから、「うちには大きすぎるな」って言って、棚に戻しちゃったんですよ。"
+   ],
+   [
+    "M",
+    "大きすぎる？　あれ、うちで一番小さいモデルだよね。"
+   ],
+   [
+    "F",
+    "ええ。狭い部屋でも、家具の下まで入り込めるのが売りなんですけどね。パンフレットもテレビのコマーシャルも、広いリビングを走ってる写真ばかりなので。"
+   ],
+   [
+    "M",
+    "なるほどね……。でも、値段も関係あるんじゃない？"
+   ],
+   [
+    "F",
+    "価格は他社とほぼ同じですから、どうでしょう。吸い込む力が弱いっていう口コミも、一部の床に限った話ですし。"
+   ],
+   [
+    "M",
+    "営業は、店頭の展示が小さすぎるって言ってたけど。"
+   ],
+   [
+    "F",
+    "でも、あのお客さん、ちゃんと手に取って見てくれてたんですよね。"
+   ]
+  ],
+  "options": [
+   "他社製品より値段が高いこと",
+   "吸引力が弱いと評判なこと",
+   "広告が長所を伝えていないこと",
+   "店頭での展示が目立たないこと"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "家电公司里，一个男人和一个女人在说话。",
+    "question": "女人认为新扫地机器人卖不好的最主要原因是什么？",
+    "lines": [
+     "那款小型扫地机器人，上市三个月了，听说连目标的一半都没达到。",
+     "前几天我去家电卖场看了看。一个像是独居的年轻男人拿起我们的宣传册，看了一会儿，说了句「对我家来说太大了」，就放回架子上了。",
+     "太大？那可是我们最小的型号啊。",
+     "是啊。卖点明明是小房间里也能钻到家具底下。可宣传册也好电视广告也好，全是在宽敞客厅里跑的画面。",
+     "原来如此……不过价格也有关系吧？",
+     "价格和别家差不多，不好说。说吸力弱的评价，也只限于某些地板。",
+     "销售说店里的展示太小了。",
+     "可是那位客人，确实是拿在手里看过的。"
+    ],
+    "options": [
+     "比别家产品价格高",
+     "被评价吸力弱",
+     "广告没有传达出优点",
+     "店里的展示不显眼"
+    ]
+   },
+   "en": {
+    "scene": "At an electronics maker, a man and a woman are talking.",
+    "question": "What does the woman think is the main reason the new robot vacuum isn't selling?",
+    "lines": [
+     "That compact robot vacuum — three months on sale and apparently not even half its target.",
+     "The other day I went to look at an electronics store. A young man who looked like he lived alone picked up our brochure, studied it for a while, said 'That's too big for my place,' and put it back.",
+     "Too big? That's our smallest model.",
+     "Yes. Its selling point is that it gets under furniture even in a small room. But the brochure and the TV ads only ever show it running around a big living room.",
+     "I see… But doesn't the price have something to do with it too?",
+     "It's priced about the same as competitors', so I'm not sure. And the reviews about weak suction only apply to certain floors.",
+     "Sales were saying the in-store display is too small.",
+     "But that customer did pick it up and look at it, you know."
+    ],
+    "options": [
+     "It costs more than rivals' products",
+     "It has a reputation for weak suction",
+     "The ads don't get its strengths across",
+     "The in-store display doesn't stand out"
+    ]
+   }
+  },
+  "why": {
+   "zh": "她讲的卖场经历：客人看了只有宽敞客厅画面的宣传册，以为「太大」放下了——广告没有传达出能用于小房间的优点。",
+   "en": "Her story: a customer saw only big-living-room pictures and thought it too big — the advertising hides its small-room strength."
+  },
+  "wrong": [
+   {
+    "zh": "价格和别家「ほぼ同じ」。",
+    "en": "It's priced about the same as competitors'."
+   },
+   {
+    "zh": "吸力弱的评价只限于部分地板。",
+    "en": "Weak suction is limited to some floors."
+   },
+   null,
+   {
+    "zh": "那位客人「ちゃんと手に取って見てくれてた」，展示不是问题所在。",
+    "en": "The customer did find and pick it up, so the display isn't the issue."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "half-right"
+  ]
+ },
+ {
+  "id": "n1-ck-203",
+  "type": "point",
+  "scene": "物流会社で、女の上司と男の人が新しい倉庫について話しています。",
+  "question": "上司は、倉庫の配置の案の何が問題だと言っていますか。",
+  "lines": [
+   [
+    "F",
+    "新しい倉庫の配置の案、見ました。棚の数は、最初は少ないかなと思ったんだけど、在庫の量で計算し直したら、足りてましたね。照明も、まあ問題ないでしょう。"
+   ],
+   [
+    "M",
+    "ありがとうございます。"
+   ],
+   [
+    "F",
+    "ただね、去年、今の倉庫で、出荷場の前で、フォークリフトと作業員がぶつかりそうになったこと、覚えてる？"
+   ],
+   [
+    "M",
+    "はい。荷物の陰から、急に人が出てきて……。"
+   ],
+   [
+    "F",
+    "この案だと、出荷場の手前で、フォークリフトが通る道を、作業する人が毎回横切ることになるでしょう。"
+   ],
+   [
+    "M",
+    "あ……。では、出荷場の位置ごと変えましょうか。"
+   ],
+   [
+    "F",
+    "出荷場は、トラックの出入りがあるから、あそこしかないのよ。"
+   ]
+  ],
+  "options": [
+   "棚の数が足りていないこと",
+   "人と車両の動線が交差すること",
+   "照明の位置が適切でないこと",
+   "出荷場の場所がよくないこと"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "物流公司里，女上司和一个男人在谈新仓库。",
+    "question": "上司说仓库布局方案的问题是什么？",
+    "lines": [
+     "新仓库的布局方案我看了。货架数量我起初觉得少了点，按库存量重新算了一下，是够的。照明也基本没问题吧。",
+     "谢谢。",
+     "不过，你还记得去年在现在的仓库里，出货区前面叉车和作业员差点撞上的事吗？",
+     "记得。有人突然从货物后面走了出来……",
+     "按这个方案，作业人员每次都要在出货区前面横穿叉车走的通道吧。",
+     "啊……那要不要连出货区的位置一起改？",
+     "出货区因为卡车要进出，只能在那里。"
+    ],
+    "options": [
+     "货架数量不够",
+     "人和车辆的动线交叉",
+     "照明的位置不合适",
+     "出货区的位置不好"
+    ]
+   },
+   "en": {
+    "scene": "At a logistics company, a female manager and a man are talking about a new warehouse.",
+    "question": "What does the manager say is the problem with the warehouse layout plan?",
+    "lines": [
+     "I've looked at the layout plan for the new warehouse. I thought at first there weren't enough shelves, but when I worked it out from the stock levels, there are. The lighting should be fine too.",
+     "Thank you.",
+     "But do you remember last year, in the current warehouse, when a forklift and a worker nearly collided in front of the shipping area?",
+     "Yes. Someone suddenly stepped out from behind the stock…",
+     "With this plan, the workers would have to cross the forklift route every time, right in front of the shipping area.",
+     "Oh… Then shall I move the shipping area itself?",
+     "The shipping area has to be there, because of the trucks coming and going."
+    ],
+    "options": [
+     "There aren't enough shelves",
+     "The paths of people and vehicles cross",
+     "The lights are badly positioned",
+     "The shipping area is in the wrong place"
+    ]
+   }
+  },
+  "why": {
+   "zh": "上司提起去年叉车和人差点相撞的事，指出新方案里作业人员每次都要横穿叉车通道——人和车的动线交叉。",
+   "en": "She recalls last year's near-collision and points out that in the plan workers must cross the forklift route every time."
+  },
+  "wrong": [
+   {
+    "zh": "货架重新算过「足りてました」。",
+    "en": "Recalculated, the shelving is enough."
+   },
+   null,
+   {
+    "zh": "照明「問題ないでしょう」。",
+    "en": "The lighting is fine."
+   },
+   {
+    "zh": "出货区「あそこしかない」，不是问题所在。",
+    "en": "The shipping area has to stay where it is."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "half-right"
+  ]
+ },
+ {
+  "id": "n1-ck-204",
+  "type": "point",
+  "scene": "ラジオで、アナウンサーが家具職人の男の人にインタビューしています。",
+  "question": "職人が地元の木だけを使うことにしたのはどうしてですか。",
+  "lines": [
+   [
+    "F",
+    "こちらの工房では、五年前から、地元の山の木しか使わないことにされたそうですね。何かきっかけがあったんですか。"
+   ],
+   [
+    "M",
+    "二十年前に納めたテーブルの修理を頼まれたんです。天板の一部を取り替えようとしたら、同じ木がもう手に入らなかった。輸入していた国で、切ることが禁止されてしまって。"
+   ],
+   [
+    "F",
+    "それはお困りになったでしょう。"
+   ],
+   [
+    "M",
+    "結局、色の違う木で継ぐしかありませんでした。お客さんは気にしないとおっしゃってくださいましたが、私は悔しくて。うちの家具は、お孫さんの代まで使っていただくつもりで作っていますから。"
+   ],
+   [
+    "F",
+    "地元の木は、質の面ではいかがですか。"
+   ],
+   [
+    "M",
+    "質だけで言えば、輸入の木にもいいものはたくさんあります。値段も、地元の木のほうがむしろ高いくらいで。ただ、裏の山の木なら、何十年たっても同じものが手に入りますから。"
+   ],
+   [
+    "F",
+    "地元の林業の方々も、喜んでいらっしゃるでしょうね。"
+   ],
+   [
+    "M",
+    "ええ、結果として、そうなりましたね。"
+   ]
+  ],
+  "options": [
+   "地元の林業を支えたいから",
+   "輸入の木より質がいいから",
+   "値段を安く抑えられるから",
+   "後々まで修理ができるから"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "广播里，播音员在采访一位男家具工匠。",
+    "question": "工匠为什么决定只用本地的木材？",
+    "lines": [
+     "听说贵工坊从五年前开始只用本地山上的木材。有什么契机吗？",
+     "有人请我修二十年前交货的一张桌子。我想换掉一部分桌面，可同样的木材已经买不到了。进口来源国禁止砍伐了。",
+     "那一定很为难吧。",
+     "最后只能用颜色不同的木头接上。客人说不在意，可我很不甘心。因为我们的家具是打算让客人用到孙子那一代的。",
+     "本地木材在质量方面怎么样？",
+     "单论质量，进口木材里好的也很多。价格也是本地木材反而更贵。不过，后山的木头，几十年后也能买到一样的。",
+     "本地的林业人士也很高兴吧。",
+     "是啊，结果上算是这样吧。"
+    ],
+    "options": [
+     "因为想支持本地林业",
+     "因为比进口木材质量好",
+     "因为能把价格压低",
+     "因为日后也能修理"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, an announcer is interviewing a male furniture maker.",
+    "question": "Why did the furniture maker decide to use only local wood?",
+    "lines": [
+     "I understand that five years ago your workshop decided to use only wood from the local mountains. Was there something that prompted it?",
+     "I was asked to repair a table I'd delivered twenty years earlier. I went to replace part of the top, but the same wood couldn't be had any more — the country we imported it from had banned felling it.",
+     "That must have been a problem.",
+     "In the end I had to patch it with wood of a different colour. The customer kindly said they didn't mind, but it galled me. We make our furniture meant to last into our customers' grandchildren's time.",
+     "How does local wood compare in quality?",
+     "On quality alone, there's plenty of good imported wood. And local wood is actually more expensive. But wood from the hills behind us — I'll still be able to get the same thing decades from now.",
+     "The local forestry people must be delighted.",
+     "Yes, that's how it turned out, as it happens."
+    ],
+    "options": [
+     "To support local forestry",
+     "It's better than imported wood",
+     "It keeps costs down",
+     "The furniture can be repaired for years to come"
+    ]
+   }
+  },
+  "why": {
+   "zh": "修桌子时同样的进口木材已经买不到；家具要用到孙辈，而后山的木头几十年后也能买到——为了以后也能修。",
+   "en": "The imported wood was gone when a table needed repair; for furniture meant to last generations, local wood will still be available decades later."
+  },
+  "wrong": [
+   {
+    "zh": "支持本地只是「結果として、そうなりました」。",
+    "en": "Supporting local forestry is only how it turned out."
+   },
+   {
+    "zh": "他说进口木材里好的也很多。",
+    "en": "He says plenty of imported wood is good."
+   },
+   {
+    "zh": "本地木材「むしろ高い」。",
+    "en": "Local wood is actually more expensive."
+   },
+   null
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-ck-205",
+  "type": "point",
+  "scene": "市役所で、男の職員と女の職員が話しています。",
+  "question": "コミュニティバスの路線の見直しが延期されたのはどうしてですか。",
+  "lines": [
+   [
+    "M",
+    "コミュニティバスの路線の見直し、来年度に先送りになったんだって？　予算がつかなかったの？"
+   ],
+   [
+    "F",
+    "予算は一応認められたんです。新しい路線の案も、運行会社との調整はほぼ済んでいて。"
+   ],
+   [
+    "M",
+    "じゃあ、何が引っかかってるの？"
+   ],
+   [
+    "F",
+    "この春に、市の北側に大きな病院が移ってくることになったでしょう。"
+   ],
+   [
+    "M",
+    "ああ、駅の裏の。"
+   ],
+   [
+    "F",
+    "ええ。あれで人の流れががらっと変わるはずなんです。今の案は去年の利用調査をもとに作ったので、移転したあとの実態を見てからでないと、また一から作り直すことになりかねない、と。"
+   ],
+   [
+    "M",
+    "なるほどね。住民説明会で反対意見が多かったって話も聞いたけど。"
+   ],
+   [
+    "F",
+    "それは一部の地区だけで、説明を重ねれば理解は得られると見ています。"
+   ]
+  ],
+  "options": [
+   "見直しの予算がつかなかったから",
+   "運行会社との調整が残っているから",
+   "利用者の流れが変わる見込みだから",
+   "住民の反対意見が多かったから"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "市政府里，一个男职员和一个女职员在说话。",
+    "question": "社区巴士线路的调整为什么延期了？",
+    "lines": [
+     "社区巴士的线路调整，听说推到明年度了？是预算没批下来吗？",
+     "预算算是批了。新线路的方案和运营公司的协调也基本完成了。",
+     "那卡在哪儿了？",
+     "今年春天，有家大医院要搬到市北边来吧。",
+     "啊，车站后面那个。",
+     "对。那样一来人流肯定会大变。现在的方案是根据去年的乘客调查做的，不等搬迁后看看实际情况的话，可能又得从头重做。",
+     "原来如此。我还听说居民说明会上反对意见很多。",
+     "那只是部分地区，我们认为多解释几次就能得到理解。"
+    ],
+    "options": [
+     "因为调整的预算没批下来",
+     "因为和运营公司的协调还没完",
+     "因为预计乘客的流向会改变",
+     "因为居民的反对意见很多"
+    ]
+   },
+   "en": {
+    "scene": "At city hall, a male and a female official are talking.",
+    "question": "Why has the review of the community bus routes been postponed?",
+    "lines": [
+     "I hear the community bus route review has been put off to next year? Didn't the budget get approved?",
+     "The budget was approved, more or less. And the new route plan has mostly been worked out with the operator.",
+     "Then what's the hold-up?",
+     "A big hospital is moving to the north side of the city this spring, right?",
+     "Ah, the one behind the station.",
+     "Yes. That's bound to change how people move around completely. The current plan is based on last year's ridership survey, so unless we see what actually happens after the move, we might have to redo it from scratch.",
+     "I see. I also heard there was a lot of opposition at the residents' briefing.",
+     "That was only some districts, and we think we'll win them over with more explanation."
+    ],
+    "options": [
+     "The budget for the review wasn't approved",
+     "Talks with the operator aren't finished",
+     "The way people travel is expected to change",
+     "There was a lot of opposition from residents"
+    ]
+   }
+  },
+  "why": {
+   "zh": "大医院搬来后人流会大变，现方案基于去年的调查，要等看了搬迁后的实际情况再做，否则可能重做。",
+   "en": "A hospital's move will change travel patterns; the plan is based on last year's data, so they'll wait to see the new reality."
+  },
+  "wrong": [
+   {
+    "zh": "预算「一応認められた」。",
+    "en": "The budget was approved."
+   },
+   {
+    "zh": "和运营公司的协调「ほぼ済んで」いる。",
+    "en": "Talks with the operator are mostly done."
+   },
+   null,
+   {
+    "zh": "反对只在部分地区，多解释就能得到理解。",
+    "en": "Opposition is limited to some districts and can be overcome."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-ck-206",
+  "type": "point",
+  "scene": "銭湯で、銭湯の主人の女の人と経営コンサルタントの男の人が話しています。",
+  "question": "女の人が改装について一番心配していることは何ですか。",
+  "lines": [
+   [
+    "M",
+    "若いお客様向けに、サウナと休憩の場所を作る改装のご提案、ご検討いただけましたか。"
+   ],
+   [
+    "F",
+    "ええ。正直なところ、最初はお金のことばかり気になっていたんです。でも、区の補助金が使えると伺って、そこはなんとかなりそうだと。"
+   ],
+   [
+    "M",
+    "工事も、定休日を中心に組めば、ひと月ほどのお休みで済みます。"
+   ],
+   [
+    "F",
+    "ひと月でしたら、毎年、設備の点検で閉めている時期に合わせられますから、構いません。ただ……うちには、毎日来てくださる近所のお年寄りがいらっしゃるでしょう。"
+   ],
+   [
+    "M",
+    "ええ、夕方はいつもにぎやかですね。"
+   ],
+   [
+    "F",
+    "皆さん、湯船につかりながら世間話をするのを楽しみに通っていらっしゃるんです。若い人でいっぱいになって、あの雰囲気がなくなってしまったら、足が遠のくんじゃないかと。"
+   ],
+   [
+    "M",
+    "なるほど。では、サウナは二階に分けて、一階はこれまでどおりにする、という手もございます。"
+   ],
+   [
+    "F",
+    "ええ、それなら……。若い人が、昔ながらの銭湯のよさを分かってくれるかどうかも、気にはなりますけどね。"
+   ]
+  ],
+  "options": [
+   "なじみの客が来なくなりかねないこと",
+   "改装の費用が高くついてしまうこと",
+   "工事のために長く店を閉めること",
+   "若い客が銭湯のよさを感じないこと"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "澡堂里，女澡堂主和一位男经营顾问在说话。",
+    "question": "女人对改装最担心的是什么？",
+    "lines": [
+     "为了年轻客人加建桑拿和休息区的改装提案，您考虑过了吗？",
+     "嗯。说实话，一开始我只担心钱。不过听说可以用区里的补贴，那方面应该有办法。",
+     "施工如果以固定休息日为中心安排，停业一个月左右就够了。",
+     "一个月的话，可以安排在每年为设备检修而关门的时候，没关系。只是……我们这儿有每天都来的附近的老人们吧。",
+     "是啊，傍晚总是很热闹。",
+     "大家是为了一边泡澡一边聊家常才来的。要是挤满了年轻人，那种氛围没了，他们会不会就不来了。",
+     "原来如此。那也可以把桑拿单独放在二楼，一楼保持原样。",
+     "嗯，那样的话……年轻人能不能理解老式澡堂的好，我也有点在意就是了。"
+    ],
+    "options": [
+     "老客人可能会不来了",
+     "改装费用很高",
+     "因为施工要长期停业",
+     "年轻客人感受不到澡堂的好"
+    ]
+   },
+   "en": {
+    "scene": "At a public bathhouse, the female owner and a male business consultant are talking.",
+    "question": "What is the woman most worried about regarding the renovation?",
+    "lines": [
+     "Have you had a chance to consider our proposal to add a sauna and a rest area to attract younger customers?",
+     "Yes. To be honest, at first all I could think about was the money. But since you told me the ward subsidy can be used, I think that can be managed.",
+     "And if the work is scheduled around your regular closing days, you'd only need to close for about a month.",
+     "A month can be fitted into when we close every year for equipment checks, so that's fine. Only… we have elderly neighbours who come every single day, you know.",
+     "Yes, it's always lively in the late afternoon.",
+     "They come for the pleasure of chatting while they soak. If the place fills up with young people and that atmosphere is lost, I'm afraid they'll stop coming.",
+     "I see. Then one option would be to put the sauna upstairs and keep the ground floor as it is.",
+     "Yes, that might… Though I do also wonder whether young people will appreciate what's good about an old-style bathhouse."
+    ],
+    "options": [
+     "Her regulars might stop coming",
+     "The renovation will be expensive",
+     "She'll have to close for a long time",
+     "Young customers won't appreciate the bathhouse"
+    ]
+   }
+  },
+  "why": {
+   "zh": "钱有补贴解决，停业可以和每年的检修合在一起；她提起每天来的老人，担心氛围变了他们就不来了，还在顾问提出分楼层的方案后才松口。",
+   "en": "Money is covered by a subsidy and closing fits the annual maintenance; she brings up the elderly daily regulars and fears they'll stop coming, and only warms to the plan once they're protected."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "起初担心钱，但有补贴「なんとかなりそう」。",
+    "en": "Her first worry, but the subsidy should handle it."
+   },
+   {
+    "zh": "一个月的停业可以安排在每年检修的时候，「構いません」。",
+    "en": "A month's closure fits the annual maintenance period."
+   },
+   {
+    "zh": "最后说「気にはなります」，只是附带一提，不是最担心的。",
+    "en": "She mentions it in passing at the end; it isn't her main worry."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "half-right"
+  ]
+ },
+ {
+  "id": "n1-ck-207",
+  "type": "point",
+  "scene": "文房具の会社で、男の人と女の人が来年の手帳の試作品について話しています。",
+  "question": "女の人は、試作品をどう直したほうがいいと言っていますか。",
+  "lines": [
+   [
+    "M",
+    "来年の手帳の試作品、一週間使ってみてどうだった？"
+   ],
+   [
+    "F",
+    "最初は、ちょっと分厚いなと思ったんです。でも、メモのページがたっぷりあるので、一冊で済むのがありがたくて。ここは、このままのほうがいいと思います。"
+   ],
+   [
+    "M",
+    "表紙の色は？　営業からは、もっと落ち着いた色のほうが売れるって言われてるんだけど。"
+   ],
+   [
+    "F",
+    "それは好みが分かれるところなので、何とも。それより気になったのは、開いたときに真ん中が盛り上がって、平らにならないことなんです。左のページの端のほうに書こうとすると、手が浮いちゃって。"
+   ],
+   [
+    "M",
+    "ああ、とじ方の問題か。"
+   ],
+   [
+    "F",
+    "ええ。毎日書き込むものですから、そこはぜひ直していただきたいです。お値段は、この作りなら妥当だと思いますし。"
+   ]
+  ],
+  "options": [
+   "全体を薄く軽いものにする",
+   "表紙の色を地味なものにする",
+   "値段をもう少し安くする",
+   "とじ方を変えて書きやすくする"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "文具公司里，一个男人和一个女人在谈明年手账的样品。",
+    "question": "女人说样品应该怎么改？",
+    "lines": [
+     "明年手账的样品，用了一周觉得怎么样？",
+     "一开始觉得有点厚。可是笔记页很多，一本就够用，这一点很难得。这个我觉得保持原样比较好。",
+     "封面颜色呢？销售说颜色再沉稳一点会更好卖。",
+     "那个见仁见智，不好说。比起那个，我在意的是打开的时候中间鼓起来，摊不平。想在左页靠边的地方写字，手就悬空了。",
+     "啊，是装订方式的问题。",
+     "是的。这是每天都要写的东西，那里请一定要改。价格的话，这种做工我觉得合理。"
+    ],
+    "options": [
+     "整体做得更薄更轻",
+     "把封面颜色改得朴素些",
+     "价格再便宜一点",
+     "改变装订让它更好写"
+    ]
+   },
+   "en": {
+    "scene": "At a stationery company, a man and a woman are talking about a prototype of next year's planner.",
+    "question": "How does the woman say the prototype should be changed?",
+    "lines": [
+     "So, how was next year's planner prototype after a week of using it?",
+     "At first I thought it was a bit thick. But there are plenty of note pages, so it's nice that one book is enough. I think that should stay as it is.",
+     "What about the cover colour? Sales say a more subdued colour would sell better.",
+     "That's a matter of taste, so I can't really say. What bothered me more is that when it's open the middle bulges up and it won't lie flat. When I try to write near the edge of the left page, my hand ends up in the air.",
+     "Ah, it's the binding, then.",
+     "Yes. It's something you write in every day, so I'd really like that fixed. And the price seems fair for how it's made."
+    ],
+    "options": [
+     "Make it thinner and lighter",
+     "Use a more subdued cover colour",
+     "Make it a little cheaper",
+     "Change the binding so it's easier to write in"
+    ]
+   }
+  },
+  "why": {
+   "zh": "打开时中间鼓起摊不平，左页边上不好写；男人说是装订的问题，她说「そこはぜひ直していただきたい」。",
+   "en": "It won't lie flat, so the left page is hard to write on; it's the binding, and she wants that fixed."
+  },
+  "wrong": [
+   {
+    "zh": "厚她起初觉得是缺点，后来说笔记页多「このままのほうがいい」。",
+    "en": "She changed her mind: the thickness should stay."
+   },
+   {
+    "zh": "颜色她说见仁见智，「何とも」。",
+    "en": "Colour is a matter of taste for her."
+   },
+   {
+    "zh": "价格她说「妥当」。",
+    "en": "She thinks the price is fair."
+   },
+   null
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "half-right"
+  ]
+ },
+ {
+  "id": "n1-ck-208",
+  "type": "point",
+  "scene": "講演会で、航空機の整備会社の男の人が話しています。",
+  "question": "男の人は、ミスが減った一番の理由は何だと言っていますか。",
+  "lines": [
+   [
+    "M",
+    "整備の現場では、どんなに小さなミスも許されません。以前の私たちは、ミスが起きるたびに手順書を厚くし、確認の欄を増やしてきました。ところが、書類が増えれば増えるほど、一つ一つの確認は、かえって形だけのものになっていったんです。もちろん、点検に使う機器を新しくしたことで、防げるようになったミスもあります。ただ、件数がはっきり減り始めたのは、四年前に、ある決まりを作ってからでした。自分のミスや、ミスになりかけたことを報告した人を、決して責めない。報告が集まるようになって、初めて、どこに落とし穴があるのかが見えるようになり、ミスは今では当時の半分以下です。"
+   ]
+  ],
+  "options": [
+   "手順書の確認欄を増やしたこと",
+   "点検の機器を新しくしたこと",
+   "報告した人を責めなくしたこと",
+   "一人一人の確認を厳しくしたこと"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "讲座上，一位飞机维修公司的男人在讲话。",
+    "question": "男人说失误减少的最主要原因是什么？",
+    "lines": [
+     "在维修现场，再小的失误也不允许。以前，我们每出一次失误，就把操作手册加厚一些，增加确认栏。可是，文件越多，每一项确认反而越流于形式。当然，更新检查用的仪器以后，也有一些失误能防住了。不过，失误件数明显开始下降，是在四年前定下一条规矩以后：对报告了自己的失误或差点出错的人，绝不责备。报告多起来以后，我们才第一次看清了陷阱在哪里，现在的失误还不到当时的一半。"
+    ],
+    "options": [
+     "增加了操作手册的确认栏",
+     "更新了检查仪器",
+     "不再责备报告的人",
+     "让每个人的确认更严格"
+    ]
+   },
+   "en": {
+    "scene": "At a lecture, a man from an aircraft maintenance company is speaking.",
+    "question": "What does the man say is the main reason mistakes decreased?",
+    "lines": [
+     "In maintenance work, not even the smallest mistake is acceptable. In the past, every time a mistake happened, we made the manuals thicker and added more check boxes. But the more paperwork there was, the more each check became a mere formality. Of course, there are mistakes we became able to prevent by updating our inspection equipment. But the number only began to fall clearly four years ago, after we made one rule: never blame anyone who reports their own mistake, or a near miss. Only once reports started coming in could we see where the pitfalls were, and mistakes are now less than half what they were."
+    ],
+    "options": [
+     "Adding check boxes to the manuals",
+     "Updating the inspection equipment",
+     "No longer blaming those who report",
+     "Making each person's checks stricter"
+    ]
+   }
+  },
+  "why": {
+   "zh": "失误是在定下「报告的人绝不责备」这条规矩以后才明显减少的，报告多了才看清问题所在。",
+   "en": "Mistakes only began falling clearly after the rule never to blame those who report; the reports revealed the pitfalls."
+  },
+  "wrong": [
+   {
+    "zh": "这是以前的做法，结果确认反而流于形式。",
+    "en": "That was the old approach, and it made checks a formality."
+   },
+   {
+    "zh": "更新仪器只防住了一部分失误，明显减少是在定规矩以后。",
+    "en": "New equipment prevented some mistakes, but the clear drop came after the rule."
+   },
+   null,
+   {
+    "zh": "他说的是确认流于形式，没有说靠严格确认减少了失误。",
+    "en": "He says checks became a formality; stricter checking isn't what worked."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n1-ck-209",
+  "type": "point",
+  "scene": "ラジオで、アナウンサーが酒蔵の社長にインタビューしています。",
+  "question": "社長はどうして生産量を減らしたのですか。",
+  "lines": [
+   [
+    "F",
+    "こちらの酒蔵では、三年前に生産量を半分に減らされたそうですね。やはり、日本酒を飲む人が減っているからでしょうか。"
+   ],
+   [
+    "M",
+    "いえ、うちの場合は、むしろ逆でして。注文は増えていたくらいなんです。"
+   ],
+   [
+    "F",
+    "では、人手が足りなくなったとか。"
+   ],
+   [
+    "M",
+    "職人の数は、昔とほとんど変わっておりません。実は、量を追いかけていた時期に、どうしても、仕込みの一つ一つにまで目が届かなくなっていたんです。出来上がった酒は、売り物としては十分なんですが、父の代の味とは、どこか違う。このまま続けたら、うちの酒がうちの酒でなくなってしまう、そう思いまして。"
+   ],
+   [
+    "F",
+    "売り上げへの影響はいかがでしたか。"
+   ],
+   [
+    "M",
+    "一時はかなり落ちました。ただ、値段を少し上げさせていただいたこともあって、今はほぼ元に戻っています。"
+   ]
+  ],
+  "options": [
+   "目が行き届かなくなっていたから",
+   "日本酒の需要が落ちていたから",
+   "職人の数が足りなくなったから",
+   "値段を上げることにしたから"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "广播里，播音员在采访一家酒坊的老板。",
+    "question": "老板为什么减少了产量？",
+    "lines": [
+     "听说贵酒坊三年前把产量减到了一半。果然是因为喝日本酒的人少了吗？",
+     "不，我们的情况正好相反。订单反而还在增加。",
+     "那是人手不够了？",
+     "酿酒师的人数和以前几乎没变。其实是在追求产量的那段时间，怎么也顾不到每一批酿造的细节了。酿出来的酒作为商品是够格的，但和父亲那一代的味道总有些不一样。我想，再这样下去，我们的酒就不是我们的酒了。",
+     "对销售额有影响吗？",
+     "一度降了不少。不过因为价格稍微上调了一些，现在基本恢复了。"
+    ],
+    "options": [
+     "因为已经照顾不过来了",
+     "因为日本酒的需求下降了",
+     "因为酿酒师不够了",
+     "因为决定涨价"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, an announcer is interviewing the head of a sake brewery.",
+    "question": "Why did the brewery head cut production?",
+    "lines": [
+     "I understand your brewery halved its output three years ago. Is that because fewer people drink sake these days?",
+     "No, in our case it was the opposite. Orders were actually increasing.",
+     "Then perhaps you ran short of workers?",
+     "We have almost as many brewers as ever. Actually, while we were chasing volume, we just couldn't keep an eye on every single batch. The finished sake was good enough to sell, but somehow it wasn't my father's generation's flavour. I thought, if this goes on, our sake will stop being our sake.",
+     "How did it affect sales?",
+     "For a while they fell a lot. But partly because we raised our prices a little, they're nearly back to where they were."
+    ],
+    "options": [
+     "He could no longer oversee every batch",
+     "Demand for sake was falling",
+     "There weren't enough brewers",
+     "He decided to raise prices"
+    ]
+   }
+  },
+  "why": {
+   "zh": "两个猜测都被否定；「実は」追求产量时顾不到每一批酿造，味道和父亲那一代不一样了——品质保不住。",
+   "en": "Both guesses are denied; chasing volume meant he couldn't watch every batch and the flavour slipped."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "他们的订单「むしろ増えていた」。",
+    "en": "Their orders were actually rising."
+   },
+   {
+    "zh": "酿酒师人数「ほとんど変わっておりません」。",
+    "en": "The number of brewers hasn't changed."
+   },
+   {
+    "zh": "涨价是减产以后的事，帮销售额恢复，不是减产的原因。",
+    "en": "Raising prices came afterwards and helped sales recover."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-ck-210",
+  "type": "point",
+  "scene": "会社で女の人と男の人が話しています。",
+  "question": "男の人が大学院に通い始めた理由は何ですか。",
+  "lines": [
+   [
+    "F",
+    "中村さん、夜間の大学院に通い始めたそうですね。仕事と両立させるの、大変じゃないですか。"
+   ],
+   [
+    "M",
+    "大変ですよ。でも、去年のあの件があってからは、どうしてもやらなきゃと思って。"
+   ],
+   [
+    "F",
+    "あの件？"
+   ],
+   [
+    "M",
+    "ほら、地方の工場を統合する計画。僕が試算を担当したでしょう。数字の上ではきれいにまとまったのに、役員会で、地域の雇用への影響をどう評価したのかって聞かれて、何も答えられなかったんです。"
+   ],
+   [
+    "F",
+    "ああ……。"
+   ],
+   [
+    "M",
+    "経理の知識だけで判断できる話じゃなかったんですよね。地域の経済とか、もっと広い目で物事を見られないと、この先も同じことを繰り返すなと。それで、地域経済が専門の先生のゼミに入ったんです。"
+   ],
+   [
+    "F",
+    "てっきり、資格を取るためかと思ってました。"
+   ],
+   [
+    "M",
+    "よく言われます。修了しても、特に資格がもらえるわけじゃないんですけどね。会社の補助も出ないし。"
+   ]
+  ],
+  "options": [
+   "仕事に役立つ資格を取得するため",
+   "物事を広い視野で判断するため",
+   "会社の補助制度を活用するため",
+   "経理の知識をさらに深めるため"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "公司里，一个女人和一个男人在说话。",
+    "question": "男人开始上研究生院的理由是什么？",
+    "lines": [
+     "中村，听说你开始上夜间研究生院了。工作和学习兼顾，很辛苦吧？",
+     "辛苦啊。不过自从去年那件事以后，我觉得无论如何都得学。",
+     "那件事？",
+     "就是合并地方工厂的那个计划。是我负责做的测算吧。数字上算得漂漂亮亮，可是董事会上被问到对当地就业的影响是怎么评估的，我一句也答不上来。",
+     "啊……",
+     "那不是光靠会计知识就能判断的事。我想，如果不能从地区经济之类更宽广的角度看问题，今后还会重蹈覆辙。所以就进了一位专攻地区经济的老师的研讨班。",
+     "我还以为是为了考资格证呢。",
+     "常有人这么说。其实毕业了也不会拿到什么资格证。公司也不给补贴。"
+    ],
+    "options": [
+     "为了取得对工作有用的资格",
+     "为了从宽广的视野判断事物",
+     "为了利用公司的补贴制度",
+     "为了进一步加深会计知识"
+    ]
+   },
+   "en": {
+    "scene": "At a company, a woman and a man are talking.",
+    "question": "Why did the man start graduate school?",
+    "lines": [
+     "Nakamura-san, I hear you've started evening graduate school. Isn't it hard to balance with work?",
+     "It is. But ever since that business last year, I felt I just had to.",
+     "That business?",
+     "You know, the plan to merge the regional factories. I did the projections, remember? On paper the numbers came out neatly, but at the board meeting I was asked how I'd assessed the impact on local jobs, and I couldn't answer at all.",
+     "Ah…",
+     "It wasn't something you could judge with accounting knowledge alone. I felt that unless I could look at things more broadly — the regional economy and so on — I'd keep making the same mistake. So I joined the seminar of a professor who specializes in regional economics.",
+     "I was sure it was to get some qualification.",
+     "People often say that. But finishing it doesn't get me any particular qualification. And the company doesn't subsidize it either."
+    ],
+    "options": [
+     "To get a qualification useful for work",
+     "To be able to judge things from a broader view",
+     "To make use of a company subsidy",
+     "To deepen his accounting knowledge"
+    ]
+   }
+  },
+  "why": {
+   "zh": "董事会上答不出对当地就业的影响，他觉得光靠会计知识不够，要「もっと広い目で物事を見られないと」，所以去学地区经济。",
+   "en": "Unable to answer about local jobs, he realized accounting alone wasn't enough and he needed a broader view."
+  },
+  "wrong": [
+   {
+    "zh": "他说毕业了「特に資格がもらえるわけじゃない」。",
+    "en": "He says the course doesn't lead to any qualification."
+   },
+   null,
+   {
+    "zh": "「会社の補助も出ない」。",
+    "en": "The company doesn't subsidize it."
+   },
+   {
+    "zh": "他说光靠会计知识判断不了，要学的是更广的视角，不是更深的会计。",
+    "en": "He realized accounting alone wasn't enough; he wants breadth, not more accounting."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "half-right"
+  ]
+ },
+ {
+  "id": "n1-ck-211",
+  "type": "point",
+  "scene": "ラジオで、アナウンサーが絵本作家の男の人にインタビューしています。",
+  "question": "男の人は、絵本を作るうえで何が一番難しかったと言っていますか。",
+  "lines": [
+   [
+    "F",
+    "初めての絵本が評判の山田さんですが、作るうえで一番ご苦労されたことは何でしょう。"
+   ],
+   [
+    "M",
+    "うーん、絵は、もともと絵描きですから、三か月かかりましたけど、楽しい時間でした。出版社の方とページ数のことで何度もやり合ったのは、まあ、疲れましたね。"
+   ],
+   [
+    "F",
+    "文章のほうはいかがでしたか。"
+   ],
+   [
+    "M",
+    "文章は、書き直しが二十回を超えました。最初の原稿では、一つの場面に三行も四行も説明を書いていたんです。でも、子どもは絵をじっくり見ますから、絵で伝わることを文で書くと、かえって邪魔になる。削るたびに、これで本当に伝わるのかと不安で、正直、何度も投げ出しかけました。"
+   ],
+   [
+    "F",
+    "お子さんたちの反応はいかがでしたか。"
+   ],
+   [
+    "M",
+    "読み聞かせの会で読んだら、みんな、身を乗り出して聞いてくれて。あれでほっとしましたね。"
+   ]
+  ],
+  "options": [
+   "文章を短く切り詰めること",
+   "時間をかけて絵を描くこと",
+   "ページ数を出版社と決めること",
+   "子どもの反応を確かめること"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "广播里，播音员在采访一位男绘本作家。",
+    "question": "男人说做绘本时最难的是什么？",
+    "lines": [
+     "山田先生的第一本绘本大受好评，创作时您最辛苦的是什么？",
+     "嗯……画嘛，我本来就是画画的，虽然花了三个月，但那是很愉快的时光。和出版社的人为了页数争了好几次，这个嘛，挺累的。",
+     "文字部分怎么样呢？",
+     "文字改了二十多遍。最初的稿子，一个场景我写了三四行说明。可是孩子会仔细看画，画里能传达的东西再用文字写出来，反而碍事。每删一次我都担心这样到底能不能传达出来，说实话，好几次差点放弃。",
+     "孩子们的反应怎么样？",
+     "在读书会上读给他们听，大家都探着身子听。那时我才松了一口气。"
+    ],
+    "options": [
+     "把文字压缩得很短",
+     "花时间画画",
+     "和出版社商定页数",
+     "确认孩子们的反应"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, an announcer is interviewing a male picture-book author.",
+    "question": "What does the man say was hardest about making the picture book?",
+    "lines": [
+     "Yamada-san, your first picture book has been very well received. What was the hardest part of making it?",
+     "Hmm… the pictures — I'm a painter to begin with, so although they took three months, it was an enjoyable time. Going back and forth with the publisher over the page count was, well, tiring.",
+     "And the text?",
+     "I rewrote the text more than twenty times. In my first draft I'd written three or four lines of explanation for each scene. But children look closely at the pictures, so writing out what the pictures already convey just gets in the way. Every time I cut something I worried whether it would still come across, and honestly, I nearly gave up more than once.",
+     "How did children react?",
+     "When I read it at a story time, they all leaned forward to listen. That was a relief."
+    ],
+    "options": [
+     "Cutting the text down",
+     "Spending time on the drawings",
+     "Settling the page count with the publisher",
+     "Checking how children react"
+    ]
+   }
+  },
+  "why": {
+   "zh": "画画是「楽しい時間」，页数之争只是累；删减文字改了二十多遍，「何度も投げ出しかけました」——最难的是删减文字。",
+   "en": "The pictures were enjoyable and the page count merely tiring; cutting the text took over twenty rewrites and nearly made him give up."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "画画虽然花了三个月，但是「楽しい時間でした」。",
+    "en": "The pictures took time but were enjoyable."
+   },
+   {
+    "zh": "页数之争只是「疲れました」，没有到想放弃的程度。",
+    "en": "The page count was tiring, not something that nearly made him quit."
+   },
+   {
+    "zh": "孩子们的反应让他松了口气，不是难处。",
+    "en": "The children's reaction was a relief, not a difficulty."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "half-right"
+  ]
+ },
+ {
+  "id": "n1-ck-212",
+  "type": "point",
+  "scene": "ラジオで、アナウンサーが絵画の修復家の女の人にインタビューしています。",
+  "question": "女の人は、修復の仕事で何を一番大事にしていると言っていますか。",
+  "lines": [
+   [
+    "M",
+    "古い絵画の修復に三十年携わってこられた大西さんに伺います。修復のお仕事で、何を一番大事にしていらっしゃいますか。"
+   ],
+   [
+    "F",
+    "そうですね……。描かれた当時の姿に近づけることは、もちろん目指します。作業に何年もかかることもありますから、急がないことも大切です。ただ、駆け出しのころに、百年ほど前に修復された絵を担当したことがありまして。当時の人がよかれと思って塗った絵の具が、どうやっても取れなかったんです。"
+   ],
+   [
+    "M",
+    "取れなかった……。"
+   ],
+   [
+    "F",
+    "ええ。修復の技術は日々進歩しています。今の私が最善だと思ってしたことも、五十年後には間違いだったと分かるかもしれない。ですから、私は、絵の具も接着剤も、後から取り除けるものしか使いません。"
+   ],
+   [
+    "M",
+    "見た目を美しくすることよりも、ですか。"
+   ],
+   [
+    "F",
+    "美しく見せたいという気持ちは、もちろんあります。でも、それで作品そのものを変えてしまっては、意味がありませんから。"
+   ]
+  ],
+  "options": [
+   "描かれた当時の姿に近づけること",
+   "時間をかけて丁寧に作業すること",
+   "見た目を美しく仕上げておくこと",
+   "後の人がやり直せるようにすること"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "广播里，播音员在采访一位女绘画修复师。",
+    "question": "女人说修复工作中她最重视什么？",
+    "lines": [
+     "请教从事古画修复三十年的大西女士。在修复工作中，您最重视什么？",
+     "这个嘛……当然会以接近画作当初的样子为目标。工作有时要花好几年，所以不着急也很重要。不过，我刚入行的时候，负责过一幅大约一百年前修复过的画。当时的人好心涂上的颜料，怎么也去不掉。",
+     "去不掉……",
+     "是的。修复技术每天都在进步。现在的我认为最好的做法，五十年后也许会被发现是错的。所以，颜料也好，粘合剂也好，我只用以后能去除的。",
+     "比让外观好看更重要吗？",
+     "想让它看起来美，这种心情当然有。不过，如果因此改变了作品本身，那就没有意义了。"
+    ],
+    "options": [
+     "接近画作当初的样子",
+     "花时间细心作业",
+     "把外观修得漂亮",
+     "让后人能够重新来过"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, an announcer is interviewing a female painting restorer.",
+    "question": "What does the woman say she values most in restoration work?",
+    "lines": [
+     "I'd like to ask Onishi-san, who has restored old paintings for thirty years: what do you value most in your work?",
+     "Let me see… Of course I aim to bring a work closer to how it looked when it was painted. And since the work can take years, not rushing matters too. But when I was starting out, I was given a painting that had been restored about a hundred years earlier. The paint someone had applied back then with the best intentions simply wouldn't come off, whatever I tried.",
+     "Wouldn't come off…",
+     "Yes. Restoration techniques advance every day. Something I do now believing it's best may turn out, fifty years on, to have been a mistake. So I only use paints and adhesives that can be removed later.",
+     "More than making it look beautiful?",
+     "Of course I want it to look beautiful. But if that means changing the work itself, there's no point."
+    ],
+    "options": [
+     "Bringing it close to how it first looked",
+     "Working slowly and carefully",
+     "Making it look beautiful",
+     "Letting later generations redo the work"
+    ]
+   }
+  },
+  "why": {
+   "zh": "从百年前去不掉的颜料的经历出发，她只用以后能去除的材料，让后人发现更好的方法时可以重来。",
+   "en": "From the century-old paint she couldn't remove, she now uses only removable materials so later restorers can redo her work."
+  },
+  "wrong": [
+   {
+    "zh": "这是「もちろん目指します」的目标，后面讲的经历说的是另一件事。",
+    "en": "It's an aim she takes for granted, not what she singles out."
+   },
+   {
+    "zh": "不着急「も大切」，是附带的。",
+    "en": "Not rushing matters too, but it's secondary."
+   },
+   {
+    "zh": "她说为了好看而改变作品「意味がありません」。",
+    "en": "She says changing the work to look beautiful defeats the purpose."
+   },
+   null
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "half-right"
+  ]
+ },
+ {
+  "id": "n1-ck-213",
+  "type": "point",
+  "scene": "会社で男の人と女の人が話しています。",
+  "question": "投資会社が出資を見送ったのはどうしてですか。",
+  "lines": [
+   [
+    "M",
+    "例の投資会社との面談、どうだった？"
+   ],
+   [
+    "F",
+    "今回は見送りだそうです。製品の技術は、すごく評価してくださったんですけど。"
+   ],
+   [
+    "M",
+    "そうか。やっぱり、売り上げがまだ小さいのがネックだったのかな。"
+   ],
+   [
+    "F",
+    "それは、この段階なら気にしないって、はっきりおっしゃってました。ただ、何度も聞かれたのが、今の五人のうち、一人でも抜けたらどうなるのか、ということで。"
+   ],
+   [
+    "M",
+    "ああ。開発は、ほとんど木下さん一人で回してるからな。"
+   ],
+   [
+    "F",
+    "ええ。それに、競合が出てきたらどうするのかとも聞かれましたけど、そこは特許の話をしたら納得してくださったみたいで。最後に、開発の体制を厚くしてから、またいらしてくださいって。"
+   ]
+  ],
+  "options": [
+   "売り上げの規模がまだ小さいから",
+   "開発を一人に依存しているから",
+   "製品の技術に不安があったから",
+   "競合への備えが足りないから"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "公司里，一个男人和一个女人在说话。",
+    "question": "投资公司为什么放弃了投资？",
+    "lines": [
+     "和那家投资公司的面谈怎么样了？",
+     "说这次先不投了。产品的技术他们倒是评价很高。",
+     "是吗。果然还是销售额太小是个障碍吧。",
+     "那个他们明确说过，在这个阶段不在意。不过被反复问到的是，现在五个人里哪怕走了一个，会怎么样。",
+     "啊。开发几乎是木下一个人在撑着啊。",
+     "是啊。另外也被问到出现竞争对手怎么办，不过讲了专利的事以后，他们好像就接受了。最后说，等把开发团队充实了再来吧。"
+    ],
+    "options": [
+     "因为销售规模还小",
+     "因为开发依赖一个人",
+     "因为对产品技术不放心",
+     "因为对竞争对手准备不足"
+    ]
+   },
+   "en": {
+    "scene": "At a company, a man and a woman are talking.",
+    "question": "Why did the investment firm decide not to invest?",
+    "lines": [
+     "How did the meeting with that investment firm go?",
+     "They're passing this time. Though they thought very highly of the product's technology.",
+     "I see. So our sales still being small was the sticking point, I suppose.",
+     "They said clearly they don't mind that at this stage. But what they asked again and again was what would happen if even one of the five of us left.",
+     "Ah. Development is pretty much all Kinoshita on his own.",
+     "Right. They also asked what we'd do if competitors appeared, but once I explained our patents they seemed satisfied. At the end they said, come back once you've built up the development team."
+    ],
+    "options": [
+     "Sales are still small",
+     "Development depends on one person",
+     "They had doubts about the technology",
+     "They aren't prepared for competitors"
+    ]
+   }
+  },
+  "why": {
+   "zh": "反复被问「一人でも抜けたらどうなるのか」，开发几乎靠木下一个人，最后对方说「開発の体制を厚くしてから」再来——从这些可以推断原因。",
+   "en": "They kept asking what happens if one person leaves, development rests on Kinoshita, and they said to come back with a stronger team — so that's the reason."
+  },
+  "wrong": [
+   {
+    "zh": "销售额小他们明确说「この段階なら気にしない」。",
+    "en": "They said small sales don't matter at this stage."
+   },
+   null,
+   {
+    "zh": "技术他们「すごく評価して」。",
+    "en": "They rated the technology very highly."
+   },
+   {
+    "zh": "竞争的问题讲了专利以后对方「納得してくださった」。",
+    "en": "The patents satisfied them on competition."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-ck-214",
+  "type": "point",
+  "scene": "環境調査の会社で女の人と男の人が話しています。",
+  "question": "女の人は、測定の値が上がった原因は何だと言っていますか。",
+  "lines": [
+   [
+    "F",
+    "川の水温の測定データ、見ました？　上流の地点だけ、夏の昼過ぎになると、毎日、急に二度ぐらい上がってるんです。"
+   ],
+   [
+    "M",
+    "ああ、気になってた。センサーの故障じゃない？"
+   ],
+   [
+    "F",
+    "私もそう思って、別のセンサーを並べて比べてみたんですけど、どちらも同じ値で。機械は正常なんです。"
+   ],
+   [
+    "M",
+    "じゃあ、本当に水温が上がってるってこと？　近くに工場とか、あったっけ。"
+   ],
+   [
+    "F",
+    "いえ、排水が流れ込むような施設はありません。それで、現地の写真を見返してたら、センサーを沈めた場所が、岸近くの浅いところだったんですよ。午後になると、ちょうど日が当たる。"
+   ],
+   [
+    "M",
+    "そういうことか。じゃあ、そこだけ川全体の水温を表してないんだな。"
+   ],
+   [
+    "F",
+    "ええ。来月、流れの真ん中に付け替えます。それまでのデータは、参考扱いにするしかないですね。"
+   ]
+  ],
+  "options": [
+   "センサーが故障していたこと",
+   "工場の排水が流れ込んだこと",
+   "機器の設置場所が不適切だったこと",
+   "二つのセンサーの値が違うこと"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "环境调查公司里，一个女人和一个男人在说话。",
+    "question": "女人说测量值升高的原因是什么？",
+    "lines": [
+     "河水水温的测量数据你看了吗？只有上游那个点，夏天一过中午，每天都会突然升高两度左右。",
+     "啊，我也在意这个。是传感器坏了吧？",
+     "我也这么想，就放了另一个传感器并排比较，结果两个数值一样。仪器是正常的。",
+     "那就是水温真的升高了？附近有工厂什么的吗？",
+     "没有，没有会排水进来的设施。所以我翻看了现场的照片，发现传感器沉放的位置是靠岸的浅水处。一到下午，正好被太阳晒到。",
+     "原来是这样。那就是只有那里代表不了整条河的水温。",
+     "是的。下个月换到河流中央去。在那之前的数据只能作为参考了。"
+    ],
+    "options": [
+     "传感器坏了",
+     "工厂的废水流了进来",
+     "仪器的安装位置不合适",
+     "两个传感器的数值不同"
+    ]
+   },
+   "en": {
+    "scene": "At an environmental survey company, a woman and a man are talking.",
+    "question": "What does the woman say caused the readings to rise?",
+    "lines": [
+     "Have you seen the river temperature data? At the upstream point only, every summer afternoon it suddenly jumps by about two degrees.",
+     "Yes, I'd noticed. Isn't the sensor faulty?",
+     "I thought so too, so I put another sensor beside it to compare, but both read the same. The equipment is working fine.",
+     "So the water really is getting warmer? Is there a factory or something nearby?",
+     "No, there's nothing that discharges into it. So I went back over the site photos, and the sensor was sunk in the shallows near the bank. In the afternoon the sun hits exactly there.",
+     "So that's it. Then that point alone doesn't represent the river's temperature as a whole.",
+     "Right. Next month I'll move it to the middle of the stream. The data up to then can only be treated as reference."
+    ],
+    "options": [
+     "The sensor was faulty",
+     "Factory waste water was flowing in",
+     "The device was placed in the wrong spot",
+     "The two sensors gave different readings"
+    ]
+   }
+  },
+  "why": {
+   "zh": "仪器正常，也没有排水设施；传感器放在靠岸的浅水处，下午被太阳晒——是安装位置的问题。",
+   "en": "The equipment works and nothing discharges there; the sensor sits in sunlit shallows — it's a placement problem."
+  },
+  "wrong": [
+   {
+    "zh": "和另一个传感器比较后数值一样，「機械は正常」。",
+    "en": "Compared with a second sensor, it reads the same — it works."
+   },
+   {
+    "zh": "附近没有会排水进来的设施。",
+    "en": "There's no facility discharging into the river."
+   },
+   null,
+   {
+    "zh": "恰恰相反，两个传感器「同じ値」。",
+    "en": "The opposite: both sensors read the same."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-ck-215",
+  "type": "point",
+  "scene": "ゲーム会社で女の人と男の人が話しています。",
+  "question": "男の人は、十年前のゲームが再び売れている一番の理由は何だと考えていますか。",
+  "lines": [
+   [
+    "F",
+    "十年前に出したパズルゲーム、今月になって急にダウンロードが伸びてるんだって？"
+   ],
+   [
+    "M",
+    "そうなんです。最初は、先月値下げしたからだと思ってたんですけど、値下げの前の週から、もう伸び始めてたんですよ。"
+   ],
+   [
+    "F",
+    "へえ。じゃあ、何だろう。"
+   ],
+   [
+    "M",
+    "調べてみたら、ある小学校の先生が、授業で使ってみたら子どもたちが夢中になったって、ネットに書いてたんです。それが、教育関係の人たちの間で広まったみたいで。実際、買っている人の年齢を見ると、三十代と四十代が急に増えてるんです。"
+   ],
+   [
+    "F",
+    "親が子どものために買ってるってことか。"
+   ],
+   [
+    "M",
+    "ええ、たぶん。続編を望む声も出てきてますけど、そっちはまだ様子見ですね。"
+   ],
+   [
+    "F",
+    "昔遊んでた人が、懐かしくなって買ってるのかと思ってた。"
+   ],
+   [
+    "M",
+    "それなら、二十代の後半が増えるはずなんですけどね。"
+   ]
+  ],
+  "options": [
+   "先月、価格を引き下げたから",
+   "続編の発売が決まったから",
+   "昔の利用者が懐かしんだから",
+   "教育の場で評判になったから"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "游戏公司里，一个女人和一个男人在说话。",
+    "question": "男人认为十年前的游戏又卖起来的最主要原因是什么？",
+    "lines": [
+     "十年前出的那款解谜游戏，听说这个月下载量突然涨起来了？",
+     "是啊。我一开始以为是因为上个月降价了，结果降价的前一周就已经开始涨了。",
+     "哦？那是什么呢？",
+     "查了一下，有位小学老师在网上写，说在课堂上用了一下，孩子们都入迷了。好像在教育界的人之间传开了。实际上一看购买者的年龄，三四十岁的人突然多了起来。",
+     "就是说是家长给孩子买的。",
+     "是的，大概是。也有人希望出续作，不过那个还在观望。",
+     "我还以为是以前玩过的人怀旧才买的。",
+     "那样的话，应该是二十来岁后半的人增加才对。"
+    ],
+    "options": [
+     "因为上个月降了价",
+     "因为决定推出续作",
+     "因为以前的玩家怀旧",
+     "因为在教育界有了好评"
+    ]
+   },
+   "en": {
+    "scene": "At a game company, a woman and a man are talking.",
+    "question": "What does the man think is the main reason a ten-year-old game is selling again?",
+    "lines": [
+     "I hear downloads of that puzzle game we released ten years ago have suddenly shot up this month?",
+     "That's right. At first I assumed it was because we cut the price last month, but it had already started rising the week before the price cut.",
+     "Huh. Then what is it?",
+     "When I looked into it, a primary school teacher had written online that the kids got hooked when they used it in class. It seems to have spread among people in education. And looking at buyers' ages, people in their thirties and forties have suddenly increased.",
+     "So parents are buying it for their kids.",
+     "Yes, probably. There are calls for a sequel too, but we're still waiting to see on that.",
+     "I thought it was people who played it back then buying it out of nostalgia.",
+     "If that were it, you'd expect people in their late twenties to go up."
+    ],
+    "options": [
+     "The price was cut last month",
+     "A sequel has been announced",
+     "Former players got nostalgic",
+     "It became popular in education"
+    ]
+   }
+  },
+  "why": {
+   "zh": "降价前一周就开始涨了；小学老师在网上写了课堂上用的事，在教育界传开，买的多是三四十岁的家长。",
+   "en": "Sales rose before the price cut; a teacher's post spread among educators, and buyers are mostly parents in their 30s and 40s."
+  },
+  "wrong": [
+   {
+    "zh": "降价「前の週から、もう伸び始めてた」，不是原因。",
+    "en": "Downloads rose before the price cut."
+   },
+   {
+    "zh": "只是有人希望出续作，公司「まだ様子見」，并没有决定。",
+    "en": "There are only calls for a sequel; nothing is decided."
+   },
+   {
+    "zh": "怀旧的话应该是二十多岁的人增加，实际增加的是三四十岁。",
+    "en": "Nostalgia would mean buyers in their late 20s; it's 30s and 40s."
+   },
+   null
+  ],
+  "traps": [
+   "denied-guess",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n1-ck-216",
+  "type": "point",
+  "scene": "町役場で、町の職員の男の人と観光コンサルタントの女の人が話しています。",
+  "question": "女の人は、この町の観光の一番の課題は何だと考えていますか。",
+  "lines": [
+   [
+    "M",
+    "調査、お疲れさまでした。結果はいかがでしたか。"
+   ],
+   [
+    "F",
+    "昼間のお客様は、十分来ていらっしゃいます。ただ、皆さん、温泉と滝を見たら、夕方には隣の市のホテルに移ってしまうんです。"
+   ],
+   [
+    "M",
+    "やはり、宿が少ないからでしょうか。"
+   ],
+   [
+    "F",
+    "それが、町の旅館は、平日でも半分以上空いているんです。旅館に泊まった方に聞いたら、「夕食のあとは、何もすることがなかった」と。町の飲食店も、ほとんどが六時には閉まってしまいますし。"
+   ],
+   [
+    "M",
+    "交通の便が悪いという声も、アンケートには多かったんですが。"
+   ],
+   [
+    "F",
+    "確かに駅からのバスは少ないですが、いらっしゃる方の八割は車ですから。宣伝が足りないというご意見もありましたけど、昼間の人出を見る限り、町の名前は十分知られていると思います。"
+   ]
+  ],
+  "options": [
+   "夜に過ごせる場所や催しがないこと",
+   "町内の宿泊施設が少ないこと",
+   "駅からのバスの便が少ないこと",
+   "町の魅力の宣伝が足りないこと"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "镇政府里，镇上的男职员和一位女旅游顾问在说话。",
+    "question": "女人认为这个镇的旅游最大的课题是什么？",
+    "lines": [
+     "调查辛苦了。结果怎么样？",
+     "白天的游客来得很多。不过，大家看完温泉和瀑布，傍晚就转到邻市的酒店去了。",
+     "果然是因为住宿设施少吧。",
+     "问题是，镇上的旅馆平日也有一半以上空着。问了住过旅馆的客人，说「吃完晚饭就没什么事可做了」。镇上的餐饮店也几乎六点就关门了。",
+     "问卷里也有很多人说交通不方便。",
+     "确实从车站来的巴士很少，不过来的人八成是开车的。也有意见说宣传不够，可是从白天的人流看，镇子的名字已经足够有名了。"
+    ],
+    "options": [
+     "晚上没有可以消遣的地方或活动",
+     "镇内住宿设施少",
+     "从车站出发的巴士班次少",
+     "镇子魅力的宣传不够"
+    ]
+   },
+   "en": {
+    "scene": "At a town hall, a male town official and a female tourism consultant are talking.",
+    "question": "What does the woman think is the town's biggest tourism problem?",
+    "lines": [
+     "Thank you for the survey. How did it turn out?",
+     "Plenty of people come during the day. But once they've seen the hot springs and the waterfall, they move on to hotels in the next city by evening.",
+     "Is it because there are too few places to stay?",
+     "Actually, the town's inns are more than half empty even on weekdays. When I asked guests who stayed there, they said, 'After dinner there was nothing to do.' And most of the town's restaurants close by six.",
+     "Many survey answers also said transport is poor.",
+     "It's true there are few buses from the station, but eighty percent of visitors come by car. Some also said there isn't enough publicity, but judging by the daytime crowds, the town is well enough known."
+    ],
+    "options": [
+     "There's nowhere to go and nothing on at night",
+     "There are few places to stay in town",
+     "There are few buses from the station",
+     "The town isn't publicized enough"
+    ]
+   }
+  },
+  "why": {
+   "zh": "游客傍晚就去邻市住；旅馆有空房，住过的人说「夕食のあとは、何もすることがなかった」，饭店六点就关门——问题在晚上没有可去的地方。",
+   "en": "Visitors leave by evening although the inns have room; guests say there's nothing to do after dinner and restaurants close at six — the town has nothing for the night."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "旅馆平日也有一半以上空着，不是数量的问题。",
+    "en": "The inns are more than half empty, so numbers aren't the issue."
+   },
+   {
+    "zh": "八成游客开车来，巴士少影响不大。",
+    "en": "Most visitors drive, so the buses matter little."
+   },
+   {
+    "zh": "从白天的人流看，镇子已经足够有名。",
+    "en": "Daytime crowds show the town is well enough known."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "half-right"
+  ]
+ }
+]

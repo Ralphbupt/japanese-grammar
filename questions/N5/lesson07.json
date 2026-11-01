@@ -1,0 +1,510 @@
+[
+  {
+    "id": "n5-l07-001",
+    "type": "bunpou",
+    "refs": [
+      "lesson07#1"
+    ],
+    "difficulty": 1,
+    "stem": "きのう 友だちと プールで（　）。",
+    "options": [
+      "およいだ",
+      "およぐ",
+      "およいで",
+      "およがない"
+    ],
+    "okj": [
+      "泳いだ",
+      "泳ぐ",
+      "泳いで",
+      "泳がない"
+    ],
+    "answer": 0,
+    "full": "きのう 友だちと プールで およいだ。",
+    "kj": "昨日友達とプールで泳いだ。",
+    "tr": {
+      "zh": "昨天和朋友在游泳池游了泳。",
+      "en": "Yesterday I swam in the pool with a friend."
+    },
+    "why": {
+      "zh": "「きのう」是过去。た形和て形变法一样：泳ぐ→泳いで→泳いだ。",
+      "en": "「きのう」 makes it past. The た-form follows the て-form: 泳ぐ → 泳いで → 泳いだ."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "原形「泳ぐ」是现在/将来，和「きのう」不符。",
+        "en": "The dictionary form 「泳ぐ」 is non-past; 「きのう」 needs the past."
+      },
+      {
+        "zh": "「泳いで」是て形，不能用来结束一句讲过去的话。",
+        "en": "「泳いで」 is the て-form; it can't end a sentence about yesterday."
+      },
+      {
+        "zh": "「泳がない」是现在的否定“不游”，和「きのう」不符，也和“和朋友在泳池”的语境不合。",
+        "en": "「泳がない」 is non-past negative; it doesn't fit 「きのう」 or the pool outing."
+      }
+    ]
+  },
+  {
+    "id": "n5-l07-002",
+    "type": "bunpou",
+    "refs": [
+      "lesson07#1"
+    ],
+    "difficulty": 1,
+    "stem": "これは 先週 デパートで（　）かばんです。",
+    "options": [
+      "買った",
+      "買って",
+      "買う",
+      "買います"
+    ],
+    "answer": 0,
+    "full": "これは 先週 デパートで 買った かばんです。",
+    "kj": "これは先週デパートで買ったかばんです。",
+    "tr": {
+      "zh": "这是上周在百货商店买的包。",
+      "en": "This is the bag I bought at the department store last week."
+    },
+    "why": {
+      "zh": "「先週」是过去，修饰名词「かばん」要用简体过去形：買った。",
+      "en": "「先週」 is past, so the verb modifying 「かばん」 is the plain past: 買った."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "て形不能直接修饰名词。",
+        "en": "The て-form can't modify a noun."
+      },
+      {
+        "zh": "「買う」是现在/将来，和「先週」矛盾。",
+        "en": "「買う」 is non-past and clashes with 「先週」."
+      },
+      {
+        "zh": "修饰名词「かばん」要用简体，不能用「買います」；而且是上周的事，要用过去。",
+        "en": "A verb before 「かばん」 must be plain, not 「買います」 — and last week needs the past."
+      }
+    ]
+  },
+  {
+    "id": "n5-l07-003",
+    "type": "narabe",
+    "refs": [
+      "lesson07#1"
+    ],
+    "difficulty": 2,
+    "stem": "きのう 母が [_] [★] [_] [_] おいしかったです。",
+    "options": [
+      "とても",
+      "りょうり",
+      "つくった",
+      "は"
+    ],
+    "okj": [
+      null,
+      "料理",
+      "作った",
+      null
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "きのう 母が つくった りょうりは とても おいしかったです。",
+    "kj": "昨日母が作った料理はとてもおいしかったです。",
+    "tr": {
+      "zh": "昨天妈妈做的菜非常好吃。",
+      "en": "The food my mother made yesterday was very good."
+    },
+    "why": {
+      "zh": "た形直接修饰名词：「母が作った料理」，再接「は」和「とても おいしかった」。★ 是第二格「料理」。",
+      "en": "The た-form modifies the noun directly — 「母が作った料理」 — then 「は」 and 「とても おいしかった」. The ★ is 「料理」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l07-004",
+    "type": "bunpou",
+    "refs": [
+      "lesson07#2"
+    ],
+    "difficulty": 1,
+    "stem": "A「ふじさんに のぼった（　）か。」\nB「はい、いちど あります。」",
+    "options": [
+      "ことが あります",
+      "ことが います",
+      "ばかりです",
+      "り します"
+    ],
+    "answer": 0,
+    "full": "A「ふじさんに のぼった ことが ありますか。」 B「はい、いちど あります。」",
+    "kj": "A「富士山に登ったことがありますか。」\nB「はい、一度あります。」",
+    "tr": {
+      "zh": "A：你爬过富士山吗？ B：是的，爬过一次。",
+      "en": "A: Have you ever climbed Mt. Fuji? B: Yes, once."
+    },
+    "why": {
+      "zh": "B 用「一度 あります」回答，问的是经验：「〜たことがありますか」。",
+      "en": "B answers 「一度 あります」, so A is asking about experience: 「〜たことがありますか」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「こと」是事物，用「ある」，不用「いる」。",
+        "en": "「こと」 is a thing and takes 「ある」, not 「いる」."
+      },
+      {
+        "zh": "「〜たばかりですか」是问“刚爬完吗”，和「一度あります」对不上。",
+        "en": "「〜たばかりですか」 asks \"did you just climb it?\" — 「一度あります」 doesn't answer that."
+      },
+      {
+        "zh": "「〜たりしますか」是列举动作，一般要两个，也和「一度あります」对不上。",
+        "en": "「〜たりしますか」 lists activities and doesn't match 「一度あります」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l07-005",
+    "type": "bunpou",
+    "refs": [
+      "lesson07#2"
+    ],
+    "difficulty": 1,
+    "stem": "わたしは まだ いちども かいがいへ 行った（　）。",
+    "options": [
+      "ことが ありません",
+      "ことが あります",
+      "ばかりです",
+      "ことです"
+    ],
+    "answer": 0,
+    "full": "わたしは まだ いちども かいがいへ 行った ことが ありません。",
+    "kj": "私はまだ一度も海外へ行ったことがありません。",
+    "tr": {
+      "zh": "我还一次都没出过国。",
+      "en": "I've never been abroad, not even once."
+    },
+    "why": {
+      "zh": "「一度も」后面要接否定，“一次都没……过”用「〜たことがありません」。",
+      "en": "「一度も」 requires a negative: \"never once\" is 「〜たことがありません」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「一度も」要接否定，不能接肯定的「あります」。",
+        "en": "「一度も」 needs a negative, not 「あります」."
+      },
+      {
+        "zh": "「〜たばかり」是“刚刚做完”，和「まだ一度も」矛盾。",
+        "en": "「〜たばかり」 (just did) contradicts 「まだ一度も」."
+      },
+      {
+        "zh": "「〜たことです」不表示经验，句子也不成立。",
+        "en": "「〜たことです」 doesn't express experience and doesn't work here."
+      }
+    ]
+  },
+  {
+    "id": "n5-l07-006",
+    "type": "narabe",
+    "refs": [
+      "lesson07#2"
+    ],
+    "difficulty": 1,
+    "stem": "A「なっとうを [_] [_] [★] [_] か。」\nB「いいえ、まだ ありません。」",
+    "options": [
+      "が",
+      "あります",
+      "食べた",
+      "こと"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "A「なっとうを 食べた ことが ありますか。」 B「いいえ、まだ ありません。」",
+    "kj": "A「納豆を食べたことがありますか。」\nB「いいえ、まだありません。」",
+    "tr": {
+      "zh": "A：你吃过纳豆吗？ B：不，还没吃过。",
+      "en": "A: Have you ever eaten natto? B: No, not yet."
+    },
+    "why": {
+      "zh": "经验：た形＋ことがある——食べた こと が あります。★ 是第三格「が」。",
+      "en": "Experience: た-form ＋ ことがある — 食べた こと が あります. The ★ is 「が」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l07-007",
+    "type": "bunpou",
+    "refs": [
+      "lesson07#3"
+    ],
+    "difficulty": 1,
+    "stem": "休みの 日は 本を 読んだり、えいがを（　）します。",
+    "options": [
+      "見たり",
+      "見て",
+      "見る",
+      "見ました"
+    ],
+    "answer": 0,
+    "full": "休みの 日は 本を 読んだり、えいがを 見たり します。",
+    "kj": "休みの日は本を読んだり、映画を見たりします。",
+    "tr": {
+      "zh": "休息日看看书、看看电影什么的。",
+      "en": "On my days off I do things like read books and watch movies."
+    },
+    "why": {
+      "zh": "前面是「読んだり」，后面要配成对的「〜たり」，最后接「します」：見たり します。",
+      "en": "「読んだり」 needs a matching 「〜たり」 before 「します」: 見たり します."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「見てします」不成立；「〜たり」要成对使用。",
+        "en": "「見てします」 isn't Japanese; 「〜たり」 comes in pairs."
+      },
+      {
+        "zh": "辞书形不能直接接「します」。",
+        "en": "The dictionary form can't be followed by 「します」."
+      },
+      {
+        "zh": "「見ました」后面不能再接「します」。",
+        "en": "「見ました」 can't be followed by 「します」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l07-008",
+    "type": "bunpou",
+    "refs": [
+      "lesson07#3",
+      "lesson08#1"
+    ],
+    "difficulty": 2,
+    "stem": "さいきんは 天気が あつかったり、（　）します。",
+    "options": [
+      "さむかったり",
+      "さむくて",
+      "さむい",
+      "さむかった"
+    ],
+    "okj": [
+      "寒かったり",
+      "寒くて",
+      "寒い",
+      "寒かった"
+    ],
+    "answer": 0,
+    "full": "さいきんは 天気が あつかったり、さむかったり します。",
+    "kj": "最近は天気が暑かったり、寒かったりします。",
+    "tr": {
+      "zh": "最近天气忽冷忽热。",
+      "en": "Lately the weather keeps going between hot and cold."
+    },
+    "why": {
+      "zh": "い形容词的たり形是「い→かったり」，和前面的「暑かったり」一样：寒かったり。",
+      "en": "An い-adjective's たり-form is い → かったり, like 「暑かったり」: 寒かったり."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜たり」要成对：前面是「暑かったり」，后面也要用「〜たり」，不能用て形。",
+        "en": "「〜たり」 comes in pairs: after 「暑かったり」 the second item also needs 「〜たり」, not the て-form."
+      },
+      {
+        "zh": "「〜たり」要成对：前面是「暑かったり」，后面也要用「〜たり」，不能用原形。",
+        "en": "「〜たり」 comes in pairs: after 「暑かったり」 the second item needs 「〜たり」 too, not the plain form."
+      },
+      {
+        "zh": "少了「り」：「暑かったり、寒かったり します」要两边都用「〜たり」。",
+        "en": "It's missing 「り」: both items need 「〜たり」 before 「します」."
+      }
+    ]
+  },
+  {
+    "id": "n5-l07-009",
+    "type": "narabe",
+    "refs": [
+      "lesson07#3"
+    ],
+    "difficulty": 2,
+    "stem": "しゅうまつは 友だちと あそんだり、[_] [_] [★] [_] しました。",
+    "options": [
+      "かいもの",
+      "デパート",
+      "したり",
+      "で"
+    ],
+    "okj": [
+      "買い物",
+      null,
+      null,
+      null
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "しゅうまつは 友だちと あそんだり、デパートで かいものしたり しました。",
+    "kj": "週末は友達と遊んだり、デパートで買い物したりしました。",
+    "tr": {
+      "zh": "周末和朋友玩了玩，在百货商店购物了什么的。",
+      "en": "On the weekend I hung out with friends, went shopping at a department store, and so on."
+    },
+    "why": {
+      "zh": "地点「デパートで」在前，然后「買い物したり」，和前面的「遊んだり」成对，最后「しました」。★ 是第三格「買い物」。",
+      "en": "The place 「デパートで」 comes first, then 「買い物したり」 to pair with 「遊んだり」, then 「しました」. The ★ is 「買い物」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-l07-010",
+    "type": "bunpou",
+    "refs": [
+      "lesson07#4"
+    ],
+    "difficulty": 2,
+    "stem": "さっき ひるごはんを 食べた（　）ですが、もう おなかが すきました。",
+    "options": [
+      "ばかり",
+      "こと",
+      "り",
+      "から"
+    ],
+    "answer": 0,
+    "full": "さっき ひるごはんを 食べた ばかりですが、もう おなかが すきました。",
+    "kj": "さっき昼ご飯を食べたばかりですが、もうお腹が空きました。",
+    "tr": {
+      "zh": "刚刚才吃完午饭，肚子又饿了。",
+      "en": "I only just ate lunch, but I'm already hungry."
+    },
+    "why": {
+      "zh": "「さっき」和“却又饿了”说明是“刚刚吃完”，用「〜たばかり」。",
+      "en": "「さっき」 and \"already hungry\" point to \"just ate\": 「〜たばかり」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「食べたことです」不成立；「こと」表示经验时要接「がある」。",
+        "en": "「食べたことです」 doesn't work; experience needs 「ことがある」."
+      },
+      {
+        "zh": "「〜たり」要成对并接「する」，不能直接接「です」。",
+        "en": "「〜たり」 comes in pairs with 「する」 and can't take 「です」 directly."
+      },
+      {
+        "zh": "「食べたからです」是“因为吃了”，后面接“可是已经饿了”意思不通。",
+        "en": "「食べたからです」 means \"it's because I ate\", which makes no sense before \"but I'm already hungry\"."
+      }
+    ]
+  },
+  {
+    "id": "n5-l07-011",
+    "type": "bunpou",
+    "refs": [
+      "lesson07#4"
+    ],
+    "difficulty": 2,
+    "stem": "A「その 本、もう 読みましたか。」\nB「いいえ、きのう（　）ばかりですから、まだ 読んで いません。」",
+    "options": [
+      "買った",
+      "買って",
+      "買う",
+      "買い"
+    ],
+    "answer": 0,
+    "full": "A「その 本、もう 読みましたか。」 B「いいえ、きのう 買った ばかりですから、まだ 読んで いません。」",
+    "kj": "A「その本、もう読みましたか。」\nB「いいえ、昨日買ったばかりですから、まだ読んでいません。」",
+    "tr": {
+      "zh": "A：那本书你已经看了吗？ B：没有，昨天刚买，还没看。",
+      "en": "A: Have you read that book yet? B: No, I only bought it yesterday, so I haven't read it yet."
+    },
+    "why": {
+      "zh": "“刚刚做完”是「た形＋ばかり」：買った ばかり。",
+      "en": "\"Just did\" is た-form ＋ ばかり: 買った ばかり."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ばかり」接た形，不接て形。",
+        "en": "「ばかり」 follows the た-form, not the て-form."
+      },
+      {
+        "zh": "辞书形不表示“刚做完”，也和「きのう」矛盾。",
+        "en": "The dictionary form doesn't mean \"just did\" and clashes with 「きのう」."
+      },
+      {
+        "zh": "ます形词干不能直接接「ばかり」表示刚做完。",
+        "en": "The ます-stem doesn't take 「ばかり」 to mean \"just did\"."
+      }
+    ]
+  },
+  {
+    "id": "n5-l07-012",
+    "type": "narabe",
+    "refs": [
+      "lesson07#4"
+    ],
+    "difficulty": 2,
+    "stem": "[_] [★] [_] [_]、まだ ねむいです。",
+    "options": [
+      "ばかり",
+      "おきた",
+      "今",
+      "だから"
+    ],
+    "okj": [
+      null,
+      "起きた",
+      null,
+      null
+    ],
+    "order": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "full": "今 おきた ばかりだから、まだ ねむいです。",
+    "kj": "今起きたばかりだから、まだ眠いです。",
+    "tr": {
+      "zh": "刚起床，所以还很困。",
+      "en": "I just got up, so I'm still sleepy."
+    },
+    "why": {
+      "zh": "「今」放在最前，然后「起きた＋ばかり」，再接「だから」说明原因。★ 在第二格，是「起きた」。",
+      "en": "「今」 comes first, then 起きた ＋ ばかり, then 「だから」 for the reason. The ★ is the second slot: 「起きた」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "rev": 2
+  }
+]

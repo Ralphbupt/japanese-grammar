@@ -1,0 +1,621 @@
+[
+ {
+  "id": "n1-m1-ck-201",
+  "type": "point",
+  "scene": "ラジオで、アナウンサーが山小屋の主人にインタビューしています。",
+  "question": "主人は、山小屋を予約制にした一番の理由は何だと言っていますか。",
+  "lines": [
+   [
+    "F",
+    "今年から完全予約制にされたそうですね。登山者の方からは、戸惑いの声もあったとか。"
+   ],
+   [
+    "M",
+    "ええ。予約なしで来られた方をお断りするのは、こちらとしても心苦しいんです。混雑で布団一枚に二人、という夜がなくなったのは、確かにありがたいんですけどね。"
+   ],
+   [
+    "F",
+    "と言いますと、混雑のためだけではない、と？"
+   ],
+   [
+    "M",
+    "予約をいただくと、どなたがいつ、どのルートで来られるのか、前もって分かるでしょう。到着の予定を過ぎても姿が見えなければ、すぐに下の町や救助隊に連絡できる。以前は、誰が山に入っているのか、山小屋でさえつかめていなかったんです。正直なところ、うちが予約制にこだわったのは、ほとんどそこに尽きると言っていいかもしれません。"
+   ],
+   [
+    "F",
+    "なるほど。食事の準備も楽になったのでは？"
+   ],
+   [
+    "M",
+    "それはまあ、おまけみたいなものです。食材を運ぶヘリコプターの回数が減って、費用が抑えられたのも、助かってはいますけどね。"
+   ]
+  ],
+  "options": [
+   "小屋の混雑を解消するため",
+   "登山者の動きを知っておくため",
+   "食事の準備を楽にするため",
+   "運搬の費用を減らすため"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "广播里，播音员在采访一位山间小屋的主人。",
+    "question": "主人说，山间小屋改成预约制最主要的理由是什么？",
+    "lines": [
+     "听说今年开始改成完全预约制了。登山的人当中也有人感到不知所措。",
+     "是啊。拒绝没预约就来的人，我们自己也很过意不去。不再有挤得一床被子睡两个人的夜晚，这确实是件好事。",
+     "这么说，不只是因为拥挤？",
+     "有了预约，谁在什么时候、走哪条路线来，事先就知道。过了预定到达的时间还不见人影，就能马上联系山下的镇上或救援队。以前，有谁进了山，连山间小屋都掌握不了。老实说，我们之所以坚持预约制，可以说几乎全在于这一点。",
+     "原来如此。准备饭菜也轻松了吧？",
+     "那个嘛，算是附带的好处。运食材的直升机次数减少了，费用也降下来了，这倒确实帮了忙。"
+    ],
+    "options": [
+     "为了消除小屋的拥挤",
+     "为了事先掌握登山者的动向",
+     "为了让准备饭菜更轻松",
+     "为了减少运输费用"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, an announcer is interviewing the owner of a mountain hut.",
+    "question": "What does the owner say was the main reason for switching the hut to reservations only?",
+    "lines": [
+     "I hear you've gone reservations-only this year. Apparently some climbers were taken aback.",
+     "Yes. Turning away people who come without a booking weighs on us too. No more nights with two people to a futon is certainly a good thing, though.",
+     "Meaning it wasn't only about the crowding?",
+     "With bookings, we know in advance who's coming, when, and by which route. If someone hasn't shown up by their expected arrival time, we can contact the town below or the rescue team at once. Before, even the hut had no idea who was on the mountain. Honestly, you could say that's almost the whole reason we insisted on reservations.",
+     "I see. And preparing meals must have got easier?",
+     "That's more of a bonus. Fewer helicopter runs to bring in food has cut our costs too, which does help."
+    ],
+    "options": [
+     "To end overcrowding in the hut",
+     "To know where climbers are",
+     "To make meal preparation easier",
+     "To reduce transport costs"
+    ]
+   }
+  },
+  "why": {
+   "zh": "主人说事先知道谁、何时、走哪条路线来，没按时到就能马上联络救援，「ほとんどそこに尽きる」——就是掌握登山者的动向。",
+   "en": "Knowing who is coming, when and by which route — so a missing climber can be reported at once — is 'almost the whole reason'."
+  },
+  "wrong": [
+   {
+    "zh": "不再拥挤他说「ありがたい」，但没说是主要理由。",
+    "en": "He welcomes the end of overcrowding, but not as the main reason."
+   },
+   null,
+   {
+    "zh": "准备饭菜轻松只是「おまけ」。",
+    "en": "Easier meals are only a bonus."
+   },
+   {
+    "zh": "费用降低也「助かって」，但同样是附带的。",
+    "en": "Lower transport costs help, but are also a side benefit."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-202",
+  "type": "point",
+  "scene": "会社で、部長の女の人と男の人が、男の人の企画について話しています。",
+  "question": "部長は、企画に何が足りないと言っていますか。",
+  "lines": [
+   [
+    "M",
+    "部長、先日お出しした企画書、ご覧いただけましたか。"
+   ],
+   [
+    "F",
+    "見たわよ。離島の漁協と組んで、その日に揚がった魚を、毎月お客さんに届けるっていうものね。"
+   ],
+   [
+    "M",
+    "はい。やはり、予算のところでしょうか。初年度は赤字になる見込みですし。"
+   ],
+   [
+    "F",
+    "赤字は、最初の二、三年なら織り込み済みでいいの。気になったのは量のほうね。一つの島で、月に二百箱しか出せないんでしょう？"
+   ],
+   [
+    "M",
+    "はい、そこはほかの島にも声をかけるつもりで……。"
+   ],
+   [
+    "F",
+    "うん、それは書いてあった。ただね、数が少ないこと自体は、手に入りにくいっていう売りにもなるのよ。でも、海が荒れて船が出なかったり、申し込みが多すぎたりしたら、お客さんに何週間も待ってもらうことになるでしょう。その間、こちらが何をしてあげられるのか、企画書のどこを読んでも見えてこないのよね。待たされた人が離れていったら、それで終わりじゃない？"
+   ],
+   [
+    "M",
+    "……そこまでは、考えが及んでいませんでした。"
+   ],
+   [
+    "F",
+    "パッケージの案は、すごくいいと思う。そこは自信を持っていいから。"
+   ]
+  ],
+  "options": [
+   "初年度の赤字を減らす工夫",
+   "届ける量を増やすための計画",
+   "届かないときの客への対応",
+   "商品を包むパッケージの案"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "公司里，女部长和一个男人在谈男人的企划。",
+    "question": "部长说企划缺少什么？",
+    "lines": [
+     "部长，前几天交的企划书，您看过了吗？",
+     "看了。跟离岛的渔协合作，把当天上岸的鱼每月送到顾客手上，对吧。",
+     "是的。果然是预算方面有问题吧？第一年预计会亏损。",
+     "亏损的话，头两三年算在预料之内就行。我在意的是数量。一个岛每个月只能出两百箱吧？",
+     "是的，这一点我打算也去联系其他岛……",
+     "嗯，那个写了。不过，数量少本身也能成为“难得买到”的卖点。可是一旦海上起风浪出不了船，或者订的人太多，顾客就得等好几个星期吧。这期间我们能为顾客做些什么，企划书哪里都看不出来。等得不耐烦的人走掉了，不就完了吗？",
+     "……我没考虑到那一步。",
+     "包装的方案我觉得非常好。这一点你可以有自信。"
+    ],
+    "options": [
+     "减少第一年亏损的办法",
+     "增加供货量的计划",
+     "送不到时对顾客的应对",
+     "包装商品的方案"
+    ]
+   },
+   "en": {
+    "scene": "At a company, a female department head and a man are talking about the man's proposal.",
+    "question": "What does the department head say the proposal is missing?",
+    "lines": [
+     "Did you get a chance to look at the proposal I submitted the other day?",
+     "I did. Teaming up with an island fishing co-op and delivering fish landed that day to customers every month.",
+     "Yes. Is it the budget, after all? We expect a loss in the first year.",
+     "A loss in the first two or three years is already factored in. What caught my eye was the volume. One island can only supply two hundred boxes a month, can't it?",
+     "Yes, I plan to approach other islands as well…",
+     "Yes, you wrote that. But being scarce can itself be a selling point — hard to get. If the sea's too rough for the boats, though, or there are too many orders, customers will have to wait weeks. What we can do for customers in the meantime — I couldn't see it anywhere in the proposal. If the people kept waiting drift away, that's the end of it, isn't it?",
+     "…I hadn't thought that far.",
+     "I think the packaging idea is excellent. You can be confident about that."
+    ],
+    "options": [
+     "A way to reduce the first-year loss",
+     "A plan to increase supply",
+     "How to look after customers when deliveries stop",
+     "A packaging design"
+    ]
+   }
+  },
+  "why": {
+   "zh": "部长说出不了船或订单太多时顾客要等好几个星期，这期间能为顾客做什么「どこを読んでも見えてこない」，缺的是送不到时对顾客的应对。",
+   "en": "She says nothing in the proposal shows what they'll do for customers left waiting weeks when deliveries stop — that's what's missing."
+  },
+  "wrong": [
+   {
+    "zh": "亏损头两三年「織り込み済み」，不是问题。",
+    "en": "The early loss is already factored in."
+   },
+   {
+    "zh": "增加数量的计划（联系其他岛）「それは書いてあった」，而且数量少还能当卖点。",
+    "en": "Approaching other islands was in the proposal, and scarcity can even help."
+   },
+   null,
+   {
+    "zh": "包装方案部长称赞「すごくいい」，不是缺的东西。",
+    "en": "She praises the packaging; it isn't missing."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-203",
+  "type": "point",
+  "scene": "大学の講義で、先生が方言について話しています。",
+  "question": "先生は、この言葉が今も使われているのはどうしてだと考えていますか。",
+  "lines": [
+   [
+    "M",
+    "方言の多くは、テレビの普及とともに急速に使われなくなりました。ところが、ある地方の、「疲れた」を意味する言葉は、いまだに若い人のあいだでもごく普通に使われています。なぜでしょうか。地元のテレビ番組で取り上げられて広まったからだ、と考える人もいますが、番組が始まったのはここ十年ほどのことで、若者はそれ以前から使っていました。では、家庭の中で親から子へ受け継がれてきたからか。もちろんそれもあるでしょう。しかし、それなら、同じように家庭で使われてきたほかの方言も残っていていいはずです。ところで、この言葉を地元の人に標準語で言い換えてもらうと、皆さん困ってしまうんですね。体が疲れた、というだけでもないし、うんざりした、というだけでもない。その両方が一語に収まっていて、標準語には、それにぴったり当たる言葉が見当たらない。手放そうにも手放せないのも無理はない、と私は思うんです。"
+   ]
+  ],
+  "options": [
+   "地元の番組で広く知られたから",
+   "親から子へ受け継がれてきたから",
+   "標準語では言い表しきれないから",
+   "体の疲れを正確に表せるから"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "大学的课上，老师在讲方言。",
+    "question": "老师认为这个词现在还在使用是为什么？",
+    "lines": [
+     "很多方言随着电视的普及迅速不再使用。可是，某个地方表示“累了”的一个词，至今在年轻人中也用得很普遍。为什么呢？有人认为是因为被当地电视节目报道而传开了，但那个节目是近十年才开始的，年轻人在那之前就在用了。那么，是因为在家里由父母传给孩子吗？当然也有这个原因吧。但那样的话，同样在家里使用的其他方言也应该留下来才对。说起来，请当地人用普通话换个说法，大家都会犯难。既不只是身体累了，也不只是厌烦了，两者都装在一个词里，普通话里找不到正好对应的词。想放也放不掉，我觉得也不奇怪。"
+    ],
+    "options": [
+     "因为被当地节目广为人知",
+     "因为由父母传给了孩子",
+     "因为普通话表达不尽",
+     "因为能准确表达身体的疲劳"
+    ]
+   },
+   "en": {
+    "scene": "In a university lecture, a teacher is talking about dialects.",
+    "question": "Why does the teacher think this word is still in use?",
+    "lines": [
+     "Most dialect words fell out of use quickly as television spread. Yet one region's word meaning 'tired' is still perfectly common even among young people. Why? Some think it spread because a local TV programme featured it, but that programme only began about ten years ago, and young people were using the word before that. Then was it handed down from parents to children at home? No doubt that's part of it. But if so, other dialect words used at home should have survived just as well. Now, when you ask local people to rephrase this word in standard Japanese, they're stuck. It isn't just 'physically tired', nor just 'fed up' — it holds both in one word, and standard Japanese has nothing that matches it exactly. It's no wonder, I think, that people couldn't let it go even if they tried."
+    ],
+    "options": [
+     "Because a local programme made it well known",
+     "Because parents passed it on to children",
+     "Because standard Japanese can't fully express it",
+     "Because it describes physical tiredness precisely"
+    ]
+   }
+  },
+  "why": {
+   "zh": "这个词同时包含身体累和厌烦两种意思，「標準語には、それにぴったり当たる言葉が見当たらない」，所以「手放せないのも無理はない」——普通话无法完全表达。",
+   "en": "The word holds both physical tiredness and being fed up, and standard Japanese has no exact match — that's why people can't let it go."
+  },
+  "wrong": [
+   {
+    "zh": "节目近十年才开始，年轻人之前就在用，被否定。",
+    "en": "The programme began only ten years ago, after young people already used the word."
+   },
+   {
+    "zh": "家庭传承「それもある」，但解释不了其他方言为何消失。",
+    "en": "Family use is part of it, but doesn't explain why other dialect words vanished."
+   },
+   null,
+   {
+    "zh": "老师说不只是身体累（「というだけでもない」），说法歪了。",
+    "en": "He says it isn't just physical tiredness — this twists the point."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "half-right",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-204",
+  "type": "point",
+  "scene": "男の人と女の人が、女の人の転職について話しています。",
+  "question": "女の人は、どうして誘いを断ることにしましたか。",
+  "lines": [
+   [
+    "M",
+    "聞いたよ。例の会社から声がかかったんだって？　給料、今の倍近いんでしょ。"
+   ],
+   [
+    "F",
+    "うん。正直、最初は二つ返事で受けるつもりだったんだ。今の部署、残業ばっかりだし。"
+   ],
+   [
+    "M",
+    "じゃ、何で迷ってんの。通勤が遠くなるとか？"
+   ],
+   [
+    "F",
+    "それは引っ越せば済む話。……向こうの面接でね、入ったら何をしてほしいか、具体的に聞いたの。そしたら、私が今ちょうど進めてるプロジェクトと同じようなことを、一から立ち上げてほしいんだって。"
+   ],
+   [
+    "M",
+    "いいじゃん。経験がそのまま生かせて。"
+   ],
+   [
+    "F",
+    "私もそう思ったんだけど、帰りの電車で考えてたら、今のプロジェクト、あと半年で形になるところまで来てるのに、それを途中で放り出して、よそで同じことをやり直すのって、なんか違うなって。"
+   ],
+   [
+    "M",
+    "なるほどね。で、残業のほうは？"
+   ],
+   [
+    "F",
+    "それは上司に相談してみる。何とかなるかどうかは分からないけど。"
+   ]
+  ],
+  "options": [
+   "今の仕事を最後までやり遂げたいから",
+   "新しい会社までの通勤が大変だから",
+   "新しい会社では経験が生かせないから",
+   "上司が残業を減らすと約束したから"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在谈女人跳槽的事。",
+    "question": "女人为什么决定拒绝邀请？",
+    "lines": [
+     "听说了。那家公司来挖你了？工资差不多是现在的两倍吧。",
+     "嗯。说实话，一开始我打算一口答应的。现在的部门老是加班。",
+     "那你还犹豫什么？是通勤变远了吗？",
+     "那个搬家就解决了。……在那边面试的时候，我具体问了进去以后要我做什么。结果说是想让我从零开始做一个跟我现在正在推进的项目差不多的东西。",
+     "不是挺好吗，经验能直接用上。",
+     "我也这么想过，可是在回去的电车上想着想着，现在的项目再有半年就要成形了，却半途扔下，跑到别处重做一样的事，总觉得不对。",
+     "原来如此。那加班的事呢？",
+     "那个我去跟上司商量看看。能不能解决还不知道。"
+    ],
+    "options": [
+     "因为想把现在的工作做完",
+     "因为去新公司通勤很辛苦",
+     "因为在新公司经验用不上",
+     "因为上司答应减少加班"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking about the woman changing jobs.",
+    "question": "Why has the woman decided to turn down the offer?",
+    "lines": [
+     "I heard. That company approached you? The salary's nearly double what you get now, right?",
+     "Yeah. Honestly, at first I was going to say yes on the spot. My department's all overtime.",
+     "So why the hesitation? Is the commute longer?",
+     "That's solved by moving. …At their interview I asked exactly what they'd want me to do. They want me to launch, from scratch, much the same thing as the project I'm running right now.",
+     "Isn't that good? Your experience carries straight over.",
+     "I thought so too, but thinking it over on the train home — my current project is six months from taking shape, and to drop it halfway and redo the same thing somewhere else just felt wrong.",
+     "I see. And the overtime?",
+     "I'll talk to my boss about that. Whether anything will change, I don't know."
+    ],
+    "options": [
+     "She wants to see her current work through",
+     "The commute to the new company would be hard",
+     "Her experience wouldn't be used at the new company",
+     "Her boss promised to cut her overtime"
+    ]
+   }
+  },
+  "why": {
+   "zh": "现在的项目再有半年就成形，「途中で放り出して、よそで同じことをやり直す」觉得不对——她想把现在的工作做完。",
+   "en": "Her project is six months from completion; dropping it to redo the same thing elsewhere feels wrong — she wants to finish it."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "通勤「引っ越せば済む話」，不是理由。",
+    "en": "The commute can be solved by moving."
+   },
+   {
+    "zh": "新工作恰恰和现在的项目相同，经验能用上；问题不在这里。",
+    "en": "The new job would use her experience; that's not the issue."
+   },
+   {
+    "zh": "加班她只是打算「相談してみる」，上司没有答应。",
+    "en": "She's only going to ask her boss; nothing was promised."
+   }
+  ],
+  "traps": [
+   "twisted",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-205",
+  "type": "point",
+  "scene": "女の人と、カフェを経営している男の人が話しています。",
+  "question": "男の人は、どうして平日に店を開けるのをやめましたか。",
+  "lines": [
+   [
+    "F",
+    "駅前のお店、平日はお休みになったんですね。"
+   ],
+   [
+    "M",
+    "ええ、先月から。平日は会社員のお客さんが多くて、お昼なんか行列ができるほどだったんですけどね。"
+   ],
+   [
+    "F",
+    "えっ、もったいない。"
+   ],
+   [
+    "M",
+    "ただ、あれだけ忙しいと、どうしても作り置きが増えるし、野菜も足りなくなる。うちは、裏の畑で採れたものをその朝に料理して出すのが売りだったのに、気がついたら、市場から仕入れた野菜のほうが多くなってたんです。"
+   ],
+   [
+    "F",
+    "ああ、それで……。"
+   ],
+   [
+    "M",
+    "畑のほうも、平日は手が回らなくて荒れ放題で。アルバイトの子にお店を任せて、僕が畑に出る、ということも考えたんですけど、料理だけは自分でやらないと気が済まない性分なので。"
+   ],
+   [
+    "F",
+    "それで、平日は畑、週末だけお店、と。"
+   ],
+   [
+    "M",
+    "売り上げは三分の一になりましたけど、毎朝、うちで採れたものだけで料理できるようになりました。"
+   ]
+  ],
+  "options": [
+   "平日はお昼の客が少なかったから",
+   "週末のほうが売り上げが多いから",
+   "行列で客を待たせてしまうから",
+   "自家製の野菜だけで料理したいから"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和经营咖啡馆的男人在说话。",
+    "question": "男人为什么不再在工作日开店了？",
+    "lines": [
+     "车站前的店，工作日不开了啊。",
+     "是啊，从上个月开始。工作日上班族客人很多，中午甚至会排起长队。",
+     "啊？太可惜了。",
+     "不过忙成那样，难免要提前做好的东西变多，蔬菜也不够。我们的卖点本来是把后面菜地里摘的菜当天早上做出来，可回过神来，从市场进的菜反倒更多了。",
+     "啊，所以……",
+     "菜地那边，工作日也顾不上，荒得不成样子。我也想过把店交给打工的孩子，自己下地，可我这人做菜非得自己来才甘心。",
+     "所以工作日下地，只在周末开店。",
+     "营业额变成了三分之一，不过现在每天早上都能只用自家地里的东西做菜了。"
+    ],
+    "options": [
+     "因为工作日中午客人少",
+     "因为周末营业额更多",
+     "因为排队让客人久等",
+     "因为想只用自家种的菜做菜"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man who runs a café are talking.",
+    "question": "Why has the man stopped opening the café on weekdays?",
+    "lines": [
+     "Your place by the station is closed on weekdays now.",
+     "Yes, since last month. On weekdays we had lots of office workers — at lunchtime there was even a queue.",
+     "What? What a waste.",
+     "But when it's that busy, you inevitably make more in advance, and you run short of vegetables. Our selling point was supposed to be cooking what we picked from the field out back that same morning, and before I knew it, most of our vegetables were coming from the market.",
+     "Ah, so that's why…",
+     "And on weekdays I had no time for the field, so it was going to ruin. I did think of leaving the café to the part-timers and working the field myself, but I'm the kind of person who has to do the cooking himself.",
+     "So, field on weekdays, café only at weekends.",
+     "Takings are down to a third, but now every morning I can cook with nothing but what we grow ourselves."
+    ],
+    "options": [
+     "Weekday lunchtimes were quiet",
+     "Weekends bring in more money",
+     "Customers were kept waiting in queues",
+     "He wants to cook only with his own vegetables"
+    ]
+   }
+  },
+  "why": {
+   "zh": "店的卖点是用自家菜地当天早上摘的菜，可工作日太忙，市场进的菜反而多了，菜地也顾不上；现在「うちで採れたものだけで料理できるようになりました」。",
+   "en": "His café's point was cooking his own fresh vegetables, but busy weekdays meant market produce took over and the field was neglected; now he cooks only with his own produce."
+  },
+  "wrong": [
+   {
+    "zh": "工作日中午「行列ができるほど」，客人很多。",
+    "en": "Weekday lunchtimes were so busy there was a queue."
+   },
+   {
+    "zh": "营业额「三分の一になりました」，工作日其实更赚钱。",
+    "en": "Takings fell to a third — weekdays earned more."
+   },
+   {
+    "zh": "提到排队是说明有多忙，他没说是因为让客人等。",
+    "en": "The queue shows how busy it was, not his reason."
+   },
+   null
+  ],
+  "traps": [
+   "twisted",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-206",
+  "type": "point",
+  "scene": "ラジオで、アナウンサーが陸上競技のチームの監督にインタビューしています。",
+  "question": "監督は、選手の記録が伸びた一番のきっかけは何だと言っていますか。",
+  "lines": [
+   [
+    "F",
+    "今シーズンは、選手の皆さんの記録が軒並み伸びましたね。何か転機があったんでしょうか。"
+   ],
+   [
+    "M",
+    "振り返ってみると、春に私が一か月ほど、海外の大会の視察で留守にしたのが大きかったと思います。その間の練習は、選手同士で相談して決めるようにと言い残して行きまして。"
+   ],
+   [
+    "F",
+    "監督がいらっしゃらない間に、ですか。"
+   ],
+   [
+    "M",
+    "ええ。帰ってきたら、その日の体の調子を見て、距離を短くしたり、休みを入れたり、自分たちで判断するようになっていたんです。私が何から何まで決めていたころには、考えられなかったことでした。"
+   ],
+   [
+    "F",
+    "秋から、新しく開発された靴に替えたことも話題になっていますが。"
+   ],
+   [
+    "M",
+    "靴も、追い風にはなったでしょうね。ただ、ほかのチームも同じものを履いていますから。"
+   ],
+   [
+    "F",
+    "海外で、新しい練習の方法を学んでこられたということは？"
+   ],
+   [
+    "M",
+    "いくつか参考にはしましたが、取り入れたのは夏からで、そのころにはもう、記録は上向いていましたから。"
+   ]
+  ],
+  "options": [
+   "選手が自分で練習を判断し始めたこと",
+   "監督が海外で新しい練習法を学んだこと",
+   "ほかのチームより先に靴を替えたこと",
+   "練習の距離を全体的に短くしたこと"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "广播里，播音员在采访一位田径队的教练。",
+    "question": "教练说选手成绩提高最主要的契机是什么？",
+    "lines": [
+     "这个赛季，选手们的成绩全都提高了。是有什么转折点吗？",
+     "回想起来，我觉得春天我去海外考察比赛、离开了一个月左右，影响很大。我走之前交代，那期间的练习由选手们互相商量决定。",
+     "是在教练您不在的时候吗？",
+     "是的。我回来一看，他们已经会根据当天的身体状态，缩短距离、安排休息，自己做判断了。我什么都替他们定的时候，这是想都想不到的。",
+     "从秋天开始换了新开发的跑鞋，这也成了话题。",
+     "跑鞋也算是起了顺风的作用吧。不过，别的队也穿着同样的鞋。",
+     "那您在海外学到了新的练习方法吗？",
+     "参考了一些，但那是从夏天才采用的，那时成绩已经在往上走了。"
+    ],
+    "options": [
+     "选手开始自己判断练习",
+     "教练在海外学到了新的练习方法",
+     "比其他队先换了跑鞋",
+     "整体缩短了练习距离"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, an announcer is interviewing the coach of an athletics team.",
+    "question": "What does the coach say was the main trigger for the athletes' improvement?",
+    "lines": [
+     "This season nearly all your athletes have improved their times. Was there a turning point?",
+     "Looking back, I think it made a big difference that in spring I was away for about a month observing competitions abroad. Before I left, I told them to decide the training among themselves while I was gone.",
+     "While you were away?",
+     "Yes. When I came back, they were judging for themselves — shortening the distance or taking a rest, depending on how their bodies felt that day. That was unthinkable back when I decided everything.",
+     "There's also been talk about your switch to newly developed shoes in the autumn.",
+     "The shoes probably gave us a tailwind too. But other teams wear the same ones.",
+     "Did you bring back new training methods from abroad?",
+     "I did take a few ideas, but we only adopted them from summer, and by then the times were already on the rise."
+    ],
+    "options": [
+     "The athletes began to judge their own training",
+     "The coach learned new training methods abroad",
+     "They switched shoes before other teams",
+     "They shortened the training distances overall"
+    ]
+   }
+  },
+  "why": {
+   "zh": "教练离开期间让选手自己商量练习，回来后他们会根据身体状态自己判断，他说这「大きかった」；跑鞋别的队也一样，新方法是夏天才用的。",
+   "en": "His month away left the athletes to decide their training, and they began judging for themselves — that's what he calls the big factor; shoes are common to all teams and the new methods came later."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "新方法夏天才采用，那时成绩「もう上向いていました」。",
+    "en": "New methods came in summer, after times were already rising."
+   },
+   {
+    "zh": "别的队「同じものを履いています」，没说先换。",
+    "en": "Other teams wear the same shoes; he never says they switched first."
+   },
+   {
+    "zh": "缩短距离只是选手根据当天状态做的调整之一，不是整体缩短。",
+    "en": "Shortening distances was one of the athletes' day-to-day choices, not an overall change."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "twisted"
+  ]
+ }
+]

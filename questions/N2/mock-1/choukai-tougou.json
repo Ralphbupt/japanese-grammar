@@ -1,0 +1,397 @@
+[
+ {
+  "id": "n2-m1-ck-601",
+  "type": "tougou",
+  "scene": "会社の総務部で、三人が会議室が足りない問題について話しています。",
+  "lines": [
+   [
+    "M1",
+    "最近、会議室の予約が取れないっていう苦情が多くてね。どうしたらいいと思う？"
+   ],
+   [
+    "F",
+    "一回の予約を一時間までにしたらどうでしょう。二時間、三時間と取っておいて、実際はもっと早く終わっている会議が多いんです。"
+   ],
+   [
+    "M2",
+    "でも、田中さん、お客さんとの打ち合わせは、一時間じゃ終わらないことも多いですよ。途中で部屋を出なきゃいけないなんて、失礼じゃないですか。"
+   ],
+   [
+    "M1",
+    "それは困るな。じゃあ、三階の倉庫を会議室に作りかえるのは？"
+   ],
+   [
+    "F",
+    "前に見積もりを取ったら、工事に三百万円かかるって言われたんです。今年の予算では、ちょっと……。"
+   ],
+   [
+    "M2",
+    "社内の会議は全部オンラインにする、という手もありますけど、顔を見ないと話しにくいって声も多いですし……。一人用の小さなブースを置くのはどうですか。オンラインの会議だけなら、それで足りますから。"
+   ],
+   [
+    "F",
+    "置く場所がないんですよ。廊下に置いたら、人が通れなくなっちゃいます。"
+   ],
+   [
+    "M1",
+    "うーん。……じゃあ、田中さんが最初に言ってたやり方、あれに一つ条件をつけたらどうかな。お客さんが一緒のときは別、ってことにして。社内だけなら、それで足りるだろう。"
+   ],
+   [
+    "M2",
+    "それなら、問題ないと思います。"
+   ],
+   [
+    "F",
+    "じゃあ、来月からそれでやってみましょう。"
+   ]
+  ],
+  "question": "会議室の問題をどうすることにしましたか。",
+  "spokenOptions": true,
+  "options": [
+   "倉庫を会議室に作りかえる",
+   "一回に使える時間に上限を設ける",
+   "一人用のブースを置く",
+   "社内の会議をオンラインにする"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "公司总务部里，三个人在商量会议室不够用的问题。",
+    "question": "会议室的问题决定怎么解决？",
+    "lines": [
+     "最近很多人抱怨订不到会议室。你们觉得该怎么办？",
+     "把每次预约限制在一小时以内怎么样？很多会议订了两三个小时，实际上早就结束了。",
+     "可是田中，跟客户的洽谈，很多时候一个小时谈不完。谈到一半就得让出房间，太失礼了吧。",
+     "那可不行。那把三楼的仓库改成会议室呢？",
+     "之前问过报价，说施工要三百万日元。今年的预算有点……",
+     "也可以把公司内部的会全改成线上，不过很多人说不见面不好谈……放几个单人用的小隔间怎么样？只是开线上会议的话，那样就够了。",
+     "没地方放啊。放在走廊里的话，人就过不去了。",
+     "嗯……那田中最开始说的那个办法，给它加个条件怎么样？有客户在的时候另算。只是公司内部的话，那样就够了吧。",
+     "那样的话我觉得没问题。",
+     "那就从下个月开始这么试试吧。"
+    ],
+    "options": [
+     "把仓库改成会议室",
+     "给每次使用时间设上限",
+     "放单人用的隔间",
+     "公司内部的会改成线上"
+    ]
+   },
+   "en": {
+    "scene": "In a company's general affairs department, three people are discussing the shortage of meeting rooms.",
+    "question": "What have they decided to do about the meeting room problem?",
+    "lines": [
+     "Lately we've had a lot of complaints that people can't book meeting rooms. What do you think we should do?",
+     "How about limiting each booking to an hour? Lots of meetings book two or three hours and actually finish much earlier.",
+     "But Tanaka-san, meetings with clients often run over an hour. Having to leave the room halfway through would be rude, wouldn't it?",
+     "That won't do. Then what about converting the third-floor storeroom into a meeting room?",
+     "We got a quote before — they said the work would cost three million yen. With this year's budget, that's a bit...",
+     "We could make all internal meetings online, but many people say it's hard to talk without seeing each other... How about putting in small one-person booths? For online meetings, that would be enough.",
+     "There's nowhere to put them. If we put them in the corridor, people couldn't get past.",
+     "Hmm... Then how about Tanaka-san's first idea, with one condition attached? Meetings with clients don't count. For internal ones, that should be enough.",
+     "Then I don't see a problem.",
+     "Then let's try that from next month."
+    ],
+    "options": [
+     "Convert the storeroom into a meeting room",
+     "Set a limit on how long a room can be used at once",
+     "Put in one-person booths",
+     "Move internal meetings online"
+    ]
+   }
+  },
+  "why": {
+   "zh": "限一小时的提议先因客户洽谈被反对；仓库太贵、隔间没地方放之后，课长说「田中さんが最初に言ってたやり方、あれに一つ条件をつけたら」——也就是限一小时、有客户时例外，重新提出，大家同意。",
+   "en": "The one-hour limit was first rejected because of client meetings; after the storeroom (too costly) and booths (no space) fail, the manager revives 「田中さんが最初に言ってたやり方」 — the one-hour limit — with an exception for client meetings, and everyone agrees."
+  },
+  "wrong": [
+   {
+    "zh": "改造仓库要三百万日元，今年的预算不够。",
+    "en": "The storeroom conversion would cost three million yen — over budget."
+   },
+   null,
+   {
+    "zh": "隔间「置く場所がない」。",
+    "en": "There's nowhere to put the booths."
+   },
+   {
+    "zh": "全改成线上的话「顔を見ないと話しにくい」，没有采用。",
+    "en": "Many say it's hard to talk without seeing each other, so it wasn't adopted."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-602",
+  "type": "tougou",
+  "scene": "会社で、課長と社員二人が、取引先へのお祝いについて話しています。",
+  "lines": [
+   [
+    "F1",
+    "大川商事さん、来月で創立五十周年なんだって。お祝い、何をお贈りしようか。"
+   ],
+   [
+    "M",
+    "やっぱり花じゃないですか。大きいのを受付に飾っていただければ、目立ちますし。"
+   ],
+   [
+    "F2",
+    "でも、そういう日って、いろんな会社から花が届くので、置く場所に困るって聞きますよ。お菓子なら、社員の皆さんで分けていただけますし。"
+   ],
+   [
+    "F1",
+    "お菓子ね……。でも、五十周年にお菓子だけっていうのも、ちょっと軽い気がするなあ。"
+   ],
+   [
+    "M",
+    "じゃあ、会社の名前を入れた置き時計に、花を添えるのはどうですか。記念に残りますよ。"
+   ],
+   [
+    "F2",
+    "名前を入れると、届くまで一か月かかるんです。お祝いの日に間に合いません。"
+   ],
+   [
+    "F1",
+    "そうか……。じゃあ、最初に出た二つの案を、合わせちゃうのはどう？　一つは、場所を取らない程度のものにして。それなら、どっちの心配もなくなるでしょう。"
+   ],
+   [
+    "M",
+    "ああ、いいですね。"
+   ],
+   [
+    "F2",
+    "じゃあ、さっそく手配しておきます。"
+   ]
+  ],
+  "question": "お祝いに何を贈ることにしましたか。",
+  "spokenOptions": true,
+  "options": [
+   "大きな花を贈る",
+   "時計に花を添えて贈る",
+   "お菓子だけを贈る",
+   "花とお菓子を一緒に贈る"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "公司里，科长和两名职员在商量给客户送的贺礼。",
+    "question": "决定送什么作为贺礼？",
+    "lines": [
+     "大川商事下个月就创立五十周年了。贺礼送什么好呢？",
+     "还是送花吧。大的摆在前台，很显眼。",
+     "可是那种日子，各家公司都会送花来，听说都没地方放。点心的话，可以让员工们分着吃。",
+     "点心啊……不过五十周年只送点心，感觉有点太轻了。",
+     "那在刻了公司名字的座钟上配束花怎么样？能留作纪念。",
+     "刻名字的话，送到要一个月。赶不上庆祝的日子。",
+     "这样啊……那把最开始提的两个方案合在一起怎么样？其中一个弄成不占地方的程度。这样两边的担心就都没了吧。",
+     "啊，不错啊。",
+     "那我马上去安排。"
+    ],
+    "options": [
+     "送大束的花",
+     "送座钟配花",
+     "只送点心",
+     "花和点心一起送"
+    ]
+   },
+   "en": {
+    "scene": "At a company, a section chief and two employees are discussing a congratulatory gift for a client.",
+    "question": "What have they decided to send as a gift?",
+    "lines": [
+     "Okawa Trading is celebrating its fiftieth anniversary next month. What should we send them?",
+     "Flowers, surely. A big arrangement on their reception desk would really stand out.",
+     "But on days like that, flowers arrive from all sorts of companies and I hear they run out of space. Sweets could be shared among their staff.",
+     "Sweets... But just sweets for a fiftieth anniversary feels a little casual.",
+     "Then how about a desk clock engraved with their company name, with some flowers? It would be a lasting memento.",
+     "With engraving, it takes a month to arrive. It wouldn't be in time for the celebration.",
+     "I see... Then how about combining the first two ideas? With one of them kept small enough not to take up space. That would take care of both worries, wouldn't it?",
+     "Oh, that's good.",
+     "Then I'll arrange it right away."
+    ],
+    "options": [
+     "Send a large flower arrangement",
+     "Send a clock with flowers",
+     "Send sweets only",
+     "Send flowers and sweets together"
+    ]
+   }
+  },
+  "why": {
+   "zh": "大花没地方放，只送点心太轻，刻名字的座钟赶不上；科长说「最初に出た二つの案を、合わせちゃう」，即男职员的花和女职员的点心，花弄成「場所を取らない程度」，大家同意。",
+   "en": "Big flowers lack space, sweets alone feel too casual, and the engraved clock won't arrive in time; the chief combines 「最初に出た二つの案」 — his flowers and her sweets, with the flowers kept small."
+  },
+  "wrong": [
+   {
+    "zh": "那天会收到很多花，「置く場所に困る」。",
+    "en": "They'll receive lots of flowers and run out of space."
+   },
+   {
+    "zh": "刻名字要一个月，「間に合いません」。",
+    "en": "The engraving takes a month — too late."
+   },
+   {
+    "zh": "科长觉得五十周年只送点心「ちょっと軽い」。",
+    "en": "The chief thinks sweets alone are too casual for a fiftieth anniversary."
+   },
+   null
+  ],
+  "traps": [
+   "half-right",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n2-m1-ck-603",
+  "type": "tougou",
+  "scene": "ホテルのフロントで、係の人が空港への行き方を説明しています。そのあと、出張で来ている男の人と女の人が話しています。",
+  "lines": [
+   [
+    "F1",
+    "空港へは、四つの行き方がございます。一つ目は、当ホテルの無料のシャトルバスです。朝七時から一時間おきに出ておりまして、空港まで五十分ほどです。前の日までに、フロントでご予約ください。二つ目は電車です。駅まで歩いて五分、途中二回乗り換えがありますが、四十分ほどで着きます。三つ目は、駅前から出ているリムジンバスです。朝六時から三十分おきに出ておりまして、乗り換えなしで一時間ほどです。料金は千五百円です。四つ目はタクシーで、三十分ほどですが、一万円近くかかります。"
+   ],
+   [
+    "M",
+    "俺、明日は八時の便なんだよね。一時間前には空港に着いてたいから……。"
+   ],
+   [
+    "F2",
+    "じゃあ、シャトルバスは間に合わないね。電車は？"
+   ],
+   [
+    "M",
+    "見本の入った箱があるから、二回も乗り換えるのはきついよ。タクシーは、一人だと会社がお金を出してくれないし。"
+   ],
+   [
+    "F2",
+    "じゃあ、一番早いのに乗れば、ちょうどいいんじゃない？"
+   ],
+   [
+    "M",
+    "そうだね。そうする。そっちは午後の便でしょ？"
+   ],
+   [
+    "F2",
+    "うん、二時。急がないから、お金がかからないのがいいな。電車も安いけど、乗り換え、苦手なんだよね。"
+   ],
+   [
+    "M",
+    "じゃあ、今日中にフロントで頼んどかないと。"
+   ],
+   [
+    "F2",
+    "あ、そうだね。あとで言っとく。"
+   ]
+  ],
+  "options": [
+   "シャトルバス",
+   "電車",
+   "リムジンバス",
+   "タクシー"
+  ],
+  "questions": [
+   {
+    "question": "質問1：男の人は何で空港へ行きますか。",
+    "answer": 2,
+    "why": {
+     "zh": "他想七点前到机场：班车七点才开始，赶不上；带着箱子不想换乘；一个人坐出租车不能报销。六点的第一班机场大巴大约一小时，正好七点左右到。",
+     "en": "He needs to arrive by seven: the shuttle only starts at seven, the train means two changes with his box, and a taxi alone isn't covered. The first limousine bus at six takes about an hour — just right."
+    },
+    "wrong": [
+     {
+      "zh": "班车早上七点才开始，赶不上他八点的航班。",
+      "en": "The shuttle starts at seven, too late for his eight o'clock flight."
+     },
+     {
+      "zh": "他带着装样品的箱子，换乘两次「きつい」。",
+      "en": "Changing twice with his box of samples would be too hard."
+     },
+     null,
+     {
+      "zh": "一个人坐出租车「会社がお金を出してくれない」。",
+      "en": "The company won't pay for a taxi if he's alone."
+     }
+    ]
+   },
+   {
+    "question": "質問2：女の人は何で空港へ行きますか。",
+    "answer": 0,
+    "why": {
+     "zh": "她下午两点的航班，不赶时间，想要不花钱的；免费的是酒店班车，男人提醒她今天之内预约。",
+     "en": "Her flight is at two, so she's in no hurry and wants something free — the hotel's free shuttle, which she'll book today."
+    },
+    "wrong": [
+     null,
+     {
+      "zh": "电车便宜，但她「乗り換え、苦手」。",
+      "en": "The train is cheap, but she dislikes changing trains."
+     },
+     {
+      "zh": "机场大巴要一千五百日元，她想要不花钱的；坐最早一班的是男人。",
+      "en": "The limousine costs 1,500 yen and she wants a free option; it's the man who takes the first bus."
+     },
+     {
+      "zh": "出租车将近一万日元，她想要不花钱的。",
+      "en": "A taxi costs nearly 10,000 yen; she wants something free."
+     }
+    ]
+   }
+  ],
+  "tr": {
+   "zh": {
+    "scene": "酒店前台，工作人员在介绍去机场的方法。之后，来出差的一男一女在说话。",
+    "questions": [
+     "问题1：男人怎么去机场？",
+     "问题2：女人怎么去机场？"
+    ],
+    "lines": [
+     "去机场有四种方式。第一种是本酒店的免费班车，早上七点开始每小时一班，到机场大约五十分钟。请在前一天之前到前台预约。第二种是电车，走到车站五分钟，中途要换乘两次，大约四十分钟到。第三种是从车站前发车的机场大巴，早上六点开始每三十分钟一班，不用换乘，大约一个小时。票价一千五百日元。第四种是出租车，大约三十分钟，不过要将近一万日元。",
+     "我明天是八点的航班。想提前一个小时到机场……",
+     "那班车就赶不上了。电车呢？",
+     "我带着装样品的箱子，换乘两次太累了。出租车的话，一个人坐公司不给报销。",
+     "那坐最早的那班不就正好吗？",
+     "也是。就这样。你是下午的航班吧？",
+     "嗯，两点。不赶时间，最好是不花钱的。电车也便宜，不过我不擅长换乘。",
+     "那今天之内得去前台订好。",
+     "啊，对哦。待会儿去说。"
+    ],
+    "options": [
+     "酒店班车",
+     "电车",
+     "机场大巴",
+     "出租车"
+    ]
+   },
+   "en": {
+    "scene": "At a hotel front desk, a clerk explains how to get to the airport. Then a man and a woman on a business trip talk.",
+    "questions": [
+     "Question 1: How will the man get to the airport?",
+     "Question 2: How will the woman get to the airport?"
+    ],
+    "lines": [
+     "There are four ways to get to the airport. The first is our hotel's free shuttle bus. It runs every hour from seven a.m. and takes about fifty minutes. Please book at the front desk by the day before. The second is the train: five minutes' walk to the station, two changes on the way, and about forty minutes in all. The third is the airport limousine bus from in front of the station. It runs every thirty minutes from six a.m., with no changes, and takes about an hour. The fare is 1,500 yen. The fourth is a taxi, about thirty minutes, but it costs nearly 10,000 yen.",
+     "My flight tomorrow is at eight. I want to be at the airport an hour before...",
+     "Then the shuttle won't make it. What about the train?",
+     "I've got the box of samples, so changing twice would be tough. And the company won't pay for a taxi if it's just me.",
+     "Then if you catch the very first one, that should be just right, shouldn't it?",
+     "Yeah. I'll do that. Your flight's in the afternoon, right?",
+     "Yes, at two. I'm in no hurry, so something that doesn't cost anything would be nice. The train's cheap too, but I'm hopeless at changing trains.",
+     "Then you'll need to book it at the front desk today.",
+     "Oh, right. I'll tell them later."
+    ],
+    "options": [
+     "Shuttle bus",
+     "Train",
+     "Limousine bus",
+     "Taxi"
+    ]
+   }
+  },
+  "traps": [
+   "condition-conflict",
+   "number"
+  ]
+ }
+]

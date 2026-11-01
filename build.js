@@ -14,6 +14,7 @@ const GRAMMAR_DIRS = [
   { dir: "grammar/N4", label: "N4" },
   { dir: "grammar/N3", label: "N3" },
   { dir: "grammar/N2", label: "N2" },
+  { dir: "grammar/N1", label: "N1" },
   // Standalone topic pages (A vs B comparisons, exam guides). Served at the
   // site root like lessons (/wa-vs-ga/), with a hub at /guides/. Not a JLPT
   // level: build-anki.js only reads grammar/N*, so no flashcards come from here.
@@ -110,9 +111,16 @@ const GISCUS_SCRIPT = `<script>
 // with defer on lesson pages only (the panel needs an article.lesson).
 const AI_JS_SRC = fs.readFileSync(path.join(__dirname, "site", "ai-assistant.js"), "utf-8");
 const AI_CSS = fs.readFileSync(path.join(__dirname, "site", "ai-assistant.css"), "utf-8");
-const AI_JS_BUNDLE = `(function(){if(!document.querySelector('article.lesson'))return;var s=document.createElement('style');s.textContent=${JSON.stringify(minifyCss(AI_CSS))};document.head.appendChild(s);})();\n` + AI_JS_SRC;
+const AI_JS_BUNDLE = `(function(){var s=document.createElement('style');s.textContent=${JSON.stringify(minifyCss(AI_CSS))};document.head.appendChild(s);})();\n` + AI_JS_SRC;
 const AI_JS_HASH = require("crypto").createHash("md5").update(AI_JS_BUNDLE).digest("hex").slice(0, 8);
 const AI_SCRIPT = `<script src="${SITE_PATH}ai-assistant.js?v=${AI_JS_HASH}" defer></script>`;  // ?v= busts browser caches on every change
+const QUIZ_JS_SRC = fs.readFileSync(path.join(__dirname, "site", "quiz.js"), "utf-8");
+const QUIZ_JS_HASH = require("crypto").createHash("md5").update(QUIZ_JS_SRC).digest("hex").slice(0, 8);
+const QUIZ_CSS = fs.readFileSync(path.join(__dirname, "site", "quiz.css"), "utf-8");
+const FEEDBACK_JS_SRC = fs.readFileSync(path.join(__dirname, "site", "feedback.js"), "utf-8");
+const FEEDBACK_JS_HASH = require("crypto").createHash("md5").update(FEEDBACK_JS_SRC).digest("hex").slice(0, 8);
+// Practice / mock test / flashcard pages; QUIZ_PUBLIC and QUIZ_LINKS are set in build-quiz.js.
+const { buildQuiz, loadLevel: loadQuizLevel, LEVELS: QUIZ_LEVELS, TYPES: QUIZ_TYPES, MOCK: QUIZ_MOCK, QUIZ_PUBLIC, QUIZ_LINKS, AUDIO_REQUESTS: QUIZ_AUDIO_REQUESTS, ABOVE_LEVEL, aboveLevel, CK_IMG_DIR: QUIZ_CK_IMG_DIR } = require("./build-quiz");
 const SETTINGS_JS_HASH = require("crypto").createHash("md5").update(fs.readFileSync(path.join(__dirname, "site", "settings-modal.js"))).digest("hex").slice(0, 8);
 const SETTINGS_SCRIPT = `<script src="${SITE_PATH}settings-modal.js?v=${SETTINGS_JS_HASH}" defer></script>`;
 // Content-Security-Policy connect-src allowlist. This is the technical
@@ -125,7 +133,17 @@ const AI_PROVIDER_HOSTS = [...new Set(
   [...AI_JS_SRC.matchAll(/(?:base|altBase): '(https?:\/\/[^'/]+)/g)]
     .map(m => m[1]).filter(h => !/localhost|127\.0\.0\.1/.test(h))
 )];
-const CSP_META = `<meta http-equiv="Content-Security-Policy" content="connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com ${AI_PROVIDER_HOSTS.join(" ")} http://localhost:* https://localhost:* http://127.0.0.1:* https://127.0.0.1:*">`;
+// The rest of the policy: scripts, styles, images, audio, frames only from
+// this site (plus giscus for comments); no plugins, no <base> or form tricks.
+// Inline scripts stay allowed — the pages are built with many of them — but a
+// script or image from any other host is refused, so an injected tag can't
+// load code or leak data (an <img> beacon) elsewhere.
+const CSP_META = `<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://giscus.app; style-src 'self' 'unsafe-inline' https://giscus.app; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data:; frame-src https://giscus.app; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com ${AI_PROVIDER_HOSTS.join(" ")} http://localhost:* https://localhost:* http://127.0.0.1:* https://127.0.0.1:*">`;
+// Copies of the site (someone rebuilding the repo on their own domain): the
+// host is checked against jpnotes.dev itself — not SITE, which a copy changes —
+// and a copy gets a banner pointing to the original, a canonical link back to
+// it and noindex. Local and LAN previews are left alone.
+const CLONE_GUARD = `<script>(function(){var h=location.hostname;if(/(^|\\.)jpnotes\\.dev$/.test(h)||/^(localhost|127\\.0\\.0\\.1|\\[::1\\]|10\\.|192\\.168\\.|172\\.(1[6-9]|2\\d|3[01])\\.)|\\.(local|localhost|test)$/.test(h)||location.protocol==='file:')return;var u='https://jpnotes.dev'+location.pathname;var c=document.querySelector('link[rel=canonical]');if(c)c.href=u;else{c=document.createElement('link');c.rel='canonical';c.href=u;document.head.appendChild(c);}var r=document.createElement('meta');r.name='robots';r.content='noindex';document.head.appendChild(r);document.addEventListener('DOMContentLoaded',function(){var zh=/^\\/zh\\//.test(location.pathname),d=document.createElement('div');d.setAttribute('style','position:sticky;top:0;z-index:9999;padding:.55rem 1rem;background:#e94560;color:#fff;font:14px/1.5 sans-serif;text-align:center');d.innerHTML=(zh?'这是 jpnotes.dev 的副本，内容可能已过时。最新版：':'This is a copy of jpnotes.dev and may be out of date. The original: ')+'<a style="color:#fff;font-weight:700" href="'+u+'">jpnotes.dev'+location.pathname+'</a>';document.body.insertBefore(d,document.body.firstChild);});})();</script>`;
 
 // Theme init script — runs synchronously in <head> before CSS evaluates,
 // so the saved theme class is on <html> before paint (no flash of wrong theme).
@@ -221,7 +239,7 @@ const LANG_REDIRECT_JS = `(function(){
   var want = ('isEn' in prefs) ? (prefs.isEn ? 'en' : 'zh')
     : (page === 'en' && /^zh/i.test(navigator.language || '')) ? 'zh' : page;
   var alt = want !== page && html.getAttribute('data-alt-' + want);
-  if (alt) location.replace(alt + location.hash);
+  if (alt) location.replace(alt + location.search + location.hash);   // keep ?utm_… for GA
 })();`;
 
 const RUBY_PREF_JS = `(function(){
@@ -508,9 +526,15 @@ const JA_TITLES = {
   N4_grammar_list: "N4 文法チェックリスト",
   N3_grammar_list: "N3 文法チェックリスト",
   N2_grammar_list: "N2 文法チェックリスト",
+  N1_grammar_list: "N1 文法チェックリスト",
   // guides (grammar/guides/)
   "wa-vs-ga": "は vs が",
   "jlpt-december-2026": "JLPT 12月 考前指南",
+  "jlpt-n5-key-grammar": "N5 高频考点",
+  "jlpt-n4-key-grammar": "N4 高频考点",
+  "jlpt-n3-key-grammar": "N3 高频考点",
+  "jlpt-n2-key-grammar": "N2 高频考点",
+  "jlpt-n1-key-grammar": "N1 高频考点",
   "ni-vs-de": "に vs で",
   "kara-vs-node": "から vs ので",
   "to-ba-tara-nara": "と・ば・たら・なら",
@@ -596,6 +620,23 @@ const JA_TITLES = {
   lesson73: "接続・転折 — それにしても/したがって",
   lesson74: "高頻出 — げ/抜く/次第/きり/ぶりに",
   lesson75: "N2文法総復習",
+  lesson76: "時間・時点 — が早いか/や否や/なり/そばから",
+  lesson77: "限定・範囲 — をおいて/ならでは/はおろか",
+  lesson78: "例示・並列 — といい/といわず/であれ",
+  lesson79: "強調・極限 — たりとも/すら/にして",
+  lesson80: "逆接・譲歩 — ものを/といえども/ところを",
+  lesson81: "条件・仮定 — なくして/ともなると/たら最後",
+  lesson82: "目的・原因 — べく/んがため/ゆえ",
+  lesson83: "関連・無関係 — いかんで/をよそに",
+  lesson84: "付随・強制 — ずにはおかない/を余儀なくされる",
+  lesson85: "評価・判断 — までもない/に足る/に堪えない",
+  lesson86: "評価・判断 — べくもない/てしかるべきだ",
+  lesson87: "感情・強調 — てやまない/極まりない",
+  lesson88: "様子・状態 — ずくめ/まみれ/めく",
+  lesson89: "並行・付帯 — かたがた/がてら/かたわら",
+  lesson90: "書き言葉 — べからず/ごとき/んばかり",
+  lesson91: "立場・対比 — にひきかえ/ともあろう/たる",
+  lesson92: "N1文法総復習",
 };
 
 // SEO keywords per lesson (Japanese, Chinese, English)
@@ -663,23 +704,41 @@ const LESSON_KEYWORDS = {
   lesson56: "わけにはいかない, しかない, ことはない, べきだ, べきではない, ものだ, 義務, should, JLPT N3",
   lesson57: "ことか, てたまらない, てならない, てもかまわない, ことがある, 結果, feeling, JLPT N3",
   lesson58: "N3文法, N3 grammar review, 総復習, JLPT N3 summary",
-  lesson59: "からといって, つつも, にしろ, にせよ, たところで, どころではない, 逆接, concession, JLPT N2",
-  lesson60: "あまり, ばこそ, だけに, だけあって, ものだから, 原因, cause, precisely because, JLPT N2",
+  lesson59: "からといって, つつも, にしろ, にせよ, たところで, どころではない, たとえ〜ても, 逆接, concession, JLPT N2",
+  lesson60: "あまり, ばこそ, だけに, だけあって, ものだから, ことだから, 原因, cause, precisely because, JLPT N2",
   lesson61: "に過ぎない, にほかならない, に限る, もかまわず, をものともせず, 程度, 限定, merely, JLPT N2",
-  lesson62: "はもとより, のみならず, 程度, 限定, not only, let alone, JLPT N2",
+  lesson62: "はもとより, のみならず, も〜ば〜も, でさえ, 程度, 限定, not only, let alone, JLPT N2",
   lesson63: "にあたって, に先立って, を機に, をきっかけに, 時間, occasion, prior to, JLPT N2",
-  lesson64: "ないわけにはいかない, に相違ない, わけがない, はずがない, 主張, 判断, impossible, JLPT N2",
-  lesson65: "ということだ, ないものか, としては, としても, 主張, 判断, it means, JLPT N2",
-  lesson66: "に反して, 一方で, 反面, につれて, にしたがって, 対比, contrast, as, JLPT N2",
-  lesson67: "にしても〜にしても, はともかく, をめぐって, を問わず, を中心に, に応じて, 話題, topic, JLPT N2",
+  lesson64: "ないわけにはいかない, に相違ない, わけがない, はずがない, ほかない, よりほかない, 主張, 判断, impossible, JLPT N2",
+  lesson65: "ということだ, ないものか, としては, としても, というものだ, というものではない, 主張, 判断, it means, JLPT N2",
+  lesson66: "に反して, 一方で, かわりに, 反面, につれて, にしたがって, 対比, contrast, as, JLPT N2",
+  lesson67: "にしても〜にしても, はともかく, をめぐって, を問わず, を中心に, に応じて, からすると, からすれば, にしたら, にすれば, のもとで, 話題, topic, JLPT N2",
   lesson68: "てしょうがない, てはいられない, ないことには, てからでないと, 感情, 不可抗, unbearable, JLPT N2",
   lesson69: "に沿って, を踏まえて, を除いて, に加えて, 上で, 末に, 書面, formal written, JLPT N2",
-  lesson70: "ものなら, ようものなら, ことだ, に越したことはない, 仮定, 条件, if, best to, JLPT N2",
+  lesson70: "ものなら, ようものなら, ことだ, に越したことはない, としたら, とすれば, とすると, 仮定, 条件, if, best to, JLPT N2",
   lesson71: "にかけては, に当たらない, あげくに, ことなく, ずに済む, ところだった, 結果, result, JLPT N2",
   lesson72: "だけのことはある, だけは, だけまし, まい, 強調, 限定, worth, at least, JLPT N2",
   lesson73: "それにしても, それなのに, しかも, したがって, すなわち, 接続, 転折, however, therefore, JLPT N2",
   lesson74: "げ, 抜く, 次第だ, 次第で, きり, ぶりに, つき, 高頻出, suffix, JLPT N2",
   lesson75: "N2文法, N2 grammar review, 総復習, JLPT N2 summary",
+  N1_grammar_list: "N1文法一覧, N1语法列表, JLPT N1 grammar list, checklist, 文法チェックリスト",
+  lesson76: "が早いか, や否や, なり, そばから, てからというもの, を皮切りに, に至って, 時間, as soon as, JLPT N1",
+  lesson77: "をおいて, ならでは, にとどまらず, はおろか, もさることながら, に限ったことではない, を限りに, 限定, JLPT N1",
+  lesson78: "といい〜といい, といわず〜といわず, なり〜なり, であれ〜であれ, だの〜だの, うが〜まいが, 例示, JLPT N1",
+  lesson79: "たりとも, すら, ですら, にして, からある, からする, あっての, の極み, の至り, 強調, JLPT N1",
+  lesson80: "ものを, といえども, ところを, ながらも, とはいうものの, うが, うと, にしたって, 逆接, 譲歩, JLPT N1",
+  lesson81: "なくして, ともなると, ともなれば, とあれば, たら最後, が最後, ようでは, ないまでも, 条件, JLPT N1",
+  lesson82: "べく, んがため, ゆえに, とあって, こととて, にかこつけて, 目的, 原因, JLPT N1",
+  lesson83: "いかんで, いかんによっては, いかんにかかわらず, いかんによらず, をよそに, によらず, に即して, にかかわる, JLPT N1",
+  lesson84: "なしに, なしには, ことなしに, ずにはおかない, ずにはすまない, を禁じ得ない, を余儀なくされる, JLPT N1",
+  lesson85: "までもない, までだ, までのことだ, には及ばない, に足る, に足りない, に堪える, に堪えない, にかたくない, JLPT N1",
+  lesson86: "べくもない, てしかるべきだ, でなくてなんだろう, ないではすまない, ないものでもない, ないでもない, ばそれまでだ, JLPT N1",
+  lesson87: "てやまない, 極まりない, 極まる, といったらない, 限りだ, とは, てはばからない, 感情, JLPT N1",
+  lesson88: "ずくめ, まみれ, ぐるみ, めく, ともなく, ともなしに, ながらに, 様子, JLPT N1",
+  lesson89: "かたがた, がてら, かたわら, つ〜つ, なりに, とばかりに, 並行, JLPT N1",
+  lesson90: "うにも〜ない, べからず, べからざる, ごとき, ごとく, ずとも, んばかり, をもって, 文語, JLPT N1",
+  lesson91: "にひきかえ, ともあろう, たるもの, ではあるまいし, と相まって, に則って, JLPT N1",
+  lesson92: "N1文法, N1 grammar review, 総復習, JLPT N1 summary",
 };
 
 // ─── Helpers ───
@@ -1022,7 +1081,7 @@ function tagElements(html) {
       // Japanese if any =/→/： segment is Japanese: 「これはつまらないだった。
       // → ❌ 错！…」 keeps its furigana; stripChineseSegments later drops the
       // readings from the Chinese segment.
-      if (outsideParens.split(/[=＝→：]/).some(isJapaneseText)) {
+      if (outsideParens.split(/[=＝→：—]/).some(isJapaneseText)) {
         // Japanese element → tag it
         const tagged = openTag.replace(/^<(\w+)/, '<$1 data-ja');
         return tagged + content + closeTag;
@@ -1114,6 +1173,45 @@ async function furiganaText(kuro, text) {
 // surrounding plain text all match; `before`/`after` see the text with tags
 // and readings stripped, so a neighbouring ruby reads as its bare kanji.
 const RUBY_FIXES = [
+  // ── N1 lessons (76–92): context-specific readings; listed first so they win
+  // over the general rules below. ──
+  { kanji: "店", from: /^(てん|みせ)$/, before: /(号|人気|高級|飲食|専門|支|本)$/, to: "てん" },
+  { kanji: "今", from: /^(いま|こん)$/, after: /^(シーズン|大会|年度|世紀|学期|週|期)/, to: "こん" },
+  { kanji: "形", from: /^(がた|かたち|けい)$/, before: /(といい|といわず)$/, to: "かたち" },
+  { kanji: "手", from: /^しゅ$/, after: /^といい/, to: "て" },
+  { kanji: "人", from: /^じん$/, after: /^に譲/, to: "ひと" },
+  { kanji: "人", from: /^(じん|にん)$/, before: /(料理|依頼)$/, to: "にん" },
+  // 何人（なんぴと）たりとも
+  { kanji: "人", from: /^(にん|じん|ひと)$/, before: /何$/, after: /^(たりとも|\s*[（(]なんぴと|」 is read)/, to: "ぴと" },
+  { kanji: "来", from: /^(き|きた|く)$/, after: /^(よう|ず|（　+）)/, to: "こ" },
+  { kanji: "中", from: /^ちゅう$/, before: /(部屋|会社|今夜|世界|日本|町|家|学校|体)$/, to: "じゅう" },
+  { kanji: "方", from: /^ほう$/, before: /(立派な|あろう)$/, to: "かた" },
+  { kanji: "物", from: /^ぶつ$/, after: /^も言/, to: "もの" },
+  { kanji: "入", from: /^にゅう$/, after: /^ろう/, to: "はい" },
+  { kanji: "降", from: /^(くだ|お)$/, before: /[雨雪][がはも]$/, after: /^ろう/, to: "ふ" },
+  { kanji: "然", from: /^しか$/, after: /^る」/, to: "さ" },
+  { kanji: "付", from: /^づ$/, before: /盛り$/, to: "つ" },
+  { kanji: "日当", from: /^ひなた$/, after: /^たり/, to: "ひあ" },
+  { kanji: "額", from: /^がく$/, after: /^が汗/, to: "ひたい" },
+  { kanji: "我", from: /^わが$/, after: /^ながら/, to: "われ" },
+  { kanji: "故", from: /^こ$/, after: /^(（に）|に|の)/, to: "ゆえ" },
+  { kanji: "得", from: /^う$/, after: /^ん/, to: "え" },
+  { kanji: "如何", from: /^いか$/, to: "いかん" },
+  { kanji: "堪", from: /^こた$/, before: /に$/, to: "た" },
+  { kanji: "愛", from: /^め$/, before: /の$/, to: "あい" },
+  { kanji: "皆", from: /^かい$/, after: /^(独立|そろ|で|が|、)/, to: "みな" },
+  { kanji: "剥", from: /^へ$/, after: /^が/, to: "は" },
+  { kanji: "遣", from: /^や$/, before: /気を$/, to: "つか" },
+  { kanji: "謝", from: /^しゃ$/, after: /^ろう/, to: "あやま" },
+  { kanji: "一目", from: /^いちもく$/, after: /^(見|で)/, to: "ひとめ" },
+  // 一 + counter: 一歩 いっぽ, 一着 いっちゃく, 一回戦 いっかいせん …; 一駅 ひとえき.
+  { kanji: "一", from: /^いち$/, after: /^(歩|球|着|戸|泊|本|冊|軒|国|点|回|滴|杯|切|発|家)/, to: "いっ" },
+  { kanji: "一", from: /^いち$/, after: /^駅/, to: "ひと" },
+  { kanji: "歩", from: /^ほ$/, before: /一$/, to: "ぽ" },
+  { kanji: "本", from: /^ほん$/, before: /一$/, to: "ぽん" },
+  { kanji: "泊", from: /^はく$/, before: /一$/, to: "ぱく" },
+  { kanji: "杯", from: /^はい$/, before: /一$/, to: "ぱい" },
+  { kanji: "発", from: /^はつ$/, before: /一$/, to: "ぱつ" },
   // 行って/行った is いって/いった — except after を (調査を行った = おこなった).
   { kanji: "行", from: /^(おこな|くだり|ゆ)$/, after: /^っ[たて]/, before: /[^を]$/, to: "い" },
   // 〜た後で / 〜の後で is あとで, never のちで.
@@ -1175,6 +1273,7 @@ const RUBY_FIXES = [
   { kanji: "辛", from: /^(つら|からし)$/, to: "から" },
   // 日本 is にほん in ordinary speech (日本語/日本人 already are).
   { kanji: "日本", from: /^にっぽん$/, to: "にほん" },
+  { kanji: "日本人", from: /^にっぽんじん$/, to: "にほんじん" },
   // Month names: 3月 / 何月 = さんがつ / なんがつ.
   { kanji: "月", from: /^つき$/, before: /[0-9０-９何〇○]$/, to: "がつ" },
   { kanji: "何", from: /^なに$/, after: /^(月|の|て|って)/, to: "なん" },
@@ -1278,6 +1377,9 @@ function fixReadings(html) {
       return pre + ruby(num + kanji, r + (kanji === "日間" ? "かん" : ""));
     }
   );
+  // A date's 1日 (3月1日) is ついたち; elsewhere (1日で, 1日おきに) it stays いちにち.
+  html = html.replace(/(<ruby>月<rp>\(<\/rp><rt>がつ<\/rt><rp>\)<\/rp><\/ruby>)([1１])<ruby>日<rp>\(<\/rp><rt>にち<\/rt><rp>\)<\/rp><\/ruby>/g,
+    (m, month, one) => month + ruby(one + "日", "ついたち"));
   // kuroshiro echoes text it cannot read — a Chinese gloss that slipped into a
   // data-ja element comes back annotated with itself (刚(刚)). Keep the text,
   // drop the ruby.
@@ -1317,7 +1419,7 @@ function splitGloss(str) {
     else if (ch === ">") inTag = false;
     else if (!inTag && (ch === "（" || ch === "(")) depth++;
     else if (!inTag && (ch === "）" || ch === ")")) depth = Math.max(0, depth - 1);
-    else if (!inTag && depth === 0 && "=＝→：".includes(ch)) {
+    else if (!inTag && depth === 0 && "=＝→：—".includes(ch)) {
       out.push(cur, ch);
       cur = "";
       continue;
@@ -1329,13 +1431,16 @@ function splitGloss(str) {
 }
 
 // Strip ruby from Chinese glosses inside a Japanese element: a segment after
-// =, → or ： that is Chinese (ようにしている = 一直在注意, → ❌ 错！…).
+// =, →, ： or — that is Chinese (〜ものを — 本来就好了，可是却) (ようにしている = 一直在注意, → ❌ 错！…).
 // Quoted 「…」 Japanese doesn't count as kana.
 function stripChineseSegments(html) {
   return html.replace(/(<(li|p|td|th|dd|dt|blockquote|summary)\b[^>]*\bdata-ja\b[^>]*>)([\s\S]*?)(<\/\2>)/g,
-    (m, open, tag, content, close) => {
+    (m, open, tag, content, close) => open + content.split(/(<\/span>\s*<span class="lang-(?:zh|en)"[^>]*>)/).map((piece, k) => (k % 2 ? piece : stripPiece(piece))).join("") + close);
+}
+// One language's half of an element (「中文 // English」 items are two spans).
+function stripPiece(content) {
       const parts = splitGloss(content);
-      if (parts.length === 1) return m;
+      if (parts.length === 1) return content;
       const out = parts.map((seg, i) => {
         if (i % 2) return seg;
         const plain = seg
@@ -1347,8 +1452,7 @@ function stripChineseSegments(html) {
         }
         return seg;
       });
-      return open + out.join("") + close;
-    });
+      return out.join("");
 }
 
 // Process HTML:
@@ -1528,6 +1632,8 @@ function audioText(content) {
     /[→⇒=＝+＋]/.test(outside) ||              // glosses, answers, formulas
     /[a-z]{3,}/.test(outside) ||               // English notes (ABC, SNS are fine)
     /(^|\s)[a-dａ-ｄ][.．)）]/.test(outside) || // a. b. c. options
+    /，/.test(outside) ||                       // Chinese comma (Japanese uses 、)
+    /^[^：:぀-ヿ]*[、…"“][^：:぀-ヿ]*[：:]/.test(outside) || // Chinese list label 手段、方法：
     hasSC(outside)                            // Chinese
   ) return "";
   const plain = outside
@@ -1551,8 +1657,22 @@ async function main() {
   const today = new Date().toISOString().slice(0, 10);
   const groups = discoverFiles();
   const marked = new Marked({ gfm: true, breaks: false });
+  // No strikethrough: the notes write ranges as 越~越~ / 别说~就连~也, which GFM
+  // would turn into <del>. Put the tildes back.
+  marked.use({ renderer: { del(token) { const t = token.raw.startsWith("~~") ? "~~" : "~"; return t + this.parser.parseInline(token.tokens) + t; } } });
 
   const sidebarHtml = [];
+  // Practice / mock test / flashcard links for a level that has questions.
+  const quizPages = (level) => {
+    if (!QUIZ_LINKS || !/^N[1-5]$/.test(level) || !loadQuizLevel(level).qs.length) return [];
+    const lv = level.toLowerCase();
+    return [
+      { href: `${SITE_PATH}${lv}-practice/`, zh: "✍ 练习题", en: "✍ Practice questions" },
+      loadQuizLevel(level).qs.some((q) => q._kind === "choukai") && { href: `${SITE_PATH}${lv}-listening/`, zh: "🎧 听力练习", en: "🎧 Listening practice" },
+      fs.existsSync(path.join(__dirname, "questions", level, "mock-1")) && { href: `${SITE_PATH}${lv}-mock-test/`, zh: "⏱ 模拟题", en: "⏱ Mock test" },
+      { href: `${SITE_PATH}${lv}-cards/`, zh: "🗂 语法卡片", en: "🗂 Grammar flashcards" },
+    ].filter(Boolean);
+  };
   const articlesHtml = [];
   const audioRequests = [];
   const audioSeen = new Set();
@@ -1858,6 +1978,18 @@ async function main() {
   </div>`
     );
   }
+  // 做题 group, like 专题: the practice hub, then each level's practice, mock test and flashcards.
+  const practiceItems = QUIZ_LINKS ? QUIZ_LEVELS.flatMap((lv) => quizPages(lv).map((q) => ({ ...q, lv }))) : [];
+  // 做题 and 专题 go first: they're the most-used entries, and collapsed each is one row.
+  const guidesGroup = sidebarHtml.findIndex((g) => g.includes('data-level="guides"'));
+  if (guidesGroup >= 0) sidebarHtml.unshift(...sidebarHtml.splice(guidesGroup, 1));
+  if (practiceItems.length) sidebarHtml.unshift(`<div class="nav-group-wrap" data-level="practice">
+    <button type="button" class="nav-group" aria-expanded="false"><span class="nav-group-label"><span class="lang-zh">做题</span><span class="lang-en">Practice</span></span><span class="nav-caret" aria-hidden="true">▸</span></button>
+    <div class="nav-group-items">
+      <a class="nav-item nav-overview" href="${SITE_PATH}practice/"><span class="lang-zh">做题总览</span><span class="lang-en">Practice hub</span></a>
+      ${practiceItems.map((q) => `<a class="nav-item" href="${q.href}"><span class="lang-zh">${q.lv} ${q.zh.replace(/^\S+\s/, "")}</span><span class="lang-en">${q.lv} ${q.en.replace(/^\S+\s/, "")}</span></a>`).join("\n      ")}
+    </div>
+  </div>`);
 
   // ─── Cross-link related grammar points between lessons ───
   // Build an index: grammar term → { lessonId, slug }
@@ -1907,8 +2039,13 @@ async function main() {
         if (!hadTilde && !hasKana) continue;
         // Skip generic section labels that show up across every lesson.
         if (/^(辨析|含义|用法|接続|接续|例句|練習|练习|本课|总结|计划|易错点)$/.test(term)) continue;
+        // In an N1 heading, a bit in brackets (〜を皮切りに（して）, （よ）うが) is an optional part, not a pattern.
+        if (lesson.level === "N1" && (/[（(]$/.test(content.slice(0, content.indexOf(pat))) || term.length < 2 || /^(して|うが|うと|よう)$/.test(term))) continue;
         if (!grammarIndex.has(term)) grammarIndex.set(term, []);
-        grammarIndex.get(term).push({ id: lesson.id, slug, description, descriptionEn, level: lesson.level });
+        // N1 patterns are often short kana (なり, べく, うが, して from 〜を皮切りに（して）)
+        // that turn up in ordinary sentences, so links to them need the
+        // pattern written as a pattern on the citing page (「なり」, 〜なり).
+        grammarIndex.get(term).push({ id: lesson.id, slug, description, descriptionEn, level: lesson.level, strict: lesson.level === "N1" });
       }
     }
     // Lessons with no numbered points (checklists, 五十音, 总复习) stay
@@ -1918,6 +2055,19 @@ async function main() {
     }
   }
 
+  // Guide pages link a pattern to its lesson ([〜たとたん](/lesson48/)); point
+  // the link at that grammar point's heading when the lesson has one by that name.
+  for (const g of lessonPages.filter((l) => l.level === "guides")) {
+    g.html = g.html.replace(/<a href="\/(lesson\d+)\/">([^<]+)<\/a>/g, (m, id, text) => {
+      const names = text.replace(/^[〜～]/, "").replace(/[（(][^）)]*[）)]/g, "").split(/[／/・、]/).map((t) => t.replace(/^[〜～]/, "").trim()).filter(Boolean);
+      for (const n of names) {
+        const loc = (grammarIndex.get(n) || []).find((l) => l.id === id);
+        if (loc) return `<a href="/${id}/#${loc.slug}">${text}</a>`;
+      }
+      return m;
+    });
+  }
+
   // Insert cross-links: for each lesson, find references to grammar in other
   // lessons. Cap at 25 per lesson (up from 8) for denser internal linking —
   // Google's SEO guide treats internal links as a primary discovery signal.
@@ -1925,13 +2075,24 @@ async function main() {
     let html = lessonPages[li].html;
     const relatedLinks = new Set();
     const seenTerms = new Set();
+    const candidates = [];
     for (const [term, locations] of grammarIndex) {
       if (seenTerms.has(term)) continue;
       const otherLocs = locations.filter(l => l.id !== lessonPages[li].id);
       if (otherLocs.length === 0) continue;
-      const plainText = html.replace(/<h2[\s\S]*?<\/h2>/g, "").replace(/<[^>]+>/g, "");
-      if (plainText.includes(term) && relatedLinks.size < 25) {
-        const loc = otherLocs[0];
+      const plainText = html.replace(/<h2[\s\S]*?<\/h2>/g, "").replace(/<(rt|rp)>[^<]*<\/\1>/g, "").replace(/<\/(td|th|li|p)>/g, " ").replace(/<[^>]+>/g, "");
+      const loc = otherLocs[0];
+      // A lesson that teaches a same-looking pattern itself (N3 〜といい) doesn't link to the N1 one.
+      if (loc.strict && locations.some(l => l.id === lessonPages[li].id && !l.strict)) continue;
+      const cited = loc.strict ? new RegExp(`(?:^|[「〜～\\s])${term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?=[」〜～、／/（(\\s]|$)`).test(plainText) : plainText.includes(term);
+      if (cited) { candidates.push({ term, loc }); seenTerms.add(term); }
+    }
+    // Up to 25, nearest level first (an N1 page links N1/N2 grammar before
+    // N5 basics; otherwise long pages fill up with だ・て・に); index order breaks ties.
+    const LV = { N5: 5, N4: 4, N3: 3, N2: 2, N1: 1 }, here = LV[lessonPages[li].level];
+    const dist = (c) => (here && LV[c.loc.level] ? Math.abs(here - LV[c.loc.level]) : 0);
+    for (const { term, loc } of candidates.map((c, i) => ({ ...c, i, d: dist(c) })).sort((a, b) => a.d - b.d || a.i - b.i).slice(0, 25)) {
+      {
         // Descriptive anchor: pattern + (description + level tag) so the
         // link text tells readers and Google what the target page contains.
         const levelTag = loc.level ? `<span class="cross-link-level">${loc.level}</span>` : "";
@@ -1943,7 +2104,6 @@ async function main() {
           ? `${loc.description} — ${loc.level || ""} ${loc.id}`
           : `${loc.level || ""} ${loc.id}`).trim();
         relatedLinks.add(`<a href="${SITE}${loc.id}/#${loc.slug}" class="cross-link" data-target="${loc.id}" data-scroll="${loc.slug}" title="${titleAttr.replace(/"/g, "&quot;")}"><span class="cross-link-term">${term}</span>${descPart}${levelTag}</a>`);
-        seenTerms.add(term);
       }
     }
     if (relatedLinks.size > 0) {
@@ -2061,6 +2221,7 @@ async function main() {
 
   const ICON_SIDEBAR = loadIcon("sidebar.svg");
   const ICON_SEARCH = loadIcon("search.svg");
+  const ICON_SHARE = loadIcon("share.svg");
   const ICON_CHAT = loadIcon("chat.svg");
   const ICON_SETTINGS = loadIcon("settings.svg");
 
@@ -2076,13 +2237,25 @@ async function main() {
       <a href="${SITE_PATH}about/"><span class="lang-zh">关于</span><span class="lang-en">About</span></a>
       <a href="https://github.com/Ralphbupt" target="_blank">GitHub</a>
       <a href="https://liko.page/" target="_blank" rel="author">liko.page</a>
+      <a href="#feedback" class="fb-open"><span class="lang-zh">💬 反馈</span><span class="lang-en">💬 Feedback</span></a>
     </nav>
-    <p>© ${new Date().getFullYear()} jpnotes.dev</p>
-  </footer>`;
-  const sidebarMarkupHtml = `<nav id="sidebar" class="collapsed">
+    <p>© ${new Date().getFullYear()} <a href="https://jpnotes.dev/">jpnotes.dev</a> · <span class="lang-zh">内容采用 <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans" rel="license">CC BY-NC 4.0</a> 授权，转载请注明出处 jpnotes.dev，禁止商用</span><span class="lang-en">Content licensed <a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="license">CC BY-NC 4.0</a> — credit jpnotes.dev, non-commercial use only</span></p>
+  </footer>
+  <script src="${SITE_PATH}feedback.js?v=${FEEDBACK_JS_HASH}" defer></script>`;
+  // Phones: a top bar (☰ stays the sidebar's own button, at its left end) with
+  // search / AI / share / settings, so they don't hide inside the sidebar.
+  const mobileBarHtml = `<div id="m-bar"><a id="m-title" href="${SITE_PATH}"></a>
+    <button type="button" class="m-btn" data-m="search" aria-label="搜索 / Search">${ICON_SEARCH}</button>
+    <button type="button" class="m-btn" data-m="ai" aria-label="问 AI / Ask AI" hidden>${ICON_CHAT}</button>
+    <button type="button" class="m-btn" data-m="share" aria-label="分享 / Share">${ICON_SHARE}</button>
+    <button type="button" class="m-btn" data-m="settings" aria-label="设置 / Settings">${ICON_SETTINGS}</button>
+  </div>`;
+  const sidebarMarkupHtml = `${mobileBarHtml}
+<nav id="sidebar" class="collapsed">
   <div class="nav-tools">
     <button id="menu-toggle" type="button" class="nav-tool-btn" aria-label="显示/收起侧栏 / Toggle sidebar" title="显示/收起侧栏 / Toggle sidebar">${ICON_SIDEBAR}</button>
     <button id="search-btn" type="button" class="nav-tool-btn nav-tool-extra" aria-label="搜索 / Search" title="搜索 / Search ( / )">${ICON_SEARCH}</button>
+    <button id="share-btn" type="button" class="nav-tool-btn nav-tool-extra" aria-label="分享 / Share" title="分享 / Share">${ICON_SHARE}</button>
     <button id="ai-btn" type="button" class="nav-tool-btn nav-tool-extra nav-tool-ai" aria-label="问 AI / Ask AI" title="问 AI / Ask AI">${ICON_CHAT}</button>
     <button id="settings-btn" type="button" class="nav-tool-btn nav-tool-extra" aria-label="设置 / Settings" title="设置 / Settings">${ICON_SETTINGS}</button>
   </div>
@@ -2104,9 +2277,10 @@ async function main() {
   try {
     var sbPref = localStorage.getItem('sb');          // '1' = collapsed, '0' = open
     var isHome = location.pathname === '${SITE_PATH}';   // <main> isn't parsed yet here
-    var startCollapsed = sbPref === null
+    // Phones (<=768px, where it overlays the page) always start closed.
+    var startCollapsed = window.innerWidth <= 768 || (sbPref === null
       ? (isHome || window.innerWidth < 1100)
-      : sbPref === '1';
+      : sbPref === '1');
     // Open it without the width animation: animating on load re-wraps every
     // item as the sidebar grows, which counts as layout shift (CLS).
     if (!startCollapsed) {
@@ -2123,6 +2297,7 @@ async function main() {
 
   // Mark the current lesson/level entry active.
   var item = slug ? (sidebar.querySelector('a[data-target="' + slug + '"]')
+          || sidebar.querySelector('.nav-group-wrap a[href$="/' + slug + '/"]')
           || sidebar.querySelector('a[href$="/' + slug + '/"]')) : null;
   if (item) item.classList.add('active');
 
@@ -2132,13 +2307,13 @@ async function main() {
     if (btn) btn.setAttribute('aria-expanded', on ? 'true' : 'false');
   }
   // Open the group holding the active item; else the level named in the URL
-  // (/N5/ or N5_grammar_list); else the first group.
+  // (/N5/ or N5_grammar_list); else N5.
   var activeWrap = item ? item.closest('.nav-group-wrap') : null;
   if (!activeWrap) {
-    var lvl = (path.match(/\\/(N[2-5])(?=\\b|\\/|_)/) || [])[1] || (slug && (slug.match(/^(N[2-5])/) || [])[1]);
+    var lvl = (path.match(/\\/(N[1-5])(?=\\b|\\/|_)/) || [])[1] || (slug && (slug.match(/^(N[1-5])/) || [])[1]);
     if (lvl) activeWrap = sidebar.querySelector('.nav-group-wrap[data-level="' + lvl + '"]');
   }
-  if (!activeWrap && wraps.length) activeWrap = wraps[0];
+  if (!activeWrap && wraps.length) activeWrap = sidebar.querySelector('.nav-group-wrap[data-level="N5"]') || wraps[0];
   wraps.forEach(function(w){ setExpanded(w, w === activeWrap); });
   wraps.forEach(function(w){
     var btn = w.querySelector('.nav-group');
@@ -2147,12 +2322,85 @@ async function main() {
 
   // Menu toggle: expand/collapse sidebar + toolbar (same on desktop and mobile).
   var toggle = document.getElementById('menu-toggle');
+  // On phones it works as a drawer: a backdrop that closes it, closed again
+  // when a link is followed, no remembered state, and the back button closes
+  // it (opening pushes a history entry).
+  var phone = window.matchMedia ? matchMedia('(max-width: 768px)') : { matches: false };
+  var backdrop = document.createElement('div');
+  backdrop.id = 'sb-backdrop';
+  document.body.appendChild(backdrop);
+  function setOpen(open) {
+    sidebar.classList.toggle('collapsed', !open);
+    document.body.classList.toggle('sidebar-collapsed', !open);
+    document.documentElement.classList.toggle('sb-lock', open && phone.matches);
+  }
+  function closeDrawer() {
+    if (history.state && history.state.sb) history.back();   // popstate closes it
+    else setOpen(false);
+  }
   if (toggle) toggle.addEventListener('click', function(){
     var collapse = !sidebar.classList.contains('collapsed');
-    sidebar.classList.toggle('collapsed', collapse);
-    document.body.classList.toggle('sidebar-collapsed', collapse);
+    if (phone.matches) {
+      if (collapse) return closeDrawer();
+      setOpen(true);
+      try { history.pushState({ sb: 1 }, ''); } catch (e) {}
+      return;
+    }
+    setOpen(!collapse);
     try { localStorage.setItem('sb', collapse ? '1' : '0'); } catch (e) {}
   });
+  backdrop.addEventListener('click', closeDrawer);
+  window.addEventListener('popstate', function () { if (phone.matches && !sidebar.classList.contains('collapsed')) setOpen(false); });
+  window.addEventListener('pageshow', function (e) { if (e.persisted && phone.matches) setOpen(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && phone.matches && !sidebar.classList.contains('collapsed')) closeDrawer(); });
+  // Following a link: replace the drawer's history entry, so Back from the
+  // next page goes straight to this one.
+  sidebar.addEventListener('click', function (e) {
+    var a = e.target.closest('a[href]');
+    if (!a || !phone.matches || e.defaultPrevented || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || a.target === '_blank') return;
+    if (history.state && history.state.sb) { e.preventDefault(); location.replace(a.href); }
+    else setOpen(false);
+  });
+
+  // Lesson → practice links: which one gets clicked (top / point / end).
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('[data-ql]');
+    if (a && window.gaEvent) window.gaEvent('quiz_link', { where: a.getAttribute('data-ql'), page: location.pathname });
+  });
+
+  // Phone top bar: where you are (links to the level overview), the tool
+  // buttons, and it slides away while scrolling down.
+  var mbar = document.getElementById('m-bar');
+  if (mbar) {
+    var mt = document.getElementById('m-title'), head = sidebar.querySelector('.nav-header a');
+    var lvl = activeWrap && activeWrap.getAttribute('data-level');
+    if (item) {
+      var label = item.textContent.replace(/\\s+/g, ' ').trim().replace(/^(\\d+)(?=\\S)/, '$1 ');
+      mt.textContent = (lvl && label.indexOf(lvl) !== 0 ? lvl + ' · ' : '') + label;
+      var over = activeWrap && activeWrap.querySelector('a[href]');
+      mt.href = over && over !== item ? over.getAttribute('href') : (head ? head.getAttribute('href') : mt.href);
+    } else if (head) { mt.innerHTML = head.innerHTML; mt.href = head.getAttribute('href'); }
+    // The AI script tag comes later in the page than this one.
+    document.addEventListener('DOMContentLoaded', function () {
+      if (document.querySelector('script[src*="ai-assistant.js"]') && document.getElementById('ai-btn')) mbar.querySelector('[data-m="ai"]').hidden = false;
+    });
+    mbar.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-m]');
+      if (!b) return;
+      var m = b.getAttribute('data-m');
+      if (m === 'share') { e.stopPropagation(); if (window.jpShare) window.jpShare({ src: 'mbar', anchor: b }); return; }
+      var target = document.getElementById({ search: 'search-btn', ai: 'ai-btn', settings: 'settings-btn' }[m]);
+      if (target) target.click();
+    });
+    var lastY = window.scrollY;
+    window.addEventListener('scroll', function () {
+      var y = window.scrollY, dy = y - lastY;
+      if (Math.abs(dy) < 6) return;
+      lastY = y;
+      var hide = phone.matches && dy > 0 && y > 120 && sidebar.classList.contains('collapsed') && !document.body.classList.contains('ai-open');
+      document.documentElement.classList.toggle('mbar-hidden', hide);
+    }, { passive: true });
+  }
 
   // Center the active item so the user lands on their place in a long list.
   if (item) {
@@ -2176,8 +2424,8 @@ ${SETTINGS_SCRIPT}`;
   // Don't inline every lesson article into index.html (3.98MB → ~50KB).
   // Replace with a landing-page layout: hero + level cards + how-to.
   // Sidebar links already point to standalone /dayXX/ pages.
-  const levelCounts = { N5: 0, N4: 0, N3: 0, N2: 0 };
-  const levelRange = { N5: {}, N4: {}, N3: {}, N2: {} };
+  const levelCounts = { N5: 0, N4: 0, N3: 0, N2: 0, N1: 0 };
+  const levelRange = { N5: {}, N4: {}, N3: {}, N2: {}, N1: {} };
   let totalPoints = 0;
   let totalLessons = 0;
   for (const l of lessonPages) {
@@ -2195,14 +2443,15 @@ ${SETTINGS_SCRIPT}`;
     ? `第 ${levelRange[lv].first}–${levelRange[lv].last} 课`
     : `Lessons ${levelRange[lv].first}–${levelRange[lv].last}`;
   const homeMainHtml = `<header class="home-hero">
-    <h1><span class="lang-zh">日语语法笔记 — N5 到 N2，8 周完整体系</span><span class="lang-en">Japanese Grammar Notes — JLPT N5 to N2 in 8 Weeks</span></h1>
+    <h1><span class="lang-zh">日语语法笔记 — JLPT N5 到 N1 全部语法</span><span class="lang-en">Japanese Grammar Notes — JLPT N5 to N1</span></h1>
     <p class="home-intro">
-      <span class="lang-zh">免费、双语（中文 + 日语）的日语语法笔记，从 N5 入门到 N2 进阶共 <strong>${totalLessons} 课、${totalPoints}+ 语法点</strong>，每课配接续规则、例句、辨析、练习题与间隔复习勾选清单。</span>
-      <span class="lang-en">Free, bilingual (Chinese + Japanese) grammar notes covering JLPT N5 → N2 in <strong>${totalLessons} lessons, ${totalPoints}+ grammar points</strong>. Each lesson has conjugation rules, example sentences, side-by-side comparisons of confusable patterns, practice questions, and a spaced-repetition checklist.</span>
+      <span class="lang-zh">免费、双语（中文 + 日语）的日语语法笔记，从 N5 到 N1 共 <strong>${totalLessons} 课、${totalPoints}+ 语法点</strong>，每课配接续规则、例句、辨析、练习题与间隔复习勾选清单。</span>
+      <span class="lang-en">Free Japanese grammar notes in plain English, covering JLPT N5 → N1 in <strong>${totalLessons} lessons, ${totalPoints}+ grammar points</strong>. Each lesson has conjugation rules, example sentences, side-by-side comparisons of confusable patterns, practice questions, and a spaced-repetition checklist.</span>
     </p>
     <div class="home-actions">
       <a class="btn-primary" href="lesson01/"><span class="lang-zh">从第 1 课开始</span><span class="lang-en">Start with lesson 1</span></a>
-      <a class="btn-secondary" href="anki/"><span class="lang-zh">下载 Anki 卡组</span><span class="lang-en">Get the Anki decks</span></a>
+      <a class="btn-secondary" href="anki/"><span class="lang-zh">下载 Anki 卡组</span><span class="lang-en">Get the Anki decks</span></a>${quizPages("N5").length ? `
+      <a class="btn-secondary" href="practice/"><span class="lang-zh">做题 · 模拟 · 卡片</span><span class="lang-en">Practice, mock tests &amp; flashcards</span></a>` : ""}
     </div>
   </header>
   <section class="home-levels">
@@ -2239,7 +2488,15 @@ ${SETTINGS_SCRIPT}`;
           <span class="lang-zh">高阶逆接、程度限定、判断主张、对比关系、感情表达、书面专用语法。共 ${levelCounts.N2} 课。</span>
           <span class="lang-en">Advanced concession, degree/limit, assertion, contrast, emotional expressions, and written-only grammar. ${levelCounts.N2} lessons.</span>
         </p>
-      </a>
+      </a>${levelCounts.N1 ? `
+      <a class="level-card" href="N1/">
+        <span class="level-head"><span class="level-tag">N1</span><span class="level-range"><span class="lang-zh">${rangeLabel("N1", "zh")}</span><span class="lang-en">${rangeLabel("N1", "en")}</span></span></span>
+        <h3><span class="lang-zh">报刊・论说文</span><span class="lang-en">News · essays · literature</span></h3>
+        <p>
+          <span class="lang-zh">时点、限定、强调极限、文语与书面表达、评价判断、感情强调——报刊和论说文里的高阶语法。共 ${levelCounts.N1} 课。</span>
+          <span class="lang-en">Timing, limits, extremes, classical and written forms, evaluation, emphatic emotion — the grammar of newspapers, essays and literature. ${levelCounts.N1} lessons.</span>
+        </p>
+      </a>` : ""}
     </div>
   </section>
   <section class="home-howto">
@@ -2249,16 +2506,16 @@ ${SETTINGS_SCRIPT}`;
       <span class="lang-en">Each lesson covers <strong>conjugation / meaning / examples / comparisons / common mistakes</strong>, plus practice questions and a spaced-repetition checklist (day 0 → 1 → 4 → 7 → 14 → 30).</span>
     </p>
     <p>
-      <span class="lang-zh">从级别概览页（<a href="N5/">N5</a> · <a href="N4/">N4</a> · <a href="N3/">N3</a> · <a href="N2/">N2</a>）查看完整语法清单，或从侧栏直接进入任意一课。</span>
-      <span class="lang-en">Browse the per-level index pages (<a href="N5/">N5</a> · <a href="N4/">N4</a> · <a href="N3/">N3</a> · <a href="N2/">N2</a>) for the full grammar list, or jump to any lesson via the sidebar.</span>
+      <span class="lang-zh">从级别概览页（<a href="N5/">N5</a> · <a href="N4/">N4</a> · <a href="N3/">N3</a> · <a href="N2/">N2</a>${levelCounts.N1 ? ` · <a href="N1/">N1</a>` : ""}）查看完整语法清单，在 <a href="grammar/">日语语法大全</a> 一页看全部语法点，或从侧栏直接进入任意一课。</span>
+      <span class="lang-en">Browse the per-level index pages (<a href="N5/">N5</a> · <a href="N4/">N4</a> · <a href="N3/">N3</a> · <a href="N2/">N2</a>${levelCounts.N1 ? ` · <a href="N1/">N1</a>` : ""}), see every grammar point on one page in the <a href="grammar/">Japanese grammar list</a>, or jump to any lesson via the sidebar.</span>
     </p>
     <p>
       <span class="lang-zh">总分不清 <a href="wa-vs-ga/">は和が</a>、<a href="kara-vs-node/">から和ので</a>？<a href="guides/">专题页</a>把最容易混的语法放在一起对比；12 月考试前看 <a href="jlpt-december-2026/">JLPT 考前指南</a>。</span>
       <span class="lang-en">Mixing up <a href="wa-vs-ga/">は vs が</a> or <a href="kara-vs-node/">から vs ので</a>? The <a href="guides/">guides</a> put confusable patterns side by side; sitting the December exam? See the <a href="jlpt-december-2026/">JLPT exam guide</a>.</span>
     </p>
     <p>
-      <span class="lang-zh">用 Anki 复习？下载 <a href="anki/">免费 JLPT N5-N2 文法卡组</a>（共 {{ANKI_CARDS}} 张，原生 TSV 一键导入）。</span>
-      <span class="lang-en">Use Anki for review? Download the <a href="anki/">free JLPT N5–N2 grammar decks</a> ({{ANKI_CARDS}} cards, native TSV one-click import).</span>
+      <span class="lang-zh">用 Anki 复习？下载 <a href="anki/">免费 JLPT N5–N1 文法卡组</a>（共 {{ANKI_CARDS}} 张，原生 TSV 一键导入）。</span>
+      <span class="lang-en">Use Anki for review? Download the <a href="anki/">free JLPT N5–N1 grammar decks</a> ({{ANKI_CARDS}} cards, native TSV one-click import).</span>
     </p>
     <p>
       <span class="lang-zh">想练听力？试试 <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News 播客</a>——慢速日语新闻 + 英语解说，配套逐句精听与 transcript。</span>
@@ -2272,15 +2529,15 @@ ${SETTINGS_SCRIPT}`;
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Japanese Grammar Notes — Free JLPT N5 to N2 Grammar Lessons | 日语语法笔记</title>
-<meta name="description" content="Free JLPT N5–N2 Japanese grammar lessons: every grammar point with conjugation rules, example sentences with audio, comparisons of confusable patterns, practice questions and Anki decks. 中文版：免费日语语法笔记，N5 到 N2。">
+<title>Japanese Grammar Notes — Free JLPT N5 to N1 Grammar Lessons | 日语语法笔记</title>
+<meta name="description" content="Free JLPT N5–N1 Japanese grammar lessons: every grammar point with conjugation rules, example sentences with audio, comparisons of confusable patterns, practice questions and Anki decks. 中文版：免费日语语法笔记，N5 到 N1。">
 <meta name="keywords" content="Japanese grammar, JLPT N2, N5, N4, N3, 日语语法, 日本語文法, grammar notes, spaced repetition, 语法笔记">
 <link rel="canonical" href="${SITE}">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Japanese Grammar Notes | 日语语法笔记 – N5→N2">
-<meta property="og:description" content="Free JLPT N5–N2 Japanese grammar lessons with conjugation rules, example sentences with audio, comparisons and Anki decks.">
+<meta property="og:title" content="Japanese Grammar Notes | 日语语法笔记 – N5→N1">
+<meta property="og:description" content="Free JLPT N5–N1 Japanese grammar lessons with conjugation rules, example sentences with audio, comparisons and Anki decks.">
 <meta property="og:url" content="${SITE}">
 <meta property="og:image" content="${SITE}og-image.png">
 <meta property="og:image:width" content="1200">
@@ -2290,8 +2547,8 @@ ${SETTINGS_SCRIPT}`;
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Japanese Grammar Notes | 日语语法笔记 – N5→N2">
-<meta name="twitter:description" content="Free JLPT N5–N2 Japanese grammar lessons with examples, audio, comparisons and Anki decks.">
+<meta name="twitter:title" content="Japanese Grammar Notes | 日语语法笔记 – N5→N1">
+<meta name="twitter:description" content="Free JLPT N5–N1 Japanese grammar lessons with examples, audio, comparisons and Anki decks.">
 <meta name="twitter:image" content="${SITE}og-image.png">
 
 <!-- Structured Data -->
@@ -2300,8 +2557,8 @@ ${SETTINGS_SCRIPT}`;
 [{
   "@context": "https://schema.org",
   "@type": "Course",
-  "name": "Japanese Grammar Notes – N5 to N2",
-  "description": "Free structured Japanese grammar notes covering JLPT N5 to N2 in 8 weeks, with bilingual explanations, example sentences, and spaced repetition.",
+  "name": "Japanese Grammar Notes – N5 to N1",
+  "description": "Free structured Japanese grammar notes covering JLPT N5 to N1, with bilingual explanations, example sentences, and spaced repetition.",
   "provider": { "@type": "Person", "name": "Ralphbupt" },
   "inLanguage": ["ja", "zh-CN"],
   "educationalLevel": "Beginner to Intermediate",
@@ -2325,7 +2582,10 @@ ${SETTINGS_SCRIPT}`;
 }]
 </script>
 
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+<link rel="icon" href="${SITE_PATH}favicon.ico" sizes="32x32">
+<link rel="icon" href="${SITE_PATH}favicon-48.png" type="image/png" sizes="48x48">
+<link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#1a1a2e">
@@ -2334,6 +2594,7 @@ ${SETTINGS_SCRIPT}`;
 <meta name="apple-mobile-web-app-title" content="日语文法">
 
 ${CSP_META}
+${CLONE_GUARD}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 ${SPECULATION_RULES}
@@ -2351,6 +2612,7 @@ ${sidebarMarkupHtml}
 <script>
 ${APP_PREFS_JS}
 </script>
+${AI_SCRIPT}
 </body>
 </html>`;
 
@@ -2378,15 +2640,91 @@ ${APP_PREFS_JS}
   console.log(`  Wrote search-index.json (${searchPoints.length} grammar points).`);
   fs.writeFileSync(path.join(__dirname, "dist", "ai-assistant.js"), AI_JS_BUNDLE, "utf-8");
   fs.copyFileSync(path.join(__dirname, "site", "settings-modal.js"), path.join(__dirname, "dist", "settings-modal.js"));
+  // QR codes for the share menu's 微信扫一扫 (loaded only when it's opened).
+  fs.copyFileSync(require.resolve("qrcode-generator/qrcode.js"), path.join(__dirname, "dist", "qrcode.js"));
   fs.copyFileSync(path.join(__dirname, "site", "sw.js"), path.join(__dirname, "dist", "sw.js"));
   for (const f of ["giscus-paper.css", "giscus-sepia.css"]) {
     fs.copyFileSync(path.join(__dirname, "site", f), path.join(__dirname, "dist", f));
+  }
+  // Real icon files: Google's result favicon needs a crawlable URL, not a data: URI
+  for (const f of fs.readdirSync(path.join(__dirname, "site", "icons"))) {
+    fs.copyFileSync(path.join(__dirname, "site", "icons", f), path.join(__dirname, "dist", f));
   }
 
   // ─── Generate individual lesson pages ───
   // Pages published once per language (PAGE_LANGS); links to them on a
   // non-root copy point at that language's copy.
-  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "guides", "about"]);
+  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "practice", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`])]);
+  // "Practice this point" at the end of every grammar point that has practice
+  // questions (questions/N*/lessonNN.json refs), linking to the practice page.
+  const quizRefCount = {};
+  if (QUIZ_LINKS) for (const lv of QUIZ_LEVELS) {
+    for (const q of loadQuizLevel(lv).qs) for (const r of q.refs || []) if (/#\d+$/.test(r)) quizRefCount[`${lv}:${r}`] = (quizRefCount[`${lv}:${r}`] || 0) + 1;
+  }
+  const quizLessonCount = {};
+  if (QUIZ_LINKS) for (const lv of QUIZ_LEVELS) {
+    for (const q of loadQuizLevel(lv).qs) {
+      // Grammar questions, and vocabulary questions on a word from the lesson's table.
+      const ref = q._kind === "lesson" ? q.refs[0] : (q.refs || []).find((r) => /#vocab$/.test(r));
+      if (ref) { const l = ref.split("#")[0]; quizLessonCount[`${lv}:${l}`] = (quizLessonCount[`${lv}:${l}`] || 0) + 1; if (q._kind !== "lesson") quizLessonCount[`${lv}:${l}:vocab`] = 1; }
+      // Also practice questions of the level its grammar belongs to (ABOVE_LEVEL).
+      const up = q._kind === "lesson" && aboveLevel(lv, q);
+      if (up) { const l = q.refs[0].split("#")[0]; quizLessonCount[`${up}:${l}`] = (quizLessonCount[`${up}:${l}`] || 0) + 1; }
+    }
+  }
+  const mockLevels = QUIZ_LEVELS.filter((lv) => fs.existsSync(path.join(__dirname, "questions", lv, "mock-1")));
+  const addQuizLinks = (html, id, level) => {
+    if (!QUIZ_LINKS) return html;
+    // JLPT guide: after "时间分配", a pointer to the timed mock tests.
+    if (/^jlpt-/.test(id) && mockLevels.length) {
+      return html.split(/(?=<h2[\s>])/).map((part) => {
+        if (!/^<h2[^>]*\bid="时间分配/.test(part)) return part;
+        const links = mockLevels.map((lv) => `<a href="${SITE_PATH}${lv.toLowerCase()}-mock-test/">⏱ ${lv} <span class="lang-zh">模拟题</span><span class="lang-en">mock test</span></a>`).join(" ");
+        const link = `<p class="quiz-link"><span class="lang-zh">用计时模拟题练时间分配：</span><span class="lang-en">Practise your timing with a timed mock test:</span> ${links}</p>\n`;
+        const hr = part.match(/<hr\s*\/?>\s*$/);
+        return hr ? part.slice(0, hr.index) + link + hr[0] : part + link;
+      }).join("");
+    }
+    if (!/^N[1-5]$/.test(level)) return html;
+    // Whole lesson: before 复习计划 (or at the end).
+    const total = quizLessonCount[`${level}:${id}`];
+    const lessonHref = `${SITE_PATH}${level.toLowerCase()}-practice/#lesson=${id}`;
+    const withVocab = quizLessonCount[`${level}:${id}:vocab`];
+    const hasEx = /<h2[^>]*\bid="(练习|今日练|今日練)/.test(html);
+    // At the end of the lesson, a card after the last point (the owner chose
+    // the end over a button under the title, 2026-10-30); each point also gets
+    // its own link. data-ql says which one was clicked (GA quiz_link).
+    const lessonLink = total ? `<div class="quiz-cta"><p><span class="lang-zh">${hasEx ? "课里的练习做完了？" : "学完这一课？"}再做 ${total} 道 JLPT 题型的在线题${withVocab ? "（语法 + 词汇）" : ""}：点了就判分、每题有解析，错题会自动记下来。</span><span class="lang-en">${hasEx ? "Done with the exercises above?" : "Finished the lesson?"} Try ${total} JLPT-style questions online${withVocab ? " (grammar + vocabulary)" : ""}: marked as you go, each explained, and the ones you miss are saved for review.</span></p><a href="${lessonHref}" data-ql="end">✍ <span class="lang-zh">在线做题</span><span class="lang-en">Practise online</span> →</a></div>\n` : "";
+    // Lessons that teach a higher level's grammar early (ABOVE_LEVEL in
+    // build-quiz.js) say so, and point to that level's practice, which has
+    // these questions as ordinary ones.
+    const above = ABOVE_LEVEL[level] || {};
+    const byLevel = {};
+    if (above[id]) byLevel[above[id]] = ["all"];
+    for (const [ref, lv] of Object.entries(above)) {
+      const [lid, k] = ref.split("#");
+      if (lid === id && k && lv !== above[id]) (byLevel[lv] = byLevel[lv] || []).push(k);
+    }
+    const notes = Object.entries(byLevel).map(([lv, ks]) => {
+      const href = `${SITE_PATH}${lv.toLowerCase()}-practice/#lesson=${id}`;
+      const zh = ks[0] === "all" ? `本课的语法在 JLPT 里属于 ${lv}，这里提前学` : `本课第 ${ks.join("、")} 点在 JLPT 里属于 ${lv}，这里提前学`;
+      const en = ks[0] === "all" ? `This lesson's grammar is JLPT ${lv} level, taught early here` : `Point${ks.length > 1 ? "s" : ""} ${ks.join(", ")} of this lesson ${ks.length > 1 ? "are" : "is"} JLPT ${lv} level, taught early here`;
+      return `<span class="lang-zh">${zh}${quizLessonCount[`${lv}:${id}`] ? `，<a href="${href}">${lv} 练习题</a>里也有本课的题` : ""}。</span><span class="lang-en">${en}${quizLessonCount[`${lv}:${id}`] ? `; its questions are in the <a href="${href}">${lv} practice</a> too` : ""}.</span>`;
+    });
+    if (notes.length) html = html.replace(/(<div class="lesson-meta">[\s\S]*?<\/div>\n?)/, `$1<p class="level-note">${notes.join(" ")}</p>\n`);
+    let lessonLinkPlaced = !lessonLink;
+    const out = html.split(/(?=<h2[\s>])/).map((part) => {
+      if (!lessonLinkPlaced && /^<h2[^>]*\bid="复习计划/.test(part)) { lessonLinkPlaced = true; return lessonLink + part; }
+      const k = (part.match(/^<h2[^>]*\bid="(\d+)\._/) || [])[1];
+      const n = k && quizRefCount[`${level}:${id}#${k}`];
+      if (!n) return part;
+      // Before the section's closing <hr>, so it reads as part of the point.
+      const link = `<p class="quiz-link"><a href="${SITE_PATH}${level.toLowerCase()}-practice/#ref=${id}.${k}" data-ql="point">✍ <span class="lang-zh">练这个语法点（${n} 题）</span><span class="lang-en">Practice this point (${n} questions)</span></a></p>\n`;
+      const hr = part.match(/<hr\s*\/?>\s*$/);
+      return hr ? part.slice(0, hr.index) + link + hr[0] : part + link;
+    }).join("");
+    return lessonLinkPlaced ? out : out + lessonLink;
+  };
   for (let li = 0; li < lessonPages.length; li++) {
     const lesson = lessonPages[li];
     // Prev/next stay inside the course or inside the guides, never across.
@@ -2406,7 +2744,7 @@ ${APP_PREFS_JS}
       : lesson.jaTitle).replace(/^Lesson\s+\d+\s*[–—-]\s*/i, "").trim();
     const seo = SEO_TITLES[lesson.id] || {};
     // Guides aren't a JLPT level; their seo entry may name the level they target.
-    const schemaLevel = seo.level || (GROUP_NAMES[lessonLevel] ? "N5–N2" : lessonLevel);
+    const schemaLevel = seo.level || (GROUP_NAMES[lessonLevel] ? "N5–N1" : lessonLevel);
     let lessonTitle, lessonDesc;
     if (seo.en) {
       lessonTitle = seo.en;
@@ -2507,7 +2845,7 @@ ${APP_PREFS_JS}
   "teaches": [${v.points.slice(0, 5).map(p => `"${p.replace(/"/g, '\\"')}"`).join(", ") || '""'}],
   "audience": { "@type": "EducationalAudience", "educationalRole": "student" },
   "author": { "@type": "Person", "name": "Ralphbupt", "url": "https://github.com/Ralphbupt" },
-  "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N2", "url": "${SITE}" }
+  "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N1", "url": "${SITE}" }
 },
 {
   "@context": "https://schema.org",
@@ -2519,8 +2857,12 @@ ${APP_PREFS_JS}
 }]
 </script>
 <link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+<link rel="icon" href="${SITE_PATH}favicon.ico" sizes="32x32">
+<link rel="icon" href="${SITE_PATH}favicon-48.png" type="image/png" sizes="48x48">
+<link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
 ${CSP_META}
+${CLONE_GUARD}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 ${SPECULATION_RULES}
@@ -2563,11 +2905,12 @@ ${sidebarMarkupHtml}
     ${prevHtml}
     ${nextHtml}
   </nav>
-  <article class="lesson active">${lesson.html}</article>
+  <article class="lesson active">${addQuizLinks(lesson.html, lesson.id, lessonLevel)}</article>
   <nav class="prev-next" aria-label="lesson navigation">
     ${prevHtml}
     ${nextHtml}
   </nav>
+  <div id="quiz-feedback" data-fb="lesson"></div>
   <section class="comments-section" aria-label="评论">
     <h2 class="comments-heading"><span class="lang-zh">评论</span><span class="lang-en">Comments</span></h2>
     ${GISCUS_SCRIPT}
@@ -2671,23 +3014,32 @@ ${APP_PREFS_JS}
     N5: "JLPT N5 是日语入门级别，覆盖基础句型、助词、动词三类、ます形/て形/ない形/た形、形容词活用、条件表达、可能/受身/意向形与基础推测样态。",
     N4: "JLPT N4 在 N5 基础上深化使役、受身、使役受身、授受表现、ように系列、ことにする/なる、ばかり/ところ/てしまう、ておく/てある、わけだ/ものだ 等核心日常语法。",
     N3: "JLPT N3 是日语进阶分水岭，覆盖书面助词（において/に対して/について）、原因理由、逆接让步、程度范围、动作相关、并列添加、状态样态、否定与复合表达等核心语法点。",
+    N1: "JLPT N1 是最高级别，语法多见于报刊社论、论说文和文学作品：时点（が早いか/や否や）、限定范围（をおいて/ならでは）、强调极限（たりとも/すら）、文语书面表达（べく/ごとき/んばかり）、评价判断（までもない/に足る）与感情强调（てやまない/極まりない）。",
     N2: "JLPT N2 是商务/学术级别语法，覆盖高阶逆接（からといって/つつも）、程度限定（に過ぎない/はもとより）、判断主张（わけがない/ということだ）、对比关系、感情不可抗、书面表达、仮定条件等高频考点。",
   };
   const LEVEL_INTRO_EN = {
     N5: "JLPT N5 is the beginner level — basic sentence patterns, particles, the three verb groups, ます/て/ない/た forms, adjective conjugation, conditionals, and the potential/passive/volitional forms plus basic conjecture and appearance expressions.",
     N4: "Building on N5, JLPT N4 deepens causative, passive, causative-passive, giving/receiving expressions, the ように series, ことにする/なる, ばかり/ところ/てしまう, ておく/てある, and わけだ/ものだ — the core grammar of everyday Japanese.",
     N3: "JLPT N3 is the watershed into advanced Japanese — written-language particles (において/に対して/について), cause and reason, concession, degree and range, action-related patterns, addition, state and appearance, negation, and compound expressions.",
+    N1: "JLPT N1 is the top level, and its grammar lives in editorials, essays and literature — timing (が早いか/や否や), limits and scope (をおいて/ならでは), extremes (たりとも/すら), classical and written forms (べく/ごとき/んばかり), evaluation (までもない/に足る) and emphatic emotion (てやまない/極まりない).",
     N2: "JLPT N2 is business/academic-level grammar — advanced concession (からといって/つつも), degree and limitation (に過ぎない/はもとより), judgment and assertion (わけがない/ということだ), contrast, involuntary emotion, written expression, and hypothetical conditionals — all high-frequency exam points.",
   };
   const LEVEL_KEYWORDS = {
     N5: "JLPT N5 语法清单, 日语 N5 语法总结, N5 文法一覧, N5 grammar list, 日语入门语法, JLPT N5 备考",
     N4: "JLPT N4 语法清单, 日语 N4 语法总结, N4 文法一覧, N4 grammar list, JLPT N4 备考, 日语进阶语法",
     N3: "JLPT N3 语法清单, 日语 N3 语法总结, N3 文法一覧, N3 grammar list, JLPT N3 备考, 日语进阶语法, N3 语法速查",
+    N1: "JLPT N1 语法清单, 日语 N1 语法总结, N1 文法一覧, N1 grammar list, JLPT N1 备考, 日语高级语法, N1 语法速查",
     N2: "JLPT N2 语法清单, 日语 N2 语法总结, N2 文法一覧, N2 grammar list, JLPT N2 备考, 日语商务语法, N2 语法速查",
   };
   // Shared by the level overview pages and the /guides/ hub.
   const OVERVIEW_CSS = `/* Keep sidebar (pure-CSS hover navigation); hide other JS-dependent chrome. */
-#content { margin: 0 auto !important; max-width: 1100px; padding: 2rem 1.5rem 4rem; }
+#content { --col: 1100px; margin: 0 auto !important; max-width: var(--col); padding: 2rem 1.5rem 4rem; }
+/* Sidebar open: centre in the space to its right, as on the lessons. */
+@media (min-width: 769px) {
+  body:not(.sidebar-collapsed) #content {
+    margin-left: calc(var(--sidebar-w) + max(0px, (100vw - var(--sidebar-w) - var(--col)) / 2)) !important;
+  }
+}
 .breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 1rem; }
 .breadcrumb a { color: var(--text-muted); text-decoration: none; }
 .breadcrumb .sep { margin: 0 .4em; }
@@ -2729,12 +3081,12 @@ html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
     const zh = l.cleanPoints[i], en = (l.cleanPointsEn || [])[i] || zh;
     return zh === en ? zh : `<span class="lang-zh">${zh}</span><span class="lang-en">${en}</span>`;
   };
-  const lessonsByLevel = { N5: [], N4: [], N3: [], N2: [] };
+  const lessonsByLevel = { N5: [], N4: [], N3: [], N2: [], N1: [] };
   for (const lesson of lessonPages) {
     if (lessonsByLevel[lesson.level]) lessonsByLevel[lesson.level].push(lesson);
   }
   const levelPageIds = [];
-  for (const level of ["N5", "N4", "N3", "N2"]) {
+  for (const level of ["N5", "N4", "N3", "N2", "N1"]) {
     const lessons = lessonsByLevel[level].filter(l => /^lesson\d+/.test(l.id));
     if (lessons.length === 0) continue;
     const totalPoints = lessons.reduce((sum, l) => sum + (l.cleanPoints || []).length, 0);
@@ -2816,7 +3168,7 @@ html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
   "description": "${m.desc.replace(/"/g, '\\"')}",
   "url": "${lv.url}",
   "inLanguage": ["${lang.htmlLang}", "ja"],
-  "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N2", "url": "${SITE}" },
+  "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N1", "url": "${SITE}" },
   "hasPart": [${lessons.map(l => `{"@type": "Article", "name": "${l.jaTitle.replace(/"/g, '\\"')}", "url": "${SITE}${l.id}/"}`).join(",")}]
 },
 {
@@ -2829,8 +3181,12 @@ html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
 }]
 </script>
 <link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+<link rel="icon" href="${SITE_PATH}favicon.ico" sizes="32x32">
+<link rel="icon" href="${SITE_PATH}favicon-48.png" type="image/png" sizes="48x48">
+<link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
 ${CSP_META}
+${CLONE_GUARD}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 ${SPECULATION_RULES}
@@ -2847,7 +3203,8 @@ ${sidebarMarkupHtml}
     <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><span>JLPT ${level}</span>
   </nav>
   <h1><span class="lang-zh">JLPT ${level} 语法清单 - ${lessons.length} 课 ${totalPoints}+ 语法点速查</span><span class="lang-en">JLPT ${level} Grammar — ${lessons.length} Lessons, ${totalPoints}+ Grammar Points</span></h1>
-  <p class="overview-intro"><span class="lang-zh">${LEVEL_INTRO[level]}</span><span class="lang-en">${LEVEL_INTRO_EN[level]}</span></p>
+  <p class="overview-intro"><span class="lang-zh">${LEVEL_INTRO[level]}</span><span class="lang-en">${LEVEL_INTRO_EN[level]}</span></p>${quizPages(level).length ? `
+  <p class="ov-quiz">${quizPages(level).map((q) => `<a href="${q.href}"><span class="lang-zh">${q.zh}</span><span class="lang-en">${q.en}</span></a>`).join("")}</p>` : ""}
   <div class="level-stats">
     <div class="level-stat"><strong>${lessons.length}</strong><span><span class="lang-zh">课</span><span class="lang-en">lessons</span></span></div>
     <div class="level-stat"><strong>${totalPoints}+</strong><span><span class="lang-zh">语法点</span><span class="lang-en">points</span></span></div>
@@ -2861,6 +3218,7 @@ ${sidebarMarkupHtml}
 <script>
 ${APP_PREFS_JS}
 </script>
+${AI_SCRIPT}
 </body>
 </html>`;
     for (const lang of PAGE_LANGS) {
@@ -2869,6 +3227,121 @@ ${APP_PREFS_JS}
     levelPageIds.push(level);
   }
   console.log(`  Generated ${levelPageIds.length} level overview pages: ${levelPageIds.join(", ")}`);
+
+  // ─── All grammar on one page (/grammar/) ───
+  // Every numbered grammar point of every N5–N1 lesson in one table per level
+  // (pattern · meaning · lesson), for "日语语法大全 / Japanese grammar list"
+  // searches and as one page that links to every point. Built from the lesson
+  // headings, so it never drifts from the lessons.
+  {
+    const esc = (t) => (t || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+    const strip = (h) => h.replace(/<[^>]+>/g, "").replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&").replace(/\s+/g, " ").trim();
+    const rows = { N5: [], N4: [], N3: [], N2: [], N1: [] };
+    // "〜なり（一……就（出人意料地）……）" → ["〜なり", "一……就（出人意料地）……"]: the last balanced bracket group.
+    const gloss = (t) => {
+      if (!/[）)]$/.test(t)) return null;
+      for (let i = t.length - 1, d = 0; i >= 0; i--) {
+        if (/[）)]/.test(t[i])) d++;
+        else if (/[（(]/.test(t[i]) && --d === 0) return i > 0 ? [t.slice(0, i).trim(), t.slice(i + 1, -1)] : null;
+      }
+      return null;
+    };
+    for (const l of lessonPages) {
+      if (!rows[l.level] || !/^lesson\d+/.test(l.id) || /总复习|総復習|五十音/.test(l.jaTitle || "")) continue;
+      for (const m of l.html.matchAll(/<h2[^>]*id="([^"]*)"[^>]*>([\s\S]*?)<\/h2>/g)) {
+        const zh = (m[2].match(/<span class="lang-zh">([\s\S]*?)<\/span>/) || [])[1];
+        const i = m[2].indexOf('<span class="lang-en">'), enRaw = i < 0 ? "" : m[2].slice(i);
+        if (!zh || !/^\d+[.．]/.test(strip(zh))) continue;
+        // 「は — 主题助词」 and 「〜に過ぎない（只不过是……）」: pattern, then its gloss.
+        const z = strip(zh).replace(/^\d+[.．]\s*/, ""), pz = gloss(z) || z.match(/^(.+?) — (.+)$/)?.slice(1);
+        const pattern = (pz ? pz[0] : z).trim();
+        // Section headings that aren't a pattern (「初学者常见错误」, 「い形容词 完整活用表」) have Chinese in them.
+        if (hasSC(pattern) || !/[\u3040-\u30ff]/.test(pattern) || /用法|速览|汇总|対比|模板|区分|\bvs\b/.test(pattern)) continue;
+        const romaji = strip((enRaw.match(/<span class="romaji">([\s\S]*?)<\/span>/) || [])[1] || "");
+        const e = strip(enRaw.replace(/<span class="romaji">[\s\S]*?<\/span>/, "")).replace(/^\d+[.．]\s*/, ""), pe = gloss(e) || e.match(/^(.+?) — (.+)$/)?.slice(1);
+        rows[l.level].push({ id: l.id, slug: m[1], pattern, zh: pz ? pz[1] : "", en: pe ? pe[1] : "", romaji, lesson: l.id.replace("lesson", "") });
+      }
+    }
+    const levels = Object.keys(rows).filter((k) => rows[k].length);
+    const total = levels.reduce((a, k) => a + rows[k].length, 0);
+    const table = (k) => `<div class="table-scroll"><table class="gl-table"><thead><tr><th><span class="lang-zh">语法</span><span class="lang-en">Pattern</span></th><th><span class="lang-zh">意思</span><span class="lang-en">Meaning</span></th><th><span class="lang-zh">课</span><span class="lang-en">Lesson</span></th></tr></thead><tbody>${rows[k].map((r) =>
+      `<tr><td><a href="${SITE}${r.id}/#${encodeURIComponent(r.slug)}" lang="ja">${esc(r.pattern)}</a>${r.romaji ? `<span class="gl-romaji lang-en">${esc(r.romaji)}</span>` : ""}</td><td><span class="lang-zh">${esc(r.zh)}</span><span class="lang-en">${esc(r.en)}</span></td><td><a href="${SITE}${r.id}/">${r.lesson}</a></td></tr>`).join("")}</tbody></table></div>`;
+    const glMeta = {
+      en: { title: `Japanese Grammar List — All ${total} JLPT N5 to N1 Grammar Points`, desc: `Every Japanese grammar point from JLPT N5 to N1 on one page: ${total} patterns with romaji and meaning, grouped by level, each linking to a lesson with conjugation rules, examples with audio and comparisons.`, h1: "Japanese Grammar List: JLPT N5 to N1", crumb: "Grammar list", home: "Japanese Grammar Notes",
+        lead: `All ${total} grammar points taught on this site, from N5 to N1, one row each. Click a pattern for its lesson: how it attaches, what it means, examples with audio and how it differs from look-alikes. For one level as a printable checklist, use the level's checklist page.` },
+      zh: { title: `日语语法大全 — JLPT N5 到 N1 全部 ${total} 个语法点总结`, desc: `日语语法大全：JLPT N5、N4、N3、N2、N1 全部 ${total} 个语法点一页看完，按级别分组，每个语法点附意思并链接到详细讲解（接续、例句带发音、易混辨析）。`, h1: "日语语法大全：JLPT N5 到 N1", crumb: "语法大全", home: "日语语法笔记",
+        lead: `本站 N5 到 N1 的全部 ${total} 个语法点，一行一个。点语法名进入对应课文：接续、含义、带发音的例句和易混辨析。想按级别打勾复习，用各级的语法清单。` },
+    };
+    const renderGl = (lang, m, lv) => `<!DOCTYPE html>
+<html lang="${lang.htmlLang}"${lv.htmlAttrs}>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>${LANG_REDIRECT_JS}</script>
+<title>${esc(m.title)}</title>
+<meta name="description" content="${esc(m.desc)}">
+<link rel="canonical" href="${lv.url}">${lv.hreflang}
+<meta property="og:type" content="website">
+<meta property="og:title" content="${esc(m.title)}">
+<meta property="og:description" content="${esc(m.desc)}">
+<meta property="og:url" content="${lv.url}">
+<meta property="og:locale" content="${lang.ogLocale}">
+<meta property="og:image" content="${SITE}og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">${JSON.stringify([
+  { "@context": "https://schema.org", "@type": "CollectionPage", name: m.h1, description: m.desc, url: lv.url, inLanguage: lang.htmlLang,
+    isPartOf: { "@type": "Course", name: "Japanese Grammar Notes – N5 to N1", url: SITE } },
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+    { "@type": "ListItem", position: 1, name: m.home, item: SITE },
+    { "@type": "ListItem", position: 2, name: m.crumb, item: lv.url }] },
+]).replace(/</g, "\\u003c")}</script>
+<link rel="icon" href="${SITE_PATH}favicon.ico" sizes="32x32">
+<link rel="icon" href="${SITE_PATH}favicon-48.png" type="image/png" sizes="48x48">
+<link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
+${CSP_META}
+${CLONE_GUARD}
+${THEME_INIT_SCRIPT}
+${GTAG_DEFERRED}
+${SPECULATION_RULES}
+${SW_REGISTER}
+<style>
+${CSS}
+${OVERVIEW_CSS}
+.gl-jump { display: flex; flex-wrap: wrap; gap: .5rem 1rem; margin: 0 0 1.5rem; }
+.gl-table { width: 100%; border-collapse: collapse; font-size: .92rem; margin: .5rem 0 2rem; }
+.gl-table th, .gl-table td { border: 1px solid var(--border); padding: .35rem .6rem; text-align: left; vertical-align: top; }
+.gl-table th { background: var(--word-bg); }
+.gl-table td:first-child { width: 45%; }
+.gl-table td:last-child { text-align: center; width: 3.5rem; }
+.gl-table .gl-romaji { display: block; font-size: .78rem; color: var(--text-muted); }
+</style>
+</head>
+<body class="sidebar-collapsed">
+${sidebarMarkupHtml}
+<main id="content">
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><span><span class="lang-zh">语法大全</span><span class="lang-en">Grammar list</span></span>
+  </nav>
+  <h1><span class="lang-zh">${zhOr(glMeta, "h1")}</span><span class="lang-en">${glMeta.en.h1}</span></h1>
+  <p class="overview-intro"><span class="lang-zh">${glMeta.zh.lead}</span><span class="lang-en">${glMeta.en.lead}</span></p>
+  <p class="gl-jump">${levels.map((k) => `<a href="#${k}">${k}（${rows[k].length}）</a>`).join("")}</p>
+  ${levels.map((k) => `<h2 id="${k}">JLPT ${k} <span class="lang-zh">语法（${rows[k].length} 个）</span><span class="lang-en">grammar (${rows[k].length})</span></h2>
+  <p><a href="${SITE}${k}/"><span class="lang-zh">${k} 总览</span><span class="lang-en">${k} overview</span></a> · <a href="${SITE}${k}_grammar_list/"><span class="lang-zh">${k} 语法清单（可打勾）</span><span class="lang-en">${k} checklist</span></a>${quizPages(k).length ? ` · <a href="${SITE_PATH}${k.toLowerCase()}-practice/"><span class="lang-zh">${k} 练习题</span><span class="lang-en">${k} practice</span></a>` : ""}${fs.existsSync(path.join(__dirname, "grammar", "guides", `jlpt-${k.toLowerCase()}-key-grammar.md`)) ? ` · <a href="${SITE}jlpt-${k.toLowerCase()}-key-grammar/"><span class="lang-zh">${k} 高频考点</span><span class="lang-en">${k} key grammar</span></a>` : ""}</p>
+  ${table(k)}`).join("\n  ")}
+  ${siteFooterHtml}
+</main>
+<script>
+${APP_PREFS_JS}
+</script>
+${AI_SCRIPT}
+</body>
+</html>`;
+    const zhOr = (o, k) => o.zh[k];
+    for (const lang of PAGE_LANGS) writeLangPage("grammar", lang, localizePage(renderGl(lang, glMeta[lang.code], langVariant("grammar", lang)), lang, localizedPageIds));
+    levelPageIds.push("grammar");
+    console.log(`  Generated /grammar/ (${total} grammar points)`);
+  }
 
   // ─── Guides hub (/guides/) ───
   // Cards for every page in grammar/guides/, exam guides first, then the
@@ -2924,7 +3397,7 @@ ${APP_PREFS_JS}
   "description": "${m.desc.replace(/"/g, '\\"')}",
   "url": "${lv.url}",
   "inLanguage": ["${lang.htmlLang}", "ja"],
-  "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N2", "url": "${SITE}" },
+  "isPartOf": { "@type": "Course", "name": "Japanese Grammar Notes – N5 to N1", "url": "${SITE}" },
   "hasPart": [${guidePages.map(l => `{"@type": "Article", "name": "${l.jaTitle.replace(/"/g, '\\"')}", "url": "${SITE}${l.id}/"}`).join(",")}]
 },
 {
@@ -2936,8 +3409,12 @@ ${APP_PREFS_JS}
   ]
 }]
 </script>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+<link rel="icon" href="${SITE_PATH}favicon.ico" sizes="32x32">
+<link rel="icon" href="${SITE_PATH}favicon-48.png" type="image/png" sizes="48x48">
+<link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
 ${CSP_META}
+${CLONE_GUARD}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 ${SPECULATION_RULES}
@@ -2965,6 +3442,7 @@ ${sidebarMarkupHtml}
 <script>
 ${APP_PREFS_JS}
 </script>
+${AI_SCRIPT}
 </body>
 </html>`;
     for (const lang of PAGE_LANGS) {
@@ -2998,13 +3476,13 @@ ${APP_PREFS_JS}
     const aboutMeta = {
       en: {
         title: "About Japanese Grammar Notes — Who Makes It, Sources & License",
-        desc: "Who makes jpnotes.dev, why, which references it draws on, and how to report a mistake or contribute. Free, open-source JLPT N5–N2 grammar notes under CC BY 4.0, with conjugation rules, examples, comparisons and practice.",
+        desc: "Who makes jpnotes.dev, why, which references it draws on, and how to report a mistake or contribute. Free, open-source JLPT N5–N1 grammar notes under CC BY-NC 4.0, with conjugation rules, examples, comparisons and practice.",
         keywords: "about jpnotes.dev, Japanese grammar notes, JLPT self-study, open source",
         name: "About Japanese Grammar Notes", site: "Japanese Grammar Notes", crumb: "About",
       },
       zh: {
         title: "关于本站 - 日语语法笔记 | 作者、内容来源与开源协议",
-        desc: "了解 jpnotes.dev 日语语法笔记是谁做的、为什么做、参考了哪些资料、如何反馈错误与参与贡献。这是一份免费、开源、采用 CC BY 4.0 许可的 JLPT N5-N2 语法学习笔记，含接续规则、例句、辨析与练习。",
+        desc: "了解 jpnotes.dev 日语语法笔记是谁做的、为什么做、参考了哪些资料、如何反馈错误与参与贡献。这是一份免费、开源、采用 CC BY-NC 4.0 许可的 JLPT N5–N1 语法学习笔记，含接续规则、例句、辨析与练习。",
         keywords: "日语语法笔记关于, 作者, jpnotes.dev, 日语学习, JLPT 自学, 中文母语者",
         name: "关于日语语法笔记", site: "日语语法笔记", crumb: "关于本站",
       },
@@ -3060,8 +3538,12 @@ ${APP_PREFS_JS}
 }]
 </script>
 <link rel="alternate" type="application/rss+xml" title="Japanese Grammar Notes RSS" href="${SITE}feed.xml">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>">
+<link rel="icon" href="${SITE_PATH}favicon.ico" sizes="32x32">
+<link rel="icon" href="${SITE_PATH}favicon-48.png" type="image/png" sizes="48x48">
+<link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">
 ${CSP_META}
+${CLONE_GUARD}
 ${THEME_INIT_SCRIPT}
 ${GTAG_DEFERRED}
 ${SPECULATION_RULES}
@@ -3107,6 +3589,7 @@ ${sidebarMarkupHtml}
 <script>
 ${APP_PREFS_JS}
 </script>
+${AI_SCRIPT}
 </body>
 </html>`;
     for (const lang of PAGE_LANGS) {
@@ -3115,6 +3598,397 @@ ${APP_PREFS_JS}
     aboutPageGenerated = true;
     console.log("  Generated dist/about/index.html");
   }
+
+  // ─── Practice question pages (build-quiz.js → dist/quiz/*.json, site/quiz.js) ───
+  const quizBundles = await buildQuiz(async (text) => fixReadings(await furiganaText(kuro, text)));
+  // Reading passages' read-aloud audio goes in the same request list as the examples.
+  {
+    const reqPath = path.join(__dirname, "dist", ".audio-requests.json");
+    const reqs = JSON.parse(fs.readFileSync(reqPath, "utf-8"));
+    fs.writeFileSync(reqPath, JSON.stringify(reqs.concat(QUIZ_AUDIO_REQUESTS)), "utf-8");
+    console.log(`  Requested audio for ${QUIZ_AUDIO_REQUESTS.length} reading passages and question sentences.`);
+  }
+  // Levels whose practice has listening (choukai) questions.
+  const ckLevels = Object.keys(quizBundles).filter((l) => Object.values(quizBundles[l].practice.types).some((t) => t.g === "choukai"));
+  // Listening pictures (tools/choukai-images.py): the ones the questions use. Their
+  // mp3s are in audio/choukai/, which CI copies with the rest of audio/.
+  {
+    const files = new Set();
+    for (const { practice, mocks } of Object.values(quizBundles)) for (const q of [...practice.questions, ...mocks.flatMap((m) => m.test.questions)]) {
+      if (q.pic) for (const f of q.pic.opts || [q.pic.scene]) files.add(f);
+    }
+    const out = path.join(__dirname, "dist", "images", "choukai");
+    fs.mkdirSync(out, { recursive: true });
+    for (const f of files) fs.copyFileSync(path.join(QUIZ_CK_IMG_DIR, f), path.join(out, f));
+    if (files.size) console.log(`  Copied ${files.size} listening pictures.`);
+  }
+  const quizPageIds = [];
+  fs.mkdirSync(path.join(__dirname, "dist", "quiz"), { recursive: true });
+  fs.writeFileSync(path.join(__dirname, "dist", "quiz.js"), QUIZ_JS_SRC, "utf-8");
+  fs.writeFileSync(path.join(__dirname, "dist", "feedback.js"), FEEDBACK_JS_SRC, "utf-8");
+  // Each data file gets a content-hash ?v= (the service worker caches it for good).
+  const writeQuizData = (name, obj) => {
+    const json = JSON.stringify(obj);
+    fs.writeFileSync(path.join(__dirname, "dist", "quiz", name), json, "utf-8");
+    return `${SITE_PATH}quiz/${name}?v=${require("crypto").createHash("md5").update(json).digest("hex").slice(0, 8)}`;
+  };
+  const renderQuiz = (lang, m, lv, level, appAttrs, preload) => `<!DOCTYPE html>
+<html lang="${lang.htmlLang}"${lv.htmlAttrs}>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>${LANG_REDIRECT_JS}</script>
+<title>${m.title}</title>
+<meta name="description" content="${m.desc.replace(/"/g, '&quot;')}">${QUIZ_PUBLIC ? "" : '\n<meta name="robots" content="noindex">'}
+<link rel="canonical" href="${lv.url}">${lv.hreflang}
+<meta property="og:type" content="website">
+<meta property="og:title" content="${m.title}">
+<meta property="og:description" content="${m.desc.replace(/"/g, '&quot;')}">
+<meta property="og:url" content="${lv.url}">
+<meta property="og:locale" content="${lang.ogLocale}">${level ? `\n<meta property="og:image" content="${SITE}${level}/og-image.png">\n<meta name="twitter:card" content="summary_large_image">` : ""}${m.schema ? `\n<script type="application/ld+json">${m.schema}</script>` : ""}
+<link rel="icon" href="${SITE_PATH}favicon.ico" sizes="32x32">
+<link rel="icon" href="${SITE_PATH}favicon-48.png" type="image/png" sizes="48x48">
+<link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="${SITE_PATH}apple-touch-icon.png">${preload ? `\n<link rel="preload" href="${preload}" as="fetch" crossorigin>` : ""}
+${CSP_META}
+${CLONE_GUARD}
+${THEME_INIT_SCRIPT}
+${GTAG_DEFERRED}
+${SPECULATION_RULES}
+${SW_REGISTER}
+<style>
+${CSS}
+/* Same column as the lessons, so the site doesn't narrow when you start practising. */
+#content { --col: 1000px; margin: 0 auto !important; max-width: var(--col); padding: 2rem 1.5rem 4rem; }
+@media (min-width: 1500px) { #content { --col: 1120px; } }
+@media (min-width: 769px) {
+  body:not(.sidebar-collapsed) #content {
+    margin-left: calc(var(--sidebar-w) + max(0px, (100vw - var(--sidebar-w) - var(--col)) / 2)) !important;
+  }
+}
+.breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 1rem; }
+.breadcrumb a { color: var(--text-muted); text-decoration: none; }
+.breadcrumb .sep { margin: 0 .4em; }
+.quiz-head h1 { font-size: var(--text-2xl); margin: 0 0 .6rem; }
+.quiz-head p { color: var(--text-muted); line-height: 1.7; margin: 0; }
+.quiz-head .quiz-nav { margin-top: .6rem; font-size: .92rem; }
+.quiz-head .quiz-nav a { color: var(--link); }
+.quiz-about { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); line-height: 1.75; }
+.quiz-about h2 { font-size: var(--text-xl); margin: 1.8rem 0 .6rem; }
+.quiz-about table { border-collapse: collapse; margin: .6rem 0 1rem; font-size: .92rem; }
+.quiz-about th, .quiz-about td { border: 1px solid var(--border); padding: .35rem .7rem; text-align: left; }
+.quiz-about dt { font-weight: 600; margin-top: .9rem; }
+.quiz-about dd { margin: .2rem 0 0; color: var(--text-muted); }
+.quiz-about .lesson-list { columns: 2; column-gap: 2rem; padding-left: 1.2rem; }
+@media (max-width: 600px) { .quiz-about .lesson-list { columns: 1; } }
+@media (max-width: 600px) { #content { padding: 1.2rem 1rem 3rem; } }
+${minifyCss(QUIZ_CSS)}
+</style>
+</head>
+<body class="sidebar-collapsed">
+${sidebarMarkupHtml}
+<main id="content">
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span>${level ? `<a href="${SITE_PATH}${level}/">${level}</a><span class="sep">›</span>` : ""}<span>${m.crumb}</span>
+  </nav>
+  <header class="quiz-head"><h1>${m.h1}</h1><p>${m.lead}</p><p class="quiz-nav">${m.nav}</p></header>
+  ${appAttrs === null ? m.body : `<div id="quiz-app" data-level="${level}" ${appAttrs}></div>`}${m.about || ""}
+  <div id="quiz-feedback"></div>
+  ${siteFooterHtml}
+</main>
+<script>
+${APP_PREFS_JS}
+</script>
+${appAttrs === null ? "" : `<script src="${SITE_PATH}quiz.js?v=${QUIZ_JS_HASH}" defer></script>`}
+${AI_SCRIPT}
+</body>
+</html>`;
+  // Readable text under each practice / mock / flashcard page (like a game
+  // page's "how to play" + FAQ): what the level's exam tests, how the page
+  // works, and links to every lesson of the level. Without it the pages are an
+  // empty app shell to a search engine. Figures come from MOCK and the bundles.
+  const quizAbout = (level, kind, en, bundle) => {
+    const L = (zh, e) => (en ? e : zh), cfg = QUIZ_MOCK[level], lv = level.toLowerCase();
+    const tName = (k) => `${en ? QUIZ_TYPES[k].en : QUIZ_TYPES[k].zh} · ${QUIZ_TYPES[k].ja}`;
+    const lessons = lessonPages.filter((l) => l.level === level && /^lesson\d+/.test(l.id));
+    const lessonList = `<ul class="lesson-list">${lessons.map((l) => `<li><a href="${SITE_PATH}${l.id}/">${l.id.replace("lesson", "Lesson ")} — ${JA_TITLES[l.id] || l.id}</a></li>`).join("")}</ul>`;
+    const minutes = cfg.sections.filter((x) => !x.listening).reduce((a, x) => a + x.minutes, 0);
+    const ck = ckLevels.includes(level), ckSec = cfg.sections.find((x) => x.listening);
+    const scoreRows = cfg.scoring.map((x) => `<tr><td>${en ? x.en : x.zh}</td><td>0–${x.max}</td><td>${x.min}</td></tr>`).join("")
+      + `<tr><td>${L("听力", "Listening")}</td><td>0–${cfg.listening.max}</td><td>${cfg.listening.min}</td></tr>`;
+    const split = cfg.scoring.length > 1;
+    const format = `<h2>${L(`JLPT ${level} 考什么`, `What the JLPT ${level} tests`)}</h2>
+<p>${L(`${level} 考言语知识（文字・词汇・语法）、阅读和听力。${split ? "计分分三科：言语知识、阅读、听力" : "计分分两科：言语知识和阅读合为一科，听力一科"}。言语知识和阅读${cfg.sections.length > 2 ? `分两场，共 ${minutes} 分钟` : `在同一场考，${minutes} 分钟`}，之后是听力。总分 180，合格要同时满足总分 ≥ ${cfg.pass}，以及每科不低于最低分：`,
+  `The ${level} tests language knowledge (vocabulary and grammar), reading and listening. ${split ? "They are scored as three parts" : "They are scored as two parts: language knowledge and reading together, and listening"}. Language knowledge and reading ${cfg.sections.length > 2 ? `are two sittings, ${minutes} minutes in all` : `are one ${minutes}-minute sitting`}, then comes listening. Out of 180, you pass with a total of at least ${cfg.pass} and every part at or above its minimum:`)}</p>
+<table><tr><th>${L("科目", "Part")}</th><th>${L("分数", "Score")}</th><th>${L("最低分", "Minimum")}</th></tr>${scoreRows}</table>`;
+    if (kind === "practice") {
+      const types = Object.entries(bundle.practice.types).map(([k]) => ({ k, n: bundle.practice.questions.filter((q) => q.type === k).length }));
+      return `<section class="quiz-about">${format}
+<h2>${L(`这里有哪些题（${bundle.practice.questions.length} 道）`, `What's here (${bundle.practice.questions.length} questions)`)}</h2>
+<p>${ck ? L("考试的全部题型（含听力），题目原创，格式和真题一致：", "Every item type on the test, listening included, written from scratch in the real format:") : L("除听力外的全部题型，题目原创，格式和真题一致：", "Every item type on the test except listening, written from scratch in the real format:")}</p>
+<ul>${types.map((t) => `<li>${tName(t.k)} — ${t.n}</li>`).join("")}</ul>
+<h2>${L("怎么用", "How it works")}</h2>
+<ul>
+<li>${L("<b>今日练习</b>：每天一组，词汇、语法、阅读混着来。", "<b>Daily set</b>: a short mixed set of vocabulary, grammar and reading each day.")}</li>
+<li>${L("<b>按题型练</b>：专攻一种题型，比如排序题（★）或信息检索。", "<b>By question type</b>: drill one format, such as sentence order (★) or information retrieval.")}</li>
+<li>${L("<b>解析</b>：答完立刻看正确答案为什么对、每个错误选项为什么错，并链到讲这个语法点的课文；还可以让 AI 针对你选的选项讲解。", "<b>Explanations</b>: after each answer, why the right option is right and why each wrong one is wrong, with a link to the lesson that teaches the point — and an AI explanation of the option you picked.")}</li>
+<li>${L("<b>错题本</b>：答错、点了「不会」或答对后点「其实是猜的」的题，当天、3 天后、7 天后再考你，答对才移出。", "<b>Review list</b>: questions you miss, mark “I don’t know”, or flag “I guessed” after getting right come back the same day, after 3 days and after 7 days, until you get them right.")}</li>
+<li>${L("进度只保存在这个浏览器里，不用注册。", "Progress stays in this browser; no account needed.")}</li>
+</ul>
+<h2>${L("常见问题", "Questions")}</h2>
+<dl>
+<dt>${L("免费吗？", "Is it free?")}</dt><dd>${L("完全免费，没有广告，也不用注册。", "Yes — no ads and no sign-up.")}</dd>
+<dt>${L("和真题有多像？", "How close is it to the real JLPT?")}</dt><dd>${L(`题型、题干格式和难度按 ${level} 真题设计，${level === "N5" || level === "N4" ? "语法和阅读带振假名" : "和真考一样不带振假名"}。题目全部原创，不是真题。`, `Item types, layout and difficulty follow the real ${level}; ${level === "N5" || level === "N4" ? "grammar and reading carry furigana, as on the test" : "there's no furigana, as on the test"}. All questions are original, not past papers.`)}</dd>
+<dt>${L("有听力吗？", "Is there listening?")}</dt><dd>${ck ? L("有。点播放听一段录音（可以重听），答完看带振假名和翻译的原文，每句都能单独重播。", "Yes. Play the recording (as often as you like), answer, then read the transcript with furigana and a translation, and replay any line on its own.") : L("还没有，听力题在规划中。", "Not yet; listening questions are planned.")}</dd>
+<dt>${L("想计时考一次？", "Want a timed run?")}</dt><dd>${bundle.mocks.length ? L(`做 <a href="${SITE_PATH}${lv}-mock-test/">${level} 模拟题</a>：按真考的结构和时间，交卷后估分。`, `Take the <a href="${SITE_PATH}${lv}-mock-test/">${level} mock test</a>: the real structure and timing, with an estimated score.`) : L("模拟题准备中。", "A mock test is on the way.")}</dd>
+</dl>
+<h2>${L(`${level} 语法课文`, `${level} grammar lessons`)}</h2>
+<p>${L(`每道语法题都对应下面某一课的一个语法点。完整清单见 <a href="${SITE_PATH}${level}/">${level} 总览</a>。`, `Every grammar question is tied to a grammar point in one of these lessons. Full list: <a href="${SITE_PATH}${level}/">${level} overview</a>.`)}</p>
+${lessonList}${(() => {
+      // Lower-level lessons that teach this level's grammar early (ABOVE_LEVEL): their questions are here too.
+      const early = Object.keys(bundle.practice.lessons || {}).filter((id) => !lessons.some((l) => l.id === id)).sort();
+      if (!early.length) return "";
+      const li = early.map((id) => `<li><a href="${SITE_PATH}${id}/">${id.replace("lesson", "Lesson ")} — ${JA_TITLES[id] || id}</a></li>`).join("");
+      return `<p>${L(`另外，下面这几课在更早的阶段提前教了 ${level} 的语法，它们的题也在这里：`, `These earlier lessons teach some ${level} grammar ahead of time; their questions are here too:`)}</p><ul class="lesson-list">${li}</ul>`;
+    })()}</section>`;
+    }
+    if (kind === "listening") {
+      const ckTypes = Object.entries(bundle.practice.types).filter(([, t]) => t.g === "choukai").map(([k]) => k);
+      const qs = bundle.practice.questions.filter((q) => ckTypes.includes(q.type));
+      const recs = (k) => new Set(qs.filter((q) => q.type === k).map((q) => q.passage || q.id)).size;
+      const onTest = {};
+      for (const q of bundle.mocks[0]?.test.questions || []) if (ckTypes.includes(q.type)) onTest[q.type] = (onTest[q.type] || 0) + 1;
+      const pace = { N5: L("比平时说话慢，一字一句很清楚", "slower than everyday speech, every word clear"), N4: L("稍慢、清楚", "a little slow and clear"), N3: L("接近自然语速，发音清楚", "close to natural speed, clearly spoken"), N2: L("自然语速，口语缩略多", "natural speed, with everyday contractions"), N1: L("自然语速，内容更长更抽象", "natural speed, longer and more abstract") }[level];
+      const others = ckLevels.filter((l) => l !== level).map((l) => `<a href="${SITE_PATH}${l.toLowerCase()}-listening/">${l}</a>`).join(" · ");
+      return `<section class="quiz-about">
+<h2>${L(`JLPT ${level} 听力考什么`, `What the JLPT ${level} listening section tests`)}</h2>
+<p>${L(`听力是单独一场，约 ${ckSec.minutes} 分钟，单独计分（0–${cfg.listening.max} 分，最低 ${cfg.listening.min} 分）。每段录音只放一次，题目和选项大多不印在试卷上，要边听边记。真考的题型和题数：`, `Listening is its own sitting, about ${ckSec.minutes} minutes, scored on its own (0–${cfg.listening.max}, minimum ${cfg.listening.min}). Each recording plays once, and most questions and options aren't printed, so you take notes as you listen. The item types and how many of each are on the test:`)}</p>
+<table><tr><th>${L("题型", "Item type")}</th><th>${L("真考题数", "On the test")}</th><th>${L("这里的录音", "Recordings here")}</th></tr>${ckTypes.map((k) => `<tr><td>${tName(k)}</td><td>${onTest[k] || "—"}</td><td>${recs(k)}</td></tr>`).join("")}</table>
+<h2>${L("怎么练", "How it works")}</h2>
+<ul>
+<li>${L("点播放听录音，练习时可以重听；想模拟真考，就只听一遍再作答。", "Play the recording; in practice you can replay it — to train for the real thing, listen once and answer.")}</li>
+<li>${L(`语速：${pace}。`, `Speed: ${pace}.`)}</li>
+<li>${L("答完显示原文：日语带振假名，附中文翻译，每一句都能单独重播，听不出来的地方对着原文再听。", "After answering, the transcript appears: Japanese with furigana and a translation, and any line can be replayed on its own, so you can match what you missed to the text.")}</li>
+<li>${L("每个选项都有解析：为什么对，错的选项错在哪里（常见的陷阱是先说的答案被后面推翻）。", "Every option is explained: why the answer is right and where each wrong one goes wrong (a favourite trap is an answer given first and changed later).")}</li>
+<li>${L("答错或猜对的题进错题本，过几天再考你。进度保存在这个浏览器里，不用注册。", "Questions you miss or guess come back in a review list a few days later. Progress stays in this browser; no account needed.")}</li>
+</ul>
+<h2>${L("常见问题", "Questions")}</h2>
+<dl>
+<dt>${L("免费吗？", "Is it free?")}</dt><dd>${L("完全免费，没有广告，也不用注册。", "Yes — no ads and no sign-up.")}</dd>
+<dt>${L("录音是真题吗？", "Are these past-paper recordings?")}</dt><dd>${L(`不是。剧本全部原创，题型、长度、语速按 ${level} 真题设计；声音由 AI 语音合成（Google Gemini），每段都逐句检查过读音和说话人。`, `No. Every script is original, written to the real ${level}'s formats, length and speed; the voices are AI speech (Google Gemini), and every recording was checked line by line for readings and speakers.`)}</dd>
+<dt>${L("可以下载 MP3 吗？", "Can I download the MP3s?")}</dt><dd>${L("目前只能在线播放；页面打开过的录音会缓存，之后网络不好也能放。", "Not for now — they play online, and recordings you've opened are cached so they still play on a weak connection.")}</dd>
+<dt>${L("想按真考计时做一遍？", "Want a timed run like the real test?")}</dt><dd>${bundle.mocks.length ? L(`<a href="${SITE_PATH}${lv}-mock-test/">${level} 模拟题</a>的最后一场就是听力：每段只放一次，题间留作答时间，交卷后和其他科目一起估分。`, `The last sitting of the <a href="${SITE_PATH}${lv}-mock-test/">${level} mock test</a> is listening: each recording once, time to answer after it, scored with the other parts.`) : L("模拟题准备中。", "A mock test is on the way.")}</dd>
+</dl>
+<h2>${L("相关", "More")}</h2>
+<p>${L(`全部题型混合练：<a href="${SITE_PATH}${lv}-practice/">${level} 练习题</a>。${others ? `其他级别的听力：${others}。` : ""}考试安排和备考计划：<a href="${SITE_PATH}jlpt-december-2026/">12 月 JLPT 考前指南</a>。`, `All item types mixed: <a href="${SITE_PATH}${lv}-practice/">${level} practice questions</a>.${others ? ` Listening at other levels: ${others}.` : ""} Exam day and a study plan: <a href="${SITE_PATH}jlpt-december-2026/">December JLPT guide</a>.`)}</p>
+</section>`;
+    }
+    if (kind === "mock") {
+      const t = bundle.mocks[0].test, n = {};
+      for (const k of cfg.sections.flatMap((x) => x.types)) n[k] = 0;   // the real test's order
+      for (const q of t.questions) n[q.type] = (n[q.type] || 0) + 1;
+      for (const k of Object.keys(n)) if (!n[k]) delete n[k];
+      return `<section class="quiz-about">${format}
+<h2>${L("模拟题的结构", "How the mock test is laid out")}</h2>
+<table><tr><th>${L("题型", "Item type")}</th><th>${L("题数", "Questions")}</th></tr>${Object.keys(n).map((k) => `<tr><td>${tName(k)}</td><td>${n[k]}</td></tr>`).join("")}</table>
+${(() => {
+      const nl = t.sections.filter((x) => x.listening).reduce((a, x) => a + x.problems.reduce((b, p) => b + p.ids.length, 0), 0);
+      return nl ? `<p>${L(`言语知识和阅读 ${t.questions.length - nl} 道，限时 ${minutes} 分钟；之后是听力 ${nl} 道（${ckSec.minutes} 分钟），像真考一样每段只播一次，题与题之间留作答时间。题目顺序和真考一致。`, `${t.questions.length - nl} language knowledge and reading questions in ${minutes} minutes, then ${nl} listening questions (${ckSec.minutes} minutes), each recording played once with time to answer after it, as on the day. In the real test's order.`)}</p>`
+        : `<p>${L(`一共 ${t.questions.length} 道，限时 ${minutes} 分钟，题目顺序和真考一致。听力不在其中。`, `${t.questions.length} questions in ${minutes} minutes, in the real test's order. Listening isn't included.`)}</p>`;
+    })()}
+<h2>${L("交卷后", "After you submit")}</h2>
+<ul>
+<li>${t.sections.some((x) => x.listening) ? L("每科（含听力）的估算分数，和最低分、合格线对照，估计能不能合格。", "An estimated score for each part, listening included, against its minimum and the pass mark — and whether that would pass.") : L("每科的估算分数，和最低分、合格线对照；还会算出听力至少要拿几分才能合格。", "An estimated score for each part against its minimum and the pass mark, and the listening score you'd still need to pass.")}</li>
+<li>${L("按题型的正确率，以及时间花在哪里。", "Accuracy by item type, and where your time went.")}</li>
+<li>${L("每道题的解析，可以只看错题。", "An explanation for every question, or just the ones you missed.")}</li>
+</ul>
+<p>${L("估分按答对比例换算。真考是等化计分，实际分数会有出入。离开页面超过 1 分钟会自动暂停，成绩标为“非正式”。", "Scores are estimated from the share of questions right; the real test is equated, so your actual score will differ. Leaving the page for over a minute pauses the clock and marks the attempt informal.")}</p>
+<h2>${L("相关", "More")}</h2>
+<p>${L(`想按题型慢慢练：<a href="${SITE_PATH}${lv}-practice/">${level} 练习题</a>。背语法：<a href="${SITE_PATH}${lv}-cards/">${level} 语法卡片</a>。考试安排和备考计划：<a href="${SITE_PATH}jlpt-december-2026/">12 月 JLPT 考前指南</a>。`, `Drill by item type: <a href="${SITE_PATH}${lv}-practice/">${level} practice questions</a>. Learn the grammar: <a href="${SITE_PATH}${lv}-cards/">${level} grammar flashcards</a>. Exam day and a study plan: <a href="${SITE_PATH}jlpt-december-2026/">December JLPT guide</a>.`)}</p>
+${lessonList}</section>`;
+    }
+    return `<section class="quiz-about">
+<h2>${L("卡片上有什么", "What's on the cards")}</h2>
+<p>${L(`${level} 课文里的每个语法点一张卡：语法形式、含义、带振假名和发音的例句。有两种卡：<b>认卡</b>（看语法形式，回想意思）和<b>填空卡</b>（看挖空的例句，回想该填什么）。`, `One card for every grammar point in the ${level} lessons: the form, its meaning, and example sentences with furigana and audio. Two kinds: <b>recognition</b> (see the form, recall the meaning) and <b>fill-in</b> (see an example with a gap, recall what goes there).`)}</p>
+<h2>${L("怎么复习", "How the reviews work")}</h2>
+<p>${L("翻卡后给自己打分（忘了 / 难 / 记得 / 简单），下次复习的间隔随之变长或缩短，和 Anki 的间隔重复是同一个思路。进度保存在这个浏览器里。", "After turning a card, rate yourself (Again / Hard / Good / Easy) and the next review moves further out or comes sooner — the same spaced-repetition idea as Anki. Progress stays in this browser.")}</p>
+<p>${L(`更喜欢用 Anki？下载 <a href="${SITE_PATH}anki/">免费 Anki 卡组</a>（含例句音频）。想练题：<a href="${SITE_PATH}${lv}-practice/">${level} 练习题</a>。`, `Prefer Anki? Get the <a href="${SITE_PATH}anki/">free Anki decks</a> (with example audio). For questions: <a href="${SITE_PATH}${lv}-practice/">${level} practice</a>.`)}</p>
+<h2>${L(`${level} 语法课文`, `${level} grammar lessons`)}</h2>
+${lessonList}</section>`;
+  };
+  // Schema: what the page is, and where it sits (Home › level › page).
+  const quizSchema = (level, kind, m, url) => JSON.stringify([
+    { "@context": "https://schema.org", "@type": kind === "cards" ? "LearningResource" : "Quiz", name: m.h1, description: m.desc, url, inLanguage: m.lang,
+      educationalLevel: `JLPT ${level}`, isAccessibleForFree: true, learningResourceType: kind === "mock" ? "Practice test" : kind === "cards" ? "Flashcards" : kind === "listening" ? "Listening practice" : "Practice questions",
+      about: { "@type": "Thing", name: "Japanese language" }, provider: { "@type": "Organization", name: "jpnotes.dev", url: SITE } },
+    { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+      { "@type": "ListItem", position: 1, name: m.home, item: SITE },
+      { "@type": "ListItem", position: 2, name: level, item: `${SITE}${level}/` },
+      { "@type": "ListItem", position: 3, name: m.crumb, item: url }] },
+  ]).replace(/</g, "\\u003c");
+  const withAbout = (m, level, kind, en, bundle, url) => ({ ...m, about: quizAbout(level, kind, en, bundle), schema: quizSchema(level, kind, { ...m, lang: en ? "en" : "zh-Hans", home: en ? "Japanese Grammar Notes" : "日语语法笔记" }, url) });
+  for (const [level, { practice, mocks }] of Object.entries(quizBundles)) {
+    const lv = level.toLowerCase();
+    const practiceId = `${lv}-practice`, mockId = `${lv}-mock-test`, cardsId = `${lv}-cards`, listeningId = `${lv}-listening`;
+    const hasCk = ckLevels.includes(level);
+    // The pages link to each other (when the other one exists).
+    const navLinks = (here, en) => [
+      here !== practiceId && `✍ <a href="${SITE_PATH}${practiceId}/">${en ? "Practice by question type" : "按题型练习"}</a>`,
+      here !== listeningId && hasCk && `🎧 <a href="${SITE_PATH}${listeningId}/">${en ? `${level} listening practice` : `${level} 听力练习`}</a>`,
+      here !== mockId && mocks.length && `⏱ <a href="${SITE_PATH}${mockId}/">${en ? `Timed ${level} mock test` : `${level} 模拟题（计时）`}</a>`,
+      here !== cardsId && `🗂 <a href="${SITE_PATH}${cardsId}/">${en ? "Grammar flashcards" : "语法卡片（在线背）"}</a>`,
+    ].filter(Boolean).join(" · ");
+    const src = writeQuizData(`${lv}.json`, practice);
+    const count = practice.questions.length;
+    const meta = {
+      en: {
+        title: `JLPT ${level} Practice Questions — ${ckLevels.includes(level) ? "Listening, " : ""}Vocabulary, Grammar & Reading, with Explanations`,
+        desc: `Free JLPT ${level} practice: ${count} exam-style questions — ${ckLevels.includes(level) ? "listening with audio, " : ""}kanji reading, vocabulary, grammar, sentence order and reading — with instant answers, an explanation for every wrong option, and a review list that brings back what you missed.`,
+        h1: `JLPT ${level} Practice Questions`, crumb: `${level} Practice`,
+        lead: `Exam-style ${level} questions in every format of the test${ckLevels.includes(level) ? ", listening included" : " except listening"}. Answer, see why each option is right or wrong, and the ones you miss come back a few days later.`,
+        nav: navLinks(practiceId, true),
+      },
+      zh: {
+        title: `JLPT ${level} 练习题 - ${ckLevels.includes(level) ? "听力・" : ""}文字词汇・语法・阅读在线做题，附详细解析`,
+        desc: `免费 JLPT ${level} 练习：${count} 道仿真题，覆盖${ckLevels.includes(level) ? "听力（带音频）、" : ""}汉字读音、词汇、语法、句子排序和阅读，即时判分，每个错误选项都有解析，错题本按间隔重复自动复习。`,
+        h1: `JLPT ${level} 练习题`, crumb: `${level} 练习`,
+        lead: `${ckLevels.includes(level) ? "覆盖" : "除听力外覆盖 "}${level} 考试的全部题型${ckLevels.includes(level) ? "（含听力）" : ""}。答完马上看每个选项为什么对、为什么错，答错的题过几天会再考你一次。`,
+        nav: navLinks(practiceId, false),
+      },
+    };
+    for (const lang of PAGE_LANGS) {
+      writeLangPage(practiceId, lang, localizePage(renderQuiz(lang, withAbout(meta[lang.code], level, "practice", lang.code === "en", quizBundles[level], langVariant(practiceId, lang).url), langVariant(practiceId, lang), level, `data-src="${src}"`, src), lang, localizedPageIds));
+    }
+    quizPageIds.push(practiceId);
+    console.log(`  Generated dist/${practiceId}/ (${count} questions${QUIZ_PUBLIC ? "" : ", not public"})`);
+    // Listening practice: the same app on the listening questions only, a page of
+    // its own because "JLPT N5 listening" is what people search for.
+    if (hasCk) {
+      const ckTypes = Object.fromEntries(Object.entries(practice.types).filter(([, t]) => t.g === "choukai"));
+      const ckQs = practice.questions.filter((q) => ckTypes[q.type]);
+      const ckIds = new Set(ckQs.map((q) => q.passage).filter(Boolean));
+      const ckSrc = writeQuizData(`${lv}-listening.json`, { ...practice, types: ckTypes, questions: ckQs,
+        passages: Object.fromEntries(Object.entries(practice.passages || {}).filter(([id]) => ckIds.has(id))) });
+      const recs = new Set(ckQs.map((q) => q.passage || q.id)).size;
+      const ckMeta = {
+        en: {
+          title: `JLPT ${level} Listening Practice — Free Audio Questions with Transcripts`,
+          desc: `Free JLPT ${level} listening practice online: ${recs} recordings in every listening format of the test, with audio you can replay, a transcript with furigana and translation, and an explanation for every option.`,
+          h1: `JLPT ${level} Listening Practice`, crumb: `${level} Listening`,
+          lead: `Every listening format of the ${level}, in original recordings. Play, answer, then read the transcript and see why each option is right or wrong.`,
+          nav: navLinks(listeningId, true),
+        },
+        zh: {
+          title: `JLPT ${level} 听力练习 - 在线听力题，带音频、原文和解析`,
+          desc: `免费 JLPT ${level} 听力在线练习：${recs} 段录音，覆盖真考的全部听力题型，可反复播放，答完看带振假名和翻译的原文，每个选项都有解析。`,
+          h1: `JLPT ${level} 听力练习`, crumb: `${level} 听力`,
+          lead: `${level} 听力的全部题型，录音原创。听完作答，再看原文和每个选项为什么对、为什么错。`,
+          nav: navLinks(listeningId, false),
+        },
+      };
+      for (const lang of PAGE_LANGS) {
+        writeLangPage(listeningId, lang, localizePage(renderQuiz(lang, withAbout(ckMeta[lang.code], level, "listening", lang.code === "en", quizBundles[level], langVariant(listeningId, lang).url), langVariant(listeningId, lang), level, `data-src="${ckSrc}"`, ckSrc), lang, localizedPageIds));
+      }
+      quizPageIds.push(listeningId);
+      console.log(`  Generated dist/${listeningId}/ (${ckQs.length} listening questions)`);
+    }
+    // Flashcards: the data is written by build-anki.js (it runs after this).
+    const cardsMeta = {
+      en: {
+        title: `JLPT ${level} Grammar Flashcards Online — Spaced Repetition, Free`,
+        desc: `Learn every JLPT ${level} grammar point with free online flashcards: meaning, examples with furigana and audio, and Anki-style spaced repetition in your browser — no app or account.`,
+        h1: `JLPT ${level} Grammar Flashcards`, crumb: `${level} Flashcards`,
+        lead: `One card per grammar point in the lessons. Recall it, check the meaning and examples, rate yourself — cards come back just before you'd forget them.`,
+        nav: navLinks(cardsId, true),
+      },
+      zh: {
+        title: `JLPT ${level} 语法卡片在线背 - 间隔重复，免费`,
+        desc: `在线背 JLPT ${level} 全部语法点：含义、带振假名和发音的例句，按 Anki 式间隔重复安排复习，浏览器里直接用，无需下载 App、无需注册。`,
+        h1: `JLPT ${level} 语法卡片`, crumb: `${level} 卡片`,
+        lead: `课文里每个语法点一张卡。先回想，再看含义和例句，给自己打分——快忘的时候它会再出现。`,
+        nav: navLinks(cardsId, false),
+      },
+    };
+    for (const lang of PAGE_LANGS) {
+      writeLangPage(cardsId, lang, localizePage(renderQuiz(lang, withAbout(cardsMeta[lang.code], level, "cards", lang.code === "en", quizBundles[level], langVariant(cardsId, lang).url), langVariant(cardsId, lang), level, `data-mode="cards" data-src="${SITE_PATH}quiz/${lv}-cards.json"`), lang, localizedPageIds));
+    }
+    quizPageIds.push(cardsId);
+    if (!mocks.length) continue;
+    // Mock tests: the test file, and its answer key loaded only after submitting.
+    const sets = mocks.map(({ test, key }) => ({ id: test.id, n: test.n, src: writeQuizData(`${test.id}.json`, test), key: writeQuizData(`${test.id}.key.json`, key) }));
+    const mockMeta = {
+      en: {
+        title: `JLPT ${level} Mock Test Online — Timed${hasCk ? ", Listening Included" : ""}, with Scores and Explanations`,
+        desc: `Free timed JLPT ${level} mock test in the real format (vocabulary, grammar, reading${hasCk ? " and listening with audio" : ""}), with an estimated score against the pass marks, a breakdown by question type, and explanations for every question.`,
+        h1: `JLPT ${level} Mock Test`, crumb: `${level} Mock test`,
+        lead: `Original questions in the real test's order and timing, not in the practice bank. No answers until you submit; then an estimated score, where the time went, and an explanation for every question.`,
+        nav: navLinks(mockId, true),
+      },
+      zh: {
+        title: `JLPT ${level} 模拟题在线测试 - ${hasCk ? "含听力，" : ""}计时、估分、逐题解析`,
+        desc: `免费 JLPT ${level} 在线模拟考：按真题结构和时间出题（文字词汇、语法、阅读${hasCk ? "、听力" : ""}），交卷后估算分数、对照合格线，按题型分析，每道题都有解析。`,
+        h1: `JLPT ${level} 模拟题`, crumb: `${level} 模拟题`,
+        lead: `原创题目，按真考的顺序和时间作答，和练习题不重复。交卷前不显示答案；交卷后估算分数、看时间花在哪里、逐题看解析。`,
+        nav: navLinks(mockId, false),
+      },
+    };
+    for (const lang of PAGE_LANGS) {
+      writeLangPage(mockId, lang, localizePage(renderQuiz(lang, withAbout(mockMeta[lang.code], level, "mock", lang.code === "en", quizBundles[level], langVariant(mockId, lang).url), langVariant(mockId, lang), level, `data-mode="mock" data-sets='${JSON.stringify(sets)}'`), lang, localizedPageIds));
+    }
+    quizPageIds.push(mockId);
+    console.log(`  Generated dist/${mockId}/ (${mocks.length} sets${QUIZ_PUBLIC ? "" : ", not public"})`);
+  }
+
+  // Hub for everything you can do rather than read: /practice/, one card per
+  // level (practice, mock tests, flashcards), levels without questions yet greyed out.
+  // One row per level (practice · mock test · flashcards); what each mode is,
+  // said once above the table. "已做" comes from this browser's progress.
+  const hubRow = (level, en) => {
+    const b = quizBundles[level], lv = level.toLowerCase(), L = (zh, e) => (en ? e : zh);
+    if (!b) return `<tr class="hub-soon"><th scope="row">${level}</th><td colspan="3">${L("准备中", "Coming soon")}</td></tr>`;
+    const n = b.practice.questions.length, types = Object.keys(b.practice.types).length;
+    const minutes = b.mocks.length ? b.mocks[0].test.sections.reduce((a, x) => a + x.minutes, 0) : 0;
+    return `<tr><th scope="row">${level}</th>
+      <td><a class="hub-go" href="${SITE_PATH}${lv}-practice/"><b>${L("练习题", "Practice")}</b><span>${L(`${n} 题 · ${types} 种题型`, `${n} questions · ${types} types`)}<span class="hub-done" data-lv="${lv}" data-t="${L(" · 已做 N", " · N done")}" hidden></span></span></a></td>
+      ${ckLevels.length ? `<td>${ckLevels.includes(level) ? `<a class="hub-go" href="${SITE_PATH}${lv}-listening/"><b>${L("听力", "Listening")}</b><span>${L(`${new Set(b.practice.questions.filter((q) => b.practice.types[q.type].g === "choukai").map((q) => q.passage || q.id)).size} 段录音`, `${new Set(b.practice.questions.filter((q) => b.practice.types[q.type].g === "choukai").map((q) => q.passage || q.id)).size} recordings`)}</span></a>` : ""}</td>` : ""}
+      <td>${b.mocks.length ? `<a class="hub-go" href="${SITE_PATH}${lv}-mock-test/"><b>${L("模拟题", "Mock test")}</b><span>${L(`${b.mocks.length} 套 · ${minutes} 分钟`, `${b.mocks.length} test${b.mocks.length > 1 ? "s" : ""} · ${minutes} min`)}</span></a>` : ""}</td>
+      <td><a class="hub-go" href="${SITE_PATH}${lv}-cards/"><b>${L("语法卡片", "Flashcards")}</b><span>${L("每个语法点一张", "one per grammar point")}</span></a></td></tr>`;
+  };
+  const hubIntro = (en) => {
+    const L = (zh, e) => (en ? e : zh);
+    return `<ul class="hub-modes">
+      <li><b>✍ ${L("练习题", "Practice")}</b>${ckLevels.length === 5 ? L("全部题型（含听力）。今日练习、按题型练、错题本；每题答完马上看解析。", "Every item type, listening included. Daily sets, by type, a review list; explanations after each answer.") : ckLevels.length ? L(`全部题型；听力目前有 ${ckLevels.join("、")}。今日练习、按题型练、错题本；每题答完马上看解析。`, `Every item type; listening so far at ${ckLevels.join(", ")}. Daily sets, by type, a review list; explanations after each answer.`) : L("除听力外的全部题型。今日练习、按题型练、错题本；每题答完马上看解析。", "Every item type but listening. Daily sets, by type, a review list; explanations after each answer.")}</li>
+      ${ckLevels.length ? `<li><b>🎧 ${L("听力", "Listening")}</b>${L("只练听力：每级全部听力题型，可重听，答完看带振假名和翻译的原文。", "Listening only: every listening item type, replay as often as you like, then a transcript with furigana and translation.")}</li>` : ""}
+      <li><b>⏱ ${L("模拟题", "Mock test")}</b>${L("按真考的结构和时间计时，交卷后估分、对照合格线。", "The real test's structure and timing; an estimated score against the pass marks.")}</li>
+      <li><b>🗂 ${L("语法卡片", "Flashcards")}</b>${L("每个语法点一张卡，间隔复习，认卡和填空卡两种。", "A card per grammar point with spaced repetition, recognition or fill-in.")}</li>
+    </ul>`;
+  };
+  // Answered-question counts per level, from this browser's localStorage.
+  const HUB_PROGRESS_JS = `(function(){try{var a=(JSON.parse(localStorage.getItem('jp_quiz_v1'))||{}).answers||{},c={};Object.keys(a).forEach(function(id){var l=id.slice(0,2);c[l]=(c[l]||0)+1;});document.querySelectorAll('.hub-done').forEach(function(el){var n=c[el.getAttribute('data-lv')];if(n){el.textContent=el.getAttribute('data-t').replace('N',n);el.hidden=false;}});}catch(e){}})();`;
+  const hubMeta = {
+    en: {
+      title: "JLPT Practice Tests Online — N5 to N1 Questions, Mock Tests & Flashcards",
+      desc: "Free JLPT practice in your browser: exam-style questions for every section except listening, timed mock tests with estimated scores, and grammar flashcards with spaced repetition. No sign-up.",
+      h1: "Practice", crumb: "Practice", nav: "",
+      lead: "Everything on this site you do rather than read. Pick your level; progress stays in this browser.",
+    },
+    zh: {
+      title: "JLPT 在线练习题 - N5 到 N1 练习、模拟题、语法卡片",
+      desc: "免费在线做 JLPT 题：除听力外全部题型的仿真练习题、计时模拟题（交卷估分）、语法卡片间隔复习，打开即用，无需注册。",
+      h1: "做题", crumb: "做题", nav: "",
+      lead: "这里是本站所有“动手”的部分：练习、模拟、背卡。选你的级别开始，进度保存在这个浏览器里。",
+    },
+  };
+  for (const lang of PAGE_LANGS) {
+    const en = lang.code === "en";
+    const m = { ...hubMeta[lang.code], body: `${hubIntro(en)}<div class="table-scroll"><table class="hub-table"><tbody>${["N5", "N4", "N3", "N2", "N1"].map((l) => hubRow(l, en)).join("")}</tbody></table></div>
+      <script>${HUB_PROGRESS_JS}</script>
+      <p class="hub-listen">${en
+        ? ckLevels.length ? `🎧 <b>Listening questions: ${ckLevels.join(", ")} so far</b>, other levels on the way. Meanwhile the <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News podcast</a> has slow news with transcripts.` : `🎧 <b>Listening questions are planned, not built yet.</b> If you want them, <a href="#feedback" class="fb-open">say so</a> — demand decides what comes first. Meanwhile the <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News podcast</a> has slow news with transcripts.`
+        : ckLevels.length ? `🎧 <b>听力题目前有 ${ckLevels.join("、")}</b>，其他级别在做。现在也可以用 <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News 播客</a>练听力（慢速新闻 + 原文）。` : `🎧 <b>听力题在规划中，还没做。</b>想要的话<a href="#feedback" class="fb-open">告诉我们</a>，想要的人多就先做。现在可以先用 <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News 播客</a>练听力（慢速新闻 + 原文）。`}</p>` };
+    writeLangPage("practice", lang, localizePage(renderQuiz(lang, m, langVariant("practice", lang), "", null), lang, localizedPageIds));
+  }
+  quizPageIds.push("practice");
 
   // Settings used to be a standalone page; it is now a modal on every page.
   const settingsStubDir = path.join(__dirname, "dist", "settings");
@@ -3187,6 +4061,7 @@ ${APP_PREFS_JS}
   };
   // About page (E-E-A-T page, lower priority since not browsed often)
   if (aboutPageGenerated) pushLangUrls("about", gitLastModTime("pages/about.md") || today, "yearly", "0.5");
+  if (QUIZ_PUBLIC) for (const id of quizPageIds) pushLangUrls(id, gitLastModTime("questions") || today, "weekly", "0.8");
   // Anki landing page (downloadable flashcards). Decks are derived from lesson
   // content, so the page effectively changes when any lesson last changed.
   sitemapUrls.push(`  <url>
@@ -3219,6 +4094,7 @@ Disallow: /anki/*.txt$
 Disallow: /anki/*.apkg$
 
 Sitemap: ${SITE}sitemap.xml
+# A summary for language models: ${SITE}llms.txt
 `, "utf-8");
 
   // IndexNow ownership key — must be reachable at https://<host>/<key>.txt and
@@ -3253,7 +4129,7 @@ Sitemap: ${SITE}sitemap.xml
   <channel>
     <title>Japanese Grammar Notes | 日语语法笔记</title>
     <link>${SITE}</link>
-    <description>Free structured Japanese grammar notes from N5 to N2 in 8 weeks. Bilingual with examples and spaced repetition.</description>
+    <description>Free structured Japanese grammar notes from N5 to N1. Bilingual with examples and spaced repetition.</description>
     <language>ja</language>
     <atom:link href="${SITE}feed.xml" rel="self" type="application/rss+xml"/>
 ${rssItems.join("\n")}
@@ -3263,11 +4139,18 @@ ${rssItems.join("\n")}
 
   fs.writeFileSync(path.join(__dirname, "dist/llms.txt"), `# Japanese Grammar Notes / 日语语法笔记
 
-> Free, structured Japanese grammar notes covering JLPT N5 → N2 in an 8-week curriculum. Bilingual: Chinese explanations + Japanese examples with furigana annotations. ${lessonPages.length} lessons, 400+ grammar points, each with conjugation rules, 3+ example sentences, comparisons between easily confused patterns, and spaced-repetition checklists.
+> jpnotes.dev is a free site for learning Japanese grammar for the JLPT, N5 to N1: ${totalLessons} lessons and ${totalPoints}+ grammar points, each with how it attaches, what it means, example sentences with furigana and audio, and how it differs from look-alike patterns — plus practice questions, timed mock tests and grammar flashcards. English pages at ${SITE}, Chinese at ${SITE}zh/.
+
+Key facts:
+- Free, no ads, no sign-up; progress (review checklists, practice history) stays in the browser.
+- Lessons: N5 (lessons 0–17), N4 (18–34), N3 (35–58), N2 (59–75), N1 (76–92). Every example sentence has furigana and a 🔊 recording.
+- Practice: ${Object.entries(quizBundles).map(([l, b]) => `${l} ${b.practice.questions.length}`).join(", ")} exam-style questions covering every non-listening JLPT item type, each option explained; a review list brings back missed questions. One timed mock test per level with an estimated score against the pass marks. Listening questions (recording, then a transcript with translation): ${ckLevels.length ? ckLevels.join(", ") + " so far" : "not built yet"}.
+- Ask AI: a side panel on every lesson and after every practice question answers questions about that page; free without setup, or with the reader's own API key (kept in the browser).
+- Anki decks (.apkg with audio, and TSV) per level at ${SITE}anki/.
 
 Site: ${SITE}
 Author: Ralphbupt (https://github.com/Ralphbupt)
-License: CC BY 4.0 — attribution required, no full-site mirroring
+License: content CC BY-NC 4.0 (attribution, non-commercial); code MIT
 
 ## Main pages
 
@@ -3279,14 +4162,21 @@ License: CC BY 4.0 — attribution required, no full-site mirroring
 - [N5 overview / N5 级别概览](${SITE}N5/): Basic sentence patterns, particles, verb groups, て-form, ない-form, た-form, adjectives, conditionals, potential, passive, volitional, conjecture. ${levelCounts.N5} lessons.
 - [N4 overview / N4 级别概览](${SITE}N4/): Causative, passive, giving/receiving, ように, ことにする/なる, わけだ/ものだ. ${levelCounts.N4} lessons.
 - [N3 overview / N3 级别概览](${SITE}N3/): Formal particles, cause/reason, concession, degree/extent, state, negation, compound expressions. ${levelCounts.N3} lessons.
-- [N2 overview / N2 级别概览](${SITE}N2/): Advanced concession, degree/limitation, judgment, contrast, written-formal grammar. ${levelCounts.N2} lessons.
+- [N2 overview / N2 级别概览](${SITE}N2/): Advanced concession, degree/limitation, judgment, contrast, written-formal grammar. ${levelCounts.N2} lessons.${levelCounts.N1 ? `
+- [N1 overview / N1 级别概览](${SITE}N1/): Timing, limits, extremes, classical and written forms, evaluation, emphatic emotion. ${levelCounts.N1} lessons.` : ""}
 
 ## Grammar checklists (full point-by-point listings)
 
 - [N5 grammar list / N5 文法チェックリスト](${SITE}N5_grammar_list/): All ~70 N5 grammar points with progress checkboxes.
 - [N4 grammar list / N4 文法チェックリスト](${SITE}N4_grammar_list/): All ~74 N4 grammar points (excluding N5 overlap).
 - [N3 grammar list / N3 文法チェックリスト](${SITE}N3_grammar_list/): All ~150 N3 grammar points.
-- [N2 grammar list / N2 文法チェックリスト](${SITE}N2_grammar_list/): All ~130 N2 grammar points.
+- [N2 grammar list / N2 文法チェックリスト](${SITE}N2_grammar_list/): All ~130 N2 grammar points.${levelCounts.N1 ? `
+- [N1 grammar list / N1 文法チェックリスト](${SITE}N1_grammar_list/): All ~100 N1 grammar points.` : ""}
+
+## Practice, mock tests and flashcards
+
+- [Practice hub](${SITE}practice/): Every level's practice questions, mock test and flashcards.
+${Object.entries(quizBundles).map(([l, b]) => { const v = l.toLowerCase(); return `- [JLPT ${l} practice questions](${SITE}${v}-practice/): ${b.practice.questions.length} questions by item type, with explanations.${ckLevels.includes(l) ? `\n- [JLPT ${l} listening practice](${SITE}${v}-listening/): listening questions with audio, transcripts and explanations.` : ""}${b.mocks.length ? `\n- [JLPT ${l} mock test](${SITE}${v}-mock-test/): timed, real format, estimated score.` : ""}\n- [JLPT ${l} grammar flashcards](${SITE}${v}-cards/): one card per grammar point, spaced repetition.`; }).join("\n")}
 
 ## Guides (comparisons and exam prep)
 
@@ -3295,7 +4185,7 @@ ${lessonPages.filter(l => l.level === "guides").map(l => `- [${l.jaTitle}](${SIT
 
 ## Chinese-only copies
 
-Every lesson, checklist and guide also exists at \`${SITE}zh/<page>/\` with the English text removed and a Chinese title (hreflang zh-Hans). The bilingual page is canonical for English.
+Every lesson, checklist, guide and practice page has an English page at \`${SITE}<page>/\` and a Chinese one at \`${SITE}zh/<page>/\` (hreflang en / zh-Hans).
 
 ## Feeds and metadata
 
@@ -3315,7 +4205,7 @@ Each \`/lessonNN/\` page contains:
 `, "utf-8");
 
   fs.writeFileSync(path.join(__dirname, "dist/manifest.json"), JSON.stringify({
-    name: "日语语法笔记 – N5→N2",
+    name: "日语语法笔记 – N5→N1",
     short_name: "日语文法",
     start_url: SITE_PATH,
     scope: SITE_PATH,
@@ -3323,7 +4213,7 @@ Each \`/lessonNN/\` page contains:
     background_color: "#fafaf8",
     theme_color: "#1a1a2e",
     icons: [
-      { src: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>文</text></svg>", sizes: "any", type: "image/svg+xml" }
+      { src: `${SITE_PATH}favicon-192.png`, sizes: "192x192", type: "image/png" }
     ]
   }, null, 2), "utf-8");
 
@@ -3362,8 +4252,8 @@ Each \`/lessonNN/\` page contains:
   <rect x="40" y="40" width="1120" height="550" rx="20" fill="none" stroke="#e94560" stroke-width="2" opacity="0.3"/>
   <text x="600" y="220" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="96" fill="#ffffff" font-weight="bold">日语语法笔记</text>
   <text x="600" y="320" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="42" fill="#c8c8d8">Japanese Grammar Notes</text>
-  <text x="600" y="400" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="36" fill="#e94560">N5 → N4 → N3 → N2</text>
-  <text x="600" y="470" text-anchor="middle" font-family="sans-serif" font-size="24" fill="#888888">Free · Bilingual · 8 Weeks · Spaced Repetition</text>
+  <text x="600" y="400" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="36" fill="#e94560">N5 → N4 → N3 → N2 → N1</text>
+  <text x="600" y="470" text-anchor="middle" font-family="sans-serif" font-size="24" fill="#888888">Free · Bilingual · N5 → N1 · Audio</text>
   <text x="600" y="550" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#666666">${SITE_HOST}</text>
 </svg>`;
   fs.writeFileSync(path.join(__dirname, "dist/og-image.svg"), ogSvg, "utf-8");
@@ -3405,11 +4295,11 @@ Each \`/lessonNN/\` page contains:
   }
   console.log(`  Generated ${lessonPages.length} per-lesson OG images`);
 
-  // ─── Index-page OG Images (N5/N4/N3/N2 level pages, about, anki) ───
+  // ─── Index-page OG Images (N5–N1 level pages, about, anki) ───
   // Each shareable index page gets a tailored 1200×630 social preview so a
   // share to XHS / X / Threads / WeChat surfaces a distinctive image rather
   // than the generic site-wide one.
-  const ogLevelCounts = { N5: 0, N4: 0, N3: 0, N2: 0 };
+  const ogLevelCounts = { N5: 0, N4: 0, N3: 0, N2: 0, N1: 0 };
   for (const lp of lessonPages) {
     if (lp.level && ogLevelCounts.hasOwnProperty(lp.level)) ogLevelCounts[lp.level]++;
   }
@@ -3418,8 +4308,9 @@ Each \`/lessonNN/\` page contains:
     { slug: "N4", topLabel: "JLPT N4", mainTitle: "N4 文法チェックリスト", sub: `${ogLevelCounts.N4} 课 · 54+ 语法点`, accent: "#e94560" },
     { slug: "N3", topLabel: "JLPT N3", mainTitle: "N3 文法チェックリスト", sub: `${ogLevelCounts.N3} 课 · 100+ 语法点`, accent: "#e94560" },
     { slug: "N2", topLabel: "JLPT N2", mainTitle: "N2 文法チェックリスト", sub: `${ogLevelCounts.N2} 课 · 75+ 语法点`, accent: "#e94560" },
-    { slug: "about", topLabel: "About · 关于", mainTitle: "日语语法笔记", sub: "N5 → N2 · 8 Weeks · Free", accent: "#e94560" },
-    { slug: "anki", topLabel: "Anki Decks", mainTitle: "JLPT 文法 卡组", sub: "N5 · N4 · N3 · N2 · 297 张卡", accent: "#e94560" },
+    ...(ogLevelCounts.N1 ? [{ slug: "N1", topLabel: "JLPT N1", mainTitle: "N1 文法チェックリスト", sub: `${ogLevelCounts.N1} 课 · 100+ 语法点`, accent: "#e94560" }] : []),
+    { slug: "about", topLabel: "About · 关于", mainTitle: "日语语法笔记", sub: "N5 → N1 · Free · Bilingual", accent: "#e94560" },
+    { slug: "anki", topLabel: "Anki Decks", mainTitle: "JLPT 文法 卡组", sub: "N5 · N4 · N3 · N2 · N1", accent: "#e94560" },
     { slug: "guides", topLabel: "Guides · 专题", mainTitle: "易混語法 対比", sub: "は vs が · から vs ので · JLPT 12月", accent: "#e94560" },
   ];
   for (const p of indexOgPages) {
@@ -3648,7 +4539,8 @@ body.ai-open #ai-btn {
   background: rgba(233,69,96,.15);
   filter: drop-shadow(0 0 3px var(--accent));
 }
-body:not(:has(article.lesson)) .nav-tool-ai {
+/* Shown once ai-assistant.js has run on the page (it adds .has-ai). */
+body:not(.has-ai) .nav-tool-ai {
   display: none;
 }
 #sidebar .nav-scroll {
@@ -3907,6 +4799,16 @@ html.theme-dark .speak-btn:hover { border-color: var(--accent); }
   padding: .6rem 1rem; margin: 1.5rem 0; font-size: .85rem;
 }
 .related-label { font-weight: 600; color: var(--text-muted); margin-right: .5rem; }
+.quiz-link { margin: 1.4rem 0 .4rem; }
+.level-note { margin: .2rem 0 1rem; font-size: .9em; color: var(--text-muted); }
+.quiz-cta { margin: 2rem 0 1rem; padding: 1rem 1.2rem; border: 1px solid var(--accent); border-radius: var(--radius-lg); background: rgba(127,127,127,.07); }
+.quiz-cta p { margin: 0 0 .7rem; }
+.quiz-cta a { display: inline-block; padding: .45em 1.2em; border-radius: 999px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 700; }
+.quiz-cta a:hover { filter: brightness(1.1); }
+.nav-hub { margin: .2rem .6rem .6rem; font-weight: 600; }
+.quiz-link a, .ov-quiz a { display: inline-block; padding: .35em .95em; border: 1px solid var(--accent); border-radius: 999px; color: var(--accent); text-decoration: none; font-size: .92em; }
+.quiz-link a:hover, .ov-quiz a:hover { background: var(--accent); color: #fff; }
+.ov-quiz { display: flex; flex-wrap: wrap; gap: .5rem; margin: .8rem 0 1.2rem; }
 .cross-link {
   display: inline-block; background: var(--chip-bg); color: var(--chip-text);
   padding: .15rem .55rem; border-radius: var(--radius-sm); margin: .15rem .2rem;
@@ -3958,10 +4860,32 @@ summary:hover { color: var(--link); }
 }
 
 /* Mobile: sidebar expands as overlay; content stays full width. */
+#sb-backdrop, #m-bar { display: none; }
 @media (max-width: 768px) {
+  #m-bar {
+    display: flex; align-items: center; gap: 2px;
+    position: fixed; top: 0; left: 0; right: 0; height: 48px; z-index: 90;
+    padding: 4px 6px 4px 54px; background: var(--bg); border-bottom: 1px solid var(--border);
+    transition: transform var(--transition-slow);
+  }
+  #m-title { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text-strong); font-size: .78rem; font-weight: 700; text-decoration: none; }
+  .m-btn { display: flex; align-items: center; justify-content: center; flex: none; width: 38px; height: 40px; padding: 0; border: 0; border-radius: var(--radius-sm); background: none; color: var(--text-muted); cursor: pointer; }
+  .m-btn[hidden] { display: none; }
+  .m-btn svg { width: 20px; height: 20px; }
+  .m-btn:active { background: var(--chip-bg); }
+  body.ai-open .m-btn[data-m="ai"] { color: var(--accent); }
+  /* ☰ sits in the bar's left end: flat, and slides away with it. */
+  #sidebar.collapsed #menu-toggle { background: transparent; box-shadow: none; }
+  .nav-tools { transition: width var(--transition-slow), transform var(--transition-slow); }
+  .nav-tool-extra { display: none !important; }
+  html.mbar-hidden #m-bar, html.mbar-hidden #sidebar.collapsed .nav-tools { transform: translateY(-100%); }
+  html .q-mockbar { transition: top var(--transition-slow); }
+  html:not(.mbar-hidden) .q-mockbar { top: 48px; }
   #sidebar:not(.collapsed) {
     box-shadow: 2px 0 16px rgba(0,0,0,.25);
   }
+  body:not(.sidebar-collapsed) #sb-backdrop { display: block; position: fixed; inset: 0; z-index: 99; background: rgba(0,0,0,.35); }
+  html.sb-lock, html.sb-lock body { overflow: hidden; }
   #content { margin-left: 0 !important; margin-right: 0; padding: 3.5rem 1rem 4rem; }
 }
 
@@ -4083,6 +5007,7 @@ body.sidebar-collapsed #content.home {
     --text-muted: #a8a8b8;
     --text-subtle: #888;
     --word-bg: #25253a;
+    --surface-2: #25253a;
     --word-border: #3a3a55;
     --code-bg: #1f1f2e;
     --ruby-color: #a8a8b8;
@@ -4145,6 +5070,7 @@ html.theme-dark {
     --text-muted: #a8a8b8;
     --text-subtle: #888;
     --word-bg: #25253a;
+    --surface-2: #25253a;
     --word-border: #3a3a55;
     --code-bg: #1f1f2e;
     --ruby-color: #a8a8b8;
@@ -4250,6 +5176,16 @@ html.theme-dark #search-box { background: #1f1f2e; }
 #theme-menu .theme-choice { border-color: transparent; border-radius: var(--radius); }
 #theme-menu .theme-choice[aria-checked="true"] { border-color: var(--accent); box-shadow: none; }
 .tc-lang { font-weight: 700; }
+/* Share menu (settings-modal.js jpShare): copy link + a few networks; on
+   touch devices the system share sheet is used instead. */
+#share-menu { position: fixed; z-index: 1100; min-width: 11rem; background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); padding: .35rem; display: flex; flex-direction: column; }
+#share-menu button, #share-menu a { display: block; text-align: left; padding: .45rem .7rem; border-radius: var(--radius); font: inherit; font-size: .88rem; color: inherit; background: none; border: 0; cursor: pointer; text-decoration: none; }
+#share-menu button:hover, #share-menu a:hover { background: rgba(127,127,127,.16); }
+#share-menu .sm-ok { color: var(--accent); }
+#share-menu .sm-hint { font-size: .8rem; color: var(--text-muted); padding: .45rem .7rem; max-width: 15rem; line-height: 1.5; }
+#share-menu .sm-qr { width: 13rem; margin: .5rem auto .2rem; padding: .4rem; background: #fff; border-radius: var(--radius); }
+#share-menu .sm-qr svg { display: block; width: 100%; height: auto; }
+#share-menu .sm-manual { font: inherit; font-size: .8rem; margin: .3rem; padding: .3rem; width: 15rem; }
 body.ai-open #tc-ai { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
 @media (min-width: 769px) { .nav-tool-extra { display: none; } }
 @media (max-width: 768px) { #top-controls { display: none; } }

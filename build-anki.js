@@ -11,6 +11,7 @@
 //   Back:  description, meaning prose, example sentences, link to jpnotes.dev
 
 const fs = require("fs");
+const { QUIZ_LINKS } = require("./build-quiz");
 const path = require("path");
 const crypto = require("crypto");
 const KuroshiroMod = require("kuroshiro");
@@ -21,7 +22,10 @@ const KuromojiAnalyzer = KuromojiMod.default || KuromojiMod;
 const SITE = "https://jpnotes.dev/";
 const SETTINGS_JS_HASH = crypto.createHash("md5").update(fs.readFileSync(path.join(__dirname, "site", "settings-modal.js"))).digest("hex").slice(0, 8);
 const OUT_DIR = path.join(__dirname, "dist", "anki");
-const LEVELS = ["N5", "N4", "N3", "N2"];
+// No strikethrough (the notes write 越~越~), same as build.js.
+const ankiMarked = new (require("marked").Marked)({ gfm: true });
+ankiMarked.use({ renderer: { del(token) { const t = token.raw.startsWith("~~") ? "~~" : "~"; return t + this.parser.parseInline(token.tokens) + t; } } });
+const LEVELS = ["N5", "N4", "N3", "N2", "N1"].filter((l) => fs.existsSync(path.join(__dirname, "grammar", l)));
 
 // Kuroshiro furigana — same engine as build.js so card readings match
 // the website's. Init once, reuse for every example sentence.
@@ -84,6 +88,13 @@ function stripMd(text) {
     .trim();
 }
 
+// Markdown → HTML for the online cards' meaning (tables, bold, lists, links).
+// Lesson links become absolute so they work from /n5-cards/.
+function mdHtml(md) {
+  if (!md) return "";
+  return ankiMarked.parse(md).replace(/href="\//g, 'href="https://jpnotes.dev/').trim();
+}
+
 function extractBilingual(text) {
   const zh = text.match(/^:::zh\s*\n([\s\S]*?)^:::\s*$/m);
   const en = text.match(/^:::en\s*\n([\s\S]*?)^:::\s*$/m);
@@ -109,7 +120,10 @@ function parseGrammarSections(md) {
       const headerLine = sub.split("\n")[0];
       if (/^(接[续続]|Conjugation)/i.test(headerLine)) continue;
       if (/例句|例文|Example/i.test(headerLine)) continue;
-      const text = extractBilingual(sub.split("\n").slice(1).join("\n"))[lang];
+      // Every :::zh / :::en block of the subsection — examples often sit in
+      // ①②③ sub-subsections after an introductory paragraph.
+      const body = sub.split("\n").slice(1).join("\n");
+      const text = [...body.matchAll(new RegExp(`^:::${lang}\\s*\\n([\\s\\S]*?)^:::\\s*$`, "gm"))].map((m) => m[1].trim()).join("\n\n");
       if (!text) continue;
       let cur = null;
       for (const raw of text.split("\n")) {
@@ -200,7 +214,7 @@ function parseGrammarSections(md) {
       const descEnDash = enHeading.match(/\s[—–-]\s*(.+)$/);
       if (descEnParen) descriptionEn = descEnParen[1].trim();
       else if (descEnDash) descriptionEn = descEnDash[1].trim();
-      current = { term, description, descriptionEn };
+      current = { term, description, descriptionEn, heading: headingText };
       continue;
     }
     if (line.startsWith("## ") && current) {
@@ -268,7 +282,9 @@ function renderExamples(items, lang, withAudio) {
 function parseExampleLines(text) {
   const items = [];
   if (!text) return items;
-  for (const line of stripMd(text).split("\n")) {
+  // Bold (**…**) marks the grammar in an example; keep it as private-use
+  // markers through stripMd so buildExamples can make a fill-in-the-blank.
+  for (const line of stripMd(text.replace(/\*\*([^*]+)\*\*/g, "\uE000$1\uE001")).split("\n")) {
     if (!line.trim()) continue;
     const parsed = parseExampleLine(line.trim());
     if (parsed) items.push(parsed);
@@ -282,6 +298,7 @@ function parseExampleLines(text) {
 async function buildExamples(textZh, textEn) {
   const items = parseExampleLines(textZh);
   const enItems = parseExampleLines(textEn || "");
+  for (const it of [...items, ...enItems]) { it.marked = it.jp; it.jp = it.jp.replace(/[\uE000\uE001]/g, ""); }
   if (items.length === 0 && enItems.length) {
     // zh-less section (rare): base the cards on the en block instead.
     for (const it of enItems) items.push({ jp: it.jp, zh: null, en: it.zh });
@@ -293,6 +310,17 @@ async function buildExamples(textZh, textEn) {
   }
   for (const it of items) {
     it.jpHtml = await withFurigana(it.jp);
+    // The sentence with its grammar wrapped in <b class="cl"> — the online
+    // fill-in-the-blank card hides those parts.
+    if (it.marked && it.marked.includes("\uE000")) {
+      let html = "";
+      for (const [i, part] of it.marked.split(/[\uE000\uE001]/).entries()) {
+        if (!part) continue;
+        const h = await withFurigana(part);
+        html += i % 2 ? `<b class="cl">${h}</b>` : h;
+      }
+      it.clozeHtml = html;
+    }
   }
   return { items };
 }
@@ -343,6 +371,7 @@ async function main() {
   // Card cache for the Python .apkg pass — avoids re-parsing markdown
   // and re-running furigana from a separate language runtime.
   const cardCache = {};
+  const onlineCards = {};
 
   // Example text → pre-generated TTS id. dist/.audio-requests.json is
   // rewritten by build.js on every run, so it always matches current lesson
@@ -383,6 +412,7 @@ async function main() {
 
     let count = 0;
     cardCache[level] = { zh: [], en: [] };
+    onlineCards[level] = [];
     for (const f of files) {
       const md = fs.readFileSync(path.join(dir, f), "utf-8");
       const lessonMatch = f.match(/^lesson(\d+)/);
@@ -406,14 +436,42 @@ async function main() {
         // Filter out non-grammar cards:
         // 1. Must have examples (section overviews and summaries don't)
         // 2. Must not be a generic section heading (練習, 総結, etc.)
-        const NOISE = /基本用法|常见错误|总结|総結|対比|对比|知識点|练习|練習|今日|辨析|详解|概论|入门|変形|动词分类|分类|副词化|用法总览|全部|总览|間違い|よくある|同一场景|切换规则/;
-        if (!s.examples && !s.examplesEn) continue;
-        if (NOISE.test(s.term)) continue;
-        const ex = await buildExamples(s.examples, s.examplesEn);
+        const NOISE = /常见错误|总结|総結|対比|对比|知識点|练习|練習|今日|辨析|详解|概论|入门|用法总览|全部|总览|間違い|よくある|同一场景|对照表|比较表|速览/;
+        // An "A vs B" point (は vs が 辨析) is a comparison, kept out of the
+        // Anki decks, but worth a card online — titled by the pair.
+        const vs = /\svs\s/.test(s.heading || "") && !/速览|比较表|全部|总对比/.test(s.heading);
+        if (vs) {
+          const vsTerm = s.heading.replace(/[（(].*$/, "").replace(/\s*(辨析|对照|対照|对比|比较)\s*$/, "").trim();
+          const ex0 = s.examples || s.examplesEn ? await buildExamples(s.examples, s.examplesEn) : { items: [] };
+          onlineCards[level].push({
+            id: `${lessonNum}:${vsTerm}`,
+            lesson: `lesson${lessonNum}`,
+            term: { zh: vsTerm, en: vsTerm },
+            desc: { zh: s.description && !/辨析|对照|对比/.test(s.description) ? s.description : "", en: s.descriptionEn || "" },
+            meaning: { zh: mdHtml(s.meaning), en: mdHtml(s.meaningEn || s.meaning) },
+            ex: ex0.items.slice(0, 3).map((e) => ({ ja: e.jpHtml, zh: e.zh || null, en: e.en || null, audio: null })),
+          });
+          continue;
+        }
+        if (NOISE.test(s.heading || s.term)) continue;
+        const ex = s.examples || s.examplesEn ? await buildExamples(s.examples, s.examplesEn) : { items: [] };
         // 3. Must have at least one REAL Japanese example after filtering —
         //    conjugation-table lessons whose "examples" are Chinese prose or
-        //    table cells produce none, and a card without examples is noise.
-        if (ex.items.length === 0) continue;
+        //    table cells produce none, and an Anki card without examples is
+        //    noise. Online cards still get them (meaning / rules only), so
+        //    every grammar point is there to study.
+        if (ex.items.length === 0) {
+          const descEn0 = s.descriptionEn || s.description;
+          onlineCards[level].push({
+            id: `${lessonNum}:${s.term}`,
+            lesson: `lesson${lessonNum}`,
+            term: { zh: s.displayTerm, en: s.displayTermEn },
+            desc: { zh: s.description || "", en: descEn0 || "" },
+            meaning: { zh: mdHtml(s.meaning), en: mdHtml(s.meaningEn || s.meaning) },
+            ex: [],
+          });
+          continue;
+        }
         for (const it of ex.items) {
           const id = audioMap.get(it.jp.replace(/\s+/g, ""));
           if (id && fs.existsSync(path.join(audioDir, `${id}.mp3`))) {
@@ -429,6 +487,7 @@ async function main() {
           zh: it.zh || null,
           en: it.en || null,
           audio: it.audio || null,
+          cloze: it.clozeHtml || null,
         }));
         const shared = { level, lessonNum, term: s.term, url: lessonUrl, examples: exampleData };
 
@@ -462,6 +521,19 @@ async function main() {
           backApkg: backEnApkg,
           displayTerm: s.displayTermEn,
           description: descEn || null,
+        });
+        // Online flashcards (/n5-cards/, site/quiz.js): the same card as data.
+        // The id is lesson + term so progress survives reordering.
+        onlineCards[level].push({
+          id: `${lessonNum}:${s.term}`,
+          lesson: `lesson${lessonNum}`,
+          term: { zh: s.displayTerm, en: s.displayTermEn },
+          desc: { zh: s.description || "", en: descEn || "" },
+          meaning: { zh: mdHtml(s.meaning), en: mdHtml(meaningEn) },
+          // ex: up to 3 shown on the back; cloze: every example whose grammar
+          // is marked, for the fill-in-the-blank card.
+          ex: exampleData.slice(0, 3).map((e) => ({ ja: e.jpHtml, zh: e.zh, en: e.en, audio: e.audio || null })),
+          cloze: exampleData.filter((e) => e.cloze).map((e) => ({ ja: e.cloze, zh: e.zh, en: e.en, audio: e.audio || null })),
         });
 
         count++;
@@ -501,19 +573,24 @@ async function main() {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>日语语法 Anki 卡组下载（.apkg / TSV）| JLPT N5–N2 Japanese Grammar Anki Decks — jpnotes.dev</title>
-<meta name="description" content="免费下载 JLPT N5/N4/N3/N2 日语语法 Anki 卡组：.apkg 一键导入，含例句日语音频和挖空练习（支持 AnkiDroid / AnkiMobile），共 ${total} 张。Free JLPT N5–N2 Japanese grammar Anki decks with example audio &amp; cloze practice (.apkg &amp; TSV, ${total} cards, works with AnkiDroid &amp; AnkiMobile).">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://jpnotes.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+<title>日语语法 Anki 卡组下载（.apkg / TSV）| JLPT N5–N1 Japanese Grammar Anki Decks — jpnotes.dev</title>
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
+<link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="description" content="免费下载 JLPT N5/N4/N3/N2/N1 日语语法 Anki 卡组：.apkg 一键导入，含例句日语音频和挖空练习（支持 AnkiDroid / AnkiMobile），共 ${total} 张。Free JLPT N5–N1 Japanese grammar Anki decks with example audio &amp; cloze practice (.apkg &amp; TSV, ${total} cards, works with AnkiDroid &amp; AnkiMobile).">
 <link rel="canonical" href="${SITE}anki/">
-<meta property="og:title" content="日语语法 Anki 卡组下载（.apkg）| JLPT N5–N2 Grammar Anki Decks">
-<meta property="og:description" content="免费 JLPT 日语语法 Anki 卡组 / Free JLPT Japanese grammar Anki decks (.apkg, ${total} cards), covering N5–N2.">
+<meta property="og:title" content="日语语法 Anki 卡组下载（.apkg）| JLPT N5–N1 Grammar Anki Decks">
+<meta property="og:description" content="免费 JLPT 日语语法 Anki 卡组 / Free JLPT Japanese grammar Anki decks (.apkg, ${total} cards), covering N5–N1.">
 <meta property="og:url" content="${SITE}anki/">
 <meta property="og:image" content="${SITE}anki/og-image.png">
 <script type="application/ld+json">
 ${JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Dataset",
-  name: "JLPT N5–N2 日语语法 Anki 卡组 / Japanese Grammar Anki Decks",
-  description: `Free JLPT Japanese grammar Anki flashcard decks (${total} cards, N5–N2). Each card has the grammar point, meaning and example sentences, linked to the full lesson on jpnotes.dev.`,
+  name: "JLPT N5–N1 日语语法 Anki 卡组 / Japanese Grammar Anki Decks",
+  description: `Free JLPT Japanese grammar Anki flashcard decks (${total} cards, N5–N1). Each card has the grammar point, meaning and example sentences, linked to the full lesson on jpnotes.dev.`,
   url: `${SITE}anki/`,
   license: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
   creator: { "@type": "Organization", name: "jpnotes.dev", url: SITE },
@@ -597,9 +674,10 @@ body.lang-en div.lang-en, body.lang-en p.lang-en, body.lang-en li.lang-en, body.
   </nav>
     <h1><span class="lang-zh">日语语法 Anki 卡组下载</span><span class="lang-en">Japanese Grammar Anki Decks</span></h1>
   <p class="subtitle">
-    <span class="lang-zh">JLPT N5 → N2 共 ${total} 张卡 · 中文版 / English 版两套独立卡组 · .apkg 版含 🔊 例句日语音频 + 挖空练习子卡组 · 支持 AnkiDroid、AnkiMobile · 每张语法点配含义、例句和跳回 jpnotes.dev 详细讲解的链接</span>
-    <span class="lang-en">JLPT N5 → N2, ${total} cards · separate Chinese and English editions · .apkg includes 🔊 native-style TTS audio on examples + a cloze-practice subdeck · works with AnkiDroid &amp; AnkiMobile · each card has the grammar point, its meaning, examples, and a link back to the full lesson on jpnotes.dev</span>
-  </p>
+    <span class="lang-zh">JLPT N5 → N1 共 ${total} 张卡 · 中文版 / English 版两套独立卡组 · .apkg 版含 🔊 例句日语音频 + 挖空练习子卡组 · 支持 AnkiDroid、AnkiMobile · 每张语法点配含义、例句和跳回 jpnotes.dev 详细讲解的链接</span>
+    <span class="lang-en">JLPT N5 → N1, ${total} cards · separate Chinese and English editions · .apkg includes 🔊 native-style TTS audio on examples + a cloze-practice subdeck · works with AnkiDroid &amp; AnkiMobile · each card has the grammar point, its meaning, examples, and a link back to the full lesson on jpnotes.dev</span>
+  </p>${QUIZ_LINKS ? `
+  <p class="online-cards" style="margin:1rem 0;padding:.7rem 1rem;border:1px solid #e94560;border-radius:8px;">🗂 <span class="lang-zh">不想装 Anki？<a href="/n5-cards/">在浏览器里背 N5 语法卡片</a>——同样的间隔复习，还有填空卡，进度存在本机。</span><span class="lang-en">Don't want to install Anki? <a href="/n5-cards/">Study the N5 grammar cards in your browser</a> — the same spaced repetition, plus fill-in cards, with progress kept on your device.</span></p>` : ""}
 
   <h2><span class="lang-zh">选择级别下载</span><span class="lang-en">Pick a level to download</span></h2>
   <div class="anki-grid">
@@ -638,8 +716,8 @@ ${cardCellsEn}
   </p>
 
   <div class="note">
-    <p class="lang-zh"><strong>提示</strong>：所有内容来自 <a href="${SITE}">jpnotes.dev</a>，CC BY 4.0 许可。可以自由分享、改编、用于教学，但请标注来源。卡组每周可能更新，回这里看更新日期。</p>
-    <p class="lang-en"><strong>Note</strong>: All content comes from <a href="${SITE}">jpnotes.dev</a>, licensed CC BY 4.0. Free to share, adapt, and use for teaching — just attribute the source. Decks may be updated weekly; check back here for the latest version.</p>
+    <p class="lang-zh"><strong>提示</strong>：所有内容来自 <a href="${SITE}">jpnotes.dev</a>，CC BY-NC 4.0 许可。可以自由分享、改编、用于教学，请标注来源，不得用于商业用途。卡组每周可能更新，回这里看更新日期。</p>
+    <p class="lang-en"><strong>Note</strong>: All content comes from <a href="${SITE}">jpnotes.dev</a>, licensed CC BY-NC 4.0. Free to share, adapt, and use for teaching — attribute the source, and no commercial use. Decks may be updated weekly; check back here for the latest version.</p>
   </div>
 
   <h2><span class="lang-zh">卡片结构</span><span class="lang-en">Card structure</span></h2>
@@ -744,6 +822,10 @@ function shareApkg(link, filename) {
   // Cache the front/back HTML for build-anki.py to reuse — avoids
   // running kuroshiro from two language runtimes and guarantees the
   // .apkg cards have identical content to the .txt cards.
+  fs.mkdirSync(path.join(__dirname, "dist", "quiz"), { recursive: true });
+  for (const [level, cards] of Object.entries(onlineCards)) {
+    if (cards.length) fs.writeFileSync(path.join(__dirname, "dist", "quiz", `${level.toLowerCase()}-cards.json`), JSON.stringify(cards), "utf-8");
+  }
   fs.writeFileSync(
     path.join(OUT_DIR, ".cards.json"),
     JSON.stringify(cardCache),

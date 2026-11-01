@@ -1,0 +1,387 @@
+[
+ {
+  "id": "n1-m1-ck-301",
+  "type": "gaiyou",
+  "scene": "講演会で、植物学者が話しています。",
+  "lines": [
+   [
+    "M",
+    "雑草というと、どこにでも生えて、抜いても抜いても生えてくる、たくましい植物だと思われがちです。ところが実際には、多くの雑草は、ほかの植物との競争にはめっぽう弱い。日当たりがよく、栄養の豊かな土地では、背の高い植物にあっという間に覆われてしまいます。では、なぜ道ばたや、アスファルトの割れ目のようなところで見かけるのか。そこは、人に踏まれる、すぐに乾く、栄養もない、と、普通の植物ならとても生きていけない場所です。雑草は、ほかの植物がやって来ない、そういう場所にあえて身を置くことで、競争そのものを避けているわけです。強いから生き残っているというより、勝負をしなくて済む場所を見つけるのがうまい、と言ったほうが実態に近いでしょうね。"
+   ]
+  ],
+  "question": "植物学者は何について話していますか。",
+  "spokenOptions": true,
+  "options": [
+   "雑草がほかの植物より強い理由",
+   "植物が豊かな土地で競い合う様子",
+   "道ばたの環境が厳しくなった原因",
+   "雑草が生き延びるためのやり方"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "讲座上，一位植物学家在讲话。",
+    "question": "植物学家在讲什么？",
+    "lines": [
+     "说到杂草，人们往往认为它是到处都长、拔了又长的顽强植物。可实际上，很多杂草在和其他植物的竞争中弱得很。在日照好、养分充足的土地上，转眼就会被高大的植物盖过去。那么，为什么在路边、柏油路的裂缝这种地方能看到它们呢？那里会被人踩、很快变干、又没有养分，是一般植物根本活不下去的地方。杂草正是特意待在其他植物不会来的这种地方，来避开竞争本身。与其说是因为强才活下来，不如说是善于找到不用一决胜负的地方，这样说更接近实际情况吧。"
+    ],
+    "options": [
+     "杂草比其他植物强的原因",
+     "植物在肥沃土地上相互竞争的样子",
+     "路边环境变得严酷的原因",
+     "杂草得以存活的方式"
+    ]
+   },
+   "en": {
+    "scene": "At a public lecture, a botanist is speaking.",
+    "question": "What is the botanist talking about?",
+    "lines": [
+     "We tend to think of weeds as tough plants that grow anywhere and keep coming back however often you pull them up. In reality, though, many weeds are hopeless at competing with other plants. On sunny, fertile ground, taller plants cover them in no time. So why do we see them by roadsides and in cracks in the asphalt? Those are places where they get trampled, dry out quickly and find no nutrients — places ordinary plants simply can't survive. By deliberately settling in such spots, where no other plant will come, weeds avoid competition altogether. Rather than surviving because they're strong, it's closer to the truth to say they're good at finding places where they don't have to fight."
+    ],
+    "options": [
+     "Why weeds are stronger than other plants",
+     "How plants compete on fertile ground",
+     "Why roadside conditions have become harsh",
+     "How weeds manage to survive"
+    ]
+   }
+  },
+  "why": {
+   "zh": "全篇讲杂草其实竞争力弱，靠特意待在别的植物不来的恶劣地方「競争そのものを避けている」来存活——讲的是杂草的生存方式。",
+   "en": "The whole talk explains that weeds, weak at competing, survive by choosing harsh places other plants avoid — their survival strategy."
+  },
+  "wrong": [
+   {
+    "zh": "他说杂草「競争にはめっぽう弱い」，正好相反。",
+    "en": "He says weeds are weak competitors — the opposite."
+   },
+   {
+    "zh": "肥沃土地上被高大植物盖过只是用来对比的细节。",
+    "en": "Competition on fertile ground is just a contrasting detail."
+   },
+   {
+    "zh": "路边环境严酷是举的例子，他没讲变严酷的原因。",
+    "en": "Harsh roadsides are an example; he says nothing about them becoming harsh."
+   },
+   null
+  ],
+  "traps": [
+   "twisted",
+   "detail-as-topic"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-302",
+  "type": "gaiyou",
+  "scene": "会社で、女の人と男の人が、始業前の勉強会について話しています。",
+  "lines": [
+   [
+    "F",
+    "ねえ、有志でやってる朝七時からの勉強会、一緒に出てみない？　始業前の一時間って、びっくりするぐらい頭に入るんだよ。"
+   ],
+   [
+    "M",
+    "ああいうのが効果あるのは分かるよ。朝のほうが集中できるっていうのも、実際そうなんだと思う。"
+   ],
+   [
+    "F",
+    "でしょ。"
+   ],
+   [
+    "M",
+    "ただ、あれ、出てる人のほうが評価されやすい空気になってない？　参加は自由って言いながら、部長も毎回顔を出してるし。子どもを保育園に送ってから来る人とか、どうやったって七時には来られない人もいるわけじゃない。そういう人が、やる気がないみたいに見られるとしたら、ちょっとね。"
+   ],
+   [
+    "F",
+    "それは考えすぎじゃない？"
+   ],
+   [
+    "M",
+    "だといいんだけどね。昼休みにもやるとか、録画しておいて後で見られるとか、そういうやり方も選べるようになれば、僕も喜んで出るんだけど。"
+   ]
+  ],
+  "question": "男の人は、始業前の勉強会についてどう思っていますか。",
+  "spokenOptions": true,
+  "options": [
+   "効果が疑わしいので、参加する意味がない",
+   "効果はあるが、出られない人への配慮が要る",
+   "朝は集中できないので、昼に移したほうがいい",
+   "部長が来るので、出ないと評価が下がって困る"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "公司里，一个女人和一个男人在谈上班前的学习会。",
+    "question": "男人对上班前的学习会怎么看？",
+    "lines": [
+     "哎，大家自愿办的早上七点开始的学习会，一起去试试吗？上班前那一个小时，吸收得好得吓人。",
+     "那种东西有效果我是知道的。早上更能集中，我想实际上也是这样。",
+     "对吧。",
+     "不过，那个是不是变成了参加的人更容易被认可的氛围？嘴上说自愿参加，部长却每次都露面。也有送孩子去保育园再来上班、怎么也赶不上七点的人吧。要是那些人被看成没干劲，那就有点……",
+     "你是不是想多了？",
+     "但愿如此吧。要是午休也办一场，或者录下来以后能看，能选那样的方式的话，我也很乐意参加。"
+    ],
+    "options": [
+     "效果可疑，参加没意义",
+     "有效果，但需要照顾到来不了的人",
+     "早上没法集中，改到中午比较好",
+     "部长会来，不参加评价会下降，很为难"
+    ]
+   },
+   "en": {
+    "scene": "At a company, a woman and a man are talking about a study group held before work.",
+    "question": "What does the man think about the before-work study group?",
+    "lines": [
+     "Hey, want to try the volunteer study group that starts at seven in the morning? That hour before work, things go in amazingly well.",
+     "I know those things work. And I think it's true that you concentrate better in the morning.",
+     "Right?",
+     "But hasn't it become the kind of atmosphere where people who attend get rated higher? They say it's optional, but the department head shows up every time. And there are people who drop their kids at nursery first and can't possibly be here by seven. If they end up looking unmotivated, well…",
+     "Aren't you overthinking it?",
+     "I hope so. If you could also choose other ways — a session at lunch, or a recording to watch later — I'd happily join too."
+    ],
+    "options": [
+     "Its effect is doubtful, so there's no point",
+     "It works, but those who can't attend need consideration",
+     "Mornings are hard to focus, so it should move to lunch",
+     "The head attends, so he worries his own rating will fall"
+    ]
+   }
+  },
+  "why": {
+   "zh": "他承认有效果、早上能集中，但担心来不了的人被看成没干劲，希望也有午休或录像等方式——有效果，但要照顾到来不了的人。",
+   "en": "He grants it works, but worries about people who can't come being judged, and wants alternatives — it works, but needs consideration for those who can't attend."
+  },
+  "wrong": [
+   {
+    "zh": "他说「効果あるのは分かる」，不怀疑效果。",
+    "en": "He accepts that it works."
+   },
+   null,
+   {
+    "zh": "他说「朝のほうが集中できる」，反了；午休是增加的选项，不是改过去。",
+    "en": "He says mornings are better for focus; lunch would be an extra option, not a move."
+   },
+   {
+    "zh": "他担心的是来不了的人被看低，不是他自己的评价。",
+    "en": "His worry is for others who can't come, not his own rating."
+   }
+  ],
+  "traps": [
+   "attitude-combo",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-303",
+  "type": "gaiyou",
+  "scene": "ラジオで、心理学者が話しています。",
+  "lines": [
+   [
+    "F",
+    "年を取るにつれて、一年があっという間に過ぎるように感じる、とよく言われます。五十歳の人にとって一年は人生のごじゅうぶんのいちだから短く感じるのだ、という説明を聞いたことがある方も多いでしょう。分かりやすい説明ですが、これだけでは、同じ大人でも、旅行に出た一週間はやけに長く感じる、ということが説明できません。どうやら私たちは、過ぎた時間の長さを、その間に覚えている出来事の数で測っているらしいのです。子どものころは毎日が初めてのことだらけで、記憶に残る場面がたくさんある。ところが大人になると、似たような毎日の繰り返しで、振り返ったときに思い出せることが少ない。だから短かったように感じられる。裏を返せば、いくつになっても、通ったことのない道を歩いてみる、といった小さな変化で、時間の感じ方は変えられるのかもしれません。"
+   ]
+  ],
+  "question": "心理学者は何について話していますか。",
+  "spokenOptions": true,
+  "options": [
+   "一年を人生の長さと比べて考える説",
+   "子どもの記憶力が大人より優れている理由",
+   "過ぎた時間が短く感じられる仕組み",
+   "旅行に出ると一週間が長くなるわけ"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "广播里，一位心理学家在讲话。",
+    "question": "心理学家在讲什么？",
+    "lines": [
+     "人们常说，随着年龄增长，会觉得一年转眼就过去了。很多人可能听过这样的解释：对五十岁的人来说，一年是人生的五十分之一，所以感觉短。这个解释很好懂，但光靠它，解释不了为什么同样是大人，出去旅行的一周却感觉特别长。看来，我们是用那段时间里记得的事情的数量来衡量过去的时间有多长的。小时候每天都充满第一次的经历，留在记忆里的场面很多。可是长大以后，每天都是相似的重复，回头看时能想起来的事情很少。所以感觉很短。反过来说，不管多大年纪，像走一走没走过的路这样的小变化，也许就能改变对时间的感觉。"
+    ],
+    "options": [
+     "把一年和人生长度相比来考虑的说法",
+     "孩子的记忆力比大人好的原因",
+     "过去的时间感觉很短的机制",
+     "出去旅行一周就变长的原因"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, a psychologist is speaking.",
+    "question": "What is the psychologist talking about?",
+    "lines": [
+     "People often say that as you get older, a year seems to fly by. Many of you have probably heard the explanation that for a fifty-year-old, a year is one fiftieth of their life, so it feels short. It's an easy explanation, but it alone can't explain why, even for adults, a week away on a trip feels remarkably long. It seems we measure how long a stretch of time was by the number of events we remember from it. As children, every day is full of firsts, so many scenes stay in our memory. As adults, though, one similar day follows another, and when we look back there's little to recall. So it feels as if it was short. Put the other way round, at any age, small changes — like walking down a road you've never taken — may change how time feels."
+    ],
+    "options": [
+     "The theory comparing a year with one's lifespan",
+     "Why children have better memories than adults",
+     "Why time past comes to feel short",
+     "Why a week feels longer when travelling"
+    ]
+   }
+  },
+  "why": {
+   "zh": "她先指出“人生的几分之一”这个说法不够，再说明我们用记得的事情多少来衡量时间、大人的日子重复所以感觉短，最后说小变化能改变感觉——讲的是时间感觉变短的机制。",
+   "en": "She finds the 'fraction of life' theory insufficient, explains that we gauge time by remembered events, and that repetitive adult days feel short — the mechanism behind time feeling short."
+  },
+  "wrong": [
+   {
+    "zh": "这个说法只是开头被指出不够的一个说明。",
+    "en": "That theory is only the opening, shown to be insufficient."
+   },
+   {
+    "zh": "她说的是孩子每天的新经历多，不是记忆力强。",
+    "en": "She says children have more new experiences, not better memories."
+   },
+   null,
+   {
+    "zh": "旅行的一周只是用来反驳那个说法的例子。",
+    "en": "The trip is only an example used against the first theory."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-304",
+  "type": "gaiyou",
+  "scene": "講演会で、テレビドラマの脚本家が話しています。",
+  "lines": [
+   [
+    "F",
+    "私のドラマを見た方から、ときどき「どうしてこの人は、本当の気持ちをはっきり言わないんですか」というお手紙をいただきます。好きなのに「別に」と言ってしまったり、肝心な場面で黙り込んでしまったり。考えてみれば、私たちだって、普段、思っていることをそのまま口にすることなんて、めったにありませんよね。言葉にならない部分があるからこそ、見ている方は「この人は今、本当は何を考えているんだろう」と、自分で想像してくださる。そうやって想像した分だけ、登場人物が他人ではなくなっていくんだと思うんです。もっとも、番組の制作の方からは、毎回のように「ここはもう少し分かりやすく」と言われてしまうんですけどね。"
+   ]
+  ],
+  "question": "脚本家は、せりふについてどう考えていますか。",
+  "spokenOptions": true,
+  "options": [
+   "気持ちを全部言わせず、見る人の想像に任せたい",
+   "分かりやすさのため、気持ちをはっきり言わせたい",
+   "本当の人のように、黙っている場面を増やしたい",
+   "反対のことを言わせると、見る人が混乱してしまう"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "讲座上，一位电视剧编剧在讲话。",
+    "question": "编剧对台词怎么看？",
+    "lines": [
+     "看过我的电视剧的人，有时会来信问：“为什么这个人不把真实的心情说清楚？”明明喜欢，却说“没什么”；关键的场面却一声不吭。想想看，我们自己平时，也很少把心里想的直接说出口吧。正因为有说不出来的部分，观众才会自己去想象“这个人现在其实在想什么呢”。我觉得，想象了多少，登场人物就有多少不再是外人。不过，节目制作方几乎每次都会对我说“这里再好懂一点”。"
+    ],
+    "options": [
+     "不让角色把心情全说出来，想交给观众去想象",
+     "为了好懂，想让角色把心情说清楚",
+     "像真实的人一样，想多加沉默的场面",
+     "让角色说反话，观众会糊涂"
+    ]
+   },
+   "en": {
+    "scene": "At a lecture, a television drama scriptwriter is speaking.",
+    "question": "What does the scriptwriter think about dialogue?",
+    "lines": [
+     "Viewers of my dramas sometimes write to me asking, 'Why doesn't this character just say how they really feel?' Saying 'not really' to someone they love, or falling silent at the crucial moment. But think about it — we hardly ever say what we're thinking straight out in daily life either, do we? Precisely because some of it isn't put into words, viewers imagine for themselves what the character is really thinking. And the more they imagine, the less the character is a stranger to them, I believe. Mind you, the production people tell me nearly every time, 'Make this bit a little clearer.'"
+    ],
+    "options": [
+     "Not voicing every feeling and leaving it to viewers' imagination",
+     "Having characters state their feelings clearly so it's easy to follow",
+     "Adding more silent scenes, as real people are silent",
+     "Having characters say the opposite confuses viewers"
+    ]
+   }
+  },
+  "why": {
+   "zh": "她说正因为有说不出口的部分，观众才会自己想象，人物就不再是外人——她认为台词不该把心情都说出来，要留给观众想象。",
+   "en": "She says the unspoken parts make viewers imagine, drawing them closer to the characters — she prefers leaving feelings unsaid for viewers to fill in."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「もう少し分かりやすく」是制作方的要求，不是她的想法。",
+    "en": "Clarity is what the producers ask for, not her view."
+   },
+   {
+    "zh": "沉默只是一个例子，她要的是留给观众想象，不是增加沉默场面本身。",
+    "en": "Silence is one example; her point is leaving room for imagination, not silence itself."
+   },
+   {
+    "zh": "说反话（「別に」）是她举的手法，她认为这会让观众去想象，不是混乱。",
+    "en": "Saying the opposite is one of her techniques; she thinks it engages viewers, not confuses them."
+   }
+  ],
+  "traps": [
+   "twisted",
+   "attitude-combo"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-305",
+  "type": "gaiyou",
+  "scene": "テレビで、会議の通訳をしている女の人が話しています。",
+  "lines": [
+   [
+    "F",
+    "駆け出しのころの私は、話し手の言葉を一語も漏らさずに訳そうと必死でした。でも、そうすると、どうしても訳し始めるのが遅れて、聞いている人は話し手の調子から取り残されてしまう。冗談が、話し手が次の話題に移ったころにやっと訳されて、会場がしらけてしまったこともありました。それからは、細かい言い回しは多少落としてでも、話し手が何を伝えたいのかを、話す速さに合わせて届けることを心がけています。もちろん、契約の交渉のように、一語の違いが大きな意味を持つ場面では、話は別です。そういう場では、時間をいただいてでも正確に訳します。ただ、私がこれまで通訳してきた場の多くは、そうではありませんでした。"
+   ]
+  ],
+  "question": "女の人は、通訳の仕事についてどう考えていますか。",
+  "spokenOptions": true,
+  "options": [
+   "どんな場面でも、一語残らず正確に訳すべきだ",
+   "冗談は、訳さずに省いたほうが聞き手のためだ",
+   "特別な場を除けば、細部より意図を届けるべきだ",
+   "契約の場でも、正確さより速さを大事にすべきだ"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "电视上，一位做会议口译的女人在讲话。",
+    "question": "女人对口译工作怎么看？",
+    "lines": [
+     "刚入行的时候，我拼命想把说话人的话一个字不漏地翻译出来。可是那样的话，开始翻译总会晚，听的人就跟不上说话人的节奏了。还有过这样的事：说话人已经换到下一个话题了，笑话才终于翻译出来，会场一片冷场。从那以后，我就注意哪怕多少舍掉一些细微的措辞，也要跟着说话的速度，把说话人想表达的意思传达出去。当然，像合同谈判那样一个字的差别都关系重大的场合另当别论。那种场合，哪怕请大家多给点时间，我也会准确翻译。只是，我至今做过口译的场合，大多不是那样的。"
+    ],
+    "options": [
+     "无论什么场合，都应该一字不漏地准确翻译",
+     "笑话不翻译、省掉，对听众更好",
+     "除了特殊场合，比起细节更应该传达意图",
+     "合同场合也应该重视速度胜过准确"
+    ]
+   },
+   "en": {
+    "scene": "On television, a woman who works as a conference interpreter is speaking.",
+    "question": "What does the woman think about interpreting?",
+    "lines": [
+     "When I was starting out, I was desperate to translate every single word the speaker said. But then I'd always start late, and the audience would lose track of the speaker's rhythm. Once a joke only got translated after the speaker had moved on to the next topic, and the room went flat. Since then, I've tried to convey what the speaker wants to say at the pace they speak, even if it means dropping some of the finer wording. Of course, it's different where one word can mean a great deal, as in contract negotiations. There, I translate accurately even if I have to ask for time. But most of the settings I've interpreted in haven't been like that."
+    ],
+    "options": [
+     "In every setting, translate every word accurately",
+     "Jokes are better left out for the audience's sake",
+     "Except in special settings, conveying intent should come before detail",
+     "Even in contracts, speed should come before accuracy"
+    ]
+   }
+  },
+  "why": {
+   "zh": "她从一字不漏转为跟着语速传达意图；合同谈判另当别论，但她做过的场合「多くは、そうではありませんでした」——多数场合意图比细节重要。",
+   "en": "She moved from word-for-word to conveying intent at the speaker's pace; contracts are an exception, but most settings aren't like that — in most, intent matters more."
+  },
+  "wrong": [
+   {
+    "zh": "这是她刚入行时的做法，后来改变了。",
+    "en": "That was her approach as a beginner, which she abandoned."
+   },
+   {
+    "zh": "笑话的例子是说翻译晚了会冷场，不是说要省掉。",
+    "en": "The joke shows the cost of lateness, not that jokes should be cut."
+   },
+   null,
+   {
+    "zh": "合同场合她说「正確に訳します」，正好相反。",
+    "en": "For contracts she translates accurately — the opposite."
+   }
+  ],
+  "traps": [
+   "attitude-combo",
+   "twisted"
+  ]
+ }
+]

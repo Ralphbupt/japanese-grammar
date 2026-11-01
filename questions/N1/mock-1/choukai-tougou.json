@@ -1,0 +1,397 @@
+[
+ {
+  "id": "n1-m1-ck-601",
+  "type": "tougou",
+  "scene": "商店街の事務所で、組合の理事長の女の人と、店主の男の人、若い女の店主が、空き店舗の使い道について話しています。",
+  "lines": [
+   [
+    "F1",
+    "角の元酒屋さん、市が家賃の半分を三年間補助してくれることになったでしょう。何に使うか、今月中に決めて出さないといけないのよ。私は観光案内所がいいと思うの。駅から歩いてくる人が、最初に目にする場所だし。"
+   ],
+   [
+    "M",
+    "案内所ねえ。でも、観光のお客さんが来るのは週末ぐらいですよ。平日はシャッターが下りっぱなしになりかねない。それより、野菜の直売所はどうです？　近所のお年寄りが、スーパーが遠くなって困ってるし、毎日人が来ますよ。"
+   ],
+   [
+    "F1",
+    "直売所は、農家さんに毎朝運んでもらわなきゃいけないでしょう。それを誰が頼んで回るのかっていう話よね。いっそ、ベンチを置いて、誰でも休める場所にするとか？"
+   ],
+   [
+    "M",
+    "それだと、補助の条件に合わないんじゃないですか。お店として使うことって、市に言われてますよね。"
+   ],
+   [
+    "F2",
+    "あの、美大の友人たちが、作業場がなくて困ってるってよく言ってるんです。若い作家さんに工房として貸すのはどうでしょう。"
+   ],
+   [
+    "M",
+    "面白いけど、作家さんって中にこもって作業するでしょう。結局、通りは静かなままなんじゃないかな。"
+   ],
+   [
+    "F2",
+    "……そうかもしれません。あ、でも、直売所の話なら、うちの実家、農協のトラックで毎朝道の駅に野菜を出してるんです。この通りはちょうどその途中なので、寄ってもらえないか、父に聞いてみることはできますけど。"
+   ],
+   [
+    "F1",
+    "あら、それなら一軒ずつ頼んで回らなくて済むわね。平日もお客さんが来るなら、案内所にこだわることもないか。"
+   ],
+   [
+    "M",
+    "観光の案内は、パンフレットを置いとくぐらいならできますしね。"
+   ],
+   [
+    "F1",
+    "じゃあ、まずお父様にご相談してみてもらえる？　話がまとまりそうなら、それで市に出しましょう。"
+   ]
+  ],
+  "question": "空き店舗は、何に使うことになりそうですか。",
+  "spokenOptions": true,
+  "options": [
+   "観光の案内所",
+   "野菜の直売所",
+   "若い作家の工房",
+   "誰でも休める場所"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "商店街的办公室里，商会的女理事长、男店主和一位年轻的女店主在商量空店铺的用途。",
+    "question": "空店铺看来要用来做什么？",
+    "lines": [
+     "拐角原来那家酒铺，市里决定三年内补贴一半房租了吧。用来做什么，这个月之内得定下来报上去。我觉得做观光咨询处好。从车站走过来的人第一眼就能看到那里。",
+     "咨询处啊。可是游客基本只有周末才来。平日卷帘门可能一直都拉着。不如做蔬菜直销点怎么样？附近的老人都为超市变远了发愁，每天都会有人来的。",
+     "直销点的话，得请农户每天早上送货过来吧。问题是谁去一家家拜托。干脆摆上长椅，做成谁都能歇脚的地方？",
+     "那样不符合补贴的条件吧？市里说了要作为店铺使用。",
+     "那个，我美大的朋友们常说没有工作室很发愁。租给年轻的创作者当工作室怎么样？",
+     "有意思，不过创作者都是关在里面干活的吧。结果街上还是冷冷清清的。",
+     "……也许是吧。啊，不过要说直销点的话，我老家每天早上都用农协的卡车往公路休息站送菜。这条街正好在路上，我可以问问我爸能不能顺路停一下。",
+     "哎呀，那样就不用一家一家去拜托了。平日也有客人来的话，也不必非做咨询处了。",
+     "观光的介绍嘛，放点宣传册还是可以的。",
+     "那能先请你跟你父亲商量一下吗？要是能谈成，就按这个报给市里吧。"
+    ],
+    "options": [
+     "观光咨询处",
+     "蔬菜直销点",
+     "年轻创作者的工作室",
+     "谁都能歇脚的地方"
+    ]
+   },
+   "en": {
+    "scene": "In a shopping street's office, the female chair of the merchants' association, a male shopkeeper and a young female shopkeeper are discussing what to do with an empty shop.",
+    "question": "What does it look like the empty shop will be used for?",
+    "lines": [
+     "The old liquor shop on the corner — the city's agreed to pay half the rent for three years, remember. We have to decide what to use it for and submit it this month. I think a tourist information office would be good. It's the first thing people see walking from the station.",
+     "An information office, hm. But tourists only really come at weekends. On weekdays the shutters might stay down. What about a vegetable stand instead? The old folks nearby are struggling now the supermarket's further away, and people would come every day.",
+     "A stand would need farmers to bring produce every morning. The question is who'd go round asking them. Or why not just put in benches and make it somewhere anyone can rest?",
+     "Wouldn't that fail the subsidy conditions? The city said it has to be used as a shop.",
+     "Um, my friends from art college often say they're stuck without a workspace. What about renting it to young artists as a studio?",
+     "Interesting, but artists shut themselves in to work, don't they? The street would end up just as quiet.",
+     "…You may be right. Oh, but about the vegetable stand — my family sends vegetables to the roadside station every morning on the farm co-op's truck. This street's right on the way, so I could ask my dad whether they'd stop off here.",
+     "Oh, then nobody has to go round asking each farm. If customers come on weekdays too, I needn't insist on the information office.",
+     "And we could still leave some tourist leaflets out.",
+     "Then could you talk to your father first? If it looks like it'll work out, we'll submit that to the city."
+    ],
+    "options": [
+     "A tourist information office",
+     "A vegetable stand",
+     "A studio for young artists",
+     "A place where anyone can rest"
+    ]
+   }
+  },
+  "why": {
+   "zh": "直销点原本因为没人去拜托农户被搁置；年轻店主说老家的农协卡车顺路，可以请父亲问，理事长认为不用挨家拜托、平日也有客人，就不坚持咨询处了，准备按这个报给市里。",
+   "en": "The stand was stalled because no one could go round the farms; the young shopkeeper's family co-op truck passes by anyway, which solves that, so the chair drops the information office and plans to submit the stand."
+  },
+  "wrong": [
+   {
+    "zh": "游客只周末来，平日可能一直关门；理事长最后说「こだわることもないか」，只放点宣传册。",
+    "en": "Tourists come only at weekends; the chair gives up on it, leaving just some leaflets."
+   },
+   null,
+   {
+    "zh": "工作室被指出创作者关在里面，街上还是冷清，她自己也说「そうかもしれません」。",
+    "en": "The studio was rejected — artists stay inside and the street stays quiet; she concedes."
+   },
+   {
+    "zh": "歇脚的地方不符合补贴「お店として使う」的条件。",
+    "en": "A rest space fails the subsidy's 'used as a shop' condition."
+   }
+  ],
+  "traps": [
+   "twisted",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-602",
+  "type": "tougou",
+  "scene": "会社で、部長と総務部の女の人、入社二年目の男の人が、来年度からの在宅勤務について話しています。",
+  "lines": [
+   [
+    "M1",
+    "来年度の働き方だけど、いっそ全員、完全に在宅にしてしまってもいいんじゃないかと思ってるんだ。今年一年やってみて、仕事は特に滞らなかったし、オフィスを小さくすれば、家賃もかなり浮く。"
+   ],
+   [
+    "F",
+    "仕事が回っていたのは、もともとお互いをよく知っている人同士だったからだと思うんです。今年入った人たちは、面談で、誰に何を聞けばいいのか分からないって、何人も言っていました。私は、やっぱり基本は毎日出社に戻すべきじゃないかと。"
+   ],
+   [
+    "M1",
+    "毎日となると、今度は通勤が大変な人から不満が出るよ。せっかく遠くに引っ越した人もいるんだから。"
+   ],
+   [
+    "M2",
+    "あの、僕の場合、つらかったのは、在宅そのものより、たまに出社しても、話を聞きたい先輩がその日に限っていない、ということなんです。出社する日が人によってばらばらなので、結局、会社に来ても一人で画面に向かっているだけで。ですから、部署の全員で、週に三日、出社する日をそろえてはどうでしょうか。"
+   ],
+   [
+    "M1",
+    "週に三日もそろって出てくるとなると、オフィスは今の広さのままだなあ。家賃を減らす話は、なくなっちゃう。"
+   ],
+   [
+    "F",
+    "……そろえるっていう考え方は分かります。ただ、正直なところ、新しく入る人たちには、週三日でも足りないと思うんです。最初の何か月かは、毎日、隣で聞ける人がいないと。"
+   ],
+   [
+    "M1",
+    "毎日か……。待てよ。そもそも困っていたのは、今年入った人たちなんだよな。さっき言ってくれたとおり、ほかの者は、お互いをよく知ってるから、在宅でも回ってたわけで。"
+   ],
+   [
+    "F",
+    "ええ、それはそうです。"
+   ],
+   [
+    "M1",
+    "だったら、全員をそろえて出てこさせることはないんじゃないか。新人と、その面倒を見る何人かだけ、最初のうちは毎日来てもらう。あとはこれまでどおり家でいい。それなら、オフィスも今の三分の一で足りる。"
+   ],
+   [
+    "M2",
+    "僕も、去年それがあったら、ずいぶん違ったと思います。"
+   ],
+   [
+    "F",
+    "指導役を誰にお願いするかは、各課と相談してみます。"
+   ]
+  ],
+  "question": "来年度の働き方は、どうなりそうですか。",
+  "spokenOptions": true,
+  "options": [
+   "新人と指導役のほかは在宅で働く",
+   "全員が以前のように毎日出社する",
+   "全員が週に三日、同じ日に出社する",
+   "出社する日を一人一人が自由に選ぶ"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "公司里，部长、总务部的女人和入职第二年的男人在商量下一年度开始的居家办公。",
+    "question": "下一年度的工作方式看来会怎样？",
+    "lines": [
+     "下一年度的工作方式，我在想干脆让所有人完全居家也可以吧。今年试了一年，工作也没怎么耽误，办公室缩小的话，房租也能省下不少。",
+     "我觉得工作能运转，是因为本来就是互相很熟的人。今年进来的人，面谈时好几个都说不知道该问谁什么。我觉得基本上还是应该恢复每天上班。",
+     "要是每天的话，这回通勤辛苦的人又会有意见。也有人特地搬到远处去了。",
+     "那个，就我来说，难受的与其说是居家本身，不如说是偶尔来公司，想请教的前辈偏偏那天不在。每个人上班的日子都不一样，结果来了公司也只是一个人对着屏幕。所以，部门所有人每周统一三天来上班怎么样？",
+     "每周三天都一起来的话，办公室就得保持现在的大小了。减房租的事就泡汤了。",
+     "……统一的想法我能理解。不过说实话，对新进来的人来说，每周三天也不够。头几个月，每天身边都得有能请教的人才行。",
+     "每天啊……等等。说到底，为难的是今年进来的那些人吧。就像你刚才说的，其他人互相很熟，所以居家也能运转。",
+     "是的，确实如此。",
+     "那样的话，就没必要让所有人一起来上班了吧。只让新人和带他们的几个人，开始的一段时间每天来。其他人照旧在家就行。那样的话，办公室有现在的三分之一就够了。",
+     "去年要是有这样的安排，我想会很不一样。",
+     "请谁来当指导，我去跟各科商量。"
+    ],
+    "options": [
+     "除了新人和指导者，其他人居家工作",
+     "所有人像以前一样每天上班",
+     "所有人每周三天同一天来上班",
+     "上班的日子由每个人自由选择"
+    ]
+   },
+   "en": {
+    "scene": "At a company, a department head, a woman from General Affairs and a man in his second year are discussing working from home from next year.",
+    "question": "How does it look like people will work next year?",
+    "lines": [
+     "About next year — I'm wondering whether we might as well have everyone work fully from home. We tried it this year and the work didn't really suffer, and if we downsize the office we'd save a good deal on rent.",
+     "I think the work only kept going because people already knew each other well. Several of this year's new staff told me in interviews that they didn't know who to ask about what. I think we should really go back to coming in every day as the norm.",
+     "Every day, and then the people with long commutes will complain. Some of them have moved far away, after all.",
+     "Um, in my case, the hard part wasn't working from home itself — it was that on the odd day I came in, the senior I wanted to ask would happen to be away. Everyone comes in on different days, so even at the office I'd just be alone at a screen. So how about the whole department coming in on the same three days a week?",
+     "If everyone comes in together three days a week, the office has to stay this size. That's the end of cutting the rent.",
+     "…I understand the idea of coming in together. But honestly, for new staff even three days a week isn't enough. For the first few months they need someone beside them to ask, every day.",
+     "Every day… wait. The people who struggled were really the ones who joined this year, weren't they? As you said earlier, the others know each other well, which is why things ran fine from home.",
+     "Yes, that's true.",
+     "Then there's no need to have everyone come in together, is there? Just the new staff and the few people looking after them come in every day at first. Everyone else stays home as now. Then a third of the current office would be enough.",
+     "If we'd had that last year, it would have made a big difference for me.",
+     "I'll talk to each section about who should be the mentors."
+    ],
+    "options": [
+     "Everyone except new staff and mentors works from home",
+     "Everyone comes in every day as before",
+     "Everyone comes in on the same three days a week",
+     "Each person chooses their own office days"
+    ]
+   }
+  },
+  "why": {
+   "zh": "总务说新人需要每天身边有人可问；部长由此想到为难的只是新人，于是回到最初的居家方案并加以修改：只让新人和指导者开始时每天来，其他人照旧居家，大家赞同。",
+   "en": "HR says new staff need someone beside them daily; the head realises only newcomers struggled, so he revives his remote plan with a change — just new staff and mentors come in daily at first — and the others agree."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "每天上班是总务一开始的意见，部长以通勤为由反对，最后只用于新人。",
+    "en": "Everyone in daily was HR's first idea, rejected over commuting; only newcomers will come daily."
+   },
+   {
+    "zh": "每周三天统一上班，部长说办公室缩不了，总务也说对新人不够。",
+    "en": "Three common days keeps the office large and, HR says, isn't enough for newcomers."
+   },
+   {
+    "zh": "各自选日子正是二年级员工说的问题（「ばらばら」），没人提议。",
+    "en": "Different days for everyone is the very problem the second-year described."
+   }
+  ],
+  "traps": [
+   "twisted",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n1-m1-ck-603",
+  "type": "tougou",
+  "scene": "高原の宿で、宿の人が体験プランについて説明しています。それを聞いて、夫婦が話しています。",
+  "lines": [
+   [
+    "F1",
+    "こちらでは、お客様に四つの体験プランをご用意しております。一つ目は「そば打ち体験」です。打ったおそばはその場で召し上がっていただけますので、昼食代わりにもなります。ただ、立ったまま生地をこねますので、少々力が要ります。二つ目は「藍染め体験」。近くの工房で、ハンカチを藍で染めていただきます。一時間ほどで終わりますが、色を落ち着かせるため一晩おきますので、お渡しは翌日のお昼以降となります。三つ目は「渓流釣り」。宿の裏の川で、案内人と一緒に釣りを楽しんでいただき、釣れた魚はその日のご夕食にお出しします。朝六時出発の、早朝のみのご案内です。四つ目は「星空観察」。夜九時から、裏山の展望台で、専門の案内人が星座についてお話しします。山道を二十分ほど歩きますので、歩きやすい靴でお越しください。"
+   ],
+   [
+    "M",
+    "どれも面白そうだな。俺は釣りかな。自分で釣った魚が夕飯に出てくるなんて、最高じゃないか。"
+   ],
+   [
+    "F2",
+    "でも、朝六時だよ。あなた、この旅行は目覚ましをかけずに寝るのが楽しみだって、ずっと言ってたじゃない。"
+   ],
+   [
+    "M",
+    "……そうだった。朝くらいはゆっくりしたいな。かといって、腰のことを考えると、立ちっぱなしで力仕事っていうのもなあ。夜なら、夕飯のあとの散歩がてらちょうどいいかもな。"
+   ],
+   [
+    "F2",
+    "いいんじゃない。私はね、何か形に残るものがいいなと思ってたんだけど、明日の朝にはもうここを出ちゃうよね、私たち。"
+   ],
+   [
+    "M",
+    "いや、二泊だから、出るのはあさってだよ。"
+   ],
+   [
+    "F2",
+    "あ、そうか。じゃあ、ちゃんと受け取れるね。お昼をおそばで済ませるのも捨てがたいけど、やっぱり持って帰れるほうにする。"
+   ]
+  ],
+  "options": [
+   "そば打ち体験",
+   "藍染め体験",
+   "渓流釣り",
+   "星空観察"
+  ],
+  "questions": [
+   {
+    "question": "質問1：男の人は、どのプランに参加しますか。",
+    "answer": 3,
+    "why": {
+     "zh": "钓鱼早上六点出发，他想早上睡懒觉；荞麦面要站着出力，他担心腰；晚上的观星可以当作「夕飯のあとの散歩がてら」。",
+     "en": "Fishing starts at six and he wants lazy mornings; soba means standing and effort, bad for his back; evening stargazing works as an after-dinner walk."
+    },
+    "wrong": [
+     {
+      "zh": "要站着揉面，他说考虑到腰「立ちっぱなしで力仕事っていうのもなあ」。",
+      "en": "Kneading standing up is hard on his back."
+     },
+     {
+      "zh": "蓝染是女人想要的“能留下来的东西”，他没提。",
+      "en": "Indigo dyeing is the woman's choice; he never considers it."
+     },
+     {
+      "zh": "他一开始想钓鱼，但六点出发，和他想睡懒觉冲突。",
+      "en": "He first wanted fishing, but the six a.m. start clashes with his lie-ins."
+     },
+     null
+    ]
+   },
+   {
+    "question": "質問2：女の人は、どのプランに参加しますか。",
+    "answer": 1,
+    "why": {
+     "zh": "她想要「形に残るもの」；蓝染第二天中午后才交付，她以为明早就走，但住两晚能拿到，于是选了能带回家的蓝染。",
+     "en": "She wants something to keep; the dyed cloth is ready the next afternoon, and since they stay two nights she can collect it — indigo dyeing."
+    },
+    "wrong": [
+     {
+      "zh": "荞麦面能当午饭「捨てがたい」，但她说「やっぱり持って帰れるほうにする」。",
+      "en": "Soba for lunch tempts her, but she chooses what she can take home."
+     },
+     null,
+     {
+      "zh": "钓鱼是男人一开始想选的，钓的鱼当晚吃掉，留不下来。",
+      "en": "Fishing was the man's first idea, and the catch is eaten — nothing to keep."
+     },
+     {
+      "zh": "观星是男人选的，也没有能带回去的东西。",
+      "en": "Stargazing is the man's choice and leaves nothing to keep."
+     }
+    ]
+   }
+  ],
+  "tr": {
+   "zh": {
+    "scene": "高原上的旅舍里，旅舍的人在介绍体验项目。听了以后，一对夫妻在商量。",
+    "questions": [
+     "问题1：男人参加哪个项目？",
+     "问题2：女人参加哪个项目？"
+    ],
+    "lines": [
+     "本店为客人准备了四种体验项目。第一种是“手擀荞麦面体验”。擀好的荞麦面可以当场享用，也可以代替午饭。不过要站着揉面，需要一点力气。第二种是“蓝染体验”。在附近的工坊用蓝靛染手帕。一个小时左右就能结束，但为了让颜色稳定要放一晚，所以第二天中午以后才能交给您。第三种是“溪流垂钓”。在旅馆后面的河里，和向导一起享受钓鱼的乐趣，钓到的鱼会在当天的晚餐中端上。只在清晨进行，早上六点出发。第四种是“观星”。晚上九点开始，在后山的观景台由专业向导讲解星座。要走二十分钟左右的山路，请穿方便走路的鞋子。",
+     "哪个都挺有意思。我选钓鱼吧。自己钓的鱼晚饭端上来，多棒啊。",
+     "可是早上六点哦。你不是一直说这次旅行最期待的就是不定闹钟睡大觉吗？",
+     "……也是。早上至少想悠闲点。可是想想腰，一直站着干力气活也不行啊。晚上的话，当作晚饭后散步正合适吧。",
+     "不错啊。我呢，本来想要个能留下东西的，可我们明天早上就要离开这里了吧。",
+     "不，住两晚，后天才走。",
+     "啊，对哦。那就能好好拿到了。午饭用荞麦面解决也挺难割舍的，不过还是选能带回家的。"
+    ],
+    "options": [
+     "手擀荞麦面体验",
+     "蓝染体验",
+     "溪流垂钓",
+     "观星"
+    ]
+   },
+   "en": {
+    "scene": "At a highland inn, a staff member is explaining the experience plans. After hearing it, a married couple are talking.",
+    "questions": [
+     "Question 1: Which plan will the man join?",
+     "Question 2: Which plan will the woman join?"
+    ],
+    "lines": [
+     "We offer our guests four experience plans. The first is 'soba-making'. You can eat the noodles you make on the spot, so it can serve as lunch. You knead the dough standing up, though, so it takes a fair bit of strength. The second is 'indigo dyeing'. At a nearby workshop, you dye a handkerchief with indigo. It takes about an hour, but the cloth is left overnight to set the colour, so it's handed over after noon the next day. The third is 'river fishing'. You fish in the stream behind the inn with a guide, and your catch is served at dinner that day. It runs early in the morning only, leaving at six. The fourth is 'stargazing'. From nine at night, at the lookout on the hill behind us, an expert guide talks about the constellations. It's a twenty-minute walk along a mountain path, so please wear comfortable shoes.",
+     "They all sound fun. I think fishing for me. Having fish I caught myself served at dinner — what could be better?",
+     "But it's six in the morning. You've been saying all along that what you're looking forward to on this trip is sleeping without an alarm.",
+     "…That's true. I'd like at least my mornings to be lazy. But then, thinking about my back, standing up doing heavy work isn't great either. At night, it'd be just right as an after-dinner walk.",
+     "Sounds good. Me, I'd been hoping for something I could keep, but we're leaving here tomorrow morning, aren't we?",
+     "No, it's two nights, so we leave the day after tomorrow.",
+     "Oh, right. Then I can pick it up properly. Having soba for lunch is tempting too, but I'll go for the one I can take home."
+    ],
+    "options": [
+     "Soba-making",
+     "Indigo dyeing",
+     "River fishing",
+     "Stargazing"
+    ]
+   }
+  },
+  "traps": [
+   "condition-conflict",
+   "someone-else"
+  ]
+ }
+]

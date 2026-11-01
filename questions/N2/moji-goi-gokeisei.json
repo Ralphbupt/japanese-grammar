@@ -1,0 +1,1100 @@
+[
+  {
+    "id": "n2-mg-601",
+    "type": "gokeisei",
+    "difficulty": 1,
+    "stem": "これはまだ（　）公式の発表なので、変わる可能性がある。",
+    "options": [
+      "非",
+      "不",
+      "無",
+      "未"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这还是非正式的发布，有可能会变。",
+      "en": "This is still an unofficial announcement, so it may change."
+    },
+    "why": {
+      "zh": "「公式」的否定是「非公式」（非正式）。",
+      "en": "The negative of 「公式」 is 「非公式」 (unofficial)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「不公式」不是词。「不」接「安・便・正确」类词（「不正確」）。",
+        "en": "「不公式」 isn't a word. 不 goes with words like 「不正確」."
+      },
+      {
+        "zh": "「無公式」不是词。「無」接「責任・関心」等（「無関心」）。",
+        "en": "「無公式」 isn't a word. 無 goes with words like 「無関心」."
+      },
+      {
+        "zh": "「未公式」不是词。「未」表示「还没」（「未定」）。",
+        "en": "「未公式」 isn't a word. 未 means 'not yet' (「未定」)."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-602",
+    "type": "gokeisei",
+    "difficulty": 1,
+    "stem": "（　）成年の飲酒は法律で禁止されている。",
+    "options": [
+      "未",
+      "非",
+      "不",
+      "準"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "法律禁止未成年人饮酒。",
+      "en": "Drinking by minors is prohibited by law."
+    },
+    "why": {
+      "zh": "「还没成年」是「未成年」：「未」= 还没。",
+      "en": "'Not yet of age' is 「未成年」: 未 = not yet."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「非成年」不是词。",
+        "en": "「非成年」 isn't a word."
+      },
+      {
+        "zh": "「不成年」不是词。",
+        "en": "「不成年」 isn't a word."
+      },
+      {
+        "zh": "「準」表示\"次于、准\"（準決勝・準会員），没有「準成年」。",
+        "en": "準 means \"semi-\" (準決勝, 準会員); 「準成年」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-603",
+    "type": "gokeisei",
+    "difficulty": 1,
+    "stem": "あんな（　）責任な発言は許せない。",
+    "options": [
+      "無",
+      "不",
+      "非",
+      "没"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "那种不负责任的发言不可原谅。",
+      "en": "I can't accept such irresponsible remarks."
+    },
+    "why": {
+      "zh": "「没有责任感」是「無責任」：「無」= 没有。",
+      "en": "'Irresponsible' is 「無責任」: 無 = without."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「不責任」不是词。中文说「不负责任」，日语是「無責任」。",
+        "en": "「不責任」 isn't a word. Chinese says 不负责任, but Japanese is 「無責任」."
+      },
+      {
+        "zh": "「非責任」不是词。",
+        "en": "「非責任」 isn't a word."
+      },
+      {
+        "zh": "「没」构成「没交渉」「没個性」，没有「没責任」。",
+        "en": "没 makes 「没個性」, but 「没責任」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-604",
+    "type": "gokeisei",
+    "difficulty": 1,
+    "stem": "今週は（　）安定な天気が続くでしょう。",
+    "options": [
+      "不",
+      "無",
+      "非",
+      "低"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "本周天气将持续不稳定。",
+      "en": "The weather will stay unsettled this week."
+    },
+    "why": {
+      "zh": "「安定」的否定是「不安定」。",
+      "en": "The negative of 「安定」 is 「不安定」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「無安定」不是词。",
+        "en": "「無安定」 isn't a word."
+      },
+      {
+        "zh": "「非安定」不是词。",
+        "en": "「非安定」 isn't a word."
+      },
+      {
+        "zh": "「低」接表示程度的词（低価格・低気圧），没有「低安定」。",
+        "en": "低 goes with words of degree (低価格, 低気圧); 「低安定」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-605",
+    "rev": 2,
+    "type": "gokeisei",
+    "difficulty": 2,
+    "stem": "ドアが閉まる直前に、急いで電車に乗り（　）。",
+    "options": [
+      "込んだ",
+      "切った",
+      "越した",
+      "上げた"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "在车门关上之前，我急忙挤上了电车。",
+      "en": "I hurried onto the train just before the doors closed."
+    },
+    "why": {
+      "zh": "\"进入（交通工具）里面\"是「乗り込む」：「〜込む」表示进入里面（飛び込む・入り込む）。",
+      "en": "Getting into a vehicle is 「乗り込む」: 〜込む means going into something (飛び込む, 入り込む)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「乗り切る」是\"渡过（难关）\"，如「不況を乗り切る」，不能说「電車に乗り切る」。",
+        "en": "「乗り切る」 is to get through a hard time (「不況を乗り切る」), not to board a train."
+      },
+      {
+        "zh": "「乗り越す」是\"坐过站\"，如「寝ていて駅を乗り越した」，和\"车门关上之前急忙\"不合。",
+        "en": "「乗り越す」 is to ride past one's stop (「駅を乗り越した」), which doesn't fit hurrying aboard."
+      },
+      {
+        "zh": "「乗り上げる」是\"（船、车）冲上、搁浅\"，如「船が岩に乗り上げた」。",
+        "en": "「乗り上げる」 is to run aground or up onto something (「船が岩に乗り上げた」)."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-606",
+    "type": "gokeisei",
+    "difficulty": 1,
+    "stem": "書類に不備があったので、（　）提出してください。",
+    "options": [
+      "再",
+      "復",
+      "重",
+      "反"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "文件有不完善之处，请重新提交。",
+      "en": "There were problems with your documents, so please resubmit them."
+    },
+    "why": {
+      "zh": "「再次提交」是「再提出」：「再」= 再一次。",
+      "en": "'Resubmit' is 「再提出」: 再 = again."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「復提出」不是词。「復」用在「復習」「回復」等词。",
+        "en": "「復提出」 isn't a word. 復 is in words like 「復習」 and 「回復」."
+      },
+      {
+        "zh": "「重提出」不是词。",
+        "en": "「重提出」 isn't a word."
+      },
+      {
+        "zh": "「反提出」不是词。",
+        "en": "「反提出」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-607",
+    "type": "gokeisei",
+    "difficulty": 2,
+    "stem": "日本チームは（　）決勝で負けてしまった。",
+    "options": [
+      "準",
+      "副",
+      "次",
+      "亜"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "日本队在半决赛中输了。",
+      "en": "The Japanese team lost in the semi-final."
+    },
+    "why": {
+      "zh": "「半决赛」是「準決勝」：「準」= 次于、准。",
+      "en": "The semi-final is 「準決勝」: 準 = next to, quasi-."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「副決勝」不是词。「副」用于职位（「副社長」）。",
+        "en": "「副決勝」 isn't a word. 副 is for posts (「副社長」)."
+      },
+      {
+        "zh": "「次決勝」不是词。",
+        "en": "「次決勝」 isn't a word."
+      },
+      {
+        "zh": "「亜決勝」不是词。「亜」用在「亜熱帯」等词。",
+        "en": "「亜決勝」 isn't a word. 亜 is in words like 「亜熱帯」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-608",
+    "type": "gokeisei",
+    "difficulty": 1,
+    "stem": "社長が出張中なので、（　）社長が会議に出席した。",
+    "options": [
+      "副",
+      "代",
+      "次",
+      "補"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "社长在出差，所以副社长出席了会议。",
+      "en": "The president was away on business, so the vice-president attended the meeting."
+    },
+    "why": {
+      "zh": "「副社长」是「副社長」：「副」= 副职。",
+      "en": "The vice-president is 「副社長」: 副 = deputy."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「代」构成「代理・代表」，没有「代社長」；代理社长是「社長代理」。",
+        "en": "代 is in 「代理」; there is no 「代社長」 — an acting president is 「社長代理」."
+      },
+      {
+        "zh": "「次社長」不是词。要说下一任社长是「次期社長」。",
+        "en": "「次社長」 isn't a word. The next president is 「次期社長」."
+      },
+      {
+        "zh": "「補社長」不是词。",
+        "en": "「補社長」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-609",
+    "type": "gokeisei",
+    "difficulty": 2,
+    "stem": "この車は安全（　）が高いと評判だ。",
+    "options": [
+      "性",
+      "面",
+      "力",
+      "的"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这辆车以安全性高著称。",
+      "en": "This car has a reputation for being very safe."
+    },
+    "why": {
+      "zh": "表示性质、程度的「〜性」：「安全性が高い」。",
+      "en": "〜性 names a property that can be high or low: 「安全性が高い」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「安全面」是词（安全方面），但它是方面，不能说「安全面が高い」，要说「安全面で優れている」。",
+        "en": "「安全面」 (the safety side) is a word, but it is an aspect, not a quality — you can't say 「安全面が高い」."
+      },
+      {
+        "zh": "「安全力」不是词。「〜力」用在「能力」「体力」等词。",
+        "en": "「安全力」 isn't a word. 〜力 is in words like 「能力」 and 「体力」."
+      },
+      {
+        "zh": "「安全的」不是日语词；「的」也不能直接接「が高い」。",
+        "en": "「安全的」 isn't a Japanese word, and 〜的 can't take 「が高い」."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-610",
+    "type": "gokeisei",
+    "difficulty": 1,
+    "stem": "最後まで緊張（　）のある、いい試合だった。",
+    "options": [
+      "感",
+      "性",
+      "化",
+      "気"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "那是一场直到最后都充满紧张感的好比赛。",
+      "en": "It was a great match, tense right to the end."
+    },
+    "why": {
+      "zh": "表示感觉、气氛的「〜感」：「緊張感のある試合」。",
+      "en": "〜感 names a feeling or atmosphere: 「緊張感のある試合」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「緊張性」只用在医学用语（「緊張性頭痛」），不形容比赛。",
+        "en": "「緊張性」 is only a medical term (「緊張性頭痛」), not for a match."
+      },
+      {
+        "zh": "「緊張化」不是词。",
+        "en": "「緊張化」 isn't a word."
+      },
+      {
+        "zh": "「緊張気」不是词。",
+        "en": "「緊張気」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-611",
+    "type": "gokeisei",
+    "refs": [
+      "lesson66#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "日本では高齢（　）が急速に進んでいる。",
+    "options": [
+      "化",
+      "性",
+      "層",
+      "期"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "日本的老龄化正在迅速发展。",
+      "en": "Japan's population is ageing rapidly."
+    },
+    "why": {
+      "zh": "「〜化」表示变成某种状态：「高齢化が進む」。",
+      "en": "〜化 means 'becoming': 「高齢化が進む」 (ageing advances)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「高齢性」不是词。",
+        "en": "「高齢性」 isn't a word."
+      },
+      {
+        "zh": "「高齢層」是词（老年人群体），但「層」不能接「が進む」；表示过程的是「〜化」。",
+        "en": "「高齢層」 is a word (the elderly as a group), but a group can't 「進む」; a process is 〜化."
+      },
+      {
+        "zh": "「高齢期」是词（老年期），但时期不能「急速に進む」；表示变化过程的是「〜化」。",
+        "en": "「高齢期」 (old age) is a word, but a life stage doesn't 「急速に進む」; a change is 〜化."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-612",
+    "type": "gokeisei",
+    "difficulty": 1,
+    "stem": "来月、東京で国際（　）な会議が開かれる。",
+    "options": [
+      "的",
+      "化",
+      "性",
+      "式"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "下个月将在东京召开国际性的会议。",
+      "en": "An international conference will be held in Tokyo next month."
+    },
+    "why": {
+      "zh": "后面接「な」修饰名词，要用「〜的」：「国際的な会議」。",
+      "en": "Followed by 「な」 before a noun, it must be 〜的: 「国際的な会議」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「国際化」是名词（「国際化が進む」），不能接「な」。",
+        "en": "「国際化」 is a noun (「国際化が進む」) and can't take 「な」."
+      },
+      {
+        "zh": "「国際性」是名词，不能接「な」。",
+        "en": "「国際性」 is a noun and can't take 「な」."
+      },
+      {
+        "zh": "「〜式」表示方式（日本式・洋式），没有「国際式な」。",
+        "en": "〜式 means a style (日本式); 「国際式な」 isn't used."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-613",
+    "rev": 2,
+    "type": "gokeisei",
+    "difficulty": 2,
+    "stem": "かぜ（　）で、朝から少し熱がある。",
+    "options": [
+      "気味",
+      "向き",
+      "混じり",
+      "だらけ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "有点感冒，从早上开始就有点发烧。",
+      "en": "I'm coming down with a cold and have had a slight temperature since this morning."
+    },
+    "why": {
+      "zh": "\"有点……的样子\"是「〜気味」：「かぜ気味」= 有点感冒。",
+      "en": "\"A bit, slightly\" is 〜気味: 「かぜ気味」 = a touch of a cold."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜向き」表示\"适合……\"（子ども向き），「かぜ向き」不成立。",
+        "en": "〜向き means \"suited to\" (子ども向き); 「かぜ向き」 doesn't work."
+      },
+      {
+        "zh": "「〜混じり」表示\"夹杂着\"（雨混じりの雪），「かぜ混じり」不成立。",
+        "en": "〜混じり means \"mixed with\" (雨混じりの雪); 「かぜ混じり」 doesn't work."
+      },
+      {
+        "zh": "「〜だらけ」表示\"满是（不好的东西）\"（泥だらけ），不能用于感冒。",
+        "en": "〜だらけ means \"covered in\" (泥だらけ); it can't be used of a cold."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-614",
+    "type": "gokeisei",
+    "difficulty": 1,
+    "stem": "朝食（　）のプランで、ホテルを予約した。",
+    "options": [
+      "付き",
+      "入り",
+      "持ち",
+      "連れ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我订了含早餐的酒店套餐。",
+      "en": "I booked the hotel on a plan with breakfast included."
+    },
+    "why": {
+      "zh": "「〜付き」表示附带：「朝食付き」（含早餐）。",
+      "en": "〜付き means 'comes with': 「朝食付き」 (breakfast included)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜入り」表示\"装有、含有\"（ミルク入り），「朝食入りのプラン」不成立。",
+        "en": "〜入り means \"containing\" (ミルク入り); 「朝食入りのプラン」 doesn't work."
+      },
+      {
+        "zh": "「〜持ち」表示\"拥有\"（お金持ち・子ども持ち），没有「朝食持ち」。",
+        "en": "〜持ち means \"owning\" (お金持ち); 「朝食持ち」 isn't a word."
+      },
+      {
+        "zh": "「〜連れ」表示\"带着（人）\"（子ども連れ），不能接早餐。",
+        "en": "〜連れ means \"accompanied by\" a person (子ども連れ), not breakfast."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-615",
+    "type": "gokeisei",
+    "difficulty": 1,
+    "stem": "期限（　）のパスポートでは出国できない。",
+    "options": [
+      "切れ",
+      "済み",
+      "付き",
+      "明け"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "过期的护照无法出境。",
+      "en": "You can't leave the country on an expired passport."
+    },
+    "why": {
+      "zh": "「〜切れ」表示用完、到期：「期限切れ」（过期）。",
+      "en": "〜切れ means 'run out': 「期限切れ」 (expired)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「期限済み」不是词。",
+        "en": "「期限済み」 isn't a word."
+      },
+      {
+        "zh": "「期限付き」是「有期限的」（「期限付きの契約」），不表示过期。",
+        "en": "「期限付き」 means 'with a time limit' (「期限付きの契約」), not expired."
+      },
+      {
+        "zh": "「期限明け」不是词。",
+        "en": "「期限明け」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-616",
+    "type": "gokeisei",
+    "refs": [
+      "lesson62#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "けがのことは、専門（　）に相談したほうがいい。",
+    "options": [
+      "家",
+      "手",
+      "屋",
+      "師"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "受伤的事最好找专家商量。",
+      "en": "You should consult a specialist about the injury."
+    },
+    "why": {
+      "zh": "「专家」是「専門家」：「〜家」表示某领域的人。",
+      "en": "A specialist is 「専門家」: 〜家 is a person in a field."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「専門手」不是词。「〜手」用在「運転手」「歌手」等。",
+        "en": "「専門手」 isn't a word. 〜手 is in words like 「運転手」."
+      },
+      {
+        "zh": "「専門屋」不是词。「〜屋」多用于店铺（「八百屋」）。",
+        "en": "「専門屋」 isn't a word. 〜屋 is mostly for shops (「八百屋」)."
+      },
+      {
+        "zh": "「専門師」不是词。",
+        "en": "「専門師」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-617",
+    "type": "gokeisei",
+    "difficulty": 1,
+    "stem": "（　）時間労働が社会問題になっている。",
+    "options": [
+      "長",
+      "延",
+      "永",
+      "久"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "长时间劳动成了社会问题。",
+      "en": "Long working hours have become a social problem."
+    },
+    "why": {
+      "zh": "「长时间」是「長時間」。",
+      "en": "'Long hours' is 「長時間」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「延」构成「延長」「延べ」，没有「延時間」。",
+        "en": "延 is in 「延長」, but 「延時間」 isn't a word."
+      },
+      {
+        "zh": "「永」构成「永住・永遠」，没有「永時間」。",
+        "en": "永 makes 「永住」, but 「永時間」 isn't a word."
+      },
+      {
+        "zh": "「久」构成「永久・持久」，没有「久時間」。",
+        "en": "久 is in 「持久」, but 「久時間」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-618",
+    "type": "gokeisei",
+    "refs": [
+      "lesson66#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "駅前で（　）規模な工事が始まった。",
+    "options": [
+      "大",
+      "巨",
+      "広",
+      "重"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "车站前开始了大规模的施工。",
+      "en": "Large-scale construction work has begun in front of the station."
+    },
+    "why": {
+      "zh": "「大规模」是「大規模」，后面接「な」。",
+      "en": "'Large-scale' is 「大規模」, followed by 「な」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「巨規模」不是词。",
+        "en": "「巨規模」 isn't a word."
+      },
+      {
+        "zh": "「広」构成「広範囲・広域」，没有「広規模」。",
+        "en": "広 makes 「広範囲」, but 「広規模」 isn't a word."
+      },
+      {
+        "zh": "「重」构成「重労働・重工業」，没有「重規模」。",
+        "en": "重 makes 「重労働」, but 「重規模」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-619",
+    "type": "gokeisei",
+    "difficulty": 2,
+    "stem": "最近は（　）学歴でも、なかなか就職できない人がいる。",
+    "options": [
+      "高",
+      "上",
+      "大",
+      "多"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "最近即使学历高，也有人很难找到工作。",
+      "en": "These days even some highly educated people struggle to find a job."
+    },
+    "why": {
+      "zh": "「学历高」是「高学歴」。",
+      "en": "'Highly educated' is 「高学歴」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「上学歴」不是词。",
+        "en": "「上学歴」 isn't a word."
+      },
+      {
+        "zh": "「大学歴」不是词。",
+        "en": "「大学歴」 isn't a word."
+      },
+      {
+        "zh": "「多学歴」不是词。",
+        "en": "「多学歴」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-620",
+    "rev": 2,
+    "type": "gokeisei",
+    "difficulty": 2,
+    "stem": "一か月分の給料を、たった一週間で使い（　）しまった。",
+    "options": [
+      "切って",
+      "回して",
+      "合って",
+      "出して"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "一个月的工资，才一个星期就花光了。",
+      "en": "I used up a whole month's pay in just one week."
+    },
+    "why": {
+      "zh": "\"全部用完\"是「使い切る」：「〜切る」表示做到最后、全部（読み切る・売り切れる）。",
+      "en": "Using up completely is 「使い切る」: 〜切る means doing something to the end (読み切る, 売り切れる)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「使い回す」是\"重复使用（同一个东西）\"，如「同じ資料を使い回す」，不是花钱。",
+        "en": "「使い回す」 is to reuse the same thing (「同じ資料を使い回す」), not to spend money."
+      },
+      {
+        "zh": "「〜合う」表示互相（話し合う），「使い合う」不能用于自己花工资。",
+        "en": "〜合う means \"each other\" (話し合う); it doesn't fit spending one's own pay."
+      },
+      {
+        "zh": "「〜出す」表示开始或取出（歩き出す），「使い出す」不表示\"用完\"。",
+        "en": "〜出す means starting or taking out (歩き出す); 「使い出す」 doesn't mean using up."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-621",
+    "rev": 2,
+    "type": "gokeisei",
+    "difficulty": 2,
+    "stem": "困ったときは、家族で助け（　）ことが大切だ。",
+    "options": [
+      "合う",
+      "込む",
+      "切る",
+      "出す"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "遇到困难时，家人之间互相帮助很重要。",
+      "en": "When things are hard, it's important for a family to help each other."
+    },
+    "why": {
+      "zh": "\"互相帮助\"是「助け合う」：「〜合う」表示互相做某事（話し合う・譲り合う）。「家族で」说明是彼此之间。",
+      "en": "Helping each other is 「助け合う」: 〜合う means doing something mutually (話し合う, 譲り合う); 「家族で」 points to that."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "没有「助け込む」这个说法。",
+        "en": "「助け込む」 isn't used."
+      },
+      {
+        "zh": "没有「助け切る」这个说法。",
+        "en": "「助け切る」 isn't used."
+      },
+      {
+        "zh": "「助け出す」是\"救出（某人）\"，如「火事の家から子どもを助け出す」，需要宾语，和\"家人互相\"不合。",
+        "en": "「助け出す」 is to rescue someone out of danger (「子どもを助け出す」); it needs an object and isn't mutual."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-622",
+    "type": "gokeisei",
+    "refs": [
+      "lesson65#vocab"
+    ],
+    "difficulty": 1,
+    "stem": "この料理教室は、初心（　）向けです。",
+    "options": [
+      "者",
+      "家",
+      "人",
+      "手"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这个烹饪班面向初学者。",
+      "en": "This cooking class is for beginners."
+    },
+    "why": {
+      "zh": "「初学者」是「初心者」。",
+      "en": "A beginner is 「初心者」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「初心家」不是词。",
+        "en": "「初心家」 isn't a word."
+      },
+      {
+        "zh": "「初心人」不是词。",
+        "en": "「初心人」 isn't a word."
+      },
+      {
+        "zh": "「初心手」不是词。",
+        "en": "「初心手」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-623",
+    "type": "gokeisei",
+    "difficulty": 2,
+    "stem": "社員を守るのは、経営（　）としての責任だ。",
+    "options": [
+      "者",
+      "員",
+      "師",
+      "官"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "保护员工是作为经营者的责任。",
+      "en": "Protecting employees is a manager's responsibility."
+    },
+    "why": {
+      "zh": "「经营者」是「経営者」：「〜者」表示做某事的人。",
+      "en": "A business owner is 「経営者」: 〜者 is the person who does it."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜員」接在组织、职务后（会社員・係員），没有「経営員」。",
+        "en": "〜員 follows an organisation or job (会社員, 係員); 「経営員」 isn't a word."
+      },
+      {
+        "zh": "「〜師」用于有专门技术的职业（医師・美容師），没有「経営師」。",
+        "en": "〜師 is for skilled professions (医師, 美容師); 「経営師」 isn't a word."
+      },
+      {
+        "zh": "「〜官」用于公务员职位（警察官・外交官），没有「経営官」。",
+        "en": "〜官 is for government posts (警察官, 外交官); 「経営官」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-624",
+    "rev": 2,
+    "type": "gokeisei",
+    "difficulty": 2,
+    "stem": "疲れていたので、本を読み（　）まま眠ってしまった。",
+    "options": [
+      "かけた",
+      "切った",
+      "返した",
+      "通した"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "因为太累，书读到一半就睡着了。",
+      "en": "I was so tired that I fell asleep halfway through reading a book."
+    },
+    "why": {
+      "zh": "\"做到一半\"是「〜かける」：「読みかけたまま」= 读到一半就那样放着。",
+      "en": "\"Half-done\" is 〜かける: 「読みかけたまま」 = left half-read."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「読み切る」是\"读完\"，读完和「まま眠ってしまった」（中途睡着）不合。",
+        "en": "「読み切る」 is to read to the end, which clashes with dozing off mid-way (〜まま眠ってしまった)."
+      },
+      {
+        "zh": "「読み返す」是重读，和「まま眠ってしまった」（读到一半睡着）不合。",
+        "en": "「読み返す」 is to reread, which doesn't fit dozing off mid-way (〜まま眠ってしまった)."
+      },
+      {
+        "zh": "「読み通す」是从头读到尾，读完了就不是「まま」睡着。",
+        "en": "「読み通す」 is to read from start to finish, which clashes with 〜まま (left half-done)."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-625",
+    "rev": 2,
+    "type": "gokeisei",
+    "difficulty": 2,
+    "stem": "（　）夜中に電話が鳴って、目が覚めてしまった。",
+    "options": [
+      "真",
+      "深",
+      "正",
+      "最"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "半夜三更电话响了，把我吵醒了。",
+      "en": "The phone rang in the middle of the night and woke me up."
+    },
+    "why": {
+      "zh": "\"正当半夜\"是「真夜中」：「真」接名词表示\"正、完全\"（真冬・真上・真っ白）。",
+      "en": "The dead of night is 「真夜中」: 真 before a noun means \"right in, completely\" (真冬, 真上)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "有「深夜」，但没有「深夜中」。",
+        "en": "There is 「深夜」, but not 「深夜中」."
+      },
+      {
+        "zh": "「正」构成「正反対」，没有「正夜中」。",
+        "en": "正 makes 「正反対」, but 「正夜中」 isn't a word."
+      },
+      {
+        "zh": "「最」构成「最前列・最上階」，没有「最夜中」。",
+        "en": "最 makes 「最上階」, but 「最夜中」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-626",
+    "type": "gokeisei",
+    "difficulty": 2,
+    "stem": "育った国が違うと、価値（　）も違う。",
+    "options": [
+      "観",
+      "感",
+      "度",
+      "質"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "成长的国家不同，价值观也不同。",
+      "en": "People who grew up in different countries have different values."
+    },
+    "why": {
+      "zh": "「〜観」表示看法、观念：「価値観」「人生観」。",
+      "en": "〜観 is a way of seeing things: 「価値観」, 「人生観」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「価値感」不是词；「〜感」是感觉（「緊張感」）。",
+        "en": "「価値感」 isn't a word; 〜感 is a feeling (「緊張感」)."
+      },
+      {
+        "zh": "「価値度」不是词。",
+        "en": "「価値度」 isn't a word."
+      },
+      {
+        "zh": "「価値質」不是词。",
+        "en": "「価値質」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-627",
+    "type": "gokeisei",
+    "difficulty": 2,
+    "stem": "この歌手は、最近テレビに出て知名（　）が上がった。",
+    "options": [
+      "度",
+      "率",
+      "性",
+      "感"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这位歌手最近上了电视，知名度提高了。",
+      "en": "This singer has become better known since appearing on TV."
+    },
+    "why": {
+      "zh": "「知名度」：知名的程度。",
+      "en": "「知名度」 is how widely known someone is."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「知名率」不是词。",
+        "en": "「知名率」 isn't a word."
+      },
+      {
+        "zh": "「知名性」不是词。",
+        "en": "「知名性」 isn't a word."
+      },
+      {
+        "zh": "「知名感」不是词。",
+        "en": "「知名感」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-628",
+    "type": "gokeisei",
+    "difficulty": 1,
+    "stem": "ダイエット中なので、（　）カロリーの食品を選んでいる。",
+    "options": [
+      "低",
+      "少",
+      "小",
+      "短"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "因为在减肥，我选低卡路里的食品。",
+      "en": "I'm on a diet, so I choose low-calorie foods."
+    },
+    "why": {
+      "zh": "「低卡路里」是「低カロリー」：数值低用「低」。",
+      "en": "'Low-calorie' is 「低カロリー」: numbers are 低 (low)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「少カロリー」不是词。",
+        "en": "「少カロリー」 isn't a word."
+      },
+      {
+        "zh": "「小カロリー」不是词。",
+        "en": "「小カロリー」 isn't a word."
+      },
+      {
+        "zh": "「短カロリー」不是词。",
+        "en": "「短カロリー」 isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-629",
+    "type": "gokeisei",
+    "difficulty": 2,
+    "stem": "隣の一家とは、家族（　）で付き合っている。",
+    "options": [
+      "ぐるみ",
+      "だらけ",
+      "まみれ",
+      "ずくめ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我们和邻居一家是全家来往。",
+      "en": "We're friends with the family next door — the whole family."
+    },
+    "why": {
+      "zh": "「〜ぐるみ」表示全部包括在内：「家族ぐるみの付き合い」。",
+      "en": "〜ぐるみ means 'including all of': 「家族ぐるみの付き合い」 (family friends)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜だらけ」表示满是（坏东西）（「間違いだらけ」）。",
+        "en": "〜だらけ means 'full of' (something bad), as in 「間違いだらけ」."
+      },
+      {
+        "zh": "「〜まみれ」表示沾满（「泥まみれ」）。",
+        "en": "〜まみれ means 'covered in' (「泥まみれ」)."
+      },
+      {
+        "zh": "「〜ずくめ」表示全是（「黒ずくめ」「いいことずくめ」）。",
+        "en": "〜ずくめ means 'all ...' (「黒ずくめ」, 「いいことずくめ」)."
+      }
+    ]
+  },
+  {
+    "id": "n2-mg-630",
+    "type": "gokeisei",
+    "difficulty": 2,
+    "stem": "連休（　）の月曜日は、仕事のメールが多い。",
+    "options": [
+      "明け",
+      "切れ",
+      "抜け",
+      "開き"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "长假结束后的星期一，工作邮件很多。",
+      "en": "On the Monday after a long weekend there are lots of work emails."
+    },
+    "why": {
+      "zh": "「〜明け」表示某段时期刚结束：「連休明け」「夏休み明け」。",
+      "en": "〜明け means 'just after a period ends': 「連休明け」, 「夏休み明け」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「連休切れ」不是词。",
+        "en": "「連休切れ」 isn't a word."
+      },
+      {
+        "zh": "「〜抜け」表示\"漏掉、缺少\"（手抜け），没有「連休抜け」。",
+        "en": "〜抜け means \"missing\" (手抜け); 「連休抜け」 isn't a word."
+      },
+      {
+        "zh": "「〜開き」表示\"开（始）\"（店開き・海開き），没有「連休開き」。",
+        "en": "〜開き is an opening (海開き); 「連休開き」 isn't a word."
+      }
+    ]
+  }
+]

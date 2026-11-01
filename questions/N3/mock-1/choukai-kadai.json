@@ -1,0 +1,674 @@
+[
+ {
+  "id": "n3-m1-ck-101",
+  "type": "kadai",
+  "scene": "大学で女の学生と男の学生が話しています。",
+  "question": "男の学生はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "F",
+    "来月のサークルの合宿のことなんだけど、準備、手伝ってもらえる？"
+   ],
+   [
+    "M",
+    "うん、いいよ。何すればいい？宿の予約は、もう済んでたよね。"
+   ],
+   [
+    "F",
+    "うん、それは先週済ませた。あとは、予定表ができたから、サークルの先生に見せて、いいって言ってもらわないといけないの。"
+   ],
+   [
+    "M",
+    "じゃあ、今から先生のところに行ってくるよ。"
+   ],
+   [
+    "F",
+    "あ、先生、今日は授業が続くから、研究室に戻るのは三時過ぎだって。"
+   ],
+   [
+    "M",
+    "そうか。じゃあ、それまでに、みんなで食べるお菓子でも買っておこうか。"
+   ],
+   [
+    "F",
+    "お菓子は出発の前の日でいいよ。それより、参加する人の数がまだはっきりしないから、一年生にメールで聞いてくれない？宿に人数を知らせないといけないし。"
+   ],
+   [
+    "M",
+    "分かった。すぐ送るね。"
+   ]
+  ],
+  "options": [
+   "一年生にメールを送る",
+   "先生に話しに行く",
+   "お菓子を買いに行く",
+   "宿の予約をする"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "大学里一个女学生和一个男学生在说话。",
+    "question": "男学生接下来首先要做什么？",
+    "lines": [
+     "下个月社团集训的事，能帮我一起准备吗？",
+     "嗯，行啊。要做什么？住处已经订好了吧。",
+     "嗯，那个上周就订好了。接下来，日程表做好了，得给社团的指导老师看，请老师同意。",
+     "那我现在去老师那儿一趟。",
+     "啊，老师今天一直有课，听说三点以后才回研究室。",
+     "这样啊。那在那之前我先去买大家吃的零食吧？",
+     "零食出发前一天买就行。比起那个，参加人数还不确定，你能发邮件问问一年级的吗？还得告诉住处人数呢。",
+     "知道了，我马上发。"
+    ],
+    "options": [
+     "给一年级学生发邮件",
+     "去找老师说",
+     "去买零食",
+     "预订住处"
+    ]
+   },
+   "en": {
+    "scene": "At a university, a female student and a male student are talking.",
+    "question": "What will the male student do first?",
+    "lines": [
+     "About next month's club training camp — could you help me get things ready?",
+     "Sure. What should I do? The lodging's already booked, right?",
+     "Yes, I did that last week. Next, the schedule's ready, so we have to show it to the club's supervising professor and get his OK.",
+     "Then I'll go see the professor now.",
+     "Oh, the professor has classes all day — apparently he won't be back in his office until after three.",
+     "I see. Then shall I buy some snacks for everyone before that?",
+     "The snacks can wait until the day before we leave. More importantly, we still don't know how many are coming, so could you email the first-years and ask? We have to tell the lodging the numbers.",
+     "Got it. I'll send it right away."
+    ],
+    "options": [
+     "Email the first-years",
+     "Go and talk to the professor",
+     "Go and buy snacks",
+     "Book the lodging"
+    ]
+   }
+  },
+  "why": {
+   "zh": "老师三点以后才在，零食出发前一天再买；女学生说「それより…一年生にメールで聞いてくれない？」，男学生回答「すぐ送るね」，所以先发邮件。",
+   "en": "The professor isn't back until after three and the snacks can wait; she asks 「それより…一年生にメールで聞いてくれない？」 and he says 「すぐ送るね」 — the email comes first."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "老师「三時過ぎ」才回研究室，找老师要等到那以后。",
+    "en": "The professor isn't back until 「三時過ぎ」, so talking to him has to wait."
+   },
+   {
+    "zh": "女学生说「お菓子は出発の前の日でいいよ」。",
+    "en": "She says 「お菓子は出発の前の日でいいよ」 — the snacks can wait."
+   },
+   {
+    "zh": "住处「先週済ませた」，已经订好了。",
+    "en": "The lodging was booked 「先週」 — already done."
+   }
+  ],
+  "traps": [
+   "done-already",
+   "later",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n3-m1-ck-102",
+  "type": "kadai",
+  "scene": "男の人と女の人が電話で話しています。",
+  "question": "男の人はあした何時に家を出ますか。",
+  "lines": [
+   [
+    "F",
+    "もしもし、あしたの工場見学のことなんだけど、集合の時間が変わったの、聞いた？"
+   ],
+   [
+    "M",
+    "え、九時に駅の改札の前じゃなかった？だから八時半に出るつもりだったんだけど。"
+   ],
+   [
+    "F",
+    "それが、工場の都合で十時になったんだって。"
+   ],
+   [
+    "M",
+    "そうなんだ。じゃあ、うちから駅まで三十分だから、九時半に出れば間に合うね。"
+   ],
+   [
+    "F",
+    "うーん、でも、出発の前に参加する人の名前を確認するから、集合の十五分前には来てほしいって、先生が言ってたよ。"
+   ],
+   [
+    "M",
+    "そっか。じゃあ、そのぶん早く出ないとね。"
+   ],
+   [
+    "F",
+    "うん。お弁当も忘れないでね。"
+   ]
+  ],
+  "options": [
+   "八時半",
+   "九時",
+   "九時十五分",
+   "九時半"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在打电话。",
+    "question": "男人明天几点从家出发？",
+    "lines": [
+     "喂，明天参观工厂的事，集合时间改了，你听说了吗？",
+     "咦，不是九点在车站检票口前面吗？所以我打算八点半出门的。",
+     "听说因为工厂那边的安排，改成十点了。",
+     "这样啊。那从我家到车站三十分钟，九点半出门就来得及吧。",
+     "嗯……不过老师说出发前要核对参加者的名字，希望大家在集合前十五分钟到。",
+     "这样啊。那我得早出门那么多时间了。",
+     "嗯。也别忘了带便当哦。"
+    ],
+    "options": [
+     "八点半",
+     "九点",
+     "九点十五分",
+     "九点半"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking on the phone.",
+    "question": "What time will the man leave home tomorrow?",
+    "lines": [
+     "Hello? About tomorrow's factory tour — did you hear the meeting time changed?",
+     "Huh? Wasn't it nine o'clock in front of the station ticket gates? I was planning to leave at eight thirty.",
+     "Apparently it's been moved to ten because of the factory's schedule.",
+     "Oh, OK. It's thirty minutes from my place to the station, so if I leave at nine thirty I'll make it.",
+     "Hmm, but the teacher said they'll check everyone's names before we set off, so they want us there fifteen minutes before the meeting time.",
+     "Right. Then I need to leave that much earlier.",
+     "Yes. And don't forget your lunch."
+    ],
+    "options": [
+     "8:30",
+     "9:00",
+     "9:15",
+     "9:30"
+    ]
+   }
+  },
+  "why": {
+   "zh": "集合改到十点，要提前十五分钟（九点四十五分）到车站，从家到车站要三十分钟，所以九点十五分出门。",
+   "en": "The meeting is now at ten, he must be there fifteen minutes early (9:45), and the station is thirty minutes away — so he leaves at 9:15."
+  },
+  "wrong": [
+   {
+    "zh": "八点半是集合时间改之前他打算出门的时间。",
+    "en": "8:30 was his plan back when the meeting was at nine."
+   },
+   {
+    "zh": "九点是原来的集合时间，已经改到十点了。",
+    "en": "Nine was the old meeting time; it is now ten."
+   },
+   null,
+   {
+    "zh": "九点半出门正好十点到，可是老师要大家提前十五分钟到。",
+    "en": "Leaving at 9:30 gets him there at ten, but they have to arrive fifteen minutes early."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "number"
+  ]
+ },
+ {
+  "id": "n3-m1-ck-103",
+  "type": "kadai",
+  "scene": "郵便局の窓口で、女の人と係の人が話しています。",
+  "question": "女の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "F",
+    "すみません、荷物を受け取りに来たんですが。これ、家に入っていたお知らせの紙です。"
+   ],
+   [
+    "M",
+    "はい、ありがとうございます。では、ご本人だと確認できるものをお願いします。"
+   ],
+   [
+    "F",
+    "学生証でもいいですか。"
+   ],
+   [
+    "M",
+    "はい、大丈夫です。……あ、申し訳ありません。こちらの学生証、先月で期限が切れていますね。"
+   ],
+   [
+    "F",
+    "え、そうなんですか。ほかには何も持ってきていないんですけど……。"
+   ],
+   [
+    "M",
+    "それでしたら、ほかの身分証を持ってきていただくか、もう一度ご自宅に配達するか、どちらかになりますが。"
+   ],
+   [
+    "F",
+    "家まで取りに帰ると一時間かかるので、配達をお願いします。今夜は家にいますから。"
+   ],
+   [
+    "M",
+    "かしこまりました。では、こちらの用紙に、配達のご希望の時間を書いていただけますか。"
+   ],
+   [
+    "F",
+    "はい。"
+   ]
+  ],
+  "options": [
+   "学生証を見せる",
+   "用紙に時間を書く",
+   "身分証を取りに帰る",
+   "お知らせの紙を見せる"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在邮局的窗口，一个女人和工作人员在说话。",
+    "question": "女人接下来首先要做什么？",
+    "lines": [
+     "不好意思，我来取包裹。这是放在我家的通知单。",
+     "好的，谢谢。那么，请出示能确认是您本人的证件。",
+     "学生证可以吗？",
+     "可以。……啊，很抱歉，这张学生证上个月就过期了。",
+     "啊，是吗？别的我什么都没带……",
+     "那样的话，要么请您把别的身份证件拿来，要么再给您配送到家，二选一。",
+     "回家去拿要一个小时，所以请帮我配送吧。今晚我在家。",
+     "好的。那么，能请您在这张表上写下希望配送的时间吗？",
+     "好的。"
+    ],
+    "options": [
+     "出示学生证",
+     "在表上写时间",
+     "回家拿身份证件",
+     "出示通知单"
+    ]
+   },
+   "en": {
+    "scene": "At a post office counter, a woman and a clerk are talking.",
+    "question": "What will the woman do first?",
+    "lines": [
+     "Excuse me, I've come to pick up a parcel. Here's the notice that was left at my home.",
+     "Thank you. Now, could I see something that shows who you are?",
+     "Is a student ID all right?",
+     "Yes, that's fine. ... Oh, I'm sorry — this student ID expired last month.",
+     "Oh, really? I haven't brought anything else...",
+     "In that case, you can either bring another form of ID, or we can deliver it to your home again.",
+     "Going home for it would take an hour, so please deliver it. I'll be home tonight.",
+     "Certainly. Then could you write the time you'd like it delivered on this form?",
+     "Sure."
+    ],
+    "options": [
+     "Show her student ID",
+     "Write a time on a form",
+     "Go home for her ID",
+     "Show the delivery notice"
+    ]
+   }
+  },
+  "why": {
+   "zh": "学生证过期不能用，她选了重新配送，工作人员请她「こちらの用紙に、配達のご希望の時間を書いていただけますか」，所以先填时间。",
+   "en": "The expired student ID won't do, so she chooses redelivery and the clerk asks her to write the time on the form (「こちらの用紙に…書いていただけますか」)."
+  },
+  "wrong": [
+   {
+    "zh": "学生证已经给对方看过了，而且「期限が切れています」，不能用。",
+    "en": "She has already shown the student ID, and it 「期限が切れています」."
+   },
+   null,
+   {
+    "zh": "回家拿要一个小时，她选了「配達をお願いします」。",
+    "en": "Going home takes an hour, so she chooses 「配達をお願いします」."
+   },
+   {
+    "zh": "通知单她一开始就已经交给工作人员了。",
+    "en": "She handed over the notice at the very start."
+   }
+  ],
+  "traps": [
+   "done-already",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n3-m1-ck-104",
+  "type": "kadai",
+  "scene": "会社で女の人と男の人が話しています。",
+  "question": "女の人はこのあと何をしますか。",
+  "lines": [
+   [
+    "F",
+    "先輩、さくら商事に送る契約書なんですけど、メールで送ってもいいでしょうか。"
+   ],
+   [
+    "M",
+    "あ、あれはね、向こうのはんこが必要だから、紙で送らないといけないんだ。"
+   ],
+   [
+    "F",
+    "じゃあ、郵便で出しておきます。"
+   ],
+   [
+    "M",
+    "うーん、でも、あさってまでに向こうに届いてないと困るんだよね。今から出しても、間に合うかどうか。"
+   ],
+   [
+    "F",
+    "じゃあ、私が直接持っていきましょうか。"
+   ],
+   [
+    "M",
+    "いや、実はあしたの午前中、別の件で僕がさくら商事に行くんだ。そのとき持っていくよ。だから、それまでに契約書を二部印刷して、課長にサインをもらっておいてくれる？"
+   ],
+   [
+    "F",
+    "はい、分かりました。"
+   ]
+  ],
+  "options": [
+   "契約書をメールで送る",
+   "契約書を郵便で出す",
+   "契約書を相手に届ける",
+   "課長にサインをもらう"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个女人和一个男人在说话。",
+    "question": "女人接下来要做什么？",
+    "lines": [
+     "前辈，要寄给樱花商事的合同，可以用邮件发吗？",
+     "啊，那个需要对方盖章，所以必须寄纸质的。",
+     "那我去邮寄。",
+     "嗯……可是后天之前必须送到对方那里。现在寄出去也不知道来不来得及。",
+     "那我直接送过去吧？",
+     "不用，其实明天上午我因为别的事要去樱花商事，到时候我带过去。所以在那之前，你能把合同打印两份，请科长签好字吗？",
+     "好的，知道了。"
+    ],
+    "options": [
+     "用邮件发送合同",
+     "邮寄合同",
+     "把合同送到对方那里",
+     "请科长签字"
+    ]
+   },
+   "en": {
+    "scene": "At a company, a woman and a man are talking.",
+    "question": "What will the woman do next?",
+    "lines": [
+     "About the contract for Sakura Trading — is it all right to send it by email?",
+     "Ah, that one needs their seal, so it has to go on paper.",
+     "Then I'll post it.",
+     "Hmm, but it has to reach them by the day after tomorrow. Even if you post it now, I'm not sure it would make it.",
+     "Then shall I take it there myself?",
+     "No — actually I'm going to Sakura Trading tomorrow morning on another matter, so I'll take it then. Before that, could you print two copies and get the section chief to sign them?",
+     "Yes, of course."
+    ],
+    "options": [
+     "Email the contract",
+     "Post the contract",
+     "Deliver the contract in person",
+     "Get the section chief's signature"
+    ]
+   }
+  },
+  "why": {
+   "zh": "合同由男人明天自己带去，他请女人「それまでに契約書を二部印刷して、課長にサインをもらっておいてくれる？」，所以女人要打印后请科长签字。",
+   "en": "He'll take the contract himself tomorrow and asks her 「それまでに契約書を二部印刷して、課長にサインをもらっておいてくれる？」 — she prints it and gets it signed."
+  },
+  "wrong": [
+   {
+    "zh": "需要对方盖章，「紙で送らないといけない」，不能用邮件。",
+    "en": "It needs their seal, so 「紙で送らないといけない」 — email won't do."
+   },
+   {
+    "zh": "邮寄可能赶不上后天的期限，男人没让她寄。",
+    "en": "Post might miss the deadline, so he doesn't ask her to post it."
+   },
+   {
+    "zh": "是男人明天「僕が…持っていく」，不是女人送。",
+    "en": "He says 「僕が…持っていく」 — he takes it, not her."
+   },
+   null
+  ],
+  "traps": [
+   "someone-else",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n3-m1-ck-105",
+  "type": "kadai",
+  "scene": "家で女の人と男の人が話しています。",
+  "question": "男の人は何を買ってきますか。",
+  "lines": [
+   [
+    "F",
+    "ねえ、ちょっとスーパーに行ってきてくれない？あしたの朝ごはんの分。"
+   ],
+   [
+    "M",
+    "いいよ。何がいるの？"
+   ],
+   [
+    "F",
+    "パンと牛乳。それから、卵もなかったかな。"
+   ],
+   [
+    "M",
+    "卵はきのう僕が買ってきたよ。冷蔵庫に入ってる。"
+   ],
+   [
+    "F",
+    "あ、そうだった。"
+   ],
+   [
+    "M",
+    "牛乳も、まだ一本あったと思うけど。"
+   ],
+   [
+    "F",
+    "あれは今夜のシチューに全部使っちゃうの。だから、牛乳はお願い。あと、バターも少なくなってたから、ついでに。"
+   ],
+   [
+    "M",
+    "分かった。パンはいつもの食パンでいい？"
+   ],
+   [
+    "F",
+    "あ、パンはいいや。帰りに私が駅前のパン屋で買ってくるから。"
+   ]
+  ],
+  "options": [
+   "卵と牛乳",
+   "牛乳とバター",
+   "パンと牛乳",
+   "パンとバター"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "家里一个女人和一个男人在说话。",
+    "question": "男人要买什么回来？",
+    "lines": [
+     "哎，你能去趟超市吗？买明天早饭的东西。",
+     "行啊。要什么？",
+     "面包和牛奶。还有，鸡蛋好像也没了吧。",
+     "鸡蛋昨天我买回来了，在冰箱里。",
+     "啊，对哦。",
+     "牛奶好像也还有一瓶吧。",
+     "那瓶今晚做炖菜要全用掉。所以牛奶还是要买。还有黄油也快没了，顺便买一下。",
+     "知道了。面包买平常那种吐司就行吧？",
+     "啊，面包不用了。我回来的时候在车站前的面包店买。"
+    ],
+    "options": [
+     "鸡蛋和牛奶",
+     "牛奶和黄油",
+     "面包和牛奶",
+     "面包和黄油"
+    ]
+   },
+   "en": {
+    "scene": "At home, a woman and a man are talking.",
+    "question": "What will the man buy?",
+    "lines": [
+     "Hey, could you pop to the supermarket? For tomorrow's breakfast.",
+     "Sure. What do we need?",
+     "Bread and milk. And I think we're out of eggs too.",
+     "I bought eggs yesterday. They're in the fridge.",
+     "Oh, that's right.",
+     "I think there's still a carton of milk, too.",
+     "That's all going into tonight's stew, so please get milk. And we're running low on butter, so that too while you're there.",
+     "OK. Is the usual sliced bread fine?",
+     "Oh, forget the bread. I'll get some from the bakery by the station on my way home."
+    ],
+    "options": [
+     "Eggs and milk",
+     "Milk and butter",
+     "Bread and milk",
+     "Bread and butter"
+    ]
+   }
+  },
+  "why": {
+   "zh": "鸡蛋已经有了，牛奶今晚会用完所以要买，再加上黄油；面包最后女人说自己回来时买。",
+   "en": "There are eggs already; the milk is going in tonight's stew, so he buys milk, plus butter; at the end she says she'll get the bread herself."
+  },
+  "wrong": [
+   {
+    "zh": "鸡蛋男人昨天「僕が買ってきた」，冰箱里有。",
+    "en": "He 「僕が買ってきた」 eggs yesterday — they're in the fridge."
+   },
+   null,
+   {
+    "zh": "面包女人说「帰りに私が…買ってくる」。",
+    "en": "She says 「帰りに私が…買ってくる」 — she'll buy the bread."
+   },
+   {
+    "zh": "黄油要买，但面包是女人买。",
+    "en": "He does buy butter, but she is getting the bread."
+   }
+  ],
+  "traps": [
+   "done-already",
+   "someone-else"
+  ]
+ },
+ {
+  "id": "n3-m1-ck-106",
+  "type": "kadai",
+  "scene": "男の人と女の人が、キャンプの準備について話しています。",
+  "question": "男の人は何を持っていきますか。",
+  "lines": [
+   [
+    "F",
+    "来週のキャンプ、持っていくものを確認しようか。テントは私のを持っていくね。"
+   ],
+   [
+    "M",
+    "うん、ありがとう。ねぶくろは？僕、持ってないんだけど。"
+   ],
+   [
+    "F",
+    "キャンプ場で借りられるんだって。一つ五百円。"
+   ],
+   [
+    "M",
+    "じゃあ、そうしよう。料理に使うガスコンロは？うちにあるから持っていこうか。"
+   ],
+   [
+    "F",
+    "料理は、キャンプ場のバーベキューの道具を使うことにしたから、要らないよ。"
+   ],
+   [
+    "M",
+    "そうなんだ。じゃあ、ライトは？夜、トイレに行くとき、ないと困るよね。"
+   ],
+   [
+    "F",
+    "あ、そうだね。私のは壊れちゃってるから、それはお願いできる？"
+   ],
+   [
+    "M",
+    "分かった。"
+   ]
+  ],
+  "options": [
+   "ライト",
+   "テント",
+   "ねぶくろ",
+   "ガスコンロ"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在商量露营的准备。",
+    "question": "男人要带什么去？",
+    "lines": [
+     "下周露营，我们确认一下要带的东西吧。帐篷我带我的。",
+     "嗯，谢谢。睡袋呢？我没有。",
+     "听说在营地可以借，一个五百日元。",
+     "那就借吧。做饭用的煤气炉呢？我家有，要不我带去？",
+     "做饭决定用营地的烧烤用具了，所以不用带。",
+     "这样啊。那手电呢？晚上去厕所没有的话很麻烦吧。",
+     "啊，对哦。我的坏了，那个能拜托你吗？",
+     "知道了。"
+    ],
+    "options": [
+     "手电筒",
+     "帐篷",
+     "睡袋",
+     "煤气炉"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking about getting ready for a camping trip.",
+    "question": "What will the man take?",
+    "lines": [
+     "Shall we go over what to take for next week's camping trip? I'll bring my tent.",
+     "Great, thanks. What about sleeping bags? I don't have one.",
+     "Apparently you can rent them at the campsite. Five hundred yen each.",
+     "Then let's do that. What about a gas stove for cooking? I've got one at home — shall I bring it?",
+     "We decided to use the campsite's barbecue equipment for cooking, so we don't need it.",
+     "Oh, OK. What about a torch, then? We'll need one to get to the toilets at night.",
+     "Oh, good point. Mine's broken — could you bring that?",
+     "Sure."
+    ],
+    "options": [
+     "A torch",
+     "A tent",
+     "A sleeping bag",
+     "A gas stove"
+    ]
+   }
+  },
+  "why": {
+   "zh": "女人的手电坏了，她说「それはお願いできる？」，男人答应了，所以他带手电。",
+   "en": "Her torch is broken, she asks 「それはお願いできる？」 and he agrees — he takes the torch."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "帐篷女人说「私のを持っていく」。",
+    "en": "She says 「私のを持っていく」 — she brings the tent."
+   },
+   {
+    "zh": "睡袋在营地「借りられる」，不用带。",
+    "en": "Sleeping bags 「借りられる」 at the campsite."
+   },
+   {
+    "zh": "做饭用营地的烧烤用具，煤气炉「要らないよ」。",
+    "en": "They'll use the campsite's barbecue gear, so the stove is 「要らない」."
+   }
+  ],
+  "traps": [
+   "someone-else"
+  ]
+ }
+]

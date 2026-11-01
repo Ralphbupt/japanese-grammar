@@ -301,6 +301,84 @@ This lesson covers N2-level expressions for assertion and judgment. 「ないわ
 
 ---
 
+## 5. 〜ほかない／〜よりほかない／〜ほかしかたがない（只好…… / 只能……）||5. 〜ほかない／〜よりほかない／〜ほかしかたがない (Have no choice but to… / Can only…)
+
+### 接続||Conjugation
+:::zh
+- 動詞辞書形 + ほかない / ほかはない
+- 動詞辞書形 + よりほかない / よりほかはない
+- 動詞辞書形 + ほかしかたがない / よりほかにしかたがない
+
+※ 意思基本相同，「よりほかない」「ほかしかたがない」语气更强一些。
+:::
+:::en
+- Verb dictionary form + ほかない / ほかはない
+- Verb dictionary form + よりほかない / よりほかはない
+- Verb dictionary form + ほかしかたがない / よりほかにしかたがない
+
+※ They mean basically the same; 「よりほかない」 and 「ほかしかたがない」 sound a little stronger.
+:::
+
+### 含义||Meaning
+:::zh
+"只好……""只能……"。表示没有别的办法或选择，只能这样做。带有无可奈何、下定决心的语气。意思和「しかない」相同，但「ほかない」比较书面、生硬。
+:::
+:::en
+"Have no choice but to…," "can only…" — there's no other way or option, so this is what has to be done. Carries a sense of resignation or of making up one's mind. Same meaning as 「しかない」, but 「ほかない」 is more formal and written.
+:::
+
+### 例句||Example Sentences
+:::zh
+1. 終電に乗り遅れたので、タクシーで帰る**ほかない**。（没赶上末班电车，只好打车回家。）
+2. 誰も手伝ってくれないなら、一人でやる**よりほかない**。（要是没人帮忙，就只能一个人干了。）
+3. 部品が届かない以上、工事を延期する**ほかしかたがない**。（既然零件送不到，只好把工程延期。）
+4. 自分で選んだ道だから、最後まで頑張る**ほかはない**。（这是自己选的路，只能坚持到底。）
+5. 予約がいっぱいで、別の日にする**よりほかにしかたがなかった**。（预约都满了，只好改成别的日子。）
+6. 薬を飲んでも熱が下がらないなら、病院へ行く**ほかない**だろう。（要是吃了药还不退烧，就只能去医院了吧。）
+:::
+:::en
+1. 終電に乗り遅れたので、タクシーで帰る**ほかない**。(I missed the last train, so I have no choice but to take a taxi home.)
+2. 誰も手伝ってくれないなら、一人でやる**よりほかない**。(If nobody will help, I'll just have to do it alone.)
+3. 部品が届かない以上、工事を延期する**ほかしかたがない**。(Since the parts aren't arriving, there's nothing for it but to postpone the work.)
+4. 自分で選んだ道だから、最後まで頑張る**ほかはない**。(It's the path I chose, so all I can do is keep at it to the end.)
+5. 予約がいっぱいで、別の日にする**よりほかにしかたがなかった**。(It was fully booked, so I had no choice but to pick another day.)
+6. 薬を飲んでも熱が下がらないなら、病院へ行く**ほかない**だろう。(If the fever won't go down even with medicine, I guess there's nothing for it but to go to the hospital.)
+:::
+
+### 辨析||Comparison
+:::zh
+| 表达 | 含义 | 区别 |
+|------|------|------|
+| ほかない | 只好…… | 没有别的选择，书面、生硬 |
+| しかない | 只好…… | 意思相同，口语常用 |
+| ざるを得ない | 不得不…… | 被情况所迫，违背自己的意愿 |
+| ないわけにはいかない | 不能不…… | 出于道义、常识、人情不能不做 |
+
+> 「タクシーで帰るほかない」= 只能打车回去（没有别的办法）  
+> 「タクシーで帰るしかない」= 同上，更口语  
+> 「中止せざるを得ない」= 不得不中止（本来不想，被迫）  
+> 「お祝いに行かないわけにはいかない」= 不能不去祝贺（人情上说不过去）
+
+**注意接续：**「ほかない」「しかない」接动词辞书形；「ざるを得ない」接ない形去掉「ない」（する→せざるを得ない）；「ないわけにはいかない」接ない形。
+:::
+:::en
+| Expression | Meaning | Difference |
+|------|------|------|
+| ほかない | have no choice but to | No other option; formal, written |
+| しかない | have no choice but to | Same meaning; everyday speech |
+| ざるを得ない | be forced to | Compelled by circumstances, against one's wishes |
+| ないわけにはいかない | cannot not do | Obliged by morals, common sense or social ties |
+
+> 「タクシーで帰るほかない」 = I can only go home by taxi (no other way)  
+> 「タクシーで帰るしかない」 = same, more conversational  
+> 「中止せざるを得ない」 = we're forced to cancel (didn't want to, but compelled)  
+> 「お祝いに行かないわけにはいかない」 = I can't not go and congratulate them (it would be socially unacceptable)
+
+**Watch the connection:** 「ほかない」 and 「しかない」 follow the dictionary form; 「ざるを得ない」 follows the nai-form minus 「ない」 (する → せざるを得ない); 「ないわけにはいかない」 follows the nai-form.
+:::
+
+---
+
 ## 练习||Practice
 
 :::zh

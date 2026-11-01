@@ -26,6 +26,7 @@ A full cheatsheet of ~130 N2 grammar points. N2 is the level demanded by graduat
 - [ ] 〜にしろ/〜にせよ — 即使~也~ // 〜にしろ/〜にせよ — even if ~
 - [ ] 〜たところで — 就算~也（没用） // 〜たところで — even if ~ (it's no use)
 - [ ] 〜どころではない — 哪有心思~ // 〜どころではない — in no state to ~ / no time for ~
+- [ ] たとえ〜ても — 即使~也~ // たとえ〜ても — even if ~
 - [ ] 〜ないことはない — 不是不能~（勉强肯定） // 〜ないことはない — it's not that ~ not (reluctant yes)
 
 ## 原因・理由||Cause & Reason
@@ -37,12 +38,15 @@ A full cheatsheet of ~130 N2 grammar points. N2 is the level demanded by graduat
 - [ ] 〜ものだから — 因为~（辩解） // 〜ものだから — because ~ (excuse)
 - [ ] 〜以上（は）— 既然~就应该~ // 〜以上（は） — now that ~, (should) ~
 - [ ] 〜からには — 既然~就~ // 〜からには — since ~, (must) ~
+- [ ] 〜ことだから — 因为是~（所以肯定）~ // 〜ことだから — knowing what ~ is like, (surely) ~
 
 ## 程度・限定||Degree & Limitation
 
 - [ ] 〜に過ぎない — 只不过是~ // 〜に過ぎない — merely ~ / nothing more than ~
 - [ ] 〜にほかならない — 不外乎是~/正是~ // 〜にほかならない — nothing other than ~ / precisely ~
 - [ ] 〜に限る — ~最好了 // 〜に限る — ~ is best
+- [ ] 〜も〜ば〜も — 既~又~ // 〜も〜ば〜も — both ~ and ~
+- [ ] 〜でさえ — 连~都~ // 〜でさえ — even ~
 - [ ] 〜に限って — 偏偏~/仅限~ // 〜に限って — of all times ~ / only ~
 - [ ] 〜に限らず — 不限于~ // 〜に限らず — not limited to ~
 - [ ] 〜をはじめ（として）— 以~为首 // 〜をはじめ（として） — starting with ~ / including ~
@@ -75,6 +79,7 @@ A full cheatsheet of ~130 N2 grammar points. N2 is the level demanded by graduat
 - [ ] 〜ということだ — 也就是说~/据说~ // 〜ということだ — in other words ~ / I hear that ~
 - [ ] 〜とは限らない — 未必~/不一定~ // 〜とは限らない — not necessarily ~
 - [ ] 〜ないものか — 能不能~呢（期望） // 〜ないものか — isn't there some way to ~? (wish)
+- [ ] 〜というものだ/〜というものではない — 这才叫~/并不是~就~ // 〜というものだ/〜というものではない — that's what ~ is / it doesn't follow that ~
 
 ## 対比・関係||Contrast & Relation
 
@@ -95,6 +100,9 @@ A full cheatsheet of ~130 N2 grammar points. N2 is the level demanded by graduat
 - [ ] 〜にしても〜にしても — 无论~还是~ // 〜にしても〜にしても — whether ~ or ~
 - [ ] 〜はともかく（として）— ~暂且不论 // 〜はともかく（として） — setting ~ aside
 - [ ] 〜をめぐって — 围绕~ // 〜をめぐって — surrounding ~ / over ~
+- [ ] 〜からすると/〜からすれば — 从~来看/从~的立场 // 〜からすると/〜からすれば — judging from ~ / from ~'s standpoint
+- [ ] 〜にしたら/〜にすれば — 对~来说（设身处地） // 〜にしたら/〜にすれば — for ~ / from ~'s point of view
+- [ ] 〜のもとで/〜のもとに — 在~之下 // 〜のもとで/〜のもとに — under ~
 - [ ] 〜を問わず — 不论~/不问~ // 〜を問わず — regardless of ~
 - [ ] 〜を中心に — 以~为中心 // 〜を中心に — centered on ~
 - [ ] 〜に応じて — 根据~/按照~ // 〜に応じて — depending on ~ / in accordance with ~
@@ -128,11 +136,13 @@ A full cheatsheet of ~130 N2 grammar points. N2 is the level demanded by graduat
 - [ ] 〜てはいられない — 不能继续~了 // 〜てはいられない — can't keep ~ing any longer
 - [ ] 〜ないことには — 不~的话就不能~ // 〜ないことには — unless ~, can't ~
 - [ ] 〜てからでないと — 不~就不能~ // 〜てからでないと — not until ~ / can't ~ before ~
+- [ ] 〜ほかない/〜よりほかない — 只好~/只能~ // 〜ほかない/〜よりほかない — have no choice but to ~
 
 ## 假定・条件||Hypothesis & Condition
 
 - [ ] 〜ものなら — 如果能~的话 // 〜ものなら — if (only) I could ~
 - [ ] 〜ようものなら — 要是胆敢~/万一~ // 〜ようものなら — if you dare ~ / if by any chance ~
+- [ ] 〜としたら/〜とすれば — 假如~的话 // 〜としたら/〜とすれば — supposing ~ / if it were the case that ~
 - [ ] 〜にもかかわらず — 尽管~却~ // 〜にもかかわらず — despite ~
 - [ ] 〜ことだ — 应该~/最好~（建议） // 〜ことだ — you should ~ / it's best to ~ (advice)
 - [ ] 〜に越したことはない — 最好~（没有比~更好的） // 〜に越したことはない — it's best to ~ (nothing better than ~)
