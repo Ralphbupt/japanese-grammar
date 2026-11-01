@@ -19,7 +19,9 @@
  *     usage the model reports (IPs are stored hashed, per day)
  *
  * Saving quota:
- *   - reasoning effort forced to low (reasoning tokens are billed as output)
+ *   - reasoning effort fixed at medium (reasoning tokens are billed as output;
+ *     medium fixed readings and rules low got wrong in tools/ai-eval for ~16% more
+ *     neurons, 2026-11-02)
  *   - first questions (system prompt + one user message) are answered from
  *     the edge cache when someone already asked the same thing about the same
  *     text: the quick-prompt buttons and the 「…」这里怎么理解？ selection chip
@@ -140,7 +142,7 @@ export default {
     if (verdict.budgetGone) return backup(true);
     let result;
     try {
-      try { result = await env.AI.run(MODEL, { ...params, reasoning_effort: 'low' }); }
+      try { result = await env.AI.run(MODEL, { ...params, reasoning_effort: 'medium' }); }
       catch (e) { if (quotaGone(e)) throw e; result = await env.AI.run(MODEL, params); }   // in case the knob is ever rejected
     } catch (e) {
       return backup(quotaGone(e));
@@ -206,7 +208,7 @@ async function viaFallback(env, quota, params, count) {
         method: 'POST',
         headers: { Authorization: 'Bearer ' + env[f.key], 'Content-Type': 'application/json' },
         // reasoning_effort only for the gpt-oss models; other models may reject it.
-        body: JSON.stringify({ ...params, model: env[f.modelVar] || f.model, ...(/gpt-oss/.test(env[f.modelVar] || f.model) ? { reasoning_effort: 'low' } : {}) }),
+        body: JSON.stringify({ ...params, model: env[f.modelVar] || f.model, ...(/gpt-oss/.test(env[f.modelVar] || f.model) ? { reasoning_effort: 'medium' } : {}) }),
       });
       if (res.ok) { count('fallback-' + f.name); return res; }
     } catch (e) {}
