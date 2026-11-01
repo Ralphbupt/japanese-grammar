@@ -349,7 +349,7 @@
   function effortPrompt(c) {
     var e = c.effort || '';
     if (e === 'low') return isEn() ? ' Keep answers short: 3–5 sentences, conclusion first.' : ' 回答尽量简短，3–5 句，先给结论。';
-    if (e === 'high') return isEn() ? ' Feel free to go deep: more examples, side-by-side comparisons with similar grammar, and common mistakes.' : ' 可以详细展开：多给例句，和相近语法对比辨析，并指出易错点。';
+    if (e === 'high') return isEn() ? ' Feel free to go deep: more examples, side-by-side comparisons with similar grammar, and common mistakes you are sure of.' : ' 可以详细展开：多给例句，和相近语法对比辨析；易错点只写有把握的。';
     return '';
   }
   function systemPrompt(sc) {
@@ -681,6 +681,7 @@
       if (b.classList.contains('ai-quick')) { pendingSource = 'quick'; send(b.getAttribute('data-q')); return; }
       if (b.classList.contains('ai-copy')) { copyText(b.closest('.ai-msg').getAttribute('data-raw') || '', b); return; }
       if (b.classList.contains('ai-regen')) { regenerate(); return; }
+      if (b.classList.contains('ai-flag')) { flagAnswer(b.closest('.ai-msg'), b); return; }
       if (b.classList.contains('ai-retry')) { regenerate(); return; }
     });
     renderScope();
@@ -793,8 +794,23 @@
     var d = document.createElement('div');
     d.className = 'ai-actions';
     d.innerHTML = '<button type="button" class="ai-copy" title="' + esc(t('复制回答', 'Copy answer')) + '">⧉ ' + esc(t('复制', 'Copy')) + '</button>' +
+      '<button type="button" class="ai-flag" title="' + esc(t('标记这个回答有错，记在本浏览器里，方便以后核对', 'Mark this answer as wrong — kept in this browser for checking later')) + '">⚑ ' + esc(t('有错', 'Wrong')) + '</button>' +
       (last ? '<button type="button" class="ai-regen" title="' + esc(t('用当前模型重新回答', 'Answer again with the current model')) + '">↻ ' + esc(t('重新生成', 'Regenerate')) + '</button>' : '');
     return d;
+  }
+  // ⚑ 有错: the answer, the question before it and where it was asked go to
+  // localStorage jp_ai_flags (this browser only, newest last, at most 100).
+  function flagAnswer(msgEl, btn) {
+    var nodes = [].slice.call(msgsEl.querySelectorAll('.ai-msg.ai-user, .ai-msg.ai-assistant')), i = nodes.indexOf(msgEl), q = '';
+    for (var j = i - 1; j >= 0; j--) if (nodes[j].classList.contains('ai-user')) { q = nodes[j].textContent; break; }
+    try {
+      var f = JSON.parse(localStorage.getItem('jp_ai_flags')) || [];
+      f.push({ t: Date.now(), page: location.pathname, id: QUIZ ? quizId : null, model: cfg ? cfg.active + '/' + ((active() || {}).model || '') : '', q: q, a: msgEl.getAttribute('data-raw') || msgEl.textContent });
+      if (f.length > 100) f.splice(0, f.length - 100);
+      localStorage.setItem('jp_ai_flags', JSON.stringify(f));
+    } catch (e) {}
+    btn.textContent = '✓ ' + t('已标记', 'Marked'); btn.disabled = true;
+    track('ai_flag', { mode: QUIZ ? 'quiz' : GENERAL ? 'general' : 'lesson' });
   }
   function copyText(s, btn) {
     var done = function () { var o = btn.textContent; btn.textContent = '✓ ' + t('已复制', 'Copied'); setTimeout(function () { btn.textContent = o; }, 1500); };
@@ -1228,14 +1244,14 @@
   function explainPrompt(s) {
     return t('「' + s + '」\n简明讲解这句话的语法，不要用表格，整体 300 字以内：\n' +
         '1. 拆解：按意群切开，只解释关键的活用和助词\n' +
-        '2. 语法点：本句的重点语法，说明接续和意思；本课讲过的请标出\n' +
+        '2. 语法点：只讲本句实际用到的语法，说明接续和意思；本课讲过的请标出，课文以外的标【补充】\n' +
         '3. 翻译：自然的中文\n' +
-        '4. 易错点：有的话一句话说明，没有就省略',
+        '4. 易错点：只写课文里讲过的易错点，课文没提到就整项省略；没有把握的规则不要写',
       '"' + s + '"\nBriefly explain the grammar of this sentence, no tables, under 150 words:\n' +
         '1. Breakdown: split it into chunks and explain only the key conjugations and particles\n' +
-        '2. Grammar points: the main patterns, with how they attach and what they mean; mark the ones taught in this lesson\n' +
+        '2. Grammar points: only the patterns this sentence actually uses, with how they attach and what they mean; mark the ones taught in this lesson, and tag anything from outside the lesson [extra]\n' +
         '3. Translation: a natural one\n' +
-        '4. Pitfalls: one sentence if there is one, otherwise skip');
+        '4. Pitfalls: only one the lesson itself points out; if it doesn\u2019t, leave this part out. Don\u2019t state rules you aren\u2019t sure of');
   }
   function hideChip() { if (chip) chip.hidden = true; }
   function onSelect() {
