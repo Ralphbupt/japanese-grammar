@@ -21,8 +21,8 @@
       "en": "I go to work by train every day."
     },
     "why": {
-      "zh": "电车是去公司的交通手段，表示手段、方式用「で」。",
-      "en": "The train is the means of getting to work; means and method take 「で」."
+      "zh": "线索：空格前是交通工具「電車」，后面是「会社へ 行きます」，说的是怎么去公司。\n规则：表示手段、方式（坐什么、用什么）用「で」：「電車で 行く」「バスで 行く」。",
+      "en": "Clue: Before the blank is a vehicle, 「電車」, and after it 「会社へ 行きます」 — how you get to work.\nRule: The means or method (by what, with what) takes 「で」: 「電車で 行く」, 「バスで 行く」."
     },
     "wrong": [
       null,
@@ -63,8 +63,8 @@
       "en": "A: Did anyone come over last night? B: No, nobody came. I was reading a book by myself."
     },
     "why": {
-      "zh": "B 说「いいえ」，动词是否定「来ませんでした」，后面又说一个人在家：疑问词「だれ」＋「も」＋否定 = “谁也没……”。",
-      "en": "B says 「いいえ」, the verb is negative and B was alone: question word 「だれ」 ＋ 「も」 ＋ negative means \"nobody\"."
+      "zh": "线索：A 问「だれか 来ましたか」，B 回答「いいえ」，动词是否定的「来ませんでした」，后面又说自己一个人在看书。\n规则：疑问词＋「も」＋否定＝全部否定：「だれも 来ない」（谁也没来）。问“有没有人”用「だれか」，回答“没有人”换成「だれも」。",
+      "en": "Clue: A asks 「だれか 来ましたか」, B answers 「いいえ」 with the negative verb 「来ませんでした」, then says they were reading alone.\nRule: Question word ＋ 「も」 ＋ negative = none at all: 「だれも 来ない」 (nobody came). \"Did anyone …?\" uses 「だれか」; the answer \"nobody\" switches to 「だれも」."
     },
     "wrong": [
       null,
@@ -104,8 +104,8 @@
       "en": "I rode a horse once when I was a child. It was a little scary, but fun."
     },
     "why": {
-      "zh": "「子どもの とき」「一回」加上后句用过去式讲当时的感受，是在说经历：「〜た ことが あります」。",
-      "en": "「子どもの とき」, 「一回」 (once) and the past-tense feelings that follow describe an experience: 「〜た ことが あります」."
+      "zh": "线索：「子どもの とき」「一回」，后面用过去式「こわかったです」「たのしかったです」回忆当时的感受。\n规则：说以前做过某事的经历，用「た形＋ことが あります」：「乗った ことが あります」（骑过）。",
+      "en": "Clue: 「子どもの とき」 and 「一回」 (once), then past-tense feelings, 「こわかったです」「たのしかったです」, recalling that time.\nRule: A past experience is た-form ＋ 「ことが あります」: 「乗った ことが あります」 (have ridden)."
     },
     "wrong": [
       null,
@@ -146,8 +146,8 @@
       "en": "A: Coffee or tea — which would you like? B: Tea, please."
     },
     "why": {
-      "zh": "在两样东西里选一样，问“哪一个”用「どちら」：「AとBと、どちらが〜ですか」。",
-      "en": "Choosing between two things, \"which\" is 「どちら」: 「AとBと、どちらが〜ですか」."
+      "zh": "线索：A 列出两样东西「コーヒーと こうちゃと」，问要哪一个。\n规则：两样东西里选一样，用「AとBと、どちらが〜ですか」；三样以上才用「どれ」。",
+      "en": "Clue: A names two things, 「コーヒーと こうちゃと」, and asks which one.\nRule: Choosing one of two is 「A と B と、どちらが〜ですか」; 「どれ」 is for three or more."
     },
     "wrong": [
       null,
@@ -193,8 +193,8 @@
       "en": "If it rains tomorrow, let's not play soccer and play games at home instead."
     },
     "why": {
-      "zh": "明天下不下雨还不知道，“如果下雨就……”是假定条件，后面是提议「〜ましょう」，用「〜たら」。",
-      "en": "Tomorrow's rain is only a possibility — \"if it rains, let's…\" is a condition followed by a suggestion, so 「〜たら」."
+      "zh": "线索：「あした」的雨还没下，句尾是提议「しましょう」。\n规则：“如果……就……”用「た形＋ら」：「ふったら」。「たら」后面可以接提议、请求（「〜ましょう」「〜て ください」）。",
+      "en": "Clue: Tomorrow's rain hasn't happened yet, and the sentence ends with a suggestion, 「しましょう」.\nRule: \"If ~, then ~\" is た-form ＋ 「ら」: 「ふったら」. A suggestion or request (「〜ましょう」, 「〜て ください」) can follow 「たら」."
     },
     "wrong": [
       null,
@@ -203,7 +203,7 @@
         "en": "「ふっても」 (even if it rains) should be followed by doing something anyway; here the rain is the reason to cancel."
       },
       {
-        "zh": "「〜たり」要成对使用并以「する」结尾，不能接条件后的提议。",
+        "zh": "「ふったり」是列举动作的说法，要用「する」收尾（「〜たり する」），本身不表示“如果”。",
         "en": "「〜たり」 lists actions and ends in 「する」; it can't set up a condition."
       },
       {
@@ -235,8 +235,8 @@
       "en": "My older brother always sings while he takes a bath, so you can hear a loud voice from the bathroom."
     },
     "why": {
-      "zh": "从浴室里传出声音，说明是在洗澡的同时唱歌：“一边……一边……”用「ます形词干＋ながら」，歌います → 歌いながら。",
-      "en": "A voice comes from the bathroom, so he sings during the bath: \"while\" is ます-stem ＋ 「ながら」, 歌います → 歌いながら."
+      "zh": "线索：后一句说浴室里传出很大的声音，可见唱歌和洗澡是同时做的。\n规则：“一边……一边……”用「ます形去掉ます＋ながら」：「歌います」→「歌いながら」。主要的动作放在后面（「おふろに 入ります」）。",
+      "en": "Clue: The next sentence says a loud voice comes from the bathroom, so the singing and the bath happen at the same time.\nRule: \"While ~\" is the ます-stem ＋ 「ながら」: 「歌います」 → 「歌いながら」. The main action comes after it (「おふろに 入ります」)."
     },
     "wrong": [
       null,
@@ -282,8 +282,8 @@
       "en": "Please wash your hands before you eat."
     },
     "why": {
-      "zh": "饭前洗手。“……之前”是「辞书形＋まえに」。",
-      "en": "Wash your hands before eating: \"before\" is dictionary form + 「まえに」."
+      "zh": "线索：洗手是在吃饭以前做的事，空格后是「手を 洗って ください」。\n规则：“做……之前”是「辞书形（「食べる」「寝る」）＋まえに」；「あとで」前面用た形（「食べた あとで」）。",
+      "en": "Clue: Washing your hands comes before the meal, and 「手を 洗って ください」 follows the blank.\nRule: \"Before doing ~\" is dictionary form (「食べる」, 「寝る」) ＋ 「まえに」; 「あとで」 takes the た-form (「食べた あとで」)."
     },
     "wrong": [
       null,
@@ -329,8 +329,8 @@
       "en": "A: What do you want for your birthday? B: I want new shoes."
     },
     "why": {
-      "zh": "B 回答「くつが ほしいです」，所以 A 问的是“想要什么东西”：「何が ほしいですか」。",
-      "en": "B answers 「くつが ほしいです」, so A asked what thing B wants: 「何が ほしいですか」."
+      "zh": "线索：B 回答「新しい くつが ほしいです」，说的是想要的东西；A 的问句里是「何が」。\n规则：想要某样东西是「名词＋が ほしい」，问对方就说「何が ほしいですか」。说第三人称想要才用「ほしがる」。",
+      "en": "Clue: B answers 「新しい くつが ほしいです」, a thing B wants, and A's question has 「何が」.\nRule: Wanting a thing is noun ＋ 「が ほしい」; asking the listener is 「何が ほしいですか」. 「ほしがる」 is for saying a third person wants something."
     },
     "wrong": [
       null,
@@ -371,8 +371,8 @@
       "en": "This book belongs to the library. Please don't write in it."
     },
     "why": {
-      "zh": "图书馆的书是大家用的，不能往上写字：请对方不要做某事用「〜ないで ください」。",
-      "en": "A library book is shared, so you mustn't write in it: asking someone not to do something is 「〜ないで ください」."
+      "zh": "线索：前一句「としょかんの 本です」：图书馆的书是大家用的，不该在上面写字。\n规则：请对方不要做某事，用「ない形＋で ください」：「書かない」→「書かないで ください」。",
+      "en": "Clue: The first sentence, 「としょかんの 本です」: a library book is shared, so you shouldn't write in it.\nRule: Asking someone not to do something is ない-form ＋ 「で ください」: 「書かない」 → 「書かないで ください」."
     },
     "wrong": [
       null,
@@ -417,8 +417,8 @@
       "en": "A: Which one is Mr. Tanaka? B: The person drinking coffee over there."
     },
     "why": {
-      "zh": "「コーヒーを 飲んで いる」（正在喝咖啡）整体修饰「人」：コーヒーを ＋ 飲んで ＋ いる ＋ 人です。★ 在第三格，是「いる」。",
-      "en": "「コーヒーを 飲んで いる」 (drinking coffee) modifies 「人」: コーヒーを ＋ 飲んで ＋ いる ＋ 人です. The ★ is the third slot: 「いる」."
+      "zh": "线索：A 问「どの 人ですか」，B 用修饰「人」的「〜て いる 人です」（正在……的人）来回答。\n怎么排：「飲んで＋いる」先连成「飲んで いる」（正在喝）；宾语「コーヒーを」放在「飲んで」前面；这一整段修饰「人です」，放在最后。顺序：コーヒーを → 飲んで → いる → 人です，★ 是「いる」。\n容易错：把「人です」放在「いる」前面。修饰的话在名词前面：「飲んで いる 人」。",
+      "en": "Clue: A asks 「どの 人ですか」, and B answers with 「〜て いる 人です」 (the person who is ~ing), describing 「人」.\nOrder: 「飲んで」 ＋ 「いる」 join first as 「飲んで いる」 (is drinking); the object 「コーヒーを」 goes before 「飲んで」; the whole phrase describes 「人です」, which comes last: コーヒーを → 飲んで → いる → 人です. The ★ is 「いる」.\nTrap: Putting 「人です」 before 「いる」. The description comes before the noun: 「飲んで いる 人」."
     },
     "wrong": [
       null,
@@ -454,8 +454,8 @@
       "en": "I'm working a part-time job to buy a car."
     },
     "why": {
-      "zh": "目的“为了买车”是「車を 買う ために」，后面是正在做的事「アルバイトを して います」。★ 在第三格，是「アルバイトを」。",
-      "en": "The purpose is 「車を 買う ために」, then what you're doing: 「アルバイトを して います」. The ★ is the third slot: 「アルバイトを」."
+      "zh": "线索：「買う」「ために」能连成「買う ために」（为了买），句尾「います」前面要一个て形「して」。\n怎么排：「車を」后面接「買う ために」，说目的；然后是为此做的事「アルバイトを して」，再接句尾「います」。顺序：買う → ために → アルバイトを → して，★ 是「アルバイトを」。\n容易错：把「アルバイトを」放在「買う」前面。「車を」后面直接接它自己的动词「買う」。",
+      "en": "Clue: 「買う」「ために」 make 「買う ために」 (in order to buy), and the final 「います」 needs the て-form 「して」 before it.\nOrder: 「車を」 is followed by 「買う ために」, the purpose; then what you do for it, 「アルバイトを して」, before 「います」: 買う → ために → アルバイトを → して. The ★ is 「アルバイトを」.\nTrap: Putting 「アルバイトを」 before 「買う」. 「車を」 goes straight into its own verb, 「買う」."
     },
     "wrong": [
       null,
@@ -491,8 +491,8 @@
       "en": "I'm bad at getting up early."
     },
     "why": {
-      "zh": "动作做名词要加「の」：「起きる の」，再接「が 苦手です」。★ 在第二格，是「の」。",
-      "en": "An action becomes a noun with 「の」: 「起きる の」, then 「が 苦手です」. The ★ is the second slot: 「の」."
+      "zh": "线索：「の」「が」「苦手です」能连成「〜のが 苦手です」（不擅长做……）。\n怎么排：「の」前面要一个辞书形动词，就是「起きる」，前面的「朝 早く」修饰它；「の」后面接「が」，最后是「苦手です」。顺序：起きる → の → が → 苦手です，★ 是「の」。\n容易错：把「が」直接接在「起きる」后面。动词要先加「の」变成名词，才能接「が」：「起きるのが」。",
+      "en": "Clue: 「の」「が」「苦手です」 make 「〜のが 苦手です」 (bad at doing ~).\nOrder: 「の」 needs a verb in the dictionary form before it — 「起きる」, which 「朝 早く」 describes; 「が」 follows 「の」, and 「苦手です」 ends it: 起きる → の → が → 苦手です. The ★ is 「の」.\nTrap: Attaching 「が」 straight to 「起きる」. The verb first takes 「の」 to become a noun: 「起きるのが」."
     },
     "wrong": [
       null,
@@ -535,8 +535,8 @@
       "en": "In this park you can go out on the pond in a boat."
     },
     "why": {
-      "zh": "「いけの」修饰「ボート」，「ボートに のる」，再接「辞书形＋こと が できます」表示可以：いけの ＋ ボートに ＋ のる ＋ こと。★ 在第三格，是「のる」。",
-      "en": "「いけの」 describes 「ボート」, 「ボートに のる」 is the action, and dictionary form ＋ 「こと が できます」 means \"can\": いけの ＋ ボートに ＋ のる ＋ こと. The ★ is the third slot: 「のる」."
+      "zh": "线索：「こと」和句尾「が できます」能连成「辞书形＋ことが できます」（可以……）。\n怎么排：「こと」前面放辞书形「のる」；「のる」前面要「ボートに」（坐的东西用「に」）；「いけの」修饰「ボート」，放在最前。顺序：いけの → ボートに → のる → こと，★ 是「のる」。\n容易错：把「いけの」放在「のる」前面。「名词＋の」后面要接名词：「いけの ボート」。",
+      "en": "Clue: 「こと」 plus the final 「が できます」 make dictionary form ＋ 「ことが できます」 (can ~).\nOrder: 「こと」 takes the dictionary form 「のる」 before it; 「のる」 needs 「ボートに」 before it (what you ride takes 「に」); 「いけの」 describes 「ボート」 and goes first: いけの → ボートに → のる → こと. The ★ is 「のる」.\nTrap: Putting 「いけの」 right before 「のる」. Noun ＋ 「の」 needs a noun after it: 「いけの ボート」."
     },
     "wrong": [
       null,

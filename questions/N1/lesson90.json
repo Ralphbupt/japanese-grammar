@@ -20,8 +20,8 @@
       "en": "My phone battery died, so I couldn't contact my family even though I wanted to."
     },
     "why": {
-      "zh": "意向形「連絡しよう」+「にも」+ 同一动词的可能否定「連絡できなかった」：想做却因客观原因做不到。",
-      "en": "Volitional 「連絡しよう」 + 「にも」 + the same verb's negative potential 「連絡できなかった」: wanted to, but couldn't."
+      "zh": "线索：空格后面又出现同一个动词的可能否定「連絡できなかった」，前面的「電池が切れてしまい」是原因。\n规则：意向形（「連絡しよう」「行こう」）＋「にも」＋（多为同一动词的）可能否定＝想做也做不到，原因来自客观情况（这里是手机没电）。\n辨析：「ようが」也接意向形，意思却是“不管……都……”：「何を言われようが気にしない」；「ようにも〜ない」说的是想做的事被客观情况挡住了。",
+      "en": "Clue: After the blank the same verb comes back in the negative potential, 「連絡できなかった」, and 「電池が切れてしまい」 gives the cause.\nRule: Volitional form (「連絡しよう」「行こう」) ＋ 「にも」 ＋ a negative potential (usually of the same verb) = you want to but can't, for an outside reason (here, the dead battery).\nContrast: 「ようが」 also follows the volitional, but means \"no matter whether…\": 「何を言われようが気にしない」. 「ようにも〜ない」 is about an intention blocked by circumstances."
     },
     "wrong": [
       {
@@ -60,8 +60,8 @@
       "en": "I'd forgotten my password, so I couldn't log in to the site even though I tried."
     },
     "why": {
-      "zh": "忘了密码是客观原因，「ログインしようにも」后接可能否定「できなかった」。",
-      "en": "Forgetting the password is the obstacle: 「ログインしようにも」 takes the negative potential 「できなかった」."
+      "zh": "线索：前面已有「ログインしようにも」，忘了密码是客观的阻碍。\n规则：「〜ようにも」后面多接同一动词的可能否定；「ログインする」的可能否定是「ログインできない」，省去重复的「ログイン」就是「できなかった」。后项是客观上做不到，不是“不想”。\n辨析：「しなかった」只说没做，可能是自己不想做；「できなかった」是想做而做不到：「行かなかった」＝没去，「行けなかった」＝去不了。",
+      "en": "Clue: 「ログインしようにも」 is already there, and the forgotten password is an outside obstacle.\nRule: 「〜ようにも」 is usually followed by the same verb's negative potential. For 「ログインする」 that is 「ログインできない」; drop the repeated 「ログイン」 and 「できなかった」 is left. The second half is \"couldn't\", not \"didn't want to\".\nContrast: 「しなかった」 only says it didn't happen, possibly by choice; 「できなかった」 is wanting to but being unable: 「行かなかった」 = didn't go, 「行けなかった」 = couldn't go."
     },
     "wrong": [
       null,
@@ -70,11 +70,11 @@
         "en": "The second half must be an objective \"couldn't\", not \"didn't want to\": ❌「行こうにも行きたくない」."
       },
       {
-        "zh": "「しなかった」只是“没做”，不表示“做不到”，和「うにも」不呼应。",
+        "zh": "「しなかった」只是“没做”，不表示“做不到”，和「ようにも」不呼应。",
         "en": "「しなかった」 just says \"didn't\"; 「うにも」 needs \"couldn't\"."
       },
       {
-        "zh": "「するしかなかった」是“只好做”，与「うにも〜ない」的“想做做不到”相反。",
+        "zh": "「するしかなかった」是“只好做”，与「ようにも〜ない」的“想做做不到”相反。",
         "en": "「するしかなかった」 (had no choice but to) is the opposite of \"wanted to but couldn't\"."
       }
     ]
@@ -105,8 +105,8 @@
       "en": "I want to rent a flat, but without a guarantor I can't sign the contract."
     },
     "why": {
-      "zh": "意向形「借りよう」+「にも」，后面说明做不到的原因「保証人がいなくては契約できない」：借りよう → にも → 保証人が → いなくては。★ 是「借りよう」。",
-      "en": "Volitional 「借りよう」 + 「にも」, then the obstacle 「保証人がいなくては契約できない」: 借りよう → にも → 保証人が → いなくては. The ★ is 「借りよう」."
+      "zh": "线索：选项里有「借りよう」和「にも」，句尾是否定「契約できない」，想到「〜ようにも〜ない」。\n怎么排：「部屋を」的动词是「借りよう」，先接「にも」组成「借りようにも」；后面说做不到的原因：「保証人が」是「いなくては」的主语，「いなくては」再连到「契約できない」。顺序：借りよう → にも → 保証人が → いなくては，★ 是「借りよう」。\n容易错：以为「ようにも」后面要紧跟同一个动词。也可以先说做不到的原因：「謝ろうにも、連絡先がわからない」。",
+      "en": "Clue: The pieces include 「借りよう」 and 「にも」, and the sentence ends in the negative 「契約できない」: think 「〜ようにも〜ない」.\nOrder: 「部屋を」 needs its verb 「借りよう」, which takes 「にも」 to make 「借りようにも」. Then the reason it can't happen: 「保証人が」 is the subject of 「いなくては」, which leads into 「契約できない」: 借りよう → にも → 保証人が → いなくては. The ★ is 「借りよう」.\nTrap: Thinking 「ようにも」 has to be followed straight away by the same verb. It can also be followed by the reason it's impossible: 「謝ろうにも、連絡先がわからない」."
     },
     "wrong": [
       null,
@@ -136,8 +136,8 @@
       "en": "At the start of the mountain path stood an old sign saying \"No dumping of rubbish here\"."
     },
     "why": {
-      "zh": "告示牌上的禁止用文语「べからず」，放在句末：「捨てるべからず」。",
-      "en": "A prohibition on a sign uses the literary 「べからず」 at the end: 「捨てるべからず」."
+      "zh": "线索：空格是告示牌上那句话的结尾，后面直接是「と書かれた」，没有名词。\n规则：辞书形（「捨てる」「入る」）＋「べからず」＝不得……，用于告示、规则、格言，放在句末结束句子：「芝生に入るべからず」。\n辨析：「べからざる」是同一个词的连体形，后面要接名词（「欠くべからざるもの」）；结句用「べからず」，修饰名词用「べからざる」。",
+      "en": "Clue: The blank ends the words on the sign: right after it comes 「と書かれた」, with no noun.\nRule: Dictionary form (「捨てる」「入る」) ＋ 「べからず」 = must not…, used on signs, in rules and sayings, and it ends the sentence: 「芝生に入るべからず」.\nContrast: 「べからざる」 is the attributive form of the same word and needs a noun after it (「欠くべからざるもの」). To end a sentence: 「べからず」; before a noun: 「べからざる」."
     },
     "wrong": [
       null,
@@ -176,8 +176,8 @@
       "en": "Terrorism that involves innocent citizens is an outrage that can never be forgiven."
     },
     "why": {
-      "zh": "修饰名词「暴挙」，用连体形「べからざる」：固定搭配「許すべからざる」（不可饶恕的）。",
-      "en": "Before the noun 「暴挙」 the attributive 「べからざる」 is needed: the set phrase 「許すべからざる」 (unforgivable)."
+      "zh": "线索：空格后面是名词「暴挙」，前面有「決して」，说的是绝不可饶恕。\n规则：修饰名词用「辞书形＋べからざる＋名词」＝不可……的；常见的固定说法有「許すべからざる」「欠くべからざる」「侵すべからざる」。\n辨析：「べき」也能接名词，意思却相反：「許すべき行為」＝应该原谅的行为，「許すべからざる行為」＝不可饶恕的行为。「決して」要求否定，所以用「べからざる」。",
+      "en": "Clue: The blank is followed by the noun 「暴挙」, and 「決して」 earlier says it can never be forgiven.\nRule: Before a noun, use dictionary form ＋ 「べからざる」 ＋ noun = not to be…; the common set phrases are 「許すべからざる」「欠くべからざる」「侵すべからざる」.\nContrast: 「べき」 can also come before a noun, but means the opposite: 「許すべき行為」 = an act that should be forgiven, 「許すべからざる行為」 = an unforgivable act. 「決して」 calls for the negative, so 「べからざる」."
     },
     "wrong": [
       {
@@ -221,8 +221,8 @@
       "en": "This festival has become an indispensable event for local residents."
     },
     "why": {
-      "zh": "「欠くべからざる」修饰名词「行事」，再接「となっている」：欠く → べからざる → 行事と → なっている。★ 是「べからざる」。",
-      "en": "「欠くべからざる」 modifies the noun 「行事」, then 「となっている」: 欠く → べからざる → 行事と → なっている. The ★ is 「べからざる」."
+      "zh": "线索：选项有「欠く」和「べからざる」，是固定说法「欠くべからざる」（不可缺少的）；还有「行事と」「なっている」，想到「〜となっている」。\n怎么排：「欠く＋べからざる」先连成一块；「べからざる」后面要接名词，所以接「行事と」，再由「なっている」结句。顺序：欠く → べからざる → 行事と → なっている，★ 是「べからざる」。\n容易错：把「べからざる」放在句末。它是连体形，只用来修饰名词；能结句的是「べからず」。",
+      "en": "Clue: 「欠く」 and 「べからざる」 make the set phrase 「欠くべからざる」 (indispensable); 「行事と」 and 「なっている」 point to 「〜となっている」.\nOrder: Join 「欠く ＋ べからざる」 first; 「べからざる」 needs a noun after it, so 「行事と」 follows, and 「なっている」 ends the sentence: 欠く → べからざる → 行事と → なっている. The ★ is 「べからざる」.\nTrap: Putting 「べからざる」 at the end. It is attributive and is used only before a noun; the form that ends a sentence is 「べからず」."
     },
     "wrong": [
       null,
@@ -252,8 +252,8 @@
       "en": "If you lose to a rookie like that, you won't keep your place in the starting line-up."
     },
     "why": {
-      "zh": "「Nごとき」不加「の」表示轻视“……之流”，后接助词「に」：「新人ごときに負ける」。",
-      "en": "「Nごとき」 without 「の」 is contemptuous (the likes of …), here with 「に」: 「新人ごときに負ける」."
+      "zh": "线索：空格前是「あんな新人」，语气带轻视；后面是「負ける」，对象要用助词「に」。\n规则：「名词＋ごとき」不加「の」＝……之流、……这种人，说别人带轻视（说自己是谦虚：「私ごとき」）；后面可以直接接助词：「新人ごときに負ける」。\n辨析：「ともあろう者」也评价身份，方向却相反：「教師ともあろう者が」是抬高身份再批评；「新人ごとき」是看低对方：「お前ごときに負けるものか」。",
+      "en": "Clue: Before the blank is 「あんな新人」, said with contempt, and 「負ける」 after it takes 「に」 for the opponent.\nRule: Noun ＋ 「ごとき」 without 「の」 = the likes of…, contemptuous about others (modest about oneself: 「私ごとき」); a particle can follow directly: 「新人ごときに負ける」.\nContrast: 「ともあろう者」 also comments on status, but in the opposite direction: 「教師ともあろう者が」 raises the status and then criticises; 「新人ごとき」 looks down on the person: 「お前ごときに負けるものか」."
     },
     "wrong": [
       {
@@ -292,8 +292,8 @@
       "en": "As history shows, concentrated power eventually breeds corruption."
     },
     "why": {
-      "zh": "「示すごとく」=「示すように」，修饰后面整个句子，用「ごとく」。",
-      "en": "「示すごとく」 = 「示すように」 (as … shows), modifying the whole clause: 「ごとく」."
+      "zh": "线索：空格后面是逗号和一整句「権力の集中はやがて腐敗を生む」，不是名词，也不在句末。\n规则：「辞书形・た形＋ごとく」＝如……那样（＝「ように」），修饰后面的动词或整个句子：「前に述べたごとく」。\n技巧：「ごとし／ごとき／ごとく」对应「ようだ／ような／ように」。先看空格后面：句末→「ごとし」，名词→「ごとき」，动词或句子→「ごとく」。",
+      "en": "Clue: After the blank come a comma and a whole clause, 「権力の集中はやがて腐敗を生む」: no noun, and not the end of the sentence.\nRule: Dictionary form or た-form ＋ 「ごとく」 = as… (= 「ように」), modifying the verb or clause that follows: 「前に述べたごとく」.\nTip: 「ごとし／ごとき／ごとく」 match 「ようだ／ような／ように」. Look at what follows the blank: end of sentence → 「ごとし」, a noun → 「ごとき」, a verb or clause → 「ごとく」."
     },
     "wrong": [
       {
@@ -337,8 +337,8 @@
       "en": "He attended the meeting calmly, as if nothing had happened."
     },
     "why": {
-      "zh": "「何事もなかった」+「かのごとく」（=かのように），与事实相反的“仿佛”：何事も → なかった → かの → ごとく。★ 是「かの」。",
-      "en": "「何事もなかった」 + 「かのごとく」 (= かのように), \"as if\" contrary to fact: 何事も → なかった → かの → ごとく. The ★ is 「かの」."
+      "zh": "线索：选项有「かの」和「ごとく」，是「かのごとく」（＝「かのように」，仿佛……似的）。\n怎么排：「何事も」接否定「なかった」，组成“什么事都没发生”；后面接「かの＋ごとく」，整块修饰「平然と会議に出席していた」。顺序：何事も → なかった → かの → ごとく，★ 是「かの」。\n容易错：把「かの」「ごとく」顺序弄反，或放到「何事も」前面。「かのごとく」接在句子后面，和「なかったかのように」一样。",
+      "en": "Clue: 「かの」 and 「ごとく」 make 「かのごとく」 (= 「かのように」, as if).\nOrder: 「何事も」 takes the negative 「なかった」 (\"nothing had happened\"); 「かの ＋ ごとく」 follows, and the whole chunk modifies 「平然と会議に出席していた」: 何事も → なかった → かの → ごとく. The ★ is 「かの」.\nTrap: Swapping 「かの」 and 「ごとく」, or putting them before 「何事も」. 「かのごとく」 comes after the clause, just like 「なかったかのように」."
     },
     "wrong": [
       null,
@@ -368,8 +368,8 @@
       "en": "It isn't urgent, so you needn't reply today."
     },
     "why": {
-      "zh": "「〜ずともよい」=「〜なくてもいい」，「する」变成「せずとも」。",
-      "en": "「〜ずともよい」 = 「〜なくてもいい」 (needn't); 「する」 becomes 「せずとも」."
+      "zh": "线索：空格后是「よい」，前面「急ぎの用件ではない」说明今天回复并非必要。\n规则：ない形去掉「ない」（「行か」）＋「ずとも」＝即使不……也；「〜ずともよい」＝「〜なくてもいい」。「する」变成「せずとも」（❌「しずとも」）。\n辨析：「ずに」接法相同，表示的却是方式“不……就（做）”：「説明せずに帰った」＝没解释就回去了；后面是「よい」、意思是“不做也行”时用「ずとも」。",
+      "en": "Clue: The blank is followed by 「よい」, and 「急ぎの用件ではない」 says a reply today isn't needed.\nRule: ない-form minus 「ない」 (「行か」) ＋ 「ずとも」 = even without…; 「〜ずともよい」 = 「〜なくてもいい」. 「する」 becomes 「せずとも」 (not 「しずとも」).\nContrast: 「ずに」 attaches the same way but shows manner, \"without doing\": 「説明せずに帰った」 = left without explaining. Before 「よい」, meaning \"it's fine not to\", use 「ずとも」."
     },
     "wrong": [
       {
@@ -408,8 +408,8 @@
       "en": "With ability like his, he'll surely pass even without any special preparation."
     },
     "why": {
-      "zh": "“即使不做……也”是让步，书面说法「ずとも」；「する」变「せずとも」，课文明确 ❌「しずとも」。",
-      "en": "\"Even without doing …\" is concession — written 「ずとも」, with 「する」 → 「せずとも」 (the lesson marks ❌「しずとも」)."
+      "zh": "线索：后半句是「合格は間違いないだろう」：凭他的实力，不做特别准备也能考上，是让步。\n规则：「〜ずとも」＝即使不……也（＝「なくても」）；「対策をする」变成「対策をせずとも」，后面接一般性的判断或推测。\n辨析：「をせずには」接法一样，后面却要接「いられない」「おかない」（「心配せずにはいられない」＝不禁担心）；后面是“肯定能考上”，说得通的是「ずとも」的“不做也……”。",
+      "en": "Clue: The second half is 「合格は間違いないだろう」: with his ability he'll pass even without special preparation, a concession.\nRule: 「〜ずとも」 = even without… (= 「なくても」); 「対策をする」 becomes 「対策をせずとも」, followed by a general judgement or guess.\nContrast: 「をせずには」 attaches the same way but needs 「いられない」 or 「おかない」 after it (「心配せずにはいられない」 = can't help worrying). Before \"he'll surely pass\", what makes sense is 「ずとも」, \"even without\"."
     },
     "wrong": [
       null,
@@ -453,8 +453,8 @@
       "en": "Anyone should understand something this simple without having it spelled out."
     },
     "why": {
-      "zh": "副词「いちいち」修饰「説明する」，「する」变成「せずとも」：いちいち → 説明 → せ → ずとも。★ 是「ずとも」。",
-      "en": "The adverb 「いちいち」 modifies 「説明する」, and 「する」 becomes 「せずとも」: いちいち → 説明 → せ → ずとも. The ★ is 「ずとも」."
+      "zh": "线索：「せ」和「ずとも」分成两块，拼起来是「せずとも」（「する」的书面让步否定）；加上名词「説明」，就是「説明せずとも」。\n怎么排：先把「説明＋せ＋ずとも」拼成“即使不解释”；副词「いちいち」修饰「説明する」，放在最前面。顺序：いちいち → 説明 → せ → ずとも，★ 是「ずとも」。\n容易错：把「いちいち」放到「ずとも」后面。它修饰的是“解释”这个动作，要放在动词前面；「ずとも」后面直接接结论「誰でも分かるはずだ」。",
+      "en": "Clue: 「せ」 and 「ずとも」 are split: together 「せずとも」, the written \"even without\" of 「する」; with the noun 「説明」 that gives 「説明せずとも」.\nOrder: Put 「説明 ＋ せ ＋ ずとも」 together (\"even without explaining\"); the adverb 「いちいち」 modifies 「説明する」 and goes first: いちいち → 説明 → せ → ずとも. The ★ is 「ずとも」.\nTrap: Putting 「いちいち」 after 「ずとも」. It modifies the act of explaining, so it goes before the verb; 「ずとも」 leads straight into the conclusion 「誰でも分かるはずだ」."
     },
     "wrong": [
       null,
@@ -484,8 +484,8 @@
       "en": "On the day he finally opened the shop he'd dreamed of for years, he says he felt as if he could float up to heaven."
     },
     "why": {
-      "zh": "ない形「昇ら」+「ん」+「ばかりの」修饰名词「気持ち」，夸张地表示“几乎要……”。",
-      "en": "ない stem 「昇ら」 + 「んばかりの」 before the noun 「気持ち」: an exaggerated \"almost …\"."
+      "zh": "线索：空格前是「昇ら」（「昇る」的ない形去掉ない），后面是名词「気持ち」；「天にも昇る」是对高兴的夸张描写。\n规则：「ない形去掉ない＋んばかり」＝几乎要……，夸张地描写当时的样子；修饰名词用「んばかりの」：「割れんばかりの拍手」。\n辨析：「んがため」接法完全一样（「勝たんがため」），意思却是“为了……”；这里说的是高兴的程度，不是目的，所以用“几乎要……”的「んばかり」。",
+      "en": "Clue: Before the blank is 「昇ら」 (「昇る」's ない-form minus 「ない」), after it the noun 「気持ち」; 「天にも昇る」 is an exaggerated picture of joy.\nRule: ない-form minus 「ない」 ＋ 「んばかり」 = almost…, an exaggerated description of how things looked; before a noun it is 「んばかりの」: 「割れんばかりの拍手」.\nContrast: 「んがため」 attaches in exactly the same way (「勝たんがため」) but means \"in order to\". The sentence is about how happy he was, not a purpose, so 「んばかり」 (almost…) fits."
     },
     "wrong": [
       null,
@@ -524,8 +524,8 @@
       "en": "Facing the loss of the contract, the sales rep bowed to the client as if about to get down on his knees."
     },
     "why": {
-      "zh": "「土下座する」接「んばかり」时，「する」变成「せ」：「土下座せんばかりの勢い」。",
-      "en": "With 「んばかり」, 「する」 becomes 「せ」: 「土下座せんばかりの勢い」."
+      "zh": "线索：空格前是「する」动词的名词部分「土下座」，后面是「勢い」：低头的样子几乎像要下跪。\n规则：「んばかり」接ない形去掉ない；「する」在这里用文语形「せ」，所以是「土下座せんばかりの勢い」（几乎要下跪的架势）。\n技巧：下面这些文语句型里，「する」都变成「せ」：「せずとも」「せんばかり」「せんがため」「せざるを得ない」。这类句型前面出现「し／さ／せ」三选一时，选「せ」。",
+      "en": "Clue: Before the blank is 「土下座」, the noun part of a する verb, and after it 「勢い」: he bowed almost as if about to kneel.\nRule: 「んばかり」 follows the ない-form minus 「ない」; here 「する」 takes the literary form 「せ」, giving 「土下座せんばかりの勢い」.\nTip: In these literary patterns 「する」 turns into 「せ」: 「せずとも」「せんばかり」「せんがため」「せざるを得ない」. When the options offer 「し／さ／せ」 in front of such a pattern, pick 「せ」."
     },
     "wrong": [
       {
@@ -537,8 +537,8 @@
         "en": "「するばかり」 means \"does nothing but\", not \"almost\"."
       },
       {
-        "zh": "「さ」是使役「させる」的词干，「さんばかり」不成立。",
-        "en": "「さ」 belongs to the causative; 「さんばかり」 isn't a form."
+        "zh": "「さ」是「する」接「せる」「れる」时的形（「させる」「される」），不接「んばかり」，「さんばかり」不成立。",
+        "en": "「さ」 is the shape 「する」 takes before 「せる」「れる」 (「させる」「される」); it doesn't go before 「んばかり」, so 「さんばかり」 isn't a form."
       },
       null
     ]
@@ -569,8 +569,8 @@
       "en": "When the performance ended, the hall was filled with thunderous applause."
     },
     "why": {
-      "zh": "「割れんばかりの」修饰「拍手」，「拍手に包まれた」：割れ → んばかりの → 拍手に → 包まれた。★ 是「割れ」。",
-      "en": "「割れんばかりの」 modifies 「拍手」, then 「拍手に包まれた」: 割れ → んばかりの → 拍手に → 包まれた. The ★ is 「割れ」."
+      "zh": "线索：选项有「割れ」和「んばかりの」，是固定说法「割れんばかりの拍手」（掌声大得像要把大厅震裂）；「拍手に」又和「包まれた」搭配。\n怎么排：「割れ＋んばかりの」先连好；「の」后面接名词「拍手に」，最后用「包まれた」结句（「〜に包まれる」）。顺序：割れ → んばかりの → 拍手に → 包まれた，★ 是「割れ」。\n容易错：把「拍手に」放在「割れ」前面。「割れんばかりの」是修饰「拍手」的，修饰语要放在名词前面。",
+      "en": "Clue: 「割れ」 and 「んばかりの」 make the set phrase 「割れんばかりの拍手」 (applause loud enough to split the hall); 「拍手に」 goes with 「包まれた」.\nOrder: Join 「割れ ＋ んばかりの」 first; 「の」 takes the noun 「拍手に」, and 「包まれた」 ends the sentence (「〜に包まれる」): 割れ → んばかりの → 拍手に → 包まれた. The ★ is 「割れ」.\nTrap: Putting 「拍手に」 before 「割れ」. 「割れんばかりの」 modifies 「拍手」, and a modifier comes before its noun."
     },
     "wrong": [
       null,
@@ -600,8 +600,8 @@
       "en": "We regret to announce that this shop will close as of the end of March this year."
     },
     "why": {
-      "zh": "郑重的告示中表示结束的时间界限，用「をもって」：「末日をもって閉店」。",
-      "en": "In a formal notice, the end date is marked with 「をもって」: 「末日をもって閉店」 (closing as of)."
+      "zh": "线索：空格前是日期「本年三月末日」，后面是「閉店いたします」，是郑重的告示。\n规则：「名词＋をもって」可以表示时间的界限，“于……（结束）、截至……”，多和「閉店」「終了」「退職」这类表示结束的词连用：「本日をもって終了いたします」。\n辨析：「にあたって」也接表示时机的词，意思却是“在……之际”，后面多是开始某事时的准备或致辞（「開店にあたって」）；表示“到这一天为止”用「をもって」。",
+      "en": "Clue: Before the blank is a date, 「本年三月末日」, and after it 「閉店いたします」: a formal notice.\nRule: Noun ＋ 「をもって」 can mark a time limit, \"as of / at the close of\", usually with words for ending such as 「閉店」「終了」「退職」: 「本日をもって終了いたします」.\nContrast: 「にあたって」 also follows a word for an occasion, but means \"on the occasion of\", usually before preparations or a speech when something starts (「開店にあたって」). For \"up to and ending on this day\", use 「をもって」."
     },
     "wrong": [
       {
@@ -640,8 +640,8 @@
       "en": "Even with the latest medical technology, a complete cure for this disease is still difficult."
     },
     "why": {
-      "zh": "后项是否定、困难的「まだ難しい」，用「をもってしても」（即使凭借……也不能）。",
-      "en": "The result 「まだ難しい」 is negative, so 「をもってしても」 (even with …, still not)."
+      "zh": "线索：后半句是「まだ難しい」：连“最新医疗技术”这么强的手段也做不到。\n规则：「名词＋をもってしても」＝即使凭借……也（不行），后项是做不到或困难的事；前面多是很强的手段、能力。\n辨析：「をもってすれば」方向相反：「彼の実力をもってすれば、優勝も夢ではない」＝凭他的实力就能做到。后项是“能”用「すれば」，是“还是不行”用「しても」。",
+      "en": "Clue: The second half is 「まだ難しい」: even a means as strong as the latest medical technology isn't enough.\nRule: Noun ＋ 「をもってしても」 = even with… (it still won't work); the second half is something impossible or difficult, and the noun is usually a powerful means or ability.\nContrast: 「をもってすれば」 points the other way: 「彼の実力をもってすれば、優勝も夢ではない」 = with his ability, it can be done. \"Can\" → 「すれば」; \"still can't\" → 「しても」."
     },
     "wrong": [
       {
@@ -685,8 +685,8 @@
       "en": "After a long stay in hospital, I learned first-hand how precious health is."
     },
     "why": {
-      "zh": "固定说法「身をもって」（亲身）修饰「思い知る」，最后「ことになった」：身 → をもって → 思い知る → ことになった。★ 是「をもって」。",
-      "en": "The set phrase 「身をもって」 (first-hand) modifies 「思い知る」, then 「ことになった」: 身 → をもって → 思い知る → ことになった. The ★ is 「をもって」."
+      "zh": "线索：选项有「身」和「をもって」，是固定说法「身をもって」（亲身）；「思い知る」又和「ことになった」相连。\n怎么排：「身＋をもって」先连成一块，修饰动词「思い知る」；「思い知る」再接「ことになった」结句。顺序：身 → をもって → 思い知る → ことになった，★ 是「をもって」。\n容易错：把「身をもって」放到「思い知る」后面。它说明“怎样体会到的”，要放在动词前面；「ことになった」接在动词辞书形后面。",
+      "en": "Clue: 「身」 and 「をもって」 make the set phrase 「身をもって」 (first-hand); 「思い知る」 goes with 「ことになった」.\nOrder: Join 「身 ＋ をもって」 first; it modifies the verb 「思い知る」, which then takes 「ことになった」 to end the sentence: 身 → をもって → 思い知る → ことになった. The ★ is 「をもって」.\nTrap: Putting 「身をもって」 after 「思い知る」. It says how the lesson was learned, so it goes before the verb; 「ことになった」 follows the dictionary form of the verb."
     },
     "wrong": [
       null,

@@ -97,6 +97,10 @@ Vocabulary ranges: N4 word ids `n4-mg-1xx` kanji, `2xx` hyouki, `3xx` bunmyaku, 
 - N3 / N2 / N1 (and N4 where useful): zh `辨析：` / en `Contrast: ` — how the answer differs in meaning or nuance from the distractor a learner is most likely to pick, ideally with a short contrasting pair (「〜はずだ」＝根据推断应该…；「〜わけだ」＝由前面的事实自然得出…).
 About 60–120 Chinese characters at N5/N4, up to ~180 at N3 and above (排序 up to ~150 / ~200). No invented rules: if unsure, leave it out. `wrong[i]`: one sentence per distractor saying *why it's wrong here* (meaning / connection / doesn't fit the context) — not just "wrong". For vocabulary, a pair worth learning together can go in `why` (でんき：つける／けす). `tr`: natural translation of `full`. Chinese is simplified, no romaji anywhere. Japanese inside explanations goes in 「」.
 
+Reading and listening `why`: zh `依据：` / en `Evidence: ` — the sentence of the text or the line of the dialogue that settles it, quoted in Japanese in 「」 (for listening, who says it); zh `推理：` / en `Reasoning: ` — how that leads to the answer, especially when the text paraphrases the option or the speaker corrects an earlier statement (「でも」「やっぱり」…). Optional `容易错：` / `Trap: ` for the pattern of trap the item uses. About 60–150 characters.
+
+Vocabulary `why` (文脈規定・言い換え類義・用法・語形成; 漢字読み / 表記 keep their short form): zh `线索：` / en `Clue: ` — what in the sentence decides it; zh `词义：` / en `Meaning: ` — the word's meaning and one or two real collocations (「〜を 引き受ける」); add `辨析：` / `Contrast: ` when the best distractor is a near-synonym. About 50–120 characters.
+
 Example (排序, n5-l07-006):
 ```
 线索：看到「こと」「が」「あります」，先想到句型「〜たことがある」（做过……）。
