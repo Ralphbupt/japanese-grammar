@@ -175,7 +175,12 @@
     }
     return arrange(pick);
   }
-  function subset(pickFn, n) { return arrange(freshFirst(ALL.filter(pickFn)).slice(0, n)); }
+  // The last few new questions of a type / lesson make a short set of their
+  // own instead of being padded with old ones; once none are new, the oldest.
+  function subset(pickFn, n) {
+    var list = freshFirst(ALL.filter(pickFn)), fresh = list.filter(function (q) { return !seen(q.id); }).length;
+    return arrange(list.slice(0, fresh && fresh < n ? fresh : n));
+  }
 
   // ─── Recording an answer ───
   function record(q, choice, guess, ms) {
