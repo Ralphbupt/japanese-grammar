@@ -215,7 +215,8 @@
   }
   function bar(a) {
     if (!a) return '<span class="q-acc q-muted">—</span>';
-    return '<span class="q-acc' + (a.pct < 60 ? ' q-acc-low' : '') + '"><span class="q-bar"><span style="width:' + a.pct + '%"></span></span>' + a.pct + '%</span>';
+    // The % is the last RECENT answers, not all of them — say so, or it reads as overall accuracy.
+    return '<span class="q-acc' + (a.pct < 60 ? ' q-acc-low' : '') + '" title="' + t('最近 ' + a.n + ' 次作答的正确率', 'Accuracy over the last ' + a.n + ' answers') + '"><small class="q-acc-n">' + t('近 ' + a.n + ' 题', 'last ' + a.n) + '</small><span class="q-bar"><span style="width:' + a.pct + '%"></span></span>' + a.pct + '%</span>';
   }
   function home() {
     view(true);
@@ -490,6 +491,25 @@
     track('quiz_listen', { level: LEVEL });
   }
   function okjOf(q, i) { return q.okj && q.okj[i] ? '<span class="q-okj">（' + q.okj[i] + '）</span>' : ''; }
+  // Under the explanation: the question's grammar point with its 接続 lines
+  // and an example, taken from the lesson at build time (refs[].conj / .ex),
+  // and a link straight to that section; other refs stay plain links.
+  function pointLink(p, label) { return '<a href="' + LESSON_BASE + p.lesson + '/#' + encodeURI(p.slug) + '" target="_blank" rel="noopener">' + label + '</a>'; }
+  function pointsHtml(q) {
+    var refs = (q.refs || []).filter(function (r) { return D.refs[r]; });
+    var main = refs.filter(function (r) { var p = D.refs[r]; return !/#vocab$/.test(r) && (p.conj || p.ex); })[0];
+    var h = '';
+    if (main) {
+      var p = D.refs[main];
+      h += '<div class="q-point"><div class="q-point-h"><b>📖 ' + esc(EN ? p.en : p.zh) + '</b>' + pointLink(p, t('回课文看这个语法 →', 'Read it in the lesson →')) + '</div>' +
+        (p.conj ? '<div class="q-point-row"><span class="q-point-k">' + t('接续', 'Form') + '</span><span>' + (EN ? p.conj.en : p.conj.zh).map(esc).join('<br>') + '</span></div>' : '') +
+        (p.ex ? '<div class="q-point-row"><span class="q-point-k">' + t('例句', 'Example') + '</span><span><span lang="ja">' + p.ex.ja + '</span>' + ((EN ? p.ex.en : p.ex.zh) ? '<br><span class="q-muted">' + esc(EN ? p.ex.en : p.ex.zh) + '</span>' : '') + '</span></div>' : '') +
+        '</div>';
+    }
+    var rest = refs.filter(function (r) { return r !== main; });
+    if (rest.length) h += '<p class="q-refs">' + rest.map(function (r) { var p = D.refs[r]; return '📖 ' + pointLink(p, esc(EN ? p.en : p.zh)); }).join(' · ') + '</p>';
+    return h;
+  }
   function kjHtml(q, passages) {
     var say = q.sa ? ' <button class="q-say" data-act="say" data-k="' + q.sa + '" aria-label="' + t('听这句', 'Play this sentence') + '" title="' + t('听这句', 'Play this sentence') + '">🔊</button>' : '';
     var h = q.kj ? '<p class="q-full q-kj" lang="ja"><span class="q-kj-label">' + t('汉字写法', 'In kanji') + '</span>' + q.kj + say + '</p>' : q.full ? '<p class="q-full" lang="ja">' + q.full + say + '</p>' : '';
@@ -685,10 +705,7 @@
     h += kjHtml(q, D.passages);
     if (q.tr) h += '<p class="q-muted">' + esc(bi(q.tr)) + '</p>';
     if (q.passage && !isCk(q)) h += '<details class="q-tr"><summary>' + t('全文翻译', 'Translation of the text') + '</summary><p>' + esc(bi(D.passages[q.passage].tr)) + '</p></details>';
-    h += '<p class="q-refs">' + (q.refs || []).map(function (r) {
-      var p = D.refs[r];
-      return '📖 <a href="' + LESSON_BASE + p.lesson + '/#' + encodeURI(p.slug) + '" target="_blank" rel="noopener">' + esc(EN ? p.en : p.zh) + '</a>';
-    }).join(' · ') + '</p>';
+    h += pointsHtml(q);
     if (!aiFirst) h += aiBtn(false);
     h += '<details class="q-report"><summary>' + t('这题有问题？', 'Something wrong with this question?') + '</summary>' +
       [['answer', '答案不对', 'The answer is wrong'], ['two', '有两个对的', 'Two options work'], ['stem', '题目不通顺', 'The question reads badly'], ['other', '其他', 'Something else']]
@@ -719,12 +736,11 @@
     else h += '<p><button class="q-btn q-btn-primary" data-act="review"' + (due().length ? '' : ' data-early="1"') + '>' + t('开始复习', 'Start reviewing') + '</button></p><ul class="q-sumlist">' + list.map(function (q) {
       var a = S.answers[q.id] || [], last = a[a.length - 1], days = Math.ceil((S.review[q.id].due - n) / DAY);
       var mine = !last ? '' : last.ok ? t('猜对', 'Guessed right') : last.c == null ? t('不会', 'Didn’t know') : t('你选 ', 'You: ') + '<span lang="ja">' + q.options[last.c] + '</span>';
-      var refs = (q.refs || []).map(function (r) { var p = D.refs[r]; return p ? '📖 <a href="' + LESSON_BASE + p.lesson + '/#' + encodeURI(p.slug) + '" target="_blank" rel="noopener">' + esc(EN ? p.en : p.zh) + '</a>' : ''; }).join(' · ');
       return '<li><div lang="ja" class="q-sumstem">' + sumLabel(q) + '</div>' +
         '<div class="q-muted">' + (mine ? mine + ' · ' : '') + t('答案 ', 'Answer: ') + '<span lang="ja">' + q.options[q.answer] + okjOf(q, q.answer) + '</span> · ' +
         (days <= 0 ? t('今天复习', 'due today') : days + t(' 天后复习', days === 1 ? ' day to go' : ' days to go')) + '</div>' +
         '<details class="q-rl-more"><summary>' + t('解析', 'Explanation') + '</summary>' + (isCk(q) ? ckPlayer(q) + ckScript(q) : '') + '<p>' + esc(bi(q.why)) + '</p>' + kjHtml(q, D.passages) + (q.tr ? '<p class="q-muted">' + esc(bi(q.tr)) + '</p>' : '') +
-        (refs ? '<p class="q-refs">' + refs + '</p>' : '') + '<button class="q-btn" data-act="unreview" data-k="' + q.id + '">' + t('已经会了，移出错题本', 'I’ve got it — remove') + '</button></details></li>';
+        pointsHtml(q) + '<button class="q-btn" data-act="unreview" data-k="' + q.id + '">' + t('已经会了，移出错题本', 'I’ve got it — remove') + '</button></details></li>';
     }).join('') + '</ul>';
     app.innerHTML = h + '</div>';
     toTop();
