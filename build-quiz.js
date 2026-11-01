@@ -447,7 +447,7 @@ function validate(level, { qs, passages }, points, mock) {
       const o = q.order;
       if (!Array.isArray(o) || o.length !== 4 || [...o].sort().join() !== "0,1,2,3") err("order must be a permutation of 0–3");
       if ("answer" in q) err("narabe takes `order`, not `answer`");
-      else if (Array.isArray(o) && o.length === 4 && typeof q.full === "string" && !q.full.replace(/\s/g, "").includes(o.map((i) => q.options[i]).join("").replace(/\s/g, ""))) err("options in `order` don't spell out a part of `full`");
+      else if (Array.isArray(o) && o.length === 4 && typeof q.full === "string" && !q.full.replace(/[\s、]/g, "").includes(o.map((i) => q.options[i]).join("").replace(/[\s、]/g, ""))) err("options in `order` don't spell out a part of `full`");   // a 、 in the stem between slots is fine
       continue;
     }
     if (!Number.isInteger(q.answer) || q.answer < 0 || q.answer > 3) { err("answer must be 0–3"); continue; }
