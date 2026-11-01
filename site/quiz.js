@@ -621,7 +621,7 @@
     Promise.all((q.refs || []).filter(function (r) { return !/#vocab$/.test(r); }).slice(0, 2).map(refText)).then(function (secs) {
       secs = secs.filter(Boolean);
       if (secs.length) L.push(t('【对应课文】', '[Lesson section]') + '\n' + secs.join('\n---\n'));
-      window.jpAI.explain(L.join('\n\n'), prompt);
+      window.jpAI.explain(L.join('\n\n'), prompt, q.id);
     });
   }
 
