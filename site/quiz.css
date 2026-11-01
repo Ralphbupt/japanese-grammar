@@ -32,6 +32,7 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-row small { color: var(--text-muted); font-weight: 400; }
 .q-acc { display: flex; align-items: center; gap: .4rem; justify-content: flex-end; font-size: .88em; font-variant-numeric: tabular-nums; }
 .q-acc-low { color: var(--q-bad); }
+.q-acc-n { color: var(--text-muted); font-size: .85em; white-space: nowrap; }
 .q-bar { display: inline-block; width: 3.5rem; height: 6px; border-radius: 3px; background: var(--border); overflow: hidden; }
 .q-bar span { display: block; height: 100%; background: var(--q-ok); }
 .q-acc-low .q-bar span { background: var(--q-bad); }
@@ -299,3 +300,10 @@ body.quiz-busy .quiz-about { display: none; }
 .q-sheet-row > .q-ck-mark { display: inline-flex; align-items: center; gap: .2rem; width: auto; margin-right: .7rem; font-size: 1rem; }
 .q-ck-mark small { color: var(--text-muted); margin-right: .1rem; }
 .q-cell:disabled { opacity: .4; cursor: default; }
+
+/* Grammar point under the explanation: 接続 + example from the lesson. */
+.q-point { margin: .9rem 0 .4rem; padding: .7rem .9rem; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-2); font-size: .95em; }
+.q-point-h { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .3rem .8rem; margin-bottom: .45rem; }
+.q-point-h a { font-size: .9em; white-space: nowrap; }
+.q-point-row { display: grid; grid-template-columns: 2.6em 1fr; gap: .6rem; margin-top: .3rem; line-height: 1.7; }
+.q-point-k { color: var(--text-muted); font-size: .88em; padding-top: .1em; }

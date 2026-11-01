@@ -228,11 +228,44 @@ const QUIZ_RUBY_FIXES = [
   [new RegExp("(を\\s*)" + RX("書", "が") + "(?=き)", "g"), "$1" + R("書", "か")],       // 名前を書きさえすれば
   [new RegExp("(" + RX("洗濯", "せんたく") + ")" + RX("物", "ぶつ"), "g"), "$1" + R("物", "もの")],
   [new RegExp("(" + RX("何", "なに") + ")" + RX("色", "しょく"), "g"), "$1" + R("色", "いろ")],
+  // 3階 / 三階 / 何階 are さんがい / なんがい; kuroshiro reads the counter alone as かい.
+  [new RegExp("([3３三]|" + RX("何", "なん") + "|" + RX("何", "なに") + ")" + RX("階", "かい"), "g"), "$1" + R("階", "がい")],
   [new RegExp("(" + RX("直接", "ちょくせつ") + ")" + RX("話", "ばなし"), "g"), "$1" + R("話", "はなし")],
 ];
 const WEEKDAY_READING = { 月: "げつ", 火: "か", 水: "すい", 木: "もく", 金: "きん", 土: "ど", 日: "にち" };
 
-// Grammar points per lesson from the markdown: { lesson05: { title, 1: {zh, en, slug}, …, vocab } }
+// The 接続 lines and the first example of the grammar point whose heading
+// ends at `from`, for the box under a practice question's explanation:
+// { conj: { zh: [lines], en: [lines] }, ex: { zh, en } }. Lists and plain
+// lines only, notes (※) and tables left out, at most 4 lines.
+function pointSummary(md, from) {
+  const end = md.slice(from).search(/^## /m);
+  const sec = md.slice(from, end < 0 ? undefined : from + end);
+  const block = (sub, lang) => {
+    const m = sec.match(new RegExp("^### " + sub + "[^\\n]*\\n([\\s\\S]*?)(?=^### |(?![\\s\\S]))", "m"));
+    const b = m && m[1].match(new RegExp(":::" + lang + "\\s*\\n([\\s\\S]*?)\\n:::"));
+    return b ? b[1].split("\n").map((l) => l.trim()) : [];
+  };
+  const clean = (l) => l.replace(/\*\*/g, "").replace(/\s+/g, " ").trim();
+  const conjLines = (ls) => {
+    const out = [];
+    for (const l of ls) {
+      if (!l) { if (out.length) break; continue; }
+      if (/^[※|>]/.test(l) || /^\d+\.\s/.test(l)) break;
+      out.push(clean(l.replace(/^[-*]\s+/, "")));
+    }
+    return out.slice(0, 4);
+  };
+  const firstEx = (ls) => { const l = ls.find((x) => /^\d+\.\s/.test(x)); return l ? clean(l.replace(/^\d+\.\s*/, "")) : ""; };
+  const out = {};
+  const cz = conjLines(block("接[続续]", "zh")), ce = conjLines(block("接[続续]", "en"));
+  if (cz.length) out.conj = { zh: cz, en: ce.length ? ce : cz };
+  const ez = firstEx(block("例句", "zh")), ee = firstEx(block("例句", "en"));
+  if (ez) out.ex = { zh: ez, en: ee || ez };
+  return out;
+}
+
+// Grammar points per lesson from the markdown: { lesson05: { title, 1: {zh, en, slug, conj?, ex?}, …, vocab } }
 function lessonPoints(level) {
   const dir = path.join(ROOT, "grammar", level);
   const out = {};
@@ -247,7 +280,7 @@ function lessonPoints(level) {
     points.title = { zh: t1zh.replace(/^Lesson\s*\d+\s*[–-]\s*/, ""), en: (t1en || t1zh).replace(/^Lesson\s*\d+\s*[–-]\s*/, "") };
     for (const h of md.matchAll(/^## (\d+)\.\s*(.+)$/gm)) {
       const [zh, en] = h[2].split("||").map((s) => s.trim());
-      points[h[1]] = { zh, en: en ? en.replace(/^\d+\.\s*/, "") : zh, slug: `${h[1]}._${zh}`.replace(/[\s　]+/g, "_").replace(/[<>"'&]/g, "") };
+      points[h[1]] = { zh, en: en ? en.replace(/^\d+\.\s*/, "") : zh, slug: `${h[1]}._${zh}`.replace(/[\s　]+/g, "_").replace(/[<>"'&]/g, ""), ...pointSummary(md, h.index + h[0].length) };
     }
     if (/^## 本课单词表/m.test(md)) points.vocab = { zh: "本课单词表", en: "Vocabulary", slug: "本课单词表" };
     out[m[1]] = points;
@@ -561,6 +594,15 @@ async function bundleLevel(level, ruby, mock) {
     const pr = rubyMode(level);
     const au = passageAudio(p, blanks[p.id] || {});
     passages[p.id] = { type: p.type, ...(p.intro ? { intro: await render(p.intro, pr) } : {}), html: await render(p.passage, pr), tr: p.tr, ...(p.kj ? { kj: await render(p.kj, true) } : {}), ...(au ? { au } : {}) };
+  }
+  // The example under a question's explanation: Japanese with furigana, the
+  // translation (written in the lesson as a trailing （…）/(…)) apart.
+  for (const v of Object.values(refsUsed)) {
+    if (!v.ex || v.ex.ja) continue;
+    const tail = (s, rx) => { const m = s.match(rx); return m ? [m[1].trim(), m[2].trim()] : [s, ""]; };
+    const [ja, zh] = tail(v.ex.zh, /^(.*?)（([^（）]*)）\s*$/);
+    const en = tail(v.ex.en, /^(.*?)\s*\((.*)\)\s*$/)[1];
+    v.ex = { ja: await render(ja, rubyMode(level)), zh, en };
   }
   const used = new Set(out.map((q) => q.type));
   const types = {};
