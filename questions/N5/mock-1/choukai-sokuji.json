@@ -38,8 +38,8 @@
    }
   },
   "why": {
-   "zh": "对方送东西给你，收下时道谢：「ありがとう ございます」。",
-   "en": "Someone is giving you something, so you thank them: 「ありがとう ございます」."
+   "zh": "依据：女的说：「これ、京都の おかしです。どうぞ。」\n推理：「どうぞ」是在把点心送给男的，收到东西的一方要道谢：「わあ、ありがとう ございます」。\n容易错：立场反了——「どう いたしまして」「どうぞ どうぞ」都是送东西的一方说的。",
+   "en": "Evidence: The woman says: 「これ、京都の おかしです。どうぞ。」\nReasoning: With 「どうぞ」 she is giving him the sweets, and the one receiving says thank you: 「わあ、ありがとう ございます」.\nTrap: reversed roles — 「どう いたしまして」 and 「どうぞ どうぞ」 belong to the giver."
   },
   "wrong": [
    null,
@@ -96,8 +96,8 @@
    }
   },
   "why": {
-   "zh": "初次见面对方自我介绍后，也报上自己的名字，说「よろしく」。",
-   "en": "When someone introduces themselves, you give your own name and 「よろしく」 back."
+   "zh": "依据：男的说：「はじめまして。田中です。どうぞ よろしく。」\n推理：初次见面对方报了名字，女的也要报上自己的名字，再回一句「どうぞ よろしく」。\n容易错：照搬对方的名字；「どう いたしまして」是回应道谢的。",
+   "en": "Evidence: The man says: 「はじめまして。田中です。どうぞ よろしく。」\nReasoning: Meeting for the first time, he gives his name, so she gives hers and returns 「どうぞ よろしく」.\nTrap: echoing his name; 「どう いたしまして」 answers thanks."
   },
   "wrong": [
    {
@@ -154,8 +154,8 @@
    }
   },
   "why": {
-   "zh": "「だれの」问的是谁的东西，回答要说出主人：「山田さんのです」。",
-   "en": "「だれの」 asks whose it is, so you name the owner: 「山田さんのです」."
+   "zh": "依据：女的问：「だれのですか。」\n推理：「だれの」问的是东西属于谁，要回答主人的名字加「の」：「山田さんのです」。\n容易错：抓错疑问词——颜色、在哪儿买的都不是「だれの」的答案。",
+   "en": "Evidence: The woman asks: 「だれのですか。」\nReasoning: 「だれの」 asks who it belongs to, so the reply is the owner's name plus 「の」: 「山田さんのです」.\nTrap: the wrong question word — the colour or where it was bought don't answer 「だれの」."
   },
   "wrong": [
    {
@@ -212,8 +212,8 @@
    }
   },
   "why": {
-   "zh": "「どうでしたか」问的是昨天的感想，用过去式回答：「にぎやかでした」。",
-   "en": "「どうでしたか」 asks how yesterday's party was; answer with an impression in the past: 「にぎやかでした」."
+   "zh": "依据：男的问：「きのうの パーティーは どうでしたか。」\n推理：「どうでしたか」问的是感想，而且「きのう」是过去，所以要用过去式说感受：「とても にぎやかでした」。\n容易错：时态不对——说明天的打算；回答几点开始，答非所问。",
+   "en": "Evidence: The man asks: 「きのうの パーティーは どうでしたか。」\nReasoning: 「どうでしたか」 asks for an impression, and 「きのう」 is past, so she gives one in the past: 「とても にぎやかでした」.\nTrap: wrong tense — talking about tomorrow; giving the start time instead."
   },
   "wrong": [
    {
@@ -270,8 +270,8 @@
    }
   },
   "why": {
-   "zh": "「来ませんか」是邀请，接受时说「ええ、ぜひ 行きます」。",
-   "en": "「来ませんか」 is an invitation; 「ええ、ぜひ 行きます」 accepts it."
+   "zh": "依据：女的说：「山田さんも 来ませんか。」\n推理：「〜ませんか」是邀请男的来家里的聚会，接受邀请说「ええ、ぜひ 行きます」，被邀请的人用「行く」。\n容易错：立场反了——「どうぞ 来て ください」是邀请人的话；「きのう しました」时态不对。",
+   "en": "Evidence: The woman says: 「山田さんも 来ませんか。」\nReasoning: 「〜ませんか」 invites him to her party; accepting is 「ええ、ぜひ 行きます」, with the guest using 「行く」.\nTrap: reversed roles — 「どうぞ 来て ください」 is the host's line; 「きのう しました」 has the wrong tense."
   },
   "wrong": [
    null,
@@ -329,8 +329,8 @@
    }
   },
   "why": {
-   "zh": "「時間 ありますか」问的是有没有空，有空就说「はい、何ですか」。",
-   "en": "「時間 ありますか」 asks whether you're free, not the time; 「はい、何ですか」 says yes and asks what's up."
+   "zh": "依据：男的问：「佐藤さん、いま ちょっと 時間 ありますか。」\n推理：「時間 ありますか」问的是现在有没有空，后面通常要拜托事情。有空就回答「はい」，再问「何ですか」（什么事）。\n容易错：把「時間」听成问几点；照搬「時間」。",
+   "en": "Evidence: The man asks: 「佐藤さん、いま ちょっと 時間 ありますか。」\nReasoning: 「時間 ありますか」 asks whether she's free now, usually before asking a favour. She says 「はい」 and asks 「何ですか」 — what is it?\nTrap: hearing 「時間」 as \"what time\"; echoing 「時間」."
   },
   "wrong": [
    {

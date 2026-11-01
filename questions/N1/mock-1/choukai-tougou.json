@@ -101,8 +101,8 @@
    }
   },
   "why": {
-   "zh": "直销点原本因为没人去拜托农户被搁置；年轻店主说老家的农协卡车顺路，可以请父亲问，理事长认为不用挨家拜托、平日也有客人，就不坚持咨询处了，准备按这个报给市里。",
-   "en": "The stand was stalled because no one could go round the farms; the young shopkeeper's family co-op truck passes by anyway, which solves that, so the chair drops the information office and plans to submit the stand."
+   "zh": "依据：理事长说：「平日もお客さんが来るなら、案内所にこだわることもないか。」最后说：「話がまとまりそうなら、それで市に出しましょう。」\n推理：理事长最初想做观光咨询处，但男店主指出游客只周末来。直销点原本卡在「誰が頼んで回るのか」；年轻店主说老家农协的卡车每天早上顺路，可以请父亲问。这样「一軒ずつ頼んで回らなくて済む」，平日也有客人，理事长就不再坚持咨询处。\n容易错：最初提出的咨询处被放弃，只留下放宣传册；别因为直销点一度卡住就把它排除，它后来又被重新采纳。",
+   "en": "Evidence: The chair says: 「平日もお客さんが来るなら、案内所にこだわることもないか。」 and finally: 「話がまとまりそうなら、それで市に出しましょう。」\nReasoning: The chair first wants a tourist office, but the shopkeeper notes tourists come only at weekends. The vegetable stand was stuck on 「誰が頼んで回るのか」; then the young shopkeeper says her family's co-op truck passes every morning and she can ask her father. That means 「一軒ずつ頼んで回らなくて済む」, and with weekday customers too, the chair drops the office idea.\nTrap: the first proposal, the office, is given up apart from some leaflets; ruling out the vegetable stand because it stalled at first — it is revived later."
   },
   "wrong": [
    {
@@ -232,8 +232,8 @@
    }
   },
   "why": {
-   "zh": "总务说新人需要每天身边有人可问；部长由此想到为难的只是新人，于是回到最初的居家方案并加以修改：只让新人和指导者开始时每天来，其他人照旧居家，大家赞同。",
-   "en": "HR says new staff need someone beside them daily; the head realises only newcomers struggled, so he revives his remote plan with a change — just new staff and mentors come in daily at first — and the others agree."
+   "zh": "依据：部长说：「新人と、その面倒を見る何人かだけ、最初のうちは毎日来てもらう。あとはこれまでどおり家でいい。」\n推理：部长想全员居家，总务主张每天上班，二年级员工提议每周三天统一上班；但部长说那样办公室缩不了，总务说对新人也不够。部长用「待てよ」转念：为难的只是今年的新人。于是只让新人和指导者每天来，其他人照旧在家，办公室三分之一就够。\n容易错：讨论中被否定的方案（每天上班、每周三天统一）。",
+   "en": "Evidence: The department head says: 「新人と、その面倒を見る何人かだけ、最初のうちは毎日来てもらう。あとはこれまでどおり家でいい。」\nReasoning: He wants everyone remote, HR wants daily attendance, and the second-year proposes three common office days — but he says the office couldn't shrink, and HR says it isn't enough for newcomers. With 「待てよ」 he rethinks: only this year's new staff struggled. So only they and their mentors come in daily; the rest stay home, and a third of the office is enough.\nTrap: the plans rejected along the way (daily attendance, three common days)."
   },
   "wrong": [
    null,
@@ -300,8 +300,8 @@
     "question": "質問1：男の人は、どのプランに参加しますか。",
     "answer": 3,
     "why": {
-     "zh": "钓鱼早上六点出发，他想早上睡懒觉；荞麦面要站着出力，他担心腰；晚上的观星可以当作「夕飯のあとの散歩がてら」。",
-     "en": "Fishing starts at six and he wants lazy mornings; soba means standing and effort, bad for his back; evening stargazing works as an after-dinner walk."
+     "zh": "依据：男的说：「夜なら、夕飯のあとの散歩がてらちょうどいいかもな。」\n推理：他先选钓鱼，但妻子用「でも、朝六時だよ」提醒，他想「朝くらいはゆっくりしたい」；荞麦面要站着揉面，考虑到腰也不行。晚上九点开始、要走二十分钟山路的观星，正好当饭后散步。\n容易错：先说的钓鱼被「でも」推翻。",
+     "en": "Evidence: The man says: 「夜なら、夕飯のあとの散歩がてらちょうどいいかもな。」\nReasoning: He first picks fishing, but his wife says 「でも、朝六時だよ」, and he admits 「朝くらいはゆっくりしたい」; 「そば打ち」 means kneading on his feet, bad for his back. Stargazing, from nine at night with a twenty-minute walk up the hill, works as an after-dinner stroll.\nTrap: his first choice, fishing, overturned by 「でも」."
     },
     "wrong": [
      {
@@ -323,8 +323,8 @@
     "question": "質問2：女の人は、どのプランに参加しますか。",
     "answer": 1,
     "why": {
-     "zh": "她想要「形に残るもの」；蓝染第二天中午后才交付，她以为明早就走，但住两晚能拿到，于是选了能带回家的蓝染。",
-     "en": "She wants something to keep; the dyed cloth is ready the next afternoon, and since they stay two nights she can collect it — indigo dyeing."
+     "zh": "依据：女的说：「やっぱり持って帰れるほうにする。」\n推理：她想要「何か形に残るもの」，蓝染的手帕要放一晚，「翌日のお昼以降」才交。她以为明早就走，丈夫说「出るのはあさってだよ」，所以能拿到。荞麦面当午饭虽「捨てがたい」，但她用「けど、やっぱり」选了能带回家的蓝染。\n容易错：以为明早出发就排除了蓝染；被「けど」放下的荞麦面。",
+     "en": "Evidence: The woman says: 「やっぱり持って帰れるほうにする。」\nReasoning: She wants 「何か形に残るもの」; the dyed handkerchief must rest overnight and is handed over 「翌日のお昼以降」. She thought they left tomorrow morning, but her husband says 「出るのはあさってだよ」, so she can collect it. 「おそば」 for lunch is 「捨てがたい」, but with 「けど、やっぱり」 she picks the indigo dyeing she can take home.\nTrap: ruling out the dyeing because of a wrong departure date; the 「そば打ち」 set aside by 「けど」."
     },
     "wrong": [
      {

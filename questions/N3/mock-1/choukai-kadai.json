@@ -88,8 +88,8 @@
    }
   },
   "why": {
-   "zh": "老师三点以后才在，零食出发前一天再买；女学生说「それより…一年生にメールで聞いてくれない？」，男学生回答「すぐ送るね」，所以先发邮件。",
-   "en": "The professor isn't back until after three and the snacks can wait; she asks 「それより…一年生にメールで聞いてくれない？」 and he says 「すぐ送るね」 — the email comes first."
+   "zh": "依据：女学生说：「それより、参加する人の数がまだはっきりしないから、一年生にメールで聞いてくれない？」男学生答「分かった。すぐ送るね」。\n推理：住处「先週済ませた」，已经订好；男的想马上去找老师，可老师「三時過ぎ」才回来；他又想先买零食，女的说「出発の前の日でいい」，再用「それより」把要先做的事换成给一年级发邮件。\n容易错：已经做完的事、要等的事、可以推后的事。",
+   "en": "Evidence: The female student says: 「それより、参加する人の数がまだはっきりしないから、一年生にメールで聞いてくれない？」, and he answers 「分かった。すぐ送るね」.\nReasoning: The lodging was 「先週済ませた」, already booked. He wants to see the teacher now, but the teacher isn't back until 「三時過ぎ」; then he suggests snacks, which can wait until 「出発の前の日」, and with 「それより」 she switches the first job to emailing the first-years.\nTrap: something already done, something that has to wait, something that can be put off."
   },
   "wrong": [
    null,
@@ -195,8 +195,8 @@
    }
   },
   "why": {
-   "zh": "集合改到十点，要提前十五分钟（九点四十五分）到车站，从家到车站要三十分钟，所以九点十五分出门。",
-   "en": "The meeting is now at ten, he must be there fifteen minutes early (9:45), and the station is thirty minutes away — so he leaves at 9:15."
+   "zh": "依据：女的说：「集合の十五分前には来てほしいって、先生が言ってたよ。」\n推理：集合由九点改到「十時」，男的算从家到车站要三十分钟，以为「九時半に出れば間に合う」；女的用「でも」补充要提前十五分钟到，也就是九点四十五分到站，再往前推三十分钟，是九点十五分出门。\n容易错：改之前的时间；只按新的集合时间算，漏掉提前十五分钟。",
+   "en": "Evidence: The woman says: 「集合の十五分前には来てほしいって、先生が言ってたよ。」\nReasoning: The meeting moved from nine to 「十時」. He reckons thirty minutes to the station, so 「九時半に出れば間に合う」; with 「でも」 she adds they must arrive fifteen minutes early, i.e. at 9:45, and thirty minutes before that is 9:15.\nTrap: the time before the change; using only the new meeting time and forgetting the fifteen minutes."
   },
   "wrong": [
    {
@@ -313,8 +313,8 @@
    }
   },
   "why": {
-   "zh": "学生证过期不能用，她选了重新配送，工作人员请她「こちらの用紙に、配達のご希望の時間を書いていただけますか」，所以先填时间。",
-   "en": "The expired student ID won't do, so she chooses redelivery and the clerk asks her to write the time on the form (「こちらの用紙に…書いていただけますか」)."
+   "zh": "依据：工作人员说：「では、こちらの用紙に、配達のご希望の時間を書いていただけますか。」女的答「はい」。\n推理：学生证「先月で期限が切れています」，不能用；工作人员给了两个办法，她说回家拿要一个小时，选了「配達をお願いします」。选了配送后接下来要做的，就是在表上写希望的时间。\n容易错：已经做过的事（出示学生证、交通知单）；她没有选的回家拿证件。",
+   "en": "Evidence: The clerk says: 「では、こちらの用紙に、配達のご希望の時間を書いていただけますか。」, and she says 「はい」.\nReasoning: Her student card 「先月で期限が切れています」, so it won't do. Of the two options she rules out going home (an hour) and chooses 「配達をお願いします」. The next step after choosing redelivery is writing the time on the form.\nTrap: things already done (showing the card, handing over the notice); going home for ID, which she didn't choose."
   },
   "wrong": [
    {
@@ -419,8 +419,8 @@
    }
   },
   "why": {
-   "zh": "合同由男人明天自己带去，他请女人「それまでに契約書を二部印刷して、課長にサインをもらっておいてくれる？」，所以女人要打印后请科长签字。",
-   "en": "He'll take the contract himself tomorrow and asks her 「それまでに契約書を二部印刷して、課長にサインをもらっておいてくれる？」 — she prints it and gets it signed."
+   "zh": "依据：男的说：「だから、それまでに契約書を二部印刷して、課長にサインをもらっておいてくれる？」\n推理：要对方盖章，不能发邮件；女的说去邮寄，男的用「でも」担心赶不上；女的提出自己送，男的用「いや、実は」说明明天他自己去，顺便带过去。留给女的的任务是打印并请科长签字。\n容易错：一个个被否定的方案；男的自己要做的事。",
+   "en": "Evidence: The man says: 「だから、それまでに契約書を二部印刷して、課長にサインをもらっておいてくれる？」\nReasoning: It needs their seal, so no email. She offers to post it; with 「でも」 he worries it won't arrive in time. She offers to take it; 「いや、実は」 he is going there himself tomorrow and will take it. Her job is to print it and get the section chief's signature.\nTrap: plans rejected one by one; what the man will do himself."
   },
   "wrong": [
    {
@@ -537,8 +537,8 @@
    }
   },
   "why": {
-   "zh": "鸡蛋已经有了，牛奶今晚会用完所以要买，再加上黄油；面包最后女人说自己回来时买。",
-   "en": "There are eggs already; the milk is going in tonight's stew, so he buys milk, plus butter; at the end she says she'll get the bread herself."
+   "zh": "依据：女的说：「だから、牛乳はお願い。あと、バターも少なくなってたから、ついでに。」后来又说「パンはいいや。帰りに私が駅前のパン屋で買ってくるから」。\n推理：鸡蛋男的昨天「僕が買ってきた」；牛奶虽然还有一瓶，但今晚做炖菜要用完，所以要买，再加黄油；面包最后女的改口自己买。\n容易错：已经买了的鸡蛋；最后改由女的买的面包。",
+   "en": "Evidence: The woman says: 「だから、牛乳はお願い。あと、バターも少なくなってたから、ついでに。」 and later 「パンはいいや。帰りに私が駅前のパン屋で買ってくるから」.\nReasoning: He 「僕が買ってきた」 eggs yesterday. There's still one milk, but it goes in tonight's stew, so milk is needed, plus butter. At the end she takes the bread off his list and will buy it herself.\nTrap: the eggs already bought; the bread she switches to buying herself."
   },
   "wrong": [
    {
@@ -649,8 +649,8 @@
    }
   },
   "why": {
-   "zh": "女人的手电坏了，她说「それはお願いできる？」，男人答应了，所以他带手电。",
-   "en": "Her torch is broken, she asks 「それはお願いできる？」 and he agrees — he takes the torch."
+   "zh": "依据：女的说：「私のは壊れちゃってるから、それはお願いできる？」男的答「分かった」。\n推理：「それ」指男的刚提到的「ライト」。帐篷女的带自己的；睡袋在营地「借りられる」；煤气炉因为用营地的烧烤用具，「要らないよ」。只有手电要男的带。\n容易错：别人带的东西、可以借的东西、不用带的东西。",
+   "en": "Evidence: The woman says: 「私のは壊れちゃってるから、それはお願いできる？」, and he says 「分かった」.\nReasoning: 「それ」 is the 「ライト」 he just mentioned. She brings her own tent, sleeping bags 「借りられる」 at the site, and the stove is 「要らないよ」 because they'll use the site's barbecue gear. Only the light is his to bring.\nTrap: what someone else brings, what can be borrowed, what isn't needed."
   },
   "wrong": [
    null,
