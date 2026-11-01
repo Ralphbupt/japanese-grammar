@@ -14,12 +14,12 @@
       "en": "Student: Professor, what did you eat at yesterday's party? Professor: I had sushi."
     },
     "why": {
-      "zh": "吃的人是老师（对方、上级），要用尊敬語。「食べる」的尊敬語是特殊动词「召し上がる」。",
-      "en": "The one eating is the professor, so the student uses 尊敬語; for 「食べる」 that is the special verb 「召し上がる」."
+      "zh": "线索：学生问「先生」吃了什么，吃的人是老师，不是学生自己。\n规则：说对方、上级的动作用尊敬語。「食べる」有专用的尊敬語「召し上がる」，过去式是「召し上がりました」。\n辨析：「召し上がる」＝对方吃（尊敬語）；「いただく」＝我吃（謙譲語）。动作是谁做的，决定用哪个。",
+      "en": "Clue: The student is asking 「先生」 what he ate — the one eating is the professor, not the student.\nRule: The listener's or a superior's actions take 尊敬語. 「食べる」 has its own honorific verb, 「召し上がる」; past: 「召し上がりました」.\nContrast: 「召し上がる」 = they eat (honorific); 「いただく」 = I eat (humble). Whose action it is decides which one."
     },
     "wrong": [
       null,
-      { "zh": "「いただく」是謙譲語，只能用于自己的动作，用在老师身上等于贬低对方。", "en": "「いただく」 is 謙譲語, for your own actions only — using it for the professor lowers them." },
+      { "zh": "「いただく」是謙譲語，用于自己（或自己这一方）的动作，用在老师身上等于贬低对方。", "en": "「いただく」 is 謙譲語, for your own (or your side's) actions — using it for the professor lowers them." },
       { "zh": "「いらっしゃる」是「行く・来る・いる」的尊敬語，不是“吃”，也不能接「何を」。", "en": "「いらっしゃる」 is the honorific of 行く/来る/いる, not \"eat\", and it can't take 「何を」." },
       { "zh": "「食べさせました」是使役（让别人吃），意思不对。", "en": "「食べさせました」 is causative (made someone eat) — wrong meaning." }
     ]
@@ -39,8 +39,8 @@
       "en": "Manager: Have you seen this movie yet? Me: Yes, I saw it last week. It was really good."
     },
     "why": {
-      "zh": "看电影的是“我”自己。尊敬語绝不能用于自己的动作，这里用丁寧語「見ました」就对。",
-      "en": "The one who saw it is me. 尊敬語 is never used for your own actions, so plain polite 「見ました」 is right."
+      "zh": "线索：回答「はい、先週…」的是“我”，看电影的是我自己，不是部长。\n规则：尊敬語用来说对方或上级的动作，不用于自己的动作。说自己看过，这里用丁寧語「見ました」就行。\n容易错：因为在跟部长说话就选「ご覧に なりました」。要看动作是谁做的，不是在跟谁说话。",
+      "en": "Clue: The one answering 「はい、先週…」 is me — I'm the one who saw the film, not the manager.\nRule: 尊敬語 is for the listener's or a superior's actions, not your own. For something you did yourself, plain polite 「見ました」 is fine here.\nTrap: Choosing 「ご覧に なりました」 because you're talking to the manager. What counts is who did the action, not who you're talking to."
     },
     "wrong": [
       null,
@@ -64,12 +64,12 @@
       "en": "(At an art museum) Staff: Please take a look at this painting."
     },
     "why": {
-      "zh": "看画的是客人，用尊敬語。「見る」的尊敬語是「ご覧になる」，请对方看说「ご覧ください」。",
-      "en": "The guest is the one looking, so it's 尊敬語: 「見る」 → 「ご覧になる」, and \"please look\" is 「ご覧ください」."
+      "zh": "线索：「お客様」「どうぞ」：工作人员在请客人看画，看的人是客人。\n规则：请对方做事，用对方动作的尊敬語。「見る」的尊敬語是「ご覧になる」，请对方看说「ご覧ください」。\n辨析：「ご覧になる」＝对方看（尊敬語）；「拝見する」＝我看（謙譲語），所以不能请客人「拝見」。",
+      "en": "Clue: 「お客様」 and 「どうぞ」 — the attendant is inviting the guest to look, so the one looking is the guest.\nRule: When you ask someone to do something, use the honorific of their action. 「見る」 → 「ご覧になる」, and \"please look\" is 「ご覧ください」.\nContrast: 「ご覧になる」 = they look (honorific); 「拝見する」 = I look (humble), so you can't ask a guest to 「拝見」."
     },
     "wrong": [
       null,
-      { "zh": "「拝見する」是謙譲語，只用于自己看，不能请客人「拝見」。", "en": "「拝見する」 is 謙譲語 for your own looking; you can't ask a guest to 「拝見」." },
+      { "zh": "「拝見する」是謙譲語，用于自己（或自己这一方）看，不能请客人「拝見」。", "en": "「拝見する」 is 謙譲語, for your own (or your side's) looking; you can't ask a guest to 「拝見」." },
       { "zh": "「拝見させて ください」是“请让我看”，说话的是工作人员，要看画的是客人，方向反了。", "en": "「拝見させて ください」 is \"please let me look\" — but it's the guest who is to look, not the attendant." },
       { "zh": "「お見せ ください」是“请给我看”，是请客人出示东西，不是请客人欣赏画。", "en": "「お見せ ください」 asks the guest to show something, not to look at the painting." }
     ]
@@ -89,8 +89,8 @@
       "en": "Student: Excuse me, is Professor Tanaka in his office now?"
     },
     "why": {
-      "zh": "问老师在不在，用「いる」的尊敬語「いらっしゃる」，ます形是「いらっしゃいます」。",
-      "en": "Asking whether the professor is in uses 「いらっしゃる」, the honorific of 「いる」; its ます-form is 「いらっしゃいます」."
+      "zh": "线索：主语是「田中先生は」，问的是老师在不在研究室，「研究室に」表示所在的地方。\n规则：说上级“在”，用「いる」的尊敬語「いらっしゃる」，ます形是「いらっしゃいます」。\n辨析：「いらっしゃる」＝对方、上级在（尊敬語）；「おる」＝我或我方的人在（謙譲語），学生说老师不能用。",
+      "en": "Clue: The subject is 「田中先生は」, and the question is whether the professor is in his office (「研究室に」 = where).\nRule: A superior \"being\" somewhere takes 「いらっしゃる」, the honorific of 「いる」; polite form 「いらっしゃいます」.\nContrast: 「いらっしゃる」 = they / a superior are there (honorific); 「おる」 = I or my side are there (humble) — not for a student talking about the professor."
     },
     "wrong": [
       null,
@@ -114,8 +114,8 @@
       "en": "Professor, do you know anything about this matter?"
     },
     "why": {
-      "zh": "「この話について」（关于这件事）＋「何か」＋「ご存じですか」（「知っている」的尊敬語）。★ 在第三格，是「ご存じ」。",
-      "en": "「この話について」 (about this) ＋ 「何か」 (anything) ＋ 「ご存じですか」 (honorific of 「知っている」). The ★ is the third slot: 「ご存じ」."
+      "zh": "线索：句尾「か」前面缺谓语，碎片「ご存じ」「です」合成「ご存じです」（「知っている」的尊敬語）。\n怎么排：「ご存じ＋です」连在一起放在「か」前；「この」后面要接名词，所以「話に ついて」紧跟「この」；「何か」（什么）放在谓语前。顺序：話に ついて → 何か → ご存じ → です，★ 是「ご存じ」。\n容易错：把「何か」放到「この」后面。「この」要接名词：「この話」可以，「この何か」不通。",
+      "en": "Clue: The final 「か」 needs a predicate: 「ご存じ」 ＋ 「です」 = 「ご存じです」, the honorific of 「知っている」.\nOrder: 「ご存じ」 ＋ 「です」 go together before 「か」; 「この」 needs a noun, so 「話に ついて」 follows it; 「何か」 (anything) sits before the predicate: 話に ついて → 何か → ご存じ → です. The ★ is 「ご存じ」.\nTrap: Putting 「何か」 right after 「この」. 「この」 takes a noun — 「この話」 works, 「この何か」 doesn't."
     },
     "wrong": [null, null, null, null]
   },
@@ -134,8 +134,8 @@
       "en": "Professor Tanaka reads the newspaper every morning at the café in front of the station."
     },
     "why": {
-      "zh": "读报纸的是老师，用尊敬語。「読む」没有特殊尊敬語，套模板「お＋ます形＋になる」→「お読みになります」。",
-      "en": "The professor is reading, so it's 尊敬語. 「読む」 has no special form, so use お＋stem＋になる → 「お読みになります」."
+      "zh": "线索：主语是「田中先生は」，读报的是老师；空格前已经有「お読み」。\n规则：「読む」没有专用尊敬語，套模板「お＋ます形去掉ます（読み）＋になる」→「お読みに なります」。\n技巧：看到「お＋ます形」，后面接「になる」是抬高对方，接「する／いたす」是降低自己。先确认主语是谁，再选后半。",
+      "en": "Clue: The subject is 「田中先生は」 — the professor is the one reading — and 「お読み」 is already in place.\nRule: 「読む」 has no special honorific, so use the template お ＋ ます-stem (読み) ＋ になる → 「お読みに なります」.\nTip: After お ＋ ます-stem, 「になる」 raises the other person and 「する／いたす」 lowers yourself. Find the subject first, then pick the ending."
     },
     "wrong": [
       null,
@@ -159,8 +159,8 @@
       "en": "Have you looked at the photos I sent yesterday yet, sir?"
     },
     "why": {
-      "zh": "看照片的是部长，用尊敬語。「見る」有特殊尊敬語，必须用「ご覧になる」，不能套「お〜になる」模板。",
-      "en": "The manager is the one looking, so 尊敬語 — and since 「見る」 has a special form, it must be 「ご覧になる」, not the template."
+      "zh": "线索：开头叫「部長」，问的是部长看没看照片；「お送りした」才是我做的事（我发的）。\n规则：部长的动作用尊敬語。「見る」有专用尊敬語「ご覧になる」，不套「お〜になる」模板（没有「お見になる」）。\n容易错：前面有謙譲語「お送りした」，就跟着选「拝見しました」。一句里可以既有我的动作又有对方的动作，要逐个看。",
+      "en": "Clue: The sentence addresses 「部長」 and asks whether he has looked at the photos; 「お送りした」 is my action (I sent them).\nRule: The manager's action takes 尊敬語. 「見る」 has a special honorific, 「ご覧になる」, so the お〜になる template isn't used (no 「お見になる」).\nTrap: Following the humble 「お送りした」 and picking 「拝見しました」. One sentence can hold both my action and theirs — check each verb."
     },
     "wrong": [
       null,
@@ -184,8 +184,8 @@
       "en": "Around what time will the manager be back at the office?"
     },
     "why": {
-      "zh": "「会社に」＋尊敬語模板「お戻り＋に＋なります」。★ 在第二格，是「お戻り」。",
-      "en": "「会社に」 ＋ the honorific template 「お戻り＋に＋なります」. The ★ is the second slot: 「お戻り」."
+      "zh": "线索：「お戻り」「に」「なります」是尊敬語模板「お＋ます形＋に なる」；主语「部長は」，回公司的是部长。\n怎么排：「お戻り＋に＋なります」三块连成一个动词，放在句尾「か」前；表示目的地的「会社に」放在动词前。顺序：会社に → お戻り → に → なります，★ 是「お戻り」。\n容易错：把单独的「に」放到「お戻り」前面。模板是「お戻り＋に＋なる」，「に」夹在「お戻り」和「なります」中间。",
+      "en": "Clue: 「お戻り」「に」「なります」 form the honorific template お ＋ ます-stem ＋ に なる; the subject is 「部長は」, so the manager is the one returning.\nOrder: 「お戻り」 ＋ 「に」 ＋ 「なります」 make one verb before 「か」; the destination 「会社に」 comes before it: 会社に → お戻り → に → なります. The ★ is 「お戻り」.\nTrap: Putting the lone 「に」 before 「お戻り」. The template is お戻り ＋ に ＋ なる, with 「に」 between 「お戻り」 and 「なります」."
     },
     "wrong": [null, null, null, null]
   },
@@ -204,8 +204,8 @@
       "en": "(Two coworkers) A: Isn't the president in this week? B: No, he's been away on a business trip to America since last week."
     },
     "why": {
-      "zh": "同事之间说社长的动作，用尊敬語。「する」的轻度尊敬語是「される」→「出張されています」。",
-      "en": "Coworkers talking about the president use 尊敬語; the light honorific of 「する」 is 「される」 → 「出張されています」."
+      "zh": "线索：出差的是「社長」；两个同事在公司内部聊天，A 也用尊敬語「いらっしゃらない」说社长。\n规则：公司内部说上级的动作用尊敬語。「出張する」的轻度尊敬語是「出張される」，接「ています」→「出張されています」。\n辨析：「される」＝尊敬（社长出差）；「させる」＝让别人做（使役）；「させられる」＝被迫做（使役被动）。",
+      "en": "Clue: The president is the one travelling, and two coworkers are talking inside the company — A already uses honorific 「いらっしゃらない」 for him.\nRule: Inside the company, a superior's actions take 尊敬語. The light honorific of 「出張する」 is 「出張される」, plus 「ています」 → 「出張されています」.\nContrast: 「される」 = honorific (the president goes); 「させる」 = make someone do it (causative); 「させられる」 = be made to do it (causative-passive)."
     },
     "wrong": [
       null,
@@ -229,8 +229,8 @@
       "en": "A: What time is the manager coming in tomorrow? B: Around ten, I think."
     },
     "why": {
-      "zh": "说部长的动作用尊敬語。「来る」的轻度尊敬語是「来られる」（读作こられる）。",
-      "en": "The manager's action takes 尊敬語; the light honorific of 「来る」 is 「来られる」."
+      "zh": "线索：主语是「部長は」，问的是部长明天几点来公司，来的人是部长。\n规则：「来る」的轻度尊敬語是「来られる」（こられる），ます形「来られます」，客气程度比「いらっしゃる」低一点。\n容易错：选「参ります」。它也是“来”，但是謙譲語，用于自己或自己一方的动作，不能说部长。",
+      "en": "Clue: The subject is 「部長は」 — the question is what time the manager comes in, so he is the one coming.\nRule: The light honorific of 「来る」 is 「来られる」 (こられる), polite 「来られます」 — a step less formal than 「いらっしゃる」.\nTrap: Choosing 「参ります」. It also means \"come\", but it's humble, for yourself or your own side — not for the manager."
     },
     "wrong": [
       null,
@@ -255,8 +255,8 @@
       "en": "I hear Professor Yamada will be teaching at an American university for a year starting next month."
     },
     "why": {
-      "zh": "「アメリカの大学で」（在美国的大学）＋「教えられる」（「教える」的轻度尊敬語）＋「そうです」（听说）。★ 在第一格，是「アメリカの」。",
-      "en": "「アメリカの大学で」 (at an American university) ＋ 「教えられる」 (light honorific of 「教える」) ＋ 「そうです」 (I hear). The ★ is the first slot: 「アメリカの」."
+      "zh": "线索：句尾是传闻「そうです」（听说），前面要接简体动词「教えられる」，这是「教える」的轻度尊敬語，主语是山田老师。\n怎么排：「教えられる＋そうです」放最后；「アメリカの」修饰名词「大学」，「アメリカの 大学で」表示在哪里教，放在动词前。顺序：アメリカの → 大学で → 教えられる → そうです，★ 是「アメリカの」。\n容易错：把「教えられる」看成被动（被教）。主语是老师，教书的是老师自己，这里的「られる」表示尊敬。",
+      "en": "Clue: The sentence ends in hearsay 「そうです」 (I hear), which follows a plain-form verb: 「教えられる」, the light honorific of 「教える」, with Professor Yamada as subject.\nOrder: 「教えられる」 ＋ 「そうです」 go last; 「アメリカの」 modifies the noun 「大学」, and 「アメリカの 大学で」 (where he teaches) comes before the verb: アメリカの → 大学で → 教えられる → そうです. The ★ is 「アメリカの」.\nTrap: Reading 「教えられる」 as passive (be taught). The professor is the subject and he is the one teaching, so 「られる」 here is honorific."
     },
     "wrong": [null, null, null, null]
   }

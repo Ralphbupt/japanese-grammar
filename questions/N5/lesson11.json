@@ -14,8 +14,8 @@
       "en": "I still can't read kanji very well."
     },
     "why": {
-      "zh": "「漢字が」用了「が」，说的是能力“会不会读”，要用可能形。一类动词 読む→読める，否定是「読めません」。",
-      "en": "「漢字が」 with 「が」 and the sense \"can't yet\" call for the potential form. Group 1 読む→読める, negative 「読めません」."
+      "zh": "线索：「かんじが」用的是「が」，又有「まだ」「あまり」，说的是现在还不太会读。\n规则：说“会不会做”用可能形，原来的「を」一般换成「が」。一类动词把最后一个音换成え段再加「る」：「読む」→「読める」；「あまり」后面要接否定，所以是「読めません」。",
+      "en": "Clue: 「かんじが」 takes 「が」, and 「まだ」「あまり」 say I still can't really do it.\nRule: Ability is the potential form, and its object usually takes 「が」 instead of 「を」. Group 1 verbs move the last sound to the え-row and add 「る」: 「読む」 → 「読める」. 「あまり」 needs a negative after it, hence 「読めません」."
     },
     "wrong": [
       null,
@@ -48,8 +48,8 @@
       "en": "A: Can you ski? B: No, I've never done it even once."
     },
     "why": {
-      "zh": "问的是“会不会滑雪”，用可能形。「する」的可能形是特殊的「できる」。",
-      "en": "A asks whether B can ski, so the potential form. The potential of 「する」 is the irregular 「できる」."
+      "zh": "线索：B 回答「いちども した ことが ありません」，可见 A 问的是会不会；空格前是「スキーが」。\n规则：「する」的可能形不规则，是「できる」，对象用「が」：「スキーが できる」。",
+      "en": "Clue: B answers 「いちども した ことが ありません」, so A is asking about ability; the blank follows 「スキーが」.\nRule: The potential of 「する」 is irregular — 「できる」 — and its object takes 「が」: 「スキーが できる」."
     },
     "wrong": [
       null,
@@ -82,8 +82,8 @@
       "en": "I can hear the piano from the next room. It's so noisy I can't sleep."
     },
     "why": {
-      "zh": "声音是自己传进耳朵的，不是我想去听，用「聞こえる」（听得见）。",
-      "en": "The sound reaches me whether I want it or not, so 「聞こえる」 (be audible)."
+      "zh": "线索：「ピアノの おとが」从隔壁传过来，后面「うるさくて ねられません」，说明我根本不想听。\n规则：声音自己传进耳朵用「聞こえる」（听得见）；「聞ける」是有条件主动去听，如「このアプリで 音楽が 聞ける」。\n技巧：分「見える／見られる」「聞こえる／聞ける」时问自己：说话人是不是有意去看、去听？不是，就用「見える」「聞こえる」。",
+      "en": "Clue: The piano's 「おとが」 comes through from next door, and 「うるさくて ねられません」 shows I don't want to hear it.\nRule: Sound that reaches you on its own is 「聞こえる」 (can be heard); 「聞ける」 is being able to listen when you choose to, as in 「このアプリで 音楽が 聞ける」.\nTip: For 見える / 見られる and 聞こえる / 聞ける, ask whether the speaker sets out to look or listen. If not, it's 見える / 聞こえる."
     },
     "wrong": [
       null,
@@ -118,8 +118,8 @@
       "en": "Excuse me, can I use a card in this shop?"
     },
     "why": {
-      "zh": "可能形的对象用「が」：カードが＋使える（使う的可能形）＋ます＋か。★ 在第四格，是「ます」。",
-      "en": "The potential form takes 「が」: カードが ＋ 使える (potential of 使う) ＋ ます ＋ か. The ★ is the fourth slot: 「ます」."
+      "zh": "线索：句尾是「か」，碎片有「つかえ」「ます」，问的是这家店能不能用卡。\n怎么排：「つかえ」＋「ます」连成「つかえます」（「使う」→「使える」，能用），放在「か」前面；能用的东西「カード」加「が」放在前面。顺序：カード → が → つかえ → ます，★ 是「ます」。\n容易错：「ます」不能单独放，必须紧跟在「つかえ」后面；「が」也要紧跟在「カード」后面。",
+      "en": "Clue: The sentence ends in 「か」, and the pieces include 「つかえ」 and 「ます」: the question is whether cards can be used here.\nOrder: 「つかえ」 ＋ 「ます」 make 「つかえます」 (from 「使う」 → 「使える」, can use), right before 「か」; what can be used, 「カード」, comes first with 「が」: カード → が → つかえ → ます. The ★ is 「ます」.\nTrap: 「ます」 can't stand on its own; it must follow 「つかえ」 directly, just as 「が」 must follow 「カード」."
     },
     "wrong": [null, null, null, null]
   },
@@ -139,8 +139,8 @@
       "en": "I did well on the test, so the teacher praised me. I was happy."
     },
     "why": {
-      "zh": "「先生に」是动作的发出者，我是承受者，用直接被动「AはBに＋受身形」。二类动词 ほめる→ほめられる。",
-      "en": "「先生に」 marks who did it and \"I\" am on the receiving end: the direct passive 「AはBに＋受身形」. Group 2 ほめる→ほめられる."
+      "zh": "线索：「先生に」，后面又说「うれしかったです」：动作是老师做的，我是接受的一方，而且是好事。\n规则：别人对我做某事用受身形「AはBに＋受身形」，B 是做动作的人。二类动词把「る」换成「られる」：「ほめる」→「ほめられる」。被动不一定是坏事。",
+      "en": "Clue: 「先生に」, then 「うれしかったです」 — the teacher did something to me, and it was a good thing.\nRule: When someone does something to you, use the passive: 「A は B に＋passive」, with B as the doer. Group 2 verbs change 「る」 to 「られる」: 「ほめる」 → 「ほめられる」. The passive isn't always bad news."
     },
     "wrong": [
       null,
@@ -174,8 +174,8 @@
       "en": "Someone stepped on my foot on the train, and it hurt."
     },
     "why": {
-      "zh": "我的脚被别人踩：所有者“我”做主语，所有物「足を」，动作者「だれかに」，用受身形。一类 踏む→踏まれる。",
-      "en": "My foot was stepped on: the owner (\"I\") is the subject, 「足を」 the thing affected, 「だれかに」 the doer — the passive. Group 1 踏む→踏まれる."
+      "zh": "线索：「だれかに 足を（　）」，后面「いたかったです」：别人踩了我的脚，疼的是我。\n规则：自己的身体或东西被别人动了，日语让“我”当主语，身体部位用「を」，做的人用「に」，动词用受身形。一类动词把最后一个音换成あ段再加「れる」：「ふむ」→「ふまれる」。",
+      "en": "Clue: 「だれかに 足を（　）」, then 「いたかったです」 — someone stepped on my foot, and I'm the one it hurt.\nRule: When someone acts on your body or belongings, Japanese makes you the subject, puts the thing in 「を」 and the doer in 「に」, and uses the passive. Group 1 verbs move the last sound to the あ-row and add 「れる」: 「ふむ」 → 「ふまれる」."
     },
     "wrong": [
       null,
@@ -209,8 +209,8 @@
       "en": "I didn't have an umbrella, so I got caught in the rain on the way home from the station. It was awful."
     },
     "why": {
-      "zh": "「雨に」＋受身形是间接被动（迷惑の受身）：下雨这件事让我很困扰。降る→降られる。",
-      "en": "「雨に」 ＋ passive is the nuisance passive: the rain falling caused me trouble. 降る→降られる."
+      "zh": "线索：「雨に」用了「に」；前面「かさが なかった」，后面「たいへんでした」：下雨让我很为难。\n规则：别人（或天气）做的事让我受了困扰，可以用受身形，连「降る」这种没有宾语的动词也行：「雨に 降られる」（被雨淋）。「降る」→「降られる」。",
+      "en": "Clue: 「雨に」 with 「に」, plus 「かさが なかった」 before and 「たいへんでした」 after: the rain caused me trouble.\nRule: When something someone (or the weather) does troubles you, Japanese can use the passive, even with verbs that take no object like 「降る」: 「雨に 降られる」 (get caught in the rain). 「降る」 → 「降られる」."
     },
     "wrong": [
       null,
@@ -244,8 +244,8 @@
       "en": "This book is read by a lot of people."
     },
     "why": {
-      "zh": "直接被动「AはBに＋受身形」：この本は＋たくさんの人に＋読まれています。★ 在第一格，是「たくさんの」。",
-      "en": "Direct passive 「AはBに＋受身形」: この本は ＋ たくさんの人に ＋ 読まれています. The ★ is the first slot: 「たくさんの」."
+      "zh": "线索：「この 本は〜います」，碎片有「読まれて」：书是被读的一方，是受身句「AはBに＋受身形」。\n怎么排：读书的人「人」后面加「に」；「たくさんの」修饰「人」，放在它前面；受身形「読まれて」接句尾「います」。顺序：たくさんの → 人 → に → 読まれて，★ 是「たくさんの」。\n容易错：把「たくさんの」和「人」分开。「の」后面必须直接跟它修饰的名词：「たくさんの 人」。",
+      "en": "Clue: 「この 本は〜います」 with the piece 「読まれて」: the book is what gets read — the passive 「A は B に＋passive」.\nOrder: The readers, 「人」, take 「に」; 「たくさんの」 modifies 「人」, so it goes right before it; 「読まれて」 joins the final 「います」: たくさんの → 人 → に → 読まれて. The ★ is 「たくさんの」.\nTrap: Separating 「たくさんの」 from 「人」. 「の」 must be followed directly by the noun it describes."
     },
     "wrong": [null, null, null, null]
   },
@@ -265,8 +265,8 @@
       "en": "A: What's wrong? B: My little brother broke my computer."
     },
     "why": {
-      "zh": "「弟に」是动作者，「パソコンを」是我的东西，我受害：所有者被动。「こわす」的受身形是 う段→あ段＋れる：こわされる。",
-      "en": "「弟に」 is the doer and 「パソコンを」 my thing — I'm the victim: the possessor passive. 「こわす」 becomes こわされる (う-row → あ-row + れる)."
+      "zh": "线索：「おとうとに パソコンを」：动作是弟弟做的，坏的是我的电脑；「どう したんですか」问的是我出了什么事。\n规则：自己的东西被别人弄坏，用受身形，东西用「を」，做的人用「に」。「こわす」是一类动词：す→さ，加「れる」，成「こわされる」。\n技巧：一类动词换成え段加「る」是可能形（「こわせる」），换成あ段加「れる」是受身形（「こわされる」），看一个字就能分开。",
+      "en": "Clue: 「おとうとに パソコンを」: my brother did it, and the computer is mine; 「どう したんですか」 asks what happened to me.\nRule: When someone damages your things, use the passive, with the thing in 「を」 and the doer in 「に」. 「こわす」 is Group 1: す → さ plus 「れる」, giving 「こわされる」.\nTip: For Group 1 verbs, え-row ＋ 「る」 is the potential (「こわせる」) and あ-row ＋ 「れる」 the passive (「こわされる」) — one sound tells them apart."
     },
     "wrong": [
       null,

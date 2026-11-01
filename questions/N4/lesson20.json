@@ -21,8 +21,8 @@
       "en": "A: That bag is lovely. B: Thanks. My sister gave it to me for my birthday."
     },
     "why": {
-      "zh": "给予方是姐姐（が），接受方是我（私に）：别人给我用「くれる」。",
-      "en": "The giver is my sister (が) and the receiver is me (私に): someone giving to me is 「くれる」."
+      "zh": "线索：「姉が」是给的人，「私に」是收的人，包从姐姐到了我手上。\n规则：别人把东西给我（或我方），用「くれる」：姉が 私に くれた。我给别人才用「あげる」。\n技巧：先看给东西的人带什么助词：带「が」、东西到了我这里→「くれる」；带「に」、主语是我→「もらう」。",
+      "en": "Clue: 「姉が」 is the giver and 「私に」 the receiver — the bag went from my sister to me.\nRule: When someone gives something to me (or my side), use 「くれる」: 姉が 私に くれた. 「あげる」 is for me giving to others.\nTip: Look at the particle on the giver: with 「が」 and the thing coming to me → 「くれる」; with 「に」 and me as subject → 「もらう」."
     },
     "wrong": [
       null,
@@ -62,8 +62,8 @@
       "en": "I got a dictionary from my teacher."
     },
     "why": {
-      "zh": "「もらう」的给予方用「に」（或「から」）：先生にもらう。",
-      "en": "With 「もらう」 the giver takes 「に」 (or 「から」): 先生にもらう."
+      "zh": "线索：主语是「私は」，句尾是「もらいました」，空格前是给我辞典的老师。\n规则：「もらう」的主语是收东西的人，给的人用「に」（也可以用「から」）：先生に もらう。\n辨析：同一件事两种说法：「先生が 辞書を くれた」（主语是老师）；「私は 先生に 辞書を もらった」（主语是我）。",
+      "en": "Clue: The subject is 「私は」, the sentence ends in 「もらいました」, and the blank follows the teacher who gave the dictionary.\nRule: With 「もらう」 the subject is the receiver, and the giver takes 「に」 (or 「から」): 先生に もらう.\nContrast: The same event two ways: 「先生が 辞書を くれた」 (the teacher is the subject); 「私は 先生に 辞書を もらった」 (I am the subject)."
     },
     "wrong": [
       null,
@@ -108,8 +108,8 @@
       "en": "This is the watch my father gave me to celebrate my starting school."
     },
     "why": {
-      "zh": "「父がくれた」修饰「時計」：父が くれた 時計 です。★ 在第一格，是「父が」。",
-      "en": "「父がくれた」 modifies 「時計」: 父が くれた 時計 です. The ★ is the first slot: 「父が」."
+      "zh": "线索：句子是「これは 〜です」，碎片里只有「時計」是名词，「父が くれた」可以修饰它。\n怎么排：「父が」和「くれた」连成“爸爸给我的”；这块修饰名词「時計」，放在它前面；「です」放最后。顺序：父が → くれた → 時計 → です，★ 是「父が」。\n容易错：照中文“这是……的手表”先放「時計」。日语的修饰语在名词前面：「父が くれた 時計」。",
+      "en": "Clue: The frame is 「これは 〜です」; 「時計」 is the only noun among the pieces, and 「父が くれた」 can describe it.\nOrder: 「父が」 and 「くれた」 join as \"that my father gave me\"; this phrase describes the noun 「時計」 and goes before it; 「です」 goes last: 父が → くれた → 時計 → です. The ★ is 「父が」.\nTrap: Putting 「時計」 first. In Japanese the describing phrase comes before the noun: 「父が くれた 時計」."
     },
     "wrong": [
       null,
@@ -147,8 +147,8 @@
       "en": "A: Where did you get that book? B: My teacher gave it to me on graduation day."
     },
     "why": {
-      "zh": "书在 B 手上，是老师（が）给我的；长辈给我用「くれる」的尊敬语「くださる」。",
-      "en": "B has the book, so the teacher (が) gave it to B; a superior giving to me is 「くださる」, the honorific of 「くれる」."
+      "zh": "线索：书现在在 B 手上，「先生が」是给的人，收的是 B（我）。\n规则：长辈、上级给我东西，用「くれる」的尊敬语「くださる」：先生が くださった。\n辨析：「先生が くださった」＝老师给了我（主语是老师）；「先生に いただいた」＝我从老师那里得到（主语是我）。这里是「先生が」。",
+      "en": "Clue: B now has the book; 「先生が」 is the giver, and the receiver is B (me).\nRule: When a superior or elder gives something to me, use 「くださる」, the honorific of 「くれる」: 先生が くださった.\nContrast: 「先生が くださった」 — the teacher gave it to me (teacher is subject); 「先生に いただいた」 — I received it from the teacher (I am subject). Here it's 「先生が」."
     },
     "wrong": [
       null,
@@ -194,8 +194,8 @@
       "en": "On our teacher's birthday, the whole class chipped in and gave her flowers."
     },
     "why": {
-      "zh": "全班（我方）凑钱送花给老师：我方给长辈用「あげる」的谦让语「さしあげる」。",
-      "en": "The class (my side) pooled money to give flowers to the teacher: giving to a superior is 「さしあげる」, the humble form of 「あげる」."
+      "zh": "线索：「クラスの みんなで お金を 出して」（全班凑钱），「先生に」是收花的人：我方给老师。\n规则：我方给长辈、上级东西，用「あげる」的谦让语「さしあげる」：先生に 花を さしあげる。\n辨析：「いただく」也常和「先生に」一起出现，但那是从老师那里收到；凑钱的是我们，是给的一方。",
+      "en": "Clue: 「クラスの みんなで お金を 出して」 (the whole class chipped in), and 「先生に」 receives the flowers: my side is giving to the teacher.\nRule: When my side gives something to a superior or elder, use 「さしあげる」, the humble form of 「あげる」: 先生に 花を さしあげる.\nContrast: 「いただく」 also often comes with 「先生に」, but it means receiving from the teacher; we pooled the money, so we are the givers."
     },
     "wrong": [
       null,
@@ -241,8 +241,8 @@
       "en": "This is a letter my teacher kindly wrote for me."
     },
     "why": {
-      "zh": "请长辈为我做：「先生に〜ていただく」，整个修饰「手紙」。書いて いただいた 手紙 です，★ 在第二格，是「いただいた」。",
-      "en": "A superior doing something for me: 「先生に〜ていただく」, modifying 「手紙」. 書いて いただいた 手紙 です — the ★ is the second slot: 「いただいた」."
+      "zh": "线索：「先生に」加碎片「書いて」「いただいた」，是「先生に 〜て いただく」（请老师为我做）；「です」放句尾。\n怎么排：「書いて」和「いただいた」先连成「書いて いただいた」；这块修饰名词「手紙」，放在它前面；「手紙」后面接「です」。顺序：書いて → いただいた → 手紙 → です，★ 是「いただいた」。\n技巧：排序时看到て形（書いて）和「あげる／くれる／もらう／いただく」，先把它们拼成一块，中间一般不插别的词。",
+      "en": "Clue: 「先生に」 plus the pieces 「書いて」 and 「いただいた」 is 「先生に 〜て いただく」 (have the teacher kindly do it for me); 「です」 goes last.\nOrder: 「書いて」 and 「いただいた」 join first as 「書いて いただいた」; this phrase describes the noun 「手紙」 and goes before it; 「手紙」 is followed by 「です」: 書いて → いただいた → 手紙 → です. The ★ is 「いただいた」.\nTip: In ordering questions, when you see a て-form (書いて) and 「あげる／くれる／もらう／いただく」, join them first; usually nothing goes between them."
     },
     "wrong": [
       null,
@@ -273,8 +273,8 @@
       "en": "A: That looks heavy. Shall I carry your bag for you? B: Thank you, that helps a lot."
     },
     "why": {
-      "zh": "B 道谢，说明 A 是主动提出帮忙：「〜てあげましょうか」（要我为你做……吗）。",
-      "en": "B thanks A, so A is offering to help: 「〜てあげましょうか」 (shall I do it for you?)."
+      "zh": "线索：A 先说「重そうですね」（看起来很重），B 回答「ありがとうございます。助かります」：A 是在主动提出帮忙。\n规则：主动提出为对方做某事，用「〜て あげましょうか」（要我帮你……吗）。\n辨析：「〜て もらえますか」「〜て くれますか」是请对方帮我；「〜て あげましょうか」是我要帮对方。",
+      "en": "Clue: A first says 「重そうですね」 (that looks heavy), and B replies 「ありがとうございます。助かります」 — A is offering to help.\nRule: Offering to do something for the other person is 「〜て あげましょうか」 (shall I … for you?).\nContrast: 「〜て もらえますか」 and 「〜て くれますか」 ask the other person to help me; 「〜て あげましょうか」 is me offering to help them."
     },
     "wrong": [
       null,
@@ -314,14 +314,14 @@
       "en": "Yesterday I had my hair cut by the stylist at the salon. It's short now and feels great."
     },
     "why": {
-      "zh": "我（主语）请美发师（に）为我剪：「人に〜てもらう」。",
-      "en": "I (the subject) had the stylist (に) do it for me: 「人に〜てもらう」."
+      "zh": "线索：「美容師さんに」，剪头发的是美发师，头发变短、觉得舒服的是没写出来的我。\n规则：请别人为我做某事，主语是我，做事的人用「に」：「人に 〜て もらう」。花钱请人服务（剪发、修车）也常用「〜て もらう」。\n辨析：「〜て くれた」也是别人为我做，但做事的人是主语，说「美容師さんが 切って くれた」，不用「に」。",
+      "en": "Clue: 「美容師さんに」 — the stylist did the cutting, and the unstated \"I\" is the one whose hair is now short and feels good.\nRule: Having someone do something for me makes me the subject, with the doer marked by 「に」: 「person に 〜て もらう」. Paid services (a haircut, a car repair) usually use 「〜て もらう」 too.\nContrast: 「〜て くれた」 is also someone doing it for me, but then the doer is the subject: 「美容師さんが 切って くれた」, not 「に」."
     },
     "wrong": [
       null,
       {
-        "zh": "「くれる」的给予方要用「が」（美容師さんが切ってくれた），这里是「美容師さんに」。",
-        "en": "「くれる」 needs the giver with 「が」 (美容師さんが切ってくれた), not 「に」."
+        "zh": "「くれる」的给予方用「が」或「は」（美容師さんが切ってくれた），不用「に」；这里是「美容師さんに」。",
+        "en": "With 「くれる」 the giver takes が or は (美容師さんが切ってくれた), not 「に」 as here."
       },
       {
         "zh": "「美容師さんに切ってあげた」是“我给美发师剪头发”，和“（我的头发）变短了很舒服”不合。",
@@ -355,8 +355,8 @@
       "en": "When I was lost, a stranger took me to the station."
     },
     "why": {
-      "zh": "给予方是陌生人（が），受益的是迷路的我：别人为我做用「〜てくれる」。",
-      "en": "The stranger (が) did it and I, the lost one, benefited: someone doing something for me is 「〜てくれる」."
+      "zh": "线索：「知らない 人が」是做事的人，受益的是迷路的我。\n规则：别人为我做某事，做事的人当主语，用「〜て くれる」：知らない 人が 連れて 行って くれた。\n辨析：同一件事，主语换成我才用「もらう」：知らない 人に 連れて 行って もらった。看做事的人带「が」还是「に」。",
+      "en": "Clue: 「知らない 人が」 is the one who acted, and the one helped is me, who was lost.\nRule: When someone does something for me with the doer as subject, use 「〜て くれる」: 知らない 人が 連れて 行って くれた.\nContrast: The same event with me as subject uses 「もらう」: 知らない 人に 連れて 行って もらった. Check whether the doer has 「が」 or 「に」."
     },
     "wrong": [
       null,
@@ -401,8 +401,8 @@
       "en": "My friend taught me Japanese, and I got better at it."
     },
     "why": {
-      "zh": "「友達に〜てもらう」：日本語を 教えて もらって 上手に なりました。★ 在第三格，是「もらって」。",
-      "en": "「友達に〜てもらう」: 日本語を 教えて もらって 上手に なりました. The ★ is the third slot: 「もらって」."
+      "zh": "线索：句首「友達に」，碎片有「教えて」「もらって」，是「人に 〜て もらう」（请别人为我做）。\n怎么排：「教えて」和「もらって」先连成「教えて もらって」；宾语「日本語を」放在「教えて」前面；「もらって」是て形，后面接结果「上手に なりました」。顺序：日本語を → 教えて → もらって → 上手に なりました，★ 是「もらって」。\n容易错：把「上手に なりました」放到前面。它是学了以后的结果，放在最后一格。",
+      "en": "Clue: The sentence starts with 「友達に」, and the pieces include 「教えて」 and 「もらって」 — 「person に 〜て もらう」 (have someone do it for me).\nOrder: 「教えて」 and 「もらって」 join first as 「教えて もらって」; the object 「日本語を」 comes before 「教えて」; 「もらって」 is a て-form, followed by the result 「上手に なりました」: 日本語を → 教えて → もらって → 上手に なりました. The ★ is 「もらって」.\nTrap: Putting 「上手に なりました」 early. It is the result of being taught, so it takes the last slot."
     },
     "wrong": [
       null,
@@ -433,8 +433,8 @@
       "en": "A: Excuse me, could you take a photo for me? B: Sure."
     },
     "why": {
-      "zh": "向陌生人委婉请求：「〜てもらえませんか」（もらう的可能形＋否定疑问）。",
-      "en": "A polite request to a stranger: 「〜てもらえませんか」 (the potential of もらう, as a negative question)."
+      "zh": "线索：开头是「すみません」，B 回答「いいですよ」（好啊）：A 在请陌生人帮忙。\n规则：客气地请别人为我做，用「〜て もらえませんか」：「もらう」的可能形「もらえる」加否定疑问（能不能请你……）。\n辨析：「もらいませんか」只差一个字，是“要不要……”的邀请；请求要用可能形「もらえませんか」。",
+      "en": "Clue: It starts with 「すみません」 and B answers 「いいですよ」 (sure): A is asking a stranger for help.\nRule: A polite request for someone to do something for me is 「〜て もらえませんか」: the potential of もらう, 「もらえる」, as a negative question (could you …?).\nContrast: 「もらいませんか」 differs by one kana but is an invitation (\"shall we …?\"); a request needs the potential 「もらえませんか」."
     },
     "wrong": [
       null,
@@ -474,8 +474,8 @@
       "en": "A: Hey, could you help me carry this box? B: Sure."
     },
     "why": {
-      "zh": "朋友之间随意的请求：「〜てくれない？」（能帮我……吗）。",
-      "en": "A casual request between friends: 「〜てくれない？」 (could you…?)."
+      "zh": "线索：「ねえ」「ちょっと」是朋友间的随意说法，B 回答「うん、いいよ」：A 在请 B 现在帮忙。\n规则：朋友之间请对方为我做，用简体的「〜て くれない？」（能帮我……吗）。请求说的是接下来的事，用「くれない」，不用过去形「くれなかった」。",
+      "en": "Clue: 「ねえ」 and 「ちょっと」 are casual talk between friends, and B answers 「うん、いいよ」: A is asking B for help now.\nRule: Between friends, asking someone to do something for me is the plain-form 「〜て くれない？」 (could you …?). A request is about what comes next, so it's 「くれない」, not the past 「くれなかった」."
     },
     "wrong": [
       null,
@@ -520,8 +520,8 @@
       "en": "Excuse me, could you tell me how to get to the station?"
     },
     "why": {
-      "zh": "最礼貌的请求「〜ていただけませんか」：行き方を 教えて いただけ ません か。★ 在第一格，是「行き方を」。",
-      "en": "The most polite request, 「〜ていただけませんか」: 行き方を 教えて いただけ ません か. The ★ is the first slot: 「行き方を」."
+      "zh": "线索：「すみません」开头、「か」结尾，碎片「教えて」「いただけ」「ません」组成最礼貌的请求「〜て いただけませんか」。\n怎么排：「いただけ」＋「ません」接句尾「か」；「教えて」在「いただけ」前面；「行き方を」是「教えて」的宾语。顺序：行き方を → 教えて → いただけ → ません，★ 是「行き方を」。\n容易错：「駅までの」的「の」后面要接名词，碎片里只有「行き方を」能接上，所以它在第一格。",
+      "en": "Clue: It opens with 「すみません」 and ends with 「か」, and the pieces 「教えて」「いただけ」「ません」 make the most polite request, 「〜て いただけませんか」.\nOrder: 「いただけ」 ＋ 「ません」 come before the final 「か」; 「教えて」 goes before 「いただけ」; 「行き方を」 is the object of 「教えて」: 行き方を → 教えて → いただけ → ません. The ★ is 「行き方を」.\nTrap: The 「の」 in 「駅までの」 must be followed by a noun, and only 「行き方を」 fits, so it takes the first slot."
     },
     "wrong": [
       null,
@@ -553,8 +553,8 @@
       "en": "My mother gave the neighbour some apples. The neighbour said “thank you”."
     },
     "why": {
-      "zh": "邻居道谢，说明是妈妈给邻居；妈妈属于我方（うち），我方给外人用「あげる」。",
-      "en": "The neighbour says thanks, so mother gave the apples; mother is on my side, and my side giving outward is 「あげる」."
+      "zh": "线索：邻居说了「ありがとうございます」，所以苹果是从妈妈到邻居；妈妈是我的家人。\n规则：说授受时，家人算“我方”（うち）。我方给外人东西用「あげる」：母は 隣の 人に あげた。\n辨析：「くれる」是外人给我方（隣の 人が 母に くれた）；这里是我方给出去，用「あげる」。",
+      "en": "Clue: The neighbour says 「ありがとうございます」, so the apples went from mother to the neighbour; mother is my family.\nRule: In giving and receiving, family counts as my side (うち). My side giving to an outsider is 「あげる」: 母は 隣の 人に あげた.\nContrast: 「くれる」 is an outsider giving to my side (隣の 人が 母に くれた); here my side is giving outward, so it's 「あげる」."
     },
     "wrong": [
       null,
@@ -600,8 +600,8 @@
       "en": "The lady next door helped my little brother with his homework. My mother thanked her."
     },
     "why": {
-      "zh": "弟弟是我方（うち），外人（おばさん）为我方做事，给予方用「が」，用「〜てくれる」。",
-      "en": "My brother is on my side, and an outsider (おばさん, with が) helped him: an outsider doing something for my side is 「〜てくれる」."
+      "zh": "线索：「となりの おばさんが」是做事的人，受益的是弟弟；妈妈还向阿姨道了谢。\n规则：家人算我方（うち）。外人为我方做事，做事的人当主语，用「〜て くれる」：おばさんが 手伝って くれた。\n辨析：「もらう」「いただく」的主语是受益的一方；这里主语是做事的「おばさんが」，所以不用它们。",
+      "en": "Clue: 「となりの おばさんが」 is the one who helped, and the one helped is my brother; mother even thanked her.\nRule: Family counts as my side (うち). When an outsider does something for my side, with the doer as subject, use 「〜て くれる」: おばさんが 手伝って くれた.\nContrast: 「もらう」 and 「いただく」 take the one who benefits as subject; here the subject is the helper, 「おばさんが」, so they don't fit."
     },
     "wrong": [
       null,
@@ -647,8 +647,8 @@
       "en": "This photo is one my father's friend took for us at the wedding."
     },
     "why": {
-      "zh": "父亲是我方，外人（父の友達）为我方做事用「〜てくれる」：結婚式で 撮って くれた ものです。★ 在第一格，是「結婚式で」。",
-      "en": "Father is on my side, so his friend doing something for us is 「〜てくれる」: 結婚式で 撮って くれた ものです. The ★ is the first slot: 「結婚式で」."
+      "zh": "线索：「父の 友達が」加碎片「撮って」「くれた」：外人为我方（爸爸、我们家）做事用「〜て くれる」。\n怎么排：「撮って」和「くれた」先连成「撮って くれた」；这块修饰「ものです」（……的东西），放在它前面；地点「結婚式で」放在动词「撮って」前面。顺序：結婚式で → 撮って → くれた → ものです，★ 是「結婚式で」。\n容易错：把「結婚式で」放到「ものです」前面。「で」是动作的地点，要放在动词「撮って」前面。",
+      "en": "Clue: 「父の 友達が」 plus the pieces 「撮って」 and 「くれた」: an outsider doing something for my side (father, our family) is 「〜て くれる」.\nOrder: 「撮って」 and 「くれた」 join first as 「撮って くれた」; this phrase describes 「ものです」 (a thing that …) and goes before it; the place 「結婚式で」 comes before the verb 「撮って」: 結婚式で → 撮って → くれた → ものです. The ★ is 「結婚式で」.\nTrap: Putting 「結婚式で」 right before 「ものです」. 「で」 marks where the action happened, so it goes before the verb 「撮って」."
     },
     "wrong": [
       null,

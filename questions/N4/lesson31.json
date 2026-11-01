@@ -21,8 +21,8 @@
       "en": "I drank too much last night, so I have a headache this morning."
     },
     "why": {
-      "zh": "头疼的原因是“喝太多”，动词ます形词干＋「すぎる」：飲みすぎて。",
-      "en": "The headache comes from drinking too much: verb stem ＋ 「すぎる」 → 飲みすぎて."
+      "zh": "线索：「ゆうべ」喝了酒，「今朝は 頭が 痛い」——前半句是头疼的原因，宾语是「お酒を」。\n规则：做得过头用「ます形词干＋すぎる」：飲み → 飲みすぎる；用て形「飲みすぎて」说原因。\n容易错：「飲みやすくて」也接「飲み」，但“容易喝”说明不了为什么头疼。",
+      "en": "Clue: Drinking 「ゆうべ」 and 「今朝は 頭が 痛い」: the first half is the cause of the headache, with 「お酒を」 as the object.\nRule: Overdoing something is ます-stem ＋ 「すぎる」: 飲み → 飲みすぎる; the て-form 「飲みすぎて」 gives the cause.\nTrap: 「飲みやすくて」 is built on 「飲み」 too, but \"easy to drink\" doesn't explain a headache."
     },
     "wrong": [
       null,
@@ -31,12 +31,12 @@
         "en": "「飲みすぎないで」 (without drinking too much) wouldn't explain the headache."
       },
       {
-        "zh": "「飲みやすい」是“容易喝”，前面要用「が」，而且“容易喝”不能说明头疼的原因。",
-        "en": "「飲みやすい」 (easy to drink) takes 「が」, and \"easy to drink\" doesn't explain the headache."
+        "zh": "「飲みやすい」是“容易喝、好入口”，好喝下去说明不了今早为什么头疼。",
+        "en": "「飲みやすい」 (easy to drink) doesn't explain why the speaker has a headache this morning."
       },
       {
-        "zh": "「飲みにくい」是“难喝/不好喝下去”，和头疼的因果关系不通，前面也不用「を」。",
-        "en": "「飲みにくい」 (hard to drink) doesn't explain the headache and doesn't take 「を」."
+        "zh": "「飲みにくい」是“不好喝下去”，喝起来费劲也说明不了第二天早上头疼。",
+        "en": "「飲みにくい」 (hard to drink) doesn't explain a headache the next morning either."
       }
     ]
   },
@@ -62,8 +62,8 @@
       "en": "I tasted this soup and it has far too little flavour. Let's add some salt."
     },
     "why": {
-      "zh": "“味道太淡（太没有味道）”是「ない＋すぎる」，要插入「さ」：なさすぎる。",
-      "en": "\"Too little flavour\" is 「ない ＋ すぎる」, which inserts 「さ」: なさすぎる."
+      "zh": "线索：「飲んで みたら」——说话人已经尝过了，后面又说“加点盐吧”，可见味道太淡。\n规则：“太没有……”是「ない＋すぎる」，中间要加「さ」：なさすぎる（不是「なすぎる」）。\n容易错：「なさそうです」很像，但它是还没尝时看样子推测；已经尝过就直接说「なさすぎます」。",
+      "en": "Clue: 「飲んで みたら」 — the speaker has already tasted it, and then suggests adding salt, so it's far too bland.\nRule: \"Too little / too lacking\" is 「ない」 ＋ 「すぎる」 with 「さ」 inserted: なさすぎる (not なすぎる).\nTrap: 「なさそうです」 looks close, but it's a guess from appearance before tasting; once you've tasted it, you say 「なさすぎます」."
     },
     "wrong": [
       {
@@ -114,8 +114,8 @@
       "en": "This bag is lovely, but it was too expensive, so I couldn't buy it."
     },
     "why": {
-      "zh": "すてき ＋ です ＋ が（但是）＋ 高すぎて（太贵，所以）：“漂亮但太贵，买不起”。★ 在第一格，是「すてき」。",
-      "en": "すてき ＋ です ＋ が (but) ＋ 高すぎて (too expensive, so): lovely but too pricey to buy. The ★ is the first slot: 「すてき」."
+      "zh": "线索：碎片里有「が」（但是）和「高すぎて」，句尾是「買えませんでした」——“好看，但太贵，所以没买成”。\n怎么排：「すてき＋です」先连好；「が」接在「です」后面表示转折；「高すぎて」是买不成的原因，紧挨着句尾「買えませんでした」。顺序：すてき → です → が → 高すぎて，★ 是「すてき」。\n容易错：把「高すぎて」放到最前面。说原因的て形要直接连着结果「買えませんでした」，“好看”这一层放在「が」前面。",
+      "en": "Clue: The pieces 「が」 (but) and 「高すぎて」, with 「買えませんでした」 at the end: lovely, but too expensive, so not bought.\nOrder: Join 「すてき ＋ です」 first; 「が」 follows 「です」 as \"but\"; 「高すぎて」 is the reason for not buying, so it sits right before 「買えませんでした」: すてき → です → が → 高すぎて. The ★ is 「すてき」.\nTrap: Starting with 「高すぎて」. The て-form giving the reason connects straight to the result, and the \"lovely\" part goes before 「が」."
     },
     "wrong": [
       null,
@@ -147,8 +147,8 @@
       "en": "This book has large print, so it's easy to read."
     },
     "why": {
-      "zh": "字大，所以“容易读”，用「ます形词干＋やすい」。",
-      "en": "Large print makes it easy to read: stem ＋ 「やすい」."
+      "zh": "线索：「字が 大きくて」——字大，是这本书的好处。\n规则：“容易做”用「ます形词干＋やすい」：読み → 読みやすい；“难做”用「〜にくい」。\n容易错：「読みにくい」形式一样，意思相反，要按前面的「字が 大きくて」来选。",
+      "en": "Clue: 「字が 大きくて」 — big print is a plus for this book.\nRule: \"Easy to do\" is ます-stem ＋ 「やすい」: 読み → 読みやすい; \"hard to do\" is 「〜にくい」.\nTrap: 「読みにくい」 has the same shape but the opposite meaning; let 「字が 大きくて」 decide."
     },
     "wrong": [
       {
@@ -188,8 +188,8 @@
       "en": "These pills are big and hard to swallow. I wish they were a little smaller."
     },
     "why": {
-      "zh": "药片大、希望它小一点，说明“不好吞下去”，用「〜にくい」。",
-      "en": "The pill is big and the speaker wishes it were smaller, so it's hard to swallow: 「〜にくい」."
+      "zh": "线索：「大きくて」和后面的「もう 少し 小さければ いいのですが」——药片太大，说话人不满意。\n规则：做起来费劲用「ます形词干＋にくい」：飲みにくい（不好吞）。\n容易错：「飲みすぎます」也接「飲み」，但说的是吃药过量，和药片大小无关。",
+      "en": "Clue: 「大きくて」 and then 「もう 少し 小さければ いいのですが」: the pill is too big and the speaker isn't happy about it.\nRule: Something hard to do is ます-stem ＋ 「にくい」: 飲みにくい (hard to swallow).\nTrap: 「飲みすぎます」 is built on 「飲み」 too, but it means taking too much, which has nothing to do with the size."
     },
     "wrong": [
       {
@@ -234,8 +234,8 @@
       "en": "Mr Tanaka's explanations are easy to follow, so they're popular."
     },
     "why": {
-      "zh": "分かり ＋ やすい（容易懂）＋ ので（因为）＋ 人気です。★ 在第四格，是「人気」。",
-      "en": "分かり ＋ やすい (easy to understand) ＋ ので (so) ＋ 人気です. The ★ is the fourth slot: 「人気」."
+      "zh": "线索：碎片「分かり」「やすい」组成「分かりやすい」（好懂），「ので」表示原因，句尾是「です」。\n怎么排：「分かり＋やすい」先连好；「ので」接在「やすい」后面，说出原因；结果「人気」放在句尾「です」前面。顺序：分かり → やすい → ので → 人気，★ 是「人気」。\n容易错：把「人気」放到「ので」前面。「ので」前面是原因（好懂），后面才是结果（受欢迎）。",
+      "en": "Clue: 「分かり」 and 「やすい」 make 「分かりやすい」 (easy to follow), 「ので」 gives a reason, and the sentence ends in 「です」.\nOrder: Join 「分かり ＋ やすい」 first; 「ので」 follows 「やすい」 to give the reason; the result 「人気」 comes right before 「です」: 分かり → やすい → ので → 人気. The ★ is 「人気」.\nTrap: Putting 「人気」 before 「ので」. The reason (easy to follow) comes before 「ので」, the result (popular) after it."
     },
     "wrong": [
       null,
@@ -267,8 +267,8 @@
       "en": "A: What if I fail tomorrow's exam? B: There's no need to worry so much. You studied hard — you'll be fine."
     },
     "why": {
-      "zh": "B 在安慰 A：“没必要那么担心”，用「辞书形＋ことはない」。",
-      "en": "B is reassuring A — \"no need to worry\": dictionary form ＋ 「ことはない」."
+      "zh": "线索：A 担心考试，B 接着说「たくさん 勉強したから、きっと 大丈夫」——B 在安慰 A。\n规则：安慰、劝别人“没必要……”用「辞书形＋ことはない」：心配する ことはない。\n辨析：「ことはない」＝没必要做；「ことにする」＝自己决定做；「ことがある」＝有时会……。",
+      "en": "Clue: A is worried about the exam, and B goes on with 「たくさん 勉強したから、きっと 大丈夫」: B is reassuring A.\nRule: Telling someone gently \"there's no need to …\" is dictionary form ＋ 「ことはない」: 心配する ことはない.\nContrast: 「ことはない」 = no need to do it; 「ことにする」 = decide to do it yourself; 「ことがある」 = it sometimes happens."
     },
     "wrong": [
       {
@@ -280,8 +280,8 @@
         "en": "「ことにする」 is deciding to do something yourself — not reassurance."
       },
       {
-        "zh": "「ことになる」是“决定了要……/结果会……”，意思不对。",
-        "en": "「ことになる」 (it's been decided / it will turn out) doesn't fit."
+        "zh": "「ことになる」是“（被）定下来要……／结果会……”，说的是安排或结果，不是劝对方别担心的说法。",
+        "en": "「ことになる」 means \"it has been arranged / it turns out that …\" — a decision or outcome, not a way to reassure someone."
       },
       null
     ]
@@ -308,8 +308,8 @@
       "en": "The train leaves at ten. There are still thirty minutes, so there's no need to hurry."
     },
     "why": {
-      "zh": "还有时间，所以“没必要着急”：「动词辞书形＋ことはない」。",
-      "en": "There's still time, so \"no need to hurry\": dictionary form ＋ 「ことはない」."
+      "zh": "线索：「まだ 30分 ありますから」——时间还够，空格后面是「ことは ありません」。\n规则：“没必要……”是「动词辞书形＋ことはない」：急ぐ ことは ありません。\n容易错：「急いだ ことは ありません」是“从没急过”，说的是经历，和“还有30分钟”接不上。",
+      "en": "Clue: 「まだ 30分 ありますから」 — there's time enough — and 「ことは ありません」 follows the blank.\nRule: \"There's no need to …\" is the dictionary form ＋ 「ことはない」: 急ぐ ことは ありません.\nTrap: 「急いだ ことは ありません」 means \"I've never hurried\" — it's about experience and doesn't follow \"there are 30 minutes left\"."
     },
     "wrong": [
       null,
@@ -354,8 +354,8 @@
       "en": "A phone call is fine — there's no need to come all this way."
     },
     "why": {
-      "zh": "わざわざ（特地）＋ 来る（辞书形）＋ ことは ＋ ない：“没必要特地来”。★ 在第三格，是「ことは」。",
-      "en": "わざわざ (specially) ＋ 来る (dictionary form) ＋ ことは ＋ ない: \"no need to come specially\". The ★ is the third slot: 「ことは」."
+      "zh": "线索：「電話で いいですから」（打电话就行），碎片「来る」「ことは」「ない」组成「〜ことはない」（没必要……）。\n怎么排：先连「辞书形＋ことは ない」：来る → ことは → ない，「ない」后面接句尾「よ」；副词「わざわざ」（特地）修饰「来る」，放在最前面。顺序：わざわざ → 来る → ことは → ない，★ 是「ことは」。\n容易错：把「わざわざ」放到「ことは」后面。「わざわざ」修饰的是动作「来る」，要放在动词前面。",
+      "en": "Clue: 「電話で いいですから」 (a phone call is fine), and the pieces 「来る」「ことは」「ない」 form 「〜ことはない」 (no need to).\nOrder: Build dictionary form ＋ 「ことは ない」 first: 来る → ことは → ない, with 「ない」 before the final 「よ」; the adverb 「わざわざ」 (go to the trouble of) describes 「来る」, so it goes first: わざわざ → 来る → ことは → ない. The ★ is 「ことは」.\nTrap: Putting 「わざわざ」 after 「ことは」. It describes the action 「来る」, so it goes before the verb."
     },
     "wrong": [
       null,
@@ -386,8 +386,8 @@
       "en": "Excuse me, could you show me how to use this copier?"
     },
     "why": {
-      "zh": "“……的用法”是「ます形词干＋方」：使い方。整体是名词，所以能接「を」。",
-      "en": "\"How to use\" is stem ＋ 「方」: 使い方 — a noun, so it can take 「を」."
+      "zh": "线索：空格前是「コピー機の」，后面是「を 教えて ください」——要填名词，意思是“用法”。\n规则：“……的方法”是「ます形词干＋方（かた）」：使います → 使い方。接上「方」后整体是名词，能接「の」「を」。\n容易错：「使う方」用了辞书形；表示“方法”的「方」要接ます形词干。",
+      "en": "Clue: 「コピー機の」 comes before the blank and 「を 教えて ください」 after: you need a noun meaning \"how to use\".\nRule: \"The way of doing\" is ます-stem ＋ 「方」 (かた): 使います → 使い方. With 「方」 the whole thing is a noun, so it can take 「の」 and 「を」.\nTrap: 「使う方」 uses the dictionary form; 「方」 meaning \"way of\" attaches to the ます-stem."
     },
     "wrong": [
       {
@@ -427,8 +427,8 @@
       "en": "I don't know how to get to the station, so I'll look it up on the map."
     },
     "why": {
-      "zh": "前面有「駅までの」，要接名词：“去车站的走法”是「行き方」。",
-      "en": "「駅までの」 needs a noun after it: \"the way to get there\" is 「行き方」."
+      "zh": "线索：空格在「駅までの」后面、「が 分からない」前面，要填名词，意思是“怎么走”。\n规则：「ます形词干＋方（かた）」把动词变成“……的方法”：行きます → 行き方。\n辨析：「方」读「かた」是“方法”（行き方）；读「ほう」是比较、建议（行ったほうがいい）。",
+      "en": "Clue: Between 「駅までの」 and 「が 分からない」 you need a noun meaning \"how to get there\".\nRule: ます-stem ＋ 「方」 (かた) turns a verb into \"the way of doing it\": 行きます → 行き方.\nContrast: 「方」 read かた means \"way of doing\" (行き方); read ほう it's for comparison and advice (行ったほうがいい)."
     },
     "wrong": [
       {
@@ -474,8 +474,8 @@
       "en": "A friend taught me how to make a cake."
     },
     "why": {
-      "zh": "「作り方」（ます形词干＋方）是名词，前面接「ケーキの」，后面接「を」：ケーキの 作り方を 教えて もらいました。★ 在第二格，是「作り方を」。",
-      "en": "「作り方」 (stem ＋ 方) is a noun, so 「ケーキの」 comes before it and 「を」 after: ケーキの 作り方を 教えて もらいました. The ★ is the second slot: 「作り方を」."
+      "zh": "线索：「友だちに」加碎片「教えて」「もらいました」，是「人に〜て もらう」；「作り方を」是教的内容。\n怎么排：「教えて もらいました」先连好，放在句末；「作り方」（ます形词干＋方）是名词，前面用「ケーキの」修饰，后面带「を」做「教えて」的宾语。顺序：ケーキの → 作り方を → 教えて → もらいました，★ 是「作り方を」。\n容易错：把「ケーキの」放到「作り方を」后面。用「の」连两个名词时，修饰的放前面：「ケーキの 作り方」。",
+      "en": "Clue: 「友だちに」 plus the pieces 「教えて」「もらいました」 form 「人に〜て もらう」, and 「作り方を」 is what was taught.\nOrder: 「教えて もらいました」 joins first and ends the sentence; 「作り方」 (ます-stem ＋ 方) is a noun, described by 「ケーキの」 in front and followed by 「を」 as the object of 「教えて」: ケーキの → 作り方を → 教えて → もらいました. The ★ is 「作り方を」.\nTrap: Putting 「ケーキの」 after 「作り方を」. When 「の」 links two nouns, the describing one comes first: 「ケーキの 作り方」."
     },
     "wrong": [
       null,
@@ -506,8 +506,8 @@
       "en": "It was sunny a moment ago, but suddenly it started to rain."
     },
     "why": {
-      "zh": "「急に」表示没有预兆突然开始，用「ます形词干＋出す」。",
-      "en": "「急に」 marks a sudden, unannounced start: stem ＋ 「出す」."
+      "zh": "线索：「さっきまで 晴れて いたのに」和「急に」——雨没有预兆地突然下起来。\n规则：突然开始用「ます形词干＋出す」：降り出しました。\n容易错：「降り続けました」也是复合动词，但“一直下”和「急に」（突然）合不上。",
+      "en": "Clue: 「さっきまで 晴れて いたのに」 and 「急に」: the rain started without warning.\nRule: A sudden start is ます-stem ＋ 「出す」: 降り出しました.\nTrap: 「降り続けました」 is a compound verb too, but \"kept raining\" doesn't fit 「急に」 (suddenly)."
     },
     "wrong": [
       null,
@@ -547,8 +547,8 @@
       "en": "It rained for three days straight, and the river rose."
     },
     "why": {
-      "zh": "「3日間」表示一段持续的时间，“连续下”用「ます形词干＋続ける」。",
-      "en": "「3日間」 is a stretch of time, so \"kept raining\" is stem ＋ 「続ける」."
+      "zh": "线索：「3日間」是一段时间，后面「川の 水が 多く なりました」是一直下雨的结果。\n规则：一直持续做用「ます形词干＋続ける」：降り続けて（て形说原因）。\n技巧：复合动词看旁边的词：「急に」「突然」配「〜出す」；「3日間」「10年間」这类时长配「〜続ける」。",
+      "en": "Clue: 「3日間」 is a span of time, and 「川の 水が 多く なりました」 is the result of all that rain.\nRule: Keeping on doing something is ます-stem ＋ 「続ける」: 降り続けて (the て-form gives the cause).\nTip: For compound verbs, look at the words nearby: 「急に」 or 「突然」 goes with 「〜出す」; a length of time like 「3日間」 or 「10年間」 goes with 「〜続ける」."
     },
     "wrong": [
       {
@@ -593,8 +593,8 @@
       "en": "I started taking piano lessons last month."
     },
     "why": {
-      "zh": "ピアノを ＋ 習い（ます形词干）＋ 始め ＋ ました：有意识地开始做用「〜始める」。★ 在第四格，是「ました」。",
-      "en": "ピアノを ＋ 習い (stem) ＋ 始め ＋ ました: a deliberate start is 「〜始める」. The ★ is the fourth slot: 「ました」."
+      "zh": "线索：「先月から」（从上个月起），碎片「習い」「始め」「ました」，是复合动词「〜始める」（开始做）。\n怎么排：「始め」接在ます形词干「習い」后面，组成「習い始め」，再接「ました」；宾语「ピアノを」放在动词前面。顺序：ピアノを → 習い → 始め → ました，★ 是「ました」。\n容易错：把「始め」放在「習い」前面。复合动词是“动作＋始める”：「習い始める」，不是「始め習う」。",
+      "en": "Clue: 「先月から」 (since last month) and the pieces 「習い」「始め」「ました」 point to the compound verb 「〜始める」 (start doing).\nOrder: 「始め」 follows the ます-stem 「習い」 → 「習い始め」, then 「ました」; the object 「ピアノを」 comes before the verb: ピアノを → 習い → 始め → ました. The ★ is 「ました」.\nTrap: Putting 「始め」 before 「習い」. A compound verb is action ＋ 始める: 「習い始める」, not 「始め習う」."
     },
     "wrong": [
       null,
@@ -626,8 +626,8 @@
       "en": "This building is 100 metres tall."
     },
     "why": {
-      "zh": "「の」后面、「は」前面要放名词。い形容词去掉「い」加「さ」变成名词：高さ（高度）。",
-      "en": "Between 「の」 and 「は」 you need a noun. Drop the い and add 「さ」: 高さ (height)."
+      "zh": "线索：空格夹在「ビルの」和「は」之间，后面说「100メートルです」——要填一个表示“高度”的名词。\n规则：い形容词去「い」加「さ」变成名词，表示程度：高い → 高さ。\n容易错：「高い」「高く」「高くて」都是形容词的变形，不能放在「の」和「は」之间当主语。",
+      "en": "Clue: The blank sits between 「ビルの」 and 「は」, and then comes 「100メートルです」: you need a noun meaning \"height\".\nRule: An i-adjective drops 「い」 and adds 「さ」 to become a noun of degree: 高い → 高さ.\nTrap: 「高い」, 「高く」 and 「高くて」 are all adjective forms; none of them can stand between 「の」 and 「は」 as the topic."
     },
     "wrong": [
       {
@@ -667,8 +667,8 @@
       "en": "It was only after I got sick that I understood how important health is."
     },
     "why": {
-      "zh": "「健康の」后面、「が」前面要名词。な形容词词干＋「さ」：大切さ（重要性）。",
-      "en": "After 「健康の」 and before 「が」 you need a noun: な-adjective stem ＋ 「さ」 → 大切さ."
+      "zh": "线索：空格在「健康の」和「が 分かりました」之间，要填名词：“健康的重要性”。\n规则：な形容词词干加「さ」变成名词：大切 → 大切さ。\n技巧：空格夹在「〜の」和「は／が／を」之间时，一般要填名词：形容词选「〜さ」（大切さ），动词选「ます形词干＋方」（使い方）。",
+      "en": "Clue: The blank is between 「健康の」 and 「が 分かりました」, so it needs a noun: \"the importance of health\".\nRule: A na-adjective stem ＋ 「さ」 becomes a noun: 大切 → 大切さ.\nTip: A blank between 「〜の」 and 「は／が／を」 usually needs a noun: for an adjective pick 「〜さ」 (大切さ), for a verb ます-stem ＋ 「方」 (使い方)."
     },
     "wrong": [
       {
@@ -713,8 +713,8 @@
       "en": "Excuse me, how deep is this river?"
     },
     "why": {
-      "zh": "深さ（深度，名词）＋ は ＋ どの くらいです ＋ か：问程度。★ 在第一格，是「深さ」。",
-      "en": "深さ (depth, a noun) ＋ は ＋ どの くらいです ＋ か: asking how much. The ★ is the first slot: 「深さ」."
+      "zh": "线索：「川の」后面要接名词，碎片里能接上的是「深さ」（深度）；「どの」「くらいです」组成「どの くらいですか」（有多少）。\n怎么排：「川の 深さ」先连好，后接「は」做话题；「どの」接「くらいです」，放在句末「か」前面。顺序：深さ → は → どの → くらいです，★ 是「深さ」。\n容易错：把「どの くらいです」放到「は」前面。问句的结构是“话题＋は＋疑问词”：「深さは どの くらいですか」。",
+      "en": "Clue: 「川の」 needs a noun after it, and the one among the pieces is 「深さ」 (depth); 「どの」 and 「くらいです」 form 「どの くらいですか」 (how much).\nOrder: Join 「川の 深さ」 first, then 「は」 makes it the topic; 「どの」 goes with 「くらいです」 just before the final 「か」: 深さ → は → どの → くらいです. The ★ is 「深さ」.\nTrap: Putting 「どの くらいです」 before 「は」. The question is topic ＋ 「は」 ＋ question word: 「深さは どの くらいですか」."
     },
     "wrong": [
       null,

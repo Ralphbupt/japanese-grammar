@@ -21,8 +21,8 @@
       "en": "I have no money this month, so I won't buy anything."
     },
     "why": {
-      "zh": "「何も」后面要用否定。「買う」是「う」结尾的一类动词，ない形是「買わない」。",
-      "en": "「何も」 needs a negative. 「買う」 ends in 「う」, so its ない-form is 「買わない」."
+      "zh": "线索：空格前是「何も」（什么都），前面又说「お金が ないから」。\n规则：「何も」后面一定接否定，意思是“什么都不……”。「買う」以「う」结尾，ない形是「買わない」，不是「買あない」。",
+      "en": "Clue: The blank follows 「何も」 (anything), and the speaker has no money (「お金が ないから」).\nRule: 「何も」 must be followed by a negative: \"not … anything\". 「買う」 ends in う, and its ない-form is 「買わない」, not 「買あない」."
     },
     "wrong": [
       null,
@@ -62,8 +62,8 @@
       "en": "A: Got time today? B: Sorry, I don't have time today."
     },
     "why": {
-      "zh": "「ごめん」说明是否定回答。「ある」的ない形是特例，直接变成「ない」。",
-      "en": "「ごめん」 signals a no. The ない-form of 「ある」 is irregular: just 「ない」."
+      "zh": "线索：A 问「時間 ある？」，B 先说「ごめん」（抱歉），是在拒绝，回答“没有时间”。\n规则：「ある」的否定是特例，不说「あらない」，直接说「ない」。",
+      "en": "Clue: A asks 「時間 ある？」 and B starts with 「ごめん」 (sorry) — turning A down: no time.\nRule: The negative of 「ある」 is irregular: not 「あらない」, just 「ない」."
     },
     "wrong": [
       null,
@@ -108,8 +108,8 @@
       "en": "A: Does your sister drink coffee too? B: No, she's someone who doesn't drink coffee."
     },
     "why": {
-      "zh": "「飲む」的ない形是「飲まない」，简体形可以直接修饰名词「人」：飲ま ない 人 だよ。★ 是第二格「ない」。",
-      "en": "「飲む」 → 「飲まない」, and the plain form can modify the noun 「人」 directly: 飲ま ない 人 だよ. The ★ is 「ない」."
+      "zh": "线索：B 说「ううん」，意思是姐姐不喝；四块是「飲ま」「ない」「人」「だよ」。\n怎么排：「飲ま」＋「ない」连成「飲まない」；简体的「飲まない」可以直接放在名词「人」前面修饰它；「だよ」接在名词后结束句子。顺序：飲ま → ない → 人 → だよ，★ 是「ない」。\n容易错：把「人」放在「飲まない」前面。修饰名词的部分要放在名词前：「飲まない 人」。",
+      "en": "Clue: B says 「ううん」 — the sister doesn't drink it; the pieces are 「飲ま」「ない」「人」「だよ」.\nOrder: 「飲ま」 ＋ 「ない」 make 「飲まない」, which as a plain form can sit directly before the noun 「人」; 「だよ」 follows the noun and ends the sentence: 飲ま → ない → 人 → だよ. The ★ is 「ない」.\nTrap: Putting 「人」 before 「飲まない」. The describing part goes before the noun: 「飲まない 人」."
     },
     "wrong": [
       null,
@@ -140,8 +140,8 @@
       "en": "I have an important exam tomorrow. I have to study a lot tonight."
     },
     "why": {
-      "zh": "明天有重要考试，所以今晚“必须”多学习，用「〜なければなりません」。",
-      "en": "An important exam tomorrow means you must study tonight: 「〜なければなりません」."
+      "zh": "线索：前一句「あしたは だいじな しけんが あります」，所以今晚要多学习。\n规则：“必须做”用「ない形去掉い＋ければ なりません」：「べんきょうしない」→「べんきょうしなければ なりません」。",
+      "en": "Clue: The first sentence says there's an important exam tomorrow (「あしたは だいじな しけんが あります」), so tonight calls for studying.\nRule: \"Must\" is the ない-form minus い ＋ 「ければ なりません」: 「べんきょうしない」→「べんきょうしなければ なりません」."
     },
     "wrong": [
       null,
@@ -181,8 +181,8 @@
       "en": "The doctor told me to, so I have to take this medicine every day."
     },
     "why": {
-      "zh": "后面是「なりません」，前面要用「ない形去い＋ければ」：飲まなければなりません（必须吃）。",
-      "en": "Before 「なりません」 you need ない-form minus い ＋ ければ: 飲まなければなりません (must take)."
+      "zh": "线索：空格后面是「なりません」，前面说「いしゃが 言いましたから」。\n规则：选项里能接「なりません」的只有「〜なければ」（「〜なくては なりません」也可以，但选项3少了「は」）：「飲まない」去掉「い」加「ければ」，成「飲まなければ なりません」。\n技巧：四个选项都以「飲まな」开头时，看空格后面的词：「なりません」配「なければ」，「いい」配「なくても」，「ください」配「ないで」。",
+      "en": "Clue: The blank is followed by 「なりません」, and the doctor said so (「いしゃが 言いましたから」).\nRule: Of these options only 「〜なければ」 can take 「なりません」 (「〜なくては なりません」 also works, but option 3 has no 「は」): 「飲まない」 drops い and adds 「ければ」, giving 「飲まなければ なりません」.\nTip: When all four options start with 「飲まな」, look at the word after the blank: 「なりません」 takes 「なければ」, 「いい」 takes 「なくても」, 「ください」 takes 「ないで」."
     },
     "wrong": [
       null,
@@ -191,8 +191,8 @@
         "en": "「〜ないで」 goes with 「ください」 or another action, not 「なりません」."
       },
       {
-        "zh": "「〜なくて」后面接「もいい」等，「なくてなりません」不成立。",
-        "en": "「〜なくて」 goes with 「もいい」 etc.; 「なくてなりません」 isn't a pattern."
+        "zh": "「なくて」后面少了「は」：要说「なくては なりません」，「なくて なりません」不成立。",
+        "en": "「なくて」 is missing 「は」: it has to be 「なくては なりません」; 「なくて なりません」 doesn't work."
       },
       {
         "zh": "「〜なくても」要接「いい」（不……也可以），不能接「なりません」。",
@@ -227,8 +227,8 @@
       "en": "I have to hand in the report by tomorrow."
     },
     "why": {
-      "zh": "宾语「レポートを」在前，「出す」的ない形去い：出さ＋なければ＋なりません。★ 在第四格，是「なりません」。",
-      "en": "The object 「レポートを」 comes first, then 「出す」 → 出さ ＋ なければ ＋ なりません. The ★ is the fourth slot: 「なりません」."
+      "zh": "线索：有「なければ」「なりません」，是「〜なければ なりません」（必须）。\n怎么排：「出さ」＋「なければ」＋「なりません」连成一串；宾语「レポートを」放在动词前面。顺序：レポートを → 出さ → なければ → なりません，★ 是「なりません」。\n容易错：把「レポートを」插到「出さ」和「なければ」中间。「出さなければ」是一个词，中间不能插别的。",
+      "en": "Clue: 「なければ」 and 「なりません」 make 「〜なければ なりません」 (must).\nOrder: 「出さ」 ＋ 「なければ」 ＋ 「なりません」 form one chain, and the object 「レポートを」 goes before the verb: レポートを → 出さ → なければ → なりません. The ★ is 「なりません」.\nTrap: Slipping 「レポートを」 between 「出さ」 and 「なければ」. 「出さなければ」 is one word and can't be split."
     },
     "wrong": [
       null,
@@ -260,8 +260,8 @@
       "en": "A: Do I have to come tomorrow too? B: No, you don't have to come tomorrow."
     },
     "why": {
-      "zh": "对“必须……吗”回答「いいえ」，意思是“不必”，用「〜なくてもいいです」。",
-      "en": "Answering 「いいえ」 to \"must I…?\" means \"you don't have to\": 「〜なくてもいいです」."
+      "zh": "线索：A 问「来なければ なりませんか」（必须来吗），B 答「いいえ」。\n规则：“必须吗？”的否定回答是“不用”，用「ない形去掉い＋くても いい」：「来ない」→「来なくても いいです」。标准说法是「なくても」；「ないでも いい」口语里偶尔听到，但考试选「なくても」。",
+      "en": "Clue: A asks 「来なければ なりませんか」 (do I have to come?) and B says 「いいえ」.\nRule: The \"no\" to \"Do I have to?\" is \"You don't have to\": the ない-form minus い ＋ 「くても いい」, so 「来ない」→「来なくても いいです」. The standard form is 「なくても」; 「ないでも」 is sometimes heard in casual speech, but tests expect 「なくても」."
     },
     "wrong": [
       null,
@@ -274,8 +274,8 @@
         "en": "「なくてもいけません」 isn't a pattern; 「ても」 goes with 「いい」."
       },
       {
-        "zh": "形式错了：ない形接「ても」时要变成「なくても」，不说「ないでも」。",
-        "en": "Wrong form: ない becomes 「なくても」, not 「ないでも」."
+        "zh": "标准形式是「なくても」；「ないでも」只在随便的口语里偶尔出现，考试不选。",
+        "en": "The standard form is 「なくても」; 「ないでも」 turns up only in casual speech and is not the test answer."
       }
     ]
   },
@@ -307,8 +307,8 @@
       "en": "There's plenty of time, so you don't have to hurry. Take your time."
     },
     "why": {
-      "zh": "“时间很多”“慢慢来就好”，说明“不必着急”，用「〜なくてもいいです」。",
-      "en": "\"Plenty of time\" and \"take your time\" mean \"no need to hurry\": 「〜なくてもいいです」."
+      "zh": "线索：前面是「時間は たくさん ありますから」，后面是「ゆっくりで いいですよ」。\n规则：告诉对方“不用做”用「〜なくても いいです」：「いそぐ」→「いそがない」→「いそがなくても いいです」。",
+      "en": "Clue: Before the blank, 「時間は たくさん ありますから」; after it, 「ゆっくりで いいですよ」.\nRule: Telling someone they don't need to do something is 「〜なくても いいです」: 「いそぐ」→「いそがない」→「いそがなくても いいです」."
     },
     "wrong": [
       null,
@@ -359,8 +359,8 @@
       "en": "A: Is it okay not to take off my shoes in this house? B: Yes, you can keep them on."
     },
     "why": {
-      "zh": "「脱ぐ」的ない形是「脱がない」，变成「脱がなくても」＋いい＋です＋か。★ 是第二格「なくても」。",
-      "en": "「脱ぐ」 → 「脱がない」 → 脱が ＋ なくても ＋ いい ＋ です ＋ か. The ★ is 「なくても」."
+      "zh": "线索：B 说「そのままで いいですよ」（就这样就行），A 问的是“可以不脱吗”；四块里有「なくても」「いい」。\n怎么排：「ぬが」＋「なくても」成「ぬがなくても」，再接「いい」「です」，句尾的「か」已给出。顺序：ぬが → なくても → いい → です，★ 是「なくても」。\n容易错：把「いい」放在「なくても」前面。句型是「〜なくても いい」，「いい」在后。",
+      "en": "Clue: B says 「そのままで いいですよ」 (fine as you are), so A asked whether it's OK not to take them off; the pieces include 「なくても」 and 「いい」.\nOrder: 「ぬが」 ＋ 「なくても」 make 「ぬがなくても」, then 「いい」 and 「です」, with 「か」 already given: ぬが → なくても → いい → です. The ★ is 「なくても」.\nTrap: Putting 「いい」 before 「なくても」. The pattern is 「〜なくても いい」, いい last."
     },
     "wrong": [
       null,
@@ -392,8 +392,8 @@
       "en": "A: Do I have to read this whole book? B: No, you don't have to read all of it. Just the important parts is fine."
     },
     "why": {
-      "zh": "“必须做吗”的否定回答是“不必做”——「なければならない」的反面是「なくてもいい」，不是「てはいけない」。",
-      "en": "The \"no\" answer to \"must I?\" is \"you don't have to\": the opposite of 「なければならない」 is 「なくてもいい」, not 「てはいけない」."
+      "zh": "线索：A 问「読まなければ なりませんか」，B 答「いいえ」，后面又说只读重要的部分就行。\n规则：「なければ ならない」（必须）的反面是「なくても いい」（不必）。\n容易错：以为回答「いいえ」就要用「〜ては いけません」。问“必须吗”，否定是“不用”；问“可以吗”，否定才是“不行”。",
+      "en": "Clue: A asks 「読まなければ なりませんか」, B says 「いいえ」 and adds that the important parts are enough.\nRule: The opposite of 「なければ ならない」 (must) is 「なくても いい」 (don't have to).\nTrap: Assuming a \"no\" calls for 「〜ては いけません」. \"Must I?\" → \"No need\"; only \"May I?\" → \"No, you mustn't\"."
     },
     "wrong": [
       null,
@@ -440,8 +440,8 @@
       "en": "A: May I use a dictionary? B: No, it's a test today, so you must not use one."
     },
     "why": {
-      "zh": "对“可以……吗”回答「いいえ」，就是“不可以”——「てもいい」的反面是「てはいけない」。",
-      "en": "\"No\" to \"may I?\" means \"you may not\": the opposite of 「てもいい」 is 「てはいけない」."
+      "zh": "线索：A 问「つかっても いいですか」（可以用吗），B 答「いいえ」，理由是今天考试。\n规则：「ても いい」（可以）的反面是「ては いけない」（不许）：「つかっても いいですか」→「いいえ、つかっては いけません」。",
+      "en": "Clue: A asks 「つかっても いいですか」 (may I use it?), and B says 「いいえ」 because there's a test today.\nRule: The opposite of 「ても いい」 (may) is 「ては いけない」 (must not): 「つかっても いいですか」→「いいえ、つかっては いけません」."
     },
     "wrong": [
       null,
@@ -481,8 +481,8 @@
       "en": "I had no time this morning, so I went to school without eating breakfast."
     },
     "why": {
-      "zh": "“没吃早饭就去了学校”——没做 A 就做了 B，表示行为方式，用「〜ないで」。",
-      "en": "\"Went to school without eating breakfast\" — doing B without doing A is 「〜ないで」."
+      "zh": "线索：前面说早上没时间，后面是「学校へ 行きました」——没做一件事，就直接去做了另一件。\n规则：“没做 A 就做了 B”用「ない形＋で」：「食べない」→「食べないで」。「〜なくて」表示原因“因为没……”。",
+      "en": "Clue: There was no time this morning, and then 「学校へ 行きました」 — skipped one thing and went straight on to another.\nRule: \"Did B without doing A\" is the ない-form ＋ 「で」: 「食べない」→「食べないで」. 「〜なくて」 gives a reason (\"because … not\")."
     },
     "wrong": [
       null,
@@ -522,8 +522,8 @@
       "en": "I didn't have any money, so I couldn't buy anything."
     },
     "why": {
-      "zh": "“没钱”是“买不了”的原因，表示原因用「〜なくて」。",
-      "en": "Having no money is the reason for not being able to buy: reason → 「〜なくて」."
+      "zh": "线索：「お金が ない」是原因，后面「何も 買えませんでした」是结果。\n规则：“因为没有……所以……”用「〜なくて」：「ない」→「なくて」。「〜ないで」是“没做 A 就做 B”，前面要是人做的动作。\n技巧：用中文试一下：说得通“没……就……”的是「ないで」，说得通“因为没……所以……”的是「なくて」。",
+      "en": "Clue: Having no money (「お金が ない」) is the cause, and 「何も 買えませんでした」 is the result.\nRule: \"Because there's no …, …\" uses 「〜なくて」: 「ない」→「なくて」. 「〜ないで」 means \"did B without doing A\" and needs an action someone does.\nTip: Test it in your own language: if \"without doing … I did …\" fits, it's 「ないで」; if \"because … not, …\" fits, it's 「なくて」."
     },
     "wrong": [
       null,
@@ -574,8 +574,8 @@
       "en": "My younger brother went to school this morning without eating breakfast."
     },
     "why": {
-      "zh": "“没吃早饭就去了学校”是行为方式，用「ない形＋で」：朝ご飯 を 食べ ないで。★ 是第四格「ないで」。",
-      "en": "\"Went without eating\" is manner: ない-form ＋ で — 朝ご飯 を 食べ ないで. The ★ is 「ないで」."
+      "zh": "线索：有「食べ」和「ないで」，后面是「学校へ 行きました」：没吃早饭就去了学校。\n怎么排：「あさごはん」＋「を」是宾语，放在动词前；「食べ」＋「ないで」连成「食べないで」，接后面的「学校へ 行きました」。顺序：あさごはん → を → 食べ → ないで，★ 是「ないで」。\n容易错：把「を」放在「食べ」后面。「を」要紧跟在名词「あさごはん」后面。",
+      "en": "Clue: 「食べ」 and 「ないで」, followed by 「学校へ 行きました」 — went to school without eating breakfast.\nOrder: 「あさごはん」 ＋ 「を」 is the object and goes before the verb; 「食べ」 ＋ 「ないで」 make 「食べないで」, which leads into 「学校へ 行きました」: あさごはん → を → 食べ → ないで. The ★ is 「ないで」.\nTrap: Putting 「を」 after 「食べ」. 「を」 sticks right after the noun 「あさごはん」."
     },
     "wrong": [
       null,

@@ -27,8 +27,8 @@
       "en": "A: May I take photos here? B: Sure, go ahead."
     },
     "why": {
-      "zh": "B 回答「はい、どうぞ」（可以，请便），说明 A 是在征求许可。征求许可用「〜てもいいですか」。",
-      "en": "B answers 「はい、どうぞ」 (sure, go ahead), so A is asking for permission — that is 「〜てもいいですか」."
+      "zh": "线索：B 回答「はい、どうぞ」（可以，请），这是答应对方的许可请求。\n规则：问“可以做……吗”用「て形＋も いいですか」：「とる」→「とって」→「とっても いいですか」。",
+      "en": "Clue: B answers 「はい、どうぞ」 (yes, go ahead) — that grants permission.\nRule: \"May I…?\" is the て-form ＋ 「も いいですか」: 「とる」→「とって」→「とっても いいですか」."
     },
     "wrong": [
       null,
@@ -68,8 +68,8 @@
       "en": "Please be quiet in the library. You must not talk loudly."
     },
     "why": {
-      "zh": "前一句要求“请保持安静”，后一句接着说规矩：不可以大声说话，用表示禁止的「〜てはいけません」。",
-      "en": "The first sentence asks for quiet, so the second states the rule: no loud talking — the prohibition 「〜てはいけません」."
+      "zh": "线索：前一句「しずかに して ください」先提要求，后一句接着说图书馆里不许做的事。\n规则：禁止某个动作用「て形＋は いけません」：「話す」→「話して」→「話しては いけません」。",
+      "en": "Clue: The first sentence asks for quiet (「しずかに して ください」), and the second goes on to say what isn't allowed in the library.\nRule: Forbidding an action is the て-form ＋ 「は いけません」: 「話す」→「話して」→「話しては いけません」."
     },
     "wrong": [
       null,
@@ -78,8 +78,8 @@
         "en": "「〜てもいいです」 would allow loud talking, contradicting \"please be quiet\"."
       },
       {
-        "zh": "「〜てからです」不是完整的句尾，这里不成立。",
-        "en": "「〜てからです」 isn't a complete ending here."
+        "zh": "「話してからです」是“说完之后才……”，这里没有要说的先后顺序，接不上前一句的要求。",
+        "en": "「話してからです」 means \"it's after talking\" — there's no sequence to state here, and it doesn't follow the request."
       },
       {
         "zh": "「〜ています」是“（有人）正在大声说话”，和前一句的要求接不上，也没有主语。",
@@ -109,14 +109,14 @@
       "en": "Every morning I drink coffee and then go to work."
     },
     "why": {
-      "zh": "先喝咖啡、再去公司，表示动作的先后顺序用「て形＋から」（做完……之后）。",
-      "en": "First coffee, then work: 「て-form ＋ から」 marks \"after doing\"."
+      "zh": "线索：空格前是て形「飲んで」，后面是「会社へ 行きます」，两件事有先后。\n规则：「て形＋から」表示“做完 A 再做 B”。四个选项里能直接接在て形后面的只有「から」。",
+      "en": "Clue: The blank follows the て-form 「飲んで」, and 「会社へ 行きます」 comes after — one thing, then the other.\nRule: て-form ＋ 「から」 means \"after doing A, do B\". Of the options only 「から」 attaches to a て-form; 「ので」「が」「まで」 don't."
     },
     "wrong": [
       null,
       {
-        "zh": "「まで」接在名词或动词辞书形后面（～为止），不接在て形后面。",
-        "en": "「まで」 follows a noun or dictionary form, not the て-form."
+        "zh": "「まで」是“到……为止”，不表示先后，“喝了咖啡为止去公司”说不通。",
+        "en": "「まで」 means \"until\"; it doesn't give an order of events, so it doesn't fit here."
       },
       {
         "zh": "「ので」表示原因，接在普通形后面（飲むので），不接て形。",
@@ -150,8 +150,8 @@
       "en": "A: Where's Tanaka? B: Reading in the next room."
     },
     "why": {
-      "zh": "问的是田中现在在做什么，用表示正在进行的「〜ています」。",
-      "en": "A asks what Tanaka is doing right now — the ongoing action is 「〜ています」."
+      "zh": "线索：A 问田中在哪儿，B 说他在隔壁房间看书，说的是此刻的情况。\n规则：「読む」这种有持续过程的动词，「て形＋います」就是“正在……”：「読んで います」。",
+      "en": "Clue: A asks where Tanaka is, and B says he's reading in the next room — what's happening right now.\nRule: With an action that goes on for a while, like 「読む」, the て-form ＋ 「います」 means \"is doing\": 「読んで います」."
     },
     "wrong": [
       null,
@@ -202,8 +202,8 @@
       "en": "A: Excuse me, may I use this pen? B: Sure."
     },
     "why": {
-      "zh": "征求许可：使って（て形）＋ も ＋ いい ＋ です ＋ か。★ 在第一格，是「使って」。",
-      "en": "Asking permission: 使って (て-form) ＋ も ＋ いい ＋ です ＋ か. The ★ is the first slot: 「使って」."
+      "zh": "线索：B 答「ええ、いいですよ」，A 是在征求许可；四块是「つかって」「も」「いい」「です」。\n怎么排：许可句型是「て形＋も いい です」：「つかって」打头，接「も」，再接「いい」「です」，句尾的「か」已经给了。顺序：つかって → も → いい → です，★ 是「つかって」。\n容易错：把「も」放到「いい」后面。「も」要紧贴在て形后面：「つかっても」。",
+      "en": "Clue: B replies 「ええ、いいですよ」, so A is asking permission; the pieces are 「つかって」「も」「いい」「です」.\nOrder: The permission pattern is て-form ＋ 「も いい です」: 「つかって」 first, then 「も」, then 「いい」 and 「です」, with 「か」 already in place: つかって → も → いい → です. The ★ is 「つかって」.\nTrap: Putting 「も」 after 「いい」. 「も」 attaches straight to the て-form: 「つかっても」."
     },
     "wrong": [
       null,
@@ -246,8 +246,8 @@
       "en": "Every morning I take a shower and then go to school."
     },
     "why": {
-      "zh": "「シャワーを浴びる」（洗淋浴）是固定搭配；「浴びて＋から」表示先后；最后「学校へ行きます」。顺序：シャワーを 浴びて から 学校へ，★ 是第三格「から」。",
-      "en": "「シャワーを浴びる」 is the set phrase; 「浴びて＋から」 means \"after\"; then 「学校へ行きます」. Order: シャワーを 浴びて から 学校へ — the ★ is 「から」."
+      "zh": "线索：有「あびて」和「から」，是「て形＋から」（做完……再……）；句尾「行きます」前面要一个去的地方。\n怎么排：「シャワーを あびる」是固定搭配，「シャワーを」放在「あびて」前；「から」紧跟「あびて」；「学校へ」紧挨着「行きます」。顺序：シャワーを → あびて → から → 学校へ，★ 是「から」。\n容易错：把「学校へ」放到前面。去的地方要放在「から」后面、「行きます」前面。",
+      "en": "Clue: 「あびて」 ＋ 「から」 is the \"after doing\" pattern, and 「行きます」 at the end needs a destination before it.\nOrder: 「シャワーを あびる」 is a set phrase, so 「シャワーを」 goes before 「あびて」; 「から」 follows 「あびて」; 「学校へ」 sits next to 「行きます」: シャワーを → あびて → から → 学校へ. The ★ is 「から」.\nTrap: Moving 「学校へ」 to the front. The destination goes after 「から」, right before 「行きます」."
     },
     "wrong": [
       null,
@@ -284,8 +284,8 @@
       "en": "It's cold, isn't it? Oh, the window is open. Shall I close it?"
     },
     "why": {
-      "zh": "「窓が」用「が」，要接自动词「開く」；「開いています」表示“打开之后的状态”——窗户开着。",
-      "en": "「窓が」 takes the intransitive 「開く」, and 「開いています」 is the resulting state: the window is open."
+      "zh": "线索：空格前是「まどが」，用的是「が」；说话人觉得冷，还说「しめましょうか」，可见窗户现在开着。\n规则：「が」后面接自动词「あく」（开），「あいて います」表示开了以后一直开着的状态。「あける」（打开）是他动词，要说「まどを あける」。",
+      "en": "Clue: The blank follows 「まどが」, with 「が」, and the speaker is cold and offers 「しめましょうか」 — the window is open right now.\nRule: After 「が」 comes the intransitive 「あく」 (open), and 「あいて います」 is the state of having opened and staying open. 「あける」 (to open something) is transitive and needs 「まどを」."
     },
     "wrong": [
       null,
@@ -336,8 +336,8 @@
       "en": "A: What does your father do? B: My father works at a bank."
     },
     "why": {
-      "zh": "工作地点用「で」：銀行で；职业这种长期状态用「〜ています」。顺序：銀行 で 働いて います，★ 是第三格「働いて」。",
-      "en": "The workplace takes 「で」 (銀行で), and a job is a long-term state, 「〜ています」. Order: 銀行 で 働いて います — the ★ is 「働いて」."
+      "zh": "线索：A 问父亲做什么工作，B 要说他在哪里工作；有「はたらいて」「います」。\n怎么排：「ぎんこう」＋「で」表示工作的地方，放前面；「はたらいて」＋「います」连成「はたらいて います」。顺序：ぎんこう → で → はたらいて → います，★ 是「はたらいて」。\n容易错：以为说职业用「はたらきます」就行。现在长期在做的工作用「〜て います」。",
+      "en": "Clue: A asks about the father's job, so B says where he works; the pieces include 「はたらいて」 and 「います」.\nOrder: 「ぎんこう」 ＋ 「で」 marks the workplace and comes first; 「はたらいて」 ＋ 「います」 make 「はたらいて います」: ぎんこう → で → はたらいて → います. The ★ is 「はたらいて」.\nTrap: Thinking 「はたらきます」 would do. Someone's ongoing job is described with 「〜て います」."
     },
     "wrong": [
       null,
@@ -374,8 +374,8 @@
       "en": "This is a hospital, so please don't smoke."
     },
     "why": {
-      "zh": "“因为这里是医院”，后面自然是请对方不要抽烟，用否定请求「〜ないでください」。",
-      "en": "\"Because this is a hospital\" leads to asking someone not to smoke — the negative request 「〜ないでください」."
+      "zh": "线索：「ここは びょういんですから」先给出理由，后面是对对方的要求。\n规则：请别人不要做某事，用「ない形＋で ください」：「すう」→「すわない」→「すわないで ください」。",
+      "en": "Clue: 「ここは びょういんですから」 gives a reason, and what follows is a request to the listener.\nRule: Asking someone not to do something is the ない-form ＋ 「で ください」: 「すう」→「すわない」→「すわないで ください」."
     },
     "wrong": [
       null,
@@ -415,8 +415,8 @@
       "en": "Sorry, I didn't quite understand. Please say it again."
     },
     "why": {
-      "zh": "没听懂，所以请对方“再说一遍”，用请求「〜てください」。",
-      "en": "The speaker didn't understand, so they ask the other person to repeat it: 「〜てください」."
+      "zh": "线索：「よく わかりませんでした」，又说「もう いちど」（再一次），是在请对方重说。\n规则：请对方做某事用「て形＋ください」：「言う」→「言って」→「言って ください」。\n容易错：选「言いましょうか」。「〜ましょうか」是说话人主动提出自己来做，请别人做要用「〜て ください」。",
+      "en": "Clue: The speaker didn't understand (「よく わかりませんでした」) and says 「もう いちど」 (once more) — asking the other person to repeat it.\nRule: Asking someone to do something is the て-form ＋ 「ください」: 「言う」→「言って」→「言って ください」.\nTrap: Picking 「言いましょうか」. 「〜ましょうか」 offers to do it yourself; asking someone else needs 「〜て ください」."
     },
     "wrong": [
       null,
@@ -467,8 +467,8 @@
       "en": "Please don't use your phone during class."
     },
     "why": {
-      "zh": "否定请求是「ない形＋でください」：使わ＋ないで＋ください，前面是宾语「スマホを」。★ 是第三格「ないで」。",
-      "en": "A negative request is ない-form ＋ でください: 使わ ＋ ないで ＋ ください, after the object 「スマホを」. The ★ is 「ないで」."
+      "zh": "线索：有「ないで」「ください」，是否定请求「〜ないで ください」。\n怎么排：「つかわ」后面接「ないで」成「つかわないで」，再接「ください」；宾语「スマホを」放在动词前。顺序：スマホを → つかわ → ないで → ください，★ 是「ないで」。\n容易错：把「ないで」放到「ください」后面。否定要接在动词上：「つかわないで ください」。",
+      "en": "Clue: 「ないで」 and 「ください」 make the negative request 「〜ないで ください」.\nOrder: 「つかわ」 ＋ 「ないで」 make 「つかわないで」, followed by 「ください」; the object 「スマホを」 goes before the verb: スマホを → つかわ → ないで → ください. The ★ is 「ないで」.\nTrap: Putting 「ないで」 after 「ください」. The negative attaches to the verb: 「つかわないで ください」."
     },
     "wrong": [
       null,
@@ -499,8 +499,8 @@
       "en": "A: I've finished all of today's work. B: Thanks for your hard work. You can go home now."
     },
     "why": {
-      "zh": "工作做完了，B 说“辛苦了，那……”，是允许对方回家：「〜てもいいです」。",
-      "en": "The work is done and B says \"good work, so…\" — B is giving permission to leave: 「〜てもいいです」."
+      "zh": "线索：A 说工作都做完了，B 说「おつかれさまでした。じゃ、もう」，是让对方可以走了。\n规则：允许别人做某事用「て形＋も いいです」：「かえる」→「かえって」→「かえっても いいです」。",
+      "en": "Clue: A has finished all the work, and B says 「おつかれさまでした。じゃ、もう」 — letting A go.\nRule: Giving permission is the て-form ＋ 「も いいです」: 「かえる」→「かえって」→「かえっても いいです」."
     },
     "wrong": [
       null,
@@ -509,8 +509,8 @@
         "en": "「〜てはいけません」 forbids going home, which doesn't follow \"all done, good work\"."
       },
       {
-        "zh": "「〜てからです」不是完整的句尾，这里说不通。",
-        "en": "「〜てからです」 isn't a complete ending here."
+        "zh": "「かえってからです」是“回去之后才……”，这里没有要说的先后顺序，意思接不上。",
+        "en": "「かえってからです」 means \"it's after going home\" — there's no sequence to state here."
       },
       {
         "zh": "「〜ていません」是“还没回去”，B 正在和 A 说话，这样说没有意义。",
@@ -546,8 +546,8 @@
       "en": "This river is very deep. You must not swim here."
     },
     "why": {
-      "zh": "「〜てはいけません」接动词て形。「泳ぐ」以「ぐ」结尾，て形是「泳いで」。",
-      "en": "「〜てはいけません」 follows the て-form; 「泳ぐ」 ends in 「ぐ」, so its て-form is 「泳いで」."
+      "zh": "线索：空格后面是「は いけません」，前一句说这条河很深，是在禁止。\n规则：「〜ては いけません」前面一定是て形。「およぐ」以「ぐ」结尾，て形是「およいで」，所以成了「およいでは いけません」。",
+      "en": "Clue: The blank is followed by 「は いけません」, and the river is very deep — a prohibition.\nRule: 「〜ては いけません」 always takes the て-form. 「およぐ」 ends in ぐ, so its て-form is 「およいで」, giving 「およいでは いけません」."
     },
     "wrong": [
       null,
@@ -593,8 +593,8 @@
       "en": "A: Can I drink this water? B: No, you mustn't drink that water."
     },
     "why": {
-      "zh": "对征求许可的问题回答「いいえ」，用禁止「〜てはいけません」：飲んで は いけません よ。★ 在第一格，是「飲んで」。",
-      "en": "「いいえ」 to a permission question is answered with the prohibition 「〜てはいけません」: 飲んで は いけません よ. The ★ is the first slot: 「飲んで」."
+      "zh": "线索：A 问「飲んでも いいですか」，B 答「いいえ」，要说的是“不可以喝”。\n怎么排：禁止是「て形＋は いけません」：「飲んで」→「は」→「いけません」；语气词「よ」放在句末。顺序：飲んで → は → いけません → よ，★ 是「飲んで」。\n容易错：把「よ」放在「いけません」前面。「よ」只能放在句子最后。",
+      "en": "Clue: A asks 「飲んでも いいですか」 and B says 「いいえ」, so B says it must not be drunk.\nOrder: The prohibition is て-form ＋ 「は いけません」: 「飲んで」→「は」→「いけません」, with the particle 「よ」 at the very end: 飲んで → は → いけません → よ. The ★ is 「飲んで」.\nTrap: Putting 「よ」 before 「いけません」. 「よ」 only goes at the end of the sentence."
     },
     "wrong": [
       null,
@@ -626,8 +626,8 @@
       "en": "It's been three years since I came to Japan."
     },
     "why": {
-      "zh": "“来日本之后已经三年”，表示从某个动作之后开始算，用「て形＋から」。",
-      "en": "\"Three years since coming to Japan\" counts from an action: て-form ＋ から."
+      "zh": "线索：空格后是「から」，后面说「もう 三年に なります」，是从来日本那时起算的时间。\n规则：「て形＋から」表示“……之后（到现在）”：「来る」→「来て」→「来てから」。\n技巧：「から」接て形是“……之后”，接「来る」「来ます」这类形式是“因为……”。先看「から」前面是不是て形。",
+      "en": "Clue: The blank comes before 「から」, followed by 「もう 三年に なります」 — time counted from when the speaker came to Japan.\nRule: て-form ＋ 「から」 means \"since / after doing\": 「来る」→「来て」→「来てから」.\nTip: 「から」 after a て-form means \"after\"; after forms like 「来る」 or 「来ます」 it means \"because\". Check whether a て-form comes before 「から」."
     },
     "wrong": [
       null,

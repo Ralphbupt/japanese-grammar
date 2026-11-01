@@ -14,8 +14,8 @@
       "en": "(Calling a business partner) Thank you for your continued support. This is Tanaka from ABC Company."
     },
     "why": {
-      "zh": "商务电话、邮件、见面的固定开场白是「お世話になっております」（一直承蒙关照）。",
-      "en": "The set opener for business calls, emails and meetings is 「お世話になっております」."
+      "zh": "线索：给客户打电话的第一句，「いつも お世話に」后面接的是固定寒暄。\n规则：商务电话、邮件、见面的开场白固定是「お世話に なって おります」，「ております」是「ています」的謙譲说法。\n容易错：以为要换成敬语动词，选「なさって」或「いたして」。这句的动词是「なる」，不是「する」，固定说法不换。",
+      "en": "Clue: It's the opening line of a call to a business partner, and 「いつも お世話に」 leads into a set greeting.\nRule: The standard opener for business calls, emails and meetings is 「お世話に なって おります」: 「お世話に なる」 (receive your kind support) ＋ 「ております」 (humble ています).\nTrap: Thinking the verb must be swapped for a keigo verb and picking 「なさって」 or 「いたして」. The verb here is 「なる」, not 「する」, and the set phrase stays as it is."
     },
     "wrong": [
       null,
@@ -40,8 +40,8 @@
       "en": "Thank you for taking the time to see me today when you're so busy."
     },
     "why": {
-      "zh": "时间是对方给我的，“我得到了您的时间”用「もらう」的謙譲語「いただく」。",
-      "en": "The other person gave you their time — \"receiving\" it is the humble 「もらう」: 「いただく」."
+      "zh": "线索：「お時間を」后面接「ありがとうございます」：对方抽出时间给我，我是得到的一方。\n规则：“我从对方那里得到”用「もらう」的謙譲語「いただく」；「いただきまして」是「いただいて」的郑重说法，引出感谢的原因。\n辨析：「いただく」＝我从对方那儿得到；「さしあげる」＝我给对方。这里时间是从对方到我。",
+      "en": "Clue: 「お時間を」 is followed by 「ありがとうございます」 — the other person gave me their time, and I'm the one receiving it.\nRule: \"I receive from you\" is the humble 「もらう」, 「いただく」; 「いただきまして」 is the formal version of 「いただいて」, giving the reason for the thanks.\nContrast: 「いただく」 = I receive from you; 「さしあげる」 = I give to you. Here the time goes from them to me."
     },
     "wrong": [
       null,
@@ -65,8 +65,8 @@
       "en": "How do you do? I'm Tanaka, and I handle sales."
     },
     "why": {
-      "zh": "「担当させていただく」（承蒙让我负责）＋「ております」（现在的状态），整句修饰「田中」。★ 在第三格，是「いただいて」。",
-      "en": "「担当させていただく」 (be allowed to handle) ＋ 「ております」 (current state), all modifying 「田中」. The ★ is the third slot: 「いただいて」."
+      "zh": "线索：「営業を」后面要接动词，四块组成「担当させて いただいて おります」（我负责……），整块修饰「田中」。\n怎么排：先连「担当＋させて」（「担当する」的使役形），再接「いただいて」，最后接「おります」（「ています」的謙譲说法）表示现在的状态。顺序：担当 → させて → いただいて → おります，★ 是「いただいて」。\n容易错：把「おります」放到「いただいて」前面。「〜て おります」要接在て形后面，「いただいて」就是那个て形。",
+      "en": "Clue: 「営業を」 needs a verb, and the four pieces make 「担当させて いただいて おります」 (I handle…), which as a whole describes 「田中」.\nOrder: First 「担当」 ＋ 「させて」 (causative of 「担当する」), then 「いただいて」, and last 「おります」 (humble ています) for the current state: 担当 → させて → いただいて → おります. The ★ is 「いただいて」.\nTrap: Putting 「おります」 before 「いただいて」. 〜て おります attaches to a て-form, and 「いただいて」 is that て-form."
     },
     "wrong": [null, null, null, null]
   },
@@ -85,8 +85,8 @@
       "en": "(Answering a call at the office) \"Hello, ABC Trading.\""
     },
     "why": {
-      "zh": "接电话报自己公司名，用「です」的郑重形「でございます」。",
-      "en": "Answering with your own company's name uses the formal 「です」: 「でございます」."
+      "zh": "线索：接打进公司的电话，报的是自己公司的名字。\n规则：说自己一方用郑重说法。「です」的郑重形是「でございます」，接电话报公司名就说「〇〇で ございます」。\n容易错：选「で いらっしゃいます」。它也是“是”的敬语，但属于尊敬語，用来说对方（「田中様で いらっしゃいますか」），不用于自己公司。",
+      "en": "Clue: You're answering a call to the office and giving your own company's name.\nRule: Your own side gets the formal style. The formal 「です」 is 「でございます」, so on the phone you say 「〇〇で ございます」.\nTrap: Picking 「で いらっしゃいます」. It's also a polite \"is\", but it's honorific, for the other party (「田中様で いらっしゃいますか」), not your own company."
     },
     "wrong": [
       null,
@@ -110,8 +110,8 @@
       "en": "(Calling a client) \"Thank you for your continued support. This is Sato from XYZ Company. Is Mr. Tanaka, the manager, available?\""
     },
     "why": {
-      "zh": "问对方公司的部长在不在，部长是对方的人，用尊敬語「いらっしゃいますでしょうか」。",
-      "en": "The manager belongs to the other company, so asking if he's in takes 尊敬語: 「いらっしゃいますでしょうか」."
+      "zh": "线索：佐藤打电话到客户公司，「田中部長」是对方公司的人，问的是他在不在。\n规则：说对方一方的人“在”，用「いる」的尊敬語「いらっしゃる」，后接「でしょうか」更郑重：「いらっしゃいますでしょうか」。\n辨析：对方公司的部长→「いらっしゃる」；自己公司的部长、对外人说→「おる」（「田中は 席を 外して おります」）。",
+      "en": "Clue: Sato is calling a client, so 「田中部長」 belongs to the other company — the question is whether he is in.\nRule: Someone from the other side \"being\" there takes 「いらっしゃる」, the honorific of 「いる」; adding 「でしょうか」 makes it more formal: 「いらっしゃいますでしょうか」.\nContrast: Same question, different side: the client's manager → 「いらっしゃる」; your own manager, spoken of to an outsider → 「おる」 (「田中は 席を 外して おります」)."
     },
     "wrong": [
       null,
@@ -136,8 +136,8 @@
       "en": "Sorry to trouble you, but when he gets back, could he call Tanaka at ABC Company?"
     },
     "why": {
-      "zh": "「お戻りになりましたら」（您回来后）＋「ABC会社の田中まで」（打给 ABC 公司的田中）＋「お電話いただけますでしょうか」。★ 在第二格，是「ABC会社の」。",
-      "en": "「お戻りになりましたら」 (when he's back) ＋ 「ABC会社の田中まで」 (to Tanaka at ABC) ＋ 「お電話いただけますでしょうか」. The ★ is the second slot: 「ABC会社の」."
+      "zh": "线索：「お戻りに」后面接「なりましたら」（他回来以后）；句尾「いただけますでしょうか」前要接「お電話」。\n怎么排：「お戻りに＋なりましたら」先连好；「お電話」紧挨句尾；中间的公司名修饰「田中」，「田中まで」是打给谁。顺序：なりましたら → ABC会社の → 田中まで → お電話，★ 是「ABC会社の」。\n容易错：把「お電話」放到「田中まで」前面。「お電話いただく」（请对方打电话）是一个整体。",
+      "en": "Clue: 「お戻りに」 needs 「なりましたら」 (when he's back), and 「いただけますでしょうか」 at the end needs 「お電話」 before it.\nOrder: 「お戻りに」 ＋ 「なりましたら」 join first; 「お電話」 sits right before the ending, making 「お電話 いただけますでしょうか」; in between, 「ABC会社の」 modifies 「田中」 and 「田中まで」 says who to call: なりましたら → ABC会社の → 田中まで → お電話. The ★ is 「ABC会社の」.\nTrap: Putting 「お電話」 before 「田中まで」. 「お電話いただく」 (have you call) is one unit, with nothing in between."
     },
     "wrong": [null, null, null, null]
   },
@@ -156,8 +156,8 @@
       "en": "Sorry to trouble you, but could you check the attached document?"
     },
     "why": {
-      "zh": "「お手数ですが」（麻烦您）说明是在请对方确认，用请求句式「ご〜いただけますでしょうか」。",
-      "en": "「お手数ですが」 shows you're asking the reader to check, so the request 「ご〜いただけますでしょうか」."
+      "zh": "线索：开头「お手数ですが」（麻烦您了），句尾「でしょうか」，是在请对方做事；确认资料的是对方。\n规则：请对方做事的郑重问法是「ご＋汉语词＋いただけますでしょうか」→「ご確認 いただけますでしょうか」。\n辨析：「ご確認いただけますか」＝请您确认；「ご確認いたします」＝我来确认；「確認させて いただけますか」＝能让我确认吗。",
+      "en": "Clue: 「お手数ですが」 (sorry to trouble you) at the start and 「でしょうか」 at the end — it's a request, and the reader is the one who checks.\nRule: The formal way to ask someone to do something is ご ＋ Sino-Japanese word ＋ いただけますでしょうか → 「ご確認 いただけますでしょうか」.\nContrast: 「ご確認いただけますか」 = could you check (they do it); 「ご確認いたします」 = I'll check; 「確認させて いただけますか」 = may I check."
     },
     "wrong": [
       null,
@@ -181,8 +181,8 @@
       "en": "(End of an email) I'm sorry to trouble you when you're busy, but I look forward to your reply."
     },
     "why": {
-      "zh": "等回复的是写邮件的自己，用謙譲語模板「お待ちする」＋「ております」。",
-      "en": "The writer is the one waiting, so the humble 「お待ちする」 ＋ 「ております」."
+      "zh": "线索：邮件结尾，等「ご返信」（对方的回复）的是写邮件的我。\n规则：自己为对方做的事用謙譲語「お＋ます形去掉ます（待ち）＋する」→「お待ちする」，再接「ております」→「お待ちして おります」。\n容易错：选「に なって おります」。「お待ちに なる」是尊敬語，说的是对方在等。",
+      "en": "Clue: It's the end of an email, and the one waiting for 「ご返信」 (your reply) is the writer.\nRule: What you do for the other person takes the humble お ＋ ます-stem (待ち) ＋ する → 「お待ちする」, then 「ております」 → 「お待ちして おります」.\nTrap: Choosing 「に なって おります」. 「お待ちに なる」 is honorific — it would mean the reader is waiting."
     },
     "wrong": [
       null,
@@ -206,8 +206,8 @@
       "en": "Would 3 p.m. work for next week's meeting? If that suits you, I'll look forward to hearing from you."
     },
     "why": {
-      "zh": "「ご都合がよろしければ」（如果方便）＋「ご連絡を」＋「お待ちしております」（我等您联系）。★ 在第三格，是「お待ち」。",
-      "en": "「ご都合がよろしければ」 (if convenient) ＋ 「ご連絡を」 ＋ 「お待ちしております」 (I'll be waiting). The ★ is the third slot: 「お待ち」."
+      "zh": "线索：「ご都合が」后面接「よろしければ」（如果方便）；句尾「おります」前要接て形「して」，组成「お待ち して おります」。\n怎么排：「ご都合が＋よろしければ」先连好；「お待ち＋して＋おります」连在句尾；等的东西「ご連絡を」放在「お待ち」前面。顺序：よろしければ → ご連絡を → お待ち → して，★ 是「お待ち」。\n容易错：把「ご連絡を」放到「よろしければ」前面。「ご都合が」要直接接「よろしければ」，「ご都合が ご連絡を」不通。",
+      "en": "Clue: 「ご都合が」 is followed by 「よろしければ」 (if it suits you); the final 「おります」 needs the て-form 「して」, making 「お待ち して おります」.\nOrder: 「ご都合が」 ＋ 「よろしければ」 join first; 「お待ち」 ＋ 「して」 ＋ 「おります」 form the end; what is awaited, 「ご連絡を」, goes before 「お待ち」: よろしければ → ご連絡を → お待ち → して. The ★ is 「お待ち」.\nTrap: Putting 「ご連絡を」 before 「よろしければ」. 「ご都合が」 leads straight into 「よろしければ」; 「ご都合が ご連絡を」 makes no sense."
     },
     "wrong": [null, null, null, null]
   },
@@ -226,8 +226,8 @@
       "en": "I'm terribly sorry, but I have another commitment that day, so I'm afraid I can't accept."
     },
     "why": {
-      "zh": "「申し訳ございませんが」＋“另有安排”说明是在委婉拒绝。商务上不直说「できません」，用「〜かねます」（难以做到）。",
-      "en": "「申し訳ございませんが」 plus \"another commitment\" signals a polite refusal; business Japanese avoids 「できません」 and uses 「〜かねます」 (I'm unable to)."
+      "zh": "线索：「申し訳ございませんが」＋「別の 予定が ございまして」（另有安排），后面是委婉的拒绝。\n规则：商务上拒绝一般不直接说「できません」，用「〜かねます」（难以……）软化：「お受け いたしかねます」。\n容易错：「かねます」里没有「ない」，就当成肯定的“能接受”。它的意思是“做不到”，形式是肯定，意思是否定。",
+      "en": "Clue: 「申し訳ございませんが」 plus 「別の 予定が ございまして」 (I have another commitment) — what follows is a polite refusal.\nRule: In business you usually don't refuse with a flat 「できません」; you soften it with 「〜かねます」 (find it hard to…): 「お受け いたしかねます」.\nTrap: Taking 「かねます」 as positive because there is no 「ない」 in it. It means \"can't\" — positive in form, negative in meaning."
     },
     "wrong": [
       null,
@@ -251,8 +251,8 @@
       "en": "If you don't mind, could you tell me your phone number?"
     },
     "why": {
-      "zh": "询问对方个人信息前的缓冲语固定是「差し支えなければ」（如果不妨碍的话）。",
-      "en": "The cushion phrase before asking for personal details is 「差し支えなければ」 (if it's no trouble)."
+      "zh": "线索：后半句请对方告诉电话号码，是在问个人信息，前面需要一句缓冲语。\n规则：问对方敏感信息前的缓冲语是「差し支え なければ」：「差し支え」是“妨碍、不方便”，“没有妨碍的话”就是“如果方便的话”。\n容易错：选「あれば」。「差し支え あれば」是“如果不方便的话”，意思正好相反，接不上“请告诉我电话号码”。",
+      "en": "Clue: The second half asks for the other person's phone number — personal information — so a cushion phrase comes first.\nRule: The cushion before asking for something personal is 「差し支え なければ」: 「差し支え」 is \"hindrance, inconvenience\", so \"if there's no hindrance\" = \"if you don't mind\".\nTrap: Picking 「あれば」. 「差し支え あれば」 means \"if it's inconvenient\" — the opposite, and it doesn't lead into asking for the number."
     },
     "wrong": [
       null,
@@ -276,8 +276,8 @@
       "en": "I'm sorry, may I ask your name once more?"
     },
     "why": {
-      "zh": "「お客様のお名前を」＋「伺っても」（「聞く」的謙譲語＋ても）＋「よろしいでしょうか」。★ 在第二格，是「お名前を」。",
-      "en": "「お客様のお名前を」 ＋ 「伺っても」 (humble 「聞く」 ＋ ても) ＋ 「よろしいでしょうか」. The ★ is the second slot: 「お名前を」."
+      "zh": "线索：句尾「よろしいでしょうか」前要接「〜ても」，碎片「伺って」「も」组成「伺っても よろしいでしょうか」（可以请教……吗）。\n怎么排：「伺って＋も」连好接句尾；「お客様の」修饰「お名前」，「お客様の お名前を」是问的内容，放在「伺って」前面。顺序：お客様の → お名前を → 伺って → も，★ 是「お名前を」。\n容易错：这里的「伺う」是「聞く」（问）的謙譲語，不是“拜访”。问的人是说话人自己，所以用謙譲語。",
+      "en": "Clue: 「よろしいでしょうか」 at the end wants 「〜ても」, and the pieces 「伺って」「も」 make 「伺っても よろしいでしょうか」 (may I ask…?).\nOrder: 「伺って」 ＋ 「も」 join and lead into the ending; 「お客様の」 modifies 「お名前」, and 「お客様の お名前を」 (what I ask) goes before 「伺って」: お客様の → お名前を → 伺って → も. The ★ is 「お名前を」.\nTrap: Here 「伺う」 is the humble 「聞く」 (ask), not \"visit\". The speaker is the one asking, hence 謙譲語."
     },
     "wrong": [null, null, null, null]
   }

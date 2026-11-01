@@ -21,8 +21,8 @@
       "en": "The teacher made the late student stand in the hallway."
     },
     "why": {
-      "zh": "「立つ」是自动词，句中没有「を」宾语，被使役的人用「を」：学生を立たせる。",
-      "en": "立つ is intransitive — there is no を object — so the person made to act takes 「を」: 学生を立たせる."
+      "zh": "线索：动词是「立たせた」，原形「立つ」（站）是自动词，句子里没有别的「を」宾语。\n规则：使役句先看动词有没有「物を」：自动词（立つ、走る）没有，被使役的人用「を」（学生を 立たせる）；他动词已经有「物を」时，人一般改用「に」。\n容易错：「廊下に」的「に」是地点（站在走廊），不是被使役的人。",
+      "en": "Clue: The verb is 「立たせた」, from 「立つ」 (stand), an intransitive verb, and the sentence has no other 「を」 object.\nRule: In a causative, first check for a thing-を: intransitive verbs (立つ, 走る) have none, so the person made to act takes 「を」 (学生を 立たせる); when a transitive verb already has its 物を, the person usually switches to 「に」.\nTrap: The 「に」 in 「廊下に」 is the place (stand in the hallway), not the person made to act."
     },
     "wrong": [
       null,
@@ -62,8 +62,8 @@
       "en": "A: I'd like to talk with your son tomorrow. B: All right, I'll have him come here tomorrow."
     },
     "why": {
-      "zh": "「息子を」是被使役的人，B 是让儿子来：来る的使役形是「来させる」，自动词使役用「人を」。",
-      "en": "「息子を」 is the person B makes come: the causative of 来る is 「来させる」, and with an intransitive verb the person takes 「を」."
+      "zh": "线索：「息子を」后面接「ここに」，来的是儿子，不是 B；B 是安排儿子过来的人。\n规则：让别人做某事用使役形。「来る」的使役形是「来させる」（こさせる）；「来る」是自动词，被使役的人用「を」：息子を 来させる。",
+      "en": "Clue: 「息子を」 comes before 「ここに」 — the one coming is the son, not B; B is the one arranging for him to come.\nRule: Making someone do something is the causative. The causative of 「来る」 is 「来させる」 (こさせる); 来る is intransitive, so the person takes 「を」: 息子を 来させる."
     },
     "wrong": [
       null,
@@ -103,8 +103,8 @@
       "en": "A: Please let me do this job. B: All right, it's yours."
     },
     "why": {
-      "zh": "B 回答“那就拜托你了”，说明 A 在请求让自己来做：「私に〜させてください」（请让我做）。",
-      "en": "B answers 「お願いします」 (then please do), so A is asking to be allowed to do it: 「私に〜させてください」."
+      "zh": "线索：A 说「私に」，B 回答「じゃあ、お願いします」（那就拜托了），工作交给了 A 本人。\n规则：请对方允许自己做，用使役的て形加「ください」：「私に やらせて ください」（请让我做）。「私に」是要做这件事的人。\n技巧：中文能说成“请让我……”的请求，日语就用「〜させて ください」：「考えさせて ください」。",
+      "en": "Clue: A says 「私に」, and B replies 「じゃあ、お願いします」 (then it's yours) — the job goes to A himself.\nRule: Asking to be allowed to do something is the causative て-form ＋ 「ください」: 「私に やらせて ください」 (please let me do it). 「私に」 is the person who will do it.\nTip: A request that is \"let me …\" in English is 「〜させて ください」 in Japanese: 「考えさせて ください」."
     },
     "wrong": [
       null,
@@ -150,8 +150,8 @@
       "en": "Father used to make my brother wash his car."
     },
     "why": {
-      "zh": "他动词使役：人に＋物を＋使役形。自分の 車を 洗わせて いました，★ 在第三格，是「洗わせて」。",
-      "en": "Transitive causative: person に ＋ object を ＋ causative: 自分の 車を 洗わせて いました. The ★ is the third slot: 「洗わせて」."
+      "zh": "线索：「兄に」后面有碎片「車を」「洗わせて」，是他动词使役「人に 物を 〜させる」。\n怎么排：「洗わせて」和句尾「いました」连成「〜て いました」（那时常常……），放在最后；「自分の」修饰「車を」，放在它前面；宾语「車を」放在动词「洗わせて」前面。顺序：自分の → 車を → 洗わせて → いました，★ 是「洗わせて」。\n容易错：把「自分の」和「車」拆开。「自分の」要紧挨它修饰的名词：「自分の 車」。",
+      "en": "Clue: After 「兄に」 come the pieces 「車を」 and 「洗わせて」 — the transitive causative 「person に thing を 〜させる」.\nOrder: 「洗わせて」 joins the final 「いました」 as 「〜て いました」 (used to …), so it goes last; 「自分の」 describes 「車を」 and goes right before it; the object 「車を」 comes before its verb 「洗わせて」: 自分の → 車を → 洗わせて → いました. The ★ is 「洗わせて」.\nTrap: Splitting 「自分の」 from 「車」. 「自分の」 has to sit right before the noun it describes: 「自分の 車」."
     },
     "wrong": [
       null,
@@ -182,8 +182,8 @@
       "en": "My mother let me do what I loved. I'm truly grateful."
     },
     "why": {
-      "zh": "主语是妈妈，妈妈允许“我”做喜欢的事，我心怀感激：别人让我做 → 「させてくれる」。",
-      "en": "The subject is mother, who let me do what I liked, and I'm grateful: someone lets me do → 「させてくれる」."
+      "zh": "线索：主语是「母は」，做喜欢的事的是「私に」，后面说「本当に 感謝して いる」（真的很感激）。\n规则：别人允许我做某事、我心怀感激，用「〜させて くれる」，主语是给我这个机会的人：母は 私に 〜させて くれた。\n辨析：「させて くれる」＝主语是允许我的人（母は）；「させて もらう」＝主语是我（私は 母に 〜させて もらった）。",
+      "en": "Clue: The subject is 「母は」, 「私に」 is the one doing what they love, and then comes 「本当に 感謝して いる」 (I'm truly grateful).\nRule: When someone lets me do something and I'm grateful, use 「〜させて くれる」, with the person who allowed it as the subject: 母は 私に 〜させて くれた.\nContrast: 「させて くれる」 — the subject is the one who lets me (母は); 「させて もらう」 — the subject is me (私は 母に 〜させて もらった)."
     },
     "wrong": [
       null,
@@ -223,8 +223,8 @@
       "en": "Sorry, I'm not feeling well — could you let me go home early today?"
     },
     "why": {
-      "zh": "说话人请求对方允许自己早退：「〜させてもらえませんか」（能让我……吗）。",
-      "en": "The speaker asks to be allowed to leave early: 「〜させてもらえませんか」 (could you let me…)."
+      "zh": "线索：开头「すみません」，又说「気分が 悪いので」（因为不舒服）：说话人想请对方让自己早点回去。\n规则：请对方允许自己做，用使役「帰らせて」加「もらえませんか」（能不能……）：「帰らせて もらえませんか」＝能让我回去吗。\n容易错：「れて」只差一个字，可「帰られて」是被动形（受身形），后面接「もらえませんか」不成句。",
+      "en": "Clue: It opens with 「すみません」 and gives a reason, 「気分が 悪いので」 (because I feel ill) — the speaker wants permission to go home early.\nRule: Asking to be allowed to do something is the causative 「帰らせて」 ＋ 「もらえませんか」 (could you …?): 「帰らせて もらえませんか」 = could you let me go home?\nTrap: 「れて」 differs by one kana, but 「帰られて」 is the passive, and passive ＋ 「もらえませんか」 doesn't make a sentence."
     },
     "wrong": [
       null,
@@ -269,8 +269,8 @@
       "en": "My friend let me drive his new car."
     },
     "why": {
-      "zh": "别人允许我做：「〜させてくれる」。新しい 車を 運転させて くれた，★ 在第一格，是「新しい」。",
-      "en": "Someone lets me do something: 「〜させてくれる」. 新しい 車を 運転させて くれた — the ★ is the first slot: 「新しい」."
+      "zh": "线索：句首「友達が 私に」，碎片里有「運転させて」「くれた」，是「〜させて くれる」（别人让我做）。\n怎么排：「運転させて」和「くれた」先连成「運転させて くれた」放在最后；「新しい」修饰「車を」，放在它前面；宾语「車を」放在「運転させて」前面。顺序：新しい → 車を → 運転させて → くれた，★ 是「新しい」。\n容易错：把「新しい」放到「車を」后面。形容词要紧挨它修饰的名词：「新しい 車」。",
+      "en": "Clue: The sentence starts 「友達が 私に」, and the pieces include 「運転させて」 and 「くれた」 — 「〜させて くれる」 (someone lets me do).\nOrder: 「運転させて」 and 「くれた」 join as 「運転させて くれた」 at the end; 「新しい」 describes 「車を」 and goes before it; the object 「車を」 comes before 「運転させて」: 新しい → 車を → 運転させて → くれた. The ★ is 「新しい」.\nTrap: Putting 「新しい」 after 「車を」. An adjective sits right before the noun it describes: 「新しい 車」."
     },
     "wrong": [
       null,
@@ -303,8 +303,8 @@
       "en": "My senpai let me use his computer."
     },
     "why": {
-      "zh": "「させてもらう」的主语是我，允许我的人用「に」：先輩に使わせてもらった。",
-      "en": "With 「させてもらう」 the subject is me and the one who allows it takes 「に」: 先輩に使わせてもらった."
+      "zh": "线索：主语是「私は」，句尾是「使わせて もらった」，空格前是允许我用电脑的人。\n规则：「〜させて もらう」的主语是被允许的人（我），允许的人用「に」：先輩に 使わせて もらう。\n辨析：换成「くれる」，允许的人当主语，才用「が」：先輩が パソコンを 使わせて くれた。",
+      "en": "Clue: The subject is 「私は」, the sentence ends in 「使わせて もらった」, and the blank follows the person who let me use the computer.\nRule: With 「〜させて もらう」 the subject is the one allowed (me), and the one who allows it takes 「に」: 先輩に 使わせて もらう.\nContrast: With 「くれる」 the one who allows it becomes the subject and takes 「が」: 先輩が パソコンを 使わせて くれた."
     },
     "wrong": [
       null,
@@ -344,8 +344,8 @@
       "en": "Interviewer: Please begin. Student: Yes. First, allow me to introduce myself."
     },
     "why": {
-      "zh": "面试中学生自己要做自我介绍，用最礼貌的「〜させていただきます」（请允许我……）。",
-      "en": "In an interview the student is about to introduce himself — the most polite form is 「〜させていただきます」 (allow me to…)."
+      "zh": "线索：说话人是面试中的学生，做自我介绍的是他自己，听的人是面试官。\n规则：在正式场合说“请允许我做……”，用最礼貌的「〜させて いただきます」：自己紹介を させて いただきます。\n辨析：「して いただきます」＝请对方做（动作是对方的）；「させて いただきます」＝我在对方允许下做（动作是我的）。",
+      "en": "Clue: The speaker is the student in an interview; he is the one introducing himself, and the listener is the interviewer.\nRule: For \"allow me to …\" in a formal setting, use the most polite 「〜させて いただきます」: 自己紹介を させて いただきます.\nContrast: 「して いただきます」 — the other person does it; 「させて いただきます」 — I do it, with their permission."
     },
     "wrong": [
       null,
@@ -391,8 +391,8 @@
       "en": "Manager, could you let me check these documents once more?"
     },
     "why": {
-      "zh": "对上级请求允许自己做：私に＋确认させて＋いただけませんか。★ 在第三格，是「させて」。",
-      "en": "Asking a superior for permission: 私に 確認 させて いただけません か. The ★ is the third slot: 「させて」."
+      "zh": "线索：对「部長」说话，碎片「させて」「いただけません」加句尾「か」，是最礼貌的请求「〜させて いただけませんか」（能让我……吗）。\n怎么排：「確認」接「させて」成「確認させて」（让我确认），再接「いただけません」和句尾「か」；做确认的人「私に」放最前面。顺序：私に → 確認 → させて → いただけません，★ 是「させて」。\n容易错：把「私に」放到「させて」后面。「私に」是要做确认的人，要放在「確認させて」前面。",
+      "en": "Clue: The speaker addresses 「部長」, and the pieces 「させて」 and 「いただけません」 plus the final 「か」 make the most polite request, 「〜させて いただけませんか」 (could you let me …?).\nOrder: 「確認」 joins 「させて」 as 「確認させて」 (let me check), followed by 「いただけません」 and the final 「か」; 「私に」, the one who will check, comes first: 私に → 確認 → させて → いただけません. The ★ is 「させて」.\nTrap: Putting 「私に」 after 「させて」. 「私に」 is the person who will do the checking, so it goes before 「確認させて」."
     },
     "wrong": [
       null,

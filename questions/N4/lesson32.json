@@ -21,8 +21,8 @@
       "en": "The sky's getting dark. I think it'll rain this afternoon."
     },
     "why": {
-      "zh": "对天气的判断“我觉得会下雨”：普通形＋「と思う」，降る ＋ と思います。",
-      "en": "A guess about the weather: plain form ＋ 「と思う」 → 降ると思います."
+      "zh": "线索：前一句说天暗下来了，空格要填的是对「雨が」的判断；雨不是人，没有自己的意志。\n规则：说“我觉得会……”，「と思う」前面用普通形，动词就用辞书形（降る、行く）。\n辨析：「降ると思う」＝推测会下；「降ろうと思う」用意向形，是“我打算……”，用于人自己的打算（「行こうと思う」）。",
+      "en": "Clue: The first sentence says the sky is getting dark, so the blank is a guess about 「雨が」. Rain is not a person and has no will.\nRule: For \"I think it will…\", 「と思う」 takes the plain form; for a verb that is the dictionary form (降る, 行く).\nContrast: 「降ると思う」 = I expect it to rain; 「降ろうと思う」 uses the volitional and means \"I intend to\", which is for a person's own plans (「行こうと思う」)."
     },
     "wrong": [
       null,
@@ -62,8 +62,8 @@
       "en": "I'm already 25, but my mother still thinks I'm a child."
     },
     "why": {
-      "zh": "说的是别人（母）一直持有的想法，用「と思っている」。",
-      "en": "This is someone else's (the mother's) ongoing belief: 「と思っている」."
+      "zh": "线索：想的人是「母は」，不是说话人；还有「今でも」，说明妈妈一直这样认为。\n规则：说别人的想法，或长期持有的想法，用「と思っている」；「と思う」一般用于说话人自己此刻的判断。",
+      "en": "Clue: The one doing the thinking is 「母は」, not the speaker, and 「今でも」 (even now) shows a belief she has held for a while.\nRule: Someone else's thoughts, or a belief held over time, take 「と思っている」; plain 「と思う」 is usually the speaker's own judgment right now."
     },
     "wrong": [
       {
@@ -109,8 +109,8 @@
       "en": "I think that park near the station is quiet and pretty."
     },
     "why": {
-      "zh": "な形容词接「と思う」要加「だ」：静かで ＋ きれいだ ＋ と ＋ 思います。「静かで」是中顿形，只能放在前面。★ 在第二格，是「きれいだ」。",
-      "en": "A な-adjective needs 「だ」 before 「と思う」: 静かで ＋ きれいだ ＋ と ＋ 思います; 「静かで」 is the linking form, so it comes first. The ★ is the second slot: 「きれいだ」."
+      "zh": "线索：碎片里有「と」「思います」，是「〜と思う」；它前面放想的内容。\n怎么排：「と」接在「思います」前面；な形容词接「と思う」要加「だ」，所以「きれいだ」紧挨「と」；「静かで」是“安静，而且……”的连接说法，后面还要接别的词，放最前。顺序：静かで → きれいだ → と → 思います，★ 是「きれいだ」。\n容易错：把「静かで」放到「と」前面。「静かで」不能结束一个意思，「と」前面要能结句的「きれいだ」。",
+      "en": "Clue: The pieces 「と」 and 「思います」 make 「〜と思う」, and what is thought goes before it.\nOrder: 「と」 comes right before 「思います」; a な-adjective needs 「だ」 before 「と思う」, so 「きれいだ」 sits next to 「と」; 「静かで」 is the linking form (\"quiet, and…\"), which needs something after it, so it goes first: 静かで → きれいだ → と → 思います. The ★ is 「きれいだ」.\nTrap: Putting 「静かで」 right before 「と」. 「静かで」 can't close a thought; 「と」 needs a form that ends a sentence, 「きれいだ」."
     },
     "wrong": [
       null,
@@ -141,8 +141,8 @@
       "en": "I don't know yet who's coming to the party."
     },
     "why": {
-      "zh": "句中有疑问词「だれ」，间接疑问只用「か」。",
-      "en": "There's a question word (「だれ」), so the embedded question takes just 「か」."
+      "zh": "线索：空格前的「だれが 来る」里有疑问词「だれ」。\n规则：把带疑问词（だれ、何、いつ）的问题放进句子里，用「か」；没有疑问词、问“是不是”的，才用「かどうか」。\n容易错：一看到后面的「分かりません」就选「かどうか」。先找有没有疑问词。",
+      "en": "Clue: The part before the blank, 「だれが 来る」, contains the question word 「だれ」.\nRule: A question with a question word (だれ, 何, いつ) embedded in a sentence takes 「か」; 「かどうか」 is for yes/no questions with no question word.\nTrap: Choosing 「かどうか」 just because 「分かりません」 follows. Look for a question word first."
     },
     "wrong": [
       {
@@ -182,8 +182,8 @@
       "en": "I'll ask the teacher whether this answer is right."
     },
     "why": {
-      "zh": "“答案对不对”是没有疑问词的二选一问题，用「かどうか」。",
-      "en": "\"Is the answer right or not\" is a yes/no question with no question word: 「かどうか」."
+      "zh": "线索：「この 答えが 正しい」里没有疑问词；后面「先生に 聞いて みます」说明对不对还不知道。\n规则：没有疑问词的“是不是、对不对”放进句子里，用「かどうか」（是否）。\n容易错：选「ので」。“因为答案对，所以去问老师”说不通：已经知道对了，就不用问了。",
+      "en": "Clue: 「この 答えが 正しい」 has no question word, and 「先生に 聞いて みます」 shows the speaker doesn't know yet whether it's right.\nRule: A yes/no question (is it or isn't it) with no question word, embedded in a sentence, takes 「かどうか」 (whether).\nTrap: Choosing 「ので」. \"I'll ask the teacher because it's right\" makes no sense: if you knew it was right, there'd be nothing to ask."
     },
     "wrong": [
       {
@@ -228,8 +228,8 @@
       "en": "You can't tell whether that shop's ramen is good until you try it."
     },
     "why": {
-      "zh": "おいしい ＋ かどうか（是否好吃）＋ 食べて みないと（不尝尝的话）＋ 分かりません。★ 在第三格，是「食べて」。",
-      "en": "おいしい ＋ かどうか (whether it's good) ＋ 食べて みないと (unless you try) ＋ 分かりません. The ★ is the third slot: 「食べて」."
+      "zh": "线索：「かどうか」「食べて」「みないと」加句尾「分かりません」，是课文里的「〜かどうか、食べてみないと分からない」。\n怎么排：「おいしい」接「かどうか」，组成要弄清的问题“好不好吃”；「食べて」接「みないと」（不尝尝的话）；「みないと」紧挨句尾「分かりません」。顺序：おいしい → かどうか → 食べて → みないと，★ 是「食べて」。\n容易错：把「食べて みないと」放到「かどうか」前面。「かどうか」前面只放要判断的「おいしい」。",
+      "en": "Clue: 「かどうか」, 「食べて」, 「みないと」 and the final 「分かりません」 match the lesson's 「〜かどうか、食べてみないと分からない」.\nOrder: 「おいしい」 joins 「かどうか」 to form the open question (whether it's good); 「食べて」 joins 「みないと」 (unless you try it), which sits right before 「分かりません」: おいしい → かどうか → 食べて → みないと. The ★ is 「食べて」.\nTrap: Putting 「食べて みないと」 before 「かどうか」. Only the thing being judged, 「おいしい」, goes before 「かどうか」."
     },
     "wrong": [
       null,
@@ -260,8 +260,8 @@
       "en": "I want to fly freely through the sky like a bird."
     },
     "why": {
-      "zh": "后面是动词「飛びたい」，修饰动作用「名词＋のように」。",
-      "en": "A verb (「飛びたい」) follows, so the comparison is noun ＋ 「のように」."
+      "zh": "线索：空格前是名词「鳥」，后面是动作「空を 自由に 飛びたい」。\n规则：“像……一样”去修饰动词、形容词，用「名词＋のように」；修饰名词才用「のような」。\n容易错：选「ように」，漏了「の」。名词后面要先加「の」：「鳥のように」。",
+      "en": "Clue: Before the blank is the noun 「鳥」; after it comes an action, 「空を 自由に 飛びたい」.\nRule: \"Like …\" describing a verb or adjective is noun ＋ 「のように」; 「のような」 is for describing a noun.\nTrap: Choosing 「ように」 and dropping 「の」. A noun needs 「の」 first: 「鳥のように」."
     },
     "wrong": [
       null,
@@ -301,8 +301,8 @@
       "en": "I got to meet my favourite singer — yesterday was like a dream."
     },
     "why": {
-      "zh": "后面是名词「一日」，修饰名词用「名词＋のような」。",
-      "en": "A noun (「一日」) follows, so it's noun ＋ 「のような」."
+      "zh": "线索：空格后面紧接名词「一日」。\n规则：“像……一样的＋名词”，用「名词＋のような＋名词」：「夢のような 一日」。\n容易错：选「みたいに」。「みたい」意思对，但接名词要用「みたいな」；「ような」前面又少了「の」。",
+      "en": "Clue: The blank is followed directly by the noun 「一日」.\nRule: \"A [noun] like …\" is noun ＋ 「のような」 ＋ noun: 「夢のような 一日」.\nTrap: Choosing 「みたいに」. 「みたい」 has the right meaning, but before a noun it must be 「みたいな」; and 「ような」 is missing its 「の」."
     },
     "wrong": [
       {
@@ -347,8 +347,8 @@
       "en": "I want to speak as well as my Japanese teacher, too."
     },
     "why": {
-      "zh": "先生 ＋ のように（像老师一样）＋ 上手に ＋ 話し ＋ たいです。★ 在第二格，是「上手に」。",
-      "en": "先生 ＋ のように (like the teacher) ＋ 上手に ＋ 話し ＋ たいです. The ★ is the second slot: 「上手に」."
+      "zh": "线索：空格前是名词「先生」，碎片里有「のように」；句尾「です」前面要有「たい」。\n怎么排：名词「先生」直接接「のように」；「話し」（ます形词干，如「話します」的「話し」）接「たい」，再接「です」；「上手に」修饰「話し」，放在它前面。顺序：のように → 上手に → 話し → たい，★ 是「上手に」。\n容易错：把「上手に」放到「のように」前面。「のように」要紧挨名词「先生」。",
+      "en": "Clue: The noun 「先生」 comes before the blanks and one piece is 「のように」; the final 「です」 needs 「たい」 before it.\nOrder: 「先生」 takes 「のように」 directly; 「話し」 (the ます-stem, as in 話します) joins 「たい」, then 「です」; 「上手に」 describes 「話し」, so it goes just before it: のように → 上手に → 話し → たい. The ★ is 「上手に」.\nTrap: Putting 「上手に」 before 「のように」. 「のように」 has to sit right after the noun 「先生」."
     },
     "wrong": [
       null,
@@ -380,8 +380,8 @@
       "en": "Mum: It's already eight! Get up — you'll be late for school."
     },
     "why": {
-      "zh": "妈妈对孩子下命令用「ます形词干＋なさい」：起きます → 起きなさい。",
-      "en": "A mother giving an order to her child: ます-stem ＋ 「なさい」 → 起きなさい."
+      "zh": "线索：说话人是「母」，对孩子说「早く」「学校に 遅れるわよ」，是在催孩子起床。\n规则：父母、老师对孩子、学生下命令，用「ます形词干＋なさい」：起きます → 起きなさい。",
+      "en": "Clue: The speaker is 「母」, telling her child 「早く」 and 「学校に 遅れるわよ」 — she is hurrying the child out of bed.\nRule: A parent or teacher giving an order to a child or student uses the ます-stem ＋ 「なさい」: 起きます → 起きなさい."
     },
     "wrong": [
       {
@@ -422,8 +422,8 @@
       "en": "(At a hotel front desk) Staff: Could you write your name here, please?"
     },
     "why": {
-      "zh": "工作人员对客人说话，要用礼貌的请求「〜てください」。",
-      "en": "Staff speaking to a guest use the polite request 「〜てください」."
+      "zh": "线索：说话人是酒店「係の人」，对象是「お客様」。\n规则：对客人、上级提要求，用礼貌的请求「て形＋ください」（書いて ください）。\n技巧：命令、请求类的选项先看谁对谁说：对客人、上级用「〜てください」；「〜なさい」、命令形「書け」是上对下或很冲的说法。",
+      "en": "Clue: The speaker is hotel staff (「係の人」) and the listener is a guest (「お客様」).\nRule: Asking a guest or a superior to do something takes the polite request, て-form ＋ 「ください」 (書いて ください).\nTip: With command or request options, first ask who is talking to whom: to a guest or superior, 「〜てください」; 「〜なさい」 and the imperative 「書け」 are top-down or blunt."
     },
     "wrong": [
       {
@@ -468,8 +468,8 @@
       "en": "Teacher: Everyone, be quiet in the classroom."
     },
     "why": {
-      "zh": "教室では ＋ 静かに ＋ し（します的词干）＋ なさい：老师对学生的命令。★ 在第一格，是「教室では」。",
-      "en": "教室では ＋ 静かに ＋ し (stem of します) ＋ なさい: a teacher's command. The ★ is the first slot: 「教室では」."
+      "zh": "线索：老师对「みなさん」说话，碎片「し」「なさい」组成「しなさい」（上对下的命令）。\n怎么排：「し」（「します」的ます形词干）接「なさい」，放最后；「静かに」接「しなさい」，组成「静かに しなさい」；表示场所的「教室では」放最前。顺序：教室では → 静かに → し → なさい，★ 是「教室では」。\n容易错：把「教室では」插到「静かに」和「しなさい」中间。「静かに する」是一个整体，一般不拆开。",
+      "en": "Clue: A teacher is speaking to 「みなさん」, and the pieces 「し」 and 「なさい」 make 「しなさい」, a top-down command.\nOrder: 「し」 (the ます-stem of します) joins 「なさい」 at the end; 「静かに」 goes with it to make 「静かに しなさい」 (be quiet); the place, 「教室では」, comes first: 教室では → 静かに → し → なさい. The ★ is 「教室では」.\nTrap: Putting 「教室では」 between 「静かに」 and 「しなさい」. 「静かに する」 is one unit and normally isn't split."
     },
     "wrong": [
       null,
@@ -501,8 +501,8 @@
       "en": "There's a loud noise coming from the next room. Is someone in there?"
     },
     "why": {
-      "zh": "感官上“听到声音”用「音がする」，感觉本身作主语，用「が」。",
-      "en": "\"A sound is heard\" is 「音がする」 — the sensation itself is the subject, marked with 「が」."
+      "zh": "线索：空格前是「音」，后面是「します」，前面还有「部屋から」：声音从隔壁传来。\n规则：听到声音、闻到气味、尝到味道，用「名词＋がする」（音がする、匂いがする），感觉本身是主语，用「が」。\n容易错：看到「します」就想填「を」（像「宿題をする」）。感觉的说法要用「が」。",
+      "en": "Clue: 「音」 comes before the blank and 「します」 after it, with 「部屋から」 before that: a sound is coming from the next room.\nRule: Hearing a sound, smelling a smell or tasting a taste is noun ＋ 「がする」 (音がする, 匂いがする); the sensation is the subject, so it takes 「が」.\nTrap: Seeing 「します」 and reaching for 「を」 (as in 「宿題をする」). Sensations take 「が」."
     },
     "wrong": [
       null,
@@ -542,8 +542,8 @@
       "en": "This cake tastes of lemon. It's refreshing and delicious."
     },
     "why": {
-      "zh": "尝到某种味道用「〜の味がする」。",
-      "en": "Tasting a flavour is 「〜の味がする」."
+      "zh": "线索：说的是蛋糕吃起来怎么样：「レモンの 味」，后面又说「さっぱりして いて、おいしい」。\n规则：说东西有什么味道，用「〜の味がする」：「レモンの味が します」＝有柠檬味。\n容易错：选「が 見えます」。「見える」是眼睛看到的，味道是尝出来的，用「がする」。",
+      "en": "Clue: The sentence is about how the cake tastes: 「レモンの 味」, followed by 「さっぱりして いて、おいしい」.\nRule: To say what something tastes of, use 「〜の味がする」: 「レモンの味が します」 = it tastes of lemon.\nTrap: Choosing 「が 見えます」. 「見える」 is for what the eyes see; a taste is noticed by tasting, which takes 「がする」."
     },
     "wrong": [
       {
@@ -588,8 +588,8 @@
       "en": "It's already ten at night, but I can hear children's voices outside."
     },
     "why": {
-      "zh": "子どもの ＋ 声 ＋ が ＋ します：听到声音用「声がする」。★ 在第四格，是「します」。",
-      "en": "子どもの ＋ 声 ＋ が ＋ します: hearing voices is 「声がする」. The ★ is the fourth slot: 「します」."
+      "zh": "线索：前面是「外から」，碎片有「声」「が」「します」，是感官说法「声がする」（听到声音）。\n怎么排：「子どもの」修饰名词「声」，放在它前面；「声＋が＋します」连在一起放最后。顺序：子どもの → 声 → が → します，★ 是「します」。\n容易错：把「子どもの」放到「が」后面。「の」后面要紧接名词，「子どもの 声」不能拆开。",
+      "en": "Clue: 「外から」 comes first, and the pieces 「声」, 「が」 and 「します」 form the sensation phrase 「声がする」 (a voice is heard).\nOrder: 「子どもの」 describes the noun 「声」, so it goes right before it; 「声 ＋ が ＋ します」 stay together at the end: 子どもの → 声 → が → します. The ★ is 「します」.\nTrap: Putting 「子どもの」 after 「が」. 「の」 has to be followed by its noun: 「子どもの 声」 stays together."
     },
     "wrong": [
       null,
@@ -621,8 +621,8 @@
       "en": "When you go abroad, don't forget your passport. You must take it with you."
     },
     "why": {
-      "zh": "前面说“别忘了护照”，还有「必ず」，表示有必要带上：「辞书形＋必要がある」。",
-      "en": "\"Don't forget your passport\" plus 「必ず」 — it's a necessity: dictionary form ＋ 「必要がある」."
+      "zh": "线索：前一句「忘れないで ください」，空格前又有「必ず」（一定），说的是非做不可的事。\n规则：“有必要做……”是「辞书形＋必要がある」（持って いく 必要が あります）；“没必要”是「必要はない」。",
+      "en": "Clue: The previous sentence says 「忘れないで ください」, and 「必ず」 (without fail) comes before the blank — this is something you have to do.\nRule: \"You need to …\" is dictionary form ＋ 「必要がある」 (持って いく 必要が あります); \"no need to\" is 「必要はない」."
     },
     "wrong": [
       {
@@ -662,8 +662,8 @@
       "en": "One person can do this job, so there's no need for everyone to come."
     },
     "why": {
-      "zh": "一个人就能完成，所以“没必要全员来”：「辞书形＋必要はない」。",
-      "en": "One person can do it, so there's no need for all to come: dictionary form ＋ 「必要はない」."
+      "zh": "线索：前半句「一人で できますから」给出理由：一个人就能做。\n规则：“没有必要做……”是「辞书形＋必要はない」；否定时助词常用「は」：「必要は ありません」。\n容易错：选「必要が あります」。那是“有必要全员来”，和“一个人就能做”正好相反。",
+      "en": "Clue: The first half, 「一人で できますから」, gives the reason: one person can do it.\nRule: \"There's no need to …\" is dictionary form ＋ 「必要はない」; in the negative the particle is usually 「は」: 「必要は ありません」.\nTrap: Choosing 「必要が あります」. That means everyone has to come — the opposite of \"one person can do it\"."
     },
     "wrong": [
       {
@@ -708,8 +708,8 @@
       "en": "To get a visa, you need to complete the paperwork before you leave."
     },
     "why": {
-      "zh": "手続きを ＋ する（辞书形）＋ 必要が ＋ あります：“有必要办手续”。★ 在第四格，是「あります」。",
-      "en": "手続きを ＋ する (dictionary form) ＋ 必要が ＋ あります: \"you need to do the paperwork\". The ★ is the fourth slot: 「あります」."
+      "zh": "线索：碎片「必要が」「あります」组成「〜必要がある」（有必要……）。\n怎么排：「必要が あります」放最后；它前面放辞书形「する」；宾语「手続きを」放在「する」前面。顺序：手続きを → する → 必要が → あります，★ 是「あります」。\n容易错：把「手続きを」放到「必要が」后面。「必要」前面是要做的事，「手続きを する」整块在前。",
+      "en": "Clue: The pieces 「必要が」 and 「あります」 make 「〜必要がある」 (need to).\nOrder: 「必要が あります」 goes at the end; the dictionary form 「する」 comes before it, and its object 「手続きを」 before that: 手続きを → する → 必要が → あります. The ★ is 「あります」.\nTrap: Putting 「手続きを」 after 「必要が」. What you need to do comes before 「必要」, as one block: 「手続きを する」."
     },
     "wrong": [
       null,
@@ -741,8 +741,8 @@
       "en": "(At a marathon) Go on! Just one more kilometre. Don't give up!"
     },
     "why": {
-      "zh": "为跑者加油，“不要放弃！”是禁止形：辞书形＋「な」→ あきらめるな。",
-      "en": "Cheering a runner on — \"Don't give up!\" is the prohibitive: dictionary form ＋ 「な」 → あきらめるな."
+      "zh": "线索：在给跑者加油（「がんばれ！」「あと 1キロだ」），空格前是辞书形「あきらめる」。\n规则：“不许……！”的禁止形是「辞书形＋な」：あきらめる → あきらめるな。加油、紧急时常用。\n容易错：选「ない」。否定形是「あきらめない」，不能接在辞书形「あきらめる」后面。",
+      "en": "Clue: Someone is cheering a runner on (「がんばれ！」「あと 1キロだ」), and the blank follows the dictionary form 「あきらめる」.\nRule: The prohibitive \"Don't …!\" is dictionary form ＋ 「な」: あきらめる → あきらめるな. It's common in cheering and emergencies.\nTrap: Choosing 「ない」. The negative is 「あきらめない」; 「ない」 doesn't attach to the dictionary form 「あきらめる」."
     },
     "wrong": [
       null,
@@ -782,8 +782,8 @@
       "en": "Dad: It's already half past seven! Get up — you'll be late for school!"
     },
     "why": {
-      "zh": "「起きる」是二类动词，命令形是去掉「る」加「ろ」：起きろ。",
-      "en": "「起きる」 is a る-verb; its imperative drops る and adds 「ろ」: 起きろ."
+      "zh": "线索：爸爸用「だぞ」「遅れるぞ」这种很冲的口气催孩子：「早く」起来。\n规则：要用命令形。二类动词（起きる、食べる）去掉「る」加「ろ」：起きる → 起きろ。\n容易错：选「起きさせろ」。那是使役“让（别人）起来”，可要起床的是孩子自己。",
+      "en": "Clue: Dad is hurrying the child with blunt endings like 「だぞ」 and 「遅れるぞ」: get up 「早く」.\nRule: This calls for the imperative. For る-verbs (起きる, 食べる), drop 「る」 and add 「ろ」: 起きる → 起きろ.\nTrap: Choosing 「起きさせろ」. That's the causative (make someone else get up), but it's the child who has to get up."
     },
     "wrong": [
       {
@@ -828,8 +828,8 @@
       "en": "Look out! Don't touch that machine!"
     },
     "why": {
-      "zh": "その ＋ 機械に ＋ 触る（辞书形）＋ な：禁止形“不许碰”。★ 在第一格，是「その」。",
-      "en": "その ＋ 機械に ＋ 触る (dictionary form) ＋ な: the prohibitive \"don't touch\". The ★ is the first slot: 「その」."
+      "zh": "线索：「危ない！」是紧急情况，碎片「触る」「な」组成禁止形「触るな」（别碰）。\n怎么排：辞书形「触る」接「な」，放最后；「機械に」是碰的对象，放在「触る」前面；「その」修饰「機械」，放最前。顺序：その → 機械に → 触る → な，★ 是「その」。\n容易错：把「な」当成句中的词放到中间。禁止的「な」接在辞书形后面，放在句子最后。",
+      "en": "Clue: 「危ない！」 signals an emergency, and the pieces 「触る」 and 「な」 make the prohibitive 「触るな」 (don't touch).\nOrder: The dictionary form 「触る」 takes 「な」 at the end; 「機械に」, the thing not to touch, goes before 「触る」; 「その」 describes 「機械」, so it comes first: その → 機械に → 触る → な. The ★ is 「その」.\nTrap: Putting 「な」 somewhere in the middle. The prohibitive 「な」 follows the dictionary form and ends the sentence."
     },
     "wrong": [
       null,

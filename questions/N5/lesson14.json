@@ -21,8 +21,8 @@
       "en": "Tanaka has been coughing all morning. It seems he has a cold."
     },
     "why": {
-      "zh": "看到一直咳嗽这个迹象，推断“好像感冒了”：名词接「ようだ」要加「の」，名词＋の＋ようだ。",
-      "en": "The coughing is the evidence for a guess, \"seems to have a cold\": a noun takes 「の」 before 「ようだ」."
+      "zh": "线索：前一句说他从早上起一直在咳嗽，这是看到的迹象；空格前是名词「かぜ」。\n规则：根据迹象推断“好像……”用「ようだ」；名词接「ようだ」要加「の」：「かぜの ようです」。",
+      "en": "Clue: The sentence before says he's been coughing since morning — a sign you've noticed; the word before the blank is the noun 「かぜ」.\nRule: Guessing from signs (\"it seems…\") is 「ようだ」, and a noun needs 「の」 before it: 「かぜの ようです」."
     },
     "wrong": [
       null,
@@ -62,8 +62,8 @@
       "en": "This room is big and clean — it's like a hotel room."
     },
     "why": {
-      "zh": "空格后面是名词「部屋」，修饰名词用「ような」：Nのような＋名词（像……一样的……）。",
-      "en": "The blank comes right before the noun 「部屋」, and 「ようだ」 modifies a noun as 「ような」: Nのような ＋ noun (a … like N)."
+      "zh": "线索：空格后面紧接名词「へや」。\n规则：「ようだ」修饰名词时用「ような」：「ホテルの ような へや」；修饰动词、形容词才用「ように」。",
+      "en": "Clue: The blank is followed directly by the noun 「へや」.\nRule: Before a noun, 「ようだ」 becomes 「ような」 (「ホテルの ような へや」); 「ように」 is for verbs and adjectives."
     },
     "wrong": [
       null,
@@ -114,8 +114,8 @@
       "en": "The platform is crowded. It seems the train is delayed."
     },
     "why": {
-      "zh": "看到站台上人多，推断电车晚点：電車が 遅れて いる（简体）＋ ようです。★ 在第三格，是「いる」。",
-      "en": "Seeing the crowd, the speaker infers a delay: 電車が 遅れて いる (plain form) ＋ ようです. The ★ is the third slot: 「いる」."
+      "zh": "线索：前句「人が たくさん います」是迹象；句尾「です」前有「よう」，是推断「〜ようです」。\n怎么排：「よう」紧挨「です」放最后；它前面是简体的整句「電車が おくれて いる」，「おくれて いる」不拆开。顺序：電車が → おくれて → いる → よう，★ 是「いる」。\n容易错：把「よう」夹在「おくれて」和「いる」中间。它只能接在整个简体句的后面。",
+      "en": "Clue: 「人が たくさん います」 is the sign, and 「よう」 next to the final 「です」 makes the guess 「〜ようです」.\nOrder: 「よう」 goes last, against 「です」; before it comes the plain-form sentence 「電車が おくれて いる」, with おくれて いる kept together: 電車が → おくれて → いる → よう. The ★ is 「いる」.\nTrap: Wedging 「よう」 between おくれて and いる. It attaches only after the whole plain-form clause."
     },
     "wrong": [
       null,
@@ -146,8 +146,8 @@
       "en": "All the students are greeting that person. He seems to be a teacher."
     },
     "why": {
-      "zh": "学生都在跟那个人打招呼，根据这个迹象推断“好像是老师”：「みたいだ」直接接名词。",
-      "en": "All the students are greeting him — evidence for the guess \"seems to be a teacher\": 「みたいだ」 attaches directly to a noun."
+      "zh": "线索：学生们都在向那个人打招呼，这是看到的迹象；空格前是名词「先生」。\n规则：根据迹象推断可以用「みたいだ」，它接名词不加「の」：「先生みたいです」（换成「ようだ」要说「先生の ようです」）。",
+      "en": "Clue: All the students are greeting that person — a sign you can see; the word before the blank is the noun 「先生」.\nRule: 「みたいだ」 guesses from signs and attaches straight to a noun, no 「の」: 「先生みたいです」 (with ようだ it would be 「先生の ようです」)."
     },
     "wrong": [
       null,
@@ -187,8 +187,8 @@
       "en": "My younger sister smiled with a childlike face."
     },
     "why": {
-      "zh": "空格后面是名词「顔」，「みたいだ」修饰名词时变成「みたいな」。",
-      "en": "The noun 「顔」 follows the blank, and 「みたいだ」 modifies a noun as 「みたいな」."
+      "zh": "线索：空格夹在两个名词「こども」和「かお」中间。\n规则：「みたいだ」修饰名词时变成「みたいな」：「こどもみたいな かお」（像孩子一样的脸）。修饰动词才用「みたいに」。",
+      "en": "Clue: The blank sits between two nouns, 「こども」 and 「かお」.\nRule: Before a noun, 「みたいだ」 becomes 「みたいな」: 「こどもみたいな かお」 (a childlike face). 「みたいに」 is for describing a verb."
     },
     "wrong": [
       null,
@@ -233,8 +233,8 @@
       "en": "The lights are off. Looks like nobody's here."
     },
     "why": {
-      "zh": "「だれも＋否定」表示谁都不；「いない」是简体，直接接「みたいだ」。顺序：だれ も いない みたい，★ 在第一格，是「だれ」。",
-      "en": "「だれも ＋ negative」 means nobody; plain 「いない」 takes 「みたいだ」 directly. Order: だれ も いない みたい — the ★ is the first slot: 「だれ」."
+      "zh": "线索：前句「電気が きえて いる」是迹象；句尾「だね」前面要放「みたい」。\n怎么排：「だれも＋否定」是固定搭配（谁都不……），「だれ も いない」连在一起；「みたい」接在简体「いない」后面，再接「だね」。顺序：だれ → も → いない → みたい，★ 是「だれ」。\n容易错：把「も」放到「いない」后面。「も」要紧跟在「だれ」后面。",
+      "en": "Clue: 「電気が きえて いる」 is the sign, and 「みたい」 must sit before the final 「だね」.\nOrder: 「だれも」 ＋ negative (nobody) is a fixed pair, so だれ も いない stay together; 「みたい」 follows the plain form 「いない」 and leads into 「だね」: だれ → も → いない → みたい. The ★ is 「だれ」.\nTrap: Putting 「も」 after 「いない」. It has to come right after 「だれ」."
     },
     "wrong": [
       null,
@@ -266,8 +266,8 @@
       "en": "My older brother is strong and kind — a really manly person."
     },
     "why": {
-      "zh": "名词＋「らしい」表示“具备该名词应有的特质”，是夸奖。哥哥本来就是男人，又强又温柔，所以说「男らしい人」。",
-      "en": "Noun ＋ 「らしい」 means \"having the qualities a … should have\" — praise. He is strong and kind, so he's 「男らしい」."
+      "zh": "线索：「つよくて、やさしくて」是在夸哥哥，而哥哥本来就是男人；空格夹在名词「男」和「人」中间。\n规则：名词＋「らしい」表示“很有……应有的样子”，是夸奖：「男らしい」（有男子气概），可以直接放在名词前面。",
+      "en": "Clue: 「つよくて、やさしくて」 praises the brother, who is a man already; the blank sits between the nouns 「男」 and 「人」.\nRule: Noun ＋ 「らしい」 means \"having the qualities a … should have\", a compliment: 「男らしい」 (manly). It can go straight before a noun."
     },
     "wrong": [
       null,
@@ -307,8 +307,8 @@
       "en": "Yamada's town is apparently very quiet — not that I've been there."
     },
     "why": {
-      "zh": "没去过，是听来的信息，用「らしい」。な形容词接「らしい」直接用语干：静か＋らしい。",
-      "en": "The speaker has never been there, so it's secondhand — 「らしい」. A な-adjective takes 「らしい」 on its bare stem: 静か ＋ らしい."
+      "zh": "线索：后一句「わたしは 行った ことが ありませんが」，说话人没去过，这是听来的。\n规则：听说来的信息用「らしい」；な形容词接「らしい」直接用词干：「しずからしい」。\n技巧：推测类的选项，先问“消息从哪儿来”：眼前看到的外表用「〜そう」，听别人说的用「らしい」或传闻「〜そうだ」。",
+      "en": "Clue: 「わたしは 行った ことが ありませんが」 — the speaker has never been there, so this is secondhand.\nRule: Secondhand information takes 「らしい」, and a な-adjective joins it as the bare stem: 「しずからしい」.\nTip: With guessing expressions, ask where the information came from: what you see in front of you → 〜そう; what you heard → らしい or hearsay 〜そうだ."
     },
     "wrong": [
       null,
@@ -359,8 +359,8 @@
       "en": "Apparently the rules change from next year."
     },
     "why": {
-      "zh": "「来年から」（从明年起）连在一起；「ルールが変わる」是简体句，后接「らしい」表示听说。★ 在第三格，是「らしい」。",
-      "en": "「来年から」 (from next year) goes together; the plain clause 「ルールが変わる」 takes 「らしい」 for hearsay. The ★ is the third slot: 「らしい」."
+      "zh": "线索：句尾没有「です」，四块里有「らしい」和语气词「よ」，是“听说……哦”。\n怎么排：先放听来的内容，简体句「ルールが かわる」；「らしい」接在它后面，「よ」放最后。顺序：ルールが → かわる → らしい → よ，★ 是「らしい」。\n容易错：把「よ」放在「らしい」前面。「よ」这类语气词总在句子最末尾。",
+      "en": "Clue: There's no 「です」; the pieces include 「らしい」 and the sentence-final 「よ」 — \"I hear …, you know\".\nOrder: First what was heard, the plain sentence 「ルールが かわる」, then 「らしい」 after it, and 「よ」 last: ルールが → かわる → らしい → よ. The ★ is 「らしい」.\nTrap: Putting 「よ」 before 「らしい」. Particles like よ always close the sentence."
     },
     "wrong": [
       null,
@@ -392,8 +392,8 @@
       "en": "That person gets angry over little things — a short-tempered person."
     },
     "why": {
-      "zh": "“动不动就生气”是一种容易出现的倾向，动词ます形（怒り）＋「っぽい」表示“容易……”。",
-      "en": "\"Gets angry easily\" is a tendency: verb ます-stem (怒り) ＋ 「っぽい」 means \"tends to…\"."
+      "zh": "线索：「小さな ことで すぐ おこります」说的是动不动就生气的倾向；空格前是「おこり」（「おこります」去掉「ます」）。\n规则：动词ます形去「ます」＋「っぽい」表示“容易……”：「おこりっぽい」（爱生气）、「わすれっぽい」（健忘）。",
+      "en": "Clue: 「小さな ことで すぐ おこります」 describes a habit of getting angry at every little thing; before the blank is 「おこり」, 「おこります」 without ます.\nRule: Verb ます-stem ＋ 「っぽい」 means \"tends to…\": 「おこりっぽい」 (quick-tempered), 「わすれっぽい」 (forgetful)."
     },
     "wrong": [
       null,
@@ -433,8 +433,8 @@
       "en": "This shirt isn't white, but it's a whitish color."
     },
     "why": {
-      "zh": "“不是白色，但有点偏白”——颜色“接近……、带点……”用「っぽい」：白っぽい。",
-      "en": "\"Not white, but close to it\" — 「っぽい」 after a color means \"-ish\": 白っぽい."
+      "zh": "线索：「白では ありませんが、少し」，不是白色，只是有点接近白。\n规则：名词＋「っぽい」表示“带点……的感觉”，颜色常这样说：「白っぽい」（偏白）。「らしい」是“确实具备应有的样子”，不表示接近。",
+      "en": "Clue: 「白では ありませんが、少し」 — it isn't white, just close to it.\nRule: Noun ＋ 「っぽい」 means \"-ish, with a touch of\", common with colours: 「白っぽい」 (whitish). 「らしい」 means \"truly having the qualities of\", not \"close to\"."
     },
     "wrong": [
       null,
@@ -486,8 +486,8 @@
       "en": "My younger brother is already in college, but he says childish things."
     },
     "why": {
-      "zh": "「なのに」带不满，所以用贬义的「子供っぽい」（幼稚）修饰「こと」，再接「を言う」。★ 在第二格，是「っぽい」。",
-      "en": "「なのに」 signals disapproval, so the negative 「子供っぽい」 (childish) modifies 「こと」, then 「を言う」. The ★ is the second slot: 「っぽい」."
+      "zh": "线索：「もう 大学生なのに」带着不满，要用贬义的「こどもっぽい」（幼稚）。\n怎么排：「こども＋っぽい」组成形容词，修饰「こと」；「ことを」是动词「言う」的宾语。顺序：こども → っぽい → ことを → 言う，★ 是「っぽい」。\n容易错：把「こどもっぽい」放到「ことを」后面。修饰语要放在名词「こと」前面。",
+      "en": "Clue: 「もう 大学生なのに」 sounds annoyed, so the word is the negative 「こどもっぽい」 (childish).\nOrder: こども ＋ っぽい make an adjective that modifies 「こと」, and 「ことを」 is the object of 「言う」: こども → っぽい → ことを → 言う. The ★ is 「っぽい」.\nTrap: Putting 「こどもっぽい」 after 「ことを」. A modifier comes before the noun it describes."
     },
     "wrong": [
       null,
@@ -519,8 +519,8 @@
       "en": "The sky is getting dark. It looks like it's about to rain."
     },
     "why": {
-      "zh": "空格前是ます形「降り」，能接ます形的只有样态「そうだ」：降りそうだ（看天色，快要下了）。",
-      "en": "The blank follows the ます-stem 「降り」, and only appearance 「そうだ」 attaches there: 降りそうだ (it looks about to rain)."
+      "zh": "线索：天变暗了，是眼前看到的样子；空格前是「ふり」（「ふります」去掉「ます」）。\n规则：凭眼前的样子说“快要……了”用样态「そうだ」，接动词ます形去「ます」：「ふりそうです」。「よう」「らしい」「みたい」都接简体「ふる」，接不上「ふり」。",
+      "en": "Clue: The sky is getting dark, something you can see right now; before the blank is 「ふり」, 「ふります」 minus ます.\nRule: \"Looks like it's about to…\" from what you see is the appearance 「そうだ」, attached to the ます-stem: 「ふりそうです」. よう, らしい and みたい all need the plain form 「ふる」 and can't follow 「ふり」."
     },
     "wrong": [
       null,
@@ -562,8 +562,8 @@
       "en": "(Looking at a cake in front of a shop) \"Wow, this cake looks delicious.\""
     },
     "why": {
-      "zh": "说话人是亲眼看着蛋糕说的，凭外观判断用样态「そうだ」：い形容词去「い」＋そう → おいしそう。",
-      "en": "The speaker is looking at the cake, judging by appearance — that's appearance 「そうだ」: drop the 「い」 ＋ そう → おいしそう."
+      "zh": "线索：括号里交代说话人正在店门口看着蛋糕，凭的是外表。\n规则：看外表说“看起来……”用样态「そう」，い形容词先去掉「い」：「おいしい」→「おいしそう」。保留「い」的「おいしいそう」是传闻“听说好吃”。",
+      "en": "Clue: The stage direction says the speaker is looking at the cake in front of the shop — judging by its looks.\nRule: \"Looks …\" from appearance is 「そう」 on an い-adjective with its い dropped: 「おいしい」 → 「おいしそう」. Keeping the い, 「おいしいそう」 is hearsay, \"I hear it's good\"."
     },
     "wrong": [
       null,
@@ -615,8 +615,8 @@
       "en": "That shop's ramen looks really good."
     },
     "why": {
-      "zh": "「あの店の」修饰「ラーメン」，「ラーメンは」是主题，「とても」修饰「おいしそう」（看起来好吃）。★ 在第二格，是「ラーメンは」。",
-      "en": "「あの店の」 modifies 「ラーメン」, 「ラーメンは」 is the topic, and 「とても」 modifies 「おいしそう」. The ★ is the second slot: 「ラーメンは」."
+      "zh": "线索：句首「あの」后面要接名词，四块里只有「みせの」接得上；句尾「ですね」前面是「おいしそう」。\n怎么排：「あの みせの」修饰「ラーメン」，「ラーメンは」做话题；「とても」修饰「おいしそう」，紧挨在它前面。顺序：みせの → ラーメンは → とても → おいしそう，★ 是「ラーメンは」。\n容易错：把「みせの」和「ラーメン」分开。「の」后面要直接跟它修饰的名词。",
+      "en": "Clue: 「あの」 needs a noun after it, and 「みせの」 is the piece that fits; 「おいしそう」 goes before 「ですね」.\nOrder: 「あの みせの」 modifies 「ラーメン」, and 「ラーメンは」 is the topic; 「とても」 modifies 「おいしそう」, right before it: みせの → ラーメンは → とても → おいしそう. The ★ is 「ラーメンは」.\nTrap: Separating 「みせの」 from 「ラーメン」. 「の」 needs its noun straight after it."
     },
     "wrong": [
       null,
