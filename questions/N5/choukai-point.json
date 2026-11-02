@@ -76,8 +76,8 @@
    }
   },
   "why": {
-   "zh": "周六、周日女人要上班，周一男人不方便（「ちょっと……」），最后两人定在星期五晚上。",
-   "en": "She works on Saturday and Sunday, he can't do Monday (「ちょっと……」); they settle on Friday evening."
+   "zh": "依据：男的提议「じゃあ、金曜日の よるは？」，女的回答「金曜日ですね。いいですよ。」\n推理：女的说「土曜日と 日曜日は しごとが あります」；她提的星期一，男的用「ちょっと……」婉拒——话不说完就是拒绝。剩下两人都同意的星期五。\n容易错：被婉拒的提议；最先提的日子。",
+   "en": "Evidence: The man suggests 「じゃあ、金曜日の よるは？」, and the woman answers 「金曜日ですね。いいですよ。」\nReasoning: She says 「土曜日と 日曜日は しごとが あります」; her Monday he turns down with 「ちょっと……」 — leaving the sentence unfinished is a refusal. Friday is the day both accept.\nTrap: a suggestion politely turned down; the first day mentioned."
   },
   "wrong": [
    {
@@ -170,8 +170,8 @@
    }
   },
   "why": {
-   "zh": "他先说要五个，后来想起家里有两个，改成「三つに します」，店员也确认了「りんご 三つ」。",
-   "en": "He first asks for five, then remembers two at home and changes to 「三つに します」; the assistant confirms 「りんご 三つ」."
+   "zh": "依据：男的改口：「りんごは 家に 二つ ありますから、三つに します。」店员确认「りんご 三つ」。\n推理：他先说「五つ ください」，后来想起家里有两个，用「〜に します」改成三个。两个是家里已有的数量，不是要买的。\n容易错：先说的数量被改掉；把家里的数量当答案。",
+   "en": "Evidence: The man changes his order: 「りんごは 家に 二つ ありますから、三つに します。」 The clerk confirms 「りんご 三つ」.\nReasoning: He first says 「五つ ください」, then remembers two at home and changes to three with 「〜に します」. Two is what he already has, not what he buys.\nTrap: the first number is changed; taking the number at home as the answer."
   },
   "wrong": [
    {
@@ -270,8 +270,8 @@
    }
   },
   "why": {
-   "zh": "男人猜三千日元，她用「いいえ、二千円でした」否定并说出价格。",
-   "en": "He guesses 3,000; she says 「いいえ、二千円でした」."
+   "zh": "依据：女的回答：「いいえ、二千円でした。」\n推理：男的猜「三千円ぐらいですか」，被「いいえ」否定，后面马上说出真实价格。一千日元的伞「小さかったです」没买，一千五百日元是「前の かさ」的价格。\n容易错：被否定的猜测；顺带提到的其他价格。",
+   "en": "Evidence: The woman answers: 「いいえ、二千円でした。」\nReasoning: He guesses 「三千円ぐらいですか」; she denies it with 「いいえ」 and gives the real price right after. The 1,000-yen ones were 「小さかったです」, so she didn't buy one, and 1,500 yen was 「前の かさ」.\nTrap: a guess that is denied; other prices mentioned in passing."
   },
   "wrong": [
    {
@@ -365,8 +365,8 @@
    }
   },
   "why": {
-   "zh": "平时在公园，但今天下雨，所以去「駅の 前の 店」吃拉面。",
-   "en": "He usually eats in the park, but it's raining, so today it's ramen at 「駅の 前の 店」."
+   "zh": "依据：男的说「今日は 雨ですから」，接着说「駅の 前の 店で ラーメンを 食べます。」\n推理：问的是「今日」。他平时「いつもは こうえんで 食べます」，但今天下雨，所以改去车站前的店。食堂人多他不去，咖啡馆是女的要去的地方。\n容易错：平时的做法不是今天的；别人要去的地方。",
+   "en": "Evidence: The man says 「今日は 雨ですから」, then 「駅の 前の 店で ラーメンを 食べます。」\nReasoning: The question is about 「今日」. He says he usually eats in the park, 「いつもは こうえんで 食べます」, but it's raining today, so he goes to the shop by the station. The cafeteria is too crowded for him, and the café is where the woman is going.\nTrap: his usual habit, not today's plan; where the other person is going."
   },
   "wrong": [
    {
@@ -466,8 +466,8 @@
    }
   },
   "why": {
-   "zh": "两个猜测都被「いいえ」否定，真正的原因是「国から 母が 来ましたから」。",
-   "en": "Both guesses get 「いいえ」; the real reason is 「国から 母が 来ましたから」."
+   "zh": "依据：男的说：「国から 母が 来ましたから、くうこうへ 行きました。」\n推理：女的猜感冒、头疼，都被男的用「いいえ」否定；真正的理由在「〜から」前面：妈妈从国内来了。「来週 国へ 帰ります」说的是妈妈下周的事。\n容易错：被否定的猜测；人物和时间都不对的细节。",
+   "en": "Evidence: The man says: 「国から 母が 来ましたから、くうこうへ 行きました。」\nReasoning: She guesses a cold, then a headache; he denies both with 「いいえ」. The real reason is before 「〜から」: his mother came from home. 「来週 国へ 帰ります」 is about his mother, next week.\nTrap: guesses that are denied; a detail with the wrong person and the wrong time."
   },
   "wrong": [
    null,
@@ -566,8 +566,8 @@
    }
   },
   "why": {
-   "zh": "十点他上午要工作，两点他要见朋友，最后他提出三点，女人说「いいですよ」。",
-   "en": "Ten is out (he works in the morning), two is out (he meets a friend); he suggests three and she agrees."
+   "zh": "依据：男的提议「三時は どうですか。」，女的回答「三時ですね。いいですよ。」\n推理：女的提的十点，男的「午前は 店の しごとが あります」；两点男的说「ちょっと……」，因为「昼ごはんの あとで 友だちと 会います」。十二点只是他工作结束的时间。\n容易错：被拒绝的时间；只是顺带提到的时间。",
+   "en": "Evidence: The man suggests 「三時は どうですか。」, and the woman answers 「三時ですね。いいですよ。」\nReasoning: To her ten o'clock he says 「午前は 店の しごとが あります」; two o'clock gets 「ちょっと……」, because 「昼ごはんの あとで 友だちと 会います」. Twelve is only when his work ends.\nTrap: times that are turned down; a time mentioned only in passing."
   },
   "wrong": [
    {
@@ -666,8 +666,8 @@
    }
   },
   "why": {
-   "zh": "包里和口袋里都没有，最后「つくえの 下に ありました」。",
-   "en": "Not in the bag or the pocket; finally 「つくえの 下に ありました」."
+   "zh": "依据：男的说：「あ、ありました。つくえの 下に ありました。」\n推理：包里「ありませんでした」，口袋里「ポケットにも ありません」，「あ、ありました」表示终于找到了。女的说的「つくえの 上」是她看过的地方，钥匙不在上面。\n容易错：找过但没有的地方；上和下听混。",
+   "en": "Evidence: The man says: 「あ、ありました。つくえの 下に ありました。」\nReasoning: The bag: 「ありませんでした」; the pocket: 「ポケットにも ありません」; then 「あ、ありました」 means he has finally found it. 「つくえの 上」 is where the woman looked; the key wasn't there.\nTrap: places searched with no key; mixing up on and under."
   },
   "wrong": [
    null,
@@ -760,8 +760,8 @@
    }
   },
   "why": {
-   "zh": "本来十个人，山田和林两个人不来，两人都确认是「八人」。",
-   "en": "Ten minus Yamada and Hayashi; both say 「八人」."
+   "zh": "依据：女的说「じゃあ、八人ですね。」，男的确认「はい、八人です。」\n推理：男的先说「十人です」，接着用「でも」补充「山田さんと 林さんは 来ません」，十减二是八人。后面的六和二说的是椅子，不是人数。\n容易错：先说的数字被「でも」修正；椅子的数量。",
+   "en": "Evidence: The woman says 「じゃあ、八人ですね。」, and the man confirms 「はい、八人です。」\nReasoning: He first says 「十人です」, then adds with 「でも」: 「山田さんと 林さんは 来ません」; ten minus two is eight. The six and two that follow are chairs, not people.\nTrap: the first number corrected after 「でも」; the number of chairs."
   },
   "wrong": [
    {
@@ -860,8 +860,8 @@
    }
   },
   "why": {
-   "zh": "腿疼的猜测被否定，原因是「じてんしゃは 弟に かしました」。",
-   "en": "The leg guess is denied; the reason is 「じてんしゃは 弟に かしました」."
+   "zh": "依据：女的说：「じてんしゃは 弟に かしました。」\n推理：男的猜「あしが いたいんですか」，被「いいえ、あしは だいじょうぶです」否定。今天天气好，没有下雨。「あしたは 雨ですから」是明天坐公交车的理由，问的是今天。\n容易错：被否定的猜测；把明天的理由当成今天的。",
+   "en": "Evidence: The woman says: 「じてんしゃは 弟に かしました。」\nReasoning: He guesses 「あしが いたいんですか」; she denies it: 「いいえ、あしは だいじょうぶです」. The weather is fine today, no rain. 「あしたは 雨ですから」 is the reason for tomorrow's bus; the question is about today.\nTrap: a guess that is denied; tomorrow's reason taken as today's."
   },
   "wrong": [
    {
@@ -961,8 +961,8 @@
    }
   },
   "why": {
-   "zh": "父母要工作、朋友很忙，最后「兄と 二人で 行きます」。",
-   "en": "His parents work and his friends are busy; 「兄と 二人で 行きます」."
+   "zh": "依据：男的说：「兄と 二人で 行きます。」\n推理：女的猜父母，男的说「父と 母は しごとが ありますから、行きません」；再猜朋友，「友だちは いそがしいですから」。最后才说出同行的人：哥哥。选项的「お兄さん」就是他说的「兄」。\n容易错：被否定的猜测；自己家人说「兄」，称呼时说「お兄さん」，说法不同。",
+   "en": "Evidence: The man says: 「兄と 二人で 行きます。」\nReasoning: She guesses his parents: 「父と 母は しごとが ありますから、行きません」; then friends: 「友だちは いそがしいですから」. Only then does he name who goes: his brother. The option's 「お兄さん」 is his 「兄」.\nTrap: guesses that are denied; his own 「兄」 versus the polite 「お兄さん」."
   },
   "wrong": [
    null,
@@ -1061,8 +1061,8 @@
    }
   },
   "why": {
-   "zh": "先说「めがねを かけて いる」，再说「ぼうしを かぶって いません」：戴眼镜、不戴帽子。",
-   "en": "First 「めがねを かけて いる」, then 「ぼうしを かぶって いません」: glasses, no hat."
+   "zh": "依据：男的说「あそこの、めがねを かけて いる 男の 人です。」，又说「いいえ、田中さんは ぼうしを かぶって いません。」\n推理：两个条件叠加：戴眼镜；女的问的戴帽子被「いいえ」否定。所以是只戴眼镜、不戴帽子的人。\n容易错：只对一半的选项；被否定的猜测。",
+   "en": "Evidence: The man says 「あそこの、めがねを かけて いる 男の 人です。」, then 「いいえ、田中さんは ぼうしを かぶって いません。」\nReasoning: Two conditions add up: glasses, and the hat she asks about is denied with 「いいえ」. So it's the man with glasses and no hat.\nTrap: options that are only half right; a guess that is denied."
   },
   "wrong": [
    {
@@ -1167,8 +1167,8 @@
    }
   },
   "why": {
-   "zh": "「すわって いる」被否定，是「立って いる」而且「花を もって いる」的人。",
-   "en": "Sitting is denied; she's standing and holding flowers."
+   "zh": "依据：女的说「いいえ、立って いる 人です。」，又说「花を もって いる ほうです。」\n推理：男的猜「いすに すわって いる 人ですか」，被「いいえ」否定；站着的有两个人，再用「〜ほう」从两人中选出拿花的那个。\n容易错：只对一半的选项。",
+   "en": "Evidence: The woman says 「いいえ、立って いる 人です。」, then 「花を もって いる ほうです。」\nReasoning: His guess 「いすに すわって いる 人ですか」 is denied with 「いいえ」; two people are standing, and 「〜ほう」 picks the one of the two holding flowers.\nTrap: options that are only half right."
   },
   "wrong": [
    {
@@ -1273,8 +1273,8 @@
    }
   },
   "why": {
-   "zh": "先说「前に ポケットが ある」，再从两个有口袋的包里选「大きい ほう」。",
-   "en": "First 「前に ポケットが ある」, then of the two with pockets, 「大きい ほう」."
+   "zh": "依据：女的说「前に ポケットが ある かばんです。」，又说「大きい ほうです。」\n推理：第一个条件是前面有口袋；有口袋的包有大小两个，「〜ほう」从中选出大的。「中に 本が たくさん 入って います」只是补充。\n容易错：只对一半的选项。",
+   "en": "Evidence: The woman says 「前に ポケットが ある かばんです。」, then 「大きい ほうです。」\nReasoning: The first condition is a front pocket; there are two bags with pockets, a big and a small one, and 「〜ほう」 picks the big one. 「中に 本が たくさん 入って います」 is just extra detail.\nTrap: options that are only half right."
   },
   "wrong": [
    null,
@@ -1378,8 +1378,8 @@
    }
   },
   "why": {
-   "zh": "裤子被否定，是「スカートの 人」，而且「かみが 長い ほう」。",
-   "en": "Trousers are denied; she's in a skirt, with long hair."
+   "zh": "依据：男的说「スカートの 人です。」，又说「かみが 長い ほうが 妹です。」\n推理：女的猜「ズボンの 人ですか」，男的用「いいえ」否定，说妹妹「ズボンが あまり すきじゃ ありません」；穿裙子的有两个，再选长头发的那个。\n容易错：被否定的猜测；只对一半的选项。",
+   "en": "Evidence: The man says 「スカートの 人です。」, then 「かみが 長い ほうが 妹です。」\nReasoning: Her guess 「ズボンの 人ですか」 gets 「いいえ」 — his sister 「ズボンが あまり すきじゃ ありません」. Two people wear skirts, and he picks the one with long hair.\nTrap: a guess that is denied; options that are only half right."
   },
   "wrong": [
    {
@@ -1478,8 +1478,8 @@
    }
   },
   "why": {
-   "zh": "有大树；她先说「ええ」，马上改口「ちがいます」，上个月买了车，「今は 車が あります」。",
-   "en": "It has the big tree; she first says 「ええ」, then corrects herself — they bought a car last month, so there's a car now."
+   "zh": "依据：女的改口：「あ、ちがいます。先月、車を 買いましたから、今は 車が あります。」\n推理：第一个条件是「大きい 木が ある 家」。男的问「前に 車が ない 家ですか」，她先答「ええ」，马上用「ちがいます」更正：上个月买了车，现在有车。以「今は」后面的为准。\n容易错：先说的「ええ」被更正。",
+   "en": "Evidence: The woman corrects herself: 「あ、ちがいます。先月、車を 買いましたから、今は 車が あります。」\nReasoning: The first condition is 「大きい 木が ある 家」. To his 「前に 車が ない 家ですか」 she first says 「ええ」, then corrects it with 「ちがいます」: they bought a car last month, so there is one now. What follows 「今は」 counts.\nTrap: the first 「ええ」 is corrected."
   },
   "wrong": [
    null,
@@ -1578,8 +1578,8 @@
    }
   },
   "why": {
-   "zh": "吃蛋糕被否定，是「コーヒーを 飲んで いる」而且「めがねを かけて いる」的人。",
-   "en": "Eating cake is denied; he's drinking coffee and wearing glasses."
+   "zh": "依据：女的说「いいえ、先生は コーヒーを 飲んで いますよ。」，又说「めがねを かけて いる 人が 木村先生です。」\n推理：男的猜「ケーキを 食べて いる 人」，被「いいえ」否定；喝咖啡的有两个人，再用戴不戴眼镜来区分。\n容易错：被否定的猜测；只对一半的选项。",
+   "en": "Evidence: The woman says 「いいえ、先生は コーヒーを 飲んで いますよ。」, then 「めがねを かけて いる 人が 木村先生です。」\nReasoning: His guess, 「ケーキを 食べて いる 人」, is denied with 「いいえ」; two people are drinking coffee, and glasses tell them apart.\nTrap: a guess that is denied; options that are only half right."
   },
   "wrong": [
    {
@@ -1678,8 +1678,8 @@
    }
   },
   "why": {
-   "zh": "店员推荐的大蛋糕他不要（「小さいのが いい」），又因为妹妹不喜欢草莓，要「いちごが ない の」。",
-   "en": "He turns down the large one (「小さいのが いい」) and asks for the one without strawberries."
+   "zh": "依据：男的说「かぞくは 三人ですから、小さいのが いいです。」，又说「いちごが ないのを ください。」\n推理：店员推荐的大蛋糕，他以家里只有三个人为由不要；小蛋糕有两个，又因为「妹は いちごが あまり すきじゃ ありませんから」选没有草莓的。\n容易错：店员推荐的东西；只对一半的选项。",
+   "en": "Evidence: The man says 「かぞくは 三人ですから、小さいのが いいです。」, then 「いちごが ないのを ください。」\nReasoning: He turns down the clerk's large cake because there are only three in his family; of the two small cakes he picks the one without strawberries, since 「妹は いちごが あまり すきじゃ ありませんから」.\nTrap: the clerk's suggestion; options that are only half right."
   },
   "wrong": [
    {
@@ -1778,12 +1778,12 @@
    }
   },
   "why": {
-   "zh": "在跑——男人说「ええ、そうです」；但不是和狗一起，「一人で はしって います」。",
-   "en": "Running — he confirms; but not with the dog: 「一人で はしって います」."
+   "zh": "依据：男的说：「うちの 子は 一人で はしって います。」\n推理：女的问是不是在跑的孩子，男的「ええ、そうです」肯定；她再问「犬と いっしょに はしって いる 子ですね」，男的用「いいえ」否定，那只狗是「となりの 家の 犬です」。所以是一个人在跑、没有狗。\n容易错：先肯定一半、再否定另一半。",
+   "en": "Evidence: The man says: 「うちの 子は 一人で はしって います。」\nReasoning: Asked about the running child, he confirms 「ええ、そうです」; but to 「犬と いっしょに はしって いる 子ですね」 he says 「いいえ」 — the dog is 「となりの 家の 犬です」. So the child is running, with no dog.\nTrap: one half confirmed, the other half denied."
   },
   "wrong": [
    {
-    "zh": "和狗一起跑的是邻居家的狗那边，他说自家孩子「一人で」。",
+    "zh": "那只狗是「となりの 家の 犬」，他说自家孩子是「一人で」跑的。",
     "en": "The dog belongs to the neighbours; his child is running alone."
    },
    null,
@@ -1872,8 +1872,8 @@
    }
   },
   "why": {
-   "zh": "大猫被否定，吃东西也被否定：是「小さい」而且「ねて いる」的猫。",
-   "en": "Big is denied, eating is denied: it's small and sleeping."
+   "zh": "依据：女的说「いいえ、うちの ねこは 小さいです。」，又说「いいえ、ねて いる ほうです。」\n推理：男的两次猜测都被「いいえ」否定：先否定大猫，再否定「ごはんを 食べて いる ねこ」。小猫有两只，选在睡觉的那只。\n容易错：被否定的猜测；只对一半的选项。",
+   "en": "Evidence: The woman says 「いいえ、うちの ねこは 小さいです。」, then 「いいえ、ねて いる ほうです。」\nReasoning: Both of his guesses get 「いいえ」: first the big cat, then 「ごはんを 食べて いる ねこ」. Of the two small cats, it's the sleeping one.\nTrap: guesses that are denied; options that are only half right."
   },
   "wrong": [
    {
@@ -1966,8 +1966,8 @@
    }
   },
   "why": {
-   "zh": "看报纸被否定，是「電話で 話して いる」而且「大きい かばんを もって いる」的人。",
-   "en": "Reading the paper is denied; he's on the phone, holding a big bag."
+   "zh": "依据：女的说「いいえ、父は 今 電話で 話して います。」，又说「大きい かばんを もって いる ほうです。」\n推理：男的猜「新聞を 読んで いる 人」，被「いいえ」否定；打电话的有两个人，再用「〜ほう」选出拿着大包的那个。\n容易错：被否定的猜测；只对一半的选项。",
+   "en": "Evidence: The woman says 「いいえ、父は 今 電話で 話して います。」, then 「大きい かばんを もって いる ほうです。」\nReasoning: His guess, 「新聞を 読んで いる 人」, is denied with 「いいえ」; two people are on the phone, and 「〜ほう」 picks the one holding a big bag.\nTrap: a guess that is denied; options that are only half right."
   },
   "wrong": [
    {

@@ -33,7 +33,7 @@
     "options": ["Copy the handouts", "Book the meeting room", "Contact the client", "Check the projector"]
    }
   },
-  "why": { "zh": "女人说时间写错了，「すぐ訂正の連絡入れといて」，男人答「すぐやります」，所以首先要联系对方。", "en": "She says the time in the email is wrong and tells him to send a correction 「すぐ」; he says he'll do it now." },
+  "why": { "zh": "依据：女的说：「すぐ訂正の連絡入れといて。」男的答：「はい、すぐやります。」\n推理：复印要等对方下午告知人数，「コピーはそのあとでいい」；会议室女的昨天「私が取っといた」。她用「それより」转到邮件里时间写成两点的错误，要他马上联系对方更正。投影仪「夕方でも間に合う」。所以首先联系客户。\n容易错：已经有人做过的事；被推后的事。", "en": "Evidence: The woman says: 「すぐ訂正の連絡入れといて。」 The man answers: 「はい、すぐやります。」\nReasoning: Copying waits for the client's headcount this afternoon — 「コピーはそのあとでいい」; the room she booked yesterday — 「私が取っといた」. With 「それより」 she turns to the wrong time (two o'clock) in his email and tells him to send a correction now. The projector 「夕方でも間に合う」. So contacting the client comes first.\nTrap: a task someone already did; tasks pushed to later." },
   "wrong": [
    { "zh": "人数下午才知道，复印「そのあとでいい」。", "en": "The headcount comes this afternoon; copying can wait until then." },
    { "zh": "会议室女人昨天已经订好了。", "en": "She already booked the room yesterday." },
@@ -74,7 +74,7 @@
     "options": ["Reserve the book at the library", "Buy the book at a bookshop", "Go to the lab to get the book", "Email the person at the lab"]
    }
   },
-  "why": { "zh": "研究室不能随便进，要「先にメールで頼んどかないと」；她说「そっちに頼んでみる」，就是先给助手发邮件。", "en": "She can't just walk into the lab — the assistant must be emailed first; 「そっちに頼んでみる」 means doing that." },
+  "why": { "zh": "依据：男的说：「助手の人に先にメールで頼んどかないとだめなんだ。」女的说「そっちに頼んでみる」。\n推理：预约要等到下周五还书，赶不上周三截止；书店已经不卖。研究室有这本书，但不能随便进，必须「先に」发邮件拜托助手，「返事が来たら」才能去拿。所以第一步是给研究室的人发邮件。\n容易错：顺序——去研究室拿书在收到回复之后。", "en": "Evidence: The man says: 「助手の人に先にメールで頼んどかないとだめなんだ。」 She says 「そっちに頼んでみる」.\nReasoning: A reservation would mean waiting until next Friday, after her Wednesday deadline, and shops no longer sell the book. The lab has it, but she can't just walk in: she must email the assistant 「先に」, and only 「返事が来たら」 go and get it. So the first step is emailing the lab.\nTrap: order — fetching the book from the lab comes after the reply." },
   "wrong": [
    { "zh": "还书日期在截止日之后，预约来不及；她最后也说「図書館はやめて」。", "en": "The book is due back after her deadline, and she ends with 「図書館はやめて」." },
    { "zh": "书店已经不卖了。", "en": "It's no longer sold in shops." },
@@ -177,8 +177,8 @@
    }
   },
   "why": {
-   "zh": "工作人员说推荐信「二、三週間かかることもある」，要「早めにお願い」；她说「このあとすぐ行ってお願いしてきます」，申请表之后再写。",
-   "en": "The letter can take two or three weeks, so she should ask early; she'll go and ask him right after this and finish the form afterwards."
+   "zh": "依据：工作人员说：「それより推薦状。」女的说：「このあとすぐ行ってお願いしてきます。」\n推理：她本想先写完申请表，工作人员说「申込書は直前でも間に合いますよ」，再用「それより」把推荐信提前，因为有的老师要两三周。成绩证明「最後でいい」，语言成绩在两年内可用，不用重考。所以首先请老师写推荐信。\n容易错：她先说的打算被「それより」改掉；不用做的事。",
+   "en": "Evidence: The staff member says: 「それより推薦状。」 She says: 「このあとすぐ行ってお願いしてきます。」\nReasoning: She meant to finish the form first, but he says 「申込書は直前でも間に合いますよ」 and with 「それより」 moves the reference letter forward, since some teachers take two or three weeks. The transcript can be 「最後でいい」, and her test score is within two years, so no retake. So asking the teacher for the letter comes first.\nTrap: her first plan is overturned by 「それより」; a task she doesn't need to do."
   },
   "wrong": [
    null,
@@ -296,8 +296,8 @@
    }
   },
   "why": {
-   "zh": "酒店要等部长批准后才能订，部长只在到中午，所以先交出差申请；男人说「すぐ書きます」。",
-   "en": "Nothing can be booked before approval, and the director leaves at noon, so the request comes first; he says he'll write it now."
+   "zh": "依据：科长说：「部長の承認が下りる前に予約しちゃうと、あとで面倒なことになるのよ。」男的说：「じゃあ、申請が先ですね。」\n推理：他想先订酒店，但批准之前不能订；部长「今日はお昼までしかいない」，所以要赶紧交申请。车票批下来后「総務がまとめて手配してくれる」，礼物科长「もう買ってある」。他最后的「すぐ書きます」写的就是申请。\n容易错：别人负责的事；已经做好的事。",
+   "en": "Evidence: The section chief says: 「部長の承認が下りる前に予約しちゃうと、あとで面倒なことになるのよ。」 He replies: 「じゃあ、申請が先ですね。」\nReasoning: He wanted to book the hotel, but nothing can be booked before approval, and the director 「今日はお昼までしかいない」, so the request must go in now. Tickets: 「総務がまとめて手配してくれる」 after approval; the gift she 「もう買ってある」. His final 「すぐ書きます」 means writing the request.\nTrap: a task someone else handles; one already done."
   },
   "wrong": [
    {
@@ -421,8 +421,8 @@
    }
   },
   "why": {
-   "zh": "送修前必须自己保存数据；她说「家でゆっくりやります。終わったら、また来ます」，所以先回家保存数据。",
-   "en": "Data must be backed up before the phone is taken in; she'll do it at home and come back."
+   "zh": "依据：店员说：「お預かりする前に、ご自分で保存しておいていただく必要があるんですが。」女的说：「家でゆっくりやります。終わったら、また来ます。」\n推理：她已经加入保障服务，修理免费；店员用「ただ」提出条件：送修前数据要自己保存。她决定回家慢慢弄，弄完再来；正式送修和借替代机都是再来店时的事。所以首先保存数据。\n容易错：已经办好的事（保障服务）；之后才做的事。",
+   "en": "Evidence: The clerk says: 「お預かりする前に、ご自分で保存しておいていただく必要があるんですが。」 She says: 「家でゆっくりやります。終わったら、また来ます。」\nReasoning: She is already on the protection plan, so the repair is free; with 「ただ」 the clerk adds a condition: back up the data yourself before handing it in. She'll do it at home and come back; handing in the phone and borrowing a spare happen on that later visit. So saving the data comes first.\nTrap: something already arranged (the plan); steps that come later."
   },
   "wrong": [
    {
@@ -540,8 +540,8 @@
    }
   },
   "why": {
-   "zh": "买手套之前要先去仓库看看还剩几副，男人借钥匙，所以先去仓库。",
-   "en": "Before buying gloves he must check how many are left in the storeroom; he asks for the key."
+   "zh": "依据：女的说：「買う前に、まずいくつあるか見てきてもらえますか。」男的于是借仓库钥匙。\n推理：通知女的「私が作っておきます」，垃圾袋拜托了下周去市政府的会长；男的说去买手套，女的说去年买的应该在仓库还剩一些，要他「買う前に、まず」去看，只买不够的。所以先去看仓库。\n容易错：别人做的事；顺序——买手套在看完仓库之后。",
+   "en": "Evidence: The woman says: 「買う前に、まずいくつあるか見てきてもらえますか。」 He then asks for the storeroom key.\nReasoning: The notice: 「私が作っておきます」, she says; the bin bags are left to the chairman, who goes to city hall next week. When he offers to buy gloves, she says some from last year should be in the storeroom, so 「買う前に、まず」 he should check and buy only what's missing. So checking the storeroom comes first.\nTrap: tasks others are doing; order — buying gloves comes after the check."
   },
   "wrong": [
    {
@@ -665,8 +665,8 @@
    }
   },
   "why": {
-   "zh": "人数合计有误，图表要用这些数字，老师说「スライドより先に、もう一回数え直して」。",
-   "en": "The totals are wrong and the graphs depend on them, so he must recount before making slides."
+   "zh": "依据：老师说：「スライドより先に、もう一回数え直してください。」\n推理：他打算今天开始做幻灯片，老师用「その前に」指出问卷的人数合计不对；图表要用这些数字，所以先重新数。讲义「発表の前の日まででいい」，再调查「卒論のときでいい」。所以首先重新统计数据。\n容易错：他自己的打算被老师改了顺序；被推后的事。",
+   "en": "Evidence: The teacher says: 「スライドより先に、もう一回数え直してください。」\nReasoning: He planned to start the slides today, but with 「その前に」 she points out the survey totals don't add up; the graphs come from those numbers, so he must recount first. The handout: 「発表の前の日まででいい」; a new survey: 「卒論のときでいい」. So recounting the data comes first.\nTrap: his own plan reordered by the teacher; tasks pushed to later."
   },
   "wrong": [
    null,
@@ -783,8 +783,8 @@
    }
   },
   "why": {
-   "zh": "男人请她把共享文件夹里的文件发给部长，最后说「ファイルだけ急ぎでお願い」。",
-   "en": "He asks her to email the file to the director and ends with 'just the file, quickly'."
+   "zh": "依据：男的说：「とりあえず、ファイルだけ急ぎでお願い。」\n推理：他请她把共享文件夹里的文件用邮件发给部长；她提出的其他事都被他揽下：晚回去的事「さっき自分でメッセージ送った」，回电「戻ってから僕がかける」，打印「明日の朝、自分でやる」。剩下要她马上做的只有发文件。\n容易错：已经做过的事；他自己要做的事。",
+   "en": "Evidence: The man says: 「とりあえず、ファイルだけ急ぎでお願い。」\nReasoning: He asks her to email the file from the shared folder to the director; everything else she offers he takes on himself: he 「さっき自分でメッセージ送った」 about being late, he'll call back 「戻ってから僕がかける」, and the printing 「明日の朝、自分でやる」. The only thing left for her now is sending the file.\nTrap: something already done; things he will do himself."
   },
   "wrong": [
    {
@@ -902,8 +902,8 @@
    }
   },
   "why": {
-   "zh": "工作人员说「まずはこちらの申込書にご記入ください」，填完才办会员卡、用储物柜。",
-   "en": "She says to fill in the application form first; the card, and so the locker, come after."
+   "zh": "依据：工作人员说：「まずはこちらの申込書にご記入ください。」\n推理：「まずは」直接给出第一步。账户表格可以「後日ご郵送」；游泳池要先参加星期六的说明会；储物柜要用会员卡，而会员卡在填完表「そのあとで」才办。所以先填申请表。\n容易错：之后才做的事；要等条件满足才能做的事。",
+   "en": "Evidence: The receptionist says: 「まずはこちらの申込書にご記入ください。」\nReasoning: 「まずは」 names the first step outright. The account form can be sent 「後日ご郵送」; the pool needs Saturday's orientation first; lockers need the membership card, which is made 「そのあとで」, after the form. So filling in the form comes first.\nTrap: steps that come later; things that need a condition met first."
   },
   "wrong": [
    {
@@ -1027,8 +1027,8 @@
    }
   },
   "why": {
-   "zh": "印刷要三天，「今日頼まないと、ぎりぎり」；女人让他先做今天必须做的事，他说「さっそく頼んできます」。",
-   "en": "Printing takes three days, so it must be ordered today; he goes to place the order."
+   "zh": "依据：女的说：「今日頼まないと、ぎりぎりになっちゃう。」男的说：「じゃ、さっそく頼んできます。」\n推理：发货由「総務の人が手配してくれる」，展位时间女的昨天「電話で聞いといた」，名牌「前の日でいい」。她要他先办「今日中にやらなきゃいけないこと」：印刷厂要三天，必须今天下单。所以首先下单印刷。\n容易错：别人做的事、已经做过的事、被推后的事。",
+   "en": "Evidence: The woman says: 「今日頼まないと、ぎりぎりになっちゃう。」 He says: 「じゃ、さっそく頼んできます。」\nReasoning: The shipping is something 「総務の人が手配してくれる」; she 「電話で聞いといた」 the set-up time yesterday; the badges 「前の日でいい」. She tells him to do 「今日中にやらなきゃいけないこと」 first: the printer needs three days, so the order must go in today.\nTrap: tasks others handle, tasks already done, and tasks pushed to later."
   },
   "wrong": [
    null,
@@ -1146,8 +1146,8 @@
    }
   },
   "why": {
-   "zh": "只有参加过说明会的人才能申请，预约今天五点截止，所以先预约说明会。",
-   "en": "Only those who attended the session can apply, and bookings close at five today."
+   "zh": "依据：工作人员说：「この会社は、先に会社の説明会に出た人しか応募できないんですよ。」以及「説明会の予約、今日の五時までになってますね。」\n推理：她想今天开始写志愿理由，工作人员用「あ、でもね」改了顺序：先参加说明会才能申请，预约今天五点截止；而且志愿理由听完说明会再写更好。照片上个月拍的可以用，学长学姐由工作人员先去联系。所以先预约说明会。\n容易错：她先说的打算被「でもね」推翻；别人去办的事。",
+   "en": "Evidence: The staff member says: 「この会社は、先に会社の説明会に出た人しか応募できないんですよ。」 and 「説明会の予約、今日の五時までになってますね。」\nReasoning: She plans to start the statement of motivation today, but with 「あ、でもね」 he changes the order: only those who attended the session can apply, and booking closes at five today; the statement is also better written after the session. Last month's photo is fine, and the staff will contact the graduate first. So booking the session comes first.\nTrap: her first plan overturned by 「でもね」; a task someone else does."
   },
   "wrong": [
    {
@@ -1272,8 +1272,8 @@
    }
   },
   "why": {
-   "zh": "更新护照需要照片，他没有，说「駅のところで撮ってから、そのまま申請に行きます」，所以先拍照。",
-   "en": "Renewal needs a photo he doesn't have; he'll get it taken at the station, then apply."
+   "zh": "依据：男的说：「じゃあ、駅のところで撮ってから、そのまま申請に行きます。」\n推理：护照剩余有效期不够，要先换新的；旅游团预订需要新护照号码，「できてからで大丈夫」；更新申请要照片，他没带，所以「撮ってから」再去申请。保险在报名旅游团时一起办。顺序是拍照、申请更新、再订团。\n容易错：顺序——申请更新在拍完照片之后。",
+   "en": "Evidence: The man says: 「じゃあ、駅のところで撮ってから、そのまま申請に行きます。」\nReasoning: His passport doesn't have enough time left, so it must be renewed first; booking the tour needs the new number — 「できてからで大丈夫」; the renewal needs a photo he doesn't have, so he'll apply only 「撮ってから」. Insurance goes with the tour booking. The order: photo, renewal, then the tour.\nTrap: order — applying for renewal comes after the photo."
   },
   "wrong": [
    {
@@ -1391,8 +1391,8 @@
    }
   },
   "why": {
-   "zh": "店长说摆新书「その前に」，先把客人订的书按名字分好，「そっちを先に」。",
-   "en": "Before shelving, he wants the ordered books sorted by name — 'do that first'."
+   "zh": "依据：店长说：「今日取りに来る人もいるから、そっちを先に。」\n推理：收银机因为负责教的人请假「明日にしよう」；摆新书时他用「あ、でも、その前に」插进来，要她先把客人订的书按名字分好。打电话「僕がするから大丈夫」，纸箱「あとで僕がまとめて出す」。所以首先分订购的书。\n容易错：被「その前に」插队的顺序；推后的事、店长自己做的事。",
+   "en": "Evidence: The manager says: 「今日取りに来る人もいるから、そっちを先に。」\nReasoning: The register lesson is off — 「明日にしよう」 — since the trainer is away; while asking her to shelve new books he cuts in with 「あ、でも、その前に」 and has her sort the customers' ordered books by name first. The phone calls: 「僕がするから大丈夫」; the boxes: 「あとで僕がまとめて出す」. So sorting the orders comes first.\nTrap: a step pushed ahead by 「その前に」; tasks put off or done by the manager."
   },
   "wrong": [
    {

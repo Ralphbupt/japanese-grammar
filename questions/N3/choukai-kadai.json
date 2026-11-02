@@ -88,8 +88,8 @@
       }
     },
     "why": {
-      "zh": "女人说要在前一天之前付钱，「会費を集めるの、急いだほうがいい」，男人答「すぐ始めます」。",
-      "en": "She says the restaurant must be paid by the day before and tells him to hurry with collecting the fees; he says he'll start right away."
+      "zh": "依据：女的说：「みんなから会費を集めるの、急いだほうがいいよ。」男的答：「じゃあ、すぐ始めます。」\n推理：订店是「きのう予約しました」，已经做完；通知大家「鈴木さんがやってくれる」；礼物「当日の朝でいい」往后放。剩下的是女的用「それより」提出的收会费，因为前一天之前要付钱，男的说马上开始。\n容易错：已经做过的事、别人做的事、推后的事。",
+      "en": "Evidence: The woman says: 「みんなから会費を集めるの、急いだほうがいいよ。」 The man answers: 「じゃあ、すぐ始めます。」\nReasoning: The restaurant was 「きのう予約しました」 — done; telling everyone, 「鈴木さんがやってくれる」; the presents can be 「当日の朝でいい」. What's left is the fee collection she raises with 「それより」, since the shop must be paid by the day before, and he says he'll start now.\nTrap: a task already done, one someone else does, one put off."
     },
     "wrong": [
       {
@@ -201,8 +201,8 @@
       }
     },
     "why": {
-      "zh": "工作人员说「成績証明書だけ、あした持って来てください」。",
-      "en": "The staff member says 「成績証明書だけ、あした持って来てください」."
+      "zh": "依据：工作人员说：「じゃあ、成績証明書だけ、あした持って来てください。」\n推理：「だけ」限定只带这一样。照片她「先週出しました」，已经交了；推荐信「先生が直接こちらに送ってくださる」，由老师寄；护照复印件「面接の日に見せていただければいい」，是面试那天的事。\n容易错：已经交的、别人寄的、以后才要的东西。",
+      "en": "Evidence: The staff member says: 「じゃあ、成績証明書だけ、あした持って来てください。」\nReasoning: 「だけ」 limits it to this one item. The photo she 「先週出しました」 — already in; the letter 「先生が直接こちらに送ってくださる」 — the teacher sends it; the passport copy is 「面接の日に見せていただければいい」, for the interview day.\nTrap: things already handed in, sent by someone else, or needed later."
     },
     "wrong": [
       null,
@@ -302,8 +302,8 @@
       }
     },
     "why": {
-      "zh": "女人6点下班，到车站要40分钟，所以6点40分到；票由男人先去取，两人在她到的时间见面。",
-      "en": "She finishes at six and needs forty minutes to the station, so she arrives at 6:40; he collects the tickets first, and they meet when she arrives."
+      "zh": "依据：女的说：「会社から駅まで40分かかるから、それより前には着けないんだ。」最后定为：「じゃあ、私が着く時間に駅でね。」\n推理：见面时间就是她到车站的时间：「6時まで仕事」，再加40分钟，是6点40分。男的先提「6時45分」，为排队取票又提前到「6時半」，她赶不上；于是他「先に映画館へ行って受け取っておく」，取票的事解决了，就按她到的时间见。\n容易错：算数题；被推翻的提议里的时间。",
+      "en": "Evidence: The woman says: 「会社から駅まで40分かかるから、それより前には着けないんだ。」 They settle on: 「じゃあ、私が着く時間に駅でね。」\nReasoning: They meet when she reaches the station: 「6時まで仕事」 plus forty minutes is 6:40. He first proposed 「6時45分」, then moved it to 「6時半」 for the ticket queue, which she can't make; so he will 「先に映画館へ行って受け取っておく」, the tickets are taken care of, and they meet when she arrives.\nTrap: a calculation; times from proposals that were dropped."
     },
     "wrong": [
       {
@@ -414,8 +414,8 @@
       }
     },
     "why": {
-      "zh": "教室的盒子很快就卖完，老师让他「自分で買っておいてください」。",
-      "en": "The class's boxes sell out fast, so the teacher tells him to buy one himself."
+      "zh": "依据：老师说：「駅前の百円ショップにありますから、自分で買っておいてください。」\n推理：「自分で買っておいてください」指的是装蛋糕带回家的盒子：教室虽然卖，但「すぐなくなっちゃう」。鸡蛋牛奶「こちらで用意します」，围裙「この前買った」，模具「教室のものを貸します」，都不用买。\n容易错：别人准备的东西、已经买过的东西。",
+      "en": "Evidence: The teacher says: 「駅前の百円ショップにありますから、自分で買っておいてください。」\nReasoning: 「自分で買っておいてください」 refers to the box for taking the cake home: the class sells them, but they 「すぐなくなっちゃう」. Eggs and milk — 「こちらで用意します」; the apron — 「この前買った」; the tin — 「教室のものを貸します」. None of those need buying.\nTrap: things others provide, or he already bought."
     },
     "wrong": [
       {
@@ -526,8 +526,8 @@
       }
     },
     "why": {
-      "zh": "工作人员说「前の住所を書いていただいてから、3番の窓口に」，所以先补写原来的住址。",
-      "en": "The clerk says to add the previous address and then go to window 3, so filling that in comes first."
+      "zh": "依据：工作人员说：「では、前の住所を書いていただいてから、3番の窓口に出してください。」\n推理：「〜ていただいてから」表示顺序：先补写原来的住址，再去3号窗口。新住址「さっきあちらの机で書いておきました」，已经写好；驾照他带着，工作人员说「それで大丈夫です」，不用回去拿。\n容易错：顺序（先补写，后窗口）；已经做过的事。",
+      "en": "Evidence: The clerk says: 「では、前の住所を書いていただいてから、3番の窓口に出してください。」\nReasoning: 「〜ていただいてから」 sets the order: first add the previous address, then go to window 3. The new address he 「さっきあちらの机で書いておきました」 — done; he has his licence, and she says 「それで大丈夫です」, so no trip home.\nTrap: the order (fill in first, then the window); something already done."
     },
     "wrong": [
       {
@@ -644,8 +644,8 @@
       }
     },
     "why": {
-      "zh": "杯子和书都被否定，咖啡豆「それいいね」；花也决定「やめとこう」。",
-      "en": "The cup and the book are ruled out; she likes the coffee beans idea, and the flowers are dropped."
+      "zh": "依据：男的提议「じゃあ、コーヒー豆は？」，女的说「あ、それいいね。」\n推理：咖啡杯因为「もう置くところがない」被否定，书「もう予約したって聞いた」也被否定，咖啡豆两人都同意。女的又提议加花，男的以「持って帰るのが大変」说「やめとこう」，所以只买咖啡豆。\n容易错：最后追加又被否定的花。",
+      "en": "Evidence: The man suggests 「じゃあ、コーヒー豆は？」, and the woman says 「あ、それいいね。」\nReasoning: The cup is ruled out because 「もう置くところがない」, and the book because 「もう予約したって聞いた」; both agree on the beans. She then suggests adding flowers, but he says 「持って帰るのが大変」 and 「やめとこう」, so it's just the beans.\nTrap: the flowers, added at the end and then dropped."
     },
     "wrong": [
       {
@@ -750,8 +750,8 @@
       }
     },
     "why": {
-      "zh": "女人说「まず青木商事さんに……電話して。それからタクシーに並んで」，男人答「すぐかけます」。",
-      "en": "She says first call Aoki Trading, then queue for a taxi; he says he'll call now."
+      "zh": "依据：女的说：「それより、まず青木商事さんに、遅れるかもしれないって電話して。それからタクシーに並んで。」\n推理：男的提议发资料，被「資料はきのう私が送っておいたから大丈夫」否定；「それより」后用「まず」打电话、「それから」排出租车，排出了顺序，男的答「すぐかけます」。等电车可能「間に合わない」。\n容易错：已经做过的事；把第二步当成第一步。",
+      "en": "Evidence: The woman says: 「それより、まず青木商事さんに、遅れるかもしれないって電話して。それからタクシーに並んで。」\nReasoning: His offer to email the documents is turned down with 「資料はきのう私が送っておいたから大丈夫」; after 「それより」, 「まず」 is the call and 「それから」 the taxi queue, and he answers 「すぐかけます」. Waiting for the train might mean 「間に合わない」.\nTrap: something already done; the second step taken as the first."
     },
     "wrong": [
       {
@@ -850,8 +850,8 @@
       }
     },
     "why": {
-      "zh": "飞机推迟到11点，要在9点前到机场；8点20分的大巴40分钟到，正好9点；从家走到乘车点10分钟，所以8点10分出门。",
-      "en": "The flight is now at eleven, so he must be at the airport by nine; the 8:20 bus takes forty minutes and arrives at nine, and the stop is ten minutes' walk — so he leaves at 8:10."
+      "zh": "依据：女的说：「8時20分のバスに乗れば、乗り換えなしで40分で着くって。」男的说：「家からバス乗り場までは歩いて10分だね。」\n推理：飞机「1時間遅れる」，变成11点；提前2小时就是9点到机场。8点20分的大巴40分钟正好9点到，走到乘车点要10分钟，所以8点10分出门。「7時」「8時」都是改坐大巴之前的计划。\n容易错：要自己计算；8点20分是发车时间，不是出门时间。",
+      "en": "Evidence: The woman says: 「8時20分のバスに乗れば、乗り換えなしで40分で着くって。」 The man says: 「家からバス乗り場までは歩いて10分だね。」\nReasoning: The flight is 「1時間遅れる」, so 11:00; two hours early means the airport by 9:00. The 8:20 bus takes forty minutes and arrives at 9:00, and the stop is a ten-minute walk, so he leaves at 8:10. 「7時」 and 「8時」 were plans from before the switch to the bus.\nTrap: you must calculate; 8:20 is the bus, not when he leaves home."
     },
     "wrong": [
       {
@@ -962,8 +962,8 @@
       }
     },
     "why": {
-      "zh": "工作人员请他把空调下面的东西「どけておいて」，他答「本棚……動かしておきます」。",
-      "en": "She asks him to move whatever is under the air conditioner, and he says he'll move the bookcase."
+      "zh": "依据：工作人员说：「エアコンの下に物があると作業ができないので、どけておいていただけますか。」男的答：「動かしておきます。」\n推理：「〜ておいていただけますか」是请他修理前先做好的事：把空调下面的书架挪开。交钥匙被「それはできないんです」否定；修理改到星期六他在家，不用请假；前一天的电话是「修理の者からも」打给他。\n容易错：被拒绝的办法；别人做的事（对方打电话）。",
+      "en": "Evidence: The staff member says: 「エアコンの下に物があると作業ができないので、どけておいていただけますか。」 He answers: 「動かしておきます。」\nReasoning: 「〜ておいていただけますか」 asks for something done before the repair: move the bookcase under the air conditioner. Leaving the key is refused with 「それはできないんです」; the repair is moved to Saturday when he's home, so no day off; the call the day before comes 「修理の者からも」, to him.\nTrap: an option that was refused; something the other side does (the phone call)."
     },
     "wrong": [
       {
@@ -1068,8 +1068,8 @@
       }
     },
     "why": {
-      "zh": "先辈请他「きょうから始めてくれる？」给招牌上色，他答「はい」。",
-      "en": "She asks him to start painting the sign today, and he agrees."
+      "zh": "依据：前辈说：「それより、入口の看板、まだ色を塗ってないでしょう？時間がかかるから、きょうから始めてくれる？」\n推理：贴海报要先问店家，「貼るのは来週ね」；搬桌子「前の日にみんなでやる」；「それより」引出今天的任务：给招牌上色，他答「はい」。油漆不够的话「あした私が買って来る」，是前辈去买。\n容易错：推到以后的事；别人做的事。",
+      "en": "Evidence: The senior student says: 「それより、入口の看板、まだ色を塗ってないでしょう？時間がかかるから、きょうから始めてくれる？」\nReasoning: The shops must be asked first, so 「貼るのは来週ね」; the desks are 「前の日にみんなでやる」; 「それより」 brings in today's job, painting the sign, and he says 「はい」. If paint runs short, 「あした私が買って来る」 — she buys it.\nTrap: tasks put off; a task someone else does."
     },
     "wrong": [
       null,
@@ -1192,8 +1192,8 @@
       }
     },
     "why": {
-      "zh": "免费修理需要保修单，她说「家はすぐ近くなので、取って来ます」。",
-      "en": "Free repair needs the guarantee card, and she says she'll go home and get it."
+      "zh": "依据：女的说：「家はすぐ近くなので、取って来ます。」\n推理：保修期内可以免费修，但需要保修单，没有就「修理代をいただく」。她决定回家拿保修单，吸尘器「ここに置いていってもいいですか」，留在店里。问买新的是否更便宜，店员说「修理のほうがいい」。\n容易错：条件句里的结果（不带保修单才付费）。",
+      "en": "Evidence: The woman says: 「家はすぐ近くなので、取って来ます。」\nReasoning: The guarantee makes the repair free, but only with the card; without it they'd 「修理代をいただく」. She decides to fetch the card from home and asks 「ここに置いていってもいいですか」, leaving the vacuum at the shop. When she asks about buying new, the clerk says 「修理のほうがいい」.\nTrap: the outcome of a condition (paying only happens without the card)."
     },
     "wrong": [
       {
@@ -1303,8 +1303,8 @@
       }
     },
     "why": {
-      "zh": "女人家里没有组装架子的工具，男人说「ドライバーなら持ってるよ。持っていくね」。",
-      "en": "She has no tools for the shelf, and he says he'll bring his screwdriver."
+      "zh": "依据：男的说：「ああ、ドライバーなら持ってるよ。持っていくね。」\n推理：纸箱「引っ越し屋さんが持って来てくれる」，胶带「きのう買っちゃった」，午饭女的请吃荞麦面，都不用带。「あ、そうだ」之后女的说想组装架子却没有工具，男的就说带螺丝刀。\n容易错：别人带的东西、已经买了的东西。",
+      "en": "Evidence: The man says: 「ああ、ドライバーなら持ってるよ。持っていくね。」\nReasoning: Boxes — 「引っ越し屋さんが持って来てくれる」; tape — 「きのう買っちゃった」; lunch — she's treating him to soba. None need bringing. After 「あ、そうだ」 she says she wants to build a shelf but has no tools, so he offers his screwdriver.\nTrap: things someone else brings or she already bought."
     },
     "wrong": [
       {
@@ -1409,8 +1409,8 @@
       }
     },
     "why": {
-      "zh": "男人说「ホテルが先だね」，因为那周大阪有活动，酒店很快会满。",
-      "en": "He says the hotel comes first because an event that week will fill everything up."
+      "zh": "依据：男的说：「それよりホテルが先だね。」\n推理：女的想马上订新干线，被「新幹線は一か月前にならないと予約できない」否定；「それより〜が先」点明先订酒店，因为那周有大型活动「すぐいっぱいになる」。申请书「ホテルが決まってからでいい」；日期「決まったよ」，已经定了。\n容易错：现在还做不了的事、推后的事、已经定了的事。",
+      "en": "Evidence: The man says: 「それよりホテルが先だね。」\nReasoning: She wants to book the train at once, but 「新幹線は一か月前にならないと予約できない」; 「それより〜が先」 puts the hotel first, since a big event that week means rooms 「すぐいっぱいになる」. The form is 「ホテルが決まってからでいい」, and the dates are 「決まったよ」 already.\nTrap: something not yet possible, something put off, something already settled."
     },
     "wrong": [
       null,
@@ -1522,8 +1522,8 @@
       }
     },
     "why": {
-      "zh": "体验课已经上过，钱以后办手续；店员说「書き終わったら写真を撮ります」，所以先填申请表。",
-      "en": "He's done the trial, payment is set up later, and the photo is taken after he finishes the form — so the form comes first."
+      "zh": "依据：工作人员说：「書き終わったら写真を撮りますので、声をかけてください。」男的说「じゃあ、書きます。」\n推理：体验课「先週受けました」，已经上过；付款手续等带「通帳とはんこ」来时再办，「きょうは申込書と写真だけ」。「書き終わったら写真」说明拍照在填表之后，所以先填申请表。\n容易错：已经做过的事；以后办的事；顺序（照片在后）。",
+      "en": "Evidence: The receptionist says: 「書き終わったら写真を撮りますので、声をかけてください。」 He says 「じゃあ、書きます。」\nReasoning: The trial lesson he 「先週受けました」 — done; payment is set up when he brings 「通帳とはんこ」, and 「きょうは申込書と写真だけ」. 「書き終わったら写真」 puts the photo after the form, so the form comes first.\nTrap: something already done; something for later; the order (photo second)."
     },
     "wrong": [
       {
@@ -1635,8 +1635,8 @@
       }
     },
     "why": {
-      "zh": "改成在车站附近的桥上看，男人说「始まる20分前に駅で会えば十分」，7点半开始，所以7点10分见面。",
-      "en": "They switch to watching from the bridge, and he says meeting twenty minutes before the 7:30 start is enough — 7:10."
+      "zh": "依据：男的说：「始まる20分前に駅で会えば十分だね。」\n推理：原来要去会场占位，算出「駅に6時」；女的用「あ、でもね」提出在桥上看，「早く行って場所を取らなくても大丈夫」，男的说「じゃあ、そっちにしよう」。7点半开始，提前20分钟就是7点10分。\n容易错：先说的方案被「でも」推翻；要自己计算。",
+      "en": "Evidence: The man says: 「始まる20分前に駅で会えば十分だね。」\nReasoning: The first plan, a good spot at the venue, gave 「駅に6時」; with 「あ、でもね」 she brings up the bridge, where 「早く行って場所を取らなくても大丈夫」, and he says 「じゃあ、そっちにしよう」. The show starts at 7:30, so twenty minutes before is 7:10.\nTrap: the first plan overturned by 「でも」; you must calculate."
     },
     "wrong": [
       {
@@ -1741,8 +1741,8 @@
       }
     },
     "why": {
-      "zh": "老师说没写参考的书就「受け取れない」，最后也说「まずは本の名前を書いて」。",
-      "en": "Without the sources the report can't be accepted, and she ends with 「まずは本の名前を書いて」."
+      "zh": "依据：老师说：「まずは本の名前を書いて、金曜日までにもう一度出してください。」\n推理：没写用过的书和资料，「それがないと、受け取れないんです」，所以必须先补。字数「気にしなくていいです」；标题「時間があるときでいいです」，放到后面；内容老师夸「よく調べてあって」，不用重查。\n容易错：可以以后再做的事（改标题）。",
+      "en": "Evidence: The teacher says: 「まずは本の名前を書いて、金曜日までにもう一度出してください。」\nReasoning: The sources are missing, and 「それがないと、受け取れないんです」, so that comes first. Length — 「気にしなくていいです」; the title — 「時間があるときでいいです」, later; the content she praised as 「よく調べてあって」, so no redoing.\nTrap: a task that can wait (the title)."
     },
     "wrong": [
       {
@@ -1847,8 +1847,8 @@
       }
     },
     "why": {
-      "zh": "女儿说人多也想去水族馆，父亲答「分かった」。",
-      "en": "She wants the aquarium even if it's crowded, and her father agrees."
+      "zh": "依据：女儿说：「混んでてもいいよ。行きたい。」父亲答：「分かった。」\n推理：下雨，爬山改到「天気のいい日」；电影妈妈也想看，等她回来「来週にしよう」；水族馆父亲提醒「すごく混む」，女儿说人多也想去，父亲同意，所以星期天去水族馆。\n容易错：推到以后的事（电影、爬山）。",
+      "en": "Evidence: The daughter says: 「混んでてもいいよ。行きたい。」 Her father answers: 「分かった。」\nReasoning: It will rain, so the mountain waits for 「天気のいい日」; Mum wants to see the film too, so 「来週にしよう」; he warns the aquarium will be 「すごく混む」, she still wants to go, and he agrees — Sunday is the aquarium.\nTrap: plans put off to later (the film, the mountain)."
     },
     "wrong": [
       null,

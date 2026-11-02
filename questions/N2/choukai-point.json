@@ -30,7 +30,7 @@
     "options": ["It's far from work and inconvenient", "The neighbour is noisy", "The room is small and inconvenient", "The rent has gone up"]
    }
   },
-  "why": { "zh": "两个猜测都被否定，「実はね」后面说出真正原因：隔壁每晚放音乐到很晚。", "en": "Both guesses are denied; after 「実はね」 she gives the real reason — the neighbour's late-night music." },
+  "why": { "zh": "依据：女的说：「実はね、隣に越してきた人が、毎晩遅くまで音楽かけてて。」\n推理：男的两个猜测都被否定：通勤「それは別に気にしてないの」，房间扔了东西后「だいぶ片付いた」。「実はね」后面才是真正的理由：隔壁太吵，请房东说了也没用。房租要涨，但「それくらいなら払える」。\n容易错：被否定的猜测；提到了但不是原因的房租。", "en": "Evidence: The woman says: 「実はね、隣に越してきた人が、毎晩遅くまで音楽かけてて。」\nReasoning: Both of his guesses are denied: the commute — 「それは別に気にしてないの」; the small room — after throwing things out it 「だいぶ片付いた」. The real reason comes after 「実はね」: the noisy neighbour, unchanged even after the landlord spoke to him. The rent will rise, but 「それくらいなら払える」.\nTrap: the denied guesses; the rent, mentioned but not the reason." },
   "wrong": [
    { "zh": "她说通勤只要一趟电车，「別に気にしてない」。", "en": "She says the commute is one train and doesn't bother her." },
    null,
@@ -68,7 +68,7 @@
     "options": ["The portion size", "The photos", "The prices", "The text size"]
    }
   },
-  "why": { "zh": "店长用「ただね」转折，指出套餐「量が多すぎる」，要她「もう少し考えて」。", "en": "After 「ただね」 he points out the set is too big and asks her to rethink it." },
+  "why": { "zh": "依据：店长说：「前から、量が多すぎるってお客さんによく言われてるでしょう。」又说「そこはもう少し考えてほしいんだ」。\n推理：照片「きれい」、价格「今のままでいい」都是肯定；店员担心的字太小，店长说「あのくらいで問題ない」。「ただね」之后才是要改的地方：套餐分量太多。\n容易错：店员自己的担心不是店长的意见。", "en": "Evidence: The manager says: 「前から、量が多すぎるってお客さんによく言われてるでしょう。」 and 「そこはもう少し考えてほしいんだ」.\nReasoning: The photos are 「きれい」 and the prices 「今のままでいい」 — both approved; the small text she worried about is 「あのくらいで問題ない」. What he wants changed comes after 「ただね」: the set is too big.\nTrap: her own worry is not the manager's view." },
   "wrong": [null,
    { "zh": "店长说照片「きれい」，是夸奖。", "en": "He praises the photos." },
    { "zh": "价格「今のままでいい」。", "en": "He says the prices can stay." },
@@ -164,8 +164,8 @@
    }
   },
   "why": {
-   "zh": "换到了初学者的班，每次都是自我介绍式的对话；她「もう少し難しいことがやりたい」，也就是课太简单了。",
-   "en": "She was moved to a beginners' class and wants something harder — the lessons are too easy for her."
+   "zh": "依据：女的说：「つまらないっていうより、もう少し難しいことがやりたいんだよね。」\n推理：男的猜的三点都被否定：加班「何とかなってた」，学费「会社が半分出してくれる」，老师「全然不満ない」。真正原因是春天起换到了「始めたばかりの人のクラス」，每次都是自我介绍式的会话，对她来说太简单。\n容易错：被否定的猜测。",
+   "en": "Evidence: The woman says: 「つまらないっていうより、もう少し難しいことがやりたいんだよね。」\nReasoning: All three of his guesses are denied: overtime — it 「何とかなってた」; the fee — 「会社が半分出してくれる」; the teacher — 「全然不満ない」. The real reason: from spring she was put in 「始めたばかりの人のクラス」, all self-introduction talk, which is too easy for her.\nTrap: the denied guesses."
   },
   "wrong": [
    {
@@ -276,8 +276,8 @@
    }
   },
   "why": {
-   "zh": "男人说「それより困るのは」承认要转到部长，垫的钱一个月后才能回来。",
-   "en": "After 「それより困るのは」 he says approval now goes up to the director, so reimbursement takes about a month."
+   "zh": "依据：男的说：「それより困るのは、申請してから承認されるまでだよ。」又说「お金が戻ってくるのが一か月後とかになっちゃって」。\n推理：界面乱、用手机发不了照片都是女的的抱怨；男的说习惯后「前より入力は早くなった」，手机的问题更新应用就能好。「それより困るのは」之后才是他说的最大问题：现在要转到部长那里，垫的钱一个月后才回来。\n容易错：把对方的抱怨当成男的的看法。",
+   "en": "Evidence: The man says: 「それより困るのは、申請してから承認されるまでだよ。」 and 「お金が戻ってくるのが一か月後とかになっちゃって」.\nReasoning: The cluttered screen and the phone photos are her complaints; he says that once used to it 「前より入力は早くなった」, and an app update fixes the phone problem. His biggest problem comes after 「それより困るのは」: approval now goes up to the director, so money paid out comes back only after a month.\nTrap: taking her complaints as his view."
   },
   "wrong": [
    null,
@@ -388,8 +388,8 @@
    }
   },
   "why": {
-   "zh": "她一开头就说：算下来一个月只开车出门两次左右，共享汽车就够了；后面也说「たまにしか乗らない」。",
-   "en": "She explains at the start that she'd only drive about twice a month, and repeats that she'd hardly use it."
+   "zh": "依据：女的说：「そしたら、月に二回くらいしかなくて。」又说「それなら、駅前のカーシェアで十分だなって。」\n推理：她算了一下，一个月开车出门才两次左右，所以共享汽车就够了；后面「たまにしか乗らないのに、毎月払うのもね」也是同一个理由。钱决定拿去旅行，停车位「空いてる」，她「運転は好き」，都不是原因。\n容易错：男的提出的猜测都被否定。",
+   "en": "Evidence: The woman says: 「そしたら、月に二回くらいしかなくて。」 and 「それなら、駅前のカーシェアで十分だなって。」\nReasoning: When she counted, she drove out only about twice a month, so car sharing is enough; her later 「たまにしか乗らないのに、毎月払うのもね」 is the same reason. The savings go to travel, the parking space is 「空いてる」, and she says 「運転は好き」 — none of these is the reason.\nTrap: his guesses are all denied."
   },
   "wrong": [
    {
@@ -500,8 +500,8 @@
    }
   },
   "why": {
-   "zh": "稿子要讲五分钟以上，要求三分钟，又舍不得删；她最后说「今は、とにかくどこを短くするか」。",
-   "en": "Her speech runs over five minutes against a three-minute request, and she ends with 'it's all about what to shorten'."
+   "zh": "依据：女的说：「だから今は、とにかくどこを短くするか、なんだよね。」\n推理：稿子「もう書いた」，但读一遍要五分钟以上，人家只要三分钟左右，她又「どれも削りたくない」。在人前讲话她「慣れてる」，会场远也靠前一天住附近解决了。最后用「だから今は」点明：担心的是讲话太长。\n容易错：已经做完的事；被提到但已解决的担心。",
+   "en": "Evidence: The woman says: 「だから今は、とにかくどこを短くするか、なんだよね。」\nReasoning: She has 「もう書いた」 the speech, but it runs over five minutes against the three asked for, and 「どれも削りたくない」. Speaking in public she's 「慣れてる」, and the distant venue is solved by staying nearby the night before. 「だから今は」 sums it up: the worry is that the speech is too long.\nTrap: something already done; worries mentioned but already solved."
   },
   "wrong": [
    {
@@ -612,8 +612,8 @@
    }
   },
   "why": {
-   "zh": "她说「重いっていうより、持つところが太くて…握りにくい」，真正的原因是把手太粗。",
-   "en": "'It's not so much the weight' — the handle is too thick for her to grip."
+   "zh": "依据：女的说：「重いっていうより、持つところが太くて、私の手だと握りにくいんです。」\n推理：店员猜的故障、声音都被否定：吸力「十分」，声音「思ってたより静か」。店员又说「少し重さがございますね」，她用「っていうより」纠正：真正原因是把手太粗、不好握，单手拿着上楼梯害怕。\n容易错：一半对——「重い」被「っていうより」否定了。",
+   "en": "Evidence: The woman says: 「重いっていうより、持つところが太くて、私の手だと握りにくいんです。」\nReasoning: The clerk's guesses are denied: the suction is 「十分」, and it's 「思ってたより静か」. When he says 「少し重さがございますね」, she corrects him with 「っていうより」: the real reason is the handle is too thick to grip, which makes carrying it upstairs one-handed scary.\nTrap: half right — 「重い」 is set aside by 「っていうより」."
   },
   "wrong": [
    {
@@ -718,8 +718,8 @@
    }
   },
   "why": {
-   "zh": "鱼、山景、温泉都不错，但他说「一番よかったのは」旅馆老爷爷讲以前小镇的事，只有去那儿才听得到。",
-   "en": "Fish, views and the bath were all good, but 'the best part' was the innkeeper's stories, which you can only hear there."
+   "zh": "依据：男的说：「でもね、一番よかったのは、泊まった宿のおじいさん。」\n推理：鱼、山景、温泉他都说好，但用「でもね、一番よかったのは」转到旅馆老爷爷晚上讲以前小镇的事；后面又说风景和照片差不多、鱼在东京也吃得到，只有老爷爷的话「あそこに行かないと聞けない」。\n容易错：提到的其他好处不是「一番」。",
+   "en": "Evidence: The man says: 「でもね、一番よかったのは、泊まった宿のおじいさん。」\nReasoning: He says the fish, the mountain views and the hot spring were all good, but with 「でもね、一番よかったのは」 he turns to the old innkeeper's evening stories about the town's past; he adds that the views matched the photos and the fish isn't out of reach in Tokyo, while the stories 「あそこに行かないと聞けない」.\nTrap: the other good things mentioned are not the 「一番」."
   },
   "wrong": [
    null,
@@ -824,8 +824,8 @@
    }
   },
   "why": {
-   "zh": "换材料、降价都「あまり変わらなかった」；改成早上六点开门后，客人从下个月起翻倍，现在一半以上是上班路上的人。",
-   "en": "Better ingredients and lower prices changed little; opening at six doubled customers, and commuters are now over half."
+   "zh": "依据：女的说：「それで、開店を朝六時にしてみたんです。」又说「そうしたら、次の月からお客さんが倍になって。」\n推理：换好材料、降价都「あまり変わらなかった」；邻居说想上班前顺路来买，她就改成早上六点开门，结果客人翻倍，现在一半以上是上班路上的人。所以受欢迎是因为开门早。离车站走路十分钟，并不近。\n容易错：试过但没效果的办法；照搬「駅」一词。",
+   "en": "Evidence: The woman says: 「それで、開店を朝六時にしてみたんです。」 and 「そうしたら、次の月からお客さんが倍になって。」\nReasoning: Better ingredients and lower prices — 「あまり変わらなかった」; after a neighbour wished she could stop by before work, she opened at six, customers doubled, and now over half are commuters. So the shop is popular because it opens early. It's a ten-minute walk from the station, so not close.\nTrap: things she tried that didn't work; echoing the word 「駅」."
   },
   "wrong": [
    {
@@ -936,8 +936,8 @@
    }
   },
   "why": {
-   "zh": "她说时间「それほど心配してない」，「困ってるのは」每张幻灯片说法不一，结论都对不上。",
-   "en": "She's not too worried about time; the trouble is each slide says something different and the conclusions clash."
+   "zh": "依据：女的说：「困ってるのは、四人で別々に作ったから、スライドごとに言ってることがばらばらなんだよね。」\n推理：资料「もうほとんどできてる」；练习超时了，但她用「でもね」说「時間はそれほど心配してないの」，要删哪里很清楚。「困ってるのは」之后才是最大的问题：每张幻灯片说法不一，连开头和结尾的结论都不同。今天再聚就是为了解决这个。\n容易错：被提到但她并不担心的超时。",
+   "en": "Evidence: The woman says: 「困ってるのは、四人で別々に作ったから、スライドごとに言ってることがばらばらなんだよね。」\nReasoning: The materials are 「もうほとんどできてる」; the run-through went over time, but with 「でもね」 she says 「時間はそれほど心配してないの」, since it's clear what to cut. The biggest problem comes after 「困ってるのは」: each slide says something different, even the opening and closing conclusions. Meeting again today is to fix that.\nTrap: the overrun, mentioned but not her worry."
   },
   "wrong": [
    {
@@ -1042,8 +1042,8 @@
    }
   },
   "why": {
-   "zh": "她说光改设计「今月中に間に合ってた」，推迟「は名前のせい」：名字和别家点心几乎一样，要改名。",
-   "en": "The design alone would have been ready this month; the delay is because the name must be changed."
+   "zh": "依据：女的说：「延びたのはね、名前のせいなの。」\n推理：男的猜设计，她说「それもあるんだけど」，可光是设计「今月中に間に合ってた」；工厂「予定どおり動いてる」，材料「そろってる」。真正原因是名字和别家点心几乎一样，要改名，袋子也得重做。\n容易错：一半对——设计也有关系，但不是主要原因。",
+   "en": "Evidence: The woman says: 「延びたのはね、名前のせいなの。」\nReasoning: He guesses the design; she says 「それもあるんだけど」, but the design alone 「今月中に間に合ってた」; the factory 「予定どおり動いてる」 and the ingredients 「そろってる」. The real reason: the name is almost the same as another company's snack, so it must change, and the bag must be redone too.\nTrap: half right — the design played a part but isn't the main reason."
   },
   "wrong": [
    {
@@ -1142,8 +1142,8 @@
    }
   },
   "why": {
-   "zh": "打工和钱他都说「本人に任せて」也没关系，「どうしても引っかかってる」的是房间在一楼、路上黑，「こればっかりは」放心不下。",
-   "en": "Jobs and money he leaves to her; what he 'just can't get past' is the ground-floor flat and dark road."
+   "zh": "依据：男的说：「ただ、どうしても引っかかってるのが、決めた部屋が一階なことなんです。」又说「こればっかりは、本人に任せておけなくて」。\n推理：做饭「ようやく覚えてくれた」；打两份工他有点担心，但「きつければ自分で減らすでしょう」；生活费不够她会说。「ただ」之后才是他放不下的事：房间在一楼，从车站过去的路上有黑的地方。\n容易错：提到的其他担心都被他自己放下了。",
+   "en": "Evidence: The man says: 「ただ、どうしても引っかかってるのが、決めた部屋が一階なことなんです。」 and 「こればっかりは、本人に任せておけなくて」.\nReasoning: Cooking she has 「ようやく覚えてくれた」; two jobs worry him a little, but 「きつければ自分で減らすでしょう」; she'll tell them if money runs short. What he can't let go of comes after 「ただ」: the flat is on the ground floor, and the road from the station has dark stretches.\nTrap: the other worries he mentions, he sets aside himself."
   },
   "wrong": [
    {
@@ -1248,8 +1248,8 @@
    }
   },
   "why": {
-   "zh": "老师一开始就说最在意的是只罗列了查到的东西，「あなた自身はどう考えるのか…出てこない」。",
-   "en": "Right at the start he says it only lists findings — her own view never appears."
+   "zh": "依据：老师说：「じゃあ、あなた自身はどう考えるのか、それが最後まで出てこない。」\n推理：老师一开头就说「一番気になった」的是只罗列了查到的东西，没有自己的看法。学生后来问的字数、晚交都被否定：「字数は十分ですよ」，晚交「関係ありません」；资料还被夸收集得好。\n容易错：学生自己猜的问题都被老师否定。",
+   "en": "Evidence: The teacher says: 「じゃあ、あなた自身はどう考えるのか、それが最後まで出てこない。」\nReasoning: Right at the start he says what he found 「一番気になった」: it only lists what she looked up, with no view of her own. The length and the late submission she asks about are both ruled out — 「字数は十分ですよ」, and lateness is 「関係ありません」; her sources are even praised.\nTrap: the problems the student guesses are all denied."
   },
   "wrong": [
    null,
@@ -1359,8 +1359,8 @@
    }
   },
   "why": {
-   "zh": "母亲要住的房间还全是搬家的纸箱，八点前「せめて布団が敷けるくらいにはしておかないと」，所以是回去收拾房间。",
-   "en": "The room his mother will sleep in is full of boxes, and he must clear it before eight — so he's going to tidy it."
+   "zh": "依据：男的说：「母が泊まる予定の部屋が、まだ段ボールだらけで。」又说「せめて布団が敷けるくらいにはしておかないと」。\n推理：女的猜接人，母亲说「迎えはいい」；猜吃饭，吃饭「明日」才去。他用「それより、問題はうちなんですよ」引出真正原因：母亲八点到，在那之前要把房间收拾到能铺被褥。是母亲来这边，不是他回老家。\n容易错：被否定的猜测；时间不对的事（明天的饭）。",
+   "en": "Evidence: The man says: 「母が泊まる予定の部屋が、まだ段ボールだらけで。」 and 「せめて布団が敷けるくらいにはしておかないと」.\nReasoning: She guesses meeting his mother, but his mother said 「迎えはいい」; she guesses dinner, but that is 「明日」. With 「それより、問題はうちなんですよ」 he gives the real reason: his mother arrives at eight, and before then the room must be cleared enough to lay out bedding. She is coming here; he isn't going home.\nTrap: the denied guesses; something at the wrong time (tomorrow's dinner)."
   },
   "wrong": [
    {
@@ -1460,8 +1460,8 @@
    }
   },
   "why": {
-   "zh": "他用「それより」引出真正的理由：这里是他小时候住过的镇，常去的书店没了，所以自己来开。",
-   "en": "After 「それより」 he gives the real reason: he lived here as a child, and his old bookshop had closed."
+   "zh": "依据：男的说：「それより、ここは私が子どもの頃に住んでいた町なんです。」\n推理：主持人猜房租便宜，他说那是「来てから気づいたこと」；猜大学多，他用「それより」转到真正理由：这里是他小时候住的镇，常去的书店没了，「だったら自分がやろうと」。辞职只是开店前犹豫的事，不是选这个镇的原因。\n容易错：被否定的猜测；只是提到的细节（辞职）。",
+   "en": "Evidence: The man says: 「それより、ここは私が子どもの頃に住んでいた町なんです。」\nReasoning: The interviewer guesses cheap rent; he says that was 「来てから気づいたこと」. She guesses the universities; with 「それより」 he gives the real reason: he lived here as a child, the bookshop he went to had closed, so 「だったら自分がやろうと」. Quitting his job was a hard decision before opening, not why he chose this town.\nTrap: the denied guesses; a detail only mentioned (quitting his job)."
   },
   "wrong": [
    {
