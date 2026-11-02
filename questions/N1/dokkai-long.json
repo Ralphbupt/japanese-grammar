@@ -19,8 +19,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "第二段：同一语言内词义也不固定，我们每天都「相手や場面に応じて言葉の意味を読み取り、補いながら」对话，所以理解本身就是翻译。正确项是这句话的改写。",
-          "en": "Paragraph two: even within one language meaning isn't fixed, and we talk by reading and filling in meaning 「相手や場面に応じて」 — so understanding is already translation. The right option paraphrases that."
+          "zh": "依据：「私たちは日々、相手や場面に応じて言葉の意味を読み取り、補いながら会話をしている」\n推理：第二段先说「一つの言語の中でさえ、言葉の意味は一つに定まっているわけではない」，用「よろしく」「お元気で」举例，再用「つまり」收束成“理解即翻译”。「相手や場面に応じて」＝按对象和状况，「読み取り、補い」＝推测并补充意思，说的是同一语言内部。\n容易错：「よろしく」的例子只说明意思随场合变化，不是说日本人之间容易误解；这是把例子当成了理由。",
+          "en": "Evidence: 「私たちは日々、相手や場面に応じて言葉の意味を読み取り、補いながら会話をしている」.\nReasoning: Paragraph 2 opens with 「一つの言語の中でさえ、言葉の意味は一つに定まっているわけではない」, gives 「よろしく」 and 「お元気で」 as examples, then 「つまり」 wraps it up as \"understanding is translation\". 「相手や場面に応じて」 = according to the person and situation, 「読み取り、補い」 = inferring and filling in meaning, all within one language.\nTrap: The 「よろしく」 example only shows meaning shifting with the situation, not that Japanese speakers misunderstand each other; that treats the example as the reason."
         },
         "wrong": [
           {
@@ -48,8 +48,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "第三段：译者的工作是看清「その言葉がその場で何をしているのか」，再到另一种语言里找「同じ働きをする表現」。正确项把「働き」改说成「役割」。",
-          "en": "Paragraph three: the job is to see 「その言葉がその場で何をしているのか」 and find 「同じ働きをする表現」 in the other language; the right option restates 働き as 役割."
+          "zh": "依据：「翻訳者の仕事は、ある単語に対応する単語を探すことではない」；「その言葉がその場で何をしているのか、つまり挨拶なのか、遠慮なのか、圧力なのかを見極め、それと同じ働きをする表現を別の言語の中に探すことである」\n推理：「AではなくB」：A（找对应的单词）被否定，B才是笔者的定义。「その場で何をしているのか」「働き」＝在场合中承担的作用，「見極め」＝看准，「別の言語の中に探す」＝到译入语里去找。\n容易错：按场合从词典里挑多个译词，仍然是“一个词对一个词”，正是被「ではない」否定的做法。",
+          "en": "Evidence: 「翻訳者の仕事は、ある単語に対応する単語を探すことではない」; 「その言葉がその場で何をしているのか、つまり挨拶なのか、遠慮なのか、圧力なのかを見極め、それと同じ働きをする表現を別の言語の中に探すことである」.\nReasoning: 「AではなくB」: A (finding a matching word) is rejected; B is the writer's definition. 「その場で何をしているのか」 and 「働き」 = the role the words play there, 「見極め」 = pin down, 「別の言語の中に探す」 = look for it in the target language.\nTrap: Picking several dictionary equivalents by situation is still word-for-word matching, the very thing ruled out by 「ではない」."
         },
         "wrong": [
           null,
@@ -77,8 +77,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "第四段：「翻訳には必ず何かが失われる」，但知道丢了什么的译者可以「注を付けたり、別の箇所でその含みを補ったり」。",
-          "en": "Paragraph four: 「翻訳には必ず何かが失われる」, but a translator who knows what was lost can add a note or make up the nuance elsewhere."
+          "zh": "依据：「翻訳には必ず何かが失われる」；「何が移せなかったかを知っている翻訳者は、注を付けたり、別の箇所でその含みを補ったりすることができるからだ」\n推理：第四段开头「もちろん、それで何も失われないわけではない」承认丢失难以避免；「ただ」后是笔者的重点：比起叹息，更要「自覚すること」，因为知道丢了什么，就能加注或在别处补上，即“有补救的办法”。\n容易错：笔者说的是「その喪失を嘆くより」意识到丢失更重要，叹息恰恰被放在次要位置，不是出发点。",
+          "en": "Evidence: 「翻訳には必ず何かが失われる」; 「何が移せなかったかを知っている翻訳者は、注を付けたり、別の箇所でその含みを補ったりすることができるからだ」.\nReasoning: Paragraph 4 opens with 「もちろん、それで何も失われないわけではない」, granting that loss can't be avoided; after 「ただ」 comes the writer's point: rather than lament, 「自覚すること」 matters, because knowing what was lost lets you add a note or make it up elsewhere, i.e. there is a remedy.\nTrap: The writer says awareness matters more, 「その喪失を嘆くより」; lamenting is put second, not made the starting point."
         },
         "wrong": [
           {
@@ -86,7 +86,7 @@
             "en": "Translating scene by scene is paragraph three's advice, but paragraph four adds 「それで何も失われないわけではない」 — the sense of an ongoing relationship in 「よろしく」 is hard to carry over."
           },
           {
-            "zh": "前半「失去不可避免」符合原文，但笔者并没有因此主张保留原词，而是主张找起同样作用的表达并加以补充。",
+            "zh": "前半「失去不可避免」符合原文，但笔者并没有因此主张保留原词，而是主张找起到同样作用的表达并加以补充。",
             "en": "The first half matches the text, but the author draws no such conclusion; the advice is to find equivalents and compensate, not leave words untranslated."
           },
           null,
@@ -106,8 +106,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "末段：「訳せない」与其说是道出两种语言的差异，不如说「一語に一語を対応させようとする発想の限界を示しているにすぎない」。正确项是这句话的改写。",
-          "en": "Last paragraph: 'untranslatable' less names a real difference between languages than 「一語に一語を対応させようとする発想の限界を示しているにすぎない」. The right option paraphrases this."
+          "zh": "依据：「「訳せない」という言葉は、多くの場合、二つの言語の違いを言い当てているというより、一語に一語を対応させようとする発想の限界を示しているにすぎない」\n推理：末段回应开头「この言葉は訳せない」的叹息，是全文结论。「AというよりB」把原因从“语言差异”移到“一词对一词的想法”，正确项正是这样。第二、三段（意思随场合变、找同样作用的表达）都在为这个结论铺路。\n容易错：有的选项用了原文的「言い当てる」，但在原文里它是被「というより」降格的一方；笔者说的乐趣在「分け入っていくこと」。",
+          "en": "Evidence: 「「訳せない」という言葉は、多くの場合、二つの言語の違いを言い当てているというより、一語に一語を対応させようとする発想の限界を示しているにすぎない」.\nReasoning: The last paragraph answers the 「この言葉は訳せない」 lament of the opening and is the conclusion. 「AというよりB」 moves the cause from the difference between languages to the one-word-for-one-word mindset, which is what the right option says. Paragraphs 2 and 3 (meaning shifts with the scene, find an expression doing the same job) build up to it.\nTrap: One option borrows 「言い当てる」, but in the text that is the side demoted by 「というより」; the writer finds the joy in 「分け入っていくこと」."
         },
         "wrong": [
           {
@@ -147,8 +147,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "前一句写「何十もの時計が、少しずつずれた音で時を刻んでいた」，孩子听来「それが」像店里的人在窃窃私语。「それ」指的就是这些钟声。",
-          "en": "The previous sentence: 「何十もの時計が、少しずつずれた音で時を刻んでいた」. 「それ」 — what sounded like whispering to the child — is that ticking."
+          "zh": "依据：「壁に掛けられた何十もの時計が、少しずつずれた音で時を刻んでいた」；「子どもの私には、それがまるで店じゅうでひそひそと話し合っている声のように聞こえたものだ」\n推理：「まるで」「のように聞こえた」是比喻，被比的是「それ」。能被“听”到的是前面几十只钟「少しずつずれた音」＝调子略有不同的走动声；中间关于机油气味的一句是闻到的，不是听到的，所以「それ」指钟声。\n容易错：以为“说话声”一定来自人，去找祖父或顾客；文中这里并没写到有人说话。",
+          "en": "Evidence: 「壁に掛けられた何十もの時計が、少しずつずれた音で時を刻んでいた」; 「子どもの私には、それがまるで店じゅうでひそひそと話し合っている声のように聞こえたものだ」.\nReasoning: 「まるで」 with 「のように聞こえた」 is a simile, and what is compared is 「それ」. What can be heard is the dozens of clocks ticking 「少しずつずれた音」, slightly out of step; the sentence in between about machine oil is a smell, not a sound, so 「それ」 is the ticking.\nTrap: Assuming \"voices\" must be people and looking to the grandfather or customers; nobody is described talking here."
         },
         "wrong": [
           {
@@ -176,8 +176,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "祖父「無口な人だった」；而没人来取的钟都系着他用「几帳面な字」写着日期和主人名字的小牌子，可见他认真对待每一件托付的东西。",
-          "en": "He was 「無口な人」, yet every unclaimed watch carried a tag in his 「几帳面な字」 with the date and owner — he treated each item with care."
+          "zh": "依据：「祖父は無口な人だった」；「どれにも、祖父の几帳面な字で、預かった日付と持ち主の名前を書いた小さな札が結びつけられていた」\n推理：「無口」＝话少。没人来取的钟每一只都系着写明日期和主人的牌子，而且「どの時計もきれいに磨かれ」「柔らかい布にくるまれていた」，近三十年前的也一样，可见他认真对待每一件托付的东西。\n容易错：他平时只回「ああ」「うん」，容易读成完全不理孙子；但孙子提问时他「しばらく手を止めて考えていた」，并非不理睬。",
+          "en": "Evidence: 「祖父は無口な人だった」; 「どれにも、祖父の几帳面な字で、預かった日付と持ち主の名前を書いた小さな札が結びつけられていた」.\nReasoning: 「無口」 = a man of few words. Every unclaimed clock had a tag with the date and owner's name, and 「どの時計もきれいに磨かれ」, 「柔らかい布にくるまれていた」, even ones nearly thirty years old: he took care of each item left with him.\nTrap: He usually answered only 「ああ」 or 「うん」, which can look like ignoring the child; but when asked, he 「しばらく手を止めて考えていた」, so he did not ignore him."
         },
         "wrong": [
           {
@@ -205,8 +205,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "怀表背面刻着某人的名字和旧日期；末段「私」感受到「見知らぬ誰かがこの時計とともに過ごした年月」，才开始懂这句话：钟表对主人而言承载着共同度过的岁月。",
-          "en": "The watch is engraved with a name and an old date; in the last paragraph the narrator senses 「見知らぬ誰かがこの時計とともに過ごした年月」 and begins to understand — to its owner a watch holds the years spent with it."
+          "zh": "依据：「裏蓋には、かすれた文字で誰かの名前と古い日付が彫られていた」；「見知らぬ誰かがこの時計とともに過ごした年月」\n推理：祖父说这句话时，给孙子看的是刻着名字和日期的怀表，说明钟表连着某个人的经历。末段「私」握着停走的表，感到主人与它「ともに過ごした年月」，并说这时才开始懂祖父的话：钟表对主人来说承载着共同度过的岁月。\n容易错：把孩子的提问「新しいのを買えばいいのに」当成祖父的观点；祖父的话正是对这种想法的回应。",
+          "en": "Evidence: 「裏蓋には、かすれた文字で誰かの名前と古い日付が彫られていた」; 「見知らぬ誰かがこの時計とともに過ごした年月」.\nReasoning: When he said it, the grandfather handed over a pocket watch engraved with a name and a date: the watch is tied to someone's life. At the end, holding a stopped watch, the narrator senses the years someone spent 「ともに」 with it and says he is only now beginning to understand: to its owner, a watch holds the years lived with it.\nTrap: Taking the child's question 「新しいのを買えばいいのに」 as the grandfather's view; his words answer that very idea."
         },
         "wrong": [
           {
@@ -234,8 +234,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "末段：停走的表「時間を知る役にはまったく立たない」，但看着牌子，能感到主人与它共度的岁月和祖父「指先の確かさ」，所以才开始明白。",
-          "en": "Last paragraph: the stopped watch is useless for telling time, yet looking at the tag the narrator senses its owner's years and grandfather's 「指先の確かさ」 — hence the dawning understanding."
+          "zh": "依据：「ときどき手に取って札の文字を眺めていると、見知らぬ誰かがこの時計とともに過ごした年月や、それを預かった祖父の指先の確かさが、かすかに伝わってくるような気がする」\n推理：「けれども」前说表停了，「時間を知る役にはまったく立たない」；后面说拿在手里能感到主人的岁月和祖父的手艺，紧接着是「今になってようやくわかりかけている」。所以是「私」把表放在身边、自己体会出来的。\n容易错：以为是牌子或母亲说明了意思；牌子上只写着「預かった日付と持ち主の名前」，母亲只说要「処分しよう」。",
+          "en": "Evidence: 「ときどき手に取って札の文字を眺めていると、見知らぬ誰かがこの時計とともに過ごした年月や、それを預かった祖父の指先の確かさが、かすかに伝わってくるような気がする」.\nReasoning: Before 「けれども」, the watch has stopped and is 「時間を知る役にはまったく立たない」; after it, holding it brings a sense of the owner's years and the grandfather's skill, followed at once by 「今になってようやくわかりかけている」. The narrator worked it out himself by keeping the watch close.\nTrap: Thinking the tag or the mother explained it; the tag only bears 「預かった日付と持ち主の名前」, and the mother only says 「処分しよう」."
         },
         "wrong": [
           null,
@@ -275,8 +275,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "第二段：纸质地图组画路线「はるかに正確に描けた」，而「目的地に着くまでの時間は、アプリを使ったグループの方が短かった」。",
-          "en": "Paragraph two: the paper-map group drew the route 「はるかに正確に」, though 「アプリを使ったグループの方が短かった」 in time taken."
+          "zh": "依据：「紙の地図を使ったグループの方がはるかに正確に描けたという」；「目的地に着くまでの時間は、アプリを使ったグループの方が短かったにもかかわらず、である」\n推理：两项结果分开看：时间上应用组短，即先到；画路线的准确度上纸质地图组远胜，即应用组不如对方。「にもかかわらず」表示“尽管更快，却记得更差”，正是正确项的让步关系。\n容易错：把两项比较的对象弄混，以为路线画得准的一组也先到。",
+          "en": "Evidence: 「紙の地図を使ったグループの方がはるかに正確に描けたという」; 「目的地に着くまでの時間は、アプリを使ったグループの方が短かったにもかかわらず、である」.\nReasoning: Take the two results separately: on time, the app group was quicker; on drawing the route, the paper-map group was far better, so the app group did worse. 「にもかかわらず」 = \"even though faster, remembered less\", the same concession the right option makes.\nTrap: Mixing up the two comparisons and assuming the group that drew better also arrived first."
         },
         "wrong": [
           {
@@ -304,8 +304,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "「その手間」指前文：用纸质地图的人要不断确认「自分が今どこにいて、どちらを向いているのか」，并「頭の中で地図と目の前の景色を照らし合わせる」。",
-          "en": "「その手間」 points back: paper-map users keep checking 「自分が今どこにいて、どちらを向いているのか」 and 「頭の中で地図と目の前の景色を照らし合わせる」."
+          "zh": "依据：「自分が今どこにいて、どちらを向いているのかを絶えず確かめなければならない」；「頭の中で地図と目の前の景色を照らし合わせる」\n推理：「その」指紧挨着的前文：用纸质地图的人要不断确认位置和朝向，以「角の店や遠くに見える塔」为标志，把地图和眼前景色对照。「照らし合わせる」＝对照、核对，「絶えず確かめ」＝边走边确认。\n容易错：把第四段笔者建议的「出発前に地図全体を眺めて」当成「その手間」；指示词要先往前就近找。",
+          "en": "Evidence: 「自分が今どこにいて、どちらを向いているのかを絶えず確かめなければならない」; 「頭の中で地図と目の前の景色を照らし合わせる」.\nReasoning: 「その」 points to what comes just before: a paper-map user keeps checking position and direction, uses 「角の店や遠くに見える塔」 as landmarks, and matches the map against the view. 「照らし合わせる」 = check one against the other, 「絶えず確かめ」 = keep checking while walking.\nTrap: Taking the writer's later tip 「出発前に地図全体を眺めて」 in paragraph 4 as 「その手間」; look for what a pointing word refers to just before it first."
         },
         "wrong": [
           null,
@@ -333,8 +333,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "第四段：笔者对「使うのをやめるべきなのだろうか」回答「そうは思わない」，问题在于没意识到「道具に何を任せ、何を自分に残すか」就使用。",
-          "en": "Paragraph four: asked whether to stop using the apps, the author says 「そうは思わない」; the problem is using them without deciding 「道具に何を任せ、何を自分に残すか」."
+          "zh": "依据：「私はそうは思わない」；「問題は道具そのものではなく、道具に何を任せ、何を自分に残すかを意識しないまま使っていることにある」\n推理：笔者自问「使うのをやめるべきなのだろうか」，答「そうは思わない」，可见不反对使用。问题在「意識しないまま」使用；反过来说，有意识地分清交给工具什么、自己留下什么，就可以用。\n容易错：只看第四段前半的好处（不用管路线、能享受景色），就以为可以全交给导航；「もっとも」后笔者马上指出省下的注意力可能又被屏幕吸走。",
+          "en": "Evidence: 「私はそうは思わない」; 「問題は道具そのものではなく、道具に何を任せ、何を自分に残すかを意識しないまま使っていることにある」.\nReasoning: The writer asks 「使うのをやめるべきなのだろうか」 and answers 「そうは思わない」, so he does not oppose using it. The problem is using it 「意識しないまま」; put the other way, if you are clear about what to hand over and what to keep, it is fine to use.\nTrap: Seeing only the benefits early in paragraph 4 (no worrying about the route, enjoying the view) and concluding you can leave it all to the app; right after 「もっとも」 the writer warns the freed attention may just go back to the screen."
         },
         "wrong": [
           {
@@ -362,8 +362,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "末段把话题推广到地图以外：便利工具会让不用的能力「静かに衰えさせる」，而且「気づきにくい」；省掉工夫与失去它培养的东西「表裏一体」。",
-          "en": "The last paragraph widens the point: handy tools let unused abilities 「静かに衰えさせる」, in a way that is 「気づきにくい」; saving effort and losing what it built are 「表裏一体」."
+          "zh": "依据：「便利な道具は、私たちの能力を補う一方で、使わなくなった能力を静かに衰えさせることがある」；「手間を省くことと、その手間が育てていたものを失うことは、しばしば表裏一体なのである」\n推理：末段「これは地図に限った話ではない」把地图的例子推广到计算器、预测输入，得出全文结论：省掉工夫的同时，会失去这份工夫培养的能力，而且「気づきにくい」＝不知不觉中衰退。\n容易错：有的选项抓住「表に出ない」这一点，却加上“应尽早停用”，与笔者第四段「そうは思わない」的立场相反。",
+          "en": "Evidence: 「便利な道具は、私たちの能力を補う一方で、使わなくなった能力を静かに衰えさせることがある」; 「手間を省くことと、その手間が育てていたものを失うことは、しばしば表裏一体なのである」.\nReasoning: The last paragraph, 「これは地図に限った話ではない」, widens the map example to calculators and predictive text and states the conclusion: saving effort can cost the ability that effort was building, and the loss is 「気づきにくい」, i.e. it fades unnoticed.\nTrap: One option picks up the 「表に出ない」 point but adds \"stop using it soon\", against the writer's 「そうは思わない」 in paragraph 4."
         },
         "wrong": [
           {

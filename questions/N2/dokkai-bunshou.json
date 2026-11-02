@@ -19,8 +19,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "后面是「教えてくれる」「これほど便利なものはない」，是“只要输入就行”的正面条件，用「〜さえすれば」。",
-          "en": "What follows — 「教えてくれる」, 「これほど便利なものはない」 — is a positive result of one simple condition: 「〜さえすれば」 (as long as you just …)."
+          "zh": "线索：空格前是「目的地を入力し」，后面是「どの角を曲がればいいかまで教えてくれる」「これほど便利なものはない」，是“只做这一件事就够了”的正面条件。\n规则：「ます形词干＋さえすれば」＝只要……就……，强调条件只需这一个（「押しさえすれば動く」）。\n辨析：「ないことには」＝不……就不能……，后面要接否定的结果；「たところで」＝即使……也没用。这里的结果是肯定的“方便”。",
+          "en": "Clue: Before the blank is 「目的地を入力し」, and after it 「どの角を曲がればいいかまで教えてくれる」 and 「これほど便利なものはない」: a positive \"this one step is enough\" condition.\nRule: Stem + 「さえすれば」 = as long as you just…, stressing that one condition is all it takes (「押しさえすれば動く」).\nContrast: 「ないことには」 = unless…, can't…, which needs a negative result; 「たところで」 = even if…, no use. Here the result is a positive convenience."
         },
         "wrong": [
           {
@@ -47,8 +47,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "「〜のだから」承接“一直只看箭头走路”这个理由，结论是“记不住也难怪”，和前一句「まったく覚えていなかった」一致。",
-          "en": "「〜のだから」 gives the reason (he only watched the arrow), so the natural conclusion is 「覚えていないのも無理はない」 (no wonder he didn't remember), matching 「まったく覚えていなかった」."
+          "zh": "线索：前句「周りの景色をまったく覚えていなかった」是已知事实，空格前「画面の矢印ばかり見て歩いていたのだから」给出理由。\n规则：「〜のだから、〜のも無理はない」＝既然……，……也难怪：承认这个结果合情合理。\n辨析：「に違いない」＝一定是……，用于推断未知的事；这里“没记住”已经确定，而且方向也相反。",
+          "en": "Clue: The sentence before, 「周りの景色をまったく覚えていなかった」, is a known fact, and 「画面の矢印ばかり見て歩いていたのだから」 gives the reason.\nRule: 「〜のだから、〜のも無理はない」 = since…, no wonder…: the result is accepted as natural.\nContrast: 「に違いない」 = must be…, a guess about something unknown; here not remembering is already a fact, and the direction is the opposite."
         },
         "wrong": [
           {
@@ -75,8 +75,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "前面否定了“地图应用不好”，后面反过来说“正是多亏了这项技术”，用“倒不如说”的「むしろ」。",
-          "en": "After denying that map apps are bad, the writer goes the other way — it's thanks to them: 「むしろ」 (if anything, rather)."
+          "zh": "线索：前句「地図アプリが悪いと言いたいわけではない」否定了“应用不好”，后面「知らない町でも安心して歩けるのは、この技術のおかげだ」说的是它的好处。\n规则：「むしろ」＝倒不如说、反而：否定一种说法后，提出方向相反、更准确的说法。\n辨析：「とはいえ」＝话虽如此，后面应该是和前面相反的保留；这里前后都在为应用说话，保留要到下一句的「ただ」才出现。",
+          "en": "Clue: 「地図アプリが悪いと言いたいわけではない」 denies that the app is bad, and 「知らない町でも安心して歩けるのは、この技術のおかげだ」 praises it.\nRule: 「むしろ」 = rather, if anything: after rejecting one view it gives the opposite, more accurate one.\nContrast: 「とはいえ」 = that said, which introduces a reservation against what came before; here both sentences defend the app, and the reservation only comes with 「ただ」 in the next sentence."
         },
         "wrong": [
           null,
@@ -103,8 +103,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "前面说迷路被认为浪费时间，后面强调“正因为迷着路走才看得到”的风景，用强调原因的「からこそ」。",
-          "en": "Getting lost is seen as wasteful, but there is scenery you see precisely because you got lost: 「からこそ」 stresses that very reason."
+          "zh": "线索：前面「迷うことは時間の無駄だと思われがちだが」是一般看法，空格后「見えてくる景色もあるはずだ」是迷路的价值。\n规则：「〜からこそ」＝正因为……才……，强调正是这个原因带来了后面的结果；这里把一般认为浪费时间的“迷路”说成看到风景的原因。\n辨析：「からといって」＝并不因为……就……，后面要接否定（「〜わけではない」）；这里后面是肯定句。",
+          "en": "Clue: 「迷うことは時間の無駄だと思われがちだが」 is the common view, and 「見えてくる景色もあるはずだ」 after the blank is the value of getting lost.\nRule: 「〜からこそ」 = precisely because…, stressing that this very reason brings about what follows; here getting lost, usually seen as a waste of time, becomes the reason you see something.\nContrast: 「からといって」 = just because… doesn't mean…, which needs a negative ending (「〜わけではない」); this sentence is affirmative."
         },
         "wrong": [
           {
@@ -117,7 +117,7 @@
           },
           null,
           {
-            "zh": "「〜たあまり」是“过于…以至于（坏结果）”，后面是好的结果，而且也不接在这里的「歩いた」上表示程度。",
+            "zh": "「〜たあまり」是“过于…以至于（坏结果）”，这里后面是好的结果。",
             "en": "「〜たあまり」 means doing something so much that something bad results; here the result is good."
           }
         ]
@@ -131,8 +131,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "作者自己“特意不用应用”，最后委婉地提出主张“偶尔选择不便不也是必要的吗”，用「のではないだろうか」。",
-          "en": "The writer now walks without the app on purpose, so he ends by gently proposing that inconvenience is sometimes needed: 「なのではないだろうか」."
+          "zh": "线索：作者在解释自己为什么特意不用应用，句子前半是「便利さを手放すのは簡単ではないが」，空格前是「たまには不便を選ぶことも必要」。\n规则：「〜のではないだろうか」委婉地提出自己的主张（不也是……吗）；名词、な形容词后用「なのではないだろうか」。\n辨析：「にすぎない」＝只不过是……，把事情说小，和“必要”搭不上；「であるわけがない」＝不可能，和作者自己的做法矛盾。",
+          "en": "Clue: The author is explaining why he deliberately walks without the app: 「便利さを手放すのは簡単ではないが」, then 「たまには不便を選ぶことも必要」 before the blank.\nRule: 「〜のではないだろうか」 puts forward one's own claim softly (isn't it…?); after a noun or な-adjective it is 「なのではないだろうか」.\nContrast: 「にすぎない」 = no more than…, which belittles and clashes with \"necessary\"; 「であるわけがない」 = can't possibly be, contradicting what the author does."
         },
         "wrong": [
           {
@@ -173,8 +173,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "作者先推测一般人的看法“很多人大概会认为…吧”，下一句再用「しかし」反驳，用推测语气「のではないだろうか」。",
-          "en": "The writer guesses at a common view (\"many probably think …\") before rejecting it with 「しかし」: 「のではないだろうか」."
+          "zh": "线索：「仕事ができて、決して失敗しない人だと考える人も多い」，下一句马上用「しかし、私がこれまで出会った中で」反驳。\n规则：先用「〜のではないだろうか」推测一般人的看法（大概很多人这样想吧），再用「しかし」说出自己的观点，是论说文常见的结构。\n辨析：「ほかない」「わけにはいかない」都接在动词后（只好……／不能……），不能接形容词「多い」。",
+          "en": "Clue: 「仕事ができて、決して失敗しない人だと考える人も多い」 is answered at once with 「しかし、私がこれまで出会った中で」.\nRule: 「〜のではないだろうか」 first guesses at the common view (many people probably think so), then 「しかし」 brings in the author's own: a standard essay pattern.\nContrast: 「ほかない」 and 「わけにはいかない」 follow verbs (have no choice but / can't), not the adjective 「多い」."
         },
         "wrong": [
           {
@@ -201,8 +201,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "上司常讲失败经历是原因，下属能马上商量是好的结果，用带推测的原因「そのおかげか」（也许多亏了这一点）。",
-          "en": "The boss's stories are the cause and staff consulting him freely the good result: 「そのおかげか」 (perhaps thanks to that)."
+          "zh": "线索：前面上司把自己的失败「笑いながら何度もしてくれた」，后面「小さなミスでもすぐに相談できるようになった」是好结果。\n规则：「そのおかげか」＝也许是多亏了这一点：「おかげ」表示带来好结果的原因，「か」带“大概”的推测语气。\n辨析：「それにもかかわらず」＝尽管如此，前后必须相反；这里是顺接的因果。",
+          "en": "Clue: The boss told his failure story 「笑いながら何度もしてくれた」, and then 「小さなミスでもすぐに相談できるようになった」 is a good result.\nRule: 「そのおかげか」 = perhaps thanks to that: 「おかげ」 marks the cause of a good outcome, and 「か」 adds \"probably\".\nContrast: 「それにもかかわらず」 = despite that, which needs the two halves to clash; here it's straightforward cause and effect."
         },
         "wrong": [
           null,
@@ -229,8 +229,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "「〜ば〜ほど」：上司越完美，下属越“认定”不能失败，因此不敢报告问题，用「思い込んでしまう」。",
-          "en": "With 「〜ば〜ほど」, the more perfect the boss looks, the more staff become convinced they mustn't fail — which is why they stop reporting: 「思い込んでしまう」."
+          "zh": "线索：「上司が完璧に見えれば見えるほど」，空格前是「「自分だけが失敗するわけにはいかない」と」，句尾「のだ」在解释上一句部下为什么不报告问题。\n规则：「思い込む」＝深信、认定（往往是不对的想法），「〜てしまう」表示不由自主地陷进去。\n辨析：「思わずにすむ」＝不用那样想，方向相反；「思うにすぎない」＝只不过想想，解释不了为什么不报告。",
+          "en": "Clue: 「上司が完璧に見えれば見えるほど」, then 「「自分だけが失敗するわけにはいかない」と」 before the blank; the closing 「のだ」 explains why staff stop reporting problems.\nRule: 「思い込む」 = be convinced of (often wrongly); 「〜てしまう」 shows they slip into it.\nContrast: 「思わずにすむ」 = be spared the thought, the opposite; 「思うにすぎない」 = merely think, which wouldn't explain the silence."
         },
         "wrong": [
           {
@@ -257,8 +257,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "前面一直在肯定“讲失败的上司”，这里加上保留“话虽如此，并不是只讲就行”，用让步转折「とはいえ」。",
-          "en": "After praising bosses who talk about failure, the writer adds a reservation — it's not enough just to talk: 「とはいえ」 (that said)."
+          "zh": "线索：前面一直在肯定讲失败的上司，空格后「失敗を話しさえすればいいというものではない」加上保留。\n规则：「とはいえ」＝话虽如此：承认前面的说法，再补充限制。\n辨析：「むしろ」＝倒不如说，是推翻前面、选另一边；这里并没有否定“讲失败好”，只是说“光讲还不够”。",
+          "en": "Clue: Everything so far praises bosses who talk about failure; 「失敗を話しさえすればいいというものではない」 after the blank adds a reservation.\nRule: 「とはいえ」 = that said: it grants what came before and then limits it.\nContrast: 「むしろ」 = rather, which overturns the first view for another; here \"talking about failure is good\" still stands, it just isn't enough."
         },
         "wrong": [
           {
@@ -285,8 +285,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "一犯再犯、推卸责任的上司，当然“不可能被信赖”，用「はずがない」。",
-          "en": "A boss who repeats failures and blames subordinates can't possibly be trusted: 「はずがない」."
+          "zh": "线索：「同じ失敗を何度も繰り返したり、責任を部下に押しつけたりする上司では」，说的是不好的上司。\n规则：「〜はずがない」＝按道理不可能……，表示说话人强烈的否定判断。\n辨析：「に違いない」＝一定会……，方向正好相反；「べきだ」是“应该”，表示义务，不是判断。",
+          "en": "Clue: 「同じ失敗を何度も繰り返したり、責任を部下に押しつけたりする上司では」 describes a bad boss.\nRule: 「〜はずがない」 = there's no way…, a strong negative judgement from reasoning.\nContrast: 「に違いない」 = surely will…, the opposite direction; 「べきだ」 = ought to, an obligation, not a judgement."
         },
         "wrong": [
           {
@@ -326,8 +326,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "「〜のだから」列出原因后，作者先让步承认“顾客减少也许是理所当然的”，下一段再用转折写出意外的发现，用「かもしれない」。",
-          "en": "After the reasons given with 「〜のだから」, the writer concedes that fewer customers may be natural, before turning to the surprise: 「かもしれない」."
+          "zh": "线索：「大型のショッピングモールができ、インターネットでも何でも買えるようになったのだから」给出理由，下一段却用转折写意外的发现。\n规则：「当然かもしれない」＝也许是理所当然的：作者先让步承认一般看法，为后面的转折做铺垫。\n辨析：「とは限らない」＝未必……，会和前面「〜のだから」给出的理由矛盾。",
+          "en": "Clue: 「大型のショッピングモールができ、インターネットでも何でも買えるようになったのだから」 gives reasons, and the next paragraph turns to a surprise.\nRule: 「当然かもしれない」 = may well be natural: the author first concedes the usual view, setting up the turn.\nContrast: 「とは限らない」 = not necessarily, which would contradict the reasons just given with 「〜のだから」."
         },
         "wrong": [
           null,
@@ -354,8 +354,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "前面说店铺衰落理所当然，后面却发现新开了一家书店并感到「驚いた」，是出乎意料的转折，用「ところが」。",
-          "en": "Decline seemed natural, yet he found a new shop and was 「驚いた」 — an unexpected turn: 「ところが」."
+          "zh": "线索：前面说客人减少理所当然，后面「小さな本屋が新しく開いているのを見つけて驚いた」，有「驚いた」。\n规则：「ところが」＝然而（出乎意料）：结果和前面的预想相反，多用于叙述已经发生的事。\n辨析：「そのうえ」＝再加上同方向的内容；新店开张和商店街衰落方向相反。",
+          "en": "Clue: After \"of course customers fell away\" comes 「小さな本屋が新しく開いているのを見つけて驚いた」, with 「驚いた」.\nRule: 「ところが」 = but then, unexpectedly: what happened runs against expectation; used in narrating past events.\nContrast: 「そのうえ」 adds more in the same direction; a new shop opening runs against the decline."
         },
         "wrong": [
           {
@@ -382,8 +382,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "后面有「ただ立ち寄るだけの人も多い」的「も」，是“不仅有买书的客人，也有只是来坐坐的人”，用「ばかりでなく」。",
-          "en": "The 「も」 in 「ただ立ち寄るだけの人も多い」 calls for \"not only book buyers but also …\": 「ばかりでなく」."
+          "zh": "线索：空格后「ただ立ち寄るだけの人も多い」有「も」，和空格前的「本を買う客」并列。\n规则：「AばかりでなくBも」＝不仅A，B也……；名词直接接「ばかりでなく」。\n辨析：「に限って」＝偏偏只有……，用于不如意的事；这里只是在并列两类来店的人。",
+          "en": "Clue: 「ただ立ち寄るだけの人も多い」 after the blank has 「も」, pairing with 「本を買う客」 before it.\nRule: 「AばかりでなくBも」 = not only A but also B; a noun takes 「ばかりでなく」 directly.\nContrast: 「に限って」 = of all…, for something unwelcome; here two kinds of visitors are simply listed."
         },
         "wrong": [
           {
@@ -411,8 +411,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "前面先让步「確かにそうかもしれない」，后面提出不同看法“说不定是我们自己造成的”，用转折「だが」。",
-          "en": "After conceding 「確かにそうかもしれない」, the writer offers a different view: 「だが」 (but)."
+          "zh": "线索：前句「確かにそうかもしれない」先让步，后面「私たち自身なのではないかと思えてくる」是作者的不同看法。\n规则：「確かに〜。だが〜」先承认再转折，重点在「だが」后面。\n辨析：「それに」＝同方向追加；后文和“时代潮流，没办法”的说法方向相反。",
+          "en": "Clue: 「確かにそうかもしれない」 concedes, and 「私たち自身なのではないかと思えてくる」 is the author's different view.\nRule: 「確かに〜。だが〜」 grants a point, then turns; the weight is after 「だが」.\nContrast: 「それに」 adds in the same direction; what follows pushes against \"it's just the times\"."
         },
         "wrong": [
           {
@@ -439,8 +439,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "后面说「人と人とが出会う場所として」，和“只用来买东西的地方”对比，是“不是A而是B”，用「ではなく」。",
-          "en": "The sentence contrasts \"a place only for buying\" with 「人と人とが出会う場所として」: not A but B — 「ではなく」."
+          "zh": "线索：空格前「物を買うだけの場所」，后面「人と人とが出会う場所として」，两种“场所”形成对比。\n规则：「AではなくB」＝不是A而是B。\n辨析：「にすぎず」＝只不过是A，后面又说它是相遇的地方，前后矛盾；「であるうえに」＝不仅是A而且……，和「だけ」冲突。",
+          "en": "Clue: 「物を買うだけの場所」 before the blank and 「人と人とが出会う場所として」 after it set two kinds of place against each other.\nRule: 「AではなくB」 = not A but B.\nContrast: 「にすぎず」 = being merely A, which clashes with calling it a meeting place; 「であるうえに」 = being A and also…, which conflicts with 「だけ」."
         },
         "wrong": [
           null,
@@ -480,8 +480,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "下一句「私も…ほとんどなかった」作者自己当初也这样，所以这里是肯定的推断“一定很轻松”，用「に違いない」。",
-          "en": "The next sentence — the writer too kept to greetings at first — shows he grants the point: 「気楽であるに違いない」 (must be relaxed)."
+          "zh": "线索：「互いの生活に立ち入らずに済むのは、気楽である」，下一句「私も引っ越してきた当初は」说作者当初也是这样过的。\n规则：「〜に違いない」＝一定……，说话人有把握的判断；「である」后可直接接。\n辨析：「ものか」＝怎么会……（强烈否定），和作者自己也这样生活过、后文也承认嫌麻烦「おかしなことではない」相矛盾。",
+          "en": "Clue: 「互いの生活に立ち入らずに済むのは、気楽である」, and the next sentence 「私も引っ越してきた当初は」 says the author lived that way too.\nRule: 「〜に違いない」 = surely…, a confident judgement; it can follow 「である」 directly.\nContrast: 「ものか」 = no way! (strong denial), which clashes with the author's own past and with the later 「おかしなことではない」."
         },
         "wrong": [
           {
@@ -508,8 +508,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "前面说老夫妇第一个来敲门，后面再加一层：他们还带上了楼上腿脚不好的女士，用递进的「しかも」。",
-          "en": "The couple knocked first, and on top of that took the woman upstairs along too: 「しかも」 (what's more)."
+          "zh": "线索：前句老夫妇「真っ先にうちのドアをたたいてくれた」，后面「足の悪い上の階の女性にも声をかけ」有「にも」，是再加一层。\n规则：「しかも」＝而且：在同方向上进一步追加，后面往往更让人佩服。\n辨析：「たとえば」用于举例；带上楼上的女士不是“敲门”的一个例子。",
+          "en": "Clue: The couple 「真っ先にうちのドアをたたいてくれた」, and then 「足の悪い上の階の女性にも声をかけ」 with 「にも」 adds another layer.\nRule: 「しかも」 = what's more: it adds in the same direction, often something even more striking.\nContrast: 「たとえば」 gives an example; helping the upstairs neighbour isn't an example of knocking on the door."
         },
         "wrong": [
           {
@@ -536,8 +536,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "先承认“觉得联系麻烦本身不奇怪”，再提出保留“可是如果…就是问题”，用让步转折「とはいえ」。",
-          "en": "He grants that finding ties bothersome isn't strange, then adds a reservation (if …, that's a problem): 「とはいえ」."
+          "zh": "线索：「人とのつながりをわずらわしいと感じること自体は、おかしなことではない」先承认，空格后「いざというときに誰にも頼れなくなってしまうとしたら、それは問題だ」提出问题。\n规则：「とはいえ」＝话虽如此：承认之后再加保留。\n辨析：「それどころか」要求后文在同方向上更进一步；这里前后方向相反。",
+          "en": "Clue: 「人とのつながりをわずらわしいと感じること自体は、おかしなことではない」 grants a point, and 「いざというときに誰にも頼れなくなってしまうとしたら、それは問題だ」 after the blank raises a problem.\nRule: 「とはいえ」 = that said: concede, then qualify.\nContrast: 「それどころか」 needs what follows to go further in the same direction; here the direction reverses."
         },
         "wrong": [
           {
@@ -564,8 +564,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "前面说“附近一个熟人都没有”，这是担心会出现坏结果“恐怕连求助都做不到”，用「〜かねない」。",
-          "en": "Knowing no one nearby could lead to a bad outcome — being unable even to ask for help: 「できなくなりかねない」 (may well)."
+          "zh": "线索：「近所に知り合いが一人もいないままでは」，空格前是ます形词干「できなくなり」，说的是可能出现的坏结果。\n规则：「ます形词干＋かねない」＝有可能会（造成坏结果）（「事故になりかねない」）。\n辨析：「かねる」＝不便做、难以做到（「お答えしかねます」），说的是说话人自己，不表示担心坏结果；「っこない」＝绝不会，口语，方向也相反。",
+          "en": "Clue: 「近所に知り合いが一人もいないままでは」, and the stem 「できなくなり」 before the blank: a bad outcome that could happen.\nRule: Stem + 「かねない」 = could well (lead to something bad) (「事故になりかねない」).\nContrast: 「かねる」 = can't bring oneself to, be unable to (「お答えしかねます」), about the speaker, not a feared outcome; 「っこない」 = no way it will, casual and the opposite direction."
         },
         "wrong": [
           null,
@@ -592,8 +592,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "「だが」承接“不必深交”，作者主张连打招呼的关系也“不应该放弃”，用「べきではない」。",
-          "en": "After 「だが」 (no need for close ties, but …) comes his claim that we shouldn't give up even a nodding relationship: 「べきではない」."
+          "zh": "线索：「深い付き合いをする必要はないだろう。だが」，后面「顔を合わせたときに一言声をかけ合う程度の関係まで、面倒だという理由で手放す」，句尾「と私は思う」是作者的主张。\n规则：「〜べきではない」＝不应该……，用来提出主张。\n辨析：「ほかない」＝只能……，和老夫妇救人的经历得出的结论相反。",
+          "en": "Clue: 「深い付き合いをする必要はないだろう。だが」, then 「顔を合わせたときに一言声をかけ合う程度の関係まで、面倒だという理由で手放す」, closing with 「と私は思う」: the author's claim.\nRule: 「〜べきではない」 = one shouldn't…, used to state a position.\nContrast: 「ほかない」 = have no choice but to, the opposite of what the neighbours' rescue taught."
         },
         "wrong": [
           {
@@ -633,8 +633,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "前面说“现在也依然喜欢拍照”，后面保留“但成了工作就不全是快乐了”，用让步转折「とはいえ」。",
-          "en": "He still loves photography, yet since it became work it's not all fun: a concession and reservation — 「とはいえ」."
+          "zh": "线索：「写真を撮ること自体は、今でも好きだ」，空格后「仕事になってからは、楽しいことばかりではなくなった」。\n规则：「とはいえ」＝话虽如此：承认前面，再补充相反的一面。\n辨析：「だからこそ」＝正因为如此，表示原因；“喜欢”推不出“不全是快乐”。",
+          "en": "Clue: 「写真を撮ること自体は、今でも好きだ」, then 「仕事になってからは、楽しいことばかりではなくなった」 after the blank.\nRule: 「とはいえ」 = that said: grant the first point, then add the other side.\nContrast: 「だからこそ」 = precisely because of that, a cause; liking photography can't cause \"it's no longer all fun\"."
         },
         "wrong": [
           {
@@ -661,8 +661,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "前面说没有时间拍自己想拍的，休息日也「出かける気にもなれず」，所以作为爱好的摄影“完全没有了”。",
-          "en": "With no time for his own shots and 「出かける気にもなれず」 on days off, hobby photography has 「すっかりなくなってしまった」."
+          "zh": "线索：「自分が撮りたいものを撮る時間はほとんどない」「休みの日にカメラを持って出かける気にもなれず」，都说明爱好的摄影没了。\n规则：「すっかり〜てしまった」＝完全……了，带着遗憾。\n辨析：「せずにはいられなくなった」＝忍不住要做，和「出かける気にもなれず」正相反。",
+          "en": "Clue: 「自分が撮りたいものを撮る時間はほとんどない」 and 「休みの日にカメラを持って出かける気にもなれず」 both show photography as a hobby has gone.\nRule: 「すっかり〜てしまった」 = has completely…, with regret.\nContrast: 「せずにはいられなくなった」 = can't help doing it, the opposite of 「出かける気にもなれず」."
         },
         "wrong": [
           {
@@ -689,8 +689,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "这一段在说成为工作的好处，客人的感谢带来的喜悦是做爱好时“绝对体会不到的”，用「決して味わえないものだった」。",
-          "en": "This paragraph lists what work gave him; a client's thanks is a joy he could never have had as a hobby: 「決して味わえないものだった」."
+          "zh": "线索：这一段回答「いいえ」，在讲成为工作的好处；空格前「趣味では」把范围限定在“作为爱好的时候”。\n规则：「決して〜ない」＝绝对不……；「味わえない」是可能形的否定。\n辨析：「味わえるに決まっている」＝肯定能体会到，那就抹掉了工作的特别之处，和这一段的论点相反。",
+          "en": "Clue: This paragraph answers 「いいえ」 and lists what turning pro gave the author; 「趣味では」 before the blank limits it to \"as a hobby\".\nRule: 「決して〜ない」 = never; 「味わえない」 is the negative potential.\nContrast: 「味わえるに決まっている」 = of course you could, which erases what is special about the job and goes against the paragraph."
         },
         "wrong": [
           null,
@@ -717,8 +717,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "前面否定了“当成工作就每天开心”，后面提出另一种更准确的看法“正因为喜欢才能熬过苦日子”，用「むしろ」。",
-          "en": "After rejecting \"every day will be fun,\" he offers a truer view — love is what gets you through hard times: 「むしろ」 (rather)."
+          "zh": "线索：前句「好きなことを仕事にすれば毎日が楽しくなる、と思っている人がいたら、それは違うと言いたい」否定了一种看法，后面「好きなことだからこそ、苦しい時期も乗り越えられるのだ」。\n规则：「むしろ」＝倒不如说：否定一种说法后，给出更准确的另一种说法。\n辨析：「したがって」表示由前面推出结论；“不会天天开心”推不出“正因喜欢才熬得过”。",
+          "en": "Clue: 「好きなことを仕事にすれば毎日が楽しくなる、と思っている人がいたら、それは違うと言いたい」 rejects a view, and 「好きなことだからこそ、苦しい時期も乗り越えられるのだ」 follows.\nRule: 「むしろ」 = rather: after rejecting one view it offers a truer one.\nContrast: 「したがって」 draws a conclusion from what precedes; \"not fun every day\" doesn't lead to \"you get through hard times because you love it\"."
         },
         "wrong": [
           {
@@ -745,8 +745,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "结尾向读者提出建议“难道不应该做好心理准备再决定吗”，用「べきではないだろうか」。",
-          "en": "He closes with advice to the reader: 「べきではないだろうか」 (shouldn't one …?)."
+          "zh": "线索：结尾「楽しさが減ることも覚悟したうえで決める」，作者在向读者提建议。\n规则：「〜べきではないだろうか」＝难道不应该……吗，委婉地提出主张。\n辨析：「に違いない」是对事实的推测，不是建议；「までもない」＝不必，和建议相反。",
+          "en": "Clue: The ending 「楽しさが減ることも覚悟したうえで決める」 is advice to the reader.\nRule: 「〜べきではないだろうか」 = shouldn't one…?, a soft way to make a claim.\nContrast: 「に違いない」 guesses at a fact rather than advising; 「までもない」 = needn't, the opposite of advice."
         },
         "wrong": [
           {
@@ -786,8 +786,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "“以前每次看到那种情景都会这么想”，表示每逢某事就会怎样，用「たびに」。",
-          "en": "Every time he saw such a scene he thought this: 「見るたびに」."
+          "zh": "线索：「以前の私は、そうした光景を見る」，后面「食事のために一時間も待つなんて理解できないと思っていた」是过去反复出现的想法。\n规则：「动词辞书形＋たびに」＝每次……都……（「会うたびに」）。\n辨析：「ことなく」＝没有……就……，正好否定了“看到”；作者正是看到队伍才这样想。",
+          "en": "Clue: 「以前の私は、そうした光景を見る」, then 「食事のために一時間も待つなんて理解できないと思っていた」: a thought that came back each time.\nRule: Dictionary form + 「たびに」 = every time… (「会うたびに」).\nContrast: 「ことなく」 = without…, which would cancel the seeing; it was seeing the queues that prompted the thought."
         },
         "wrong": [
           null,
@@ -814,8 +814,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "前面说“心神不宁”，后面说“想法渐渐变了”，前后转折，用「しかし」。",
-          "en": "He felt restless; then his thinking changed — a contrast: 「しかし」."
+          "zh": "线索：前句「時間を無駄にしているような気がして落ち着かなかった」，后面「少しずつ考えが変わってきた」。\n规则：「しかし」＝但是，前后转折。\n辨析：「それに」＝同方向追加；后文的想法改变和前面的不安方向相反。",
+          "en": "Clue: 「時間を無駄にしているような気がして落ち着かなかった」, then 「少しずつ考えが変わってきた」.\nRule: 「しかし」 = but: a turn between the two.\nContrast: 「それに」 adds in the same direction; a change of mind runs against the earlier unease."
         },
         "wrong": [
           {
@@ -842,8 +842,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "“也许部分是因为等了很久”，所以拉面格外好吃，后文也说不只是味道本身，用「もあってか」。",
-          "en": "Perhaps partly because of the long wait, it tasted special — and he adds it wasn't only the flavour: 「もあってか」."
+          "zh": "线索：「待った時間の長さ」后面是「格別においしく感じられた」，接着又说「味そのものも確かによかった。だが、それだけではなかった」——好吃不止一个原因。\n规则：「名词＋もあってか」＝也许部分是因为……：举出一个可能的原因，「も」暗示还有别的原因。\n辨析：「を問わず」＝不管……，等多久都一样，和“等待让它更好吃”相反。",
+          "en": "Clue: 「待った時間の長さ」 is followed by 「格別においしく感じられた」, then 「味そのものも確かによかった。だが、それだけではなかった」: more than one reason.\nRule: Noun + 「もあってか」 = perhaps partly because of…: one likely cause, with 「も」 hinting at others.\nContrast: 「を問わず」 = regardless of, i.e. the wait made no difference, the opposite of the point."
         },
         "wrong": [
           null,
@@ -870,8 +870,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "前一句「それだけではなかったように思う」，接着委婉地提出自己的看法，用「のではないだろうか」。",
-          "en": "After 「それだけではなかったように思う」 he puts forward his view tentatively: 「のではないだろうか」."
+          "zh": "线索：前句「だが、それだけではなかったように思う」，作者在委婉地说自己的看法。\n规则：「〜のではないだろうか」＝不是……吗，委婉的推测或主张。\n辨析：「というわけではない」否定了等待的作用，和「それだけではなかった」矛盾。",
+          "en": "Clue: 「だが、それだけではなかったように思う」 shows the author offering his view gently.\nRule: 「〜のではないだろうか」 = wasn't it that…?, a soft guess or claim.\nContrast: 「というわけではない」 would deny the waiting's effect, contradicting 「それだけではなかった」."
         },
         "wrong": [
           null,
@@ -898,8 +898,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "上文说“也有正因为等待才能体会的喜悦”，所以一口断定排队是浪费“有点可惜”，用「のは、もったいない」。",
-          "en": "Since waiting brings its own pleasures, dismissing queues as a waste is a shame: 「のは、もったいない」."
+          "zh": "线索：前句「しかし、待つ時間があるからこそ味わえる喜びもある」，空格前「行列は時間の無駄だと決めつける」。\n规则：「〜のは、もったいない」＝……太可惜了：把这种做法评价为错过了好东西。\n辨析：「べきなのである」＝应该断定，和前一句的结论相反；「に越したことはない」＝最好……，同样相反。",
+          "en": "Clue: 「しかし、待つ時間があるからこそ味わえる喜びもある」, then 「行列は時間の無駄だと決めつける」 before the blank.\nRule: 「〜のは、もったいない」 = it's a waste to…: the habit misses something good.\nContrast: 「べきなのである」 = one should, and 「に越したことはない」 = it's best to: both reverse the previous sentence's conclusion."
         },
         "wrong": [
           null,

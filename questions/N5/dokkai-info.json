@@ -27,8 +27,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "看「土」那一列：要从18点待到19点左右，只有东图书馆（到20:00）和西图书馆（到21:00）开着；但西图书馆15日休息，所以去东图书馆。",
-          "en": "In the Saturday column only Higashi (to 20:00) and Nishi (to 21:00) are open from 6 to 7 p.m.; Nishi is closed on the 15th, so Higashi."
+          "zh": "依据：「にしとしょかんは 十五日（土）は 休みです」；东图书馆「土」一栏是「10:00〜20:00」\n推理：看「土」那一列：要从18点学到19点左右。南（到17:00）、北（到18:00）都不行；东（到20:00）和西（到21:00）开着，但注意事项说西图书馆15日休息，所以去东图书馆。\n容易错：只看表格选开得最晚的西图书馆，漏看＊的注意事项。",
+          "en": "Evidence: 「にしとしょかんは 十五日（土）は 休みです」; the east library's 「土」 cell reads 「10:00〜20:00」\nReasoning: Use the 「土」 column: Tom needs about 6 to 7 p.m. South (to 17:00) and North (to 18:00) close too early; East (to 20:00) and West (to 21:00) are open, but the note says West is closed on the 15th, so East.\nTrap: Picking West, open latest in the table, and missing the ＊ note."
         },
         "wrong": [
           {
@@ -70,8 +70,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "不吃肉，排除A（汉堡肉饼）和D（牛肉）；还要加200日元的咖啡：B是900+200=1100日元，超过1000日元；C是800+200=1000日元，刚好。",
-          "en": "No meat rules out A (hamburg) and D (beef); with ¥200 coffee, B comes to ¥1,100 — over budget — while C is exactly ¥1,000."
+          "zh": "依据：「コーヒー・こうちゃは 200円です」；C是「やさいの カレー・サラダ」\n推理：她不吃肉，去掉A（汉堡肉饼）和D（牛肉咖喱）。再加咖啡200日元：B是900＋200＝1100日元，超过1000日元；C是800＋200＝1000日元，正好够。\n容易错：只看价钱选最便宜的D，忘了「ぎゅうにく」是肉。",
+          "en": "Evidence: 「コーヒー・こうちゃは 200円です」; C is 「やさいの カレー・サラダ」\nReasoning: She eats no meat, so A (hamburger steak) and D (beef curry) are out. Add 200 yen for coffee: B is 900 + 200 = 1,100 yen, over her 1,000; C is 800 + 200 = 1,000 yen, exactly enough.\nTrap: Picking D because it is cheapest and forgetting 「ぎゅうにく」 is meat."
         },
         "wrong": [
           {
@@ -119,8 +119,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "王先生工作日晚上七点前要上班，只能选周末；网球在星期六，儿童10岁以上可以参加，儿子正好10岁。",
-          "en": "Mr Wang works until 7 p.m. on weekdays, so only weekend classes work; tennis is on Saturday and takes children from 10 — his son is 10."
+          "zh": "依据：网球的条件是「大人・子ども（10さいから）」；钢琴是「大人・子ども（12さいから）」，烹饪是「大人だけ」\n推理：王先生周一到周五晚上七点前上班，星期三18:00的游泳去不了。周末的课里，钢琴要12岁以上，烹饪只限大人；星期六的网球「10さいから」，10岁的儿子可以参加。\n容易错：「10さいから」是“从10岁起”，包括10岁。",
+          "en": "Evidence: Tennis is open to 「大人・子ども（10さいから）」; piano to 「大人・子ども（12さいから）」, and cooking is 「大人だけ」\nReasoning: Wang works until 7 p.m. on weekdays, so Wednesday swimming at 18:00 is out. Of the weekend classes, piano needs age 12 and cooking is adults only; Saturday tennis is 「10さいから」, so his 10-year-old son can join.\nTrap: 「10さいから」 means \"from age 10\", which includes 10."
         },
         "wrong": [
           {
@@ -148,8 +148,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "一个大人一个孩子：大人500日元 + 儿童300日元 = 800日元。",
-          "en": "One adult and one child: ¥500 + ¥300 = ¥800."
+          "zh": "依据：「お金は いっかい 大人 500円、子ども 300円です」\n推理：两个人是一个大人、一个孩子：大人500日元＋孩子300日元＝800日元。\n容易错：把儿子也按大人算（1000日元），或只算了王先生一个人（500日元）。",
+          "en": "Evidence: 「お金は いっかい 大人 500円、子ども 300円です」\nReasoning: The two are one adult and one child: 500 yen + 300 yen = 800 yen.\nTrap: Charging the son as an adult (1,000 yen), or counting only Wang (500 yen)."
         },
         "wrong": [
           {
@@ -191,8 +191,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "九点做完工作，走二十分钟，最早9:20到车站；星期日没有②号车，所以坐9:30的③号车，9:55到动物园，赶得上十点。",
-          "en": "Work ends at 9 and the walk takes 20 minutes, so she reaches the station at 9:20 at the earliest; bus ② doesn't run on Sundays, so she takes ③ at 9:30, arriving 9:55 — before ten."
+          "zh": "依据：「土曜日と 日曜日は ②の バスは ありません」\n推理：九点做完工作，走20分钟，9:20到车站。9:20的②号车星期日没有，下一班是9:30的③号车，9:55到，赶得上十点见面；9:45那班10:10才到，晚了。\n容易错：只算到9:20就选②号车，漏看＊的注意事项。",
+          "en": "Evidence: 「土曜日と 日曜日は ②の バスは ありません」\nReasoning: Work ends at nine and the walk takes 20 minutes, so she reaches the station at 9:20. Bus ② (9:20) doesn't run on Sundays; the next is ③ at 9:30, arriving 9:55, in time for ten. The 9:45 bus arrives at 10:10, too late.\nTrap: Stopping at 9:20, picking bus ②, and missing the ＊ note."
         },
         "wrong": [
           {
@@ -234,8 +234,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "看「水曜日」一列：大人1200 + 15岁（初中或高中生）1000 + 8岁儿童900 = 3100日元。",
-          "en": "Wednesday column: adult ¥1,200 + the 15-year-old (a junior/senior high student) ¥1,000 + the 8-year-old ¥900 = ¥3,100."
+          "zh": "依据：「中学生・高校生」；「子ども（5〜12さい）」\n推理：看「水曜日」那一列：山田先生40岁，大人1200日元；15岁的儿子是初中或高中生，1000日元；8岁的女儿在5〜12岁之间，900日元。1200＋1000＋900＝3100日元。\n容易错：看成了平日那一列（1800＋1200＋900＝3900日元）。",
+          "en": "Evidence: 「中学生・高校生」; 「子ども（5〜12さい）」\nReasoning: Use the 「水曜日」 column: Mr. Yamada, 40, pays the adult 1,200 yen; the 15-year-old son is a junior high or high school student, 1,000 yen; the 8-year-old daughter falls in 5–12, 900 yen. 1,200 + 1,000 + 900 = 3,100 yen.\nTrap: Reading the other-days column instead (1,800 + 1,200 + 900 = 3,900 yen)."
         },
         "wrong": [
           null,
@@ -277,8 +277,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "可燃垃圾平时是周一和周四；周一陈先生在旅行，本周四是节假日，注意事项说改到周五。",
-          "en": "Burnable rubbish is normally Monday and Thursday; Mr Chen is away on Monday, and this Thursday is a holiday, so the note moves it to Friday."
+          "zh": "依据：「今週の 木曜日は 休みの 日ですから、もえる ごみは 金曜日に 出して ください」\n推理：可燃垃圾平时是「月・木」。星期一陈先生在旅行（星期日晚上到星期二晚上）；这周四是节假日，注意事项说改到星期五。所以是星期五。\n容易错：只看表格选星期四，漏看注意事项；或忘了星期一不在家。",
+          "en": "Evidence: 「今週の 木曜日は 休みの 日ですから、もえる ごみは 金曜日に 出して ください」\nReasoning: Burnable rubbish normally goes out on 「月・木」. On Monday Chin is away (Sunday night to Tuesday night); this Thursday is a holiday, and the note moves it to Friday. So Friday.\nTrap: Picking Thursday from the table and missing the note, or forgetting he is away on Monday."
         },
         "wrong": [
           {

@@ -15,7 +15,7 @@
         "options": ["ちかくて", "とおくて", "ちかいので", "ちかいです"],
         "okj": ["近くて", "遠くて", "近いので", "近いです"],
         "answer": 0,
-        "why": { "zh": "后面接「歩いて 五分です」，近才走路五分钟；形容词连接两个分句用て形「ちかくて」。", "en": "A five-minute walk means it's close; an い-adjective joining two clauses takes the て-form 「ちかくて」." },
+        "why": { "zh": "线索：后面「あるいて 五分です」，走路五分钟，说明近；空格后是「、」，句子还要接下去。\n规则：「い」形容词连接下一个分句用「〜くて」：「ちかい」→「ちかくて」。\n容易错：「とおくて」是“远”，和走路五分钟矛盾；「ちかいです」是句尾形式，后面不能接「、」。", "en": "Clue: 「あるいて 五分です」 (five minutes on foot) shows it is close, and the 「、」 shows the sentence goes on.\nRule: An い-adjective joins the next clause with 「〜くて」: 「ちかい」 → 「ちかくて」.\nTrap: 「とおくて」 means \"far\", which clashes with five minutes on foot; 「ちかいです」 ends a sentence and can't take 「、」." },
         "wrong": [
           null,
           { "zh": "「とおくて」是“远”，和“走路五分钟”矛盾。", "en": "「とおくて」 (far) contradicts \"a five-minute walk\"." },
@@ -26,7 +26,7 @@
       {
         "options": ["でも", "それから", "だから", "そして"],
         "answer": 0,
-        "why": { "zh": "前面说常去公园，后面说上周没去，意思转折，用「でも」。", "en": "\"I usually go\" → \"last week I didn't\": a contrast, so 「でも」." },
+        "why": { "zh": "线索：前面说平时在公园「本を 読んだり、さんぽを したり します」，后面「先週の 日曜日は 雨でしたから、どこへも 行きませんでした」，这次没去，和平时相反。\n规则：「でも」表示转折“但是”。\n辨析：「それから」＝“然后”，接下一件事，不表示前后相反。", "en": "Clue: Before, what she usually does in the park, 「本を 読んだり、さんぽを したり します」; after, 「先週の 日曜日は 雨でしたから、どこへも 行きませんでした」: this time she didn't go, unlike usual.\nRule: 「でも」 means \"but\".\nContrast: 「それから」 = \"and then\", moving on to the next thing; it doesn't mark a contrast." },
         "wrong": [
           null,
           { "zh": "「それから」表示“然后”，前后不是转折。", "en": "「それから」 means \"and then\", not a contrast." },
@@ -37,7 +37,7 @@
       {
         "options": ["見ました", "見ます", "見たいです", "見て います"],
         "answer": 0,
-        "why": { "zh": "讲的是上个星期天的事，用过去式「見ました」。", "en": "It's about last Sunday, so the past 「見ました」." },
+        "why": { "zh": "线索：说的是「先週の 日曜日」，前面「どこへも 行きませんでした」也是过去式。\n规则：已经发生的事用「〜ました」。\n容易错：「見て います」是“正在看”，「見たいです」是“想看”，都不是上周已经做的事。", "en": "Clue: The day is 「先週の 日曜日」, and 「どこへも 行きませんでした」 just before is past too.\nRule: Things that already happened take 「〜ました」.\nTrap: 「見て います」 is \"am watching\" and 「見たいです」 \"want to watch\": neither is something done last week." },
         "wrong": [
           null,
           { "zh": "「見ます」是现在/将来，和“上个星期天”不符。", "en": "「見ます」 is present/future; the story is about last Sunday." },
@@ -64,7 +64,7 @@
         "options": ["おべんとうと 飲みもの", "おべんとうと かさ", "飲みものと かさ", "おべんとうと 飲みものと かさ"],
         "okj": ["お弁当と飲み物", "お弁当と傘", "飲み物と傘", "お弁当と飲み物と傘"],
         "answer": 0,
-        "why": { "zh": "纸上写「おべんとうと 飲みものを 持って きて ください」，又说「かさは いりません」。", "en": "The note says bring 「おべんとうと 飲みもの」 and that an umbrella isn't needed." },
+        "why": { "zh": "依据：「おべんとうと 飲みものを もって きて ください」；「かさは いりません」\n推理：「〜て ください」是要求带的东西：便当和饮料。「いりません」＝不需要，所以伞不用带。\n容易错：选项里有「かさ」的都不对，不要因为去山里就想到带伞。", "en": "Evidence: 「おべんとうと 飲みものを もって きて ください」; 「かさは いりません」\nReasoning: 「〜て ください」 names what to bring: a packed lunch and a drink. 「いりません」 = not needed, so no umbrella.\nTrap: Every option with 「かさ」 is wrong; don't add an umbrella just because it's a mountain trip." },
         "wrong": [
           null,
           { "zh": "伞不用带（「かさは いりません」），也少了饮料。", "en": "No umbrella is needed, and the drink is missing." },
@@ -90,7 +90,7 @@
         "q": "マリアさんは 何時から 何時まで プールに 入る ことが できますか。",
         "options": ["8:00から 11:00まで", "9:00から 12:00まで", "1:00から 6:00まで", "1:00から 5:00まで"],
         "answer": 0,
-        "why": { "zh": "她星期日上午去：表上「土・日」的「午前」是 8:00〜11:00。", "en": "She goes on Sunday morning: the 土・日 morning slot is 8:00–11:00." },
+        "why": { "zh": "依据：表头「土・日」；那一列「午前」一行是「8:00〜11:00」\n推理：她星期日去，要看「土・日」那一列；她想上午去、午饭前回家，所以看「午前」那一行：8:00到11:00。\n容易错：9:00〜12:00是「月〜金」的上午，日子不对。", "en": "Evidence: the column header 「土・日」; its 「午前」 row reads 「8:00〜11:00」\nReasoning: She goes on Sunday, so read the 「土・日」 column; she wants the morning and to be home before lunch, so the 「午前」 row: 8:00 to 11:00.\nTrap: 9:00–12:00 is the 「月〜金」 morning: the wrong days." },
         "wrong": [
           null,
           { "zh": "9:00〜12:00 是周一到周五的上午。", "en": "9:00–12:00 is the weekday morning." },

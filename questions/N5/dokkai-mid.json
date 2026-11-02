@@ -28,8 +28,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "第三段：「三日目は 雪が たくさん ふりましたから、どこへも 行きませんでした。ホテルで 本を 読みました」。",
-          "en": "Paragraph three: on day three it snowed heavily, so they went nowhere and 「ホテルで 本を 読みました」."
+          "zh": "依据：「三日目は ゆきが たくさん ふりましたから、どこへも 行きませんでした」；「ホテルで 本を 読みました」\n推理：问的是「三日目」。第三天下了大雪，哪儿也没去，在酒店看书。\n容易错：散步、拍照是「一日目」，吃寿司是「二日目」，要按天数分清。",
+          "en": "Evidence: 「三日目は ゆきが たくさん ふりましたから、どこへも 行きませんでした」; 「ホテルで 本を 読みました」\nReasoning: The question asks about 「三日目」. On day three heavy snow kept them in, and they read at the hotel.\nTrap: The walk and the photos were 「一日目」 and the sushi 「二日目」; keep the days apart."
         },
         "wrong": [
           null,
@@ -63,8 +63,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "最后一句说明了理由：朋友说「夏の 北海道は 花が とても きれいですよ」，句尾的「から」表示原因。",
-          "en": "The last sentence gives the reason: a friend said Hokkaido's flowers are beautiful in summer — note the closing 「から」."
+          "zh": "依据：「友だちが 「なつの ほっかいどうは 花が とても きれいですよ」と 言いましたから」\n推理：最后一句句尾的「から」给出前一句「こんどは なつに 行きたいです」的理由：朋友说夏天的北海道花很美。\n容易错：第三天因下雪没出门只是让她“有点遗憾”，文中没把它说成想夏天去的理由。",
+          "en": "Evidence: 「友だちが 「なつの ほっかいどうは 花が とても きれいですよ」と 言いましたから」\nReasoning: The 「から」 ending the last sentence gives the reason for the one before, 「こんどは なつに 行きたいです」: a friend said the flowers in summer Hokkaido are lovely.\nTrap: Being snowed in on day three only made her a little sorry; the text doesn't give it as the reason for a summer trip."
         },
         "wrong": [
           null,
@@ -112,8 +112,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "「肉と やさいを 買いました」，米家里有（「うちに ありましたから、買いませんでした」）。",
-          "en": "「肉と やさいを 買いました」; the rice was already at home, so it wasn't bought."
+          "zh": "依据：「にくと やさいを 買いました」；「おこめは うちに ありましたから、買いませんでした」\n推理：买的是肉和蔬菜；米家里本来就有，所以没买。选项里有「おこめ」的都不对。\n容易错：米在文中出现了，但它是“没买”的东西。",
+          "en": "Evidence: 「にくと やさいを 買いました」; 「おこめは うちに ありましたから、買いませんでした」\nReasoning: He bought meat and vegetables; there was already rice at home, so he didn't buy any. Every option with 「おこめ」 is out.\nTrap: Rice is mentioned, but as something he did not buy."
         },
         "wrong": [
           null,
@@ -147,8 +147,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "姐姐说「おいしいですが、少し からいですね」——好吃，但有点辣。",
-          "en": "She said 「おいしいですが、少し からいですね」 — good, but a bit spicy."
+          "zh": "依据：「おいしいですが、少し からいですね」\n推理：「〜が」＝“但是”：先说好吃，再说有点辣。选项「おいしいが、少し からい」是同一句话的简体说法。\n容易错：「からい りょうりが だいすき」的是作者自己，不是姐姐；姐姐对辣菜是「あまり すきじゃ ありません」。",
+          "en": "Evidence: 「おいしいですが、少し からいですね」\nReasoning: 「〜が」 = \"but\": first \"it's tasty\", then \"a bit spicy\". The option 「おいしいが、少し からい」 is the same sentence in plain form.\nTrap: The one who loves spicy food is the writer; the sister 「あまり すきじゃ ありません」."
         },
         "wrong": [
           null,
@@ -196,8 +196,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "「歌が とても 上手です。でも、スポーツは あまり 好きじゃ ありません」。",
-          "en": "「歌が とても 上手です。でも、スポーツは あまり 好きじゃ ありません」."
+          "zh": "依据：「キムさんは うたが とても 上手です」；「でも、スポーツは あまり すきじゃ ありません」\n推理：金同学很会唱歌；「でも」后面是另一面：不太喜欢运动。选项把这两点合在一起。\n容易错：喜欢足球的是作者，金同学总说「わたしは 見る だけです」。",
+          "en": "Evidence: 「キムさんは うたが とても 上手です」; 「でも、スポーツは あまり すきじゃ ありません」\nReasoning: Kim sings very well; after 「でも」 comes the other side: Kim doesn't much like sports. The option combines the two.\nTrap: The soccer fan is the writer; Kim always says 「わたしは 見る だけです」."
         },
         "wrong": [
           null,
@@ -232,8 +232,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "最后一句：「その 前に、二人で 京都へ 行きたいです」，「その 前」就是金同学回国之前。",
-          "en": "Last line: 「その 前に、二人で 京都へ 行きたいです」 — 「その 前」 is before Kim goes home."
+          "zh": "依据：「その 前に、二人で きょうとへ 行きたいです」\n推理：「その 前」指前一句「来年の 三月に 国へ かえります」，就是金同学回国之前；作者想在那之前两个人去京都。\n容易错：一起做晚饭是「先週の 土曜日」已经做过的事，不是今后的愿望。",
+          "en": "Evidence: 「その 前に、二人で きょうとへ 行きたいです」\nReasoning: 「その 前」 points back to 「来年の 三月に 国へ かえります」, i.e. before Kim goes home; the writer wants the two of them to visit Kyoto before then.\nTrap: Cooking dinner together already happened 「先週の 土曜日」; it isn't a plan."
         },
         "wrong": [
           null,
@@ -281,8 +281,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "第一段：想暑假去冲绳旅行，「ですから、四月から アルバイトを 始めました」。",
-          "en": "Paragraph one: she wants to travel to Okinawa in the summer, 「ですから」 she started the job in April."
+          "zh": "依据：「なつやすみに 友だちと おきなわへ りょこうに 行きたいです」；「ですから、四月から アルバイトを はじめました」\n推理：「ですから」＝“所以”，前一句是原因：想暑假和朋友去冲绳旅行，所以从四月开始打工。\n容易错：八点后面包便宜、一开始不知道面包名字，都是开始打工以后的事，不是理由。",
+          "en": "Evidence: 「なつやすみに 友だちと おきなわへ りょこうに 行きたいです」; 「ですから、四月から アルバイトを はじめました」\nReasoning: 「ですから」 = \"so\", with the cause in the sentence before: she wants a summer trip to Okinawa with friends, so she started the job in April.\nTrap: Cheaper bread after eight and not knowing the bread names both come after she started; neither is the reason."
         },
         "wrong": [
           null,
@@ -310,8 +310,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "原来是周二、周五；「来月から 土曜日の 午後も はたらきます」的「も」表示再加上星期六下午。",
-          "en": "She works Tuesdays and Fridays; 「土曜日の 午後も」 — the 「も」 adds Saturday afternoon on top."
+          "zh": "依据：「毎週 火曜日と 金曜日に、駅の 前の パンやで はたらいて います」；「来月から 土曜日の 午後も はたらきます」\n推理：现在是周二和周五。「も」＝“也”：下个月起再加上星期六下午，原来的两天不变。\n容易错：星期六上午有日语学校，「はたらく ことが できません」，不能选上午。",
+          "en": "Evidence: 「毎週 火曜日と 金曜日に、駅の 前の パンやで はたらいて います」; 「来月から 土曜日の 午後も はたらきます」\nReasoning: She works Tuesdays and Fridays now. 「も」 = \"also\": from next month Saturday afternoon is added, and the two days stay.\nTrap: Saturday morning is Japanese school, 「はたらく ことが できません」, so not the morning."
         },
         "wrong": [
           null,
@@ -359,8 +359,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "「前の アパートより 少し せまいですが、新しくて きれいです」。",
-          "en": "「前の アパートより 少し せまいですが、新しくて きれいです」."
+          "zh": "依据：「前の アパートより 少し せまいですが、新しくて きれいです」\n推理：「Aより せまい」＝比A小；「〜が」后面是好的一面：又新又干净。选项去掉了「少し」「新しくて」，意思一样。\n容易错：公寓离车站要「あるいて 十分ぐらい」，不在车站前；它是新的，不旧。",
+          "en": "Evidence: 「前の アパートより 少し せまいですが、新しくて きれいです」\nReasoning: 「Aより せまい」 = smaller than A; after 「〜が」 comes the good side: new and clean. The option drops 「少し」 and 「新しくて」 but means the same.\nTrap: The flat is 「あるいて 十分ぐらい」 from the station, not in front of it, and it is new, not old."
         },
         "wrong": [
           null,
@@ -394,8 +394,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "「大きい スーパーは ありませんが、小さい やおやと 本屋が あります」。",
-          "en": "「大きい スーパーは ありませんが、小さい やおやと 本屋が あります」."
+          "zh": "依据：「アパートの ちかくに 大きい スーパーは ありませんが、小さい やおやと ほんやが あります」\n推理：「〜は ありませんが」先说没有大超市，「が」后面才是有的东西：小蔬菜店和书店。\n容易错：「大きい スーパー」在句子里出现了，但后面是「ありません」。",
+          "en": "Evidence: 「アパートの ちかくに 大きい スーパーは ありませんが、小さい やおやと ほんやが あります」\nReasoning: 「〜は ありませんが」 first says there is no big supermarket; what is there comes after 「が」: a small greengrocer and a bookshop.\nTrap: 「大きい スーパー」 is in the sentence, but followed by 「ありません」."
         },
         "wrong": [
           null,
@@ -443,8 +443,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "「十二時ごろ 雨が ふりました」，所以只剩一个小时也下山了；最后一句“下次想在天气好的日子爬到山顶”也说明原因是天气。",
-          "en": "「十二時ごろ 雨が ふりました」, so they turned back an hour from the top; the last line (\"on a day with good weather\") confirms the reason."
+          "zh": "依据：「でも、十二時ごろ 雨が ふりました」；「山の 上までは あと 一時間でしたが、みんなで かえりました」\n推理：本来想在山顶吃午饭，「でも」后面是下雨了；离山顶只差一小时也回去了。最后说下次想「天気が いい 日に」爬到山顶，也说明原因是天气。\n容易错：脚是有点疼，但作者说「たのしかったです」，那不是回去的原因。",
+          "en": "Evidence: 「でも、十二時ごろ 雨が ふりました」; 「山の 上までは あと 一時間でしたが、みんなで かえりました」\nReasoning: They meant to eat lunch at the top, but after 「でも」 it rained, and they turned back though the top was only an hour away. Wanting to go 「天気が いい 日に」 next time confirms the reason was the weather.\nTrap: His feet did hurt a little, but he says it was 「たのしかったです」; that isn't why they turned back."
         },
         "wrong": [
           null,
@@ -479,8 +479,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "下了雨就下山了，「山の 下の 店で あたたかい そばを 食べました」。",
-          "en": "After the rain they went down and 「山の 下の 店で あたたかい そばを 食べました」."
+          "zh": "依据：「山の 下の みせで あたたかい そばを 食べました」\n推理：他们想在山顶吃（「食べたかったです」），但下雨回去了，最后在山下的店里吃了热荞麦面。\n容易错：「〜たかったです」只是“本来想”，并没有真的在山顶吃。",
+          "en": "Evidence: 「山の 下の みせで あたたかい そばを 食べました」\nReasoning: They wanted to eat at the top (「食べたかったです」), but the rain sent them back, and they had hot soba at a shop at the foot of the mountain.\nTrap: 「〜たかったです」 is only \"wanted to\"; they never ate at the top."
         },
         "wrong": [
           null,

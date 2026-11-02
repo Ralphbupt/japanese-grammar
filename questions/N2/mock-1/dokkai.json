@@ -14,8 +14,8 @@
         "options": ["したがって", "それとも", "もっとも", "すなわち"],
         "answer": 2,
         "why": {
-          "zh": "前面说“大家都在看手机”，后面补充一个保留：“不过我自己也一样”，句末还有「のだが」。对前文做补充、修正用「もっとも」（不过）。",
-          "en": "After \"everyone was on their phone\" comes a qualification — \"mind you, so was I\" — ending in 「のだが」. A correcting afterthought is 「もっとも」."
+          "zh": "线索：前面「ほとんど全員がスマートフォンの画面を見つめていたのだ」说的是别人；后面「私自身も、その直前までニュースを読んでいたのだが」给自己加了一条保留，句末「のだが」带着“话虽如此”的语气。\n规则：「もっとも」放在句首，对前面的话加以补充或修正，意思是“不过、话虽如此”，后面常以「〜のだが」「〜けれど」收尾。\n辨析：「すなわち」＝换个说法重述同一内容（「首都、すなわち東京」）；这里后句说的是作者自己，不是重述，而是给前句打个折扣。「したがって」是因果，也接不上。",
+          "en": "Clue: Before the blank, 「ほとんど全員がスマートフォンの画面を見つめていたのだ」 is about other people; after it, 「私自身も、その直前までニュースを読んでいたのだが」 adds a reservation about the author, and the closing 「のだが」 has a mind-you tone.\nRule: Sentence-initial 「もっとも」 adds a qualification or correction to what was just said (\"mind you, though\"), and the sentence often ends in 「〜のだが」 or 「〜けれど」.\nContrast: 「すなわち」 = restating the same content (「首都、すなわち東京」); here the next sentence is about the author, not a restatement but a qualification of the last one. 「したがって」 marks a consequence and doesn't fit either."
         },
         "wrong": [
           {
@@ -37,8 +37,8 @@
         "options": ["ことになっていた", "しかなかった", "どころではなかった", "わけにはいかなかった"],
         "answer": 1,
         "why": {
-          "zh": "前面说「何もすることがないので」，没有别的选择，只能望风景、发呆：「〜しかなかった」（只能……）。",
-          "en": "「何もすることがないので」 — with nothing else to do, gazing and daydreaming were the only option: 「〜しかなかった」."
+          "zh": "线索：前半「何もすることがないので」给出原因：没有别的事可做；空格接在「窓の外の景色を眺めたり、ぼんやりと考え事をしたりして過ごす」的辞书形「過ごす」后面，叙述的是「かつて」的情况。\n规则：辞书形＋「しかない」（「待つしかない」「歩くしかない」）＝只能这样、没有别的选择；「しかなかった」是过去的情况。\n辨析：「どころではなかった」＝忙着别的事、根本顾不上（「忙しくて旅行どころではない」），和“无事可做”矛盾；「わけにはいかなかった」＝出于情理不能做，因果也接不上。",
+          "en": "Clue: The first half, 「何もすることがないので」, gives the cause: there was nothing else to do. The blank follows the dictionary form 「過ごす」 in 「窓の外の景色を眺めたり、ぼんやりと考え事をしたりして過ごす」, describing 「かつて」.\nRule: Dictionary form + 「しかない」 (「待つしかない」, 「歩くしかない」) = it's the only option; 「しかなかった」 puts it in the past.\nContrast: 「どころではなかった」 = too busy with something else to even think of it (「忙しくて旅行どころではない」), which clashes with having nothing to do; 「わけにはいかなかった」 = couldn't, for reasons of propriety, which doesn't follow from the cause."
         },
         "wrong": [
           {
@@ -60,8 +60,8 @@
         "options": ["しかも", "だが", "そのうえ", "つまり"],
         "answer": 1,
         "why": {
-          "zh": "「もちろん〜は言うまでもない」先承认手机的便利，后面转向“但也失去了东西”，是逆接：「だが」。",
-          "en": "「もちろん〜言うまでもない」 concedes the convenience; the next sentence turns against it (\"we lost something\") — the contrastive 「だが」."
+          "zh": "线索：前句「もちろん、スマートフォンが便利であることは言うまでもない」先承认优点；后句「何もしない時間がなくなったことで、私たちが失ったものもあるのではないか」提出相反的看法。\n规则：「だが」＝“但是”，逆接，连接方向相反的两句；「もちろんA。だがB」是先让步、再提出主张的常见结构。\n辨析：「しかも」「そのうえ」＝在同一方向上追加（「安い。しかもおいしい」）；这里从“方便”转到“失去了东西”，方向相反，要用转折。",
+          "en": "Clue: The sentence before, 「もちろん、スマートフォンが便利であることは言うまでもない」, concedes a plus; the one after, 「何もしない時間がなくなったことで、私たちが失ったものもあるのではないか」, raises the opposite view.\nRule: 「だが」 = \"but\": it links two sentences pointing in opposite directions; 「もちろんA。だがB」 is the usual concede-then-argue pattern.\nContrast: 「しかも」 and 「そのうえ」 add more in the same direction (「安い。しかもおいしい」); here the text turns from convenience to loss, so it needs a contrast."
         },
         "wrong": [
           {
@@ -83,8 +83,8 @@
         "options": ["はずがない", "のだという", "ことにしている", "ものだろうか"],
         "answer": 1,
         "why": {
-          "zh": "前面有「ある心理学者によれば」（据某心理学家说），句末要用传闻：「〜のだという」（据说……）。",
-          "en": "「ある心理学者によれば」 (\"according to a psychologist\") calls for reported speech at the end: 「〜のだという」."
+          "zh": "线索：句首「ある心理学者によれば」说明后面是在转述别人的说法；空格在句末，接在「新しいアイデアが生まれやすい」之后。\n规则：「〜によれば、〜のだという」＝“据……说，……”，「という」表示传闻，常和「によれば」「によると」前后呼应。\n辨析：「ことにしている」＝说话人自己的习惯（「毎朝走ることにしている」），不能用来转述心理学家的观点；「はずがない」＝不可能，和后文「退屈な時間は決して無駄ではない」的结论矛盾。",
+          "en": "Clue: The sentence opens with 「ある心理学者によれば」, so what follows reports someone else's view; the blank ends the sentence, after 「新しいアイデアが生まれやすい」.\nRule: 「〜によれば、〜のだという」 = \"according to …, …\": 「という」 marks hearsay and pairs with 「によれば」 / 「によると」.\nContrast: 「ことにしている」 is the speaker's own habit (「毎朝走ることにしている」) and can't report a psychologist's claim; 「はずがない」 = \"can't be\", which clashes with the conclusion 「退屈な時間は決して無駄ではない」."
         },
         "wrong": [
           {
@@ -106,12 +106,12 @@
         "options": ["しかたがない", "みようか", "いられない", "たまらない"],
         "answer": 1,
         "why": {
-          "zh": "「次に電車を待つときは」是作者对自己今后的打算，「〜てみようかと思う」（我想试着……）表示打算。",
-          "en": "「次に電車を待つときは」 is the writer's plan for next time: 「〜てみようかと思う」, \"I think I'll try …\"."
+          "zh": "线索：「次に電車を待つときは」说的是作者今后的打算；空格接在「て形」的「楽しんで」之后、「と思う」之前。\n规则：「て形」＋「みようかと思う」＝“想试着……”：「てみる」表示尝试，「〜ようかと思う」表示还在考虑中的打算（「行ってみようかと思う」）。\n辨析：「てしかたがない」＝感情强烈得控制不住（「うれしくてしかたがない」），说的是现在的状态，不是打算；「ていられない」＝没法再这样下去（「のんびりしていられない」），意思和结论相反。",
+          "en": "Clue: 「次に電車を待つときは」 is about what the author plans to do; the blank follows the て-form 「楽しんで」 and precedes 「と思う」.\nRule: て-form + 「みようかと思う」 = \"I think I'll try …\": 「てみる」 means trying, and 「〜ようかと思う」 is a plan still being weighed (「行ってみようかと思う」).\nContrast: 「てしかたがない」 = a feeling too strong to hold back (「うれしくてしかたがない」), a present state, not a plan; 「ていられない」 = can't go on doing it (「のんびりしていられない」), the opposite of the conclusion."
         },
         "wrong": [
           {
-            "zh": "「楽しんでしかたがない」是“高兴得不得了”，表示控制不住的感情，不是今后的打算，也不接「と思う」。",
+            "zh": "「楽しんでしかたがない」是“高兴得不得了”，表示控制不住的感情，不是今后的打算。",
             "en": "「〜てしかたがない」 is an overwhelming feeling, not a plan, and it doesn't fit before 「と思う」 here."
           },
           null,
@@ -148,8 +148,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "12月1日起非会员要满5,000日元才免运费，4,000日元要付运费；但会员「これまでどおり3,000円以上」免运费，注册又是免费的，所以先注册就能免运费。",
-          "en": "From 1 December non-members need ¥5,000, so ¥4,000 pays shipping; but members still get free shipping from ¥3,000 「これまでどおり」, and registering is free — so register first and it's free."
+          "zh": "依据：「12月1日のご注文分より、送料無料の条件を5,000円以上に変更させていただきます」；「会員登録をされているお客様につきましては、これまでどおり3,000円以上のご注文で送料無料となります」；「会員登録は無料で」。\n推理：①12月5日在变更之后，非会员要满5,000日元，4,000日元要付运费。②「なお」引出例外：会员仍是满3,000日元免运费，4,000日元就够。③注册免费，所以下单前先注册就能免运费。\n容易错：说“注册后也要满5,000日元”的选项漏看了「なお」后面的会员例外；说“注册要收费”的选项与「会員登録は無料」相反。",
+          "en": "Evidence: 「12月1日のご注文分より、送料無料の条件を5,000円以上に変更させていただきます」; 「会員登録をされているお客様につきましては、これまでどおり3,000円以上のご注文で送料無料となります」; 「会員登録は無料で」.\nReasoning: (1) The 5th is after the change, so a non-member needs 5,000 yen; 4,000 yen pays shipping. (2) 「なお」 brings in the exception: members still get free shipping from 3,000 yen, so 4,000 is enough. (3) Signing up is free, so registering before ordering makes shipping free.\nTrap: The option where members also need 5,000 yen misses the members' exception after 「なお」; the one with a sign-up fee contradicts 「会員登録は無料」."
         },
         "wrong": [
           {
@@ -189,8 +189,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "最后一句「早めに聞いてもらうほうが、こちらとしてもずっと助かる」：作为指导者，希望后辈早点来问。",
-          "en": "The last line, 「早めに聞いてもらうほうが、こちらとしてもずっと助かる」: as a mentor, the writer wants juniors to ask early."
+          "zh": "依据：「今、後輩を指導する立場になって分かるのは、早めに聞いてもらうほうが、こちらとしてもずっと助かるということだ」。\n推理：前面是新人时代的回忆：怕打扰、怕被看不起而不敢问，「ところが」一个人苦想的答案常常是错的，反而给前辈添了工作。最后一句以「今」开头，是作者现在的看法：后辈早点来问，指导的人「ずっと助かる」。「早めに聞いてもらう」＝选项「早めに質問してほしい」。\n容易错：说“不要打扰忙碌的前辈”的选项是作者新人时的想法，已被后面的经历推翻。",
+          "en": "Evidence: 「今、後輩を指導する立場になって分かるのは、早めに聞いてもらうほうが、こちらとしてもずっと助かるということだ」.\nReasoning: The first part recalls being a newcomer, too shy to ask; 「ところが」 the answers worked out alone were often wrong and made more work for seniors. The last sentence, opening with 「今」, is the author's current view: when juniors ask early, it 「ずっと助かる」. 「早めに聞いてもらう」 = the option's 「早めに質問してほしい」.\nTrap: The option about not bothering busy seniors is the author's old newcomer thinking, overturned by what followed."
         },
         "wrong": [
           {
@@ -231,8 +231,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "不得已的情况下要「当日の朝9時までに上司に電話で連絡」，而且「この場合も、後日システムからの申請」也必须做。两件事都要。",
-          "en": "In an emergency you phone your manager by 9 a.m. 「当日の朝9時までに上司に電話で連絡」, and 「この場合も」 you still apply on the system afterwards — both steps."
+          "zh": "依据：「当日の朝9時までに上司に電話で連絡すれば、在宅勤務を認めます」；「この場合も、後日システムからの申請を忘れないようにしてください」。\n推理：孩子突然生病属于「やむを得ない事情」，适用「ただし」后面的例外：当天早上9点前打电话给上司。「この場合も」的「も」说明系统申请仍然要做，只是改到事后。所以两件事都要做。\n容易错：说“打完电话就什么都不用做”的选项漏看了「この場合も」；说“用邮件联系”的选项是以前的办法。",
+          "en": "Evidence: 「当日の朝9時までに上司に電話で連絡すれば、在宅勤務を認めます」; 「この場合も、後日システムからの申請を忘れないようにしてください」.\nReasoning: A child's sudden illness counts as 「やむを得ない事情」, so the exception after 「ただし」 applies: phone your boss by 9 that morning. The 「も」 in 「この場合も」 means the system application is still required, just afterwards. So both steps are needed.\nTrap: The option where a phone call is all you need misses 「この場合も」; the one about emailing is the old procedure."
         },
         "wrong": [
           {
@@ -272,8 +272,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "作者读了作家的话后「気持ちが楽になった」「読書は義務ではない」，认为不合适的书不必硬读到最后。",
-          "en": "After reading the writer's advice the author 「気持ちが楽になった」 and says 「読書は義務ではない」: no need to force through a book that doesn't suit you."
+          "zh": "依据：「合わない本を無理に読む時間があるなら、次の本を開いたほうがいい」；「読書は義務ではない」。\n推理：「思い込んでいた」表明“必须读完”是作者过去的想法；「しかし」之后作者读了作家的话「気持ちが楽になった」，接受了这个看法，并自己说「読書は義務ではない」。选项「無理に最後まで読まなくてもいい」就是这两句的意思。\n容易错：说“买了的书要读完”的选项是「思い込んでいた」的旧想法；说“选书要参考作家意见”的选项把契机当成了结论。",
+          "en": "Evidence: 「合わない本を無理に読む時間があるなら、次の本を開いたほうがいい」; 「読書は義務ではない」.\nReasoning: 「思い込んでいた」 marks finishing every book as the author's old belief; after 「しかし」, the writer's words made the author feel relieved (「気持ちが楽になった」), and the author now says 「読書は義務ではない」. The option's 「無理に最後まで読まなくてもいい」 is what these two sentences mean.\nTrap: The option about finishing books you bought is the old belief behind 「思い込んでいた」; the one about choosing books on a writer's advice turns the trigger into the conclusion."
         },
         "wrong": [
           {
@@ -313,8 +313,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "闲聊让人放松，产生「何を言っても大丈夫だ」的安心感，所以发言更多：大家能安心地说出意见。",
-          "en": "Small talk eases tension and creates the feeling that 「何を言っても大丈夫だ」, so people speak up — they feel safe giving opinions."
+          "zh": "依据：「雑談によって緊張がほぐれ、「この場では何を言っても大丈夫だ」という安心感が生まれるためだと考えられている」。\n推理：调查结果是会前闲聊过的团队发言多、意见种类丰富；这一句用「ためだ」说明原因：闲聊缓解紧张，产生“说什么都没关系”的安心感。选项「安心して意見を言える」＝这种「安心感」。\n容易错：说“意见容易统一”的选项与「意見の種類も豊かだった」相反。",
+          "en": "Evidence: 「雑談によって緊張がほぐれ、「この場では何を言っても大丈夫だ」という安心感が生まれるためだと考えられている」.\nReasoning: The survey found teams that chatted first spoke more and offered more kinds of ideas; this sentence gives the cause with 「ためだ」: chat eases tension and creates a sense that anything can be said. The option's 「安心して意見を言える」 = that 「安心感」.\nTrap: The option about opinions converging contradicts 「意見の種類も豊かだった」."
         },
         "wrong": [
           {
@@ -354,8 +354,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "文中写着「味や栄養の面では普通のものと何ら変わらない」。",
-          "en": "The text says 「味や栄養の面では普通のものと何ら変わらない」 — no different in taste or nutrition."
+          "zh": "依据：「規格外の野菜は、味や栄養の面では普通のものと何ら変わらない」。\n推理：「何ら変わらない」＝完全没有区别；选项里的「規格に合った野菜」就是原文的「普通のもの」。被剔除的理由只是「形や大きさが基準に合わない」。\n容易错：说“近两成被便宜卖掉”的选项把数字挪错了地方：近两成是「出荷できず、畑で捨てられる」。",
+          "en": "Evidence: 「規格外の野菜は、味や栄養の面では普通のものと何ら変わらない」.\nReasoning: 「何ら変わらない」 = no difference at all; the option's 「規格に合った野菜」 is the text's 「普通のもの」. They are removed only because 「形や大きさが基準に合わない」.\nTrap: The option about nearly 20% being sold cheaply moves the figure: that share is 「出荷できず、畑で捨てられる」."
         },
         "wrong": [
           {
@@ -383,8 +383,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "「規格は消費者のためというより、主に運ぶ側や売る側の都合で作られてきた」：主要是为了运输方和销售方方便。",
-          "en": "「規格は消費者のためというより、主に運ぶ側や売る側の都合で作られてきた」 — mainly for the convenience of transporters and sellers."
+          "zh": "依据：「つまり、規格は消費者のためというより、主に運ぶ側や売る側の都合で作られてきたのである」。\n推理：第二段先举流通效率（好装箱、运输无浪费）和商店的方便（好定价、好看），再用「つまり」总结。「AというよりB」：否定A“为消费者”，肯定B“为运输方、销售方”。「都合」＝选项「扱いやすくする」。\n容易错：说“让消费者安心购买”的选项正是被「というより」否定的A；说“能卖高价”的选项把「値段をつけやすく」（好定价）误读成了高价。",
+          "en": "Evidence: 「つまり、規格は消費者のためというより、主に運ぶ側や売る側の都合で作られてきたのである」.\nReasoning: Paragraph two lists distribution efficiency (easy packing, no waste in transport) and shop convenience (easy pricing, good display), then sums up with 「つまり」. 「AというよりB」 plays down A (for consumers) and affirms B (for those who ship and sell). 「都合」 = the option's 「扱いやすくする」.\nTrap: The option about reassuring consumers is the A played down by 「というより」; the one about selling at high prices misreads 「値段をつけやすく」 (easy to price) as pricing high."
         },
         "wrong": [
           {
@@ -412,8 +412,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "最后一句：「私たちが『見た目のよさ』を当たり前のように求めることをやめれば、捨てられる野菜はもっと減らせるはずだ」。",
-          "en": "The final sentence: if we stop taking good looks for granted, 「捨てられる野菜はもっと減らせるはずだ」."
+          "zh": "依据：「私たちが「見た目のよさ」を当たり前のように求めることをやめれば、捨てられる野菜はもっと減らせるはずだ」。\n推理：最后一句是作者的结论，「〜ば〜はずだ」＝只要……就应该能……。不再要求「見た目のよさ」＝选项「見た目を気にしなければ」，「捨てられる」＝「廃棄される」。\n容易错：说“网购最划算”的选项把最近的变化之一当成了结论；说“农户应种出整齐蔬菜”的选项方向正相反。",
+          "en": "Evidence: 「私たちが「見た目のよさ」を当たり前のように求めることをやめれば、捨てられる野菜はもっと減らせるはずだ」.\nReasoning: The last sentence is the conclusion; 「〜ば〜はずだ」 = if only …, then surely …. Ceasing to demand 「見た目のよさ」 = the option's 「見た目を気にしなければ」, and 「捨てられる」 = 「廃棄される」.\nTrap: The option calling mail order the best deal turns one recent change into the conclusion; the one urging farmers to grow neater vegetables points the opposite way."
         },
         "wrong": [
           {
@@ -453,8 +453,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "「きっかけは、娘の結婚式だった。式で娘の友人がピアノを弾くのを聞いて」：听了女儿朋友的演奏。",
-          "en": "「きっかけは、娘の結婚式だった。式で娘の友人がピアノを弾くのを聞いて」 — hearing the daughter's friend play."
+          "zh": "依据：「きっかけは、娘の結婚式だった。式で娘の友人がピアノを弾くのを聞いて、自分もあんなふうに弾けたら、と思ったのだ」。\n推理：题干的「きっかけ」在原文直接出现。婚礼上弹琴的是「娘の友人」，作者是「聞いて」的一方，听了才想“要是自己也能这样弹就好了”。\n容易错：说“自己要在婚礼上弹琴”的选项搞错了弹琴的人；说“教室寄来体验课通知”的选项也不对，是作者自己在电车上查、自己报名的。",
+          "en": "Evidence: 「きっかけは、娘の結婚式だった。式で娘の友人がピアノを弾くのを聞いて、自分もあんなふうに弾けたら、と思ったのだ」.\nReasoning: The stem's 「きっかけ」 appears word for word. The player at the wedding was 「娘の友人」; the author was the one who 「聞いて」, listening and wishing they could play like that.\nTrap: The option where the author was to play at the wedding gets the player wrong; the one about a trial-lesson notice is wrong too: the author looked up the school on the train and signed up."
         },
         "wrong": [
           {
@@ -482,8 +482,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "「子どものころの私は、間違えずに弾くことばかり考えていた。だから練習が苦しかったのだろう」。",
-          "en": "「子どものころの私は、間違えずに弾くことばかり考えていた。だから練習が苦しかったのだろう」."
+          "zh": "依据：「子どものころの私は、間違えずに弾くことばかり考えていた。だから練習が苦しかったのだろう」。\n推理：「だから」直接连接原因和结果：小时候只想着不弹错，所以练习痛苦。这是作者听了老师的「間違えてもいいから」之后回头反思得出的。\n容易错：说“手指不听使唤”“学了马上忘”的选项，都是作者五十岁后学琴的困难，不是小时候的，把时间段弄混了。",
+          "en": "Evidence: 「子どものころの私は、間違えずに弾くことばかり考えていた。だから練習が苦しかったのだろう」.\nReasoning: 「だから」 links cause and effect directly: as a child the author thought only about not making mistakes, so practice was painful. The author realises this looking back after the teacher's 「間違えてもいいから」.\nTrap: The options about stiff fingers and forgetting at once are the author's difficulties after fifty, not as a child; they mix up the time."
         },
         "wrong": [
           null,
@@ -511,8 +511,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "「何か月もかかる。だが、少しずつ弾ける部分が増えていくのは、何よりの喜びだ」：虽然慢，但很开心。",
-          "en": "「何か月もかかる。だが、少しずつ弾ける部分が増えていくのは、何よりの喜びだ」 — slow, but a joy."
+          "zh": "依据：「今は、一曲弾けるようになるまでに何か月もかかる。だが、少しずつ弾ける部分が増えていくのは、何よりの喜びだ」。\n推理：「だが」前承认进步慢，后面是现在的心情：能弹的部分一点点增加，比什么都开心。选项「上達は遅くても」＝「何か月もかかる」，「うれしい」＝「何よりの喜び」。\n容易错：说“要比孩子进步更快”的选项与「上達の速さでは子どもにかなわない」相反；作者要比的是「楽しむこと」。",
+          "en": "Evidence: 「今は、一曲弾けるようになるまでに何か月もかかる。だが、少しずつ弾ける部分が増えていくのは、何よりの喜びだ」.\nReasoning: Before 「だが」 the author admits progress is slow; after it comes the present feeling: each bit more they can play is the greatest joy. The option's 「上達は遅くても」 = 「何か月もかかる」, 「うれしい」 = 「何よりの喜び」.\nTrap: The option about outpacing children contradicts 「上達の速さでは子どもにかなわない」; the author competes only at 「楽しむこと」."
         },
         "wrong": [
           {
@@ -552,8 +552,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "「事故はむしろ減っていた」，并且「車はゆっくり走るようになり」。",
-          "en": "「事故はむしろ減っていた」 and 「車はゆっくり走るようになり」 — fewer accidents and slower cars."
+          "zh": "依据：「実験を始めて一年がたつと、通りでの事故はむしろ減っていた」；「その結果、車はゆっくり走るようになり」。\n推理：「むしろ」表示结果和居民担心的“事故增加”相反；「その結果」后面写了另一个变化：车开得慢了。选项两半分别对应这两处。\n容易错：说“车流量减少”的选项文中没有：变化的是车速和互相让路，实验地点本来就车少。",
+          "en": "Evidence: 「実験を始めて一年がたつと、通りでの事故はむしろ減っていた」; 「その結果、車はゆっくり走るようになり」.\nReasoning: 「むしろ」 shows the outcome ran against residents' fear of more accidents; after 「その結果」 comes the other change: cars slowed down. The option's two halves match these two places.\nTrap: The option about less traffic isn't in the text: what changed was speed and giving way, and the site had few cars to begin with."
         },
         "wrong": [
           {
@@ -581,8 +581,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "负责人说有信号灯时司机会想「青だから進んでいい」，「周りをよく見なくなりがちだ」。",
-          "en": "The official says drivers think 「青だから進んでいい」 and 「周りをよく見なくなりがちだ」 — they stop watching their surroundings."
+          "zh": "依据：「信号があると、運転する人は「青だから進んでいい」と考え、周りをよく見なくなりがちだという」。\n推理：「町の担当者によると」引出负责人的话：有信号灯时司机只想着「青だから進んでいい」，于是「周りをよく見なくなりがちだ」＝选项「周りに注意を払わなくなる」；「信号ばかり見て」是对前半的换说法。\n容易错：说“孩子和老人得急着过马路”的选项借用了第三段的词，但那里说的是没有信号灯时可能更危险，不是信号灯的问题。",
+          "en": "Evidence: 「信号があると、運転する人は「青だから進んでいい」と考え、周りをよく見なくなりがちだという」.\nReasoning: 「町の担当者によると」 introduces the official's point: with lights, drivers think 「青だから進んでいい」 and so 「周りをよく見なくなりがちだ」 = the option's 「周りに注意を払わなくなる」; 「信号ばかり見て」 rewords the first half.\nTrap: The option about children and elderly people having to hurry borrows words from paragraph three, which says removing lights may be riskier for them, not that lights are the problem."
         },
         "wrong": [
           null,
@@ -610,8 +610,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "「実験の対象は車の少ない商店街の一部に限っている」。",
-          "en": "「実験の対象は車の少ない商店街の一部に限っている」 — only part of a quiet street."
+          "zh": "依据：「この町でも、実験の対象は車の少ない商店街の一部に限っている」。\n推理：「もっとも」引出保留：这种方法不是哪里都行，车多或孩子、老人多的地方反而危险，所以「この町でも」只在车少的地方做。「限っている」＝选项「限って行われている」。\n容易错：说“哪里都能期待同样效果”的选项与「どこでも通用するわけではない」相反；说“多数居民一开始就赞成”的选项与「心配の声が多く上がった」相反。",
+          "en": "Evidence: 「この町でも、実験の対象は車の少ない商店街の一部に限っている」.\nReasoning: 「もっとも」 adds a reservation: the method doesn't work everywhere and may be riskier on busy roads or where children and the elderly cross alone, so even here (「この町でも」) it's limited to quiet streets. 「限っている」 = the option's 「限って行われている」.\nTrap: The option promising the same effect anywhere contradicts 「どこでも通用するわけではない」; the one where most residents backed it from the start contradicts 「心配の声が多く上がった」."
         },
         "wrong": [
           {
@@ -652,8 +652,8 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "A说新的知识和人脉「本業に生かされることも多い」，B也承认「副業で得た経験が本業に役立つこともある」。",
-          "en": "A says new knowledge and contacts are 「本業に生かされることも多い」, and B concedes 「副業で得た経験が本業に役立つこともある」."
+          "zh": "依据：「新しい知識や人とのつながりが得られ、それが本業に生かされることも多い」；「確かに、副業で得た経験が本業に役立つこともあるだろう」。\n推理：A正面说副业的收获能用在本职上；B虽然持慎重态度，但先用「確かに」让步承认同一点，然后才「しかし」转向担忧。「生かされる」＝「役立つ」。\n容易错：说“信息外泄”的只有B，说“新业务点子”的只有A；B的让步句容易被后面的「しかし」盖过而漏看。",
+          "en": "Evidence: 「新しい知識や人とのつながりが得られ、それが本業に生かされることも多い」; 「確かに、副業で得た経験が本業に役立つこともあるだろう」.\nReasoning: A says outright that what a side job brings helps the main job; B is cautious but first concedes the same point with 「確かに」 before turning to worries with 「しかし」. 「生かされる」 = 「役立つ」.\nTrap: Information leaks are only in B, new business ideas only in A; B's concession is easy to miss under the 「しかし」 that follows."
         },
         "wrong": [
           {
@@ -681,8 +681,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "A的结论是「積極的に認める価値がある」；B说「手放しで賛成する気にはなれない」，准备不好就「急いで導入する必要はない」。",
-          "en": "A concludes it's 「積極的に認める価値がある」; B 「手放しで賛成する気にはなれない」 and says without preparation 「急いで導入する必要はない」."
+          "zh": "依据：「副業は会社にとっても積極的に認める価値があると言える」；「会社がそこまで準備できないのであれば、急いで導入する必要はない」。\n推理：A虽提到要掌握工作时间，结论是「積極的に認める価値がある」；B开头说「手放しで賛成する気にはなれない」，结尾说准备不好就不必急着引入。选项两半分别对应两人的结论。\n容易错：说“两人都主张先规定允许哪些工作”的选项，这只是B的主张；说“A因工时管理问题反对”的选项，把A的附带条件当成了立场。",
+          "en": "Evidence: 「副業は会社にとっても積極的に認める価値があると言える」; 「会社がそこまで準備できないのであれば、急いで導入する必要はない」.\nReasoning: A mentions tracking working hours but concludes 「積極的に認める価値がある」; B opens with 「手放しで賛成する気にはなれない」 and ends saying there's no rush without preparation. The option's two halves match the two conclusions.\nTrap: The option where both want rules on permitted work first gives B's point to both; the one where A objects over managing hours turns A's proviso into A's stance."
         },
         "wrong": [
           null,
@@ -723,8 +723,8 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "前文说古记录显示祭典三百年间多次改变面貌，神轿和路线都是各时代人们改良的结果。所以大家以为的“原样”，也只是某个时代改过之后的样子。",
-          "en": "The sentences before say the old records show the festival changed many times — shrine and route were each era's adjustments. So the ‘original’ form was itself one changed version."
+          "zh": "依据：「この祭りは、三百年の間に何度も姿を変えてきたのである」；「みこしの形も、町を練り歩く道順も、時代ごとに人々が工夫を重ねてきた結果だった」。\n推理：查了旧记录才发现：祭典三百年间多次改变，神轿和路线都是各时代人们改良的结果。所以大家以为的「昔のまま」，也只是某个时代改过之后的样子，并非最初的形态＝选项「初めからの形ではない」。「にすぎなかった」＝只不过是。\n容易错：说“改变祭典的是镇外来的人”的选项，把近十年的事和三百年的历史混在了一起。",
+          "en": "Evidence: 「この祭りは、三百年の間に何度も姿を変えてきたのである」; 「みこしの形も、町を練り歩く道順も、時代ごとに人々が工夫を重ねてきた結果だった」.\nReasoning: The old records show the festival changed many times over 300 years; the portable shrine and the route were each era's improvements. So what people took for 「昔のまま」 was just one era's altered version, not the original = the option's 「初めからの形ではない」. 「にすぎなかった」 = was merely.\nTrap: The option crediting outsiders with changing the festival mixes the last ten years with three centuries of history."
         },
         "wrong": [
           null,
@@ -753,8 +753,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "河水不断更替但河一直在流——形式会变，但“人们聚集、联结”这一内涵延续下去。",
-          "en": "The water changes but the river remains: forms change while the substance — people gathering and connecting — carries on."
+          "zh": "依据：「川の水は絶えず入れ替わっているが、川はずっと同じ場所を流れ続けている」；「残るべきなのは一つ一つの形ではなく、祭りを通して人々が集まり、つながるという中身のほうだ」。\n推理：比喻有两半：水不断更替＝形式在变；河一直在流＝有东西在延续。下一句「祭りについて言えば」把比喻落到实处，用「AではなくB」说明该留下的是人们聚集、联结的内涵。\n容易错：说“一点不改、好好收藏”的选项，正是作者用「ガラスケースに入れて眺めるものではなく」否定的看法；说“旧的自然消失”的选项只看了水的更替，漏了河一直在流。",
+          "en": "Evidence: 「川の水は絶えず入れ替わっているが、川はずっと同じ場所を流れ続けている」; 「残るべきなのは一つ一つの形ではなく、祭りを通して人々が集まり、つながるという中身のほうだ」.\nReasoning: The image has two halves: the water keeps changing = the forms change; the river keeps flowing = something continues. The next sentence, 「祭りについて言えば」, applies it with 「AではなくB」: what should remain is the substance of people gathering and connecting.\nTrap: The option about keeping it unchanged and stored away is the view the author rejects with 「ガラスケースに入れて眺めるものではなく」; the one about the old fading away sees only the changing water and misses the river that keeps flowing."
         },
         "wrong": [
           {
@@ -783,8 +783,8 @@
         ],
         "answer": 2,
         "why": {
-          "zh": "最后一段：改变时要重新追问“为了什么而延续”，与其拼命守住形式，不如思考为什么守护。",
-          "en": "The last paragraph: when changing, ask what it has been kept going for; think about why we preserve rather than clinging to the form."
+          "zh": "依据：「変えるときには、それが何のために続けられてきたのかを、改めて問い直す必要がある」；「形を守ることに必死になるよりも、なぜ守るのかを考え続けること」。\n推理：最后一段「もちろん、何を変えてもよいわけではない」给变化加了条件：改的时候要追问为什么延续至今。结尾「AよりもB」：比起拼命守形式，更要不断思考为什么守。选项「問い直しながら」和「形が変わることも受け入れる」两半都有依据。\n容易错：说“形式本来就在变、改什么都行”的选项被「何を変えてもよいわけではない」否定；说“要让镇外的人参加”的选项把例子当成了主旨。",
+          "en": "Evidence: 「変えるときには、それが何のために続けられてきたのかを、改めて問い直す必要がある」; 「形を守ることに必死になるよりも、なぜ守るのかを考え続けること」.\nReasoning: The last paragraph's 「もちろん、何を変えてもよいわけではない」 puts a condition on change: ask anew why it has been kept up. The closing 「AよりもB」: rather than clinging to forms, keep asking why you preserve them. Both halves of the option, 「問い直しながら」 and accepting changed forms, are grounded.\nTrap: The option saying anything may change is denied by 「何を変えてもよいわけではない」; the one about bringing in outsiders turns the example into the main point."
         },
         "wrong": [
           {
@@ -821,8 +821,8 @@
         "options": ["1,800円", "2,000円", "2,400円", "2,800円"],
         "answer": 2,
         "why": {
-          "zh": "本棚高1.2m属于1m以上：1,000日元；自行车600日元；椅子每件400日元×2＝800日元。电视市里不回收，不需要处理券。合计2,400日元。",
-          "en": "The 1.2 m bookcase is in the 1 m-or-taller row: ¥1,000; bicycle ¥600; chairs ¥400 × 2 = ¥800. The city doesn't collect TVs, so no ticket for it. Total ¥2,400."
+          "zh": "依据：「机・本棚・たんす（高さ1m以上）」；「いす・小さい家具（高さ1m未満）」；「品物1点ごとに1枚はってください」；「エアコン、テレビ、冷蔵庫、洗濯機は、市では収集できません」。\n推理：①书架高1.2m，属于「1m以上」一行：1,000日元。②自行车：600日元。③椅子400日元一件，每件一张，两把＝800日元。④电视市里不收，不用处理券。合计1,000＋600＋800＝2,400日元（共4件，没超过5件的上限）。\n容易错：把电视也算进去，或椅子只算一张；书架要看高度，不能当成不足1m的小家具。",
+          "en": "Evidence: 「机・本棚・たんす（高さ1m以上）」; 「いす・小さい家具（高さ1m未満）」; 「品物1点ごとに1枚はってください」; 「エアコン、テレビ、冷蔵庫、洗濯機は、市では収集できません」.\nReasoning: (1) The 1.2 m bookcase falls in the 「1m以上」 row: 1,000 yen. (2) Bicycle: 600 yen. (3) Chairs are 400 yen each, one ticket per item: two = 800 yen. (4) The city doesn't take TVs, so no ticket. Total 1,000 + 600 + 800 = 2,400 yen (four items, within the limit of five).\nTrap: Counting the TV, or one ticket for both chairs; the bookcase goes by height, not into the under-1 m furniture row."
         },
         "wrong": [
           {
@@ -851,8 +851,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "自己运到清洁中心是处理券金额的一半：1,500÷2＝750日元，比回收（1,500日元）便宜；无需申请，只在星期六9:00〜12:00受理，中村星期六上午有空。",
-          "en": "Taking it to the Clean Centre costs half the ticket price — ¥750 instead of ¥1,500 — needs no application, and is open Saturday 9:00–12:00, when Nakamura is free."
+          "zh": "依据：「ソファー・ベッド」；「ご自分で市のクリーンセンターに運ぶ場合は、申し込みは不要で、料金は処理券の金額の半額です。受付は土曜日9:00〜12:00のみで、料金はその場でお支払いください」。\n推理：①沙发在「ソファー・ベッド」一行，处理券1,500日元。②自己运去是「半額」：1,500÷2＝750日元，比收集便宜。③中村有车，星期六上午有空，正好在「土曜日9:00〜12:00のみ」之内。④「申し込みは不要」，不用先申请。\n容易错：说“先打电话申请再运去”的选项漏看了「申し込みは不要」；说“星期六下午运去”的选项超出了「9:00〜12:00のみ」。",
+          "en": "Evidence: 「ソファー・ベッド」; 「ご自分で市のクリーンセンターに運ぶ場合は、申し込みは不要で、料金は処理券の金額の半額です。受付は土曜日9:00〜12:00のみで、料金はその場でお支払いください」.\nReasoning: (1) A sofa is in the 「ソファー・ベッド」 row: a 1,500-yen ticket. (2) Taking it yourself costs 「半額」: 1,500 ÷ 2 = 750 yen, cheaper than collection. (3) Nakamura has a car and is free on Saturday morning, inside 「土曜日9:00〜12:00のみ」. (4) 「申し込みは不要」: no application needed.\nTrap: The option that phones in an application first misses 「申し込みは不要」; the Saturday-afternoon option falls outside 「9:00〜12:00のみ」."
         },
         "wrong": [
           {
