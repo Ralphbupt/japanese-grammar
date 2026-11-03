@@ -970,6 +970,20 @@ function buildLessonDescZh(lesson, cleanPoints, level) {
 // Remove every element whose class list has `lang-<lang>`, matching nested
 // tags of the same name so a <div class="lang-en"> takes its inner <div>s
 // with it. Only call it on content markup, not on <script> bodies.
+// Links to the companion podcast (podcast.jpnotes.dev): the reader's language
+// copy (English at /, Chinese at /zh/), optionally pre-filtered by level, and
+// tagged so the podcast's GA shows what jpnotes sends and from where
+// (utm_content). Returned HTML-escaped, ready for an href.
+function podcastUrl(en, content, level) {
+  const p = new URLSearchParams();
+  if (level) p.set("level", level);
+  p.set("utm_source", "jpnotes");
+  p.set("utm_medium", "web");
+  p.set("utm_campaign", "listening");
+  p.set("utm_content", content);
+  return `https://podcast.jpnotes.dev/${en ? "" : "zh/"}?${p}`.replace(/&/g, "&amp;");
+}
+
 function stripLangBlocks(html, lang) {
   const open = new RegExp(`<(span|div|p)\\b[^>]*\\bclass="(?:[^"]*\\s)?lang-${lang}(?:\\s[^"]*)?"[^>]*>`, "g");
   let out = "", i = 0, m;
@@ -2260,7 +2274,7 @@ async function main() {
   // strips the other language and points 关于 at /zh/about/ on zh copies).
   const siteFooterHtml = `<footer class="site-footer">
     <nav aria-label="footer">
-      <a href="https://podcast.jpnotes.dev/" target="_blank">Podcast</a>
+      <span class="lang-zh"><a href="${podcastUrl(false, "footer")}" target="_blank">播客</a></span><span class="lang-en"><a href="${podcastUrl(true, "footer")}" target="_blank">Podcast</a></span>
       <a href="${SITE_PATH}about/"><span class="lang-zh">关于</span><span class="lang-en">About</span></a>
       <a href="https://github.com/Ralphbupt" target="_blank">GitHub</a>
       <a href="https://liko.page/" target="_blank" rel="author">liko.page</a>
@@ -2564,8 +2578,8 @@ ${SETTINGS_SCRIPT}`;
       <span class="lang-en">Use Anki for review? Download the <a href="anki/">free JLPT N5–N1 grammar decks</a> ({{ANKI_CARDS}} cards, native TSV one-click import).</span>
     </p>
     <p>
-      <span class="lang-zh">想练听力？试试 <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News 播客</a>——慢速日语新闻 + 英语解说，配套逐句精听与 transcript。</span>
-      <span class="lang-en">Want listening practice? Try the <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News podcast</a> — slow Japanese news with English commentary, plus sentence-by-sentence listening and transcripts.</span>
+      <span class="lang-zh">想练听力？试试 <a href="${podcastUrl(false, "home")}" target="_blank">Japanese Daily News 播客</a>——每天一则真实日语新闻（N5–N3），逐句讲解，附振假名和中文翻译，也能切到纯日语模式只听新闻。</span>
+      <span class="lang-en">Want listening practice? Try the <a href="${podcastUrl(true, "home")}" target="_blank">Japanese Daily News podcast</a> — a real Japanese news story every day (N5–N3), explained sentence by sentence with furigana, plus a Japanese-only mode for plain listening.</span>
     </p>
   </section>`;
 
@@ -4033,8 +4047,8 @@ ${lessonList}</section>`;
     const m = { ...hubMeta[lang.code], body: `${hubIntro(en)}<div class="table-scroll"><table class="hub-table"><tbody>${["N5", "N4", "N3", "N2", "N1"].map((l) => hubRow(l, en)).join("")}</tbody></table></div>
       <script>${HUB_PROGRESS_JS}</script>
       <p class="hub-listen">${en
-        ? ckLevels.length ? `🎧 <b>Listening questions: ${ckLevels.join(", ")} so far</b>, other levels on the way. Meanwhile the <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News podcast</a> has slow news with transcripts.` : `🎧 <b>Listening questions are planned, not built yet.</b> If you want them, <a href="#feedback" class="fb-open">say so</a> — demand decides what comes first. Meanwhile the <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News podcast</a> has slow news with transcripts.`
-        : ckLevels.length ? `🎧 <b>听力题目前有 ${ckLevels.join("、")}</b>，其他级别在做。现在也可以用 <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News 播客</a>练听力（慢速新闻 + 原文）。` : `🎧 <b>听力题在规划中，还没做。</b>想要的话<a href="#feedback" class="fb-open">告诉我们</a>，想要的人多就先做。现在可以先用 <a href="https://podcast.jpnotes.dev/" target="_blank">Japanese Daily News 播客</a>练听力（慢速新闻 + 原文）。`}</p>` };
+        ? ckLevels.length ? `🎧 <b>Listening questions: ${ckLevels.join(", ")} so far</b>, other levels on the way. Meanwhile the <a href="${podcastUrl(true, "practice-hub")}" target="_blank">Japanese Daily News podcast</a> has a real Japanese news story every day, with transcripts.` : `🎧 <b>Listening questions are planned, not built yet.</b> If you want them, <a href="#feedback" class="fb-open">say so</a> — demand decides what comes first. Meanwhile the <a href="${podcastUrl(true, "practice-hub")}" target="_blank">Japanese Daily News podcast</a> has a real Japanese news story every day, with transcripts.`
+        : ckLevels.length ? `🎧 <b>听力题目前有 ${ckLevels.join("、")}</b>，其他级别在做。现在也可以用 <a href="${podcastUrl(false, "practice-hub")}" target="_blank">Japanese Daily News 播客</a>练听力（每天一则日语新闻，附原文和中文翻译）。` : `🎧 <b>听力题在规划中，还没做。</b>想要的话<a href="#feedback" class="fb-open">告诉我们</a>，想要的人多就先做。现在可以先用 <a href="${podcastUrl(false, "practice-hub")}" target="_blank">Japanese Daily News 播客</a>练听力（每天一则日语新闻，附原文和中文翻译）。`}</p>` };
     writeLangPage("practice", lang, localizePage(renderQuiz(lang, m, langVariant("practice", lang), "", null), lang, localizedPageIds));
   }
   quizPageIds.push("practice");
