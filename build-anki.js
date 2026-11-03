@@ -574,6 +574,7 @@ async function main() {
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="Content-Language" content="zh-CN, en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://jpnotes.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
 <title>日语语法 Anki 卡组下载（.apkg / TSV）| JLPT N5–N1 Japanese Grammar Anki Decks — jpnotes.dev</title>

@@ -1031,6 +1031,15 @@ function langVariant(id, lang) {
 function writeLangPage(id, lang, html) {
   const dir = path.join(__dirname, "dist", lang.dir, id);
   fs.mkdirSync(dir, { recursive: true });
+  // Bing mostly ignores hreflang and goes by the declared language, so every
+  // copy also states it here (without this, Chinese queries landed on the
+  // English /N2/ etc. in Bing, shown with a "Translate this result" link).
+  if (!/http-equiv="Content-Language"/i.test(html)) {
+    const meta = `<meta http-equiv="Content-Language" content="${lang.htmlLang}">`;
+    html = /<meta charset="[^"]*">/i.test(html)
+      ? html.replace(/<meta charset="[^"]*">/i, (m) => `${m}\n${meta}`)
+      : html.replace(/<head>/i, `<head>\n${meta}`);
+  }
   fs.writeFileSync(path.join(dir, "index.html"), html, "utf-8");
 }
 
@@ -2589,7 +2598,7 @@ ${SETTINGS_SCRIPT}`;
 <meta name="twitter:image" content="${SITE}og-image.png">
 
 <!-- Structured Data -->
-<meta http-equiv="Content-Language" content="ja, zh-CN">
+<meta http-equiv="Content-Language" content="en, zh-CN">
 <script type="application/ld+json">
 [{
   "@context": "https://schema.org",
@@ -2597,7 +2606,7 @@ ${SETTINGS_SCRIPT}`;
   "name": "Japanese Grammar Notes – N5 to N1",
   "description": "Free structured Japanese grammar notes covering JLPT N5 to N1, with bilingual explanations, example sentences, and spaced repetition.",
   "provider": { "@type": "Person", "name": "Ralphbupt" },
-  "inLanguage": ["ja", "zh-CN"],
+  "inLanguage": ["en", "zh-CN"],
   "educationalLevel": "Beginner to Intermediate",
   "about": { "@type": "Thing", "name": "Japanese Language Grammar" },
   "isAccessibleForFree": true,
@@ -2613,9 +2622,10 @@ ${SETTINGS_SCRIPT}`;
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "日语语法笔记 – Japanese Grammar Notes",
+  "name": "jpnotes",
+  "alternateName": ["jpnotes.dev", "Japanese Grammar Notes", "日语语法笔记"],
   "url": "${SITE}",
-  "inLanguage": ["ja", "zh-CN"]
+  "inLanguage": ["en", "zh-CN"]
 }]
 </script>
 
