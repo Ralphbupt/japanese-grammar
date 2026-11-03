@@ -3503,7 +3503,9 @@ ${AI_SCRIPT}
   const aboutMdPath = path.join(__dirname, "pages/about.md");
   let aboutPageGenerated = false;
   if (fs.existsSync(aboutMdPath)) {
-    const aboutMd = fs.readFileSync(aboutMdPath, "utf-8");
+    // {{LESSONS}} / {{POINTS}}: the same counts the home page shows.
+    const aboutMd = fs.readFileSync(aboutMdPath, "utf-8")
+      .replace(/\{\{LESSONS\}\}/g, totalLessons).replace(/\{\{POINTS\}\}/g, totalPoints);
     // Process :::zh / :::en bilingual blocks (same pattern as lesson md).
     const aboutMdBilingual = aboutMd.replace(
       /^:::(zh|en)\s*\n([\s\S]*?)^:::\s*$/gm,

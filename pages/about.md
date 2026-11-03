@@ -3,7 +3,7 @@
 ## 这是什么||What is this
 
 :::zh
-「日语语法笔记」是一份免费、双语（中文 + 日语）的 JLPT N5 → N1 语法学习材料，共 **93 课、420+ 个语法点**。每个语法点包含：
+「日语语法笔记」是一份免费、双语（中文 + 日语）的 JLPT N5 → N1 语法学习材料，共 **{{LESSONS}} 课、{{POINTS}}+ 个语法点**。每个语法点包含：
 
 - **接续规则**：动词 / 形容词 / 名词的具体接续方式
 - **3+ 例句**：覆盖日常对话和考试常见语境
@@ -11,11 +11,11 @@
 - **易错点**：中文母语者特别容易踩的坑
 - **间隔复习**：当天 → 1 → 4 → 7 → 14 → 30 天勾选清单
 
-内容免费、无广告、无追踪。
+内容免费、无广告。访问量只用 Google Analytics 做匿名统计。
 :::
 
 :::en
-"Japanese Grammar Notes" is a free JLPT N5 → N1 grammar study set, with every explanation written in both English and Chinese: **93 lessons covering 420+ grammar points**. Each grammar point includes:
+"Japanese Grammar Notes" is a free JLPT N5 → N1 grammar study set, with every explanation written in both English and Chinese: **{{LESSONS}} lessons covering {{POINTS}}+ grammar points**. Each grammar point includes:
 
 - **Conjugation rules**: how it combines with verbs / adjectives / nouns
 - **3+ example sentences**: covering daily conversation and exam-style contexts
@@ -23,7 +23,7 @@
 - **Common pitfalls**: mistakes Chinese native speakers tend to make
 - **Spaced repetition**: review checklist for day 0 → 1 → 4 → 7 → 14 → 30
 
-Free, no ads, no tracking.
+Free and ad-free. Visits are counted anonymously with Google Analytics.
 :::
 
 ## 为什么做这个||Why I built it
@@ -75,7 +75,14 @@ So I decided to **take notes as I learn** and open-source everything. It started
 - **在线参考**：[沪江日语](https://jp.hjenglish.com/)、[Bunpro](https://bunpro.jp/)、[Tofugu](https://www.tofugu.com/)、[日本語教師の広場](https://nihongokyoshi-net.com/)
 - **真题**：JLPT 历年 N5 - N2 文法真题（公开发布部分）
 
-每个语法点完成后，会在我自己的学习中先验证 **2-3 周**（用配套的间隔复习清单），确认讲解清晰、例句到位之后再公开发布。
+各部分的来源和检查方式不同：
+
+- **N5–N2 语法课（第 0–75 课）**：2026 年 4–6 月边学边写。每个语法点在我自己的学习中先验证 **2-3 周**（用配套的间隔复习清单），确认讲解清晰、例句到位之后再公开发布。
+- **N1 语法课（第 76–92 课）**：2026 年 10 月由 AI 编写，再由 AI 另做一轮审校。我自己还没学到 N1，这部分没有经过上面那样的亲自验证，使用时请多留个心。
+- **练习题、模拟题、听力题**：原创题，按 JLPT 的题型编写，**不是历年真题**。由 AI 辅助编写；每道题都做过「盲答」检查（先不看答案作答，答不出唯一正确答案的题会被改写），并经过自动校验。
+- **音频**：例句朗读用微软 Edge 的语音合成，听力题用 AI 语音合成，语速略慢、发音清晰，不是考试录音。读音都用语音识别转写回文字核对过。
+
+> 发现讲解、例句、题目或读音有错，请点题目下的「这题有问题？」或提 issue，我会修正。
 
 > 如果你发现某个例句直接来自上述资料而我没标注出处，请提 issue，我会立刻修正。
 :::
@@ -87,7 +94,14 @@ The lesson structure follows my actual study pace. Example sentences and compari
 - **Online**: [Hujiang Japanese](https://jp.hjenglish.com/), [Bunpro](https://bunpro.jp/), [Tofugu](https://www.tofugu.com/), [Nihongo Kyoushi no Hiroba](https://nihongokyoshi-net.com/)
 - **Past exams**: publicly released JLPT N5–N2 grammar questions
 
-Each grammar point is validated through **2–3 weeks** of my own study (using the built-in spaced-repetition checklist) before being published.
+Different parts of the site were made and checked differently:
+
+- **N5–N2 grammar lessons (0–75)**: written while I studied, April–June 2026. Each grammar point is validated through **2–3 weeks** of my own study (using the built-in spaced-repetition checklist) before being published.
+- **N1 grammar lessons (76–92)**: written by AI in October 2026 and checked by a second AI review. I haven't studied N1 myself yet, so these lessons have not had that first-hand check; use them with a little more caution.
+- **Practice questions, mock tests and listening**: original questions in the JLPT formats, **not past exam papers**. Written with AI assistance; every question went through a blind check (answered without seeing the key; any question without exactly one defensible answer was rewritten) and automated validation.
+- **Audio**: example sentences are read by Microsoft Edge text-to-speech, and listening questions use AI voices, slightly slow and clearly pronounced, not exam recordings. Readings were checked by transcribing the audio back to text.
+
+> Found a mistake in an explanation, example, question or reading? Use "Something wrong with this question?" under the question, or file an issue, and I'll fix it.
 
 > If you find an example sentence that directly comes from a referenced source without proper attribution, please file an issue — I'll fix it immediately.
 :::
@@ -106,7 +120,7 @@ Each grammar point is validated through **2–3 weeks** of my own study (using t
 - **sharp**：生成 OG 图片
 - **GitHub Pages + Cloudflare Registrar**：托管 + 自定义域名 jpnotes.dev
 
-完全**静态站点**，无后端、无数据库、无 cookies。每次推送 main 分支，GitHub Actions 自动构建并部署。
+页面是**静态站点**，每次推送 main 分支，GitHub Actions 自动构建并部署。服务器端只有一个 Cloudflare Worker，负责免费 AI 中转和读者反馈（见下方「问 AI」的隐私说明）。
 :::
 
 :::en
@@ -121,7 +135,7 @@ Tech stack:
 - **sharp**: OG image generation
 - **GitHub Pages + Cloudflare Registrar**: hosting + custom domain (jpnotes.dev)
 
-Pure **static site** — no backend, no database, no cookies. Every push to main triggers a GitHub Actions build and deploy.
+The pages are a **static site**: every push to main triggers a GitHub Actions build and deploy. The only server-side piece is one Cloudflare Worker for the free AI relay and reader feedback (see the "Ask AI" privacy notes below).
 :::
 
 <a id="ai-setup"></a>
