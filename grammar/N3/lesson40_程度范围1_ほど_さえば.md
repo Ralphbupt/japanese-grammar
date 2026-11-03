@@ -314,6 +314,15 @@ Indicates degree — "to the extent that…" or "so much that…". Often used in
 8. 只要你来就好了。（さえ〜ば）
 9. 大约要花2个小时。（くらい）
 10. 这道菜好吃到令人感动。（ほど）
+
+**答案**
+1\. ほど／くらい（两个都可以）　2. ば・ほど　3. さえ・ば　4. ほど／くらい（两个都可以）　5. さえ
+
+6. 死ぬほど疲れた。
+7. 安ければ安いほどいい。
+8. 君さえ来てくれればいい。
+9. 2時間くらいかかる。
+10. この料理は感動するほどおいしい。
 :::
 :::en
 **Part 1: Fill in the appropriate grammar (ほど / くらい / ば〜ほど / さえ〜ば)**
@@ -331,6 +340,15 @@ Indicates degree — "to the extent that…" or "so much that…". Often used in
 8. As long as you come, that's all I need. (Use さえ〜ば)
 9. It takes about 2 hours. (Use くらい)
 10. The food was so delicious it was moving. (Use ほど)
+
+**Answers**
+1\. ほど / くらい (either works)　2. ば, ほど　3. さえ, ば　4. ほど / くらい (either works)　5. さえ
+
+6. 死ぬほど疲れた。
+7. 安ければ安いほどいい。
+8. 君さえ来てくれればいい。
+9. 2時間くらいかかる。
+10. この料理は感動するほどおいしい。
 :::
 
 ## 复习计划||Review Schedule

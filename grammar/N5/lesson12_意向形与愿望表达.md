@@ -52,7 +52,7 @@
 :::en
 | Type | Rule | Example |
 |------|------|---------|
-| Group 1 verbs | う-row → お-row + う | 書く→書**こう**、飲む→飲**もう**、行く→行**こう** |
+| Group 1 verbs | う-column → お-column + う | 書く→書**こう**、飲む→飲**もう**、行く→行**こう** |
 | Group 2 verbs | る→**よう** | 食べる→食べ**よう**、見る→見**よう** |
 | する | **しよう** | する→しよう |
 | 来る | **来よう**（こよう） | 来る→来よう |
@@ -174,7 +174,7 @@ Volitional form + と思う = express a plan or intention
 3. もう二度とあの店には行かない**つもりだ**。（打算再也不去那家店了。）
 4. 夏休みに何をする**つもりですか**。（暑假打算做什么？）
 5. 彼と結婚する**つもりはない**。（没打算和他结婚。→ つもりはない=完全没这个打算）
-6. 今年中にN2に受かる**つもりだ**。（打算今年内考过N2。）
+6. 今年中にN2を受ける**つもりだ**。（打算今年内考N2。）
 7. お酒はもう飲まない**つもりだ**。（打算不再喝酒了。）
 :::
 
@@ -184,7 +184,7 @@ Volitional form + と思う = express a plan or intention
 3. もう二度とあの店には行かない**つもりだ**。(I'm never going to that shop again.)
 4. 夏休みに何をする**つもりですか**。(What are you planning to do during summer vacation?)
 5. 彼と結婚する**つもりはない**。(I have no intention of marrying him. → つもりはない = zero intention)
-6. 今年中にN2に受かる**つもりだ**。(I intend to pass N2 within this year.)
+6. 今年中にN2を受ける**つもりだ**。(I intend to take N2 within this year.)
 7. お酒はもう飲まない**つもりだ**。(I'm planning to stop drinking.)
 :::
 
@@ -298,7 +298,7 @@ Volitional form + と思う = express a plan or intention
 | 比较项 | ようと思う | つもり | 予定 |
 |--------|-----------|--------|------|
 | 能否用于他人 | ✅（〜と思っているらしい） | △（不太礼貌） | ✅（客观描述） |
-| 否定形 | ようと思わない（不太常用） | 〜ないつもりだ / 〜つもりはない | 〜ない予定だ |
+| 否定形 | 〜ようとは思わない（"并不想……"，很常用） | 〜ないつもりだ / 〜つもりはない | 〜ない予定だ |
 | 可以变化吗 | 容易改变 | 比较坚定 | 很难改变（已安排） |
 | 主观/客观 | 主观 | 主观 | 客观 |
 :::
@@ -307,7 +307,7 @@ Volitional form + と思う = express a plan or intention
 | Point | ようと思う | つもり | 予定 |
 |-------|-----------|--------|------|
 | Used for others? | ✅ (〜と思っているらしい) | △ (slightly impolite) | ✅ (objective description) |
-| Negative form | ようと思わない (less common) | 〜ないつもりだ / 〜つもりはない | 〜ない予定だ |
+| Negative form | 〜ようとは思わない ("I have no wish to…", common) | 〜ないつもりだ / 〜つもりはない | 〜ない予定だ |
 | Can it change? | Easy to change | Fairly firm | Hard to change (already arranged) |
 | Subjective/Objective | Subjective | Subjective | Objective |
 :::

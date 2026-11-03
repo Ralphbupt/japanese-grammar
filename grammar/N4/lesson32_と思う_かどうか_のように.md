@@ -407,16 +407,18 @@ Expresses a command, but softer than 「〜ろ」. Mainly used in **top-down** s
 ### がする 使用注意||Notes on がする
 
 :::zh
-> **注意**：「がする」的主语是**感觉本身**（匂い・味・音・気），不是感受者（人）。
+> **注意**：「が」前面是**感觉本身**（匂い・味・音・気）。感受者（人）**通常省略**，要说出来时常用「私には」。
 > - ✅ いい匂い**がする**。（闻到好闻的气味。）
-> - ❌ 私はいい匂い**がする**。（我闻到好气味 → 这个句子意思变成"我身上发出好闻的气味"。）
+> - △ 私はいい匂い**がする**。（没有语境时容易理解成"我身上有香味"；想说"我闻到"，直接省略主语，或说「私には〜」）
+> - ✅ 私は誰かが来た**気がする**。（我觉得好像有人来过。→ 気がする 带「私は」完全自然）
 > - ✅ いい匂い**がする**ね。（好香啊。→ 自然的说法）
 :::
 
 :::en
-> **Note**: The subject of がする is the **sensation itself** (匂い, 味, 音, 気), not the person sensing it.
+> **Note**: What comes before が is the **sensation itself** (匂い, 味, 音, 気). The person sensing it is **usually left out**; when stated, 「私には」 is common.
 > - ✅ いい匂い**がする**。(Something smells good.)
-> - ❌ 私はいい匂い**がする**。(This would mean "I emit a good smell," not "I smell something good.")
+> - △ 私はいい匂い**がする**。(Without context this is easily heard as "I smell nice"; to say "I smell something," just drop the subject or use 「私には〜」.)
+> - ✅ 私は誰かが来た**気がする**。(I have a feeling someone came. → with 気がする, 「私は」 is perfectly natural)
 > - ✅ いい匂い**がする**ね。(Smells nice, doesn't it? → natural expression)
 :::
 
@@ -522,7 +524,7 @@ Expresses a command, but softer than 「〜ろ」. Mainly used in **top-down** s
 
 | Verb type | Rule | Example |
 |-----------|------|---------|
-| Godan (Group 1) | u-row → e-row | 飲む → 飲**め**, 書く → 書**け**, 行く → 行**け** |
+| Godan (Group 1) | u-column → e-column | 飲む → 飲**め**, 書く → 書**け**, 行く → 行**け** |
 | Ichidan (Group 2) | る → ろ | 食べる → 食べ**ろ**, 起きる → 起き**ろ** |
 | Ka-irregular (来る) | 来い (**こい**) | — |
 | Sa-irregular (する) | **しろ** | — |

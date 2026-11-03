@@ -225,13 +225,11 @@ These look like い-adjectives but are actually な-adjectives:
 :::zh
 - 東京は大阪**より**大きいです。（东京比大阪大。）
 - 日本語は英語**より**難しいと思います。（我觉得日语比英语难。）
-- 夏**より**冬のほうが好きです。（比起夏天更喜欢冬天。）
 :::
 
 :::en
 - 東京は大阪**より**大きいです。（Tokyo is bigger than Osaka.）
 - 日本語は英語**より**難しいと思います。（I think Japanese is harder than English.）
-- 夏**より**冬のほうが好きです。（I prefer winter over summer.）
 :::
 
 ### ② AよりBのほうが〜（比起A，B更……）||② AよりBのほうが〜 (B is more … than A)
@@ -242,6 +240,7 @@ These look like い-adjectives but are actually な-adjectives:
 - コーヒー**より**紅茶**のほうが**好きです。（比起咖啡更喜欢红茶。）
 - バス**より**電車**のほうが**速い。（比起巴士电车更快。）
 - 一人で行く**より**、みんなで行った**ほうが**楽しい。（比起一个人去，大家一起去更开心。）
+- 夏**より**冬**のほうが**好きです。（比起夏天更喜欢冬天。）
 :::
 
 :::en
@@ -250,6 +249,7 @@ These look like い-adjectives but are actually な-adjectives:
 - コーヒー**より**紅茶**のほうが**好きです。（I like tea more than coffee.）
 - バス**より**電車**のほうが**速い。（The train is faster than the bus.）
 - 一人で行く**より**、みんなで行った**ほうが**楽しい。（It's more fun to go with everyone than to go alone.）
+- 夏**より**冬**のほうが**好きです。（I prefer winter over summer.）
 :::
 
 ### ③ AとBと、どちらが〜（A和B哪个更……）||③ AとBと、どちらが〜 (Which is more …, A or B?)

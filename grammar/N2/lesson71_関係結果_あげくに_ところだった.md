@@ -113,10 +113,10 @@ This lesson covers N2 grammar for "expertise," "results," and "near-misses." 「
 
 ### 含义||Meaning
 :::zh
-"不值得……""不足以……""用不着……"，表示某事不到那个程度，没必要那样做。书面语。
+"不值得……""不足以……""用不着……"，表示某事不到那个程度，没必要那样做。书面语。不少教材把它归为 N1，N2 考试里偶尔也会出现。
 :::
 :::en
-"Not worth…" or "does not warrant…" — something hasn't reached a level that justifies a certain reaction. Written language.
+"Not worth…" or "does not warrant…" — something hasn't reached a level that justifies a certain reaction. Written language. Many textbooks list it as N1, but it occasionally shows up on N2.
 :::
 
 ### 例句||Example Sentences
@@ -151,10 +151,10 @@ This lesson covers N2 grammar for "expertise," "results," and "near-misses." 「
 
 ### 含义||Meaning
 :::zh
-"经过漫长的……之后最终……"，表示经过反复纠结、折腾后的最终结果。**负面结果居多**，也可用于中性结果。
+"经过漫长的……之后最终……"，表示经过反复纠结、折腾后的最终结果。**几乎都是负面或不如意的结果**。
 :::
 :::en
-"After all that… in the end…" — the final result after prolonged struggle or deliberation. **Mostly negative outcomes**, though neutral outcomes are possible.
+"After all that… in the end…" — the final result after prolonged struggle or deliberation. **Almost always a negative or disappointing outcome.**
 :::
 
 ### 例句||Example Sentences
@@ -306,7 +306,6 @@ This lesson covers N2 grammar for "expertise," "results," and "near-misses." 「
 | ずに済む | 不用做就解决了 | 幸运地免于做某事 |
 | ないで済む | 不用做就解决了 | 同义，略口语 |
 | なくて済む | 不用做就行了 | 同义，最口语 |
-| ずにすむ | 不用做…… | 「済む」的假名写法 |
 
 > 「ずに済む」含"本来可能需要做，但幸好免了"的语气。
 :::
@@ -316,7 +315,6 @@ This lesson covers N2 grammar for "expertise," "results," and "near-misses." 「
 | ずに済む | get by without | Fortunately avoided; slightly formal |
 | ないで済む | get by without | Same meaning; slightly colloquial |
 | なくて済む | get by without | Same meaning; most colloquial |
-| ずにすむ | get by without | Kana spelling of 「済む」 |
 
 > 「ずに済む」 carries the nuance of "it might have been necessary, but fortunately wasn't."
 :::

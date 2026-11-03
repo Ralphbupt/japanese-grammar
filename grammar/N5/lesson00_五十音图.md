@@ -125,7 +125,7 @@ Nasal:   ン(n)
 小写的や/ゆ/よ接在い段假名后面：
 :::
 :::en
-A small や/ゆ/よ is attached after an い-row kana to form a single contracted syllable:
+A small や/ゆ/よ is attached after an い-column kana to form a single contracted syllable:
 :::
 
 ```

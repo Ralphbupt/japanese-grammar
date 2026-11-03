@@ -4231,8 +4231,8 @@ License: content CC BY-NC 4.0 (attribution, non-commercial); code MIT
 ## Grammar checklists (full point-by-point listings)
 
 - [N5 grammar list / N5 文法チェックリスト](${SITE}N5_grammar_list/): All ~70 N5 grammar points with progress checkboxes.
-- [N4 grammar list / N4 文法チェックリスト](${SITE}N4_grammar_list/): All ~74 N4 grammar points (excluding N5 overlap).
-- [N3 grammar list / N3 文法チェックリスト](${SITE}N3_grammar_list/): All ~150 N3 grammar points.
+- [N4 grammar list / N4 文法チェックリスト](${SITE}N4_grammar_list/): All ~79 N4 grammar points (excluding N5 overlap).
+- [N3 grammar list / N3 文法チェックリスト](${SITE}N3_grammar_list/): All 120+ N3 grammar points.
 - [N2 grammar list / N2 文法チェックリスト](${SITE}N2_grammar_list/): All ~130 N2 grammar points.${levelCounts.N1 ? `
 - [N1 grammar list / N1 文法チェックリスト](${SITE}N1_grammar_list/): All ~100 N1 grammar points.` : ""}
 

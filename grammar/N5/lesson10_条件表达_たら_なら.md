@@ -37,7 +37,7 @@
 - Negative: verb なかったら / noun & な-adj じゃなかったら / い-adj くなかったら
 :::
 
-### 核心語感||Core nuance
+### 核心语感||Core nuance
 
 :::zh
 **"等A发生了之后……"** 或 **"万一A的话……"**
@@ -155,7 +155,7 @@
 - な-adjective + なら
 :::
 
-### 核心語感||Core nuance
+### 核心语感||Core nuance
 
 :::zh
 **"如果你说的是A的话……"** — 接过对方的话题，给出建议或判断。
@@ -281,7 +281,7 @@
 
 :::zh
 **"如果下雨就不去了"：**
-- ❌ 雨が降る**と**、行かない。（と后面不能接意志 → 不自然）
+- △ 雨が降る**と**、行かない。（と后面一般不接意志；当作"每次下雨都不去"的习惯可以说，作这一次的决定就不自然）
 - ✅ 雨が降**れば**、行かない。（如果下雨的话就不去。）
 - ✅ 雨が降っ**たら**、行かない。（万一下雨就不去。→ 最自然）
 - ✅ 雨**なら**、行かない。（下雨的话就不去。→ 简洁）
@@ -295,7 +295,7 @@
 
 :::en
 **"If it rains, I won't go":**
-- ❌ 雨が降る**と**、行かない。（と cannot be followed by volition → unnatural）
+- △ 雨が降る**と**、行かない。（と usually isn't followed by a decision; fine as a habit — "whenever it rains, I don't go" — but unnatural for this one occasion）
 - ✅ 雨が降**れば**、行かない。（If it rains, I won't go.）
 - ✅ 雨が降っ**たら**、行かない。（If it should rain, I won't go. → most natural）
 - ✅ 雨**なら**、行かない。（If it's raining, I won't go. → concise）

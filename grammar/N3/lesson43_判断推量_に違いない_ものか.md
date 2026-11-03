@@ -59,14 +59,14 @@ This lesson covers grammar for "judgment," "conjecture," and "rhetorical questio
 
 ### 例句||Example Sentences
 :::zh
-1. こんな怪しい行動、彼が犯人**に違いない**。（这么可疑的行为，他一定是犯人。）
+1. こんな怪しい行動をするなんて、彼が犯人**に違いない**。（做出这么可疑的举动，他一定是犯人。）
 2. あの噂は本当**に違いない**。（那个传闻一定是真的。）
 3. こんなに渋滞しているなら、事故があった**に違いない**。（堵成这样，一定是出了事故。）
 4. 彼女はきっと成功する**に違いない**。（她一定会成功。）
 5. あんなに勉強したんだから、合格した**に違いない**。（那么努力学了，一定及格了。）
 :::
 :::en
-1. こんな怪しい行動、彼が犯人**に違いない**。(With such suspicious behavior, he must be the culprit.)
+1. こんな怪しい行動をするなんて、彼が犯人**に違いない**。(Acting that suspiciously — he must be the culprit.)
 2. あの噂は本当**に違いない**。(That rumor must be true.)
 3. こんなに渋滞しているなら、事故があった**に違いない**。(With this much traffic, there must have been an accident.)
 4. 彼女はきっと成功する**に違いない**。(She is sure to succeed.)
@@ -379,6 +379,15 @@ This lesson covers grammar for "judgment," "conjecture," and "rhetorical questio
 8. 如果不采取措施，恐怕会发生严重事故。（おそれがある）
 9. 那家餐厅的名字叫什么来着？（っけ）
 10. 这么好吃，当然会卖完啊。（に決まっている）
+
+**答案**
+1\. に違いない／に決まっている（两个都可以；に決まっている 语气更主观、更口语）　2. おそれがある　3. っけ　4. ものか　5. に違いない（根据证据下判断，用 に違いない 最自然）
+
+6. そんなことができるものか！
+7. 彼は嘘をついているに違いない。
+8. 対策をとらないと、重大な事故が起こるおそれがある。
+9. あのレストランの名前は何だったっけ？
+10. こんなにおいしいんだから、売り切れるに決まっている。
 :::
 :::en
 **Part 1: Choose the correct grammar (に違いない / に決まっている / おそれがある / っけ / ものか)**
@@ -396,6 +405,15 @@ This lesson covers grammar for "judgment," "conjecture," and "rhetorical questio
 8. If no measures are taken, there is a risk of a serious accident. (Use おそれがある)
 9. What was the name of that restaurant again? (Use っけ)
 10. It's this delicious — of course it'll sell out. (Use に決まっている)
+
+**Answers**
+1\. に違いない / に決まっている (both work; に決まっている sounds more subjective and conversational)　2. おそれがある　3. っけ　4. ものか　5. に違いない (a judgment drawn from evidence — に違いない fits best)
+
+6. そんなことができるものか！
+7. 彼は嘘をついているに違いない。
+8. 対策をとらないと、重大な事故が起こるおそれがある。
+9. あのレストランの名前は何だったっけ？
+10. こんなにおいしいんだから、売り切れるに決まっている。
 :::
 
 ## 复习计划||Review Schedule

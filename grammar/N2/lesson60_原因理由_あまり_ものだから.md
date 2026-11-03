@@ -23,7 +23,7 @@ This lesson covers advanced N2-level cause/reason expressions. 「あまり」 i
 | 期待 | きたい | 期待；期望（名、可作动词）——「期待に応える」不辜负期望；「期待外れ」令人失望//(n, suru-verb) expectation; hope — 「期待に応える」 to live up to expectations; 「期待外れ」 a letdown |
 | 評判 | ひょうばん | 评价；口碑（名）——「評判がいい」口碑好；「評判の店」有名气的店//(n) reputation; what people say — 「評判がいい」 well spoken of; 「評判の店」 a much-talked-about shop |
 | 一流 | いちりゅう | 一流；顶级（名）——「一流企業」一流企业；「一流のシェフ」顶级厨师//(n) first-rate; top-class — 「一流企業」 a top company; 「一流のシェフ」 a top chef |
-| ベテラン | べてらん | 老手；资深人士（名）——「ベテランの先生」资深老师；「ベテラン社員」老员工//(n) veteran; seasoned expert — an experienced worker, not specifically ex-military; 「ベテランの先生」 a veteran teacher; 「ベテラン社員」 a long-serving employee |
+| ベテラン | ベテラン | 老手；资深人士（名）——「ベテランの先生」资深老师；「ベテラン社員」老员工//(n) veteran; seasoned expert — an experienced worker, not specifically ex-military; 「ベテランの先生」 a veteran teacher; 「ベテラン社員」 a long-serving employee |
 | 鍛える | きたえる | 锻炼；磨炼（他动词）——「体を鍛える」锻炼身体；「心を鍛える」磨炼意志//(v, trans.) to train; to strengthen — 「体を鍛える」 to build up your body; 「心を鍛える」 to toughen your mind |
 | 叱る | しかる | 训斥；责骂（他动词）——上对下为纠正而批评，「怒る」只是发火；「子供を叱る」训孩子；「先生に叱られる」被老师批评//(v, trans.) to scold; to tell off — a parent, teacher or boss correcting someone; 「怒る」 is just getting angry; 「子供を叱る」 to scold a child; 「先生に叱られる」 to get told off by the teacher |
 | 泣く | なく | 哭；哭泣（自动词）——用于人，动物鸣叫写作「鳴く」；「赤ちゃんが泣く」婴儿哭；「泣き出す」哭起来//(v, intrans.) to cry; to weep — of people; animals' cries are written 「鳴く」; 「赤ちゃんが泣く」 a baby cries; 「泣き出す」 to burst into tears |

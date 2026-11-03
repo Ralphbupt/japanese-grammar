@@ -37,10 +37,11 @@ The N5 review lesson, weaving together loose ends (**question words + か / も 
 |---|---|---|---|
 | 誰も〜ない | 谁都不 | 誰も来なかった（谁都没来） | 誰も答えがわからない（谁都不知道答案） |
 | 何も〜ない | 什么都不 | 何も食べなかった（什么都没吃） | 何も聞こえない（什么都听不见） |
-| どこも〜ない | 哪里都不 | どこにも行かなかった（哪里都没去） | どこにも売っていない（哪里都没卖） |
-| いつも | ⚠️ 总是（不是否定！）| いつも遅刻する（总是迟到） | いつも優しい（总是很温柔） |
+| どこ(に)も〜ない | 哪里都不 | どこにも行かなかった（哪里都没去） | どこにも売っていない（哪里都没卖） |
 
-> **特别注意いつも！** 其他「疑问词+も+否定」都是全否定，但いつも是"总是/一直"（肯定），这是个例外！
+> **带助词时，も放在助词后面**：どこにも行かない、誰とも話さない。
+>
+> **别和いつも搞混**：いつも长得像「疑问词+も」，但它不属于这个句型，本身就是"总是"（肯定）：いつも遅刻する（总是迟到）。
 :::
 
 :::en
@@ -48,10 +49,11 @@ The N5 review lesson, weaving together loose ends (**question words + か / も 
 |---|---|---|---|
 | 誰も〜ない | nobody | 誰も来なかった (nobody came) | 誰も答えがわからない (nobody knows the answer) |
 | 何も〜ない | nothing | 何も食べなかった (didn't eat anything) | 何も聞こえない (can't hear anything) |
-| どこも〜ない | nowhere | どこにも行かなかった (didn't go anywhere) | どこにも売っていない (not sold anywhere) |
-| いつも | ⚠️ always (NOT negative!) | いつも遅刻する (always late) | いつも優しい (always kind) |
+| どこ(に)も〜ない | nowhere | どこにも行かなかった (didn't go anywhere) | どこにも売っていない (not sold anywhere) |
 
-> **Special note about いつも!** All other "question word + も + negative" patterns are total negations, but いつも means "always/all the time" (affirmative) — it is an exception!
+> **With a particle, も goes after it**: どこにも行かない, 誰とも話さない.
+>
+> **Don't confuse this with いつも**: it looks like "question word + も" but isn't part of this pattern — it simply means "always" (affirmative): いつも遅刻する (always late).
 :::
 
 ### 疑问词 + でも = "无论……都"||Question word + でも = "no matter… / any…"
@@ -76,7 +78,7 @@ The N5 review lesson, weaving together loose ends (**question words + か / も 
 
 ---
 
-## 2. 〜すぎる（過度）||2. 〜すぎる (Excess)
+## 2. 〜すぎる（过度）||2. 〜すぎる (Excess)
 
 ### 接続||Conjugation
 
@@ -148,7 +150,7 @@ The N5 review lesson, weaving together loose ends (**question words + か / も 
 
 ---
 
-## 3. 〜やすい / 〜にくい（容易/難以）||3. 〜やすい / 〜にくい (Easy to / Hard to)
+## 3. 〜やすい / 〜にくい（容易/难以）||3. 〜やすい / 〜にくい (Easy to / Hard to)
 
 ### 接続||Conjugation
 
@@ -218,7 +220,7 @@ Verb ます-stem + やすい / にくい
 
 ---
 
-## 4. 〜ながら（同時）||4. 〜ながら (Simultaneous Actions)
+## 4. 〜ながら（同时）||4. 〜ながら (Simultaneous Actions)
 
 ### 接続||Conjugation
 

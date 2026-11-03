@@ -205,14 +205,14 @@ Noun + をはじめ(として)
 :::zh
 1. 大臣**をはじめ**、多くの関係者が出席した。（以大臣为首，很多相关人员出席了。）
 2. 東京**をはじめ**、大阪や名古屋にも支店がある。（以东京为首，大阪和名古屋也有分店。）
-3. 日本語**をはじめ**、英語や中国語も勉強している。（以日语为首，英语和中文也在学。）
+3. この学校では、日本語**をはじめ**、英語や中国語などが学べる。（在这所学校，以日语为首，还能学英语、中文等。）
 4. 桜**をはじめ**、いろいろな花が咲いている。（以樱花为首，各种花都开了。）
 5. サッカー**をはじめとする**スポーツが人気だ。（以足球为首的运动很受欢迎。）
 :::
 :::en
 1. 大臣**をはじめ**、多くの関係者が出席した。(Many officials attended, starting with the minister.)
 2. 東京**をはじめ**、大阪や名古屋にも支店がある。(There are branches in Osaka and Nagoya, starting with Tokyo.)
-3. 日本語**をはじめ**、英語や中国語も勉強している。(I'm studying English and Chinese as well, starting with Japanese.)
+3. この学校では、日本語**をはじめ**、英語や中国語などが学べる。(At this school you can study Japanese and also English, Chinese and more.)
 4. 桜**をはじめ**、いろいろな花が咲いている。(Various flowers are blooming, starting with cherry blossoms.)
 5. サッカー**をはじめとする**スポーツが人気だ。(Sports starting with soccer are popular.)
 :::

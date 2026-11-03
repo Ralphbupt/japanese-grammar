@@ -228,7 +228,7 @@ Relays information heard from others or the news. Equivalent to 「〜そうだ 
 2. 親**としては**、子供の将来が心配だ。（作为父母来说，担心孩子的将来。）
 3. 管理職**としては**、部下の意見も聞くべきだ。（作为管理层来说，也应该听下属的意见。）
 4. この値段は東京**としては**安いほうだ。（这个价格作为东京来说算便宜的了。）
-5. 日本語を始めて半年**としては**、とても上手だ。（学日语才半年来说，非常棒了。）
+5. 初めての作品**としては**、よくできている。（作为第一部作品来说，做得很不错。）
 
 **【としても】**
 
@@ -241,7 +241,7 @@ Relays information heard from others or the news. Equivalent to 「〜そうだ 
 2. 親**としては**、子供の将来が心配だ。(As a parent, I worry about my child's future.)
 3. 管理職**としては**、部下の意見も聞くべきだ。(As a manager, one should also listen to subordinates' opinions.)
 4. この値段は東京**としては**安いほうだ。(This price is on the cheap side for Tokyo.)
-5. 日本語を始めて半年**としては**、とても上手だ。(For someone who started Japanese only six months ago, you're very good.)
+5. 初めての作品**としては**、よくできている。(For a first work, it's very well made.)
 
 **[としても]**
 

@@ -28,13 +28,13 @@ A full cheatsheet of ~130 N2 grammar points. N2 is the level demanded by graduat
 - [ ] 〜どころではない — 哪有心思~ // 〜どころではない — in no state to ~ / no time for ~
 - [ ] たとえ〜ても — 即使~也~ // たとえ〜ても — even if ~
 - [ ] 〜ないことはない — 不是不能~（勉强肯定） // 〜ないことはない — it's not that ~ not (reluctant yes)
+- [ ] 〜にもかかわらず — 尽管~却~ // 〜にもかかわらず — despite ~
 
 ## 原因・理由||Cause & Reason
 
 - [ ] 〜あまり — 由于过度~ // 〜あまり — so ~ that (too much)
 - [ ] 〜ばこそ — 正因为~才~ // 〜ばこそ — precisely because ~
 - [ ] 〜だけに — 正因为~/不愧是~ // 〜だけに — precisely because ~ / as you'd expect of ~
-- [ ] 〜だけあって — 不愧是~/正因为~ // 〜だけあって — as you'd expect of ~ / precisely because ~
 - [ ] 〜ものだから — 因为~（辩解） // 〜ものだから — because ~ (excuse)
 - [ ] 〜以上（は）— 既然~就应该~ // 〜以上（は） — now that ~, (should) ~
 - [ ] 〜からには — 既然~就~ // 〜からには — since ~, (must) ~
@@ -128,7 +128,6 @@ A full cheatsheet of ~130 N2 grammar points. N2 is the level demanded by graduat
 - [ ] 〜に加えて — 加上~/除了~还~ // 〜に加えて — in addition to ~ / besides ~
 - [ ] 〜上（は）— 在~方面/既然~ // 〜上（は） — in terms of ~ / now that ~
 - [ ] 〜上で — 在~之后/在~方面 // 〜上で — after ~ / in terms of ~
-- [ ] 〜末（に）— 经过~最终~ // 〜末（に） — after (much) ~, finally ~
 
 ## 不可抗・必然||Unavoidable & Inevitable
 
@@ -143,10 +142,8 @@ A full cheatsheet of ~130 N2 grammar points. N2 is the level demanded by graduat
 - [ ] 〜ものなら — 如果能~的话 // 〜ものなら — if (only) I could ~
 - [ ] 〜ようものなら — 要是胆敢~/万一~ // 〜ようものなら — if you dare ~ / if by any chance ~
 - [ ] 〜としたら/〜とすれば — 假如~的话 // 〜としたら/〜とすれば — supposing ~ / if it were the case that ~
-- [ ] 〜にもかかわらず — 尽管~却~ // 〜にもかかわらず — despite ~
 - [ ] 〜ことだ — 应该~/最好~（建议） // 〜ことだ — you should ~ / it's best to ~ (advice)
 - [ ] 〜に越したことはない — 最好~（没有比~更好的） // 〜に越したことはない — it's best to ~ (nothing better than ~)
-- [ ] 〜っけ — ~来着？（回忆确认） // 〜っけ — ~ again? (checking a memory)
 
 ## 关系・范围||Relation & Scope
 
@@ -196,3 +193,4 @@ A full cheatsheet of ~130 N2 grammar points. N2 is the level demanded by graduat
 - [ ] 〜ぶりに — 时隔~ // 〜ぶりに — for the first time in ~
 - [ ] 〜ごとに — 每~ // 〜ごとに — every ~
 - [ ] 〜につき — 因为~/每~ // 〜につき — due to ~ / per ~
+- [ ] 〜っけ — ~来着？（回忆确认） // 〜っけ — ~ again? (checking a memory)

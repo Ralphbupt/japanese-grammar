@@ -37,14 +37,12 @@ This lesson covers N2 grammar for expressing "contrast" and "correlated change."
 
 ### 接続||Conjugation
 :::zh
-- 名詞 + に反して / に反する + 名詞 / に反した + 名詞
-- 「の」を使った名詞化 + に反して：みんなの予想に反して
+- 名詞 + に反して / に反する + 名詞 / に反した + 名詞（如「みんなの予想に反して」）
 
 ※ 「に反して」用于连接后句，「に反する/に反した」用于修饰名词。
 :::
 :::en
-- Noun + に反して / に反する + Noun / に反した + Noun
-- Nominalized phrase with の + に反して: みんなの予想に反して
+- Noun + に反して / に反する + Noun / に反した + Noun (e.g. 「みんなの予想に反して」)
 
 ※ 「に反して」 connects to a following clause; 「に反する/に反した」 modifies a noun.
 :::
@@ -62,7 +60,7 @@ This lesson covers N2 grammar for expressing "contrast" and "correlated change."
 1. みんなの予想**に反して**、彼が優勝した。（与大家的预测相反，他获得了冠军。）
 2. 期待**に反して**、映画はあまり面白くなかった。（与期待相反，电影不太有趣。）
 3. 親の意見**に反して**、彼は留学を決めた。（违背父母的意见，他决定去留学。）
-4. 評判**に反して**、あの店の料理はおいしかった。（与口碑相反，那家店的菜很好吃。）
+4. 悪い評判**に反して**、あの店の料理はおいしかった。（与差评相反，那家店的菜很好吃。）
 5. 世論**に反する**政策は長続きしない。（违背民意的政策不会持久。）
 6. 規則**に反した**行為は処分の対象になる。（违反规则的行为会受到处分。）
 :::
@@ -70,7 +68,7 @@ This lesson covers N2 grammar for expressing "contrast" and "correlated change."
 1. みんなの予想**に反して**、彼が優勝した。(Contrary to everyone's prediction, he won the championship.)
 2. 期待**に反して**、映画はあまり面白くなかった。(Contrary to expectations, the movie wasn't very interesting.)
 3. 親の意見**に反して**、彼は留学を決めた。(Against his parents' wishes, he decided to study abroad.)
-4. 評判**に反して**、あの店の料理はおいしかった。(Contrary to its reputation, that restaurant's food was delicious.)
+4. 悪い評判**に反して**、あの店の料理はおいしかった。(Contrary to its bad reputation, that restaurant's food was delicious.)
 5. 世論**に反する**政策は長続きしない。(Policies that go against public opinion won't last long.)
 6. 規則**に反した**行為は処分の対象になる。(Actions that violate the rules are subject to disciplinary action.)
 :::

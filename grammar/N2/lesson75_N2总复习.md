@@ -405,7 +405,8 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
 - 例：如果空格前是名词，排除需要动词接续的选项
 
 **2. 注意正面vs负面**
-- 「がちだ」「かねない」「恐れがある」→ 只用于负面
+- 「かねない」「恐れがある」→ 只用于负面
+- 「がちだ」→ 多用于负面（也有「遠慮がち」「留守がち」这类中性用法）
 - 「だけのことはある」→ 只用于正面
 - 「どころではない」→ 状况太差/太忙
 
@@ -427,14 +428,13 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
 **6. 时间管理**
 - 文法部分约20-25分钟，不要在一题上花超过1分钟
 - 不确定的先标记，做完后回来检查
-- 读解部分的文法理解比文法选择题更重要（配分更高）
 
 **7. 易混淆考点TOP5**
 1. わけがない vs はずがない
 2. に過ぎない vs にほかならない
 3. ものなら vs ようものなら
 4. につれて vs にしたがって vs に伴って
-5. からといって vs だからといって
+5. 末に vs あげく
 :::
 :::en
 ### Grammar Section Strategy
@@ -444,7 +444,8 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
 - Example: If the blank follows a noun, eliminate options that require verb conjugation
 
 **2. Watch for positive vs negative**
-- 「がちだ」「かねない」「恐れがある」→ negative only
+- 「かねない」「恐れがある」→ negative only
+- 「がちだ」→ mostly negative (but neutral in 「遠慮がち」「留守がち」)
 - 「だけのことはある」→ positive only
 - 「どころではない」→ situation too bad/busy
 
@@ -466,14 +467,13 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
 **6. Time management**
 - Grammar section: ~20-25 minutes; don't spend more than 1 minute per question
 - Mark uncertain ones and come back after finishing
-- Grammar comprehension in reading is worth more points than the grammar selection section
 
 **7. Top 5 easily confused pairs**
 1. わけがない vs はずがない
 2. に過ぎない vs にほかならない
 3. ものなら vs ようものなら
 4. につれて vs にしたがって vs に伴って
-5. からといって vs だからといって
+5. 末に vs あげく
 :::
 
 ---

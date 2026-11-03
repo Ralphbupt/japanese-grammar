@@ -124,13 +124,17 @@ Expresses excess — "too …". It implies going beyond an appropriate degree, u
 :::zh
 - この料理は味が**なさすぎる**。（这道菜味道太淡了。→ ない→なさすぎる）
 - あの店は**よすぎる**くらいのサービスだ。（那家店的服务好得过分了。→ いい→よすぎる）
-- 食べ**なさすぎる**のも体に悪い。（吃得太少也对身体不好。→ 食べない→食べなさすぎる）
+- 自信が**なさすぎる**のもよくない。（太没自信也不好。→ ない→なさすぎる）
+
+> 「さ」只插在形容词「ない」「よい」后面。动词否定的规范形是「食べ**なすぎる**」（吃得太少），口语里也常听到「食べなさすぎ」。
 :::
 
 :::en
 - この料理は味が**なさすぎる**。(This dish has too little flavor. → ない → なさすぎる)
 - あの店は**よすぎる**くらいのサービスだ。(That shop's service is excessively good. → いい → よすぎる)
-- 食べ**なさすぎる**のも体に悪い。(Eating too little is also bad for your health. → 食べない → 食べなさすぎる)
+- 自信が**なさすぎる**のもよくない。(Having too little confidence isn't good either. → ない → なさすぎる)
+
+> The extra 「さ」 only goes after the adjectives 「ない」 and 「よい」. For a negative verb the standard form is 「食べ**なすぎる**」 (to eat too little), though 「食べなさすぎ」 is often heard in casual speech.
 :::
 
 ---
@@ -512,7 +516,7 @@ Verb masu-stem + 出す / 始める / 続ける
 | 意志 | **无意志/突发** | **有意志/计划** |
 | 例 | 泣き出す（突然哭起来） | 勉強し始める（开始学习） |
 | 例2 | 雨が降り出す（突然下起雨） | 料理を作り始める（开始做饭） |
-| 能否用于计划 | ❌ ×勉強し出す（不自然） | ✅ 勉強し始める |
+| 能否用于计划 | ❌ ×来月から勉強し出すつもり（不自然；「急に勉強し出した」这种突然开始的叙述没问题） | ✅ 来月から勉強し始めるつもり |
 | 能否用于突发 | ✅ 泣き出す | △ 泣き始める（也可以但没有突发感） |
 
 > **判断方法**：
@@ -529,7 +533,7 @@ Verb masu-stem + 出す / 始める / 続ける
 | Volition | **Involuntary / sudden** | **Voluntary / planned** |
 | Example | 泣き出す (suddenly burst into tears) | 勉強し始める (start studying) |
 | Example 2 | 雨が降り出す (suddenly starts raining) | 料理を作り始める (start cooking) |
-| Planned actions? | ❌ ×勉強し出す (unnatural) | ✅ 勉強し始める |
+| Planned actions? | ❌ ×来月から勉強し出すつもり (unnatural; describing a sudden start, 「急に勉強し出した」, is fine) | ✅ 来月から勉強し始めるつもり |
 | Sudden events? | ✅ 泣き出す | △ 泣き始める (OK but lacks the sudden feeling) |
 
 > **How to decide**:
@@ -571,7 +575,7 @@ Verb masu-stem + 出す / 始める / 続ける
 
 ---
 
-## 6. 〜さ（形容詞→名詞化：-ness）||6. 〜さ (Adjective → Noun: -ness)
+## 6. 〜さ（形容词→名词化：-ness）||6. 〜さ (Adjective → Noun: -ness)
 
 ### 接続||Conjugation
 
@@ -590,13 +594,13 @@ Verb masu-stem + 出す / 始める / 続ける
 :::zh
 把形容词变成名词，表示"……的程度"。变成名词后可以做主语、宾语，接助词が/を/は/の等。
 
-> **注意**：并非所有形容词都能加「さ」。有些な形容词（如きれい）加さ虽然不算错，但使用频率较低，听起来不太自然。
+> **注意**：并非所有形容词都常用「さ」形。有些词习惯用别的名词表示程度或性质，比如「安全」多说「安全性」，「安全さ」很少用。
 :::
 
 :::en
 Turns an adjective into a noun meaning "the degree of ~." As a noun, it can serve as subject or object, taking particles like が/を/は/の.
 
-> **Note**: Not all adjectives naturally take 「さ」. Some な-adjectives (e.g. きれい → きれいさ) are marginal — not strictly wrong but uncommon and can sound unnatural.
+> **Note**: Not every adjective commonly takes 「さ」. Some prefer a different noun for the degree or quality — 「安全」, for example, usually becomes 「安全性」; 「安全さ」 is rare.
 :::
 
 ### 例句||Example Sentences
@@ -604,7 +608,7 @@ Turns an adjective into a noun meaning "the degree of ~." As a noun, it can serv
 :::zh
 1. このビルの高**さ**は100メートルです。（这栋楼的高度是100米。）
 2. 日本語の難し**さ**を実感した。（真切感受到了日语的难度。）
-3. 便利**さ**と安全**さ**、どちらが大切？（便利性和安全性，哪个更重要？）
+3. 便利**さ**と安**さ**、どちらが大切？（方便和便宜，哪个更重要？）
 4. この川の深**さ**はどのくらいですか。（这条河的深度有多少？）
 5. 彼の優し**さ**に感動した。（被他的温柔感动了。）
 :::
@@ -612,7 +616,7 @@ Turns an adjective into a noun meaning "the degree of ~." As a noun, it can serv
 :::en
 1. このビルの高**さ**は100メートルです。(The height of this building is 100 meters.)
 2. 日本語の難し**さ**を実感した。(I truly felt the difficulty of Japanese.)
-3. 便利**さ**と安全**さ**、どちらが大切？(Convenience and safety — which is more important?)
+3. 便利**さ**と安**さ**、どちらが大切？(Convenience or low price — which matters more?)
 4. この川の深**さ**はどのくらいですか。(How deep is this river?)
 5. 彼の優し**さ**に感動した。(I was moved by his kindness.)
 :::

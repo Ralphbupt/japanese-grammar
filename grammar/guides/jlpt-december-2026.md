@@ -95,18 +95,20 @@ Use the [Anki decks](/anki/) for vocabulary and grammar in spare minutes, and th
 ## 语法复习：按级别||Grammar Review by Level
 
 :::zh
-- **N5**：[N5 语法清单](/N5_grammar_list/)・重点看 [は和が](/wa-vs-ga/)、[に和で](/ni-vs-de/)、[から和ので](/kara-vs-node/)
-- **N4**：[N4 语法清单](/N4_grammar_list/)・重点看 [と・ば・たら・なら](/to-ba-tara-nara/)、[あげる・くれる・もらう](/ageru-kureru-morau/)、[ている・てある・ておく](/teiru-vs-tearu/)、[ために和ように](/tame-ni-vs-you-ni/)、[ようだ・らしい・そうだ・みたい](/you-da-rashii-sou-da-mitai/)
-- **N3**：[N3 语法清单](/N3_grammar_list/)・重点看 [はず和わけ](/hazu-vs-wake/)、[あいだに和うちに](/aida-ni-vs-uchi-ni/)，以及 [Lesson 58 N3 总复习](/lesson58/)
-- **N2**：[N2 语法清单](/N2_grammar_list/)・[Lesson 75 N2 总复习](/lesson75/)
+- **N5**：[N5 语法清单](/N5_grammar_list/)・[N5 高频语法考点](/jlpt-n5-key-grammar/)・重点看 [は和が](/wa-vs-ga/)、[に和で](/ni-vs-de/)、[から和ので](/kara-vs-node/)
+- **N4**：[N4 语法清单](/N4_grammar_list/)・[N4 高频语法考点](/jlpt-n4-key-grammar/)・重点看 [と・ば・たら・なら](/to-ba-tara-nara/)、[あげる・くれる・もらう](/ageru-kureru-morau/)、[ている・てある・ておく](/teiru-vs-tearu/)、[ために和ように](/tame-ni-vs-you-ni/)、[ようだ・らしい・そうだ・みたい](/you-da-rashii-sou-da-mitai/)
+- **N3**：[N3 语法清单](/N3_grammar_list/)・[N3 高频语法考点](/jlpt-n3-key-grammar/)・重点看 [はず和わけ](/hazu-vs-wake/)、[あいだに和うちに](/aida-ni-vs-uchi-ni/)，以及 [Lesson 58 N3 总复习](/lesson58/)
+- **N2**：[N2 语法清单](/N2_grammar_list/)・[N2 高频语法考点](/jlpt-n2-key-grammar/)・[Lesson 75 N2 总复习](/lesson75/)
+- **N1**：[N1 语法清单](/N1_grammar_list/)・[N1 高频语法考点](/jlpt-n1-key-grammar/)・[Lesson 92 N1 总复习](/lesson92/)
 
 全部对比页见 [专题](/guides/)。
 :::
 :::en
-- **N5**: [N5 grammar list](/N5_grammar_list/) — focus on [は vs が](/wa-vs-ga/), [に vs で](/ni-vs-de/), [から vs ので](/kara-vs-node/)
-- **N4**: [N4 grammar list](/N4_grammar_list/) — focus on [と・ば・たら・なら](/to-ba-tara-nara/), [あげる・くれる・もらう](/ageru-kureru-morau/), [ている・てある・ておく](/teiru-vs-tearu/), [ために vs ように](/tame-ni-vs-you-ni/), [ようだ・らしい・そうだ・みたい](/you-da-rashii-sou-da-mitai/)
-- **N3**: [N3 grammar list](/N3_grammar_list/) — focus on [はず vs わけ](/hazu-vs-wake/), [あいだに vs うちに](/aida-ni-vs-uchi-ni/), and the [Lesson 58 N3 review](/lesson58/)
-- **N2**: [N2 grammar list](/N2_grammar_list/) — and the [Lesson 75 N2 review](/lesson75/)
+- **N5**: [N5 grammar list](/N5_grammar_list/), [N5 key grammar](/jlpt-n5-key-grammar/) — focus on [は vs が](/wa-vs-ga/), [に vs で](/ni-vs-de/), [から vs ので](/kara-vs-node/)
+- **N4**: [N4 grammar list](/N4_grammar_list/), [N4 key grammar](/jlpt-n4-key-grammar/) — focus on [と・ば・たら・なら](/to-ba-tara-nara/), [あげる・くれる・もらう](/ageru-kureru-morau/), [ている・てある・ておく](/teiru-vs-tearu/), [ために vs ように](/tame-ni-vs-you-ni/), [ようだ・らしい・そうだ・みたい](/you-da-rashii-sou-da-mitai/)
+- **N3**: [N3 grammar list](/N3_grammar_list/), [N3 key grammar](/jlpt-n3-key-grammar/) — focus on [はず vs わけ](/hazu-vs-wake/), [あいだに vs うちに](/aida-ni-vs-uchi-ni/), and the [Lesson 58 N3 review](/lesson58/)
+- **N2**: [N2 grammar list](/N2_grammar_list/), [N2 key grammar](/jlpt-n2-key-grammar/) — and the [Lesson 75 N2 review](/lesson75/)
+- **N1**: [N1 grammar list](/N1_grammar_list/), [N1 key grammar](/jlpt-n1-key-grammar/) — and the [Lesson 92 N1 review](/lesson92/)
 
 All comparison pages are on the [guides](/guides/) page.
 :::
@@ -143,7 +145,7 @@ Two rules: if a question gives you nothing after a minute, guess, mark it and mo
 :::zh
 - 准考证（受験票），按要求贴好照片
 - 带照片的身份证件（以准考证上的要求为准）
-- HB 铅笔或自动铅笔、橡皮（答题卡用铅笔涂）
+- HB 铅笔或自动铅笔、橡皮（答题卡用铅笔涂；海外考点按当地要求）
 - 普通手表（考场不一定有钟；手机、智能手表考试中不能用）
 - 提前到考场，入场截止后不能进考场
 - 考试开始前就把手机彻底关机——考试中响铃可能被判违规
@@ -152,7 +154,7 @@ Two rules: if a question gives you nothing after a minute, guess, mark it and mo
 :::en
 - Admission voucher (受験票), with a photo attached as instructed
 - Photo ID (follow what your voucher asks for)
-- HB pencils or mechanical pencils and an eraser (the answer sheet is pencil-marked)
+- HB pencils or mechanical pencils and an eraser (the answer sheet is pencil-marked; overseas, follow your test site's rules)
 - An ordinary wristwatch (rooms may have no clock; phones and smartwatches can't be used during the test)
 - Arrive early — once entry closes you can't get into the room
 - Switch your phone fully off before the test starts — a phone ringing during the test can count as misconduct
@@ -179,10 +181,10 @@ Local host institutions announce the exact dates.
 :::zh
 - [专题：易混语法对比](/guides/)
 - [JLPT 语法 Anki 卡组下载](/anki/)
-- [N5](/N5/)・[N4](/N4/)・[N3](/N3/)・[N2](/N2/) 级别总览
+- [N5](/N5/)・[N4](/N4/)・[N3](/N3/)・[N2](/N2/)・[N1](/N1/) 级别总览
 :::
 :::en
 - [Guides: confusable grammar comparisons](/guides/)
 - [JLPT grammar Anki decks](/anki/)
-- Level overviews: [N5](/N5/), [N4](/N4/), [N3](/N3/), [N2](/N2/)
+- Level overviews: [N5](/N5/), [N4](/N4/), [N3](/N3/), [N2](/N2/), [N1](/N1/)
 :::

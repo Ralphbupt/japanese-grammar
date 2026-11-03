@@ -125,11 +125,11 @@ Noun + に対して / に対する + Noun
 
 ### ① 手段/方式||① Means / Method
 :::zh
-- インターネット**によって**、情報を集めた。（通过网络收集了信息。）
+- 話し合い**によって**、問題を解決した。（通过商谈解决了问题。）
 - 努力**によって**、成功した。（通过努力成功了。）
 :::
 :::en
-- インターネット**によって**、情報を集めた。(Information was gathered via the internet.)
+- 話し合い**によって**、問題を解決した。(The problem was solved through discussion.)
 - 努力**によって**、成功した。(Success was achieved through effort.)
 :::
 
@@ -214,7 +214,7 @@ Noun + に対して / に対する + Noun
 | について | 关于…… | のこと |
 | によって | 通过/因为/取决于 | で/のせいで |
 | を通じて | 通过/贯穿 | で/ずっと |
-| をもとに | 以……为基础 | を使って |
+| をもとに | 以……为基础 | を参考に／をベースに |
 
 > 这些语法本质上是助词「で」「に」的书面升级版。口语中用简单助词就够了，但阅读/考试中大量出现。
 :::
@@ -226,7 +226,7 @@ Noun + に対して / に対する + Noun
 | について | About / regarding | のこと |
 | によって | Through / due to / depending on | で/のせいで |
 | を通じて | Through / throughout | で/ずっと |
-| をもとに | Based on | を使って |
+| をもとに | Based on | を参考に／をベースに |
 
 > These are essentially formal, written upgrades of 「で」 and 「に」. Simple particles suffice in speech, but these appear frequently in reading and exams.
 :::

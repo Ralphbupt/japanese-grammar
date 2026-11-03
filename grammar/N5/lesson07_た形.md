@@ -327,13 +327,13 @@ Verb た-form + り … verb た-form + り + する
 
 :::zh
 - 最后的「する」不能省略（虽然口语偶尔省）
-- たり至少要两个才自然，一个的话有点突兀
+- N5 阶段先练两个たり并列；只用一个（如「映画を見たりする」）也很常见，意思是"看看电影之类的"，暗示还有别的
 - する会根据时态变化：したりする（现在）、したりした（过去）
 :::
 
 :::en
 - The final 「する」 cannot be omitted (though casual speech sometimes does)
-- At least two たり items are needed to sound natural; one alone feels abrupt
+- At N5, practise with two たり items; a single one (e.g. 「映画を見たりする」) is also common and means "do things like watching movies", hinting there is more
 - する changes with tense: したりする (present), したりした (past)
 :::
 

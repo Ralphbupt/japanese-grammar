@@ -260,7 +260,7 @@ Restrictions:
 "有……的气息""像……似的""带点……的味道"。表示虽然还不完全是，但已经显出某种特征或迹象。季节词表示季节的气息渐渐出现（「春めいてきた」）。
 
 限制：
-- 能接的名词有限，基本以上面的固定搭配出现；不能随便造词：❌「学生めく」；△「大人めく」（很少说，"像大人"一般用「大人びる」「大人っぽい」）。
+- 能接的名词有限，基本以上面的固定搭配出现；不能随便造词：❌「学生めく」。「大人めく」用得不多，多以「大人めいた口調」这种修饰形式出现；"像大人"一般说「大人びる」「大人っぽい」。
 - 季节词多用「〜めいてきた」，表示正在变化。
 - 修饰名词时用「〜めいた」，不用「〜めく」：△「皮肉めく一言」→ ⭕「皮肉めいた一言」。
 :::
@@ -268,7 +268,7 @@ Restrictions:
 "Shows signs of…" or "has a touch of…". Not entirely that yet, but already showing its features or signs. With seasons, it means the feel of the season is gradually arriving (「春めいてきた」).
 
 Restrictions:
-- Only a limited set of nouns, basically the set phrases above; you can't coin new ones freely: ❌ 「学生めく」; △ 「大人めく」 (rare — for "grown-up-ish" the usual words are 「大人びる」 or 「大人っぽい」).
+- Only a limited set of nouns, basically the set phrases above; you can't coin new ones freely: ❌ 「学生めく」. 「大人めく」 is not common and mostly appears before a noun, as in 「大人めいた口調」; for "grown-up-ish" the usual words are 「大人びる」 or 「大人っぽい」.
 - With seasons, mostly 「〜めいてきた」, showing a change in progress.
 - Before a noun, use 「〜めいた」, not 「〜めく」: △ 「皮肉めく一言」 → ⭕ 「皮肉めいた一言」.
 :::

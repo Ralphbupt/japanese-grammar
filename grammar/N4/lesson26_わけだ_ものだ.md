@@ -25,9 +25,15 @@
 ### 接続||Conjugation
 :::zh
 简体 + わけだ
+- 动词／い形容词：简体 + わけだ（疲れた**わけだ**、暑い**わけだ**）
+- な形容词：〜な + わけだ（上手**な**わけだ）
+- 名词：〜な／〜の／〜である + わけ（今日は休み**な**わけだ、彼が犯人**の**わけがない）
 :::
 :::en
 Plain form + わけだ
+- Verbs / い-adjectives: plain form + わけだ (疲れた**わけだ**, 暑い**わけだ**)
+- な-adjectives: 〜な + わけだ (上手**な**わけだ)
+- Nouns: 〜な / 〜の / 〜である + わけ (今日は休み**な**わけだ, 彼が犯人**の**わけがない)
 :::
 
 ### 核心语感||Core Nuance
@@ -41,7 +47,7 @@ Plain form + わけだ
 ### 用法①：难怪/怪不得（恍然大悟）||Usage ①: No wonder (realization)
 
 :::zh
-1. A：彼は10年も日本に住んでいたんですよ。
+1. A：彼は10年も日本に住んでいたんですよ。（他在日本住了整整10年哦。）
    B：**道理で**日本語が上手な**わけだ**。（难怪日语那么好。）
 2. 昨日は一日中歩いた。疲れた**わけだ**。（昨天走了一整天。难怪累了。）
 3. エアコンが壊れている。暑い**わけだ**。（空调坏了。难怪热。）
@@ -49,7 +55,7 @@ Plain form + わけだ
 5. 昨日飲みすぎた。頭が痛い**わけだ**。（昨天喝多了。难怪头疼。）
 :::
 :::en
-1. A：彼は10年も日本に住んでいたんですよ。
+1. A：彼は10年も日本に住んでいたんですよ。(He lived in Japan for a whole ten years, you know.)
    B：**道理で**日本語が上手な**わけだ**。(No wonder his Japanese is so good.)
 2. 昨日は一日中歩いた。疲れた**わけだ**。(I walked all day yesterday. No wonder I'm tired.)
 3. エアコンが壊れている。暑い**わけだ**。(The air conditioner is broken. No wonder it's hot.)
@@ -380,30 +386,30 @@ With this lesson, the N4 formal nouns are complete. They are taught across sever
 
 ## 今日练习||Today's Practice
 
-### A. という/ということ 填空||A. Fill in: という / ということ
+### A. はず/わけ/もの/ところ 填空||A. Fill in: はず / わけ / もの / ところ
 
-1. 「東京タワー」（　　）映画を見ましたか。
-2. 彼が転職した（　　）は本当ですか。
-3. つまり、もう間に合わない（　　）ですか。
-4. 来月試験がある（　　）ニュースを聞いた。
-5. 「お盆」（　　）のは、日本の夏の行事です。
+1. 昨日から何も食べていない。お腹が空いた（　　）だ。
+2. 会議は3時からの（　　）だけど、まだ誰も来ていない。
+3. 子供の頃は、よくこの川で泳いだ（　　）だ。
+4. 今からちょうど出かける（　　）です。
+5. 年を取ると、時間が経つのが早く感じる（　　）だ。
 
 <details>
 <summary>答案 / Answers</summary>
 
 :::zh
-1. **という**（叫做"东京铁塔"的电影）
-2. **ということ**（他换工作了这件事）
-3. **ということ**（也就是说来不及了）
-4. **という**（下个月有考试这个新闻）
-5. **という**（所谓"盂兰盆节"）
+1. **わけ**（一直没吃东西 → 难怪饿了，顺着原因得出结论）
+2. **はず**（按理说会议3点开始，可是还没人来 → 推断与现实不符）
+3. **もの**（小时候常在这条河里游泳 → 回忆往事）
+4. **ところ**（正要出门 → 时间阶段）
+5. **もの**（上了年纪就觉得时间过得快 → 讲普遍的本质，不做推理）
 :::
 :::en
-1. **という** (The movie called "Tokyo Tower")
-2. **ということ** (The fact that he changed jobs)
-3. **ということ** (In other words, it means it's too late)
-4. **という** (The news that there's an exam next month)
-5. **という** (The thing called "Obon")
+1. **わけ** (Haven't eaten since yesterday → no wonder I'm hungry: a conclusion from the cause)
+2. **はず** (The meeting is supposed to start at 3, yet nobody's here → expectation vs. reality)
+3. **もの** (I used to swim in this river as a kid → nostalgic recollection)
+4. **ところ** (Just about to head out → stage in time)
+5. **もの** (As you get older, time feels like it goes faster → how things naturally are, no reasoning)
 :::
 
 </details>
@@ -489,14 +495,14 @@ With this lesson, the N4 formal nouns are complete. They are taught across sever
 ### D. 翻译||D. Translation
 
 :::zh
-1. 虽说会做饭，也就是煮个泡面的水平。
+1. 他那么忙，不可能有时间去旅行。
 2. 小时候经常和朋友在公园里玩。（怀旧语气）
 3. 难怪他日语说得好——原来在日本住了10年。
 4. 并不是不想去，只是没时间。
 5. 既然答应了，就不能不做。
 :::
 :::en
-1. Even though I say I can cook, it's just instant noodles level.
+1. He's so busy — there's no way he has time to travel.
 2. I used to play in the park with friends when I was a kid. (nostalgic)
 3. No wonder his Japanese is good — he lived in Japan for 10 years.
 4. It's not that I don't want to go, I just don't have the time.
@@ -507,14 +513,14 @@ With this lesson, the N4 formal nouns are complete. They are taught across sever
 <summary>答案 / Answers</summary>
 
 :::zh
-1. 料理ができるといっても、インスタントラーメンを作るぐらいだ。
+1. あんなに忙しいんだから、旅行に行く時間があるわけがない。
 2. 子供の頃、よく友達と公園で遊んだものだ。
 3. 道理で日本語が上手なわけだ。10年も日本に住んでいたんだから。
 4. 行きたくないわけではない。ただ時間がないだけだ。
 5. 約束したんだから、やらないわけにはいかない。
 :::
 :::en
-1. 料理ができるといっても、インスタントラーメンを作るぐらいだ。
+1. あんなに忙しいんだから、旅行に行く時間があるわけがない。
 2. 子供の頃、よく友達と公園で遊んだものだ。
 3. 道理で日本語が上手なわけだ。10年も日本に住んでいたんだから。
 4. 行きたくないわけではない。ただ時間がないだけだ。

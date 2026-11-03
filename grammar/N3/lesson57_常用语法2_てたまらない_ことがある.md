@@ -270,13 +270,13 @@ This lesson covers the second set of commonly used N3 grammar. 「ことか」 e
 - 動詞辞書形 + ことがある
 
 ※ 注意区别：「動詞た形 + ことがある」= 曾经做过（经验），是N5语法。  
-　这里的「辞書形 + ことがある」= 有时会做（现在的习惯），是N3语法。
+　这里的「辞書形 + ことがある」= 有时会做（现在的习惯），JLPT 一般列为N4语法（Lesson 15、22 已学过），这里复习巩固。
 :::
 :::en
 - Verb dictionary form + ことがある
 
 ※ Important distinction: 「Verb ta-form + ことがある」 = have done before (experience) — N5 grammar.  
-　Here, 「dictionary form + ことがある」 = sometimes do (present habit) — N3 grammar.
+　Here, 「dictionary form + ことがある」 = sometimes do (present habit) — usually listed as N4 grammar (already met in Lessons 15 and 22); reviewed here.
 :::
 
 ### 含义||Meaning

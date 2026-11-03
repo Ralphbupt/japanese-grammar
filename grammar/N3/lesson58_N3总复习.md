@@ -69,20 +69,20 @@ This is the comprehensive N3 grammar review lesson. From Lesson 35 to Lesson 57,
 |------|------|------|------|------|
 | おかげで | 名詞の/動詞た形＋おかげで | 多亏…… | 好结果 | 先生の**おかげで**合格した。 |
 | せいで | 名詞の/動詞た形＋せいで | 因为……（怪罪） | 坏结果 | 雨の**せいで**試合が中止になった。 |
-| ばかりに | 動詞た形＋ばかりに | 只因为…… | 坏结果（后悔） | 嘘をついた**ばかりに**、信用を失った。 |
-| ものだから | 動詞普通形＋ものだから | 因为……（辩解） | 辩解理由 | 電車が遅れた**ものだから**、遅刻した。 |
+| 以上（は） | 普通形/名詞である＋以上（は） | 既然……就…… | 后接决心、义务 | 約束した**以上**、守らなければならない。 |
+| からには | 普通形/名詞である＋からには | 既然……就…… | 后接决心、义务 | 参加する**からには**、全力を尽くす。 |
 
-**要点**：「おかげで」= 感谢，「せいで」= 怪罪。混淆使用会冒犯人。
+**要点**：「おかげで」= 感谢，「せいで」= 怪罪。混淆使用会冒犯人。「以上（は）」「からには」= 既然……，后面接决心、义务或劝告。
 :::
 :::en
 | Grammar | Conjugation | Meaning | Good/Bad | Example |
 |------|------|------|------|------|
 | おかげで | Noun の / Verb た＋おかげで | thanks to | Good result | 先生の**おかげで**合格した。 |
 | せいで | Noun の / Verb た＋せいで | because of (blame) | Bad result | 雨の**せいで**試合が中止になった。 |
-| ばかりに | Verb た＋ばかりに | just because | Bad result (regret) | 嘘をついた**ばかりに**、信用を失った。 |
-| ものだから | Verb plain＋ものだから | because (excuse) | Excuse | 電車が遅れた**ものだから**、遅刻した。 |
+| 以上（は） | plain / Noun である＋以上（は） | now that… (must) | Followed by resolve or duty | 約束した**以上**、守らなければならない。 |
+| からには | plain / Noun である＋からには | since… (will) | Followed by resolve or duty | 参加する**からには**、全力を尽くす。 |
 
-**Key point**: 「おかげで」= gratitude, 「せいで」= blame. Mixing them up can cause offense.
+**Key point**: 「おかげで」= gratitude, 「せいで」= blame. Mixing them up can cause offense. 「以上（は）」 and 「からには」 = "now that…", followed by a resolve, a duty or advice.
 :::
 
 ---
@@ -471,7 +471,7 @@ This is the comprehensive N3 grammar review lesson. From Lesson 35 to Lesson 57,
 :::zh
 **一、选择最合适的语法填空**
 
-1. 先生の（　　）、日本語が上手になった。 a. おかげで b. せいで c. ばかりに
+1. 先生の（　　）、日本語が上手になった。 a. おかげで b. せいで c. からには
 2. 約束を守らない（　　）、信用を失った。 a. おかげで b. せいで c. ものの
 3. 買った（　　）、一度も使っていない。 a. おかげで b. ものの c. どころか
 4. 彼は知っている（　　）、教えてくれない。 a. おかげで b. くせに c. どころか
@@ -511,7 +511,7 @@ A. てしょうがない　B. ないこともない　C. たらすぐ　D. に�
 :::en
 **Part 1: Choose the most appropriate grammar**
 
-1. 先生の（　　）、日本語が上手になった。 a. おかげで b. せいで c. ばかりに
+1. 先生の（　　）、日本語が上手になった。 a. おかげで b. せいで c. からには
 2. 約束を守らない（　　）、信用を失った。 a. おかげで b. せいで c. ものの
 3. 買った（　　）、一度も使っていない。 a. おかげで b. ものの c. どころか
 4. 彼は知っている（　　）、教えてくれない。 a. おかげで b. くせに c. どころか
@@ -569,7 +569,7 @@ A. てしょうがない　B. ないこともない　C. たらすぐ　D. に�
    - ざるを得ない / ずにはいられない（外部所迫 vs 内心冲动）
    - てたまらない / てならない（忍受不了 vs 自然涌现）
 
-5. **多造句**：每个语法至少造3个和自己生活相关的句子。比如程序员可以造："デバッグの最中にミーティングが始まった"（正在debug的时候会议开始了）。
+5. **多造句**：每个语法至少造3个和自己生活相关的句子。比如："料理の最中に電話が鳴った"（正在做饭的时候电话响了）。
 
 6. **阅读练习**：N3语法在NHK新闻、简单的小说、工作邮件中大量出现。多读真实材料，遇到学过的语法就标记，加深印象。
 
@@ -591,7 +591,7 @@ A. てしょうがない　B. ないこともない　C. たらすぐ　D. に�
    - ざるを得ない / ずにはいられない (external pressure vs internal impulse)
    - てたまらない / てならない (unbearable vs spontaneous)
 
-5. **Make your own sentences**: Create at least 3 sentences per grammar point related to your own life. For example, as a programmer: "デバッグの最中にミーティングが始まった" (A meeting started right in the middle of debugging).
+5. **Make your own sentences**: Create at least 3 sentences per grammar point related to your own life. For example: "料理の最中に電話が鳴った" (The phone rang right in the middle of cooking).
 
 6. **Read real materials**: N3 grammar appears extensively in NHK news, simple novels, and work emails. Read authentic materials and mark grammar you've studied to reinforce memory.
 

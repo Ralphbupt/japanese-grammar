@@ -161,7 +161,7 @@ Expresses a **deadline** — "by (a certain time), something must be done." The 
 1. 5時**までに**レポートを出してください。（请在5点之前交报告。→ 截止5点）
 2. 来週の月曜日**までに**届けます。（在下周一之前送达。）
 3. 授業が始まる**までに**、教室に入ってください。（在上课之前，请进教室。）
-4. 締め切り**までに**間に合わなかった。（没赶上截止日期。）
+4. レポートを締め切り**までに**出せなかった。（没能在截止日期前交报告。→ 注意：「間に合う」本身就含"赶在期限前"，要说「締め切り**に**間に合う」，不说「までに間に合う」）
 5. 旅行に行く**までに**、パスポートを取らなければならない。（在去旅行之前，必须拿到护照。）
 :::
 
@@ -169,7 +169,7 @@ Expresses a **deadline** — "by (a certain time), something must be done." The 
 1. 5時**までに**レポートを出してください。(Please submit the report by 5 o'clock. → deadline is 5)
 2. 来週の月曜日**までに**届けます。(I will deliver it by next Monday.)
 3. 授業が始まる**までに**、教室に入ってください。(Please enter the classroom before class starts.)
-4. 締め切り**までに**間に合わなかった。(I didn't make it by the deadline.)
+4. レポートを締め切り**までに**出せなかった。(I couldn't hand in the report by the deadline. → Note: 「間に合う」 already means "make it in time," so say 「締め切り**に**間に合う」, not 「までに間に合う」.)
 5. 旅行に行く**までに**、パスポートを取らなければならない。(I have to get a passport before going on the trip.)
 :::
 

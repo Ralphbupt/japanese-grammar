@@ -206,7 +206,7 @@ All four are "て-form + auxiliary verb", and they are the easiest group in N4 t
 |---------|---------|------|
 | 窓が開い**てある** | 窓が開け**てある** | てある只接他动词（開ける），不接自动词（開く） |
 | ビールが冷やし**ておいた** | ビールを冷やし**ておいた** | ておく用「を」，てある用「が」 |
-| 戸締まりを確認し**てある** | 戸締まりを確認し**ておいた** | 动作者视角用ておく |
+| △ 戸締まりを確認し**てある** | 戸締まりを確認し**ておいた** | 「を＋てある」本身成立，意思是"已经确认过了、现在没问题"（着眼结果）；但叙述自己出门前做的准备，动作者视角的ておく更自然 |
 | ドアが閉まっ**てある** | ドアが閉め**てある** | 閉まる是自动词，要用他动词「閉める」 |
 :::
 :::en
@@ -214,7 +214,7 @@ All four are "て-form + auxiliary verb", and they are the easiest group in N4 t
 |---------|---------|------|
 | 窓が開い**てある** | 窓が開け**てある** | てある only takes transitive verbs (開ける), not intransitive (開く) |
 | ビールが冷やし**ておいた** | ビールを冷やし**ておいた** | ておく uses を, てある uses が |
-| 戸締まりを確認し**てある** | 戸締まりを確認し**ておいた** | From the actor's perspective, use ておく |
+| △ 戸締まりを確認し**てある** | 戸締まりを確認し**ておいた** | 「を + てある」 itself is grammatical — "it has been checked, all set" (focus on the result); but when telling what you did to prepare before going out, the actor's-view ておく is more natural |
 | ドアが閉まっ**てある** | ドアが閉め**てある** | 閉まる is intransitive — use transitive 閉める |
 :::
 

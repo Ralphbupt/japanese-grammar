@@ -1,5 +1,13 @@
 # Lesson 02 – 核心助词详解（に・で・へ・と・から・まで）||Core Particles (に・で・へ・と・から・まで)
 
+:::zh
+助词决定了句子里每个词扮演什么角色：谁做、对谁做、在哪里、用什么。本课逐个讲 N5 最常用的助词——を・に・で・の・も・から/まで・へ・と，以及句末的よ・ね・な・わ，重点放在容易混的に和で上。
+:::
+
+:::en
+Particles tell you what role each word plays: who acts, on what, where, and with what. This lesson works through the core N5 particles — を, に, で, の, も, から/まで, へ and と, plus the sentence-final よ, ね, な and わ — with extra attention to the easily confused に and で.
+:::
+
 ## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
@@ -905,10 +913,10 @@ Similar to に, but emphasizes the direction of movement. に stresses **the arr
 ### 含義||Meaning
 
 :::zh
-句末语气助词传达说话人的态度：**よ**＝告知对方不知道的信息/提醒；**ね**＝寻求共鸣或确认；**よね**＝告知+确认；**な**＝自言自语/感叹（男性多用）；**わ**＝柔和的主张（女性多用，现代男性也用）。
+句末语气助词传达说话人的态度：**よ**＝告知对方不知道的信息/提醒；**ね**＝寻求共鸣或确认；**よね**＝告知+确认；**な**＝自言自语/感叹（男性多用）；**わ**＝柔和的主张（带女性用语色彩；关西方言里男性也说降调的わ，那是另一种用法）。
 :::
 :::en
-Sentence-final particles convey the speaker's attitude: **よ** = informing/alerting (you don't know this); **ね** = seeking agreement or confirmation; **よね** = informing + confirming; **な** = talking to oneself / exclaiming (more masculine); **わ** = soft assertion (more feminine, also used by modern men).
+Sentence-final particles convey the speaker's attitude: **よ** = informing/alerting (you don't know this); **ね** = seeking agreement or confirmation; **よね** = informing + confirming; **な** = talking to oneself / exclaiming (more masculine); **わ** = soft assertion (feminine in tone; men in the Kansai dialect also use a falling わ, which is a different usage).
 :::
 
 ### 例句||Example Sentences
@@ -976,7 +984,7 @@ Sentence-final particles convey the speaker's attitude: **よ** = informing/aler
 - 美味しい**な**。(This is really good. → talking to oneself)
 :::
 
-#### わ = 柔和的主张（女性多用，现代男性也用）||わ = Soft assertion (more feminine, but also used by modern men)
+#### わ = 柔和的主张（女性用语色彩，关西方言中男性也用）||わ = Soft assertion (feminine in tone; Kansai men use it too)
 
 :::zh
 - 私も行く**わ**。（我也去。→ 柔和）

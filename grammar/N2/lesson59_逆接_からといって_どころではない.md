@@ -109,11 +109,13 @@ This lesson covers N2-level concessive and contradictory expressions. 「から�
 - 動詞ます形（去ます）+ つつ（も）
 
 ※ 注意区分「つつある」（正在逐渐）和「つつ（も）」（虽然却）。
+※ 不带「も」的「つつ」还有"一边……一边……"（同时进行）的意思，相当于书面的「ながら」：「景色を楽しみつつ歩く」（一边欣赏景色一边走）。
 :::
 :::en
 - Verb masu-stem + つつ（も）
 
 ※ Distinguish 「つつある」 (gradually…) from 「つつ（も）」 (although… yet…).
+※ Plain 「つつ」 (without 「も」) can also mean "while…" (two actions at once), a written 「ながら」: 「景色を楽しみつつ歩く」 (walk while enjoying the scenery).
 :::
 
 ### 含义||Meaning

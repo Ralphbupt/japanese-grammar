@@ -1,5 +1,13 @@
 # Lesson 03 – 动词分类与ます形||Verb Groups & the ます-form
 
+:::zh
+日语动词按变形方式分成三类，所有变形都从这一步开始。本课先讲怎么判断一类、二类、三类（以及哪些词看起来像二类其实是一类），再讲最基本的礼貌形ます形。
+:::
+
+:::en
+Japanese verbs fall into three groups by how they conjugate, and every later form starts from that. This lesson shows how to tell Group 1, 2 and 3 apart (including the Group 1 verbs that look like Group 2), then builds the basic polite ます form.
+:::
+
 ## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
@@ -78,13 +86,13 @@ Before learning any verb conjugation, you must understand the three verb groups.
 结尾都是 u/ku/gu/su/tsu/nu/bu/mu/ru 这些う段的音。
 :::
 :::en
-Dictionary form = the base/plain form = what you look up in a dictionary. All verbs in dictionary form end with a う-row sound:
+Dictionary form = the base/plain form = what you look up in a dictionary. All verbs in dictionary form end with a う-column sound:
 
 ```
 書く（ku）、飲む（mu）、話す（su）、食べる（ru）、見る（ru）……
 ```
 
-Endings are all う-row sounds: u/ku/gu/su/tsu/nu/bu/mu/ru.
+Endings are all う-column sounds: u/ku/gu/su/tsu/nu/bu/mu/ru.
 :::
 
 ### 三类动词||Three Verb Groups
@@ -100,7 +108,7 @@ Endings are all う-row sounds: u/ku/gu/su/tsu/nu/bu/mu/ru.
 | Group | Also called | How to remember | Examples |
 |------|------|--------|------|
 | **Group 1** | 五段/u-verb | The largest group — most verbs | 書く、飲む、話す、買う、帰る |
-| **Group 2** | 一段/ru-verb | All end in る, with an え- or い-row sound before る | 食べる、見る、起きる、寝る |
+| **Group 2** | 一段/ru-verb | All end in る, with an え- or い-column sound before る | 食べる、見る、起きる、寝る |
 | **Group 3** | Irregular | Only two — just memorize them | する、来る（くる） |
 :::
 
@@ -140,15 +148,15 @@ Dictionary form
   │
   └─ Ends in る?
       │
-      ├─ Sound before る is an え-row kana (え/け/せ/て/ね/べ/め/れ)?
+      ├─ Sound before る is an え-column kana (え/け/せ/て/ね/べ/め/れ)?
       │   → Likely Group 2: 食べる、寝る、出る、教える
       │   → But Group 1 exceptions exist: 帰る、減る、滑る
       │
-      ├─ Sound before る is an い-row kana (い/き/し/ち/に/び/み/り)?
+      ├─ Sound before る is an い-column kana (い/き/し/ち/に/び/み/り)?
       │   → May be Group 2: 見る、起きる、借りる、降りる
       │   → But may be Group 1 (exceptions!): 知る、入る、切る、走る
       │
-      └─ Sound before る is an あ/う/お-row kana?
+      └─ Sound before る is an あ/う/お-column kana?
           → Definitely Group 1: 作る（つくる）, 乗る（のる）, 分かる（わかる）, 終わる（おわる）
 ```
 :::
@@ -174,14 +182,14 @@ These must be memorized — they look like Group 2 but are actually Group 1:
 
 | Verb | Reading | Meaning | Why it's tricky |
 |------|------|------|--------------|
-| 知る | しる | to know | し is い-row, but it's Group 1 |
-| 入る | はいる | to enter | い is い-row, but it's Group 1 |
-| 走る | はしる | to run | し is い-row, but it's Group 1 |
-| 切る | きる | to cut | き is い-row, but it's Group 1 |
-| 要る | いる | to need | い is い-row, but it's Group 1 |
-| 帰る | かえる | to return | え is え-row, but it's Group 1 |
-| 減る | へる | to decrease | へ is え-row, but it's Group 1 |
-| 滑る | すべる | to slide | べ is え-row, but it's Group 1 |
+| 知る | しる | to know | し is い-column, but it's Group 1 |
+| 入る | はいる | to enter | い is い-column, but it's Group 1 |
+| 走る | はしる | to run | し is い-column, but it's Group 1 |
+| 切る | きる | to cut | き is い-column, but it's Group 1 |
+| 要る | いる | to need | い is い-column, but it's Group 1 |
+| 帰る | かえる | to return | え is え-column, but it's Group 1 |
+| 減る | へる | to decrease | へ is え-column, but it's Group 1 |
+| 滑る | すべる | to slide | べ is え-column, but it's Group 1 |
 :::
 
 :::zh
@@ -189,7 +197,7 @@ These must be memorized — they look like Group 2 but are actually Group 1:
 >
 > 很多教材说"变成ます形看看：出现「り」就是一类，直接去る就是二类"。**这个方法是循环论证** —— 你必须先知道它是一类动词，才知道该变成「知ります」而不是「知ます」。已经知道答案了，测试就没意义了。
 >
-> 而且反过来也推不出：光给你一个 **借ります**，它既可能来自二类的 **借りる**，也可能来自一类的 **借る**。两者的ます形完全一样，无法区分。
+> 而且反过来也推不出：光听到一个 **おります**，它既可能来自二类的 **降りる（おりる，下车）**，也可能来自一类的 **折る（おる，折断）**。两者的ます形读音完全一样，光看形态无法区分。
 >
 > **真相是**：一类还是二类，是这个词本身的属性，**必须和单词一起记**，就像记名词的性别一样。辞书形的样子只能给你概率，给不了证明。
 
@@ -210,7 +218,7 @@ These must be memorized — they look like Group 2 but are actually Group 1:
 >
 > Many textbooks say: "make the ます form and look — if a り shows up it's Group 1, if る is simply dropped it's Group 2." **This is circular reasoning.** You have to already know the verb is Group 1 in order to produce 知ります rather than 知ます. If you already know the answer, the test tells you nothing.
 >
-> It doesn't work in reverse either. Given only **借ります**, it could come from Group 2 **借りる** or from Group 1 **借る** — both produce the identical ます form.
+> It doesn't work in reverse either. Hear only **おります** and it could come from Group 2 **降りる (おりる, to get off)** or from Group 1 **折る (おる, to break)** — both produce the same-sounding ます form.
 >
 > **The truth**: group membership is a property of the word itself and **must be memorized along with the word**, the way you memorize gender with a noun. The shape of the dictionary form gives you odds, not proof.
 
@@ -219,10 +227,10 @@ These must be memorized — they look like Group 2 but are actually Group 1:
 | What you see | Decidable? | Conclusion |
 |---|---|---|
 | Dictionary form doesn't end in る (書く, 飲む, 話す) | ✅ Yes | Definitely Group 1 |
-| Dictionary form: あ/う/お-row kana before る (作る, 乗る) | ✅ Yes | Definitely Group 1 |
-| Dictionary form: い/え-row kana before る (見る, 食べる, 知る, 帰る) | ❌ **No** | Probably Group 2, but there's a set of Group 1 exceptions — see the table above |
-| ます stem ends in an **え-row** kana (食**べ**ます, 寝ます, 教**え**ます) | ✅ Yes | Definitely Group 2 (a Group 1 stem can never land on the え row) |
-| ます stem ends in an **い-row** kana (借**り**ます, 見ます, 聞**き**ます) | ❌ **No** | Could be either — you must check the dictionary form |
+| Dictionary form: あ/う/お-column kana before る (作る, 乗る) | ✅ Yes | Definitely Group 1 |
+| Dictionary form: い/え-column kana before る (見る, 食べる, 知る, 帰る) | ❌ **No** | Probably Group 2, but there's a set of Group 1 exceptions — see the table above |
+| ます stem ends in an **え-column** kana (食**べ**ます, 寝ます, 教**え**ます) | ✅ Yes | Definitely Group 2 (a Group 1 stem can never land on the え column) |
+| ます stem ends in an **い-column** kana (借**り**ます, 見ます, 聞**き**ます) | ❌ **No** | Could be either — you must check the dictionary form |
 
 > **Practical advice**: learn the dictionary form and the ます form together as a pair (知る／知ります, 見る／見ます) rather than hoping to derive one from the other. The 8 "trap" verbs in the table above cover almost every N5 pitfall — memorize those 8 first.
 :::
@@ -244,11 +252,11 @@ These must be memorized — they look like Group 2 but are actually Group 1:
 | Verb | Ends in る? | Sound before る | Classification | ます form check |
 |------|----------|--------|------|-----------|
 | 飲む | × (ends in む) | — | **Group 1** | 飲みます |
-| 食べる | ✅ | べ (え-row) | **Group 2** | 食べます |
-| 帰る | ✅ | え (え-row) | Looks like Group 2, but **Group 1!** | 帰**り**ます |
-| 見る | ✅ | み (い-row) | **Group 2** | 見ます |
-| 走る | ✅ | し (い-row) | Looks like Group 2, but **Group 1!** | 走**り**ます |
-| 起きる | ✅ | き (い-row) | **Group 2** | 起きます |
+| 食べる | ✅ | べ (え-column) | **Group 2** | 食べます |
+| 帰る | ✅ | え (え-column) | Looks like Group 2, but **Group 1!** | 帰**り**ます |
+| 見る | ✅ | み (い-column) | **Group 2** | 見ます |
+| 走る | ✅ | し (い-column) | Looks like Group 2, but **Group 1!** | 走**り**ます |
+| 起きる | ✅ | き (い-column) | **Group 2** | 起きます |
 | 買う | × (ends in う) | — | **Group 1** | 買います |
 :::
 
@@ -277,12 +285,12 @@ The polite form of verbs, expressing present habits or future actions. This is t
 :::en
 | Group | Rule | Dictionary → ます form |
 |------|------|----------------|
-| Group 1 | Change final kana from う-row → い-row, then add ます | 書**く**→書**き**ます |
+| Group 1 | Change final kana from う-column → い-column, then add ます | 書**く**→書**き**ます |
 | Group 2 | Drop る, add ます directly | 食べ**る**→食べ**ます** |
 | Group 3 | Memorize | する→します、来る→来ます（きます） |
 :::
 
-### 一类动词：到底什么是"う段→い段"？||Group 1: What does "う-row → い-row" mean?
+### 一类动词：到底什么是"う段→い段"？||Group 1: What does "う-column → い-column" mean?
 
 :::zh
 先回忆五十音图：
@@ -325,7 +333,7 @@ The polite form of verbs, expressing present habits or future actions. This is t
 First, recall the hiragana chart:
 
 ```
-     あ-row  い-row  う-row  え-row  お-row
+     あ-col   い-col   う-col   え-col   お-col
 か:   か      き      く      け      こ
 さ:   さ      し      す      せ      そ
 た:   た      ち      つ      て      と
@@ -336,11 +344,11 @@ First, recall the hiragana chart:
 わ:   わ                            を
 ```
 
-The final kana of every Group 1 verb is always in the **う-row** (く、ぐ、す、つ、ぬ、ぶ、む、る、う).
+The final kana of every Group 1 verb is always in the **う-column** (く、ぐ、す、つ、ぬ、ぶ、む、る、う).
 
-To make the ます form, change that kana to the **い-row kana in the same column**, then add ます:
+To make the ます form, change that kana to the **い-column kana in the same row**, then add ます:
 
-| Ending (う-row) | → い-row | + ます | Full example |
+| Ending (う-column) | → い-column | + ます | Full example |
 |-----------------|-------|-------|---------|
 | **く** | → **き** | +ます | 書**く** → 書**き**ます |
 | **ぐ** | → **ぎ** | +ます | 泳**ぐ** → 泳**ぎ**ます |
@@ -354,8 +362,8 @@ To make the ます form, change that kana to the **い-row kana in the same colu
 
 > **Step-by-step example**: 飲**む** → 飲**み**ます
 > 1. The final kana of 飲む is 「む」
-> 2. む is in the ま column, う-row
-> 3. The い-row kana in the same column (ま) is 「み」
+> 2. む is in the ま row, う column
+> 3. The い-column kana in the same row (ま) is 「み」
 > 4. So む→み, add ます → 飲みます
 :::
 

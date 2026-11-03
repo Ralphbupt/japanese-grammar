@@ -80,13 +80,13 @@
 
 :::zh
 - 动词辞书形 + ようになる
-- 动词ない形 + ようになる（变得不再……）
+- 动词ない形 + ようになる（变得不再……；日常更常说「〜なくなる」：飲まなくなった）
 - 可能形 + ようになる（变得能够……）
 :::
 
 :::en
 - Verb dictionary form + ようになる
-- Verb ない-form + ようになる (come to no longer...)
+- Verb ない-form + ようになる (come to no longer...; in everyday speech 「〜なくなる」 is more common: 飲まなくなった)
 - Potential form + ようになる (come to be able to...)
 :::
 

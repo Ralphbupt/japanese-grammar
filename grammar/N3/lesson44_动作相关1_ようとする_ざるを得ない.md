@@ -1,11 +1,11 @@
 # Lesson 44 – 动作相关①  — ようとする/ようがない/ざるを得ない/かねる/かねない||Action-Related ① — ようとする/ようがない/ざるを得ない/かねる/かねない
 
 :::zh
-这组语法围绕"做某动作的可能性与意志"展开：想做但做不到、不得不做、难以做到、可能会发生（坏事）。N3考试高频考点，阅读中也常见。
+这组语法围绕"做某动作的可能性与意志"展开：想做但做不到、不得不做、难以做到、可能会发生（坏事）。阅读中很常见；其中「ざるを得ない」「かねる」「かねない」在多数资料里列为 N2 语法，N3 阶段先学会认读，N2 考试会重点考。
 :::
 
 :::en
-This group covers possibility and volition around actions: trying but failing, having no choice, finding it difficult to do, and the chance of something bad happening. High-frequency N3 items that appear often in reading passages.
+This group covers possibility and volition around actions: trying but failing, having no choice, finding it difficult to do, and the chance of something bad happening. They appear often in reading passages; 「ざるを得ない」, 「かねる」 and 「かねない」 are listed as N2 grammar in most references, so at N3 aim to recognize them — the N2 exam tests them heavily.
 :::
 
 ## 本课单词表||Vocabulary

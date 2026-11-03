@@ -322,14 +322,14 @@ This lesson covers grammar expressing "tendencies" and "states of change." 「�
 1. 物価は上がる**一方だ**。（物价一直在涨。）
 2. 日本の少子化は進む**一方だ**。（日本的少子化一直在加剧。）
 3. 彼の成績は下がる**一方だ**。（他的成绩一直在下降。）
-4. 仕事が増える**一方**で、給料は変わらない。（工作一直在增加，工资却不变。）
+4. 使わないと、日本語は忘れる**一方だ**。（不用的话，日语只会越忘越多。）
 5. 地方の人口は減る**一方だ**。（地方的人口一直在减少。）
 :::
 :::en
 1. 物価は上がる**一方だ**。(Prices just keep going up.)
 2. 日本の少子化は進む**一方だ**。(Japan's declining birthrate just keeps worsening.)
 3. 彼の成績は下がる**一方だ**。(His grades keep dropping.)
-4. 仕事が増える**一方**で、給料は変わらない。(Work keeps piling up, but the salary stays the same.)
+4. 使わないと、日本語は忘れる**一方だ**。(If you don't use it, your Japanese just keeps slipping away.)
 5. 地方の人口は減る**一方だ**。(The regional population just keeps declining.)
 :::
 
@@ -339,9 +339,9 @@ This lesson covers grammar expressing "tendencies" and "states of change." 「�
 |------|------|------|
 | 一方だ | 一直在……（单向） | 强调趋势不可逆，多负面 |
 | つつある | 正在逐渐…… | 书面，客观描述变化进行中 |
-| ばかりだ | 一直在……（单向） | 和「一方だ」几乎同义，略更口语 |
+| ばかりだ | 一直在……（单向） | 和「一方だ」几乎同义，基本只用于坏的变化 |
 
-> 「増える一方だ」和「増えるばかりだ」意思相同，但「一方だ」稍正式。  
+> 「増える一方だ」和「増えるばかりだ」意思相同；「ばかりだ」几乎只说坏的趋势，「一方だ」也能用于中性或好的变化（人気は高まる一方だ）。  
 > 注意：「一方（で）」还有"另一方面"的意思，别混淆。
 :::
 :::en
@@ -349,9 +349,9 @@ This lesson covers grammar expressing "tendencies" and "states of change." 「�
 |------|------|------|
 | 一方だ | keeps on… (one direction) | Irreversible trend; often negative |
 | つつある | gradually… | Written; objectively describes ongoing change |
-| ばかりだ | keeps on… (one direction) | Nearly synonymous with 一方だ; slightly more colloquial |
+| ばかりだ | keeps on… (one direction) | Nearly synonymous with 一方だ; used almost only for changes for the worse |
 
-> 「増える一方だ」 and 「増えるばかりだ」 mean the same, but 「一方だ」 is slightly more formal.  
+> 「増える一方だ」 and 「増えるばかりだ」 mean the same; 「ばかりだ」 is almost always about a bad trend, while 「一方だ」 can also describe neutral or good changes (人気は高まる一方だ).  
 > Note: 「一方（で）」 also means "on the other hand" — don't confuse the two usages.
 :::
 
@@ -441,6 +441,14 @@ This lesson covers grammar expressing "tendencies" and "states of change." 「�
 8. 这个传统正在逐渐消失。（つつある）
 9. 物价一直在涨。（一方だ）
 10. 桌子上有吃了一半的饭。（かけ）
+
+**答案**
+1\. 気味　2. 一方だ　3. かけ　4. っぽい　5. がち　6. つつある
+
+7. 彼はちょっと子供っぽい。
+8. この伝統は消えつつある。
+9. 物価は上がる一方だ。
+10. テーブルの上に食べかけのご飯がある。
 :::
 :::en
 **Part 1: Fill in the appropriate grammar (がち / っぽい / 気味 / つつある / 一方だ / かけ)**
@@ -458,6 +466,14 @@ This lesson covers grammar expressing "tendencies" and "states of change." 「�
 8. This tradition is gradually disappearing. (Use つつある)
 9. Prices just keep going up. (Use 一方だ)
 10. There's a half-eaten meal on the table. (Use かけ)
+
+**Answers**
+1\. 気味　2. 一方だ　3. かけ　4. っぽい　5. がち　6. つつある
+
+7. 彼はちょっと子供っぽい。
+8. この伝統は消えつつある。
+9. 物価は上がる一方だ。
+10. テーブルの上に食べかけのご飯がある。
 :::
 
 ## 复习计划||Review Schedule

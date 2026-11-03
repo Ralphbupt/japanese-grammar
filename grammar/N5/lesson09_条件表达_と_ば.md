@@ -100,7 +100,7 @@ This is **one of the biggest challenges** in N5-N4. All four conditional forms c
 
 ### 用法||Usage
 
-#### ① 自然規律||① Natural laws
+#### ① 自然规律||① Natural laws
 
 :::zh
 1. 春に**なると**、桜が咲く。（一到春天，樱花就开。）
@@ -118,14 +118,13 @@ This is **one of the biggest challenges** in N5-N4. All four conditional forms c
 5. 水は100度に**なると**、沸く。（When water reaches 100°C, it boils.）
 :::
 
-#### ② 習慣的動作||② Habitual actions
+#### ② 习惯性动作||② Habitual actions
 
 :::zh
 1. 家に帰る**と**、すぐシャワーを浴びる。（一回家就马上洗澡。）
 2. 彼は酒を飲む**と**、歌い始める。（他一喝酒就开始唱歌。）
 3. 朝起きる**と**、まずコーヒーを飲む。（早上一起来就先喝咖啡。）
 4. 母は疲れる**と**、甘いものを食べる。（妈妈一累就吃甜食。）
-5. この道をまっすぐ行く**と**、公園に出る。（沿这条路直走就到公园。）
 :::
 
 :::en
@@ -133,7 +132,6 @@ This is **one of the biggest challenges** in N5-N4. All four conditional forms c
 2. 彼は酒を飲む**と**、歌い始める。（Once he drinks, he starts singing.）
 3. 朝起きる**と**、まずコーヒーを飲む。（When I wake up in the morning, I first have coffee.）
 4. 母は疲れる**と**、甘いものを食べる。（When my mother gets tired, she eats something sweet.）
-5. この道をまっすぐ行く**と**、公園に出る。（If you go straight down this road, you reach the park.）
 :::
 
 #### ③ 操作/指示||③ Operations / instructions
@@ -144,6 +142,7 @@ This is **one of the biggest challenges** in N5-N4. All four conditional forms c
 3. ここをクリックする**と**、ページが変わります。（点击这里，页面就会变。）
 4. カードを入れる**と**、お金が出ます。（插入卡，钱就出来。）
 5. このスイッチを押す**と**、電気がつきます。（按这个开关，灯就亮。）
+6. この道をまっすぐ行く**と**、公園に出る。（沿这条路直走就到公园。）
 :::
 
 :::en
@@ -152,9 +151,10 @@ This is **one of the biggest challenges** in N5-N4. All four conditional forms c
 3. ここをクリックする**と**、ページが変わります。（If you click here, the page changes.）
 4. カードを入れる**と**、お金が出ます。（If you insert the card, the money comes out.）
 5. このスイッチを押す**と**、電気がつきます。（If you flip this switch, the light turns on.）
+6. この道をまっすぐ行く**と**、公園に出る。（If you go straight down this road, you reach the park.）
 :::
 
-#### ④ 発見（過去時）||④ Discovery (past tense)
+#### ④ 发现（过去时）||④ Discovery (past tense)
 
 :::zh
 1. 窓を開ける**と**、富士山が見えた。（一开窗，看到了富士山。）
@@ -215,7 +215,7 @@ This is **one of the biggest challenges** in N5-N4. All four conditional forms c
 :::en
 | Word type | Rule | Example |
 |------|------|------|
-| Group 1 verb | う-row → え-row + ば | 行く→行**けば**, 飲む→飲**めば** |
+| Group 1 verb | う-column → え-column + ば | 行く→行**けば**, 飲む→飲**めば** |
 | Group 2 verb | る → **れば** | 食べる→食べ**れば**, 見る→見**れば** |
 | する | す**れば** | すれば |
 | 来る | 来（く）**れば** | 来れば（くれば） |
@@ -224,7 +224,7 @@ This is **one of the biggest challenges** in N5-N4. All four conditional forms c
 | Noun | 〜**であれば** / 〜**なら** | 学生であれば |
 :::
 
-### 一类动词假定形：う段→え段||Group 1 verb conditional: う-row → え-row
+### 一类动词假定形：う段→え段||Group 1 verb conditional: う-column → え-column
 
 | 辞书形 // Dictionary form | 假定形 // Conditional form |
 |--------|--------|
@@ -332,7 +332,7 @@ Verb た-form + ら (straightforward!)
 - Noun: 雨だった → 雨だっ**たら**
 :::
 
-### 核心語感||Core nuance
+### 核心语感||Core nuance
 
 :::zh
 **"A完成之后，B"** 或 **"万一A的话，B"** — 最通用的条件表达。
@@ -382,7 +382,7 @@ Verb た-form + ら (straightforward!)
 6. 道に迷っ**たら**、この番号に電話してください。（If you get lost, please call this number.）
 :::
 
-#### ③ 意外発見（過去時）||③ Unexpected discovery (past tense)
+#### ③ 意外发现・过去的契机→结果（过去时）||③ Unexpected discovery / past trigger → result (past tense)
 
 :::zh
 1. 家に帰っ**たら**、誰もいなかった。（回到家发现谁都不在。）

@@ -409,7 +409,7 @@ Noticing something unusual and wanting to understand the reason.
 
 ## 5. 〜ので / 〜から（原因）||5. 〜ので / 〜から (Cause and Reason)
 
-### 〜から（主観理由）||〜から (Subjective Reason)
+### 〜から（主观理由）||〜から (Subjective Reason)
 
 :::zh
 **接续：** 简体/敬体 + から

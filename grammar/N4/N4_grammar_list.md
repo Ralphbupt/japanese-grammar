@@ -1,19 +1,19 @@
 # N4 文法チェックリスト||N4 Grammar Checklist
 
 :::zh
-N4 全部约 74 个语法点的清单（不含 N5 重复内容）。N4 是从"能说基本句子"到"能讲清楚自己想法"的转折点——这份清单帮你定位每个语法学到哪一课、复习到哪一步。
+N4 全部约 79 个语法点的清单（不含 N5 重复内容）。N4 是从"能说基本句子"到"能讲清楚自己想法"的转折点——这份清单帮你定位每个语法学到哪一课、复习到哪一步。
 :::
 
 :::en
-A full cheatsheet of ~74 N4 grammar points (excluding overlap with N5). N4 is the pivot from "basic sentences" to "expressing your own thoughts" — use this list to locate each point and track your review progress.
+A full cheatsheet of ~79 N4 grammar points (excluding overlap with N5). N4 is the pivot from "basic sentences" to "expressing your own thoughts" — use this list to locate each point and track your review progress.
 :::
 
 :::zh
-> JLPT N4 核心语法约 74 条（不含 N5 已讲内容）。在 N5 基础上扩展使役、被动、授受等复杂表达。
+> JLPT N4 核心语法约 79 条（不含 N5 已讲内容）。在 N5 基础上扩展使役、被动、授受等复杂表达。
 :::
 
 :::en
-> JLPT N4 has about 74 core grammar points (not counting what N5 already covers). It builds on N5 with more complex expressions such as the causative, the passive, and giving and receiving.
+> JLPT N4 has about 79 core grammar points (not counting what N5 already covers). It builds on N5 with more complex expressions such as the causative, the passive, and giving and receiving.
 :::
 
 ## 条件表达（N5 学过的 ば/たら/なら 的延伸）||Conditionals (building on the ば/たら/なら learned in N5)
@@ -32,8 +32,8 @@ A full cheatsheet of ~74 N4 grammar points (excluding overlap with N5). N4 is th
 ## 使役形||Causative Form
 
 - [ ] 使役形変形 — せる/させる（三类动词规则） // 使役形変形 — forming the causative: せる/させる (rules for the three verb groups)
-- [ ] 強制の使役 — 强制做（〜を〜させる） // 強制の使役 — make someone do (〜を〜させる)
-- [ ] 許可の使役 — 允许做（〜に〜させる） // 許可の使役 — let someone do (〜に〜させる)
+- [ ] 強制の使役 — 强制做（他动词：人に〜を〜させる；自动词：人を〜させる） // 強制の使役 — make someone do (transitive: 人に〜を〜させる; intransitive: 人を〜させる)
+- [ ] 許可の使役 — 允许做（好きな本を選ばせる、自由に遊ばせる） // 許可の使役 — let someone do (好きな本を選ばせる, 自由に遊ばせる)
 - [ ] 使役受身形 — 被迫做（〜させられる） // 使役受身形 — causative-passive: be made to do (〜させられる)
 
 ## 授受表现||Giving and Receiving
@@ -81,6 +81,7 @@ A full cheatsheet of ~74 N4 grammar points (excluding overlap with N5). N4 is th
 - [ ] 〜てある — 已做好的状态（他动词） // 〜てある — has been done, resulting state (transitive verbs)
 - [ ] 〜ていく — 逐渐变化（离说话人方向） // 〜ていく — gradual change (moving away from the speaker)
 - [ ] 〜てくる — 逐渐变化（向说话人方向） // 〜てくる — gradual change (moving toward the speaker)
+- [ ] 〜てみる — 试着做~ // 〜てみる — try ~ing (and see)
 
 ## という 系列||The という Family
 
@@ -127,6 +128,7 @@ A full cheatsheet of ~74 N4 grammar points (excluding overlap with N5). N4 is th
 - [ ] 〜かどうか — 是否~/不知道是不是~ // 〜かどうか — whether or not ~
 - [ ] 〜のように/〜のような — 像~一样 // 〜のように/〜のような — like ~ / such as ~
 - [ ] 〜なさい — 做~！（命令，比て形强） // 〜なさい — do ~! (command, stronger than the て-form)
+- [ ] 命令形 / 禁止形 — 行け！/ 行くな！（粗鲁，多见于标语、体育、男性口语） // 命令形 / 禁止形 — imperative / prohibitive: 行け！/ 行くな！ (blunt; signs, sports, rough male speech)
 
 ## 时间补充||More Time Expressions
 
@@ -136,7 +138,10 @@ A full cheatsheet of ~74 N4 grammar points (excluding overlap with N5). N4 is th
 
 ## 其他||Other
 
+- [ ] 〜すぎる — 太~/过度~（なさすぎる、よすぎる） // 〜すぎる — too ~ / overly ~ (なさすぎる, よすぎる)
 - [ ] 〜やすい/〜にくい — 容易~/难以~ // 〜やすい/〜にくい — easy to ~ / hard to ~
+- [ ] 〜ことはない — 没必要~ // 〜ことはない — there's no need to ~
+- [ ] 〜さ — 形容词名词化（高さ、便利さ） // 〜さ — adjective → noun, "-ness" (高さ, 便利さ)
 - [ ] 〜がる — 表现出~（第三人称感情） // 〜がる — show signs of ~ (third-person feelings)
 - [ ] 〜てほしい — 希望（别人）做~ // 〜てほしい — want (someone) to ~
 - [ ] 〜てよかった — 做了~真好（庆幸） // 〜てよかった — glad I ~ (relief)

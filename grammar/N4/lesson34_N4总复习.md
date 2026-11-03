@@ -1,11 +1,11 @@
 # Lesson 34 – N4语法总复习||N4 Grammar Comprehensive Review
 
 :::zh
-N4 阶段最后一课，把本阶段 Lesson 18–33 讲过的核心语法——**使役、受身、授受、ように系列、ことにする系列、てしまう、わけだ / ものだ**——一次性串起来。学完就有资格去刷 N4 真题了。
+N4 阶段最后一课，把本阶段 Lesson 18–33 讲过的核心语法——**使役、受身、授受、ように系列、ことにする系列、てしまう、わけだ / ものだ、敬语、ても / てほしい / すぎる / と思う / までに 等句型**——一次性串起来。学完就有资格去刷 N4 真题了。
 :::
 
 :::en
-The closing lesson of N4, weaving together the core grammar of Lessons 18–33 — **causative, passive, giving/receiving, ように, ことにする, てしまう, わけだ / ものだ**. After this, you're ready to grind N4 mock exams.
+The closing lesson of N4, weaving together the core grammar of Lessons 18–33 — **causative, passive, giving/receiving, ように, ことにする, てしまう, わけだ / ものだ, keigo, and patterns like ても / てほしい / すぎる / と思う / までに**. After this, you're ready to grind N4 mock exams.
 :::
 
 ---
@@ -108,12 +108,12 @@ The closing lesson of N4, weaving together the core grammar of Lessons 18–33 �
 :::zh
 - [ ] という + 名词（叫做/关于）
 - [ ] ということ（这件事/据说/也就是说）
-- [ ] といっても（虽说但）
+- [ ] というのは〜ことだ（所谓…就是…）
 :::
 :::en
 - [ ] という + Noun (called / about)
 - [ ] ということ (the fact that / I heard that / in other words)
-- [ ] といっても (although / even though I say…)
+- [ ] というのは〜ことだ (what ~ means is…)
 :::
 
 ### 书面助词表达（除て以来外均为 N3 预习，Lesson 35–36 详讲）||Formal Particle Expressions (apart from て以来, an N3 preview — covered in Lessons 35–36)
@@ -160,6 +160,44 @@ The closing lesson of N4, weaving together the core grammar of Lessons 18–33 �
 :::en
 - [ ] ものだ (exclamation / nostalgia / natural norm)
 - [ ] ものだから (reason with an excuse/apology tone)
+:::
+
+### 敬语（Lesson 27–29）||Keigo (Lessons 27–29)
+:::zh
+- [ ] 尊敬語特殊动词（いらっしゃる・召し上がる・ご覧になる・おっしゃる…）
+- [ ] お／ご〜になる（尊敬語模板）、〜（ら）れる（轻度尊敬）
+- [ ] 謙譲語特殊动词（参る・伺う・拝見する・申す・いただく…）
+- [ ] お／ご〜する（謙譲語模板）、〜させていただきます
+- [ ] 商务场景：电话、邮件、クッション言葉
+:::
+:::en
+- [ ] Special honorific verbs (いらっしゃる・召し上がる・ご覧になる・おっしゃる…)
+- [ ] お／ご〜になる (honorific template), 〜(ら)れる (light respect)
+- [ ] Special humble verbs (参る・伺う・拝見する・申す・いただく…)
+- [ ] お／ご〜する (humble template), 〜させていただきます
+- [ ] Business situations: phone calls, emails, cushion words
+:::
+
+### 常用句型（Lesson 30–33）||Everyday Patterns (Lessons 30–33)
+:::zh
+- [ ] ても（即使…也）、てほしい（希望别人做）、てみる（试着做）
+- [ ] ていく / てくる（渐变方向）、がる（第三人称感情）
+- [ ] すぎる（太…）、やすい / にくい（容易 / 难以）、ことはない（没必要）
+- [ ] 〜方（做法）、〜出す / 〜始める / 〜続ける、〜さ（名词化）
+- [ ] と思う / と思っている、かどうか、のように / のような
+- [ ] なさい、命令形 / 禁止形、がする（五感）、必要がある / 必要はない
+- [ ] あいだ / あいだに、までに、おきに、場合は
+- [ ] たらどう、てよかった、てすみません
+:::
+:::en
+- [ ] ても (even if), てほしい (want someone to), てみる (try doing)
+- [ ] ていく / てくる (direction of change), がる (third-person feelings)
+- [ ] すぎる (too…), やすい / にくい (easy / hard to), ことはない (no need to)
+- [ ] 〜方 (way of doing), 〜出す / 〜始める / 〜続ける, 〜さ (nominalizing)
+- [ ] と思う / と思っている, かどうか, のように / のような
+- [ ] なさい, imperative / prohibitive forms, がする (the five senses), 必要がある / 必要はない
+- [ ] あいだ / あいだに, までに, おきに, 場合は
+- [ ] たらどう, てよかった, てすみません
 :::
 
 ---
@@ -235,14 +273,14 @@ The closing lesson of N4, weaving together the core grammar of Lessons 18–33 �
 |------|------|---|
 | けど/が | 中性转折 | 高いけど、買った |
 | のに | 不满/遗憾 | 高いのに、美味しくない |
-| といっても | 修正误解 | 高いといっても、1000円ぐらいだ |
+| ても | 即使…也（让步） | 高くても、買う |
 :::
 :::en
 | Expression | Tone | Example |
 |------|------|---|
 | けど/が | Neutral contrast | 高いけど、買った (It's expensive, but I bought it) |
 | のに | Dissatisfaction / regret | 高いのに、美味しくない (It's expensive, yet not tasty) |
-| といっても | Correcting an assumption | 高いといっても、1000円ぐらいだ (When I say "expensive," I mean about 1000 yen) |
+| ても | Even if… (concession) | 高くても、買う (I'll buy it even if it's expensive) |
 :::
 
 ### 口语缩略形 总表||Colloquial Contraction Reference

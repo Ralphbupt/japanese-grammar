@@ -118,6 +118,7 @@ Restrictions:
 - な形容詞語幹 + 極まりない
 - な形容詞語幹 + 極まる
 - な形容詞 + な + こと極まりない（较少见）
+- い形容詞 + こと極まりない（危ないこと極まりない；い形容词只能用这个形式）
 
 ※ 「極まる」读作「きわまる」。固定说法「感極まる」（感动到极点）是例外，前面是名词「感」。
 :::
@@ -125,6 +126,7 @@ Restrictions:
 - Na-adjective stem + 極まりない
 - Na-adjective stem + 極まる
 - Na-adjective + な + こと極まりない (less common)
+- I-adjective + こと極まりない (危ないこと極まりない; the only way to use an i-adjective)
 
 ※ 「極まる」 is read 「きわまる」. The set phrase 「感極まる」 (to be overcome with emotion) is an exception, with the noun 「感」 in front.
 :::
@@ -134,7 +136,7 @@ Restrictions:
 "……至极""极其……"。「極まる」是"到达极点"，「極まりない」字面是"没有尽头"，两者意思相同，都表示程度达到顶点。多用于严厉的负面评价，表达说话人强烈的不满或愤慨。
 
 限制：
-- 主要接汉语的な形容词：失礼、危険、不愉快、無責任、卑劣、迷惑、無神経、曖昧、退屈、単調……。不接い形容词：❌「危ない極まりない」「つまらない極まりない」。
+- 主要接汉语的な形容词：失礼、危険、不愉快、無責任、卑劣、迷惑、無神経、曖昧、退屈、単調……。い形容词不能直接接：❌「危ない極まりない」「つまらない極まりない」，要说「危ないこと極まりない」。
 - 绝大多数是负面评价；「簡単極まりない」「便利極まりない」等也有人用，但较少，有时带讽刺语气。
 - 现在「極まりない」比「極まる」常用；「極まる」更文言，多用作「曖昧極まる答弁」这种修饰名词的形式或句末。
 - 生硬、书面的说法，口语一般说「すごく失礼だ」「本当に危ない」。
@@ -143,7 +145,7 @@ Restrictions:
 "Utterly…" or "extremely…". 「極まる」 means "to reach the limit" and 「極まりない」 literally "has no limit"; they mean the same thing — the degree is as high as it goes. Mostly harsh criticism, showing the speaker's strong displeasure or indignation.
 
 Restrictions:
-- Mainly Sino-Japanese na-adjectives: 失礼, 危険, 不愉快, 無責任, 卑劣, 迷惑, 無神経, 曖昧, 退屈, 単調…. Not i-adjectives: ❌ 「危ない極まりない」, 「つまらない極まりない」.
+- Mainly Sino-Japanese na-adjectives: 失礼, 危険, 不愉快, 無責任, 卑劣, 迷惑, 無神経, 曖昧, 退屈, 単調…. I-adjectives can't attach directly: ❌ 「危ない極まりない」, 「つまらない極まりない」; say 「危ないこと極まりない」 instead.
 - Almost always negative; 「簡単極まりない」 or 「便利極まりない」 do occur, but rarely, and can sound sarcastic.
 - Today 「極まりない」 is more common than 「極まる」; 「極まる」 sounds more literary and appears mostly before a noun (「曖昧極まる答弁」) or at the end of a sentence.
 - Stiff and written; in speech you'd say 「すごく失礼だ」 or 「本当に危ない」.
@@ -175,7 +177,7 @@ Restrictions:
 
 > ⭕ 失礼極まりない ／ ⭕ 光栄の極みです  
 > △ 光栄極まりない（表示感激时，用「の極み」「この上ない」更自然）  
-> ❌ 危ない極まりない → ⭕ 危険極まりない（只接な形容词語幹）  
+> ❌ 危ない極まりない → ⭕ 危険極まりない ／ ⭕ 危ないこと極まりない（直接接只能是な形容词語幹）  
 > 「感極まる」常以「感極まって泣く／涙ぐむ」出现，是正面的激动，和「〜極まる」的批评语气无关。
 :::
 :::en
@@ -187,7 +189,7 @@ Restrictions:
 
 > ⭕ 失礼極まりない / ⭕ 光栄の極みです  
 > △ 光栄極まりない (for gratitude, 「の極み」 or 「この上ない」 sounds more natural)  
-> ❌ 危ない極まりない → ⭕ 危険極まりない (na-adjective stems only)  
+> ❌ 危ない極まりない → ⭕ 危険極まりない / ⭕ 危ないこと極まりない (only na-adjective stems attach directly)  
 > 「感極まる」 usually appears as 「感極まって泣く／涙ぐむ」; it is positive emotion and has nothing to do with the critical tone of 「〜極まる」.
 :::
 
@@ -400,7 +402,7 @@ Restrictions:
 5. 公の場でこのような差別的な発言をする**とは**、あきれて物も言えない。（竟然在公开场合说出这种歧视性的话，真让人无语。）
 :::
 :::en
-1. まさかあの真面目な彼が、会社の金を横領していた**とは**。(To think that he, of all people, so upright, had been embezzling company money.)
+1. まさかあの真面目な彼が、会社の金を横領していた**とは**。(To think that someone as upright as him had been embezzling company money.)
 2. 十年ぶりに訪れた故郷が、これほど変わってしまっている**とは**思いもしなかった。(I never imagined my hometown would have changed so much when I went back after ten years.)
 3. あれほど練習を重ねてきたチームが一回戦で敗退する**とは**、誰が予想しただろうか。(Who could have predicted that a team that had trained so hard would go out in the first round?)
 4. 小学生がこんな難しい問題をあっさり解いてしまう**とは**、驚きだ。(It's amazing that an elementary school pupil could solve such a hard problem so easily.)

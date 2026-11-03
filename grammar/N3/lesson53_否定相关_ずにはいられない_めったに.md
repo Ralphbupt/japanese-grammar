@@ -76,7 +76,7 @@ Double negative → "It's not that I can't…" or "not impossible" — expresses
 | 表达 | 含义 | 区别 |
 |------|------|------|
 | ないことはない | 不是不…… | 委婉肯定，有保留 |
-| ないこともない | 不是不…… | 同义，更口语 |
+| ないこともない | 不是不…… | 同义，语气更委婉、保留更多 |
 | なくはない | 不是没有…… | 同义，更简洁 |
 
 > 三者意思几乎相同，「ないことはない」最常见于N3考试。
@@ -85,7 +85,7 @@ Double negative → "It's not that I can't…" or "not impossible" — expresses
 | Expression | Meaning | Difference |
 |------|------|------|
 | ないことはない | it's not that… can't | Mild affirmation with reservation |
-| ないこともない | it's not that… can't | Same meaning; more colloquial |
+| ないこともない | it's not that… can't | Same meaning; softer, more hedged |
 | なくはない | it's not that there isn't | Same meaning; more concise |
 
 > All three mean nearly the same thing; 「ないことはない」 is the most common in N3 exams.

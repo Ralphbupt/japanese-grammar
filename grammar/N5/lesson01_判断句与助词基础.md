@@ -184,12 +184,12 @@ When two は appear in one sentence, or context implies contrast, は carries th
 
 :::zh
 - 肉**は**食べますが、魚**は**食べません。（肉吃，但鱼不吃。）
-- 今日**は**暑いですね。（今天**倒是**热啊。→ 暗示昨天不热或平时不热）
+- 今日**は**暑いですが、昨日**は**涼しかったです。（今天热，昨天倒是挺凉快。→ 两个は把今天和昨天对比）
 - ビール**は**飲みます。（啤酒的话我喝。→ 暗示其他酒可能不喝）
 :::
 :::en
 - 肉**は**食べますが、魚**は**食べません。(I eat meat, but I don't eat fish.)
-- 今日**は**暑いですね。(It's hot **today**. → implies other days weren't as hot)
+- 今日**は**暑いですが、昨日**は**涼しかったです。(It's hot today, but yesterday was cool. → the two は contrast today with yesterday)
 - ビール**は**飲みます。(Beer I'll drink. → implies other drinks maybe not)
 :::
 
