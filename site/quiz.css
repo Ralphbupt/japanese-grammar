@@ -81,6 +81,28 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-v-ok { color: var(--q-ok); }
 .q-v-bad { color: var(--q-bad); }
 .q-explain { line-height: 1.8; }
+/* Chinese pages: explanations in a Chinese font, so ，：？ sit like Chinese
+   punctuation (the site font is Hiragino, which leaves a gap after ，). Japanese
+   inside them (「…」 quotes, options, sentences) is marked lang="ja" and keeps a
+   Japanese font; :where() keeps this below .q-full / .q-passage. */
+.q-explain:lang(zh), .q-trtext:lang(zh) { font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif; }
+.q-explain :where([lang|="ja"]) { font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; }
+/* The whole text in kanji / its translation: quiet folded cards after the explanation. */
+.q-whole { display: grid; gap: .6rem; margin: 1.2rem 0 .4rem; }
+.q-whole .q-tr, .q-tr { border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); padding: 0; margin: 0; }
+.q-whole .q-tr summary { cursor: pointer; list-style: none; padding: .5rem 1rem; margin: 0; font-size: .9rem; color: var(--text-muted); user-select: none; }
+.q-tr summary::-webkit-details-marker { display: none; }
+.q-tr summary::before { content: "▸"; display: inline-block; width: 1.1em; transition: transform .15s; }
+.q-tr[open] summary::before { transform: rotate(90deg); }
+.q-tr summary:hover { color: var(--text); }
+.q-tr[open] summary { border-bottom: 1px solid var(--border); }
+.q-tr .q-passage { border: 0; margin: 0; background: none; max-height: none; padding: .8rem 1.1rem .6rem; }
+.q-tr .q-passage rt { font-size: .5em; }
+.q-trtext { line-height: 1.9; }
+.q-trtext p { margin: 0 0 .35rem; }
+.q-trtext p.q-gap { margin-top: .9rem; }
+.q-tr .q-trtext { padding: .8rem 1.1rem .6rem; }
+.q-revpass .q-trtext { margin-top: .6rem; color: var(--text-muted); }
 .q-explain p { margin: .5rem 0; }
 .q-wrong { margin: .4rem 0 .8rem; padding-left: 1.1rem; }
 .q-wrong li { margin: .3rem 0; }
@@ -118,8 +140,6 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-table { border-collapse: collapse; margin: .4rem 0 .6rem; font-size: .95em; }
 .q-table th, .q-table td { border: 1px solid var(--border); padding: .2rem .7rem; text-align: center; line-height: 1.9; }
 .q-table th { background: var(--surface-2); font-weight: 600; }
-.q-tr { margin-top: .6rem; font-size: .92em; }
-.q-tr summary { cursor: pointer; color: var(--text-muted); }
 .q-row-name + .q-muted, h2 .q-muted { font-weight: 400; }
 
 /* Mock test */

@@ -25,6 +25,9 @@
   function bi(o) { return o ? (EN ? o.en : o.zh) : ''; }
   function now() { return Math.floor(Date.now() / 1000); }
   function today() { var d = new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
+  // Explanation text: escaped, with each 「…」 quote marked as Japanese so a
+  // Chinese page can set the prose in a Chinese font and the quotes in a Japanese one.
+  function ex(o) { return esc(bi(o)).replace(/「[^「」\n]*」/g, function (m) { return '<span lang="ja">' + m + '</span>'; }); }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function track(name, p) { try { if (window.gaEvent) window.gaEvent(name, p); } catch (e) {} }
 
@@ -513,9 +516,26 @@
   function kjHtml(q, passages) {
     var say = q.sa ? ' <button class="q-say" data-act="say" data-k="' + q.sa + '" aria-label="' + t('听这句', 'Play this sentence') + '" title="' + t('听这句', 'Play this sentence') + '">🔊</button>' : '';
     var h = q.kj ? '<p class="q-full q-kj" lang="ja"><span class="q-kj-label">' + t('汉字写法', 'In kanji') + '</span>' + q.kj + say + '</p>' : q.full ? '<p class="q-full" lang="ja">' + q.full + say + '</p>' : '';
-    var P = q.passage && passages && passages[q.passage];
-    if (P && P.kj) h += '<details class="q-tr"><summary>' + t('全文汉字写法', 'The text in kanji') + '</summary><div class="q-passage" lang="ja">' + textHtml(P.kj) + '</div></details>';
     return h;
+  }
+  // The whole text in kanji and its translation, folded, after the explanation.
+  // Shown once per passage (under its last question); withTr false where the
+  // translation is already on screen (mock review shows it with the text).
+  // A translation, one <p> per line of the original; a blank line becomes a wider gap.
+  function trHtml(o) {
+    var gap = false;
+    return '<div class="q-trtext" lang="' + (EN ? 'en' : 'zh-CN') + '">' + bi(o).split('\n').map(function (line) {
+      if (!line.trim()) { gap = true; return ''; }
+      var p = '<p' + (gap ? ' class="q-gap"' : '') + '>' + esc(line) + '</p>'; gap = false; return p;
+    }).join('') + '</div>';
+  }
+  function wholeHtml(q, passages, withTr) {
+    var P = q.passage && passages && passages[q.passage];
+    if (!P) return '';
+    var h = '';
+    if (P.kj) h += '<details class="q-tr"><summary>' + t('全文汉字写法', 'The text in kanji') + '</summary><div class="q-passage" lang="ja">' + textHtml(P.kj) + '</div></details>';
+    if (withTr !== false && P.tr && !isCk(q)) h += '<details class="q-tr"><summary>' + t('全文翻译', 'Translation of the text') + '</summary>' + trHtml(P.tr) + '</details>';
+    return h ? '<div class="q-whole">' + h + '</div>' : '';
   }
   function passageHtml(q) {
     if (!q.passage) return '';
@@ -698,15 +718,15 @@
     if (isCk(q) && !left.length) h += ckScript(q);
     // The finished sentence and its translation first: understand the sentence,
     // then read why the answer fits it.
-    h += '<div class="q-explain">' + kjHtml(q, D.passages);
+    h += '<div class="q-explain">' + kjHtml(q);
     if (q.tr) h += '<p class="q-muted">' + esc(bi(q.tr)) + '</p>';
-    h += '<p class="q-why">' + esc(bi(q.why)) + '</p>';
+    h += '<p class="q-why">' + ex(q.why) + '</p>';
     if (q.type !== 'narabe') {
       var rows = q.wrong.map(function (w, i) { return w ? { i: i, w: w } : null; }).filter(Boolean);
       rows.sort(function (a, b) { return (b.i === choice) - (a.i === choice); });
-      h += '<ul class="q-wrong">' + rows.map(function (r) { return '<li' + (r.i === choice ? ' class="q-mine"' : '') + '><b lang="ja">' + (r.i + 1) + ' ' + q.options[r.i] + okjOf(q, r.i) + '</b> — ' + esc(bi(r.w)) + '</li>'; }).join('') + '</ul>';
+      h += '<ul class="q-wrong">' + rows.map(function (r) { return '<li' + (r.i === choice ? ' class="q-mine"' : '') + '><b lang="ja">' + (r.i + 1) + ' ' + q.options[r.i] + okjOf(q, r.i) + '</b> — ' + ex(r.w) + '</li>'; }).join('') + '</ul>';
     }
-    if (q.passage && !isCk(q)) h += '<details class="q-tr"><summary>' + t('全文翻译', 'Translation of the text') + '</summary><p>' + esc(bi(D.passages[q.passage].tr)) + '</p></details>';
+    if (!left.length) h += wholeHtml(q, D.passages);
     h += pointsHtml(q);
     if (!aiFirst) h += aiBtn(false);
     h += '<details class="q-report"><summary>' + t('这题有问题？', 'Something wrong with this question?') + '</summary>' +
@@ -741,7 +761,7 @@
       return '<li><div lang="ja" class="q-sumstem">' + sumLabel(q) + '</div>' +
         '<div class="q-muted">' + (mine ? mine + ' · ' : '') + t('答案 ', 'Answer: ') + '<span lang="ja">' + q.options[q.answer] + okjOf(q, q.answer) + '</span> · ' +
         (days <= 0 ? t('今天复习', 'due today') : days + t(' 天后复习', days === 1 ? ' day to go' : ' days to go')) + '</div>' +
-        '<details class="q-rl-more"><summary>' + t('解析', 'Explanation') + '</summary>' + (isCk(q) ? ckPlayer(q) + ckScript(q) : '') + '<p>' + esc(bi(q.why)) + '</p>' + kjHtml(q, D.passages) + (q.tr ? '<p class="q-muted">' + esc(bi(q.tr)) + '</p>' : '') +
+        '<details class="q-rl-more"><summary>' + t('解析', 'Explanation') + '</summary>' + (isCk(q) ? ckPlayer(q) + ckScript(q) : '') + '<p>' + ex(q.why) + '</p>' + kjHtml(q) + (q.tr ? '<p class="q-muted">' + esc(bi(q.tr)) + '</p>' : '') + wholeHtml(q, D.passages) +
         pointsHtml(q) + '<button class="q-btn" data-act="unreview" data-k="' + q.id + '">' + t('已经会了，移出错题本', 'I’ve got it — remove') + '</button></details></li>';
     }).join('') + '</ul>';
     app.innerHTML = h + '</div>';
@@ -1089,12 +1109,15 @@
     view(false);
     var test = M.test, key = M.key, att = M.att, h = '<div class="q-top"><button class="q-link" data-act="m-back-result">‹ ' + t('回到结果', 'Back to results') + '</button></div>';
     var shownP = {};
+    function listed(id) { var aa = att.answers[id] || {}; return !(which === 'wrong' && aa.c === key.questions[id].answer && !aa.g); }
     test.sections.forEach(function (sec, si) {
       if (att.mode !== 'full' && +att.mode !== si) return;
       sec.problems.forEach(function (p) {
         p.ids.forEach(function (id, k) {
           var q = Q[id], kq = key.questions[id], a = att.answers[id] || {}, ok = a.c === kq.answer;
-          if (which === 'wrong' && ok && !a.g) return;
+          if (!listed(id)) return;
+          // the whole text in kanji goes under the last listed question of its passage
+          var lastOfP = !q.passage || !p.ids.slice(k + 1).some(function (j) { return Q[j].passage === q.passage && listed(j); });
           var qq = {}; for (var x in q) qq[x] = q[x]; for (var y in kq) qq[y] = kq[y];
           if (isCk(q)) {
             var again = q.passage && shownP[q.passage]; if (q.passage) shownP[q.passage] = 1;
@@ -1102,13 +1125,13 @@
             return;
           }
           h += '<div class="q-card q-revcard">';
-          if (q.passage && !shownP[q.passage]) { shownP[q.passage] = 1; h += '<details class="q-revpass"><summary>' + t('原文', 'Text') + '</summary>' + passageHtml(qq) + (key.passages[q.passage].au ? listenBtn(key.passages[q.passage].au) : '') + '<p class="q-muted">' + esc(bi(key.passages[q.passage].tr)) + '</p></details>'; }
+          if (q.passage && !shownP[q.passage]) { shownP[q.passage] = 1; h += '<details class="q-revpass"><summary>' + t('原文', 'Text') + '</summary>' + passageHtml(qq) + (key.passages[q.passage].au ? listenBtn(key.passages[q.passage].au) : '') + trHtml(key.passages[q.passage].tr) + '</details>'; }
           h += '<p class="q-prob"><b>' + (si + 1) + '-' + p.no + '</b> ' + esc(test.types[p.type].ja) + '</p><div class="q-stem" lang="ja">' + stemHtml(qq).replace(/<button[^>]*>(★)?<\/button>/g, function (m, st) { return st ? '＿★＿' : '＿＿'; }) + '</div>';
           if (q.type === 'narabe') h += '<p lang="ja">' + t('正确顺序：', 'Order: ') + kq.order.map(function (i) { return q.options[i]; }).join(' / ') + '</p>';
           h += '<ol class="q-opts" lang="ja">' + q.options.map(function (o, i) { return '<li><div class="q-opt' + (i === kq.answer ? ' q-ok' : i === a.c ? ' q-bad' : '') + '"><span class="q-num">' + (i + 1) + '</span>' + o + okjOf(qq, i) + '</div></li>'; }).join('') + '</ol>';
           h += '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 猜对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + '</p>';
-          h += '<div class="q-explain"><p>' + esc(bi(kq.why)) + '</p>' + (q.type !== 'narabe' ? '<ul class="q-wrong">' + kq.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + q.options[i] + okjOf(qq, i) + '</b> — ' + esc(bi(w)) + '</li>' : ''; }).join('') + '</ul>' : '') +
-            kjHtml(qq, key.passages) + (kq.tr ? '<p class="q-muted">' + esc(bi(kq.tr)) + '</p>' : '') + '</div>' +
+          h += '<div class="q-explain"><p>' + ex(kq.why) + '</p>' + (q.type !== 'narabe' ? '<ul class="q-wrong">' + kq.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + q.options[i] + okjOf(qq, i) + '</b> — ' + ex(w) + '</li>' : ''; }).join('') + '</ul>' : '') +
+            kjHtml(qq) + (kq.tr ? '<p class="q-muted">' + esc(bi(kq.tr)) + '</p>' : '') + (lastOfP ? wholeHtml(qq, key.passages, false) : '') + '</div>' +
             aiBtn(false, 'm-ai').replace(/data-act="m-ai"/g, 'data-act="m-ai" data-k="' + id + '"') + '</div>';
         });
       });
@@ -1330,7 +1353,7 @@
     if (q.pic && q.pic.opts) h += '<ol class="q-ck-pics">' + q.pic.opts.map(function (f, i) { return '<li><div class="q-opt q-ck-pic' + mark(i) + '"><span class="q-num">' + (i + 1) + '</span><img src="' + CK_IMG + f + '" alt="' + esc(plainJa(q.options[i])) + '" width="304" height="343" loading="lazy"></div></li>'; }).join('') + '</ol>';
     else h += '<ol class="q-opts' + (q.spoken ? ' q-ck-nums q-ck-shown' : '') + '" lang="ja">' + q.options.map(function (o, i) { return '<li><div class="q-opt' + mark(i) + '"><span class="q-num">' + (i + 1) + '</span>' + (q.spoken ? ckOptText(q, i) : o) + '</div></li>'; }).join('') + '</ol>';
     h += '<p class="q-verdict ' + (ok ? 'q-v-ok' : 'q-v-bad') + '">' + (a.c == null ? t('没答', 'Not answered') : ok ? (a.g ? t('✓ 猜对了', '✓ Guessed right') : '✓ ' + t('正确', 'Correct')) : '✗ ' + t('你选了 ', 'You chose ') + (a.c + 1)) + '</p>';
-    return h + (again ? '' : ckScript(q)) + '<div class="q-explain"><p>' + esc(bi(q.why)) + '</p><ul class="q-wrong">' + q.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + (q.pic && q.pic.opts ? '' : q.options[i]) + '</b> — ' + esc(bi(w)) + '</li>' : ''; }).join('') + '</ul></div>';
+    return h + (again ? '' : ckScript(q)) + '<div class="q-explain"><p>' + ex(q.why) + '</p><ul class="q-wrong">' + q.wrong.map(function (w, i) { return w ? '<li' + (i === a.c ? ' class="q-mine"' : '') + '><b lang="ja">' + (i + 1) + ' ' + (q.pic && q.pic.opts ? '' : q.options[i]) + '</b> — ' + ex(w) + '</li>' : ''; }).join('') + '</ul></div>';
   }
 
   // The mock test's listening sitting, like the real one: one tap starts it,
