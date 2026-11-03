@@ -25,7 +25,7 @@ This lesson continues with N2-level assertion and judgment expressions. 「と�
 | 管理職 | かんりしょく | 管理层；管理职位（名）——一般指课长以上；「管理職になる」升任管理职//(n) management; managerial post — usually section chief and above; 「管理職になる」 to move into management |
 | 初心者 | しょしんしゃ | 初学者；新手（名）——「初心者向け」面向初学者；「初心者マーク」新手驾驶标志//(n) beginner — 「初心者向け」 for beginners; 「初心者マーク」 the new-driver sticker |
 | 平和 | へいわ | 和平（名、形容动词）——也指平静安稳；「世界平和」世界和平；「平和な毎日」平静的日子//(n, na-adj) peace; peaceful — 「世界平和」 world peace; 「平和な毎日」 a quiet, peaceful life |
-| 実現 | じつげん | 实现（名、可作动词）——「夢を実現する」实现梦想；「実現しないものか」难道就不能实现吗//(n, suru-verb) realization; making real — 「夢を実現する」 to make a dream come true; 「実現しないものか」 if only it could come true |
+| 実現 | じつげん | 实现（名、可作动词）——「夢を実現する」实现梦想；「実現しないものか」要是能实现就好了//(n, suru-verb) realization; making real — 「夢を実現する」 to make a dream come true; 「実現しないものか」 if only it could come true |
 | 何とか | なんとか | 设法；总算（副词）——「何とかなる」总会有办法；「何とかしてください」请想想办法//(adv) somehow; one way or another — 「何とかなる」 it'll work out; 「何とかしてください」 please do something about it |
 | 状況 | じょうきょう | 状况；情况（名）——「状況に応じて」根据情况；「今の状況」目前的情况//(n) situation; circumstances — 「状況に応じて」 depending on the situation; 「今の状況」 the current situation |
 

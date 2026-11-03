@@ -215,7 +215,7 @@ Verb ます-stem (remove ます) + **に** + 行く/来る/帰る
 
 > 日常会话中，「〜に行く」更自然。「〜ために行く」较正式，强调目的意识。
 
-**注意：** 名词の场合用「に」直接接续：
+**注意：** 接名词时，名词直接加「に」：
 - 買い物**に**行く（去买东西）
 - 散歩**に**行く（去散步）
 :::
@@ -244,13 +244,13 @@ Verb ます-stem (remove ます) + **に** + 行く/来る/帰る
 :::zh
 動詞辞書形 + **のが** + 好き/上手/下手/得意/苦手
 
-> 「の」把动词变成名词（名词化）。日语中形容词不能直接修饰动词，需要先把动词变成名词。
+> 「の」把动词变成名词（名词化）。好き、上手等前面不能直接接动词，需要先把动词变成名词。
 :::
 
 :::en
 Verb dictionary form + **のが** + 好き/上手/下手/得意/苦手
 
-> 「の」 nominalizes the verb (turns it into a noun). In Japanese, these adjectives cannot directly modify verbs — the verb must first be nominalized.
+> 「の」 nominalizes the verb (turns it into a noun). In Japanese, a verb cannot go straight before 好き, 上手 and the like — it must first be nominalized.
 :::
 
 ### 含义||Meaning
@@ -261,7 +261,7 @@ Verb dictionary form + **のが** + 好き/上手/下手/得意/苦手
 | 〜のが**好き** | 喜欢做〜 | 个人喜好 |
 | 〜のが**嫌い** | 讨厌做〜 | 个人喜好 |
 | 〜のが**上手** | 做〜做得好 | 客观评价他人 |
-| 〜のが**下手** | 做〜做得差 | 客观评价他人 |
+| 〜のが**下手** | 做〜做得差 | 评价他人；说自己时是自谦 |
 | 〜のが**得意** | 擅长做〜 | 自我评价也可 |
 | 〜のが**苦手** | 不擅长做〜 | 自我评价也可 |
 :::
@@ -272,7 +272,7 @@ Verb dictionary form + **のが** + 好き/上手/下手/得意/苦手
 | 〜のが**好き** | Like doing ~ | Personal preference |
 | 〜のが**嫌い** | Dislike doing ~ | Personal preference |
 | 〜のが**上手** | Good at doing ~ | Evaluating others (objective) |
-| 〜のが**下手** | Bad at doing ~ | Evaluating others (objective) |
+| 〜のが**下手** | Bad at doing ~ | Evaluating others; about yourself it is modest |
 | 〜のが**得意** | Skilled at doing ~ | Self-evaluation OK |
 | 〜のが**苦手** | Not skilled at doing ~ | Self-evaluation OK |
 :::
@@ -314,7 +314,7 @@ Verb dictionary form + **のが** + 好き/上手/下手/得意/苦手
 | 意味 | 做得**差**（客观技术差） | **不擅长/不喜欢**（主观感受） |
 | 例 | 料理が下手 → 做菜难吃（事实） | 料理が苦手 → 做菜对我来说有困难/不想做 |
 
-> **上手/下手** — 用于评价**别人**，不适合说自己。说自己用 **得意/苦手**。
+> **上手** — 用于评价**别人**，说自己会显得自夸，说自己用 **得意**。**下手**说自己可以（自谦），但**苦手**更委婉。
 > - ✅ 私は料理が**得意**です。
 > - △ 私は料理が**上手**です。（听起来在自夸）
 > - ✅ 田中さんは料理が**上手**です。
@@ -331,7 +331,7 @@ Verb dictionary form + **のが** + 好き/上手/下手/得意/苦手
 | Meaning | **Poor at** (objectively bad skill) | **Not good at / uncomfortable with** (subjective) |
 | Example | 料理が下手 → bad cooking (fact) | 料理が苦手 → cooking is hard for me / I'd rather not |
 
-> **上手/下手** — used to evaluate **others**, not appropriate for yourself. Use **得意/苦手** for self-evaluation.
+> **上手** — used to evaluate **others**; about yourself it sounds like bragging, so use **得意**. **下手** is fine about yourself (modest), though **苦手** is softer.
 > - ✅ 私は料理が**得意**です。
 > - △ 私は料理が**上手**です。(Sounds like bragging)
 > - ✅ 田中さんは料理が**上手**です。

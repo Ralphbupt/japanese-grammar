@@ -72,7 +72,7 @@
 ### ようだ做修饰语||ようだ as a Modifier
 
 :::zh
-- 彼は学生の**ような**人だ。（他像学生一样的人。→ ような+名词）
+- 彼は学生の**ような**人だ。（他是个像学生一样的人。→ ような+名词）
 - まるで夢の**ように**美しい。（美得像梦一样。→ ように+动词/形容词）
 - 子供の**ような**笑顔。（像孩子一样的笑容。）
 - 嘘の**ように**元気になった。（像变魔术一样恢复了精神。）
@@ -121,7 +121,7 @@
 | な形 | 静か**な**ようだ | 静か**みたいだ** |
 | 名词 | 学生**の**ようだ | 学生**みたいだ** |
 
-> みたいだ接续更统一（直接接简体），日常会话中用得更多。
+> みたいだ接续更统一（名词、な形容词直接接语干，不加の/な），日常会话中用得更多。
 :::
 
 :::en
@@ -134,7 +134,7 @@
 | な-adj | 静か**な**ようだ | 静か**みたいだ** |
 | Noun | 学生**の**ようだ | 学生**みたいだ** |
 
-> みたいだ has more uniform conjugation (attach directly to plain form) and is used far more in daily conversation.
+> みたいだ has more uniform conjugation (nouns and な-adjectives attach directly, with no の/な) and is used far more in daily conversation.
 :::
 
 ### 例句||Example Sentences
@@ -241,7 +241,7 @@ Inference based on things heard or indirect evidence:
 5. 先生**らしい**先生だ。（像样的老师。→ 具备老师应有的品质）
 6. 日本**らしい**景色だ。（很有日本特色的景色。）
 
-> ②的用法和①完全不同，要靠语境判断。关键区别：**含义①的らしい前面是完整的句子，含义②的らしい前面只有名词**。
+> ②的用法和①完全不同，要靠语境判断。关键区别：**含义②是「名词+らしい」，表示具备该名词应有的特质（男らしい、春らしい）；含义①是对一件事的推断，前面通常是完整的句子**。注意「田中さんは病気らしい」这种名词+らしい也可能是含义①，要看语境。
 :::
 
 :::en
@@ -254,7 +254,7 @@ Noun + らしい = having the qualities expected of that noun:
 5. 先生**らしい**先生だ。(A teacher who is truly a teacher. → embodies what a teacher should be)
 6. 日本**らしい**景色だ。(Scenery that is quintessentially Japanese.)
 
-> Usage ② is completely different from ①; context determines which is meant. **Key distinction: ① has a full sentence before らしい; ② has only a noun before らしい**.
+> Usage ② is completely different from ①; context determines which is meant. **Key distinction: ② is "noun + らしい", meaning having the qualities expected of that noun (男らしい, 春らしい); ① is an inference about a situation, usually with a full clause before らしい**. Note that a noun + らしい such as 「田中さんは病気らしい」 can still be ① — context decides.
 :::
 
 ### 辨析：らしい vs そうだ（传闻）vs ようだ/みたいだ||Contrast: らしい vs そうだ (Hearsay) vs ようだ/みたいだ

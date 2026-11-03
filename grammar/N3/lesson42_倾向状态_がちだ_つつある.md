@@ -72,7 +72,7 @@ This lesson covers grammar expressing "tendencies" and "states of change." 「�
 2. 冬は風邪をひき**がち**だ。(In winter, one tends to catch colds.)
 3. 一人暮らしだと、野菜が不足し**がち**だ。(When living alone, you tend to lack vegetables.)
 4. 遠慮し**がち**な性格を直したい。(I want to fix my tendency to hold back.)
-5. 曇り**がち**な天気が続いている。(The overcast weather continues.)
+5. 曇り**がち**な天気が続いている。(The weather has been mostly cloudy.)
 :::
 
 ### 辨析||Comparison

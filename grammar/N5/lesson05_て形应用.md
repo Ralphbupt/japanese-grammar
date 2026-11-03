@@ -57,7 +57,7 @@
 
 ---
 
-## 1. 〜ている（进行/状态/习惯）||〜ている (ongoing action / state / habit)
+## 1. 〜ている（进行/状态/习惯）||1. 〜ている (ongoing action / state / habit)
 
 ### 接続||Conjugation
 
@@ -77,7 +77,7 @@ Verb て form + いる (polite: います)
 ている has three completely different meanings depending on the type of verb:
 :::
 
-### 用法①：正在进行（持続動詞）||Use ①: Ongoing action (continuous verbs)
+### 用法①：正在进行（持续动词）||Use ①: Ongoing action (continuous verbs)
 
 :::zh
 用于"有持续过程"的动词（食べる、読む、走る等）。
@@ -98,7 +98,7 @@ Used with verbs that describe a continuous process (食べる, 読む, 走る, e
 5. 弟はシャワーを浴び**ている**。(My younger brother is taking a shower.)
 :::
 
-### 用法②：結果状態（瞬間動詞）||Use ②: Resultant state (instantaneous verbs)
+### 用法②：结果状态（瞬间动词）||Use ②: Resultant state (instantaneous verbs)
 
 :::zh
 用于"一瞬间就完成"的动词（死ぬ、結婚する、知る等），表示**动作完成后的持续状态**。
@@ -138,7 +138,7 @@ Used with verbs that complete instantaneously (死ぬ, 結婚する, 知る, etc
 > How to tell? Ask yourself: is the verb a "continuous process" or "an instantaneous change"?
 :::
 
-### 用法③：習慣/反復（搭配頻率詞）||Use ③: Habit / repeated action (with frequency words)
+### 用法③：习惯/反复（搭配频率词）||Use ③: Habit / repeated action (with frequency words)
 
 :::zh
 1. 毎日ジョギングをし**ている**。（每天跑步。→ 习惯）
@@ -195,7 +195,7 @@ Used with verbs that complete instantaneously (死ぬ, 結婚する, 知る, etc
 
 ---
 
-## 2. 〜てください / 〜ないでください（請求）||〜てください / 〜ないでください (Request)
+## 2. 〜てください / 〜ないでください（请求）||2. 〜てください / 〜ないでください (Request)
 
 ### 接続||Conjugation
 
@@ -278,7 +278,7 @@ Used with verbs that complete instantaneously (死ぬ, 結婚する, 知る, etc
 
 ---
 
-## 3. 〜てもいい（許可）||〜てもいい (Permission)
+## 3. 〜てもいい（许可）||3. 〜てもいい (Permission)
 
 ### 接続||Conjugation
 
@@ -321,7 +321,7 @@ Verb て form + もいいです
 6. 電気を消し**てもいいですか**。(May I turn off the light?)
 :::
 
-### 形容詞/名詞版||For adjectives and nouns
+### 形容词/名词版||For adjectives and nouns
 
 :::zh
 - 安く**ても**いいです。（便宜也行。→ い形容词：い→くても）
@@ -351,7 +351,7 @@ Verb て form + もいいです
 
 ---
 
-## 4. 〜てはいけない（禁止）||〜てはいけない (Prohibition)
+## 4. 〜てはいけない（禁止）||4. 〜てはいけない (Prohibition)
 
 ### 接続||Conjugation
 
@@ -390,7 +390,7 @@ Verb て form + はいけない (polite: はいけません)
 6. この部屋に入っ**てはいけない**。(You must not enter this room.)
 :::
 
-### 口語縮略||Colloquial contractions
+### 口语缩略||Colloquial contractions
 
 :::zh
 てはいけない → **ちゃいけない** / **ちゃだめ**
@@ -432,7 +432,7 @@ Verb て form + はいけない (polite: はいけません)
 
 ---
 
-## 5. 〜てから（之後）||〜てから (After doing)
+## 5. 〜てから（之后）||5. 〜てから (After doing)
 
 ### 接続||Conjugation
 

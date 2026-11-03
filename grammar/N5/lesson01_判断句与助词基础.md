@@ -113,12 +113,12 @@ Means "is/am/are", the most basic copula sentence. です is the polite form; th
 3. 昨日は暇**でした**。（昨天很闲。）
 4. あの映画は面白かった。でも、これはつまらない**だった**。→ ❌ 错！い形容词不接だ
 5. 彼は学生**だ**。（他是学生。— 简体）
-6. 東京は静か**ではなかった**。（东京以前不安静。— 简体过去否定）
+6. 東京は静か**ではなかった**。（东京那时并不安静。— 简体过去否定）
 :::
 :::en
 1. 私は田中**です**。(I am Tanaka.)
 2. これは本**ではありません**。ノートです。(This is not a book. It's a notebook.)
-3. 昨日は暇**でした**。(Yesterday was free/not busy.)
+3. 昨日は暇**でした**。(I was free yesterday.)
 4. あの映画は面白かった。でも、これはつまらない**だった**。→ ❌ Wrong! い-adjectives don't take だ
 5. 彼は学生**だ**。(He is a student. — plain form)
 6. 東京は静か**ではなかった**。(Tokyo wasn't quiet. — plain past negative)
@@ -230,7 +230,7 @@ When は marks a topic, it "absorbs" が and を:
 
 ## 3. が — 主格助词||3. が — Subject Marker
 
-### 核心語感||Core Feel
+### 核心语感||Core Feel
 
 :::zh
 **"就是这个！"** — 标记动作/状态的主体，带有"指认/聚焦"的感觉。
@@ -259,7 +259,7 @@ When something appears for the first time in the discourse, mark it with が.
 :::
 :::en
 - あそこに猫**が**います。(There is a cat over there. → cat is new information)
-- 昔々、おじいさん**が**住んでいました。(Once upon a time, an old man lived there. → first appearance)
+- 昔々、おじいさん**が**住んでいました。(Once upon a time, there lived an old man. → first appearance)
 
 > The second time the same thing is mentioned, switch to は:
 > むかしむかし、おじいさん**が**住んでいました。おじいさん**は**毎日山へ行きました。
@@ -374,7 +374,7 @@ When a clause is embedded inside a larger sentence, the inner subject uses が:
 → は is omitted here (私は) because "I" is self-evident as the topic.
 :::
 
-#### 場景2：介绍某人的身份||Scene 2: Identifying someone's role
+#### 场景2：介绍某人的身份||Scene 2: Identifying someone's role
 
 :::zh
 - 田中さん**は**先生です。（田中嘛，是老师。→ 大家认识田中，新信息是"老师"）
@@ -385,7 +385,7 @@ When a clause is embedded inside a larger sentence, the inner subject uses が:
 - 田中さん**が**先生です。(Tanaka is the teacher. → identifying who among many is the teacher; "Tanaka" is new info)
 :::
 
-#### 場景3：描述天气||Scene 3: Describing the weather
+#### 场景3：描述天气||Scene 3: Describing the weather
 
 :::zh
 - 今日**は**いい天気ですね。（今天天气真好啊。→ 日常寒暄，"今天"是话题）
@@ -396,7 +396,7 @@ When a clause is embedded inside a larger sentence, the inner subject uses が:
 - あ、雨**が**降ってきた！(Oh, it started raining! → sudden discovery; rain is newly appearing information)
 :::
 
-#### 場景4：存在句||Scene 4: Existence sentences
+#### 场景4：存在句||Scene 4: Existence sentences
 
 :::zh
 - この町**には**大きい公園**が**あります。（这个镇上有个大公园。）
@@ -409,7 +409,7 @@ When a clause is embedded inside a larger sentence, the inner subject uses が:
 → 「この町」is the topic (には), 「公園」is new information (が). This is a classic pairing.
 :::
 
-#### 場景5：从句内外||Scene 5: Inside vs. outside a clause
+#### 场景5：从句内外||Scene 5: Inside vs. outside a clause
 
 :::zh
 - [桜**が**咲いている] 公園**は**きれいです。（樱花盛开的公园很美。）

@@ -39,14 +39,14 @@ This lesson continues with concession grammar. These four expressions are more l
 :::zh
 - 動詞普通形 + にしても
 - い形容詞 + にしても
-- な形容詞 + だ / である + にしても
-- 名詞 + だ / である + にしても
+- な形容詞 + （である）+ にしても
+- 名詞 + （である）+ にしても
 :::
 :::en
 - Verb (plain form) + にしても
 - i-adjective + にしても
-- na-adjective + だ / である + にしても
-- Noun + だ / である + にしても
+- na-adjective + (である) + にしても
+- Noun + (である) + にしても
 :::
 
 ### 含义||Meaning
@@ -160,13 +160,13 @@ This lesson continues with concession grammar. These four expressions are more l
 - 動詞普通形 + とはいえ
 - い形容詞 + とはいえ
 - な形容詞 + だ / である + とはいえ
-- 名詞 + だ / である + とはいえ
+- 名詞 + （だ / である）+ とはいえ
 :::
 :::en
 - Verb (plain form) + とはいえ
 - i-adjective + とはいえ
 - na-adjective + だ / である + とはいえ
-- Noun + だ / である + とはいえ
+- Noun + (だ / である) + とはいえ
 :::
 
 ### 含义||Meaning

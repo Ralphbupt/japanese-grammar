@@ -119,7 +119,7 @@ Expresses excess — "too …". It implies going beyond an appropriate degree, u
 7. 荷物が多**すぎる**。半分にしなさい。(There's too much luggage. Cut it in half.)
 :::
 
-### 注意：特殊变化の例文||Note: Special Forms — Examples
+### 注意：特殊变化的例句||Note: Special Forms — Examples
 
 :::zh
 - この料理は味が**なさすぎる**。（这道菜味道太淡了。→ ない→なさすぎる）
@@ -541,7 +541,7 @@ Verb masu-stem + 出す / 始める / 続ける
 
 ---
 
-## 全5文法の総整理||Summary of All 5 Grammar Points
+## 1–5 语法总整理||Summary of Grammar Points 1–5
 
 :::zh
 | 文法 | 接续 | 含义 | 词性 |
@@ -661,18 +661,18 @@ Change the word in parentheses to the appropriate すぎる form:
 1. このスマホは画面が大きくて、見（　　）。
 2. この道は夜暗くて、歩き（　　）。
 3. 彼の字は汚くて、読み（　　）。
-4. このカップは持ち（　　）い形をしている。
-5. 風邪を引き（　　）い体質だ。
-6. プラスチックは壊れ（　　）い素材だ。
+4. このカップは持ち（　　）形をしている。
+5. 風邪を引き（　　）体質だ。
+6. プラスチックは壊れ（　　）素材だ。
 :::
 
 :::en
 1. このスマホは画面が大きくて、見（　　）。(Big screen, easy to see)
 2. この道は夜暗くて、歩き（　　）。(Dark road, hard to walk)
 3. 彼の字は汚くて、読み（　　）。(Messy writing, hard to read)
-4. このカップは持ち（　　）い形をしている。(Easy to hold)
-5. 風邪を引き（　　）い体質だ。(Prone to colds)
-6. プラスチックは壊れ（　　）い素材だ。(Durable material)
+4. このカップは持ち（　　）形をしている。(Easy to hold)
+5. 風邪を引き（　　）体質だ。(Prone to colds)
+6. プラスチックは壊れ（　　）素材だ。(Durable material)
 :::
 
 <details>
@@ -759,7 +759,7 @@ Complete the sentences with 「〜方」:
 :::zh
 1. 赤ちゃんが急に泣き（　　）た。
 2. 来月から毎朝公園を走り（　　）ようと思う。
-3. 雨が降り（　　）たから、傘を持っていこう。
+3. 急に雨が降り（　　）たから、傘を持っていこう。
 4. 彼は10年間日本語を勉強し（　　）ている。
 5. 突然彼女が笑い（　　）た。何がおかしいんだろう。
 6. 桜が咲き（　　）た。もうすぐ春だ。
@@ -768,7 +768,7 @@ Complete the sentences with 「〜方」:
 :::en
 1. 赤ちゃんが急に泣き（　　）た。(The baby suddenly...)
 2. 来月から毎朝公園を走り（　　）ようと思う。(Starting next month, I plan to... run in the park every morning)
-3. 雨が降り（　　）たから、傘を持っていこう。(It suddenly started raining...)
+3. 急に雨が降り（　　）たから、傘を持っていこう。(It suddenly started raining...)
 4. 彼は10年間日本語を勉強し（　　）ている。(He has been studying for 10 years...)
 5. 突然彼女が笑い（　　）た。何がおかしいんだろう。(She suddenly burst out laughing...)
 6. 桜が咲き（　　）た。もうすぐ春だ。(The cherry blossoms have started to bloom...)
@@ -806,7 +806,7 @@ Complete the sentences with 「〜方」:
 4. 请告诉我去图书馆的路。（方）
 5. 他突然跑了起来。（出す）
 6. 她一直在唱歌，唱了一个小时。（続ける）
-7. 这个字太小了，很难看。（すぎる + にくい）
+7. 这个字太小了，很难看清。（すぎる + にくい）
 :::
 
 :::en

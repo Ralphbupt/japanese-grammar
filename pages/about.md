@@ -3,7 +3,7 @@
 ## 这是什么||What is this
 
 :::zh
-「日语语法笔记」是一份免费、双语（中文 + 日语）的 JLPT N5 → N1 语法学习材料，共 **{{LESSONS}} 课、{{POINTS}}+ 个语法点**。每个语法点包含：
+「日语语法笔记」是一份免费、双语（中文 + 英文）的 JLPT N5 → N1 语法学习材料，共 **{{LESSONS}} 课、{{POINTS}}+ 个语法点**。每个语法点包含：
 
 - **接续规则**：动词 / 形容词 / 名词的具体接续方式
 - **3+ 例句**：覆盖日常对话和考试常见语境
@@ -219,7 +219,7 @@ The 🤖 "Ask AI" side panel on lesson pages sends the current lesson plus your 
 - **Your own key never touches this site.** The site itself is static HTML on GitHub Pages. Your API key exists only in your browser on your device (localStorage by default; tick "keep for this tab only" and it is cleared when the tab closes).
 - **With your own key, requests go straight to the provider.** When you ask, your browser sends the lesson text and your question straight to the provider you picked (Anthropic, OpenAI, DeepSeek, Qwen… or Ollama on your own machine). Nothing sits in between.
 - **A browser-enforced allowlist.** Every page ships a Content-Security-Policy `connect-src` rule that only permits connections to this site, Google Analytics, the preset provider hosts, and localhost / 127.0.0.1. Even if a script on the page were tampered with, the browser would refuse to send data anywhere else.
-- **No plain-text keys.** Settings accept only https:// or local URLs, and changing a provider's host to a non-official domain shows a prominent warning.
+- **No plain-HTTP connections.** Settings accept only https:// or local URLs, and changing a provider's host to a non-official domain shows a prominent warning.
 - **Verify it yourself.** Open DevTools (F12) → Network and ask a question: with your own key, the only requests you will see go to that provider's domain. The panel's [entire source](https://github.com/Ralphbupt/japanese-grammar/blob/main/site/ai-assistant.js) is one file; reviews welcome.
 - **Fully local option.** To keep everything on your machine, run a local model with Ollama or LM Studio; the browser then only talks to localhost.
 
@@ -233,7 +233,7 @@ The free model costs you nothing; with your own key, billing is between you and 
 :::
 
 :::en
-**[Japanese Daily News](https://podcast.jpnotes.dev/)** is our companion podcast — slow Japanese news with English commentary, designed for learners. The website offers sentence-by-sentence listening, transcripts with furigana, while episodes are also available on Spotify / Apple Podcasts.
+**[Japanese Daily News](https://podcast.jpnotes.dev/)** is our companion podcast — slow Japanese news with English commentary, designed for learners. The website offers sentence-by-sentence listening and transcripts with furigana, and episodes are also available on Spotify / Apple Podcasts.
 :::
 
 ## 反馈与贡献||Feedback and contributions

@@ -28,7 +28,7 @@ This lesson covers N2 grammar for "emphatic evaluation" and "negative conjecture
 | 怪しい | あやしい | 可疑的；靠不住的（形容词）——「怪しい人」可疑的人；「天気が怪しい」天要变了//(i-adj) suspicious; dubious — 「怪しい人」 a suspicious person; 「天気が怪しい」 the weather looks iffy |
 | 済む | すむ | 了结；解决；不用……就行（自动词）——「〜ずに済む」不用……就解决了；「謝って済む問題じゃない」不是道歉就能了结的事//(v, intrans.) to be settled; to end; to get by (without) — 「〜ずに済む」 to get away without having to ~; 「謝って済む問題じゃない」 an apology won't settle this |
 | 贅沢 | ぜいたく | 奢侈；奢华（名、形容动词）——「贅沢を言う」挑三拣四；「たまの贅沢」偶尔奢侈一下//(n, na-adj) luxury; extravagance — 「贅沢を言う」 to be picky; 「たまの贅沢」 an occasional treat |
-| ボーナス | ぼーなす | 奖金（名）——日本公司通常夏冬各发一次；「ボーナスが出る」发奖金；「冬のボーナス」冬季奖金//(n) bonus (seasonal) — usually paid in summer and winter; 「ボーナスが出る」 bonuses are paid; 「冬のボーナス」 the winter bonus |
+| ボーナス | ボーナス | 奖金（名）——日本公司通常夏冬各发一次；「ボーナスが出る」发奖金；「冬のボーナス」冬季奖金//(n) bonus (seasonal) — usually paid in summer and winter; 「ボーナスが出る」 bonuses are paid; 「冬のボーナス」 the winter bonus |
 
 ---
 
@@ -39,7 +39,7 @@ This lesson covers N2 grammar for "emphatic evaluation" and "negative conjecture
 - 動詞普通形 + だけのことはある
 - い形容詞普通形 + だけのことはある
 - な形容詞語幹 + な + だけのことはある
-- 名詞 + （な）だけのことはある
+- 名詞 + だけのことはある
 
 ※ 也可以说「だけあって」「だけあり」作为中顿形式。
 :::
@@ -47,7 +47,7 @@ This lesson covers N2 grammar for "emphatic evaluation" and "negative conjecture
 - Verb plain form + だけのことはある
 - i-adjective plain form + だけのことはある
 - na-adjective stem + な + だけのことはある
-- Noun + (な) だけのことはある
+- Noun + だけのことはある
 
 ※ Can also be expressed as 「だけあって」「だけあり」 in mid-sentence.
 :::
@@ -108,14 +108,12 @@ This lesson covers N2 grammar for "emphatic evaluation" and "negative conjecture
 
 ### 接続||Conjugation
 :::zh
-- 動詞辞書形/た形 + だけは + 動詞（同一动词重复）
-- 動詞て形 + だけは + いる
+- 動詞辞書形 + だけは + 同一動詞（后面多为た形）
 
 ※ 常见搭配：「やるだけはやった」「聞くだけは聞いた」
 :::
 :::en
-- Verb dictionary/ta-form + だけは + Verb (same verb repeated)
-- Verb te-form + だけは + いる
+- Verb dictionary form + だけは + the same verb (usually in ta-form)
 
 ※ Common patterns: 「やるだけはやった」「聞くだけは聞いた」
 :::

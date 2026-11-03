@@ -415,7 +415,7 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
 - 读解题多用书面语法，听力题多用口语语法
 
 **4. 意思相近的语法看接续**
-- 「につれて」「にしたがって」「に伴って」意思接近时，看前面是名词还是动词
+- 「につれて」「にしたがって」「に伴って」前面名词、动词都能接，靠接续分不开：后项是"按照指示/规则"→只能用にしたがって；一次性的变化、书面通知（「移転に伴い」）→に伴って
 - 「わけがない」「はずがない」意思接近时，看是依据推断（はず）还是强烈否定（わけ）
 
 **5. 读解题的接续词**
@@ -454,7 +454,7 @@ This is the comprehensive N2 grammar review. We will review all N2 grammar cover
 - Reading passages use written grammar; listening uses spoken grammar
 
 **4. Similar grammar — check conjugation**
-- 「につれて」「にしたがって」「に伴って」 when meaning is similar, check if preceded by noun or verb
+- 「につれて」「にしたがって」「に伴って」 all take both nouns and verbs, so the conjugation won't decide it: "following instructions/rules" → only にしたがって; a one-off change or formal notice (「移転に伴い」) → に伴って
 - 「わけがない」「はずがない」 when meaning is similar, check inference from evidence (はず) vs strong denial (わけ)
 
 **5. Conjunctions in reading passages**

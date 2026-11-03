@@ -1,11 +1,11 @@
 # Lesson 67 – 話題・立場 — にしても〜にしても/はともかく/をめぐって/を問わず/を中心に/に応じて||Topic & Standpoint — にしても〜にしても/はともかく/をめぐって/を問わず/を中心に/に応じて
 
 :::zh
-这一课学习围绕"话题""立场""条件"的N2语法。「にしても〜にしても」「はともかく」表示不论哪种情况，「をめぐって」「を問わず」「を中心に」限定话题范围，「に応じて」表示根据条件灵活对应。这些在议论文和新闻中非常常见。
+这一课学习围绕"话题""立场""条件"的N2语法。「にしても〜にしても」表示不论哪种情况，「はともかく」表示把某事暂且放在一边，「をめぐって」「を問わず」「を中心に」限定话题范围，「に応じて」表示根据条件灵活对应。这些在议论文和新闻中非常常见。
 :::
 
 :::en
-This lesson covers N2 grammar related to "topics," "standpoints," and "conditions." 「にしても〜にしても」「はともかく」 express indifference to which case applies, 「をめぐって」「を問わず」「を中心に」 define the scope of a topic, and 「に応じて」 indicates flexible response to conditions. These are extremely common in essays and news.
+This lesson covers N2 grammar related to "topics," "standpoints," and "conditions." 「にしても〜にしても」 says the case doesn't matter, 「はともかく」 sets one matter aside, 「をめぐって」「を問わず」「を中心に」 define the scope of a topic, and 「に応じて」 indicates flexible response to conditions. These are extremely common in essays and news.
 :::
 
 ## 本课单词表||Vocabulary
@@ -212,7 +212,7 @@ This lesson covers N2 grammar related to "topics," "standpoints," and "condition
 | 表达 | 含义 | 区别 |
 |------|------|------|
 | を問わず | 不论…… | 正式，公告文体 |
-| にかかわらず | 不论…… | 同义，稍口语化 |
+| にかかわらず | 不论…… | 同义，同样正式；也常接「〜かどうか」「行く行かない」这类肯否并列 |
 | によらず | 不论…… | 较少见，书面 |
 
 > 「を問わず」前面经常是对立概念：男女を問わず、昼夜を問わず、有無を問わず
@@ -221,7 +221,7 @@ This lesson covers N2 grammar related to "topics," "standpoints," and "condition
 | Expression | Meaning | Difference |
 |------|------|------|
 | を問わず | regardless of | Formal; announcement-style |
-| にかかわらず | regardless of | Synonymous; slightly more colloquial |
+| にかかわらず | regardless of | Synonymous and just as formal; also common after 「〜かどうか」 or yes/no pairs like 「行く行かない」 |
 | によらず | regardless of | Less common; written |
 
 > 「を問わず」 is often preceded by contrasting pairs: 男女を問わず, 昼夜を問わず, 有無を問わず

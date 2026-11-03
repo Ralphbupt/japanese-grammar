@@ -224,7 +224,7 @@ This is **one of the biggest challenges** in N5-N4. All four conditional forms c
 | Noun | 〜**であれば** / 〜**なら** | 学生であれば |
 :::
 
-### 一类动詞假定形：う段→え段||Group 1 verb conditional: う-row → え-row
+### 一类动词假定形：う段→え段||Group 1 verb conditional: う-row → え-row
 
 | 辞书形 // Dictionary form | 假定形 // Conditional form |
 |--------|--------|

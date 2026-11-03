@@ -369,14 +369,14 @@ Restrictions:
 - する → せんばかり（「土下座せんばかりに謝る」）
 - 〜と言わんばかりに（简直就像在说……）
 
-※ 「ん」是文语否定助动词「ぬ」的音变，但这里并没有否定的意思，整体表示"眼看就要……"。
+※ 「ん」来自文语中表示推量、意志的助动词「む」（和第82课「んがため」的「ん」相同），不是否定，整体表示"眼看就要……"。接续和否定的「ない」一样（ない形），所以容易误以为是否定。
 :::
 :::en
 - Verb nai-stem + んばかりだ / んばかりに / んばかりの + noun (泣かない→泣かんばかり)
 - する → せんばかり (「土下座せんばかりに謝る」)
 - 〜と言わんばかりに (as if to say…)
 
-※ 「ん」 comes from the classical negative 「ぬ」, but here there is no negative meaning; the whole form means "on the verge of…".
+※ 「ん」 comes from the classical conjectural/volitional auxiliary 「む」 (the same 「ん」 as in 「んがため」, Lesson 82) — it is not a negative; the whole form means "on the verge of…". It attaches to the same stem as 「ない」, which is why it is easy to mistake for one.
 :::
 
 ### 含义||Meaning

@@ -342,13 +342,13 @@ Double negative → "It's not that I can't…" or "not impossible" — expresses
 ### 接続||Conjugation
 :::zh
 - めったに + 動詞ない形
-- めったに + ない（形容词/名词谓语）
+- 名詞 + は + めったに + ない（＝很少有……、难得）
 
 ※ 汉字写作「滅多に」，但一般用假名。
 :::
 :::en
 - めったに + Verb nai-form
-- めったに + ない (adjective/noun predicate)
+- Noun + は + めったに + ない (= there's hardly ever ~; rare)
 
 ※ The kanji is 「滅多に」, but hiragana is standard.
 :::

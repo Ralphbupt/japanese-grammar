@@ -352,11 +352,11 @@ This lesson covers grammar for "judgment," "conjecture," and "rhetorical questio
 |------|------|------|
 | ものか | no way / as if | Strong emotional denial |
 | わけがない | impossible | Rational denial based on logic |
-| はずがない | shouldn't / can't be | Denial based on reasoning |
+| はずがない | can't be (by reasoning) | Denial based on reasoning |
 
 > 「行くものか」= As if I'd go! (defiant / emotional)  
 > 「行くわけがない」= There's no way I'd go (logical judgment)  
-> 「行くはずがない」= I shouldn't / wouldn't go (based on circumstances)
+> 「行くはずがない」= He can't possibly go (judging from the circumstances)
 :::
 
 ---

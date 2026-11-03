@@ -66,7 +66,12 @@ After learning sonkeigo and kenjogo, the hard part isn't the grammar — it's **
 :::en
 **First meeting**:
 
-(template)
+```
+はじめまして。
+〇〇会社の 田中と申します。
+営業を担当させていただいております。
+本日はよろしくお願いいたします。
+```
 
 Breakdown:
 - **はじめまして**: Pleased to meet you (universal opener)
@@ -76,26 +81,29 @@ Breakdown:
 
 **Already met**:
 
-(template)
+```
+お世話になっております。
+〇〇会社の田中です。
+```
 
 **お世話になっております** is the **most common business opener** — phone, email, in-person. Literal: "thank you for your continued support." Function: standard greeting. **Never start a business conversation with こんにちは** — comes across as casual / distant.
 :::
 
 ### 例句||Example Sentences
 :::zh
-1. はじめまして、株式会社ABCの田中**と申します**。よろしくお願いいたします。
-2. お世話になっております。先日の件で**ご連絡いたしました**。
-3. お忙しいところ、恐れ入ります。少々お時間**よろしいでしょうか**。
-4. 本日は**お時間をいただきまして**、ありがとうございます。
-5. 改めまして、こちらの担当となりました鈴木**と申します**。
+1. はじめまして、株式会社ABCの田中**と申します**。よろしくお願いいたします。（初次见面，我是ABC股份有限公司的田中。请多关照。）
+2. お世話になっております。先日の件で**ご連絡いたしました**。（承蒙关照。我是为前几天那件事联系您的。）
+3. お忙しいところ、恐れ入ります。少々お時間**よろしいでしょうか**。（百忙之中打扰了。能占用您一点时间吗？）
+4. 本日は**お時間をいただきまして**、ありがとうございます。（今天感谢您抽出时间。）
+5. 改めまして、こちらの担当となりました鈴木**と申します**。（再次正式介绍一下，我是新担任这项工作的铃木。）
 :::
 
 :::en
-1. はじめまして、株式会社ABCの田中と申します。よろしくお願いいたします。
-2. お世話になっております。先日の件でご連絡いたしました。
-3. お忙しいところ、恐れ入ります。少々お時間よろしいでしょうか。
-4. 本日はお時間をいただきまして、ありがとうございます。
-5. 改めまして、こちらの担当となりました鈴木と申します。
+1. はじめまして、株式会社ABCの田中と申します。よろしくお願いいたします。(How do you do? I'm Tanaka from ABC Corporation. I look forward to working with you.)
+2. お世話になっております。先日の件でご連絡いたしました。(Thank you for your continued support. I'm contacting you about the matter from the other day.)
+3. お忙しいところ、恐れ入ります。少々お時間よろしいでしょうか。(Sorry to bother you when you're busy. Could I have a moment of your time?)
+4. 本日はお時間をいただきまして、ありがとうございます。(Thank you for your time today.)
+5. 改めまして、こちらの担当となりました鈴木と申します。(Let me introduce myself properly: I'm Suzuki, and I'll be handling this from now on.)
 :::
 
 ---
@@ -142,7 +150,7 @@ Breakdown:
 
 ```
 失礼いたします。
-（请挂电话——但等对方挂掉再放）
+（告辞了——说完等对方先挂断再放下电话）
 ```
 
 **「いらっしゃいますでしょうか」 vs 「いますか」**：
@@ -152,7 +160,44 @@ Breakdown:
 :::en
 Japanese business phone has an **almost-fixed protocol**. Memorize these 7 lines and you cover 90% of routine calls.
 
-(templates)
+**Answering the phone**:
+
+```
+1. はい、〇〇会社でございます。
+   (Hello, this is OO Company.)
+2. お世話になっております。
+   (Thank you for your continued support — the reply once the caller gives their name.)
+```
+
+**Calling out (introducing yourself)**:
+
+```
+お忙しいところ恐れ入ります。
+〇〇会社の田中でございますが、
+△△様はいらっしゃいますでしょうか。
+```
+
+**The person is out**:
+
+```
+(their company) 田中はただ今席を外しております。
+(you reply)     かしこまりました。
+                それでは、後ほどおかけ直しいたします。
+```
+
+**Leaving a message**:
+
+```
+恐れ入りますが、お戻りになりましたら、
+〇〇会社の田中までお電話いただけますでしょうか。
+```
+
+**Ending the call**:
+
+```
+失礼いたします。
+(Goodbye — then wait for the other side to hang up first.)
+```
 
 **「いらっしゃいますでしょうか」 vs 「いますか」**:
 In business calls, **never use 「いますか」** to ask if someone is available. Use 「いらっしゃいますでしょうか」 (most formal) or 「いらっしゃいますか」 (also OK).
@@ -160,21 +205,21 @@ In business calls, **never use 「いますか」** to ask if someone is availab
 
 ### 例句||Example Sentences
 :::zh
-1. はい、ABC商事**でございます**。
-2. いつも**お世話になっております**。XYZ株式会社の佐藤**でございますが**、田中部長**はいらっしゃいますでしょうか**。
-3. 申し訳ございません、田中は**ただ今、席を外しております**。
-4. ご伝言を**お預かりいたします**ので、お名前と**ご用件**をお願いいたします。
-5. 後ほど折り返し**お電話差し上げる**よう申し伝えます。
-6. お時間をいただきまして、ありがとうございました。失礼いたします。
+1. はい、ABC商事**でございます**。（您好，这里是ABC商事。）
+2. いつも**お世話になっております**。XYZ株式会社の佐藤**でございますが**、田中部長**はいらっしゃいますでしょうか**。（一直承蒙关照。我是XYZ股份有限公司的佐藤，请问田中部长在吗？）
+3. 申し訳ございません、田中は**ただ今、席を外しております**。（非常抱歉，田中现在不在座位上。）
+4. ご伝言を**お預かりいたします**ので、お名前と**ご用件**をお願いいたします。（我来为您留言，请告诉我您的姓名和事由。）
+5. 後ほど折り返し**お電話差し上げる**よう申し伝えます。（我会转告他稍后给您回电话。）
+6. お時間をいただきまして、ありがとうございました。失礼いたします。（感谢您抽出时间。那我先挂了。）
 :::
 
 :::en
-1. はい、ABC商事でございます。
-2. いつもお世話になっております。XYZ株式会社の佐藤でございますが、田中部長はいらっしゃいますでしょうか。
-3. 申し訳ございません、田中はただ今、席を外しております。
-4. ご伝言をお預かりいたしますので、お名前とご用件をお願いいたします。
-5. 後ほど折り返しお電話差し上げるよう申し伝えます。
-6. お時間をいただきまして、ありがとうございました。失礼いたします。
+1. はい、ABC商事でございます。(Hello, ABC Trading speaking.)
+2. いつもお世話になっております。XYZ株式会社の佐藤でございますが、田中部長はいらっしゃいますでしょうか。(Thank you for your continued support. This is Sato from XYZ Corporation — may I speak to Mr. Tanaka, the department head?)
+3. 申し訳ございません、田中はただ今、席を外しております。(I'm very sorry, Tanaka is away from his desk at the moment.)
+4. ご伝言をお預かりいたしますので、お名前とご用件をお願いいたします。(I'll take a message — may I have your name and what it's regarding?)
+5. 後ほど折り返しお電話差し上げるよう申し伝えます。(I'll ask him to call you back later.)
+6. お時間をいただきまして、ありがとうございました。失礼いたします。(Thank you for your time. Goodbye.)
 :::
 
 ---
@@ -222,38 +267,71 @@ Email: tanaka@xxx.co.jp
 | 先简单告知 | 取り急ぎ、ご連絡まで。 |
 | 通知附件 | 添付資料を送付させていただきます。 |
 | 等回复 | ご返信をお待ちしております。 |
-| 截止/最后 | 何卒よろしくお願い申し上げます。 |
+| 郑重结尾 | 何卒よろしくお願い申し上げます。 |
 :::
 
 :::en
 Japanese business emails follow a highly templated structure: **recipient → greeting → self-intro → body → closing → signature**.
 
-(template)
+```
+件名: ご面談の日程について（△△会社・田中）  ← precise subject line
+
+〇〇株式会社
+営業部 山田様              ← addressee (company + department + name + 様)
+
+いつもお世話になっております。
+△△株式会社の田中です。     ← greeting + who you are
+
+早速ですが、
+来週のお打ち合わせの件で、
+〇月△日（火）の15時はいかがでしょうか。
+ご都合がよろしければ、ご連絡をお待ちしております。
+
+以上、よろしくお願いいたします。
+
+──────────────
+△△株式会社  営業部
+田中 太郎
+電話: 03-XXXX-XXXX
+Email: tanaka@xxx.co.jp
+──────────────
+```
 
 **Common formulas by scenario**:
 
-(table)
+| Scenario | Phrase |
+|----------|--------|
+| Opening an email | お世話になっております。〇〇の田中です。 |
+| Making a request | 〜していただけますでしょうか。 |
+| Asking what they think | 〜いかがでしょうか。 |
+| Thanking | ご対応いただき、誠にありがとうございます。 |
+| Apologizing | 大変申し訳ございません。 |
+| Closing an email | 以上、よろしくお願いいたします。 |
+| A quick note for now | 取り急ぎ、ご連絡まで。 |
+| Sending attachments | 添付資料を送付させていただきます。 |
+| Awaiting a reply | ご返信をお待ちしております。 |
+| Formal closing | 何卒よろしくお願い申し上げます。 |
 :::
 
 ### 例句||Example Sentences
 :::zh
-1. お世話になっております。XYZ株式会社の鈴木でございます。
-2. 早速のご返信、誠にありがとうございます。
-3. 添付の資料を**ご確認いただけますでしょうか**。
-4. ご面倒をおかけしますが、何卒よろしくお願いいたします。
-5. **取り急ぎ**、〇月△日の打ち合わせの件、**ご連絡まで**。
-6. 本件、〇月△日（金）までに**ご回答いただけます**と幸いです。
-7. 何かご不明な点がございましたら、お気軽にお問い合わせください。
+1. お世話になっております。XYZ株式会社の鈴木でございます。（承蒙关照。我是XYZ股份有限公司的铃木。）
+2. 早速のご返信、誠にありがとうございます。（非常感谢您这么快回复。）
+3. 添付の資料を**ご確認いただけますでしょうか**。（能否请您确认一下附件资料？）
+4. ご面倒をおかけしますが、何卒よろしくお願いいたします。（给您添麻烦了，还请多多关照。）
+5. **取り急ぎ**、〇月△日の打ち合わせの件、**ご連絡まで**。（先简单通知一下〇月△日会议的事。）
+6. 本件、〇月△日（金）までに**ご回答いただけます**と幸いです。（关于本案，如能在〇月△日（周五）之前答复，将不胜感激。）
+7. 何かご不明な点がございましたら、お気軽にお問い合わせください。（如有任何不明之处，请随时咨询。）
 :::
 
 :::en
-1. お世話になっております。XYZ株式会社の鈴木でございます。
-2. 早速のご返信、誠にありがとうございます。
-3. 添付の資料をご確認いただけますでしょうか。
-4. ご面倒をおかけしますが、何卒よろしくお願いいたします。
-5. 取り急ぎ、〇月△日の打ち合わせの件、ご連絡まで。
-6. 本件、〇月△日（金）までにご回答いただけますと幸いです。
-7. 何かご不明な点がございましたら、お気軽にお問い合わせください。
+1. お世話になっております。XYZ株式会社の鈴木でございます。(Thank you for your continued support. This is Suzuki from XYZ Corporation.)
+2. 早速のご返信、誠にありがとうございます。(Thank you very much for your prompt reply.)
+3. 添付の資料をご確認いただけますでしょうか。(Could you please check the attached documents?)
+4. ご面倒をおかけしますが、何卒よろしくお願いいたします。(Sorry for the trouble, and thank you in advance.)
+5. 取り急ぎ、〇月△日の打ち合わせの件、ご連絡まで。(Just a quick note about the meeting on [date] for now.)
+6. 本件、〇月△日（金）までにご回答いただけますと幸いです。(I would be grateful if you could reply on this matter by Friday, [date].)
+7. 何かご不明な点がございましたら、お気軽にお問い合わせください。(If anything is unclear, please feel free to contact us.)
 :::
 
 ---
@@ -305,15 +383,38 @@ In Japanese business, **never directly say "no" or "I can't"** — it's very rud
 
 **4 universal cushions**:
 
-(table)
+| Cushion | Meaning | When to use |
+|---|---|---|
+| **恐れ入りますが、〜** | Excuse me, but… | Questions, requests, small apologies |
+| **申し訳ございませんが、〜** | I'm very sorry, but… | Apologies, refusals (more formal) |
+| **お手数ですが、〜** | Sorry to trouble you, but… | Asking someone to do something |
+| **差し支えなければ、〜** | If you don't mind… | Asking for sensitive information |
 
 **Soft refusal patterns** (never say "no" directly):
 
-(softening table)
+```
+Direct → softened
+
+❌ できません。           (I can't.)
+✓ 対応いたしかねます。   (I'm afraid we're unable to do that.)
+   → 「かねる」 = hard to do / unable to
+
+❌ ちがいます。           (That's wrong.)
+✓ 少々違うかと思います。 (I think it may be slightly different.)
+
+❌ 知りません。           (I don't know.)
+✓ あいにく、存じません。(I'm afraid I don't know.)
+   → 「存じ上げる」 is used only for knowing a person
+```
 
 **Apology levels**:
 
-(table)
+| Level | Phrase | When |
+|------|------|------|
+| Light | すみません | Everyday |
+| Medium | 失礼いたしました | Minor lapses |
+| Heavy | 申し訳ございません | Standard business apology |
+| Very heavy | 誠に申し訳ございません／お詫び申し上げます | Serious mistakes, complaints |
 :::
 
 ### 例句||Example Sentences
@@ -323,16 +424,16 @@ In Japanese business, **never directly say "no" or "I can't"** — it's very rud
 3. お手数ですが、こちらの書類に**ご記入いただけます**でしょうか。（麻烦您填写一下这份文件。）
 4. 差し支えなければ、ご年齢を**お聞かせいただけます**でしょうか。（如果方便，能问问您的年龄吗？）
 5. 大変申し訳ございません。次回からは**気をつけてまいります**。（非常抱歉，下次起会注意。）
-6. お忙しいところ、申し訳ございません。少々お時間**よろしいでしょうか**。
+6. お忙しいところ、申し訳ございません。少々お時間**よろしいでしょうか**。（百忙之中打扰，非常抱歉。能占用您一点时间吗？）
 :::
 
 :::en
-1. 恐れ入りますが、もう一度お名前を伺ってもよろしいでしょうか。
-2. 申し訳ございませんが、その日は別件がございまして、お受けいたしかねます。
-3. お手数ですが、こちらの書類にご記入いただけますでしょうか。
-4. 差し支えなければ、ご年齢をお聞かせいただけますでしょうか。
-5. 大変申し訳ございません。次回からは気をつけてまいります。
-6. お忙しいところ、申し訳ございません。少々お時間よろしいでしょうか。
+1. 恐れ入りますが、もう一度お名前を伺ってもよろしいでしょうか。(Excuse me, may I ask your name once more?)
+2. 申し訳ございませんが、その日は別件がございまして、お受けいたしかねます。(I'm very sorry, but I have another engagement that day, so I'm afraid I can't accept.)
+3. お手数ですが、こちらの書類にご記入いただけますでしょうか。(Sorry to trouble you, but could you fill in this form?)
+4. 差し支えなければ、ご年齢をお聞かせいただけますでしょうか。(If you don't mind, may I ask your age?)
+5. 大変申し訳ございません。次回からは気をつけてまいります。(I'm terribly sorry. I'll be careful from now on.)
+6. お忙しいところ、申し訳ございません。少々お時間よろしいでしょうか。(I'm very sorry to bother you when you're busy. Could I have a moment of your time?)
 :::
 
 ### 中文母语者易错点||Common Pitfalls for Chinese Speakers
@@ -364,13 +465,13 @@ In Japanese business, **never directly say "no" or "I can't"** — it's very rud
 :::
 
 :::en
-1. I'm Tanaka.
-2. Is Department Head Tanaka here?
-3. Sorry, please say it again.
-4. I can't do that.
-5. I don't know.
-6. Please do it that way.
-7. I'll email you later.
+1. 私は田中です。(I'm Tanaka.)
+2. 田中部長はいますか。(Is Department Head Tanaka here?)
+3. すみません、もう一度言ってください。(Sorry, please say it again.)
+4. できません。(I can't do that.)
+5. 知りません。(I don't know.)
+6. それでお願いします。(Please do it that way.)
+7. 後でメールします。(I'll email you later.)
 :::
 
 <details>

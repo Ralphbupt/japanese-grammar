@@ -63,7 +63,18 @@
 :::en
 **No rule — just memorize**. Easiest learned in parallel with sonkeigo:
 
-(table above)
+| Plain verb | **Sonkeigo** (others do it) | **Kenjogo** (I do it) | English |
+|------------|-----------------------------|-----------------------|---------|
+| 行く・来る | いらっしゃる | **参る** (まいる) / 伺う (うかがう) | go / come |
+| いる | いらっしゃる | **おる** | be (somewhere) |
+| 食べる・飲む | 召し上がる | **いただく** | eat / drink |
+| もらう | (none) | **いただく** | receive |
+| 言う | おっしゃる | **申す** / 申し上げる | say |
+| 見る | ご覧になる | **拝見する** (はいけんする) | see / look |
+| する | なさる | **いたす** / させていただく | do |
+| 知っている | ご存じだ | **存じている** (ぞんじている) | know |
+| 会う | (none) | **お目にかかる** | meet |
+| 借りる | (none) | **拝借する** (はいしゃくする) | borrow |
 
 **Notes**:
 - いらっしゃる covers "be/come/go" on the sonkeigo side; on the kenjogo side it splits: motion → 参る, location → おる
@@ -78,20 +89,20 @@
 3. 先生のご本を**拝見しました**。とても勉強になりました。（拜读了老师的书，受益匪浅。）
 4. お茶を**いただきます**。（我喝茶了／开动了。）
 5. その件は私から部長にご**説明いたします**。（这件事我向部长解释。）
-6. お客様、お名前は何と**おっしゃいます**か。— はい、佐藤**と申します**。（——客户怎么称呼？——我姓佐藤。）
+6. お客様、お名前は何と**おっしゃいます**か。— はい、佐藤**と申します**。（——请问您怎么称呼？——我姓佐藤。）
 7. 来週、御社（おんしゃ）に**伺っても**よろしいでしょうか。（下周可以拜访贵公司吗？）
-8. はじめてお目にかかります、よろしくお願いいたします。（初次见面，请多关照。）
+8. はじめてお目にかかります。よろしくお願いいたします。（初次见面，请多关照。）
 :::
 
 :::en
 1. 私は田中と申します。よろしくお願いいたします。(I'm Tanaka. Pleased to meet you.)
 2. 明日、東京から大阪へ参ります。(I'll travel from Tokyo to Osaka tomorrow.)
-3. 先生のご本を拝見しました。(I read your book, sensei.)
+3. 先生のご本を拝見しました。とても勉強になりました。(I read your book, sensei. I learned a lot from it.)
 4. お茶をいただきます。(I'll have some tea / itadakimasu.)
 5. その件は私から部長にご説明いたします。(I'll explain that matter to the department head.)
-6. お客様、お名前は何とおっしゃいますか。— はい、佐藤と申します。(— What's your name? — I'm Sato.)
+6. お客様、お名前は何とおっしゃいますか。— はい、佐藤と申します。(— May I have your name? — Yes, I'm Sato.)
 7. 来週、御社に伺ってもよろしいでしょうか。(May I visit your company next week?)
-8. はじめてお目にかかります、よろしくお願いいたします。(Nice to meet you for the first time.)
+8. はじめてお目にかかります。よろしくお願いいたします。(Nice to meet you for the first time.)
 :::
 
 ### 中文母语者易错点||Common Pitfalls for Chinese Speakers
@@ -134,7 +145,11 @@
 :::en
 **For verbs without a special humble form**:
 
-(table above)
+| Type | Formula | Example |
+|------|---------|---------|
+| **Native verbs** | お + masu-stem + します | お**待ち**します (I'll wait for you) |
+| **Sino-Japanese verbs** | ご + kanji compound + します | ご**案内**します (let me show you the way) |
+| **More formal version** | お／ご + 〜 + **いたします** | お**待ちいたします** (even more deferential) |
 
 **Two iron rules**:
 
@@ -186,7 +201,18 @@
 :::en
 **Special verbs vs. the お〜する template** — same rule as sonkeigo:
 
-(table)
+```
+If a special humble verb exists → you must use it
+
+❌ お見します          → wrong (見る → 拝見する)
+✓ 拝見します           → correct
+
+❌ お行きします        → wrong (行く → 参る／伺う)
+✓ 参ります／伺います   → correct
+
+❌ お言いします        → wrong (言う → 申す)
+✓ 申します             → correct
+```
 
 When a special humble verb exists, use it instead of the template.
 :::
@@ -213,7 +239,12 @@ When a special humble verb exists, use it instead of the template.
 :::en
 **Structure**: causative 〜(さ)せる + いただく → 〜させていただく
 
-(table)
+| Verb type | Formation | Example |
+|-----------|-----------|---------|
+| Type 1 | u-row → a-row + せていただく | 行く → 行か**せていただく** |
+| Type 2 | drop る + させていただく | 食べる → 食べ**させていただく** |
+| する | させていただく | 説明**させていただく** |
+| 来る | こ**させていただく** | 来**させていただく** |
 
 **Literal**: "Let me do (something)" — asking permission
 **Actual function**: the most formal way to say "I will do X" — frames it as "receiving permission/favor from you"
@@ -249,10 +280,10 @@ When a special humble verb exists, use it instead of the template.
 
 ```
 お客様にお礼状をお送りします。
-  → "我会给客户写感谢信" （主动）
+  → "我会给客户寄感谢信" （主动）
 
 お客様にお礼状を送らせていただきます。
-  → "请允许我给客户写感谢信" （得到对方默许）
+  → "请允许我给客户寄感谢信" （得到对方默许）
 ```
 
 **第二种语气更软、更恭敬，商务场合更常用**。但**别滥用**——日本人最近也开始觉得 〜させていただきます 用得过滥反而显得卑微/做作，关键场景用就好。
@@ -266,7 +297,13 @@ When a special humble verb exists, use it instead of the template.
 | You'll do something, **the other party authorized it** | 〜させていただきます ("thank you for letting me") |
 | You'll do something, **purely your initiative** | お〜します ("I'll do it") |
 
-(example)
+```
+お客様にお礼状をお送りします。
+  → "I'll send the customer a thank-you letter" (my own initiative)
+
+お客様にお礼状を送らせていただきます。
+  → "Allow me to send the customer a thank-you letter" (with the other side's tacit permission)
+```
 
 The second is softer / more deferential — more common in business. But **don't overuse** — natives are starting to find 〜させていただきます overused and somewhat affected. Save it for key moments.
 :::
@@ -309,7 +346,13 @@ The other party's / superior's action   → sonkeigo
 My / my-group's action                  → kenjogo
 ```
 
-(classic mix-up table)
+| Meaning | Wrong (mixed up) | Correct |
+|---------|------------------|---------|
+| I'll look at the materials you sent | 私が**ご覧になります** ❌ | 私が**拝見します** ✓ |
+| Have you eaten? | あなたが**いただきました**か ❌ | 召し上がりましたか ✓ |
+| I'll tell the manager | 私が**おっしゃいます** ❌ | 私が**申し上げます** ✓ |
+| The manager is here | 部長が**おります** ❌ | 部長が**いらっしゃいます** ✓ |
+| I'll go to your company | 私が**いらっしゃいます** ❌ | 私が**参ります／伺います** ✓ |
 
 **Mnemonic**:
 - See 私が ("I do") → kenjogo
@@ -332,11 +375,11 @@ My / my-group's action                  → kenjogo
 :::
 
 :::en
-1. I'll go to Osaka tomorrow. (参ります / いらっしゃいます)
-2. The department head is in the meeting room now. (おります / いらっしゃいます)
-3. I'll tell the teacher. (申し上げます / おっしゃいます)
-4. May I ask your name, customer? (伺います / うかがいになります)
-5. I'll look at this material. (拝見します / ご覧になります)
+1. 私は明日大阪に＿＿＿。(参ります / いらっしゃいます) — I'll go to Osaka tomorrow.
+2. 部長は今、会議室に＿＿＿。(おります / いらっしゃいます) — The department head is in the meeting room now.
+3. 私が先生に＿＿＿。(申し上げます / おっしゃいます) — I'll tell the teacher.
+4. お客様のお名前を＿＿＿。(伺います / うかがいになります) — May I ask your name, customer?
+5. 私はこの資料を＿＿＿。(拝見します / ご覧になります) — I'll look at this material.
 :::
 
 <details>

@@ -286,7 +286,7 @@ Expresses "it is the rule / it is customary that":
 :::
 
 <details>
-<summary>答案</summary>
+<summary>答案 / Answers</summary>
 
 :::zh
 1. ことになった（外部决定：公司录用）

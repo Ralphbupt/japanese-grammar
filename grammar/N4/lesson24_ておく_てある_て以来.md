@@ -242,7 +242,7 @@ Verb て-form + 以来
 :::zh
 1. 日本に来**て以来**、一度も国に帰っていない。（自从来了日本，一次都没回过国。）
 2. 大学を卒業し**て以来**、彼に会っていない。（自从大学毕业后，就没见过他。）
-3. あの事故があっ**て以来**、怖くて車に乗れない。（自从那次事故后，害怕得不敢开车。）
+3. あの事故があっ**て以来**、怖くて車に乗れない。（自从那次事故后，害怕得不敢坐车。）
 4. 子供が生まれ**て以来**、生活が変わった。（自从孩子出生后，生活就变了。）
 5. この薬を飲み始め**て以来**、調子がいい。（自从开始吃这个药，状态一直很好。）
 6. 日本語を勉強し始め**て以来**、日本の文化にも興味が出てきた。（自从开始学日语，对日本文化也产生了兴趣。）
@@ -253,7 +253,7 @@ Verb て-form + 以来
 :::en
 1. 日本に来**て以来**、一度も国に帰っていない。(Ever since coming to Japan, I haven't returned home once.)
 2. 大学を卒業し**て以来**、彼に会っていない。(Ever since graduating, I haven't seen him.)
-3. あの事故があっ**て以来**、怖くて車に乗れない。(Ever since that accident, I've been too scared to drive.)
+3. あの事故があっ**て以来**、怖くて車に乗れない。(Ever since that accident, I've been too scared to get in a car.)
 4. 子供が生まれ**て以来**、生活が変わった。(Ever since my child was born, life has changed.)
 5. この薬を飲み始め**て以来**、調子がいい。(Ever since I started taking this medicine, I've been feeling well.)
 6. 日本語を勉強し始め**て以来**、日本の文化にも興味が出てきた。(Ever since I started studying Japanese, I've become interested in Japanese culture too.)
@@ -272,7 +272,7 @@ Verb て-form + 以来
 | 语感 | 书面/正式 | 通用 | 口语也用 |
 | 例 | 来て以来、ずっと住んでいる | 来てから、買い物した | 来たばかりだ |
 
-> て以来の后面几乎都是"一直持续的状态"，不能接"一次性动作"。
+> て以来的后面几乎都是"一直持续的状态"，不能接"一次性动作"。
 > ❌ 来て以来、買い物した → ✅ 来てから、買い物した
 :::
 :::en
@@ -289,7 +289,7 @@ Verb て-form + 以来
 
 ---
 
-## 6. 时间表达总対比||6. Time Expressions — Complete Comparison
+## 6. 时间表达总对比||6. Time Expressions — Complete Comparison
 
 :::zh
 | 表达 | 时间点 | 含义 | 例 |
@@ -511,7 +511,7 @@ Choose the correct form based on the meaning (るところ/ているところ/�
 1. 窓が開けている。（想表达"窗户被人特意开着"）
 2. 日本に来て以来、日本語を勉強した。（想表达"自从来日本后一直在学"）
 3. 弟はゲームばかりする。（想表达"净是在打游戏"的不满）
-4. さっき食べたところだ。（想表达"刚来日本不久"的意思用ばかり）
+4. 日本に来たところだ。（想表达"来日本才几个月，还不久"）
 5. ビールが冷やしておいた。（想表达"我事先冰好了啤酒"）
 :::
 
@@ -519,7 +519,7 @@ Choose the correct form based on the meaning (るところ/ているところ/�
 1. 窓が開けている。(Intended: "the window has been deliberately left open")
 2. 日本に来て以来、日本語を勉強した。(Intended: "I've been studying ever since coming to Japan")
 3. 弟はゲームばかりする。(Intended: complaining that he "does nothing but play games")
-4. さっき食べたところだ。(Intended: "I only came to Japan recently," using ばかり)
+4. 日本に来たところだ。(Intended: "I came to Japan only a few months ago — still new here")
 5. ビールが冷やしておいた。(Intended: "I chilled the beer in advance")
 :::
 
@@ -530,20 +530,20 @@ Choose the correct form based on the meaning (るところ/ているところ/�
 1. ❌ 開けている → ✅ 開け**てある**（有意为之的结果状态用てある）
 2. ❌ 勉強した（一次性） → ✅ 勉強**している**（て以来后面要接持续状态）
 3. △ 语法没错但不满语气不够 → ✅ ゲームをし**てばかりいる**（てばかりいる更强调持续的不满）
-4. ❌ 题目和意思不匹配 → ✅ 日本に来た**ばかり**だ。（ところだ更即时，ばかり更主观"不久前"）
+4. ❌ たところだ只用于"刚刚、此刻" → ✅ 日本に来た**ばかり**だ。（ばかり可以指主观上的"不久前"，几个月也行）
 5. ❌ が → ✅ ビール**を**冷やしておいた（ておく用「を」标记宾语，てある才用「が」）
 :::
 :::en
 1. ❌ 開けている → ✅ 開け**てある** (Use てある for intentional resultant state)
 2. ❌ 勉強した (one-time) → ✅ 勉強**している** (て以来 must be followed by a continuing state)
 3. △ Grammar is okay but lacks nuance → ✅ ゲームをし**てばかりいる** (てばかりいる emphasizes ongoing dissatisfaction)
-4. ❌ Mismatch between form and meaning → ✅ 日本に来た**ばかり**だ (ところだ is more immediate; ばかり is more subjective "not long ago")
+4. ❌ たところだ only means "just this moment" → ✅ 日本に来た**ばかり**だ (ばかり can mean a subjective "not long ago" — even a few months)
 5. ❌ が → ✅ ビール**を**冷やしておいた (ておく uses を for the object; てある uses が)
 :::
 
 </details>
 
-### G. ている/てある/ておく 選択||G. Choose ている / てある / ておく
+### G. ている/てある/ておく 选择||G. Choose ている / てある / ておく
 
 :::zh
 根据场景选择最合适的表达：

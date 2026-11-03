@@ -16,7 +16,7 @@
 
 ---
 
-## 1. 〜ようにする（努力做到……/注意做……）||〜ようにする (Make an Effort To... / Be Careful To...)
+## 1. 〜ようにする（努力做到……/注意做……）||1. 〜ようにする (Make an Effort To... / Be Careful To...)
 
 ### 接续||Conjugation
 
@@ -74,7 +74,7 @@
 
 ---
 
-## 2. 〜ようになる（变得……/开始能……）||〜ようになる (Come To... / Have Reached the Point Where...)
+## 2. 〜ようになる（变得……/开始能……）||2. 〜ようになる (Come To... / Have Reached the Point Where...)
 
 ### 接续||Conjugation
 
@@ -142,7 +142,7 @@ Expresses a **natural change of state** — "gradually come to be able to do som
 
 ---
 
-## 3. 〜ように（目的 — "为了……"）||〜ように (Purpose — "So That..." / "In Order To...")
+## 3. 〜ように（目的 — "为了……"）||3. 〜ように (Purpose — "So That..." / "In Order To...")
 
 ### 接续||Conjugation
 
@@ -226,7 +226,7 @@ Expresses a **natural change of state** — "gradually come to be able to do som
 
 ---
 
-## 4. 〜ように言う / 〜ように頼む（转述请求/命令）||〜ように言う / 〜ように頼む (Relaying Requests / Commands)
+## 4. 〜ように言う / 〜ように頼む（转述请求/命令）||4. 〜ように言う / 〜ように頼む (Relaying Requests / Commands)
 
 ### 含义||Meaning
 
@@ -256,7 +256,7 @@ Expresses a **natural change of state** — "gradually come to be able to do som
 
 ---
 
-## 5. 〜ようにする/なる 相関表達汇总||Summary of ように Expressions
+## 5. 〜ようにする/なる 相关表达汇总||5. Summary of ように Expressions
 
 :::zh
 | 表达 | 含义 | 例句 |
@@ -301,7 +301,7 @@ Expresses a **natural change of state** — "gradually come to be able to do som
 :::
 
 <details>
-<summary>答案</summary>
+<summary>答案 / Answers</summary>
 
 1. ようにして（有意识的努力 → ようにする） // ようにして (conscious effort → ようにする)
 2. ようになった（自然变化 → ようになる） // ようになった (natural change → ようになる)

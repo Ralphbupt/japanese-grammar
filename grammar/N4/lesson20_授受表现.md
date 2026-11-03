@@ -30,7 +30,7 @@ Japanese "giving" and "receiving" is not like Chinese where a single word covers
 
 ---
 
-## 1. 物的授受（基础）||Giving and Receiving Objects (Basics)
+## 1. 物的授受（基础）||1. Giving and Receiving Objects (Basics)
 
 ### 三个"给"||The Three "Giving" Verbs
 
@@ -146,7 +146,7 @@ Both express "I received something," but the **perspective differs**:
 
 ---
 
-## 2. 敬语版本||Honorific Equivalents
+## 2. 敬语版本||2. Honorific Equivalents
 
 :::zh
 | 普通 | 尊敬/谦让 | 场景 |
@@ -178,7 +178,7 @@ Both express "I received something," but the **perspective differs**:
 
 ---
 
-## 3. 动作的授受（〜てあげる/てもらう/てくれる）||Action-Based Giving and Receiving (〜てあげる/てもらう/てくれる)
+## 3. 动作的授受（〜てあげる/てもらう/てくれる）||3. Action-Based Giving and Receiving (〜てあげる/てもらう/てくれる)
 
 :::zh
 这才是重点！不只是"给东西"，还能表达"为某人做动作"。
@@ -296,7 +296,7 @@ The same event — "my friend helped me move" — expressed three ways:
 
 ---
 
-## 4. 请求表达 整理||Request Expressions — Summary
+## 4. 请求表达 整理||4. Request Expressions — Summary
 
 :::zh
 从随意到礼貌：
@@ -330,7 +330,7 @@ From casual to formal:
 
 ---
 
-## 5. 方向图解||Direction Diagram
+## 5. 方向图解||5. Direction Diagram
 
 :::zh
 ```
@@ -362,26 +362,30 @@ From casual to formal:
 
 :::zh
 在日语中，"我方"（うち）和"外人"（そと）的概念很重要：
-- 我的家人帮了别人 = 家人があげた / してあげた
-- 别人帮了我的家人 = 别人がくれた / してくれた
-- 我家人从别人那得到帮助 = 家人がもらった / してもらった
+- 我的家人给了/帮了别人 = 母が隣の人に〜をあげた / 〜てあげた
+- 别人给了/帮了我的家人 = 隣の人が母に〜をくれた / 〜てくれた
+- 我家人从别人那得到东西或帮助 = 母が隣の人に〜をもらった / 〜てもらった
+
+> 家人算"我方"，所以别人给我妈妈东西也用くれる。
 :::
 
 :::en
 The concept of in-group (うち) and out-group (そと) is important in Japanese:
-- My family helped someone else = 家人があげた / してあげた
-- Someone else helped my family = 別人がくれた / してくれた
-- My family received help from someone else = 家人がもらった / してもらった
+- My family gave to / helped someone else = 母が隣の人に〜をあげた / 〜てあげた
+- Someone else gave to / helped my family = 隣の人が母に〜をくれた / 〜てくれた
+- My family received something or help from someone else = 母が隣の人に〜をもらった / 〜てもらった
+
+> Family counts as "my side," so someone giving my mother something also takes くれる.
 :::
 
 ---
 
-## 6. 常见错误||Common Mistakes
+## 6. 常见错误||6. Common Mistakes
 
 :::zh
 | 错误 | 正确 | 原因 |
 |------|------|------|
-| ❌ 先生が教えてあげた | ✅ 先生が教えてくださった | 对上级不能用あげる（居高临下） |
+| ❌ 先生が教えてあげた（想说"老师教了我"） | ✅ 先生が教えてくださった | 别人为我做要用くれる，老师用尊敬语くださる；あげる是给别人 |
 | △ 母に料理を作ってあげた | ✅ 母に料理を作った / 母のために作った | 对长辈用あげる显得居高临下，家人间勉强OK但最好避免 |
 | △ 友達は私に本をくれた | ✅ 友達**が**私に本をくれた | 两句都正确：は把朋友当话题，が强调"是谁给的"（新信息/感谢对象） |
 | ❌ 先生にてもらった | ✅ 先生**に**教え**てもらった** | 中间要有动词て形 |
@@ -395,7 +399,7 @@ The concept of in-group (うち) and out-group (そと) is important in Japanese
 :::en
 | Wrong | Correct | Reason |
 |------|------|------|
-| ❌ 先生が教えてあげた | ✅ 先生が教えてくださった | Can't use あげる toward superiors (condescending) |
+| ❌ 先生が教えてあげた (meaning "the teacher taught me") | ✅ 先生が教えてくださった | Someone doing something for me takes くれる — for a teacher, honorific くださる; あげる is giving to others |
 | △ 母に料理を作ってあげた | ✅ 母に料理を作った / 母のために作った | あげる toward elders sounds condescending — OK-ish with family but better avoided |
 | △ 友達は私に本をくれた | ✅ 友達**が**私に本をくれた | Both are correct: は makes the friend the topic, が highlights who gave it (new info / focus of gratitude) |
 | ❌ 先生にてもらった | ✅ 先生**に**教え**てもらった** | Need a verb in て-form between |
@@ -430,7 +434,7 @@ The concept of in-group (うち) and out-group (そと) is important in Japanese
 :::
 
 <details>
-<summary>答案</summary>
+<summary>答案 / Answers</summary>
 
 1. **くれた**（妈妈给我→くれる） // **くれた** (Mom gave to me → くれる)
 2. **もらった**（我从妈妈那得到→もらう） // **もらった** (I received from Mom → もらう)
@@ -471,14 +475,14 @@ The concept of in-group (うち) and out-group (そと) is important in Japanese
 :::zh
 1. 私は友達に本をくれた。（想表达"我给了朋友书"）
 2. 先生が説明してあげた。（想表达"老师为我讲解了"）
-3. 友達は道を教えてくれた。（助词问题）
+3. 友達に道を教えてくれた。（助词问题）
 4. 母にてもらった。（想表达"请妈妈做了"）
 :::
 
 :::en
 1. 私は友達に本をくれた。(Intended: "I gave my friend a book")
 2. 先生が説明してあげた。(Intended: "The teacher explained it for me")
-3. 友達は道を教えてくれた。(Particle problem)
+3. 友達に道を教えてくれた。(Particle problem)
 4. 母にてもらった。(Intended: "I had Mom do it")
 :::
 
@@ -488,14 +492,14 @@ The concept of in-group (うち) and out-group (そと) is important in Japanese
 :::zh
 1. ❌ くれた → ✅ **あげた**（我给别人用あげる，不能用くれる）
 2. ❌ あげた → ✅ **くれた/くださった**（老师为我做，要用くれる/尊敬语くださる）
-3. ❌ 友達は → ✅ 友達**が**（くれる的主语用が）
+3. ❌ 友達に → ✅ 友達**が**（くれる的给予者是主语，用が/は；「人に」是もらう的用法）
 4. ❌ にてもらった → ✅ 母に**作って**もらった（缺少动词て形）
 :::
 
 :::en
 1. ❌ くれた → ✅ **あげた** (when I give to someone else, use あげる, not くれる)
 2. ❌ あげた → ✅ **くれた/くださった** (the teacher did it for me, so use くれる / honorific くださる)
-3. ❌ 友達は → ✅ 友達**が** (the subject of くれる takes が)
+3. ❌ 友達に → ✅ 友達**が** (the giver is the subject of くれる and takes が/は; 「人に」 goes with もらう)
 4. ❌ にてもらった → ✅ 母に**作って**もらった (the verb's て-form is missing)
 :::
 

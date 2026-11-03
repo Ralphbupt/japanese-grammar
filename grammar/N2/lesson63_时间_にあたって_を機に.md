@@ -60,7 +60,7 @@ This lesson covers N2-level expressions for time and occasion. 「にあたっ�
 ### 例句||Example Sentences
 :::zh
 1. 新しいプロジェクトを始める**にあたって**、いくつか注意点を確認しましょう。（在开始新项目之际，让我们确认几个注意事项。）
-2. 開会**にあたり**、一言ご挨拶を申し上げます。（在开会之际，我讲几句话。）
+2. 開会**にあたり**、一言ご挨拶を申し上げます。（值此开幕之际，请允许我讲几句话。）
 3. 留学する**にあたって**、いろいろな準備が必要だ。（在留学之际，需要做各种准备。）
 4. 就任**にあたり**、抱負を述べさせていただきます。（在就任之际，请允许我谈谈抱负。）
 5. この建物を使用する**にあたって**、いくつかルールがあります。（在使用这栋建筑之际，有几条规定。）
@@ -68,7 +68,7 @@ This lesson covers N2-level expressions for time and occasion. 「にあたっ�
 :::en
 1. 新しいプロジェクトを始める**にあたって**、いくつか注意点を確認しましょう。(On the occasion of starting a new project, let's confirm a few points of caution.)
 2. 開会**にあたり**、一言ご挨拶を申し上げます。(On the occasion of the opening, allow me to say a few words.)
-3. 留学する**にあたって**、いろいろな準備が必要だ。(When preparing to study abroad, various preparations are needed.)
+3. 留学する**にあたって**、いろいろな準備が必要だ。(Going abroad to study takes all kinds of preparation.)
 4. 就任**にあたり**、抱負を述べさせていただきます。(On the occasion of my inauguration, allow me to share my aspirations.)
 5. この建物を使用する**にあたって**、いくつかルールがあります。(When using this building, there are several rules.)
 :::
@@ -211,7 +211,7 @@ This lesson covers N2-level expressions for time and occasion. 「にあたっ�
 2. 結婚**を機に**、タバコをやめた。(On the occasion of getting married, I quit smoking.)
 3. 子供が生まれた**のをきっかけに**、生活を見直した。(Triggered by the birth of my child, I reconsidered my lifestyle.)
 4. 病気**をきっかけに**、健康に気をつけるようになった。(Triggered by an illness, I started paying attention to my health.)
-5. 東京オリンピック**を機に**、スポーツ施設が増えた。(Taking the opportunity of the Tokyo Olympics, sports facilities increased.)
+5. 東京オリンピック**を機に**、スポーツ施設が増えた。(The Tokyo Olympics brought an increase in sports facilities.)
 6. 友人の一言**をきっかけに**、プログラミングの勉強を始めた。(Triggered by a friend's remark, I started studying programming.)
 :::
 

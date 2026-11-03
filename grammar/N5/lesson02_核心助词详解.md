@@ -46,7 +46,7 @@
 | 作る | つくる | 做；制作（他动词）——「料理を作る」做饭；「友達を作る」交朋友//(v, trans.) to make; to cook; to build — 「料理を作る」 to cook; 「友達を作る」 to make friends |
 | 卒業する | そつぎょうする | 毕业（自动词）——学校用「を」；「大学を卒業する」大学毕业//(v, intrans.) to graduate — the school takes 「を」; 「大学を卒業する」 to graduate from university |
 
-## 1. を（宾语助词）||を — Object Particle
+## 1. を（宾语助词）||1. を — Object Particle
 
 ### 含義||Meaning
 
@@ -100,7 +100,7 @@ Marks what the action is performed on.
 - コーヒー**を**飲む。(Drink coffee.)
 :::
 
-#### 用法②：経过/通过的场所||Usage ②: Space traversed by movement
+#### 用法②：经过/通过的场所||Usage ②: Space traversed by movement
 
 :::zh
 移动类动词（歩く、走る、飛ぶ等）经过的路径用を。
@@ -159,7 +159,7 @@ With verbs of leaving (出る, 卒業する, 降りる, etc.), を marks the pla
 
 ---
 
-## 2. に（多功能助词）||に — Multi-function Particle (The Trickiest One!)
+## 2. に（多功能助词）||2. に — Multi-function Particle (The Trickiest One!)
 
 ### 含義||Meaning
 
@@ -362,7 +362,7 @@ Change:       医者になる        (become what?)
 
 ---
 
-## 3. で（手段・场所・原因）||で — Means / Venue / Cause Particle
+## 3. で（手段・场所・原因）||3. で — Means / Venue / Cause Particle
 
 ### 含義||Meaning
 
@@ -526,7 +526,7 @@ Key distinction from に: で emphasizes **actively doing something there**.
 
 ---
 
-## 4. の（连接助词）||の — Linking Particle
+## 4. の（连接助词）||4. の — Linking Particle
 
 ### 含義||Meaning
 
@@ -584,7 +584,7 @@ Core function: **linking two nouns** to express possession, category, material, 
 - 数学**の**問題 (math problem)
 :::
 
-#### 用法③：材質||Usage ③: Material
+#### 用法③：材质||Usage ③: Material
 
 :::zh
 - 木**の**机（木桌子）
@@ -625,7 +625,7 @@ Core function: **linking two nouns** to express possession, category, material, 
 
 ---
 
-## 5. も（也・全否定・强調）||も — "Also" / Total Negation / Emphasis
+## 5. も（也・全否定・强调）||5. も — "Also" / Total Negation / Emphasis
 
 ### 含義||Meaning
 
@@ -668,7 +668,7 @@ Core function: **linking two nouns** to express possession, category, material, 
 - 田中さん**も**来ますか？(Is Tanaka coming too?)
 :::
 
-#### 用法②：疑問词 + も + 否定 = 全否定||Usage ②: Question word + も + negative = total negation
+#### 用法②：疑问词 + も + 否定 = 全否定||Usage ②: Question word + も + negative = total negation
 
 :::zh
 - 何**も**食べなかった。（什么都没吃。）
@@ -711,7 +711,7 @@ Core function: **linking two nouns** to express possession, category, material, 
 
 ---
 
-## 6. から・まで（起点・终点）||から / まで — Starting Point / Endpoint
+## 6. から・まで（起点・终点）||6. から / まで — Starting Point / Endpoint
 
 ### 含義||Meaning
 
@@ -801,7 +801,7 @@ Note the distinction between まで and までに:
 
 ---
 
-## 7. へ（方向助词）||へ — Direction Particle
+## 7. へ（方向助词）||7. へ — Direction Particle
 
 ### 含義||Meaning
 
@@ -827,7 +827,7 @@ Similar to に, but emphasizes the direction of movement. に stresses **the arr
 
 ---
 
-## 8. と（並列・引用・共同）||と — Together / Quotation / Listing
+## 8. と（并列・引用・共同）||8. と — Together / Quotation / Listing
 
 ### 含義||Meaning
 
@@ -900,7 +900,7 @@ Similar to に, but emphasizes the direction of movement. に stresses **the arr
 
 ---
 
-## 9. 语气助词（よ・ね・な・わ）||よ / ね / な / わ — Sentence-final Particles
+## 9. 语气助词（よ・ね・な・わ）||9. よ / ね / な / わ — Sentence-final Particles
 
 ### 含義||Meaning
 
@@ -965,7 +965,7 @@ Sentence-final particles convey the speaker's attitude: **よ** = informing/aler
 - 難しいです**よね**。(It's difficult, right? → I find it hard — don't you?)
 :::
 
-#### な = 自言自語/感叹（男性多用）||な = Talking to oneself / exclamation (more masculine)
+#### な = 自言自语/感叹（男性多用）||な = Talking to oneself / exclamation (more masculine)
 
 :::zh
 - 明日も仕事か。嫌だ**な**。（明天也要工作啊。真讨厌。）
@@ -1103,7 +1103,7 @@ Fill in は or が:
 5. **が**（疑问词做主语/对象用が）
 6. **は**（富士山是话题，"是日本最高的山"是评述）
 7. **が**（朋友来玩这件事，朋友是新信息首次出场）
-8. **は**、**は**（对比用法：猫喜欢，但狗有点怕）
+8. **は**、**は**（对比用法：猫喜欢，但对狗有点应付不来）
 :::
 :::en
 1. **は** (あの人は誰ですか → "As for that person, who are they?" — topic)
@@ -1113,7 +1113,7 @@ Fill in は or が:
 5. **が** (question word as subject/object → が)
 6. **は** (Mt. Fuji is the topic; "is the tallest mountain" is the comment)
 7. **が** (friend coming is new information — first mention)
-8. **は**、**は** (contrastive: like cats, but dogs are a bit scary)
+8. **は**、**は** (contrastive: I like cats, but I'm not so good with dogs)
 :::
 
 </details>
@@ -1153,7 +1153,7 @@ Fill in the correct particle (は、が、を、に、で、の、も、から�
 
 </details>
 
-### C. 造句練習||C. Sentence Construction
+### C. 造句练习||C. Sentence Construction
 
 :::zh
 1. 用「は…が…」的句型造一个句子（例：象は鼻が長い。）
@@ -1170,7 +1170,7 @@ Fill in the correct particle (は、が、を、に、で、の、も、から�
 
 ---
 
-## 知識点总結卡片||Key Points Summary Card
+## 知识点总结卡片||Key Points Summary Card
 
 :::zh
 ```

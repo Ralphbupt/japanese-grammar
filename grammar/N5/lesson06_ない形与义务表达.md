@@ -24,7 +24,7 @@
 | 遅刻 | ちこく | 迟到（名、可作动词）——指人迟到，电车晚点用「遅れる」；「授業に遅刻する」上课迟到；「遅刻しそうだ」快迟到了//(n, suru-verb) being late — of people; trains running late is 「遅れる」; 「授業に遅刻する」 to be late for class; 「遅刻しそうだ」 I'm about to be late |
 | 準備 | じゅんび | 准备（名、可作动词）——「準備ができる」准备好了；「試験の準備」备考//(n, suru-verb) preparation; getting ready — 「準備ができる」 to be ready; 「試験の準備」 exam prep |
 
-## 1. ない形（否定形）||ない Form (Negative Form)
+## 1. ない形（否定形）||1. ない Form (Negative Form)
 
 ### 含義||Meaning
 
@@ -35,9 +35,9 @@
 The plain negative form of verbs, meaning "don't do…" / "won't do…". It is the base for many grammar patterns.
 :::
 
-### 変形規則||Conjugation rules
+### 变形规则||Conjugation rules
 
-#### 二類動詞：去る+ない||Group 2: Drop る + ない
+#### 二类动词：去る+ない||Group 2: Drop る + ない
 
 :::zh
 - 食べる → 食べ**ない**
@@ -50,7 +50,7 @@ The plain negative form of verbs, meaning "don't do…" / "won't do…". It is t
 - 起きる → 起き**ない**
 :::
 
-#### 三類動詞||Group 3
+#### 三类动词||Group 3
 
 :::zh
 - する → **しない**
@@ -61,7 +61,7 @@ The plain negative form of verbs, meaning "don't do…" / "won't do…". It is t
 - 来る → **来ない** (こない)
 :::
 
-#### 一類動詞：う段→あ段+ない||Group 1: う-row → あ-row + ない
+#### 一类动词：う段→あ段+ない||Group 1: う-row → あ-row + ない
 
 :::zh
 | 辞书形结尾 | ない形 | 例子 |
@@ -99,7 +99,7 @@ The plain negative form of verbs, meaning "don't do…" / "won't do…". It is t
 > 買う→買**わ**ない、会う→会**わ**ない、歌う→歌**わ**ない
 :::
 
-### 超級特殊：ある||Super special exception: ある
+### 超级特殊：ある||Super special exception: ある
 
 :::zh
 ある → **ない**（不是あらない！直接变成ない）
@@ -137,19 +137,19 @@ This is the only Group 1 verb with an irregular ない form (する→しない 
 
 ---
 
-## 2. 〜なければならない / 〜なければいけない（必須）||〜なければならない / 〜なければいけない (Must / Have to)
+## 2. 〜なければならない / 〜なければいけない（必须）||2. 〜なければならない / 〜なければいけない (Must / Have to)
 
 ### 接続||Conjugation
 
 :::zh
 动词ない形 → ない去い+ければならない
 
-即：動詞なけれ**ば**なら**ない**
+即：动词（去掉ない）+ なけれ**ば**なら**ない**
 :::
 :::en
 Verb ない form → remove い + ければならない
 
-In other words: verb stem + なけれ**ば**なら**ない**
+In other words: verb (minus ない) + なけれ**ば**なら**ない**
 :::
 
 ### 含義||Meaning
@@ -186,7 +186,7 @@ In other words: verb stem + なけれ**ば**なら**ない**
 7. この書類にサインし**なければいけません**。(You must sign this document.)
 :::
 
-### 口語縮略形（非常常用！）||Colloquial contractions (very common!)
+### 口语缩略形（非常常用！）||Colloquial contractions (very common!)
 
 :::zh
 | 书面/正式 | 口语 | 更随意 |
@@ -211,7 +211,7 @@ In other words: verb stem + なけれ**ば**なら**ない**
 > In casual speech, 「〜なきゃ」 alone is enough — the rest is dropped. You'll hear this constantly in everyday conversation and anime.
 :::
 
-### 類似表達：〜ないといけない||Similar expression: 〜ないといけない
+### 类似表达：〜ないといけない||Similar expression: 〜ないといけない
 
 :::zh
 - 宿題をし**ないといけない**。（必须做作业。）
@@ -247,7 +247,7 @@ The two are almost identical in meaning; the difference is subtle:
 
 ---
 
-## 3. 〜なくてもいい（不必）||〜なくてもいい (Don't have to)
+## 3. 〜なくてもいい（不必）||3. 〜なくてもいい (Don't have to)
 
 ### 接続||Conjugation
 
@@ -283,7 +283,7 @@ Verb ない form → change ない to なくて + もいい
 2. 全部食べ**なくてもいい**。(You don't have to eat all of it.)
 3. 急が**なくてもいい**です。ゆっくりでいいですよ。(You don't have to rush. Take your time.)
 4. そんなに心配し**なくてもいい**。(You don't have to worry so much.)
-5. 靴を脱が**なくてもいいですか**？(Do I not need to take off my shoes?)
+5. 靴を脱が**なくてもいいですか**？(Is it okay if I don't take off my shoes?)
 6. 全部覚え**なくてもいい**。大事なところだけでいい。(You don't need to memorize everything — just the important parts.)
 7. 今日は準備し**なくてもいい**。(You don't need to prepare today.)
 :::
@@ -309,7 +309,7 @@ These two are **exact opposites**:
 
 ---
 
-## 4. 义务与许可 完整对照表||Complete Permission & Obligation Reference
+## 4. 义务与许可 完整对照表||4. Complete Permission & Obligation Reference
 
 :::zh
 | 表达 | 含义 | 例句 |
@@ -326,7 +326,7 @@ These two are **exact opposites**:
 义务    なければならない   なくてもいい
 ```
 
-> 注意对角线关系："可以做"的对立面不是"必须做"，而是"不可以做"。
+> 注意每一行的对立关系："可以做"的对立面不是"必须做"，而是"不可以做"。
 :::
 :::en
 | Expression | Meaning | Example |
@@ -343,12 +343,12 @@ Permission  てもいい             てはいけない
 Obligation  なければならない      なくてもいい
 ```
 
-> Note the diagonal relationships: the opposite of "may do" is not "must do" — it's "must not do".
+> Note the contrast within each row: the opposite of "may do" is not "must do" — it's "must not do".
 :::
 
 ---
 
-## 5. 〜ないで vs 〜なくて（ない形的两种て形）||〜ないで vs 〜なくて (Two て forms of the ない form)
+## 5. 〜ないで vs 〜なくて（ない形的两种て形）||5. 〜ないで vs 〜なくて (Two て forms of the ない form)
 
 ### 接続||Conjugation
 
@@ -361,7 +361,7 @@ Obligation  なければならない      なくてもいい
 - Verb ない form → change ない to なくて (like い-adjective: い→くて)
 :::
 
-### 〜ないで = "不做A，做了B"（動作の替代/伴随状態）||〜ないで = "without doing A, did B" (substitution / manner)
+### 〜ないで = "不做A，做了B"（动作的替代/伴随状态）||〜ないで = "without doing A, did B" (substitution / manner)
 
 :::zh
 1. 朝ご飯を食べ**ないで**、学校に行った。（没吃早饭就去了学校。）
@@ -378,7 +378,7 @@ Obligation  なければならない      なくてもいい
 5. 薬を飲ま**ないで**、寝てしまった。(I fell asleep without taking my medicine.)
 :::
 
-### 〜なくて = "因为没做A，所以B"（原因）/ 並列否定||〜なくて = "because I didn't do A, B" (reason) / parallel negation
+### 〜なくて = "因为没做A，所以B"（原因）/ 并列否定||〜なくて = "because I didn't do A, B" (reason) / parallel negation
 
 :::zh
 1. 時間がなく**て**、行けなかった。（因为没时间，所以没能去。→ 原因）
@@ -395,7 +395,7 @@ Obligation  なければならない      なくてもいい
 5. 漢字が読め**なくて**、困った。(I was troubled because I couldn't read the kanji. → reason)
 :::
 
-### 辨析口訣||Quick rule of thumb
+### 辨析口诀||Quick rule of thumb
 
 :::zh
 > **ないで**：描述行为方式（"没做A这个动作，直接做了B"）
@@ -430,7 +430,7 @@ Test: replace the connector in English —
 
 ## 今日练习||Today's Practice
 
-### A. 翻译成日語（用ている）||A. Translate into Japanese (using ている)
+### A. 翻译成日语（用ている）||A. Translate into Japanese (using ている)
 
 :::zh
 1. 我正在看电视。
@@ -496,7 +496,7 @@ Test: replace the connector in English —
 
 </details>
 
-### C. 変成ない形||C. Make the ない form
+### C. 变成ない形||C. Make the ない form
 
 1. 行く →
 2. 飲む →

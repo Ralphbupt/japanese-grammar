@@ -222,7 +222,7 @@ Restrictions:
 
 > 「会社に勤めるかたわら、小説を書いている」⭕（长期，本职＋另一种活动）  
 > 「テレビを見るかたわら、ご飯を食べた」❌ → 「テレビを見ながら」⭕（一时的同时动作）  
-> 「かたわら」和「かたがた」只差一个字，N1常拿来互相当干扰项：长期的工作看「かたわら」，一次拜访看「かたがた」。
+> 「かたわら」和「かたがた」都以「かた」开头、字形相近，N1常拿来互相当干扰项：长期的工作看「かたわら」，一次拜访看「かたがた」。
 :::
 :::en
 | Expression | Meaning | Difference |
@@ -234,7 +234,7 @@ Restrictions:
 
 > 「会社に勤めるかたわら、小説を書いている」⭕ (long-term: main job plus another activity)  
 > 「テレビを見るかたわら、ご飯を食べた」❌ → 「テレビを見ながら」⭕ (two things at one moment)  
-> 「かたわら」 and 「かたがた」 differ by one kana, and N1 uses each as a distractor for the other: a long-term job points to 「かたわら」, a single visit to 「かたがた」.
+> 「かたわら」 and 「かたがた」 both begin with 「かた」 and look alike, and N1 uses each as a distractor for the other: a long-term job points to 「かたわら」, a single visit to 「かたがた」.
 :::
 
 ---

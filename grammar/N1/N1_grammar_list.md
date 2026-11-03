@@ -5,7 +5,7 @@ N1 全部约 100 个语法点的清单。N1 是 JLPT 的最高级别，考的是
 :::
 
 :::en
-A full cheatsheet of ……100 N1 grammar points. N1 is the top JLPT level, testing the advanced written Japanese of newspapers, editorials, official documents, speeches and fiction — listed in lesson order, covering time, limits and scope, examples and pairs, emphasis, concession, conditions, purpose and cause, evaluation, emotion, manner, classical forms and more.
+A full cheatsheet of about 100 N1 grammar points. N1 is the top JLPT level, testing the advanced written Japanese of newspapers, editorials, official documents, speeches and fiction — listed in lesson order, covering time, limits and scope, examples and pairs, emphasis, concession, conditions, purpose and cause, evaluation, emotion, manner, classical forms and more.
 :::
 
 :::zh

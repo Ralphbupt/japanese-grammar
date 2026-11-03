@@ -16,7 +16,7 @@ A full cheatsheet of ~74 N4 grammar points (excluding overlap with N5). N4 is th
 > JLPT N4 has about 74 core grammar points (not counting what N5 already covers). It builds on N5 with more complex expressions such as the causative, the passive, and giving and receiving.
 :::
 
-## 条件表达（N5 で学んだ ば/たら/なら の応用）||Conditionals (building on the ば/たら/なら learned in N5)
+## 条件表达（N5 学过的 ば/たら/なら 的延伸）||Conditionals (building on the ば/たら/なら learned in N5)
 
 - [ ] 〜ても — 即使~也~ // 〜ても — even if ~
 - [ ] 〜場合は — 在~情况下 // 〜場合は — in case of ~ / if ~ happens

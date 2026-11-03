@@ -150,7 +150,7 @@ This lesson covers N2-level expressions for assertion and judgment. 「ないわ
 | 表达 | 含义 | 文体 | 确信度 |
 |------|------|------|------|
 | に相違ない | 一定是 | 非常正式书面 | ★★★★★ |
-| に違いない | 一定是 | 书面/口语 | ★★★★ |
+| に違いない | 一定是 | 书面/口语 | ★★★★★ |
 | はずだ | 应该是 | 通用 | ★★★ |
 | だろう | 大概是 | 通用 | ★★ |
 
@@ -162,7 +162,7 @@ This lesson covers N2-level expressions for assertion and judgment. 「ないわ
 | Expression | Meaning | Register | Certainty |
 |------|------|------|------|
 | に相違ない | undoubtedly | Very formal/written | ★★★★★ |
-| に違いない | must be | Written/spoken | ★★★★ |
+| に違いない | must be | Written/spoken | ★★★★★ |
 | はずだ | should be | General | ★★★ |
 | だろう | probably | General | ★★ |
 

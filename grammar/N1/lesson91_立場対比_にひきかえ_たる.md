@@ -1,11 +1,11 @@
 # Lesson 91 – 立場・対比・その他 — にひきかえ/ともあろう/たる（もの）/ではあるまいし/と相まって/に則って||Stance, Contrast & More — にひきかえ/ともあろう/たる（もの）/ではあるまいし/と相まって/に則って
 
 :::zh
-这是N1语法的最后一课，收集了几个不好归类、但考试常出的语法。「にひきかえ」把两件性质相反的事对照起来，带有说话人的褒贬；「ともあろう」和「たる（もの）」都围绕"身份、地位"：前者批评有身份的人做了不该做的事，后者说"既然是这种身份，就应该……"；「ではあるまいし」表示"又不是……（所以）……"，用来劝告或责备，虽然形式古老，却主要用于口语；「と相まって」表示两个因素互相作用、效果叠加；「に則って」表示遵照法律、规则、传统等规范行事。前三个的关键是说话人的评价，后两个是新闻、公文里的书面表达。
+这是N1语法的最后一课，收集了几个不好归类、但考试常出的语法。「にひきかえ」把两件性质相反的事对照起来，带有说话人的褒贬；「ともあろう」和「たる（もの）」都围绕"身份、地位"：前者批评有身份的人做了不该做的事，后者说"既然是这种身份，就应该……"；「ではあるまいし」表示"又不是……（所以）……"，用来劝告或责备，虽然形式古老，却主要用于口语；「と相まって」表示两个因素互相作用、效果叠加；「に則って」表示遵照法律、规则、传统等规范行事。前四个的关键是说话人的评价，后两个是新闻、公文里的书面表达。
 :::
 
 :::en
-This is the last N1 grammar lesson, a set of patterns that don't fit neatly into one group but come up often on the test. 「にひきかえ」 sets two opposite things side by side, with the speaker's approval or disapproval; 「ともあろう」 and 「たる（もの）」 are both about status and position — the first criticises someone of standing for doing something unworthy of it, the second says "anyone in that position ought to…"; 「ではあるまいし」 means "it's not as if…, so…", used to advise or scold, and despite its old-fashioned form it belongs mostly to speech; 「と相まって」 means two factors work together and add to each other's effect; and 「に則って」 means acting in accordance with a law, rule or tradition. The first few turn on the speaker's judgment; the last two are written expressions from news and official documents.
+This is the last N1 grammar lesson, a set of patterns that don't fit neatly into one group but come up often on the test. 「にひきかえ」 sets two opposite things side by side, with the speaker's approval or disapproval; 「ともあろう」 and 「たる（もの）」 are both about status and position — the first criticises someone of standing for doing something unworthy of it, the second says "anyone in that position ought to…"; 「ではあるまいし」 means "it's not as if…, so…", used to advise or scold, and despite its old-fashioned form it belongs mostly to speech; 「と相まって」 means two factors work together and add to each other's effect; and 「に則って」 means acting in accordance with a law, rule or tradition. The first four turn on the speaker's judgment; the last two are written expressions from news and official documents.
 :::
 
 ## 本课单词表||Vocabulary

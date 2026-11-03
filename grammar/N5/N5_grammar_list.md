@@ -93,8 +93,8 @@ A full cheatsheet of all ~70 N5 grammar points. Print it for your desk or use it
 
 - [ ] 〜でしょう/〜だろう — 推测 // 〜でしょう/〜だろう — probably (conjecture)
 - [ ] 〜かもしれない — 也许 // 〜かもしれない — might, maybe
-- [ ] 〜そうだ（様態）— 看起来要~ // 〜そうだ (appearance) — looks like ~ / seems about to ~
-- [ ] 〜そうだ（伝聞）— 听说~ // 〜そうだ (hearsay) — I heard that ~
+- [ ] 〜そうだ（样态）— 看起来要~ // 〜そうだ (appearance) — looks like ~ / seems about to ~
+- [ ] 〜そうだ（传闻）— 听说~ // 〜そうだ (hearsay) — I heard that ~
 
 ## 说明与理由||Explanation and Reasons
 
