@@ -308,3 +308,7 @@ body.quiz-busy .quiz-about { display: none; }
 .q-point-row { display: grid; grid-template-columns: 2.6em 1fr; gap: .6rem; margin-top: .3rem; line-height: 1.7; }
 .q-point-k { color: var(--text-muted); font-size: .88em; padding-top: .1em; }
 .q-why { white-space: pre-line; }
+
+/* After a set with listening: one quiet line pointing at the podcast */
+.q-podcast { margin: .9rem .2rem 0; font-size: .92rem; color: var(--text-muted); }
+.q-podcast a { color: var(--link); }

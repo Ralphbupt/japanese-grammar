@@ -748,6 +748,20 @@
     toTop();
   }
 
+  // podcast.jpnotes.dev in the reader's language, filtered to the matching
+  // level (N5/N4 → the beginner N5–N4 episodes, N3 and up → N4–N3), with UTM
+  // tags so the podcast's GA counts it (see podcastUrl in build.js).
+  function podcastLine() {
+    var lv = /^N[45]$/.test(LEVEL || '') ? 'N5-N4' : 'N4-N3';
+    var u = 'https://podcast.jpnotes.dev/' + (EN ? '' : 'zh/') + '?level=' + lv +
+      '&utm_source=jpnotes&utm_medium=web&utm_campaign=listening&utm_content=listening-result';
+    var lvTxt = lv.replace('-', '–');
+    return '<p class="q-podcast">🎧 ' + t('继续练听力：', 'Keep listening: ') +
+      '<a href="' + u.replace(/&/g, '&amp;') + '" target="_blank" rel="noopener">' +
+      t('每天一则日语新闻（' + lvTxt + '）', 'a Japanese news story every day (' + lvTxt + ')') + '</a>' +
+      t('，逐句讲解，附中文翻译', ', explained sentence by sentence') + '</p>';
+  }
+
   function shareBtn() { return window.jpShare ? '<button class="q-btn" data-act="share">' + t('分享成绩', 'Share my score') + '</button>' : ''; }
   function shareScore(el) {
     var o = app._share || {};
@@ -778,6 +792,9 @@
     }
     h += '<div class="q-actions">' + (bad.length ? '<button class="q-btn" data-act="retry">' + t('重做错题', 'Redo the misses') + '</button>' : '') +
       '<button class="q-btn q-btn-primary" data-act="again">' + t('再来一组', 'Another set') + '</button></div></div>';
+    // After a set with listening in it, one quiet line pointing at the podcast's
+    // episodes at this level (no pop-up, nothing in the way).
+    if (res.some(function (r) { return isCk(Q[r.id]); })) h += podcastLine();
     app._share = { text: t('我在 jpnotes.dev 做了一组 JLPT ' + LEVEL + ' 练习题，' + res.length + ' 题对了 ' + ok + ' 题。免费题库，每题都有解析：', 'I just did a JLPT ' + LEVEL + ' practice set on jpnotes.dev: ' + ok + '/' + res.length + ' right. Free questions, each with an explanation:'), src: 'quiz_result' };
     S.session = null; save();
     app._last = { kind: s.kind, label: s.label, bad: bad.map(function (r) { return r.id; }) };
