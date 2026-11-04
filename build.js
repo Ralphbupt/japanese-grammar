@@ -2590,7 +2590,7 @@ ${SETTINGS_SCRIPT}`;
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Japanese Grammar Notes — Free JLPT N5 to N1 Grammar Lessons | 日语语法笔记</title>
-<meta name="description" content="Free JLPT N5–N1 Japanese grammar lessons: every grammar point with conjugation rules, example sentences with audio, comparisons of confusable patterns, practice questions and Anki decks. 中文版：免费日语语法笔记，N5 到 N1。">
+<meta name="description" content="Free JLPT N5–N1 grammar lessons, listening practice and mock tests: examples with audio, explanations for every answer, Anki decks. No sign-up. 中文版免费。">
 <meta name="keywords" content="Japanese grammar, JLPT N2, N5, N4, N3, 日语语法, 日本語文法, grammar notes, spaced repetition, 语法笔记">
 <link rel="canonical" href="${SITE}">
 
@@ -3154,7 +3154,7 @@ html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
     const ovMeta = {
       en: {
         title: `JLPT ${level} Grammar — ${lessons.length} Free Lessons, ${totalPoints}+ Grammar Points with Examples`,
-        desc: `Every JLPT ${level} grammar point in ${lessons.length} free lessons: how each pattern conjugates, what it means, example sentences with audio, side-by-side comparisons of confusable grammar, and practice questions with answers.`,
+        desc: `Every JLPT ${level} grammar point in ${lessons.length} free lessons: conjugation, meaning, examples with audio, comparisons of confusable grammar, and practice questions.`,
         name: `JLPT ${level} Grammar`, home: "Japanese Grammar Notes", keywords: `JLPT ${level} grammar, ${level} grammar list, JLPT ${level} grammar points, ${level} Japanese grammar lessons`,
       },
       zh: {
@@ -3328,7 +3328,7 @@ ${AI_SCRIPT}
     const table = (k) => `<div class="table-scroll"><table class="gl-table"><thead><tr><th><span class="lang-zh">语法</span><span class="lang-en">Pattern</span></th><th><span class="lang-zh">意思</span><span class="lang-en">Meaning</span></th><th><span class="lang-zh">课</span><span class="lang-en">Lesson</span></th></tr></thead><tbody>${rows[k].map((r) =>
       `<tr><td><a href="${SITE}${r.id}/#${encodeURIComponent(r.slug)}" lang="ja">${esc(r.pattern)}</a>${r.romaji ? `<span class="gl-romaji lang-en">${esc(r.romaji)}</span>` : ""}</td><td><span class="lang-zh">${esc(r.zh)}</span><span class="lang-en">${esc(r.en)}</span></td><td><a href="${SITE}${r.id}/">${r.lesson}</a></td></tr>`).join("")}</tbody></table></div>`;
     const glMeta = {
-      en: { title: `Japanese Grammar List — All ${total} JLPT N5 to N1 Grammar Points`, desc: `Every Japanese grammar point from JLPT N5 to N1 on one page: ${total} patterns with romaji and meaning, grouped by level, each linking to a lesson with conjugation rules, examples with audio and comparisons.`, h1: "Japanese Grammar List: JLPT N5 to N1", crumb: "Grammar list", home: "Japanese Grammar Notes",
+      en: { title: `Japanese Grammar List — All ${total} JLPT N5 to N1 Grammar Points`, desc: `Every Japanese grammar point from JLPT N5 to N1 on one page: ${total} patterns with romaji and meaning, by level, each linking to a full lesson with audio.`, h1: "Japanese Grammar List: JLPT N5 to N1", crumb: "Grammar list", home: "Japanese Grammar Notes",
         lead: `All ${total} grammar points taught on this site, from N5 to N1, one row each. Click a pattern for its lesson: how it attaches, what it means, examples with audio and how it differs from look-alikes. For one level as a printable checklist, use the level's checklist page.` },
       zh: { title: `日语语法大全 — JLPT N5 到 N1 全部 ${total} 个语法点总结`, desc: `日语语法大全：JLPT N5、N4、N3、N2、N1 全部 ${total} 个语法点一页看完，按级别分组，每个语法点附意思并链接到详细讲解（接续、例句带发音、易混辨析）。`, h1: "日语语法大全：JLPT N5 到 N1", crumb: "语法大全", home: "日语语法笔记",
         lead: `本站 N5 到 N1 的全部 ${total} 个语法点，一行一个。点语法名进入对应课文：接续、含义、带发音的例句和易混辨析。想按级别打勾复习，用各级的语法清单。` },
@@ -3423,7 +3423,7 @@ ${AI_SCRIPT}
     const guidesMeta = {
       en: {
         title: "Confusing Japanese Grammar Pairs Explained (は vs が, に vs で …) & JLPT Exam Guide",
-        desc: `Side-by-side guides to the Japanese grammar pairs learners mix up most (は vs が, に vs で, から vs ので, ように vs ために …) plus a JLPT December exam-day guide. ${compareGuides.length} comparison pages, free.`,
+        desc: `Free side-by-side guides to the Japanese grammar learners mix up most (は vs が, に vs で, から vs ので …) plus a JLPT December exam guide. ${compareGuides.length} comparisons.`,
         name: "Guides", home: "Japanese Grammar Notes",
       },
       zh: {
@@ -3539,7 +3539,7 @@ ${AI_SCRIPT}
     const aboutMeta = {
       en: {
         title: "About Japanese Grammar Notes — Who Makes It, Sources & License",
-        desc: "Who makes jpnotes.dev, why, which references it draws on, and how to report a mistake or contribute. Free, open-source JLPT N5–N1 grammar notes under CC BY-NC 4.0, with conjugation rules, examples, comparisons and practice.",
+        desc: "Who makes jpnotes.dev, why, which references it uses, and how to report a mistake or contribute. Free JLPT N5–N1 notes and practice under CC BY-NC 4.0.",
         keywords: "about jpnotes.dev, Japanese grammar notes, JLPT self-study, open source",
         name: "About Japanese Grammar Notes", site: "Japanese Grammar Notes", crumb: "About",
       },
@@ -3906,7 +3906,7 @@ ${lessonList}</section>`;
     const meta = {
       en: {
         title: `JLPT ${level} Practice Questions — ${ckLevels.includes(level) ? "Listening, " : ""}Vocabulary, Grammar & Reading, with Explanations`,
-        desc: `Free JLPT ${level} practice: ${count} exam-style questions — ${ckLevels.includes(level) ? "listening with audio, " : ""}kanji reading, vocabulary, grammar, sentence order and reading — with instant answers, an explanation for every wrong option, and a review list that brings back what you missed.`,
+        desc: `Free JLPT ${level} practice: ${count} exam-style questions — ${ckLevels.includes(level) ? "listening with audio, " : ""}kanji, vocabulary, grammar and reading — with an explanation for every option.`,
         h1: `JLPT ${level} Practice Questions`, crumb: `${level} Practice`,
         lead: `Exam-style ${level} questions in every format of the test${ckLevels.includes(level) ? ", listening included" : " except listening"}. Answer, see why each option is right or wrong, and the ones you miss come back a few days later.`,
         nav: navLinks(practiceId, true),
@@ -3936,7 +3936,7 @@ ${lessonList}</section>`;
       const ckMeta = {
         en: {
           title: `JLPT ${level} Listening Practice — Free Audio Questions with Transcripts`,
-          desc: `Free JLPT ${level} listening practice online: ${recs} recordings in every listening format of the test, with audio you can replay, a transcript with furigana and translation, and an explanation for every option.`,
+          desc: `Free JLPT ${level} listening practice: ${recs} recordings in every test format, with replayable audio, transcripts with furigana, and every option explained. No sign-up.`,
           h1: `JLPT ${level} Listening Practice`, crumb: `${level} Listening`,
           lead: `Every listening format of the ${level}, in original recordings. Play, answer, then read the transcript and see why each option is right or wrong.`,
           nav: navLinks(listeningId, true),
@@ -3959,7 +3959,7 @@ ${lessonList}</section>`;
     const cardsMeta = {
       en: {
         title: `JLPT ${level} Grammar Flashcards Online — Spaced Repetition, Free`,
-        desc: `Learn every JLPT ${level} grammar point with free online flashcards: meaning, examples with furigana and audio, and Anki-style spaced repetition in your browser — no app or account.`,
+        desc: `Free JLPT ${level} grammar flashcards: meaning, examples with furigana and audio, and Anki-style spaced repetition in your browser. No app or account.`,
         h1: `JLPT ${level} Grammar Flashcards`, crumb: `${level} Flashcards`,
         lead: `One card per grammar point in the lessons. Recall it, check the meaning and examples, rate yourself — cards come back just before you'd forget them.`,
         nav: navLinks(cardsId, true),
@@ -3982,7 +3982,7 @@ ${lessonList}</section>`;
     const mockMeta = {
       en: {
         title: `JLPT ${level} Mock Test Online — Timed${hasCk ? ", Listening Included" : ""}, with Scores and Explanations`,
-        desc: `Free timed JLPT ${level} mock test in the real format (vocabulary, grammar, reading${hasCk ? " and listening with audio" : ""}), with an estimated score against the pass marks, a breakdown by question type, and explanations for every question.`,
+        desc: `Free timed JLPT ${level} mock test in the real format${hasCk ? ", listening included" : ""}: an estimated score against the pass marks and every question explained.`,
         h1: `JLPT ${level} Mock Test`, crumb: `${level} Mock test`,
         lead: `Original questions in the real test's order and timing, not in the practice bank. No answers until you submit; then an estimated score, where the time went, and an explanation for every question.`,
         nav: navLinks(mockId, true),
@@ -4031,7 +4031,7 @@ ${lessonList}</section>`;
   const hubMeta = {
     en: {
       title: "JLPT Practice Tests Online — N5 to N1 Questions, Mock Tests & Flashcards",
-      desc: "Free JLPT practice in your browser: exam-style questions for every section except listening, timed mock tests with estimated scores, and grammar flashcards with spaced repetition. No sign-up.",
+      desc: "Free JLPT practice in your browser: exam-style questions with listening, timed mock tests with estimated scores, and grammar flashcards. No sign-up.",
       h1: "Practice", crumb: "Practice", nav: "",
       lead: "Everything on this site you do rather than read. Pick your level; progress stays in this browser.",
     },
@@ -4100,7 +4100,7 @@ ${lessonList}</section>`;
   console.log(`  Generated ${stubCount} day → lesson redirect stubs`);
 
   // ─── Sitemap ───
-  const homeMod = gitLastModTime("schedule.md") || today;
+  const homeMod = gitLastModTime("build.js") || today;  // the home page is generated by build.js
   const sitemapUrls = [`  <url>
     <loc>${SITE}</loc>
     <lastmod>${homeMod}</lastmod>
