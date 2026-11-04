@@ -191,6 +191,8 @@ Japanese society distinguishes **the listener's status + the formality of the si
 4. 先生はパソコンを**お使いになります**か。（老师您用电脑吗？）
 5. お客様、こちらで少々**お待ちになって**ください。（客人，请在这边稍等。）
 6. 社長は新しいプロジェクトを**ご検討になっています**。（社长正在研究新项目。）
+
+> 提示：请对方做某事时，服务场景的标准说法是「お書き**ください**」「お待ち**ください**」（お＋ます形＋ください）；「お〜になってください」也对，只是稍啰嗦。例 6 日常更常说「検討**されて**います」或「ご検討**なさって**います」。
 :::
 
 :::en
@@ -200,13 +202,15 @@ Japanese society distinguishes **the listener's status + the formality of the si
 4. 先生はパソコンをお使いになりますか。(Sensei, do you use a computer?)
 5. お客様、こちらで少々お待ちになってください。(Customer, please wait here a moment.)
 6. 社長は新しいプロジェクトをご検討になっています。(The president is reviewing a new project.)
+
+> Tip: when asking someone to do something, the standard service phrasing is 「お書き**ください**」「お待ち**ください**」 (お + masu-stem + ください); 「お〜になってください」 is correct, just a little wordy. For example 6, 「検討**されて**います」 or 「ご検討**なさって**います」 is more common in everyday use.
 :::
 
 ### 辨析||Comparison
 :::zh
 **特殊敬语动词 vs お〜になる 模板**：
 
-如果一个动词**有特殊敬语形式**，**必须用特殊敬语形式**，不能套通用模板。
+如果一个动词**有特殊敬语形式**，**优先用特殊敬语形式**。有些动词套模板也常用（如「お飲みになる」「お休みになる」），但下面这几个套模板是错的：
 
 ```
 ❌ お食べになります        → 错（食べる 有特殊敬语 召し上がる）
@@ -228,7 +232,7 @@ Japanese society distinguishes **the listener's status + the formality of the si
 :::en
 **Special honorific verbs vs. お〜になる template**:
 
-When a verb **has a special honorific form**, you **must use that form**, not the universal template.
+When a verb **has a special honorific form**, **prefer that form**. A few verbs are also commonly used with the template (e.g. 「お飲みになる」「お休みになる」), but the ones below are wrong with it:
 
 ```
 ❌ お食べになります        → wrong (食べる has the special form 召し上がる)
@@ -265,8 +269,8 @@ When a verb **has a special honorific form**, you **must use that form**, not th
 **客气度阶梯**：
 
 ```
-特殊敬语动词 ＞ お〜になる ＞ 〜（ら）れる ＞ 丁寧語
-（最郑重）                              （最一般）
+特殊敬语动词 ≈ お〜になる ＞ 〜（ら）れる ＞ 丁寧語
+（最郑重，两者同一级）                    （最一般）
 ```
 
 - 商务场合、对客户 → 用 **特殊敬语动词 / お〜になる**
@@ -278,7 +282,7 @@ The passive form 〜(ら)れる can also express **light respect** — less form
 
 | Verb type | Formation | Example |
 |-----------|-----------|---------|
-| Type 1 | u-row → a-row + れる | 行く → 行か**れる** |
+| Type 1 | u-column → a-column + れる | 行く → 行か**れる** |
 | Type 2 | drop る + られる | 食べる → 食べ**られる** |
 | する | される | 出張**される** |
 | 来る | こ**られる** | 来**られる** |
@@ -286,8 +290,8 @@ The passive form 〜(ら)れる can also express **light respect** — less form
 **Politeness scale**:
 
 ```
-Special honorifics > お〜になる > 〜(ら)れる > 丁寧語
-(most formal)                              (least)
+Special honorifics ≈ お〜になる > 〜(ら)れる > 丁寧語
+(most formal, same level)                  (least)
 ```
 
 - Business / clients → **special honorifics or お〜になる**

@@ -23,7 +23,7 @@ This lesson covers N1 grammar for purpose and cause. For purpose, 「べく」 a
 | 過ち | あやまち | 过错；失误（名）——道德上或判断上的错误，比「間違い」郑重；「過ちを犯す」犯错；「過ちを認める」承认错误//(n) mistake; wrongdoing — a moral or judgement error, weightier than 「間違い」; 「過ちを犯す」 to make a mistake; 「過ちを認める」 to admit one's fault |
 | 口うるさい | くちうるさい | 爱唠叨；挑剔（形容词）——对别人的小事说个不停；「口うるさい母親」爱唠叨的母亲；「口うるさく注意する」唠唠叨叨地提醒//(i-adj) nagging; fussy — going on and on about small things; 「口うるさい母親」 a nagging mother; 「口うるさく注意する」 to keep telling someone off |
 | 前例 | ぜんれい | 先例；前例（名）——过去同类的例子；「前例がない」史无前例；「前例にならう」按先例办//(n) precedent — a previous case of the same kind; 「前例がない」 unprecedented; 「前例にならう」 to follow precedent |
-| 詰めかける | つめかける | 蜂拥而来；挤到（自动词）——很多人涌到某个地方；「ファンが詰めかける」粉丝蜂拥而至；「報道陣が詰めかける」记者云集//(v, intrans.) to throng; to crowd into — many people gathering at one place; 「ファンが詰めかける」 fans flock to; 「報道陣が詰めかける」 the press crowd in |
+| 詰めかける | つめかける | 蜂拥而来；挤到（自动词）；「ファンが詰めかける」粉丝蜂拥而至//(v, intrans.) to throng; to crowd into; 「ファンが詰めかける」 fans flock to |
 | 沸く | わく | （人群）沸腾；欢腾（自动词）——本义是水开，引申为人们兴奋热烈；「会場が沸く」全场沸腾；「優勝に沸く」因夺冠而欢腾//(v, intrans.) to go wild; to be in an uproar — literally "to boil", here of crowds getting excited; 「会場が沸く」 the hall erupts; 「優勝に沸く」 to celebrate a championship |
 | 大目に見る | おおめにみる | 宽容；不深究（惯用语）——对别人的过错不过分追究；「今回は大目に見る」这次就算了；「子どものいたずらを大目に見る」宽容孩子的恶作剧//(idiom) to overlook; to let off — not being too hard on someone's fault; 「今回は大目に見る」 to let it go this time; 「子どものいたずらを大目に見る」 to turn a blind eye to a child's mischief |
 | 何分 | なにぶん | 毕竟；无奈（副词）——请求谅解时说明不得已的原因，郑重的说法；「何分初めてのことで」毕竟是第一次；「何分よろしくお願いいたします」还请多多关照//(adv) after all; I'm afraid — giving an unavoidable reason when asking for understanding; formal; 「何分初めてのことで」 it being our first time; 「何分よろしくお願いいたします」 I would be most grateful for your kind consideration |

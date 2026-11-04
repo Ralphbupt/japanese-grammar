@@ -40,13 +40,13 @@ This lesson covers N2 grammar related to "topics," "standpoints," and "condition
 - 名詞 + にしても + 名詞 + にしても
 - 動詞普通形 + にしても + 動詞普通形 + にしても
 - い形容詞 + にしても + い形容詞 + にしても
-- な形容詞 + にしても + な形容詞 + にしても
+- な形容詞語幹（である）+ にしても + な形容詞語幹（である）+ にしても
 :::
 :::en
 - Noun + にしても + Noun + にしても
 - Verb plain form + にしても + Verb plain form + にしても
 - i-adjective + にしても + i-adjective + にしても
-- na-adjective + にしても + na-adjective + にしても
+- na-adjective stem (+ である) + にしても + na-adjective stem (+ である) + にしても
 :::
 
 ### 含义||Meaning
@@ -213,7 +213,7 @@ This lesson covers N2 grammar related to "topics," "standpoints," and "condition
 |------|------|------|
 | を問わず | 不论…… | 正式，公告文体 |
 | にかかわらず | 不论…… | 同义，同样正式；也常接「〜かどうか」「行く行かない」这类肯否并列 |
-| によらず | 不论…… | 较少见，书面 |
+| によらず | 不论…… | 书面；也有「見かけによらず」「何事によらず」等惯用说法 |
 
 > 「を問わず」前面经常是对立概念：男女を問わず、昼夜を問わず、有無を問わず
 :::
@@ -222,7 +222,7 @@ This lesson covers N2 grammar related to "topics," "standpoints," and "condition
 |------|------|------|
 | を問わず | regardless of | Formal; announcement-style |
 | にかかわらず | regardless of | Synonymous and just as formal; also common after 「〜かどうか」 or yes/no pairs like 「行く行かない」 |
-| によらず | regardless of | Less common; written |
+| によらず | regardless of | Written; also in set phrases like 「見かけによらず」 (despite appearances) and 「何事によらず」 |
 
 > 「を問わず」 is often preceded by contrasting pairs: 男女を問わず, 昼夜を問わず, 有無を問わず
 :::

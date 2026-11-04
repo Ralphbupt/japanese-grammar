@@ -123,7 +123,7 @@ How these were chosen: patterns that keep turning up in the grammar questions an
 :::en
 | Pattern | Conjugation | Meaning | Example |
 |------|------|------|------|
-| [〜わけがない／はずがない](/lesson64/) | Plain form + わけがない / はずがない (Noun + の) | there's no way ~ | あの真面目な彼が、約束を忘れる**はずがない**。(Someone as conscientious as him can't have forgotten the appointment.) |
+| [〜わけがない／はずがない](/lesson64/) | Plain form + わけがない / はずがない (Noun + の) | there's no way ~ | あの真面目な彼が、約束を忘れる**はずがない**。(Someone as conscientious as him would never forget a promise.) |
 | [〜ないわけにはいかない](/lesson64/) | Verb (nai) + わけにはいかない | can't not ~, have to (duty, obligation) | 恩師の頼みだから、引き受け**ないわけにはいかない**。(It's my old teacher asking, so I can't say no.) |
 | [〜ざるを得ない](/lesson44/) | Verb nai-stem + ざるを得ない (する → せざるを得ない) | have no choice but to ~ | 台風が近づいているので、旅行は中止**せざるを得ない**。(A typhoon is coming, so we have no choice but to cancel the trip.) |
 | [〜かねない](/lesson44/) | Verb masu-stem + かねない | could well ~ (a bad result) | このまま放っておくと、大きな事故になり**かねない**。(If we leave it like this, it could lead to a serious accident.) |

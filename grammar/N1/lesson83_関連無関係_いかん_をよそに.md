@@ -17,7 +17,7 @@ This lesson covers what something depends on, what it follows, and what it ignor
 | 辞さない | じさない | 不惜；不怕（惯用表达）——「辞する」的否定，表示必要时连强硬手段也不惜采取；「法的措置も辞さない」不惜采取法律手段；「辞職も辞さない覚悟」不惜辞职的决心//(expression) to be prepared to (go as far as); not shrink from — negative of 「辞する」, used for being ready to take tough steps if needed; 「法的措置も辞さない」 prepared to take legal action; 「辞職も辞さない覚悟」 ready even to resign |
 | 打ち切る | うちきる | 中止；停止（他动词）——把正在进行、本来会继续的事中途停止；「支給を打ち切る」停发；「交渉を打ち切る」中止谈判//(v, trans.) to cut off; to discontinue — stopping something that would otherwise have continued; 「支給を打ち切る」 to stop payments; 「交渉を打ち切る」 to break off negotiations |
 | 無断 | むだん | 擅自；未经允许（名）——没有事先打招呼或得到许可；「無断欠勤」无故旷工；「無断で使用する」擅自使用//(n) without permission; without notice — not asking or telling anyone first; 「無断欠勤」 being absent from work without notice; 「無断で使用する」 to use without permission |
-| 処分 | しょぶん | 处分；处理掉（名、可作动词）——一是对违规者的惩处，二是把东西处理掉；「処分を受ける」受到处分；「不用品を処分する」处理掉不用的东西//(n, suru-verb) disciplinary action; disposal — a penalty for breaking rules, or getting rid of things; 「処分を受ける」 to be disciplined; 「不用品を処分する」 to get rid of things one no longer needs |
+| 処分 | しょぶん | 处分；处理掉（名、可作动词）；「処分を受ける」受到处分//(n, suru-verb) disciplinary action; disposal; 「処分を受ける」 to be disciplined |
 | 推し進める | おしすすめる | 推进；强行推进（他动词）——不顾阻力把计划、政策向前推；「改革を推し進める」推进改革；「計画を推し進める」推进计划//(v, trans.) to push ahead with; to press forward — moving a plan or policy forward, often despite resistance; 「改革を推し進める」 to push through reforms; 「計画を推し進める」 to press ahead with a plan |
 | 喧騒 | けんそう | 喧嚣；嘈杂（名）——书面语，多指城市的热闹嘈杂；「都会の喧騒」都市的喧嚣；「喧騒を離れる」远离喧嚣//(n) noise and bustle — written style, usually of city life; 「都会の喧騒」 the bustle of the city; 「喧騒を離れる」 to get away from the noise |
 | 家業 | かぎょう | 家业；祖传的生意（名）——一家世代经营的店铺、工作；「家業を継ぐ」继承家业；「家業を手伝う」帮忙家里的生意//(n) the family business — a shop or trade run by a family over generations; 「家業を継ぐ」 to take over the family business; 「家業を手伝う」 to help out in the family business |
@@ -25,7 +25,7 @@ This lesson covers what something depends on, what it follows, and what it ignor
 | 涙もろい | なみだもろい | 爱流泪；容易感动落泪（形容词）——心软，一点小事就会掉眼泪；「年を取って涙もろくなる」上了年纪变得爱哭//(adj) easily moved to tears; soft-hearted — 「年を取って涙もろくなる」 to get more easily moved to tears with age |
 | 実情 | じつじょう | 实际情况；真实情形（名）——多指外人不容易了解的内部真实情况；「現場の実情」现场的实际情况；「実情に合わない」不符合实际//(n) the actual situation; the real state of affairs — often what outsiders don't see; 「現場の実情」 the situation on the ground; 「実情に合わない」 out of touch with reality |
 | 厳正 | げんせい | 严正；严格公正（形容动词）——用于处分、审查等，不偏不倚、毫不姑息；「厳正に対処する」严肃处理；「厳正な審査」严格公正的审查//(na-adj) strict and impartial — of penalties and reviews; 「厳正に対処する」 to deal with something strictly; 「厳正な審査」 a rigorous, fair review |
-| 不祥事 | ふしょうじ | 丑闻；不光彩的事件（名）——企业、机关等组织内部发生的违规事件；「不祥事が発覚する」丑闻曝光；「相次ぐ不祥事」接连不断的丑闻//(n) scandal; misconduct — wrongdoing inside a company or public body; 「不祥事が発覚する」 a scandal comes to light; 「相次ぐ不祥事」 a string of scandals |
+| 不祥事 | ふしょうじ | 丑闻；不光彩的事件（名）；「相次ぐ不祥事」接连不断的丑闻//(n) scandal; misconduct; 「相次ぐ不祥事」 a string of scandals |
 | 存続 | そんぞく | 存续；继续存在（名、可作动词）——组织、制度等能否继续存在下去；「会社の存続」公司的存亡；「存続が危ぶまれる」存续令人担忧//(n, suru-verb) survival; continued existence — of an organisation or system; 「会社の存続」 the survival of the company; 「存続が危ぶまれる」 its future is in doubt |
 | 沽券 | こけん | 体面；身价（名）——几乎只用于「沽券にかかわる」，指有损体面、自尊；「沽券にかかわる」有失身份//(n) dignity; standing — used almost only in 「沽券にかかわる」, beneath one's dignity |
 | 合否 | ごうひ | 合格与否（名）——考试、审查的结果；「合否を判定する」判定是否合格；「合否の通知」录取通知//(n) pass or fail; the result of an exam or screening — 「合否を判定する」 to decide who passes; 「合否の通知」 notice of the results |

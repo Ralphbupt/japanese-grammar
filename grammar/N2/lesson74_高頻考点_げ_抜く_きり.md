@@ -257,8 +257,7 @@ This lesson brings together 6 grammar points that appear very frequently on the 
 - 動詞た形 + きり + 否定文
 
 **B. 只有：**
-- 名詞/数量詞 + きり
-- 動詞辞書形 + きり
+- 名詞/数量詞 + きり（二人きり、一度きり；これっきり・それっきり）
 
 ※ 也写作「っきり」，口语中更常见。
 :::
@@ -267,8 +266,7 @@ This lesson brings together 6 grammar points that appear very frequently on the 
 - Verb ta-form + きり + negative sentence
 
 **B. Only:**
-- Noun/counter + きり
-- Verb dictionary form + きり
+- Noun/counter + きり (二人きり, 一度きり; これっきり / それっきり)
 
 ※ Also written 「っきり」; more common in spoken language.
 :::
@@ -331,16 +329,16 @@ This lesson brings together 6 grammar points that appear very frequently on the 
 
 ### 接続||Conjugation
 :::zh
-- 期間/数量 + ぶりに
-- 名詞 + ぶりに
+- 期間 + ぶりに（10年ぶりに、半年ぶりに；久しぶりに）
 
 ※ 修饰名词时：ぶりの + 名詞
+※ 「話しぶり」「仕事ぶり」这种 名詞/動詞ます形 + ぶり 是"……的样子"，是另一个意思。
 :::
 :::en
-- Time period/number + ぶりに
-- Noun + ぶりに
+- Time period + ぶりに (10年ぶりに, 半年ぶりに; 久しぶりに)
 
 ※ Before a noun: ぶりの + Noun
+※ 「話しぶり」「仕事ぶり」 (noun / verb stem + ぶり) mean "way of…, manner" — a different use.
 :::
 
 ### 含义||Meaning
@@ -456,7 +454,7 @@ This lesson brings together 6 grammar points that appear very frequently on the 
 2. 苦しい練習を最後までやり（　　）ことができた。
 3. 合格できるかどうかは本人の努力（　　）。
 4. 祖母は寝た（　　）、起きてこない。
-5. 20年（　　）に故郷に帰った。
+5. 20年（　　）故郷に帰った。
 6. 本日休業（　　）、ご了承ください。
 
 **二、翻译成日语**
@@ -473,7 +471,7 @@ This lesson brings together 6 grammar points that appear very frequently on the 
 2. 苦しい練習を最後までやり（　　）ことができた。
 3. 合格できるかどうかは本人の努力（　　）。
 4. 祖母は寝た（　　）、起きてこない。
-5. 20年（　　）に故郷に帰った。
+5. 20年（　　）故郷に帰った。
 6. 本日休業（　　）、ご了承ください。
 
 **Part 2: Translate into Japanese**

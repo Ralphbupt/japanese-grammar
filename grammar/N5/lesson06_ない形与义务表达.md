@@ -1,5 +1,13 @@
 # Lesson 06 – ない形与义务表达||The ない-form & How to Say “Must” / “Must Not” in Japanese
 
+:::zh
+ない形是动词的简体否定形，也是"必须""不必"这类表达的基础。本课讲ない形的变法，再讲〜なければならない（必须）、〜なくてもいい（不必），并把它们和上一课的许可、禁止放进一张表里对照，最后区分〜ないで和〜なくて。
+:::
+
+:::en
+The ない form is the plain negative of a verb, and the base for saying "must" and "don't have to". This lesson shows how to form it, then covers 〜なければならない (must) and 〜なくてもいい (don't have to), sets them beside last lesson's permission and prohibition in one table, and separates 〜ないで from 〜なくて.
+:::
+
 ## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
@@ -61,7 +69,7 @@ The plain negative form of verbs, meaning "don't do…" / "won't do…". It is t
 - 来る → **来ない** (こない)
 :::
 
-#### 一类动词：う段→あ段+ない||Group 1: う-row → あ-row + ない
+#### 一类动词：う段→あ段+ない||Group 1: う-column → あ-column + ない
 
 :::zh
 | 辞书形结尾 | ない形 | 例子 |

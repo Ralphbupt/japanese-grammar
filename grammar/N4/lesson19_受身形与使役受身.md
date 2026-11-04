@@ -45,7 +45,7 @@ Lesson 11 introduced the passive form. Now we deepen the four types of passive u
 :::en
 | Type | Rule | Examples |
 |------|------|----------|
-| Group 1 verbs | u-row → a-row + れる | 書く→書**かれる**、読む→読**まれる** |
+| Group 1 verbs | u-column → a-column + れる | 書く→書**かれる**、読む→読**まれる** |
 | Group 2 verbs | drop る → add **られる** | 食べる→食べ**られる**、見る→見**られる** |
 | する | **される** | する→される |
 | 来る | **来られる** (こられる) | 来る→来られる |
@@ -79,7 +79,7 @@ Lesson 11 introduced the passive form. Now we deepen the four types of passive u
 2. 弟は母**に**叱ら**れた**。（弟弟被妈妈批评了。）
 3. 彼女はパーティーに誘わ**れた**。（她被邀请参加派对。）
 4. 犯人は警察**に**捕まえ**られた**。（犯人被警察抓住了。）
-5. 友達**に**秘密を話さ**れた**。（秘密被朋友说出去了。）
+5. 私はクラスのみんな**に**笑わ**れた**。（我被全班同学笑话了。）
 
 > 能动句 → 被动句：
 > 先生が**私を**褒めた → **私は**先生**に**褒められた
@@ -92,7 +92,7 @@ The most basic passive — the subject directly receives the action:
 2. 弟は母**に**叱ら**れた**。(My brother was scolded by our mother.)
 3. 彼女はパーティーに誘わ**れた**。(She was invited to the party.)
 4. 犯人は警察**に**捕まえ**られた**。(The criminal was caught by the police.)
-5. 友達**に**秘密を話さ**れた**。(My secret was told by a friend.)
+5. 私はクラスのみんな**に**笑わ**れた**。(I was laughed at by the whole class.)
 
 > Active → Passive:
 > 先生が**私を**褒めた → **私は**先生**に**褒められた
@@ -140,6 +140,7 @@ A passive unique to Japanese — someone does something and I am inconvenienced 
 3. 彼女に手**を**握ら**れた**。（被她握了手。）
 4. 子供に服**を**汚さ**れた**。（衣服被孩子弄脏了。）
 5. 先生に名前**を**間違え**られた**。（名字被老师叫错了。）
+6. 友達に秘密**を**ばらさ**れた**。（秘密被朋友抖出去了。→ ばらす：泄露、抖出去）
 
 > 结构：**AはBに＋[A的东西]を〜られる**
 > 不能说「❌ 私の足は踏まれた」→ 要说「✅ 足を踏まれた」
@@ -152,6 +153,7 @@ Someone does something to your body part or belongings — the subject is the "o
 3. 彼女に手**を**握ら**れた**。(She held my hand.)
 4. 子供に服**を**汚さ**れた**。(The child got my clothes dirty.)
 5. 先生に名前**を**間違え**られた**。(The teacher got my name wrong.)
+6. 友達に秘密**を**ばらさ**れた**。(A friend let my secret out. → ばらす: to leak, to blab)
 
 > Structure: **AはBに＋[A's thing]を〜られる**
 > You cannot say 「❌ 私の足は踏まれた」→ Say 「✅ 足を踏まれた」
@@ -402,7 +404,7 @@ All verb conjugation forms covered so far:
 | Prohibitive | 書くな | 食べるな | するな | 来るな |
 
 > **Imperative and Prohibitive forms**:
-> - Imperative: Group 1 u-row → e-row; Group 2 drop る→ろ; する→しろ; 来る→来い (こい)
+> - Imperative: Group 1 u-column → e-column; Group 2 drop る→ろ; する→しろ; 来る→来い (こい)
 > - Prohibitive: dictionary form + な
 > - Used in masculine speech / urgent situations — not common in everyday conversation. Just be aware of them.
 :::

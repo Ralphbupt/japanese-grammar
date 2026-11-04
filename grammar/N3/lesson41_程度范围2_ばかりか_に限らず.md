@@ -174,14 +174,14 @@ This lesson covers grammar for "limiting scope" and "exceeding scope." 「だけ
 1. 彼は英語**ばかりか**、中国語も話せる。（他不仅会英语，还会中文。）
 2. 成績が悪い**ばかりか**、授業にも出ない。（不仅成绩差，还不上课。）
 3. この店は安い**ばかりでなく**、味もいい。（这家店不仅便宜，味道也好。）
-4. 彼女は自分**ばかりか**、周りの人にまで迷惑をかけた。（她不仅自己，连周围的人都给添了麻烦。）
+4. 彼は自分の部屋**ばかりか**、家中まで掃除してくれた。（他不仅打扫了自己的房间，连整个家都打扫了。）
 5. 雨**ばかりか**、風まで強くなってきた。（不仅下雨，连风也大起来了。）
 :::
 :::en
 1. 彼は英語**ばかりか**、中国語も話せる。(He can speak not only English but also Chinese.)
 2. 成績が悪い**ばかりか**、授業にも出ない。(Not only are his grades bad, he doesn't even attend class.)
 3. この店は安い**ばかりでなく**、味もいい。(This restaurant is not only cheap but also delicious.)
-4. 彼女は自分**ばかりか**、周りの人にまで迷惑をかけた。(She caused trouble not only for herself but even for those around her.)
+4. 彼は自分の部屋**ばかりか**、家中まで掃除してくれた。(He cleaned not only his own room but the whole house.)
 5. 雨**ばかりか**、風まで強くなってきた。(Not only is it raining, the wind has also picked up.)
 :::
 
@@ -223,10 +223,12 @@ This lesson covers grammar for "limiting scope" and "exceeding scope." 「だけ
 :::zh
 1. **限定范围**：「に限り」= 仅限于……（规定/告知场合常用）。
 2. **偏偏/不巧**：「に限って」= 偏偏在……的时候（意外/不巧的语感）。
+3. **唯独……不会**：「〜に限って（〜ない）」= 只有……绝不会……，表示对某人的信任，后面多接「はずがない」「ない」。
 :::
 :::en
 1. **Scope limitation**: 「に限り」= limited to… (common in rules/announcements).
 2. **Of all times / Murphy's law**: 「に限って」= it's precisely when… (nuance of bad luck / irony).
+3. **X, of all people, would never…**: 「〜に限って（〜ない）」 expresses trust that this one person would never do something; usually followed by 「はずがない」 or a negative.
 :::
 
 ### 例句||Example Sentences
@@ -236,6 +238,7 @@ This lesson covers grammar for "limiting scope" and "exceeding scope." 「だけ
 3. 先着100名**に限り**、プレゼントがもらえる。（仅限前100名可获赠品。）
 4. 傘を持っていない日**に限って**、雨が降る。（偏偏没带伞的日子下雨。）
 5. 急いでいる時**に限って**、電車が遅れる。（偏偏着急的时候电车晚点。）
+6. うちの子**に限って**、そんなことをするはずがない。（唯独我家孩子绝不可能做那种事。）
 :::
 :::en
 1. このサービスは会員**に限り**ご利用いただけます。(This service is available to members only.)
@@ -243,6 +246,7 @@ This lesson covers grammar for "limiting scope" and "exceeding scope." 「だけ
 3. 先着100名**に限り**、プレゼントがもらえる。(Only the first 100 people can receive a gift.)
 4. 傘を持っていない日**に限って**、雨が降る。(It always rains on the day I don't have an umbrella.)
 5. 急いでいる時**に限って**、電車が遅れる。(The train is always late precisely when I'm in a hurry.)
+6. うちの子**に限って**、そんなことをするはずがない。(My child, of all children, would never do such a thing.)
 :::
 
 ### 辨析||Comparison
@@ -345,6 +349,15 @@ This lesson covers grammar for "limiting scope" and "exceeding scope." 「だけ
 8. 钱包里只剩500日元了。（しか〜ない）
 9. 不限于学生，社会人也可以参加。（に限らず）
 10. 请尽量用日语回答。（だけ）
+
+**答案**
+1\. しか　2. ばかりか　3. に限って（告知里更常说「本日に限り」）　4. に限らず　5. だけ
+
+6. 大事な日に限って、風邪をひいてしまった。
+7. 彼は遅刻したばかりか、資料も忘れてきた。
+8. 財布に500円しか残っていない。
+9. 学生に限らず、社会人も参加できます。
+10. できるだけ日本語で答えてください。
 :::
 :::en
 **Part 1: Choose the correct grammar (だけ / しか〜ない / ばかりか / に限って / に限らず)**
@@ -362,6 +375,15 @@ This lesson covers grammar for "limiting scope" and "exceeding scope." 「だけ
 8. I only have 500 yen left in my wallet. (Use しか〜ない)
 9. Not limited to students — working adults can also participate. (Use に限らず)
 10. Please answer in Japanese as much as possible. (Use だけ)
+
+**Answers**
+1\. しか　2. ばかりか　3. に限って (notices more often say 「本日に限り」)　4. に限らず　5. だけ
+
+6. 大事な日に限って、風邪をひいてしまった。
+7. 彼は遅刻したばかりか、資料も忘れてきた。
+8. 財布に500円しか残っていない。
+9. 学生に限らず、社会人も参加できます。
+10. できるだけ日本語で答えてください。
 :::
 
 ## 复习计划||Review Schedule

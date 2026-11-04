@@ -1,11 +1,11 @@
 # Lesson 45 – 动作相关② — きる/きれる/きれない/っこない/得る/得ない||Action-Related ② — きる/きれる/きれない/っこない/得る/得ない
 
 :::zh
-这组语法围绕"动作能否完成/是否有可能"展开。「きる」表示彻底完成，「っこない」强调绝对不可能，「得る」表示理论上的可能性。
+这组语法围绕"动作能否完成/是否有可能"展开。「きる」表示彻底完成，「っこない」强调绝对不可能，「得る」表示理论上的可能性（「得る／得ない」在多数资料里列为 N2 语法，N3 阶段先学会认读）。
 :::
 
 :::en
-This group revolves around whether an action can be completed or is possible. 「きる」 expresses thorough completion, 「っこない」 emphasizes absolute impossibility, and 「得る」 indicates theoretical possibility.
+This group revolves around whether an action can be completed or is possible. 「きる」 expresses thorough completion, 「っこない」 emphasizes absolute impossibility, and 「得る」 indicates theoretical possibility (most references list 「得る／得ない」 as N2 grammar; at N3, aim to recognize it).
 :::
 
 ## 本课单词表||Vocabulary
@@ -77,7 +77,7 @@ Additionally, 「〜きった」 can express an extreme state: 疲れ**きった
 3. やると決めたら、やり**きる**つもりだ。（既然决定了就打算做到底。）
 4. 彼は長時間働いて、疲れ**きっている**。（他长时间工作，筋疲力尽。）
 5. 数え**きれない**ほどの星が見えた。（看到了数不清的星星。）
-6. このプロジェクトは一週間ではやり**きれない**。（这个项目一周内做不完。）
+6. この本は一週間では読み**きれない**。（这本书一周内读不完。）
 :::
 :::en
 1. マラソンを最後まで走り**きった**。(I ran the entire marathon to the end.)
@@ -85,7 +85,7 @@ Additionally, 「〜きった」 can express an extreme state: 疲れ**きった
 3. やると決めたら、やり**きる**つもりだ。(Once I decide to do it, I intend to see it through.)
 4. 彼は長時間働いて、疲れ**きっている**。(He worked long hours and is completely exhausted.)
 5. 数え**きれない**ほどの星が見えた。(I could see more stars than I could count.)
-6. このプロジェクトは一週間ではやり**きれない**。(This project cannot be finished within a week.)
+6. この本は一週間では読み**きれない**。(I can't finish reading this book in a week.)
 :::
 
 ### 辨析||Comparison
@@ -156,7 +156,7 @@ E.g.: できっこない, わかりっこない, 勝てっこない
 |------|------|------|
 | 〜っこない | 绝对不可能 | 口语，强调 |
 | 〜はずがない | 按道理不可能 | 口语/书面均可 |
-| 〜わけがない | 不可能（有理由） | 略正式 |
+| 〜わけがない | 不可能（有理由） | 口语/书面均可，基于逻辑 |
 
 - でき**っこない** → 情绪化的"不可能！"（朋友之间）
 - できる**はずがない** → 冷静地"不可能"
@@ -166,7 +166,7 @@ E.g.: できっこない, わかりっこない, 勝てっこない
 |------------|---------|-------|
 | 〜っこない | Absolutely impossible | Colloquial, emphatic |
 | 〜はずがない | Should be impossible (logically) | Both spoken/written |
-| 〜わけがない | Impossible (with reason) | Somewhat formal |
+| 〜わけがない | Impossible (with reason) | Both spoken/written; based on logic |
 
 - でき**っこない** → emotional "No way!" (between friends)
 - できる**はずがない** → calm "That can't be possible"

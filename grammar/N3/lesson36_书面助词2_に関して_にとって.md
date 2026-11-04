@@ -210,14 +210,14 @@ Noun (start) + から + Noun (end) + にかけて
 ### 例句||Example Sentences
 :::zh
 1. 今夜から明日の朝**にかけて**、雨が降るでしょう。（从今晚到明天早上，可能会下雨。）
-2. 関東から東北**にかけて**、地震があった。（从关东到东北，发生了地震。）
+2. 関東から東北**にかけて**、強い揺れを観測した。（从关东到东北，都观测到了强烈的震动。）
 3. 春から夏**にかけて**、花がたくさん咲く。（从春天到夏天，很多花开放。）
 4. 午後から夕方**にかけて**、気温が下がる。（从下午到傍晚，气温下降。）
 5. 12月から1月**にかけて**、雪が多い。（从12月到1月，雪很多。）
 :::
 :::en
 1. 今夜から明日の朝**にかけて**、雨が降るでしょう。(It will likely rain from tonight through tomorrow morning.)
-2. 関東から東北**にかけて**、地震があった。(There was an earthquake from the Kanto through the Tohoku region.)
+2. 関東から東北**にかけて**、強い揺れを観測した。(Strong shaking was observed from the Kanto through the Tohoku region.)
 3. 春から夏**にかけて**、花がたくさん咲く。(Many flowers bloom from spring through summer.)
 4. 午後から夕方**にかけて**、気温が下がる。(The temperature drops from afternoon through evening.)
 5. 12月から1月**にかけて**、雪が多い。(There is a lot of snow from December through January.)
@@ -266,7 +266,7 @@ Noun (period/scope) + にわたって (modifying the predicate) / にわたる /
 3. 広範囲**にわたって**被害が出た。（大范围受到了灾害。）
 4. 5時間**にわたる**会議が終わった。（持续5小时的会议结束了。）
 5. 長期間**にわたって**研究を続けた。（长期持续进行研究。）
-6. この問題は多くの分野**にわたって**影響がある。（这个问题涉及很多领域。）
+6. この問題は多くの分野**にわたって**影響を及ぼしている。（这个问题影响到了很多领域。）
 :::
 :::en
 1. 交渉は3日間**にわたって**行われた。(The negotiations were conducted over three days.)
@@ -274,7 +274,7 @@ Noun (period/scope) + にわたって (modifying the predicate) / にわたる /
 3. 広範囲**にわたって**被害が出た。(Damage occurred over a wide area.)
 4. 5時間**にわたる**会議が終わった。(The five-hour meeting ended.)
 5. 長期間**にわたって**研究を続けた。(Research was continued over a long period.)
-6. この問題は多くの分野**にわたって**影響がある。(This issue has an impact across many fields.)
+6. この問題は多くの分野**にわたって**影響を及ぼしている。(This issue is having an impact across many fields.)
 :::
 
 ### 辨析||Comparison
@@ -319,7 +319,7 @@ Noun (period/scope) + にわたって (modifying the predicate) / にわたる /
 
 6. 关于这个计划，请详细说明。
 7. 对留学生来说，找房子很难。
-8. 根据法律，这是不允许的。
+8. 根据法律，他受到了处罚。
 9. 从关东到关西，受到了台风的影响。
 10. 持续了10年的研究终于有了结果。
 
@@ -328,7 +328,7 @@ Noun (period/scope) + にわたって (modifying the predicate) / にわたる /
 
 6. この計画に関して、詳しく説明してください。
 7. 留学生にとって、家を探すのは難しい。
-8. 法律に基づいて、これは許されない。
+8. 法律に基づいて、彼は処罰された。
 9. 関東から関西にかけて、台風の影響を受けた。
 10. 10年にわたる研究で、ついに結果が出た。
 :::
@@ -354,7 +354,7 @@ Noun (period/scope) + にわたって (modifying the predicate) / にわたる /
 
 6. Please explain in detail regarding this plan.
 7. For international students, finding an apartment is difficult.
-8. Based on the law, this is not permitted.
+8. He was punished in accordance with the law.
 9. From Kanto through Kansai, the typhoon had an impact.
 10. Research spanning 10 years has finally produced results.
 
@@ -363,7 +363,7 @@ Noun (period/scope) + にわたって (modifying the predicate) / にわたる /
 
 6. この計画に関して、詳しく説明してください。
 7. 留学生にとって、家を探すのは難しい。
-8. 法律に基づいて、これは許されない。
+8. 法律に基づいて、彼は処罰された。
 9. 関東から関西にかけて、台風の影響を受けた。
 10. 10年にわたる研究で、ついに結果が出た。
 :::

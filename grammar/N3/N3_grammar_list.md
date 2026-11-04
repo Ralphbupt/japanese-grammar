@@ -1,19 +1,19 @@
 # N3 文法チェックリスト||N3 Grammar Checklist
 
 :::zh
-N3 全部约 150 个语法点的清单。N3 是从"日常对话"跨入"书面正式语"的**分水岭**——这份表覆盖书面助词、原因理由、逆接让步、程度范围、状态样态、否定与复合表达等所有主要范畴。
+N3 全部 120 多个语法点的清单。N3 是从"日常对话"跨入"书面正式语"的**分水岭**——这份表覆盖书面助词、原因理由、逆接让步、程度范围、状态样态、否定与复合表达等所有主要范畴。
 :::
 
 :::en
-A full cheatsheet of ~150 N3 grammar points. N3 is the **watershed** from daily conversation to formal written Japanese — covers formal particles, cause / reason, concession, degree / extent, state, negation, and compound expressions.
+A full cheatsheet of 120+ N3 grammar points. N3 is the **watershed** from daily conversation to formal written Japanese — covers formal particles, cause / reason, concession, degree / extent, state, negation, and compound expressions.
 :::
 
 :::zh
-> JLPT N3 核心语法约 150 条。从日常口语过渡到书面表达，开始接触正式用语。
+> JLPT N3 核心语法 120 多条。从日常口语过渡到书面表达，开始接触正式用语。
 :::
 
 :::en
-> About 150 core N3 grammar points. The bridge from everyday speech to written Japanese, where formal expressions start to appear.
+> 120+ core N3 grammar points. The bridge from everyday speech to written Japanese, where formal expressions start to appear.
 :::
 
 ## 书面助词（で/に 的正式替换）||Formal Particles (formal stand-ins for で / に)
@@ -36,7 +36,7 @@ A full cheatsheet of ~150 N3 grammar points. N3 is the **watershed** from daily 
 - [ ] 〜せいで/〜せいか — 都怪~/也许是因为~ // 〜せいで/〜せいか — because of ~ (blame) / maybe because ~
 - [ ] 〜ために — 因为~（客观原因） // 〜ために — because of ~ (objective cause)
 - [ ] 〜以上（は）— 既然~就~ // 〜以上（は） — now that ~, (must) ~
-- [ ] 〜上（は）— 既然~/在~方面 // 〜上（は） — now that ~ / in terms of ~
+- [ ] 〜上は — 既然~ // 〜上は — now that ~
 - [ ] 〜からには — 既然~就~（决心） // 〜からには — since ~, (I'm determined to) ~
 - [ ] 〜ことから — 因为~（推理根据） // 〜ことから — from the fact that ~ (basis for a conclusion)
 

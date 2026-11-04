@@ -213,7 +213,7 @@ Structure: 「A のみならず、B も〜」
 | 核心含义 | 不仅A，B也 | A自不必说，B也 |
 | A的地位 | 客观陈述 | 暗含"理所当然" |
 | 适用场合 | 新闻、论文、正式文 | 同上 |
-| 正负面 | 正负面均可 | 正面居多 |
+| 正负面 | 正负面均可 | 正负面均可（如「被害は都市部はもとより地方にも及んだ」） |
 
 > 「大人のみならず子供も楽しめる」= 不仅大人，小孩也能享受（客观）  
 > 「大人はもとより子供も楽しめる」= 大人自不必说，小孩也能享受（大人喜欢是理所当然的）
@@ -244,7 +244,7 @@ Structure: 「A のみならず、B も〜」
 | Core meaning | Not only A, B too | Not to mention A, B too |
 | Status of A | Objective statement | Implies "naturally" |
 | Usage context | News, papers, formal texts | Same |
-| Positive/negative | Both OK | Mostly positive |
+| Positive/negative | Both OK | Both OK (e.g. 「被害は都市部はもとより地方にも及んだ」) |
 
 > 「大人のみならず子供も楽しめる」= not only adults, children can enjoy it too (objective)  
 > 「大人はもとより子供も楽しめる」= not to mention adults, children can enjoy it too (adults enjoying it is taken for granted)

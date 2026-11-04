@@ -71,7 +71,7 @@ Expresses "making someone do something" or "letting/allowing someone do somethin
 :::en
 | Type | Rule | Examples |
 |------|------|----------|
-| Group 1 verbs | u-row → a-row + せる | 書く→書**かせる**、飲む→飲**ませる**、行く→行**かせる** |
+| Group 1 verbs | u-column → a-column + せる | 書く→書**かせる**、飲む→飲**ませる**、行く→行**かせる** |
 | Group 2 verbs | drop る → add **させる** | 食べる→食べ**させる**、見る→見**させる** |
 | する | **させる** | する→させる |
 | 来る | **来させる** (こさせる) | 来る→来させる |
@@ -83,7 +83,7 @@ Expresses "making someone do something" or "letting/allowing someone do somethin
 :::
 
 :::en
-> **Memory tip**: Just like the ない-form, shift to the あ-row, then add せる.
+> **Memory tip**: Just like the ない-form, shift to the あ-column, then add せる.
 > 書かない → 書か**せる**、飲まない → 飲ま**せる**
 :::
 
@@ -158,12 +158,16 @@ Expresses "making someone do something" or "letting/allowing someone do somethin
 > **自动词**（没有を）→ 人**を**させる
 >
 > 一句话：**一个句子里不能出现两个を**。
+>
+> 补充：自动词有时也用**に**（部下**に**残業させた、選手**に**走らせる），这时被使役的人是"自己去做这件事"，语感偏向指示/允许、尊重对方意志；用**を**则更像直接摆布对方。初学先记口诀，见到自动词＋に 不必当成错误。
 :::
 :::en
 > **Transitive verbs** (already have を) → person **に** させる
 > **Intransitive verbs** (no を) → person **を** させる
 >
 > In short: **One sentence cannot have two を.**
+>
+> Note: intransitive verbs sometimes take **に** too (部下**に**残業させた, 選手**に**走らせる). Then the causee is pictured as doing the action themselves — the feel leans toward instructing / allowing, respecting their will — while **を** sounds more like directly moving them around. Learn the rule first, but an intransitive verb with に is not a mistake.
 :::
 
 ### 例句||Example Sentences
@@ -447,7 +451,7 @@ The combination of causative form with giving/receiving expressions is extremely
 | 例 | 部下に書類を作らせた（命令下属做） | 部下に書類を作ってもらった（请下属帮忙做） |
 
 - 先生は学生にレポートを書か**せた**。（老师命令学生写报告。）
-- 先生は学生にレポートを書いて**もらった**。（老师请学生帮忙写报告。← 语感很怪，通常不用）
+- 先生は学生にレポートを書いて**もらった**。（老师请学生帮忙写了一份报告。← 不是布置作业，而是请学生帮自己的忙，比如帮忙整理调查报告）
 
 > **实用提示**：对上级/平辈用してもらう，对下级可以用させる。日常生活中，してもらう比させる更常用、更礼貌。
 :::
@@ -462,7 +466,7 @@ Both can express "having someone do something," but the nuance is completely dif
 | Example | 部下に書類を作らせた (ordered subordinate to do it) | 部下に書類を作ってもらった (asked subordinate to help) |
 
 - 先生は学生にレポートを書か**せた**。(The teacher ordered the students to write a report.)
-- 先生は学生にレポートを書いて**もらった**。(The teacher had the students help write a report. ← sounds odd, not typical)
+- 先生は学生にレポートを書いて**もらった**。(The teacher asked the students to write a report for them. ← not homework, but a favor to the teacher, e.g. helping with a survey report)
 
 > **Practical tip**: Use してもらう for superiors/equals; させる can be used for subordinates. In daily life, してもらう is more common and polite than させる.
 :::

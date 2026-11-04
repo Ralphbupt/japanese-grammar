@@ -903,7 +903,7 @@ This is the comprehensive N1 grammar review. We go back over all the N1 grammar 
 | てたまらない | 形容词・动词て形 | 难以忍受，生理感觉也可（N3第57课） |
 
 > ⭕ 失礼**極まりない**（极其无礼）／⭕ 光栄**の至り**（不胜荣幸）／⭕ 贅沢**の極み**（奢侈至极）  
-> ❌ 危ない**極まりない** → ⭕ 危険**極まりない**（只接な形容词语干）  
+> ❌ 危ない**極まりない** → ⭕ 危険**極まりない**（直接接只能是な形容词语干；い形容词要说「危ないこと極まりない」）  
 > ⭕ 寂しい**限りだ**／⭕ 寂しさ**といったらない**（都表示寂寞极了）  
 > ❌ 腰が痛い**限りだ** → ⭕ 腰が痛くて**たまらない**（生理感觉不用限りだ）
 
@@ -921,7 +921,7 @@ This is the comprehensive N1 grammar review. We go back over all the N1 grammar 
 | てたまらない | Te-form of adjectives or verbs | Unbearable; physical sensations too (N3 Lesson 57) |
 
 > ⭕ 失礼**極まりない** (utterly rude) / ⭕ 光栄**の至り** (the greatest honour) / ⭕ 贅沢**の極み** (the height of luxury)  
-> ❌ 危ない**極まりない** → ⭕ 危険**極まりない** (na-adjective stems only)  
+> ❌ 危ない**極まりない** → ⭕ 危険**極まりない** (only na-adjective stems attach directly; an i-adjective needs 「危ないこと極まりない」)  
 > ⭕ 寂しい**限りだ** / ⭕ 寂しさ**といったらない** (both: unbearably lonely)  
 > ❌ 腰が痛い**限りだ** → ⭕ 腰が痛くて**たまらない** (physical sensations don't take 限りだ)
 
@@ -1186,7 +1186,7 @@ This is the comprehensive N1 grammar review. We go back over all the N1 grammar 
 17. 首相ともあろう人が、あんなことを言うとは。
 18. 合格するために、毎日勉強しなさい。（べく的后项不能是命令）
 19. 日本に来てから、一度富士山に登った。（てからというもの的后项必须是持续的状态或变化）
-20. 夜中に一人で山に登るなんて、危険極まりない。（極まりない只接な形容词语干）
+20. 夜中に一人で山に登るなんて、危険極まりない。（極まりない直接接只能是な形容词语干；也可以说「危ないこと極まりない」）
 :::
 :::en
 **Part 1: Fill in the most appropriate grammar**
@@ -1272,7 +1272,7 @@ This is the comprehensive N1 grammar review. We go back over all the N1 grammar 
 17. 首相ともあろう人が、あんなことを言うとは。
 18. 合格するために、毎日勉強しなさい。(べく can't be followed by a command)
 19. 日本に来てから、一度富士山に登った。(てからというもの needs a lasting state or change after it)
-20. 夜中に一人で山に登るなんて、危険極まりない。(極まりない takes only a na-adjective stem)
+20. 夜中に一人で山に登るなんて、危険極まりない。(極まりない attaches directly only to a na-adjective stem; 「危ないこと極まりない」 also works)
 :::
 
 ## 复习计划||Review Schedule

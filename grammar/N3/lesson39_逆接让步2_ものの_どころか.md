@@ -51,10 +51,10 @@ This lesson continues with concession grammar. These four expressions are more l
 
 ### 含义||Meaning
 :::zh
-"即使……也……"，"就算……也……"。承认前项为事实或可能，但后项依然成立。语气比「としても」更贴近实际情况，常用于已知事实的让步。
+"即使……也……"，"就算……也……"。承认前项为事实或可能，但后项依然成立。既可接已知事实（冗談だったにしても），也可接假设（転職するにしても）；「としても」则偏向纯假设。
 :::
 :::en
-"Even if / even so…" — acknowledges the preceding as fact or possibility, but the following still holds. Closer to actual situations than 「としても」, often used for concession of known facts.
+"Even if / even so…" — acknowledges the preceding as fact or possibility, but the following still holds. It can follow a known fact (冗談だったにしても) or a supposition (転職するにしても); 「としても」 leans toward pure hypothesis.
 :::
 
 ### 例句||Example Sentences
@@ -77,17 +77,17 @@ This lesson continues with concession grammar. These four expressions are more l
 :::zh
 | としても | にしても |
 |---------|---------|
-| 纯假设（可能不会发生） | 更接近事实（很可能发生） |
+| 偏纯假设（可能不会发生） | 既可接已知事实，也可接假设 |
 | たとえ失敗した**としても** | 失敗した**にしても**まだチャンスはある |
-| "即使（万一）" | "就算（实际上）" |
+| "即使（万一）" | "就算（是那样）" |
 | 常与「たとえ」搭配 | 更独立使用 |
 :::
 :::en
 | としても | にしても |
 |---------|---------|
-| Pure hypothesis (may not happen) | Closer to reality (likely to happen) |
+| Leans toward pure hypothesis (may not happen) | Either a known fact or a supposition |
 | たとえ失敗した**としても** | 失敗した**にしても**まだチャンスはある |
-| "Even if (hypothetically)" | "Even so (in reality)" |
+| "Even if (hypothetically)" | "Even granting that" |
 | Often paired with 「たとえ」 | Used more independently |
 :::
 

@@ -170,7 +170,7 @@
 | 修饰名词 | 学生のような人 | 学生みたいな人 |
 | 修饰动词 | 夢のように消えた | 夢みたいに消えた |
 
-> **实际使用**：口语中みたいだ压倒性地多。日本人日常对话几乎不用ようだ。但写作和考试中ようだ更常见。
+> **实际使用**：口语中みたいだ压倒性地多。表推断时，日常对话多说みたいだ，ようだ偏书面、正式；不过「〜ような気がする」「〜ように」这类固定说法口语里也常用。写作和考试中ようだ更常见。
 :::
 
 :::en
@@ -182,7 +182,7 @@
 | Modifying noun | 学生のような人 | 学生みたいな人 |
 | Modifying verb | 夢のように消えた | 夢みたいに消えた |
 
-> **In practice**: みたいだ is overwhelmingly more common in casual speech. Japanese people rarely use ようだ in daily conversation. But ようだ is more common in writing and exams.
+> **In practice**: みたいだ is overwhelmingly more common in casual speech. For guesses, everyday talk prefers みたいだ and ようだ sounds written or formal — though set phrases like 「〜ような気がする」 and 「〜ように」 are common in speech too. ようだ is more common in writing and exams.
 :::
 
 ---
@@ -460,7 +460,7 @@ Colloquial expression meaning "kind of gives the feeling of…" or "tends to…"
 | らしい | 明日は雨が降る**らしい** | 似乎要下（听到传闻） |
 | みたいだ | 明日は雨が降る**みたいだ** | 好像要下（口语） |
 
-> **注意そうだ（样态）的特殊性**：只有样态そうだ是描述"眼前即将发生"的状态，所以「雨が降りそうだ」是"（现在看天色）快下了"，而其他表达都可以用于"明天"的预测。
+> **注意そうだ（样态）的特殊性**：只有样态そうだ是描述"眼前即将发生"的状态，所以「雨が降りそうだ」是"（现在看天色）快下了"，其他表达则更常用于对"明天"的预测（样态そうだ也能说明天，如看了天气图说「明日は雨が降りそうだ」，但多数时候用于眼前的迹象）。
 :::
 
 :::en
@@ -474,10 +474,10 @@ Colloquial expression meaning "kind of gives the feeling of…" or "tends to…"
 | らしい | 明日は雨が降る**らしい** | Apparently going to rain (heard a rumor) |
 | みたいだ | 明日は雨が降る**みたいだ** | Seems like it'll rain (casual) |
 
-> **Note the special nature of そうだ (appearance)**: Only the appearance そうだ describes something "about to happen right now," so 「雨が降りそうだ」means "(looking at the sky now) it's about to rain" — the other expressions can all be used for "tomorrow" predictions.
+> **Note the special nature of そうだ (appearance)**: Only the appearance そうだ describes something "about to happen right now," so 「雨が降りそうだ」means "(looking at the sky now) it's about to rain" — the others are the usual choice for "tomorrow" predictions (appearance そうだ can look ahead too, e.g. 「明日は雨が降りそうだ」 after checking a weather map, but it mostly describes signs you can see now).
 :::
 
-### 場景C：那家餐厅好像很好吃||Scene C: That Restaurant Apparently Has Good Food
+### 场景C：那家餐厅好像很好吃||Scene C: That Restaurant Apparently Has Good Food
 
 :::zh
 | 表达 | 日语 | 语感 |
@@ -524,7 +524,7 @@ Colloquial expression meaning "kind of gives the feeling of…" or "tends to…"
 :::zh
 1. 美味し**そう**（样态：自己看到外观）
 2. **そう**（传闻：田中さんから聞いた＝有明确来源）
-3. **かもしれない**（也许会下。注意：空格前是辞书形降る，不能接样态そうだ；要用样态须说「降り**そうだ**」＝看天色快下了）
+3. **ようだ** / **みたいだ**（看到天色变暗而推断）／**かもしれない**（也许会下。注意：空格前是辞书形降る，不能接样态そうだ；要用样态须说「降り**そうだ**」＝看天色快下了）
 4. 男**らしい**（典型性：褒义，有男子气概）
 5. **でしょう**（推测：天气预报常用表达）
 6. 辛**そうだ**（样态：看外观判断）／辛い**かもしれない**（也许辣→不确定）
@@ -535,7 +535,7 @@ Colloquial expression meaning "kind of gives the feeling of…" or "tends to…"
 :::en
 1. 美味し**そう** (appearance: you're looking at it right now)
 2. **そう** (hearsay: 田中さんから聞いた = clear source)
-3. **かもしれない** (maybe it'll rain. Note: the blank follows the dictionary form 降る, so appearance そうだ doesn't fit; for that you'd say 「降り**そうだ**」 = the sky looks like it's about to rain)
+3. **ようだ** / **みたいだ** (inferring from the darkening sky) / **かもしれない** (maybe it'll rain. Note: the blank follows the dictionary form 降る, so appearance そうだ doesn't fit; for that you'd say 「降り**そうだ**」 = the sky looks like it's about to rain)
 4. 男**らしい** (typicality: positive, truly manly)
 5. **でしょう** (conjecture: standard tone for weather forecasts)
 6. 辛**そうだ** (appearance: judging by looks) / 辛い**かもしれない** (maybe spicy → uncertain)

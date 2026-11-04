@@ -201,6 +201,7 @@ Upon hearing a topic, naturally associating related things. "Speaking of..." / "
 |------|------|
 | 动词た形/辞书形 | 言った/言う + とおり(に) |
 | 名词の | 計画の + とおり(に) |
+| 名词（直接接，读作どおり） | 計画 + どおり(に) |
 | この/その/あの | その + とおり |
 :::
 :::en
@@ -208,6 +209,7 @@ Upon hearing a topic, naturally associating related things. "Speaking of..." / "
 |------|------|
 | Verb た-form / dictionary form | 言った/言う + とおり(に) |
 | Noun の | 計画の + とおり(に) |
+| Noun directly (read どおり) | 計画 + どおり(に) |
 | この/その/あの | その + とおり |
 :::
 

@@ -139,7 +139,7 @@
 
 「**します**」和「**いたします**」的差别：
 - **します**：基本款，正常商务都可以用
-- **いたします**：极其郑重，对客户、对地位高很多的人用
+- **いたします**：比します更郑重，对客户、对地位高的人用
 :::
 
 :::en
@@ -158,7 +158,7 @@
 
 **します vs. いたします**:
 - **します**: standard, fine for normal business
-- **いたします**: extremely formal, for clients or much higher status
+- **いたします**: more formal than します, for clients or people of higher status
 :::
 
 ### 例句||Example Sentences
@@ -185,7 +185,8 @@
 **特殊謙譲動詞 vs お〜する 模板**——和尊敬語完全一样的规则：
 
 ```
-有特殊謙譲動詞 → 必须用特殊形式
+有特殊謙譲動詞 → 优先用特殊形式
+（「お会いする」「お聞きする」这类套模板的说法也常用，但下面几个是错的）
 
 ❌ お見します          → 错（見る → 拝見する）
 ✓ 拝見します           → 对
@@ -202,7 +203,8 @@
 **Special verbs vs. the お〜する template** — same rule as sonkeigo:
 
 ```
-If a special humble verb exists → you must use it
+If a special humble verb exists → prefer it
+(template forms like 「お会いする」「お聞きする」 are also common, but the ones below are wrong)
 
 ❌ お見します          → wrong (見る → 拝見する)
 ✓ 拝見します           → correct
@@ -214,7 +216,7 @@ If a special humble verb exists → you must use it
 ✓ 申します             → correct
 ```
 
-When a special humble verb exists, use it instead of the template.
+When a special humble verb exists, prefer it over the template.
 :::
 
 ---
@@ -241,7 +243,7 @@ When a special humble verb exists, use it instead of the template.
 
 | Verb type | Formation | Example |
 |-----------|-----------|---------|
-| Type 1 | u-row → a-row + せていただく | 行く → 行か**せていただく** |
+| Type 1 | u-column → a-column + せていただく | 行く → 行か**せていただく** |
 | Type 2 | drop る + させていただく | 食べる → 食べ**させていただく** |
 | する | させていただく | 説明**させていただく** |
 | 来る | こ**させていただく** | 来**させていただく** |

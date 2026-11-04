@@ -25,7 +25,7 @@ This lesson covers N3 grammar related to "timing." 「たとたん（に）」 i
 | 若い | わかい | 年轻（形容词）——「若い人」年轻人；「年より若く見える」显得比实际年轻//(i-adj) young — 「若い人」 young people; 「年より若く見える」 to look young for one's age |
 | 海外旅行 | かいがいりょこう | 出国旅游（名）——「海外旅行に行く」去国外旅游；「初めての海外旅行」第一次出国旅游//(n) overseas trip — 「海外旅行に行く」 to travel abroad; 「初めての海外旅行」 one's first trip abroad |
 | 入国 | にゅうこく | 入境（名、可作动词）——反义是「出国」；「入国審査」入境审查；「日本に入国する」入境日本//(n, suru-verb) entry (into a country) — opposite: 「出国」; 「入国審査」 immigration control; 「日本に入国する」 to enter Japan |
-| パスポート | ぱすぽーと | 护照（名）——「パスポートを申請する」申请护照；「パスポートを見せる」出示护照//(n) passport — 「パスポートを申請する」 to apply for a passport; 「パスポートを見せる」 to show one's passport |
+| パスポート | パスポート | 护照（名）——「パスポートを申請する」申请护照；「パスポートを見せる」出示护照//(n) passport — 「パスポートを申請する」 to apply for a passport; 「パスポートを見せる」 to show one's passport |
 | 会議 | かいぎ | 会议（名）——「会議に出る」参加会议；「会議中」正在开会//(n) meeting; conference — 「会議に出る」 to attend a meeting; 「会議中」 in a meeting |
 | 電話が鳴る | でんわがなる | 电话响（惯用语）——「鳴る」表示发出声响；「電話が鳴った途端」电话一响//(expr) the phone rings — 「鳴る」 means to ring, to sound; 「電話が鳴った途端」 the moment the phone rang |
 | 日程 | にってい | 日程（名）——指活动、旅行的日期安排；「日程を決める」定日程；「日程を調整する」协调日程//(n) schedule; dates — of a trip or event; 「日程を決める」 to set the dates; 「日程を調整する」 to coordinate schedules |

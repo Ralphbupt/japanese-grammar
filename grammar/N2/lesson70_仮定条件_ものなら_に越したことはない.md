@@ -1,11 +1,11 @@
 # Lesson 70 – 仮定・条件 — ものなら/ようものなら/ことだ/に越したことはない||Hypothesis & Condition — ものなら/ようものなら/ことだ/に越したことはない
 
 :::zh
-这一课学习表示"假定条件"和"建议"的N2语法。「ものなら」表达不太可能实现的愿望，「ようものなら」警告万一做了某事会有严重后果，「ことだ」用于给出建议，「に越したことはない」表示"最好……没有比……更好的"。这组语法在N2考试中是高频考点。
+这一课学习表示"假定条件"和"建议"的N2语法。「ものなら」表达不太可能实现的愿望，「ようものなら」警告万一做了某事会有严重后果，「ことだ」用于给出建议，「に越したことはない」表示"最好……没有比……更好的"。另外补充「ものがある」（让人感到有某种特质）和「としたら／とすれば」（假如……的话）。这组语法在N2考试中是高频考点。
 :::
 
 :::en
-This lesson covers N2 grammar for "hypothetical conditions" and "advice." 「ものなら」 expresses a wish unlikely to come true, 「ようものなら」 warns of serious consequences, 「ことだ」 gives advice, and 「に越したことはない」 means "it's best to… / nothing beats…" These are high-frequency items on the N2 exam.
+This lesson covers N2 grammar for "hypothetical conditions" and "advice." 「ものなら」 expresses a wish unlikely to come true, 「ようものなら」 warns of serious consequences, 「ことだ」 gives advice, and 「に越したことはない」 means "it's best to… / nothing beats…" Two more round it out: 「ものがある」 (something about it strikes you as…) and 「としたら／とすれば」 (supposing…). These are high-frequency items on the N2 exam.
 :::
 
 ## 本课单词表||Vocabulary
@@ -52,9 +52,13 @@ This lesson covers N2 grammar for "hypothetical conditions" and "advice." 「も
 ### 含义||Meaning
 :::zh
 "如果能……的话（真想……）"，表示说话人内心的强烈愿望，但觉得很难实现。常搭配「〜たい」。
+
+另一个常考用法是挑衅：「やれるものならやってみろ」"有本事你就做做看"——说话人认定对方做不到。后句是「〜てみろ／〜てみなさい」。
 :::
 :::en
 "If I could… (I really wish I could…)" — expresses the speaker's strong desire for something that is unlikely to happen. Often paired with 「〜たい」.
+
+Another use that often comes up on the test is a dare: 「やれるものならやってみろ」 "Go ahead and try, if you think you can" — the speaker is sure the other person can't. The second clause is 「〜てみろ／〜てみなさい」.
 :::
 
 ### 例句||Example Sentences
@@ -64,6 +68,7 @@ This lesson covers N2 grammar for "hypothetical conditions" and "advice." 「も
 3. 時間を止められる**ものなら**、止めたい。（如果能让时间停下来，真想让它停。）
 4. この病気が治せる**ものなら**、何でもする。（如果这病能治好，什么都愿意做。）
 5. 会える**ものなら**、もう一度あの人に会いたい。（如果能见到的话，真想再见那个人一面。）
+6. 勝てる**ものなら**、勝ってみろ。（有本事你就赢给我看看。）
 :::
 :::en
 1. 若い頃に戻れる**ものなら**、戻りたい。(If I could go back to my youth, I'd want to go back.)
@@ -71,13 +76,14 @@ This lesson covers N2 grammar for "hypothetical conditions" and "advice." 「も
 3. 時間を止められる**ものなら**、止めたい。(If I could stop time, I'd want to stop it.)
 4. この病気が治せる**ものなら**、何でもする。(If this illness could be cured, I'd do anything.)
 5. 会える**ものなら**、もう一度あの人に会いたい。(If I could meet that person, I'd want to see them one more time.)
+6. 勝てる**ものなら**、勝ってみろ。(Go ahead and beat me, if you think you can.)
 :::
 
 ### 辨析||Comparison
 :::zh
 | 表达 | 含义 | 区别 |
 |------|------|------|
-| ものなら（可能形） | 如果能……的话 | 表不可能的愿望 |
+| ものなら（可能形） | 如果能……的话 | 表不可能的愿望；「〜てみろ」时是挑衅 |
 | ようものなら | 万一胆敢…… | 表警告（见下节） |
 | たら | 如果…… | 一般条件，不强调不可能 |
 | ば | 如果…… | 一般条件 |
@@ -88,7 +94,7 @@ This lesson covers N2 grammar for "hypothetical conditions" and "advice." 「も
 :::en
 | Expression | Meaning | Difference |
 |------|------|------|
-| ものなら (potential) | if one could… | Expresses an unlikely wish |
+| ものなら (potential) | if one could… | Expresses an unlikely wish; with 「〜てみろ」 it's a dare |
 | ようものなら | if one dares to… | Warning (see next section) |
 | たら | if… | General conditional; no "impossible" nuance |
 | ば | if… | General conditional |
@@ -434,38 +440,42 @@ Note: the premise must be uncertain or imagined. For something that will certain
 ## 练习||Practice
 
 :::zh
-**一、选择正确的语法（ものなら・ようものなら・ことだ・に越したことはない）**
+**一、选择正确的语法（ものなら・ようものなら・ことだ・に越したことはない・ものがある・としたら）**
 
 1. できる（　　）、もう一度大学に入り直したい。
 2. 遅刻し（　　）、部長にひどく怒られる。
 3. 日本語がうまくなりたいなら、毎日話す（　　）。
 4. 旅行には、保険に入っておく（　　）。
 5. あの人を裏切るようなことをし（　　）、もう信じてもらえないだろう。
+6. 彼の言葉には、人の心を動かす（　　）。
+7. もし宝くじで1億円当たった（　　）、何に使いますか。
 
 **二、翻译成日语**
 
-6. 如果能回到10年前，真想回去。（ものなら）
-7. 要是敢在这里抽烟，会被罚款的。（ようものなら）
-8. 想要成功的话，应该不怕失败。（ことだ）
-9. 出门还是带伞最好。（に越したことはない）
-10. 如果这个愿望能实现的话，什么都愿意做。（ものなら）
+8. 如果能回到10年前，真想回去。（ものなら）
+9. 要是敢在这里抽烟，会被罚款的。（ようものなら）
+10. 想要成功的话，应该不怕失败。（ことだ）
+11. 出门还是带伞最好。（に越したことはない）
+12. 如果这个愿望能实现的话，什么都愿意做。（ものなら）
 :::
 :::en
-**Part 1: Choose the correct grammar (ものなら / ようものなら / ことだ / に越したことはない)**
+**Part 1: Choose the correct grammar (ものなら / ようものなら / ことだ / に越したことはない / ものがある / としたら)**
 
 1. できる（　　）、もう一度大学に入り直したい。
 2. 遅刻し（　　）、部長にひどく怒られる。
 3. 日本語がうまくなりたいなら、毎日話す（　　）。
 4. 旅行には、保険に入っておく（　　）。
 5. あの人を裏切るようなことをし（　　）、もう信じてもらえないだろう。
+6. 彼の言葉には、人の心を動かす（　　）。
+7. もし宝くじで1億円当たった（　　）、何に使いますか。
 
 **Part 2: Translate into Japanese**
 
-6. If I could go back 10 years, I'd want to go back. (Use ものなら)
-7. If you dare smoke here, you'll be fined. (Use ようものなら)
-8. If you want to succeed, you should not fear failure. (Use ことだ)
-9. It's best to bring an umbrella when going out. (Use に越したことはない)
-10. If this wish could come true, I'd do anything. (Use ものなら)
+8. If I could go back 10 years, I'd want to go back. (Use ものなら)
+9. If you dare smoke here, you'll be fined. (Use ようものなら)
+10. If you want to succeed, you should not fear failure. (Use ことだ)
+11. It's best to bring an umbrella when going out. (Use に越したことはない)
+12. If this wish could come true, I'd do anything. (Use ものなら)
 :::
 
 ## 复习计划||Review Schedule

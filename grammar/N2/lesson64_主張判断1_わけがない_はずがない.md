@@ -204,14 +204,14 @@ This lesson covers N2-level expressions for assertion and judgment. 「ないわ
 ### 例句||Example Sentences
 :::zh
 1. そんな簡単なことが分から**ないわけがない**。（那么简单的事，不可能不懂。）
-2. あんなに優秀な彼が不合格な**わけがない**。（那么优秀的他，不可能不及格。）
+2. あんなに優秀な彼が不合格になる**わけがない**。（那么优秀的他，不可能不及格。）
 3. 本気で努力した人が失敗する**わけがない**。（认真努力的人不可能会失败。）
 4. 彼が裏切る**わけがない**。私は彼を信じている。（他不可能背叛。我相信他。）
 5. たった一日で日本語が話せるようになる**わけがない**。（仅仅一天就能说日语，不可能。）
 :::
 :::en
 1. そんな簡単なことが分から**ないわけがない**。(There's no way you can't understand something so simple.)
-2. あんなに優秀な彼が不合格な**わけがない**。(There's no way someone as excellent as him would fail.)
+2. あんなに優秀な彼が不合格になる**わけがない**。(There's no way someone as excellent as him would fail.)
 3. 本気で努力した人が失敗する**わけがない**。(There's no way someone who truly tried hard would fail.)
 4. 彼が裏切る**わけがない**。私は彼を信じている。(There's no way he would betray me. I trust him.)
 5. たった一日で日本語が話せるようになる**わけがない**。(There's no way you can learn to speak Japanese in just one day.)

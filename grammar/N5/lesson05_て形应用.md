@@ -1,5 +1,13 @@
 # Lesson 05 – て形应用（ている・てください・てもいい）||Using the て-form (ている・てください・てもいい)
 
+:::zh
+学会て形后，在后面接上几个固定成分就能表达很多意思。本课讲〜ている（正在做、结果状态、习惯）、〜てください（请求）、〜てもいい（许可）、〜てはいけない（禁止）和〜てから（做完之后）。
+:::
+
+:::en
+Once you have the て form, adding a few fixed endings gives you a lot of everyday Japanese. This lesson covers 〜ている (ongoing action, resulting state, habit), 〜てください (requests), 〜てもいい (permission), 〜てはいけない (prohibition) and 〜てから (after doing).
+:::
+
 ## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
@@ -8,7 +16,7 @@
 | 外 | そと | 外面；户外（名）——「外で遊ぶ」在外面玩；「外に出る」出去//(n) outside; outdoors — 「外で遊ぶ」 to play outside; 「外に出る」 to go out |
 | 結婚 | けっこん | 结婚（名、可作动词）——对象用「と」；「彼と結婚する」和他结婚；「結婚している」已婚//(n, suru-verb) marriage; getting married — the partner takes 「と」; 「彼と結婚する」 to marry him; 「結婚している」 to be married (not "is getting married") |
 | 窓 | まど | 窗户（名）——「窓を開ける」开窗；「窓口」（银行、政府的）窗口//(n) window — 「窓を開ける」 to open the window; 「窓口」 a service counter (bank, city hall) |
-| 開く | ひらく | 开；打开（自他动词）——门自己开、翻开书都可用；「ドアが開く」门开了；「本を開く」翻开书//(v, intrans./trans.) to open — 「ドアが開く」 the door opens; 「本を開く」 to open a book |
+| 開く | あく | 开（自动词）——门、窗、店等“开了/开着”，他动词是「開ける」；读作「ひらく」时多指翻开、展开（如翻开书）；「ドアが開く」门开了；「窓が開いている」窗户开着//(v, intrans.) to open; to be open — transitive pair 「開ける」; read 「ひらく」 it means to open out or unfold (e.g. a book); 「ドアが開く」 the door opens; 「窓が開いている」 the window is open |
 | 開ける | あける | 打开（他动词）——自动词是「開く」；「窓を開ける」开窗；「ドアを開けておく」把门开着//(v, trans.) to open (something) — intransitive pair 「開く」; 「窓を開ける」 to open the window; 「ドアを開けておく」 to leave the door open |
 | 言葉 | ことば | 词语；语言（名）——「言葉を覚える」记单词；「言葉の意味」词的意思//(n) word; language; what someone says — 「言葉を覚える」 to learn words; 「言葉の意味」 the meaning of a word |
 | 父 | ちち | （自己的）父亲；爸爸（名）——只用于对外人说自己的父亲，别人的父亲说「お父さん」//(n) (my) father — only for your own father when talking to others; someone else's is 「お父さん」 |

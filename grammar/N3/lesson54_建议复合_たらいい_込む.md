@@ -254,10 +254,10 @@ Offers gentle advice or expresses a wish: "It would be good if…" / "You should
 
 ### 含义||Meaning
 :::zh
-复合动词后缀。核心意思有两个：① 物理上"进入里面"（飛び込む＝飞进去）；② 抽象上"深入、彻底地做"（読み込む＝深入阅读/载入数据）。作为程序员，「読み込む」「書き込む」「取り込む」是你特别熟悉的概念。
+复合动词后缀。核心意思有两个：① 物理上"进入里面"（飛び込む＝飞进去）；② 抽象上"深入、彻底地做"（読み込む＝深入阅读/载入数据）。电脑用语里的「読み込む」（载入）「書き込む」（写入）「取り込む」（导入）也是这个用法。
 :::
 :::en
-A compound verb suffix with two core meanings: ① physically "entering inside" (飛び込む = jump in); ② abstractly "doing deeply/thoroughly" (読み込む = read thoroughly / load data). As a programmer, 「読み込む」「書き込む」「取り込む」 are concepts you know well.
+A compound verb suffix with two core meanings: ① physically "entering inside" (飛び込む = jump in); ② abstractly "doing deeply/thoroughly" (読み込む = read thoroughly / load data). Computer terms like 「読み込む」 (load), 「書き込む」 (write) and 「取り込む」 (import) use it the same way.
 :::
 
 ### 例句||Example Sentences
@@ -307,14 +307,14 @@ A compound verb suffix with two core meanings: ① physically "entering inside" 
 1. 困った時は**助け合い**ましょう。（困难的时候互相帮助吧。）
 2. みんなで**話し合って**、決めましょう。（大家一起商量着决定吧。）
 3. 二人は目を見つめ**合った**。（两人对视了。）
-4. チームメンバーと情報を**分かち合う**。（和团队成员分享信息。）
+4. チームメンバーと喜びを**分かち合う**。（和团队成员分享喜悦。）
 5. 意見を出し**合って**、いいアイデアが生まれた。（互相提出意见，产生了好主意。）
 :::
 :::en
 1. 困った時は**助け合い**ましょう。(Let's help each other when we're in trouble.)
 2. みんなで**話し合って**、決めましょう。(Let's discuss it together and decide.)
 3. 二人は目を見つめ**合った**。(The two gazed into each other's eyes.)
-4. チームメンバーと情報を**分かち合う**。(Share information with team members.)
+4. チームメンバーと喜びを**分かち合う**。(Share the joy with team members.)
 5. 意見を出し**合って**、いいアイデアが生まれた。(By exchanging opinions, a good idea was born.)
 :::
 

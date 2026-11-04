@@ -218,7 +218,7 @@ Restrictions:
 - **比不上……**：「AはBに及ばない」表示A的水平达不到B，常说「足元にも及ばない」（望尘莫及）。
 
 限制：
-- "不必"义多用礼貌形「〜には及びません」，对象是对方要为说话人做的事；说话人谈自己的事时一般不用：△「私が行くには及ばない」。
+- "不必"义多用礼貌形「〜には及びません」，对象多是对方要为说话人做的事；用于说话人自己的行为时只是一般判断（「私がわざわざ行くには及ばないだろう」），没有客气回绝的意思。
 - 和「までもない」不同，可以直接接名词：⭕「ご心配には及びません」　❌「ご心配までもありません」。
 - "比不上"义前面是比较对象，不能接动词。
 :::
@@ -227,7 +227,7 @@ Restrictions:
 - **Is no match for…**: 「AはBに及ばない」 means A doesn't reach B's level; a common phrase is 「足元にも及ばない」 (can't hold a candle to).
 
 Restrictions:
-- In the "no need" sense it's mostly the polite 「〜には及びません」, about something the listener would do for the speaker; it isn't normally used about the speaker's own action: △ 「私が行くには及ばない」.
+- In the "no need" sense it's mostly the polite 「〜には及びません」, usually about something the listener would do for the speaker; about the speaker's own action it is just a plain judgement (「私がわざわざ行くには及ばないだろう」), with no polite declining in it.
 - Unlike 「までもない」, it can take a noun directly: ⭕ 「ご心配には及びません」, ❌ 「ご心配までもありません」.
 - In the "no match" sense, what comes before is the thing compared against; it can't take a verb.
 :::
@@ -524,7 +524,7 @@ Restrictions:
 1. 言う（　　）ことだが、締め切りは必ず守ってください。
 2. 先方が会ってくれないなら、手紙で気持ちを伝える（　　）。
 3. 駅まではすぐですから、わざわざ車でお送りいただく（　　）。
-4. 彼の長年の業績は、まさに称賛する（　　）ものだ。
+4. 彼は、どんな仕事でも安心して任せる（　　）人物だ。
 5. 取る（　　）ミスなのだから、そんなに落ち込まなくていい。
 6. 戦場から届いた映像は、見る（　　）ものばかりだった。
 7. 家を失った被災者の苦労は、想像（　　）。
@@ -544,7 +544,7 @@ Restrictions:
 1. までもない（「言うまでもないことだが」是固定说法）
 2. までだ（前面有「〜なら」，表示"那就……好了"的决心）
 3. には及びません（礼貌地回绝对方的好意；「までもありません」也说得通，但这种场合「には及びません」最典型）
-4. に足る（修饰「もの」，正面评价；「に値する」也可以）
+4. に足る（修饰「人物」，"够格、可以放心交给他"；「任せるに足る」是典型搭配）
 5. に足りない（固定说法「取るに足りない」，也可以说「取るに足らない」）
 6. に堪えない（前接「見る」，"惨不忍睹"）
 7. にかたくない（「想像にかたくない」）
@@ -562,7 +562,7 @@ Restrictions:
 1. 言う（　　）ことだが、締め切りは必ず守ってください。
 2. 先方が会ってくれないなら、手紙で気持ちを伝える（　　）。
 3. 駅まではすぐですから、わざわざ車でお送りいただく（　　）。
-4. 彼の長年の業績は、まさに称賛する（　　）ものだ。
+4. 彼は、どんな仕事でも安心して任せる（　　）人物だ。
 5. 取る（　　）ミスなのだから、そんなに落ち込まなくていい。
 6. 戦場から届いた映像は、見る（　　）ものばかりだった。
 7. 家を失った被災者の苦労は、想像（　　）。
@@ -582,7 +582,7 @@ Restrictions:
 1. までもない (「言うまでもないことだが」 is a set phrase)
 2. までだ (after 「〜なら」, the resolve "then I'll just…")
 3. には及びません (politely turning down the listener's offer; 「までもありません」 is also possible, but 「には及びません」 is the textbook choice here)
-4. に足る (modifies 「もの」, a positive evaluation; 「に値する」 also works)
+4. に足る (modifies 「人物」: "someone you can safely trust with it"; 「任せるに足る」 is a typical collocation)
 5. に足りない (the set phrase 「取るに足りない」; 「取るに足らない」 is also fine)
 6. に堪えない (after 「見る」: too awful to watch)
 7. にかたくない (「想像にかたくない」)

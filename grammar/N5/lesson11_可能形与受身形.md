@@ -67,7 +67,7 @@
 :::en
 | Type | Rule | Example |
 |------|------|---------|
-| Group 1 verbs | う-row → え-row + る | 書く→書**ける**、飲む→飲**める**、話す→話**せる** |
+| Group 1 verbs | う-column → え-column + る | 書く→書**ける**、飲む→飲**める**、話す→話**せる** |
 | Group 2 verbs | る→**られる** | 食べる→食べ**られる**、見る→見**られる** |
 | する | **できる** | する→できる |
 | 来る | **来られる**（こられる） | 来る→来られる |
@@ -221,7 +221,7 @@ Objects marked with を in the plain sentence typically shift to が in the pote
 :::en
 | Type | Rule | Example |
 |------|------|---------|
-| Group 1 verbs | う-row → あ-row + れる | 書く→書**かれる**、飲む→飲**まれる** |
+| Group 1 verbs | う-column → あ-column + れる | 書く→書**かれる**、飲む→飲**まれる** |
 | Group 2 verbs | る→**られる** | 食べる→食べ**られる**、見る→見**られる** |
 | する | **される** | する→される |
 | 来る | **来られる**（こられる） | 来る→来られる |
@@ -264,6 +264,8 @@ Objects marked with を in the plain sentence typically shift to が in the pote
 5. 彼女は皆**に**愛さ**れている**。（她被大家喜爱。）
 
 > **直接被动不一定是坏事**：褒められた（被表扬）、愛されている（被爱）都是正面的。
+>
+> **「捕まえられた」**语法没错，但日常更常说自动词「捕まった」（警察に捕まった＝被警察抓了），N4 常考这一对。
 :::
 
 :::en
@@ -276,6 +278,8 @@ The subject directly receives the action, equivalent to "to be done" in English.
 5. 彼女は皆**に**愛さ**れている**。(She is loved by everyone.)
 
 > **Direct passive isn't always negative**: 褒められた (was praised) and 愛されている (is loved) are both positive.
+>
+> **「捕まえられた」** is grammatical, but everyday Japanese usually says it with the intransitive 「捕まった」 (警察に捕まった = got caught by the police) — a pair N4 likes to test.
 :::
 
 #### ② 间接被动（迷惑の受身）— 日语特色！||② Indirect Passive (Nuisance Passive) — Unique to Japanese!
@@ -350,7 +354,7 @@ When a body part or possession is acted upon, Japanese makes the owner the subje
 :::en
 | | Potential Form | Passive Form |
 |---|---|---|
-| Group 1 verbs | う-row → え-row + る (書**ける**) | う-row → あ-row + れる (書**かれる**) |
+| Group 1 verbs | う-column → え-column + る (書**ける**) | う-column → あ-column + れる (書**かれる**) |
 | Group 2 verbs | 食べ**られる** | 食べ**られる** |
 | する | **できる** | **される** |
 | 来る | 来**られる** | 来**られる** |
@@ -366,6 +370,8 @@ When a body part or possession is acted upon, Japanese makes the owner the subje
 | 助词 | 〜**が**できる/られる | 〜**を**〜られた |
 | 语气 | 中性/积极 | 常带迷惑感 |
 | 被动者 | 无"に"标记动作者 | 常有"Bに" |
+
+> 这些线索只是倾向，不是规则：を＋可能形也成立，如「やっとケーキを食べられた」（终于吃到蛋糕了 → 可能）。最终要看语境。
 
 - ケーキ**が**食べられる。（能吃蛋糕 → 可能）
 - ケーキ**を**食べられた。（蛋糕被（人）吃了 → 受身/被害）
@@ -383,6 +389,8 @@ Group 2 verbs and 来る have identical potential and passive forms — use thes
 | Particle | 〜**が** + られる | 〜**を** + られた |
 | Tone | Neutral/positive | Often conveys annoyance |
 | Agent marker | No "Bに" | Often has "Bに" |
+
+> These cues are tendencies, not rules: を + potential also occurs, as in 「やっとケーキを食べられた」 (I finally got to eat cake → potential). In the end, context decides.
 
 - ケーキ**が**食べられる。(Can eat cake → potential)
 - ケーキ**を**食べられた。(The cake was eaten [by someone] → passive/nuisance)

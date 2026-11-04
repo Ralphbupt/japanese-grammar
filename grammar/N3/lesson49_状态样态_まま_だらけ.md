@@ -67,7 +67,7 @@ Indicates that a certain state remains unchanged without the expected change occ
 1. 靴を履いた**まま**、家に入らないでください。（不要穿着鞋就进家门。）
 2. 電気をつけた**まま**寝てしまった。（开着灯就睡着了。）
 3. 窓を開けた**まま**出かけてしまった。（窗户开着就出门了。）
-4. 子供の**まま**大人になれない人もいる。（也有人保持孩子的状态长不大。）
+4. 心は子供の**まま**大人になった人もいる。（也有人心还像个孩子，人却已经长大了。）
 5. 朝ご飯を食べない**まま**、出勤した。（没吃早饭就去上班了。）
 6. あの二人は会わない**まま**、10年が過ぎた。（那两人没见面就过了10年。）
 :::
@@ -75,7 +75,7 @@ Indicates that a certain state remains unchanged without the expected change occ
 1. 靴を履いた**まま**、家に入らないでください。(Please don't enter the house with your shoes still on.)
 2. 電気をつけた**まま**寝てしまった。(I fell asleep with the lights on.)
 3. 窓を開けた**まま**出かけてしまった。(I went out with the window left open.)
-4. 子供の**まま**大人になれない人もいる。(Some people can't grow up and remain childlike.)
+4. 心は子供の**まま**大人になった人もいる。(Some people grow up while staying children at heart.)
 5. 朝ご飯を食べない**まま**、出勤した。(I went to work without eating breakfast.)
 6. あの二人は会わない**まま**、10年が過ぎた。(Ten years passed without those two meeting.)
 :::

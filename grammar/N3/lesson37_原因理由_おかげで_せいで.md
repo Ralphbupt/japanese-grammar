@@ -248,9 +248,13 @@ Verb (ta-form / plain form) + 上は
 ### 含义||Meaning
 :::zh
 "既然……"，与「以上は」几乎同义，但更书面化。表达强烈的决心和觉悟。
+
+> 「上は」在多数资料里列为 N2 语法，这里放在一起学，方便和「以上は」「からには」对比。
 :::
 :::en
 "Now that…" — nearly synonymous with 「以上は」 but more literary. Expresses strong determination and resolve.
+
+> Most references list 「上は」 as N2 grammar; it is taught here alongside 「以上は」 and 「からには」 so the three can be compared.
 :::
 
 ### 例句||Example Sentences
@@ -313,7 +317,7 @@ Verb / い-adjective (plain form) + からには
 |----------|------|---------|
 | 书面・口语都用 | 最书面化 | 口语・书面都用 |
 | 名词可以用（である以上） | 只接动词 | 名词也可以（であるからには） |
-| 语气稍弱 | 语气最强（覚悟） | 语气强（决心） |
+| 后面常接义务・当然（べきだ／当然だ） | 语气最强（覚悟） | 语气强（决心） |
 
 > 三者基本可以互换，但「上は」最正式，「からには」最口语化。
 :::
@@ -322,7 +326,7 @@ Verb / い-adjective (plain form) + からには
 |----------|------|---------|
 | Both written and spoken | Most literary | Both written and spoken |
 | Can follow nouns (である以上) | Only follows verbs | Can follow nouns too (であるからには) |
-| Slightly softer tone | Strongest tone (resolve) | Strong tone (determination) |
+| Often followed by obligation / naturalness (べきだ, 当然だ) | Strongest tone (resolve) | Strong tone (determination) |
 
 > The three are largely interchangeable, but 「上は」 is the most formal and 「からには」 the most conversational.
 :::
@@ -357,14 +361,14 @@ Verb / い-adjective (plain form) + からには
 :::zh
 1. 形が富士山に似ている**ことから**、「小富士」と名付けられた。（因为形状像富士山，所以被命名为"小富士"。）
 2. 地形が特殊**なことから**、独特の文化が発展した。（由于地形特殊，发展出了独特的文化。）
-3. 成績が優秀**であることから**、奨学金をもらった。（由于成绩优秀，获得了奖学金。）
+3. 現場に残っていた靴が彼のもの**であることから**、警察は彼を疑っている。（由于现场留下的鞋是他的，警方怀疑他。）
 4. この花は星の形をしている**ことから**、「星花」と呼ばれている。（这种花因为是星星的形状，所以被称为"星花"。）
 5. 彼がいつも黒い服を着ている**ことから**、「黒」というあだ名がついた。（因为他总穿黑色衣服，所以有了"黑"这个外号。）
 :::
 :::en
 1. 形が富士山に似ている**ことから**、「小富士」と名付けられた。(Because its shape resembles Mt. Fuji, it was named "Ko-Fuji" (Little Fuji).)
 2. 地形が特殊**なことから**、独特の文化が発展した。(Due to the unique terrain, a distinctive culture developed.)
-3. 成績が優秀**であることから**、奨学金をもらった。(Because of excellent grades, a scholarship was awarded.)
+3. 現場に残っていた靴が彼のもの**であることから**、警察は彼を疑っている。(Since the shoes left at the scene are his, the police suspect him.)
 4. この花は星の形をしている**ことから**、「星花」と呼ばれている。(Because this flower is star-shaped, it is called "Star Flower.")
 5. 彼がいつも黒い服を着ている**ことから**、「黒」というあだ名がついた。(Because he always wears black clothes, he got the nickname "Kuro.")
 :::

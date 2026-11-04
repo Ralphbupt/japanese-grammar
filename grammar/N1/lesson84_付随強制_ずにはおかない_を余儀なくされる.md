@@ -27,7 +27,7 @@ This lesson covers "without…" and "can't help but / be bound to / be forced to
 | 撤退 | てったい | 撤退；退出（名、可作动词）——军队撤离，也常指企业退出某个市场；「市場から撤退する」退出市场；「撤退を決める」决定撤出//(n, suru-verb) withdrawal; pulling out — of troops, and often of a company leaving a market; 「市場から撤退する」 to pull out of a market; 「撤退を決める」 to decide to withdraw |
 | 度重なる | たびかさなる | 接二连三；屡次（自动词）——多作定语修饰不好的事；「度重なる失敗」屡次失败；「度重なる不祥事」接连不断的丑闻//(v, intrans.) to happen again and again — usually before a noun, of bad things; 「度重なる失敗」 repeated failures; 「度重なる不祥事」 one scandal after another |
 | 高騰 | こうとう | （价格）暴涨；飞涨（名、可作动词）——反义词是「暴落」；「価格が高騰する」价格暴涨；「地価の高騰」地价飞涨//(n, suru-verb) a sharp rise; soaring (of prices) — opposite: 「暴落」; 「価格が高騰する」 prices soar; 「地価の高騰」 soaring land prices |
-| 現役 | げんえき | 现役；在职（名）——仍在第一线活动的运动员、职员等，也指应届考生；「現役を引退する」退役；「現役で合格する」应届考上//(n) active (player, worker); still in service — also a student applying straight from high school; 「現役を引退する」 to retire from competition; 「現役で合格する」 to get in on the first try out of high school |
+| 現役 | げんえき | 现役；在职（名）；「現役を引退する」退役//(n) active (player, worker); still in service; 「現役を引退する」 to retire from competition |
 
 ---
 

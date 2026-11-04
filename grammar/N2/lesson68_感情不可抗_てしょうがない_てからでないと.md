@@ -107,11 +107,11 @@ This lesson covers N2 grammar for "uncontrollable emotions" and "necessary preco
 
 ### 接続||Conjugation
 :::zh
-- 動詞て形 + はいられない / てはいられない
+- 動詞て形 + はいられない（〜てはいられない）
 - 口语缩约形：てはいられない → ちゃいられない / ちゃいらんない
 :::
 :::en
-- Verb te-form + はいられない / てはいられない
+- Verb te-form + はいられない (〜てはいられない)
 - Colloquial contraction: てはいられない → ちゃいられない / ちゃいらんない
 :::
 
@@ -126,14 +126,14 @@ This lesson covers N2 grammar for "uncontrollable emotions" and "necessary preco
 ### 例句||Example Sentences
 :::zh
 1. 締め切りが近いので、のんびりし**てはいられない**。（截止日期快到了，不能再悠闲了。）
-2. みんなが頑張っているのに、自分だけ黙っ**てはいられない**。（大家都在努力，自己不能光坐着不说话。）
+2. みんなが頑張っているのに、自分だけ休ん**ではいられない**。（大家都在努力，不能只有自己歇着。）
 3. こんな結果を見て、我慢し**てはいられない**。（看到这种结果，不能再忍了。）
 4. 問題がこれだけ深刻なら、何もせずに待っ**てはいられない**。（问题这么严重，不能什么都不做干等着。）
 5. 子供が泣いているのを見て、笑っ**てはいられなく**なった。（看到孩子在哭，笑不出来了。）
 :::
 :::en
 1. 締め切りが近いので、のんびりし**てはいられない**。(The deadline is approaching, so I can't just take it easy.)
-2. みんなが頑張っているのに、自分だけ黙っ**てはいられない**。(Everyone is working hard — I can't just stay silent.)
+2. みんなが頑張っているのに、自分だけ休ん**ではいられない**。(Everyone is working hard — I can't be the only one taking a break.)
 3. こんな結果を見て、我慢し**てはいられない**。(Seeing results like these, I can't just endure it any longer.)
 4. 問題がこれだけ深刻なら、何もせずに待っ**てはいられない**。(If the problem is this serious, we can't just sit and wait doing nothing.)
 5. 子供が泣いているのを見て、笑っ**てはいられなく**なった。(Seeing the child crying, I could no longer just stand there laughing.)
@@ -297,8 +297,8 @@ This lesson covers N2 grammar for "uncontrollable emotions" and "necessary preco
 **一、选择正确的语法（てしょうがない・てしかたがない・てはいられない・ないことには・てからでないと）**
 
 1. 明日の面接が心配で（　　）。
-2. 自分の目で確かめ（　　）、信じられない。
-3. 予約し（　　）、この店には入れない。
+2. 体が丈夫で（　　）、この仕事は続けられない。
+3. チケットを買っ（　　）、会場には入れない。
 4. 締め切りまであと3日だ。寝（　　）。
 5. 故郷の料理が懐かしく（　　）。
 
@@ -314,8 +314,8 @@ This lesson covers N2 grammar for "uncontrollable emotions" and "necessary preco
 **Part 1: Choose the correct grammar (てしょうがない / てしかたがない / てはいられない / ないことには / てからでないと)**
 
 1. 明日の面接が心配で（　　）。
-2. 自分の目で確かめ（　　）、信じられない。
-3. 予約し（　　）、この店には入れない。
+2. 体が丈夫で（　　）、この仕事は続けられない。
+3. チケットを買っ（　　）、会場には入れない。
 4. 締め切りまであと3日だ。寝（　　）。
 5. 故郷の料理が懐かしく（　　）。
 

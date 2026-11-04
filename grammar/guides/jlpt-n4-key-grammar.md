@@ -50,13 +50,13 @@ This page is for learners a few weeks out from the N4 who want the part that act
 :::zh
 | 语法 | 接续 | 含义 | 例句 |
 |------|------|------|------|
-| 8. [尊敬語：特殊动词／お〜になる](/lesson27/) | いらっしゃる・召し上がる・おっしゃる・ご覧になる・なさる；其他动词 お＋ます形＋になる | 抬高**对方**的动作。有特殊动词时必须用特殊动词 | 先生は明日学校に**いらっしゃいます**か。（老师明天来学校吗？） |
+| 8. [尊敬語：特殊动词／お〜になる](/lesson27/) | いらっしゃる・召し上がる・おっしゃる・ご覧になる・なさる；其他动词 お＋ます形＋になる | 抬高**对方**的动作。有特殊动词时优先用特殊动词（お食べになる・お見になる 之类不说） | 先生は明日学校に**いらっしゃいます**か。（老师明天来学校吗？） |
 | 9. [謙譲語：特殊动词／お〜する](/lesson28/) | 参る・伺う・申す・いただく・拝見する・いたす；其他动词 お＋ます形＋する（漢語用 ご） | 降低**自己**来抬高对方，只用于自己（我方）的动作 | お荷物を**お持ちします**。（行李我来拿。） |
 :::
 :::en
 | Pattern | Conjugation | Meaning | Example |
 |------|------|------|------|
-| 8. [Sonkeigo: special verbs / お〜になる](/lesson27/) | いらっしゃる・召し上がる・おっしゃる・ご覧になる・なさる; other verbs お + masu-stem + になる | Raises **the other person's** action. If a special verb exists, you must use it | 先生は明日学校に**いらっしゃいます**か。(Will you be at school tomorrow, sensei?) |
+| 8. [Sonkeigo: special verbs / お〜になる](/lesson27/) | いらっしゃる・召し上がる・おっしゃる・ご覧になる・なさる; other verbs お + masu-stem + になる | Raises **the other person's** action. If a special verb exists, prefer it (forms like お食べになる・お見になる aren't used) | 先生は明日学校に**いらっしゃいます**か。(Will you be at school tomorrow, sensei?) |
 | 9. [Kenjōgo: special verbs / お〜する](/lesson28/) | 参る・伺う・申す・いただく・拝見する・いたす; other verbs お + masu-stem + する (ご for kango) | Lowers **your own** action to show respect; only for what you (or your side) do | お荷物を**お持ちします**。(Let me carry your bag.) |
 :::
 
@@ -401,7 +401,7 @@ This page is for learners a few weeks out from the N4 who want the part that act
 - ⭕ 先生、どうぞ**召し上がって**ください。（老师，请用。）
 - ⭕ では、**いただきます**。（那我就不客气了。）
 - ❌ 私が**召し上がります**。（不能给自己的动作用尊敬語）
-- ❌ 先生が**お食べになりました**。 → ⭕ **召し上がりました**（有特殊动词就不套 お〜になる）
+- ❌ 先生が**お食べになりました**。 → ⭕ **召し上がりました**（食べる・見る・行く 这类有特殊动词的，不说 お食べになる・お見になる・お行きになる；お飲みになる、お休みになる 倒是常用）
 
 **怎么判断**：只问一句"这个动作是谁做的"。对方、上级 → 尊敬語；我、我方 → 謙譲語。另外记住 いらっしゃいます・おっしゃいます・なさいます・くださいます 的 ます 形。
 :::
@@ -417,7 +417,7 @@ This page is for learners a few weeks out from the N4 who want the part that act
 - ⭕ 先生、どうぞ**召し上がって**ください。(Please, sensei, help yourself.)
 - ⭕ では、**いただきます**。(Well then, I'll gladly have some.)
 - ❌ 私が**召し上がります**。(never use sonkeigo for your own action)
-- ❌ 先生が**お食べになりました**。 → ⭕ **召し上がりました** (when a special verb exists, don't build お〜になる)
+- ❌ 先生が**お食べになりました**。 → ⭕ **召し上がりました** (verbs like 食べる・見る・行く that have a special verb don't take お〜になる — no お食べになる・お見になる・お行きになる; お飲みになる and お休みになる, though, are common)
 
 **How to decide**: ask only "whose action is this?" The other person or a superior → sonkeigo; you or your side → kenjōgo. Also learn the ます forms いらっしゃいます・おっしゃいます・なさいます・くださいます.
 :::
@@ -457,7 +457,7 @@ This page is for learners a few weeks out from the N4 who want the part that act
 1. **文の文法1（选填）先看空格前面的词形**。N4 的选项常常是同一个语法的不同接续：辞书形＋ところ／た形＋ところ、可能形＋ように／辞书形＋ために、他动词＋てある。前面的形式一确定，选项往往只剩一个。
 2. **找时间信号词**。これから → るところ；今 → ているところ；さっき・たった今 → たところ；先月・去年 → たばかり；最近・だんだん → てきた；これから・将来 → ていく；〜までに 后面接"交、做完"。
 3. **授受、使役、被动题先圈主语和に／を**。谁得到好处、谁在下命令、谁被迫去做——用上面第 5、6 组的方法判断，比靠语感可靠得多。
-4. **敬语题只问"谁的动作"**。对方的 → 尊敬語，自己的 → 謙譲語；再检查有没有特殊动词（召し上がる、拝見する），有就不能套 お〜になる／お〜する。
+4. **敬语题只问"谁的动作"**。对方的 → 尊敬語，自己的 → 謙譲語；再检查有没有特殊动词（召し上がる、拝見する），有的话一般选特殊动词——お食べになる、お見する 这类套 お〜になる／お〜する 的形式不说。
 5. **★ 排序题先拼"固定块"**。把能直接连的两三个选项先拼好：名词＋の＋ように、て形＋ほしい、ます形＋やすい、た形＋ばかり＋で。块拼好后再看哪一项放在句首、句尾，最后才数 ★ 是第几个。先写出完整的顺序再填 ★，别凭第一眼直接选。
 6. **文章の文法 要通读整段**。选项多半在 ていく／てくる、てしまう、ことにした／ことになった 这类"视角词"上做文章，单看一句判断不出来，要看作者是站在哪个时间、哪个立场说话。
 7. **会口语缩略形**。〜ちゃった（てしまった）、〜とく（ておく）、〜なきゃ（なければ）、〜って（という・と言っていた）在会话题和听力里常出现，认不出来就会误读整句。
@@ -467,7 +467,7 @@ This page is for learners a few weeks out from the N4 who want the part that act
 1. **Grammar part 1 (fill in the blank): look at the word form before the gap first.** N4 options are often the same pattern with different connections: dictionary form + ところ vs た + ところ, potential + ように vs dictionary form + ために, transitive verb + てある. Once you've pinned down the form before the gap, usually only one option is left.
 2. **Look for time words.** これから → るところ; 今 → ているところ; さっき / たった今 → たところ; 先月 / 去年 → たばかり; 最近 / だんだん → てきた; これから / 将来 → ていく; 〜までに is followed by "hand in / finish".
 3. **For giving/receiving, causative and passive questions, circle the subject and the に / を first.** Who benefits, who gives the order, who is forced to act — use the method in groups 5 and 6 above; it's far more reliable than going by feel.
-4. **For keigo questions, ask only "whose action is it?"** Theirs → sonkeigo, yours → kenjōgo. Then check for a special verb (召し上がる, 拝見する); if there is one, お〜になる / お〜する is wrong.
+4. **For keigo questions, ask only "whose action is it?"** Theirs → sonkeigo, yours → kenjōgo. Then check for a special verb (召し上がる, 拝見する); if there is one, it's usually the answer — built forms like お食べになる or お見する aren't used.
 5. **For ★ ordering, build the fixed chunks first.** Join the two or three options that obviously connect: noun + の + ように, te-form + ほしい, masu-stem + やすい, た + ばかり + で. Then decide what goes at the start and the end, and only then count which slot is ★. Write out the full order before you mark ★ — don't pick from first impressions.
 6. **For passage grammar, read the whole paragraph.** The options usually turn on viewpoint words such as ていく / てくる, てしまう, ことにした / ことになった, which you can't settle from one sentence: you need to know from which point in time and whose position the writer is speaking.
 7. **Know the spoken contractions.** 〜ちゃった (てしまった), 〜とく (ておく), 〜なきゃ (なければ), 〜って (という / と言っていた) show up in dialogue questions and listening; miss them and you misread the whole sentence.

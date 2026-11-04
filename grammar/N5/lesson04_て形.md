@@ -1,5 +1,13 @@
 # Lesson 04 – て形（最重要的动词变形）||The て-form (the most important conjugation)
 
+:::zh
+て形是日语里用处最多的动词变形：连接动作、请求、进行时、许可、禁止都要用它。本课讲一类动词的音变规则（いて・って・んで・して），再讲て形连接句子的基本用法和初学者常犯的错误。
+:::
+
+:::en
+The て form is the most-used verb conjugation in Japanese: linking actions, requests, the progressive, permission and prohibition all build on it. This lesson covers the Group 1 sound changes (いて, って, んで, して), then the basic ways て joins sentences and the mistakes beginners usually make.
+:::
+
 ## 本课单词表||Vocabulary
 
 | 单词 | 读音 | 含义 |
@@ -409,7 +417,7 @@ Three different endings, all change to **ん+で**:
 > 可以看到：ます形是统一规则（う段→い段+ます），而て形有音变，所以更需要专门记忆。
 :::
 :::en
-| Dictionary | ます form (い-row + ます) | て form (sound change) |
+| Dictionary | ます form (い-column + ます) | て form (sound change) |
 |--------|-------------------|-------------|
 | 書く | 書きます | 書いて |
 | 話す | 話します | 話して |
@@ -418,7 +426,7 @@ Three different endings, all change to **ん+で**:
 | 帰る | 帰ります | 帰って |
 | 買う | 買います | 買って |
 
-> Notice: ます form uses a consistent rule (う-row → い-row + ます), while て form has sound changes — which is why it needs dedicated memorization.
+> Notice: ます form uses a consistent rule (う-column → い-column + ます), while て form has sound changes — which is why it needs dedicated memorization.
 :::
 
 ---
@@ -744,7 +752,7 @@ The most basic use of て form is chaining multiple actions together — like "a
 | ❌ 待ちて | ✅ 待って | つ-ending requires geminate consonant change |
 
 > **Key understanding**: ます form and て form are **two completely independent sets of rules** — don't mix them.
-> - ます form: consistent rule (う-row → い-row + ます)
+> - ます form: consistent rule (う-column → い-column + ます)
 > - て form: four sets of sound change rules
 >
 > Never think "first make the ます form, then swap ます for て" — this only works by coincidence for Group 2 and す-ending Group 1 verbs; everything else comes out wrong.
@@ -814,14 +822,14 @@ Identify whether each verb is Group 1, Group 2, or Group 3:
 8. 開ける → **二类**（け是え段 → 二类。验证：開けます，没有り）
 :::
 :::en
-1. 走る → **Group 1** (し is い-row, but 走る is an exception. Verify: 走**り**ます)
-2. 食べる → **Group 2** (べ is え-row → Group 2. Verify: 食べます, no り)
+1. 走る → **Group 1** (し is い-column, but 走る is an exception. Verify: 走**り**ます)
+2. 食べる → **Group 2** (べ is え-column → Group 2. Verify: 食べます, no り)
 3. 勉強する → **Group 3** (compound 〜する verb)
 4. 飲む → **Group 1** (む ending, not る-ending → must be Group 1)
-5. 見る → **Group 2** (み is い-row → Group 2. Verify: 見ます, no り)
-6. 帰る → **Group 1** (え is え-row, looks like Group 2 but it's an exception! Verify: 帰**り**ます)
+5. 見る → **Group 2** (み is い-column → Group 2. Verify: 見ます, no り)
+6. 帰る → **Group 1** (え is え-column, looks like Group 2 but it's an exception! Verify: 帰**り**ます)
 7. 来る → **Group 3** (one of only two irregular verbs)
-8. 開ける → **Group 2** (け is え-row → Group 2. Verify: 開けます, no り)
+8. 開ける → **Group 2** (け is え-column → Group 2. Verify: 開けます, no り)
 :::
 
 </details>
@@ -845,10 +853,10 @@ Identify whether each verb is Group 1, Group 2, or Group 3:
 5. する → **し**ます（三类，死记）
 :::
 :::en
-1. 読む → 読**み**ます (む→み, ま-column い-row)
-2. 泳ぐ → 泳**ぎ**ます (ぐ→ぎ, か-column voiced い-row)
+1. 読む → 読**み**ます (む→み, ま row, い column)
+2. 泳ぐ → 泳**ぎ**ます (ぐ→ぎ, voiced か row (が), い column)
 3. 開ける → 開け**ます** (Group 2, drop る add ます)
-4. 走る → 走**り**ます (Group 1! る→り, ら-column い-row)
+4. 走る → 走**り**ます (Group 1! る→り, ら row, い column)
 5. する → **し**ます (Group 3, memorize)
 :::
 
@@ -951,7 +959,7 @@ Conjugate each verb into the specified form:
 3. 彼女は親切だ + 優しい
 4. 手を洗う + ご飯を食べる
 5. 薬を飲む + 寝る
-6. 公園まで歩く + 散歩する
+6. 駅まで歩く + 電車に乗る
 7. この部屋は広い + きれいだ
 :::
 :::en
@@ -962,7 +970,7 @@ Connect the two short sentences using て form:
 3. 彼女は親切だ + 優しい
 4. 手を洗う + ご飯を食べる
 5. 薬を飲む + 寝る
-6. 公園まで歩く + 散歩する
+6. 駅まで歩く + 電車に乗る
 7. この部屋は広い + きれいだ
 :::
 
@@ -975,7 +983,7 @@ Connect the two short sentences using て form:
 3. 彼女は親切**で**、優しいです。（な形容词：だ→で）
 4. 手を洗っ**て**、ご飯を食べます。（一类う→って）
 5. 薬を飲ん**で**、寝ました。（一类む→んで）
-6. 公園まで歩い**て**、散歩しました。（一类く→いて）
+6. 駅まで歩い**て**、電車に乗りました。（一类く→いて）
 7. この部屋は広**くて**、きれいです。（い形容词：い→くて）
 :::
 :::en
@@ -984,7 +992,7 @@ Connect the two short sentences using て form:
 3. 彼女は親切**で**、優しいです。(な-adj: だ→で)
 4. 手を洗っ**て**、ご飯を食べます。(Group 1 う→って)
 5. 薬を飲ん**で**、寝ました。(Group 1 む→んで)
-6. 公園まで歩い**て**、散歩しました。(Group 1 く→いて)
+6. 駅まで歩い**て**、電車に乗りました。(Group 1 く→いて)
 7. この部屋は広**くて**、きれいです。(い-adj: い→くて)
 :::
 

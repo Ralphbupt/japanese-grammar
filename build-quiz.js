@@ -118,6 +118,11 @@ const ABOVE_LEVEL = {
     "lesson15#2": "N4", "lesson15#4": "N4", "lesson15#6": "N4", "lesson15#8": "N4",   // ことがある/ことはない, のに, し, ために
     "lesson16#2": "N4", "lesson16#3": "N4", "lesson16#5": "N4",   // すぎる, やすい/にくい, 方
   },
+  N3: {
+    "lesson37#5": "N2",                                   // 上は
+    "lesson44#3": "N2", "lesson44#4": "N2", "lesson44#5": "N2",   // ざるを得ない, かねる, かねない
+    "lesson45#3": "N2",                                   // 得る/得ない
+  },
 };
 function aboveLevel(level, q) {
   const map = ABOVE_LEVEL[level];

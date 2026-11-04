@@ -171,19 +171,17 @@ Another set:
 #### 辞書形＋ところだ（正要……）||Dictionary form + ところだ (About to…)
 :::zh
 1. 今から出かける**ところです**。（正要出门。）
-2. ちょうど電話しようと思っていた**ところだ**。（正好在想着要打电话。）
-3. これから食べる**ところです**。（正要吃。）
-4. タクシーに乗る**ところだった**のに、友達が車で迎えに来た。（正要坐出租车，结果朋友开车来接了。）
-5. 今まさに会議を始める**ところです**。（现在正要开始开会。）
+2. これから食べる**ところです**。（正要吃。）
+3. タクシーに乗る**ところだった**のに、友達が車で迎えに来た。（正要坐出租车，结果朋友开车来接了。）
+4. 今まさに会議を始める**ところです**。（现在正要开始开会。）
 
 **生活场景**: 手机响了，你正准备出门 → 「今、出かける**ところ**なんだけど……」（我正要出门呢……）
 :::
 :::en
 1. 今から出かける**ところです**。（I'm just about to head out.）
-2. ちょうど電話しようと思っていた**ところだ**。（I was just thinking of calling.）
-3. これから食べる**ところです**。（I'm just about to eat.）
-4. タクシーに乗る**ところだった**のに、友達が車で迎えに来た。（I was about to take a taxi, but my friend came to pick me up.）
-5. 今まさに会議を始める**ところです**。（We are just about to start the meeting.）
+2. これから食べる**ところです**。（I'm just about to eat.）
+3. タクシーに乗る**ところだった**のに、友達が車で迎えに来た。（I was about to take a taxi, but my friend came to pick me up.）
+4. 今まさに会議を始める**ところです**。（We are just about to start the meeting.）
 
 **Real-life scenario**: Your phone rings as you're about to leave → 「今、出かける**ところ**なんだけど……」（I'm about to head out, but…）
 :::
@@ -194,6 +192,8 @@ Another set:
 2. ちょうど話している**ところだった**。（正在说呢。）
 3. 今、資料を確認している**ところです**ので、少々お待ちください。（正在确认资料，请稍等。）
 4. 上司と相談している**ところだった**ので、電話に出られなかった。（当时正在和上司商量，所以没能接电话。）
+5. ちょうど電話しようと思っていた**ところだ**。（正好在想着要打电话。→ 思っている＝一直在想，所以属于"正在"）
+6. ちょうど電話しようと思っていた**ところに**、彼から電話が来た。（正想着打电话，他就来电话了。→ ところに = 正在那个时候）
 
 **生活场景**: 上司问进度 → 「今ちょうど確認している**ところです**。」（我正在确认呢。→ 比ている更强调"此刻正好在做"）
 :::
@@ -202,6 +202,8 @@ Another set:
 2. ちょうど話している**ところだった**。（We were right in the middle of talking.）
 3. 今、資料を確認している**ところです**ので、少々お待ちください。（I'm currently checking the materials, so please wait a moment.）
 4. 上司と相談している**ところだった**ので、電話に出られなかった。（I was in the middle of discussing with my boss, so I couldn't answer the phone.）
+5. ちょうど電話しようと思っていた**ところだ**。（I was just thinking of calling. → 思っている = an ongoing state of thinking, so it belongs with "in the middle of".）
+6. ちょうど電話しようと思っていた**ところに**、彼から電話が来た。（Right as I was thinking of calling, he called me. → ところに = at exactly that moment.）
 
 **Real-life scenario**: Your boss asks about progress → 「今ちょうど確認している**ところです**。」（I'm checking on it right now. → Stronger than ている at emphasizing "at this exact moment."）
 :::
@@ -210,18 +212,16 @@ Another set:
 :::zh
 1. さっき帰ってきた**ところです**。（刚回来。）
 2. 今、食べ終わった**ところだ**。（刚吃完。）
-3. ちょうど電話しようと思っていた**ところに**、彼から電話が来た。（正想着打电话，他就来电话了。→ ところに = 正在那个时候）
-4. たった今、仕事が終わった**ところです**。（刚刚工作结束。）
-5. 駅に着いた**ところ**なので、あと5分で着きます。（刚到车站，再5分钟就到。）
+3. たった今、仕事が終わった**ところです**。（刚刚工作结束。）
+4. 駅に着いた**ところ**なので、あと5分で着きます。（刚到车站，再5分钟就到。）
 
 **生活场景**: 朋友打电话来说"你到了吗？" → 「今、駅に着いた**ところ**だよ。」（我刚到车站。→ 强调"此刻刚刚"的即时感）
 :::
 :::en
 1. さっき帰ってきた**ところです**。（I just got home.）
 2. 今、食べ終わった**ところだ**。（I just finished eating.）
-3. ちょうど電話しようと思っていた**ところに**、彼から電話が来た。（Right as I was thinking of calling, he called me. → ところに = at exactly that moment.）
-4. たった今、仕事が終わった**ところです**。（I just finished work right now.）
-5. 駅に着いた**ところ**なので、あと5分で着きます。（I just arrived at the station, so I'll be there in 5 minutes.）
+3. たった今、仕事が終わった**ところです**。（I just finished work right now.）
+4. 駅に着いた**ところ**なので、あと5分で着きます。（I just arrived at the station, so I'll be there in 5 minutes.）
 
 **Real-life scenario**: A friend calls asking "Are you there yet?" → 「今、駅に着いた**ところ**だよ。」（I just got to the station. → Emphasizes the immediacy of "just now."）
 :::

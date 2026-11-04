@@ -3,10 +3,14 @@
 :::zh
 离 N5 考试只剩几周、来不及把 70 多个语法点从头再过一遍？这一页只挑考试里反复出现、又最容易错的 30 个：按功能分组（助词、时间顺序、请求与义务、愿望与邀请、经验、比较、原因与条件），每条给出接续、含义和一个短例句，并链接到讲解它的课。后面是最容易混的 10 组、N5 语法题的做题技巧，最后用 10 道自测题检查一遍。
 
+标着 **N4 预习** 的几条（〜すぎる、〜かもしれない、〜たら、辞書形 + ことがある、と・ば・たら・なら、两种そうだ）按多数 JLPT 语法清单属于 N4，本站在 N5 课里提前讲了。N5 考试里不一定出现，N4 一定会考；时间紧的话先把其余各条吃透。
+
 想看完整清单，去 [N5 语法清单](/N5_grammar_list/)；按课复习，去 [N5 总览](/N5/)；想直接刷题，去 [N5 练习题](/n5-practice/)。
 :::
 :::en
 A few weeks before the N5 and no time to go through all 70-odd grammar points again? This page picks only the 30 that keep coming up in the test and that learners get wrong most: grouped by function (particles, time and sequence, requests and obligation, wants and invitations, experience, comparison, reasons and conditions), each with its conjugation, meaning and one short example, linked to the lesson that teaches it. After that come the 10 most confused pairs, tips for the N5 grammar questions, and a 10-question self-test.
+
+The points marked **N4 preview** (〜すぎる, 〜かもしれない, 〜たら, dictionary form + ことがある, と・ば・たら・なら, and both kinds of そうだ) are N4 grammar on most JLPT lists; this site teaches them early, in the N5 lessons. The N5 may not test them, the N4 certainly will — if time is short, get the rest solid first.
 
 For the complete list, see the [N5 grammar checklist](/N5_grammar_list/); to review lesson by lesson, the [N5 overview](/N5/); to go straight to questions, the [N5 practice questions](/n5-practice/).
 :::
@@ -122,7 +126,7 @@ For the complete list, see the [N5 grammar checklist](/N5_grammar_list/); to rev
 | [AはBより〜／AよりBのほうが〜](/lesson08/) | 名词 + より；名词 + のほうが | A比B……；比起A，B更…… | 夏**より**冬**のほうが**好きです。（比起夏天更喜欢冬天。） |
 | [〜の中で〜が一番〜](/lesson08/) | 范围 + の中で + 名词 + が一番 + 形容词 | 在……之中，……最…… | 果物**の中で**りんご**が一番**好きです。（水果里最喜欢苹果。） |
 | [〜くなる／〜になる](/lesson08/) | い形（去い）+ くなる；な形语干・名词 + になる | 变得……；成为…… | 日本語が上手**になりました**。（日语变好了。） |
-| [〜すぎる](/lesson16/) | 动词ます形（去ます）／い形（去い）／な形语干 + すぎる | 太……、过度 | このかばんは高**すぎます**。（这个包太贵了。） |
+| [〜すぎる](/lesson16/)（N4 预习） | 动词ます形（去ます）／い形（去い）／な形语干 + すぎる | 太……、过度 | このかばんは高**すぎます**。（这个包太贵了。） |
 :::
 :::en
 | Pattern | Conjugation | Meaning | Example |
@@ -130,7 +134,7 @@ For the complete list, see the [N5 grammar checklist](/N5_grammar_list/); to rev
 | [AはBより〜／AよりBのほうが〜](/lesson08/) | noun + より; noun + のほうが | A is more … than B; B rather than A | 夏**より**冬**のほうが**好きです。(I like winter better than summer.) |
 | [〜の中で〜が一番〜](/lesson08/) | group + の中で + noun + が一番 + adjective | … is the most … among … | 果物**の中で**りんご**が一番**好きです。(Of all fruit, I like apples best.) |
 | [〜くなる／〜になる](/lesson08/) | い-adj minus い + くなる; な-adj stem / noun + になる | become … | 日本語が上手**になりました**。(My Japanese has got better.) |
-| [〜すぎる](/lesson16/) | verb ます-stem / い-adj minus い / な-adj stem + すぎる | too …, overdo … | このかばんは高**すぎます**。(This bag is too expensive.) |
+| [〜すぎる](/lesson16/) (N4 preview) | verb ます-stem / い-adj minus い / な-adj stem + すぎる | too …, overdo … | このかばんは高**すぎます**。(This bag is too expensive.) |
 :::
 
 ### 原因・推测・条件||Reasons, Guesses and Conditions
@@ -139,15 +143,15 @@ For the complete list, see the [N5 grammar checklist](/N5_grammar_list/); to rev
 | 语法 | 接续 | 含义 | 例句 |
 |------|------|------|------|
 | [〜から／〜ので](/lesson15/) | 简体／敬体 + から；简体 + ので（な形・名词 + なので） | 因为……；ので更客观、更礼貌 | 雨**なので**、出かけません。（因为下雨，不出门。） |
-| [〜でしょう／〜かもしれない](/lesson13/) | 简体 + でしょう／かもしれない（な形・名词去だ） | 大概……吧（把握较大）；也许……（一半一半） | 明日は雨**でしょう**。（明天大概会下雨。） |
-| [〜たら](/lesson10/) | た形 + ら | 如果……；……之后（后面可以接请求、意志） | 駅に着い**たら**、電話してください。（到了车站请打电话。） |
+| [〜でしょう／〜かもしれない](/lesson13/)（かもしれない：N4 预习） | 简体 + でしょう／かもしれない（な形・名词去だ） | 大概……吧（把握较大）；也许……（一半一半） | 明日は雨**でしょう**。（明天大概会下雨。） |
+| [〜たら](/lesson10/)（N4 预习） | た形 + ら | 如果……；……之后（后面可以接请求、意志） | 駅に着い**たら**、電話してください。（到了车站请打电话。） |
 :::
 :::en
 | Pattern | Conjugation | Meaning | Example |
 |------|------|------|------|
 | [〜から／〜ので](/lesson15/) | plain / polite form + から; plain form + ので (な-adj / noun + なので) | because …; ので sounds more objective and polite | 雨**なので**、出かけません。(It's raining, so I'm not going out.) |
-| [〜でしょう／〜かもしれない](/lesson13/) | plain form + でしょう／かもしれない (drop だ after な-adj / noun) | probably … (fairly sure); might … (50-50) | 明日は雨**でしょう**。(It will probably rain tomorrow.) |
-| [〜たら](/lesson10/) | た-form + ら | if …; once … (can be followed by a request or intention) | 駅に着い**たら**、電話してください。(Call me when you get to the station.) |
+| [〜でしょう／〜かもしれない](/lesson13/) (かもしれない: N4 preview) | plain form + でしょう／かもしれない (drop だ after な-adj / noun) | probably … (fairly sure); might … (50-50) | 明日は雨**でしょう**。(It will probably rain tomorrow.) |
+| [〜たら](/lesson10/) (N4 preview) | た-form + ら | if …; once … (can be followed by a request or intention) | 駅に着い**たら**、電話してください。(Call me when you get to the station.) |
 :::
 
 ## 最容易混的几组||Most Confused Pairs
@@ -222,13 +226,13 @@ For the complete list, see the [N5 grammar checklist](/N5_grammar_list/); to rev
 - 日本へ行っ**たことがあります**。（去过日本。→ 经验）
 - バスが遅れる**ことがあります**。（巴士有时会晚点。→ 有时会发生）
 
-**怎么判断：** た形 + ことがある = "曾经……过"；辞書形 + ことがある = "有时会……"。见 [Lesson 07](/lesson07/)、[Lesson 15](/lesson15/)。
+**怎么判断：** た形 + ことがある = "曾经……过"；辞書形 + ことがある = "有时会……"（这一用法是 N4 预习）。见 [Lesson 07](/lesson07/)、[Lesson 15](/lesson15/)。
 :::
 :::en
 - 日本へ行っ**たことがあります**。(I've been to Japan. → experience)
 - バスが遅れる**ことがあります**。(The bus is sometimes late. → it happens now and then)
 
-**How to decide:** た-form + ことがある = "have done … before"; dictionary form + ことがある = "sometimes …". See [Lesson 07](/lesson07/) and [Lesson 15](/lesson15/).
+**How to decide:** た-form + ことがある = "have done … before"; dictionary form + ことがある = "sometimes …" (this use is an N4 preview). See [Lesson 07](/lesson07/) and [Lesson 15](/lesson15/).
 :::
 
 ### 6. 〜から vs 〜ので||6. 〜から vs 〜ので
@@ -255,14 +259,14 @@ For the complete list, see the [N5 grammar checklist](/N5_grammar_list/); to rev
 - ⭕ 春になる**と**、桜が咲きます。（一到春天樱花就开。→ 自然规律）
 - ⭕ A：日本語を勉強したいです。 B：日本語を勉強する**なら**、この本がいいですよ。（→ 接对方的话给建议）
 
-**怎么判断：** 后面是请求、意志 → 不能用と；自然规律、必然结果 → と；接着对方说的话给建议 → なら；拿不准 → たら。详见 [と・ば・たら・なら](/to-ba-tara-nara/)。
+**怎么判断：** 后面是请求、意志 → 不能用と；自然规律、必然结果 → と；接着对方说的话给建议 → なら；拿不准 → たら。这一组是 N4 预习，详见 [と・ば・たら・なら](/to-ba-tara-nara/)。
 :::
 :::en
 - ❌ 駅に着く**と**、電話してください。 ⭕ 駅に着い**たら**、電話してください。
 - ⭕ 春になる**と**、桜が咲きます。(When spring comes, the cherry trees bloom. → a natural law)
 - ⭕ A：日本語を勉強したいです。 B：日本語を勉強する**なら**、この本がいいですよ。(→ picking up what the other person said to give advice)
 
-**How to decide:** a request or intention afterwards → never と; natural laws and inevitable results → と; advice on what the other person just said → なら; not sure → たら. More in [と, ば, たら, なら](/to-ba-tara-nara/).
+**How to decide:** a request or intention afterwards → never と; natural laws and inevitable results → と; advice on what the other person just said → なら; not sure → たら. This set is an N4 preview; more in [と, ば, たら, なら](/to-ba-tara-nara/).
 :::
 
 ### 8. そうだ（样态）vs そうだ（传闻）||8. そうだ (appearance) vs そうだ (hearsay)
@@ -273,7 +277,7 @@ For the complete list, see the [N5 grammar checklist](/N5_grammar_list/); to rev
 - おいし**そう**です（看起来好吃） vs おいしい**そう**です（听说好吃）
 - ⭕ よさ**そう**（看起来不错） ❌ いい**そう**（作"看起来"讲时）
 
-**怎么判断：** 前面是ます形去ます、い形容词去い → "看起来"；前面是完整的简体 → "听说"。见 [Lesson 13](/lesson13/)。
+**怎么判断：** 前面是ます形去ます、い形容词去い → "看起来"；前面是完整的简体 → "听说"。两种そうだ都是 N4 预习，见 [Lesson 13](/lesson13/)。
 :::
 :::en
 - 雨が降り**そうです**。(It looks like it's going to rain. → ます-stem)
@@ -281,7 +285,7 @@ For the complete list, see the [N5 grammar checklist](/N5_grammar_list/); to rev
 - おいし**そう**です (looks tasty) vs おいしい**そう**です (I hear it's tasty)
 - ⭕ よさ**そう** (looks good) ❌ いい**そう** (in the "looks" sense)
 
-**How to decide:** ます-stem or い-adjective minus い before it → "looks like"; a full plain form before it → "I hear". See [Lesson 13](/lesson13/).
+**How to decide:** ます-stem or い-adjective minus い before it → "looks like"; a full plain form before it → "I hear". Both are N4 previews; see [Lesson 13](/lesson13/).
 :::
 
 ### 9. 〜たい vs 〜たがる vs 〜ほしい||9. 〜たい vs 〜たがる vs 〜ほしい
@@ -371,8 +375,8 @@ Fill each blank with the right word.
 4. **こと** —— た形 + ことがある = 经验。
 5. **が** —— 〜の中で〜が一番〜。
 6. **ながら** —— ます形去ます + ながら，同时做两件事。
-7. **たら** —— 前面有「もし」、后面是请求，と不行，たら最自然。
-8. **そう** —— ます形去ます + そうだ = 看起来要……
+7. **たら** —— 前面有「もし」、后面是请求，と不行，たら最自然。（N4 预习）
+8. **そう** —— ます形去ます + そうだ = 看起来要……（N4 预习）
 9. **しか** —— 句尾是否定，"只有500日元"。（填「も」也合语法，但意思变成"连500日元都没有"。）
 10. **から**（或 **ので**）—— 说明理由；「ある」是动词，直接接，不用加な。
 :::
@@ -383,8 +387,8 @@ Fill each blank with the right word.
 4. **こと** — た-form + ことがある = experience.
 5. **が** — 〜の中で〜が一番〜.
 6. **ながら** — ます-stem + ながら, two things at once.
-7. **たら** — もし comes first and a request follows, so と won't do; たら is the natural choice.
-8. **そう** — ます-stem + そうだ = looks like it's about to …
+7. **たら** — もし comes first and a request follows, so と won't do; たら is the natural choice. (N4 preview)
+8. **そう** — ます-stem + そうだ = looks like it's about to … (N4 preview)
 9. **しか** — the sentence ends in a negative: "only 500 yen". (も is grammatical too, but means "not even 500 yen".)
 10. **から** (or **ので**) — giving a reason; ある is a verb, so it attaches directly with no な.
 :::
