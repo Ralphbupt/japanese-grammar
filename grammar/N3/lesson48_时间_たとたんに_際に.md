@@ -105,12 +105,12 @@ This lesson covers N3 grammar related to "timing." 「たとたん（に）」 i
 :::zh
 - 動詞ます形（去ます）+ 次第
 
-※ 这里的「次第」是"一……就……"的意思，和「～次第だ（缘由）」「～次第です（看情况）」不同。
+※ 这里的「次第」是"一……就……"的意思，和「名詞＋次第だ（取决于……）」「〜た次第です（事情的缘由）」不同。
 :::
 :::en
 - Verb masu-stem + 次第
 
-※ This 「次第」 means "as soon as…" — different from 「～次第だ (the reason is…)」 and 「～次第です (it depends on…)」.
+※ This 「次第」 means "as soon as…" — different from 「Noun + 次第だ (it depends on…)」 and 「〜た次第です (that is how it came about)」.
 :::
 
 ### 含义||Meaning

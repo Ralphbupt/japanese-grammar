@@ -41,7 +41,7 @@
 
 ---
 
-## 1. 使役形（让/叫某人做……）||Causative Form (Making/Letting Someone Do...)
+## 1. 使役形（让/叫某人做……）||1. Causative Form (Making/Letting Someone Do...)
 
 ### 含义||Meaning
 
@@ -198,7 +198,7 @@ Expresses "making someone do something" or "letting/allowing someone do somethin
 1. 部長は部下**に**残業**させた**。（部长让下属加班了。）
 2. 親は子供**に**ピアノ**を**習わ**せている**。（父母让孩子学钢琴。）
 3. 先生は学生**を**廊下**に**立た**せた**。（老师罚学生站在走廊。）
-4. 彼は私**に**3時間も待た**せた**。（他让我等了3个小时。）
+4. 彼は私**を**3時間も待た**せた**。（他让我等了3个小时。）
 5. 監督は選手**に**毎日10キロ走ら**せている**。（教练让选手每天跑10公里。）
 6. 母は私**を**毎朝6時に起き**させた**。（妈妈让我每天早上6点起床。）
 7. 社長は社員**に**週末も出勤**させた**。（社长让员工周末也上班。）
@@ -211,7 +211,7 @@ A top-down power relationship with the nuance of "ordering/commanding":
 1. 部長は部下**に**残業**させた**。(The manager made the subordinate work overtime.)
 2. 親は子供**に**ピアノ**を**習わ**せている**。(The parents are making their child learn piano.)
 3. 先生は学生**を**廊下**に**立た**せた**。(The teacher made the student stand in the hallway as punishment.)
-4. 彼は私**に**3時間も待た**せた**。(He made me wait for three whole hours.)
+4. 彼は私**を**3時間も待た**せた**。(He made me wait for three whole hours.)
 5. 監督は選手**に**毎日10キロ走ら**せている**。(The coach makes the athletes run 10km every day.)
 6. 母は私**を**毎朝6時に起き**させた**。(Mom made me get up at 6 every morning.)
 7. 社長は社員**に**週末も出勤**させた**。(The company president made employees come in on weekends too.)
@@ -276,7 +276,7 @@ A very common polite request meaning "please allow me to...":
 
 ---
 
-## 2. 使役形＋授受表現（させてあげる / させてもらう / させてくれる）||Causative + Giving/Receiving (させてあげる / させてもらう / させてくれる)
+## 2. 使役形＋授受表現（させてあげる / させてもらう / させてくれる）||2. Causative + Giving/Receiving (させてあげる / させてもらう / させてくれる)
 
 :::zh
 使役形和授受表現的组合在日常生活中非常常用。理解这一组合是掌握使役形的关键。
@@ -314,7 +314,7 @@ The combination of causative form with giving/receiving expressions is extremely
 1. 子供に好きなおもちゃを買わ**せてあげた**。（让孩子买了喜欢的玩具。→ 恩惠）
 2. 彼女を好きなところに行か**せてあげた**。（让女朋友去了想去的地方。）
 3. 学生に自由に発表**させてあげた**。（让学生自由发表了。）
-4. 弟にゲームを遊ば**せてあげた**。（让弟弟玩了游戏。）
+4. 弟にゲームをさ**せてあげた**。（让弟弟玩了游戏。）
 5. 疲れている部下を早く帰ら**せてあげた**。（让疲惫的下属早点回去了。）
 
 > **ポイント**：说话人立场 = 给予恩惠的一方。
@@ -326,7 +326,7 @@ The combination of causative form with giving/receiving expressions is extremely
 1. 子供に好きなおもちゃを買わ**せてあげた**。(I let the child buy the toy they wanted. → favor)
 2. 彼女を好きなところに行か**せてあげた**。(I let my girlfriend go where she wanted.)
 3. 学生に自由に発表**させてあげた**。(I let the students present freely.)
-4. 弟にゲームを遊ば**せてあげた**。(I let my younger brother play games.)
+4. 弟にゲームをさ**せてあげた**。(I let my younger brother play games.)
 5. 疲れている部下を早く帰ら**せてあげた**。(I let the tired subordinate go home early.)
 
 > **Key point**: The speaker's position = the one granting the favor.
@@ -408,7 +408,7 @@ The combination of causative form with giving/receiving expressions is extremely
 
 ---
 
-## 3. 辨析||Comparison and Analysis
+## 3. 辨析||3. Comparison and Analysis
 
 ### 辨析①：强制 vs 允许 — 怎么区分？||How to Tell: Coercion vs. Permission
 

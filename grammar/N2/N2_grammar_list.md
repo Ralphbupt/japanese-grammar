@@ -195,4 +195,4 @@ A full cheatsheet of ~130 N2 grammar points. N2 is the level demanded by graduat
 - [ ] 〜きり — 自从~就一直~/只有~ // 〜きり — since ~, (has stayed) ~ / only ~
 - [ ] 〜ぶりに — 时隔~ // 〜ぶりに — for the first time in ~
 - [ ] 〜ごとに — 每~ // 〜ごとに — every ~
-- [ ] 〜つき — 因为~/每~ // 〜つき — due to ~ / per ~
+- [ ] 〜につき — 因为~/每~ // 〜につき — due to ~ / per ~

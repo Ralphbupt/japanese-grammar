@@ -307,10 +307,12 @@ This lesson covers N2 grammar for "hypothetical conditions" and "advice." 「も
 :::zh
 - 動詞普通形 + ものがある
 - い形容詞普通形 + ものがある
+- な形容詞語幹 + な + ものがある
 :::
 :::en
 - Verb plain form + ものがある
 - i-adjective plain form + ものがある
+- na-adjective stem + な + ものがある
 :::
 
 ### 含义||Meaning
@@ -325,14 +327,14 @@ This lesson covers N2 grammar for "hypothetical conditions" and "advice." 「も
 :::zh
 1. 彼の演奏には感動する**ものがある**。（他的演奏有一种令人感动的东西。）
 2. この映画にはどこか懐かしい**ものがある**。（这部电影有一种令人怀念的感觉。）
-3. 独りで旅するのも、いい**ものがある**。（一个人旅行也有一种别样的好。）
+3. 一人旅には、団体旅行では味わえない**ものがある**。（一个人旅行有跟团游体会不到的东西。）
 4. 彼女の歌声には人を引きつける**ものがある**。（她的歌声有一种吸引人的东西。）
 5. この風景には心を落ち着かせる**ものがある**。（这片风景有一种让人心静的感觉。）
 :::
 :::en
 1. 彼の演奏には感動する**ものがある**。(There is something deeply moving about his performance.)
 2. この映画にはどこか懐かしい**ものがある**。(There is something nostalgic about this movie.)
-3. 独りで旅するのも、いい**ものがある**。(Traveling alone has something good about it too.)
+3. 一人旅には、団体旅行では味わえない**ものがある**。(Traveling alone offers something a group tour can't.)
 4. 彼女の歌声には人を引きつける**ものがある**。(There is something captivating about her singing voice.)
 5. この風景には心を落ち着かせる**ものがある**。(There is something calming about this scenery.)
 :::

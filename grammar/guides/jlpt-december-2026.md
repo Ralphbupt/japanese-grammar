@@ -146,7 +146,7 @@ Two rules: if a question gives you nothing after a minute, guess, mark it and mo
 - HB 铅笔或自动铅笔、橡皮（答题卡用铅笔涂）
 - 普通手表（考场不一定有钟；手机、智能手表考试中不能用）
 - 提前到考场，入场截止后不能进考场
-- 听力开始前把手机彻底关机——响铃可能被判违规
+- 考试开始前就把手机彻底关机——考试中响铃可能被判违规
 - 试卷和答题卡都不能带出考场，带走会直接判为不合格
 :::
 :::en
@@ -155,7 +155,7 @@ Two rules: if a question gives you nothing after a minute, guess, mark it and mo
 - HB pencils or mechanical pencils and an eraser (the answer sheet is pencil-marked)
 - An ordinary wristwatch (rooms may have no clock; phones and smartwatches can't be used during the test)
 - Arrive early — once entry closes you can't get into the room
-- Switch your phone fully off before listening starts — a ringing phone can count as misconduct
+- Switch your phone fully off before the test starts — a phone ringing during the test can count as misconduct
 - Neither the question booklet nor the answer sheet may leave the room; taking one out is an automatic fail
 :::
 

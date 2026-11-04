@@ -298,7 +298,7 @@ This lesson brings together 6 grammar points that appear very frequently on the 
 3. 卒業してから会った**きり**、連絡を取っていない。(We met once after graduation and haven't been in touch since.)
 4. 部屋には二人**きり**だった。(There were only two people in the room.)
 5. 財布には千円**きり**しか残っていない。(I only have 1,000 yen left in my wallet.)
-6. 彼女は横になった**きり**、動かなかった。(She lay down and didn't move since.)
+6. 彼女は横になった**きり**、動かなかった。(She lay down and never moved after that.)
 :::
 
 ### 辨析||Comparison

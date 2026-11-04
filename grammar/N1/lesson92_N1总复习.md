@@ -435,7 +435,7 @@ This is the comprehensive N1 grammar review. We go back over all the N1 grammar 
 | や否や／や | 辞書形 | 可同可不同 | 反应或变化，过去事实（最书面） |
 | なり | 辞書形 | 必须相同，第三人称 | 出人意料的举动，过去事实 |
 | たとたん（に） | た形 | 可同可不同 | 意外的事，多为非意志（N3第48课） |
-| 次第 | ます形 | 可同可不同 | 意志、请求、通知都可以（N3） |
+| 次第 | ます形 | 可同可不同 | 意志、请求、通知都可以（N3第48课） |
 
 > ⭕ 警報が鳴る**や否や**、住民は避難を始めた。（警报一响，居民就开始避难了。）  
 > ❌ 警報が鳴る**なり**、住民は避難を始めた。（警报和居民主语不同，不能用なり）  
@@ -450,7 +450,7 @@ This is the comprehensive N1 grammar review. We go back over all the N1 grammar 
 | や否や／や | Dict. form | Same or different | A reaction or change; past fact (most formal) |
 | なり | Dict. form | Must be the same; third person | A surprising action; past fact |
 | たとたん(に) | Ta-form | Same or different | Something unexpected, usually non-volitional (N3 Lesson 48) |
-| 次第 | Masu-stem | Same or different | Volition, requests and notices all fine (N3) |
+| 次第 | Masu-stem | Same or different | Volition, requests and notices all fine (N3 Lesson 48) |
 
 > ⭕ 警報が鳴る**や否や**、住民は避難を始めた。(The instant the alarm sounded, residents began to evacuate.)  
 > ❌ 警報が鳴る**なり**、住民は避難を始めた。(The alarm and the residents are different subjects, so なり can't be used.)  

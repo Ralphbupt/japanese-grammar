@@ -114,7 +114,7 @@ This is the comprehensive N3 grammar review lesson. From Lesson 35 to Lesson 57,
 
 ---
 
-## 4. 程度・範囲（Lesson 40–41）||4. Degree & Scope (Lesson 40–41)
+## 4. 程度・範囲（Lesson 40–41, 47）||4. Degree & Scope (Lesson 40–41, 47)
 
 :::zh
 | 语法 | 接続 | 含义 | 例句 |
@@ -171,7 +171,7 @@ This is the comprehensive N3 grammar review lesson. From Lesson 35 to Lesson 57,
 |------|------|------|------|------|
 | に違いない | 普通形＋に違いない | 一定是…… | 90%+ | 彼が犯人**に違いない**。 |
 | に決まっている | 普通形＋に決まっている | 肯定是…… | 主观断定 | 彼は来る**に決まっている**。 |
-| はずがない | 普通形＋はずがない | 不可能…… | 否定推测 | そんなはず**がない**。 |
+| はずがない | 普通形＋はずがない | 不可能…… | 否定推测 | そんな**はずがない**。 |
 | わけがない | 普通形＋わけがない | 不可能…… | 否定（强） | 知らない**わけがない**。 |
 | ものか | 普通形＋ものか | 怎么会……！ | 强烈否定反问 | そんなこと、する**ものか**。 |
 :::
@@ -180,7 +180,7 @@ This is the comprehensive N3 grammar review lesson. From Lesson 35 to Lesson 57,
 |------|------|------|------|------|
 | に違いない | plain＋に違いない | must be | 90%+ | 彼が犯人**に違いない**。 |
 | に決まっている | plain＋に決まっている | definitely is | Subjective certainty | 彼は来る**に決まっている**。 |
-| はずがない | plain＋はずがない | can't be | Negative conjecture | そんなはず**がない**。 |
+| はずがない | plain＋はずがない | can't be | Negative conjecture | そんな**はずがない**。 |
 | わけがない | plain＋わけがない | no way | Strong negation | 知らない**わけがない**。 |
 | ものか | plain＋ものか | as if…! | Strong rhetorical denial | そんなこと、する**ものか**。 |
 :::

@@ -62,7 +62,7 @@ Japanese adjectives split into **い-type** and **な-type**, with completely di
 | たり | い→**かったり** | 大きかったり |
 :::
 
-### 「いい」の特殊活用（超级例外！）||Special conjugation of 「いい」 (a super exception!)
+### 「いい」的特殊活用（超级例外！）||Special conjugation of 「いい」 (a super exception!)
 
 :::zh
 「いい」（好的）变形时全部变成「よ-」开头：
@@ -99,7 +99,7 @@ Japanese adjectives split into **い-type** and **な-type**, with completely di
 ### 例句||Example sentences
 
 :::zh
-1. この映画は面白**くなかった**。（这部电影不有趣。）
+1. この映画は面白**くなかった**。（这部电影没什么意思。）
 2. 昨日は暑**かった**ですね。（昨天好热啊。）
 3. 天気がよ**くて**、気持ちいい。（天气好，心情舒畅。）
 4. もっと早**く**来てください。（请更早来。→ 副词用法）
@@ -150,7 +150,7 @@ Japanese adjectives split into **い-type** and **な-type**, with completely di
 | たり | 〜だったり | 静かだったり |
 :::
 
-### い形容词 vs な形容词 対比||い-adjective vs な-adjective comparison
+### い形容词 vs な形容词 对比||い-adjective vs な-adjective comparison
 
 :::zh
 | | い形容词 | な形容词 |
@@ -197,8 +197,8 @@ These look like い-adjectives but are actually な-adjectives:
 ### 例句||Example sentences
 
 :::zh
-1. この町は静か**じゃなかった**。（这个镇子以前不安静。）
-2. 彼女はとても親切**で**、優しい人です。（她很亲切温柔。）
+1. この町は静か**じゃなかった**。（这个镇子那时并不安静。）
+2. 彼女はとても親切**で**、優しい人です。（她很热心，是个温柔的人。）
 3. 静か**に**してください。（请安静。→ 副词）
 4. きれい**な**花ですね。（好漂亮的花。→ な形容词修饰名词）
 5. 部屋をきれい**に**掃除した。（把房间打扫干净了。→ 副词）
@@ -257,7 +257,7 @@ These look like い-adjectives but are actually な-adjectives:
 :::zh
 用于二选一的疑问：
 
-- 猫と犬と、**どちらが**好きですか？（猫和狗哪个更喜欢？）
+- 猫と犬と、**どちらが**好きですか？（猫和狗，你更喜欢哪个？）
   — 猫のほうが好きです。（更喜欢猫。）
 - 東京と大阪と、**どちらが**にぎやかですか？（东京和大阪哪个更热闹？）
   — 東京のほうがにぎやかです。
@@ -476,7 +476,7 @@ This is the most common use of adjective adverbialisation:
 - 飲み物は何**にしますか**？— コーヒー**にします**。（What would you like to drink? — I'll have coffee.）
 :::
 
-### なる vs する 対比||なる vs する comparison
+### なる vs する 对比||なる vs する comparison
 
 :::zh
 | | 〜なる | 〜する |

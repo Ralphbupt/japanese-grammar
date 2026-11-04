@@ -54,11 +54,11 @@ This lesson covers grammar for "limiting scope" and "exceeding scope." 「だけ
 ### 含义||Meaning
 :::zh
 1. **限定**："只有……"，限定范围。
-2. **尽可能**：「できるだけ」「〜たいだけ〜たい」= 尽量……/想……多少就……多少。
+2. **尽可能**：「できるだけ」「〜たいだけ〜する」= 尽量……/想……多少就……多少。
 :::
 :::en
 1. **Limitation**: "Only…" — limits the scope.
-2. **As much as possible**: 「できるだけ」「〜たいだけ〜たい」= as much as one wants / as … as possible.
+2. **As much as possible**: 「できるだけ」「〜たいだけ〜する」= as much as one wants / as … as possible.
 :::
 
 ### 例句||Example Sentences
@@ -292,14 +292,14 @@ This lesson covers grammar for "limiting scope" and "exceeding scope." 「だけ
 1. この問題は日本**に限らず**、世界中で起きている。（这个问题不限于日本，全世界都在发生。）
 2. 若者**に限らず**、お年寄りもスマホを使っている。（不限于年轻人，老年人也在用智能手机。）
 3. 子供**に限らず**、大人も楽しめる映画だ。（不限于孩子，大人也能乐在其中的电影。）
-4. 男女**に限らず**、どなたでも歓迎です。（不限男女，欢迎任何人。）
+4. 学生**に限らず**、どなたでも歓迎です。（不限于学生，欢迎任何人。）
 5. 平日**に限らず**、休日も営業しています。（不限平日，休息日也营业。）
 :::
 :::en
 1. この問題は日本**に限らず**、世界中で起きている。(This problem is not limited to Japan — it's happening worldwide.)
 2. 若者**に限らず**、お年寄りもスマホを使っている。(Not only young people, but the elderly also use smartphones.)
 3. 子供**に限らず**、大人も楽しめる映画だ。(A movie that not only children but adults can enjoy too.)
-4. 男女**に限らず**、どなたでも歓迎です。(Regardless of gender, everyone is welcome.)
+4. 学生**に限らず**、どなたでも歓迎です。(Not just students — everyone is welcome.)
 5. 平日**に限らず**、休日も営業しています。(We're open not only on weekdays but also on holidays.)
 :::
 

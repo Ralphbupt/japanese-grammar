@@ -22,9 +22,9 @@ This lesson covers what something depends on, what it follows, and what it ignor
 | 喧騒 | けんそう | 喧嚣；嘈杂（名）——书面语，多指城市的热闹嘈杂；「都会の喧騒」都市的喧嚣；「喧騒を離れる」远离喧嚣//(n) noise and bustle — written style, usually of city life; 「都会の喧騒」 the bustle of the city; 「喧騒を離れる」 to get away from the noise |
 | 家業 | かぎょう | 家业；祖传的生意（名）——一家世代经营的店铺、工作；「家業を継ぐ」继承家业；「家業を手伝う」帮忙家里的生意//(n) the family business — a shop or trade run by a family over generations; 「家業を継ぐ」 to take over the family business; 「家業を手伝う」 to help out in the family business |
 | 登用 | とうよう | 提拔；起用（名、可作动词）——把人才提拔到重要职位上；「人材を登用する」起用人才；「女性の登用」提拔女性//(n, suru-verb) appointment; promotion (to a responsible post) — 「人材を登用する」 to promote capable people; 「女性の登用」 appointing women to senior posts |
-| 涙もろい | なみだもろい | 爱流泪；容易感动落泪（形）——心软，一点小事就会掉眼泪；「年を取って涙もろくなる」上了年纪变得爱哭//(adj) easily moved to tears; soft-hearted — 「年を取って涙もろくなる」 to get more easily moved to tears with age |
+| 涙もろい | なみだもろい | 爱流泪；容易感动落泪（形容词）——心软，一点小事就会掉眼泪；「年を取って涙もろくなる」上了年纪变得爱哭//(adj) easily moved to tears; soft-hearted — 「年を取って涙もろくなる」 to get more easily moved to tears with age |
 | 実情 | じつじょう | 实际情况；真实情形（名）——多指外人不容易了解的内部真实情况；「現場の実情」现场的实际情况；「実情に合わない」不符合实际//(n) the actual situation; the real state of affairs — often what outsiders don't see; 「現場の実情」 the situation on the ground; 「実情に合わない」 out of touch with reality |
-| 厳正 | げんせい | 严正；严格公正（形动）——用于处分、审查等，不偏不倚、毫不姑息；「厳正に対処する」严肃处理；「厳正な審査」严格公正的审查//(na-adj) strict and impartial — of penalties and reviews; 「厳正に対処する」 to deal with something strictly; 「厳正な審査」 a rigorous, fair review |
+| 厳正 | げんせい | 严正；严格公正（形容动词）——用于处分、审查等，不偏不倚、毫不姑息；「厳正に対処する」严肃处理；「厳正な審査」严格公正的审查//(na-adj) strict and impartial — of penalties and reviews; 「厳正に対処する」 to deal with something strictly; 「厳正な審査」 a rigorous, fair review |
 | 不祥事 | ふしょうじ | 丑闻；不光彩的事件（名）——企业、机关等组织内部发生的违规事件；「不祥事が発覚する」丑闻曝光；「相次ぐ不祥事」接连不断的丑闻//(n) scandal; misconduct — wrongdoing inside a company or public body; 「不祥事が発覚する」 a scandal comes to light; 「相次ぐ不祥事」 a string of scandals |
 | 存続 | そんぞく | 存续；继续存在（名、可作动词）——组织、制度等能否继续存在下去；「会社の存続」公司的存亡；「存続が危ぶまれる」存续令人担忧//(n, suru-verb) survival; continued existence — of an organisation or system; 「会社の存続」 the survival of the company; 「存続が危ぶまれる」 its future is in doubt |
 | 沽券 | こけん | 体面；身价（名）——几乎只用于「沽券にかかわる」，指有损体面、自尊；「沽券にかかわる」有失身份//(n) dignity; standing — used almost only in 「沽券にかかわる」, beneath one's dignity |

@@ -57,7 +57,7 @@
 
 ---
 
-## 0. 日语动词分类（大前提）||Japanese Verb Groups (Foundation)
+## 0. 日语动词分类（大前提）||0. Japanese Verb Groups (Foundation)
 
 :::zh
 学所有动词变形之前，必须先搞清楚三类动词。**这是一切变形的基础，判断错了类别，后面全部变形都会错。**
@@ -254,7 +254,7 @@ These must be memorized — they look like Group 2 but are actually Group 1:
 
 ---
 
-## 1. ます形（敬体现在/将来）||ます Form (Polite Present/Future)
+## 1. ます形（敬体现在/将来）||1. ます Form (Polite Present/Future)
 
 ### 含义||Meaning
 
@@ -576,7 +576,7 @@ Once you're comfortable with polite speech, naturally transition to plain form.
 | 〜にくい（难做） | ます词干+にくい | 覚え+にくい → 覚えにくい |
 | 〜ながら（一边…一边） | ます词干+ながら | 聴き+ながら → 聴きながら |
 | 〜方（做法） | ます词干+方 | 使い+方 → 使い方 |
-| 〜すぎる（太过分） | ます词干+すぎる | 食べ+すぎる → 食べすぎる |
+| 〜すぎる（过度、太……） | ます词干+すぎる | 食べ+すぎる → 食べすぎる |
 | 〜に行く（去做…） | ます词干+に行く | 見+に行く → 見に行く |
 
 > 所以ます形不是只为了说敬语，它的词干是很多后续语法的基础。

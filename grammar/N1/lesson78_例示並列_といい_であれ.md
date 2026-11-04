@@ -340,7 +340,7 @@ Restrictions:
 "又是A又是B（的）""……啦……啦"。列举几个例子，带有不满、厌烦、责备的语气。最典型的是转述别人的牢骚、借口、挑剔，也用来列举一大堆让人心烦的事。
 
 限制：
-- 基本带负面语气，不用于郑重场合，也不用来描述上级的话（会显得不敬）。
+- 基本带负面语气，不用于郑重场合。转述父母、上司的话时带着抱怨（如例句2），只能在背后跟亲近的人说，当面或对外人说会显得不敬。
 - 用于正面的内容时，也会带上"没完没了""不当回事"的味道：△「かわいいだの素敵だのと褒められた」听起来有点不以为然。
 - 后项常是「言う」「文句」「うるさい」「〜ばかり」「暇もない」等。
 :::
@@ -348,7 +348,7 @@ Restrictions:
 "A, B and so on (and on)". Lists a few examples with irritation, annoyance or reproach. The classic use is reporting someone's complaints, excuses or nitpicking; it also lists a pile of things that wear you down.
 
 Restrictions:
-- Basically negative in tone, so it's not for formal settings or for reporting a superior's words (it would sound disrespectful).
+- Basically negative in tone, so it's not for formal settings. Reporting a parent's or boss's words with it is grumbling (as in example 2) — fine behind their back with people you're close to, disrespectful to their face or to outsiders.
 - With positive content it still sounds "on and on" or dismissive: △ 「かわいいだの素敵だのと褒められた」 comes across as a little offhand.
 - The main clause is often 「言う」, 「文句」, 「うるさい」, 「〜ばかり」 or 「暇もない」.
 :::

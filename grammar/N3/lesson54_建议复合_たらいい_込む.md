@@ -184,7 +184,7 @@ Offers gentle advice or expresses a wish: "It would be good if…" / "You should
 | ばよかった | 过去 | 后悔 |
 | たらよかった | 过去 | 后悔（意思基本同ばよかった） |
 
-> 「ばよかった」和「たらよかった」意思几乎一样，但「ばよかった」更书面。
+> 「ばよかった」和「たらよかった」意思几乎一样，但「ばよかった」稍正式一些，「たらよかった」更口语。
 :::
 :::en
 | Expression | Tense | Feeling |
@@ -193,7 +193,7 @@ Offers gentle advice or expresses a wish: "It would be good if…" / "You should
 | ばよかった | Past | Regret |
 | たらよかった | Past | Regret (nearly identical to ばよかった) |
 
-> 「ばよかった」 and 「たらよかった」 mean almost the same thing, but 「ばよかった」 is slightly more formal.
+> 「ばよかった」 and 「たらよかった」 mean almost the same thing, but 「ばよかった」 is slightly more formal and 「たらよかった」 more conversational.
 :::
 
 ---

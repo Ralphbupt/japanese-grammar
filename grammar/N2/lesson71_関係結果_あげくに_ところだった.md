@@ -358,7 +358,7 @@ This lesson covers N2 grammar for "expertise," "results," and "near-misses." 「
 :::
 :::en
 1. もう少しで電車に乗り遅れる**ところだった**。(I almost missed the train.)
-2. 危うく車にぶつかる**ところだった**。(I nearly got hit by a car.)
+2. 危うく車にぶつかる**ところだった**。(I nearly ran into a car.)
 3. あと5分遅かったら、間に合わない**ところだった**。(If I'd been 5 more minutes late, I wouldn't have made it.)
 4. 傘を持っていなかったら、ずぶ濡れになる**ところだった**。(If I hadn't had my umbrella, I would have been soaked.)
 5. 彼が教えてくれなかったら、大きなミスをする**ところだった**。(If he hadn't told me, I would have made a huge mistake.)

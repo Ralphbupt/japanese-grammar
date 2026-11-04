@@ -155,8 +155,8 @@ Another set:
 | 接续 | 含义 | 时间点 |
 |------|------|--------|
 | 动词辞书形 + ところだ | **正要做**（还没开始） | ──→● |
-| 動詞ている + ところだ | **正在做**（进行中） | ──●── |
-| 動詞た + ところだ | **刚做完** | ●──→ |
+| 动词ている + ところだ | **正在做**（进行中） | ──●── |
+| 动词た + ところだ | **刚做完** | ●──→ |
 :::
 :::en
 | Conjugation | Meaning | Point in time |
@@ -190,38 +190,38 @@ Another set:
 
 #### ている＋ところだ（正在……）||ている + ところだ (In the middle of…)
 :::zh
-4. 今、レポートを書いている**ところです**。（正在写报告。）
-5. ちょうど話している**ところだった**。（正在说呢。）
-6. 今、資料を確認している**ところです**ので、少々お待ちください。（正在确认资料，请稍等。）
-7. 上司と相談している**ところだった**ので、電話に出られなかった。（当时正在和上司商量，所以没能接电话。）
+1. 今、レポートを書いている**ところです**。（正在写报告。）
+2. ちょうど話している**ところだった**。（正在说呢。）
+3. 今、資料を確認している**ところです**ので、少々お待ちください。（正在确认资料，请稍等。）
+4. 上司と相談している**ところだった**ので、電話に出られなかった。（当时正在和上司商量，所以没能接电话。）
 
 **生活场景**: 上司问进度 → 「今ちょうど確認している**ところです**。」（我正在确认呢。→ 比ている更强调"此刻正好在做"）
 :::
 :::en
-4. 今、レポートを書いている**ところです**。（I'm in the middle of writing a report.）
-5. ちょうど話している**ところだった**。（We were right in the middle of talking.）
-6. 今、資料を確認している**ところです**ので、少々お待ちください。（I'm currently checking the materials, so please wait a moment.）
-7. 上司と相談している**ところだった**ので、電話に出られなかった。（I was in the middle of discussing with my boss, so I couldn't answer the phone.）
+1. 今、レポートを書いている**ところです**。（I'm in the middle of writing a report.）
+2. ちょうど話している**ところだった**。（We were right in the middle of talking.）
+3. 今、資料を確認している**ところです**ので、少々お待ちください。（I'm currently checking the materials, so please wait a moment.）
+4. 上司と相談している**ところだった**ので、電話に出られなかった。（I was in the middle of discussing with my boss, so I couldn't answer the phone.）
 
 **Real-life scenario**: Your boss asks about progress → 「今ちょうど確認している**ところです**。」（I'm checking on it right now. → Stronger than ている at emphasizing "at this exact moment."）
 :::
 
 #### た＋ところだ（刚做完……）||た + ところだ (Just finished…)
 :::zh
-6. さっき帰ってきた**ところです**。（刚回来。）
-7. 今、食べ終わった**ところだ**。（刚吃完。）
-8. ちょうど電話しようと思っていた**ところに**、彼から電話が来た。（正想着打电话，他就来电话了。→ ところに = 正在那个时候）
-9. たった今、仕事が終わった**ところです**。（刚刚工作结束。）
-10. 駅に着いた**ところ**なので、あと5分で着きます。（刚到车站，再5分钟就到。）
+1. さっき帰ってきた**ところです**。（刚回来。）
+2. 今、食べ終わった**ところだ**。（刚吃完。）
+3. ちょうど電話しようと思っていた**ところに**、彼から電話が来た。（正想着打电话，他就来电话了。→ ところに = 正在那个时候）
+4. たった今、仕事が終わった**ところです**。（刚刚工作结束。）
+5. 駅に着いた**ところ**なので、あと5分で着きます。（刚到车站，再5分钟就到。）
 
 **生活场景**: 朋友打电话来说"你到了吗？" → 「今、駅に着いた**ところ**だよ。」（我刚到车站。→ 强调"此刻刚刚"的即时感）
 :::
 :::en
-6. さっき帰ってきた**ところです**。（I just got home.）
-7. 今、食べ終わった**ところだ**。（I just finished eating.）
-8. ちょうど電話しようと思っていた**ところに**、彼から電話が来た。（Right as I was thinking of calling, he called me. → ところに = at exactly that moment.）
-9. たった今、仕事が終わった**ところです**。（I just finished work right now.）
-10. 駅に着いた**ところ**なので、あと5分で着きます。（I just arrived at the station, so I'll be there in 5 minutes.）
+1. さっき帰ってきた**ところです**。（I just got home.）
+2. 今、食べ終わった**ところだ**。（I just finished eating.）
+3. ちょうど電話しようと思っていた**ところに**、彼から電話が来た。（Right as I was thinking of calling, he called me. → ところに = at exactly that moment.）
+4. たった今、仕事が終わった**ところです**。（I just finished work right now.）
+5. 駅に着いた**ところ**なので、あと5分で着きます。（I just arrived at the station, so I'll be there in 5 minutes.）
 
 **Real-life scenario**: A friend calls asking "Are you there yet?" → 「今、駅に着いた**ところ**だよ。」（I just got to the station. → Emphasizes the immediacy of "just now."）
 :::
@@ -276,24 +276,24 @@ Emphasizes that an action is **completely finished**.
 :::zh
 做了不该做的事，或发生了不幸的事。
 
-4. 財布をなくし**てしまった**。（把钱包弄丢了。→ 遗憾）
-5. 大切なデータを消し**てしまった**。（把重要数据删掉了。→ 后悔）
-6. 電車に乗り遅れ**てしまった**。（没赶上电车。→ 遗憾）
-7. つい食べすぎ**てしまった**。（不小心吃太多了。→ 后悔）
-8. また風邪をひい**てしまった**。（又感冒了。→ 无奈）
-9. 告白したけど、振られ**てしまった**。（告白了但被甩了。→ 遗憾）
-10. お母さんの大事なお皿を割っ**てしまった**。（把妈妈珍贵的盘子打碎了。→ 后悔）
+1. 財布をなくし**てしまった**。（把钱包弄丢了。→ 遗憾）
+2. 大切なデータを消し**てしまった**。（把重要数据删掉了。→ 后悔）
+3. 電車に乗り遅れ**てしまった**。（没赶上电车。→ 遗憾）
+4. つい食べすぎ**てしまった**。（不小心吃太多了。→ 后悔）
+5. また風邪をひい**てしまった**。（又感冒了。→ 无奈）
+6. 告白したけど、振られ**てしまった**。（告白了但被甩了。→ 遗憾）
+7. お母さんの大事なお皿を割っ**てしまった**。（把妈妈珍贵的盘子打碎了。→ 后悔）
 :::
 :::en
 Something that shouldn't have happened, or an unfortunate event.
 
-4. 財布をなくし**てしまった**。（I lost my wallet. → Regret.）
-5. 大切なデータを消し**てしまった**。（I accidentally deleted important data. → Regret.）
-6. 電車に乗り遅れ**てしまった**。（I missed the train. → Disappointment.）
-7. つい食べすぎ**てしまった**。（I couldn't help overeating. → Regret.）
-8. また風邪をひい**てしまった**。（I caught a cold again. → Resignation.）
-9. 告白したけど、振られ**てしまった**。（I confessed my feelings, but got rejected. → Disappointment.）
-10. お母さんの大事なお皿を割っ**てしまった**。（I broke my mom's precious plate. → Regret.）
+1. 財布をなくし**てしまった**。（I lost my wallet. → Regret.）
+2. 大切なデータを消し**てしまった**。（I accidentally deleted important data. → Regret.）
+3. 電車に乗り遅れ**てしまった**。（I missed the train. → Disappointment.）
+4. つい食べすぎ**てしまった**。（I couldn't help overeating. → Regret.）
+5. また風邪をひい**てしまった**。（I caught a cold again. → Resignation.）
+6. 告白したけど、振られ**てしまった**。（I confessed my feelings, but got rejected. → Disappointment.）
+7. お母さんの大事なお皿を割っ**てしまった**。（I broke my mom's precious plate. → Regret.）
 :::
 
 ### 口语缩略形（超级常用！）||Colloquial contracted forms (extremely common!)
@@ -540,10 +540,10 @@ Convert these sentences to colloquial contracted forms (ちゃう/じゃう seri
 :::en
 Choose the best grammar: てしまった / たところだ / たばかりだ
 
-1. A: "Have you eaten dinner?" B: "Yeah, I just finished eating（　　　）." → Just now, this moment
-2. I lost my passport（　　　）! What should I do? → Regret
-3. I just joined this company（　　　）and don't know anything yet. → Recently joined
-4. The house was destroyed in the earthquake（　　　）. → Unfortunate event
+1. A:「もう夕飯食べた？」B:「うん、今食べ（　　　）。」(A: "Have you eaten dinner?" B: "Yeah, I just finished.") → Just now, this moment
+2. パスポートをなくし（　　　）！どうしよう。(I lost my passport! What should I do?) → Regret
+3. この会社に入っ（　　　）で、まだ何もわからない。(I just joined this company and don't know anything yet.) → Recently joined
+4. 地震で家が壊れ（　　　）。(The house was destroyed in the earthquake.) → Unfortunate event
 
 <details>
 <summary>Answers</summary>

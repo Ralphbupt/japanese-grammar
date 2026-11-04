@@ -123,11 +123,11 @@ A passive unique to Japanese — someone does something and I am inconvenienced 
 3. 隣の人**に**騒が**れて**、眠れなかった。(The person next door made noise and I couldn't sleep.)
 4. 友達**に**来**られて**、勉強できなかった。(My friend came over and I couldn't study.)
 5. 子供**に**泣か**れて**、困った。(The child cried and I didn't know what to do.)
-6. 電車で隣の人**に**寝**られて**、肩が痛い。(The person next to me on the train fell asleep on my shoulder.)
+6. 電車で隣の人**に**寝**られて**、肩が痛い。(The person next to me on the train fell asleep on me, and now my shoulder hurts.)
 7. 妻**に**先に寝**られて**、一人でテレビを見た。(My wife went to bed first, so I ended up watching TV alone.)
 
 > **Intransitive passive = 100% nuisance/inconvenience tone.**
-> This has no equivalent in Chinese or English — you can't say "I was rained on" in Chinese — but Japanese can.
+> Chinese has no equivalent (no passive of "rain" or "cry"), and English has only a few fixed cases like "I got rained on" — Japanese can do it with almost any verb.
 :::
 
 ### ③ 持ち主被动||③ Possessor Passive
@@ -343,7 +343,7 @@ Spoken form: 書か**される** (かかされる, 5 morae — more concise!)
 | ❌ 雨に降らせられた | ✅ 雨に降られた | 自然现象用受身，不用使役受身 |
 | ❌ 食べさせれた | ✅ 食べさせられた | 二类不能缩略 |
 | ❌ 話さされた | ✅ 話させられた | す结尾的一类不能缩略 |
-| ❌ エジソンに発明された | △ エジソンによって発明された | 创造行为用によって更自然 |
+| ❌ エジソンに発明された | ✅ エジソンによって発明された | 创造行为用によって更自然 |
 :::
 :::en
 | Wrong | Correct | Reason |
@@ -352,7 +352,7 @@ Spoken form: 書か**される** (かかされる, 5 morae — more concise!)
 | ❌ 雨に降らせられた | ✅ 雨に降られた | Natural phenomena use passive, not causative-passive |
 | ❌ 食べさせれた | ✅ 食べさせられた | Group 2 verbs can't be contracted |
 | ❌ 話さされた | ✅ 話させられた | Group 1 verbs ending in す can't be contracted |
-| ❌ エジソンに発明された | △ エジソンによって発明された | Creative acts use によって more naturally |
+| ❌ エジソンに発明された | ✅ エジソンによって発明された | Creative acts use によって more naturally |
 :::
 
 ---

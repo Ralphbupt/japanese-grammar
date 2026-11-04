@@ -109,6 +109,7 @@ A full cheatsheet of ~150 N3 grammar points. N3 is the **watershed** from daily 
 - [ ] 〜割に（は）— 虽然~但是（不相称） // 〜割に（は） — for ~ / considering ~ (out of proportion)
 - [ ] 〜向け — 面向~/针对~ // 〜向け — aimed at ~ / for ~
 - [ ] 〜向き — 适合~ // 〜向き — suitable for ~
+- [ ] 〜など/〜なんか/〜なんて — 举例/轻视/惊讶 // 〜など/〜なんか/〜なんて — such as ~ / stuff like ~ / to think that ~
 
 ## 时间||Time
 
@@ -117,6 +118,7 @@ A full cheatsheet of ~150 N3 grammar points. N3 is the **watershed** from daily 
 - [ ] 〜うちに — 趁~之际 // 〜うちに — while ~ (before it changes)
 - [ ] 〜最中に — 正在~的时候 // 〜最中に — in the middle of ~
 - [ ] 〜際（に）— 在~之际（正式） // 〜際（に） — when / on the occasion of ~ (formal)
+- [ ] 〜か〜ないかのうちに — 刚~就~（几乎同时） // 〜か〜ないかのうちに — no sooner ~ than ~
 
 ## 状态・样态||State & Manner
 
@@ -134,6 +136,7 @@ A full cheatsheet of ~150 N3 grammar points. N3 is the **watershed** from daily 
 - [ ] 〜によると — 据~说/根据~ // 〜によると — according to ~
 - [ ] 〜たびに — 每次~都~ // 〜たびに — every time ~
 - [ ] 〜て初めて — 做了~才第一次~ // 〜て初めて — only after ~ (for the first time)
+- [ ] 〜に代わって/〜に代わり — 代替~（正式） // 〜に代わって/〜に代わり — in place of ~ (formal)
 
 ## 表达方式||Expressions
 
@@ -145,15 +148,16 @@ A full cheatsheet of ~150 N3 grammar points. N3 is the **watershed** from daily 
 - [ ] 〜こそ — 正是~/才是~（强调） // 〜こそ — precisely ~ / ~ is what (emphasis)
 - [ ] 〜ことに — 令人~的是（ことに＋感情） // 〜ことに — to (my) ~ (ことに + emotion)
 - [ ] 〜ごとに — 每~（每次/每隔） // 〜ごとに — every ~ (each time / at intervals)
+- [ ] 〜かのようだ/〜かのように — 仿佛~似的 // 〜かのようだ/〜かのように — as if ~
 
 ## 否定相关||Negation
 
 - [ ] 〜ないことはない — 不是不能~/也不是没有~ // 〜ないことはない — it's not that ~ not / not entirely impossible
 - [ ] 〜ずにはいられない — 忍不住~/不由得~ // 〜ずにはいられない — can't help ~ing
 - [ ] 〜そうもない/〜そうにない — 看起来不会~ // 〜そうもない/〜そうにない — unlikely to ~
-- [ ] 〜決して〜ない — 绝对不~ // 〜決して〜ない — never ~
-- [ ] 〜別に〜ない — 并不特别~ // 〜別に〜ない — not particularly ~
-- [ ] 〜めったに〜ない — 很少~/难得~ // 〜めったに〜ない — rarely ~ / seldom ~
+- [ ] 決して〜ない — 绝对不~ // 決して〜ない — never ~
+- [ ] 別に〜ない — 并不特别~ // 別に〜ない — not particularly ~
+- [ ] めったに〜ない — 很少~/难得~ // めったに〜ない — rarely ~ / seldom ~
 
 ## 建议・推荐||Advice & Suggestions
 
@@ -171,7 +175,7 @@ A full cheatsheet of ~150 N3 grammar points. N3 is the **watershed** from daily 
 - [ ] 〜ことになっている — 规定是~/按惯例~ // 〜ことになっている — it's the rule that ~ / it's customary to ~
 - [ ] 〜ような気がする — 总觉得~/有种~的感觉 // 〜ような気がする — I have a feeling that ~
 - [ ] 〜とは限らない — 未必~/不一定~ // 〜とは限らない — not necessarily ~
-- [ ] 〜ところが — 然而/可是（转折） // 〜ところが — however / but (contrast)
+- [ ] ところが — 然而/可是（转折） // ところが — however / but (contrast)
 
 ## 其他常用||Other Common Patterns
 

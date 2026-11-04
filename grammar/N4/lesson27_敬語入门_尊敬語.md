@@ -230,7 +230,16 @@ Japanese society distinguishes **the listener's status + the formality of the si
 
 When a verb **has a special honorific form**, you **must use that form**, not the universal template.
 
-(error/correct table as above)
+```
+❌ お食べになります        → wrong (食べる has the special form 召し上がる)
+✓ 召し上がります           → correct
+
+❌ お見になります          → wrong (見る has the special form ご覧になる)
+✓ ご覧になります           → correct
+
+❌ お行きになります        → wrong (行く has the special form いらっしゃる)
+✓ いらっしゃいます         → correct
+```
 
 **Learning order**:
 
@@ -267,7 +276,12 @@ When a verb **has a special honorific form**, you **must use that form**, not th
 :::en
 The passive form 〜(ら)れる can also express **light respect** — less formal than お〜になる, more formal than 丁寧語.
 
-(conjugation table)
+| Verb type | Formation | Example |
+|-----------|-----------|---------|
+| Type 1 | u-row → a-row + れる | 行く → 行か**れる** |
+| Type 2 | drop る + られる | 食べる → 食べ**られる** |
+| する | される | 出張**される** |
+| 来る | こ**られる** | 来**られる** |
 
 **Politeness scale**:
 
@@ -334,13 +348,13 @@ Default interpretation: sonkeigo (99% of cases). Read as passive only when conte
 :::
 
 :::en
-1. Will the teacher come tomorrow?
-2. What would you (formal) like to drink?
-3. What time will Tanaka-san go home?
-4. Customer, have you seen these documents?
-5. The department head is in the meeting room now.
-6. The president is reading the newspaper.
-7. Did the teacher do so?
+1. 先生は明日来ますか。(Will the teacher come tomorrow?)
+2. 何を飲みますか。(What would you like to drink?)
+3. 田中さんは何時に帰りますか。(What time will Tanaka-san go home?)
+4. お客様、この資料を見ましたか。(Customer, have you seen these documents?)
+5. 部長は今、会議室にいます。(The department head is in the meeting room now.)
+6. 社長は新聞を読んでいます。(The president is reading the newspaper.)
+7. 先生はそうしましたか。(Did the teacher do so?)
 :::
 
 <details>

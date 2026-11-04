@@ -62,7 +62,7 @@ Noun + に関して (before a predicate) / に関する + Noun (modifying a noun
 :::en
 1. この問題**に関して**、調査を行った。(An investigation was conducted regarding this issue.)
 2. 環境問題**に関する**報告書が発表された。(A report concerning environmental issues was published.)
-3. 今回の事故**に関して**、社長が説明した。(The president explained regarding this accident.)
+3. 今回の事故**に関して**、社長が説明した。(The company president gave an explanation regarding this accident.)
 4. 個人情報**に関する**法律が改正された。(The law concerning personal information was revised.)
 5. 日本の教育**に関して**、さまざまな意見がある。(There are various opinions regarding education in Japan.)
 :::

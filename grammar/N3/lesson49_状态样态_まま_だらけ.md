@@ -135,14 +135,14 @@ Indicates being full of or covered with something undesirable. Carries a negativ
 | 比较 | 含义 | 区别 |
 |------|------|------|
 | だらけ | 满是~ | 负面、不好的东西 |
-| まみれ | 沾满~ | 仅限物理上的附着（泥、血等），更强调表面 |
+| まみれ | 沾满~ | 多指液体、粉末等附着在表面（泥、血、汗等），强调沾满全身/表面 |
 | ずくめ | 全是~ | 可正面可负面，多用于固定搭配（黒ずくめ/いいことずくめ） |
 :::
 :::en
 | Expression | Meaning | Difference |
 |------|------|------|
 | だらけ | Full of | Negative, undesirable things |
-| まみれ | Smeared with | Only physical substances (mud, blood), emphasis on surface |
+| まみれ | Smeared with | Mostly liquids or particles stuck to a surface (mud, blood, sweat), emphasis on being coated |
 | ずくめ | All / entirely | Can be positive or negative, often in fixed expressions (黒ずくめ/いいことずくめ) |
 :::
 

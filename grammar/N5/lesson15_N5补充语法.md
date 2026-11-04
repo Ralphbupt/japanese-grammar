@@ -1,11 +1,11 @@
 # Lesson 15 – N5 补充语法（ことができる・のだ・のに・ので）||N5 Supplementary Grammar (ことができる・のだ・のに・ので)
 
 :::zh
-收尾课，补充前面没有覆盖到的N5常用语法，并进行总复习。
+补充前面没有覆盖到的N5常用语法（总复习见下一课 Lesson 16）。
 :::
 
 :::en
-The closing lesson of N5 — covering commonly used N5 grammar not yet addressed, followed by a full review.
+Covers commonly used N5 grammar not yet addressed (the full review is the next lesson, Lesson 16).
 :::
 
 ## 本课单词表||Vocabulary
@@ -176,7 +176,7 @@ Same meaning as the potential form, but more formal and written. Commonly used i
 2. 急ぐ**ことはない**。ゆっくりでいい。(No need to rush. Take your time.)
 3. わざわざ行く**ことはない**。電話でいい。(No need to make a special trip — a phone call is fine.)
 4. 一人で全部やる**ことはない**。手伝うよ。(You don't have to do it all by yourself. I'll help.)
-5. そんなに怒る**ことはない**でしょう。(There's probably no need to be that angry.)
+5. そんなに怒る**ことはない**でしょう。(Surely there's no need to get that angry.)
 :::
 
 ### 辨析：辞書形+ことがある vs た形+ことがある||Contrast: Dictionary form + ことがある vs た-form + ことがある
@@ -525,7 +525,7 @@ Plain form + し
 3. 彼は頭がいい**し**、スポーツもできる**し**、モテるだろう。（他又聪明又擅长运动，大概很受欢迎吧。）
 4. 時間もない**し**、お金もない**し**、旅行は無理だ。（又没时间又没钱，旅行不可能。）
 5. この部屋は広い**し**、駅に近い**し**、いい部屋だね。（这个房间又大又离车站近，是好房间啊。）
-6. 日本語は面白い**し**、将来に役に立つ**し**、頑張ろう。（日语又有趣又对将来有用，加油吧。）
+6. 日本語は面白い**し**、将来役に立つ**し**、頑張ろう。（日语又有趣又对将来有用，加油吧。）
 :::
 
 :::en
@@ -534,7 +534,7 @@ Plain form + し
 3. 彼は頭がいい**し**、スポーツもできる**し**、モテるだろう。(He's smart and good at sports, so he's probably popular.)
 4. 時間もない**し**、お金もない**し**、旅行は無理だ。(I have no time and no money, so a trip is impossible.)
 5. この部屋は広い**し**、駅に近い**し**、いい部屋だね。(This room is spacious and close to the station — it's a great room.)
-6. 日本語は面白い**し**、将来に役に立つ**し**、頑張ろう。(Japanese is both fun and useful for the future, so let's keep at it.)
+6. 日本語は面白い**し**、将来役に立つ**し**、頑張ろう。(Japanese is both fun and useful for the future, so let's keep at it.)
 :::
 
 ### 辨析：し vs から||Contrast: し vs から

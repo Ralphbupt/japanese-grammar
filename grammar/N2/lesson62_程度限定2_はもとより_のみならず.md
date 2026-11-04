@@ -1,11 +1,11 @@
 # Lesson 62 – 程度・限定② — はもとより/のみならず||Degree & Limitation ② — はもとより/のみならず
 
 :::zh
-这一课深入学习两个N2级别的递进表达。「はもとより」表示"自不必说"，「のみならず」表示"不仅……（而且）"。两者都是书面语，在N2阅读中出现频率很高，特别是在新闻、评论、论述文中。本课只有两个语法点，因此会更详细地讲解用法和辨析，配合大量例句帮助彻底掌握。
+这一课深入学习两个N2级别的递进表达。「はもとより」表示"自不必说"，「のみならず」表示"不仅……（而且）"。两者都是书面语，在N2阅读中出现频率很高，特别是在新闻、评论、论述文中。本课重点讲这两个语法点，用法和辨析讲得更细，例句也更多；最后补充「〜も〜ば〜も」和「（で）さえ」两个相关句型。
 :::
 
 :::en
-This lesson provides an in-depth study of two N2-level progressive expressions. 「はもとより」 means "not to mention / needless to say," and 「のみならず」 means "not only… (but also)." Both are written-style expressions that appear frequently in N2 reading, especially in news, reviews, and argumentative essays. Since this lesson covers only two grammar points, the explanations and comparisons are more detailed, with extra example sentences to ensure thorough mastery.
+This lesson provides an in-depth study of two N2-level progressive expressions. 「はもとより」 means "not to mention / needless to say," and 「のみならず」 means "not only… (but also)." Both are written-style expressions that appear frequently in N2 reading, especially in news, reviews, and argumentative essays. These two points get more detailed explanations and comparisons, with extra example sentences; the lesson then adds two related patterns, 「〜も〜ば〜も」 and 「（で）さえ」.
 :::
 
 ## 本课单词表||Vocabulary
@@ -78,7 +78,7 @@ This is a progressive expression, expanding from the known to a wider scope.
 3. このレストランは味**はもとより**、サービスも素晴らしい。（这家餐厅味道自不必说，服务也很棒。）
 4. 大人**はもとより**、子供にも人気のあるアニメだ。（大人自不必说，连小孩也喜欢的动画。）
 5. 都市部**はもとより**、地方でもインターネットが普及している。（城市自不必说，连地方也普及了互联网。）
-6. 専門家**はもとより**、素人でも理解できるように書かれている。（专家自不必说，连外行也能理解地写成的。）
+6. 専門家**はもとより**、素人でも理解できるように書かれている。（写得专家自不必说，连外行也能看懂。）
 7. この問題は経済**はもとより**、環境にも大きな影響を与える。（这个问题对经济自不必说，对环境也有很大影响。）
 :::
 :::en
@@ -201,7 +201,7 @@ Structure: 「A のみならず、B も〜」
 |------|------|------|------|
 | のみならず | 不仅 | 书面 | 最正式，新闻/论文常用 |
 | だけでなく | 不仅 | 口语/书面 | 最通用 |
-| ばかりでなく | 不仅 | 口语偏多 | 稍口语化 |
+| ばかりでなく | 不仅 | 口语/书面 | 比「だけでなく」稍正式 |
 | はもとより | 自不必说 | 书面 | 暗含A是理所当然 |
 | に加えて | 加上 | 书面/口语 | 强调追加 |
 | はおろか | 别说……连…… | 书面 | 强调差距之大 |
@@ -232,7 +232,7 @@ Structure: 「A のみならず、B も〜」
 |------|------|------|------|
 | のみならず | not only | Written | Most formal; common in news/papers |
 | だけでなく | not only | Spoken/written | Most versatile |
-| ばかりでなく | not only | More spoken | Slightly colloquial |
+| ばかりでなく | not only | Spoken/written | Slightly more formal than 「だけでなく」 |
 | はもとより | not to mention | Written | Implies A is naturally expected |
 | に加えて | in addition to | Spoken/written | Emphasizes addition |
 | はおろか | let alone | Written | Emphasizes the size of the gap |

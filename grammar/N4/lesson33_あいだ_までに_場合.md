@@ -119,6 +119,9 @@ This lesson covers expressions of time and situation — あいだ / あいだ�
 :::
 
 :::en
+- **あいだに**: simply "within the period of…"
+- **うちに**: adds urgency — "while you still can / while this state lasts"
+
 | | あいだに | うちに |
 |---|---|---|
 | Nuance | Neutral, objectively describes the period | Carries urgency: "before it's too late" |
@@ -178,7 +181,7 @@ Expresses a **deadline** — "by (a certain time), something must be done." The 
 | 含义 | "一直到……"（持续） | "在……之前"（截止） |
 | 后句 | 持续性动作 | 完成性动作 |
 | 例 | 5時**まで**働く（一直工作到5点） | 5時**までに**終わらせる（在5点之前完成） |
-| 例 | 雨がやむ**まで**待つ（一直等到雨停） | 雨がやむ**までに**帰りたい（想在雨停之前回去） |
+| 例 | 雨がやむ**まで**待つ（一直等到雨停） | 暗くなる**までに**帰りたい（想在天黑之前回去） |
 | 图解 | ──────→ 5時 | 　　　↑完成　5時 |
 :::
 
@@ -188,7 +191,7 @@ Expresses a **deadline** — "by (a certain time), something must be done." The 
 | Meaning | "Until..." (continuous) | "By..." (deadline) |
 | Following clause | Ongoing action | Completed action |
 | Ex. | 5時**まで**働く (I work until 5) | 5時**までに**終わらせる (I finish it by 5) |
-| Ex. | 雨がやむ**まで**待つ (I wait until the rain stops) | 雨がやむ**までに**帰りたい (I want to go home before the rain stops) |
+| Ex. | 雨がやむ**まで**待つ (I wait until the rain stops) | 暗くなる**までに**帰りたい (I want to get home before it gets dark) |
 | Diagram | ──────→ 5:00 | 　　↑done　5:00 |
 :::
 
@@ -241,7 +244,7 @@ Expresses a **deadline** — "by (a certain time), something must be done." The 
 |---|---|---|
 | 核心 | 强调"间隔" | 强调"每一个" |
 | 数量用法 | 3日おきに = 隔3天（第4天做） | 3日ごとに = 每3天（第3天做） |
-| 注意 | 数字大时两者差异明显 | 日常会话中常可互换 |
+| 注意 | 天数、个数、页数：比ごとに多隔一个；时间、距离（4時間おきに、2メートルおきに）：与ごとに基本同义 | 日常会话中常可互换 |
 | 非数量用法 | ❌ 不可 | ✅ 国ごとに文化が違う（每个国家文化不同） |
 
 > 小贴士：「1つおきに」=「隔一个」，所以「1日おきに」= 隔一天 = 每两天一次。
@@ -252,7 +255,7 @@ Expresses a **deadline** — "by (a certain time), something must be done." The 
 |---|---|---|
 | Core idea | Emphasizes "interval/gap" | Emphasizes "each one" |
 | With numbers | 3日おきに = every 4th day (3-day gap) | 3日ごとに = every 3 days |
-| Note | Difference is clear with larger numbers | Often interchangeable in casual use |
+| Note | Days, items, pages: one more unit apart than ごとに; time and distance (4時間おきに, 2メートルおきに): basically the same as ごとに | Often interchangeable in casual use |
 | Non-number use | ❌ Not possible | ✅ 国ごとに文化が違う (Culture differs from country to country) |
 
 > Tip: 「1つおきに」 = "every other one," so 「1日おきに」 = every other day = once every 2 days.
@@ -527,7 +530,7 @@ Uses the て-form to express the reason for an apology. "I'm sorry for doing..."
 :::zh
 | | てすみません | てごめん（なさい） | て申し訳ありません |
 |---|---|---|---|
-| 丁寧度 | 普通の丁寧 | カジュアル | 非常に丁寧 |
+| 礼貌度 | 一般礼貌 | 随意 | 非常礼貌 |
 | 场景 | 日常、对不太熟的人 | 朋友、家人 | 工作、对上级/客户 |
 | 例 | 遅れてすみません | 遅れてごめん | 遅れて申し訳ありません |
 | 翻译 | 迟到了不好意思 | 迟到了抱歉啦 | 迟到了非常抱歉 |
@@ -549,7 +552,7 @@ Uses the て-form to express the reason for an apology. "I'm sorry for doing..."
 ### A. あいだ vs あいだに||A. あいだ vs あいだに
 
 :::zh
-空所に「あいだ」または「あいだに」を入れてください。
+在空格里填入「あいだ」或「あいだに」。
 
 1. 母が料理をしている（　　）、私は掃除をしていた。
 2. 母が料理をしている（　　）、宅配便が来た。
@@ -572,19 +575,19 @@ Fill in the blank with あいだ or あいだに.
 <summary>答案 / Answers</summary>
 
 :::zh
-1. **あいだ** — 掃除していた＝持続動作 → 全期間を通じて
-2. **あいだに** — 宅配便が来た＝一回限りの出来事 → ある時点
-3. **あいだに** — 花瓶を割った＝一回の出来事
-4. **あいだ** — 毎日スキーをした＝期間全体にわたる行為
-5. **あいだに** — 上手になった＝期間内に起きた変化
+1. **あいだ** — 掃除していた＝持续动作 → 贯穿整段时间
+2. **あいだに** — 宅配便が来た＝一次性的事件 → 某一时点
+3. **あいだに** — 花瓶を割った＝一次性的事件
+4. **あいだ** — 毎日スキーをした＝贯穿整个期间的行为
+5. **あいだに** — 上手になった＝期间内发生的变化
 :::
 
 :::en
-1. **あいだ** — 掃除していた＝持続動作 → 全期間を通じて
-2. **あいだに** — 宅配便が来た＝一回限りの出来事 → ある時点
-3. **あいだに** — 花瓶を割った＝一回の出来事
-4. **あいだ** — 毎日スキーをした＝期間全体にわたる行為
-5. **あいだに** — 上手になった＝期間内に起きた変化
+1. **あいだ** — 掃除していた = an ongoing action → throughout the whole period
+2. **あいだに** — 宅配便が来た = a one-off event → at one point
+3. **あいだに** — 花瓶を割った = a one-off event
+4. **あいだ** — 毎日スキーをした = an activity spanning the whole period
+5. **あいだに** — 上手になった = a change that happened within the period
 :::
 
 </details>
@@ -592,7 +595,7 @@ Fill in the blank with あいだ or あいだに.
 ### B. まで vs までに||B. まで vs までに
 
 :::zh
-空所に「まで」または「までに」を入れてください。
+在空格里填入「まで」或「までに」。
 
 1. 3時（　　）ここで待っていてください。
 2. 3時（　　）ここに来てください。
@@ -613,25 +616,25 @@ Fill in with まで or までに.
 <summary>答案 / Answers</summary>
 
 :::zh
-1. **まで** — 「待つ」は持続動作 → 3時まで待ち続ける
-2. **までに** — 「来る」は完了動作 → 3時が締め切り
-3. **までに** — 「返す」は完了動作 → 来月が締め切り
-4. **まで** — 「いる」は持続 → 雨がやむ時点まで
+1. **まで** — 「待つ」是持续动作 → 一直等到3点
+2. **までに** — 「来る」是完成性动作 → 3点是截止时间
+3. **までに** — 「返す」是完成性动作 → 下个月是截止时间
+4. **まで** — 「いる」是持续状态 → 一直待到雨停
 :::
 
 :::en
-1. **まで** — 「待つ」は持続動作 → 3時まで待ち続ける
-2. **までに** — 「来る」は完了動作 → 3時が締め切り
-3. **までに** — 「返す」は完了動作 → 来月が締め切り
-4. **まで** — 「いる」は持続 → 雨がやむ時点まで
+1. **まで** — 「待つ」 is ongoing → keep waiting until 3
+2. **までに** — 「来る」 is a completed action → 3 o'clock is the deadline
+3. **までに** — 「返す」 is a completed action → next month is the deadline
+4. **まで** — 「いる」 is a continuing state → stay until the rain stops
 :::
 
 </details>
 
-### C. 場合は を使って文を作りなさい||C. Make Sentences Using 場合は
+### C. 用「場合は」造句||C. Make Sentences Using 場合は
 
 :::zh
-次の状況に対して「場合は」を使って文を作ってください。
+针对下面的情况，用「場合は」造句。
 
 1. 火事 → 避難する
 2. 質問がある → メールする
@@ -661,7 +664,7 @@ Make a sentence with 「場合は」 for each situation.
 ### D. 翻译||D. Translation
 
 :::zh
-日本語に訳してください。
+翻译成日语。
 
 1. 趁年轻的时候，想多学习。
 2. 请在周五之前交作业。
@@ -688,16 +691,16 @@ Translate into Japanese.
 1. 若いうちに、たくさん勉強したい。
 2. 金曜日までに宿題を出してください。
 3. この薬は6時間おきに飲んでください。
-4. そんなに疲れたなら、早く寝たらどうですか。
+4. そんなに疲れているなら、早く寝たらどうですか。
 5. 辞書を持ってきてよかった。
-6. 早く連絡しなくてすみません。
+6. すぐに連絡できなくてすみません。／連絡が遅くなってすみません。
 
 </details>
 
 ### E. 改错||E. Error Correction
 
 :::zh
-間違いを直してください。
+改正下列句子的错误。
 
 1. 母が寝ているあいだに、私はテレビを見ていた。（想表达"妈妈睡觉的整段时间里我在看电视"）
 2. 5時までにずっと勉強していた。（想表达"一直学到5点"）
@@ -718,17 +721,17 @@ Correct the mistakes.
 <summary>答案 / Answers</summary>
 
 :::zh
-1. ❌ あいだに → ✅ **あいだ**（テレビを見ていた＝持続動作、全期間を通じて → あいだ）
-2. ❌ までに → ✅ **まで**（ずっと＝持続 → 「5時まで勉強していた」）
-3. ❌ 分からないの場合は → ✅ **分からない場合は**（動詞普通形は直接＋場合、「の」は不要）
-4. 「薬を飲んでよかった」は正しい（薬を飲んで良かった＝飲んで安心）。「明日までに届けます」も正しい（締め切りの用法）。→ 両方とも正しい。
+1. ❌ あいだに → ✅ **あいだ**（テレビを見ていた＝持续动作，贯穿整段时间 → あいだ）
+2. ❌ までに → ✅ **まで**（ずっと＝持续 → 「5時まで勉強していた」）
+3. ❌ 分からないの場合は → ✅ **分からない場合は**（动词普通形直接接「場合」，不需要「の」）
+4. 「薬を飲んでよかった」是对的（吃了药，放心了）。「明日までに届けます」也是对的（截止期限的用法）。→ 两句都没错。
 :::
 
 :::en
-1. ❌ あいだに → ✅ **あいだ**（テレビを見ていた＝持続動作、全期間を通じて → あいだ）
-2. ❌ までに → ✅ **まで**（ずっと＝持続 → 「5時まで勉強していた」）
-3. ❌ 分からないの場合は → ✅ **分からない場合は**（動詞普通形は直接＋場合、「の」は不要）
-4. 「薬を飲んでよかった」は正しい（薬を飲んで良かった＝飲んで安心）。「明日までに届けます」も正しい（締め切りの用法）。→ 両方とも正しい。
+1. ❌ あいだに → ✅ **あいだ** (テレビを見ていた is ongoing, lasting the whole time → あいだ)
+2. ❌ までに → ✅ **まで** (ずっと = continuous → 「5時まで勉強していた」)
+3. ❌ 分からないの場合は → ✅ **分からない場合は** (a verb's plain form attaches to 場合 directly; no 「の」)
+4. 「薬を飲んでよかった」 is correct (glad I took the medicine). 「明日までに届けます」 is also correct (the deadline use). → Both sentences are fine.
 :::
 
 </details>

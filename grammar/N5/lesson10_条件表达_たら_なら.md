@@ -34,7 +34,7 @@
 - い-adjective drop い + かったら: 寒い → 寒かったら
 - な-adjective + だったら: 暇 → 暇だったら
 - Noun + だったら: 雨 → 雨だったら
-- Negative: 動詞 なかったら / 名・な形 じゃなかったら / い形 くなかったら
+- Negative: verb なかったら / noun & な-adj じゃなかったら / い-adj くなかったら
 :::
 
 ### 核心語感||Core nuance
@@ -165,7 +165,7 @@
 **"If we're talking about A…"** — picking up the other person's topic to offer advice or a judgment.
 :::
 
-### 典型対話場景||Typical dialogue scenarios
+### 典型对话场景||Typical dialogue scenarios
 
 :::zh
 **场景一：推荐餐厅**
@@ -251,7 +251,7 @@
 | 语感 | 必然 | 假设前提 | 完成后/万一 | 话题假设 |
 | 可接意志/请求 | ❌ | △有限制 | ✅ | ✅ |
 | 过去事实 | ✅ | ❌ | ✅ | ❌ |
-| 自然规律 | ✅最适合 | ✅ | ✅ | ❌ |
+| 自然规律 | ✅最适合 | ✅ | △ | ❌ |
 | 给建议 | ❌ | ✅ | ✅ | ✅最适合 |
 | 反复/习惯 | ✅最适合 | ✅ | △ | ❌ |
 | 意外发现 | ✅ | ❌ | ✅ | ❌ |
@@ -267,7 +267,7 @@
 | Nuance | Inevitable | Hypothetical premise | After completion / what if | Topic-based hypothesis |
 | Followed by volition/request | ❌ | △ limited | ✅ | ✅ |
 | Past facts | ✅ | ❌ | ✅ | ❌ |
-| Natural laws | ✅ best | ✅ | ✅ | ❌ |
+| Natural laws | ✅ best | ✅ | △ | ❌ |
 | Giving advice | ❌ | ✅ | ✅ | ✅ best |
 | Habitual / repeated | ✅ best | ✅ | △ | ❌ |
 | Unexpected discovery | ✅ | ❌ | ✅ | ❌ |
@@ -277,7 +277,7 @@
 | Versatility | ★★ | ★★★ | ★★★★★ | ★★★ |
 :::
 
-### 同一個文の四種說法||The same sentence in all four forms
+### 同一句话的四种说法||The same sentence in all four forms
 
 :::zh
 **"如果下雨就不去了"：**
@@ -307,7 +307,7 @@
 - ✅ 駅に着く**なら**、電話してください。（If you're going to the station, please call. → slightly different nuance）
 :::
 
-### 選択口訣||Quick decision guide
+### 选择口诀||Quick decision guide
 
 :::zh
 ```

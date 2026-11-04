@@ -21,7 +21,7 @@ This lesson covers "without…" and "can't help but / be bound to / be forced to
 | 真相 | しんそう | 真相（名）——事件背后的真实情况；「真相を究明する」查明真相；「真相は闇の中」真相不明//(n) the truth (behind an incident) — 「真相を究明する」 to get to the bottom of it; 「真相は闇の中」 the truth remains a mystery |
 | 弁償 | べんしょう | 赔偿（名、可作动词）——用钱或实物赔偿给对方造成的损失，多指弄坏了东西；「損害を弁償する」赔偿损失；「弁償金」赔偿金//(n, suru-verb) compensation; paying for damage — usually for something one broke or lost; 「損害を弁償する」 to pay for the damage; 「弁償金」 compensation money |
 | 参列 | さんれつ | 参加（典礼）；出席（名、可作动词）——用于葬礼、婚礼、仪式等正式场合；「葬儀に参列する」参加葬礼；「参列者」出席者//(n, suru-verb) attendance (at a ceremony) — for funerals, weddings and formal ceremonies; 「葬儀に参列する」 to attend a funeral; 「参列者」 those attending |
-| 悲痛 | ひつう | 悲痛（名、形动）——极度悲伤、令人心痛；「悲痛な叫び」悲痛的呼喊；「悲痛な面持ち」悲痛的神情//(n, na-adj) grief; anguish — deep, painful sorrow; 「悲痛な叫び」 an anguished cry; 「悲痛な面持ち」 a grief-stricken look |
+| 悲痛 | ひつう | 悲痛（名、形容动词）——极度悲伤、令人心痛；「悲痛な叫び」悲痛的呼喊；「悲痛な面持ち」悲痛的神情//(n, na-adj) grief; anguish — deep, painful sorrow; 「悲痛な叫び」 an anguished cry; 「悲痛な面持ち」 a grief-stricken look |
 | 憤り | いきどおり | 愤慨；义愤（名）——比「怒り」更书面，多指对不公正的事感到气愤；「憤りを覚える」感到愤慨；「強い憤り」强烈的愤慨//(n) indignation; resentment — more formal than 「怒り」, usually at injustice; 「憤りを覚える」 to feel indignant; 「強い憤り」 deep indignation |
 | 裏切り | うらぎり | 背叛（名）——动词是「裏切る」，也可指"辜负"；「仲間の裏切り」同伴的背叛；「期待を裏切る」辜负期待//(n) betrayal — from the verb 「裏切る」, which can also mean "to let down"; 「仲間の裏切り」 betrayal by a comrade; 「期待を裏切る」 to fall short of expectations |
 | 撤退 | てったい | 撤退；退出（名、可作动词）——军队撤离，也常指企业退出某个市场；「市場から撤退する」退出市场；「撤退を決める」决定撤出//(n, suru-verb) withdrawal; pulling out — of troops, and often of a company leaving a market; 「市場から撤退する」 to pull out of a market; 「撤退を決める」 to decide to withdraw |

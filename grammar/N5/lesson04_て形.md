@@ -41,7 +41,7 @@
 | 風邪 | かぜ | 感冒（名）——「風邪をひく」感冒；「風邪気味」有点感冒//(n) a cold — 「風邪をひく」 to catch a cold; 「風邪気味」 coming down with a cold |
 | 薬 | くすり | 药（名）——吃药用「飲む」，药片也一样；「薬を飲む」吃药；「薬が効く」药见效//(n) medicine — you "drink" it, even pills; 「薬を飲む」 to take medicine; 「薬が効く」 the medicine works |
 
-## 1. て形（最重要的动词变形！）||て Form (The Most Important Conjugation!)
+## 1. て形（最重要的动词变形！）||1. て Form (The Most Important Conjugation!)
 
 ### 为什么说它最重要？||Why is it the most important?
 
@@ -114,13 +114,13 @@ Same logic as ます form — just replace ます with て:
 | 教える | 教え | +て | 教え**て** |
 :::
 
-#### 三類動詞：死记||Group 3: Memorize
+#### 三类动词：死记||Group 3: Memorize
 
 :::zh
 - する → **して**
 - 来る（くる）→ **来て**（きて）
 
-複合する也一样：
+复合する也一样：
 - 勉強する → 勉強**して**
 - 料理する → 料理**して**
 :::
@@ -311,7 +311,7 @@ Three different endings, all change to **ん+で**:
 
 ---
 
-### て形规則 总结卡片||て Form Rules — Summary Card
+### て形规则 总结卡片||て Form Rules — Summary Card
 
 :::zh
 ```
@@ -397,7 +397,7 @@ Three different endings, all change to **ん+で**:
 ### ます形 vs て形 对比（帮助理解两者关系）||ます form vs て form comparison (to understand the relationship)
 
 :::zh
-| 辞书形 | ます形（い段+ます） | て形（音変） |
+| 辞书形 | ます形（い段+ます） | て形（音变） |
 |--------|-------------------|-------------|
 | 書く | 書きます | 書いて |
 | 話す | 話します | 話して |
@@ -423,7 +423,7 @@ Three different endings, all change to **ん+で**:
 
 ---
 
-### て形和た形的関係（提前预告）||Relationship between て form and た form (preview)
+### て形和た形的关系（提前预告）||Relationship between て form and た form (preview)
 
 :::zh
 你可能注意到了：て形的变化规则和**た形**（过去式）几乎一模一样，只是把て/で换成た/だ：
@@ -460,7 +460,7 @@ You may have noticed: the て form change rules are almost identical to the **�
 
 ---
 
-## 2. て形的基本用法||Basic Uses of て Form
+## 2. て形的基本用法||2. Basic Uses of て Form
 
 ### 形容词/名词的て形||て form for adjectives and nouns
 
@@ -520,7 +520,7 @@ You may have noticed: the て form change rules are almost identical to the **�
    （这个房间又安静又宽敞。→ な形容词て形：だ→で）
 
 8. 姉は親切**で**、優しいです。
-   （姐姐又亲切又温柔。→ な形容词て形）
+   （姐姐又热心又温柔。→ な形容词て形）
 
 9. 彼は学生**で**、20歳です。
    （他是学生，20岁。→ 名词て形：だ→で）
@@ -571,7 +571,7 @@ The most basic use of て form is chaining multiple actions together — like "a
 > - 朝起き**て**、学校に行っ**た**。(Ends in た → plain past)
 :::
 
-### 用法②：原因（口語中轻描淡写的理由）||Use ②: Cause (matter-of-fact reason in casual speech)
+### 用法②：原因（口语中轻描淡写的理由）||Use ②: Cause (matter-of-fact reason in casual speech)
 
 :::zh
 て形也可以表示前后的因果关系，但语气比较轻、客观，不带有"解释理由"的强调感。
@@ -604,7 +604,7 @@ The most basic use of て form is chaining multiple actions together — like "a
     (I had no money, so I couldn't buy it. → ない て form: なくて)
 :::
 
-#### て形表原因 vs から/ので の区别||て form as reason vs から/ので
+#### て形表原因 vs から/ので 的区别||て form as reason vs から/ので
 
 :::zh
 | | て形 | から | ので |
@@ -658,7 +658,7 @@ The most basic use of て form is chaining multiple actions together — like "a
 
 ---
 
-## 3. 初学者常见错误||Common Beginner Mistakes
+## 3. 初学者常见错误||3. Common Beginner Mistakes
 
 ### 错误1：一类 vs 二类搞混||Mistake 1: Mixing up Group 1 and Group 2
 

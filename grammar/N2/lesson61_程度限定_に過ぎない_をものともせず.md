@@ -79,7 +79,7 @@ This lesson covers N2-level grammar for degree and limitation. 「に過ぎな�
 | にほかならない | 正是/不外乎 | 强调、断定 |
 | だけだ | 只是……而已 | 中性限定 |
 
-> 「に過ぎない」和「にほかならない」意思完全相反！  
+> 「に過ぎない」和「にほかならない」语气方向正好相反！  
 > 「偶然に過ぎない」= 只不过是偶然（淡化）  
 > 「努力の結果にほかならない」= 正是努力的结果（强调）
 :::
@@ -158,9 +158,13 @@ This lesson covers N2-level grammar for degree and limitation. 「に過ぎな�
 ### 含义||Meaning
 :::zh
 "……最好了""还是……最棒了"，表示说话人认为这是最佳选择，带有强烈推荐的语气。
+
+※ 规定、告示里的「〜に限る」是另一个意思"仅限……"（如「参加者は会員に限る」仅限会员参加），和「に限り」同源，见第41课。
 :::
 :::en
 "Nothing beats…" or "the best thing is to…" — the speaker believes this is the best option, with a strong tone of recommendation.
+
+※ In rules and notices, 「〜に限る」 has a different meaning, "limited to…" (e.g. 「参加者は会員に限る」 participation is limited to members), related to 「に限り」; see Lesson 41.
 :::
 
 ### 例句||Example Sentences

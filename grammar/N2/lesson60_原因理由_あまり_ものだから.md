@@ -146,7 +146,7 @@ This lesson covers advanced N2-level cause/reason expressions. 「あまり」 i
 | 表达 | 含义 | 区别 |
 |------|------|------|
 | ばこそ | 正因为……才 | 积极原因，书面，郑重 |
-| からこそ | 正因为……才 | 积极原因，口语/书面均可 |
+| からこそ | 正因为……才 | 强调原因（不限积极），口语/书面均可 |
 | からといって | 虽说……但不能 | 反驳因果关系 |
 
 > 「ばこそ」比「からこそ」更正式、更书面化。  
@@ -156,7 +156,7 @@ This lesson covers advanced N2-level cause/reason expressions. 「あまり」 i
 | Expression | Meaning | Difference |
 |------|------|------|
 | ばこそ | precisely because | Positive reason; written; solemn |
-| からこそ | precisely because | Positive reason; spoken and written |
+| からこそ | precisely because | Stresses the reason (not only positive); spoken and written |
 | からといって | just because… doesn't mean | Refutes a causal relationship |
 
 > 「ばこそ」 is more formal and literary than 「からこそ」.  
@@ -174,7 +174,7 @@ This lesson covers advanced N2-level cause/reason expressions. 「あまり」 i
 - な形容詞な/である + だけに
 - 名詞（である）+ だけに
 
-※ 也可以用「だけのことはある」的形式。
+※ 句末的「だけのことはある」（不愧是）是另一个相关句型，见第4点辨析。
 :::
 :::en
 - Verb plain form + だけに
@@ -182,7 +182,7 @@ This lesson covers advanced N2-level cause/reason expressions. 「あまり」 i
 - na-adjective な/である + だけに
 - Noun (である) + だけに
 
-※ Can also be used in the form 「だけのことはある」.
+※ The sentence-final 「だけのことはある」 ("as expected of") is a related but separate pattern; see the comparison in point 4.
 :::
 
 ### 含义||Meaning

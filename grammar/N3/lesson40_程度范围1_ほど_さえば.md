@@ -210,18 +210,18 @@ Indicates degree — "to the extent that…" or "so much that…". Often used in
 :::zh
 | 表达 | 含义 | 区别 |
 |------|------|------|
-| ば〜ほど | 越……越…… | 正式，强调比例关系 |
+| ば〜ほど | 越……越…… | 口语书面都常用，强调比例关系 |
 | ほど | 到……的程度 | 单纯表示程度，不含递进 |
-| たら〜たで | 如果……那就…… | 表示假设结果，不含递进 |
+| たら〜たで | 真……了的话，也有……（另一面） | 「雨が降ったら降ったで」：接受该情况，或指出它另有问题，不含递进 |
 
 > 注意：「ば〜ほど」必须用同一个词的两种形式，不能用两个不同的词。
 :::
 :::en
 | Expression | Meaning | Difference |
 |------|------|------|
-| ば〜ほど | the more… the more… | Formal; emphasizes proportional relationship |
+| ば〜ほど | the more… the more… | Common in speech and writing; emphasizes proportional relationship |
 | ほど | to the extent of | Simply indicates degree, no progression |
-| たら〜たで | if… then… | States a hypothetical result, no progression |
+| たら〜たで | if it does happen, then… | 「雨が降ったら降ったで」: accepts that outcome or notes it brings its own issues; no progression |
 
 > Note: 「ば〜ほど」 must repeat the same word in two forms — you cannot use two different words.
 :::

@@ -1,24 +1,24 @@
 # Lesson 16 – N5 补充语法与总复习||N5 Supplementary Grammar & Review
 
 :::zh
-N5 阶段的最后一课，把前面没单独讲的零散语法（**疑问词 + か / も / でも**、**〜すぎる**、**〜やすい / 〜にくい**、**〜ながら**）一次性串起来，并对整个 N5 范围做总盘点。学完这一课，就有资格去刷 N5 真题了。
+N5 阶段的总复习课，把前面没单独讲的零散语法（**疑问词 + か / も / でも**、**〜すぎる**、**〜やすい / 〜にくい**、**〜ながら**）一次性串起来，并对整个 N5 范围做总盘点。学完这一课，就有资格去刷 N5 真题了。
 :::
 
 :::en
-The closing lesson of N5, weaving together loose ends (**question words + か / も / でも**, **〜すぎる**, **〜やすい / 〜にくい**, **〜ながら**) and a full N5 review. Finish this and you're ready to grind N5 mock exams.
+The N5 review lesson, weaving together loose ends (**question words + か / も / でも**, **〜すぎる**, **〜やすい / 〜にくい**, **〜ながら**) and a full N5 review. Finish this and you're ready to grind N5 mock exams.
 :::
 
 ## 1. 疑问词 + か/も/でも||1. Question Words + か/も/でも
 
-### 疑問词 + か = "某……"（不確定）||Question word + か = "some…" (unspecified)
+### 疑问词 + か = "某……"（不确定）||Question word + か = "some…" (unspecified)
 
 :::zh
 | | 表达 | 含义 | 例句 |
 |---|---|---|---|
 | 誰か | 某人 | 誰かが来た（有人来了） | 誰かに聞いてみよう（问问某个人吧） |
 | 何か | 某物 | 何か食べたい（想吃点什么） | 何か問題がありますか（有什么问题吗） |
-| どこか | 某処 | どこかに行きたい（想去某个地方） | どこかで会った気がする（感觉在哪见过） |
-| いつか | 某時 | いつか日本に行きたい（总有一天想去日本） | いつか必ずできるようになる（总有一天一定能做到） |
+| どこか | 某处 | どこかに行きたい（想去某个地方） | どこかで会った気がする（感觉在哪见过） |
+| いつか | 某时 | いつか日本に行きたい（总有一天想去日本） | いつか必ずできるようになる（总有一天一定能做到） |
 :::
 
 :::en
@@ -30,7 +30,7 @@ The closing lesson of N5, weaving together loose ends (**question words + か / 
 | いつか | someday | いつか日本に行きたい (someday I want to go to Japan) | いつか必ずできるようになる (someday I'll definitely be able to do it) |
 :::
 
-### 疑問词 + も + 否定 = "全否定"||Question word + も + negative = "total negation"
+### 疑问词 + も + 否定 = "全否定"||Question word + も + negative = "total negation"
 
 :::zh
 | | 表达 | 含义 | 例句 |
@@ -54,7 +54,7 @@ The closing lesson of N5, weaving together loose ends (**question words + か / 
 > **Special note about いつも!** All other "question word + も + negative" patterns are total negations, but いつも means "always/all the time" (affirmative) — it is an exception!
 :::
 
-### 疑問词 + でも = "無論……都"||Question word + でも = "no matter… / any…"
+### 疑问词 + でも = "无论……都"||Question word + でも = "no matter… / any…"
 
 :::zh
 | | 表达 | 含义 | 例句 |
@@ -194,14 +194,14 @@ Verb ます-stem + やすい / にくい
 7. 黒い服は汚れが見え**にくい**。(Dirt is hard to see on black clothes.)
 :::
 
-### 辨析：にくい vs がたい（N3预告）||Contrast: にくい vs がたい (N3 preview)
+### 辨析：にくい vs がたい（N2预告）||Contrast: にくい vs がたい (N2 preview)
 
 :::zh
 | | にくい | がたい |
 |---|---|---|
 | 意思 | 物理上/客观上难以 | 心理上/感情上难以 |
 | 例句 | 読みにくい（字小/模糊） | 信じがたい（难以置信） |
-| 级别 | N5 | N3 |
+| 级别 | N5 | N2 |
 
 > やすい/にくい活用和い形容词一样：読みやすかった、読みやすくない、読みやすくて……
 :::
@@ -211,7 +211,7 @@ Verb ます-stem + やすい / にくい
 |---|---|---|
 | Meaning | Physically / objectively difficult | Emotionally / psychologically difficult |
 | Example | 読みにくい (hard to read — small or blurry) | 信じがたい (hard to believe) |
-| Level | N5 | N3 |
+| Level | N5 | N2 |
 
 > やすい/にくい conjugate like い-adjectives: 読みやすかった、読みやすくない、読みやすくて…
 :::
@@ -371,7 +371,7 @@ The following is the complete list of N5 core grammar. Confirm you have mastered
 - [ ] は vs が
 - [ ] 基本助词（を、に、で、の、も、から、まで、よ、ね） // Basic particles (を, に, で, の, も, から, まで, よ, ね)
 
-### 动词変形||Verb Conjugations
+### 动词变形||Verb Conjugations
 - [ ] ます形 // ます-form
 - [ ] て形（音变规则！） // て-form (sound-change rules!)
 - [ ] ない形 // ない-form
@@ -498,12 +498,12 @@ The following is the complete list of N5 core grammar. Confirm you have mastered
 
 </details>
 
-### 四、のに vs けど：根据语境选択||4. のに vs けど: Choose based on context
+### 四、のに vs けど：根据语境选择||4. のに vs けど: Choose based on context
 
-1. 薬を飲んだ（のに / けど）、まだ治らない。→ 说话人不満 // 薬を飲んだ（のに / けど）、まだ治らない。→ speaker is dissatisfied
+1. 薬を飲んだ（のに / けど）、まだ治らない。→ 说话人不满 // 薬を飲んだ（のに / けど）、まだ治らない。→ speaker is dissatisfied
 2. 雨が降った（のに / けど）、試合はあった。→ 客观叙述 // 雨が降った（のに / けど）、試合はあった。→ objective statement
 3. ダイエット中な（のに / けど）、ケーキを食べてしまった。→ 后悔 // ダイエット中な（のに / けど）、ケーキを食べてしまった。→ regret
-4. 日本語は難しい（のに / けど）、面白い。→ 中性転折 // 日本語は難しい（のに / けど）、面白い。→ neutral contrast
+4. 日本語は難しい（のに / けど）、面白い。→ 中性转折 // 日本語は難しい（のに / けど）、面白い。→ neutral contrast
 
 <details>
 <summary>答案</summary>
@@ -524,11 +524,11 @@ The following is the complete list of N5 core grammar. Confirm you have mastered
 
 </details>
 
-### 五、ので vs から：选択更合適的||5. ので vs から: Choose the more suitable one
+### 五、ので vs から：选择更合适的||5. ので vs から: Choose the more suitable one
 
-1. 先生、体調が悪い（ので / から）、早退してもいいですか。→ 対老师 // 先生、体調が悪い（ので / から）、早退してもいいですか。→ to a teacher
-2. 疲れた（ので / から）、もう寝よう。→ 自言自語 // 疲れた（ので / から）、もう寝よう。→ talking to yourself
-3. お客様、ただいま満席な（ので / から）、少々お待ちください。→ 対客人 // お客様、ただいま満席な（ので / から）、少々お待ちください。→ to a customer
+1. 先生、体調が悪い（ので / から）、早退してもいいですか。→ 对老师 // 先生、体調が悪い（ので / から）、早退してもいいですか。→ to a teacher
+2. 疲れた（ので / から）、もう寝よう。→ 自言自语 // 疲れた（ので / から）、もう寝よう。→ talking to yourself
+3. お客様、ただいま満席な（ので / から）、少々お待ちください。→ 对客人 // お客様、ただいま満席な（ので / から）、少々お待ちください。→ to a customer
 4. 嫌いだ（ので / から）、食べない。→ 个人意志 // 嫌いだ（ので / から）、食べない。→ personal will
 
 <details>
@@ -573,7 +573,7 @@ Example: あの店 → 安い + 美味しい + よく行く → あの店は安�
 
 </details>
 
-### 七、疑問词+か/も/でも：填空||7. Question word + か/も/でも: Fill in the blank
+### 七、疑问词+か/も/でも：填空||7. Question word + か/も/でも: Fill in the blank
 
 1. ＿＿＿が来たみたいだ。（有人好像来了） // ＿＿＿が来たみたいだ。(It seems someone came.)
 2. 昨日は＿＿＿食べなかった。（什么都没吃） // 昨日は＿＿＿食べなかった。(I didn't eat anything.)
@@ -622,7 +622,7 @@ Example: あの店 → 安い + 美味しい + よく行く → あの店は安�
 
 </details>
 
-### 九、やすい/にくい：翻訳||9. やすい/にくい: Translate
+### 九、やすい/にくい：翻译||9. やすい/にくい: Translate
 
 1. 这本书容易懂。→ // This book is easy to understand. →
 2. 这个汉字很难写。→ // This kanji is hard to write. →
@@ -656,7 +656,7 @@ Example: あの店 → 安い + 美味しい + よく行く → あの店は安�
 
 </details>
 
-### 十一、方（かた）：翻訳||11. 方 (かた): Translate
+### 十一、方（かた）：翻译||11. 方 (かた): Translate
 
 1. 请教我这个字的读法。→ // Please teach me how to read this character. →
 2. 不知道使用方法。→ // I don't know how to use it. →
@@ -673,7 +673,7 @@ Example: あの店 → 安い + 美味しい + よく行く → あの店は安�
 
 </details>
 
-### 十二、综合問題：选择合適的語法填空||12. Mixed Review: Fill in the blank with the right grammar
+### 十二、综合问题：选择合适的语法填空||12. Mixed Review: Fill in the blank with the right grammar
 
 1. せっかく作った＿＿＿、誰も食べなかった。（のに / ので）
 2. 日本語は面白い＿＿＿、役に立つ＿＿＿、毎日勉強している。（し / から）

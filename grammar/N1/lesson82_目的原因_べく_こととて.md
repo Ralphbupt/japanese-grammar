@@ -21,7 +21,7 @@ This lesson covers N1 grammar for purpose and cause. For purpose, 「べく」 a
 | 押し付ける | おしつける | 强加；推给（他动词）——把责任、工作、意见硬推给别人；「責任を押し付ける」推卸责任；「意見を押し付ける」强加意见//(v, trans.) to force on; to push onto — dumping responsibility, work or opinions on someone else; 「責任を押し付ける」 to shift the blame; 「意見を押し付ける」 to force one's views on others |
 | 赴く | おもむく | 前往；奔赴（自动词）——书面语，多指去执行任务的地方；「任地に赴く」赴任；「現地に赴く」前往当地//(v, intrans.) to go to; to proceed to — formal, usually of going somewhere on a mission; 「任地に赴く」 to take up a post; 「現地に赴く」 to go to the site |
 | 過ち | あやまち | 过错；失误（名）——道德上或判断上的错误，比「間違い」郑重；「過ちを犯す」犯错；「過ちを認める」承认错误//(n) mistake; wrongdoing — a moral or judgement error, weightier than 「間違い」; 「過ちを犯す」 to make a mistake; 「過ちを認める」 to admit one's fault |
-| 口うるさい | くちうるさい | 爱唠叨；挑剔（い形容词）——对别人的小事说个不停；「口うるさい母親」爱唠叨的母亲；「口うるさく注意する」唠唠叨叨地提醒//(i-adj) nagging; fussy — going on and on about small things; 「口うるさい母親」 a nagging mother; 「口うるさく注意する」 to keep telling someone off |
+| 口うるさい | くちうるさい | 爱唠叨；挑剔（形容词）——对别人的小事说个不停；「口うるさい母親」爱唠叨的母亲；「口うるさく注意する」唠唠叨叨地提醒//(i-adj) nagging; fussy — going on and on about small things; 「口うるさい母親」 a nagging mother; 「口うるさく注意する」 to keep telling someone off |
 | 前例 | ぜんれい | 先例；前例（名）——过去同类的例子；「前例がない」史无前例；「前例にならう」按先例办//(n) precedent — a previous case of the same kind; 「前例がない」 unprecedented; 「前例にならう」 to follow precedent |
 | 詰めかける | つめかける | 蜂拥而来；挤到（自动词）——很多人涌到某个地方；「ファンが詰めかける」粉丝蜂拥而至；「報道陣が詰めかける」记者云集//(v, intrans.) to throng; to crowd into — many people gathering at one place; 「ファンが詰めかける」 fans flock to; 「報道陣が詰めかける」 the press crowd in |
 | 沸く | わく | （人群）沸腾；欢腾（自动词）——本义是水开，引申为人们兴奋热烈；「会場が沸く」全场沸腾；「優勝に沸く」因夺冠而欢腾//(v, intrans.) to go wild; to be in an uproar — literally "to boil", here of crowds getting excited; 「会場が沸く」 the hall erupts; 「優勝に沸く」 to celebrate a championship |
@@ -518,7 +518,7 @@ Restrictions:
 
 1. べく（空格前是「開拓す」，接「すべく」；んがため要说「開拓せんがため」，接不上）
 2. とあって
-3. こととて（空格前有「な」；ゆえ一般说「不慣れゆえ」，不带「な」）
+3. こととて（后项「ご容赦ください」是请求原谅，正是こととて的典型用法；ゆえ很少接请求）
 4. にかこつけて
 5. がゆえに（「思うがゆえに」）
 6. んがため（に）（「得んがために」；べく要说「得るべく」，接不上）
@@ -556,7 +556,7 @@ Restrictions:
 
 1. べく (the blank follows 「開拓す」, giving 「すべく」; んがため would need 「開拓せんがため」 and doesn't fit)
 2. とあって
-3. こととて (the blank follows 「な」; ゆえ would normally be 「不慣れゆえ」, without 「な」)
+3. こととて (the main clause 「ご容赦ください」 asks for forgiveness — the classic use of こととて; ゆえ rarely takes a request)
 4. にかこつけて
 5. がゆえに (「思うがゆえに」)
 6. んがため（に） (「得んがために」; べく would need 「得るべく」 and doesn't fit)

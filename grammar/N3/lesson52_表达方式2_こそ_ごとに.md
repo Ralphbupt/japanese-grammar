@@ -97,10 +97,10 @@ Pretending to be something one is not. "Pretending to..." / "Acting as if..."
 
 ### 接続||Conjugation
 :::zh
-名词 / 副词 / て形 + こそ
+名词 / 副词 / て形 / ば形 + こそ
 :::
 :::en
-Noun / Adverb / て-form + こそ
+Noun / Adverb / て-form / ば-form + こそ
 :::
 
 ### 含义||Meaning
@@ -114,8 +114,8 @@ Emphasizes a specific word, indicating "it is precisely this" or "this is what m
 ### 例句||Example Sentences
 :::zh
 1. 「ありがとう。」「こちら**こそ**。」（"谢谢。""我才要谢谢你。"）
-2. 今度**こそ**合格したい。（这次才一定要合格。）
-3. 努力して**こそ**、成功できる。（正因为努力了，才能成功。）
+2. 今度**こそ**合格したい。（这次一定要合格。）
+3. 努力して**こそ**、成功できる。（只有努力了，才能成功。）
 4. あなた**こそ**、リーダーにふさわしい。（正是你，才适合当领导。）
 5. 失敗した時**こそ**、成長のチャンスだ。（正是失败的时候，才是成长的机会。）
 6. 健康で**あればこそ**、何でもできる。（正因为健康，什么都能做。）
@@ -182,14 +182,14 @@ Expresses the speaker's emotion or evaluation at the beginning of a sentence, fo
 | 接续 | 形式 |
 |------|------|
 | 动词辞书形 | 会う + ごとに |
-| 名词 | 3日 + ごとに |
+| 名词 | 信号 + ごとに |
 | 数量词 | 10分 + ごとに |
 :::
 :::en
 | Conjugation | Form |
 |------|------|
 | Verb dictionary form | 会う + ごとに |
-| Noun | 3日 + ごとに |
+| Noun | 信号 + ごとに |
 | Counter | 10分 + ごとに |
 :::
 

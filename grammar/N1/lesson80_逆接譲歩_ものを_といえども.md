@@ -435,7 +435,7 @@ Restrictions:
 - な形容詞・名詞 + だろう／であろう + が／と（不便だろうが、学生であろうと）
 - 常和疑问词或「いくら」「たとえ」「どんなに」连用
 
-※ 「〜（よ）うが〜（よ）うが」「〜（よ）うが〜まいが」这种成对的形式见第78课。
+※ 两个不同的动词并列（「泣こうがわめこうが」）也是本课的用法；同一个动词肯定、否定成对的「〜（よ）うが〜まいが」见第78课。
 :::
 :::en
 - Verb volitional form + が／と (書こうが, 食べようと, 来ようが, しようと)
@@ -443,7 +443,7 @@ Restrictions:
 - na-adjective / noun + だろう／であろう + が／と (不便だろうが, 学生であろうと)
 - Often with a question word or 「いくら」, 「たとえ」, 「どんなに」
 
-※ The paired forms 「〜（よ）うが〜（よ）うが」 and 「〜（よ）うが〜まいが」 are in Lesson 78.
+※ Two different verbs side by side (「泣こうがわめこうが」) work the same way as here; the positive-and-negative pair of one verb, 「〜（よ）うが〜まいが」, is in Lesson 78.
 :::
 
 ### 含义||Meaning

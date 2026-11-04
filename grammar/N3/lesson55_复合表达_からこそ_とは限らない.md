@@ -262,14 +262,14 @@ This lesson covers "compound expressions" — fixed patterns formed by combining
 
 ### 例句||Example Sentences
 :::zh
-1. 高い**とは限らない**。安くていいものもある。（不一定贵。也有便宜又好的东西。）
+1. いいものが高い**とは限らない**。安くていいものもある。（好东西不一定贵。也有便宜又好的东西。）
 2. 有名な店がおいしい**とは限らない**。（有名的店未必好吃。）
 3. お金があれば幸せだ**とは限らない**。（有钱未必幸福。）
 4. 若いからといって、元気だ**とは限らない**。（不能因为年轻就说一定健康。）
 5. 必ずしも計画通りにいく**とは限らない**。（未必能按计划进行。）
 :::
 :::en
-1. 高い**とは限らない**。安くていいものもある。(It's not necessarily expensive. There are good cheap options too.)
+1. いいものが高い**とは限らない**。安くていいものもある。(Good things aren't necessarily expensive. There are good cheap ones too.)
 2. 有名な店がおいしい**とは限らない**。(Famous restaurants aren't necessarily delicious.)
 3. お金があれば幸せだ**とは限らない**。(Having money doesn't necessarily mean happiness.)
 4. 若いからといって、元気だ**とは限らない**。(Just because someone is young doesn't mean they're healthy.)
