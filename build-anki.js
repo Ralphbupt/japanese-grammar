@@ -582,7 +582,7 @@ async function main() {
 <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
 <link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<meta name="description" content="免费下载 JLPT N5/N4/N3/N2/N1 日语语法 Anki 卡组：.apkg 一键导入，含例句日语音频和挖空练习（支持 AnkiDroid / AnkiMobile），共 ${total} 张。Free JLPT N5–N1 Japanese grammar Anki decks with example audio &amp; cloze practice (.apkg &amp; TSV, ${total} cards, works with AnkiDroid &amp; AnkiMobile).">
+<meta name="description" content="免费 JLPT N5–N1 日语语法 Anki 卡组，含例句音频和挖空练习（.apkg / TSV，共 ${total} 张）。Free JLPT grammar Anki decks with audio and cloze practice.">
 <link rel="canonical" href="${SITE}anki/">
 <meta property="og:title" content="日语语法 Anki 卡组下载（.apkg）| JLPT N5–N1 Grammar Anki Decks">
 <meta property="og:description" content="免费 JLPT 日语语法 Anki 卡组 / Free JLPT Japanese grammar Anki decks (.apkg, ${total} cards), covering N5–N1.">
