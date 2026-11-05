@@ -32,7 +32,7 @@
   function track(name, p) { try { if (window.gaEvent) window.gaEvent(name, p); } catch (e) {} }
 
   // ─── Storage ───
-  function fresh() { return { v: 1, answers: {}, review: {}, reported: [], session: null, days: {}, prefs: { size: 10 }, mock: {}, cards: {}, cardDays: {} }; }
+  function fresh() { return { v: 1, answers: {}, review: {}, reported: [], session: null, days: {}, prefs: {}, mock: {}, cards: {}, cardDays: {} }; }
   function load() {
     try {
       var s = JSON.parse(localStorage.getItem(KEY));
@@ -221,9 +221,22 @@
     // The % is the last RECENT answers, not all of them — say so, or it reads as overall accuracy.
     return '<span class="q-acc' + (a.pct < 60 ? ' q-acc-low' : '') + '" title="' + t('最近 ' + a.n + ' 次作答的正确率', 'Accuracy over the last ' + a.n + ' answers') + '"><small class="q-acc-n">' + t('近 ' + a.n + ' 题', 'last ' + a.n) + '</small><span class="q-bar"><span style="width:' + a.pct + '%"></span></span>' + a.pct + '%</span>';
   }
+  // Phones: the sticky 下一题 sits over whatever follows the options, which after
+  // a wrong answer is the AI button. Scroll just far enough to clear it.
+  function keepAiInView() {
+    if (window.innerWidth > 760) return;
+    var fb = root().querySelector('.q-feedback'), next = fb && fb.querySelector('.q-next');
+    var last = fb && (fb.querySelector('.q-ai') || fb.querySelector('.q-verdict'));
+    if (!next || !last) return;
+    var gap = last.getBoundingClientRect().bottom + 12 - next.getBoundingClientRect().top;
+    if (gap > 0) window.scrollBy({ top: gap, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+  }
+  // Set size: the reader's choice, else 5 on listening-only pages (a recording
+  // takes far longer than a written question), else 10.
+  function setSize() { return S.prefs.size || (ALL.length && ALL.every(isCk) ? 5 : 10); }
   function home() {
     view(true);
-    var size = S.prefs.size || 10;
+    var size = setSize();
     var d = due().length, r = inReview().length;
     var h = '';
     // A set belongs to the page it was started on (ids can be on two levels' pages).
@@ -740,6 +753,7 @@
     if (!left.length) h += '<div class="q-next"><button class="q-btn q-btn-primary q-btn-big" data-act="next"' + (past != null ? ' data-k="' + past + '"' : '') + '>' +
       (past != null && past >= S.session.i ? (S.session.i >= S.session.ids.length ? t('看结果', 'See results') : t('回到当前题', 'Back to where I was')) : S.session.i >= S.session.ids.length && past == null ? t('看结果', 'See results') : t('下一题', 'Next')) + ' →</button></div>';
     root().querySelector('.q-feedback').innerHTML = h;
+    keepAiInView();
     if (left.length) cur = curs[left[0]];   // the keyboard moves on to the next question of the passage
   }
 
@@ -822,7 +836,7 @@
   }
 
   function startKind(kind, k) {
-    var n = S.prefs.size || 10;
+    var n = setSize();
     if (kind === 'daily') start('daily', daily(n));
     else if (kind === 'type') start('type', subset(function (q) { return onLevel(q) && q.type === k; }, n), k);
     else if (kind === 'pre') start('pre', subset(function (q) { return q.pre; }, n));
