@@ -26,6 +26,7 @@ new_sqlite_classes = ["Quota"]
 
 # Secrets (set once, never committed):
 #   npx wrangler secret put IP_SALT      # any random string
+#   npx wrangler secret put ANTHROPIC_API_KEY   # Claude Haiku; unset = Workers AI answers
 
 # Reader feedback (POST /feedback). Created 2026-10-28 with:
 #   npx wrangler d1 create jpnotes-feedback

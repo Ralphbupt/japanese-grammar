@@ -14,5 +14,8 @@
     "marked": "^15.0.0",
     "qrcode-generator": "^1.4.4",
     "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^1.5.0"
   }
 }

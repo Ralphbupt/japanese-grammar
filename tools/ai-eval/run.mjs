@@ -14,6 +14,8 @@
  *                 the site's free relay uses — run few models a day.
  *                 Called like the relay: reasoning low (gpt-oss), max_tokens 2048.
  * gemini:<model>  needs GEMINI_API_KEY.
+ * anthropic:<model>  Messages API via @anthropic-ai/sdk, needs ANTHROPIC_API_KEY.
+ *                 --effort sets output_config.effort (Haiku 5.5 defaults to medium).
  * openai-compatible: <base>|<model> with OPENAI_COMPAT_KEY, for anything else.
  */
 import fs from 'node:fs';
@@ -42,9 +44,26 @@ function endpoint(spec) {
   if (kind === 'cf') return { url: `https://api.cloudflare.com/client/v4/accounts/${ACCOUNT}/ai/v1/chat/completions`, key: cfToken(), model, extra: /gpt-oss/.test(model) ? { reasoning_effort: effort } : {} };
   if (kind === 'gemini') return { url: 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions', key: process.env.GEMINI_API_KEY, model, extra: {} };
   if (kind === 'openai-compatible') { const [base, m] = model.split('|'); return { url: base.replace(/\/$/, '') + '/chat/completions', key: process.env.OPENAI_COMPAT_KEY, model: m, extra: {} }; }
+  if (kind === 'anthropic') return { anthropic: true, model };
   throw new Error('unknown model spec ' + spec);
 }
+async function askAnthropic(ep, messages) {
+  const { default: Anthropic } = await import('@anthropic-ai/sdk');
+  const client = new Anthropic();
+  const t0 = Date.now();
+  const system = messages.filter((m) => m.role === 'system').map((m) => m.content).join('\n\n');
+  try {
+    const r = await client.messages.create({ model: ep.model, max_tokens: MAX_TOKENS, ...(system ? { system } : {}), output_config: { effort },
+      messages: messages.filter((m) => m.role !== 'system').map(({ role, content }) => ({ role, content })) });
+    const answer = r.content.filter((b) => b.type === 'text').map((b) => b.text).join('');
+    return { answer, usage: { ...r.usage, stop_reason: r.stop_reason }, ms: Date.now() - t0 };
+  } catch (e) {
+    if (e instanceof Anthropic.APIError) return { error: `HTTP ${e.status} ${e.message}`.slice(0, 300), ms: Date.now() - t0 };
+    throw e;
+  }
+}
 async function ask(ep, messages) {
+  if (ep.anthropic) return askAnthropic(ep, messages);
   const t0 = Date.now();
   const r = await fetch(ep.url, { method: 'POST', headers: { Authorization: 'Bearer ' + ep.key, 'Content-Type': 'application/json' },
     body: JSON.stringify({ model: ep.model, messages: messages.map(({ role, content }) => ({ role, content })), max_tokens: MAX_TOKENS, ...ep.extra }) });
@@ -74,7 +93,7 @@ for (const spec of args) {
       `**Expected:** ${c.expect}`, '', r.error || r.answer, '', `_(${r.ms} ms${r.usage ? ', ' + JSON.stringify(r.usage) : ''})_`, '');
     process.stdout.write(issues.length ? '!' : '.');
   }
-  const dir = path.join(DIR, 'results', day), base = spec.replace(/[^a-z0-9.-]+/gi, '_') + (/gpt-oss/.test(spec) && effort !== 'low' ? '_' + effort : '');
+  const dir = path.join(DIR, 'results', day), base = spec.replace(/[^a-z0-9.-]+/gi, '_') + (/gpt-oss/.test(spec) && effort !== 'low' || ep.anthropic ? '_' + effort : '');
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, base + '.md'), out.join('\n'));
   fs.writeFileSync(path.join(dir, base + '.json'), JSON.stringify(json, null, 1));
