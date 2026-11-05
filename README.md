@@ -89,7 +89,6 @@ Lessons are markdown files in `grammar/N{level}/lessonNN_topic.md`. The format u
 - After you add or change an example sentence, run `npm run build` and then `python build-audio.py` to generate its audio. Audio files are named by a hash of the sentence, so editing or reordering examples never mixes them up.
 - To add a lesson, also add its sidebar title (`JA_TITLES`) and keywords (`LESSON_KEYWORDS`) in `build.js`, and its page titles in `seo-titles.js`.
 
-[CLAUDE.md](CLAUDE.md) documents the full lesson format, the build pipeline and every site feature.
 
 ### Adding practice questions
 
