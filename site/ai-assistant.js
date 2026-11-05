@@ -46,7 +46,7 @@
   var PROVIDERS = {
     jpnotes: { group: 'site', name: '本站免费 jpnotes', kind: 'openai', needsKey: false,
       base: 'https://ai.jpnotes.dev/v1', model: 'claude-haiku-5-5', models: ['claude-haiku-5-5'],
-      hintZh: '本站提供的免费模型（Anthropic Claude Haiku 5.5），不用 key，每人每天 50 次；额度用完或出错时换成备用模型。问题经本站的中转服务转给模型，本站不记录内容。', hintEn: 'A free model provided by this site (Anthropic Claude Haiku 5.5): no key, 50 questions per reader per day, with backup models if it runs out or fails. Questions pass through the site\u2019s relay, which does not log them.' },
+      hintZh: '本站提供的免费模型（Anthropic Claude Haiku 5.5），不用 key，每人每天 50 次；中国大陆、港澳等 Claude 不支持的地区，以及额度用完或出错时，由备用模型回答。问题经本站的中转服务转给模型，本站不记录内容。', hintEn: 'A free model provided by this site (Anthropic Claude Haiku 5.5): no key, 50 questions per reader per day. In regions Claude does not support, or if it runs out or fails, a backup model answers. Questions pass through the site\u2019s relay, which does not log them.' },
     anthropic: { keyUrl: 'https://console.anthropic.com/settings/keys', group: 'intl', name: 'Claude (Anthropic)', kind: 'anthropic', needsKey: true,
       base: 'https://api.anthropic.com', model: 'claude-opus-5', models: ['claude-opus-5', 'claude-sonnet-5', 'claude-fable-5-1', 'claude-haiku-4-5', 'claude-opus-4-8', 'claude-sonnet-4-6'],
       hintZh: '在 console.anthropic.com 创建 API key（按用量付费，与 claude.ai 订阅无关）。',
@@ -642,7 +642,7 @@
         var prof = cfg.profiles[k], on = k === cfg.active, p = PROVIDERS[k];
         html += '<div class="ai-menu-head">' + esc(p.name) + (p.group === 'local' ? ' · ' + esc(loadModelCache()[k] ? t('本机已安装', 'installed here') : t('未能读取已安装列表', 'could not read installed list')) : '') + '</div>' +
           modelsFor(k, prof.model).slice(0, on ? 40 : 6).map(function (m) {
-            return '<button type="button" class="ai-menu-item' + (on && m === prof.model ? ' sel' : '') + '" data-p="' + k + '" data-m="' + esc(m) + '">' + esc(m) + '</button>';
+            return '<button type="button" class="ai-menu-item' + (on && m === prof.model ? ' sel' : '') + '" data-p="' + k + '" data-m="' + esc(m) + '">' + esc(k === 'jpnotes' ? t('免费模型', 'Free model') : m) + '</button>';
           }).join('');
       });
       menu.innerHTML = html +
@@ -751,7 +751,7 @@
   function autosize() { inputEl.style.height = 'auto'; inputEl.style.height = Math.min(inputEl.scrollHeight + 2, window.innerHeight * 0.4) + 'px'; }
 
   function renderAll() {
-    modelLabel.textContent = (PROVIDERS[cfg.active] || { name: cfg.active }).name.split(' ')[0] + ' · ' + active().model + (cfg.effort ? ' · ' + effortLabel(cfg.effort) : '') + ' ▾';
+    modelLabel.textContent = (PROVIDERS[cfg.active] || { name: cfg.active }).name.split(' ')[0] + (cfg.active === 'jpnotes' ? '' : ' · ' + active().model) + (cfg.effort ? ' · ' + effortLabel(cfg.effort) : '') + ' ▾';
     msgsEl.innerHTML = '';
     panel.querySelector('.ai-input').hidden = false;
     panel.querySelector('.ai-clear').hidden = !history.length;
@@ -1082,7 +1082,7 @@
         keyLink = settingsEl.querySelector('.ai-keylink'), removeBtn = settingsEl.querySelector('.ai-remove');
     function openModelMenu() {
       var items = modelsFor(sel.value, model.value.trim()), cached = !!loadModelCache()[sel.value];
-      ddMenu.innerHTML = items.map(function (m) { return '<button type="button" class="ai-menu-item' + (m === model.value.trim() ? ' sel' : '') + '" data-m="' + esc(m) + '">' + esc(m) + '</button>'; }).join('') +
+      ddMenu.innerHTML = items.map(function (m) { return '<button type="button" class="ai-menu-item' + (m === model.value.trim() ? ' sel' : '') + '" data-m="' + esc(m) + '">' + esc(k === 'jpnotes' ? t('免费模型', 'Free model') : m) + '</button>'; }).join('') +
         '<div class="ai-menu-sep"></div>' +
         '<button type="button" class="ai-menu-item ai-menu-fetch">⟳ ' + esc(cached ? t('重新获取全部模型', 'Refresh the full list') : t('从服务商获取全部模型', 'Fetch every model from the provider')) + '</button>' +
         (cached ? '' : '<div class="ai-menu-head">' + esc(t('以上只是常用预设，完整列表请点获取。', 'These are common presets; fetch for the full list.')) + '</div>');
