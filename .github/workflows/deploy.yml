@@ -36,6 +36,13 @@ jobs:
         with:
           python-version: "3.12"
 
+      # OG images are rendered from SVG at build time: without a CJK font the
+      # Chinese and Japanese text comes out as boxes. A failure here shouldn't
+      # block a deploy.
+      - name: Install CJK font
+        continue-on-error: true
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk
+
       - run: pip install genanki
 
       - run: npm ci

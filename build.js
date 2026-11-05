@@ -4391,11 +4391,11 @@ Each \`/lessonNN/\` page contains:
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect x="40" y="40" width="1120" height="550" rx="20" fill="none" stroke="#e94560" stroke-width="2" opacity="0.3"/>
-  <text x="600" y="220" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="96" fill="#ffffff" font-weight="bold">日语语法笔记</text>
-  <text x="600" y="320" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="42" fill="#c8c8d8">Japanese Grammar Notes</text>
-  <text x="600" y="400" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="36" fill="#e94560">N5 → N4 → N3 → N2 → N1</text>
-  <text x="600" y="470" text-anchor="middle" font-family="sans-serif" font-size="24" fill="#888888">Free · Bilingual · N5 → N1 · Audio</text>
-  <text x="600" y="550" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#666666">${SITE_HOST}</text>
+  <text x="600" y="220" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="96" fill="#ffffff" font-weight="bold">日语语法笔记</text>
+  <text x="600" y="320" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="42" fill="#c8c8d8">Japanese Grammar Notes</text>
+  <text x="600" y="400" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="36" fill="#e94560">N5 → N4 → N3 → N2 → N1</text>
+  <text x="600" y="470" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="24" fill="#888888">Free · Bilingual · N5 → N1 · Audio</text>
+  <text x="600" y="550" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="20" fill="#666666">${SITE_HOST}</text>
 </svg>`;
   fs.writeFileSync(path.join(__dirname, "dist/og-image.svg"), ogSvg, "utf-8");
 
@@ -4424,10 +4424,10 @@ Each \`/lessonNN/\` page contains:
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect x="40" y="40" width="1120" height="550" rx="20" fill="none" stroke="#e94560" stroke-width="2" opacity="0.3"/>
-  <text x="600" y="180" text-anchor="middle" font-family="sans-serif" font-size="48" fill="#e94560" font-weight="bold">JLPT ${level}</text>
-  <text x="600" y="310" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="64" fill="#ffffff" font-weight="bold">${escJaTitle}</text>
-  <text x="600" y="430" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="32" fill="#c8c8d8">Japanese Grammar Notes</text>
-  <text x="600" y="550" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#666666">${SITE_HOST}</text>
+  <text x="600" y="180" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="48" fill="#e94560" font-weight="bold">JLPT ${level}</text>
+  <text x="600" y="310" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="64" fill="#ffffff" font-weight="bold">${escJaTitle}</text>
+  <text x="600" y="430" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="32" fill="#c8c8d8">Japanese Grammar Notes</text>
+  <text x="600" y="550" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="20" fill="#666666">${SITE_HOST}</text>
 </svg>`;
     await sharp(Buffer.from(lessonOgSvg))
       .resize(1200, 630)
@@ -4467,10 +4467,10 @@ Each \`/lessonNN/\` page contains:
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect x="40" y="40" width="1120" height="550" rx="20" fill="none" stroke="${p.accent}" stroke-width="2" opacity="0.3"/>
-  <text x="600" y="200" text-anchor="middle" font-family="sans-serif" font-size="48" fill="${p.accent}" font-weight="bold">${esc(p.topLabel)}</text>
-  <text x="600" y="330" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="80" fill="#ffffff" font-weight="bold">${esc(p.mainTitle)}</text>
-  <text x="600" y="430" text-anchor="middle" font-family="sans-serif" font-size="32" fill="#c8c8d8">${esc(p.sub)}</text>
-  <text x="600" y="550" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#666666">${SITE_HOST}</text>
+  <text x="600" y="200" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="48" fill="${p.accent}" font-weight="bold">${esc(p.topLabel)}</text>
+  <text x="600" y="330" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="80" fill="#ffffff" font-weight="bold">${esc(p.mainTitle)}</text>
+  <text x="600" y="430" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="32" fill="#c8c8d8">${esc(p.sub)}</text>
+  <text x="600" y="550" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="20" fill="#666666">${SITE_HOST}</text>
 </svg>`;
     await sharp(Buffer.from(svg))
       .resize(1200, 630)
