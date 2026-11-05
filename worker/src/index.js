@@ -45,7 +45,7 @@ import Anthropic from '@anthropic-ai/sdk';
 
 const CLAUDE_MODEL = 'claude-haiku-5-5';
 const CLAUDE_MAX_TOKENS = 4096;                       // thinking counts too: 2048 cut answers off in tools/ai-eval
-const CLAUDE_DAILY_MICRO = 3000000;                   // $3 a day, so a bad day can't eat the month's $100 of credits
+const CLAUDE_DAILY_MICRO = 1000000;                   // $1 a day, so a bad day can't eat the month's $100 of credits
 const claudeMicro = (input, output) => input * 0.1 + output * 0.5;   // $0.10 / $0.50 per million tokens, in millionths of a dollar
 // Anthropic's supported regions (anthropic.com/supported-countries, Supported
 // Regions Policy effective 2026-11-12), ISO codes, plus common territories of
