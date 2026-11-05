@@ -1,12 +1,14 @@
 /* jpnotes free AI relay — ai.jpnotes.dev
  *
- * Lets readers use the 问 AI panel without their own API key. The model runs
- * on Cloudflare Workers AI: no third-party key, and the Free plan's daily
- * neuron allocation is the budget (running out errors, it never bills). The
- * browser talks to this Worker with the same OpenAI-compatible shape it uses
- * for every other provider:
+ * Lets readers use the 问 AI panel without their own API key. Claude Haiku 5.5
+ * answers, paid from the monthly API credits (secret ANTHROPIC_API_KEY); it
+ * beat the Workers AI model 11–12 to ~6 of 13 in tools/ai-eval, 2026-11-05.
+ * When the key is unset, the credits or the daily cap run out, or Anthropic
+ * fails before the first token, the older chain answers: Workers AI on the
+ * Free plan's neurons, then the backups below. The browser talks to this
+ * Worker with the same OpenAI-compatible shape it uses for every other provider:
  *
- *   POST /v1/chat/completions   → Workers AI, model fixed
+ *   POST /v1/chat/completions   → Claude, else Workers AI; model fixed
  *   GET  /v1/models             → the one model on offer
  *   POST /feedback              → a reader's note from the practice pages, into D1
  *
@@ -14,9 +16,9 @@
  *   - only browsers on jpnotes.dev — CORS + Origin check (localhost only under wrangler dev)
  *   - one fixed model, so the worst an abuser can do is use up the quota
  *   - request size and reply length capped
- *   - per-IP limits: a burst limit per minute and a daily cap, plus a daily
- *     neuron budget for the whole site, counted in a Durable Object from the
- *     usage the model reports (IPs are stored hashed, per day)
+ *   - per-IP limits: a burst limit per minute and a daily cap, plus daily
+ *     site-wide budgets (Claude dollars, Workers AI neurons), counted in a
+ *     Durable Object from the usage the model reports (IPs are stored hashed, per day)
  *
  * Saving quota:
  *   - reasoning effort fixed at medium (reasoning tokens are billed as output;
@@ -35,10 +37,16 @@
  * Otherwise nothing is logged: no questions, answers or IPs. The only record is a
  * usage counter in Analytics Engine (dataset jpnotes_ai_usage), one row per
  * request: which button sent it (the panel's `source`), first question or
- * follow-up, reader or the site owner (blob4), what happened (cache / model / fallback-groq|cerebras / limited-ip-day|ip-minute|budget / error) and the neurons
- * spent.
+ * follow-up, reader or the site owner (blob4), what happened (cache / claude / claude-error / model / fallback-groq|cerebras / limited-ip-day|ip-minute|budget / error), the neurons
+ * spent and Claude's cost in millionths of a dollar. claude-error is an extra row: that request then also gets a row for whichever model answered.
  */
 
+import Anthropic from '@anthropic-ai/sdk';
+
+const CLAUDE_MODEL = 'claude-haiku-5-5';
+const CLAUDE_MAX_TOKENS = 4096;                       // thinking counts too: 2048 cut answers off in tools/ai-eval
+const CLAUDE_DAILY_MICRO = 3000000;                   // $3 a day, so a bad day can't eat the month's $100 of credits
+const claudeMicro = (input, output) => input * 0.1 + output * 0.5;   // $0.10 / $0.50 per million tokens, in millionths of a dollar
 const MODEL = '@cf/openai/gpt-oss-120b';
 const MODEL_NAME = 'gpt-oss-120b';
 const MAX_BODY = 120000;                              // bytes; a whole lesson as context is ~30k chars
@@ -86,7 +94,7 @@ export default {
     if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: cors });
 
     const path = new URL(req.url).pathname.replace(/\/+$/, '');
-    if (req.method === 'GET' && path === '/v1/models') return json({ data: [{ id: MODEL_NAME }] }, 200, cors);
+    if (req.method === 'GET' && path === '/v1/models') return json({ data: [{ id: env.ANTHROPIC_API_KEY ? CLAUDE_MODEL : MODEL_NAME }] }, 200, cors);
     if (req.method === 'POST' && path === '/feedback') return feedback(req, env, cors);
     if (req.method !== 'POST' || path !== '/v1/chat/completions') return json({ error: { message: 'Not found' } }, 404, cors);
 
@@ -105,9 +113,9 @@ export default {
     // The site owner's own browser says so (it opted out of GA), and local
     // development is the owner too, so reports can leave both out.
     const who = body.owner === true || !origin.startsWith('https://') ? 'owner' : 'reader';
-    const count = (outcome, neurons) => { try { env.USAGE && env.USAGE.writeDataPoint({ indexes: [source], blobs: [source, turn, outcome, who], doubles: [1, neurons || 0] }); } catch (e) {} };
+    const count = (outcome, neurons, micro) => { try { env.USAGE && env.USAGE.writeDataPoint({ indexes: [source], blobs: [source, turn, outcome, who], doubles: [1, neurons || 0, micro || 0] }); } catch (e) {} };
     const cacheable = stream && messages.length === 2 && messages[0].role === 'system' && messages[1].role === 'user';
-    const cacheKey = cacheable ? new Request('https://ai.jpnotes.dev/cache/' + await sha256(MODEL + '\n' + JSON.stringify(messages))) : null;
+    const cacheKey = cacheable ? new Request('https://ai.jpnotes.dev/cache/' + await sha256((env.ANTHROPIC_API_KEY ? CLAUDE_MODEL : MODEL) + '\n' + JSON.stringify(messages))) : null;
     const headers = new Headers(cors);
     headers.set('Cache-Control', 'no-store');
     headers.set('Content-Type', stream ? 'text/event-stream' : 'application/json');
@@ -123,11 +131,29 @@ export default {
     if (!verdict.ok) { count('limited-' + (verdict.why || 'ip')); return json({ error: { message: verdict.message } }, 429, cors); }
 
     const params = { messages, stream, max_tokens: Math.min(+body.max_tokens || MAX_TOKENS, MAX_TOKENS) };
-    const onCached = (done) => {
+    const putCache = (done) => {
       if (cacheKey && done.content && done.finished) {
         ctx.waitUntil(caches.default.put(cacheKey, new Response(JSON.stringify({ content: done.content, reasoning: done.reasoning }), { headers: { 'Cache-Control': 'public, max-age=' + CACHE_TTL } })));
       }
     };
+    // A fallback's answer stays out of Claude's cache slot: it would replay for three days.
+    const onCached = (done) => { if (!env.ANTHROPIC_API_KEY) putCache(done); };
+    if (env.ANTHROPIC_API_KEY && !verdict.claudeGone) {
+      const client = new Anthropic({ apiKey: env.ANTHROPIC_API_KEY, maxRetries: 0, timeout: 20000 });
+      const claude = claudeParams(messages, Math.min(+body.max_tokens || CLAUDE_MAX_TOKENS, CLAUDE_MAX_TOKENS));
+      const paid = (micro) => { count('claude', 0, micro); ctx.waitUntil(quota.fetch('https://quota/claude-spend', { method: 'POST', body: String(micro) })); };
+      try {
+        if (stream) {
+          const events = await client.messages.create({ ...claude, stream: true });
+          return new Response(claudeSSE(events, ctx, (done) => { paid(done.micro); putCache(done); }), { status: 200, headers });
+        }
+        const r = await client.messages.create(claude);
+        paid(claudeMicro(r.usage.input_tokens, r.usage.output_tokens));
+        return new Response(JSON.stringify({ choices: [{ index: 0, message: { role: 'assistant', content: r.content.filter((b) => b.type === 'text').map((b) => b.text).join('') } }] }), { status: 200, headers });
+      } catch (e) {
+        count('claude-error');   // out of credit, rate limited or down: Workers AI answers
+      }
+    }
     // Workers AI can't answer: try the backups, else say why.
     const backup = async (gone) => {
       const res = await viaFallback(env, quota, params, count);
@@ -185,6 +211,45 @@ async function feedback(req, env, cors) {
   await env.FEEDBACK.prepare('INSERT INTO feedback (at, day, ip, kind, page, qid, choice, reason, lang, text) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)')
     .bind(new Date().toISOString(), day, ip, kind, page, qid, choice, reason, lang, text || null).run();
   return json({ ok: true }, 200, cors);
+}
+
+function claudeParams(messages, max_tokens) {
+  const system = messages.filter((m) => m.role === 'system').map((m) => m.content).join('\n\n');
+  return { model: CLAUDE_MODEL, max_tokens, ...(system ? { system } : {}), thinking: { type: 'adaptive', display: 'summarized' }, output_config: { effort: 'medium' },
+    messages: messages.filter((m) => m.role !== 'system') };
+}
+
+// Claude's stream as the OpenAI-shaped chunks the panel reads. An error before
+// the first event never gets here (the caller falls back); one later ends the
+// reply with the panel's error message. onDone runs once, whatever happened.
+function claudeSSE(events, ctx, onDone) {
+  const { readable, writable } = new TransformStream();
+  const writer = writable.getWriter(), enc = new TextEncoder();
+  const send = (obj) => writer.write(enc.encode('data: ' + JSON.stringify(obj) + '\n\n'));
+  const delta = (d) => send({ choices: [{ index: 0, delta: d }] });
+  const failed = (message) => send({ error: { message } });
+  const done = { content: '', reasoning: '', finished: false, micro: 0 };
+  ctx.waitUntil((async () => {
+    let input = 0, output = 0, stop = null;
+    try {
+      for await (const e of events) {
+        if (e.type === 'message_start') input = e.message.usage.input_tokens;
+        else if (e.type === 'message_delta') { output = e.usage.output_tokens; stop = e.delta.stop_reason; }
+        else if (e.type === 'content_block_delta' && e.delta.type === 'text_delta') { done.content += e.delta.text; await delta({ content: e.delta.text }); }
+        else if (e.type === 'content_block_delta' && e.delta.type === 'thinking_delta') { done.reasoning += e.delta.thinking; await delta({ reasoning: e.delta.thinking }); }
+      }
+      done.finished = stop === 'end_turn';
+      if (stop === 'refusal' && !done.content) await failed('模型拒绝了这个请求。 / The model declined this request.');
+      await writer.write(enc.encode('data: [DONE]\n\n'));
+      await writer.close();
+    } catch (e) {
+      events.controller.abort();                       // the reader pressed Stop, or the upstream broke
+      try { await failed('回答中断了，请重试。 / The answer was cut off; please try again.'); await writer.close(); } catch (e2) {}
+    }
+    done.micro = claudeMicro(input, output);
+    onDone(done);
+  })());
+  return readable;
 }
 
 function quotaGone(e) { return /4006|neuron|allocation/i.test(String(e && e.message)); }
@@ -293,12 +358,18 @@ export class Quota {
     this.sql.exec('CREATE TABLE IF NOT EXISTS hits (ip TEXT PRIMARY KEY, day INTEGER NOT NULL, recent TEXT NOT NULL)');
         this.sql.exec('CREATE TABLE IF NOT EXISTS spent (id INTEGER PRIMARY KEY CHECK (id = 1), neurons REAL NOT NULL)');
     this.sql.exec('CREATE TABLE IF NOT EXISTS backup (id INTEGER PRIMARY KEY CHECK (id = 1), n INTEGER NOT NULL)');
+    this.sql.exec('CREATE TABLE IF NOT EXISTS claude (id INTEGER PRIMARY KEY CHECK (id = 1), micro REAL NOT NULL)');
   }
   async fetch(req) {
     const path = new URL(req.url).pathname, now = Date.now();
     if (path === '/spend') {
       const n = +(await req.text()) || 0;
       this.sql.exec('INSERT INTO spent (id, neurons) VALUES (1, ?) ON CONFLICT(id) DO UPDATE SET neurons = neurons + excluded.neurons', n);
+      return Response.json({ ok: true });
+    }
+    if (path === '/claude-spend') {
+      const n = +(await req.text()) || 0;
+      this.sql.exec('INSERT INTO claude (id, micro) VALUES (1, ?) ON CONFLICT(id) DO UPDATE SET micro = micro + excluded.micro', n);
       return Response.json({ ok: true });
     }
     if (path === '/fallback') {
@@ -308,6 +379,7 @@ export class Quota {
     }
     const ip = await req.text();
     const spent = (this.sql.exec('SELECT neurons FROM spent WHERE id = 1').toArray()[0] || { neurons: 0 }).neurons;
+    const paid = (this.sql.exec('SELECT micro FROM claude WHERE id = 1').toArray()[0] || { micro: 0 }).micro;
     const row = this.sql.exec('SELECT day, recent FROM hits WHERE ip = ?', ip).toArray()[0];
     const day = row ? row.day : 0;
     const recent = (row ? JSON.parse(row.recent) : []).filter((t) => now - t < 60000);
@@ -317,7 +389,7 @@ export class Quota {
     this.sql.exec('INSERT INTO hits (ip, day, recent) VALUES (?, ?, ?) ON CONFLICT(ip) DO UPDATE SET day = excluded.day, recent = excluded.recent', ip, day + 1, JSON.stringify(recent));
     if (!(await this.state.storage.getAlarm())) await this.state.storage.setAlarm(now + 2 * 86400000);
     // Per-reader limits still apply when the site budget is gone: the request then goes to a backup.
-    return Response.json({ ok: true, budgetGone: spent >= DAILY_NEURONS });
+    return Response.json({ ok: true, budgetGone: spent >= DAILY_NEURONS, claudeGone: paid >= CLAUDE_DAILY_MICRO });
   }
   async alarm() { await this.state.storage.deleteAll(); }
 }

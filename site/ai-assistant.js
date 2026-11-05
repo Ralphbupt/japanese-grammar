@@ -1,7 +1,7 @@
 /* AI tutor side panel — "问 AI / Ask AI".
  *
  * A right-hand drawer on every lesson page. Out of the box it uses the site's
- * free relay (ai.jpnotes.dev, see worker/), which serves a free GLM model with
+ * free relay (ai.jpnotes.dev, see worker/), which serves Claude Haiku with
  * per-reader daily limits. Readers can instead add their own API key (stored
  * only in this browser); the browser then calls that provider directly and
  * nothing goes through jpnotes.dev. The current lesson's text (or
@@ -45,8 +45,8 @@
   // settings fetches the live list from {base}/models.
   var PROVIDERS = {
     jpnotes: { group: 'site', name: '本站免费 jpnotes', kind: 'openai', needsKey: false,
-      base: 'https://ai.jpnotes.dev/v1', model: 'gpt-oss-120b', models: ['gpt-oss-120b'],
-      hintZh: '本站提供的免费模型（OpenAI gpt-oss-120b，运行在 Cloudflare 上），不用 key，每人每天 50 次。问题经本站的中转服务转给模型，不记录内容。', hintEn: 'A free model provided by this site (OpenAI gpt-oss-120b, running on Cloudflare): no key, 50 questions per reader per day. Questions pass through the site\u2019s relay and are not logged.' },
+      base: 'https://ai.jpnotes.dev/v1', model: 'claude-haiku-5-5', models: ['claude-haiku-5-5'],
+      hintZh: '本站提供的免费模型（Anthropic Claude Haiku 5.5），不用 key，每人每天 50 次；额度用完或出错时换成备用模型。问题经本站的中转服务转给模型，本站不记录内容。', hintEn: 'A free model provided by this site (Anthropic Claude Haiku 5.5): no key, 50 questions per reader per day, with backup models if it runs out or fails. Questions pass through the site\u2019s relay, which does not log them.' },
     anthropic: { keyUrl: 'https://console.anthropic.com/settings/keys', group: 'intl', name: 'Claude (Anthropic)', kind: 'anthropic', needsKey: true,
       base: 'https://api.anthropic.com', model: 'claude-opus-5', models: ['claude-opus-5', 'claude-sonnet-5', 'claude-fable-5-1', 'claude-haiku-4-5', 'claude-opus-4-8', 'claude-sonnet-4-6'],
       hintZh: '在 console.anthropic.com 创建 API key（按用量付费，与 claude.ai 订阅无关）。',
@@ -132,6 +132,7 @@
     if (!raw.profiles || !raw.profiles[raw.active]) return null;
     // Configs saved before the free relay existed: offer it in the model menu too.
     if (!raw.profiles.jpnotes) raw.profiles.jpnotes = defaultCfg().profiles.jpnotes;
+    raw.profiles.jpnotes.model = PROVIDERS.jpnotes.model;   // the relay picks the model; saved configs may name an older one
     return raw;
   }
   // No saved config → the site's free relay, so the panel works with no setup.
