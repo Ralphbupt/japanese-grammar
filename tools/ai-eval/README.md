@@ -29,3 +29,14 @@ Answers go to `results/<date>/<model>.md` (gitignored). The string checks only c
 |---|---|---|
 | claude-haiku-5-5, effort medium | 11 of 13; 12 at `max_tokens` 4096 | ~7 s; one answer cut off at 2048 (fine at 4096, 15 s); wrong: お忙しいところ "can't take を", invented お忙しいところに; ~$0.0008 per question |
 | claude-haiku-5-5, effort low | ~10.5 | ~6 s; readings right, ます/です right; say お忙しいところ "usually no を"; garbled sentences; one answer drifts into Japanese; おっしゃった wrongly called irregular |
+
+## 2026-11-05 results, Zhipu's free models (same 13 cases, graded by reading)
+
+Candidates for readers Claude can't serve. None is worth switching to; the relay keeps gpt-oss for them.
+
+| model | right | notes |
+|---|---|---|
+| glm-4.7-flash, thinking on, `max_tokens` 8192 | ~7 | median 73 s, slowest 214 s; 22 HTTP 429 "访问量过大"; ~1,900 thinking tokens per answer; agrees that the notes are wrong (l35), 叱（し）る, 〜通り "must take です", お忙しいところ "can't take を" |
+| glm-4.7-flash, thinking off | ~5 | median 17 s; 31 429s, one case never answered; invented rules for お忙しいところ, 時計に鳴られて. With thinking on and `max_tokens` 2048 it returns nothing: thinking uses all of it |
+| glm-4-flash-250414 | ~5 | 4.5 s, no 429s; agrees that the notes are wrong, ます "politer than" です, 去年（さくねん） |
+| glm-z1-flash | ~4 | 6.4 s, no 429s; `<think>` blocks inside `content`, 叱（chu）る, marks correct sentences as wrong |

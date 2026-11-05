@@ -17,6 +17,8 @@
  * anthropic:<model>  Messages API via @anthropic-ai/sdk, needs ANTHROPIC_API_KEY.
  *                 --effort sets output_config.effort (Haiku 5.5 defaults to medium).
  * openai-compatible: <base>|<model> with OPENAI_COMPAT_KEY, for anything else.
+ *                 EVAL_EXTRA='{"thinking":{"type":"disabled"},"max_tokens":4096}' adds
+ *                 to or overrides the request body; EVAL_TAG=x suffixes the filename.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -26,6 +28,7 @@ import { execSync } from 'node:child_process';
 const DIR = path.dirname(new URL(import.meta.url).pathname);
 const ACCOUNT = 'ac5b0b471a6fa56e6acbaef0f4f0810b';
 const MAX_TOKENS = 2048;   // same as worker/src/index.js
+const BODY_EXTRA = process.env.EVAL_EXTRA ? JSON.parse(process.env.EVAL_EXTRA) : {};
 const args = process.argv.slice(2);
 const only = args[0] === '--only' ? args.splice(0, 2)[1].split(',') : null;
 // --effort low|medium|high: gpt-oss reasoning effort (the relay sends low).
@@ -64,13 +67,16 @@ async function askAnthropic(ep, messages) {
 }
 async function ask(ep, messages) {
   if (ep.anthropic) return askAnthropic(ep, messages);
-  const t0 = Date.now();
-  const r = await fetch(ep.url, { method: 'POST', headers: { Authorization: 'Bearer ' + ep.key, 'Content-Type': 'application/json' },
-    body: JSON.stringify({ model: ep.model, messages: messages.map(({ role, content }) => ({ role, content })), max_tokens: MAX_TOKENS, ...ep.extra }) });
-  const j = await r.json().catch(() => ({}));
-  if (!r.ok) return { error: `HTTP ${r.status} ${JSON.stringify(j).slice(0, 300)}`, ms: Date.now() - t0 };
-  const ch = (j.choices || [])[0] || {};
-  return { answer: (ch.message && ch.message.content) || '', usage: j.usage || null, ms: Date.now() - t0 };
+  const body = JSON.stringify({ model: ep.model, messages: messages.map(({ role, content }) => ({ role, content })), max_tokens: MAX_TOKENS, ...ep.extra, ...BODY_EXTRA });
+  for (let busy = 0; ; busy++) {   // free tiers answer 429 when overloaded: wait, and count it
+    const t0 = Date.now();
+    const r = await fetch(ep.url, { method: 'POST', headers: { Authorization: 'Bearer ' + ep.key, 'Content-Type': 'application/json' }, body });
+    const j = await r.json().catch(() => ({}));
+    if (r.status === 429 && busy < 8) { await new Promise((ok) => setTimeout(ok, 20000)); continue; }
+    if (!r.ok) return { error: `HTTP ${r.status} ${JSON.stringify(j).slice(0, 300)}`, ms: Date.now() - t0, busy };
+    const ch = (j.choices || [])[0] || {};
+    return { answer: (ch.message && ch.message.content) || '', usage: j.usage || null, ms: Date.now() - t0, busy };
+  }
 }
 // Answers put readings after kanji (面白（おもしろ）くない); drop them before matching.
 const plain = (a) => a.replace(/（[\u3041-\u309f\u30fc]+）/g, '').replace(/\*\*/g, '');
@@ -93,7 +99,7 @@ for (const spec of args) {
       `**Expected:** ${c.expect}`, '', r.error || r.answer, '', `_(${r.ms} ms${r.usage ? ', ' + JSON.stringify(r.usage) : ''})_`, '');
     process.stdout.write(issues.length ? '!' : '.');
   }
-  const dir = path.join(DIR, 'results', day), base = spec.replace(/[^a-z0-9.-]+/gi, '_') + (/gpt-oss/.test(spec) && effort !== 'low' || ep.anthropic ? '_' + effort : '');
+  const dir = path.join(DIR, 'results', day), base = spec.replace(/[^a-z0-9.-]+/gi, '_') + (/gpt-oss/.test(spec) && effort !== 'low' || ep.anthropic ? '_' + effort : '') + (process.env.EVAL_TAG ? '_' + process.env.EVAL_TAG : '');
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, base + '.md'), out.join('\n'));
   fs.writeFileSync(path.join(dir, base + '.json'), JSON.stringify(json, null, 1));
