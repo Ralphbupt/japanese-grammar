@@ -140,7 +140,7 @@
     // A passage brings all of its questions, so it counts as that many, and a
     // set has at most one — the rest stays single questions. A recording with
     // several questions (統合理解, `passage` = its id) is the same, one per set.
-    var pick = [], has = {}, size = 0, one = {}, perType = {};
+    var pick = [], has = {}, size = 0, one = {}, texts = {}, perType = {};
     // No question type takes more than 30% of the set — otherwise a weak type
     // (due misses + the weak-type boost) fills the whole set and feeds itself.
     var typeCap = Math.max(2, Math.ceil(n * 0.3));
@@ -149,9 +149,10 @@
       if (has[q.id]) return false;
       if (!q.passage && (perType[q.type] || 0) >= typeCap) return false;
       if (q.passage) {
-        var u = isCk(q) ? 'ck' : 'text';
-        if (one[u] !== q.passage && (one[u] || size + cost(q) > n)) return false;
-        if (one[u] !== q.passage) { one[u] = q.passage; size += cost(q); }
+        // A mixed set has one passage of each kind; a reading-only set fills up with them.
+        var u = isCk(q) ? 'ck' : 'text', inSet = D.page === 'reading' ? texts[q.passage] : one[u] === q.passage;
+        if (!inSet && ((D.page !== 'reading' && one[u]) || size + cost(q) > n)) return false;
+        if (!inSet) { one[u] = q.passage; texts[q.passage] = 1; size += cost(q); }
       } else if (size >= n) return false;
       else size++;
       has[q.id] = 1; pick.push(q); perType[q.type] = (perType[q.type] || 0) + 1; return true;
@@ -169,7 +170,7 @@
       // vocabulary has no natural order: unseen ones at random, then the oldest
       shuffle(ALL.filter(function (q) { return onLevel(q) && !q.passage && groupOf(q) === 'moji' && !seen(q.id); })).concat(freshFirst(ALL.filter(function (q) { return onLevel(q) && !q.passage && groupOf(q) === 'moji' && seen(q.id); }))),
       freshFirst(ALL.filter(function (q) { return onLevel(q) && !q.passage && groupOf(q) === 'bunpou'; })),
-      shuffle(ALL.filter(function (q) { return q.passage && !isCk(q) && !seen(q.id); })),
+      shuffle(ALL.filter(function (q) { return q.passage && !isCk(q) && !seen(q.id); })).concat(D.page === 'reading' ? freshFirst(ALL.filter(function (q) { return q.passage && seen(q.id); })) : []),
       shuffle(ALL.filter(function (q) { return onLevel(q) && isCk(q) && !seen(q.id); })).concat(freshFirst(ALL.filter(function (q) { return onLevel(q) && isCk(q) && seen(q.id); }))),
     ];
     for (var k = 0; size < n && queues.some(function (x) { return x.length; }); k++) {
@@ -250,12 +251,17 @@
       (all ? ' · ' + t('最近正确率 ', 'recent accuracy ') + all.pct + '%' : '') + ' <button class="q-link q-an-link" data-act="analysis">' + t('做题分析 ›', 'Analysis ›') + '</button></div><div class="q-total-bar"><span style="width:' + (done * 100 / LV.length) + '%"></span></div></div>';
     // The listening page (/n5-listening/) has only listening questions: say so, so
     // its daily set isn't taken for the mixed one on the practice page.
-    var onlyCk = ALL.length && ALL.every(isCk);
+    var onlyCk = ALL.length && ALL.every(isCk), only = onlyCk ? 'listening' : D.page;
+    var ONLY = {
+      listening: [t('今日听力练习', 'Today’s listening'), t('这一页只有听力题。词汇、语法、阅读、听力混合练：', 'Listening questions only on this page. Everything mixed: ')],
+      reading: [t('今日阅读练习', 'Today’s reading'), t('这一页只有阅读题。词汇、语法、阅读、听力混合练：', 'Reading questions only on this page. Everything mixed: ')],
+      vocabulary: [t('今日词汇练习', 'Today’s vocabulary'), t('这一页只有词汇题。词汇、语法、阅读、听力混合练：', 'Vocabulary questions only on this page. Everything mixed: ')],
+    };
     h += '<div class="q-today">' +
-      '<button class="q-btn q-btn-primary q-btn-big" data-act="daily">' + (onlyCk ? t('今日听力练习', 'Today’s listening') : t('今日练习', 'Today’s practice')) + ' · ' + size + t(' 题', ' questions') + '</button>' +
-      (onlyCk ? '<p class="q-muted">' + t('这一页只有听力题。词汇、语法、阅读、听力混合练：', 'Listening questions only on this page. Everything mixed: ') + '<a href="' + location.pathname.replace('-listening', '-practice') + '">' + t('练习题', 'practice questions') + '</a></p>' : '') +
+      '<button class="q-btn q-btn-primary q-btn-big" data-act="daily">' + (only ? ONLY[only][0] : t('今日练习', 'Today’s practice')) + ' · ' + size + t(' 题', ' questions') + '</button>' +
+      (only ? '<p class="q-muted">' + ONLY[only][1] + '<a href="' + location.pathname.replace(/-(listening|reading|vocabulary)/, '-practice') + '">' + t('练习题', 'practice questions') + '</a></p>' : '') +
       // Today's count and streak once there is one; a first visit says what a set is.
-      '<p class="q-muted">' + (onlyCk && !(S.days[today()] || streak()) ? t('答完马上看原文和解析', 'Transcript and explanations right after each answer') : S.days[today()] || streak() ? t('今天做了 ', 'Today: ') + (S.days[today()] || 0) + t(' 题', ' answered') + ' · ' + t('连续 ', 'streak ') + streak() + t(' 天', ' days') :
+      '<p class="q-muted">' + (only && !(S.days[today()] || streak()) ? (onlyCk ? t('答完马上看原文和解析', 'Transcript and explanations right after each answer') : t('答完马上看解析', 'Explanations right after each answer')) : S.days[today()] || streak() ? t('今天做了 ', 'Today: ') + (S.days[today()] || 0) + t(' 题', ' answered') + ' · ' + t('连续 ', 'streak ') + streak() + t(' 天', ' days') :
         (ALL.some(isCk) ? t('词汇、语法、阅读、听力混在一起，答完马上看解析', 'Vocabulary, grammar, reading and listening mixed — explanations right after each answer') : t('词汇、语法、阅读混在一起，答完马上看解析', 'Vocabulary, grammar and reading mixed — explanations right after each answer'))) + '</p>' +
       '<label class="q-size">' + t('每组 ', 'Sets of ') + '<select data-act="size">' + [5, 10, 20, 50].map(function (n) { return '<option' + (n === size ? ' selected' : '') + '>' + n + '</option>'; }).join('') + '</select>' + t(' 题（今日练习和按题型练都按这个数）', ' questions (daily sets and practice by type)') + '</label>' + '</div>';
     h += '<section class="q-sec"><h2>' + t('错题本', 'Review list') + '</h2><p>' +

@@ -352,6 +352,14 @@ const TTS_JS = `document.addEventListener('DOMContentLoaded', function(){
 // Headless crawlers that fake their UA and load-and-leave never trip it, so
 // they don't inflate user / session / page_view counts. Add ?ga_debug to a
 // URL to see its hits in GA4 DebugView.
+// Practice pages for one part of the test: the same app on one group of question
+// types, a page of its own because that's what people look for ("JLPT N3 reading
+// practice"). Trial levels first; add a level here to give it the page.
+const SUBSET_PAGES = [
+  { id: "reading", group: "dokkai", levels: ["N4", "N3"] },
+  { id: "vocabulary", group: "moji", levels: ["N4", "N3"] },
+];
+
 const GTAG_DEFERRED = `<script>
 (function() {
   var ua = navigator.userAgent || '';
@@ -1711,6 +1719,7 @@ async function main() {
       { href: `${SITE_PATH}${lv}-practice/`, zh: "✍ 练习题", en: "✍ Practice questions" },
       loadQuizLevel(level).qs.some((q) => q._kind === "choukai") && { href: `${SITE_PATH}${lv}-listening/`, zh: "🎧 听力练习", en: "🎧 Listening practice" },
       fs.existsSync(path.join(__dirname, "questions", level, "mock-1")) && { href: `${SITE_PATH}${lv}-mock-test/`, zh: "⏱ 模拟题", en: "⏱ Mock test" },
+      ...SUBSET_PAGES.filter((p) => p.levels.includes(level)).map((p) => ({ href: `${SITE_PATH}${lv}-${p.id}/`, zh: p.id === "reading" ? "📖 阅读练习" : "🔤 词汇练习", en: p.id === "reading" ? "📖 Reading practice" : "🔤 Vocabulary practice" })),
       { href: `${SITE_PATH}${lv}-cards/`, zh: "🗂 语法卡片", en: "🗂 Grammar flashcards" },
     ].filter(Boolean);
   };
@@ -2715,7 +2724,7 @@ ${AI_SCRIPT}
   // ─── Generate individual lesson pages ───
   // Pages published once per language (PAGE_LANGS); links to them on a
   // non-root copy point at that language's copy.
-  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "practice", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`])]);
+  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "practice", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
   // "Practice this point" at the end of every grammar point that has practice
   // questions (questions/N*/lessonNN.json refs), linking to the practice page.
   const quizRefCount = {};
@@ -3815,6 +3824,40 @@ ${lessonList}${(() => {
       return `<p>${L(`另外，下面这几课在更早的阶段提前教了 ${level} 的语法，它们的题也在这里：`, `These earlier lessons teach some ${level} grammar ahead of time; their questions are here too:`)}</p><ul class="lesson-list">${li}</ul>`;
     })()}</section>`;
     }
+    if (kind === "reading" || kind === "vocabulary") {
+      const reading = kind === "reading", group = reading ? "dokkai" : "moji", t = bundle.practice.types;
+      const qs = bundle.practice.questions.filter((q) => t[q.type] && t[q.type].g === group);
+      const keys = Object.keys(t).filter((k) => t[k].g === group && qs.some((q) => q.type === k));
+      const nP = new Set(qs.map((q) => q.passage).filter(Boolean)).size;
+      const easy = level === "N5" || level === "N4";
+      const others = SUBSET_PAGES.find((p) => p.id === kind).levels.filter((l) => l !== level).map((l) => `<a href="${SITE_PATH}${l.toLowerCase()}-${kind}/">${l}</a>`).join(" · ");
+      return `<section class="quiz-about">
+<h2>${L(`这里有哪些题（${qs.length} 道）`, `What's here (${qs.length} questions)`)}</h2>
+<p>${reading
+  ? L(`${nP} 篇原创文章，覆盖 ${level} 阅读的全部题型，格式和真题一致：`, `${nP} original passages in every ${level} reading format, laid out like the real test:`)
+  : L(`${level} 文字词汇的全部题型，题目原创，格式和真题一致：`, `Every ${level} vocabulary item type, written from scratch in the real format:`)}</p>
+<ul>${keys.map((k) => `<li>${tName(k)} — ${qs.filter((q) => q.type === k).length}</li>`).join("")}</ul>
+<h2>${L("怎么用", "How it works")}</h2>
+<ul>
+<li>${L(reading ? "每天一组，或者按题型专练。一篇文章的题连在一起做。" : "每天一组，或者按题型专练，比如只练汉字读音。", reading ? "A daily set, or drill one format. All the questions on a passage come together." : "A daily set, or drill one format, such as kanji readings.")}</li>
+<li>${L("答完马上看正确答案为什么对、每个错误选项为什么错，还可以让 AI 针对你选的选项讲解。", "After each answer, see why the right option is right and why each wrong one is wrong, and ask the AI about the option you picked.")}</li>
+${reading ? `<li>${L("做完一篇的最后一题后，可以看全文翻译。短文、中篇和长篇还能听全文朗读。", "After the last question on a passage, read the full translation. Most passages can also be played aloud.")}</li>` : ""}
+<li>${L("答错或点了「不会」的题会进错题本，过几天再考你。", "Questions you miss or mark “I don’t know” come back a few days later.")}</li>
+<li>${L("进度只保存在这个浏览器里，不用注册。", "Progress stays in this browser; no account needed.")}</li>
+</ul>
+<h2>${L("常见问题", "Questions")}</h2>
+<dl>
+<dt>${L("免费吗？", "Is it free?")}</dt><dd>${L("完全免费，没有广告，也不用注册。", "Yes — no ads and no sign-up.")}</dd>
+<dt>${L("是真题吗？", "Are these past papers?")}</dt><dd>${L(`不是。题目全部原创，题型和难度按 ${level} 真题设计。`, `No. Every question is original, written to the real ${level}'s formats and difficulty.`)}</dd>
+<dt>${L("有振假名吗？", "Is there furigana?")}</dt><dd>${reading
+  ? (easy ? L("有，和真考一样。", "Yes, as on the real test.") : L("只给基础汉字以外的词加，和真考的做法接近。", "Only on words with less common kanji, close to the real test."))
+  : L("词汇题没有，和真考一样。", "No, as on the real test.")}</dd>
+<dt>${L("想计时考一次？", "Want a timed run?")}</dt><dd>${bundle.mocks.length ? L(`做 <a href="${SITE_PATH}${lv}-mock-test/">${level} 模拟题</a>：按真考的结构和时间，交卷后估分。`, `Take the <a href="${SITE_PATH}${lv}-mock-test/">${level} mock test</a>: the real structure and timing, with an estimated score.`) : L("模拟题还在准备中。", "A mock test is on its way.")}</dd>
+</dl>
+<h2>${L("相关", "More")}</h2>
+<p>${L(`全部题型混合练：<a href="${SITE_PATH}${lv}-practice/">${level} 练习题</a>。${others ? `其他级别：${others}。` : ""}考试安排和备考计划：<a href="${SITE_PATH}jlpt-december-2026/">12 月 JLPT 考前指南</a>。`, `All item types mixed: <a href="${SITE_PATH}${lv}-practice/">${level} practice questions</a>. ${others ? `Other levels: ${others}. ` : ""}Exam day and a study plan: <a href="${SITE_PATH}jlpt-december-2026/">December JLPT guide</a>.`)}</p>
+</section>`;
+    }
     if (kind === "listening") {
       const ckTypes = Object.entries(bundle.practice.types).filter(([, t]) => t.g === "choukai").map(([k]) => k);
       const qs = bundle.practice.questions.filter((q) => ckTypes.includes(q.type));
@@ -3898,6 +3941,9 @@ ${lessonList}</section>`;
     const navLinks = (here, en) => [
       here !== practiceId && `✍ <a href="${SITE_PATH}${practiceId}/">${en ? "Practice by question type" : "按题型练习"}</a>`,
       here !== listeningId && hasCk && `🎧 <a href="${SITE_PATH}${listeningId}/">${en ? `${level} listening practice` : `${level} 听力练习`}</a>`,
+      ...SUBSET_PAGES.filter((p) => p.levels.includes(level) && here !== `${lv}-${p.id}`).map((p) => (p.id === "reading"
+        ? `📖 <a href="${SITE_PATH}${lv}-reading/">${en ? `${level} reading practice` : `${level} 阅读练习`}</a>`
+        : `🔤 <a href="${SITE_PATH}${lv}-vocabulary/">${en ? `${level} vocabulary practice` : `${level} 词汇练习`}</a>`)),
       here !== mockId && mocks.length && `⏱ <a href="${SITE_PATH}${mockId}/">${en ? `Timed ${level} mock test` : `${level} 模拟题（计时）`}</a>`,
       here !== cardsId && `🗂 <a href="${SITE_PATH}${cardsId}/">${en ? "Grammar flashcards" : "语法卡片（在线背）"}</a>`,
     ].filter(Boolean).join(" · ");
@@ -3954,6 +4000,38 @@ ${lessonList}</section>`;
       }
       quizPageIds.push(listeningId);
       console.log(`  Generated dist/${listeningId}/ (${ckQs.length} listening questions)`);
+    }
+    for (const p of SUBSET_PAGES.filter((x) => x.levels.includes(level))) {
+      const pageId = `${lv}-${p.id}`, reading = p.id === "reading";
+      const subTypes = Object.fromEntries(Object.entries(practice.types).filter(([, t]) => t.g === p.group));
+      const subQs = practice.questions.filter((q) => subTypes[q.type]);
+      const pIds = new Set(subQs.map((q) => q.passage).filter(Boolean));
+      const subSrc = writeQuizData(`${pageId}.json`, { ...practice, page: p.id, types: subTypes, questions: subQs,
+        passages: Object.fromEntries(Object.entries(practice.passages || {}).filter(([id]) => pIds.has(id))) });
+      const pageMeta = reading ? {
+        en: { title: `JLPT ${level} Reading Practice — Free Passages with Translations`,
+          desc: `Free JLPT ${level} reading practice: ${pIds.size} original passages in every test format, with full translations and every option explained. No sign-up.`,
+          h1: `JLPT ${level} Reading Practice`, crumb: `${level} Reading`,
+          lead: `Every reading format of the ${level}, in original passages. Answer, see why each option is right or wrong, then read the full translation.`, nav: navLinks(pageId, true) },
+        zh: { title: `JLPT ${level} 阅读练习 - 在线阅读题，带全文翻译和解析`,
+          desc: `免费 JLPT ${level} 阅读在线练习：${pIds.size} 篇原创文章，覆盖真考的全部阅读题型，答完看全文翻译，每个选项都有解析。`,
+          h1: `JLPT ${level} 阅读练习`, crumb: `${level} 阅读`,
+          lead: `${level} 阅读的全部题型，文章原创。答完看每个选项为什么对、为什么错，再看全文翻译。`, nav: navLinks(pageId, false) },
+      } : {
+        en: { title: `JLPT ${level} Vocabulary Practice — Free Kanji & Word Questions`,
+          desc: `Free JLPT ${level} vocabulary practice: ${subQs.length} exam-style questions on kanji readings, writing and word use, with every option explained. No sign-up.`,
+          h1: `JLPT ${level} Vocabulary Practice`, crumb: `${level} Vocabulary`,
+          lead: `Every vocabulary item type of the ${level}: kanji readings, writing, word choice and more. Answer, then see why each option is right or wrong.`, nav: navLinks(pageId, true) },
+        zh: { title: `JLPT ${level} 词汇练习 - 文字词汇在线做题，附详细解析`,
+          desc: `免费 JLPT ${level} 文字词汇在线练习：${subQs.length} 道仿真题，覆盖汉字读音、汉字写法和词语运用，每个选项都有解析。`,
+          h1: `JLPT ${level} 词汇练习`, crumb: `${level} 词汇`,
+          lead: `${level} 文字词汇的全部题型：汉字读音、汉字写法、选词填空等。答完马上看每个选项为什么对、为什么错。`, nav: navLinks(pageId, false) },
+      };
+      for (const lang of PAGE_LANGS) {
+        writeLangPage(pageId, lang, localizePage(renderQuiz(lang, withAbout(pageMeta[lang.code], level, p.id, lang.code === "en", quizBundles[level], langVariant(pageId, lang).url), langVariant(pageId, lang), level, `data-src="${subSrc}"`, subSrc), lang, localizedPageIds));
+      }
+      quizPageIds.push(pageId);
+      console.log(`  Generated dist/${pageId}/ (${subQs.length} questions)`);
     }
     // Flashcards: the data is written by build-anki.js (it runs after this).
     const cardsMeta = {
@@ -4239,7 +4317,7 @@ License: content CC BY-NC 4.0 (attribution, non-commercial); code MIT
 ## Practice, mock tests and flashcards
 
 - [Practice hub](${SITE}practice/): Every level's practice questions, mock test and flashcards.
-${Object.entries(quizBundles).map(([l, b]) => { const v = l.toLowerCase(); return `- [JLPT ${l} practice questions](${SITE}${v}-practice/): ${b.practice.questions.length} questions by item type, with explanations.${ckLevels.includes(l) ? `\n- [JLPT ${l} listening practice](${SITE}${v}-listening/): listening questions with audio, transcripts and explanations.` : ""}${b.mocks.length ? `\n- [JLPT ${l} mock test](${SITE}${v}-mock-test/): timed, real format, estimated score.` : ""}\n- [JLPT ${l} grammar flashcards](${SITE}${v}-cards/): one card per grammar point, spaced repetition.`; }).join("\n")}
+${Object.entries(quizBundles).map(([l, b]) => { const v = l.toLowerCase(); return `- [JLPT ${l} practice questions](${SITE}${v}-practice/): ${b.practice.questions.length} questions by item type, with explanations.${SUBSET_PAGES.filter((p) => p.levels.includes(l)).map((p) => `\n- [JLPT ${l} ${p.id} practice](${SITE}${v}-${p.id}/): ${p.id} questions only, with explanations.`).join("")}${ckLevels.includes(l) ? `\n- [JLPT ${l} listening practice](${SITE}${v}-listening/): listening questions with audio, transcripts and explanations.` : ""}${b.mocks.length ? `\n- [JLPT ${l} mock test](${SITE}${v}-mock-test/): timed, real format, estimated score.` : ""}\n- [JLPT ${l} grammar flashcards](${SITE}${v}-cards/): one card per grammar point, spaced repetition.`; }).join("\n")}
 
 ## Guides (comparisons and exam prep)
 
