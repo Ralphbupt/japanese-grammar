@@ -3,7 +3,7 @@
  * Lets readers use the 问 AI panel without their own API key. Claude Haiku 5.5
  * answers, paid from the monthly API credits (secret ANTHROPIC_API_KEY); it
  * beat the Workers AI model 11–12 to ~6 of 13 in tools/ai-eval, 2026-11-05.
- * When the key is unset, the credits or the daily cap run out, or Anthropic
+ * When the reader is outside Anthropic's supported regions, the key is unset, the credits or the daily cap run out, or Anthropic
  * fails before the first token, the older chain answers: Workers AI on the
  * Free plan's neurons, then the backups below. The browser talks to this
  * Worker with the same OpenAI-compatible shape it uses for every other provider:
@@ -47,6 +47,22 @@ const CLAUDE_MODEL = 'claude-haiku-5-5';
 const CLAUDE_MAX_TOKENS = 4096;                       // thinking counts too: 2048 cut answers off in tools/ai-eval
 const CLAUDE_DAILY_MICRO = 3000000;                   // $3 a day, so a bad day can't eat the month's $100 of credits
 const claudeMicro = (input, output) => input * 0.1 + output * 0.5;   // $0.10 / $0.50 per million tokens, in millionths of a dollar
+// Anthropic's supported regions (anthropic.com/supported-countries, Supported
+// Regions Policy effective 2026-11-12), ISO codes, plus common territories of
+// listed countries. Anywhere else, including mainland China, Hong Kong and Macau,
+// the policy bars use while physically there, so those readers get the Workers
+// AI chain. Unknown (XX) and Tor (T1) count as unsupported. Recheck when the policy changes.
+const CLAUDE_COUNTRIES = new Set((
+  'AL DZ AD AO AG AR AM AU AT AZ BS BH BD BB BE BZ BJ BT BO BA BW BR BN BG BF BI CV KH CM CA CF TD ' +
+  'CL CO KM CG CD CR CI HR CY CZ DK DJ DM DO EC EG SV GQ ER EE SZ ET FJ FI FR GA GM GE DE GH GR GD ' +
+  'GT GN GW GY HT HN HU IS IN ID IQ IE IL IT JM JP JO KZ KE KI KW KG LA LV LB LS LR LY LI LT LU MG ' +
+  'MW MY MV ML MT MH MR MU MX FM MD MC MN ME MA MZ NA NR NP NL NZ NI NE NG MK NO OM PK PW PS PA PG PY ' +
+  'PE PH PL PT QA RO RW KN LC VC WS SM ST SA SN RS SC SL SG SK SI SO SB ZA KR SS ES LK SD SR SE CH ' +
+  'TW TJ TZ TH TL TG TO TT TN TR TM TV UG UA AE GB US UY UZ VU VA VN ZM ZW PR GU VI AS MP UM GG JE ' +
+  'IM GI BM KY VG TC AI MS FK SH GF GP MQ RE YT NC PF BL MF PM WF AW CW SX BQ GL FO AX CK NU TK '
+).trim().split(' '));
+const CLAUDE_UA_EXCLUDED = new Set(['43', '14', '65', '09', '23', '40']);   // Crimea, Donetsk, Kherson, Luhansk, Zaporizhzhia, Sevastopol
+const claudeAllowed = (cf) => !!cf && CLAUDE_COUNTRIES.has(cf.country) && !(cf.country === 'UA' && CLAUDE_UA_EXCLUDED.has(cf.regionCode));
 const MODEL = '@cf/openai/gpt-oss-120b';
 const MODEL_NAME = 'gpt-oss-120b';
 const MAX_BODY = 120000;                              // bytes; a whole lesson as context is ~30k chars
@@ -114,8 +130,9 @@ export default {
     // development is the owner too, so reports can leave both out.
     const who = body.owner === true || !origin.startsWith('https://') ? 'owner' : 'reader';
     const count = (outcome, neurons, micro) => { try { env.USAGE && env.USAGE.writeDataPoint({ indexes: [source], blobs: [source, turn, outcome, who], doubles: [1, neurons || 0, micro || 0] }); } catch (e) {} };
+    const useClaude = !!env.ANTHROPIC_API_KEY && claudeAllowed(req.cf);
     const cacheable = stream && messages.length === 2 && messages[0].role === 'system' && messages[1].role === 'user';
-    const cacheKey = cacheable ? new Request('https://ai.jpnotes.dev/cache/' + await sha256((env.ANTHROPIC_API_KEY ? CLAUDE_MODEL : MODEL) + '\n' + JSON.stringify(messages))) : null;
+    const cacheKey = cacheable ? new Request('https://ai.jpnotes.dev/cache/' + await sha256((useClaude ? CLAUDE_MODEL : MODEL) + '\n' + JSON.stringify(messages))) : null;
     const headers = new Headers(cors);
     headers.set('Cache-Control', 'no-store');
     headers.set('Content-Type', stream ? 'text/event-stream' : 'application/json');
@@ -137,8 +154,8 @@ export default {
       }
     };
     // A fallback's answer stays out of Claude's cache slot: it would replay for three days.
-    const onCached = (done) => { if (!env.ANTHROPIC_API_KEY) putCache(done); };
-    if (env.ANTHROPIC_API_KEY && !verdict.claudeGone) {
+    const onCached = (done) => { if (!useClaude) putCache(done); };
+    if (useClaude && !verdict.claudeGone) {
       const client = new Anthropic({ apiKey: env.ANTHROPIC_API_KEY, maxRetries: 0, timeout: 20000 });
       const claude = claudeParams(messages, Math.min(+body.max_tokens || CLAUDE_MAX_TOKENS, CLAUDE_MAX_TOKENS));
       const paid = (micro) => { count('claude', 0, micro); ctx.waitUntil(quota.fetch('https://quota/claude-spend', { method: 'POST', body: String(micro) })); };
