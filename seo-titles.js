@@ -7,7 +7,7 @@
 //
 // Pages missing here fall back to the templated title in build.js. Rewrite a
 // title when Search Console shows a page with many impressions but few clicks
-// (tools/gsc-report.py lists them), and keep each one under ~65 characters.
+// (Search Console lists them), and keep each one under ~65 characters.
 module.exports = {
   lesson00: {
     en: "Hiragana & Katakana Chart (Gojūon) — Japanese Syllabary Basics",
