@@ -354,10 +354,10 @@ const TTS_JS = `document.addEventListener('DOMContentLoaded', function(){
 // URL to see its hits in GA4 DebugView.
 // Practice pages for one part of the test: the same app on one group of question
 // types, a page of its own because that's what people look for ("JLPT N3 reading
-// practice"). Trial levels first; add a level here to give it the page.
+// practice"). To drop a level, take it out of `levels`.
 const SUBSET_PAGES = [
-  { id: "reading", group: "dokkai", levels: ["N4", "N3"] },
-  { id: "vocabulary", group: "moji", levels: ["N4", "N3"] },
+  { id: "reading", group: "dokkai", levels: ["N5", "N4", "N3", "N2", "N1"] },
+  { id: "vocabulary", group: "moji", levels: ["N5", "N4", "N3", "N2", "N1"] },
 ];
 
 const GTAG_DEFERRED = `<script>
@@ -3850,7 +3850,7 @@ ${reading ? `<li>${L("做完一篇的最后一题后，可以看全文翻译。�
 <dt>${L("免费吗？", "Is it free?")}</dt><dd>${L("完全免费，没有广告，也不用注册。", "Yes — no ads and no sign-up.")}</dd>
 <dt>${L("是真题吗？", "Are these past papers?")}</dt><dd>${L(`不是。题目全部原创，题型和难度按 ${level} 真题设计。`, `No. Every question is original, written to the real ${level}'s formats and difficulty.`)}</dd>
 <dt>${L("有振假名吗？", "Is there furigana?")}</dt><dd>${reading
-  ? (easy ? L("有，和真考一样。", "Yes, as on the real test.") : L("只给基础汉字以外的词加，和真考的做法接近。", "Only on words with less common kanji, close to the real test."))
+  ? (easy ? L("有，和真考一样。", "Yes, as on the real test.") : level === "N3" ? L("只给基础汉字以外的词加，和真考的做法接近。", "Only on words with less common kanji, close to the real test.") : L("没有，和真考一样。", "No, as on the real test."))
   : L("词汇题没有，和真考一样。", "No, as on the real test.")}</dd>
 <dt>${L("想计时考一次？", "Want a timed run?")}</dt><dd>${bundle.mocks.length ? L(`做 <a href="${SITE_PATH}${lv}-mock-test/">${level} 模拟题</a>：按真考的结构和时间，交卷后估分。`, `Take the <a href="${SITE_PATH}${lv}-mock-test/">${level} mock test</a>: the real structure and timing, with an estimated score.`) : L("模拟题还在准备中。", "A mock test is on its way.")}</dd>
 </dl>
