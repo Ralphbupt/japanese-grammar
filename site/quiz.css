@@ -228,7 +228,22 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-bytype th, .q-bytype td { padding: .3rem .5rem; }
 .q-bytype td:first-child, .q-bytype td:last-child { white-space: nowrap; }
 .q-bytype td:last-child a { color: var(--link); text-decoration: none; }
-@media (max-width: 760px) { .q-top { padding-left: 2.8rem; } }
+@media (max-width: 760px) {
+  .q-top { padding-left: 2.8rem; gap: .6rem; font-size: .92em; }
+  .q-top > :not(:last-child) { flex: none; white-space: nowrap; }
+  .q-top > :last-child { flex: 0 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .q-next { padding-top: .5rem; }
+  .q-next .q-btn-big { padding-top: .55em; padding-bottom: .55em; }
+}
+@media (max-width: 360px) {
+  .q-ck-nums:not(.q-ck-shown) li { flex: 1 1 0; min-width: 0; }
+  .q-ck-nums:not(.q-ck-shown) .q-opt { min-width: 0; width: 100%; }
+}
+/* Line-replay 🔊: small to look at, a full finger's width to hit. */
+@media (pointer: coarse) {
+  .q-say { position: relative; }
+  .q-say::after { content: ""; position: absolute; inset: -11px -6px; }
+}
 
 /* /practice/ hub */
 .hub-modes { list-style: none; padding: 0; margin: 1.5rem 0; display: grid; gap: .6rem 1.5rem; }
