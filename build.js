@@ -368,6 +368,9 @@ const GTAG_DEFERRED = `<script>
   if (/HeadlessChrome|Lighthouse|PhantomJS|Puppeteer|Playwright|crawler|spider|bot|Slurp|facebookexternalhit/i.test(ua)) return;
 
   var TID = 'G-D1KNQTFN1R', URL_ = 'https://www.google-analytics.com/g/collect';
+  // gtag flags key events itself with _c=1; this sender has to do the same, or
+  // GA records them as ordinary events. Keep in step with the GA admin list.
+  var KEY_EVENTS = ['quiz_finish', 'quiz_ai', 'share'];
   var debug = /[?&]ga_debug\\b/.test(location.search);
   function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } }
   // Own visits stay out of the numbers: only the live host counts (localhost
@@ -425,6 +428,7 @@ const GTAG_DEFERRED = `<script>
     };
     if (document.referrer && seq === 1) q.dr = document.referrer;
     if (debug) q._dbg = 1;
+    if (KEY_EVENTS.indexOf(name) >= 0) q._c = 1;
     for (var k in extra) q[k] = extra[k];
     for (var p in params) {
       var v = params[p];
