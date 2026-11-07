@@ -1237,13 +1237,21 @@
   // once that element has played, it may go on to the next file by itself,
   // which the mock test's back-to-back items rely on.
   var CK_AUDIO = '/audio/choukai/', CK_IMG = '/images/choukai/';
-  var ck = { el: null, mode: 'all', end: null, onEnd: null };
+  var ck = { el: null, mode: 'all', end: null, from: 0, loop: false, onEnd: null };
+  // Practice speed (0.75× / 1× / 1.25×), kept in prefs; the mock sitting is always 1×.
+  var CK_RATES = [0.75, 1, 1.25];
+  function ckRate() { return CK_RATES.indexOf(S.prefs.rate) >= 0 ? S.prefs.rate : 1; }
+  function ckSetRate(a, r) { a.defaultPlaybackRate = r; a.playbackRate = r; }
   function ckEl() {
     if (ck.el) return ck.el;
     var a = ck.el = new Audio();
     a.preload = 'auto';
     a.addEventListener('timeupdate', function () {
-      if (ck.end != null && a.currentTime >= ck.end) { a.pause(); ck.end = null; }
+      if (ck.end != null && a.currentTime >= ck.end) {
+        // 单句循环: a line played on its own starts again until stopped.
+        if (ck.loop && ck.mode === 'seg') a.currentTime = ck.from;
+        else { a.pause(); ck.end = null; }
+      }
       ckShow();
     });
     a.addEventListener('play', ckShow);
@@ -1263,15 +1271,27 @@
     if (player) player.pause();
     var a = ckEl(), src = CK_AUDIO + file, same = a.src.indexOf(src) >= 0;
     if (!same) a.src = src;
+    ckSetRate(a, ckRate());
     if (from == null) {
       if (same && ck.mode === 'all' && !a.paused) { a.pause(); return; }
       var resume = same && ck.mode === 'all' && !a.ended && a.currentTime > 0;
       ck.mode = 'all'; ck.end = null;
       if (!resume) ckSeek(a, 0);
-    } else { ck.mode = 'seg'; ck.end = from + len; ckSeek(a, from); }
+    } else { ck.mode = 'seg'; ck.from = from; ck.end = from + len; ckSeek(a, from); }
     a.play().catch(function () {});
     track('quiz_listen_play', { level: LEVEL, part: from == null ? 'all' : 'line' });
   }
+  // Jump within an item (tap on the bar, or ↺ 5 s back): plays the whole item from there.
+  function ckJump(file, at) {
+    if (player) player.pause();
+    var a = ckEl(), src = CK_AUDIO + file;
+    if (a.src.indexOf(src) < 0) a.src = src;
+    ckSetRate(a, ckRate());
+    ck.mode = 'all'; ck.end = null;
+    ckSeek(a, Math.max(0, at));
+    a.play().catch(function () {});
+  }
+  function ckPlaying(file) { return ck.el && ck.el.src.indexOf(CK_AUDIO + file) >= 0 ? ck.el.currentTime : 0; }
   function ckStop() {
     ck.onEnd = null; ck.end = null;
     if (ck.el) ck.el.pause();
@@ -1287,13 +1307,22 @@
       p.querySelector('.q-ck-time').textContent = fmt(at * 1000) + ' / ' + fmt(dur * 1000);
       var b = p.querySelector('.q-ck-play');
       if (b) b.textContent = on && !a.paused && ck.mode === 'all' ? '⏸' : '▶';
+      var r = p.querySelector('.q-ck-rate');
+      if (r) r.textContent = ckRate() + '×';
+    });
+    // The transcript line being heard, while the item plays.
+    app.querySelectorAll('.q-ck-script li[data-t]').forEach(function (li) {
+      var on = !a.paused && a.src.indexOf(CK_AUDIO + li.getAttribute('data-k')) >= 0, t0 = +li.getAttribute('data-t');
+      li.classList.toggle('q-ck-cur', on && a.currentTime >= t0 && a.currentTime < t0 + +li.getAttribute('data-d'));
     });
   }
   // The progress bar; practice has a ▶ button, the mock test only the bar.
   function ckPlayer(q, mock) {
     return '<div class="q-ck-player" data-k="' + q.au.f + '" data-dur="' + q.au.dur + '">' +
-      (mock ? '' : '<button class="q-btn q-ck-play" data-act="ck-play" data-k="' + q.au.f + '" aria-label="' + t('播放 / 暂停', 'Play / pause') + '">▶</button>') +
-      '<span class="q-ck-bar"><span></span></span><span class="q-ck-time">0:00 / ' + fmt(q.au.dur * 1000) + '</span></div>';
+      (mock ? '' : '<button class="q-btn q-ck-play" data-act="ck-play" data-k="' + q.au.f + '" aria-label="' + t('播放 / 暂停', 'Play / pause') + '">▶</button>' +
+        '<button class="q-ck-tool" data-act="ck-back" data-k="' + q.au.f + '" aria-label="' + t('后退 5 秒', 'Back 5 seconds') + '" title="' + t('后退 5 秒', 'Back 5 seconds') + '">↺5</button>') +
+      '<span class="q-ck-bar"' + (mock ? '' : ' data-act="ck-seek" data-k="' + q.au.f + '" title="' + t('点一下跳到这里', 'Tap to jump here') + '"') + '><span></span></span><span class="q-ck-time">0:00 / ' + fmt(q.au.dur * 1000) + '</span>' +
+      (mock ? '' : '<button class="q-ck-tool q-ck-rate" data-act="ck-rate" aria-label="' + t('语速', 'Speed') + '" title="' + t('语速', 'Speed') + '">' + ckRate() + '×</button>') + '</div>';
   }
   // The 発話表現 scene, with an arrow pointing down at the top of the speaker's
   // box (box = [ymin, xmin, ymax, xmax] on 0–1000) — drawn here, not in the picture.
@@ -1343,9 +1372,12 @@
   // scene and question(s), each line with its speaker, the spoken options; a ▶
   // per segment and the translation under each.
   function ckScript(q) {
-    var row = function (who, ja, sub, btn, cls) { return '<li' + (cls ? ' class="' + cls + '"' : '') + '>' + (who ? '<b class="q-ck-who">' + esc(who) + '</b>' : '') + '<span><span lang="ja">' + ja + '</span>' + btn + (sub ? '<small>' + esc(sub) + '</small>' : '') + '</span></li>'; };
-    return '<div class="q-ck-script"><p class="q-ck-head">' + t('听力原文', 'Transcript') + '</p><ol>' + ckParts(q).map(function (p) {
-      return row(p.who, p.ja, p.tr, ckSegBtn(q, p.k, p.i), p.who ? '' : 'q-ck-nar');
+    var segs = (q.au && q.au.segs) || [];
+    var row = function (who, ja, sub, btn, cls, sg) { return '<li' + (cls ? ' class="' + cls + '"' : '') + (sg ? ' data-k="' + q.au.f + '" data-t="' + sg.t + '" data-d="' + sg.d + '"' : '') + '>' + (who ? '<b class="q-ck-who">' + esc(who) + '</b>' : '') + '<span><span lang="ja">' + ja + '</span>' + btn + (sub ? '<small>' + esc(sub) + '</small>' : '') + '</span></li>'; };
+    return '<div class="q-ck-script"><p class="q-ck-head">' + t('听力原文', 'Transcript') +
+      (segs.length ? ' <button class="q-ck-tool q-ck-loop' + (ck.loop ? ' q-on' : '') + '" data-act="ck-loop" aria-pressed="' + ck.loop + '" title="' + t('点 ▶ 听一句时反复播放，适合跟读', 'Repeat a line played with ▶, for shadowing') + '">🔁 ' + t('单句循环', 'Repeat line') + '</button>' : '') +
+      '</p><ol>' + ckParts(q).map(function (p) {
+      return row(p.who, p.ja, p.tr, ckSegBtn(q, p.k, p.i), p.who ? '' : 'q-ck-nar', segs.filter(function (x) { return x.k === p.k && x.i === p.i; })[0]);
     }).join('') + '</ol></div>';
   }
   // Plain text of the transcript for the AI context.
@@ -1436,6 +1468,7 @@
     var el = ckEl();
     ck.mode = 'all'; ck.end = null;
     el.src = CK_AUDIO + q.au.f;
+    ckSetRate(el, 1);
     ck.onEnd = function () { ckWait(group.length * ((sec.pause || {})[q.type] || 10) * 1000); };
     el.play().catch(ckFail);
   }
@@ -1697,6 +1730,21 @@
     else if (act === 'say') say(el);
     else if (act === 'ck-play') ckPlay(el.getAttribute('data-k'));
     else if (act === 'ck-seg') ckPlay(el.getAttribute('data-k'), +el.getAttribute('data-t'), +el.getAttribute('data-d'));
+    else if (act === 'ck-back') ckJump(el.getAttribute('data-k'), ckPlaying(el.getAttribute('data-k')) - 5);
+    else if (act === 'ck-seek') {
+      var box = el.getBoundingClientRect(), dur = +el.closest('.q-ck-player').getAttribute('data-dur');
+      ckJump(el.getAttribute('data-k'), Math.min(1, Math.max(0, (e.clientX - box.left) / box.width)) * dur);
+    }
+    else if (act === 'ck-rate') {
+      S.prefs.rate = CK_RATES[(CK_RATES.indexOf(ckRate()) + 1) % CK_RATES.length]; save();
+      if (ck.el && !CK) ckSetRate(ck.el, ckRate());
+      ckShow(); track('quiz_listen_rate', { rate: S.prefs.rate });
+    }
+    else if (act === 'ck-loop') {
+      ck.loop = !ck.loop;
+      app.querySelectorAll('.q-ck-loop').forEach(function (b) { b.classList.toggle('q-on', ck.loop); b.setAttribute('aria-pressed', ck.loop); });
+      if (!ck.loop && ck.el && ck.mode === 'seg') { ck.el.pause(); ck.end = null; }
+    }
     // "这题有问题？": pick a reason, optionally say more, send.
     else if (act === 'report') {
       el.parentNode.querySelectorAll('[data-act="report"]').forEach(function (b) { b.classList.toggle('q-picked', b === el); });
