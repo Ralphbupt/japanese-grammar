@@ -57,13 +57,14 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("level")
     ap.add_argument("--only", default="")
+    ap.add_argument("--redo", action="store_true", help="check again even if this file passed before (a regenerated file keeps its name; the check is nondeterministic, so run it twice)")
     a = ap.parse_args()
     only = set(filter(None, a.only.split(",")))
     index = json.loads((AUDIO / "index.json").read_text())
     out_f = AUDIO / f"check-{a.level}.json"
     done = json.loads(out_f.read_text()) if out_f.exists() else {}
     todo = {k: v for k, v in index.items() if k.startswith(a.level.lower() + "-") and (not only or k in only)
-            and not (done.get(k, {}).get("file") == v["file"] and done[k].get("ok"))}
+            and (a.redo or not (done.get(k, {}).get("file") == v["file"] and done[k].get("ok")))}
     print(f"{len(todo)} to check", flush=True)
     with ThreadPoolExecutor(4) as pool:
         for qid, res in pool.map(lambda kv: check(*kv), todo.items()):

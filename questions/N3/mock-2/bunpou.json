@@ -134,7 +134,7 @@
     "options": [
       "ものの",
       "からには",
-      "ついでに",
+      "せいで",
       "とたん"
     ],
     "answer": 0,
@@ -154,8 +154,8 @@
         "en": "「からには」 is followed by resolve or duty, not by 'only manage to go two or three times'."
       },
       {
-        "zh": "「ついでに」是顺便做另一件事，可后面没有顺便做的事。",
-        "en": "「ついでに」 is doing something else on the way, but no such extra action follows."
+        "zh": "「せいで」说造成坏结果的原因，可去得少是因为「残業が多くて」，不是因为成了会员。",
+        "en": "「せいで」 names the cause of a bad result, but the reason for rarely going is 「残業が多くて」, not joining the gym."
       },
       {
         "zh": "「とたん」后面是瞬间发生的意外，而「月に二、三回しか通えていない」是持续的状态。",
@@ -340,7 +340,7 @@
       "ついでに",
       "たびに",
       "とおりに",
-      "くせに"
+      "最中に"
     ],
     "answer": 0,
     "full": "今日は郵便局へ行くついでに、となりのパン屋で明日の朝ご飯のパンを買ってきた。",
@@ -363,8 +363,8 @@
         "en": "「とおりに」 is 'just as'; 「郵便局へ行くとおりに」 makes no sense."
       },
       {
-        "zh": "「くせに」用来责备“明明……却……”，这里没有责备的意思。",
-        "en": "「くせに」 criticises ('even though… yet'), and nobody is being criticised."
+        "zh": "「最中に」要接「〜ている」或「名词＋の」（「食事の最中に」），表示正在进行时被打断，不说「行く最中に」，也没有“顺便”的意思。",
+        "en": "「最中に」 follows 「〜ている」 or 「noun ＋ の」 (「食事の最中に」) for being interrupted mid-action; 「行く最中に」 isn't said, and it has no sense of \"while you're at it\"."
       }
     ]
   },
@@ -503,17 +503,17 @@
       "ならなかった",
       "もかまわなかった",
       "はいけなかった",
-      "もよかった"
+      "ほかなかった"
     ],
     "answer": 0,
-    "full": "一人暮らしを始めたばかりのころは、家族に会いたくてならなかった。毎晩のように実家に電话していた。",
+    "full": "一人暮らしを始めたばかりのころは、家族に会いたくてならなかった。毎晩のように実家に電話していた。",
     "tr": {
       "zh": "刚开始一个人住的时候，想家人想得不得了，几乎每天晚上都往家里打电话。",
       "en": "When I'd just started living on my own, I missed my family terribly. I phoned home almost every night."
     },
     "why": {
-      "zh": "线索：「会いたくて」后面接空格，下一句「毎晩のように実家に電話していた」说明想念的心情非常强烈。\n规则：「〜てならない」＝……得不得了、非常……，接表示感情、感觉的词：「心配でならない」「残念でならない」，和「〜てたまらない」意思相近。\n辨析：「〜てもかまわない」「〜てもいい」表示允许，「〜てはいけない」表示禁止，都不是在说感情有多强烈。",
-      "en": "Clue: 「会いたくて」 before the blank, and the next sentence 「毎晩のように実家に電話していた」 shows how strong the feeling was.\nRule: 「〜てならない」 = terribly, unbearably …, after words of feeling or sensation: 「心配でならない」, 「残念でならない」; close to 「〜てたまらない」.\nContrast: 「〜てもかまわない」 and 「〜てもいい」 give permission, and 「〜てはいけない」 forbids; none of them says how strong a feeling is."
+      "zh": "线索：「会いたくて」后面接空格，下一句「毎晩のように実家に電話していた」说明想念的心情非常强烈。\n规则：「〜てならない」＝……得不得了、非常……，接表示感情、感觉的词：「心配でならない」「残念でならない」，和「〜てたまらない」意思相近。\n辨析：「〜てもかまわない」表示允许，「〜てはいけない」表示禁止，「〜ほかない」是“只好……”，都不是在说感情有多强烈。",
+      "en": "Clue: 「会いたくて」 before the blank, and the next sentence 「毎晩のように実家に電話していた」 shows how strong the feeling was.\nRule: 「〜てならない」 = terribly, unbearably …, after words of feeling or sensation: 「心配でならない」, 「残念でならない」; close to 「〜てたまらない」.\nContrast: 「〜てもかまわない」 gives permission, 「〜てはいけない」 forbids, and 「〜ほかない」 means \"have no choice but to\"; none of them says how strong a feeling is."
     },
     "wrong": [
       null,
@@ -526,8 +526,8 @@
         "en": "「〜てはいけない」 forbids; 'must not want to see them' clashes with phoning every night."
       },
       {
-        "zh": "「〜てもいい」表示许可，不表示心情有多强烈。",
-        "en": "「〜てもいい」 gives permission; it doesn't express how strong the feeling is."
+        "zh": "「ほかない」接动词辞书形（「待つほかない」），意思是“只好……”，不接「〜て」，也不表示感情强烈。",
+        "en": "「ほかない」 follows the dictionary form (「待つほかない」) and means \"have no choice but to\"; it doesn't follow 「〜て」 or express a strong feeling."
       }
     ]
   },

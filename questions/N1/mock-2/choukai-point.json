@@ -425,15 +425,15 @@
    ],
    [
     "F",
-    "ええ、それは調べてきました。問題は駐輪場なんです。うちのマンション、前のタイヤを差し込む形のラックなんですけど、さっき比べてみたら、このタイヤだと太すぎて入らないみたいで。"
+    "え、補助があるんですか。それなら手が届かなくはないんですけど……。うちのマンション、前のタイヤを差し込む形のラックなんです。さっき、こちらの普通の自転車と並べてみたら、このタイヤ、ずいぶん太いんですね。"
    ],
    [
     "M",
-    "ああ、なるほど。ラックの横に置いておくわけには……。"
+    "ええ、安定するように太くしてありまして。ラックに入らないようでしたら、横に置いておくという手も……。"
    ],
    [
     "F",
-    "管理会社に聞いたら、ラックの外に置くのは決まりでだめだそうです。"
+    "管理会社がそういうところ厳しくて。前に、ラックの外に置いてあった自転車が、まとめて撤去されたことがあるんです。"
    ],
    [
     "M",
@@ -459,9 +459,9 @@
      "电动的那辆，您觉得怎么样？",
      "上坡也很轻松，真是省力。不过，不好意思，这次还是算了。",
      "这样啊。价格的话，用市里的补贴大概只要三分之二。",
-     "嗯，那个我查过了。问题在停车处。我们公寓是把前轮插进去的那种车架，刚才比了一下，这个轮胎好像太粗了，插不进去。",
-     "啊，原来如此。放在车架旁边不行吗……。",
-     "我问了管理公司，说规定不能放在车架外面。",
+     "咦，有补贴啊。那样的话也不是买不起……。我们公寓是把前轮插进去的那种车架。刚才和这边的普通自行车并排比了一下，这个轮胎可真粗啊。",
+     "是的，为了稳定特意做得粗一些。要是插不进车架，也可以放在旁边……。",
+     "管理公司在这方面管得很严。以前放在车架外面的自行车，被一起清走过。",
      "是这样啊。重量的话，最近的车轻多了，充电也可以把电池卸下来在屋里充，我还以为很适合您呢。",
      "是的，我试着抬了一下，觉得这样的话我也没问题。要是哪天搬家了，再来找您。"
     ],
@@ -479,9 +479,9 @@
      "How did you find the electric one?",
      "It went up hills so easily — really effortless. But I'm sorry, I'll pass this time.",
      "I see. If it's the price, with the city's subsidy it comes to about two-thirds.",
-     "Yes, I looked into that. The problem is the bike parking. My building has racks where you slot the front wheel in, and when I compared just now, this tyre seems too thick to fit.",
-     "Ah, I see. Couldn't you leave it beside the rack…?",
-     "I asked the management company, and the rules don't allow leaving bikes outside the racks.",
+     "Oh, there's a subsidy? Then it's not out of reach… My building has racks where you slot the front wheel in. When I put it next to one of your ordinary bikes just now, this tyre is really thick, isn't it?",
+     "Yes, it's made thicker for stability. If it doesn't fit in the rack, you could always leave it beside it…",
+     "The management company is strict about that sort of thing. Once, bikes left outside the racks were all removed.",
      "I see. They're much lighter these days, and you can take the battery out to charge it indoors, so I thought it'd suit you perfectly.",
      "Yes, when I lifted it I thought even I could manage. If I ever move, I'll come back."
     ],
@@ -494,13 +494,13 @@
    }
   },
   "why": {
-   "zh": "依据：女的说：「問題は駐輪場なんです。」「このタイヤだと太すぎて入らないみたいで。」管理公司也说「ラックの外に置くのは決まりでだめ」。\n推理：公寓的车架插不进电动车的粗轮胎，规定又不许放在车架外，所以家里没有地方停。价格她查过补贴，没问题；重量她抬过觉得「大丈夫」；充电可以在屋里。\n容易错：店员提到的价格、重量、充电，她都不觉得是问题。",
-   "en": "Evidence: She says: 「問題は駐輪場なんです。」 and 「このタイヤだと太すぎて入らないみたいで。」 The management company says 「ラックの外に置くのは決まりでだめ」.\nReasoning: The building's racks won't take the thick tyre and the rules forbid parking outside them, so she has nowhere to keep it. She checked the subsidy, so price isn't the issue; she lifted it and found it 「大丈夫」; charging can be done indoors.\nTrap: price, weight and charging — the clerk raises them all, but none bothers her."
+   "zh": "依据：女的说公寓的车架是插前轮的，「このタイヤ、ずいぶん太いんですね」；又说放在车架外面的自行车「まとめて撤去されたことがある」；最后说「もし引っ越すことがあったら」。\n推理：她没有直说原因，但轮胎太粗插不进车架，放在外面又会被清走，所以家里没地方停。说“搬家的话再来”，也说明问题出在住处。价格用补贴后「手が届かなくはない」；重量她抬过觉得「大丈夫」；充电可以在屋里。\n容易错：店员提到的价格、重量、充电，她都不觉得是问题。",
+   "en": "Evidence: She says her building's racks take the front wheel and 「このタイヤ、ずいぶん太いんですね」; bikes left outside the racks 「まとめて撤去されたことがある」; and she ends 「もし引っ越すことがあったら」.\nReasoning: She never states the reason, but the tyre won't fit the rack and anything left outside gets removed, so she has nowhere to keep it. 'If I ever move' also points to her home as the problem. With the subsidy the price is 「手が届かなくはない」; she lifted it and found it 「大丈夫」; charging can be done indoors.\nTrap: price, weight and charging — the clerk raises them all, but none bothers her."
   },
   "wrong": [
    {
-    "zh": "她查过补贴（「それは調べてきました」），价格不是问题。",
-    "en": "She looked into the subsidy; price isn't the problem."
+    "zh": "有补贴的话她说「手が届かなくはない」，价格不是问题。",
+    "en": "With the subsidy she says it's within reach; price isn't the problem."
    },
    {
     "zh": "她抬过，觉得「これなら私でも大丈夫」。",

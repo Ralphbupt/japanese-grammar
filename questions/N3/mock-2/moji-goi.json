@@ -210,8 +210,8 @@
         "en": "たすける is 「助ける」, to help."
       },
       {
-        "zh": "「まかせる」写作「任せる」，汉字不同。",
-        "en": "まかせる is 「任せる」, a different kanji."
+        "zh": "「まかせる」写作「任せる」，是把事情交给别人去做，和「預」的读音没有关系。",
+        "en": "まかせる is 「任せる」, leaving a task to someone; it has nothing to do with the reading of 「預」."
       }
     ]
   },
@@ -727,7 +727,7 @@
     "options": [
       "あたためた",
       "ひやした",
-      "こおらせた",
+      "とかした",
       "かわかした"
     ],
     "answer": 0,
@@ -746,8 +746,8 @@
         "en": "「ひやす」 is to chill; the soup is already cold, and a microwave doesn't chill."
       },
       {
-        "zh": "「こおらせる」是冻上，微波炉不能冷冻。",
-        "en": "「こおらせる」 is to freeze; a microwave can't freeze anything."
+        "zh": "「とかす」是把冻住的东西化开（「バターを とかす」），汤只是凉了，并没有冻住。",
+        "en": "「とかす」 is to melt or thaw something frozen (「バターを とかす」); the soup has only gone cold, not frozen."
       },
       {
         "zh": "「かわかす」是弄干，汤不能“弄干”来喝。",
@@ -799,7 +799,7 @@
     "options": [
       "ほこり",
       "けむり",
-      "いき",
+      "しわ",
       "あわ"
     ],
     "answer": 0,
@@ -818,8 +818,8 @@
         "en": "「けむり」 is smoke; an unused room doesn't fill with smoke."
       },
       {
-        "zh": "「いき」是呼吸的气，房间不会满是呼气。",
-        "en": "「いき」 is breath; a room isn't covered in breath."
+        "zh": "「しわ」常说「しわだらけ」，但指的是衣服、皮肤上的皱纹，房间不会满是皱纹。",
+        "en": "「しわ」 often goes with 「だらけ」, but it means wrinkles in clothes or skin; a room can't be full of wrinkles."
       },
       {
         "zh": "「あわ」是泡沫，和长期不用的房间无关。",
@@ -1240,8 +1240,8 @@
       "en": "Watching anime is what got me started learning Japanese."
     },
     "why": {
-      "zh": "线索：「アニメを見たこと」引出了「日本語の勉強を始めた」，前者是开始某事的契机。\n词义：「きっかけ」＝契机、起因，常说「〜が きっかけで」「〜を きっかけに」「話す きっかけ」。",
-      "en": "Clue: 「アニメを見たこと」 led to 「日本語の勉強を始めた」: the first is what set the second off.\nMeaning: 「きっかけ」 = trigger, the thing that starts something, as in 「〜が きっかけで」, 「〜を きっかけに」 and 「話す きっかけ」."
+      "zh": "线索：「アニメを見たこと」引出了「日本語を習い始めた」，前者是开始某事的契机。\n词义：「きっかけ」＝契机、起因，常说「〜が きっかけで」「〜を きっかけに」「話す きっかけ」。",
+      "en": "Clue: 「アニメを見たこと」 led to 「日本語を習い始めた」: the first is what set the second off.\nMeaning: 「きっかけ」 = trigger, the thing that starts something, as in 「〜が きっかけで」, 「〜を きっかけに」 and 「話す きっかけ」."
     },
     "wrong": [
       null,

@@ -419,7 +419,7 @@
   ],
   "respond": "M",
   "options": [
-   "いいえ、もう できて います。",
+   "はい、らいしゅう します。",
    "はい、だいじょうぶです。",
    "はい、金曜日でした。"
   ],
@@ -430,7 +430,7 @@
      "山田，这项工作星期五之前能完成吗？"
     ],
     "options": [
-     "不，已经做好了。",
+     "好的，下周做。",
      "是的，没问题。",
      "是的，是星期五来着。"
     ]
@@ -440,20 +440,20 @@
      "Yamada-san, do you think you can finish this job by Friday?"
     ],
     "options": [
-     "No, it's already done.",
+     "Yes, I'll do it next week.",
      "Yes, that'll be fine.",
      "Yes, it was Friday."
     ]
    }
   },
   "why": {
-   "zh": "依据：女的问：「この 仕事、金曜日までに できそうですか。」\n推理：问星期五前能不能完成，回答「はい、だいじょうぶです」。\n容易错：「いいえ」后面接“已经做好了”，前后矛盾；「金曜日でした」照搬了「金曜日」，时态也不对。",
-   "en": "Evidence: The woman asks 「この 仕事、金曜日までに できそうですか。」\nReasoning: She asks whether he can finish by Friday: 「はい、だいじょうぶです」.\nTrap: 「いいえ」 followed by \"it's already done\" contradicts itself; 「金曜日でした」 echoes 「金曜日」 in the wrong tense."
+   "zh": "依据：女的问：「この 仕事、金曜日までに できそうですか。」\n推理：问星期五前能不能完成，回答「はい、だいじょうぶです」。\n容易错：「らいしゅう します」虽然答应了，可是时间已经过了星期五；「金曜日でした」照搬了「金曜日」，时态也不对。",
+   "en": "Evidence: The woman asks 「この 仕事、金曜日までに できそうですか。」\nReasoning: She asks whether he can finish by Friday: 「はい、だいじょうぶです」.\nTrap: 「らいしゅう します」 agrees but puts it after Friday; 「金曜日でした」 just echoes 「金曜日」 in the wrong tense."
   },
   "wrong": [
    {
-    "zh": "「いいえ」是不能，后面却说已经做好了，前后矛盾。",
-    "en": "「いいえ」 says no, then it says it's already done — a contradiction."
+    "zh": "嘴上说「はい」，可是「らいしゅう」才做，赶不上星期五。",
+    "en": "It says 「はい」 but puts it off to 「らいしゅう」 — after Friday."
    },
    null,
    {
@@ -462,9 +462,9 @@
    }
   ],
   "traps": [
-   "contradiction",
    "repeat-word",
-   "tense"
+   "tense",
+   "later"
   ]
  }
 ]

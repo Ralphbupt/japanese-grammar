@@ -266,7 +266,7 @@
    ],
    [
     "M",
-    "俺、来月から海外の取引先の担当になるから、英文メールかなって思ってたんだけど。"
+    "俺、来月から海外の取引先の担当になるから、英語のメールのにしようかと思ってたんだけど。"
    ],
    [
     "F2",
@@ -274,7 +274,7 @@
    ],
    [
     "M",
-    "でもさ、前の担当の先輩が書いたメールが全部残ってて、それを手本にすれば、だいたい何とかなりそうなんだよ。それより気が重いのは、向こうの担当者が、値段のことになると一歩も引かない人だって聞いてることでね。"
+    "でもさ、前の担当の先輩が書いたメールが全部残ってて、それを手本にすれば、だいたい何とかなりそうなんだよ。それより気が重いのは、向こうの担当者が、値段の話になると一歩も引かない人だって聞いてることでね。"
    ],
    [
     "F2",
@@ -282,7 +282,7 @@
    ],
    [
     "M",
-    "人前で話すのも自信はないんだけど、平日の夜は子どもの保育園のお迎えがあるから無理だし。土曜なら妻に頼めるから、それにするよ。"
+    "人前で話すのも自信はないんだけど、平日の夜は子どもの保育園のお迎えがあるからなあ。週末なら妻に頼めるし……うん、決めた。"
    ],
    [
     "F2",
@@ -294,15 +294,15 @@
    ],
    [
     "F2",
-    "それは得意なほうだから、わざわざ習わなくても。来月から販売データをまとめる仕事が回ってくるから、本当は分析が一番役に立つんだけど、表計算、ほとんど使えないし……。"
+    "それは得意なほうだから、わざわざ習わなくても。来月から販売データをまとめる仕事が回ってくるから、本当はそれに役立つのを取りたいんだけど、あれ、条件があったでしょう。私、表計算、ほとんど使えないし……。"
    ],
    [
     "M",
-    "え、先月、社内の表計算の講習、受けてなかった？ あれ、基本操作のコースだろ。"
+    "え、先月、社内の講習、受けてなかった？ あれ、基本操作のコースだろ。"
    ],
    [
     "F2",
-    "あ、そうだった。修了証ももらったんだ。じゃあ条件は満たしてるのか。それにする。"
+    "あ、そうだった。修了証ももらったんだ。じゃあ、迷うことないね。"
    ]
   ],
   "options": [
@@ -316,13 +316,13 @@
     "question": "質問1：男の人は、どのコースを選びますか。",
     "answer": 0,
     "why": {
-     "zh": "依据：男的说：「向こうの担当者が、値段のことになると一歩も引かない人だって聞いてる」，又说：「土曜なら妻に頼めるから、それにするよ。」\n推理：他本来想选英文邮件，但前任留下的邮件可以当范本，「何とかなりそう」。他真正担心的是和对方谈价格。演讲课在平日晚上，他要去保育园接孩子；交涉课在星期六，可以托妻子照看，所以选交涉。\n容易错：一开始想选的英文邮件；演讲他也没自信，但时间不行。",
-     "en": "Evidence: The man says: 「向こうの担当者が、値段のことになると一歩も引かない人だって聞いてる」 and 「土曜なら妻に頼めるから、それにするよ。」\nReasoning: He first thinks of business email, but his predecessor's emails can serve as models, so 「何とかなりそう」. What really worries him is negotiating prices. The speaking course is on weekday evenings, when he collects his child from nursery; the negotiation course is on Saturdays, when his wife can help, so he chooses it.\nTrap: the email course he first considered; speaking, which he also lacks confidence in, but the timing rules it out."
+     "zh": "依据：男的说对方负责人「値段の話になると一歩も引かない」，又说「平日の夜は子どもの保育園のお迎えがある」「週末なら妻に頼めるし……うん、決めた。」\n推理：他没说出课程名。英文邮件有前任的邮件当范本，「何とかなりそう」；他真正担心的是谈价格，对应以“和客户谈价格”为内容的交涉课。演讲课在平日晚上，他要接孩子；交涉课在星期六，正好能托妻子，所以选交涉。\n容易错：一开始想选的英文邮件；演讲他也没自信，但时间不行。",
+     "en": "Evidence: The man says their contact 「値段の話になると一歩も引かない」, then 「平日の夜は子どもの保育園のお迎えがある」 and 「週末なら妻に頼めるし……うん、決めた。」\nReasoning: He never names the course. The email course he can manage with his predecessor's emails as models, 「何とかなりそう」; what really worries him is price talks, which matches the negotiation course built around negotiating prices with clients. The speaking course is on weekday evenings, when he collects his child; the negotiation course is on Saturdays, when his wife can help, so that's his choice.\nTrap: the email course he first considered; speaking, which he also lacks confidence in, but the timing rules it out."
     },
     "wrong": [
      null,
      {
-      "zh": "平日晚上要去保育园接孩子，「無理」。",
+      "zh": "平日晚上要去保育园接孩子。",
       "en": "Weekday evenings clash with collecting his child."
      },
      {
@@ -339,8 +339,8 @@
     "question": "質問2：女の人は、どのコースを選びますか。",
     "answer": 2,
     "why": {
-     "zh": "依据：女的说：「本当は分析が一番役に立つんだけど」，被提醒上个月上过表计算课后说：「じゃあ条件は満たしてるのか。それにする。」\n推理：她想学英语，但英文邮件在星期三早上，那天要带母亲去医院。演讲她「得意なほう」，不用学。数据分析对下个月的工作最有用，她以为自己不会用表计算、不符合条件，但男的提醒她上个月上过基本操作的课，所以选数据分析。\n容易错：她最想学的英语时间不行；以为不符合条件就排除了数据分析。",
-     "en": "Evidence: The woman says: 「本当は分析が一番役に立つんだけど」, and after being reminded of last month's spreadsheet course: 「じゃあ条件は満たしてるのか。それにする。」\nReasoning: She wants to study English, but the email course is on Wednesday mornings, when she takes her mother to hospital. She's 「得意なほう」 at speaking, so doesn't need it. Data analysis is most useful for next month's work; she thinks she fails the spreadsheet requirement, but he reminds her she took the basic course last month, so she picks it.\nTrap: English, which she most wants, at an impossible time; ruling out data analysis because she wrongly thought she didn't qualify."
+     "zh": "依据：女的说想选对整理销售数据有用的课，但「あれ、条件があったでしょう」「表計算、ほとんど使えない」；被提醒上过基本操作的课后说：「じゃあ、迷うことないね。」\n推理：她也没说出课程名。有听课条件（会表格软件的基本操作）的是数据分析课，它对整理销售数据也最有用。英文邮件在星期三早上，那天要带母亲去医院；演讲她「得意なほう」。男的提醒她上个月上过基本操作的课，条件满足了，所以选数据分析。\n容易错：她最想学的英语时间不行；以为不符合条件就排除了数据分析。",
+     "en": "Evidence: She wants the course that helps with compiling sales data, but says 「あれ、条件があったでしょう」 and 「表計算、ほとんど使えない」; reminded of the basic course, she says 「じゃあ、迷うことないね。」\nReasoning: She doesn't name the course either. The one with a requirement — basic spreadsheet skills — is data analysis, which is also what helps with sales data. The email course is on Wednesday mornings, when she takes her mother to hospital; she's 「得意なほう」 at speaking. He reminds her she took the basic course last month, so she meets the requirement and picks data analysis.\nTrap: English, which she most wants, at an impossible time; ruling out data analysis because she wrongly thought she didn't qualify."
     },
     "wrong": [
      {
@@ -368,16 +368,16 @@
     ],
     "lines": [
      "下面介绍下个月开始的外部培训。今年请从四门课程中选一门。第一门是“谈判技巧”。连续两周的星期六全天，以和客户谈价格等情境为设想，以角色扮演为主进行。第二门是“当众讲话的技巧”。平日晚上七点开始，一共四次。每次都会把大家讲话的样子录下来，由讲师逐一点评。第三门是“数据分析基础”。是在线课程，只要在期限内，随时都可以按自己的节奏进行。不过，听课条件是会表格软件的基本操作。第四门是“英文商务邮件”。每周三早上八点开始一个小时，持续三个月。最后有结业考试。报名截止到本周五。",
-     "我下个月开始负责海外客户，所以想着选英文邮件吧。",
+     "我下个月开始负责海外客户，所以想着选英语邮件那门。",
      "不错啊，正合适嘛。",
      "可是啊，前任前辈写的邮件全都留着，拿那个当范本，大概就能应付。比起那个，让我头疼的是，听说对方的负责人一谈到价格就寸步不让。",
      "啊，那可够呛。",
-     "当众讲话我也没自信，不过平日晚上要去保育园接孩子，不行。星期六的话可以拜托我太太，就选那个吧。",
+     "当众讲话我也没自信，不过平日晚上要去保育园接孩子啊。周末的话可以拜托我太太……嗯，决定了。",
      "我呢，一直想重新学英语。可星期三早上是我带妈妈去医院的日子。",
      "这样啊。当众讲话呢？",
-     "那个我算是拿手的，用不着特意去学。下个月开始整理销售数据的工作会轮到我，其实分析最有用，可表格软件我几乎不会用……。",
-     "咦，上个月你不是上过公司内部的表格软件课吗？那是基本操作的课程吧。",
-     "啊，对哦。还拿到结业证了。那就符合条件了。就选那个。"
+     "那个我算是拿手的，用不着特意去学。下个月开始整理销售数据的工作会轮到我，其实想选对那个有用的课，可那门课有条件吧。我表格软件几乎不会用……。",
+     "咦，上个月你不是上过公司内部的培训吗？那是基本操作的课程吧。",
+     "啊，对哦。还拿到结业证了。那就没什么可犹豫的了。"
     ],
     "options": [
      "谈判技巧",
@@ -394,16 +394,16 @@
     ],
     "lines": [
      "Here's some information about the external training starting next month. This year, please choose one of four courses. The first is 'Negotiation skills'. Over two consecutive Saturdays, all day, it's mainly role-play, imagining situations such as negotiating prices with clients. The second is 'Speaking in public'. Weekday evenings from seven, four sessions in all. Each time, we record you speaking and the instructor gives individual feedback. The third is 'Basics of data analysis'. It's an online course, so you can work through it at your own pace any time within the period. However, you need to be able to do basic operations in spreadsheet software to take it. The fourth is 'Business email in English'. Every Wednesday, one hour from eight in the morning, for three months. There's a final test at the end. Applications close this Friday.",
-     "I'm taking over our overseas clients next month, so I was thinking the English email one.",
+     "I'm taking over our overseas clients next month, so I was thinking of the English email one.",
      "Sounds good, doesn't it? Perfect for you.",
-     "But, you know, all the emails my predecessor wrote are still there, and if I use them as models I should mostly manage. What's weighing on me more is that I hear their person is someone who won't give an inch on price.",
+     "But, you know, all the emails my predecessor wrote are still there, and if I use them as models I should mostly manage. What's weighing on me more is that I hear their person won't give an inch once it comes to price.",
      "Oh, that sounds tough.",
-     "I'm not confident speaking in public either, but weekday evenings I have to collect my kid from nursery, so that's out. On Saturdays I can ask my wife, so I'll go with that.",
+     "I'm not confident speaking in public either, but weekday evenings I have to collect my kid from nursery. At the weekend I can ask my wife… Right, that's decided.",
      "Me, I've always wanted to brush up my English. But Wednesday mornings are when I take my mother to the hospital.",
      "I see. What about speaking in public?",
-     "I'm fairly good at that, so there's no need to learn it. From next month I'll be put on compiling sales data, so analysis would really be the most useful, but I can hardly use spreadsheets…",
-     "Hang on, didn't you do the in-house spreadsheet course last month? That was the basic operations course, wasn't it?",
-     "Oh, that's right. I even got a certificate. So I do meet the requirement. I'll take that one."
+     "I'm fairly good at that, so there's no need to learn it. From next month I'll be put on compiling sales data, so really I'd like the one that would help with that, but that one has a requirement, doesn't it? I can hardly use spreadsheets…",
+     "Hang on, didn't you do the in-house course last month? That was the basic operations course, wasn't it?",
+     "Oh, that's right. I even got a certificate. Then there's nothing to think about."
     ],
     "options": [
      "Negotiation skills",
