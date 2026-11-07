@@ -1,0 +1,555 @@
+[
+  {
+    "id": "n5-m2-101",
+    "type": "bunpou",
+    "refs": [
+      "lesson02#6"
+    ],
+    "difficulty": 1,
+    "stem": "この 店は あさ 10時（　） よる 8時までです。",
+    "options": [
+      "から",
+      "まで",
+      "に",
+      "で"
+    ],
+    "answer": 0,
+    "full": "この 店は あさ 10時から よる 8時までです。",
+    "kj": "この店は朝10時から夜8時までです。",
+    "tr": {
+      "zh": "这家店从早上十点营业到晚上八点。",
+      "en": "This shop is open from 10 a.m. to 8 p.m."
+    },
+    "why": {
+      "zh": "线索：后面有「よる 8時まで」，说的是营业时间的“到”，前面缺的是“从”。\n规则：时间或地点的起点用「から」，终点用「まで」，常成对出现：「9時から 5時まで」「東京から 大阪まで」。",
+      "en": "Clue: 「よる 8時まで」 follows — the \"until\" of the opening hours — so the blank is the \"from\".\nRule: A starting point in time or place takes 「から」 and the end 「まで」; they often come as a pair: 「9時から 5時まで」, 「東京から 大阪まで」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "后面已经有「8時まで」，前面再用「まで」，两个“到”，意思不通。",
+        "en": "「8時まで」 already follows; two \"untils\" make no sense."
+      },
+      {
+        "zh": "「10時に」表示某个时间点做某事，不能和「まで」组成时间范围。",
+        "en": "「10時に」 marks a point in time; it can't pair with 「まで」 to make a span."
+      },
+      {
+        "zh": "「で」表示场所、手段，不表示时间的起点。",
+        "en": "「で」 marks a place or means, not a starting time."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-102",
+    "type": "bunpou",
+    "refs": [
+      "lesson06#2"
+    ],
+    "difficulty": 1,
+    "stem": "あしたは テストが ありますから、こんばん（　）。",
+    "options": [
+      "べんきょうしなくても いいです",
+      "べんきょうしなければ なりません",
+      "べんきょうしては いけません",
+      "べんきょうした ことが あります"
+    ],
+    "okj": [
+      "勉強しなくても いいです",
+      "勉強しなければ なりません",
+      "勉強しては いけません",
+      "勉強した ことが あります"
+    ],
+    "answer": 1,
+    "full": "あしたは テストが ありますから、こんばん べんきょうしなければ なりません。",
+    "kj": "明日はテストがありますから、今晩勉強しなければなりません。",
+    "tr": {
+      "zh": "明天有考试，所以今晚必须学习。",
+      "en": "I have a test tomorrow, so I have to study tonight."
+    },
+    "why": {
+      "zh": "线索：「テストが ありますから」，因为有考试，今晚的学习是不得不做的事。\n规则：“必须……”用「ない形去掉い＋ければ なりません」：「しない」→「しなければ なりません」。",
+      "en": "Clue: 「テストが ありますから」 — because of the test, studying tonight is something you have to do.\nRule: \"Must ~\" is the ない-form minus い ＋ 「ければ なりません」: 「しない」 → 「しなければ なりません」."
+    },
+    "wrong": [
+      {
+        "zh": "「しなくても いいです」是“不用学”，和“明天有考试”这个理由对不上。",
+        "en": "「しなくても いいです」 (needn't study) doesn't follow from having a test tomorrow."
+      },
+      null,
+      {
+        "zh": "「しては いけません」是“不许学”，有考试反而不许学，说不通。",
+        "en": "「しては いけません」 (mustn't study) makes no sense before a test."
+      },
+      {
+        "zh": "「した ことが あります」讲过去的经历，和「こんばん」（今晚）时间对不上。",
+        "en": "「した ことが あります」 is past experience; it clashes with 「こんばん」 (tonight)."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-103",
+    "type": "bunpou",
+    "refs": [
+      "lesson05#5"
+    ],
+    "difficulty": 2,
+    "stem": "わたしは 毎日 シャワーを（　） 学校へ 行きます。",
+    "options": [
+      "あびながら",
+      "あびてから",
+      "あびる あとで",
+      "あびた まえに"
+    ],
+    "okj": [
+      "浴びながら",
+      "浴びてから",
+      "浴びる 後で",
+      "浴びた 前に"
+    ],
+    "answer": 1,
+    "full": "わたしは 毎日 シャワーを あびてから 学校へ 行きます。",
+    "kj": "私は毎日シャワーを浴びてから学校へ行きます。",
+    "tr": {
+      "zh": "我每天冲完澡再去学校。",
+      "en": "Every day I take a shower and then go to school."
+    },
+    "why": {
+      "zh": "线索：先冲澡，再去学校，两件事有先后顺序。\n规则：“做完 A 再做 B”用「て形＋から」：「あびて」→「あびてから」。",
+      "en": "Clue: first the shower, then school — two actions in order.\nRule: \"Do A, then B\" is て-form ＋ 「から」: 「あびて」 → 「あびてから」."
+    },
+    "wrong": [
+      {
+        "zh": "「あびながら」是“一边冲澡一边去学校”，两件事不可能同时做。",
+        "en": "「あびながら」 would mean going to school while showering — impossible."
+      },
+      null,
+      {
+        "zh": "「あとで」前面要用た形（「あびた あとで」），「あびる あとで」不成立。",
+        "en": "「あとで」 takes the た-form (「あびた あとで」); 「あびる あとで」 is wrong."
+      },
+      {
+        "zh": "「まえに」前面要用辞书形（「あびる まえに」），「あびた まえに」不成立。",
+        "en": "「まえに」 takes the dictionary form (「あびる まえに」); 「あびた まえに」 is wrong."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-104",
+    "type": "bunpou",
+    "refs": [
+      "lesson17#2"
+    ],
+    "difficulty": 2,
+    "stem": "日曜日、デパートへ くつを（　） 行きました。",
+    "options": [
+      "買いに",
+      "買うに",
+      "買いて",
+      "買ったに"
+    ],
+    "answer": 0,
+    "full": "日曜日、デパートへ くつを 買いに 行きました。",
+    "kj": "日曜日、デパートへ靴を買いに行きました。",
+    "tr": {
+      "zh": "星期天我去百货商店买鞋了。",
+      "en": "On Sunday I went to the department store to buy shoes."
+    },
+    "why": {
+      "zh": "线索：「デパートへ」＋「行きました」，空格说的是去的目的（买鞋）。\n规则：“去做……”用「ます形去掉ます＋に 行く」：「買います」→「買いに 行く」。",
+      "en": "Clue: 「デパートへ」 ＋ 「行きました」 — the blank is the purpose of going (buying shoes).\nRule: \"Go to do ~\" is the ます-stem ＋ 「に 行く」: 「買います」 → 「買いに 行く」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に 行く」前面用ます形去掉ます，不用辞书形「買う」。",
+        "en": "「に 行く」 takes the ます-stem, not the dictionary form 「買う」."
+      },
+      {
+        "zh": "「買う」的て形是「買って」，没有「買いて」。",
+        "en": "The て-form of 「買う」 is 「買って」; 「買いて」 doesn't exist."
+      },
+      {
+        "zh": "目的不用た形，「買ったに」不成立。",
+        "en": "A purpose doesn't use the た-form; 「買ったに」 is wrong."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-105",
+    "type": "bunpou",
+    "refs": [
+      "lesson08#4"
+    ],
+    "difficulty": 1,
+    "stem": "毎日 れんしゅうして、日本語が 少し（　） なりました。",
+    "options": [
+      "じょうずで",
+      "じょうずな",
+      "じょうずく",
+      "じょうずに"
+    ],
+    "okj": [
+      "上手で",
+      "上手な",
+      null,
+      "上手に"
+    ],
+    "answer": 3,
+    "full": "毎日 れんしゅうして、日本語が 少し じょうずに なりました。",
+    "kj": "毎日練習して、日本語が少し上手になりました。",
+    "tr": {
+      "zh": "每天练习，日语变得好一点了。",
+      "en": "I practiced every day, and my Japanese got a little better."
+    },
+    "why": {
+      "zh": "线索：空格后是「なりました」（变得……），前面是な形容词「じょうず」。\n规则：な形容词接「なる」要变成「〜に」：「じょうずに なる」「しずかに なる」；い形容词才变「〜く」（「大きく なる」）。",
+      "en": "Clue: 「なりました」 (became) follows, and the word is the な-adjective 「じょうず」.\nRule: A な-adjective before 「なる」 becomes 「〜に」: 「じょうずに なる」, 「しずかに なる」; only い-adjectives take 「〜く」 (「大きく なる」)."
+    },
+    "wrong": [
+      {
+        "zh": "「じょうずで」是连接下一句的形式（「じょうずで、…」），不能接「なる」。",
+        "en": "「じょうずで」 links to another clause; it can't go before 「なる」."
+      },
+      {
+        "zh": "「じょうずな」后面要接名词（「じょうずな 人」），不能接「なる」。",
+        "en": "「じょうずな」 needs a noun after it (「じょうずな 人」), not 「なる」."
+      },
+      {
+        "zh": "「〜く」是い形容词的变法，「じょうず」是な形容词。",
+        "en": "「〜く」 is for い-adjectives; 「じょうず」 is a な-adjective."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n5-m2-106",
+    "type": "bunpou",
+    "refs": [
+      "lesson15#9"
+    ],
+    "difficulty": 2,
+    "stem": "雨の（　）は、バスで 学校へ 行きます。",
+    "options": [
+      "まえ",
+      "ので",
+      "とき",
+      "から"
+    ],
+    "answer": 2,
+    "full": "雨の ときは、バスで 学校へ 行きます。",
+    "kj": "雨の時は、バスで学校へ行きます。",
+    "tr": {
+      "zh": "下雨的时候，我坐公交车去学校。",
+      "en": "When it rains, I take the bus to school."
+    },
+    "why": {
+      "zh": "线索：空格前是「雨の」，后面是「は」，说的是在什么情况下坐公交车。\n规则：名词说“……的时候”用「名词＋の＋とき」：「雨の とき」「子どもの とき」。",
+      "en": "Clue: 「雨の」 comes before the blank and 「は」 after it — the situation in which you take the bus.\nRule: \"When (it's) ~\" with a noun is noun ＋ 「の」 ＋ 「とき」: 「雨の とき」, 「子どもの とき」."
+    },
+    "wrong": [
+      {
+        "zh": "「雨の まえ」是“下雨之前”，下雨前就坐公交车，意思说不通。",
+        "en": "「雨の まえ」 would be \"before the rain\" — it makes no sense here."
+      },
+      {
+        "zh": "名词接「ので」要说「雨なので」，「雨のので」不成立，后面也不能接「は」。",
+        "en": "A noun takes 「なので」 (「雨なので」); 「雨のので」 is wrong, and 「は」 can't follow it."
+      },
+      null,
+      {
+        "zh": "名词接「から」要说「雨だから」，「雨の から」不成立。",
+        "en": "A noun takes 「だから」 (「雨だから」); 「雨の から」 is wrong."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-107",
+    "type": "bunpou",
+    "refs": [
+      "lesson17#6"
+    ],
+    "difficulty": 3,
+    "stem": "A「きのう、デパートで 何を 買いましたか。」\nB「くつした（　） 買いました。お金が あまり ありませんでしたから。」",
+    "options": [
+      "と",
+      "しか",
+      "や",
+      "だけ"
+    ],
+    "answer": 3,
+    "full": "A「きのう、デパートで 何を 買いましたか。」 B「くつしただけ 買いました。お金が あまり ありませんでしたから。」",
+    "kj": "A「昨日、デパートで何を買いましたか。」\nB「靴下だけ買いました。お金があまりありませんでしたから。」",
+    "tr": {
+      "zh": "A：昨天在百货商店买了什么？ B：只买了袜子。因为钱不太够。",
+      "en": "A: What did you buy at the department store yesterday? B: Just socks. I didn't have much money."
+    },
+    "why": {
+      "zh": "线索：「お金が あまり ありませんでしたから」，钱不多，所以只买了一样东西；动词是肯定的「買いました」。\n规则：“只……”用「名词＋だけ」，后面接肯定：「くつしただけ 買いました」。「しか」也表示“只”，但后面一定要接否定。",
+      "en": "Clue: 「お金が あまり ありませんでしたから」 — not much money, so only one thing; the verb 「買いました」 is affirmative.\nRule: \"Only ~\" is noun ＋ 「だけ」 with an affirmative verb: 「くつしただけ 買いました」. 「しか」 also means only, but it always needs a negative."
+    },
+    "wrong": [
+      {
+        "zh": "「と」也要连接两个名词（「AとB」），「くつしたと 買いました」不成立。",
+        "en": "「と」 also needs a second noun (「A と B」); 「くつしたと 買いました」 is wrong."
+      },
+      {
+        "zh": "「しか」后面要接否定（「くつしたしか 買いませんでした」），这里是肯定的「買いました」。",
+        "en": "「しか」 needs a negative (「くつしたしか 買いませんでした」), but the verb here is affirmative."
+      },
+      {
+        "zh": "「や」要连接两个以上的名词（「AやB」），后面只有动词，不成立。",
+        "en": "「や」 joins two or more nouns (「A や B」); with only a verb after it, it doesn't work."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n5-m2-108",
+    "type": "bunpou",
+    "refs": [
+      "lesson13#1"
+    ],
+    "difficulty": 2,
+    "stem": "A「田中さんは 来ますか。」\nB「さっき 電話が ありましたから、もうすぐ 来る（　）。」",
+    "options": [
+      "ですか",
+      "ましょう",
+      "でした",
+      "でしょう"
+    ],
+    "answer": 3,
+    "full": "A「田中さんは 来ますか。」 B「さっき 電話が ありましたから、もうすぐ 来るでしょう。」",
+    "kj": "A「田中さんは来ますか。」\nB「さっき電話がありましたから、もうすぐ来るでしょう。」",
+    "tr": {
+      "zh": "A：田中先生会来吗？ B：刚才来过电话，应该快到了吧。",
+      "en": "A: Is Mr. Tanaka coming? B: He called a little while ago, so he'll probably be here soon."
+    },
+    "why": {
+      "zh": "线索：「さっき 電話が ありましたから」是根据，「もうすぐ」是还没发生的事，B 在推测。\n规则：推测“大概……吧”用「辞书形＋でしょう」：「来るでしょう」「雨でしょう」。",
+      "en": "Clue: 「さっき 電話が ありましたから」 is the basis and 「もうすぐ」 points to the future — B is guessing.\nRule: \"Probably ~\" is dictionary form ＋ 「でしょう」: 「来るでしょう」, 「雨でしょう」."
+    },
+    "wrong": [
+      {
+        "zh": "「ですか」不能直接接动词，而且 B 是在回答，不是提问。",
+        "en": "「ですか」 can't follow a verb, and B is answering, not asking."
+      },
+      {
+        "zh": "「ましょう」接在ます形后面（「来ましょう」），是邀请，不能接「来る」。",
+        "en": "「ましょう」 attaches to the ます-stem (「来ましょう」) and is an invitation; it can't follow 「来る」."
+      },
+      {
+        "zh": "「でした」不能直接接动词，而且「もうすぐ」是将来，不用过去式。",
+        "en": "「でした」 can't follow a verb, and 「もうすぐ」 is about the future."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n5-m2-109",
+    "type": "bunpou",
+    "refs": [
+      "lesson06#3"
+    ],
+    "difficulty": 3,
+    "stem": "A「この しゅくだいは あした 出さなければ なりませんか。」\nB「いいえ、（　）。来週でも いいですよ。」",
+    "options": [
+      "出さなければ なりません",
+      "出さなくても いいです",
+      "出しましょう",
+      "出した ことが あります"
+    ],
+    "answer": 1,
+    "full": "A「この しゅくだいは あした 出さなければ なりませんか。」 B「いいえ、出さなくても いいです。来週でも いいですよ。」",
+    "kj": "A「この宿題は明日出さなければなりませんか。」\nB「いいえ、出さなくてもいいです。来週でもいいですよ。」",
+    "tr": {
+      "zh": "A：这个作业明天必须交吗？ B：不，不用交。下周交也可以。",
+      "en": "A: Do I have to hand in this homework tomorrow? B: No, you don't have to. Next week is fine too."
+    },
+    "why": {
+      "zh": "线索：A 问“必须交吗”，B 先说「いいえ」，后面又说「来週でも いいですよ」。\n规则：回答“不必……”用「ない形去掉い＋くても いいです」：「出さない」→「出さなくても いいです」。",
+      "en": "Clue: A asks \"must I?\", B says 「いいえ」 and then 「来週でも いいですよ」.\nRule: \"You don't have to ~\" is the ない-form minus い ＋ 「くても いいです」: 「出さない」 → 「出さなくても いいです」."
+    },
+    "wrong": [
+      {
+        "zh": "「出さなければ なりません」是“必须交”，和前面的「いいえ」、后面的「来週でも いい」矛盾。",
+        "en": "「出さなければ なりません」 (must) contradicts 「いいえ」 and 「来週でも いい」."
+      },
+      null,
+      {
+        "zh": "「出しましょう」是“交吧”，回答不了“必须吗”，也和「来週でも いい」对不上。",
+        "en": "「出しましょう」 (let's hand it in) doesn't answer \"must I?\" and clashes with 「来週でも いい」."
+      },
+      {
+        "zh": "「出した ことが あります」讲过去的经历，回答不了“明天必须交吗”。",
+        "en": "「出した ことが あります」 is past experience; it doesn't answer the question."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-110",
+    "type": "narabe",
+    "refs": [
+      "lesson07#3"
+    ],
+    "difficulty": 1,
+    "stem": "日曜日は [_] [_] [_] [★] 見たり します。",
+    "options": [
+      "テレビを",
+      "せんたくを",
+      "シャツの",
+      "したり"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "日曜日は シャツの せんたくを したり テレビを 見たり します。",
+    "kj": "日曜日はシャツの洗濯をしたりテレビを見たりします。",
+    "tr": {
+      "zh": "星期天我洗洗衬衫、看看电视什么的。",
+      "en": "On Sundays I do things like wash my shirts and watch TV."
+    },
+    "why": {
+      "zh": "线索：句尾「見たり します」，前面还缺一个「〜たり」，组成「〜たり〜たり する」（做做这个、做做那个）。\n怎么排：「見たり」前面要宾语「テレビを」；「せんたくを」接「したり」；「シャツの」修饰「せんたく」，放在最前。顺序：シャツの → せんたくを → したり → テレビを，★ 是「テレビを」。\n容易错：把「テレビを」放在前面。「〜を」要紧挨着自己的动词：「テレビを 見たり」。",
+      "en": "Clue: The sentence ends 「見たり します」, so another 「〜たり」 is missing: 「〜たり〜たり する」 (do things like ~ and ~).\nOrder: 「見たり」 needs its object 「テレビを」 right before it; 「せんたくを」 goes with 「したり」; 「シャツの」 describes 「せんたく」 and goes first: シャツの → せんたくを → したり → テレビを. The ★ is 「テレビを」.\nTrap: Putting 「テレビを」 early. A 「〜を」 stays right next to its own verb: 「テレビを 見たり」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-m2-111",
+    "type": "narabe",
+    "refs": [
+      "lesson05#3"
+    ],
+    "difficulty": 1,
+    "stem": "A「すみません、この へやで [_] [★] [_] [_] か。」\nB「ええ、どうぞ。」",
+    "options": [
+      "とっても",
+      "しゃしんを",
+      "いい",
+      "です"
+    ],
+    "okj": [
+      "撮っても",
+      "写真を",
+      null,
+      null
+    ],
+    "order": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "full": "A「すみません、この へやで しゃしんを とっても いいですか。」 B「ええ、どうぞ。」",
+    "kj": "A「すみません、この部屋で写真を撮ってもいいですか。」\nB「ええ、どうぞ。」",
+    "tr": {
+      "zh": "A：不好意思，这个房间里可以拍照吗？ B：可以，请。",
+      "en": "A: Excuse me, may I take pictures in this room? B: Yes, go ahead."
+    },
+    "why": {
+      "zh": "线索：B 回答「ええ、どうぞ」，是在允许；A 在问「〜ても いいですか」（可以……吗）。\n怎么排：「とっても」后面接「いい」「です」，再接句尾「か」；宾语「しゃしんを」放在「とっても」前面。顺序：しゃしんを → とっても → いい → です，★ 是「とっても」。\n容易错：把「いい」放在「とっても」前面。「て形＋も」后面才接「いい」。",
+      "en": "Clue: B answers 「ええ、どうぞ」, giving permission, so A is asking 「〜ても いいですか」 (may I ~?).\nOrder: 「とっても」 is followed by 「いい」 and 「です」, then the final 「か」; the object 「しゃしんを」 goes before 「とっても」: しゃしんを → とっても → いい → です. The ★ is 「とっても」.\nTrap: Putting 「いい」 before 「とっても」. 「いい」 comes after て-form ＋ 「も」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-m2-112",
+    "type": "narabe",
+    "refs": [
+      "lesson15#5"
+    ],
+    "difficulty": 2,
+    "stem": "きのうは [_] [_] [_] [★]、どこにも 行きませんでした。",
+    "options": [
+      "雨が",
+      "ふって",
+      "いた",
+      "ので"
+    ],
+    "okj": [
+      null,
+      "降って",
+      null,
+      null
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full": "きのうは 雨が ふって いたので、どこにも 行きませんでした。",
+    "kj": "昨日は雨が降っていたので、どこにも行きませんでした。",
+    "tr": {
+      "zh": "昨天一直在下雨，所以哪儿也没去。",
+      "en": "It was raining yesterday, so I didn't go anywhere."
+    },
+    "why": {
+      "zh": "线索：后半句「どこにも 行きませんでした」是结果，前面要说原因，用「〜ので」（因为）。\n怎么排：「雨が」接「ふって」，「ふって＋いた」连成「ふって いた」（一直在下），原因说完再接「ので」。顺序：雨が → ふって → いた → ので，★ 是「ので」。\n容易错：把「ので」放在「いた」前面。「ので」接在一句话的最后：「ふって いたので」。",
+      "en": "Clue: 「どこにも 行きませんでした」 is the result, so the first half gives the reason with 「〜ので」 (because).\nOrder: 「雨が」 goes with 「ふって」, 「ふって」 ＋ 「いた」 make 「ふって いた」 (was raining), and 「ので」 closes the reason: 雨が → ふって → いた → ので. The ★ is 「ので」.\nTrap: Putting 「ので」 before 「いた」. 「ので」 comes at the very end of the clause: 「ふって いたので」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n5-m2-113",
+    "type": "narabe",
+    "refs": [
+      "lesson17#5"
+    ],
+    "difficulty": 3,
+    "stem": "スーパーで [_] [★] [_] [_] を 買いました。",
+    "options": [
+      "りんごや",
+      "などの",
+      "みかん",
+      "くだもの"
+    ],
+    "okj": [
+      null,
+      null,
+      null,
+      "果物"
+    ],
+    "order": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "full": "スーパーで りんごや みかんなどの くだものを 買いました。",
+    "kj": "スーパーでりんごやみかんなどの果物を買いました。",
+    "tr": {
+      "zh": "我在超市买了苹果、橘子等水果。",
+      "en": "I bought fruit like apples and mandarins at the supermarket."
+    },
+    "why": {
+      "zh": "线索：「や」和「など」能组成「AやBなど」（A、B 等），后面的「の」说明它们修饰一个名词。\n怎么排：「りんごや」后面接另一个例子「みかん」，再接「などの」，最后是总称「くだもの」，接句尾「を」。顺序：りんごや → みかん → などの → くだもの，★ 是「みかん」。\n容易错：把「くだもの」放在「などの」前面。「AやBなどの＋名词」，名词是总称，放在最后。",
+      "en": "Clue: 「や」 and 「など」 make 「A や B など」 (A, B and so on), and the 「の」 shows they describe a noun.\nOrder: 「りんごや」 is followed by a second example, 「みかん」, then 「などの」, and last the general word 「くだもの」 before 「を」: りんごや → みかん → などの → くだもの. The ★ is 「みかん」.\nTrap: Putting 「くだもの」 before 「などの」. In 「A や B などの ＋ noun」 the general noun comes last."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

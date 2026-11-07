@@ -20,7 +20,7 @@ passes. {key} is a hash of the descriptions, so editing a description draws a
 new picture and leaves the old file unused. Incremental: existing files are skipped.
 Key: ~/.config/storyanim/gemini_key.
 """
-import argparse, base64, hashlib, io, json, pathlib, sys, time, urllib.request, urllib.error
+import fcntl, argparse, base64, hashlib, io, json, pathlib, sys, time, urllib.request, urllib.error
 from PIL import Image
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -206,10 +206,16 @@ def main():
         print(f"{q['id']} {kind} {key}: {'FAILED — ' + problem if problem else 'ok'}", flush=True)
         if problem: failed.append(q["id"]); continue
         if kind == "options":
-            index[q["id"]] = {"opts": [f"o{key}-{i + 1}.webp" for i in range(4)], "src": q["optionImages"]}
+            entry = {"opts": [f"o{key}-{i + 1}.webp" for i in range(4)], "src": q["optionImages"]}
         else:
-            index[q["id"]] = {"scene": f"s{key}.webp", "box": json.loads((OUT / f"s{key}.json").read_text())["box"], "src": q["picture"]}
-        INDEX.write_text(json.dumps(index, ensure_ascii=False, indent=0, sort_keys=True) + "\n")
+            entry = {"scene": f"s{key}.webp", "box": json.loads((OUT / f"s{key}.json").read_text())["box"], "src": q["picture"]}
+        # Re-read under a lock and merge: another run (another level) may have
+        # written the index since this one started.
+        with open(OUT / ".index.lock", "w") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            index = json.loads(INDEX.read_text()) if INDEX.exists() else {}
+            index[q["id"]] = entry
+            INDEX.write_text(json.dumps(index, ensure_ascii=False, indent=0, sort_keys=True) + "\n")
     if failed:
         print("not drawn (fix the description or retry):", ",".join(failed)); sys.exit(1)
 

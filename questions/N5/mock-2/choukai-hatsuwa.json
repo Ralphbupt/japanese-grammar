@@ -1,0 +1,290 @@
+[
+ {
+  "id": "n5-m2-ck-401",
+  "type": "hatsuwa",
+  "scene": "田中さんの うちに 電話を かけました。田中さんの お母さんが 出ました。田中さんと 話したいです。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A young man sitting at a desk in his own room, holding a phone to his ear and speaking. Nobody else is in the room.",
+   "arrow": "the young man holding the phone"
+  },
+  "options": [
+   "はい、田中です。どなたですか。",
+   "すみません、田中は 今 いません。",
+   "林です。田中さん、いますか。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "给田中家打电话。田中的妈妈接了电话。你想和田中说话。",
+    "question": "怎么说？",
+    "options": [
+     "喂，这里是田中家。请问您是哪位？",
+     "不好意思，田中现在不在。",
+     "我是林。田中在吗？"
+    ]
+   },
+   "en": {
+    "scene": "You call Tanaka's home and his mother answers. You want to speak to Tanaka.",
+    "question": "What do you say?",
+    "options": [
+     "Hello, Tanaka residence. Who is calling?",
+     "Sorry, Tanaka isn't in right now.",
+     "This is Hayashi. Is Tanaka there?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「田中さんの お母さんが 出ました。田中さんと 話したいです。」，说话的是打电话的男的。\n推理：打电话的人先报自己的名字，再问要找的人在不在：「林です。田中さん、いますか。」\n容易错：立场反了——「はい、田中です。どなたですか」「田中は 今 いません」都是接电话的田中家的人说的。",
+   "en": "Evidence: The scene: 「田中さんの お母さんが 出ました。田中さんと 話したいです。」 The speaker is the young man making the call.\nReasoning: The caller gives his own name and asks if the person is there: 「林です。田中さん、いますか。」\nTrap: reversed roles — 「はい、田中です。どなたですか」 and 「田中は 今 いません」 are what someone at Tanaka's home says."
+  },
+  "wrong": [
+   {
+    "zh": "「はい、田中です。どなたですか」是接电话的田中家的人说的。",
+    "en": "「はい、田中です。どなたですか」 is what someone answering at the Tanaka home says."
+   },
+   {
+    "zh": "「田中は 今 いません」是田中的家人回答的话，不是打电话的人说的。",
+    "en": "「田中は 今 いません」 is the family's answer, not the caller's line."
+   },
+   null
+  ],
+  "traps": [
+   "perspective"
+  ]
+ },
+ {
+  "id": "n5-m2-ck-402",
+  "type": "hatsuwa",
+  "scene": "電車の 中です。あなたは すわって います。前に おばあさんが 立って います。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "Inside a train carriage. A young man sits on a bench seat. Right in front of him an elderly woman stands holding a hand strap, a shopping bag on her arm.",
+   "arrow": "the young man sitting on the seat"
+  },
+  "options": [
+   "どうぞ、ここに すわって ください。",
+   "すみません、ここに すわっても いいですか。",
+   "どうも ありがとう ございます。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在电车里。你坐着。前面站着一位老奶奶。",
+    "question": "怎么说？",
+    "options": [
+     "请坐这里吧。",
+     "不好意思，我可以坐这里吗？",
+     "非常感谢。"
+    ]
+   },
+   "en": {
+    "scene": "You're on a train. You're sitting down, and an elderly woman is standing in front of you.",
+    "question": "What do you say?",
+    "options": [
+     "Please, sit here.",
+     "Excuse me, may I sit here?",
+     "Thank you very much."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「あなたは すわって います。前に おばあさんが 立って います。」，说话的是坐着的年轻男人。\n推理：他想把座位让给老奶奶，就是请对方坐：「どうぞ、ここに すわって ください」。\n容易错：立场反了——「すわっても いいですか」是自己想坐；「ありがとう ございます」是被让座的老奶奶说的。",
+   "en": "Evidence: The scene: 「あなたは すわって います。前に おばあさんが 立って います。」 The speaker is the young man in the seat.\nReasoning: He offers her his seat, inviting her to sit: 「どうぞ、ここに すわって ください」.\nTrap: reversed roles — 「すわっても いいですか」 asks to sit yourself; 「ありがとう ございます」 is what she says once offered the seat."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「すわっても いいですか」是请求自己坐，可是你已经坐着了。",
+    "en": "「すわっても いいですか」 asks to sit down yourself, but you're already sitting."
+   },
+   {
+    "zh": "「ありがとう ございます」是被让座的老奶奶说的。",
+    "en": "「ありがとう ございます」 is what the woman says when offered the seat."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n5-m2-ck-403",
+  "type": "hatsuwa",
+  "scene": "レストランで 子どもと カレーを 食べます。でも、スプーンが 一つだけです。店の 人に 言います。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A family restaurant. A woman and a small boy sit at a table with two plates of curry, but there is only one spoon on the table. The woman raises one hand toward a waiter who is walking past.",
+   "arrow": "the woman sitting at the table"
+  },
+  "options": [
+   "スプーンを もう 一つ もって きましょうか。",
+   "すみません、スプーンを もう 一つ ください。",
+   "はい、スプーンを もう 一つですね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在餐厅和孩子吃咖喱。可是只有一把勺子。对店员说。",
+    "question": "怎么说？",
+    "options": [
+     "我再给您拿一把勺子来吧？",
+     "不好意思，请再给我一把勺子。",
+     "好的，再要一把勺子是吧。"
+    ]
+   },
+   "en": {
+    "scene": "You're eating curry with your child at a restaurant, but there's only one spoon. You say to the staff:",
+    "question": "What do you say?",
+    "options": [
+     "Shall I bring you another spoon?",
+     "Excuse me, could I have one more spoon?",
+     "Certainly, one more spoon."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「スプーンが 一つだけです。店の 人に 言います。」，说话的是举手的女人。\n推理：她要向店员要东西，用「〜を ください」：「すみません、スプーンを もう 一つ ください」。\n容易错：立场反了——「もって きましょうか」是店员主动提出拿来；「〜ですね」是店员确认点单的话。",
+   "en": "Evidence: The scene: 「スプーンが 一つだけです。店の 人に 言います。」 The speaker is the woman raising her hand.\nReasoning: She is asking the staff for something, so 「〜を ください」: 「すみません、スプーンを もう 一つ ください」.\nTrap: reversed roles — 「もって きましょうか」 is the staff offering to bring one; 「〜ですね」 is the staff confirming the request."
+  },
+  "wrong": [
+   {
+    "zh": "「もって きましょうか」是店员主动提出去拿，可是需要勺子的是你。",
+    "en": "「もって きましょうか」 is the staff offering to fetch one, but you're the one who needs a spoon."
+   },
+   null,
+   {
+    "zh": "「〜ですね」是店员确认客人要求时说的话。",
+    "en": "「〜ですね」 is what the staff says to confirm your request."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n5-m2-ck-404",
+  "type": "hatsuwa",
+  "scene": "はじめての ところに 来ました。駅へ 行きたいですが、道が わかりません。ちかくの 人に 聞きます。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A quiet street. A young woman pulling a small suitcase stands looking around, turned toward an older man who is walking a dog along the pavement.",
+   "arrow": "the young woman with the suitcase"
+  },
+  "options": [
+   "駅まで いっしょに 行きましょうか。",
+   "駅は あの 白い たてものの 右ですよ。",
+   "すみません、駅は どこですか。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "来到一个第一次来的地方。想去车站，可是不认识路。问附近的人。",
+    "question": "怎么说？",
+    "options": [
+     "我陪你一起去车站吧？",
+     "车站在那栋白色建筑的右边哦。",
+     "不好意思，车站在哪里？"
+    ]
+   },
+   "en": {
+    "scene": "You're somewhere new. You want to go to the station but don't know the way. You ask someone nearby:",
+    "question": "What do you say?",
+    "options": [
+     "Shall I walk to the station with you?",
+     "The station is to the right of that white building.",
+     "Excuse me, where is the station?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「駅へ 行きたいですが、道が わかりません。ちかくの 人に 聞きます。」，说话的是拉着箱子的女人。\n推理：她不知道路，要问别人车站在哪里：「すみません、駅は どこですか」。\n容易错：立场反了——告诉别人路、提出陪着去，都是被问的人说的话。",
+   "en": "Evidence: The scene: 「駅へ 行きたいですが、道が わかりません。ちかくの 人に 聞きます。」 The speaker is the woman with the suitcase.\nReasoning: She doesn't know the way, so she asks where the station is: 「すみません、駅は どこですか」.\nTrap: reversed roles — giving directions or offering to walk along are the other person's lines."
+  },
+  "wrong": [
+   {
+    "zh": "「いっしょに 行きましょうか」是认识路的人提出陪着去，不是问路的人说的。",
+    "en": "「いっしょに 行きましょうか」 is an offer from someone who knows the way."
+   },
+   {
+    "zh": "这是在告诉别人路，可是不认识路的是你。",
+    "en": "This gives directions, but you're the one who doesn't know the way."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n5-m2-ck-405",
+  "type": "hatsuwa",
+  "scene": "あなたは パンやの 店の 人です。今、おきゃくさんが 来ました。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A small bakery with loaves of bread on the shelves. A female shop assistant in an apron stands behind the counter. A male customer is just opening the front door and stepping in.",
+   "arrow": "the female shop assistant behind the counter"
+  },
+  "options": [
+   "ありがとう ございました。",
+   "いらっしゃいませ。",
+   "いただきます。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "你是面包店的店员。现在有客人来了。",
+    "question": "怎么说？",
+    "options": [
+     "谢谢光临。",
+     "欢迎光临。",
+     "我开动了。"
+    ]
+   },
+   "en": {
+    "scene": "You work in a bakery. A customer has just come in.",
+    "question": "What do you say?",
+    "options": [
+     "Thank you very much (for coming).",
+     "Welcome!",
+     "Let's eat."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「あなたは パンやの 店の 人です。今、おきゃくさんが 来ました。」，说话的是柜台后面的女店员。\n推理：客人刚进门，店员迎接客人说「いらっしゃいませ」。\n容易错：时机不对——「ありがとう ございました」是客人买完要走时说的；「いただきます」是吃饭前说的。",
+   "en": "Evidence: The scene: 「あなたは パンやの 店の 人です。今、おきゃくさんが 来ました。」 The speaker is the assistant behind the counter.\nReasoning: A customer has just walked in, and staff greet them with 「いらっしゃいませ」.\nTrap: wrong moment — 「ありがとう ございました」 is for when a customer leaves after buying; 「いただきます」 is said before eating."
+  },
+  "wrong": [
+   {
+    "zh": "「ありがとう ございました」是客人买完东西离开时说的，客人才刚进来。",
+    "en": "「ありがとう ございました」 is for when the customer leaves; he has only just come in."
+   },
+   null,
+   {
+    "zh": "「いただきます」是吃饭前说的，和迎接客人没有关系。",
+    "en": "「いただきます」 is said before eating; it has nothing to do with greeting a customer."
+   }
+  ],
+  "traps": [
+   "timing"
+  ]
+ }
+]

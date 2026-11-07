@@ -1,0 +1,827 @@
+[
+  {
+    "id": "n5-m2-001",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "らいげつの <<五日>>に ともだちが きます。",
+    "options": [
+      "いつか",
+      "ごにち",
+      "いっか",
+      "いつつ"
+    ],
+    "kj": "来月の五日に友達が来ます。",
+    "answer": 0,
+    "tr": {
+      "zh": "下个月五号朋友要来。",
+      "en": "A friend is coming on the fifth of next month."
+    },
+    "why": {
+      "zh": "日期「五日」是特殊读法「いつか」，一号到十号大多用训读（「ふつか」「ようか」）。",
+      "en": "The date 「五日」 has the special reading いつか; days 1–10 mostly use native readings (ふつか, ようか)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ごにち」是按音读拼的，日期“五号”不这样读。",
+        "en": "ごにち pieces together on-readings; the fifth isn't read that way."
+      },
+      {
+        "zh": "没有「いっか」这个读法，「いつか」中间没有促音。",
+        "en": "いっか isn't a reading; いつか has no small っ."
+      },
+      {
+        "zh": "「いつつ」是「五つ」（五个），数东西用，不是日期。",
+        "en": "いつつ is 「五つ」 (five things), a count, not a date."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-002",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "きのう <<新しい>> くつを かいました。",
+    "options": [
+      "あたらしい",
+      "あだらしい",
+      "あらたしい",
+      "しんしい"
+    ],
+    "kj": "昨日新しい靴を買いました。",
+    "answer": 0,
+    "tr": {
+      "zh": "昨天我买了新鞋。",
+      "en": "I bought new shoes yesterday."
+    },
+    "why": {
+      "zh": "「新しい」（新）读「あたらしい」：あ・た・ら・し・い，顺序别弄反。",
+      "en": "「新しい」 (new) is あたらしい: a-ta-ra-shi-i — keep the order."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「た」不浊化，没有「あだらしい」。",
+        "en": "た isn't voiced; あだらしい isn't a word."
+      },
+      {
+        "zh": "把「た」和「ら」的顺序弄反了，要读「あたらしい」。",
+        "en": "た and ら are swapped; it's あたらしい."
+      },
+      {
+        "zh": "「しん」是「新」的音读（如「新聞」），「新しい」用训读。",
+        "en": "しん is the on-reading of 「新」 (as in 「新聞」); 「新しい」 uses the native reading."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-003",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "<<今週>>は とても いそがしいです。",
+    "options": [
+      "こんしゅう",
+      "こんしゅ",
+      "いましゅう",
+      "こんじゅう"
+    ],
+    "kj": "今週はとても忙しいです。",
+    "answer": 0,
+    "tr": {
+      "zh": "这周非常忙。",
+      "en": "I'm very busy this week."
+    },
+    "why": {
+      "zh": "「今週」（这周）读「こんしゅう」：「今」读「こん」，「週」读「しゅう」，是长音。",
+      "en": "「今週」 (this week) is こんしゅう: 「今」 is こん and 「週」 is しゅう, with a long vowel."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「週」是长音「しゅう」，漏了「う」。",
+        "en": "「週」 is しゅう with a long vowel; the う is missing."
+      },
+      {
+        "zh": "「いま」是「今」单独用时的读法，「今週」读「こん」。",
+        "en": "いま is 「今」 on its own; in 「今週」 it's こん."
+      },
+      {
+        "zh": "「しゅう」不浊化，没有「こんじゅう」。",
+        "en": "しゅう isn't voiced here; こんじゅう isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-004",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "ははに てがみを <<書きます>>。",
+    "options": [
+      "かきます",
+      "かいます",
+      "ききます",
+      "しょきます"
+    ],
+    "kj": "母に手紙を書きます。",
+    "answer": 0,
+    "tr": {
+      "zh": "我给妈妈写信。",
+      "en": "I'm writing a letter to my mother."
+    },
+    "why": {
+      "zh": "「書」是“写”，「書きます」读「かきます」，和「てがみを」搭配。",
+      "en": "「書」 means write; 「書きます」 is かきます, which goes with 「てがみを」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「かいます」是「買います」（买），只差一个假名。",
+        "en": "かいます is 「買います」 (buy) — one kana off."
+      },
+      {
+        "zh": "「ききます」是「聞きます」（听、问），汉字不同。",
+        "en": "ききます is 「聞きます」 (listen, ask), a different kanji."
+      },
+      {
+        "zh": "「しょ」是「書」的音读（如「図書館」），动词「書く」用训读。",
+        "en": "しょ is the on-reading of 「書」 (as in 「図書館」); the verb uses the native reading."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-005",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "こうえんで <<男の子>>が あそんで います。",
+    "options": [
+      "おどこのこ",
+      "おとこのこ",
+      "おんなのこ",
+      "だんのこ"
+    ],
+    "kj": "公園で男の子が遊んでいます。",
+    "answer": 1,
+    "tr": {
+      "zh": "男孩子在公园里玩。",
+      "en": "A boy is playing in the park."
+    },
+    "why": {
+      "zh": "「男の子」（男孩）读「おとこのこ」：「男」读「おとこ」。",
+      "en": "「男の子」 (boy) is おとこのこ: 「男」 is おとこ."
+    },
+    "wrong": [
+      {
+        "zh": "「と」不浊化，没有「おどこ」。",
+        "en": "と isn't voiced; おどこ isn't a word."
+      },
+      null,
+      {
+        "zh": "「おんなのこ」是「女の子」（女孩），汉字不同。",
+        "en": "おんなのこ is 「女の子」 (girl), a different kanji."
+      },
+      {
+        "zh": "「だん」是「男」的音读（如「男性」），「男の子」用训读。",
+        "en": "だん is the on-reading of 「男」 (as in 「男性」); 「男の子」 uses the native reading."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-006",
+    "type": "kanji",
+    "difficulty": 3,
+    "stem": "この ノートは <<百円>>です。",
+    "options": [
+      "ひゃくえん",
+      "びゃくえん",
+      "ひゃくねん",
+      "ひゃっえん"
+    ],
+    "kj": "このノートは百円です。",
+    "answer": 0,
+    "tr": {
+      "zh": "这个本子一百日元。",
+      "en": "This notebook is a hundred yen."
+    },
+    "why": {
+      "zh": "「百円」读「ひゃくえん」：「百」单独是「ひゃく」，「円」读「えん」。",
+      "en": "「百円」 is ひゃくえん: 「百」 alone is ひゃく and 「円」 is えん."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「びゃく」只出现在「三百（さんびゃく）」等后面，单独的「百」读「ひゃく」。",
+        "en": "びゃく only comes after some numbers (三百 さんびゃく); 「百」 alone is ひゃく."
+      },
+      {
+        "zh": "「円」读「えん」，「ねん」是「年」。",
+        "en": "「円」 is えん; ねん is 「年」 (year)."
+      },
+      {
+        "zh": "「百」后面接「えん」不变促音，没有「ひゃっえん」。",
+        "en": "ひゃく doesn't turn into ひゃっ before えん; ひゃっえん isn't a word."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-007",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "にわに きれいな <<花>>が さいて います。",
+    "options": [
+      "はな",
+      "ばな",
+      "はね",
+      "か"
+    ],
+    "kj": "庭にきれいな花が咲いています。",
+    "answer": 0,
+    "tr": {
+      "zh": "院子里开着漂亮的花。",
+      "en": "Pretty flowers are blooming in the garden."
+    },
+    "why": {
+      "zh": "单独的「花」（花）读训读「はな」。",
+      "en": "「花」 (flower) on its own takes the native reading はな."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ばな」只在复合词后半出现（如「生け花」），单独读「はな」。",
+        "en": "ばな only appears inside compounds; on its own it's はな."
+      },
+      {
+        "zh": "「はね」是「羽」（羽毛），不是花。",
+        "en": "はね is 「羽」 (feather), not flower."
+      },
+      {
+        "zh": "「か」是「花」的音读，只用在「花びん」（かびん）等词里，单独用读「はな」。",
+        "en": "か is the on-reading of 「花」, used in words like 「花びん」 (かびん); on its own it's はな."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-008",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "わたしの いえは まちの <<ひがし>>に あります。",
+    "options": [
+      "東",
+      "車",
+      "束",
+      "果"
+    ],
+    "kj": "私の家は町の東にあります。",
+    "answer": 0,
+    "tr": {
+      "zh": "我家在城镇的东边。",
+      "en": "My house is on the east side of town."
+    },
+    "why": {
+      "zh": "「ひがし」（东）写作「東」。",
+      "en": "ひがし (east) is written 「東」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「車」读「くるま」（车），字形相近但不是“东”。",
+        "en": "「車」 is くるま (car), similar in shape but not east."
+      },
+      {
+        "zh": "「束」读「たば」（捆），比「東」少了中间的「日」。",
+        "en": "「束」 is たば (bundle); it lacks the 「日」 in the middle."
+      },
+      {
+        "zh": "「果」读「か」（如「果物」），上面是「田」。",
+        "en": "「果」 is か (as in 「果物」), with 「田」 on top."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-009",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "<<まいにち>> にほんごを べんきょうして います。",
+    "options": [
+      "母日",
+      "海日",
+      "毎目",
+      "毎日"
+    ],
+    "kj": "毎日日本語を勉強しています。",
+    "answer": 3,
+    "tr": {
+      "zh": "我每天学习日语。",
+      "en": "I study Japanese every day."
+    },
+    "why": {
+      "zh": "「まいにち」（每天）写作「毎日」：「毎」＋「日」。",
+      "en": "まいにち (every day) is 「毎日」: 「毎」 + 「日」."
+    },
+    "wrong": [
+      {
+        "zh": "「母」读「はは」（母亲），上面少了「毎」的「𠂉」。",
+        "en": "「母」 is はは (mother); it lacks the top part of 「毎」."
+      },
+      {
+        "zh": "「海」读「うみ」（海），左边多了三点水。",
+        "en": "「海」 is うみ (sea) — it has the water radical on the left."
+      },
+      {
+        "zh": "「目」读「め」（眼睛），比「日」多一横。",
+        "en": "「目」 is め (eye) — one stroke more than 「日」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n5-m2-010",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "きのう <<ともだち>>と えいがを みました。",
+    "options": [
+      "友だち",
+      "反だち",
+      "支だち",
+      "皮だち"
+    ],
+    "kj": "昨日友達と映画を見ました。",
+    "answer": 0,
+    "tr": {
+      "zh": "昨天我和朋友看了电影。",
+      "en": "I saw a movie with a friend yesterday."
+    },
+    "why": {
+      "zh": "「ともだち」（朋友）写作「友だち」（也写「友達」）：「友」读「とも」。",
+      "en": "ともだち (friend) is 「友だち」 (also 「友達」): 「友」 is とも."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「反」读「はん」（相反），和「友」只差一笔。",
+        "en": "「反」 is はん (opposite) — one stroke away from 「友」."
+      },
+      {
+        "zh": "「支」读「し」（支持），上面是「十」。",
+        "en": "「支」 is し (support), with 「十」 on top."
+      },
+      {
+        "zh": "「皮」读「かわ」（皮），字形不同。",
+        "en": "「皮」 is かわ (skin), a different shape."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-011",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "あの <<れすとらん>>は りょうりが おいしいです。",
+    "options": [
+      "レストテン",
+      "レストラン",
+      "レヌトラン",
+      "レストラソ"
+    ],
+    "kj": "あのレストランは料理がおいしいです。",
+    "answer": 1,
+    "tr": {
+      "zh": "那家餐厅的菜很好吃。",
+      "en": "That restaurant's food is good."
+    },
+    "why": {
+      "zh": "「れすとらん」（餐厅）写作「レストラン」。",
+      "en": "れすとらん (restaurant) is 「レストラン」."
+    },
+    "wrong": [
+      {
+        "zh": "「テ」读「て」，这里要「ラ」。",
+        "en": "テ is て; it should be ラ."
+      },
+      null,
+      {
+        "zh": "「ヌ」读「ぬ」，和「ス」只差一笔。",
+        "en": "ヌ is ぬ — one stroke away from ス."
+      },
+      {
+        "zh": "「ソ」读「そ」，和「ン」笔画方向不同。",
+        "en": "ソ is そ; its strokes slant differently from ン."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-012",
+    "type": "hyouki",
+    "difficulty": 3,
+    "stem": "あしたの <<ごご>> かいぎが あります。",
+    "options": [
+      "午役",
+      "牛後",
+      "午後",
+      "干後"
+    ],
+    "kj": "明日の午後会議があります。",
+    "answer": 2,
+    "tr": {
+      "zh": "明天下午有会议。",
+      "en": "There's a meeting tomorrow afternoon."
+    },
+    "why": {
+      "zh": "「ごご」（下午）写作「午後」：「午」＋「後」。",
+      "en": "ごご (afternoon) is 「午後」: 「午」 + 「後」."
+    },
+    "wrong": [
+      {
+        "zh": "「役」读「やく」（职务），右边和「後」不同。",
+        "en": "「役」 is やく (role); its right side differs from 「後」."
+      },
+      {
+        "zh": "「牛」读「うし」（牛），上面出头，不是「午」。",
+        "en": "「牛」 is うし (cow) — the stroke goes through the top; not 「午」."
+      },
+      null,
+      {
+        "zh": "「干」读「かん」（干），少了上面一撇。",
+        "en": "「干」 is かん (dry); it lacks the top stroke."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-013",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "えきの まえで ともだちを 30ぷん（　）。",
+    "options": [
+      "まちました",
+      "あいました",
+      "よびました",
+      "あそびました"
+    ],
+    "okj": [
+      "待ちました",
+      "会いました",
+      "呼びました",
+      "遊びました"
+    ],
+    "kj": "駅の前で友達を30分待ちました。",
+    "answer": 0,
+    "tr": {
+      "zh": "我在车站前等了朋友三十分钟。",
+      "en": "I waited for my friend in front of the station for thirty minutes."
+    },
+    "why": {
+      "zh": "线索：「ともだちを」＋「30ぷん」，在一个地方持续一段时间，是在等人。\n词义：「まつ」（待つ）＝等：「ともだちを まつ」「バスを まつ」。",
+      "en": "Clue: 「ともだちを」 plus 「30ぷん」 — staying in one place for a while: waiting.\nMeaning: 「まつ」 (待つ) is to wait: 「ともだちを まつ」, 「バスを まつ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「あう」说「ともだちに あう」，用「に」不用「を」；见面也是一下子的事，不说“见了三十分钟”。",
+        "en": "「あう」 takes 「に」 (「ともだちに あう」), not 「を」, and meeting is a moment, not thirty minutes."
+      },
+      {
+        "zh": "「よぶ」是叫、喊，一下子的动作，不说“叫了三十分钟朋友”。",
+        "en": "「よぶ」 (call) is a one-off action; you don't call a friend for thirty minutes."
+      },
+      {
+        "zh": "「あそぶ」说「ともだちと あそぶ」，用「と」不用「を」。",
+        "en": "「あそぶ」 takes 「と」 (「ともだちと あそぶ」), not 「を」."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-014",
+    "type": "bunmyaku",
+    "difficulty": 3,
+    "stem": "きょうは かぜが（　）ですから、そとで テニスが できません。",
+    "options": [
+      "つよい",
+      "ふとい",
+      "おもい",
+      "ながい"
+    ],
+    "okj": [
+      "強い",
+      "太い",
+      "重い",
+      "長い"
+    ],
+    "kj": "今日は風が強いですから、外でテニスができません。",
+    "answer": 0,
+    "tr": {
+      "zh": "今天风很大，所以不能在外面打网球。",
+      "en": "It's windy today, so we can't play tennis outside."
+    },
+    "why": {
+      "zh": "线索：「かぜが（　）」，风大到不能在外面打网球。\n词义：风大说「かぜが つよい」（強い），风小说「かぜが よわい」；中文说“风大”，日语不说「かぜが おおきい」。",
+      "en": "Clue: 「かぜが（　）」 — wind strong enough to stop outdoor tennis.\nMeaning: strong wind is 「かぜが つよい」 (強い); light wind is 「かぜが よわい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ふとい」是“粗”，说线、腿等，不说风。",
+        "en": "「ふとい」 (thick) is for lines or legs, not wind."
+      },
+      {
+        "zh": "「おもい」是“重”，说东西的重量，不说风。",
+        "en": "「おもい」 (heavy) is about weight, not wind."
+      },
+      {
+        "zh": "「ながい」是“长”，说东西或时间，不说风。",
+        "en": "「ながい」 (long) is for objects or time, not wind."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-015",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "さむいですね。（　）を つけましょうか。",
+    "options": [
+      "ストーブ",
+      "テーブル",
+      "ポケット",
+      "ドア"
+    ],
+    "kj": "寒いですね。ストーブをつけましょうか。",
+    "answer": 0,
+    "tr": {
+      "zh": "好冷啊。开暖炉吧？",
+      "en": "It's cold, isn't it? Shall I turn on the heater?"
+    },
+    "why": {
+      "zh": "线索：「さむいですね」，冷的时候要「つける」（打开）的东西。\n词义：「ストーブ」＝暖炉、取暖器：「ストーブを つける／けす」。",
+      "en": "Clue: 「さむいですね」 — something you 「つける」 (turn on) when it's cold.\nMeaning: 「ストーブ」 is a heater: 「ストーブを つける／けす」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「テーブル」（桌子）不能「つける」，也不能取暖。",
+        "en": "A 「テーブル」 (table) can't be turned on or warm you."
+      },
+      {
+        "zh": "「ポケット」（口袋）不能「つける」。",
+        "en": "A 「ポケット」 (pocket) can't be turned on."
+      },
+      {
+        "zh": "「ドア」（门）用「あける／しめる」，不说「つける」，冷的时候也不会去开门。",
+        "en": "A 「ドア」 (door) is opened or shut, not 「つける」-ed."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-016",
+    "type": "bunmyaku",
+    "difficulty": 3,
+    "stem": "あの こうえんは よる くらくて（　）ですから、ひとりで いかないで ください。",
+    "options": [
+      "わかい",
+      "まずい",
+      "つめたい",
+      "あぶない"
+    ],
+    "okj": [
+      "若い",
+      null,
+      "冷たい",
+      "危ない"
+    ],
+    "kj": "あの公園は夜暗くて危ないですから、一人で行かないでください。",
+    "answer": 3,
+    "tr": {
+      "zh": "那个公园晚上又黑又危险，请不要一个人去。",
+      "en": "That park is dark and dangerous at night, so please don't go alone."
+    },
+    "why": {
+      "zh": "线索：「くらくて」「ひとりで いかないで ください」，因为不安全才劝人别一个人去。\n词义：「あぶない」（危ない）＝危险：「よるは あぶない」「あぶないですよ！」。",
+      "en": "Clue: 「くらくて」 and 「ひとりで いかないで ください」 — it's unsafe, so don't go alone.\nMeaning: 「あぶない」 (危ない) means dangerous: 「よるは あぶない」, 「あぶないですよ！」."
+    },
+    "wrong": [
+      {
+        "zh": "「わかい」是“年轻”，说人，不说公园。",
+        "en": "「わかい」 (young) describes people, not a park."
+      },
+      {
+        "zh": "「まずい」是“难吃”，说食物，不说公园。",
+        "en": "「まずい」 (tastes bad) is for food, not a park."
+      },
+      {
+        "zh": "「つめたい」是“凉、冷（摸起来）”，说水、饮料，不是劝人别去的理由。",
+        "en": "「つめたい」 (cold to the touch) is for water or drinks, not a reason to stay away."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n5-m2-017",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "わたしは まいあさ 7じに いえを（　）、8じに かいしゃに つきます。",
+    "options": [
+      "ついて",
+      "でて",
+      "かえって",
+      "はいって"
+    ],
+    "okj": [
+      "着いて",
+      "出て",
+      "帰って",
+      "入って"
+    ],
+    "kj": "私は毎朝7時に家を出て、8時に会社に着きます。",
+    "answer": 1,
+    "tr": {
+      "zh": "我每天早上七点出门，八点到公司。",
+      "en": "Every morning I leave home at seven and get to the office at eight."
+    },
+    "why": {
+      "zh": "线索：七点在家做的事，八点才到公司，是从家里出发。\n词义：「でる」（出る）＝出去、离开：「いえを でる」「へやを でる」；进去是「はいる」。",
+      "en": "Clue: something done at home at seven before reaching the office at eight — leaving.\nMeaning: 「でる」 (出る) is to leave: 「いえを でる」, 「へやを でる」. Going in is 「はいる」."
+    },
+    "wrong": [
+      {
+        "zh": "「つく」是到达，八点才到公司，七点不是“到家”。",
+        "en": "「つく」 is arrive; the arrival is at the office at eight."
+      },
+      null,
+      {
+        "zh": "「かえる」是回家，早上去公司前不是回家。",
+        "en": "「かえる」 is going home — not what happens before work."
+      },
+      {
+        "zh": "「はいる」是进去，早上去公司要离开家，不是进家。",
+        "en": "「はいる」 is going in; on the way to work you leave home."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-018",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "にもつが おおいですから、（　）を よびましょう。",
+    "options": [
+      "タクシー",
+      "ニュース",
+      "ページ",
+      "カレンダー"
+    ],
+    "okj": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "kj": "荷物が多いですから、タクシーを呼びましょう。",
+    "answer": 0,
+    "tr": {
+      "zh": "行李很多，叫辆出租车吧。",
+      "en": "We have a lot of luggage, so let's call a taxi."
+    },
+    "why": {
+      "zh": "线索：「にもつが おおい」＋「よびましょう」，行李多就叫车。\n词义：「タクシー」＝出租车：「タクシーを よぶ」「タクシーに のる」。",
+      "en": "Clue: 「にもつが おおい」 plus 「よびましょう」 — lots of luggage, so call a car.\nMeaning: 「タクシー」 is a taxi: 「タクシーを よぶ」, 「タクシーに のる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ニュース」（新闻）用「みる／きく」，不能「よぶ」。",
+        "en": "「ニュース」 (news) is watched or heard, not called."
+      },
+      {
+        "zh": "「ページ」（页）不能「よぶ」，和行李也没关系。",
+        "en": "A 「ページ」 (page) can't be called and has nothing to do with luggage."
+      },
+      {
+        "zh": "「カレンダー」（日历）不能「よぶ」。",
+        "en": "A 「カレンダー」 (calendar) can't be called."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-019",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "<<この ほんは つまらなかったです。>>",
+    "options": [
+      "この ほんは おもしろかったです。",
+      "この ほんは おもしろくなかったです。",
+      "この ほんは むずかしかったです。",
+      "この ざっしは おもしろくなかったです。"
+    ],
+    "okj": [
+      "この 本は 面白かったです。",
+      "この 本は 面白くなかったです。",
+      "この 本は 難しかったです。",
+      "この 雑誌は 面白くなかったです。"
+    ],
+    "kj": "この本はつまらなかったです。",
+    "answer": 1,
+    "tr": {
+      "zh": "这本书很无聊。",
+      "en": "This book was boring."
+    },
+    "why": {
+      "zh": "线索：划线的「つまらない」＝无聊，对应「おもしろくない」。\n词义：「つまらない」＝无聊、没意思：「つまらない えいが」；反义是「おもしろい」。",
+      "en": "Clue: the underlined 「つまらない」 — boring — matches 「おもしろくない」.\nMeaning: 「つまらない」 means boring: 「つまらない えいが」. The opposite is 「おもしろい」."
+    },
+    "wrong": [
+      {
+        "zh": "「おもしろかった」是有意思，和「つまらなかった」相反。",
+        "en": "「おもしろかった」 (interesting) is the opposite of 「つまらなかった」."
+      },
+      null,
+      {
+        "zh": "「むずかしかった」是难，难和无聊不是一回事。",
+        "en": "「むずかしかった」 (difficult) isn't the same as boring."
+      },
+      {
+        "zh": "意思对，但说的是「ざっし」（杂志），不是「ほん」。",
+        "en": "The meaning matches, but it's about a 「ざっし」 (magazine), not the book."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-020",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "<<こんばん ともだちと えいがを みます。>>",
+    "options": [
+      "きのうの よる ともだちと えいがを みました。",
+      "きょうの よる ともだちと えいがを みます。",
+      "あしたの よる ともだちと えいがを みます。",
+      "きょうの あさ ともだちと えいがを みます。"
+    ],
+    "okj": [
+      "昨日の 夜 友だちと 映画を 見ました。",
+      "今日の 夜 友だちと 映画を 見ます。",
+      "明日の 夜 友だちと 映画を 見ます。",
+      "今日の 朝 友だちと 映画を 見ます。"
+    ],
+    "kj": "今晩友達と映画を見ます。",
+    "answer": 1,
+    "tr": {
+      "zh": "今晚我和朋友去看电影。",
+      "en": "I'm seeing a movie with a friend tonight."
+    },
+    "why": {
+      "zh": "线索：划线的「こんばん」＝今天晚上，对应「きょうの よる」。\n词义：「こんばん」（今晩）＝今晚：「こんばんは」也是这个词；昨晚是「ゆうべ」，今早是「けさ」。",
+      "en": "Clue: the underlined 「こんばん」 — this evening — matches 「きょうの よる」.\nMeaning: 「こんばん」 (今晩) is tonight, as in 「こんばんは」; last night is 「ゆうべ」, this morning 「けさ」."
+    },
+    "wrong": [
+      {
+        "zh": "「きのうの よる」是昨晚（ゆうべ），时间不对。",
+        "en": "「きのうの よる」 is last night (ゆうべ) — the wrong day."
+      },
+      null,
+      {
+        "zh": "「あしたの よる」是明晚，不是今晚。",
+        "en": "「あしたの よる」 is tomorrow night, not tonight."
+      },
+      {
+        "zh": "「きょうの あさ」是今早（けさ），不是晚上。",
+        "en": "「きょうの あさ」 is this morning (けさ), not the evening."
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-021",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "<<へやの でんきを けして ください。>>",
+    "options": [
+      "へやを あかるく して ください。",
+      "へやを くらく して ください。",
+      "へやの まどを しめて ください。",
+      "へやの でんきを つけて ください。"
+    ],
+    "okj": [
+      "部屋を 明るく して ください。",
+      "部屋を 暗く して ください。",
+      "部屋の 窓を 閉めて ください。",
+      "部屋の 電気を つけて ください。"
+    ],
+    "kj": "部屋の電気を消してください。",
+    "answer": 1,
+    "tr": {
+      "zh": "请把房间的灯关掉。",
+      "en": "Please turn off the light in the room."
+    },
+    "why": {
+      "zh": "线索：划线的「でんきを けす」＝关灯，关了灯房间就变暗，对应「くらく する」。\n词义：「けす」（消す）＝关（灯、电视）：「でんきを けす」；反义是「つける」。",
+      "en": "Clue: the underlined 「でんきを けす」 — turning off the light — makes the room dark: 「くらく する」.\nMeaning: 「けす」 (消す) is to turn off (a light, a TV): 「でんきを けす」. The opposite is 「つける」."
+    },
+    "wrong": [
+      {
+        "zh": "「あかるく する」是让房间变亮，是开灯，不是关灯。",
+        "en": "「あかるく する」 makes the room brighter — turning a light on, not off."
+      },
+      null,
+      {
+        "zh": "「まどを しめる」是关窗户，和灯无关。",
+        "en": "「まどを しめる」 is closing the window, nothing to do with the light."
+      },
+      {
+        "zh": "「でんきを つける」是开灯，和「けす」相反。",
+        "en": "「でんきを つける」 is turning the light on — the opposite of 「けす」."
+      }
+    ]
+  }
+]

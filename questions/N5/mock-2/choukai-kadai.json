@@ -1,0 +1,740 @@
+[
+ {
+  "id": "n5-m2-ck-101",
+  "type": "kadai",
+  "scene": "ゆうびんきょくで 女の 人と 男の 人が 話して います。",
+  "question": "女の 人は きってを 何まい 買いますか。",
+  "lines": [
+   [
+    "F",
+    "すみません、てがみを 五つ 出したいです。きってを 五まい ください。"
+   ],
+   [
+    "M",
+    "はい、五まいですね。"
+   ],
+   [
+    "F",
+    "あ、ちょっと まって ください。うちに きってが 二まい あります。じゃあ、三まい ください。"
+   ],
+   [
+    "M",
+    "はい。はがきは いりませんか。"
+   ],
+   [
+    "F",
+    "はがきも 十まい ください。"
+   ],
+   [
+    "M",
+    "わかりました。少し まって ください。"
+   ]
+  ],
+  "options": [
+   "二まい",
+   "三まい",
+   "五まい",
+   "十まい"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "邮局里一个女人和一个男人在说话。",
+    "question": "女人买几张邮票？",
+    "lines": [
+     "不好意思，我想寄五封信。请给我五张邮票。",
+     "好的，五张是吧。",
+     "啊，请等一下。我家里有两张邮票。那请给我三张。",
+     "好的。明信片要吗？",
+     "明信片也请给我十张。",
+     "知道了。请稍等。"
+    ],
+    "options": [
+     "两张",
+     "三张",
+     "五张",
+     "十张"
+    ]
+   },
+   "en": {
+    "scene": "At a post office, a woman and a man are talking.",
+    "question": "How many stamps does the woman buy?",
+    "lines": [
+     "Excuse me, I want to send five letters. Five stamps, please.",
+     "Five, right.",
+     "Oh, wait a moment. I have two stamps at home. Then three, please.",
+     "Sure. Don't you need any postcards?",
+     "Ten postcards too, please.",
+     "All right. Just a moment."
+    ],
+    "options": [
+     "Two",
+     "Three",
+     "Five",
+     "Ten"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的改口说：「うちに きってが 二まい あります。じゃあ、三まい ください。」\n推理：要寄五封信，本来要五张邮票；想起家里已经有两张，所以只买三张。十张是明信片的数量，不是邮票。\n容易错：一开始说的数量被改掉；把明信片的数量当成邮票。",
+   "en": "Evidence: The woman changes it: 「うちに きってが 二まい あります。じゃあ、三まい ください。」\nReasoning: Five letters means five stamps, but she remembers she has two at home, so she buys three. Ten is the number of postcards, not stamps.\nTrap: the first number gets changed; taking the postcard count for the stamps."
+  },
+  "wrong": [
+   {
+    "zh": "两张是她家里已经有的邮票。",
+    "en": "Two is how many stamps she already has at home."
+   },
+   null,
+   {
+    "zh": "五张是一开始说的，后来想起家里有两张，改成了三张。",
+    "en": "Five was her first request; she cut it to three after remembering the two at home."
+   },
+   {
+    "zh": "十张是明信片，不是邮票。",
+    "en": "Ten is the postcards, not the stamps."
+   }
+  ],
+  "traps": [
+   "number",
+   "done-already"
+  ]
+ },
+ {
+  "id": "n5-m2-ck-102",
+  "type": "kadai",
+  "scene": "会社で 女の 人と 男の 人が 話して います。",
+  "question": "男の 人は いすを いくつ もって きますか。",
+  "lines": [
+   [
+    "F",
+    "田中さん、きょうの かいぎには 八人 来ます。この へやには いすが 五つ あります。"
+   ],
+   [
+    "M",
+    "じゃあ、となりの へやから 三つ もって きます。"
+   ],
+   [
+    "F",
+    "おねがいします。あ、まって ください。山田さんは きょう 休みでした。"
+   ],
+   [
+    "M",
+    "そうですか。じゃあ、来る 人は 七人ですね。"
+   ],
+   [
+    "F",
+    "ええ、そうです。"
+   ],
+   [
+    "M",
+    "わかりました。となりの へやへ 行って きます。"
+   ]
+  ],
+  "options": [
+   "二つ",
+   "三つ",
+   "五つ",
+   "八つ"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个女人和一个男人在说话。",
+    "question": "男人要搬来几把椅子？",
+    "lines": [
+     "田中，今天的会议有八个人来。这个房间里有五把椅子。",
+     "那我从隔壁房间拿三把过来。",
+     "拜托了。啊，等一下。山田今天请假了。",
+     "这样啊。那来的人是七个吧。",
+     "嗯，对。",
+     "知道了。我去一下隔壁房间。"
+    ],
+    "options": [
+     "两把",
+     "三把",
+     "五把",
+     "八把"
+    ]
+   },
+   "en": {
+    "scene": "At an office, a woman and a man are talking.",
+    "question": "How many chairs will the man bring?",
+    "lines": [
+     "Tanaka-san, eight people are coming to today's meeting. There are five chairs in this room.",
+     "Then I'll bring three from the room next door.",
+     "Please do. Oh, wait. Yamada-san is off today.",
+     "I see. Then seven people are coming.",
+     "Yes, that's right.",
+     "All right. I'll go next door."
+    ],
+    "options": [
+     "Two",
+     "Three",
+     "Five",
+     "Eight"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「山田さんは きょう 休みでした。」男的确认：「来る 人は 七人ですね。」\n推理：本来八个人、房间里有五把椅子，要拿三把；山田请假，来的人变成七个，七减五，只要再拿两把。\n容易错：停在改变之前的「三つ」；把房间里已有的数量或人数当成答案。",
+   "en": "Evidence: The woman says: 「山田さんは きょう 休みでした。」 and the man confirms: 「来る 人は 七人ですね。」\nReasoning: Eight people and five chairs would mean three more, but with Yamada off only seven are coming: seven minus five, so he brings two.\nTrap: stopping at the 「三つ」 said before the change; taking the chairs already there or the head count."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "三把是山田请假之前算的数量。",
+    "en": "Three was the count before they learned Yamada is off."
+   },
+   {
+    "zh": "五把是房间里已经有的椅子。",
+    "en": "Five is the chairs already in the room."
+   },
+   {
+    "zh": "八是一开始说的人数，而且现在来的是七个人。",
+    "en": "Eight was the first head count, and now only seven are coming."
+   }
+  ],
+  "traps": [
+   "number",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n5-m2-ck-103",
+  "type": "kadai",
+  "scene": "女の 人と 男の 人が 電話で 話して います。",
+  "question": "二人は あした どこで 会いますか。",
+  "lines": [
+   [
+    "M",
+    "あしたは 十時に 駅の 前で 会いましょう。"
+   ],
+   [
+    "F",
+    "駅の 前は 人が 多いですから、駅の 中の 本やは どうですか。"
+   ],
+   [
+    "M",
+    "あの 本やは 日曜日は 休みですよ。"
+   ],
+   [
+    "F",
+    "そうですか。じゃあ、本やの となりの きっさてんは？"
+   ],
+   [
+    "M",
+    "きっさてんは 十一時からです。ぼくの 会社の 前は どうですか。"
+   ],
+   [
+    "F",
+    "会社の 前は、わたしは 道が よく わかりません。じゃあ、はじめの ところに しましょう。"
+   ],
+   [
+    "M",
+    "わかりました。じゃあ、あした 十時に。"
+   ]
+  ],
+  "options": [
+   "本や",
+   "きっさてん",
+   "駅の 前",
+   "会社の 前"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在打电话。",
+    "question": "两个人明天在哪里见面？",
+    "lines": [
+     "明天十点在车站前面见吧。",
+     "车站前面人很多，车站里面的书店怎么样？",
+     "那家书店星期天休息哦。",
+     "这样啊。那书店旁边的咖啡店呢？",
+     "咖啡店十一点才开。我公司门口怎么样？",
+     "公司门口我不太认识路。那就定最开始说的地方吧。",
+     "好的。那明天十点见。"
+    ],
+    "options": [
+     "书店",
+     "咖啡店",
+     "车站前面",
+     "公司门口"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking on the phone.",
+    "question": "Where will the two meet tomorrow?",
+    "lines": [
+     "Let's meet in front of the station at ten tomorrow.",
+     "It's crowded in front of the station. How about the bookshop inside the station?",
+     "That bookshop is closed on Sundays.",
+     "I see. Then what about the café next to the bookshop?",
+     "The café opens at eleven. How about in front of my office?",
+     "I don't really know the way to your office. Then let's make it the first place.",
+     "All right. Ten tomorrow, then."
+    ],
+    "options": [
+     "The bookshop",
+     "The café",
+     "In front of the station",
+     "In front of his office"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的最后说：「じゃあ、はじめの ところに しましょう。」\n推理：「はじめの ところ」是男的最先提的「駅の 前」。书店星期天休息，咖啡店十一点才开（约的是十点），公司门口女的不认识路，结果回到了车站前面。\n容易错：以为最后提出的地方就是答案；没听懂「はじめの ところ」指的是哪里。",
+   "en": "Evidence: The woman finally says: 「じゃあ、はじめの ところに しましょう。」\nReasoning: 「はじめの ところ」 is the man's first idea, 「駅の 前」. The bookshop is closed on Sundays, the café opens at eleven (they meet at ten), and she doesn't know the way to his office, so they go back to the station front.\nTrap: assuming the last place mentioned wins; missing what 「はじめの ところ」 refers to."
+  },
+  "wrong": [
+   {
+    "zh": "那家书店星期天休息。",
+    "en": "The bookshop is closed on Sundays."
+   },
+   {
+    "zh": "咖啡店十一点才开，他们十点见面。",
+    "en": "The café opens at eleven; they meet at ten."
+   },
+   null,
+   {
+    "zh": "女人不认识去男人公司的路，没有选那里。",
+    "en": "She doesn't know the way to his office, so it's not chosen."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n5-m2-ck-104",
+  "type": "kadai",
+  "scene": "学校で 男の 学生と 女の 学生が 話して います。",
+  "question": "男の 学生は きょう うちで 何を べんきょうしますか。",
+  "lines": [
+   [
+    "M",
+    "あしたは かんじの テストですね。"
+   ],
+   [
+    "F",
+    "いいえ、かんじの テストは 来週です。あしたは ことばの テストですよ。"
+   ],
+   [
+    "M",
+    "あ、そうですか。カタカナの テストは いつですか。"
+   ],
+   [
+    "F",
+    "カタカナは きのう ありましたよ。"
+   ],
+   [
+    "M",
+    "あ、そうでした。じゃあ、きょうは うちで ことばを べんきょうします。リンさんは？"
+   ],
+   [
+    "F",
+    "わたしは さくぶんを 書きます。あしたまでの しゅくだいですから。"
+   ],
+   [
+    "M",
+    "ぼくは さくぶんは もう 先生に 出しました。"
+   ]
+  ],
+  "options": [
+   "かんじ",
+   "カタカナ",
+   "さくぶん",
+   "ことば"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "学校里一个男学生和一个女学生在说话。",
+    "question": "男学生今天在家学什么？",
+    "lines": [
+     "明天是汉字考试吧。",
+     "不是，汉字考试是下周。明天是词汇考试哦。",
+     "啊，是吗。片假名考试是什么时候？",
+     "片假名昨天考过了啊。",
+     "啊，对哦。那今天在家复习词汇。林同学你呢？",
+     "我写作文。是明天要交的作业。",
+     "作文我已经交给老师了。"
+    ],
+    "options": [
+     "汉字",
+     "片假名",
+     "作文",
+     "词汇"
+    ]
+   },
+   "en": {
+    "scene": "At school, a male student and a female student are talking.",
+    "question": "What will the male student study at home today?",
+    "lines": [
+     "Tomorrow is the kanji test, right?",
+     "No, the kanji test is next week. Tomorrow is the vocabulary test.",
+     "Oh, really? When is the katakana test?",
+     "We had katakana yesterday.",
+     "Oh, right. Then today I'll study vocabulary at home. What about you, Lin-san?",
+     "I'll write my composition. It's homework due tomorrow.",
+     "I've already handed my composition in to the teacher."
+    ],
+    "options": [
+     "Kanji",
+     "Katakana",
+     "The composition",
+     "Vocabulary"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「じゃあ、きょうは うちで ことばを べんきょうします。」\n推理：他以为明天考汉字，女的纠正：汉字是下周，明天考词汇；片假名昨天已经考过了。作文是女的今天要写的，男的已经交了。\n容易错：改到下周的考试；已经考完的；别人要做的事。",
+   "en": "Evidence: The man says: 「じゃあ、きょうは うちで ことばを べんきょうします。」\nReasoning: He thinks tomorrow is kanji, but she corrects him: kanji is next week, tomorrow is vocabulary, and katakana was yesterday. The composition is what she will write; he has already handed his in.\nTrap: a test moved to next week; one already over; someone else's task."
+  },
+  "wrong": [
+   {
+    "zh": "汉字考试是下周，不是明天。",
+    "en": "The kanji test is next week, not tomorrow."
+   },
+   {
+    "zh": "片假名昨天已经考过了。",
+    "en": "The katakana test was yesterday."
+   },
+   {
+    "zh": "写作文的是女学生，男学生已经交了。",
+    "en": "The composition is her task; he has already handed his in."
+   },
+   null
+  ],
+  "traps": [
+   "later",
+   "done-already",
+   "someone-else"
+  ]
+ },
+ {
+  "id": "n5-m2-ck-105",
+  "type": "kadai",
+  "scene": "うちで 女の 人と 男の 人が あさごはんの 話を して います。",
+  "question": "男の 人は あさごはんに 何を 食べますか。",
+  "lines": [
+   [
+    "F",
+    "あさごはんは パンに しますか、ごはんに しますか。"
+   ],
+   [
+    "M",
+    "きょうは ごはんが いいですね。"
+   ],
+   [
+    "F",
+    "ごめんなさい。ごはんは きのうの 夜 ぜんぶ 食べました。"
+   ],
+   [
+    "M",
+    "そうですか。じゃあ、パンで いいです。たまごは ありますか。"
+   ],
+   [
+    "F",
+    "たまごも もう ありません。バナナは ありますよ。"
+   ],
+   [
+    "M",
+    "じゃあ、バナナを ください。"
+   ]
+  ],
+  "options": [
+   "パンと たまご",
+   "パンと バナナ",
+   "ごはんと たまご",
+   "ごはんと バナナ"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A round plate on a table holding two slices of bread and a fried egg.",
+   "Simple black-and-white line drawing, no text. A round plate on a table holding two slices of bread and one banana.",
+   "Simple black-and-white line drawing, no text. A round plate on a table holding a bowl of rice and a fried egg.",
+   "Simple black-and-white line drawing, no text. A round plate on a table holding a bowl of rice and one banana."
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "家里一个女人和一个男人在说早饭的事。",
+    "question": "男人早饭吃什么？",
+    "lines": [
+     "早饭吃面包还是米饭？",
+     "今天想吃米饭。",
+     "对不起。米饭昨天晚上全吃完了。",
+     "这样啊。那面包就行。有鸡蛋吗？",
+     "鸡蛋也没有了。有香蕉哦。",
+     "那请给我香蕉。"
+    ],
+    "options": [
+     "面包和鸡蛋",
+     "面包和香蕉",
+     "米饭和鸡蛋",
+     "米饭和香蕉"
+    ]
+   },
+   "en": {
+    "scene": "At home, a woman and a man are talking about breakfast.",
+    "question": "What will the man have for breakfast?",
+    "lines": [
+     "For breakfast, do you want bread or rice?",
+     "Rice would be nice today.",
+     "Sorry. We ate all the rice last night.",
+     "I see. Then bread is fine. Are there any eggs?",
+     "We're out of eggs too. There are bananas.",
+     "Then a banana, please."
+    ],
+    "options": [
+     "Bread and an egg",
+     "Bread and a banana",
+     "Rice and an egg",
+     "Rice and a banana"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说「じゃあ、パンで いいです」，最后又说「じゃあ、バナナを ください」。\n推理：他想吃米饭，可米饭「きのうの 夜 ぜんぶ 食べました」，只好吃面包；想要鸡蛋，鸡蛋「もう ありません」，换成香蕉。\n容易错：想要但没有的东西；只听对一半。",
+   "en": "Evidence: The man says 「じゃあ、パンで いいです」 and then 「じゃあ、バナナを ください」.\nReasoning: He wants rice, but it was 「きのうの 夜 ぜんぶ 食べました」, so bread; he asks for eggs, but there are 「もう ありません」, so a banana.\nTrap: things he wants that aren't there; getting only half right."
+  },
+  "wrong": [
+   {
+    "zh": "面包对了，但鸡蛋已经没有了。",
+    "en": "The bread is right, but there are no eggs left."
+   },
+   null,
+   {
+    "zh": "米饭和鸡蛋都没有了。",
+    "en": "There's no rice and no eggs left."
+   },
+   {
+    "zh": "香蕉对了，但米饭昨晚吃完了。",
+    "en": "The banana is right, but the rice was finished last night."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "half-right"
+  ]
+ },
+ {
+  "id": "n5-m2-ck-106",
+  "type": "kadai",
+  "scene": "男の 人と 女の 人が 話して います。",
+  "question": "男の 人は 先生の うちへ 何を もって いきますか。",
+  "lines": [
+   [
+    "M",
+    "あした、山田先生の うちへ 行きますね。何か もって いきましょう。花は どうですか。"
+   ],
+   [
+    "F",
+    "先生の うちの にわには 花が たくさん ありますよ。"
+   ],
+   [
+    "M",
+    "そうですか。じゃあ、ケーキは？"
+   ],
+   [
+    "F",
+    "先生は あまい ものが あまり すきじゃ ありません。"
+   ],
+   [
+    "M",
+    "じゃあ、くだものは どうですか。"
+   ],
+   [
+    "F",
+    "いいですね。先生は くだものが 大すきです。じゃあ、それを おねがいします。ワインは わたしが 買って いきますから。"
+   ]
+  ],
+  "options": [
+   "花",
+   "ケーキ",
+   "ワイン",
+   "くだもの"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A man standing, facing forward, holding a bunch of flowers in both hands.",
+   "Simple black-and-white line drawing, no text. A man standing, facing forward, holding a round cake on a plate in both hands.",
+   "Simple black-and-white line drawing, no text. A man standing, facing forward, holding a bottle of wine in both hands.",
+   "Simple black-and-white line drawing, no text. A man standing, facing forward, holding a basket of fruit (apples and grapes) in both hands."
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "男人带什么去老师家？",
+    "lines": [
+     "明天要去山田老师家吧。带点什么去吧。花怎么样？",
+     "老师家的院子里有很多花哦。",
+     "这样啊。那蛋糕呢？",
+     "老师不太喜欢甜的东西。",
+     "那水果怎么样？",
+     "好啊。老师最喜欢水果了。那就拜托你带水果吧。葡萄酒我买了带过去。"
+    ],
+    "options": [
+     "花",
+     "蛋糕",
+     "葡萄酒",
+     "水果"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "What will the man take to the teacher's house?",
+    "lines": [
+     "We're going to Mr. Yamada's house tomorrow, right? Let's take something. How about flowers?",
+     "There are lots of flowers in his garden.",
+     "I see. Then a cake?",
+     "He doesn't really like sweet things.",
+     "Then how about fruit?",
+     "Good idea. He loves fruit. Then please bring that. I'll buy some wine and bring it."
+    ],
+    "options": [
+     "Flowers",
+     "A cake",
+     "Wine",
+     "Fruit"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「先生は くだものが 大すきです。じゃあ、それを おねがいします。」\n推理：老师家院子里已经有很多花，老师也不太喜欢甜的，所以花和蛋糕都不行；男的提水果，女的拜托他带。葡萄酒是女的自己去买。\n容易错：「それ」指的是前面说的水果；别人负责的东西。",
+   "en": "Evidence: The woman says: 「先生は くだものが 大すきです。じゃあ、それを おねがいします。」\nReasoning: The teacher's garden is full of flowers and he doesn't care for sweets, so flowers and cake are out; the man suggests fruit and she asks him to bring it. The wine is hers to buy.\nTrap: 「それ」 points back to the fruit; something another person is bringing."
+  },
+  "wrong": [
+   {
+    "zh": "老师家的院子里已经有很多花了。",
+    "en": "The teacher already has lots of flowers in his garden."
+   },
+   {
+    "zh": "老师不太喜欢甜的东西。",
+    "en": "The teacher doesn't really like sweet things."
+   },
+   {
+    "zh": "葡萄酒是女人买了带去的。",
+    "en": "The woman is the one buying the wine."
+   },
+   null
+  ],
+  "traps": [
+   "condition-conflict",
+   "someone-else"
+  ]
+ },
+ {
+  "id": "n5-m2-ck-107",
+  "type": "kadai",
+  "scene": "きょうしつで 女の 先生と 男の 学生が 話して います。",
+  "question": "男の 学生は これから 何を しますか。",
+  "lines": [
+   [
+    "F",
+    "林さん、かえる 前に まどを しめて ください。"
+   ],
+   [
+    "M",
+    "まどは さっき 山田さんが しめましたよ。"
+   ],
+   [
+    "F",
+    "あ、そうですか。じゃあ、へやの そうじを おねがいします。"
+   ],
+   [
+    "M",
+    "そうじは きょうの あさ、みんなで しました。"
+   ],
+   [
+    "F",
+    "そうでしたね。じゃあ、電気を けして、ドアに かぎを かけて ください。"
+   ],
+   [
+    "M",
+    "はい。先生、かぎは どこですか。"
+   ],
+   [
+    "F",
+    "あ、かぎは 今 もって いませんね。かぎは あとで わたしが かけます。"
+   ]
+  ],
+  "options": [
+   "電気を けす",
+   "まどを しめる",
+   "へやを そうじする",
+   "ドアに かぎを かける"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A male student in a classroom, reaching out to press the light switch on the wall to turn off the lights.",
+   "Simple black-and-white line drawing, no text. A male student in a classroom, closing a window with both hands.",
+   "Simple black-and-white line drawing, no text. A male student in a classroom, sweeping the floor with a broom.",
+   "Simple black-and-white line drawing, no text. A male student in a classroom, turning a key in the lock of the classroom door."
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "教室里一位女老师和一个男学生在说话。",
+    "question": "男学生接下来做什么？",
+    "lines": [
+     "林同学，回家之前请把窗户关上。",
+     "窗户刚才山田同学已经关了。",
+     "啊，是吗。那麻烦你打扫一下房间。",
+     "打扫今天早上大家已经做过了。",
+     "对哦。那请把灯关掉，再把门锁上。",
+     "好的。老师，钥匙在哪儿？",
+     "啊，钥匙我现在没带着。门待会儿我来锁。"
+    ],
+    "options": [
+     "关灯",
+     "关窗户",
+     "打扫房间",
+     "锁门"
+    ]
+   },
+   "en": {
+    "scene": "In a classroom, a female teacher and a male student are talking.",
+    "question": "What will the student do now?",
+    "lines": [
+     "Hayashi-san, please close the windows before you go home.",
+     "Yamada-san closed the windows a moment ago.",
+     "Oh, did she? Then please clean the room.",
+     "We all cleaned it this morning.",
+     "So you did. Then please turn off the lights and lock the door.",
+     "OK. Where is the key?",
+     "Oh, I don't have the key with me now. I'll lock it myself later."
+    ],
+    "options": [
+     "Turn off the lights",
+     "Close the windows",
+     "Clean the room",
+     "Lock the door"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：老师说「電気を けして、ドアに かぎを かけて ください」，后来又说「かぎは あとで わたしが かけます」。\n推理：窗户山田已经关了，房间早上大家打扫过了；锁门老师改成待会儿自己来，剩下的只有关灯。\n容易错：已经做完的事；改成别人以后再做的事。",
+   "en": "Evidence: The teacher says 「電気を けして、ドアに かぎを かけて ください」 and then 「かぎは あとで わたしが かけます」.\nReasoning: Yamada already closed the windows and everyone cleaned this morning; the teacher will lock the door herself later, which leaves turning off the lights.\nTrap: jobs already done; a job someone else will do later."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "窗户山田刚才已经关了。",
+    "en": "Yamada already closed the windows."
+   },
+   {
+    "zh": "今天早上大家已经打扫过了。",
+    "en": "Everyone cleaned the room this morning."
+   },
+   {
+    "zh": "老师没带钥匙，门待会儿老师自己锁。",
+    "en": "The teacher doesn't have the key and will lock up herself later."
+   }
+  ],
+  "traps": [
+   "done-already",
+   "someone-else",
+   "later"
+  ]
+ }
+]
