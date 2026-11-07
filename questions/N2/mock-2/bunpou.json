@@ -1,0 +1,664 @@
+[
+  {
+    "id": "n2-m2-101",
+    "type": "bunpou",
+    "refs": [
+      "lesson59#1"
+    ],
+    "difficulty": 1,
+    "stem": "外国に十年住んでいた（　）、その国の言葉が上手に話せるとは限らない。",
+    "options": [
+      "からといって",
+      "にもかかわらず",
+      "からこそ",
+      "ばかりに"
+    ],
+    "answer": 0,
+    "full": "外国に十年住んでいたからといって、その国の言葉が上手に話せるとは限らない。",
+    "tr": {
+      "zh": "虽说在国外住了十年，也不一定就能说好那个国家的语言。",
+      "en": "Just because you've lived abroad for ten years doesn't mean you can speak the language well."
+    },
+    "why": {
+      "zh": "线索：句末「とは限らない」（不一定）——否定\"由前项理所当然推出后项\"。\n规则：普通形＋「からといって」，后面常接「とは限らない」「わけではない」「〜てはいけない」，表示\"虽说……，但不能因此就……\"。\n辨析：「からこそ」强调\"正因为……才\"，后项是肯定的结果：「住んでいたからこそ話せる」；后面是「とは限らない」时只能用「からといって」。",
+      "en": "Clue: 「とは限らない」 at the end — it denies that the second part automatically follows from the first.\nRule: plain form ＋ 「からといって」, usually followed by 「とは限らない」, 「わけではない」 or 「〜てはいけない」: \"just because …, it doesn't follow that …\".\nContrast: 「からこそ」 stresses \"precisely because\" and leads to a positive result: 「住んでいたからこそ話せる」. Before 「とは限らない」 only 「からといって」 works."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「にもかかわらず」表示\"尽管……却……\"，后项要是已发生的相反事实，不能接「とは限らない」这样的一般判断。",
+        "en": "「にもかかわらず」 (despite) needs an actual contrary fact after it, not a general 「とは限らない」 judgement."
+      },
+      {
+        "zh": "「からこそ」强调正因为如此才有好结果，与「とは限らない」的否定意思冲突。",
+        "en": "「からこそ」 stresses a reason leading to a result, which clashes with the denial in 「とは限らない」."
+      },
+      {
+        "zh": "「ばかりに」表示\"就因为……而导致坏结果\"，后面要接实际发生的不好的事。",
+        "en": "「ばかりに」 blames one cause for a bad result that actually happened; it doesn't fit a general 「とは限らない」."
+      }
+    ]
+  },
+  {
+    "id": "n2-m2-102",
+    "type": "bunpou",
+    "refs": [
+      "lesson59#5"
+    ],
+    "difficulty": 2,
+    "stem": "来週までにレポートを三本書かなければならないので、今は旅行（　）。",
+    "options": [
+      "にほかならない",
+      "どころではない",
+      "までもない",
+      "にすぎない"
+    ],
+    "answer": 1,
+    "full": "来週までにレポートを三本書かなければならないので、今は旅行どころではない。",
+    "tr": {
+      "zh": "下周之前必须写完三篇报告，现在哪有心思去旅行。",
+      "en": "I have to write three reports by next week, so travelling is out of the question right now."
+    },
+    "why": {
+      "zh": "线索：前面是\"下周前要写三篇报告\"的忙碌情况，后面说\"旅行\"。\n规则：名词／动词辞书形＋「どころではない」＝由于某种情况，根本没有余力做……，常说「忙しくて旅行どころではない」「それどころではない」。\n辨析：「までもない」＝没必要……（「言うまでもない」），表示事情太简单不必做，不是因为忙而做不了。",
+      "en": "Clue: a busy situation (three reports due next week), followed by 「旅行」.\nRule: noun / dictionary form ＋ 「どころではない」 = in no position to …, because of the situation: 「忙しくて旅行どころではない」, 「それどころではない」.\nContrast: 「までもない」 is \"there's no need to\" (「言うまでもない」) — something too obvious to bother with — not being too busy to do it."
+    },
+    "wrong": [
+      {
+        "zh": "「にほかならない」＝正是……、不外乎……，用来断定原因或本质，「旅行にほかならない」意思不通。",
+        "en": "「にほかならない」 asserts \"is nothing other than\"; 「旅行にほかならない」 makes no sense here."
+      },
+      null,
+      {
+        "zh": "「までもない」＝没有必要……，而且要接动词辞书形（「行くまでもない」），不接「旅行」。",
+        "en": "「までもない」 means no need to, and follows a dictionary-form verb (「行くまでもない」), not 「旅行」."
+      },
+      {
+        "zh": "「にすぎない」＝只不过是……，与\"忙得没空旅行\"的意思不符。",
+        "en": "「にすぎない」 means \"merely\"; it doesn't express being too busy to travel."
+      }
+    ]
+  },
+  {
+    "id": "n2-m2-103",
+    "type": "bunpou",
+    "refs": [
+      "lesson60#6"
+    ],
+    "difficulty": 2,
+    "stem": "私が余計なことを言った（　）、二人はけんかを始めてしまった。",
+    "options": [
+      "だけあって",
+      "からには",
+      "ばかりに",
+      "うえに"
+    ],
+    "answer": 2,
+    "full": "私が余計なことを言ったばかりに、二人はけんかを始めてしまった。",
+    "tr": {
+      "zh": "就因为我多说了一句不该说的话，两个人吵了起来。",
+      "en": "Just because I said something I shouldn't have, the two of them started arguing."
+    },
+    "why": {
+      "zh": "线索：「余計なこと」和句末「始めてしまった」——一个原因导致了不好的结果，还带着后悔。\n规则：普通形（名词「である」）＋「ばかりに」＝就因为……（才导致坏结果），常含后悔或遗憾：「油断したばかりに負けた」。\n辨析：「だけあって」＝不愧是……，后面是相应的好评价：「プロだけあって上手だ」，不用于自己造成的坏结果。",
+      "en": "Clue: 「余計なこと」 and 「始めてしまった」 — one cause leading to a bad outcome, with regret.\nRule: plain form ＋ 「ばかりに」 = just because … (a bad result followed), often regretful: 「油断したばかりに負けた」.\nContrast: 「だけあって」 is \"as you'd expect of\", followed by a fitting positive comment (「プロだけあって上手だ」), not a bad result you caused."
+    },
+    "wrong": [
+      {
+        "zh": "「だけあって」后面是与身份、努力相称的好结果，不能接吵架这种坏结果。",
+        "en": "「だけあって」 leads to a result worthy of the cause, usually positive, not a quarrel."
+      },
+      {
+        "zh": "「からには」＝既然……就要……，后面接决心、义务（「〜べきだ」「〜つもりだ」），不接已发生的事。",
+        "en": "「からには」 (now that) is followed by resolve or duty (「〜べきだ」), not something that already happened."
+      },
+      null,
+      {
+        "zh": "「うえに」＝而且、再加上，用来叠加同类事项，不表示因果。",
+        "en": "「うえに」 adds another point of the same kind; it doesn't mark cause and effect."
+      }
+    ]
+  },
+  {
+    "id": "n2-m2-104",
+    "type": "bunpou",
+    "refs": [
+      "lesson60#7"
+    ],
+    "difficulty": 2,
+    "stem": "時間に厳しい山田さんの（　）、今日も約束の十分前には来ているだろう。",
+    "options": [
+      "くせに",
+      "わりには",
+      "ものだから",
+      "ことだから"
+    ],
+    "answer": 3,
+    "full": "時間に厳しい山田さんのことだから、今日も約束の十分前には来ているだろう。",
+    "tr": {
+      "zh": "山田先生很守时，所以今天应该也会提前十分钟到吧。",
+      "en": "Knowing how strict Mr Yamada is about time, he'll be there ten minutes early today too."
+    },
+    "why": {
+      "zh": "线索：「時間に厳しい山田さんの」——基于对某人性格的了解，后面是推测「来ているだろう」。\n规则：「人物名词＋のことだから」＝因为是那个人（所以一定……），后面多接推测「だろう」「にちがいない」。\n辨析：「ものだから」用于为自己辩解原因，接普通形（「急いでいたものだから」），不接「名词＋の」。",
+      "en": "Clue: 「時間に厳しい山田さんの」 — what we know of someone's character — leading to a guess, 「来ているだろう」.\nRule: person noun ＋ 「のことだから」 = knowing them, (surely …); usually followed by 「だろう」 or 「にちがいない」.\nContrast: 「ものだから」 gives an excuse and follows a plain form (「急いでいたものだから」), not noun ＋ 「の」."
+    },
+    "wrong": [
+      {
+        "zh": "「くせに」＝明明……却……，带责备，但守时和提前到并不矛盾。",
+        "en": "「くせに」 criticises a contradiction, but being punctual and arriving early don't contradict."
+      },
+      {
+        "zh": "「わりには」＝与……相比出乎意料，但守时的人提前到正在意料之中。",
+        "en": "「わりには」 marks something unexpected, but a punctual person arriving early is exactly what you'd expect."
+      },
+      {
+        "zh": "「ものだから」接普通形，用于辩解自己的理由，不接「名词＋の」，也不用于推测别人。",
+        "en": "「ものだから」 follows a plain form to give an excuse; it doesn't take noun ＋ 「の」 or lead to a guess about someone."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-m2-105",
+    "type": "bunpou",
+    "refs": [
+      "lesson61#4"
+    ],
+    "difficulty": 3,
+    "stem": "その子は服が汚れるの（　）、雨上がりの公園で楽しそうに遊んでいた。",
+    "options": [
+      "もかまわず",
+      "を中心に",
+      "にこたえて",
+      "をはじめ"
+    ],
+    "answer": 0,
+    "full": "その子は服が汚れるのもかまわず、雨上がりの公園で楽しそうに遊んでいた。",
+    "tr": {
+      "zh": "那个孩子不顾衣服会弄脏，在雨后的公园里玩得很开心。",
+      "en": "Not caring that her clothes were getting dirty, the child played happily in the park after the rain."
+    },
+    "why": {
+      "zh": "线索：「服が汚れるの」是一般人会在意的事，后面却照样「楽しそうに遊んでいた」。\n规则：「名词／动词普通形＋の」＋「もかまわず」＝不顾……、不在乎……，常说「人目もかまわず」「濡れるのもかまわず」。\n辨析：「をはじめ」＝以……为首（列举代表），后面是同类的一群（「社長をはじめ社員全員」），不表示\"不顾\"。",
+      "en": "Clue: 「服が汚れるの」 is something people usually mind, yet she 「楽しそうに遊んでいた」.\nRule: noun / plain form ＋ 「の」 ＋ 「もかまわず」 = without caring about: 「人目もかまわず」, 「濡れるのもかまわず」.\nContrast: 「をはじめ」 names a leading example of a group (「社長をはじめ社員全員」); it doesn't mean \"regardless of\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「を中心に」＝以……为中心，「汚れるのを中心に遊ぶ」意思不通。",
+        "en": "「を中心に」 means centred on; 「汚れるのを中心に遊ぶ」 makes no sense."
+      },
+      {
+        "zh": "「にこたえて」＝响应（期待、要求），「汚れるのにこたえて」不成立。",
+        "en": "「にこたえて」 means in response to (hopes, requests); 「汚れるのにこたえて」 doesn't work."
+      },
+      {
+        "zh": "「をはじめ」用于列举同类事物的代表，后面要有同类的东西，这里没有。",
+        "en": "「をはじめ」 introduces the first of a group of similar things; no such group follows."
+      }
+    ]
+  },
+  {
+    "id": "n2-m2-106",
+    "type": "bunpou",
+    "refs": [
+      "lesson63#3"
+    ],
+    "difficulty": 1,
+    "stem": "結婚（　）、長年住んだ東京を離れて、地元に戻ることにした。",
+    "options": [
+      "を問わず",
+      "を機に",
+      "に反し",
+      "をよそに"
+    ],
+    "answer": 1,
+    "full": "結婚を機に、長年住んだ東京を離れて、地元に戻ることにした。",
+    "tr": {
+      "zh": "以结婚为契机，我决定离开住了多年的东京，回到老家。",
+      "en": "With my marriage as the occasion, I decided to leave Tokyo, where I'd lived for years, and move back home."
+    },
+    "why": {
+      "zh": "线索：「結婚」是人生的转折点，后面是由此开始的新行动「地元に戻ることにした」。\n规则：名词＋「を機に」＝以……为契机（开始新的事），常说「就職を機に」「退職を機に」；口语多说「をきっかけに」。\n辨析：「をよそに」＝不顾（别人的担心、反对等）：「親の心配をよそに」，前面要是别人的情绪或反应，不是自己的结婚。",
+      "en": "Clue: 「結婚」 is a turning point, followed by a new step it led to, 「地元に戻ることにした」.\nRule: noun ＋ 「を機に」 = taking … as the occasion (to start something new): 「就職を機に」, 「退職を機に」; in speech often 「をきっかけに」.\nContrast: 「をよそに」 is \"ignoring\" (others' worry or objection: 「親の心配をよそに」); it needs others' feelings before it, not your own wedding."
+    },
+    "wrong": [
+      {
+        "zh": "「を問わず」＝不论……（「年齢を問わず」），前面要是有多种情况的词，「結婚を問わず」不成立。",
+        "en": "「を問わず」 is regardless of (「年齢を問わず」), needing a word with several possibilities; 「結婚を問わず」 doesn't work."
+      },
+      null,
+      {
+        "zh": "「に反し」＝与（预想、期待）相反，「結婚に反し」意思不通。",
+        "en": "「に反し」 is contrary to (an expectation); 「結婚に反し」 makes no sense."
+      },
+      {
+        "zh": "「をよそに」前面是别人的担心、反对等，自己的结婚不是可以\"无视\"的东西。",
+        "en": "「をよそに」 follows others' worries or objections; your own wedding isn't something to ignore."
+      }
+    ]
+  },
+  {
+    "id": "n2-m2-107",
+    "type": "bunpou",
+    "refs": [
+      "lesson64#5"
+    ],
+    "difficulty": 2,
+    "stem": "終電を逃してしまった。歩いて帰るには遠すぎるし、タクシーで帰る（　）。",
+    "options": [
+      "までもない",
+      "わけがない",
+      "よりほかない",
+      "べきではない"
+    ],
+    "answer": 2,
+    "full": "終電を逃してしまった。歩いて帰るには遠すぎるし、タクシーで帰るよりほかない。",
+    "tr": {
+      "zh": "错过了末班车。走回去太远了，只好打车回去。",
+      "en": "I missed the last train. It's too far to walk, so I've no choice but to take a taxi."
+    },
+    "why": {
+      "zh": "线索：错过末班车、走路又太远——除了打车没有别的办法。\n规则：动词辞书形＋「よりほかない」（＝「ほかない」「しかない」）＝只好……、只能……，表示没有其他选择。\n辨析：「までもない」＝没必要……，与\"没有别的办法\"正相反。",
+      "en": "Clue: missed the last train and too far to walk — a taxi is the only way left.\nRule: dictionary form ＋ 「よりほかない」 (＝ 「ほかない」, 「しかない」) = have no choice but to.\nContrast: 「までもない」 is \"no need to\", the opposite of having no other option."
+    },
+    "wrong": [
+      {
+        "zh": "「までもない」＝没必要……，可前文说明只能打车，意思相反。",
+        "en": "「までもない」 means no need to, but the context says a taxi is the only option."
+      },
+      {
+        "zh": "「わけがない」＝不可能……，与\"走不回去只能打车\"的情况矛盾。",
+        "en": "「わけがない」 means it can't be, which contradicts the situation."
+      },
+      null,
+      {
+        "zh": "「べきではない」＝不应该……，前文没有不该打车的理由。",
+        "en": "「べきではない」 means shouldn't; nothing suggests taking a taxi is wrong."
+      }
+    ]
+  },
+  {
+    "id": "n2-m2-108",
+    "type": "bunpou",
+    "refs": [
+      "lesson65#4"
+    ],
+    "difficulty": 2,
+    "stem": "練習は長い時間やればいい（　）。大切なのは、何を意識して練習するかだ。",
+    "options": [
+      "というものだ",
+      "というわけだ",
+      "にほかならない",
+      "というものではない"
+    ],
+    "answer": 3,
+    "full": "練習は長い時間やればいいというものではない。大切なのは、何を意識して練習するかだ。",
+    "tr": {
+      "zh": "练习并不是时间越长越好。重要的是带着什么意识去练。",
+      "en": "Practice isn't just a matter of putting in long hours. What matters is what you focus on while you practise."
+    },
+    "why": {
+      "zh": "线索：后句「大切なのは……だ」提出另一个重点，说明前面的想法不对。\n规则：普通形＋「というものではない」＝并不是……就行，用来否定一般人的简单想法，常和「〜ばいい」「〜からといって」一起用。\n辨析：「というものだ」＝这才叫……、理所当然是……，是肯定；后面紧接\"重要的是别的\"，只能用否定的「というものではない」。",
+      "en": "Clue: the next sentence, 「大切なのは……だ」, puts forward another point, showing the first idea is wrong.\nRule: plain form ＋ 「というものではない」 = it isn't (simply) the case that, rejecting a too-simple view; often with 「〜ばいい」 or 「〜からといって」.\nContrast: 「というものだ」 is a positive \"that's what … is\"; with \"what matters is something else\" right after, only the negative 「というものではない」 works."
+    },
+    "wrong": [
+      {
+        "zh": "「というものだ」是肯定的断定，与后句\"重要的是别的\"矛盾。",
+        "en": "「というものだ」 is a positive assertion, contradicting \"what matters is something else\"."
+      },
+      {
+        "zh": "「というわけだ」＝所以说……，用来总结前面的理由，这里没有可总结的内容，也和后句矛盾。",
+        "en": "「というわけだ」 sums up a preceding reason; there is none here, and it clashes with the next sentence."
+      },
+      {
+        "zh": "「にほかならない」＝正是……，是强烈肯定，与后句的否定意思矛盾。",
+        "en": "「にほかならない」 is a strong \"is nothing but\", contradicting the next sentence."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-m2-109",
+    "type": "bunpou",
+    "refs": [
+      "lesson67#2",
+      "lesson62#1"
+    ],
+    "difficulty": 3,
+    "stem": "試合には負けてしまったが、結果（　）、選手たちは最後までよく頑張ったと思う。",
+    "options": [
+      "はともかく",
+      "はもとより",
+      "に限って",
+      "に比べて"
+    ],
+    "answer": 0,
+    "full": "試合には負けてしまったが、結果はともかく、選手たちは最後までよく頑張ったと思う。",
+    "tr": {
+      "zh": "虽然比赛输了，但结果暂且不论，我觉得选手们坚持到了最后，很努力。",
+      "en": "We lost the match, but leaving the result aside, I think the players fought hard to the end."
+    },
+    "why": {
+      "zh": "线索：前面说「負けてしまった」，后面却肯定「よく頑張った」——先把\"结果\"放在一边不谈。\n规则：名词＋「はともかく（として）」＝……暂且不论，先搁置前项，评价后项。\n辨析：「はもとより」＝……自不必说，前后要朝同一方向（「結果はもとより内容もよかった」）；比赛输了，结果不能说\"当然好\"。",
+      "en": "Clue: 「負けてしまった」, then praise, 「よく頑張った」 — setting the result aside.\nRule: noun ＋ 「はともかく（として）」 = leaving … aside, to judge something else.\nContrast: 「はもとより」 is \"not to mention\", with both parts pointing the same way (「結果はもとより内容もよかった」); after a loss the result can't be \"of course good\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「はもとより」要求前后同方向（结果当然也好），但比赛输了，与前文矛盾。",
+        "en": "「はもとより」 needs both parts to be alike (the result good too), but they lost."
+      },
+      {
+        "zh": "「に限って」＝偏偏在……的时候（多接不好的事），「結果に限って」意思不通。",
+        "en": "「に限って」 is \"of all times\" (usually for bad luck); 「結果に限って」 makes no sense."
+      },
+      {
+        "zh": "「に比べて」需要两个比较对象，「結果に比べて頑張った」不成立。",
+        "en": "「に比べて」 needs two things to compare; 「結果に比べて頑張った」 doesn't work."
+      }
+    ]
+  },
+  {
+    "id": "n2-m2-110",
+    "type": "bunpou",
+    "refs": [
+      "lesson68#4"
+    ],
+    "difficulty": 3,
+    "stem": "この薬は、医師の説明をよく聞い（　）、使用することはできません。",
+    "options": [
+      "てでも",
+      "てからでないと",
+      "てばかりいて",
+      "てからというもの"
+    ],
+    "answer": 1,
+    "full": "この薬は、医師の説明をよく聞いてからでないと、使用することはできません。",
+    "tr": {
+      "zh": "这种药，必须先好好听医生的说明，否则不能使用。",
+      "en": "You can't use this medicine until you've listened carefully to the doctor's explanation."
+    },
+    "why": {
+      "zh": "线索：句末「使用することはできません」——不先完成前项，就不能做后项。\n规则：动词て形＋「からでないと／からでなければ」＋否定（「できない」「〜てはいけない」）＝不先……就不能……。\n辨析：「てからというもの」＝自从……以后（一直），后面是发生了变化的持续状态：「引っ越してからというもの、よく眠れる」，不接\"不能使用\"这种条件。",
+      "en": "Clue: 「使用することはできません」 — the second can't happen until the first is done.\nRule: て-form ＋ 「からでないと／からでなければ」 ＋ a negative (「できない」, 「〜てはいけない」) = not until ….\nContrast: 「てからというもの」 is \"ever since\", followed by a lasting change (「引っ越してからというもの、よく眠れる」), not a condition like \"can't use\"."
+    },
+    "wrong": [
+      {
+        "zh": "「てでも」＝即使……也要（「借金してでも買いたい」），后面要接强烈的意志，不接「できません」。",
+        "en": "「てでも」 is \"even if it means\" (「借金してでも買いたい」), needing a strong wish after it, not 「できません」."
+      },
+      null,
+      {
+        "zh": "「てばかりいて」＝光是……，表示总做同一件事，与\"先听说明再用\"意思不符。",
+        "en": "「てばかりいて」 is doing nothing but …, which doesn't fit \"listen first, then use\"."
+      },
+      {
+        "zh": "「てからというもの」表示自那以后的持续变化，不能和\"不能使用\"这种规定搭配。",
+        "en": "「てからというもの」 marks a lasting change since then; it doesn't go with a rule like \"can't be used\"."
+      }
+    ]
+  },
+  {
+    "id": "n2-m2-111",
+    "type": "bunpou",
+    "refs": [
+      "lesson71#5"
+    ],
+    "difficulty": 2,
+    "stem": "友人が車で迎えに来てくれたので、雨の中を駅まで歩か（　）。",
+    "options": [
+      "ざるを得なかった",
+      "ずにはいられなかった",
+      "ずにおいた",
+      "ずに済んだ"
+    ],
+    "answer": 3,
+    "full": "友人が車で迎えに来てくれたので、雨の中を駅まで歩かずに済んだ。",
+    "tr": {
+      "zh": "朋友开车来接我，所以我不用冒雨走到车站了。",
+      "en": "A friend came to pick me up by car, so I didn't have to walk to the station in the rain."
+    },
+    "why": {
+      "zh": "线索：「友人が車で迎えに来てくれたので」——有人帮忙，本来要做的辛苦事可以不做了。\n规则：动词ない形去掉「ない」＋「ずに済む」（「する」→「せずに済む」）＝不用……就解决了、免于……。\n辨析：「ずにおいた」＝故意先不做（为了以后）：「わざと言わずにおいた」，是自己有意的选择，不是因为别人帮忙而免去。",
+      "en": "Clue: 「友人が車で迎えに来てくれたので」 — thanks to help, a hard thing you'd have had to do is avoided.\nRule: ない-form minus 「ない」 ＋ 「ずに済む」 (「する」 → 「せずに済む」) = get away without having to.\nContrast: 「ずにおいた」 is deliberately leaving something undone (「わざと言わずにおいた」) — your own choice, not something spared by another's help."
+    },
+    "wrong": [
+      {
+        "zh": "「ざるを得なかった」＝不得不……，有人开车来接，就没有必要冒雨走路，与前文矛盾。",
+        "en": "「ざるを得なかった」 means had to, but being picked up means there was no need to walk."
+      },
+      {
+        "zh": "「ずにはいられなかった」＝忍不住要……，意思与前文毫无关系。",
+        "en": "「ずにはいられなかった」 is \"couldn't help doing\", which has nothing to do with the context."
+      },
+      {
+        "zh": "「ずにおいた」是自己有意不做，与\"朋友来接所以不用走\"的因果不符。",
+        "en": "「ずにおいた」 is choosing not to do something; it doesn't fit being spared by a friend's lift."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n2-m2-112",
+    "type": "bunpou",
+    "refs": [
+      "lesson74#3"
+    ],
+    "difficulty": 1,
+    "stem": "来月の旅行に行けるかどうかは、仕事の忙しさ（　）。",
+    "options": [
+      "ばかりだ",
+      "次第だ",
+      "までだ",
+      "ものだ"
+    ],
+    "answer": 1,
+    "full": "来月の旅行に行けるかどうかは、仕事の忙しさ次第だ。",
+    "tr": {
+      "zh": "下个月能不能去旅行，要看工作忙不忙。",
+      "en": "Whether I can go on the trip next month depends on how busy work is."
+    },
+    "why": {
+      "zh": "线索：「行けるかどうかは」——结果还没定，要看另一个条件。\n规则：名词＋「次第だ／次第で」＝取决于……、要看……，常说「天気次第」「あなた次第」「努力次第で」。\n辨析：「までだ」＝大不了……就是了（「だめならやめるまでだ」），接动词，不表示\"取决于\"。",
+      "en": "Clue: 「行けるかどうかは」 — the outcome isn't settled; it depends on something else.\nRule: noun ＋ 「次第だ／次第で」 = depends on: 「天気次第」, 「あなた次第」, 「努力次第で」.\nContrast: 「までだ」 is \"I'll just …, that's all\" (「だめならやめるまでだ」) after a verb; it doesn't mean \"depends on\"."
+    },
+    "wrong": [
+      {
+        "zh": "「ばかりだ」＝一个劲儿地……（「悪くなるばかりだ」），接动词，不接「忙しさ」。",
+        "en": "「ばかりだ」 is \"keeps getting …\" (「悪くなるばかりだ」) after a verb, not after 「忙しさ」."
+      },
+      null,
+      {
+        "zh": "「までだ」接动词，表示\"大不了……\"或\"只是……而已\"，不接名词表示条件。",
+        "en": "「までだ」 follows a verb (\"I'll just …\"); it doesn't make a noun a condition."
+      },
+      {
+        "zh": "「ものだ」表示常理或感慨，接普通形，「忙しさものだ」不成立。",
+        "en": "「ものだ」 states a general truth after a plain form; 「忙しさものだ」 doesn't work."
+      }
+    ]
+  },
+  {
+    "id": "n2-m2-113",
+    "type": "narabe",
+    "refs": [
+      "lesson71#1"
+    ],
+    "difficulty": 2,
+    "stem": "兄は勉強は苦手だが、 [_] [_] [★] [_] 誰にも負けない。",
+    "options": [
+      "機械を",
+      "直すこと",
+      "にかけては",
+      "古い"
+    ],
+    "order": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "full": "兄は勉強は苦手だが、古い機械を直すことにかけては誰にも負けない。",
+    "tr": {
+      "zh": "哥哥虽然不擅长学习，但说到修理旧机器，谁也比不过他。",
+      "en": "My brother isn't good at studying, but when it comes to fixing old machines, nobody can beat him."
+    },
+    "why": {
+      "zh": "线索：句末「誰にも負けない」和选项「にかけては」——\"在……方面不输给任何人\"。\n怎么排：「にかけては」前面是名词或「动词＋こと」：「直すことにかけては」；「直す」的宾语是「機械を」，「古い」修饰「機械」。顺序：古い → 機械を → 直すこと → にかけては，★ 是「直すこと」。\n容易错：把「古い」放在「直すこと」前面。形容词要紧挨着它修饰的名词「機械」。",
+      "en": "Clue: 「誰にも負けない」 at the end and the piece 「にかけては」 — \"second to none when it comes to …\".\nOrder: 「にかけては」 follows a noun or verb ＋ 「こと」: 「直すことにかけては」; the object of 「直す」 is 「機械を」, and 「古い」 modifies 「機械」: 古い → 機械を → 直すこと → にかけては. The ★ is 「直すこと」.\nTrap: putting 「古い」 right before 「直すこと」. The adjective must sit next to the noun it describes, 「機械」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-m2-114",
+    "type": "narabe",
+    "refs": [
+      "lesson70#4"
+    ],
+    "difficulty": 1,
+    "stem": "健康のためには、 [_] [★] [_] [_] 、仕事が忙しいとなかなか続けられない。",
+    "options": [
+      "が",
+      "に越したことはない",
+      "毎日",
+      "運動する"
+    ],
+    "order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "full": "健康のためには、毎日運動するに越したことはないが、仕事が忙しいとなかなか続けられない。",
+    "tr": {
+      "zh": "为了健康，最好每天都运动，但工作一忙就很难坚持。",
+      "en": "For your health, it's best to exercise every day, but when work is busy it's hard to keep it up."
+    },
+    "why": {
+      "zh": "线索：选项「に越したことはない」（最好……、……再好不过），后半句「なかなか続けられない」是转折。\n怎么排：「に越したことはない」接动词辞书形：「運動するに越したことはない」；「毎日」修饰「運動する」，放在它前面；转折的「が」放最后接逗号。顺序：毎日 → 運動する → に越したことはない → が，★ 是「運動する」。\n容易错：把「が」放在「に越したことはない」前面。「が」在这里是连接前后句的转折，要放在整个前半句末尾。",
+      "en": "Clue: the piece 「に越したことはない」 (it's best to …), and the contrast 「なかなか続けられない」 after the comma.\nOrder: 「に越したことはない」 follows the dictionary form: 「運動するに越したことはない」; 「毎日」 modifies 「運動する」 and goes before it; the linking 「が」 closes the first half before the comma: 毎日 → 運動する → に越したことはない → が. The ★ is 「運動する」.\nTrap: putting 「が」 before 「に越したことはない」. Here 「が」 is the \"but\" joining the two halves, so it ends the first half."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-m2-115",
+    "type": "narabe",
+    "refs": [
+      "lesson69#2",
+      "lesson69#5"
+    ],
+    "difficulty": 2,
+    "stem": "来年度の計画は、 [_] [_] [_] [★] 立てる必要がある。",
+    "options": [
+      "踏まえた",
+      "結果を",
+      "うえで",
+      "今年度の"
+    ],
+    "order": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "full": "来年度の計画は、今年度の結果を踏まえたうえで立てる必要がある。",
+    "tr": {
+      "zh": "下一年度的计划，需要在参考本年度结果的基础上制定。",
+      "en": "Next year's plan needs to be drawn up in light of this year's results."
+    },
+    "why": {
+      "zh": "线索：选项有「踏まえた」和「うえで」——「〜を踏まえたうえで」（在考虑……的基础上）。\n怎么排：「結果を＋踏まえた」组成动宾；「た形＋うえで」表示\"在……之后/基础上\"再做后项；「今年度の」修饰「結果」。顺序：今年度の → 結果を → 踏まえた → うえで，★ 是「うえで」。\n容易错：把「来年度」和「今年度」弄混，或把「今年度の」放在「踏まえた」后面。「の」后面必须紧接名词「結果」。",
+      "en": "Clue: the pieces 「踏まえた」 and 「うえで」 — 「〜を踏まえたうえで」 (after taking … into account).\nOrder: 「結果を ＋ 踏まえた」 is verb and object; た-form ＋ 「うえで」 means \"having done that, then …\"; 「今年度の」 modifies 「結果」: 今年度の → 結果を → 踏まえた → うえで. The ★ is 「うえで」.\nTrap: putting 「今年度の」 after 「踏まえた」. A noun must follow 「の」 directly, here 「結果」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-m2-116",
+    "type": "narabe",
+    "refs": [
+      "lesson72#1"
+    ],
+    "difficulty": 2,
+    "stem": "このホテルは [★] [_] [_] [_] 、サービスも部屋も素晴らしかった。",
+    "options": [
+      "料金が",
+      "ことはあって",
+      "だけの",
+      "高い"
+    ],
+    "order": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "full": "このホテルは料金が高いだけのことはあって、サービスも部屋も素晴らしかった。",
+    "tr": {
+      "zh": "这家酒店不愧价格高，服务和房间都非常好。",
+      "en": "This hotel was worth its high prices — the service and the rooms were excellent."
+    },
+    "why": {
+      "zh": "线索：选项「だけの」「ことはあって」——「〜だけのことはある」（不愧是……、值得……），这里用连接形「だけのことはあって」。\n怎么排：先拼「だけの＋ことはあって」；前面接普通形「高い」；「高い」的主语是「料金が」。顺序：料金が → 高い → だけの → ことはあって，★ 是「料金が」。\n容易错：把「料金が」放在「だけの」后面。「だけのことはある」前面是一个完整的小句「料金が高い」。",
+      "en": "Clue: the pieces 「だけの」 and 「ことはあって」 — 「〜だけのことはある」 (worthy of, as you'd expect from), here in the linking form 「だけのことはあって」.\nOrder: join 「だけの ＋ ことはあって」 first; it follows a plain form, 「高い」, whose subject is 「料金が」: 料金が → 高い → だけの → ことはあって. The ★ is 「料金が」.\nTrap: putting 「料金が」 after 「だけの」. 「だけのことはある」 takes a whole clause before it, 「料金が高い」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n2-m2-117",
+    "type": "narabe",
+    "refs": [
+      "lesson74#2"
+    ],
+    "difficulty": 3,
+    "stem": "これは自分で [_] [★] [_] [_] から、どんな結果になっても後悔しない。",
+    "options": [
+      "出した",
+      "何日も",
+      "結論だ",
+      "考え抜いて"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "これは自分で何日も考え抜いて出した結論だから、どんな結果になっても後悔しない。",
+    "tr": {
+      "zh": "这是我自己花了好几天反复思考后得出的结论，所以无论结果如何都不会后悔。",
+      "en": "This is a conclusion I reached myself after thinking it through for days, so whatever happens I won't regret it."
+    },
+    "why": {
+      "zh": "线索：选项「考え抜いて」——动词ます形＋「抜く」＝彻底地……、……到最后。\n怎么排：「何日も」说明想了多久，放在「考え抜いて」前面；「考え抜いて出した」修饰「結論」；「結論だ」接句中的「から」。顺序：何日も → 考え抜いて → 出した → 結論だ，★ 是「考え抜いて」。\n容易错：把「出した」放在「考え抜いて」前面。先\"想透\"再\"得出\"，て形表示先后，修饰语「考え抜いて出した」整体放在「結論」前。",
+      "en": "Clue: the piece 「考え抜いて」 — stem ＋ 「抜く」 = to do thoroughly, all the way.\nOrder: 「何日も」 says for how long and goes before 「考え抜いて」; 「考え抜いて出した」 modifies 「結論」; 「結論だ」 connects to 「から」: 何日も → 考え抜いて → 出した → 結論だ. The ★ is 「考え抜いて」.\nTrap: putting 「出した」 before 「考え抜いて」. You think it through first, then reach it; the て-form gives that order, and the whole modifier comes before 「結論」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

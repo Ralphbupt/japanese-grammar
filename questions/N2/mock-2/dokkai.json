@@ -1,0 +1,900 @@
+[
+  {
+    "id": "n2-m2-p1",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "次の文章は、新聞に掲載されたエッセイである。",
+    "passage": "朝、天気予報で「降水確率三十パーセント」と聞くと、傘を持って出るべきか毎回迷う。三割なら、降らない可能性のほうが高い。[[1]]、荷物はできるだけ増やしたくない。そう考えて、私はたいてい傘を置いて出かけてしまう。\nところが先日、ある気象予報士の話を聞いて考えが変わった。降水確率とは、同じような気象条件の日が百回あった[[2]]、そのうち何回雨が降るかを表した数字だそうだ。三十パーセントというのは、十日のうち三日は降るということであり、決して低い数字ではない。\nしかも、この数字は雨の強さとは関係がない。確率が低くても激しく降ることもあれば、確率が高くても小雨で終わることもある。数字が低いからといって、安心してばかり[[3]]のだ。\nそれ以来、私は折りたたみ傘をいつもかばんに入れておくようにしている。重いと感じることもあるが、急な雨にあわてることを考えれば、この程度の重さは[[4]]。数字をどう受け止めるかは結局自分次第だが、その意味を正しく知っているかどうかで、行動は大きく変わる[[5]]。",
+    "tr": {
+      "zh": "早上听天气预报说“降水概率百分之三十”，我每次都犹豫要不要带伞出门。三成的话，不下雨的可能性更大。再说，行李我也想尽量少带。这么一想，我多半就把伞留在家里出门了。\n可是前几天，听了一位气象预报员的话，我的想法改变了。据说降水概率是这样一个数字：假如有一百天气象条件差不多，其中有几天会下雨。百分之三十就是十天里有三天下雨，绝不是一个低的数字。\n而且，这个数字和雨的大小没有关系。概率低也可能下得很大，概率高也可能只是小雨。所以不能因为数字低就一味放心。\n从那以后，我总是把折叠伞放在包里。有时也会觉得重，但想想突然下雨时手忙脚乱的样子，这点重量算不了什么。怎样看待这个数字终究取决于自己，但是否正确了解它的含义，行动不是会大不相同吗？",
+      "en": "When the morning forecast says ‘a 30 percent chance of rain’, I always hesitate over whether to take an umbrella. At 30 percent, it’s more likely not to rain. Besides, I’d rather not carry any more than I have to. With that in mind, I usually leave the umbrella at home.\nThe other day, though, something a weather forecaster said changed my mind. The chance of rain, apparently, is a number that says: if there were a hundred days with similar weather conditions, on how many of them it would rain. Thirty percent means rain on three days out of ten — by no means a low figure.\nWhat’s more, the number has nothing to do with how hard it rains. It can pour when the chance is low and only drizzle when it is high. A low number is no reason to just relax.\nSince then I always keep a folding umbrella in my bag. It sometimes feels heavy, but when I think of being caught out by a sudden shower, a little weight like that is a small price. How you take the number is up to you in the end, but doesn’t knowing what it really means make a big difference to what you do?"
+    },
+    "questions": [
+      {
+        "options": [
+          "かえって",
+          "それなのに",
+          "そのうえ",
+          "なぜなら"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "线索：前句「降らない可能性のほうが高い」是不带伞的第一个理由；后句「荷物はできるだけ増やしたくない」是第二个理由，两者方向一致，接着用「そう考えて」把两点一起引向「傘を置いて出かけてしまう」。\n规则：「そのうえ」用来追加同方向的内容，“再加上、而且”。\n辨析：「それなのに」＝前后相反且有不满（「約束したのに、それなのに来ない」）；这里两个理由一起推出同一个结果，不是相反。",
+          "en": "Clue: 「降らない可能性のほうが高い」 is the first reason not to take an umbrella; 「荷物はできるだけ増やしたくない」 is a second one in the same direction, and 「そう考えて」 then draws both together into 「傘を置いて出かけてしまう」.\nRule: 「そのうえ」 adds something pointing the same way: ‘on top of that, besides’.\nContrast: 「それなのに」 = the second part goes against the first, with a note of complaint; here two reasons point to the same result."
+        },
+        "wrong": [
+          {
+            "zh": "「かえって」是“反而”，表示结果与预想相反；“不下雨的可能性大”和“不想带东西”并不相反。",
+            "en": "「かえって」 (‘on the contrary’) marks an unexpected result; not wanting to carry things isn’t the opposite of rain being unlikely."
+          },
+          {
+            "zh": "「それなのに」表示逆接并带不满，但“不想多带行李”和“不太会下雨”方向一致，后面「そう考えて」把两者当作同一结论的理由。",
+            "en": "「それなのに」 (‘and yet’) marks a contrary result, but not wanting extra luggage points the same way as rain being unlikely, and 「そう考えて」 treats both as reasons for one decision."
+          },
+          null,
+          {
+            "zh": "「なぜなら」后面要说明前句的理由，句尾一般是「〜からだ」；“不想多带行李”不是“不下雨可能性大”的理由。",
+            "en": "「なぜなら」 explains the previous sentence and usually ends in 「〜からだ」; not wanting luggage isn’t why rain is unlikely."
+          }
+        ]
+      },
+      {
+        "options": [
+          "としたら",
+          "としても",
+          "とたんに",
+          "からには"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：「同じような気象条件の日が百回あった」并不是真的发生过，是为了说明概率而做的假设；后面「そのうち何回雨が降るか」是在这个假设下计算。\n规则：「〜としたら」＝“假如……的话”，提出一个假设的前提，后面说在此前提下的情况。\n辨析：「〜としても」＝“即使……也”，后面的结果不受前提影响；这里后句正是在前提下数下雨的天数，需要的是假设而不是让步。",
+          "en": "Clue: 「同じような気象条件の日が百回あった」 never really happened; it’s a hypothesis to explain probability, and 「そのうち何回雨が降るか」 counts within it.\nRule: 「〜としたら」 = ‘supposing that’, setting up a hypothetical premise for what follows.\nContrast: 「〜としても」 = ‘even if’, where the result holds regardless of the premise; here the count depends on the premise, so a hypothesis, not a concession, is needed."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「としても」是“即使……也”，让步的意思和“其中几天下雨”这种定义接不上。",
+            "en": "「としても」 (‘even if’) is concessive and doesn’t fit a definition of how many of those days it rains."
+          },
+          {
+            "zh": "「とたんに」要接动词た形，表示“刚一……就”，是现实中接连发生的事，不是假设。",
+            "en": "「とたんに」 (‘the moment that’) describes two real events in quick succession, not a hypothesis."
+          },
+          {
+            "zh": "「からには」是“既然……就要”，后面接决心或义务，不用来下定义。",
+            "en": "「からには」 (‘now that’) is followed by resolve or obligation, not a definition."
+          }
+        ]
+      },
+      {
+        "options": [
+          "いればいい",
+          "はいられない",
+          "いるしかない",
+          "いてもかまわない"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "线索：「からといって」后面通常接否定，表示“不能因为……就……”；前面又说概率低也可能下大雨。\n规则：「〜てばかりはいられない」＝不能一直只……下去，表示现实不允许。\n辨析：「〜てもかまわない」＝可以、无妨；放在「からといって」后面意思正好反了：作者是在提醒不要光放心。",
+          "en": "Clue: 「からといって」 is usually followed by a negative (‘just because… doesn’t mean’), and the text has just said it can pour even when the odds are low.\nRule: 「〜てばかりはいられない」 = can’t just keep doing ~; circumstances don’t allow it.\nContrast: 「〜てもかまわない」 = it’s all right to; after 「からといって」 it reverses the meaning: the writer is warning against simply relaxing."
+        },
+        "wrong": [
+          {
+            "zh": "「いればいい」意思是“只要放心就行”，和前面「確率が低くても激しく降ることもある」的提醒相矛盾。",
+            "en": "「いればいい」 (‘you need only relax’) contradicts the warning that it can pour even at low odds."
+          },
+          null,
+          {
+            "zh": "「いるしかない」是“只能放心”，没有别的选择的意思，与上下文的警告方向相反。",
+            "en": "「いるしかない」 (‘have no choice but to relax’) runs against the warning in the context."
+          },
+          {
+            "zh": "「いてもかまわない」是“一直放心也没关系”，与作者要提醒读者的意思相反。",
+            "en": "「いてもかまわない」 (‘it’s fine to relax’) is the opposite of the writer’s warning."
+          }
+        ]
+      },
+      {
+        "options": [
+          "大したものだ",
+          "重いわけだ",
+          "困ったものだ",
+          "安いものだ"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "线索：「重いと感じることもあるが」先承认缺点，接着「急な雨にあわてることを考えれば」拿更糟的情况来比。\n规则：「〜と思えば／〜ことを考えれば、安いものだ」＝和……相比，这点代价不算什么，是惯用说法，“安い”不是指价钱。\n辨析：「困ったものだ」也是「〜ものだ」的感叹，但表示抱怨；这里是比较之后觉得值得，作者仍坚持带伞。",
+          "en": "Clue: 「重いと感じることもあるが」 admits the drawback, then 「急な雨にあわてることを考えれば」 compares it with something worse.\nRule: 「〜と思えば／〜ことを考えれば、安いものだ」 is a set phrase: compared with that, this cost is nothing. 「安い」 here isn’t about money.\nContrast: 「困ったものだ」 is also an exclamatory 「〜ものだ」, but a complaint; here the comparison makes the cost seem worth it, and the writer keeps the umbrella."
+        },
+        "wrong": [
+          {
+            "zh": "「大したものだ」是“真了不起”，用来称赞人或事，不能形容伞的重量。",
+            "en": "「大したものだ」 (‘really something’) praises a person or feat; it doesn’t describe an umbrella’s weight."
+          },
+          {
+            "zh": "「重いわけだ」是“怪不得重”，表示找到了原因，前面没有说明重的原因。",
+            "en": "「重いわけだ」 (‘no wonder it’s heavy’) explains a cause, but no cause for the weight is given."
+          },
+          {
+            "zh": "「困ったものだ」是抱怨“真让人头疼”，而前面「〜ことを考えれば」是在说服自己接受，后面作者也继续带伞。",
+            "en": "「困ったものだ」 (‘what a nuisance’) is a complaint, but 「〜ことを考えれば」 reasons toward accepting it, and the writer keeps carrying the umbrella."
+          },
+          null
+        ]
+      },
+      {
+        "options": [
+          "のではないだろうか",
+          "わけではないだろう",
+          "とは限らないだろう",
+          "にすぎないだろう"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：作者自己就是听了含义的解释后改变了做法（「それ以来…入れておくようにしている」），最后一句是全文的结论。\n规则：「〜のではないだろうか」＝“不是……吗”，用委婉的疑问形式表达自己的主张，常用在文章结尾。\n辨析：「〜とは限らない」＝未必、不一定，用来否定“总是如此”；放在结尾就把作者亲身得出的结论否定了。",
+          "en": "Clue: The writer changed what they do after learning the meaning (「それ以来…入れておくようにしている」), and the last sentence is the essay’s conclusion.\nRule: 「〜のではないだろうか」 = ‘isn’t it the case that…’, a soft way to state one’s own view, common at the end of essays.\nContrast: 「〜とは限らない」 = ‘not necessarily’, denying that something always holds; at the end it would undo the writer’s own conclusion."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「わけではないだろう」是“并不是……吧”，否定了行动会改变，与全文“知道含义后自己改变了做法”的经历相反。",
+            "en": "「わけではないだろう」 (‘it’s not that…’) denies the change, against the writer’s own experience of changing after learning the meaning."
+          },
+          {
+            "zh": "「とは限らないだろう」是“未必……吧”，削弱了结论，与作者因了解含义而改变做法的经历不符。",
+            "en": "「とは限らないだろう」 (‘not necessarily’) weakens the conclusion the writer’s experience supports."
+          },
+          {
+            "zh": "「にすぎない」是“只不过”，不能和「大きく変わる」搭配，意思矛盾。",
+            "en": "「にすぎない」 (‘merely’) clashes with 「大きく変わる」 (‘changes greatly’)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-m2-p2",
+    "type": "short",
+    "difficulty": 1,
+    "intro": "これは、歯科医院のホームページに掲載されたお知らせである。",
+    "passage": "患者の皆様へ\n\nいつも当院をご利用いただき、ありがとうございます。\n11月1日より、予約の変更・キャンセルの方法が変わります。これまではお電話でのみ受け付けておりましたが、今後は、ご予約の前日の18時までであれば、当院のホームページからも手続きができるようになります。前日の18時を過ぎてからの変更・キャンセルにつきましては、恐れ入りますが、これまでどおりお電話でご連絡ください。\nまた、ご連絡のないまま予約の時間にお越しにならないことが2回続いた方は、次回以降、ホームページからのご予約ができなくなりますので、ご注意ください。",
+    "tr": {
+      "zh": "各位患者：\n\n感谢您一直以来光临本院。\n自11月1日起，预约的变更、取消方式有所改变。此前只接受电话办理，今后只要在预约前一天18点之前，也可以通过本院网站办理。超过前一天18点后的变更、取消，请和以前一样打电话联系，敬请谅解。\n另外，连续两次未联系就没有在预约时间来院的患者，下次起将不能通过网站预约，请注意。",
+      "en": "To our patients,\n\nthank you for always choosing our clinic.\nFrom 1 November, the way to change or cancel an appointment is changing. Until now we accepted this by phone only; from now on, you can also do it on our website up to 6 p.m. on the day before your appointment. For changes or cancellations after 6 p.m. on the day before, we’re sorry, but please call us as before.\nPlease also note that patients who twice in a row miss an appointment without contacting us will no longer be able to book on the website."
+    },
+    "questions": [
+      {
+        "q": "11月10日の午前10時に予約している人が、9日の夜8時になって予約を変更したくなった。この場合、どうすればよいか。",
+        "options": [
+          "医院のホームページから、予約を変更する。",
+          "医院に電話をして、予約の変更を伝える。",
+          "変更はできないので、10日に医院へ行く。",
+          "連絡はせずに、ホームページで別の日を予約する。"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「ご予約の前日の18時までであれば、当院のホームページからも手続きができる」；「前日の18時を過ぎてからの変更・キャンセルにつきましては…これまでどおりお電話でご連絡ください」。\n推理：预约是10日，前一天是9日；晚上8点已超过「前日の18時」，网站不能用，只能打电话。\n容易错：只看到“新增网站办理”就选网站，漏看了「18時まで」这个时间限制。",
+          "en": "Evidence: 「ご予約の前日の18時までであれば、当院のホームページからも手続きができる」; 「前日の18時を過ぎてからの変更・キャンセルにつきましては…これまでどおりお電話でご連絡ください」.\nReasoning: The appointment is on the 10th, so the day before is the 9th; 8 p.m. is past 「前日の18時」, so the website is out and only a phone call works.\nTrap: Seeing only the new website option and missing the 「18時まで」 limit."
+        },
+        "wrong": [
+          {
+            "zh": "网站只能办到前一天18点，9日晚上8点已经过了时间。",
+            "en": "The website works only until 6 p.m. the day before; 8 p.m. on the 9th is too late."
+          },
+          null,
+          {
+            "zh": "过了18点也能变更，只是要打电话，并不是不能变更。",
+            "en": "Changes after 6 p.m. are still possible — by phone; they aren’t ruled out."
+          },
+          {
+            "zh": "不联系就不来算作爽约；而且过了18点要打电话，不是在网站上办。",
+            "en": "Not contacting the clinic counts as a no-show, and after 6 p.m. the change must be made by phone."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-m2-p3",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "料理を始めたばかりのころ、レシピに「塩少々」「しょうゆ適量」と書いてあると困ってしまった。少々とは何グラムなのか、適量とはどのくらいなのか、はっきり書いてほしいと思ったものだ。しかし、何年か台所に立つうちに、その書き方の意味が分かってきた。野菜の大きさも、食べる人の好みも、その日によって違う。決められた数字を守るより、味を見ながら自分で決めたほうが、結局おいしくなるのだ。あいまいな言葉は、作る人を信頼しているからこそ使われているのかもしれない。",
+    "tr": {
+      "zh": "刚开始做饭的时候，看到菜谱上写着“盐少许”“酱油适量”就很犯难。我曾想：少许是几克？适量是多少？希望写清楚。可是，在厨房里站了几年之后，我渐渐明白了这种写法的意思。蔬菜的大小、吃的人的口味，每天都不一样。与其照着定好的数字做，不如一边尝味道一边自己决定，结果反而更好吃。含糊的说法，也许正是因为信任做菜的人才使用的。",
+      "en": "When I had just started cooking, I was at a loss when a recipe said ‘a pinch of salt’ or ‘soy sauce to taste’. How many grams is a pinch? How much is ‘to taste’? I used to wish they’d spell it out. But after some years in the kitchen, I came to understand why they’re written that way. The size of the vegetables and the tastes of the people eating vary from day to day. Deciding for yourself while tasting, rather than sticking to fixed numbers, ends up tasting better. Vague words may be used precisely because the recipe trusts the cook."
+    },
+    "questions": [
+      {
+        "q": "筆者は、レシピの「適量」という書き方について、今どう考えているか。",
+        "options": [
+          "初心者にも分かるように、正確な量を書くべきだ。",
+          "料理に慣れた人のことしか考えていない書き方だ。",
+          "人によって好みが違うので、使わないほうがいい。",
+          "作る人が味を見て決めることを前提にした書き方だ。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「味を見ながら自分で決めたほうが、結局おいしくなる」；「作る人を信頼しているからこそ使われているのかもしれない」。\n推理：「しかし、何年か台所に立つうちに」之后是现在的看法：量交给做菜的人边尝边定，这种写法以此为前提。\n容易错：要求写清楚克数的选项是「〜たものだ」所说的过去的想法，不是现在的。",
+          "en": "Evidence: 「味を見ながら自分で決めたほうが、結局おいしくなる」; 「作る人を信頼しているからこそ使われているのかもしれない」.\nReasoning: After 「しかし、何年か台所に立つうちに」 comes the present view: the wording assumes the cook will decide while tasting.\nTrap: The option wanting exact amounts is the past view marked by 「〜たものだ」, not the present one."
+        },
+        "wrong": [
+          {
+            "zh": "这是作者刚开始做饭时的想法（「思ったものだ」），后来改变了。",
+            "en": "That was the writer’s view as a beginner (「思ったものだ」); it later changed."
+          },
+          {
+            "zh": "作者认为这种写法出于「信頼」，并不是只为熟手考虑、不体贴。",
+            "en": "The writer sees it as coming from trust, not as catering only to experienced cooks."
+          },
+          {
+            "zh": "正因为口味因人而异，才要自己决定量；作者是肯定这种写法的。",
+            "en": "Because tastes differ, the cook should decide; the writer approves of the wording."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-m2-p4",
+    "type": "short",
+    "difficulty": 1,
+    "intro": "これは、ある会社の社員に届いたメールである。",
+    "passage": "社員各位\n\n総務部の木村です。\n名刺の注文方法についてお知らせします。これまでは総務部がまとめて注文していましたが、12月からは、社内ウェブサイトの申し込みページから各自で注文していただくことになりました。注文から届くまでは、これまでどおり5営業日ほどかかります。\nなお、異動や役職の変更で名刺の内容が変わる場合、人事部での登録が済んでいないと、申し込みページに新しい情報が表示されません。異動が決まった方は、まず人事部で変更が登録されているかを確認してから、ご注文ください。",
+    "tr": {
+      "zh": "各位同事：\n\n我是总务部的木村。\n现通知名片的订购方式。此前由总务部统一订购，自12月起，改为各人通过公司内部网站的申请页面自行订购。从订购到收到，和以前一样需要5个工作日左右。\n另外，因调动或职务变更而名片内容有变时，如果人事部尚未完成登记，申请页面上就不会显示新的信息。已确定调动的同事，请先确认人事部是否已登记变更，然后再订购。",
+      "en": "To all staff,\n\nthis is Kimura from General Affairs.\nAbout ordering business cards: until now General Affairs has placed orders for everyone, but from December you will each order your own from the request page on the company intranet. As before, cards take about five business days to arrive.\nNote that when your card details change because of a transfer or a new position, the new information won’t appear on the request page until HR has registered it. If you are being transferred, please first check that HR has registered the change, then place your order."
+    },
+    "questions": [
+      {
+        "q": "来月、営業部から企画部へ異動する人が新しい名刺を作る場合、まず何をしなければならないか。",
+        "options": [
+          "総務部に新しい部署名をメールで知らせる。",
+          "申し込みページで部署名を自分で書き直す。",
+          "人事部で変更の登録が済んでいるか確かめる。",
+          "5営業日前までに、上司に注文を頼んでおく。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「異動が決まった方は、まず人事部で変更が登録されているかを確認してから、ご注文ください」。\n推理：调动属于名片内容变化；人事部登记完成前，页面不显示新部门，所以第一步是确认登记。「確認する」＝选项「確かめる」。\n容易错：选“通知总务部”的，套用了「これまでは総務部がまとめて注文していました」这一旧做法。",
+          "en": "Evidence: 「異動が決まった方は、まず人事部で変更が登録されているかを確認してから、ご注文ください」.\nReasoning: A transfer changes the card; until HR registers it, the page won’t show the new department, so the first step is checking that. 「確認する」 = the option’s 「確かめる」.\nTrap: Telling General Affairs follows the old system in 「これまでは総務部がまとめて注文していました」."
+        },
+        "wrong": [
+          {
+            "zh": "总务部统一订购是以前的做法，12月起各人自己在网上订购。",
+            "en": "General Affairs ordering for everyone is the old system; from December people order themselves."
+          },
+          {
+            "zh": "没有说可以自己改写；人事部登记之前，页面上不会显示新信息。",
+            "en": "Nothing says you can edit it yourself; the new details appear only once HR has registered them."
+          },
+          null,
+          {
+            "zh": "「5営業日」是到货所需时间，并没有说要请上司订购。",
+            "en": "「5営業日」 is the delivery time; nothing says to ask your manager to order."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-m2-p5",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "観葉植物を枯らしてしまう原因で最も多いのは、水のやり忘れではなく、水のやりすぎだそうだ。元気がないように見えると、つい心配になって水を足してしまう。しかし、土がいつも湿っていると根が呼吸できず、かえって弱ってしまうのだという。この話を聞いて、新人の指導をしていたころの自分を思い出した。相手が困っていないか気になって、私は聞かれる前から次々に助言をしていた。あのとき新人に必要だったのは、自分で考えるための時間だったのかもしれない。",
+    "tr": {
+      "zh": "据说让观叶植物枯死的原因中，最多的不是忘了浇水，而是浇水太多。看到植物没精神，就忍不住担心而多浇水。但是，土壤总是湿的，根就无法呼吸，反而会变弱。听了这番话，我想起了自己带新人的时候。我总担心对方是不是遇到了困难，不等对方问就一个接一个地给建议。那时新人需要的，也许是自己思考的时间。",
+      "en": "The most common way people kill houseplants, apparently, isn’t forgetting to water them but watering them too much. When a plant looks droopy, you worry and give it more water. But if the soil is always wet, the roots can’t breathe and the plant actually gets weaker. Hearing this reminded me of myself when I was training new staff. Worried that they might be struggling, I kept giving advice before they even asked. What they needed then may have been time to think for themselves."
+    },
+    "questions": [
+      {
+        "q": "筆者は、新人を指導していたころの自分について、どう考えているか。",
+        "options": [
+          "世話を焼きすぎて、新人が自分で考える機会を奪っていた。",
+          "新人が困っていることに、もっと早く気づくべきだった。",
+          "助言が足りなかったために、新人を不安にさせていた。",
+          "新人に任せすぎて、必要な助言をしていなかった。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「私は聞かれる前から次々に助言をしていた」；「新人に必要だったのは、自分で考えるための時間だったのかもしれない」。\n推理：浇水太多反而让根变弱＝建议太多反而剥夺了新人思考的机会。选项「世話を焼きすぎて」对应「水のやりすぎ」。\n容易错：说“建议不够”或“放手太多”的选项把方向弄反了；比喻的重点是「やり忘れではなく、やりすぎ」。",
+          "en": "Evidence: 「私は聞かれる前から次々に助言をしていた」; 「新人に必要だったのは、自分で考えるための時間だったのかもしれない」.\nReasoning: Too much water weakens the roots = too much advice took away the new staff’s chances to think. The option’s 「世話を焼きすぎて」 matches 「水のやりすぎ」.\nTrap: The options about too little advice or too much hands-off get the direction backwards; the point of the image is 「やり忘れではなく、やりすぎ」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "作者是在对方开口前就给建议，问题不是发现得太晚。",
+            "en": "The writer advised before being asked; noticing too late wasn’t the problem."
+          },
+          {
+            "zh": "作者是「次々に助言をしていた」，建议太多而不是不够。",
+            "en": "The writer 「次々に助言をしていた」 — gave too much advice, not too little."
+          },
+          {
+            "zh": "正相反，作者什么都管，并没有放手交给新人。",
+            "en": "Quite the reverse: the writer stepped in at every turn rather than leaving things to them."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-m2-p6",
+    "type": "short",
+    "difficulty": 1,
+    "passage": "スーパーのレジに並ぶとき、隣の列のほうが早く進んでいるように感じることはないだろうか。これには理由がある。列が三つあれば、自分の列が一番早く進む確率は三分の一にすぎない。つまり、たいていはほかのどれかの列のほうが早いのだから、そう感じるのは当然なのだ。加えて、人は自分が抜かされたことはよく覚えているのに、自分が抜かしたことはすぐに忘れてしまう。そのため、実際以上に「自分はいつも遅い列を選んでしまう」と思い込みやすいのである。",
+    "tr": {
+      "zh": "在超市收银台排队时，你是不是觉得旁边的队伍走得更快？这是有原因的。如果有三条队，自己这条走得最快的概率只有三分之一。也就是说，多数时候总有另一条队更快，有这种感觉是理所当然的。此外，人对自己被超过的事记得很清楚，对自己超过别人的事却很快就忘了。因此，人容易比实际情况更强烈地认定“我总是选到慢的队”。",
+      "en": "When you queue at a supermarket checkout, do you ever feel the next line is moving faster? There’s a reason. With three lines, the chance that yours is the fastest is only one in three. In other words, most of the time one of the others is faster, so feeling that way is only natural. On top of that, people remember well when they were overtaken but quickly forget when they overtook others. So they easily become convinced, more than the facts warrant, that ‘I always pick the slow line’."
+    },
+    "questions": [
+      {
+        "q": "この文章によると、隣の列が早く見えるのはなぜか。",
+        "options": [
+          "三つの列のうち、自分の列だけがほかより遅く進むことが多いから",
+          "自分の列が最も早い確率は低く、抜かされた記憶は残りやすいから",
+          "抜かしたことも抜かされたことも、同じようにすぐ忘れるから",
+          "遅い列を選ぶのを恐れて、何度も列を変えてしまう人が多いから"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「自分の列が一番早く進む確率は三分の一にすぎない」；「自分が抜かされたことはよく覚えているのに、自分が抜かしたことはすぐに忘れてしまう」。\n推理：理由有两个，用「加えて」连接：①概率上多半是别的队快；②记忆偏向被超过的经历。正确选项把两点合在一起。\n容易错：只看到第一个理由就理解成“自己的队总是慢”，那是文末说的「思い込み」，不是事实。",
+          "en": "Evidence: 「自分の列が一番早く進む確率は三分の一にすぎない」; 「自分が抜かされたことはよく覚えているのに、自分が抜かしたことはすぐに忘れてしまう」.\nReasoning: There are two reasons, joined by 「加えて」: (1) odds say another line is usually faster; (2) memory favours being overtaken. The right option combines both.\nTrap: Reading it as ‘my line really is slower’ — that’s the 「思い込み」 at the end, not a fact."
+        },
+        "wrong": [
+          {
+            "zh": "文中说的是“自己这条最快的概率只有三分之一”，不是自己这条特别慢。",
+            "en": "The text says your line has only a one-in-three chance of being fastest, not that it is especially slow."
+          },
+          null,
+          {
+            "zh": "文中说被超过的事记得清楚，超过别人的事很快就忘，两者并不一样。",
+            "en": "The text says being overtaken is remembered and overtaking forgotten — not both alike."
+          },
+          {
+            "zh": "文中没有提到人们反复换队。",
+            "en": "The text says nothing about people switching lines repeatedly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-m2-p7",
+    "type": "mid",
+    "difficulty": 2,
+    "passage": "図書館といえば、静かに本を読んだり勉強したりする場所だというのが一般的なイメージだろう。ところが最近、会話をしてもよいエリアを設ける図書館が各地で増えている。ある市の図書館では、昨年の改装に合わせて一階を「話せるフロア」とし、グループで調べものをしたり、子どもに絵本を読み聞かせたりできるようにした。\nきっかけは、利用者の減少だった。特に若い世代は、友人と相談しながら課題に取り組むことが多く、「声を出せない図書館は使いにくい」という意見が以前から寄せられていたという。改装後、一階には高校生や子ども連れの家族が集まるようになり、一年で来館者数は改装前の一・五倍になった。\n一方で、静かな環境を求める利用者への配慮も欠かせない。この図書館では、二階と三階をこれまでどおり会話禁止とし、一階との間には音が伝わりにくい扉を設けた。館長は「にぎやかさと静けさのどちらかを選ぶのではなく、どちらも用意しておくことが大切だ」と話す。図書館は、本を貸すだけの場所から、人が集まり、ともに学ぶ場所へと変わりつつあるのかもしれない。",
+    "tr": {
+      "zh": "说到图书馆，一般的印象是安静地看书、学习的地方吧。可是最近，各地设立可以交谈区域的图书馆越来越多。某市的图书馆借去年改装之机，把一楼设为“可以说话的楼层”，让人们可以分组查资料，或者给孩子读绘本。\n起因是利用者减少。据说，尤其是年轻一代常常和朋友商量着完成作业，一直有人反映“不能出声的图书馆不好用”。改装后，一楼聚集了高中生和带孩子的家庭，一年间来馆人数达到改装前的1.5倍。\n另一方面，对追求安静环境的利用者的照顾也不可缺少。这家图书馆让二楼和三楼照旧禁止交谈，并在与一楼之间装了不易传声的门。馆长说：“重要的不是在热闹和安静之间二选一，而是两者都准备好。”图书馆也许正在从只是借书的地方，变成人们聚集、一起学习的地方。",
+      "en": "Most people picture a library as a place to read or study in silence. Recently, though, libraries in many places have been setting aside areas where talking is allowed. One city library, when it was refurbished last year, turned its ground floor into a ‘talking floor’ where people can research things in groups or read picture books aloud to children.\nThe trigger was falling use. Young people in particular often work on assignments while discussing them with friends, and the library had long been hearing that ‘a library where you can’t speak is hard to use’. After the refurbishment, high-school students and families with children began gathering on the ground floor, and within a year visitor numbers were one and a half times what they had been.\nAt the same time, users who want quiet must also be considered. This library kept the second and third floors no-talking as before and installed sound-blocking doors between them and the ground floor. ‘The point is not to choose between liveliness and quiet but to provide both,’ says the director. Libraries may be changing from places that just lend books into places where people gather and learn together."
+    },
+    "questions": [
+      {
+        "q": "この図書館が「話せるフロア」を作った理由として、最も適当なものはどれか。",
+        "options": [
+          "利用者が減るなか、相談しながら学びたい若い世代の声があったから",
+          "子どもへの読み聞かせをしたいという家族の希望が最も多かったから",
+          "来館者数を改装前の一・五倍に増やすという目標が決まっていたから",
+          "静かな環境を求める利用者からの苦情が、以前より少なくなったから"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「きっかけは、利用者の減少だった」；「若い世代は、友人と相談しながら課題に取り組むことが多く、「声を出せない図書館は使いにくい」という意見が以前から寄せられていた」。\n推理：起因是利用者减少，加上年轻人一直反映不能出声不方便；选项把两点合起来，「相談しながら学びたい」是对原文的改写。\n容易错：说“1.5倍的目标”的选项把改装后的结果当成了理由。",
+          "en": "Evidence: 「きっかけは、利用者の減少だった」; 「若い世代は、友人と相談しながら課題に取り組むことが多く、「声を出せない図書館は使いにくい」という意見が以前から寄せられていた」.\nReasoning: The trigger was falling use, plus young people’s long-standing complaint about not being able to talk; the option combines both, 「相談しながら学びたい」 paraphrasing the text.\nTrap: The ‘1.5× target’ option turns the post-refurbishment result into a reason."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "读绘本是“可以说话的楼层”能做的事之一，文中没有说这是家庭最多的要求。",
+            "en": "Reading to children is one thing the floor allows; the text doesn’t say it was families’ top request."
+          },
+          {
+            "zh": "1.5倍是改装后的结果，不是事先定下的目标。",
+            "en": "One and a half times is the result after the refurbishment, not a target set beforehand."
+          },
+          {
+            "zh": "文中没有提到追求安静的人投诉减少；图书馆反而为他们保留了禁止交谈的楼层。",
+            "en": "Nothing about fewer complaints from quiet-seekers; the library kept no-talking floors for them."
+          }
+        ]
+      },
+      {
+        "q": "改装後のこの図書館について、文章の内容と合うものはどれか。",
+        "options": [
+          "すべての階で、小さな声であれば会話してもよいことになった。",
+          "静かな環境を求める人のために、一階が会話禁止に変わった。",
+          "高校生の利用が増えたため、二階でも会話ができるようになった。",
+          "会話できる階とできない階の間に、音を防ぐ工夫がされている。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「二階と三階をこれまでどおり会話禁止とし、一階との間には音が伝わりにくい扉を設けた」。\n推理：一楼可以说话，二、三楼禁止；两者之间装了不易传声的门＝选项「音を防ぐ工夫」。\n容易错：把楼层弄反的选项——安静的是二、三楼，不是一楼。",
+          "en": "Evidence: 「二階と三階をこれまでどおり会話禁止とし、一階との間には音が伝わりにくい扉を設けた」.\nReasoning: Talking on the ground floor, none on floors two and three, with sound-blocking doors between = the option’s 「音を防ぐ工夫」.\nTrap: The option that swaps the floors — the quiet ones are two and three, not the ground floor."
+        },
+        "wrong": [
+          {
+            "zh": "只有一楼可以交谈，二楼和三楼「これまでどおり会話禁止」。",
+            "en": "Only the ground floor allows talking; floors two and three stay 「これまでどおり会話禁止」."
+          },
+          {
+            "zh": "一楼正是“可以说话的楼层”，禁止交谈的是二楼和三楼。",
+            "en": "The ground floor is the talking floor; it’s floors two and three that are no-talking."
+          },
+          {
+            "zh": "二楼照旧禁止交谈，没有因为高中生增加而改变。",
+            "en": "Floor two is still no-talking; it didn’t change because more students came."
+          },
+          null
+        ]
+      },
+      {
+        "q": "館長の考えに最も近いものはどれか。",
+        "options": [
+          "図書館は、これからも静かに本を読む場所であり続けるべきだ。",
+          "図書館は、人が集まるにぎやかな場所へと変わっていくべきだ。",
+          "図書館は、利用者の目的に応じた異なる環境を備えるべきだ。",
+          "図書館は、利用者の多い若い世代に合わせて作り直すべきだ。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「にぎやかさと静けさのどちらかを選ぶのではなく、どちらも用意しておくことが大切だ」。\n推理：「AではなくB」：否定二选一，肯定两种都要准备。想交谈的人和想安静的人目的不同，所以要备好不同的环境。\n容易错：文章最后一句说图书馆在变成人们聚集的地方，但那是作者的感想，馆长强调的是“两者都要”，只选热闹的选项不对。",
+          "en": "Evidence: 「にぎやかさと静けさのどちらかを選ぶのではなく、どちらも用意しておくことが大切だ」.\nReasoning: 「AではなくB」 rejects choosing one and affirms providing both; people who want to talk and people who want quiet have different purposes, so different spaces are needed.\nTrap: The last sentence says libraries are becoming gathering places, but that is the writer’s remark; the director stresses both, so ‘only lively’ is wrong."
+        },
+        "wrong": [
+          {
+            "zh": "馆长说的是「どちらかを選ぶのではなく」，并不是只保留安静。",
+            "en": "The director says 「どちらかを選ぶのではなく」 — not keeping only quiet."
+          },
+          {
+            "zh": "只变成热闹的地方也是“二选一”，被馆长否定了。",
+            "en": "Becoming only lively is also choosing one side, which the director rejects."
+          },
+          null,
+          {
+            "zh": "馆长没有说只照顾年轻人；追求安静的人也要照顾。",
+            "en": "The director doesn’t say to cater only to the young; quiet-seekers matter too."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-m2-p8",
+    "type": "mid",
+    "difficulty": 2,
+    "passage": "引っ越して二年目の春、町内会の班長の役が回ってきた。班長の仕事は、回覧板を回したり、月に一度の清掃活動に人を集めたりすることだ。正直に言えば、気が重かった。仕事が忙しいうえに、近所に知り合いはほとんどいない。断る方法はないものかと考えたが、順番で決まることなので、引き受けるほかなかった。\n最初の清掃の日、集まったのは私を含めて五人だけだった。黙ってごみを拾っていると、隣の家の年配の男性が「あそこの側溝は、大雨が降るとすぐあふれるんだよ」と教えてくれた。ほかの人からも、夜になると真っ暗になる道や、車がスピードを出しやすい角の話が出た。毎日通っている道なのに、私は何一つ知らなかった。\nその後、班のみんなで相談して、暗い道に街灯を増やしてほしいと市に要望を出した。半年後に街灯がついたとき、例の男性は「班長さんのおかげだ」と言ってくれたが、実際に動いたのは話し合いに来てくれた全員だ。一年の任期を終えた今、私は近所の人と、あいさつ以上の話をするようになった。面倒だとばかり思っていた役が、この町を、ただ寝に帰る場所から自分の暮らす場所に変えてくれたのだと思う。",
+    "tr": {
+      "zh": "搬家后的第二年春天，轮到我当町内会的班长。班长的工作是传阅板报、为每月一次的清扫活动召集人。说实话，我心情很沉重。工作忙不说，附近几乎没有熟人。我也想过有没有办法推掉，但这是按顺序轮的，只能接下来。\n第一次清扫那天，算上我只来了五个人。我默默地捡着垃圾，隔壁家的老先生告诉我：“那边的排水沟，一下大雨马上就会漫出来。”其他人也说起晚上一片漆黑的路，和车子容易开快的拐角。明明是每天走的路，我却一无所知。\n后来，班里大家商量后，向市里提出了希望在暗路上增加路灯的请求。半年后路灯装好时，那位老先生对我说“多亏了班长”，但实际出力的是来参加讨论的每一个人。一年任期结束的现在，我和邻居之间会聊打招呼以外的话了。我一直以为麻烦的这个职务，让这个小镇从我只是回来睡觉的地方，变成了我生活的地方。",
+      "en": "In the spring of my second year after moving, it was my turn to be a block leader in the neighbourhood association. The job is passing round the circular and getting people to turn out for the monthly clean-up. To be honest, I dreaded it. I was busy at work, and I hardly knew anyone nearby. I wondered whether there was some way to say no, but since it goes by rotation, I had no choice but to accept.\nOn the first clean-up day, only five people came, including me. As I picked up litter in silence, the elderly man next door told me, ‘That gutter over there overflows as soon as it rains hard.’ Others mentioned a road that goes pitch-dark at night and a corner where cars tend to speed. I walked those streets every day and knew none of it.\nAfterwards our group talked it over and asked the city for more street lights on the dark road. When they went up six months later, the man said, ‘We owe it to you, block leader,’ but the ones who actually made it happen were everyone who came to the meetings. Now that my one-year term is over, I talk with my neighbours about more than the weather. The role I thought of as nothing but a chore turned this town from a place I just came back to sleep into the place where I live."
+    },
+    "questions": [
+      {
+        "q": "筆者が班長の役を引き受けたのはなぜか。",
+        "options": [
+          "近所の人と知り合いになりたいと思っていたから",
+          "仕事にあまり追われず、時間に余裕があったから",
+          "隣の家の年配の男性に、強く頼まれたから",
+          "順番で決まることで、断ることができなかったから"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「断る方法はないものかと考えたが、順番で決まることなので、引き受けるほかなかった」。\n推理：「〜ほかなかった」＝只能……，没有别的选择；理由是「順番で決まる」。\n容易错：说“想结识邻居”的选项把文章结尾的变化当成了开始的动机。",
+          "en": "Evidence: 「断る方法はないものかと考えたが、順番で決まることなので、引き受けるほかなかった」.\nReasoning: 「〜ほかなかった」 = had no choice but to; the reason is 「順番で決まる」.\nTrap: The option about wanting to meet neighbours takes the change at the end for the motive at the start."
+        },
+        "wrong": [
+          {
+            "zh": "作者当时心情沉重，并不是想结识邻居才接受的；认识邻居是后来的结果。",
+            "en": "The writer dreaded it; getting to know neighbours was a later result, not the reason."
+          },
+          {
+            "zh": "文中说「仕事が忙しい」，并不清闲。",
+            "en": "The text says 「仕事が忙しい」 — the writer was busy."
+          },
+          {
+            "zh": "老先生是在清扫那天才出现的，文中没说他请作者当班长。",
+            "en": "The man appears only on clean-up day; he didn’t ask the writer to take the role."
+          },
+          null
+        ]
+      },
+      {
+        "q": "最初の清掃の日に、筆者が気づいたことは何か。",
+        "options": [
+          "清掃活動に参加する人が、予想していたよりも多かったこと",
+          "自分が住む地域の危ない場所を、まったく知らなかったこと",
+          "近所の人たちが、町内会の活動に不満を持っていること",
+          "側溝があふれる原因が、捨てられたごみにあったこと"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「毎日通っている道なのに、私は何一つ知らなかった」。\n推理：排水沟会漫水、夜里漆黑的路、车开得快的拐角，都是附近危险的地方；「何一つ知らなかった」＝选项「まったく知らなかった」。\n容易错：说“垃圾是漫水原因”的选项把清扫和排水沟两件事硬连在一起。",
+          "en": "Evidence: 「毎日通っている道なのに、私は何一つ知らなかった」.\nReasoning: The overflowing gutter, the pitch-dark road and the speeding corner are all local hazards; 「何一つ知らなかった」 = the option’s 「まったく知らなかった」.\nTrap: The option blaming litter for the overflow links the clean-up and the gutter without support."
+        },
+        "wrong": [
+          {
+            "zh": "只来了五个人（「五人だけ」），并不多。",
+            "en": "Only five came (「五人だけ」) — not many."
+          },
+          null,
+          {
+            "zh": "邻居们说的是危险的地方，没有对町内会表示不满。",
+            "en": "The neighbours talked about hazards, not complaints about the association."
+          },
+          {
+            "zh": "文中只说大雨时排水沟会漫出来，没有说原因是垃圾。",
+            "en": "The text only says the gutter overflows in heavy rain; it doesn’t blame litter."
+          }
+        ]
+      },
+      {
+        "q": "筆者が最も言いたいことは何か。",
+        "options": [
+          "面倒だと思っていた役をきっかけに、町が自分の居場所になった。",
+          "街灯がついたのは、班長として筆者が一人で努力したからだ。",
+          "町内会の仕事は負担が大きいので、もっと減らしたほうがいい。",
+          "近所の人とは、あいさつをする程度の関係がちょうどいい。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「面倒だとばかり思っていた役が、この町を、ただ寝に帰る場所から自分の暮らす場所に変えてくれたのだと思う」。\n推理：最后一句是结论：原本只觉得麻烦的班长职务，让作者和这个镇子有了联系。「自分の暮らす場所」＝选项「居場所」。\n容易错：说“靠作者一个人努力”的选项，是老先生的客气话，作者自己否定了。",
+          "en": "Evidence: 「面倒だとばかり思っていた役が、この町を、ただ寝に帰る場所から自分の暮らす場所に変えてくれたのだと思う」.\nReasoning: The last sentence is the conclusion: a role the writer saw as a chore tied them to the town. 「自分の暮らす場所」 = the option’s 「居場所」.\nTrap: The ‘single-handed effort’ option repeats the neighbour’s kind words, which the writer corrects."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "作者明确说「実際に動いたのは話し合いに来てくれた全員だ」。",
+            "en": "The writer says plainly 「実際に動いたのは話し合いに来てくれた全員だ」."
+          },
+          {
+            "zh": "作者一开始觉得麻烦，但最后肯定了这个职务带来的变化，没有主张减轻。",
+            "en": "The writer found it a chore at first but ends up valuing what it brought, not calling for less work."
+          },
+          {
+            "zh": "作者现在和邻居「あいさつ以上の話をする」，并且把这看作好的变化。",
+            "en": "The writer now talks 「あいさつ以上の話」 with neighbours and sees that as a good change."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-m2-p9",
+    "type": "mid",
+    "difficulty": 3,
+    "passage": "ある市立小学校が、三年前から全学年で宿題を出すのをやめている。きっかけは、保護者を対象にしたアンケートだった。「宿題をめぐって毎晩親子げんかになる」「共働きで見てやる余裕がない」といった声が、予想以上に多かったのである。\n宿題をなくせば学力が下がるのではないか。当初は教員の間にもそうした心配があった。そこで学校は、宿題の代わりに、授業の最後の十分間を、一人一人が自分で選んだ課題に取り組む時間にした。苦手な計算を繰り返す子もいれば、興味のある虫について調べる子もいる。教員はその間、教室を回って、つまずいている子に声をかける。\n三年たった今、市の学力テストの結果は以前とほとんど変わっていない。校長は、むしろその点にこそ意味があると言う。「家で無理にやらせていた時間がなくても、成績は下がらなかった。それなら、その時間は家族で話したり、子どもが好きなことをしたりするのに使ったほうがいい」。ただ、家で全く勉強しなくなった子もいるといい、学校は今後、家庭での学び方を子ども自身が考える授業を取り入れる予定だ。",
+    "tr": {
+      "zh": "某市立小学校从三年前起，所有年级都不再布置作业。起因是一项面向家长的问卷调查。“每天晚上都为作业和孩子吵架”“双职工，没有余力辅导”之类的声音比预想的多得多。\n取消作业，学习能力不会下降吗？起初老师们之间也有这样的担心。于是学校用课堂最后十分钟代替作业，让每个人做自己选择的课题。有的孩子反复练习不擅长的计算，有的孩子调查自己感兴趣的昆虫。这段时间里，老师在教室里巡视，对遇到困难的孩子搭话。\n三年后的今天，市里学力测试的成绩和以前几乎没有变化。校长说，恰恰这一点才有意义：“即使没有了在家硬逼着做作业的时间，成绩也没有下降。既然如此，这些时间不如用来和家人聊天，或者让孩子做自己喜欢的事。”不过，据说也有孩子在家完全不学习了，学校今后计划开设让孩子自己思考在家如何学习的课。",
+      "en": "A city primary school stopped setting homework in every year three years ago. The trigger was a survey of parents. Far more of them than expected said things like ‘we fight over homework every night’ or ‘we both work and have no time to help’.\nWouldn’t dropping homework lower achievement? At first even the teachers worried about that. So instead of homework, the school turned the last ten minutes of lessons into time for each child to work on a task of their own choosing. Some drill the arithmetic they find hard; others look up insects that interest them. Meanwhile the teachers go round the room and speak to children who are stuck.\nThree years on, the city’s achievement test results have hardly changed. The head teacher says that is exactly what matters. ‘Even without the time we forced them to spend at home, their marks didn’t fall. In that case, that time is better spent talking as a family or letting children do what they enjoy.’ Some children, however, reportedly no longer study at home at all, and the school plans to introduce lessons in which the children themselves think about how to learn at home."
+    },
+    "questions": [
+      {
+        "q": "この学校が宿題をやめたきっかけは何か。",
+        "options": [
+          "教員が宿題を確認する時間が足りなくなっていたこと",
+          "宿題が家庭の負担になっているという声が多かったこと",
+          "市の学力テストの結果が、以前より下がっていたこと",
+          "子どもたちが、自分で課題を選びたいと希望したこと"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「きっかけは、保護者を対象にしたアンケートだった」；「「宿題をめぐって毎晩親子げんかになる」「共働きで見てやる余裕がない」といった声が、予想以上に多かった」。\n推理：亲子吵架、没空辅导，都是作业给家庭带来的负担＝选项「家庭の負担」。\n容易错：说“孩子希望自己选课题”的选项，把后来的对策当成了起因。",
+          "en": "Evidence: 「きっかけは、保護者を対象にしたアンケートだった」; 「「宿題をめぐって毎晩親子げんかになる」「共働きで見てやる余裕がない」といった声が、予想以上に多かった」.\nReasoning: Nightly fights and no time to help are both burdens homework puts on families = the option’s 「家庭の負担」.\nTrap: The option about children wanting to choose tasks takes the later measure for the trigger."
+        },
+        "wrong": [
+          {
+            "zh": "文中没有提到老师检查作业的时间不够；老师担心的是学习能力下降。",
+            "en": "Nothing about teachers lacking time to check homework; their worry was falling achievement."
+          },
+          null,
+          {
+            "zh": "学力测试是取消作业三年后的结果，而且「ほとんど変わっていない」。",
+            "en": "The test results come three years later, and they 「ほとんど変わっていない」."
+          },
+          {
+            "zh": "让孩子自己选课题是取消作业后学校想出的办法，不是孩子的要求。",
+            "en": "Self-chosen tasks were the school’s idea after dropping homework, not the children’s request."
+          }
+        ]
+      },
+      {
+        "q": "校長は、学力テストの結果についてどう考えているか。",
+        "options": [
+          "成績が上がらなかったので、宿題を再び出すことを考えるべきだ。",
+          "成績が変わらなかったので、取り組みの効果はまだ判断できない。",
+          "成績が下がらなかったことが、宿題をやめた意味を示している。",
+          "授業の最後の十分間の課題が、成績を大きく上げることにつながった。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「校長は、むしろその点にこそ意味があると言う」；「家で無理にやらせていた時間がなくても、成績は下がらなかった。それなら、その時間は家族で話したり…使ったほうがいい」。\n推理：「その点」＝成绩几乎没变。校长认为：既然没作业成绩也不降，家里的时间就该用在别处——这正是取消作业的意义。\n容易错：说“效果还无法判断”的选项把“没变化”理解成了“没结论”，而校长已经明确肯定。",
+          "en": "Evidence: 「校長は、むしろその点にこそ意味があると言う」; 「家で無理にやらせていた時間がなくても、成績は下がらなかった。それなら、その時間は家族で話したり…使ったほうがいい」.\nReasoning: 「その点」 = results barely changed. Since marks held without homework, home time is better used otherwise — which is the point of dropping it.\nTrap: The ‘too early to judge’ option reads ‘no change’ as ‘no conclusion’, but the head has clearly judged it positive."
+        },
+        "wrong": [
+          {
+            "zh": "校长并不以成绩没上升为问题，而是认为没下降就有意义，没有说要恢复作业。",
+            "en": "The head doesn’t treat the lack of a rise as a problem; no fall is the point, and there’s no talk of bringing homework back."
+          },
+          {
+            "zh": "校长说「むしろその点にこそ意味がある」，已经做出了肯定的判断。",
+            "en": "The head says 「むしろその点にこそ意味がある」 — a clear positive judgement."
+          },
+          null,
+          {
+            "zh": "成绩「ほとんど変わっていない」，并没有大幅提高。",
+            "en": "Results 「ほとんど変わっていない」 — they didn’t rise sharply."
+          }
+        ]
+      },
+      {
+        "q": "この学校の取り組みについて、文章の内容と合うものはどれか。",
+        "options": [
+          "授業の最後の十分間に、全員が同じ計算の練習をしている。",
+          "宿題をなくしてから、家で勉強しなくなった子どもはいない。",
+          "宿題を出すのをやめたのは、高い学年の子どもに対してだけだ。",
+          "今後は、家での学び方を子ども自身が考える授業を行う予定だ。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「学校は今後、家庭での学び方を子ども自身が考える授業を取り入れる予定だ」。\n推理：「家庭での学び方」＝选项「家での学び方」，「取り入れる予定」＝「行う予定」。\n容易错：「家で全く勉強しなくなった子もいる」在「ただ」后面，是取消作业带来的问题，容易被忽略而选“没有这样的孩子”。",
+          "en": "Evidence: 「学校は今後、家庭での学び方を子ども自身が考える授業を取り入れる予定だ」.\nReasoning: 「家庭での学び方」 = the option’s 「家での学び方」, and 「取り入れる予定」 = 「行う予定」.\nTrap: 「家で全く勉強しなくなった子もいる」 comes after 「ただ」 as a downside and is easy to miss, leading to the ‘no such children’ option."
+        },
+        "wrong": [
+          {
+            "zh": "每个人做「自分で選んだ課題」，有人练计算，有人查昆虫，内容不同。",
+            "en": "Each child does 「自分で選んだ課題」 — some arithmetic, some insects — not the same task."
+          },
+          {
+            "zh": "文中说「家で全く勉強しなくなった子もいる」。",
+            "en": "The text says 「家で全く勉強しなくなった子もいる」."
+          },
+          {
+            "zh": "文中说「全学年で」取消作业，不只是高年级。",
+            "en": "Homework was dropped 「全学年で」 — in every year, not just the upper ones."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-m2-p10",
+    "type": "tougou",
+    "difficulty": 2,
+    "intro": "次のAとBは、中学校の部活動を地域のクラブなどに任せることについての意見である。",
+    "passage": "A\n中学校の部活動を、地域のスポーツクラブや文化団体に任せる動きが始まっている。私はこの流れに賛成だ。これまで部活動は、教員が休日を返上して指導することで成り立ってきた。経験のない競技を担当させられ、どう教えればいいか分からないまま練習に付き添っている教員も少なくない。地域の専門的な指導者に任せれば、教員は本来の仕事である授業の準備に時間を使えるし、生徒もより質の高い指導を受けられる。費用の負担などの課題はあるが、それは国や自治体が支援して解決すべき問題であって、移行をためらう理由にはならない。\nB\n部活動を地域に移す方針が示されたが、学校の現場には戸惑いが広がっている。教員の負担を減らすという目的そのものには、私も異論はない。しかし、地方ではそもそも指導者になれる人が少なく、受け皿となるクラブが見つからない地域もある。また、これまでほとんどお金のかからなかった活動に会費が必要になれば、家庭の経済状況によって参加をあきらめる生徒も出てくるだろう。部活動は、誰もが気軽にスポーツや文化活動に触れられる場でもあった。その良さを失わないよう、それぞれの地域の実情に合わせて、時間をかけて進めるべきだ。",
+    "tr": {
+      "zh": "A\n把初中的社团活动交给地方体育俱乐部和文化团体的动向已经开始。我赞成这一趋势。以往社团活动是靠老师牺牲休息日指导才维持下来的。被安排负责自己没有经验的项目、不知道怎么教就陪着练习的老师也不少。交给地方上专业的指导者，老师就能把时间用在本职工作——备课上，学生也能得到更高质量的指导。虽然有费用负担等问题，但那是国家和地方政府应该支持解决的问题，不能成为犹豫是否转移的理由。\nB\n把社团活动转到地方的方针已经公布，但学校现场困惑不断扩大。减轻老师负担这一目的本身，我也没有异议。但是，在地方上，能当指导者的人本来就少，有的地区找不到接收的俱乐部。另外，过去几乎不花钱的活动如果需要交会费，就会有学生因为家庭经济状况而放弃参加吧。社团活动也曾是谁都能轻松接触体育和文化活动的地方。为了不失去这个优点，应该结合各地实际情况，花时间推进。",
+      "en": "A\nA move has begun to hand junior-high club activities over to local sports clubs and cultural groups. I welcome it. Until now, clubs have depended on teachers giving up their days off to coach. Many teachers are put in charge of sports they have never played and supervise practice without knowing how to teach it. If specialist local coaches take over, teachers can spend their time preparing lessons, their real job, and students get better coaching. There are issues such as who pays, but those are for the national and local governments to solve with support; they are no reason to hesitate over the move.\nB\nA policy of moving club activities into the community has been announced, but schools are increasingly bewildered. I have no objection to the aim itself, reducing teachers’ workload. But in rural areas there are few people who could coach in the first place, and some places can’t find a club to take the students. And if activities that cost almost nothing until now start charging fees, some students will give up because of their families’ finances. Clubs were also a place where anyone could easily try sports or the arts. So as not to lose that, the change should be made slowly, to suit each area’s circumstances."
+    },
+    "questions": [
+      {
+        "q": "部活動を地域に任せる際の費用について、AとBはどのように述べているか。",
+        "options": [
+          "Aは国や自治体が支援すべきだとし、Bは参加をあきらめる生徒が出ることを心配している。",
+          "Aは各家庭が負担するのは当然だとし、Bはこれまでどおり無料で続けるべきだとしている。",
+          "AもBも、費用の問題が解決するまでは地域への移行を始めるべきではないとしている。",
+          "Aは費用の問題には触れておらず、Bは会費を安くするための方法を具体的に提案している。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：A「それは国や自治体が支援して解決すべき問題であって」；B「会費が必要になれば、家庭の経済状況によって参加をあきらめる生徒も出てくるだろう」。\n推理：两人都提到费用，但角度不同：A认为该由公共部门支持，B担心有学生因家庭经济原因放弃。选项两半分别对应。\n容易错：说“两人都主张费用解决前不该开始”的选项，把B的“慢慢推进”和A的立场混在了一起。",
+          "en": "Evidence: A 「それは国や自治体が支援して解決すべき問題であって」; B 「会費が必要になれば、家庭の経済状況によって参加をあきらめる生徒も出てくるだろう」.\nReasoning: Both mention cost from different angles: A wants public support, B fears students dropping out for financial reasons. The option’s two halves match.\nTrap: The option where both want to wait until costs are solved merges B’s ‘go slowly’ with A’s position."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "A说费用应由国家和地方政府支持解决，没有说家庭负担是理所当然；B也没有说必须免费。",
+            "en": "A says government should help with costs, not that families must pay; B doesn’t demand it stay free either."
+          },
+          {
+            "zh": "A明确说费用问题「移行をためらう理由にはならない」，并不主张等问题解决后再开始。",
+            "en": "A says costs are 「移行をためらう理由にはならない」 — no reason to wait."
+          },
+          {
+            "zh": "A提到了「費用の負担などの課題」；B只是担心会费，并没有提出降低会费的具体办法。",
+            "en": "A does mention 「費用の負担などの課題」; B worries about fees but proposes no way to lower them."
+          }
+        ]
+      },
+      {
+        "q": "部活動を地域に任せることについて、AとBはどのような立場をとっているか。",
+        "options": [
+          "Aはこれからも教員が指導を続けるべきだとし、Bは早く地域に任せるべきだとしている。",
+          "AもBも、教員の負担は減らないので、地域に任せることには反対だとしている。",
+          "Aは積極的に進めるべきだとし、Bは目的には賛成だが慎重に進めるべきだとしている。",
+          "Aは条件によっては賛成だとし、Bは教員の負担を減らすという目的そのものに反対している。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：A「私はこの流れに賛成だ」「移行をためらう理由にはならない」；B「目的そのものには、私も異論はない」「時間をかけて進めるべきだ」。\n推理：A积极推进；B先让步承认目的没问题，再用「しかし」列出地方指导者不足、会费等问题，结论是慢慢推进。\n容易错：B有很多担忧，容易被当成“反对”；但「異論はない」说明B反对的只是急于推进。",
+          "en": "Evidence: A 「私はこの流れに賛成だ」「移行をためらう理由にはならない」; B 「目的そのものには、私も異論はない」「時間をかけて進めるべきだ」.\nReasoning: A pushes ahead; B concedes the aim is fine, lists problems after 「しかし」 (few coaches, fees) and concludes it should go slowly.\nTrap: B’s many worries look like opposition, but 「異論はない」 shows B objects only to rushing."
+        },
+        "wrong": [
+          {
+            "zh": "立场正好相反：A赞成交给地方，B主张慎重，没有说要尽快。",
+            "en": "Reversed: A supports the move and B urges caution, not speed."
+          },
+          {
+            "zh": "A明确「賛成だ」；B也同意减轻老师负担的目的，两人都没有反对。",
+            "en": "A says 「賛成だ」, and B accepts the aim of easing teachers’ load; neither opposes it."
+          },
+          null,
+          {
+            "zh": "A没有附加条件，费用问题也不算犹豫的理由；B说对目的本身「異論はない」。",
+            "en": "A sets no conditions — even cost is no reason to hesitate; B says it has 「異論はない」 about the aim."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-m2-p11",
+    "type": "shuchou",
+    "difficulty": 3,
+    "passage": "旅行先で美しい景色に出会うと、多くの人はまずスマートフォンを取り出す。料理が運ばれてくれば写真を撮り、子どもの発表会では画面越しに我が子の姿を追う。写真は簡単に撮れて、いつでも見返せる。記録を残すことが、これほど手軽になった時代はないだろう。かつてのようにフィルムの残りを気にする必要もない。\nところが、ある心理学の実験によると、美術館で作品の写真を撮った人は、ただ眺めていた人に比べて、後で作品の細部をよく覚えていなかったという。カメラに記録を任せたことで、自分で覚えようとする働きが弱まったのではないかと考えられている。記録が増えるほど、記憶は薄くなるのかもしれない。\n私自身にも思い当たることがある。数年前に家族で旅行した海辺の町の写真は、何百枚もパソコンに残っている。しかし、それを見返したことはほとんどない。一方で、写真を一枚も撮らなかった学生時代の一人旅のことは、宿の主人と交わした会話や、夕方の港のにおいまで、今でもはっきりと思い出すことができる。\nもちろん、だから写真を撮るなと言いたいわけではない。記録には記録の価値がある。忘れていた出来事を写真が思い出させてくれることもあるし、亡くなった人の姿を残しておけるのは写真にしかできないことだ。問題は、撮ることそのものが目的になり、その場で見たり感じたりすることがおろそかになってしまうことである。\n考えてみれば、記憶とは不正確なものだ。時間がたつうちに細部は抜け落ち、ほかの出来事と混ざり、ときには実際より美しく作り変えられる。写真のように正確ではない。だが、私はその不正確さにこそ記憶の意味があると思う。何を覚えていて何を忘れたかは、その人がその時、何に心を動かされたかを表している。港のにおいを覚えているのは、私がそこで何かを感じたからだ。写真は誰が見ても同じ景色を写すが、記憶はその人にしか残せない。\n次に心を動かされる景色に出会ったら、カメラを向ける前に、少しの間だけ自分の目で眺めてみてはどうだろう。写真に残すのは、それからでも遅くはない。",
+    "tr": {
+      "zh": "在旅行地遇到美丽的风景，很多人首先会掏出手机。菜端上来就拍照，孩子的汇报演出上则隔着屏幕追随孩子的身影。照片拍起来简单，随时都能回看。留下记录从来没有像现在这样方便过吧。也不必像从前那样担心胶卷还剩多少。\n然而，据某项心理学实验，在美术馆给作品拍照的人，比起只是观看的人，事后对作品的细节记得更差。人们认为，这也许是因为把记录交给了相机，自己去记的功能减弱了。记录越多，记忆或许就越淡。\n我自己也有体会。几年前和家人去海边小镇旅行的照片，电脑里存了几百张，但我几乎没回看过。另一方面，学生时代一张照片也没拍的独自旅行，从和旅店老板的谈话到傍晚港口的气味，至今都能清楚地想起来。\n当然，我并不是说因此就别拍照。记录有记录的价值。照片会让人想起已经忘记的事，能留下已故之人的样子也是照片独有的。问题在于拍照本身成了目的，而忽略了在现场去看、去感受。\n仔细想来，记忆是不准确的。随着时间流逝，细节脱落，和别的事混在一起，有时还会被改造得比实际更美。它不像照片那样准确。但我认为，恰恰在这种不准确之中才有记忆的意义。记得什么、忘了什么，表明了那个人当时被什么打动。我记得港口的气味，是因为我在那里有所感受。照片无论谁看都拍下同样的风景，而记忆只有那个人才能留下。\n下次遇到打动你的风景时，在把相机对准它之前，不妨先用自己的眼睛看一会儿。拍下来留作纪念，在那之后也不晚。",
+      "en": "When people come across beautiful scenery on a trip, most reach for their phones first. They photograph the food when it arrives and follow their child at a school show through a screen. Photos are easy to take and can be looked at any time. Never has keeping a record been so effortless, and no one has to worry any more about how much film is left.\nYet according to one psychology experiment, people who photographed works in a museum later remembered their details less well than people who just looked. It is thought that handing the record to the camera weakened their own effort to remember. The more we record, perhaps, the fainter our memories become.\nI can relate. I have hundreds of photos on my computer from a family trip to a seaside town a few years ago, but I have hardly ever looked at them. Yet I can still clearly recall a solo trip in my student days when I took not a single photo — down to the conversation with the innkeeper and the smell of the harbour in the evening.\nOf course, I’m not saying don’t take photos. Records have their own value. Photos can remind us of things we had forgotten, and only photographs can keep the image of someone who has died. The problem is when taking the picture becomes the goal and we neglect to look and feel in the moment.\nCome to think of it, memory is inaccurate. As time passes, details drop away, events get mixed up, and sometimes they are remade more beautiful than they were. It isn’t precise like a photo. But I think that inaccuracy is exactly where memory’s meaning lies. What we remember and what we forget shows what moved us at the time. I remember the smell of the harbour because I felt something there. A photo shows the same scene to everyone; a memory can be kept only by the person who has it.\nThe next time a view moves you, why not look at it with your own eyes for a moment before pointing a camera at it? It won’t be too late to take the picture after that."
+    },
+    "questions": [
+      {
+        "q": "「記録が増えるほど、記憶は薄くなるのかもしれない」とあるが、筆者がそう考えるのはなぜか。",
+        "options": [
+          "写真を撮ることに満足して、作品を見る時間そのものが短くなるから",
+          "カメラに記録を任せると、自分で覚えようとしなくなると考えられるから",
+          "写真をたくさん撮ると、どれが何の写真か分からなくなってしまうから",
+          "写真で見返した細部は、実際に見たものとは違う形で記憶されるから"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「カメラに記録を任せたことで、自分で覚えようとする働きが弱まったのではないかと考えられている」。\n推理：画线句紧接在这句之后，是对实验结果的概括：交给相机→自己不去记→记录越多记忆越淡。\n容易错：说“看作品的时间变短”的选项听起来合理，但文中给出的原因是记忆功能减弱，不是时间。",
+          "en": "Evidence: 「カメラに記録を任せたことで、自分で覚えようとする働きが弱まったのではないかと考えられている」.\nReasoning: The underlined sentence follows directly and sums up the finding: leave it to the camera → stop trying to remember → more records, fainter memories.\nTrap: ‘Less time looking’ sounds reasonable, but the text’s cause is weakened remembering, not time."
+        },
+        "wrong": [
+          {
+            "zh": "实验说的是细节记得差，文中没有说看作品的时间变短。",
+            "en": "The experiment concerns remembering details; nothing says people spent less time looking."
+          },
+          null,
+          {
+            "zh": "作者说的是照片很少回看，并没有说分不清照片。",
+            "en": "The writer says the photos are rarely viewed, not that they can’t tell them apart."
+          },
+          {
+            "zh": "文中没有说通过照片回看的细节会被记错。",
+            "en": "Nothing says details seen again in photos are remembered wrongly."
+          }
+        ]
+      },
+      {
+        "q": "筆者は、写真についてどのように考えているか。",
+        "options": [
+          "正確な記録を残せるので、不正確な記憶よりもずっと信頼できるものだ。",
+          "記憶を弱めてしまうので、旅行先ではできるだけ撮らないほうがいい。",
+          "撮っても見返すことがほとんどないので、残す価値はあまりない。",
+          "価値はあるが、撮るのが目的になると、その場の体験がおろそかになる。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「記録には記録の価値がある」；「問題は、撮ることそのものが目的になり、その場で見たり感じたりすることがおろそかになってしまうことである」。\n推理：作者先肯定照片的价值，再指出问题在于拍照变成目的。选项前半「価値はあるが」、后半「おろそかになる」都有依据。\n容易错：说“尽量别拍”的选项被「写真を撮るなと言いたいわけではない」直接否定；作者自己没回看照片只是个人经历，不是“没价值”的结论。",
+          "en": "Evidence: 「記録には記録の価値がある」; 「問題は、撮ることそのものが目的になり、その場で見たり感じたりすることがおろそかになってしまうことである」.\nReasoning: The writer affirms photos’ value, then says the problem is when taking them becomes the goal. Both halves of the option are grounded.\nTrap: ‘Take as few as possible’ is denied by 「写真を撮るなと言いたいわけではない」; the writer’s unviewed photos are a personal anecdote, not a verdict that photos are worthless."
+        },
+        "wrong": [
+          {
+            "zh": "作者承认照片准确，但认为记忆的意义恰恰在不准确之中，并不是说照片更可信。",
+            "en": "The writer grants photos are precise but finds memory’s meaning in its inaccuracy; photos aren’t called more trustworthy."
+          },
+          {
+            "zh": "作者说「だから写真を撮るなと言いたいわけではない」。",
+            "en": "The writer says 「だから写真を撮るなと言いたいわけではない」."
+          },
+          {
+            "zh": "作者说「記録には記録の価値がある」，还举了已故之人的例子。",
+            "en": "The writer says 「記録には記録の価値がある」 and gives the example of those who have died."
+          },
+          null
+        ]
+      },
+      {
+        "q": "この文章で筆者が最も言いたいことは何か。",
+        "options": [
+          "記憶は不正確だが、何に心を動かされたかを表す、その人だけのものだ。",
+          "記憶は不正確なので、大切な出来事はできるだけ写真に残しておくべきだ。",
+          "記憶は時間とともに美しくなるので、撮った写真を見返す必要はない。",
+          "思い出は、写真に残すよりも言葉で書き残すほうが正確に伝わるものだ。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「私はその不正確さにこそ記憶の意味があると思う。何を覚えていて何を忘れたかは、その人がその時、何に心を動かされたかを表している」；「記憶はその人にしか残せない」。\n推理：倒数第二段用「だが」转折，提出全文的核心主张；最后一段的建议（先用眼睛看）是由这个主张引出的。\n容易错：说“重要的事要拍照留下”的选项只抓住了「記憶とは不正確なものだ」前半句，忽略了「だが」之后的转折。",
+          "en": "Evidence: 「私はその不正確さにこそ記憶の意味があると思う。何を覚えていて何を忘れたかは、その人がその時、何に心を動かされたかを表している」; 「記憶はその人にしか残せない」.\nReasoning: The second-to-last paragraph turns on 「だが」 to state the core claim; the closing advice (look first) follows from it.\nTrap: ‘Keep important events in photos’ takes only 「記憶とは不正確なものだ」 and misses the turn after 「だが」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "作者认为不准确正是记忆的意义所在，并不因此主张用照片来补。",
+            "en": "The writer sees inaccuracy as memory’s meaning, not a reason to rely on photos."
+          },
+          {
+            "zh": "“变美”只是记忆不准确的一个例子，作者没有说不需要回看照片。",
+            "en": "Becoming more beautiful is one example of inaccuracy; the writer never says photos needn’t be viewed."
+          },
+          {
+            "zh": "文中没有比较照片和文字记录。",
+            "en": "The text doesn’t compare photos with written records."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-m2-p12",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "次は、「さくら運輸」の宅配便の料金とサービスの案内である。",
+    "passage": "さくら運輸　宅配便のご案内\n料金は、荷物のサイズ（縦・横・高さの合計）と、お届け先の地域で決まります。重さが各サイズの上限を超える場合は、重さに合ったサイズの料金になります。\n| サイズ | 縦・横・高さの合計 | 重さ | 県内 | 近隣の地方 | その他の地方 |\n| 60 | 60cmまで | 2kgまで | 900円 | 1,100円 | 1,400円 |\n| 80 | 80cmまで | 5kgまで | 1,200円 | 1,400円 | 1,700円 |\n| 100 | 100cmまで | 10kgまで | 1,500円 | 1,700円 | 2,000円 |\n| 120 | 120cmまで | 15kgまで | 1,800円 | 2,000円 | 2,300円 |\n【割引】\n・持ち込み割引：営業所またはコンビニエンスストアにお持ち込みいただくと、1個につき100円引きになります。\n・複数口割引：同じお届け先に2個以上を同時にお送りいただくと、2個目から1個につき100円引きになります。持ち込み割引と同時にご利用いただけます。\n・会員割引：「さくらメンバーズ」会員の方は、料金が10％引きになります。ほかの割引とは同時にご利用いただけません。会員割引とほかの割引の両方の条件に当てはまる場合は、割引額の大きいほうを適用します。\n【サービス】\n| サービス | 追加料金 | ご注意 |\n| クール便（冷蔵・冷凍） | サイズ60・80：220円、100：330円、120：660円 | 追加料金は割引の対象になりません |\n| お届け時間帯の指定 | 無料 | 午前中、14〜16時、16〜18時、18〜20時、19〜21時からお選びください |\n・ご自宅への集荷をご希望の方は、前日の17時までにお電話またはウェブでお申し込みください。\n・お届けは、県内と近隣の地方は翌日、その他の地方は翌々日になります。",
+    "tr": {
+      "zh": "樱花运输　快递指南\n运费由包裹尺寸（长、宽、高之和）和送达地区决定。重量超过各尺寸上限时，按与重量相符的尺寸计费。\n（表格：尺寸60：合计60cm以内，2kg以内，县内900日元，邻近地区1,100日元，其他地区1,400日元；尺寸80：80cm以内，5kg以内，1,200／1,400／1,700日元；尺寸100：100cm以内，10kg以内，1,500／1,700／2,000日元；尺寸120：120cm以内，15kg以内，1,800／2,000／2,300日元）\n【折扣】\n・自送折扣：送到营业所或便利店，每件减100日元。\n・多件折扣：同时向同一收件地址寄2件以上，从第2件起每件减100日元。可与自送折扣同时使用。\n・会员折扣：“樱花会员”运费打九折。不能与其他折扣同时使用。同时符合会员折扣和其他折扣条件时，适用折扣金额较大的一方。\n【服务】\n（表格：冷链快递（冷藏、冷冻）：尺寸60・80加220日元，100加330日元，120加660日元，附加费不适用折扣；指定送达时段：免费，可从上午、14〜16点、16〜18点、18〜20点、19〜21点中选择）\n・希望上门取件者，请在前一天17点前通过电话或网站申请。\n・县内和邻近地区次日送达，其他地区隔一天送达。",
+      "en": "Sakura Transport — parcel delivery guide\nCharges depend on the parcel’s size (length + width + height) and the destination region. If the weight is over a size’s limit, you pay for the size that matches the weight.\n(Table: size 60: up to 60 cm, up to 2 kg, same prefecture ¥900, neighbouring regions ¥1,100, other regions ¥1,400; size 80: up to 80 cm, up to 5 kg, ¥1,200 / ¥1,400 / ¥1,700; size 100: up to 100 cm, up to 10 kg, ¥1,500 / ¥1,700 / ¥2,000; size 120: up to 120 cm, up to 15 kg, ¥1,800 / ¥2,000 / ¥2,300.)\n[Discounts]\n- Drop-off discount: bring the parcel to one of our offices or a convenience store and get ¥100 off per parcel.\n- Multiple-parcel discount: send two or more parcels to the same address at once and get ¥100 off each from the second one. Can be combined with the drop-off discount.\n- Member discount: Sakura Members get 10% off. Cannot be combined with other discounts. If you qualify for both the member discount and others, whichever discount is larger applies.\n[Services]\n(Table: chilled/frozen delivery: +¥220 for sizes 60 and 80, +¥330 for 100, +¥660 for 120; the surcharge is not discounted. Delivery time slot: free; choose morning, 14–16, 16–18, 18–20 or 19–21.)\n- For home pick-up, apply by phone or online by 5 p.m. the day before.\n- Delivery is next day within the prefecture and to neighbouring regions, two days later to other regions."
+    },
+    "questions": [
+      {
+        "q": "会員ではない田中さんは、同じ県に住む友人に、縦・横・高さの合計が75cmで重さが6kgの箱を2個、同時に送りたい。箱は自分で近くの営業所に持って行く。料金は合計いくらか。",
+        "options": [
+          "2,100円",
+          "2,400円",
+          "2,700円",
+          "2,800円"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「重さが各サイズの上限を超える場合は、重さに合ったサイズの料金になります」；「持ち込み割引…1個につき100円引き」；「複数口割引…2個目から1個につき100円引き…持ち込み割引と同時にご利用いただけます」。\n推理：①75cm本属尺寸80，但6kg超过5kg，按尺寸100（10kg以内）算：县内1,500日元×2＝3,000日元。②自送：−100×2＝−200。③多件：第2件−100。合计3,000−300＝2,700日元。\n容易错：只看三边之和按尺寸80算；或忘了两种折扣可以叠加。",
+          "en": "Evidence: 「重さが各サイズの上限を超える場合は、重さに合ったサイズの料金になります」; 「持ち込み割引…1個につき100円引き」; 「複数口割引…2個目から1個につき100円引き…持ち込み割引と同時にご利用いただけます」.\nReasoning: (1) 75 cm would be size 80, but 6 kg is over 5 kg, so size 100 (up to 10 kg): ¥1,500 × 2 = ¥3,000 within the prefecture. (2) Drop-off: −¥100 × 2. (3) Multiple parcels: −¥100 on the second. ¥3,000 − ¥300 = ¥2,700.\nTrap: Sizing by measurements alone (size 80), or forgetting the two discounts stack."
+        },
+        "wrong": [
+          {
+            "zh": "这是按尺寸80算再减三次100日元的金额；但6kg超过了尺寸80的上限5kg。",
+            "en": "This treats the boxes as size 80 with three ¥100 discounts, but 6 kg is over size 80’s 5 kg limit."
+          },
+          {
+            "zh": "这是按尺寸80、不打折计算的金额；尺寸和折扣都弄错了。",
+            "en": "This is size 80 with no discounts — both the size and the discounts are wrong."
+          },
+          null,
+          {
+            "zh": "只减了自送折扣；同一地址寄2件，第2件还能再减100日元，两种折扣可同时用。",
+            "en": "Only the drop-off discount is applied; the second parcel to the same address gets another ¥100 off, and the two combine."
+          }
+        ]
+      },
+      {
+        "q": "「さくらメンバーズ」会員の林さんは、「その他の地方」に住む母に、冷凍した食品を入れた箱（サイズ80、重さ3kg）を1個、クール便で送りたい。箱は自分で営業所に持って行く。料金はいくらか。",
+        "options": [
+          "1,728円",
+          "1,750円",
+          "1,820円",
+          "1,920円"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "依据：「会員割引とほかの割引の両方の条件に当てはまる場合は、割引額の大きいほうを適用します」；「クール便…サイズ60・80：220円」「追加料金は割引の対象になりません」。\n推理：①尺寸80寄其他地区：1,700日元。②会员九折减170日元，自送只减100日元，取大的：1,700−170＝1,530日元。③冷链附加费220日元不打折：1,530＋220＝1,750日元。\n容易错：把运费和附加费一起打九折；或以为会员折扣和自送折扣可以叠加。",
+          "en": "Evidence: 「会員割引とほかの割引の両方の条件に当てはまる場合は、割引額の大きいほうを適用します」; 「クール便…サイズ60・80：220円」「追加料金は割引の対象になりません」.\nReasoning: (1) Size 80 to other regions: ¥1,700. (2) Member 10% = ¥170 off vs drop-off ¥100; the larger applies: ¥1,530. (3) The ¥220 chilled surcharge isn’t discounted: ¥1,530 + ¥220 = ¥1,750.\nTrap: Taking 10% off the surcharge too, or stacking member and drop-off discounts."
+        },
+        "wrong": [
+          {
+            "zh": "把会员折扣也用在了冷链附加费上；附加费「割引の対象になりません」。",
+            "en": "This applies the member discount to the chilled surcharge too, but the surcharge 「割引の対象になりません」."
+          },
+          null,
+          {
+            "zh": "这是用了自送折扣（−100）的金额；会员折扣是170日元，更大，应适用会员折扣。",
+            "en": "This uses the drop-off discount (−¥100); the member discount (¥170) is larger and applies instead."
+          },
+          {
+            "zh": "这是完全没打折的金额；会员可以享受折扣。",
+            "en": "This is the price with no discount at all; a member qualifies for one."
+          }
+        ]
+      }
+    ]
+  }
+]

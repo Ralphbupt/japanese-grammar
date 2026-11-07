@@ -1,0 +1,589 @@
+[
+ {
+  "id": "n2-m2-ck-201",
+  "type": "point",
+  "scene": "ラジオで、アナウンサーが、町の銭湯を継いだ女の人にインタビューしています。",
+  "question": "女の人が銭湯を継ぐことにした一番の理由は何ですか。",
+  "lines": [
+   [
+    "M",
+    "こちらの銭湯は、去年からお父様に代わって、娘さんの佐藤さんが続けていらっしゃるそうですね。お父様に頼まれたんですか。"
+   ],
+   [
+    "F",
+    "いえ、父は体力的にもう限界で、自分の代で閉めるつもりだったんです。私には何も言いませんでした。私も東京で会社に勤めていて、仕事も気に入っていましたから、継ぐなんて考えたこともなくて。"
+   ],
+   [
+    "M",
+    "それが、どうして？"
+   ],
+   [
+    "F",
+    "閉めるという張り紙を出した日に、たまたま帰ってきていて、受付に座っていたんです。そうしたら、毎日来てくださる八十代のおじいさんが、「ここがなくなったら、誰とも話さない日ばかりになるなあ」って、ぽつりとおっしゃって。うちはただお風呂に入る場所じゃなかったんだって、そのとき初めて気がついたんです。建物も古くて味があるので、残したいという気持ちは前からあったんですけど、決めたのは、あの一言ですね。"
+   ]
+  ],
+  "options": [
+   "父親に頼まれたから",
+   "常連の客の言葉を聞いたから",
+   "会社の仕事が合わなかったから",
+   "古い建物を残したかったから"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "广播里，男播音员在采访一位继承了镇上澡堂的女人。",
+    "question": "女人决定继承澡堂最主要的理由是什么？",
+    "lines": [
+     "听说这家澡堂从去年开始，由女儿佐藤女士代替父亲经营。是父亲拜托您的吗？",
+     "不是，父亲体力上已经到极限了，本打算在自己这一代关门。他什么也没跟我说。我也在东京的公司上班，也喜欢那份工作，从来没想过要继承。",
+     "那后来是为什么呢？",
+     "贴出要关门的告示那天，我碰巧回老家，坐在前台。结果，一位每天都来的八十多岁的老爷爷轻轻地说了一句：“这里没了的话，就天天都没人说话了啊。”那时我才第一次意识到，我们这儿不只是洗澡的地方。建筑也很老、很有味道，想保留下来的心情以前就有，不过让我下定决心的，是那一句话。"
+    ],
+    "options": [
+     "被父亲拜托了",
+     "听了常客的话",
+     "公司的工作不适合她",
+     "想保留老建筑"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, an announcer is interviewing a woman who took over a local public bathhouse.",
+    "question": "What is the main reason the woman decided to take over the bathhouse?",
+    "lines": [
+     "I hear that since last year, you, Sato-san, have been running this bathhouse in place of your father. Did he ask you to?",
+     "No, my father had reached his physical limit and meant to close it with his generation. He never said anything to me. I was working for a company in Tokyo and liked my job, so I'd never even thought of taking over.",
+     "So what changed?",
+     "On the day we put up the notice saying we'd close, I happened to be back home and was sitting at the front desk. Then an old man in his eighties who comes every day murmured, \"If this place goes, I'll have days on end without talking to anyone.\" That's when I realised for the first time that we weren't just a place to take a bath. The building is old and full of character, and I'd always wanted to keep it, but what made up my mind was that one remark."
+    ],
+    "options": [
+     "Her father asked her to",
+     "She heard what a regular customer said",
+     "Her company job didn't suit her",
+     "She wanted to preserve the old building"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「毎日来てくださる八十代のおじいさんが、『ここがなくなったら、誰とも話さない日ばかりになるなあ』って、ぽつりとおっしゃって。」最后说：「決めたのは、あの一言ですね。」\n推理：父亲「私には何も言いませんでした」，不是被拜托；公司的工作她「気に入っていました」；想保留建筑的心情「前からあった」，但不是决定的原因。让她决定继承的是常客老爷爷的那句话。\n容易错：「〜気持ちは前からあったんですけど」是次要原因；播音员的猜测（父亲拜托）被否定。",
+   "en": "Evidence: The woman says: 「毎日来てくださる八十代のおじいさんが、『ここがなくなったら、誰とも話さない日ばかりになるなあ』って、ぽつりとおっしゃって。」 and ends: 「決めたのは、あの一言ですね。」\nReasoning: Her father 「私には何も言いませんでした」, so he didn't ask; she liked her company job; wanting to keep the building was a feeling she'd always had, but not what decided it. The regular's remark is what made up her mind.\nTrap: 「〜気持ちは前からあったんですけど」 marks a secondary reason; the announcer's guess (her father asked) is denied."
+  },
+  "wrong": [
+   {
+    "zh": "父亲「私には何も言いませんでした」。",
+    "en": "Her father never said anything to her."
+   },
+   null,
+   {
+    "zh": "她说公司的工作「気に入っていました」。",
+    "en": "She says she liked her job."
+   },
+   {
+    "zh": "想保留建筑的心情「前からあった」，但决定的是那句话。",
+    "en": "She'd always wanted to keep the building, but the remark is what decided it."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "half-right"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-202",
+  "type": "point",
+  "scene": "男の人と女の人が話しています。",
+  "question": "女の人は、犬のことで今、何が一番大変だと言っていますか。",
+  "lines": [
+   [
+    "M",
+    "最近、朝、犬の散歩してるとこ見かけないけど、元気？"
+   ],
+   [
+    "F",
+    "うん、元気は元気なんだけど、もう十四歳でしょ。前みたいに長くは歩けなくなっちゃって、散歩も近所を一回りするくらいなの。"
+   ],
+   [
+    "M",
+    "そっか。じゃ、散歩はかえって楽になったんじゃない？"
+   ],
+   [
+    "F",
+    "それはそうなんだけどね。うち、エレベーターのない四階じゃない？　階段を上がれなくなっちゃったから、出かけるたびに抱いて上り下りしてるの。十キロ以上あるから、腰がもう限界で。"
+   ],
+   [
+    "M",
+    "それは大変だ。"
+   ],
+   [
+    "F",
+    "夜中に鳴くこともあるけど、それはまあ、すぐ寝てくれるからいいんだけどね。一階の部屋に引っ越すことも、本気で考えてるの。"
+   ]
+  ],
+  "options": [
+   "散歩に時間がかかること",
+   "夜中に鳴いて起こされること",
+   "引っ越し先が見つからないこと",
+   "抱いて階段を上り下りすること"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "女人说，关于狗，现在最辛苦的是什么？",
+    "lines": [
+     "最近早上没看见你遛狗，它还好吗？",
+     "嗯，好倒是挺好，不过都十四岁了嘛。不能像以前那样走很久了，散步也就在附近转一圈。",
+     "这样啊。那散步反而轻松了吧？",
+     "那倒是。可我家不是在没电梯的四楼嘛。它爬不了楼梯了，所以每次出门都得抱着上下楼。有十公斤多，我的腰已经到极限了。",
+     "那真够呛。",
+     "半夜有时也会叫，不过那个嘛，它很快就睡了，还好。我正在认真考虑搬到一楼的房子。"
+    ],
+    "options": [
+     "散步花时间",
+     "半夜叫，把她吵醒",
+     "找不到搬家的地方",
+     "抱着狗上下楼梯"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "What does the woman say is hardest about her dog now?",
+    "lines": [
+     "I haven't seen you walking your dog in the mornings lately. Is it okay?",
+     "Yes, it's fine, but it's fourteen now, you know. It can't walk far like it used to, so our walks are just once around the block.",
+     "I see. So walks must be easier now, right?",
+     "Well, that's true. But we're on the fourth floor with no lift, remember? It can't climb the stairs anymore, so every time we go out I carry it up and down. It's over ten kilos, so my back is at its limit.",
+     "That's tough.",
+     "It sometimes barks in the night, but that's fine — it goes back to sleep quickly. I'm seriously thinking about moving to a ground-floor flat."
+    ],
+    "options": [
+     "Walks take a long time",
+     "It barks at night and wakes her",
+     "She can't find a place to move to",
+     "Carrying it up and down the stairs"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「出かけるたびに抱いて上り下りしてるの。十キロ以上あるから、腰がもう限界で。」\n推理：散步现在只在附近转一圈，男的说反而轻松了，她也承认；半夜叫「すぐ寝てくれるからいい」。她说腰到极限的，是每次出门都要抱着十多公斤的狗上下四楼。搬家只是在考虑，没说找不到房子。\n容易错：提到了的事（散步、半夜叫）不是最大的问题；搬家只是打算。",
+   "en": "Evidence: The woman says: 「出かけるたびに抱いて上り下りしてるの。十キロ以上あるから、腰がもう限界で。」\nReasoning: Walks are now just once around the block, and she agrees they're easier; the night barking is fine because 「すぐ寝てくれる」. What has her back at its limit is carrying a dog of over ten kilos up and down four floors every time. Moving is only something she's considering; she never says she can't find a place.\nTrap: things mentioned (walks, barking) aren't the biggest problem; moving is just a plan."
+  },
+  "wrong": [
+   {
+    "zh": "散步现在只「近所を一回りするくらい」，反而轻松了。",
+    "en": "Walks are now just around the block — easier, if anything."
+   },
+   {
+    "zh": "半夜叫「すぐ寝てくれるからいい」。",
+    "en": "She says the barking is fine because the dog goes back to sleep quickly."
+   },
+   {
+    "zh": "她只是在考虑搬到一楼，没说找不到房子。",
+    "en": "She's only considering moving; she doesn't say she can't find a place."
+   },
+   null
+  ],
+  "traps": [
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-203",
+  "type": "point",
+  "scene": "講演会の会場で、司会者が話しています。",
+  "question": "午後の講演の会場が変わったのは、どうしてですか。",
+  "lines": [
+   [
+    "F",
+    "皆さま、午前の部はこれで終わりです。お昼の休憩のあと、午後一時から二つ目の講演を行いますが、会場がこのホールから、隣の建物の二階、大会議室に変わりました。"
+   ],
+   [
+    "F",
+    "この大会議室は窓が大きく、昼間は日の光でスクリーンが見えにくいということで、当初は使わない予定でした。ところが、午後の講師の先生が、今日は映像をほとんど使わず、皆さんと話し合いながら進めたいとおっしゃいまして。それでしたら、机を自由に動かせる部屋のほうがいい、ということになったわけです。"
+   ],
+   [
+    "F",
+    "なお、お申し込みの人数に変更はございませんので、席は十分ございます。お弁当は、受付でお受け取りください。"
+   ]
+  ],
+  "options": [
+   "参加者と話し合う形にしたいから",
+   "申し込みの人数が増えたから",
+   "大会議室のほうが明るいから",
+   "講師が映像を多く使うから"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "讲座会场里，主持人在讲话。",
+    "question": "下午讲座的会场为什么换了？",
+    "lines": [
+     "各位，上午的部分到此结束。午休之后，下午一点开始第二场讲座，会场从这个大厅改到了隔壁大楼二楼的大会议室。",
+     "这个大会议室窗户大，白天阳光照进来，屏幕看不清楚，所以原本不打算用。可是下午的讲师说，今天几乎不用影像，想一边和大家讨论一边进行。那样的话，能自由移动桌子的房间更合适，于是就这样决定了。",
+     "另外，报名人数没有变化，座位足够。便当请到接待处领取。"
+    ],
+    "options": [
+     "想采用和参加者讨论的形式",
+     "报名人数增加了",
+     "大会议室更明亮",
+     "讲师要用很多影像"
+    ]
+   },
+   "en": {
+    "scene": "At a lecture event, the host is speaking.",
+    "question": "Why has the venue for the afternoon lecture changed?",
+    "lines": [
+     "Ladies and gentlemen, that concludes the morning session. After the lunch break, the second lecture begins at 1 p.m., but the venue has changed from this hall to the large meeting room on the second floor of the building next door.",
+     "That room has big windows, and in the daytime sunlight makes the screen hard to see, so originally we weren't going to use it. However, this afternoon's lecturer told us that today he'll hardly use any video and would like to proceed while discussing things with all of you. In that case, a room where the desks can be moved freely is better — that's how it was decided.",
+     "Please note that the number of registrations hasn't changed, so there are plenty of seats. Please collect your lunch box at reception."
+    ],
+    "options": [
+     "The lecturer wants a discussion with the audience",
+     "More people have registered",
+     "The large meeting room is brighter",
+     "The lecturer will use a lot of video"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：司会者说：「午後の講師の先生が、今日は映像をほとんど使わず、皆さんと話し合いながら進めたいとおっしゃいまして。」接着说：「机を自由に動かせる部屋のほうがいい、ということになったわけです。」\n推理：大会议室窗户大、屏幕看不清，是原来不用它的理由；因为讲师几乎不用影像、想和大家讨论，能移动桌子的房间更合适，所以换了会场。报名人数没变。\n容易错：窗户大、屏幕看不清是原来不用的理由；讲师是「映像をほとんど使わず」，说反了。",
+   "en": "Evidence: The host says: 「午後の講師の先生が、今日は映像をほとんど使わず、皆さんと話し合いながら進めたいとおっしゃいまして。」 and then: 「机を自由に動かせる部屋のほうがいい、ということになったわけです。」\nReasoning: The big windows that make the screen hard to see were why the room wasn't going to be used. Because the lecturer will hardly use video and wants a discussion, a room with movable desks suits better, so the venue changed. Registrations are unchanged.\nTrap: the big windows were the reason not to use it; the lecturer will 「映像をほとんど使わず」 — the opposite of the last option."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「お申し込みの人数に変更はございません」。",
+    "en": "Registrations haven't changed."
+   },
+   {
+    "zh": "窗户大是原来不打算用的理由（屏幕看不清），不是换会场的原因。",
+    "en": "The big windows were the reason not to use it (the screen is hard to see)."
+   },
+   {
+    "zh": "讲师「映像をほとんど使わず」，正好相反。",
+    "en": "The lecturer will hardly use any video — the opposite."
+   }
+  ],
+  "traps": [
+   "twisted",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-204",
+  "type": "point",
+  "scene": "眼鏡の店で、男の人と店の人が話しています。",
+  "question": "男の人がこの眼鏡を選んだ一番の理由は何ですか。",
+  "lines": [
+   [
+    "F",
+    "こちらのフレーム、お顔の形によくお似合いですよ。"
+   ],
+   [
+    "M",
+    "そうですか。見た目は正直、あまりこだわらないんですけどね。これ、思いきり曲げても元に戻るって書いてありますけど、本当ですか。"
+   ],
+   [
+    "F",
+    "はい、特別な素材でできておりますので。ほかのものより、少しお値段は張りますが。"
+   ],
+   [
+    "M",
+    "いや、それでいいんです。保育園で働いてるんですけど、子どもを抱っこすると、すぐ眼鏡をつかまれちゃって。今のなんか、もう三回も曲げられてるんですよ。"
+   ],
+   [
+    "F",
+    "それは大変ですね。ちなみに、重さは今お使いのものとほとんど変わりませんが、よろしいですか。"
+   ],
+   [
+    "M",
+    "ええ、今のも軽いほうなので、気になりません。じゃあ、これにします。"
+   ]
+  ],
+  "options": [
+   "顔の形に似合うから",
+   "値段が安いから",
+   "曲げても元に戻るから",
+   "軽くてかけやすいから"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "眼镜店里，一个男人和店员在说话。",
+    "question": "男人选这副眼镜最主要的理由是什么？",
+    "lines": [
+     "这款镜框和您的脸型很配哦。",
+     "是吗。说实话，我对外观不太讲究。这上面写着使劲弯也能恢复原样，是真的吗？",
+     "是的，因为是用特殊材料做的。价格比其他的稍微贵一点。",
+     "没关系，就要这样的。我在保育园工作，一抱孩子，眼镜马上就会被抓住。现在这副已经被弄弯三次了。",
+     "那可真不容易。顺便说一下，重量跟您现在用的几乎一样，可以吗？",
+     "嗯，现在这副也算轻的，我不在意。那就要这副了。"
+    ],
+    "options": [
+     "适合脸型",
+     "价格便宜",
+     "弯了也能恢复原样",
+     "轻，戴着舒服"
+    ]
+   },
+   "en": {
+    "scene": "At an optician's, a man and a shop assistant are talking.",
+    "question": "What is the main reason the man chose these glasses?",
+    "lines": [
+     "This frame really suits the shape of your face.",
+     "Really? Honestly, I'm not that fussy about looks. It says here it goes back to its shape even if you bend it hard — is that true?",
+     "Yes, it's made of a special material. It's a little more expensive than the others, though.",
+     "No, that's fine. I work at a nursery, and whenever I pick up a child, they grab my glasses right away. My current pair has been bent three times already.",
+     "That must be hard. By the way, the weight is almost the same as your current pair — is that all right?",
+     "Yes, my current ones are fairly light, so that doesn't bother me. I'll take these, then."
+    ],
+    "options": [
+     "It suits his face",
+     "It's cheap",
+     "It goes back to shape when bent",
+     "It's light and comfortable"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「保育園で働いてるんですけど、子どもを抱っこすると、すぐ眼鏡をつかまれちゃって。今のなんか、もう三回も曲げられてるんですよ。」\n推理：他问的是“弯了能不能恢复原样”，并说明自己在保育园工作，眼镜常被孩子抓弯，所以选这副是因为不怕弯。外观他「あまりこだわらない」；价格反而稍贵；重量跟现在的差不多，他只是不在意。\n容易错：店员夸的“适合脸型”不是他的理由；重量是“不在意”，不是“因为轻”。",
+   "en": "Evidence: The man says: 「保育園で働いてるんですけど、子どもを抱っこすると、すぐ眼鏡をつかまれちゃって。今のなんか、もう三回も曲げられてるんですよ。」\nReasoning: He asks whether it springs back when bent and explains that children at his nursery keep bending his glasses, so he chooses it for that. He's 「あまりこだわらない」 about looks; it's actually a bit pricier; the weight is the same as before and simply doesn't bother him.\nTrap: the assistant's compliment about his face isn't his reason; \"doesn't bother me\" about weight isn't \"because it's light\"."
+  },
+  "wrong": [
+   {
+    "zh": "适合脸型是店员说的，他「見た目は正直、あまりこだわらない」。",
+    "en": "That's the assistant's compliment; he isn't fussy about looks."
+   },
+   {
+    "zh": "价格「少しお値段は張ります」，比别的贵。",
+    "en": "It's a little more expensive than the others."
+   },
+   null,
+   {
+    "zh": "重量跟现在的差不多，他只是「気になりません」，不是选的理由。",
+    "en": "The weight is about the same; it just doesn't bother him."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-205",
+  "type": "point",
+  "scene": "大学で、男の学生と女の学生が、学園祭の弁当について話しています。",
+  "question": "男の学生は、土曜日の弁当をいくつ注文しますか。",
+  "lines": [
+   [
+    "M",
+    "学園祭の土曜日の弁当、今日中に注文しなきゃいけないんだけど、うちのサークル、十五人だったよね。"
+   ],
+   [
+    "F",
+    "うん。でも、土曜は試合で来られない人が三人いるよ。"
+   ],
+   [
+    "M",
+    "じゃ、十二人か。あ、それと、先生が見に来てくださるんだった。"
+   ],
+   [
+    "F",
+    "先生の分は、実行委員会が用意してくれるって、この間連絡あったよ。"
+   ],
+   [
+    "M",
+    "そうなんだ。助かる。"
+   ],
+   [
+    "F",
+    "あと、田中さんと私は、店の料理の材料が余るから、それを食べることにしてる。"
+   ],
+   [
+    "M",
+    "わかった。じゃあ、その二人の分も引くね。卒業した先輩が二人、手伝いに来てくれるけど、その分は……。"
+   ],
+   [
+    "F",
+    "それはこっちで出そうよ。来てもらうんだから。"
+   ],
+   [
+    "M",
+    "そうだね。"
+   ]
+  ],
+  "options": [
+   "十二個",
+   "十三個",
+   "十四個",
+   "十五個"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "大学里，一个男学生和一个女学生在谈学园祭的便当。",
+    "question": "男学生星期六的便当订几个？",
+    "lines": [
+     "学园祭星期六的便当，今天之内必须订，我们社团是十五个人吧？",
+     "嗯。不过星期六有三个人要比赛来不了。",
+     "那就是十二个人。啊，还有，老师说要来看。",
+     "老师那份，之前实行委员会联系说他们会准备。",
+     "是吗，那太好了。",
+     "还有，田中和我，摊位做菜的材料会剩下，我们打算吃那个。",
+     "知道了。那这两个人的也减掉。毕业的学长学姐有两个人来帮忙，他们那份……",
+     "那个我们出吧。人家是来帮忙的嘛。",
+     "也是。"
+    ],
+    "options": [
+     "十二个",
+     "十三个",
+     "十四个",
+     "十五个"
+    ]
+   },
+   "en": {
+    "scene": "At a university, a male and a female student are talking about lunch boxes for the school festival.",
+    "question": "How many lunch boxes will the male student order for Saturday?",
+    "lines": [
+     "I have to order the lunch boxes for Saturday of the festival today. Our club has fifteen people, right?",
+     "Yes. But three can't come on Saturday because they have a match.",
+     "So twelve. Oh, and the professor's coming to see us.",
+     "The festival committee told us the other day they'd provide the professor's.",
+     "Really? That helps.",
+     "Also, Tanaka-san and I are going to eat the leftover ingredients from our stall.",
+     "Got it. Then I'll take those two off too. Two graduates are coming to help — what about theirs?",
+     "We should cover theirs. They're coming to help us, after all.",
+     "Yeah, you're right."
+    ],
+    "options": [
+     "Twelve",
+     "Thirteen",
+     "Fourteen",
+     "Fifteen"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「土曜は試合で来られない人が三人いるよ。」「先生の分は、実行委員会が用意してくれる」「田中さんと私は……それを食べることにしてる。」「それはこっちで出そうよ。」\n推理：十五人减去来不了的三人是十二人；老师的由实行委员会准备，不加；田中和女的两人吃剩下的材料，减去后是十人；来帮忙的两位毕业生由他们出，加上又是十二个。\n容易错：老师那份是别人负责；减了两人又加了两人，要算到最后。",
+   "en": "Evidence: The woman says: 「土曜は試合で来られない人が三人いるよ。」 「先生の分は、実行委員会が用意してくれる」 「田中さんと私は……それを食べることにしてる。」 「それはこっちで出そうよ。」\nReasoning: Fifteen minus the three who can't come is twelve; the committee provides the professor's, so nothing is added; Tanaka and the woman eat leftovers, making ten; the club covers the two graduates, back to twelve.\nTrap: the professor's meal is someone else's job; two come off and two go back on, so count to the end."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "加上了老师的份，但老师的由「実行委員会が用意してくれる」。",
+    "en": "This adds the professor's, but the committee provides it."
+   },
+   {
+    "zh": "忘了减去田中和女学生两人。",
+    "en": "This forgets to take off Tanaka and the woman."
+   },
+   {
+    "zh": "十五人是社团全部人数，星期六有三人来不了。",
+    "en": "Fifteen is the whole club; three can't come on Saturday."
+   }
+  ],
+  "traps": [
+   "number",
+   "someone-else"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-206",
+  "type": "point",
+  "scene": "会社で、女の人と男の人が話しています。",
+  "question": "男の人は、どうして最近早く会社に来ているのですか。",
+  "lines": [
+   [
+    "F",
+    "中村さん、最近いつも私より早いですね。七時半にはもういるでしょう。"
+   ],
+   [
+    "M",
+    "ええ、四月から、娘の保育園のお迎えが僕の担当になったんですよ。妻の職場が遠くなっちゃって。"
+   ],
+   [
+    "F",
+    "へえ。何時までに行かなきゃいけないんですか。"
+   ],
+   [
+    "M",
+    "六時です。だから五時には会社を出たくて、そのぶん、朝早く来て仕事を片づけてるんです。"
+   ],
+   [
+    "F",
+    "なるほど。朝は電話もかかってこないし、はかどるでしょう。"
+   ],
+   [
+    "M",
+    "それは思った以上ですね。電車も空いてて座れますし。ただ、夜、もう少し残れたらって思う日もありますけど。"
+   ]
+  ],
+  "options": [
+   "朝のほうが仕事に集中できるから",
+   "夕方早く帰る必要があるから",
+   "電車が空いていて座れるから",
+   "娘を保育園に送っていくから"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "公司里，一个女人和一个男人在说话。",
+    "question": "男人最近为什么很早来公司？",
+    "lines": [
+     "中村，你最近总比我早啊。七点半就已经在了吧。",
+     "是啊，从四月开始，去保育园接女儿成了我的任务。我妻子的单位变远了。",
+     "哦。几点之前得到？",
+     "六点。所以我想五点就离开公司，为此早上早点来把工作处理掉。",
+     "原来如此。早上也没有电话打进来，效率很高吧。",
+     "那倒是比想象的还好。电车也空，有座位。不过，也有些日子会想，晚上要是能多留一会儿就好了。"
+    ],
+    "options": [
+     "早上更能集中精力工作",
+     "傍晚需要早点回去",
+     "电车空，有座位",
+     "要送女儿去保育园"
+    ]
+   },
+   "en": {
+    "scene": "At a company, a woman and a man are talking.",
+    "question": "Why has the man been coming to the office early lately?",
+    "lines": [
+     "Nakamura-san, you're always in before me lately. You're already here by seven-thirty, aren't you?",
+     "Yes — since April, picking my daughter up from nursery has been my job. My wife's workplace got farther away.",
+     "Oh. By what time do you have to be there?",
+     "Six. So I want to leave the office by five, and to make up for it I come in early and get my work done.",
+     "I see. No calls come in in the morning, so you must get a lot done.",
+     "More than I expected, yes. And the trains are empty, so I can sit down. Still, some days I wish I could stay a bit later in the evening."
+    ],
+    "options": [
+     "He can concentrate better in the morning",
+     "He needs to leave early in the evening",
+     "The trains are empty and he can sit",
+     "He takes his daughter to nursery"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「六時です。だから五時には会社を出たくて、そのぶん、朝早く来て仕事を片づけてるんです。」\n推理：他负责傍晚六点前去保育园接女儿，所以想五点离开公司，为了补上时间才早上早来。早上效率高、电车有座位，都是早来以后的好处，不是原因。\n容易错：「お迎え」是傍晚去接，不是早上送；早来带来的好处不等于早来的原因。",
+   "en": "Evidence: The man says: 「六時です。だから五時には会社を出たくて、そのぶん、朝早く来て仕事を片づけてるんです。」\nReasoning: He has to pick his daughter up from nursery by six, so he wants to leave at five and comes in early to make up the time. Getting more done and finding a seat are side benefits of coming early, not the reason.\nTrap: 「お迎え」 is picking up in the evening, not dropping off in the morning; the benefits of coming early aren't why he does it."
+  },
+  "wrong": [
+   {
+    "zh": "效率高是早来以后的好处，不是原因。",
+    "en": "Getting more done is a side benefit, not the reason."
+   },
+   null,
+   {
+    "zh": "电车空也只是附带的好处。",
+    "en": "Empty trains are just a side benefit."
+   },
+   {
+    "zh": "他负责的是傍晚「お迎え」，不是早上送去。",
+    "en": "His job is the evening pick-up (「お迎え」), not the morning drop-off."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "other-option-attribute"
+  ]
+ }
+]

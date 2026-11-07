@@ -1,0 +1,611 @@
+[
+ {
+  "id": "n2-m2-ck-101",
+  "type": "kadai",
+  "scene": "レンタカーの店で、女の人と店の人が話しています。",
+  "question": "女の人はこのあとまず何をしなければなりませんか。",
+  "lines": [
+   [
+    "M",
+    "本日ご予約の田中様ですね。お車の準備はできております。では、免許証を拝見できますか。"
+   ],
+   [
+    "F",
+    "はい、どうぞ。"
+   ],
+   [
+    "M",
+    "ありがとうございます。……あの、こちら、有効期限が先週で切れているようなんですが。"
+   ],
+   [
+    "F",
+    "えっ、うそ。……本当だ。どうしよう。"
+   ],
+   [
+    "M",
+    "申し訳ありませんが、このままではお貸しできないんです。ほかに運転される方はいらっしゃいますか。"
+   ],
+   [
+    "F",
+    "夫が一緒なんですけど、今、駐車場で待ってて……。"
+   ],
+   [
+    "M",
+    "では、ご主人の免許証でお手続きさせていただければ大丈夫です。こちらにお呼びいただけますか。"
+   ],
+   [
+    "F",
+    "わかりました。あ、料金は、先に払っておきましょうか。"
+   ],
+   [
+    "M",
+    "お支払いは、お車をお返しいただくときで結構です。ガソリンを満タンにしてお返しいただくのも、お忘れなく。"
+   ],
+   [
+    "F",
+    "はい。じゃ、ちょっと呼んできます。"
+   ]
+  ],
+  "options": [
+   "免許証を更新する",
+   "料金を払う",
+   "夫を呼んでくる",
+   "ガソリンを入れる"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "租车店里，一个女人和店员在说话。",
+    "question": "女人接下来首先必须做什么？",
+    "lines": [
+     "您是今天预约的田中女士吧。车已经准备好了。那么，可以看一下您的驾照吗？",
+     "好的，给您。",
+     "谢谢。……那个，这个驾照好像上周就过期了。",
+     "啊，不会吧。……真的。怎么办。",
+     "非常抱歉，这样的话没法租给您。还有其他开车的人吗？",
+     "我丈夫跟我一起来的，不过他现在在停车场等着……",
+     "那用您丈夫的驾照办手续就可以了。能请他过来一下吗？",
+     "明白了。啊，费用要不要先付？",
+     "费用在还车的时候付就可以。还车时请别忘了把油加满。",
+     "好的。那我去叫他一下。"
+    ],
+    "options": [
+     "更新驾照",
+     "付费用",
+     "去叫丈夫过来",
+     "加油"
+    ]
+   },
+   "en": {
+    "scene": "At a car rental shop, a woman and a staff member are talking.",
+    "question": "What does the woman have to do first?",
+    "lines": [
+     "You're Ms Tanaka with a booking for today? The car is ready. May I see your driving licence?",
+     "Yes, here you are.",
+     "Thank you. ...Um, it looks like this expired last week.",
+     "What, no way. ...You're right. What do I do?",
+     "I'm sorry, but we can't rent it to you like this. Is anyone else going to drive?",
+     "My husband's with me, but he's waiting in the car park right now...",
+     "Then we can do the paperwork with his licence. Could you ask him to come here?",
+     "All right. Oh, should I pay the fee first?",
+     "You can pay when you return the car. And please don't forget to return it with a full tank.",
+     "Okay. I'll go and get him, then."
+    ],
+    "options": [
+     "Renew her licence",
+     "Pay the fee",
+     "Go and get her husband",
+     "Fill up the tank"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：店员说：「ご主人の免許証でお手続きさせていただければ大丈夫です。こちらにお呼びいただけますか。」女的说：「じゃ、ちょっと呼んできます。」\n推理：她的驾照过期了，今天租不了车；用丈夫的驾照办手续就行，所以她要先去停车场叫丈夫。费用还车时付；加油是还车前的事。\n容易错：驾照过期不等于要先去更新，店员给了别的办法；付钱和加油都是以后的事。",
+   "en": "Evidence: The staff member says: 「ご主人の免許証でお手続きさせていただければ大丈夫です。こちらにお呼びいただけますか。」 She says: 「じゃ、ちょっと呼んできます。」\nReasoning: Her licence has expired, so she can't rent the car herself, but her husband's licence will do, so first she fetches him from the car park. The fee is paid on return; filling up comes before returning the car.\nTrap: an expired licence doesn't mean renewing it first — the staff offer another way; paying and refuelling are later steps."
+  },
+  "wrong": [
+   {
+    "zh": "店员给了用丈夫驾照办手续的办法，现在不用去更新。",
+    "en": "The staff member offers to use her husband's licence instead."
+   },
+   {
+    "zh": "费用「お車をお返しいただくとき」付。",
+    "en": "The fee is paid when the car is returned."
+   },
+   null,
+   {
+    "zh": "加满油是还车时的事。",
+    "en": "Filling the tank is for when they return the car."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "later"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-102",
+  "type": "kadai",
+  "scene": "会社で、女の課長と男の人が話しています。",
+  "question": "男の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "F",
+    "山下くん、ちょっといい？　さっき、みどり商事さんから、きのう届いた商品が十箱足りないって連絡があったの。"
+   ],
+   [
+    "M",
+    "えっ、すみません。僕が手配した分です。すぐに足りない分を送ります。"
+   ],
+   [
+    "F",
+    "待って。今週は注文が多くて、倉庫にその商品が残ってるかどうかわからないのよ。残ってなかったら、工場から直接送ってもらわなきゃいけないし。まず、そこをはっきりさせて。"
+   ],
+   [
+    "M",
+    "わかりました。あの、みどり商事さんには、僕からお詫びの電話を入れたほうが……。"
+   ],
+   [
+    "F",
+    "それは、連絡をもらったときに私から謝っておいたから。送る日がわかったら、改めてあなたから連絡してちょうだい。"
+   ],
+   [
+    "M",
+    "はい。それと、どうして足りなかったのか、報告書にまとめないといけないですよね。"
+   ],
+   [
+    "F",
+    "それは、原因がはっきりしてからでいいわ。今日中じゃなくていいから。"
+   ],
+   [
+    "M",
+    "わかりました。すぐ確認します。"
+   ]
+  ],
+  "options": [
+   "取引先に謝りの電話をする",
+   "倉庫に在庫があるか確かめる",
+   "足りない商品を送る",
+   "報告書を書く"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "公司里，女科长和一个男人在说话。",
+    "question": "男人接下来首先做什么？",
+    "lines": [
+     "山下，有空吗？刚才绿商事那边联系说，昨天送到的商品少了十箱。",
+     "啊，对不起。那是我安排的。我马上把少的部分寄过去。",
+     "等等。这周订单多，不知道仓库里还有没有那个商品。没有的话，就得让工厂直接发货。首先把这一点弄清楚。",
+     "明白了。那个，绿商事那边，我是不是应该打个电话道歉……",
+     "那个我接到联系的时候已经道过歉了。等知道发货日期以后，你再联系他们。",
+     "好的。还有，为什么会少，得写成报告吧。",
+     "那个等原因弄清楚以后再写就行。不用今天之内。",
+     "明白了。我马上确认。"
+    ],
+    "options": [
+     "给客户打电话道歉",
+     "确认仓库里有没有库存",
+     "寄出少了的商品",
+     "写报告"
+    ]
+   },
+   "en": {
+    "scene": "At a company, a female section chief and a man are talking.",
+    "question": "What will the man do first?",
+    "lines": [
+     "Yamashita-kun, got a minute? Midori Trading just called to say yesterday's delivery was ten boxes short.",
+     "Oh, I'm sorry. I arranged that shipment. I'll send the missing boxes right away.",
+     "Wait. We've had a lot of orders this week, so I don't know if there's any of that product left in the warehouse. If not, we'll have to get the factory to ship it directly. Find that out first.",
+     "Understood. Um, should I call Midori Trading to apologise?",
+     "I already apologised when they called. Once you know the shipping date, get in touch with them yourself.",
+     "Okay. And I need to write up a report on why it was short, right?",
+     "That can wait until the cause is clear. It doesn't have to be today.",
+     "Understood. I'll check right away."
+    ],
+    "options": [
+     "Call the client to apologise",
+     "Check whether the warehouse has stock",
+     "Send the missing goods",
+     "Write a report"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：课长说：「倉庫にその商品が残ってるかどうかわからないのよ。……まず、そこをはっきりさせて。」男的说：「すぐ確認します。」\n推理：他想马上寄，但不知道仓库有没有货，没货还得让工厂发，所以先确认库存。道歉电话课长已经打过了；报告等原因清楚后再写。\n容易错：“马上寄”被「待って」「まず」拦下；道歉是别人做过的事；报告是以后的事。",
+   "en": "Evidence: The section chief says: 「倉庫にその商品が残ってるかどうかわからないのよ。……まず、そこをはっきりさせて。」 He says: 「すぐ確認します。」\nReasoning: He wants to ship at once, but no one knows if the warehouse has stock — if not, the factory must ship — so he checks the stock first. She has already apologised; the report waits until the cause is known.\nTrap: 「待って」 and 「まず」 stop him shipping straight away; the apology has been done by someone else; the report is for later."
+  },
+  "wrong": [
+   {
+    "zh": "课长「私から謝っておいた」，已经道过歉了。",
+    "en": "The section chief has already apologised."
+   },
+   null,
+   {
+    "zh": "要先确认仓库有没有货，没货得让工厂发。",
+    "en": "He must first check the warehouse stock; if there's none, the factory ships."
+   },
+   {
+    "zh": "报告「原因がはっきりしてからでいい」。",
+    "en": "The report can wait until the cause is clear."
+   }
+  ],
+  "traps": [
+   "someone-else",
+   "later",
+   "order"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-103",
+  "type": "kadai",
+  "scene": "郵便局で、女の人と係の人が話しています。",
+  "question": "女の人はこのあとまず何をしなければなりませんか。",
+  "lines": [
+   [
+    "F",
+    "すみません、この荷物、カナダにいる妹に送りたいんですけど。"
+   ],
+   [
+    "M",
+    "はい。中には何が入っていますか。"
+   ],
+   [
+    "F",
+    "服と、お菓子と、あと古いカメラです。"
+   ],
+   [
+    "M",
+    "お菓子は、封を開けていないものでしたら大丈夫です。カメラは、電池が入ったままですか。"
+   ],
+   [
+    "F",
+    "ええ、入れたままです。"
+   ],
+   [
+    "M",
+    "申し訳ありません。電池は外していただかないと、飛行機に載せられないんです。"
+   ],
+   [
+    "F",
+    "そうなんですか。じゃあ、箱、開けなきゃ。送り状は家で書いてきたんですけど、カメラのところは、このままでいいですか。"
+   ],
+   [
+    "M",
+    "はい、品物の名前はそのままで結構です。箱を閉めたら、テープはこちらで貼り直しますので、そのままお持ちください。"
+   ],
+   [
+    "F",
+    "わかりました。じゃ、ちょっとあちらの台をお借りします。"
+   ]
+  ],
+  "options": [
+   "カメラの電池を外す",
+   "送り状を書き直す",
+   "お菓子を取り出す",
+   "箱にテープを貼る"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "邮局里，一个女人和工作人员在说话。",
+    "question": "女人接下来首先必须做什么？",
+    "lines": [
+     "不好意思，这个包裹我想寄给在加拿大的妹妹。",
+     "好的。里面装的是什么？",
+     "衣服、点心，还有一台旧相机。",
+     "点心的话，没开封的就没问题。相机里还装着电池吗？",
+     "嗯，装着呢。",
+     "非常抱歉。电池不取出来的话，就不能上飞机。",
+     "是吗？那得把箱子打开了。寄件单我在家写好了，相机那一栏这样写可以吗？",
+     "可以，物品名称这样写就行。箱子合上以后，胶带我们这边重新贴，您直接拿过来就行。",
+     "明白了。那我借用一下那边的台子。"
+    ],
+    "options": [
+     "取出相机的电池",
+     "重写寄件单",
+     "把点心拿出来",
+     "给箱子贴胶带"
+    ]
+   },
+   "en": {
+    "scene": "At a post office, a woman and a clerk are talking.",
+    "question": "What does the woman have to do first?",
+    "lines": [
+     "Excuse me, I'd like to send this parcel to my sister in Canada.",
+     "Certainly. What's inside?",
+     "Clothes, some sweets, and an old camera.",
+     "The sweets are fine as long as they're unopened. Does the camera still have its battery in?",
+     "Yes, it's still in.",
+     "I'm sorry, but unless the battery is taken out, it can't go on a plane.",
+     "Really? Then I'll have to open the box. I filled in the label at home — is the camera entry okay as it is?",
+     "Yes, the item name is fine as it is. Once you've closed the box, we'll re-tape it here, so just bring it over.",
+     "I see. Then I'll borrow that counter over there for a moment."
+    ],
+    "options": [
+     "Take the battery out of the camera",
+     "Rewrite the label",
+     "Take out the sweets",
+     "Tape up the box"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：係の人说：「電池は外していただかないと、飛行機に載せられないんです。」\n推理：相机里装着电池，不取出就寄不了，所以她要先打开箱子取出电池。没开封的点心可以寄；寄件单「そのままで結構です」；胶带由邮局的人重新贴。\n容易错：寄件单不用改；贴胶带是别人负责。",
+   "en": "Evidence: The clerk says: 「電池は外していただかないと、飛行機に載せられないんです。」\nReasoning: The camera still has its battery, and it can't be sent that way, so she must open the box and take the battery out. Unopened sweets are fine; the label is 「そのままで結構です」; the clerk will re-tape the box.\nTrap: the label needs no change; the taping is someone else's job."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "寄件单上的物品名称「そのままで結構です」，不用改。",
+    "en": "The item name on the label is fine as it is."
+   },
+   {
+    "zh": "没开封的点心可以寄，不用拿出来。",
+    "en": "Unopened sweets can be sent."
+   },
+   {
+    "zh": "胶带「こちらで貼り直します」，是邮局的人贴。",
+    "en": "The clerk says they'll re-tape it themselves."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "someone-else"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-104",
+  "type": "kadai",
+  "scene": "家で、妻と夫が話しています。",
+  "question": "夫はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "F",
+    "ねえ、さっき母から電話があってね、父と二人、一本早い電車に乗れたから、一時半には駅に着くって。"
+   ],
+   [
+    "M",
+    "え、二時じゃなかったの？　じゃあ、もうあんまり時間ないね。"
+   ],
+   [
+    "F",
+    "そうなの。悪いけど、車で迎えに行ってもらえる？　今出れば、ちょうどいいと思う。"
+   ],
+   [
+    "M",
+    "いいよ。迎えに行く前に、駅前の店でケーキを買っとこうと思ってたんだけど。"
+   ],
+   [
+    "F",
+    "ケーキは、私があとで買いに行くから大丈夫。二人とも、着いたらまず少し休みたいだろうし、お茶はそのあとでいいよ。"
+   ],
+   [
+    "M",
+    "そう？　じゃあ、車、ちょっと汚れてるから、軽く洗ってから出ようか。"
+   ],
+   [
+    "F",
+    "午後から雨だって言ってたから、洗ってもしかたないよ。"
+   ],
+   [
+    "M",
+    "それもそうか。リビングの掃除機は？"
+   ],
+   [
+    "F",
+    "それは私がやっとく。ほら、もう出ないと。"
+   ],
+   [
+    "M",
+    "わかった、行ってくる。"
+   ]
+  ],
+  "options": [
+   "ケーキを買いに行く",
+   "車を洗う",
+   "部屋に掃除機をかける",
+   "駅へ迎えに行く"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "家里，妻子和丈夫在说话。",
+    "question": "丈夫接下来首先做什么？",
+    "lines": [
+     "哎，刚才我妈打电话来，说她和我爸赶上了早一班的电车，一点半就到车站。",
+     "啊，不是两点吗？那没多少时间了。",
+     "是啊。不好意思，你能开车去接一下吗？现在出门的话应该正好。",
+     "行啊。我本来想去接之前，先在车站前的店里买好蛋糕。",
+     "蛋糕我待会儿去买，没关系。他们俩到了以后应该想先休息一下，喝茶之后再说。",
+     "是吗？那车有点脏，我稍微洗一下再出门？",
+     "说是下午开始下雨，洗了也白洗。",
+     "也是。客厅吸尘呢？",
+     "那个我来弄。快，得出门了。",
+     "知道了，我走了。"
+    ],
+    "options": [
+     "去买蛋糕",
+     "洗车",
+     "给房间吸尘",
+     "去车站接人"
+    ]
+   },
+   "en": {
+    "scene": "At home, a wife and her husband are talking.",
+    "question": "What will the husband do first?",
+    "lines": [
+     "Hey, Mum just called. She and Dad caught an earlier train, so they'll be at the station by half past one.",
+     "What, wasn't it two? Then we haven't got much time.",
+     "Right. Sorry, but could you pick them up in the car? If you leave now, it should be just right.",
+     "Sure. I was going to buy a cake at the shop by the station before picking them up, though.",
+     "I'll go and buy the cake later, so don't worry. They'll both want a rest when they arrive anyway, so tea can wait.",
+     "Really? Then the car's a bit dirty — shall I give it a quick wash before I go?",
+     "They said it'll rain from this afternoon, so there's no point washing it.",
+     "Fair enough. What about vacuuming the living room?",
+     "I'll do that. Come on, you need to go.",
+     "Okay, I'm off."
+    ],
+    "options": [
+     "Go and buy a cake",
+     "Wash the car",
+     "Vacuum the room",
+     "Go to the station to pick them up"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：妻子说：「悪いけど、車で迎えに行ってもらえる？　今出れば、ちょうどいいと思う。」最后说：「ほら、もう出ないと。」丈夫说：「わかった、行ってくる。」\n推理：岳父母提前到一点半，要马上开车去接。蛋糕妻子之后去买；下午下雨，洗车没意义；吸尘妻子来做。\n容易错：他原本打算先买蛋糕，但被妻子接手了；洗车不是做不到，而是没必要。",
+   "en": "Evidence: The wife says: 「悪いけど、車で迎えに行ってもらえる？　今出れば、ちょうどいいと思う。」 and finally: 「ほら、もう出ないと。」 He says: 「わかった、行ってくる。」\nReasoning: Her parents arrive earlier, at 1:30, so he must drive to the station now. She'll buy the cake later; rain is forecast, so washing the car is pointless; she'll vacuum.\nTrap: he planned to buy the cake first, but she takes it over; washing the car isn't impossible, just pointless."
+  },
+  "wrong": [
+   {
+    "zh": "蛋糕「私があとで買いに行く」，妻子去买。",
+    "en": "The wife will buy the cake later."
+   },
+   {
+    "zh": "下午下雨，「洗ってもしかたない」。",
+    "en": "Rain is forecast, so washing it is pointless."
+   },
+   {
+    "zh": "吸尘「私がやっとく」，妻子做。",
+    "en": "The wife will vacuum."
+   },
+   null
+  ],
+  "traps": [
+   "someone-else",
+   "order"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-105",
+  "type": "kadai",
+  "scene": "男の人が、料理教室の人と電話で話しています。",
+  "question": "男の人は体験レッスンに何を持っていかなければなりませんか。",
+  "lines": [
+   [
+    "M",
+    "もしもし、土曜日の体験レッスンを申し込んだ山田です。持ち物を確認したくて、お電話したんですが。"
+   ],
+   [
+    "F",
+    "はい、山田様ですね。お電話ありがとうございます。"
+   ],
+   [
+    "M",
+    "包丁は、自分のを持っていったほうがいいでしょうか。"
+   ],
+   [
+    "F",
+    "いえ、包丁やお鍋は教室にそろっておりますので、ご用意いただかなくて大丈夫です。"
+   ],
+   [
+    "M",
+    "よかった。エプロンは……。"
+   ],
+   [
+    "F",
+    "エプロンは、体験の方には無料でお貸ししております。ただ、髪の長い方には、まとめるゴムをお願いしております。"
+   ],
+   [
+    "M",
+    "僕は短いので大丈夫です。あと、作った料理を持って帰れるって聞いたんですけど、入れ物は要りますか。"
+   ],
+   [
+    "F",
+    "体験レッスンでは、その場で召し上がっていただくので、お持ち帰りはないんです。それから、材料費は、当日、受付でいただいております。"
+   ],
+   [
+    "M",
+    "え、お金は、申し込みのときにカードで払いましたけど。"
+   ],
+   [
+    "F",
+    "そちらはレッスン料でして、材料費の八百円は別になっております。現金のみですので、ご用意をお願いいたします。"
+   ],
+   [
+    "M",
+    "そうなんですか。わかりました。"
+   ]
+  ],
+  "options": [
+   "包丁",
+   "材料費の現金",
+   "エプロン",
+   "持ち帰り用の入れ物"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "一个男人在和烹饪教室的人打电话。",
+    "question": "男人参加体验课必须带什么？",
+    "lines": [
+     "喂，我是报名了星期六体验课的山田。想确认一下要带的东西，所以打了电话。",
+     "好的，是山田先生吧。谢谢您来电。",
+     "菜刀是带自己的比较好吗？",
+     "不用，菜刀和锅教室里都有，您不用准备。",
+     "太好了。围裙呢……",
+     "围裙对体验的客人免费出借。不过，长头发的人请准备扎头发的皮筋。",
+     "我是短发，没问题。还有，我听说做好的菜可以带回去，需要容器吗？",
+     "体验课是当场吃掉的，所以不能带回去。另外，材料费是当天在前台收。",
+     "啊？钱我报名的时候已经用卡付了。",
+     "那是课程费，八百日元的材料费是另算的。只收现金，请您准备好。",
+     "是这样啊。明白了。"
+    ],
+    "options": [
+     "菜刀",
+     "材料费的现金",
+     "围裙",
+     "带回去用的容器"
+    ]
+   },
+   "en": {
+    "scene": "A man is talking on the phone with someone from a cooking school.",
+    "question": "What does the man have to take to the trial lesson?",
+    "lines": [
+     "Hello, this is Yamada — I signed up for Saturday's trial lesson. I'm calling to check what I need to bring.",
+     "Yes, Mr Yamada. Thank you for calling.",
+     "Should I bring my own knife?",
+     "No, the school has knives and pans, so you don't need to bring any.",
+     "Great. And an apron...?",
+     "We lend aprons free of charge to trial students. But we ask people with long hair to bring a hair tie.",
+     "Mine's short, so that's fine. Also, I heard we can take the food home — do I need a container?",
+     "At the trial lesson you eat the food there, so there's nothing to take home. Also, we collect the ingredients fee at reception on the day.",
+     "What? I paid by card when I signed up.",
+     "That was the lesson fee; the 800-yen ingredients fee is separate. It's cash only, so please have it ready.",
+     "Oh, I see. All right."
+    ],
+    "options": [
+     "A knife",
+     "Cash for the ingredients fee",
+     "An apron",
+     "A container to take food home"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：教室的人说：「材料費の八百円は別になっております。現金のみですので、ご用意をお願いいたします。」\n推理：菜刀教室有；围裙免费借；体验课的菜当场吃，不用容器。他以为报名时已经付过钱，但那是课程费，材料费八百日元要当天付现金，所以必须带现金。\n容易错：以为“已经付过了”——付的是课程费，不是材料费；「お持ち帰りはない」否定了他听说的事。",
+   "en": "Evidence: The school says: 「材料費の八百円は別になっております。現金のみですので、ご用意をお願いいたします。」\nReasoning: The school has knives; aprons are lent free; trial food is eaten on the spot, so no container. He thinks he's already paid, but that was the lesson fee — the 800-yen ingredients fee is paid in cash on the day, so he must bring cash.\nTrap: \"already paid\" — he paid the lesson fee, not the ingredients fee; 「お持ち帰りはない」 contradicts what he'd heard."
+  },
+  "wrong": [
+   {
+    "zh": "菜刀「教室にそろっております」。",
+    "en": "The school has knives."
+   },
+   null,
+   {
+    "zh": "围裙「無料でお貸ししております」。",
+    "en": "Aprons are lent free."
+   },
+   {
+    "zh": "体验课当场吃，「お持ち帰りはない」。",
+    "en": "Food is eaten there; nothing is taken home."
+   }
+  ],
+  "traps": [
+   "someone-else",
+   "done-already"
+  ]
+ }
+]
