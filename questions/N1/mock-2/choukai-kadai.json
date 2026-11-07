@@ -1,0 +1,601 @@
+[
+ {
+  "id": "n1-m2-ck-101",
+  "type": "kadai",
+  "scene": "大学の研究室で、指導教員の女の先生と、男の大学院生が、学会での発表について話しています。",
+  "question": "男の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "F",
+    "来月の学会の発表、スライドをひととおり見たよ。全体の流れはこれでいいと思う。ただ、要旨が規定の字数を少し超えてるね。"
+   ],
+   [
+    "M",
+    "はい、それは昨日事務局から連絡があって、今週末までに直せば受け付けてもらえるそうです。"
+   ],
+   [
+    "F",
+    "じゃあ、そっちは急がなくていいか。それより気になったのは三枚目のグラフ。これ、北村先生の研究室から借りたデータも入ってるよね。"
+   ],
+   [
+    "M",
+    "はい。去年、一緒に調査したときのものです。"
+   ],
+   [
+    "F",
+    "あれ、まだ論文になってないでしょう。学会で外に出すなら、北村先生の了解をちゃんと取っておかないと。"
+   ],
+   [
+    "M",
+    "あ、そうか……。もしだめだと言われたら、グラフはうちのデータだけで作り直さないといけないですね。"
+   ],
+   [
+    "F",
+    "そうなるね。返事によっては、要旨の中身も変わってくるかもしれないし。"
+   ],
+   [
+    "M",
+    "分かりました。それから、会場で動画を流したいんですけど、音が出せるかどうか……。"
+   ],
+   [
+    "F",
+    "発表者向けの案内が来週届くはずだから、それを見てからでいいんじゃない？"
+   ],
+   [
+    "M",
+    "そうですね。じゃあ、北村先生には、今日のうちにメールしておきます。"
+   ]
+  ],
+  "options": [
+   "発表の要旨を短く書き直す",
+   "会場に機材のことを問い合わせる",
+   "スライドのグラフを作り直す",
+   "借りたデータを使う許可を得る"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "大学的研究室里，女指导老师和男研究生在谈学会上的发表。",
+    "question": "男人接下来首先要做什么？",
+    "lines": [
+     "下个月学会的发表，幻灯片我大致看了一遍。整体的思路我觉得这样就行。不过，摘要稍微超出了规定的字数。",
+     "是的，这件事昨天事务局联系过我了，说这个周末之前改好就可以受理。",
+     "那这个不用急。我更在意的是第三张的图表。这里面也有从北村老师研究室借来的数据吧。",
+     "是的，是去年一起调查时的数据。",
+     "那个还没写成论文吧。要在学会上公开的话，得好好征得北村老师的同意才行。",
+     "啊，对啊……。万一他说不行，图表就得只用我们自己的数据重做了。",
+     "是会那样。根据回复，摘要的内容说不定也要变。",
+     "明白了。还有，我想在会场放视频，不知道能不能放出声音……。",
+     "给发表人的说明下周应该会寄到，看了再说不就行了？",
+     "也是。那我今天之内给北村老师发邮件。"
+    ],
+    "options": [
+     "把发表摘要改短",
+     "向会场询问设备的事",
+     "重做幻灯片的图表",
+     "征得使用借来数据的许可"
+    ]
+   },
+   "en": {
+    "scene": "In a university lab, a female supervisor and a male graduate student are talking about his conference presentation.",
+    "question": "What will the man do first?",
+    "lines": [
+     "I've looked through the slides for next month's conference. I think the overall flow is fine. But your abstract is a little over the word limit.",
+     "Yes, the secretariat contacted me about that yesterday — they'll accept it if I fix it by this weekend.",
+     "Then that can wait. What bothered me more is the graph on the third slide. That includes data borrowed from Professor Kitamura's lab, doesn't it?",
+     "Yes. It's from the survey we did together last year.",
+     "That hasn't been published yet, has it? If you're showing it at a conference, you need to get Professor Kitamura's consent properly.",
+     "Oh, right… If he says no, I'll have to redo the graph with just our own data.",
+     "That's right. Depending on his answer, the content of the abstract might change too.",
+     "I see. Also, I'd like to play a video at the venue, but I'm not sure whether there's sound…",
+     "The guide for presenters should arrive next week, so why not wait and see that?",
+     "True. Then I'll email Professor Kitamura today."
+    ],
+    "options": [
+     "Shorten the abstract",
+     "Ask the venue about equipment",
+     "Redo the graph on the slide",
+     "Get permission to use the borrowed data"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：老师说：「学会で外に出すなら、北村先生の了解をちゃんと取っておかないと。」男的最后说：「北村先生には、今日のうちにメールしておきます。」\n推理：图表里有别的研究室还没发表的数据，要先征得对方同意。对方的回复决定图表要不要重做，「返事によっては」摘要也可能要改，所以许可是一切的前提。摘要「今週末までに」改就行；会场的设备等下周的说明。\n容易错：图表只有被拒绝时才需要重做；摘要还有时间，而且要等回复。",
+   "en": "Evidence: The supervisor says: 「学会で外に出すなら、北村先生の了解をちゃんと取っておかないと。」 The student ends: 「北村先生には、今日のうちにメールしておきます。」\nReasoning: The graph uses another lab's unpublished data, so consent comes first. His answer decides whether the graph must be redone, and 「返事によっては」 the abstract may change too, so permission is the step everything depends on. The abstract can be fixed 「今週末までに」; the equipment question waits for next week's guide.\nTrap: the graph only needs redoing if he refuses; the abstract can wait and depends on the reply."
+  },
+  "wrong": [
+   {
+    "zh": "摘要「今週末までに」改就行，而且内容可能随回复改变，要后做。",
+    "en": "The abstract can be fixed by the weekend and may change with the reply."
+   },
+   {
+    "zh": "老师说等下周的说明寄到再看。",
+    "en": "She says to wait for next week's guide."
+   },
+   {
+    "zh": "只有北村老师不同意时才需要重做。",
+    "en": "The graph needs redoing only if Kitamura refuses."
+   },
+   null
+  ],
+  "traps": [
+   "later",
+   "order",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-102",
+  "type": "kadai",
+  "scene": "区のスポーツセンターで、受付の女の人と男の人が、団体の登録について話しています。",
+  "question": "男の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "M",
+    "すみません、バドミントンのサークルで体育館を定期的に使いたいんですが、団体の登録をお願いできますか。"
+   ],
+   [
+    "F",
+    "はい。こちらの申請書に、代表の方のお名前とご連絡先、それからメンバー全員のお名前とご住所を書いていただきます。メンバーの半数以上が区内にお住まいか、お勤めの団体に限られますので。"
+   ],
+   [
+    "M",
+    "え、住所もですか。名前の一覧は持ってきたんですけど……。半分以上は区内のはずなんですが、最近引っ越した人も何人かいて、はっきりとは。"
+   ],
+   [
+    "F",
+    "申し訳ありませんが、そこの確認が取れないと、お受けできないんです。"
+   ],
+   [
+    "M",
+    "そうですか。代表者の身分証明書は、免許証でいいんでしょうか。コピーを取ってきたほうが？"
+   ],
+   [
+    "F",
+    "いえ、それはこちらでコピーを取らせていただきますので、申請書をお出しになるときにお持ちください。"
+   ],
+   [
+    "M",
+    "分かりました。それと、来月の第一土曜日に使いたいんですが、抽選はもう始まってますか。"
+   ],
+   [
+    "F",
+    "抽選は登録がお済みの団体が対象で、来月分の締め切りは今月の二十日です。今日が十二日ですから、まだ間に合いますよ。"
+   ],
+   [
+    "M",
+    "じゃあ、急いで全員に聞いて回らないと。使用料はいつ払えばいいですか。"
+   ],
+   [
+    "F",
+    "当選されてから、ご使用日の一週間前までにお願いします。"
+   ]
+  ],
+  "options": [
+   "代表者の身分証明書のコピーを取る",
+   "メンバーの住所を確かめる",
+   "体育館の使用料を払い込む",
+   "コートの抽選に申し込む"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "区立体育中心里，前台的女工作人员和一个男人在谈团体登记的事。",
+    "question": "男人接下来首先要做什么？",
+    "lines": [
+     "不好意思，我们羽毛球社团想定期使用体育馆，能帮我们办团体登记吗？",
+     "好的。请在这份申请表上填写代表的姓名和联系方式，还有全体成员的姓名和住址。只限成员半数以上住在本区或在本区工作的团体。",
+     "啊，还要住址吗？名单我带来了……。应该有一半以上住在区内，不过最近有几个人搬了家，说不准。",
+     "很抱歉，这一点确认不了的话，我们没法受理。",
+     "这样啊。代表的身份证明，驾照可以吗？要先复印好带来吗？",
+     "不用，我们这边来复印，交申请表的时候请带过来。",
+     "明白了。另外，我们想在下个月第一个星期六用，抽签已经开始了吗？",
+     "抽签只面向已经登记的团体，下个月的截止日期是这个月二十号。今天是十二号，还来得及。",
+     "那得赶紧挨个去问所有人了。使用费什么时候交？",
+     "中签以后，请在使用日的一周前交。"
+    ],
+    "options": [
+     "复印代表的身份证明",
+     "确认成员的住址",
+     "缴纳体育馆使用费",
+     "报名场地抽签"
+    ]
+   },
+   "en": {
+    "scene": "At a ward sports centre, a female receptionist and a man are talking about registering a group.",
+    "question": "What will the man do first?",
+    "lines": [
+     "Excuse me, our badminton club would like to use the gym regularly. Could we register as a group?",
+     "Certainly. On this form, please write the representative's name and contact details, and the names and addresses of all members. Only groups where at least half the members live or work in the ward can register.",
+     "Oh, addresses too? I brought a list of names… More than half should be in the ward, but a few people moved recently, so I can't say for sure.",
+     "I'm sorry, but we can't accept it unless that can be confirmed.",
+     "I see. For the representative's ID, is a driving licence all right? Should I bring a copy?",
+     "No, we'll make the copy here, so just bring it when you hand in the form.",
+     "Understood. Also, we'd like to use it on the first Saturday of next month — has the lottery started?",
+     "The lottery is only for registered groups, and the deadline for next month is the 20th of this month. Today's the 12th, so there's still time.",
+     "Then I'd better hurry and ask everyone. When should we pay the fee?",
+     "After you win a slot, by a week before the date you use it."
+    ],
+    "options": [
+     "Copy the representative's ID",
+     "Check the members' addresses",
+     "Pay the gym fee",
+     "Apply for the court lottery"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：前台说：「そこの確認が取れないと、お受けできないんです。」男的说：「急いで全員に聞いて回らないと。」\n推理：登记要全体成员的住址，而且要半数以上在区内；有人搬了家，他说不准，所以要先问清楚。抽签只限已登记的团体，要等登记以后；使用费中签后再交；身份证明由前台复印。\n容易错：身份证明的复印由中心来做；抽签和使用费都在登记之后。",
+   "en": "Evidence: The receptionist says: 「そこの確認が取れないと、お受けできないんです。」 The man says: 「急いで全員に聞いて回らないと。」\nReasoning: Registration needs every member's address, with at least half in the ward; some have moved, so he must find out first. The lottery is only for registered groups, so it comes after registration; the fee is paid after winning; the centre copies the ID.\nTrap: the centre makes the ID copy; the lottery and the fee both come after registration."
+  },
+  "wrong": [
+   {
+    "zh": "复印由前台来做（「こちらでコピーを取らせていただきます」）。",
+    "en": "The centre makes the copy itself."
+   },
+   null,
+   {
+    "zh": "使用费中签后、使用日一周前交。",
+    "en": "The fee is paid after winning, a week before use."
+   },
+   {
+    "zh": "抽签只限已登记的团体，要先登记。",
+    "en": "Only registered groups can enter the lottery."
+   }
+  ],
+  "traps": [
+   "someone-else",
+   "order",
+   "later"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-103",
+  "type": "kadai",
+  "scene": "動物病院で、獣医の女の人と、犬を飼っている男の人が話しています。",
+  "question": "男の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "F",
+    "では、ハナちゃんの歯の手術は、来週の水曜日ということで。全身麻酔になりますので、事前に血液検査の結果が必要なんです。"
+   ],
+   [
+    "M",
+    "血液検査なら、二週間前に、引っ越す前に通っていた病院で受けたばかりなんですが。"
+   ],
+   [
+    "F",
+    "あ、そうでしたか。一か月以内のものでしたら、それを使わせていただけます。ただ、数値を細かく確認したいので、結果をこちらに直接送っていただけるよう、前の病院にお願いしていただけますか。"
+   ],
+   [
+    "M",
+    "うちに結果の紙もあると思うんですけど、それじゃだめですか。"
+   ],
+   [
+    "F",
+    "飼い主さんにお渡ししているものは、たいてい簡単なものなので……。もし届かないようなら、こちらで検査し直すこともできますけど、ハナちゃんの体の負担を考えると、できれば避けたいですね。"
+   ],
+   [
+    "M",
+    "そうですね。じゃあ、帰ったらすぐ電話してみます。あと、ワクチンの証明書が、どこにしまったか分からなくなってて……。"
+   ],
+   [
+    "F",
+    "それは手術の当日にお持ちいただければ大丈夫です。同意書も、当日ご説明してからサインしていただきますので。"
+   ]
+  ],
+  "options": [
+   "前の病院に検査結果の送付を頼む",
+   "こちらの病院で血液検査を受け直す",
+   "なくした予防接種の証明書を探す",
+   "手術の同意書に署名して出す"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "宠物医院里，女兽医和养狗的男人在说话。",
+    "question": "男人接下来首先要做什么？",
+    "lines": [
+     "那花花的牙齿手术就定在下周三。因为要全身麻醉，事先需要血液检查的结果。",
+     "血液检查的话，两周前刚在搬家前常去的那家医院做过。",
+     "啊，是这样啊。一个月以内的结果就可以用。不过我想仔细看各项数值，能不能请您拜托之前的医院，把结果直接寄到我们这儿？",
+     "我家里应该也有结果单，那个不行吗？",
+     "给主人的那份一般都是简要的……。要是寄不到，我们这边也可以重新检查，不过考虑到花花身体的负担，能避免最好。",
+     "也是。那我回去马上打电话问问。还有，疫苗证明我不记得收到哪儿了……。",
+     "那个手术当天带来就可以。同意书也是当天说明之后再请您签字。"
+    ],
+    "options": [
+     "请之前的医院寄送检查结果",
+     "在这家医院重新做血液检查",
+     "找丢失的疫苗接种证明",
+     "在手术同意书上签字交上"
+    ]
+   },
+   "en": {
+    "scene": "At an animal hospital, a female vet and a man who owns a dog are talking.",
+    "question": "What will the man do first?",
+    "lines": [
+     "So Hana's dental operation will be next Wednesday. It's under general anaesthetic, so we need blood test results beforehand.",
+     "She just had a blood test two weeks ago, at the clinic we used before we moved.",
+     "Oh, I see. If it's within a month, we can use that. But I'd like to check the values in detail, so could you ask the previous clinic to send the results directly to us?",
+     "I think I have the results sheet at home — won't that do?",
+     "The ones given to owners are usually just a summary… If the results don't arrive, we can test her again here, but considering the strain on Hana, I'd rather avoid that.",
+     "Right. Then I'll phone them as soon as I get home. Also, I can't remember where I put her vaccination certificate…",
+     "It's fine to bring that on the day of the operation. As for the consent form, we'll explain it on the day and have you sign then."
+    ],
+    "options": [
+     "Ask the previous clinic to send the test results",
+     "Have the blood test redone at this hospital",
+     "Look for the lost vaccination certificate",
+     "Sign and hand in the consent form"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：兽医说：「結果をこちらに直接送っていただけるよう、前の病院にお願いしていただけますか。」男的回答：「帰ったらすぐ電話してみます。」\n推理：血液检查两周前已经做过，一个月以内的可以用，但要详细数据，所以得请之前的医院直接寄过来。重新检查会增加狗的负担，兽医想尽量避免。疫苗证明和同意书都是手术当天的事。\n容易错：已经做过的血液检查；他提到找不到的疫苗证明，当天带来就行。",
+   "en": "Evidence: The vet says: 「結果をこちらに直接送っていただけるよう、前の病院にお願いしていただけますか。」 The man replies: 「帰ったらすぐ電話してみます。」\nReasoning: The blood test was done two weeks ago and is usable within a month, but the vet needs the detailed data, so the previous clinic must send it directly. A new test would strain the dog, which she wants to avoid. The certificate and the consent form are both for the day of the operation.\nTrap: the blood test that has already been done; the certificate he can't find, which can wait until the day."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "两周前刚做过，而且兽医说「できれば避けたい」。",
+    "en": "She was tested two weeks ago, and the vet would rather avoid retesting."
+   },
+   {
+    "zh": "证明手术当天带来就行。",
+    "en": "The certificate can be brought on the day."
+   },
+   {
+    "zh": "同意书当天说明后再签。",
+    "en": "The consent form is signed on the day, after the explanation."
+   }
+  ],
+  "traps": [
+   "done-already",
+   "later"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-104",
+  "type": "kadai",
+  "scene": "市民マラソン大会の事務局で、男の人と女の人が話しています。",
+  "question": "女の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "M",
+    "中村さん、困ったことになったよ。川沿いの橋、来月から工事で通れなくなるんだって。コースの一部を変えなきゃならない。"
+   ],
+   [
+    "F",
+    "えっ、大会まであと六週間ですよ。"
+   ],
+   [
+    "M",
+    "うん。公園の中を抜ける道に回せば、距離はほとんど変わらないんだけどね。"
+   ],
+   [
+    "F",
+    "だとすると、給水所も一か所ずらさないといけませんね。ボランティアの皆さんにお知らせしないと。"
+   ],
+   [
+    "M",
+    "それはコースが正式に決まってからでいいよ。何より先に、道路の使用許可だ。警察に出した書類、ルートが変わるなら全部出し直しになるから。"
+   ],
+   [
+    "F",
+    "許可が下りるまで、二、三週間はかかりますよね。じゃあ、パンフレットのコース図は……。"
+   ],
+   [
+    "M",
+    "印刷所の締め切りは来月の十日だから、許可が出てから直しても十分間に合う。"
+   ],
+   [
+    "F",
+    "分かりました。公園の中は道が狭いので、救護の人も増やしたほうがいいかもしれませんね。"
+   ],
+   [
+    "M",
+    "そうだね。それは僕から医師会に相談してみるよ。じゃあ、書類のほう、急ぎで頼める？"
+   ],
+   [
+    "F",
+    "はい、すぐに取りかかります。"
+   ]
+  ],
+  "options": [
+   "給水所のボランティアに場所の変更を知らせる",
+   "新しいコース図を印刷所に送る",
+   "警察に出す書類を作り直す",
+   "救護の担当者を増やすよう頼む"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "市民马拉松大赛的事务局里，一个男人和一个女人在说话。",
+    "question": "女人接下来首先要做什么？",
+    "lines": [
+     "中村，麻烦了。河边那座桥下个月开始施工，不能通行了。路线得改一部分。",
+     "啊？离比赛只剩六周了啊。",
+     "嗯。改成穿过公园的那条路的话，距离几乎不变。",
+     "那样的话，补水站也得挪一个地方。得通知志愿者们。",
+     "那个等路线正式定下来再说。最要紧的是道路使用许可。交给警察的文件，路线一变就得全部重交。",
+     "批下来要两三周吧。那小册子上的路线图……。",
+     "印刷厂的截止日期是下个月十号，许可下来以后再改也完全来得及。",
+     "明白了。公园里路窄，救护人员是不是也多安排一些比较好。",
+     "对。那个我去跟医师会商量。那文件的事，能抓紧办吗？",
+     "好的，我马上着手。"
+    ],
+    "options": [
+     "通知补水站的志愿者位置变更",
+     "把新路线图发给印刷厂",
+     "重新制作交给警察的文件",
+     "请求增加救护人员"
+    ]
+   },
+   "en": {
+    "scene": "At the office of a city marathon, a man and a woman are talking.",
+    "question": "What will the woman do first?",
+    "lines": [
+     "Nakamura, we've got a problem. The bridge by the river will be closed for construction from next month. We'll have to change part of the course.",
+     "What? The race is only six weeks away.",
+     "Yes. If we reroute it along the path through the park, the distance hardly changes, though.",
+     "In that case, we'll have to move one of the water stations too. We need to tell the volunteers.",
+     "That can wait until the course is officially decided. First of all, the permit to use the roads. If the route changes, the papers we gave the police all have to be resubmitted.",
+     "It takes two or three weeks for a permit to come through, doesn't it? Then what about the course map in the brochure…",
+     "The printer's deadline is the 10th of next month, so fixing it after the permit comes through is plenty of time.",
+     "I see. The paths in the park are narrow, so maybe we should have more first-aid staff too.",
+     "Good point. I'll talk to the medical association about that myself. So, could you get on with the papers urgently?",
+     "Yes, I'll start right away."
+    ],
+    "options": [
+     "Tell the water-station volunteers about the change",
+     "Send the new course map to the printer",
+     "Redo the papers for the police",
+     "Ask for more first-aid staff"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「何より先に、道路の使用許可だ。」「書類のほう、急ぎで頼める？」女的回答：「すぐに取りかかります。」\n推理：路线一变，交给警察的文件「全部出し直し」，而且审批要两三周，所以最先做。通知志愿者要等路线正式确定；路线图等许可下来再改也来得及；救护人员由男的去跟医师会商量。\n容易错：女的自己先提出的通知志愿者被「コースが正式に決まってから」推后；救护的事是男的负责。",
+   "en": "Evidence: The man says: 「何より先に、道路の使用許可だ。」 and 「書類のほう、急ぎで頼める？」 She replies: 「すぐに取りかかります。」\nReasoning: With the route changed, the police papers must be 「全部出し直し」, and approval takes two or three weeks, so they come first. Telling the volunteers waits until the course is official; the map can be fixed after the permit; the man will talk to the medical association about first-aid staff.\nTrap: her own first idea, telling the volunteers, put off with 「コースが正式に決まってから」; the first-aid matter is the man's job."
+  },
+  "wrong": [
+   {
+    "zh": "男的说等路线正式定下来再通知。",
+    "en": "He says to wait until the course is official."
+   },
+   {
+    "zh": "印刷厂截止是下个月十号，许可下来再改也来得及。",
+    "en": "The printer's deadline leaves time after the permit."
+   },
+   null,
+   {
+    "zh": "救护的事男的说「僕から医師会に相談してみる」。",
+    "en": "The man will raise first-aid staffing himself."
+   }
+  ],
+  "traps": [
+   "order",
+   "later",
+   "someone-else"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-105",
+  "type": "kadai",
+  "scene": "劇団の稽古場で、演出家の男の人と、俳優の女の人が話しています。",
+  "question": "女の人は、明日の稽古の前に何をしますか。",
+  "lines": [
+   [
+    "M",
+    "今日はここまでにしよう。お疲れさま。あ、林さん、ちょっといいかな。"
+   ],
+   [
+    "F",
+    "はい。"
+   ],
+   [
+    "M",
+    "二幕の最初の場面、昨日台本を少し直したよね。せりふ、もう入った？"
+   ],
+   [
+    "F",
+    "実は、まだ半分くらいで……。今夜中に覚えます。"
+   ],
+   [
+    "M",
+    "いや、あそこは来週の通し稽古までに入っていれば構わないよ。それより気になってるのは、階段を駆け下りるところ。本番では、裾の長いドレスを着るんだよね。"
+   ],
+   [
+    "F",
+    "はい。まだ一度も着て動いたことがなくて。"
+   ],
+   [
+    "M",
+    "裾を踏んだら危ないからね。衣装はもう楽屋に届いてるから、明日、稽古が始まる前に、自分で一度着て、あの階段を下りてみてくれる？ 走れないようなら、動きを変えるから。"
+   ],
+   [
+    "F",
+    "分かりました。それから、三幕の歌のところは……。"
+   ],
+   [
+    "M",
+    "あれはもう今のままでいい。だいぶ良くなったよ。山田くんとの掛け合いは、明日、二人がそろったところで合わせよう。"
+   ]
+  ],
+  "options": [
+   "直した台本のせりふを覚える",
+   "衣装を着て階段を下りてみる",
+   "三幕の歌の練習をする",
+   "ほかの俳優とせりふを合わせる"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "剧团的排练场里，男导演和女演员在说话。",
+    "question": "女人在明天排练之前要做什么？",
+    "lines": [
+     "今天就到这儿吧。辛苦了。啊，林，能耽误你一下吗？",
+     "好的。",
+     "第二幕开头那场，昨天剧本稍微改了一下吧。台词已经记住了吗？",
+     "其实还只记了一半左右……。我今晚之内背下来。",
+     "不，那里只要下周联排之前记住就行。我更在意的是跑下楼梯那里。正式演出时你要穿下摆很长的裙子吧。",
+     "是的。还一次都没穿着走过。",
+     "踩到下摆会很危险。服装已经送到后台了，明天排练开始前，你自己先穿一次，下一下那段楼梯好吗？要是跑不了，我就改动作。",
+     "明白了。还有，第三幕唱歌的地方……。",
+     "那里就保持现在这样，好多了。和山田的对手戏，明天两个人都在的时候再对。"
+    ],
+    "options": [
+     "背改过的剧本台词",
+     "穿上服装试着下楼梯",
+     "练习第三幕的歌",
+     "和其他演员对台词"
+    ]
+   },
+   "en": {
+    "scene": "In a theatre company's rehearsal room, a male director and a female actor are talking.",
+    "question": "What will the woman do before tomorrow's rehearsal?",
+    "lines": [
+     "Let's stop here for today. Thanks, everyone. Oh, Hayashi, have you got a moment?",
+     "Yes.",
+     "I revised the script a little yesterday for the first scene of Act Two. Have you got the lines down yet?",
+     "Actually, only about half… I'll learn them tonight.",
+     "No, it's fine as long as you know them by next week's run-through. What worries me more is where you run down the stairs. In the performance you'll be wearing a dress with a long hem, right?",
+     "Yes. I haven't moved in it even once yet.",
+     "It's dangerous if you step on the hem. The costume's already in the dressing room, so tomorrow, before rehearsal starts, could you put it on yourself and try going down those stairs? If you can't run, I'll change the moves.",
+     "Understood. And the song in Act Three…",
+     "Leave that as it is now. It's much better. We'll go over your exchange with Yamada tomorrow once you're both here."
+    ],
+    "options": [
+     "Learn the lines in the revised script",
+     "Try going down the stairs in costume",
+     "Practise the song in Act Three",
+     "Go over lines with another actor"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：导演说：「明日、稽古が始まる前に、自分で一度着て、あの階段を下りてみてくれる？」\n推理：长裙的下摆可能被踩到，很危险，她还没穿着动过，所以导演让她明天排练前先试。台词只要「来週の通し稽古まで」记住；歌「今のままでいい」；和山田的对手戏要两人都在时、也就是明天排练中才对。\n容易错：她自己说今晚要背的台词，导演说不急；对手戏一个人做不了，要等到排练时。",
+   "en": "Evidence: The director says: 「明日、稽古が始まる前に、自分で一度着て、あの階段を下りてみてくれる？」\nReasoning: The long hem could catch and she hasn't moved in the dress yet, so he asks her to try it before rehearsal tomorrow. The lines only need to be known 「来週の通し稽古まで」; the song is fine 「今のままでいい」; the exchange with Yamada needs both of them, so it happens during rehearsal.\nTrap: the lines she offers to learn tonight, which the director says can wait; the exchange, which she can't do alone before rehearsal."
+  },
+  "wrong": [
+   {
+    "zh": "导演说下周联排前记住就行，不急。",
+    "en": "The director says the lines can wait until next week's run-through."
+   },
+   null,
+   {
+    "zh": "导演说歌「今のままでいい」。",
+    "en": "He says the song is fine as it is."
+   },
+   {
+    "zh": "要等明天两个人都在时再对，排练前一个人做不了。",
+    "en": "That waits until both are there tomorrow; she can't do it alone beforehand."
+   }
+  ],
+  "traps": [
+   "later",
+   "not-possible"
+  ]
+ }
+]

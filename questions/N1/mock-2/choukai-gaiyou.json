@@ -1,0 +1,387 @@
+[
+ {
+  "id": "n1-m2-ck-301",
+  "type": "gaiyou",
+  "scene": "ラジオで、動物園の飼育員が話しています。",
+  "lines": [
+   [
+    "F",
+    "動物園の飼育員というと、動物と仲良くなれる仕事だと思われるかもしれません。もちろん、毎日世話をしていれば、向こうもこちらの顔を覚えます。でも私たちは、なついてくれることを、手放しでは喜べないんです。人に慣れすぎた動物は、診察のときや、ほかの動物園へ移るときに、かえって扱いが難しくなることがある。それに、子どもを産んで育ててもらうためには、野生に近い暮らしをさせたいのに、人のそばにばかり寄ってくるようでは困ります。ですから、えさをやるときも、なるべく声をかけず、目を合わせすぎないようにしています。かわいいからこそ、ある程度の距離を置く。それが、動物にとって一番いい関係なんじゃないかと思っています。"
+   ]
+  ],
+  "question": "飼育員は何について話していますか。",
+  "spokenOptions": true,
+  "options": [
+   "動物に顔を覚えてもらうための工夫",
+   "動物を人に慣らしすぎない理由",
+   "動物を野生に返すための訓練の方法",
+   "動物の診察や移動が難しくなる原因"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "广播里，动物园的饲养员在讲话。",
+    "question": "饲养员在讲什么？",
+    "lines": [
+     "说到动物园的饲养员，大家也许会以为这是能和动物成为好朋友的工作。当然，每天照顾它们，它们也会记住我们的脸。可是，动物亲近我们，我们并不能毫无保留地高兴。太习惯人的动物，在看病或者搬到别的动物园的时候，反而可能更难对付。而且，为了让它们生育、抚养幼崽，我们想让它们过接近野生的生活，可它们要是总往人身边凑就麻烦了。所以，喂食的时候我们也尽量不跟它们说话，不和它们对视太多。正因为可爱，才要保持一定的距离。我想这对动物来说才是最好的关系。"
+    ],
+    "options": [
+     "让动物记住自己的脸的诀窍",
+     "不让动物过于习惯人的理由",
+     "把动物放归野外的训练方法",
+     "动物看病和搬迁变困难的原因"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, a zookeeper is speaking.",
+    "question": "What is the zookeeper talking about?",
+    "lines": [
+     "You might think a zookeeper's job is about making friends with animals. Of course, if you look after them every day, they come to recognise your face. But we can't be wholeheartedly glad when they become attached to us. Animals that are too used to people can actually be harder to handle when they need examining or moving to another zoo. Besides, if we want them to breed and raise young, we need them to live close to how they would in the wild — it's a problem if they're always coming over to people. So when we feed them, we try not to talk to them and not to make too much eye contact. Precisely because they're dear to us, we keep a certain distance. I think that's the best relationship for the animals."
+    ],
+    "options": [
+     "Ways to get animals to recognise you",
+     "Why keepers avoid letting animals get too used to people",
+     "How animals are trained for release into the wild",
+     "Why examining and moving animals becomes difficult"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：饲养员说：「なついてくれることを、手放しでは喜べないんです。」最后总结：「かわいいからこそ、ある程度の距離を置く。」\n推理：她先说饲养员不是单纯和动物交朋友，接着说明太习惯人的动物看病、搬迁难对付，也不利于繁殖，所以喂食时不说话、少对视。整段讲的是为什么要让动物和人保持距离。\n容易错：看病、搬迁难只是理由之一；“记住脸”是开头被转折的部分；她说的是“接近野生的生活”，不是放归野外。",
+   "en": "Evidence: The keeper says: 「なついてくれることを、手放しでは喜べないんです。」 and concludes: 「かわいいからこそ、ある程度の距離を置く。」\nReasoning: She says the job isn't simply befriending animals, then explains that animals too used to people are hard to examine or move and are less likely to breed, so keepers avoid talking to them or meeting their eyes. The whole talk is about why animals should be kept at a distance from people.\nTrap: difficulty examining or moving them is only one reason; 'recognising faces' is the part she turns away from; she speaks of a life close to the wild, not release."
+  },
+  "wrong": [
+   {
+    "zh": "“记住脸”是开头说的，随后用「でも」转折，她反而尽量不对视。",
+    "en": "That's the opening, which she turns away from with 「でも」."
+   },
+   null,
+   {
+    "zh": "她说的是让动物过「野生に近い暮らし」，没说放归野外。",
+    "en": "She speaks of a life close to the wild, not release."
+   },
+   {
+    "zh": "这只是理由之一，不是整段的主题。",
+    "en": "That's only one of her reasons, not the topic."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-302",
+  "type": "gaiyou",
+  "scene": "料理店で、常連客の女の人と店主の男の人が、予約のキャンセルについて話しています。",
+  "lines": [
+   [
+    "F",
+    "入り口の貼り紙、見ました。来月から、キャンセル料をいただくことにしたんですね。"
+   ],
+   [
+    "M",
+    "ええ。本当は取りたくないんですけどね。お客さんにもご事情があるでしょうし、急に具合が悪くなったり、仕事が入ったりするのは仕方がないですから。"
+   ],
+   [
+    "F",
+    "じゃあ、どうして？"
+   ],
+   [
+    "M",
+    "うちは、予約の人数に合わせて、朝、魚を仕入れるんです。前の日までにご連絡いただければ、仕込みの量を減らせるので、何とかなる。困るのは、何の連絡もなく、当日いらっしゃらない方なんですよ。先月は、八人の席が二回、それでした。仕入れた魚は捨てるしかないし、その席をお断りしたほかのお客さんにも申し訳ない。"
+   ],
+   [
+    "F",
+    "それはひどいですね。"
+   ],
+   [
+    "M",
+    "ですから、当日まで何のご連絡もなかった場合に限って、お料理代の半分をいただくことにしたんです。前の日までのキャンセルでしたら、これまで通り、いただきません。"
+   ]
+  ],
+  "question": "店主は、キャンセル料についてどう考えていますか。",
+  "spokenOptions": true,
+  "options": [
+   "取りたくないので、貼り紙で呼びかけるだけにしたい",
+   "店の損になるので、どんな理由でも取るべきだ",
+   "連絡のない客が多いので、料金を全額取りたい",
+   "本意ではないが、連絡のない客からは取るしかない"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "饭店里，一位女常客和男店主在谈预约取消的事。",
+    "question": "店主对取消费是怎么想的？",
+    "lines": [
+     "门口的告示我看到了。从下个月开始要收取消费了啊。",
+     "是啊。其实我是不想收的。客人也有自己的情况，突然身体不舒服、临时有工作，都是没办法的事。",
+     "那为什么呢？",
+     "我们店是按预约人数早上进鱼的。前一天之前联系的话，可以减少备料的量，还能应付。麻烦的是没有任何联系、当天不来的客人。上个月，八个人的座位有两次都是这样。进的鱼只能扔掉，对那些因为这桌而被我们拒绝的其他客人也过意不去。",
+     "那太过分了。",
+     "所以，只有到当天都没有任何联系的情况，才收一半的餐费。前一天之前取消的话，跟以前一样不收。"
+    ],
+    "options": [
+     "不想收，所以只想贴告示呼吁一下",
+     "因为店里会亏损，不管什么理由都应该收",
+     "因为不联系的客人多，想收全额",
+     "虽非本意，但只能向不联系的客人收取"
+    ]
+   },
+   "en": {
+    "scene": "At a restaurant, a female regular and the male owner are talking about cancelled bookings.",
+    "question": "What does the owner think about cancellation fees?",
+    "lines": [
+     "I saw the notice at the entrance. So you're charging cancellation fees from next month.",
+     "Yes. I'd really rather not. Customers have their own circumstances, and if someone suddenly falls ill or work comes up, that can't be helped.",
+     "So why, then?",
+     "We buy fish in the morning according to the number of bookings. If people let us know by the day before, we can prepare less, so we manage. The trouble is people who simply don't turn up on the day, without a word. Last month that happened twice with a table for eight. The fish we bought had to be thrown away, and I felt bad for the other customers we'd turned away because of that table.",
+     "That's awful.",
+     "So only when we've heard nothing by the day itself, we'll charge half the price of the meal. Cancellations up to the day before are free, as always."
+    ],
+    "options": [
+     "He doesn't want to charge, so he'll just put up a notice asking people",
+     "It costs the restaurant, so it should be charged for any reason",
+     "Many customers don't call, so he wants to charge the full price",
+     "It isn't what he wants, but he has no choice with customers who don't call"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：店主说：「本当は取りたくないんですけどね。」又说：「当日まで何のご連絡もなかった場合に限って、お料理代の半分をいただく」。\n推理：他理解客人有各种情况，本心不想收；但不联系就不来的客人让进的鱼白白浪费，所以只对这种情况收费，提前取消照旧不收。态度是“不情愿，但不得不收”。\n容易错：「どんな理由でも」不对，提前取消不收；收的是「半分」，不是全额。",
+   "en": "Evidence: The owner says: 「本当は取りたくないんですけどね。」 and 「当日まで何のご連絡もなかった場合に限って、お料理代の半分をいただく」.\nReasoning: He understands customers' circumstances and doesn't want to charge, but no-shows waste the fish he has bought, so he charges only in that case and keeps earlier cancellations free. His attitude: reluctant, but left with no choice.\nTrap: 'for any reason' is wrong, as earlier cancellations are free; he charges 「半分」, not the full price."
+  },
+  "wrong": [
+   {
+    "zh": "他已经决定从下个月起收费，不是只贴告示呼吁。",
+    "en": "He has decided to charge, not just put up a notice."
+   },
+   {
+    "zh": "「前の日までのキャンセル」不收，不是什么理由都收。",
+    "en": "Cancellations up to the day before stay free."
+   },
+   {
+    "zh": "收的是一半；上个月是两次，没说很多。",
+    "en": "He charges half, and it happened twice, not often."
+   },
+   null
+  ],
+  "traps": [
+   "attitude-combo",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-303",
+  "type": "gaiyou",
+  "scene": "ラジオで、歴史学者が話しています。",
+  "lines": [
+   [
+    "M",
+    "江戸時代の旅人が持ち歩いた道中図を見ると、今の地図に慣れた私たちは、ずいぶんいい加減だと感じるかもしれません。曲がりくねった街道がまっすぐな一本の線で描かれ、方角も距離もでたらめです。当時の測量の技術が未熟だったから、とよく言われますが、同じ時代に、驚くほど正確な日本全図も作られているんですね。では、なぜ道中図はああなのか。旅人が知りたかったのは、次の宿場まであとどのくらいか、どこで川を渡るのか、どこに茶屋があるのか、ということでした。そのためには、街道を一本の線に伸ばして、宿場や名所を順に並べたほうが、ずっと見やすい。正確さを犠牲にしたのではなく、使う人の目的に合わせて、必要な情報だけを選び取った結果なんです。"
+   ]
+  ],
+  "question": "歴史学者は何について話していますか。",
+  "spokenOptions": true,
+  "options": [
+   "昔の旅の地図が今と違う形をしている理由",
+   "江戸時代の測量の技術が進んでいた理由",
+   "旅人が宿場で情報を集めていた方法",
+   "正確な日本地図が作られるまでの過程"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "广播里，一位历史学家在讲话。",
+    "question": "历史学家在讲什么？",
+    "lines": [
+     "看江户时代旅人随身带的路线图，习惯了现代地图的我们也许会觉得很马虎。弯弯曲曲的街道被画成一条直线，方位和距离都乱七八糟。人们常说这是因为当时的测量技术不成熟，可同一时代也做出了精确得惊人的日本全图。那么，路线图为什么会是那样呢？旅人想知道的是：到下一个驿站还有多远，在哪里过河，哪里有茶馆。为此，把街道拉成一条线，按顺序排列驿站和名胜，看起来要方便得多。这不是牺牲了准确性，而是配合使用者的目的，只挑选必要信息的结果。"
+    ],
+    "options": [
+     "从前旅行用的地图形状和现在不同的原因",
+     "江户时代测量技术先进的原因",
+     "旅人在驿站收集信息的方法",
+     "精确的日本地图制成的过程"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, a historian is speaking.",
+    "question": "What is the historian talking about?",
+    "lines": [
+     "Looking at the route maps travellers carried in the Edo period, we who are used to modern maps may find them very sloppy. Winding highways are drawn as one straight line, and direction and distance are all over the place. People often say it's because surveying techniques were immature then, but in the same period astonishingly accurate maps of the whole of Japan were also made. So why do the route maps look like that? What travellers wanted to know was how far to the next post town, where to cross the river, where there was a teahouse. For that, stretching the highway into a single line and setting out the post towns and sights in order made them far easier to read. It wasn't a sacrifice of accuracy; it was the result of choosing only the information needed for the user's purpose."
+    ],
+    "options": [
+     "Why old travel maps look different from today's",
+     "Why surveying was advanced in the Edo period",
+     "How travellers gathered information at post towns",
+     "How accurate maps of Japan came to be made"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：历史学家问：「では、なぜ道中図はああなのか。」最后说：「使う人の目的に合わせて、必要な情報だけを選び取った結果なんです。」\n推理：他先说路线图把街道画成直线、方位距离都不准，否定了“测量技术不成熟”的常见说法，再说明旅人需要的是到驿站的距离、过河地点等，所以才画成那样。整段讲的是旧路线图为什么是那种形状。\n容易错：精确的日本全图只是用来反驳的例子；驿站、茶馆是旅人需要的信息的举例。",
+   "en": "Evidence: The historian asks: 「では、なぜ道中図はああなのか。」 and ends: 「使う人の目的に合わせて、必要な情報だけを選び取った結果なんです。」\nReasoning: He notes the maps draw highways straight and get direction and distance wrong, rejects the usual 'immature surveying' explanation, then explains that travellers needed distances to post towns, river crossings and so on — hence the form. The talk is about why the old route maps look that way.\nTrap: the accurate map of Japan is only a counter-example; post towns and teahouses are examples of what travellers needed."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "精确的全图只是用来反驳“技术不成熟”的例子，不是主题。",
+    "en": "The accurate map is only a counter-example, not the topic."
+   },
+   {
+    "zh": "驿站、茶馆是旅人想知道的信息，没讲收集信息的方法。",
+    "en": "Post towns and teahouses are what travellers wanted to know; no method of gathering is discussed."
+   },
+   {
+    "zh": "他没讲日本全图的制作过程。",
+    "en": "He doesn't describe how the map of Japan was made."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-304",
+  "type": "gaiyou",
+  "scene": "テレビで、漁師の男の人が、魚をとる量の制限について話しています。",
+  "lines": [
+   [
+    "M",
+    "去年から、この湾でとれるカレイの量に上限が設けられました。正直に言って、暮らしは楽じゃないですよ。漁に出られる日が減った分、収入は二割近く減りましたから。仲間の中には、役所が勝手に決めたことだと、今でも腹を立てているのもいます。ただ、私が若い頃は、網を入れれば入れただけとれたものが、この十年で半分以下になってしまった。このまま好きなだけとっていたら、息子の代には、とるものがなくなっているでしょう。上限の数字が妥当かどうかは、これから何年か様子を見てみなければ分かりません。それでも、誰かが歯止めをかけなきゃいけなかったのは確かです。苦しいのは苦しい。でも、海を次の代に残すためには、受け入れるしかないと思っています。"
+   ]
+  ],
+  "question": "漁師は、とる量の制限についてどう考えていますか。",
+  "spokenOptions": true,
+  "options": [
+   "収入が減るので、すぐにやめるべきだ",
+   "役所が勝手に決めたので、納得できない",
+   "生活は苦しいが、漁を続けるには必要だ",
+   "効果がないので、数字を見直すべきだ"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "电视上，一位男渔民在谈捕鱼量的限制。",
+    "question": "渔民对捕捞量的限制是怎么想的？",
+    "lines": [
+     "从去年开始，这个海湾里能捕的鲽鱼的量设了上限。老实说，日子不好过。能出海的日子少了，收入也少了将近两成。伙伴里也有人到现在还在生气，说是政府擅自决定的。不过，我年轻的时候，下多少网就能捕多少，这十年却减少到一半以下。要是就这样想捕多少捕多少，到我儿子那一代，大概就没什么可捕的了。上限的数字合不合适，还得再观察几年才知道。即便如此，总得有人来刹车，这一点是肯定的。苦是苦。但是为了把大海留给下一代，我想只能接受。"
+    ],
+    "options": [
+     "因为收入减少，应该马上取消",
+     "因为是政府擅自决定的，无法接受",
+     "生活虽苦，但为了能继续捕鱼是必要的",
+     "因为没有效果，应该重新考虑数字"
+    ]
+   },
+   "en": {
+    "scene": "On television, a male fisherman is talking about limits on the amount of fish that can be caught.",
+    "question": "What does the fisherman think about the catch limits?",
+    "lines": [
+     "Since last year there's been a cap on how much flounder can be caught in this bay. To be honest, life isn't easy. With fewer days we can go out, our income has dropped by nearly 20 per cent. Some of my mates are still angry about it, saying the authorities decided it off their own bat. But when I was young, however many nets you put in, you caught that much — and in the last ten years it's fallen to less than half. If we carry on catching as much as we like, by my son's generation there'll be nothing left to catch. Whether the cap is set at the right figure, we won't know until we've watched for a few years. Even so, someone definitely had to put the brakes on. It's hard, there's no denying it. But to leave the sea to the next generation, I think we have to accept it."
+    ],
+    "options": [
+     "Income is falling, so it should be scrapped at once",
+     "The authorities decided it on their own, so he can't accept it",
+     "Life is hard, but it's needed for fishing to go on",
+     "It isn't working, so the figure should be revised"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：渔民说：「誰かが歯止めをかけなきゃいけなかったのは確かです。」最后说：「苦しいのは苦しい。でも、海を次の代に残すためには、受け入れるしかない」。\n推理：他承认收入少了近两成，日子不好过；但鱼十年减了一半以上，不限制的话儿子那一代就没鱼了，所以接受限制。态度是“苦，但必要”。\n容易错：对政府生气的是「仲間の中には」，不是他自己；数字是否合适「様子を見てみなければ分かりません」，他没说没效果。",
+   "en": "Evidence: The fisherman says: 「誰かが歯止めをかけなきゃいけなかったのは確かです。」 and finally: 「苦しいのは苦しい。でも、海を次の代に残すためには、受け入れるしかない」.\nReasoning: He admits income has fallen nearly 20 per cent and life is hard, but the catch has more than halved in ten years and without limits there'll be nothing left for his son's generation, so he accepts it. Attitude: hard, but necessary.\nTrap: it's 「仲間の中には」 who are angry with the authorities, not him; whether the figure is right 「様子を見てみなければ分かりません」 — he never says it isn't working."
+  },
+  "wrong": [
+   {
+    "zh": "他承认收入减少，但说「受け入れるしかない」。",
+    "en": "He admits the income loss but accepts the limits."
+   },
+   {
+    "zh": "生气的是一部分伙伴，不是他本人的看法。",
+    "en": "It's some of his mates who are angry, not him."
+   },
+   null,
+   {
+    "zh": "他说要观察几年才知道，没说没效果。",
+    "en": "He says it's too early to tell, not that it isn't working."
+   }
+  ],
+  "traps": [
+   "attitude-combo",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-305",
+  "type": "gaiyou",
+  "scene": "大学の授業で、経営学の先生が話しています。",
+  "lines": [
+   [
+    "F",
+    "便利な商品ほどよく売れる、と私たちはつい考えがちです。でも、どうもそうとばかりは言えないようです。ある食品メーカーが、水を加えて焼くだけのケーキの素を売り出したところ、思ったほど売れなかった。そこで、粉から卵を抜いて、卵だけはお客さんが自分で割り入れるようにしたら、売れ行きが伸びた、という話があります。手間はわずかに増えたのに、です。卵を割るというひと手間があることで、自分で作った、家族のために作った、という気持ちが生まれる。何もかもお膳立てされてしまうと、かえってその気持ちが持てなくなるんですね。商品を考えるときには、どこまで手間を省くかだけでなく、あえてどこを残すか、という視点も欠かせないということです。"
+   ]
+  ],
+  "question": "先生は何について話していますか。",
+  "spokenOptions": true,
+  "options": [
+   "卵を使ったケーキのおいしい焼き方",
+   "手間を残すことが生む価値",
+   "便利な商品が増えてきた理由",
+   "食品の売れ行きを調べる方法"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "大学的课上，一位经营学的老师在讲话。",
+    "question": "老师在讲什么？",
+    "lines": [
+     "我们往往会以为，越方便的商品卖得越好。不过，好像也不能一概而论。有这样一个故事：一家食品公司推出了只要加水烤就行的蛋糕粉，结果没有预想的那么好卖。于是他们把鸡蛋从粉里去掉，只有鸡蛋让顾客自己打进去，销量反而上去了。明明麻烦稍微增加了。因为有打鸡蛋这一道工序，就会产生“是自己做的”“是为家人做的”这种感觉。一切都被安排好了，反而就没有这种感觉了。也就是说，考虑商品时，不光要想省掉多少麻烦，还要有特意留下哪一部分的视角。"
+    ],
+    "options": [
+     "用鸡蛋烤出好吃蛋糕的方法",
+     "留下一些工序所产生的价值",
+     "方便的商品增多的原因",
+     "调查食品销量的方法"
+    ]
+   },
+   "en": {
+    "scene": "In a university class, a business studies teacher is speaking.",
+    "question": "What is the teacher talking about?",
+    "lines": [
+     "We tend to assume that the more convenient a product is, the better it sells. But that doesn't seem to be the whole story. There's a story that a food company launched a cake mix you just add water to and bake, and it didn't sell as well as expected. So they took the egg out of the mix and had customers crack in the egg themselves — and sales went up. Even though it was slightly more work. Having that one step of cracking an egg gives people the feeling that they made it themselves, made it for their family. When everything is done for them, they can't have that feeling. So when designing a product, you need to think not only about how much effort to save, but also about which part to deliberately leave in."
+    ],
+    "options": [
+     "How to bake a tasty cake with eggs",
+     "The value created by leaving some effort in",
+     "Why convenient products have increased",
+     "How to research food sales"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：老师说：「卵を割るというひと手間があることで、自分で作った……という気持ちが生まれる。」最后说：「あえてどこを残すか、という視点も欠かせない」。\n推理：她先否定“越方便越好卖”，再用蛋糕粉的例子说明：特意留下一道工序，顾客会有“自己做的”满足感，商品反而好卖。整段讲的是留下麻烦的价值。\n容易错：蛋糕粉只是例子，不是在讲怎么烤蛋糕；她讲的不是方便的商品为什么增多，正相反。",
+   "en": "Evidence: The teacher says: 「卵を割るというひと手間があることで、自分で作った……という気持ちが生まれる。」 and ends: 「あえてどこを残すか、という視点も欠かせない」.\nReasoning: She questions the idea that convenience always sells, then uses the cake-mix story: leaving one step for the customer gives a sense of having made it oneself, and sales rise. The talk is about the value of leaving some effort in.\nTrap: the cake mix is only an example, not a baking lesson; she isn't explaining why convenient products have spread — rather the reverse."
+  },
+  "wrong": [
+   {
+    "zh": "蛋糕粉只是例子，没讲烤法。",
+    "en": "The cake mix is just an example; no baking method is given."
+   },
+   null,
+   {
+    "zh": "她说的是方便不一定好卖，不是方便商品增多的原因。",
+    "en": "Her point is that convenience doesn't always sell."
+   },
+   {
+    "zh": "没讲调查销量的方法。",
+    "en": "She doesn't discuss how to research sales."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "twisted"
+  ]
+ }
+]

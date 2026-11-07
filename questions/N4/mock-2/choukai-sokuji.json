@@ -1,0 +1,470 @@
+[
+ {
+  "id": "n4-m2-ck-501",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "ただいま。あー、外は さむかった。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "おかえり。あたたかい お茶でも 飲む？",
+   "いってらっしゃい。気を つけてね。",
+   "ただいま。今日は さむいね。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "我回来了。啊，外面好冷。"
+    ],
+    "options": [
+     "回来啦。喝点热茶吗？",
+     "路上小心。",
+     "我回来了。今天好冷啊。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I'm home. Ugh, it was cold out there."
+    ],
+    "options": [
+     "Welcome back. Want some hot tea?",
+     "See you. Take care.",
+     "I'm home. It's cold today."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「ただいま。あー、外は さむかった。」\n推理：对回家的人说「おかえり」，再接着她说的冷，问要不要喝热茶。\n容易错：「いってらっしゃい」是送人出门时说的；照搬「ただいま」是回来的人说的话。",
+   "en": "Evidence: The woman says 「ただいま。あー、外は さむかった。」\nReasoning: To someone coming home you say 「おかえり」, then pick up on the cold by offering hot tea.\nTrap: 「いってらっしゃい」 is for seeing someone off; repeating 「ただいま」 is the line of the one coming home."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「いってらっしゃい」是对出门的人说的，她是刚回来。",
+    "en": "「いってらっしゃい」 is for someone going out; she has just come back."
+   },
+   {
+    "zh": "「ただいま」是回家的人说的，照搬原句不对。",
+    "en": "「ただいま」 is said by the one who comes home — just repeating it doesn't work."
+   }
+  ],
+  "traps": [
+   "timing",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-502",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "来月 けっこんするんだって？ おめでとう。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "うん、おめでとう。",
+   "ありがとう。六月に するんだ。",
+   "いいえ、どういたしまして。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "听说你下个月结婚？恭喜！"
+    ],
+    "options": [
+     "嗯，恭喜。",
+     "谢谢。定在六月。",
+     "不，不客气。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I hear you're getting married next month. Congratulations!"
+    ],
+    "options": [
+     "Yeah, congratulations.",
+     "Thanks. It's in June.",
+     "No, you're welcome."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「来月 けっこんするんだって？ おめでとう。」\n推理：被人祝贺时回答「ありがとう」，再补充婚礼的时间。\n容易错：照搬「おめでとう」；「どういたしまして」是别人道谢时的回答。",
+   "en": "Evidence: The man says 「来月 けっこんするんだって？ おめでとう。」\nReasoning: When congratulated, you say 「ありがとう」 and can add when it is.\nTrap: echoing 「おめでとう」; 「どういたしまして」 answers a thank-you."
+  },
+  "wrong": [
+   {
+    "zh": "「おめでとう」是祝贺别人的话，被祝贺的人不能照搬。",
+    "en": "「おめでとう」 congratulates someone else; the one being congratulated can't just echo it."
+   },
+   null,
+   {
+    "zh": "「どういたしまして」是回应别人道谢的，这里是被祝贺。",
+    "en": "「どういたしまして」 answers a thank-you; here you're being congratulated."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "timing"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-503",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "はじめまして。今日から ここで はたらく 中村です。どうぞ よろしく お願いします。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "はい、今日 はじめて ここに 来ました。",
+   "いいえ、お世話に なりました。",
+   "こちらこそ、よろしく お願いします。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "初次见面。我是今天开始在这里工作的中村。请多关照。"
+    ],
+    "options": [
+     "是的，我今天第一次来这里。",
+     "不，承蒙关照了。",
+     "我才要请你多关照。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Nice to meet you. I'm Nakamura, starting work here today. I look forward to working with you."
+    ],
+    "options": [
+     "Yes, I came here for the first time today.",
+     "No, thank you for everything.",
+     "Likewise, I look forward to working with you."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「はじめまして。……どうぞ よろしく お願いします。」\n推理：对第一次见面打招呼的人，回答「こちらこそ、よろしく お願いします」。\n容易错：「はじめて」照搬了「はじめまして」的发音；「お世話に なりました」是离开、告别时说的。",
+   "en": "Evidence: The woman says 「はじめまして。……どうぞ よろしく お願いします。」\nReasoning: To a first greeting you reply 「こちらこそ、よろしく お願いします」.\nTrap: 「はじめて」 echoes the sound of 「はじめまして」; 「お世話に なりました」 is said when leaving."
+  },
+  "wrong": [
+   {
+    "zh": "「はじめて 来ました」只是照搬了「はじめ」的音，第一次来的是中村。",
+    "en": "「はじめて 来ました」 just echoes 「はじめ」; she's the one who is new."
+   },
+   {
+    "zh": "「お世話に なりました」是离职、告别时说的，她是今天才来。",
+    "en": "「お世話に なりました」 is for leaving; she's only just arrived."
+   },
+   null
+  ],
+  "traps": [
+   "repeat-word",
+   "timing"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-504",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "すみません、ここから 駅まで どのぐらい かかりますか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "あの かどを 右に まがって ください。",
+   "歩いて 10分ぐらいですね。",
+   "駅の 前に ありますよ。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "不好意思，从这里到车站要多长时间？"
+    ],
+    "options": [
+     "请在那个拐角向右拐。",
+     "走路十分钟左右吧。",
+     "在车站前面。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Excuse me, how long does it take from here to the station?"
+    ],
+    "options": [
+     "Turn right at that corner.",
+     "About ten minutes on foot.",
+     "It's in front of the station."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的问：「ここから 駅まで どのぐらい かかりますか。」\n推理：「どのぐらい かかりますか」问的是要多长时间，回答「歩いて 10分ぐらい」。\n容易错：回答怎么走、在哪里，都答非所问；「駅の 前」照搬了「駅」。",
+   "en": "Evidence: The woman asks 「ここから 駅まで どのぐらい かかりますか。」\nReasoning: 「どのぐらい かかりますか」 asks how long, so 「歩いて 10分ぐらい」.\nTrap: answering the way or the place instead; 「駅の 前」 echoes 「駅」."
+  },
+  "wrong": [
+   {
+    "zh": "说的是怎么走，她问的是要多长时间。",
+    "en": "That gives directions; she asked how long it takes."
+   },
+   null,
+   {
+    "zh": "说的是某个东西在车站前面，答非所问，只是照搬了「駅」。",
+    "en": "That says where something is — it doesn't answer, it just echoes 「駅」."
+   }
+  ],
+  "traps": [
+   "question-word",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-505",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "おさら 洗うの、手伝おうか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "うん、手伝って あげるね。",
+   "うん、洗って もらったよ。",
+   "ありがとう、たすかるよ。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "洗碗我来帮你吧？"
+    ],
+    "options": [
+     "嗯，我来帮你。",
+     "嗯，已经请人洗了。",
+     "谢谢，帮大忙了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Shall I help you wash the dishes?"
+    ],
+    "options": [
+     "Sure, I'll help you.",
+     "Yeah, I had them washed.",
+     "Thanks, that's a big help."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「おさら 洗うの、手伝おうか。」\n推理：「〜ようか」是主动提出帮忙，接受时道谢：「ありがとう、たすかるよ」。\n容易错：「手伝って あげる」是自己帮对方，立场反了；「洗って もらった」时态和意思都不对。",
+   "en": "Evidence: The man says 「おさら 洗うの、手伝おうか。」\nReasoning: 「〜ようか」 is an offer to help; accepting, you thank him: 「ありがとう、たすかるよ」.\nTrap: 「手伝って あげる」 has you helping him — reversed; 「洗って もらった」 is the wrong tense and meaning."
+  },
+  "wrong": [
+   {
+    "zh": "「手伝って あげる」是你帮对方，可是要帮忙的是男的。",
+    "en": "「手伝って あげる」 means you help him, but he's the one offering."
+   },
+   {
+    "zh": "「洗って もらった」是已经请别人洗了，和他的提议对不上。",
+    "en": "「洗って もらった」 says someone already washed them — it doesn't fit his offer."
+   },
+   null
+  ],
+  "traps": [
+   "intent",
+   "perspective",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-506",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "今度の 日曜日、ひま？"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "うん、あいてるよ。",
+   "うん、日曜日だよ。",
+   "ひまじゃ なかったよ。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这个星期天有空吗？"
+    ],
+    "options": [
+     "嗯，有空。",
+     "嗯，是星期天。",
+     "那时没空。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Are you free this coming Sunday?"
+    ],
+    "options": [
+     "Yeah, I'm free.",
+     "Yeah, it's Sunday.",
+     "I wasn't free."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的问：「今度の 日曜日、ひま？」\n推理：问有没有空，回答「うん、あいてるよ」（有空）。\n容易错：「日曜日だよ」照搬了「日曜日」，答非所问；「なかった」是过去式，问的是下个星期天。",
+   "en": "Evidence: The woman asks 「今度の 日曜日、ひま？」\nReasoning: She's asking if he's free, so 「うん、あいてるよ」.\nTrap: 「日曜日だよ」 echoes 「日曜日」 without answering; 「なかった」 is past, but she means the coming Sunday."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「日曜日だよ」只是照搬「日曜日」，没有回答有没有空。",
+    "en": "「日曜日だよ」 just echoes 「日曜日」 — it doesn't say whether he's free."
+   },
+   {
+    "zh": "「ひまじゃ なかった」是过去式，她问的是这个星期天。",
+    "en": "「ひまじゃ なかった」 is past tense; she means this coming Sunday."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "tense",
+   "intent"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-507",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "すみません、ちょっと この 電話、使っても いいですか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "ええ、どうぞ。使って ください。",
+   "はい、使って いただけますか。",
+   "いいえ、使いませんでした。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "不好意思，我可以用一下这部电话吗？"
+    ],
+    "options": [
+     "可以，请用吧。",
+     "好的，能请您用一下吗？",
+     "不，我没用过。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Excuse me, may I use this phone for a moment?"
+    ],
+    "options": [
+     "Sure, go ahead and use it.",
+     "Yes, could you use it, please?",
+     "No, I didn't use it."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的问：「この 電話、使っても いいですか。」\n推理：「〜ても いいですか」是请求许可，答应时说「ええ、どうぞ」。\n容易错：「使って いただけますか」是请对方用，意图反了；「使いませんでした」时态不对，答非所问。",
+   "en": "Evidence: The man asks 「この 電話、使っても いいですか。」\nReasoning: 「〜ても いいですか」 asks permission; granting it: 「ええ、どうぞ」.\nTrap: 「使って いただけますか」 asks him to use it — wrong intent; 「使いませんでした」 is past and off the point."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「使って いただけますか」是请对方用，可是他是在问能不能用。",
+    "en": "「使って いただけますか」 asks him to use it — but he's asking permission."
+   },
+   {
+    "zh": "「使いませんでした」是过去的事，答非所问。",
+    "en": "「使いませんでした」 talks about the past and doesn't answer."
+   }
+  ],
+  "traps": [
+   "intent",
+   "tense",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-508",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "山田さん、この 仕事、金曜日までに できそうですか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "いいえ、もう できて います。",
+   "はい、だいじょうぶです。",
+   "はい、金曜日でした。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "山田，这项工作星期五之前能完成吗？"
+    ],
+    "options": [
+     "不，已经做好了。",
+     "是的，没问题。",
+     "是的，是星期五来着。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Yamada-san, do you think you can finish this job by Friday?"
+    ],
+    "options": [
+     "No, it's already done.",
+     "Yes, that'll be fine.",
+     "Yes, it was Friday."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的问：「この 仕事、金曜日までに できそうですか。」\n推理：问星期五前能不能完成，回答「はい、だいじょうぶです」。\n容易错：「いいえ」后面接“已经做好了”，前后矛盾；「金曜日でした」照搬了「金曜日」，时态也不对。",
+   "en": "Evidence: The woman asks 「この 仕事、金曜日までに できそうですか。」\nReasoning: She asks whether he can finish by Friday: 「はい、だいじょうぶです」.\nTrap: 「いいえ」 followed by \"it's already done\" contradicts itself; 「金曜日でした」 echoes 「金曜日」 in the wrong tense."
+  },
+  "wrong": [
+   {
+    "zh": "「いいえ」是不能，后面却说已经做好了，前后矛盾。",
+    "en": "「いいえ」 says no, then it says it's already done — a contradiction."
+   },
+   null,
+   {
+    "zh": "「金曜日でした」只是照搬「金曜日」，没有回答能不能完成。",
+    "en": "「金曜日でした」 just echoes 「金曜日」 and doesn't say whether he can finish."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word",
+   "tense"
+  ]
+ }
+]

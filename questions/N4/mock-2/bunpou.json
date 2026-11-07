@@ -1,0 +1,696 @@
+[
+  {
+    "id": "n4-m2-101",
+    "type": "bunpou",
+    "refs": [
+      "lesson18#2"
+    ],
+    "difficulty": 2,
+    "stem": "部長、すみません。ねつが あるので、今日は 早く （　） いただけませんか。",
+    "options": [
+      "帰って",
+      "帰られて",
+      "帰らされて",
+      "帰らせて"
+    ],
+    "answer": 3,
+    "full": "部長、すみません。ねつが あるので、今日は 早く 帰らせて いただけませんか。",
+    "kj": "部長、すみません。熱があるので、今日は早く帰らせていただけませんか。",
+    "tr": {
+      "zh": "部长，不好意思。我发烧了，今天能让我早点回去吗？",
+      "en": "Excuse me, sir. I have a temperature — could I leave early today?"
+    },
+    "why": {
+      "zh": "线索：发烧的是我，我想早点走，要请部长允许。\n规则：请求对方允许自己做某事，用「使役形＋て いただけませんか」：「帰る」→「帰らせて いただけませんか」（请让我回去）。",
+      "en": "Clue: I'm the one with the fever and want to leave, so I ask the manager's permission.\nRule: Asking to be allowed to do something is causative ＋ 「て いただけませんか」: 「帰る」 → 「帰らせて いただけませんか」 (please let me go home)."
+    },
+    "wrong": [
+      {
+        "zh": "「帰って いただけませんか」是请部长回去，可发烧的是我。",
+        "en": "「帰って いただけませんか」 asks the manager to go home — but I'm the one with the fever."
+      },
+      {
+        "zh": "「帰られて」是被动（或尊敬），「帰られて いただく」不成立。",
+        "en": "「帰られて」 is passive (or honorific); 「帰られて いただく」 isn't a phrase."
+      },
+      {
+        "zh": "「帰らされて」是使役被动（被迫回去），不能用来请求。",
+        "en": "「帰らされて」 is causative-passive (made to go home); it can't make a request."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n4-m2-102",
+    "type": "bunpou",
+    "refs": [
+      "lesson22#5"
+    ],
+    "difficulty": 1,
+    "stem": "荷物は きのう 送ったので、あした 着く （　）です。",
+    "options": [
+      "はず",
+      "つもり",
+      "ところ",
+      "こと"
+    ],
+    "answer": 0,
+    "full": "荷物は きのう 送ったので、あした 着く はずです。",
+    "kj": "荷物は昨日送ったので、明日着くはずです。",
+    "tr": {
+      "zh": "包裹昨天寄出了，明天应该能到。",
+      "en": "I sent the parcel yesterday, so it should arrive tomorrow."
+    },
+    "why": {
+      "zh": "线索：「きのう 送ったので」是根据，说话人据此推断明天会到。\n规则：有根据地推断「应该……」，用「辞书形＋はずだ」：「着く はずです」。",
+      "en": "Clue: 「きのう 送ったので」 is the basis; from it the speaker infers it will arrive tomorrow.\nRule: A reasoned expectation, \"should\", is dictionary form ＋ 「はずだ」: 「着く はずです」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「つもり」是自己的打算，主语是「荷物」，包裹不会有打算。",
+        "en": "「つもり」 is a person's intention; a parcel can't intend anything."
+      },
+      {
+        "zh": "「着く ところです」是“正要到”，和「あした」不搭。",
+        "en": "「着く ところです」 is \"about to arrive right now\", which clashes with 「あした」."
+      },
+      {
+        "zh": "「着く ことです」不表示推断，句子说不通。",
+        "en": "「着く ことです」 doesn't express an expectation; the sentence makes no sense."
+      }
+    ]
+  },
+  {
+    "id": "n4-m2-103",
+    "type": "bunpou",
+    "refs": [
+      "lesson23#2"
+    ],
+    "difficulty": 2,
+    "stem": "A「もしもし、今 だいじょうぶ？」\nB「ごめん、今 ばんごはんを 食べて いる （　）なんだ。あとで かけなおすね。」",
+    "options": [
+      "ところ",
+      "ばかり",
+      "はず",
+      "つもり"
+    ],
+    "answer": 0,
+    "full": "A「もしもし、今 だいじょうぶ？」 B「ごめん、今 ばんごはんを 食べて いる ところなんだ。あとで かけなおすね。」",
+    "kj": "A「もしもし、今大丈夫？」\nB「ごめん、今晩ご飯を食べているところなんだ。後でかけ直すね。」",
+    "tr": {
+      "zh": "A：喂，现在方便吗？ B：抱歉，我正在吃晚饭呢。待会儿我打回给你。",
+      "en": "A: Hello, is now a good time? B: Sorry, I'm in the middle of dinner. I'll call you back."
+    },
+    "why": {
+      "zh": "线索：「今」＋「食べて いる」，说的是此刻正在做的事，所以没法接电话。\n规则：「〜て いる ところだ」＝正在做……（强调此刻处在动作当中）；「〜る ところ」是正要做，「〜た ところ」是刚做完。",
+      "en": "Clue: 「今」 ＋ 「食べて いる」 — what B is doing at this very moment, so B can't talk.\nRule: 「〜て いる ところだ」 is \"right in the middle of\"; 「〜る ところ」 is \"about to\", 「〜た ところ」 \"just did\"."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ばかり」接「た形」表示刚刚，不接「て いる」。",
+        "en": "「ばかり」 for \"just did\" follows the た-form, not 「て いる」."
+      },
+      {
+        "zh": "「はず」是推断别人或事情，说自己此刻正在做的事不用「はず」。",
+        "en": "「はず」 is an inference about others or things; you don't use it for what you're doing right now."
+      },
+      {
+        "zh": "「〜て いる つもり」是“自以为在做”，和不能接电话接不上。",
+        "en": "「〜て いる つもり」 is \"I believe I'm doing\"; it doesn't explain why B can't talk."
+      }
+    ]
+  },
+  {
+    "id": "n4-m2-104",
+    "type": "bunpou",
+    "refs": [
+      "lesson24#2"
+    ],
+    "difficulty": 2,
+    "stem": "会議室の ドアに「使用中」と 書いて （　）から、今は 入らない ほうが いいですよ。",
+    "options": [
+      "おきます",
+      "みます",
+      "しまいます",
+      "あります"
+    ],
+    "answer": 3,
+    "full": "会議室の ドアに「使用中」と 書いて ありますから、今は 入らない ほうが いいですよ。",
+    "kj": "会議室のドアに「使用中」と書いてありますから、今は入らないほうがいいですよ。",
+    "tr": {
+      "zh": "会议室门上写着“使用中”，现在最好别进去。",
+      "en": "The meeting room door says \"In use\", so you'd better not go in now."
+    },
+    "why": {
+      "zh": "线索：门上已经写着字，说话人看到这个结果，劝对方别进去。\n规则：有人有意做了某事、结果留在那里，用「他动词て形＋ある」：「書いて ある」（写着）。",
+      "en": "Clue: the words are already on the door; the speaker sees them and advises not going in.\nRule: The visible result of something someone did on purpose is transitive て-form ＋ 「ある」: 「書いて ある」 (is written)."
+    },
+    "wrong": [
+      {
+        "zh": "「書いて おきます」是我事先写好，还没写，就不能当作现在别进的理由。",
+        "en": "「書いて おきます」 is \"I'll write it in advance\" — not yet there, so it can't be the reason to stay out now."
+      },
+      {
+        "zh": "「書いて みます」是试着写，和劝别人别进去接不上。",
+        "en": "「書いて みます」 is \"I'll try writing\"; it doesn't support the advice."
+      },
+      {
+        "zh": "「書いて しまいます」是写完（或不小心写了），不能说明门上现在的状态。",
+        "en": "「書いて しまいます」 is finishing writing (or doing it by mistake); it doesn't describe the door now."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n4-m2-105",
+    "type": "bunpou",
+    "refs": [
+      "lesson25#1"
+    ],
+    "difficulty": 1,
+    "stem": "駅の 近くに「さくら」（　） 名前の きっさてんが あります。",
+    "options": [
+      "という",
+      "として",
+      "といえば",
+      "といって"
+    ],
+    "answer": 0,
+    "full": "駅の 近くに「さくら」という 名前の きっさてんが あります。",
+    "kj": "駅の近くに「さくら」という名前の喫茶店があります。",
+    "tr": {
+      "zh": "车站附近有一家名叫“樱花”的咖啡馆。",
+      "en": "Near the station there's a café called \"Sakura\"."
+    },
+    "why": {
+      "zh": "线索：「さくら」是名字，后面紧接名词「名前」。\n规则：说出名称再接名词，用「〜という＋名词」：「さくらという 名前」「田中という 人」。",
+      "en": "Clue: 「さくら」 is a name, followed directly by the noun 「名前」.\nRule: A name followed by a noun takes 「〜という」 ＋ noun: 「さくらという 名前」, 「田中という 人」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「として」是“作为……”，后面不能直接接名词「名前」。",
+        "en": "「として」 is \"as (a role)\"; it can't link straight to the noun 「名前」."
+      },
+      {
+        "zh": "「といえば」是“说到……”，用来引出话题，不能修饰名词。",
+        "en": "「といえば」 is \"speaking of\", which opens a topic; it can't modify a noun."
+      },
+      {
+        "zh": "「といって」是て形，后面不能直接接名词「名前」。",
+        "en": "「といって」 is a て-form; it can't link straight to the noun 「名前」."
+      }
+    ]
+  },
+  {
+    "id": "n4-m2-106",
+    "type": "bunpou",
+    "refs": [
+      "lesson26#1"
+    ],
+    "difficulty": 2,
+    "stem": "A「リンさんは 子どもの とき、10年も 日本に 住んで いたそうですよ。」\nB「そうですか。だから 日本語が 上手な （　）ね。」",
+    "options": [
+      "ことです",
+      "わけです",
+      "ためです",
+      "ところです"
+    ],
+    "answer": 1,
+    "full": "A「リンさんは 子どもの とき、10年も 日本に 住んで いたそうですよ。」 B「そうですか。だから 日本語が 上手な わけですね。」",
+    "kj": "A「リンさんは子供の時、10年も日本に住んでいたそうですよ。」\nB「そうですか。だから日本語が上手なわけですね。」",
+    "tr": {
+      "zh": "A：听说林先生小时候在日本住了十年。 B：是吗，难怪他日语那么好。",
+      "en": "A: Apparently Lin lived in Japan for ten years as a child. B: Really? No wonder his Japanese is so good."
+    },
+    "why": {
+      "zh": "线索：B 听到原因后用「だから」，表示“原来如此”。\n规则：从已知的原因得出理所当然的结果，用「だから〜わけだ」（难怪……）；な形容词接「な」：「上手な わけです」。",
+      "en": "Clue: B hears the reason and says 「だから」 — \"that explains it\".\nRule: A result that follows naturally from a known reason is 「だから〜わけだ」 (no wonder); な-adjectives take な: 「上手な わけです」."
+    },
+    "wrong": [
+      {
+        "zh": "「上手な ことです」不表示“难怪”，和「だから」接不上。",
+        "en": "「上手な ことです」 doesn't mean \"no wonder\" and doesn't fit 「だから」."
+      },
+      null,
+      {
+        "zh": "「ためです」说的是原因（「〜は …ためです」），这里原因已经在「だから」里了。",
+        "en": "「ためです」 states a cause (「〜は …ためです」); here the cause is already given by 「だから」."
+      },
+      {
+        "zh": "「ところです」表示动作的阶段，不能接在形容词「上手な」后面。",
+        "en": "「ところです」 marks a stage of an action; it doesn't follow the adjective 「上手な」."
+      }
+    ]
+  },
+  {
+    "id": "n4-m2-107",
+    "type": "bunpou",
+    "refs": [
+      "lesson26#2"
+    ],
+    "difficulty": 3,
+    "stem": "あしたの 会議では わたしが 発表するので、少し ねつが あっても 休む （　）。",
+    "options": [
+      "ように して います",
+      "ばかりでは ありません",
+      "ところでは ありません",
+      "わけには いきません"
+    ],
+    "answer": 3,
+    "full": "あしたの 会議では わたしが 発表するので、少し ねつが あっても 休む わけには いきません。",
+    "kj": "明日の会議では私が発表するので、少し熱があっても休むわけにはいきません。",
+    "tr": {
+      "zh": "明天的会议由我发言，所以就算有点发烧也不能请假。",
+      "en": "I'm presenting at tomorrow's meeting, so I can't take the day off even with a slight fever."
+    },
+    "why": {
+      "zh": "线索：「わたしが 発表するので」是不能请假的理由，「〜ても」是“即使……也”。\n规则：因为责任、情况而不能那样做，用「辞书形＋わけには いかない」：「休む わけには いきません」。\n辨析：「休めません」只说做不到；「わけには いかない」强调按道理、责任不能那样做。",
+      "en": "Clue: 「わたしが 発表するので」 is why I can't be off; 「〜ても」 is \"even if\".\nRule: Not being able to do something because of duty or circumstances is dictionary form ＋ 「わけには いかない」: 「休む わけには いきません」.\nContrast: 「休めません」 just says it's impossible; 「わけには いかない」 says duty or common sense rules it out."
+    },
+    "wrong": [
+      {
+        "zh": "「休む ように して います」是“尽量休息”，和要发言、不能缺席的理由矛盾。",
+        "en": "「休む ように して います」 is \"I make a point of resting\", which contradicts having to present."
+      },
+      {
+        "zh": "「休む ばかりでは ありません」（不只是休息）意思接不上。",
+        "en": "「休む ばかりでは ありません」 (\"not only rest\") makes no sense here."
+      },
+      {
+        "zh": "没有「〜ところでは ありません」这种说法，「ところ」接辞书形是“正要……”。",
+        "en": "「〜ところでは ありません」 isn't a pattern; 「ところ」 after the dictionary form means \"about to\"."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n4-m2-108",
+    "type": "bunpou",
+    "refs": [
+      "lesson27#3"
+    ],
+    "difficulty": 2,
+    "stem": "A「あれ、部長は？」\nB「部長は さっき お帰りに （　）よ。」",
+    "options": [
+      "なりました",
+      "しました",
+      "いたしました",
+      "いただきました"
+    ],
+    "answer": 0,
+    "full": "A「あれ、部長は？」 B「部長は さっき お帰りに なりましたよ。」",
+    "kj": "A「あれ、部長は？」\nB「部長はさっきお帰りになりましたよ。」",
+    "tr": {
+      "zh": "A：咦，部长呢？ B：部长刚才回去了。",
+      "en": "A: Huh, where's the manager? B: He went home a little while ago."
+    },
+    "why": {
+      "zh": "线索：做「帰る」这个动作的是「部長」（上司），同事之间谈论上司，要抬高他。\n规则：尊敬语的通用形式是「お＋ます形＋に なる」：「帰ります」→「お帰りに なります」。",
+      "en": "Clue: the one who 「帰る」 is 「部長」, the boss; colleagues talking about him raise him up.\nRule: The general honorific form is 「お」 ＋ ます-stem ＋ 「に なる」: 「帰ります」 → 「お帰りに なります」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "谦让语是「お＋ます形＋する」，没有「に」，而且不能用来说上司的动作。",
+        "en": "The humble form is 「お」 ＋ stem ＋ 「する」 with no 「に」 — and it's never used for the boss's actions."
+      },
+      {
+        "zh": "「いたす」是「する」的谦让语，「お帰りに いたす」不成立。",
+        "en": "「いたす」 is humble 「する」; 「お帰りに いたす」 isn't a form."
+      },
+      {
+        "zh": "「いただく」是“得到”，「お帰りに いただく」不成立。",
+        "en": "「いただく」 is \"receive\"; 「お帰りに いただく」 isn't a form."
+      }
+    ]
+  },
+  {
+    "id": "n4-m2-109",
+    "type": "bunpou",
+    "refs": [
+      "lesson28#1",
+      "lesson27#2"
+    ],
+    "difficulty": 3,
+    "stem": "学生「先生が 書かれた 本を （　）。とても おもしろかったです。」\n先生「そうですか。ありがとう。」",
+    "options": [
+      "ごらんしました",
+      "はいけんしました",
+      "はいけんに なりました",
+      "ごらんに なりました"
+    ],
+    "okj": [
+      null,
+      "拝見しました",
+      null,
+      "ご覧になりました"
+    ],
+    "answer": 1,
+    "full": "学生「先生が 書かれた 本を はいけんしました。とても おもしろかったです。」 先生「そうですか。ありがとう。」",
+    "kj": "学生「先生が書かれた本を拝見しました。とても面白かったです。」\n先生「そうですか。ありがとう。」",
+    "tr": {
+      "zh": "学生：我拜读了老师您写的书，非常有意思。 老师：是吗，谢谢。",
+      "en": "Student: I read the book you wrote, sir. It was really interesting. Teacher: Oh? Thank you."
+    },
+    "why": {
+      "zh": "线索：读书的是学生自己（后面「とても おもしろかったです」是自己的感想），对象是老师的书。\n规则：自己的动作对长辈表示谦虚，用谦让语：「見る」→「はいけんする」；「ごらんに なる」是尊敬语，用于对方的动作。",
+      "en": "Clue: the student is the one who read it (「とても おもしろかったです」 is their own reaction), and it's the teacher's book.\nRule: For your own action toward a superior, use the humble form: 「見る」 → 「はいけんする」; 「ごらんに なる」 is honorific, for the other person's action."
+    },
+    "wrong": [
+      {
+        "zh": "「ごらん」后面接「に なる」，没有「ごらんする」这种说法。",
+        "en": "「ごらん」 takes 「に なる」; 「ごらんする」 isn't a form."
+      },
+      null,
+      {
+        "zh": "「はいけん」只能加「する」，没有「はいけんに なる」。",
+        "en": "「はいけん」 only takes 「する」; 「はいけんに なる」 isn't a form."
+      },
+      {
+        "zh": "「ごらんに なる」是尊敬语，会变成抬高自己的动作，不对。",
+        "en": "「ごらんに なる」 is honorific — it would raise the student's own action."
+      }
+    ]
+  },
+  {
+    "id": "n4-m2-110",
+    "type": "bunpou",
+    "refs": [
+      "lesson30#2"
+    ],
+    "difficulty": 2,
+    "stem": "すみません、部屋の 中では たばこを すわないで （　）んですが……。",
+    "options": [
+      "もらう",
+      "ほしがる",
+      "ほしい",
+      "くれる"
+    ],
+    "answer": 2,
+    "full": "すみません、部屋の 中では たばこを すわないで ほしいんですが……。",
+    "kj": "すみません、部屋の中ではたばこを吸わないでほしいんですが……。",
+    "tr": {
+      "zh": "不好意思，希望您别在房间里抽烟……",
+      "en": "Excuse me, I'd rather you didn't smoke inside the room..."
+    },
+    "why": {
+      "zh": "线索：「すみません」开头，是说话人委婉地向对方提出希望。\n规则：希望别人做（或不做）某事，用「〜て ほしい／〜ないで ほしい」；后面加「んですが……」更客气。",
+      "en": "Clue: it opens with 「すみません」 — the speaker is politely telling the listener what they'd like.\nRule: Wanting someone else to do (or not do) something is 「〜て ほしい」 / 「〜ないで ほしい」; 「んですが……」 softens it."
+    },
+    "wrong": [
+      {
+        "zh": "「すわないで もらうんですが」说不通，表示希望要用「もらいたい」。",
+        "en": "「すわないで もらうんですが」 makes no sense; a wish would be 「もらいたい」."
+      },
+      {
+        "zh": "「ほしがる」用于第三人称的愿望，这里是说话人自己的希望。",
+        "en": "「ほしがる」 is for a third person's wishes; this is the speaker's own."
+      },
+      null,
+      {
+        "zh": "「すわないで くれるんですが」说不通，请求要用「くれませんか」。",
+        "en": "「すわないで くれるんですが」 makes no sense; a request would be 「くれませんか」."
+      }
+    ]
+  },
+  {
+    "id": "n4-m2-111",
+    "type": "bunpou",
+    "refs": [
+      "lesson30#3"
+    ],
+    "difficulty": 1,
+    "stem": "日本に 来て 3年に なります。日本の 生活にも だんだん なれて （　）。",
+    "options": [
+      "おきました",
+      "きました",
+      "いきました",
+      "ありました"
+    ],
+    "answer": 1,
+    "full": "日本に 来て 3年に なります。日本の 生活にも だんだん なれて きました。",
+    "kj": "日本に来て3年になります。日本の生活にもだんだん慣れてきました。",
+    "tr": {
+      "zh": "来日本已经三年了，对日本的生活也渐渐习惯了。",
+      "en": "It's been three years since I came to Japan, and I've gradually got used to life here."
+    },
+    "why": {
+      "zh": "线索：「3年に なります」＋「だんだん」，是从过去到现在慢慢发生的变化。\n规则：从过去持续变化到现在，用「〜て くる」：「なれて きました」；从现在往将来变化用「〜て いく」。",
+      "en": "Clue: 「3年に なります」 ＋ 「だんだん」 — a change that has built up from the past to now.\nRule: Change from the past up to now is 「〜て くる」: 「なれて きました」; change from now into the future is 「〜て いく」."
+    },
+    "wrong": [
+      {
+        "zh": "「〜て おく」是事先做好准备，「なれて おきました」意思不对。",
+        "en": "「〜て おく」 is doing something in advance; 「なれて おきました」 doesn't fit."
+      },
+      null,
+      {
+        "zh": "「〜て いく」是从现在往后的变化，这里说的是到现在为止。",
+        "en": "「〜て いく」 is change from now on; this is change up to now."
+      },
+      {
+        "zh": "「〜て ある」要接他动词，「なれる」不能这样用。",
+        "en": "「〜て ある」 needs a transitive verb; 「なれる」 can't take it."
+      }
+    ]
+  },
+  {
+    "id": "n4-m2-112",
+    "type": "bunpou",
+    "refs": [
+      "lesson32#5"
+    ],
+    "difficulty": 2,
+    "stem": "夜中に 台所で へんな 音が （　）ので、見に 行きました。",
+    "options": [
+      "あった",
+      "した",
+      "見えた",
+      "聞いた"
+    ],
+    "answer": 1,
+    "full": "夜中に 台所で へんな 音が したので、見に 行きました。",
+    "kj": "夜中に台所で変な音がしたので、見に行きました。",
+    "tr": {
+      "zh": "半夜厨房里传来奇怪的声音，所以我去看了看。",
+      "en": "There was a strange noise in the kitchen in the middle of the night, so I went to look."
+    },
+    "why": {
+      "zh": "线索：「音が」＋空格，说的是听到了声音。\n规则：声音、气味、味道等被感觉到，用「〜が する」：「音が する」「においが する」「あじが する」。",
+      "en": "Clue: 「音が」 ＋ blank — a sound was heard.\nRule: Sounds, smells and tastes that you sense take 「〜が する」: 「音が する」, 「においが する」, 「あじが する」."
+    },
+    "wrong": [
+      {
+        "zh": "听到声音不说「音が ある」，要说「音が する」。",
+        "en": "Hearing a noise isn't 「音が ある」; it's 「音が する」."
+      },
+      null,
+      {
+        "zh": "「見える」说的是看得见，声音不能「見えた」，要用耳朵听。",
+        "en": "「見える」 is about seeing; a sound can't be 「見えた」."
+      },
+      {
+        "zh": "「聞く」前面要用「を」（「音を 聞いた」），不能用「音が」。",
+        "en": "「聞く」 takes を (「音を 聞いた」), not 「音が」."
+      }
+    ]
+  },
+  {
+    "id": "n4-m2-113",
+    "type": "bunpou",
+    "refs": [
+      "lesson33#4"
+    ],
+    "difficulty": 1,
+    "stem": "じしんや 火事の （　）は、エレベーターを 使わないで ください。",
+    "options": [
+      "ところ",
+      "場合",
+      "うち",
+      "ほう"
+    ],
+    "okj": [
+      null,
+      "場合",
+      null,
+      null
+    ],
+    "answer": 1,
+    "full": "じしんや 火事の 場合は、エレベーターを 使わないで ください。",
+    "kj": "地震や火事の場合は、エレベーターを使わないでください。",
+    "tr": {
+      "zh": "发生地震或火灾时，请不要使用电梯。",
+      "en": "In the event of an earthquake or fire, please don't use the lifts."
+    },
+    "why": {
+      "zh": "线索：「じしんや 火事」是可能发生的情况，后面是这时该怎么做。\n规则：「名词＋の 場合は」＝如果发生……的情况；常用于说明、通知：「雨の 場合は 中止です」。",
+      "en": "Clue: 「じしんや 火事」 are situations that might happen, followed by what to do then.\nRule: Noun ＋ 「の 場合は」 is \"in case of\"; common in notices: 「雨の 場合は 中止です」."
+    },
+    "wrong": [
+      {
+        "zh": "「火事の ところ」是火灾的地方（地点），和后面的注意事项接不上。",
+        "en": "「火事の ところ」 is the place of a fire, which doesn't fit the instruction."
+      },
+      null,
+      {
+        "zh": "「〜の うちは」要接一段时间（「若い うちは」），「火事の うちは」不自然。",
+        "en": "「〜の うちは」 needs a period of time (「若い うちは」); 「火事の うちは」 isn't natural."
+      },
+      {
+        "zh": "「ほう」用于比较或方向，「火事の ほうは」意思不对。",
+        "en": "「ほう」 is for comparison or direction; 「火事の ほうは」 doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n4-m2-114",
+    "type": "narabe",
+    "refs": [
+      "lesson32#3"
+    ],
+    "difficulty": 2,
+    "stem": "となりの 家では [_] [_] [★] [_] ねこを かって います。",
+    "options": [
+      "ように",
+      "の",
+      "雪",
+      "白い"
+    ],
+    "order": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "full": "となりの 家では 雪の ように 白い ねこを かって います。",
+    "kj": "隣の家では雪のように白い猫を飼っています。",
+    "tr": {
+      "zh": "邻居家养了一只像雪一样白的猫。",
+      "en": "The family next door keeps a cat as white as snow."
+    },
+    "why": {
+      "zh": "线索：碎片有「の」「ように」，能组成比喻「〜の ように」（像……一样）。\n怎么排：「名词＋の ように」修饰后面的形容词「白い」，「白い」再修饰「ねこ」，所以「白い」紧贴「ねこ」。顺序：雪 → の → ように → 白い，★ 是「ように」。\n容易错：把「白い」放到「雪」前面。比喻部分「雪の ように」要放在被修饰的「白い」前面。",
+      "en": "Clue: The pieces 「の」「ように」 form the simile 「〜の ように」 (like ~).\nOrder: 「noun ＋ の ように」 modifies the adjective 「白い」, and 「白い」 modifies 「ねこ」, so 「白い」 sits right before 「ねこ」: 雪 → の → ように → 白い. The ★ is 「ように」.\nTrap: Putting 「白い」 before 「雪」. The comparison 「雪の ように」 comes before the word it describes, 「白い」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-m2-115",
+    "type": "narabe",
+    "refs": [
+      "lesson31#3"
+    ],
+    "difficulty": 1,
+    "stem": "かんたんな テストだから、[★] [_] [_] [_] よ。",
+    "options": [
+      "ない",
+      "勉強する",
+      "ことは",
+      "夜 おそくまで"
+    ],
+    "order": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "full": "かんたんな テストだから、夜 おそくまで 勉強する ことは ないよ。",
+    "kj": "簡単なテストだから、夜遅くまで勉強することはないよ。",
+    "tr": {
+      "zh": "是很简单的考试，没必要学到深夜。",
+      "en": "It's an easy test, so there's no need to study late into the night."
+    },
+    "why": {
+      "zh": "线索：「ことは」「ない」能组成「〜ことは ない」（没必要……），前面「かんたんな テストだから」是理由。\n怎么排：「ことは ない」前面接辞书形「勉強する」；「夜 おそくまで」修饰「勉強する」，放在它前面。顺序：夜 おそくまで → 勉強する → ことは → ない，★ 是「夜 おそくまで」。\n容易错：把「ない」放在「ことは」前面。固定说法是「ことは ない」，中间不插别的词。",
+      "en": "Clue: 「ことは」「ない」 form 「〜ことは ない」 (no need to), and 「かんたんな テストだから」 gives the reason.\nOrder: 「ことは ない」 follows the dictionary form 「勉強する」; 「夜 おそくまで」 modifies 「勉強する」 and goes before it: 夜 おそくまで → 勉強する → ことは → ない. The ★ is 「夜 おそくまで」.\nTrap: Putting 「ない」 before 「ことは」. The set phrase is 「ことは ない」, with nothing in between."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-m2-116",
+    "type": "narabe",
+    "refs": [
+      "lesson33#5"
+    ],
+    "difficulty": 2,
+    "stem": "A「さいきん、夜 よく ねむれないんです。」\nB「ねる 前に [_] [_] [_] [★] ですか。」",
+    "options": [
+      "あたたかい ミルクを",
+      "飲んで",
+      "みたら",
+      "どう"
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full": "A「さいきん、夜 よく ねむれないんです。」 B「ねる 前に あたたかい ミルクを 飲んで みたら どうですか。」",
+    "kj": "A「最近、夜よく眠れないんです。」\nB「寝る前に温かいミルクを飲んでみたらどうですか。」",
+    "tr": {
+      "zh": "A：最近晚上总睡不好。 B：睡前喝点热牛奶试试怎么样？",
+      "en": "A: I can't sleep well at night lately. B: Why not try drinking some warm milk before bed?"
+    },
+    "why": {
+      "zh": "线索：「みたら」「どう」和句末「ですか」组成建议「〜たら どうですか」（……怎么样）。\n怎么排：「飲んで＋みたら」连成「飲んで みたら」（试着喝）；宾语「あたたかい ミルクを」放在「飲んで」前；「どう」接在「たら」后面、「ですか」前面。顺序：あたたかい ミルクを → 飲んで → みたら → どう，★ 是「どう」。\n容易错：把「どう」放到前面。「どう」紧挨句末的「ですか」。",
+      "en": "Clue: 「みたら」「どう」 and the final 「ですか」 make the suggestion 「〜たら どうですか」 (why not ~).\nOrder: 「飲んで」 ＋ 「みたら」 join as 「飲んで みたら」 (try drinking); the object 「あたたかい ミルクを」 goes before 「飲んで」; 「どう」 follows 「たら」 and comes right before 「ですか」: あたたかい ミルクを → 飲んで → みたら → どう. The ★ is 「どう」.\nTrap: Moving 「どう」 forward. It belongs right before the final 「ですか」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n4-m2-117",
+    "type": "narabe",
+    "refs": [
+      "lesson33#3"
+    ],
+    "difficulty": 3,
+    "stem": "この 町の バスは [_] [★] [_] [_]、とても べんりです。",
+    "options": [
+      "10分",
+      "来る",
+      "おきに",
+      "ので"
+    ],
+    "order": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "full": "この 町の バスは 10分 おきに 来るので、とても べんりです。",
+    "kj": "この町のバスは10分おきに来るので、とても便利です。",
+    "tr": {
+      "zh": "这个城镇的公交车每隔十分钟来一班，非常方便。",
+      "en": "The buses in this town come every ten minutes, so they're very convenient."
+    },
+    "why": {
+      "zh": "线索：「おきに」前面要接表示间隔的时间或距离：「10分 おきに」（每隔十分钟）。\n怎么排：「10分＋おきに」连在一起修饰动词「来る」；「ので」接在动词后面，引出「べんりです」。顺序：10分 → おきに → 来る → ので，★ 是「おきに」。\n容易错：把「おきに」放在「10分」前面。「おきに」总是接在数量后面。",
+      "en": "Clue: 「おきに」 follows an interval of time or distance: 「10分 おきに」 (every ten minutes).\nOrder: 「10分」 ＋ 「おきに」 join and modify the verb 「来る」; 「ので」 follows the verb and leads to 「べんりです」: 10分 → おきに → 来る → ので. The ★ is 「おきに」.\nTrap: Putting 「おきに」 before 「10分」. 「おきに」 always comes after the number."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

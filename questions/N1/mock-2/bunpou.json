@@ -1,0 +1,582 @@
+[
+  {
+    "id": "n1-m2-101",
+    "type": "bunpou",
+    "refs": [
+      "lesson76#3"
+    ],
+    "difficulty": 2,
+    "stem": "父は玄関のドアを開ける（　）、「誰だ、こんな所に自転車を置いたのは」と怒鳴った。",
+    "options": [
+      "なり",
+      "かたわら",
+      "そばから",
+      "がてら"
+    ],
+    "answer": 0,
+    "full": "父は玄関のドアを開けるなり、「誰だ、こんな所に自転車を置いたのは」と怒鳴った。",
+    "tr": {
+      "zh": "父亲一打开玄关的门，就吼道：“是谁把自行车放在这儿的！”",
+      "en": "The moment he opened the front door, my father roared, \"Who left a bicycle here?\""
+    },
+    "why": {
+      "zh": "线索：「ドアを開ける」之后紧接着「怒鳴った」，一个动作刚做完，马上出现另一个举动。\n规则：「动词辞书形＋なり」＝一……就……；后项多是出人意料的举动，前后主语相同，用于叙述过去的事。\n辨析：「そばから」＝刚……就又……，用于反复发生的事：「片付けるそばから子どもが散らかす」；这里是一次性的动作，用「なり」。",
+      "en": "Clue: 「ドアを開ける」 followed at once by 「怒鳴った」 — one action straight after another.\nRule: Dictionary form ＋ 「なり」 = as soon as…; the second action is often startling, both halves have the same subject, and it narrates the past.\nContrast: 「そばから」 is \"no sooner… than again\" for repeated events: 「片付けるそばから子どもが散らかす」. A single action takes 「なり」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「かたわら」是“在……之余（同时从事另一件事）”，表示长期并行，不表示“一……就……”。",
+        "en": "「かたわら」 is doing something alongside one's main work over time, not \"as soon as\"."
+      },
+      {
+        "zh": "「そばから」用于反复发生、令人无奈的事，这里只是一次的动作。",
+        "en": "「そばから」 is for something that keeps happening; this happens once."
+      },
+      {
+        "zh": "「がてら」是“顺便”，接名词或ます形词干（「散歩がてら」），也不表示“一……就……”。",
+        "en": "「がてら」 is \"while at it\", after a noun or ます stem (「散歩がてら」), not \"as soon as\"."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-102",
+    "type": "bunpou",
+    "refs": [
+      "lesson77#4"
+    ],
+    "difficulty": 1,
+    "stem": "この村には、コンビニ（　）、信号機さえ一つもない。",
+    "options": [
+      "もさることながら",
+      "はおろか",
+      "にとどまらず",
+      "をおいて"
+    ],
+    "answer": 1,
+    "full": "この村には、コンビニはおろか、信号機さえ一つもない。",
+    "tr": {
+      "zh": "这个村子别说便利店了，连一个红绿灯都没有。",
+      "en": "This village doesn't even have a single traffic light, let alone a convenience store."
+    },
+    "why": {
+      "zh": "线索：后半句是「信号機さえ一つもない」，用「さえ」和否定说“连……都没有”。\n规则：「AはおろかBさえ／もない」＝别说A，就连B也没有；A是程度更高、更不可能的事，后项多为否定或负面。\n辨析：「もさることながら」＝A固然……B更……，用于肯定的评价：「味もさることながら、店の雰囲気がいい」。",
+      "en": "Clue: The second half is 「信号機さえ一つもない」 — 「さえ」 with a negative: not even.\nRule: 「AはおろかBさえ／もない」 = not even B, let alone A; A is the bigger, less likely thing, and the clause is usually negative.\nContrast: 「もさることながら」 is \"A, of course, but B even more\", for positive judgments: 「味もさることながら、店の雰囲気がいい」."
+    },
+    "wrong": [
+      {
+        "zh": "「もさることながら」用于肯定评价（A固然好，B更好），不和「さえ一つもない」这种否定搭配。",
+        "en": "「もさることながら」 is for praise (A, and B even more); it doesn't fit a 「さえ…ない」 negative."
+      },
+      null,
+      {
+        "zh": "「にとどまらず」是“不止于……（范围扩大）”，后面接范围扩大的肯定内容，不说“连……都没有”。",
+        "en": "「にとどまらず」 is \"not limited to\", widening the scope; it doesn't lead into \"not even\"."
+      },
+      {
+        "zh": "「をおいて」要和「ほかに〜ない」搭配，表示“非……莫属”，意思不通。",
+        "en": "「をおいて」 pairs with 「ほかに〜ない」 (none but); the meaning doesn't fit."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-103",
+    "type": "bunpou",
+    "refs": [
+      "lesson78#4"
+    ],
+    "difficulty": 2,
+    "stem": "理由が何（　）、無断で仕事を休むことは許されない。",
+    "options": [
+      "といい",
+      "だの",
+      "であれ",
+      "なり"
+    ],
+    "answer": 2,
+    "full": "理由が何であれ、無断で仕事を休むことは許されない。",
+    "tr": {
+      "zh": "不管理由是什么，擅自缺勤都是不被允许的。",
+      "en": "Whatever the reason, taking time off work without notice is not acceptable."
+    },
+    "why": {
+      "zh": "线索：前面有疑问词「何」，后面是「許されない」，表示不管什么理由结论都一样。\n规则：「疑问词＋であれ」＝无论……（结论都不变），书面语，相当于「〜でも」「〜であろうと」。\n辨析：「といい」要成对使用「AといいBといい」，列举两个例子来评价，不能接疑问词。",
+      "en": "Clue: The question word 「何」 comes before the blank, and 「許されない」 after — the conclusion holds whatever the reason.\nRule: Question word ＋ 「であれ」 = whatever…, the outcome doesn't change; written style, like 「〜でも」 or 「〜であろうと」.\nContrast: 「といい」 comes in pairs, 「AといいBといい」, citing two examples; it can't follow a question word."
+    },
+    "wrong": [
+      {
+        "zh": "「といい」要用「AといいBといい」列举具体例子，不和疑问词「何」搭配。",
+        "en": "「といい」 lists concrete examples as 「AといいBといい」; it doesn't go with 「何」."
+      },
+      {
+        "zh": "「だの」用于列举（「AだのBだの」）表示不满，不能接在疑问词后表示“无论”。",
+        "en": "「だの」 lists things with annoyance (「AだのBだの」); it doesn't mean \"whatever\" after a question word."
+      },
+      null,
+      {
+        "zh": "「なり」表示“或……或……”要成对出现（「AなりBなり」），「何なり」是“什么都（可以）”，不表示让步。",
+        "en": "「なり」 (\"either… or\") comes in pairs; 「何なり」 means \"anything at all\", not \"whatever the reason\"."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-104",
+    "type": "bunpou",
+    "refs": [
+      "lesson79#4"
+    ],
+    "difficulty": 2,
+    "stem": "彼は重さ三十キロ（　）米袋を、軽々と肩に担いで運んだ。",
+    "options": [
+      "にして",
+      "からある",
+      "すら",
+      "あっての"
+    ],
+    "answer": 1,
+    "full": "彼は重さ三十キロからある米袋を、軽々と肩に担いで運んだ。",
+    "tr": {
+      "zh": "足有三十公斤重的米袋，他轻轻松松地扛在肩上运走了。",
+      "en": "He swung a rice sack weighing a good thirty kilos onto his shoulder and carried it off with ease."
+    },
+    "why": {
+      "zh": "线索：前面是数量「三十キロ」，后面修饰名词「米袋」，并用「軽々と」突出其重。\n规则：「数量＋からある＋名词」＝足有……之多（强调数量大）；重量、长度用「からある」，价格用「からする」。\n辨析：「にして」接在名词后表示“到了……才”「五十歳にして初めて」，不能修饰名词。",
+      "en": "Clue: A quantity, 「三十キロ」, modifying the noun 「米袋」, with 「軽々と」 stressing the weight.\nRule: Quantity ＋ 「からある」 ＋ noun = a full…, stressing how much; 「からある」 for weight or length, 「からする」 for price.\nContrast: 「にして」 after a noun means \"only at…\" (「五十歳にして初めて」); it can't modify a noun."
+    },
+    "wrong": [
+      {
+        "zh": "「にして」表示“到了……（阶段）才”，后面不能直接接名词「米袋」。",
+        "en": "「にして」 means \"only at that stage\"; it can't lead straight into the noun 「米袋」."
+      },
+      null,
+      {
+        "zh": "「すら」是“连……都”，不能直接接名词作定语，意思也不通。",
+        "en": "「すら」 is \"even\"; it can't modify a noun, and the meaning doesn't fit."
+      },
+      {
+        "zh": "「あっての」是“有了A才有B”（「客あっての商売」），与数量搭配意思不通。",
+        "en": "「あっての」 is \"B exists only thanks to A\" (「客あっての商売」); it makes no sense with a weight."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-105",
+    "type": "bunpou",
+    "refs": [
+      "lesson80#2"
+    ],
+    "difficulty": 2,
+    "stem": "プロの料理人（　）、初めて扱う食材ではうまくいかないこともある。",
+    "options": [
+      "とあれば",
+      "ともなると",
+      "といえども",
+      "ならでは"
+    ],
+    "answer": 2,
+    "full": "プロの料理人といえども、初めて扱う食材ではうまくいかないこともある。",
+    "tr": {
+      "zh": "即使是专业厨师，用第一次接触的食材也会有做不好的时候。",
+      "en": "Even a professional chef sometimes gets it wrong with an ingredient they've never used before."
+    },
+    "why": {
+      "zh": "线索：前面是「プロの料理人」，后面却是「うまくいかないこともある」，前后是逆接关系。\n规则：「名词＋といえども」＝即使是……也……；前面多是地位高、能力强的人，后项与一般预期相反。\n辨析：「ともなると」＝一旦到了……的程度，自然就……，后项顺着前项（「プロともなると、さすがに手際がいい」），和这里的逆接相反。",
+      "en": "Clue: 「プロの料理人」, then 「うまくいかないこともある」 — a contrast.\nRule: Noun ＋ 「といえども」 = even (someone like)…; the noun is usually someone skilled or senior, and the result goes against expectation.\nContrast: 「ともなると」 is \"once you reach that level, naturally…\", where the result follows from it (「プロともなると、さすがに手際がいい」) — the reverse of this contrast."
+    },
+    "wrong": [
+      {
+        "zh": "「とあれば」是“如果是为了……（就愿意）”，后项是积极去做的事，和失败不搭。",
+        "en": "「とあれば」 is \"if it's for…, (I'll gladly)\", leading to a willing act, not a failure."
+      },
+      {
+        "zh": "「ともなると」后项是“到了这个程度自然会……”的顺接，和「うまくいかない」矛盾。",
+        "en": "「ともなると」 leads to what naturally follows from the level, which clashes with 「うまくいかない」."
+      },
+      null,
+      {
+        "zh": "「ならでは」要接「の＋名词」表示“只有……才有的”，这里接不上。",
+        "en": "「ならでは」 needs 「の＋noun」 (unique to); it doesn't fit here."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-106",
+    "type": "bunpou",
+    "refs": [
+      "lesson81#6"
+    ],
+    "difficulty": 3,
+    "stem": "毎日とは言わ（　）、せめて週に一度くらいは実家に連絡しなさい。",
+    "options": [
+      "ないではすまない",
+      "ないことには",
+      "ないものでもない",
+      "ないまでも"
+    ],
+    "answer": 3,
+    "full": "毎日とは言わないまでも、せめて週に一度くらいは実家に連絡しなさい。",
+    "tr": {
+      "zh": "就算不说每天，至少一周也要给家里联系一次。",
+      "en": "I won't say every day, but at least get in touch with home once a week or so."
+    },
+    "why": {
+      "zh": "线索：后面有「せめて」，前面是更高的要求「毎日」，说“不到A，至少B”。\n规则：「动词ない形＋までも」＝即使达不到……，至少也……；后面常接「せめて」「少なくとも」。\n辨析：「ないことには」＝不……的话就（无法）……，后项是否定：「やってみないことには分からない」，和「せめて」不搭。",
+      "en": "Clue: 「せめて」 follows, with the higher demand 「毎日」 before: if not A, at least B.\nRule: ない form ＋ 「までも」 = even if not…, at least…; often followed by 「せめて」 or 「少なくとも」.\nContrast: 「ないことには」 is \"unless…, can't…\", with a negative result (「やってみないことには分からない」); it doesn't go with 「せめて」."
+    },
+    "wrong": [
+      {
+        "zh": "「ないではすまない」是“不……就过不去”，用于句末，这里不能接「せめて」引出的句子。",
+        "en": "「ないではすまない」 (\"can't get away without\") ends a sentence; it can't introduce the 「せめて」 clause."
+      },
+      {
+        "zh": "「ないことには」后项要是否定（“不……就不行”），这里后面是命令「連絡しなさい」。",
+        "en": "「ないことには」 needs a negative result; here an order, 「連絡しなさい」, follows."
+      },
+      {
+        "zh": "「ないものでもない」是“也不是不……”，用于句末表示有可能，不能接在句中引出后项。",
+        "en": "「ないものでもない」 (\"it's not impossible that\") ends a sentence; it can't lead into a second clause."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-m2-107",
+    "type": "bunpou",
+    "refs": [
+      "lesson82#1"
+    ],
+    "difficulty": 1,
+    "stem": "東南アジアの市場を開拓す（　）、その会社はシンガポールに支社を設立した。",
+    "options": [
+      "べからず",
+      "べくもない",
+      "べきだ",
+      "べく"
+    ],
+    "answer": 3,
+    "full": "東南アジアの市場を開拓すべく、その会社はシンガポールに支社を設立した。",
+    "tr": {
+      "zh": "为了开拓东南亚市场，那家公司在新加坡设立了分公司。",
+      "en": "To open up the Southeast Asian market, the company set up a branch in Singapore."
+    },
+    "why": {
+      "zh": "线索：前面是目标「市場を開拓す」，后面是为此采取的行动「支社を設立した」。\n规则：「动词辞书形＋べく」＝为了……（书面语）；「する」可以变成「すべく」。\n辨析：「べくもない」＝根本无法……：「知るべくもない」，表示不可能，不表示目的。",
+      "en": "Clue: A goal, 「市場を開拓す」, then the step taken for it, 「支社を設立した」.\nRule: Dictionary form ＋ 「べく」 = in order to (written style); 「する」 can become 「すべく」.\nContrast: 「べくもない」 is \"there's no way to\" (「知るべくもない」) — impossibility, not purpose."
+    },
+    "wrong": [
+      {
+        "zh": "「べからず」是“不得……”，用于告示中的禁止，不能表示目的。",
+        "en": "「べからず」 is a prohibition on notices (must not); it can't express purpose."
+      },
+      {
+        "zh": "「べくもない」是“根本无法……”，表示不可能，和后面设立分公司的行动接不上。",
+        "en": "「べくもない」 means it can't possibly be done; it doesn't lead into setting up a branch."
+      },
+      {
+        "zh": "「べきだ」是“应该”，用于句末，不能在句中逗号前表示“为了”。",
+        "en": "「べきだ」 (should) ends a sentence; it can't mean \"in order to\" before a comma."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-m2-108",
+    "type": "bunpou",
+    "refs": [
+      "lesson83#1"
+    ],
+    "difficulty": 2,
+    "stem": "検査の結果（　）、入院して手術を受けていただくこともあります。",
+    "options": [
+      "いかんにかかわらず",
+      "をよそに",
+      "にかこつけて",
+      "いかんによっては"
+    ],
+    "answer": 3,
+    "full": "検査の結果いかんによっては、入院して手術を受けていただくこともあります。",
+    "tr": {
+      "zh": "根据检查结果，有时也需要您住院接受手术。",
+      "en": "Depending on the test results, you may need to be admitted to hospital for surgery."
+    },
+    "why": {
+      "zh": "线索：后面是「〜こともあります」，表示视结果而定，有时会出现这种情况。\n规则：「名词＋いかんによっては」＝根据……的情况（有时会……），后项多是可能出现的特别情况。\n辨析：「いかんにかかわらず」＝不管……如何（都……），后项不受影响，与「こともあります」矛盾。",
+      "en": "Clue: 「〜こともあります」 follows — it may happen, depending on the result.\nRule: Noun ＋ 「いかんによっては」 = depending on…, (in some cases); the second half is a possible special case.\nContrast: 「いかんにかかわらず」 is \"regardless of\", where the result doesn't change — at odds with 「こともあります」."
+    },
+    "wrong": [
+      {
+        "zh": "「いかんにかかわらず」是“不管结果如何”，和“视情况有时需要手术”意思矛盾。",
+        "en": "「いかんにかかわらず」 is \"regardless of the result\", which contradicts \"in some cases surgery\"."
+      },
+      {
+        "zh": "「をよそに」是“不顾（别人的担心）”，前面不能是「検査の結果」。",
+        "en": "「をよそに」 is ignoring others' worries; it can't take 「検査の結果」."
+      },
+      {
+        "zh": "「にかこつけて」是“以……为借口”，和检查结果的语境不符。",
+        "en": "「にかこつけて」 is \"using… as an excuse\", which doesn't fit test results."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-m2-109",
+    "type": "bunpou",
+    "refs": [
+      "lesson85#1"
+    ],
+    "difficulty": 1,
+    "stem": "この程度の切り傷なら、わざわざ病院に行く（　）。消毒してばんそうこうをはっておけば治るよ。",
+    "options": [
+      "に足りない",
+      "までもない",
+      "にかたくない",
+      "に堪えない"
+    ],
+    "answer": 1,
+    "full": "この程度の切り傷なら、わざわざ病院に行くまでもない。消毒してばんそうこうをはっておけば治るよ。",
+    "tr": {
+      "zh": "这么点小割伤，用不着特意去医院。消消毒、贴个创可贴就好了。",
+      "en": "A small cut like this doesn't need a trip to the hospital. Disinfect it, put a plaster on, and it'll heal."
+    },
+    "why": {
+      "zh": "线索：「この程度の」「わざわざ」，后文说消毒贴创可贴就行，说明没必要去医院。\n规则：「动词辞书形＋までもない」＝用不着……、不必……（程度轻，没必要做）。\n辨析：「に足りない」＝不值得……：「取るに足りない問題」，是评价对象的价值低，不是“没必要做”。",
+      "en": "Clue: 「この程度の」 and 「わざわざ」, then a plaster will do — no need to go.\nRule: Dictionary form ＋ 「までもない」 = there's no need to… (it isn't serious enough).\nContrast: 「に足りない」 is \"not worth\" (「取るに足りない問題」) — judging something's value, not saying an action is unnecessary."
+    },
+    "wrong": [
+      {
+        "zh": "「に足りない」是“不值得……”（「取るに足りない」），评价价值低，不表示“没必要去”。",
+        "en": "「に足りない」 (not worth…, 「取るに足りない」) judges value; it doesn't mean \"no need to go\"."
+      },
+      null,
+      {
+        "zh": "「にかたくない」是“不难（想象）”，前面多接「想像」「察する」，和去医院不搭。",
+        "en": "「にかたくない」 (not hard to imagine) follows 「想像」 or 「察する」, not going to hospital."
+      },
+      {
+        "zh": "「に堪えない」是“不堪……”（「見るに堪えない」），表示不忍看、不忍听，意思不通。",
+        "en": "「に堪えない」 (\"unbearable to\", 「見るに堪えない」) doesn't make sense here."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-110",
+    "type": "bunpou",
+    "refs": [
+      "lesson86#2"
+    ],
+    "difficulty": 3,
+    "stem": "これほどの被害を出したのだから、会社の経営陣は責任を問われ（　）。",
+    "options": [
+      "てならない",
+      "てやまない",
+      "てはばからない",
+      "てしかるべきだ"
+    ],
+    "answer": 3,
+    "full": "これほどの被害を出したのだから、会社の経営陣は責任を問われてしかるべきだ。",
+    "tr": {
+      "zh": "既然造成了这么大的损失，公司的管理层理应被追究责任。",
+      "en": "Having caused damage on this scale, the company's management ought to be held responsible."
+    },
+    "why": {
+      "zh": "线索：「これほどの被害を出したのだから」，从理由推出“当然应该被追究”。\n规则：「动词て形＋しかるべきだ」＝理应……、……才对（说话人认为这样做是理所当然的）。\n辨析：「てならない」＝……得不得了，接表示感情、感觉的词：「心配でならない」「気になってならない」，不能接「問われる」。",
+      "en": "Clue: 「これほどの被害を出したのだから」 — the reason leads to \"they should rightly be…\".\nRule: て form ＋ 「しかるべきだ」 = ought to, would only be right (the speaker sees it as proper).\nContrast: 「てならない」 is \"terribly…\" after words of feeling (「心配でならない」, 「気になってならない」); it can't follow 「問われる」."
+    },
+    "wrong": [
+      {
+        "zh": "「てならない」接表示感情、感觉的词（「残念でならない」），不能表示“理应”。",
+        "en": "「てならない」 follows feelings (「残念でならない」); it can't mean \"ought to\"."
+      },
+      {
+        "zh": "「てやまない」是“衷心……”，接「願う」「祈る」等表示心愿的动词，不接「問われる」。",
+        "en": "「てやまない」 (\"never stop wishing\") follows verbs like 「願う」 or 「祈る」, not 「問われる」."
+      },
+      {
+        "zh": "「てはばからない」是“毫无顾忌地……”，接「公言する」「言う」等主动发言的动词，不接被动的「問われる」。",
+        "en": "「てはばからない」 (\"not hesitate to\") follows active verbs like 「公言する」, not the passive 「問われる」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-m2-111",
+    "type": "narabe",
+    "refs": [
+      "lesson84#3"
+    ],
+    "difficulty": 2,
+    "stem": "その映画の感動的な結末は、見る者 [_] [_] [★] [_] 力を持っている。",
+    "options": [
+      "涙を",
+      "おかない",
+      "の",
+      "誘わずには"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "その映画の感動的な結末は、見る者の涙を誘わずにはおかない力を持っている。",
+    "tr": {
+      "zh": "那部电影感人的结局，有着必然让观众落泪的力量。",
+      "en": "The film's moving ending has the power to bring tears to the eyes of anyone who watches it."
+    },
+    "why": {
+      "zh": "线索：「誘わずには」和「おかない」，是「〜ずにはおかない」（必然会……、不由得让人……）。\n怎么排：「見る者」后接「の」，修饰「涙を」；「涙を誘う」是固定搭配，变成「誘わずには」，后面接「おかない」，整体修饰「力」。顺序：の → 涙を → 誘わずには → おかない，★ 是「誘わずには」。\n容易错：把「おかない」放在「誘わずには」前面。「〜ずにはおかない」的顺序是固定的。",
+      "en": "Clue: 「誘わずには」 and 「おかない」 make 「〜ずにはおかない」 (cannot fail to…).\nOrder: 「見る者」 takes 「の」, modifying 「涙を」; 「涙を誘う」 is a set phrase, here 「誘わずには」, followed by 「おかない」, the whole modifying 「力」: の → 涙を → 誘わずには → おかない. The ★ is 「誘わずには」.\nTrap: Putting 「おかない」 before 「誘わずには」. The order of 「〜ずにはおかない」 is fixed."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-m2-112",
+    "type": "narabe",
+    "refs": [
+      "lesson81#2"
+    ],
+    "difficulty": 2,
+    "stem": "入社して [_] [★] [_] [_] 後輩の指導も任されるようになる。",
+    "options": [
+      "に加えて",
+      "十年目",
+      "通常の業務",
+      "ともなると"
+    ],
+    "order": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "full": "入社して十年目ともなると通常の業務に加えて後輩の指導も任されるようになる。",
+    "tr": {
+      "zh": "进公司到了第十年，除了日常业务，连指导后辈的事也会交给你。",
+      "en": "Once you're in your tenth year at a company, you're trusted not only with your regular work but with training junior staff too."
+    },
+    "why": {
+      "zh": "线索：「ともなると」（一旦到了……的阶段，自然就……），前面接表示阶段、身份的名词。\n怎么排：「入社して」后先说阶段「十年目」，接「ともなると」；后项「通常の業務」接「に加えて」（除……之外），和句末的「後輩の指導も」呼应。顺序：十年目 → ともなると → 通常の業務 → に加えて，★ 是「ともなると」。\n容易错：把「通常の業務に加えて」放到「ともなると」前面。「ともなると」前面只放表示阶段的「十年目」。",
+      "en": "Clue: 「ともなると」 (once you reach the stage of…, naturally) follows a noun of stage or status.\nOrder: After 「入社して」 comes the stage 「十年目」, then 「ともなると」; in the second half 「通常の業務」 takes 「に加えて」 (on top of), pairing with 「後輩の指導も」: 十年目 → ともなると → 通常の業務 → に加えて. The ★ is 「ともなると」.\nTrap: Putting 「通常の業務に加えて」 before 「ともなると」. Only the stage, 「十年目」, goes before it."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-m2-113",
+    "type": "narabe",
+    "refs": [
+      "lesson90#6"
+    ],
+    "difficulty": 1,
+    "stem": "当店は、本日の営業 [★] [_] [_] [_] こととなりました。長年のご愛顧、誠にありがとうございました。",
+    "options": [
+      "閉店",
+      "いただく",
+      "をもちまして",
+      "させて"
+    ],
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "full": "当店は、本日の営業をもちまして閉店させていただくこととなりました。長年のご愛顧、誠にありがとうございました。",
+    "tr": {
+      "zh": "本店将于今天营业结束后关门停业。多年来承蒙惠顾，衷心感谢。",
+      "en": "We will be closing our doors at the end of today's business. Thank you sincerely for your custom over the years."
+    },
+    "why": {
+      "zh": "线索：「本日の営業」和「をもちまして」，是「〜をもって」（以……为界）的郑重说法，用于宣布结束。\n怎么排：「本日の営業」后接「をもちまして」，表示时间界限；然后是「閉店」＋「させて」＋「いただく」（谦让表达），接「こととなりました」。顺序：をもちまして → 閉店 → させて → いただく，★ 是「をもちまして」。\n容易错：把「させて」「いただく」顺序弄反。谦让表达固定为「〜させていただく」。",
+      "en": "Clue: 「本日の営業」 and 「をもちまして」, the formal 「〜をもって」 (as of…), used for announcing an end.\nOrder: 「本日の営業」 takes 「をもちまして」 to mark the cut-off; then 「閉店」 ＋ 「させて」 ＋ 「いただく」 (humble) before 「こととなりました」: をもちまして → 閉店 → させて → いただく. The ★ is 「をもちまして」.\nTrap: Swapping 「させて」 and 「いただく」. The humble form is always 「〜させていただく」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-m2-114",
+    "type": "narabe",
+    "refs": [
+      "lesson82#6"
+    ],
+    "difficulty": 2,
+    "stem": "部長は、海外出張 [_] [_] [_] [★] いるらしい。",
+    "options": [
+      "観光地を",
+      "巡って",
+      "にかこつけて",
+      "現地の"
+    ],
+    "order": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "full": "部長は、海外出張にかこつけて現地の観光地を巡っているらしい。",
+    "tr": {
+      "zh": "听说部长借海外出差之名，在当地游览各处景点。",
+      "en": "Apparently the department head uses his business trips abroad as an excuse to tour the local sights."
+    },
+    "why": {
+      "zh": "线索：「にかこつけて」（以……为借口），前面接作为借口的名词「海外出張」。\n怎么排：「海外出張」后接「にかこつけて」；「現地の」修饰「観光地を」，宾语后接动词「巡って」，再接句末的「いる」。顺序：にかこつけて → 現地の → 観光地を → 巡って，★ 是「巡って」。\n容易错：把「現地の」放在「にかこつけて」前面，变成「海外出張現地の」。「現地の」只能修饰后面的「観光地」。",
+      "en": "Clue: 「にかこつけて」 (using… as a pretext) follows the noun used as the pretext, 「海外出張」.\nOrder: 「海外出張」 takes 「にかこつけて」; 「現地の」 modifies 「観光地を」, the object comes before the verb 「巡って」, then 「いる」: にかこつけて → 現地の → 観光地を → 巡って. The ★ is 「巡って」.\nTrap: Putting 「現地の」 before 「にかこつけて」 (「海外出張現地の」). 「現地の」 can only modify 「観光地」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n1-m2-115",
+    "type": "narabe",
+    "refs": [
+      "lesson91#4"
+    ],
+    "difficulty": 3,
+    "stem": "子ども [_] [★] [_] [_] ことで泣くなんて、みっともないよ。",
+    "options": [
+      "転んだ",
+      "じゃあるまいし",
+      "くらいの",
+      "いい大人が"
+    ],
+    "order": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "full": "子どもじゃあるまいしいい大人が転んだくらいのことで泣くなんて、みっともないよ。",
+    "tr": {
+      "zh": "又不是小孩子，一个大人摔了一跤就哭，太难看了。",
+      "en": "You're not a child — a grown adult crying just because they fell over is embarrassing."
+    },
+    "why": {
+      "zh": "线索：「じゃあるまいし」（又不是……），前面接名词「子ども」，后面接说话人的批评或劝告。\n怎么排：「子ども」后接「じゃあるまいし」；后项主语「いい大人が」；「転んだ」接「くらいの」，一起修饰「こと」（“摔一跤这点小事”）。顺序：じゃあるまいし → いい大人が → 転んだ → くらいの，★ 是「いい大人が」。\n容易错：把「いい大人が」放到「転んだくらいの」后面。主语要在修饰「こと」的部分之前。",
+      "en": "Clue: 「じゃあるまいし」 (it's not as if…) follows the noun 「子ども」 and leads into a criticism or advice.\nOrder: 「子ども」 takes 「じゃあるまいし」; the second half's subject is 「いい大人が」; 「転んだ」 takes 「くらいの」, together modifying 「こと」 (something as small as a fall): じゃあるまいし → いい大人が → 転んだ → くらいの. The ★ is 「いい大人が」.\nTrap: Putting 「いい大人が」 after 「転んだくらいの」. The subject comes before the words modifying 「こと」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

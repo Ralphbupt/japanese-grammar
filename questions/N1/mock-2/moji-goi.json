@@ -1,0 +1,902 @@
+[
+  {
+    "id": "n1-m2-001",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "政府は、被災した中小企業を支援するための緊急<<措置>>を発表した。",
+    "options": [
+      "そち",
+      "そうち",
+      "しょち",
+      "さくち"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "政府公布了支援受灾中小企业的紧急措施。",
+      "en": "The government announced emergency measures to support small and medium-sized businesses hit by the disaster."
+    },
+    "why": {
+      "zh": "「措置」（措施）读「そち」，「措」读短音「そ」，「置」读「ち」。",
+      "en": "「措置」 (measure) is そち: 「措」 is the short そ, 「置」 is ち."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「そうち」是「装置」（装置、设备），读音相近但是另一个词。",
+        "en": "そうち is 「装置」 (device) — a similar sound, a different word."
+      },
+      {
+        "zh": "「しょち」是「処置」（处理、处置）的读法，「措」不读「しょ」。",
+        "en": "しょち is 「処置」 (treatment); 「措」 isn't しょ."
+      },
+      {
+        "zh": "「措」读「そ」，不读「さく」（「錯」「搾」才读「さく」）。",
+        "en": "「措」 is そ, not さく (that's 「錯」 or 「搾」)."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-002",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "何度断られても、彼は<<粘り強く>>交渉を続けた。",
+    "options": [
+      "ねまりづよく",
+      "ねばりつよく",
+      "ねばりずよく",
+      "ねばりづよく"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "无论被拒绝多少次，他都锲而不舍地继续交涉。",
+      "en": "However many times he was turned down, he kept negotiating doggedly."
+    },
+    "why": {
+      "zh": "「粘り強い」（有韧性、不屈不挠）读「ねばりづよい」，「強い」在复合词里浊化成「づよい」。",
+      "en": "「粘り強い」 (tenacious) is ねばりづよい: 「強い」 voices to づよい in the compound."
+    },
+    "wrong": [
+      {
+        "zh": "「粘」的训读是「ねば（る）」，不是「ねま」。",
+        "en": "「粘」 is read ねば(る), not ねま."
+      },
+      {
+        "zh": "复合词里「強い」浊化，读「づよい」，不读清音「つよい」。",
+        "en": "In the compound 「強い」 voices to づよい, not つよい."
+      },
+      {
+        "zh": "「つ」浊化后写作「づ」，不写「ず」。",
+        "en": "The voiced form of つ is written づ, not ず."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-m2-003",
+    "type": "kanji",
+    "difficulty": 3,
+    "stem": "家賃の支払いが遅れ、管理会社から<<督促>>の電話がかかってきた。",
+    "options": [
+      "とくしょく",
+      "とくぞく",
+      "どくそく",
+      "とくそく"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "房租付晚了，物业公司打来了催缴电话。",
+      "en": "The rent was late, and the management company phoned to demand payment."
+    },
+    "why": {
+      "zh": "「督促」（催促、催缴）读「とくそく」，「督」读清音「とく」，「促」读「そく」。",
+      "en": "「督促」 (dunning, a demand for payment) is とくそく: 「督」 is unvoiced とく, 「促」 is そく."
+    },
+    "wrong": [
+      {
+        "zh": "「促」读「そく」，不读「しょく」。",
+        "en": "「促」 is そく, not しょく."
+      },
+      {
+        "zh": "「促」读清音「そく」，在这个词里不浊化。",
+        "en": "「促」 stays unvoiced そく here."
+      },
+      {
+        "zh": "「督」读清音「とく」，不读「どく」（「毒」「読」才读「どく」）。",
+        "en": "「督」 is とく, not どく (that's 「毒」 or 「読」)."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-m2-004",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "忙しいからといって<<偏った>>食事を続けていると、体を壊すよ。",
+    "options": [
+      "かたむいた",
+      "ゆがんだ",
+      "かたよった",
+      "かたまった"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "就算忙，一直吃不均衡的饭菜也会搞垮身体的。",
+      "en": "Busy or not, if you keep eating an unbalanced diet, you'll ruin your health."
+    },
+    "why": {
+      "zh": "「偏る」（偏、不均衡）读「かたよる」，「偏った食事」＝营养不均衡的饮食。",
+      "en": "「偏る」 (to be lopsided) is かたよる; 「偏った食事」 is an unbalanced diet."
+    },
+    "wrong": [
+      {
+        "zh": "「かたむいた」是「傾いた」（倾斜）的读法。",
+        "en": "かたむいた is 「傾いた」 (tilted)."
+      },
+      {
+        "zh": "「ゆがんだ」是「歪んだ」（歪曲、变形）的读法。",
+        "en": "ゆがんだ is 「歪んだ」 (warped)."
+      },
+      null,
+      {
+        "zh": "「かたまった」是「固まった」（凝固、固定）的读法。",
+        "en": "かたまった is 「固まった」 (hardened)."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-005",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "新しい部長は、まず現場の状況を正確に<<把握>>することから始めた。",
+    "options": [
+      "はあく",
+      "ばあく",
+      "はやく",
+      "はおく"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "新部长首先从准确掌握现场情况入手。",
+      "en": "The new manager began by getting an accurate grasp of the situation on the ground."
+    },
+    "why": {
+      "zh": "「把握」（掌握、把握）读「はあく」，「把」读「は」，「握」读「あく」。",
+      "en": "「把握」 (grasp) is はあく: 「把」 is は, 「握」 is あく."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「把」读清音「は」，不浊化。",
+        "en": "「把」 is unvoiced は, not ば."
+      },
+      {
+        "zh": "「握」读「あく」，「はやく」是「早く」。",
+        "en": "「握」 is あく; はやく is 「早く」."
+      },
+      {
+        "zh": "「握」读「あく」（如「握手」），不读「おく」。",
+        "en": "「握」 is あく (as in 「握手」), not おく."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-006",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "彼女の<<朗らか>>な人柄のおかげで、職場の雰囲気がずいぶん明るくなった。",
+    "options": [
+      "なごやか",
+      "おおらか",
+      "ほがらか",
+      "あきらか"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "多亏她开朗的性格，职场的气氛明快了许多。",
+      "en": "Thanks to her cheerful nature, the mood at work has become much brighter."
+    },
+    "why": {
+      "zh": "「朗らか」（开朗、爽朗）读「ほがらか」，和「朗読（ろうどく）」的「朗」是同一个字。",
+      "en": "「朗らか」 (cheerful) is ほがらか — the same kanji as in 「朗読」."
+    },
+    "wrong": [
+      {
+        "zh": "「なごやか」是「和やか」（和睦、融洽）的读法。",
+        "en": "なごやか is 「和やか」 (harmonious)."
+      },
+      {
+        "zh": "「おおらか」（大方、豁达）一般写假名或「大らか」，不用「朗」。",
+        "en": "おおらか (easygoing) is written in kana or 「大らか」, not with 「朗」."
+      },
+      null,
+      {
+        "zh": "「あきらか」是「明らか」（明显）的读法。",
+        "en": "あきらか is 「明らか」 (obvious)."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-007",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "長年の現場経験で身につけた（　）を、若手社員に余すところなく伝えたい。",
+    "options": [
+      "ハードル",
+      "キャリア",
+      "ノウハウ",
+      "シェア"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "我想把多年现场经验中掌握的诀窍毫无保留地传授给年轻员工。",
+      "en": "I want to pass on to younger staff, in full, the know-how I gained from years of hands-on work."
+    },
+    "why": {
+      "zh": "线索：「経験で身につけた」「伝えたい」，是靠经验学会、又能传授给别人的东西。\n词义：「ノウハウ」＝做事的诀窍、技术知识，常说「ノウハウを蓄積する」「ノウハウを伝える」。",
+      "en": "Clue: 「経験で身につけた」 and 「伝えたい」 — something learned from experience and passed on.\nMeaning: 「ノウハウ」 is know-how: 「ノウハウを蓄積する」, 「ノウハウを伝える」."
+    },
+    "wrong": [
+      {
+        "zh": "「ハードル」是障碍、门槛，不是能传授的东西。",
+        "en": "「ハードル」 is a hurdle, not something you pass on."
+      },
+      {
+        "zh": "「キャリア」是职业经历本身，没法“传授”给别人。",
+        "en": "「キャリア」 is one's career itself; it can't be handed to someone else."
+      },
+      null,
+      {
+        "zh": "「シェア」是市场占有率或分享，和“经验中学到的东西”不符。",
+        "en": "「シェア」 is market share or sharing, not something learned from experience."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-008",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "祖父は（　）性格で、一度言い出したら家族が何を言っても聞き入れない。",
+    "options": [
+      "頑固な",
+      "気さくな",
+      "臆病な",
+      "軽率な"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "祖父性格固执，一旦说出口，家人说什么他都不听。",
+      "en": "My grandfather is stubborn: once he's said something, he won't listen to anything the family says."
+    },
+    "why": {
+      "zh": "线索：「一度言い出したら」「何を言っても聞き入れない」，坚持己见、不听劝。\n词义：「頑固」（がんこ）＝固执、顽固，常说「頑固な性格」「頑固に言い張る」。",
+      "en": "Clue: 「一度言い出したら」 and 「何を言っても聞き入れない」 — sticking to his view, deaf to advice.\nMeaning: 「頑固」 (がんこ) is stubborn: 「頑固な性格」, 「頑固に言い張る」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「気さく」是随和、平易近人，和后文正相反。",
+        "en": "「気さく」 is friendly and easygoing — the opposite."
+      },
+      {
+        "zh": "「臆病」是胆小，和不听别人的话无关。",
+        "en": "「臆病」 is timid, unrelated to not listening."
+      },
+      {
+        "zh": "「軽率」是轻率、欠考虑，不是坚持己见。",
+        "en": "「軽率」 is rash, not obstinate."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-009",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "計画が失敗に終わると、課長はその責任をすべて部下に（　）とした。",
+    "options": [
+      "委託しよう",
+      "譲渡しよう",
+      "転嫁しよう",
+      "継承しよう"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "计划失败后，科长想把责任全部推到部下身上。",
+      "en": "When the plan failed, the section chief tried to shift all the blame onto his subordinates."
+    },
+    "why": {
+      "zh": "线索：「責任を」「部下に」，在失败之后把责任推给别人。\n词义：「転嫁」（てんか）＝把罪过、责任转嫁给他人，常说「責任を転嫁する」「責任転嫁」。",
+      "en": "Clue: 「責任を」 and 「部下に」 after a failure — pushing the blame onto others.\nMeaning: 「転嫁」 (てんか) is shifting blame or responsibility: 「責任を転嫁する」, 「責任転嫁」."
+    },
+    "wrong": [
+      {
+        "zh": "「委託」是委托（业务、工作），不和「責任」搭配表示推卸。",
+        "en": "「委託」 is entrusting work to someone; it doesn't mean dumping blame."
+      },
+      {
+        "zh": "「譲渡」是转让（财产、权利），不用于责任。",
+        "en": "「譲渡」 is transferring property or rights, not blame."
+      },
+      null,
+      {
+        "zh": "「継承」是继承（传统、地位），没有推卸的意思。",
+        "en": "「継承」 is inheriting a tradition or post; there's no sense of dodging blame."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-010",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "その自動車メーカーは、新たに医療機器の分野にも（　）。",
+    "options": [
+      "乗り出した",
+      "乗り切った",
+      "乗り移った",
+      "乗り越えた"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "那家汽车厂商又新进军了医疗器械领域。",
+      "en": "The carmaker has now also moved into the field of medical equipment."
+    },
+    "why": {
+      "zh": "线索：「新たに」「分野にも」，开始涉足新的领域。\n词义：「乗り出す」（のりだす）＝积极着手、进军（新事业、新领域），常说「新事業に乗り出す」「調査に乗り出す」。",
+      "en": "Clue: 「新たに」 and 「分野にも」 — starting out in a new field.\nMeaning: 「乗り出す」 (のりだす) is to launch into a new venture or field: 「新事業に乗り出す」, 「調査に乗り出す」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「乗り切る」是渡过（难关），「〜を乗り切る」，和「分野に」不搭配。",
+        "en": "「乗り切る」 is getting through a crisis (「〜を乗り切る」); it doesn't take 「分野に」."
+      },
+      {
+        "zh": "「乗り移る」是换乘到别的交通工具上，或灵魂附体，不能用于进军新领域。",
+        "en": "「乗り移る」 is changing vehicles or a spirit possessing someone, not moving into a field."
+      },
+      {
+        "zh": "「乗り越える」是克服（困难），要以困难为宾语，不是进入新领域。",
+        "en": "「乗り越える」 is overcoming a difficulty, not entering a field."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-011",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "上司の顔色ばかり（　）いては、思い切った提案などできない。",
+    "options": [
+      "うかがって",
+      "見張って",
+      "ながめて",
+      "にらんで"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "光看上司的脸色行事，是提不出大胆的建议的。",
+      "en": "If you're always watching your boss's face for his mood, you'll never make a bold proposal."
+    },
+    "why": {
+      "zh": "线索：「顔色ばかり」，后文说因此提不出大胆的建议，是在揣摩别人的心情。\n词义：「うかがう」（窺う）＝窥探、察看，「顔色をうかがう」＝看人脸色行事，是固定搭配。",
+      "en": "Clue: 「顔色ばかり」, and so no bold proposals — gauging someone's mood.\nMeaning: 「うかがう」 (窺う) is to peer or watch for; 「顔色をうかがう」 is the set phrase for reading someone's mood."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「見張る」是看守、监视，「顔色を見張る」不是日语的说法。",
+        "en": "「見張る」 is keeping watch; 「顔色を見張る」 isn't said."
+      },
+      {
+        "zh": "「ながめる」是眺望、欣赏，不和「顔色」搭配表示揣摩心情。",
+        "en": "「ながめる」 is gazing at a view; it doesn't pair with 「顔色」."
+      },
+      {
+        "zh": "「にらむ」是瞪、盯着看，「顔色をにらむ」不成搭配。",
+        "en": "「にらむ」 is glaring; 「顔色をにらむ」 isn't a collocation."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-012",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "人気俳優の突然の引退発表は、芸能界に大きな（　）を広げた。",
+    "options": [
+      "起伏",
+      "波紋",
+      "余韻",
+      "面目"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "当红演员突然宣布退出，在演艺圈引起了很大的反响。",
+      "en": "The popular actor's sudden retirement announcement sent ripples through the entertainment world."
+    },
+    "why": {
+      "zh": "线索：「突然の引退発表」「芸能界に」「広げた」，一件事向周围扩散影响。\n词义：「波紋」（はもん）＝水波；比喻一件事引起的影响、反响，常说「波紋を広げる」「波紋を呼ぶ」。",
+      "en": "Clue: 「突然の引退発表」, 「芸能界に」, 「広げた」 — an event spreading its effects.\nMeaning: 「波紋」 (はもん) is a ripple; figuratively the stir an event causes: 「波紋を広げる」, 「波紋を呼ぶ」."
+    },
+    "wrong": [
+      {
+        "zh": "「起伏」是起伏（地形、感情的高低），不说「起伏を広げる」。",
+        "en": "「起伏」 is ups and downs (of land or feelings); 「起伏を広げる」 isn't said."
+      },
+      null,
+      {
+        "zh": "「余韻」是余音、余味，用于美好事情之后的感受，不和「広げる」搭配。",
+        "en": "「余韻」 is a lingering afterglow; it doesn't go with 「広げる」."
+      },
+      {
+        "zh": "「面目」是脸面、名誉，常说「面目を保つ」「面目を失う」，不说「広げる」。",
+        "en": "「面目」 is face or honour (「面目を保つ」, 「面目を失う」), not 「広げる」."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-013",
+    "type": "bunmyaku",
+    "difficulty": 3,
+    "stem": "この地方では、江戸時代から続く祭りの伝統が今も（　）受け継がれている。",
+    "options": [
+      "黙々と",
+      "悠々と",
+      "堂々と",
+      "脈々と"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "在这个地区，从江户时代延续下来的祭礼传统至今仍绵延不绝地传承着。",
+      "en": "In this region, the festival tradition dating from the Edo period is still handed down in an unbroken line."
+    },
+    "why": {
+      "zh": "线索：「江戸時代から続く」「今も」「受け継がれている」，一代一代不断传承下去。\n词义：「脈々と」（みゃくみゃくと）＝连绵不断地，常说「脈々と受け継がれる」「脈々と続く」。",
+      "en": "Clue: 「江戸時代から続く」, 「今も」, 「受け継がれている」 — handed on without a break.\nMeaning: 「脈々と」 (みゃくみゃくと) is unbroken, continuously: 「脈々と受け継がれる」, 「脈々と続く」."
+    },
+    "wrong": [
+      {
+        "zh": "「黙々と」是默默地（埋头做事），说的是人做事的样子，不修饰传统的传承。",
+        "en": "「黙々と」 is silently getting on with work — it describes a person, not a tradition."
+      },
+      {
+        "zh": "「悠々と」是从容不迫、悠然，不表示代代相传。",
+        "en": "「悠々と」 is calmly, at ease; it doesn't mean passed down."
+      },
+      {
+        "zh": "「堂々と」是堂堂正正、毫不畏缩，和传统的传承无关。",
+        "en": "「堂々と」 is boldly, openly; unrelated to tradition being handed on."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-m2-014",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "手術が無事に終わったと聞いて、家族は<<ひとまず>>安心した。",
+    "options": [
+      "すっかり",
+      "とりあえず",
+      "ますます",
+      "心から"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "听说手术顺利结束，家人总算暂时放下心来。",
+      "en": "Hearing that the operation had gone well, the family felt relieved for the time being."
+    },
+    "why": {
+      "zh": "线索：划线的「ひとまず」，手术顺利，但之后还有恢复期，先暂且放心。\n词义：「ひとまず」＝暂且、姑且（先告一段落），和「とりあえず」意思相同。",
+      "en": "Clue: the underlined 「ひとまず」 — the operation is over, though recovery lies ahead, so relief for now.\nMeaning: 「ひとまず」 is for the moment, for now — the same as 「とりあえず」."
+    },
+    "wrong": [
+      {
+        "zh": "「すっかり」是完全、彻底，没有“暂且”的意思。",
+        "en": "「すっかり」 is completely, not for the moment."
+      },
+      null,
+      {
+        "zh": "「ますます」是越来越，表示变化加深。",
+        "en": "「ますます」 is more and more."
+      },
+      {
+        "zh": "「心から」是发自内心，表示程度，不是“暂且”。",
+        "en": "「心から」 is wholeheartedly — degree, not for now."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-015",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "新しい企画は<<ありきたりの>>内容で、会議ではほとんど評価されなかった。",
+    "options": [
+      "中途半端な",
+      "よくある",
+      "大げさな",
+      "難しすぎる"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "新企划内容平淡无奇，在会上几乎没得到好评。",
+      "en": "The new proposal was run-of-the-mill and got almost no credit at the meeting."
+    },
+    "why": {
+      "zh": "线索：划线的「ありきたりの」，内容没有新意，所以没被看好。\n词义：「ありきたり」＝常见的、老一套的，常说「ありきたりの意見」「ありきたりな表現」；对应「よくある」。",
+      "en": "Clue: the underlined 「ありきたりの」 — nothing new, so no credit.\nMeaning: 「ありきたり」 is commonplace, stock: 「ありきたりの意見」, 「ありきたりな表現」; it matches 「よくある」."
+    },
+    "wrong": [
+      {
+        "zh": "「中途半端」是半途而废、不彻底，不是“老一套”。",
+        "en": "「中途半端」 is half-baked, not commonplace."
+      },
+      null,
+      {
+        "zh": "「大げさ」是夸张，和平淡无奇相反。",
+        "en": "「大げさ」 is exaggerated — the opposite of bland."
+      },
+      {
+        "zh": "「難しすぎる」是太难，「ありきたり」恰恰是太普通。",
+        "en": "「難しすぎる」 is too difficult; 「ありきたり」 is too ordinary."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-016",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "予想もしなかった質問をされて、彼は<<うろたえた>>。",
+    "options": [
+      "慌てた",
+      "照れた",
+      "腹を立てた",
+      "黙り込んだ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "被问到完全没想到的问题，他慌了神。",
+      "en": "Asked a question he hadn't expected at all, he was flustered."
+    },
+    "why": {
+      "zh": "线索：划线的「うろたえた」，被突然问到意外的问题，一时不知所措。\n词义：「うろたえる」＝惊慌失措、乱了阵脚，常说「突然の事態にうろたえる」；对应「慌てる」。",
+      "en": "Clue: the underlined 「うろたえた」 — caught off guard by an unexpected question.\nMeaning: 「うろたえる」 is to be flustered or thrown into confusion: 「突然の事態にうろたえる」; it matches 「慌てる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「照れる」是害羞、不好意思，不是惊慌。",
+        "en": "「照れる」 is feeling shy or bashful, not flustered."
+      },
+      {
+        "zh": "「腹を立てる」是生气，「うろたえる」没有发怒的意思。",
+        "en": "「腹を立てる」 is getting angry; 「うろたえる」 has no anger in it."
+      },
+      {
+        "zh": "「黙り込む」是沉默不语，说的是结果，不是慌乱的心情。",
+        "en": "「黙り込む」 is falling silent, not the panic itself."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-017",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "重い荷物を抱えて階段を上る老人を<<見るに見かねて>>、彼は手を貸した。",
+    "options": [
+      "放っておけなくなって",
+      "しばらく様子を見て",
+      "本人に頼まれて",
+      "たまたま見かけて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "看到老人抱着重物爬楼梯，他实在看不下去，上前帮了一把。",
+      "en": "Unable to stand by and watch the old man struggle up the stairs with heavy bags, he lent a hand."
+    },
+    "why": {
+      "zh": "线索：划线的「見るに見かねて」，看到老人吃力的样子，忍不住出手相助。\n词义：「見るに見かねる」＝看不下去、不忍袖手旁观，常说「見るに見かねて手を貸す」；对应「放っておけなくなる」。",
+      "en": "Clue: the underlined 「見るに見かねて」 — seeing the old man struggle, he couldn't help stepping in.\nMeaning: 「見るに見かねる」 is being unable to stand by and watch: 「見るに見かねて手を貸す」; it matches 「放っておけなくなる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「見かねる」不是“观察一阵子”，而是看不下去。",
+        "en": "「見かねる」 isn't watching for a while; it's being unable to bear watching."
+      },
+      {
+        "zh": "「見るに見かねて」是自己主动出手，不是被人请求。",
+        "en": "「見るに見かねて」 means he stepped in of his own accord, not on request."
+      },
+      {
+        "zh": "「たまたま見かける」只是偶然看到，没有“不忍心”的意思。",
+        "en": "「たまたま見かける」 is just happening to see, with no sense of being unable to bear it."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-018",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "被害が広がっているのに、行政は<<手をこまねいて>>いるだけだ。",
+    "options": [
+      "慌てふためいて",
+      "何もしないで",
+      "対応を急いで",
+      "責任を逃れて"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "灾害在扩大，政府却只是袖手旁观。",
+      "en": "The damage is spreading, yet the authorities are just standing by with folded arms."
+    },
+    "why": {
+      "zh": "线索：划线的「手をこまねいて」和「いるだけだ」，在批评面对灾情却不采取行动。\n词义：「手をこまねく」（拱手）＝袖手旁观、什么也不做，常说「手をこまねいて見ている」；对应「何もしないで」。",
+      "en": "Clue: the underlined 「手をこまねいて」 with 「いるだけだ」 — criticism for not acting.\nMeaning: 「手をこまねく」 (to fold one's arms) is standing idly by: 「手をこまねいて見ている」; it matches 「何もしないで」."
+    },
+    "wrong": [
+      {
+        "zh": "「慌てふためく」是惊慌失措，「手をこまねく」是不行动，不是慌乱。",
+        "en": "「慌てふためく」 is panicking; 「手をこまねく」 is doing nothing, not panicking."
+      },
+      null,
+      {
+        "zh": "「対応を急ぐ」是赶紧应对，和袖手旁观正相反。",
+        "en": "「対応を急ぐ」 is hurrying to respond — the opposite."
+      },
+      {
+        "zh": "「責任を逃れる」是推卸责任，「手をこまねく」只说不采取行动。",
+        "en": "「責任を逃れる」 is dodging responsibility; 「手をこまねく」 only means not acting."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-019",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "確かな腕を持つ彼女は、ベテランの職人たちからも<<一目置かれている>>。",
+    "options": [
+      "注目を集めている",
+      "実力を認められている",
+      "警戒されている",
+      "期待をかけられている"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "手艺扎实的她，连老手艺人们都对她另眼相看。",
+      "en": "With her solid skills, she is held in high regard even by the veteran craftsmen."
+    },
+    "why": {
+      "zh": "线索：划线的「一目置かれている」，前文「確かな腕を持つ」说明是因为本事而受到敬重。\n词义：「一目置く」（いちもくおく）＝承认对方比自己强，另眼相看、敬重三分，常说「周りから一目置かれる」；对应「実力を認められている」。",
+      "en": "Clue: the underlined 「一目置かれている」, with 「確かな腕を持つ」 — respected for her ability.\nMeaning: 「一目置く」 (いちもくおく) is to acknowledge someone's superiority: 「周りから一目置かれる」; it matches 「実力を認められている」."
+    },
+    "wrong": [
+      {
+        "zh": "「注目を集める」只是受到关注，「一目置く」的重点是承认对方的实力。",
+        "en": "「注目を集める」 is just drawing attention; 「一目置く」 is acknowledging ability."
+      },
+      null,
+      {
+        "zh": "「警戒する」是提防，「一目置く」是敬重，不是戒备。",
+        "en": "「警戒する」 is being wary; 「一目置く」 is respect, not suspicion."
+      },
+      {
+        "zh": "「期待をかける」是对将来寄予期望，「一目置く」是对现有实力的认可。",
+        "en": "「期待をかける」 is hope for the future; 「一目置く」 recognises present ability."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-020",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<裏腹>>",
+    "options": [
+      "「大丈夫」という言葉とは裏腹に、彼女の声は震えていた。",
+      "彼は周囲の意見に裏腹して、自分の計画を押し通した。",
+      "この書類は、紙の裏腹にも同じ内容を印刷してください。",
+      "急いでいたので、セーターを裏腹に着たまま出かけてしまった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "和“没事”这句话相反，她的声音在发抖。",
+      "en": "Contrary to her words, \"I'm fine\", her voice was trembling."
+    },
+    "why": {
+      "zh": "线索：「言葉とは裏腹に」，嘴上说没事，声音却在发抖，表里不一。\n词义：「裏腹」（うらはら）＝（言行、心情）相反、表里不一，常说「言葉とは裏腹に」「気持ちと裏腹な態度」。",
+      "en": "Clue: 「言葉とは裏腹に」 — she says she's fine, yet her voice trembles.\nMeaning: 「裏腹」 (うらはら) is contrary, at odds (words vs feelings or actions): 「言葉とは裏腹に」, 「気持ちと裏腹な態度」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "违背别人的意见用「逆らって」，「裏腹」没有动词「裏腹する」。",
+        "en": "Going against others' views is 「逆らって」; there's no verb 「裏腹する」."
+      },
+      {
+        "zh": "纸的背面是「裏面」，「裏腹」不指物体的背面。",
+        "en": "The back of a sheet is 「裏面」; 「裏腹」 isn't the back of an object."
+      },
+      {
+        "zh": "衣服穿反了用「裏返し」，「裏腹」不指衣服的里外。",
+        "en": "Wearing a sweater inside out is 「裏返し」; 「裏腹」 isn't about clothes."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-021",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<案の定>>",
+    "options": [
+      "一度も買ったことのない宝くじが、案の定一等に当たった。",
+      "夏休みの旅行の案の定を、そろそろ立てなければならない。",
+      "彼の案の定な意見に、会議の出席者は全員賛成した。",
+      "準備を怠っていた彼は、案の定、本番で何度も失敗した。"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "一直疏于准备的他，果不其然在正式上场时失误了好几次。",
+      "en": "Having neglected his preparation, he predictably made one mistake after another on the day."
+    },
+    "why": {
+      "zh": "线索：「準備を怠っていた」，失败是事先就能预料到的结果。\n词义：「案の定」（あんのじょう）＝果然、不出所料（多用于不好的结果），常说「案の定、雨が降り出した」。",
+      "en": "Clue: 「準備を怠っていた」 — the failure was foreseeable.\nMeaning: 「案の定」 (あんのじょう) is just as expected, usually of a bad outcome: 「案の定、雨が降り出した」."
+    },
+    "wrong": [
+      {
+        "zh": "从没买过的彩票中了头奖是意外，应该用「思いがけず」，「案の定」是不出所料。",
+        "en": "A first-time lottery win is unexpected (「思いがけず」); 「案の定」 means as expected."
+      },
+      {
+        "zh": "制定计划用「予定」「計画」，「案の定」是副词，不能当“计划”的名词用。",
+        "en": "Plans are 「予定」 or 「計画」; 「案の定」 is an adverb, not a noun for a plan."
+      },
+      {
+        "zh": "恰当的意见用「妥当な」「的確な」，「案の定」不能这样修饰名词。",
+        "en": "A sensible opinion is 「妥当な」 or 「的確な」; 「案の定」 can't modify a noun like that."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-m2-022",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<差し支える>>",
+    "options": [
+      "夜更かしをすると翌日の仕事に差し支えるので、早めに寝ている。",
+      "彼の発言が会議の流れを差し支えて、議論が中断した。",
+      "足を痛めた祖母を、両側から差し支えて歩かせた。",
+      "彼は誰に対しても差し支えた態度で、丁寧に接する。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "熬夜会影响第二天的工作，所以我都早早睡觉。",
+      "en": "Staying up late would interfere with the next day's work, so I go to bed early."
+    },
+    "why": {
+      "zh": "线索：「翌日の仕事に」，熬夜会给工作带来妨碍。\n词义：「差し支える」（さしつかえる）＝（对某事）有妨碍、有影响，用「〜に差し支える」；名词「差し支え」常说「差し支えなければ」。",
+      "en": "Clue: 「翌日の仕事に」 — staying up late would get in the way of work.\nMeaning: 「差し支える」 (さしつかえる) is to interfere with, used as 「〜に差し支える」; the noun appears in 「差し支えなければ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "打断议论的流程用「妨げて」，「差し支える」不带「を」宾语。",
+        "en": "Disrupting the flow is 「妨げて」; 「差し支える」 doesn't take an object with 「を」."
+      },
+      {
+        "zh": "扶着人走路用「支えて」，「差し支える」是“有妨碍”，意思不同。",
+        "en": "Holding someone up is 「支えて」; 「差し支える」 means to interfere."
+      },
+      {
+        "zh": "谦逊的态度用「控えめな」，「差し支えた態度」不是日语的说法。",
+        "en": "A modest manner is 「控えめな」; 「差し支えた態度」 isn't Japanese."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-023",
+    "type": "youhou",
+    "difficulty": 3,
+    "stem": "<<兼ね合い>>",
+    "options": [
+      "来月の出張の兼ね合いを、そろそろ部長に報告しなければならない。",
+      "彼は営業部長と広報部長を兼ね合いで務めている。",
+      "あの二人は兼ね合いがいいので、いつも一緒に行動している。",
+      "予算との兼ね合いで、イベントの規模を縮小することになった。"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "考虑到与预算的平衡，活动规模决定缩小。",
+      "en": "Weighing it against the budget, we decided to scale down the event."
+    },
+    "why": {
+      "zh": "线索：「予算との兼ね合いで」，在活动规模和预算之间权衡、取舍。\n词义：「兼ね合い」（かねあい）＝几方面之间的平衡、权衡，常说「〜との兼ね合いで」「予算との兼ね合い」。",
+      "en": "Clue: 「予算との兼ね合いで」 — balancing the event's size against the budget.\nMeaning: 「兼ね合い」 (かねあい) is the balance between competing factors: 「〜との兼ね合いで」, 「予算との兼ね合い」."
+    },
+    "wrong": [
+      {
+        "zh": "出差的安排、日程用「日程」「予定」，「兼ね合い」不指安排。",
+        "en": "A trip's schedule is 「日程」 or 「予定」; 「兼ね合い」 doesn't mean arrangements."
+      },
+      {
+        "zh": "兼任两个职务用「兼任して」「兼務して」，「兼ね合い」不是兼职。",
+        "en": "Holding two posts is 「兼任して」 or 「兼務して」; 「兼ね合い」 isn't holding two jobs."
+      },
+      {
+        "zh": "两人合得来用「相性がいい」「気が合う」，不说「兼ね合いがいい」。",
+        "en": "Getting on well is 「相性がいい」 or 「気が合う」, not 「兼ね合いがいい」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n1-m2-024",
+    "type": "youhou",
+    "difficulty": 1,
+    "stem": "<<いたわる>>",
+    "options": [
+      "試験に合格した友人をいたわって、みんなで盛大に乾杯した。",
+      "長年働いてきた両親をいたわって、温泉旅行をプレゼントした。",
+      "部下のミスを厳しくいたわって、二度と繰り返さないよう注意した。",
+      "彼は子どもの頃から、周りに天才だといたわられてきた。"
+    ],
+    "answer": 1,
+    "tr": {
+      "zh": "为了慰劳辛苦工作多年的父母，我送了他们一趟温泉旅行。",
+      "en": "To thank my parents for their long years of work, I gave them a trip to a hot spring."
+    },
+    "why": {
+      "zh": "线索：「長年働いてきた両親を」，对辛苦的人表示体贴、慰劳。\n词义：「いたわる」＝体贴、照顾、慰劳（辛苦的人、病人、弱者），常说「体をいたわる」「お年寄りをいたわる」。",
+      "en": "Clue: 「長年働いてきた両親を」 — showing care for people who have worked hard.\nMeaning: 「いたわる」 is to look after, be kind to (the tired, sick or weak): 「体をいたわる」, 「お年寄りをいたわる」."
+    },
+    "wrong": [
+      {
+        "zh": "为合格的朋友庆祝用「祝って」，「いたわる」是对辛苦或虚弱的人的体贴。",
+        "en": "Celebrating a friend's success is 「祝って」; 「いたわる」 is care for the tired or weak."
+      },
+      null,
+      {
+        "zh": "严厉批评用「責めて」「叱って」，和「いたわる」意思相反。",
+        "en": "Scolding is 「責めて」 or 「叱って」 — the opposite of 「いたわる」."
+      },
+      {
+        "zh": "被捧为天才用「もてはやされて」，「いたわる」没有称赞的意思。",
+        "en": "Being lauded as a genius is 「もてはやされて」; 「いたわる」 isn't praise."
+      }
+    ]
+  },
+  {
+    "id": "n1-m2-025",
+    "type": "youhou",
+    "difficulty": 1,
+    "stem": "<<手軽>>",
+    "options": [
+      "荷物を半分にして手軽になったので、楽に階段を上れた。",
+      "彼は手軽な性格で、初めて会った人ともすぐに仲良くなる。",
+      "この料理は電子レンジだけで手軽に作れるので、忙しい朝にぴったりだ。",
+      "気をつけていたのに、階段で手軽に足をくじいてしまった。"
+    ],
+    "answer": 2,
+    "tr": {
+      "zh": "这道菜只用微波炉就能轻松做好，非常适合忙碌的早晨。",
+      "en": "This dish can be made easily with just a microwave, so it's perfect for busy mornings."
+    },
+    "why": {
+      "zh": "线索：「電子レンジだけで」「作れる」，不费工夫、简单方便。\n词义：「手軽」（てがる）＝简便、轻而易举，常说「手軽に作れる」「手軽な料金」。",
+      "en": "Clue: 「電子レンジだけで」 and 「作れる」 — easy, little effort.\nMeaning: 「手軽」 (てがる) is easy, simple to do: 「手軽に作れる」, 「手軽な料金」."
+    },
+    "wrong": [
+      {
+        "zh": "行李变轻用「軽く」，「手軽」说的是做事简便，不是重量轻。",
+        "en": "A lighter bag is 「軽く」; 「手軽」 is about ease, not weight."
+      },
+      {
+        "zh": "性格随和用「気さくな」，「手軽」不形容性格。",
+        "en": "An easygoing person is 「気さくな」; 「手軽」 doesn't describe character."
+      },
+      null,
+      {
+        "zh": "不小心扭伤用「うっかり」，「手軽」不表示不小心。",
+        "en": "Carelessly is 「うっかり」; 「手軽」 doesn't mean careless."
+      }
+    ]
+  }
+]

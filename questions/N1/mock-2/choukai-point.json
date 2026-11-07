@@ -1,0 +1,590 @@
+[
+ {
+  "id": "n1-m2-ck-201",
+  "type": "point",
+  "scene": "ラジオで、アナウンサーが、島の診療所の医師に話を聞いています。",
+  "question": "医師は、島での仕事で一番難しいことは何だと言っていますか。",
+  "lines": [
+   [
+    "F",
+    "先生がこの島の診療所にいらして、今年で八年目だそうですね。お一人で千人あまりの島の皆さんを診ていらっしゃるわけですが、一番難しいと感じるのは、どんなところでしょう。"
+   ],
+   [
+    "M",
+    "そうですねえ。島の人たちが、なかなか診療所に来てくれないことでしょうか。"
+   ],
+   [
+    "F",
+    "皆さん、お仕事がお忙しいとか。"
+   ],
+   [
+    "M",
+    "いえ、ここでは、誰がいつ診療所に入っていったか、すぐに知れ渡るんです。「あそこのおじいさん、どこか悪いらしい」なんて言われるのが嫌で、かなり悪くなるまで我慢してしまう。手遅れになりかけてから運ばれてくる方もいて、それが一番こたえますね。"
+   ],
+   [
+    "F",
+    "なるほど。設備の面はいかがですか。大きな検査機器などは……。"
+   ],
+   [
+    "M",
+    "もちろん本土の病院のようにはいきませんが、急ぐ場合はヘリコプターで運べますので、そこはそれほど困っていないんです。休みのほうも、月に一度、本土から代わりの先生が来てくださいますし。"
+   ],
+   [
+    "F",
+    "患者さんがみんな顔見知りというのは、やりにくくないですか。"
+   ],
+   [
+    "M",
+    "それが、悪いことばかりじゃないんですよ。顔色一つで、「今日はいつもと違うな」と気づけますから。"
+   ]
+  ],
+  "options": [
+   "必要な医療設備がそろっていないこと",
+   "休みがほとんど取れないこと",
+   "人目を気にして受診が遅れること",
+   "患者と個人的に親しくなりすぎること"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "广播里，播音员在采访岛上诊所的医生。",
+    "question": "医生说在岛上工作最难的是什么？",
+    "lines": [
+     "听说您来到这个岛上的诊所，今年已经是第八年了。您一个人给岛上一千多人看病，觉得最难的是什么地方呢？",
+     "这个嘛。大概是岛上的人不太愿意来诊所吧。",
+     "是因为大家工作忙吗？",
+     "不是，在这里，谁什么时候进了诊所，马上就传开了。大家不愿意被人说“那家老爷爷好像哪儿不好”，就一直忍着，直到病得很重。也有人快耽误了才被送来，这是最让我难受的。",
+     "原来如此。设备方面怎么样？大型的检查仪器之类的……。",
+     "当然比不上本土的医院，不过紧急的话可以用直升机送出去，这方面倒没那么为难。休息也是，每个月有一次本土的医生来替我。",
+     "病人都是熟人，不会不好做吗？",
+     "这个嘛，也不全是坏事。看一眼脸色，就能察觉“今天跟平时不一样”。"
+    ],
+    "options": [
+     "缺少必要的医疗设备",
+     "几乎没法休息",
+     "因为在意别人的眼光而迟迟不就诊",
+     "和病人私交过于亲密"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, an announcer is interviewing the doctor at an island clinic.",
+    "question": "What does the doctor say is the hardest thing about his work on the island?",
+    "lines": [
+     "I hear this is your eighth year at the island clinic. You see over a thousand islanders on your own — what do you find hardest?",
+     "Let me see. I'd say it's that people here are reluctant to come to the clinic.",
+     "Because they're busy with work, perhaps?",
+     "No — here, word of who went into the clinic and when gets around instantly. People hate being talked about — 'that old man seems to be ill' — so they put up with it until they're quite sick. Some are brought in when it's almost too late, and that's what hits me hardest.",
+     "I see. What about equipment? Large diagnostic machines and so on…",
+     "Of course it's not like a hospital on the mainland, but in urgent cases we can send people by helicopter, so that's not much of a problem. As for time off, a doctor comes over from the mainland to cover once a month.",
+     "Isn't it awkward that all your patients know you?",
+     "Actually, that's not all bad. From one look at someone's face I can tell 'something's different today'."
+    ],
+    "options": [
+     "Not having the medical equipment needed",
+     "Hardly being able to take time off",
+     "People putting off seeing a doctor for fear of what others think",
+     "Becoming too close to patients personally"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：医生说：「〜なんて言われるのが嫌で、かなり悪くなるまで我慢してしまう。……それが一番こたえますね。」\n推理：岛上谁进了诊所马上传开，人们怕被议论，就忍着不来看病，这让医生最难受。设备有直升机，「それほど困っていない」；休息每月有医生来替；病人都是熟人「悪いことばかりじゃない」。\n容易错：播音员猜的“工作忙”被「いえ」否定；“熟人”是他认为的好处，不是难处。",
+   "en": "Evidence: The doctor says: 「〜なんて言われるのが嫌で、かなり悪くなるまで我慢してしまう。……それが一番こたえますね。」\nReasoning: On the island, news of who visits the clinic spreads at once, so people avoid coming for fear of gossip — that is what troubles him most. Equipment is covered by helicopter, 「それほど困っていない」; time off is covered monthly; knowing everyone is 「悪いことばかりじゃない」.\nTrap: the announcer's guess, being busy, rejected with 「いえ」; knowing patients, which he sees as an advantage."
+  },
+  "wrong": [
+   {
+    "zh": "有直升机送，他说「それほど困っていない」。",
+    "en": "Helicopters cover it; he says it's not much of a problem."
+   },
+   {
+    "zh": "每月有本土医生来替他。",
+    "en": "A mainland doctor covers for him monthly."
+   },
+   null,
+   {
+    "zh": "他说都是熟人「悪いことばかりじゃない」，反而能察觉异常。",
+    "en": "He says knowing them has advantages."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-202",
+  "type": "point",
+  "scene": "家具店で、店長の女の人と男の店員が、ソファの返品について話しています。",
+  "question": "店長は、返品が増えた原因は何だと考えていますか。",
+  "lines": [
+   [
+    "M",
+    "店長、ネットで注文されたソファの返品、先月だけで十二件ありました。"
+   ],
+   [
+    "F",
+    "報告書、見たわ。理由を読むと、ほとんどが「届いてみたら思ったより大きかった」なのよね。これ、たぶん写真のせいだと思う。"
+   ],
+   [
+    "M",
+    "写真ですか。写りがきれいすぎた、とか？"
+   ],
+   [
+    "F",
+    "ううん、きれいかどうかじゃなくて、撮っている場所。うちのは天井の高い、広いショールームで撮ってるでしょう。あそこに置くと、どんなソファでもこぢんまりして見えるのよ。"
+   ],
+   [
+    "M",
+    "でも、サイズはちゃんと書いてありますよね。数字を見れば分かるんじゃ……。"
+   ],
+   [
+    "F",
+    "数字は全部合ってたし、お客様もメジャーで部屋を測ってから注文してくださってるの。メールにそう書いてくださったお客様が何人もいたわ。それでも、頭で分かっているのと、実際に部屋に置いたときの感じは違うのね。"
+   ],
+   [
+    "M",
+    "配送のときの傷で返品、というのもありましたけど。"
+   ],
+   [
+    "F",
+    "あれは二件だけで、配送業者さんにはもう話してある。それより、普通のマンションくらいの部屋を借りて、撮り直してみようと思うの。"
+   ]
+  ],
+  "options": [
+   "写真ではソファの大きさが実感しにくいこと",
+   "サイトのサイズの表示が間違っていたこと",
+   "配送のときにソファに傷がついたこと",
+   "客が部屋の広さを測らずに注文したこと"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "家具店里，女店长和男店员在谈沙发退货的事。",
+    "question": "店长认为退货增多的原因是什么？",
+    "lines": [
+     "店长，网上订购的沙发，光上个月就有十二件退货。",
+     "报告我看了。看退货理由，大部分是“送到一看比想象的大”。我想这大概是照片的问题。",
+     "照片吗？是拍得太好看了吗？",
+     "不，不是好不好看，是拍摄的地方。我们的照片是在天花板很高、很宽敞的展厅拍的吧。放在那儿，什么沙发都显得小巧。",
+     "可是尺寸都写得很清楚啊。看数字不就知道了吗……。",
+     "数字全都没错，客人也是用卷尺量了房间才下单的。好几位在邮件里这么写了。即便如此，脑子里明白和实际放进房间的感觉还是不一样。",
+     "也有因为配送时的划痕退货的。",
+     "那只有两件，已经跟配送公司说过了。比起那个，我想借一间普通公寓大小的房间重新拍。"
+    ],
+    "options": [
+     "照片上很难感受到沙发的大小",
+     "网站上的尺寸标错了",
+     "配送时沙发被划伤了",
+     "客人没量房间大小就下单了"
+    ]
+   },
+   "en": {
+    "scene": "At a furniture shop, the female manager and a male employee are talking about sofa returns.",
+    "question": "What does the manager think is behind the rise in returns?",
+    "lines": [
+     "Manager, we had twelve returns of sofas ordered online last month alone.",
+     "I saw the report. Reading the reasons, nearly all say 'it was bigger than I expected when it arrived'. I think the photos are probably to blame.",
+     "The photos? You mean they look too good?",
+     "No, it's not about how good they look — it's where they're taken. We shoot ours in that showroom with the high ceiling and all that space, don't we? Any sofa looks compact in there.",
+     "But the dimensions are clearly listed. Surely people can tell from the numbers…",
+     "The numbers were all correct, and customers measured their rooms with a tape before ordering. Several of them said so in their emails. Even so, knowing it in your head is different from how it feels in your room.",
+     "There were some returns for damage during delivery, too.",
+     "Only two, and I've already spoken to the delivery company. More to the point, I'm thinking of renting a room about the size of an ordinary flat and reshooting."
+    ],
+    "options": [
+     "The photos make it hard to sense the sofas' size",
+     "The sizes on the website were wrong",
+     "Sofas were damaged in delivery",
+     "Customers ordered without measuring their rooms"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：店长说：「これ、たぶん写真のせいだと思う。」「あそこに置くと、どんなソファでもこぢんまりして見えるのよ。」\n推理：退货理由大多是“比想象的大”。照片在宽敞的展厅里拍，沙发显得小，客人即使知道尺寸，看照片得到的印象也不对，所以店长打算换个普通房间重拍。尺寸「全部合ってた」；客人也「部屋を測ってから注文」；划痕只有两件。\n容易错：客人其实量过房间；配送划伤只是少数。",
+   "en": "Evidence: The manager says: 「これ、たぶん写真のせいだと思う。」 and 「あそこに置くと、どんなソファでもこぢんまりして見えるのよ。」\nReasoning: Most returns say the sofa was bigger than expected. Shot in a spacious showroom, the sofas look small, so customers get the wrong impression even though they know the dimensions — hence her plan to reshoot in an ordinary room. The sizes were 「全部合ってた」; customers did 「部屋を測ってから注文」; damage accounts for only two cases.\nTrap: customers did measure their rooms; delivery damage is a minor share."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "店长说数字「全部合ってた」。",
+    "en": "She says the numbers were all correct."
+   },
+   {
+    "zh": "划伤只有两件，不是增多的主因。",
+    "en": "Only two returns were for damage."
+   },
+   {
+    "zh": "客人是「メジャーで部屋を測ってから注文」的，正相反。",
+    "en": "Customers measured their rooms — the opposite."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-203",
+  "type": "point",
+  "scene": "美術館で、学芸員が、ある画家の作品について話しています。",
+  "question": "学芸員は、この画家の晩年の作品の特徴は何だと言っていますか。",
+  "lines": [
+   [
+    "F",
+    "こちらの部屋には、画家が七十歳を過ぎてから描いた作品を集めました。若い頃の作品は、先ほどの部屋でご覧いただいたように、大きな画面いっぱいに、赤や青の絵の具をたっぷりと塗り重ねたものでした。晩年になると、目を悪くしたこともあって、画面はひと回り小さくなります。ただ、大きさよりも注目していただきたいのは、紙の白さです。こちらの柿の絵をご覧ください。柿の実が一つと、枝が一本描かれているだけで、あとは何も塗られていません。ところが、じっと見ていると、その白いところに、秋の澄んだ空気や、柿をもいだ人の気配まで感じられてくる。色の鮮やかさそのものは若い頃から変わらないのですが、それを置く場所を、ぐっと絞るようになったんですね。描き込むことより、描かずにおくことで、見る人に語らせる。それがこの時期の絵の一番の持ち味だと、私は考えています。"
+   ]
+  ],
+  "options": [
+   "鮮やかな色を多く使っていること",
+   "大きな画面に描かれていること",
+   "季節の移り変わりを題材にしていること",
+   "描かずに残した部分が多いこと"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "美术馆里，学艺员在介绍一位画家的作品。",
+    "question": "学艺员说这位画家晚年作品的特点是什么？",
+    "lines": [
+     "这个展厅收集的是画家七十岁以后画的作品。年轻时的作品，就像刚才那个展厅里看到的那样，在大幅画面上满满地层层涂上大量的红色和蓝色颜料。到了晚年，加上眼睛不好的原因，画面小了一圈。不过，比起大小，希望大家注意的是纸的白。请看这幅柿子的画。只画了一个柿子和一根树枝，其余什么都没涂。可是，盯着看的时候，从那片白色里，能感受到秋天清澈的空气，甚至摘柿子的人的气息。色彩的鲜艳本身从年轻时就没变，但他把颜色放在哪里，收得越来越紧了。与其画满，不如留白，让看画的人自己去诉说。我认为这正是这一时期作品最大的特色。"
+    ],
+    "options": [
+     "大量使用鲜艳的颜色",
+     "画在大幅画面上",
+     "以季节的变迁为题材",
+     "留下很多不画的部分"
+    ]
+   },
+   "en": {
+    "scene": "At an art museum, a curator is talking about a painter's work.",
+    "question": "What does the curator say is characteristic of the painter's late works?",
+    "lines": [
+     "In this room we've gathered works the painter made after the age of seventy. His early works, as you saw in the previous room, filled large canvases with thick layers of red and blue paint. In his later years, partly because his eyesight failed, the pictures became a size smaller. But more than the size, what I'd like you to notice is the whiteness of the paper. Look at this painting of a persimmon. There's just one persimmon and one branch; nothing else is painted at all. And yet, if you look for a while, in that white space you begin to sense the clear autumn air, even the presence of the person who picked the fruit. The vividness of his colour itself never changed from his youth, but he became far more selective about where to put it. Letting the viewer speak by leaving things unpainted, rather than filling everything in — that, I believe, is what gives the paintings of this period their particular quality."
+    ],
+    "options": [
+     "Using a lot of vivid colour",
+     "Being painted on large canvases",
+     "Taking the changing seasons as a subject",
+     "Leaving many parts unpainted"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：学艺员说：「描き込むことより、描かずにおくことで、見る人に語らせる。それがこの時期の絵の一番の持ち味だ」。\n推理：她让大家注意「紙の白さ」：柿子画只画了一个柿子和一根树枝，其余都是空白，却能让人感受到很多。所以晚年的特点是留白多。色彩的鲜艳「若い頃から変わらない」，不是晚年才有的；画面晚年反而变小了。\n容易错：从年轻时就有的鲜艳色彩；“秋天的空气”只是从柿子画中感受到的例子。",
+   "en": "Evidence: The curator says: 「描き込むことより、描かずにおくことで、見る人に語らせる。それがこの時期の絵の一番の持ち味だ」.\nReasoning: She points to 「紙の白さ」: the persimmon painting shows one fruit and one branch with the rest left blank, yet suggests a great deal. So the late works' feature is the empty space. Vivid colour 「若い頃から変わらない」, so it is not specific to the late period; the canvases actually got smaller.\nTrap: vivid colour, present since his youth; 'autumn air' is just what one senses in the persimmon example."
+  },
+  "wrong": [
+   {
+    "zh": "色彩鲜艳「若い頃から変わらない」，不是晚年的特点；而且晚年用色的地方收紧了。",
+    "en": "Vivid colour was there from his youth, and late on he used it more sparingly."
+   },
+   {
+    "zh": "晚年画面「ひと回り小さく」，正相反。",
+    "en": "Late canvases became smaller — the opposite."
+   },
+   {
+    "zh": "秋天的空气只是柿子画的例子，没说以季节为题材。",
+    "en": "Autumn air is just one example, not his subject."
+   },
+   null
+  ],
+  "traps": [
+   "twisted",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-204",
+  "type": "point",
+  "scene": "女の人と、外国人に日本語を教えるボランティアをしている男の人が話しています。",
+  "question": "男の人は、今何に一番困っていると言っていますか。",
+  "lines": [
+   [
+    "F",
+    "公民館の日本語教室、まだ続けてるんだってね。もう何年になる？"
+   ],
+   [
+    "M",
+    "五年かな。最初は生徒が三人しかいなかったのに、今は二十人を超えてるんだよ。"
+   ],
+   [
+    "F",
+    "すごいじゃない。教える人は足りてるの？ 去年は人がいなくて大変だって言ってたけど。"
+   ],
+   [
+    "M",
+    "それがね、市の広報に載せてもらったら、退職した学校の先生が何人も来てくれて、今は余るくらい。教科書も、市が新しいのをそろえてくれたし。"
+   ],
+   [
+    "F",
+    "じゃあ、順調なんだ。"
+   ],
+   [
+    "M",
+    "うーん、人が増えたら増えたで、別の悩みがあってね。工場で働いてる人は、とにかく職場で指示が分かるようになりたい。留学生は試験に受かりたい。子育て中のお母さんは、学校からのお知らせが読めるようになりたい。同じ教室で同じ教科書を使っていると、どうしても誰かが退屈しちゃうんだよ。"
+   ],
+   [
+    "F",
+    "なるほどね。"
+   ],
+   [
+    "M",
+    "それでも、みんな休まずに来てくれるから、何とかしたいと思ってるんだけど。"
+   ]
+  ],
+  "options": [
+   "教材が足りないこと",
+   "学ぶ目的が人によって違うこと",
+   "ボランティアの人数が少ないこと",
+   "学習者が途中でやめてしまうこと"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个做志愿者教外国人日语的男人在说话。",
+    "question": "男人说他现在最为难的是什么？",
+    "lines": [
+     "听说你还在公民馆的日语教室教课啊。已经几年了？",
+     "五年了吧。一开始只有三个学生，现在超过二十个了。",
+     "真厉害。教的人够吗？去年你说没人，很辛苦。",
+     "说起来，请市里的宣传刊物登了以后，来了好几位退休的学校老师，现在人多得都有富余。教科书市里也给配齐了新的。",
+     "那就很顺利嘛。",
+     "嗯……人多了也有人多的烦恼。在工厂工作的人，首先想听懂工作中的指示。留学生想考过考试。带孩子的妈妈想看懂学校发的通知。在同一个教室用同一本教科书，总会有人觉得无聊。",
+     "原来如此。",
+     "不过大家都不缺课，所以我想想办法。"
+    ],
+    "options": [
+     "教材不够",
+     "每个人学习的目的不同",
+     "志愿者人数少",
+     "学习者半途而废"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man who volunteers teaching Japanese to foreigners are talking.",
+    "question": "What does the man say is his biggest problem now?",
+    "lines": [
+     "I hear you're still running the Japanese class at the community centre. How many years has it been?",
+     "Five, I think. We started with only three students, and now there are more than twenty.",
+     "That's great. Do you have enough teachers? Last year you said you were struggling with no one to help.",
+     "Well, after the city put it in its newsletter, several retired schoolteachers came along, and now we have more than enough. The city bought us new textbooks too.",
+     "So it's all going well, then.",
+     "Hmm, with more people come different worries. People who work in factories mainly want to understand instructions at work. International students want to pass exams. Mothers raising children want to read the notices from school. Using the same textbook in the same class, somebody always ends up bored.",
+     "I see.",
+     "Still, everyone keeps coming without missing a class, so I want to do something about it."
+    ],
+    "options": [
+     "Not having enough teaching materials",
+     "Learners having different goals",
+     "Having too few volunteers",
+     "Learners giving up partway"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「同じ教室で同じ教科書を使っていると、どうしても誰かが退屈しちゃうんだよ。」\n推理：学生增多后，工厂工人、留学生、带孩子的妈妈学日语的目的各不相同，在一个教室里不好教，这是他现在的烦恼。人手去年不够，现在「余るくらい」；教科书市里配齐了；学生「休まずに来てくれる」。\n容易错：去年的问题（人手不足）已经解决；学生并没有放弃。",
+   "en": "Evidence: The man says: 「同じ教室で同じ教科書を使っていると、どうしても誰かが退屈しちゃうんだよ。」\nReasoning: As numbers grew, factory workers, international students and mothers all want Japanese for different reasons, which makes one class hard to teach — that's his current worry. Staff were short last year but are now 「余るくらい」; the city supplied textbooks; students 「休まずに来てくれる」.\nTrap: last year's problem, the staff shortage, already solved; the students are not dropping out."
+  },
+  "wrong": [
+   {
+    "zh": "市里给配齐了新教科书。",
+    "en": "The city supplied new textbooks."
+   },
+   null,
+   {
+    "zh": "那是去年的问题，现在「余るくらい」。",
+    "en": "That was last year; now there are more than enough."
+   },
+   {
+    "zh": "他说大家「休まずに来てくれる」，正相反。",
+    "en": "He says everyone keeps coming — the opposite."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-205",
+  "type": "point",
+  "scene": "自転車の店で、店員の男の人と女の客が話しています。",
+  "question": "女の人が電動自転車を買わないことにしたのはどうしてですか。",
+  "lines": [
+   [
+    "M",
+    "いかがでしたか、電動のほうは。"
+   ],
+   [
+    "F",
+    "坂もすいすい上れて、本当に楽でした。でも、すみません、今回はやめておきます。"
+   ],
+   [
+    "M",
+    "そうですか。お値段のことでしたら、市の補助を使えば三分の二ほどになりますが。"
+   ],
+   [
+    "F",
+    "ええ、それは調べてきました。問題は駐輪場なんです。うちのマンション、前のタイヤを差し込む形のラックなんですけど、さっき比べてみたら、このタイヤだと太すぎて入らないみたいで。"
+   ],
+   [
+    "M",
+    "ああ、なるほど。ラックの横に置いておくわけには……。"
+   ],
+   [
+    "F",
+    "管理会社に聞いたら、ラックの外に置くのは決まりでだめだそうです。"
+   ],
+   [
+    "M",
+    "そうでしたか。重さも、最近のものはだいぶ軽くなってきてますし、充電も電池を外してお部屋でできるので、お客様にはぴったりだと思ったんですが。"
+   ],
+   [
+    "F",
+    "ええ、持ち上げてみて、これなら私でも大丈夫だと思いました。もし引っ越すことがあったら、またお願いします。"
+   ]
+  ],
+  "options": [
+   "値段が予算を超えるから",
+   "重くて扱いにくいから",
+   "家に置く場所がないから",
+   "充電に手間がかかるから"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "自行车店里，男店员和女顾客在说话。",
+    "question": "女人为什么决定不买电动自行车？",
+    "lines": [
+     "电动的那辆，您觉得怎么样？",
+     "上坡也很轻松，真是省力。不过，不好意思，这次还是算了。",
+     "这样啊。价格的话，用市里的补贴大概只要三分之二。",
+     "嗯，那个我查过了。问题在停车处。我们公寓是把前轮插进去的那种车架，刚才比了一下，这个轮胎好像太粗了，插不进去。",
+     "啊，原来如此。放在车架旁边不行吗……。",
+     "我问了管理公司，说规定不能放在车架外面。",
+     "是这样啊。重量的话，最近的车轻多了，充电也可以把电池卸下来在屋里充，我还以为很适合您呢。",
+     "是的，我试着抬了一下，觉得这样的话我也没问题。要是哪天搬家了，再来找您。"
+    ],
+    "options": [
+     "价格超出预算",
+     "太重不好用",
+     "家里没有地方放",
+     "充电费事"
+    ]
+   },
+   "en": {
+    "scene": "At a bicycle shop, a male shop assistant and a female customer are talking.",
+    "question": "Why has the woman decided not to buy an electric bicycle?",
+    "lines": [
+     "How did you find the electric one?",
+     "It went up hills so easily — really effortless. But I'm sorry, I'll pass this time.",
+     "I see. If it's the price, with the city's subsidy it comes to about two-thirds.",
+     "Yes, I looked into that. The problem is the bike parking. My building has racks where you slot the front wheel in, and when I compared just now, this tyre seems too thick to fit.",
+     "Ah, I see. Couldn't you leave it beside the rack…?",
+     "I asked the management company, and the rules don't allow leaving bikes outside the racks.",
+     "I see. They're much lighter these days, and you can take the battery out to charge it indoors, so I thought it'd suit you perfectly.",
+     "Yes, when I lifted it I thought even I could manage. If I ever move, I'll come back."
+    ],
+    "options": [
+     "The price is over her budget",
+     "It's too heavy to handle",
+     "She has nowhere to keep it at home",
+     "Charging is a hassle"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「問題は駐輪場なんです。」「このタイヤだと太すぎて入らないみたいで。」管理公司也说「ラックの外に置くのは決まりでだめ」。\n推理：公寓的车架插不进电动车的粗轮胎，规定又不许放在车架外，所以家里没有地方停。价格她查过补贴，没问题；重量她抬过觉得「大丈夫」；充电可以在屋里。\n容易错：店员提到的价格、重量、充电，她都不觉得是问题。",
+   "en": "Evidence: She says: 「問題は駐輪場なんです。」 and 「このタイヤだと太すぎて入らないみたいで。」 The management company says 「ラックの外に置くのは決まりでだめ」.\nReasoning: The building's racks won't take the thick tyre and the rules forbid parking outside them, so she has nowhere to keep it. She checked the subsidy, so price isn't the issue; she lifted it and found it 「大丈夫」; charging can be done indoors.\nTrap: price, weight and charging — the clerk raises them all, but none bothers her."
+  },
+  "wrong": [
+   {
+    "zh": "她查过补贴（「それは調べてきました」），价格不是问题。",
+    "en": "She looked into the subsidy; price isn't the problem."
+   },
+   {
+    "zh": "她抬过，觉得「これなら私でも大丈夫」。",
+    "en": "She lifted it and found it manageable."
+   },
+   null,
+   {
+    "zh": "电池可以卸下来在屋里充，她没有反对。",
+    "en": "The battery can be charged indoors; she doesn't object."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-206",
+  "type": "point",
+  "scene": "講演会で、気象予報士が話しています。",
+  "question": "予報士は、降水確率を伝えるとき、どうして雨の降り方を一言添えるようにしていますか。",
+  "lines": [
+   [
+    "M",
+    "天気予報でおなじみの降水確率。番組でこの数字をお伝えするとき、私はちょっとした工夫をしています。というのも、「降水確率八十パーセント」と聞くと、大雨になると思ったり、一日の八割は雨が降っていると受け取ったりする方が、思いのほか多いんですね。本来は、ある時間内に一ミリ以上の雨が降る可能性が八割、という意味でしかありません。小雨がぱらっと降ってそれで終わり、ということも十分ありうるわけです。確率そのものの精度は、この二十年でずいぶん上がりましたから、数字を出すこと自体には何の問題もありません。外れたときに視聴者の方からお叱りを受けることもありますが、それは予報士の宿命のようなものですしね。そこで私は、数字のあとに、「降ったとしても、傘が少しの間要る程度でしょう」というふうに、どんな雨になりそうかを一言添えるようにしているんです。"
+   ]
+  ],
+  "options": [
+   "雨の量や長さの目安だと思われがちだから",
+   "予報が外れたときの苦情を減らしたいから",
+   "雨が降る時間帯を伝えたいから",
+   "確率の精度がまだ十分に高くないから"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "讲座上，一位气象预报员在讲话。",
+    "question": "预报员在播报降水概率时，为什么会补充一句雨会怎么下？",
+    "lines": [
+     "天气预报里大家都很熟悉的降水概率。在节目里播报这个数字时，我会下一点小功夫。因为，一听到“降水概率百分之八十”，就以为会下大雨，或者理解成一天里有八成时间在下雨的人，意外地多。它本来的意思只是：在某段时间内下一毫米以上的雨的可能性有八成。完全可能只是稀稀拉拉下点小雨就完了。概率本身的精度这二十年提高了很多，所以给出数字本身没有任何问题。预报不准时也会挨观众的骂，不过这可以说是预报员的宿命吧。所以我会在数字后面补充一句会下什么样的雨，比如“就算下，也就是需要打一会儿伞的程度吧”。"
+    ],
+    "options": [
+     "因为常被当成雨量或下雨时长的标准",
+     "因为想减少预报不准时的投诉",
+     "因为想告诉大家下雨的时间段",
+     "因为概率的精度还不够高"
+    ]
+   },
+   "en": {
+    "scene": "At a public lecture, a weather forecaster is speaking.",
+    "question": "Why does the forecaster add a word about how the rain will fall when he gives the chance of rain?",
+    "lines": [
+     "The chance of rain — familiar to everyone from weather forecasts. When I give this figure on the programme, I do one small thing. The reason is that a surprising number of people, on hearing '80 per cent chance of rain', assume there'll be heavy rain, or take it to mean it'll rain for 80 per cent of the day. Really, it only means there's an 80 per cent likelihood of at least one millimetre of rain within a given period. It's entirely possible there'll just be a brief sprinkle and that's it. The accuracy of the probabilities has improved a lot over the past twenty years, so there's nothing wrong with giving the number itself. Sometimes viewers scold us when we're wrong, but that's just a forecaster's lot. So after the figure I add a word about what kind of rain to expect, like 'even if it does rain, you'll probably only need an umbrella for a little while'."
+    ],
+    "options": [
+     "Because people tend to take it as a measure of how much or how long it rains",
+     "Because he wants fewer complaints when forecasts are wrong",
+     "Because he wants to say when during the day it will rain",
+     "Because the probabilities aren't accurate enough yet"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：预报员说：「大雨になると思ったり、一日の八割は雨が降っていると受け取ったりする方が、思いのほか多いんですね。」\n推理：「というのも」引出理由：很多人把降水概率误解为雨量大小或下雨时间的长短，其实它只表示下一毫米以上雨的可能性。所以他补一句雨会下成什么样。精度「ずいぶん上がりました」，数字本身没问题；挨骂是「宿命」，不是他下功夫的原因。\n容易错：“某段时间内”只是定义的细节；被骂只是顺带提到。",
+   "en": "Evidence: He says: 「大雨になると思ったり、一日の八割は雨が降っていると受け取ったりする方が、思いのほか多いんですね。」\nReasoning: 「というのも」 introduces the reason: many people read the figure as how heavy or how long the rain will be, when it only gives the likelihood of at least 1 mm. So he adds how the rain will fall. Accuracy has 「ずいぶん上がりました」, so the number itself is fine; being scolded is 「宿命」, not why he does it.\nTrap: 'within a given period' is just part of the definition; complaints are mentioned only in passing."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "挨骂他说是「予報士の宿命」，不是下功夫的理由。",
+    "en": "Complaints are 'a forecaster's lot', not his reason."
+   },
+   {
+    "zh": "他只说概率指“某段时间内”的可能性，补充的是雨的下法，不是时间段。",
+    "en": "He only says the figure covers 'a given period'; what he adds is how the rain falls, not when."
+   },
+   {
+    "zh": "他说精度「ずいぶん上がりました」，数字本身没问题。",
+    "en": "He says accuracy has improved a lot."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "denied-guess"
+  ]
+ }
+]

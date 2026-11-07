@@ -1,0 +1,745 @@
+[
+ {
+  "id": "n4-m2-ck-201",
+  "type": "point",
+  "scene": "会社で 男の 人と 女の 人が 話して います。",
+  "question": "女の 人が 自転車で 会社に 来る いちばんの 理由は 何ですか。",
+  "lines": [
+   [
+    "M",
+    "林さん、さいきん 自転車で 会社に 来て いるんだって？ 体の ため？"
+   ],
+   [
+    "F",
+    "うーん、それも 少しは あるけど……。"
+   ],
+   [
+    "M",
+    "電車代が かからないのも いいよね。"
+   ],
+   [
+    "F",
+    "電車代は 会社が はらって くれるから、それは 関係ないの。それに、うちから ここまで 自転車だと 四十分も かかるし。"
+   ],
+   [
+    "M",
+    "四十分？ たいへんだね。"
+   ],
+   [
+    "F",
+    "朝の 電車、すごく こんで いるでしょう。毎日 会社に 着く 前に つかれちゃって いたの。自転車なら、つかれても 気持ちが いいんだ。"
+   ]
+  ],
+  "options": [
+   "体に いいから",
+   "お金が かからないから",
+   "電車が こんで いるから",
+   "会社が 近く なったから"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个男人和一个女人在说话。",
+    "question": "女人骑自行车来公司，最主要的原因是什么？",
+    "lines": [
+     "林，听说你最近骑自行车来公司？是为了身体吗？",
+     "嗯……也有一点这个原因……",
+     "不用花电车费也挺好的吧。",
+     "电车费公司会给报销，所以跟那个没关系。而且从我家骑车到这里要四十分钟呢。",
+     "四十分钟？好辛苦啊。",
+     "早上的电车特别挤，对吧。以前每天还没到公司就累坏了。骑自行车的话，就算累也很舒服。"
+    ],
+    "options": [
+     "因为对身体好",
+     "因为不花钱",
+     "因为电车很挤",
+     "因为公司变近了"
+    ]
+   },
+   "en": {
+    "scene": "At an office, a man and a woman are talking.",
+    "question": "What is the main reason the woman cycles to work?",
+    "lines": [
+     "Hayashi-san, I hear you've been cycling to work lately. Is it for your health?",
+     "Hmm, that's a little bit of it, but...",
+     "Not paying train fares is nice too, isn't it?",
+     "The company pays my train fare, so that has nothing to do with it. Besides, it takes forty minutes by bike from my place.",
+     "Forty minutes? That's tough.",
+     "The morning trains are so crowded, you know. Every day I was worn out before I even got to work. On a bike, even if I get tired, it feels good."
+    ],
+    "options": [
+     "It's good for her health",
+     "It doesn't cost money",
+     "The trains are crowded",
+     "The office has got closer"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「朝の 電車、すごく こんで いるでしょう。毎日 会社に 着く 前に つかれちゃって いたの。」\n推理：为了身体，她只说「それも 少しは ある」，不是最主要的；电车费公司付，「関係ない」；骑车要四十分钟，公司并不近。她真正想说的是早上电车太挤、每天累。\n容易错：只占一点的理由；被否定的猜测；提到了但方向相反的内容。",
+   "en": "Evidence: The woman says 「朝の 電車、すごく こんで いるでしょう。毎日 会社に 着く 前に つかれちゃって いたの。」\nReasoning: Health is only 「それも 少しは ある」, not the main reason; the fare is paid by the company — 「関係ない」; forty minutes by bike means the office isn't close. What she's getting at is the crowded morning trains.\nTrap: a minor reason; a denied guess; a detail that points the other way."
+  },
+  "wrong": [
+   {
+    "zh": "为了身体她只说「少しは ある」，不是最主要的原因。",
+    "en": "Health is only 「少しは ある」 — not the main reason."
+   },
+   {
+    "zh": "电车费公司会付，她说「関係ない」。",
+    "en": "The company pays her fare; she says 「関係ない」."
+   },
+   null,
+   {
+    "zh": "骑车要四十分钟，公司并没有变近。",
+    "en": "It's a forty-minute ride; the office hasn't got closer."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "half-right",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-202",
+  "type": "point",
+  "scene": "男の 人と 女の 人が 映画の 話を して います。",
+  "question": "女の 人は その 映画を 何回 見ましたか。",
+  "lines": [
+   [
+    "M",
+    "「星の 駅」って いう 映画、もう 見た？"
+   ],
+   [
+    "F",
+    "うん。すごく よかったよ。先月 一人で 映画館に 見に 行ったの。"
+   ],
+   [
+    "M",
+    "そうなんだ。ぼくも 見たいと 思って いたんだ。"
+   ],
+   [
+    "F",
+    "よかったら、いっしょに 行く？ 先週も 妹と 見に 行ったんだけど、何回 見ても いいの。"
+   ],
+   [
+    "M",
+    "え、もう 二回も 見たのに？"
+   ],
+   [
+    "F",
+    "うん。それに、おととい テレビでも やって いたから、それも 見ちゃった。"
+   ],
+   [
+    "M",
+    "ほんとうに 好きなんだね。じゃあ、今度の 日曜日に 行こう。"
+   ]
+  ],
+  "options": [
+   "二回",
+   "三回",
+   "四回",
+   "五回"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在聊电影。",
+    "question": "女人看了那部电影几次？",
+    "lines": [
+     "一部叫《星之站》的电影，你看了吗？",
+     "嗯，特别好看。上个月我一个人去电影院看的。",
+     "这样啊。我也一直想看。",
+     "要不要一起去？上周我也和妹妹去看了，看几遍都好看。",
+     "诶，已经看了两次了还要去？",
+     "嗯。而且前天电视上也播了，那个我也看了。",
+     "你是真喜欢啊。那这个星期天去吧。"
+    ],
+    "options": [
+     "两次",
+     "三次",
+     "四次",
+     "五次"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking about a film.",
+    "question": "How many times has the woman seen the film?",
+    "lines": [
+     "Have you seen the film called \"Star Station\" yet?",
+     "Yes. It was really good. I went to see it alone at the cinema last month.",
+     "Oh really? I've been wanting to see it too.",
+     "Want to go together? I went to see it with my sister last week too, but it's good however many times you watch it.",
+     "What, even though you've already seen it twice?",
+     "Yeah. And it was on TV the day before yesterday, so I watched that too.",
+     "You really love it. Okay, let's go this Sunday."
+    ],
+    "options": [
+     "Twice",
+     "Three times",
+     "Four times",
+     "Five times"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「おととい テレビでも やって いたから、それも 見ちゃった。」\n推理：上个月一个人在电影院看了一次，上周和妹妹又看了一次（男的说「もう 二回も」），前天在电视上又看了，一共三次。星期天和男的去是以后的事。\n容易错：数字题——把电视那次漏掉是两次，把星期天也算进去是四次。",
+   "en": "Evidence: The woman says 「おととい テレビでも やって いたから、それも 見ちゃった。」\nReasoning: Once at the cinema alone last month, once with her sister last week (he says 「もう 二回も」), and once on TV the day before yesterday: three. Sunday with him is still to come.\nTrap: a numbers item — missing the TV viewing gives two; counting Sunday gives four."
+  },
+  "wrong": [
+   {
+    "zh": "「二回」是男的以为的次数，后来她说电视上又看了一次。",
+    "en": "「二回」 is what the man thinks; she then adds the TV viewing."
+   },
+   null,
+   {
+    "zh": "星期天和男的去还没看，是以后的事。",
+    "en": "Sunday with the man hasn't happened yet."
+   },
+   {
+    "zh": "对话里没有看过五次。",
+    "en": "Nothing in the talk adds up to five."
+   }
+  ],
+  "traps": [
+   "number",
+   "later"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-203",
+  "type": "point",
+  "scene": "女の 人と 男の 人が 話して います。",
+  "question": "女の 人は 日曜日に 何を しましたか。",
+  "lines": [
+   [
+    "M",
+    "週末、友だちと 山に のぼるって 言って いたよね。どうだった？"
+   ],
+   [
+    "F",
+    "それがね、土曜日は 朝から 雨で、行けなかったの。一日中 うちで ゆっくり して いたよ。"
+   ],
+   [
+    "M",
+    "ざんねんだったね。日曜日は 晴れて いたでしょう？"
+   ],
+   [
+    "F",
+    "うん。だから 日曜日に 行こうって 話して いたんだけど、友だちが かぜを ひいちゃって。"
+   ],
+   [
+    "M",
+    "ああ、それで 行かなかったんだ。"
+   ],
+   [
+    "F",
+    "うん。それで、一人で デパートに 行って、前から ほしかった くつを 買ったの。"
+   ],
+   [
+    "M",
+    "そうか。山は また 今度だね。"
+   ]
+  ],
+  "options": [
+   "デパートで 買い物を した",
+   "山に のぼった",
+   "うちで 休んだ",
+   "友だちの おみまいに 行った"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在说话。",
+    "question": "女人星期天做了什么？",
+    "lines": [
+     "你说过周末要和朋友去爬山吧。怎么样？",
+     "说起来，星期六从早上就下雨，没去成。一整天都在家里悠闲待着。",
+     "真可惜。星期天是晴天吧？",
+     "嗯。所以本来说好星期天去的，结果朋友感冒了。",
+     "啊，所以就没去啊。",
+     "嗯。然后我一个人去了百货商店，买了一直想要的鞋。",
+     "这样啊。爬山就下次吧。"
+    ],
+    "options": [
+     "在百货商店买了东西",
+     "去爬山了",
+     "在家休息了",
+     "去看望朋友了"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking.",
+    "question": "What did the woman do on Sunday?",
+    "lines": [
+     "You said you were going to climb a mountain with a friend at the weekend. How was it?",
+     "Well, on Saturday it rained from the morning, so we couldn't go. I spent the whole day relaxing at home.",
+     "That's a shame. It was sunny on Sunday, wasn't it?",
+     "Yes. So we'd talked about going on Sunday, but my friend caught a cold.",
+     "Ah, so you didn't go.",
+     "No. So I went to the department store by myself and bought some shoes I'd wanted for a while.",
+     "I see. The mountain will have to wait till next time."
+    ],
+    "options": [
+     "Went shopping at a department store",
+     "Climbed a mountain",
+     "Rested at home",
+     "Visited her sick friend"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「それで、一人で デパートに 行って、前から ほしかった くつを 買ったの。」\n推理：星期六下雨，在家待了一天；星期天本来要去爬山，朋友感冒了没去成，「それで」她一个人去百货商店买了鞋。\n容易错：把星期六做的事当成星期天的；计划了但没做的事。",
+   "en": "Evidence: The woman says 「それで、一人で デパートに 行って、前から ほしかった くつを 買ったの。」\nReasoning: Saturday it rained and she stayed home; Sunday's climb fell through because her friend caught a cold, 「それで」 she went to the department store alone and bought shoes.\nTrap: Saturday's activity taken for Sunday's; the plan that didn't happen."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "朋友感冒了，星期天也没去爬山。",
+    "en": "Her friend caught a cold, so the climb didn't happen on Sunday either."
+   },
+   {
+    "zh": "在家待着是星期六下雨的那天。",
+    "en": "Staying home was Saturday, the rainy day."
+   },
+   {
+    "zh": "朋友感冒了，可是她没说去看望朋友，她是一个人去了百货商店。",
+    "en": "Her friend was sick, but she didn't visit — she went to the department store alone."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-204",
+  "type": "point",
+  "scene": "男の 人と 女の 人が 話して います。",
+  "question": "男の 人は 新しい パソコンの 何が よくないと 言って いますか。",
+  "lines": [
+   [
+    "F",
+    "新しい パソコン、買ったんだって？ どう？"
+   ],
+   [
+    "M",
+    "前のより ずっと 軽くて、持って 歩くのが 楽に なったよ。画面も 大きくて きれいだし。"
+   ],
+   [
+    "F",
+    "いいなあ。でも、高かったでしょう？"
+   ],
+   [
+    "M",
+    "それが、セールで 思ったより 安かったんだ。"
+   ],
+   [
+    "F",
+    "よかったね。"
+   ],
+   [
+    "M",
+    "ただ、スピーカーの 音が 小さくて、オンラインの 会議の とき、相手の 声が 聞こえにくいんだ。だから、いつも イヤホンを 使って いるよ。"
+   ]
+  ],
+  "options": [
+   "重い こと",
+   "画面が 見にくい こと",
+   "ねだんが 高い こと",
+   "音が 小さい こと"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "男人说新电脑哪里不好？",
+    "lines": [
+     "听说你买了新电脑？怎么样？",
+     "比以前那台轻多了，带着走轻松了。屏幕也大，又清楚。",
+     "真好。不过很贵吧？",
+     "说起来，赶上打折，比我想的便宜。",
+     "太好了。",
+     "只是音箱声音小，开线上会议的时候听不清对方的声音。所以我一直用耳机。"
+    ],
+    "options": [
+     "重",
+     "屏幕看不清",
+     "价格贵",
+     "声音小"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "What does the man say is not good about his new computer?",
+    "lines": [
+     "I hear you bought a new computer. How is it?",
+     "It's much lighter than my old one, so carrying it around is easy now. The screen's big and clear, too.",
+     "Lucky you. But it must have been expensive.",
+     "Actually, it was on sale, so it was cheaper than I expected.",
+     "That's great.",
+     "The only thing is the speakers are quiet, so in online meetings it's hard to hear people. So I always use earphones."
+    ],
+    "options": [
+     "It's heavy",
+     "The screen is hard to see",
+     "It was expensive",
+     "The sound is quiet"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「スピーカーの 音が 小さくて、オンラインの 会議の とき、相手の 声が 聞こえにくいんだ。」\n推理：他说电脑「ずっと 軽くて」，屏幕「大きくて きれい」，价钱打折「思ったより 安かった」，这些都是优点。不好的只有声音小。\n容易错：问的是缺点，选项里有被说成优点的内容，也有对方猜错的内容。",
+   "en": "Evidence: The man says 「スピーカーの 音が 小さくて、オンラインの 会議の とき、相手の 声が 聞こえにくいんだ。」\nReasoning: It's 「ずっと 軽くて」, the screen 「大きくて きれい」, and on sale it was 「思ったより 安かった」 — all good points. The only problem is the quiet sound.\nTrap: the question asks for a drawback; the other options are things praised or a wrong guess."
+  },
+  "wrong": [
+   {
+    "zh": "他说比以前的轻多了（「ずっと 軽くて」）。",
+    "en": "He says it's much lighter (「ずっと 軽くて」)."
+   },
+   {
+    "zh": "屏幕「大きくて きれい」，是优点。",
+    "en": "The screen is 「大きくて きれい」 — a good point."
+   },
+   {
+    "zh": "女的猜很贵，但打折「思ったより 安かった」。",
+    "en": "She guesses it was expensive, but on sale it was 「思ったより 安かった」."
+   },
+   null
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-205",
+  "type": "point",
+  "scene": "駅で 女の 人と 駅の 人が 話して います。",
+  "question": "女の 人の かさは どれですか。",
+  "lines": [
+   [
+    "F",
+    "すみません、電車の 中に かさを わすれて しまったんですが。"
+   ],
+   [
+    "M",
+    "どんな かさですか。"
+   ],
+   [
+    "F",
+    "長くて、黒い かさです。"
+   ],
+   [
+    "M",
+    "長い 黒い かさですね。少々 お待ち ください。……こちらですか。"
+   ],
+   [
+    "F",
+    "うーん、ちがいますね。……あ、そうだ。今日は 朝 晴れて いたので、かばんに 入る 小さい かさを 持って 出たんでした。"
+   ],
+   [
+    "M",
+    "おりたたみの かさですね。色は？"
+   ],
+   [
+    "F",
+    "色は 同じです。"
+   ],
+   [
+    "M",
+    "では、こちらでしょうか。"
+   ],
+   [
+    "F",
+    "あ、それです。よかった。"
+   ]
+  ],
+  "options": [
+   "長い・黒い",
+   "長い・白い",
+   "おりたたみ・黒い",
+   "おりたたみ・白い"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A long umbrella with a solid black canopy, closed and lying on a counter.",
+   "Simple black-and-white line drawing, no text. A long umbrella with a plain white canopy, closed and lying on a counter.",
+   "Simple black-and-white line drawing, no text. A short folding umbrella with a solid black canopy, folded up and lying on a counter.",
+   "Simple black-and-white line drawing, no text. A short folding umbrella with a plain white canopy, folded up and lying on a counter."
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "车站里一个女人和车站的工作人员在说话。",
+    "question": "女人的伞是哪一把？",
+    "lines": [
+     "不好意思，我把伞忘在电车上了。",
+     "是什么样的伞？",
+     "长的，黑色的伞。",
+     "长的黑伞是吧。请稍等。……是这把吗？",
+     "嗯……不是。……啊，对了。今天早上是晴天，所以我带的是能放进包里的小伞。",
+     "是折叠伞吧。颜色呢？",
+     "颜色一样。",
+     "那是这把吗？",
+     "啊，就是它。太好了。"
+    ],
+    "options": [
+     "长柄・黑色",
+     "长柄・白色",
+     "折叠・黑色",
+     "折叠・白色"
+    ]
+   },
+   "en": {
+    "scene": "At a station, a woman and a station employee are talking.",
+    "question": "Which is the woman's umbrella?",
+    "lines": [
+     "Excuse me, I left my umbrella on the train.",
+     "What kind of umbrella is it?",
+     "A long black one.",
+     "A long black umbrella. One moment, please. ... Is it this one?",
+     "Hmm, no, it isn't. ... Oh, that's right. It was sunny this morning, so I left with a small umbrella that fits in my bag.",
+     "A folding umbrella, then. What colour?",
+     "The same colour.",
+     "Then is it this one?",
+     "Oh, that's it. What a relief."
+    ],
+    "options": [
+     "Long, black",
+     "Long, white",
+     "Folding, black",
+     "Folding, white"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「かばんに 入る 小さい かさを 持って 出たんでした。」，问到颜色时说「色は 同じです。」\n推理：她先说「長くて、黒い」，看了以后说不是，想起来今天带的是能放进包里的小伞，也就是折叠伞；颜色「同じ」，就是一开始说的黑色。所以是黑色折叠伞。\n容易错：只改了长短，颜色没变；被否定的第一次描述。",
+   "en": "Evidence: The woman says 「かばんに 入る 小さい かさを 持って 出たんでした。」, and on colour 「色は 同じです。」\nReasoning: She first says 「長くて、黒い」, then realises today she took a small one that fits in her bag — a folding umbrella; the colour is 「同じ」, the black she first said. So: black and folding.\nTrap: only the length changes, not the colour; the first description she takes back."
+  },
+  "wrong": [
+   {
+    "zh": "长的黑伞是她一开始说的，看了以后说「ちがいます」。",
+    "en": "The long black one is her first description; she then says 「ちがいます」."
+   },
+   {
+    "zh": "不是长伞，颜色也不是白的。",
+    "en": "It's not long, and it's not white."
+   },
+   null,
+   {
+    "zh": "颜色「同じ」，是黑色，不是白色。",
+    "en": "The colour is 「同じ」 — black, not white."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "half-right"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-206",
+  "type": "point",
+  "scene": "公園で 男の 人と 女の 人が 話して います。",
+  "question": "女の 人の 犬は どれですか。",
+  "lines": [
+   [
+    "M",
+    "犬が たくさん いるね。田中さんの 犬は どの 子？ あの 大きい 犬？"
+   ],
+   [
+    "F",
+    "ううん、うちの 子は まだ 子犬だから、小さいの。"
+   ],
+   [
+    "M",
+    "じゃあ、あそこで ボールで 遊んで いる、耳が 立って いる 子？"
+   ],
+   [
+    "F",
+    "あれは 山下さんの 犬。うちの 子は 耳が 立って いなくて、下を 向いて いるの。ほら、今 こっちに 走って くる 子。"
+   ],
+   [
+    "M",
+    "ああ、かわいいね。"
+   ]
+  ],
+  "options": [
+   "小さい・耳が 下を 向いて いる",
+   "大きい・耳が 立って いる",
+   "小さい・耳が 立って いる",
+   "大きい・耳が 下を 向いて いる"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A small puppy with soft, floppy ears hanging down, sitting and facing forward next to a park bench.",
+   "Simple black-and-white line drawing, no text. A large dog with pointed, upright ears, sitting and facing forward next to a park bench.",
+   "Simple black-and-white line drawing, no text. A small puppy with pointed, upright ears, sitting and facing forward next to a park bench.",
+   "Simple black-and-white line drawing, no text. A large dog with soft, floppy ears hanging down, sitting and facing forward next to a park bench."
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "公园里一个男人和一个女人在说话。",
+    "question": "女人的狗是哪一只？",
+    "lines": [
+     "好多狗啊。田中，你的狗是哪只？那只大的？",
+     "不是，我家的还是小狗，很小的。",
+     "那是那边在玩球的、耳朵竖着的那只？",
+     "那是山下家的狗。我家的耳朵不是竖着的，是朝下的。你看，现在朝这边跑过来的那只。",
+     "啊，真可爱。"
+    ],
+    "options": [
+     "小・耳朵朝下",
+     "大・耳朵竖着",
+     "小・耳朵竖着",
+     "大・耳朵朝下"
+    ]
+   },
+   "en": {
+    "scene": "In a park, a man and a woman are talking.",
+    "question": "Which is the woman's dog?",
+    "lines": [
+     "There are lots of dogs. Which one is yours, Tanaka-san? That big one?",
+     "No, mine is still a puppy, so it's small.",
+     "Then the one playing with a ball over there, with its ears standing up?",
+     "That's Yamashita-san's dog. Mine's ears don't stand up — they point down. Look, the one running this way now.",
+     "Oh, it's cute."
+    ],
+    "options": [
+     "Small, ears pointing down",
+     "Large, upright ears",
+     "Small, upright ears",
+     "Large, ears pointing down"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「うちの 子は まだ 子犬だから、小さいの。」，又说「うちの 子は 耳が 立って いなくて、下を 向いて いるの。」\n推理：男的猜大狗，她说是小狗；男的又猜耳朵竖着的那只，她说那是山下家的，她家的耳朵不竖、朝下。所以是小、耳朵朝下。\n容易错：把别人家狗的特征安上来。",
+   "en": "Evidence: The woman says 「うちの 子は まだ 子犬だから、小さいの。」, and 「うちの 子は 耳が 立って いなくて、下を 向いて いるの。」\nReasoning: He guesses the big dog — hers is small; he guesses the one with upright ears — that's Yamashita-san's; hers has ears that point down. So: small, ears pointing down.\nTrap: features of another person's dog."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "她的狗是小狗，耳朵也不是竖着的。",
+    "en": "Hers is small, and its ears don't stand up."
+   },
+   {
+    "zh": "耳朵竖着的是山下家的狗。",
+    "en": "The one with upright ears is Yamashita-san's."
+   },
+   {
+    "zh": "她的狗还是小狗，不大。",
+    "en": "Hers is still a puppy — not big."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "other-option-attribute"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-207",
+  "type": "point",
+  "scene": "男の 人と 女の 人が 電話で 話して います。",
+  "question": "二人は どこで 会いますか。",
+  "lines": [
+   [
+    "M",
+    "あしたの 日曜日、びじゅつかんに 行くのは 二時だよね。どこで 会う？ びじゅつかんの 前で いい？"
+   ],
+   [
+    "F",
+    "びじゅつかんの 前は 人が 多くて、見つけにくいよ。駅の 北口は どう？"
+   ],
+   [
+    "M",
+    "北口は 今 工事を して いて、出られないんだよ。"
+   ],
+   [
+    "F",
+    "そうなんだ。じゃあ、南口を 出た ところの きっさてんで、お茶を 飲んでから 行く？"
+   ],
+   [
+    "M",
+    "いいね。あ、でも、あの 店、日曜日は 休みだよ。"
+   ],
+   [
+    "F",
+    "そうだった。じゃあ、駅の 前の 本屋に しよう。中で 待って いれば、雨が ふっても だいじょうぶだし。"
+   ],
+   [
+    "M",
+    "うん、そう しよう。"
+   ]
+  ],
+  "options": [
+   "びじゅつかんの 前",
+   "駅の 前の 本屋",
+   "駅の 北口",
+   "きっさてん"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在打电话。",
+    "question": "两个人在哪里见面？",
+    "lines": [
+     "明天星期天，去美术馆是两点吧。在哪儿见？美术馆门口行吗？",
+     "美术馆门口人多，不好找。车站北口怎么样？",
+     "北口现在在施工，出不去。",
+     "这样啊。那在南口出来那家咖啡店喝杯茶再去？",
+     "好啊。啊，不过那家店星期天休息。",
+     "对哦。那就定在车站前的书店吧。在里面等的话，下雨也没关系。",
+     "嗯，就这样。"
+    ],
+    "options": [
+     "美术馆门口",
+     "车站前的书店",
+     "车站北口",
+     "咖啡店"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking on the phone.",
+    "question": "Where will they meet?",
+    "lines": [
+     "We're going to the art museum at two tomorrow, Sunday, right? Where shall we meet? In front of the museum?",
+     "It's crowded in front of the museum, so it's hard to find each other. How about the station's north exit?",
+     "The north exit is under construction now — you can't get out that way.",
+     "I see. Then shall we have a cup of tea at the café just outside the south exit before going in?",
+     "Sounds good. Oh, but that café is closed on Sundays.",
+     "That's right. Then let's make it the bookshop in front of the station. If we wait inside, it's fine even if it rains.",
+     "Okay, let's do that."
+    ],
+    "options": [
+     "In front of the art museum",
+     "The bookshop in front of the station",
+     "The station's north exit",
+     "The café"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「じゃあ、駅の 前の 本屋に しよう。」，男的说「うん、そう しよう。」\n推理：美术馆门口人多「見つけにくい」；北口在施工「出られない」；咖啡店「日曜日は 休み」，明天正是星期天。最后定在车站前的书店。\n容易错：条件对不上——每个地点都有一个去不了或不方便的理由。",
+   "en": "Evidence: The woman says 「じゃあ、駅の 前の 本屋に しよう。」, and he says 「うん、そう しよう。」\nReasoning: The museum entrance is crowded, 「見つけにくい」; the north exit is closed for work, 「出られない」; the café is 「日曜日は 休み」, and tomorrow is Sunday. So the bookshop.\nTrap: conflicting conditions — every other place has a reason it won't work."
+  },
+  "wrong": [
+   {
+    "zh": "美术馆门口人多，不好找。",
+    "en": "It's crowded in front of the museum and hard to find each other."
+   },
+   null,
+   {
+    "zh": "北口在施工，出不去。",
+    "en": "The north exit is under construction and closed."
+   },
+   {
+    "zh": "那家咖啡店星期天休息，明天是星期天。",
+    "en": "The café is closed on Sundays, and tomorrow is Sunday."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "not-possible"
+  ]
+ }
+]
