@@ -1225,9 +1225,48 @@ async function furiganaText(kuro, text) {
 // surrounding plain text all match; `before`/`after` see the text with tags
 // and readings stripped, so a neighbouring ruby reads as its bare kanji.
 const RUBY_FIXES = [
+  // ── Mock tests 2 (2026-11-08): readings Gemini flagged in context ──
+  { kanji: "分", from: /^ぶん$/, before: /[二五九]\s*$/, to: "ふん" },              // 五分 = ごふん
+  { kanji: "間", from: /^(ま|かん)$/, before: /(その|この)\s*$/, after: /^\s*[、,]?\s*(私|わたし|僕|ぼく|連絡|に|は|、)/, to: "あいだ" },
+  { kanji: "後", from: /^ご$/, before: /の\s*$/, to: "あと" },                      // テストの後, 仕事の後
+  { kanji: "四", from: /^よん$/, after: /^(時|人)/, to: "よ" },                     // 四時間, 四人
+  { kanji: "日", from: /^にち$/, before: /(ある|\]\])\s*$/, to: "ひ" },              // ある日 (also with the blank before it)
+  { kanji: "月", from: /^.+$/, before: /[（(]$/, after: /^[）)]/, to: "げつ" },        // dates: (月)(火)…
+  { kanji: "火", from: /^.+$/, before: /[（(]$/, after: /^[）)]/, to: "か" },
+  { kanji: "水", from: /^.+$/, before: /[（(]$/, after: /^[）)]/, to: "すい" },
+  { kanji: "木", from: /^.+$/, before: /[（(]$/, after: /^[）)]/, to: "もく" },
+  { kanji: "金", from: /^.+$/, before: /[（(]$/, after: /^[）)]/, to: "きん" },
+  { kanji: "土", from: /^.+$/, before: /[（(]$/, after: /^[）)]/, to: "ど" },
+  { kanji: "行", from: /^こう$/, before: /[二三四五六七八九十何数]$/, to: "ぎょう" },   // 三行
+  { kanji: "何人", from: /^なにびと$/, after: /^(?!たりとも)/, to: "なんにん" },
+  { kanji: "国", from: /^こく$/, after: /^\s*[へに]\s*(帰|かえ)/, to: "くに" },
+  { kanji: "表", from: /^おもて$/, after: /^計算/, to: "ひょう" },
+  { kanji: "私", from: /^わたし$/, after: /^ども/, to: "わたくし" },
+  { kanji: "本", from: /^ほん$/, before: /[三何]$/, to: "ぼん" },
+  { kanji: "本", from: /^ほん$/, before: /[一六八十]$/, to: "ぽん" },
+  { kanji: "方", from: /^ほう$/, before: /(る|ない)$/, after: /^(の多く|なんです)/, to: "かた" },
+  { kanji: "箱", from: /^はこ$/, before: /十$/, to: "ぱこ" },
+  { kanji: "八", from: /^はち$/, after: /^百/, to: "はっ" },
+  { kanji: "空", from: /^あ$/, before: /(電車|バス|道|店)[がもは]?$/, to: "す" },
+  { kanji: "夜市", from: /^.+$/, to: "よいち" },
+  { kanji: "市", from: /^し$/, before: /夜$/, to: "いち" },
+  { kanji: "夜", from: /^よる$/, after: /^市/, to: "よ" },
+  { kanji: "札", from: /^さつ$/, before: /(番号|名|整理|値)の?$/, to: "ふだ" },
+  { kanji: "山道", from: /^さんどう$/, to: "やまみち" },
+  { kanji: "何", from: /^なに$/, after: /^であれ/, to: "なん" },
+  { kanji: "市場", from: /^いちば$/, after: /^(を開拓|に参入|規模|調査|の拡大|経済|価格|シェア)/, to: "しじょう" },
+  { kanji: "口", from: /^くち$/, before: /(入り|出|窓|改札|非常|裏)$/, to: "ぐち" },
+  { kanji: "所", from: /^しょ$/, before: /(給水|印刷)$/, to: "じょ" },
+  { kanji: "印刷所", from: /^いんさつしょ$/, to: "いんさつじょ" },
+  { kanji: "場", from: /^じょう$/, before: /稽古$/, to: "ば" },
+  { kanji: "一言", from: /^いちげん$/, after: /^(?!居士)/, to: "ひとこと" },
+  { kanji: "帰", from: /^き$/, after: /^す/, to: "かえ" },
+  { kanji: "軽", from: /^けい$/, after: /^め/, to: "かる" },
+  { kanji: "年", from: /^とし$/, after: /^に[数一二三何]/, to: "ねん" },
+  { kanji: "大", from: /^だい$/, after: /^ごと/, to: "おお" },
   // ── N1 lessons (76–92): context-specific readings; listed first so they win
   // over the general rules below. ──
-  { kanji: "店", from: /^(てん|みせ)$/, before: /(号|人気|高級|飲食|専門|支|本)$/, to: "てん" },
+  { kanji: "店", from: /^(てん|みせ)$/, before: /(号|人気|高級|飲食|専門|支|本|料理)$/, to: "てん" },
   { kanji: "階", from: /^かい$/, before: /([3３三]|何)$/, to: "がい" },   // 3階・何階 = さんがい・なんがい
   { kanji: "今", from: /^(いま|こん)$/, after: /^(シーズン|大会|年度|世紀|学期|週|期)/, to: "こん" },
   { kanji: "形", from: /^(がた|かたち|けい)$/, before: /(といい|といわず)$/, to: "かたち" },
@@ -1418,6 +1457,8 @@ function fixReadings(html) {
     );
     html = html.replace(re, ruby(kanji, reading));
   }
+  // 一日中外に: kuromoji reads 中外 (ちゅうがい) as one word.
+  html = html.replace(new RegExp("(日<rp>\\(</rp><rt>[^<]*</rt><rp>\\)</rp></ruby>)" + ruby("中外", "ちゅうがい").replace(/[()]/g, "\\$&"), "g"), (m, d) => d + ruby("中", "じゅう") + ruby("外", "そと"));
   // 昔々 = むかしむかし (kuromoji leaves 々 bare).
   html = html.replace(new RegExp(ruby("昔", "むかし").replace(/[()]/g, "\\$&") + "々", "g"), ruby("昔々", "むかしむかし"));
   // Digit + 日 / 日間 counts days: 3日 = みっか, 3日間 = みっかかん.
