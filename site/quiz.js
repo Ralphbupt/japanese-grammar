@@ -963,7 +963,7 @@
         var k = ids.indexOf(x), aa = c.answers[x];
         return '<button class="q-cell' + (aa && aa.c != null ? ' q-cell-done' : '') + (c.flagsQ[x] ? ' q-cell-flag' : '') + (x === id ? ' q-cell-on' : '') + '" data-act="m-go" data-k="' + k + '">' + (k + 1) + '</button>';
       }).join('') + '</div>';
-    }).join('') + '<button class="q-btn q-btn-primary" data-act="m-end">' + (c.si < c.secs.length - 1 ? t('结束本节，进入下一节', 'End this section') : t('交卷', 'Submit')) + '</button></div>';
+    }).join('') + '<button class="q-btn q-btn-primary" data-act="m-end">' + (c.si < c.secs.length - 1 ? t('结束本节，进入下一节', 'End section, go to the next') : t('交卷', 'Submit')) + '</button></div>';
     h += '<div class="q-card"><p class="q-prob"><b>' + t('问题 ', 'もんだい') + prob.no + '</b> ' + esc(D.types[prob.type].ja) + ' <small class="q-muted">' + esc(bi(D.types[prob.type])) + '</small><span class="q-qno">' + (c.at + 1) + '</span></p>' +
       passageHtml(g1 > g0 ? { passage: q.passage, blank: null } : q) + (g1 > g0 ? '' : '<div class="q-stem" lang="ja">' + stemHtml(q) + '</div>');
     if (g1 > g0) {
@@ -985,7 +985,10 @@
         '<button class="q-btn' + (c.flagsQ[id] ? ' q-flagged' : '') + '" data-act="m-flag">⚑ ' + t('标记', 'Flag') + '</button></div>';
     }
     h += '<div class="q-actions q-nav"><button class="q-btn" data-act="m-go" data-k="' + (g0 - 1) + '"' + (g0 ? '' : ' disabled') + '>← ' + t('上一题', 'Prev') + '</button>' +
-      (g1 < ids.length - 1 ? '<button class="q-btn q-btn-primary" data-act="m-go" data-k="' + (g1 + 1) + '">' + t('下一题', 'Next') + ' →</button>' : '<button class="q-btn q-btn-primary" data-act="m-sheet">' + t('检查答题卡', 'Review answer sheet') + '</button>') + '</div></div>';
+      // The last question: a reader expects "Next" to go on, so the way to the next
+      // section (or to submit) is right here, with the answer sheet beside it.
+      (g1 < ids.length - 1 ? '<button class="q-btn q-btn-primary" data-act="m-go" data-k="' + (g1 + 1) + '">' + t('下一题', 'Next') + ' →</button>' :
+        '<button class="q-btn" data-act="m-sheet">' + t('检查答题卡', 'Review answer sheet') + '</button><button class="q-btn q-btn-primary" data-act="m-end">' + (c.si < c.secs.length - 1 ? t('结束本节，进入下一节', 'End section, go to the next') + ' →' : t('交卷', 'Submit')) + '</button>') + '</div></div>';
     app.innerHTML = h;
     if (g1 > g0) {
       curs = {};
@@ -1752,6 +1755,7 @@
       var more = el.closest('details').querySelector('.q-report-more'); more.hidden = false; more.querySelector('textarea').focus();
     }
     else if (act === 'report-send') {
+      el.disabled = true;   // one report per tap: the box only goes away once the request is back
       var det = el.closest('details'), id = cur.q.id, reason = det.getAttribute('data-reason');
       var last = (S.answers[id] || []).slice(-1)[0];
       if (S.reported.indexOf(id) < 0) S.reported.push(id);
