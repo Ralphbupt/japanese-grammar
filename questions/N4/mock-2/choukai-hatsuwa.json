@@ -1,0 +1,292 @@
+[
+ {
+  "id": "n4-m2-ck-401",
+  "type": "hatsuwa",
+  "scene": "旅行に 来て います。友だちと 二人の 写真を とって ほしいです。近くに いる 人に たのみます。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A sightseeing spot with an old temple gate in the background. Two young women stand side by side. One of them holds out a small camera toward a middle-aged man who is walking past, smiling as she speaks to him.",
+   "arrow": "the young woman holding out the camera"
+  },
+  "options": [
+   "すみません、写真を とって あげましょうか。",
+   "すみません、写真を とって いただけませんか。",
+   "すみません、ここで 写真を とっても いいですか。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "你在旅行。想请人给你和朋友两个人拍张照。拜托附近的人。",
+    "question": "怎么说？",
+    "options": [
+     "不好意思，我来帮您拍照吧？",
+     "不好意思，能请您帮我们拍张照吗？",
+     "不好意思，可以在这里拍照吗？"
+    ]
+   },
+   "en": {
+    "scene": "You're on a trip and want someone to take a photo of you and your friend together. You ask a person nearby:",
+    "question": "What do you say?",
+    "options": [
+     "Excuse me, shall I take a photo for you?",
+     "Excuse me, could you take a photo for us?",
+     "Excuse me, may I take photos here?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「写真を とって ほしいです。近くに いる 人に たのみます。」，说话的是箭头指的拿着相机的女人。\n推理：「〜て ほしい」是想让对方做，请陌生人帮忙要用「〜て いただけませんか」：「とって いただけませんか」。拍照的是对方。\n容易错：「とって あげましょうか」是自己主动帮别人拍；「とっても いいですか」是问能不能拍，是请求许可。",
+   "en": "Evidence: The scene: 「写真を とって ほしいです。近くに いる 人に たのみます。」 The speaker is the woman with the camera, as the arrow shows.\nReasoning: 「〜て ほしい」 means she wants him to do it, so she asks a stranger with 「〜て いただけませんか」: 「とって いただけませんか」. He takes the photo.\nTrap: 「とって あげましょうか」 offers to take one for him; 「とっても いいですか」 asks permission to take photos."
+  },
+  "wrong": [
+   {
+    "zh": "「とって あげましょうか」是你主动替对方拍，方向反了。",
+    "en": "「とって あげましょうか」 offers to take his photo — the wrong way round."
+   },
+   null,
+   {
+    "zh": "「とっても いいですか」是问自己能不能拍照，不是请对方拍。",
+    "en": "「とっても いいですか」 asks if you may take photos, not asks him to take one."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-402",
+  "type": "hatsuwa",
+  "scene": "電車で すわって います。おばあさんが 乗って きて、前に 立ちました。せきを かわりたいです。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "Inside a train carriage. A young man sits on a long bench seat. An elderly woman with a walking stick stands in front of him, holding a hanging strap. The young man is starting to stand up and looking up at her.",
+   "arrow": "the young man on the seat"
+  },
+  "options": [
+   "あの、どうぞ、ここに すわって ください。",
+   "すみません、ここに すわっても いいですか。",
+   "すみません、せきを かわって もらえますか。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "你在电车上坐着。一位老奶奶上车，站在了你前面。你想给她让座。",
+    "question": "怎么说？",
+    "options": [
+     "那个，请坐这里吧。",
+     "不好意思，我可以坐这里吗？",
+     "不好意思，能跟我换个座位吗？"
+    ]
+   },
+   "en": {
+    "scene": "You're sitting on a train. An elderly woman gets on and stands in front of you. You want to give her your seat.",
+    "question": "What do you say?",
+    "options": [
+     "Um, please, have a seat here.",
+     "Excuse me, may I sit here?",
+     "Excuse me, could you swap seats with me?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「せきを かわりたいです。」，说话的是箭头指的坐着的年轻男人。\n推理：让座是请老奶奶坐，用「どうぞ、すわって ください」。坐下的是老奶奶。\n容易错：「すわっても いいですか」是自己想坐；「かわって もらえますか」是请对方让给你，立场反了。",
+   "en": "Evidence: The scene: 「せきを かわりたいです。」 The speaker is the seated young man, as the arrow shows.\nReasoning: Giving up a seat means inviting her to sit: 「どうぞ、すわって ください」. She is the one who sits.\nTrap: 「すわっても いいですか」 asks to sit yourself; 「かわって もらえますか」 asks her to give you a seat — reversed."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「すわっても いいですか」是你自己想坐，可是你已经坐着了。",
+    "en": "「すわっても いいですか」 asks if you can sit — but you're already sitting."
+   },
+   {
+    "zh": "「かわって もらえますか」是请对方让座给你，方向反了。",
+    "en": "「かわって もらえますか」 asks her to swap with you — the wrong way round."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-403",
+  "type": "hatsuwa",
+  "scene": "レストランで 食事が 終わりました。お金を はらいたいです。店の 人に 言います。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A small restaurant. A man sits alone at a table with empty plates in front of him. He raises one hand toward a waitress who is walking past with a tray.",
+   "arrow": "the man sitting at the table with his hand raised"
+  },
+  "options": [
+   "お会計は あちらで お願いします。",
+   "ありがとうございました。また どうぞ。",
+   "すみません、お会計を お願いします。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在餐厅吃完饭了。想付钱。对店员说。",
+    "question": "怎么说？",
+    "options": [
+     "请到那边结账。",
+     "谢谢光临，欢迎再来。",
+     "不好意思，麻烦结账。"
+    ]
+   },
+   "en": {
+    "scene": "You've finished eating at a restaurant and want to pay. You say to the staff:",
+    "question": "What do you say?",
+    "options": [
+     "Please pay over there.",
+     "Thank you very much. Please come again.",
+     "Excuse me, the bill, please."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「お金を はらいたいです。店の 人に 言います。」，说话的是箭头指的举手的客人。\n推理：客人要结账，叫店员说「すみません、お会計を お願いします」。\n容易错：「お会計は あちらで」和「また どうぞ」都是店员对客人说的话，说话人不对。",
+   "en": "Evidence: The scene: 「お金を はらいたいです。店の 人に 言います。」 The speaker is the customer with his hand up, as the arrow shows.\nReasoning: A customer asking to pay calls the staff with 「すみません、お会計を お願いします」.\nTrap: 「お会計は あちらで」 and 「また どうぞ」 are what staff say to customers — wrong speaker."
+  },
+  "wrong": [
+   {
+    "zh": "「お会計は あちらで お願いします」是店员告诉客人去哪里付钱。",
+    "en": "「お会計は あちらで お願いします」 is staff telling a customer where to pay."
+   },
+   {
+    "zh": "「また どうぞ」是店员送客人时说的话。",
+    "en": "「また どうぞ」 is what staff say when a customer leaves."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "timing"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-404",
+  "type": "hatsuwa",
+  "scene": "友だちの うちに あそびに 来ました。友だちの お母さんが ドアを 開けて くれました。これから うちに 入ります。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "The front entrance of a house. A girl of about fifteen stands just inside the open front door, bowing slightly. A smiling middle-aged woman, her friend's mother, holds the door open for her.",
+   "arrow": "the girl at the door"
+  },
+  "options": [
+   "ただいま。",
+   "おじゃまします。",
+   "いらっしゃい。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "你来朋友家玩。朋友的妈妈给你开了门。你要进屋了。",
+    "question": "怎么说？",
+    "options": [
+     "我回来了。",
+     "打扰了。",
+     "欢迎。"
+    ]
+   },
+   "en": {
+    "scene": "You've come to play at a friend's house. Your friend's mother has opened the door for you. You're about to go in.",
+    "question": "What do you say?",
+    "options": [
+     "I'm home.",
+     "Excuse me for intruding.",
+     "Welcome."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「友だちの うちに あそびに 来ました。……これから うちに 入ります。」，说话的是箭头指的站在门口的女孩。\n推理：进别人家时说「おじゃまします」。\n容易错：「ただいま」是回自己家时说的；「いらっしゃい」是家里的人迎接客人时说的，是朋友妈妈的话。",
+   "en": "Evidence: The scene: 「友だちの うちに あそびに 来ました。……これから うちに 入ります。」 The speaker is the girl at the door, as the arrow shows.\nReasoning: Entering someone else's home, you say 「おじゃまします」.\nTrap: 「ただいま」 is for coming home to your own house; 「いらっしゃい」 is the host's welcome — the mother's line."
+  },
+  "wrong": [
+   {
+    "zh": "「ただいま」是回到自己家时说的。",
+    "en": "「ただいま」 is said when you come home to your own house."
+   },
+   null,
+   {
+    "zh": "「いらっしゃい」是朋友妈妈迎接你时说的话。",
+    "en": "「いらっしゃい」 is what your friend's mother says to welcome you."
+   }
+  ],
+  "traps": [
+   "timing",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-405",
+  "type": "hatsuwa",
+  "scene": "友だちに 本を 借りて いました。読み終わったので、今日 返します。友だちに 言います。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A school corridor. A young man holds out a book with both hands toward a young woman, his friend, and smiles. She is reaching out to take it.",
+   "arrow": "the young man holding out the book"
+  },
+  "options": [
+   "この 本、貸して くれて ありがとう。",
+   "この 本、借りて くれて ありがとう。",
+   "この 本、貸して あげるよ。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "你借了朋友的书。看完了，今天还给他。对朋友说。",
+    "question": "怎么说？",
+    "options": [
+     "谢谢你借给我这本书。",
+     "谢谢你借走这本书。",
+     "这本书借给你吧。"
+    ]
+   },
+   "en": {
+    "scene": "You borrowed a book from a friend. You've finished it and are returning it today. You say to your friend:",
+    "question": "What do you say?",
+    "options": [
+     "Thanks for lending me this book.",
+     "Thanks for borrowing this book from me.",
+     "I'll lend you this book."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「友だちに 本を 借りて いました。……今日 返します。」，说话的是箭头指的拿着书的男人。\n推理：书是朋友借给你的，道谢要说「貸して くれて ありがとう」（谢谢你借给我）。「貸す」是借出，「借りる」是借入。\n容易错：「借りて くれて」变成朋友借了你的东西；「貸して あげる」是你借给朋友，方向都反了。",
+   "en": "Evidence: The scene: 「友だちに 本を 借りて いました。……今日 返します。」 The speaker is the young man with the book, as the arrow shows.\nReasoning: Your friend lent you the book, so you thank them with 「貸して くれて ありがとう」. 「貸す」 is to lend, 「借りる」 to borrow.\nTrap: 「借りて くれて」 makes the friend the borrower; 「貸して あげる」 has you lending it — both reversed."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「借りて くれて」意思是朋友借了你的书，方向反了。",
+    "en": "「借りて くれて」 means the friend borrowed it from you — reversed."
+   },
+   {
+    "zh": "「貸して あげる」是你要把书借给朋友，可是书本来就是朋友的。",
+    "en": "「貸して あげる」 offers to lend it — but it's your friend's book."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "timing"
+  ]
+ }
+]

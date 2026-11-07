@@ -1,0 +1,639 @@
+[
+ {
+  "id": "n1-m2-ck-501",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "いくら急いでいたとはいえ、お客様のお名前を間違えるのは、いただけないね。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "ありがとうございます。遠慮なくいただきます。",
+   "申し訳ありません。以後、気をつけます。",
+   "ええ、急いだかいがありました。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "就算再怎么赶时间，把客人的名字弄错也太不像话了。"
+    ],
+    "options": [
+     "谢谢，那我就不客气了。",
+     "非常抱歉，以后一定注意。",
+     "是啊，赶得值了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "However much of a hurry you were in, getting a customer's name wrong isn't acceptable."
+    ],
+    "options": [
+     "Thank you, I'll gladly accept.",
+     "I'm very sorry. I'll be careful from now on.",
+     "Yes, it was worth hurrying."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「いくら急いでいたとはいえ、お客様のお名前を間違えるのは、いただけないね。」\n推理：「いただけない」是“不像话、不能接受”，「〜とはいえ」是“虽说……”。她在批评男的弄错了客人的名字，男的应该道歉。\n容易错：把「いただけない」听成“收下、吃”的「いただく」；她是在批评，不是夸赶得好。",
+   "en": "Evidence: The woman says: 「いくら急いでいたとはいえ、お客様のお名前を間違えるのは、いただけないね。」\nReasoning: 「いただけない」 means 'unacceptable, not good', and 「〜とはいえ」 means 'even though'. She is criticising him for getting the name wrong, so an apology fits.\nTrap: hearing 「いただけない」 as 「いただく」 (receive / eat); taking criticism as praise for hurrying."
+  },
+  "wrong": [
+   {
+    "zh": "把「いただけない」当成“收下”的「いただく」。",
+    "en": "Mistakes 「いただけない」 for 'receive'."
+   },
+   null,
+   {
+    "zh": "她是在批评，不是说赶得值。",
+    "en": "She's criticising him, not praising his speed."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-502",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "今度来た課長、相当な切れ者らしいよ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "じゃあ、うかうかしてられないね。",
+   "えっ、すぐ怒る人なの？ 困ったなあ。",
+   "刃物を扱う仕事をしてた人なのかな。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "听说新来的科长是个相当能干的人。"
+    ],
+    "options": [
+     "那可不能掉以轻心了。",
+     "啊？是动不动就发火的人吗？真头疼。",
+     "是做过用刀的工作的人吗？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I hear the new section chief is extremely sharp."
+    ],
+    "options": [
+     "Then we can't afford to slack off.",
+     "What, is he someone who loses his temper easily? That's a pain.",
+     "Did he use to work with knives or something?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「今度来た課長、相当な切れ者らしいよ。」\n推理：「切れ者」是头脑敏锐、办事能干的人。上司很能干，自己不能马虎，「うかうかしてられない」（不能掉以轻心）最自然。\n容易错：把「切れ者」和“发火”的「キレる」混淆；从「切れ」联想到刀。",
+   "en": "Evidence: The man says: 「今度来た課長、相当な切れ者らしいよ。」\nReasoning: 「切れ者」 is a sharp, highly capable person. With such a boss, 「うかうかしてられない」 (we can't be careless) fits best.\nTrap: confusing 「切れ者」 with 「キレる」 (lose one's temper); linking 「切れ」 to knives."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「切れ者」是能干，不是爱发火（「キレる」）。",
+    "en": "「切れ者」 means capable, not hot-tempered."
+   },
+   {
+    "zh": "从「切れ」联想到刀，照搬了字面。",
+    "en": "Takes 「切れ」 literally as cutting."
+   }
+  ],
+  "traps": [
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-503",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "その企画書、出す前に、もう少し練ったほうがいいんじゃない？"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "じゃあ、出す前に何回か練習しておきます。",
+   "よかった。このまま出しても大丈夫そうですね。",
+   "そうですね。もう一度、中身を見直してみます。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "那份企划书，交之前再推敲一下比较好吧？"
+    ],
+    "options": [
+     "那交之前我先练习几遍。",
+     "太好了，看来就这样交也没问题。",
+     "是啊，我再看看内容。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Shouldn't you work on that proposal a bit more before you hand it in?"
+    ],
+    "options": [
+     "Then I'll practise it a few times before handing it in.",
+     "Great. It looks fine to hand in as it is, then.",
+     "You're right. I'll go over the content again."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「その企画書、出す前に、もう少し練ったほうがいいんじゃない？」\n推理：「練る」在这里是“推敲、仔细琢磨（计划、文章）”。她建议交之前再修改，男的说再看看内容，最合适。\n容易错：「練る」和「練習」都有「練」，但企划书不是用来练习的；她是在说还不行，不是说可以交了。",
+   "en": "Evidence: The woman says: 「その企画書、出す前に、もう少し練ったほうがいいんじゃない？」\nReasoning: 「練る」 here means to polish or refine a plan or text. She suggests revising it before submitting, so going over the content again fits.\nTrap: 「練る」 and 「練習」 share 「練」, but a proposal isn't something you rehearse; she means it isn't ready, not that it's fine."
+  },
+  "wrong": [
+   {
+    "zh": "把「練る」听成「練習」。",
+    "en": "Confuses 「練る」 with 「練習」 (practice)."
+   },
+   {
+    "zh": "她是说还需要修改，正相反。",
+    "en": "She means it needs work — the opposite."
+   },
+   null
+  ],
+  "traps": [
+   "repeat-word",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-504",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "あの店、味はともかく、店員の態度がどうもね。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "うん。確かに、料理はちょっと塩辛かったね。",
+   "店員さんの感じがいいと、また行きたくなるよね。",
+   "ああ、注文しても返事すらしてくれないもんね。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "那家店，味道先不说，店员的态度实在是……。"
+    ],
+    "options": [
+     "嗯，菜确实有点咸。",
+     "店员感觉好的话，就还想再去呢。",
+     "是啊，点菜了连应一声都没有。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "That place — leaving the food aside, the staff's attitude is a bit much."
+    ],
+    "options": [
+     "Yeah, the food was a bit salty, it's true.",
+     "When the staff are nice, it makes you want to go back.",
+     "Yeah, they don't even answer when you order."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「あの店、味はともかく、店員の態度がどうもね。」\n推理：「〜はともかく」是“……先不说”，他没有评价味道，不满的是店员的态度。女的举出店员不应声的例子表示同意，最自然。\n容易错：把「味はともかく」听成说味道不好；他说的是态度不好，不是好。",
+   "en": "Evidence: The man says: 「あの店、味はともかく、店員の態度がどうもね。」\nReasoning: 「〜はともかく」 means 'leaving ... aside', so he isn't judging the taste; his complaint is the staff's attitude. Agreeing with an example of rude staff fits.\nTrap: hearing 「味はともかく」 as a complaint about the taste; he says the attitude is bad, not good."
+  },
+  "wrong": [
+   {
+    "zh": "「味はともかく」是不谈味道，他不满的是态度。",
+    "en": "He sets the taste aside; his complaint is the attitude."
+   },
+   {
+    "zh": "他说态度不好，这里却说店员感觉好。",
+    "en": "He says the staff are rude; this assumes they're nice."
+   },
+   null
+  ],
+  "traps": [
+   "repeat-word",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-505",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "お忙しいところ恐縮ですが、来月から担当が変わる件、どうぞお含みおきください。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "承知しました。心に留めておきます。",
+   "では、その分も料金に含めておきます。",
+   "いえ、こちらこそお忙しいところすみません。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "百忙之中打扰了，下个月起负责人要更换的事，还请您知悉。"
+    ],
+    "options": [
+     "明白了，我会记在心上。",
+     "那我把这部分也算进费用里。",
+     "不，我才是在您百忙之中打扰了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I'm sorry to bother you when you're busy, but please bear in mind that the person in charge will change from next month."
+    ],
+    "options": [
+     "Understood. I'll keep that in mind.",
+     "Then I'll include that in the fee as well.",
+     "No, I'm the one who should apologise for bothering you."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「来月から担当が変わる件、どうぞお含みおきください。」\n推理：「お含みおきください」是郑重地请对方“事先了解、记在心里”。男的回答「承知しました。心に留めておきます」，正好对应。\n容易错：把「含む」当成“包含在费用里”；「お忙しいところ」是她的客套话，男的不用反过来道歉。",
+   "en": "Evidence: The woman says: 「来月から担当が変わる件、どうぞお含みおきください。」\nReasoning: 「お含みおきください」 is a formal request to 'please be aware of / keep in mind'. 「承知しました。心に留めておきます」 matches it.\nTrap: taking 「含む」 as 'include in the price'; 「お忙しいところ」 is her politeness, which he needn't return with an apology."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "把「お含みおき」当成“包含”，照搬了「含」。",
+    "en": "Takes 「含み」 as 'include'."
+   },
+   {
+    "zh": "客套话用错了地方，打扰的是她，不是他。",
+    "en": "She's the one bothering him; the apology is misplaced."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "timing"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-506",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "駅前に百円で食べ放題の店ができたって話、どうも眉唾だと思うんだけど。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "そうだね。安くておいしいって評判だもんね。",
+   "だよね。いくら何でも、その値段はありえないよ。",
+   "じゃあ、行列ができる前に行かないとね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "听说车站前开了家一百日元随便吃的店，我总觉得这事靠不住。"
+    ],
+    "options": [
+     "是啊，都说又便宜又好吃。",
+     "就是嘛，再怎么说也不可能是那个价。",
+     "那得趁排队之前去。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "That story about an all-you-can-eat place for 100 yen opening by the station — I'm pretty sceptical."
+    ],
+    "options": [
+     "Right, it's got a reputation for being cheap and good.",
+     "Exactly. That price just isn't possible, whatever they say.",
+     "Then we'd better go before the queues start."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「どうも眉唾だと思うんだけど。」\n推理：「眉唾（もの）」是“可疑、靠不住”。他怀疑这个消息是真的，女的附和「いくら何でも、その値段はありえない」，最自然。\n容易错：另外两个都把消息当真了，和他的怀疑相反。",
+   "en": "Evidence: The man says: 「どうも眉唾だと思うんだけど。」\nReasoning: 「眉唾（もの）」 means 'dubious, not to be trusted'. He doubts the story, and agreeing that 「いくら何でも、その値段はありえない」 fits.\nTrap: the other two both take the story as true, the opposite of his doubt."
+  },
+  "wrong": [
+   {
+    "zh": "他怀疑这个消息，这里却当真了。",
+    "en": "He doubts the story; this takes it as true."
+   },
+   null,
+   {
+    "zh": "把消息当真，想去排队，和他的怀疑相反。",
+    "en": "This believes the story and plans to go."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "intent"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-507",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "せっかくのお誘いを無にするようで心苦しいんですが、今回はちょっと……。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "よかった。じゃあ、当日を楽しみにしてます。",
+   "いえいえ、こちらこそお誘いいただいて。",
+   "いえ、お気になさらず。また次の機会にでも。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "辜负了您的一番邀请，心里很过意不去，不过这次实在是……。"
+    ],
+    "options": [
+     "太好了，那我期待当天。",
+     "哪里哪里，我才要谢谢您的邀请。",
+     "没关系，请别介意。下次有机会再说。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I feel bad turning down your kind invitation, but this time I'm afraid…"
+    ],
+    "options": [
+     "Great. I'll look forward to the day, then.",
+     "Not at all, thank you for inviting me.",
+     "Not at all, don't worry. Another time, perhaps."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「せっかくのお誘いを無にするようで心苦しいんですが、今回はちょっと……。」\n推理：「無にする」是“辜负、白费”，「今回はちょっと……」是委婉地拒绝。是男的邀请了她，她在拒绝，男的应该表示没关系、下次再约。\n容易错：把拒绝听成接受；立场反了——发出邀请的是男的。",
+   "en": "Evidence: The woman says: 「せっかくのお誘いを無にするようで心苦しいんですが、今回はちょっと……。」\nReasoning: 「無にする」 means to waste someone's kindness, and 「今回はちょっと……」 is a soft refusal. He invited her and she is declining, so he should say it's fine and suggest another time.\nTrap: hearing the refusal as acceptance; reversed roles — he is the one who invited."
+  },
+  "wrong": [
+   {
+    "zh": "她是在拒绝，不是答应。",
+    "en": "She's declining, not accepting."
+   },
+   {
+    "zh": "立场反了，发出邀请的是男的。",
+    "en": "Reversed roles — he did the inviting."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-508",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "この雨じゃ、明日の花火大会は、中止になったも同然だね。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "楽しみにしてたのに、残念だなあ。",
+   "よかった。雨でもやるんだね。",
+   "えっ、もう中止って発表されたの？"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "下这么大的雨，明天的烟花大会跟取消了差不多吧。"
+    ],
+    "options": [
+     "我还挺期待的，真可惜。",
+     "太好了，下雨也照样办啊。",
+     "啊？已经宣布取消了吗？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "With this rain, tomorrow's fireworks are as good as cancelled."
+    ],
+    "options": [
+     "I was looking forward to it — what a shame.",
+     "Great, so it's on even in the rain.",
+     "What, have they already announced it's cancelled?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「この雨じゃ、明日の花火大会は、中止になったも同然だね。」\n推理：「〜も同然」是“和……差不多、几乎等于”。还没正式宣布，但这雨看来办不成了。女的表示可惜最自然。\n容易错：「も同然」不是“已经宣布取消”；也不是照样举办。",
+   "en": "Evidence: The man says: 「この雨じゃ、明日の花火大会は、中止になったも同然だね。」\nReasoning: 「〜も同然」 means 'as good as'. It hasn't been officially called off, but with this rain it won't happen. Expressing disappointment fits.\nTrap: 「も同然」 doesn't mean it's been announced; nor does it mean the event goes ahead."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "他说几乎等于取消，正相反。",
+    "en": "He says it's as good as cancelled — the opposite."
+   },
+   {
+    "zh": "「も同然」是“差不多”，还没正式宣布。",
+    "en": "「も同然」 means 'as good as'; nothing has been announced."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "tense"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-509",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "あのレストラン、予約が取れないことで有名だけど、行ってみたら、それほどでもなかったよ。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "へえ、そんなにおいしかったんだ。",
+   "そうなんだ。期待しすぎちゃったのかもね。",
+   "じゃあ、結局予約が取れなかったんだね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "那家餐厅以订不到位出名，可去了一看，也没那么好。"
+    ],
+    "options": [
+     "哦，那么好吃啊。",
+     "这样啊，可能是期望太高了吧。",
+     "那最后还是没订到啊。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "That restaurant's famous for being impossible to book, but when I actually went, it wasn't all that great."
+    ],
+    "options": [
+     "Wow, so it was that good.",
+     "Really? Maybe you expected too much.",
+     "So you couldn't get a booking in the end."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「行ってみたら、それほどでもなかったよ。」\n推理：「それほどでもない」是“没有（传说中）那么好”。她去过了，觉得一般，男的说「期待しすぎちゃったのかもね」最自然。\n容易错：把「それほど」听成“非常好”；她已经去过了，不是没订到。",
+   "en": "Evidence: The woman says: 「行ってみたら、それほどでもなかったよ。」\nReasoning: 「それほどでもない」 means 'not as good as people say'. She went and found it ordinary, so 「期待しすぎちゃったのかもね」 fits.\nTrap: hearing 「それほど」 as 'so good'; she did go, so the booking wasn't the problem."
+  },
+  "wrong": [
+   {
+    "zh": "她说“没那么好”，正相反。",
+    "en": "She says it wasn't that good — the opposite."
+   },
+   null,
+   {
+    "zh": "她「行ってみたら」，已经去过了。",
+    "en": "She says she went."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-510",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "先方、うちの見積もりには、難色を示してるみたいですよ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "じゃあ、金額をもう少し見直してみようか。",
+   "よかった。今週中には契約できそうだね。",
+   "色の案を、いくつか出し直したほうがいいかな。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "对方好像对我们的报价面有难色。"
+    ],
+    "options": [
+     "那再重新考虑一下金额吧。",
+     "太好了，这周之内应该能签约了。",
+     "是不是该重新提几个颜色方案？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "It seems the client isn't happy with our estimate."
+    ],
+    "options": [
+     "Then let's take another look at the price.",
+     "Great. Looks like we can sign this week.",
+     "Maybe we should come up with some new colour options."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「先方、うちの見積もりには、難色を示してるみたいですよ。」\n推理：「難色を示す」是“表示不同意、面有难色”。对方对报价不满意，所以女的说重新考虑金额，最自然。\n容易错：把不满意听成满意；从「色」联想到颜色方案。",
+   "en": "Evidence: The man says: 「先方、うちの見積もりには、難色を示してるみたいですよ。」\nReasoning: 「難色を示す」 means to show reluctance or disapproval. The client is unhappy with the estimate, so reconsidering the price fits.\nTrap: hearing disapproval as approval; linking 「色」 to colour options."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "对方不满意，不可能马上签约。",
+    "en": "The client is unhappy, so no quick signing."
+   },
+   {
+    "zh": "照搬了「色」，「難色」和颜色无关。",
+    "en": "Takes 「色」 literally; 「難色」 has nothing to do with colour."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-511",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "この件の進め方は、君の判断に委ねるよ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "では、部長のご判断をお待ちしています。",
+   "えっ、私の判断が間違っていたんでしょうか。",
+   "分かりました。責任を持って進めます。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这件事怎么推进，就交给你来判断了。"
+    ],
+    "options": [
+     "那我等您的判断。",
+     "啊？是我的判断错了吗？",
+     "明白了，我会负责推进。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I'll leave it to your judgement how to proceed with this."
+    ],
+    "options": [
+     "Then I'll wait for your decision.",
+     "What? Was my judgement wrong?",
+     "Understood. I'll take responsibility and get on with it."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「この件の進め方は、君の判断に委ねるよ。」\n推理：「委ねる」是“交给、托付”。上司把怎么做交给她决定，她回答「責任を持って進めます」最自然。\n容易错：立场反了——做判断的是她，不是部长；他是在信任她，不是批评。",
+   "en": "Evidence: The man says: 「この件の進め方は、君の判断に委ねるよ。」\nReasoning: 「委ねる」 means to entrust. The boss leaves the decision to her, so 「責任を持って進めます」 fits.\nTrap: reversed roles — she makes the decision, not the boss; he is showing trust, not criticising."
+  },
+  "wrong": [
+   {
+    "zh": "立场反了，做判断的是她自己。",
+    "en": "Reversed roles — she's the one deciding."
+   },
+   {
+    "zh": "他是在托付，不是说她错了。",
+    "en": "He's entrusting her, not saying she was wrong."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ }
+]

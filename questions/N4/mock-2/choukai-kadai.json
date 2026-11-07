@@ -1,0 +1,882 @@
+[
+ {
+  "id": "n4-m2-ck-101",
+  "type": "kadai",
+  "scene": "ホテルで 女の 人と ホテルの 人が 話して います。",
+  "question": "女の 人は このあと まず 何を しますか。",
+  "lines": [
+   [
+    "F",
+    "すみません、よやくした 森ですが。"
+   ],
+   [
+    "M",
+    "森さまですね。お待ちして おりました。お部屋は 三階で ございます。"
+   ],
+   [
+    "F",
+    "ありがとうございます。電車で つかれたので、先に おふろに 入りたいんですが。"
+   ],
+   [
+    "M",
+    "もうしわけございません。おふろは 今 そうじを して いて、六時からなんです。"
+   ],
+   [
+    "F",
+    "そうですか。じゃあ、それまで 町を 少し 歩いて こようかな。でも、その 前に にもつを へやに おいて こないと……。"
+   ],
+   [
+    "M",
+    "おにもつは 私が お部屋に 運んで おきますので、どうぞ そのまま お出かけ ください。"
+   ],
+   [
+    "F",
+    "たすかります。夕ごはんは 何時からですか。"
+   ],
+   [
+    "M",
+    "七時からで ございます。"
+   ],
+   [
+    "F",
+    "わかりました。じゃあ、行って きます。"
+   ]
+  ],
+  "options": [
+   "にもつを へやに おく",
+   "おふろに 入る",
+   "町を さんぽする",
+   "夕ごはんを 食べる"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "酒店里一个女人和酒店的工作人员在说话。",
+    "question": "女人接下来首先要做什么？",
+    "lines": [
+     "你好，我是预约过的森。",
+     "是森女士吧，恭候您多时了。您的房间在三楼。",
+     "谢谢。坐电车有点累了，我想先去泡个澡。",
+     "非常抱歉，浴池现在正在打扫，六点才开放。",
+     "这样啊。那在那之前我去镇上走走吧。不过之前得先把行李放到房间里……",
+     "行李我帮您送到房间，您就这样直接出门吧。",
+     "帮大忙了。晚饭几点开始？",
+     "七点开始。",
+     "知道了。那我出去了。"
+    ],
+    "options": [
+     "把行李放到房间",
+     "泡澡",
+     "在镇上散步",
+     "吃晚饭"
+    ]
+   },
+   "en": {
+    "scene": "At a hotel, a woman and a hotel employee are talking.",
+    "question": "What will the woman do first?",
+    "lines": [
+     "Hello, I'm Mori — I have a reservation.",
+     "Ms. Mori, welcome, we've been expecting you. Your room is on the third floor.",
+     "Thank you. The train ride tired me out, so I'd like to take a bath first.",
+     "I'm very sorry. The bath is being cleaned right now; it opens at six.",
+     "I see. Then maybe I'll take a little walk around town until then. But first I'll have to drop my bags in the room...",
+     "I'll take your bags up to the room, so please go out just as you are.",
+     "That helps a lot. What time is dinner?",
+     "Dinner is from seven.",
+     "All right. I'll be off, then."
+    ],
+    "options": [
+     "Put her bags in the room",
+     "Take a bath",
+     "Take a walk around town",
+     "Eat dinner"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「じゃあ、それまで 町を 少し 歩いて こようかな。」，酒店的人说「おにもつは 私が お部屋に 運んで おきますので、どうぞ そのまま お出かけ ください。」\n推理：她想先泡澡，可是浴池「六時からなんです」；所以改成在那之前去镇上走走。行李由酒店的人送，她「そのまま」出门。晚饭七点，更晚。\n容易错：想做却做不了的事；别人替她做的事；之后才做的事。",
+   "en": "Evidence: The woman says 「じゃあ、それまで 町を 少し 歩いて こようかな。」, and the clerk says 「おにもつは 私が お部屋に 運んで おきますので、どうぞ そのまま お出かけ ください。」\nReasoning: She wants a bath first, but it's 「六時からなんです」, so she'll walk around town until then. The clerk takes her bags, so she goes out 「そのまま」. Dinner is at seven, later.\nTrap: something she can't do yet; something someone else does for her; something that comes later."
+  },
+  "wrong": [
+   {
+    "zh": "行李由酒店的人送到房间（「私が お部屋に 運んで おきます」）。",
+    "en": "The clerk will take her bags up (「私が お部屋に 運んで おきます」)."
+   },
+   {
+    "zh": "浴池正在打扫，「六時から」才能用。",
+    "en": "The bath is being cleaned and opens 「六時から」."
+   },
+   null,
+   {
+    "zh": "晚饭「七時から」，是散步回来以后的事。",
+    "en": "Dinner is 「七時から」, after her walk."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "someone-else",
+   "later"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-102",
+  "type": "kadai",
+  "scene": "会社で 女の 人と 男の 人が 話して います。",
+  "question": "男の 人は 何人で 店を よやくしますか。",
+  "lines": [
+   [
+    "F",
+    "金曜日の 食事会、何人 来るか わかった？"
+   ],
+   [
+    "M",
+    "うん。ぼくと 木村さんと 山本さんと 中川さんで、四人。"
+   ],
+   [
+    "F",
+    "私も 行けるように なったから、入れて。"
+   ],
+   [
+    "M",
+    "いいよ。じゃあ、五人だね。あ、そうだ、木村さんは その 日、仕事で 大阪に 行く ことに なったって。"
+   ],
+   [
+    "F",
+    "そうなんだ。そう いえば、山本さんの 奥さんも 来たいって 言って なかった？"
+   ],
+   [
+    "M",
+    "うん、さっき 山本さんに 聞いたら、来るって。じゃあ、その 人数で 店に 電話して おくね。"
+   ]
+  ],
+  "options": [
+   "四人",
+   "五人",
+   "六人",
+   "七人"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个女人和一个男人在说话。",
+    "question": "男人按几个人预约餐厅？",
+    "lines": [
+     "星期五的聚餐，知道有几个人来了吗？",
+     "嗯。我、木村、山本和中川，四个人。",
+     "我也能去了，算我一个。",
+     "好啊。那就是五个人。啊，对了，木村那天要去大阪出差。",
+     "这样啊。说起来，山本的太太不是也说想来吗？",
+     "嗯，刚才问了山本，说她会来。那我就按这个人数给餐厅打电话。"
+    ],
+    "options": [
+     "四个人",
+     "五个人",
+     "六个人",
+     "七个人"
+    ]
+   },
+   "en": {
+    "scene": "At an office, a woman and a man are talking.",
+    "question": "For how many people will the man book the restaurant?",
+    "lines": [
+     "Do you know how many are coming to Friday's dinner?",
+     "Yeah. Me, Kimura, Yamamoto and Nakagawa — four.",
+     "I can come now too, so count me in.",
+     "Sure. That makes five. Oh, right — Kimura has to go to Osaka for work that day.",
+     "I see. By the way, didn't Yamamoto's wife say she wanted to come too?",
+     "Yes, I just asked Yamamoto and she's coming. I'll call the restaurant with that number."
+    ],
+    "options": [
+     "Four",
+     "Five",
+     "Six",
+     "Seven"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的最后说：「その 人数で 店に 電話して おくね。」\n推理：一开始四个人；女的也能去，变成「五人」；木村要去大阪，减一个，回到四个；山本的太太「来るって」，再加一个，是五个人。\n容易错：数字题——四个人是最初的人数，六个人是忘了减掉木村。",
+   "en": "Evidence: The man finally says 「その 人数で 店に 電話して おくね。」\nReasoning: It starts at four; the woman joins — 「五人」; Kimura goes to Osaka, back to four; Yamamoto's wife 「来るって」, so five.\nTrap: a numbers item — four is the first count; six forgets to take Kimura off."
+  },
+  "wrong": [
+   {
+    "zh": "四个人是最开始的人数，后来女的和山本的太太加进来，木村去不了。",
+    "en": "Four is the first count; the woman and Yamamoto's wife join and Kimura drops out."
+   },
+   null,
+   {
+    "zh": "六个人是忘了木村要去大阪、来不了。",
+    "en": "Six forgets that Kimura is going to Osaka and can't come."
+   },
+   {
+    "zh": "七个人是把所有提到的人都算上了。",
+    "en": "Seven counts everyone mentioned, including Kimura."
+   }
+  ],
+  "traps": [
+   "number",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-103",
+  "type": "kadai",
+  "scene": "図書館で 男の 学生と 図書館の 人が 話して います。",
+  "question": "男の 学生は このあと 何を しますか。",
+  "lines": [
+   [
+    "M",
+    "すみません、この 本を 借りたいんですが。"
+   ],
+   [
+    "F",
+    "図書館の カードは お持ちですか。"
+   ],
+   [
+    "M",
+    "いいえ、はじめて 来たので、まだ ないんです。"
+   ],
+   [
+    "F",
+    "では、カードを 作りましょう。学生証を 見せて ください。"
+   ],
+   [
+    "M",
+    "あ、学生証……うちに おいて きて しまいました。"
+   ],
+   [
+    "F",
+    "そうですか。学生証が ないと、カードは 作れないんです。その 本は 借りたい 人が 多いので、今日は よやくだけ して おきませんか。名前と 電話番号を 書けば できますよ。"
+   ],
+   [
+    "M",
+    "じゃあ、そう します。あした 学生証を 持って、カードを 作りに 来ます。"
+   ]
+  ],
+  "options": [
+   "本を よやくする",
+   "カードを 作る",
+   "本を 借りる",
+   "学生証を 取りに 帰る"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "图书馆里一个男学生和图书馆的工作人员在说话。",
+    "question": "男学生接下来要做什么？",
+    "lines": [
+     "不好意思，我想借这本书。",
+     "您有图书馆的卡吗？",
+     "没有，我是第一次来，还没有。",
+     "那我们来办卡吧。请出示学生证。",
+     "啊，学生证……忘在家里了。",
+     "这样啊。没有学生证就办不了卡。这本书想借的人很多，今天先预约一下怎么样？写上名字和电话号码就可以。",
+     "那就这样吧。明天我带学生证来办卡。"
+    ],
+    "options": [
+     "预约这本书",
+     "办卡",
+     "借书",
+     "回家拿学生证"
+    ]
+   },
+   "en": {
+    "scene": "At a library, a male student and a librarian are talking.",
+    "question": "What will the student do now?",
+    "lines": [
+     "Excuse me, I'd like to borrow this book.",
+     "Do you have a library card?",
+     "No, this is my first time here, so I don't have one yet.",
+     "Then let's make you one. Please show me your student ID.",
+     "Oh, my student ID... I've left it at home.",
+     "I see. We can't make a card without a student ID. A lot of people want that book, so why not just reserve it today? You can do that by writing your name and phone number.",
+     "I'll do that, then. I'll come back tomorrow with my student ID to make a card."
+    ],
+    "options": [
+     "Reserve the book",
+     "Make a library card",
+     "Borrow the book",
+     "Go home for his student ID"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：图书馆的人说：「今日は よやくだけ して おきませんか。」，男的回答「じゃあ、そう します。」\n推理：没有学生证「カードは 作れない」，没有卡也借不了书；所以今天只预约。办卡是「あした」带学生证来的时候。\n容易错：做不到的事；改到明天的事。",
+   "en": "Evidence: The librarian says 「今日は よやくだけ して おきませんか。」, and he answers 「じゃあ、そう します。」\nReasoning: Without his ID 「カードは 作れない」, and without a card he can't borrow; so today he only reserves the book. The card is for 「あした」 when he brings his ID.\nTrap: what he can't do; what is put off until tomorrow."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "没有学生证办不了卡，办卡是明天的事。",
+    "en": "He can't make a card without his ID; that's tomorrow."
+   },
+   {
+    "zh": "没有卡借不了书。",
+    "en": "Without a card he can't borrow the book."
+   },
+   {
+    "zh": "他说「あした」带学生证来，不是现在回家拿。",
+    "en": "He says he'll bring the ID 「あした」, not go home for it now."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "later"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-104",
+  "type": "kadai",
+  "scene": "日本語学校で 女の 学生と 先生が 話して います。",
+  "question": "女の 学生は これから まず 何を しますか。",
+  "lines": [
+   [
+    "F",
+    "先生、スピーチ大会の 作文、今日から 書き始めても いいですか。"
+   ],
+   [
+    "M",
+    "その 前に、何に ついて 話すか 決めて、先生に 教えて ください。ほかの 人と 同じに ならないように したいので。"
+   ],
+   [
+    "F",
+    "はい、もう 決めました。「私の 国の お正月」です。"
+   ],
+   [
+    "M",
+    "いいですね。じゃあ、それで 書いて ください。"
+   ],
+   [
+    "F",
+    "書く 前に、図書館で しらべた ほうが いいでしょうか。"
+   ],
+   [
+    "M",
+    "自分の 国の ことですから、しらべなくても だいじょうぶですよ。書けたら、クラスの みんなの 前で 一度 れんしゅうしましょう。"
+   ],
+   [
+    "F",
+    "はい、わかりました。"
+   ]
+  ],
+  "options": [
+   "話す ことを 先生に 言う",
+   "図書館で しらべる",
+   "みんなの 前で れんしゅうする",
+   "スピーチの 作文を 書く"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "日语学校里一个女学生和老师在说话。",
+    "question": "女学生接下来首先要做什么？",
+    "lines": [
+     "老师，演讲比赛的稿子，我今天开始写可以吗？",
+     "在那之前，先定好讲什么，告诉我。我不想和别人的重复。",
+     "好的，已经定了。是《我们国家的新年》。",
+     "不错。那就按这个写吧。",
+     "写之前，是不是先去图书馆查一查比较好？",
+     "是你自己国家的事，不查也没关系。写好以后，在全班同学面前练习一次吧。",
+     "好的，知道了。"
+    ],
+    "options": [
+     "把要讲的内容告诉老师",
+     "在图书馆查资料",
+     "在大家面前练习",
+     "写演讲稿"
+    ]
+   },
+   "en": {
+    "scene": "At a Japanese language school, a female student and a teacher are talking.",
+    "question": "What will the student do first?",
+    "lines": [
+     "Sensei, may I start writing my speech contest essay today?",
+     "Before that, decide what you'll talk about and tell me. I don't want it to be the same as anyone else's.",
+     "Yes, I've already decided: \"New Year in My Country\".",
+     "Good. Then write it on that.",
+     "Before I write, would it be better to look things up at the library?",
+     "It's about your own country, so you don't need to look anything up. Once it's written, let's practise it once in front of the whole class.",
+     "Yes, I understand."
+    ],
+    "options": [
+     "Tell the teacher her topic",
+     "Look things up at the library",
+     "Practise in front of everyone",
+     "Write her speech"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：老师说：「じゃあ、それで 書いて ください。」\n推理：老师要她先定题目告诉老师，她当场就说了（「もう 決めました」），这一步已经完成。去图书馆查，老师说「しらべなくても だいじょうぶ」。在全班面前练习是「書けたら」以后。所以先写稿子。\n容易错：对话里已经做完的事；不需要做的事；写完以后的事。",
+   "en": "Evidence: The teacher says 「じゃあ、それで 書いて ください。」\nReasoning: He wants her topic first, and she tells him on the spot (「もう 決めました」), so that's done. The library: 「しらべなくても だいじょうぶ」. Practising in class comes 「書けたら」. So she writes first.\nTrap: something done during the talk; something not needed; something for after writing."
+  },
+  "wrong": [
+   {
+    "zh": "题目她在对话里已经告诉老师了（「もう 決めました」）。",
+    "en": "She has already told him her topic in the conversation (「もう 決めました」)."
+   },
+   {
+    "zh": "老师说不用查（「しらべなくても だいじょうぶ」）。",
+    "en": "He says she needn't (「しらべなくても だいじょうぶ」)."
+   },
+   {
+    "zh": "在全班面前练习是「書けたら」以后的事。",
+    "en": "Practising in class comes 「書けたら」 — after it's written."
+   },
+   null
+  ],
+  "traps": [
+   "done-already",
+   "order",
+   "later"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-105",
+  "type": "kadai",
+  "scene": "花屋で 女の 人と 店の 人が 話して います。",
+  "question": "女の 人は どの 花を 買いますか。",
+  "lines": [
+   [
+    "F",
+    "すみません、友だちが 新しい 店を 開くので、お祝いに 花を おくりたいんですが。"
+   ],
+   [
+    "M",
+    "おめでとうございます。こちらの バラは いかがですか。"
+   ],
+   [
+    "F",
+    "きれいですね。でも、その 友だちは バラが あまり 好きじゃ ないんです。ひまわりは ありますか。"
+   ],
+   [
+    "M",
+    "もうしわけございません。ひまわりは 今日は もう 売れて しまいました。チューリップか、こちらの 小さい 木は いかがですか。木は 長く 楽しめますよ。"
+   ],
+   [
+    "F",
+    "木も いいですね。でも、友だちは 花が 大好きなので、花の ほうが よろこぶと 思います。チューリップを ください。"
+   ],
+   [
+    "M",
+    "ありがとうございます。"
+   ]
+  ],
+  "options": [
+   "バラ",
+   "ひまわり",
+   "チューリップ",
+   "小さい 木"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A bouquet of roses wrapped in paper, lying on a shop counter.",
+   "Simple black-and-white line drawing, no text. A bouquet of sunflowers wrapped in paper, lying on a shop counter.",
+   "Simple black-and-white line drawing, no text. A bouquet of tulips wrapped in paper, lying on a shop counter.",
+   "Simple black-and-white line drawing, no text. A small potted tree in a plain round pot, standing on a shop counter."
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "花店里一个女人和店员在说话。",
+    "question": "女人买哪种花？",
+    "lines": [
+     "你好，朋友要开新店，我想送花祝贺一下。",
+     "恭喜。这边的玫瑰怎么样？",
+     "真漂亮。不过那个朋友不太喜欢玫瑰。有向日葵吗？",
+     "非常抱歉，向日葵今天已经卖完了。郁金香，或者这边的小树怎么样？树可以长时间欣赏哦。",
+     "树也不错。不过朋友特别喜欢花，我想送花她会更高兴。请给我郁金香。",
+     "谢谢您。"
+    ],
+    "options": [
+     "玫瑰",
+     "向日葵",
+     "郁金香",
+     "小树"
+    ]
+   },
+   "en": {
+    "scene": "At a flower shop, a woman and a shop clerk are talking.",
+    "question": "Which flowers will the woman buy?",
+    "lines": [
+     "Excuse me, a friend of mine is opening a new shop, and I'd like to send flowers to congratulate her.",
+     "Congratulations. How about these roses?",
+     "They're lovely. But my friend doesn't really like roses. Do you have sunflowers?",
+     "I'm very sorry, the sunflowers have already sold out today. How about tulips, or this small tree? A tree can be enjoyed for a long time.",
+     "A tree would be nice too. But my friend loves flowers, so I think she'd be happier with flowers. I'll take the tulips.",
+     "Thank you very much."
+    ],
+    "options": [
+     "Roses",
+     "Sunflowers",
+     "Tulips",
+     "A small tree"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「花の ほうが よろこぶと 思います。チューリップを ください。」\n推理：朋友「バラが あまり 好きじゃ ない」；向日葵「もう 売れて しまいました」；店员推荐郁金香或小树，她觉得朋友喜欢花，所以选郁金香。\n容易错：对方不喜欢的；卖完的；店员推荐但没选的。",
+   "en": "Evidence: The woman says 「花の ほうが よろこぶと 思います。チューリップを ください。」\nReasoning: Her friend 「バラが あまり 好きじゃ ない」; the sunflowers 「もう 売れて しまいました」; of the tulips and the small tree, she picks flowers because her friend loves them.\nTrap: what the friend dislikes; what's sold out; the clerk's suggestion she passes on."
+  },
+  "wrong": [
+   {
+    "zh": "朋友不太喜欢玫瑰。",
+    "en": "Her friend doesn't really like roses."
+   },
+   {
+    "zh": "向日葵今天已经卖完了。",
+    "en": "The sunflowers are sold out today."
+   },
+   null,
+   {
+    "zh": "小树是店员推荐的，她觉得朋友更喜欢花。",
+    "en": "The clerk suggests the tree, but she thinks her friend would prefer flowers."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-106",
+  "type": "kadai",
+  "scene": "女の 人と 男の 人が 話して います。",
+  "question": "男の 人は 何で 空港まで 行きますか。",
+  "lines": [
+   [
+    "F",
+    "あしたの ひこうき、朝 早いんでしょう？ 空港まで 何で 行くの？"
+   ],
+   [
+    "M",
+    "八時の ひこうきなんだ。電車で 行きたかったんだけど、一ばん 早い 電車でも 間に合わないんだよ。"
+   ],
+   [
+    "F",
+    "じゃあ、私が 車で 送ろうか。"
+   ],
+   [
+    "M",
+    "ありがとう。でも、朝 五時だよ。悪いから いいよ。タクシーで 行こうかな。"
+   ],
+   [
+    "F",
+    "タクシーだと 一万円ぐらい かかるよ。駅の 前から 空港行きの バスが 出て いるの、知ってる？ 朝 四時半から あるよ。"
+   ],
+   [
+    "M",
+    "え、そうなの？ それなら 間に合うね。そう するよ。"
+   ]
+  ],
+  "options": [
+   "電車",
+   "バス",
+   "タクシー",
+   "車"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A man with a suitcase standing on a station platform next to a train.",
+   "Simple black-and-white line drawing, no text. A man with a suitcase standing at a bus stop next to a large bus.",
+   "Simple black-and-white line drawing, no text. A man with a suitcase standing next to a taxi that has a small plain sign on its roof.",
+   "Simple black-and-white line drawing, no text. A man with a suitcase standing next to an ordinary small family car."
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在说话。",
+    "question": "男人怎么去机场？",
+    "lines": [
+     "明天的飞机是一大早吧？你怎么去机场？",
+     "八点的飞机。我本来想坐电车去，可是连最早的一班电车也赶不上。",
+     "那我开车送你吧？",
+     "谢谢。不过是早上五点哦，太麻烦你了，不用了。我坐出租车去吧。",
+     "出租车的话要一万日元左右哦。车站前有去机场的大巴，你知道吗？早上四点半就有。",
+     "诶，是吗？那就来得及了。就这么办。"
+    ],
+    "options": [
+     "电车",
+     "大巴",
+     "出租车",
+     "私家车"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking.",
+    "question": "How will the man get to the airport?",
+    "lines": [
+     "Your flight tomorrow is early in the morning, isn't it? How are you getting to the airport?",
+     "It's an eight o'clock flight. I wanted to take the train, but even the first train won't get me there in time.",
+     "Then shall I drive you?",
+     "Thanks. But it'd be five in the morning. I couldn't ask that. Maybe I'll take a taxi.",
+     "A taxi would cost about ten thousand yen. Did you know there's an airport bus from in front of the station? It runs from four thirty in the morning.",
+     "Oh, really? Then I'll make it. I'll do that."
+    ],
+    "options": [
+     "Train",
+     "Bus",
+     "Taxi",
+     "Car"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「駅の 前から 空港行きの バスが 出て いるの、知ってる？ 朝 四時半から あるよ。」，男的说「それなら 間に合うね。そう するよ。」\n推理：电车「一ばん 早い 電車でも 間に合わない」；女的开车送，他觉得太早不好意思（「悪いから いいよ」）；出租车要一万日元左右；最后决定坐四点半开始有的机场大巴。\n容易错：赶不上的电车；客气拒绝的私家车；被否定的出租车。",
+   "en": "Evidence: The woman says 「駅の 前から 空港行きの バスが 出て いるの、知ってる？ 朝 四時半から あるよ。」, and he says 「それなら 間に合うね。そう するよ。」\nReasoning: The train: 「一ばん 早い 電車でも 間に合わない」; her lift he politely declines (「悪いから いいよ」); a taxi costs about ¥10,000; so he takes the airport bus that starts at 4:30.\nTrap: the train that's too late; the lift he turns down; the taxi idea dropped."
+  },
+  "wrong": [
+   {
+    "zh": "连最早的电车也赶不上。",
+    "en": "Even the first train is too late."
+   },
+   null,
+   {
+    "zh": "出租车要一万日元左右，他改坐大巴了。",
+    "en": "A taxi costs about ¥10,000; he takes the bus instead."
+   },
+   {
+    "zh": "女的说开车送他，他说「悪いから いいよ」拒绝了。",
+    "en": "She offers to drive him, but he declines: 「悪いから いいよ」."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-107",
+  "type": "kadai",
+  "scene": "うちで お父さんと 女の 子が 話して います。",
+  "question": "女の 子は これから 何を かばんに 入れますか。",
+  "lines": [
+   [
+    "M",
+    "あしたの えんそく、山に 行くんだよね。じゅんびは できた？"
+   ],
+   [
+    "F",
+    "うん。おべんとうと ぼうしは もう かばんに 入れたよ。"
+   ],
+   [
+    "M",
+    "天気よほうで、午後から 雨だって 言って いたよ。かさは？"
+   ],
+   [
+    "F",
+    "雨が ふったら えんそくは 中止に なるから、かさは いらないって 先生が 言って た。"
+   ],
+   [
+    "M",
+    "そう。水とうは？"
+   ],
+   [
+    "F",
+    "お茶は 学校で くれるんだって。"
+   ],
+   [
+    "M",
+    "じゃあ、上着を 一まい 入れて おきなさい。山の 上は さむいからね。"
+   ],
+   [
+    "F",
+    "わかった。"
+   ]
+  ],
+  "options": [
+   "ぼうし",
+   "かさ",
+   "水とう",
+   "上着"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A girl of about eight standing and holding a sun hat in both hands in front of her.",
+   "Simple black-and-white line drawing, no text. A girl of about eight standing and holding a closed umbrella in both hands in front of her.",
+   "Simple black-and-white line drawing, no text. A girl of about eight standing and holding a water bottle in both hands in front of her.",
+   "Simple black-and-white line drawing, no text. A girl of about eight standing and holding a light jacket in both hands in front of her."
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "家里爸爸和女孩在说话。",
+    "question": "女孩接下来要往包里放什么？",
+    "lines": [
+     "明天的远足是去山里吧。准备好了吗？",
+     "嗯。便当和帽子已经放进包里了。",
+     "天气预报说下午开始下雨哦。伞呢？",
+     "老师说下雨的话远足就取消了，所以不用带伞。",
+     "这样啊。水壶呢？",
+     "说是学校会给茶。",
+     "那就放一件外套进去吧。山上冷。",
+     "知道了。"
+    ],
+    "options": [
+     "帽子",
+     "伞",
+     "水壶",
+     "外套"
+    ]
+   },
+   "en": {
+    "scene": "At home, a father and his daughter are talking.",
+    "question": "What will the girl put in her bag now?",
+    "lines": [
+     "Tomorrow's school trip is to the mountains, right? Are you ready?",
+     "Yes. I've already put my lunch and my hat in my bag.",
+     "The weather forecast said rain from the afternoon. What about an umbrella?",
+     "The teacher said if it rains the trip is cancelled, so we don't need umbrellas.",
+     "I see. A water bottle?",
+     "They say the school gives us tea.",
+     "Then put in a jacket. It's cold at the top of the mountain.",
+     "Okay."
+    ],
+    "options": [
+     "Hat",
+     "Umbrella",
+     "Water bottle",
+     "Jacket"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：爸爸说：「じゃあ、上着を 一まい 入れて おきなさい。山の 上は さむいからね。」，女孩回答「わかった。」\n推理：帽子「もう かばんに 入れた」；下雨远足就取消，老师说「かさは いらない」；茶学校会给，不用带水壶。剩下的是外套。\n容易错：已经放进去的；不需要的。",
+   "en": "Evidence: The father says 「じゃあ、上着を 一まい 入れて おきなさい。山の 上は さむいからね。」, and she says 「わかった。」\nReasoning: The hat is 「もう かばんに 入れた」; rain cancels the trip, so 「かさは いらない」; the school gives tea, so no water bottle. That leaves the jacket.\nTrap: something already packed; things not needed."
+  },
+  "wrong": [
+   {
+    "zh": "帽子已经放进包里了。",
+    "en": "The hat is already in her bag."
+   },
+   {
+    "zh": "下雨远足就取消，老师说不用带伞。",
+    "en": "Rain cancels the trip; the teacher said no umbrella is needed."
+   },
+   {
+    "zh": "茶学校会给，所以不用带水壶。",
+    "en": "The school provides tea, so no water bottle."
+   },
+   null
+  ],
+  "traps": [
+   "done-already",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n4-m2-ck-108",
+  "type": "kadai",
+  "scene": "女の 人と 男の 人が 話して います。",
+  "question": "女の 人は 何を 習いますか。",
+  "lines": [
+   [
+    "F",
+    "来月から 何か 習いたいと 思って いるんだ。近くの センターで、いろいろな 教室が あるの。"
+   ],
+   [
+    "M",
+    "へえ。何が あるの？"
+   ],
+   [
+    "F",
+    "ピアノと、テニスと、すいえいと、料理。"
+   ],
+   [
+    "M",
+    "ピアノは？ 子どもの とき、習って いたんでしょう？"
+   ],
+   [
+    "F",
+    "うん。だから、今度は ちがう ことが したいの。テニスは 楽しそうだけど、土曜日の 朝だけなんだ。土曜日は アルバイトが あるから……。"
+   ],
+   [
+    "M",
+    "じゃあ、すいえいは？ 体にも いいよ。"
+   ],
+   [
+    "F",
+    "泳ぐのは にがてなの。料理の 教室は 水曜日の 夜で、仕事の 後に 行けるから、それに しようかな。"
+   ],
+   [
+    "M",
+    "いいね。おいしい もの、作ってね。"
+   ]
+  ],
+  "options": [
+   "料理",
+   "ピアノ",
+   "テニス",
+   "すいえい"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A young woman in an apron standing at a kitchen counter, cooking with a frying pan.",
+   "Simple black-and-white line drawing, no text. A young woman sitting at a piano, playing it.",
+   "Simple black-and-white line drawing, no text. A young woman on a tennis court, swinging a tennis racket.",
+   "Simple black-and-white line drawing, no text. A young woman in a swimming cap swimming in a pool."
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在说话。",
+    "question": "女人要学什么？",
+    "lines": [
+     "我想从下个月开始学点什么。附近的活动中心有各种各样的课。",
+     "哦？都有什么？",
+     "钢琴、网球、游泳，还有料理。",
+     "钢琴呢？你小时候学过吧？",
+     "嗯。所以这次想做点别的。网球看起来很有意思，可是只有星期六早上。星期六我要打工……",
+     "那游泳呢？对身体也好。",
+     "我不擅长游泳。料理课是星期三晚上，下班后能去，就选它吧。",
+     "不错啊。做好吃的给我尝尝。"
+    ],
+    "options": [
+     "料理",
+     "钢琴",
+     "网球",
+     "游泳"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking.",
+    "question": "What will the woman learn?",
+    "lines": [
+     "I'm thinking of learning something from next month. The community centre nearby has all kinds of classes.",
+     "Oh? What do they have?",
+     "Piano, tennis, swimming and cooking.",
+     "What about piano? You took lessons as a kid, didn't you?",
+     "Yes. That's why I want to do something different this time. Tennis looks fun, but it's only on Saturday mornings. I work my part-time job on Saturdays...",
+     "Then how about swimming? It's good for you, too.",
+     "I'm not good at swimming. The cooking class is on Wednesday evenings, so I can go after work. I think I'll take that.",
+     "Nice. Make something tasty."
+    ],
+    "options": [
+     "Cooking",
+     "Piano",
+     "Tennis",
+     "Swimming"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「料理の 教室は 水曜日の 夜で、仕事の 後に 行けるから、それに しようかな。」\n推理：钢琴小时候学过，这次「ちがう ことが したい」；网球只有星期六早上，她要打工；游泳她「にがて」。料理课星期三晚上，下班后能去。\n容易错：时间对不上的课；以前学过的；不擅长的。",
+   "en": "Evidence: The woman says 「料理の 教室は 水曜日の 夜で、仕事の 後に 行けるから、それに しようかな。」\nReasoning: Piano she learned as a child and wants 「ちがう こと」; tennis is only Saturday mornings, when she works; swimming she's 「にがて」. Cooking is Wednesday evening, after work.\nTrap: the class at a time she can't make; what she has done before; what she's bad at."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "钢琴小时候学过，这次想学别的。",
+    "en": "She learned piano as a child and wants something different."
+   },
+   {
+    "zh": "网球只有星期六早上，那时她要打工。",
+    "en": "Tennis is only on Saturday mornings, when she has her part-time job."
+   },
+   {
+    "zh": "她说自己不擅长游泳（「にがて」）。",
+    "en": "She says she's bad at swimming (「にがて」)."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "not-possible"
+  ]
+ }
+]

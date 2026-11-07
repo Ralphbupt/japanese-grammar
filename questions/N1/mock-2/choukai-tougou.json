@@ -1,0 +1,421 @@
+[
+ {
+  "id": "n1-m2-ck-601",
+  "type": "tougou",
+  "scene": "小学校で、校長の女の人と、教頭の男の人、若い女の先生の三人が、運動会について話しています。",
+  "lines": [
+   [
+    "F1",
+    "来年の運動会のことなんですけど、去年も一昨年も、九月の練習中に具合が悪くなる子が何人も出ましたよね。このままのやり方でいいのか、そろそろ考えたいと思って。"
+   ],
+   [
+    "F2",
+    "あの、それなら、午前中で終わるようにするのはどうでしょう。お昼を過ぎると、校庭が一番暑くなりますし。"
+   ],
+   [
+    "M",
+    "うーん、半日にするとなると、種目をかなり減らさないと収まりませんよ。保護者の方は、一日かけて子どもの出番を見るのを楽しみにしてますからね。苦情が来るんじゃないかなあ。"
+   ],
+   [
+    "F1",
+    "そうねえ。いっそ、春に移すというのは？ 五月なら、ずっと過ごしやすいでしょう。"
+   ],
+   [
+    "M",
+    "春は、クラス替えのすぐあとで、練習の時間がほとんど取れないんです。六年生は修学旅行も五月ですし。"
+   ],
+   [
+    "F2",
+    "じゃあ、学年ごとに日を分けるのは……。一度に校庭に出る人数が減れば、テントの日陰に全員入れます。"
+   ],
+   [
+    "M",
+    "それだと、きょうだいが別の学年にいる家は、何日も仕事を休まなきゃならなくなる。それに、準備と片付けを何回もやるのは、先生方の負担が大きすぎますよ。"
+   ],
+   [
+    "F1",
+    "どれも一長一短ね……。"
+   ],
+   [
+    "F2",
+    "そういえば、去年の運動会のあとのアンケート、私、集計を手伝ったんですけど、「もっと短くしてほしい」という声が、思っていたよりずっと多かったんです。小さい子を連れて一日中外にいるのは、大人もつらいみたいで。"
+   ],
+   [
+    "M",
+    "そうなんですか。てっきり、長いほうが喜ばれているものとばかり思ってたなあ。それなら話は違ってきますね。"
+   ],
+   [
+    "F1",
+    "じゃあ、お弁当の時間はなしにして、お昼には子どもたちを帰す方向で、種目を絞り込んでみましょうか。次の職員会議までに、案を作ってください。"
+   ]
+  ],
+  "question": "運動会は、どうすることになりそうですか。",
+  "spokenOptions": true,
+  "options": [
+   "春に開く",
+   "学年ごとに分けて開く",
+   "午前中だけで終える",
+   "今まで通り秋に一日かけて開く"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "小学校里，女校长、男副校长和一位年轻的女老师三个人在谈运动会的事。",
+    "question": "运动会看来要怎么办？",
+    "lines": [
+     "关于明年的运动会，去年和前年九月练习的时候，都有好几个孩子身体不舒服吧。我想是时候考虑一下，还按现在这样办行不行。",
+     "那个，那样的话，改成上午就结束怎么样？过了中午，操场是最热的。",
+     "嗯……改成半天的话，项目不大幅减少是排不下的。家长们都盼着花一整天看孩子出场呢。会不会有投诉啊。",
+     "是啊。干脆挪到春天怎么样？五月的话舒服多了吧。",
+     "春天刚分完班，几乎没有练习时间。六年级的修学旅行也在五月。",
+     "那按年级分开日子办……。一次到操场上的人少了，所有人都能待在帐篷的阴凉里。",
+     "那样的话，兄弟姐妹在不同年级的家庭，就得请好几天假了。而且准备和收拾要搞好几次，老师们的负担太重了。",
+     "都是有利有弊啊……。",
+     "说起来，去年运动会之后的问卷调查，我帮忙统计了，希望“再短一点”的意见比我想的多得多。带着小孩在外面待一整天，大人好像也很累。",
+     "是吗？我一直以为时间长才受欢迎呢。那样的话就另当别论了。",
+     "那就取消吃便当的时间，按中午让孩子们回家的方向，精简一下项目吧。请在下次教职员会议之前拿出方案。"
+    ],
+    "options": [
+     "在春天举办",
+     "按年级分开举办",
+     "只在上午办完",
+     "照旧在秋天办一整天"
+    ]
+   },
+   "en": {
+    "scene": "At an elementary school, the female principal, the male vice-principal and a young female teacher are talking about sports day.",
+    "question": "What looks likely to happen with sports day?",
+    "lines": [
+     "About next year's sports day — both last year and the year before, several children felt ill during practice in September, didn't they? I think it's time we considered whether to keep doing it this way.",
+     "Um, in that case, how about making it finish in the morning? After midday is when the playground gets hottest.",
+     "Hmm, if we make it half a day, it won't fit unless we cut a lot of events. Parents look forward to spending the whole day watching their children's turns. I suspect we'd get complaints.",
+     "True. What about moving it to spring instead? May would be much more comfortable.",
+     "Spring is right after the classes are reshuffled, so there's hardly any time to practise. And the sixth-years' school trip is in May too.",
+     "Then what about holding it on separate days for each year group… With fewer people out on the playground at once, everyone would fit in the shade of the tents.",
+     "Then families with children in different years would have to take several days off work. And setting up and clearing away several times would be far too much for the teachers.",
+     "Every option has its pros and cons…",
+     "Come to think of it, I helped tally last year's post-sports-day questionnaire, and there were far more requests to 'make it shorter' than I'd expected. Being outside all day with small children seems hard on the adults too.",
+     "Really? I'd always assumed people preferred it long. Well, that changes things.",
+     "Then let's drop the packed-lunch break and narrow down the events with a view to sending the children home at midday. Please draw up a plan before the next staff meeting."
+    ],
+    "options": [
+     "Hold it in spring",
+     "Hold it separately for each year group",
+     "Finish it in the morning only",
+     "Hold it over a full day in autumn as before"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：副校长听了问卷结果说：「それなら話は違ってきますね。」校长最后说：「お弁当の時間はなしにして、お昼には子どもたちを帰す方向で」。\n推理：年轻老师最早提出上午结束，被副校长以“家长想看一整天、会投诉”否定。春天没时间练习，按年级分开家长和老师负担大，也都不行。后来年轻老师说问卷里希望缩短的意见很多，副校长的顾虑消除了，于是回到“中午让孩子回家”，即只办上午。\n容易错：校长自己提的春天被否定；别因为上午结束一度被否定就排除它。",
+   "en": "Evidence: After hearing the survey result, the vice-principal says: 「それなら話は違ってきますね。」 The principal ends: 「お弁当の時間はなしにして、お昼には子どもたちを帰す方向で」.\nReasoning: The young teacher first suggested finishing in the morning, but the vice-principal objected that parents want a full day and would complain. Spring leaves no practice time, and separate days burden parents and teachers. Then the teacher reports that many parents asked for a shorter event, which removes his objection, so they return to sending the children home at midday — a morning-only event.\nTrap: the principal's own idea, spring, is rejected; don't rule out the morning plan just because it was turned down at first."
+  },
+  "wrong": [
+   {
+    "zh": "春天刚分班没时间练习，六年级五月还有修学旅行。",
+    "en": "Spring leaves no practice time, and the sixth-years travel in May."
+   },
+   {
+    "zh": "家长要请好几天假，老师负担也太重。",
+    "en": "Parents would need days off, and teachers would be overloaded."
+   },
+   null,
+   {
+    "zh": "校长一开始就说想改变现在的做法，最后也决定中午结束。",
+    "en": "The principal wants a change, and they settle on finishing at midday."
+   }
+  ],
+  "traps": [
+   "third-person-decides",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-602",
+  "type": "tougou",
+  "scene": "温泉旅館で、おかみと、若い男の支配人、年配の男の料理長の三人が、夕食について話しています。",
+  "lines": [
+   [
+    "F",
+    "最近、海外からのお客様の口コミで、「夕食が多すぎて食べきれない」というのが目立つのよ。実際、下げてくるお膳を見ても、半分近く残っていることがあるし。品数を減らした軽めのコースも選べるようにしたらどうかしら。"
+   ],
+   [
+    "M1",
+    "でもおかみさん、残っているのは、何の料理か分からないから手をつけない、ということじゃないでしょうか。説明もないまま、見たことのない料理が次々に出てくるわけですから。料理の説明を英語で書いたカードを添えれば、ずいぶん違うと思いますよ。"
+   ],
+   [
+    "M2",
+    "いや、それがね、残ってくるのは天ぷらとか、最後のご飯とか、むしろ誰でも知ってるものばかりなんだよ。珍しいものは、かえって喜んで食べてくれてる。単純に量が多いんだと思うね。"
+   ],
+   [
+    "M1",
+    "そうですか……。じゃあ、それとは別に、肉や魚を召し上がらないお客様向けの献立を作るのはどうでしょう。問い合わせもたまにありますし。"
+   ],
+   [
+    "F",
+    "それは年に数件でしょう。その都度、料理長に相談すれば済む話よ。"
+   ],
+   [
+    "M2",
+    "うちのだしは鰹節でとってるからね。献立を一から作り替えるとなると、大ごとになるよ。"
+   ],
+   [
+    "M1",
+    "それなら、お部屋ではなく、一階の食堂でお出しして、お客様のペースで頼んでいただく形にすれば、食べたい分だけ……。"
+   ],
+   [
+    "F",
+    "うちは、お部屋でゆっくり召し上がっていただくのが売りなのよ。そこは変えたくないわ。"
+   ],
+   [
+    "M2",
+    "おかみさんが最初に言ってた話なら、こっちとしても助かるよ。人手も足りてないしね。料理を八つから五つに減らしたコースくらいなら、来週からでもできる。"
+   ],
+   [
+    "F",
+    "じゃあ、その分お値段も少し下げて、ご予約のときに選んでいただけるようにしましょう。"
+   ]
+  ],
+  "question": "旅館は、夕食をどうすることにしましたか。",
+  "spokenOptions": true,
+  "options": [
+   "品数を減らしたコースも選べるようにする",
+   "料理の説明を英語で書いたカードを添える",
+   "肉や魚を使わない献立を用意する",
+   "部屋ではなく食堂で出すようにする"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "温泉旅馆里，老板娘、年轻的男经理和年长的男主厨三个人在谈晚餐的事。",
+    "question": "旅馆决定晚餐怎么办？",
+    "lines": [
+     "最近海外客人的评价里，“晚饭太多吃不完”这种很显眼。实际上，看撤下来的餐盘，有时剩了将近一半。让客人也可以选减少菜品数量的清淡一点的套餐，怎么样？",
+     "可是老板娘，剩下来是不是因为不知道是什么菜才不动筷子呢？没有任何说明，没见过的菜一道接一道地上来。附上用英语写的菜品说明卡，我觉得会大不一样。",
+     "不，问题是剩下来的都是天妇罗啊、最后的米饭啊这些，反而是谁都认识的东西。少见的菜他们倒是吃得很高兴。我看就是量太多了。",
+     "是吗……。那另外，做一份给不吃肉和鱼的客人的菜单怎么样？偶尔也有人来问。",
+     "那一年也就几件吧。每次找主厨商量就行了。",
+     "我们的高汤是用鲣鱼干的。要从头改菜单，可是件大事。",
+     "那样的话，不在房间里，改在一楼的餐厅上菜，让客人按自己的节奏点，就能只吃想吃的量……。",
+     "我们旅馆的卖点就是在房间里慢慢享用。这一点我不想改。",
+     "老板娘一开始说的那个，对我们也有帮助。人手也不够。把菜从八道减到五道的套餐，下周就能做。",
+     "那就把价格也相应降一点，在预约的时候让客人选吧。"
+    ],
+    "options": [
+     "让客人也可以选减少菜品数量的套餐",
+     "附上用英语写的菜品说明卡",
+     "准备不用肉和鱼的菜单",
+     "不在房间里而在餐厅上菜"
+    ]
+   },
+   "en": {
+    "scene": "At a hot-spring inn, the landlady, the young male manager and the older male head chef are talking about dinner.",
+    "question": "What has the inn decided to do about dinner?",
+    "lines": [
+     "Lately, reviews from overseas guests often say 'dinner was too much to finish'. And looking at the trays that come back, sometimes nearly half is left. What if we let guests choose a lighter course with fewer dishes?",
+     "But surely, ma'am, the food's left because they don't know what it is and don't touch it? Unfamiliar dishes keep arriving one after another with no explanation. If we added cards explaining the dishes in English, I think it'd make a big difference.",
+     "No, the thing is, what comes back is the tempura or the rice at the end — things everyone knows. They actually enjoy the unusual dishes. I think it's simply too much food.",
+     "I see… Then, separately, what about a menu for guests who don't eat meat or fish? We get enquiries now and then.",
+     "That's a few cases a year, isn't it? We can just ask the chef each time.",
+     "Our stock is made with bonito flakes. Redoing the menu from scratch would be a big job.",
+     "In that case, if we served dinner in the dining room downstairs rather than in the rooms and let guests order at their own pace, they could eat just what they want…",
+     "Our selling point is that guests dine at leisure in their rooms. I don't want to change that.",
+     "What you suggested at first would help us in the kitchen too, ma'am. We're short-staffed as it is. A course cut from eight dishes to five — we could do that from next week.",
+     "Then let's lower the price a little to match, and let guests choose when they book."
+    ],
+    "options": [
+     "Let guests choose a course with fewer dishes",
+     "Add cards explaining the dishes in English",
+     "Prepare a menu without meat or fish",
+     "Serve dinner in the dining room instead of the rooms"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：主厨说：「料理を八つから五つに減らしたコースくらいなら、来週からでもできる。」老板娘说：「ご予約のときに選んでいただけるようにしましょう。」\n推理：经理以为剩菜是因为不认识菜，主厨指出剩的都是天妇罗、米饭等熟悉的东西，问题在量。素食菜单一年才几件，又要改高汤；餐厅上菜违背“在房间享用”的卖点。最后主厨支持老板娘最初的提议，减少菜品的套餐让客人预约时选择。\n容易错：说明卡的前提被主厨推翻；经理最后提的餐厅方案被老板娘拒绝。",
+   "en": "Evidence: The chef says: 「料理を八つから五つに減らしたコースくらいなら、来週からでもできる。」 The landlady says: 「ご予約のときに選んでいただけるようにしましょう。」\nReasoning: The manager thinks food is left because guests don't recognise it, but the chef points out that what's left is familiar — tempura and rice — so the problem is quantity. A vegetarian menu is needed only a few times a year and would mean changing the stock; dining-room service goes against the in-room selling point. Finally the chef backs the landlady's first idea: a course with fewer dishes, chosen at booking.\nTrap: the chef undercuts the reason for the cards; the manager's last idea, the dining room, is refused."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "剩的是谁都认识的菜，说明卡的前提不成立。",
+    "en": "The leftovers are familiar dishes, so cards miss the point."
+   },
+   {
+    "zh": "一年才几件，每次找主厨商量就行。",
+    "en": "Only a few cases a year; the chef can handle them one by one."
+   },
+   {
+    "zh": "老板娘说在房间享用是卖点，「そこは変えたくない」。",
+    "en": "In-room dining is the inn's selling point; she won't change it."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n1-m2-ck-603",
+  "type": "tougou",
+  "scene": "会社で、研修の担当者が社外研修について説明しています。それを聞いて、男の人と女の人が話しています。",
+  "lines": [
+   [
+    "F1",
+    "来月から始まる社外研修について、ご案内します。今年は四つのコースから一つを選んでいただきます。一つ目は「交渉の進め方」。二週続けて、土曜日に丸一日かけて、取引先との値段の交渉などを想定して、ロールプレイを中心に行います。二つ目は「人前で話す技術」。平日の夜七時から、全部で四回です。毎回、皆さんの話す様子を録画して、講師が一人ずつ講評します。三つ目は「データ分析の基礎」。オンラインの講座ですので、期間内であれば、いつでもご自分のペースで進められます。ただし、表計算ソフトの基本的な操作ができることが、受講の条件となります。四つ目は「英文ビジネスメール」。毎週水曜日、朝八時からの一時間で、三か月間続きます。最後に修了テストがあります。申し込みは今週の金曜日までです。"
+   ],
+   [
+    "M",
+    "俺、来月から海外の取引先の担当になるから、英文メールかなって思ってたんだけど。"
+   ],
+   [
+    "F2",
+    "いいんじゃない？ ぴったりじゃない。"
+   ],
+   [
+    "M",
+    "でもさ、前の担当の先輩が書いたメールが全部残ってて、それを手本にすれば、だいたい何とかなりそうなんだよ。それより気が重いのは、向こうの担当者が、値段のことになると一歩も引かない人だって聞いてることでね。"
+   ],
+   [
+    "F2",
+    "ああ、それは大変そう。"
+   ],
+   [
+    "M",
+    "人前で話すのも自信はないんだけど、平日の夜は子どもの保育園のお迎えがあるから無理だし。土曜なら妻に頼めるから、それにするよ。"
+   ],
+   [
+    "F2",
+    "私はね、ずっと英語をやり直したいと思ってたの。でも水曜の朝は、母を病院に連れていく日なんだよね。"
+   ],
+   [
+    "M",
+    "そうか。人前で話すのは？"
+   ],
+   [
+    "F2",
+    "それは得意なほうだから、わざわざ習わなくても。来月から販売データをまとめる仕事が回ってくるから、本当は分析が一番役に立つんだけど、表計算、ほとんど使えないし……。"
+   ],
+   [
+    "M",
+    "え、先月、社内の表計算の講習、受けてなかった？ あれ、基本操作のコースだろ。"
+   ],
+   [
+    "F2",
+    "あ、そうだった。修了証ももらったんだ。じゃあ条件は満たしてるのか。それにする。"
+   ]
+  ],
+  "options": [
+   "交渉の進め方",
+   "人前で話す技術",
+   "データ分析の基礎",
+   "英文ビジネスメール"
+  ],
+  "questions": [
+   {
+    "question": "質問1：男の人は、どのコースを選びますか。",
+    "answer": 0,
+    "why": {
+     "zh": "依据：男的说：「向こうの担当者が、値段のことになると一歩も引かない人だって聞いてる」，又说：「土曜なら妻に頼めるから、それにするよ。」\n推理：他本来想选英文邮件，但前任留下的邮件可以当范本，「何とかなりそう」。他真正担心的是和对方谈价格。演讲课在平日晚上，他要去保育园接孩子；交涉课在星期六，可以托妻子照看，所以选交涉。\n容易错：一开始想选的英文邮件；演讲他也没自信，但时间不行。",
+     "en": "Evidence: The man says: 「向こうの担当者が、値段のことになると一歩も引かない人だって聞いてる」 and 「土曜なら妻に頼めるから、それにするよ。」\nReasoning: He first thinks of business email, but his predecessor's emails can serve as models, so 「何とかなりそう」. What really worries him is negotiating prices. The speaking course is on weekday evenings, when he collects his child from nursery; the negotiation course is on Saturdays, when his wife can help, so he chooses it.\nTrap: the email course he first considered; speaking, which he also lacks confidence in, but the timing rules it out."
+    },
+    "wrong": [
+     null,
+     {
+      "zh": "平日晚上要去保育园接孩子，「無理」。",
+      "en": "Weekday evenings clash with collecting his child."
+     },
+     {
+      "zh": "数据分析是女人选的，他没考虑。",
+      "en": "Data analysis is the woman's choice; he never considers it."
+     },
+     {
+      "zh": "前任的邮件可以当范本，他说「何とかなりそう」。",
+      "en": "His predecessor's emails will serve as models."
+     }
+    ]
+   },
+   {
+    "question": "質問2：女の人は、どのコースを選びますか。",
+    "answer": 2,
+    "why": {
+     "zh": "依据：女的说：「本当は分析が一番役に立つんだけど」，被提醒上个月上过表计算课后说：「じゃあ条件は満たしてるのか。それにする。」\n推理：她想学英语，但英文邮件在星期三早上，那天要带母亲去医院。演讲她「得意なほう」，不用学。数据分析对下个月的工作最有用，她以为自己不会用表计算、不符合条件，但男的提醒她上个月上过基本操作的课，所以选数据分析。\n容易错：她最想学的英语时间不行；以为不符合条件就排除了数据分析。",
+     "en": "Evidence: The woman says: 「本当は分析が一番役に立つんだけど」, and after being reminded of last month's spreadsheet course: 「じゃあ条件は満たしてるのか。それにする。」\nReasoning: She wants to study English, but the email course is on Wednesday mornings, when she takes her mother to hospital. She's 「得意なほう」 at speaking, so doesn't need it. Data analysis is most useful for next month's work; she thinks she fails the spreadsheet requirement, but he reminds her she took the basic course last month, so she picks it.\nTrap: English, which she most wants, at an impossible time; ruling out data analysis because she wrongly thought she didn't qualify."
+    },
+    "wrong": [
+     {
+      "zh": "交涉是男人选的，她没提。",
+      "en": "Negotiation is the man's choice; she never mentions it."
+     },
+     {
+      "zh": "她说自己「得意なほう」，不用特意学。",
+      "en": "She's good at speaking already."
+     },
+     null,
+     {
+      "zh": "星期三早上要带母亲去医院。",
+      "en": "Wednesday mornings she takes her mother to hospital."
+     }
+    ]
+   }
+  ],
+  "tr": {
+   "zh": {
+    "scene": "公司里，负责培训的人在介绍外部培训。听了以后，一个男人和一个女人在商量。",
+    "questions": [
+     "问题1：男人选哪门课？",
+     "问题2：女人选哪门课？"
+    ],
+    "lines": [
+     "下面介绍下个月开始的外部培训。今年请从四门课程中选一门。第一门是“谈判技巧”。连续两周的星期六全天，以和客户谈价格等情境为设想，以角色扮演为主进行。第二门是“当众讲话的技巧”。平日晚上七点开始，一共四次。每次都会把大家讲话的样子录下来，由讲师逐一点评。第三门是“数据分析基础”。是在线课程，只要在期限内，随时都可以按自己的节奏进行。不过，听课条件是会表格软件的基本操作。第四门是“英文商务邮件”。每周三早上八点开始一个小时，持续三个月。最后有结业考试。报名截止到本周五。",
+     "我下个月开始负责海外客户，所以想着选英文邮件吧。",
+     "不错啊，正合适嘛。",
+     "可是啊，前任前辈写的邮件全都留着，拿那个当范本，大概就能应付。比起那个，让我头疼的是，听说对方的负责人一谈到价格就寸步不让。",
+     "啊，那可够呛。",
+     "当众讲话我也没自信，不过平日晚上要去保育园接孩子，不行。星期六的话可以拜托我太太，就选那个吧。",
+     "我呢，一直想重新学英语。可星期三早上是我带妈妈去医院的日子。",
+     "这样啊。当众讲话呢？",
+     "那个我算是拿手的，用不着特意去学。下个月开始整理销售数据的工作会轮到我，其实分析最有用，可表格软件我几乎不会用……。",
+     "咦，上个月你不是上过公司内部的表格软件课吗？那是基本操作的课程吧。",
+     "啊，对哦。还拿到结业证了。那就符合条件了。就选那个。"
+    ],
+    "options": [
+     "谈判技巧",
+     "当众讲话的技巧",
+     "数据分析基础",
+     "英文商务邮件"
+    ]
+   },
+   "en": {
+    "scene": "At a company, the person in charge of training is explaining some external courses. After hearing it, a man and a woman are talking.",
+    "questions": [
+     "Question 1: Which course will the man choose?",
+     "Question 2: Which course will the woman choose?"
+    ],
+    "lines": [
+     "Here's some information about the external training starting next month. This year, please choose one of four courses. The first is 'Negotiation skills'. Over two consecutive Saturdays, all day, it's mainly role-play, imagining situations such as negotiating prices with clients. The second is 'Speaking in public'. Weekday evenings from seven, four sessions in all. Each time, we record you speaking and the instructor gives individual feedback. The third is 'Basics of data analysis'. It's an online course, so you can work through it at your own pace any time within the period. However, you need to be able to do basic operations in spreadsheet software to take it. The fourth is 'Business email in English'. Every Wednesday, one hour from eight in the morning, for three months. There's a final test at the end. Applications close this Friday.",
+     "I'm taking over our overseas clients next month, so I was thinking the English email one.",
+     "Sounds good, doesn't it? Perfect for you.",
+     "But, you know, all the emails my predecessor wrote are still there, and if I use them as models I should mostly manage. What's weighing on me more is that I hear their person is someone who won't give an inch on price.",
+     "Oh, that sounds tough.",
+     "I'm not confident speaking in public either, but weekday evenings I have to collect my kid from nursery, so that's out. On Saturdays I can ask my wife, so I'll go with that.",
+     "Me, I've always wanted to brush up my English. But Wednesday mornings are when I take my mother to the hospital.",
+     "I see. What about speaking in public?",
+     "I'm fairly good at that, so there's no need to learn it. From next month I'll be put on compiling sales data, so analysis would really be the most useful, but I can hardly use spreadsheets…",
+     "Hang on, didn't you do the in-house spreadsheet course last month? That was the basic operations course, wasn't it?",
+     "Oh, that's right. I even got a certificate. So I do meet the requirement. I'll take that one."
+    ],
+    "options": [
+     "Negotiation skills",
+     "Speaking in public",
+     "Basics of data analysis",
+     "Business email in English"
+    ]
+   }
+  },
+  "traps": [
+   "condition-conflict",
+   "someone-else"
+  ]
+ }
+]
