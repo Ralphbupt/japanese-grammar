@@ -786,10 +786,15 @@ function cues(practice, mocks) {
     if (all >= 8 && top / all > LONGEST_MAX) out.push(`${k}: ★ is in slot ${slots.indexOf(top) + 1} in ${pct(top, all)}`);
   }
   const text = (q) => plainText(q.stem || q.full);
-  const pool = practice.qs.map((q) => [q.id, text(q)]).filter(([, t]) => t.length >= 12)
+  const after = [];
+  const base = practice.qs.map((q) => [q.id, text(q)]).filter(([, t]) => t.length >= 12)
     .concat(practice.passages.map((p) => [p.id, plainText(p.passage)]));
+  const poolOf = () => base.concat(after);
+  // Each mock is compared with practice and with the mocks before it (a weekly
+  // set must not repeat last week's), so the pool grows as we go.
   for (const [name, d] of mocks) {
-    const items = d.qs.filter((q) => q._kind !== "dokkai").map((q) => [q.id, text(q)]).filter(([, t]) => t.length >= 12)
+    const pool = poolOf();
+    const items = d.qs.filter((q) => q._kind !== "dokkai" && q._kind !== "choukai").map((q) => [q.id, text(q)]).filter(([, t]) => t.length >= 12)
       .concat(d.passages.map((p) => [p.id, plainText(p.passage)]));
     for (const [id, t] of items) {
       let best = [0, ""];
@@ -798,8 +803,9 @@ function cues(practice, mocks) {
         const s = similarity(t, pt);
         if (s > best[0]) best = [s, pid];
       }
-      if (best[0] >= SIMILAR_MAX) out.push(`${name} ${id} is a near copy of practice ${best[1]} (${best[0].toFixed(2)})`);
+      if (best[0] >= SIMILAR_MAX) out.push(`${name} ${id} is a near copy of ${/-m\d+-/.test(best[1]) ? "" : "practice "}${best[1]} (${best[0].toFixed(2)})`);
     }
+    after.push(...items);
     // Vocabulary: the same tested word, or three of the same options, is the
     // same question even when the sentence differs (用法's stem is just the
     // word). Grammar items share forms legitimately; they're compared above.
