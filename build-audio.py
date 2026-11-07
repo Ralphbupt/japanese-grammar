@@ -74,6 +74,7 @@ TTS_READINGS = [
     (r"迷惑", "めいわく"),                                     # Gemini: めいよ (listening N2)
     (r"お義父さん", "おとうさん"),                             # Gemini: おぎふさん (listening N1)
     (r"お義母さん", "おかあさん"),
+    (r"材料費", "ざいりょうひ"),                               # Gemini: ざいりょうし (listening N2)
 ]
 
 

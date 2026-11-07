@@ -1,0 +1,698 @@
+[
+ {
+  "id": "n2-m2-ck-501",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "このファイル、開こうにも、パスワードがわからないんだよね。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "開けてくださって、ありがとうございます。",
+   "あ、それなら、さっきメールで届いてましたよ。",
+   "パスワードは、変えないほうがいいですよ。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这个文件，想打开也打不开，不知道密码。"
+    ],
+    "options": [
+     "谢谢您帮我打开。",
+     "啊，那个的话，刚才邮件里发来了。",
+     "密码还是别改比较好。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I'd open this file, but I don't know the password."
+    ],
+    "options": [
+     "Thank you for opening it.",
+     "Oh, that came by email a little while ago.",
+     "You'd better not change the password."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「開こうにも、パスワードがわからないんだよね。」\n推理：「〜ようにも〜ない」表示想做也做不了。她因为不知道密码打不开文件，所以告诉她密码刚才用邮件发来了，是帮她解决问题的回应。\n容易错：她还没打开，不能道谢；「パスワード」这个词重复了，但没回应她的困扰。",
+   "en": "Evidence: The woman says: 「開こうにも、パスワードがわからないんだよね。」\nReasoning: 「〜ようにも〜ない」 means you want to but can't. She can't open the file without the password, so telling her it came by email solves her problem.\nTrap: she hasn't opened it, so thanking her makes no sense; the last option repeats 「パスワード」 but ignores her problem."
+  },
+  "wrong": [
+   {
+    "zh": "她还没打开，谈不上道谢。",
+    "en": "She hasn't opened it, so there's nothing to thank her for."
+   },
+   null,
+   {
+    "zh": "重复了「パスワード」，但跟她打不开文件的困扰无关。",
+    "en": "It repeats 「パスワード」 but doesn't address her problem."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-502",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "山田さんに任せた以上、あとは口を出さないでおくよ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "そうだね。任せたんだから、見守ろう。",
+   "じゃあ、山田さんに任せてみたら？",
+   "え、何か口に合わなかったの？"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "既然交给山田了，接下来我就不插嘴了。"
+    ],
+    "options": [
+     "也是。既然交给他了，就在一旁看着吧。",
+     "那交给山田试试怎么样？",
+     "咦，有什么不合口味吗？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Now that I've left it to Yamada-san, I'll keep out of it."
+    ],
+    "options": [
+     "Right. You've left it to him, so let's just watch.",
+     "Then why not try leaving it to Yamada-san?",
+     "What, didn't something suit your taste?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「山田さんに任せた以上、あとは口を出さないでおくよ。」\n推理：「〜以上」是“既然……就……”；「口を出す」是插嘴、干涉。既然交给了山田，就不再干涉，所以赞同并说“在一旁看着”最自然。\n容易错：已经交给山田了，再建议交给他是前后矛盾；「口に合う」是合口味，只是重复了「口」。",
+   "en": "Evidence: The man says: 「山田さんに任せた以上、あとは口を出さないでおくよ。」\nReasoning: 「〜以上」 means \"now that\"; 「口を出す」 means to interfere. Having left it to Yamada, he'll stay out of it, so agreeing and saying \"let's just watch\" fits best.\nTrap: suggesting he leave it to Yamada contradicts what he just said; 「口に合う」 (to suit one's taste) only repeats 「口」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "他已经交给山田了，这个建议前后矛盾。",
+    "en": "He has already left it to Yamada, so this contradicts him."
+   },
+   {
+    "zh": "「口に合う」是合口味，只是重复了「口」。",
+    "en": "「口に合う」 means suiting one's taste — it just repeats 「口」."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-503",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "田中さん、例の件、あれっきり何も言ってこないね。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "ええ、さっきも電話がありましたよ。",
+   "え、何も言わずに来たんですか。",
+   "じゃあ、こちらから一度聞いてみますか。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "田中那件事，从那以后就什么都没再说了啊。"
+    ],
+    "options": [
+     "是啊，刚才还打电话来了。",
+     "咦，什么都没说就来了吗？",
+     "那我们这边问一下吧？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Tanaka-san hasn't said a thing about that matter since, has he?"
+    ],
+    "options": [
+     "Yes, he called again just now.",
+     "What, he came without saying anything?",
+     "Then shall we ask him ourselves?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「例の件、あれっきり何も言ってこないね。」\n推理：「あれっきり」是“从那以后就再也没有”。对方一直没联系，所以提议“我们这边问一下”最自然。\n容易错：说刚才来过电话，跟“什么都没说”矛盾；「言ってこない」是没联系过来，不是“来了”。",
+   "en": "Evidence: The woman says: 「例の件、あれっきり何も言ってこないね。」\nReasoning: 「あれっきり」 means \"not once since then\". Tanaka hasn't been in touch, so offering to ask him fits best.\nTrap: saying he just called contradicts \"hasn't said a thing\"; 「言ってこない」 means he hasn't contacted them, not that he came."
+  },
+  "wrong": [
+   {
+    "zh": "说刚才来过电话，跟“一直没联系”矛盾。",
+    "en": "Saying he just called contradicts \"hasn't said anything\"."
+   },
+   {
+    "zh": "「言ってこない」是没联系过来，不是人来了。",
+    "en": "「言ってこない」 means he hasn't been in touch, not that he came over."
+   },
+   null
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-504",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "念のため、明日の出席者、名簿と照らし合わせといてくれる？"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "はい、午前中に済ませておきます。",
+   "念のため、私も出席させていただきます。",
+   "確認していただいて、助かりました。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "为了保险起见，你能把明天的出席者跟名单核对一下吗？"
+    ],
+    "options": [
+     "好的，上午之内弄好。",
+     "为保险起见，我也参加。",
+     "您帮我确认了，太感谢了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Just to be safe, could you check tomorrow's attendees against the list?"
+    ],
+    "options": [
+     "Sure, I'll have it done this morning.",
+     "Just to be safe, I'll attend as well.",
+     "Thank you for checking — that helped."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「念のため、明日の出席者、名簿と照らし合わせといてくれる？」\n推理：「〜といてくれる？」=「〜ておいてくれる？」，是请她事先做好核对。接受请求，说上午之内做完最自然。\n容易错：重复「念のため」，却答成自己要出席；要核对的是她，反过来道谢立场不对，时态也不对。",
+   "en": "Evidence: The man says: 「念のため、明日の出席者、名簿と照らし合わせといてくれる？」\nReasoning: 「〜といてくれる？」 = 「〜ておいてくれる？」, a request to get the check done in advance. Accepting and saying she'll finish it this morning fits best.\nTrap: the second option repeats 「念のため」 but answers as if she's attending; she's the one asked to check, so thanking him reverses the roles and the tense."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "重复了「念のため」，却答成自己要出席。",
+    "en": "It repeats 「念のため」 but talks about attending."
+   },
+   {
+    "zh": "要核对的是她，反过来道谢，立场和时态都不对。",
+    "en": "She's the one asked to check; thanking him reverses roles and tense."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-505",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "せっかく席、取っといてあげたのに、来ないんだもん。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "じゃ、早めに席を取らないとね。",
+   "取っといてくれてもよかったのに。",
+   "ごめん、急に会議が長引いちゃって。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "难得给你占了座，你却没来。"
+    ],
+    "options": [
+     "那得早点占座了。",
+     "你帮我占一下也好啊。",
+     "对不起，会议突然拖长了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I went to the trouble of saving you a seat, and you didn't even come."
+    ],
+    "options": [
+     "Then we'll have to grab seats early.",
+     "You could have saved me one.",
+     "Sorry, the meeting suddenly ran over."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「せっかく席、取っといてあげたのに、来ないんだもん。」\n推理：「せっかく〜のに」表示心意白费了，「〜んだもん」带着不满。她在抱怨他没来，所以道歉并说明原因最自然。\n容易错：她已经占了座，说“你帮我占也好”是矛盾的；把抱怨听成了建议。",
+   "en": "Evidence: The woman says: 「せっかく席、取っといてあげたのに、来ないんだもん。」\nReasoning: 「せっかく〜のに」 means the effort was wasted, and 「〜んだもん」 sounds aggrieved. She's complaining he didn't come, so apologising and explaining fits best.\nTrap: she did save a seat, so \"you could have saved me one\" contradicts her; the first option hears a complaint as advice."
+  },
+  "wrong": [
+   {
+    "zh": "她是在抱怨他没来，不是在商量要早点占座。",
+    "en": "She's complaining he didn't come, not discussing grabbing seats early."
+   },
+   {
+    "zh": "她已经占了座，这样说是矛盾的。",
+    "en": "She did save a seat, so this contradicts her."
+   },
+   null
+  ],
+  "traps": [
+   "intent",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-506",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "すっかり遅くなっちゃって、申し訳ない。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "いえ、早く来てくださって、助かりました。",
+   "いえいえ、私も今来たところなんです。",
+   "遅くなるなら、しかたないですね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "来得太晚了，真抱歉。"
+    ],
+    "options": [
+     "不会，您早早过来，帮大忙了。",
+     "没事没事，我也刚到。",
+     "要晚到的话，也没办法。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I'm so sorry I'm this late."
+    ],
+    "options": [
+     "No, thank you for coming early — that helped.",
+     "Not at all, I've only just got here myself.",
+     "If you're going to be late, it can't be helped."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「すっかり遅くなっちゃって、申し訳ない。」\n推理：他已经迟到了，正在道歉。用「いえいえ、私も今来たところなんです」让对方别在意，是最自然的回应。\n容易错：他迟到了，说“早早过来”矛盾；他已经到了，「遅くなるなら」是事情还没发生时的说法，时态不对。",
+   "en": "Evidence: The man says: 「すっかり遅くなっちゃって、申し訳ない。」\nReasoning: He has already arrived late and is apologising. Saying 「いえいえ、私も今来たところなんです」 to put him at ease fits best.\nTrap: he's late, so \"thank you for coming early\" contradicts the situation; he's already here, so 「遅くなるなら」, said before the fact, is the wrong tense."
+  },
+  "wrong": [
+   {
+    "zh": "他是迟到了，说“早早过来”矛盾。",
+    "en": "He's late, so \"coming early\" contradicts the situation."
+   },
+   null,
+   {
+    "zh": "他已经到了，「遅くなるなら」是事前的说法，时态不对。",
+    "en": "He's already here; 「遅くなるなら」 is said beforehand — wrong tense."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "tense"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-507",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "部長にしては珍しく、今日は早く帰ったね。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "うん、何か用事でもあったのかな。",
+   "え、部長、まだ帰ってないの？",
+   "部長にしては、若く見えるよね。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "对部长来说很少见，今天早早就回去了啊。"
+    ],
+    "options": [
+     "嗯，是不是有什么事啊。",
+     "咦，部长还没回去吗？",
+     "作为部长，看起来挺年轻的。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "That's unusual for the manager — he went home early today."
+    ],
+    "options": [
+     "Yeah, maybe he had something on.",
+     "What, the manager hasn't gone home yet?",
+     "He looks young for a manager, doesn't he?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「部長にしては珍しく、今日は早く帰ったね。」\n推理：「〜にしては」是“以……来说（跟平常不一样）”。平时走得晚的部长今天早走了，所以猜“是不是有什么事”最自然。\n容易错：她说部长已经走了，「まだ帰ってないの」矛盾；重复了「部長にしては」，内容却无关。",
+   "en": "Evidence: The woman says: 「部長にしては珍しく、今日は早く帰ったね。」\nReasoning: 「〜にしては」 marks something unusual for that person. The manager, who usually stays late, left early, so wondering if he had something on fits best.\nTrap: she says he has left, so 「まだ帰ってないの」 contradicts her; the last option repeats 「部長にしては」 but is off-topic."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "她说部长已经回去了，这样问是矛盾的。",
+    "en": "She's just said he went home, so this contradicts her."
+   },
+   {
+    "zh": "重复了「部長にしては」，内容却跟早回去无关。",
+    "en": "It repeats 「部長にしては」 but has nothing to do with leaving early."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-508",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "この企画、予算さえ通れば、すぐにでも始められるんだけどな。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "始まって、ほっとしましたね。",
+   "えっ、予算、もう全部使っちゃったんですか。",
+   "じゃあ、予算会議の準備を急ぎましょう。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这个企划，只要预算能通过，马上就能开始啊。"
+    ],
+    "options": [
+     "开始了，松了一口气吧。",
+     "啊？预算已经全用完了吗？",
+     "那我们抓紧准备预算会议吧。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "If only the budget gets approved, we could start this project right away."
+    ],
+    "options": [
+     "It's started — what a relief.",
+     "What? You've already spent the whole budget?",
+     "Then let's hurry and prepare for the budget meeting."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「予算さえ通れば、すぐにでも始められるんだけどな。」\n推理：「〜さえ〜ば」是“只要……就”。现在预算还没通过，企划没开始，所以提议抓紧准备预算会议最自然。\n容易错：还没开始，说“开始了”时态不对；他没说预算用完了，是还没批下来。",
+   "en": "Evidence: The man says: 「予算さえ通れば、すぐにでも始められるんだけどな。」\nReasoning: 「〜さえ〜ば」 means \"if only\". The budget isn't approved yet and the project hasn't started, so suggesting they hurry to prepare for the budget meeting fits best.\nTrap: it hasn't started, so \"it's started\" is the wrong tense; he never says the budget is spent — it just isn't approved."
+  },
+  "wrong": [
+   {
+    "zh": "企划还没开始，时态不对。",
+    "en": "The project hasn't started — wrong tense."
+   },
+   {
+    "zh": "他说的是预算还没批下来，不是用完了。",
+    "en": "He means the budget isn't approved yet, not that it's spent."
+   },
+   null
+  ],
+  "traps": [
+   "tense",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-509",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "明日の会議、議事録とってもらえると助かるんだけど。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "議事録、助かりました。",
+   "わかりました。私でよければ。",
+   "じゃあ、お願いしてもいいですか。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "明天的会，你要是能做会议记录就帮大忙了。"
+    ],
+    "options": [
+     "会议记录，帮大忙了。",
+     "好的，如果我可以的话。",
+     "那可以拜托您吗？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "It'd help if you could take the minutes at tomorrow's meeting."
+    ],
+    "options": [
+     "The minutes were a great help.",
+     "Sure, if I'll do.",
+     "Then could I ask you to do it?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「議事録とってもらえると助かるんだけど。」\n推理：「〜てもらえると助かる」是委婉的请求，请他做会议记录。用「私でよければ」接受最自然。\n容易错：会议是明天，说「助かりました」时态不对；被请求的是他，反过来拜托对方，立场反了。",
+   "en": "Evidence: The woman says: 「議事録とってもらえると助かるんだけど。」\nReasoning: 「〜てもらえると助かる」 is a polite request for him to take the minutes. Accepting with 「私でよければ」 fits best.\nTrap: the meeting is tomorrow, so 「助かりました」 is the wrong tense; he's the one being asked, so asking her reverses the roles."
+  },
+  "wrong": [
+   {
+    "zh": "会议是明天，「助かりました」时态不对。",
+    "en": "The meeting is tomorrow, so the past tense is wrong."
+   },
+   null,
+   {
+    "zh": "被请求的是他，反过来拜托对方，立场反了。",
+    "en": "He's being asked; asking her reverses the roles."
+   }
+  ],
+  "traps": [
+   "tense",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-510",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "駅から歩いて五分って書いてあったけど、とても五分じゃ着かないよ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "五分で着いて、よかったね。",
+   "駅から五分なら、近くていいね。",
+   "ほんと。道、間違えたかな。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "上面写着从车站走五分钟，可五分钟根本到不了啊。"
+    ],
+    "options": [
+     "五分钟就到了，太好了。",
+     "离车站五分钟的话，挺近的嘛。",
+     "真的。是不是走错路了？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "It said five minutes' walk from the station, but there's no way we'll get there in five."
+    ],
+    "options": [
+     "Good thing we got there in five minutes.",
+     "Five minutes from the station — that's nice and close.",
+     "Really. Did we take a wrong turn?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「とても五分じゃ着かないよ。」\n推理：「とても〜ない」是“怎么也不……”。他在抱怨五分钟根本到不了，所以赞同并怀疑是不是走错路了，最自然。\n容易错：这里的「とても」不是“很”，后面接否定；照搬“五分钟”“很近”是没听出抱怨。",
+   "en": "Evidence: The man says: 「とても五分じゃ着かないよ。」\nReasoning: 「とても〜ない」 means \"no way\". He's complaining they can't possibly arrive in five minutes — so agreeing and wondering if they took a wrong turn fits best.\nTrap: 「とても」 here goes with a negative, not \"very\"; repeating \"five minutes\" or \"close\" misses the complaint."
+  },
+  "wrong": [
+   {
+    "zh": "他说五分钟根本到不了，跟“到了”矛盾。",
+    "en": "He says they can't get there in five minutes, so this contradicts him."
+   },
+   {
+    "zh": "照搬了“车站五分钟”，没听出他在抱怨。",
+    "en": "It repeats \"five minutes from the station\" and misses the complaint."
+   },
+   null
+  ],
+  "traps": [
+   "repeat-word",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-511",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "恐れ入ります。お電話が少々遠いようなんですが。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "すみません、場所を変えて、かけ直します。",
+   "じゃあ、そちらの近くまで行ってみます。",
+   "遠いところから、ありがとうございます。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "不好意思，您的电话声音好像有点小。"
+    ],
+    "options": [
+     "不好意思，我换个地方再打过来。",
+     "那我去您那附近看看。",
+     "谢谢您从远处打来。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I'm sorry, but the line seems a little faint."
+    ],
+    "options": [
+     "Sorry, I'll move somewhere else and call back.",
+     "Then I'll try coming over near you.",
+     "Thank you for calling from so far away."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「お電話が少々遠いようなんですが。」\n推理：「電話が遠い」是电话那头的声音听不清，不是距离远。说换个地方再打过来最自然。\n容易错：把「遠い」理解成距离远。",
+   "en": "Evidence: The man says: 「お電話が少々遠いようなんですが。」\nReasoning: 「電話が遠い」 means the caller is hard to hear, not that they're far away. Offering to move and call back fits best.\nTrap: taking 「遠い」 as physical distance."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「電話が遠い」是听不清，不是距离远。",
+    "en": "「電話が遠い」 means hard to hear, not far away."
+   },
+   {
+    "zh": "把「遠い」理解成距离远，答非所问。",
+    "en": "This takes 「遠い」 as distance and misses the point."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "intent"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-512",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "あーあ、締め切りが明日だなんて、聞いてないよ。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "締め切り、きのうだったんだね。",
+   "え、先週のメールに書いてあったよ。",
+   "じゃあ、明日、課長に聞いてみたら？"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "唉，截止日期居然是明天，我可没听说啊。"
+    ],
+    "options": [
+     "截止日期原来是昨天啊。",
+     "咦，上周的邮件里写了啊。",
+     "那你明天问问科长？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Ugh, the deadline's tomorrow? Nobody told me."
+    ],
+    "options": [
+     "So the deadline was yesterday.",
+     "What? It was in last week's email.",
+     "Then why not ask the section chief tomorrow?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「締め切りが明日だなんて、聞いてないよ。」\n推理：「〜なんて」表示意外，「聞いてない」是“没人告诉我”的抱怨。告诉她上周的邮件里写过，是自然的回应。\n容易错：截止是明天，不是昨天；「聞いてない」不是要去问，「明日、課長に聞いてみたら」只是重复了词。",
+   "en": "Evidence: The woman says: 「締め切りが明日だなんて、聞いてないよ。」\nReasoning: 「〜なんて」 shows surprise, and 「聞いてない」 is a complaint that nobody told her. Pointing out it was in last week's email is a natural reply.\nTrap: the deadline is tomorrow, not yesterday; 「聞いてない」 isn't about going to ask, so \"ask tomorrow\" just echoes the word."
+  },
+  "wrong": [
+   {
+    "zh": "截止日期是明天，不是昨天。",
+    "en": "The deadline is tomorrow, not yesterday."
+   },
+   null,
+   {
+    "zh": "「聞いてない」是没人告诉她，“明天去问”只是重复了词。",
+    "en": "「聞いてない」 means nobody told her; \"ask tomorrow\" just echoes the word."
+   }
+  ],
+  "traps": [
+   "tense",
+   "repeat-word"
+  ]
+ }
+]

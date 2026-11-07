@@ -1,0 +1,417 @@
+[
+ {
+  "id": "n2-m2-ck-301",
+  "type": "gaiyou",
+  "scene": "博物館で、係の人が話しています。",
+  "question": "係の人は何について話していますか。",
+  "lines": [
+   [
+    "M",
+    "皆さん、この部屋、少し暗いと感じませんか。これには理由がありまして。ここに並んでいる古い着物や手紙は、布や紙でできています。こうした物は、光に当たり続けると、色があせたり、もろくなったりします。一度傷んでしまったら、元には戻せません。そこで、明かりをできるだけ弱くしているんです。それから、同じ物をずっと出しておくこともしません。一つの品物をご覧いただけるのは、一年に一か月ほどで、残りの期間は、光の当たらない倉庫で休ませています。今日ご覧の着物も、来月には別の物と入れ替わります。見えにくくて申し訳ありませんが、百年後の方にも見ていただくためですので、どうかご理解ください。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "展示室を明るくするための計画",
+   "古い着物や手紙が作られた時代",
+   "展示品を光から守るための工夫",
+   "来月から始まる展示の内容"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "博物馆里，工作人员在讲话。",
+    "question": "工作人员在讲什么？",
+    "lines": [
+     "各位，有没有觉得这个房间有点暗？这是有原因的。这里陈列的旧和服和书信是用布和纸做的。这类东西一直被光照着，就会褪色、变脆。一旦损坏，就无法复原了。所以我们把灯光尽量调暗。还有，同一件东西也不会一直摆出来。一件展品一年只能展出一个月左右，其余时间放在照不到光的仓库里“休息”。今天各位看到的和服，下个月也会换成别的。看不太清楚，非常抱歉，但这是为了让一百年后的人也能看到，敬请谅解。"
+    ],
+    "options": [
+     "把展厅调亮的计划",
+     "旧和服和书信制作的年代",
+     "保护展品不受光照的做法",
+     "下个月开始的展览内容"
+    ]
+   },
+   "en": {
+    "scene": "At a museum, a staff member is speaking.",
+    "question": "What is the staff member talking about?",
+    "lines": [
+     "Everyone, does this room feel a little dark to you? There's a reason for that. The old kimono and letters displayed here are made of cloth and paper. Things like these fade and become brittle if they're exposed to light for long. Once damaged, they can't be restored. So we keep the lighting as dim as possible. We also don't keep the same item out all the time. Each item can be seen for only about a month a year; for the rest of the time it rests in a storeroom away from light. The kimono you see today will be swapped for another next month. We're sorry they're hard to see, but it's so that people a hundred years from now can see them too, so we ask for your understanding."
+    ],
+    "options": [
+     "Plans to make the gallery brighter",
+     "When the old kimono and letters were made",
+     "What the museum does to protect items from light",
+     "What next month's exhibition will show"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：工作人员说：「こうした物は、光に当たり続けると、色があせたり、もろくなったりします。」「そこで、明かりをできるだけ弱くしているんです。」又说：「残りの期間は、光の当たらない倉庫で休ませています。」\n推理：房间暗、展品一年只展出一个月左右、平时放在不见光的仓库，都是为了不让布和纸做的展品被光损坏。整段讲的是保护展品不受光照的做法。\n容易错：“下个月换展品”只是其中一个例子；他为看不清道歉，但并没有要调亮。",
+   "en": "Evidence: The staff member says: 「こうした物は、光に当たり続けると、色があせたり、もろくなったりします。」 and 「そこで、明かりをできるだけ弱くしているんです。」 Also: 「残りの期間は、光の当たらない倉庫で休ませています。」\nReasoning: The dim room, showing each item for only a month a year, and resting items in a dark storeroom all keep the cloth and paper from being damaged by light. The talk is about protecting the items from light.\nTrap: the swap next month is just one example; apologising for the dimness doesn't mean a plan to brighten the room."
+  },
+  "wrong": [
+   {
+    "zh": "灯光是故意调暗的，没说要调亮。",
+    "en": "The dim lighting is deliberate; there's no plan to brighten it."
+   },
+   {
+    "zh": "只说是布和纸做的旧东西，没讲制作年代。",
+    "en": "He only says they're old cloth and paper; nothing about when they were made."
+   },
+   null,
+   {
+    "zh": "下个月换展品只是说明轮换的例子，没介绍展览内容。",
+    "en": "The swap next month illustrates the rotation; no exhibition is described."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-302",
+  "type": "gaiyou",
+  "scene": "女の人と男の人が、スーパーのセルフレジについて話しています。",
+  "question": "男の人はセルフレジについてどう思っていますか。",
+  "lines": [
+   [
+    "F",
+    "駅前のスーパー、レジが半分ぐらいセルフになったね。"
+   ],
+   [
+    "M",
+    "うん。飲み物一本とか、ちょっとしたものを買うときは、並ばなくていいし、自分でピッてやったほうが早いから、すごく助かってるよ。"
+   ],
+   [
+    "F",
+    "私、機械って苦手なんだよね。"
+   ],
+   [
+    "M",
+    "慣れれば簡単だよ。ただ、週末にまとめ買いするときは、ちょっとね。一つずつ通して、自分で袋に詰めてると、後ろの人を待たせてるみたいで、落ち着かないんだ。"
+   ],
+   [
+    "F",
+    "ああ、わかる。"
+   ],
+   [
+    "M",
+    "そういうときは、結局、店員さんのレジに並んじゃう。だから、全部セルフにするって話もあるらしいけど、それはやめてほしいな。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "少量なら便利だが、店員のレジも残してほしい",
+   "操作が難しくて、あまり使いたくない",
+   "早くて便利なので、全部セルフにしてほしい",
+   "店員と話せないのが、さびしいと感じている"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在谈超市的自助收银台。",
+    "question": "男人对自助收银台有什么想法？",
+    "lines": [
+     "车站前的超市，收银台差不多一半变成自助的了。",
+     "嗯。买一瓶饮料之类的小东西的时候，不用排队，自己扫一下更快，帮了大忙。",
+     "我不太会用机器。",
+     "习惯了就简单了。不过周末一次买很多的时候就有点……一件一件扫，自己装袋，总觉得让后面的人等着，心里不踏实。",
+     "啊，我懂。",
+     "那种时候我最后还是会去排店员的收银台。所以，听说有要全部改成自助的说法，那个我希望别这样。"
+    ],
+    "options": [
+     "买得少时方便，但希望保留店员收银台",
+     "操作难，不太想用",
+     "又快又方便，希望全部改成自助",
+     "不能和店员说话，觉得寂寞"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking about self-checkouts at the supermarket.",
+    "question": "What does the man think about self-checkouts?",
+    "lines": [
+     "The supermarket by the station has made about half its checkouts self-service.",
+     "Yeah. When I'm buying something small, like one drink, I don't have to queue and it's quicker to scan it myself, so it really helps.",
+     "I'm no good with machines.",
+     "It's easy once you're used to it. But when I do a big shop at the weekend, it's a bit... Scanning things one by one and bagging them myself, I feel like I'm keeping the people behind me waiting, and I can't relax.",
+     "Oh, I know what you mean.",
+     "At times like that, I end up queuing for a staffed checkout. So I hear there's talk of making them all self-service, but I'd rather they didn't."
+    ],
+    "options": [
+     "Handy for small buys, but staffed checkouts should stay",
+     "Hard to operate, so he'd rather not use them",
+     "Fast and handy, so all checkouts should be self-service",
+     "He feels lonely not being able to talk to staff"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「ちょっとしたものを買うときは……すごく助かってるよ。」最后说：「全部セルフにするって話もあるらしいけど、それはやめてほしいな。」\n推理：买少量东西时他觉得自助很方便；但周末大量购物时，怕让后面的人等，会去排店员的收银台，所以不希望全部改成自助。\n容易错：前半的“方便”只是一部分态度；不会用机器的是女的。",
+   "en": "Evidence: The man says: 「ちょっとしたものを買うときは……すごく助かってるよ。」 and finally: 「全部セルフにするって話もあるらしいけど、それはやめてほしいな。」\nReasoning: For small purchases he finds self-checkout very handy, but for a big weekend shop he worries about holding people up and uses a staffed checkout, so he doesn't want them all to go self-service.\nTrap: the \"handy\" part is only half his view; it's the woman who's bad with machines."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "不会用机器的是女的，他说「慣れれば簡単だよ」。",
+    "en": "It's the woman who's bad with machines; he says it's easy once you're used to it."
+   },
+   {
+    "zh": "他明确说全部改成自助「やめてほしい」。",
+    "en": "He clearly says he doesn't want them all self-service."
+   },
+   {
+    "zh": "他没提和店员说话的事，排店员收银台是怕让后面的人等。",
+    "en": "He never mentions talking to staff; he uses staffed checkouts so as not to hold people up."
+   }
+  ],
+  "traps": [
+   "attitude-combo",
+   "other-option-attribute"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-303",
+  "type": "gaiyou",
+  "scene": "テレビで、建築家が話しています。",
+  "question": "建築家は何について話していますか。",
+  "lines": [
+   [
+    "M",
+    "家を建てる方の多くは、今の家族に合わせて部屋を決めます。子どもが二人なら子ども部屋を二つ、というように。ところが、子どもが家にいるのは、長くても二十年ほどです。そのあとは、使わない部屋が二つ残る。逆に、親と一緒に住むことになって、一階に寝る部屋が必要になることもあります。そこで私は、最初から部屋を細かく分けず、あとで壁を足したり外したりできる造りをおすすめしています。家は、何十年も住み続けるものです。建てたときの家族ではなく、二十年後、三十年後の暮らしを想像してみてください。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "子ども部屋を作らないほうがいい理由",
+   "親と一緒に住むときの家の選び方",
+   "家を長く使うための手入れの方法",
+   "暮らしの変化に合わせて変えられる家"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "电视上，一位建筑师在讲话。",
+    "question": "建筑师在讲什么？",
+    "lines": [
+     "盖房子的人，大多会根据现在的家庭来定房间。比如有两个孩子就做两间儿童房。可是孩子住在家里，最长也就二十年左右。那之后就剩下两间不用的房间。反过来，也有要和父母同住，一楼需要一间卧室的情况。所以我建议，一开始不要把房间分得太细，做成以后能加墙、拆墙的结构。房子是要住几十年的。请不要只想着盖房时的家庭，试着想象二十年后、三十年后的生活。"
+    ],
+    "options": [
+     "最好不做儿童房的理由",
+     "和父母同住时怎么选房子",
+     "为了长久使用房子的保养方法",
+     "能配合生活变化而改变的房子"
+    ]
+   },
+   "en": {
+    "scene": "On TV, an architect is speaking.",
+    "question": "What is the architect talking about?",
+    "lines": [
+     "Most people building a house decide the rooms to suit their family as it is now — two children, so two children's rooms, and so on. But children live at home for twenty years at most. After that, two unused rooms are left. Or the other way round, you may end up living with your parents and need a bedroom on the ground floor. So I recommend not dividing the rooms finely from the start, but building so that walls can be added or removed later. A house is something you live in for decades. Please try to imagine not the family you have when you build, but your life twenty or thirty years on."
+    ],
+    "options": [
+     "Why it's better not to have children's rooms",
+     "How to choose a house for living with parents",
+     "How to maintain a house so it lasts",
+     "A house that can change as your life changes"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：建筑师说：「最初から部屋を細かく分けず、あとで壁を足したり外したりできる造りをおすすめしています。」最后说：「二十年後、三十年後の暮らしを想像してみてください。」\n推理：孩子长大离家、和父母同住，都是家庭会变化的例子。他主张的是做成以后能改的结构，好配合生活的变化。\n容易错：儿童房、和父母同住只是例子，不是主题；他没说不要儿童房。",
+   "en": "Evidence: The architect says: 「最初から部屋を細かく分けず、あとで壁を足したり外したりできる造りをおすすめしています。」 and ends: 「二十年後、三十年後の暮らしを想像してみてください。」\nReasoning: Children leaving and parents moving in are examples of how a family changes. His point is to build so the house can be altered to follow those changes.\nTrap: children's rooms and living with parents are examples, not the topic; he never says not to have children's rooms."
+  },
+  "wrong": [
+   {
+    "zh": "他没说不要儿童房，只是举例说明房间以后可能用不上。",
+    "en": "He doesn't say no children's rooms; it's an example of rooms going unused."
+   },
+   {
+    "zh": "和父母同住只是一个例子，没讲怎么选房子。",
+    "en": "Living with parents is just one example; he says nothing about choosing a house."
+   },
+   {
+    "zh": "他讲的是结构能改，不是维护保养。",
+    "en": "He talks about an adaptable layout, not maintenance."
+   },
+   null
+  ],
+  "traps": [
+   "detail-as-topic",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-304",
+  "type": "gaiyou",
+  "scene": "男の人と女の人が、古着について話しています。",
+  "question": "女の人は古着についてどう思っていますか。",
+  "lines": [
+   [
+    "M",
+    "そのコート、いいね。新しいの？"
+   ],
+   [
+    "F",
+    "ううん、古着屋さんで見つけたの。前は、人が着てたものなんて絶対いやだって思ってたんだけどね。"
+   ],
+   [
+    "M",
+    "へえ、意外。"
+   ],
+   [
+    "F",
+    "妹に連れていかれて、しかたなく見てたら、このコートがあって。昔の物だから生地がしっかりしてるし、ほかの人とかぶらないし。値段も新品の三分の一ぐらい。"
+   ],
+   [
+    "M",
+    "じゃあ、これからは全部古着？"
+   ],
+   [
+    "F",
+    "まさか。下着とか靴は、やっぱり新しいのがいいよ。でも、コートやジャケットなら、また探しに行きたいな。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "人が着た物なので、やはり抵抗がある",
+   "物によっては古着もいいと思うようになった",
+   "安いので、これからは全部古着にしたい",
+   "新品より質が悪いので、すぐ買い替える"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在谈旧衣服。",
+    "question": "女人对旧衣服有什么想法？",
+    "lines": [
+     "那件大衣不错啊。新买的？",
+     "不是，在旧衣店找到的。以前我觉得别人穿过的东西绝对不要来着。",
+     "哦，真意外。",
+     "被妹妹拉去，没办法只好看看，结果看到了这件大衣。因为是以前的东西，布料很结实，又不会跟别人撞衫。价格也就新的三分之一左右。",
+     "那以后全都穿旧衣服了？",
+     "怎么可能。内衣啊鞋子啊，还是新的好。不过大衣、夹克的话，还想再去找找。"
+    ],
+    "options": [
+     "是别人穿过的，还是有抵触",
+     "开始觉得有些东西买旧的也不错",
+     "便宜，以后想全买旧衣服",
+     "质量比新的差，很快就要换"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking about second-hand clothes.",
+    "question": "What does the woman think about second-hand clothes?",
+    "lines": [
+     "That coat's nice. Is it new?",
+     "No, I found it at a second-hand clothes shop. I used to think I'd never wear something someone else had worn.",
+     "Huh, that's a surprise.",
+     "My sister dragged me along, and while I was looking around reluctantly, I found this coat. Because it's old, the fabric is solid, and nobody else has the same one. And it was about a third of the price of a new one.",
+     "So it's all second-hand from now on?",
+     "No way. Things like underwear and shoes, I still want new. But for coats and jackets, I'd like to go looking again."
+    ],
+    "options": [
+     "Others have worn them, so she still feels uneasy",
+     "She's come to think second-hand is fine for some things",
+     "They're cheap, so she wants to buy only second-hand",
+     "They're worse quality, so she'll soon replace them"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「下着とか靴は、やっぱり新しいのがいいよ。でも、コートやジャケットなら、また探しに行きたいな。」\n推理：她以前讨厌旧衣服，但买了这件大衣后发现布料结实、不撞衫、便宜。不过她不打算全买旧的，内衣和鞋还是要新的，大衣、夹克才想再去找。所以她是开始觉得有些东西买旧的也不错。\n容易错：「前は〜いやだって思ってた」是过去的想法；“全部旧衣服”被她用「まさか」否定。",
+   "en": "Evidence: The woman says: 「下着とか靴は、やっぱり新しいのがいいよ。でも、コートやジャケットなら、また探しに行きたいな。」\nReasoning: She used to dislike second-hand clothes, but this coat showed her the fabric is solid, nobody has the same one, and it's cheap. Still, she won't buy everything second-hand — underwear and shoes stay new; she'll look again only for coats and jackets. So she now thinks second-hand is fine for some things.\nTrap: 「前は〜いやだって思ってた」 is her past view; she rejects \"all second-hand\" with 「まさか」."
+  },
+  "wrong": [
+   {
+    "zh": "不想要别人穿过的是她以前的想法。",
+    "en": "Not wanting worn clothes was how she used to feel."
+   },
+   null,
+   {
+    "zh": "男的问是不是全买旧衣服，她说「まさか」。",
+    "en": "Asked if it's all second-hand now, she says 「まさか」."
+   },
+   {
+    "zh": "她说以前的东西「生地がしっかりしてる」，质量好。",
+    "en": "She says the old fabric is solid — good quality."
+   }
+  ],
+  "traps": [
+   "attitude-combo",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-305",
+  "type": "gaiyou",
+  "scene": "観光地で、ガイドが話しています。",
+  "question": "ガイドは何について話していますか。",
+  "lines": [
+   [
+    "F",
+    "皆さん、この辺りを歩いていて、道が細くて、曲がり角が多いと感じませんでしたか。これには、ちゃんと理由があるんです。この町は、四百年ほど前、お城を中心に作られました。もし敵が攻めてきても、まっすぐお城までたどり着けないよう、わざと見通しの悪い道にしたんですね。行き止まりのように見えて、先に続いている道もあります。おかげで、今では車が通りにくく、住んでいる方は少し不便だそうですが、そのぶん、昔の町並みがよく残りました。では、このあと、お城の中をご案内します。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "この町の道が細く曲がっている理由",
+   "四百年前に建てられた城の歴史",
+   "昔の町並みを残すための住民の努力",
+   "車で町を回るときの注意"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "旅游景点，导游在讲话。",
+    "question": "导游在讲什么？",
+    "lines": [
+     "各位，在这一带走的时候，有没有觉得路很窄、拐角很多？这是有原因的。这座城镇大约四百年前以城堡为中心建成。为了即使敌人攻过来也不能直奔城堡，特意把路修得视线不好。有的路看起来像死胡同，其实前面还连着。也因为这样，现在车不太好通行，听说住在这里的人有点不方便，但也正因为如此，旧时的街景保留得很好。那么，接下来我带大家参观城堡里面。"
+    ],
+    "options": [
+     "这座城镇的路又窄又弯的原因",
+     "四百年前建的城堡的历史",
+     "居民为保留旧街景所做的努力",
+     "开车逛城镇时的注意事项"
+    ]
+   },
+   "en": {
+    "scene": "At a tourist spot, a guide is speaking.",
+    "question": "What is the guide talking about?",
+    "lines": [
+     "Everyone, as you walked around here, did you notice how narrow the streets are and how many corners there are? There's a good reason for that. This town was built about four hundred years ago around the castle. So that even if enemies attacked, they couldn't get straight to the castle, the streets were deliberately made hard to see along. Some look like dead ends but carry on. Because of this, cars have trouble getting through today, and residents find it a little inconvenient, but in return the old townscape has been well preserved. Now, next I'll show you inside the castle."
+    ],
+    "options": [
+     "Why the town's streets are narrow and winding",
+     "The history of the castle built 400 years ago",
+     "Residents' efforts to preserve the old townscape",
+     "Tips for driving around the town"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：导游说：「もし敵が攻めてきても、まっすぐお城までたどり着けないよう、わざと見通しの悪い道にしたんですね。」\n推理：开头问大家有没有觉得路窄、拐角多，接着说明这是为了不让敌人直奔城堡而特意修的。城堡、车难通行、街景保留，都是围绕“路为什么是这样”的补充。\n容易错：城堡只是背景，没讲它的历史；街景保留是路带来的结果，不是居民的努力。",
+   "en": "Evidence: The guide says: 「もし敵が攻めてきても、まっすぐお城までたどり着けないよう、わざと見通しの悪い道にしたんですね。」\nReasoning: She opens by asking if they noticed the narrow, twisting streets, then explains they were built that way so enemies couldn't reach the castle directly. The castle, the trouble for cars and the preserved townscape all hang on why the streets are like this.\nTrap: the castle is background — its history isn't covered; the preserved townscape is a result of the streets, not residents' efforts."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "城堡只是说明路为什么这样的背景，没讲城堡的历史。",
+    "en": "The castle is background for the streets; its history isn't discussed."
+   },
+   {
+    "zh": "街景保留是路难走带来的结果，没提居民的努力。",
+    "en": "The townscape survived because of the streets; no residents' efforts are mentioned."
+   },
+   {
+    "zh": "只提到车不好通行，没讲开车的注意事项。",
+    "en": "She only says cars have trouble; no driving tips."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "twisted"
+  ]
+ }
+]

@@ -1,0 +1,409 @@
+[
+ {
+  "id": "n2-m2-ck-601",
+  "type": "tougou",
+  "scene": "商店街の事務所で、会長と店の人二人が、秋のイベントについて話しています。",
+  "lines": [
+   [
+    "M1",
+    "秋のイベント、そろそろ決めないとね。去年は夜市だったけど、何か案はある？"
+   ],
+   [
+    "F",
+    "夜市、人がたくさん来て、評判よかったじゃないですか。今年も同じでいいと思いますけど。"
+   ],
+   [
+    "M2",
+    "人は来ましたけど、みんな食べ物の屋台に集まって、うちみたいな店には、ほとんど入ってこなかったんですよ。それより、子ども向けに、それぞれの店の中で物作りを体験してもらうのはどうでしょう。子どもが来れば、親も一緒に店に入りますし。"
+   ],
+   [
+    "F",
+    "体験って、準備が大変じゃない？　教える人も要るし、うちは店番だけで手いっぱいよ。"
+   ],
+   [
+    "M1",
+    "だったら、スタンプラリーは？　店を回ってもらえるし、紙を刷るだけだから、準備も楽だよ。"
+   ],
+   [
+    "F",
+    "ああ、それならできそう。"
+   ],
+   [
+    "M2",
+    "でも、隣の町でやったとき、スタンプを押したら、すぐ次の店に行っちゃって、店の人と話す時間なんてほとんどなかったそうですよ。"
+   ],
+   [
+    "M1",
+    "うーん、それじゃ意味がないな。店の中でゆっくり過ごしてもらうのが、一番の目的なんだから。駅前の広場で音楽のライブっていう話もあったけど、あれも人が集まるだけだしなあ。"
+   ],
+   [
+    "F",
+    "……そういえば、うちのお客さんで、手芸の教室をやってる人が何人かいるのよ。頼んだら、喜んで来てくれると思う。"
+   ],
+   [
+    "M1",
+    "それは心強いね。じゃあ、その方向で準備を進めよう。"
+   ]
+  ],
+  "question": "秋のイベントで何をすることにしましたか。",
+  "spokenOptions": true,
+  "options": [
+   "今年も夜市を開く",
+   "店の中で子どもに物作りを教える",
+   "店を回るスタンプラリーをする",
+   "駅前で音楽のライブを開く"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "商店街的办公室里，会长和两位店主在商量秋天的活动。",
+    "question": "秋天的活动决定做什么？",
+    "lines": [
+     "秋天的活动差不多该定了。去年是夜市，有什么想法吗？",
+     "夜市来了很多人，评价不是挺好的吗？我觉得今年也一样就行。",
+     "人是来了，可大家都聚在吃的摊位那儿，像我们这样的店几乎没人进来。比起那个，让孩子们在各家店里体验做手工怎么样？孩子来的话，父母也会一起进店。",
+     "体验的话，准备起来不麻烦吗？还需要教的人，我们店光看店就忙不过来了。",
+     "那盖章集点活动呢？能让大家逛各家店，只要印纸就行，准备也轻松。",
+     "啊，那个好像能办。",
+     "可是隔壁镇办的时候，听说盖完章马上就去下一家，几乎没有和店里的人说话的时间。",
+     "嗯……那就没意义了。让大家在店里慢慢待着才是最主要的目的。也有人说在车站前广场办音乐演出，那个也只是聚人而已啊。",
+     "……说起来，我们店的客人里有好几个在开手工艺教室的。去拜托的话，我想她们会很乐意来。",
+     "那太让人放心了。那就朝这个方向准备吧。"
+    ],
+    "options": [
+     "今年也办夜市",
+     "在店里教孩子做手工",
+     "举办逛店的盖章集点活动",
+     "在车站前办音乐演出"
+    ]
+   },
+   "en": {
+    "scene": "At the shopping street's office, the chairman and two shopkeepers are discussing the autumn event.",
+    "question": "What have they decided to do for the autumn event?",
+    "lines": [
+     "We need to decide on the autumn event soon. Last year it was a night market — any ideas?",
+     "The night market drew lots of people and went down well, didn't it? I think the same again this year would be fine.",
+     "People came, but they all crowded round the food stalls, and hardly anyone came into shops like mine. Instead, how about letting children try making things inside each shop? If the kids come, their parents come in with them.",
+     "Hands-on activities? Isn't that a lot of preparation? You'd need people to teach, and I've got my hands full just minding the shop.",
+     "Then how about a stamp rally? People would go round the shops, and you just print some cards, so preparation's easy.",
+     "Oh, that sounds doable.",
+     "But when the next town did one, apparently people went straight on to the next shop once they got their stamp, and there was hardly any time to talk to the shopkeepers.",
+     "Hmm, then there's no point. Getting people to spend time inside the shops is the main aim. There was also talk of a music concert in the station square, but that just gathers people too.",
+     "...Come to think of it, several of my customers run craft classes. If I asked, I think they'd be happy to come.",
+     "That's reassuring. Then let's go ahead along those lines."
+    ],
+    "options": [
+     "Hold the night market again",
+     "Teach children to make things in the shops",
+     "Hold a stamp rally round the shops",
+     "Hold a music concert by the station"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：一个店主提议：「子ども向けに、それぞれの店の中で物作りを体験してもらうのはどうでしょう。」女的以没有教的人为由反对，后来她自己说：「うちのお客さんで、手芸の教室をやってる人が何人かいるのよ。」会长说：「じゃあ、その方向で準備を進めよう。」\n推理：夜市人都聚在吃的摊位；盖章集点盖完就走；音乐演出只是聚人——都不符合“让人在店里慢慢待”的目的。手工体验唯一的问题是没人教，女的找到了教的人，问题解决，所以决定做这个。\n容易错：最后提到的音乐演出和一度说“能办”的盖章集点都不是结论；决定的话里没有直接说出方案名称。",
+   "en": "Evidence: One shopkeeper proposes: 「子ども向けに、それぞれの店の中で物作りを体験してもらうのはどうでしょう。」 The woman objects that there's nobody to teach, but later says: 「うちのお客さんで、手芸の教室をやってる人が何人かいるのよ。」 The chairman says: 「じゃあ、その方向で準備を進めよう。」\nReasoning: At the night market people stayed at the food stalls; with a stamp rally they move straight on; a concert just gathers people — none meets the aim of getting people to spend time in the shops. The craft idea's only problem was teachers, and the woman has found some, so that's what they choose.\nTrap: neither the concert (mentioned last) nor the stamp rally (briefly called doable) is the decision; the deciding line never names the plan."
+  },
+  "wrong": [
+   {
+    "zh": "夜市人都聚在吃的摊位，几乎没人进店。",
+    "en": "At the night market people stayed at the food stalls and hardly came into shops."
+   },
+   null,
+   {
+    "zh": "盖章集点盖完章就去下一家，没时间和店里人说话，「意味がない」。",
+    "en": "With a stamp rally people move straight on, so there's no point."
+   },
+   {
+    "zh": "音乐演出「人が集まるだけ」，不符合目的。",
+    "en": "A concert just gathers people — it doesn't meet the aim."
+   }
+  ],
+  "traps": [
+   "third-person-decides",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-602",
+  "type": "tougou",
+  "scene": "レストランで、店長と店員二人が、昼の行列について話しています。",
+  "lines": [
+   [
+    "M",
+    "昼の行列のことで、隣のビルの管理人さんから、入り口がふさがって困るって言われちゃってね。何かいい方法ないかな。"
+   ],
+   [
+    "F1",
+    "予約制にしたらどうですか。予約したお客さんだけなら、外で並ぶ人はいなくなりますよ。"
+   ],
+   [
+    "F2",
+    "でも、うちのランチって、近くの会社の人がほとんどじゃないですか。会議が長引いたりして、時間どおりに来られないことも多いと思うんです。予約の席を空けて待ってたら、回らなくなっちゃいますよ。"
+   ],
+   [
+    "M",
+    "そうだなあ。じゃあ、番号の札を渡して、順番が来たら携帯に知らせる、っていうのは？　ほかの店でやってるのを見たんだけど。"
+   ],
+   [
+    "F1",
+    "それ、専用の機械を入れなきゃいけないんですよね。けっこうかかるんじゃないですか。"
+   ],
+   [
+    "M",
+    "まあ、そうか……。なら、奥の物置を片づけて、テーブルを二つ増やすか。"
+   ],
+   [
+    "F1",
+    "二つ増えても、行列はたいして短くならないと思います。それに、今の人数で、これ以上お客さんが増えたら、料理を出すのが追いつきません。"
+   ],
+   [
+    "F2",
+    "ランチの時間を、二時半まで延ばすのはどうですか。お客さんが少しは分かれるかも。"
+   ],
+   [
+    "M",
+    "それだと、夜の準備の時間がなくなっちゃうよ。"
+   ],
+   [
+    "F2",
+    "……あ、そういえば、友達の店で、さっき店長がおっしゃってたのを使ってるんですけど、機械を買わなくても、月に三千円ぐらいで借りられるって言ってました。"
+   ],
+   [
+    "M",
+    "え、そんなに安いの？　それなら、管理人さんにも迷惑をかけずに済むし、すぐにでも始めたいね。"
+   ]
+  ],
+  "question": "行列の問題をどうすることにしましたか。",
+  "spokenOptions": true,
+  "options": [
+   "予約制にする",
+   "テーブルを増やす",
+   "順番が来たら客に知らせる",
+   "ランチの時間を延ばす"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "餐厅里，店长和两个店员在商量中午排队的问题。",
+    "question": "排队的问题决定怎么解决？",
+    "lines": [
+     "关于中午排队的事，隔壁大楼的管理员说入口被堵住了，很困扰。有什么好办法吗？",
+     "改成预约制怎么样？只接待预约的客人的话，就没人在外面排队了。",
+     "可是我们的午餐，客人大多是附近公司的人吧？开会拖长什么的，很多时候没法准时来。空着预约的座位等着的话，翻台就跟不上了。",
+     "也是啊。那发个号码牌，轮到的时候发消息到手机上通知，这样呢？我看别的店在这么做。",
+     "那个得装专用的机器吧？要花不少钱吧？",
+     "嗯，也是……那就把里面的储物间收拾出来，加两张桌子？",
+     "加两张，我觉得队伍也短不了多少。而且以现在的人手，客人再多的话，上菜就跟不上了。",
+     "把午餐时间延长到两点半怎么样？客人也许能分散一点。",
+     "那样的话，晚上的准备时间就没了。",
+     "……啊，说起来，我朋友的店在用刚才店长说的那个，她说不用买机器，一个月三千日元左右就能租。",
+     "诶，这么便宜？那样的话也不会给管理员添麻烦，真想马上就开始。"
+    ],
+    "options": [
+     "改成预约制",
+     "增加桌子",
+     "轮到时通知客人",
+     "延长午餐时间"
+    ]
+   },
+   "en": {
+    "scene": "At a restaurant, the manager and two staff members are discussing the lunchtime queue.",
+    "question": "What have they decided to do about the queue?",
+    "lines": [
+     "About the lunchtime queue — the caretaker of the building next door told me it's blocking their entrance. Any good ideas?",
+     "How about taking reservations? If we only seat customers who've booked, nobody will be queuing outside.",
+     "But our lunch customers are mostly people from nearby offices, aren't they? Meetings run over and so on — I think they often can't come on time. If we keep reserved tables empty waiting for them, we won't turn tables fast enough.",
+     "That's true. Then how about handing out numbered tickets and letting people know on their phones when it's their turn? I saw another place doing it.",
+     "You need special equipment for that, don't you? Wouldn't that cost quite a bit?",
+     "Well, I suppose... Then shall we clear out the storeroom at the back and add two tables?",
+     "Even with two more, I don't think the queue would get much shorter. And with the staff we have now, if we get any more customers, we won't keep up with serving.",
+     "How about extending lunch until two-thirty? Customers might spread out a bit.",
+     "Then we'd lose our prep time for the evening.",
+     "...Oh, come to think of it, a friend's restaurant uses the thing you mentioned earlier, and she said you don't have to buy the equipment — you can rent it for about three thousand yen a month.",
+     "What, that cheap? Then we wouldn't be bothering the caretaker either. I'd like to start right away."
+    ],
+    "options": [
+     "Take reservations",
+     "Add more tables",
+     "Notify customers when it's their turn",
+     "Extend lunch hours"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：店长提议：「番号の札を渡して、順番が来たら携帯に知らせる、っていうのは？」因为「専用の機械を入れなきゃいけない」「けっこうかかる」被搁置。后来另一个店员说：「機械を買わなくても、月に三千円ぐらいで借りられる」，店长说：「それなら……すぐにでも始めたいね。」\n推理：预约制因为客人常不能准时来不行；加桌子队伍短不了，上菜也跟不上；延长时间会没有晚上的准备时间。号码牌通知唯一的问题是费用，知道能便宜租用后问题消失，就决定用这个。\n容易错：最后提出的“延长午餐时间”被否定了；决定的话里用「さっき店長がおっしゃってたの」指代，没有重复方案名称。",
+   "en": "Evidence: The manager proposes: 「番号の札を渡して、順番が来たら携帯に知らせる、っていうのは？」 It's shelved because 「専用の機械を入れなきゃいけない」 and it would cost a lot. Later the other staff member says: 「機械を買わなくても、月に三千円ぐらいで借りられる」, and the manager says: 「それなら……すぐにでも始めたいね。」\nReasoning: Reservations fail because customers often can't come on time; extra tables wouldn't shorten the queue and the kitchen couldn't keep up; longer hours would eat into evening prep. The ticket system's only problem was cost, and once they learn it can be rented cheaply, they choose it.\nTrap: the last proposal (longer lunch hours) is rejected; the deciding line refers back with 「さっき店長がおっしゃってたの」 instead of naming the plan."
+  },
+  "wrong": [
+   {
+    "zh": "客人常因开会不能准时来，空着预约的座位会翻台不及。",
+    "en": "Customers often can't come on time, so held tables would slow turnover."
+   },
+   {
+    "zh": "加两张桌子队伍「たいして短くならない」，上菜也跟不上。",
+    "en": "Two tables wouldn't shorten the queue much, and serving couldn't keep up."
+   },
+   null,
+   {
+    "zh": "延长到两点半会「夜の準備の時間がなくなっちゃう」。",
+    "en": "Extending to 2:30 would leave no time to prepare for the evening."
+   }
+  ],
+  "traps": [
+   "third-person-decides",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n2-m2-ck-603",
+  "type": "tougou",
+  "scene": "旅行会社で、店の人が日帰りのバスツアーを四つ紹介しています。そのあと、会社の同僚の男の人と女の人が話しています。",
+  "lines": [
+   [
+    "F1",
+    "今月おすすめの日帰りツアーを四つご紹介します。一つ目は、いちご狩りと温泉のツアーです。朝七時に駅前を出発し、いちごを好きなだけ召し上がったあと、帰りに温泉にお入りいただけます。二つ目は、山のお寺めぐりです。古いお寺を三つ回り、お昼はお寺の精進料理です。山道を合わせて三時間ほど歩きますので、歩きやすい靴でご参加ください。三つ目は、湖でのカヌー体験です。インストラクターがつきますので、初めての方でも安心です。ただし、安全のため、小学生以上の方に限らせていただいております。四つ目は、お菓子の工場見学です。お菓子作りの体験もあり、お子様に特に人気です。帰りには、アウトレットでのお買い物の時間もございます。"
+   ],
+   [
+    "M",
+    "今度の連休、両親を連れてどこか行こうと思ってるんだけど、親父が最近、膝を痛めてて、長い距離は歩けないんだよね。"
+   ],
+   [
+    "F2",
+    "じゃあ、お寺は無理だね。ご両親、甘いものは？"
+   ],
+   [
+    "M",
+    "二人とも、甘いものはあんまり。買い物にも興味ないし。その代わり、親父は朝早いのは全然平気で、温泉には目がないんだ。"
+   ],
+   [
+    "F2",
+    "じゃあ、決まりじゃない。"
+   ],
+   [
+    "M",
+    "うん、そうする。そっちは？　子どもたちと行くんでしょ？"
+   ],
+   [
+    "F2",
+    "うん。上の子が、カヌーやりたいって前から言っててね。これがいいかなと思ったんだけど。"
+   ],
+   [
+    "M",
+    "あれ、下の子って、まだ幼稚園じゃなかった？"
+   ],
+   [
+    "F2",
+    "あ、そうだった。一人だけ置いていくわけにはいかないし……。朝早いのはうちは無理だし、お寺は下の子には歩くのが長すぎるし。じゃあ、残ったのにするかな。子どもたちも喜ぶと思う。"
+   ]
+  ],
+  "options": [
+   "いちご狩りと温泉",
+   "お寺めぐり",
+   "カヌー体験",
+   "お菓子の工場見学"
+  ],
+  "questions": [
+   {
+    "question": "質問1：男の人は、どのツアーに申し込みますか。",
+    "answer": 0,
+    "why": {
+     "zh": "依据：男的说：「親父は朝早いのは全然平気で、温泉には目がないんだ。」店员介绍第一个团：「帰りに温泉にお入りいただけます。」\n推理：父亲膝盖受伤，要走三小时山路的寺庙不行；两人不爱吃甜的、对购物没兴趣，点心工厂不合适；早上七点出发对父亲没问题，又有温泉，所以选摘草莓加温泉。\n容易错：「目がない」是非常喜欢的意思；早出发是这个团的缺点，但对他父亲不成问题。",
+     "en": "Evidence: The man says: 「親父は朝早いのは全然平気で、温泉には目がないんだ。」 The staff member said of the first tour: 「帰りに温泉にお入りいただけます。」\nReasoning: His dad's knee rules out three hours of mountain paths at the temples; his parents don't care for sweets or shopping, so the factory doesn't suit; the 7 a.m. start is no problem for his dad, and there's a hot spring, so it's strawberry picking and the hot spring.\nTrap: 「目がない」 means he loves it; the early start is this tour's drawback, but it doesn't bother his dad."
+    },
+    "wrong": [
+     null,
+     {
+      "zh": "父亲膝盖受伤，「長い距離は歩けない」。",
+      "en": "His dad's knee means he can't walk long distances."
+     },
+     {
+      "zh": "皮划艇是女同事家老大想玩的，跟他父母的条件不相干。",
+      "en": "Canoeing is what the woman's child wants; nothing about his parents points to it."
+     },
+     {
+      "zh": "父母「甘いものはあんまり」，对购物也没兴趣。",
+      "en": "His parents don't care for sweets or shopping."
+     }
+    ]
+   },
+   {
+    "question": "質問2：女の人は、どのツアーに申し込みますか。",
+    "answer": 3,
+    "why": {
+     "zh": "依据：男的提醒：「下の子って、まだ幼稚園じゃなかった？」女的说：「朝早いのはうちは無理だし、お寺は下の子には歩くのが長すぎるし。じゃあ、残ったのにするかな。」\n推理：皮划艇「小学生以上」，上幼儿园的老二不能参加；早上七点出发的草莓温泉团她家不行；寺庙要走三个小时，对老二太远。剩下的是点心工厂参观，还有做点心体验，受孩子欢迎。\n容易错：她最初想选皮划艇，但「小学生以上」的条件对不上；「残ったの」要靠排除推出来。",
+     "en": "Evidence: The man reminds her: 「下の子って、まだ幼稚園じゃなかった？」 She says: 「朝早いのはうちは無理だし、お寺は下の子には歩くのが長すぎるし。じゃあ、残ったのにするかな。」\nReasoning: Canoeing is for primary school age and up, so her kindergartener can't go; the 7 a.m. strawberry tour is impossible for them; three hours of walking at the temples is too much for the little one. What's left is the sweets factory, with a sweet-making activity popular with children.\nTrap: she first wanted canoeing, but the age limit rules it out; 「残ったの」 has to be worked out by elimination."
+    },
+    "wrong": [
+     {
+      "zh": "早上七点出发，「朝早いのはうちは無理」。",
+      "en": "It leaves at 7 a.m., and early mornings are impossible for her family."
+     },
+     {
+      "zh": "寺庙要走三个小时山路，对老二「歩くのが長すぎる」。",
+      "en": "Three hours of mountain paths is too long for her younger child."
+     },
+     {
+      "zh": "皮划艇仅限小学生以上，老二还在上幼儿园。",
+      "en": "Canoeing is for primary school age and up; her younger one is in kindergarten."
+     },
+     null
+    ]
+   }
+  ],
+  "tr": {
+   "zh": {
+    "scene": "旅行社里，店员在介绍四个一日游巴士团。之后，一对男女同事在说话。",
+    "questions": [
+     "问题1：男人报名参加哪个团？",
+     "问题2：女人报名参加哪个团？"
+    ],
+    "lines": [
+     "为大家介绍本月推荐的四个一日游。第一个是摘草莓加温泉的团。早上七点从车站前出发，草莓随便吃，回来的路上可以泡温泉。第二个是山里的寺庙巡游。参观三座古寺，午饭是寺里的素斋。山路加起来要走三个小时左右，请穿好走的鞋参加。第三个是湖上皮划艇体验。有教练陪同，第一次玩也放心。不过为了安全，仅限小学生以上参加。第四个是参观点心工厂。还可以体验做点心，特别受孩子欢迎。回来的路上还有在奥特莱斯购物的时间。",
+     "这次连休，我想带父母去哪儿玩，可我爸最近膝盖受了伤，走不了长路。",
+     "那寺庙就不行了。你父母喜欢吃甜的吗？",
+     "两个人都不太爱吃甜的。对购物也没兴趣。不过我爸早起完全没问题，而且特别喜欢温泉。",
+     "那不就定了嘛。",
+     "嗯，就这样。你呢？是跟孩子们去吧？",
+     "嗯。老大一直说想玩皮划艇。我觉得这个挺好的。",
+     "咦，你家老二不是还在上幼儿园吗？",
+     "啊，对哦。总不能只把一个留下……我们家早起不行，寺庙对老二来说要走的路太长了。那就选剩下的那个吧。孩子们应该也会喜欢。"
+    ],
+    "options": [
+     "摘草莓和温泉",
+     "寺庙巡游",
+     "皮划艇体验",
+     "参观点心工厂"
+    ]
+   },
+   "en": {
+    "scene": "At a travel agency, a staff member introduces four day-trip bus tours. Then a man and a woman who work together talk.",
+    "questions": [
+     "Question 1: Which tour will the man sign up for?",
+     "Question 2: Which tour will the woman sign up for?"
+    ],
+    "lines": [
+     "Here are four day trips we recommend this month. The first is strawberry picking and a hot spring. You leave from in front of the station at seven a.m., eat as many strawberries as you like, and stop at a hot spring on the way back. The second is a tour of mountain temples. You visit three old temples and have temple vegetarian food for lunch. You'll walk about three hours of mountain paths in total, so please wear comfortable shoes. The third is canoeing on a lake. An instructor goes with you, so even first-timers can relax. However, for safety reasons, it's limited to primary school age and up. The fourth is a tour of a sweets factory. There's a chance to make sweets yourself, and it's especially popular with children. On the way back, there's also time for shopping at an outlet mall.",
+     "I'm thinking of taking my parents somewhere over the coming long weekend, but my dad hurt his knee recently and can't walk long distances.",
+     "Then the temples are out. Do your parents like sweet things?",
+     "Neither of them is big on sweets. And they're not interested in shopping. On the other hand, my dad has no problem with early mornings, and he loves hot springs.",
+     "Then that settles it, doesn't it?",
+     "Yeah, I'll do that. What about you? You're going with the kids, right?",
+     "Yes. My older one has been saying for ages they want to try canoeing. I thought this one might be good.",
+     "Hang on, isn't your younger one still in kindergarten?",
+     "Oh, that's right. I can't exactly leave just one behind... Early mornings are impossible for us, and the temple walk is too long for the little one. I'll go with the one that's left, then. I think the kids will love it."
+    ],
+    "options": [
+     "Strawberry picking and hot spring",
+     "Temple tour",
+     "Canoeing",
+     "Sweets factory tour"
+    ]
+   }
+  },
+  "traps": [
+   "condition-conflict",
+   "not-possible"
+  ]
+ }
+]
