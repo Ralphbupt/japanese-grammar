@@ -1,0 +1,245 @@
+[
+ {
+  "id": "n3-m2-ck-301",
+  "type": "gaiyou",
+  "scene": "ラジオで動物園の人が話しています。",
+  "question": "動物園の人は何について話していますか。",
+  "lines": [
+   [
+    "M",
+    "この動物園では、去年から、動物にえさをあげる時間を決めないことにしました。前は毎日同じ時間にあげていたのですが、そうすると、動物たちはその時間以外、ほとんど寝ているんです。そこで、えさを木の上や箱の中に隠して、動物が自分で探すようにしました。自然の中で暮らす動物は、一日の多くの時間を、食べ物を探すことに使っています。それに近い生活をさせてあげたいと考えたのです。その結果、動物たちがよく動くようになり、見に来たお客さんにも喜ばれています。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "動物園の客が増えた理由",
+   "えさのあげ方を変えたこと",
+   "自然の中の動物の暮らし",
+   "動物が一日中寝る理由"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "广播里动物园的人在讲话。",
+    "question": "动物园的人在讲什么？",
+    "lines": [
+     "这家动物园从去年开始，不再固定给动物喂食的时间。以前每天在同一时间喂，这样一来，动物们除了那个时间几乎都在睡觉。于是我们把食物藏在树上或箱子里，让动物自己去找。生活在大自然里的动物，一天中的大部分时间都花在找食物上。我们想让它们过上接近那样的生活。结果，动物们变得活跃了，来参观的客人也很高兴。"
+    ],
+    "options": [
+     "动物园客人增加的原因",
+     "改变了喂食的方法",
+     "大自然中动物的生活",
+     "动物整天睡觉的原因"
+    ]
+   },
+   "en": {
+    "scene": "Someone from a zoo is speaking on the radio.",
+    "question": "What is the person from the zoo talking about?",
+    "lines": [
+     "Since last year, this zoo has stopped feeding the animals at fixed times. We used to feed them at the same time every day, but then the animals slept almost all the rest of the time. So we started hiding food up in trees and inside boxes, so the animals look for it themselves. Animals living in the wild spend much of the day searching for food, and we wanted to give them a life closer to that. As a result, the animals have become much more active, and visitors are delighted too."
+    ],
+    "options": [
+     "Why the zoo has more visitors",
+     "A change in how the animals are fed",
+     "The life of animals in the wild",
+     "Why the animals sleep all day"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：开头一句：「この動物園では、去年から、動物にえさをあげる時間を決めないことにしました。」接着是「えさを木の上や箱の中に隠して、動物が自分で探すようにしました」。\n推理：整段讲的是喂食方法的改变：以前为什么不好、现在怎么做、为什么这样做、结果怎样。野生动物的生活是改变的理由，客人高兴是结果，都只是其中一部分。\n容易错：把理由或结果当成主题。",
+   "en": "Evidence: It opens: 「この動物園では、去年から、動物にえさをあげる時間を決めないことにしました。」 then 「えさを木の上や箱の中に隠して、動物が自分で探すようにしました」.\nReasoning: The whole talk is about the change in feeding: what was wrong before, what they do now, why, and the result. Animals in the wild are the reason; happy visitors are the result — each only a part.\nTrap: taking the reason or the result for the topic."
+  },
+  "wrong": [
+   {
+    "zh": "客人高兴只是最后提到的结果，也没说客人增加。",
+    "en": "Happy visitors are only the result at the end, and no rise in numbers is mentioned."
+   },
+   null,
+   {
+    "zh": "大自然里的动物只是改变方法的理由，是一部分内容。",
+    "en": "Animals in the wild are just the reason for the change — only part of the talk."
+   },
+   {
+    "zh": "动物睡觉是以前的问题，现在已经变了，不是主题。",
+    "en": "Sleeping was the old problem, now changed — not the topic."
+   }
+  ],
+  "traps": [
+   "partial-content",
+   "detail-as-topic"
+  ]
+ },
+ {
+  "id": "n3-m2-ck-302",
+  "type": "gaiyou",
+  "scene": "女の人と男の人が、スマホで本を読むことについて話しています。",
+  "question": "男の人はスマホで本を読むことについてどう思っていますか。",
+  "lines": [
+   [
+    "F",
+    "最近、本はスマホで読んでるんだ。重い本を持ち歩かなくていいから、楽だよ。"
+   ],
+   [
+    "M",
+    "僕は、前は反対だったんだよね。画面が小さいし、本は紙で読むものだと思ってたから。"
+   ],
+   [
+    "F",
+    "前は？"
+   ],
+   [
+    "M",
+    "うん。でも、去年一か月出張したとき、本を何冊も持っていけなくて、試しに使ってみたんだ。そうしたら、字も大きくできるし、思ったより読みやすくてね。"
+   ],
+   [
+    "F",
+    "じゃあ、今はスマホばっかり？"
+   ],
+   [
+    "M",
+    "いや、家ではやっぱり紙の本かな。ページをめくる感じが好きだし。でも、出かけるときはスマホのほうがずっと便利だね。今は、場所によって分けてるよ。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "画面が小さいので、今も使いたくない",
+   "便利なので、もう紙の本は読まない",
+   "読みやすいが、目が疲れるのでよくない",
+   "外では便利だが、家では紙の本がいい"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在聊用手机看书的事。",
+    "question": "男人对用手机看书是怎么想的？",
+    "lines": [
+     "我最近都用手机看书。不用带着很重的书到处走，很轻松。",
+     "我以前是反对的。屏幕小，而且我觉得书就该看纸质的。",
+     "以前？",
+     "嗯。不过去年出差一个月的时候，没法带好几本书，就试着用了一下。结果字也能放大，比想象中好读。",
+     "那你现在全用手机看？",
+     "不，在家还是看纸质书吧。我喜欢翻页的感觉。不过出门的时候手机方便多了。现在是按地方分开用。"
+    ],
+    "options": [
+     "屏幕小，所以现在也不想用",
+     "很方便，所以不再看纸质书了",
+     "好读，但眼睛累，所以不好",
+     "在外面方便，但在家还是纸质书好"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking about reading books on a smartphone.",
+    "question": "What does the man think about reading books on a smartphone?",
+    "lines": [
+     "Lately I've been reading books on my phone. I don't have to carry heavy books around, so it's easy.",
+     "I used to be against it. The screen's small, and I thought books were meant to be read on paper.",
+     "Used to be?",
+     "Yeah. But last year, on a month-long business trip, I couldn't take lots of books, so I tried it out. And you can make the text bigger, and it was easier to read than I expected.",
+     "So now it's all your phone?",
+     "No, at home it's still paper books, I think. I like the feel of turning the pages. But when I go out, the phone is much handier. These days I split it by place."
+    ],
+    "options": [
+     "The screen is small, so he still doesn't want to use it",
+     "It's handy, so he no longer reads paper books",
+     "It's easy to read but tiring on the eyes, so it's bad",
+     "It's handy outside, but at home paper is better"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的最后说：「家ではやっぱり紙の本かな。」「出かけるときはスマホのほうがずっと便利だね。今は、場所によって分けてるよ。」\n推理：他「前は」反对，嫌屏幕小；出差时试用后觉得好读，态度变了；但不是全换成手机，而是在家看纸质书，出门用手机。\n容易错：只听开头「前は反対」；或者只听「便利」就以为不看纸质书了。",
+   "en": "Evidence: He ends: 「家ではやっぱり紙の本かな。」 and 「出かけるときはスマホのほうがずっと便利だね。今は、場所によって分けてるよ。」\nReasoning: He was against it 「前は」 because of the small screen; trying it on a business trip changed his mind. But he hasn't switched completely: paper at home, phone when out.\nTrap: hearing only the opening 「前は反対」, or only 「便利」 and assuming he's given up paper."
+  },
+  "wrong": [
+   {
+    "zh": "屏幕小是他「前は」的想法，现在出门时用手机。",
+    "en": "The small screen was what he thought 「前は」; now he uses it when out."
+   },
+   {
+    "zh": "他说「家ではやっぱり紙の本」，还在看纸质书。",
+    "en": "He says 「家ではやっぱり紙の本」 — he still reads paper."
+   },
+   {
+    "zh": "他没说眼睛累，反而说「思ったより読みやすくて」。",
+    "en": "He never mentions tired eyes; he says 「思ったより読みやすくて」."
+   },
+   null
+  ],
+  "traps": [
+   "attitude-combo",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n3-m2-ck-303",
+  "type": "gaiyou",
+  "scene": "テレビで旅行会社の人が話しています。",
+  "question": "旅行会社の人は何について話していますか。",
+  "lines": [
+   [
+    "F",
+    "旅行と言えば、以前は、短い日数でできるだけ多くの観光地を回るのが一般的でした。朝早くホテルを出て、バスで次々に有名な場所を見て回る、というものです。ところが最近は、一つの町に何日か泊まって、特に予定を決めずに過ごしたい、というお客様が増えています。地元の市場で買い物をしたり、カフェで本を読んだり、まるでその町に住んでいるように過ごすのです。こうしたお客様のために、私どもでも、自由な時間の多いプランを増やしているところです。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "一つの町でゆっくり過ごす旅行",
+   "多くの観光地をバスで回る旅行",
+   "旅行会社のホテルの選び方",
+   "市場やカフェで楽しむ方法"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "电视上旅行社的人在讲话。",
+    "question": "旅行社的人在讲什么？",
+    "lines": [
+     "说到旅行，以前一般是用很短的天数尽量多跑几个景点。一大早离开酒店，坐大巴一个接一个地参观有名的地方。可是最近，想在一个城镇住上几天、不特别安排行程的客人越来越多了。在当地的市场买东西，在咖啡馆看书，就像住在那个城镇一样度过。为了这样的客人，我们公司也正在增加自由时间多的行程。"
+    ],
+    "options": [
+     "在一个城镇悠闲度过的旅行",
+     "坐大巴跑很多景点的旅行",
+     "旅行社挑选酒店的方法",
+     "在市场和咖啡馆享受的方法"
+    ]
+   },
+   "en": {
+    "scene": "Someone from a travel company is speaking on television.",
+    "question": "What is the person from the travel company talking about?",
+    "lines": [
+     "Travel used to mean seeing as many sights as possible in a few days — leaving the hotel early and going from one famous place to the next by bus. Recently, though, more and more customers want to stay several days in one town without any particular plans. They shop at the local market, read in cafés, and spend their time as if they lived there. For customers like these, we too are adding more plans with plenty of free time."
+    ],
+    "options": [
+     "Trips spent relaxing in one town",
+     "Trips touring many sights by bus",
+     "How the travel company chooses hotels",
+     "How to enjoy markets and cafés"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：她说：「ところが最近は、一つの町に何日か泊まって、特に予定を決めずに過ごしたい、というお客様が増えています。」\n推理：开头的大巴观光是「以前」的旅行，用来对比；「ところが最近は」之后才是要讲的：在一个地方悠闲度过的旅行变多了。市场、咖啡馆是这种旅行的例子。\n容易错：把用来对比的旧方式或中间的例子当成主题。",
+   "en": "Evidence: She says: 「ところが最近は、一つの町に何日か泊まって、特に予定を決めずに過ごしたい、というお客様が増えています。」\nReasoning: The bus tours at the start are how travel was 「以前」 — a contrast. After 「ところが最近は」 comes the point: more people want relaxed stays in one place. Markets and cafés are examples of it.\nTrap: taking the old style used for contrast, or an example, for the topic."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "坐大巴跑景点是「以前」的旅行，只是用来对比。",
+    "en": "Bus tours are how travel was 「以前」 — just a contrast."
+   },
+   {
+    "zh": "她没有讲怎么挑选酒店。",
+    "en": "She says nothing about choosing hotels."
+   },
+   {
+    "zh": "市场和咖啡馆只是这种旅行的例子。",
+    "en": "Markets and cafés are only examples of this kind of trip."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "partial-content"
+  ]
+ }
+]

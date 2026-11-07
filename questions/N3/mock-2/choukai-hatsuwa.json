@@ -1,0 +1,234 @@
+[
+ {
+  "id": "n3-m2-ck-401",
+  "type": "hatsuwa",
+  "scene": "会社で、仕事が終わって、先に帰ります。まだ仕事をしている人に言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "An office in the evening. A woman wearing a coat, with a bag on her shoulder, stands beside a desk and bows slightly toward a male colleague who is still seated at his computer, working. The other desks are empty.",
+   "arrow": "the woman in the coat"
+  },
+  "options": [
+   "お先にどうぞ。",
+   "行ってきます。",
+   "お先に失礼します。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在公司，工作做完了，要先回去。对还在工作的人说。",
+    "question": "怎么说？",
+    "options": [
+     "您先请。",
+     "我出去一下。",
+     "我先走了。"
+    ]
+   },
+   "en": {
+    "scene": "At work, you've finished and are leaving before others. You speak to someone still working.",
+    "question": "What do you say?",
+    "options": [
+     "After you.",
+     "I'm off (and will be back).",
+     "Excuse me for leaving before you."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「仕事が終わって、先に帰ります。まだ仕事をしている人に言います。」，说话的是穿着外套、背着包的女的。\n推理：比别人先下班时，日本公司的固定说法是「お先に失礼します」（我先走了），对还留下的人表示客气。\n容易错：「お先にどうぞ」是让对方先走；「行ってきます」是出去办事还要回来时说的。",
+   "en": "Evidence: The scene: 「仕事が終わって、先に帰ります。まだ仕事をしている人に言います。」 The speaker is the woman in the coat with a bag.\nReasoning: When you leave work before others, the set phrase is 「お先に失礼します」 — a polite word to those staying.\nTrap: 「お先にどうぞ」 lets the other person go first; 「行ってきます」 is for stepping out and coming back."
+  },
+  "wrong": [
+   {
+    "zh": "「お先にどうぞ」是让对方先走，可是先走的是自己。",
+    "en": "「お先にどうぞ」 lets the other person go first — but you're the one leaving."
+   },
+   {
+    "zh": "「行ってきます」是出去一下还要回来时说的，她是下班回家。",
+    "en": "「行ってきます」 means you'll be back; she's going home."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "timing"
+  ]
+ },
+ {
+  "id": "n3-m2-ck-402",
+  "type": "hatsuwa",
+  "scene": "バスで座っています。おばあさんが乗ってきて、近くに立ちました。席をゆずりたいです。おばあさんに言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "Inside a city bus. A young man sits on a seat near the front. An elderly woman holding a cane and a small bag stands next to him, holding a strap. The young man is starting to stand up and looks up at her.",
+   "arrow": "the young man who is standing up"
+  },
+  "options": [
+   "よかったら、どうぞ座ってください。",
+   "すみません、座ってもいいですか。",
+   "どうぞ、ごゆっくり。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在公交车上坐着。一位老奶奶上车，站在了旁边。想给她让座。对老奶奶说。",
+    "question": "怎么说？",
+    "options": [
+     "不介意的话，请坐吧。",
+     "不好意思，我可以坐吗？",
+     "请慢慢享用。"
+    ]
+   },
+   "en": {
+    "scene": "You're sitting on a bus. An elderly woman gets on and stands near you. You want to give her your seat. You speak to her.",
+    "question": "What do you say?",
+    "options": [
+     "If you like, please sit down.",
+     "Excuse me, may I sit down?",
+     "Please take your time."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「席をゆずりたいです。おばあさんに言います。」，说话的是正在站起来的年轻男的。\n推理：让座时请对方坐，用「よかったら、どうぞ座ってください」，「よかったら」让邀请更客气。\n容易错：「座ってもいいですか」是自己想坐时问的，立场反了；「ごゆっくり」是店员对客人说的。",
+   "en": "Evidence: The scene: 「席をゆずりたいです。おばあさんに言います。」 The speaker is the young man getting up.\nReasoning: Offering a seat, you invite her to sit: 「よかったら、どうぞ座ってください」 — 「よかったら」 softens it.\nTrap: 「座ってもいいですか」 is asking to sit yourself — the wrong side; 「ごゆっくり」 is what staff say to customers."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「座ってもいいですか」是自己想坐，可是他是要让座。",
+    "en": "「座ってもいいですか」 asks to sit yourself — he's giving up his seat."
+   },
+   {
+    "zh": "「どうぞ、ごゆっくり」是店员对客人说的，不是让座的话。",
+    "en": "「どうぞ、ごゆっくり」 is a shop or restaurant phrase, not for offering a seat."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n3-m2-ck-403",
+  "type": "hatsuwa",
+  "scene": "レストランで、友だちと食事をしました。お金は一人ずつ払いたいです。店の人に言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "At the cash register of a small restaurant. Two young women stand at the counter. One of them holds an open wallet and speaks to the waiter behind the register. The waiter, in an apron, looks at her.",
+   "arrow": "the woman holding the wallet"
+  },
+  "options": [
+   "お会計は別々でよろしいですか。",
+   "お会計、別々にしてもらえますか。",
+   "お会計、別々にしておきましたよ。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在餐厅和朋友吃了饭。想各付各的。对店员说。",
+    "question": "怎么说？",
+    "options": [
+     "您分开结账可以吗？",
+     "能分开结账吗？",
+     "已经给您分开结了。"
+    ]
+   },
+   "en": {
+    "scene": "You've eaten with a friend at a restaurant and want to pay separately. You speak to the staff.",
+    "question": "What do you say?",
+    "options": [
+     "Would you like separate bills?",
+     "Could we pay separately?",
+     "I've made it separate bills for you."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「お金は一人ずつ払いたいです。店の人に言います。」，说话的是拿着钱包的女的。\n推理：客人请店员分开结账，用请求的「〜てもらえますか」：「お会計、別々にしてもらえますか」。\n容易错：「別々でよろしいですか」和「別々にしておきました」都是店员对客人说的话。",
+   "en": "Evidence: The scene: 「お金は一人ずつ払いたいです。店の人に言います。」 The speaker is the woman with the wallet.\nReasoning: A customer asks staff to split the bill with a request form 「〜てもらえますか」: 「お会計、別々にしてもらえますか」.\nTrap: 「別々でよろしいですか」 and 「別々にしておきました」 are both what staff say to customers."
+  },
+  "wrong": [
+   {
+    "zh": "「よろしいですか」是店员问客人的话，立场反了。",
+    "en": "「よろしいですか」 is the staff asking the customer — the wrong side."
+   },
+   null,
+   {
+    "zh": "「別々にしておきました」是店员已经办好时说的，客人不会这样说。",
+    "en": "「別々にしておきました」 is staff reporting it's done — not a customer's line."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "tense"
+  ]
+ },
+ {
+  "id": "n3-m2-ck-404",
+  "type": "hatsuwa",
+  "scene": "友だちに借りていたノートを返します。友だちに言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A university classroom. A young man stands holding out a notebook with both hands to a young woman sitting at a desk. She is reaching out to take it.",
+   "arrow": "the young man holding out the notebook"
+  },
+  "options": [
+   "ノート、返してくれてありがとう。",
+   "ノート、ちょっと貸してくれない？",
+   "ノート、ありがとう。助かったよ。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "把向朋友借的笔记本还回去。对朋友说。",
+    "question": "怎么说？",
+    "options": [
+     "谢谢你把笔记本还给我。",
+     "笔记本能借我一下吗？",
+     "笔记本，谢谢。帮了大忙。"
+    ]
+   },
+   "en": {
+    "scene": "You're returning a notebook you borrowed from a friend. You speak to your friend.",
+    "question": "What do you say?",
+    "options": [
+     "Thanks for giving my notebook back.",
+     "Could you lend me your notebook?",
+     "Thanks for the notebook. It really helped."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「友だちに借りていたノートを返します。」，说话的是递出笔记本的男的。\n推理：还借来的东西时要道谢，并说对自己有帮助：「ノート、ありがとう。助かったよ」。\n容易错：「返してくれてありがとう」是借出东西的人收到时说的；「貸してくれない？」是借之前说的。",
+   "en": "Evidence: The scene: 「友だちに借りていたノートを返します。」 The speaker is the young man holding out the notebook.\nReasoning: Returning something, you thank the lender and say it helped: 「ノート、ありがとう。助かったよ」.\nTrap: 「返してくれてありがとう」 is what the lender says on getting it back; 「貸してくれない？」 is for before borrowing."
+  },
+  "wrong": [
+   {
+    "zh": "「返してくれてありがとう」是借出的人收到东西时说的，立场反了。",
+    "en": "「返してくれてありがとう」 is the lender's line — the wrong side."
+   },
+   {
+    "zh": "「貸してくれない？」是借之前说的，现在是还。",
+    "en": "「貸してくれない？」 is for borrowing; he's returning it."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "timing"
+  ]
+ }
+]

@@ -1,0 +1,677 @@
+[
+ {
+  "id": "n3-m2-ck-101",
+  "type": "kadai",
+  "scene": "家で男の人と女の人が、引っ越しについて話しています。",
+  "question": "男の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "F",
+    "引っ越しまであと二週間だね。そろそろ準備を始めないと。"
+   ],
+   [
+    "M",
+    "そうだね。まず段ボールを集めないとね。"
+   ],
+   [
+    "F",
+    "それなら、きのうスーパーでたくさんもらってきたよ。押し入れに入れてある。"
+   ],
+   [
+    "M",
+    "さすが。じゃあ、今日は本を箱に詰めちゃおうか。"
+   ],
+   [
+    "F",
+    "本は毎日読むんだから、引っ越しの前の週でいいんじゃない？それより、この古いソファ、新しい部屋には持っていかないでしょう？"
+   ],
+   [
+    "M",
+    "うん、捨てるつもり。"
+   ],
+   [
+    "F",
+    "大きいごみは、市に申し込んでから取りに来てもらうまで、一週間ぐらいかかるんだって。早く電話しないと、間に合わないよ。"
+   ],
+   [
+    "M",
+    "え、そうなの。じゃあ、すぐかけるよ。あ、ガス会社にも連絡しなきゃいけないよね。"
+   ],
+   [
+    "F",
+    "ガスは、きのう私が連絡しておいた。"
+   ],
+   [
+    "M",
+    "そう。じゃあ、まずは市役所だね。"
+   ]
+  ],
+  "options": [
+   "段ボールをもらいに行く",
+   "ガス会社に電話する",
+   "市役所に電話する",
+   "本を箱に詰める"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "家里一个男人和一个女人在聊搬家的事。",
+    "question": "男人接下来首先要做什么？",
+    "lines": [
+     "离搬家还有两个星期了。差不多该开始准备了。",
+     "是啊。首先得收集纸箱吧。",
+     "那个啊，我昨天在超市要了很多回来，放在壁橱里了。",
+     "真行。那今天把书装箱吧。",
+     "书每天都要看，搬家前一周再装就行了吧？比起那个，这个旧沙发，不搬到新家去吧？",
+     "嗯，打算扔掉。",
+     "听说大件垃圾向市里申请之后，要等一个星期左右才来收。不早点打电话就来不及了。",
+     "啊，是吗。那我马上打。对了，还得联系燃气公司吧。",
+     "燃气我昨天已经联系过了。",
+     "这样啊。那首先是市政府了。"
+    ],
+    "options": [
+     "去要纸箱",
+     "给燃气公司打电话",
+     "给市政府打电话",
+     "把书装箱"
+    ]
+   },
+   "en": {
+    "scene": "At home, a man and a woman are talking about moving house.",
+    "question": "What will the man do first?",
+    "lines": [
+     "Two weeks until the move. We should start getting ready.",
+     "Right. First we need to collect some cardboard boxes.",
+     "Oh, I got lots from the supermarket yesterday. They're in the closet.",
+     "Nice one. Then shall we pack the books today?",
+     "We read those every day — the week before the move is fine, isn't it? More importantly, this old sofa: we're not taking it to the new place, are we?",
+     "No, I'm going to throw it out.",
+     "Apparently for big items, it takes about a week from applying to the city until they come and collect. If we don't call soon, we won't make it.",
+     "Oh, really? Then I'll call right away. Oh, and we have to contact the gas company too.",
+     "I contacted the gas company yesterday.",
+     "OK. Then the city office first."
+    ],
+    "options": [
+     "Go and get cardboard boxes",
+     "Call the gas company",
+     "Call the city office",
+     "Pack the books into boxes"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「大きいごみは、市に申し込んでから取りに来てもらうまで、一週間ぐらいかかるんだって。早く電話しないと、間に合わないよ。」男的最后说「じゃあ、まずは市役所だね」。\n推理：纸箱女的「きのうスーパーでたくさんもらってきた」，已经有了；书「前の週でいい」，可以推后；燃气「きのう私が連絡しておいた」，女的办完了；只剩扔沙发要向市里申请，而且要等一个星期，所以先打电话。\n容易错：已经有的东西、可以推后的事、别人办好的事。",
+   "en": "Evidence: The woman says: 「大きいごみは、市に申し込んでから取りに来てもらうまで、一週間ぐらいかかるんだって。早く電話しないと、間に合わないよ。」 He ends with 「じゃあ、まずは市役所だね」.\nReasoning: She already got boxes 「きのうスーパーで」; the books can wait until 「前の週」; she contacted the gas company 「きのう」. Only the sofa is left: the city needs a week's notice, so he calls first.\nTrap: something they already have, something that can wait, something someone else has done."
+  },
+  "wrong": [
+   {
+    "zh": "纸箱女的「きのうスーパーでたくさんもらってきた」，已经有了。",
+    "en": "She already got plenty of boxes 「きのうスーパーで」."
+   },
+   {
+    "zh": "燃气女的「きのう私が連絡しておいた」。",
+    "en": "She says 「ガスは、きのう私が連絡しておいた」."
+   },
+   null,
+   {
+    "zh": "女的说书「前の週でいい」，现在不用装。",
+    "en": "She says the books can wait until 「前の週」."
+   }
+  ],
+  "traps": [
+   "done-already",
+   "later",
+   "someone-else"
+  ]
+ },
+ {
+  "id": "n3-m2-ck-102",
+  "type": "kadai",
+  "scene": "旅行会社で、男の人と店の人が話しています。",
+  "question": "男の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "M",
+    "すみません、このパンフレットの北海道のツアーなんですが、二月十日の出発で、二人お願いしたいんです。"
+   ],
+   [
+    "F",
+    "少々お待ちください。……申し訳ございません。十日はもういっぱいでして。一週間後の十七日でしたら、まだお席がございますが。"
+   ],
+   [
+    "M",
+    "十七日か……。私は大丈夫なんですけど、妻が仕事を休めるかどうか。"
+   ],
+   [
+    "F",
+    "でしたら、こちらの申込書だけ、先に書いていただいてもかまいませんよ。"
+   ],
+   [
+    "M",
+    "いえ、日にちが決まらないと書けないので、ちょっと妻に聞いてみます。ここで電話してもいいですか。"
+   ],
+   [
+    "F",
+    "はい、どうぞ。お申し込みのあと、料金はあしたまでにお支払いください。"
+   ],
+   [
+    "M",
+    "分かりました。"
+   ]
+  ],
+  "options": [
+   "奥さんに電話する",
+   "申込書を書く",
+   "料金を払う",
+   "十日のツアーを予約する"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "旅行社里一个男人和店员在说话。",
+    "question": "男人接下来首先要做什么？",
+    "lines": [
+     "你好，这本宣传册上的北海道旅行团，我想报二月十号出发的，两个人。",
+     "请稍等。……非常抱歉，十号已经满了。一周后的十七号的话，还有位子。",
+     "十七号啊……我没问题，就是不知道我妻子能不能请假。",
+     "那样的话，您也可以先把这张申请表填了。",
+     "不了，日期定不下来就没法填，我先问问我妻子。可以在这里打电话吗？",
+     "可以，请便。申请之后，费用请在明天之前付清。",
+     "知道了。"
+    ],
+    "options": [
+     "给妻子打电话",
+     "填申请表",
+     "付费用",
+     "预订十号的旅行团"
+    ]
+   },
+   "en": {
+    "scene": "At a travel agency, a man and a clerk are talking.",
+    "question": "What will the man do first?",
+    "lines": [
+     "Excuse me, it's about this Hokkaido tour in the brochure. I'd like two places on the February 10th departure.",
+     "One moment, please. ... I'm very sorry, the 10th is already full. The 17th, a week later, still has seats.",
+     "The 17th... I'm fine, but I'm not sure my wife can get time off work.",
+     "In that case, you're welcome to fill in this application form first.",
+     "No, I can't fill it in until the date's decided, so I'll ask my wife. May I make a call here?",
+     "Of course. After you apply, please pay by tomorrow.",
+     "Understood."
+    ],
+    "options": [
+     "Call his wife",
+     "Fill in the application form",
+     "Pay the fee",
+     "Book the tour on the 10th"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「日にちが決まらないと書けないので、ちょっと妻に聞いてみます。ここで電話してもいいですか。」\n推理：十号「もういっぱい」，订不了；店员建议先填表，男的说日期不定就填不了；付钱是「お申し込みのあと」「あしたまで」的事。所以第一步是打电话问妻子能不能请假。\n容易错：店员提议的先填表被男的拒绝了；付钱在申请之后。",
+   "en": "Evidence: The man says: 「日にちが決まらないと書けないので、ちょっと妻に聞いてみます。ここで電話してもいいですか。」\nReasoning: The 10th is 「もういっぱい」. The clerk suggests filling in the form first, but he says he can't until the date is fixed. Payment comes 「お申し込みのあと」, by tomorrow. So first he phones his wife.\nTrap: the clerk's suggestion to fill in the form, which he turns down; payment comes after applying."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "店员说可以先填，但男的说「日にちが決まらないと書けない」。",
+    "en": "The clerk offers, but he says 「日にちが決まらないと書けない」."
+   },
+   {
+    "zh": "付钱是「お申し込みのあと」，明天之前付就行。",
+    "en": "Payment comes 「お申し込みのあと」, by tomorrow."
+   },
+   {
+    "zh": "十号「もういっぱい」，订不了。",
+    "en": "The 10th is 「もういっぱい」 — fully booked."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "order"
+  ]
+ },
+ {
+  "id": "n3-m2-ck-103",
+  "type": "kadai",
+  "scene": "家で母親と息子が話しています。",
+  "question": "息子は出かける前に何をしますか。",
+  "lines": [
+   [
+    "F",
+    "あれ、もう出かけるの？"
+   ],
+   [
+    "M",
+    "うん、友だちとサッカーの練習。あ、ごみ、出しといたよ。"
+   ],
+   [
+    "F",
+    "ありがとう。じゃあ、ついでに犬の散歩もお願いできない？"
+   ],
+   [
+    "M",
+    "えー、もう時間ないよ。"
+   ],
+   [
+    "F",
+    "そう。じゃあ、それはお姉ちゃんに頼むわ。あと、あんたの部屋、ちょっと散らかりすぎじゃない？"
+   ],
+   [
+    "M",
+    "帰ってきたら片付けるから。"
+   ],
+   [
+    "F",
+    "本当ね。……あ、空が暗くなってきた。夕方から雨だって言ってたっけ。悪いけど、出る前に、ベランダの洗濯物、中に入れてってくれる？"
+   ],
+   [
+    "M",
+    "分かった。それぐらいならすぐできるよ。"
+   ]
+  ],
+  "options": [
+   "ごみを出す",
+   "犬の散歩に行く",
+   "部屋を片付ける",
+   "洗濯物を中に入れる"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "家里妈妈和儿子在说话。",
+    "question": "儿子出门前要做什么？",
+    "lines": [
+     "咦，已经要出门了？",
+     "嗯，和朋友练足球。啊，垃圾我已经扔了。",
+     "谢谢。那顺便帮我遛一下狗行吗？",
+     "啊——已经没时间了。",
+     "是吗。那我让你姐去。还有，你的房间是不是太乱了点？",
+     "回来我就收拾。",
+     "说话算话啊。……啊，天暗下来了。好像说傍晚开始下雨来着。不好意思，出门前帮我把阳台上晾的衣服收进来好吗？",
+     "知道了。这点事马上就能做完。"
+    ],
+    "options": [
+     "扔垃圾",
+     "去遛狗",
+     "收拾房间",
+     "把晾的衣服收进来"
+    ]
+   },
+   "en": {
+    "scene": "At home, a mother and her son are talking.",
+    "question": "What will the son do before he goes out?",
+    "lines": [
+     "Oh, are you going out already?",
+     "Yeah, football practice with my friends. Oh, I put the rubbish out.",
+     "Thanks. Then could you walk the dog while you're at it?",
+     "Ugh, I don't have time.",
+     "I see. Then I'll ask your sister. Also, isn't your room a bit too messy?",
+     "I'll tidy it when I get back.",
+     "You'd better. ... Oh, the sky's getting dark. Didn't they say rain from the evening? Sorry, but before you go, could you bring the washing in from the balcony?",
+     "OK. That won't take a minute."
+    ],
+    "options": [
+     "Put the rubbish out",
+     "Walk the dog",
+     "Tidy his room",
+     "Bring the washing in"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：妈妈说：「悪いけど、出る前に、ベランダの洗濯物、中に入れてってくれる？」儿子答「分かった。それぐらいならすぐできるよ」。\n推理：垃圾儿子「出しといた」，已经做了；遛狗他说没时间，妈妈改让「お姉ちゃん」去；房间他说「帰ってきたら」收拾。出门前答应做的只有把衣服收进来。\n容易错：已经做完的事、交给别人的事、回来以后才做的事。",
+   "en": "Evidence: The mother says: 「悪いけど、出る前に、ベランダの洗濯物、中に入れてってくれる？」, and he answers 「分かった。それぐらいならすぐできるよ」.\nReasoning: The rubbish is already out (「出しといた」); the dog walk goes to 「お姉ちゃん」; the room waits until 「帰ってきたら」. The only thing he agrees to do before leaving is bring in the washing.\nTrap: something already done, something passed to someone else, something for later."
+  },
+  "wrong": [
+   {
+    "zh": "垃圾儿子已经「出しといた」。",
+    "en": "He already put the rubbish out (「出しといた」)."
+   },
+   {
+    "zh": "他没时间，妈妈说「それはお姉ちゃんに頼む」。",
+    "en": "He has no time; she says 「それはお姉ちゃんに頼む」."
+   },
+   {
+    "zh": "房间他说「帰ってきたら片付ける」。",
+    "en": "He'll tidy his room 「帰ってきたら」."
+   },
+   null
+  ],
+  "traps": [
+   "done-already",
+   "someone-else",
+   "later"
+  ]
+ },
+ {
+  "id": "n3-m2-ck-104",
+  "type": "kadai",
+  "scene": "コンサートホールで、アルバイトの男の人と女の人が話しています。",
+  "question": "男の人はまず何をしますか。",
+  "lines": [
+   [
+    "M",
+    "今日からアルバイトに入る木村です。よろしくお願いします。"
+   ],
+   [
+    "F",
+    "よろしくね。じゃあ、さっそくだけど、ホールの椅子を並べて……あ、もう朝のグループがやってくれたんだっけ。"
+   ],
+   [
+    "M",
+    "はい、さっき見たら、全部並んでました。"
+   ],
+   [
+    "F",
+    "そう。じゃあ、ロビーにポスターを貼ってもらおうかな。"
+   ],
+   [
+    "M",
+    "はい。"
+   ],
+   [
+    "F",
+    "あ、待って。ポスターは鈴木さんがやるって言ってたんだ。木村さんには、入口の案内の看板をお願いしようかな。倉庫にあるから、駅のほうから見えるところに出してくれる？"
+   ],
+   [
+    "M",
+    "分かりました。チケットの確認はしなくていいんですか。"
+   ],
+   [
+    "F",
+    "それはお客さんが入り始めてからね。そのとき、また説明するから。"
+   ]
+  ],
+  "options": [
+   "椅子を並べる",
+   "看板を出す",
+   "ポスターを貼る",
+   "チケットを確認する"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "音乐厅里，打工的男人和一个女人在说话。",
+    "question": "男人首先要做什么？",
+    "lines": [
+     "我是今天开始来打工的木村。请多关照。",
+     "请多关照。那就马上开始吧，把大厅的椅子摆好……啊，早上那组已经摆好了来着。",
+     "是的，刚才看了，全都摆好了。",
+     "是吗。那请你在大堂贴海报吧。",
+     "好的。",
+     "啊，等一下。海报铃木说他来贴。木村你就负责入口的指示牌吧。在仓库里，你把它放到从车站那边能看到的地方好吗？",
+     "知道了。检票不用做吗？",
+     "那个等客人开始入场以后。到时候我再给你讲。"
+    ],
+    "options": [
+     "摆椅子",
+     "把指示牌摆出来",
+     "贴海报",
+     "检票"
+    ]
+   },
+   "en": {
+    "scene": "At a concert hall, a man doing a part-time job and a woman are talking.",
+    "question": "What will the man do first?",
+    "lines": [
+     "I'm Kimura, starting part-time today. Nice to meet you.",
+     "Nice to meet you. So, straight away — could you set out the chairs in the hall... oh, the morning group already did that, didn't they?",
+     "Yes, I looked just now and they're all set out.",
+     "Right. Then I'll have you put up posters in the lobby.",
+     "OK.",
+     "Oh, wait. Suzuki said he'd do the posters. Kimura, I'll ask you to do the sign at the entrance. It's in the storeroom — could you put it out where it can be seen from the station side?",
+     "Got it. Don't I need to check tickets?",
+     "That's once the audience starts coming in. I'll explain then."
+    ],
+    "options": [
+     "Set out the chairs",
+     "Put out the sign",
+     "Put up posters",
+     "Check tickets"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「木村さんには、入口の案内の看板をお願いしようかな。倉庫にあるから、駅のほうから見えるところに出してくれる？」男的答「分かりました」。\n推理：椅子早上那组「やってくれた」，已经摆好；海报女的先交给他，又想起「鈴木さんがやる」；检票要「お客さんが入り始めてから」。现在要做的是把指示牌摆出来。\n容易错：女的先说出口又收回的工作。",
+   "en": "Evidence: The woman says: 「木村さんには、入口の案内の看板をお願いしようかな。倉庫にあるから、駅のほうから見えるところに出してくれる？」, and he says 「分かりました」.\nReasoning: The chairs are already done by the morning group; she first gives him the posters, then remembers 「鈴木さんがやる」; tickets wait until 「お客さんが入り始めてから」. So he puts out the sign now.\nTrap: a job she assigns and then takes back."
+  },
+  "wrong": [
+   {
+    "zh": "椅子早上那组已经摆好了，男的也说「全部並んでました」。",
+    "en": "The morning group did the chairs — he says 「全部並んでました」."
+   },
+   null,
+   {
+    "zh": "女的想起来「ポスターは鈴木さんがやる」。",
+    "en": "She remembers 「ポスターは鈴木さんがやる」."
+   },
+   {
+    "zh": "检票是「お客さんが入り始めてから」的事。",
+    "en": "Tickets come 「お客さんが入り始めてから」."
+   }
+  ],
+  "traps": [
+   "done-already",
+   "someone-else",
+   "later"
+  ]
+ },
+ {
+  "id": "n3-m2-ck-105",
+  "type": "kadai",
+  "scene": "駅の窓口で、女の人と駅員が話しています。",
+  "question": "女の人はこのあとどこへ行きますか。",
+  "lines": [
+   [
+    "F",
+    "すみません、さっき乗った電車に、かばんを忘れてしまったんですが。交番に届けたほうがいいでしょうか。"
+   ],
+   [
+    "M",
+    "電車の中の忘れ物は、駅でお預かりしていますので、大丈夫ですよ。何時ごろの電車ですか。"
+   ],
+   [
+    "F",
+    "二時十分ごろにこの駅で降りました。終点の山川行きです。黒いかばんで、中にパソコンが入っています。"
+   ],
+   [
+    "M",
+    "少々お待ちください。今、終点の駅に電話して聞いてみます。……ありました。山川駅で預かっているそうです。"
+   ],
+   [
+    "F",
+    "よかった。こちらに送ってもらうことはできますか。"
+   ],
+   [
+    "M",
+    "できますが、こちらに届くのは、あしたの夕方になります。それから、山川駅に置いておけるのは今日までで、あしたからは中央駅の忘れ物センターに移ります。"
+   ],
+   [
+    "F",
+    "あしたの朝、そのパソコンで仕事をするので、待てないんです。今から取りに行きます。"
+   ],
+   [
+    "M",
+    "では、山川駅にそう伝えておきますね。"
+   ]
+  ],
+  "options": [
+   "この駅の窓口",
+   "交番",
+   "中央駅の忘れ物センター",
+   "山川駅"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "车站窗口，一个女人和站务员在说话。",
+    "question": "女人接下来要去哪里？",
+    "lines": [
+     "不好意思，我把包忘在刚才坐的电车上了。是不是应该报到派出所？",
+     "电车里的失物由车站保管，没关系的。是几点左右的电车？",
+     "两点十分左右在这站下的车。是开往终点山川的车。黑色的包，里面有电脑。",
+     "请稍等。我现在给终点站打电话问问。……找到了。说是在山川站保管着。",
+     "太好了。能送到这里来吗？",
+     "可以，不过送到这里要明天傍晚了。还有，山川站只能放到今天，从明天起就转到中央站的失物中心。",
+     "明天早上我要用那台电脑工作，等不了。我现在就去取。",
+     "那我跟山川站说一声。"
+    ],
+    "options": [
+     "这个车站的窗口",
+     "派出所",
+     "中央站的失物中心",
+     "山川站"
+    ]
+   },
+   "en": {
+    "scene": "At a station counter, a woman and a station attendant are talking.",
+    "question": "Where will the woman go now?",
+    "lines": [
+     "Excuse me, I left my bag on the train I just got off. Should I report it at the police box?",
+     "Things left on trains are kept by the station, so that's fine. About what time was the train?",
+     "I got off at this station around ten past two. It was bound for Yamakawa, the last stop. It's a black bag with a laptop in it.",
+     "One moment, please. I'll phone the terminal station and ask. ... Here it is. They say Yamakawa Station has it.",
+     "Thank goodness. Could they send it here?",
+     "They can, but it would arrive here tomorrow evening. Also, Yamakawa can only keep it until today; from tomorrow it moves to the lost-property centre at Central Station.",
+     "I need that laptop for work tomorrow morning, so I can't wait. I'll go and get it now.",
+     "Then I'll let Yamakawa Station know."
+    ],
+    "options": [
+     "This station's counter",
+     "The police box",
+     "The lost-property centre at Central Station",
+     "Yamakawa Station"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：站务员说包「山川駅で預かっている」，山川站「置いておけるのは今日まで」；女的说：「あしたの朝、そのパソコンで仕事をするので、待てないんです。今から取りに行きます。」\n推理：派出所不用去，失物由车站保管；送到这里要「あしたの夕方」，她等不了；失物中心是「あしたから」才转过去的地方。今天去取，只能去现在放包的山川站。\n容易错：「中央駅の忘れ物センター」是明天以后的地方；送到这个车站要等到明天傍晚。",
+   "en": "Evidence: The bag is 「山川駅で預かっている」 and can stay there 「今日まで」; she says 「あしたの朝、そのパソコンで仕事をするので、待てないんです。今から取りに行きます。」\nReasoning: No need for the police box — the station keeps lost items. Sending it here takes until 「あしたの夕方」, too late for her. The lost-property centre only holds it 「あしたから」. Going today means Yamakawa Station.\nTrap: the lost-property centre is where it goes from tomorrow; waiting at this station takes until tomorrow evening."
+  },
+  "wrong": [
+   {
+    "zh": "送到这里要「あしたの夕方」，她说「待てない」。",
+    "en": "Delivery here takes until 「あしたの夕方」 — she says 「待てない」."
+   },
+   {
+    "zh": "站务员说电车上的失物「駅でお預かりしています」，不用去派出所。",
+    "en": "The attendant says lost items on trains are 「駅でお預かりしています」 — no police needed."
+   },
+   {
+    "zh": "包「あしたから」才转到失物中心，今天还在山川站。",
+    "en": "It moves to the centre only 「あしたから」; today it's at Yamakawa."
+   },
+   null
+  ],
+  "traps": [
+   "condition-conflict",
+   "later"
+  ]
+ },
+ {
+  "id": "n3-m2-ck-106",
+  "type": "kadai",
+  "scene": "家で男の人と女の人が話しています。",
+  "question": "男の人は新幹線の切符を何枚買いますか。",
+  "lines": [
+   [
+    "M",
+    "来月、おばあちゃんの家に行くときの新幹線、切符、ネットで買っておくね。"
+   ],
+   [
+    "F",
+    "ありがとう。あ、そうだ。妹も一緒に行きたいって言ってたよ。"
+   ],
+   [
+    "M",
+    "そう。じゃあ、ぼくたちと子ども二人と、妹さんで五枚だね。"
+   ],
+   [
+    "F",
+    "あ、でも、妹は前の日から仕事で大阪にいるから、おばあちゃんの家の近くの駅で会うことになったの。"
+   ],
+   [
+    "M",
+    "じゃあ、妹さんの分はいらないね。ゆうたはまだ五歳だから、切符はいらないんだよね？"
+   ],
+   [
+    "F",
+    "うん、ひざの上に座らせればいいから。一時間ぐらいだし。"
+   ],
+   [
+    "M",
+    "分かった。じゃあ、それで買っておくよ。"
+   ]
+  ],
+  "options": [
+   "二枚",
+   "三枚",
+   "四枚",
+   "五枚"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "家里一个男人和一个女人在说话。",
+    "question": "男人要买几张新干线的票？",
+    "lines": [
+     "下个月去奶奶家坐的新干线，票我在网上先买好吧。",
+     "谢谢。啊，对了，我妹妹说她也想一起去。",
+     "是吗。那我们俩加两个孩子，再加你妹妹，五张吧。",
+     "啊，不过我妹妹前一天起因为工作在大阪，所以说好在奶奶家附近的车站见面。",
+     "那你妹妹的就不用了。佑太才五岁，不用买票吧？",
+     "嗯，让他坐在腿上就行。也就一个小时左右。",
+     "知道了。那就照这样买。"
+    ],
+    "options": [
+     "两张",
+     "三张",
+     "四张",
+     "五张"
+    ]
+   },
+   "en": {
+    "scene": "At home, a man and a woman are talking.",
+    "question": "How many bullet-train tickets will the man buy?",
+    "lines": [
+     "I'll buy the bullet-train tickets online for when we go to Grandma's next month.",
+     "Thanks. Oh, that's right — my sister said she wants to come too.",
+     "OK. So the two of us, the two kids and your sister — five tickets.",
+     "Oh, but my sister's in Osaka for work from the day before, so we've arranged to meet her at the station near Grandma's.",
+     "Then we don't need hers. And Yuta's only five, so he doesn't need a ticket, right?",
+     "Right, he can sit on my lap. It's only about an hour.",
+     "OK. I'll buy them like that."
+    ],
+    "options": [
+     "Two",
+     "Three",
+     "Four",
+     "Five"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的先算「ぼくたちと子ども二人と、妹さんで五枚」；后来「妹さんの分はいらない」，佑太五岁「切符はいらない」，女的说「ひざの上に座らせればいい」。\n推理：五张减去妹妹一张，再减去不用票的佑太一张，剩下夫妻二人加大一点的孩子，共三张。\n容易错：停在一开始说的「五枚」；只减掉一个人得四张；把两个孩子都减掉得两张。",
+   "en": "Evidence: He first counts 「ぼくたちと子ども二人と、妹さんで五枚」; then 「妹さんの分はいらない」, and five-year-old Yuta 「切符はいらない」 because 「ひざの上に座らせればいい」.\nReasoning: Five minus the sister minus Yuta leaves the couple and the older child: three.\nTrap: stopping at the first 「五枚」; subtracting only one person (four); dropping both children (two)."
+  },
+  "wrong": [
+   {
+    "zh": "只有佑太不用票，另一个孩子要买，不是两张。",
+    "en": "Only Yuta goes free; the other child needs a ticket — not two."
+   },
+   null,
+   {
+    "zh": "妹妹和佑太两个人都不用票，不是只减一个。",
+    "en": "Both the sister and Yuta drop out, not just one."
+   },
+   {
+    "zh": "「五枚」是一开始算的，后来妹妹和佑太都不用买了。",
+    "en": "「五枚」 was the first count; the sister and Yuta then drop out."
+   }
+  ],
+  "traps": [
+   "number",
+   "contradiction"
+  ]
+ }
+]
