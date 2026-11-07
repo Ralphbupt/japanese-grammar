@@ -309,8 +309,20 @@ body.quiz-busy .quiz-about { display: none; }
 .q-ck-player { display: flex; align-items: center; gap: .7rem; margin: 0 0 .8rem; }
 .q-ck-play { width: 3rem; height: 3rem; justify-content: center; padding: 0; border-radius: 50%; font-size: 1.1rem; }
 .q-ck-bar { flex: 1; height: 6px; border-radius: 3px; background: var(--border); overflow: hidden; }
+.q-ck-bar[data-act] { cursor: pointer; height: 8px; background-clip: content-box; padding: 9px 0; box-sizing: content-box; background-color: transparent; background-image: linear-gradient(var(--border), var(--border)); }
+.q-ck-tool { background: none; border: 1px solid var(--border); border-radius: var(--radius-pill); color: inherit; cursor: pointer; font-size: .82rem; padding: .2rem .55rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.q-ck-tool:hover, .q-ck-tool.q-on { border-color: var(--accent); }
+.q-ck-tool.q-on { color: var(--accent); }
+.q-ck-head .q-ck-tool { margin-left: .5rem; font-weight: 400; }
+.q-ck-script li.q-ck-cur { background: color-mix(in srgb, var(--accent) 13%, transparent); border-radius: 4px; box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--accent) 13%, transparent); }
 .q-ck-bar span { display: block; width: 0; height: 100%; background: var(--accent); }
-.q-ck-time { font-size: .85rem; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.q-ck-time { font-size: .85rem; color: var(--text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+/* Phones: the practice player's bar takes its own row under the buttons. */
+@media (max-width: 600px) {
+  .q-ck-player:has(.q-ck-rate) { flex-wrap: wrap; row-gap: .1rem; }
+  .q-ck-player:has(.q-ck-rate) .q-ck-time { margin-left: auto; }
+  .q-ck-player .q-ck-bar[data-act] { order: 9; flex: 1 0 100%; }
+}
 .q-ck-wait { margin: -.3rem 0 .8rem; min-height: 1.6em; }
 .q-ck-pics { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: .5rem; }
 @media (min-width: 700px) { .q-ck-pics { grid-template-columns: repeat(4, 1fr); } }
