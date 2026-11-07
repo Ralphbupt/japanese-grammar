@@ -97,7 +97,7 @@
     ],
     "answer": 0,
     "full": "A「もしもし、今 だいじょうぶ？」 B「ごめん、今 ばんごはんを 食べて いる ところなんだ。あとで かけなおすね。」",
-    "kj": "A「もしもし、今大丈夫？」\nB「ごめん、今晩ご飯を食べているところなんだ。後でかけ直すね。」",
+    "kj": "A「もしもし、今大丈夫？」\nB「ごめん、今、晩ご飯を食べているところなんだ。後でかけ直すね。」",
     "tr": {
       "zh": "A：喂，现在方便吗？ B：抱歉，我正在吃晚饭呢。待会儿我打回给你。",
       "en": "A: Hello, is now a good time? B: Sorry, I'm in the middle of dinner. I'll call you back."
@@ -256,7 +256,7 @@
     "options": [
       "ように して います",
       "ばかりでは ありません",
-      "ところでは ありません",
+      "ことに なって います",
       "わけには いきません"
     ],
     "answer": 3,
@@ -280,8 +280,8 @@
         "en": "「休む ばかりでは ありません」 (\"not only rest\") makes no sense here."
       },
       {
-        "zh": "没有「〜ところでは ありません」这种说法，「ところ」接辞书形是“正要……”。",
-        "en": "「〜ところでは ありません」 isn't a pattern; 「ところ」 after the dictionary form means \"about to\"."
+        "zh": "「休む ことに なって います」是“按安排要请假”，和因为要发言、不能缺席的意思矛盾。",
+        "en": "「休む ことに なって います」 means \"it's been arranged that I'll be off\", which contradicts having to present."
       },
       null
     ]

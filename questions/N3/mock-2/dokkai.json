@@ -71,12 +71,12 @@
           "減らなかった",
           "減ってきた",
           "減ってしまった",
-          "減るようになった"
+          "減らないことはなかった"
         ],
         "answer": 0,
         "why": {
-          "zh": "线索：空格前是「思っていたほど」，后一句以「それでも」开头，说的是另一种好处。\n规则：「AほどBない」＝“没有A那么B”，「ほど」后面要接否定；「それでも」（尽管如此）也说明前面是不如意的事。\n辨析：「減ってきた」「減ってしまった」「減るようになった」都是肯定形，接不上「思っていたほど」，后面的「それでも」也就没有转折的对象了。",
-          "en": "Clue: Before the blank is 「思っていたほど」, and the next sentence starts with 「それでも」 and names a different benefit.\nRule: 「AほどBない」 = \"not as B as A\"; 「ほど」 here needs a negative. 「それでも」 (\"even so\") also shows the sentence before is a letdown.\nContrast: 「減ってきた」, 「減ってしまった」 and 「減るようになった」 are all affirmative, so they can't follow 「思っていたほど」, and 「それでも」 would have nothing to turn against."
+          "zh": "线索：空格前是「思っていたほど」，后一句以「それでも」开头，说的是另一种好处。\n规则：「AほどBない」＝“没有A那么B”，「ほど」后面要接否定；「それでも」（尽管如此）也说明前面是不如意的事。\n辨析：「減ってきた」「減ってしまった」是肯定形，接不上「思っていたほど」；「減らないことはなかった」是双重否定，实际也是“减了”。这样后面的「それでも」都没有转折的对象。",
+          "en": "Clue: Before the blank is 「思っていたほど」, and the next sentence starts with 「それでも」 and names a different benefit.\nRule: 「AほどBない」 = \"not as B as A\"; 「ほど」 here needs a negative. 「それでも」 (\"even so\") also shows the sentence before is a letdown.\nContrast: 「減ってきた」 and 「減ってしまった」 are affirmative, so they can't follow 「思っていたほど」; 「減らないことはなかった」 is a double negative that really means it did go down. Either way 「それでも」 would have nothing to turn against."
         },
         "wrong": [
           null,
@@ -89,8 +89,8 @@
             "en": "「減ってしまった」 is affirmative, and losing weight isn't regrettable; it fits neither 「ほど」 nor 「それでも」."
           },
           {
-            "zh": "「減るようになった」是肯定的变化，接不上「思っていたほど」，后面的「それでも」也不成立。",
-            "en": "「減るようになった」 is an affirmative change; it can't follow 「思っていたほど」, and 「それでも」 then makes no sense."
+            "zh": "「減らないことはなかった」是双重否定，等于“也不是没减”，接在「思っていたほど」后面说不通，后面的「それでも」也就没有转折的对象。",
+            "en": "「減らないことはなかった」 is a double negative (\"it's not that it didn't go down\"); it doesn't work after 「思っていたほど」, and 「それでも」 would have nothing to turn against."
           }
         ]
       },

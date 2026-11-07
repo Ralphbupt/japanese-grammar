@@ -169,7 +169,7 @@
     "stem": "その子は服が汚れるの（　）、雨上がりの公園で楽しそうに遊んでいた。",
     "options": [
       "もかまわず",
-      "を中心に",
+      "を問わず",
       "にこたえて",
       "をはじめ"
     ],
@@ -180,14 +180,14 @@
       "en": "Not caring that her clothes were getting dirty, the child played happily in the park after the rain."
     },
     "why": {
-      "zh": "线索：「服が汚れるの」是一般人会在意的事，后面却照样「楽しそうに遊んでいた」。\n规则：「名词／动词普通形＋の」＋「もかまわず」＝不顾……、不在乎……，常说「人目もかまわず」「濡れるのもかまわず」。\n辨析：「をはじめ」＝以……为首（列举代表），后面是同类的一群（「社長をはじめ社員全員」），不表示\"不顾\"。",
-      "en": "Clue: 「服が汚れるの」 is something people usually mind, yet she 「楽しそうに遊んでいた」.\nRule: noun / plain form ＋ 「の」 ＋ 「もかまわず」 = without caring about: 「人目もかまわず」, 「濡れるのもかまわず」.\nContrast: 「をはじめ」 names a leading example of a group (「社長をはじめ社員全員」); it doesn't mean \"regardless of\"."
+      "zh": "线索：「服が汚れるの」是一般人会在意的事，后面却照样「楽しそうに遊んでいた」。\n规则：「名词／动词普通形＋の」＋「もかまわず」＝不顾……、不在乎……，常说「人目もかまわず」「濡れるのもかまわず」。\n辨析：「を問わず」也译作\"不论\"，但前面要是包含多种情况的词（「天候を問わず」「経験の有無を問わず」），表示哪种都一样；「服が汚れるの」只是一件具体的事，不能接「を問わず」。",
+      "en": "Clue: 「服が汚れるの」 is something people usually mind, yet she 「楽しそうに遊んでいた」.\nRule: noun / plain form ＋ 「の」 ＋ 「もかまわず」 = without caring about: 「人目もかまわず」, 「濡れるのもかまわず」.\nContrast: 「を問わず」 also translates as \"regardless of\", but it needs a word covering a range of cases (「天候を問わず」, 「経験の有無を問わず」): whichever it is, it makes no difference. 「服が汚れるの」 is one concrete thing, so it can't take 「を問わず」."
     },
     "wrong": [
       null,
       {
-        "zh": "「を中心に」＝以……为中心，「汚れるのを中心に遊ぶ」意思不通。",
-        "en": "「を中心に」 means centred on; 「汚れるのを中心に遊ぶ」 makes no sense."
+        "zh": "「を問わず」前面要是包含多种情况的词（「男女を問わず」「天候を問わず」），「汚れるのを問わず」不成立；说\"不在乎\"要用「もかまわず」。",
+        "en": "「を問わず」 needs a word covering a range of cases (「男女を問わず」, 「天候を問わず」); 「汚れるのを問わず」 doesn't work. \"Not minding\" is 「もかまわず」."
       },
       {
         "zh": "「にこたえて」＝响应（期待、要求），「汚れるのにこたえて」不成立。",
@@ -452,7 +452,7 @@
       "ばかりだ",
       "次第だ",
       "までだ",
-      "ものだ"
+      "に限る"
     ],
     "answer": 1,
     "full": "来月の旅行に行けるかどうかは、仕事の忙しさ次第だ。",
@@ -475,8 +475,8 @@
         "en": "「までだ」 follows a verb (\"I'll just …\"); it doesn't make a noun a condition."
       },
       {
-        "zh": "「ものだ」表示常理或感慨，接普通形，「忙しさものだ」不成立。",
-        "en": "「ものだ」 states a general truth after a plain form; 「忙しさものだ」 doesn't work."
+        "zh": "「に限る」＝……最好（「夏は冷たいビールに限る」）或\"仅限于……\"，不表示\"取决于\"，「忙しさに限る」意思不通。",
+        "en": "「に限る」 means \"… is best\" (「夏は冷たいビールに限る」) or \"limited to\", not \"depends on\"; 「忙しさに限る」 makes no sense."
       }
     ]
   },

@@ -11,11 +11,11 @@
    ],
    [
     "M",
-    "はい、それは昨日事務局から連絡があって、今週末までに直せば受け付けてもらえるそうです。"
+    "はい、それは昨日事務局から連絡があって、今週末までに直せば受け付けてもらえるそうです。今日中に削っておきます。"
    ],
    [
     "F",
-    "じゃあ、そっちは急がなくていいか。それより気になったのは三枚目のグラフ。これ、北村先生の研究室から借りたデータも入ってるよね。"
+    "うーん、それはちょっと待ったほうがいいかも。気になったのは三枚目のグラフ。これ、北村先生の研究室から借りたデータも入ってるよね。"
    ],
    [
     "M",
@@ -23,15 +23,23 @@
    ],
    [
     "F",
-    "あれ、まだ論文になってないでしょう。学会で外に出すなら、北村先生の了解をちゃんと取っておかないと。"
+    "あれ、まだ論文になってないでしょう。学会で外に出すこと、北村先生はご存じなの？"
    ],
    [
     "M",
-    "あ、そうか……。もしだめだと言われたら、グラフはうちのデータだけで作り直さないといけないですね。"
+    "いえ、特にはお話ししてなくて……。あ、じゃあ念のため、うちのデータだけでグラフを作り直しておきましょうか。"
    ],
    [
     "F",
-    "そうなるね。返事によっては、要旨の中身も変わってくるかもしれないし。"
+    "それは、先生にだめだと言われてからで十分。使っていいということなら、今のままのほうがずっと説得力があるし。それに、要旨にもそのグラフの結果を書いてるでしょう？"
+   ],
+   [
+    "M",
+    "あ、そうか。そこが変わったら、要旨も書き直しですね。"
+   ],
+   [
+    "F",
+    "そういうこと。"
    ],
    [
     "M",
@@ -43,7 +51,7 @@
    ],
    [
     "M",
-    "そうですね。じゃあ、北村先生には、今日のうちにメールしておきます。"
+    "そうですね。じゃあ、北村先生のご都合を、今日のうちに伺ってみます。"
    ]
   ],
   "options": [
@@ -59,15 +67,17 @@
     "question": "男人接下来首先要做什么？",
     "lines": [
      "下个月学会的发表，幻灯片我大致看了一遍。整体的思路我觉得这样就行。不过，摘要稍微超出了规定的字数。",
-     "是的，这件事昨天事务局联系过我了，说这个周末之前改好就可以受理。",
-     "那这个不用急。我更在意的是第三张的图表。这里面也有从北村老师研究室借来的数据吧。",
+     "是的，这件事昨天事务局联系过我了，说这个周末之前改好就可以受理。我今天之内删减好。",
+     "嗯……那个也许先等等比较好。我在意的是第三张的图表。这里面也有从北村老师研究室借来的数据吧。",
      "是的，是去年一起调查时的数据。",
-     "那个还没写成论文吧。要在学会上公开的话，得好好征得北村老师的同意才行。",
-     "啊，对啊……。万一他说不行，图表就得只用我们自己的数据重做了。",
-     "是会那样。根据回复，摘要的内容说不定也要变。",
+     "那个还没写成论文吧。要在学会上公开，北村老师知道吗？",
+     "没有，没特别跟他说过……。啊，那为了保险起见，我先只用我们自己的数据把图表重做一下吧？",
+     "那个等老师说不行了再做也完全来得及。要是同意使用的话，保持现在这样要有说服力得多。而且，摘要里也写了那张图表的结果吧？",
+     "啊，对哦。那里要是变了，摘要也得重写。",
+     "就是这么回事。",
      "明白了。还有，我想在会场放视频，不知道能不能放出声音……。",
      "给发表人的说明下周应该会寄到，看了再说不就行了？",
-     "也是。那我今天之内给北村老师发邮件。"
+     "也是。那我今天之内去问问北村老师什么时候方便。"
     ],
     "options": [
      "把发表摘要改短",
@@ -81,15 +91,17 @@
     "question": "What will the man do first?",
     "lines": [
      "I've looked through the slides for next month's conference. I think the overall flow is fine. But your abstract is a little over the word limit.",
-     "Yes, the secretariat contacted me about that yesterday — they'll accept it if I fix it by this weekend.",
-     "Then that can wait. What bothered me more is the graph on the third slide. That includes data borrowed from Professor Kitamura's lab, doesn't it?",
+     "Yes, the secretariat contacted me about that yesterday — they'll accept it if I fix it by this weekend. I'll cut it down today.",
+     "Hmm, maybe hold off on that. What bothered me is the graph on the third slide. That includes data borrowed from Professor Kitamura's lab, doesn't it?",
      "Yes. It's from the survey we did together last year.",
-     "That hasn't been published yet, has it? If you're showing it at a conference, you need to get Professor Kitamura's consent properly.",
-     "Oh, right… If he says no, I'll have to redo the graph with just our own data.",
-     "That's right. Depending on his answer, the content of the abstract might change too.",
+     "That hasn't been published yet, has it? Does Professor Kitamura know you're going public with it at a conference?",
+     "No, I haven't really mentioned it… Oh, then just in case, shall I redo the graph with only our own data?",
+     "That can wait until he tells you no. If he says you can use it, it's far more convincing as it is. Besides, your abstract describes that graph's results too, doesn't it?",
+     "Oh, right. If that changes, I'll have to rewrite the abstract.",
+     "Exactly.",
      "I see. Also, I'd like to play a video at the venue, but I'm not sure whether there's sound…",
      "The guide for presenters should arrive next week, so why not wait and see that?",
-     "True. Then I'll email Professor Kitamura today."
+     "True. Then I'll ask Professor Kitamura today when would suit him."
     ],
     "options": [
      "Shorten the abstract",
@@ -100,21 +112,21 @@
    }
   },
   "why": {
-   "zh": "依据：老师说：「学会で外に出すなら、北村先生の了解をちゃんと取っておかないと。」男的最后说：「北村先生には、今日のうちにメールしておきます。」\n推理：图表里有别的研究室还没发表的数据，要先征得对方同意。对方的回复决定图表要不要重做，「返事によっては」摘要也可能要改，所以许可是一切的前提。摘要「今週末までに」改就行；会场的设备等下周的说明。\n容易错：图表只有被拒绝时才需要重做；摘要还有时间，而且要等回复。",
-   "en": "Evidence: The supervisor says: 「学会で外に出すなら、北村先生の了解をちゃんと取っておかないと。」 The student ends: 「北村先生には、今日のうちにメールしておきます。」\nReasoning: The graph uses another lab's unpublished data, so consent comes first. His answer decides whether the graph must be redone, and 「返事によっては」 the abstract may change too, so permission is the step everything depends on. The abstract can be fixed 「今週末までに」; the equipment question waits for next week's guide.\nTrap: the graph only needs redoing if he refuses; the abstract can wait and depends on the reply."
+   "zh": "依据：老师问：「学会で外に出すこと、北村先生はご存じなの？」又说图表「先生にだめだと言われてからで十分」，而且摘要里也写了图表的结果。男的最后说：「北村先生のご都合を、今日のうちに伺ってみます。」\n推理：图表用了别的研究室还没发表的数据，对方还不知道。北村老师同不同意，决定图表要不要重做，进而决定摘要怎么改，所以第一步是征得同意；问对方什么时候方便，就是为了去当面请求。设备的事等下周的说明。\n容易错：男的自己说今天就删的摘要、想先重做的图表，老师都让他先等。",
+   "en": "Evidence: The supervisor asks: 「学会で外に出すこと、北村先生はご存じなの？」, says the graph can wait 「先生にだめだと言われてからで十分」, and notes the abstract reports the graph. The student ends: 「北村先生のご都合を、今日のうちに伺ってみます。」\nReasoning: The graph uses another lab's unpublished data, and Kitamura doesn't know. His answer decides whether the graph must be redone, and that decides how the abstract changes, so getting his consent comes first; asking when he's free is how the student will go and ask in person. The equipment question waits for next week's guide.\nTrap: the abstract he offers to cut today and the graph he offers to redo — she tells him to hold off on both."
   },
   "wrong": [
    {
-    "zh": "摘要「今週末までに」改就行，而且内容可能随回复改变，要后做。",
-    "en": "The abstract can be fixed by the weekend and may change with the reply."
+    "zh": "男的说今天就删，但老师让他先等：摘要写了图表的结果，要看回复再改。",
+    "en": "He offers to cut it today, but she says to wait: the abstract reports the graph, so it depends on the reply."
    },
    {
     "zh": "老师说等下周的说明寄到再看。",
     "en": "She says to wait for next week's guide."
    },
    {
-    "zh": "只有北村老师不同意时才需要重做。",
-    "en": "The graph needs redoing only if Kitamura refuses."
+    "zh": "老师说「だめだと言われてからで十分」，同意的话就保持原样。",
+    "en": "She says it can wait until he refuses; if he agrees, it stays as it is."
    },
    null
   ],
@@ -375,31 +387,31 @@
    ],
    [
     "F",
-    "だとすると、給水所も一か所ずらさないといけませんね。ボランティアの皆さんにお知らせしないと。"
+    "だとすると、給水所も一か所ずらさないといけませんね。ボランティアの皆さんに、今日中にお知らせしておきます。"
    ],
    [
     "M",
-    "それはコースが正式に決まってからでいいよ。何より先に、道路の使用許可だ。警察に出した書類、ルートが変わるなら全部出し直しになるから。"
+    "うーん、ただ、ルートが変わるとなると、警察に出した道路の使用許可の書類、全部出し直しなんだよ。それで許可が下りなかったら、また別の道を考えなきゃならない。"
    ],
    [
     "F",
-    "許可が下りるまで、二、三週間はかかりますよね。じゃあ、パンフレットのコース図は……。"
+    "許可が下りるまで、二、三週間はかかりますよね。……ボランティアの方に二度もお知らせするのは避けたいですね。パンフレットのコース図は……。"
    ],
    [
     "M",
-    "印刷所の締め切りは来月の十日だから、許可が出てから直しても十分間に合う。"
+    "印刷所の締め切りは来月の十日だから、そっちはまだ慌てなくていい。"
    ],
    [
     "F",
-    "分かりました。公園の中は道が狭いので、救護の人も増やしたほうがいいかもしれませんね。"
+    "分かりました。公園の中は道が狭いので、救護の人も増やしたほうがいいかもしれません。医師会には私から相談しましょうか。"
    ],
    [
     "M",
-    "そうだね。それは僕から医師会に相談してみるよ。じゃあ、書類のほう、急ぎで頼める？"
+    "それは来週の会合で先生方に会うから、僕から話しておくよ。中村さんには、いちばん時間がかかるものを先に片付けてもらいたいんだ。"
    ],
    [
     "F",
-    "はい、すぐに取りかかります。"
+    "分かりました。じゃあ、すぐに取りかかります。"
    ]
   ],
   "options": [
@@ -417,13 +429,13 @@
      "中村，麻烦了。河边那座桥下个月开始施工，不能通行了。路线得改一部分。",
      "啊？离比赛只剩六周了啊。",
      "嗯。改成穿过公园的那条路的话，距离几乎不变。",
-     "那样的话，补水站也得挪一个地方。得通知志愿者们。",
-     "那个等路线正式定下来再说。最要紧的是道路使用许可。交给警察的文件，路线一变就得全部重交。",
-     "批下来要两三周吧。那小册子上的路线图……。",
-     "印刷厂的截止日期是下个月十号，许可下来以后再改也完全来得及。",
-     "明白了。公园里路窄，救护人员是不是也多安排一些比较好。",
-     "对。那个我去跟医师会商量。那文件的事，能抓紧办吗？",
-     "好的，我马上着手。"
+     "那样的话，补水站也得挪一个地方。我今天之内通知志愿者们。",
+     "嗯……不过，路线一变，交给警察的道路使用许可文件就得全部重交。要是许可批不下来，又得考虑别的路。",
+     "批下来要两三周吧。……可不想通知志愿者两次。那小册子上的路线图……。",
+     "印刷厂的截止日期是下个月十号，那个还不用急。",
+     "明白了。公园里路窄，救护人员也许多安排一些比较好。医师会那边要不要我去商量？",
+     "那个我下周开会时会见到医生们，我去说吧。中村你先把最花时间的事办掉。",
+     "明白了。那我马上着手。"
     ],
     "options": [
      "通知补水站的志愿者位置变更",
@@ -439,13 +451,13 @@
      "Nakamura, we've got a problem. The bridge by the river will be closed for construction from next month. We'll have to change part of the course.",
      "What? The race is only six weeks away.",
      "Yes. If we reroute it along the path through the park, the distance hardly changes, though.",
-     "In that case, we'll have to move one of the water stations too. We need to tell the volunteers.",
-     "That can wait until the course is officially decided. First of all, the permit to use the roads. If the route changes, the papers we gave the police all have to be resubmitted.",
-     "It takes two or three weeks for a permit to come through, doesn't it? Then what about the course map in the brochure…",
-     "The printer's deadline is the 10th of next month, so fixing it after the permit comes through is plenty of time.",
-     "I see. The paths in the park are narrow, so maybe we should have more first-aid staff too.",
-     "Good point. I'll talk to the medical association about that myself. So, could you get on with the papers urgently?",
-     "Yes, I'll start right away."
+     "In that case, we'll have to move one of the water stations too. I'll let the volunteers know today.",
+     "Hmm, the thing is, if the route changes, the road-use permit papers we gave the police all have to be resubmitted. And if the permit isn't granted, we'll have to think of yet another route.",
+     "It takes two or three weeks for a permit to come through, doesn't it? … I'd rather not have to tell the volunteers twice. And the course map in the brochure…",
+     "The printer's deadline is the 10th of next month, so there's no rush on that yet.",
+     "I see. The paths in the park are narrow, so maybe we should have more first-aid staff too. Shall I talk to the medical association?",
+     "I'll be seeing the doctors at next week's meeting, so I'll mention it myself. What I'd like you to do is get the thing that takes longest out of the way first.",
+     "Understood. I'll start on it right away."
     ],
     "options": [
      "Tell the water-station volunteers about the change",
@@ -456,22 +468,22 @@
    }
   },
   "why": {
-   "zh": "依据：男的说：「何より先に、道路の使用許可だ。」「書類のほう、急ぎで頼める？」女的回答：「すぐに取りかかります。」\n推理：路线一变，交给警察的文件「全部出し直し」，而且审批要两三周，所以最先做。通知志愿者要等路线正式确定；路线图等许可下来再改也来得及；救护人员由男的去跟医师会商量。\n容易错：女的自己先提出的通知志愿者被「コースが正式に決まってから」推后；救护的事是男的负责。",
-   "en": "Evidence: The man says: 「何より先に、道路の使用許可だ。」 and 「書類のほう、急ぎで頼める？」 She replies: 「すぐに取りかかります。」\nReasoning: With the route changed, the police papers must be 「全部出し直し」, and approval takes two or three weeks, so they come first. Telling the volunteers waits until the course is official; the map can be fixed after the permit; the man will talk to the medical association about first-aid staff.\nTrap: her own first idea, telling the volunteers, put off with 「コースが正式に決まってから」; the first-aid matter is the man's job."
+   "zh": "依据：男的说路线一变，交给警察的文件「全部出し直し」；女的说许可「二、三週間はかかります」。最后男的说：「いちばん時間がかかるものを先に片付けてもらいたいんだ。」\n推理：最花时间的是要等两三周才批的道路使用许可，所以先重做交给警察的文件。许可批不下来路线还会再变，女的也说不想通知志愿者两次；路线图的截止日还早；救护的事男的下周自己去说。\n容易错：女的自己提出今天就通知志愿者，但路线还没定；医师会她主动要去，被男的接过去了。",
+   "en": "Evidence: The man says the police papers must be 「全部出し直し」; she notes the permit 「二、三週間はかかります」. He ends: 「いちばん時間がかかるものを先に片付けてもらいたいんだ。」\nReasoning: What takes longest is the road-use permit, two or three weeks to approve, so redoing the police papers comes first. If the permit is refused the route changes again, and she herself would rather not tell the volunteers twice; the printer's deadline is still far off; the man will raise first-aid staffing himself next week.\nTrap: she first offers to tell the volunteers today, though the route isn't settled; she offers to contact the medical association, but he takes that on."
   },
   "wrong": [
    {
-    "zh": "男的说等路线正式定下来再通知。",
-    "en": "He says to wait until the course is official."
+    "zh": "路线还可能再变，她自己也说不想通知两次。",
+    "en": "The route may still change, and she'd rather not tell them twice."
    },
    {
-    "zh": "印刷厂截止是下个月十号，许可下来再改也来得及。",
-    "en": "The printer's deadline leaves time after the permit."
+    "zh": "印刷厂下个月十号截止，男的说还不用急。",
+    "en": "The printer's deadline is next month; he says there's no rush."
    },
    null,
    {
-    "zh": "救护的事男的说「僕から医師会に相談してみる」。",
-    "en": "The man will raise first-aid staffing himself."
+    "zh": "男的说下周开会时自己去说。",
+    "en": "He'll raise it himself at next week's meeting."
    }
   ],
   "traps": [
@@ -500,11 +512,11 @@
    ],
    [
     "F",
-    "実は、まだ半分くらいで……。今夜中に覚えます。"
+    "実は、まだ半分くらいで……。明日の稽古までには、何とか覚えてきます。"
    ],
    [
     "M",
-    "いや、あそこは来週の通し稽古までに入っていれば構わないよ。それより気になってるのは、階段を駆け下りるところ。本番では、裾の長いドレスを着るんだよね。"
+    "いや、あそこは来週の通し稽古までに入っていれば構わないよ。それより気になってるのは、階段を駆け下りるところ。本番では、裾の長いドレスだよね。"
    ],
    [
     "F",
@@ -512,15 +524,23 @@
    ],
    [
     "M",
-    "裾を踏んだら危ないからね。衣装はもう楽屋に届いてるから、明日、稽古が始まる前に、自分で一度着て、あの階段を下りてみてくれる？ 走れないようなら、動きを変えるから。"
+    "裾を踏んだら危ないし、走れないようなら動きを変えなきゃならない。ただ、それを稽古の最中にやると、みんなを待たせることになるからなあ。衣装はもう楽屋に届いてるんだけど。"
    ],
    [
     "F",
-    "分かりました。それから、三幕の歌のところは……。"
+    "あ、じゃあ、明日は少し早めに入ります。"
    ],
    [
     "M",
-    "あれはもう今のままでいい。だいぶ良くなったよ。山田くんとの掛け合いは、明日、二人がそろったところで合わせよう。"
+    "そうしてもらえると助かる。"
+   ],
+   [
+    "F",
+    "三幕の歌も、早めに来て、一度さらっておきましょうか。"
+   ],
+   [
+    "M",
+    "あれはもう今のままでいい。だいぶ良くなったよ。山田くんとの掛け合いは、稽古の中で合わせよう。"
    ]
   ],
   "options": [
@@ -538,12 +558,14 @@
      "今天就到这儿吧。辛苦了。啊，林，能耽误你一下吗？",
      "好的。",
      "第二幕开头那场，昨天剧本稍微改了一下吧。台词已经记住了吗？",
-     "其实还只记了一半左右……。我今晚之内背下来。",
-     "不，那里只要下周联排之前记住就行。我更在意的是跑下楼梯那里。正式演出时你要穿下摆很长的裙子吧。",
+     "其实还只记了一半左右……。明天排练之前我一定背下来。",
+     "不，那里只要下周联排之前记住就行。我更在意的是跑下楼梯那里。正式演出时你穿的是下摆很长的裙子吧。",
      "是的。还一次都没穿着走过。",
-     "踩到下摆会很危险。服装已经送到后台了，明天排练开始前，你自己先穿一次，下一下那段楼梯好吗？要是跑不了，我就改动作。",
-     "明白了。还有，第三幕唱歌的地方……。",
-     "那里就保持现在这样，好多了。和山田的对手戏，明天两个人都在的时候再对。"
+     "踩到下摆会很危险，要是跑不了，还得改动作。不过，在排练中途弄这个的话，就得让大家等着了。服装倒是已经送到后台了。",
+     "啊，那我明天早点来。",
+     "你能这样就帮大忙了。",
+     "第三幕的歌，要不我也早点来先过一遍？",
+     "那里就保持现在这样，好多了。和山田的对手戏，在排练里再对。"
     ],
     "options": [
      "背改过的剧本台词",
@@ -559,12 +581,14 @@
      "Let's stop here for today. Thanks, everyone. Oh, Hayashi, have you got a moment?",
      "Yes.",
      "I revised the script a little yesterday for the first scene of Act Two. Have you got the lines down yet?",
-     "Actually, only about half… I'll learn them tonight.",
-     "No, it's fine as long as you know them by next week's run-through. What worries me more is where you run down the stairs. In the performance you'll be wearing a dress with a long hem, right?",
+     "Actually, only about half… I'll have them learned by tomorrow's rehearsal somehow.",
+     "No, it's fine as long as you know them by next week's run-through. What worries me more is where you run down the stairs. In the performance you're in a dress with a long hem, right?",
      "Yes. I haven't moved in it even once yet.",
-     "It's dangerous if you step on the hem. The costume's already in the dressing room, so tomorrow, before rehearsal starts, could you put it on yourself and try going down those stairs? If you can't run, I'll change the moves.",
-     "Understood. And the song in Act Three…",
-     "Leave that as it is now. It's much better. We'll go over your exchange with Yamada tomorrow once you're both here."
+     "It's dangerous if you step on the hem, and if you can't run I'll have to change the moves. But if we do that in the middle of rehearsal, everyone will be kept waiting. The costume's already in the dressing room, though.",
+     "Oh, then I'll come in a bit early tomorrow.",
+     "That would be a big help.",
+     "Shall I come early and run through the Act Three song once too?",
+     "Leave that as it is now. It's much better. We'll go over your exchange with Yamada during rehearsal."
     ],
     "options": [
      "Learn the lines in the revised script",
@@ -575,27 +599,27 @@
    }
   },
   "why": {
-   "zh": "依据：导演说：「明日、稽古が始まる前に、自分で一度着て、あの階段を下りてみてくれる？」\n推理：长裙的下摆可能被踩到，很危险，她还没穿着动过，所以导演让她明天排练前先试。台词只要「来週の通し稽古まで」记住；歌「今のままでいい」；和山田的对手戏要两人都在时、也就是明天排练中才对。\n容易错：她自己说今晚要背的台词，导演说不急；对手戏一个人做不了，要等到排练时。",
-   "en": "Evidence: The director says: 「明日、稽古が始まる前に、自分で一度着て、あの階段を下りてみてくれる？」\nReasoning: The long hem could catch and she hasn't moved in the dress yet, so he asks her to try it before rehearsal tomorrow. The lines only need to be known 「来週の通し稽古まで」; the song is fine 「今のままでいい」; the exchange with Yamada needs both of them, so it happens during rehearsal.\nTrap: the lines she offers to learn tonight, which the director says can wait; the exchange, which she can't do alone before rehearsal."
+   "zh": "依据：导演说试穿长裙下楼梯这件事「稽古の最中にやると、みんなを待たせる」「衣装はもう楽屋に届いてる」；女的说：「明日は少し早めに入ります。」\n推理：导演没有直接下指示，只说在排练中试会耽误大家、服装已经到了。女的听懂了，决定明天早点来，在排练前穿上服装试着下楼梯。台词「来週の通し稽古まで」记住就行；歌「今のままでいい」；和山田的对手戏「稽古の中で」对。\n容易错：她说明天排练前要背的台词、想早来练的歌，导演都说不用。",
+   "en": "Evidence: The director says trying the stairs in the dress 「稽古の最中にやると、みんなを待たせる」 and 「衣装はもう楽屋に届いてる」; she replies: 「明日は少し早めに入ります。」\nReasoning: He gives no direct instruction, only that doing it during rehearsal would hold everyone up and that the costume has arrived. She takes the hint and will come early to try the stairs in costume before rehearsal. The lines can wait 「来週の通し稽古まで」; the song is fine 「今のままでいい」; the exchange with Yamada happens 「稽古の中で」.\nTrap: the lines she offers to learn before tomorrow and the song she offers to practise early — he turns both down."
   },
   "wrong": [
    {
-    "zh": "导演说下周联排前记住就行，不急。",
-    "en": "The director says the lines can wait until next week's run-through."
+    "zh": "她说明天前背好，但导演说下周联排前记住就行。",
+    "en": "She offers to learn them by tomorrow, but he says next week's run-through is fine."
    },
    null,
    {
-    "zh": "导演说歌「今のままでいい」。",
-    "en": "He says the song is fine as it is."
+    "zh": "她想早来练，导演说「今のままでいい」。",
+    "en": "She offers, but he says the song is fine as it is."
    },
    {
-    "zh": "要等明天两个人都在时再对，排练前一个人做不了。",
-    "en": "That waits until both are there tomorrow; she can't do it alone beforehand."
+    "zh": "导演说在排练中再对，不是排练前。",
+    "en": "That happens during rehearsal, not before."
    }
   ],
   "traps": [
    "later",
-   "not-possible"
+   "order"
   ]
  }
 ]

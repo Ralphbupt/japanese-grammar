@@ -326,10 +326,10 @@
   "question": "先生は何について話していますか。",
   "spokenOptions": true,
   "options": [
-   "卵を使ったケーキのおいしい焼き方",
+   "客の声を商品作りに生かす大切さ",
    "手間を残すことが生む価値",
-   "便利な商品が増えてきた理由",
-   "食品の売れ行きを調べる方法"
+   "家族のために料理をする人の気持ち",
+   "商品の手間を省くための工夫"
   ],
   "answer": 1,
   "tr": {
@@ -340,10 +340,10 @@
      "我们往往会以为，越方便的商品卖得越好。不过，好像也不能一概而论。有这样一个故事：一家食品公司推出了只要加水烤就行的蛋糕粉，结果没有预想的那么好卖。于是他们把鸡蛋从粉里去掉，只有鸡蛋让顾客自己打进去，销量反而上去了。明明麻烦稍微增加了。因为有打鸡蛋这一道工序，就会产生“是自己做的”“是为家人做的”这种感觉。一切都被安排好了，反而就没有这种感觉了。也就是说，考虑商品时，不光要想省掉多少麻烦，还要有特意留下哪一部分的视角。"
     ],
     "options": [
-     "用鸡蛋烤出好吃蛋糕的方法",
+     "把顾客的意见用于商品开发的重要性",
      "留下一些工序所产生的价值",
-     "方便的商品增多的原因",
-     "调查食品销量的方法"
+     "为家人做饭的人的心情",
+     "省去商品工序的窍门"
     ]
    },
    "en": {
@@ -353,30 +353,30 @@
      "We tend to assume that the more convenient a product is, the better it sells. But that doesn't seem to be the whole story. There's a story that a food company launched a cake mix you just add water to and bake, and it didn't sell as well as expected. So they took the egg out of the mix and had customers crack in the egg themselves — and sales went up. Even though it was slightly more work. Having that one step of cracking an egg gives people the feeling that they made it themselves, made it for their family. When everything is done for them, they can't have that feeling. So when designing a product, you need to think not only about how much effort to save, but also about which part to deliberately leave in."
     ],
     "options": [
-     "How to bake a tasty cake with eggs",
+     "The importance of using customers' views in product design",
      "The value created by leaving some effort in",
-     "Why convenient products have increased",
-     "How to research food sales"
+     "How people feel when cooking for their family",
+     "Ways to save effort in products"
     ]
    }
   },
   "why": {
-   "zh": "依据：老师说：「卵を割るというひと手間があることで、自分で作った……という気持ちが生まれる。」最后说：「あえてどこを残すか、という視点も欠かせない」。\n推理：她先否定“越方便越好卖”，再用蛋糕粉的例子说明：特意留下一道工序，顾客会有“自己做的”满足感，商品反而好卖。整段讲的是留下麻烦的价值。\n容易错：蛋糕粉只是例子，不是在讲怎么烤蛋糕；她讲的不是方便的商品为什么增多，正相反。",
-   "en": "Evidence: The teacher says: 「卵を割るというひと手間があることで、自分で作った……という気持ちが生まれる。」 and ends: 「あえてどこを残すか、という視点も欠かせない」.\nReasoning: She questions the idea that convenience always sells, then uses the cake-mix story: leaving one step for the customer gives a sense of having made it oneself, and sales rise. The talk is about the value of leaving some effort in.\nTrap: the cake mix is only an example, not a baking lesson; she isn't explaining why convenient products have spread — rather the reverse."
+   "zh": "依据：老师说：「卵を割るというひと手間があることで、自分で作った……という気持ちが生まれる。」最后说：「あえてどこを残すか、という視点も欠かせない」。\n推理：她先否定“越方便越好卖”，再用蛋糕粉的例子说明：特意留下一道工序，顾客会有“自己做的”满足感，商品反而好卖。整段讲的是留下麻烦的价值。\n容易错：“为家人做”的心情只是例子里的细节；她讲的不是怎么省去麻烦，正相反。",
+   "en": "Evidence: The teacher says: 「卵を割るというひと手間があることで、自分で作った……という気持ちが生まれる。」 and ends: 「あえてどこを残すか、という視点も欠かせない」.\nReasoning: She questions the idea that convenience always sells, then uses the cake-mix story: leaving one step for the customer gives a sense of having made it oneself, and sales rise. The talk is about the value of leaving some effort in.\nTrap: the feeling of cooking for one's family is a detail of the example; she isn't talking about saving effort — rather the reverse."
   },
   "wrong": [
    {
-    "zh": "蛋糕粉只是例子，没讲烤法。",
-    "en": "The cake mix is just an example; no baking method is given."
+    "zh": "厂家改商品不是因为听了顾客的意见，她没提到顾客的声音。",
+    "en": "The maker didn't change the product because of customer feedback; she never mentions any."
    },
    null,
    {
-    "zh": "她说的是方便不一定好卖，不是方便商品增多的原因。",
-    "en": "Her point is that convenience doesn't always sell."
+    "zh": "“为家人做”的心情只是用来解释例子，不是整段的主题。",
+    "en": "The feeling of cooking for family only explains the example; it isn't the topic."
    },
    {
-    "zh": "没讲调查销量的方法。",
-    "en": "She doesn't discuss how to research sales."
+    "zh": "她讲的正相反：不只要省去麻烦，还要特意留下一部分。",
+    "en": "She argues the reverse: not only saving effort but deliberately leaving some in."
    }
   ],
   "traps": [

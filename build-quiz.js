@@ -395,6 +395,24 @@ const mockSets = (level) => {
 const isBi = (o) => o && typeof o.zh === "string" && o.zh.trim() && typeof o.en === "string" && o.en.trim();
 const underlined = (s) => [...String(s).matchAll(/<<([^<>]+)>>/g)].map((m) => m[1]);
 
+// A kanji outside JIS X 0208 in a stem, option, script line or passage is a
+// typo, almost always simplified Chinese (话 for 話, 门 for 門): every character
+// the question bank uses is in it (checked 2026-11-08), so no allow-list yet.
+let JIS;
+function chineseIn(texts) {
+  if (!JIS) {
+    JIS = new Set();
+    const dec = new TextDecoder("shift_jis");
+    for (let a = 0x81; a <= 0xfc; a++) if (a <= 0x9f || a >= 0xe0) for (let b = 0x40; b <= 0xfc; b++) {
+      const ch = dec.decode(new Uint8Array([a, b]));
+      if (ch.length === 1 && ch !== "\ufffd") JIS.add(ch);
+    }
+  }
+  const bad = new Set();
+  for (const t of texts) if (typeof t === "string") for (const c of t) if (/[\u3400-\u9fff\uf900-\ufaff]/.test(c) && !JIS.has(c)) bad.add(c);
+  return [...bad].join("");
+}
+
 // `mock`: the set number when validating a mock test folder (its ids are
 // n5-m1-001 for questions and n5-m1-p1 for passages).
 function validate(level, { qs, passages }, points, mock) {
@@ -416,8 +434,14 @@ function validate(level, { qs, passages }, points, mock) {
       if (blanks.join() !== (p.questions || []).map((_, i) => i + 1).join()) err("bunshou blanks must be [[1]] [[2]] … in order, one per question");
     }
   }
+  for (const p of passages) {
+    const zh = chineseIn([p.passage, p.kj, p.intro]);
+    if (zh) errors.push(`${p._file} ${p.id}: not a Japanese character (${zh}) — simplified Chinese?`);
+  }
   for (const q of qs) {
     const err = (msg) => errors.push(`${q._file} ${q.id || "(no id)"}: ${msg}`);
+    const zh = chineseIn([q.stem, q.full, q.kj, q.scene, q.question, ...(q.options || []), ...(q.lines || []).map((l) => l[1]), ...(q.questions || []).flatMap((x) => [x.question, ...(x.options || [])])]);
+    if (zh) err(`not a Japanese character (${zh}) — simplified Chinese, e.g. 话 for 話?`);
     if (q._kind === "choukai") {
       if (seen.has(q.id)) err("duplicate id");
       seen.add(q.id);
