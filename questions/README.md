@@ -49,6 +49,8 @@ Standard newspaper spellings; words normally written in kana stay kana.
 
 (N5/N4 from the JLPT's 2020 revision notice; N3/N2/N1 are the usual published counts — the JLPT no longer lists them and says they vary slightly.) Ids `n5-m1-001…` (passages `n5-m1-p1…`). Mock questions are new — never copied from or into the practice bank — and go through the same blind review (`node tools/quiz-blind.js sheet N5/mock-1 moji-goi`). The test's sittings, times and pass marks come from `MOCK` in `build-quiz.js`.
 
+A new set every week per level (since 2026-11-08). Checks per set, in order: `node build-quiz.js` (errors; cue warnings, incl. answers falling in a rhythm — fix with `node tools/quiz-derhythm.js <file>`, never by cycling positions by hand), `node tools/choukai-check.js N…`, a blind solve by a reviewer who hasn't seen the key; then pictures (`tools/choukai-images.py`, look at every set), audio (`tools/choukai-audio.py`), `tools/choukai-audio-check.py` twice (it is nondeterministic), `tools/choukai-pitch.py` and, for what it flags, `tools/choukai-voice-check.py`; `python build-audio.py` for the passages' read-aloud and answer sentences.
+
 ## How many
 
 - Each numbered grammar point (`## N.` in the lesson) gets **3 questions**: 2 `bunpou` + 1 `narabe`. A point that is a big reference topic (e.g. particles, conjugation tables) may get up to 5.
