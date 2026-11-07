@@ -1,0 +1,371 @@
+[
+  {
+    "id": "n5-m2-p1",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "ソンさんは 「わたしの へや」の さくぶんを 書きました。",
+    "passage": "わたしの へやは、駅から あるいて 五分の アパートの 二かいに あります。あまり ひろく ありませんが、まどが 大きくて、あかるい へやです。\nへやには ベッドと つくえが あります。わたしは 毎ばん この つくえ [[1]] 日本語の べんきょうを します。\n先週の 日曜日、はじめて クラスの 友だちが 三人 へやへ 来ました。みんなで いっしょに ばんごはんを [[2]]、食べました。とても おいしかったです。\nへやは せまくて、少し 古いです。[[3]]、わたしは この へやが 大すきです。\nこんど、国の 母が 日本へ 来ます。母にも この へやを [[4]]。",
+    "kj": "私の部屋は、駅から歩いて五分のアパートの二階にあります。あまり広くありませんが、窓が大きくて、明るい部屋です。\n部屋にはベッドと机があります。私は毎晩この机で日本語の勉強をします。\n先週の日曜日、初めてクラスの友達が三人部屋へ来ました。みんなで一緒に晩ご飯を作って、食べました。とてもおいしかったです。\n部屋は狭くて、少し古いです。でも、私はこの部屋が大好きです。\n今度、国の母が日本へ来ます。母にもこの部屋を見せたいです。",
+    "tr": {
+      "zh": "我的房间在离车站走路五分钟的一栋公寓的二楼。房间不太大，但窗户很大，是个明亮的房间。\n房间里有床和书桌。我每天晚上在这张书桌上学日语。\n上周日，班上的三个朋友第一次来我房间。大家一起做了晚饭，然后吃了。非常好吃。\n房间又小又有点旧。不过，我非常喜欢这个房间。\n下次我妈妈要从国内来日本。我也想让妈妈看看这个房间。",
+      "en": "My room is on the second floor of an apartment building a five-minute walk from the station. It isn't very big, but the window is large and the room is bright.\nIn the room there's a bed and a desk. Every evening I study Japanese at this desk.\nLast Sunday, three friends from my class came to my room for the first time. We all made dinner together and ate it. It was really good.\nThe room is small and a little old. But I love this room.\nNext time, my mother is coming to Japan from my country. I want to show her this room too."
+    },
+    "questions": [
+      {
+        "difficulty": 1,
+        "options": [
+          "で",
+          "に",
+          "を",
+          "へ"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：空格前是「この つくえ」，后面是动作「べんきょうを します」。\n规则：做动作的地方用「で」：「つくえで べんきょうします」＝在书桌上学习。\n容易错：「に」表示存在的地方或到达点（「へやに あります」），不用于做动作的地方。",
+          "en": "Clue: Before the blank is 「この つくえ」, and after it the action 「べんきょうを します」.\nRule: The place where an action happens takes 「で」: 「つくえで べんきょうします」 = study at the desk.\nTrap: 「に」 marks where something is or where you arrive (「へやに あります」), not where you do something."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「に」用于存在的地方或目的地，「べんきょうします」是动作，地点要用「で」。",
+            "en": "「に」 is for where something is or a destination; 「べんきょうします」 is an action, so the place needs 「で」."
+          },
+          {
+            "zh": "后面已经有「べんきょうを」，「を」不能再接书桌；书桌不是学习的对象。",
+            "en": "「べんきょうを」 already takes 「を」; the desk isn't what is studied."
+          },
+          {
+            "zh": "「へ」表示移动的方向，后面要接「行きます」「来ます」这类动词。",
+            "en": "「へ」 marks a direction of movement and needs a verb like 「行きます」 or 「来ます」."
+          }
+        ]
+      },
+      {
+        "difficulty": 2,
+        "options": [
+          "つくって",
+          "つくったり",
+          "つくるから",
+          "つくりませんが"
+        ],
+        "okj": [
+          "作って",
+          "作ったり",
+          "作るから",
+          "作りませんが"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：空格后是「、食べました」，前后是一件接一件的事：先做饭，再吃。\n规则：按顺序连接两个动作用て形：「つくって、食べました」＝做好了然后吃。\n容易错：「〜たり」要用「〜たり 〜たり します」的形式，不能单独接「食べました」。",
+          "en": "Clue: After the blank comes 「、食べました」 — one action after another: cook first, then eat.\nRule: Two actions in sequence are joined with the て-form: 「つくって、食べました」 = made it and then ate.\nTrap: 「〜たり」 needs the pattern 「〜たり 〜たり します」; it can't link straight to 「食べました」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「〜たり」要成对用并以「します」结尾，这里后面直接是「食べました」，不成句。",
+            "en": "「〜たり」 needs a pair ending in 「します」; here it runs straight into 「食べました」, which doesn't work."
+          },
+          {
+            "zh": "「つくるから」是“因为要做”，而且是现在式，和上周已经做完、吃完的事接不上。",
+            "en": "「つくるから」 means \"because we will make\", in the present tense — it doesn't fit something already done last week."
+          },
+          {
+            "zh": "后面说「とても おいしかったです」，是大家一起做的饭；说“不做”意思不对，「ません」也是现在式。",
+            "en": "The text goes on to say the food was delicious and they all made dinner together; \"don't make\" contradicts that, and 「ません」 is present tense anyway."
+          }
+        ]
+      },
+      {
+        "difficulty": 1,
+        "options": [
+          "でも",
+          "それから",
+          "だから",
+          "そして"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：前一句「せまくて、少し 古いです」是缺点，后一句「この へやが 大すきです」是喜欢。\n规则：前后意思相反用「でも」（但是）。\n辨析：「だから」是“所以”，“又小又旧，所以很喜欢”说不通。",
+          "en": "Clue: The sentence before (「せまくて、少し 古いです」) lists drawbacks; the one after (「この へやが 大すきです」) says the writer loves it.\nRule: Opposite ideas are joined with 「でも」 (but).\nContrast: 「だから」 means \"so\" — \"it's small and old, so I love it\" makes no sense."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「それから」是“然后、还有”，用于接着说下一件事，不能表示前后相反。",
+            "en": "「それから」 means \"and then / also\"; it adds the next thing, it doesn't mark a contrast."
+          },
+          {
+            "zh": "「だから」是“所以”，房间小又旧不是喜欢它的理由。",
+            "en": "「だから」 means \"so\", but being small and old is no reason to love the room."
+          },
+          {
+            "zh": "「そして」是“而且、然后”，前后要意思一致，这里是缺点转到喜欢，要用转折。",
+            "en": "「そして」 means \"and\", for ideas going the same way; here drawbacks turn into love, which needs \"but\"."
+          }
+        ]
+      },
+      {
+        "difficulty": 3,
+        "options": [
+          "見せたいです",
+          "見たいです",
+          "見せました",
+          "見せて いました"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：「こんど」（下次）说的是还没发生的事；「母にも この へやを」——房间要给妈妈看。\n规则：“给某人看”是「（人）に 〜を 見せる」；还没做的事表示愿望用「〜たいです」。\n辨析：「見る」是自己看，「見せる」是让别人看。「母に 見たい」说不通。",
+          "en": "Clue: 「こんど」 (next time) means it hasn't happened yet; 「母にも この へやを」 — the room is for Mother to see.\nRule: \"Show something to someone\" is 「(person)に 〜を 見せる」; a wish about something not yet done is 「〜たいです」.\nContrast: 「見る」 is to look yourself, 「見せる」 is to let someone else look. 「母に 見たい」 doesn't work."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「見たい」是自己想看；房间是自己的，要让妈妈看，而且「母に」后面不能接「見る」。",
+            "en": "「見たい」 is wanting to look yourself; it's the writer's own room, for Mother to see, and 「母に」 can't go with 「見る」."
+          },
+          {
+            "zh": "「見せました」是过去式，可妈妈「こんど」才来，还没给她看过。",
+            "en": "「見せました」 is past tense, but Mother only comes 「こんど」 — she hasn't seen it yet."
+          },
+          {
+            "zh": "「見せて いました」是过去在进行或反复的事，和「こんど」（下次）矛盾。",
+            "en": "「見せて いました」 describes something ongoing in the past, which clashes with 「こんど」 (next time)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-p2",
+    "type": "short",
+    "difficulty": 2,
+    "intro": "マリアさんは びょういんで くすりを もらいました。これは くすりの ふくろに 入って いた かみです。",
+    "passage": "マリア・ロペスさん\n\nくすりの 飲みかた\n・あかい くすり：一日 三かい、ごはんを 食べた 後で 飲んで ください。\n・白い くすり：一日 一かい、ねる 前に 飲んで ください。\n\nくすりは 水で 飲んで ください。おちゃや ジュースで 飲まないで ください。\n\nさくら びょういん",
+    "kj": "マリア・ロペスさん\n\n薬の飲み方\n・赤い薬：一日三回、ご飯を食べた後で飲んでください。\n・白い薬：一日一回、寝る前に飲んでください。\n\n薬は水で飲んでください。お茶やジュースで飲まないでください。\n\nさくら病院",
+    "tr": {
+      "zh": "玛丽亚·洛佩斯女士\n\n服药方法\n・红色的药：一天三次，饭后服用。\n・白色的药：一天一次，睡前服用。\n\n请用水服药，不要用茶或果汁服用。\n\n樱花医院",
+      "en": "Ms. Maria Lopez\n\nHow to take your medicine\n- Red medicine: three times a day, after meals.\n- White medicine: once a day, before going to bed.\n\nPlease take your medicine with water, not with tea or juice.\n\nSakura Hospital"
+    },
+    "questions": [
+      {
+        "q": "マリアさんは 今 ばんごはんを 食べました。これから すぐ 何を しますか。",
+        "options": [
+          "あかい くすりだけ 水で 飲みます。",
+          "あかい くすりと 白い くすりを 飲みます。",
+          "白い くすりだけ 水で 飲みます。",
+          "あかい くすりだけ おちゃで 飲みます。"
+        ],
+        "okj": [
+          "赤い 薬だけ 水で 飲みます。",
+          "赤い 薬と 白い 薬を 飲みます。",
+          "白い 薬だけ 水で 飲みます。",
+          "赤い 薬だけ お茶で 飲みます。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「あかい くすり：一日 三かい、ごはんを 食べた 後で」；「白い くすり：一日 一かい、ねる 前に」；「くすりは 水で 飲んで ください」\n推理：刚吃完晚饭，要吃的是饭后吃的红色药；白色药要等睡前再吃。吃药要用水。\n容易错：晚饭和睡觉都在晚上，但白色药的时间是「ねる 前」，不是饭后。",
+          "en": "Evidence: 「あかい くすり：一日 三かい、ごはんを 食べた 後で」; 「白い くすり：一日 一かい、ねる 前に」; 「くすりは 水で 飲んで ください」\nReasoning: She has just eaten dinner, so it's time for the red medicine, taken after meals; the white one waits until bedtime. Medicine goes down with water.\nTrap: Dinner and bedtime are both in the evening, but the white medicine is for 「ねる 前」, not after a meal."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "白色的药要「ねる 前に」吃，刚吃完晚饭还不是睡前。",
+            "en": "The white medicine is taken 「ねる 前に」; just after dinner isn't bedtime yet."
+          },
+          {
+            "zh": "白色的药是睡前吃的；饭后要吃的是红色的药。",
+            "en": "The white medicine is for bedtime; after a meal it's the red one."
+          },
+          {
+            "zh": "纸上写着要用水吃药，「おちゃや ジュースで 飲まないで ください」。",
+            "en": "The note says to take it with water — 「おちゃや ジュースで 飲まないで ください」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-p3",
+    "type": "short",
+    "difficulty": 1,
+    "intro": "田中さんは アパートの となりの へやの キムさんから メモを もらいました。",
+    "passage": "田中さんへ\n\nあしたから 三日間、国へ かえります。すみませんが、その 間、わたしの へやの 花に 水を あげて ください。一日 一かいで いいです。\nへやの かぎは、今日の よる、田中さんの へやの ポストに 入れます。\n金曜日の よるに かえります。おみやげを 買って きますね。\n\nキム",
+    "kj": "田中さんへ\n\n明日から三日間、国へ帰ります。すみませんが、その間、私の部屋の花に水をあげてください。一日一回でいいです。\n部屋の鍵は、今日の夜、田中さんの部屋のポストに入れます。\n金曜日の夜に帰ります。お土産を買ってきますね。\n\nキム",
+    "tr": {
+      "zh": "田中先生：\n\n我明天起回国三天。不好意思，这期间请帮我给房间里的花浇水。一天浇一次就可以。\n房间的钥匙今晚我放进您房间的信箱里。\n我星期五晚上回来。我会带礼物回来的。\n\n金",
+      "en": "Mr. Tanaka,\n\nFrom tomorrow I'm going home to my country for three days. Sorry to ask, but while I'm away, could you please water the flowers in my room? Once a day is fine.\nI'll put my room key in your mailbox tonight.\nI'll be back on Friday night. I'll bring you a souvenir!\n\nKim"
+    },
+    "questions": [
+      {
+        "q": "田中さんは あしたから 何を しますか。",
+        "options": [
+          "キムさんの へやで、毎日 花に 水を あげます。",
+          "キムさんの へやで、一日 三かい 花に 水を あげます。",
+          "キムさんの へやの ポストに かぎを 入れます。",
+          "金曜日に キムさんと おみやげを 買いに 行きます。"
+        ],
+        "okj": [
+          "キムさんの 部屋で、毎日 花に 水を あげます。",
+          "キムさんの 部屋で、一日 三回 花に 水を あげます。",
+          "キムさんの 部屋の ポストに 鍵を 入れます。",
+          "金曜日に キムさんと お土産を 買いに 行きます。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「その 間、わたしの へやの 花に 水を あげて ください。一日 一かいで いいです。」\n推理：金不在的三天里，田中每天去金的房间给花浇一次水，就是“每天浇水”。\n容易错：「三日間」是三天，不是一天三次；放钥匙的是金，不是田中。",
+          "en": "Evidence: 「その 間、わたしの へやの 花に 水を あげて ください。一日 一かいで いいです。」\nReasoning: For the three days Kim is away, Tanaka waters the flowers in Kim's room once a day — that is, every day.\nTrap: 「三日間」 is three days, not three times a day; and it's Kim who puts the key in the mailbox, not Tanaka."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "便条说「一日 一かいで いいです」，一天一次就行；「三」是「三日間」，指三天。",
+            "en": "The note says 「一日 一かいで いいです」 — once a day; the 「三」 is 「三日間」, three days."
+          },
+          {
+            "zh": "放钥匙的是金，而且是放进田中的信箱，田中不用做这件事。",
+            "en": "Kim is the one putting the key in a mailbox — Tanaka's — so Tanaka doesn't do this."
+          },
+          {
+            "zh": "金说自己会买礼物带回来，没有说和田中一起去买。",
+            "en": "Kim says she'll bring back a souvenir herself; nothing about shopping with Tanaka."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-p4",
+    "type": "mid",
+    "difficulty": 2,
+    "intro": "これは 日本語学校の 学生の ノイさんが 書いた さくぶんです。",
+    "passage": "はじめての ゆき\n\nわたしの 国は 一年中 あついですから、ゆきが ふりません。日本へ 来る 前、テレビで ゆきを 見て、「いつか 見たいです」と おもって いました。\n一月の 金曜日の よる、まどの 外を 見ました。白い ゆきが ふって いました。わたしは すぐ 外へ 出ました。とても さむかったですが、きれいでした。となりの へやの マリさんと 一時間ぐらい 外で あそびました。\nつぎの 日は 土曜日でしたが、学校で テストが ありました。いつもは バスで 二十分ですが、その 日は 道に ゆきが たくさん あって、バスが 来ませんでした。わたしは 駅まで あるいて、電車で 学校へ 行きました。一時間 かかりました。\nテストの 後、先生に ゆきの 話を しました。先生は 「わたしは 北の ほうで 生まれました。子どもの ときから 毎年 ゆきを たくさん 見ましたから、ゆきは あまり すきじゃ ありません」と 言いました。でも、わたしは 来年も ゆきが 見たいです。",
+    "kj": "初めての雪\n\n私の国は一年中暑いですから、雪が降りません。日本へ来る前、テレビで雪を見て、「いつか見たいです」と思っていました。\n一月の金曜日の夜、窓の外を見ました。白い雪が降っていました。私はすぐ外へ出ました。とても寒かったですが、きれいでした。隣の部屋のマリさんと一時間ぐらい外で遊びました。\n次の日は土曜日でしたが、学校でテストがありました。いつもはバスで二十分ですが、その日は道に雪がたくさんあって、バスが来ませんでした。私は駅まで歩いて、電車で学校へ行きました。一時間かかりました。\nテストの後、先生に雪の話をしました。先生は「私は北の方で生まれました。子供の時から毎年雪をたくさん見ましたから、雪はあまり好きじゃありません」と言いました。でも、私は来年も雪が見たいです。",
+    "tr": {
+      "zh": "第一次看到雪\n\n我的国家一年到头都很热，所以不下雪。来日本之前，我在电视上看到雪，一直想“总有一天要亲眼看看”。\n一月的一个星期五晚上，我往窗外一看，正下着白白的雪。我马上跑到外面。虽然很冷，但是很美。我和隔壁房间的玛丽在外面玩了一个小时左右。\n第二天是星期六，可是学校有考试。平时坐公交车二十分钟，可那天路上积了很多雪，公交车没来。我走到车站，坐电车去了学校，花了一个小时。\n考完试，我跟老师讲了下雪的事。老师说：“我是在北方出生的。从小每年都看到很多雪，所以不太喜欢雪。”不过，我明年还想看雪。",
+      "en": "My first snow\n\nIt's hot all year round in my country, so it never snows. Before coming to Japan I saw snow on TV and kept thinking, \"I want to see it someday.\"\nOne Friday night in January I looked out of the window. White snow was falling. I went outside right away. It was very cold, but beautiful. I played outside for about an hour with Mari from the room next door.\nThe next day was a Saturday, but we had a test at school. Usually it's twenty minutes by bus, but that day there was a lot of snow on the roads and the bus didn't come. I walked to the station and went to school by train. It took an hour.\nAfter the test I told my teacher about the snow. She said, \"I was born up north. I've seen lots of snow every year since I was a child, so I don't really like it.\" But I want to see snow again next year."
+    },
+    "questions": [
+      {
+        "q": "ノイさんは 土曜日に どうやって 学校へ 行きましたか。",
+        "difficulty": 2,
+        "options": [
+          "駅まで あるいて 行って、電車に のりました。",
+          "いつもと おなじ バスに のって 行きました。",
+          "駅から 学校まで 一時間 あるきました。",
+          "マリさんと いっしょに 電車で 行きました。"
+        ],
+        "okj": [
+          "駅まで 歩いて 行って、電車に 乗りました。",
+          "いつもと 同じ バスに 乗って 行きました。",
+          "駅から 学校まで 一時間 歩きました。",
+          null
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「バスが 来ませんでした。わたしは 駅まで あるいて、電車で 学校へ 行きました。一時間 かかりました。」\n推理：公交车没来，所以先走到车站，再坐电车；「一時間」是整段路花的时间。\n容易错：「一時間」不是走路的时间，也不是从车站走到学校。",
+          "en": "Evidence: 「バスが 来ませんでした。わたしは 駅まで あるいて、電車で 学校へ 行きました。一時間 かかりました。」\nReasoning: The bus didn't come, so she walked to the station and then took the train; 「一時間」 is the whole trip.\nTrap: The hour isn't walking time, and she didn't walk from the station to school."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "那天「バスが 来ませんでした」，所以没能坐平时的公交车。",
+            "en": "That day 「バスが 来ませんでした」, so she couldn't take her usual bus."
+          },
+          {
+            "zh": "她是走到车站再坐电车；一小时是全程，不是从车站走到学校。",
+            "en": "She walked to the station and then rode the train; the hour is the whole trip, not a walk from the station."
+          },
+          {
+            "zh": "和玛丽一起的是前一天晚上在外面玩雪，去学校的事没有提到玛丽。",
+            "en": "Mari was with her the night before, playing in the snow; Mari isn't mentioned on the way to school."
+          }
+        ]
+      },
+      {
+        "q": "先生は どうして ゆきが あまり すきじゃ ありませんか。",
+        "difficulty": 2,
+        "options": [
+          "ゆきの 日は いつも バスが 来ないから",
+          "ゆきの 日に 学校で テストが あったから",
+          "ゆきの ふらない あつい 国で 生まれたから",
+          "毎年 ゆきを たくさん 見て いたから"
+        ],
+        "okj": [
+          "雪の 日は いつも バスが 来ないから",
+          "雪の 日に 学校で テストが あったから",
+          "雪の 降らない 暑い 国で 生まれたから",
+          "毎年 雪を たくさん 見て いたから"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：老师说「子どもの ときから 毎年 ゆきを たくさん 見ましたから、ゆきは あまり すきじゃ ありません」\n推理：「〜から」前面就是理由：从小每年都看到很多雪，看腻了。\n容易错：公交车不来、下雪天考试，都是诺伊自己的经历，不是老师说的理由。",
+          "en": "Evidence: The teacher says 「子どもの ときから 毎年 ゆきを たくさん 見ましたから、ゆきは あまり すきじゃ ありません」\nReasoning: What comes before 「〜から」 is the reason: she has seen lots of snow every year since childhood.\nTrap: The bus not coming and the test on a snowy day are Noi's experiences, not the teacher's reason."
+        },
+        "wrong": [
+          {
+            "zh": "公交车没来是诺伊考试那天的事，老师没有这样说。",
+            "en": "The bus not coming happened to Noi on test day; the teacher says nothing like that."
+          },
+          {
+            "zh": "下雪天考试的是诺伊，老师讨厌雪的理由是从小看得太多。",
+            "en": "It was Noi who had a test on a snowy day; the teacher's reason is having seen snow so often since childhood."
+          },
+          {
+            "zh": "在不下雪的热带国家出生的是诺伊；老师生在「北の ほう」。",
+            "en": "Noi is the one from a hot country without snow; the teacher was born 「北の ほう」, in the north."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-m2-p5",
+    "type": "info",
+    "difficulty": 3,
+    "intro": "ソさんは アパートを さがして います。ねこが いますから、ねこと いっしょに すむ ことが できる へやが いいです。駅まで あるいて 十五分までで、お金は 一か月 六万円までの へやが いいです。",
+    "passage": "アパートの あんない\n| へや | 駅まで | 一か月の お金 | ねこ・いぬ |\n| A | あるいて 8分 | 58,000円 | × |\n| B | あるいて 12分 | 63,000円 | ○ |\n| C | あるいて 25分 | 52,000円 | ○ |\n| D | あるいて 13分 | 59,000円 | ○ |\n・○の へやは、ねこや いぬと いっしょに すむ ことが できます。\n・へやを 見たい 人は、一日 前までに 電話して ください。",
+    "kj": "アパートの案内\n| 部屋 | 駅まで | 一か月のお金 | 猫・犬 |\n| A | 歩いて8分 | 58,000円 | × |\n| B | 歩いて12分 | 63,000円 | ○ |\n| C | 歩いて25分 | 52,000円 | ○ |\n| D | 歩いて13分 | 59,000円 | ○ |\n・○の部屋は、猫や犬と一緒に住むことができます。\n・部屋を見たい人は、一日前までに電話してください。",
+    "tr": {
+      "zh": "公寓介绍\n| 房间 | 到车站 | 每月费用 | 猫・狗 |\n| A | 步行8分钟 | 58,000日元 | × |\n| B | 步行12分钟 | 63,000日元 | ○ |\n| C | 步行25分钟 | 52,000日元 | ○ |\n| D | 步行13分钟 | 59,000日元 | ○ |\n・标○的房间可以和猫、狗一起住。\n・想看房的人，请至少提前一天打电话。",
+      "en": "Apartments for rent\n| Room | To the station | Per month | Cats/dogs |\n| A | 8 min walk | ¥58,000 | × |\n| B | 12 min walk | ¥63,000 | ○ |\n| C | 25 min walk | ¥52,000 | ○ |\n| D | 13 min walk | ¥59,000 | ○ |\n- In rooms marked ○ you may live with a cat or dog.\n- If you'd like to see a room, please call at least one day ahead."
+    },
+    "questions": [
+      {
+        "q": "ソさんに いちばん いい へやは どれですか。",
+        "options": [
+          "Dの へや",
+          "Aの へや",
+          "Bの へや",
+          "Cの へや"
+        ],
+        "okj": [
+          "Dの 部屋",
+          "Aの 部屋",
+          "Bの 部屋",
+          "Cの 部屋"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「ねこと いっしょに すむ ことが できる へや」「駅まで あるいて 十五分まで」「一か月 六万円まで」；表中D：「あるいて 13分」「59,000円」「○」\n推理：三个条件都要满足：能养猫（○）、走路15分钟以内、每月6万日元以内。只有D全部符合。\n容易错：A最近也便宜，但不能养猫；C最便宜，但走路要25分钟。",
+          "en": "Evidence: 「ねこと いっしょに すむ ことが できる へや」, 「駅まで あるいて 十五分まで」, 「一か月 六万円まで」; row D: 「あるいて 13分」, 「59,000円」, 「○」\nReasoning: All three conditions must hold: cats allowed (○), within a 15-minute walk, at most ¥60,000 a month. Only D meets all three.\nTrap: A is closest and cheap but doesn't allow cats; C is the cheapest but a 25-minute walk."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "A离车站近、价格也在6万以内，但是「×」，不能和猫一起住。",
+            "en": "A is close and under ¥60,000, but it's marked 「×」 — no cats."
+          },
+          {
+            "zh": "B能养猫、走路12分钟，但每月63,000日元，超过了6万。",
+            "en": "B allows cats and is a 12-minute walk, but ¥63,000 a month is over ¥60,000."
+          },
+          {
+            "zh": "C能养猫也最便宜，但到车站要走25分钟，超过了15分钟。",
+            "en": "C allows cats and is the cheapest, but it's a 25-minute walk, more than 15."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,602 @@
+[
+ {
+  "id": "n5-m2-ck-201",
+  "type": "point",
+  "scene": "女の 人と 男の 人が 話して います。",
+  "question": "男の 人は どうして 車を 買いませんか。",
+  "lines": [
+   [
+    "F",
+    "森さん、車を 買いますか。"
+   ],
+   [
+    "M",
+    "いいえ、買いません。ぼくの アパートには 車を おく ところが ありませんから。"
+   ],
+   [
+    "F",
+    "そうですか。車は 高いですからね。"
+   ],
+   [
+    "M",
+    "いいえ、お金は 少し ありますよ。"
+   ],
+   [
+    "F",
+    "森さんは うんてんが すきですか。"
+   ],
+   [
+    "M",
+    "ええ、大すきです。ですから、ほんとうは 車が ほしいです。"
+   ]
+  ],
+  "options": [
+   "車が 高いから",
+   "うんてんが すきじゃないから",
+   "車を おく ところが ないから",
+   "車が ほしくないから"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在说话。",
+    "question": "男人为什么不买车？",
+    "lines": [
+     "森，你买车吗？",
+     "不，不买。我住的公寓没有停车的地方。",
+     "这样啊。车很贵嘛。",
+     "不是，钱我还是有一点的。",
+     "森你喜欢开车吗？",
+     "嗯，非常喜欢。所以其实我很想要一辆车。"
+    ],
+    "options": [
+     "因为车贵",
+     "因为不喜欢开车",
+     "因为没有停车的地方",
+     "因为不想要车"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking.",
+    "question": "Why won't the man buy a car?",
+    "lines": [
+     "Mori-san, are you going to buy a car?",
+     "No, I'm not. There's nowhere to park a car at my apartment.",
+     "I see. Cars are expensive, after all.",
+     "No, I do have a bit of money.",
+     "Do you like driving, Mori-san?",
+     "Yes, I love it. So actually, I'd really like a car."
+    ],
+    "options": [
+     "Because cars are expensive",
+     "Because he doesn't like driving",
+     "Because there's nowhere to park",
+     "Because he doesn't want a car"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的一开始就说：「ぼくの アパートには 車を おく ところが ありませんから。」\n推理：「〜から」说的是不买车的理由。女的后来猜「車は 高いですからね」，男的回答「いいえ、お金は 少し あります」；他很喜欢开车，其实也很想要车。\n容易错：答案在对话开头，后面的话题都是干扰；把提到的事当成理由。",
+   "en": "Evidence: Right at the start the man says: 「ぼくの アパートには 車を おく ところが ありませんから。」\nReasoning: 「〜から」 gives his reason. Her later guess, 「車は 高いですからね」, gets 「いいえ、お金は 少し あります」; he loves driving and actually wants a car.\nTrap: the answer comes first and the rest is distraction; taking something mentioned for the reason."
+  },
+  "wrong": [
+   {
+    "zh": "女人猜是车贵，男人说自己有一点钱。",
+    "en": "She guesses cost; he says he has some money."
+   },
+   {
+    "zh": "他说自己非常喜欢开车。",
+    "en": "He says he loves driving."
+   },
+   null,
+   {
+    "zh": "他说「ほんとうは 車が ほしいです」，其实很想要车。",
+    "en": "He says 「ほんとうは 車が ほしいです」 — he actually wants one."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n5-m2-ck-202",
+  "type": "point",
+  "scene": "男の 人と 女の 人が なつやすみの 話を して います。",
+  "question": "女の 人は いつ 国へ かえりますか。",
+  "lines": [
+   [
+    "M",
+    "リーさん、なつやすみは 国へ かえりますか。"
+   ],
+   [
+    "F",
+    "はい。八月の はじめは ひこうきが とても 高いですから、八月の おわりに かえります。"
+   ],
+   [
+    "M",
+    "そうですか。日本へは いつ 来ますか。"
+   ],
+   [
+    "F",
+    "九月の はじめです。十日から 学校が ありますから。"
+   ],
+   [
+    "M",
+    "そうですか。ぼくは 九月の おわりに 国へ かえります。"
+   ]
+  ],
+  "options": [
+   "八月の はじめ",
+   "八月の おわり",
+   "九月の はじめ",
+   "九月の おわり"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在聊暑假的事。",
+    "question": "女人什么时候回国？",
+    "lines": [
+     "李同学，暑假回国吗？",
+     "回。八月上旬机票很贵，所以八月下旬回去。",
+     "这样啊。什么时候回日本？",
+     "九月上旬。十号开始上课。",
+     "这样啊。我九月下旬回国。"
+    ],
+    "options": [
+     "八月上旬",
+     "八月下旬",
+     "九月上旬",
+     "九月下旬"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking about the summer holidays.",
+    "question": "When will the woman go back to her country?",
+    "lines": [
+     "Li-san, are you going home for the summer holidays?",
+     "Yes. Flights are very expensive in early August, so I'm going at the end of August.",
+     "I see. When are you coming back to Japan?",
+     "Early September. School starts on the 10th.",
+     "I see. I'm going home at the end of September."
+    ],
+    "options": [
+     "Early August",
+     "Late August",
+     "Early September",
+     "Late September"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「八月の はじめは ひこうきが とても 高いですから、八月の おわりに かえります。」\n推理：八月上旬机票贵，所以选了八月下旬回国。九月上旬是她回日本的时间；九月下旬是男的回国的时间。\n容易错：回日本的时间和回国的时间搞混；别人的安排。",
+   "en": "Evidence: The woman says: 「八月の はじめは ひこうきが とても 高いですから、八月の おわりに かえります。」\nReasoning: Early August flights are expensive, so she goes home at the end of August. Early September is when she comes back to Japan; late September is when the man goes home.\nTrap: mixing up coming back with going home; someone else's plan."
+  },
+  "wrong": [
+   {
+    "zh": "八月上旬机票很贵，所以她不在那时回去。",
+    "en": "Flights are expensive in early August, so she doesn't go then."
+   },
+   null,
+   {
+    "zh": "九月上旬是她回日本的时间。",
+    "en": "Early September is when she comes back to Japan."
+   },
+   {
+    "zh": "九月下旬是男人回国的时间。",
+    "en": "Late September is when the man goes home."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n5-m2-ck-203",
+  "type": "point",
+  "scene": "女の 人と 男の 人が 話して います。",
+  "question": "男の 人は きのう デパートで 何を 買いましたか。",
+  "lines": [
+   [
+    "F",
+    "山下さん、きのうは 何を しましたか。"
+   ],
+   [
+    "M",
+    "デパートへ くつを 買いに 行きました。"
+   ],
+   [
+    "F",
+    "いい くつが ありましたか。"
+   ],
+   [
+    "M",
+    "いいえ、ほしい くつは ありませんでしたが、父に ネクタイを 買いました。"
+   ],
+   [
+    "F",
+    "いいですね。わたしも きのう デパートで かさを 買いましたよ。"
+   ],
+   [
+    "M",
+    "そうですか。ぼくは セーターも 見ましたが、セーターは 来月 買います。"
+   ]
+  ],
+  "options": [
+   "ネクタイ",
+   "くつ",
+   "セーター",
+   "かさ"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在说话。",
+    "question": "男人昨天在百货商店买了什么？",
+    "lines": [
+     "山下，昨天做什么了？",
+     "去百货商店买鞋了。",
+     "有好鞋吗？",
+     "没有，没有想要的鞋，不过给爸爸买了领带。",
+     "真好。我昨天也在百货商店买了伞哦。",
+     "是吗。我还看了毛衣，毛衣下个月再买。"
+    ],
+    "options": [
+     "领带",
+     "鞋",
+     "毛衣",
+     "伞"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking.",
+    "question": "What did the man buy at the department store yesterday?",
+    "lines": [
+     "Yamashita-san, what did you do yesterday?",
+     "I went to the department store to buy shoes.",
+     "Did they have any good shoes?",
+     "No, there weren't any shoes I wanted, but I bought a tie for my father.",
+     "Nice. I bought an umbrella at the department store yesterday too.",
+     "Really? I looked at sweaters too, but I'll buy one next month."
+    ],
+    "options": [
+     "A tie",
+     "Shoes",
+     "A sweater",
+     "An umbrella"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「ほしい くつは ありませんでしたが、父に ネクタイを 買いました。」\n推理：他本来去买鞋，但没有想要的；结果给爸爸买了领带。伞是女的买的；毛衣他只是看了，「来月 買います」。\n容易错：本来打算买的东西；别人买的；推到以后的。",
+   "en": "Evidence: The man says: 「ほしい くつは ありませんでしたが、父に ネクタイを 買いました。」\nReasoning: He went for shoes but found none he wanted, and bought his father a tie instead. The umbrella is what the woman bought; the sweater he only looked at — 「来月 買います」.\nTrap: what he meant to buy; what someone else bought; something put off till later."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "他本来想买鞋，可是没有想要的。",
+    "en": "He went for shoes but found none he wanted."
+   },
+   {
+    "zh": "毛衣他只是看了，下个月再买。",
+    "en": "He only looked at sweaters; he'll buy one next month."
+   },
+   {
+    "zh": "伞是女人买的。",
+    "en": "The umbrella is what the woman bought."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "later"
+  ]
+ },
+ {
+  "id": "n5-m2-ck-204",
+  "type": "point",
+  "scene": "あさ、駅で 男の 人と 女の 人が 話して います。",
+  "question": "女の 人は きのう 何時間 ねましたか。",
+  "lines": [
+   [
+    "M",
+    "おはよう ございます。げんきが ありませんね。"
+   ],
+   [
+    "F",
+    "ええ。きのうは 夜 おそくまで しごとを しました。二時に ねました。"
+   ],
+   [
+    "M",
+    "え、二時ですか。けさは 何時に おきましたか。"
+   ],
+   [
+    "F",
+    "六時です。七時の 電車に のりますから。"
+   ],
+   [
+    "M",
+    "たいへんですね。ぼくは きのう 七時間 ねましたよ。"
+   ]
+  ],
+  "options": [
+   "二時間",
+   "四時間",
+   "六時間",
+   "七時間"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "早上，车站里一个男人和一个女人在说话。",
+    "question": "女人昨天睡了几个小时？",
+    "lines": [
+     "早上好。你看起来没精神啊。",
+     "嗯。昨天工作到很晚。两点才睡。",
+     "诶，两点？今天早上几点起的？",
+     "六点。因为要坐七点的电车。",
+     "真辛苦啊。我昨天睡了七个小时哦。"
+    ],
+    "options": [
+     "两个小时",
+     "四个小时",
+     "六个小时",
+     "七个小时"
+    ]
+   },
+   "en": {
+    "scene": "In the morning at a station, a man and a woman are talking.",
+    "question": "How many hours did the woman sleep last night?",
+    "lines": [
+     "Good morning. You look tired.",
+     "Yes. I worked late last night. I went to bed at two.",
+     "What, two? What time did you get up this morning?",
+     "Six. I take the seven o'clock train.",
+     "That's tough. I slept seven hours last night."
+    ],
+    "options": [
+     "Two hours",
+     "Four hours",
+     "Six hours",
+     "Seven hours"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说「二時に ねました」，又说早上「六時です」起床。\n推理：从夜里两点睡到早上六点，一共四个小时。「二時」「六時」是时刻，不是小时数；七个小时是男的睡的时间。\n容易错：把时刻当成小时数；别人睡的时间。",
+   "en": "Evidence: The woman says 「二時に ねました」 and that she got up at 「六時です」.\nReasoning: From two at night to six in the morning is four hours. 「二時」 and 「六時」 are clock times, not durations; seven hours is how long the man slept.\nTrap: taking a clock time for a number of hours; the other person's sleep."
+  },
+  "wrong": [
+   {
+    "zh": "两点是她睡觉的时刻，不是睡了几个小时。",
+    "en": "Two is when she went to bed, not how long she slept."
+   },
+   null,
+   {
+    "zh": "六点是她起床的时刻。",
+    "en": "Six is when she got up."
+   },
+   {
+    "zh": "七个小时是男人睡的时间。",
+    "en": "Seven hours is how long the man slept."
+   }
+  ],
+  "traps": [
+   "number",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n5-m2-ck-205",
+  "type": "point",
+  "scene": "雨の 日、会社の 入口で 男の 人と 女の 人が 話して います。",
+  "question": "男の 人の かさは どれですか。",
+  "lines": [
+   [
+    "M",
+    "あれ、ぼくの かさが ありません。ここに おきましたが。"
+   ],
+   [
+    "F",
+    "どんな かさですか。"
+   ],
+   [
+    "M",
+    "長い かさです。"
+   ],
+   [
+    "F",
+    "長い かさは ここに 二つ ありますよ。この 花の えが ある かさですか。"
+   ],
+   [
+    "M",
+    "いいえ、それは ちがいます。ぼくのは えが 何も ありません。"
+   ],
+   [
+    "F",
+    "じゃあ、これですね。"
+   ],
+   [
+    "M",
+    "はい、それです。よかった。"
+   ]
+  ],
+  "options": [
+   "長い・花 ある",
+   "長い・花 ない",
+   "みじかい・花 ある",
+   "みじかい・花 ない"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A long closed umbrella with a straight handle, standing upright, covered with a pattern of small flowers.",
+   "Simple black-and-white line drawing, no text. A long closed umbrella with a straight handle, standing upright, completely plain with no pattern.",
+   "Simple black-and-white line drawing, no text. A short folded umbrella, closed, standing upright, covered with a pattern of small flowers.",
+   "Simple black-and-white line drawing, no text. A short folded umbrella, closed, standing upright, completely plain with no pattern."
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "下雨天，公司门口一个男人和一个女人在说话。",
+    "question": "男人的伞是哪一把？",
+    "lines": [
+     "咦，我的伞不见了。我放在这里的。",
+     "是什么样的伞？",
+     "长伞。",
+     "长伞这里有两把哦。是这把有花的图案的吗？",
+     "不，不是那把。我的什么图案都没有。",
+     "那就是这把吧。",
+     "对，就是那把。太好了。"
+    ],
+    "options": [
+     "长伞・有花",
+     "长伞・没有花",
+     "短伞・有花",
+     "短伞・没有花"
+    ]
+   },
+   "en": {
+    "scene": "On a rainy day at the entrance of an office, a man and a woman are talking.",
+    "question": "Which umbrella is the man's?",
+    "lines": [
+     "Huh, my umbrella's gone. I left it here.",
+     "What kind of umbrella is it?",
+     "A long one.",
+     "There are two long ones here. Is it this one with flowers on it?",
+     "No, that's not it. Mine has no pattern at all.",
+     "Then it's this one.",
+     "Yes, that's it. Thank goodness."
+    ],
+    "options": [
+     "Long, flowers",
+     "Long, plain",
+     "Short, flowers",
+     "Short, plain"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说「長い かさです」，又说「ぼくのは えが 何も ありません」。\n推理：要抓住两个特征：长伞，而且没有图案。女的先问那把有花的，男的说「それは ちがいます」。\n容易错：只对一半——只听了长短或只听了图案；被否定的那一把。",
+   "en": "Evidence: The man says 「長い かさです」 and 「ぼくのは えが 何も ありません」.\nReasoning: Two features: long, and no pattern. She first asks about the flowered one and he says 「それは ちがいます」.\nTrap: half right — catching only the length or only the pattern; the one he rejects."
+  },
+  "wrong": [
+   {
+    "zh": "有花的那把长伞男人说「ちがいます」。",
+    "en": "He says the long flowered one is 「ちがいます」 — not his."
+   },
+   null,
+   {
+    "zh": "他的伞是长伞，而且没有图案。",
+    "en": "His umbrella is long and has no pattern."
+   },
+   {
+    "zh": "没有图案对了，但他的伞是长伞。",
+    "en": "No pattern is right, but his umbrella is a long one."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n5-m2-ck-206",
+  "type": "point",
+  "scene": "会社で 女の 人と 男の 人が 話して います。",
+  "question": "男の 人の カップは どれですか。",
+  "lines": [
+   [
+    "F",
+    "林さん、この 大きい カップは 林さんのですか。"
+   ],
+   [
+    "M",
+    "いいえ、ぼくのは 小さいです。"
+   ],
+   [
+    "F",
+    "小さい カップは 二つ ありますよ。魚の えの カップと、ねこの えの カップ。"
+   ],
+   [
+    "M",
+    "ねこのは 山田さんのです。ぼくのは 魚の えの カップです。"
+   ],
+   [
+    "F",
+    "はい、どうぞ。"
+   ]
+  ],
+  "options": [
+   "大きい・魚",
+   "小さい・ねこ",
+   "大きい・ねこ",
+   "小さい・魚"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A large mug with a handle, with a simple fish drawn on its side.",
+   "Simple black-and-white line drawing, no text. A small mug with a handle, with a simple cat drawn on its side.",
+   "Simple black-and-white line drawing, no text. A large mug with a handle, with a simple cat drawn on its side.",
+   "Simple black-and-white line drawing, no text. A small mug with a handle, with a simple fish drawn on its side."
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个女人和一个男人在说话。",
+    "question": "男人的杯子是哪一个？",
+    "lines": [
+     "林，这个大杯子是你的吗？",
+     "不是，我的是小的。",
+     "小杯子有两个哦。画着鱼的杯子和画着猫的杯子。",
+     "画猫的是山田的。我的是画着鱼的杯子。",
+     "好，给你。"
+    ],
+    "options": [
+     "大的・鱼",
+     "小的・猫",
+     "大的・猫",
+     "小的・鱼"
+    ]
+   },
+   "en": {
+    "scene": "At an office, a woman and a man are talking.",
+    "question": "Which cup is the man's?",
+    "lines": [
+     "Hayashi-san, is this big cup yours?",
+     "No, mine is small.",
+     "There are two small cups. One with a fish on it and one with a cat.",
+     "The cat one is Yamada-san's. Mine is the one with the fish.",
+     "Here you are."
+    ],
+    "options": [
+     "Big, fish",
+     "Small, cat",
+     "Big, cat",
+     "Small, fish"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说「ぼくのは 小さいです」，又说「ぼくのは 魚の えの カップです」。\n推理：先排除大杯子，再从两个小杯子里选：画猫的是山田的，画鱼的是他的。所以是小的、画着鱼的。\n容易错：只对一半；把山田的杯子的特征安到他身上。",
+   "en": "Evidence: The man says 「ぼくのは 小さいです」 and 「ぼくのは 魚の えの カップです」.\nReasoning: The big cup is out; of the two small ones, the cat is Yamada's and the fish is his: small, with a fish.\nTrap: half right; giving him the features of Yamada's cup."
+  },
+  "wrong": [
+   {
+    "zh": "鱼对了，但他的杯子是小的。",
+    "en": "The fish is right, but his cup is small."
+   },
+   {
+    "zh": "画猫的小杯子是山田的。",
+    "en": "The small cat cup is Yamada's."
+   },
+   {
+    "zh": "他的杯子是小的，画猫的是山田的。",
+    "en": "His cup is small, and the cat one is Yamada's."
+   },
+   null
+  ],
+  "traps": [
+   "half-right",
+   "other-option-attribute"
+  ]
+ }
+]

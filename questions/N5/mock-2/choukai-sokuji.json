@@ -1,0 +1,349 @@
+[
+ {
+  "id": "n5-m2-ck-501",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "すみません、その しおを とって ください。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "ええ、とりました。",
+   "はい、どうぞ。",
+   "いいえ、とりません。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "不好意思，请把那个盐递给我。"
+    ],
+    "options": [
+     "嗯，拿了。",
+     "好，给你。",
+     "不，不拿。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Excuse me, could you pass me that salt?"
+    ],
+    "options": [
+     "Yes, I took it.",
+     "Sure, here you are.",
+     "No, I won't take it."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「その しおを とって ください。」\n推理：「とって ください」在这里是请对方把盐递过来，递东西时说「はい、どうぞ」。\n容易错：照搬「とる」——「とりました」时态不对，也不是递给她；「とりません」是拒绝，答非所问。",
+   "en": "Evidence: The woman says: 「その しおを とって ください。」\nReasoning: Here 「とって ください」 asks him to pass the salt, and handing something over goes with 「はい、どうぞ」.\nTrap: echoing 「とる」 — 「とりました」 has the wrong tense and doesn't hand it over; 「とりません」 is a refusal that misses the point."
+  },
+  "wrong": [
+   {
+    "zh": "照搬了「とる」，而且用过去式，没有把盐递给她。",
+    "en": "It echoes 「とる」 in the past tense and doesn't pass her the salt."
+   },
+   null,
+   {
+    "zh": "照搬「とる」，变成了“不拿”，这样拒绝很不自然。",
+    "en": "It echoes 「とる」 as \"I won't take it\" — an odd refusal, not a reply to her request."
+   }
+  ],
+  "traps": [
+   "intent",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n5-m2-ck-502",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "すみません、トイレは どこですか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "あの ドアの 右です。",
+   "はい、トイレです。",
+   "九時から あいて います。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "不好意思，洗手间在哪里？"
+    ],
+    "options": [
+     "在那扇门的右边。",
+     "是的，是洗手间。",
+     "九点开始开门。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Excuse me, where is the toilet?"
+    ],
+    "options": [
+     "To the right of that door.",
+     "Yes, it's the toilet.",
+     "It's open from nine."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的问：「トイレは どこですか。」\n推理：「どこ」问地点，要回答在哪里：「あの ドアの 右です」。\n容易错：照搬「トイレ」；回答时间，抓错了疑问词。",
+   "en": "Evidence: The man asks: 「トイレは どこですか。」\nReasoning: 「どこ」 asks for a place, so the reply says where: 「あの ドアの 右です」.\nTrap: echoing 「トイレ」; giving a time, which answers the wrong question word."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "照搬了「トイレ」，没有说在哪里。",
+    "en": "It repeats 「トイレ」 without saying where it is."
+   },
+   {
+    "zh": "回答的是时间，问的是「どこ」。",
+    "en": "It gives a time, but the question is 「どこ」."
+   }
+  ],
+  "traps": [
+   "question-word",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n5-m2-ck-503",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "山田さん、きょうは なにで 学校に 来ましたか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "八時半に 来ました。",
+   "友だちと 来ました。",
+   "バスで 来ました。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "山田，你今天是怎么来学校的？"
+    ],
+    "options": [
+     "八点半来的。",
+     "和朋友一起来的。",
+     "坐公交来的。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Yamada-san, how did you get to school today?"
+    ],
+    "options": [
+     "I came at 8:30.",
+     "I came with a friend.",
+     "I came by bus."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的问：「きょうは なにで 学校に 来ましたか。」\n推理：「なにで」问的是交通方式，回答「バスで 来ました」。\n容易错：抓错疑问词——几点来（いつ / 何時）、和谁来（だれと）都不是「なにで」的答案。",
+   "en": "Evidence: The woman asks: 「きょうは なにで 学校に 来ましたか。」\nReasoning: 「なにで」 asks how he travelled, so 「バスで 来ました」.\nTrap: the wrong question word — what time (何時) or who with (だれと) don't answer 「なにで」."
+  },
+  "wrong": [
+   {
+    "zh": "回答的是几点来，是「何時に」的答案。",
+    "en": "It gives the time — that answers 「何時に」."
+   },
+   {
+    "zh": "回答的是和谁来，是「だれと」的答案。",
+    "en": "It says who he came with — that answers 「だれと」."
+   },
+   null
+  ],
+  "traps": [
+   "question-word"
+  ]
+ },
+ {
+  "id": "n5-m2-ck-504",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "ごちそうさまでした。とても おいしかったです。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "いいえ、いただきます。",
+   "それは よかったです。",
+   "はい、おいしいです。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "我吃好了，谢谢款待。非常好吃。"
+    ],
+    "options": [
+     "不，我开动了。",
+     "那太好了。",
+     "是的，很好吃。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Thank you for the meal. It was delicious."
+    ],
+    "options": [
+     "No, let's eat.",
+     "I'm glad to hear that.",
+     "Yes, it's delicious."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「ごちそうさまでした。とても おいしかったです。」\n推理：客人吃完饭道谢、夸饭好吃，做饭的主人回答「それは よかったです」。\n容易错：时机不对——「いただきます」是吃饭前说的；「おいしいです」是吃的人说的，而且时态不对。",
+   "en": "Evidence: The man says: 「ごちそうさまでした。とても おいしかったです。」\nReasoning: The guest thanks her for the meal and praises it; the host replies 「それは よかったです」.\nTrap: wrong moment — 「いただきます」 comes before eating; 「おいしいです」 is the eater's line, in the wrong tense."
+  },
+  "wrong": [
+   {
+    "zh": "「いただきます」是吃饭前说的，饭已经吃完了。",
+    "en": "「いただきます」 is said before eating; the meal is over."
+   },
+   null,
+   {
+    "zh": "「おいしいです」是吃的人说的，而且饭已经吃完了。",
+    "en": "「おいしいです」 is what the eater says, and the meal is already finished."
+   }
+  ],
+  "traps": [
+   "timing",
+   "tense"
+  ]
+ },
+ {
+  "id": "n5-m2-ck-505",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "すみません、この 電車は 川口へ 行きますか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "はい、川口へ 行きました。",
+   "川口は 大きい 駅です。",
+   "いいえ、つぎの 電車ですよ。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "不好意思，这趟电车去川口吗？"
+    ],
+    "options": [
+     "是的，去了川口。",
+     "川口是个大车站。",
+     "不去，是下一趟电车哦。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Excuse me, does this train go to Kawaguchi?"
+    ],
+    "options": [
+     "Yes, I went to Kawaguchi.",
+     "Kawaguchi is a big station.",
+     "No, it's the next train."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的问：「この 電車は 川口へ 行きますか。」\n推理：她问这趟车去不去川口，回答「いいえ」，再告诉她要坐下一趟：「いいえ、つぎの 電車ですよ」。\n容易错：照搬「川口」——「行きました」时态不对；「大きい 駅です」答非所问。",
+   "en": "Evidence: The woman asks: 「この 電車は 川口へ 行きますか。」\nReasoning: She asks whether this train goes there; he says no and tells her it's the next one: 「いいえ、つぎの 電車ですよ」.\nTrap: echoing 「川口」 — 「行きました」 has the wrong tense; 「大きい 駅です」 doesn't answer the question."
+  },
+  "wrong": [
+   {
+    "zh": "照搬「川口」，用了过去式，说的是自己去过。",
+    "en": "It echoes 「川口」 in the past tense, as if he had gone there."
+   },
+   {
+    "zh": "照搬「川口」，说车站大小，没有回答去不去。",
+    "en": "It echoes 「川口」 and describes the station instead of answering."
+   },
+   null
+  ],
+  "traps": [
+   "repeat-word",
+   "tense"
+  ]
+ },
+ {
+  "id": "n5-m2-ck-506",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "きょうは さむいですね。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "ええ、ほんとうに。",
+   "いいえ、さむかったです。",
+   "はい、あたたかいです。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "今天好冷啊。"
+    ],
+    "options": [
+     "是啊，真的。",
+     "不，以前很冷。",
+     "是的，很暖和。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "It's cold today, isn't it?"
+    ],
+    "options": [
+     "Yes, it really is.",
+     "No, it was cold.",
+     "Yes, it's warm."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「きょうは さむいですね。」\n推理：「〜ですね」是在寻求同感，同意就说「ええ、ほんとうに」。\n容易错：时态不对——「さむかったです」是过去；「はい」后面却说「あたたかい」，前后矛盾。",
+   "en": "Evidence: The man says: 「きょうは さむいですね。」\nReasoning: 「〜ですね」 invites agreement, and agreeing is 「ええ、ほんとうに」.\nTrap: wrong tense — 「さむかったです」 is past; 「はい」 followed by 「あたたかい」 contradicts itself."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "说的是过去，而且「いいえ」后面又说冷，前后不通。",
+    "en": "It's in the past, and 「いいえ」 followed by \"cold\" doesn't make sense."
+   },
+   {
+    "zh": "「はい」表示同意，后面却说暖和，前后矛盾。",
+    "en": "「はい」 agrees, then says it's warm — a contradiction."
+   }
+  ],
+  "traps": [
+   "tense",
+   "contradiction"
+  ]
+ }
+]
