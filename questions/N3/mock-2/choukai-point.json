@@ -1,0 +1,668 @@
+[
+ {
+  "id": "n3-m2-ck-201",
+  "type": "point",
+  "scene": "女の人と男の人が話しています。",
+  "question": "男の人が髪を短くした一番の理由は何ですか。",
+  "lines": [
+   [
+    "F",
+    "あれ、髪、ずいぶん短くしたね。"
+   ],
+   [
+    "M",
+    "うん、思い切って切ったんだ。"
+   ],
+   [
+    "F",
+    "似合ってるよ。最近、暑いもんね。"
+   ],
+   [
+    "M",
+    "まあ、それもあるけどね。先月から、仕事のあと、週に三回プールに通ってるんだよ。"
+   ],
+   [
+    "F",
+    "へえ、水泳始めたんだ。"
+   ],
+   [
+    "M",
+    "うん。で、髪が長いと、泳いだあと、乾かすのに時間がかかって、家に帰るのが遅くなっちゃうんだよね。それがいやで。美容院の人には、前の長さのほうが似合うって言われたんだけど。"
+   ],
+   [
+    "F",
+    "そうなんだ。"
+   ]
+  ],
+  "options": [
+   "髪を乾かすのに時間がかかるから",
+   "暑くなってきたから",
+   "美容院の人にすすめられたから",
+   "泳ぐときにじゃまになるから"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在说话。",
+    "question": "男人把头发剪短的最主要原因是什么？",
+    "lines": [
+     "咦，头发剪得好短啊。",
+     "嗯，狠下心剪了。",
+     "挺适合你的。最近很热嘛。",
+     "嗯，也有这个原因吧。我从上个月开始，下班后每周去三次游泳池。",
+     "哇，开始游泳了啊。",
+     "嗯。然后头发长的话，游完泳吹干要花很长时间，回家就晚了。我不喜欢那样。虽然理发店的人说以前的长度更适合我。",
+     "这样啊。"
+    ],
+    "options": [
+     "因为吹干头发很花时间",
+     "因为天气热起来了",
+     "因为理发店的人推荐",
+     "因为游泳时碍事"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking.",
+    "question": "What is the main reason the man cut his hair short?",
+    "lines": [
+     "Oh, you've cut your hair really short.",
+     "Yeah, I went for it.",
+     "It suits you. It's been hot lately, hasn't it?",
+     "Well, that's part of it. Since last month I've been going to the pool three times a week after work.",
+     "Oh, you've taken up swimming.",
+     "Yeah. And with long hair, it takes ages to dry after swimming, so I get home late. I didn't like that. The hairdresser said the old length suited me better, though.",
+     "I see."
+    ],
+    "options": [
+     "Drying his hair took a long time",
+     "It's got hot",
+     "The hairdresser recommended it",
+     "It got in the way when swimming"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「髪が長いと、泳いだあと、乾かすのに時間がかかって、家に帰るのが遅くなっちゃうんだよね。それがいやで。」\n推理：女的说热，男的只说「それもある」，不是主要原因；他接着讲开始游泳，「それがいやで」指游完吹干费时间、回家晚。\n容易错：「それもある」只是附带的原因；麻烦是在「泳いだあと」，不是游泳的时候。",
+   "en": "Evidence: The man says: 「髪が長いと、泳いだあと、乾かすのに時間がかかって、家に帰るのが遅くなっちゃうんだよね。それがいやで。」\nReasoning: To her guess about the heat he only says 「それもある」 — a side reason. He goes on to swimming, and 「それがいやで」 points to the long drying time after swimming.\nTrap: 「それもある」 is only a minor reason; the problem is 「泳いだあと」, not while swimming."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "男的只说「それもあるけど」，热不是最主要的原因。",
+    "en": "He only says 「それもあるけど」 — heat isn't the main reason."
+   },
+   {
+    "zh": "理发店的人反而说「前の長さのほうが似合う」。",
+    "en": "The hairdresser actually said 「前の長さのほうが似合う」."
+   },
+   {
+    "zh": "他说的麻烦是「泳いだあと」吹干费时间，不是游泳时碍事。",
+    "en": "His problem is drying 「泳いだあと」, not hair getting in the way while swimming."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n3-m2-ck-202",
+  "type": "point",
+  "scene": "男の人と女の人が話しています。",
+  "question": "女の人は日曜日に何をすることになりましたか。",
+  "lines": [
+   [
+    "M",
+    "日曜日、友だちと山に登るって言ってたよね。天気、大丈夫そう？"
+   ],
+   [
+    "F",
+    "それが、雨になりそうだから、やめることにしたの。"
+   ],
+   [
+    "M",
+    "そうか、残念だね。じゃあ、家でゆっくりするの？"
+   ],
+   [
+    "F",
+    "ううん。友だちが代わりに美術館に行こうって言ってくれたんだけど、そのあとで姉から電話があって。"
+   ],
+   [
+    "M",
+    "お姉さん？"
+   ],
+   [
+    "F",
+    "うん。日曜日に急に仕事が入っちゃったから、子どもを見ててくれないかって。まだ三歳だから、一人にはできないでしょう。"
+   ],
+   [
+    "M",
+    "じゃあ、美術館は？"
+   ],
+   [
+    "F",
+    "来週にしてもらった。ゆっくりするのは、またそのうちね。"
+   ]
+  ],
+  "options": [
+   "友だちと山に登る",
+   "友だちと美術館に行く",
+   "姉の子どもを見る",
+   "家でゆっくり休む"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "女人星期天要做什么？",
+    "lines": [
+     "你说星期天要和朋友去爬山对吧。天气没问题吗？",
+     "这个嘛，好像要下雨，所以决定不去了。",
+     "是吗，真可惜。那在家好好休息？",
+     "不是。朋友说那改去美术馆吧，可之后我姐姐打来电话。",
+     "你姐姐？",
+     "嗯。她星期天突然要上班，问我能不能帮她看孩子。才三岁，不能一个人待着嘛。",
+     "那美术馆呢？",
+     "改到下周了。好好休息就等以后吧。"
+    ],
+    "options": [
+     "和朋友爬山",
+     "和朋友去美术馆",
+     "照看姐姐的孩子",
+     "在家好好休息"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "What has the woman ended up doing on Sunday?",
+    "lines": [
+     "You said you're climbing a mountain with friends on Sunday. Is the weather going to be OK?",
+     "Actually, it looks like rain, so we've decided not to go.",
+     "That's a shame. So you'll take it easy at home?",
+     "No. My friend suggested going to an art museum instead, but after that my sister called.",
+     "Your sister?",
+     "Yes. She suddenly has to work on Sunday, so she asked if I could look after her child. She's only three, so she can't be left alone.",
+     "So what about the museum?",
+     "We've moved it to next week. Taking it easy will have to wait."
+    ],
+    "options": [
+     "Climb a mountain with friends",
+     "Go to an art museum with a friend",
+     "Look after her sister's child",
+     "Rest at home"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说姐姐问「子どもを見ててくれないか」，「まだ三歳だから、一人にはできない」；美术馆「来週にしてもらった」。\n推理：爬山因为下雨「やめることにした」；朋友提议的美术馆改到下周；在家休息她说「またそのうち」。星期天剩下的是帮姐姐看孩子。\n容易错：中途提出的新计划（美术馆）后来又被推到下周。",
+   "en": "Evidence: Her sister asked 「子どもを見ててくれないか」, and the child is 「まだ三歳だから、一人にはできない」; the museum was 「来週にしてもらった」.\nReasoning: The climb was called off for rain; the museum, suggested instead, moved to next week; resting is 「またそのうち」. Sunday is for looking after her sister's child.\nTrap: the replacement plan (the museum), which was itself pushed back."
+  },
+  "wrong": [
+   {
+    "zh": "下雨，爬山「やめることにした」。",
+    "en": "The climb was 「やめることにした」 because of rain."
+   },
+   {
+    "zh": "美术馆「来週にしてもらった」，改到下周了。",
+    "en": "The museum was 「来週にしてもらった」 — moved to next week."
+   },
+   null,
+   {
+    "zh": "休息她说「またそのうち」，星期天没时间。",
+    "en": "Resting is 「またそのうち」 — no time on Sunday."
+   }
+  ],
+  "traps": [
+   "later",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n3-m2-ck-203",
+  "type": "point",
+  "scene": "大学で女の学生と男の学生が話しています。",
+  "question": "男の学生はどうしてゼミの発表の日を変えてもらいましたか。",
+  "lines": [
+   [
+    "F",
+    "田中くん、ゼミの発表、来週から再来週に変わったんだって？"
+   ],
+   [
+    "M",
+    "うん、先生にお願いして、変えてもらったんだ。来週の木曜日、ちょうど行きたい会社の説明会があって。"
+   ],
+   [
+    "F",
+    "ああ、就職の。"
+   ],
+   [
+    "M",
+    "そう。その会社の説明会、今年はその日の一回しかないんだよ。木曜日はアルバイトも入ってたんだけど、そっちは友だちに代わってもらえたからよかったんだけど。"
+   ],
+   [
+    "F",
+    "発表の準備は大丈夫なの？"
+   ],
+   [
+    "M",
+    "うん、もうほとんどできてる。先生も、再来週なら時間が取れるって言ってくださって、助かったよ。"
+   ]
+  ],
+  "options": [
+   "アルバイトがあるから",
+   "会社の説明会に出るから",
+   "準備が間に合わないから",
+   "先生の都合が悪いから"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "大学里一个女学生和一个男学生在说话。",
+    "question": "男学生为什么请老师改了研讨课发表的日期？",
+    "lines": [
+     "田中，听说你研讨课的发表从下周改到下下周了？",
+     "嗯，我拜托老师改的。下周四正好有我想去的公司的说明会。",
+     "啊，找工作的。",
+     "对。那家公司的说明会今年只有那一天一次。星期四我本来也有打工，不过那个找朋友替我了，还好。",
+     "发表的准备没问题吗？",
+     "嗯，差不多都准备好了。老师也说下下周可以抽出时间，帮了大忙。"
+    ],
+    "options": [
+     "因为要打工",
+     "因为要参加公司的说明会",
+     "因为准备来不及",
+     "因为老师不方便"
+    ]
+   },
+   "en": {
+    "scene": "At a university, a female student and a male student are talking.",
+    "question": "Why did the male student have his seminar presentation date changed?",
+    "lines": [
+     "Tanaka, I hear your seminar presentation has moved from next week to the week after?",
+     "Yeah, I asked the professor to change it. Next Thursday there's an information session at a company I want to join.",
+     "Ah, for job hunting.",
+     "Right. That company's only holding one session this year, on that day. I also had a part-time shift on Thursday, but luckily a friend took it for me.",
+     "Is your preparation going OK?",
+     "Yeah, it's almost done. The professor said she can make time the week after, which was a big help."
+    ],
+    "options": [
+     "He has a part-time shift",
+     "He's going to a company information session",
+     "His preparation won't be ready",
+     "The professor isn't free"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「来週の木曜日、ちょうど行きたい会社の説明会があって。」「今年はその日の一回しかない」。\n推理：打工已经「友だちに代わってもらえた」，不是原因；准备「もうほとんどできてる」；老师说的是「再来週なら時間が取れる」，是改到哪天，不是改日期的原因。\n容易错：提到了但已经解决的事；老师的话是新日期的条件。",
+   "en": "Evidence: He says: 「来週の木曜日、ちょうど行きたい会社の説明会があって。」 and 「今年はその日の一回しかない」.\nReasoning: The part-time shift was covered by a friend; the preparation is 「もうほとんどできてる」; the professor's 「再来週なら時間が取れる」 is about the new date, not the reason for changing.\nTrap: a problem mentioned but already solved; the professor's line is about when, not why."
+  },
+  "wrong": [
+   {
+    "zh": "打工「友だちに代わってもらえた」，已经解决了。",
+    "en": "The shift was 「友だちに代わってもらえた」 — already solved."
+   },
+   null,
+   {
+    "zh": "他说准备「もうほとんどできてる」。",
+    "en": "He says the preparation is 「もうほとんどできてる」."
+   },
+   {
+    "zh": "老师没说不方便，只说「再来週なら時間が取れる」。",
+    "en": "The professor never said she was busy, only 「再来週なら時間が取れる」."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "done-already"
+  ]
+ },
+ {
+  "id": "n3-m2-ck-204",
+  "type": "point",
+  "scene": "会社で男の人と女の人が、出張について話しています。",
+  "question": "女の人は、出張で何が一番よかったと言っていますか。",
+  "lines": [
+   [
+    "M",
+    "福岡の出張、お疲れさま。どうだった？"
+   ],
+   [
+    "F",
+    "ありがとうございます。いろいろ勉強になりました。"
+   ],
+   [
+    "M",
+    "向こうの新しい工場も見てきたんでしょう？"
+   ],
+   [
+    "F",
+    "それが、ちょうど機械の工事をしている日で、中には入れなかったんです。"
+   ],
+   [
+    "M",
+    "そうか、それは残念だったね。ホテルは海の近くだったんだよね。"
+   ],
+   [
+    "F",
+    "ええ。でも、夜遅く着いて朝早く出たので、海はほとんど見ていないんです。"
+   ],
+   [
+    "M",
+    "ラーメンは食べた？"
+   ],
+   [
+    "F",
+    "はい、もちろん。おいしかったです。でも、一番よかったのは、うちの商品を売ってくれているお店を回れたことですね。箱が開けにくいとか、お客さんの声を、お店の人から直接聞けて。会議の資料だけじゃ分からないことばかりでした。"
+   ],
+   [
+    "M",
+    "それはいい経験だったね。"
+   ]
+  ],
+  "options": [
+   "ラーメンがおいしかったこと",
+   "新しい工場を見学できたこと",
+   "ホテルから海が見えたこと",
+   "店の人の話を直接聞けたこと"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个男人和一个女人在聊出差的事。",
+    "question": "女人说出差中最好的是什么？",
+    "lines": [
+     "去福冈出差辛苦了。怎么样？",
+     "谢谢。学到了很多。",
+     "那边的新工厂也去看了吧？",
+     "这个嘛，正好赶上机器施工的日子，没能进去。",
+     "是吗，那太可惜了。酒店是在海边吧。",
+     "是的。不过晚上很晚才到，一大早就走了，海几乎没看到。",
+     "吃拉面了吗？",
+     "当然吃了。很好吃。不过，最好的是能去跑了几家在卖我们公司商品的店。像盒子不好打开之类的顾客的意见，能直接从店员那里听到。都是光看会议资料不知道的事。",
+     "那是很好的经验啊。"
+    ],
+    "options": [
+     "拉面很好吃",
+     "参观了新工厂",
+     "从酒店能看到海",
+     "直接听到了店员的话"
+    ]
+   },
+   "en": {
+    "scene": "At work, a man and a woman are talking about a business trip.",
+    "question": "What does the woman say was the best thing about the trip?",
+    "lines": [
+     "Thanks for going to Fukuoka. How was it?",
+     "Thank you. I learned a lot.",
+     "You saw the new factory there too, right?",
+     "Actually, it was a day when they were doing work on the machines, so I couldn't go inside.",
+     "That's a shame. Your hotel was near the sea, wasn't it?",
+     "Yes. But I arrived late at night and left early in the morning, so I hardly saw the sea.",
+     "Did you have ramen?",
+     "Of course. It was delicious. But the best part was getting round the shops that sell our products. I heard customers' comments — like the boxes being hard to open — straight from the shop staff. It was all things you can't tell from meeting documents.",
+     "That was a good experience."
+    ],
+    "options": [
+     "The ramen was delicious",
+     "She toured the new factory",
+     "She could see the sea from the hotel",
+     "She heard the shop staff directly"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「一番よかったのは、うちの商品を売ってくれているお店を回れたことですね。」「お客さんの声を、お店の人から直接聞けて」。\n推理：工厂「中には入れなかった」；海「ほとんど見ていない」；拉面虽然「おいしかった」，但后面用「でも、一番よかったのは」引出真正的答案。\n容易错：拉面是真的好吃，但不是「一番」。",
+   "en": "Evidence: She says: 「一番よかったのは、うちの商品を売ってくれているお店を回れたことですね。」 and 「お客さんの声を、お店の人から直接聞けて」.\nReasoning: She 「中には入れなかった」 at the factory; she 「ほとんど見ていない」 the sea; the ramen was 「おいしかった」, but 「でも、一番よかったのは」 introduces the real answer.\nTrap: the ramen really was good — just not the best thing."
+  },
+  "wrong": [
+   {
+    "zh": "拉面「おいしかった」，但她说「一番よかった」的是去店里。",
+    "en": "The ramen was 「おいしかった」, but the best thing was visiting the shops."
+   },
+   {
+    "zh": "工厂「中には入れなかった」，没能参观。",
+    "en": "She 「中には入れなかった」 — no factory tour."
+   },
+   {
+    "zh": "她说「海はほとんど見ていない」。",
+    "en": "She says 「海はほとんど見ていない」."
+   },
+   null
+  ],
+  "traps": [
+   "half-right",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n3-m2-ck-205",
+  "type": "point",
+  "scene": "女の人と男の人が話しています。",
+  "question": "男の人がカメラを買うのをやめた一番の理由は何ですか。",
+  "lines": [
+   [
+    "F",
+    "新しいカメラ、もう買ったの？ずっと欲しいって言ってたよね。"
+   ],
+   [
+    "M",
+    "それが、やめたんだ。お金はボーナスで何とかなったんだけどね。"
+   ],
+   [
+    "F",
+    "え、どうして？"
+   ],
+   [
+    "M",
+    "この前、京都に行ったとき、兄のカメラを借りて持っていったんだよ。確かに重かったけど、それはまあ、慣れれば平気だと思った。"
+   ],
+   [
+    "F",
+    "うん。"
+   ],
+   [
+    "M",
+    "でも、帰ってから写真を見比べたら、一緒に行った友だちがスマホで撮った写真と、ほとんど変わらなかったんだよね。スマホならすぐ送れるし。それなら、わざわざカメラを持ち歩かなくてもいいかなって。"
+   ],
+   [
+    "F",
+    "なるほどね。欲しかった色がないって言ってなかった？"
+   ],
+   [
+    "M",
+    "ああ、黒しかなかったけど、色はどうでもいいんだ。"
+   ]
+  ],
+  "options": [
+   "スマホの写真で十分だと分かったから",
+   "お金が足りなかったから",
+   "カメラが重くて持ち歩けないから",
+   "欲しい色がなかったから"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在说话。",
+    "question": "男人不买相机的最主要原因是什么？",
+    "lines": [
+     "新相机已经买了吗？你一直说想要的。",
+     "这个嘛，不买了。钱靠奖金倒是够的。",
+     "诶，为什么？",
+     "前几天去京都的时候，我借了我哥的相机带去。确实很重，不过我觉得习惯了也就没事了。",
+     "嗯。",
+     "可是回来以后把照片一比，和一起去的朋友用手机拍的几乎没差别。手机还能马上发给别人。那样的话，没必要特地带着相机到处走吧。",
+     "原来如此。你不是还说没有想要的颜色吗？",
+     "啊，只有黑色，不过颜色无所谓。"
+    ],
+    "options": [
+     "因为发现手机拍的照片就够了",
+     "因为钱不够",
+     "因为相机太重，没法带着走",
+     "因为没有想要的颜色"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking.",
+    "question": "What is the main reason the man decided not to buy a camera?",
+    "lines": [
+     "Have you bought the new camera yet? You've been wanting one for ages.",
+     "Actually, I gave up on it. My bonus would have covered it, though.",
+     "Huh? Why?",
+     "When I went to Kyoto the other day, I borrowed my brother's camera and took it. It was heavy, sure, but I thought I'd get used to that.",
+     "Mm.",
+     "But when I compared the photos after I got back, they were hardly any different from the ones my friend took on his phone. And with a phone you can send them right away. So I thought, why bother carrying a camera around?",
+     "I see. Didn't you say the colour you wanted wasn't available?",
+     "Oh, there was only black, but I don't care about the colour."
+    ],
+    "options": [
+     "He found phone photos were good enough",
+     "He didn't have enough money",
+     "The camera was too heavy to carry around",
+     "The colour he wanted wasn't available"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「帰ってから写真を見比べたら、一緒に行った友だちがスマホで撮った写真と、ほとんど変わらなかったんだよね。」「それなら、わざわざカメラを持ち歩かなくてもいいかなって」。\n推理：钱「ボーナスで何とかなった」；重他觉得「慣れれば平気」；颜色「どうでもいい」。决定性的是发现手机拍得几乎一样。\n容易错：重这一点他承认了，但说能习惯；颜色是女的提起的，他自己不在乎。",
+   "en": "Evidence: He says: 「帰ってから写真を見比べたら、一緒に行った友だちがスマホで撮った写真と、ほとんど変わらなかったんだよね。」 and 「それなら、わざわざカメラを持ち歩かなくてもいいかなって」.\nReasoning: Money: 「ボーナスで何とかなった」. Weight: 「慣れれば平気」. Colour: 「どうでもいい」. What decided it was seeing that phone photos were nearly the same.\nTrap: he admits the weight but says he'd get used to it; the colour is her idea, and he doesn't care."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "他说钱「ボーナスで何とかなった」。",
+    "en": "He says the money 「ボーナスで何とかなった」."
+   },
+   {
+    "zh": "相机确实重，但他说「慣れれば平気だと思った」。",
+    "en": "It was heavy, but he says 「慣れれば平気だと思った」."
+   },
+   {
+    "zh": "他说「色はどうでもいい」。",
+    "en": "He says 「色はどうでもいい」."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n3-m2-ck-206",
+  "type": "point",
+  "scene": "会社で女の人と男の人が話しています。",
+  "question": "二人はどこで昼ごはんを食べますか。",
+  "lines": [
+   [
+    "F",
+    "山本さん、お昼、一緒に行きませんか。"
+   ],
+   [
+    "M",
+    "いいですね。駅前のそば屋はどうですか。"
+   ],
+   [
+    "F",
+    "あそこ、月曜日は休みなんですよ。"
+   ],
+   [
+    "M",
+    "あ、そうか。じゃあ、となりのビルのカレー屋さんは？"
+   ],
+   [
+    "F",
+    "いいですけど、あそこはいつも並びますよね。一時から会議だから、ちょっと心配です。"
+   ],
+   [
+    "M",
+    "じゃあ、社員食堂にしましょうか。"
+   ],
+   [
+    "F",
+    "食堂は今週、工事で閉まってるって、メールが来てましたよ。"
+   ],
+   [
+    "M",
+    "そうでした。じゃあ、コンビニで何か買って、前の公園で食べませんか。今日は天気もいいし。"
+   ],
+   [
+    "F",
+    "いいですね。そうしましょう。"
+   ]
+  ],
+  "options": [
+   "駅前のそば屋",
+   "となりのビルのカレー屋",
+   "会社の前の公園",
+   "会社の食堂"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "公司里一个女人和一个男人在说话。",
+    "question": "两个人在哪里吃午饭？",
+    "lines": [
+     "山本，一起去吃午饭吗？",
+     "好啊。车站前的荞麦面馆怎么样？",
+     "那家星期一休息。",
+     "啊，对。那隔壁楼的咖喱店呢？",
+     "可以是可以，不过那里总是要排队吧。一点开始开会，有点担心。",
+     "那就去员工食堂吧。",
+     "邮件里说食堂这周因为施工关门了。",
+     "对哦。那在便利店买点东西，在前面的公园吃怎么样？今天天气也好。",
+     "好啊，就这么办。"
+    ],
+    "options": [
+     "车站前的荞麦面馆",
+     "隔壁楼的咖喱店",
+     "公司前面的公园",
+     "公司的食堂"
+    ]
+   },
+   "en": {
+    "scene": "At work, a woman and a man are talking.",
+    "question": "Where will the two of them have lunch?",
+    "lines": [
+     "Yamamoto-san, shall we go to lunch together?",
+     "Sure. How about the soba place in front of the station?",
+     "That place is closed on Mondays.",
+     "Oh, right. Then the curry place in the next building?",
+     "That's fine, but there's always a queue there. We have a meeting from one, so I'm a bit worried.",
+     "Then shall we use the staff canteen?",
+     "There was an email saying the canteen's closed this week for building work.",
+     "So there was. Then shall we buy something at the convenience store and eat in the park out front? The weather's nice today.",
+     "Good idea. Let's do that."
+    ],
+    "options": [
+     "The soba place by the station",
+     "The curry place in the next building",
+     "The park in front of the office",
+     "The office canteen"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「コンビニで何か買って、前の公園で食べませんか。」女的答「いいですね。そうしましょう」。\n推理：荞麦面馆「月曜日は休み」；咖喱店「いつも並びます」，一点要开会怕来不及；食堂「今週、工事で閉まってる」。最后两人都同意去公园。\n容易错：咖喱店女的说了「いいですけど」，但接着担心排队，没有决定。",
+   "en": "Evidence: He says: 「コンビニで何か買って、前の公園で食べませんか。」, and she answers 「いいですね。そうしましょう」.\nReasoning: The soba place is 「月曜日は休み」; the curry place 「いつも並びます」 and they have a meeting at one; the canteen is 「今週、工事で閉まってる」. They settle on the park.\nTrap: she says 「いいですけど」 to the curry place, but goes on to worry about the queue — no decision."
+  },
+  "wrong": [
+   {
+    "zh": "荞麦面馆「月曜日は休み」。",
+    "en": "The soba place is 「月曜日は休み」."
+   },
+   {
+    "zh": "咖喱店「いつも並びます」，一点要开会，女的担心来不及。",
+    "en": "The curry place 「いつも並びます」, and there's a meeting at one."
+   },
+   null,
+   {
+    "zh": "食堂「今週、工事で閉まってる」。",
+    "en": "The canteen is 「今週、工事で閉まってる」."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "not-possible"
+  ]
+ }
+]

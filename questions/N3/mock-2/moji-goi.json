@@ -1,0 +1,1262 @@
+[
+  {
+    "id": "n3-m2-001",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "この寮には、夜十時までに帰るという<<規則>>がある。",
+    "options": [
+      "きそく",
+      "きぞく",
+      "きっそく",
+      "ぎそく"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这个宿舍有晚上十点前必须回来的规定。",
+      "en": "This dorm has a rule that you must be back by ten at night."
+    },
+    "why": {
+      "zh": "「規則」（规则、规定）读「きそく」：「規」读「き」，「則」读「そく」，都不浊化，中间也没有促音。",
+      "en": "「規則」 (rule) is きそく: 「規」 is き and 「則」 is そく, neither voiced, with no small っ between them."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「則」读清音「そく」，不读「ぞく」；「きぞく」是「貴族」。",
+        "en": "「則」 is unvoiced そく, not ぞく; きぞく is 「貴族」 (aristocrat)."
+      },
+      {
+        "zh": "「規則」中间没有促音。",
+        "en": "「規則」 has no small っ."
+      },
+      {
+        "zh": "「規」读清音「き」，不读「ぎ」。",
+        "en": "「規」 is unvoiced き, not ぎ."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-002",
+    "type": "kanji",
+    "difficulty": 3,
+    "stem": "試験の結果を聞いた姉は、うれしそうな<<表情>>をしていた。",
+    "options": [
+      "ひょうじょう",
+      "ひょじょう",
+      "ひょうしょう",
+      "ぴょうじょう"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "听到考试结果的姐姐，露出了高兴的表情。",
+      "en": "When my sister heard her exam result, she had a happy look on her face."
+    },
+    "why": {
+      "zh": "「表情」（表情）读「ひょうじょう」：「表」是长音「ひょう」，「情」在这里读浊音「じょう」（如「感情」「友情」）。",
+      "en": "「表情」 (facial expression) is ひょうじょう: 「表」 is ひょう with a long vowel, and 「情」 is voiced じょう here (as in 「感情」「友情」)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「表」是长音「ひょう」，不是短音「ひょ」。",
+        "en": "「表」 has a long vowel: ひょう, not ひょ."
+      },
+      {
+        "zh": "「情」在这里读「じょう」，不读清音「しょう」；「ひょうしょう」是「表彰」（表彰）。",
+        "en": "「情」 is じょう here, not unvoiced しょう; ひょうしょう is 「表彰」 (commendation)."
+      },
+      {
+        "zh": "「表」读「ひょう」，不变成半浊音「ぴょう」。",
+        "en": "「表」 is ひょう; it doesn't become ぴょう."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-003",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "雨の中を歩いたので、くつが<<汚れて>>しまった。",
+    "options": [
+      "よごれて",
+      "こぼれて",
+      "やぶれて",
+      "みだれて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "因为在雨里走了，鞋子弄脏了。",
+      "en": "I walked in the rain, so my shoes got dirty."
+    },
+    "why": {
+      "zh": "「汚れる」（变脏）读「よごれる」，「汚れて」读「よごれて」；他动词是「汚す」（よごす）。",
+      "en": "「汚れる」 (get dirty) is よごれる, so 「汚れて」 is よごれて; the transitive verb is 「汚す」 (よごす)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「こぼれる」写作「零れる」，是（液体）洒出来。",
+        "en": "こぼれる is 「零れる」, (liquid) spilling."
+      },
+      {
+        "zh": "「やぶれる」写作「破れる」，是（纸、布）破了。",
+        "en": "やぶれる is 「破れる」, (paper, cloth) tearing."
+      },
+      {
+        "zh": "「みだれる」写作「乱れる」，是乱了。",
+        "en": "みだれる is 「乱れる」, becoming disordered."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-004",
+    "type": "kanji",
+    "difficulty": 1,
+    "stem": "次の授業は別の教室なので、休み時間のあいだに<<移動>>しておこう。",
+    "options": [
+      "いどう",
+      "いど",
+      "いとう",
+      "えどう"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "下节课在别的教室，趁课间先过去吧。",
+      "en": "The next class is in another room, so let's move there during the break."
+    },
+    "why": {
+      "zh": "「移動」（移动、转移地点）读「いどう」：「移」读「い」，「動」读浊音长音「どう」（如「運動」）。",
+      "en": "「移動」 (moving from place to place) is いどう: 「移」 is い, and 「動」 is voiced, long どう (as in 「運動」)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「動」是长音「どう」，不能读成短音「ど」；「いど」是「井戸」（井）。",
+        "en": "「動」 has a long vowel, どう; いど is 「井戸」 (a well)."
+      },
+      {
+        "zh": "「動」读浊音「どう」，不读「とう」。",
+        "en": "「動」 is voiced どう, not とう."
+      },
+      {
+        "zh": "「移」读「い」，不读「え」。",
+        "en": "「移」 is い, not え."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-005",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "この町では、ここ数年、外国人の観光客が<<増加>>している。",
+    "options": [
+      "ぞうか",
+      "そうか",
+      "ぞうが",
+      "ぞっか"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这个城镇这几年外国游客在增加。",
+      "en": "In this town, the number of foreign tourists has been rising for the past few years."
+    },
+    "why": {
+      "zh": "「増加」（增加）读「ぞうか」：「増」是浊音长音「ぞう」，「加」读清音「か」。反义词「減少」（げんしょう）。",
+      "en": "「増加」 (increase) is ぞうか: 「増」 is voiced, long ぞう, and 「加」 is unvoiced か. The opposite is 「減少」 (げんしょう)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「増」读浊音「ぞう」，不读「そう」。",
+        "en": "「増」 is voiced ぞう, not そう."
+      },
+      {
+        "zh": "「加」读清音「か」，不浊化。",
+        "en": "「加」 is unvoiced か."
+      },
+      {
+        "zh": "「増」是长音「ぞう」，后面没有促音。",
+        "en": "「増」 is a long ぞう, with no small っ after it."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-006",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "旅行のあいだ、ねこを友だちに<<預けた>>。",
+    "options": [
+      "あずけた",
+      "さずけた",
+      "たすけた",
+      "まかせた"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "旅行期间，我把猫寄养在朋友那里。",
+      "en": "While I was travelling, I left my cat with a friend."
+    },
+    "why": {
+      "zh": "「預ける」（寄存、托付）读「あずける」，「預けた」读「あずけた」；对应的自动词是「預かる」（あずかる，代为保管）。",
+      "en": "「預ける」 (leave in someone's care) is あずける, so 「預けた」 is あずけた; the counterpart 「預かる」 (あずかる) is to look after something for someone."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「さずける」写作「授ける」，是授予。",
+        "en": "さずける is 「授ける」, to confer."
+      },
+      {
+        "zh": "「たすける」写作「助ける」，是帮助。",
+        "en": "たすける is 「助ける」, to help."
+      },
+      {
+        "zh": "「まかせる」写作「任せる」，汉字不同。",
+        "en": "まかせる is 「任せる」, a different kanji."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-007",
+    "type": "kanji",
+    "difficulty": 2,
+    "stem": "このパンは<<柔らかくて>>、お年寄りでも食べやすい。",
+    "options": [
+      "やわらかくて",
+      "やららかくて",
+      "やわらがくて",
+      "やすらかくて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这种面包很软，老人也容易吃。",
+      "en": "This bread is soft, so even elderly people find it easy to eat."
+    },
+    "why": {
+      "zh": "「柔らかい」（柔软）读「やわらかい」，「柔らかくて」读「やわらかくて」；反义词「かたい」。",
+      "en": "「柔らかい」 (soft) is やわらかい, so 「柔らかくて」 is やわらかくて; the opposite is 「かたい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "第二个音是「わ」，不是「ら」。",
+        "en": "The second sound is わ, not ら."
+      },
+      {
+        "zh": "「か」不浊化，读「やわらかい」。",
+        "en": "The か isn't voiced: やわらかい."
+      },
+      {
+        "zh": "「やすらか」写作「安らか」（安详），是另一个词。",
+        "en": "やすらか is 「安らか」 (peaceful), another word."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-008",
+    "type": "kanji",
+    "difficulty": 3,
+    "stem": "駅の<<改札>>を出たところで、友だちと待ち合わせをした。",
+    "options": [
+      "かいさつ",
+      "かいさく",
+      "がいさつ",
+      "かいざつ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "我和朋友约在车站检票口出来的地方见面。",
+      "en": "I met my friend just outside the station ticket gates."
+    },
+    "why": {
+      "zh": "「改札」（检票口）读「かいさつ」：「改」读「かい」，「札」读「さつ」（如「千円札」的「さつ」）。",
+      "en": "「改札」 (ticket gate) is かいさつ: 「改」 is かい and 「札」 is さつ (as in 「千円札」)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「札」读「さつ」，不读「さく」。",
+        "en": "「札」 is さつ, not さく."
+      },
+      {
+        "zh": "「改」读清音「かい」，不读「がい」。",
+        "en": "「改」 is unvoiced かい, not がい."
+      },
+      {
+        "zh": "「札」在这里读清音「さつ」，不浊化。",
+        "en": "「札」 is unvoiced さつ here, not voiced."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-009",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "この店の野菜は、スーパーより<<ねだん>>が安い。",
+    "options": [
+      "値段",
+      "植段",
+      "置段",
+      "値断"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这家店的蔬菜比超市便宜。",
+      "en": "The vegetables at this shop are cheaper than at the supermarket."
+    },
+    "why": {
+      "zh": "「ねだん」（价格）写作「値段」：单人旁的「値」，“阶段”的「段」。",
+      "en": "「ねだん」 (price) is 「値段」: 「値」 with the person radical, and 「段」 as in 「階段」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「植」是木字旁，「植える」（种）的植，不读「ね」。",
+        "en": "「植」 (tree radical) is the 植 of 「植える」 (plant), not ね."
+      },
+      {
+        "zh": "「置」是「置く」（放）的置，不是价格的「値」。",
+        "en": "「置」 is the 置 of 「置く」 (put), not the 値 of price."
+      },
+      {
+        "zh": "「断」是「断る」（拒绝）的断，读「だん」但意思不对。",
+        "en": "「断」 is the 断 of 「断る」 (refuse); it is read だん but means something else."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-010",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "会議の時間が変わったことを、山田さんにも<<つたえて>>ください。",
+    "options": [
+      "伝えて",
+      "云えて",
+      "転えて",
+      "仁えて"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "会议时间改了，也请转告山田先生。",
+      "en": "Please let Mr Yamada know too that the meeting time has changed."
+    },
+    "why": {
+      "zh": "「つたえる」（转告、传达）写作「伝える」，单人旁加「云」；自动词是「伝わる」。",
+      "en": "「つたえる」 (pass on, tell) is 「伝える」: the person radical plus 「云」; the intransitive verb is 「伝わる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「云」少了单人旁，不能单独写「つたえる」。",
+        "en": "「云」 lacks the person radical; it isn't used for つたえる."
+      },
+      {
+        "zh": "「転」是车字旁，「転ぶ」（摔倒）的转。",
+        "en": "「転」 has the vehicle radical; it's the 転 of 「転ぶ」 (fall over)."
+      },
+      {
+        "zh": "「仁」是“仁爱”的仁，不读「つた」。",
+        "en": "「仁」 is 'benevolence'; it isn't read つた."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-011",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "この国は、車や機械の<<ゆしゅつ>>が多い。",
+    "options": [
+      "輸出",
+      "輪出",
+      "論出",
+      "愉出"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "这个国家汽车和机械的出口很多。",
+      "en": "This country exports a lot of cars and machinery."
+    },
+    "why": {
+      "zh": "「ゆしゅつ」（出口）写作「輸出」，「輸」是车字旁；反义词「輸入」（ゆにゅう，进口）。",
+      "en": "「ゆしゅつ」 (export) is 「輸出」, 「輸」 with the vehicle radical; the opposite is 「輸入」 (ゆにゅう, import)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「輪」是“车轮”的轮，读「りん・わ」。",
+        "en": "「輪」 is 'wheel', read りん or わ."
+      },
+      {
+        "zh": "「論」是言字旁，“讨论”的论，读「ろん」。",
+        "en": "「論」 has the speech radical: 'argument', read ろん."
+      },
+      {
+        "zh": "「愉」是竖心旁，「愉快」的愉，不是运输的「輸」。",
+        "en": "「愉」 has the heart radical, the 愉 of 「愉快」, not the 輸 of transport."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-012",
+    "type": "hyouki",
+    "difficulty": 1,
+    "stem": "熱があるかもしれないので、<<たいおん>>をはかってみた。",
+    "options": [
+      "体温",
+      "休温",
+      "体湿",
+      "休湿"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "可能发烧了，所以量了一下体温。",
+      "en": "I thought I might have a fever, so I took my temperature."
+    },
+    "why": {
+      "zh": "「たいおん」（体温）写作「体温」：“身体”的「体」，“温度”的「温」。",
+      "en": "「たいおん」 (body temperature) is 「体温」: 「体」 of 'body' and 「温」 of 'temperature'."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「休」是「休む」的休，比「体」少一横。",
+        "en": "「休」 is the 休 of 「休む」 (rest), one stroke short of 「体」."
+      },
+      {
+        "zh": "「湿」是「湿度」的湿，读「しつ」。",
+        "en": "「湿」 is the 湿 of 「湿度」 (humidity), read しつ."
+      },
+      {
+        "zh": "两个字都写错了：「休」不是「体」，「湿」不是「温」。",
+        "en": "Both kanji are wrong: 「休」 isn't 「体」, and 「湿」 isn't 「温」."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-013",
+    "type": "hyouki",
+    "difficulty": 2,
+    "stem": "遅れる場合は、必ず事務所に<<れんらく>>してください。",
+    "options": [
+      "連絡",
+      "運絡",
+      "連給",
+      "運給"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "如果要迟到，请务必联系办公室。",
+      "en": "If you're going to be late, be sure to contact the office."
+    },
+    "why": {
+      "zh": "「れんらく」（联系）写作「連絡」：「連」读「れん」，「絡」是绞丝旁加「各」。",
+      "en": "「れんらく」 (contact) is 「連絡」: 「連」 is れん, and 「絡」 is the thread radical plus 「各」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「運」是「運ぶ」的运，读「うん」，不是「れん」。",
+        "en": "「運」 is the 運 of 「運ぶ」 (carry), read うん, not れん."
+      },
+      {
+        "zh": "「給」是「給料」的给，读「きゅう」，右边是「合」。",
+        "en": "「給」 is the 給 of 「給料」 (salary), read きゅう, with 「合」 on the right."
+      },
+      {
+        "zh": "两个字都写错了：应为「連」和「絡」。",
+        "en": "Both kanji are wrong: it's 「連」 and 「絡」."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-014",
+    "type": "hyouki",
+    "difficulty": 3,
+    "stem": "かぜを<<ふせぐ>>ために、外から帰ったら手を洗いましょう。",
+    "options": [
+      "防ぐ",
+      "妨ぐ",
+      "訪ぐ",
+      "坊ぐ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "为了预防感冒，从外面回来要洗手。",
+      "en": "To prevent colds, wash your hands when you come in from outside."
+    },
+    "why": {
+      "zh": "「ふせぐ」（防止、预防）写作「防ぐ」，左边是耳刀旁；常说「事故を防ぐ」「病気を防ぐ」。",
+      "en": "「ふせぐ」 (prevent) is 「防ぐ」, with the 阝 radical on the left; common in 「事故を防ぐ」「病気を防ぐ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「妨」是女字旁，「妨げる」（さまたげる，妨碍）的妨。",
+        "en": "「妨」 has the woman radical; it's the 妨 of 「妨げる」 (さまたげる, hinder)."
+      },
+      {
+        "zh": "「訪」是言字旁，「訪ねる」（拜访）的访。",
+        "en": "「訪」 has the speech radical; it's the 訪 of 「訪ねる」 (visit)."
+      },
+      {
+        "zh": "「坊」是土字旁，「坊や」（小男孩）的坊。",
+        "en": "「坊」 has the earth radical; it's the 坊 of 「坊や」 (little boy)."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-015",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "急に熱が出たので、レストランの予約を（　）した。",
+    "options": [
+      "キャンセル",
+      "リサイクル",
+      "コピー",
+      "サイン"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "突然发烧了，所以把餐厅的预约取消了。",
+      "en": "I suddenly came down with a fever, so I cancelled my restaurant booking."
+    },
+    "why": {
+      "zh": "线索：「急に熱が出た」，去不了了，对「レストランの予約」要做的是取消。\n词义：「キャンセル」＝取消（预约、订单），常说「予約を キャンセルする」「キャンセル料」（取消费）。",
+      "en": "Clue: 「急に熱が出た」, so the speaker can't go; what you do to 「レストランの予約」 then is cancel it.\nMeaning: 「キャンセル」 = cancel (a booking, an order), as in 「予約を キャンセルする」 and 「キャンセル料」 (cancellation fee)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「リサイクル」是回收再利用，不能用于预约。",
+        "en": "「リサイクル」 is recycling; it doesn't apply to a booking."
+      },
+      {
+        "zh": "「コピー」是复印，「予約をコピーする」说不通。",
+        "en": "「コピー」 is copying; 'copying a booking' makes no sense."
+      },
+      {
+        "zh": "「サイン」是签名，和发烧去不了没有关系。",
+        "en": "「サイン」 is a signature, unrelated to not being able to go."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-016",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "駅のホームで、高校時代の友だちに（　）会った。",
+    "options": [
+      "ばったり",
+      "じっくり",
+      "たっぷり",
+      "のんびり"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "在车站站台上偶然碰到了高中时的朋友。",
+      "en": "I ran into a friend from high school on the station platform."
+    },
+    "why": {
+      "zh": "线索：在「駅のホーム」这种地方遇见「高校時代の友だち」，是没约好、碰巧遇上。\n词义：「ばったり」＝（偶然）碰见，几乎只说「ばったり 会う」「ばったり 出会う」。",
+      "en": "Clue: Meeting 「高校時代の友だち」 somewhere like 「駅のホーム」 is an unplanned, chance meeting.\nMeaning: 「ばったり」 = (bump into) by chance, used almost only in 「ばったり 会う」「ばったり 出会う」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「じっくり」是慢慢地、仔细地（考える・読む），不用于偶遇。",
+        "en": "「じっくり」 is slowly and carefully (考える, 読む), not a chance meeting."
+      },
+      {
+        "zh": "「たっぷり」是充足、满满的，「たっぷり会う」不成立。",
+        "en": "「たっぷり」 is plenty; 「たっぷり会う」 isn't said."
+      },
+      {
+        "zh": "「のんびり」是悠闲，和“遇见”搭配不上。",
+        "en": "「のんびり」 is relaxed; it doesn't go with meeting someone."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-017",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "梅雨の時期は、洗濯物がなかなか（　）。",
+    "options": [
+      "かわかない",
+      "ひえない",
+      "ちぢまない",
+      "とけない"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "梅雨季节，洗的衣服总是不干。",
+      "en": "During the rainy season, the washing takes ages to dry."
+    },
+    "why": {
+      "zh": "线索：「梅雨の時期」湿气重，「洗濯物」的问题是总也不干。\n词义：「かわく」（乾く）＝变干，常说「洗濯物が かわく」「のどが かわく」（口渴）；他动词是「かわかす」。",
+      "en": "Clue: 「梅雨の時期」 is humid, and the trouble with 「洗濯物」 then is that it won't dry.\nMeaning: 「かわく」 (乾く) = dry, as in 「洗濯物が かわく」 and 「のどが かわく」 (be thirsty); the transitive verb is 「かわかす」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ひえる」是变凉，和洗的衣服、梅雨无关。",
+        "en": "「ひえる」 is getting cold, unrelated to washing or the rainy season."
+      },
+      {
+        "zh": "「ちぢむ」是（布料）缩水，和梅雨、干不干无关。",
+        "en": "「ちぢむ」 is (cloth) shrinking, unrelated to the rainy season or drying."
+      },
+      {
+        "zh": "「とける」是（冰、雪）融化，衣服不会融化。",
+        "en": "「とける」 is (ice, snow) melting; clothes don't melt."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-018",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "地図を見ながら歩いていたのに、駅とは反対の（　）に進んでいた。",
+    "options": [
+      "方向",
+      "角度",
+      "距離",
+      "地域"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "明明一边看地图一边走，却朝着和车站相反的方向走了。",
+      "en": "I was walking with the map in my hand, yet I'd been heading the opposite way from the station."
+    },
+    "why": {
+      "zh": "线索：「駅とは反対の」，后接「に進んでいた」，说的是往哪边走。\n词义：「方向」（ほうこう）＝方向，常说「反対の 方向」「方向を 間違える」；口语也说「方」（ほう）。",
+      "en": "Clue: 「駅とは反対の」 followed by 「に進んでいた」 is about which way the speaker was going.\nMeaning: 「方向」 (ほうこう) = direction, as in 「反対の 方向」 and 「方向を 間違える」; in speech also 「方」 (ほう)."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「角度」是角度，「反対の角度に進む」说不通。",
+        "en": "「角度」 is an angle; 'advance in the opposite angle' makes no sense."
+      },
+      {
+        "zh": "「距離」是距离，没有“相反的距离”。",
+        "en": "「距離」 is distance; there's no 'opposite distance'."
+      },
+      {
+        "zh": "「地域」是地区，说的是一片区域，不是走的方向。",
+        "en": "「地域」 is a region, an area, not a direction of travel."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-019",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "使っていない部屋の電気はこまめに消して、電気の（　）をなくそう。",
+    "options": [
+      "むだ",
+      "けが",
+      "じゃま",
+      "ひま"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "不用的房间要随手关灯，杜绝电的浪费。",
+      "en": "Switch off the lights in rooms you aren't using and stop wasting electricity."
+    },
+    "why": {
+      "zh": "线索：「使っていない部屋の電気」开着是白白耗电，要「なくそう」的是浪费。\n词义：「むだ」（無駄）＝浪费、白费，常说「時間の むだ」「むだを なくす」「むだに なる」。",
+      "en": "Clue: Lights on in 「使っていない部屋」 burn power for nothing; what we should 「なくそう」 is the waste.\nMeaning: 「むだ」 (無駄) = waste, futility, as in 「時間の むだ」, 「むだを なくす」 and 「むだに なる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「けが」是受伤，「電気のけが」说不通。",
+        "en": "「けが」 is an injury; 'electricity's injury' makes no sense."
+      },
+      {
+        "zh": "「じゃま」是妨碍，开着灯不是妨碍谁。",
+        "en": "「じゃま」 is being in the way; lights left on don't obstruct anyone."
+      },
+      {
+        "zh": "「ひま」是空闲时间，和电没有关系。",
+        "en": "「ひま」 is free time, nothing to do with electricity."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-020",
+    "type": "bunmyaku",
+    "difficulty": 3,
+    "stem": "忙しくて毎日は無理でも、（　）週に一回は運動したい。",
+    "options": [
+      "せめて",
+      "まさか",
+      "ちっとも",
+      "いきなり"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "就算忙得没法每天运动，至少也想一周运动一次。",
+      "en": "Even if I'm too busy to exercise every day, I'd like to at least get some exercise once a week."
+    },
+    "why": {
+      "zh": "线索：「毎日は無理でも」，退一步说最低限度的愿望「週に一回は」，后接「〜たい」。\n词义：「せめて」＝至少、哪怕只是，后面常跟愿望、请求：「せめて 一日だけでも 休みたい」「せめて 電話ぐらい してほしい」。",
+      "en": "Clue: 「毎日は無理でも」 then a fallback, the minimum the speaker wants: 「週に一回は」 with 「〜たい」.\nMeaning: 「せめて」 = at least, if nothing more, usually followed by a wish or request: 「せめて 一日だけでも 休みたい」, 「せめて 電話ぐらい してほしい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「まさか」是“难道、万万没想到”，后面多是否定或惊讶，不接最低愿望。",
+        "en": "「まさか」 is 'surely not', followed by disbelief, not a minimum wish."
+      },
+      {
+        "zh": "「ちっとも」后面要接否定（ちっとも〜ない），这里是肯定的愿望。",
+        "en": "「ちっとも」 needs a negative (ちっとも〜ない); this is a positive wish."
+      },
+      {
+        "zh": "「いきなり」是突然，和“至少一周一次”的意思不合。",
+        "en": "「いきなり」 is 'suddenly', which doesn't fit 'at least once a week'."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-021",
+    "type": "bunmyaku",
+    "difficulty": 1,
+    "stem": "冷めてしまったスープを、電子レンジで（　）。",
+    "options": [
+      "あたためた",
+      "ひやした",
+      "こおらせた",
+      "かわかした"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "把凉了的汤用微波炉热了一下。",
+      "en": "I heated up the soup that had gone cold in the microwave."
+    },
+    "why": {
+      "zh": "线索：「冷めてしまったスープ」，用「電子レンジ」做的事当然是加热。\n词义：「あたためる」（温める）＝加热、温热，常说「ご飯を あたためる」「レンジで あたためる」。",
+      "en": "Clue: 「冷めてしまったスープ」 and 「電子レンジ」: what you do is heat it up.\nMeaning: 「あたためる」 (温める) = warm up, heat, as in 「ご飯を あたためる」 and 「レンジで あたためる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ひやす」是冰镇、弄凉，汤已经凉了，也不用微波炉。",
+        "en": "「ひやす」 is to chill; the soup is already cold, and a microwave doesn't chill."
+      },
+      {
+        "zh": "「こおらせる」是冻上，微波炉不能冷冻。",
+        "en": "「こおらせる」 is to freeze; a microwave can't freeze anything."
+      },
+      {
+        "zh": "「かわかす」是弄干，汤不能“弄干”来喝。",
+        "en": "「かわかす」 is to dry; you don't dry soup."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-022",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "連休中は、有名な観光地はどこも人で（　）している。",
+    "options": [
+      "混雑",
+      "増加",
+      "発生",
+      "成長"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "连休期间，有名的景点到处都人山人海。",
+      "en": "During the long holiday, every famous tourist spot is packed with people."
+    },
+    "why": {
+      "zh": "线索：「人で（　）している」，「〜で」表示被什么挤满，说的是地方很拥挤。\n词义：「混雑」（こんざつ）＝拥挤，常说「駅が 混雑する」「人で 混雑している」；口语说「混む」。",
+      "en": "Clue: 「人で（　）している」: 「〜で」 says what a place is full of, so it's about crowding.\nMeaning: 「混雑」 (こんざつ) = congestion, crowding, as in 「駅が 混雑する」 and 「人で 混雑している」; in speech 「混む」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「増加」是数量增加，主语是数量，不说「観光地が人で増加する」。",
+        "en": "「増加」 is a number increasing; you don't say a place 'increases with people'."
+      },
+      {
+        "zh": "「発生」是（事故、问题）发生，不接「人で」。",
+        "en": "「発生」 is (an accident, a problem) occurring; it doesn't take 「人で」."
+      },
+      {
+        "zh": "「成長」是成长、发展，和拥挤无关。",
+        "en": "「成長」 is growth, nothing to do with crowds."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-023",
+    "type": "bunmyaku",
+    "difficulty": 3,
+    "stem": "長い間だれも使っていなかった部屋は、（　）だらけだった。",
+    "options": [
+      "ほこり",
+      "けむり",
+      "いき",
+      "あわ"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "很久没人用的房间里满是灰尘。",
+      "en": "The room no one had used for ages was covered in dust."
+    },
+    "why": {
+      "zh": "线索：「長い間だれも使っていなかった部屋」，没人打扫，积满的是灰尘。\n词义：「ほこり」（埃）＝灰尘，常说「ほこりが たまる」「ほこりを はらう」，也常和「だらけ」连用。",
+      "en": "Clue: 「長い間だれも使っていなかった部屋」 hasn't been cleaned; what builds up is dust.\nMeaning: 「ほこり」 (埃) = dust, as in 「ほこりが たまる」 and 「ほこりを はらう」, and often with 「だらけ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「けむり」是烟，没人用的房间不会冒烟。",
+        "en": "「けむり」 is smoke; an unused room doesn't fill with smoke."
+      },
+      {
+        "zh": "「いき」是呼吸的气，房间不会满是呼气。",
+        "en": "「いき」 is breath; a room isn't covered in breath."
+      },
+      {
+        "zh": "「あわ」是泡沫，和长期不用的房间无关。",
+        "en": "「あわ」 is foam or bubbles, unrelated to a long-unused room."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-024",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "新しいパソコンは前のものより（　）がよくて、仕事が速く進むようになった。",
+    "options": [
+      "性能",
+      "性格",
+      "人気",
+      "景色"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "新电脑比以前那台性能好，工作进展快多了。",
+      "en": "The new computer performs better than the old one, so my work goes much faster."
+    },
+    "why": {
+      "zh": "线索：主语是「新しいパソコン」，「仕事が速く進む」说明机器本身更好用。\n词义：「性能」（せいのう）＝（机器的）性能，常说「性能が いい」「高性能」。\n辨析：「性格」也是“性……”，但说的是人的性格，机器不用。",
+      "en": "Clue: The subject is 「新しいパソコン」, and 「仕事が速く進む」 says the machine itself works better.\nMeaning: 「性能」 (せいのう) = performance (of a machine), as in 「性能が いい」 and 「高性能」.\nContrast: 「性格」 looks similar but is a person's character; not used of machines."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「性格」是人的性格，电脑没有性格。",
+        "en": "「性格」 is a person's character; a computer has none."
+      },
+      {
+        "zh": "「人気」说「人気が ある」，不说「人気が いい」，而且和工作快无关。",
+        "en": "「人気」 goes with 「ある」, not 「いい」, and has nothing to do with working faster."
+      },
+      {
+        "zh": "「景色」是风景，和电脑无关。",
+        "en": "「景色」 is scenery, unrelated to a computer."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-025",
+    "type": "bunmyaku",
+    "difficulty": 2,
+    "stem": "バスが三十分たっても来なくて、（　）してきた。",
+    "options": [
+      "いらいら",
+      "わくわく",
+      "にこにこ",
+      "ぴかぴか"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "公交车过了三十分钟还不来，我开始烦躁起来。",
+      "en": "The bus still hadn't come after thirty minutes, and I was getting irritated."
+    },
+    "why": {
+      "zh": "线索：「バスが三十分たっても来なくて」，等得越来越不耐烦。\n词义：「いらいら」＝焦躁、烦躁，常说「いらいらする」「待たされて いらいらする」。",
+      "en": "Clue: 「バスが三十分たっても来なくて」: the wait makes the speaker more and more impatient.\nMeaning: 「いらいら」 = irritated, on edge, as in 「いらいらする」 and 「待たされて いらいらする」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「わくわく」是期待得兴奋，等不来车不会兴奋。",
+        "en": "「わくわく」 is excited anticipation; a late bus doesn't excite anyone."
+      },
+      {
+        "zh": "「にこにこ」是笑眯眯，和等得不耐烦相反。",
+        "en": "「にこにこ」 is smiling, the opposite of impatience."
+      },
+      {
+        "zh": "「ぴかぴか」是闪闪发亮，说东西，不说心情。",
+        "en": "「ぴかぴか」 is shiny, said of things, not feelings."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-026",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "彼は<<だまって>>部屋を出ていった。",
+    "options": [
+      "何も言わずに",
+      "あいさつしてから",
+      "走って",
+      "泣きながら"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "他一声不吭地走出了房间。",
+      "en": "He left the room without a word."
+    },
+    "why": {
+      "zh": "线索：划线的「だまって」修饰「部屋を出ていった」，就是一句话也不说，对应「何も言わずに」。\n词义：「だまる」（黙る）＝不说话、沉默，常说「だまって 聞く」「だまって いる」；也指不打招呼就做：「だまって 借りる」。",
+      "en": "Clue: The underlined 「だまって」 modifies 「部屋を出ていった」: he said nothing, which is 「何も言わずに」.\nMeaning: 「だまる」 (黙る) = fall silent, say nothing, as in 「だまって 聞く」 and 「だまって いる」; also doing something without asking: 「だまって 借りる」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「あいさつしてから」是打了招呼再走，正好相反。",
+        "en": "「あいさつしてから」 means he said goodbye first, the opposite."
+      },
+      {
+        "zh": "「走って」说的是走的方式，不是不说话。",
+        "en": "「走って」 is how he moved, not his silence."
+      },
+      {
+        "zh": "「泣きながら」是边哭边走，不是不说话。",
+        "en": "「泣きながら」 is crying as he went, not silence."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-027",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "週末に、部屋を<<きちんと>>片付けた。",
+    "options": [
+      "きれいに",
+      "少しだけ",
+      "急いで",
+      "ひとりで"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "周末把房间收拾得整整齐齐。",
+      "en": "At the weekend I tidied my room properly."
+    },
+    "why": {
+      "zh": "线索：划线的「きちんと」修饰「片付けた」，就是收拾得整齐、干净，对应「きれいに」。\n词义：「きちんと」＝整整齐齐、规规矩矩，常说「きちんと 並べる」「きちんと した 服装」；口语也说「ちゃんと」。",
+      "en": "Clue: The underlined 「きちんと」 modifies 「片付けた」: the room was tidied neatly, which is 「きれいに」.\nMeaning: 「きちんと」 = neatly, properly, as in 「きちんと 並べる」 and 「きちんと した 服装」; in speech also 「ちゃんと」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「少しだけ」是只收拾一点，和“整整齐齐”相反。",
+        "en": "「少しだけ」 is only a little, the opposite of thoroughly."
+      },
+      {
+        "zh": "「急いで」是匆忙，说速度，不说整齐。",
+        "en": "「急いで」 is in a hurry, about speed, not neatness."
+      },
+      {
+        "zh": "「ひとりで」说的是谁做，不是做得怎么样。",
+        "en": "「ひとりで」 is about who did it, not how well."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-028",
+    "type": "iikae",
+    "difficulty": 3,
+    "stem": "<<あいにく>>、その日はほかの予定が入っています。",
+    "options": [
+      "残念ですが",
+      "うれしいことに",
+      "もちろん",
+      "たぶん"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "不巧那天已经有别的安排了。",
+      "en": "Unfortunately, I already have other plans that day."
+    },
+    "why": {
+      "zh": "线索：划线的「あいにく」放在句首，后面说「ほかの予定が入っています」，是对对方不利的情况，对应「残念ですが」。\n词义：「あいにく」＝不巧、偏偏，多用于委婉拒绝或说明遗憾的情况，常说「あいにくの 雨」「あいにく 留守に しております」。",
+      "en": "Clue: The underlined 「あいにく」 opens the sentence, and 「ほかの予定が入っています」 is bad news for the listener, which is 「残念ですが」.\nMeaning: 「あいにく」 = unfortunately, as luck would have it, used to soften a refusal or bad news, as in 「あいにくの 雨」 and 「あいにく 留守に しております」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「うれしいことに」是“令人高兴的是”，意思正好相反。",
+        "en": "「うれしいことに」 is 'happily', the exact opposite."
+      },
+      {
+        "zh": "「もちろん」是当然，没有遗憾的意思。",
+        "en": "「もちろん」 is 'of course', with no regret in it."
+      },
+      {
+        "zh": "「たぶん」是大概，表示推测，而这里是确定的事实。",
+        "en": "「たぶん」 is 'probably', a guess, but this is a definite fact."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-029",
+    "type": "iikae",
+    "difficulty": 1,
+    "stem": "きのう見た映画は<<退屈だった>>。",
+    "options": [
+      "つまらなかった",
+      "こわかった",
+      "長かった",
+      "むずかしかった"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "昨天看的电影很无聊。",
+      "en": "The film I saw yesterday was boring."
+    },
+    "why": {
+      "zh": "线索：划线的「退屈だった」评价「映画」，就是没意思，对应「つまらなかった」。\n词义：「退屈」（たいくつ）＝无聊、乏味，常说「退屈な 話」「退屈する」；反义是「おもしろい」。",
+      "en": "Clue: The underlined 「退屈だった」 judges 「映画」: it wasn't interesting, which is 「つまらなかった」.\nMeaning: 「退屈」 (たいくつ) = boring, dull, as in 「退屈な 話」 and 「退屈する」; the opposite is 「おもしろい」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「こわかった」是可怕，说的是恐怖，不是无聊。",
+        "en": "「こわかった」 is scary, not boring."
+      },
+      {
+        "zh": "「長かった」说的是时间长，长不等于无聊。",
+        "en": "「長かった」 is about length; long isn't the same as boring."
+      },
+      {
+        "zh": "「むずかしかった」是难懂，和无聊意思不同。",
+        "en": "「むずかしかった」 is hard to follow, a different thing from boring."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-030",
+    "type": "iikae",
+    "difficulty": 2,
+    "stem": "となりの家の奥さんは<<おしゃべりだ>>。",
+    "options": [
+      "料理が上手だ",
+      "静かだ",
+      "声が大きい",
+      "よく話す"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "邻居家的太太很爱说话。",
+      "en": "The woman next door is very talkative."
+    },
+    "why": {
+      "zh": "线索：划线的「おしゃべりだ」说的是人的特点，就是话多、爱聊天，对应「よく話す」。\n词义：「おしゃべり」＝爱说话的（人）；也指闲聊，常说「おしゃべりな 人」「友だちと おしゃべりする」。",
+      "en": "Clue: The underlined 「おしゃべりだ」 describes a person: she talks a lot, which is 「よく話す」.\nMeaning: 「おしゃべり」 = talkative (person); also a chat, as in 「おしゃべりな 人」 and 「友だちと おしゃべりする」."
+    },
+    "wrong": [
+      {
+        "zh": "「料理が上手だ」和说话无关。",
+        "en": "「料理が上手だ」 has nothing to do with talking."
+      },
+      {
+        "zh": "「静かだ」是安静、话少，意思相反。",
+        "en": "「静かだ」 is quiet, the opposite."
+      },
+      {
+        "zh": "「声が大きい」说的是声音大，不是话多。",
+        "en": "「声が大きい」 is about volume, not talking a lot."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n3-m2-031",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<中身>>",
+    "options": [
+      "寒かったので、ポケットの中身に両手を入れて歩いた。",
+      "兄は中身が高いので、いつもいちばん後ろに並ぶ。",
+      "駅の中身にコンビニがあるので、とても便利になった。",
+      "引っ越しの箱に、中身がわかるように名前を書いた。"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "搬家的箱子上写了名称，好知道里面装的是什么。",
+      "en": "I labelled the moving boxes so I'd know what was inside them."
+    },
+    "why": {
+      "zh": "线索：「引っ越しの箱」里装的东西，写上名字就知道里面是什么。\n词义：「中身」（なかみ）＝里面装的东西；（文章、话的）内容，常说「箱の 中身」「中身の ない 話」（空洞的话）。",
+      "en": "Clue: The things packed in 「引っ越しの箱」: writing a label shows what's inside.\nMeaning: 「中身」 (なかみ) = contents; (of a text or talk) substance, as in 「箱の 中身」 and 「中身の ない 話」 (empty talk)."
+    },
+    "wrong": [
+      {
+        "zh": "把手插进口袋应说「ポケットに手を入れる」或「ポケットの中に」。",
+        "en": "Putting your hands in your pockets is 「ポケットに手を入れる」 or 「ポケットの中に」."
+      },
+      {
+        "zh": "说个子高应用「背が高い」。",
+        "en": "Being tall is 「背が高い」."
+      },
+      {
+        "zh": "车站里面应说「駅の中」。",
+        "en": "Inside the station is 「駅の中」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n3-m2-032",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<さっぱり>>",
+    "options": [
+      "このケーキはさっぱり大きいので、四人で分けよう。",
+      "時間がないので、さっぱり来てください。",
+      "雨がさっぱり降ってきたので、かさをさした。",
+      "先生の説明が速すぎて、さっぱりわからなかった。"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "老师讲得太快，我完全没听懂。",
+      "en": "The teacher explained it so fast that I didn't understand a thing."
+    },
+    "why": {
+      "zh": "线索：「説明が速すぎて」，后面是否定「わからなかった」，完全听不懂。\n词义：「さっぱり〜ない」＝完全不……、一点也不……，常说「さっぱり わからない」；单用「さっぱりする」是清爽、爽快：「シャワーを 浴びて さっぱりした」。",
+      "en": "Clue: 「説明が速すぎて」 then the negative 「わからなかった」: the speaker understood nothing at all.\nMeaning: 「さっぱり〜ない」 = not … at all, as in 「さっぱり わからない」; on its own 「さっぱりする」 is to feel refreshed: 「シャワーを 浴びて さっぱりした」."
+    },
+    "wrong": [
+      {
+        "zh": "蛋糕很大应说「とても大きい」。",
+        "en": "A very big cake is 「とても大きい」."
+      },
+      {
+        "zh": "请人赶快来应说「すぐ来てください」。",
+        "en": "Asking someone to come quickly is 「すぐ来てください」."
+      },
+      {
+        "zh": "雨下起来应说「ざあざあ降ってきた」或「急に降ってきた」。",
+        "en": "Rain starting is 「ざあざあ降ってきた」 or 「急に降ってきた」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n3-m2-033",
+    "type": "youhou",
+    "difficulty": 1,
+    "stem": "<<たたむ>>",
+    "options": [
+      "長くなった髪を、美容院でたたんでもらった。",
+      "風が冷たいので、窓をたたんでください。",
+      "寝る前に、リビングのテレビをたたんでおいた。",
+      "かわいた洗濯物をたたんで、たんすにしまった。"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "把晾干的衣服叠好，放进了衣柜。",
+      "en": "I folded the dry washing and put it away in the chest of drawers."
+    },
+    "why": {
+      "zh": "线索：「かわいた洗濯物」收进「たんす」之前，要把衣服叠好。\n词义：「たたむ」（畳む）＝叠、折起来，常说「服を たたむ」「傘を たたむ」「布団を たたむ」。",
+      "en": "Clue: Before 「かわいた洗濯物」 goes into 「たんす」, the clothes get folded.\nMeaning: 「たたむ」 (畳む) = fold, fold up, as in 「服を たたむ」, 「傘を たたむ」 and 「布団を たたむ」."
+    },
+    "wrong": [
+      {
+        "zh": "剪头发应说「髪を切ってもらった」。",
+        "en": "Having your hair cut is 「髪を切ってもらった」."
+      },
+      {
+        "zh": "关窗应说「窓を閉めて」。",
+        "en": "Shutting a window is 「窓を閉めて」."
+      },
+      {
+        "zh": "关电视应说「テレビを消して」。",
+        "en": "Turning off the TV is 「テレビを消して」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n3-m2-034",
+    "type": "youhou",
+    "difficulty": 3,
+    "stem": "<<通じる>>",
+    "options": [
+      "この荷物を、田中さんの家まで通じてください。",
+      "毎朝、自転車で駅まで通じている。",
+      "大学の入学試験に通じて、とてもうれしい。",
+      "山の中なので、携帯電話がなかなか通じない。"
+    ],
+    "answer": 3,
+    "tr": {
+      "zh": "因为在山里，手机老是打不通。",
+      "en": "We're in the mountains, so mobile phones hardly ever get a signal."
+    },
+    "why": {
+      "zh": "线索：「山の中なので」信号差，「携帯電話」打不通，用「通じない」。\n词义：「通じる」＝（电话）接通；（话、意思）说得通、被理解；（道路）通往，常说「電話が 通じる」「英語が 通じる」「駅に 通じる 道」。",
+      "en": "Clue: 「山の中なので」 the signal is poor and 「携帯電話」 won't connect: 「通じない」.\nMeaning: 「通じる」 = (a phone) get through; (words, meaning) be understood; (a road) lead to, as in 「電話が 通じる」, 「英語が 通じる」 and 「駅に 通じる 道」."
+    },
+    "wrong": [
+      {
+        "zh": "把东西送到应说「届けてください」。",
+        "en": "Delivering a parcel is 「届けてください」."
+      },
+      {
+        "zh": "每天骑车去车站应说「駅まで通っている」。",
+        "en": "Going to the station every day is 「駅まで通っている」."
+      },
+      {
+        "zh": "考上应说「試験に合格して」或「試験に通って」。",
+        "en": "Passing an exam is 「試験に合格して」 or 「試験に通って」."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n3-m2-035",
+    "type": "youhou",
+    "difficulty": 2,
+    "stem": "<<きっかけ>>",
+    "options": [
+      "アニメを見たことがきっかけで、日本語を習い始めた。",
+      "駅の東口のきっかけで、三時に待ち合わせをしよう。",
+      "あしたの会議のきっかけは、午後二時の予定です。",
+      "このかばんのきっかけは、税込みで一万円だった。"
+    ],
+    "answer": 0,
+    "tr": {
+      "zh": "看动画成了我开始学日语的契机。",
+      "en": "Watching anime is what got me started learning Japanese."
+    },
+    "why": {
+      "zh": "线索：「アニメを見たこと」引出了「日本語の勉強を始めた」，前者是开始某事的契机。\n词义：「きっかけ」＝契机、起因，常说「〜が きっかけで」「〜を きっかけに」「話す きっかけ」。",
+      "en": "Clue: 「アニメを見たこと」 led to 「日本語の勉強を始めた」: the first is what set the second off.\nMeaning: 「きっかけ」 = trigger, the thing that starts something, as in 「〜が きっかけで」, 「〜を きっかけに」 and 「話す きっかけ」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "约在东口前面应说「東口の前で」。",
+        "en": "Meeting in front of the east exit is 「東口の前で」."
+      },
+      {
+        "zh": "会议开始的时间应说「会議の開始は」或「会議は午後二時からの予定です」。",
+        "en": "The start time is 「会議の開始は」 or 「会議は午後二時からの予定です」."
+      },
+      {
+        "zh": "包的价格应说「このかばんの値段は」。",
+        "en": "The bag's price is 「このかばんの値段は」."
+      }
+    ]
+  }
+]

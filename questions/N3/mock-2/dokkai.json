@@ -1,0 +1,719 @@
+[
+  {
+    "id": "n3-m2-p1",
+    "type": "bunshou",
+    "difficulty": 2,
+    "intro": "次の文章は、新聞の投書欄に載っていたものである。",
+    "passage": "去年の春から、会社へ行くときに、一つ手前の駅で電車を降りて歩いている。健康診断で、医者にもう少し体を動かすように言われたのがきっかけだ。\n最初の一週間は、正直に言って[[1]]。駅から会社まで二十分ほどかかるし、雨の日は靴がぬれる。何度もやめようと思った。\n[[2]]、一か月ほど続けると、少しずつ楽しみが見つかるようになった。毎朝同じ時間に店を開けるパン屋の主人と、あいさつをするようになったのだ。季節によって変わる道沿いの木の色にも、電車に乗っていたころは全く気がつかなかった。\n体重は、思っていたほど[[3]]。それでも、朝歩いた日は頭がすっきりして、午前中の仕事が進む気がする。\n毎日同じ道を通っていても、電車の窓から見る景色と、自分の足で歩いて見る景色は違う。忙しい人ほど、たまには一駅分歩いて[[4]]どうだろうか。きっと、いつもの町が少し違って[[5]]はずだ。",
+    "tr": {
+      "zh": "从去年春天开始，我上班时会提前一站下车，走路去公司。起因是体检时医生让我多活动活动身体。\n说实话，最初的一周只觉得辛苦。从车站到公司要走二十分钟左右，下雨天鞋子还会湿。我好几次都想放弃。\n然而，坚持了一个月左右，渐渐找到了乐趣。我和每天早上同一时间开门的面包店老板开始互相打招呼了。路边树木随季节变化的颜色，坐电车的时候我完全没有注意到。\n体重并没有像我想的那样减下来。尽管如此，早上走过路的日子头脑清爽，上午的工作似乎也进展得更顺利。\n即使每天走同一条路，从电车窗户看到的风景和用自己的脚走着看到的风景是不一样的。越是忙碌的人，偶尔走一站路试试怎么样？平时的街道一定会看起来有些不同。",
+      "en": "Since last spring I've been getting off the train one stop early on my way to work and walking the rest. It started when a doctor told me at a health check to move my body a bit more.\nTo be honest, the first week was nothing but hard. It's about twenty minutes from the station to the office, and on rainy days my shoes get wet. I thought about giving up many times.\nHowever, after keeping it up for about a month, I gradually began to find things to enjoy. I started exchanging greetings with the owner of a bakery that opens at the same time every morning. And when I rode the train I had never noticed the colours of the roadside trees changing with the seasons.\nI haven't lost as much weight as I'd hoped. Even so, on days I walk in the morning my head feels clear and my morning's work seems to go better.\nEven on the same road every day, the scenery you see from a train window is different from what you see walking on your own feet. The busier you are, the more I'd suggest trying to walk one stop now and then. I'm sure your usual town will start to look a little different."
+    },
+    "questions": [
+      {
+        "options": [
+          "つらいばかりだった",
+          "つらいわけではなかった",
+          "つらいことはなかった",
+          "つらいとは限らなかった"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：空格后面接着说「二十分ほどかかるし、雨の日は靴がぬれる。何度もやめようと思った」，全是辛苦的理由。\n规则：「〜ばかりだ」表示“净是……、只有……”，这里是“只觉得辛苦”；后面的「何度もやめようと思った」要求前面是肯定的“辛苦”。\n辨析：「〜わけではない」「〜ことはない」「〜とは限らない」都在否定或减弱“辛苦”，和后面“好几次想放弃”矛盾。",
+          "en": "Clue: After the blank come 「二十分ほどかかるし、雨の日は靴がぬれる。何度もやめようと思った」 — all reasons it was hard.\nRule: 「〜ばかりだ」 means \"nothing but ~\"; the following 「何度もやめようと思った」 needs a plain \"it was hard\" before it.\nContrast: 「〜わけではない」, 「〜ことはない」 and 「〜とは限らない」 all deny or soften \"hard\", which clashes with wanting to quit many times."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「〜わけではなかった」是“并不是辛苦”，和后面“好几次想放弃”矛盾。",
+            "en": "「〜わけではなかった」 says it wasn't really hard, contradicting \"I wanted to quit many times\"."
+          },
+          {
+            "zh": "「つらいことはなかった」是“并不辛苦”，与后文列举的辛苦理由相反。",
+            "en": "「つらいことはなかった」 means it wasn't hard, the opposite of the reasons that follow."
+          },
+          {
+            "zh": "「〜とは限らなかった」是“不一定辛苦”，是部分否定，接不上“好几次想放弃”。",
+            "en": "「〜とは限らなかった」 (\"not necessarily hard\") is a partial denial; it doesn't lead to wanting to quit."
+          }
+        ]
+      },
+      {
+        "options": [
+          "ところが",
+          "そのうえ",
+          "つまり",
+          "そのため"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：前一段是“辛苦、想放弃”，空格后是“渐渐找到乐趣”，前后意思相反。\n规则：「ところが」用于后面的结果和前面的预想相反（“然而、没想到”）。\n辨析：「そのうえ」是追加同方向的内容；「つまり」是换句话说；「そのため」是因果，“因为辛苦所以找到乐趣”说不通。",
+          "en": "Clue: The paragraph before is \"hard, wanted to quit\"; after the blank comes \"began to find things to enjoy\" — the opposite direction.\nRule: 「ところが」 introduces an outcome that runs against what came before (\"however, unexpectedly\").\nContrast: 「そのうえ」 adds more in the same direction; 「つまり」 restates; 「そのため」 is cause and effect — \"because it was hard, I found enjoyment\" makes no sense."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「そのうえ」用来追加同方向的内容，但前后一苦一乐，方向相反。",
+            "en": "「そのうえ」 adds more of the same, but here hardship turns into enjoyment."
+          },
+          {
+            "zh": "「つまり」是换个说法总结前文，后面“找到乐趣”不是“辛苦”的换说法。",
+            "en": "「つまり」 restates what came before; finding enjoyment isn't a restatement of hardship."
+          },
+          {
+            "zh": "「そのため」表示因果，“因为辛苦所以找到了乐趣”不合逻辑。",
+            "en": "「そのため」 marks a result; \"it was hard, so I found enjoyment\" doesn't follow."
+          }
+        ]
+      },
+      {
+        "options": [
+          "減らなかった",
+          "減ってきた",
+          "減ってしまった",
+          "減るようになった"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：空格前是「思っていたほど」，后一句以「それでも」开头，说的是另一种好处。\n规则：「AほどBない」＝“没有A那么B”，「ほど」后面要接否定；「それでも」（尽管如此）也说明前面是不如意的事。\n辨析：「減ってきた」「減ってしまった」「減るようになった」都是肯定形，接不上「思っていたほど」，后面的「それでも」也就没有转折的对象了。",
+          "en": "Clue: Before the blank is 「思っていたほど」, and the next sentence starts with 「それでも」 and names a different benefit.\nRule: 「AほどBない」 = \"not as B as A\"; 「ほど」 here needs a negative. 「それでも」 (\"even so\") also shows the sentence before is a letdown.\nContrast: 「減ってきた」, 「減ってしまった」 and 「減るようになった」 are all affirmative, so they can't follow 「思っていたほど」, and 「それでも」 would have nothing to turn against."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「減ってきた」是肯定，「思っていたほど」后面要接否定。",
+            "en": "「減ってきた」 is affirmative; 「思っていたほど」 needs a negative."
+          },
+          {
+            "zh": "「減ってしまった」是肯定，而且减肥成功不是遗憾的事，和「ほど」「それでも」都接不上。",
+            "en": "「減ってしまった」 is affirmative, and losing weight isn't regrettable; it fits neither 「ほど」 nor 「それでも」."
+          },
+          {
+            "zh": "「減るようになった」是肯定的变化，接不上「思っていたほど」，后面的「それでも」也不成立。",
+            "en": "「減るようになった」 is an affirmative change; it can't follow 「思っていたほど」, and 「それでも」 then makes no sense."
+          }
+        ]
+      },
+      {
+        "options": [
+          "みたら",
+          "おいたら",
+          "しまったら",
+          "いたら"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "线索：空格后是「どうだろうか」，作者在向“忙碌的人”提建议。\n规则：「〜てみたらどうだろうか」＝“试着……怎么样”，是常用的建议句式；「〜てみる」表示尝试。\n辨析：「〜ておく」是事先准备，「〜てしまう」是完成或遗憾，「〜ている」是持续状态，都不能和「どうだろうか」组成建议。",
+          "en": "Clue: After the blank comes 「どうだろうか」: the writer is making a suggestion to busy people.\nRule: 「〜てみたらどうだろうか」 = \"how about trying ~\", a set way to suggest; 「〜てみる」 is \"try doing\".\nContrast: 「〜ておく」 is doing in advance, 「〜てしまう」 completion or regret, 「〜ている」 an ongoing state; none forms a suggestion with 「どうだろうか」."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "「歩いておいたら」是“事先走好”，走路不是为某事做准备。",
+            "en": "「歩いておいたら」 means walking in advance as preparation, which isn't the point."
+          },
+          {
+            "zh": "「歩いてしまったら」带有“完了、遗憾”的意思，不是建议。",
+            "en": "「歩いてしまったら」 implies completion or regret, not a suggestion."
+          },
+          {
+            "zh": "「歩いていたら」是“正在走的时候”，和「どうだろうか」组不成建议。",
+            "en": "「歩いていたら」 is \"while walking\"; it doesn't make a suggestion with 「どうだろうか」."
+          }
+        ]
+      },
+      {
+        "options": [
+          "見えてきた",
+          "見えてくる",
+          "見てくる",
+          "見せてくる"
+        ],
+        "answer": 1,
+        "why": {
+          "zh": "线索：句子是「きっと、いつもの町が少し違って（　）はずだ」，主语是「町が」，说的是读者今后试着走路以后的事。\n规则：「町が見える」用自动词「見える」；「〜てくる」表示变化逐渐出现；「はずだ」推测将来，用非过去形「見えてくる」。\n辨析：「見えてきた」是过去形，作者在建议读者今后去做，不能用过去；「見てくる」「見せてくる」是有意的动作，主语要是人，和「町が」接不上。",
+          "en": "Clue: The sentence is 「きっと、いつもの町が少し違って（　）はずだ」; the subject is 「町が」 and it's about what will happen once the reader tries walking.\nRule: \"The town looks…\" takes the intransitive 「見える」; 「〜てくる」 shows a change coming about; 「はずだ」 predicting the future takes the non-past 「見えてくる」.\nContrast: 「見えてきた」 is past, but this is advice for the future; 「見てくる」 and 「見せてくる」 are deliberate actions that need a person as subject, not 「町が」."
+        },
+        "wrong": [
+          {
+            "zh": "「見えてきた」是过去形，这里是对读者今后的推测，要用非过去形。",
+            "en": "「見えてきた」 is past; this is a prediction about the reader's future, so non-past is needed."
+          },
+          null,
+          {
+            "zh": "「見てくる」是“去看一下再回来”，主语得是人，和「町が」接不上。",
+            "en": "「見てくる」 means \"go and look\"; it needs a person as subject, not 「町が」."
+          },
+          {
+            "zh": "「見せてくる」是“给别人看”，是他动词，和「町が違って」接不上。",
+            "en": "「見せてくる」 (\"show\") is transitive and doesn't fit 「町が違って」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-p2",
+    "type": "short",
+    "difficulty": 1,
+    "intro": "これは、ある会社の給湯室の冷蔵庫にはってあるお知らせである。",
+    "passage": "社員のみなさんへ\n\n冷蔵庫の使い方について\n最近、冷蔵庫の中がいっぱいで、新しい物が入らないことがよくあります。そこで、来月から毎週金曜日の夕方に、総務部が冷蔵庫の中を片付けることにしました。\n冷蔵庫に物を入れるときは、名前と入れた日付を書いたシールをはってください。シールは冷蔵庫の横に置いてあります。金曜日の17時の時点でシールがはられていない物は、捨てさせていただきます。シールがはってあっても、入れた日から一週間以上たっている物は同じように捨てます。\n\n総務部",
+    "tr": {
+      "zh": "致各位员工：\n\n关于冰箱的使用。\n最近冰箱经常塞得满满的，新东西放不进去。因此，从下个月起，总务部将在每周五傍晚整理冰箱。\n往冰箱里放东西时，请贴上写有姓名和放入日期的贴纸。贴纸放在冰箱旁边。周五17点时没有贴贴纸的物品将被扔掉。即使贴了贴纸，放入一周以上的物品也同样会被扔掉。\n\n总务部。",
+      "en": "To all staff:\n\nabout using the fridge.\nLately the fridge is often so full that nothing new will fit. So from next month the General Affairs Department will clear out the fridge every Friday evening.\nWhen you put something in the fridge, please attach a sticker with your name and the date you put it in. Stickers are beside the fridge. Anything without a sticker at 17:00 on Friday will be thrown away. Items that have a sticker but were put in more than a week earlier will be thrown away too.\n\nGeneral Affairs Department."
+    },
+    "questions": [
+      {
+        "q": "冷蔵庫に飲み物を入れておきたい人は、どうしなければならないか。",
+        "options": [
+          "名前と日付を書いたシールをはり、一週間たつ前に取り出す。",
+          "名前を書いたシールをはれば、いつまで入れておいてもいい。",
+          "金曜日の17時までに、総務部へシールをもらいに行く。",
+          "毎週金曜日の夕方に、自分で冷蔵庫の中を片付ける。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「名前と入れた日付を書いたシールをはってください」；「シールがはってあっても、入れた日から一週間以上たっている物は同じように捨てます」。\n推理：要贴写有姓名和日期的贴纸；即使贴了，放了一周以上也会被扔，所以要在一周之内拿出来。\n容易错：以为贴了贴纸就可以一直放，忽略了最后一句“一周以上同样扔掉”。",
+          "en": "Evidence: 「名前と入れた日付を書いたシールをはってください」; 「シールがはってあっても、入れた日から一週間以上たっている物は同じように捨てます」.\nReasoning: You need a sticker with your name and the date, and even with one, anything left over a week is thrown out, so take it out within a week.\nTrap: Thinking a sticker lets you leave it there forever, missing the last sentence about the one-week limit."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "贴纸上还要写日期，而且放了一周以上的东西也会被扔掉。",
+            "en": "The sticker needs the date too, and anything over a week old is thrown out anyway."
+          },
+          {
+            "zh": "贴纸就放在冰箱旁边，不用去总务部领。",
+            "en": "The stickers are beside the fridge; there's no need to go to General Affairs."
+          },
+          {
+            "zh": "整理冰箱的是总务部，不是员工自己。",
+            "en": "General Affairs clears out the fridge, not each employee."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-p3",
+    "type": "short",
+    "difficulty": 2,
+    "passage": "入社してから数年間、私は頼まれた仕事を一度も断ったことがなかった。断ったら、やる気がないと思われるのではないかと心配だったからだ。その結果、毎晩遅くまで残業することになり、どの仕事も十分にできなくなってしまった。\nそんなとき、先輩に「全部引き受けるのが親切だとは限らないよ。できないときは、いつまでならできるかを伝えればいい」と言われた。それからは、無理なときは正直にそう言うようにしている。相手も予定が立てやすくなったようで、かえって喜ばれることが多い。",
+    "tr": {
+      "zh": "进公司后的几年里，我从来没有拒绝过别人拜托的工作，因为担心一拒绝就会被认为没有干劲。结果，我每天晚上都加班到很晚，哪项工作都没能做好。\n就在那时，前辈对我说：“全部接下来不一定就是体贴。做不到的时候，告诉对方到什么时候能做就行了。”从那以后，做不到的时候我就会如实说出来。对方似乎也更容易安排计划了，反而常常让人高兴。",
+      "en": "For several years after joining the company I never once turned down work I was asked to do. I was worried that if I said no, people would think I wasn't motivated. As a result I ended up working late every night and couldn't do any of the jobs properly.\nThen a senior colleague told me, ‘Taking on everything isn't necessarily the kind thing to do. When you can't, just tell them by when you could.’ Since then, when something is impossible I say so honestly. The other person seems to find it easier to plan, and they're often actually pleased."
+    },
+    "questions": [
+      {
+        "q": "「私」は、仕事を頼まれたときのことについて、今どう考えているか。",
+        "options": [
+          "無理なときは、いつならできるかを伝えたほうが、相手のためにもなる。",
+          "やる気がないと思われないように、頼まれた仕事はすべて引き受けるべきだ。",
+          "断ると相手に迷惑がかかるので、残業してでも引き受けたほうがいい。",
+          "仕事が十分にできなくなるので、頼まれた仕事はなるべく全部断るべきだ。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「できないときは、いつまでならできるかを伝えればいい」；「相手も予定が立てやすくなったようで、かえって喜ばれることが多い」。\n推理：作者听了前辈的话后，做不到时就如实说明，结果对方更容易安排计划，反而高兴，所以这样做对对方也有好处。\n容易错：“为了不被认为没干劲而全部接下”是作者以前的想法，不是现在的。",
+          "en": "Evidence: 「できないときは、いつまでならできるかを伝えればいい」; 「相手も予定が立てやすくなったようで、かえって喜ばれることが多い」.\nReasoning: Following the senior's advice, the writer now says honestly when something is impossible; the other person can plan more easily and is often pleased, so it helps them too.\nTrap: \"Accept everything so you don't look unmotivated\" was the writer's old view, not the current one."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "这是作者以前的想法，现在作者认为做不到时应该如实说明。",
+            "en": "That was the writer's old thinking; now they say honestly when they can't."
+          },
+          {
+            "zh": "作者说如实拒绝反而让对方高兴，并不认为拒绝会给人添麻烦。",
+            "en": "The writer says being honest often pleases people; they don't think saying no causes trouble."
+          },
+          {
+            "zh": "作者只是在做不到的时候才说明，没有说要把工作全部拒绝。",
+            "en": "The writer only declines when it's impossible, not everything."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-p4",
+    "type": "short",
+    "difficulty": 1,
+    "intro": "これは、佐藤さんに届いたメールである。",
+    "passage": "佐藤さん\n\nお疲れさまです。総務部の中村です。\n来週の大阪出張の件でご連絡します。\n新幹線の切符はこちらで用意しましたので、出発の前日までに総務部の受付で受け取ってください。\nホテルは、会社では予約しておりません。お手数ですが、ご自分で予約をお願いします。宿泊費は、出張から戻ったあとに会社からお支払いしますので、領収書を必ずもらってきてください。その際、宛名は佐藤さんのお名前ではなく、会社名にしていただくようお願いします。\n\n中村",
+    "tr": {
+      "zh": "佐藤先生：\n\n辛苦了。我是总务部的中村。\n关于下周去大阪出差的事，跟您联系一下。\n新干线车票已由我们准备好，请在出发前一天之前到总务部前台领取。\n酒店公司没有预订。麻烦您自己预订。住宿费会在出差回来后由公司支付，所以请一定要拿收据回来。届时，收据抬头请不要写您的名字，而是写公司名称。\n\n中村。",
+      "en": "Mr Sato,\n\nThank you for your work. This is Nakamura from General Affairs.\nI'm writing about your business trip to Osaka next week.\nWe've arranged your shinkansen ticket, so please collect it at the General Affairs desk by the day before you leave.\nThe company has not booked a hotel. Sorry for the trouble, but please book one yourself. The company will pay the hotel cost after you get back, so be sure to get a receipt. When you do, please have it made out to the company name rather than your own name.\n\nNakamura."
+    },
+    "questions": [
+      {
+        "q": "佐藤さんがしなければならないことは何か。",
+        "options": [
+          "自分でホテルを予約して、会社名の入った領収書をもらう。",
+          "総務部にホテルの予約を頼んで、出発の前日に切符をもらう。",
+          "新幹線の切符を自分で買って、その領収書を総務部に出す。",
+          "宿泊費をもらうために、自分の名前で領収書をもらってくる。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「ホテルは、会社では予約しておりません。お手数ですが、ご自分で予約をお願いします」；「宛名は佐藤さんのお名前ではなく、会社名にしていただくようお願いします」。\n推理：酒店要自己订；住宿费之后由公司付，需要收据，而且抬头写公司名称。\n容易错：「〜ではなく」前后容易看反：要的是公司名，不是个人名字。",
+          "en": "Evidence: 「ホテルは、会社では予約しておりません。お手数ですが、ご自分で予約をお願いします」; 「宛名は佐藤さんのお名前ではなく、会社名にしていただくようお願いします」.\nReasoning: He books the hotel himself; the company pays later, so he needs a receipt made out to the company.\nTrap: Reading 「〜ではなく」 backwards — it's the company name, not his own."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "邮件说公司没有预订酒店，请他自己订，不能拜托总务部。",
+            "en": "The email says the company hasn't booked and asks him to do it himself."
+          },
+          {
+            "zh": "新干线车票已经由总务部准备好了，只要去领取就行。",
+            "en": "General Affairs has already arranged the ticket; he just collects it."
+          },
+          {
+            "zh": "收据抬头要写公司名称，不是自己的名字。",
+            "en": "The receipt should be made out to the company, not to him."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-p5",
+    "type": "short",
+    "difficulty": 1,
+    "intro": "これは、あるオフィスビルのエレベーターの前にはってあるお知らせである。",
+    "passage": "このビルで働くみなさまへ\n\n避難訓練のお知らせ\n11月20日（木）の10時から10時30分まで、ビル全体で避難訓練を行います。訓練が始まると非常ベルが鳴りますので、係の指示に従って、階段で1階の正面玄関の前まで避難してください。訓練の間は、エレベーターは使えません。\nなお、お客様との約束などで、どうしても参加できない方は、11月14日（金）までに、各会社の担当者を通して管理事務所にお知らせください。\n\nみどりビル管理事務所",
+    "tr": {
+      "zh": "致在本大楼工作的各位：\n\n疏散演习通知。\n11月20日（周四）10点至10点30分，全楼将进行疏散演习。演习开始时警铃会响，请按照工作人员的指示，走楼梯疏散到1楼正门前。演习期间电梯不能使用。\n另外，因与客户有约等原因无论如何都不能参加的人，请在11月14日（周五）之前，通过各公司的负责人通知管理处。\n\n绿大楼管理处。",
+      "en": "To everyone working in this building:\n\nNotice of an evacuation drill.\nOn Thursday 20 November from 10:00 to 10:30 there will be an evacuation drill for the whole building. When it starts the alarm bell will ring; follow the staff's instructions and use the stairs to evacuate to the front entrance on the ground floor. The lifts can't be used during the drill.\nAnyone who really cannot take part, for example because of an appointment with a client, please let the management office know through your company's person in charge by Friday 14 November.\n\nMidori Building Management Office."
+    },
+    "questions": [
+      {
+        "q": "訓練にどうしても参加できない人は、どうしなければならないか。",
+        "options": [
+          "14日までに、会社の担当者を通して管理事務所に伝える。",
+          "訓練の当日、始まる前に、自分で管理事務所に知らせる。",
+          "訓練の日の朝までに、会社の担当者に伝えておく。",
+          "14日までに、管理事務所へ行って、自分で名前を書く。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「どうしても参加できない方は、11月14日（金）までに、各会社の担当者を通して管理事務所にお知らせください」。\n推理：期限是14日；方式是通过本公司的负责人通知管理处，「〜を通して」就是“经由”，不是自己直接去。\n容易错：把演习日期20日当成期限。",
+          "en": "Evidence: 「どうしても参加できない方は、11月14日（金）までに、各会社の担当者を通して管理事務所にお知らせください」.\nReasoning: The deadline is the 14th, and the message goes to the management office via your company's person in charge — 「〜を通して」 means \"through\", not going yourself.\nTrap: Taking the drill date, the 20th, as the deadline."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "期限是14日，不是演习当天；而且要通过公司负责人，不是自己去说。",
+            "en": "The deadline is the 14th, not the day itself, and it goes through the company contact."
+          },
+          {
+            "zh": "期限是14日，不是演习当天早上；而且最终要通知的是管理处。",
+            "en": "The deadline is the 14th, not the morning of the drill, and the management office must be told."
+          },
+          {
+            "zh": "通知要经由公司负责人，没有说要自己去管理处写名字。",
+            "en": "It goes through the company contact; nothing says to go and sign your name yourself."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-p6",
+    "type": "mid",
+    "difficulty": 2,
+    "passage": "私の住む町では、畑の横の道沿いに、野菜の無人販売所がいくつかある。棚にきゅうりやトマトが並んでいて、横に料金箱が置いてあるだけの小さな店だ。客は自分で代金を箱に入れて、野菜を持って帰る。店の人がいないのに商売ができるのは、客を信じているからこそだろう。\n先日、よく行く販売所に防犯カメラが付けられていた。持ち主の農家の方に聞くと、代金を払わずに野菜を持っていく人が増えたのだそうだ。「カメラなんて付けたくなかったんだけどね。払わない人は一部なのに、お客さん全員を疑っているようで申し訳ない」と、少しさびしそうに話していた。\nカメラを見たとき、私は最初、嫌な気持ちになった。しかし考えてみると、カメラを付けさせたのは、お金を払わなかった一部の人たちだ。農家の方を責めるのは間違っている。信じてもらえる関係は、売る人だけでなく、買う人一人一人が守っていくものなのだと思う。",
+    "tr": {
+      "zh": "在我住的镇上，田边的路旁有几个无人蔬菜售卖点。那是只在架子上摆着黄瓜、西红柿，旁边放着一个收钱箱的小店。顾客自己把钱投进箱子，把菜带回家。店里没有人却能做生意，正是因为相信顾客吧。\n前几天，我常去的售卖点装上了防盗摄像头。问了店主农户，说是不付钱就把菜拿走的人变多了。他有些落寞地说：“我本来不想装什么摄像头的。不付钱的只是一部分人，可这样好像在怀疑所有顾客，真过意不去。”\n看到摄像头时，我起初感觉不太舒服。但仔细一想，让他装上摄像头的，是那些没付钱的一部分人。责怪农户是不对的。我认为，被信任的关系不仅要靠卖的人，也要靠每一位买的人来守护。",
+      "en": "In my town there are several unmanned vegetable stands along the roads beside the fields. They're tiny shops: just cucumbers and tomatoes on a shelf with a money box beside them. Customers put the money in the box themselves and take the vegetables home. That they can do business with nobody there is surely precisely because they trust their customers.\nThe other day a security camera had been put up at the stand I often go to. When I asked the farmer who owns it, he said more people had been taking vegetables without paying. ‘I really didn't want to put up a camera. It's only a few who don't pay, but it feels like I'm suspecting every customer, and I'm sorry about that,’ he said, looking a little sad.\nWhen I first saw the camera, it gave me an unpleasant feeling. But thinking about it, the ones who made him put it up were the few who didn't pay. It's wrong to blame the farmer. I think a relationship of trust is something that has to be protected not only by the seller but by every single buyer."
+    },
+    "questions": [
+      {
+        "q": "無人販売所について、文章ではどう説明されているか。",
+        "options": [
+          "店の人がいなくても、客が自分で代金を払うことで商売ができている。",
+          "店の人が近くの畑にいて、客が代金を払うのをいつも見ている。",
+          "代金を払わない客が多いので、町の販売所はほとんどなくなった。",
+          "野菜の値段が安いので、町の外からもたくさんの客が買いに来る。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「客は自分で代金を箱に入れて、野菜を持って帰る」；「店の人がいないのに商売ができるのは、客を信じているからこそだろう」。\n推理：没有店员，靠顾客自己投钱来维持生意，选项是这两句的概括。\n容易错：文章说不付钱的人“增加了”，但没有说售卖点因此消失。",
+          "en": "Evidence: 「客は自分で代金を箱に入れて、野菜を持って帰る」; 「店の人がいないのに商売ができるのは、客を信じているからこそだろう」.\nReasoning: There's no staff; the business works because customers pay by themselves. The option sums up these two sentences.\nTrap: The text says non-payers have increased, not that the stands have disappeared."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "文章说「店の人がいない」，没有人在旁边看着。",
+            "en": "The text says 「店の人がいない」; nobody watches."
+          },
+          {
+            "zh": "文中说镇上有好几个售卖点，没有说几乎都没了。",
+            "en": "The text says there are several stands; nothing says most have gone."
+          },
+          {
+            "zh": "文章没有提到价格便宜或镇外的顾客。",
+            "en": "Nothing is said about low prices or customers from outside town."
+          }
+        ]
+      },
+      {
+        "q": "農家の方が「申し訳ない」と言っているのはなぜか。",
+        "options": [
+          "きちんと払っている多くの客まで、疑っているようだから。",
+          "カメラを付けたので、野菜の値段を上げることになったから。",
+          "払わない人が増えたのは、自分の店の管理が悪かったから。",
+          "カメラを付けたせいで、客が店に来なくなってしまったから。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「払わない人は一部なのに、お客さん全員を疑っているようで申し訳ない」。\n推理：「〜ようで」表示原因：不付钱的只是一部分人，装摄像头却像是连好好付钱的大多数顾客也一起怀疑了，所以过意不去；选项「きちんと払っている多くの客まで」是「払わない人は一部なのに、お客さん全員」的换说法。\n容易错：农户没有说是自己管理不好，作者也说责任在不付钱的人。",
+          "en": "Evidence: 「払わない人は一部なのに、お客さん全員を疑っているようで申し訳ない」.\nReasoning: 「〜ようで」 gives the reason: only a few don't pay, yet the camera seems to suspect even the many honest customers, so he feels bad; the option's 「きちんと払っている多くの客まで」 rephrases 「払わない人は一部なのに、お客さん全員」.\nTrap: He doesn't blame his own management, and the writer puts the blame on the non-payers."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "文章没有提到涨价。",
+            "en": "Nothing is said about raising prices."
+          },
+          {
+            "zh": "农户没有说是自己管理不好；作者认为原因在不付钱的那部分人。",
+            "en": "He doesn't blame his management; the writer blames the few non-payers."
+          },
+          {
+            "zh": "文章没有说顾客不来了，作者自己也还在去。",
+            "en": "Nothing says customers stopped coming; the writer still goes."
+          }
+        ]
+      },
+      {
+        "q": "この文章を書いた人の考えに合うものはどれか。",
+        "options": [
+          "代金を払わない人がいる以上、無人販売所はやめたほうがいい。",
+          "客を疑うようなカメラを付けた農家の人は、責められても仕方がない。",
+          "信じてもらえる関係を守るのは、買う人一人一人の責任でもある。",
+          "カメラを付ければ払わない人はいなくなるので、もう心配はない。"
+        ],
+        "answer": 2,
+        "why": {
+          "zh": "依据：「信じてもらえる関係は、売る人だけでなく、買う人一人一人が守っていくものなのだと思う」。\n推理：「AだけでなくBも」——不只是卖的人，买的每个人也要守护信任，选项用「〜でもある」表达了同样的意思。\n容易错：作者一开始看到摄像头确实不舒服，但后面用「しかし」改变了看法，明确说「農家の方を責めるのは間違っている」。",
+          "en": "Evidence: 「信じてもらえる関係は、売る人だけでなく、買う人一人一人が守っていくものなのだと思う」.\nReasoning: \"Not only A but B\": not just the seller but each buyer must protect the trust; the option says the same with 「〜でもある」.\nTrap: The writer did feel uneasy at first, but after 「しかし」 changes their mind and says 「農家の方を責めるのは間違っている」."
+        },
+        "wrong": [
+          {
+            "zh": "作者没有主张取消无人售卖点，而是说买的人也要守护信任。",
+            "en": "The writer doesn't call for closing the stands; buyers should help keep the trust."
+          },
+          {
+            "zh": "作者明确说「農家の方を責めるのは間違っている」。",
+            "en": "The writer says outright 「農家の方を責めるのは間違っている」."
+          },
+          null,
+          {
+            "zh": "文章没有说装了摄像头就没人不付钱了，作者关心的是买方的责任。",
+            "en": "Nothing says the camera solves it; the writer's point is the buyers' responsibility."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-p7",
+    "type": "mid",
+    "difficulty": 3,
+    "passage": "私の部署では、去年から会議のやり方を変えた。以前は毎週月曜日に一時間の会議があり、部長の話を聞くだけで終わることも少なくなかった。\n新しいやり方では、会議は三十分までと決め、話し合うことは前の日までに全員に知らせておく。資料も事前に読んでおき、会議では資料の説明はしないで、意見を出し合うことだけに時間を使う。\n最初は、準備が増えて面倒だという声もあった。私自身、前の晩に資料を読むのは負担だった。ところが、続けるうちに、会議で発言する人が増えてきた。前もって考える時間があるので、若い社員も自分の意見をまとめてから参加できるようになったのだ。\nもちろん、すべての問題が三十分で解決するわけではない。結論が出ないときは、関係する人だけで改めて話し合うことにしている。会議を短くすること自体が目的なのではなく、全員の時間を大切にすることが大事なのだと、今は感じている。",
+    "tr": {
+      "zh": "我们部门从去年开始改变了开会的方式。以前每周一有一个小时的会议，常常只是听部长讲话就结束了。\n新的方式是：会议规定最多三十分钟，讨论的内容在前一天之前通知所有人。资料也要提前读好，会上不讲解资料，只把时间用在交换意见上。\n起初也有人说准备工作多了很麻烦。我自己也觉得前一天晚上读资料是个负担。然而，坚持下来，会上发言的人越来越多了。因为事先有思考的时间，年轻员工也能先整理好自己的意见再来参加了。\n当然，并不是所有问题都能在三十分钟内解决。得不出结论时，就只让相关的人另外再讨论。现在我觉得，缩短会议本身并不是目的，重要的是珍惜所有人的时间。",
+      "en": "My department changed the way it holds meetings last year. Before, there was an hour-long meeting every Monday, and it often ended with us just listening to the manager talk.\nUnder the new way, meetings are capped at thirty minutes, and everyone is told by the day before what will be discussed. We read the materials in advance too, and in the meeting nobody explains them; the time is used only for exchanging opinions.\nAt first some people said the extra preparation was a nuisance. I myself found reading the materials the night before a burden. However, as we kept it up, more people started speaking in meetings. Because they have time to think beforehand, even the younger staff can now pull their opinions together before they come.\nOf course, not every problem gets solved in thirty minutes. When we can't reach a conclusion, only the people involved discuss it again separately. I now feel that making meetings short isn't the goal in itself; what matters is valuing everyone's time."
+    },
+    "questions": [
+      {
+        "q": "以前の会議について、文章ではどう説明されているか。",
+        "options": [
+          "部長の話を聞くだけで、話し合わずに終わることも多かった。",
+          "三十分しかないので、意見を出し合う時間が足りなかった。",
+          "資料を前の晩に読まなければならず、準備が大変だった。",
+          "若い社員がよく発言したので、なかなか結論が出なかった。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「以前は毎週月曜日に一時間の会議があり、部長の話を聞くだけで終わることも少なくなかった」。\n推理：「少なくなかった」＝“不少、常常”，选项的「多かった」是同义改写。\n容易错：“三十分钟”“前一晚读资料”“年轻员工发言”都是新方式之后的事，不是以前的会议。",
+          "en": "Evidence: 「以前は毎週月曜日に一時間の会議があり、部長の話を聞くだけで終わることも少なくなかった」.\nReasoning: 「少なくなかった」 (\"not a few times\") = \"often\"; the option's 「多かった」 paraphrases it.\nTrap: Thirty minutes, reading the night before and young staff speaking up all belong to the new way, not the old meetings."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "以前的会议是一个小时，三十分钟是新方式。",
+            "en": "The old meetings lasted an hour; thirty minutes is the new rule."
+          },
+          {
+            "zh": "前一晚读资料是新方式带来的负担，不是以前的事。",
+            "en": "Reading the night before is a burden of the new way, not the old one."
+          },
+          {
+            "zh": "年轻员工发言变多是改变之后的事；以前多是只听部长讲。",
+            "en": "Young staff speaking up came after the change; before, people mostly listened to the manager."
+          }
+        ]
+      },
+      {
+        "q": "会議で発言する人が増えたのはなぜか。",
+        "options": [
+          "話し合うことが前もって分かり、意見を考えてから参加できるから。",
+          "会議の時間が短くなり、早く終わらせたいと思う人が増えたから。",
+          "部長が若い社員に、会議では必ず意見を言うように頼んだから。",
+          "会議の中で、資料について詳しく説明するようになったから。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「前もって考える時間があるので、若い社員も自分の意見をまとめてから参加できるようになったのだ」。\n推理：讨论内容前一天就通知了，所以大家能先想好意见再参加；「〜のだ」在这里是对上一句“发言的人变多”的说明。\n容易错：新方式里会上“不讲解资料”，正好和最后一个选项相反。",
+          "en": "Evidence: 「前もって考える時間があるので、若い社員も自分の意見をまとめてから参加できるようになったのだ」.\nReasoning: The topics are announced the day before, so people can prepare their views first; 「〜のだ」 explains the previous sentence about more people speaking.\nTrap: In the new way, materials are not explained in the meeting — the opposite of the last option."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "文章没有说大家想早点结束才发言。",
+            "en": "Nothing says people speak because they want to finish early."
+          },
+          {
+            "zh": "文章没有提到部长要求年轻员工发言。",
+            "en": "The text never says the manager asked young staff to speak."
+          },
+          {
+            "zh": "新方式规定会上「資料の説明はしないで」，正好相反。",
+            "en": "The new rule is 「資料の説明はしないで」 — the opposite."
+          }
+        ]
+      },
+      {
+        "q": "この文章を書いた人の考えに合うものはどれか。",
+        "options": [
+          "会議を短くするより、みんなの時間をむだにしないことが大事だ。",
+          "会議は三十分で終えることが一番の目的なので、結論は出なくてもいい。",
+          "準備に時間がかかるので、新しいやり方は若い社員には向いていない。",
+          "どんな問題でも、三十分あれば全員で話し合って解決できるものだ。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「会議を短くすること自体が目的なのではなく、全員の時間を大切にすることが大事なのだと、今は感じている」。\n推理：「Aが目的なのではなく、Bが大事」——缩短会议不是目的，珍惜大家的时间才重要；选项用「Aより B」、把「時間を大切にする」换成「時間をむだにしない」，说了同样的意思。\n容易错：“三十分钟就是最大目的”正好是作者否定的说法。",
+          "en": "Evidence: 「会議を短くすること自体が目的なのではなく、全員の時間を大切にすることが大事なのだと、今は感じている」.\nReasoning: \"Not A as the goal, but B matters\": shortening meetings isn't the aim; valuing everyone's time is. The option says the same with 「Aより B」, rephrasing 「時間を大切にする」 as 「時間をむだにしない」.\nTrap: \"Finishing in thirty minutes is the main goal\" is exactly what the writer denies."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "作者明确说缩短会议本身不是目的；得不出结论时还会另外讨论。",
+            "en": "The writer says shortening isn't the goal itself, and unresolved issues are discussed again."
+          },
+          {
+            "zh": "文章说年轻员工正因为有准备时间才能发言，新方式对他们有利。",
+            "en": "The text says the prep time is what lets young staff speak; it suits them."
+          },
+          {
+            "zh": "作者说「すべての問題が三十分で解決するわけではない」。",
+            "en": "The writer says 「すべての問題が三十分で解決するわけではない」."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-p8",
+    "type": "long",
+    "difficulty": 3,
+    "passage": "最近、知らない人に道を聞かれることがほとんどなくなった。十年ほど前までは、駅の近くを歩いていると、月に何度も「〇〇はどちらですか」と声をかけられたものだ。今では、多くの人がスマートフォンの地図を見ながら歩いている。画面の指示どおりに進めば目的地に着くのだから、わざわざ人に聞く必要はないのだろう。\n道に迷う人も減っただろう。便利になったことは確かだし、知らない人に話しかけるのが苦手な人にとっては、ありがたいことだと思う。\nただ、先日、少し考えさせられる出来事があった。地方の小さな町を訪ねたとき、スマートフォンの電池が切れてしまったのだ。仕方なく、近くの店にいた年配の女性に駅への行き方を尋ねた。女性は道を丁寧に教えてくれただけでなく、「この先の神社の桜が今ちょうどきれいだから、少し遠回りして見ていきなさい」と言ってくれた。言われたとおりに歩いていくと、満開の桜の下で、地元の人たちがお茶を飲んでいた。地図には載っていない、その町らしい風景だった。\n地図のアプリは、目的地までの一番近い道を教えてくれる。しかし、その道の途中で何に出会えるかまでは教えてくれない。人に道を聞くと、時間はかかるかもしれないが、思ってもいなかった情報が得られたり、ちょっとした会話が生まれたりする。\nこれからもアプリは使い続けるだろう。それでも、時間に余裕があるときには、あえて人に道を聞いてみようと思う。効率だけを考えていると、見落としてしまうものがあるような気がするからだ。",
+    "tr": {
+      "zh": "最近，几乎没有陌生人向我问路了。直到大约十年前，在车站附近走路时，一个月会有好几次被人搭话问“××在哪边？”。现在，很多人边看手机地图边走路。只要按照屏幕的指示走就能到达目的地，所以大概没有必要特意问人吧。\n迷路的人大概也少了吧。变方便了是确实的，而且对于不擅长和陌生人搭话的人来说，我想这是件值得感激的事。\n不过，前几天发生了一件让我有些思考的事。我去一个地方小镇时，手机没电了。没办法，我向附近店里的一位年长女性打听去车站的路。她不仅仔细地告诉了我怎么走，还对我说：“前面神社的樱花现在正好很漂亮，稍微绕点路去看看吧。”我照她说的走过去，只见在盛开的樱花下，当地人正在喝茶。那是地图上没有的、很有那个小镇特色的风景。\n地图应用会告诉我们到目的地最近的路。但是，它不会告诉我们在路上能遇到什么。向人问路，也许会花些时间，但能得到意想不到的信息，或者产生一些简短的交谈。\n今后我大概也会继续使用应用。即便如此，在时间宽裕的时候，我想特意试着向人问路。因为我觉得，如果只考虑效率，可能会错过一些东西。",
+      "en": "These days strangers hardly ever ask me the way. Until about ten years ago, walking near the station, I'd be stopped several times a month with ‘Which way is such-and-such?’ Now many people walk along looking at a map on their smartphone. If you just follow the directions on the screen you reach your destination, so there's presumably no need to go out of your way to ask someone.\nFewer people probably get lost, too. It has certainly become more convenient, and for people who find it hard to talk to strangers, I think it's a welcome thing.\nBut recently something happened that made me think. While visiting a small town in the countryside, my phone's battery died. With no choice, I asked an elderly woman in a nearby shop how to get to the station. Not only did she explain the way carefully, she also said, ‘The cherry blossoms at the shrine up ahead are lovely just now, so take a little detour and see them.’ Walking the way she told me, I found local people under the blossoms in full bloom, drinking tea. It was a scene typical of that town, one you won't find on any map.\nA map app tells you the shortest route to your destination. But it doesn't tell you what you might come across along the way. When you ask a person for directions it may take longer, but you can get information you never expected, and little conversations begin.\nI'll probably keep using the app. Even so, when I have time to spare, I mean to deliberately try asking people the way. Because I feel that if you think only about efficiency, there are things you end up overlooking."
+    },
+    "questions": [
+      {
+        "q": "筆者は、知らない人に道を聞かれなくなったのはなぜだと考えているか。",
+        "options": [
+          "地図のアプリを見れば、人に聞かなくても目的地に行けるから。",
+          "知らない人に話しかけるのが苦手な人が、前より増えたから。",
+          "筆者が、前ほど駅の近くを歩かなくなってしまったから。",
+          "駅の周りに案内の看板が増えて、道が分かりやすくなったから。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「画面の指示どおりに進めば目的地に着くのだから、わざわざ人に聞く必要はないのだろう」。\n推理：很多人看着手机地图走路，按指示走就能到，所以不需要再问人。「〜のだから」给出理由。\n容易错：“不擅长和陌生人搭话的人”在文中是说地图应用对这些人有好处，并没有说这种人增加了。",
+          "en": "Evidence: 「画面の指示どおりに進めば目的地に着くのだから、わざわざ人に聞く必要はないのだろう」.\nReasoning: Many people walk following a phone map, which gets them there, so they don't need to ask. 「〜のだから」 gives the reason.\nTrap: People who find it hard to talk to strangers appear only as those the app helps; the text never says there are more of them."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "文中只说应用对不擅长搭话的人有好处，没有说这种人变多了。",
+            "en": "The text says only that the app helps shy people, not that there are more of them."
+          },
+          {
+            "zh": "文章没有说作者走车站附近的次数变少了。",
+            "en": "Nothing says the writer walks near the station less."
+          },
+          {
+            "zh": "文章没有提到指示牌，原因是手机地图。",
+            "en": "Signs aren't mentioned; the reason given is phone maps."
+          }
+        ]
+      },
+      {
+        "q": "年配の女性について、正しいものはどれか。",
+        "options": [
+          "駅への道だけでなく、町のきれいな場所まで教えてくれた。",
+          "筆者と一緒に、神社の桜を見に行ってくれた。",
+          "駅へ行く一番近い道を、地図にかいて教えてくれた。",
+          "スマートフォンを貸して、地図を見せてくれた。"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「女性は道を丁寧に教えてくれただけでなく、「この先の神社の桜が今ちょうどきれいだから、少し遠回りして見ていきなさい」と言ってくれた」。\n推理：「〜だけでなく」：她不仅指了去车站的路，还推荐了神社的樱花，也就是镇上值得看的地方。\n容易错：她是让作者“绕点路”去看，不是告诉最近的路，也没有陪作者一起去。",
+          "en": "Evidence: 「女性は道を丁寧に教えてくれただけでなく、「この先の神社の桜が今ちょうどきれいだから、少し遠回りして見ていきなさい」と言ってくれた」.\nReasoning: 「〜だけでなく」: besides the way to the station, she recommended the shrine's cherry blossoms — something worth seeing in town.\nTrap: She suggested a detour, not the shortest route, and didn't go along with the writer."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "文中是作者「言われたとおりに歩いていく」，自己去的，女性没有同行。",
+            "en": "The writer went alone, 「言われたとおりに歩いていく」; she didn't come along."
+          },
+          {
+            "zh": "她建议的是「少し遠回りして」，不是最近的路，也没有提到画地图。",
+            "en": "She suggested 「少し遠回りして」, not the shortest way, and drew no map."
+          },
+          {
+            "zh": "文章没有说她借手机给作者，是口头告诉的。",
+            "en": "Nothing says she lent a phone; she told him the way."
+          }
+        ]
+      },
+      {
+        "q": "筆者は、地図のアプリについてどう考えているか。",
+        "options": [
+          "時間はかかるが、地図に載っていない情報まで教えてくれる。",
+          "地図が古いことがあるので、あまり信用しないほうがいい。",
+          "人と話す機会がなくなるので、なるべく使わないほうがいい。",
+          "一番近い道は分かるが、途中で何に出会えるかは分からない。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「地図のアプリは、目的地までの一番近い道を教えてくれる。しかし、その道の途中で何に出会えるかまでは教えてくれない」。\n推理：选项是这两句的概括：能告诉最近的路，但不会告诉路上能遇到什么。\n容易错：“花时间但能得到意想不到的信息”说的是向人问路，不是地图应用。",
+          "en": "Evidence: 「地図のアプリは、目的地までの一番近い道を教えてくれる。しかし、その道の途中で何に出会えるかまでは教えてくれない」.\nReasoning: The option sums up these two sentences: it shows the shortest route but not what you'll meet on the way.\nTrap: \"Takes longer but gives unexpected information\" describes asking a person, not the app."
+        },
+        "wrong": [
+          {
+            "zh": "“花时间、能得到意想不到的信息”是向人问路的特点，不是应用的。",
+            "en": "Taking longer and gaining unexpected information describes asking people, not the app."
+          },
+          {
+            "zh": "文章没有说地图旧、不可信，作者还说「便利になったことは確か」。",
+            "en": "Nothing says the maps are outdated; the writer calls them convenient."
+          },
+          {
+            "zh": "作者说「これからもアプリは使い続けるだろう」，并没有说尽量不用。",
+            "en": "The writer says 「これからもアプリは使い続けるだろう」."
+          },
+          null
+        ]
+      },
+      {
+        "q": "筆者が一番言いたいことは何か。",
+        "options": [
+          "知らない人に話しかけるのが苦手な人も、勇気を出すべきだ。",
+          "道に迷わないように、旅行の前には必ず地図のアプリを使うべきだ。",
+          "アプリは不便なので、これからは人に道を聞くことにしたい。",
+          "急がないときは、アプリに頼らずに人に道を聞いてみるのもいい。"
+        ],
+        "answer": 3,
+        "why": {
+          "zh": "依据：「それでも、時間に余裕があるときには、あえて人に道を聞いてみようと思う」。\n推理：作者会继续用应用，但时间宽裕时想特意问人，因为只看效率会错过东西。选项的「急がないとき」对应「時間に余裕があるとき」。\n容易错：作者没有否定应用，“应用不方便”与「便利になったことは確か」矛盾。",
+          "en": "Evidence: 「それでも、時間に余裕があるときには、あえて人に道を聞いてみようと思う」.\nReasoning: The writer will keep using apps but, with time to spare, wants to ask people on purpose, since focusing on efficiency means missing things. 「急がないとき」 matches 「時間に余裕があるとき」.\nTrap: The writer doesn't reject apps; calling them inconvenient contradicts 「便利になったことは確か」."
+        },
+        "wrong": [
+          {
+            "zh": "作者反而说应用对不擅长搭话的人是好事，没有要求他们鼓起勇气。",
+            "en": "The writer says apps are good for shy people; they aren't told to be brave."
+          },
+          {
+            "zh": "作者想说的是有时间时去问人，不是旅行前一定要用应用。",
+            "en": "The point is asking people when there's time, not always using the app before trips."
+          },
+          {
+            "zh": "作者说应用确实方便，以后也会继续用。",
+            "en": "The writer says apps are convenient and will keep using them."
+          },
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-p9",
+    "type": "info",
+    "difficulty": 2,
+    "intro": "林さんは、みなみ市に住む会社員である。平日は毎日18時まで仕事があり、会社から市民センターまでは30分かかる。来月から、市民センターの講座に一つ通いたいと思っている。仕事の後か土日に通えて、全部で5,000円以内の講座がいい。ヨガマットは持っていない。",
+    "passage": "みなみ市民センター　秋の講座のご案内\n| 講座名 | 曜日・時間 | 回数 | 受講料 | 材料費 |\n| A　はじめての書道 | 毎週水曜日　10:00～12:00 | 4回 | 3,000円 | 1,000円 |\n| B　パソコン（表計算） | 毎週木曜日　19:00～21:00 | 4回 | 4,500円 | なし |\n| C　季節の和菓子づくり | 毎週土曜日　13:00～15:00 | 3回 | 3,000円 | 2,500円 |\n| D　やさしいヨガ | 毎週日曜日　9:30～11:00 | 4回 | 4,500円 | なし |\n| E　スマホで写真を撮ろう | 毎週火曜日　18:00～20:00 | 4回 | 3,500円 | なし |\n・受講料は、みなみ市に住んでいる方、または市内の会社や学校に通っている方の料金です。それ以外の方は、受講料が1,000円高くなります。\n・申し込みは、10月10日（金）までに、センターの受付か電話でお願いします。定員を超えた場合は、抽選で決めます。\n・Dの講座では、ヨガマットをお持ちでない方に、1回200円で貸し出します。\n・材料費は、第1回の講座の日に、会場でお支払いください。",
+    "tr": {
+      "zh": "南市民中心 秋季讲座介绍。\nA 书法入门：每周三 10:00–12:00，4次，学费3,000日元，材料费1,000日元。\nB 电脑（电子表格）：每周四 19:00–21:00，4次，学费4,500日元，无材料费。\nC 时令和果子制作：每周六 13:00–15:00，3次，学费3,000日元，材料费2,500日元。\nD 轻松瑜伽：每周日 9:30–11:00，4次，学费4,500日元，无材料费。\nE 用手机拍照：每周二 18:00–20:00，4次，学费3,500日元，无材料费。\n学费为住在南市，或在市内公司、学校上班上学者的价格。其他人学费贵1,000日元。\n请在10月10日（周五）之前，到中心前台或通过电话报名。超过名额时抽签决定。\nD讲座为没有瑜伽垫的人出租瑜伽垫，每次200日元。\n材料费请在第1次课当天在会场支付。",
+      "en": "Minami Civic Centre — autumn courses.\nA Calligraphy for beginners: Wednesdays 10:00–12:00, 4 sessions, fee ¥3,000, materials ¥1,000.\nB Computers (spreadsheets): Thursdays 19:00–21:00, 4 sessions, fee ¥4,500, no materials.\nC Seasonal Japanese sweets: Saturdays 13:00–15:00, 3 sessions, fee ¥3,000, materials ¥2,500.\nD Gentle yoga: Sundays 9:30–11:00, 4 sessions, fee ¥4,500, no materials.\nE Taking photos with your smartphone: Tuesdays 18:00–20:00, 4 sessions, fee ¥3,500, no materials.\nFees are for people who live in Minami City or work or study at a company or school in the city. For anyone else the fee is ¥1,000 higher.\nApply at the centre's front desk or by phone by Friday 10 October. If a course is oversubscribed, places are decided by lottery.\nFor course D, yoga mats are lent to those without one at ¥200 per session.\nPlease pay materials costs at the venue on the day of the first session."
+    },
+    "questions": [
+      {
+        "q": "林さんが通える講座はどれか。",
+        "options": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「B　パソコン（表計算）」「毎週木曜日　19:00～21:00」「4,500円」；「Dの講座では、ヨガマットをお持ちでない方に、1回200円で貸し出します」。\n推理：林先生18点下班，到中心要30分钟，18:30以后才能到，所以周二18:00开始的E赶不上；周三上午的A也不行。C：3,000＋2,500＝5,500日元，超预算。D：4,500＋200×4＝5,300日元，也超预算。B是晚上7点开始，4,500日元，两个条件都满足。\n容易错：D只看学费4,500日元会以为在预算内，忘了他没有瑜伽垫要租4次。",
+          "en": "Evidence: 「B　パソコン（表計算）」 「毎週木曜日　19:00～21:00」 「4,500円」; 「Dの講座では、ヨガマットをお持ちでない方に、1回200円で貸し出します」.\nReasoning: Hayashi finishes at 18:00 and needs 30 minutes to get there, arriving after 18:30, so E (Tuesday 18:00) is too early, and A (Wednesday morning) is out too. C: 3,000 + 2,500 = 5,500 yen, over budget. D: 4,500 + 200 × 4 = 5,300 yen, also over. B starts at 19:00 and costs 4,500 yen: both conditions met.\nTrap: Looking only at D's 4,500-yen fee and forgetting he has no mat and must rent one four times."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "C学费3,000日元加材料费2,500日元，共5,500日元，超过5,000日元。",
+            "en": "C is 3,000 + 2,500 materials = 5,500 yen, over 5,000."
+          },
+          {
+            "zh": "D学费4,500日元，加上4次瑜伽垫租金800日元，共5,300日元，超预算。",
+            "en": "D is 4,500 + 800 for four mat rentals = 5,300 yen, over budget."
+          },
+          {
+            "zh": "E周二18:00开始，林先生18点下班后还要30分钟才能到，赶不上。",
+            "en": "E starts at 18:00 on Tuesdays; he finishes at 18:00 and needs 30 minutes, so he can't make it."
+          }
+        ]
+      },
+      {
+        "q": "となりの市に住んでいる佐々木さんは、みなみ市内の会社で働いている。Cの講座に申し込む場合、全部でいくら払うか。",
+        "options": [
+          "5,500円",
+          "6,500円",
+          "3,000円",
+          "4,000円"
+        ],
+        "answer": 0,
+        "why": {
+          "zh": "依据：「受講料は、みなみ市に住んでいる方、または市内の会社や学校に通っている方の料金です」；C「3,000円」「2,500円」。\n推理：佐佐木住在邻市，但在南市内的公司上班，属于「または市内の会社…に通っている方」，学费按3,000日元算；再加材料费2,500日元，共5,500日元。\n容易错：只看到“住在邻市”就加1,000日元，算成6,500日元。",
+          "en": "Evidence: 「受講料は、みなみ市に住んでいる方、または市内の会社や学校に通っている方の料金です」; C 「3,000円」 「2,500円」.\nReasoning: Sasaki lives in the next city but works at a company in Minami, so the 「または市内の会社…に通っている方」 rate applies: fee 3,000 yen. Plus 2,500 yen materials = 5,500 yen.\nTrap: Seeing \"lives in the next city\" and adding 1,000 yen to get 6,500."
+        },
+        "wrong": [
+          null,
+          {
+            "zh": "在市内公司上班的人也按原价，不用加1,000日元。",
+            "en": "People who work in the city pay the listed fee; no 1,000-yen surcharge."
+          },
+          {
+            "zh": "3,000日元只是学费，没有加材料费2,500日元。",
+            "en": "¥3,000 is just the fee, leaving out the ¥2,500 materials."
+          },
+          {
+            "zh": "4,000日元是学费加了1,000日元却没算材料费，两处都错了。",
+            "en": "¥4,000 adds the surcharge and leaves out materials — wrong on both counts."
+          }
+        ]
+      }
+    ]
+  }
+]

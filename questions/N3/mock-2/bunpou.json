@@ -1,0 +1,715 @@
+[
+  {
+    "id": "n3-m2-101",
+    "type": "bunpou",
+    "refs": [
+      "lesson36#5",
+      "lesson36#4"
+    ],
+    "difficulty": 1,
+    "stem": "この地域では一週間（　）大雨が降り続き、多くの道路が通れなくなった。",
+    "options": [
+      "にわたって",
+      "にかけて",
+      "をもとに",
+      "にしたがって"
+    ],
+    "answer": 0,
+    "full": "この地域では一週間にわたって大雨が降り続き、多くの道路が通れなくなった。",
+    "tr": {
+      "zh": "这个地区连续下了一个星期的大雨，很多道路都无法通行了。",
+      "en": "Heavy rain fell in this area for a whole week, and many roads became impassable."
+    },
+    "why": {
+      "zh": "线索：空格前是表示一段时间长度的「一週間」，后面是「降り続き」。\n规则：「〜にわたって」＝在整个……期间（或范围）一直……，接表示时间长度、范围的名词：「三年にわたって」「全国にわたって」。\n辨析：「にかけて」也和时间连用，但要说从哪儿到哪儿：「夜から朝にかけて」；只有一个长度「一週間」时用「にわたって」。",
+      "en": "Clue: Before the blank is 「一週間」, a length of time, and after it 「降り続き」.\nRule: 「〜にわたって」 = throughout (a period or area), after a noun of duration or extent: 「三年にわたって」, 「全国にわたって」.\nContrast: 「にかけて」 also goes with time, but it needs a from-to span: 「夜から朝にかけて」. With a single length like 「一週間」, use 「にわたって」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「にかけて」要用「AからBにかけて」表示起止，不能只接一个时间长度。",
+        "en": "「にかけて」 needs 'from A to B'; it can't follow a bare length of time."
+      },
+      {
+        "zh": "「をもとに」是“以……为基础”，「一週間をもとに」说不通。",
+        "en": "「をもとに」 is 'based on'; 「一週間をもとに」 makes no sense."
+      },
+      {
+        "zh": "「にしたがって」是“随着……”，前面要接表示变化的词（「時間がたつにしたがって」），不接单纯的时间长度。",
+        "en": "「にしたがって」 is 'as … changes', after a word of change (「時間がたつにしたがって」), not a bare length of time."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-102",
+    "type": "bunpou",
+    "refs": [
+      "lesson37#6",
+      "lesson38#3"
+    ],
+    "difficulty": 2,
+    "stem": "自分でやると言った（　）、どんなに大変でも最後まで責任を持ってやるつもりだ。",
+    "options": [
+      "からには",
+      "くせに",
+      "ものの",
+      "としても"
+    ],
+    "answer": 0,
+    "full": "自分でやると言ったからには、どんなに大変でも最後まで責任を持ってやるつもりだ。",
+    "tr": {
+      "zh": "既然说了要自己做，不管多辛苦，我都打算负责到底。",
+      "en": "Since I said I'd do it myself, I intend to see it through to the end, however hard it gets."
+    },
+    "why": {
+      "zh": "线索：前面是已经做出的决定「自分でやると言った」，后面是由此而来的决心「最後まで…やるつもりだ」。\n规则：「〜からには」＝既然……就（一定要）……，后面接决心、义务、劝告；接动词简体：「言ったからには」。\n辨析：「くせに」也接在事实后面，但用来责备别人“明明……却……”，后面是不满，不是自己的决心。",
+      "en": "Clue: Before the blank is a decision already made, 「自分でやると言った」; after it, the resolve that follows, 「最後まで…やるつもりだ」.\nRule: 「〜からには」 = now that …, (I must) …, followed by resolve, duty or advice; it takes the plain form: 「言ったからには」.\nContrast: 「くせに」 also follows a fact, but it criticises someone (\"even though … they …\") and is followed by a complaint, not one's own resolve."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「くせに」用来责备别人，后面是不满，而这里是自己的决心。",
+        "en": "「くせに」 criticises someone, followed by a complaint; here it's the speaker's own resolve."
+      },
+      {
+        "zh": "「ものの」是“虽然……但是”，前后应相反，可说了要做和打算做到底并不矛盾。",
+        "en": "「ものの」 is 'although', for a contrast; saying you'll do it and meaning to finish don't contrast."
+      },
+      {
+        "zh": "「としても」是假设让步“即使……也”，可「言った」是已经发生的事实。",
+        "en": "「としても」 is a hypothetical 'even if', but 「言った」 is a fact that already happened."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-103",
+    "type": "bunpou",
+    "refs": [
+      "lesson38#1",
+      "lesson37#3"
+    ],
+    "difficulty": 1,
+    "stem": "朝から強い雨が降っていた（　）、マラソン大会は予定どおり行われた。",
+    "options": [
+      "にもかかわらず",
+      "からといって",
+      "ものだから",
+      "ばかりでなく"
+    ],
+    "answer": 0,
+    "full": "朝から強い雨が降っていたにもかかわらず、マラソン大会は予定どおり行われた。",
+    "tr": {
+      "zh": "尽管从早上就下着大雨，马拉松比赛还是按计划举行了。",
+      "en": "Despite heavy rain from the morning, the marathon went ahead as planned."
+    },
+    "why": {
+      "zh": "线索：「強い雨が降っていた」本来会让比赛取消，结果却是「予定どおり行われた」，前后相反。\n规则：「〜にもかかわらず」＝尽管……却……，说出与预期相反的事实，书面色彩；接动词简体或名词：「雨にもかかわらず」。\n辨析：「ものだから」表示原因，前后要顺接（「雨が降ったものだから、中止になった」）；下大雨不是比赛照常举行的原因。",
+      "en": "Clue: 「強い雨が降っていた」 would normally cancel the race, yet it 「予定どおり行われた」: the two halves clash.\nRule: 「〜にもかかわらず」 = despite …, for a fact contrary to what you'd expect; formal; after the plain form or a noun: 「雨にもかかわらず」.\nContrast: 「ものだから」 gives a cause and needs a matching result (「雨が降ったものだから、中止になった」); heavy rain isn't why the race went ahead."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「からといって」后面要接否定的结论（「〜とは限らない」「〜わけではない」），这里后句是肯定的事实。",
+        "en": "「からといって」 needs a negative conclusion after it (「〜とは限らない」, 「〜わけではない」), but this is a plain positive fact."
+      },
+      {
+        "zh": "「ものだから」表示原因、辩解，下雨不会是比赛照常举行的原因。",
+        "en": "「ものだから」 gives a reason or excuse, and rain isn't why the race went ahead."
+      },
+      {
+        "zh": "「ばかりでなく」是“不仅……而且”，后面要补充同方向的事，下雨和照常举行方向相反。",
+        "en": "「ばかりでなく」 is 'not only… but also', adding something in the same direction; rain and the race going ahead pull opposite ways."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-104",
+    "type": "bunpou",
+    "refs": [
+      "lesson39#2",
+      "lesson48#1"
+    ],
+    "difficulty": 2,
+    "stem": "駅前のジムの会員になった（　）、平日は残業が多くて、月に二、三回しか通えていない。",
+    "options": [
+      "ものの",
+      "からには",
+      "ついでに",
+      "とたん"
+    ],
+    "answer": 0,
+    "full": "駅前のジムの会員になったものの、平日は残業が多くて、月に二、三回しか通えていない。",
+    "tr": {
+      "zh": "虽然成了车站前健身房的会员，可是工作日老加班，一个月只能去两三次。",
+      "en": "I joined the gym by the station, but with all the overtime on weekdays I only manage to go two or three times a month."
+    },
+    "why": {
+      "zh": "线索：成了会员「会員になった」，照理会常去，后面却是「月に二、三回しか通えていない」。\n规则：「〜ものの」＝虽然……但是……，前面是事实，后面是没按预期发展的结果；接动词简体：「なったものの」。\n辨析：「からには」也接已经发生的事，但后面要接决心、义务（「会員になったからには、毎週通おう」），不接没做到的结果。",
+      "en": "Clue: The speaker 「会員になった」 and so should be going often, yet 「月に二、三回しか通えていない」.\nRule: 「〜ものの」 = although …, a fact followed by an outcome that didn't go as expected; it takes the plain form: 「なったものの」.\nContrast: 「からには」 also follows something done, but it's followed by resolve or duty (「会員になったからには、毎週通おう」), not by a failure."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「からには」后面要接决心或义务，不接“只能去两三次”这种结果。",
+        "en": "「からには」 is followed by resolve or duty, not by 'only manage to go two or three times'."
+      },
+      {
+        "zh": "「ついでに」是顺便做另一件事，可后面没有顺便做的事。",
+        "en": "「ついでに」 is doing something else on the way, but no such extra action follows."
+      },
+      {
+        "zh": "「とたん」后面是瞬间发生的意外，而「月に二、三回しか通えていない」是持续的状态。",
+        "en": "「とたん」 is followed by a sudden event, but 「月に二、三回しか通えていない」 is an ongoing state."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-105",
+    "type": "bunpou",
+    "refs": [
+      "lesson41#5",
+      "lesson41#4"
+    ],
+    "difficulty": 2,
+    "stem": "この公園は、子どもたち（　）、近くに住むお年寄りや会社員にも人気がある。",
+    "options": [
+      "に限らず",
+      "に限って",
+      "にとって",
+      "について"
+    ],
+    "answer": 0,
+    "full": "この公園は、子どもたちに限らず、近くに住むお年寄りや会社員にも人気がある。",
+    "tr": {
+      "zh": "这个公园不只受孩子们欢迎，也受到附近的老人和上班族的喜爱。",
+      "en": "This park is popular not only with children but also with elderly people and office workers who live nearby."
+    },
+    "why": {
+      "zh": "线索：后半句是「お年寄りや会社員にも」，有「も」，说明不只孩子。\n规则：「〜に限らず」＝不限于……（……也），后面常有「も」；接名词：「子どもたちに限らず」。\n辨析：「に限って」＝偏偏、只有……，把范围限定在一处（「急いでいる時に限って電車が遅れる」），和后面的「も」矛盾。",
+      "en": "Clue: The second half has 「お年寄りや会社員にも」 with 「も」, so it isn't just children.\nRule: 「〜に限らず」 = not limited to …, (… too), often with 「も」 after it; it follows a noun: 「子どもたちに限らず」.\nContrast: 「に限って」 = only / of all times, narrowing to one case (「急いでいる時に限って電車が遅れる」), which clashes with 「も」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「に限って」把范围限定在孩子，和后面的「も」矛盾。",
+        "en": "「に限って」 limits it to children, which clashes with 「も」."
+      },
+      {
+        "zh": "「にとって」后面要接评价（「子どもにとって大切だ」），句子变成“对孩子们来说也受老人欢迎”，说不通。",
+        "en": "「にとって」 needs a judgement after it; 'for children, it's popular with the elderly too' makes no sense."
+      },
+      {
+        "zh": "「について」是“关于”，表示话题，不能表示“不只……”。",
+        "en": "「について」 means 'about', a topic; it can't mean 'not only'."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-106",
+    "type": "bunpou",
+    "refs": [
+      "lesson44#5",
+      "lesson45#2"
+    ],
+    "difficulty": 2,
+    "stem": "寝不足のまま車を運転すると、大きな事故を起こし（　）。",
+    "options": [
+      "かねない",
+      "かねる",
+      "っこない",
+      "得ない"
+    ],
+    "answer": 0,
+    "full": "寝不足のまま車を運転すると、大きな事故を起こしかねない。",
+    "tr": {
+      "zh": "睡眠不足的状态下开车，很可能会出大事故。",
+      "en": "If you drive without enough sleep, you could easily cause a serious accident."
+    },
+    "why": {
+      "zh": "线索：「寝不足のまま車を運転すると」是危险的做法，后面「大きな事故」是可能出现的坏结果。\n规则：ます形词干＋「かねない」＝很可能会……，只用于担心的坏结果：「病気になりかねない」。\n辨析：「かねる」看起来像，意思却是“难以……、不便……”（「お答えしかねます」），表示说话人不能做，不表示可能发生。",
+      "en": "Clue: 「寝不足のまま車を運転すると」 is risky, and 「大きな事故」 is a bad outcome that might follow.\nRule: ます-stem ＋ 「かねない」 = could well …, only for a feared bad outcome: 「病気になりかねない」.\nContrast: 「かねる」 looks similar but means 'can't (bring oneself to)' (「お答えしかねます」): the speaker declining, not something that might happen."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「かねる」是“难以……、不便……”，用于说话人委婉拒绝，不表示坏事可能发生。",
+        "en": "「かねる」 is a polite 'cannot', not a risk that something bad will happen."
+      },
+      {
+        "zh": "「っこない」是“绝对不可能”，和提醒危险的意思正好相反。",
+        "en": "「っこない」 is 'no way it will happen', the opposite of a warning."
+      },
+      {
+        "zh": "「得ない」表示不可能，句子变成“不可能出事故”，和前面的危险做法矛盾。",
+        "en": "「得ない」 means impossible, which contradicts the risky behaviour before it."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-107",
+    "type": "bunpou",
+    "refs": [
+      "lesson49#3",
+      "lesson42#6"
+    ],
+    "difficulty": 2,
+    "stem": "弟は部屋の電気をつけ（　）にして出かけることが多いので、よく母に注意される。",
+    "options": [
+      "っぱなし",
+      "かけ",
+      "っぽい",
+      "気味"
+    ],
+    "answer": 0,
+    "full": "弟は部屋の電気をつけっぱなしにして出かけることが多いので、よく母に注意される。",
+    "tr": {
+      "zh": "弟弟经常开着房间的灯就出门，所以常被妈妈说。",
+      "en": "My brother often goes out leaving the light on in his room, so Mum is always telling him off."
+    },
+    "why": {
+      "zh": "线索：开了灯「つけ」之后就那样出门「出かける」，没关，后面还被「注意される」。\n规则：ます形词干＋「っぱなし」＝（该收拾的）一直放着不管，常说「〜っぱなしにする」：「水を出しっぱなしにする」。\n辨析：「かけ」是做到一半（「読みかけの本」），开灯是一下子完成的动作，没有“开到一半”。",
+      "en": "Clue: He turns the light on (「つけ」) and goes out (「出かける」) without switching it off, and gets told off (「注意される」).\nRule: ます-stem ＋ 「っぱなし」 = leave … as it is (when you shouldn't), often 「〜っぱなしにする」: 「水を出しっぱなしにする」.\nContrast: 「かけ」 means half-done (「読みかけの本」); switching on a light happens at once, so it can't be half-done."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「かけ」是做到一半，开灯不存在“做到一半”。",
+        "en": "「かけ」 is half-done, and turning on a light can't be half-done."
+      },
+      {
+        "zh": "「っぽい」是“像……、容易……”（「忘れっぽい」），「つけっぽいにして」不成立。",
+        "en": "「っぽい」 is '-ish, prone to' (「忘れっぽい」); 「つけっぽいにして」 isn't a phrase."
+      },
+      {
+        "zh": "「気味」是有点……的倾向（「かぜ気味」），不接「つけ」表示开着不关。",
+        "en": "「気味」 is a slight tendency (「かぜ気味」), not leaving something switched on."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-108",
+    "type": "bunpou",
+    "refs": [
+      "lesson48#4",
+      "lesson48#1"
+    ],
+    "difficulty": 1,
+    "stem": "大事な会議の（　）、携帯電話が大きな音で鳴ってしまい、とても恥ずかしかった。",
+    "options": [
+      "最中に",
+      "とたんに",
+      "次第",
+      "ついでに"
+    ],
+    "answer": 0,
+    "full": "大事な会議の最中に、携帯電話が大きな音で鳴ってしまい、とても恥ずかしかった。",
+    "tr": {
+      "zh": "正在开重要会议的时候，手机大声响了起来，太丢人了。",
+      "en": "Right in the middle of an important meeting, my phone rang loudly, and I was really embarrassed."
+    },
+    "why": {
+      "zh": "线索：「会議の」后面接空格，手机是在会议进行中途响的，还带来「恥ずかしかった」。\n规则：「名词＋の＋最中に」或「〜ている最中に」＝正在……的时候（突然发生了别的事），多是打断进行中的事。\n辨析：「とたんに」也表示事情紧接着发生，但要接动词た形（「会議が始まったとたんに」），不接「名词＋の」。",
+      "en": "Clue: 「会議の」 comes before the blank: the phone rang partway through the meeting, which was 「恥ずかしかった」.\nRule: 「noun ＋ の ＋ 最中に」 or 「〜ている最中に」 = right in the middle of …, when something else interrupts.\nContrast: 「とたんに」 also says something happened right then, but it follows a verb's た-form (「会議が始まったとたんに」), not 「noun ＋ の」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「とたんに」要接动词た形，不能接「会議の」。",
+        "en": "「とたんに」 follows a verb's ta-form, not 「会議の」."
+      },
+      {
+        "zh": "「次第」接ます形词干或名词（不加「の」），表示“一……就”或“取决于”，这里不通。",
+        "en": "「次第」 follows a ます-stem or a bare noun ('as soon as' / 'depending on'); it doesn't fit here."
+      },
+      {
+        "zh": "「ついでに」是顺便做某事，手机响不是有意顺便做的事。",
+        "en": "「ついでに」 is doing something on the side; a phone ringing isn't something you do on purpose."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-109",
+    "type": "bunpou",
+    "refs": [
+      "lesson50#2",
+      "lesson50#5"
+    ],
+    "difficulty": 1,
+    "stem": "今日は郵便局へ行く（　）、となりのパン屋で明日の朝ご飯のパンを買ってきた。",
+    "options": [
+      "ついでに",
+      "たびに",
+      "とおりに",
+      "くせに"
+    ],
+    "answer": 0,
+    "full": "今日は郵便局へ行くついでに、となりのパン屋で明日の朝ご飯のパンを買ってきた。",
+    "tr": {
+      "zh": "今天去邮局的时候，顺便在旁边的面包店买了明天早饭的面包。",
+      "en": "Today, while I was going to the post office, I picked up bread for tomorrow's breakfast at the bakery next door."
+    },
+    "why": {
+      "zh": "线索：主要的事是「郵便局へ行く」，「となりのパン屋で」买面包是借这个机会另外做的事。\n规则：「〜ついでに」＝顺便……，前面是本来要做的事，后面是借机附带做的事；接动词辞书形・た形或「名词＋の」：「買い物のついでに」。\n辨析：「たびに」＝每次……都……，说的是反复发生的习惯，和「今日は」这一次的事不合。",
+      "en": "Clue: The main errand is 「郵便局へ行く」; buying bread at 「となりのパン屋」 is extra, done while out.\nRule: 「〜ついでに」 = while (doing A), also B: the planned errand, then something done on the side; after the dictionary/た-form or 「noun ＋ の」: 「買い物のついでに」.\nContrast: 「たびに」 = every time …, for a repeated habit, which doesn't fit the one-off 「今日は」."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「たびに」表示每次都这样，和「今日は」这一次的事不合。",
+        "en": "「たびに」 is 'every time', which clashes with the one-off 「今日は」."
+      },
+      {
+        "zh": "「とおりに」是按照……那样，「郵便局へ行くとおりに」说不通。",
+        "en": "「とおりに」 is 'just as'; 「郵便局へ行くとおりに」 makes no sense."
+      },
+      {
+        "zh": "「くせに」用来责备“明明……却……”，这里没有责备的意思。",
+        "en": "「くせに」 criticises ('even though… yet'), and nobody is being criticised."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-110",
+    "type": "bunpou",
+    "refs": [
+      "lesson51#2",
+      "lesson55#1"
+    ],
+    "difficulty": 2,
+    "stem": "料理ができる（　）、簡単なサラダやみそ汁ぐらいしか作れません。",
+    "options": [
+      "といっても",
+      "からこそ",
+      "といえば",
+      "からといって"
+    ],
+    "answer": 0,
+    "full": "料理ができるといっても、簡単なサラダやみそ汁ぐらいしか作れません。",
+    "tr": {
+      "zh": "虽说会做饭，其实也就只会做简单的沙拉和味噌汤。",
+      "en": "I can cook, but only simple things like salad and miso soup."
+    },
+    "why": {
+      "zh": "线索：先说「料理ができる」，后面马上收回一部分：「サラダやみそ汁ぐらいしか作れません」。\n规则：「〜といっても」＝虽说……，其实（程度没那么高），用来修正前面的话给人的印象；接简体：「できるといっても」。\n辨析：「といえば」是“说到……”，用来引出联想到的话题（「料理といえば母の カレーだ」），不表示修正。",
+      "en": "Clue: The speaker first says 「料理ができる」, then takes some of it back: 「サラダやみそ汁ぐらいしか作れません」.\nRule: 「〜といっても」 = although I say …, (it's not as much as it sounds), correcting the impression the first part gives; after the plain form: 「できるといっても」.\nContrast: 「といえば」 is 'speaking of …', bringing up an associated topic (「料理といえば母の カレーだ」); it doesn't correct anything."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「からこそ」是“正因为……才”，强调原因，可会做饭不是只会做沙拉的原因。",
+        "en": "「からこそ」 stresses a reason, but being able to cook isn't why the speaker can only make salad."
+      },
+      {
+        "zh": "「といえば」是“说到……”，用来引出话题，不表示“虽说……其实”。",
+        "en": "「といえば」 introduces a topic ('speaking of'); it doesn't mean 'though I say…, really'."
+      },
+      {
+        "zh": "「からといって」后面要接“不一定……”之类的否定判断，「しか作れません」不是这种结论。",
+        "en": "「からといって」 needs a conclusion like 'that doesn't mean…'; 「しか作れません」 isn't one."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-111",
+    "type": "bunpou",
+    "refs": [
+      "lesson52#3"
+    ],
+    "difficulty": 2,
+    "stem": "うれしい（　）、去年なくした指輪が、引き出しの奥から出てきた。",
+    "options": [
+      "ことに",
+      "ように",
+      "ために",
+      "くせに"
+    ],
+    "answer": 0,
+    "full": "うれしいことに、去年なくした指輪が、引き出しの奥から出てきた。",
+    "tr": {
+      "zh": "令人高兴的是，去年丢的戒指从抽屉深处找到了。",
+      "en": "To my delight, the ring I lost last year turned up at the back of a drawer."
+    },
+    "why": {
+      "zh": "线索：句首是表示感情的形容词「うれしい」，后面是让人高兴的事实「指輪が…出てきた」。\n规则：感情形容词／动词＋「ことに」＝令人……的是，先说出说话人的感受，再说事实：「残念なことに」「驚いたことに」。\n辨析：「ように」放在这里像“像……那样”或“为了……”，可「うれしい」后面接的是事实本身，不是比喻或目的。",
+      "en": "Clue: The sentence opens with the feeling word 「うれしい」, followed by the happy fact 「指輪が…出てきた」.\nRule: feeling adjective/verb ＋ 「ことに」 = to my (delight / regret …), giving the speaker's feeling first, then the fact: 「残念なことに」, 「驚いたことに」.\nContrast: 「ように」 here would read as 'like' or 'so that', but what follows 「うれしい」 is the fact itself, not a comparison or a purpose."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「ように」表示比喻或目的，“像高兴一样戒指出来了”说不通。",
+        "en": "「ように」 is a comparison or purpose; 'like happy, the ring turned up' makes no sense."
+      },
+      {
+        "zh": "「ために」表示原因或目的，高兴不是戒指被找到的原因。",
+        "en": "「ために」 gives a cause or purpose; being happy isn't why the ring turned up."
+      },
+      {
+        "zh": "「くせに」用来责备人，这里是高兴的事。",
+        "en": "「くせに」 criticises someone, but this is good news."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-112",
+    "type": "bunpou",
+    "refs": [
+      "lesson44#2",
+      "lesson44#3"
+    ],
+    "difficulty": 3,
+    "stem": "引っ越した友だちの新しい住所も電話番号もわからないので、結婚したことを知らせ（　）。",
+    "options": [
+      "ずにはいられない",
+      "ざるを得ない",
+      "かねない",
+      "ようがない"
+    ],
+    "answer": 3,
+    "full": "引っ越した友だちの新しい住所も電話番号もわからないので、結婚したことを知らせようがない。",
+    "tr": {
+      "zh": "搬了家的朋友的新地址和电话都不知道，所以没办法告诉他我结婚了。",
+      "en": "I don't know my friend's new address or phone number since they moved, so there's no way to tell them I got married."
+    },
+    "why": {
+      "zh": "线索：「住所も電話番号もわからない」，联系的手段全都没有。\n规则：ます形词干＋「ようがない」＝想做也没有办法做，因为缺少方法、手段：「連絡しようがない」「直しようがない」。\n辨析：「ざるを得ない」是“不得不做”（虽然不想），说的是被迫去做；这里是想做却做不了，正好相反。",
+      "en": "Clue: 「住所も電話番号もわからない」: there's no means of contact at all.\nRule: ます-stem ＋ 「ようがない」 = there's no way to …, for lack of a method or means: 「連絡しようがない」, 「直しようがない」.\nContrast: 「ざるを得ない」 is 'have no choice but to' (though you'd rather not): being forced to act. Here the speaker wants to act and can't, the opposite."
+    },
+    "wrong": [
+      {
+        "zh": "「ずにはいられない」是“忍不住要做”，可这里没有联系方式，说的是做不到。",
+        "en": "「ずにはいられない」 is 'can't help doing it', but here the point is that it can't be done."
+      },
+      {
+        "zh": "「ざるを得ない」是“不得不做”，可连地址和电话都不知道，根本做不到。",
+        "en": "「ざるを得ない」 is 'have no choice but to do it', but without an address or number it can't be done at all."
+      },
+      {
+        "zh": "「かねない」表示可能发生坏结果，“告诉朋友结婚”不是担心的坏事。",
+        "en": "「かねない」 warns of a bad outcome; telling a friend you married isn't one."
+      },
+      null
+    ]
+  },
+  {
+    "id": "n3-m2-113",
+    "type": "bunpou",
+    "refs": [
+      "lesson57#3",
+      "lesson57#4"
+    ],
+    "difficulty": 3,
+    "stem": "一人暮らしを始めたばかりのころは、家族に会いたくて（　）。毎晩のように実家に電話していた。",
+    "options": [
+      "ならなかった",
+      "もかまわなかった",
+      "はいけなかった",
+      "もよかった"
+    ],
+    "answer": 0,
+    "full": "一人暮らしを始めたばかりのころは、家族に会いたくてならなかった。毎晩のように実家に電话していた。",
+    "tr": {
+      "zh": "刚开始一个人住的时候，想家人想得不得了，几乎每天晚上都往家里打电话。",
+      "en": "When I'd just started living on my own, I missed my family terribly. I phoned home almost every night."
+    },
+    "why": {
+      "zh": "线索：「会いたくて」后面接空格，下一句「毎晩のように実家に電話していた」说明想念的心情非常强烈。\n规则：「〜てならない」＝……得不得了、非常……，接表示感情、感觉的词：「心配でならない」「残念でならない」，和「〜てたまらない」意思相近。\n辨析：「〜てもかまわない」「〜てもいい」表示允许，「〜てはいけない」表示禁止，都不是在说感情有多强烈。",
+      "en": "Clue: 「会いたくて」 before the blank, and the next sentence 「毎晩のように実家に電話していた」 shows how strong the feeling was.\nRule: 「〜てならない」 = terribly, unbearably …, after words of feeling or sensation: 「心配でならない」, 「残念でならない」; close to 「〜てたまらない」.\nContrast: 「〜てもかまわない」 and 「〜てもいい」 give permission, and 「〜てはいけない」 forbids; none of them says how strong a feeling is."
+    },
+    "wrong": [
+      null,
+      {
+        "zh": "「〜てもかまわない」表示“……也没关系”，是允许，不表示想念得厉害。",
+        "en": "「〜てもかまわない」 is permission ('it's fine to'), not a strong feeling."
+      },
+      {
+        "zh": "「〜てはいけない」表示禁止，“不许想见家人”和后面每晚打电话矛盾。",
+        "en": "「〜てはいけない」 forbids; 'must not want to see them' clashes with phoning every night."
+      },
+      {
+        "zh": "「〜てもいい」表示许可，不表示心情有多强烈。",
+        "en": "「〜てもいい」 gives permission; it doesn't express how strong the feeling is."
+      }
+    ]
+  },
+  {
+    "id": "n3-m2-114",
+    "type": "narabe",
+    "refs": [
+      "lesson42#4"
+    ],
+    "difficulty": 1,
+    "stem": "最近は現金を使わずに [★] [_] [_] [_] 。",
+    "options": [
+      "スマホで",
+      "払う人が",
+      "増え",
+      "つつある"
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "full": "最近は現金を使わずにスマホで払う人が増えつつある。",
+    "tr": {
+      "zh": "最近不用现金、用手机付款的人越来越多了。",
+      "en": "These days, more and more people pay with their phones instead of cash."
+    },
+    "why": {
+      "zh": "线索：选项有ます形词干「増え」和「つつある」，想到「〜つつある」（正在逐渐……）。\n怎么排：「増え＋つつある」连在一起放到句尾；「払う人が」是「増え」的主语；「スマホで」说明怎么付钱，修饰「払う」，要放在「払う人が」前面。顺序：スマホで → 払う人が → 増え → つつある，★ 是「スマホで」。\n容易错：把「スマホで」放到「払う人が」后面。「スマホで」修饰的是「払う」，修饰语要放在它前面。",
+      "en": "Clue: The pieces include the ます-stem 「増え」 and 「つつある」: think 「〜つつある」 (gradually …ing).\nOrder: 「増え ＋ つつある」 join and go last; 「払う人が」 is the subject of 「増え」; 「スマホで」 says how they pay, so it modifies 「払う」 and comes before 「払う人が」: スマホで → 払う人が → 増え → つつある. The ★ is 「スマホで」.\nTrap: Putting 「スマホで」 after 「払う人が」. It modifies 「払う」, and a modifier goes before what it modifies."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-m2-115",
+    "type": "narabe",
+    "refs": [
+      "lesson48#3"
+    ],
+    "difficulty": 2,
+    "stem": "せっかく留学しているのだから、 [_] [_] [_] [★] 、いろいろな所へ旅行したい。",
+    "options": [
+      "うちに",
+      "住んで",
+      "日本に",
+      "いる"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "せっかく留学しているのだから、日本に住んでいるうちに、いろいろな所へ旅行したい。",
+    "tr": {
+      "zh": "难得来留学，想趁住在日本的时候去各种地方旅行。",
+      "en": "Since I'm studying abroad anyway, I want to travel to lots of places while I'm living in Japan."
+    },
+    "why": {
+      "zh": "线索：选项有「うちに」，后面是想做的事「旅行したい」，想到「〜ているうちに」（趁……的时候）。\n怎么排：「日本に」是「住む」的地点，放在「住んで」前面；「住んで＋いる」组成「住んでいる」；最后接「うちに」。顺序：日本に → 住んで → いる → うちに，★ 是「うちに」。\n容易错：把「うちに」接在「住んで」后面。「うちに」前面要用辞书形或「〜ている」「〜ない」，不接て形。",
+      "en": "Clue: 「うちに」 is among the pieces, and what follows is a wish, 「旅行したい」: think 「〜ているうちに」 (while …, before it ends).\nOrder: 「日本に」 is where one lives, so it goes before 「住んで」; 「住んで ＋ いる」 make 「住んでいる」; 「うちに」 comes last: 日本に → 住んで → いる → うちに. The ★ is 「うちに」.\nTrap: Attaching 「うちに」 straight to 「住んで」. 「うちに」 follows the dictionary form, 「〜ている」 or 「〜ない」, never the bare て-form."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-m2-116",
+    "type": "narabe",
+    "refs": [
+      "lesson52#5",
+      "lesson52#1"
+    ],
+    "difficulty": 2,
+    "stem": "本当は前から知っていたのに、彼はその話を [_] [★] [_] [_] 、驚いた顔をしてみせた。",
+    "options": [
+      "かの",
+      "聞いた",
+      "初めて",
+      "ように"
+    ],
+    "order": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "full": "本当は前から知っていたのに、彼はその話を初めて聞いたかのように、驚いた顔をしてみせた。",
+    "tr": {
+      "zh": "他其实早就知道了，却装出一副第一次听说似的惊讶表情。",
+      "en": "He'd actually known for a while, but he put on a surprised face as if he were hearing it for the first time."
+    },
+    "why": {
+      "zh": "线索：选项有「かの」和「ように」，前面又说「本当は前から知っていたのに」，想到「〜かのように」（仿佛……似的，实际上并不是）。\n怎么排：「かの＋ように」连在一起；前面接动词简体「聞いた」；「初めて」修饰「聞いた」，放在它前面。顺序：初めて → 聞いた → かの → ように，★ 是「聞いた」。\n容易错：把「初めて」放到「かのように」后面。「初めて」说的是“第一次听”，要紧挨在「聞いた」前面。",
+      "en": "Clue: The pieces include 「かの」 and 「ように」, and the sentence says 「本当は前から知っていたのに」: think 「〜かのように」 (as if …, though it isn't so).\nOrder: 「かの ＋ ように」 go together; before them comes the plain verb 「聞いた」; 「初めて」 modifies 「聞いた」 and goes just before it: 初めて → 聞いた → かの → ように. The ★ is 「聞いた」.\nTrap: Putting 「初めて」 after 「かのように」. It describes the hearing ('for the first time'), so it sits right before 「聞いた」."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-m2-117",
+    "type": "narabe",
+    "refs": [
+      "lesson50#6"
+    ],
+    "difficulty": 2,
+    "stem": "大学に入って [_] [_] [★] [_] 、親のありがたさがよくわかった。",
+    "options": [
+      "初めて",
+      "みて",
+      "して",
+      "一人暮らしを"
+    ],
+    "order": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "full": "大学に入って一人暮らしをしてみて初めて、親のありがたさがよくわかった。",
+    "tr": {
+      "zh": "上了大学自己一个人住过之后，才真正体会到父母的可贵。",
+      "en": "Only after starting university and living on my own did I really understand how much my parents did for me."
+    },
+    "why": {
+      "zh": "线索：选项有「初めて」，后面是「ありがたさがよくわかった」，想到「〜て初めて」（做了……之后才……）。\n怎么排：「一人暮らしを＋して」是动宾；「して＋みて」组成「してみて」（试着做）；「初めて」接在て形「みて」后面。顺序：一人暮らしを → して → みて → 初めて，★ 是「みて」。\n容易错：把「初めて」放在最前面，当成“第一次一个人住”。「〜て初めて」的「初めて」要接在て形后面，表示“做了之后才明白”。",
+      "en": "Clue: 「初めて」 is among the pieces, followed by 「ありがたさがよくわかった」: think 「〜て初めて」 (only after doing … did …).\nOrder: 「一人暮らしを ＋ して」 is verb and object; 「して ＋ みて」 make 「してみて」 (try doing); 「初めて」 follows the て-form 「みて」: 一人暮らしを → して → みて → 初めて. The ★ is 「みて」.\nTrap: Putting 「初めて」 first, as 'living alone for the first time'. In 「〜て初めて」 it follows a て-form: only after doing it did the speaker understand."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "n3-m2-118",
+    "type": "narabe",
+    "refs": [
+      "lesson47#4"
+    ],
+    "difficulty": 1,
+    "stem": "この本は [_] [★] [_] [_] ので、漢字に全部ふりがなが付いている。",
+    "options": [
+      "向けな",
+      "学ぶ",
+      "日本語を",
+      "外国人"
+    ],
+    "order": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "full": "この本は日本語を学ぶ外国人向けなので、漢字に全部ふりがなが付いている。",
+    "tr": {
+      "zh": "这本书是面向学日语的外国人的，所以所有汉字都标了假名。",
+      "en": "This book is aimed at foreigners learning Japanese, so every kanji has furigana."
+    },
+    "why": {
+      "zh": "线索：选项有「向けな」，后面是「ので」，想到「名词＋向け」（面向……的），像名词一样接「ので」要说「向けなので」。\n怎么排：「日本語を」是「学ぶ」的宾语；「日本語を学ぶ」修饰「外国人」；「外国人＋向けな」最后接「ので」。顺序：日本語を → 学ぶ → 外国人 → 向けな，★ 是「学ぶ」。\n容易错：把「向けな」接在「学ぶ」后面。「向け」接名词（「子ども向け」「初心者向け」），不接动词。",
+      "en": "Clue: 「向けな」 is among the pieces and 「ので」 follows: think noun ＋ 「向け」 (aimed at …), which takes 「なので」 like a noun.\nOrder: 「日本語を」 is the object of 「学ぶ」; 「日本語を学ぶ」 modifies 「外国人」; 「外国人 ＋ 向けな」 then joins 「ので」: 日本語を → 学ぶ → 外国人 → 向けな. The ★ is 「学ぶ」.\nTrap: Attaching 「向けな」 to 「学ぶ」. 「向け」 follows a noun (「子ども向け」, 「初心者向け」), not a verb."
+    },
+    "wrong": [
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]
