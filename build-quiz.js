@@ -746,7 +746,8 @@ async function buildQuiz(ruby) {
 // clearly longest (or clearly shortest) — a test-wise reader just picks it;
 // chance is about 25%. (2) 並べ替え: ★ piling up in one slot. (3) mock
 // questions and passages that are near copies of practice ones, so the mock
-// score isn't inflated by having seen them.
+// score isn't inflated by having seen them. (4) mock files whose right answers
+// fall in a rhythm (found 2026-11-08 in agent-rebalanced mock-2 files).
 const plainText = (s) => String(s || "").replace(/<[^>]+>|\[\[\d+\]\]|<<|>>|\s/g, "");
 const bigrams = (s) => { const b = new Map(); for (let i = 0; i < s.length - 1; i++) { const k = s.slice(i, i + 2); b.set(k, (b.get(k) || 0) + 1); } return b; };
 function similarity(a, b) {
@@ -808,6 +809,23 @@ function cues(practice, mocks) {
       const twin = practice.qs.find((p) => p.type === q.type && (
         (target(q) && target(q) === target(p)) || [...opts(q)].filter((o) => opts(p).has(o)).length >= 3));
       if (twin && !out.some((w) => w.includes(` ${q.id} `))) out.push(`${name} ${q.id} tests the same as practice ${twin.id} (same word or options)`);
+    }
+    // (4) A rhythm in where the right answers land, file by file in test order
+    // (e.g. a rebalancing script cycling 0-1-2-3): a repeating block, or the
+    // same run of four answers three times.
+    const seqs = {};
+    for (const q of d.qs) if (q._kind !== "choukai" && q.type !== "narabe") (seqs[q._file] = seqs[q._file] || []).push(answerOf(shuffled(q)));
+    for (const [f, sq] of Object.entries(seqs)) {
+      let period = 0;
+      for (let p = 2; p <= 8 && !period && sq.length >= p * 2.5; p++) {
+        let same = 0;
+        for (let i = p; i < sq.length; i++) if (sq[i] === sq[i - p]) same++;
+        if (same / (sq.length - p) >= 0.85) period = p;
+      }
+      const runs = {};
+      for (let i = 0; i + 4 <= sq.length; i++) { const g = sq.slice(i, i + 4).join(""); runs[g] = (runs[g] || 0) + 1; }
+      const rep = Object.entries(runs).find(([, n]) => n >= 3);
+      if (period || rep) out.push(`${f}: right answers fall in a pattern (${sq.map((x) => x + 1).join("")}${period ? `, repeats every ${period}` : `, ${rep[0].split("").map((x) => +x + 1).join("")} ×${rep[1]}`}) — move right options in the source`);
     }
   }
   return out;
