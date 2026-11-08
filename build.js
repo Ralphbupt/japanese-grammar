@@ -404,8 +404,9 @@ const GTAG_DEFERRED = `<script>
   if (!fresh(sess)) sess = { id: Math.floor(now() / 1000), n: ((sess && sess.n) || 0) + 1, t: 0, pv: 0 };
   function syncSess() {
     var st = readSess();
-    if (fresh(st)) { if (st.id !== sess.id) sess = st; }
-    else if (sess.t && now() - sess.t > SESSION_MS) sess = { id: Math.floor(now() / 1000), n: sess.n + 1, t: 0, pv: 0 };
+    if (fresh(st)) { if (st.id !== sess.id) sess = st; return false; }
+    if (sess.t && now() - sess.t > SESSION_MS) { sess = { id: Math.floor(now() / 1000), n: sess.n + 1, t: 0, pv: 0 }; return true; }
+    return false;
   }
 
   var seq = 0, pageId = rnd(), started = false, queue = [];
@@ -432,7 +433,9 @@ const GTAG_DEFERRED = `<script>
   window.addEventListener('focus', act);
   window.addEventListener('blur', bank);
   function send(name, params, extra) {
-    syncSess();
+    // A session restarted mid-page opens with a page_view, as a reload would:
+    // GA takes the landing page (and so the channel) from it.
+    if (syncSess() && name !== 'page_view') send('page_view', {}, {});
     if (name === 'page_view') sess.pv++;
     var q = {
       v: 2, tid: TID, cid: cid, sid: sess.id, sct: sess.n, _p: pageId, _s: ++seq,
