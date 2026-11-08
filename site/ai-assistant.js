@@ -1256,17 +1256,24 @@
     }
     return { text: text.slice(0, 400), sec: sectionOf(ex || node) };
   }
+  // Skeleton first: the main clause with the modifiers stripped, then what
+  // modifies what, then the conjugations. Long sentences (where learners get
+  // lost) are read by finding the core first; short ones skip part 2.
   function explainPrompt(s) {
-    return t('「' + s + '」\n简明讲解这句话的语法，不要用表格，整体 300 字以内：\n' +
-        '1. 拆解：按意群切开，只解释关键的活用和助词\n' +
-        '2. 语法点：只讲本句实际用到的语法，说明接续和意思；本课讲过的请标出，课文以外的标【补充】\n' +
-        '3. 翻译：自然的中文\n' +
-        '4. 易错点：只写课文里讲过的易错点，课文没提到就整项省略；没有把握的规则不要写',
-      '"' + s + '"\nBriefly explain the grammar of this sentence, no tables, under 150 words:\n' +
-        '1. Breakdown: split it into chunks and explain only the key conjugations and particles\n' +
-        '2. Grammar points: only the patterns this sentence actually uses, with how they attach and what they mean; mark the ones taught in this lesson, and tag anything from outside the lesson [extra]\n' +
-        '3. Translation: a natural one\n' +
-        '4. Pitfalls: only one the lesson itself points out; if it doesn\u2019t, leave this part out. Don\u2019t state rules you aren\u2019t sure of');
+    return t('「' + s + '」\n简明讲解这句话的语法，不要用表格，整体 350 字以内：\n' +
+        '1. 主干：去掉所有修饰成分后的骨架，用「／」隔开，如「私は／犬を／飼っています」，再用一句话说清谁、做什么\n' +
+        '2. 修饰：哪个成分修饰哪个，如「小さい → 犬」；有从句的说明从句从哪里到哪里；句子没有修饰成分就省略这一项\n' +
+        '3. 活用和助词：只讲关键的，写出原形到句中形式的变化，如「飼う → 飼って＋います」；活用形的名称没有把握就不写名称\n' +
+        '4. 语法点：只讲本句实际用到的语法，说明接续和意思；本课讲过的请标出，课文以外的标【补充】\n' +
+        '5. 翻译：自然的中文\n' +
+        '6. 易错点：只写课文里讲过的易错点，课文没提到就整项省略；没有把握的规则不要写',
+      '"' + s + '"\nBriefly explain the grammar of this sentence, no tables, under 180 words:\n' +
+        '1. Core: the bare skeleton with every modifier removed, split with "／", e.g. 私は／犬を／飼っています, then one line on who does what\n' +
+        '2. Modifiers: what modifies what, e.g. 小さい → 犬; for a clause, say where it starts and ends; leave this part out if the sentence has none\n' +
+        '3. Conjugations and particles: only the key ones, from dictionary form to the form used, e.g. 飼う → 飼って + います; if you aren\u2019t sure of a form\u2019s name, don\u2019t name it\n' +
+        '4. Grammar points: only the patterns this sentence actually uses, with how they attach and what they mean; mark the ones taught in this lesson, and tag anything from outside the lesson [extra]\n' +
+        '5. Translation: a natural one\n' +
+        '6. Pitfalls: only one the lesson itself points out; if it doesn\u2019t, leave this part out. Don\u2019t state rules you aren\u2019t sure of');
   }
   function hideChip() { if (chip) chip.hidden = true; }
   function onSelect() {
