@@ -1054,5 +1054,693 @@
    "not-possible",
    "done-already"
   ]
+ },
+ {
+  "id": "n1-ck-609",
+  "type": "tougou",
+  "scene": "母親が一人で暮らしている実家のことで、兄と妹、弟の三人が話しています。",
+  "lines": [
+   [
+    "M1",
+    "母さん、先月、階段で転んだだろう。幸いけがは軽く済んだけど、これ以上あの家に一人で置いておくわけにはいかないよ。うちに来てもらおうと思ってるんだ。部屋も一つ空いてるし。"
+   ],
+   [
+    "F",
+    "気持ちはありがたいけど、お兄ちゃんのとこって、お母さんの知り合いが一人もいない町でしょう。昼間はみんな出かけちゃうし、一日中部屋にこもることになるよ。かえって弱っちゃうんじゃないかな。"
+   ],
+   [
+    "M1",
+    "じゃあ、どうしろって言うんだよ。"
+   ],
+   [
+    "F",
+    "実家の近くに、介護つきのホームが去年できたじゃない。あそこなら、今の友達とも会えるし。"
+   ],
+   [
+    "M1",
+    "見学には行ったよ。でも、空きを待ってる人が三十人以上いるって。いつ入れるか、見当もつかない。"
+   ],
+   [
+    "M2",
+    "あのさ、この前、母さんを病院に連れていったとき、それとなく聞いてみたんだけど、本人は、あの家を出る気はさらさらないみたいだよ。庭いじりが生きがいなんだって。"
+   ],
+   [
+    "F",
+    "やっぱりね。"
+   ],
+   [
+    "M2",
+    "それに、転んだのって、二階の寝室に上がる途中だったでしょう。一階の客間を寝室にして、お風呂とトイレに手すりをつければ、階段を使わずに済むんじゃないかな。手すりくらいなら、介護保険でほとんどまかなえるらしいし。"
+   ],
+   [
+    "F",
+    "でも、それだけだと、また何かあったとき、誰も気づかないよ。週に何回か、ヘルパーさんに来てもらったら？"
+   ],
+   [
+    "M1",
+    "それは前に一度勧めたんだよ。そしたら、よその人に台所をいじられるのはまっぴらだって、取りつく島もなくてさ。"
+   ],
+   [
+    "F",
+    "あー、言いそう。"
+   ],
+   [
+    "M2",
+    "様子を見るだけなら、毎晩、僕たち三人で交代で電話すればいいよ。出なかったら、お隣の山田さんにのぞいてもらえるよう、頼んでおくし。"
+   ],
+   [
+    "M1",
+    "まあ、本人がその気なら、それが一番か。じゃあ、まずは寝る部屋を下に移す方向で、今度の週末、母さんに話してみるよ。"
+   ]
+  ],
+  "question": "三人は、母親のことをどうすることにしましたか。",
+  "spokenOptions": true,
+  "options": [
+   "家を直して、一階だけで暮らせるようにする",
+   "兄の家に移って、一緒に暮らしてもらう",
+   "実家の近くの、介護つきの施設に入ってもらう",
+   "週に何回か、手伝いの人に来てもらう"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "关于母亲一个人住的老家，哥哥、妹妹和弟弟三个人在谈话。",
+    "question": "三个人决定怎样安排母亲？",
+    "lines": [
+     "妈上个月在楼梯上摔了一跤吧。幸好伤得不重，但不能再让她一个人住在那栋房子里了。我想让她搬到我家来。正好也空着一个房间。",
+     "你的心意很好，可是哥哥家那边，妈一个熟人都没有吧。白天大家都出门了，她就得整天闷在房间里。反而会把身体弄垮的吧。",
+     "那你说该怎么办？",
+     "老家附近去年不是开了一家带护理的养老院嘛。在那里的话，还能和现在的朋友见面。",
+     "我去参观过了。可是听说排队等空位的有三十多人。什么时候能进去，完全没个准。",
+     "那个，上次我带妈去医院的时候，旁敲侧击地问了问，她本人好像压根儿没打算离开那个家。她说摆弄院子就是她活着的乐趣。",
+     "果然是这样。",
+     "而且，她摔倒是在上二楼卧室的途中吧。把一楼的客房改成卧室，再在浴室和厕所装上扶手，不就不用走楼梯了嘛。扶手这种东西，听说护理保险基本都能报。",
+     "可是光这样的话，再出什么事也没人会发现呀。一周请护工来几次怎么样？",
+     "这个我以前劝过一次。结果她说，让外人动她的厨房，绝对不行，根本没商量的余地。",
+     "啊——她确实会这么说。",
+     "只是看看情况的话，我们三个每天晚上轮流打电话就行了。她要是不接，我去拜托隔壁的山田去看一眼。",
+     "嗯，既然她本人是那个意思，这样或许最好。那就先朝着把睡觉的房间搬到楼下这个方向，这个周末我去跟妈说说。"
+    ],
+    "options": [
+     "改造房子，让她只在一楼就能生活",
+     "让她搬到哥哥家一起住",
+     "让她住进老家附近带护理的机构",
+     "一周请几次人来帮忙"
+    ]
+   },
+   "en": {
+    "scene": "An elder brother, his sister and their younger brother are talking about their mother, who lives alone in the family home.",
+    "question": "What have the three decided to do about their mother?",
+    "lines": [
+     "Mum fell on the stairs last month. Luckily she wasn't badly hurt, but we can't leave her alone in that house any longer. I'm thinking she should come and live with us. We've got a spare room.",
+     "That's kind of you, but she doesn't know a soul in your town. You're all out during the day, so she'd be shut up in her room all day. She'd only get weaker.",
+     "Then what do you suggest?",
+     "A care home opened near the house last year, didn't it? There she could still see her friends.",
+     "I went to look round. But there are over thirty people waiting for a place. No telling when she'd get in.",
+     "Listen — when I took Mum to the hospital the other day, I sounded her out, and she has no intention whatsoever of leaving that house. Her garden is what she lives for, she says.",
+     "I thought so.",
+     "Besides, she fell on her way up to her bedroom on the first floor. If we make the ground-floor guest room her bedroom and put handrails in the bathroom and toilet, she won't need the stairs at all. Care insurance covers most of the cost of handrails, apparently.",
+     "But on its own, if something happens again, nobody will notice. Why not have a home helper come in a few times a week?",
+     "I suggested that once before. She said she'd never stand for strangers messing about in her kitchen — wouldn't even discuss it.",
+     "Oh, that sounds like her.",
+     "If it's just a matter of checking on her, the three of us can take turns ringing her every evening. And I'll ask Mr Yamada next door to look in if she doesn't answer.",
+     "Well, if that's what she wants, maybe that's best. Right — I'll talk to Mum this weekend about moving her bedroom downstairs, for a start."
+    ],
+    "options": [
+     "Adapt the house so she can live on the ground floor alone",
+     "Have her move in with the elder brother",
+     "Have her enter a care home near the family house",
+     "Have a helper come a few times a week"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：哥哥最后说：「まずは寝る部屋を下に移す方向で、今度の週末、母さんに話してみるよ。」\n推理：弟弟提出：把一楼客房改成卧室、在浴室厕所装扶手，「階段を使わずに済む」。妹妹担心出事没人发现，但这一点用“三人每晚轮流打电话＋拜托邻居”解决了。其余方案都不行：搬去哥哥家，母亲在那边没有熟人，而且「あの家を出る気はさらさらない」；养老院要等三十多人；请护工，母亲「取りつく島もなくて」地拒绝过。\n容易错：最后提出的打电话只是补充，不是选项；妹妹的担心没有否定改造方案。",
+   "en": "Evidence: The elder brother ends: 「まずは寝る部屋を下に移す方向で、今度の週末、母さんに話してみるよ。」\nReasoning: The younger brother proposes making the ground-floor guest room her bedroom and fitting handrails, so 「階段を使わずに済む」. The sister's worry that no one would notice an accident is met by nightly calls in turn and the neighbour. Everything else fails: at the elder brother's she'd know nobody, and 「あの家を出る気はさらさらない」; the care home has over thirty people waiting; she refused a helper — 「取りつく島もなくて」.\nTrap: the phone calls, the last idea, only back the plan up and aren't an option; the sister's worry doesn't kill the adaptation plan."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "母亲在哥哥家那边没有熟人，而且本人压根不想离开老家。",
+    "en": "She'd know nobody at her son's, and she has no wish at all to leave her house."
+   },
+   {
+    "zh": "养老院有三十多人在等空位，不知什么时候能进去。",
+    "en": "Over thirty people are waiting for the care home — no telling when she'd get in."
+   },
+   {
+    "zh": "请护工是妹妹提的，但母亲以前就断然拒绝让外人进厨房。",
+    "en": "The sister suggests a helper, but their mother flatly refused strangers in her kitchen before."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "condition-conflict",
+   "third-person-decides"
+  ]
+ },
+ {
+  "id": "n1-ck-610",
+  "type": "tougou",
+  "scene": "出版社で、編集長と若い男の編集者、営業担当の女の人の三人が、新しく出す本の題名について話しています。",
+  "lines": [
+   [
+    "M",
+    "先生の随筆集の題名なんですが、やっぱり「医者」という言葉は入れたいんですよ。お医者さんが書いた本だと分かれば、手に取ってもらいやすいですし。"
+   ],
+   [
+    "F1",
+    "医者が書いた本なんて、今は棚にあふれてるわよ。それに、これは健康法の本じゃなくて、患者さんとの思い出をつづった随筆でしょう。「医者」なんてつけたら、健康の棚に回されて、本当に読んでほしい人の目に留まらないわ。"
+   ],
+   [
+    "M",
+    "じゃあ、九十二歳っていう年齢を前に出しましょうか。九十代で現役のお医者さんというだけで、話題になりますし。"
+   ],
+   [
+    "F1",
+    "年齢を売りにした本は、ここ数年で山ほど出たからねえ。正直、もう食傷気味じゃない？"
+   ],
+   [
+    "F2",
+    "あの、書店を回っていてよく言われるんですけど、随筆って、題名だけでは中身が分からないので、棚に並べても素通りされやすいそうなんです。それが、年齢が目に入ると、お客さんが足を止める、と。ブームが落ち着いた今でも、六十代、七十代の女性には、まだまだ根強いらしいんです。"
+   ],
+   [
+    "M",
+    "この本の読者層、まさにそこですよね。"
+   ],
+   [
+    "F1",
+    "そう……。私の感覚のほうが、作る側の目に偏ってたのかもしれないわね。"
+   ],
+   [
+    "M",
+    "それなら、本の中にある「明日も白衣を着る」という一文を題名にして、年齢は帯に大きく入れるのはどうでしょう。"
+   ],
+   [
+    "F2",
+    "帯は、書店によっては外して並べられることもあるんです。それに、棚に差されたら、お客さんの目に入るのは背表紙だけですから。"
+   ],
+   [
+    "F1",
+    "だったら、題名から外すわけにはいかないわね。その線で、先生にご相談してみましょう。"
+   ]
+  ],
+  "question": "本の題名は、どうすることになりましたか。",
+  "spokenOptions": true,
+  "options": [
+   "医者が書いた本だと、一目で分かる題名にする",
+   "本の中の一文を題名にして、年齢は帯に入れる",
+   "題名からは、医者という言葉も年齢も外す",
+   "著者が九十二歳であることを、題名に入れる"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "在出版社，总编、年轻的男编辑和负责销售的女士三个人在讨论新书的书名。",
+    "question": "书名最后决定怎么定？",
+    "lines": [
+     "关于先生那本随笔集的书名，我还是想放进“医生”这个词。让人一看就知道是医生写的书，读者就更愿意拿起来看。",
+     "医生写的书现在书架上多得是。而且这不是讲健康法的书，是写和病人之间回忆的随笔吧。要是加上“医生”，就会被放到健康类的书架上，真正想让他们读的人反而看不到。",
+     "那就把九十二岁这个年龄突出出来吧。九十多岁还在行医，光这一点就能引起话题。",
+     "拿年龄当卖点的书，这几年出得太多了。说实话，大家不是已经有点腻了吗？",
+     "那个，我跑书店的时候常听人说，随笔光看书名不知道写的是什么，摆在书架上也很容易被人直接走过去。可要是看到了年龄，顾客就会停下脚步。说是热潮过去了的现在，对六七十岁的女性还是很有吸引力。",
+     "这本书的读者群正是这些人啊。",
+     "是吗……也许是我的感觉偏向了做书人的眼光吧。",
+     "那么，用书里“明天也穿上白大褂”这句话做书名，把年龄大大地印在腰封上，怎么样？",
+     "腰封有的书店会拿掉再上架。而且一旦插在书架上，顾客能看到的就只有书脊。",
+     "那就不能从书名里拿掉了。就按这个思路去和先生商量吧。"
+    ],
+    "options": [
+     "起一个一眼就能看出是医生写的书名",
+     "用书中的一句话做书名，年龄放在腰封上",
+     "书名里既不放“医生”也不放年龄",
+     "把作者九十二岁这一点放进书名"
+    ]
+   },
+   "en": {
+    "scene": "At a publisher's, the editor-in-chief, a young male editor and a woman from sales are discussing the title of a new book.",
+    "question": "What have they decided to do about the title?",
+    "lines": [
+     "About the title of the doctor's essay collection — I'd really like to have the word 'doctor' in it. If people can see a doctor wrote it, they're more likely to pick it up.",
+     "Shelves are overflowing with books by doctors these days. And this isn't a health guide — it's essays about memories of his patients. Put 'doctor' on it and it'll be shelved with the health books, where the people we really want to reach won't see it.",
+     "Then shall we put his age, ninety-two, up front? A doctor still practising in his nineties is a talking point in itself.",
+     "We've had heaps of books selling themselves on the author's age these last few years. Honestly, aren't people sick of them by now?",
+     "Um, the bookshops I visit often tell me that with essays you can't tell what's inside from the title alone, so people tend to walk straight past them on the shelf. But when they see an age, customers stop. Even now the boom has passed, it still has a strong pull with women in their sixties and seventies, apparently.",
+     "That's exactly who this book is for.",
+     "I see… Maybe my instincts were skewed by looking at it as the people who make books.",
+     "In that case, how about using the line 'Tomorrow I'll put on my white coat again' from the book as the title, and putting his age in big letters on the band?",
+     "Some bookshops take the band off before shelving. And once it's on the shelf spine-out, the spine is all customers see.",
+     "Then we can't leave it out of the title. Let's put that to the doctor."
+    ],
+    "options": [
+     "Give it a title that shows at a glance a doctor wrote it",
+     "Use a line from the book as the title and put his age on the band",
+     "Keep both the word 'doctor' and his age out of the title",
+     "Put the author's age, ninety-two, in the title"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：总编最后说：「だったら、題名から外すわけにはいかないわね。」\n推理：「外すわけにはいかない」的是年龄。男编辑先提出突出年龄，总编以「食傷気味」反对；但销售说书店反映，看到年龄顾客会停下来，对六七十岁女性仍然有效，总编也承认自己的感觉有偏差。男编辑又提出年龄放腰封，销售说腰封可能被拿掉、书架上只看得到书脊，所以年龄必须放进书名。\n容易错：把年龄放腰封的方案只对了一半；总编一开始的立场（两样都不放）后来改变了。",
+   "en": "Evidence: The editor-in-chief ends: 「だったら、題名から外すわけにはいかないわね。」\nReasoning: What can't be left out is his age. The young editor proposed it and she dismissed it as 「食傷気味」, but sales reports that customers stop when they see an age and that it still works with women in their sixties and seventies, and she admits her instincts were off. The band idea fails because bands get removed and only the spine shows on the shelf — so the age must go in the title.\nTrap: the age-on-the-band plan is only half right; her early stance (neither word nor age) changed."
+  },
+  "wrong": [
+   {
+    "zh": "总编说医生写的书太多，加“医生”会被放到健康书架，被否定了。",
+    "en": "She says doctor-authored books are everywhere and the word would land it on the health shelf — rejected."
+   },
+   {
+    "zh": "腰封可能被书店拿掉，书架上只看得到书脊，所以年龄不能只放在腰封上。",
+    "en": "Bands can be removed and only the spine shows, so the age can't go on the band alone."
+   },
+   {
+    "zh": "这是总编起初的想法，但听了销售的话以后改变了，决定把年龄放进书名。",
+    "en": "That was her first view, but after hearing from sales she decided the age goes in the title."
+   },
+   null
+  ],
+  "traps": [
+   "half-right",
+   "attitude-combo",
+   "third-person-decides"
+  ]
+ },
+ {
+  "id": "n1-ck-611",
+  "type": "tougou",
+  "scene": "アマチュアのオーケストラで、団長と女の団員、若い男の団員の三人が、来月の演奏会について話しています。",
+  "lines": [
+   [
+    "M1",
+    "指揮の先生が手術を受けることになって、来月の演奏会には間に合わないそうなんだ。どうするか、今日のうちに決めてしまいたい。"
+   ],
+   [
+    "F",
+    "延期するしかないんじゃないですか。先生あってのこの楽団ですし。"
+   ],
+   [
+    "M1",
+    "ホールに問い合わせたら、次に空いてるのは来年の秋だそうだ。それに、チケットはもう三百枚以上売れてしまってる。"
+   ],
+   [
+    "F",
+    "じゃあ、ほかの方に振っていただくとか。先生のお弟子さんで、プロの指揮者の方がいらっしゃいましたよね。"
+   ],
+   [
+    "M1",
+    "頼めば来てくださるだろうが、あの方にお願いするとなると、謝礼だけで今の予算の倍はかかる。"
+   ],
+   [
+    "M2",
+    "あの、曲目を変えるのはどうでしょう。指揮者がいなくても合わせられる、編成の小さい曲だけにして。"
+   ],
+   [
+    "F",
+    "今から？お客さんは、あの交響曲を聴きに来るのよ。それに、一か月で新しい曲なんて仕上がりっこないわ。"
+   ],
+   [
+    "M2",
+    "ですよね……。あ、そういえば、そのお弟子さん、先月練習を見にいらしたとき、お金のことは気にしなくていいから、いつでも声をかけてくれって、おっしゃってましたよ。先生への恩返しだからって。"
+   ],
+   [
+    "M1",
+    "本当か。それは心強いな。"
+   ],
+   [
+    "F",
+    "あの方なら、先生の解釈もよくご存じだし、私たちも安心して弾けるわね。"
+   ],
+   [
+    "M1",
+    "よし、お言葉に甘えさせてもらおう。ただ、謝礼はできるだけのことはしたい。足りない分は、団員の会費から少しずつ出せないか、みんなに相談してみよう。"
+   ]
+  ],
+  "question": "来月の演奏会は、どうすることになりましたか。",
+  "spokenOptions": true,
+  "options": [
+   "ホールが空くまで、演奏会を延期する",
+   "指揮者なしでできる、小さな曲に変える",
+   "先生の弟子に、指揮を引き受けてもらう",
+   "チケットを払い戻して、演奏会を取りやめる"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在一个业余管弦乐团，团长、一位女团员和一位年轻的男团员三个人在讨论下个月的演奏会。",
+    "question": "下个月的演奏会决定怎么办？",
+    "lines": [
+     "指挥老师要做手术，听说赶不上下个月的演奏会了。怎么办，我想今天就定下来。",
+     "只能延期了吧。这个乐团是有了老师才有的。",
+     "我问了音乐厅，说下次空出来要到明年秋天。而且票已经卖出去三百多张了。",
+     "那就请别人来指挥吧。老师的弟子里，不是有一位职业指挥吗？",
+     "去求的话他应该会来，可是要请那位的话，光酬金就要现在预算的两倍。",
+     "那个，换曲目怎么样？只演不用指挥也能合得上的小编制曲子。",
+     "现在换？观众是来听那首交响曲的呀。而且一个月怎么可能练好新曲子。",
+     "也是啊……啊，说起来，那位弟子上个月来看排练的时候说过，钱的事不用在意，随时叫他就行。说是报答老师的恩情。",
+     "真的吗？那就放心多了。",
+     "要是那位的话，也很了解老师对曲子的理解，我们也能放心地演奏。",
+     "好，那就恭敬不如从命了。不过酬金我想尽量表示一下。不够的部分，跟大家商量一下能不能从团员的会费里各出一点。"
+    ],
+    "options": [
+     "延期到音乐厅有空档的时候",
+     "换成不用指挥也能演的小曲子",
+     "请老师的弟子担任指挥",
+     "退票，取消演奏会"
+    ]
+   },
+   "en": {
+    "scene": "In an amateur orchestra, the chairman, a woman member and a young male member are talking about next month's concert.",
+    "question": "What have they decided to do about next month's concert?",
+    "lines": [
+     "Our conductor has to have an operation and won't be ready in time for next month's concert. I'd like to decide what to do today.",
+     "Surely we'll have to postpone. This orchestra is nothing without him.",
+     "I asked the hall, and the next free date is next autumn. And we've already sold over three hundred tickets.",
+     "Then we could ask someone else to conduct. One of his former students is a professional conductor, isn't he?",
+     "He'd come if we asked, but engaging him would cost twice our budget in fees alone.",
+     "Um, what about changing the programme? Just small-scale pieces we can keep together without a conductor.",
+     "Now? The audience is coming to hear that symphony. And there's no way we could get new pieces ready in a month.",
+     "Right… Oh, come to think of it, when that former student came to watch rehearsal last month, he said not to worry about money and to call on him any time. He said it would be his way of repaying his teacher.",
+     "Really? That's reassuring.",
+     "He knows exactly how our conductor interprets the music, so we could play with confidence.",
+     "Right, we'll take him up on his kind offer. But I want to pay him as properly as we can. Let's ask everyone whether members could chip in a little from their fees to cover the shortfall."
+    ],
+    "options": [
+     "Postpone it until the hall is free",
+     "Switch to small pieces they can play without a conductor",
+     "Have the conductor's former student conduct",
+     "Refund the tickets and cancel the concert"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：团长最后说：「よし、お言葉に甘えさせてもらおう。」\n推理：「お言葉」指年轻团员转述的弟子的话：「お金のことは気にしなくていいから、いつでも声をかけてくれ」。请弟子指挥本来因为酬金要预算的两倍而被搁置，这句话消除了费用问题，女团员也说「安心して弾けるわね」。延期要等到明年秋天，而且票已经卖了三百多张；换曲目一个月练不出来。\n容易错：从会费里凑钱是为了付酬金，不是另一个方案；最初的“只能延期”被否定了。",
+   "en": "Evidence: The chairman ends: 「よし、お言葉に甘えさせてもらおう。」\nReasoning: The 'kind offer' is what the young member passed on from the former student: 「お金のことは気にしなくていいから、いつでも声をかけてくれ」. Asking him had been set aside because his fee was double the budget; this removes the cost problem, and the woman adds 「安心して弾けるわね」. Postponing means waiting until next autumn with over 300 tickets sold; new pieces can't be ready in a month.\nTrap: members chipping in is to pay his fee, not another plan; the first idea, 'we'll have to postpone', was ruled out."
+  },
+  "wrong": [
+   {
+    "zh": "音乐厅下次空出来要到明年秋天，而且票已经卖出三百多张。",
+    "en": "The hall's next free date is next autumn, and over 300 tickets are sold."
+   },
+   {
+    "zh": "观众是来听交响曲的，而且一个月练不好新曲子。",
+    "en": "The audience is coming for the symphony, and new pieces can't be ready in a month."
+   },
+   null,
+   {
+    "zh": "没有人提议取消；票已经卖出去了，他们是在想办法照常举办。",
+    "en": "No one proposes cancelling; with tickets sold, they're finding a way to go ahead."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "not-possible",
+   "third-person-decides"
+  ]
+ },
+ {
+  "id": "n1-ck-612",
+  "type": "tougou",
+  "scene": "病院の健診センターで、係の人が人間ドックの検査について説明しています。",
+  "lines": [
+   [
+    "F1",
+    "人間ドックでは、基本の検査に加えて、こちらの四つのオプション検査をお選びいただけます。一つ目は脳の検査です。MRIという装置で、脳の血管や、記憶に関わる部分の状態を調べます。物忘れや頭痛が気になる方におすすめです。ただ、狭い筒の中で二十分ほどじっとしていただきますので、狭いところが苦手な方には、少しおつらいかもしれません。二つ目は胃の検査です。当センターでは、鼻から入れる細いカメラを使っておりますので、口から入れるものに比べて、楽に受けていただけます。ただし、前の日の夜九時以降は、何も召し上がらないでください。三つ目は骨の検査です。かかとを機械に乗せるだけで、数分で終わります。骨がもろくなっていないかが分かりますので、特に女性の方に人気です。四つ目は、血液で調べるがんの検査です。基本の検査の採血と一緒に行いますので、新たに針を刺すことはありません。結果は二週間ほどで、ご自宅に郵送いたします。"
+   ],
+   [
+    "M",
+    "僕、最近、物忘れがひどくてさ。人の名前がさっぱり出てこないんだ。脳のやつ、受けとこうかな。"
+   ],
+   [
+    "F2",
+    "でも、山田さん、この前の出張のとき、狭いエレベーターも苦手だって、八階まで階段で上がってたじゃない。"
+   ],
+   [
+    "M",
+    "ああ、そうか……。二十分も閉じ込められたら、それこそ途中で逃げ出しちゃうな。胃のほうは、前に口から入れるのをやって懲りたし、鼻からでも嫌だな……。じゃあ、採血のついでに済むっていうのにしとくよ。結果も家に届くし。"
+   ],
+   [
+    "F2",
+    "私は、ここのところ胃がもたれることが多いのよね。口からのは怖いけど、鼻からなら、なんとかなりそう。"
+   ],
+   [
+    "M",
+    "でも、検査の前の日って、確か部の飲み会じゃなかった？"
+   ],
+   [
+    "F2",
+    "あれ、来週に延びたのよ。それに、骨のほうは母にも勧められてるんだけど、去年、区の健診で測ってもらったばかりだし。今回は、鼻から入れるほうにする。"
+   ]
+  ],
+  "options": [
+   "脳の検査",
+   "胃の検査",
+   "骨の検査",
+   "血液の検査"
+  ],
+  "questions": [
+   {
+    "question": "質問1：男の人は、どの検査を受けますか。",
+    "answer": 3,
+    "why": {
+     "zh": "依据：男的说：「じゃあ、採血のついでに済むっていうのにしとくよ。」\n推理：抽血时顺便就能做的，是「基本の検査の採血と一緒に行います」的第四项血液检查，结果也会邮寄到家。他本想做脑部检查，但同事提醒他连狭窄的电梯都受不了，他也承认「二十分も閉じ込められたら……逃げ出しちゃう」；胃部检查他以前做过「懲りた」，「鼻からでも嫌だな」。\n容易错：他说的“健忘”指向脑部检查，但那项被放弃了。",
+     "en": "Evidence: The man says: 「じゃあ、採血のついでに済むっていうのにしとくよ。」\nReasoning: The one done along with the blood sample is the fourth — 「基本の検査の採血と一緒に行います」 — with results posted home. He wanted the brain scan, but his colleague reminds him he can't even bear small lifts, and he admits 「二十分も閉じ込められたら……逃げ出しちゃう」; the stomach test he has had before and 「懲りた」, and 「鼻からでも嫌だな」.\nTrap: his forgetfulness points to the brain scan, but he drops it."
+    },
+    "wrong": [
+     {
+      "zh": "他担心健忘想做脑部检查，但怕狭窄的地方，要在筒里待二十分钟，放弃了。",
+      "en": "He wanted the brain scan for his forgetfulness, but can't face twenty minutes in a narrow tube."
+     },
+     {
+      "zh": "胃部检查他以前从嘴做过已经怕了，又说「鼻からでも嫌だな」；这是女的选的。",
+      "en": "He swore off the stomach exam after having it through the mouth and says 「鼻からでも嫌だな」; it's the woman's choice."
+     },
+     {
+      "zh": "骨骼检查男的没有提到，是女的母亲劝她做的。",
+      "en": "The man never mentions the bone test; it's the one the woman's mother recommends."
+     },
+     null
+    ]
+   },
+   {
+    "question": "質問2：女の人は、どの検査を受けますか。",
+    "answer": 1,
+    "why": {
+     "zh": "依据：女的说：「今回は、鼻から入れるほうにする。」\n推理：从鼻子插入细镜头的是第二项胃部检查。她最近胃胀，从鼻子插入她觉得能行。男的担心前一天有聚餐、违反晚上九点以后不能吃东西的要求，但她说聚餐推迟到下周了。骨骼检查去年刚做过。\n容易错：母亲劝她做的骨骼检查，这次不做。",
+     "en": "Evidence: The woman says: 「今回は、鼻から入れるほうにする。」\nReasoning: The thin camera through the nose is the second test, the stomach exam. Her stomach has felt heavy and she thinks she can manage it through the nose. The man worries about the drinks the night before (nothing after nine), but she says it has moved to next week. She had her bones measured only last year.\nTrap: the bone test her mother recommends is not for this time."
+    },
+    "wrong": [
+     {
+      "zh": "脑部检查是男的起初想做的，女的没提。",
+      "en": "The brain scan is what the man first wanted; she doesn't mention it."
+     },
+     null,
+     {
+      "zh": "母亲劝她做骨骼检查，但她去年在区里的体检刚测过。",
+      "en": "Her mother recommends the bone test, but she had it done at the ward check-up last year."
+     },
+     {
+      "zh": "和基本检查的抽血一起做的血液检查是男的选的。",
+      "en": "The blood test done with the standard sample is the man's choice."
+     }
+    ]
+   }
+  ],
+  "tr": {
+   "zh": {
+    "scene": "在医院的体检中心，工作人员正在介绍人间体检的检查项目。",
+    "questions": [
+     "问题1：男人做哪项检查？",
+     "问题2：女人做哪项检查？"
+    ],
+    "lines": [
+     "人间体检除了基本项目之外，还可以从这四项自选检查中选择。第一项是脑部检查。用叫做MRI的装置，检查脑血管和与记忆有关部位的状态。推荐给担心健忘或头痛的人。不过要在狭窄的筒里一动不动地待二十分钟左右，怕狭窄地方的人可能会有点难受。第二项是胃部检查。本中心使用从鼻子插入的细镜头，和从嘴插入的相比，做起来轻松。不过，前一天晚上九点以后请不要吃任何东西。第三项是骨骼检查。只要把脚后跟放在机器上，几分钟就结束。可以知道骨头有没有变脆，特别受女性欢迎。第四项是用血液检查的癌症筛查。和基本检查的抽血一起做，所以不用另外扎针。结果两周左右邮寄到您家里。",
+     "我最近健忘得厉害。人名怎么都想不起来。要不做一下脑部那个吧。",
+     "可是山田，上次出差的时候，你说连狭窄的电梯都受不了，一路走楼梯上了八楼不是吗？",
+     "啊，也是……要被关二十分钟的话，我中途肯定要逃出来。胃那项，以前做过从嘴插入的，已经怕了，从鼻子插也不想……那我就选抽血时顺便就能做的那个吧。结果也会寄到家里。",
+     "我最近经常觉得胃胀。从嘴插入的我害怕，从鼻子的话，应该能行。",
+     "可是检查前一天，好像是部门聚餐吧？",
+     "那个推迟到下周了。而且骨骼那项我妈也劝我做，不过去年区里体检时刚测过。这次我就选从鼻子插的那个。"
+    ],
+    "options": [
+     "脑部检查",
+     "胃部检查",
+     "骨骼检查",
+     "血液检查"
+    ]
+   },
+   "en": {
+    "scene": "At a hospital's health check-up centre, a member of staff is describing the tests in the full check-up.",
+    "options": [
+     "The brain test",
+     "The stomach test",
+     "The bone test",
+     "The blood test"
+    ],
+    "questions": [
+     "Question 1: Which test will the man have?",
+     "Question 2: Which test will the woman have?"
+    ],
+    "lines": [
+     "With the full check-up, you can choose from these four optional tests in addition to the standard ones. The first is a brain scan. An MRI machine checks the blood vessels in the brain and the areas involved in memory. We recommend it if forgetfulness or headaches worry you. You do have to lie still inside a narrow tube for about twenty minutes, though, so it may be a little hard if you don't like confined spaces. The second is a stomach examination. Here we use a thin camera inserted through the nose, which is much easier than one through the mouth. Please don't eat anything after nine the night before, however. The third is a bone test. You just rest your heel on the machine, and it's over in a few minutes. It shows whether your bones have become brittle, so it's especially popular with women. The fourth is a blood test for cancer. It's done with the blood sample for the standard tests, so there's no extra needle. The results are posted to your home in about two weeks.",
+     "I've been so forgetful lately. People's names just won't come to me. Maybe I'll have the brain one.",
+     "But Yamada, on that business trip, you said you can't even stand small lifts and walked up to the eighth floor.",
+     "Oh, right… Shut in for twenty minutes, I'd be trying to escape halfway through. And I had the stomach one through the mouth once — never again, and I don't fancy it through the nose either… I'll go for the one they do with the blood sample, then. They post you the results, too.",
+     "My stomach's often been feeling heavy lately. I'd be scared of it through the mouth, but through the nose I think I could manage.",
+     "But isn't the department's drinks do the night before the check-up?",
+     "It's been put off till next week. And my mother keeps telling me to have the bone one, but I only had it measured at the ward check-up last year. This time I'll have the one through the nose."
+    ]
+   }
+  },
+  "traps": [
+   "not-possible",
+   "done-already",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n1-ck-613",
+  "type": "tougou",
+  "scene": "携帯電話の店で、店員が料金プランについて説明しています。",
+  "lines": [
+   [
+    "M1",
+    "ただいま、こちらの四つのプランをおすすめしております。まず「ギガ無制限」。データを好きなだけお使いいただけますので、動画をよくご覧になる方に人気です。ただ、月額は七千円台と、ほかに比べて高めになります。次に「通話定額ライト」。国内の通話が、時間も回数も気にせずかけ放題で、データは月三ギガまでとなっております。お仕事で電話をよくお使いになる方におすすめです。三つ目は「シニアプラン」。六十五歳以上の方が対象で、十分以内の通話が何度でも無料、店頭での使い方のご相談も無料で承ります。最後に「ユース割」。二十二歳以下の方が対象で、月三十ギガのプランが、最初の一年間は半額になります。二年目からは通常の料金に戻りますので、ご注意ください。"
+   ],
+   [
+    "F",
+    "お父さん、仕事の電話、ほとんど携帯からでしょう。"
+   ],
+   [
+    "M2",
+    "ああ。客先との電話は、どうしても長くなるからな。十分じゃとても収まらんよ。もっとも、シニアのほうは、来年の春まで待たないと入れないんだけどな。"
+   ],
+   [
+    "F",
+    "じゃあ、迷うまでもないじゃない。"
+   ],
+   [
+    "M2",
+    "動画なんか見ないしな。それにしとくよ。お前はどうする？若い人向けのがあるぞ。半額だって。"
+   ],
+   [
+    "F",
+    "私、この前の誕生日で二十三になったんだけど。"
+   ],
+   [
+    "M2",
+    "ああ、そうだったか。"
+   ],
+   [
+    "F",
+    "通学の電車で毎日ドラマを見てるから、三ギガじゃ一週間ももたないし……。高くつくけど、アルバイト代から払うから、いいよ。"
+   ]
+  ],
+  "options": [
+   "ギガ無制限",
+   "通話定額ライト",
+   "シニアプラン",
+   "ユース割"
+  ],
+  "questions": [
+   {
+    "question": "質問1：父親は、どのプランにしますか。",
+    "answer": 1,
+    "why": {
+     "zh": "依据：父亲说：「動画なんか見ないしな。それにしとくよ。」\n推理：「それ」指女儿说的「迷うまでもない」的那个。他工作电话多、每次都很长，「十分じゃとても収まらん」，所以只限十分钟的老年套餐不合适，而且要到明年春天才够年龄。通话不限时长的“通话包月轻量版”最合适，他又不看视频，三个G流量也够用。\n容易错：老年套餐要满六十五岁，他还没到；流量无限他用不着。",
+     "en": "Evidence: The father says: 「動画なんか見ないしな。それにしとくよ。」\nReasoning: 「それ」 is the one his daughter says needs no thought. His work calls are many and long — 「十分じゃとても収まらん」 — so the senior plan's ten-minute calls don't suit him, and he isn't old enough until next spring anyway. Unlimited calls of any length on 'Call Flat Lite' fit, and since he doesn't watch videos, three gigabytes is plenty.\nTrap: the senior plan needs him to be 65, which he isn't yet; he has no use for unlimited data."
+    },
+    "wrong": [
+     {
+      "zh": "流量无限是女儿的选择；父亲说自己不看视频。",
+      "en": "Unlimited data is the daughter's choice; the father says he doesn't watch videos."
+     },
+     null,
+     {
+      "zh": "老年套餐只有十分钟以内免费，他的电话打不完；而且要到明年春天才够年龄。",
+      "en": "The senior plan only covers calls under ten minutes, too short for him — and he isn't eligible until next spring."
+     },
+     {
+      "zh": "青年优惠是给二十二岁以下的人的，父亲只是推荐给女儿。",
+      "en": "The youth discount is for 22 and under; he only suggests it to his daughter."
+     }
+    ]
+   },
+   {
+    "question": "質問2：娘は、どのプランにしますか。",
+    "answer": 0,
+    "why": {
+     "zh": "依据：女儿说：「三ギガじゃ一週間ももたないし……。高くつくけど、アルバイト代から払うから、いいよ。」\n推理：她每天在电车上看电视剧，流量用得多。青年优惠只到二十二岁，她已经二十三岁了；通话包月只有三个G，不够用。剩下的是贵一些但流量随便用的“流量无限”，「高くつくけど」正对上月费七千日元以上。\n容易错：父亲推荐的半价青年优惠，她已经超龄了。",
+     "en": "Evidence: The daughter says: 「三ギガじゃ一週間ももたないし……。高くつくけど、アルバイト代から払うから、いいよ。」\nReasoning: She watches dramas on the train every day and uses a lot of data. The youth discount stops at 22 and she's 23; Call Flat Lite's three gigabytes won't do. That leaves the pricier unlimited plan — 「高くつくけど」 matches the 7,000-yen-plus fee.\nTrap: the half-price youth plan her father suggests — she's too old for it."
+    },
+    "wrong": [
+     null,
+     {
+      "zh": "通话包月只有三个G，她说连一个星期都撑不了，这是父亲选的。",
+      "en": "Call Flat Lite has only 3 GB — she says it wouldn't last a week; it's her father's choice."
+     },
+     {
+      "zh": "老年套餐面向六十五岁以上，和她无关。",
+      "en": "The senior plan is for 65 and over — nothing to do with her."
+     },
+     {
+      "zh": "青年优惠只到二十二岁，她已经二十三岁了。",
+      "en": "The youth discount stops at 22, and she's already 23."
+     }
+    ]
+   }
+  ],
+  "tr": {
+   "zh": {
+    "scene": "在手机店，店员正在介绍资费套餐。",
+    "questions": [
+     "问题1：父亲选哪个套餐？",
+     "问题2：女儿选哪个套餐？"
+    ],
+    "lines": [
+     "现在我们主推这四种套餐。首先是“流量无限”。流量随便用，很受经常看视频的人欢迎。不过月费在七千日元以上，比其他的贵一些。其次是“通话包月轻量版”。国内通话不限时长和次数，随便打，流量每月最多三个G。推荐给工作上经常打电话的人。第三种是“老年套餐”。面向六十五岁以上的人，十分钟以内的通话不限次数免费，在店里咨询使用方法也免费。最后是“青年优惠”。面向二十二岁以下的人，每月三十G的套餐第一年半价。从第二年起恢复正常价格，请注意。",
+     "爸，你工作上的电话基本都是用手机打的吧。",
+     "嗯。跟客户打电话，总是会打很久。十分钟根本打不完。再说，老年套餐我得等到明年春天才能办。",
+     "那还用得着犹豫吗。",
+     "我又不看什么视频。就办那个吧。你呢？有面向年轻人的哦，说是半价。",
+     "我上次过生日已经二十三岁了。",
+     "啊，是吗。",
+     "我每天上学在电车上看电视剧，三个G连一个星期都撑不了……虽然贵一点，我用打工的钱付，没关系。"
+    ],
+    "options": [
+     "流量无限",
+     "通话包月轻量版",
+     "老年套餐",
+     "青年优惠"
+    ]
+   },
+   "en": {
+    "scene": "At a mobile phone shop, a member of staff is describing the price plans.",
+    "options": [
+     "Unlimited Data",
+     "Call Flat Lite",
+     "Senior Plan",
+     "Youth Discount"
+    ],
+    "questions": [
+     "Question 1: Which plan will the father choose?",
+     "Question 2: Which plan will the daughter choose?"
+    ],
+    "lines": [
+     "We're currently recommending these four plans. First, 'Unlimited Data'. You can use as much data as you like, so it's popular with people who watch a lot of video. It is pricier than the others, though — over seven thousand yen a month. Next, 'Call Flat Lite'. Domestic calls are unlimited, however long and however many, with up to three gigabytes of data a month. We recommend it for people who use the phone a lot for work. Third, the 'Senior Plan'. It's for customers aged sixty-five and over: any number of calls under ten minutes are free, and help with using your phone in store is free too. Lastly, 'Youth Discount'. It's for customers aged twenty-two and under: the thirty-gigabyte plan is half price for the first year. Please note it returns to the normal price from the second year.",
+     "Dad, you make nearly all your work calls on your mobile, don't you?",
+     "Yes. Calls with clients always run long. Ten minutes wouldn't come close. Mind you, I can't get the senior one till next spring anyway.",
+     "Then there's nothing to think about.",
+     "I don't watch videos or anything. I'll go with that. What about you? There's one for young people. Half price, they say.",
+     "I turned twenty-three on my last birthday, you know.",
+     "Oh, so you did.",
+     "I watch dramas on the train to university every day, so three gigabytes wouldn't last me a week… It costs more, but I'll pay out of my part-time wages, so it's fine."
+    ]
+   }
+  },
+  "traps": [
+   "condition-conflict",
+   "not-possible",
+   "someone-else"
+  ]
  }
 ]

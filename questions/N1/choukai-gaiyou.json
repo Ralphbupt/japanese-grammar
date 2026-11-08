@@ -1094,5 +1094,1068 @@
    "attitude-combo",
    "partial-content"
   ]
+ },
+ {
+  "id": "n1-ck-315",
+  "type": "gaiyou",
+  "scene": "講演会で、言葉の研究者が話しています。",
+  "question": "研究者は何について話していますか。",
+  "lines": [
+   [
+    "F",
+    "「最近の若い人は敬語が使えない」という声を、よく耳にします。確かに、「させていただく」をやたらと使ったり、尊敬語と謙譲語を取り違えたりする例は珍しくありません。"
+   ],
+   [
+    "F",
+    "ただ、明治や大正のころの新聞を調べてみると、同じような嘆きが、どの時代にも載っているんです。敬語は、昔からずっと「乱れている」と言われ続けてきたわけです。"
+   ],
+   [
+    "F",
+    "そもそも敬語というのは、話す人と相手との関係を言葉で表す仕組みです。身分の上下がはっきりしていた時代と、職場でも肩書きより役割で人と接する今とでは、表したい関係そのものが違います。"
+   ],
+   [
+    "F",
+    "「させていただく」がこれほど広まったのも、相手を高めるというより、相手とほどよい距離を取りたいという今の感覚に合っているからでしょう。"
+   ],
+   [
+    "F",
+    "敬語が乱れたと嘆く前に、私たちが今、相手とどんな関係を結ぼうとしているのか。そちらに目を向けてみてはいかがでしょうか。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "敬語が時代の人間関係に左右されること",
+   "若い人に正しい敬語を身につけさせる方法",
+   "昔の新聞に見られる敬語の間違い",
+   "「させていただく」の正しい使い方"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "讲座上，一位语言研究者在讲话。",
+    "question": "研究者在讲什么？",
+    "lines": [
+     "常听到有人说“现在的年轻人不会用敬语”。的确，滥用「させていただく」、把尊敬语和自谦语弄混的例子并不少见。",
+     "不过，查一查明治、大正时期的报纸就会发现，每个时代都登着同样的感叹。也就是说，敬语从很早以前起就一直被说成“乱了”。",
+     "说到底，敬语是用语言来表示说话人和对方关系的机制。身份上下分明的时代，和在职场上也是按角色而不是头衔与人打交道的现在，想表达的关系本身就不同。",
+     "「させていただく」之所以这么普及，也是因为比起抬高对方，它更符合现在想和对方保持适当距离的感觉吧。",
+     "在感叹敬语乱了之前，不妨先看看我们现在想和对方建立怎样的关系。"
+    ],
+    "options": [
+     "敬语会随时代的人际关系而改变",
+     "让年轻人掌握正确敬语的方法",
+     "旧报纸上出现的敬语错误",
+     "「させていただく」的正确用法"
+    ]
+   },
+   "en": {
+    "scene": "At a lecture, a language researcher is speaking.",
+    "question": "What is the researcher talking about?",
+    "lines": [
+     "We often hear that young people today can't use honorifics. True, examples of overusing 'sasete itadaku' or mixing up respectful and humble forms aren't rare.",
+     "But look at newspapers from the Meiji and Taisho eras and you find the same laments in every period. Honorifics have always been said to be 'in disarray.'",
+     "Honorifics are, at root, a system for expressing in words the relationship between speaker and listener. An age of clear rank and today, when even at work we deal with people by role rather than title, differ in the very relationships they want to express.",
+     "'Sasete itadaku' has spread so far probably because it suits a present-day wish to keep a comfortable distance from others rather than to elevate them.",
+     "Before lamenting that honorifics are in disarray, why not look at what kind of relationship we're trying to build with others today?"
+    ],
+    "options": [
+     "That honorifics are shaped by each era's relationships",
+     "How to teach young people correct honorifics",
+     "Honorific mistakes found in old newspapers",
+     "The correct use of 'sasete itadaku'"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：「敬語というのは、話す人と相手との関係を言葉で表す仕組みです。」「表したい関係そのものが違います。」最后又要大家看“我们想和对方建立怎样的关系”。\n推理：她先承认有误用的例子，又用旧报纸说明“敬语乱了”的感叹每个时代都有；接着说敬语是表示人际关系的机制，时代不同，要表达的关系也不同；「させていただく」普及也是因为符合现在的距离感。主旨是敬语随时代的人际关系而变。\n容易错：旧报纸上登的是感叹，不是错误；「させていただく」只是例子。",
+   "en": "Evidence: 「敬語というのは、話す人と相手との関係を言葉で表す仕組みです。」 and 「表したい関係そのものが違います。」; she ends by asking what relationship we are trying to build.\nReasoning: She grants that misuse exists, then shows from old newspapers that every era lamented 'disordered' honorifics; honorifics express relationships, which differ by era; even 'sasete itadaku' spread because it fits today's sense of distance. Her point: honorifics change with the relationships of the age.\nTrap: the old papers carried laments, not mistakes; 'sasete itadaku' is only an example."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "她没有讲怎么教，反而不认为是“乱了”。",
+    "en": "She doesn't discuss teaching; she questions the idea of decline itself."
+   },
+   {
+    "zh": "旧报纸上登的是对敬语的感叹，不是错误，而且只是论据。",
+    "en": "The old papers carried laments, not mistakes, and are only evidence."
+   },
+   {
+    "zh": "「させていただく」只是说明距离感的例子，没讲用法。",
+    "en": "'Sasete itadaku' is an example of the sense of distance; its usage isn't taught."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n1-ck-316",
+  "type": "gaiyou",
+  "scene": "ラジオで、古い住宅の修理をしている会社の社長が話しています。",
+  "question": "社長は、家についてどう考えていますか。",
+  "lines": [
+   [
+    "M",
+    "日本の木造の家は、三十年もすれば価値がなくなる、とよく言われます。だから古くなったら建て替える、というのが当たり前になってきました。"
+   ],
+   [
+    "M",
+    "でも、仕事で百年近く前の家を直していると、柱や梁は、今の家よりよほど丈夫だったりするんです。木そのものが弱いわけではない。"
+   ],
+   [
+    "M",
+    "違いは手の入れ方なんですね。昔の家は、障子を張り替え、屋根を葺き替え、少しずつ直しながら住むことを前提に建てられていた。直す職人も、町の中にいました。"
+   ],
+   [
+    "M",
+    "今の家は、完成したときが一番いい状態で、あとは古くなる一方、という考え方で建てられています。それなら、三十年で寿命が来るのも当然でしょう。"
+   ],
+   [
+    "M",
+    "新しい技術を否定するつもりはありません。ただ、家との付き合い方そのものは、昔の人に学ぶところが大きいのではないでしょうか。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "古い家のほうが丈夫なので、建て替えるべきではない",
+   "新しい技術を取り入れれば、家の寿命は延ばせる",
+   "木造の家は、三十年ほどで建て替えるのが合理的だ",
+   "家の寿命は、住み始めてからの手入れで決まる"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "广播里，一家修缮老房子的公司的社长在讲话。",
+    "question": "社长对房子是怎么想的？",
+    "lines": [
+     "常有人说，日本的木造房子过三十年就没价值了。所以旧了就拆了重建，已经成了理所当然的事。",
+     "可是，在工作中修缮近百年前的房子时，柱子和房梁常常比现在的房子结实得多。并不是木头本身不结实。",
+     "区别在于怎么打理。以前的房子，是以换糊纸拉门、重铺屋顶、一点一点修着住为前提建的。修房子的工匠也就在镇子里。",
+     "现在的房子是按照“建成时状态最好，之后只会越来越旧”的思路建的。那样的话，三十年寿命到头也是理所当然的吧。",
+     "我并不想否定新技术。只是，在和房子相处的方式上，我们恐怕有很多地方要向以前的人学习。"
+    ],
+    "options": [
+     "老房子更结实，所以不应该重建",
+     "采用新技术就能延长房子的寿命",
+     "木造房子三十年左右重建是合理的",
+     "房子的寿命取决于住进去以后的打理"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, the head of a company that repairs old houses is speaking.",
+    "question": "What does the company head think about houses?",
+    "lines": [
+     "People often say a Japanese wooden house loses its value after about thirty years, so rebuilding once it gets old has become the norm.",
+     "But when I repair houses nearly a hundred years old, the pillars and beams are often far sturdier than in today's houses. It isn't that wood itself is weak.",
+     "The difference is upkeep. Old houses were built on the assumption that you'd re-paper the screens, re-roof, and live in them while repairing bit by bit. And the craftsmen who did the repairs lived in town.",
+     "Today's houses are built on the idea that they're at their best on completion and simply age from then on. No wonder they wear out in thirty years.",
+     "I'm not against new technology. But in how we relate to our houses, I think we have a great deal to learn from people in the past."
+    ],
+    "options": [
+     "Old houses are sturdier, so they shouldn't be rebuilt",
+     "New technology can extend a house's life",
+     "Rebuilding a wooden house after about thirty years makes sense",
+     "A house's life depends on the upkeep once you start living in it"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：「違いは手の入れ方なんですね。」「今の家は、完成したときが一番いい状態で、あとは古くなる一方、という考え方で建てられています。それなら、三十年で寿命が来るのも当然でしょう。」\n推理：他说老房子的柱梁结实，但「木そのものが弱いわけではない」，区别在于「手の入れ方」：以前是一边修一边住，现在是建成时最好、之后只会变旧，所以三十年就到头。最后说和房子相处的方式要向以前的人学。可见他认为房子能用多久取决于住进去后的打理。\n容易错：老房子结实只是论据，他没说一律不该重建；新技术他只是说不否定。",
+   "en": "Evidence: 「違いは手の入れ方なんですね。」 and 「今の家は、完成したときが一番いい状態で、あとは古くなる一方、という考え方で建てられています。それなら、三十年で寿命が来るのも当然でしょう。」\nReasoning: Old beams are sturdy, but 「木そのものが弱いわけではない」; the difference is 「手の入れ方」 — old houses were lived in while being repaired, new ones peak at completion and only age, so they last thirty years. He ends by saying we can learn from the past in how we relate to houses. So a house's life depends on upkeep after moving in.\nTrap: the sturdy old houses are evidence, not a call never to rebuild; he merely doesn't reject new technology."
+  },
+  "wrong": [
+   {
+    "zh": "老房子结实只是论据，他说的重点是打理方式，不是禁止重建。",
+    "en": "Sturdy old houses are evidence; his point is upkeep, not a ban on rebuilding."
+   },
+   {
+    "zh": "他只说「新しい技術を否定するつもりはありません」，没说靠技术延长寿命。",
+    "en": "He only says he isn't against new technology, not that it extends a house's life."
+   },
+   {
+    "zh": "三十年重建是他开头引用的一般看法，他持怀疑态度。",
+    "en": "Thirty-year rebuilding is the common view he quotes and questions."
+   },
+   null
+  ],
+  "traps": [
+   "twisted",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n1-ck-317",
+  "type": "gaiyou",
+  "scene": "大学の授業で、先生が話しています。",
+  "question": "先生は何について話していますか。",
+  "lines": [
+   [
+    "M",
+    "ある町で住民の貯蓄の平均を調べたら、一千万円を超えていたとします。この町の人はずいぶん余裕があるんだな、と思いますよね。"
+   ],
+   [
+    "M",
+    "ところが、実際に一人一人の額を並べてみると、大半の人は数百万円以下で、ごく一部の資産家が平均を大きく引き上げていた、ということがよくあります。"
+   ],
+   [
+    "M",
+    "平均というのは計算が簡単で、比べるのにも便利です。ですから、新聞でもテレビでも、毎日のように使われています。"
+   ],
+   [
+    "M",
+    "でも、数字が一つにまとめられたとたん、その裏にあるばらつきは見えなくなります。真ん中の人がどのくらいなのか、どこに人が集まっているのか。それを見ないまま平均だけで判断すると、町の実態とはかけ離れた結論になりかねません。"
+   ],
+   [
+    "M",
+    "今日から扱うデータでも、平均を出す前に、必ず一度、全体の分布をグラフにして眺めてみてください。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "町の住民の貯蓄を正しく調べる方法",
+   "平均だけを見て判断することの危うさ",
+   "平均の数字が報道でよく使われる理由",
+   "一部の資産家が町の経済に与える影響"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "大学的课上，老师在讲话。",
+    "question": "老师在讲什么？",
+    "lines": [
+     "假设调查某个镇居民存款的平均值，结果超过了一千万日元。大家会觉得这个镇的人很宽裕吧。",
+     "可是，实际把每个人的金额排出来一看，常常是大多数人在几百万日元以下，极少数有钱人把平均值大大拉高了。",
+     "平均值计算简单，比较起来也方便。所以报纸、电视几乎每天都在用。",
+     "可是，数字一旦被归结成一个，背后的离散程度就看不见了。处在中间的人是多少？人集中在哪里？不看这些，只凭平均值判断，就可能得出和镇子实际情况相去甚远的结论。",
+     "从今天开始处理的数据，在算平均值之前，也请务必先把整体分布画成图看一看。"
+    ],
+    "options": [
+     "正确调查镇上居民存款的方法",
+     "只看平均值做判断的危险",
+     "平均值在报道中常被使用的原因",
+     "少数有钱人对镇子经济的影响"
+    ]
+   },
+   "en": {
+    "scene": "In a university class, a teacher is speaking.",
+    "question": "What is the teacher talking about?",
+    "lines": [
+     "Suppose you surveyed a town and found residents' average savings topped ten million yen. You'd think people there are pretty well off, wouldn't you?",
+     "But when you actually line up each person's amount, it often turns out most have a few million or less, and a handful of wealthy people pull the average way up.",
+     "Averages are easy to calculate and handy for comparison, which is why newspapers and TV use them almost daily.",
+     "But the moment numbers are boiled down to one, the spread behind them disappears. Where's the person in the middle? Where are people clustered? Judge by the average alone without looking, and you may reach conclusions far from the town's reality.",
+     "With the data we'll handle from today, before computing any average, always plot the whole distribution and look at it first."
+    ],
+    "options": [
+     "How to survey residents' savings correctly",
+     "The danger of judging by averages alone",
+     "Why averages are common in the news",
+     "How a few wealthy people affect a town's economy"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：「それを見ないまま平均だけで判断すると、町の実態とはかけ離れた結論になりかねません。」最后要学生先看整体分布。\n推理：镇子存款只是例子，说明少数人会拉高平均；平均值方便、常用于报道是让步；主旨是平均值掩盖离散程度，只看它判断有危险。\n容易错：把例子（存款、有钱人）或让步部分（报道常用）当主题。",
+   "en": "Evidence: 「それを見ないまま平均だけで判断すると、町の実態とはかけ離れた結論になりかねません。」 and he tells students to look at the distribution first.\nReasoning: The savings are just an example of a few people skewing an average; the convenience of averages in the news is a concession. The point: averages hide the spread, so judging by them alone is risky.\nTrap: mistaking the example (savings, rich residents) or the concession (media use) for the topic."
+  },
+  "wrong": [
+   {
+    "zh": "镇子的存款只是举的例子，不是讲调查方法。",
+    "en": "The town's savings are only an example, not a lesson in surveying."
+   },
+   null,
+   {
+    "zh": "报道常用平均值只是让步，之后用「でも」转到它的问题。",
+    "en": "Media use is a concession; 「でも」 turns to the problem."
+   },
+   {
+    "zh": "有钱人只是说明平均被拉高的例子，没讲对经济的影响。",
+    "en": "The wealthy illustrate a skewed average; economic impact isn't discussed."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n1-ck-318",
+  "type": "gaiyou",
+  "scene": "会社で、女の人と男の人が、週休三日制について話しています。",
+  "question": "男の人は、週休三日制についてどう考えていますか。",
+  "lines": [
+   [
+    "F",
+    "来年度から、希望すれば週休三日にできるようになるんだって。田中さん、どうする？"
+   ],
+   [
+    "M",
+    "制度ができること自体は歓迎だよ。子どもの送り迎えだの介護だの、事情は人それぞれだし、働き方を選べるに越したことはないからね。"
+   ],
+   [
+    "F",
+    "じゃあ、申し込むの？"
+   ],
+   [
+    "M",
+    "うーん、僕自身は見送るかな。休みが一日増えたところで、仕事の量が減るわけじゃなし。四日で同じだけこなそうものなら、連日の残業は免れないだろうし。"
+   ],
+   [
+    "F",
+    "確かに。会議もぎゅうぎゅうに詰め込まれそうだしね。"
+   ],
+   [
+    "M",
+    "そうなんだよ。会社が仕事の割り振りまで見直すというなら話は別だけど、今のままじゃ、休んだ人の分を誰かがかぶるだけになりかねないよ。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "仕事が減るなら、すぐにでも利用したい",
+   "制度には賛成だが、自分は今は使わない",
+   "働き方を選べるのはいいが、負担が偏るので反対だ",
+   "子育てや介護をする人だけが使うべきだ"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "公司里，女人和男人在谈每周休三天的制度。",
+    "question": "男人对每周休三天的制度是怎么想的？",
+    "lines": [
+     "听说从下一年度开始，申请的话就可以每周休三天。田中，你怎么打算？",
+     "有这个制度本身我是欢迎的。接送孩子啦、照顾老人啦，每个人情况都不一样，能选择工作方式当然再好不过。",
+     "那你申请吗？",
+     "嗯……我自己还是先不申请吧。就算多休一天，工作量也不会减少。要是想在四天里干完同样的活，天天加班恐怕是免不了的。",
+     "确实。会议好像也会被塞得满满的。",
+     "就是啊。公司要是连工作分配都重新调整，那就另当别论了，可照现在这样，很可能只会变成别人替休息的人扛活。"
+    ],
+    "options": [
+     "如果工作减少，马上就想用",
+     "赞成制度，但自己现在不用",
+     "能选择工作方式是好事，但负担会不均，所以反对",
+     "应该只让带孩子或照顾老人的人用"
+    ]
+   },
+   "en": {
+    "scene": "At a company, a woman and a man are talking about a four-day working week.",
+    "question": "What does the man think about the four-day week?",
+    "lines": [
+     "From next year, apparently we can switch to a three-day weekend if we want. What will you do, Tanaka?",
+     "I welcome the scheme itself. School runs, caring duties — everyone's situation is different, and being able to choose how you work can only be a good thing.",
+     "So you'll apply?",
+     "Hmm, I think I'll pass myself. An extra day off doesn't mean any less work. Try to get the same amount done in four days and overtime every night would be unavoidable.",
+     "True. Meetings would probably get crammed in too.",
+     "Exactly. If the company rethought how work is divided up, that'd be another matter, but as things are, someone could just end up covering for whoever's off."
+    ],
+    "options": [
+     "If the work is reduced, he wants to use it right away",
+     "He supports the scheme but won't use it himself for now",
+     "Choice is good, but he opposes it because the burden would fall unevenly",
+     "Only people with childcare or caring duties should use it"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「制度ができること自体は歓迎だよ。」又说：「僕自身は見送るかな。」\n推理：他对制度本身持肯定态度（「〜に越したことはない」），但工作量不变，四天干完必然加班，还可能让别人替休息的人扛活。只有公司重新分配工作才「話は別」。所以是“赞成制度，但现状下自己不用”。\n容易错：「休んだ人の分を誰かがかぶる」是他不用的理由，不是反对制度；「仕事の割り振り」不等于工作减少。",
+   "en": "Evidence: He says 「制度ができること自体は歓迎だよ。」 and 「僕自身は見送るかな。」\nReasoning: He approves of the scheme itself (「〜に越したことはない」), but the workload stays the same, so four days means unavoidable overtime and others covering for whoever is off. Only reallocated work would be 「話は別」. So: for the scheme, but not using it now.\nTrap: others covering for those off is why he won't use it, not a reason to oppose the scheme; reallocating work isn't the same as less work."
+  },
+  "wrong": [
+   {
+    "zh": "他说的条件是公司重新分配工作，不是工作减少；现在他不打算用。",
+    "en": "His condition is reallocating work, not less work; he won't use it now."
+   },
+   null,
+   {
+    "zh": "他说「制度ができること自体は歓迎だよ」，并不反对制度；负担不均只是他自己暂不使用的理由。",
+    "en": "He says 「制度ができること自体は歓迎だよ」 — he doesn't oppose it; the uneven burden is only why he won't use it himself."
+   },
+   {
+    "zh": "带孩子、照顾老人是他说明制度好处的例子，没说只给他们用。",
+    "en": "Childcare and caring illustrate its value; he doesn't say only they should use it."
+   }
+  ],
+  "traps": [
+   "attitude-combo",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n1-ck-319",
+  "type": "gaiyou",
+  "scene": "テレビで、庭師の男の人が話しています。",
+  "question": "庭師は、庭づくりについてどう考えていますか。",
+  "lines": [
+   [
+    "M",
+    "庭をご依頼になる方の多くは、できあがったその日に、きれいに整った庭を見たいとおっしゃいます。お気持ちはよくわかります。"
+   ],
+   [
+    "M",
+    "でも私は、引き渡しの日の庭を、一番いい状態にはしないようにしているんです。木と木の間はわざと広めに空けますし、苔も、まだまばらなところがある。"
+   ],
+   [
+    "M",
+    "植えたばかりの木は、そこから根を張り、枝を伸ばします。最初から隙間なく植えてしまうと、五年もすれば込み合って、今度は切らなければならなくなる。"
+   ],
+   [
+    "M",
+    "十年後に、木々がちょうどいい具合に枝を交わす。その姿から逆算して、今の配置を決めているんです。"
+   ],
+   [
+    "M",
+    "ですから、お引き渡しのときには、「少し寂しく見えるかもしれませんが」と、必ずひとことお伝えしています。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "完成した日に最も美しく見える庭にすべきだ",
+   "込み合った木は、早めに切ったほうがいい",
+   "客の希望どおりに庭を作ることが大切だ",
+   "庭は、完成後の成長を見越して作るものだ"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "电视上，一位男园艺师在讲话。",
+    "question": "园艺师对造园是怎么想的？",
+    "lines": [
+     "委托我们造园的人，很多都说想在完工那天就看到整整齐齐的漂亮庭院。这种心情我很理解。",
+     "可是我尽量不把交付那天的庭院做成最好的状态。树和树之间故意留得宽一些，苔藓也还有稀稀拉拉的地方。",
+     "刚种下的树，从那时起会扎根、伸展枝条。一开始就种得密密麻麻的话，过个五年就挤在一起，到时候又不得不砍掉。",
+     "十年后，树木恰到好处地枝叶交错——我是从那个样子倒推，来决定现在的布局的。",
+     "所以交付的时候，我一定会说一句：“可能看起来有点冷清。”"
+    ],
+    "options": [
+     "应该做成完工那天看起来最美的庭院",
+     "挤在一起的树最好早点砍掉",
+     "按客人的希望造园很重要",
+     "庭院要预见完工后的生长来建造"
+    ]
+   },
+   "en": {
+    "scene": "On TV, a male gardener is speaking.",
+    "question": "What does the gardener think about making gardens?",
+    "lines": [
+     "Many clients say they want to see a neat, beautiful garden on the day it's finished. I understand the feeling well.",
+     "But I make a point of not having the garden at its best on handover day. I leave wide gaps between trees on purpose, and the moss is still patchy in places.",
+     "Newly planted trees then put down roots and spread their branches. Plant them with no gaps from the start, and in five years they're crowded and you have to cut them back.",
+     "Ten years on, the trees' branches will meet just right. I work back from that picture to decide today's layout.",
+     "So at handover, I always say, 'It may look a little sparse.'"
+    ],
+    "options": [
+     "A garden should look its best on the day it's finished",
+     "Crowded trees should be cut back early",
+     "It's important to build the garden the client wants",
+     "A garden is made with its growth after completion in mind"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：「植えたばかりの木は、そこから根を張り、枝を伸ばします。」「十年後に、木々がちょうどいい具合に枝を交わす。その姿から逆算して、今の配置を決めているんです。」\n推理：他理解客人想完工当天就好看，但故意留空隙、苔藓也不铺满，因为树会扎根长枝；种太密五年后就得砍。他是从十年后的样子倒推来布局，所以主张造园要预见完工后的生长。\n容易错：「お気持ちはよくわかります」只是理解，不是赞同照客人意思做；「切らなければならなくなる」是要避免的结果。",
+   "en": "Evidence: 「植えたばかりの木は、そこから根を張り、枝を伸ばします。」 and 「十年後に、木々がちょうどいい具合に枝を交わす。その姿から逆算して、今の配置を決めているんです。」\nReasoning: He understands clients want it beautiful on day one, but leaves gaps and patchy moss because trees will root and spread; packed planting must be cut back in five years. He works back from the garden ten years on, so a garden should be made anticipating its growth.\nTrap: 「お気持ちはよくわかります」 is sympathy, not agreement; cutting back is the outcome he avoids."
+  },
+  "wrong": [
+   {
+    "zh": "这是客人的希望，他说自己故意不这样做。",
+    "en": "That's what clients want; he deliberately doesn't do it."
+   },
+   {
+    "zh": "「切らなければならなくなる」是种太密的后果，他要的是一开始就留空隙。",
+    "en": "Cutting back is the result of crowding; he leaves gaps from the start."
+   },
+   {
+    "zh": "他理解客人的心情，但并不照客人的希望做。",
+    "en": "He understands clients' wishes but doesn't simply follow them."
+   },
+   null
+  ],
+  "traps": [
+   "twisted",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n1-ck-320",
+  "type": "gaiyou",
+  "scene": "講演会で、地図を作る会社の女の人が話しています。",
+  "question": "女の人は何について話していますか。",
+  "lines": [
+   [
+    "F",
+    "地図を作る仕事というと、正確に、細かく、何でも描き込むことだと思われがちです。"
+   ],
+   [
+    "F",
+    "けれども、実際の仕事で一番時間をかけているのは、何を描かないかを決めることなんです。"
+   ],
+   [
+    "F",
+    "たとえば、観光客向けの地図に、すべての路地とすべての建物を載せたらどうなるか。情報としては正しくても、駅からお寺までどう歩けばいいのかが、かえって見えなくなってしまいます。"
+   ],
+   [
+    "F",
+    "登山用の地図なら、コンビニの場所は要りませんが、水場と、道が崩れやすいところは欠かせない。使う人が何をしたいのかによって、残すものと消すものが変わるんです。"
+   ],
+   [
+    "F",
+    "よい地図とは、全部を載せた地図ではなく、使う人にとって要らないものを思い切って省いた地図だ。私はそう考えています。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "使う目的に合わせて情報を選ぶことの大切さ",
+   "地図をより正確に描くための技術",
+   "観光用の地図と登山用の地図の違い",
+   "使う人に合わせて地図の種類を増やす必要"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "讲座上，一位制作地图的公司的女人在讲话。",
+    "question": "女人在讲什么？",
+    "lines": [
+     "一说到制作地图的工作，人们往往以为就是准确、细致、什么都画上去。",
+     "但是，在实际工作中花时间最多的，是决定不画什么。",
+     "比如，在面向游客的地图上，把所有小巷和所有建筑都画上会怎样？作为信息就算是对的，从车站到寺庙该怎么走反而看不出来了。",
+     "登山用的地图，不需要便利店的位置，但水源和容易塌方的路段必不可少。根据使用的人想做什么，保留的东西和删去的东西就不同。",
+     "好的地图不是什么都画上的地图，而是果断省去了对使用者没用的东西的地图。我是这样认为的。"
+    ],
+    "options": [
+     "根据使用目的选择信息的重要性",
+     "把地图画得更准确的技术",
+     "观光地图和登山地图的区别",
+     "根据使用者增加地图种类的必要"
+    ]
+   },
+   "en": {
+    "scene": "At a lecture, a woman from a map-making company is speaking.",
+    "question": "What is the woman talking about?",
+    "lines": [
+     "People tend to think map-making means drawing everything in, precisely and in detail.",
+     "But what we actually spend the most time on is deciding what not to draw.",
+     "Say you put every alley and every building on a tourist map. Accurate as the information is, how to walk from the station to the temple actually gets lost.",
+     "On a hiking map you don't need convenience stores, but water sources and spots where the trail tends to collapse are essential. What stays and what goes depends on what the user wants to do.",
+     "A good map isn't one with everything on it, but one that boldly leaves out what its user doesn't need. That's my view."
+    ],
+    "options": [
+     "The importance of choosing information to suit the purpose",
+     "Techniques for drawing maps more accurately",
+     "The difference between tourist and hiking maps",
+     "The need for more kinds of maps for different users"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：「使う人が何をしたいのかによって、残すものと消すものが変わるんです。」「よい地図とは、全部を載せた地図ではなく、使う人にとって要らないものを思い切って省いた地図だ。」\n推理：她先否定“什么都画上”的印象，说最花时间的是决定不画什么；观光图、登山图都是例子。主旨是按用途取舍信息。\n容易错：两种地图只是例子；她讲的是每张图里删什么，不是增加种类。",
+   "en": "Evidence: 「使う人が何をしたいのかによって、残すものと消すものが変わるんです。」 and 「よい地図とは、全部を載せた地図ではなく、使う人にとって要らないものを思い切って省いた地図だ。」\nReasoning: She rejects the image of drawing everything; the most time goes on deciding what to leave out, with tourist and hiking maps as examples. Her point is selecting information for the purpose.\nTrap: the two maps are examples; she's talking about what to omit on a map, not producing more kinds."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "她说重点不是画得更细，而是决定不画什么。",
+    "en": "Her point isn't more precision but deciding what to omit."
+   },
+   {
+    "zh": "两种地图只是说明取舍的例子。",
+    "en": "The two maps only illustrate what to keep and drop."
+   },
+   {
+    "zh": "她讲的是每张地图里省去什么，不是增加地图种类。",
+    "en": "She's talking about what to omit, not making more kinds of maps."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n1-ck-321",
+  "type": "gaiyou",
+  "scene": "ラジオで、森林の研究者が話しています。",
+  "question": "研究者は何について話していますか。",
+  "lines": [
+   [
+    "M",
+    "木を植えることは環境にいいことだ。そう考える方は多いと思いますし、私も基本的には賛成です。"
+   ],
+   [
+    "M",
+    "ただ、植えたあとのことは、あまり話題になりません。日本の山には、戦後にいっせいに植えられたスギやヒノキの林が、たくさんあります。"
+   ],
+   [
+    "M",
+    "本来なら、育つにつれて間引きをして、一本一本に光が届くようにしなければなりません。ところが、手入れをする人が減って、多くの林が放っておかれたままです。"
+   ],
+   [
+    "M",
+    "そうした林の中は昼でも暗く、地面に草が生えません。土がむき出しになるので大雨のたびに流れ出し、根の浅い木がまとめて倒れることもある。植えた木が、かえって山を弱くしているんです。"
+   ],
+   [
+    "M",
+    "植えることと同じくらい、植えた森を誰がどう世話していくのか。そこにも目を向けていただきたいと思います。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "木を植えることが環境にもたらす効果",
+   "戦後にスギやヒノキが植えられた理由",
+   "植えた林の手入れを続けることの大切さ",
+   "大雨のときに山の木が倒れる仕組み"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "广播里，一位森林研究者在讲话。",
+    "question": "研究者在讲什么？",
+    "lines": [
+     "种树对环境有好处——我想很多人这么认为，我基本上也赞成。",
+     "不过，种下以后的事却很少被谈起。日本的山上有很多战后一齐种下的杉树和桧树林。",
+     "本来，随着树长大要进行间伐，让阳光照到每一棵树上。可是，打理的人少了，很多林子就那么被放着不管。",
+     "那样的林子里白天也很暗，地上不长草。泥土裸露着，每逢大雨就被冲走，根浅的树有时还会成片倒下。种下的树反而让山变得脆弱了。",
+     "和种树同样重要的是，种下的森林由谁、怎样照料下去。希望大家也关注这一点。"
+    ],
+    "options": [
+     "种树给环境带来的效果",
+     "战后种植杉树和桧树的原因",
+     "持续打理种下的林子的重要性",
+     "大雨时山上的树倒下的原理"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, a forest researcher is speaking.",
+    "question": "What is the researcher talking about?",
+    "lines": [
+     "Planting trees is good for the environment — many people think so, and I basically agree.",
+     "But what happens after planting rarely comes up. Japan's mountains have many cedar and cypress plantations planted all at once after the war.",
+     "Ideally they should be thinned as they grow so light reaches each tree. But with fewer people to tend them, many plantations have been left alone.",
+     "Inside such forests it's dark even at midday and no grass grows. The bare soil washes away in every downpour, and shallow-rooted trees sometimes fall together. The planted trees are actually weakening the mountains.",
+     "Just as important as planting is who will look after the planted forests, and how. I'd like people to pay attention to that too."
+    ],
+    "options": [
+     "The environmental benefits of planting trees",
+     "Why cedar and cypress were planted after the war",
+     "The importance of continuing to tend planted forests",
+     "How trees on mountains fall in heavy rain"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：「植えることと同じくらい、植えた森を誰がどう世話していくのか。そこにも目を向けていただきたいと思います。」\n推理：他先赞成种树，「ただ」转到种下以后的事：林子没人间伐，变暗、土壤流失、树倒下，种的树反而让山变弱。主旨是种下的林子要持续打理。\n容易错：种树的好处是开头的让步；大雨倒树是说明不打理的后果。",
+   "en": "Evidence: 「植えることと同じくらい、植えた森を誰がどう世話していくのか。そこにも目を向けていただきたいと思います。」\nReasoning: He agrees with planting, then 「ただ」 turns to what follows: untended plantations go dark, the soil washes away and trees fall, so planted trees weaken the mountains. The point is that planted forests need continued care.\nTrap: the benefits of planting are an opening concession; trees falling in rain illustrate neglect."
+  },
+  "wrong": [
+   {
+    "zh": "种树的好处是开头的让步，之后「ただ」转到问题。",
+    "en": "The benefits are a concession; 「ただ」 turns to the problem."
+   },
+   {
+    "zh": "战后种植只是背景，没讲原因。",
+    "en": "Postwar planting is background; no reasons are given."
+   },
+   null,
+   {
+    "zh": "大雨倒树是不打理的后果之一，是细节。",
+    "en": "Trees falling in rain is one consequence of neglect — a detail."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n1-ck-322",
+  "type": "gaiyou",
+  "scene": "会社で、男の人と女の人が、会議について話しています。",
+  "question": "女の人は、会議にパソコンを持ち込むのを禁止することについてどう考えていますか。",
+  "lines": [
+   [
+    "M",
+    "来月から、会議にパソコンの持ち込みが禁止になるって、部長が言ってたよ。みんな画面ばっかり見て、話を聞いてないからって。"
+   ],
+   [
+    "F",
+    "ああ、それね。画面を見てる人が多いのは、私も気になってた。"
+   ],
+   [
+    "M",
+    "でしょう。いいことだと思うけどな。"
+   ],
+   [
+    "F",
+    "うーん。でも、あれって、自分に関係のない議題のあいだに、自分の仕事を片付けてるんじゃない？一時間の会議で、自分に関係あるのは十分だけ、とか。"
+   ],
+   [
+    "M",
+    "ああ、それはあるかも。"
+   ],
+   [
+    "F",
+    "だったら、パソコンを取り上げても、ぼんやり座ってる人が増えるだけだと思う。それより、議題ごとに必要な人だけ呼ぶようにすれば、パソコンを開く暇なんてなくなるんじゃないかな。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "話を聞かない人が多いので、禁止に賛成だ",
+   "問題はあるが、自分の仕事ができなくなるので反対だ",
+   "問題は認めるが、禁止より会議の開き方を変えるべきだ",
+   "必要な人だけがパソコンを持ち込めるようにすべきだ"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "公司里，男人和女人在谈开会的事。",
+    "question": "女人对禁止把电脑带进会议是怎么想的？",
+    "lines": [
+     "部长说从下个月起禁止把电脑带进会议。说是大家都只盯着屏幕，不听人讲话。",
+     "啊，那个啊。盯着屏幕的人多，我也注意到了。",
+     "是吧。我觉得是好事。",
+     "嗯……不过，那些人是不是在和自己无关的议题期间处理自己的工作呢？一个小时的会，和自己有关的只有十分钟之类的。",
+     "啊，可能是那样。",
+     "那样的话，就算把电脑收走，也只会多出一些发呆坐着的人。比起这个，按议题只叫需要的人来，不就没工夫开电脑了吗？"
+    ],
+    "options": [
+     "因为不听人讲话的人多，所以赞成禁止",
+     "虽然有问题，但没法做自己的工作，所以反对",
+     "承认有问题，但比起禁止应该改变开会的方式",
+     "应该只让需要的人带电脑"
+    ]
+   },
+   "en": {
+    "scene": "At a company, a man and a woman are talking about meetings.",
+    "question": "What does the woman think about banning laptops from meetings?",
+    "lines": [
+     "The manager said laptops will be banned from meetings starting next month, because everyone stares at their screens instead of listening.",
+     "Ah, that. I'd noticed lots of people looking at their screens too.",
+     "Right? I think it's a good move.",
+     "Hmm. But aren't they getting their own work done during the items that don't concern them? Like a one-hour meeting where only ten minutes is relevant to you.",
+     "Ah, that could be it.",
+     "Then taking the laptops away will just mean more people sitting there idly. Instead, if we called only the people needed for each item, no one would have time to open a laptop."
+    ],
+    "options": [
+     "She supports the ban because many people don't listen",
+     "There's a problem, but she opposes it because she couldn't do her own work",
+     "She admits the problem but thinks meetings should be run differently instead",
+     "Only those who need laptops should be allowed to bring them"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「画面を見てる人が多いのは、私も気になってた。」后面又说：「それより、議題ごとに必要な人だけ呼ぶようにすれば、パソコンを開く暇なんてなくなるんじゃないかな。」\n推理：她承认看屏幕的人多是问题，但认为原因是会上有很多和自己无关的议题，收走电脑只会让人发呆。她的主张是按议题只叫需要的人，即改变开会方式。\n容易错：「必要な人だけ」说的是叫谁来开会，不是谁能带电脑；她不是为了自己的工作反对。",
+   "en": "Evidence: She says 「画面を見てる人が多いのは、私も気になってた。」 and then 「それより、議題ごとに必要な人だけ呼ぶようにすれば、パソコンを開く暇なんてなくなるんじゃないかな。」\nReasoning: She accepts that screen-staring is a problem but thinks it comes from sitting through irrelevant items; removing laptops would just leave people idle. Her proposal is inviting only those needed for each item — changing how meetings are run.\nTrap: 「必要な人だけ」 is about who attends, not who may bring a laptop; she isn't objecting for the sake of her own work."
+  },
+  "wrong": [
+   {
+    "zh": "赞成禁止的是男的；她说收走电脑只会让人发呆。",
+    "en": "It's the man who backs the ban; she says it would just leave people idle."
+   },
+   {
+    "zh": "「自分の仕事を片付けてる」说的是别人看屏幕的原因，她没为自己的工作反对；她的主张是改变开会方式。",
+    "en": "「自分の仕事を片付けてる」 explains why others look at screens; she isn't objecting for her own work — she wants meetings run differently."
+   },
+   null,
+   {
+    "zh": "「必要な人だけ」是说按议题只叫需要的人来开会，与带不带电脑无关。",
+    "en": "「必要な人だけ」 means inviting only needed people, not laptop permission."
+   }
+  ],
+  "traps": [
+   "attitude-combo",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n1-ck-323",
+  "type": "gaiyou",
+  "scene": "ラジオで、食品の研究者が話しています。",
+  "question": "研究者は、賞味期限についてどう考えていますか。",
+  "lines": [
+   [
+    "F",
+    "冷蔵庫の奥から、賞味期限が一日過ぎた牛乳が出てきた。皆さんならどうしますか。迷わず捨てる、という方も少なくないでしょう。"
+   ],
+   [
+    "F",
+    "賞味期限というのは、もともと「おいしく食べられる期限」で、「この日を過ぎたら危ない」という意味ではありません。安全の目安になるのは、傷みやすい食品に付けられている消費期限のほうです。"
+   ],
+   [
+    "F",
+    "しかも賞味期限は、多くの場合、実際においしく食べられる期間より短めに設定されています。メーカーとしては、万一に備えて余裕を持たせておきたいわけです。"
+   ],
+   [
+    "F",
+    "もちろん、保存のしかたが悪ければ、期限内でも傷むことはあります。ですから、日付だけを頼りにするのではなく、においや見た目を自分で確かめる習慣を持ってほしいんです。"
+   ],
+   [
+    "F",
+    "日付に判断を任せきりにしていると、まだ食べられるものを捨て続けることになりますから。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "安全のため、期限の過ぎたものはすぐ捨てるべきだ",
+   "メーカーは期限をもっと長めに設定すべきだ",
+   "消費期限のある食品だけ気をつければよい",
+   "日付だけでなく、自分の感覚でも判断すべきだ"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "广播里，一位食品研究者在讲话。",
+    "question": "研究者对赏味期限是怎么想的？",
+    "lines": [
+     "从冰箱深处翻出一盒赏味期限过了一天的牛奶。各位会怎么办？毫不犹豫地扔掉的人恐怕也不少吧。",
+     "赏味期限原本是“能美味食用的期限”，并不是“过了这天就危险”的意思。作为安全标准的，是标在容易变质的食品上的消费期限。",
+     "而且，赏味期限在很多情况下设定得比实际能美味食用的期间要短。厂家想防万一，留点余地。",
+     "当然，如果保存方法不好，在期限内也会变质。所以，希望大家不要只依赖日期，要养成自己确认气味和外观的习惯。",
+     "因为如果把判断全交给日期，就会不断扔掉还能吃的东西。"
+    ],
+    "options": [
+     "为了安全，过了期限的东西应该马上扔掉",
+     "厂家应该把期限设得更长一些",
+     "只要注意标有消费期限的食品就行",
+     "不只看日期，也要用自己的感觉判断"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, a food researcher is speaking.",
+    "question": "What does the researcher think about best-before dates?",
+    "lines": [
+     "You find milk at the back of the fridge one day past its best-before date. What would you do? Quite a few of you would throw it out without a second thought.",
+     "A best-before date originally means 'the period it tastes good,' not 'dangerous after this day.' The safety guide is the use-by date put on perishable foods.",
+     "What's more, best-before dates are usually set shorter than the time the food actually stays good. Makers want a margin, just in case.",
+     "Of course, food stored badly can spoil even within the date. So I'd like people not to rely only on the date, but to get into the habit of checking the smell and look themselves.",
+     "Because if you leave the decision entirely to the date, you'll keep throwing away food that's still fine."
+    ],
+    "options": [
+     "For safety, anything past its date should be thrown out at once",
+     "Makers should set longer dates",
+     "Only foods with a use-by date need care",
+     "Judge not only by the date but by your own senses"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：「日付だけを頼りにするのではなく、においや見た目を自分で確かめる習慣を持ってほしいんです。」\n推理：她说明赏味期限不是安全期限，而且设得偏短；但保存不好期限内也会坏。所以不能只看日期，也要用气味和外观自己判断，否则会一直扔掉还能吃的东西。\n容易错：消费期限只是用来说明两种期限的区别，她没说只要注意那类食品；厂家留余地她只是说明原因，没要求改。",
+   "en": "Evidence: 「日付だけを頼りにするのではなく、においや見た目を自分で確かめる習慣を持ってほしいんです。」\nReasoning: She explains best-before isn't a safety date and is set short, yet food can spoil within it if stored badly. So don't rely on the date alone — check smell and look yourself, or you'll keep discarding good food.\nTrap: use-by dates only explain the difference, not the only foods to watch; the makers' margin is explained, not criticised."
+  },
+  "wrong": [
+   {
+    "zh": "这是开头描述的常见做法，她认为会扔掉还能吃的东西。",
+    "en": "That's the common habit she opens with; she says it wastes good food."
+   },
+   {
+    "zh": "她只是说明厂家为什么设得短，没要求改长。",
+    "en": "She explains why makers set dates short; she doesn't ask them to change."
+   },
+   {
+    "zh": "她说保存不好的话期限内也会坏，要大家自己确认气味和外观，并不是只注意有消费期限的食品。",
+    "en": "She says food stored badly can spoil within the date and asks people to check for themselves — not to watch only foods with use-by dates."
+   },
+   null
+  ],
+  "traps": [
+   "twisted",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n1-ck-324",
+  "type": "gaiyou",
+  "scene": "テレビで、将棋の棋士の男の人が話しています。",
+  "question": "棋士は、AIについてどう考えていますか。",
+  "lines": [
+   [
+    "M",
+    "今では将棋のAIは、どんな名人よりも強くなりました。対局の中継でも、画面の隅にAIの評価が数字で出ていて、どちらが有利か、誰にでも一目でわかります。"
+   ],
+   [
+    "M",
+    "私たち棋士の研究も、すっかり変わりました。昔は先輩の家に集まって何日も議論したような局面を、AIは数秒で答えてしまう。正直、悔しいと思ったこともあります。"
+   ],
+   [
+    "M",
+    "ところが最近、ファンの方に言われて、はっとしたんです。「数字を見ていると、先生が悪い手を指したのがすぐわかる。でも、そこから苦しみながら立て直していくところが、一番面白い」と。"
+   ],
+   [
+    "M",
+    "AIは正しい手を教えてくれますが、迷ったり、間違えたり、それでも粘ったりするのは人間だけです。見ている人が心を動かされるのは、たぶんそこなんでしょう。"
+   ],
+   [
+    "M",
+    "AIと強さを比べる時代は、もう終わりました。これからは、AIのおかげで見えるようになった人間の迷いや粘りを、どう伝えていくか。それが私たちの仕事だと思っています。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "AIによって、人間が指す姿の魅力が伝わりやすくなった",
+   "AIに頼りすぎると、棋士の研究が浅くなってしまう",
+   "人間は努力すれば、いつかAIより強くなれる",
+   "中継で、AIの評価を画面に出すのはやめるべきだ"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "电视上，一位男将棋棋士在讲话。",
+    "question": "棋士对 AI 是怎么想的？",
+    "lines": [
+     "现在将棋 AI 已经比任何名人都强了。对局直播的时候，画面角落也会用数字显示 AI 的评估，谁占优势谁都能一眼看出来。",
+     "我们棋士的研究也彻底变了。以前要聚在前辈家讨论好几天的局面，AI 几秒钟就给出答案。说实话，我也曾觉得不甘心。",
+     "不过最近，一位棋迷的话让我猛然醒悟。他说：“看着数字，马上就知道老师走了坏棋。可是从那里一边苦撑一边扳回局面的过程，才是最有意思的。”",
+     "AI 会告诉我们正确的走法，但会犹豫、会犯错、却还要坚持的，只有人。观众被打动的，大概就是这一点吧。",
+     "和 AI 比强弱的时代已经结束了。今后，怎样把多亏 AI 才能看见的人的犹豫和坚持传达出去——我认为这就是我们的工作。"
+    ],
+    "options": [
+     "因为 AI，人下棋的魅力变得更容易传达了",
+     "过于依赖 AI，棋士的研究会变浅",
+     "人只要努力，总有一天能比 AI 强",
+     "直播时应该停止在画面上显示 AI 的评估"
+    ]
+   },
+   "en": {
+    "scene": "On TV, a male professional shogi player is speaking.",
+    "question": "What does the shogi player think about AI?",
+    "lines": [
+     "Shogi AI is now stronger than any master. In broadcasts, the AI's evaluation appears as a number in the corner of the screen, so anyone can see at a glance who's ahead.",
+     "Our study as players has changed completely too. Positions we once argued over for days at a senior player's house, AI answers in seconds. Honestly, I've felt galled by that.",
+     "But recently something a fan said brought me up short: 'Watching the number, I can tell right away when you've made a bad move. But the most exciting part is watching you struggle back from it.'",
+     "AI tells you the right move, but only humans hesitate, make mistakes and still hang on. That's probably what moves the people watching.",
+     "The era of competing with AI on strength is over. From now on, our job is to convey the hesitation and tenacity of humans that AI has made visible."
+    ],
+    "options": [
+     "AI has made the appeal of humans playing easier to convey",
+     "Relying too much on AI makes players' study shallow",
+     "With effort, humans can one day beat AI",
+     "Broadcasts should stop showing the AI's evaluation"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：「これからは、AIのおかげで見えるようになった人間の迷いや粘りを、どう伝えていくか。それが私たちの仕事だと思っています。」\n推理：他先说 AI 比人强、研究方式变了，自己也不甘心；棋迷的话让他意识到，AI 的评估数字让观众看清人走坏棋后苦撑扳回的过程，这才最有意思。所以他认为 AI 反而让人下棋的魅力更容易被看见。\n容易错：「悔しい」只是过去的心情；AI 评估的数字正是让魅力看得见的东西，不是要取消。",
+   "en": "Evidence: 「これからは、AIのおかげで見えるようになった人間の迷いや粘りを、どう伝えていくか。それが私たちの仕事だと思っています。」\nReasoning: He grants AI is stronger and has changed study, which galled him; a fan's remark showed him that the AI's number lets viewers see a player struggle back after a bad move — the best part. So AI has made the appeal of human play easier to see.\nTrap: 「悔しい」 was a past feeling; the on-screen number is what makes the drama visible, not something to remove."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "他只说研究方式变了，没有说研究变浅。",
+    "en": "He says study has changed, not that it has become shallow."
+   },
+   {
+    "zh": "他说「AIと強さを比べる時代は、もう終わりました」。",
+    "en": "He says 「AIと強さを比べる時代は、もう終わりました」."
+   },
+   {
+    "zh": "正是因为有 AI 的数字，观众才看得出坏棋和扳回，他没主张取消。",
+    "en": "The number is what lets viewers see the struggle; he doesn't want it removed."
+   }
+  ],
+  "traps": [
+   "twisted",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n1-ck-325",
+  "type": "gaiyou",
+  "scene": "女の人と男の人が、男の人の田舎での暮らしについて話しています。",
+  "question": "男の人は、車を持たない暮らしについてどう思っていますか。",
+  "lines": [
+   [
+    "F",
+    "山のほうに引っ越したんだってね。車、買ったの？あのへん、バスも一日に何本もないでしょう。"
+   ],
+   [
+    "M",
+    "それが、買ってないんだ。最初は、さすがに無理かなと思ったんだけど。"
+   ],
+   [
+    "F",
+    "不便じゃない？"
+   ],
+   [
+    "M",
+    "不便は不便だよ。急に何か要るものができても、すぐには買いに行けないし、買い物は週に一回まとめてだし。"
+   ],
+   [
+    "F",
+    "でしょう。"
+   ],
+   [
+    "M",
+    "でもね、近所のおじいさんが町に出るとき、よく声をかけてくれるんだ。その代わり、僕はパソコンの調子が悪いって言われたら直しに行く。そうやってるうちに、近所の人とすっかり顔なじみになって。車があったら、こうはならなかっただろうなって思うよ。だから、当分はこのままでいいかな。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "不便なので、できるだけ早く車を買いたい",
+   "不便な面はあるが、今の暮らしに満足している",
+   "近所付き合いは楽しいが、やはり車は欠かせない",
+   "バスがもっと増えれば、暮らしやすくなると思う"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "女人和男人在谈男人在乡下的生活。",
+    "question": "男人对没有车的生活是怎么想的？",
+    "lines": [
+     "听说你搬到山那边去了。买车了吗？那一带公交车一天也没几班吧。",
+     "其实没买。一开始我也觉得怕是不行。",
+     "不方便吗？",
+     "不方便是不方便。突然需要什么东西也没法马上去买，买东西是一周一次集中买。",
+     "是吧。",
+     "不过呢，邻居的老爷爷进城的时候经常叫上我。作为交换，他说电脑出毛病了我就去修。这样一来二去，和邻居们都混熟了。我想要是有车的话，就不会这样了。所以暂时就这样也挺好。"
+    ],
+    "options": [
+     "因为不方便，想尽快买车",
+     "虽有不便之处，但对现在的生活很满意",
+     "和邻居来往很开心，但车还是少不了",
+     "觉得公交车再多一些的话会更好住"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking about the man's life in the countryside.",
+    "question": "How does the man feel about living without a car?",
+    "lines": [
+     "I hear you moved out to the hills. Did you buy a car? There are hardly any buses a day out there, are there?",
+     "Actually, no. At first I thought it'd be impossible.",
+     "Isn't it inconvenient?",
+     "It is inconvenient. If I suddenly need something, I can't just go and buy it, and I shop once a week in one go.",
+     "I thought so.",
+     "But the old man next door often asks me along when he drives into town. In return, if he says his computer's acting up, I go and fix it. Doing that, I've got to know everyone around. If I'd had a car, I don't think that would have happened. So for now, I'm happy as I am."
+    ],
+    "options": [
+     "It's inconvenient, so he wants a car as soon as possible",
+     "It has its inconveniences, but he's content with his life now",
+     "He enjoys the neighbours, but still feels he needs a car",
+     "He thinks life would be easier with more buses"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「不便は不便だよ。」最后说：「だから、当分はこのままでいいかな。」\n推理：他承认买东西不方便，但邻居老爷爷带他进城、他帮修电脑，和邻居熟了，觉得有车反而不会这样。所以是“有不便，但满意现状”。\n容易错：和邻居熟起来是他满意的理由，他没说还是需要车；公交车少是女的说的。",
+   "en": "Evidence: He says 「不便は不便だよ。」 and ends with 「だから、当分はこのままでいいかな。」\nReasoning: He admits shopping is inconvenient, but the old man gives him lifts, he fixes the man's computer, and he's got to know the neighbours — which he thinks a car would have prevented. So: inconvenient, but content.\nTrap: getting to know the neighbours is why he is content, not a lead-in to needing a car; the few buses are the woman's remark."
+  },
+  "wrong": [
+   {
+    "zh": "他说「当分はこのままでいいかな」，不打算买车。",
+    "en": "He says 「当分はこのままでいいかな」 — no plans for a car."
+   },
+   null,
+   {
+    "zh": "他说「当分はこのままでいいかな」，甚至觉得有车反而不会和邻居这么熟。",
+    "en": "He says 「当分はこのままでいいかな」 and even thinks a car would have kept him from knowing the neighbours."
+   },
+   {
+    "zh": "公交车少是女的提到的，他没说希望增加。",
+    "en": "The woman mentions the buses; he never asks for more."
+   }
+  ],
+  "traps": [
+   "attitude-combo",
+   "twisted"
+  ]
  }
 ]

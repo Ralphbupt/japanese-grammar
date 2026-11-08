@@ -1665,5 +1665,1318 @@
    "order",
    "later"
   ]
+ },
+ {
+  "id": "n1-ck-115",
+  "type": "kadai",
+  "scene": "会社で、総務部の女の人と男の人が、事務所の移転について話しています。",
+  "question": "男の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "F",
+    "来月の事務所移転の件、引っ越し業者との打ち合わせは、来週の木曜で確定したんだよね。"
+   ],
+   [
+    "M",
+    "はい。それまでに各部署の荷物の量をまとめておくことになっているので、今日中に調査票を配ろうと思ってるんですが。"
+   ],
+   [
+    "F",
+    "うん、それはお願い。ただ、その前に一つ気になることがあって。新しいビルって、搬入に使えるエレベーターが一基しかないでしょう。"
+   ],
+   [
+    "M",
+    "ええ、管理会社の資料にそうありました。"
+   ],
+   [
+    "F",
+    "同じ週末に、上の階にも別の会社が入るらしいの。エレベーターは早い者勝ちだって聞いたから、日にちが押さえられなかったら、業者との打ち合わせ自体が意味をなさなくなる。調査票より先に、そっちを押さえたほうがいいんじゃない？"
+   ],
+   [
+    "M",
+    "あ、それでしたら、契約のときに管理会社のほうで入居の順に割り振ってくれていまして。うちは土曜の午前中で、確認の書面ももういただいてあります。"
+   ],
+   [
+    "F",
+    "なんだ、そうだったの。じゃあ心配いらないね。それなら、調査票は予定どおり今日中にお願い。レイアウト図の修正は、荷物の量が出てからでいいからね。"
+   ],
+   [
+    "M",
+    "わかりました。"
+   ]
+  ],
+  "options": [
+   "各部署に荷物の調査票を配って回る",
+   "引っ越し業者と打ち合わせの日を決める",
+   "管理会社にエレベーターの予約を入れる",
+   "新しい事務所のレイアウト図を直す"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "公司里，总务部的女人和男人在谈办公室搬迁的事。",
+    "question": "男人接下来首先要做什么？",
+    "lines": [
+     "下个月办公室搬迁的事，和搬家公司的碰头会定在下周四了吧。",
+     "是的。在那之前要把各部门的物品量汇总好，所以我想今天之内把调查表发下去。",
+     "嗯，那个拜托了。不过在那之前有件事我有点担心。新大楼能用来搬运的电梯只有一部吧。",
+     "对，物业公司的资料上是那么写的。",
+     "听说同一个周末楼上也有别的公司要搬进来。听说电梯是先到先得，要是日子订不下来，跟搬家公司的碰头会本身就没意义了。是不是该比调查表先把那个订下来？",
+     "啊，那个的话，签约的时候物业就按入住顺序分配好了。我们是周六上午，确认的书面文件也已经拿到了。",
+     "什么嘛，原来是这样。那就不用担心了。那调查表就按原计划今天之内发吧。平面布置图的修改，等物品量出来以后再弄就行。",
+     "明白了。"
+    ],
+    "options": [
+     "给各部门挨个发物品调查表",
+     "和搬家公司定碰头会的日子",
+     "向物业公司预约电梯",
+     "修改新办公室的平面布置图"
+    ]
+   },
+   "en": {
+    "scene": "At a company, a woman and a man in general affairs are talking about moving the office.",
+    "question": "What will the man do first?",
+    "lines": [
+     "About next month's office move: the meeting with the movers is fixed for next Thursday, right?",
+     "Yes. Before then we have to total up how much each department is moving, so I was going to hand out the survey forms today.",
+     "Yes, please do. But there's one thing bothering me first. The new building has only one elevator we can use for moving things in, doesn't it?",
+     "Yes, that's what the building management company's papers said.",
+     "Apparently another company is moving in upstairs the same weekend. I hear the elevator goes to whoever gets in first, so if we can't secure the date, the meeting with the movers becomes pointless. Shouldn't you lock that down before the survey forms?",
+     "Oh, about that — the management company allocated slots in order of tenancy when we signed. We have Saturday morning, and we've already received written confirmation.",
+     "Oh, I see. Then there's nothing to worry about. In that case, please hand out the survey forms today as planned. The layout plan can be revised once we know the volume.",
+     "Understood."
+    ],
+    "options": [
+     "Go round handing out the survey forms to each department",
+     "Set a meeting date with the movers",
+     "Book the elevator with the management company",
+     "Revise the new office layout plan"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「うちは土曜の午前中で、確認の書面ももういただいてあります。」女的说：「じゃあ心配いらないね。それなら、調査票は予定どおり今日中にお願い。」\n推理：女的担心电梯先到先得，建议先订电梯；但物业签约时已按入住顺序分配好，书面确认也拿到了。障碍不存在，所以按原计划先给各部门发调查表。布置图等物品量出来以后再改。\n容易错：电梯的事听起来最急，但已经办好了；碰头会也已确定。",
+   "en": "Evidence: He says 「うちは土曜の午前中で、確認の書面ももういただいてあります。」 and she replies 「じゃあ心配いらないね。それなら、調査票は予定どおり今日中にお願い。」\nReasoning: She worries the elevator is first come first served and suggests booking it first, but the management company already allocated slots at signing and he has written confirmation. The obstacle is gone, so he hands out the survey forms as planned. The layout waits for the volume figures.\nTrap: the elevator sounds most urgent but is already sorted; the movers' meeting is fixed too."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "碰头会已经「来週の木曜で確定」了。",
+    "en": "The meeting is already 「来週の木曜で確定」."
+   },
+   {
+    "zh": "电梯物业已经分配好了，男的说「確認の書面ももういただいてあります」。",
+    "en": "The elevator is already allocated; he says 「確認の書面ももういただいてあります」."
+   },
+   {
+    "zh": "布置图「荷物の量が出てからでいい」。",
+    "en": "The layout can wait 「荷物の量が出てから」."
+   }
+  ],
+  "traps": [
+   "done-already",
+   "order",
+   "later"
+  ]
+ },
+ {
+  "id": "n1-ck-116",
+  "type": "kadai",
+  "scene": "特許事務所で、弁理士の女の人と、小さな会社の技術者の男の人が話しています。",
+  "question": "男の人はこのあとまず何をしなければなりませんか。",
+  "lines": [
+   [
+    "F",
+    "先日いただいた資料を拝見しました。この留め具の構造でしたら、特許の出願は十分可能だと思います。"
+   ],
+   [
+    "M",
+    "よかった。来月の展示会に試作品を出す予定なので、それまでに出願しておきたいんですが。"
+   ],
+   [
+    "F",
+    "展示会……。その前に一つ確認させてください。この留め具、どこかで既に発表なさったりしていませんか。"
+   ],
+   [
+    "M",
+    "いえ、社外には一切。あ、ただ、先月、取引先の工場の方に試作品をお見せしました。"
+   ],
+   [
+    "F",
+    "そのとき、秘密を守るという取り決めは交わされていましたか。"
+   ],
+   [
+    "M",
+    "口頭で「まだ内密に」とは言いましたが、書面は……。"
+   ],
+   [
+    "F",
+    "口約束だけですと、すでに公になったとみなされるおそれがあります。そうなると、出願しても認められない場合があるんです。先方に、当時内密にするという合意があったと一筆書いていただけるか、まずそこを当たってみてください。"
+   ],
+   [
+    "M",
+    "わかりました。図面の清書のほうは……。"
+   ],
+   [
+    "F",
+    "それは出願できるとはっきりしてからで結構です。展示会への出品も、出願が済むまでは控えてください。"
+   ]
+  ],
+  "options": [
+   "取引先に当時の約束を書面で認めてもらう",
+   "出願に使う図面をきれいに書き直す",
+   "展示会に試作品を出す申し込みをする",
+   "弁理士に正式に出願の手続きを頼む"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "专利事务所里，女专利代理人和一家小公司的男技术人员在说话。",
+    "question": "男人接下来首先必须做什么？",
+    "lines": [
+     "前几天您给的资料我看过了。这个扣件的结构的话，我想完全可以申请专利。",
+     "太好了。下个月的展会打算展出样品，想在那之前提交申请。",
+     "展会……在那之前请让我确认一件事。这个扣件，有没有在什么地方已经发表过？",
+     "没有，完全没对外。啊，不过上个月给客户工厂的人看过样品。",
+     "那时有没有签过保密的约定？",
+     "口头上说了“还请保密”，可书面的……",
+     "只是口头约定的话，有可能被视为已经公开。那样的话，即使申请了也可能不被批准。请先去问问对方，能不能写个东西证明当时有保密的约定。",
+     "明白了。图纸的誊清呢……",
+     "那个等确定能申请以后再弄就行。展会的参展也请在申请完成之前先不要。"
+    ],
+    "options": [
+     "请客户用书面形式确认当时的约定",
+     "把申请用的图纸重新画清楚",
+     "报名在展会上展出样品",
+     "正式委托专利代理人办理申请手续"
+    ]
+   },
+   "en": {
+    "scene": "At a patent office, a female patent attorney and a male engineer from a small company are talking.",
+    "question": "What must the man do first?",
+    "lines": [
+     "I've read the materials you gave me. With this fastener's design, I think a patent application is quite feasible.",
+     "Great. We plan to show the prototype at next month's trade fair, so I'd like to file before then.",
+     "The trade fair… Before that, let me check one thing. Have you already presented this fastener anywhere?",
+     "No, nothing outside the company. Oh, but last month I did show the prototype to someone at a client's factory.",
+     "At that time, did you make an agreement to keep it confidential?",
+     "I told him verbally to keep it quiet for now, but nothing in writing…",
+     "With only a verbal promise, it may be regarded as already made public, and then the application may not be granted. First, please see whether they'd put in writing that there was an agreement to keep it confidential.",
+     "Understood. And the clean copy of the drawings…?",
+     "That can wait until it's clear we can file. And please hold off on exhibiting at the fair until the application is in."
+    ],
+    "options": [
+     "Get the client to confirm the earlier agreement in writing",
+     "Redraw the drawings for the application neatly",
+     "Apply to show the prototype at the trade fair",
+     "Formally ask the attorney to file the application"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「先方に、当時内密にするという合意があったと一筆書いていただけるか、まずそこを当たってみてください。」\n推理：男的上个月给客户看过样品，只有口头保密约定，可能被视为已公开而申请不被批准。所以先请客户写下当时有保密约定（「一筆書く」＝写个书面东西）。能不能申请要看这一步，图纸和正式申请都要等。\n容易错：男的一开始想赶在展会前申请；「一筆」这种说法要听懂。",
+   "en": "Evidence: The woman says 「先方に、当時内密にするという合意があったと一筆書いていただけるか、まずそこを当たってみてください。」\nReasoning: He showed the prototype to a client last month with only a verbal promise of secrecy, which may count as disclosure and sink the application. So first he must get the client to put the secrecy agreement in writing (「一筆書く」 = write a short statement). Whether he can file at all depends on this, so the drawings and the filing wait.\nTrap: he wanted to rush the filing before the fair; you need to catch the phrase 「一筆」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "图纸要等「出願できるとはっきりしてから」。",
+    "en": "The drawings wait 「出願できるとはっきりしてから」."
+   },
+   {
+    "zh": "展会参展要「出願が済むまでは控えて」。",
+    "en": "Exhibiting must be held off 「出願が済むまで」."
+   },
+   {
+    "zh": "能不能申请还要看客户的书面确认，现在还不能正式申请。",
+    "en": "Whether he can file depends on the client's written confirmation, so formal filing must wait."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "order",
+   "later"
+  ]
+ },
+ {
+  "id": "n1-ck-117",
+  "type": "kadai",
+  "scene": "人事部で、女の課長と男の人が、中途採用の面接について話しています。",
+  "question": "男の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "F",
+    "来週の中途採用の面接、候補者は四人に絞ったんだよね。"
+   ],
+   [
+    "M",
+    "はい。面接官をお願いする部長お二人の予定は、もう押さえてあります。あとは候補者に日時をお知らせして、会議室を予約すれば。"
+   ],
+   [
+    "F",
+    "会議室はいいよ。うちの部の打ち合わせスペースを使えばいいから。それより、今回は技術職だから、現場のエンジニアにも一人入ってもらいたいって、部長に言われてて。"
+   ],
+   [
+    "M",
+    "そうなんですか。では、候補者への連絡は、その方の都合を確認してからのほうがいいですね。"
+   ],
+   [
+    "F",
+    "うん。誰に頼むかは、開発部の山本さんが決めてくれることになってるんだけど。"
+   ],
+   [
+    "M",
+    "では、山本さんに……。"
+   ],
+   [
+    "F",
+    "ああ、山本さん、今日明日は出張で、返事は明後日になるって。"
+   ],
+   [
+    "M",
+    "それだと、候補者への連絡が遅れてしまいますね。四人とも在職中ですから、日程の調整には時間がかかりますし。"
+   ],
+   [
+    "F",
+    "そうなのよ。だから、順番を逆にしましょう。先に四人の方から来週動ける日をいくつか挙げてもらって、それにエンジニアを合わせてもらう。"
+   ],
+   [
+    "M",
+    "わかりました。そうします。"
+   ]
+  ],
+  "options": [
+   "面接に使う会議室を予約する",
+   "山本さんに面接官を頼む",
+   "部長たちの予定を確かめる",
+   "候補者に都合のいい日を聞く"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "人事部里，女科长和男人在谈社会招聘的面试。",
+    "question": "男人接下来首先要做什么？",
+    "lines": [
+     "下周社会招聘的面试，候选人已经筛到四个了吧。",
+     "是的。请来当面试官的两位部长的时间已经定下来了。剩下的就是通知候选人时间，再订会议室。",
+     "会议室不用了，用我们部的洽谈区就行。比起这个，这次是技术岗位，部长跟我说想让一线的工程师也参加一个。",
+     "是吗。那给候选人的通知，还是等确认了那位的时间以后再发比较好吧。",
+     "嗯。请谁来，是开发部的山本负责定的。",
+     "那我去找山本……",
+     "啊，山本今天明天出差，说是后天才能回复。",
+     "那样的话，给候选人的通知就晚了。四个人都还在职，调整日程要花时间。",
+     "就是啊。所以把顺序倒过来吧。先让四个人列出下周能抽身的几天，再让工程师配合那些日子。",
+     "明白了，就这么办。"
+    ],
+    "options": [
+     "预订面试用的会议室",
+     "请山本当面试官",
+     "确认部长们的时间",
+     "问候选人哪天方便"
+    ]
+   },
+   "en": {
+    "scene": "In the HR department, a female section chief and a man are talking about interviews for mid-career hires.",
+    "question": "What will the man do first?",
+    "lines": [
+     "For next week's mid-career interviews, you've narrowed it to four candidates, right?",
+     "Yes. I've already blocked out the two department heads who'll interview. Then I just need to tell the candidates the time and book a meeting room.",
+     "Forget the room; we can use our department's meeting area. More to the point, it's an engineering post this time, so the department head wants a working engineer on the panel too.",
+     "I see. Then I'd better contact the candidates after checking that person's schedule.",
+     "Yes. Yamamoto in development is supposed to decide who it'll be.",
+     "Then I'll ask Yamamoto…",
+     "Oh, Yamamoto is away on business today and tomorrow, and says he can't answer until the day after.",
+     "Then contacting the candidates would be delayed. All four are still employed, so arranging dates takes time.",
+     "Exactly. So let's reverse the order. First have the four give us a few days next week when they're free, and fit the engineer to those.",
+     "Understood. I'll do that."
+    ],
+    "options": [
+     "Book a meeting room for the interviews",
+     "Ask Yamamoto to be an interviewer",
+     "Check the department heads' schedules",
+     "Ask the candidates which days suit them"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「だから、順番を逆にしましょう。先に四人の方から来週動ける日をいくつか挙げてもらって、それにエンジニアを合わせてもらう。」\n推理：本来要等工程师定下来再通知候选人，但负责定人的山本后天才回复，候选人都在职，调日程费时间。所以顺序反过来：先问候选人哪几天方便。\n容易错：男的说「山本さんに……」被打断；会议室已经不用订。",
+   "en": "Evidence: The woman says 「だから、順番を逆にしましょう。先に四人の方から来週動ける日をいくつか挙げてもらって、それにエンジニアを合わせてもらう。」\nReasoning: They meant to wait for the engineer before contacting candidates, but Yamamoto, who picks the engineer, can't reply until the day after tomorrow, and the employed candidates need time. So the order flips: first ask the candidates which days suit them.\nTrap: his 「山本さんに……」 is cut off; the meeting room no longer needs booking."
+  },
+  "wrong": [
+   {
+    "zh": "会议室「いいよ」，用部里的洽谈区。",
+    "en": "The room isn't needed — they'll use the department's meeting area."
+   },
+   {
+    "zh": "请谁由山本决定，他出差到后天，等不了。",
+    "en": "Yamamoto decides who it is, and he's away until the day after tomorrow."
+   },
+   {
+    "zh": "部长的时间「もう押さえてあります」。",
+    "en": "The department heads are 「もう押さえてあります」."
+   },
+   null
+  ],
+  "traps": [
+   "done-already",
+   "not-possible",
+   "order"
+  ]
+ },
+ {
+  "id": "n1-ck-118",
+  "type": "kadai",
+  "scene": "機械メーカーで、男の人と女の人が、展示会の準備について話しています。",
+  "question": "女の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "M",
+    "再来週の展示会、ブースのパネルはもう印刷に回した？"
+   ],
+   [
+    "F",
+    "いえ、データはできてるんですが、新製品の性能の数字を、開発の方に最終確認してもらってからにしようと思って。"
+   ],
+   [
+    "M",
+    "ああ、それなら昨日、開発から「数字は確定」ってメールが来てたよ。君にも転送したはずだけど。"
+   ],
+   [
+    "F",
+    "あ、すみません、見落としてました。じゃあ、すぐ印刷所に……。"
+   ],
+   [
+    "M",
+    "待って。会場の規定、読んだ？今年から、パネルの大きさに上限ができたらしいよ。"
+   ],
+   [
+    "F",
+    "え、そうなんですか。去年と同じ大きさで作ってしまいました。"
+   ],
+   [
+    "M",
+    "合ってなかったら刷り直しになるからね。来場者に配るカタログのほうは？"
+   ],
+   [
+    "F",
+    "カタログは、今週中に業者から届くことになっています。"
+   ],
+   [
+    "M",
+    "じゃあ、そっちは待つだけだね。"
+   ]
+  ],
+  "options": [
+   "パネルのデータを印刷所に送る",
+   "会場の規定で認められる大きさを調べる",
+   "開発部に性能の数字を確かめてもらう",
+   "カタログの納品を業者に催促する"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "机械厂家里，男人和女人在谈展会的准备工作。",
+    "question": "女人接下来首先要做什么？",
+    "lines": [
+     "下下周的展会，展位的展板已经送去印了吗？",
+     "还没有，数据做好了，不过我想等开发部最终确认了新产品的性能数字再说。",
+     "啊，那个的话，昨天开发部发邮件来说“数字已确定”。应该也转给你了。",
+     "啊，抱歉，我漏看了。那我马上发给印刷厂……",
+     "等等。会场的规定你看了吗？听说从今年起展板的尺寸有上限了。",
+     "啊，是吗？我是按去年的尺寸做的。",
+     "要是不符合就得重印。发给来宾的目录呢？",
+     "目录这周之内厂商会送到。",
+     "那那边只要等着就行了。"
+    ],
+    "options": [
+     "把展板数据发给印刷厂",
+     "查会场规定允许的尺寸",
+     "请开发部确认性能数字",
+     "催厂商交付目录"
+    ]
+   },
+   "en": {
+    "scene": "At a machinery maker, a man and a woman are talking about preparing for a trade fair.",
+    "question": "What will the woman do first?",
+    "lines": [
+     "For the trade fair the week after next, have you sent the booth panels to print?",
+     "No, the files are ready, but I wanted development to give a final check on the new product's performance figures first.",
+     "Oh, development emailed yesterday saying the figures are final. I think I forwarded it to you.",
+     "Oh, sorry, I missed it. Then I'll send it to the printer right…",
+     "Wait. Have you read the venue rules? Apparently there's a size limit on panels from this year.",
+     "Oh, really? I made them the same size as last year.",
+     "If they don't comply, we'll have to reprint. And the catalogues for visitors?",
+     "The supplier is delivering the catalogues this week.",
+     "Then that's just a matter of waiting."
+    ],
+    "options": [
+     "Send the panel files to the printer",
+     "Check the size the venue rules allow",
+     "Have development check the performance figures",
+     "Chase the supplier for the catalogues"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「会場の規定、読んだ？今年から、パネルの大きさに上限ができたらしいよ。」女的说「去年と同じ大きさで作ってしまいました」。\n推理：数字已经确定，她想马上送印，被男的「待って」拦住。展板是按去年的尺寸做的，不符合规定就得重印，所以要先查规定允许的尺寸。目录这周会到，只要等。\n容易错：她说到一半的「すぐ印刷所に……」被叫停。",
+   "en": "Evidence: The man says 「会場の規定、読んだ？今年から、パネルの大きさに上限ができたらしいよ。」 and she says 「去年と同じ大きさで作ってしまいました」.\nReasoning: The figures are final and she's about to send the files to print, but his 「待って」 stops her. Her panels are last year's size; if they break the rule they'd be reprinted, so she must check the allowed size first. The catalogues just need waiting for.\nTrap: her half-finished 「すぐ印刷所に……」 is stopped."
+  },
+  "wrong": [
+   {
+    "zh": "刚要送印就被「待って」拦住，要先确认尺寸。",
+    "en": "She's stopped with 「待って」 — the size must be checked first."
+   },
+   null,
+   {
+    "zh": "开发部昨天已经来邮件说「数字は確定」。",
+    "en": "Development already emailed that 「数字は確定」."
+   },
+   {
+    "zh": "目录这周内送到，「待つだけ」。",
+    "en": "The catalogues arrive this week — 「待つだけ」."
+   }
+  ],
+  "traps": [
+   "done-already",
+   "order"
+  ]
+ },
+ {
+  "id": "n1-ck-119",
+  "type": "kadai",
+  "scene": "ホテルで、宴会担当の女の人と、会社の創立記念パーティーを開く男の人が話しています。",
+  "question": "男の人はこのあとまず何をしなければなりませんか。",
+  "lines": [
+   [
+    "F",
+    "創立五十周年の記念パーティー、お料理は立食形式で、とのことでしたね。"
+   ],
+   [
+    "M",
+    "ええ。招待状は先週発送しまして、出欠は月末に締め切ります。"
+   ],
+   [
+    "F",
+    "かしこまりました。では、人数の確定は月末以降で結構です。ところで、ご来賓の祝辞の際に、スライドを映されると伺いましたが。"
+   ],
+   [
+    "M",
+    "はい、会社の歴史をまとめた写真を。データは広報が作っています。"
+   ],
+   [
+    "F",
+    "会場のプロジェクターは接続の形式が限られておりまして。お使いになるパソコンの機種を、前もって技術の者にお伝えいただけますと。"
+   ],
+   [
+    "M",
+    "ああ、それは広報に聞かないとわからないな。"
+   ],
+   [
+    "F",
+    "それから、お車でいらっしゃるご来賓の駐車場ですが、当日は別の宴会と重なっておりまして、台数に限りがございます。何台分ご用意すればよいか、来週の金曜までにお知らせいただけますか。過ぎますと、他のお客様に回ってしまいますので。"
+   ],
+   [
+    "M",
+    "来週の金曜ですか。出欠の締め切りより前ですね。じゃあ、締め切りを待たずに、ご来賓の秘書の方に一件ずつ伺うしかないな。パソコンの件は、来月のリハーサルの前でいいですか。"
+   ],
+   [
+    "F",
+    "はい、それで間に合います。"
+   ]
+  ],
+  "options": [
+   "出席者の人数をホテルに知らせる",
+   "広報にパソコンの機種を聞く",
+   "来賓の側に来場の手段を問い合わせる",
+   "祝辞で映す写真をまとめる"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "酒店里，负责宴会的女人和要举办公司创立纪念酒会的男人在说话。",
+    "question": "男人接下来首先必须做什么？",
+    "lines": [
+     "创立五十周年纪念酒会，菜品是自助立餐形式，对吧。",
+     "对。请柬上周寄出了，出席与否月底截止。",
+     "好的。那人数月底以后确定就可以。另外，听说来宾致辞的时候要放幻灯片。",
+     "是的，整理了公司历史的照片。数据由宣传部在做。",
+     "会场的投影仪接口形式有限，您要用的电脑型号，如果能提前告诉我们的技术人员就好了。",
+     "啊，那个得问宣传部才知道。",
+     "还有，开车来的来宾的停车位，当天和别的宴会撞在一起，车位有限。需要准备几辆车的位置，能在下周五之前告诉我们吗？过了期限就会让给别的客人了。",
+     "下周五啊。比出席截止日还早。那只能不等截止，一家一家去问来宾的秘书了。电脑的事，下个月彩排之前告诉你们可以吗？",
+     "可以，那样来得及。"
+    ],
+    "options": [
+     "把出席人数告诉酒店",
+     "向宣传部问电脑型号",
+     "向来宾方询问来会场的方式",
+     "整理致辞时放的照片"
+    ]
+   },
+   "en": {
+    "scene": "At a hotel, a woman in charge of banquets and a man holding his company's anniversary party are talking.",
+    "question": "What must the man do first?",
+    "lines": [
+     "For your fiftieth anniversary party, you wanted a standing buffet, correct?",
+     "Yes. The invitations went out last week, and replies close at the end of the month.",
+     "Certainly. Then the final numbers can come after the end of the month. By the way, I hear you'll show slides during the guests' speeches.",
+     "Yes, photos of the company's history. Our PR team is making the files.",
+     "The venue projector supports only certain connections, so if you could tell our technician in advance which computer you'll use…",
+     "Ah, I'd have to ask PR about that.",
+     "Also, parking for guests coming by car: that day overlaps with another banquet, so spaces are limited. Could you tell us how many you need by next Friday? After that, they'll go to other customers.",
+     "Next Friday? That's before the reply deadline. Then I'll just have to ask each guest's secretary one by one without waiting. Can the computer matter wait until before next month's rehearsal?",
+     "Yes, that will be fine."
+    ],
+    "options": [
+     "Tell the hotel the number of attendees",
+     "Ask PR which computer they'll use",
+     "Ask the guests' side how they'll be getting there",
+     "Put together the photos for the speeches"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「じゃあ、締め切りを待たずに、ご来賓の秘書の方に一件ずつ伺うしかないな。」\n推理：停车位要在下周五前报数，比月底的出席截止还早，所以不能等回执，要先问来宾的秘书是不是开车来——也就是来会场的方式。电脑的事彩排前就行，人数月底以后再定。\n容易错：选项把「車で来るかどうか」换成了「来場の手段」。",
+   "en": "Evidence: The man says 「じゃあ、締め切りを待たずに、ご来賓の秘書の方に一件ずつ伺うしかないな。」\nReasoning: The parking count is due next Friday, before the end-of-month reply deadline, so he can't wait for replies; he must first ask each guest's secretary whether they're driving — that is, how they'll get there. The computer can wait until the rehearsal, and the headcount comes after the month's end.\nTrap: the option rephrases \"whether they come by car\" as 「来場の手段」."
+  },
+  "wrong": [
+   {
+    "zh": "人数「月末以降で結構です」。",
+    "en": "The headcount can come 「月末以降」."
+   },
+   {
+    "zh": "电脑的事「来月のリハーサルの前」就行。",
+    "en": "The computer can wait until 「来月のリハーサルの前」."
+   },
+   null,
+   {
+    "zh": "照片由宣传部在做，不是他接下来的事。",
+    "en": "PR is already making the photos; it isn't his next step."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "someone-else",
+   "later"
+  ]
+ },
+ {
+  "id": "n1-ck-120",
+  "type": "kadai",
+  "scene": "町内会の集まりのあとで、会長の男の人と、役員の女の人が、夏祭りの準備について話しています。",
+  "question": "女の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "M",
+    "夏祭りの件、保健所への届け出は済んだんだっけ。"
+   ],
+   [
+    "F",
+    "はい、焼きそばとかき氷の分は先週出しました。あとは模擬店の当番表を作って、回覧板で回そうかと。"
+   ],
+   [
+    "M",
+    "ありがとう。それと、今年は公園じゃなくて、小学校の校庭を借りるでしょう。学校には、もう話は通ってるんだよね。"
+   ],
+   [
+    "F",
+    "校長先生には口頭でご了解いただいてます。ただ、正式な使用の申請は教育委員会に出すことになっていて……。"
+   ],
+   [
+    "M",
+    "え、それ、いつまで？"
+   ],
+   [
+    "F",
+    "使用日の一か月前までなので……あ、今週の金曜です。"
+   ],
+   [
+    "M",
+    "それが通らないと、当番表どころじゃないよね。"
+   ],
+   [
+    "F",
+    "あ、でも待ってください。校長先生が、町内会の分も学校からまとめて出しておくっておっしゃってました。昨日、受け付けたという連絡もいただいてます。"
+   ],
+   [
+    "M",
+    "なんだ、それなら安心だ。じゃあ、予定どおり進めてもらおうか。回覧板は来週の月曜に回るから、それに間に合えばいいよ。"
+   ]
+  ],
+  "options": [
+   "保健所に模擬店の届け出をする",
+   "校長先生に校庭を貸してもらう了解を得る",
+   "校庭を借りるための書類を提出する",
+   "模擬店の当番表を作って回す"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "町内会聚会之后，男会长和女干事在谈夏日祭的准备。",
+    "question": "女人接下来首先要做什么？",
+    "lines": [
+     "夏日祭的事，向保健所的申报办完了吗？",
+     "是的，炒面和刨冰的部分上周交了。剩下的，我想做好摊位的值班表，用传阅板传下去。",
+     "谢谢。还有，今年不是公园，而是借小学的操场吧。学校那边已经打过招呼了吧。",
+     "校长口头上已经同意了。不过正式的使用申请要交给教育委员会……",
+     "啊，那个截止到什么时候？",
+     "要在使用日一个月之前……啊，是这周五。",
+     "那个要是批不下来，就顾不上什么值班表了。",
+     "啊，不过请等一下。校长说过，町内会的那份也由学校一起交。昨天还接到了已受理的通知。",
+     "什么嘛，那就放心了。那就按原计划进行吧。传阅板下周一传，赶得上就行。"
+    ],
+    "options": [
+     "向保健所申报摊位",
+     "征得校长同意借用操场",
+     "提交借用操场的文件",
+     "做摊位的值班表并传阅"
+    ]
+   },
+   "en": {
+    "scene": "After a neighbourhood association meeting, the male chairman and a female committee member are talking about preparing the summer festival.",
+    "question": "What will the woman do first?",
+    "lines": [
+     "About the summer festival: did we finish notifying the public health centre?",
+     "Yes, I filed for the yakisoba and shaved ice last week. Next I thought I'd make the stall rota and circulate it on the notice board.",
+     "Thanks. Also, this year we're borrowing the primary school grounds instead of the park. The school has already agreed, right?",
+     "The principal has agreed verbally. But the formal application goes to the board of education…",
+     "Oh, when's that due?",
+     "A month before the day… oh, this Friday.",
+     "If that doesn't go through, the rota hardly matters.",
+     "Oh, wait. The principal said the school would file ours along with its own. And yesterday we heard it had been received.",
+     "Oh, that's a relief. Then carry on as planned. The notice board goes round next Monday, so as long as it's ready for that."
+    ],
+    "options": [
+     "File the stalls with the health centre",
+     "Get the principal's consent to use the grounds",
+     "Submit the papers to borrow the school grounds",
+     "Make and circulate the stall rota"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「校長先生が、町内会の分も学校からまとめて出しておくっておっしゃってました。昨日、受け付けたという連絡もいただいてます。」男的说：「じゃあ、予定どおり進めてもらおうか。」\n推理：保健所的申报上周已交，校长口头同意了；正式申请这周五截止，一度像是最急的事，但学校已经代交并受理。所以按她原来的计划，先做值班表，赶上下周一的传阅板。\n容易错：「当番表どころじゃない」是在以为申请还没交的时候说的；文件其实已经交了。",
+   "en": "Evidence: She says 「校長先生が、町内会の分も学校からまとめて出しておくっておっしゃってました。昨日、受け付けたという連絡もいただいてます。」 and he says 「じゃあ、予定どおり進めてもらおうか。」\nReasoning: The health centre filing went in last week and the principal agreed verbally; the formal application due Friday seemed most urgent, but the school has already filed it and it was received. So she follows her original plan: make the rota in time for Monday's notice board.\nTrap: 「当番表どころじゃない」 was said while they thought the application was outstanding; it is already in."
+  },
+  "wrong": [
+   {
+    "zh": "保健所的申报「先週出しました」。",
+    "en": "The health centre filing went in 「先週」."
+   },
+   {
+    "zh": "校长已经「口頭でご了解いただいてます」。",
+    "en": "The principal has 「口頭でご了解」 already."
+   },
+   {
+    "zh": "申请由学校一起交了，昨天已「受け付けた」。",
+    "en": "The school filed it along with its own; it was 「受け付けた」 yesterday."
+   },
+   null
+  ],
+  "traps": [
+   "done-already",
+   "later",
+   "order"
+  ]
+ },
+ {
+  "id": "n1-ck-121",
+  "type": "kadai",
+  "scene": "会社で、情報システム部の男の人と女の人が、ファイルサーバーの移行について話しています。",
+  "question": "女の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "M",
+    "共有フォルダのクラウドへの移行、来月の連休に一気にやる予定だったよね。どこまで進んでる？"
+   ],
+   [
+    "F",
+    "移行用のツールの設定は終わりました。あとは各部署に移行日を通知して、連休中に作業するだけです。"
+   ],
+   [
+    "M",
+    "そう。ただ、さっき経理の部長と話したら、経理のフォルダには外部の監査法人の人もアクセスしてるんだって。"
+   ],
+   [
+    "F",
+    "えっ、そうなんですか。外部の方のアカウントは、今度のクラウドでは別の手続きが要るんですが……。"
+   ],
+   [
+    "M",
+    "だよね。それに、誰がどのフォルダに入れるかって、各部署が勝手に設定してきたから、一覧がないんだよ。"
+   ],
+   [
+    "F",
+    "つまり、経理以外にも、外部の人が使っているフォルダがあるかもしれない、と。"
+   ],
+   [
+    "M",
+    "そういうこと。通知を出してから「うちも外部と共有してる」なんて言われても困るし。"
+   ],
+   [
+    "F",
+    "でしたら、今のサーバーの設定を全部書き出して、どこに誰が入れるのか洗い出してみます。外部の方の申請は、その結果を見てからにします。"
+   ],
+   [
+    "M",
+    "うん、頼むよ。"
+   ]
+  ],
+  "options": [
+   "今のフォルダの権限の設定を調べる",
+   "各部署に移行の日を知らせる",
+   "外部の人のアカウントを申請する",
+   "移行用のツールを設定し直す"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "公司里，信息系统部的男人和女人在谈文件服务器迁移的事。",
+    "question": "女人接下来首先要做什么？",
+    "lines": [
+     "共享文件夹迁到云上的事，原计划下个月的连休一口气做完吧。进展到哪儿了？",
+     "迁移工具已经设置好了。剩下的就是通知各部门迁移日期，连休期间操作。",
+     "是吗。不过刚才和财务部长聊，说财务的文件夹外部审计事务所的人也在访问。",
+     "啊，是吗？外部人员的账号，在新的云上需要另外办手续……",
+     "就是啊。而且谁能进哪个文件夹，一直是各部门自己随便设的，没有清单。",
+     "也就是说，除了财务，可能还有别的文件夹外部人员在用。",
+     "就是这样。发了通知以后再有人说“我们也和外部共享着”，那就麻烦了。",
+     "那我把现在服务器的设置全部导出来，把哪里谁能进彻底查一遍。外部人员的申请，看了结果再办。",
+     "嗯，拜托了。"
+    ],
+    "options": [
+     "调查现在文件夹的权限设置",
+     "通知各部门迁移日期",
+     "申请外部人员的账号",
+     "重新设置迁移工具"
+    ]
+   },
+   "en": {
+    "scene": "At a company, a man and a woman in the IT department are talking about migrating the file server.",
+    "question": "What will the woman do first?",
+    "lines": [
+     "The move of the shared folders to the cloud — we planned to do it all over next month's long weekend, right? How far along are you?",
+     "The migration tool is set up. All that's left is to notify each department of the date and do the work over the holiday.",
+     "OK. But I just spoke to the head of accounting, and apparently people from the outside audit firm access their folders too.",
+     "Oh, really? On the new cloud, outside users' accounts need a separate procedure…",
+     "Right. And since each department has set who can open which folder on its own, there's no list.",
+     "So there may be folders outside accounting that outsiders use too.",
+     "Exactly. It'd be a mess if, after the notice, people said, 'We share with outsiders too.'",
+     "Then I'll export all the current server settings and work out who can get into what. I'll do the outside accounts after seeing the results.",
+     "Yes, please."
+    ],
+    "options": [
+     "Look into the current folder permission settings",
+     "Tell each department the migration date",
+     "Apply for the outside users' accounts",
+     "Reconfigure the migration tool"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「今のサーバーの設定を全部書き出して、どこに誰が入れるのか洗い出してみます。外部の方の申請は、その結果を見てからにします。」\n推理：外部人员需要另办账号，但谁能进哪个文件夹没有清单，可能不止财务。先发通知再发现问题就麻烦，所以先把现有权限设置查清楚，外部账号的申请看结果再办。\n容易错：原计划的下一步是发通知；外部账号的申请排在调查之后。",
+   "en": "Evidence: The woman says 「今のサーバーの設定を全部書き出して、どこに誰が入れるのか洗い出してみます。外部の方の申請は、その結果を見てからにします。」\nReasoning: Outside users need separate accounts, but there's no list of who can access which folder, and it may not be just accounting. Sending the notice first would cause trouble, so she first audits the current permissions; the outside accounts follow from the results.\nTrap: the original next step was the notice; the account applications come after the audit."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "男的说先发通知再发现外部共享「困る」，要先查清楚。",
+    "en": "He says notifying first would cause trouble; the audit comes first."
+   },
+   {
+    "zh": "外部账号的申请「その結果を見てから」。",
+    "en": "The outside accounts wait 「その結果を見てから」."
+   },
+   {
+    "zh": "工具的设置「終わりました」，没有说要重设。",
+    "en": "The tool setup is 「終わりました」; no one says to redo it."
+   }
+  ],
+  "traps": [
+   "order",
+   "done-already",
+   "later"
+  ]
+ },
+ {
+  "id": "n1-ck-122",
+  "type": "kadai",
+  "scene": "高校で、男の先生と女の先生が、二年生の職場体験について話しています。",
+  "question": "男の先生はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "F",
+    "職場体験の受け入れ先、今年も去年と同じところにお願いするんでしたよね。"
+   ],
+   [
+    "M",
+    "ええ。十二か所のうち十か所からは、もう今年もいいとお返事をいただきました。残りの二か所は担当の方が替わられたそうで、新しいご担当から来週ご連絡をいただけることになっています。"
+   ],
+   [
+    "F",
+    "生徒の希望調査は？"
+   ],
+   [
+    "M",
+    "それは、受け入れ先が全部決まってから取ろうと思っていまして。"
+   ],
+   [
+    "F",
+    "でも、去年は希望が保育園と動物病院に集中して、結局くじ引きになったじゃないですか。生徒からずいぶん不満が出て。"
+   ],
+   [
+    "M",
+    "そうでしたね。"
+   ],
+   [
+    "F",
+    "今年は先に希望を聞いて、人気の出そうな分野の受け入れ先を増やせないか探してみたらどうでしょう。二か所のお返事を待っていたら、間に合わなくなりますよ。"
+   ],
+   [
+    "M",
+    "なるほど。用紙は去年のを少し直せば使えますね。"
+   ],
+   [
+    "F",
+    "保護者への案内は、行き先が決まってからでいいと思います。"
+   ]
+  ],
+  "options": [
+   "返事のない二か所に連絡をする",
+   "保護者に案内の手紙を出す",
+   "生徒に行きたい職場を尋ねる",
+   "人気のある分野の受け入れ先を探す"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "高中里，男老师和女老师在谈二年级的职场体验。",
+    "question": "男老师接下来首先要做什么？",
+    "lines": [
+     "职场体验的接收单位，今年也是请去年那些地方吧。",
+     "是的。十二家里已经有十家回复说今年也可以。剩下两家听说换了负责人，新负责人下周会联系我们。",
+     "学生的志愿调查呢？",
+     "那个我想等接收单位全部定下来以后再做。",
+     "可是去年志愿都集中在幼儿园和动物医院，最后不是抽签了吗？学生意见很大。",
+     "是啊。",
+     "今年先问志愿，再看看能不能增加热门领域的接收单位，怎么样？等那两家的回复就来不及了。",
+     "有道理。表格把去年的稍微改改就能用。",
+     "给家长的通知，等去向定了以后再发就行。"
+    ],
+    "options": [
+     "联系还没回复的两家",
+     "给家长发通知信",
+     "问学生想去哪个单位",
+     "找热门领域的接收单位"
+    ]
+   },
+   "en": {
+    "scene": "At a high school, a male teacher and a female teacher are talking about the second-years' work experience.",
+    "question": "What will the male teacher do first?",
+    "lines": [
+     "For the work experience placements, we're asking the same places as last year, right?",
+     "Yes. Ten of the twelve have already said yes for this year. The other two have new contacts, who'll get back to us next week.",
+     "And the survey of the students' preferences?",
+     "I was going to do that once all the placements are confirmed.",
+     "But last year everyone wanted the nursery and the vet, and it ended up as a lottery, didn't it? The students complained a lot.",
+     "That's right.",
+     "This year, why not ask their preferences first and see if we can add placements in the popular fields? If we wait for those two replies, we'll run out of time.",
+     "I see. Last year's form will do with a few changes.",
+     "The letter to parents can wait until the placements are settled."
+    ],
+    "options": [
+     "Contact the two places that haven't replied",
+     "Send the letter to parents",
+     "Ask the students where they'd like to go",
+     "Look for placements in popular fields"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「今年は先に希望を聞いて、人気の出そうな分野の受け入れ先を増やせないか探してみたらどうでしょう。」男的接着说「用紙は去年のを少し直せば使えますね」。\n推理：男的原计划等单位全定了再做调查，但去年志愿扎堆导致抽签。所以先问学生想去哪里，再根据结果找热门领域的单位。男的提到调查表格，说明他接受了。\n容易错：找新单位是调查之后的事；那两家是对方下周联系，不用他去联系。",
+   "en": "Evidence: The woman says 「今年は先に希望を聞いて、人気の出そうな分野の受け入れ先を増やせないか探してみたらどうでしょう。」 and he replies 「用紙は去年のを少し直せば使えますね」.\nReasoning: He meant to survey the students after all placements were fixed, but last year's preferences bunched up and led to a lottery. So he asks the students first and then looks for placements in the popular fields. His comment about the form shows he's agreed.\nTrap: finding new placements comes after the survey; the two places will contact them next week."
+  },
+  "wrong": [
+   {
+    "zh": "那两家的新负责人「来週ご連絡をいただける」，不用他联系。",
+    "en": "The two new contacts will 「来週ご連絡」 — he needn't call."
+   },
+   {
+    "zh": "给家长的通知「行き先が決まってから」。",
+    "en": "The parents' letter waits 「行き先が決まってから」."
+   },
+   null,
+   {
+    "zh": "要先知道学生的志愿，才知道哪些领域热门。",
+    "en": "He needs the survey first to know which fields are popular."
+   }
+  ],
+  "traps": [
+   "order",
+   "someone-else",
+   "later"
+  ]
+ },
+ {
+  "id": "n1-ck-123",
+  "type": "kadai",
+  "scene": "果樹園で、果樹園の女の人と、ネット販売を手伝っている男の人が話しています。",
+  "question": "女の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "M",
+    "来月から始める桃のネット販売ですが、商品ページの写真、そろそろ撮りませんか。"
+   ],
+   [
+    "F",
+    "そうね。でも、まだ実が色づいてないから、写真は収穫が始まってからのほうがいいんじゃない？"
+   ],
+   [
+    "M",
+    "確かに。じゃあ、先に送料を決めましょう。箱の大きさで送料が変わるので。"
+   ],
+   [
+    "F",
+    "箱は、農協で使ってるのと同じものにしようと思ってたんだけど。"
+   ],
+   [
+    "M",
+    "農協の箱は十個入りですよね。ネットで買うのは個人の方が多いので、五個か六個くらいの小さい箱も用意したほうがいいと思います。"
+   ],
+   [
+    "F",
+    "小さい箱ね。でも、桃はやわらかいから、箱の中で動くと傷んじゃうのよ。中の仕切りが合ってないと。"
+   ],
+   [
+    "M",
+    "その仕切りがあるかどうかですね。"
+   ],
+   [
+    "F",
+    "それは箱屋さんに聞けばすぐわかる。取り寄せられるなら、試しに何個か詰めて近所に送ってみて、傷まないか確かめたいな。送料はそれから。"
+   ],
+   [
+    "M",
+    "試しに送るのは、収穫が始まってからですね。"
+   ],
+   [
+    "F",
+    "うん。とにかく箱がなきゃ話にならないから。"
+   ]
+  ],
+  "options": [
+   "商品ページに載せる写真を撮る",
+   "業者に小さい箱があるか聞く",
+   "箱の大きさごとの送料を決める",
+   "試しに桃を詰めて近所に送る"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "果园里，果园的女人和帮忙做网上销售的男人在说话。",
+    "question": "女人接下来首先要做什么？",
+    "lines": [
+     "下个月开始的桃子网上销售，商品页面的照片，差不多该拍了吧？",
+     "是啊。不过果子还没上色，照片等开始收获以后再拍比较好吧？",
+     "也是。那先把运费定下来吧。运费随箱子大小变。",
+     "箱子我本来想用和农协一样的。",
+     "农协的箱子是装十个的吧。网上买的多是个人，我觉得最好也准备装五六个的小箱子。",
+     "小箱子啊。不过桃子软，在箱子里一晃就会碰伤。里面的隔板不合适的话。",
+     "就看有没有那种隔板了。",
+     "那个问问做箱子的店马上就知道。能订到的话，我想试着装几个寄给附近的人，看看会不会碰伤。运费那之后再说。",
+     "试寄的话，要等开始收获以后了吧。",
+     "嗯。总之没有箱子什么都谈不上。"
+    ],
+    "options": [
+     "拍商品页面用的照片",
+     "问厂家有没有小箱子",
+     "按箱子大小定运费",
+     "试着装桃子寄给附近的人"
+    ]
+   },
+   "en": {
+    "scene": "At an orchard, the woman who runs it and a man helping with online sales are talking.",
+    "question": "What will the woman do first?",
+    "lines": [
+     "For the online peach sales starting next month, shall we take the product photos soon?",
+     "Yes. But the fruit hasn't coloured yet, so wouldn't it be better to take them once the harvest starts?",
+     "True. Then let's settle the shipping costs first. They depend on the box size.",
+     "I was going to use the same boxes as at the agricultural co-op.",
+     "The co-op boxes hold ten, don't they? Online buyers are mostly individuals, so I think we should have smaller boxes of five or six as well.",
+     "Smaller boxes… But peaches are soft, so they bruise if they move about. Unless the dividers inside fit.",
+     "So it's whether such dividers exist.",
+     "The box supplier can tell me that right away. If they can get them, I'd like to pack a few and send them to someone nearby to see if they bruise. Shipping costs after that.",
+     "The trial shipment will have to wait for the harvest, though.",
+     "Yes. Anyway, without the boxes we can't do anything."
+    ],
+    "options": [
+     "Take photos for the product page",
+     "Ask the supplier whether small boxes are available",
+     "Set shipping costs for each box size",
+     "Pack some peaches and send them nearby as a trial"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「それは箱屋さんに聞けばすぐわかる。」「送料はそれから。」最后又说「とにかく箱がなきゃ話にならないから」。\n推理：网上买家多是个人，要准备小箱子，但桃子软，必须有合适的隔板。照片和试寄都要等收获，运费要等箱子定了才能定。现在能做的是先问箱子店（包装厂家）有没有带隔板的小箱子。\n容易错：男的提议「先に送料を決めましょう」，但运费排在箱子之后。",
+   "en": "Evidence: The woman says 「それは箱屋さんに聞けばすぐわかる。」, 「送料はそれから。」 and finally 「とにかく箱がなきゃ話にならないから」.\nReasoning: Online buyers are individuals, so small boxes are needed, but soft peaches need fitted dividers. Photos and the trial shipment wait for the harvest, and shipping costs wait for the box. What she can do now is ask the box supplier whether small boxes with dividers can be had.\nTrap: he suggests 「先に送料を決めましょう」, but shipping comes after the box."
+  },
+  "wrong": [
+   {
+    "zh": "果子还没上色，照片「収穫が始まってから」。",
+    "en": "The fruit hasn't coloured; photos wait 「収穫が始まってから」."
+   },
+   null,
+   {
+    "zh": "她说「送料はそれから」，箱子定了才能定。",
+    "en": "She says 「送料はそれから」 — after the box is settled."
+   },
+   {
+    "zh": "试寄要等收获开始，而且要先有箱子。",
+    "en": "The trial waits for the harvest, and needs the boxes first."
+   }
+  ],
+  "traps": [
+   "order",
+   "later",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n1-ck-124",
+  "type": "kadai",
+  "scene": "法律事務所で、弁護士の女の人と事務員の男の人が、裁判の準備について話しています。",
+  "question": "男の人はこのあとまず何をしなければなりませんか。",
+  "lines": [
+   [
+    "F",
+    "来週の口頭弁論の資料、どこまで準備できてる？"
+   ],
+   [
+    "M",
+    "証拠の書類のコピーは、裁判所に出す分と相手方に送る分、両方そろえました。あとは、依頼者の方に陳述書の内容を確認していただくだけです。"
+   ],
+   [
+    "F",
+    "陳述書、昨日の夜、依頼者の方から修正の連絡があったでしょう。日付が一か所違ってるって。"
+   ],
+   [
+    "M",
+    "はい、それは今朝直して、もう一度お送りしました。"
+   ],
+   [
+    "F",
+    "ありがとう。で、その日付、証拠のほうにも出てくるんじゃなかった？契約書の写しに添えた説明のメモ。"
+   ],
+   [
+    "M",
+    "あ……そうでした。メモにも同じ日付が書いてあります。"
+   ],
+   [
+    "F",
+    "陳述書と食い違っていたら、そこを突かれるよ。"
+   ],
+   [
+    "M",
+    "すみません。では、コピーをすぐに……。"
+   ],
+   [
+    "F",
+    "契約書そのものには触らないでね。手を入れるのは、うちで作ったメモだけ。コピーを取り直すのは、それが済んでから。"
+   ]
+  ],
+  "options": [
+   "依頼者に陳述書の内容を確かめてもらう",
+   "陳述書の日付を書き直す",
+   "証拠の書類のコピーを取り直す",
+   "書類に添えたメモの記載を訂正する"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "律师事务所里，女律师和男职员在谈庭审的准备。",
+    "question": "男人接下来首先必须做什么？",
+    "lines": [
+     "下周口头辩论的材料准备到哪儿了？",
+     "证据文件的复印件，交法院的和寄给对方的两份都备齐了。剩下的就是请委托人确认陈述书的内容。",
+     "陈述书，昨天晚上委托人联系说要修改吧，说有一处日期不对。",
+     "是的，那个今天早上改好了，又寄了一次。",
+     "谢谢。那么，那个日期，证据里不是也出现了吗？附在合同复印件上的说明便条。",
+     "啊……对。便条上也写着同样的日期。",
+     "要是和陈述书对不上，就会被抓住这一点。",
+     "对不起。那我马上把复印件……",
+     "合同本身不要动。要改的只有我们自己做的便条。重新复印要等那个弄好以后。"
+    ],
+    "options": [
+     "请委托人确认陈述书的内容",
+     "改写陈述书的日期",
+     "重新复印证据文件",
+     "订正附在文件上的便条内容"
+    ]
+   },
+   "en": {
+    "scene": "At a law firm, a female lawyer and a male clerk are talking about preparing for a court hearing.",
+    "question": "What must the man do first?",
+    "lines": [
+     "How far along are the materials for next week's hearing?",
+     "I've prepared copies of the evidence, both for the court and for the other side. All that's left is for the client to check the written statement.",
+     "The statement — the client got in touch last night with a correction, didn't they? One date was wrong.",
+     "Yes, I fixed that this morning and sent it again.",
+     "Thanks. Now, doesn't that date appear in the evidence too? The explanatory note attached to the copy of the contract.",
+     "Oh… you're right. The note has the same date.",
+     "If it contradicts the statement, they'll pounce on it.",
+     "Sorry. Then I'll redo the copies right…",
+     "Don't touch the contract itself. The only thing to change is the note we wrote. Redo the copies after that's done."
+    ],
+    "options": [
+     "Have the client check the statement",
+     "Correct the date in the statement",
+     "Make new copies of the evidence",
+     "Correct what's written on the attached note"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「手を入れるのは、うちで作ったメモだけ。コピーを取り直すのは、それが済んでから。」\n推理：陈述书的日期今早已改好，但附在合同复印件上的说明便条里也有同一个日期，和陈述书对不上会被对方抓住。所以先改便条，再重新复印。合同本身不能动。\n容易错：男的想马上「コピーを」被打断；复印排在改便条之后。",
+   "en": "Evidence: The lawyer says 「手を入れるのは、うちで作ったメモだけ。コピーを取り直すのは、それが済んでから。」\nReasoning: The statement's date was fixed this morning, but the same date appears on the note attached to the contract copy; a mismatch would be attacked. So the note is corrected first, then the copies are redone. The contract itself must not be touched.\nTrap: his 「コピーをすぐに……」 is cut off; copying comes after fixing the note."
+  },
+  "wrong": [
+   {
+    "zh": "陈述书改好后已经「もう一度お送りしました」，在等委托人。",
+    "en": "The corrected statement has already been sent again."
+   },
+   {
+    "zh": "陈述书的日期「今朝直して」了。",
+    "en": "The statement date was 「今朝直して」."
+   },
+   {
+    "zh": "复印要等「それが済んでから」。",
+    "en": "Copies come 「それが済んでから」."
+   },
+   null
+  ],
+  "traps": [
+   "done-already",
+   "order"
+  ]
+ },
+ {
+  "id": "n1-ck-125",
+  "type": "kadai",
+  "scene": "映像制作会社で、プロデューサーの男の人と女の人が、ドラマのロケについて話しています。",
+  "question": "女の人はこのあとまず何をしますか。",
+  "lines": [
+   [
+    "M",
+    "来月の河川敷のロケ、撮影の許可はもう取れたんだっけ。"
+   ],
+   [
+    "F",
+    "河川事務所からは許可が下りました。あとは、近所の方へのお知らせのチラシを配って、当日の警備の人を手配すれば。"
+   ],
+   [
+    "M",
+    "雨のときは屋内のセットで撮るって案もあったけど、監督がどうしても河川敷でって言うからね。雨が降ったら翌週に延ばすんだったよね。"
+   ],
+   [
+    "F",
+    "はい、予備日を取ってあります。"
+   ],
+   [
+    "M",
+    "その予備日、河川事務所の許可にも入ってる？"
+   ],
+   [
+    "F",
+    "えっ……申請書には、本番の日しか書かなかったと思います。"
+   ],
+   [
+    "M",
+    "だとすると、延ばした日に撮ったら、無許可で撮ることになるよ。"
+   ],
+   [
+    "F",
+    "そうですよね。チラシにも予備日を載せるつもりでしたけど、それも許可が出てからじゃないとまずいですね。警備会社には、予備日も仮で押さえてもらえるか聞いておきます。"
+   ],
+   [
+    "M",
+    "警備は日が決まってからで大丈夫。あそこは前の日に言っても人を出してくれるから。"
+   ]
+  ],
+  "options": [
+   "近所に配るチラシを用意する",
+   "警備会社に予備日を押さえてもらう",
+   "河川事務所に予備日の分も申請する",
+   "雨のときに使う屋内のセットを探す"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "影视制作公司里，男制片人和女人在谈电视剧外景拍摄的事。",
+    "question": "女人接下来首先要做什么？",
+    "lines": [
+     "下个月河滩的外景，拍摄许可已经拿到了吗？",
+     "河川管理事务所批下来了。剩下的就是给附近居民发通知传单，安排当天的保安。",
+     "下雨的话本来也有在室内布景拍的方案，可导演坚持要在河滩拍。下雨就推到下周，对吧。",
+     "是的，已经留了备用日。",
+     "那个备用日，河川事务所的许可里也包括了吗？",
+     "啊……申请书上我好像只写了正式拍摄那天。",
+     "那样的话，在推迟的那天拍，就成了无许可拍摄了。",
+     "是啊。传单上我本来也打算写备用日，不过那也得等许可下来才行。保安公司那边，我先问问能不能把备用日也暂时预留。",
+     "保安等日子定了再说就行。那家公司前一天说也会派人来。"
+    ],
+    "options": [
+     "准备发给附近居民的传单",
+     "请保安公司预留备用日",
+     "向河川事务所把备用日也申请上",
+     "找下雨时用的室内布景"
+    ]
+   },
+   "en": {
+    "scene": "At a video production company, a male producer and a woman are talking about location shooting for a drama.",
+    "question": "What will the woman do first?",
+    "lines": [
+     "For next month's riverside shoot, did we get filming permission?",
+     "The river office has granted it. Next is handing out flyers to the neighbours and arranging security for the day.",
+     "There was an idea to shoot on an indoor set if it rained, but the director insists on the riverside. So if it rains, we push it back a week, right?",
+     "Yes, we've set aside a backup day.",
+     "Is that backup day covered by the river office's permission too?",
+     "Oh… I think I only put the main date on the application.",
+     "Then shooting on the postponed day would mean shooting without permission.",
+     "Right. I was going to put the backup day on the flyer too, but that should wait until we have permission. I'll ask the security firm if they can pencil in the backup day as well.",
+     "Security can wait until the date's fixed. That firm will send people even if you tell them the day before."
+    ],
+    "options": [
+     "Prepare the flyers for the neighbours",
+     "Have the security firm hold the backup day",
+     "Apply to the river office for the backup day too",
+     "Find an indoor set to use if it rains"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说申请书上「本番の日しか書かなかった」，男的说：「延ばした日に撮ったら、無許可で撮ることになるよ。」\n推理：下雨就推迟到备用日，但许可只包括正式那天。所以要先向河川事务所补申请备用日。传单上的备用日要等许可下来，保安男的说「日が決まってからで大丈夫」。\n容易错：她自己说要去问保安公司，被男的否定了；室内布景的方案导演不同意。",
+   "en": "Evidence: She says the application shows 「本番の日しか書かなかった」, and he says 「延ばした日に撮ったら、無許可で撮ることになるよ。」\nReasoning: Rain pushes the shoot to the backup day, but the permit covers only the main day, so she must first apply to the river office for the backup day. The flyer waits for the permit, and he says security is fine 「日が決まってから」.\nTrap: her own plan to call the security firm is turned down; the indoor-set idea was rejected by the director."
+  },
+  "wrong": [
+   {
+    "zh": "传单上的备用日要等「許可が出てから」。",
+    "en": "The flyer waits 「許可が出てから」."
+   },
+   {
+    "zh": "男的说保安「日が決まってからで大丈夫」。",
+    "en": "He says security is fine 「日が決まってから」."
+   },
+   null,
+   {
+    "zh": "导演坚持在河滩拍，下雨就延期，不用室内布景。",
+    "en": "The director insists on the riverside; rain means postponing, not an indoor set."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "later",
+   "order"
+  ]
  }
 ]
