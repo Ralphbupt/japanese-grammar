@@ -1482,5 +1482,466 @@
    "denied-guess",
    "mentioned-not-asked"
   ]
+ },
+ {
+  "id": "n2-ck-216",
+  "type": "point",
+  "scene": "会社で男の人と女の人が話しています。",
+  "question": "女の人はどうして自転車で会社に来なくなったのですか。",
+  "lines": [
+   ["M", "佐藤さん、最近、駅から歩いてきてるよね。自転車はやめたの？"],
+   ["F", "うん。会社の駐輪場、四月から申し込み制になったでしょ。"],
+   ["M", "ああ、月二千円かかるようになったんだよね。それで？"],
+   ["F", "お金のことは別にいいの。交通費と一緒に出してもらえるから。ただ、申し込みが多すぎて抽選になってね。外れちゃったのよ。"],
+   ["M", "えっ、それは残念。"],
+   ["F", "近くに停められるところもないし、しかたなく。"],
+   ["M", "雨の日は大変じゃない？"],
+   ["F", "雨の日は前からバスだったから、そこは変わらないかな。歩くのも、二十分くらいなら意外と悪くないし。体にもいいしね。"]
+  ],
+  "options": ["駐輪場の料金が高いから", "駐輪場が借りられなかったから", "雨の日に困るから", "健康のために歩きたいから"],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "男人和女人在公司里交谈。",
+    "question": "女人为什么不再骑自行车来公司了？",
+    "lines": ["佐藤，你最近都是从车站走过来的吧。不骑自行车了？", "嗯。公司的自行车停车场从四月起改成申请制了，对吧。", "啊，变成每个月要两千日元了吧。所以？", "钱倒无所谓，可以跟交通费一起报销。只是申请的人太多，改成抽签了。我没抽中。", "啊，那太可惜了。", "附近也没地方停，只好这样了。", "下雨天不辛苦吗？", "下雨天我以前就坐公交，这点没变。走路的话，二十分钟左右意外地还不错。对身体也好。"],
+    "options": ["因为停车场费用太高", "因为没能租到停车位", "因为下雨天不方便", "因为想为了健康走路"]
+   },
+   "en": {
+    "scene": "At work, a man and a woman are talking.",
+    "question": "Why has the woman stopped cycling to work?",
+    "lines": ["Ms Sato, you've been walking from the station lately, haven't you? Have you given up the bike?", "Yes. The company bike parking switched to applications in April, remember?", "Oh, it costs 2,000 yen a month now, right? So that's why?", "The money's not a problem — they pay it with my travel allowance. But so many people applied that it went to a lottery. And I lost.", "Oh, that's a shame.", "There's nowhere else to park nearby, so I had no choice.", "Isn't it tough on rainy days?", "I took the bus on rainy days before too, so that hasn't changed. And walking, if it's about twenty minutes, is surprisingly not bad. It's good for me too."],
+    "options": ["The bike parking costs too much", "She couldn't get a bike space", "Rainy days are a problem", "She wants to walk for her health"]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「申し込みが多すぎて抽選になってね。外れちゃったのよ。」「近くに停められるところもないし、しかたなく。」\n推理：抽签没抽中＝没能租到停车位，附近又没地方停，所以只好不骑车。两千日元公司报销，「別にいい」；下雨天以前就坐公交；走路对身体好是现在觉得的好处，「しかたなく」说明不是自己想走。\n容易错：男的猜的「费用」被否定；最后提到的「体にもいい」是附带的感想。",
+   "en": "Evidence: She says 「申し込みが多すぎて抽選になってね。外れちゃったのよ。」 and 「近くに停められるところもないし、しかたなく。」\nReasoning: Losing the lottery means she couldn't get a space, and there's nowhere else nearby, so she had to stop. The fee is reimbursed — 「別にいい」; she already took the bus when it rained; walking being healthy is a bonus she's noticed, and 「しかたなく」 shows it wasn't her choice.\nTrap: the man's guess (the fee) is denied; 「体にもいい」 at the end is an afterthought."
+  },
+  "wrong": [
+   {
+    "zh": "费用和交通费一起报销，她说「別にいい」。",
+    "en": "The fee is reimbursed; she says it's no problem."
+   },
+   null,
+   {
+    "zh": "下雨天以前就坐公交，「変わらない」。",
+    "en": "She took the bus in the rain before too."
+   },
+   {
+    "zh": "对身体好是附带的好处，她是「しかたなく」走路的。",
+    "en": "Health is a side benefit; she walks because she has to."
+   }
+  ],
+  "traps": ["denied-guess", "mentioned-not-asked"]
+ },
+ {
+  "id": "n2-ck-217",
+  "type": "point",
+  "scene": "ラジオで、女のアナウンサーが、商店街の会長の男の人に話を聞いています。",
+  "question": "男の人は、この取り組みで一番よかったことは何だと言っていますか。",
+  "lines": [
+   ["F", "こちらの商店街では、三年前から、空いているお店を学生さんに安く貸していらっしゃるそうですね。"],
+   ["M", "ええ。今は七つのお店を、近くの大学の学生さんが使っています。カフェだったり、古着屋さんだったり。"],
+   ["F", "テレビでも何度か取り上げられて、週末はずいぶんにぎやかになったと伺いました。"],
+   ["M", "おかげさまで。ただ、平日はまだまだですし、学生さんは卒業すると出ていきますから、入れ替わりも多いんです。空き店舗の数だけで見ると、正直、思ったほどは減っていないんですよ。"],
+   ["F", "そうなんですか。"],
+   ["M", "でも、やってよかったなと思うのは、まわりの店の様子なんです。うちは五十年このやり方でいいんだ、と言っていたお米屋さんが、学生さんに教わって、ネットで注文を受けるようになったり、八百屋さんが店先でスープを売り始めたり。若い人に負けていられないって、みんな言ってます。"],
+   ["F", "刺激を受けたんですね。"],
+   ["M", "ええ。私にとっては、それが何よりの収穫です。"]
+  ],
+  "options": ["空いている店が減ったこと", "週末の客が増えたこと", "昔からの店が変わったこと", "テレビで紹介されたこと"],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "电台里，女播音员在采访商店街的男会长。",
+    "question": "男人说这项举措最好的地方是什么？",
+    "lines": ["听说这条商店街从三年前开始，把空着的店面便宜租给学生。", "是的。现在有七家店是附近大学的学生在用。有咖啡馆，也有旧衣店。", "听说电视上也报道过好几次，周末热闹了很多。", "托大家的福。不过平日还差得远，学生毕业就走了，所以换得也很频繁。光看空店面的数量，说实话，没有想象的减少那么多。", "是这样啊。", "不过，让我觉得做得好的，是周围那些店的变化。说『我们家五十年都这么做，挺好』的米店，跟学生学着开始在网上接订单；蔬菜店也开始在店门口卖汤。大家都说不能输给年轻人。", "是受到了刺激吧。", "是的。对我来说，这是最大的收获。"],
+    "options": ["空店面减少了", "周末的客人增加了", "老店发生了变化", "上了电视"]
+   },
+   "en": {
+    "scene": "On the radio, a female presenter is talking to the man who chairs a shopping-street association.",
+    "question": "What does the man say was the best thing about this project?",
+    "lines": ["I hear that for the past three years this shopping street has been renting empty shops cheaply to students.", "Yes. Right now students from the nearby university are using seven shops. Cafés, second-hand clothes shops and so on.", "It's been on TV several times, and I hear weekends have become much livelier.", "Thankfully. But weekdays are still quiet, and students move away when they graduate, so there's a lot of turnover. If you look only at the number of empty shops, honestly, it hasn't dropped as much as we hoped.", "Is that so?", "But what makes me glad we did it is how the shops around them have changed. The rice shop that used to say 'we've done it this way for fifty years and that's fine' learned from the students and started taking orders online, and the greengrocer started selling soup out front. Everyone says they can't let the young people beat them.", "They've been inspired.", "Yes. For me, that's the greatest gain of all."],
+    "options": ["Fewer shops stand empty", "More customers at weekends", "The long-standing shops have changed", "It was featured on TV"]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「やってよかったなと思うのは、まわりの店の様子なんです。」最后说：「それが何よりの収穫です。」\n推理：他举了米店开始网上接单、蔬菜店开始卖汤的例子——老店受到学生的刺激开始改变，这就是「何よりの収穫」。空店面「思ったほどは減っていない」；周末热闹了但「平日はまだまだ」；上电视是主持人提的。\n容易错：周末客人增加是真的，但他没说这是最好的一点。",
+   "en": "Evidence: He says 「やってよかったなと思うのは、まわりの店の様子なんです。」 and ends with 「それが何よりの収穫です。」\nReasoning: His examples — the rice shop taking online orders, the greengrocer selling soup — show the old shops changing, spurred by the students; that's 「何よりの収穫」. Empty shops 「思ったほどは減っていない」; weekends are livelier but 「平日はまだまだ」; the TV coverage is the presenter's point.\nTrap: busier weekends are true, but he doesn't call them the best part."
+  },
+  "wrong": [
+   {
+    "zh": "空店面「思ったほどは減っていない」。",
+    "en": "Empty shops haven't dropped as much as hoped."
+   },
+   {
+    "zh": "周末热闹了，但他没说是最好的一点，平日还差得远。",
+    "en": "Weekends are busier, but he doesn't call that the best part."
+   },
+   null,
+   {
+    "zh": "上电视是主持人提到的，他没有评价。",
+    "en": "TV coverage is only mentioned by the presenter."
+   }
+  ],
+  "traps": ["mentioned-not-asked", "half-right"]
+ },
+ {
+  "id": "n2-ck-218",
+  "type": "point",
+  "scene": "女の人と男の人が、男の人が初めて走ったマラソンについて話しています。",
+  "question": "男の人は、マラソンを走ってみて、今どう思っていますか。",
+  "lines": [
+   ["F", "マラソン、完走したんだって？　おめでとう。"],
+   ["M", "ありがとう。でも、タイムは目標より四十分も遅かったんだ。三十キロを過ぎたら、足が全然前に出なくなっちゃって。"],
+   ["F", "じゃあ、悔しいでしょう。"],
+   ["M", "走り終わった直後は、そう思ったよ。でもさ、歩いてたときに、沿道の知らないおばあさんが、あと少しだよって飴をくれてね。そこからなんとかゴールまで行けたんだ。今思うと、タイムなんてどうでもいいかなって。"],
+   ["F", "いい話。じゃ、来年もまた出るの？　同じ大会。"],
+   ["M", "一緒に走った友達には誘われてるんだけど、それはまだ考えられないな。……あ、別に、もうこりごりってわけじゃないよ。今はとにかく、あのゴールの気分を、もう少し味わっていたいんだ。"]
+  ],
+  "options": ["最後まで走れて満足している", "タイムが悪くて悔しい", "来年はもっと速く走りたい", "もう二度と走りたくない"],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "女人和男人在谈男人第一次跑的马拉松。",
+    "question": "男人跑完马拉松，现在是怎么想的？",
+    "lines": ["听说你跑完马拉松全程了？恭喜！", "谢谢。不过成绩比目标慢了整整四十分钟。过了三十公里以后，腿完全迈不动了。", "那你一定很不甘心吧。", "刚跑完的时候是这么想的。不过啊，我走着的时候，路边一位不认识的老奶奶说『就差一点了』，给了我一颗糖。从那里我总算坚持到了终点。现在想想，成绩什么的无所谓了。", "真好。那明年还参加吗？同一个比赛。", "一起跑的朋友在邀我，不过那个现在还考虑不了。……啊，倒不是说已经受够了。现在就是想再多回味一会儿到达终点时的那种感觉。"],
+    "options": ["能跑到最后，很满足", "成绩不好，很不甘心", "明年想跑得更快", "再也不想跑了"]
+   },
+   "en": {
+    "scene": "A woman and a man are talking about the first marathon the man has run.",
+    "question": "How does the man feel now about running the marathon?",
+    "lines": ["I hear you finished the marathon! Congratulations.", "Thanks. But my time was a full forty minutes slower than my target. After thirty kilometres my legs just wouldn't move.", "Then you must be frustrated.", "Right after I finished, I was. But you know, while I was walking, an old lady I didn't know at the roadside gave me a sweet and said 'nearly there'. From there I somehow made it to the finish. Looking back, I feel the time doesn't really matter.", "What a nice story. So will you run again next year? The same race?", "The friend I ran with is asking me, but I can't think about that yet. ...Oh, it's not that I've had enough of it. Right now I just want to savour that feeling at the finish a bit longer."],
+    "options": ["He's satisfied he made it to the end", "He's frustrated by his poor time", "He wants to run faster next year", "He never wants to run again"]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「今思うと、タイムなんてどうでもいいかなって。」「あのゴールの気分を、もう少し味わっていたいんだ。」\n推理：靠路边老奶奶的鼓励坚持到终点，现在只想回味跑完的感觉——对跑完全程感到满足。不甘心只是「走り終わった直後」；明年「まだ考えられない」；「もうこりごりってわけじゃない」否定了不想再跑。\n容易错：问的是「今」的感想，刚跑完时的心情是陷阱。",
+   "en": "Evidence: He says 「今思うと、タイムなんてどうでもいいかなって。」 and 「あのゴールの気分を、もう少し味わっていたいんだ。」\nReasoning: Helped to the finish by a stranger's encouragement, he now just wants to savour having finished — he's satisfied. Frustration was only 「走り終わった直後」; next year he 「まだ考えられない」; 「もうこりごりってわけじゃない」 rules out never running again.\nTrap: the question asks how he feels now; his feeling right after the race is the trap."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "不甘心只是刚跑完时，现在觉得成绩无所谓。",
+    "en": "He was frustrated only right after; now the time doesn't matter."
+   },
+   {
+    "zh": "明年的事「まだ考えられない」，也没说要跑快。",
+    "en": "He can't think about next year yet."
+   },
+   {
+    "zh": "他说「もうこりごりってわけじゃない」。",
+    "en": "He says he hasn't had enough of it."
+   }
+  ],
+  "traps": ["denied-guess", "mentioned-not-asked"]
+ },
+ {
+  "id": "n2-ck-219",
+  "type": "point",
+  "scene": "自動車教習所で、教官の男の人と女の人が話しています。",
+  "question": "教官は、女の人の運転で一番直したほうがいいのはどこだと言っていますか。",
+  "lines": [
+   ["F", "今日の運転、どうでしたか。自分では、スピードを出しすぎてた気がするんですけど。"],
+   ["M", "いや、スピードはあのくらいでちょうどいいですよ。遅すぎると、かえって後ろの車が困りますから。"],
+   ["F", "そうですか。ブレーキも、何回か、がくんってなっちゃって。"],
+   ["M", "うん、少し強めでしたね。でもまあ、あれは回数を重ねれば自然に直ります。気になったのは、左に曲がるときです。"],
+   ["F", "左……ですか。"],
+   ["M", "ミラーで後ろを見るのが、ハンドルを切り始めてからになってるんですよ。自転車が来てたら、もう間に合わないでしょう。曲がる前に見る。これだけは、癖になる前に直しましょう。"],
+   ["F", "はい。あと、ハンドルの持ち方も、先週注意されたんですけど。"],
+   ["M", "ああ、今日はちゃんとできてましたよ。"]
+  ],
+  "options": ["スピードを出しすぎること", "ブレーキのかけ方が強いこと", "ハンドルの持ち方", "後ろを確かめるのが遅いこと"],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "在驾校里，男教练和女人在交谈。",
+    "question": "教练说女人开车最应该改的是哪一点？",
+    "lines": ["今天开得怎么样？我自己觉得车速太快了。", "不，车速那样正好。太慢的话，反倒让后面的车为难。", "是吗。刹车也有几次一下子顿住了。", "嗯，稍微有点重。不过那个多练几次自然就好了。我在意的是左转的时候。", "左转……吗？", "你用后视镜看后面，是在开始打方向盘以后。要是有自行车过来，就来不及了吧。转弯之前看。这一点要趁还没养成习惯改掉。", "好的。还有，方向盘的握法上周也被指出过。", "啊，今天做得很好。"],
+    "options": ["车速太快", "刹车踩得太重", "方向盘的握法", "看后方看得太晚"]
+   },
+   "en": {
+    "scene": "At a driving school, a male instructor and a woman are talking.",
+    "question": "What does the instructor say she most needs to fix in her driving?",
+    "lines": ["How was my driving today? I felt I was going too fast.", "No, that speed was just right. Going too slowly actually causes trouble for the cars behind.", "Really? And a few times the brakes jerked.", "Yes, you were a bit heavy on them. But that sorts itself out with practice. What concerned me was turning left.", "Left...?", "You're checking behind you in the mirror only after you've started turning the wheel. If a bicycle were coming, it'd be too late. Look before you turn. Let's fix that one before it becomes a habit.", "OK. Also, I was told off about how I hold the wheel last week.", "Oh, you did that fine today."],
+    "options": ["Driving too fast", "Braking too hard", "How she holds the wheel", "Checking behind too late"]
+   }
+  },
+  "why": {
+   "zh": "依据：教练说：「ミラーで後ろを見るのが、ハンドルを切り始めてからになってるんですよ。」「これだけは、癖になる前に直しましょう。」\n推理：左转时看后视镜太晚，有自行车就来不及——「これだけは」说明这是最要紧的。车速「ちょうどいい」；刹车「回数を重ねれば自然に直ります」；握方向盘今天「ちゃんとできてました」。\n容易错：刹车确实「少し強め」，但教练说练多了自然会好，不是最需要改的。",
+   "en": "Evidence: The instructor says 「ミラーで後ろを見るのが、ハンドルを切り始めてからになってるんですよ。」 and 「これだけは、癖になる前に直しましょう。」\nReasoning: She checks the mirror too late when turning left — too late if a bike is coming — and 「これだけは」 marks it as the key point. Her speed is 「ちょうどいい」; braking 「回数を重ねれば自然に直ります」; her grip was 「ちゃんとできてました」 today.\nTrap: her braking was indeed 「少し強め」, but he says practice will fix it."
+  },
+  "wrong": [
+   {
+    "zh": "教练说车速「ちょうどいい」。",
+    "en": "He says her speed was just right."
+   },
+   {
+    "zh": "刹车稍重，但「回数を重ねれば自然に直ります」。",
+    "en": "Braking will improve naturally with practice."
+   },
+   {
+    "zh": "握法今天「ちゃんとできてました」。",
+    "en": "She held the wheel properly today."
+   },
+   null
+  ],
+  "traps": ["denied-guess", "mentioned-not-asked"]
+ },
+ {
+  "id": "n2-ck-220",
+  "type": "point",
+  "scene": "会社で女の人と男の人が話しています。",
+  "question": "男の人は、久しぶりに帰ったふるさとで、何に一番驚いたと言っていますか。",
+  "lines": [
+   ["F", "連休、田舎に帰ってたんでしょ。どうだった？　十年ぶりくらいって言ってたよね。"],
+   ["M", "うん。もう、びっくりすることばっかりだったよ。一番驚いたのは、駅かな。全部建て替わって、ガラス張りになってるんだ。実家の前の田んぼも、大きな道路になってるし。"],
+   ["F", "へえ。"],
+   ["M", "……あ、でも、駅や道路のことは、前から母に聞いてたんだよな。それより、子どもがすごく多くてさ。昔通ってた小学校の前を通ったら、ちょうど下校の時間で、すごい人数が出てきて。僕のころは、一学年一クラスしかなかったのに。あれには本当にびっくりした。"],
+   ["F", "若い人が引っ越してきてるの？"],
+   ["M", "そうらしい。新しい道路のおかげで、街まで車ですぐ行けるようになって、近くに家を建てる人が増えたんだって。校舎は古いままだったけどね。"]
+  ],
+  "options": ["駅が新しくなっていたこと", "子どもが増えていたこと", "家の前に道路ができていたこと", "小学校が建て替えられていたこと"],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "女人和男人在公司里交谈。",
+    "question": "男人说回到阔别已久的家乡，最让他吃惊的是什么？",
+    "lines": ["连休你回老家了吧？怎么样？你说差不多十年没回去了吧。", "嗯。尽是让人吃惊的事。最吃惊的大概是车站吧。整个重建了，变成了玻璃外墙。老家门前的稻田也变成了一条大马路。", "哦——", "……啊，不过，车站和马路的事，我之前就听妈妈说过了。倒是孩子特别多。经过以前上的小学门口，正好赶上放学，出来好多人。我那时候一个年级只有一个班。那个真让我吃了一惊。", "是有年轻人搬过去吗？", "好像是。因为有了新马路，开车很快就能到城里，在附近盖房子的人多了。不过校舍还是老样子。"],
+    "options": ["车站变新了", "孩子变多了", "家门前修了马路", "小学重建了"]
+   },
+   "en": {
+    "scene": "At work, a woman and a man are talking.",
+    "question": "What does the man say surprised him most in the hometown he visited after a long time?",
+    "lines": ["You went back to your hometown over the holidays, didn't you? How was it? You said it'd been about ten years.", "Yes. Everything surprised me. The biggest surprise was probably the station. It's been completely rebuilt with glass walls. And the rice field in front of my parents' house is now a big road.", "Wow.", "…Oh, but I'd already heard about the station and the road from my mother. There were so many children, though. I walked past my old primary school just as it was letting out, and a huge crowd came out. In my day there was only one class per year. That really surprised me.", "Are young people moving there?", "Apparently. The new road means you can drive into town quickly, so more people are building houses nearby. The school building was the same old one, though."],
+    "options": ["The station had been rebuilt", "There were more children", "A road had been built by his house", "The primary school had been rebuilt"]
+   }
+  },
+  "why": {
+   "zh": "依据：男的先说「一番驚いたのは、駅かな」，马上改口「駅や道路のことは、前から母に聞いてたんだよな」，接着说孩子特别多，「あれには本当にびっくりした」。\n推理：车站重建、门前修路是事先听说过的，所以他自己收回了；真正吃惊的是小学放学时出来那么多孩子。校舍「古いままだった」，小学并没有重建。\n容易错：「一番驚いたのは」先用在车站上，随后被收回；最后提到小学，要分清是孩子多还是校舍新。",
+   "en": "Evidence: He first says 「一番驚いたのは、駅かな」, then corrects himself — 「駅や道路のことは、前から母に聞いてたんだよな」 — and goes on about the children: 「あれには本当にびっくりした」.\nReasoning: He'd already heard about the station and the road, so he takes the station back; the real surprise was the crowd of children leaving his old school. The school building was 「古いままだった」 — not rebuilt.\nTrap: 「一番驚いたのは」 is first attached to the station, then retracted; the school is mentioned, but for its children, not a new building."
+  },
+  "wrong": [
+   {
+    "zh": "他先说是车站，但马上改口说那是听妈妈说过的。",
+    "en": "He names the station first but takes it back — he'd heard about it from his mother."
+   },
+   null,
+   {
+    "zh": "门前的路也是事先听说过的。",
+    "en": "He'd also heard about the road beforehand."
+   },
+   {
+    "zh": "校舍「古いままだった」，没有重建。",
+    "en": "The school building was the same old one."
+   }
+  ],
+  "traps": ["mentioned-not-asked", "denied-guess"]
+ },
+ {
+  "id": "n2-ck-221",
+  "type": "point",
+  "scene": "会社で女の課長と男の人が、男の人が書いた企画書について話しています。",
+  "question": "課長は、企画書のどこを直すように言っていますか。",
+  "lines": [
+   ["M", "課長、企画書、見ていただけましたか。"],
+   ["F", "うん、読んだよ。前のと比べて、ずいぶん分かりやすくなったね。グラフも、色を減らしたから見やすくなった。"],
+   ["M", "ありがとうございます。費用のところは、計算に自信がなくて……。"],
+   ["F", "経理の山本さんにも見てもらったんでしょ？　それならいいよ。ただ、ここ。八月の第二週に、工場での試作が入ってるけど。"],
+   ["M", "はい。"],
+   ["F", "その週、工場はお盆で一週間止まるのよ。そこから後ろを全部ずらさないと、発売日にも響いてくるでしょ。"],
+   ["M", "あ、そうでした。すみません。あの、企画の名前は、もう少し目立つものにしたほうがいいでしょうか。"],
+   ["F", "うーん、部長はああいう落ち着いた感じが好きだから、今のままで行こう。"]
+  ],
+  "options": ["費用の計算", "グラフの見せ方", "企画の名前", "作業の日程"],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "在公司里，女科长和男人在谈男人写的企划书。",
+    "question": "科长让他修改企划书的哪个地方？",
+    "lines": ["科长，企划书您看过了吗？", "嗯，看了。跟上次的比，清楚多了。图表的颜色减少了，也好看多了。", "谢谢。费用那部分，我对计算没什么把握……", "你也请财务的山本看过了吧？那就没问题。不过，这里。八月第二周安排了在工厂试制。", "是的。", "那一周工厂因为盂兰盆节停工一周。不把那之后的全部往后挪，也会影响到发售日吧。", "啊，对哦。对不起。那个，企划的名字要不要改得更醒目一点？", "嗯……部长喜欢那种稳重的感觉，就保持现在这样吧。"],
+    "options": ["费用的计算", "图表的呈现方式", "企划的名字", "工作的日程"]
+   },
+   "en": {
+    "scene": "At a company, a female section chief and a man are talking about a proposal he wrote.",
+    "question": "What part of the proposal does the section chief tell him to fix?",
+    "lines": ["Have you had a chance to look at my proposal?", "Yes, I read it. It's much clearer than the last one. The graphs are easier to read now you've used fewer colours.", "Thank you. I wasn't confident about my calculations in the cost section...", "You had Yamamoto in accounting check it, didn't you? Then it's fine. But here. You've got the trial production at the factory in the second week of August.", "Yes.", "The factory shuts down for a week that week for Obon. Unless you push everything after it back, it'll affect the launch date too, won't it?", "Oh, of course. I'm sorry. Er, should I make the project name a bit more eye-catching?", "Hmm, the department head likes that understated feel, so let's go with it as it is."],
+    "options": ["The cost calculations", "How the graphs look", "The project name", "The work schedule"]
+   }
+  },
+  "why": {
+   "zh": "依据：科长说：「その週、工場はお盆で一週間止まるのよ。そこから後ろを全部ずらさないと……」\n推理：试制排在工厂停工的那一周，后面的安排都要往后挪，这是日程的问题。图表被表扬了；费用已请财务看过，「それならいいよ」；名字「今のままで行こう」。\n容易错：男的自己担心的是费用和名字，科长要改的却是他没提的日程。",
+   "en": "Evidence: She says 「その週、工場はお盆で一週間止まるのよ。そこから後ろを全部ずらさないと……」\nReasoning: The trial run falls in the factory's shutdown week, so everything after it must move — a schedule problem. She praised the graphs; the costs were checked by accounting — 「それならいいよ」; the name stays — 「今のままで行こう」.\nTrap: he worries about the costs and the name, but what needs fixing is the schedule, which he never raised."
+  },
+  "wrong": [
+   {
+    "zh": "财务的人看过了，科长说「それならいいよ」。",
+    "en": "Accounting checked it, so she's fine with it."
+   },
+   {
+    "zh": "图表被表扬「見やすくなった」。",
+    "en": "She praised the graphs."
+   },
+   {
+    "zh": "名字部长喜欢，「今のままで行こう」。",
+    "en": "The name stays as it is."
+   },
+   null
+  ],
+  "traps": ["mentioned-not-asked", "denied-guess"]
+ },
+ {
+  "id": "n2-ck-222",
+  "type": "point",
+  "scene": "男の人が市の粗大ごみの係の人と電話で話しています。",
+  "question": "男の人のソファは、どうして持っていってもらえなかったのですか。",
+  "lines": [
+   ["M", "もしもし、今朝、粗大ごみでソファを出したんですが、まだ置いたままになってるんです。"],
+   ["F", "申し訳ございません。お名前とご住所をお願いできますか。"],
+   ["M", "木村です。みどり町三丁目のグリーンハイツです。"],
+   ["F", "……はい、木村様、本日の回収でご予約いただいておりますね。シールはお貼りいただきましたか。"],
+   ["M", "ええ、言われたとおり、千二百円のを貼りました。"],
+   ["F", "ありがとうございます。今、回収の担当から報告が来ているんですが、伺ったところ、お品物が見当たらなかったということで。"],
+   ["M", "え？　うちのマンションのごみ置き場は、裏の駐車場の奥なんですけど。いつもの燃えるごみと同じところに出しました。"],
+   ["F", "大変申し訳ございません。粗大ごみは、ご予約のときに、道路に面した正面の入り口の前にとお願いしておりまして……。"],
+   ["M", "ああ、そういえば、そんなこと言われたような。"],
+   ["F", "明日の午前中にもう一度伺いますので、お手数ですが、正面の入り口の前に移しておいていただけますか。"]
+  ],
+  "options": ["出す場所が違っていたから", "シールの金額が足りなかったから", "予約が入っていなかったから", "出す日を間違えたから"],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "男人在和市里负责大件垃圾的人打电话。",
+    "question": "男人的沙发为什么没有被收走？",
+    "lines": ["喂，我今天早上把沙发作为大件垃圾扔出去了，可是还放在那儿。", "非常抱歉。能告诉我您的姓名和地址吗？", "我姓木村。绿町三丁目的格林公寓。", "……好的，木村先生，您预约的是今天回收。贴了处理券吗？", "贴了，按你们说的，贴了一千二百日元的。", "谢谢您。现在负责回收的人报告说，去了以后没找到东西。", "啊？我们公寓的垃圾站在后面停车场的里头。我放在平时扔可燃垃圾的同一个地方了。", "实在抱歉。大件垃圾在预约的时候，我们请您放在面向马路的正门入口前……", "啊，这么说来，好像是说过这样的话。", "明天上午我们再去一趟，麻烦您把它挪到正门入口前好吗？"],
+    "options": ["因为放的地方不对", "因为处理券金额不够", "因为没有预约", "因为扔错了日子"]
+   },
+   "en": {
+    "scene": "A man is on the phone to the city's bulky-waste office.",
+    "question": "Why wasn't the man's sofa taken away?",
+    "lines": ["Hello, I put a sofa out as bulky waste this morning, but it's still sitting there.", "I'm very sorry. Could I have your name and address?", "Kimura. Green Heights, Midori-cho 3-chome.", "...Yes, Mr Kimura, you're booked for collection today. Did you put the sticker on?", "Yes, I put the 1,200-yen one on, as I was told.", "Thank you. I have a report from the collection staff — they say when they called, they couldn't find the item.", "What? Our building's rubbish area is at the back of the car park behind. I put it in the same place as the usual burnable rubbish.", "I'm terribly sorry. When you booked, we asked that bulky items be put in front of the main entrance facing the road...", "Oh, now you mention it, I think I was told that.", "We'll come again tomorrow morning. Sorry for the trouble, but could you move it in front of the main entrance?"],
+    "options": ["He put it in the wrong place", "The sticker wasn't enough", "There was no booking", "He put it out on the wrong day"]
+   }
+  },
+  "why": {
+   "zh": "依据：工作人员说：「粗大ごみは、ご予約のときに、道路に面した正面の入り口の前にとお願いしておりまして……」\n推理：男的把沙发放在了后面停车场里头的垃圾站，而规定要放在正门入口前，回收的人去了没找到。预约确认是今天，日子没错；一千二百日元的券也按要求贴了。\n容易错：对话里逐一确认了预约、日子、处理券，都没问题；原因要从男的说的放置地点和工作人员的话对比出来。",
+   "en": "Evidence: The clerk says 「粗大ごみは、ご予約のときに、道路に面した正面の入り口の前にとお願いしておりまして……」\nReasoning: He left the sofa at the rubbish area at the back of the car park, but it should have been by the main entrance, so the collectors didn't find it. The booking was for today, so the day was right, and he put on the 1,200-yen sticker as told.\nTrap: the booking, the day and the sticker are each checked and are fine; the cause comes from comparing where he put it with what the clerk says."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "他按要求贴了一千二百日元的券，工作人员也没说不够。",
+    "en": "He put on the 1,200-yen sticker as instructed."
+   },
+   {
+    "zh": "工作人员确认「ご予約いただいております」。",
+    "en": "The clerk confirms he was booked."
+   },
+   {
+    "zh": "预约的就是今天的回收，日子没错。",
+    "en": "He was booked for today, so the day was right."
+   }
+  ],
+  "traps": ["mentioned-not-asked", "denied-guess"]
+ },
+ {
+  "id": "n2-ck-223",
+  "type": "point",
+  "scene": "高校で、担任の女の先生と生徒の父親が話しています。",
+  "question": "先生は、生徒のどんなところを一番ほめていますか。",
+  "lines": [
+   ["M", "いつも娘がお世話になっております。家ではあまり学校の話をしないもので……。"],
+   ["F", "いえいえ。ゆりさん、クラスで話し合いをするとき、なかなか意見が言えない子がいると、そっと声をかけて、その子の話を最後までちゃんと聞いてあげるんですよ。"],
+   ["M", "へえ、あの子が。人前で話すのは苦手なはずなんですが。"],
+   ["F", "ええ、自分からどんどん発言するタイプではないんです。でも、ゆりさんのおかげで、クラスの話し合いが本当に変わりました。"],
+   ["M", "そうですか。成績のほうはいかがでしょう。夏から塾に通い始めたんですが。"],
+   ["F", "二学期は数学がずいぶん伸びましたね。塾のおかげかもしれません。あと、バスケット部も、一度も休まずに続けていますよ。"],
+   ["M", "家では妹とけんかばかりしてるんですけどね。"],
+   ["F", "ふふ。でも、話し合いのときのゆりさんは、本当にクラスのお手本なんですよ。"]
+  ],
+  "options": ["成績が上がったこと", "部活を休まずに続けていること", "ほかの人の意見を大切にすること", "授業中に積極的に発言すること"],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在高中，女班主任和学生的父亲在交谈。",
+    "question": "老师最称赞学生的是哪一点？",
+    "lines": ["一直承蒙您照顾我女儿。她在家里不太说学校的事……", "哪里哪里。由里在班上讨论的时候，一有不太敢说出意见的同学，就悄悄地跟对方搭话，一直认真听到对方说完。", "哦，那孩子还会这样。她应该不擅长在人前说话啊。", "是的，她不是那种主动发言的类型。可是多亏了由里，班上的讨论真的变了。", "是吗。成绩方面怎么样？她从夏天开始上补习班了。", "第二学期数学进步很大呢。也许是补习班的功劳。还有，篮球部她也一次都没缺席，一直坚持着。", "在家里她总跟妹妹吵架呢。", "呵呵。不过，讨论时的由里，真的是全班的榜样。"],
+    "options": ["成绩提高了", "社团活动从不缺席", "重视别人的意见", "上课时积极发言"]
+   },
+   "en": {
+    "scene": "At a high school, a female homeroom teacher and a student's father are talking.",
+    "question": "What does the teacher praise most about the student?",
+    "lines": ["Thank you for all you do for my daughter. She doesn't talk much about school at home...", "Not at all. In class discussions, when someone finds it hard to give their opinion, Yuri quietly talks to them and listens properly to what they have to say, right to the end.", "Really, her? She's supposed to be bad at speaking in front of people, though.", "Yes, she isn't the type to speak up a lot herself. But thanks to Yuri, the class discussions have really changed.", "I see. How are her grades? She started going to a cram school in the summer.", "Her maths has improved a lot this term. Maybe that's the cram school. Also, she's kept up basketball club without missing a single practice.", "At home she does nothing but fight with her little sister, though.", "Ha ha. But in discussions, Yuri is a real model for the whole class."],
+    "options": ["Her grades went up", "She never misses club activities", "She values other people's opinions", "She speaks up actively in class"]
+   }
+  },
+  "why": {
+   "zh": "依据：老师一开口就说由里在讨论时会对不敢发言的同学「そっと声をかけて、その子の話を最後までちゃんと聞いてあげる」，最后又说「話し合いのときのゆりさんは、本当にクラスのお手本なんですよ」。\n推理：老师最称赞的是她倾听、重视别人的意见，开头和结尾都回到这一点。数学进步是父亲问起成绩才说的，还归功于补习班；篮球部是「あと」补充的；她「自分からどんどん発言するタイプではない」。\n容易错：话题是讨论，但她本人并不是积极发言的人；成绩、部活都被提到，但不是重点。",
+   "en": "Evidence: The teacher opens by saying that in discussions Yuri will 「そっと声をかけて、その子の話を最後までちゃんと聞いてあげる」 for classmates who find it hard to speak, and ends with 「話し合いのときのゆりさんは、本当にクラスのお手本なんですよ」.\nReasoning: What she praises most is Yuri listening to and valuing others' views — she starts and ends on it. The maths progress comes up only when the father asks about grades, and she credits the cram school; basketball is added with 「あと」; Yuri 「自分からどんどん発言するタイプではない」.\nTrap: the topic is discussions, but Yuri herself isn't the one speaking up; grades and club are mentioned but aren't the point."
+  },
+  "wrong": [
+   {
+    "zh": "成绩是父亲问起才说的，老师还说可能是补习班的功劳，不是重点。",
+    "en": "Grades come up only when the father asks, and she credits the cram school — not her main point."
+   },
+   {
+    "zh": "篮球部是「あと」顺带补充的。",
+    "en": "Basketball is only added in passing with 「あと」."
+   },
+   null,
+   {
+    "zh": "老师说她不是「自分からどんどん発言するタイプ」。",
+    "en": "She isn't the type to speak up much herself."
+   }
+  ],
+  "traps": ["mentioned-not-asked", "half-right"]
+ },
+ {
+  "id": "n2-ck-224",
+  "type": "point",
+  "scene": "テレビで、女の人が週末の天気について話しています。",
+  "question": "女の人は、お花見に一番いいのはいつだと言っていますか。",
+  "lines": [
+   ["F", "続いて、週末のお天気です。各地で桜が見ごろを迎えていますが、この週末は、出かける時間をよく選んだほうがよさそうです。"],
+   ["F", "まず土曜日です。朝から青空が広がりますが、空気はひんやりとしていて、日中も上着が手放せません。さらに、お昼過ぎからは北風が強まって、夕方にかけて一段と冷え込む見込みです。"],
+   ["F", "日曜日は、夜のうちに降り出した雨が、お昼ごろまで残るでしょう。雨が上がったあとは風も弱く、気温もぐんと上がって、春らしい陽気になります。週末の中で、のんびりお花見を楽しむなら、雨上がりのこの時間がいちばんです。地面はまだぬれていますので、敷物は厚めのものをお持ちください。"]
+  ],
+  "options": ["土曜日の午前", "土曜日の午後", "日曜日の午前", "日曜日の午後"],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "电视上，一位女士在介绍周末的天气。",
+    "question": "这位女士说什么时候最适合赏花？",
+    "lines": ["接下来是周末的天气。各地的樱花正迎来最佳观赏期，不过这个周末，出门的时间最好好好挑一挑。", "首先是星期六。从早上开始就是一片蓝天，但空气凉飕飕的，白天也离不开外套。而且，过了中午北风会变强，到傍晚会更冷。", "星期日，夜里开始下的雨会持续到中午前后。雨停以后风也小，气温大幅回升，会是春天般暖和的天气。这个周末要悠闲地赏花的话，雨后这段时间最好。地面还是湿的，请带厚一点的垫子。"],
+    "options": ["星期六上午", "星期六下午", "星期日上午", "星期日下午"]
+   },
+   "en": {
+    "scene": "On TV, a woman is giving the weekend weather.",
+    "question": "When does the woman say is best for cherry-blossom viewing?",
+    "lines": ["Next, the weekend weather. Cherry blossoms are at their best in many places, but this weekend it looks wise to choose your time to go out carefully.", "First, Saturday. Blue skies from the morning, but the air will be chilly and you'll need a jacket even during the day. On top of that, the north wind will pick up after midday, and it's expected to get even colder towards evening.", "On Sunday, rain that starts overnight will linger until around midday. After it clears the wind will be light and temperatures will shoot up, giving proper spring warmth. If you want to enjoy the blossoms at leisure this weekend, that time after the rain is the best. The ground will still be wet, so bring a thick mat."],
+    "options": ["Saturday morning", "Saturday afternoon", "Sunday morning", "Sunday afternoon"]
+   }
+  },
+  "why": {
+   "zh": "依据：「雨が上がったあとは風も弱く、気温もぐんと上がって……雨上がりのこの時間がいちばんです。」\n推理：星期日的雨「お昼ごろまで残る」，雨停以后就是下午——风小、暖和，她说这段时间最好。星期六上午虽然晴，但很冷要穿外套；星期六下午北风更强、更冷；星期日上午还在下雨。\n容易错：星期六上午「青空」听起来最好，但她说要选时间、而且很冷；「この時間」要换算成星期日下午。",
+   "en": "Evidence: 「雨が上がったあとは風も弱く、気温もぐんと上がって……雨上がりのこの時間がいちばんです。」\nReasoning: Sunday's rain 「お昼ごろまで残る」, so after it clears means the afternoon — light wind and warm, which she calls the best time. Saturday morning is sunny but cold enough for a jacket; Saturday afternoon is windier and colder; Sunday morning is still rainy.\nTrap: Saturday morning's 「青空」 sounds best, but it's cold; you have to work out that 「この時間」 means Sunday afternoon."
+  },
+  "wrong": [
+   {
+    "zh": "星期六上午虽然是蓝天，但很冷，离不开外套。",
+    "en": "Saturday morning is sunny but cold."
+   },
+   {
+    "zh": "星期六下午北风变强，越来越冷。",
+    "en": "Saturday afternoon gets windy and colder."
+   },
+   {
+    "zh": "星期日的雨要下到中午前后。",
+    "en": "Sunday's rain lasts until around midday."
+   },
+   null
+  ],
+  "traps": ["mentioned-not-asked", "half-right"]
  }
 ]

@@ -1680,5 +1680,412 @@
    "repeat-word",
    "contradiction"
   ]
+ },
+ {
+  "id": "n2-ck-530",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "この荷物、一人で運べないこともないんだけど……。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "そっか。運べないなら、置いていくしかないね。",
+   "一人で全部運んでくれたんだ。ありがとう。",
+   "じゃあ、半分持つよ。どこまで運ぶの？"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这些行李，我一个人也不是搬不动啦……。"
+    ],
+    "options": [
+     "这样啊。搬不动的话，只能放下不管了。",
+     "你一个人全搬完了啊。谢谢。",
+     "那我帮你拿一半吧。搬到哪儿？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "These bags — it's not that I can't carry them on my own, but…"
+    ],
+    "options": [
+     "I see. If you can't carry them, we'll just have to leave them.",
+     "You carried them all by yourself? Thanks.",
+     "Then I'll take half. Where are they going?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「一人で運べないこともないんだけど……。」\n推理：「〜ないこともない」是“也不是不能”，意思是勉强能搬；话说一半的「けど……」是在暗示希望有人帮忙。主动提出拿一半最自然。\n容易错：把双重否定听成“搬不动”；把“能搬”听成“已经搬完”。",
+   "en": "Evidence: The woman says: 「一人で運べないこともないんだけど……。」\nReasoning: 「〜ないこともない」 means \"it's not that I can't\" — she could just about manage — and the trailing 「けど……」 hints she'd like help. Offering to take half is the natural reply.\nTrap: hearing the double negative as \"can't\"; hearing \"could carry\" as \"has carried\"."
+  },
+  "wrong": [
+   {
+    "zh": "「運べないこともない」是“能搬”，不是搬不动。",
+    "en": "「運べないこともない」 means she can carry them, not that she can't."
+   },
+   {
+    "zh": "她还没搬，只是说能搬；说谢谢她搬完了是时态不对。",
+    "en": "She hasn't carried them yet; thanking her for doing it gets the tense wrong."
+   },
+   null
+  ],
+  "traps": [
+   "contradiction",
+   "tense"
+  ]
+ },
+ {
+  "id": "n2-ck-531",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "では、詳しいことは、のちほどこちらからご連絡差し上げます。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "では、ご連絡お待ちしております。",
+   "はい、のちほどご連絡差し上げます。",
+   "あ、もうお電話くださったんですか。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "那么，详细情况稍后由我们这边联系您。"
+    ],
+    "options": [
+     "那我就等您的联系了。",
+     "好的，稍后我联系您。",
+     "啊，您已经打过电话了吗？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Then we'll contact you with the details later."
+    ],
+    "options": [
+     "Then I'll look forward to hearing from you.",
+     "Yes, I'll contact you later.",
+     "Oh, you've already called?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「のちほどこちらからご連絡差し上げます。」\n推理：「こちらから」「差し上げます」表示由男的一方联系，而且是「のちほど」以后。女的是等联系的一方，回答「ご連絡お待ちしております」最合适。\n容易错：照搬「ご連絡差し上げます」，变成自己要联系对方，立场反了；「のちほど」是稍后，还没联系。",
+   "en": "Evidence: The man says: 「のちほどこちらからご連絡差し上げます。」\nReasoning: 「こちらから」 and 「差し上げます」 mean he will make the contact, and 「のちほど」 means later. She is the one waiting, so 「ご連絡お待ちしております」 fits.\nTrap: echoing 「ご連絡差し上げます」 reverses who contacts whom; 「のちほど」 means it hasn't happened yet."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "联系的是男的一方，她照搬这句就变成自己要联系对方。",
+    "en": "He is the one contacting; echoing his line makes her the one who'll call."
+   },
+   {
+    "zh": "「のちほど」是稍后才联系，现在还没打过电话。",
+    "en": "「のちほど」 means he'll get in touch later; he hasn't called yet."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "repeat-word",
+   "tense"
+  ]
+ },
+ {
+  "id": "n2-ck-532",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "今さら悔やんだところで、どうにもならないじゃない。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "うん、もっと早く悔やめばよかった。",
+   "そうだね、悔やんでも仕方ないか。",
+   "そっか、まだ間に合うんだね。よかった。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "事到如今，后悔也无济于事啊。"
+    ],
+    "options": [
+     "嗯，要是早点后悔就好了。",
+     "也是，后悔也没用啊。",
+     "这样啊，还来得及啊。太好了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "There's no point regretting it now, is there?"
+    ],
+    "options": [
+     "Yeah, I should have regretted it sooner.",
+     "You're right — no use regretting it.",
+     "Oh, so there's still time. Good."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「今さら悔やんだところで、どうにもならないじゃない。」\n推理：「〜たところで」是“即使……也（没用）”，她在劝对方别再后悔了。接受劝告、说「悔やんでも仕方ないか」最自然。\n容易错：「どうにもならない」是已经无法挽回，不是还来得及；两个选项都用了「悔やむ」，要看意思是否接得上。",
+   "en": "Evidence: The woman says: 「今さら悔やんだところで、どうにもならないじゃない。」\nReasoning: 「〜たところで」 means \"even if you do…, it's no use\" — she's telling him to stop dwelling on it. Accepting that with 「悔やんでも仕方ないか」 is the natural reply.\nTrap: 「どうにもならない」 means it can't be undone, not that there's still time; two replies use 「悔やむ」, so check which one actually follows her point."
+  },
+  "wrong": [
+   {
+    "zh": "她说后悔没用，回答“早点后悔就好了”和劝告的意思不合。",
+    "en": "She says regret is pointless; wishing he'd regretted sooner misses that."
+   },
+   null,
+   {
+    "zh": "「どうにもならない」是无法挽回了，不是还来得及。",
+    "en": "「どうにもならない」 means nothing can be done now, not that there's still time."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n2-ck-533",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "マラソン大会、申し込んだはいいけど、全然練習してないんだよね。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "へえ、じゃあ当日は自信ありそうだね。",
+   "え、まだ申し込んでなかったの？",
+   "大丈夫？　今からでも少しずつ走ったら？"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "马拉松比赛报是报了，可我完全没练习。"
+    ],
+    "options": [
+     "哦，那比赛当天应该很有信心吧。",
+     "咦，你还没报名啊？",
+     "没问题吗？现在开始一点点跑跑怎么样？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I signed up for the marathon all right, but I haven't trained at all."
+    ],
+    "options": [
+     "Oh, then you must be feeling confident for the day.",
+     "What, you haven't signed up yet?",
+     "Will you be OK? Why not start running a little now?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「申し込んだはいいけど、全然練習してないんだよね。」\n推理：「〜たはいいけど」是“……倒是……了，可是（后面有问题）”，他报了名却没练，在担心。关心他并建议现在开始练最自然。\n容易错：他已经报名了；没练习哪来的信心。",
+   "en": "Evidence: The man says: 「申し込んだはいいけど、全然練習してないんだよね。」\nReasoning: 「〜たはいいけど」 means \"I did …, but (now there's a problem)\": he signed up but hasn't trained and is worried. Showing concern and suggesting he start now is natural.\nTrap: he has already signed up; with no training he has no reason to be confident."
+  },
+  "wrong": [
+   {
+    "zh": "他完全没练习，正在担心，说他有信心和情况矛盾。",
+    "en": "He hasn't trained at all and is worried; saying he's confident contradicts that."
+   },
+   {
+    "zh": "「申し込んだ」说明已经报名了。",
+    "en": "「申し込んだ」 shows he has already signed up."
+   },
+   null
+  ],
+  "traps": [
+   "contradiction",
+   "tense"
+  ]
+ },
+ {
+  "id": "n2-ck-534",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "この企画書、もう少し何とかならないかな。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "はい、おかげさまで何とかなりました。",
+   "すみません、もう少し何とかしてみます。",
+   "よかった、気に入ってもらえたんですね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这份企划书，能不能再改进改进？"
+    ],
+    "options": [
+     "是的，托您的福总算解决了。",
+     "对不起，我再想办法改改。",
+     "太好了，您喜欢啊。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Couldn't you do something more with this proposal?"
+    ],
+    "options": [
+     "Yes, thanks to you it all worked out.",
+     "Sorry, I'll try to do something more with it.",
+     "Great, so you like it."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「この企画書、もう少し何とかならないかな。」\n推理：「もう少し何とかならないかな」字面是“能不能再想想办法”，实际是委婉地说“写得不够好，改一改”。道歉并接下修改的回答最合适。\n容易错：「何とかなりました」也用了「何とか」，却答成了结果；把委婉的不满听成称赞。",
+   "en": "Evidence: The man says: 「この企画書、もう少し何とかならないかな。」\nReasoning: Literally \"can't something more be done?\", it's a soft way of saying \"this isn't good enough — rework it\". Apologising and taking on the revision is the right response.\nTrap: 「何とかなりました」 also uses 「何とか」 but answers as if about an outcome; hearing a soft complaint as praise."
+  },
+  "wrong": [
+   {
+    "zh": "「何とかなりました」照搬了「何とか」，但他是在要求修改，不是问结果。",
+    "en": "「何とかなりました」 echoes 「何とか」, but he's asking for revisions, not about an outcome."
+   },
+   null,
+   {
+    "zh": "他是在委婉地表示不满意，不是称赞企划书。",
+    "en": "He is politely saying it isn't good enough, not praising it."
+   }
+  ],
+  "traps": [
+   "intent",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n2-ck-535",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "こんな量、一日で終わりっこないよ。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "じゃあ、二日に分けてやろうか。",
+   "すごいね。もう終わったんだ。",
+   "うん、じゃあ今日中によろしくね。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这么多，一天怎么可能做得完啊。"
+    ],
+    "options": [
+     "那分成两天做吧？",
+     "厉害啊。已经做完了啊。",
+     "嗯，那就拜托你今天之内做完喽。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "There's no way we'll get through this much in one day."
+    ],
+    "options": [
+     "Then shall we split it over two days?",
+     "Amazing. You've finished already.",
+     "OK, then please get it done today."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「こんな量、一日で終わりっこないよ。」\n推理：「〜っこない」是“绝对不可能……”的口语。她说一天做不完，提议分两天做是自然的回应。\n容易错：把「終わりっこない」听成“结束了”；同意之后又要求今天做完，前后矛盾。",
+   "en": "Evidence: The woman says: 「こんな量、一日で終わりっこないよ。」\nReasoning: 「〜っこない」 is colloquial for \"there's no way…\". She says it can't be done in a day, so suggesting two days is natural.\nTrap: hearing 「終わりっこない」 as \"finished\"; agreeing and then demanding it today contradicts itself."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「終わりっこない」是“不可能做完”，不是已经做完了。",
+    "en": "「終わりっこない」 means it can't be finished, not that it's done."
+   },
+   {
+    "zh": "先说「うん」同意做不完，又要她今天做完，自相矛盾。",
+    "en": "Saying 「うん」 to \"impossible\" and then asking for it today contradicts itself."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "tense"
+  ]
+ },
+ {
+  "id": "n2-ck-536",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "お部屋のご用意ができ次第お呼びしますので、ロビーでお待ちいただけますか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "はい。では、のちほどお呼びします。",
+   "あ、もう入れるんですか。",
+   "わかりました。ロビーで待ってますね。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "房间一准备好就叫您，能请您在大堂稍等吗？"
+    ],
+    "options": [
+     "好的，那我稍后叫您。",
+     "啊，已经能进去了吗？",
+     "好的。我在大堂等着。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "We'll call you as soon as your room is ready — would you mind waiting in the lobby?"
+    ],
+    "options": [
+     "Yes. Then I'll call you later.",
+     "Oh, can I go in already?",
+     "Sure. I'll wait in the lobby."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「お部屋のご用意ができ次第お呼びしますので、ロビーでお待ちいただけますか。」\n推理：「〜次第」是“一……就……”，房间还没准备好。客人只要答应在大堂等就行。\n容易错：把「次第」听成已经准备好；照搬「お呼びします」，立场反了。",
+   "en": "Evidence: The woman says: 「お部屋のご用意ができ次第お呼びしますので、ロビーでお待ちいただけますか。」\nReasoning: 「〜次第」 means \"as soon as\" — the room isn't ready yet. The guest just agrees to wait in the lobby.\nTrap: hearing 「次第」 as \"it's ready\"; echoing 「お呼びします」 reverses the roles."
+  },
+  "wrong": [
+   {
+    "zh": "叫人的是酒店工作人员，客人照搬「お呼びします」立场反了。",
+    "en": "The staff will do the calling; the guest echoing 「お呼びします」 reverses the roles."
+   },
+   {
+    "zh": "「でき次第」是“准备好之后”，现在还进不去。",
+    "en": "「でき次第」 means \"once it's ready\" — he can't go in yet."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "tense"
+  ]
  }
 ]

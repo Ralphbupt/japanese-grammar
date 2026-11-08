@@ -972,5 +972,1001 @@
    "mentioned-not-asked",
    "twisted"
   ]
+ },
+ {
+  "id": "n2-ck-314",
+  "type": "gaiyou",
+  "scene": "テレビで、歯医者が話しています。",
+  "question": "歯医者は何について話していますか。",
+  "lines": [
+   [
+    "F",
+    "歯みがきというと、力を入れてごしごしこするほどきれいになる、と思っている方が多いんですが、これは逆効果なんです。強くこすると歯ぐきを傷めてしまいますし、ブラシの毛先が開いて、かえって汚れが落ちにくくなります。大切なのは力ではなく、ブラシを小さく動かして、一本一本に時間をかけることです。それから、毎回同じ場所からみがき始めるようにすると、みがき残しが減ります。もちろん、いい歯ブラシを選ぶことも大事ですが、使い方が間違っていては、せっかくの歯ブラシも意味がありません。今晩からぜひ試してみてください。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "歯のみがき方で気をつけること",
+   "歯ぐきを傷めてしまう原因",
+   "歯ブラシを選ぶときのポイント",
+   "歯みがきを毎日続けるコツ"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一位牙医在电视上讲话。",
+    "question": "牙医在讲什么？",
+    "lines": [
+     "说到刷牙，很多人以为越用力使劲刷就越干净，其实这样适得其反。用力刷会伤到牙龈，牙刷的刷毛也会张开，反而更难刷掉污垢。重要的不是力气，而是小幅度地移动牙刷，在每一颗牙上多花些时间。另外，每次都从同一个地方开始刷，就能减少漏刷的地方。当然，选一把好牙刷也很重要，但如果用法不对，再好的牙刷也没有意义。请从今晚开始试试看。"
+    ],
+    "options": [
+     "刷牙方法上要注意的地方",
+     "伤到牙龈的原因",
+     "选牙刷的要点",
+     "每天坚持刷牙的窍门"
+    ]
+   },
+   "en": {
+    "scene": "A dentist is speaking on TV.",
+    "question": "What is the dentist talking about?",
+    "lines": [
+     "Many people think that the harder you scrub when brushing, the cleaner your teeth get, but that actually backfires. Scrubbing hard damages your gums, and the bristles splay out, which makes it even harder to remove dirt. What matters isn't force but moving the brush in small strokes and spending time on each tooth. Also, if you always start brushing from the same place, you'll miss fewer spots. Of course choosing a good toothbrush matters too, but if you use it wrong, even a good brush is pointless. Please try it from tonight."
+    ],
+    "options": [
+     "What to watch out for in how you brush",
+     "What damages your gums",
+     "Points for choosing a toothbrush",
+     "Tips for keeping up brushing every day"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：「大切なのは力ではなく、ブラシを小さく動かして、一本一本に時間をかけることです。」「毎回同じ場所からみがき始めるようにすると、みがき残しが減ります。」\n推理：先否定“用力刷更干净”的想法，再讲正确做法：不用力、小幅移动、每颗牙多花时间、固定起点。最后说牙刷再好「使い方が間違っていては」也没用，全篇讲的都是刷法。\n容易错：伤牙龈只是用力刷的后果；牙刷的选择被她一笔带过。",
+   "en": "Evidence: 「大切なのは力ではなく、ブラシを小さく動かして、一本一本に時間をかけることです。」 and 「毎回同じ場所からみがき始めるようにすると、みがき残しが減ります。」\nReasoning: She rejects the idea that scrubbing hard cleans better, then gives the right way: no force, small strokes, time on each tooth, a fixed starting point. Even a good brush is useless 「使い方が間違っていては」 — the whole talk is about technique.\nTrap: damaged gums is just one result of scrubbing hard; choosing a brush is mentioned only in passing."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "伤牙龈只是用力刷的一个后果，用来说明为什么不该用力，不是主题。",
+    "en": "Damaged gums is one result of scrubbing hard, used to explain why not to — not the topic."
+   },
+   {
+    "zh": "她说选牙刷「も大事ですが」，马上转回用法，选牙刷只是顺带一提。",
+    "en": "She says choosing a brush 「も大事ですが」 and goes straight back to technique; it's a side remark."
+   },
+   {
+    "zh": "她没有讲怎样养成每天刷牙的习惯。",
+    "en": "She never talks about building a daily brushing habit."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n2-ck-315",
+  "type": "gaiyou",
+  "scene": "女の人と男の人が、スマートフォンでの支払いについて話しています。",
+  "question": "男の人はスマートフォンでの支払いについてどう思っていますか。",
+  "lines": [
+   [
+    "F",
+    "山田さんって、まだ現金で払ってるの？　今どき珍しくない？"
+   ],
+   [
+    "M",
+    "そう？　スマホでも払ってはいるよ。コンビニとか、電車とかはね。"
+   ],
+   [
+    "F",
+    "じゃあ、全部そっちにすればいいのに。ポイントもたまるし。"
+   ],
+   [
+    "M",
+    "うーん、前は全部スマホにしてたんだけど、月末に明細を見て、びっくりしたことがあってさ。一回一回は小さい金額だから、使ってるっていう感じがしないんだよね。"
+   ],
+   [
+    "F",
+    "ああ、それはあるかも。"
+   ],
+   [
+    "M",
+    "財布からお札が出ていくと、ちょっと考えるじゃない？　だから、外食とか服とか、大きい買い物は現金にしてるんだ。面倒は面倒だけど、そのほうが自分には合ってるかな。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "ポイントがたまるので、全部スマホで払いたい",
+   "使い方が難しいので、現金のほうが安心だ",
+   "便利だが、使いすぎるので現金と使い分けている",
+   "現金のほうが安全なので、スマホは使っていない"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "女人和男人在谈用手机付款的事。",
+    "question": "男人对用手机付款怎么看？",
+    "lines": [
+     "山田，你还在用现金付钱啊？现在不是很少见了吗？",
+     "是吗？我也用手机付的啊。便利店啊、坐电车啊这些。",
+     "那全换成手机不就好了。还能攒积分。",
+     "嗯……以前我全都用手机，可有一次月底看账单吓了一跳。每次金额都不大，所以没有在花钱的感觉。",
+     "啊，这倒是有可能。",
+     "钞票从钱包里出去的时候，总会想一下吧？所以在外面吃饭、买衣服这种大额的，我用现金。麻烦是麻烦，不过我觉得这样更适合我。"
+    ],
+    "options": [
+     "能攒积分，所以想全部用手机付",
+     "用法太难，用现金更放心",
+     "很方便，但会花过头，所以和现金分开用",
+     "现金更安全，所以不用手机付"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking about paying by smartphone.",
+    "question": "What does the man think about paying by smartphone?",
+    "lines": [
+     "Yamada, you still pay cash? Isn't that rare these days?",
+     "Is it? I do pay by phone too — at convenience stores, on the train and so on.",
+     "Then why not switch everything over? You'd collect points too.",
+     "Well, I used to pay for everything by phone, but once I looked at my statement at the end of the month and got a shock. Each payment is small, so it doesn't feel like you're spending.",
+     "Ah, that could be true.",
+     "When notes leave your wallet, you stop and think, right? So for eating out, clothes, bigger purchases, I use cash. It's a hassle, sure, but I think that suits me better."
+    ],
+    "options": [
+     "He wants to pay for everything by phone to collect points",
+     "It's hard to use, so cash feels safer",
+     "It's convenient, but he overspends, so he uses it alongside cash",
+     "Cash is safer, so he doesn't use his phone"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「一回一回は小さい金額だから、使ってるっていう感じがしないんだよね。」「大きい買い物は現金にしてるんだ。」\n推理：他小额（便利店、电车）用手机，大额用现金，就是“分开用”；理由是手机付款没感觉，月底发现花多了。他也承认手机方便（便利店、电车照用）。\n容易错：选项要和他的实际做法、理由两部分都对上；“攒积分”是女的说的。",
+   "en": "Evidence: The man says: 「一回一回は小さい金額だから、使ってるっていう感じがしないんだよね。」 and 「大きい買い物は現金にしてるんだ。」\nReasoning: He pays small amounts (convenience stores, trains) by phone and big ones in cash — he splits them. The reason: phone payments don't feel like spending, and his statement shocked him. He still uses the phone for small things, so he finds it handy.\nTrap: both his practice and his reason must match; collecting points is the woman's idea."
+  },
+  "wrong": [
+   {
+    "zh": "积分是女的说的；他以前全用手机，后来改了，不想再全用。",
+    "en": "Points are the woman's argument; he used to pay all by phone and stopped."
+   },
+   {
+    "zh": "他没说用法难，问题是花了也没感觉。",
+    "en": "He never says it's hard to use; the problem is not noticing the spending."
+   },
+   null,
+   {
+    "zh": "他说「スマホでも払ってはいるよ」，小额照样用手机；也没提安全问题。",
+    "en": "He says 「スマホでも払ってはいるよ」 — he still uses it for small amounts — and never mentions safety."
+   }
+  ],
+  "traps": [
+   "attitude-combo",
+   "half-right"
+  ]
+ },
+ {
+  "id": "n2-ck-316",
+  "type": "gaiyou",
+  "scene": "大学の授業で、先生が話しています。",
+  "question": "先生は何について話していますか。",
+  "lines": [
+   [
+    "M",
+    "皆さん、旅行先で昼ごはんの店を探していて、がらがらの店と、行列ができている店が並んでいたら、どちらに入りますか。たぶん、多くの人が行列のほうを選ぶでしょう。どちらの味も知らないのに、です。人は、自分で判断する材料が少ないとき、ほかの人の行動を手がかりにしようとします。「これだけの人が選んでいるんだから、きっといいものだろう」と考えるわけですね。ネットの口コミや、「売り上げナンバーワン」といった宣伝文句が効くのも、同じ心の働きによるものです。来週は、この心の働きが、かえって判断を誤らせる例を見ていきましょう。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "人気のある店の見分け方",
+   "ほかの人の選択に左右される心理",
+   "口コミや宣伝の上手な使い方",
+   "人の判断が失敗につながる例"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "大学课堂上，老师在讲话。",
+    "question": "老师在讲什么？",
+    "lines": [
+     "各位，假如你在旅游的地方找吃午饭的店，一家空空荡荡，旁边一家排着长队，你会进哪一家？恐怕很多人会选排队的那家吧。明明两家的味道都不知道。人在自己判断的依据很少的时候，会以别人的行为作为线索。也就是会想：“这么多人都选它，肯定不错吧。”网上的评价、“销量第一”之类的广告语之所以有效，也是出于同样的心理作用。下周我们来看看这种心理作用反而让人判断失误的例子。"
+    ],
+    "options": [
+     "分辨受欢迎的店的方法",
+     "受别人的选择左右的心理",
+     "巧妙利用评价和广告的方法",
+     "人的判断导致失败的例子"
+    ]
+   },
+   "en": {
+    "scene": "A teacher is speaking in a university class.",
+    "question": "What is the teacher talking about?",
+    "lines": [
+     "Everyone, say you're looking for a lunch place on a trip, and there's an empty restaurant next to one with a queue — which would you go into? Probably most of you would pick the one with the queue. Even though you don't know how either tastes. When people have little to judge by themselves, they try to use other people's behaviour as a clue. They think, \"So many people are choosing it, it must be good.\" Online reviews and slogans like \"number-one seller\" work for the same psychological reason. Next week we'll look at examples where this tendency actually leads our judgement astray."
+    ],
+    "options": [
+     "How to tell which shops are popular",
+     "The psychology of being swayed by others' choices",
+     "How to make good use of reviews and advertising",
+     "Examples of judgements leading to failure"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：「人は、自分で判断する材料が少ないとき、ほかの人の行動を手がかりにしようとします。」\n推理：排队的店只是开头的例子，口碑和广告是同一心理的另一个例子；他讲的是人为什么会跟着别人的选择走，即受别人左右的心理。\n容易错：例子（排队的店、广告）不是主题；“判断失误的例子”是下周的内容。",
+   "en": "Evidence: 「人は、自分で判断する材料が少ないとき、ほかの人の行動を手がかりにしようとします。」\nReasoning: The queue is the opening example, and reviews and ads are further examples of the same mechanism; the subject is why people follow others' choices — being swayed by them.\nTrap: the examples (the queue, ads) are not the topic; mistakes in judgement are next week's subject."
+  },
+  "wrong": [
+   {
+    "zh": "排队的店只是引出话题的例子，他没教怎么分辨好店。",
+    "en": "The queue is only an example to open the topic; he doesn't teach how to spot good shops."
+   },
+   null,
+   {
+    "zh": "口碑和广告是同一心理的例子，他没讲怎样利用它们。",
+    "en": "Reviews and ads are examples of the mechanism; he doesn't explain how to use them."
+   },
+   {
+    "zh": "「来週は」才讲判断失误的例子，今天没讲。",
+    "en": "Mistakes in judgement come 「来週は」 — not today."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n2-ck-317",
+  "type": "gaiyou",
+  "scene": "ラジオで、旅行作家が話しています。",
+  "question": "旅行作家が一番言いたいことは何ですか。",
+  "lines": [
+   [
+    "F",
+    "旅行の前に、行きたい場所や食べたいものをしっかり調べて、分刻みの予定を立てる方がいます。せっかくのお休みですから、その気持ちはよく分かりますし、私も若いころはそうでした。ただ、予定どおりに回ることばかり考えていると、電車が一本遅れただけで、いらいらしてしまうんですね。あるとき、大雨で予定がすっかりだめになって、仕方なく入った小さな食堂で、地元の方と何時間も話し込んだことがありました。今でもあの旅でいちばんよく覚えているのは、その時間なんです。それ以来、予定は一日に一つだけにして、あとは空けておくことにしています。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "出かける前に、よく調べておいたほうがいい",
+   "雨の日にも、旅行を楽しむ方法はある",
+   "地元の人と話すと、旅の思い出が増える",
+   "予定を入れすぎないほうが、旅は楽しめる"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一位旅行作家在广播里讲话。",
+    "question": "旅行作家最想说的是什么？",
+    "lines": [
+     "有的人在旅行前会把想去的地方、想吃的东西查得清清楚楚，订下精确到分钟的行程。难得的假期嘛，这种心情我很理解，我年轻时也是这样。不过，满脑子都是按计划走的话，电车晚了一班都会烦躁。有一次，一场大雨把计划全打乱了，我只好走进一家小食堂，和当地人聊了好几个小时。直到现在，那次旅行我记得最清楚的就是那段时光。从那以后，我一天只安排一件事，其余的时间都空着。"
+    ],
+    "options": [
+     "出门前最好好好查一查",
+     "下雨天也有享受旅行的方法",
+     "和当地人聊天，旅行的回忆会更多",
+     "不要把行程排得太满，旅行才更开心"
+    ]
+   },
+   "en": {
+    "scene": "A travel writer is speaking on the radio.",
+    "question": "What does the travel writer most want to say?",
+    "lines": [
+     "Some people research where they want to go and what they want to eat before a trip and plan it down to the minute. It's precious time off, so I understand that, and I was the same when I was young. But if all you think about is keeping to the plan, even one late train gets you annoyed. Once, heavy rain wrecked my plans completely, and in a little diner I ducked into, I ended up talking with locals for hours. Even now, that's what I remember best from the trip. Since then I plan only one thing a day and leave the rest free."
+    ],
+    "options": [
+     "You should research well before setting off",
+     "There are ways to enjoy travel even on rainy days",
+     "Talking with locals gives you more memories of a trip",
+     "Trips are more enjoyable if you don't overschedule"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：「それ以来、予定は一日に一つだけにして、あとは空けておくことにしています。」\n推理：她先说排满行程会因一点延误就烦躁，再讲大雨打乱计划后最难忘的经历，最后落到自己的做法：一天只排一件事，其余空着。主张是别把行程排太满。\n容易错：下雨、和当地人聊天都是她举的那段经历里的细节，不是要传达的主张。",
+   "en": "Evidence: 「それ以来、予定は一日に一つだけにして、あとは空けておくことにしています。」\nReasoning: She says tight plans make you annoyed at the smallest delay, tells of her best memory coming after rain wrecked the plan, and ends with her rule: one thing a day, the rest free. Her point is not to overschedule.\nTrap: the rain and the chat with locals are details of her anecdote, not the message."
+  },
+  "wrong": [
+   {
+    "zh": "她理解查好再去的心情，但接着用「ただ」转折，指出这样做的问题。",
+    "en": "She understands the urge to research, but 「ただ」 turns to its downside."
+   },
+   {
+    "zh": "下雨只是那次经历的起因，她没有介绍下雨天的玩法。",
+    "en": "The rain is just how the anecdote starts; she offers no rainy-day tips."
+   },
+   {
+    "zh": "和当地人聊天是那次经历的内容，用来说明空出时间的好处，不是主张本身。",
+    "en": "Talking with locals is part of the anecdote, illustrating the value of free time — not the point itself."
+   },
+   null
+  ],
+  "traps": [
+   "detail-as-topic",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n2-ck-318",
+  "type": "gaiyou",
+  "scene": "男の人と女の人が、駅前に新しくできたビルについて話しています。",
+  "question": "女の人は駅前の変化についてどう思っていますか。",
+  "lines": [
+   [
+    "M",
+    "駅前、すっかり変わったね。あんな大きいビルができて。"
+   ],
+   [
+    "F",
+    "うん。中にスーパーも病院も入ってるから、雨の日でもぬれずに用事が済むの。本当に助かってる。"
+   ],
+   [
+    "M",
+    "へえ。でも、前にあった商店街の店、ずいぶんなくなっちゃったでしょう。寂しくない？"
+   ],
+   [
+    "F",
+    "うーん、通ってた八百屋さんがなくなったのは残念だけど、あそこのご主人、年だからって、もともとやめるつもりだったらしいのよ。"
+   ],
+   [
+    "M",
+    "そうなんだ。"
+   ],
+   [
+    "F",
+    "それに、ビルの一階に、商店街のお店がいくつか移ってきてるの。パン屋さんとか、お茶屋さんとか。"
+   ],
+   [
+    "M",
+    "なるほどね。"
+   ],
+   [
+    "F",
+    "駐車場代が高いのはちょっと困るけど、私は歩いて行くし。全体としては、前よりよくなったと思うな。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "店は減ったが、便利になってよかった",
+   "便利になったが、昔の店がなくて寂しい",
+   "店が移ってきたので、前とほとんど同じだ",
+   "駐車場代が高くて、前より不便になった"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "男人和女人在谈车站前新建的大楼。",
+    "question": "女人对车站前的变化怎么看？",
+    "lines": [
+     "车站前完全变样了啊。盖了那么大一栋楼。",
+     "嗯。里面有超市也有医院，下雨天也不用淋雨就能把事办完。真是帮了大忙。",
+     "是吗。不过以前商店街的店少了好多吧。不觉得冷清吗？",
+     "嗯……我常去的那家蔬菜店没了是挺可惜的，不过听说那家老板说自己年纪大了，本来就打算关店了。",
+     "原来是这样。",
+     "而且，商店街有几家店搬到了大楼一层。面包店啊、茶叶店啊。",
+     "原来如此。",
+     "停车费贵是有点麻烦，不过我是走着去的。总的来说，我觉得比以前好了。"
+    ],
+    "options": [
+     "店虽然少了，但变方便了，挺好",
+     "变方便了，但以前的店没了很冷清",
+     "店搬过来了，所以和以前差不多",
+     "停车费贵，比以前不方便了"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking about the new building in front of the station.",
+    "question": "What does the woman think of the change in front of the station?",
+    "lines": [
+     "The area in front of the station has changed completely. A building that big.",
+     "Yeah. It has a supermarket and a clinic inside, so I can get things done without getting wet even when it rains. It really helps.",
+     "Huh. But a lot of the shops from the old shopping street are gone, aren't they? Don't you miss them?",
+     "Well, it's a shame the greengrocer I used to go to closed, but apparently the owner was planning to retire anyway because of his age.",
+     "I see.",
+     "Besides, a few shops from the shopping street have moved to the ground floor of the building. The bakery, the tea shop.",
+     "I see.",
+     "Parking being expensive is a bit of a pain, but I walk there anyway. Overall I think it's better than before."
+    ],
+    "options": [
+     "Some shops are gone, but it's more convenient, which is good",
+     "It's more convenient, but she misses the old shops",
+     "Shops moved in, so it's almost the same as before",
+     "Parking is expensive, so it's less convenient than before"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的最后说：「全体としては、前よりよくなったと思うな。」开头也说「本当に助かってる」。\n推理：她承认常去的蔬菜店没了「残念」，但马上补充老板本来就要关店、有几家店搬进了大楼；停车费贵对她影响不大。总体评价是正面的：店少了一些，但方便了。\n容易错：男的问「寂しくない？」，她并没有顺着说冷清；态度要看她最后的总结。",
+   "en": "Evidence: She ends: 「全体としては、前よりよくなったと思うな。」 and early on says 「本当に助かってる」.\nReasoning: She admits losing the greengrocer is 「残念」, but adds the owner meant to retire anyway and some shops moved into the building; expensive parking doesn't affect her. Her overall view is positive: fewer shops, but more convenient.\nTrap: the man asks 「寂しくない？」, but she doesn't agree; judge by her closing summary."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「寂しくない？」是男的问的，她回答时转向了正面的理由，结论是变好了。",
+    "en": "「寂しくない？」 is the man's question; she answers with positives and concludes it's better."
+   },
+   {
+    "zh": "她说的是有几家店搬来了，并没说和以前一样；超市、医院都是新的方便之处。",
+    "en": "Only a few shops moved in; she doesn't say nothing changed — the supermarket and clinic are new conveniences."
+   },
+   {
+    "zh": "停车费贵她说「ちょっと困る」，但自己走着去，没有说变得不方便。",
+    "en": "She calls parking 「ちょっと困る」 but walks there; she never says it's less convenient."
+   }
+  ],
+  "traps": [
+   "attitude-combo",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n2-ck-319",
+  "type": "gaiyou",
+  "scene": "テレビで、市の水道局の人が話しています。",
+  "question": "水道局の人は何について話していますか。",
+  "lines": [
+   [
+    "M",
+    "この町の水道管の多くは、五十年ほど前に作られたものです。水道管の寿命は四十年ほどと言われていますので、すでにその時期を過ぎています。実際、去年は古い管が破裂して、一部の地区で半日、水が使えなくなりました。こうしたことを防ぐには、管を新しいものに取り替えていくしかありません。ただ、その工事には大きな費用がかかります。一方で、人口が減って、水道を使う量も少なくなっているため、料金の収入は年々減っています。こうした事情から、来年の四月より、水道料金を一割ほど上げさせていただくことになりました。皆様のご理解をお願いいたします。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "水道管が破裂した事故の原因と影響",
+   "水道料金を上げなければならない理由",
+   "水を大切に使ってほしいというお願い",
+   "来年から始まる水道管の工事の予定"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "市自来水局的人在电视上讲话。",
+    "question": "自来水局的人在讲什么？",
+    "lines": [
+     "本市的自来水管大多是五十年前左右铺设的。据说水管的寿命在四十年左右，所以已经过了这个期限。实际上去年就有旧管道破裂，部分地区有半天用不了水。要防止这种情况，只能把管道逐步换成新的。可是这项工程要花很多钱。另一方面，人口减少，用水量也在减少，所以水费收入一年比一年少。由于这些情况，从明年四月起，我们将把水费上调一成左右。恳请大家理解。"
+    ],
+    "options": [
+     "水管破裂事故的原因和影响",
+     "不得不上调水费的理由",
+     "希望大家珍惜用水的请求",
+     "明年开始的水管工程的计划"
+    ]
+   },
+   "en": {
+    "scene": "Someone from the city waterworks bureau is speaking on TV.",
+    "question": "What is the person from the waterworks bureau talking about?",
+    "lines": [
+     "Most of this town's water pipes were laid about fifty years ago. Water pipes are said to last about forty years, so they're already past that point. In fact, last year an old pipe burst and some districts had no water for half a day. The only way to prevent this is to keep replacing the pipes with new ones. However, that work is very costly. At the same time, the population is shrinking and less water is being used, so revenue from charges is falling year by year. For these reasons, from next April we will be raising water charges by about ten per cent. We ask for your understanding."
+    ],
+    "options": [
+     "The cause and effects of the burst-pipe accident",
+     "Why water charges have to be raised",
+     "A request to use water carefully",
+     "The schedule for pipe work starting next year"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：「こうした事情から、来年の四月より、水道料金を一割ほど上げさせていただくことになりました。」\n推理：管道老化、需要更换、工程费用高、收入减少，这些都是「こうした事情」，全部是为最后的涨价作说明。主旨是涨价的理由。\n容易错：管道破裂和停水是举的实例；更换工程是原因之一，他没讲具体的工程计划。",
+   "en": "Evidence: 「こうした事情から、来年の四月より、水道料金を一割ほど上げさせていただくことになりました。」\nReasoning: Ageing pipes, the need to replace them, the high cost and falling revenue are all 「こうした事情」 leading up to the price rise. The talk explains why charges go up.\nTrap: the burst pipe is an example; replacement is one reason, and no work schedule is given."
+  },
+  "wrong": [
+   {
+    "zh": "管道破裂是说明管道老化的实例，原因（超过寿命）也只是铺垫。",
+    "en": "The burst pipe illustrates ageing pipes; its cause is only set-up."
+   },
+   null,
+   {
+    "zh": "他提到用水量减少，是收入减少的原因，不是在呼吁节水。",
+    "en": "Lower water use is mentioned as a cause of falling revenue, not a call to save water."
+   },
+   {
+    "zh": "他说需要换管道，但没说明年开始施工，明年四月开始的是涨价。",
+    "en": "He says pipes must be replaced but gives no start date; what begins next April is the price rise."
+   }
+  ],
+  "traps": [
+   "partial-content",
+   "detail-as-topic"
+  ]
+ },
+ {
+  "id": "n2-ck-320",
+  "type": "gaiyou",
+  "scene": "会社で、女の人と男の人が話しています。",
+  "question": "男の人は副業についてどう思っていますか。",
+  "lines": [
+   [
+    "F",
+    "ねえ、うちの会社、来月から副業オーケーになるって聞いた？"
+   ],
+   [
+    "M",
+    "うん、メール来てたね。"
+   ],
+   [
+    "F",
+    "私、週末に翻訳の仕事でもやろうかなって思ってるんだ。山本さんは？　パソコン得意だし、ホームページ作りとか、頼まれたらできるんじゃない？"
+   ],
+   [
+    "M",
+    "ああ、経理の佐藤さんなんか、もう始めてるらしいね。本業にも役に立つって言ってた。"
+   ],
+   [
+    "F",
+    "でしょ？　お小遣いにもなるし。"
+   ],
+   [
+    "M",
+    "でも、僕はいいかな。平日はけっこう遅くまで働いてるし、土日ぐらいは、何も考えないで家族と過ごしたいんだよ。お金がもう少しあったらなあとは思うけど、それで疲れて、平日の仕事に響いたら意味ないしね。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "収入が増えるので、ぜひやってみたい",
+   "本業に役立つなら、始めてもいい",
+   "休みを使ってまで、やろうとは思わない",
+   "会社の評価が下がりそうなので、やらない"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在公司，女人和男人在说话。",
+    "question": "男人对副业怎么看？",
+    "lines": [
+     "哎，听说咱们公司从下个月起允许做副业了？",
+     "嗯，收到邮件了。",
+     "我在想周末接点翻译的活儿。山本你呢？你电脑那么厉害，要是有人找你做网页什么的，你应该能做吧？",
+     "啊，会计部的佐藤好像已经开始做了。说对本职工作也有帮助。",
+     "是吧？还能当零花钱。",
+     "不过我就算了吧。平时工作到挺晚的，至少周末想什么都不想，和家人一起过。我也想过钱再多一点就好了，可要是因此累着了，影响平时的工作，那就没意义了。"
+    ],
+    "options": [
+     "能增加收入，很想试试",
+     "如果对本职工作有帮助，可以开始做",
+     "不想占用休息时间去做",
+     "好像会降低公司的评价，所以不做"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking at work.",
+    "question": "What does the man think about side jobs?",
+    "lines": [
+     "Hey, did you hear the company's allowing side jobs from next month?",
+     "Yeah, there was an email.",
+     "I'm thinking of doing some translation work at weekends. What about you, Yamamoto? You're good with computers — you could make websites if someone asked, couldn't you?",
+     "Oh, Sato in accounting has apparently started already. He said it helps with his main job too.",
+     "Right? And it's extra pocket money.",
+     "But I'll pass. I work pretty late on weekdays, and at weekends at least I want to spend time with my family without thinking about anything. I do wish I had a bit more money, but if it tired me out and affected my weekday work, there'd be no point."
+    ],
+    "options": [
+     "It would raise his income, so he really wants to try",
+     "If it helps his main job, he might start",
+     "He doesn't intend to give up his days off for it",
+     "It might hurt his standing at the company, so he won't"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「でも、僕はいいかな。」「土日ぐらいは、何も考えないで家族と過ごしたいんだよ。」\n推理：「僕はいいかな」是委婉的拒绝。理由是周末想陪家人休息，累了还会影响本职工作。他不做副业，是因为不想占用休息时间。\n容易错：“对本职有帮助”是佐藤说的；他想过钱多点好，但结论是不做。",
+   "en": "Evidence: The man says: 「でも、僕はいいかな。」 and 「土日ぐらいは、何も考えないで家族と過ごしたいんだよ。」\nReasoning: 「僕はいいかな」 is a soft refusal. He wants weekends to rest with family, and tiredness would hurt his main job. He won't do it because he won't give up his time off.\nTrap: \"helps the main job\" is Sato's view; he wishes for more money but still declines."
+  },
+  "wrong": [
+   {
+    "zh": "他虽然说「お金がもう少しあったらなあ」，但结论是「僕はいいかな」，不做。",
+    "en": "He says 「お金がもう少しあったらなあ」 but concludes 「僕はいいかな」 — he won't."
+   },
+   {
+    "zh": "“对本职工作有帮助”是佐藤说的话，他自己并没有因此想做。",
+    "en": "\"Helps the main job\" is what Sato said; it doesn't make him want to."
+   },
+   null,
+   {
+    "zh": "他担心的是累了影响工作，不是公司对副业的评价。",
+    "en": "His worry is tiredness affecting his work, not how the company would view it."
+   }
+  ],
+  "traps": [
+   "attitude-combo",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n2-ck-321",
+  "type": "gaiyou",
+  "scene": "ラジオで、町の時計店の主人が話しています。",
+  "question": "時計店の主人は何について話していますか。",
+  "lines": [
+   [
+    "M",
+    "うちには、親の代から使っているという腕時計が、よく修理に持ち込まれます。正直に申し上げると、修理代のほうが、新しい時計を買うより高くつくこともあるんです。それでも直してほしいとおっしゃる。理由を伺うと、「父が就職したときに買ったものだから」とか、「これをしていると、大事な日でも落ち着けるんだ」とか、皆さん、それぞれの思い出を話してくださいます。動くようになった時計をお返しすると、本当にうれしそうな顔をなさるんですよ。時計は時間を知るための道具ですが、それだけじゃない。持つ人が過ごしてきた時間が、そのまま詰まっているんだなと、この仕事をしていて思います。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "時計の修理という仕事の難しさ",
+   "修理より買い替えのほうが安い理由",
+   "時計を長持ちさせる使い方",
+   "持ち主にとって古い時計が持つ意味"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "镇上一家钟表店的老板在广播里讲话。",
+    "question": "钟表店老板在讲什么？",
+    "lines": [
+     "常有人把说是从父母那一辈就在用的手表拿到我店里来修。老实说，有时候修理费比买一块新表还贵。可他们还是希望修好。问起原因，有人说“这是我父亲参加工作时买的”，有人说“戴着它，重要的日子也能镇定下来”，每个人都会讲起各自的回忆。把修好、又走起来的表还给他们的时候，他们脸上真的很高兴。手表是用来看时间的工具，但不只是这样。做这份工作，我觉得表里装着的，正是主人一路走过来的时光。"
+    ],
+    "options": [
+     "修表这份工作的难处",
+     "买新的比修理便宜的原因",
+     "让手表用得长久的方法",
+     "旧手表对主人的意义"
+    ]
+   },
+   "en": {
+    "scene": "The owner of a local watch shop is speaking on the radio.",
+    "question": "What is the watch-shop owner talking about?",
+    "lines": [
+     "People often bring me wristwatches to repair that they say have been in use since their parents' day. To be honest, sometimes the repair costs more than buying a new watch. They still want it fixed. When I ask why, they tell me their own memories — \"my father bought it when he started work\", or \"wearing it keeps me calm even on big days\". When I give back a watch that's running again, they look truly happy. A watch is a tool for telling the time, but it isn't only that. Doing this work, I feel it holds all the time its owner has lived through."
+    ],
+    "options": [
+     "How hard the job of repairing watches is",
+     "Why replacing is cheaper than repairing",
+     "How to use a watch so it lasts",
+     "What an old watch means to its owner"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：「持つ人が過ごしてきた時間が、そのまま詰まっているんだなと、この仕事をしていて思います。」\n推理：修理费比买新的贵，客人仍要修，因为表里有父亲、重要日子之类的回忆。最后一句点明：表对主人不只是工具，装着他们的时光。主旨是旧表对主人的意义。\n容易错：修理费贵只是引出“即使这样也要修”的铺垫。",
+   "en": "Evidence: 「持つ人が過ごしてきた時間が、そのまま詰まっているんだなと、この仕事をしていて思います。」\nReasoning: Repair can cost more than a new watch, yet customers insist because of memories (a father, big days). His last line sums up: to its owner a watch is more than a tool — it holds their time. The topic is what old watches mean to their owners.\nTrap: the high repair cost only sets up \"they still want it fixed\"."
+  },
+  "wrong": [
+   {
+    "zh": "他没讲修理技术上的难处，讲的是客人的心情。",
+    "en": "He doesn't talk about technical difficulty, but about customers' feelings."
+   },
+   {
+    "zh": "修理费有时更贵只是事实铺垫，他没解释为什么买新的便宜。",
+    "en": "That repairs can cost more is set-up; he doesn't explain why new watches are cheaper."
+   },
+   {
+    "zh": "他没有介绍保养手表的方法。",
+    "en": "He gives no advice on looking after a watch."
+   },
+   null
+  ],
+  "traps": [
+   "detail-as-topic",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n2-ck-322",
+  "type": "gaiyou",
+  "scene": "テレビで、スポーツのトレーナーが話しています。",
+  "question": "トレーナーは何について話していますか。",
+  "lines": [
+   [
+    "F",
+    "運動の前に、体をゆっくり伸ばすストレッチをしている方、多いと思います。けがを防ぐためにと、学校で教わった方もいるでしょう。ところが最近の研究では、運動の直前に筋肉を長い時間伸ばすと、かえって力が出にくくなることが分かってきました。ですから、運動の前は、その場で足踏みをしたり、腕を大きく回したりして、体を温めるほうがいいんです。一方、じっくり伸ばすストレッチは、運動のあと、疲れた筋肉をほぐすのに向いています。同じ体を動かすことでも、運動の前とあとでは、やり方を変えたほうがいいというわけです。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "運動の前後での体の動かし方の違い",
+   "けがをしないための筋肉の鍛え方",
+   "学校で教わったストレッチの問題点",
+   "疲れた筋肉を早く回復させる方法"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一位运动教练在电视上讲话。",
+    "question": "教练在讲什么？",
+    "lines": [
+     "我想有很多人在运动前做慢慢拉伸身体的伸展运动。也有人是在学校学的，说是为了防止受伤。可是最近的研究发现，在运动前长时间拉伸肌肉，反而更难使出力气。所以，运动前最好原地踏步、大幅度转动手臂，让身体热起来。而慢慢拉伸的伸展运动，适合在运动后放松疲劳的肌肉。也就是说，同样是活动身体，运动前和运动后最好换一种做法。"
+    ],
+    "options": [
+     "运动前后活动身体方式的不同",
+     "为了不受伤锻炼肌肉的方法",
+     "学校教的伸展运动的问题",
+     "让疲劳的肌肉快速恢复的方法"
+    ]
+   },
+   "en": {
+    "scene": "A sports trainer is speaking on TV.",
+    "question": "What is the trainer talking about?",
+    "lines": [
+     "I think many of you do slow stretches before exercise. Some of you may have learned it at school, to prevent injury. But recent research has shown that stretching your muscles for a long time just before exercise actually makes it harder to produce power. So before exercise it's better to warm up by marching on the spot or swinging your arms in big circles. Slow, deep stretching, on the other hand, is suited to loosening tired muscles after exercise. In other words, even with the same kind of movement, it's better to change how you do it before and after exercise."
+    ],
+    "options": [
+     "The difference in how to move your body before and after exercise",
+     "How to build muscles to avoid injury",
+     "The problem with the stretches taught at school",
+     "How to help tired muscles recover quickly"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：「同じ体を動かすことでも、運動の前とあとでは、やり方を変えたほうがいいというわけです。」\n推理：运动前用踏步、转臂热身，运动后才做慢慢拉伸。前后各讲一半，最后用「というわけです」总结：前后做法要不同。\n容易错：只讲运动前（学校教的做法有问题）或只讲运动后（放松肌肉）都只覆盖一半。",
+   "en": "Evidence: 「同じ体を動かすことでも、運動の前とあとでは、やり方を変えたほうがいいというわけです。」\nReasoning: Before exercise, warm up by marching and swinging arms; slow stretches come after. Half the talk is about before, half about after, and 「というわけです」 sums up: do them differently.\nTrap: an option about only the before part (the school method) or only the after part (loosening muscles) covers half."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "她讲的是热身和放松，没讲怎样锻炼肌肉；防止受伤只是旧观念的理由。",
+    "en": "She talks about warming up and loosening, not building muscle; injury prevention is only the old rationale."
+   },
+   {
+    "zh": "学校教的做法是开头的铺垫，只涉及运动前这一半。",
+    "en": "The school method is the opening set-up and covers only the \"before\" half."
+   },
+   {
+    "zh": "放松疲劳的肌肉只是运动后那一半的内容。",
+    "en": "Loosening tired muscles is only the \"after\" half."
+   }
+  ],
+  "traps": [
+   "partial-content",
+   "detail-as-topic"
+  ]
+ },
+ {
+  "id": "n2-ck-323",
+  "type": "gaiyou",
+  "scene": "男の人と女の人が、料理の材料を届けるサービスについて話しています。",
+  "question": "女の人はこのサービスについてどう思っていますか。",
+  "lines": [
+   [
+    "M",
+    "最近、料理の材料が届くサービス、使ってるんだって？"
+   ],
+   [
+    "F",
+    "うん。必要な分だけ切ってある野菜とか、調味料とかが、作り方と一緒に届くの。"
+   ],
+   [
+    "M",
+    "へえ、便利そうだね。"
+   ],
+   [
+    "F",
+    "買い物に行かなくていいし、献立を考えなくていいし、それはすごく助かってる。作ったことのない料理にも挑戦できるしね。"
+   ],
+   [
+    "M",
+    "じゃあ、いいことばっかりだね。"
+   ],
+   [
+    "F",
+    "それがね、材料が一回分ずつ、全部ビニールの袋に入ってるのよ。一回作るたびに、ごみ箱がいっぱいになっちゃって、それがどうも気になって……。値段がスーパーより少し高いのは、手間を考えれば仕方ないと思うんだけど。"
+   ],
+   [
+    "M",
+    "ああ、なるほどね。"
+   ],
+   [
+    "F",
+    "だから、毎日はちょっとね。これからは、忙しい週だけにしようかなって思ってる。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "値段が高いので、もう使わないつもりだ",
+   "便利だが、ごみが多いので回数を減らしたい",
+   "新しい料理が作れるので、毎日使いたい",
+   "便利だが、料理が上達しないのが不満だ"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "男人和女人在谈配送做饭食材的服务。",
+    "question": "女人对这个服务怎么看？",
+    "lines": [
+     "听说你最近在用送食材的服务？",
+     "嗯。切好、只有需要分量的蔬菜，还有调料，和做法一起送来。",
+     "哦，听着挺方便。",
+     "不用去买菜，也不用想菜单，这点真帮了大忙。还能挑战没做过的菜。",
+     "那全是好处啊。",
+     "问题是，食材每次一份、全都装在塑料袋里。每做一次，垃圾桶就满了，这一点我总是很在意……。价格比超市贵一点，考虑到省事，我觉得也没办法。",
+     "啊，原来如此。",
+     "所以每天用就有点……。我打算以后只在忙的那几周用。"
+    ],
+    "options": [
+     "价格贵，打算不再用了",
+     "很方便，但垃圾多，想减少使用次数",
+     "能做新菜，想每天用",
+     "很方便，但厨艺没长进，很不满"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking about a service that delivers cooking ingredients.",
+    "question": "What does the woman think of this service?",
+    "lines": [
+     "I hear you've been using one of those services that delivers cooking ingredients?",
+     "Yeah. Vegetables already cut to just the amount you need, seasonings and so on arrive with the recipe.",
+     "Huh, sounds handy.",
+     "I don't have to go shopping or plan meals, and that's a huge help. And I can try dishes I've never made.",
+     "Sounds like all upside.",
+     "The thing is, each portion of ingredients comes in its own plastic bag. Every time I cook, the bin fills up, and that really bothers me… The price being a bit higher than the supermarket — I think that's fair given the effort saved.",
+     "Ah, I see.",
+     "So every day is a bit much. From now on I think I'll use it only in busy weeks."
+    ],
+    "options": [
+     "It's expensive, so she won't use it any more",
+     "It's convenient, but there's a lot of waste, so she wants to use it less",
+     "She can make new dishes, so she wants to use it every day",
+     "It's convenient, but she's unhappy her cooking doesn't improve"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「一回作るたびに、ごみ箱がいっぱいになっちゃって、それがどうも気になって……。」最后说：「忙しい週だけにしようかなって思ってる。」\n推理：她肯定方便（不用买菜、不用想菜单）；不满的是塑料垃圾太多，所以打算只在忙的时候用，即减少次数。\n容易错：价格她说「仕方ない」，不是问题；她没说厨艺不长进。",
+   "en": "Evidence: She says: 「一回作るたびに、ごみ箱がいっぱいになっちゃって、それがどうも気になって……。」 and ends: 「忙しい週だけにしようかなって思ってる。」\nReasoning: She values the convenience (no shopping, no meal planning); what bothers her is the plastic waste, so she'll use it only in busy weeks — less often.\nTrap: she calls the price 「仕方ない」, so it's not the issue; she never says her cooking doesn't improve."
+  },
+  "wrong": [
+   {
+    "zh": "价格她认为「手間を考えれば仕方ない」，而且打算继续在忙的时候用。",
+    "en": "She thinks the price is 「手間を考えれば仕方ない」 and will keep using it in busy weeks."
+   },
+   null,
+   {
+    "zh": "能挑战新菜是优点之一，但她明确说「毎日はちょっとね」。",
+    "en": "Trying new dishes is a plus, but she says 「毎日はちょっとね」."
+   },
+   {
+    "zh": "她说能挑战没做过的菜，没有抱怨厨艺不长进。",
+    "en": "She says she can try new dishes; she never complains about not improving."
+   }
+  ],
+  "traps": [
+   "attitude-combo",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n2-ck-324",
+  "type": "gaiyou",
+  "scene": "市民ホールで、登山家が講演しています。",
+  "question": "登山家が一番言いたいことは何ですか。",
+  "lines": [
+   [
+    "F",
+    "山に登る人にとって、頂上に立つことは大きな目標です。私も、何か月も準備をして、あと少しというところで引き返したことが何度もあります。天気が急に崩れたり、仲間の体調が思わしくなかったり。そのときは本当に悔しくて、何のためにここまで来たんだろうと思いました。でも、山はなくなりません。無理をして事故にでもあえば、二度と登れなくなるかもしれない。引き返すと決めるのは、進むことより、ずっと勇気がいるんです。登山に限らず、仕事でも何でも、やめるという判断ができる人こそ、また次に挑戦できるのだと思います。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "目標を達成するには、十分な準備が必要だ",
+   "山の天気は変わりやすいので、注意が必要だ",
+   "途中でやめると決める勇気を持つべきだ",
+   "仲間と協力すれば、困難を乗り越えられる"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在市民会馆，一位登山家在演讲。",
+    "question": "登山家最想说的是什么？",
+    "lines": [
+     "对登山的人来说，站上山顶是个很大的目标。我也有过好多次，花了好几个月准备，却在只差一点的地方折返。有时是天气突然变坏，有时是同伴身体状况不好。那时真的很不甘心，想着我到底是为了什么来到这里的。可是，山不会消失。要是勉强前进出了事故，也许就再也登不了山了。决定折返，比继续前进需要大得多的勇气。不只是登山，工作也好，什么也好，我觉得正是能做出放弃这个判断的人，才能再去挑战下一次。"
+    ],
+    "options": [
+     "要实现目标，需要充分的准备",
+     "山上天气多变，需要注意",
+     "应该有决定中途放弃的勇气",
+     "和同伴合作就能克服困难"
+    ]
+   },
+   "en": {
+    "scene": "A mountaineer is giving a talk at a civic hall.",
+    "question": "What does the mountaineer most want to say?",
+    "lines": [
+     "For climbers, standing on the summit is a big goal. Many times I've prepared for months and then turned back when I was nearly there. The weather suddenly turned, or a teammate wasn't well. At those times I was really frustrated and wondered what I'd come all that way for. But the mountain isn't going anywhere. If you push on and have an accident, you may never climb again. Deciding to turn back takes far more courage than going on. Not just in climbing — in work or anything else — I think it's precisely people who can decide to stop who get to try again next time."
+    ],
+    "options": [
+     "Reaching a goal needs thorough preparation",
+     "Mountain weather changes easily, so be careful",
+     "You should have the courage to decide to stop partway",
+     "Working with others lets you overcome difficulties"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：「引き返すと決めるのは、進むことより、ずっと勇気がいるんです。」「やめるという判断ができる人こそ、また次に挑戦できるのだと思います。」\n推理：她用自己多次在山顶前折返的经历，说明决定放弃需要勇气，并推广到工作等一切事情。主张是要有中途放弃的勇气。\n容易错：准备、天气、同伴都是经历中的细节，不是主张。",
+   "en": "Evidence: 「引き返すと決めるのは、進むことより、ずっと勇気がいるんです。」 and 「やめるという判断ができる人こそ、また次に挑戦できるのだと思います。」\nReasoning: From her many turn-backs near the summit, she argues that deciding to stop takes courage, and extends it to work and everything else.\nTrap: preparation, weather and teammates are details of her stories, not her message."
+  },
+  "wrong": [
+   {
+    "zh": "「何か月も準備をして」是经历的一部分，她强调的是准备好了也要敢于折返。",
+    "en": "「何か月も準備をして」 is part of her story; her point is to turn back even after preparing."
+   },
+   {
+    "zh": "天气变坏只是折返的原因之一，不是她要传达的主张。",
+    "en": "Bad weather is just one reason she turned back, not her message."
+   },
+   null,
+   {
+    "zh": "同伴只出现在“身体不好”的例子里，她没讲合作。",
+    "en": "Teammates appear only as \"not well\"; she says nothing about cooperation."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n2-ck-325",
+  "type": "gaiyou",
+  "scene": "テレビで、言葉の研究者が話しています。",
+  "question": "研究者は何について話していますか。",
+  "lines": [
+   [
+    "M",
+    "「見れる」「来れる」のような、いわゆる「ら抜き言葉」は、よく言葉の乱れの例として取り上げられます。ですが、この言い方は、百年近く前から使われていたことが分かっています。それに、「見られる」だと、「見ることができる」という意味なのか、「誰かに見られる」という意味なのか、すぐには区別がつかないこともありますよね。「見れる」と言えば、できるという意味だとはっきりします。つまり、言葉が分かりやすい方向へ変わってきた結果だとも考えられるわけです。新しい言い方を、すぐに間違いだと決めつけないでほしいと思います。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "ら抜き言葉が誤りとは言えない理由",
+   "ら抜き言葉が使われ始めた時代",
+   "正しい日本語を使うことの大切さ",
+   "「見られる」が持つ二つの意味"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一位语言研究者在电视上讲话。",
+    "question": "研究者在讲什么？",
+    "lines": [
+     "像「見れる」「来れる」这样所谓的“省略ら的说法”，常被当作语言混乱的例子。可是，已经查明这种说法近一百年前就有人用了。而且，说「見られる」的话，有时一下子分不清是“能看”的意思，还是“被谁看”的意思吧。说「見れる」，就能明确是“能”的意思。也就是说，也可以认为这是语言朝着更好懂的方向变化的结果。我希望大家不要一听到新的说法就断定它是错的。"
+    ],
+    "options": [
+     "不能说省略ら的说法是错误的理由",
+     "开始使用省略ら的说法的年代",
+     "使用正确日语的重要性",
+     "「見られる」的两种意思"
+    ]
+   },
+   "en": {
+    "scene": "A language researcher is speaking on TV.",
+    "question": "What is the researcher talking about?",
+    "lines": [
+     "So-called \"ra-dropping\" forms like 「見れる」 and 「来れる」 are often held up as examples of the language going wrong. But it's known that this usage goes back nearly a hundred years. Besides, with 「見られる」, you sometimes can't tell at once whether it means \"can see\" or \"be seen by someone\", can you? Say 「見れる」 and it's clear it means \"can\". In other words, it can be seen as the result of the language changing in an easier-to-understand direction. I'd ask people not to write off new expressions as mistakes straight away."
+    ],
+    "options": [
+     "Why ra-dropping forms can't be called wrong",
+     "The era when ra-dropping forms began",
+     "The importance of using correct Japanese",
+     "The two meanings of 「見られる」"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：「新しい言い方を、すぐに間違いだと決めつけないでほしいと思います。」\n推理：他举出两个理由：近百年前就有；「見れる」能消除「見られる」的歧义，是变得更好懂。两点都在为省略ら的说法辩护，主旨是它不能算错。\n容易错：“近百年前”和“两种意思”都只是论据之一。",
+   "en": "Evidence: 「新しい言い方を、すぐに間違いだと決めつけないでほしいと思います。」\nReasoning: He gives two reasons: the usage is nearly a century old, and 「見れる」 removes the ambiguity of 「見られる」, making the language clearer. Both defend the forms — the topic is why they aren't simply wrong.\nTrap: \"a hundred years ago\" and \"two meanings\" are each just one supporting point."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「百年近く前から」只是论据之一，他没有专门讲开始的年代。",
+    "en": "「百年近く前から」 is one supporting point; he doesn't focus on when it began."
+   },
+   {
+    "zh": "他的立场相反：不要急于断定新说法是错的。",
+    "en": "His stance is the opposite: don't rush to call new forms wrong."
+   },
+   {
+    "zh": "两种意思的区别是第二个论据，用来说明「見れる」更清楚。",
+    "en": "The two meanings are his second argument, showing 「見れる」 is clearer."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "attitude-combo"
+  ]
  }
 ]
