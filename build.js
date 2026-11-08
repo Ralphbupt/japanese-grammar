@@ -227,6 +227,52 @@ const APP_PREFS_JS = `(function(){
   if (isEn) document.body.classList.add('lang-en');
 })();`;
 
+// Progress card on the home page and the level overviews: where the reader
+// left off, how many missed questions are due, the streak and the days to the
+// exam — all from quiz.js's localStorage jp_quiz_v1 (no request). Runs inline
+// right after its empty <div>, before first paint; a first-time visitor (no
+// jp_quiz_v1) gets nothing, so nothing moves. data-level limits it to one
+// level; data-pages lists the practice pages that exist ("n3-reading" …).
+const JLPT_EXAM_DATE = [2026, 12, 6];
+const PROGRESS_JS = `(function(){
+  var el = document.getElementById('jp-progress'), S;
+  try { S = JSON.parse(localStorage.getItem('jp_quiz_v1')); } catch (e) {}
+  if (!el || !S || S.v !== 1) return;
+  var only = el.getAttribute('data-level'), pages = ' ' + el.getAttribute('data-pages') + ' ';
+  var fl = document.documentElement.getAttribute('data-force-lang'), base = fl === 'zh' ? '${SITE_PATH}zh/' : '${SITE_PATH}';
+  var now = Date.now() / 1000, last = null, lt = 0, A = S.answers || {}, M = S.mock || {};
+  var lvOf = function (id) { var m = /^n([1-5])-/.exec(id); return m ? 'N' + m[1] : null; };
+  for (var id in A) {
+    var a = A[id], x = a && a[a.length - 1], l = lvOf(id);
+    if (l && (!only || l === only) && x && x.t > lt) { lt = x.t; last = id; }
+  }
+  for (var k in M) {
+    var c = M[k] && M[k].current, l2 = lvOf(k);
+    if (c && c.start && l2 && (!only || l2 === only) && c.start / 1000 > lt && now - c.start / 1000 < 7 * 86400) { lt = c.start / 1000; last = k; }
+  }
+  if (!last) return;
+  var lv = lvOf(last), lo = lv.toLowerCase();
+  var kind = /-m(ock-)?\\d+(-|$)/.test(last) ? 'mock-test' : /-ck-/.test(last) ? 'listening' : /-mg-/.test(last) ? 'vocabulary' : /-dk-/.test(last) ? 'reading' : 'practice';
+  if (pages.indexOf(' ' + lo + '-' + kind + ' ') < 0) kind = 'practice';
+  var names = { practice: ['练习', 'practice'], listening: ['听力', 'listening'], reading: ['阅读', 'reading'], vocabulary: ['词汇', 'vocabulary'], 'mock-test': ['模拟题', 'mock test'] }[kind];
+  var due = 0, R = S.review || {};
+  for (var r in R) if (lvOf(r) === lv && R[r] && R[r].due <= now) due++;
+  var day = function (d) { return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); };
+  var streak = 0, d = new Date(), D = S.days || {};
+  if (!D[day(d)]) d.setDate(d.getDate() - 1);
+  while (D[day(d)]) { streak++; d.setDate(d.getDate() - 1); }
+  var t0 = new Date(); t0.setHours(0, 0, 0, 0);
+  var left = Math.round((new Date(${JLPT_EXAM_DATE[0]}, ${JLPT_EXAM_DATE[1] - 1}, ${JLPT_EXAM_DATE[2]}) - t0) / 864e5);
+  var b = function (zh, en) { return fl ? (fl === 'zh' ? zh : en) : '<span class="lang-zh">' + zh + '</span><span class="lang-en">' + en + '</span>'; };
+  var h = '<a class="jp-prog-go" href="' + base + lo + '-' + kind + '/">' + b('继续 ' + lv + ' ' + names[0] + ' →', 'Continue ' + lv + ' ' + names[1] + ' →') + '</a>';
+  if (due) h += '<a href="' + base + lo + '-practice/">' + b(due + ' 道错题待复习', due + ' to review') + '</a>';
+  if (streak > 1) h += '<span>' + b('连续 ' + streak + ' 天', streak + '-day streak') + '</span>';
+  if (left >= 0 && left <= 150) h += '<span>' + (left ? b('距 ${JLPT_EXAM_DATE[1]} 月 ${JLPT_EXAM_DATE[2]} 日考试 ' + left + ' 天', left + ' days to the ' + '${["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][JLPT_EXAM_DATE[1] - 1]} ${JLPT_EXAM_DATE[2]}' + ' exam') : b('今天考试，加油！', 'Exam day — good luck!')) + '</span>';
+  el.innerHTML = h;
+  el.hidden = false;
+})();`;
+const progressCardHtml = (level, pageIds) => `<div id="jp-progress" class="jp-progress" hidden${level ? ` data-level="${level}"` : ""} data-pages="${pageIds.join(" ")}"></div><script>${PROGRESS_JS}</script>`;
+
 // <head> of single-language pages: a reader whose language is another one
 // (saved preference, or a zh browser with none saved landing on the root
 // English page) goes to that language's copy before anything paints. Only the
@@ -2613,7 +2659,7 @@ ${SETTINGS_SCRIPT}`;
       <a class="btn-primary" href="lesson01/"><span class="lang-zh">从第 1 课开始</span><span class="lang-en">Start with lesson 1</span></a>`}
       <a class="btn-secondary" href="anki/"><span class="lang-zh">下载 Anki 卡组</span><span class="lang-en">Get the Anki decks</span></a>
     </div>
-  </header>${homePracticeHtml}
+  </header>${quizPages("N5").length ? progressCardHtml("", QUIZ_LEVELS.flatMap((lv) => quizPages(lv).map((q) => q.href.replace(SITE_PATH, "").replace(/\/$/, "")))) : ""}${homePracticeHtml}
   <section class="home-levels">
     <h2><span class="lang-zh">按级别学习</span><span class="lang-en">Browse by JLPT level</span></h2>
     <div class="level-grid">
@@ -3365,7 +3411,8 @@ ${sidebarMarkupHtml}
   </nav>
   <h1><span class="lang-zh">JLPT ${level} 语法清单 - ${lessons.length} 课 ${totalPoints}+ 语法点速查</span><span class="lang-en">JLPT ${level} Grammar — ${lessons.length} Lessons, ${totalPoints}+ Grammar Points</span></h1>
   <p class="overview-intro"><span class="lang-zh">${LEVEL_INTRO[level]}</span><span class="lang-en">${LEVEL_INTRO_EN[level]}</span></p>${quizPages(level).length ? `
-  <p class="ov-quiz">${quizPages(level).map((q) => `<a href="${q.href}"><span class="lang-zh">${q.zh}</span><span class="lang-en">${q.en}</span></a>`).join("")}</p>` : ""}
+  <p class="ov-quiz">${quizPages(level).map((q) => `<a href="${q.href}"><span class="lang-zh">${q.zh}</span><span class="lang-en">${q.en}</span></a>`).join("")}</p>
+  ${progressCardHtml(level, quizPages(level).map((q) => q.href.replace(SITE_PATH, "").replace(/\/$/, "")))}` : ""}
   <div class="level-stats">
     <div class="level-stat"><strong>${lessons.length}</strong><span><span class="lang-zh">课</span><span class="lang-en">lessons</span></span></div>
     <div class="level-stat"><strong>${totalPoints}+</strong><span><span class="lang-zh">语法点</span><span class="lang-en">points</span></span></div>
@@ -3795,6 +3842,18 @@ ${AI_SCRIPT}
     fs.writeFileSync(path.join(__dirname, "dist", "quiz", name), json, "utf-8");
     return `${SITE_PATH}quiz/${name}?v=${require("crypto").createHash("md5").update(json).digest("hex").slice(0, 8)}`;
   };
+  // One copy per page language: every { zh, en } text pair keeps only that
+  // language (a page shows one language, data-force-lang), so /n3-practice/
+  // doesn't download the Chinese explanations too. Ids and shape are unchanged.
+  const langOnly = (o, code) => {
+    if (Array.isArray(o)) return o.map((x) => langOnly(x, code));
+    if (!o || typeof o !== "object") return o;
+    const pair = "zh" in o && "en" in o, out = {};
+    for (const [k, v] of Object.entries(o)) if (!(pair && k !== code && PAGE_LANGS.some((l) => l.code === k))) out[k] = langOnly(v, code);
+    return out;
+  };
+  // name "n3.json" → { en: "/quiz/n3.en.json?v=…", zh: "/quiz/n3.zh.json?v=…" }
+  const writeQuizDataByLang = (name, obj) => Object.fromEntries(PAGE_LANGS.map((l) => [l.code, writeQuizData(name.replace(/\.json$/, `.${l.code}.json`), langOnly(obj, l.code))]));
   const renderQuiz = (lang, m, lv, level, appAttrs, preload) => `<!DOCTYPE html>
 <html lang="${lang.htmlLang}"${lv.htmlAttrs}>
 <head>
@@ -3842,6 +3901,17 @@ ${CSS}
 .quiz-about th, .quiz-about td { border: 1px solid var(--border); padding: .35rem .7rem; text-align: left; }
 .quiz-about dt { font-weight: 600; margin-top: .9rem; }
 .quiz-about dd { margin: .2rem 0 0; color: var(--text-muted); }
+.qs-item { margin: 1rem 0; padding: .8rem 1rem; border: 1px solid var(--border); border-radius: var(--radius); }
+.qs-type { font-size: .85rem; color: var(--text-muted); margin: 0 0 .4rem; }
+.qs-stem { font-size: 1.05rem; margin: .4rem 0; }
+.qs-opts { margin: .4rem 0 .5rem; padding-left: 1.6rem; }
+.qs-slot { display: inline-block; min-width: 2.2em; border-bottom: 1px solid currentColor; text-align: center; margin: 0 .15em; }
+.qs-passage, .qs-ck { font-size: .95rem; padding: .5rem .8rem; background: var(--surface-2); border-radius: var(--radius); margin: .4rem 0 .6rem; }
+.qs-passage p, .qs-ck p { margin: .3rem 0; }
+.qs-ck ul { list-style: none; padding: 0; margin: .3rem 0; }
+.qs-nar, .qs-tr { color: var(--text-muted); }
+.quiz-samples summary { cursor: pointer; color: var(--link); }
+.quiz-samples details p { margin: .4rem 0; }
 .quiz-about .lesson-list { columns: 2; column-gap: 2rem; padding-left: 1.2rem; }
 @media (max-width: 600px) { .quiz-about .lesson-list { columns: 1; } }
 @media (max-width: 600px) { #content { padding: 1.2rem 1rem 3rem; } }
@@ -4016,17 +4086,98 @@ ${lessonList}</section>`;
 <h2>${L(`${level} 语法课文`, `${level} grammar lessons`)}</h2>
 ${lessonList}</section>`;
   };
+  // A few real questions written into the page, under the app: a crawler (or a
+  // reader without JS) gets actual questions and answers, not just the shell.
+  // In the page's language only; answers folded in <details>. Mock pages show
+  // practice questions, never the mock's own. Furigana as in the quiz data.
+  const SAMPLE_TYPES = {
+    practice: ["kanji", "bunpou", "narabe", "short", "kadai|point|sokuji"],
+    vocabulary: ["kanji", "hyouki", "bunmyaku", "iikae", "youhou"],
+    reading: ["short", "mid", "info"],
+    listening: ["kadai", "point", "sokuji", "hatsuwa|gaiyou"],
+    mock: ["bunmyaku", "bunpou", "narabe", "iikae", "short"],
+  };
+  const quizSamples = (kind, bundle) => {
+    const pr = bundle.practice, used = new Set(), out = [];
+    const ok = (q) => !q.pre && q.why && Array.isArray(q.options) && q.answer != null && !(q.pic && q.pic.opts) && !(q.ck && q.ck.questions)
+      && (!q.passage || (pr.passages[q.passage] && pr.passages[q.passage].html.length <= 1800 && !/\[\[\d+\]\]/.test(pr.passages[q.passage].html)));
+    for (const spec of SAMPLE_TYPES[kind] || []) {
+      if (out.length >= 5) break;
+      for (const type of spec.split("|")) {
+        const list = pr.questions.filter((q) => q.type === type && ok(q) && !used.has(q.passage || q.id)).sort((a, b) => (a.id < b.id ? -1 : 1));
+        if (!list.length) continue;
+        const q = list[Math.floor(list.length * (kind === "mock" ? 0.71 : 0.37))];
+        used.add(q.passage || q.id); out.push(q); break;
+      }
+    }
+    return out;
+  };
+  const sEsc = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const sText = (o, code) => (o && typeof o === "object" ? o[code] : o) || "";
+  const sExpl = (s) => sEsc(s).replace(/「[^「」\n]*」/g, (m) => `<span lang="ja">${m}</span>`).replace(/\n/g, "<br>");
+  const sPlain = (h) => String(h || "").replace(/<rt>[\s\S]*?<\/rt>|<rp>[\s\S]*?<\/rp>/g, "").replace(/<u>([\s\S]*?)<\/u>/g, "「$1」").replace(/<br\s*\/?>/g, " ").replace(/<[^>]+>/g, "").replace(/\[★\]/g, "＿★＿").replace(/\[_\]/g, "＿＿").replace(/&amp;/g, "&").replace(/\s+/g, " ").trim();
+  const sTextHtml = (src) => {
+    let rows = [], out = "";
+    const flush = () => { if (rows.length) out += `<div class="table-scroll"><table class="q-table">${rows.map((r, i) => `<tr>${r.map((c) => `<${i ? "td" : "th"}>${c.trim()}</${i ? "td" : "th"}>`).join("")}</tr>`).join("")}</table></div>`; rows = []; };
+    for (const line of String(src).split("\n")) {
+      if (/^\|/.test(line)) { rows.push(line.replace(/^\||\|$/g, "").split("|")); continue; }
+      flush(); if (line) out += `<p>${line}</p>`;
+    }
+    flush();
+    return out;
+  };
+  const quizSamplesHtml = (qs, en, bundle) => {
+    if (!qs.length) return "";
+    const L = (zh, e) => (en ? e : zh), code = en ? "en" : "zh", pr = bundle.practice;
+    const items = qs.map((q, n) => {
+      const ty = QUIZ_TYPES[q.type] || pr.types[q.type] || {};
+      let body = "";
+      if (q.ck) {
+        const who = (s) => (en ? s : s.replace(/^M/, "男").replace(/^F/, "女"));
+        body += `<div class="qs-ck" lang="ja">${q.ck.scene ? `<p class="qs-nar">${q.ck.scene}</p>` : ""}${q.ck.question ? `<p class="qs-nar">${q.ck.question}</p>` : ""}<ul>${q.ck.lines.map((l) => `<li><b>${sEsc(who(l[0]))}</b> ${l[1]}</li>`).join("")}</ul></div>`;
+      } else {
+        const P = q.passage && pr.passages[q.passage];
+        if (P) body += `<div class="qs-passage" lang="ja">${P.intro ? `<p class="qs-nar">${P.intro}</p>` : ""}${sTextHtml(P.html)}</div>`;
+        const stem = q.stem ? q.stem.replace(/\n/g, "<br>").replace(/\[★\]/g, '<span class="qs-slot">★</span>').replace(/\[_\]/g, '<span class="qs-slot"></span>') : q.q || "";
+        if (stem) body += `<p class="qs-stem" lang="ja">${stem}</p>`;
+      }
+      body += `<ol class="qs-opts" lang="ja">${q.options.map((o) => `<li>${o}</li>`).join("")}</ol>`;
+      const okj = (i) => (q.okj && q.okj[i] ? `（${q.okj[i]}）` : "");
+      let ans = q.type === "narabe"
+        ? `<p><b>${L("★ 处：", "★ is ")}${q.answer + 1}</b> <span lang="ja">${q.options[q.answer]}</span></p>${q.order ? `<p lang="ja">${L("顺序：", "Order: ")}${q.order.map((i) => q.options[i]).join(" → ")}</p>` : ""}`
+        : `<p><b>${L("答案：", "Answer: ")}${q.answer + 1}</b> <span lang="ja">${q.options[q.answer]}${okj(q.answer)}</span></p>`;
+      if (q.full) ans += `<p class="qs-full" lang="ja">${q.full}</p>`;
+      const tr = q.ck ? "" : typeof sText(q.tr, code) === "string" ? sText(q.tr, code) : "";
+      if (tr) ans += `<p class="qs-tr">${sEsc(tr)}</p>`;
+      ans += `<p>${sExpl(sText(q.why, code))}</p>`;
+      const wrong = (q.wrong || []).map((w, i) => (w && sText(w, code) ? `<li><b lang="ja">${i + 1} ${q.options[i]}</b> — ${sExpl(sText(w, code))}</li>` : "")).join("");
+      if (wrong && q.type !== "narabe") ans += `<ul>${wrong}</ul>`;
+      return `<div class="qs-item"><p class="qs-type">${n + 1}. ${sEsc(en ? ty.en : ty.zh)} · <span lang="ja">${sEsc(ty.ja)}</span></p>${body}<details><summary>${L("看答案和解析", "Answer and explanation")}</summary>${ans}</details></div>`;
+    }).join("");
+    return `<section class="quiz-about quiz-samples"><h2>${L("例题", "Sample questions")}</h2><p>${L("从题库里抽的几道题，答案和解析折叠在下面。完整的练习在上面开始。", "A few questions from the bank, with the answers folded underneath. Start the full practice above.")}</p>${items}</section>`;
+  };
+  // schema.org Question for each sample (plain text, no furigana).
+  const quizSampleSchema = (qs, en) => qs.map((q) => {
+    const code = en ? "en" : "zh", text = q.ck ? sPlain(q.ck.question || "") || (en ? "Choose the right reply." : "选出合适的回应。") : sPlain(q.stem || q.q || "");
+    const ans = (i) => ({ "@type": "Answer", position: i, text: sPlain(q.options[i]) });
+    return { "@type": "Question", eduQuestionType: "Multiple choice", text: text || sPlain(q.options.join(" / ")),
+      suggestedAnswer: q.options.map((_, i) => i).filter((i) => i !== q.answer).map(ans),
+      acceptedAnswer: { ...ans(q.answer), answerExplanation: { "@type": "Comment", text: sText(q.why, code).replace(/\s+/g, " ").trim() } } };
+  });
   // Schema: what the page is, and where it sits (Home › level › page).
-  const quizSchema = (level, kind, m, url) => JSON.stringify([
+  const quizSchema = (level, kind, m, url, samples) => JSON.stringify([
     { "@context": "https://schema.org", "@type": kind === "cards" ? "LearningResource" : "Quiz", name: m.h1, description: m.desc, url, inLanguage: m.lang,
       educationalLevel: `JLPT ${level}`, isAccessibleForFree: true, learningResourceType: kind === "mock" ? "Practice test" : kind === "cards" ? "Flashcards" : kind === "listening" ? "Listening practice" : "Practice questions",
-      about: { "@type": "Thing", name: "Japanese language" }, provider: { "@type": "Organization", name: "jpnotes.dev", url: SITE } },
+      about: { "@type": "Thing", name: "Japanese language" }, provider: { "@type": "Organization", name: "jpnotes.dev", url: SITE }, ...(samples && samples.length ? { hasPart: samples } : {}) },
     { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
       { "@type": "ListItem", position: 1, name: m.home, item: SITE },
       { "@type": "ListItem", position: 2, name: level, item: `${SITE}${level}/` },
       { "@type": "ListItem", position: 3, name: m.crumb, item: url }] },
   ]).replace(/</g, "\\u003c");
-  const withAbout = (m, level, kind, en, bundle, url) => ({ ...m, about: quizAbout(level, kind, en, bundle), schema: quizSchema(level, kind, { ...m, lang: en ? "en" : "zh-Hans", home: en ? "Japanese Grammar Notes" : "日语语法笔记" }, url) });
+  const withAbout = (m, level, kind, en, bundle, url) => {
+    const qs = quizSamples(kind, bundle);
+    return { ...m, about: quizSamplesHtml(qs, en, bundle) + quizAbout(level, kind, en, bundle), schema: quizSchema(level, kind, { ...m, lang: en ? "en" : "zh-Hans", home: en ? "Japanese Grammar Notes" : "日语语法笔记" }, url, quizSampleSchema(qs, en)) };
+  };
   for (const [level, { practice, mocks }] of Object.entries(quizBundles)) {
     const lv = level.toLowerCase();
     const practiceId = `${lv}-practice`, mockId = `${lv}-mock-test`, cardsId = `${lv}-cards`, listeningId = `${lv}-listening`;
@@ -4041,7 +4192,7 @@ ${lessonList}</section>`;
       here !== mockId && mocks.length && `⏱ <a href="${SITE_PATH}${mockId}/">${en ? `Timed ${level} mock test` : `${level} 模拟题（计时）`}</a>`,
       here !== cardsId && `🗂 <a href="${SITE_PATH}${cardsId}/">${en ? "Grammar flashcards" : "语法卡片（在线背）"}</a>`,
     ].filter(Boolean).join(" · ");
-    const src = writeQuizData(`${lv}.json`, practice);
+    const src = writeQuizDataByLang(`${lv}.json`, practice);
     const count = practice.questions.length;
     const meta = {
       en: {
@@ -4060,7 +4211,7 @@ ${lessonList}</section>`;
       },
     };
     for (const lang of PAGE_LANGS) {
-      writeLangPage(practiceId, lang, localizePage(renderQuiz(lang, withAbout(meta[lang.code], level, "practice", lang.code === "en", quizBundles[level], langVariant(practiceId, lang).url), langVariant(practiceId, lang), level, `data-src="${src}"`, src), lang, localizedPageIds));
+      writeLangPage(practiceId, lang, localizePage(renderQuiz(lang, withAbout(meta[lang.code], level, "practice", lang.code === "en", quizBundles[level], langVariant(practiceId, lang).url), langVariant(practiceId, lang), level, `data-src="${src[lang.code]}"`, src[lang.code]), lang, localizedPageIds));
     }
     quizPageIds.push(practiceId);
     console.log(`  Generated dist/${practiceId}/ (${count} questions${QUIZ_PUBLIC ? "" : ", not public"})`);
@@ -4070,7 +4221,7 @@ ${lessonList}</section>`;
       const ckTypes = Object.fromEntries(Object.entries(practice.types).filter(([, t]) => t.g === "choukai"));
       const ckQs = practice.questions.filter((q) => ckTypes[q.type]);
       const ckIds = new Set(ckQs.map((q) => q.passage).filter(Boolean));
-      const ckSrc = writeQuizData(`${lv}-listening.json`, { ...practice, types: ckTypes, questions: ckQs,
+      const ckSrc = writeQuizDataByLang(`${lv}-listening.json`, { ...practice, types: ckTypes, questions: ckQs,
         passages: Object.fromEntries(Object.entries(practice.passages || {}).filter(([id]) => ckIds.has(id))) });
       const recs = new Set(ckQs.map((q) => q.passage || q.id)).size;
       const ckMeta = {
@@ -4090,7 +4241,7 @@ ${lessonList}</section>`;
         },
       };
       for (const lang of PAGE_LANGS) {
-        writeLangPage(listeningId, lang, localizePage(renderQuiz(lang, withAbout(ckMeta[lang.code], level, "listening", lang.code === "en", quizBundles[level], langVariant(listeningId, lang).url), langVariant(listeningId, lang), level, `data-src="${ckSrc}"`, ckSrc), lang, localizedPageIds));
+        writeLangPage(listeningId, lang, localizePage(renderQuiz(lang, withAbout(ckMeta[lang.code], level, "listening", lang.code === "en", quizBundles[level], langVariant(listeningId, lang).url), langVariant(listeningId, lang), level, `data-src="${ckSrc[lang.code]}"`, ckSrc[lang.code]), lang, localizedPageIds));
       }
       quizPageIds.push(listeningId);
       console.log(`  Generated dist/${listeningId}/ (${ckQs.length} listening questions)`);
@@ -4100,7 +4251,7 @@ ${lessonList}</section>`;
       const subTypes = Object.fromEntries(Object.entries(practice.types).filter(([, t]) => t.g === p.group));
       const subQs = practice.questions.filter((q) => subTypes[q.type]);
       const pIds = new Set(subQs.map((q) => q.passage).filter(Boolean));
-      const subSrc = writeQuizData(`${pageId}.json`, { ...practice, page: p.id, types: subTypes, questions: subQs,
+      const subSrc = writeQuizDataByLang(`${pageId}.json`, { ...practice, page: p.id, types: subTypes, questions: subQs,
         passages: Object.fromEntries(Object.entries(practice.passages || {}).filter(([id]) => pIds.has(id))) });
       const pageMeta = reading ? {
         en: { title: `JLPT ${level} Reading Practice — Free Passages with Translations`,
@@ -4122,7 +4273,7 @@ ${lessonList}</section>`;
           lead: `${level} 文字词汇的全部题型：汉字读音、汉字写法、选词填空等。答完马上看每个选项为什么对、为什么错。`, nav: navLinks(pageId, false) },
       };
       for (const lang of PAGE_LANGS) {
-        writeLangPage(pageId, lang, localizePage(renderQuiz(lang, withAbout(pageMeta[lang.code], level, p.id, lang.code === "en", quizBundles[level], langVariant(pageId, lang).url), langVariant(pageId, lang), level, `data-src="${subSrc}"`, subSrc), lang, localizedPageIds));
+        writeLangPage(pageId, lang, localizePage(renderQuiz(lang, withAbout(pageMeta[lang.code], level, p.id, lang.code === "en", quizBundles[level], langVariant(pageId, lang).url), langVariant(pageId, lang), level, `data-src="${subSrc[lang.code]}"`, subSrc[lang.code]), lang, localizedPageIds));
       }
       quizPageIds.push(pageId);
       console.log(`  Generated dist/${pageId}/ (${subQs.length} questions)`);
@@ -4150,7 +4301,8 @@ ${lessonList}</section>`;
     quizPageIds.push(cardsId);
     if (!mocks.length) continue;
     // Mock tests: the test file, and its answer key loaded only after submitting.
-    const sets = mocks.map(({ test, key }) => ({ id: test.id, n: test.n, src: writeQuizData(`${test.id}.json`, test), key: writeQuizData(`${test.id}.key.json`, key) }));
+    const sets = mocks.map(({ test, key }) => ({ id: test.id, n: test.n, src: writeQuizDataByLang(`${test.id}.json`, test), key: writeQuizDataByLang(`${test.id}.key.json`, key) }));
+    const setsFor = (code) => JSON.stringify(sets.map((x) => ({ ...x, src: x.src[code], key: x.key[code] })));
     const mockMeta = {
       en: {
         title: `JLPT ${level} Mock Test Online — Timed${hasCk ? ", Listening Included" : ""}, with Scores and Explanations`,
@@ -4168,7 +4320,7 @@ ${lessonList}</section>`;
       },
     };
     for (const lang of PAGE_LANGS) {
-      writeLangPage(mockId, lang, localizePage(renderQuiz(lang, withAbout(mockMeta[lang.code], level, "mock", lang.code === "en", quizBundles[level], langVariant(mockId, lang).url), langVariant(mockId, lang), level, `data-mode="mock" data-sets='${JSON.stringify(sets)}'`), lang, localizedPageIds));
+      writeLangPage(mockId, lang, localizePage(renderQuiz(lang, withAbout(mockMeta[lang.code], level, "mock", lang.code === "en", quizBundles[level], langVariant(mockId, lang).url), langVariant(mockId, lang), level, `data-mode="mock" data-sets='${setsFor(lang.code)}'`), lang, localizedPageIds));
     }
     quizPageIds.push(mockId);
     console.log(`  Generated dist/${mockId}/ (${mocks.length} sets${QUIZ_PUBLIC ? "" : ", not public"})`);
@@ -5151,6 +5303,11 @@ html.theme-dark .speak-btn:hover { border-color: var(--accent); }
 .quiz-link a, .ov-quiz a { display: inline-block; padding: .35em .95em; border: 1px solid var(--accent); border-radius: 999px; color: var(--accent); text-decoration: none; font-size: .92em; }
 .quiz-link a:hover, .ov-quiz a:hover { background: var(--accent); color: #fff; }
 .ov-quiz { display: flex; flex-wrap: wrap; gap: .5rem; margin: .8rem 0 1.2rem; }
+.jp-progress { display: flex; flex-wrap: wrap; align-items: baseline; gap: .3rem 1rem; margin: 1rem 0; padding: .7rem 1rem; border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: var(--radius); font-size: .92rem; color: var(--text-muted); }
+.jp-progress[hidden] { display: none; }
+.jp-progress a { color: var(--text-muted); }
+.jp-progress .jp-prog-go { color: var(--link); font-weight: 700; text-decoration: none; }
+.jp-progress .jp-prog-go:hover { text-decoration: underline; }
 .cross-link {
   display: inline-block; background: var(--chip-bg); color: var(--chip-text);
   padding: .15rem .55rem; border-radius: var(--radius-sm); margin: .15rem .2rem;
