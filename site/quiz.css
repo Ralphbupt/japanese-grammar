@@ -259,6 +259,7 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .hub-go b { color: var(--accent); font-size: .95rem; }
 .hub-go span { color: var(--text-muted); font-size: .85rem; }
 .hub-go .hub-done { color: var(--text); font-size: inherit; }
+.hub-table td.hub-types { color: var(--text-muted); font-size: .85rem; padding: 0 .6rem; height: auto; }
 .hub-soon td, .hub-soon th { color: var(--text-muted); opacity: .6; }
 .hub-listen { margin: 1.5rem 0 0; padding: .8rem 1rem; border: 1px dashed var(--border); border-radius: var(--radius); background: var(--card-bg); color: var(--text-muted); font-size: .95em; }
 .hub-listen b { color: var(--text); }
