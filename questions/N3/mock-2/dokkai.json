@@ -242,8 +242,8 @@
     "intro": "これは、佐藤さんに届いたメールである。",
     "passage": "佐藤さん\n\nお疲れさまです。総務部の中村です。\n来週の大阪出張の件でご連絡します。\n新幹線の切符はこちらで用意しましたので、出発の前日までに総務部の受付で受け取ってください。\nホテルは、会社では予約しておりません。お手数ですが、ご自分で予約をお願いします。宿泊費は、出張から戻ったあとに会社からお支払いしますので、領収書を必ずもらってきてください。その際、宛名は佐藤さんのお名前ではなく、会社名にしていただくようお願いします。\n\n中村",
     "tr": {
-      "zh": "佐藤先生：\n\n辛苦了。我是总务部的中村。\n关于下周去大阪出差的事，跟您联系一下。\n新干线车票已由我们准备好，请在出发前一天之前到总务部前台领取。\n酒店不是公司帮忙订的。麻烦您自己预订。住宿费会在出差回来后由公司支付，所以请一定要拿收据回来。届时，收据抬头请不要写您的名字，而是写公司名称。\n\n中村。",
-      "en": "Mr Sato,\n\nThank you for your work. This is Nakamura from General Affairs.\nI'm writing about your business trip to Osaka next week.\nWe've arranged your shinkansen ticket, so please collect it at the General Affairs desk by the day before you leave.\nThe company has not booked a hotel. Sorry for the trouble, but please book one yourself. The company will pay the hotel cost after you get back, so be sure to get a receipt. When you do, please have it made out to the company name rather than your own name.\n\nNakamura."
+      "zh": "佐藤先生：\n\n辛苦了。我是总务部的中村。\n关于下周去大阪出差的事，跟您联系一下。\n新干线车票已由我们准备好，请在出发前一天之前到总务部前台领取。\n公司没有预订酒店。麻烦您自己预订。住宿费会在出差回来后由公司支付，所以请一定要拿收据回来。届时，收据抬头请不要写您的名字，而是写公司名称。\n\n中村。",
+      "en": "Sato-san,\n\nThank you for your work. This is Nakamura from General Affairs.\nI'm writing about your business trip to Osaka next week.\nWe've arranged your shinkansen ticket, so please collect it at the General Affairs desk by the day before you leave.\nThe company has not booked a hotel. Sorry for the trouble, but please book one yourself. The company will pay the hotel cost after you get back, so be sure to get a receipt. When you do, please have it made out to the company name rather than your own name.\n\nNakamura."
     },
     "questions": [
       {
@@ -257,21 +257,21 @@
         "answer": 0,
         "why": {
           "zh": "依据：「ホテルは、会社では予約しておりません。お手数ですが、ご自分で予約をお願いします」；「宛名は佐藤さんのお名前ではなく、会社名にしていただくようお願いします」。\n推理：酒店要自己订；住宿费之后由公司付，需要收据，而且抬头写公司名称。\n容易错：「〜ではなく」前后容易看反：要的是公司名，不是个人名字。",
-          "en": "Evidence: 「ホテルは、会社では予約しておりません。お手数ですが、ご自分で予約をお願いします」; 「宛名は佐藤さんのお名前ではなく、会社名にしていただくようお願いします」.\nReasoning: He books the hotel himself; the company pays later, so he needs a receipt made out to the company.\nTrap: Reading 「〜ではなく」 backwards — it's the company name, not his own."
+          "en": "Evidence: 「ホテルは、会社では予約しておりません。お手数ですが、ご自分で予約をお願いします」; 「宛名は佐藤さんのお名前ではなく、会社名にしていただくようお願いします」.\nReasoning: Sato books the hotel; the company pays later, so Sato needs a receipt made out to the company.\nTrap: Reading 「〜ではなく」 backwards — it's the company name, not Sato's own."
         },
         "wrong": [
           null,
           {
             "zh": "邮件说公司没有预订酒店，请他自己订，不能拜托总务部。",
-            "en": "The email says the company hasn't booked and asks him to do it himself."
+            "en": "The email says the company hasn't booked and asks Sato to book it."
           },
           {
             "zh": "新干线车票已经由总务部准备好了，只要去领取就行。",
-            "en": "General Affairs has already arranged the ticket; he just collects it."
+            "en": "General Affairs has already arranged the ticket; Sato just collects it."
           },
           {
             "zh": "收据抬头要写公司名称，不是自己的名字。",
-            "en": "The receipt should be made out to the company, not to him."
+            "en": "The receipt should be made out to the company, not to Sato."
           }
         ]
       }
@@ -291,25 +291,25 @@
       {
         "q": "訓練にどうしても参加できない人は、どうしなければならないか。",
         "options": [
-          "13日までに、会社の担当者を通して管理事務所に伝える。",
-          "訓練の当日、始まる前に、自分で管理事務所に知らせる。",
+          "13日までに、会社の係の人から管理事務所に伝えてもらう。",
+          "13日までに、管理事務所に電話して、自分で直接知らせる。",
           "訓練の日の朝までに、会社の担当者に伝えておく。",
           "13日までに、管理事務所へ行って、自分で名前を書く。"
         ],
         "answer": 0,
         "why": {
-          "zh": "依据：「どうしても参加できない方は、11月13日（金）までに、各会社の担当者を通して管理事務所にお知らせください」。\n推理：期限是13日；方式是通过本公司的负责人通知管理处，「〜を通して」就是“经由”，不是自己直接去。\n容易错：把演习日期19日当成期限。",
-          "en": "Evidence: 「どうしても参加できない方は、11月13日（金）までに、各会社の担当者を通して管理事務所にお知らせください」.\nReasoning: The deadline is the 13th, and the message goes to the management office via your company's person in charge — 「〜を通して」 means \"through\", not going yourself.\nTrap: Taking the drill date, the 19th, as the deadline."
+          "zh": "依据：「どうしても参加できない方は、11月13日（金）までに、各会社の担当者を通して管理事務所にお知らせください」。\n推理：期限是13日；方式是通过本公司的负责人通知管理处，「〜を通して」就是“经由”，选项的「会社の係の人から伝えてもらう」是它的换说法，不是自己直接去说。\n容易错：把演习日期19日当成期限。",
+          "en": "Evidence: 「どうしても参加できない方は、11月13日（金）までに、各会社の担当者を通して管理事務所にお知らせください」.\nReasoning: The deadline is the 13th, and the message goes to the management office via your company's person in charge — 「〜を通して」 means \"through\"; the option's 「会社の係の人から伝えてもらう」 rephrases it. You don't contact the office yourself.\nTrap: Taking the drill date, the 19th, as the deadline."
         },
         "wrong": [
           null,
           {
-            "zh": "期限是13日，不是演习当天；而且要通过公司负责人，不是自己去说。",
-            "en": "The deadline is the 13th, not the day itself, and it goes through the company contact."
+            "zh": "期限虽然对，但要通过公司负责人转达，不是自己直接打电话给管理处。",
+            "en": "The deadline is right, but the message goes through the company contact, not by phoning the office yourself."
           },
           {
-            "zh": "期限是13日，不是演习当天早上；而且最终要通知的是管理处。",
-            "en": "The deadline is the 13th, not the morning of the drill, and the management office must be told."
+            "zh": "期限是13日，不是演习当天早上。",
+            "en": "The deadline is the 13th, not the morning of the drill."
           },
           {
             "zh": "通知要经由公司负责人，没有说要自己去管理处写名字。",
@@ -325,8 +325,8 @@
     "difficulty": 2,
     "passage": "私の住む町では、畑の横の道沿いに、野菜の無人販売所がいくつかある。棚にきゅうりやトマトが並んでいて、横に料金箱が置いてあるだけの小さな店だ。客は自分で代金を箱に入れて、野菜を持って帰る。店の人がいないのに商売ができるのは、客を信じているからこそだろう。\n先日、よく行く販売所に防犯カメラが付けられていた。持ち主の農家の方に聞くと、代金を払わずに野菜を持っていく人が増えたのだそうだ。「カメラなんて付けたくなかったんだけどね。払わない人は一部なのに、お客さん全員を疑っているようで申し訳ない」と、少しさびしそうに話していた。\nカメラを見たとき、私は最初、嫌な気持ちになった。しかし考えてみると、カメラを付けさせたのは、お金を払わなかった一部の人たちだ。農家の方を責めるのは間違っている。信じてもらえる関係は、売る人だけでなく、買う人一人一人が守っていくものなのだと思う。",
     "tr": {
-      "zh": "在我住的镇上，田边的路旁有几个无人蔬菜售卖点。那是只在架子上摆着黄瓜、西红柿，旁边放着一个收钱箱的小店。顾客自己把钱投进箱子，把菜带回家。店里没有人却能做生意，正是因为相信顾客吧。\n前几天，我常去的售卖点装上了防盗摄像头。问了店主农户，说是不付钱就把菜拿走的人变多了。他有些落寞地说：“我本来不想装什么摄像头的。不付钱的只是一部分人，可这样好像在怀疑所有顾客，真过意不去。”\n看到摄像头时，我起初感觉不太舒服。但仔细一想，让他装上摄像头的，是那些没付钱的一部分人。责怪农户是不对的。我认为，被信任的关系不仅要靠卖的人，也要靠每一位买的人来守护。",
-      "en": "In my town there are several unmanned vegetable stands along the roads beside the fields. They're tiny shops: just cucumbers and tomatoes on a shelf with a money box beside them. Customers put the money in the box themselves and take the vegetables home. That they can do business with nobody there is surely precisely because they trust their customers.\nThe other day a security camera had been put up at the stand I often go to. When I asked the farmer who owns it, he said more people had been taking vegetables without paying. ‘I really didn't want to put up a camera. It's only a few who don't pay, but it feels like I'm suspecting every customer, and I'm sorry about that,’ he said, looking a little sad.\nWhen I first saw the camera, it gave me an unpleasant feeling. But thinking about it, the ones who made him put it up were the few who didn't pay. It's wrong to blame the farmer. I think a relationship of trust is something that has to be protected not only by the seller but by every single buyer."
+      "zh": "在我住的镇上，田边的路旁有几个无人蔬菜售卖点。那是只在架子上摆着黄瓜、西红柿，旁边放着一个收钱箱的小店。顾客自己把钱投进箱子，把菜带回家。店里没有人却能做生意，正是因为相信顾客吧。\n前几天，我常去的售卖点装上了防盗摄像头。问了店主农户，说是不付钱就把菜拿走的人变多了。农户有些落寞地说：“我本来不想装什么摄像头的。不付钱的只是一部分人，可这样好像在怀疑所有顾客，真过意不去。”\n看到摄像头时，我起初感觉不太舒服。但仔细一想，让农户装上摄像头的，是那些没付钱的一部分人。责怪农户是不对的。我认为，被信任的关系不仅要靠卖的人，也要靠每一位买的人来守护。",
+      "en": "In my town there are several unmanned vegetable stands along the roads beside the fields. They're tiny shops: just cucumbers and tomatoes on a shelf with a money box beside them. Customers put the money in the box themselves and take the vegetables home. That they can do business with nobody there is surely precisely because they trust their customers.\nThe other day a security camera had been put up at the stand I often go to. When I asked the farmer who owns it, I was told more people had been taking vegetables without paying. ‘I really didn't want to put up a camera. It's only a few who don't pay, but it feels like I'm suspecting every customer, and I'm sorry about that,’ the farmer said, looking a little sad.\nWhen I first saw the camera, it gave me an unpleasant feeling. But thinking about it, the ones who made the farmer put it up were the few who didn't pay. It's wrong to blame the farmer. I think a relationship of trust is something that has to be protected not only by the seller but by every single buyer."
     },
     "questions": [
       {
@@ -369,7 +369,7 @@
         "answer": 0,
         "why": {
           "zh": "依据：「払わない人は一部なのに、お客さん全員を疑っているようで申し訳ない」。\n推理：「〜ようで」表示原因：不付钱的只是一部分人，装摄像头却像是连好好付钱的大多数顾客也一起怀疑了，所以过意不去；选项「きちんと払っている多くの客まで」是「払わない人は一部なのに、お客さん全員」的换说法。\n容易错：农户没有说是自己管理不好，作者也说责任在不付钱的人。",
-          "en": "Evidence: 「払わない人は一部なのに、お客さん全員を疑っているようで申し訳ない」.\nReasoning: 「〜ようで」 gives the reason: only a few don't pay, yet the camera seems to suspect even the many honest customers, so he feels bad; the option's 「きちんと払っている多くの客まで」 rephrases 「払わない人は一部なのに、お客さん全員」.\nTrap: He doesn't blame his own management, and the writer puts the blame on the non-payers."
+          "en": "Evidence: 「払わない人は一部なのに、お客さん全員を疑っているようで申し訳ない」.\nReasoning: 「〜ようで」 gives the reason: only a few don't pay, yet the camera seems to suspect even the many honest customers, so the farmer feels bad; the option's 「きちんと払っている多くの客まで」 rephrases 「払わない人は一部なのに、お客さん全員」.\nTrap: The farmer doesn't blame their own management, and the writer puts the blame on the non-payers."
         },
         "wrong": [
           null,
@@ -379,11 +379,11 @@
           },
           {
             "zh": "农户没有说是自己管理不好；作者认为原因在不付钱的那部分人。",
-            "en": "He doesn't blame his management; the writer blames the few non-payers."
+            "en": "The farmer doesn't blame their own management; the writer blames the few non-payers."
           },
           {
-            "zh": "文章没有说顾客不来了，作者自己也还在去。",
-            "en": "Nothing says customers stopped coming; the writer still goes."
+            "zh": "文章没有说顾客不来了。",
+            "en": "Nothing says customers stopped coming."
           }
         ]
       },
@@ -392,13 +392,13 @@
         "options": [
           "代金を払わない人がいる以上、無人販売所はやめたほうがいい。",
           "客を疑うようなカメラを付けた農家の人は、責められても仕方がない。",
-          "信じてもらえる関係を守るのは、買う人一人一人の責任でもある。",
+          "店と客が信じ合えるかどうかは、客の行動にもかかっている。",
           "カメラを付ければ払わない人はいなくなるので、もう心配はない。"
         ],
         "answer": 2,
         "why": {
-          "zh": "依据：「信じてもらえる関係は、売る人だけでなく、買う人一人一人が守っていくものなのだと思う」。\n推理：「AだけでなくBも」——不只是卖的人，买的每个人也要守护信任，选项用「〜でもある」表达了同样的意思。\n容易错：作者一开始看到摄像头确实不舒服，但后面用「しかし」改变了看法，明确说「農家の方を責めるのは間違っている」。",
-          "en": "Evidence: 「信じてもらえる関係は、売る人だけでなく、買う人一人一人が守っていくものなのだと思う」.\nReasoning: \"Not only A but B\": not just the seller but each buyer must protect the trust; the option says the same with 「〜でもある」.\nTrap: The writer did feel uneasy at first, but after 「しかし」 changes their mind and says 「農家の方を責めるのは間違っている」."
+          "zh": "依据：「信じてもらえる関係は、売る人だけでなく、買う人一人一人が守っていくものなのだと思う」。\n推理：「AだけでなくBも」——不只是卖的人，买的每个人也要守护信任，选项「客の行動にもかかっている」（也取决于顾客的行为）用别的说法表达了同样的意思。\n容易错：作者一开始看到摄像头确实不舒服，但后面用「しかし」改变了看法，明确说「農家の方を責めるのは間違っている」。",
+          "en": "Evidence: 「信じてもらえる関係は、売る人だけでなく、買う人一人一人が守っていくものなのだと思う」.\nReasoning: \"Not only A but B\": not just the seller but each buyer must protect the trust; the option's 「客の行動にもかかっている」 (\"also depends on how customers act\") says the same in other words.\nTrap: The writer did feel uneasy at first, but after 「しかし」 changes their mind and says 「農家の方を責めるのは間違っている」."
         },
         "wrong": [
           {
@@ -431,21 +431,21 @@
       {
         "q": "以前の会議について、文章ではどう説明されているか。",
         "options": [
-          "部長の話を聞くだけで、話し合わずに終わることも多かった。",
-          "三十分しかないので、意見を出し合う時間が足りなかった。",
+          "部長が一方的に話して、それで終わってしまうことがよくあった。",
+          "一時間あったので、全員が意見を言う時間が十分にあった。",
           "資料を前の晩に読まなければならず、準備が大変だった。",
           "若い社員がよく発言したので、なかなか結論が出なかった。"
         ],
         "answer": 0,
         "why": {
-          "zh": "依据：「以前は毎週月曜日に一時間の会議があり、部長の話を聞くだけで終わることも少なくなかった」。\n推理：「少なくなかった」＝“不少、常常”，选项的「多かった」是同义改写。\n容易错：“三十分钟”“前一晚读资料”“年轻员工发言”都是新方式之后的事，不是以前的会议。",
-          "en": "Evidence: 「以前は毎週月曜日に一時間の会議があり、部長の話を聞くだけで終わることも少なくなかった」.\nReasoning: 「少なくなかった」 (\"not a few times\") = \"often\"; the option's 「多かった」 paraphrases it.\nTrap: Thirty minutes, reading the night before and young staff speaking up all belong to the new way, not the old meetings."
+          "zh": "依据：「以前は毎週月曜日に一時間の会議があり、部長の話を聞くだけで終わることも少なくなかった」。\n推理：「部長の話を聞くだけで終わる」＝部长单方面讲完就散会；「少なくなかった」＝“不少、常常”，选项的「よくあった」是同义改写。\n容易错：“三十分钟”“前一晚读资料”“年轻员工发言”都是新方式之后的事，不是以前的会议。",
+          "en": "Evidence: 「以前は毎週月曜日に一時間の会議があり、部長の話を聞くだけで終わることも少なくなかった」.\nReasoning: 「部長の話を聞くだけで終わる」 = the manager talks and that's it; 「少なくなかった」 (\"not a few times\") = \"often\", which the option renders as 「よくあった」.\nTrap: Thirty minutes, reading the night before and young staff speaking up all belong to the new way, not the old meetings."
         },
         "wrong": [
           null,
           {
-            "zh": "以前的会议是一个小时，三十分钟是新方式。",
-            "en": "The old meetings lasted an hour; thirty minutes is the new rule."
+            "zh": "以前的会议常常只是听部长讲话就结束，大家并没有充分发表意见的时间。",
+            "en": "The old meetings often ended with just the manager talking; there was no real time for everyone's views."
           },
           {
             "zh": "前一晚读资料是新方式带来的负担，不是以前的事。",
@@ -581,7 +581,7 @@
           },
           {
             "zh": "文章没有说她借手机给作者，是口头告诉的。",
-            "en": "Nothing says she lent a phone; she told him the way."
+            "en": "Nothing says she lent a phone; she told the writer the way."
           }
         ]
       },
@@ -591,12 +591,12 @@
           "時間はかかるが、地図に載っていない情報まで教えてくれる。",
           "地図が古いことがあるので、あまり信用しないほうがいい。",
           "人と話す機会がなくなるので、なるべく使わないほうがいい。",
-          "一番近い道は分かるが、途中で何に出会えるかは分からない。"
+          "目的地には早く着けるが、道の途中の楽しみは教えてくれない。"
         ],
         "answer": 3,
         "why": {
-          "zh": "依据：「地図のアプリは、目的地までの一番近い道を教えてくれる。しかし、その道の途中で何に出会えるかまでは教えてくれない」。\n推理：选项是这两句的概括：能告诉最近的路，但不会告诉路上能遇到什么。\n容易错：“花时间但能得到意想不到的信息”说的是向人问路，不是地图应用。",
-          "en": "Evidence: 「地図のアプリは、目的地までの一番近い道を教えてくれる。しかし、その道の途中で何に出会えるかまでは教えてくれない」.\nReasoning: The option sums up these two sentences: it shows the shortest route but not what you'll meet on the way.\nTrap: \"Takes longer but gives unexpected information\" describes asking a person, not the app."
+          "zh": "依据：「地図のアプリは、目的地までの一番近い道を教えてくれる。しかし、その道の途中で何に出会えるかまでは教えてくれない」。\n推理：“最近的路”＝能早点到目的地；“路上能遇到什么”＝途中的乐趣，比如作者看到的樱花。选项把这两句换了个说法。\n容易错：“花时间但能得到意想不到的信息”说的是向人问路，不是地图应用。",
+          "en": "Evidence: 「地図のアプリは、目的地までの一番近い道を教えてくれる。しかし、その道の途中で何に出会えるかまでは教えてくれない」.\nReasoning: \"The shortest route\" means getting there quickly; \"what you'll meet on the way\" is the pleasures along the route, like the blossoms the writer saw. The option rephrases these two sentences.\nTrap: \"Takes longer but gives unexpected information\" describes asking a person, not the app."
         },
         "wrong": [
           {

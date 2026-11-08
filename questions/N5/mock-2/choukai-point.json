@@ -11,7 +11,7 @@
    ],
    [
     "M",
-    "いいえ、買いません。ぼくの アパートには 車を おく ところが ありませんから。"
+    "いいえ、買いません。"
    ],
    [
     "F",
@@ -23,11 +23,11 @@
    ],
    [
     "F",
-    "森さんは うんてんが すきですか。"
+    "じゃあ、うんてんが きらいですか。"
    ],
    [
     "M",
-    "ええ、大すきです。ですから、ほんとうは 車が ほしいです。"
+    "いいえ、大すきです。ほんとうは 車が ほしいです。でも、ぼくの アパートには 車を おく ところが ありません。"
    ]
   ],
   "options": [
@@ -43,11 +43,11 @@
     "question": "男人为什么不买车？",
     "lines": [
      "森，你买车吗？",
-     "不，不买。我住的公寓没有停车的地方。",
+     "不，不买。",
      "这样啊。车很贵嘛。",
      "不是，钱我还是有一点的。",
-     "森你喜欢开车吗？",
-     "嗯，非常喜欢。所以其实我很想要一辆车。"
+     "那是不喜欢开车吗？",
+     "不，非常喜欢。其实我很想要一辆车。可是我住的公寓没有停车的地方。"
     ],
     "options": [
      "因为车贵",
@@ -61,11 +61,11 @@
     "question": "Why won't the man buy a car?",
     "lines": [
      "Mori-san, are you going to buy a car?",
-     "No, I'm not. There's nowhere to park a car at my apartment.",
+     "No, I'm not.",
      "I see. Cars are expensive, after all.",
      "No, I do have a bit of money.",
-     "Do you like driving, Mori-san?",
-     "Yes, I love it. So actually, I'd really like a car."
+     "Then you don't like driving?",
+     "No, I love it. Actually, I'd really like a car. But there's nowhere to park one at my apartment."
     ],
     "options": [
      "Because cars are expensive",
@@ -76,8 +76,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的一开始就说：「ぼくの アパートには 車を おく ところが ありませんから。」\n推理：「〜から」说的是不买车的理由。女的后来猜「車は 高いですからね」，男的回答「いいえ、お金は 少し あります」；他很喜欢开车，其实也很想要车。\n容易错：答案在对话开头，后面的话题都是干扰；把提到的事当成理由。",
-   "en": "Evidence: Right at the start the man says: 「ぼくの アパートには 車を おく ところが ありませんから。」\nReasoning: 「〜から」 gives his reason. Her later guess, 「車は 高いですからね」, gets 「いいえ、お金は 少し あります」; he loves driving and actually wants a car.\nTrap: the answer comes first and the rest is distraction; taking something mentioned for the reason."
+   "zh": "依据：男的最后说：「でも、ぼくの アパートには 車を おく ところが ありません。」\n推理：女的先猜车贵，男的说「お金は 少し あります」；又猜他不喜欢开车，他说「大すきです」，其实也很想要车。「でも」后面才是真正不买的理由。\n容易错：把女的猜的理由当成答案；没等到「でも」后面的话。",
+   "en": "Evidence: At the end the man says: 「でも、ぼくの アパートには 車を おく ところが ありません。」\nReasoning: She guesses cost, and he says 「お金は 少し あります」; she guesses he dislikes driving, and he says 「大すきです」 and that he actually wants a car. The real reason comes after 「でも」.\nTrap: taking her guesses for the reason; not waiting for what follows 「でも」."
   },
   "wrong": [
    {
@@ -85,8 +85,8 @@
     "en": "She guesses cost; he says he has some money."
    },
    {
-    "zh": "他说自己非常喜欢开车。",
-    "en": "He says he loves driving."
+    "zh": "女人猜他不喜欢开车，他说自己非常喜欢。",
+    "en": "She guesses he dislikes driving; he says he loves it."
    },
    null,
    {

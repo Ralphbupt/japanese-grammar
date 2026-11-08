@@ -197,20 +197,20 @@
         "q": "アンナさんは けんじさんの 作文を どう しますか。",
         "options": [
           "けんじさんの 作文を 紙に 書いて、先生に わたす。",
-          "けんじさんの 家へ 作文を 取りに 行く。",
+          "けんじさんに 先生の メールアドレスを 教える。",
           "けんじさんの 作文を 手伝って、いっしょに 書く。",
-          "けんじさんから 来た 作文を 先生に メールで 送る。"
+          "けんじさんの かわりに 先生へ 作文を 送る。"
         ],
         "okj": [
           "けんじさんの作文を紙に書いて、先生に渡す。",
-          null,
+          "けんじさんに先生のメールアドレスを教える。",
           "けんじさんの作文を手伝って、一緒に書く。",
-          "けんじさんから来た作文を先生にメールで送る。"
+          "けんじさんの代わりに先生へ作文を送る。"
         ],
         "answer": 3,
         "why": {
-          "zh": "依据：「今晩 アンナさんに メールで 送ります。それを 先生に メールで 送って くれませんか」。\n推理：健二晚上把作文发给安娜，安娜再用邮件转给老师。「紙でも メールでも いい」只是老师的规定，健二请安娜做的是发邮件。作文「もう 書いて ある」，不用帮忙写。\n容易错：看到「紙でも」就以为要打印出来交。",
-          "en": "Evidence: 「今晩 アンナさんに メールで 送ります。それを 先生に メールで 送って くれませんか」.\nReasoning: Kenji emails the essay to Anna tonight and she forwards it to the teacher by email. 「紙でも メールでも いい」 is just the teacher's rule; what Kenji asks for is email. The essay is 「もう 書いて ある」, so no help with writing is needed.\nTrap: Seeing 「紙でも」 and thinking she must hand in a paper copy."
+          "zh": "依据：「今晩 アンナさんに メールで 送ります。それを 先生に メールで 送って くれませんか」。\n推理：健二晚上把作文发给安娜，请安娜替他转给老师，也就是「けんじさんの かわりに」交。「紙でも メールでも いい」只是老师的规定；作文「もう 書いて ある」，不用帮忙写。\n容易错：看到「メールアドレスを 知らない」就以为要把地址告诉健二。",
+          "en": "Evidence: 「今晩 アンナさんに メールで 送ります。それを 先生に メールで 送って くれませんか」.\nReasoning: Kenji emails the essay to Anna tonight and asks her to forward it to the teacher, i.e. to send it in his place (「けんじさんの かわりに」). 「紙でも メールでも いい」 is just the teacher's rule; the essay is 「もう 書いて ある」, so no help with writing is needed.\nTrap: Seeing 「メールアドレスを 知らない」 and thinking she should give Kenji the address."
         },
         "wrong": [
           {
@@ -218,8 +218,8 @@
             "en": "「紙でも」 only says paper is also accepted; Kenji asks her to 「メールで 送って」."
           },
           {
-            "zh": "作文健二会「メールで 送ります」，不用去他家拿。",
-            "en": "Kenji will 「メールで 送ります」 — she needn't go to his home."
+            "zh": "健二只是说明自己不知道老师的邮箱，所以才拜托安娜「先生に メールで 送って」，并没有请她告诉自己地址。",
+            "en": "Kenji mentions not knowing the address only to explain why he asks Anna to 「先生に メールで 送って」; he doesn't ask her for the address."
           },
           {
             "zh": "作文「もう 書いて ある」，已经写完了，不用帮忙。",
@@ -259,17 +259,17 @@
         "answer": 0,
         "why": {
           "zh": "依据：「はじめは 三行しか 書けませんでしたが、今は 一ページ 書ける ように なりました」。\n推理：从三行到一页，现在能写更长的日记了。「〜ように なりました」表示能力的变化。\n容易错：「毎晩」是写日记的时间，给老师看是「一週間に 一回」。",
-          "en": "Evidence: 「はじめは 三行しか 書けませんでしたが、今は 一ページ 書ける ように なりました」.\nReasoning: From three lines to a page, so he can now write longer entries. 「〜ように なりました」 marks a change in ability.\nTrap: 「毎晩」 is when he writes; he shows the teacher 「一週間に 一回」."
+          "en": "Evidence: 「はじめは 三行しか 書けませんでしたが、今は 一ページ 書ける ように なりました」.\nReasoning: From three lines to a page, so Roy can now write longer entries. 「〜ように なりました」 marks a change in ability.\nTrap: 「毎晩」 is when Roy writes; the diary goes to the teacher 「一週間に 一回」."
         },
         "wrong": [
           null,
           {
             "zh": "每晚是写日记，给老师看是「一週間に 一回」。",
-            "en": "He writes every night but shows the teacher 「一週間に 一回」."
+            "en": "Roy writes every night but shows the teacher 「一週間に 一回」."
           },
           {
             "zh": "忙的时候只是想停，他还是「短くても 毎日 書く」。",
-            "en": "He only feels like stopping; he still writes 「短くても 毎日」."
+            "en": "Roy only feels like stopping and still writes 「短くても 毎日」."
           },
           {
             "zh": "文中说老师「まちがいを なおして くれます」，也会改错。",
@@ -309,13 +309,13 @@
         "answer": 0,
         "why": {
           "zh": "依据：「自転車の ライトが こわれて いて、つかなかったのです」；「夜、ライトを つけないで 自転車に 乗っては いけません」。\n推理：「〜のです」在这里说明被拦的原因：晚上骑的车车灯不亮。推车回家是被拦「之后」的事。\n容易错：打伞骑车的规定是后来自己查到的，不是被拦的原因。",
-          "en": "Evidence: 「自転車の ライトが こわれて いて、つかなかったのです」; 「夜、ライトを つけないで 自転車に 乗っては いけません」.\nReasoning: 「〜のです」 here explains why he was stopped: he was riding at night with a light that didn't work. Pushing the bike home came after.\nTrap: The umbrella rule is one he looked up later, not the reason he was stopped."
+          "en": "Evidence: 「自転車の ライトが こわれて いて、つかなかったのです」; 「夜、ライトを つけないで 自転車に 乗っては いけません」.\nReasoning: 「〜のです」 here explains why Lee was stopped: riding at night with a light that didn't work. Pushing the bike home came after.\nTrap: The umbrella rule is one Lee looked up later, not the reason for being stopped."
         },
         "wrong": [
           null,
           {
             "zh": "打伞骑车的规定是他后来「しらべる」时才知道的，被拦那晚没有提到伞。",
-            "en": "He learned the umbrella rule later when he started to 「しらべる」; there's no umbrella that night."
+            "en": "Lee learned the umbrella rule later, on starting to 「しらべる」; there's no umbrella that night."
           },
           {
             "zh": "刹车只是「少し 古い」，是第二天在自行车店才说的，没有坏。",
@@ -323,7 +323,7 @@
           },
           {
             "zh": "推车走回家是被警察拦住以后的事，不是被拦的原因。",
-            "en": "Pushing the bike home happened after he was stopped, not before."
+            "en": "Pushing the bike home happened after Lee was stopped, not before."
           }
         ]
       },
@@ -331,27 +331,27 @@
         "q": "リーさんは 自転車屋で 何を して もらいましたか。",
         "difficulty": 2,
         "options": [
-          "ライトを なおして もらい、ブレーキも 見て もらった。",
+          "ライトが つく ように して もらい、ブレーキも 調べて もらった。",
           "古い 自転車を 新しい 自転車に かえて もらった。",
-          "ライトも ブレーキも 新しく かえて もらった。",
+          "ライトも ブレーキも 古いので、新しく かえて もらった。",
           "自転車の きまりを 店の 人に 教えて もらった。"
         ],
         "okj": [
-          "ライトを直してもらい、ブレーキも見てもらった。",
+          "ライトがつくようにしてもらい、ブレーキも調べてもらった。",
           "古い自転車を新しい自転車に替えてもらった。",
-          "ライトもブレーキも新しく替えてもらった。",
+          "ライトもブレーキも古いので、新しく替えてもらった。",
           "自転車の決まりを店の人に教えてもらった。"
         ],
         "answer": 0,
         "why": {
           "zh": "依据：「ライトを なおして もらいました。店の 人は ブレーキも 見て くれて」。\n推理：车灯是修好的；刹车店员只是看了看，提醒他小心，没有换。规定是他自己「しらべる」的。\n容易错：看到「ブレーキも」就以为刹车也换了。",
-          "en": "Evidence: 「ライトを なおして もらいました。店の 人は ブレーキも 見て くれて」.\nReasoning: The light was repaired; the assistant only checked the brakes and warned him, without replacing them. The rules he looked up himself (「しらべる」).\nTrap: Seeing 「ブレーキも」 and assuming the brakes were replaced too."
+          "en": "Evidence: 「ライトを なおして もらいました。店の 人は ブレーキも 見て くれて」.\nReasoning: The light was repaired; the assistant only checked the brakes and gave a warning, without replacing them. The writer looked up the rules alone (「しらべる」).\nTrap: Seeing 「ブレーキも」 and assuming the brakes were replaced too."
         },
         "wrong": [
           null,
           {
             "zh": "他没有换新车，修好车灯后继续骑这辆旧车。",
-            "en": "He didn't swap bikes; he kept riding the old one after the repair."
+            "en": "Lee didn't swap bikes and kept riding the old one after the repair."
           },
           {
             "zh": "刹车只是看了一下，店员说「気を つけて ください」，没有换新的。",
@@ -359,7 +359,7 @@
           },
           {
             "zh": "规定是他后来自己查的（「しらべる ように なりました」），不是店员教的。",
-            "en": "He looked up the rules himself (「しらべる ように なりました」); the shop didn't teach them."
+            "en": "Lee looked up the rules alone (「しらべる ように なりました」); the shop didn't teach them."
           }
         ]
       },
@@ -381,20 +381,20 @@
         "answer": 3,
         "why": {
           "zh": "依据：「日本では かさを さしながら 自転車に 乗っては いけません。それで、今は 雨の 日には レインコートを 着て 乗って います」。\n推理：不能打伞，所以下雨天穿雨衣骑车，也就是不打伞骑。「それで」连接规定和他现在的做法。\n容易错：被拦那晚他「自転車を おして」回家，是推着走的，不是骑回去的。",
-          "en": "Evidence: 「日本では かさを さしながら 自転車に 乗っては いけません。それで、今は 雨の 日には レインコートを 着て 乗って います」.\nReasoning: Umbrellas aren't allowed, so on rainy days he rides in a raincoat — that is, without an umbrella. 「それで」 links the rule to what he does now.\nTrap: The night he was stopped he went home 「自転車を おして」 — pushing it, not riding."
+          "en": "Evidence: 「日本では かさを さしながら 自転車に 乗っては いけません。それで、今は 雨の 日には レインコートを 着て 乗って います」.\nReasoning: Umbrellas aren't allowed, so on rainy days Lee rides in a raincoat — that is, without an umbrella. 「それで」 links the rule to what Lee does now.\nTrap: The night Lee was stopped, the trip home was 「自転車を おして」 — pushing it, not riding."
         },
         "wrong": [
           {
             "zh": "文中说「国では 聞いた ことが ない きまりが たくさん あって」，以前不知道。",
-            "en": "The text says there were many rules 「国では 聞いた ことが ない」 — he didn't know them before."
+            "en": "The text says there were many rules 「国では 聞いた ことが ない」 — Lee didn't know them before."
           },
           {
             "zh": "那天晚上他「自転車を おして 家まで 帰りました」，是推着车走回去的。",
-            "en": "That night he 「自転車を おして 家まで 帰りました」 — he pushed it home."
+            "en": "That night Lee 「自転車を おして 家まで 帰りました」 — pushing it home."
           },
           {
             "zh": "他买了旧自行车，因为坐公交「毎日 お金が かかる」，现在是骑车。",
-            "en": "He bought the old bike because the bus 「毎日 お金が かかる」; he cycles now."
+            "en": "Lee bought the old bike because the bus 「毎日 お金が かかる」, and cycles now."
           },
           null
         ]
@@ -425,13 +425,13 @@
         "answer": 0,
         "why": {
           "zh": "依据：「子どもと いっしょに 来た 大人は、入館券が 300円 安く なります」；「えさやり：…一人 500円」。\n推理：第三个星期日是「家族の 日」，中村带孩子来：1,500−300＝1,200日元；女儿800日元；喂企鹅只有女儿做，500日元。合计2,500日元。\n容易错：忘了家庭日的优惠，或者把中村也算进喂企鹅的费用。",
-          "en": "Evidence: 「子どもと いっしょに 来た 大人は、入館券が 300円 安く なります」; 「えさやり：…一人 500円」.\nReasoning: The third Sunday is 「家族の 日」 and Mr Nakamura comes with his child: 1,500 − 300 = 1,200 yen; his daughter 800 yen; only she feeds the penguins, 500 yen. Total 2,500 yen.\nTrap: Forgetting the Family Day discount, or charging the feeding fee for the father as well."
+          "en": "Evidence: 「子どもと いっしょに 来た 大人は、入館券が 300円 安く なります」; 「えさやり：…一人 500円」.\nReasoning: The third Sunday is 「家族の 日」 and Nakamura comes with a child: 1,500 − 300 = 1,200 yen; the daughter 800 yen; only she feeds the penguins, 500 yen. Total 2,500 yen.\nTrap: Forgetting the Family Day discount, or charging the feeding fee for the parent as well."
         },
         "wrong": [
           null,
           {
             "zh": "3,000日元把中村的喂企鹅费也算上了，可他「見て いるだけ」。",
-            "en": "¥3,000 charges the father for feeding too, but he is 「見て いるだけ」."
+            "en": "¥3,000 charges the parent for feeding too, but Nakamura is 「見て いるだけ」."
           },
           {
             "zh": "2,000日元忘了喂企鹅每人500日元的费用。",
@@ -439,7 +439,7 @@
           },
           {
             "zh": "2,800日元没有减家庭日的300日元，可那天是第三个星期日，中村带着孩子。",
-            "en": "¥2,800 misses the ¥300 Family Day discount, though it's the third Sunday and he brings his child."
+            "en": "¥2,800 misses the ¥300 Family Day discount, though it's the third Sunday and Nakamura brings a child."
           }
         ]
       },
@@ -466,15 +466,15 @@
         "wrong": [
           {
             "zh": "山田下午1点才到，上午11点的表演已经结束了。",
-            "en": "He arrives at 1 pm, after the 11:00 show is over."
+            "en": "Yamada arrives at 1 pm, after the 11:00 show is over."
           },
           {
             "zh": "4点的表演太晚，他3点半就得离开水族馆。",
-            "en": "The 4:00 show is too late; he must leave by 3:30."
+            "en": "The 4:00 show is too late; Yamada must leave by 3:30."
           },
           {
             "zh": "1点到1点半之间没有表演，不能先看表演再去喂企鹅。",
-            "en": "There's no show between 1:00 and 1:30, so he can't watch one before the feeding."
+            "en": "There's no show between 1:00 and 1:30, so Yamada can't watch one before the feeding."
           },
           null
         ]

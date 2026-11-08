@@ -400,7 +400,7 @@
    ],
    [
     "M",
-    "わかった。じゃあ、その二人の分も引くね。卒業した先輩が二人、手伝いに来てくれるけど、その分は……。"
+    "わかった。じゃあ、その二人の分も引くね。卒業した先輩が三人、手伝いに来てくれるけど、その分は……。"
    ],
    [
     "F",
@@ -412,12 +412,12 @@
    ]
   ],
   "options": [
+   "十個",
    "十二個",
    "十三個",
-   "十四個",
-   "十五個"
+   "十四個"
   ],
-  "answer": 0,
+  "answer": 2,
   "tr": {
    "zh": {
     "scene": "大学里，一个男学生和一个女学生在谈学园祭的便当。",
@@ -429,15 +429,15 @@
      "老师那份，之前实行委员会联系说他们会准备。",
      "是吗，那太好了。",
      "还有，田中和我，摊位做菜的材料会剩下，我们打算吃那个。",
-     "知道了。那这两个人的也减掉。毕业的学长学姐有两个人来帮忙，他们那份……",
+     "知道了。那这两个人的也减掉。毕业的学长学姐有三个人来帮忙，他们那份……",
      "那个我们出吧。人家是来帮忙的嘛。",
      "也是。"
     ],
     "options": [
+     "十个",
      "十二个",
      "十三个",
-     "十四个",
-     "十五个"
+     "十四个"
     ]
    },
    "en": {
@@ -450,35 +450,35 @@
      "The festival committee told us the other day they'd provide the professor's.",
      "Really? That helps.",
      "Also, Tanaka-san and I are going to eat the leftover ingredients from our stall.",
-     "Got it. Then I'll take those two off too. Two graduates are coming to help — what about theirs?",
+     "Got it. Then I'll take those two off too. Three graduates are coming to help — what about theirs?",
      "We should cover theirs. They're coming to help us, after all.",
      "Yeah, you're right."
     ],
     "options": [
+     "Ten",
      "Twelve",
      "Thirteen",
-     "Fourteen",
-     "Fifteen"
+     "Fourteen"
     ]
    }
   },
   "why": {
-   "zh": "依据：女的说：「土曜は試合で来られない人が三人いるよ。」「先生の分は、実行委員会が用意してくれる」「田中さんと私は……それを食べることにしてる。」「それはこっちで出そうよ。」\n推理：十五人减去来不了的三人是十二人；老师的由实行委员会准备，不加；田中和女的两人吃剩下的材料，减去后是十人；来帮忙的两位毕业生由他们出，加上又是十二个。\n容易错：老师那份是别人负责；减了两人又加了两人，要算到最后。",
-   "en": "Evidence: The woman says: 「土曜は試合で来られない人が三人いるよ。」 「先生の分は、実行委員会が用意してくれる」 「田中さんと私は……それを食べることにしてる。」 「それはこっちで出そうよ。」\nReasoning: Fifteen minus the three who can't come is twelve; the committee provides the professor's, so nothing is added; Tanaka and the woman eat leftovers, making ten; the club covers the two graduates, back to twelve.\nTrap: the professor's meal is someone else's job; two come off and two go back on, so count to the end."
+   "zh": "依据：女的说：「土曜は試合で来られない人が三人いるよ。」「先生の分は、実行委員会が用意してくれる」「田中さんと私は……それを食べることにしてる。」男的说毕业生「三人、手伝いに来てくれる」，女的说：「それはこっちで出そうよ。」\n推理：十五人减去来不了的三人是十二人；老师的由实行委员会准备，不加；田中和女的两人吃剩下的材料，减去后是十人；来帮忙的三位毕业生由他们出，加上是十三个。\n容易错：中途说出的「十二人」不是最后的数；老师那份是别人负责；减两人、加三人，要算到最后。",
+   "en": "Evidence: The woman says: 「土曜は試合で来られない人が三人いるよ。」 「先生の分は、実行委員会が用意してくれる」 「田中さんと私は……それを食べることにしてる。」 The man says three graduates are coming to help, and she says: 「それはこっちで出そうよ。」\nReasoning: Fifteen minus the three who can't come is twelve; the committee provides the professor's, so nothing is added; Tanaka and the woman eat leftovers, making ten; the club covers the three graduates, making thirteen.\nTrap: the 「十二人」 said halfway is not the final figure; the professor's meal is someone else's job; two come off and three go on, so count to the end."
   },
   "wrong": [
+   {
+    "zh": "忘了加上来帮忙的三位毕业生，女的说「こっちで出そう」。",
+    "en": "This forgets the three graduates, whose meals the club will cover."
+   },
+   {
+    "zh": "「十二人」是中途的数，后来还减了田中和女学生两人、加了三位毕业生。",
+    "en": "Twelve is the halfway figure; two are taken off and three graduates added later."
+   },
    null,
    {
     "zh": "加上了老师的份，但老师的由「実行委員会が用意してくれる」。",
     "en": "This adds the professor's, but the committee provides it."
-   },
-   {
-    "zh": "忘了减去田中和女学生两人。",
-    "en": "This forgets to take off Tanaka and the woman."
-   },
-   {
-    "zh": "十五人是社团全部人数，星期六有三人来不了。",
-    "en": "Fifteen is the whole club; three can't come on Saturday."
    }
   ],
   "traps": [

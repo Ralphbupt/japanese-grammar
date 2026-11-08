@@ -585,12 +585,12 @@
     "scene": "A man and a woman are talking.",
     "question": "What will the man take to the teacher's house?",
     "lines": [
-     "We're going to Mr. Yamada's house tomorrow, right? Let's take something. How about flowers?",
-     "There are lots of flowers in his garden.",
+     "We're going to Yamada-sensei's house tomorrow, right? Let's take something. How about flowers?",
+     "There are lots of flowers in the teacher's garden.",
      "I see. Then a cake?",
-     "He doesn't really like sweet things.",
+     "The teacher doesn't really like sweet things.",
      "Then how about fruit?",
-     "Good idea. He loves fruit. Then please bring that. I'll buy some wine and bring it."
+     "Good idea. The teacher loves fruit. Then please bring that. I'll buy some wine and bring it."
     ],
     "options": [
      "Flowers",
@@ -602,12 +602,12 @@
   },
   "why": {
    "zh": "依据：女的说：「先生は くだものが 大すきです。じゃあ、それを おねがいします。」\n推理：老师家院子里已经有很多花，老师也不太喜欢甜的，所以花和蛋糕都不行；男的提水果，女的拜托他带。葡萄酒是女的自己去买。\n容易错：「それ」指的是前面说的水果；别人负责的东西。",
-   "en": "Evidence: The woman says: 「先生は くだものが 大すきです。じゃあ、それを おねがいします。」\nReasoning: The teacher's garden is full of flowers and he doesn't care for sweets, so flowers and cake are out; the man suggests fruit and she asks him to bring it. The wine is hers to buy.\nTrap: 「それ」 points back to the fruit; something another person is bringing."
+   "en": "Evidence: The woman says: 「先生は くだものが 大すきです。じゃあ、それを おねがいします。」\nReasoning: The teacher's garden is full of flowers and the teacher doesn't care for sweets, so flowers and cake are out; the man suggests fruit and she asks him to bring it. The wine is hers to buy.\nTrap: 「それ」 points back to the fruit; something another person is bringing."
   },
   "wrong": [
    {
     "zh": "老师家的院子里已经有很多花了。",
-    "en": "The teacher already has lots of flowers in his garden."
+    "en": "The teacher already has lots of flowers in the garden."
    },
    {
     "zh": "老师不太喜欢甜的东西。",

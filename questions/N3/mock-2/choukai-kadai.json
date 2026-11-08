@@ -464,7 +464,7 @@
   "lines": [
    [
     "F",
-    "すみません、さっき乗った電車に、かばんを忘れてしまったんですが。交番に届けたほうがいいでしょうか。"
+    "すみません、さっき乗った電車に、かばんを忘れてしまったんですが。交番に行ったほうがいいでしょうか。"
    ],
    [
     "M",
@@ -507,7 +507,7 @@
     "scene": "车站窗口，一个女人和站务员在说话。",
     "question": "女人接下来要去哪里？",
     "lines": [
-     "不好意思，我把包忘在刚才坐的电车上了。是不是应该报到派出所？",
+     "不好意思，我把包忘在刚才坐的电车上了。是不是应该去派出所？",
      "电车里的失物由车站保管，没关系的。是几点左右的电车？",
      "两点十分左右在这站下的车。是开往终点山川的车。黑色的包，里面有电脑。",
      "请稍等。我现在给终点站打电话问问。……找到了。说是在山川站保管着。",
@@ -527,7 +527,7 @@
     "scene": "At a station counter, a woman and a station attendant are talking.",
     "question": "Where will the woman go now?",
     "lines": [
-     "Excuse me, I left my bag on the train I just got off. Should I report it at the police box?",
+     "Excuse me, I left my bag on the train I just got off. Should I go to the police box?",
      "Things left on trains are kept by the station, so that's fine. About what time was the train?",
      "I got off at this station around ten past two. It was bound for Yamakawa, the last stop. It's a black bag with a laptop in it.",
      "One moment, please. I'll phone the terminal station and ask. ... Here it is. They say Yamakawa Station has it.",
@@ -651,8 +651,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的先算「ぼくたちと子ども二人と、妹さんで五枚」；后来「妹さんの分はいらない」，佑太五岁「切符はいらない」，女的说「ひざの上に座らせればいい」。\n推理：五张减去妹妹一张，再减去不用票的佑太一张，剩下夫妻二人加大一点的孩子，共三张。\n容易错：停在一开始说的「五枚」；只减掉一个人得四张；把两个孩子都减掉得两张。",
-   "en": "Evidence: He first counts 「ぼくたちと子ども二人と、妹さんで五枚」; then 「妹さんの分はいらない」, and five-year-old Yuta 「切符はいらない」 because 「ひざの上に座らせればいい」.\nReasoning: Five minus the sister minus Yuta leaves the couple and the older child: three.\nTrap: stopping at the first 「五枚」; subtracting only one person (four); dropping both children (two)."
+   "zh": "依据：男的先算「ぼくたちと子ども二人と、妹さんで五枚」；后来「妹さんの分はいらない」，佑太五岁「切符はいらない」，女的说「ひざの上に座らせればいい」。\n推理：五张减去妹妹一张，再减去不用票的佑太一张，剩下夫妻二人加另一个孩子，共三张。\n容易错：停在一开始说的「五枚」；只减掉一个人得四张；把两个孩子都减掉得两张。",
+   "en": "Evidence: He first counts 「ぼくたちと子ども二人と、妹さんで五枚」; then 「妹さんの分はいらない」, and five-year-old Yuta 「切符はいらない」 because 「ひざの上に座らせればいい」.\nReasoning: Five minus the sister minus Yuta leaves the couple and the other child: three.\nTrap: stopping at the first 「五枚」; subtracting only one person (four); dropping both children (two)."
   },
   "wrong": [
    {

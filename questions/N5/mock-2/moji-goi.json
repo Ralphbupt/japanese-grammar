@@ -286,8 +286,8 @@
         "en": "「車」 is くるま (car), similar in shape but not east."
       },
       {
-        "zh": "「束」读「たば」（捆），比「東」少了中间的「日」。",
-        "en": "「束」 is たば (bundle); it lacks the 「日」 in the middle."
+        "zh": "「束」读「たば」（捆），中间是「口」，「東」中间是「日」。",
+        "en": "「束」 is たば (bundle); its middle is 「口」, where 「東」 has 「日」."
       },
       {
         "zh": "「果」读「か」（如「果物」），上面是「田」。",
@@ -356,8 +356,8 @@
     "wrong": [
       null,
       {
-        "zh": "「反」读「はん」（相反），和「友」只差一笔。",
-        "en": "「反」 is はん (opposite) — one stroke away from 「友」."
+        "zh": "「反」读「はん」（相反），字形和「友」很像，左上部分不同。",
+        "en": "「反」 is はん (opposite) — it looks like 「友」 but the top-left differs."
       },
       {
         "zh": "「支」读「し」（支持），上面是「十」。",
@@ -397,8 +397,8 @@
       },
       null,
       {
-        "zh": "「ヌ」读「ぬ」，和「ス」只差一笔。",
-        "en": "ヌ is ぬ — one stroke away from ス."
+        "zh": "「ヌ」读「ぬ」，和「ス」很像，第二笔的位置不同。",
+        "en": "ヌ is ぬ — it looks like ス, but the second stroke sits differently."
       },
       {
         "zh": "「ソ」读「そ」，和「ン」笔画方向不同。",
@@ -636,8 +636,8 @@
     },
     "wrong": [
       {
-        "zh": "「つく」是到达，八点才到公司，七点不是“到家”。",
-        "en": "「つく」 is arrive; the arrival is at the office at eight."
+        "zh": "「つく」是到达，说「いえに つく」，不用「を」；而且早上七点是从家出发，不是到家。",
+        "en": "「つく」 (arrive) takes 「に」, not 「を」, and at seven you're leaving home, not arriving."
       },
       null,
       {
@@ -658,13 +658,13 @@
     "options": [
       "タクシー",
       "ニュース",
-      "ページ",
+      "でんしゃ",
       "カレンダー"
     ],
     "okj": [
       null,
       null,
-      null,
+      "電車",
       null
     ],
     "kj": "荷物が多いですから、タクシーを呼びましょう。",
@@ -684,8 +684,8 @@
         "en": "「ニュース」 (news) is watched or heard, not called."
       },
       {
-        "zh": "「ページ」（页）不能「よぶ」，和行李也没关系。",
-        "en": "A 「ページ」 (page) can't be called and has nothing to do with luggage."
+        "zh": "「でんしゃ」（电车）是坐的（「でんしゃに のる」），不能「よぶ」叫到身边来。",
+        "en": "A 「でんしゃ」 (train) is ridden (「でんしゃに のる」); you can't call one to you."
       },
       {
         "zh": "「カレンダー」（日历）不能「よぶ」。",
@@ -702,13 +702,13 @@
       "この ほんは おもしろかったです。",
       "この ほんは おもしろくなかったです。",
       "この ほんは むずかしかったです。",
-      "この ざっしは おもしろくなかったです。"
+      "この ほんは たかくなかったです。"
     ],
     "okj": [
       "この 本は 面白かったです。",
       "この 本は 面白くなかったです。",
       "この 本は 難しかったです。",
-      "この 雑誌は 面白くなかったです。"
+      "この 本は 高くなかったです。"
     ],
     "kj": "この本はつまらなかったです。",
     "answer": 1,
@@ -731,8 +731,8 @@
         "en": "「むずかしかった」 (difficult) isn't the same as boring."
       },
       {
-        "zh": "意思对，但说的是「ざっし」（杂志），不是「ほん」。",
-        "en": "The meaning matches, but it's about a 「ざっし」 (magazine), not the book."
+        "zh": "「たかくなかった」是不贵，说的是价格，不是有没有意思。",
+        "en": "「たかくなかった」 (wasn't expensive) is about the price, not whether it was interesting."
       }
     ]
   },

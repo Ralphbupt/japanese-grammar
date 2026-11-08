@@ -6,7 +6,7 @@
     "intro": "次の文章は、新聞に掲載されたエッセイである。",
     "passage": "朝、天気予報で「降水確率三十パーセント」と聞くと、傘を持って出るべきか毎回迷う。三割なら、降らない可能性のほうが高い。[[1]]、荷物はできるだけ増やしたくない。そう考えて、私はたいてい傘を置いて出かけてしまう。\nところが先日、ある気象予報士の話を聞いて考えが変わった。降水確率とは、同じような気象条件の日が百回あった[[2]]、そのうち何回雨が降るかを表した数字だそうだ。三十パーセントというのは、十日のうち三日は降るということであり、決して低い数字ではない。\nしかも、この数字は雨の強さとは関係がない。確率が低くても激しく降ることもあれば、確率が高くても小雨で終わることもある。数字が低いからといって、安心してばかり[[3]]のだ。\nそれ以来、私は折りたたみ傘をいつもかばんに入れておくようにしている。重いと感じることもあるが、急な雨にあわてることを考えれば、この程度の重さは[[4]]。数字をどう受け止めるかは結局自分次第だが、その意味を正しく知っているかどうかで、行動は大きく変わる[[5]]。",
     "tr": {
-      "zh": "早上听天气预报说“降水概率百分之三十”，我每次都犹豫要不要带伞出门。三成的话，不下雨的可能性更大。再说，行李我也想尽量少带。这么一想，我多半就把伞留在家里出门了。\n可是前几天，听了一位气象预报员的话，我的想法改变了。据说降水概率是这样一个数字：假如有一百天气象条件差不多，其中有几天会下雨。百分之三十就是十天里有三天下雨，绝不是一个低的数字。\n而且，这个数字和雨的大小没有关系。概率低也可能下得很大，概率高也可能只是小雨。所以不能因为数字低就一味放心。\n从那以后，我总是把折叠伞放在包里。有时也会觉得重，但想想突然下雨时手忙脚乱的样子，这点重量算不了什么。怎样看待这个数字终究取决于自己，但是否正确了解它的含义，行动不是会大不相同吗？",
+      "zh": "早上听天气预报说“降水概率百分之三十”，我每次都犹豫要不要带伞出门。三成的话，不下雨的可能性更大。再说，行李我也想尽量少带。这么一想，我多半就把伞留在家里出门了。\n可是前几天，听了一位气象预报员的话，我的想法改变了。据说降水概率是这样一个数字：假如有一百天气象条件差不多，其中有几天会下雨。百分之三十就是十天里有三天下雨，绝不是一个低的数字。\n而且，这个数字和雨的大小没有关系。概率低也可能下得很大，概率高也可能只是小雨。所以不能因为数字低就一味放心。\n从那以后，我总是把折叠伞放在包里。有时也会觉得重，但想想突然下雨时手忙脚乱的样子，这点重量算不了什么。怎样看待这个数字终究取决于自己，但是否正确了解它的含义，会让行动大不相同，不是吗？",
       "en": "When the morning forecast says ‘a 30 percent chance of rain’, I always hesitate over whether to take an umbrella. At 30 percent, it’s more likely not to rain. Besides, I’d rather not carry any more than I have to. With that in mind, I usually leave the umbrella at home.\nThe other day, though, something a weather forecaster said changed my mind. The chance of rain, apparently, is a number that says: if there were a hundred days with similar weather conditions, on how many of them it would rain. Thirty percent means rain on three days out of ten — by no means a low figure.\nWhat’s more, the number has nothing to do with how hard it rains. It can pour when the chance is low and only drizzle when it is high. A low number is no reason to just relax.\nSince then I always keep a folding umbrella in my bag. It sometimes feels heavy, but when I think of being caught out by a sudden shower, a little weight like that is a small price. How you take the number is up to you in the end, but doesn’t knowing what it really means make a big difference to what you do?"
     },
     "questions": [
@@ -57,7 +57,7 @@
             "en": "「としても」 (‘even if’) is concessive and doesn’t fit a definition of how many of those days it rains."
           },
           {
-            "zh": "「とたんに」要接动词た形，表示“刚一……就”，是现实中接连发生的事，不是假设。",
+            "zh": "「とたんに」表示“刚一……就”，是现实中接连发生的两件事，不是假设。",
             "en": "「とたんに」 (‘the moment that’) describes two real events in quick succession, not a hypothesis."
           },
           {
@@ -187,7 +187,7 @@
             "en": "Changes after 6 p.m. are still possible — by phone; they aren’t ruled out."
           },
           {
-            "zh": "不联系就不来算作爽约；而且过了18点要打电话，不是在网站上办。",
+            "zh": "不联系就直接另约一天，原来的预约就成了无故爽约；而且过了18点只能打电话，不能在网站上办。",
             "en": "Not contacting the clinic counts as a no-show, and after 6 p.m. the change must be made by phone."
           }
         ]
@@ -247,17 +247,17 @@
     },
     "questions": [
       {
-        "q": "来月、営業部から企画部へ異動する人が新しい名刺を作る場合、まず何をしなければならないか。",
+        "q": "来月、営業部から企画部へ異動する人が新しい名刺を注文する前に、しておかなければならないことは何か。",
         "options": [
           "総務部に新しい部署名をメールで知らせる。",
           "申し込みページで部署名を自分で書き直す。",
-          "人事部で変更の登録が済んでいるか確かめる。",
-          "5営業日前までに、上司に注文を頼んでおく。"
+          "人事の記録が新しい部署に変わっているか確かめる。",
+          "異動が正式に決まる前に、今の内容で注文しておく。"
         ],
         "answer": 2,
         "why": {
-          "zh": "依据：「異動が決まった方は、まず人事部で変更が登録されているかを確認してから、ご注文ください」。\n推理：调动属于名片内容变化；人事部登记完成前，页面不显示新部门，所以第一步是确认登记。「確認する」＝选项「確かめる」。\n容易错：选“通知总务部”的，套用了「これまでは総務部がまとめて注文していました」这一旧做法。",
-          "en": "Evidence: 「異動が決まった方は、まず人事部で変更が登録されているかを確認してから、ご注文ください」.\nReasoning: A transfer changes the card; until HR registers it, the page won’t show the new department, so the first step is checking that. 「確認する」 = the option’s 「確かめる」.\nTrap: Telling General Affairs follows the old system in 「これまでは総務部がまとめて注文していました」."
+          "zh": "依据：「異動が決まった方は、まず人事部で変更が登録されているかを確認してから、ご注文ください」。\n推理：调动属于名片内容变化；人事部登记完成前，页面不显示新部门，所以订购前要先确认登记。选项「人事の記録が新しい部署に変わっているか」＝原文「人事部で変更が登録されているか」，「確かめる」＝「確認する」。\n容易错：选“通知总务部”的，套用了「これまでは総務部がまとめて注文していました」这一旧做法。",
+          "en": "Evidence: 「異動が決まった方は、まず人事部で変更が登録されているかを確認してから、ご注文ください」.\nReasoning: A transfer changes the card; until HR registers it, the page won’t show the new department, so that must be checked before ordering. The option’s 「人事の記録が新しい部署に変わっているか」 restates 「人事部で変更が登録されているか」, and 「確かめる」 = 「確認する」.\nTrap: Telling General Affairs follows the old system in 「これまでは総務部がまとめて注文していました」."
         },
         "wrong": [
           {
@@ -270,8 +270,8 @@
           },
           null,
           {
-            "zh": "「5営業日」是到货所需时间，并没有说要请上司订购。",
-            "en": "「5営業日」 is the delivery time; nothing says to ask your manager to order."
+            "zh": "文中说「異動が決まった方は…確認してから、ご注文ください」，没有让人在调动确定前按旧信息订购。",
+            "en": "The text says 「異動が決まった方は…確認してから、ご注文ください」; nothing says to order with the old details before the transfer is settled."
           }
         ]
       }
@@ -366,7 +366,7 @@
     "passage": "図書館といえば、静かに本を読んだり勉強したりする場所だというのが一般的なイメージだろう。ところが最近、会話をしてもよいエリアを設ける図書館が各地で増えている。ある市の図書館では、昨年の改装に合わせて一階を「話せるフロア」とし、グループで調べものをしたり、子どもに絵本を読み聞かせたりできるようにした。\nきっかけは、利用者の減少だった。特に若い世代は、友人と相談しながら課題に取り組むことが多く、「声を出せない図書館は使いにくい」という意見が以前から寄せられていたという。改装後、一階には高校生や子ども連れの家族が集まるようになり、一年で来館者数は改装前の一・五倍になった。\n一方で、静かな環境を求める利用者への配慮も欠かせない。この図書館では、二階と三階をこれまでどおり会話禁止とし、一階との間には音が伝わりにくい扉を設けた。館長は「にぎやかさと静けさのどちらかを選ぶのではなく、どちらも用意しておくことが大切だ」と話す。図書館は、本を貸すだけの場所から、人が集まり、ともに学ぶ場所へと変わりつつあるのかもしれない。",
     "tr": {
       "zh": "说到图书馆，一般的印象是安静地看书、学习的地方吧。可是最近，各地设立可以交谈区域的图书馆越来越多。某市的图书馆借去年改装之机，把一楼设为“可以说话的楼层”，让人们可以分组查资料，或者给孩子读绘本。\n起因是利用者减少。据说，尤其是年轻一代常常和朋友商量着完成作业，一直有人反映“不能出声的图书馆不好用”。改装后，一楼聚集了高中生和带孩子的家庭，一年间来馆人数达到改装前的1.5倍。\n另一方面，对追求安静环境的利用者的照顾也不可缺少。这家图书馆让二楼和三楼照旧禁止交谈，并在与一楼之间装了不易传声的门。馆长说：“重要的不是在热闹和安静之间二选一，而是两者都准备好。”图书馆也许正在从只是借书的地方，变成人们聚集、一起学习的地方。",
-      "en": "Most people picture a library as a place to read or study in silence. Recently, though, libraries in many places have been setting aside areas where talking is allowed. One city library, when it was refurbished last year, turned its ground floor into a ‘talking floor’ where people can research things in groups or read picture books aloud to children.\nThe trigger was falling use. Young people in particular often work on assignments while discussing them with friends, and the library had long been hearing that ‘a library where you can’t speak is hard to use’. After the refurbishment, high-school students and families with children began gathering on the ground floor, and within a year visitor numbers were one and a half times what they had been.\nAt the same time, users who want quiet must also be considered. This library kept the second and third floors no-talking as before and installed sound-blocking doors between them and the ground floor. ‘The point is not to choose between liveliness and quiet but to provide both,’ says the director. Libraries may be changing from places that just lend books into places where people gather and learn together."
+      "en": "Most people picture a library as a place to read or study in silence. Recently, though, libraries in many places have been setting aside areas where talking is allowed. One city library, when it was refurbished last year, turned its first floor into a ‘talking floor’ where people can research things in groups or read picture books aloud to children.\nThe trigger was falling use. Young people in particular often work on assignments while discussing them with friends, and the library had long been hearing that ‘a library where you can’t speak is hard to use’. After the refurbishment, high-school students and families with children began gathering on the first floor, and within a year visitor numbers were one and a half times what they had been.\nAt the same time, users who want quiet must also be considered. This library kept the second and third floors no-talking as before and installed sound-blocking doors between them and the first floor. ‘The point is not to choose between liveliness and quiet but to provide both,’ says the director. Libraries may be changing from places that just lend books into places where people gather and learn together."
     },
     "questions": [
       {
@@ -409,16 +409,16 @@
         "answer": 3,
         "why": {
           "zh": "依据：「二階と三階をこれまでどおり会話禁止とし、一階との間には音が伝わりにくい扉を設けた」。\n推理：一楼可以说话，二、三楼禁止；两者之间装了不易传声的门＝选项「音を防ぐ工夫」。\n容易错：把楼层弄反的选项——安静的是二、三楼，不是一楼。",
-          "en": "Evidence: 「二階と三階をこれまでどおり会話禁止とし、一階との間には音が伝わりにくい扉を設けた」.\nReasoning: Talking on the ground floor, none on floors two and three, with sound-blocking doors between = the option’s 「音を防ぐ工夫」.\nTrap: The option that swaps the floors — the quiet ones are two and three, not the ground floor."
+          "en": "Evidence: 「二階と三階をこれまでどおり会話禁止とし、一階との間には音が伝わりにくい扉を設けた」.\nReasoning: Talking on the first floor, none on floors two and three, with sound-blocking doors between = the option’s 「音を防ぐ工夫」.\nTrap: The option that swaps the floors — the quiet ones are two and three, not the first floor."
         },
         "wrong": [
           {
             "zh": "只有一楼可以交谈，二楼和三楼「これまでどおり会話禁止」。",
-            "en": "Only the ground floor allows talking; floors two and three stay 「これまでどおり会話禁止」."
+            "en": "Only the first floor allows talking; floors two and three stay 「これまでどおり会話禁止」."
           },
           {
             "zh": "一楼正是“可以说话的楼层”，禁止交谈的是二楼和三楼。",
-            "en": "The ground floor is the talking floor; it’s floors two and three that are no-talking."
+            "en": "The first floor is the talking floor; it’s floors two and three that are no-talking."
           },
           {
             "zh": "二楼照旧禁止交谈，没有因为高中生增加而改变。",
@@ -464,8 +464,8 @@
     "difficulty": 2,
     "passage": "引っ越して二年目の春、町内会の班長の役が回ってきた。班長の仕事は、回覧板を回したり、月に一度の清掃活動に人を集めたりすることだ。正直に言えば、気が重かった。仕事が忙しいうえに、近所に知り合いはほとんどいない。断る方法はないものかと考えたが、順番で決まることなので、引き受けるほかなかった。\n最初の清掃の日、集まったのは私を含めて五人だけだった。黙ってごみを拾っていると、隣の家の年配の男性が「あそこの側溝は、大雨が降るとすぐあふれるんだよ」と教えてくれた。ほかの人からも、夜になると真っ暗になる道や、車がスピードを出しやすい角の話が出た。毎日通っている道なのに、私は何一つ知らなかった。\nその後、班のみんなで相談して、暗い道に街灯を増やしてほしいと市に要望を出した。半年後に街灯がついたとき、例の男性は「班長さんのおかげだ」と言ってくれたが、実際に動いたのは話し合いに来てくれた全員だ。一年の任期を終えた今、私は近所の人と、あいさつ以上の話をするようになった。面倒だとばかり思っていた役が、この町を、ただ寝に帰る場所から自分の暮らす場所に変えてくれたのだと思う。",
     "tr": {
-      "zh": "搬家后的第二年春天，轮到我当町内会的班长。班长的工作是传阅板报、为每月一次的清扫活动召集人。说实话，我心情很沉重。工作忙不说，附近几乎没有熟人。我也想过有没有办法推掉，但这是按顺序轮的，只能接下来。\n第一次清扫那天，算上我只来了五个人。我默默地捡着垃圾，隔壁家的老先生告诉我：“那边的排水沟，一下大雨马上就会漫出来。”其他人也说起晚上一片漆黑的路，和车子容易开快的拐角。明明是每天走的路，我却一无所知。\n后来，班里大家商量后，向市里提出了希望在暗路上增加路灯的请求。半年后路灯装好时，那位老先生对我说“多亏了班长”，但实际出力的是来参加讨论的每一个人。一年任期结束的现在，我和邻居之间会聊打招呼以外的话了。我一直以为麻烦的这个职务，让这个小镇从我只是回来睡觉的地方，变成了我生活的地方。",
-      "en": "In the spring of my second year after moving, it was my turn to be a block leader in the neighbourhood association. The job is passing round the circular and getting people to turn out for the monthly clean-up. To be honest, I dreaded it. I was busy at work, and I hardly knew anyone nearby. I wondered whether there was some way to say no, but since it goes by rotation, I had no choice but to accept.\nOn the first clean-up day, only five people came, including me. As I picked up litter in silence, the elderly man next door told me, ‘That gutter over there overflows as soon as it rains hard.’ Others mentioned a road that goes pitch-dark at night and a corner where cars tend to speed. I walked those streets every day and knew none of it.\nAfterwards our group talked it over and asked the city for more street lights on the dark road. When they went up six months later, the man said, ‘We owe it to you, block leader,’ but the ones who actually made it happen were everyone who came to the meetings. Now that my one-year term is over, I talk with my neighbours about more than the weather. The role I thought of as nothing but a chore turned this town from a place I just came back to sleep into the place where I live."
+      "zh": "搬家后的第二年春天，轮到我当町内会的班长。班长的工作是传递回览板、为每月一次的清扫活动召集人。说实话，我心情很沉重。工作忙不说，附近几乎没有熟人。我也想过有没有办法推掉，但这是按顺序轮的，只能接下来。\n第一次清扫那天，算上我只来了五个人。我默默地捡着垃圾，隔壁家的老先生告诉我：“那边的排水沟，一下大雨马上就会漫出来。”其他人也说起晚上一片漆黑的路，和车子容易开快的拐角。明明是每天走的路，我却一无所知。\n后来，班里大家商量后，向市里提出了希望在暗路上增加路灯的请求。半年后路灯装好时，那位老先生对我说“多亏了班长”，但实际出力的是来参加讨论的每一个人。一年任期结束的现在，我和邻居之间会聊打招呼以外的话了。我一直以为麻烦的这个职务，让这个小镇从我只是回来睡觉的地方，变成了我生活的地方。",
+      "en": "In the spring of my second year after moving, it was my turn to be a block leader in the neighbourhood association. The job is passing round the circular and getting people to turn out for the monthly clean-up. To be honest, I dreaded it. I was busy at work, and I hardly knew anyone nearby. I wondered whether there was some way to say no, but since it goes by rotation, I had no choice but to accept.\nOn the first clean-up day, only five people came, including me. As I picked up litter in silence, the elderly man next door told me, ‘That gutter over there overflows as soon as it rains hard.’ Others mentioned a road that goes pitch-dark at night and a corner where cars tend to speed. I walked those streets every day and knew none of it.\nAfterwards our group talked it over and asked the city for more street lights on the dark road. When they went up six months later, the man said, ‘We owe it to you, block leader,’ but the ones who actually made it happen were everyone who came to the meetings. Now that my one-year term is over, I talk with my neighbours about more than just saying hello. The role I thought of as nothing but a chore turned this town from a place I just came back to sleep into the place where I live."
     },
     "questions": [
       {
@@ -631,12 +631,12 @@
           "授業の最後の十分間に、全員が同じ計算の練習をしている。",
           "宿題をなくしてから、家で勉強しなくなった子どもはいない。",
           "宿題を出すのをやめたのは、高い学年の子どもに対してだけだ。",
-          "今後は、家での学び方を子ども自身が考える授業を行う予定だ。"
+          "家での勉強のしかたを子どもに考えさせる授業が、今後始まる。"
         ],
         "answer": 3,
         "why": {
-          "zh": "依据：「学校は今後、家庭での学び方を子ども自身が考える授業を取り入れる予定だ」。\n推理：「家庭での学び方」＝选项「家での学び方」，「取り入れる予定」＝「行う予定」。\n容易错：「家で全く勉強しなくなった子もいる」在「ただ」后面，是取消作业带来的问题，容易被忽略而选“没有这样的孩子”。",
-          "en": "Evidence: 「学校は今後、家庭での学び方を子ども自身が考える授業を取り入れる予定だ」.\nReasoning: 「家庭での学び方」 = the option’s 「家での学び方」, and 「取り入れる予定」 = 「行う予定」.\nTrap: 「家で全く勉強しなくなった子もいる」 comes after 「ただ」 as a downside and is easy to miss, leading to the ‘no such children’ option."
+          "zh": "依据：「学校は今後、家庭での学び方を子ども自身が考える授業を取り入れる予定だ」。\n推理：「家庭での学び方を子ども自身が考える授業」＝选项「家での勉強のしかたを子どもに考えさせる授業」，「今後…取り入れる予定」＝「今後始まる」。\n容易错：「家で全く勉強しなくなった子もいる」在「ただ」后面，是取消作业带来的问题，容易被忽略而选“没有这样的孩子”。",
+          "en": "Evidence: 「学校は今後、家庭での学び方を子ども自身が考える授業を取り入れる予定だ」.\nReasoning: 「家庭での学び方を子ども自身が考える授業」 = the option’s 「家での勉強のしかたを子どもに考えさせる授業」, and 「今後…取り入れる予定」 = 「今後始まる」.\nTrap: 「家で全く勉強しなくなった子もいる」 comes after 「ただ」 as a downside and is easy to miss, leading to the ‘no such children’ option."
         },
         "wrong": [
           {
@@ -876,8 +876,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "依据：「会員割引とほかの割引の両方の条件に当てはまる場合は、割引額の大きいほうを適用します」；「クール便…サイズ60・80：220円」「追加料金は割引の対象になりません」。\n推理：①尺寸80寄其他地区：1,700日元。②会员九折减170日元，自送只减100日元，取大的：1,700−170＝1,530日元。③冷链附加费220日元不打折：1,530＋220＝1,750日元。\n容易错：把运费和附加费一起打九折；或以为会员折扣和自送折扣可以叠加。",
-          "en": "Evidence: 「会員割引とほかの割引の両方の条件に当てはまる場合は、割引額の大きいほうを適用します」; 「クール便…サイズ60・80：220円」「追加料金は割引の対象になりません」.\nReasoning: (1) Size 80 to other regions: ¥1,700. (2) Member 10% = ¥170 off vs drop-off ¥100; the larger applies: ¥1,530. (3) The ¥220 chilled surcharge isn’t discounted: ¥1,530 + ¥220 = ¥1,750.\nTrap: Taking 10% off the surcharge too, or stacking member and drop-off discounts."
+          "zh": "依据：「会員割引とほかの割引の両方の条件に当てはまる場合は、割引額の大きいほうを適用します」；「クール便…サイズ60・80：220円」「追加料金は割引の対象になりません」。\n推理：①尺寸80寄其他地区：1,700日元。②会员九折减170日元，自送只减100日元，取大的：1,700−170＝1,530日元。③冷链附加费220日元不打折：1,530＋220＝1,750日元。\n容易错：把运费和附加费一起打九折；或用了较小的自送折扣（−100）。",
+          "en": "Evidence: 「会員割引とほかの割引の両方の条件に当てはまる場合は、割引額の大きいほうを適用します」; 「クール便…サイズ60・80：220円」「追加料金は割引の対象になりません」.\nReasoning: (1) Size 80 to other regions: ¥1,700. (2) Member 10% = ¥170 off vs drop-off ¥100; the larger applies: ¥1,530. (3) The ¥220 chilled surcharge isn’t discounted: ¥1,530 + ¥220 = ¥1,750.\nTrap: Taking 10% off the surcharge too, or using the smaller drop-off discount (−¥100)."
         },
         "wrong": [
           {
