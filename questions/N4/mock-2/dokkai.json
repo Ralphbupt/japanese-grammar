@@ -204,7 +204,7 @@
         "okj": [
           "けんじさんの作文を紙に書いて、先生に渡す。",
           null,
-          null,
+          "けんじさんの作文を手伝って、一緒に書く。",
           "けんじさんから来た作文を先生にメールで送る。"
         ],
         "answer": 3,
@@ -424,13 +424,13 @@
         ],
         "answer": 0,
         "why": {
-          "zh": "依据：「子どもと いっしょに 来た 大人は、入館券が 300円 安く なります」；「えさやり：…一人 500円」。\n推理：第三个星期日是「家族の 日」，中村先生带孩子来：1,500−300＝1,200日元；女儿800日元；喂企鹅只有女儿做，500日元。合计2,500日元。\n容易错：忘了家庭日的优惠，或者把中村先生也算进喂企鹅的费用。",
+          "zh": "依据：「子どもと いっしょに 来た 大人は、入館券が 300円 安く なります」；「えさやり：…一人 500円」。\n推理：第三个星期日是「家族の 日」，中村带孩子来：1,500−300＝1,200日元；女儿800日元；喂企鹅只有女儿做，500日元。合计2,500日元。\n容易错：忘了家庭日的优惠，或者把中村也算进喂企鹅的费用。",
           "en": "Evidence: 「子どもと いっしょに 来た 大人は、入館券が 300円 安く なります」; 「えさやり：…一人 500円」.\nReasoning: The third Sunday is 「家族の 日」 and Mr Nakamura comes with his child: 1,500 − 300 = 1,200 yen; his daughter 800 yen; only she feeds the penguins, 500 yen. Total 2,500 yen.\nTrap: Forgetting the Family Day discount, or charging the feeding fee for the father as well."
         },
         "wrong": [
           null,
           {
-            "zh": "3,000日元把中村先生的喂企鹅费也算上了，可他「見て いるだけ」。",
+            "zh": "3,000日元把中村的喂企鹅费也算上了，可他「見て いるだけ」。",
             "en": "¥3,000 charges the father for feeding too, but he is 「見て いるだけ」."
           },
           {
@@ -438,7 +438,7 @@
             "en": "¥2,000 leaves out the ¥500 penguin-feeding fee."
           },
           {
-            "zh": "2,800日元没有减家庭日的300日元，可那天是第三个星期日，中村先生带着孩子。",
+            "zh": "2,800日元没有减家庭日的300日元，可那天是第三个星期日，中村带着孩子。",
             "en": "¥2,800 misses the ¥300 Family Day discount, though it's the third Sunday and he brings his child."
           }
         ]
@@ -465,7 +465,7 @@
         },
         "wrong": [
           {
-            "zh": "山田先生下午1点才到，上午11点的表演已经结束了。",
+            "zh": "山田下午1点才到，上午11点的表演已经结束了。",
             "en": "He arrives at 1 pm, after the 11:00 show is over."
           },
           {
