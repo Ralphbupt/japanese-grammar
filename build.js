@@ -391,10 +391,22 @@ const GTAG_DEFERRED = `<script>
     firstVisit = !m;
     store('jp_ga_cid', cid);
   }
-  // Session: new after 30 min without a hit. s = { id, n (count), t (last hit), pv }.
-  var sess; try { sess = JSON.parse(store('jp_ga_sess')); } catch (e) {}
-  var newSession = !sess || now() - sess.t > 30 * 60 * 1000;
-  if (newSession) sess = { id: Math.floor(now() / 1000), n: ((sess && sess.n) || 0) + 1, t: 0, pv: 0 };
+  // Session: new after 30 min without a hit. s = { id, n (count), t (last hit, 0 = none yet), pv }.
+  // Checked again on every hit, not just at page load: practice / listening /
+  // mock pages stay open for hours without a reload, and a hit sent with a
+  // session GA has already closed opens a session with no session_start, so
+  // no source or landing page ("Unassigned"). A hit also picks up a session
+  // another tab started meanwhile.
+  var SESSION_MS = 30 * 60 * 1000;
+  function readSess() { try { return JSON.parse(store('jp_ga_sess')); } catch (e) { return null; } }
+  function fresh(s) { return s && s.id && now() - s.t <= SESSION_MS; }
+  var sess = readSess();
+  if (!fresh(sess)) sess = { id: Math.floor(now() / 1000), n: ((sess && sess.n) || 0) + 1, t: 0, pv: 0 };
+  function syncSess() {
+    var st = readSess();
+    if (fresh(st)) { if (st.id !== sess.id) sess = st; }
+    else if (sess.t && now() - sess.t > SESSION_MS) sess = { id: Math.floor(now() / 1000), n: sess.n + 1, t: 0, pv: 0 };
+  }
 
   var seq = 0, pageId = rnd(), started = false, queue = [];
   // Engagement time (_et): only while the tab is visible AND its window has
@@ -420,12 +432,15 @@ const GTAG_DEFERRED = `<script>
   window.addEventListener('focus', act);
   window.addEventListener('blur', bank);
   function send(name, params, extra) {
+    syncSess();
+    if (name === 'page_view') sess.pv++;
     var q = {
       v: 2, tid: TID, cid: cid, sid: sess.id, sct: sess.n, _p: pageId, _s: ++seq,
       seg: sess.pv > 1 || engagedMs + (visibleSince ? now() - visibleSince : 0) > 10000 ? 1 : 0,
       dl: location.href, dt: document.title, ul: (navigator.language || '').toLowerCase(),
       sr: screen.width + 'x' + screen.height, en: name
     };
+    if (!sess.t) q._ss = 1;                       // first hit of the session
     if (document.referrer && seq === 1) q.dr = document.referrer;
     if (debug) q._dbg = 1;
     if (KEY_EVENTS.indexOf(name) >= 0) q._c = 1;
@@ -445,9 +460,7 @@ const GTAG_DEFERRED = `<script>
   function start() {
     if (started) return;
     started = true;
-    sess.pv++;
     var extra = {};
-    if (newSession) extra._ss = 1;
     if (firstVisit) extra._fv = 1;
     send('page_view', {}, extra);
     queue.forEach(function(e) { send(e[0], e[1], { _et: takeEngaged() }); });
