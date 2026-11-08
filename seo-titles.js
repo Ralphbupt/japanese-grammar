@@ -476,6 +476,27 @@ module.exports = {
     descZh: "日语 N1 语法高频考点整理：最常考的 40 个语法点（接续、意思、例句），最容易混的几组辨析，考试技巧，最后 10 道自测题带答案。",
     level: "N1",
   },
+  "jlpt-listening-tips": {
+    en: "JLPT Listening Tips — How to Answer Each Question Type (N5–N1)",
+    zh: "JLPT 听力技巧 — 各题型怎么听、先看什么、常见陷阱（N5–N1）",
+    desc: "How to answer every JLPT listening item type, N5 to N1: what to read before the audio, what to listen for, the usual traps, and how to practise.",
+    descZh: "JLPT 听力各题型怎么做：课题理解、要点理解、概要理解、发话表现、即时应答、综合理解，听前看什么、听什么、常见陷阱和练习方法。",
+    level: "JLPT",
+  },
+  "jlpt-reading-tips": {
+    en: "JLPT Reading Tips — Time per Passage & How to Find the Answer (N5–N1)",
+    zh: "JLPT 阅读技巧 — 时间分配、先看题还是先看文章、常见陷阱（N5–N1）",
+    desc: "How to answer every JLPT reading item type, N5 to N1: time per passage, question first or passage first, where the answer hides, and the usual traps.",
+    descZh: "JLPT 阅读各题型怎么做：每篇文章花多少时间、先看题还是先看文章、答案藏在哪里、信息检索怎么找、常见陷阱。",
+    level: "JLPT",
+  },
+  "jlpt-vocabulary-grammar-tips": {
+    en: "JLPT Vocabulary & Grammar Tips — Kanji Traps, Usage & Sentence Order ★ (N5–N1)",
+    zh: "JLPT 文字词汇与语法技巧 — 读音陷阱、用法题、排序题★（N5–N1）",
+    desc: "How to answer JLPT vocabulary and grammar items, N5 to N1: kanji reading traps, usage questions, choosing the grammar form, and the ★ sentence-order item.",
+    descZh: "JLPT 文字词汇和语法各题型怎么做：汉字读音的浊音促音长音陷阱、用法题、语法形式判断、排序题★的解法和时间分配。",
+    level: "JLPT",
+  },
   "jlpt-december-2026": {
     en: "JLPT December 2026 Guide — Test Times, Pass Marks & Final Review Plan",
     zh: "2026年12月JLPT考前指南 — 考试时长、合格线、考前冲刺计划",

@@ -621,6 +621,9 @@ const JA_TITLES = {
   // guides (grammar/guides/)
   "wa-vs-ga": "は vs が",
   "jlpt-december-2026": "JLPT 12月 考前指南",
+  "jlpt-listening-tips": "JLPT 聴解のコツ",
+  "jlpt-reading-tips": "JLPT 読解のコツ",
+  "jlpt-vocabulary-grammar-tips": "JLPT 文字・語彙・文法のコツ",
   "jlpt-n5-key-grammar": "N5 高频考点",
   "jlpt-n4-key-grammar": "N4 高频考点",
   "jlpt-n3-key-grammar": "N3 高频考点",
@@ -2170,8 +2173,10 @@ async function main() {
     <button type="button" class="nav-group" aria-expanded="false"><span class="nav-group-label"><span class="lang-zh">做题</span><span class="lang-en">Practice</span></span><span class="nav-caret" aria-hidden="true">▸</span></button>
     <div class="nav-group-items">
       <a class="nav-item nav-overview" href="${SITE_PATH}practice/"><span class="lang-zh">做题总览</span><span class="lang-en">Practice hub</span></a>
-      <a class="nav-item nav-overview" href="${SITE_PATH}listening/"><span class="lang-zh">听力总览</span><span class="lang-en">Listening hub</span></a>
-      ${practiceItems.map((q) => `<a class="nav-item" href="${q.href}"><span class="lang-zh">${q.lv} ${q.zh.replace(/^\S+\s/, "")}</span><span class="lang-en">${q.lv} ${q.en.replace(/^\S+\s/, "")}</span></a>`).join("\n      ")}
+      ${practiceItems.some((q) => q.href.endsWith("-listening/")) ? `<a class="nav-item nav-overview" href="${SITE_PATH}listening/"><span class="lang-zh">听力总览</span><span class="lang-en">Listening</span></a>` : ""}
+      <a class="nav-item nav-overview" href="${SITE_PATH}reading/"><span class="lang-zh">阅读总览</span><span class="lang-en">Reading</span></a>
+      <a class="nav-item nav-overview" href="${SITE_PATH}vocabulary/"><span class="lang-zh">词汇总览</span><span class="lang-en">Vocabulary</span></a>
+      <a class="nav-item nav-overview" href="${SITE_PATH}mock-test/"><span class="lang-zh">模拟题总览</span><span class="lang-en">Mock tests</span></a>
     </div>
   </div>`);
 
@@ -2483,6 +2488,11 @@ async function main() {
   var item = slug ? (sidebar.querySelector('a[data-target="' + slug + '"]')
           || sidebar.querySelector('.nav-group-wrap a[href$="/' + slug + '/"]')
           || sidebar.querySelector('a[href$="/' + slug + '/"]')) : null;
+  // A level's practice page (n3-reading, n3-cards …) lights up its hub in 做题.
+  if (!item && /^n[1-5]-/.test(slug || '')) {
+    var hub = slug.replace(/^n[1-5]-/, '');
+    item = sidebar.querySelector('.nav-group-wrap[data-level="practice"] a[href$="/' + (hub === 'cards' ? 'vocabulary' : hub) + '/"]');
+  }
   if (item) item.classList.add('active');
 
   function setExpanded(w, on) {
@@ -2861,7 +2871,7 @@ ${AI_SCRIPT}
   // ─── Generate individual lesson pages ───
   // Pages published once per language (PAGE_LANGS); links to them on a
   // non-root copy point at that language's copy.
-  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "practice", "listening", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
+  const localizedPageIds = new Set([...lessonPages.map(l => l.id), "N5", "N4", "N3", "N2", "N1", "guides", "grammar", "about", "practice", "listening", "reading", "vocabulary", "mock-test", ...["n5", "n4", "n3", "n2", "n1"].flatMap((l) => [`${l}-practice`, `${l}-listening`, `${l}-mock-test`, `${l}-cards`]), ...SUBSET_PAGES.flatMap((p) => p.levels.map((l) => `${l.toLowerCase()}-${p.id}`))]);
   // "Practice this point" at the end of every grammar point that has practice
   // questions (questions/N*/lessonNN.json refs), linking to the practice page.
   const quizRefCount = {};
@@ -4372,11 +4382,13 @@ ${lessonList}</section>`;
       <script>${HUB_PROGRESS_JS}</script>
       <p class="hub-listen">${en
         ? ckLevels.length ? `🎧 <b><a href="${SITE_PATH}listening/">Listening practice for every level</a>.</b> For real Japanese, the <a href="${podcastUrl(true, "practice-hub")}" target="_blank">Japanese Daily News podcast</a> has a real Japanese news story every day, with transcripts.` : `🎧 <b>Listening questions are planned, not built yet.</b> If you want them, <a href="#feedback" class="fb-open">say so</a> — demand decides what comes first. Meanwhile the <a href="${podcastUrl(true, "practice-hub")}" target="_blank">Japanese Daily News podcast</a> has a real Japanese news story every day, with transcripts.`
-        : ckLevels.length ? `🎧 <b><a href="${SITE_PATH}listening/">各级别的听力练习</a>。</b>想听真实的日语，可以用 <a href="${podcastUrl(false, "practice-hub")}" target="_blank">Japanese Daily News 播客</a>练听力（每天一则日语新闻，附原文和中文翻译）。` : `🎧 <b>听力题在规划中，还没做。</b>想要的话<a href="#feedback" class="fb-open">告诉我们</a>，想要的人多就先做。现在可以先用 <a href="${podcastUrl(false, "practice-hub")}" target="_blank">Japanese Daily News 播客</a>练听力（每天一则日语新闻，附原文和中文翻译）。`}</p>` };
+        : ckLevels.length ? `🎧 <b><a href="${SITE_PATH}listening/">各级别的听力练习</a>。</b>想听真实的日语，可以用 <a href="${podcastUrl(false, "practice-hub")}" target="_blank">Japanese Daily News 播客</a>练听力（每天一则日语新闻，附原文和中文翻译）。` : `🎧 <b>听力题在规划中，还没做。</b>想要的话<a href="#feedback" class="fb-open">告诉我们</a>，想要的人多就先做。现在可以先用 <a href="${podcastUrl(false, "practice-hub")}" target="_blank">Japanese Daily News 播客</a>练听力（每天一则日语新闻，附原文和中文翻译）。`}</p>
+      <p class="hub-listen">${en ? `By section: <a href="${SITE_PATH}listening/">listening</a> · <a href="${SITE_PATH}reading/">reading</a> · <a href="${SITE_PATH}vocabulary/">vocabulary</a> · <a href="${SITE_PATH}mock-test/">mock tests</a>. 💡 Tips: <a href="${SITE_PATH}jlpt-vocabulary-grammar-tips/">vocabulary &amp; grammar</a> · <a href="${SITE_PATH}jlpt-reading-tips/">reading</a> · <a href="${SITE_PATH}jlpt-listening-tips/">listening</a>.` : `按部分练：<a href="${SITE_PATH}listening/">听力</a> · <a href="${SITE_PATH}reading/">阅读</a> · <a href="${SITE_PATH}vocabulary/">词汇</a> · <a href="${SITE_PATH}mock-test/">模拟题</a>。💡 做题技巧：<a href="${SITE_PATH}jlpt-vocabulary-grammar-tips/">文字词汇与语法</a> · <a href="${SITE_PATH}jlpt-reading-tips/">阅读</a> · <a href="${SITE_PATH}jlpt-listening-tips/">听力</a>。`}</p>` };
     writeLangPage("practice", lang, localizePage(renderQuiz(lang, m, langVariant("practice", lang), "", null), lang, localizedPageIds));
   }
   quizPageIds.push("practice");
 
+  const tipsLink = (slug, L, zh, en) => fs.existsSync(path.join(__dirname, "grammar/guides", `${slug}.md`)) ? `<p class="hub-listen">💡 <b><a href="${SITE_PATH}${slug}/">${L(zh, en)}</a></b></p>` : "";
   // /listening/: the one page for "jlpt listening practice" with no level in the
   // query. The level pages stay the ones with the questions.
   if (ckLevels.length) {
@@ -4395,7 +4407,7 @@ ${lessonList}</section>`;
       <td><a class="hub-go" href="${SITE_PATH}${lv}-listening/"><b>${L("听力练习", "Listening practice")}</b><span>${L(`${x.recs} 段录音 · ${x.types.length} 种题型`, `${x.recs} recordings · ${x.types.length} item types`)}</span></a></td>
       <td>${x.mock ? `<a class="hub-go" href="${SITE_PATH}${lv}-mock-test/"><b>${L("模拟题", "Mock test")}</b><span>${L("听力在最后一场", "Listening is the last sitting")}</span></a>` : ""}</td></tr>`;
     };
-    const about = (L) => `<section class="quiz-about">
+    const about = (L) => `${tipsLink("jlpt-listening-tips", L, "听力做题技巧：每种题型先看什么、听什么，常见陷阱", "Listening tips: what to read first and listen for in each item type, and the usual traps")}<section class="quiz-about">
 <h2>${L("这里能练什么", "What you get")}</h2>
 <ul>
 <li>${L(`${total} 段原创录音，覆盖 N5 到 N1 的全部听力题型。`, `${total} original recordings, covering every listening item type from N5 to N1.`)}</li>
@@ -4452,6 +4464,110 @@ ${lessonList}</section>`;
       }, v, "", null), lang, localizedPageIds));
     }
     quizPageIds.push("listening");
+  }
+
+  // /reading/, /vocabulary/, /mock-test/: level-less hubs like /listening/, for
+  // "jlpt reading practice" style searches and the sidebar's 做题 group.
+  const ORDER5 = ["N5", "N4", "N3", "N2", "N1"].filter((l) => quizBundles[l]);
+  const typeNames = (types, L) => types.map((k) => L(QUIZ_TYPES[k].zh, QUIZ_TYPES[k].en)).join(L("、", ", "));
+  const subStats = (level, group) => {
+    const b = quizBundles[level], types = Object.keys(b.practice.types).filter((k) => b.practice.types[k].g === group);
+    const qs = b.practice.questions.filter((q) => types.includes(q.type));
+    return { types, qs: qs.length, passages: new Set(qs.map((q) => q.passage).filter(Boolean)).size };
+  };
+  const hubPage = (id, metaBy, rowsFor, aboutFor, resourceType) => {
+    for (const lang of PAGE_LANGS) {
+      const en = lang.code === "en", L = (zh, e) => (en ? e : zh), v = langVariant(id, lang), m = metaBy[lang.code];
+      writeLangPage(id, lang, localizePage(renderQuiz(lang, {
+        ...m, nav: "",
+        body: `<div class="table-scroll"><table class="hub-table"><tbody>${ORDER5.map((l) => rowsFor(l, L)).join("")}</tbody></table></div>`,
+        about: aboutFor(L),
+        schema: JSON.stringify([
+          { "@context": "https://schema.org", "@type": "LearningResource", name: m.h1, description: m.desc, url: v.url, inLanguage: en ? "en" : "zh-Hans", educationalLevel: "JLPT N5–N1", isAccessibleForFree: true, learningResourceType: resourceType, about: { "@type": "Thing", name: "Japanese language" }, provider: { "@type": "Organization", name: "jpnotes.dev", url: SITE } },
+          { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: en ? "Japanese Grammar Notes" : "日语语法笔记", item: SITE }, { "@type": "ListItem", position: 2, name: m.crumb, item: v.url }] },
+        ]).replace(/</g, "\\u003c"),
+      }, v, "", null), lang, localizedPageIds));
+    }
+    quizPageIds.push(id);
+    console.log(`  Generated dist/${id}/ (hub)`);
+  };
+  const faqFree = (L) => `<dt>${L("免费吗？要注册吗？", "Is it free? Do I need an account?")}</dt><dd>${L("完全免费，没有广告，不用注册。进度保存在这个浏览器里。", "It's free, with no ads and no sign-up. Progress stays in this browser.")}</dd>
+<dt>${L("是真题吗？", "Are these past-paper questions?")}</dt><dd>${L("不是。题目全部原创，按各级别真题的题型和难度设计。", "No. Every question is original, written to each level's formats and difficulty.")}</dd>`;
+
+  {
+    const st = Object.fromEntries(ORDER5.map((l) => [l, subStats(l, "dokkai")]));
+    const total = ORDER5.reduce((a, l) => a + st[l].passages, 0);
+    hubPage("reading", {
+      en: { title: "JLPT Reading Practice Online — Free N5 to N1 Passages with Translations", desc: `Free JLPT reading practice: ${total} original passages from N5 to N1 in every test format, with full translations and every option explained. No sign-up.`, h1: "JLPT Reading Practice", crumb: "Reading", lead: "Choose your level. Read, answer, then see why each option is right or wrong and read the full translation." },
+      zh: { title: "JLPT 阅读练习 - N5 到 N1 免费在线阅读题，带全文翻译", desc: `免费 JLPT 阅读在线练习：N5 到 N1 共 ${total} 篇原创文章，覆盖全部阅读题型，带全文翻译和逐项解析，打开即用，无需注册。`, h1: "JLPT 阅读练习", crumb: "阅读", lead: "选择你的级别。读完作答，再看每个选项为什么对、为什么错，以及全文翻译。" },
+    }, (level, L) => { const x = st[level], lv = level.toLowerCase(); return `<tr><th scope="row">${level}</th>
+      <td><a class="hub-go" href="${SITE_PATH}${lv}-reading/"><b>${L("阅读练习", "Reading practice")}</b><span>${L(`${x.passages} 篇文章 · ${x.qs} 题`, `${x.passages} passages · ${x.qs} questions`)}</span></a></td>
+      <td class="hub-types">${typeNames(x.types, L)}</td></tr>`; },
+    (L) => `${tipsLink("jlpt-reading-tips", L, "阅读做题技巧：每篇花多少时间、先看题还是先看文章", "Reading tips: time per passage, and whether to read the question first")}<section class="quiz-about">
+<h2>${L("这里能练什么", "What you get")}</h2>
+<ul>
+<li>${L(`${total} 篇原创文章，覆盖 N5 到 N1 的全部阅读题型：短文、中文、长文、综合理解、论点理解、信息检索。`, `${total} original passages covering every reading format from N5 to N1: short, mid-length and long passages, comparison, argument and information retrieval.`)}</li>
+<li>${L("答完看每个选项的解析和全文翻译。", "After answering, every option is explained and the whole passage is translated.")}</li>
+<li>${L("答错的题进错题本，过几天再练。", "Questions you miss come back in a review list a few days later.")}</li>
+</ul>
+<h2>${L("常见问题", "Questions")}</h2>
+<dl>${faqFree(L)}
+<dt>${L("阅读有最低分吗？", "Is there a minimum score for reading?")}</dt><dd>${L("N3 到 N1 的阅读单独计分，低于 19/60 即使总分过线也不合格；N4、N5 的阅读和文字词汇、语法合在一起计分。", "From N3 to N1 reading is scored on its own, and below 19/60 fails the test even with a passing total; at N4 and N5 it shares a score with vocabulary and grammar.")}</dd>
+</dl>
+</section>`, "Reading practice");
+  }
+
+  {
+    const st = Object.fromEntries(ORDER5.map((l) => [l, subStats(l, "moji")]));
+    const total = ORDER5.reduce((a, l) => a + st[l].qs, 0);
+    hubPage("vocabulary", {
+      en: { title: "JLPT Vocabulary Practice Online — Free N5 to N1 Kanji & Word Questions", desc: `Free JLPT vocabulary practice: ${total} exam-style questions from N5 to N1 on kanji readings, writing, word choice and usage, every option explained. No sign-up.`, h1: "JLPT Vocabulary Practice", crumb: "Vocabulary", lead: "Choose your level. Kanji readings, writing, word choice and usage, each with an explanation for every option." },
+      zh: { title: "JLPT 词汇练习 - N5 到 N1 文字词汇在线做题，附解析", desc: `免费 JLPT 文字词汇在线练习：N5 到 N1 共 ${total} 道仿真题，覆盖汉字读音、汉字写法、选词和用法，每个选项都有解析，无需注册。`, h1: "JLPT 词汇练习", crumb: "词汇", lead: "选择你的级别。汉字读音、写法、选词、用法，每个选项都有解析。" },
+    }, (level, L) => { const x = st[level], lv = level.toLowerCase(); return `<tr><th scope="row">${level}</th>
+      <td><a class="hub-go" href="${SITE_PATH}${lv}-vocabulary/"><b>${L("词汇练习", "Vocabulary practice")}</b><span>${L(`${x.qs} 题 · ${x.types.length} 种题型`, `${x.qs} questions · ${x.types.length} types`)}</span></a></td>
+      <td><a class="hub-go" href="${SITE_PATH}${lv}-cards/"><b>${L("语法卡片", "Grammar flashcards")}</b><span>${L("每个语法点一张", "one per grammar point")}</span></a></td></tr>`; },
+    (L) => `${tipsLink("jlpt-vocabulary-grammar-tips", L, "文字词汇与语法做题技巧：读音陷阱、用法题、排序题★", "Vocabulary & grammar tips: reading traps, usage items, sentence order ★")}<section class="quiz-about">
+<h2>${L("这里能练什么", "What you get")}</h2>
+<ul>
+<li>${L(`${total} 道原创文字词汇题，题型和真考一致：汉字读音、汉字写法、构词、选词填空、近义替换、用法。`, `${total} original vocabulary questions in the real test's item types: kanji reading, writing, word formation, word in context, paraphrase and usage.`)}</li>
+<li>${L("和真考一样，题目不标振假名。答完看每个选项为什么对、为什么错。", "As on the real test, no furigana on the questions. After answering, see why each option is right or wrong.")}</li>
+<li>${L("语法题在各级别的「练习题」里；语法卡片按课复习每个语法点。", "Grammar questions are in each level's practice page; the flashcards drill every grammar point by lesson.")}</li>
+</ul>
+<h2>${L("常见问题", "Questions")}</h2>
+<dl>${faqFree(L)}</dl>
+</section>`, "Practice questions");
+  }
+
+  {
+    const withMock = ORDER5.filter((l) => quizBundles[l].mocks.length);
+    if (withMock.length) hubPage("mock-test", {
+      en: { title: "JLPT Mock Test Online — Free Timed N5 to N1 Practice Tests with Scores", desc: "Free timed JLPT mock tests from N5 to N1 in the real format, listening included: an estimated score against the pass marks and every question explained. No sign-up.", h1: "JLPT Mock Tests", crumb: "Mock tests", lead: "A full test in the real order and timing. No answers until you submit; then an estimated score per section against the pass marks." },
+      zh: { title: "JLPT 模拟题在线测试 - N5 到 N1 免费计时模考，交卷估分", desc: "免费 JLPT 在线模拟考：N5 到 N1，按真题结构和时间计时，含听力，交卷后估算分数、对照合格线，每道题都有解析，无需注册。", h1: "JLPT 模拟题", crumb: "模拟题", lead: "按真考的顺序和时间完整做一套。交卷前不显示答案；交卷后按科目估分，对照合格线。" },
+    }, (level, L) => { const b = quizBundles[level], lv = level.toLowerCase(), cfg = QUIZ_MOCK[level];
+      if (!b.mocks.length) return `<tr class="hub-soon"><th scope="row">${level}</th><td colspan="2">${L("准备中", "Coming soon")}</td></tr>`;
+      const minutes = b.mocks[0].test.sections.reduce((a, x) => a + x.minutes, 0);
+      return `<tr><th scope="row">${level}</th>
+      <td><a class="hub-go" href="${SITE_PATH}${lv}-mock-test/"><b>${L("模拟题", "Mock test")}</b><span>${L(`${b.mocks.length} 套 · ${minutes} 分钟`, `${b.mocks.length} test${b.mocks.length > 1 ? "s" : ""} · ${minutes} min`)}</span></a></td>
+      <td class="hub-types">${L(`合格线 ${cfg.pass}/180`, `Pass mark ${cfg.pass}/180`)}</td></tr>`; },
+    (L) => `<section class="quiz-about">
+<h2>${L("模拟题和练习题有什么不同", "How a mock test differs from practice")}</h2>
+<ul>
+<li>${L("题目不在练习题库里，按真考的科目顺序出题，每一科单独计时，听力在最后一场。", "The questions aren't in the practice bank. Sections come in the real order, each timed on its own, with listening last.")}</li>
+<li>${L("交卷后才显示答案：估算各科得分，对照总分合格线和每科最低分，再逐题看解析。", "Answers appear only after you submit: an estimated score per section against the pass mark and each section's minimum, then every question explained.")}</li>
+<li>${L("每周会加新的一套。", "A new set is added each week.")}</li>
+</ul>
+<h2>${L("考前怎么用", "How to use them before the exam")}</h2>
+<ol>
+<li>${L("先用练习题按题型把薄弱的地方补上，再做模拟题。", "Shore up weak item types in practice first, then take a mock.")}</li>
+<li>${L("一次做完整套，不暂停、不查词典，练时间分配。", "Do a whole set in one go, without pausing or a dictionary, to practise timing.")}</li>
+<li>${L("交卷后看哪一科离最低分最近，回去专练那一科。", "After submitting, see which section is closest to its minimum and practise that.")}</li>
+</ol>
+<p>${L(`各部分的做题技巧：<a href="${SITE_PATH}jlpt-vocabulary-grammar-tips/">文字词汇与语法</a> · <a href="${SITE_PATH}jlpt-reading-tips/">阅读</a> · <a href="${SITE_PATH}jlpt-listening-tips/">听力</a>。考试安排：<a href="${SITE_PATH}jlpt-december-2026/">12 月 JLPT 考前指南</a>。`, `Tips for each part: <a href="${SITE_PATH}jlpt-vocabulary-grammar-tips/">vocabulary &amp; grammar</a> · <a href="${SITE_PATH}jlpt-reading-tips/">reading</a> · <a href="${SITE_PATH}jlpt-listening-tips/">listening</a>. Exam day: <a href="${SITE_PATH}jlpt-december-2026/">December JLPT guide</a>.`)}</p>
+<h2>${L("常见问题", "Questions")}</h2>
+<dl>${faqFree(L)}
+<dt>${L("估分准吗？", "How accurate is the score?")}</dt><dd>${L("只是粗略估计。真考用等化计分，不是按答对题数直接换算。", "It's a rough estimate. The real test uses scaled scoring, not a straight count of correct answers.")}</dd>
+</dl>
+</section>`, "Practice test");
   }
 
   // Settings used to be a standalone page; it is now a modal on every page.
@@ -4641,6 +4757,9 @@ License: content CC BY-NC 4.0 (attribution, non-commercial); code MIT
 
 - [Practice hub](${SITE}practice/): Every level's practice questions, mock test and flashcards.
 - [JLPT listening practice](${SITE}listening/): Free N5 to N1 listening questions with audio, transcripts and explanations.
+- [JLPT reading practice](${SITE}reading/): Free N5 to N1 reading passages with translations and explanations.
+- [JLPT vocabulary practice](${SITE}vocabulary/): Free N5 to N1 kanji and vocabulary questions with explanations.
+- [JLPT mock tests](${SITE}mock-test/): Free timed N5 to N1 mock tests with estimated scores.
 ${Object.entries(quizBundles).map(([l, b]) => { const v = l.toLowerCase(); return `- [JLPT ${l} practice questions](${SITE}${v}-practice/): ${b.practice.questions.length} questions by item type, with explanations.${SUBSET_PAGES.filter((p) => p.levels.includes(l)).map((p) => `\n- [JLPT ${l} ${p.id} practice](${SITE}${v}-${p.id}/): ${p.id} questions only, with explanations.`).join("")}${ckLevels.includes(l) ? `\n- [JLPT ${l} listening practice](${SITE}${v}-listening/): listening questions with audio, transcripts and explanations.` : ""}${b.mocks.length ? `\n- [JLPT ${l} mock test](${SITE}${v}-mock-test/): timed, real format, estimated score.` : ""}\n- [JLPT ${l} grammar flashcards](${SITE}${v}-cards/): one card per grammar point, spaced repetition.`; }).join("\n")}
 
 ## Guides (comparisons and exam prep)
@@ -5065,8 +5184,9 @@ body:not(.has-ai) .nav-tool-ai {
 .nav-group-wrap.expanded .nav-caret { transform: rotate(90deg); }
 .nav-group-items { display: none; }
 .nav-group-wrap.expanded .nav-group-items { display: block; }
-.nav-overview { font-style: italic; }
-.nav-overview.active, .nav-overview:hover { font-style: normal; }
+/* Overview entries: italic in English only — CJK fonts have no italic, the browser just slants them */
+.nav-overview .lang-en { font-style: italic; }
+.nav-overview.active .lang-en, .nav-overview:hover .lang-en { font-style: normal; }
 .nav-item {
   display: block; padding: .3rem 1rem;
   color: var(--sidebar-text); text-decoration: none;
