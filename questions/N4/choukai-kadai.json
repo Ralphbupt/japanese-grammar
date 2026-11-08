@@ -2110,5 +2110,1765 @@
    "condition-conflict",
    "denied-guess"
   ]
+ },
+ {
+  "id": "n4-ck-121",
+  "type": "kadai",
+  "scene": "女の 人と びよういんの 人が 電話で 話しています。",
+  "question": "女の 人は 土曜日の 何時に びよういんへ 行きますか。",
+  "lines": [
+   [
+    "F",
+    "もしもし、土曜日の 10時に カットを おねがいしたいんですが。"
+   ],
+   [
+    "M",
+    "すみません、土曜日の 10時は もう いっぱいなんです。11時か 3時なら 空いて いますが。"
+   ],
+   [
+    "F",
+    "そうですか。12時に 友だちと 会う やくそくが あるんですが、カットは どのぐらい かかりますか。"
+   ],
+   [
+    "M",
+    "1時間ぐらいですね。"
+   ],
+   [
+    "F",
+    "1時間…。じゃあ、3時に…あ、3時は 子どもが 学校から 帰って くる 時間でした。"
+   ],
+   [
+    "M",
+    "では、ほかの 日に しましょうか。"
+   ],
+   [
+    "F",
+    "いえ、土曜日が いいです。友だちには 少し おくれると 言って おきます。"
+   ]
+  ],
+  "options": [
+   "10時",
+   "11時",
+   "12時",
+   "3時"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "女人和美发店的人在打电话。",
+    "question": "女人星期六几点去美发店？",
+    "lines": [
+     "喂，我想预约星期六十点剪头发。",
+     "不好意思，星期六十点已经约满了。十一点或者三点的话还有空。",
+     "这样啊。我十二点和朋友约好了见面，剪头发大概要多长时间？",
+     "一个小时左右吧。",
+     "一个小时……那就三点……啊，三点是孩子放学回家的时间。",
+     "那改到别的日子吧？",
+     "不用，星期六好。我跟朋友说一声会晚一点到。"
+    ],
+    "options": [
+     "10点",
+     "11点",
+     "12点",
+     "3点"
+    ]
+   },
+   "en": {
+    "scene": "A woman is talking on the phone with someone at a hair salon.",
+    "question": "What time on Saturday will the woman go to the salon?",
+    "lines": [
+     "Hello, I'd like to book a haircut for ten on Saturday.",
+     "I'm sorry, ten on Saturday is already full. Eleven or three are free.",
+     "I see. I'm meeting a friend at twelve. How long does a cut take?",
+     "About an hour.",
+     "An hour... Then three... oh, three is when my child comes home from school.",
+     "Shall we make it another day, then?",
+     "No, Saturday is good. I'll tell my friend I'll be a little late."
+    ],
+    "options": [
+     "10:00",
+     "11:00",
+     "12:00",
+     "3:00"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的最后说：「友だちには 少し おくれると 言って おきます。」\n推理：空着的只有十一点和三点。三点孩子回家，不行；十一点剪一个小时会赶不上十二点的约，但她决定告诉朋友会晚到，所以还是十一点。\n容易错：最后一句没有说时间，要自己推出来；十二点是和朋友见面的时间。",
+   "en": "Evidence: Her last line: 「友だちには 少し おくれると 言って おきます。」\nReasoning: Only eleven and three are free. Three clashes with her child coming home; eleven plus an hour's cut runs into her twelve o'clock meeting, but she decides to tell her friend she'll be late, so it's eleven.\nTrap: the last line never says the time; twelve is the time she meets her friend."
+  },
+  "wrong": [
+   {
+    "zh": "十点已经「いっぱい」，约不上。",
+    "en": "Ten is already full."
+   },
+   null,
+   {
+    "zh": "十二点是和朋友见面的时间，不是去美发店的时间。",
+    "en": "Twelve is when she meets her friend."
+   },
+   {
+    "zh": "三点是孩子放学回家的时间，她放弃了。",
+    "en": "Three is when her child gets home, so she drops it."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "not-possible",
+   "number"
+  ]
+ },
+ {
+  "id": "n4-ck-122",
+  "type": "kadai",
+  "scene": "バスていで 女の 人と 男の 人が 話しています。",
+  "question": "女の 人は 何番の バスに 乗りますか。",
+  "lines": [
+   [
+    "F",
+    "すみません、どうぶつえんへ 行きたいんですが、2番の バスで いいですか。"
+   ],
+   [
+    "M",
+    "2番は 反対の ほうへ 行きますよ。どうぶつえんなら 4番が いちばん 近くまで 行きます。でも、4番は 土曜日と 日曜日は 走って いないんです。"
+   ],
+   [
+    "F",
+    "え、きょうは 土曜日ですね。"
+   ],
+   [
+    "M",
+    "ええ。じゃあ、6番か 8番ですね。8番は どうぶつえんの 前に 止まりますが、1時間に 1本しか ないんです。"
+   ],
+   [
+    "F",
+    "次の 8番は 何時ですか。"
+   ],
+   [
+    "M",
+    "ええと…さっき 出た ばかりですね。6番なら すぐ 来ます。どうぶつえんの 一つ 前で おりて、10分ぐらい 歩きますけど。"
+   ],
+   [
+    "F",
+    "10分なら 歩けます。ありがとう ございます。"
+   ]
+  ],
+  "options": [
+   "2番",
+   "4番",
+   "6番",
+   "8番"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "公交车站，一个女人和一个男人在说话。",
+    "question": "女人坐几路公交车？",
+    "lines": [
+     "不好意思，我想去动物园，坐2路车可以吗？",
+     "2路是往反方向开的。去动物园的话，4路能开到最近的地方。不过4路星期六和星期天不开。",
+     "啊，今天是星期六呢。",
+     "是啊。那就是6路或8路了。8路停在动物园门口，可是一个小时只有一班。",
+     "下一班8路是几点？",
+     "嗯……刚开走。6路的话马上就来。在动物园前一站下车，要走十分钟左右。",
+     "十分钟的话我能走。谢谢您。"
+    ],
+    "options": [
+     "2路",
+     "4路",
+     "6路",
+     "8路"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking at a bus stop.",
+    "question": "Which bus will the woman take?",
+    "lines": [
+     "Excuse me, I want to go to the zoo. Is the number 2 bus OK?",
+     "The 2 goes the other way. For the zoo, the 4 gets you closest. But the 4 doesn't run on Saturdays and Sundays.",
+     "Oh, today is Saturday.",
+     "Right. Then it's the 6 or the 8. The 8 stops right in front of the zoo, but there's only one an hour.",
+     "When is the next 8?",
+     "Let's see... one just left. A 6 will come soon. You get off one stop before the zoo and walk about ten minutes, though.",
+     "Ten minutes is fine. Thank you."
+    ],
+    "options": [
+     "No. 2",
+     "No. 4",
+     "No. 6",
+     "No. 8"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「6番なら すぐ 来ます。」女的回答：「10分なら 歩けます。」\n推理：2路方向相反，4路周末不开，8路刚开走、一小时一班；6路马上来，只是要走十分钟，她说能走，所以坐6路。\n容易错：8路停在动物园门口，听起来最方便，但刚走。",
+   "en": "Evidence: The man: 「6番なら すぐ 来ます。」 She replies: 「10分なら 歩けます。」\nReasoning: The 2 goes the wrong way, the 4 doesn't run at weekends, and the 8 just left and runs hourly. The 6 comes soon and only means a ten-minute walk, which she accepts.\nTrap: the 8 stops at the zoo gate and sounds best, but it has just gone."
+  },
+  "wrong": [
+   {
+    "zh": "2路「反対の ほうへ 行きます」。",
+    "en": "The 2 goes the other way."
+   },
+   {
+    "zh": "4路星期六、星期天不开，今天是星期六。",
+    "en": "The 4 doesn't run on weekends, and today is Saturday."
+   },
+   null,
+   {
+    "zh": "8路刚开走，一小时才一班。",
+    "en": "An 8 just left, and there's only one an hour."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "condition-conflict",
+   "number"
+  ]
+ },
+ {
+  "id": "n4-ck-123",
+  "type": "kadai",
+  "scene": "会社で 女の 人と 男の 人が 話しています。",
+  "question": "男の 人は しりょうを 何まい コピーしますか。",
+  "lines": [
+   [
+    "F",
+    "あしたの 会議の しりょう、12まい コピーして もらえますか。"
+   ],
+   [
+    "M",
+    "はい。12人ですね。じゃあ、1まい 多く して、13まい コピーします。"
+   ],
+   [
+    "F",
+    "あ、それから 森さんと 林さんは 出張で 出られないそうです。"
+   ],
+   [
+    "M",
+    "じゃあ、10人ですね。1まい 多く して、11まい コピーします。あ、ほかの 会社の 方も 一人 来るんじゃ なかったですか。"
+   ],
+   [
+    "F",
+    "ええ。でも、その 方は 12人に 入って いません。その 方の しりょうは 部長が もう 用意して います。それと、多く コピーしなくて いいですよ。いつも あまって しまうので。"
+   ],
+   [
+    "M",
+    "分かりました。じゃあ、出る 人の 分だけに します。"
+   ]
+  ],
+  "options": [
+   "10まい",
+   "11まい",
+   "12まい",
+   "13まい"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "公司里，一个女人和一个男人在说话。",
+    "question": "男人复印几份资料？",
+    "lines": [
+     "明天开会的资料，能帮我复印12份吗？",
+     "好的。12个人对吧。那我多印一份，印13份。",
+     "啊，还有，森先生和林先生出差，来不了。",
+     "那就是10个人了。多印一份，印11份。啊，不是还有一位别的公司的人要来吗？",
+     "是的。不过那位不在这12个人里面。那位的资料部长已经准备好了。还有，不用多印，每次都会剩下。",
+     "知道了。那就只印参会的人的份。"
+    ],
+    "options": [
+     "10份",
+     "11份",
+     "12份",
+     "13份"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking at the office.",
+    "question": "How many copies of the handout will the man make?",
+    "lines": [
+     "Could you make twelve copies of the handout for tomorrow's meeting?",
+     "Sure. Twelve people, then. I'll make one extra, so thirteen.",
+     "Oh, and Mr. Mori and Mr. Hayashi are on a business trip and can't come.",
+     "Then that's ten people. One extra makes eleven. Oh, wasn't someone from another company coming too?",
+     "Yes, but that person isn't one of the twelve, and the manager has already prepared their copy. Also, no need for extras. They always end up left over.",
+     "Got it. Just enough for the people attending, then."
+    ],
+    "options": [
+     "10",
+     "11",
+     "12",
+     "13"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「じゃあ、10人ですね。」女的说：「多く コピーしなくて いいですよ。」\n推理：12人里有两人出差来不了，剩10人；客人不在12人里，资料部长也准备好了；不用多印一份，所以印10份。\n容易错：「11まい」是10人再多印一份，女的说不用多印；客人的份是别人负责的。",
+   "en": "Evidence: He says 「じゃあ、10人ですね。」 and she says 「多く コピーしなくて いいですよ。」\nReasoning: Two of the twelve can't come, leaving ten. The guest isn't one of the twelve and the manager has their copy. No extra is wanted, so ten.\nTrap: 「11まい」 is ten plus an extra copy, which she says isn't needed; the guest's copy is someone else's job."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "11份是10人再多印一份，女的说不用多印。",
+    "en": "Eleven is ten plus an extra copy she says isn't needed."
+   },
+   {
+    "zh": "12份是一开始的人数，后来有两人来不了。",
+    "en": "Twelve was the first headcount; two can't come."
+   },
+   {
+    "zh": "13份是男的一开始想多印一份的数字。",
+    "en": "Thirteen was his first plan, with an extra copy."
+   }
+  ],
+  "traps": [
+   "number",
+   "someone-else",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n4-ck-124",
+  "type": "kadai",
+  "scene": "家で 女の 人と 男の 人が 話しています。",
+  "question": "男の 人は あした 何時に 起きますか。",
+  "lines": [
+   [
+    "F",
+    "あしたは 何時に 起きるの？ 6時？"
+   ],
+   [
+    "M",
+    "飛行機が 9時だから、7時に 家を 出れば いいんだ。だから 6時で いいよ。"
+   ],
+   [
+    "F",
+    "あした、日曜日でしょう？ 日曜日の 朝は 電車が 少ないから、6時半には 出た ほうが いいよ。"
+   ],
+   [
+    "M",
+    "そうか。じゃあ、5時に 起きて、シャワーを あびて、朝ごはんを 食べて…。"
+   ],
+   [
+    "F",
+    "シャワーは 今夜 あびて おけば？ 朝ごはんも 空港で 食べれば いいし。"
+   ],
+   [
+    "M",
+    "そうだね。じゃあ、出る 1時間前に 起きるよ。"
+   ]
+  ],
+  "options": [
+   "5時",
+   "5時半",
+   "6時",
+   "6時半"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "家里，一个女人和一个男人在说话。",
+    "question": "男人明天几点起床？",
+    "lines": [
+     "你明天几点起？六点？",
+     "飞机是九点，七点出门就行。所以六点就可以。",
+     "明天是星期天吧？星期天早上电车少，最好六点半就出门。",
+     "这样啊。那就五点起，洗个澡，吃个早饭……",
+     "澡今晚先洗好嘛？早饭也可以在机场吃。",
+     "也是。那我出门前一个小时起床。"
+    ],
+    "options": [
+     "5点",
+     "5点半",
+     "6点",
+     "6点半"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking at home.",
+    "question": "What time will the man get up tomorrow?",
+    "lines": [
+     "What time are you getting up tomorrow? Six?",
+     "The flight's at nine, so I just need to leave home at seven. Six is fine.",
+     "Tomorrow's Sunday, isn't it? There are fewer trains on Sunday mornings, so you'd better leave by six thirty.",
+     "I see. Then I'll get up at five, take a shower, have breakfast...",
+     "Why not shower tonight? You can have breakfast at the airport, too.",
+     "True. Then I'll get up an hour before I leave."
+    ],
+    "options": [
+     "5:00",
+     "5:30",
+     "6:00",
+     "6:30"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的最后说：「出る 1時間前に 起きるよ。」\n推理：女的说星期天电车少，要「6時半には 出た ほうが いい」，所以六点半出门；出门前一小时起床，就是五点半。\n容易错：五点是洗澡、吃早饭都在家做时的计划；六点半是出门时间，不是起床时间。",
+   "en": "Evidence: His last line: 「出る 1時間前に 起きるよ。」\nReasoning: She says there are few trains on Sunday, so 「6時半には 出た ほうが いい」. He leaves at six thirty and gets up an hour earlier: five thirty.\nTrap: five was the plan with a shower and breakfast at home; six thirty is when he leaves, not when he gets up."
+  },
+  "wrong": [
+   {
+    "zh": "五点是要在家洗澡、吃早饭时的打算，后来这两件事都不在早上做了。",
+    "en": "Five was for showering and eating at home, which he drops."
+   },
+   null,
+   {
+    "zh": "六点是按七点出门算的，但要改成六点半出门。",
+    "en": "Six assumed leaving at seven; he now leaves at six thirty."
+   },
+   {
+    "zh": "六点半是出门的时间。",
+    "en": "Six thirty is when he leaves."
+   }
+  ],
+  "traps": [
+   "number",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n4-ck-125",
+  "type": "kadai",
+  "scene": "ホテルで 男の 人と ホテルの 人が 話しています。",
+  "question": "男の 人は 何号室に とまりますか。",
+  "lines": [
+   [
+    "M",
+    "予約した 田中です。"
+   ],
+   [
+    "F",
+    "田中様ですね。お部屋は 305号室です。"
+   ],
+   [
+    "M",
+    "あのう、去年 来た ときは 503号室で、まどから 山が よく 見えたんです。今年も 山が 見える 部屋が いいんですが。"
+   ],
+   [
+    "F",
+    "申し訳ありません。503号室は きょうは ほかの お客様が お使いです。510号室なら 山が 見えますが、千円 高く なります。"
+   ],
+   [
+    "M",
+    "千円ですか…。305号室からは 何が 見えますか。"
+   ],
+   [
+    "F",
+    "305号室は 駅の ほうなので、山は 見えません。310号室も 同じです。"
+   ],
+   [
+    "M",
+    "そうですか。千円ぐらいなら かまいません。せっかく 山を 見に 来たので。"
+   ]
+  ],
+  "options": [
+   "305号室",
+   "310号室",
+   "503号室",
+   "510号室"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "酒店里，一个男人和酒店的人在说话。",
+    "question": "男人住几号房间？",
+    "lines": [
+     "我是预约过的田中。",
+     "田中先生是吧。您的房间是305号。",
+     "那个，去年来的时候住的是503号，从窗户能清楚地看到山。今年也想要能看到山的房间。",
+     "非常抱歉。503号今天有别的客人在住。510号能看到山，不过要贵一千日元。",
+     "一千日元啊……305号能看到什么？",
+     "305号朝着车站那边，看不到山。310号也一样。",
+     "这样啊。一千日元的话没关系。难得是来看山的。"
+    ],
+    "options": [
+     "305号房",
+     "310号房",
+     "503号房",
+     "510号房"
+    ]
+   },
+   "en": {
+    "scene": "A man and a hotel clerk are talking at a hotel.",
+    "question": "Which room will the man stay in?",
+    "lines": [
+     "I'm Tanaka. I have a reservation.",
+     "Mr. Tanaka. Your room is 305.",
+     "Um, last year I was in 503 and could see the mountains clearly from the window. I'd like a room with a mountain view again.",
+     "I'm very sorry. Another guest is using 503 today. Room 510 has a mountain view, but it's a thousand yen more.",
+     "A thousand yen... What can you see from 305?",
+     "305 faces the station, so you can't see the mountains. 310 is the same.",
+     "I see. A thousand yen is fine. I came all this way to see the mountains."
+    ],
+    "options": [
+     "Room 305",
+     "Room 310",
+     "Room 503",
+     "Room 510"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「千円ぐらいなら かまいません。せっかく 山を 見に 来たので。」\n推理：能看到山的只有503和510。503今天有人住，510贵一千日元，他说一千日元没关系，所以住510。\n容易错：503是去年住的房间；305是最初分到的房间，看不到山。",
+   "en": "Evidence: He says 「千円ぐらいなら かまいません。せっかく 山を 見に 来たので。」\nReasoning: Only 503 and 510 face the mountains. 503 is taken today; 510 costs a thousand yen more, which he accepts, so 510.\nTrap: 503 was last year's room; 305, the room first given, has no view."
+  },
+  "wrong": [
+   {
+    "zh": "305号朝车站，看不到山。",
+    "en": "305 faces the station; no mountain view."
+   },
+   {
+    "zh": "310号和305号一样看不到山。",
+    "en": "310 has no mountain view either."
+   },
+   {
+    "zh": "503号是去年住的，今天有别的客人在住。",
+    "en": "503 was last year's room and is taken today."
+   },
+   null
+  ],
+  "traps": [
+   "condition-conflict",
+   "not-possible",
+   "number"
+  ]
+ },
+ {
+  "id": "n4-ck-126",
+  "type": "kadai",
+  "scene": "女の 人と にもつを とどける 会社の 人が 電話で 話しています。",
+  "question": "女の 人は いつ にもつを 受け取りますか。",
+  "lines": [
+   [
+    "M",
+    "もしもし、山田さんですか。きょうの 昼、にもつを とどけに 行きましたが、るすでしたので お電話しました。きょうの 夜 7時から 9時なら、もう 一度 行けますが。"
+   ],
+   [
+    "F",
+    "すみません、今夜は 仕事で 帰りが 9時すぎに なりそうなんです。あしたの 午前は どうですか。"
+   ],
+   [
+    "M",
+    "はい、だいじょうぶですよ。"
+   ],
+   [
+    "F",
+    "あ、ごめんなさい。あしたは 朝から 出かけるんでした。あしたの 夜は？"
+   ],
+   [
+    "M",
+    "あしたの 夜は もう いっぱいなんです。あさっての 午前なら 行けますが。"
+   ],
+   [
+    "F",
+    "じゃあ、あさってで おねがいします。"
+   ],
+   [
+    "M",
+    "あのう、この にもつは アイスクリームなので、あさってまでは ちょっと…。"
+   ],
+   [
+    "F",
+    "そうですか。じゃあ、きょうは 仕事を 早く 終わらせて 帰る ことに します。"
+   ]
+  ],
+  "options": [
+   "きょうの 夜",
+   "あしたの 午前",
+   "あしたの 夜",
+   "あさっての 午前"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "女人和送货公司的人在打电话。",
+    "question": "女人什么时候收货？",
+    "lines": [
+     "喂，是山田女士吗？今天中午去给您送货，您不在家，所以给您打电话。今天晚上七点到九点的话，可以再送一次。",
+     "不好意思，今晚因为工作，大概要九点以后才能回家。明天上午怎么样？",
+     "好的，可以。",
+     "啊，对不起。明天我一早就要出门。明天晚上呢？",
+     "明天晚上已经排满了。后天上午的话可以送。",
+     "那就麻烦后天吧。",
+     "那个，这件货物是冰淇淋，放到后天恐怕不行……",
+     "这样啊。那我今天早点把工作做完回家。"
+    ],
+    "options": [
+     "今天晚上",
+     "明天上午",
+     "明天晚上",
+     "后天上午"
+    ]
+   },
+   "en": {
+    "scene": "A woman is talking on the phone with someone from a delivery company.",
+    "question": "When will the woman receive the package?",
+    "lines": [
+     "Hello, is this Ms. Yamada? I came to deliver a package at noon today, but no one was home, so I'm calling. I can come again tonight between seven and nine.",
+     "Sorry, I'll probably be home after nine tonight because of work. How about tomorrow morning?",
+     "Yes, that's fine.",
+     "Oh, sorry. I'm going out early tomorrow. What about tomorrow evening?",
+     "Tomorrow evening is already full. I could come the morning after tomorrow.",
+     "Then the day after tomorrow, please.",
+     "Um, this package is ice cream, so waiting until the day after tomorrow is a bit...",
+     "I see. Then I'll finish work early today and go home."
+    ],
+    "options": [
+     "Tonight",
+     "Tomorrow morning",
+     "Tomorrow evening",
+     "The morning after tomorrow"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的最后说：「きょうは 仕事を 早く 終わらせて 帰る ことに します。」\n推理：货是冰淇淋，不能等到后天；明天上午她出门，明天晚上排满了；只剩一开始说的今晚七点到九点，所以她决定早点下班回家收。\n容易错：她已经说了「あさってで おねがいします」，后来被推翻；今晚是一开始她拒绝的时间。",
+   "en": "Evidence: Her last line: 「きょうは 仕事を 早く 終わらせて 帰る ことに します。」\nReasoning: It's ice cream, so it can't wait two days; she's out tomorrow morning and tomorrow evening is full. That leaves tonight, seven to nine, the slot she first turned down.\nTrap: she had already said 「あさってで おねがいします」, but that is overturned."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "明天她「朝から 出かける」，不在家。",
+    "en": "She's going out early tomorrow."
+   },
+   {
+    "zh": "明天晚上「もう いっぱい」，送不了。",
+    "en": "Tomorrow evening is already full."
+   },
+   {
+    "zh": "货是冰淇淋，不能等到后天。",
+    "en": "It's ice cream, so it can't wait two days."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n4-ck-127",
+  "type": "kadai",
+  "scene": "女の 人と 男の 人が 電話で 話しています。",
+  "question": "二人は どこで 会いますか。",
+  "lines": [
+   [
+    "M",
+    "もしもし、今 ちゅうしゃじょうに 着いたよ。どこに いる？"
+   ],
+   [
+    "F",
+    "2階の 本屋。こっちまで 来て くれる？"
+   ],
+   [
+    "M",
+    "本屋か。ちゅうしゃじょうから ちょっと 遠いんだよね。1階の 入り口の 前で 会わない？"
+   ],
+   [
+    "F",
+    "入り口は 人が 多くて、見つけにくいと 思う。入り口の となりの きっさてんは？"
+   ],
+   [
+    "M",
+    "あそこ、きょうは 休みみたいだよ。シャッターが しまってる。"
+   ],
+   [
+    "F",
+    "そう。じゃあ、わたしが 車の ところまで 行くよ。にもつも 多いし。"
+   ],
+   [
+    "M",
+    "分かった。車の 中で 待ってるね。"
+   ]
+  ],
+  "options": [
+   "ちゅうしゃじょう",
+   "2階の 本屋",
+   "1階の 入り口",
+   "きっさてん"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在打电话。",
+    "question": "两个人在哪里见面？",
+    "lines": [
+     "喂，我刚到停车场。你在哪儿？",
+     "二楼的书店。你能到这边来吗？",
+     "书店啊。离停车场有点远。在一楼入口前面见吧？",
+     "入口人多，我觉得不好找。入口旁边的咖啡店呢？",
+     "那家今天好像休息，卷帘门关着。",
+     "这样啊。那我去车那儿吧。东西也多。",
+     "好的。我在车里等你。"
+    ],
+    "options": [
+     "停车场",
+     "二楼的书店",
+     "一楼的入口",
+     "咖啡店"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking on the phone.",
+    "question": "Where will the two of them meet?",
+    "lines": [
+     "Hello, I've just got to the car park. Where are you?",
+     "At the bookshop on the second floor. Can you come here?",
+     "The bookshop? It's a bit far from the car park. Shall we meet in front of the ground-floor entrance?",
+     "The entrance is crowded, so I think it'd be hard to find each other. What about the café next to the entrance?",
+     "It looks closed today. The shutter's down.",
+     "OK. Then I'll come to the car. I've got a lot of bags anyway.",
+     "Got it. I'll wait in the car."
+    ],
+    "options": [
+     "The car park",
+     "The second-floor bookshop",
+     "The ground-floor entrance",
+     "The café"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「わたしが 車の ところまで 行くよ。」男的说：「車の 中で 待ってるね。」\n推理：男的刚到停车场，车就在停车场，所以两人在停车场见面。\n容易错：选项里没有「车」这个词，要把「車の ところ」和第一句的「ちゅうしゃじょう」联系起来。",
+   "en": "Evidence: She says 「わたしが 車の ところまで 行くよ。」 and he says 「車の 中で 待ってるね。」\nReasoning: He has just arrived at the car park, where the car is, so they meet there.\nTrap: the option never says “car”; link 「車の ところ」 to 「ちゅうしゃじょう」 in his first line."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "书店是女的现在在的地方，男的嫌远。",
+    "en": "The bookshop is where she is now; he finds it too far."
+   },
+   {
+    "zh": "入口人多，女的觉得不好找。",
+    "en": "She thinks the crowded entrance is a bad place to find each other."
+   },
+   {
+    "zh": "咖啡店今天休息。",
+    "en": "The café is closed today."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n4-ck-128",
+  "type": "kadai",
+  "scene": "スポーツクラブで 女の 人と うけつけの 人が 話しています。",
+  "question": "女の 人は どの クラスに 入りますか。",
+  "lines": [
+   [
+    "F",
+    "水泳の クラスに 入りたいんですが、初めてでも だいじょうぶですか。"
+   ],
+   [
+    "M",
+    "はい。初めての 方の クラスは、月曜日の 朝と 土曜日の 午後です。"
+   ],
+   [
+    "F",
+    "月曜日の 朝は 仕事なので、土曜日が いいです。"
+   ],
+   [
+    "M",
+    "土曜日の 午後は 子どもが 多い クラスですが、よろしいですか。"
+   ],
+   [
+    "F",
+    "子どもと いっしょは ちょっと…。土曜日の 朝の クラスは？"
+   ],
+   [
+    "M",
+    "朝は もう 泳げる 方の クラスなんです。あ、来月から 水曜日の 夜にも 初めての 方の クラスが できますよ。7時からです。"
+   ],
+   [
+    "F",
+    "7時なら、仕事の あとで 来られます。"
+   ]
+  ],
+  "options": [
+   "月曜日の 朝",
+   "土曜日の 朝",
+   "土曜日の 午後",
+   "水曜日の 夜"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "体育俱乐部里，一个女人和前台的人在说话。",
+    "question": "女人参加哪个班？",
+    "lines": [
+     "我想参加游泳班，第一次学也可以吗？",
+     "可以。初学者的班在星期一早上和星期六下午。",
+     "星期一早上我要上班，星期六比较好。",
+     "星期六下午的班小孩比较多，您介意吗？",
+     "和小孩一起有点……星期六早上的班呢？",
+     "早上是已经会游泳的人的班。啊，下个月开始星期三晚上也有初学者班了，七点开始。",
+     "七点的话，下班以后能来。"
+    ],
+    "options": [
+     "星期一早上",
+     "星期六早上",
+     "星期六下午",
+     "星期三晚上"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a receptionist are talking at a sports club.",
+    "question": "Which class will the woman join?",
+    "lines": [
+     "I'd like to join a swimming class. Is it OK if I'm a complete beginner?",
+     "Yes. The beginners' classes are Monday morning and Saturday afternoon.",
+     "I work on Monday mornings, so Saturday would be better.",
+     "The Saturday afternoon class has a lot of children. Is that all right?",
+     "Being with children is a bit... What about the Saturday morning class?",
+     "The morning one is for people who can already swim. Oh, from next month there'll also be a beginners' class on Wednesday evenings. It starts at seven.",
+     "Seven, I can come after work."
+    ],
+    "options": [
+     "Monday morning",
+     "Saturday morning",
+     "Saturday afternoon",
+     "Wednesday evening"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「7時なら、仕事の あとで 来られます。」\n推理：七点是下个月开始的星期三晚上初学者班。星期一早上要上班，星期六下午小孩多她不想去，星期六早上是会游泳的人的班。\n容易错：她一直说「土曜日が いい」，但星期六的两个班都不合适。",
+   "en": "Evidence: She says 「7時なら、仕事の あとで 来られます。」\nReasoning: Seven o'clock is the new Wednesday evening beginners' class. She works Monday mornings, doesn't want the Saturday afternoon class full of children, and Saturday morning is for swimmers.\nTrap: she keeps saying 「土曜日が いい」, but neither Saturday class fits."
+  },
+  "wrong": [
+   {
+    "zh": "星期一早上她要上班。",
+    "en": "She works on Monday mornings."
+   },
+   {
+    "zh": "星期六早上是「もう 泳げる 方」的班，她是初学者。",
+    "en": "Saturday morning is for people who can already swim."
+   },
+   {
+    "zh": "星期六下午小孩多，她不想和小孩一起。",
+    "en": "Saturday afternoon is full of children, which she doesn't want."
+   },
+   null
+  ],
+  "traps": [
+   "condition-conflict",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n4-ck-129",
+  "type": "kadai",
+  "scene": "うちで 男の 子と お母さんが 話しています。",
+  "question": "男の 子は 何を 買いますか。",
+  "lines": [
+   [
+    "M",
+    "お母さん、あしたの じゅぎょうで、はさみと のりと いろえんぴつが いるんだって。"
+   ],
+   [
+    "F",
+    "のりは つくえの 引き出しに あるでしょう。"
+   ],
+   [
+    "M",
+    "うん、のりは ある。でも、はさみは 前のが こわれちゃった。"
+   ],
+   [
+    "F",
+    "はさみなら、お母さんのを 使って いいわよ。いろえんぴつは？"
+   ],
+   [
+    "M",
+    "いろえんぴつは 赤と 青が なくなっちゃった。"
+   ],
+   [
+    "F",
+    "じゃあ、それは 新しいのを 買いに 行こう。ノートは だいじょうぶ？"
+   ],
+   [
+    "M",
+    "ノートは まだ 3さつ あるよ。"
+   ]
+  ],
+  "options": [
+   "はさみ",
+   "いろえんぴつ",
+   "のり",
+   "ノート"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A pair of scissors on a plain table. Nothing else.",
+   "Simple black-and-white line drawing, no text. A box of colored pencils, the pencils fanned out a little, on a plain table. Nothing else.",
+   "Simple black-and-white line drawing, no text. A stick of glue with its cap on, on a plain table. Nothing else.",
+   "Simple black-and-white line drawing, no text. A closed school notebook on a plain table. Nothing else."
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "家里，男孩和妈妈在说话。",
+    "question": "男孩买什么？",
+    "lines": [
+     "妈妈，明天上课说要用剪刀、胶水和彩色铅笔。",
+     "胶水在桌子的抽屉里吧。",
+     "嗯，胶水有。可是剪刀以前那把坏了。",
+     "剪刀的话，用妈妈的就行。彩色铅笔呢？",
+     "彩色铅笔红的和蓝的没有了。",
+     "那就去买套新的吧。本子够吗？",
+     "本子还有三本呢。"
+    ],
+    "options": [
+     "剪刀",
+     "彩色铅笔",
+     "胶水",
+     "本子"
+    ]
+   },
+   "en": {
+    "scene": "A boy and his mother are talking at home.",
+    "question": "What will the boy buy?",
+    "lines": [
+     "Mum, I need scissors, glue and colored pencils for class tomorrow.",
+     "The glue is in your desk drawer, isn't it?",
+     "Yeah, I have glue. But my old scissors broke.",
+     "You can use my scissors. What about colored pencils?",
+     "I've run out of the red and the blue.",
+     "Then let's go and buy new ones. Are you OK for notebooks?",
+     "I still have three notebooks."
+    ],
+    "options": [
+     "Scissors",
+     "Colored pencils",
+     "Glue",
+     "A notebook"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：妈妈说：「じゃあ、それは 新しいのを 買いに 行こう。」\n推理：「それ」指前一句的彩色铅笔（红色和蓝色没有了）。胶水在抽屉里有，剪刀用妈妈的，本子还有三本。\n容易错：剪刀是坏了，但妈妈借给他，不用买；最后一句说的是本子。",
+   "en": "Evidence: His mother says 「じゃあ、それは 新しいのを 買いに 行こう。」\nReasoning: 「それ」 is the colored pencils he just mentioned (red and blue are gone). The glue is in the drawer, he'll use her scissors, and he has three notebooks.\nTrap: the scissors are broken, but she lends hers; the last line is about notebooks."
+  },
+  "wrong": [
+   {
+    "zh": "剪刀坏了，但妈妈说「お母さんのを 使って いい」。",
+    "en": "His scissors broke, but he can use his mother's."
+   },
+   null,
+   {
+    "zh": "胶水在抽屉里有。",
+    "en": "He has glue in his drawer."
+   },
+   {
+    "zh": "本子「まだ 3さつ ある」。",
+    "en": "He still has three notebooks."
+   }
+  ],
+  "traps": [
+   "done-already",
+   "someone-else"
+  ]
+ },
+ {
+  "id": "n4-ck-130",
+  "type": "kadai",
+  "scene": "マンションで 女の 人と となりの 男の 人が 話しています。",
+  "question": "男の 人は 来週 何を しますか。",
+  "lines": [
+   [
+    "F",
+    "山田さん、来週 一週間 旅行に 行くんですが、毎朝 ポストの 新聞を 取って いただけませんか。"
+   ],
+   [
+    "M",
+    "いいですよ。でも、新聞は 店に 電話すれば、止めて もらえますよ。"
+   ],
+   [
+    "F",
+    "あ、そうですね。じゃあ、そう します。それから、金魚の ごはんですが、一週間ぐらいは 食べなくても だいじょうぶだと 店の 人が 言って いました。"
+   ],
+   [
+    "M",
+    "でも、一週間は 長いですね。二日に 一回ぐらい、ぼくが あげましょうか。ねこは どうするんですか。"
+   ],
+   [
+    "F",
+    "ありがとう ございます、助かります。ねこは 母の 家に つれて 行きます。"
+   ],
+   [
+    "M",
+    "にもつが とどいたら、受け取って おきましょうか。"
+   ],
+   [
+    "F",
+    "ありがとう ございます。でも、何も 来ないと 思います。"
+   ]
+  ],
+  "options": [
+   "新聞を 取る",
+   "ねこの せわを する",
+   "金魚に ごはんを やる",
+   "にもつを 受け取る"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. The same man in a cardigan in all four panels. He is taking a folded newspaper out of a mailbox by a door.",
+   "Simple black-and-white line drawing, no text. The same man in a cardigan in all four panels. He is crouching and putting a bowl of food in front of a cat.",
+   "Simple black-and-white line drawing, no text. The same man in a cardigan in all four panels. He is sprinkling fish food into a round glass bowl with a goldfish in it.",
+   "Simple black-and-white line drawing, no text. The same man in a cardigan in all four panels. He is standing at a door, taking a cardboard box from a delivery man."
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "公寓里，一个女人和隔壁的男人在说话。",
+    "question": "男人下星期做什么？",
+    "lines": [
+     "山田先生，我下星期要去旅行一个星期，能请您每天早上帮我把信箱里的报纸取出来吗？",
+     "可以啊。不过报纸的话，给报社打个电话就能让他们停送。",
+     "啊，也是。那我就这么办。还有金鱼吃的东西，店里的人说一个星期左右不吃也没关系。",
+     "不过一个星期挺长的。我大概两天喂一次吧？猫怎么办呢？",
+     "谢谢，帮大忙了。猫我带到我妈妈家去。",
+     "要是有快递到了，我帮您收着吧？",
+     "谢谢您。不过我想应该不会有东西寄来。"
+    ],
+    "options": [
+     "取报纸",
+     "照顾猫",
+     "给金鱼喂食",
+     "收快递"
+    ]
+   },
+   "en": {
+    "scene": "A woman and the man next door are talking in their apartment building.",
+    "question": "What will the man do next week?",
+    "lines": [
+     "Mr. Yamada, I'm going away for a week next week. Could you take the newspaper out of my mailbox every morning?",
+     "Sure. But if you phone the newspaper shop, they'll stop delivering it.",
+     "Oh, that's true. I'll do that, then. And about feeding the goldfish, the shop told me they'll be fine without food for about a week.",
+     "Still, a week is long. Shall I feed them about every other day? What about your cat?",
+     "Thank you, that's a big help. I'm taking the cat to my mother's.",
+     "If a package comes, shall I take it in for you?",
+     "Thank you. But I don't think anything will come."
+    ],
+    "options": [
+     "Take in the newspaper",
+     "Look after the cat",
+     "Feed the goldfish",
+     "Take in a package"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「二日に 一回ぐらい、ぼくが あげましょうか。」女的说：「助かります。」\n推理：「あげる」的是金鱼的食物（「金魚の ごはん」）。报纸打电话停送，猫带到妈妈家，快递她说不会来。\n容易错：女的先说金鱼「食べなくても だいじょうぶ」，但男的主动提出喂，她接受了。",
+   "en": "Evidence: He offers 「二日に 一回ぐらい、ぼくが あげましょうか。」 and she says 「助かります。」\nReasoning: What he'll give is the goldfish's food (「金魚の ごはん」). The paper will be stopped, the cat goes to her mother's, and she expects no packages.\nTrap: she first says the fish 「食べなくても だいじょうぶ」, but accepts his offer."
+  },
+  "wrong": [
+   {
+    "zh": "报纸她会打电话让店里停送。",
+    "en": "She'll phone to stop the newspaper."
+   },
+   {
+    "zh": "猫她带到妈妈家去。",
+    "en": "She's taking the cat to her mother's."
+   },
+   null,
+   {
+    "zh": "她说「何も 来ないと 思います」。",
+    "en": "She says nothing will come."
+   }
+  ],
+  "traps": [
+   "someone-else",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n4-ck-131",
+  "type": "kadai",
+  "scene": "男の 人と 女の 人が 話しています。",
+  "question": "男の 人は 何を 習いますか。",
+  "lines": [
+   [
+    "M",
+    "何か 新しい ことを 習いたいんだけど、何が いいかな。テニスは どう 思う？"
+   ],
+   [
+    "F",
+    "いいね。でも、ラケットとか くつとか、最初に お金が かかるよ。"
+   ],
+   [
+    "M",
+    "そうか…。じゃあ、水泳は？"
+   ],
+   [
+    "F",
+    "プールは 駅の 向こうだから、ちょっと 遠いよね。ピアノは？ 子どもの とき、少し ひいてたんでしょう？"
+   ],
+   [
+    "M",
+    "うん。でも、うちは せまくて ピアノを 置く ところが ないんだ。料理は 去年 習ったし…。"
+   ],
+   [
+    "F",
+    "あ、そう いえば、駅前の テニス教室は ラケットを 貸して くれるって。くつだけ 買えば いいみたい。"
+   ],
+   [
+    "M",
+    "へえ、それなら 始めやすいね。"
+   ]
+  ],
+  "options": [
+   "テニス",
+   "水泳",
+   "ピアノ",
+   "料理"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. The same young man in all four panels. He is hitting a ball with a tennis racket.",
+   "Simple black-and-white line drawing, no text. The same young man in all four panels. He is swimming in a pool, wearing swimming goggles.",
+   "Simple black-and-white line drawing, no text. The same young man in all four panels. He is sitting at a piano, playing it.",
+   "Simple black-and-white line drawing, no text. The same young man in all four panels. He is wearing an apron and cutting vegetables in a kitchen."
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "男人要学什么？",
+    "lines": [
+     "我想学点新东西，学什么好呢？你觉得网球怎么样？",
+     "不错啊。不过球拍啊鞋啊，一开始要花钱。",
+     "这样啊……那游泳呢？",
+     "游泳池在车站那边，有点远吧。钢琴呢？你小时候弹过一点吧？",
+     "嗯。可是我家太小，没地方放钢琴。料理去年学过了……",
+     "啊，说起来，车站前的网球班会借球拍，好像只要买鞋就行。",
+     "哦，那样的话很容易开始呢。"
+    ],
+    "options": [
+     "网球",
+     "游泳",
+     "钢琴",
+     "料理"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "What will the man learn?",
+    "lines": [
+     "I want to learn something new. What would be good? What do you think about tennis?",
+     "Nice. But a racket, shoes and so on cost money at the start.",
+     "I see... Then how about swimming?",
+     "The pool is on the other side of the station, so it's a bit far. Piano? You played a little as a kid, didn't you?",
+     "Yeah. But my place is too small; there's nowhere to put a piano. And I learned cooking last year...",
+     "Oh, come to think of it, the tennis school in front of the station lends out rackets. It seems you only need to buy shoes.",
+     "Oh, that makes it easy to start."
+    ],
+    "options": [
+     "Tennis",
+     "Swimming",
+     "Piano",
+     "Cooking"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「駅前の テニス教室は ラケットを 貸して くれるって。」男的说：「それなら 始めやすいね。」\n推理：网球一开始因为要花钱被放下，后来知道球拍可以借，只要买鞋，就又回到网球。游泳池远，家里放不下钢琴，料理去年学过。\n容易错：最先被否定的选项，最后又成了答案。",
+   "en": "Evidence: She says 「駅前の テニス教室は ラケットを 貸して くれるって。」 He answers 「それなら 始めやすいね。」\nReasoning: Tennis was set aside for the cost, but rackets can be borrowed and only shoes are needed, so he goes back to it. The pool is far, there's no room for a piano, and he learned cooking last year.\nTrap: the first idea rejected ends up as the answer."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "游泳池在车站那边，太远。",
+    "en": "The pool is too far away."
+   },
+   {
+    "zh": "家里小，「ピアノを 置く ところが ない」。",
+    "en": "There's no room at home for a piano."
+   },
+   {
+    "zh": "料理「去年 習った」。",
+    "en": "He learned cooking last year."
+   }
+  ],
+  "traps": [
+   "condition-conflict",
+   "not-possible",
+   "done-already"
+  ]
+ },
+ {
+  "id": "n4-ck-132",
+  "type": "kadai",
+  "scene": "家で 女の 人と 男の 人が 話しています。",
+  "question": "男の 人は まず 何を しますか。",
+  "lines": [
+   [
+    "F",
+    "じゃあ、行って きます。せんたくものを 干して、ごみを 出して おいてね。それから、帰りに 牛乳を 買って きて。"
+   ],
+   [
+    "M",
+    "分かった。おさらも 洗って おこうか。"
+   ],
+   [
+    "F",
+    "おさらは 夜 わたしが まとめて 洗うから いいよ。"
+   ],
+   [
+    "M",
+    "じゃあ、せんたくものから 干すね。"
+   ],
+   [
+    "F",
+    "せんたくきは あと 40分 かかるよ。ごみは 8時半までに 出さないと いけないの。"
+   ],
+   [
+    "M",
+    "え、もう 8時だ。"
+   ]
+  ],
+  "options": [
+   "せんたくものを 干す",
+   "ごみを 出す",
+   "牛乳を 買う",
+   "おさらを 洗う"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. The same man in a T-shirt in all four panels. He is hanging wet clothes on a clothesline on a balcony.",
+   "Simple black-and-white line drawing, no text. The same man in a T-shirt in all four panels. He is carrying a tied garbage bag out to a garbage collection spot on the street.",
+   "Simple black-and-white line drawing, no text. The same man in a T-shirt in all four panels. He is at a shop counter, buying a carton of milk.",
+   "Simple black-and-white line drawing, no text. The same man in a T-shirt in all four panels. He is washing dishes at a kitchen sink."
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "家里，一个女人和一个男人在说话。",
+    "question": "男人首先做什么？",
+    "lines": [
+     "那我走了。把洗好的衣服晾上，把垃圾扔了。还有，回来的时候买瓶牛奶。",
+     "知道了。盘子我也洗了吧？",
+     "盘子晚上我一起洗，不用了。",
+     "那我先晾衣服。",
+     "洗衣机还要四十分钟呢。垃圾得在八点半之前扔。",
+     "啊，已经八点了。"
+    ],
+    "options": [
+     "晾衣服",
+     "扔垃圾",
+     "买牛奶",
+     "洗盘子"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking at home.",
+    "question": "What will the man do first?",
+    "lines": [
+     "Right, I'm off. Hang up the washing and put the rubbish out, OK? And buy some milk on your way home.",
+     "OK. Shall I wash the dishes too?",
+     "I'll do the dishes all together tonight, so don't worry.",
+     "Then I'll hang up the washing first.",
+     "The washing machine has another forty minutes to go. And the rubbish has to go out by eight thirty.",
+     "What, it's already eight."
+    ],
+    "options": [
+     "Hang up the washing",
+     "Put the rubbish out",
+     "Buy milk",
+     "Wash the dishes"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「せんたくきは あと 40分 かかるよ。ごみは 8時半までに 出さないと いけないの。」男的说：「もう 8時だ。」\n推理：衣服还要洗四十分钟，现在没法晾；垃圾八点半前要扔，现在已经八点，所以先扔垃圾。牛奶是回来时买，盘子女的晚上洗。\n容易错：男的说「せんたくものから 干す」，被女的否定；最后一句没有说要做什么。",
+   "en": "Evidence: She says 「せんたくきは あと 40分 かかるよ。ごみは 8時半までに 出さないと いけないの。」 He says 「もう 8時だ。」\nReasoning: The washing isn't done for forty minutes, and the rubbish must go out by 8:30 — it's already eight — so the rubbish comes first. Milk is on the way home; she'll do the dishes tonight.\nTrap: his 「せんたくものから 干す」 is knocked down, and the last line names no task."
+  },
+  "wrong": [
+   {
+    "zh": "洗衣机还要四十分钟，现在晾不了。",
+    "en": "The machine has forty minutes to go, so the washing can't be hung yet."
+   },
+   null,
+   {
+    "zh": "牛奶是「帰りに」买的，不是现在。",
+    "en": "The milk is bought on the way home, not now."
+   },
+   {
+    "zh": "盘子晚上女的一起洗。",
+    "en": "She'll wash the dishes tonight."
+   }
+  ],
+  "traps": [
+   "order",
+   "not-possible",
+   "later",
+   "someone-else"
+  ]
+ },
+ {
+  "id": "n4-ck-133",
+  "type": "kadai",
+  "scene": "女の 人と 男の 人が 話しています。",
+  "question": "二人は 日曜日に 何を しますか。",
+  "lines": [
+   [
+    "F",
+    "日曜日、公園で ピクニックしない？ おべんとう 作るよ。"
+   ],
+   [
+    "M",
+    "いいね。でも、天気よほうでは、日曜日は 雨だって。"
+   ],
+   [
+    "F",
+    "えー、ざんねん。じゃあ、映画は？ 見たいって 言ってた 映画、もう 始まった？"
+   ],
+   [
+    "M",
+    "あれは 来週からなんだ。買い物は？ 新しい くつが ほしいって 言ってたよね。"
+   ],
+   [
+    "F",
+    "くつは きのう 会社の 帰りに 買っちゃった。じゃあ、うちで ケーキを 作ろうか。作り方、教えて あげるよ。"
+   ],
+   [
+    "M",
+    "いいね。あ、ちょっと 待って。今 天気よほうを 見たら、雨は 朝だけで、午後は 晴れるって。"
+   ],
+   [
+    "F",
+    "ほんと？ じゃあ、やっぱり 午後から 公園に 行こうよ。ケーキは また 今度ね。"
+   ],
+   [
+    "M",
+    "うん。おべんとう、楽しみに して いるよ。"
+   ]
+  ],
+  "options": [
+   "映画を 見る",
+   "買い物に 行く",
+   "ピクニックを する",
+   "ケーキを 作る"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. The same young man and young woman in all four panels. They are sitting side by side in cinema seats, looking at a big screen.",
+   "Simple black-and-white line drawing, no text. The same young man and young woman in all four panels. They are walking in a shopping street, each carrying shopping bags.",
+   "Simple black-and-white line drawing, no text. The same young man and young woman in all four panels. They are sitting on a picnic blanket on the grass in a park, with a lunch box between them.",
+   "Simple black-and-white line drawing, no text. The same young man and young woman in all four panels. They are standing in a kitchen, mixing cake batter in a bowl together."
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在说话。",
+    "question": "两个人星期天做什么？",
+    "lines": [
+     "星期天去公园野餐吧？我做便当。",
+     "好啊。不过天气预报说星期天下雨。",
+     "啊，真可惜。那看电影呢？你说想看的那部电影已经上映了吗？",
+     "那部下星期才上映。去买东西呢？你说过想要新鞋吧。",
+     "鞋昨天下班回来的路上已经买了。那在家做蛋糕吧？我教你怎么做。",
+     "好啊。啊，等一下。我刚看了天气预报，说只有早上下雨，下午就晴了。",
+     "真的？那还是下午去公园吧。蛋糕下次再做。",
+     "嗯。我很期待你的便当。"
+    ],
+    "options": [
+     "看电影",
+     "去买东西",
+     "野餐",
+     "做蛋糕"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking.",
+    "question": "What will the two of them do on Sunday?",
+    "lines": [
+     "How about a picnic in the park on Sunday? I'll make lunch.",
+     "Sounds good. But the forecast says it'll rain on Sunday.",
+     "Oh, what a shame. Then a film? Has that film you wanted to see started yet?",
+     "That starts next week. How about shopping? You said you wanted new shoes.",
+     "I already bought shoes yesterday on the way home from work. Then shall we make a cake at home? I'll show you how.",
+     "Great. Oh, wait. I just checked the forecast: it's only raining in the morning, and it'll clear up in the afternoon.",
+     "Really? Then let's go to the park after all, in the afternoon. The cake can wait till next time.",
+     "OK. I'm looking forward to your lunch."
+    ],
+    "options": [
+     "See a film",
+     "Go shopping",
+     "Have a picnic",
+     "Make a cake"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「雨は 朝だけで、午後は 晴れるって。」女的说：「やっぱり 午後から 公園に 行こうよ。ケーキは また 今度ね。」\n推理：一开始因为下雨放弃了野餐，后来知道只有早上下雨，就回到了最初的野餐计划。电影下星期才上映，鞋昨天已经买了。\n容易错：做蛋糕是最后才提出来的，但天气变了以后改成「また 今度」。",
+   "en": "Evidence: He says 「雨は 朝だけで、午後は 晴れるって。」 and she says 「やっぱり 午後から 公園に 行こうよ。ケーキは また 今度ね。」\nReasoning: The picnic was dropped because of rain, but rain only in the morning brings them back to the first plan. The film starts next week and she bought the shoes yesterday.\nTrap: the cake is the last idea suggested, but once the weather news changes it becomes 「また 今度」."
+  },
+  "wrong": [
+   {
+    "zh": "想看的电影「来週から」才上映。",
+    "en": "The film only starts next week."
+   },
+   {
+    "zh": "鞋「きのう 買っちゃった」。",
+    "en": "She already bought the shoes yesterday."
+   },
+   null,
+   {
+    "zh": "知道下午会晴以后，女的说「ケーキは また 今度」。",
+    "en": "Once they hear it'll clear up, she says 「ケーキは また 今度」 — another time."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "later",
+   "done-already",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n4-ck-134",
+  "type": "kadai",
+  "scene": "大学で 女の 学生と 男の 学生が 話しています。",
+  "question": "男の 学生は 夏休みに 何の アルバイトを しますか。",
+  "lines": [
+   [
+    "F",
+    "夏休み、アルバイト するの？"
+   ],
+   [
+    "M",
+    "うん。駅前の コンビニが 人を さがしてるんだけど、夜だけなんだ。夜は ねむく なるから、ちょっと…。"
+   ],
+   [
+    "F",
+    "じゃあ、わたしが はたらいてる レストランは？ 今 人が 足りないの。でも、土曜日と 日曜日も 来られる 人が いいって。"
+   ],
+   [
+    "M",
+    "週末は サッカーの 練習が あるからなあ。子どもに 英語を 教える アルバイトも あるって 聞いたけど。"
+   ],
+   [
+    "F",
+    "あれは もう 人が 決まったよ。引っこしの 手伝いは？ 一日だけでも できるよ。"
+   ],
+   [
+    "M",
+    "先月 一回 やったけど、たいへんすぎて、もう いいよ。"
+   ],
+   [
+    "F",
+    "そう。じゃあ、どうするの？"
+   ],
+   [
+    "M",
+    "夜でも いいや。ねむく ならないように、昼に ねて おくよ。"
+   ]
+  ],
+  "options": [
+   "レストランで はたらく",
+   "引っこしを 手伝う",
+   "子どもに 英語を 教える",
+   "コンビニで はたらく"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. The same young man in all four panels. He is a waiter in an apron, carrying plates of food on a tray in a restaurant.",
+   "Simple black-and-white line drawing, no text. The same young man in all four panels. He is carrying a big cardboard box out of a house toward a moving truck.",
+   "Simple black-and-white line drawing, no text. The same young man in all four panels. He is sitting at a desk beside a small child, pointing at an open picture book with English letters drawn only as squiggles.",
+   "Simple black-and-white line drawing, no text. The same young man in all four panels. He is standing behind a convenience store counter at night, the window behind him dark."
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "大学里，一个女生和一个男生在说话。",
+    "question": "男生暑假做什么打工？",
+    "lines": [
+     "暑假你打工吗？",
+     "嗯。车站前的便利店在招人，不过只有晚上的班。晚上会犯困，有点……",
+     "那我打工的餐厅呢？现在人手不够。不过他们想要星期六、星期天也能来的人。",
+     "周末我有足球训练啊。我还听说有教小孩英语的打工。",
+     "那个已经招到人了。帮人搬家呢？只干一天也行。",
+     "上个月干过一次，太累了，不想再干了。",
+     "这样啊。那你怎么办？",
+     "晚上也行吧。为了不犯困，我白天先睡一觉。"
+    ],
+    "options": [
+     "在餐厅打工",
+     "帮人搬家",
+     "教小孩英语",
+     "在便利店打工"
+    ]
+   },
+   "en": {
+    "scene": "A female student and a male student are talking at university.",
+    "question": "What part-time job will the male student do over the summer?",
+    "lines": [
+     "Are you going to work part-time over the summer?",
+     "Yeah. The convenience store by the station is looking for people, but it's nights only. I get sleepy at night, so...",
+     "Then how about the restaurant where I work? We're short of staff. But they want people who can come on Saturdays and Sundays too.",
+     "I've got football practice at weekends... I also heard there's a job teaching English to kids.",
+     "That's already been filled. How about helping people move house? You can do just one day.",
+     "I did it once last month. It was way too hard. Never again.",
+     "I see. So what will you do?",
+     "Nights are fine, I guess. I'll sleep in the daytime so I don't get sleepy."
+    ],
+    "options": [
+     "Work at a restaurant",
+     "Help people move house",
+     "Teach English to children",
+     "Work at a convenience store"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的最后说：「夜でも いいや。ねむく ならないように、昼に ねて おくよ。」\n推理：只有晚上班的是一开始说的便利店。餐厅要周末上班，他周末有足球训练；教英语已经招到人；搬家上个月干过，太累。\n容易错：便利店一开始被他自己否定了，最后又回到它；最后一句没说「コンビニ」。",
+   "en": "Evidence: His last line: 「夜でも いいや。ねむく ならないように、昼に ねて おくよ。」\nReasoning: The night-only job is the convenience store from his first line. The restaurant needs weekends (he has football), the English job is filled, and moving was too hard last month.\nTrap: he rejected the store first and comes back to it; the last line never says 「コンビニ」."
+  },
+  "wrong": [
+   {
+    "zh": "餐厅要周末也能上班，他周末有足球训练。",
+    "en": "The restaurant needs weekend work, and he has football then."
+   },
+   {
+    "zh": "搬家上个月干过，「たいへんすぎて、もう いい」。",
+    "en": "He tried moving work last month and found it too hard."
+   },
+   {
+    "zh": "教英语的打工「もう 人が 決まった」。",
+    "en": "The English-teaching job is already filled."
+   },
+   null
+  ],
+  "traps": [
+   "condition-conflict",
+   "not-possible",
+   "done-already"
+  ]
+ },
+ {
+  "id": "n4-ck-135",
+  "type": "kadai",
+  "scene": "家で 男の 人と 女の 人が 話しています。",
+  "question": "二人は 何を かう ことに しましたか。",
+  "lines": [
+   [
+    "M",
+    "何か 動物を かいたいね。犬は どう？"
+   ],
+   [
+    "F",
+    "この アパートは 犬は だめなのよ。"
+   ],
+   [
+    "M",
+    "そうか。じゃあ、ねこは？"
+   ],
+   [
+    "F",
+    "ねこは かわいいけど、わたし、ねこが いると くしゃみが 出るの。"
+   ],
+   [
+    "M",
+    "じゃあ、鳥は？ 小さい 鳥。"
+   ],
+   [
+    "F",
+    "鳥は 朝 うるさいでしょう。となりの 人に わるいよ。魚の ほうが しずかで いいんじゃない？"
+   ],
+   [
+    "M",
+    "魚は 見て いるだけだから、つまらないよ。それに、ペットの 店の 人が、小さい 鳥なら 声も 小さいって 言ってたよ。"
+   ],
+   [
+    "F",
+    "そうなの。それなら いいかな。"
+   ]
+  ],
+  "options": [
+   "犬",
+   "鳥",
+   "ねこ",
+   "魚"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A small dog sitting on a plain floor. Nothing else.",
+   "Simple black-and-white line drawing, no text. A small bird sitting on a perch inside a birdcage. Nothing else.",
+   "Simple black-and-white line drawing, no text. A cat sitting on a plain floor. Nothing else.",
+   "Simple black-and-white line drawing, no text. A fish swimming in a small glass tank. Nothing else."
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "家里，一个男人和一个女人在说话。",
+    "question": "两个人决定养什么？",
+    "lines": [
+     "好想养个小动物啊。狗怎么样？",
+     "这栋公寓不能养狗。",
+     "这样啊。那猫呢？",
+     "猫是可爱，可是有猫在我就会打喷嚏。",
+     "那鸟呢？小鸟。",
+     "鸟早上很吵吧。对邻居不好意思。鱼不是更安静吗？",
+     "鱼只能看着，没意思。而且宠物店的人说，小鸟的话叫声也小。",
+     "是吗。那样的话还行吧。"
+    ],
+    "options": [
+     "狗",
+     "鸟",
+     "猫",
+     "鱼"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking at home.",
+    "question": "What pet have they decided to get?",
+    "lines": [
+     "I'd like to have a pet. How about a dog?",
+     "Dogs aren't allowed in this apartment.",
+     "I see. A cat, then?",
+     "Cats are cute, but I start sneezing when there's a cat around.",
+     "Then a bird? A small one.",
+     "Birds are noisy in the morning, aren't they? It wouldn't be fair on the neighbours. Wouldn't a fish be better? They're quiet.",
+     "Fish are boring; you just look at them. Besides, the man at the pet shop said small birds have quiet voices.",
+     "Really? Then I suppose that's OK."
+    ],
+    "options": [
+     "A dog",
+     "A bird",
+     "A cat",
+     "A fish"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「小さい 鳥なら 声も 小さいって 言ってたよ。」女的说：「それなら いいかな。」\n推理：女的担心鸟早上吵，男的说小鸟叫声小，女的同意了。狗公寓不让养，有猫她就打喷嚏，鱼男的觉得没意思。\n容易错：女的提议的鱼没有被采用；「かう」是「飼う」（养），不是「買う」。",
+   "en": "Evidence: He says 「小さい 鳥なら 声も 小さいって 言ってたよ。」 and she says 「それなら いいかな。」\nReasoning: Her worry about noise is answered, so she agrees to the bird. Dogs aren't allowed, cats make her sneeze, and he finds fish boring.\nTrap: her suggestion, the fish, isn't taken; 「かう」 here is 飼う (keep a pet), not 買う."
+  },
+  "wrong": [
+   {
+    "zh": "公寓「犬は だめ」。",
+    "en": "Dogs aren't allowed in the apartment."
+   },
+   null,
+   {
+    "zh": "有猫在，女的就会打喷嚏。",
+    "en": "Cats make her sneeze."
+   },
+   {
+    "zh": "鱼是女的提议的，但男的觉得「つまらない」，最后养了小鸟。",
+    "en": "She suggests fish, but he finds them boring."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n4-ck-136",
+  "type": "kadai",
+  "scene": "ホテルで 男の 人と ホテルの 人が 話しています。",
+  "question": "男の 人は 何を 借りますか。",
+  "lines": [
+   [
+    "M",
+    "すみません、自転車を 借りたいんですが。お寺まで 行きたいので。"
+   ],
+   [
+    "F",
+    "申し訳ありません。雨の 日は 自転車を お貸しして いないんです。"
+   ],
+   [
+    "M",
+    "そうですか。じゃあ、歩いて 行きます。かさは ありますか。"
+   ],
+   [
+    "F",
+    "はい、こちらを どうぞ。お寺までの 地図も ありますが、いかがですか。"
+   ],
+   [
+    "M",
+    "地図は けいたいで 見られるから、だいじょうぶです。"
+   ],
+   [
+    "F",
+    "ながぐつも お貸しできますよ。道が ぬれて いますから。"
+   ],
+   [
+    "M",
+    "いえ、20分ぐらいですよね。この くつで 行きます。"
+   ]
+  ],
+  "options": [
+   "自転車",
+   "地図",
+   "かさ",
+   "ながぐつ"
+  ],
+  "optionImages": [
+   "Simple black-and-white line drawing, no text. A bicycle standing on a plain floor. Nothing else.",
+   "Simple black-and-white line drawing, no text. A folded paper map, half open, on a plain table. Nothing else.",
+   "Simple black-and-white line drawing, no text. A closed long umbrella leaning against a plain wall. Nothing else.",
+   "Simple black-and-white line drawing, no text. A pair of tall rubber rain boots on a plain floor. Nothing else."
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "酒店里，一个男人和酒店的人在说话。",
+    "question": "男人借什么？",
+    "lines": [
+     "不好意思，我想借辆自行车。想去寺庙那儿。",
+     "非常抱歉。下雨天我们不出借自行车。",
+     "这样啊。那我走着去。有伞吗？",
+     "有的，请用这把。还有到寺庙的地图，您需要吗？",
+     "地图我用手机能看，不用了。",
+     "雨靴也可以借给您。路上是湿的。",
+     "不用了，大概二十分钟吧？我就穿这双鞋去。"
+    ],
+    "options": [
+     "自行车",
+     "地图",
+     "伞",
+     "雨靴"
+    ]
+   },
+   "en": {
+    "scene": "A man and a hotel clerk are talking at a hotel.",
+    "question": "What will the man borrow?",
+    "lines": [
+     "Excuse me, I'd like to borrow a bicycle. I want to go to the temple.",
+     "I'm very sorry. We don't lend bicycles on rainy days.",
+     "I see. Then I'll walk. Do you have an umbrella?",
+     "Yes, here you are. We also have a map to the temple. Would you like one?",
+     "I can look at a map on my phone, so I'm fine.",
+     "We can lend you rain boots as well. The streets are wet.",
+     "No, it's about twenty minutes, isn't it? I'll go in these shoes."
+    ],
+    "options": [
+     "A bicycle",
+     "A map",
+     "An umbrella",
+     "Rain boots"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的问「かさは ありますか」，女的说「はい、こちらを どうぞ」。\n推理：雨天不借自行车；地图他用手机看；雨靴他说「この くつで 行きます」，不要。借的只有伞。\n容易错：最后一句说的是不借雨靴，不是借什么；伞是中间就已经定下的。",
+   "en": "Evidence: He asks 「かさは ありますか」 and she says 「はい、こちらを どうぞ」.\nReasoning: No bikes on rainy days, the map is on his phone, and he turns down the boots with 「この くつで 行きます」. The umbrella is the only thing he borrows.\nTrap: the last line refuses the boots; the umbrella was settled midway."
+  },
+  "wrong": [
+   {
+    "zh": "雨天「自転車を お貸しして いない」。",
+    "en": "Bikes aren't lent on rainy days."
+   },
+   {
+    "zh": "地图他「けいたいで 見られる」，不用借。",
+    "en": "He can use the map on his phone."
+   },
+   null,
+   {
+    "zh": "雨靴他不要，穿自己的鞋去。",
+    "en": "He declines the boots and wears his own shoes."
+   }
+  ],
+  "traps": [
+   "not-possible",
+   "condition-conflict"
+  ]
  }
 ]

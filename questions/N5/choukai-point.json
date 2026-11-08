@@ -1988,5 +1988,990 @@
    "half-right",
    "denied-guess"
   ]
+ },
+ {
+  "id": "n5-ck-221",
+  "type": "point",
+  "scene": "会社で 女の人と 男の人が 話しています。",
+  "question": "男の人は どうして けさ 会社に おくれましたか。",
+  "lines": [
+   [
+    "F",
+    "林さん、おはよう ございます。けさは おそかったですね。電車ですか。"
+   ],
+   [
+    "M",
+    "いいえ、電車は いつもと おなじでした。6時に おきて、いつもの 時間に うちを 出ました。"
+   ],
+   [
+    "F",
+    "そうですか。"
+   ],
+   [
+    "M",
+    "駅に ついて、かばんの 中を 見ました。さいふが ありませんでした。"
+   ],
+   [
+    "F",
+    "えっ、それで うちまで？"
+   ],
+   [
+    "M",
+    "はい。駅から うちまで あるいて 15分ですから、たいへんでした。"
+   ]
+  ],
+  "options": [
+   "電車が おくれたから",
+   "あさ おそく おきたから",
+   "駅まで あるいたから",
+   "さいふを わすれたから"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "在公司，一个女人和一个男人在说话。",
+    "question": "男人今天早上为什么上班迟到了？",
+    "lines": [
+     "林先生，早上好。今天早上来得晚啊。是电车的原因吗？",
+     "不是，电车和平时一样。我六点起床，平时的时间出的门。",
+     "是吗。",
+     "到了车站，我看了看包里，钱包不在。",
+     "啊，所以就回家了？",
+     "对。从车站到家走路要十五分钟，真够呛。"
+    ],
+    "options": [
+     "因为电车晚点了",
+     "因为早上起晚了",
+     "因为走路去车站",
+     "因为忘了带钱包"
+    ]
+   },
+   "en": {
+    "scene": "At the office, a woman and a man are talking.",
+    "question": "Why was the man late for work this morning?",
+    "lines": [
+     "Morning, Hayashi-san. You were late this morning. Was it the train?",
+     "No, the train was the same as always. I got up at six and left home at the usual time.",
+     "I see.",
+     "When I got to the station I looked in my bag. My wallet wasn't there.",
+     "Oh no — so you went all the way home?",
+     "Yes. It's fifteen minutes' walk from the station to my house, so it was a pain."
+    ],
+    "options": [
+     "The train was late",
+     "He got up late",
+     "He walked to the station",
+     "He forgot his wallet"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说「さいふが ありませんでした」，女的问「それで うちまで？」，男的回答「はい」。\n推理：电车「いつもと おなじでした」，他也是「6時に おきて、いつもの 時間に」出门；问题是到车站发现没带钱包，又走回家去拿，所以迟到。\n容易错：「あるいて 15分」是回家路上辛苦，不是迟到的原因本身。",
+   "en": "Evidence: He says 「さいふが ありませんでした」; she asks 「それで うちまで？」 and he says 「はい」.\nReasoning: The train was 「いつもと おなじでした」, and he got up at six and left at the usual time. At the station he found his wallet missing and walked back home for it — that made him late.\nTrap: the fifteen-minute walk is what made it tiring, not the reason itself."
+  },
+  "wrong": [
+   {
+    "zh": "女的猜是电车，男的说「いいえ」，电车和平时一样。",
+    "en": "She guesses the train; he says 「いいえ」 — it ran as usual."
+   },
+   {
+    "zh": "他六点起床，和平时一样。",
+    "en": "He got up at six, as usual."
+   },
+   {
+    "zh": "走路是回家拿钱包的路，本身不是原因。",
+    "en": "The walk was part of going back for the wallet, not the reason itself."
+   },
+   null
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n5-ck-222",
+  "type": "point",
+  "scene": "男の人と 女の人が 話しています。",
+  "question": "女の人の たんじょうびは いつですか。",
+  "lines": [
+   [
+    "M",
+    "森さん、たんじょうびは 3月 3日でしたね。"
+   ],
+   [
+    "F",
+    "いいえ、3月 3日は 母の たんじょうびです。わたしは 10日です。"
+   ],
+   [
+    "M",
+    "あ、じゃあ、4月 10日ですか。"
+   ],
+   [
+    "F",
+    "いいえ、4月 10日は 妹です。わたしは 母と おなじ 月です。"
+   ],
+   [
+    "M",
+    "そうでしたか。こんどは わすれません。"
+   ]
+  ],
+  "options": [
+   "3月 3日",
+   "3月 10日",
+   "4月 3日",
+   "4月 10日"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "女人的生日是哪天？",
+    "lines": [
+     "森小姐，你的生日是三月三号吧。",
+     "不是，三月三号是我妈妈的生日。我是十号。",
+     "啊，那是四月十号？",
+     "不是，四月十号是我妹妹。我和妈妈同一个月。",
+     "原来是这样。下次不会忘了。"
+    ],
+    "options": [
+     "三月三日",
+     "三月十日",
+     "四月三日",
+     "四月十日"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "When is the woman's birthday?",
+    "lines": [
+     "Mori-san, your birthday is March 3rd, isn't it?",
+     "No, March 3rd is my mother's birthday. Mine is the 10th.",
+     "Oh, then April 10th?",
+     "No, April 10th is my younger sister's. Mine is in the same month as my mother's.",
+     "I see. I won't forget next time."
+    ],
+    "options": [
+     "March 3",
+     "March 10",
+     "April 3",
+     "April 10"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说「わたしは 10日です」，又说「わたしは 母と おなじ 月です」。\n推理：妈妈的生日是3月3日，同一个月就是3月；日子是10日，合起来是3月10日。\n容易错：3月3日是妈妈的生日，4月10日是妹妹的；月和日要分开听、再合起来。",
+   "en": "Evidence: She says 「わたしは 10日です」 and then 「わたしは 母と おなじ 月です」.\nReasoning: Her mother's birthday is March 3rd, so the same month is March; the day is the 10th — March 10th.\nTrap: March 3rd is her mother's, April 10th her sister's; catch the month and the day separately, then put them together."
+  },
+  "wrong": [
+   {
+    "zh": "三月三日是妈妈的生日。",
+    "en": "March 3rd is her mother's birthday."
+   },
+   null,
+   {
+    "zh": "月和日都不对：她是三月，日子是十日。",
+    "en": "Both wrong: she's March, and the day is the 10th."
+   },
+   {
+    "zh": "四月十日是妹妹的生日。",
+    "en": "April 10th is her sister's birthday."
+   }
+  ],
+  "traps": [
+   "number",
+   "denied-guess",
+   "half-right"
+  ]
+ },
+ {
+  "id": "n5-ck-223",
+  "type": "point",
+  "scene": "男の人と 女の人が 話しています。",
+  "question": "女の人は 休みの 日に よく 何を しますか。",
+  "lines": [
+   [
+    "M",
+    "山本さん、日曜日、えいがかんの 前に いましたね。えいがが すきですか。"
+   ],
+   [
+    "F",
+    "ああ、あの 日は 友だちと 行きました。えいがは ときどきです。"
+   ],
+   [
+    "M",
+    "そうですか。休みの 日は いつも 何を して いますか。"
+   ],
+   [
+    "F",
+    "学生の ときは よく 本を 読みましたが、今は 毎週 プールへ 行って います。"
+   ],
+   [
+    "M",
+    "いいですね。ぼくは うちで りょうりを します。"
+   ]
+  ],
+  "options": [
+   "えいがを 見る",
+   "およぐ",
+   "本を 読む",
+   "りょうりを する"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在说话。",
+    "question": "女人休息日常做什么？",
+    "lines": [
+     "山本小姐，星期天你在电影院门口吧。你喜欢电影吗？",
+     "啊，那天是和朋友去的。电影只是偶尔看。",
+     "是吗。休息日你一般做什么？",
+     "上学的时候常看书，现在每周去游泳池。",
+     "真好。我在家做饭。"
+    ],
+    "options": [
+     "看电影",
+     "游泳",
+     "看书",
+     "做饭"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking.",
+    "question": "What does the woman often do on her days off?",
+    "lines": [
+     "Yamamoto-san, you were outside the cinema on Sunday. Do you like films?",
+     "Oh, I went with a friend that day. I only see films now and then.",
+     "I see. What do you usually do on your days off?",
+     "When I was a student I read a lot, but now I go to the pool every week.",
+     "Nice. I cook at home."
+    ],
+    "options": [
+     "Watch films",
+     "Swim",
+     "Read books",
+     "Cook"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「今は 毎週 プールへ 行って います。」\n推理：每周去游泳池，就是常去游泳。看电影「ときどき」，只是偶尔；看书是「学生の とき」，过去的事。\n容易错：做饭的是男的；选项「およぐ」和对话里的「プールへ 行く」说法不同。",
+   "en": "Evidence: She says: 「今は 毎週 プールへ 行って います。」\nReasoning: Going to the pool every week means she often swims. Films are only 「ときどき」; reading was 「学生の とき」 — the past.\nTrap: the man is the one who cooks; the option 「およぐ」 rephrases 「プールへ 行く」."
+  },
+  "wrong": [
+   {
+    "zh": "电影只是「ときどき」，偶尔看。",
+    "en": "Films are only 「ときどき」 — now and then."
+   },
+   null,
+   {
+    "zh": "常看书是上学时候的事，现在去游泳。",
+    "en": "Reading a lot was when she was a student; now she swims."
+   },
+   {
+    "zh": "做饭的是男的。",
+    "en": "Cooking is what the man does."
+   }
+  ],
+  "traps": [
+   "tense",
+   "other-option-attribute",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n5-ck-224",
+  "type": "point",
+  "scene": "大学で 女の 学生と 男の 学生が 話しています。",
+  "question": "男の 学生は いつ 日本へ 来ましたか。",
+  "lines": [
+   [
+    "F",
+    "リーさん、日本は 長いですか。"
+   ],
+   [
+    "M",
+    "そうですね。この 大学には きょねんの 春に 入りました。"
+   ],
+   [
+    "F",
+    "じゃあ、日本に 来たのも きょねんの 春ですか。"
+   ],
+   [
+    "M",
+    "いいえ、その 前の 年の 秋です。大学に 入る 前に、日本語学校で 六か月 べんきょうしました。"
+   ],
+   [
+    "F",
+    "そうですか。わたしは ことしの 春に 来ました。"
+   ]
+  ],
+  "options": [
+   "おととしの 秋",
+   "きょねんの 春",
+   "きょねんの 秋",
+   "ことしの 春"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在大学，一个女学生和一个男学生在说话。",
+    "question": "男学生是什么时候来日本的？",
+    "lines": [
+     "李同学，你在日本很久了吗？",
+     "嗯，我是去年春天进这所大学的。",
+     "那来日本也是去年春天吗？",
+     "不，是再前一年的秋天。进大学之前，我在日语学校学了六个月。",
+     "是吗。我是今年春天来的。"
+    ],
+    "options": [
+     "前年秋天",
+     "去年春天",
+     "去年秋天",
+     "今年春天"
+    ]
+   },
+   "en": {
+    "scene": "At a university, a female student and a male student are talking.",
+    "question": "When did the male student come to Japan?",
+    "lines": [
+     "Lee-san, have you been in Japan long?",
+     "Well, I started at this university last spring.",
+     "So you came to Japan last spring too?",
+     "No, the autumn of the year before. Before university I studied at a Japanese language school for six months.",
+     "I see. I came this spring."
+    ],
+    "options": [
+     "The autumn before last",
+     "Last spring",
+     "Last autumn",
+     "This spring"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「いいえ、その 前の 年の 秋です。」\n推理：他去年春天进大学；「その 前の 年」是去年的前一年，就是前年；所以是前年秋天来的，在日语学校学了六个月以后进大学。\n容易错：去年春天是进大学的时间；今年春天是女的来日本的时间。",
+   "en": "Evidence: He says: 「いいえ、その 前の 年の 秋です。」\nReasoning: He entered university last spring; 「その 前の 年」 is the year before that — the year before last. He came that autumn and studied six months at a language school first.\nTrap: last spring is when he entered university; this spring is when the woman came."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "去年春天是他进大学的时间，不是来日本的时间。",
+    "en": "Last spring is when he entered university, not when he came."
+   },
+   {
+    "zh": "「秋」对，但年份是去年的前一年。",
+    "en": "Autumn is right, but it's the year before last year."
+   },
+   {
+    "zh": "今年春天是女的来日本的时间。",
+    "en": "This spring is when the woman came."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "half-right",
+   "other-option-attribute"
+  ]
+ },
+ {
+  "id": "n5-ck-225",
+  "type": "point",
+  "scene": "会社で 男の人と 女の人が 話しています。",
+  "question": "女の人は いつが いちばん すきですか。",
+  "lines": [
+   [
+    "M",
+    "もう すぐ なつ休みですね。中村さんは なつが すきですか。"
+   ],
+   [
+    "F",
+    "なつは あつくて、ちょっと……。"
+   ],
+   [
+    "M",
+    "そうですか。ぼくは ふゆが いちばん すきです。スキーが できますから。"
+   ],
+   [
+    "F",
+    "スキーは わたしも すきですが、さむいのは すきじゃ ありません。はるも いいですが、わたしは 山が 赤や きいろに なる ときが いちばん すきです。"
+   ],
+   [
+    "M",
+    "ああ、きれいですね。"
+   ]
+  ],
+  "options": [
+   "はる",
+   "なつ",
+   "あき",
+   "ふゆ"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在公司，一个男人和一个女人在说话。",
+    "question": "女人最喜欢什么时候？",
+    "lines": [
+     "快到暑假了。中村小姐喜欢夏天吗？",
+     "夏天太热，有点……",
+     "是吗。我最喜欢冬天，因为可以滑雪。",
+     "滑雪我也喜欢，不过我不喜欢冷。春天也不错，但我最喜欢山变成红色、黄色的时候。",
+     "啊，很美啊。"
+    ],
+    "options": [
+     "春天",
+     "夏天",
+     "秋天",
+     "冬天"
+    ]
+   },
+   "en": {
+    "scene": "At the office, a man and a woman are talking.",
+    "question": "Which season does the woman like best?",
+    "lines": [
+     "It's nearly the summer holidays. Do you like summer, Nakamura-san?",
+     "Summer is so hot, I'm not really…",
+     "I see. I like winter best, because I can ski.",
+     "I like skiing too, but I don't like the cold. Spring is nice too, but I like it best when the mountains turn red and yellow.",
+     "Ah, that's beautiful."
+    ],
+    "options": [
+     "Spring",
+     "Summer",
+     "Autumn",
+     "Winter"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「わたしは 山が 赤や きいろに なる ときが いちばん すきです。」\n推理：山上的树叶变红、变黄是秋天。夏天她嫌热，冬天她不喜欢冷，春天只是「も いい」。\n容易错：女的没有说「あき」，要从红叶推出季节；最喜欢冬天的是男的。",
+   "en": "Evidence: She says: 「わたしは 山が 赤や きいろに なる ときが いちばん すきです。」\nReasoning: Mountains turning red and yellow means autumn. She finds summer too hot, doesn't like the cold of winter, and spring is only 「も いい」.\nTrap: she never says 「あき」 — infer it from the autumn leaves; the man is the one who likes winter best."
+  },
+  "wrong": [
+   {
+    "zh": "春天她只说「はるも いい」，不是最喜欢。",
+    "en": "She only says spring is nice too, not her favourite."
+   },
+   {
+    "zh": "夏天太热，她不太喜欢。",
+    "en": "Summer is too hot for her."
+   },
+   null,
+   {
+    "zh": "最喜欢冬天的是男的；女的不喜欢冷。",
+    "en": "Winter is the man's favourite; she dislikes the cold."
+   }
+  ],
+  "traps": [
+   "other-option-attribute",
+   "half-right"
+  ]
+ },
+ {
+  "id": "n5-ck-226",
+  "type": "point",
+  "scene": "駅で 女の人と 男の人が 話しています。",
+  "question": "男の人の お兄さんは どの 人ですか。",
+  "lines": [
+   [
+    "F",
+    "田中さんの お兄さんは どの 人ですか。あの せが 高い 人ですか。"
+   ],
+   [
+    "M",
+    "ええ。兄は せが 高いですよ。"
+   ],
+   [
+    "F",
+    "せが 高い 人は 二人 いますね。ネクタイを して いる 人ですか。"
+   ],
+   [
+    "M",
+    "いいえ、兄は きょう 休みですから、ネクタイは して いません。"
+   ],
+   [
+    "F",
+    "ああ、あの 人ですね。"
+   ]
+  ],
+  "options": [
+   "せが ひくい・ネクタイ ある",
+   "せが ひくい・ネクタイ ない",
+   "せが 高い・ネクタイ ある",
+   "せが 高い・ネクタイ ない"
+  ],
+  "optionImages": [
+   "A simple black-and-white line drawing, no text: a short young man standing, facing forward, in a shirt and wearing a necktie.",
+   "A simple black-and-white line drawing, no text: a short young man standing, facing forward, in a shirt with an open collar, no necktie.",
+   "A simple black-and-white line drawing, no text: a tall young man standing, facing forward, in a shirt and wearing a necktie.",
+   "A simple black-and-white line drawing, no text: a tall young man standing, facing forward, in a shirt with an open collar, no necktie."
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "在车站，一个女人和一个男人在说话。",
+    "question": "男人的哥哥是哪个人？",
+    "lines": [
+     "田中先生的哥哥是哪个人？是那个个子高的人吗？",
+     "对。我哥哥个子很高。",
+     "个子高的人有两个呢。是系领带的那个吗？",
+     "不是，我哥哥今天休息，没系领带。",
+     "啊，是那个人啊。"
+    ],
+    "options": [
+     "个子矮・系领带",
+     "个子矮・没系领带",
+     "个子高・系领带",
+     "个子高・没系领带"
+    ]
+   },
+   "en": {
+    "scene": "At a station, a woman and a man are talking.",
+    "question": "Which person is the man's older brother?",
+    "lines": [
+     "Which one is your brother, Tanaka-san? That tall man?",
+     "Yes. My brother is tall.",
+     "There are two tall men. Is he the one wearing a tie?",
+     "No, my brother is off today, so he isn't wearing a tie.",
+     "Ah, that one."
+    ],
+    "options": [
+     "Short, tie",
+     "Short, no tie",
+     "Tall, tie",
+     "Tall, no tie"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说「兄は せが 高いですよ」，又说「ネクタイは して いません」。\n推理：个子高的人有两个，用领带区分；哥哥今天休息，没有系领带，所以是个子高、没系领带的人。\n容易错：女的第一个猜测是对的，第二个猜测被否定；只对一半的选项要排除。",
+   "en": "Evidence: He says 「兄は せが 高いですよ」 and then 「ネクタイは して いません」.\nReasoning: There are two tall men, told apart by the tie. His brother is off today and wears no tie: tall, no tie.\nTrap: her first guess is right, her second is denied; rule out the half-right options."
+  },
+  "wrong": [
+   {
+    "zh": "哥哥个子高，也没系领带。",
+    "en": "His brother is tall and wears no tie."
+   },
+   {
+    "zh": "没系领带对，但哥哥个子高。",
+    "en": "No tie is right, but his brother is tall."
+   },
+   {
+    "zh": "个子高对，但哥哥今天没系领带。",
+    "en": "Tall is right, but he isn't wearing a tie today."
+   },
+   null
+  ],
+  "traps": [
+   "half-right",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n5-ck-227",
+  "type": "point",
+  "scene": "こうえんで 女の人と 男の人が 話しています。",
+  "question": "男の人の いぬは どれですか。",
+  "lines": [
+   [
+    "F",
+    "小川さんの いぬは どれですか。あの 大きい いぬですか。"
+   ],
+   [
+    "M",
+    "いいえ、あれは となりの うちの いぬです。うちのは 小さいです。"
+   ],
+   [
+    "F",
+    "小さい いぬは 二ひき いますね。"
+   ],
+   [
+    "M",
+    "ええ。ふくを 着て いるのが うちの いぬです。さむいですから。"
+   ]
+  ],
+  "options": [
+   "大きい・ふく ある",
+   "大きい・ふく ない",
+   "小さい・ふく ある",
+   "小さい・ふく ない"
+  ],
+  "optionImages": [
+   "A simple black-and-white line drawing, no text: a big dog standing on grass, facing sideways, wearing a small knitted dog sweater.",
+   "A simple black-and-white line drawing, no text: a big dog standing on grass, facing sideways, wearing nothing.",
+   "A simple black-and-white line drawing, no text: a small dog standing on grass, facing sideways, wearing a small knitted dog sweater.",
+   "A simple black-and-white line drawing, no text: a small dog standing on grass, facing sideways, wearing nothing."
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在公园，一个女人和一个男人在说话。",
+    "question": "男人的狗是哪只？",
+    "lines": [
+     "小川先生的狗是哪只？是那只大狗吗？",
+     "不是，那是邻居家的狗。我家的是小的。",
+     "小狗有两只呢。",
+     "对。穿着衣服的是我家的狗。因为天冷。"
+    ],
+    "options": [
+     "大・穿衣服",
+     "大・没穿衣服",
+     "小・穿衣服",
+     "小・没穿衣服"
+    ]
+   },
+   "en": {
+    "scene": "In a park, a woman and a man are talking.",
+    "question": "Which dog is the man's?",
+    "lines": [
+     "Which one is your dog, Ogawa-san? That big one?",
+     "No, that's our neighbours' dog. Ours is small.",
+     "There are two small dogs.",
+     "Yes. The one wearing clothes is ours. Because it's cold."
+    ],
+    "options": [
+     "Big, clothes",
+     "Big, no clothes",
+     "Small, clothes",
+     "Small, no clothes"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说「うちのは 小さいです」，又说「ふくを 着て いるのが うちの いぬです」。\n推理：大狗是邻居家的；小狗有两只，穿着衣服的那只是男人的。\n容易错：女的猜的大狗被「いいえ」否定；小但没穿衣服的只对一半。",
+   "en": "Evidence: He says 「うちのは 小さいです」 and 「ふくを 着て いるのが うちの いぬです」.\nReasoning: The big dog is the neighbours'; of the two small dogs, the one in clothes is his.\nTrap: her guess, the big dog, is denied with 「いいえ」; small without clothes is only half right."
+  },
+  "wrong": [
+   {
+    "zh": "大狗是邻居家的。",
+    "en": "The big dog belongs to the neighbours."
+   },
+   {
+    "zh": "大狗是邻居家的，而且男人的狗穿着衣服。",
+    "en": "The big dog is the neighbours', and his dog wears clothes."
+   },
+   null,
+   {
+    "zh": "小狗对，但男人的狗穿着衣服。",
+    "en": "Small is right, but his dog is wearing clothes."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n5-ck-228",
+  "type": "point",
+  "scene": "男の人と 女の人が ホテルの しゃしんを 見て います。",
+  "question": "二人は どの ホテルに しますか。",
+  "lines": [
+   [
+    "F",
+    "この うみの そばの ホテル、きれいですね。"
+   ],
+   [
+    "M",
+    "ええ。でも、ちょっと 高いですよ。山の ホテルは やすいです。"
+   ],
+   [
+    "F",
+    "うーん、わたしは うみで およぎたいです。"
+   ],
+   [
+    "M",
+    "じゃあ、うみの ホテルに しましょう。プールが ある ホテルと ない ホテルが ありますね。"
+   ],
+   [
+    "F",
+    "うみで およぎますから、プールは いりません。ない ほうが やすいですよ。"
+   ],
+   [
+    "M",
+    "じゃあ、そこに しましょう。"
+   ]
+  ],
+  "options": [
+   "うみ・プール ない",
+   "うみ・プール ある",
+   "山・プール ない",
+   "山・プール ある"
+  ],
+  "optionImages": [
+   "A simple black-and-white line drawing, no text: a small three-storey hotel building standing right beside the sea, with waves in front, and no swimming pool.",
+   "A simple black-and-white line drawing, no text: a small three-storey hotel building standing right beside the sea, with waves in front, and a rectangular swimming pool beside it.",
+   "A simple black-and-white line drawing, no text: a small three-storey hotel building in the mountains, with mountain peaks behind it, and no swimming pool.",
+   "A simple black-and-white line drawing, no text: a small three-storey hotel building in the mountains, with mountain peaks behind it, and a rectangular swimming pool beside it."
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在看酒店的照片。",
+    "question": "两个人选哪家酒店？",
+    "lines": [
+     "这家海边的酒店真漂亮。",
+     "是啊。不过有点贵。山里的酒店便宜。",
+     "嗯……我想在海里游泳。",
+     "那就选海边的酒店吧。有带游泳池的，也有不带的。",
+     "我们在海里游，不需要游泳池。没有的那家便宜。",
+     "那就住那家吧。"
+    ],
+    "options": [
+     "海边・没有游泳池",
+     "海边・有游泳池",
+     "山里・没有游泳池",
+     "山里・有游泳池"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are looking at photos of hotels.",
+    "question": "Which hotel will they choose?",
+    "lines": [
+     "This hotel by the sea is lovely.",
+     "Yes. But it's a bit expensive. The mountain hotels are cheap.",
+     "Hmm, I want to swim in the sea.",
+     "Then let's go with a sea hotel. There's one with a pool and one without.",
+     "We'll swim in the sea, so we don't need a pool. The one without is cheaper.",
+     "Then let's take that one."
+    ],
+    "options": [
+     "By the sea, no pool",
+     "By the sea, pool",
+     "In the mountains, no pool",
+     "In the mountains, pool"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说「うみの ホテルに しましょう」，女的说「プールは いりません。ない ほうが やすいですよ」，男的说「そこに しましょう」。\n推理：山里的便宜，但女的想在海里游泳，所以选海边；海边的两家里，不需要游泳池，选没有游泳池的。\n容易错：「安い」先说的是山里的酒店，但没有选。",
+   "en": "Evidence: He says 「うみの ホテルに しましょう」; she says 「プールは いりません。ない ほうが やすいですよ」; he answers 「そこに しましょう」.\nReasoning: The mountain hotels are cheaper, but she wants to swim in the sea, so a sea hotel; of the two, they don't need a pool, so the one without.\nTrap: 「やすい」 is first said about the mountain hotels, which they don't choose."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "海边对，但不需要游泳池，选的是没有的那家。",
+    "en": "By the sea is right, but they don't need a pool."
+   },
+   {
+    "zh": "山里的便宜，但女的想在海里游泳。",
+    "en": "The mountain hotel is cheap, but she wants to swim in the sea."
+   },
+   {
+    "zh": "山里、游泳池都不对。",
+    "en": "Neither the mountains nor the pool fits."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n5-ck-229",
+  "type": "point",
+  "scene": "とけいの 店で 女の人と 男の人が 話しています。",
+  "question": "女の人は どの とけいを 買いますか。",
+  "lines": [
+   [
+    "F",
+    "だいどころに おく とけいが ほしいです。"
+   ],
+   [
+    "M",
+    "この 大きい まるい とけいは どうですか。"
+   ],
+   [
+    "F",
+    "だいどころは せまいですから、小さいのが いいです。"
+   ],
+   [
+    "M",
+    "じゃあ、こちらの 小さい とけいは？ まるいのと しかくいのが ありますよ。"
+   ],
+   [
+    "F",
+    "前の とけいも まるかったです。こんどは ちがうのが いいですね。"
+   ],
+   [
+    "M",
+    "はい、わかりました。"
+   ]
+  ],
+  "options": [
+   "大きい・まるい",
+   "大きい・しかくい",
+   "小さい・まるい",
+   "小さい・しかくい"
+  ],
+  "optionImages": [
+   "A simple black-and-white line drawing, no text: a big round wall clock with hands and plain tick marks, no numbers.",
+   "A simple black-and-white line drawing, no text: a big square wall clock with hands and plain tick marks, no numbers.",
+   "A simple black-and-white line drawing, no text: a small round wall clock with hands and plain tick marks, no numbers.",
+   "A simple black-and-white line drawing, no text: a small square wall clock with hands and plain tick marks, no numbers."
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "在钟表店，一个女人和一个男人在说话。",
+    "question": "女人买哪个钟？",
+    "lines": [
+     "我想要一个放在厨房的钟。",
+     "这个大的圆钟怎么样？",
+     "厨房很小，小的比较好。",
+     "那这边的小钟呢？有圆的也有方的。",
+     "以前的钟也是圆的。这次想要不一样的。",
+     "好的，明白了。"
+    ],
+    "options": [
+     "大・圆",
+     "大・方",
+     "小・圆",
+     "小・方"
+    ]
+   },
+   "en": {
+    "scene": "At a clock shop, a woman and a man are talking.",
+    "question": "Which clock will the woman buy?",
+    "lines": [
+     "I'd like a clock for my kitchen.",
+     "How about this big round clock?",
+     "My kitchen is small, so a small one is better.",
+     "Then how about these small ones? There are round ones and square ones.",
+     "My old clock was round too. This time I'd like something different.",
+     "Certainly."
+    ],
+    "options": [
+     "Big, round",
+     "Big, square",
+     "Small, round",
+     "Small, square"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说「小さいのが いいです」，又说「前の とけいも まるかったです。こんどは ちがうのが いいですね」。\n推理：厨房小，要小的；以前的钟是圆的，这次要不一样的，就是方的。所以是小的方钟。\n容易错：女的没说「しかくい」，要从「ちがうのが いい」推出来。",
+   "en": "Evidence: She says 「小さいのが いいです」 and 「前の とけいも まるかったです。こんどは ちがうのが いいですね」.\nReasoning: Her kitchen is small, so small; her old clock was round and she wants something different, so square. Small and square.\nTrap: she never says 「しかくい」 — it follows from 「ちがうのが いい」."
+  },
+  "wrong": [
+   {
+    "zh": "厨房小，不要大的；圆的也和以前一样。",
+    "en": "Too big for her small kitchen, and round like her old one."
+   },
+   {
+    "zh": "方的对，但厨房小，要小的。",
+    "en": "Square is right, but she needs a small one."
+   },
+   {
+    "zh": "小的对，但以前的钟是圆的，这次要不一样的。",
+    "en": "Small is right, but her old clock was round and she wants a change."
+   },
+   null
+  ],
+  "traps": [
+   "half-right",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n5-ck-230",
+  "type": "point",
+  "scene": "こうえんで 女の人と 男の人が 話しています。",
+  "question": "女の人の おじいさんは どの 人ですか。",
+  "lines": [
+   [
+    "F",
+    "あ、あそこに わたしの そふが いますよ。"
+   ],
+   [
+    "M",
+    "どの 人ですか。あの ぼうしを かぶって いる 人ですか。"
+   ],
+   [
+    "F",
+    "いいえ。そふは ぼうしが すきじゃ ありません。"
+   ],
+   [
+    "M",
+    "じゃあ、あそこで カメラを もって いる 人ですか。"
+   ],
+   [
+    "F",
+    "ええ、そうです。しゃしんが すきで、いつも カメラを もって います。"
+   ]
+  ],
+  "options": [
+   "カメラだけ",
+   "カメラと ぼうし",
+   "ぼうしだけ",
+   "どちらも ない"
+  ],
+  "optionImages": [
+   "A simple black-and-white line drawing, no text: an old man standing, facing forward, holding a camera in both hands, no hat.",
+   "A simple black-and-white line drawing, no text: an old man standing, facing forward, holding a camera in both hands, wearing a hat.",
+   "A simple black-and-white line drawing, no text: an old man standing, facing forward, with empty hands, wearing a hat.",
+   "A simple black-and-white line drawing, no text: an old man standing, facing forward, with empty hands, no hat."
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在公园，一个女人和一个男人在说话。",
+    "question": "女人的爷爷是哪个人？",
+    "lines": [
+     "啊，我爷爷在那边。",
+     "哪个人？是那个戴帽子的人吗？",
+     "不是。我爷爷不喜欢帽子。",
+     "那是在那边拿着相机的人吗？",
+     "对，就是他。他喜欢拍照，总是带着相机。"
+    ],
+    "options": [
+     "只拿相机",
+     "相机和帽子",
+     "只戴帽子",
+     "都没有"
+    ]
+   },
+   "en": {
+    "scene": "In a park, a woman and a man are talking.",
+    "question": "Which person is the woman's grandfather?",
+    "lines": [
+     "Oh, my grandfather is over there.",
+     "Which one? The man wearing a hat?",
+     "No. My grandfather doesn't like hats.",
+     "Then the man holding a camera over there?",
+     "Yes, that's him. He loves taking photos and always has his camera."
+    ],
+    "options": [
+     "Camera only",
+     "Camera and hat",
+     "Hat only",
+     "Neither"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说「そふは ぼうしが すきじゃ ありません」，又说「ええ、そうです。……いつも カメラを もって います」。\n推理：戴帽子的人被否定；拿相机的人被肯定。所以是拿着相机、没戴帽子的人。\n容易错：男的第一个猜测被否定，第二个才对；拿相机又戴帽子的只对一半。",
+   "en": "Evidence: She says 「そふは ぼうしが すきじゃ ありません」 and then 「ええ、そうです。……いつも カメラを もって います」.\nReasoning: The man in the hat is ruled out; the man with the camera is confirmed — camera, no hat.\nTrap: his first guess is denied, the second is right; camera plus hat is only half right."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "拿相机对，但爷爷不喜欢帽子。",
+    "en": "The camera is right, but he doesn't like hats."
+   },
+   {
+    "zh": "戴帽子的人被否定了，而且爷爷拿着相机。",
+    "en": "The man in the hat is ruled out, and her grandfather has a camera."
+   },
+   {
+    "zh": "爷爷拿着相机。",
+    "en": "Her grandfather is holding a camera."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "denied-guess"
+  ]
  }
 ]

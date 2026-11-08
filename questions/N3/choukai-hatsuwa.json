@@ -633,5 +633,468 @@
    "perspective",
    "intent"
   ]
+ },
+ {
+  "id": "n3-ck-412",
+  "type": "hatsuwa",
+  "scene": "電車の中で、座っています。前に、おじいさんが立っています。とても疲れているようです。自分の席に座ってほしいです。おじいさんに言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "Inside a commuter train. A young woman sitting on the bench seat is half standing up and gesturing with an open hand toward her seat. An elderly man with a walking stick stands in front of her, holding a hanging strap and looking tired.",
+   "arrow": "the young woman getting up from her seat"
+  },
+  "options": [
+   "すみません、ここに座ってもいいですか。",
+   "ありがとうございます。助かります。",
+   "あの、よかったら、ここに座ってください。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "坐在电车上。前面站着一位老爷爷，看起来很累。想让他坐自己的座位。对老爷爷说。",
+    "question": "怎么说？",
+    "options": [
+     "不好意思，我可以坐这里吗？",
+     "谢谢您，帮大忙了。",
+     "那个，不介意的话，请坐这里。"
+    ]
+   },
+   "en": {
+    "scene": "You're sitting on a train. An elderly man is standing in front of you and looks very tired. You want him to take your seat. You speak to him.",
+    "question": "What do you say?",
+    "options": [
+     "Excuse me, may I sit here?",
+     "Thank you. That's a big help.",
+     "Um, if you like, please sit here."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「自分の席に座ってほしいです」，说话的是正要站起来的年轻女性。\n推理：是自己把座位让给对方，所以用「よかったら、ここに座ってください」＝不介意的话请坐。「よかったら」是让座、请别人时常用的客气开头。\n容易错：「座ってもいいですか」是自己想坐；「助かります」是被让座的老爷爷说的。",
+   "en": "Evidence: The scene: 「自分の席に座ってほしいです」. The speaker is the young woman getting up.\nReasoning: She is giving her seat away, so she says 「よかったら、ここに座ってください」 = \"if you like, please sit here\"; 「よかったら」 is the usual polite opener for an offer.\nTrap: 「座ってもいいですか」 asks to sit herself; 「助かります」 is the old man's thanks."
+  },
+  "wrong": [
+   {
+    "zh": "「座ってもいいですか」是请求让自己坐，可她本来就坐着，是要让座。",
+    "en": "「座ってもいいですか」 asks permission to sit — but she's already seated and is giving the seat away."
+   },
+   {
+    "zh": "「ありがとうございます。助かります」是被让座的老爷爷道谢的话。",
+    "en": "「ありがとうございます。助かります」 is what the old man would say when offered the seat."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n3-ck-413",
+  "type": "hatsuwa",
+  "scene": "服の店で、気に入ったシャツを見つけました。買う前に、一度着てみたいです。店の人に言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A clothing shop. A young man holds up a shirt on a hanger in front of himself and turns toward a female shop assistant standing nearby. Racks of shirts and a fitting room curtain are in the background.",
+   "arrow": "the young man holding the shirt"
+  },
+  "options": [
+   "すみません、これ、着てみてもいいですか。",
+   "よろしければ、どうぞ着てみてください。",
+   "すみません、これ、プレゼント用に包んでもらえますか。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在服装店里看中了一件衬衫。买之前想先试穿一下。对店员说。",
+    "question": "怎么说？",
+    "options": [
+     "不好意思，这件我可以试穿一下吗？",
+     "如果您愿意的话，请试穿看看。",
+     "不好意思，这件能帮我包成礼物吗？"
+    ]
+   },
+   "en": {
+    "scene": "In a clothing shop, you've found a shirt you like. Before buying it, you want to try it on once. You speak to the shop assistant.",
+    "question": "What do you say?",
+    "options": [
+     "Excuse me, may I try this on?",
+     "If you like, please try it on.",
+     "Excuse me, could you wrap this as a gift?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「買う前に、一度着てみたいです」，说话的是拿着衬衫的男顾客。\n推理：想试穿，要先征得店员同意：「着てみてもいいですか」＝可以试穿吗。\n容易错：「どうぞ着てみてください」是店员劝顾客试穿的话；包装成礼物是决定买以后才说的，他还没决定。",
+   "en": "Evidence: The scene: 「買う前に、一度着てみたいです」. The speaker is the man holding the shirt.\nReasoning: He wants to try it on, so he asks permission: 「着てみてもいいですか」 = \"may I try it on?\"\nTrap: 「どうぞ着てみてください」 is the assistant inviting him to try it; gift-wrapping comes after deciding to buy, which he hasn't."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「どうぞ着てみてください」是店员对顾客说的，立场反了。",
+    "en": "「どうぞ着てみてください」 is the assistant's line to a customer — the roles are reversed."
+   },
+   {
+    "zh": "请店员包成礼物是要买的时候说的，可他是想先试穿再决定。",
+    "en": "Asking for gift wrapping is for when you're buying; he wants to try it on before deciding."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n3-ck-414",
+  "type": "hatsuwa",
+  "scene": "会社で電話に出ました。ほかの会社の人が、佐藤部長と話したいと言っています。でも、部長は今、出かけています。電話の相手に言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "An office. A young woman sits at her desk holding a telephone receiver to her ear and speaking politely. Behind her, a larger desk with an empty chair shows its owner is out.",
+   "arrow": "the young woman holding the telephone"
+  },
+  "options": [
+   "はい、ただいま佐藤に代わります。",
+   "申し訳ありません。佐藤はただいま外出しております。",
+   "申し訳ありません。佐藤部長はもうお帰りになりました。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在公司接了电话。别的公司的人说想找佐藤部长。可是部长现在出去了。对打电话的人说。",
+    "question": "怎么说？",
+    "options": [
+     "好的，我这就请佐藤接电话。",
+     "非常抱歉，佐藤现在外出了。",
+     "非常抱歉，佐藤部长已经回家了。"
+    ]
+   },
+   "en": {
+    "scene": "At work, you answer the phone. Someone from another company wants to speak to Mr. Sato, the department manager. But he's out right now. You speak to the caller.",
+    "question": "What do you say?",
+    "options": [
+     "Certainly, I'll put Sato on now.",
+     "I'm very sorry. Sato is out of the office at the moment.",
+     "I'm very sorry. Mr. Sato, the manager, has already gone home."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「部長は今、出かけています」，打来电话的是别的公司的人。\n推理：对外人说自己公司的人，不加「部長」「さん」，用谦让语：「佐藤はただいま外出しております」＝佐藤现在外出了。\n容易错：「佐藤に代わります」是部长在的时候转接电话的话，可他出去了；「お帰りになりました」说成已经下班回家，和「出かけています」不符，而且对外人用了尊敬语。",
+   "en": "Evidence: The scene: 「部長は今、出かけています」, and the caller is from another company.\nReasoning: To an outsider you refer to your own colleague without a title, in humble language: 「佐藤はただいま外出しております」 = \"Sato is out at the moment.\"\nTrap: 「佐藤に代わります」 is for putting the call through when he's in, but he's out; 「お帰りになりました」 says he's gone home, which isn't the case, and uses honorific language about your own boss to an outsider."
+  },
+  "wrong": [
+   {
+    "zh": "「佐藤に代わります」是要把电话转给部长，可部长现在出去了，转不了。",
+    "en": "「佐藤に代わります」 means putting the call through to him — but he's out, so she can't."
+   },
+   null,
+   {
+    "zh": "部长只是出去了，不是回家了；对外人说自己的上司也不该用「お帰りになりました」这样的尊敬语。",
+    "en": "He has only gone out, not home — and to an outsider you don't use honorifics like 「お帰りになりました」 for your own boss."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n3-ck-415",
+  "type": "hatsuwa",
+  "scene": "今日は友だちの誕生日です。プレゼントを買ってきました。カフェで会って、友だちに渡します。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A café table. Two young women sit facing each other. One of them holds out a small wrapped gift box with a ribbon toward the other, smiling. The other woman looks surprised and happy.",
+   "arrow": "the woman holding out the gift box"
+  },
+  "options": [
+   "わあ、ありがとう。今、開けてみてもいい？",
+   "誕生日、来週だったよね。楽しみにしててね。",
+   "おめでとう。これ、気に入ってくれるといいな。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "今天是朋友的生日。买来了礼物。在咖啡馆见面，把礼物交给朋友。",
+    "question": "怎么说？",
+    "options": [
+     "哇，谢谢！现在可以打开看看吗？",
+     "你生日是下周吧？好好期待哦。",
+     "生日快乐！希望你会喜欢这个。"
+    ]
+   },
+   "en": {
+    "scene": "Today is your friend's birthday. You've bought a present. You meet at a café and give it to her.",
+    "question": "What do you say?",
+    "options": [
+     "Wow, thank you! Can I open it now?",
+     "Your birthday's next week, right? Look forward to it.",
+     "Happy birthday! I hope you like this."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「今日は友だちの誕生日です」，说话的是递出礼物的女生。\n推理：送礼物时先祝贺，再说「気に入ってくれるといいな」＝希望你喜欢，是送礼时自然的一句话。\n容易错：「開けてみてもいい？」是收到礼物的人说的；「来週だったよね」和「今日は誕生日」时间对不上。",
+   "en": "Evidence: The scene: 「今日は友だちの誕生日です」. The speaker is the woman holding out the gift.\nReasoning: Giving a present, she congratulates her friend and adds 「気に入ってくれるといいな」 = \"I hope you like it\", the natural line when handing over a gift.\nTrap: 「開けてみてもいい？」 is the receiver's line; 「来週だったよね」 clashes with the birthday being today."
+  },
+  "wrong": [
+   {
+    "zh": "「ありがとう。開けてみてもいい？」是收到礼物的朋友说的。",
+    "en": "「ありがとう。開けてみてもいい？」 is what the friend receiving the gift would say."
+   },
+   {
+    "zh": "生日就是今天，说「来週だったよね」时间不对。",
+    "en": "The birthday is today, so 「来週だったよね」 gets the timing wrong."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "timing"
+  ]
+ },
+ {
+  "id": "n3-ck-416",
+  "type": "hatsuwa",
+  "scene": "駅で、空港へ行く電車に乗りたいです。でも、何番線から出るのか分かりません。駅員に聞きます。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A train station concourse. A man with a large suitcase stands at a ticket gate and speaks to a male station attendant in uniform and cap. Signs above them have no readable text, only arrows.",
+   "arrow": "the man with the suitcase"
+  },
+  "options": [
+   "すみません、空港までの切符はどこで買えますか。",
+   "すみません、空港行きの電車は何番線ですか。",
+   "すみません、空港行きの電車はもう出ましたか。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在车站，想坐去机场的电车。可是不知道从几号站台发车。问车站工作人员。",
+    "question": "怎么说？",
+    "options": [
+     "不好意思，去机场的票在哪里买？",
+     "不好意思，去机场的电车是几号站台？",
+     "不好意思，去机场的电车已经开走了吗？"
+    ]
+   },
+   "en": {
+    "scene": "At a station, you want to take the train to the airport, but you don't know which platform it leaves from. You ask a station attendant.",
+    "question": "What do you say?",
+    "options": [
+     "Excuse me, where can I buy a ticket to the airport?",
+     "Excuse me, which platform is the airport train?",
+     "Excuse me, has the airport train already left?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「何番線から出るのか分かりません。駅員に聞きます」，说话的是拿着行李箱的男乘客。\n推理：他想知道的是站台，所以问「何番線ですか」＝是几号站台。\n容易错：「切符はどこで買えますか」问的是在哪儿买票；「もう出ましたか」问的是电车走没走，都不是他不知道的那一点。",
+   "en": "Evidence: The scene: 「何番線から出るのか分かりません。駅員に聞きます」. The speaker is the man with the suitcase.\nReasoning: What he doesn't know is the platform, so he asks 「何番線ですか」 = \"which platform?\"\nTrap: 「切符はどこで買えますか」 asks where to buy a ticket; 「もう出ましたか」 asks whether the train has left — neither is what he needs to know."
+  },
+  "wrong": [
+   {
+    "zh": "他不知道的是几号站台，「切符はどこで買えますか」问的是在哪儿买票，问错了。",
+    "en": "He doesn't know the platform; 「切符はどこで買えますか」 asks where to buy a ticket — the wrong question."
+   },
+   null,
+   {
+    "zh": "他不知道的是几号站台，「もう出ましたか」问的是电车开走没有，问错了。",
+    "en": "He doesn't know the platform; 「もう出ましたか」 asks whether the train has left — the wrong question."
+   }
+  ],
+  "traps": [
+   "question-word",
+   "intent"
+  ]
+ },
+ {
+  "id": "n3-ck-417",
+  "type": "hatsuwa",
+  "scene": "友だちと二人でレストランで食事をしました。これからお金を払います。一人ずつ、自分の分を払いたいです。店の人に言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A restaurant cash register. Two young women stand at the counter; one of them, holding her wallet, speaks to a male cashier behind the register. The other woman stands just behind her, also holding a wallet.",
+   "arrow": "the woman at the front speaking to the cashier"
+  },
+  "options": [
+   "すみません、別々に払いたいんですが。",
+   "すみません、カードで払えますか。",
+   "すみません、二人分まとめてお願いします。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "和朋友两个人在餐厅吃了饭。现在要付钱。想一人付自己的那份。对店员说。",
+    "question": "怎么说？",
+    "options": [
+     "不好意思，我们想分开付。",
+     "不好意思，可以刷卡吗？",
+     "不好意思，两个人的一起付。"
+    ]
+   },
+   "en": {
+    "scene": "You and a friend have eaten at a restaurant. Now you're going to pay. You each want to pay for your own meal. You speak to the staff.",
+    "question": "What do you say?",
+    "options": [
+     "Excuse me, we'd like to pay separately.",
+     "Excuse me, can I pay by card?",
+     "Excuse me, both of us together, please."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「一人ずつ、自分の分を払いたいです」，说话的是站在前面拿钱包的女生。\n推理：「別々に払いたいんですが」＝想分开付；「〜んですが」把请求说得委婉，店员听了就会分开结账。\n容易错：「カードで払えますか」只问了付款方式，没说要分开付；「まとめて」是一起付，正好相反。",
+   "en": "Evidence: The scene: 「一人ずつ、自分の分を払いたいです」. The speaker is the woman in front holding her wallet.\nReasoning: 「別々に払いたいんですが」 = \"we'd like to pay separately\"; 「〜んですが」 softens the request, and the cashier will split the bill.\nTrap: 「カードで払えますか」 only asks about the payment method, not about splitting; 「まとめて」 means paying together — the opposite."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「カードで払えますか」问的是能不能刷卡，没有说想一人付一份。",
+    "en": "「カードで払えますか」 asks whether she can pay by card; it says nothing about paying separately."
+   },
+   {
+    "zh": "「二人分まとめて」是两个人一起付，和想分开付正相反。",
+    "en": "「二人分まとめて」 means paying for both together — the opposite of what she wants."
+   }
+  ],
+  "traps": [
+   "intent",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n3-ck-418",
+  "type": "hatsuwa",
+  "scene": "タクシーに乗っています。もうすぐ家に着きます。次の角で降りたいです。運転手に言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "Inside a taxi, seen from the back seat. A man sitting in the back leans forward slightly and points ahead through the windshield toward a street corner. The middle-aged male driver, wearing a cap, holds the steering wheel.",
+   "arrow": "the man in the back seat"
+  },
+  "options": [
+   "すみません、ここで降ります。",
+   "すみません、駅までお願いします。",
+   "すみません、次の角で止めてください。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "正坐在出租车上。快到家了。想在下一个路口下车。对司机说。",
+    "question": "怎么说？",
+    "options": [
+     "不好意思，我在这里下车。",
+     "不好意思，请到车站。",
+     "不好意思，请在下一个路口停车。"
+    ]
+   },
+   "en": {
+    "scene": "You're in a taxi. You're almost home. You want to get out at the next corner. You speak to the driver.",
+    "question": "What do you say?",
+    "options": [
+     "Excuse me, I'll get out here.",
+     "Excuse me, to the station, please.",
+     "Excuse me, please stop at the next corner."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「次の角で降りたいです」，说话的是坐在后座的男乘客。\n推理：乘客请司机停车：「次の角で止めてください」＝请在下一个路口停。\n容易错：他想在下一个路口下，「ここで降ります」是要马上在这里下，太早了；「駅までお願いします」是上车时说目的地的话，时机不对。",
+   "en": "Evidence: The scene: 「次の角で降りたいです」. The speaker is the man in the back seat.\nReasoning: A passenger asks the driver to stop: 「次の角で止めてください」 = \"please stop at the next corner.\"\nTrap: he wants the next corner, so 「ここで降ります」 (\"I'll get out here\") is too early; 「駅までお願いします」 is what you say when getting in — the wrong moment."
+  },
+  "wrong": [
+   {
+    "zh": "他想在下一个路口下车，「ここで降ります」是要在现在这个地方下，太早了。",
+    "en": "He wants the next corner; 「ここで降ります」 means getting out right here — too early."
+   },
+   {
+    "zh": "「駅までお願いします」是刚上车时说目的地用的，而且他要去的是家附近。",
+    "en": "「駅までお願いします」 is for giving a destination when you get in — and he's heading home anyway."
+   },
+   null
+  ],
+  "traps": [
+   "timing"
+  ]
+ },
+ {
+  "id": "n3-ck-419",
+  "type": "hatsuwa",
+  "scene": "教室のいちばん後ろの席に座っています。先生の声が小さくて、よく聞こえません。先生に言います。",
+  "question": "何と言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A classroom seen from the back. A young man in the last row raises his hand. At the front, a woman teacher stands by the blackboard holding a textbook. Several students sit in rows between them.",
+   "arrow": "the young man raising his hand in the back row"
+  },
+  "options": [
+   "すみません、もう少し静かにしてもらえますか。",
+   "すみません、もう少し大きい声でお願いできますか。",
+   "みなさん、後ろの人まで聞こえていますか。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "坐在教室最后一排。老师的声音很小，听不太清楚。对老师说。",
+    "question": "怎么说？",
+    "options": [
+     "不好意思，能稍微安静一点吗？",
+     "不好意思，能请您稍微大声一点吗？",
+     "大家，后面的人也听得到吗？"
+    ]
+   },
+   "en": {
+    "scene": "You're sitting in the very back row of the classroom. The teacher's voice is quiet and you can't hear well. You speak to the teacher.",
+    "question": "What do you say?",
+    "options": [
+     "Excuse me, could you be a little quieter?",
+     "Excuse me, could you speak a little louder, please?",
+     "Everyone, can the people at the back hear me?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「先生の声が小さくて、よく聞こえません」，说话的是最后一排举手的男学生。\n推理：问题在老师声音小，所以请老师大声一点：「もう少し大きい声でお願いできますか」。\n容易错：「静かにしてもらえますか」是嫌别人吵时说的，正好相反；「みなさん、聞こえていますか」是老师问学生的话。",
+   "en": "Evidence: The scene: 「先生の声が小さくて、よく聞こえません」. The speaker is the young man raising his hand in the back row.\nReasoning: The problem is the teacher's quiet voice, so he asks her to speak up: 「もう少し大きい声でお願いできますか」.\nTrap: 「静かにしてもらえますか」 is for when others are too loud — the opposite; 「みなさん、聞こえていますか」 is the teacher asking the class."
+  },
+  "wrong": [
+   {
+    "zh": "「静かにしてもらえますか」是嫌别人吵时说的，而这里是老师声音太小。",
+    "en": "「静かにしてもらえますか」 is for when someone is too noisy; here the teacher is too quiet."
+   },
+   null,
+   {
+    "zh": "「みなさん、聞こえていますか」是老师问全班的话，立场反了。",
+    "en": "「みなさん、聞こえていますか」 is the teacher asking the class — the roles are reversed."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
  }
 ]
