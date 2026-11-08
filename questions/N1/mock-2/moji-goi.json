@@ -254,13 +254,13 @@
   {
     "id": "n1-m2-008",
     "type": "bunmyaku",
-    "difficulty": 1,
+    "difficulty": 2,
     "stem": "祖父は（　）性格で、一度言い出したら家族が何を言っても聞き入れない。",
     "options": [
-      "頑固な",
-      "気さくな",
-      "臆病な",
-      "軽率な"
+      "強情な",
+      "几帳面な",
+      "謙虚な",
+      "寡黙な"
     ],
     "answer": 0,
     "tr": {
@@ -268,22 +268,22 @@
       "en": "My grandfather is stubborn: once he's said something, he won't listen to anything the family says."
     },
     "why": {
-      "zh": "线索：「一度言い出したら」「何を言っても聞き入れない」，坚持己见、不听劝。\n词义：「頑固」（がんこ）＝固执、顽固，常说「頑固な性格」「頑固に言い張る」。",
-      "en": "Clue: 「一度言い出したら」 and 「何を言っても聞き入れない」 — sticking to his view, deaf to advice.\nMeaning: 「頑固」 (がんこ) is stubborn: 「頑固な性格」, 「頑固に言い張る」."
+      "zh": "线索：「一度言い出したら」「何を言っても聞き入れない」，坚持己见、怎么劝都不肯让步。\n词义：「強情」（ごうじょう）＝倔强、固执己见，常说「強情な性格」「強情を張る」。\n辨析：「頑固」也是固执，但「強情」更强调和别人对着干、不肯认输。",
+      "en": "Clue: 「一度言い出したら」 and 「何を言っても聞き入れない」 — sticking to his view, refusing to give way.\nMeaning: 「強情」 (ごうじょう) is obstinate, headstrong: 「強情な性格」, 「強情を張る」.\nContrast: 「頑固」 is also stubborn; 「強情」 stresses digging in against others and refusing to back down."
     },
     "wrong": [
       null,
       {
-        "zh": "「気さく」是随和、平易近人，和后文正相反。",
-        "en": "「気さく」 is friendly and easygoing — the opposite."
+        "zh": "「几帳面」是一丝不苟、规规矩矩，说的是做事认真，不是不听劝。",
+        "en": "「几帳面」 is meticulous and methodical — careful work, not deafness to advice."
       },
       {
-        "zh": "「臆病」是胆小，和不听别人的话无关。",
-        "en": "「臆病」 is timid, unrelated to not listening."
+        "zh": "「謙虚」是谦虚、虚心，会听取别人的意见，和后文正相反。",
+        "en": "「謙虚」 is modest and open to others' views — the opposite."
       },
       {
-        "zh": "「軽率」是轻率、欠考虑，不是坚持己见。",
-        "en": "「軽率」 is rash, not obstinate."
+        "zh": "「寡黙」是沉默寡言，和「一度言い出したら」坚持己见无关。",
+        "en": "「寡黙」 is taciturn; it has nothing to do with sticking to what he's said."
       }
     ]
   },
@@ -841,7 +841,7 @@
     "answer": 1,
     "tr": {
       "zh": "为了慰劳辛苦工作多年的父母，我送了他们一趟温泉旅行。",
-      "en": "To thank my parents for their long years of work, I gave them a trip to a hot spring."
+      "en": "To show my parents some care after their long years of hard work, I gave them a trip to a hot spring."
     },
     "why": {
       "zh": "线索：「長年働いてきた両親を」，对辛苦的人表示体贴、慰劳。\n词义：「いたわる」＝体贴、照顾、慰劳（辛苦的人、病人、弱者），常说「体をいたわる」「お年寄りをいたわる」。",
@@ -885,8 +885,8 @@
     },
     "wrong": [
       {
-        "zh": "行李变轻用「軽く」，「手軽」说的是做事简便，不是重量轻。",
-        "en": "A lighter bag is 「軽く」; 「手軽」 is about ease, not weight."
+        "zh": "行李少了、人轻松了用「身軽になった」，「手軽」说的是做事简便，不是身体轻快。",
+        "en": "Being unburdened is 「身軽」; 「手軽」 is about ease of doing something, not travelling light."
       },
       {
         "zh": "性格随和用「気さくな」，「手軽」不形容性格。",

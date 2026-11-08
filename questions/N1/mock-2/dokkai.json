@@ -208,14 +208,14 @@
         "q": "筆者の考えに合うものはどれか。",
         "options": [
           "要約は筆者の結論を正確に伝えないことが多いので、忙しくても本は全部読むべきだ。",
-          "本を読む価値は、結論に至るまでの考えの道筋をたどり、結論を自ら吟味できる点にある。",
+          "読書の意義は、著者の思考の経緯をたどり、その主張の当否を自分で判断できる点にある。",
           "本の要約は、山に登る前に地図を見ておくように、読書の準備として役に立つものだ。",
           "要約で先に結論を知っておけば、回り道に惑わされずに本の内容を効率よく理解できる。"
         ],
         "answer": 1,
         "why": {
-          "zh": "依据：「一冊の本を読む意味は、むしろ結論に至るまでの回り道にある」；「その過程をたどってこそ、結論は自分の頭で吟味できるものになる」。\n推理：「〜てこそ」＝“只有……才”。作者认为读书的价值在于跟着作者的思考过程走，从而能自己推敲结论。\n容易错：地图的比喻是批评“只看地图就以为登过山”，不是说地图有用；作者也没说摘要不准确。",
-          "en": "Evidence: 「一冊の本を読む意味は、むしろ結論に至るまでの回り道にある」; 「その過程をたどってこそ、結論は自分の頭で吟味できるものになる」.\nReasoning: 「〜てこそ」 = \"only by…\". The writer finds the value of reading in following the author's thinking, which lets you weigh the conclusion yourself.\nTrap: The map image criticises thinking you've climbed by looking at a map; it doesn't praise maps. Nor does the writer say summaries are inaccurate."
+          "zh": "依据：「一冊の本を読む意味は、むしろ結論に至るまでの回り道にある」；「その過程をたどってこそ、結論は自分の頭で吟味できるものになる」。\n推理：「〜てこそ」＝“只有……才”。「回り道」「その過程」＝作者的思考经过（思考の経緯），「自分の頭で吟味できる」＝自己判断其主张是否成立（当否を自分で判断）。\n容易错：地图的比喻是批评“只看地图就以为登过山”，不是说地图有用；作者也没说摘要不准确。",
+          "en": "Evidence: 「一冊の本を読む意味は、むしろ結論に至るまでの回り道にある」; 「その過程をたどってこそ、結論は自分の頭で吟味できるものになる」.\nReasoning: 「〜てこそ」 = \"only by…\". 「回り道」 and 「その過程」 = how the author's thinking developed (思考の経緯); 「自分の頭で吟味できる」 = judging for yourself whether the claim holds (当否を自分で判断).\nTrap: The map image criticises thinking you've climbed by looking at a map; it doesn't praise maps. Nor does the writer say summaries are inaccurate."
         },
         "wrong": [
           {
@@ -251,7 +251,7 @@
         "options": [
           "見積書の料金は40名分なので、減りそうな人数を差し引いた見積書を送ってもらう。",
           "参加者に食物アレルギーがあるか確かめ、ある場合は人数が決まる前に連絡する。",
-          "人数が減っても料金が変わらないよう、12月5日までに予約人数を少なめに変える。",
+          "欠席者の分の料金を払わずに済むよう、予約人数を早めに少なめに変えておく。",
           "参加人数が決まってから、アレルギーのある人の有無と合わせて一度に連絡する。"
         ],
         "answer": 1,
@@ -293,7 +293,7 @@
         "options": [
           "どちらが先に入試に受かったか、賭けの結果を彼に確かめたくなったから",
           "引っ越しの前に、ノートを捨ててよいか彼の了解を得ておきたかったから",
-          "途切れたままの交換日記の続きを、もう一度彼と始めたいと思ったから",
+          "途切れたままの交換日記を、もう一度彼と再開したいと思ったから",
           "ノートは彼の持ち物なので、引っ越しの前に返さなければと思ったから"
         ],
         "answer": 2,
@@ -361,15 +361,15 @@
       {
         "q": "筆者は、数字どおりに作っても思ったような味にならないのはなぜだと述べているか。",
         "options": [
-          "材料の状態や使う道具によって、料理の仕上がりが変わってくるから",
+          "同じ分量でも、素材の性質や調理の条件が違えば、味の出方が変わるから",
           "小さじなどを使った量り方が、作る人によって少しずつ違ってくるから",
           "レシピサイトの分量は、初心者向けに控えめに書かれていることが多いから",
           "人によって味の好みが異なり、同じ味をよいと思うとは限らないから"
         ],
         "answer": 0,
         "why": {
-          "zh": "依据：「同じ大根でも季節によって水分や甘みが違うし、鍋の大きさや火の強さによって煮詰まり方も変わる」；「材料や道具が違えば、同じ味になるとは限らない」。\n推理：萝卜的水分、甜度＝材料的状态；锅的大小、火力＝使用的工具。两者都会改变成品。\n容易错：「自分の舌で」容易让人联想到个人口味，但文中讲的原因是材料和工具，不是喜好不同。",
-          "en": "Evidence: 「同じ大根でも季節によって水分や甘みが違うし、鍋の大きさや火の強さによって煮詰まり方も変わる」; 「材料や道具が違えば、同じ味になるとは限らない」.\nReasoning: The daikon's water and sweetness = the state of the ingredients; pan size and heat = the tools. Both change the result.\nTrap: 「自分の舌で」 may suggest personal taste, but the cause given is ingredients and tools, not differing preferences."
+          "zh": "依据：「同じ大根でも季節によって水分や甘みが違うし、鍋の大きさや火の強さによって煮詰まり方も変わる」；「材料や道具が違えば、同じ味になるとは限らない」。\n推理：萝卜的水分、甜度＝素材的性质（素材の性質）；锅的大小、火力＝调理条件（調理の条件）。分量相同，这些不同也会让味道不一样。\n容易错：「自分の舌で」容易让人联想到个人口味，但文中讲的原因是材料和工具，不是喜好不同。",
+          "en": "Evidence: 「同じ大根でも季節によって水分や甘みが違うし、鍋の大きさや火の強さによって煮詰まり方も変わる」; 「材料や道具が違えば、同じ味になるとは限らない」.\nReasoning: The daikon's water and sweetness = the nature of the ingredients (素材の性質); pan size and heat = the cooking conditions (調理の条件). Even with the same amounts, these change the taste.\nTrap: 「自分の舌で」 may suggest personal taste, but the cause given is ingredients and tools, not differing preferences."
         },
         "wrong": [
           null,
@@ -434,12 +434,12 @@
           "必要な連絡が、会議やチャットでは十分に伝わらなくなったこと",
           "仕事には集中できるようになったが、勤務時間が長くなったこと",
           "通勤がなくなったことで、一人で昼食をとる人が増えてきたこと",
-          "仕事のことで同僚に相談しにくいと感じる人が多くなったこと"
+          "仕事上の悩みや疑問を、周囲に持ちかけにくいと感じる人が増えたこと"
         ],
         "answer": 3,
         "why": {
-          "zh": "依据：「ある調査では、在宅勤務が中心になってから『仕事の相談をしにくくなった』と答えた人が、半数を超えた」。\n推理：画线句后紧接着用调查结果具体说明“意想不到的影响”，就是商量工作变难了。\n容易错：第二段说「必要な連絡はできているはずなのに」，必要的联络并没有出问题。",
-          "en": "Evidence: 「ある調査では、在宅勤務が中心になってから『仕事の相談をしにくくなった』と答えた人が、半数を超えた」.\nReasoning: The survey right after the underlined phrase spells out the unexpected effect: asking for advice about work has become harder.\nTrap: Paragraph 2 says 「必要な連絡はできているはずなのに」 — necessary communication is not the problem."
+          "zh": "依据：「ある調査では、在宅勤務が中心になってから『仕事の相談をしにくくなった』と答えた人が、半数を超えた」。\n推理：画线句后紧接着用调查结果具体说明“意想不到的影响”：商量工作变难了。「相談をしにくくなった」＝「持ちかけにくい」，「半数を超えた」＝这样感觉的人很多。\n容易错：第二段说「必要な連絡はできているはずなのに」，必要的联络并没有出问题。",
+          "en": "Evidence: 「ある調査では、在宅勤務が中心になってから『仕事の相談をしにくくなった』と答えた人が、半数を超えた」.\nReasoning: The survey right after the underlined phrase spells out the unexpected effect: asking for advice about work has become harder. 「相談をしにくくなった」 = 「持ちかけにくい」 (hard to bring things up), and 「半数を超えた」 = many feel this way.\nTrap: Paragraph 2 says 「必要な連絡はできているはずなのに」 — necessary communication is not the problem."
         },
         "wrong": [
           {
@@ -848,10 +848,10 @@
     "id": "n1-m2-p11",
     "type": "shuchou",
     "difficulty": 3,
-    "passage": "「あの日のことは、今でもはっきり覚えている」。私たちはよくそう口にする。だが、心理学の研究が繰り返し示してきたのは、人間の記憶が驚くほど当てにならないということだ。ある実験では、大きな事件が起きた翌日に、その知らせをどこで誰から聞いたかを学生に書いてもらい、数年後に同じ質問をした。すると、多くの学生が最初の記録とはまったく違う状況を語り、しかも自分の記憶が正しいと強く信じていたという。\n記憶は、出来事をそのまま保存した録画のようなものではない。思い出すたびに、そのときの気分や、後から得た知識、人から聞いた話によって組み立て直される。何度も語られた思い出ほど、生き生きとしていながら、実際の出来事からは遠ざかっていることさえある。古い写真や日記を見返して、自分の記憶との違いに驚いた経験は、誰にでもあるだろう。\nこう聞くと、記憶など信じるに値しないと思うかもしれない。確かに、裁判の証言のように事実の正確さが問われる場面では、記憶の危うさは深刻な問題となる。証言する人に悪意がなくても、記憶はたやすく書き換わってしまうからだ。目撃者の確信に満ちた証言によって、無実の人が罪に問われた例も少なくない。だからこそ、私たちは記録を残し、複数の証拠を照らし合わせる仕組みを作ってきた。\nしかし、記憶が書き換わることを、単なる欠陥とみなすのは早計である。人は、つらい出来事を何度も思い出し、語り直す中で、少しずつその意味を変えていく。失敗の記憶が、いつしか「あの経験があったから今がある」という物語になることもある。もし記憶が録画のように正確で、変わることがなかったら、私たちは過去の痛みを、そのままの鮮やかさで抱え続けなければならないだろう。記憶が変わりうるからこそ、人は過去と折り合いをつけ、前に進むことができるのである。\n大切なのは、記憶と記録の役割を取り違えないことだ。事実を確かめる必要があるときには、自分の記憶を過信せず、記録に当たる謙虚さが求められる。一方で、記憶は事実の保管庫ではなく、自分が何者であるかを形づくる物語でもある。家族で昔の旅行の話をすると、同じ旅のはずなのに、一人一人が覚えている場面がまるで違っていることがある。他人の思い出話が記録と食い違っていても、それを嘘だと責め立てる必要はない。その人がその出来事をどう生きてきたかが、そこには表れているのだから。",
+    "passage": "「あの日のことは、今でもはっきり覚えている」。私たちはよくそう口にする。だが、心理学の研究が繰り返し示してきたのは、人間の記憶が驚くほど当てにならないということだ。ある実験では、大きな事件が起きた翌日に、その知らせをどこで誰から聞いたかを学生に書いてもらい、数年後に同じ質問をした。すると、多くの学生が最初の記録とはまったく違う状況を語り、しかも自分の記憶が正しいと強く信じていたという。\n記憶は、出来事をそのまま保存した録画のようなものではない。思い出すたびに、そのときの気分や、後から得た知識、人から聞いた話によって組み立て直される。何度も語られた思い出ほど、生き生きとしていながら、実際の出来事からは遠ざかっていることさえある。古い写真や日記を見返して、自分の記憶との違いに驚いた経験は、誰にでもあるだろう。\nこう聞くと、記憶など信じるに値しないと思うかもしれない。確かに、裁判の証言のように事実の正確さが問われる場面では、記憶の危うさは深刻な問題となる。証言する人に悪意がなくても、記憶はたやすく書き換わってしまうからだ。目撃者の確信に満ちた証言によって、無実の人が罪に問われた例も少なくない。だからこそ、私たちは記録を残し、複数の証拠を照らし合わせる仕組みを作ってきた。\nしかし、記憶が書き換わることを、単なる欠陥とみなすのは早計である。人は、つらい出来事を何度も思い出し、語り直す中で、少しずつその意味を変えていく。失敗の記憶が、いつしか「あの経験があったから今がある」という物語になることもある。もし記憶が録画のように正確で、変わることがなかったら、私たちは過去の痛みを、そのままの鮮やかさで抱え続けなければならないだろう。記憶が変わりうるからこそ、人は過去と折り合いをつけ、前に進むことができるのである。\n大切なのは、記憶と記録の役割を取り違えないことだ。事実を確かめる必要があるときには、自分の記憶を過信せず、記録に当たる謙虚さが求められる。一方で、記憶は事実の保管庫であるだけでなく、自分が何者であるかを形づくる物語でもある。家族で昔の旅行の話をすると、同じ旅のはずなのに、一人一人が覚えている場面がまるで違っていることがある。他人の思い出話が記録と食い違っていても、それを嘘だと責め立てる必要はない。その人がその出来事をどう生きてきたかが、そこには表れているのだから。",
     "tr": {
-      "zh": "“那天的事，我到现在还记得清清楚楚。”我们常这样说。但是，心理学研究反复表明的是，人的记忆惊人地靠不住。在某项实验中，研究者在重大事件发生的第二天，请学生写下自己在哪里、从谁那里听到这个消息，几年后又问了同样的问题。结果，很多学生讲述的情况与最初的记录完全不同，而且坚信自己的记忆是正确的。\n记忆并不像把事件原样保存下来的录像。每次回忆时，它都会受到当时的心情、后来获得的知识、从别人那里听来的话的影响而被重新组装。越是被反复讲述的回忆，越是生动，却甚至可能离实际发生的事越来越远。翻看旧照片或日记时，为与自己的记忆不同而吃惊的经历，谁都有过吧。\n听到这些，你也许会觉得记忆根本不值得相信。的确，在像法庭证词那样追究事实准确性的场合，记忆的不可靠会成为严重的问题。因为即使作证的人没有恶意，记忆也很容易被改写。因目击者充满自信的证词而使无辜者被定罪的例子也不少。正因为如此，我们才留下记录，建立起对照多种证据的机制。\n但是，把记忆被改写仅仅看作缺陷，还为时过早。人在反复回忆、重新讲述痛苦经历的过程中，会一点点改变它的意义。失败的记忆，有时不知不觉就变成了“正因为有那段经历，才有今天”的故事。如果记忆像录像一样准确、永不改变，我们就不得不把过去的伤痛以原样的鲜明程度一直背负下去吧。正因为记忆可以改变，人才能与过去和解，向前迈进。\n重要的是不要混淆记忆和记录的作用。需要确认事实时，要有不过分相信自己的记忆、去查阅记录的谦虚。另一方面，记忆不是事实的保管库，也是塑造自己是谁的故事。一家人聊起从前的旅行，明明是同一趟旅行，每个人记得的场景却完全不同，这种事也是有的。即使别人的回忆与记录有出入，也没有必要指责那是谎言。因为那里体现出的，是那个人如何度过了那件事之后的岁月。",
-      "en": "\"I still remember that day clearly.\" We often say so. But what psychological research has shown again and again is that human memory is astonishingly unreliable. In one experiment, students were asked, the day after a major event, to write down where and from whom they had heard the news, and were asked the same question a few years later. Many described circumstances completely different from their first record, and were firmly convinced their memory was correct.\nMemory is not like a recording that preserves events as they were. Each time we recall something, it is reassembled under the influence of our mood at the time, knowledge gained afterwards, and things heard from others. The more often a memory has been told, the more vivid it can be while having drifted even further from what actually happened. Everyone has probably looked back at old photos or a diary and been surprised at how they differ from their memory.\nHearing this, you may think memory isn't worth trusting at all. Certainly, where factual accuracy is at stake, as in courtroom testimony, the fragility of memory is a serious problem, because memory is easily rewritten even when the witness means no harm. There are many cases of innocent people convicted on the confident testimony of eyewitnesses. That is exactly why we have kept records and built systems to compare several pieces of evidence.\nBut it is premature to see the rewriting of memory as a mere defect. By recalling and retelling a painful event again and again, people gradually change its meaning. The memory of a failure may at some point become the story \"I am where I am because of that experience\". If memory were as accurate as a recording and never changed, we would have to carry past pain with us in all its original vividness. It is precisely because memory can change that people can come to terms with the past and move forward.\nWhat matters is not to confuse the roles of memory and records. When facts need checking, we need the humility not to trust our memory too much and to consult the records. At the same time, memory is not a storehouse of facts but also a story that shapes who we are. When a family talks about a trip long ago, the scenes each person remembers can be completely different, though it was the same trip. Even if someone's recollection differs from the record, there is no need to denounce it as a lie. For it shows how that person has lived with that event."
+      "zh": "“那天的事，我到现在还记得清清楚楚。”我们常这样说。但是，心理学研究反复表明的是，人的记忆惊人地靠不住。在某项实验中，研究者在重大事件发生的第二天，请学生写下自己在哪里、从谁那里听到这个消息，几年后又问了同样的问题。结果，很多学生讲述的情况与最初的记录完全不同，而且坚信自己的记忆是正确的。\n记忆并不像把事件原样保存下来的录像。每次回忆时，它都会受到当时的心情、后来获得的知识、从别人那里听来的话的影响而被重新组装。越是被反复讲述的回忆，越是生动，却甚至可能离实际发生的事越来越远。翻看旧照片或日记时，为与自己的记忆不同而吃惊的经历，谁都有过吧。\n听到这些，你也许会觉得记忆根本不值得相信。的确，在像法庭证词那样追究事实准确性的场合，记忆的不可靠会成为严重的问题。因为即使作证的人没有恶意，记忆也很容易被改写。因目击者充满自信的证词而使无辜者被定罪的例子也不少。正因为如此，我们才留下记录，建立起对照多种证据的机制。\n但是，把记忆被改写仅仅看作缺陷，还为时过早。人在反复回忆、重新讲述痛苦经历的过程中，会一点点改变它的意义。失败的记忆，有时不知不觉就变成了“正因为有那段经历，才有今天”的故事。如果记忆像录像一样准确、永不改变，我们就不得不把过去的伤痛以原样的鲜明程度一直背负下去吧。正因为记忆可以改变，人才能与过去和解，向前迈进。\n重要的是不要混淆记忆和记录的作用。需要确认事实时，要有不过分相信自己的记忆、去查阅记录的谦虚。另一方面，记忆不只是事实的保管库，也是塑造自己是谁的故事。一家人聊起从前的旅行，明明是同一趟旅行，每个人记得的场景却完全不同，这种事也是有的。即使别人的回忆与记录有出入，也没有必要指责那是谎言。因为那里体现出的，是那个人如何度过了那件事之后的岁月。",
+      "en": "\"I still remember that day clearly.\" We often say so. But what psychological research has shown again and again is that human memory is astonishingly unreliable. In one experiment, students were asked, the day after a major event, to write down where and from whom they had heard the news, and were asked the same question a few years later. Many described circumstances completely different from their first record, and were firmly convinced their memory was correct.\nMemory is not like a recording that preserves events as they were. Each time we recall something, it is reassembled under the influence of our mood at the time, knowledge gained afterwards, and things heard from others. The more often a memory has been told, the more vivid it can be while having drifted even further from what actually happened. Everyone has probably looked back at old photos or a diary and been surprised at how they differ from their memory.\nHearing this, you may think memory isn't worth trusting at all. Certainly, where factual accuracy is at stake, as in courtroom testimony, the fragility of memory is a serious problem, because memory is easily rewritten even when the witness means no harm. There are many cases of innocent people convicted on the confident testimony of eyewitnesses. That is exactly why we have kept records and built systems to compare several pieces of evidence.\nBut it is premature to see the rewriting of memory as a mere defect. By recalling and retelling a painful event again and again, people gradually change its meaning. The memory of a failure may at some point become the story \"I am where I am because of that experience\". If memory were as accurate as a recording and never changed, we would have to carry past pain with us in all its original vividness. It is precisely because memory can change that people can come to terms with the past and move forward.\nWhat matters is not to confuse the roles of memory and records. When facts need checking, we need the humility not to trust our memory too much and to consult the records. At the same time, memory is not only a storehouse of facts but also a story that shapes who we are. When a family talks about a trip long ago, the scenes each person remembers can be completely different, though it was the same trip. Even if someone's recollection differs from the record, there is no need to denounce it as a lie. For it shows how that person has lived with that event."
     },
     "questions": [
       {
@@ -951,8 +951,8 @@
         ],
         "answer": 1,
         "why": {
-          "zh": "依据：「大切なのは、記憶と記録の役割を取り違えないことだ」；「事実を確かめる必要があるときには、自分の記憶を過信せず、記録に当たる謙虚さが求められる」；「記憶は事実の保管庫ではなく、自分が何者であるかを形づくる物語でもある」。\n推理：最后一段用「大切なのは」提出主张，「一方で」两边并举：查证事实靠记录，记忆则作为塑造自我的故事来尊重。\n容易错：只说“靠记录”只取了一半；作者说不必指责，但没有说要去纠正对方。",
-          "en": "Evidence: 「大切なのは、記憶と記録の役割を取り違えないことだ」; 「事実を確かめる必要があるときには、自分の記憶を過信せず、記録に当たる謙虚さが求められる」; 「記憶は事実の保管庫ではなく、自分が何者であるかを形づくる物語でもある」.\nReasoning: The last paragraph states the claim with 「大切なのは」 and, via 「一方で」, holds both sides: records for checking facts, memory respected as the story that shapes a person.\nTrap: \"Always rely on records\" is only half; the writer says not to blame others, but not to correct them."
+          "zh": "依据：「大切なのは、記憶と記録の役割を取り違えないことだ」；「事実を確かめる必要があるときには、自分の記憶を過信せず、記録に当たる謙虚さが求められる」；「記憶は事実の保管庫であるだけでなく、自分が何者であるかを形づくる物語でもある」。\n推理：最后一段用「大切なのは」提出主张，「一方で」两边并举：查证事实靠记录，记忆则作为塑造自我的故事来尊重。\n容易错：只说“靠记录”只取了一半；作者说不必指责，但没有说要去纠正对方。",
+          "en": "Evidence: 「大切なのは、記憶と記録の役割を取り違えないことだ」; 「事実を確かめる必要があるときには、自分の記憶を過信せず、記録に当たる謙虚さが求められる」; 「記憶は事実の保管庫であるだけでなく、自分が何者であるかを形づくる物語でもある」.\nReasoning: The last paragraph states the claim with 「大切なのは」 and, via 「一方で」, holds both sides: records for checking facts, memory respected as the story that shapes a person.\nTrap: \"Always rely on records\" is only half; the writer says not to blame others, but not to correct them."
         },
         "wrong": [
           {
@@ -984,7 +984,7 @@
     },
     "questions": [
       {
-        "q": "さくら市に住む会社員の山本さんは、2026年度に川辺農園を利用した。2027年度も市民農園を利用したいが、車で通いたいので駐車場が必要である。年間利用料は1万円以内にしたいと考えている。山本さんが応募できる農園はどれか。",
+        "q": "さくら市に住む会社員の山本さんは、2026年度に川辺農園を利用した。2027年度も市民農園を利用したいが、車で通いたいので駐車場が必要である。年間利用料は1万円以内にしたいと考えている。山本さんの希望に合い、応募できる農園はどれか。",
         "options": [
           "中央農園",
           "北山農園",

@@ -356,7 +356,7 @@
   ],
   "spokenOptions": true,
   "options": [
-   "この町の道が細く曲がっている理由",
+   "城を守るために工夫された町の道",
    "四百年前に建てられた城の歴史",
    "昔の町並みを残すための住民の努力",
    "車で町を回るときの注意"
@@ -370,7 +370,7 @@
      "各位，在这一带走的时候，有没有觉得路很窄、拐角很多？这是有原因的。这座城镇大约四百年前以城堡为中心建成。为了即使敌人攻过来也不能直奔城堡，特意把路修得视线不好。有的路看起来像死胡同，其实前面还连着。也因为这样，现在车不太好通行，听说住在这里的人有点不方便，但也正因为如此，旧时的街景保留得很好。那么，接下来我带大家参观城堡里面。"
     ],
     "options": [
-     "这座城镇的路又窄又弯的原因",
+     "为保护城堡而特意设计的城镇道路",
      "四百年前建的城堡的历史",
      "居民为保留旧街景所做的努力",
      "开车逛城镇时的注意事项"
@@ -383,7 +383,7 @@
      "Everyone, as you walked around here, did you notice how narrow the streets are and how many corners there are? There's a good reason for that. This town was built about four hundred years ago around the castle. So that even if enemies attacked, they couldn't get straight to the castle, the streets were deliberately made hard to see along. Some look like dead ends but carry on. Because of this, cars have trouble getting through today, and residents find it a little inconvenient, but in return the old townscape has been well preserved. Now, next I'll show you inside the castle."
     ],
     "options": [
-     "Why the town's streets are narrow and winding",
+     "Streets designed to protect the castle",
      "The history of the castle built 400 years ago",
      "Residents' efforts to preserve the old townscape",
      "Tips for driving around the town"
@@ -391,8 +391,8 @@
    }
   },
   "why": {
-   "zh": "依据：导游说：「もし敵が攻めてきても、まっすぐお城までたどり着けないよう、わざと見通しの悪い道にしたんですね。」\n推理：开头问大家有没有觉得路窄、拐角多，接着说明这是为了不让敌人直奔城堡而特意修的。城堡、车难通行、街景保留，都是围绕“路为什么是这样”的补充。\n容易错：城堡只是背景，没讲它的历史；街景保留是路带来的结果，不是居民的努力。",
-   "en": "Evidence: The guide says: 「もし敵が攻めてきても、まっすぐお城までたどり着けないよう、わざと見通しの悪い道にしたんですね。」\nReasoning: She opens by asking if they noticed the narrow, twisting streets, then explains they were built that way so enemies couldn't reach the castle directly. The castle, the trouble for cars and the preserved townscape all hang on why the streets are like this.\nTrap: the castle is background — its history isn't covered; the preserved townscape is a result of the streets, not residents' efforts."
+   "zh": "依据：导游说：「もし敵が攻めてきても、まっすぐお城までたどり着けないよう、わざと見通しの悪い道にしたんですね。」\n推理：开头问大家有没有觉得路窄、拐角多，接着说明这是为了不让敌人直奔城堡而特意修的。城堡、车难通行、街景保留，都是围绕“路为什么是这样”的补充。整段讲的是为了守城而特意设计的道路。\n容易错：城堡只是背景，没讲它的历史；街景保留是路带来的结果，不是居民的努力。",
+   "en": "Evidence: The guide says: 「もし敵が攻めてきても、まっすぐお城までたどり着けないよう、わざと見通しの悪い道にしたんですね。」\nReasoning: She opens by asking if they noticed the narrow, twisting streets, then explains they were built that way so enemies couldn't reach the castle directly. The castle, the trouble for cars and the preserved townscape all hang on why the streets are like this. The talk is about streets laid out on purpose to defend the castle.\nTrap: the castle is background — its history isn't covered; the preserved townscape is a result of the streets, not residents' efforts."
   },
   "wrong": [
    null,
