@@ -66,7 +66,7 @@ Another use that often comes up on the test is a dare: 「やれるものなら�
 1. 若い頃に戻れる**ものなら**、戻りたい。（如果能回到年轻时候，真想回去。）
 2. やり直せる**ものなら**、やり直したい。（如果能重来的话，真想重来。）
 3. 時間を止められる**ものなら**、止めたい。（如果能让时间停下来，真想让它停。）
-4. この病気が治せる**ものなら**、何でもする。（如果这病能治好，什么都愿意做。）
+4. この病気が治る**ものなら**、何でもする。（如果这病能治好，什么都愿意做。）
 5. 会える**ものなら**、もう一度あの人に会いたい。（如果能见到的话，真想再见那个人一面。）
 6. 勝てる**ものなら**、勝ってみろ。（有本事你就赢给我看看。）
 :::
@@ -74,7 +74,7 @@ Another use that often comes up on the test is a dare: 「やれるものなら�
 1. 若い頃に戻れる**ものなら**、戻りたい。(If I could go back to my youth, I'd want to go back.)
 2. やり直せる**ものなら**、やり直したい。(If I could start over, I'd want to start over.)
 3. 時間を止められる**ものなら**、止めたい。(If I could stop time, I'd want to stop it.)
-4. この病気が治せる**ものなら**、何でもする。(If this illness could be cured, I'd do anything.)
+4. この病気が治る**ものなら**、何でもする。(If this illness could be cured, I'd do anything.)
 5. 会える**ものなら**、もう一度あの人に会いたい。(If I could meet that person, I'd want to see them one more time.)
 6. 勝てる**ものなら**、勝ってみろ。(Go ahead and beat me, if you think you can.)
 :::
@@ -267,7 +267,7 @@ Another use that often comes up on the test is a dare: 「やれるものなら�
 :::zh
 1. 健康のためには、規則正しい生活をする**に越したことはない**。（为了健康，当然是规律生活最好。）
 2. 栄養バランスのいい食事を取る**に越したことはない**。（当然是营养均衡的饮食最好。）
-3. 病気は予防できる**に越したことはない**。（疾病当然是能预防最好。）
+3. 病気は予防する**に越したことはない**。（疾病当然是预防最好。）
 4. 備えは多い**に越したことはない**。（准备当然越多越好。）
 5. トラブルは起こらない**に越したことはない**が、万が一に備えよう。（当然是不出问题最好，但还是为万一做好准备吧。）
 6. 現金は多めに持っていく**に越したことはない**。（现金当然是多带点好。）
@@ -275,7 +275,7 @@ Another use that often comes up on the test is a dare: 「やれるものなら�
 :::en
 1. 健康のためには、規則正しい生活をする**に越したことはない**。(For your health, nothing beats having a regular lifestyle.)
 2. 栄養バランスのいい食事を取る**に越したことはない**。(It's best to eat a well-balanced diet.)
-3. 病気は予防できる**に越したことはない**。(It's best if diseases can be prevented.)
+3. 病気は予防する**に越したことはない**。(When it comes to illness, prevention is best.)
 4. 備えは多い**に越したことはない**。(You can never have too much preparation.)
 5. トラブルは起こらない**に越したことはない**が、万が一に備えよう。(It's best if trouble doesn't arise, but let's prepare for the worst.)
 6. 現金は多めに持っていく**に越したことはない**。(It's best to bring a bit more cash than you think you need.)

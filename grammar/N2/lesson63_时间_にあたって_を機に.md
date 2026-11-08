@@ -203,7 +203,7 @@ This lesson covers N2-level expressions for time and occasion. 「にあたっ�
 2. 結婚**を機に**、タバコをやめた。（趁结婚的机会，戒了烟。）
 3. 子供が生まれた**のをきっかけに**、生活を見直した。（以孩子出生为契机，重新审视了生活。）
 4. 病気**をきっかけに**、健康に気をつけるようになった。（以生病为契机，开始注意健康了。）
-5. 東京オリンピック**を機に**、スポーツ施設が増えた。（以东京奥运会为契机，体育设施增加了。）
+5. 東京オリンピック**を機に**、各地でスポーツ施設が整備された。（以东京奥运会为契机，各地兴建、完善了体育设施。）
 6. 友人の一言**をきっかけに**、プログラミングの勉強を始めた。（以朋友的一句话为契机，开始学编程了。）
 :::
 :::en
@@ -211,7 +211,7 @@ This lesson covers N2-level expressions for time and occasion. 「にあたっ�
 2. 結婚**を機に**、タバコをやめた。(On the occasion of getting married, I quit smoking.)
 3. 子供が生まれた**のをきっかけに**、生活を見直した。(Triggered by the birth of my child, I reconsidered my lifestyle.)
 4. 病気**をきっかけに**、健康に気をつけるようになった。(Triggered by an illness, I started paying attention to my health.)
-5. 東京オリンピック**を機に**、スポーツ施設が増えた。(The Tokyo Olympics brought an increase in sports facilities.)
+5. 東京オリンピック**を機に**、各地でスポーツ施設が整備された。(Using the Tokyo Olympics as an opportunity, sports facilities were built and upgraded across the country.)
 6. 友人の一言**をきっかけに**、プログラミングの勉強を始めた。(Triggered by a friend's remark, I started studying programming.)
 :::
 

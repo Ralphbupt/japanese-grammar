@@ -259,14 +259,14 @@ Restrictions:
 2. これほどの損害を出したのだから、責任者は何らかの処分を受け**ずにはすまない**だろう。（造成了这么大的损失，负责人恐怕免不了要受到某种处分。）
 3. 大事な会議を無断で欠席したのだから、部長に事情を説明せ**ずにはすまない**。（擅自缺席了重要的会议，不向部长说明情况是过不去的。）
 4. 借りた本をひどく汚してしまったので、弁償せ**ずにはすまない**だろう。（把借来的书弄得很脏，恐怕非赔不可了。）
-5. 長年お世話になった恩師の葬儀なので、遠方でも参列せ**ずにはすまない**。（是多年关照我的恩师的葬礼，再远也必须去参加。）
+5. 大口の取引先の会長の葬儀なので、会社を代表して誰かが参列せ**ずにはすまない**。（是大客户会长的葬礼，公司总得派人代表出席。）
 :::
 :::en
 1. 相手にけがをさせてしまった以上、直接謝罪に行か**ずにはすまない**。(Now that I've injured him, I'll have to go and apologise in person.)
 2. これほどの損害を出したのだから、責任者は何らかの処分を受け**ずにはすまない**だろう。(After losses on this scale, whoever is responsible is bound to face some kind of disciplinary action.)
 3. 大事な会議を無断で欠席したのだから、部長に事情を説明せ**ずにはすまない**。(I skipped an important meeting without telling anyone, so I can't get away without explaining to the manager.)
 4. 借りた本をひどく汚してしまったので、弁償せ**ずにはすまない**だろう。(I've badly stained the book I borrowed, so I'll probably have to pay for it.)
-5. 長年お世話になった恩師の葬儀なので、遠方でも参列せ**ずにはすまない**。(It's the funeral of a teacher who did so much for me over the years, so I have to attend, however far it is.)
+5. 大口の取引先の会長の葬儀なので、会社を代表して誰かが参列せ**ずにはすまない**。(It's the funeral of the chairman of a major client, so someone will have to attend on the company's behalf.)
 :::
 
 ### 辨析||Comparison

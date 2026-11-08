@@ -172,7 +172,7 @@ Restrictions:
 | 表达 | 接续 | 评价 |
 |------|------|------|
 | 極まりない／極まる | な形容词語幹 + | 几乎都是负面，严厉批评 |
-| の極み | 名词 + の極み | 多为正面或感慨：光栄の極み、贅沢の極み（N1第79课） |
+| の極み | 名词 + の極み | 正负都可：光栄の極み、贅沢の極み／痛恨の極み、無責任の極み（N1第79课） |
 | この上ない | な形容词語幹／〜こと + この上ない；この上ない + 名词 | 正负都可：この上ない喜び、危険この上ない |
 
 > ⭕ 失礼極まりない ／ ⭕ 光栄の極みです  
@@ -184,7 +184,7 @@ Restrictions:
 | Expression | Attaches to | Evaluation |
 |------|------|------|
 | 極まりない／極まる | na-adjective stem | almost always negative; harsh criticism |
-| の極み | noun + の極み | mostly positive or emotional: 光栄の極み, 贅沢の極み (N1 Lesson 79) |
+| の極み | noun + の極み | positive or negative: 光栄の極み, 贅沢の極み / 痛恨の極み, 無責任の極み (N1 Lesson 79) |
 | この上ない | na-adjective stem / 〜こと + この上ない; この上ない + noun | positive or negative: この上ない喜び, 危険この上ない |
 
 > ⭕ 失礼極まりない / ⭕ 光栄の極みです  

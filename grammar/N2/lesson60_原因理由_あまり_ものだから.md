@@ -444,7 +444,7 @@ Can be used for both positive and negative situations.
 1. 真面目な田中さんの**ことだから**、約束の時間にはきっと来るだろう。（认真的田中先生嘛，约好的时间他肯定会来的。）
 2. 心配性の母の**ことだから**、今ごろ何度も電話をかけてきているに違いない。（我妈那么爱操心，现在肯定已经打了好几次电话了。）
 3. 慎重な部長の**ことだから**、もう別の案も用意しているはずだ。（部长做事那么谨慎，应该已经准备好别的方案了。）
-4. 人気のあの店の**ことだから**、週末はかなり混んでいるだろう。（那家店那么受欢迎，周末肯定很挤吧。）
+4. 料理好きの姉の**ことだから**、きっとごちそうを作って待っているだろう。（我姐那么爱做菜，肯定做了一桌好菜等着呢。）
 5. 子どもの**ことだから**、新しいおもちゃにもすぐ飽きてしまうだろう。（毕竟是小孩子，新玩具也很快就会玩腻吧。）
 6. 彼の**ことだから**、また何か言い訳をするに決まっている。（他那个人嘛，肯定又要找什么借口。）
 :::
@@ -452,7 +452,7 @@ Can be used for both positive and negative situations.
 1. 真面目な田中さんの**ことだから**、約束の時間にはきっと来るだろう。(Knowing how conscientious Tanaka is, he'll surely come at the agreed time.)
 2. 心配性の母の**ことだから**、今ごろ何度も電話をかけてきているに違いない。(My mother being the worrier she is, she must have called several times by now.)
 3. 慎重な部長の**ことだから**、もう別の案も用意しているはずだ。(Our manager is so careful that he's bound to have a backup plan ready already.)
-4. 人気のあの店の**ことだから**、週末はかなり混んでいるだろう。(Popular as that shop is, it'll probably be very crowded on the weekend.)
+4. 料理好きの姉の**ことだから**、きっとごちそうを作って待っているだろう。(My sister loves cooking so much that she's surely waiting with a feast ready.)
 5. 子どもの**ことだから**、新しいおもちゃにもすぐ飽きてしまうだろう。(Kids being kids, they'll probably get bored of the new toy soon too.)
 6. 彼の**ことだから**、また何か言い訳をするに決まっている。(Knowing him, he's sure to come up with some excuse again.)
 :::
