@@ -195,10 +195,10 @@ This lesson covers N2-level expressions for assertion and judgment. 「ないわ
 
 ### 含义||Meaning
 :::zh
-"不可能……""怎么可能……"，表示从道理上来说绝对不可能。基于逻辑、常识做出的强烈否定判断。语气比「はずがない」更强。
+"不可能……""怎么可能……"，表示说话人认为绝对不可能。常基于常识，语气主观、口语，常带情绪。在「〜ない」形里多数时候可以和「はずがない」互换。
 :::
 :::en
-"There is no way…" or "it's impossible that…" — logically, it is absolutely impossible. A strong negative judgment based on logic and common sense. Stronger in tone than 「はずがない」.
+"There is no way…" or "it's impossible that…" — the speaker is sure it is out of the question. Often rests on common sense; subjective and colloquial, often with emotion. In the 「〜ない」 form it is usually interchangeable with 「はずがない」.
 :::
 
 ### 例句||Example Sentences
@@ -267,36 +267,38 @@ This lesson covers N2-level expressions for assertion and judgment. 「ないわ
 :::zh
 | 表达 | 含义 | 判断根据 | 语气 |
 |------|------|------|------|
-| わけがない | 不可能 | 逻辑・道理 | 非常强烈的否定 |
-| はずがない | 不可能/不应该 | 个人经验・已知信息 | 较强的否定推测 |
+| わけがない | 不可能；怎么可能 | 说话人的主观判断、常识 | 强烈否定，更口语，常带情绪 |
+| はずがない | 不可能/不应该 | 说话人掌握的信息・依据 | 强烈否定，较冷静 |
 | ないだろう | 大概不会 | 推测 | 委婉 |
 
-> 「彼が犯人のわけがない」= 从道理上不可能是他（逻辑否定）  
-> 「彼が犯人のはずがない」= 根据我所知道的，他不可能是犯人（经验否定）
+> 「彼が犯人のわけがない」= 他怎么可能是犯人！（强烈、带情绪的否定）  
+> 「彼が犯人のはずがない」= 根据我所知道的，他不可能是犯人（有依据的否定）
 
 **核心区别：**
-- 「わけがない」→ 任何人从道理上判断都不可能  
-- 「はずがない」→ 根据"我知道的情况"来看不可能  
+- 在「〜ない」形里两者往往可以互换，意思都是"不可能"。  
+- 「はずがない」→ 更强调"根据我掌握的情况"来看不可能  
+- 「わけがない」→ 更口语、更主观，常带"怎么可能！"的情绪  
 
-> 「3歳の子供が漢字を読めるわけがない」= 任何人都觉得3岁小孩不可能读汉字（常识）  
-> 「あの子が嘘をつくはずがない」= 我了解那个孩子，他不可能说谎（个人判断）
+> 「3歳の子供が漢字を読めるわけがない」= 3岁小孩怎么可能读汉字（常识＋情绪）  
+> 「あの子が嘘をつくはずがない」= 我了解那个孩子，他不可能说谎（根据所知）
 :::
 :::en
 | Expression | Meaning | Basis of judgment | Tone |
 |------|------|------|------|
-| わけがない | impossible | Logic / reason | Very strong denial |
-| はずがない | can't be / shouldn't be | Personal experience / known info | Strong negative inference |
+| わけがない | impossible; no way | Speaker's subjective view / common sense | Strong denial; more colloquial, often emotional |
+| はずがない | can't be / shouldn't be | What the speaker knows / evidence | Strong denial; calmer |
 | ないだろう | probably not | Guess | Tentative |
 
-> 「彼が犯人のわけがない」 = logically, there's no way he's the criminal (logical denial)  
-> 「彼が犯人のはずがない」 = based on what I know, he can't be the criminal (experiential denial)
+> 「彼が犯人のわけがない」 = there's no way he's the criminal! (strong, emotional denial)  
+> 「彼が犯人のはずがない」 = based on what I know, he can't be the criminal (denial with grounds)
 
 **Core difference:**
-- 「わけがない」 → anyone would judge it logically impossible  
-- 「はずがない」 → based on "what I know," it shouldn't be possible  
+- In the 「〜ない」 form the two are often interchangeable; both mean "can't be".  
+- 「はずがない」 → leans on "given what I know," it can't be  
+- 「わけがない」 → more colloquial and subjective, often with a "no way!" feeling  
 
-> 「3歳の子供が漢字を読めるわけがない」 = anyone would think a 3-year-old can't read kanji (common sense)  
-> 「あの子が嘘をつくはずがない」 = I know that child; he couldn't be lying (personal judgment)
+> 「3歳の子供が漢字を読めるわけがない」 = no way a 3-year-old can read kanji (common sense + feeling)  
+> 「あの子が嘘をつくはずがない」 = I know that child; he couldn't be lying (based on what I know)
 :::
 
 ---

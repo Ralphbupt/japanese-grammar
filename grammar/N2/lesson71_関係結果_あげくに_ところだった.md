@@ -59,14 +59,14 @@ This lesson covers N2 grammar for "expertise," "results," and "near-misses." 「
 2. 日本の歴史**にかけては**、田中先生の右に出る者はいない。（说到日本历史，没人能超过田中老师。）
 3. プログラミング**にかけては**、彼はチームで一番だ。（在编程方面，他是团队里最强的。）
 4. スピード**にかけては**、この車に勝てるものはない。（说到速度，没有车能赢过这辆。）
-5. 営業成績**にかけては**、彼はベテラン社員にも引けを取らない。（在销售业绩方面，他不逊于资深员工。）
+5. 営業**にかけては**、彼はベテラン社員にも引けを取らない。（说到跑销售，他不逊于资深员工。）
 :::
 :::en
 1. 料理**にかけては**、彼女は誰にも負けない。(When it comes to cooking, she's second to none.)
 2. 日本の歴史**にかけては**、田中先生の右に出る者はいない。(When it comes to Japanese history, no one surpasses Professor Tanaka.)
 3. プログラミング**にかけては**、彼はチームで一番だ。(In terms of programming, he's the best on the team.)
 4. スピード**にかけては**、この車に勝てるものはない。(When it comes to speed, no car can beat this one.)
-5. 営業成績**にかけては**、彼はベテラン社員にも引けを取らない。(In terms of sales performance, he's on par with even veteran employees.)
+5. 営業**にかけては**、彼はベテラン社員にも引けを取らない。(When it comes to selling, he holds his own even against veteran employees.)
 :::
 
 ### 辨析||Comparison

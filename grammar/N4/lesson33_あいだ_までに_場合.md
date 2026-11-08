@@ -71,7 +71,7 @@ This lesson covers expressions of time and situation — あいだ / あいだ�
 3. 留守の**あいだに**、泥棒が入った。（不在家的时候，小偷进来了。→ 某一时点发生）
 4. 夏休みの**あいだ**、毎日プールに行った。（暑假的整段时间里，每天去游泳池。→ 整个期间）
 5. 電車に乗っている**あいだ**、音楽を聴いていた。（坐电车的整段时间里，在听音乐。→ 同时持续）
-6. 学生の**あいだに**、たくさん旅行したい。（趁还是学生的时候，想多旅行。→ 期间内做某事）
+6. 昼休みの**あいだに**、銀行に行ってきた。（趁午休的时候，去了一趟银行。→ 期间内完成）
 7. 日本にいる**あいだに**、富士山に登りたい。（在日本的期间内，想爬富士山。→ 期间内完成）
 :::
 
@@ -81,7 +81,7 @@ This lesson covers expressions of time and situation — あいだ / あいだ�
 3. 留守の**あいだに**、泥棒が入った。(While I was away, a thief broke in. → event at a point)
 4. 夏休みの**あいだ**、毎日プールに行った。(Throughout summer vacation, I went to the pool every day. → entire period)
 5. 電車に乗っている**あいだ**、音楽を聴いていた。(The whole time I was on the train, I was listening to music. → both continuous)
-6. 学生の**あいだに**、たくさん旅行したい。(While I'm still a student, I want to travel a lot. → within the period)
+6. 昼休みの**あいだに**、銀行に行ってきた。(During my lunch break, I went to the bank. → completed within the period)
 7. 日本にいる**あいだに**、富士山に登りたい。(While I'm in Japan, I want to climb Mt. Fuji. → within the period)
 :::
 

@@ -285,7 +285,7 @@ This lesson brings together 6 grammar points that appear very frequently on the 
 :::zh
 1. 彼は出かけた**きり**、帰ってこない。（他出去后就一直没回来。）
 2. あの本は一度読んだ**きり**、もう読んでいない。（那本书读了一次之后就没再读过。）
-3. 卒業してから会った**きり**、連絡を取っていない。（毕业后见了一次面，之后就没联系过。）
+3. 卒業式で会った**きり**、連絡を取っていない。（毕业典礼上见过一面之后，就再没联系过。）
 4. 部屋には二人**きり**だった。（房间里只有两个人。）
 5. 財布には千円**きり**しか残っていない。（钱包里只剩一千日元了。）
 6. 彼女は横になった**きり**、動かなかった。（她躺下后就一直没动。）
@@ -293,7 +293,7 @@ This lesson brings together 6 grammar points that appear very frequently on the 
 :::en
 1. 彼は出かけた**きり**、帰ってこない。(He went out and hasn't come back since.)
 2. あの本は一度読んだ**きり**、もう読んでいない。(I read that book once and haven't read it again.)
-3. 卒業してから会った**きり**、連絡を取っていない。(We met once after graduation and haven't been in touch since.)
+3. 卒業式で会った**きり**、連絡を取っていない。(We last saw each other at the graduation ceremony and haven't been in touch since.)
 4. 部屋には二人**きり**だった。(There were only two people in the room.)
 5. 財布には千円**きり**しか残っていない。(I only have 1,000 yen left in my wallet.)
 6. 彼女は横になった**きり**、動かなかった。(She lay down and never moved after that.)

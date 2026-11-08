@@ -58,14 +58,14 @@ This lesson covers N2-level grammar for degree and limitation. 「に過ぎな�
 ### 例句||Example Sentences
 :::zh
 1. これは私の個人的な意見**に過ぎない**。（这只不过是我个人的意见罢了。）
-2. 彼はまだ学生**に過ぎない**のに、立派な研究をしている。（他只不过还是个学生，却做出了出色的研究。）
+2. 彼の話は、ただの噂**に過ぎない**。（他说的不过是传闻罢了。）
 3. それは推測**に過ぎない**。事実とは異なる可能性がある。（那只不过是推测，可能和事实不同。）
 4. 私が手伝えたのは、ほんの少し**に過ぎない**。（我能帮的只不过是一点点。）
 5. 成功したのは偶然**に過ぎない**と彼は言った。（他说成功只不过是偶然。）
 :::
 :::en
 1. これは私の個人的な意見**に過ぎない**。(This is merely my personal opinion.)
-2. 彼はまだ学生**に過ぎない**のに、立派な研究をしている。(He is merely a student, yet he's doing impressive research.)
+2. 彼の話は、ただの噂**に過ぎない**。(What he says is nothing more than a rumor.)
 3. それは推測**に過ぎない**。事実とは異なる可能性がある。(That is nothing more than speculation. It may differ from the facts.)
 4. 私が手伝えたのは、ほんの少し**に過ぎない**。(What I could help with was nothing more than a little.)
 5. 成功したのは偶然**に過ぎない**と彼は言った。(He said the success was nothing more than coincidence.)

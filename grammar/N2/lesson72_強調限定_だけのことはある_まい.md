@@ -178,14 +178,14 @@ This lesson covers N2 grammar for "emphatic evaluation" and "negative conjecture
 2. 給料は低いが、仕事がある**だけまし**だ。（工资虽低，但至少有工作，比没有强。）
 3. 電車は遅れたが、止まらなかった**だけまし**だ。（电车虽然晚了，但至少没停运，算好的了。）
 4. ボーナスは減ったが、もらえる**だけまし**だ。（奖金虽然少了，但至少还有，比没有强。）
-5. 雨だったが、台風にならなかった**だけまし**だ。（虽然下雨了，但至少没变成台风，算好的了。）
+5. 雨で試合は延期になったが、中止にならなかった**だけまし**だ。（比赛因雨延期了，但至少没取消，算好的了。）
 :::
 :::en
 1. 怪我をしたが、軽い怪我**だっただけまし**だ。(I got hurt, but at least it was a minor injury — could've been worse.)
 2. 給料は低いが、仕事がある**だけまし**だ。(The pay is low, but at least I have a job.)
 3. 電車は遅れたが、止まらなかった**だけまし**だ。(The train was late, but at least it wasn't cancelled.)
 4. ボーナスは減ったが、もらえる**だけまし**だ。(The bonus was cut, but at least I still got one.)
-5. 雨だったが、台風にならなかった**だけまし**だ。(It rained, but at least it didn't turn into a typhoon.)
+5. 雨で試合は延期になったが、中止にならなかった**だけまし**だ。(The match was postponed because of rain, but at least it wasn't cancelled.)
 :::
 
 ### 辨析||Comparison
