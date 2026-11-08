@@ -121,12 +121,13 @@
   },
   {
     "id": "n2-m2-104",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson60#7"
     ],
     "difficulty": 2,
-    "stem": "時間に厳しい山田さんの（　）、今日も約束の十分前には来ているだろう。",
+    "stem": "心配性の母の（　）、私が一人で海外へ行くと聞いたら、きっと反対するだろう。",
     "options": [
       "くせに",
       "わりには",
@@ -134,23 +135,23 @@
       "ことだから"
     ],
     "answer": 3,
-    "full": "時間に厳しい山田さんのことだから、今日も約束の十分前には来ているだろう。",
+    "full": "心配性の母のことだから、私が一人で海外へ行くと聞いたら、きっと反対するだろう。",
     "tr": {
-      "zh": "山田先生很守时，所以今天应该也会提前十分钟到吧。",
-      "en": "Knowing how strict Mr Yamada is about time, he'll be there ten minutes early today too."
+      "zh": "我妈妈那么爱操心，要是听说我一个人去国外，肯定会反对吧。",
+      "en": "Knowing what a worrier my mother is, she'll surely object if she hears I'm going abroad alone."
     },
     "why": {
-      "zh": "线索：「時間に厳しい山田さんの」——基于对某人性格的了解，后面是推测「来ているだろう」。\n规则：「人物名词＋のことだから」＝因为是那个人（所以一定……），后面多接推测「だろう」「にちがいない」。\n辨析：「ものだから」用于为自己辩解原因，接普通形（「急いでいたものだから」），不接「名词＋の」。",
-      "en": "Clue: 「時間に厳しい山田さんの」 — what we know of someone's character — leading to a guess, 「来ているだろう」.\nRule: person noun ＋ 「のことだから」 = knowing them, (surely …); usually followed by 「だろう」 or 「にちがいない」.\nContrast: 「ものだから」 gives an excuse and follows a plain form (「急いでいたものだから」), not noun ＋ 「の」."
+      "zh": "线索：「心配性の母の」——基于对某人性格的了解，后面是推测「きっと反対するだろう」。\n规则：「人物名词＋のことだから」＝因为是那个人（所以一定……），后面多接推测「だろう」「にちがいない」。\n辨析：「ものだから」用于为自己辩解原因，接普通形（「急いでいたものだから」），不接「名词＋の」。",
+      "en": "Clue: 「心配性の母の」 — what we know of someone's character — leading to a guess, 「きっと反対するだろう」.\nRule: person noun ＋ 「のことだから」 = knowing them, (surely …); usually followed by 「だろう」 or 「にちがいない」.\nContrast: 「ものだから」 gives an excuse and follows a plain form (「急いでいたものだから」), not noun ＋ 「の」."
     },
     "wrong": [
       {
-        "zh": "「くせに」＝明明……却……，带责备，但守时和提前到并不矛盾。",
-        "en": "「くせに」 criticises a contradiction, but being punctual and arriving early don't contradict."
+        "zh": "「くせに」＝明明……却……，带责备，但爱操心和反对并不矛盾。",
+        "en": "「くせに」 criticises a contradiction, but being a worrier and objecting don't contradict."
       },
       {
-        "zh": "「わりには」＝与……相比出乎意料，但守时的人提前到正在意料之中。",
-        "en": "「わりには」 marks something unexpected, but a punctual person arriving early is exactly what you'd expect."
+        "zh": "「わりには」＝与……相比出乎意料，但爱操心的人反对正在意料之中。",
+        "en": "「わりには」 marks something unexpected, but a worrier objecting is exactly what you'd expect."
       },
       {
         "zh": "「ものだから」接普通形，用于辩解自己的理由，不接「名词＋の」，也不用于推测别人。",

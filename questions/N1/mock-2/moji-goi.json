@@ -37,36 +37,37 @@
   },
   {
     "id": "n1-m2-002",
+    "rev": 2,
     "type": "kanji",
     "difficulty": 2,
-    "stem": "何度断られても、彼は<<粘り強く>>交渉を続けた。",
+    "stem": "連絡のつかない息子を待つ間、母親の不安は<<募る>>ばかりだった。",
     "options": [
-      "ねまりづよく",
-      "ねばりつよく",
-      "ねばりずよく",
-      "ねばりづよく"
+      "つもる",
+      "しげる",
+      "かさむ",
+      "つのる"
     ],
     "answer": 3,
     "tr": {
-      "zh": "无论被拒绝多少次，他都锲而不舍地继续交涉。",
-      "en": "However many times he was turned down, he kept negotiating doggedly."
+      "zh": "在等待联系不上的儿子期间，母亲的不安越来越强烈。",
+      "en": "While she waited for the son she couldn't reach, the mother's anxiety only grew."
     },
     "why": {
-      "zh": "「粘り強い」（有韧性、不屈不挠）读「ねばりづよい」，「強い」在复合词里浊化成「づよい」。",
-      "en": "「粘り強い」 (tenacious) is ねばりづよい: 「強い」 voices to づよい in the compound."
+      "zh": "「募る」读「つのる」：①（感情）越来越强烈：「不安が募る」「思いが募る」；②招募：「参加者を募る」。音读「ぼ」见于「募集」。",
+      "en": "「募る」 is つのる: (feelings) grow stronger — 「不安が募る」, 「思いが募る」; also to recruit — 「参加者を募る」. The on-reading ぼ is in 「募集」."
     },
     "wrong": [
       {
-        "zh": "「粘」的训读是「ねば（る）」，不是「ねま」。",
-        "en": "「粘」 is read ねば(る), not ねま."
+        "zh": "「つもる」写作「積もる」（雪、灰尘堆积），「不安が積もる」不是这个词。",
+        "en": "つもる is 「積もる」 (snow, dust piling up); it's a different word."
       },
       {
-        "zh": "复合词里「強い」浊化，读「づよい」，不读清音「つよい」。",
-        "en": "In the compound 「強い」 voices to づよい, not つよい."
+        "zh": "「しげる」写作「茂る」（草木茂盛）。",
+        "en": "しげる is 「茂る」 (plants growing thick)."
       },
       {
-        "zh": "「つ」浊化后写作「づ」，不写「ず」。",
-        "en": "The voiced form of つ is written づ, not ず."
+        "zh": "「かさむ」写作「嵩む」（费用增多），不读「募る」。",
+        "en": "かさむ is 「嵩む」 (costs mounting up), not 募る."
       },
       null
     ]
@@ -109,37 +110,38 @@
   },
   {
     "id": "n1-m2-004",
+    "rev": 2,
     "type": "kanji",
     "difficulty": 2,
-    "stem": "忙しいからといって<<偏った>>食事を続けていると、体を壊すよ。",
+    "stem": "突然の大雪が、登山隊の行く手を<<阻んだ>>。",
     "options": [
-      "かたむいた",
-      "ゆがんだ",
-      "かたよった",
-      "かたまった"
+      "こばんだ",
+      "いどんだ",
+      "はばんだ",
+      "はずんだ"
     ],
     "answer": 2,
     "tr": {
-      "zh": "就算忙，一直吃不均衡的饭菜也会搞垮身体的。",
-      "en": "Busy or not, if you keep eating an unbalanced diet, you'll ruin your health."
+      "zh": "突如其来的大雪阻挡了登山队的去路。",
+      "en": "A sudden heavy snowfall blocked the climbing party's way."
     },
     "why": {
-      "zh": "「偏る」（偏、不均衡）读「かたよる」，「偏った食事」＝营养不均衡的饮食。",
-      "en": "「偏る」 (to be lopsided) is かたよる; 「偏った食事」 is an unbalanced diet."
+      "zh": "「阻む」读「はばむ」（阻挡、阻止），常说「行く手を阻む」「侵入を阻む」。音读「そ」见于「阻止」。",
+      "en": "「阻む」 is はばむ (to block, obstruct): 「行く手を阻む」, 「侵入を阻む」. The on-reading そ is in 「阻止」."
     },
     "wrong": [
       {
-        "zh": "「かたむいた」是「傾いた」（倾斜）的读法。",
-        "en": "かたむいた is 「傾いた」 (tilted)."
+        "zh": "「こばむ」写作「拒む」（拒绝），和「阻む」字形、意思都不同。",
+        "en": "こばむ is 「拒む」 (to refuse), a different kanji and meaning."
       },
       {
-        "zh": "「ゆがんだ」是「歪んだ」（歪曲、变形）的读法。",
-        "en": "ゆがんだ is 「歪んだ」 (warped)."
+        "zh": "「いどむ」写作「挑む」（挑战）。",
+        "en": "いどむ is 「挑む」 (to challenge)."
       },
       null,
       {
-        "zh": "「かたまった」是「固まった」（凝固、固定）的读法。",
-        "en": "かたまった is 「固まった」 (hardened)."
+        "zh": "「はずむ」写作「弾む」（弹起、气氛热烈）。",
+        "en": "はずむ is 「弾む」 (to bounce, liven up)."
       }
     ]
   },
@@ -469,37 +471,38 @@
   },
   {
     "id": "n1-m2-014",
+    "rev": 2,
     "type": "iikae",
     "difficulty": 1,
-    "stem": "手術が無事に終わったと聞いて、家族は<<ひとまず>>安心した。",
+    "stem": "手術が無事に終わったと聞いて、家族は<<胸をなで下ろした>>。",
     "options": [
-      "すっかり",
-      "とりあえず",
-      "ますます",
-      "心から"
+      "がっかりした",
+      "ほっとした",
+      "驚いた",
+      "感動した"
     ],
     "answer": 1,
     "tr": {
-      "zh": "听说手术顺利结束，家人总算暂时放下心来。",
-      "en": "Hearing that the operation had gone well, the family felt relieved for the time being."
+      "zh": "听说手术顺利结束，家人松了一口气。",
+      "en": "Hearing that the operation had gone well, the family breathed a sigh of relief."
     },
     "why": {
-      "zh": "线索：划线的「ひとまず」，手术顺利，但之后还有恢复期，先暂且放心。\n词义：「ひとまず」＝暂且、姑且（先告一段落），和「とりあえず」意思相同。",
-      "en": "Clue: the underlined 「ひとまず」 — the operation is over, though recovery lies ahead, so relief for now.\nMeaning: 「ひとまず」 is for the moment, for now — the same as 「とりあえず」."
+      "zh": "线索：划线的「胸をなで下ろす」，担心的事平安过去，放下心来，＝「ほっとした」。\n词义：「胸をなで下ろす」＝（担心消除后）松一口气，常说「無事と聞いて胸をなで下ろす」。",
+      "en": "Clue: the underlined 「胸をなで下ろす」 — a worry has passed safely, so 「ほっとした」.\nMeaning: 「胸をなで下ろす」 is to breathe a sigh of relief once a worry is over: 「無事と聞いて胸をなで下ろす」."
     },
     "wrong": [
       {
-        "zh": "「すっかり」是完全、彻底，没有“暂且”的意思。",
-        "en": "「すっかり」 is completely, not for the moment."
+        "zh": "「がっかりした」是失望，和“松了口气”相反。",
+        "en": "「がっかりした」 is disappointed, the opposite of relieved."
       },
       null,
       {
-        "zh": "「ますます」是越来越，表示变化加深。",
-        "en": "「ますます」 is more and more."
+        "zh": "「驚いた」是吃惊，没有“放下心”的意思。",
+        "en": "「驚いた」 is surprised, not relieved."
       },
       {
-        "zh": "「心から」是发自内心，表示程度，不是“暂且”。",
-        "en": "「心から」 is wholeheartedly — degree, not for now."
+        "zh": "「感動した」是被打动，不是担心消除后的放心。",
+        "en": "「感動した」 is moved; it isn't relief after worry."
       }
     ]
   },
@@ -865,37 +868,38 @@
   },
   {
     "id": "n1-m2-025",
+    "rev": 2,
     "type": "youhou",
     "difficulty": 1,
-    "stem": "<<手軽>>",
+    "stem": "<<気兼ね>>",
     "options": [
-      "荷物を半分にして手軽になったので、楽に階段を上れた。",
-      "彼は手軽な性格で、初めて会った人ともすぐに仲良くなる。",
-      "この料理は電子レンジだけで手軽に作れるので、忙しい朝にぴったりだ。",
-      "気をつけていたのに、階段で手軽に足をくじいてしまった。"
+      "荷物を半分にして気兼ねになったので、楽に階段を上れた。",
+      "彼は気兼ねな性格で、初めて会った人ともすぐに仲良くなる。",
+      "ここは自分の家だと思って、どうぞ気兼ねなくくつろいでください。",
+      "気をつけていたのに、階段で気兼ねに足をくじいてしまった。"
     ],
     "answer": 2,
     "tr": {
-      "zh": "这道菜只用微波炉就能轻松做好，非常适合忙碌的早晨。",
-      "en": "This dish can be made easily with just a microwave, so it's perfect for busy mornings."
+      "zh": "气兼ね：顾虑、客气。正确句：请把这里当成自己家，不用客气，好好放松。",
+      "en": "気兼ね: holding back out of consideration for others. Correct: Treat this as your own home and relax without holding back."
     },
     "why": {
-      "zh": "线索：「電子レンジだけで」「作れる」，不费工夫、简单方便。\n词义：「手軽」（てがる）＝简便、轻而易举，常说「手軽に作れる」「手軽な料金」。",
-      "en": "Clue: 「電子レンジだけで」 and 「作れる」 — easy, little effort.\nMeaning: 「手軽」 (てがる) is easy, simple to do: 「手軽に作れる」, 「手軽な料金」."
+      "zh": "线索：「自分の家だと思って」「くつろいでください」，叫对方不要拘束。\n词义：「気兼ね」（きがね）＝顾虑别人、拘束客气，常说「気兼ねなく〜」「周りに気兼ねする」。",
+      "en": "Clue: 「自分の家だと思って」 and 「くつろいでください」 — telling the guest not to feel awkward.\nMeaning: 「気兼ね」 (きがね) is holding back out of concern for others: 「気兼ねなく〜」, 「周りに気兼ねする」."
     },
     "wrong": [
       {
-        "zh": "行李少了、人轻松了用「身軽になった」，「手軽」说的是做事简便，不是身体轻快。",
-        "en": "Being unburdened is 「身軽」; 「手軽」 is about ease of doing something, not travelling light."
+        "zh": "行李少了、人轻松了用「身軽になった」，「気兼ね」是心理上的顾虑。",
+        "en": "Being unburdened is 「身軽」; 「気兼ね」 is a feeling of reserve towards others."
       },
       {
-        "zh": "性格随和用「気さくな」，「手軽」不形容性格。",
-        "en": "An easygoing person is 「気さくな」; 「手軽」 doesn't describe character."
+        "zh": "性格随和用「気さくな」，「気兼ね」不接「な」形容性格。",
+        "en": "An easygoing person is 「気さくな」; 「気兼ね」 doesn't describe character with 「な」."
       },
       null,
       {
-        "zh": "不小心扭伤用「うっかり」，「手軽」不表示不小心。",
-        "en": "Carelessly is 「うっかり」; 「手軽」 doesn't mean careless."
+        "zh": "不小心扭伤用「うっかり」，「気兼ね」不表示不小心。",
+        "en": "Carelessly is 「うっかり」; 「気兼ね」 doesn't mean careless."
       }
     ]
   }

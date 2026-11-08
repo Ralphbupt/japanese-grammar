@@ -88,7 +88,7 @@ Vocabulary ranges: N4 word ids `n4-mg-1xx` kanji, `2xx` hyouki, `3xx` bunmyaku, 
 
 **`narabe` has exactly one valid order.** Check that no other arrangement of the four pieces is also a correct sentence (adverbs and 「〜を」「〜に」 phrases often swap freely — avoid making two such phrases separate pieces). The pieces plus the stem must produce `full`.
 
-**Level.** (Grammar questions.) Grammar and vocabulary at or below the question's level; for N5 only N5 grammar (lessons 00–17) and common N5 words. Write like the real test: spaces between phrases (分かち書き), kanji the level would use (N5: basic kanji like 学校・先生・行く・食べる; otherwise kana). Furigana is added by the build — never write readings in the text. Natural, everyday situations; dialogues as `A「…」\nB「…」`.
+**Level.** (Grammar questions.) Grammar and vocabulary at or below the question's level; for N5 only N5 grammar (lessons 00–17) and common N5 words. Write like the real test: N5/N4 put spaces between phrases (分かち書き); N3 and above use none (spaces only around the narabe `[_]` slots), kanji the level would use (N5: basic kanji like 学校・先生・行く・食べる; otherwise kana). Furigana is added by the build — never write readings in the text. Natural, everyday situations; dialogues as `A「…」\nB「…」`.
 
 **Explanations.** The answer view shows the finished sentence and its translation first, then `why`, then `wrong`, then the grammar point's 接続 + example (from the lesson). So `why` never restates the translation or the answer; it says *how to get there*, in labelled lines (`\n` between them; the page keeps the breaks):
 - zh `线索：` / en `Clue: ` — the word or structure in the sentence that decides it.

@@ -6,7 +6,7 @@
       "lesson50#1"
     ],
     "difficulty": 1,
-    "stem": "今日は 社長の（　）、部長が 取引先との 会議に 出席した。",
+    "stem": "今日は社長の（　）、部長が取引先との会議に出席した。",
     "options": [
       "代わりに",
       "ついでに",
@@ -14,7 +14,7 @@
       "際に"
     ],
     "answer": 0,
-    "full": "今日は 社長の 代わりに、部長が 取引先との 会議に 出席した。",
+    "full": "今日は社長の代わりに、部長が取引先との会議に出席した。",
     "tr": {
       "zh": "今天部长代替社长出席了和客户的会议。",
       "en": "Today the department head attended the meeting with the client in place of the president."
@@ -46,36 +46,36 @@
       "lesson50#1"
     ],
     "difficulty": 2,
-    "stem": "この アパートは 駅から 遠い（　）、家賃が 安くて 部屋も 広い。",
+    "stem": "このアパートは駅から遠い（　）、家賃が安くて部屋も広い。",
     "options": [
       "代わりに",
-      "ついでに",
-      "たびに",
-      "に比べて"
+      "上に",
+      "せいで",
+      "ばかりか"
     ],
     "answer": 0,
-    "full": "この アパートは 駅から 遠い代わりに、家賃が 安くて 部屋も 広い。",
+    "full": "このアパートは駅から遠い代わりに、家賃が安くて部屋も広い。",
     "tr": {
       "zh": "这间公寓离车站远，但相应地房租便宜、房间也大。",
       "en": "This apartment is far from the station, but in exchange the rent is low and the rooms are big."
     },
     "why": {
-      "zh": "线索：前面是缺点「駅から 遠い」，后面是优点「家賃が 安くて 部屋も 広い」，一坏一好相抵。\n规则：「代わりに」除了“代替”，还表示交换、补偿：有A这一面，相应地有B那一面。い形容词直接接：「遠い代わりに」。\n辨析：「遠い代わりに安い」＝远，但作为补偿便宜（好坏相抵）；「に比べて」只是拿两样东西作比较，要接名词，也没有“补偿”的意思。",
-      "en": "Clue: First a drawback, 「駅から 遠い」, then advantages, 「家賃が 安くて 部屋も 広い」: the bad is offset by the good.\nRule: Besides \"instead of\", 「代わりに」 marks a trade-off: there is A, and in return there is B. An い-adjective attaches directly: 「遠い代わりに」.\nContrast: 「遠い代わりに安い」 = far, but cheap to make up for it; 「に比べて」 only compares two things, takes a noun, and has no sense of \"making up for\"."
+      "zh": "线索：前面是缺点「駅から 遠い」，后面是优点「家賃が 安くて 部屋も 広い」，一坏一好相抵。\n规则：「代わりに」除了“代替”，还表示交换、补偿：有A这一面，相应地有B那一面。い形容词直接接：「遠い代わりに」。\n辨析：「遠い代わりに安い」＝远，但作为补偿便宜（好坏相抵）；「遠い上に」「遠いばかりか」＝同方向再加一点，后面应接另一个缺点。",
+      "en": "Clue: First a drawback, 「駅から 遠い」, then advantages, 「家賃が 安くて 部屋も 広い」: the bad is offset by the good.\nRule: Besides \"instead of\", 「代わりに」 marks a trade-off: there is A, and in return there is B. An い-adjective attaches directly: 「遠い代わりに」.\nContrast: 「遠い代わりに安い」 = far, but cheap in return (a trade-off); 「遠い上に」「遠いばかりか」 add a point in the same direction, so another drawback would have to follow."
     },
     "wrong": [
       null,
       {
-        "zh": "「ついでに」是“顺便做某事”，接形容词「遠い」不成立。",
-        "en": "「ついでに」 is \"while at it\" and can't follow 「遠い」."
+        "zh": "「上に」叠加同方向的评价，前面是缺点，后面却是优点，方向相反。",
+        "en": "「上に」 piles up points in the same direction; here a drawback is followed by advantages."
       },
       {
-        "zh": "「たびに」接动词辞书形或「名詞の」，不接形容词。",
-        "en": "「たびに」 follows a dictionary-form verb or 「名詞の」, not an adjective."
+        "zh": "「せいで」用于坏结果的原因，“便宜又宽敞”是好事。",
+        "en": "「せいで」 gives the cause of a bad result; cheap and spacious is good."
       },
       {
-        "zh": "「に比べて」接名词，不接形容词「遠い」。",
-        "en": "「に比べて」 follows nouns, not 「遠い」."
+        "zh": "「ばかりか」是“不仅……而且”，也要求前后方向一致，这里一坏一好。",
+        "en": "「ばかりか」 (not only… but also) also needs both points in the same direction; here one is bad, one good."
       }
     ]
   },
@@ -86,7 +86,7 @@
       "lesson50#1"
     ],
     "difficulty": 2,
-    "stem": "[_] [_] [_] [★] 、晩ご飯を おごって ね。",
+    "stem": "[_] [_] [_] [★] 、晩ご飯をおごってね。",
     "options": [
       "代わりに",
       "手伝って",
@@ -99,7 +99,7 @@
       3,
       0
     ],
-    "full": "引っ越しを 手伝って あげる 代わりに、晩ご飯を おごって ね。",
+    "full": "引っ越しを手伝ってあげる代わりに、晩ご飯をおごってね。",
     "tr": {
       "zh": "我帮你搬家，作为交换你请我吃晚饭哦。",
       "en": "I'll help you move, and in return you buy me dinner, OK?"
@@ -122,15 +122,15 @@
       "lesson50#2"
     ],
     "difficulty": 1,
-    "stem": "郵便局に 行った（　）、近くの 銀行にも 寄って きた。",
+    "stem": "郵便局に行った（　）、近くの銀行にも寄ってきた。",
     "options": [
       "ついでに",
       "代わりに",
-      "たびに",
-      "最中に"
+      "とたん",
+      "せいで"
     ],
     "answer": 0,
-    "full": "郵便局に 行った ついでに、近くの 銀行にも 寄って きた。",
+    "full": "郵便局に行ったついでに、近くの銀行にも寄ってきた。",
     "tr": {
       "zh": "去邮局时，顺便也去了附近的银行。",
       "en": "While I was at the post office, I also stopped by the bank nearby."
@@ -146,12 +146,12 @@
         "en": "「代わりに」 means \"instead\", but 「銀行にも」 says both places were visited."
       },
       {
-        "zh": "「たびに」接辞书形，不接た形。",
-        "en": "「たびに」 follows the dictionary form, not the た-form."
+        "zh": "「行ったとたん」后面接意外发生的事，不接自己有意去做的「寄ってきた」。",
+        "en": "「行ったとたん」 is followed by something unexpected, not a deliberate act like 「寄ってきた」."
       },
       {
-        "zh": "「最中に」要接「ている」，不接た形。",
-        "en": "「最中に」 needs 「ている」, not the た-form."
+        "zh": "「せいで」用于坏结果的原因，去银行不是坏结果。",
+        "en": "「せいで」 gives the cause of a bad result; stopping at the bank isn't one."
       }
     ]
   },
@@ -162,15 +162,15 @@
       "lesson50#2"
     ],
     "difficulty": 2,
-    "stem": "買い物の（　）、クリーニングに 出して いた 服も 取って きた。",
+    "stem": "買い物の（　）、クリーニングに出していた服も取ってきた。",
     "options": [
       "ついでに",
       "代わりに",
-      "とたんに",
-      "次第"
+      "わりに",
+      "せいで"
     ],
     "answer": 0,
-    "full": "買い物の ついでに、クリーニングに 出して いた 服も 取って きた。",
+    "full": "買い物のついでに、クリーニングに出していた服も取ってきた。",
     "tr": {
       "zh": "买东西时，顺便把送去干洗的衣服也取回来了。",
       "en": "While I was out shopping, I also picked up the clothes I'd taken to the cleaner's."
@@ -186,12 +186,12 @@
         "en": "「代わりに」 would mean \"instead of shopping\", clashing with 「服も」 (also)."
       },
       {
-        "zh": "「とたんに」只接动词た形，不接「名詞の」。",
-        "en": "「とたんに」 only follows a verb's た-form, not 「名詞の」."
+        "zh": "「買い物のわりに」是“就买东西来说……”，要接和预期不符的评价，意思不通。",
+        "en": "「買い物のわりに」 means \"for shopping…\" and needs an unexpected evaluation; it makes no sense."
       },
       {
-        "zh": "「次第」接动词ます形词干，不接「名詞の」。",
-        "en": "「次第」 follows a ます-stem, not 「名詞の」."
+        "zh": "「せいで」用于坏结果的原因，取衣服不是坏结果。",
+        "en": "「せいで」 gives the cause of a bad result; picking up the clothes isn't one."
       }
     ]
   },
@@ -202,7 +202,7 @@
       "lesson50#2"
     ],
     "difficulty": 2,
-    "stem": "[★] [_] [_] [_] コンビニで 飲み物を 買って こよう。",
+    "stem": "[★] [_] [_] [_] コンビニで飲み物を買ってこよう。",
     "options": [
       "散歩に",
       "ついでに",
@@ -215,7 +215,7 @@
       2,
       1
     ],
-    "full": "犬の 散歩に 行く ついでに コンビニで 飲み物を 買って こよう。",
+    "full": "犬の散歩に行くついでにコンビニで飲み物を買ってこよう。",
     "tr": {
       "zh": "去遛狗的时候，顺便去便利店买点饮料吧。",
       "en": "While I'm out walking the dog, I'll pick up a drink at the convenience store."
@@ -238,7 +238,7 @@
       "lesson50#3"
     ],
     "difficulty": 1,
-    "stem": "今年の 夏は 去年（　）、ずいぶん 涼しい。",
+    "stem": "今年の夏は去年（　）、ずいぶん涼しい。",
     "options": [
       "に比べて",
       "によると",
@@ -246,7 +246,7 @@
       "について"
     ],
     "answer": 0,
-    "full": "今年の 夏は 去年に比べて、ずいぶん 涼しい。",
+    "full": "今年の夏は去年に比べて、ずいぶん涼しい。",
     "tr": {
       "zh": "今年夏天和去年相比，凉快多了。",
       "en": "This summer is much cooler compared with last year."
@@ -278,7 +278,7 @@
       "lesson50#3"
     ],
     "difficulty": 2,
-    "stem": "A「新しい パソコンは どう？」\nB「前の もの（　）、ずっと 速く なったよ。」",
+    "stem": "A「新しいパソコンはどう？」\nB「前のもの（　）、ずっと速くなったよ。」",
     "options": [
       "に比べて",
       "によると",
@@ -286,7 +286,7 @@
       "のたびに"
     ],
     "answer": 0,
-    "full": "A「新しい パソコンは どう？」 B「前の ものに比べて、ずっと 速く なったよ。」",
+    "full": "A「新しいパソコンはどう？」 B「前のものに比べて、ずっと速くなったよ。」",
     "tr": {
       "zh": "A：新电脑怎么样？ B：和以前那台相比，快多了。",
       "en": "A: How's the new computer? B: It's much faster compared with the old one."
@@ -318,7 +318,7 @@
       "lesson50#3"
     ],
     "difficulty": 2,
-    "stem": "日本語は [_] [_] [_] [★] 種類が 多いと 言われる。",
+    "stem": "日本語は [_] [_] [_] [★] 種類が多いと言われる。",
     "options": [
       "比べて",
       "英語",
@@ -331,7 +331,7 @@
       0,
       2
     ],
-    "full": "日本語は 英語に 比べて 文字の 種類が 多いと 言われる。",
+    "full": "日本語は英語に比べて文字の種類が多いと言われる。",
     "tr": {
       "zh": "一般认为日语和英语相比，文字的种类多。",
       "en": "Japanese is said to have more kinds of written characters than English."
@@ -355,7 +355,7 @@
       "lesson50#4"
     ],
     "difficulty": 1,
-    "stem": "天気予報（　）、明日は 午後から 雪が 降る そうだ。",
+    "stem": "天気予報（　）、明日は午後から雪が降るそうだ。",
     "options": [
       "によると",
       "によって",
@@ -363,7 +363,7 @@
       "に代わって"
     ],
     "answer": 0,
-    "full": "天気予報によると、明日は 午後から 雪が 降る そうだ。",
+    "full": "天気予報によると、明日は午後から雪が降るそうだ。",
     "tr": {
       "zh": "据天气预报说，明天下午开始下雪。",
       "en": "According to the weather forecast, it's going to snow from tomorrow afternoon."
@@ -395,15 +395,15 @@
       "lesson50#4"
     ],
     "difficulty": 2,
-    "stem": "新聞に よると、来月から 電気代が（　）。",
+    "stem": "新聞によると、来月から電気代が（　）。",
     "options": [
-      "上がる そうだ",
+      "上がるそうだ",
       "上がりたい",
       "上がろう",
-      "上がって ほしい"
+      "上がってほしい"
     ],
     "answer": 0,
-    "full": "新聞に よると、来月から 電気代が 上がる そうだ。",
+    "full": "新聞によると、来月から電気代が上がるそうだ。",
     "tr": {
       "zh": "据报纸说，下个月起电费要涨。",
       "en": "According to the newspaper, electricity bills will go up from next month."
@@ -435,7 +435,7 @@
       "lesson50#4"
     ],
     "difficulty": 2,
-    "stem": "[_] [★] [_] [_] 、事故の 原因は スピードの 出しすぎだった そうだ。",
+    "stem": "[_] [★] [_] [_] 、事故の原因はスピードの出しすぎだったそうだ。",
     "options": [
       "よると",
       "警察の",
@@ -448,7 +448,7 @@
       2,
       0
     ],
-    "full": "警察の 発表に よると、事故の 原因は スピードの 出しすぎだった そうだ。",
+    "full": "警察の発表によると、事故の原因はスピードの出しすぎだったそうだ。",
     "tr": {
       "zh": "据警方发布的消息，事故原因是超速。",
       "en": "According to the police announcement, the accident was caused by speeding."
@@ -471,15 +471,15 @@
       "lesson50#5"
     ],
     "difficulty": 2,
-    "stem": "この 曲を 聞く（　）、学生時代の ことを 思い出す。",
+    "stem": "この曲を聞く（　）、学生時代のことを思い出す。",
     "options": [
       "たびに",
       "ついでに",
-      "最中に",
+      "わりに",
       "代わりに"
     ],
     "answer": 0,
-    "full": "この 曲を 聞く たびに、学生時代の ことを 思い出す。",
+    "full": "この曲を聞くたびに、学生時代のことを思い出す。",
     "tr": {
       "zh": "每次听这首曲子，都会想起学生时代。",
       "en": "Every time I hear this song, I remember my school days."
@@ -495,8 +495,8 @@
         "en": "「ついでに」 adds a second errand; remembering isn't something you do \"while at it\"."
       },
       {
-        "zh": "「最中に」要接「ている」，不接辞书形。",
-        "en": "「最中に」 needs 「ている」, not the dictionary form."
+        "zh": "「聞くわりに」是“就听来说……”，要接和预期不符的评价，“想起学生时代”接不上。",
+        "en": "「聞くわりに」 means \"considering I listen…\" and needs an unexpected evaluation; remembering school days doesn't fit."
       },
       {
         "zh": "「代わりに」是“代替”，“代替听曲子而想起”意思不通。",
@@ -511,15 +511,15 @@
       "lesson50#5"
     ],
     "difficulty": 2,
-    "stem": "父は 出張の（　）、家族に お土産を 買って くる。",
+    "stem": "父は出張の（　）、家族にお土産を買ってくる。",
     "options": [
       "たびに",
       "代わりに",
-      "次第",
-      "とたんに"
+      "わりに",
+      "せいで"
     ],
     "answer": 0,
-    "full": "父は 出張の たびに、家族に お土産を 買って くる。",
+    "full": "父は出張のたびに、家族にお土産を買ってくる。",
     "tr": {
       "zh": "爸爸每次出差都会给家人买特产回来。",
       "en": "Every time my father goes on a business trip, he brings back souvenirs for the family."
@@ -535,12 +535,12 @@
         "en": "「出張の代わりに」 (\"instead of the trip\") doesn't lead to bringing souvenirs back."
       },
       {
-        "zh": "「次第」接动词ます形词干，不接「名詞の」。",
-        "en": "「次第」 follows a ます-stem, not 「名詞の」."
+        "zh": "「出張のわりに」是“就出差来说……”，要接和预期不符的评价，意思不通。",
+        "en": "「出張のわりに」 means \"for a business trip…\" and needs an unexpected evaluation; it makes no sense."
       },
       {
-        "zh": "「とたんに」只接动词た形，不接「名詞の」。",
-        "en": "「とたんに」 only follows a verb's た-form, not 「名詞の」."
+        "zh": "「せいで」用于坏结果的原因，带特产回来不是坏事。",
+        "en": "「せいで」 gives the cause of a bad result; bringing back presents isn't one."
       }
     ]
   },
@@ -551,7 +551,7 @@
       "lesson50#5"
     ],
     "difficulty": 2,
-    "stem": "体が 弱い 私は、[_] [_] [_] [★] 風邪を ひいて しまう。",
+    "stem": "体が弱い私は、[_] [_] [_] [★] 風邪をひいてしまう。",
     "options": [
       "が",
       "たびに",
@@ -564,7 +564,7 @@
       2,
       1
     ],
-    "full": "体が 弱い 私は、季節が 変わる たびに 風邪を ひいて しまう。",
+    "full": "体が弱い私は、季節が変わるたびに風邪をひいてしまう。",
     "tr": {
       "zh": "体质弱的我每次换季都会感冒。",
       "en": "My health is weak, so I catch a cold every time the season changes."
@@ -587,15 +587,15 @@
       "lesson50#6"
     ],
     "difficulty": 2,
-    "stem": "一人暮らしを（　）、料理や 洗濯の 大変さが 分かった。",
+    "stem": "一人暮らしを（　）、料理や洗濯の大変さが分かった。",
     "options": [
       "して初めて",
-      "する たびに",
-      "した ついでに",
-      "する 代わりに"
+      "するたびに",
+      "したついでに",
+      "する代わりに"
     ],
     "answer": 0,
-    "full": "一人暮らしを して初めて、料理や 洗濯の 大変さが 分かった。",
+    "full": "一人暮らしをして初めて、料理や洗濯の大変さが分かった。",
     "tr": {
       "zh": "一个人生活之后，才第一次明白做饭洗衣服有多辛苦。",
       "en": "It wasn't until I lived alone that I realized how hard cooking and laundry are."
@@ -627,7 +627,7 @@
       "lesson50#6"
     ],
     "difficulty": 1,
-    "stem": "病気に なって（　）、健康の 大切さに 気づいた。",
+    "stem": "病気になって（　）、健康の大切さに気づいた。",
     "options": [
       "初めて",
       "たびに",
@@ -635,7 +635,7 @@
       "とたんに"
     ],
     "answer": 0,
-    "full": "病気に なって 初めて、健康の 大切さに 気づいた。",
+    "full": "病気になって初めて、健康の大切さに気づいた。",
     "tr": {
       "zh": "生了病，才第一次意识到健康的重要。",
       "en": "It was only after I got sick that I realized how important health is."
@@ -667,7 +667,7 @@
       "lesson50#6"
     ],
     "difficulty": 2,
-    "stem": "自分が [★] [_] [_] [_] 、親の ありがたさが 分かった。",
+    "stem": "自分が [★] [_] [_] [_] 、親のありがたさが分かった。",
     "options": [
       "初めて",
       "親",
@@ -680,7 +680,7 @@
       2,
       0
     ],
-    "full": "自分が 親に なって 初めて、親の ありがたさが 分かった。",
+    "full": "自分が親になって初めて、親のありがたさが分かった。",
     "tr": {
       "zh": "自己当了父母，才第一次体会到父母的恩情。",
       "en": "Only when I became a parent myself did I understand how much I owe my parents."
@@ -703,7 +703,7 @@
       "lesson50#7"
     ],
     "difficulty": 2,
-    "stem": "本日は 社長（　）、副社長の 私が ごあいさつ 申し上げます。",
+    "stem": "本日は社長（　）、副社長の私がごあいさつ申し上げます。",
     "options": [
       "に代わって",
       "に比べて",
@@ -711,7 +711,7 @@
       "について"
     ],
     "answer": 0,
-    "full": "本日は 社長に代わって、副社長の 私が ごあいさつ 申し上げます。",
+    "full": "本日は社長に代わって、副社長の私がごあいさつ申し上げます。",
     "tr": {
       "zh": "今天由我这个副社长代替社长致辞。",
       "en": "Today I, the vice president, will give the greeting in place of the president."
@@ -743,7 +743,7 @@
       "lesson50#7"
     ],
     "difficulty": 2,
-    "stem": "最近は 手紙（　）、メールや SNSで 連絡する 人が ほとんどだ。",
+    "stem": "最近は手紙（　）、メールやSNSで連絡する人がほとんどだ。",
     "options": [
       "に代わって",
       "によると",
@@ -751,7 +751,7 @@
       "のたびに"
     ],
     "answer": 0,
-    "full": "最近は 手紙に代わって、メールや SNSで 連絡する 人が ほとんどだ。",
+    "full": "最近は手紙に代わって、メールやSNSで連絡する人がほとんどだ。",
     "tr": {
       "zh": "最近取代书信，大多数人都用邮件或社交软件联系。",
       "en": "These days, instead of letters, most people keep in touch by email or social media."
@@ -783,7 +783,7 @@
       "lesson50#7"
     ],
     "difficulty": 3,
-    "stem": "本日は [_] [★] [_] [_] 、私が ご説明いたします。",
+    "stem": "本日は [_] [★] [_] [_] 、私がご説明いたします。",
     "options": [
       "代わり",
       "田中",
@@ -796,7 +796,7 @@
       3,
       0
     ],
-    "full": "本日は 担当の 田中に 代わり、私が ご説明いたします。",
+    "full": "本日は担当の田中に代わり、私がご説明いたします。",
     "tr": {
       "zh": "今天由我代替负责人田中来说明。",
       "en": "Today I'll give the explanation in place of Tanaka, who is in charge."

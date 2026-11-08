@@ -361,12 +361,13 @@
   },
   {
     "id": "n1-m2-110",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson86#2"
     ],
     "difficulty": 3,
-    "stem": "これほどの被害を出したのだから、会社の経営陣は責任を問われ（　）。",
+    "stem": "三十年にわたって離島の医療を一人で支えてきた彼の功績は、もっと広く評価され（　）。",
     "options": [
       "てならない",
       "てやまない",
@@ -374,14 +375,14 @@
       "てしかるべきだ"
     ],
     "answer": 3,
-    "full": "これほどの被害を出したのだから、会社の経営陣は責任を問われてしかるべきだ。",
+    "full": "三十年にわたって離島の医療を一人で支えてきた彼の功績は、もっと広く評価されてしかるべきだ。",
     "tr": {
-      "zh": "既然造成了这么大的损失，公司的管理层理应被追究责任。",
-      "en": "Having caused damage on this scale, the company's management ought to be held responsible."
+      "zh": "他三十年来独自支撑着离岛的医疗，这份功绩理应得到更广泛的认可。",
+      "en": "Having single-handedly kept medical care going on a remote island for thirty years, he deserves far wider recognition."
     },
     "why": {
-      "zh": "线索：「これほどの被害を出したのだから」，从理由推出“当然应该被追究”。\n规则：「动词て形＋しかるべきだ」＝理应……、……才对（说话人认为这样做是理所当然的）。\n辨析：「てならない」＝……得不得了，接表示感情、感觉的词：「心配でならない」「気になってならない」，不能接「問われる」。",
-      "en": "Clue: 「これほどの被害を出したのだから」 — the reason leads to \"they should rightly be…\".\nRule: て form ＋ 「しかるべきだ」 = ought to, would only be right (the speaker sees it as proper).\nContrast: 「てならない」 is \"terribly…\" after words of feeling (「心配でならない」, 「気になってならない」); it can't follow 「問われる」."
+      "zh": "线索：「三十年にわたって…支えてきた彼の功績」，从这份功绩推出“当然应该被认可”，「もっと広く」说明现状还不够。\n规则：「动词て形＋しかるべきだ」＝理应……、……才对（说话人认为这样做是理所当然的）。\n辨析：「てならない」＝……得不得了，接表示感情、感觉的词：「心配でならない」「気になってならない」，不能接「評価される」。",
+      "en": "Clue: 「三十年にわたって…支えてきた彼の功績」 — the achievement leads to \"he should rightly be…\", and 「もっと広く」 says it hasn't happened enough yet.\nRule: て form ＋ 「しかるべきだ」 = ought to, would only be right (the speaker sees it as proper).\nContrast: 「てならない」 is \"terribly…\" after words of feeling (「心配でならない」, 「気になってならない」); it can't follow 「評価される」."
     },
     "wrong": [
       {
@@ -389,12 +390,12 @@
         "en": "「てならない」 follows feelings (「残念でならない」); it can't mean \"ought to\"."
       },
       {
-        "zh": "「てやまない」是“衷心……”，接「願う」「祈る」等表示心愿的动词，不接「問われる」。",
-        "en": "「てやまない」 (\"never stop wishing\") follows verbs like 「願う」 or 「祈る」, not 「問われる」."
+        "zh": "「てやまない」是“衷心……”，接「願う」「祈る」等表示心愿的动词，不接「評価される」。",
+        "en": "「てやまない」 (\"never stop wishing\") follows verbs like 「願う」 or 「祈る」, not 「評価される」."
       },
       {
-        "zh": "「てはばからない」是“毫无顾忌地……”，接「公言する」「言う」等主动发言的动词，不接被动的「問われる」。",
-        "en": "「てはばからない」 (\"not hesitate to\") follows active verbs like 「公言する」, not the passive 「問われる」."
+        "zh": "「てはばからない」是“毫无顾忌地……”，接「公言する」「言う」等主动发言的动词，不接被动的「評価される」。",
+        "en": "「てはばからない」 (\"not hesitate to\") follows active verbs like 「公言する」, not the passive 「評価される」."
       },
       null
     ]
@@ -455,7 +456,7 @@
       2,
       0
     ],
-    "full": "入社して十年目ともなると、通常の業務に加えて後輩の指導も任されるようになる。",
+    "full": "入社して十年目ともなると通常の業務に加えて後輩の指導も任されるようになる。",
     "tr": {
       "zh": "进公司到了第十年，除了日常业务，连指导后辈的事也会交给你。",
       "en": "Once you're in your tenth year at a company, you're trusted not only with your regular work but with training junior staff too."
@@ -563,7 +564,7 @@
       0,
       2
     ],
-    "full": "子どもじゃあるまいし、いい大人が転んだくらいのことで泣くなんて、みっともないよ。",
+    "full": "子どもじゃあるまいしいい大人が転んだくらいのことで泣くなんて、みっともないよ。",
     "tr": {
       "zh": "又不是小孩子，一个大人摔了一跤就哭，太难看了。",
       "en": "You're not a child — a grown adult crying just because they fell over is embarrassing."

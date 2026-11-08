@@ -6,7 +6,7 @@
       "lesson41#1"
     ],
     "difficulty": 1,
-    "stem": "明日の 会議は 9時からなので、（　）早く 来て ください。",
+    "stem": "明日の会議は9時からなので、（　）早く来てください。",
     "options": [
       "できるだけ",
       "これだけ",
@@ -14,7 +14,7 @@
       "どれだけ"
     ],
     "answer": 0,
-    "full": "明日の 会議は 9時からなので、できるだけ 早く 来て ください。",
+    "full": "明日の会議は9時からなので、できるだけ早く来てください。",
     "tr": {
       "zh": "明天的会议9点开始，请尽量早点来。",
       "en": "Tomorrow's meeting starts at nine, so please come as early as you can."
@@ -46,7 +46,7 @@
       "lesson41#1"
     ],
     "difficulty": 2,
-    "stem": "今日は 私が おごるから、食べたい（　）食べて いいよ。",
+    "stem": "今日は私がおごるから、食べたい（　）食べていいよ。",
     "options": [
       "だけ",
       "しか",
@@ -54,7 +54,7 @@
       "ばかり"
     ],
     "answer": 0,
-    "full": "今日は 私が おごるから、食べたいだけ 食べて いいよ。",
+    "full": "今日は私がおごるから、食べたいだけ食べていいよ。",
     "tr": {
       "zh": "今天我请客，想吃多少就吃多少。",
       "en": "It's my treat today, so eat as much as you like."
@@ -86,9 +86,9 @@
       "lesson41#1"
     ],
     "difficulty": 2,
-    "stem": "その 事故に ついて、[_] [_] [★] [_] ください。",
+    "stem": "その事故について、[_] [_] [★] [_] ください。",
     "options": [
-      "知って いる",
+      "知っている",
       "こと",
       "だけ",
       "話して"
@@ -99,7 +99,7 @@
       2,
       3
     ],
-    "full": "その 事故に ついて、知って いる ことだけ 話して ください。",
+    "full": "その事故について、知っていることだけ話してください。",
     "tr": {
       "zh": "关于那起事故，请只说你知道的事。",
       "en": "About the accident, please tell us only what you know."
@@ -122,7 +122,7 @@
       "lesson41#2"
     ],
     "difficulty": 1,
-    "stem": "給料日の 前なので、財布に 1000円（　）入って いない。",
+    "stem": "給料日の前なので、財布に1000円（　）入っていない。",
     "options": [
       "しか",
       "だけ",
@@ -130,7 +130,7 @@
       "まで"
     ],
     "answer": 0,
-    "full": "給料日の 前なので、財布に 1000円しか 入って いない。",
+    "full": "給料日の前なので、財布に1000円しか入っていない。",
     "tr": {
       "zh": "因为是发工资前，钱包里只有1000日元。",
       "en": "It's just before payday, so I only have 1,000 yen in my wallet."
@@ -162,36 +162,36 @@
       "lesson41#2"
     ],
     "difficulty": 2,
-    "stem": "終電に 乗り遅れて しまったので、タクシーで 帰る（　）。",
+    "stem": "終電に乗り遅れてしまったので、タクシーで帰る（　）。",
     "options": [
-      "しか ない",
-      "しか ある",
-      "だけ ない",
-      "ばかり ない"
+      "しかない",
+      "ことはない",
+      "はずがない",
+      "べきではない"
     ],
     "answer": 0,
-    "full": "終電に 乗り遅れて しまったので、タクシーで 帰る しか ない。",
+    "full": "終電に乗り遅れてしまったので、タクシーで帰るしかない。",
     "tr": {
       "zh": "错过了末班车，只能坐出租车回去了。",
       "en": "I missed the last train, so I have no choice but to take a taxi home."
     },
     "why": {
-      "zh": "线索：前面「終電に乗り遅れてしまった」，已经没有别的交通方式；空格前是辞书形「帰る」。\n规则：动词辞书形（「帰る」「待つ」）＋「しかない」＝只能……：除此之外没有别的办法。\n容易错：选「しかある」。「しか」后面一定接否定；“只能”在日语里是“除了……没有（别的办法）”的说法。",
-      "en": "Clue: 「終電に乗り遅れてしまった」 — there's no other way home — and the blank follows the dictionary form 「帰る」.\nRule: Dictionary form (「帰る」, 「待つ」) ＋ 「しかない」 = \"have no choice but to …\": there's no other option.\nTrap: Choosing 「しかある」. 「しか」 always takes a negative; \"can only\" is expressed in Japanese as \"there is nothing except …\"."
+      "zh": "线索：前面「終電に乗り遅れてしまった」，已经没有别的交通方式；空格前是辞书形「帰る」。\n规则：动词辞书形（「帰る」「待つ」）＋「しかない」＝只能……：除此之外没有别的办法。\n容易错：选「ことはない」。「〜ことはない」＝没必要……，而前面「ので」给出的理由（错过末班车）只能推出“只好打车”。",
+      "en": "Clue: 「終電に乗り遅れてしまった」 — there's no other way home — and the blank follows the dictionary form 「帰る」.\nRule: Dictionary form (「帰る」, 「待つ」) ＋ 「しかない」 = \"have no choice but to …\": there's no other option.\nTrap: Choosing 「ことはない」. 「〜ことはない」 = there's no need to…, but the reason given with 「ので」 (missing the last train) can only lead to \"I have no choice but to take a taxi\"."
     },
     "wrong": [
       null,
       {
-        "zh": "「しか」必须接否定，不能接「ある」。",
-        "en": "「しか」 must be followed by a negative, not 「ある」."
+        "zh": "「帰ることはない」是“没必要打车回去”，可末班车已经错过了，接不上「ので」。",
+        "en": "「帰ることはない」 means \"there's no need to take a taxi\", which doesn't follow from having missed the last train."
       },
       {
-        "zh": "「だけない」不是固定说法，不表示“只能”。",
-        "en": "「だけない」 isn't a pattern and doesn't mean \"have no choice but\"."
+        "zh": "「帰るはずがない」是“不可能打车回去”，说的是对别人的推测，和自己的处境不合。",
+        "en": "「帰るはずがない」 means \"there's no way (someone) would take a taxi\" — a guess, not what you do after missing the last train."
       },
       {
-        "zh": "「ばかりない」不成句。",
-        "en": "「ばかりない」 isn't grammatical."
+        "zh": "「べきではない」是“不应该打车回去”，和“错过末班车所以……”的因果相反。",
+        "en": "「べきではない」 means \"shouldn't take a taxi\", the opposite of what missing the last train leads to."
       }
     ]
   },
@@ -202,7 +202,7 @@
       "lesson41#2"
     ],
     "difficulty": 2,
-    "stem": "もう ほかに 方法が ないので、今は [_] [_] [★] [_]。",
+    "stem": "もうほかに方法がないので、今は [_] [_] [★] [_]。",
     "options": [
       "彼を",
       "信じて",
@@ -215,7 +215,7 @@
       2,
       3
     ],
-    "full": "もう ほかに 方法が ないので、今は 彼を 信じて 待つ しかない。",
+    "full": "もうほかに方法がないので、今は彼を信じて待つしかない。",
     "tr": {
       "zh": "已经没有别的办法了，现在只能相信他、等着了。",
       "en": "There's no other way now — all we can do is trust him and wait."
@@ -238,15 +238,15 @@
       "lesson41#3"
     ],
     "difficulty": 2,
-    "stem": "新しく 来た 山田さんは 英語（　）、中国語や 韓国語も 話せるそうだ。",
+    "stem": "新しく来た山田さんは英語（　）、中国語や韓国語も話せるそうだ。",
     "options": [
       "ばかりか",
       "とはいえ",
-      "しか",
+      "にとって",
       "に限って"
     ],
     "answer": 0,
-    "full": "新しく 来た 山田さんは 英語ばかりか、中国語や 韓国語も 話せるそうだ。",
+    "full": "新しく来た山田さんは英語ばかりか、中国語や韓国語も話せるそうだ。",
     "tr": {
       "zh": "听说新来的山田不仅会英语，还会中文和韩语。",
       "en": "I hear Yamada, who just joined, speaks not only English but also Chinese and Korean."
@@ -262,8 +262,8 @@
         "en": "「とはいえ」 is a concession (granted…, but); there's no contrast here."
       },
       {
-        "zh": "「しか」要接否定，后面是肯定的「話せる」。",
-        "en": "「しか」 needs a negative, but 「話せる」 is positive."
+        "zh": "「英語にとって」是“对英语来说”，意思不通，也引不出后面的「も」。",
+        "en": "「英語にとって」 means \"from English's point of view\", which makes no sense and doesn't lead to the 「も」 that follows."
       },
       {
         "zh": "「に限って」是“偏偏在……的时候”，用于不巧的事，这里意思不通。",
@@ -278,15 +278,15 @@
       "lesson41#3"
     ],
     "difficulty": 2,
-    "stem": "この 部屋は（　）、駅からも 近いので 人気が ある。",
+    "stem": "この部屋は（　）、駅からも近いので人気がある。",
     "options": [
-      "静かな ばかりか",
-      "静かな くせに",
-      "静かな わりに",
-      "静かな せいで"
+      "静かなばかりか",
+      "静かなくせに",
+      "静かなわりに",
+      "静かなせいで"
     ],
     "answer": 0,
-    "full": "この 部屋は 静かな ばかりか、駅からも 近いので 人気が ある。",
+    "full": "この部屋は静かなばかりか、駅からも近いので人気がある。",
     "tr": {
       "zh": "这个房间不仅安静，离车站也近，所以很受欢迎。",
       "en": "This flat is popular — not only is it quiet, it's close to the station too."
@@ -318,7 +318,7 @@
       "lesson41#3"
     ],
     "difficulty": 2,
-    "stem": "天気が 急に 悪く なって、[★] [_] [_] [_] なって きた。",
+    "stem": "天気が急に悪くなって、[★] [_] [_] [_] なってきた。",
     "options": [
       "雨",
       "ばかりか",
@@ -331,7 +331,7 @@
       2,
       3
     ],
-    "full": "天気が 急に 悪く なって、雨ばかりか 風まで 強く なって きた。",
+    "full": "天気が急に悪くなって、雨ばかりか風まで強くなってきた。",
     "tr": {
       "zh": "天气突然变坏，不仅下雨，连风也大起来了。",
       "en": "The weather suddenly turned bad — not only rain, but the wind picked up too."
@@ -355,15 +355,15 @@
       "lesson41#4"
     ],
     "difficulty": 1,
-    "stem": "本日（　）、全品 30％引きです。明日からは 通常の 価格に 戻ります。",
+    "stem": "本日（　）、全品30％引きです。明日からは通常の価格に戻ります。",
     "options": [
       "に限り",
       "に限らず",
       "ばかりか",
-      "しか"
+      "だけでなく"
     ],
     "answer": 0,
-    "full": "本日に限り、全品 30％引きです。明日からは 通常の 価格に 戻ります。",
+    "full": "本日に限り、全品30％引きです。明日からは通常の価格に戻ります。",
     "tr": {
       "zh": "仅限今天，全场七折。明天起恢复原价。",
       "en": "Today only, everything is 30% off. Prices return to normal tomorrow."
@@ -383,8 +383,8 @@
         "en": "「ばかりか」 (not only…) has nothing added after it."
       },
       {
-        "zh": "「しか」要接否定，后面是肯定的「30％引きです」。",
-        "en": "「しか」 needs a negative, but the sentence is positive."
+        "zh": "「本日だけでなく」是“不只今天”，和“明天恢复原价”矛盾。",
+        "en": "「本日だけでなく」 means \"not only today\", which contradicts prices going back to normal tomorrow."
       }
     ]
   },
@@ -395,15 +395,15 @@
       "lesson41#4"
     ],
     "difficulty": 2,
-    "stem": "どうして いつも 傘を 持って いない 日（　）雨が 降るんだろう。",
+    "stem": "どうしていつも傘を持っていない日（　）雨が降るんだろう。",
     "options": [
       "に限って",
       "に限らず",
       "ばかりか",
-      "しか"
+      "だけでなく"
     ],
     "answer": 0,
-    "full": "どうして いつも 傘を 持って いない 日に限って 雨が 降るんだろう。",
+    "full": "どうしていつも傘を持っていない日に限って雨が降るんだろう。",
     "tr": {
       "zh": "为什么总是偏偏在没带伞的日子下雨呢？",
       "en": "Why does it always rain on the very days I don't have an umbrella?"
@@ -423,8 +423,8 @@
         "en": "「ばかりか」 (not only…) has nothing added after it."
       },
       {
-        "zh": "「しか」要接否定，后面是肯定的「降る」。",
-        "en": "「しか」 needs a negative, but 「降る」 is positive."
+        "zh": "「だけでなく」是“不只……”，后面要接另一项（「〜も」），抱怨“偏偏那天下雨”用不上。",
+        "en": "「だけでなく」 means \"not only…\" and needs a second item (「〜も」); it can't express \"of all days, it rains then\"."
       }
     ]
   },
@@ -435,10 +435,10 @@
       "lesson41#4"
     ],
     "difficulty": 2,
-    "stem": "どうして [★] [_] [_] [_] 電車が 遅れるのだろう。",
+    "stem": "どうして [★] [_] [_] [_] 電車が遅れるのだろう。",
     "options": [
       "私が",
-      "急いで いる",
+      "急いでいる",
       "時に",
       "限って"
     ],
@@ -448,7 +448,7 @@
       2,
       3
     ],
-    "full": "どうして 私が 急いで いる 時に 限って 電車が 遅れるのだろう。",
+    "full": "どうして私が急いでいる時に限って電車が遅れるのだろう。",
     "tr": {
       "zh": "为什么偏偏在我着急的时候电车晚点呢？",
       "en": "Why is it that the train is late precisely when I'm in a hurry?"
@@ -473,15 +473,15 @@
       "lesson41#4"
     ],
     "difficulty": 2,
-    "stem": "この アニメは 子供（　）、大人にも とても 人気が ある。",
+    "stem": "このアニメは子供（　）、大人にもとても人気がある。",
     "options": [
       "に限らず",
       "に限って",
       "に限り",
-      "しか"
+      "にとって"
     ],
     "answer": 0,
-    "full": "この アニメは 子供に限らず、大人にも とても 人気が ある。",
+    "full": "このアニメは子供に限らず、大人にもとても人気がある。",
     "tr": {
       "zh": "这部动画不限于孩子，在大人中也很受欢迎。",
       "en": "This anime isn't just popular with kids — adults love it too."
@@ -501,8 +501,8 @@
         "en": "「に限り」 means \"limited to kids\", contradicting 「大人にも」."
       },
       {
-        "zh": "「しか」要接否定，后面是肯定句。",
-        "en": "「しか」 needs a negative, but the sentence is positive."
+        "zh": "「子供にとって」是“对孩子来说”，和后面的「大人にも」接不上。",
+        "en": "「子供にとって」 means \"for children\", which doesn't connect with 「大人にも」 that follows."
       }
     ]
   },
@@ -513,22 +513,22 @@
       "lesson41#5"
     ],
     "difficulty": 2,
-    "stem": "電車の 遅れは 日本（　）、世界中の 大きな 都市で 問題に なって いる。",
+    "stem": "電車の遅れは日本（　）、世界中の大きな都市で問題になっている。",
     "options": [
       "に限らず",
       "に限って",
-      "しか",
-      "だけ"
+      "にとって",
+      "によって"
     ],
     "answer": 0,
-    "full": "電車の 遅れは 日本に限らず、世界中の 大きな 都市で 問題に なって いる。",
+    "full": "電車の遅れは日本に限らず、世界中の大きな都市で問題になっている。",
     "tr": {
       "zh": "电车晚点不限于日本，在世界各大城市都是个问题。",
       "en": "Train delays are a problem not just in Japan but in big cities all over the world."
     },
     "why": {
-      "zh": "线索：后面说「世界中の大きな都市で」，范围比前面的「日本」大得多。\n规则：「に限らず」接名词，表示“不限于……”，暗含“你可能以为只有A，其实别处也一样”。\n辨析：「日本だけ」＝只有日本（限定）；「日本に限らず」＝不只日本（扩大）。想用「だけ」的话要说「日本だけでなく」。",
-      "en": "Clue: What follows, 「世界中の大きな都市で」, covers far more than 「日本」.\nRule: 「に限らず」 follows a noun and means \"not limited to …\", implying \"you might think it's only A, but it's the same elsewhere\".\nContrast: 「日本だけ」 = Japan only (limiting); 「日本に限らず」 = not just Japan (widening). With 「だけ」 you'd need 「日本だけでなく」."
+      "zh": "线索：后面说「世界中の大きな都市で」，范围比前面的「日本」大得多。\n规则：「に限らず」接名词，表示“不限于……”，暗含“你可能以为只有A，其实别处也一样”。\n辨析：「日本に限らず」＝不只日本（范围扩大）；「日本に限って」＝偏偏是日本、只限日本（范围缩小）。后面说「世界中の」，是扩大。",
+      "en": "Clue: What follows, 「世界中の大きな都市で」, covers far more than 「日本」.\nRule: 「に限らず」 follows a noun and means \"not limited to …\", implying \"you might think it's only A, but it's the same elsewhere\".\nContrast: 「日本に限らず」 = not just Japan (widens the range); 「日本に限って」 = Japan of all places, only Japan (narrows it). 「世界中の」 that follows widens it."
     },
     "wrong": [
       null,
@@ -537,12 +537,12 @@
         "en": "「日本に限って」 would mean \"Japan, of all places\" or \"only in Japan\", and both contradict the problem being found in big cities all over the world."
       },
       {
-        "zh": "「しか」要接否定，这里是肯定。",
-        "en": "「しか」 needs a negative; the sentence is positive."
+        "zh": "「日本にとって」是“对日本来说”，后面却说世界各大城市，接不上。",
+        "en": "「日本にとって」 means \"for Japan\", but the sentence goes on about cities around the world."
       },
       {
-        "zh": "「日本だけ」是“只有日本”，和后面的“世界各地”矛盾。",
-        "en": "「日本だけ」 means \"only Japan\", contradicting \"all over the world\"."
+        "zh": "「日本によって」是“由日本／因日本而不同”，意思不通。",
+        "en": "「日本によって」 means \"by Japan\" or \"depending on Japan\", which makes no sense here."
       }
     ]
   },
@@ -553,7 +553,7 @@
       "lesson41#5"
     ],
     "difficulty": 2,
-    "stem": "この 映画は [_] [_] [★] [_] 作品だ。",
+    "stem": "この映画は [_] [_] [★] [_] 作品だ。",
     "options": [
       "子供",
       "に限らず",
@@ -566,7 +566,7 @@
       2,
       3
     ],
-    "full": "この 映画は 子供に限らず 大人も 楽しめる 作品だ。",
+    "full": "この映画は子供に限らず大人も楽しめる作品だ。",
     "tr": {
       "zh": "这部电影是不限于孩子、大人也能乐在其中的作品。",
       "en": "This film is one that adults can enjoy too, not just children."

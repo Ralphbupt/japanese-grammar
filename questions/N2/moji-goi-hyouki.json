@@ -1699,37 +1699,38 @@
   },
   {
     "id": "n2-mg-247",
+    "rev": 2,
     "type": "hyouki",
     "difficulty": 1,
-    "stem": "毎朝ジョギングをするのが、父の<<しゅうかん>>だ。",
+    "stem": "納税は国民の<<ぎむ>>の一つだ。",
     "options": [
-      "習慣",
-      "週間",
-      "習感",
-      "修慣"
+      "義務",
+      "議務",
+      "儀務",
+      "犠務"
     ],
     "answer": 0,
     "tr": {
-      "zh": "每天早上慢跑是父亲的习惯。",
-      "en": "Jogging every morning is my father's habit."
+      "zh": "纳税是国民的义务之一。",
+      "en": "Paying taxes is one of a citizen's duties."
     },
     "why": {
-      "zh": "习惯是「習慣」。",
-      "en": "A habit is 「習慣」."
+      "zh": "「ぎむ」（义务）写作「義務」，对义词是「権利」。「議・儀・犠」都含「義」，要靠意思分。",
+      "en": "ぎむ (duty) is 「義務」, the opposite of 「権利」. 議・儀・犠 all contain 義, so tell them apart by meaning."
     },
     "wrong": [
       null,
       {
-        "zh": "「週間」是一周（「一週間」），不是习惯。",
-        "en": "「週間」 is a week (「一週間」), not a habit."
+        "zh": "「議」是「会議」「議論」的「議」（商议），不写「ぎむ」。",
+        "en": "「議」 is the 議 of 「会議」 (deliberation); it doesn't write ぎむ."
       },
       {
-        "zh": "「感」是感觉的「感」，「習感」不是词。",
-        "en": "「感」 is 'feeling'; 「習感」 isn't a word."
+        "zh": "「儀」是「礼儀」「儀式」的「儀」（礼仪），不写「ぎむ」。",
+        "en": "「儀」 is the 儀 of 「礼儀」 (ceremony); it doesn't write ぎむ."
       },
       {
-        "zh": "「修」是修理的「修」，「修慣」不是词。",
-        "en": "「修」 is 'repair, study'; 「修慣」 isn't a word."
+        "zh": "「犠」是「犠牲」的「犠」，不写「ぎむ」。",
+        "en": "「犠」 is the 犠 of 「犠牲」 (sacrifice); it doesn't write ぎむ."
       }
     ]
   },

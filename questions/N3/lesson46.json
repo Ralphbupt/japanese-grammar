@@ -6,36 +6,36 @@
       "lesson46#1"
     ],
     "difficulty": 2,
-    "stem": "この 部屋は 駅から 近い（　）、家賃も 安い。",
+    "stem": "この部屋は駅から近い（　）、家賃も安い。",
     "options": [
       "上に",
-      "をはじめ",
-      "はもちろん",
-      "に伴い"
+      "ために",
+      "ものの",
+      "せいで"
     ],
     "answer": 0,
-    "full": "この 部屋は 駅から 近い上に、家賃も 安い。",
+    "full": "この部屋は駅から近い上に、家賃も安い。",
     "tr": {
       "zh": "这个房间离车站近，而且房租也便宜。",
       "en": "This apartment is close to the station, and on top of that the rent is cheap."
     },
     "why": {
-      "zh": "线索：空格前是い形容词「近い」，后面「家賃も 安い」带「も」，两个都是这间房的优点。\n规则：「〜上に」表示“不仅……而且……”，把同方向的评价叠加起来；い形容词直接接：「近い上に」。\n辨析：「はもちろん」也说“A不用说，B也”，但它接名词（「味はもちろん」），不能直接接「近い」；接在形容词后面叠加两个评价的是「上に」。",
-      "en": "Clue: Before the blank is the い-adjective 「近い」, and 「家賃も 安い」 after it has 「も」: both are good points about the room.\nRule: 「〜上に」 means \"not only … but also\", stacking evaluations that point the same way; an い-adjective attaches directly: 「近い上に」.\nContrast: 「はもちろん」 also says \"A, of course, and B too\", but it follows a noun (「味はもちろん」), not a bare 「近い」. To stack two evaluations after an adjective, use 「上に」."
+      "zh": "线索：空格前是い形容词「近い」，后面「家賃も 安い」带「も」，两个都是这间房的优点。\n规则：「〜上に」表示“不仅……而且……”，把同方向的评价叠加起来；い形容词直接接：「近い上に」。\n辨析：「近い上に安い」＝好上加好（同方向追加）；「近いものの」＝虽然近但……（转折），后面应是相反的评价，和「家賃も」的「も」接不上。",
+      "en": "Clue: Before the blank is the い-adjective 「近い」, and 「家賃も 安い」 after it has 「も」: both are good points about the room.\nRule: 「〜上に」 means \"not only … but also\", stacking evaluations that point the same way; an い-adjective attaches directly: 「近い上に」.\nContrast: 「近い上に安い」 = one plus on top of another (same direction); 「近いものの」 = although close… (contrast), which needs an opposite point and clashes with the 「も」 in 「家賃も」."
     },
     "wrong": [
       null,
       {
-        "zh": "「をはじめ」接名词，列举代表性事物，不接い形容词。",
-        "en": "「をはじめ」 follows a noun and names a leading example; it can't follow an i-adjective."
+        "zh": "「近いために」是“因为近”，“因为近所以房租也便宜”因果不通。",
+        "en": "「近いために」 means \"because it's close\", but being close doesn't make the rent cheap."
       },
       {
-        "zh": "「はもちろん」只接名词，不接い形容词。",
-        "en": "「はもちろん」 follows only nouns, not an i-adjective."
+        "zh": "「ものの」是“虽然……但是”，后面要接相反的评价，和「家賃も安い」的「も」不合。",
+        "en": "「ものの」 means \"although…\" and needs a contrasting point after it; 「家賃も安い」 with 「も」 adds a point instead."
       },
       {
-        "zh": "「に伴い」接名词或动词，表示伴随变化，“离车站近”不是变化，也不能直接接い形容词。",
-        "en": "「に伴い」 follows a noun or verb and describes accompanying change; \"close to the station\" isn't a change, and it can't follow an i-adjective."
+        "zh": "「せいで」用于把坏结果归因，“房租便宜”是好事，因果也不通。",
+        "en": "「せいで」 blames a bad result on a cause; cheap rent is good, and being close doesn't cause it."
       }
     ]
   },
@@ -46,7 +46,7 @@
       "lesson46#1"
     ],
     "difficulty": 2,
-    "stem": "彼女は 仕事が 丁寧（　）、スピードも 速い。",
+    "stem": "彼女は仕事が丁寧（　）、スピードも速い。",
     "options": [
       "な上に",
       "なのに",
@@ -54,7 +54,7 @@
       "なくせに"
     ],
     "answer": 0,
-    "full": "彼女は 仕事が 丁寧な上に、スピードも 速い。",
+    "full": "彼女は仕事が丁寧な上に、スピードも速い。",
     "tr": {
       "zh": "她工作仔细，而且速度也快。",
       "en": "Her work is careful, and on top of that she's fast."
@@ -86,7 +86,7 @@
       "lesson46#1"
     ],
     "difficulty": 1,
-    "stem": "今日は 道に [_] [★] [_] [_] 降って きて、さんざんだった。",
+    "stem": "今日は道に [_] [★] [_] [_] 降ってきて、さんざんだった。",
     "options": [
       "雨",
       "迷った",
@@ -99,7 +99,7 @@
       0,
       2
     ],
-    "full": "今日は 道に 迷った上に 雨まで 降って きて、さんざんだった。",
+    "full": "今日は道に迷った上に雨まで降ってきて、さんざんだった。",
     "tr": {
       "zh": "今天迷了路，而且还下起了雨，真是倒霉透了。",
       "en": "Today I got lost, and then it even started raining — a terrible day."
@@ -123,28 +123,28 @@
       "lesson46#2"
     ],
     "difficulty": 1,
-    "stem": "この 問題は 子ども（　）、大人にも 関係が ある。",
+    "stem": "この問題は子ども（　）、大人にも関係がある。",
     "options": [
       "だけでなく",
-      "上に",
+      "に限って",
       "に伴い",
       "にとって"
     ],
     "answer": 0,
-    "full": "この 問題は 子どもだけでなく、大人にも 関係が ある。",
+    "full": "この問題は子どもだけでなく、大人にも関係がある。",
     "tr": {
       "zh": "这个问题不仅和孩子有关，和大人也有关。",
       "en": "This issue concerns not only children but adults as well."
     },
     "why": {
-      "zh": "线索：空格前是名词「子ども」，后面「大人にも」带「も」，是“孩子……大人也……”的并列。\n规则：「〜だけでなく、〜も」＝不仅A，B也……；名词直接接「だけでなく」，口语书面都能用。\n辨析：「上に」也表示追加，但它叠加的是评价或情况（「安い上においしい」），接名词要说「である上に」；把“孩子”和“大人”两类人并列，用「だけでなく」。",
-      "en": "Clue: Before the blank is the noun 「子ども」, and 「大人にも」 after it has 「も」: \"children … and adults too\".\nRule: 「〜だけでなく、〜も」 = not only A, B as well; a noun attaches directly, in speech or writing.\nContrast: 「上に」 also adds, but it stacks evaluations or situations (「安い上においしい」), and after a noun it needs 「である上に」. To line up two groups of people, use 「だけでなく」."
+      "zh": "线索：空格前是名词「子ども」，后面「大人にも」带「も」，是“孩子……大人也……”的并列。\n规则：「〜だけでなく、〜も」＝不仅A，B也……；名词直接接「だけでなく」，口语书面都能用。\n辨析：「子どもだけでなく」＝不只孩子（范围扩大）；「子どもに限って」＝偏偏是孩子、只限孩子（范围缩小），和后面的「大人にも」方向相反。",
+      "en": "Clue: Before the blank is the noun 「子ども」, and 「大人にも」 after it has 「も」: \"children … and adults too\".\nRule: 「〜だけでなく、〜も」 = not only A, B as well; a noun attaches directly, in speech or writing.\nContrast: 「子どもだけでなく」 = not only children (widens the range); 「子どもに限って」 = children of all people, only children (narrows it), the opposite of 「大人にも」 that follows."
     },
     "wrong": [
       null,
       {
-        "zh": "名词接「上に」要用「である上に」，而且「上に」是叠加评价，这里不是评价。",
-        "en": "A noun needs 「である上に」, and 「上に」 stacks evaluations — this sentence isn't one."
+        "zh": "「子どもに限って」是“偏偏是孩子／只限孩子”，和后面扩大到「大人にも」相反。",
+        "en": "「子どもに限って」 means \"children of all people\" or \"only children\", the opposite of widening to 「大人にも」."
       },
       {
         "zh": "「に伴い」表示伴随变化，“孩子”不是变化，意思不通。",
@@ -163,7 +163,7 @@
       "lesson46#2"
     ],
     "difficulty": 2,
-    "stem": "この 図書館は（　）、本の 種類も 多い。",
+    "stem": "この図書館は（　）、本の種類も多い。",
     "options": [
       "静かなだけでなく",
       "静かなのに",
@@ -171,7 +171,7 @@
       "静かなせいか"
     ],
     "answer": 0,
-    "full": "この 図書館は 静かなだけでなく、本の 種類も 多い。",
+    "full": "この図書館は静かなだけでなく、本の種類も多い。",
     "tr": {
       "zh": "这个图书馆不仅安静，书的种类也多。",
       "en": "This library isn't just quiet — it also has a wide range of books."
@@ -203,7 +203,7 @@
       "lesson46#2"
     ],
     "difficulty": 1,
-    "stem": "彼は 日本語 [_] [_] [★] [_] 話せる。",
+    "stem": "彼は日本語 [_] [_] [★] [_] 話せる。",
     "options": [
       "中国語",
       "だけで",
@@ -216,7 +216,7 @@
       0,
       2
     ],
-    "full": "彼は 日本語だけでなく 中国語も 話せる。",
+    "full": "彼は日本語だけでなく中国語も話せる。",
     "tr": {
       "zh": "他不仅会说日语，还会说中文。",
       "en": "He can speak not only Japanese but also Chinese."
@@ -239,15 +239,15 @@
       "lesson46#3"
     ],
     "difficulty": 1,
-    "stem": "この 映画は、子ども（　）、大人も 十分 楽しめる。",
+    "stem": "この映画は、子ども（　）、大人も十分楽しめる。",
     "options": [
       "はもちろん",
       "に伴い",
-      "上に",
+      "に限って",
       "にとって"
     ],
     "answer": 0,
-    "full": "この 映画は、子どもはもちろん、大人も 十分 楽しめる。",
+    "full": "この映画は、子どもはもちろん、大人も十分楽しめる。",
     "tr": {
       "zh": "这部电影，孩子自不必说，大人也能充分享受。",
       "en": "Children, of course, but adults too can really enjoy this film."
@@ -263,8 +263,8 @@
         "en": "「に伴い」 describes accompanying change; \"children\" isn't a change."
       },
       {
-        "zh": "名词接「上に」要用「である上に」，「子ども上に」不成立。",
-        "en": "A noun needs 「である上に」; 「子ども上に」 is ungrammatical."
+        "zh": "「子どもに限って」是“偏偏是孩子／只限孩子”，和后面「大人も」矛盾。",
+        "en": "「子どもに限って」 means \"children of all people\" or \"only children\", which contradicts 「大人も」."
       },
       {
         "zh": "「子どもにとって」是“对孩子来说”，后面却说「大人も楽しめる」，接不上。",
@@ -279,7 +279,7 @@
       "lesson46#3"
     ],
     "difficulty": 2,
-    "stem": "この 店の パンは、味（　）、見た目も きれいだ。",
+    "stem": "この店のパンは、味（　）、見た目もきれいだ。",
     "options": [
       "はもちろん",
       "をはじめ",
@@ -287,7 +287,7 @@
       "に伴って"
     ],
     "answer": 0,
-    "full": "この 店の パンは、味はもちろん、見た目も きれいだ。",
+    "full": "この店のパンは、味はもちろん、見た目もきれいだ。",
     "tr": {
       "zh": "这家店的面包，味道自不必说，外观也很漂亮。",
       "en": "This bakery's bread — the taste goes without saying, and it looks beautiful too."
@@ -319,7 +319,7 @@
       "lesson46#3"
     ],
     "difficulty": 1,
-    "stem": "この 店は 週末 [_] [_] [★] [_] 混んで いる。",
+    "stem": "この店は週末 [_] [_] [★] [_] 混んでいる。",
     "options": [
       "平日",
       "は",
@@ -332,7 +332,7 @@
       0,
       2
     ],
-    "full": "この 店は 週末は もちろん 平日も 混んで いる。",
+    "full": "この店は週末はもちろん平日も混んでいる。",
     "tr": {
       "zh": "这家店周末自不必说，平日也很挤。",
       "en": "This shop is crowded on weekends, of course, and on weekdays too."
@@ -355,15 +355,15 @@
       "lesson46#4"
     ],
     "difficulty": 1,
-    "stem": "社長（　）、多くの 社員が 式に 出席した。",
+    "stem": "社長（　）、多くの社員が式に出席した。",
     "options": [
       "をはじめ",
       "に比べて",
       "に伴い",
-      "上に"
+      "にとって"
     ],
     "answer": 0,
-    "full": "社長をはじめ、多くの 社員が 式に 出席した。",
+    "full": "社長をはじめ、多くの社員が式に出席した。",
     "tr": {
       "zh": "以社长为首，很多员工出席了仪式。",
       "en": "Many employees, led by the president, attended the ceremony."
@@ -383,8 +383,8 @@
         "en": "「に伴い」 describes accompanying change; \"the president\" isn't a change."
       },
       {
-        "zh": "名词接「上に」要用「である上に」，「社長上に」不成立。",
-        "en": "A noun needs 「である上に」; 「社長上に」 is ungrammatical."
+        "zh": "「社長にとって」是“对社长来说”，后面并不是社长的评价或感受。",
+        "en": "「社長にとって」 means \"for the president\", but what follows isn't the president's view or feeling."
       }
     ]
   },
@@ -395,7 +395,7 @@
       "lesson46#4"
     ],
     "difficulty": 2,
-    "stem": "この 大学には、中国（　）、アジアの 国々から 多くの 留学生が 来て いる。",
+    "stem": "この大学には、中国（　）、アジアの国々から多くの留学生が来ている。",
     "options": [
       "をはじめ",
       "について",
@@ -403,7 +403,7 @@
       "に限って"
     ],
     "answer": 0,
-    "full": "この 大学には、中国をはじめ、アジアの 国々から 多くの 留学生が 来て いる。",
+    "full": "この大学には、中国をはじめ、アジアの国々から多くの留学生が来ている。",
     "tr": {
       "zh": "这所大学有很多来自以中国为首的亚洲各国的留学生。",
       "en": "This university has many international students from Asian countries, China first among them."
@@ -435,7 +435,7 @@
       "lesson46#4"
     ],
     "difficulty": 2,
-    "stem": "会議には [_] [_] [_] [★]、多くの 関係者が 出席した。",
+    "stem": "会議には [_] [_] [_] [★]、多くの関係者が出席した。",
     "options": [
       "として",
       "を",
@@ -448,7 +448,7 @@
       3,
       0
     ],
-    "full": "会議には 大臣を はじめとして、多くの 関係者が 出席した。",
+    "full": "会議には大臣をはじめとして、多くの関係者が出席した。",
     "tr": {
       "zh": "以大臣为首，很多相关人员出席了会议。",
       "en": "Many people involved, including the minister, attended the meeting."
@@ -472,15 +472,15 @@
       "lesson46#5"
     ],
     "difficulty": 1,
-    "stem": "時代（　）、人々の 考え方も 変わって きた。",
+    "stem": "時代（　）、人々の考え方も変わってきた。",
     "options": [
       "とともに",
       "をはじめ",
-      "上に",
+      "に限って",
       "にとって"
     ],
     "answer": 0,
-    "full": "時代とともに、人々の 考え方も 変わって きた。",
+    "full": "時代とともに、人々の考え方も変わってきた。",
     "tr": {
       "zh": "随着时代变迁，人们的想法也变了。",
       "en": "People's ways of thinking have changed along with the times."
@@ -496,8 +496,8 @@
         "en": "「をはじめ」 names the leading member of a group; \"the times\" and \"ways of thinking\" aren't that relation."
       },
       {
-        "zh": "名词接「上に」要用「である上に」，而且这里不是叠加评价。",
-        "en": "A noun needs 「である上に」, and this isn't stacking evaluations."
+        "zh": "「時代に限って」是“偏偏那个时代”，和“想法跟着时代改变”意思不通。",
+        "en": "「時代に限って」 means \"of all times, that one\", which doesn't express thinking changing along with the times."
       },
       {
         "zh": "「時代にとって」是“对时代来说”，意思不通。",
@@ -512,15 +512,15 @@
       "lesson46#5"
     ],
     "difficulty": 2,
-    "stem": "新しい 年を 家族（　）迎えた。",
+    "stem": "新しい年を家族（　）迎えた。",
     "options": [
       "とともに",
       "に伴い",
       "をはじめ",
-      "上に"
+      "にとって"
     ],
     "answer": 0,
-    "full": "新しい 年を 家族とともに 迎えた。",
+    "full": "新しい年を家族とともに迎えた。",
     "tr": {
       "zh": "和家人一起迎来了新年。",
       "en": "I welcomed the New Year with my family."
@@ -540,8 +540,8 @@
         "en": "「をはじめ」 needs a group headed by A after it; there isn't one here."
       },
       {
-        "zh": "名词接「上に」要用「である上に」，而且“上に”不表示“一起”。",
-        "en": "A noun needs 「である上に」, and 「上に」 doesn't mean \"together with.\""
+        "zh": "「家族にとって」是“对家人来说”，后面「迎えた」是动作，不是评价，接不上。",
+        "en": "「家族にとって」 means \"for the family\"; 「迎えた」 is an action, not an evaluation, so it doesn't connect."
       }
     ]
   },
@@ -552,7 +552,7 @@
       "lesson46#5"
     ],
     "difficulty": 1,
-    "stem": "年を [_] [_] [_] [★] 落ちて きた。",
+    "stem": "年を [_] [_] [_] [★] 落ちてきた。",
     "options": [
       "体力が",
       "と",
@@ -565,7 +565,7 @@
       3,
       0
     ],
-    "full": "年を 取るとともに 体力が 落ちて きた。",
+    "full": "年を取るとともに体力が落ちてきた。",
     "tr": {
       "zh": "随着年龄增长，体力下降了。",
       "en": "As I've gotten older, my stamina has declined."
@@ -589,7 +589,7 @@
       "lesson46#6"
     ],
     "difficulty": 2,
-    "stem": "人口の 増加（　）、住宅問題が 深刻に なった。",
+    "stem": "人口の増加（　）、住宅問題が深刻になった。",
     "options": [
       "に伴い",
       "に比べ",
@@ -597,7 +597,7 @@
       "に代わり"
     ],
     "answer": 0,
-    "full": "人口の 増加に伴い、住宅問題が 深刻に なった。",
+    "full": "人口の増加に伴い、住宅問題が深刻になった。",
     "tr": {
       "zh": "伴随人口增加，住房问题变得严重了。",
       "en": "As the population grew, the housing problem became serious."
@@ -629,7 +629,7 @@
       "lesson46#6"
     ],
     "difficulty": 3,
-    "stem": "失業者の 増加は、景気の 悪化（　）問題の 一つだ。",
+    "stem": "失業者の増加は、景気の悪化（　）問題の一つだ。",
     "options": [
       "に伴う",
       "に伴い",
@@ -637,7 +637,7 @@
       "とともに"
     ],
     "answer": 0,
-    "full": "失業者の 増加は、景気の 悪化に伴う 問題の 一つだ。",
+    "full": "失業者の増加は、景気の悪化に伴う問題の一つだ。",
     "tr": {
       "zh": "失业者增加是伴随经济恶化而来的问题之一。",
       "en": "Rising unemployment is one of the problems that come with a worsening economy."
@@ -669,7 +669,7 @@
       "lesson46#6"
     ],
     "difficulty": 1,
-    "stem": "台風が [_] [_] [_] [★] 強く なって きた。",
+    "stem": "台風が [_] [_] [_] [★] 強くなってきた。",
     "options": [
       "風が",
       "に",
@@ -682,7 +682,7 @@
       3,
       0
     ],
-    "full": "台風が 接近するに 伴って 風が 強く なって きた。",
+    "full": "台風が接近するに伴って風が強くなってきた。",
     "tr": {
       "zh": "伴随台风接近，风越来越大了。",
       "en": "As the typhoon approached, the wind grew stronger."

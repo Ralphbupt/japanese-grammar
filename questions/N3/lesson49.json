@@ -6,7 +6,7 @@
       "lesson49#1"
     ],
     "difficulty": 1,
-    "stem": "昨日は とても 疲れて いて、電気を（　）まま 寝て しまった。",
+    "stem": "昨日はとても疲れていて、電気を（　）まま寝てしまった。",
     "options": [
       "つけた",
       "つける",
@@ -14,7 +14,7 @@
       "つけ"
     ],
     "answer": 0,
-    "full": "昨日は とても 疲れて いて、電気を つけた まま 寝て しまった。",
+    "full": "昨日はとても疲れていて、電気をつけたまま寝てしまった。",
     "tr": {
       "zh": "昨天太累了，开着灯就睡着了。",
       "en": "I was so tired yesterday that I fell asleep with the light on."
@@ -47,15 +47,15 @@
       "lesson49#3"
     ],
     "difficulty": 2,
-    "stem": "日本では、靴を 履いた（　）家に 上がっては いけない。",
+    "stem": "日本では、靴を履いた（　）家に上がってはいけない。",
     "options": [
       "まま",
-      "ずに",
-      "だらけで",
+      "とたん",
+      "ついでに",
       "っぱなしで"
     ],
     "answer": 0,
-    "full": "日本では、靴を 履いた まま 家に 上がっては いけない。",
+    "full": "日本では、靴を履いたまま家に上がってはいけない。",
     "tr": {
       "zh": "在日本，不能穿着鞋进屋。",
       "en": "In Japan, you mustn't go into a house with your shoes on."
@@ -67,12 +67,12 @@
     "wrong": [
       null,
       {
-        "zh": "「ずに」接ない形词干（履かずに），不接た形。",
-        "en": "「ずに」 follows the ない-stem (履かずに), not the た-form."
+        "zh": "「履いたとたん」是“刚一穿上就（发生了意外）”，后面不能接禁止「てはいけない」。",
+        "en": "「履いたとたん」 means \"the moment you put them on (something happened)\" and can't be followed by a prohibition."
       },
       {
-        "zh": "「だらけ」接名词，不接动词た形。",
-        "en": "「だらけ」 follows nouns, not a verb's た-form."
+        "zh": "「ついでに」是“顺便”，“顺便穿着鞋进屋”意思不通。",
+        "en": "「ついでに」 means \"while you're at it\"; \"entering the house while you're at it\" makes no sense."
       },
       {
         "zh": "「っぱなし」接ます形词干（履きっぱなし），不接た形。",
@@ -87,7 +87,7 @@
       "lesson49#1"
     ],
     "difficulty": 2,
-    "stem": "窓を [_] [★] [_] [_] 、部屋に 虫が たくさん 入って いた。",
+    "stem": "窓を [_] [★] [_] [_] 、部屋に虫がたくさん入っていた。",
     "options": [
       "いたら",
       "開けた",
@@ -100,7 +100,7 @@
       2,
       0
     ],
-    "full": "窓を 開けた まま 出かけて いたら、部屋に 虫が たくさん 入って いた。",
+    "full": "窓を開けたまま出かけていたら、部屋に虫がたくさん入っていた。",
     "tr": {
       "zh": "开着窗户出门，结果房间里进了很多虫子。",
       "en": "I'd gone out leaving the window open, and lots of bugs had got into the room."
@@ -123,15 +123,15 @@
       "lesson49#2"
     ],
     "difficulty": 1,
-    "stem": "子どもは 公園で 遊んで、服が 泥（　）に なって 帰って きた。",
+    "stem": "子どもは公園で遊んで、服が泥（　）になって帰ってきた。",
     "options": [
       "だらけ",
       "まま",
-      "っぱなし",
-      "ずに"
+      "ずくめ",
+      "気味"
     ],
     "answer": 0,
-    "full": "子どもは 公園で 遊んで、服が 泥だらけに なって 帰って きた。",
+    "full": "子どもは公園で遊んで、服が泥だらけになって帰ってきた。",
     "tr": {
       "zh": "孩子在公园玩，弄得满身是泥回来了。",
       "en": "The kids played in the park and came home with their clothes covered in mud."
@@ -147,12 +147,12 @@
         "en": "「まま」 needs 「の」 after a noun, and \"remaining as is\" doesn't fit."
       },
       {
-        "zh": "「っぱなし」接动词ます形词干，不接名词。",
-        "en": "「っぱなし」 follows a verb's ます-stem, not a noun."
+        "zh": "「ずくめ」说从头到脚全是同一类东西（「黒ずくめ」「いいことずくめ」），不用来说沾满了泥。",
+        "en": "「ずくめ」 means everything is one kind of thing (「黒ずくめ」 all in black, 「いいことずくめ」 nothing but good things); it isn't used for being covered in mud."
       },
       {
-        "zh": "「ずに」接动词ない形词干，不接名词。",
-        "en": "「ずに」 follows a verb's ない-stem, not a noun."
+        "zh": "「気味」是“有点……”（「風邪気味」），「泥気味」不说。",
+        "en": "「気味」 means \"a bit…\" (「風邪気味」); 「泥気味」 isn't said."
       }
     ]
   },
@@ -163,7 +163,7 @@
       "lesson49#2"
     ],
     "difficulty": 2,
-    "stem": "この 報告書は 間違い（　）なので、もう 一度 書き直して ください。",
+    "stem": "この報告書は間違い（　）なので、もう一度書き直してください。",
     "options": [
       "だらけ",
       "まみれ",
@@ -171,7 +171,7 @@
       "っぱなし"
     ],
     "answer": 0,
-    "full": "この 報告書は 間違いだらけ なので、もう 一度 書き直して ください。",
+    "full": "この報告書は間違いだらけなので、もう一度書き直してください。",
     "tr": {
       "zh": "这份报告全是错误，请再重写一遍。",
       "en": "This report is full of mistakes, so please rewrite it."
@@ -208,7 +208,7 @@
       "段ボール",
       "だらけだ",
       "ばかりで",
-      "部屋の 中が"
+      "部屋の中が"
     ],
     "order": [
       2,
@@ -216,7 +216,7 @@
       0,
       1
     ],
-    "full": "引っ越した ばかりで 部屋の 中が 段ボールだらけだ。",
+    "full": "引っ越したばかりで部屋の中が段ボールだらけだ。",
     "tr": {
       "zh": "刚搬家，房间里全是纸箱。",
       "en": "I've just moved, so the room is full of cardboard boxes."
@@ -239,15 +239,15 @@
       "lesson49#3"
     ],
     "difficulty": 1,
-    "stem": "歯を みがく 間、水を 出し（　）に しないで ください。",
+    "stem": "歯をみがく間、水を出し（　）にしないでください。",
     "options": [
       "っぱなし",
       "まま",
-      "だらけ",
-      "ずに"
+      "かけ",
+      "がち"
     ],
     "answer": 0,
-    "full": "歯を みがく 間、水を 出しっぱなしに しないで ください。",
+    "full": "歯をみがく間、水を出しっぱなしにしないでください。",
     "tr": {
       "zh": "刷牙的时候，请不要一直开着水龙头。",
       "en": "Please don't leave the water running while you brush your teeth."
@@ -263,12 +263,12 @@
         "en": "「まま」 needs the た-form (出したまま), not the ます-stem."
       },
       {
-        "zh": "「だらけ」接名词，不接动词。",
-        "en": "「だらけ」 follows nouns, not verbs."
+        "zh": "「出しかけ」是“开到一半”，「出しかけにしない」意思不通。",
+        "en": "「出しかけ」 means \"half turned on\"; 「出しかけにしない」 makes no sense."
       },
       {
-        "zh": "「ずに」接ない形词干（出さずに），而且“不要不放水”意思不通。",
-        "en": "「ずに」 follows the ない-stem (出さずに), and the meaning wouldn't fit anyway."
+        "zh": "「がち」是“容易……”的倾向，后面不接「にする」，“不要容易放水”也说不通。",
+        "en": "「がち」 is a tendency (\"tends to…\"); it doesn't take 「にする」, and \"don't tend to run the water\" makes no sense."
       }
     ]
   },
@@ -279,15 +279,15 @@
       "lesson49#3"
     ],
     "difficulty": 2,
-    "stem": "今日は 満員電車で 二時間 立ち（　）だったので、足が とても 痛い。",
+    "stem": "今日は満員電車で二時間立ち（　）だったので、足がとても痛い。",
     "options": [
       "っぱなし",
       "まま",
-      "だらけ",
+      "がち",
       "ながら"
     ],
     "answer": 0,
-    "full": "今日は 満員電車で 二時間 立ちっぱなしだったので、足が とても 痛い。",
+    "full": "今日は満員電車で二時間立ちっぱなしだったので、足がとても痛い。",
     "tr": {
       "zh": "今天在满员电车上一直站了两个小时，脚特别疼。",
       "en": "I had to stand the whole two hours on a packed train today, so my feet really hurt."
@@ -303,8 +303,8 @@
         "en": "「まま」 needs the た-form (立ったまま), not the ます-stem."
       },
       {
-        "zh": "「だらけ」接名词，不接动词。",
-        "en": "「だらけ」 follows nouns, not verbs."
+        "zh": "「がち」是反复的倾向，“两小时容易站着”说不通。",
+        "en": "「がち」 is a repeated tendency; \"tended to stand for two hours\" makes no sense for one ride."
       },
       {
         "zh": "「ながら」表示同时做两件事，后面不能直接接「だった」结句。",
@@ -319,7 +319,7 @@
       "lesson49#3"
     ],
     "difficulty": 1,
-    "stem": "昨夜は [★] [_] [_] [_] 寝て しまった。",
+    "stem": "昨夜は [★] [_] [_] [_] 寝てしまった。",
     "options": [
       "で",
       "テレビを",
@@ -332,7 +332,7 @@
       2,
       0
     ],
-    "full": "昨夜は テレビを つけっぱなしで 寝て しまった。",
+    "full": "昨夜はテレビをつけっぱなしで寝てしまった。",
     "tr": {
       "zh": "昨晚开着电视就睡着了。",
       "en": "Last night I fell asleep with the TV left on."
@@ -355,7 +355,7 @@
       "lesson49#4"
     ],
     "difficulty": 1,
-    "stem": "彼は 予習を（　）授業に 出て、先生の 質問に 答えられなかった。",
+    "stem": "彼は予習を（　）授業に出て、先生の質問に答えられなかった。",
     "options": [
       "せずに",
       "したまま",
@@ -363,7 +363,7 @@
       "したついでに"
     ],
     "answer": 0,
-    "full": "彼は 予習を せずに 授業に 出て、先生の 質問に 答えられなかった。",
+    "full": "彼は予習をせずに授業に出て、先生の質問に答えられなかった。",
     "tr": {
       "zh": "他没预习就去上课，回答不了老师的问题。",
       "en": "He went to class without preparing and couldn't answer the teacher's question."
@@ -395,7 +395,7 @@
       "lesson49#4"
     ],
     "difficulty": 2,
-    "stem": "傘を（　）出かけたら、途中で 雨に 降られて しまった。",
+    "stem": "傘を（　）出かけたら、途中で雨に降られてしまった。",
     "options": [
       "持たずに",
       "持たなくて",
@@ -403,7 +403,7 @@
       "持ちっぱなしで"
     ],
     "answer": 0,
-    "full": "傘を 持たずに 出かけたら、途中で 雨に 降られて しまった。",
+    "full": "傘を持たずに出かけたら、途中で雨に降られてしまった。",
     "tr": {
       "zh": "没带伞就出门，结果半路被雨淋了。",
       "en": "I went out without an umbrella and got caught in the rain on the way."
@@ -435,7 +435,7 @@
       "lesson49#4"
     ],
     "difficulty": 2,
-    "stem": "日本語の 新聞を [_] [_] [★] [_] ように なりたい。",
+    "stem": "日本語の新聞を [_] [_] [★] [_] ようになりたい。",
     "options": [
       "ずに",
       "辞書を",
@@ -448,7 +448,7 @@
       0,
       2
     ],
-    "full": "日本語の 新聞を 辞書を 使わずに 読めるように なりたい。",
+    "full": "日本語の新聞を辞書を使わずに読めるようになりたい。",
     "tr": {
       "zh": "我希望能不用词典读懂日语报纸。",
       "en": "I want to be able to read Japanese newspapers without a dictionary."
@@ -471,15 +471,15 @@
       "lesson49#5"
     ],
     "difficulty": 2,
-    "stem": "あの 人は 若い（　）けど、実は もう 五十歳だ そうだ。",
+    "stem": "あの人は若い（　）けど、実はもう五十歳だそうだ。",
     "options": [
       "ように見える",
       "そうに見える",
       "ようにする",
-      "ように なる"
+      "ようになる"
     ],
     "answer": 0,
-    "full": "あの 人は 若いように見えるけど、実は もう 五十歳だ そうだ。",
+    "full": "あの人は若いように見えるけど、実はもう五十歳だそうだ。",
     "tr": {
       "zh": "那个人看起来很年轻，听说其实已经五十岁了。",
       "en": "That person looks young, but apparently they're already fifty."
@@ -511,7 +511,7 @@
       "lesson49#5"
     ],
     "difficulty": 1,
-    "stem": "この 絵は 本物の 写真（　）見える ほど、細かく 描かれて いる。",
+    "stem": "この絵は本物の写真（　）見えるほど、細かく描かれている。",
     "options": [
       "のように",
       "として",
@@ -519,7 +519,7 @@
       "のために"
     ],
     "answer": 0,
-    "full": "この 絵は 本物の 写真のように 見える ほど、細かく 描かれて いる。",
+    "full": "この絵は本物の写真のように見えるほど、細かく描かれている。",
     "tr": {
       "zh": "这幅画画得非常细致，看起来就像真的照片一样。",
       "en": "This painting is so detailed it looks like a real photograph."
@@ -551,7 +551,7 @@
       "lesson49#5"
     ],
     "difficulty": 2,
-    "stem": "彼は [_] [★] [_] [_] 、実は 大きな 悩みを 抱えて いる らしい。",
+    "stem": "彼は [_] [★] [_] [_] 、実は大きな悩みを抱えているらしい。",
     "options": [
       "見えるが",
       "な",
@@ -564,7 +564,7 @@
       3,
       0
     ],
-    "full": "彼は 幸せな ように 見えるが、実は 大きな 悩みを 抱えて いる らしい。",
+    "full": "彼は幸せなように見えるが、実は大きな悩みを抱えているらしい。",
     "tr": {
       "zh": "他看起来很幸福，但好像其实有很大的烦恼。",
       "en": "He looks happy, but apparently he's actually carrying a big worry."

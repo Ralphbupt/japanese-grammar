@@ -253,37 +253,38 @@
   },
   {
     "id": "n2-mg-308",
+    "rev": 2,
     "type": "bunmyaku",
     "difficulty": 1,
-    "stem": "急に用事ができたので、ホテルの予約を（　）した。",
+    "stem": "原材料の値上がりで、製品一つあたりの（　）が大きく増えた。",
     "options": [
-      "キャンセル",
-      "リフォーム",
-      "リサイクル",
-      "リハーサル"
+      "コスト",
+      "ノウハウ",
+      "キャリア",
+      "ブーム"
     ],
     "answer": 0,
     "tr": {
-      "zh": "突然有事，所以取消了酒店的预订。",
-      "en": "Something came up suddenly, so I cancelled the hotel booking."
+      "zh": "由于原材料涨价，每件产品的成本大幅增加。",
+      "en": "With raw materials getting pricier, the cost per product has risen sharply."
     },
     "why": {
-      "zh": "线索：「急に用事ができた」「ホテルの予約を」——有事去不了，就取消预订。\n词义：「キャンセル」＝取消（预订、订单、约定），常说「予約をキャンセルする」「キャンセル待ち」（等别人退订）。",
-      "en": "Clue: 「急に用事ができた」 with 「ホテルの予約を」 — you can't go, so the booking is called off.\nMeaning: 「キャンセル」 is cancelling a booking, order or appointment: 「予約をキャンセルする」, 「キャンセル待ち」 (waiting list for cancellations)."
+      "zh": "线索：「原材料の値上がり」「製品一つあたり」——涨价后每件产品增加的是成本。\n词义：「コスト」＝成本、费用，常说「コストがかかる」「コストを削減する」。",
+      "en": "Clue: 「原材料の値上がり」 and 「製品一つあたり」 — what rises per product is the cost.\nMeaning: 「コスト」 is cost: 「コストがかかる」, 「コストを削減する」."
     },
     "wrong": [
       null,
       {
-        "zh": "「リフォーム」是装修房子，预订不能装修。",
-        "en": "「リフォーム」 is renovating a home; you can't renovate a booking."
+        "zh": "「ノウハウ」是技术诀窍，不会因原材料涨价而“增加”。",
+        "en": "「ノウハウ」 is know-how; it doesn't go up with material prices."
       },
       {
-        "zh": "「リサイクル」是回收再利用，和预订无关。",
-        "en": "「リサイクル」 is recycling — unrelated to a booking."
+        "zh": "「キャリア」是职业经历，和产品单价无关。",
+        "en": "「キャリア」 is a career; it has nothing to do with unit costs."
       },
       {
-        "zh": "「リハーサル」是彩排，不能“彩排预订”。",
-        "en": "「リハーサル」 is a rehearsal; a booking isn't rehearsed."
+        "zh": "「ブーム」是一时的流行，不说“每件产品的流行”。",
+        "en": "「ブーム」 is a craze; there's no \"craze per product\"."
       }
     ]
   },
@@ -1762,28 +1763,29 @@
   },
   {
     "id": "n2-mg-348",
+    "rev": 2,
     "type": "bunmyaku",
     "difficulty": 1,
-    "stem": "（　）して、傘を電車の中に忘れてきてしまった。",
+    "stem": "早く治そうと薬を多めに飲んだら、（　）具合が悪くなってしまった。",
     "options": [
       "じっくり",
-      "うっかり",
+      "かえって",
       "ぐっすり",
       "すっきり"
     ],
     "answer": 1,
     "tr": {
-      "zh": "一不留神，把伞忘在电车上了。",
-      "en": "I absent-mindedly left my umbrella on the train."
+      "zh": "想快点好，就多吃了些药，结果反而更难受了。",
+      "en": "I took extra medicine to get better faster, and it only made me feel worse."
     },
     "why": {
-      "zh": "线索：「傘を電車の中に忘れてきてしまった」——不是故意的，一时没注意。\n词义：「うっかり」＝不留神、一不小心，常说「うっかり忘れる」「うっかりミス」。",
-      "en": "Clue: 「傘を電車の中に忘れてきてしまった」 — not on purpose, just a lapse.\nMeaning: 「うっかり」 is carelessly, absent-mindedly: 「うっかり忘れる」, 「うっかりミス」 (a careless slip)."
+      "zh": "线索：本想「早く治そう」，结果却「具合が悪くなって」，结果和期待相反。\n词义：「かえって」＝反而，结果与预期相反，常说「かえって逆効果だ」「かえって迷惑をかける」。",
+      "en": "Clue: the aim was 「早く治そう」, but the result was 「具合が悪くなって」 — the opposite of what was expected.\nMeaning: 「かえって」 is on the contrary, instead: 「かえって逆効果だ」, 「かえって迷惑をかける」."
     },
     "wrong": [
       {
-        "zh": "「じっくり」是仔细、慢慢地，与忘东西相反。",
-        "en": "「じっくり」 is carefully, the opposite of forgetting things."
+        "zh": "「じっくり」是仔细、慢慢地，不表示结果相反。",
+        "en": "「じっくり」 is carefully, taking time; it doesn't mark an opposite result."
       },
       null,
       {
@@ -1791,8 +1793,8 @@
         "en": "「ぐっすり」 is sleeping soundly."
       },
       {
-        "zh": "「すっきり」是清爽、舒畅。",
-        "en": "「すっきり」 is feeling refreshed."
+        "zh": "「すっきり」是清爽、舒畅，和「具合が悪くなる」意思相反。",
+        "en": "「すっきり」 is feeling refreshed, the opposite of feeling worse."
       }
     ]
   },
@@ -2410,37 +2412,38 @@
   },
   {
     "id": "n2-mg-366",
+    "rev": 2,
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "先日お宅に伺いましたが、（　）お留守でした。",
+    "stem": "試験まで一週間しかないので、毎日（　）問題集を解き続けている。",
     "options": [
-      "あいにく",
+      "ひたすら",
       "せっかく",
       "いよいよ",
       "わざわざ"
     ],
     "answer": 0,
     "tr": {
-      "zh": "前几天去府上拜访，不巧您不在家。",
-      "en": "I called at your home the other day, but unfortunately you were out."
+      "zh": "离考试只剩一周，所以每天一门心思地做习题集。",
+      "en": "With only a week until the exam, I spend every day doing nothing but practice problems."
     },
     "why": {
-      "zh": "线索：「伺いましたが」「お留守でした」——去拜访了，不巧对方不在。\n词义：「あいにく」＝不凑巧、偏偏（与期望相反），常说「あいにくの雨」「あいにく今日は休みです」。",
-      "en": "Clue: 「伺いましたが」 with 「お留守でした」 — you called, but as luck would have it they were out.\nMeaning: 「あいにく」 is unfortunately, as bad luck would have it: 「あいにくの雨」, 「あいにく今日は休みです」."
+      "zh": "线索：「一週間しかない」「毎日」「解き続けている」——一心一意、不停地做同一件事。\n词义：「ひたすら」＝一心一意、只顾，常说「ひたすら練習する」「ひたすら謝る」。",
+      "en": "Clue: 「一週間しかない」, 「毎日」, 「解き続けている」 — doing one thing single-mindedly, nonstop.\nMeaning: 「ひたすら」 is single-mindedly, nothing but: 「ひたすら練習する」, 「ひたすら謝る」."
     },
     "wrong": [
       null,
       {
-        "zh": "「せっかく」后面要接「〜のに」等，不能直接修饰「お留守でした」。",
-        "en": "「せっかく」 needs 「〜のに」 etc.; it can't go straight onto 「お留守でした」."
+        "zh": "「せっかく」是“特意、难得”，后面多接「のに」「から」，不修饰持续的努力。",
+        "en": "「せっかく」 is \"having gone to the trouble\", usually with 「のに」 or 「から」, not a nonstop effort."
       },
       {
-        "zh": "「いよいよ」是“终于、越发”，不合语境。",
-        "en": "「いよいよ」 is 'at last, more and more', which doesn't fit."
+        "zh": "「いよいよ」是“终于（到了）”，不接「毎日〜続けている」这种反复动作。",
+        "en": "「いよいよ」 is \"at last (it's here)\"; it doesn't fit a daily, repeated action."
       },
       {
-        "zh": "「わざわざ」修饰的是去拜访的人，不能修饰“对方不在”。",
-        "en": "「わざわざ」 is about the visitor's effort, not the other person being out."
+        "zh": "「わざわざ」是“特地（费事去做）”，自己的日常复习不说「わざわざ」。",
+        "en": "「わざわざ」 is \"going out of one's way\"; one's own daily study isn't described that way."
       }
     ]
   },

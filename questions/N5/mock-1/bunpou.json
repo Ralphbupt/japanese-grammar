@@ -42,13 +42,13 @@
   },
   {
     "id": "n5-m1-102",
-    "rev": 2,
+    "rev": 3,
     "type": "bunpou",
     "refs": [
       "lesson16#1"
     ],
     "difficulty": 2,
-    "stem": "A「きのうの よる、だれか 来ましたか。」\nB「いいえ、だれ（　） 来ませんでした。ひとりで 本を 読んで いました。」",
+    "stem": "A「さっき、へやに だれか いましたか。」\nB「いいえ、だれ（　） いませんでした。わたしは ずっと にわに いました。」",
     "options": [
       "も",
       "に",
@@ -56,25 +56,25 @@
       "が"
     ],
     "answer": 0,
-    "full": "A「きのうの よる、だれか 来ましたか。」 B「いいえ、だれも 来ませんでした。ひとりで 本を 読んで いました。」",
-    "kj": "A「昨日の夜、だれか来ましたか。」\nB「いいえ、だれも来ませんでした。一人で本を読んでいました。」",
+    "full": "A「さっき、へやに だれか いましたか。」 B「いいえ、だれも いませんでした。わたしは ずっと にわに いました。」",
+    "kj": "A「さっき、部屋にだれかいましたか。」\nB「いいえ、だれもいませんでした。私はずっと庭にいました。」",
     "tr": {
-      "zh": "A：昨天晚上有谁来过吗？ B：没有，谁也没来。我一个人在看书。",
-      "en": "A: Did anyone come over last night? B: No, nobody came. I was reading a book by myself."
+      "zh": "A：刚才房间里有人吗？ B：没有，谁也不在。我一直在院子里。",
+      "en": "A: Was anyone in the room just now? B: No, nobody was there. I was in the garden the whole time."
     },
     "why": {
-      "zh": "线索：A 问「だれか 来ましたか」，B 回答「いいえ」，动词是否定的「来ませんでした」，后面又说自己一个人在看书。\n规则：疑问词＋「も」＋否定＝全部否定：「だれも 来ない」（谁也没来）。问“有没有人”用「だれか」，回答“没有人”换成「だれも」。",
-      "en": "Clue: A asks 「だれか 来ましたか」, B answers 「いいえ」 with the negative verb 「来ませんでした」, then says they were reading alone.\nRule: Question word ＋ 「も」 ＋ negative = none at all: 「だれも 来ない」 (nobody came). \"Did anyone …?\" uses 「だれか」; the answer \"nobody\" switches to 「だれも」."
+      "zh": "线索：A 问「だれか いましたか」，B 回答「いいえ」，动词是否定的「いませんでした」。\n规则：疑问词＋「も」＋否定＝全部否定：「だれも いない」（谁也不在）。问“有没有人”用「だれか」，回答“没有人”换成「だれも」。",
+      "en": "Clue: A asks 「だれか いましたか」, and B answers 「いいえ」 with the negative verb 「いませんでした」.\nRule: Question word ＋ 「も」 ＋ negative = none at all: 「だれも いない」 (nobody is there). \"Did anyone …?\" uses 「だれか」; the answer \"nobody\" switches to 「だれも」."
     },
     "wrong": [
       null,
       {
-        "zh": "「だれに 来ませんでした」不成立：来的人是主语，不用「に」标。",
-        "en": "「だれに 来ませんでした」 isn't Japanese: the person who comes is the subject, not marked with 「に」."
+        "zh": "「だれに いませんでした」不成立：在那里的人是主语，不用「に」标。",
+        "en": "「だれに いませんでした」 isn't Japanese: the person who is there is the subject, not marked with 「に」."
       },
       {
-        "zh": "「だれでも」是“谁都（可以）”，和后面的否定「来ませんでした」矛盾。",
-        "en": "「だれでも」 means \"anyone at all\" — it contradicts the negative 「来ませんでした」."
+        "zh": "「だれでも」是“谁都（可以）”，和后面的否定「いませんでした」矛盾。",
+        "en": "「だれでも」 means \"anyone at all\" — it contradicts the negative 「いませんでした」."
       },
       {
         "zh": "「だれが」是在问“谁”，句末要用「か」提问；B 是在回答，不是提问。",
