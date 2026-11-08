@@ -113,7 +113,7 @@ self.addEventListener('fetch', function (e) {
   var url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
 
-  if (/^\/audio\/(s|choukai\/c)[0-9a-f]+\.mp3$/.test(url.pathname)) e.respondWith(audio(e));
+  if (/^\/audio\/(s|q|p|choukai\/c)[0-9a-f]+\.mp3$/.test(url.pathname)) e.respondWith(audio(e));
   else if (/\.(js|json)$/.test(url.pathname) && url.searchParams.has('v')) e.respondWith(cacheFirst(e, ASSETS));
   else if (url.pathname === '/search-index.json') e.respondWith(staleWhileRevalidate(e, ASSETS));
   else if (req.mode === 'navigate') e.respondWith(page(e));

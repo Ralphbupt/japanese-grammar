@@ -1182,6 +1182,17 @@ const ROMAJI_FIXES = [
   [/\bkano you\b/g, "ka no you"], [/\bo sore\b/g, "osore"], [/\bni kui\b/g, "nikui"],
   [/\bbetsuni\b/g, "betsu ni"], [/\bsorenishitemo\b/g, "sore ni shite mo"], [/\bsorenanoni\b/g, "sore na no ni"],
   [/datsuta/g, "datta"], // the converter spells out the っ of だった
+  // 2026-11-09 audit of every heading's romaji (kuromoji splits or misreads these):
+  [/\(yo\) u(?= |$)/g, "(y)ou"], [/\(yo\) uto\b/g, "(y)ou to"], [/\(yo\) uni\b/g, "(y)ou ni"],
+  [/\bzuku me\b/g, "zukume"], [/\bga tera\b/g, "gatera"], [/~tabakari\b/g, "~ta bakari"],
+  [/\bteka ra\b/g, "te kara"], [/\btomo a rousha\b/g, "tomo arou mono"], [/\btari to mo\b/g, "taritomo"],
+  [/\bni kotae/g, "ni tae"], [/\bsa seru\b/g, "saseru"], [/\bbekara zaru\b/g, "bekarazaru"],
+  [/\bittaranai\b/g, "ittara nai"], [/\bnai demonai\b/g, "nai de mo nai"], [/\bshita tte\b/g, "shitatte"],
+  [/\( /g, "("], [/ \)/g, ")"], [/\btosureba\b/g, "to sureba"], [/\bto mo naru\b/g, "tomo naru"],
+  [/\bnara dewa\b/g, "nara de wa"], [/(^|[~ ])e nai\b/g, "$1enai"], [/\bkinji e nai\b/g, "kinji enai"],
+  [/\bkoto to te\b/g, "koto tote"], [/~touri\b/g, "~toori"], [/\bsouinai\b/g, "soui nai"],
+  [/\btomo nak/g, "tomonak"], [/\btomo nashi\b/g, "tomonashi"],
+  [/\b(\w*e) ba\b/g, "$1ba"], // conditional: sureba, ieba, areba, nakereba
 ];
 async function romajiOf(kuro, ja) {
   ja = ja.replace(/[一-鿿]+（([ぁ-ゟ]{2,})）/g, "$1");
@@ -1252,6 +1263,10 @@ async function furiganaText(kuro, text) {
 // surrounding plain text all match; `before`/`after` see the text with tags
 // and readings stripped, so a neighbouring ruby reads as its bare kanji.
 const RUBY_FIXES = [
+  // ── Lesson review (2026-11-09) ──
+  { kanji: "長", from: /^た$/, after: /^ければ/, to: "なが" },                    // 長ければ (kuromoji: 長けれ)
+  { kanji: "愛", from: /^め$/, after: /^で/, to: "あい" },                       // 母の愛でなくて (not 愛でる)
+  { kanji: "堪", from: /^こた$/, to: "た" },                                     // 堪える on this site is always たえる
   // ── Mock tests 2 (2026-11-08): readings Gemini flagged in context ──
   { kanji: "分", from: /^ぶん$/, before: /[二五九]\s*$/, to: "ふん" },              // 五分 = ごふん
   { kanji: "間", from: /^(ま|かん)$/, before: /(その|この)\s*$/, after: /^\s*[、,]?\s*(私|わたし|僕|ぼく|連絡|に|は|、)/, to: "あいだ" },
@@ -2498,8 +2513,11 @@ async function main() {
     var mt = document.getElementById('m-title'), head = sidebar.querySelector('.nav-header a');
     var lvl = activeWrap && activeWrap.getAttribute('data-level');
     if (item) {
-      var label = item.textContent.replace(/\\s+/g, ' ').trim().replace(/^(\\d+)(?=\\S)/, '$1 ');
-      mt.textContent = (lvl && label.indexOf(lvl) !== 0 ? lvl + ' · ' : '') + label;
+      // Only this page's language: the item holds a lang-zh and a lang-en span.
+      var fl = document.documentElement.getAttribute('data-force-lang');
+      var span = fl && item.querySelector('.lang-' + fl);
+      var label = (span || item).textContent.replace(/\\s+/g, ' ').trim().replace(/^(\\d+)(?=\\S)/, '$1 ');
+      mt.textContent = (lvl && /^N[1-5]$/.test(lvl) && label.indexOf(lvl) !== 0 ? lvl + ' · ' : '') + label;
       var over = activeWrap && activeWrap.querySelector('a[href]');
       mt.href = over && over !== item ? over.getAttribute('href') : (head ? head.getAttribute('href') : mt.href);
     } else if (head) { mt.innerHTML = head.innerHTML; mt.href = head.getAttribute('href'); }
@@ -2679,7 +2697,7 @@ ${SETTINGS_SCRIPT}`;
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Japanese Grammar Notes | 日语语法笔记 – N5→N1">
-<meta property="og:description" content="Free JLPT N5–N1 Japanese grammar lessons with conjugation rules, example sentences with audio, comparisons and Anki decks.">
+<meta property="og:description" content="Free JLPT N5–N1 practice questions, listening with audio, timed mock tests and grammar lessons. Every answer explained, no sign-up.">
 <meta property="og:url" content="${SITE}">
 <meta property="og:image" content="${SITE}og-image.png">
 <meta property="og:image:width" content="1200">
@@ -2690,7 +2708,7 @@ ${SETTINGS_SCRIPT}`;
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Japanese Grammar Notes | 日语语法笔记 – N5→N1">
-<meta name="twitter:description" content="Free JLPT N5–N1 Japanese grammar lessons with examples, audio, comparisons and Anki decks.">
+<meta name="twitter:description" content="Free JLPT N5–N1 practice questions, listening, mock tests and grammar lessons. Every answer explained.">
 <meta name="twitter:image" content="${SITE}og-image.png">
 
 <!-- Structured Data -->
@@ -4433,12 +4451,12 @@ ${rssItems.join("\n")}
 
   fs.writeFileSync(path.join(__dirname, "dist/llms.txt"), `# Japanese Grammar Notes / 日语语法笔记
 
-> jpnotes.dev is a free site for learning Japanese grammar for the JLPT, N5 to N1: ${totalLessons} lessons and ${totalPoints}+ grammar points, each with how it attaches, what it means, example sentences with furigana and audio, and how it differs from look-alike patterns — plus practice questions, timed mock tests and grammar flashcards. English pages at ${SITE}, Chinese at ${SITE}zh/.
+> jpnotes.dev is a free site for learning Japanese grammar for the JLPT, N5 to N1: ${totalLessons} lessons and ${totalPoints}+ grammar points, each with how it attaches, what it means, example sentences with furigana and audio, and how it differs from look-alike patterns — plus practice questions, timed mock tests and grammar flashcards. English pages at ${SITE}; Chinese copies of each page under ${SITE}zh/ (for example ${SITE}zh/practice/ or ${SITE}zh/n2-listening/).
 
 Key facts:
 - Free, no ads, no sign-up; progress (review checklists, practice history) stays in the browser.
 - Lessons: N5 (lessons 0–17), N4 (18–34), N3 (35–58), N2 (59–75), N1 (76–92). Every example sentence has furigana and a 🔊 recording.
-- Practice: ${Object.entries(quizBundles).map(([l, b]) => `${l} ${b.practice.questions.length}`).join(", ")} exam-style questions covering every JLPT item type, listening included, each option explained; a review list brings back missed questions. One timed mock test per level with an estimated score against the pass marks. Listening questions (recording, then a transcript with translation): ${ckLevels.length ? ckLevels.join(", ") + " so far" : "not built yet"}.
+- Practice: ${Object.entries(quizBundles).map(([l, b]) => `${l} ${b.practice.questions.length}`).join(", ")} exam-style questions covering every JLPT item type, listening included, each option explained; a review list brings back missed questions. Timed full mock tests (${Object.entries(quizBundles).map(([l, b]) => `${l} ${b.mocks.length}`).join(", ")}), structured like the real test, with an estimated score against the pass marks. Listening questions (recording, then a transcript with translation): ${ckLevels.length ? ckLevels.join(", ") + " so far" : "not built yet"}.
 - Ask AI: a side panel on every lesson and after every practice question answers questions about that page; free without setup, or with the reader's own API key (kept in the browser).
 - Anki decks (.apkg with audio, and TSV) per level at ${SITE}anki/.
 
@@ -4512,25 +4530,48 @@ Each \`/lessonNN/\` page contains:
     ]
   }, null, 2), "utf-8");
 
+  // 404: first try to fix the URL (AI tools and people type /n2/ for /N2/, or
+  // /zh/ for the Chinese home), then offer the pages readers actually look for.
   fs.writeFileSync(path.join(__dirname, "dist/404.html"), `<!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>404 – 日语语法笔记</title>
+<meta name="robots" content="noindex">
+<title>Page not found – jpnotes.dev</title>
+<script>
+(function() {
+  var p = location.pathname, q = location.search + location.hash;
+  if (/^\/zh\/?$/.test(p)) {
+    try { var pr = JSON.parse(localStorage.getItem('jp_grammar_prefs')) || {}; pr.isEn = false; localStorage.setItem('jp_grammar_prefs', JSON.stringify(pr)); } catch (e) {}
+    return location.replace('${SITE_PATH}' + q);
+  }
+  // Level overviews are /N1/…/N5/ (also under /zh/); every other path is lower case.
+  var fixed = p.toLowerCase().replace(/^(\/zh)?\/n([1-5])(\/|$)/, '$1/N$2$3');
+  if (!/\/$/.test(fixed) && !/\.[a-z0-9]+$/.test(fixed)) fixed += '/';
+  if (fixed !== p) location.replace(fixed + q);
+})();
+</script>
 <style>
-  body { font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; background: #fafaf8; color: #333; }
-  .box { text-align: center; }
-  h1 { font-size: 4rem; margin: 0; }
-  p { font-size: 1.2rem; margin: 1rem 0; }
-  a { color: #e94560; text-decoration: none; }
+  body { font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 0 16px; background: #fafaf8; color: #333; }
+  @media (prefers-color-scheme: dark) { body { background: #16161d; color: #ddd; } }
+  .box { text-align: center; max-width: 30rem; }
+  h1 { font-size: 3.5rem; margin: 0; }
+  p { font-size: 1.1rem; margin: .8rem 0; }
+  ul { list-style: none; padding: 0; margin: 1.2rem 0 0; line-height: 2; }
+  a { color: #c0303f; text-decoration: none; }
+  @media (prefers-color-scheme: dark) { a { color: #e94560; } }
 </style>
 </head>
 <body>
 <div class="box">
   <h1>404</h1>
-  <p>ページが見つかりません</p>
-  <a href="${SITE_PATH}">← ホームに戻る</a>
+  <p>Page not found · 页面不存在</p>
+  <ul>
+    <li><a href="${SITE_PATH}practice/">JLPT practice questions · 练习题</a></li>
+    <li><a href="${SITE_PATH}listening/">Listening practice · 听力练习</a></li>
+    <li><a href="${SITE_PATH}">Home · 首页</a></li>
+  </ul>
 </div>
 </body>
 </html>`, "utf-8");
