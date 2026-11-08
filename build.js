@@ -986,14 +986,25 @@ function buildLessonDescZh(lesson, cleanPoints, level) {
 // copy (English at /, Chinese at /zh/), optionally pre-filtered by level, and
 // tagged so the podcast's GA shows what jpnotes sends and from where
 // (utm_content). Returned HTML-escaped, ready for an href.
-function podcastUrl(en, content, level) {
+function podcastUrl(en, content, level, show) {
   const p = new URLSearchParams();
   if (level) p.set("level", level);
   p.set("utm_source", "jpnotes");
   p.set("utm_medium", "web");
   p.set("utm_campaign", "listening");
   p.set("utm_content", content);
-  return `https://podcast.jpnotes.dev/${en ? "" : "zh/"}?${p}`.replace(/&/g, "&amp;");
+  // show "nihongo" = the all-Japanese second show, 日本語で聞くニュース (N3–N2)
+  return `https://podcast.jpnotes.dev/${en ? "" : "zh/"}${show === "nihongo" ? "nihongo/" : ""}?${p}`.replace(/&/g, "&amp;");
+}
+
+// The two podcasts at the bottom of each listening page, easier show first
+// for N5–N3, the all-Japanese one first for N2/N1.
+function podcastBlock(L, level) {
+  const lv = /^N[45]$/.test(level) ? "N5-N4" : "N4-N3", lvTxt = lv.replace("-", "–");
+  const c = `listening-${level.toLowerCase()}`;
+  const main = `<li>${L(`<a href="${podcastUrl(false, c, lv)}" target="_blank" rel="noopener"><b>Japanese Daily News</b></a>（${lvTxt}）：每天一则日语新闻，逐句讲解，附振假名和中文翻译。`, `<a href="${podcastUrl(true, c, lv)}" target="_blank" rel="noopener"><b>Japanese Daily News</b></a> (${lvTxt}): a Japanese news story every day, explained sentence by sentence, with furigana and a translation.`)}</li>`;
+  const ja = `<li>${L(`<a href="${podcastUrl(false, c, null, "nihongo")}" target="_blank" rel="noopener"><b>日本語で聞くニュース</b></a>（N3–N2）：全日语播客，新闻用日语读一遍再用日语讲解，适合练整段听懂。${/^N[45]$/.test(level) ? "等你到了 N3 再来。" : ""}`, `<a href="${podcastUrl(true, c, null, "nihongo")}" target="_blank" rel="noopener"><b>日本語で聞くニュース</b></a> (N3–N2): an all-Japanese show — the news read and then talked through in Japanese, for following longer stretches.${/^N[45]$/.test(level) ? " One for when you reach N3." : ""}`)}</li>`;
+  return `<ul>${/^N[12]$/.test(level) ? ja + main : main + ja}</ul>`;
 }
 
 function stripLangBlocks(html, lang) {
@@ -3932,6 +3943,8 @@ ${reading ? `<li>${L("做完一篇的最后一题后，可以看全文翻译。�
 <dt>${L("可以下载 MP3 吗？", "Can I download the MP3s?")}</dt><dd>${L("目前只能在线播放；页面打开过的录音会缓存，之后网络不好也能放。", "Not for now — they play online, and recordings you've opened are cached so they still play on a weak connection.")}</dd>
 <dt>${L("想按真考计时做一遍？", "Want a timed run like the real test?")}</dt><dd>${bundle.mocks.length ? L(`<a href="${SITE_PATH}${lv}-mock-test/">${level} 模拟题</a>的最后一场就是听力：每段只放一次，题间留作答时间，交卷后和其他科目一起估分。`, `The last sitting of the <a href="${SITE_PATH}${lv}-mock-test/">${level} mock test</a> is listening: each recording once, time to answer after it, scored with the other parts.`) : L("模拟题准备中。", "A mock test is on the way.")}</dd>
 </dl>
+<h2>${L("做完题，多听真实的日语", "After the questions: real Japanese to listen to")}</h2>
+${podcastBlock(L, level)}
 <h2>${L("相关", "More")}</h2>
 <p>${L(`全部题型混合练：<a href="${SITE_PATH}${lv}-practice/">${level} 练习题</a>。${others ? `其他级别的听力：${others}（<a href="${SITE_PATH}listening/">JLPT 听力总览</a>）。` : ""}考试安排和备考计划：<a href="${SITE_PATH}jlpt-december-2026/">12 月 JLPT 考前指南</a>。`, `All item types mixed: <a href="${SITE_PATH}${lv}-practice/">${level} practice questions</a>.${others ? ` Listening at other levels: ${others} (<a href="${SITE_PATH}listening/">all JLPT listening practice</a>).` : ""} Exam day and a study plan: <a href="${SITE_PATH}jlpt-december-2026/">December JLPT guide</a>.`)}</p>
 </section>`;
