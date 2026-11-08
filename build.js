@@ -3877,7 +3877,7 @@ ${AI_SCRIPT}
 <meta property="og:title" content="${m.title}">
 <meta property="og:description" content="${m.desc.replace(/"/g, '&quot;')}">
 <meta property="og:url" content="${lv.url}">
-<meta property="og:locale" content="${lang.ogLocale}">${level ? `\n<meta property="og:image" content="${SITE}${level}/og-image.png">\n<meta name="twitter:card" content="summary_large_image">` : ""}${m.schema ? `\n<script type="application/ld+json">${m.schema}</script>` : ""}
+<meta property="og:locale" content="${lang.ogLocale}">${level || m.ogImage ? `\n<meta property="og:image" content="${SITE}${level ? `${level}/og-image.png` : m.ogImage}">\n<meta name="twitter:card" content="summary_large_image">` : ""}${m.schema ? `\n<script type="application/ld+json">${m.schema}</script>` : ""}
 <link rel="icon" href="${SITE_PATH}favicon.ico" sizes="32x32">
 <link rel="icon" href="${SITE_PATH}favicon-48.png" type="image/png" sizes="48x48">
 <link rel="icon" href="${SITE_PATH}favicon-192.png" type="image/png" sizes="192x192">
@@ -4378,7 +4378,7 @@ ${lessonList}</section>`;
   };
   for (const lang of PAGE_LANGS) {
     const en = lang.code === "en";
-    const m = { ...hubMeta[lang.code], body: `${hubIntro(en)}<div class="table-scroll"><table class="hub-table"><tbody>${["N5", "N4", "N3", "N2", "N1"].map((l) => hubRow(l, en)).join("")}</tbody></table></div>
+    const m = { ...hubMeta[lang.code], ogImage: "practice/og-image.png", body: `${hubIntro(en)}<div class="table-scroll"><table class="hub-table"><tbody>${["N5", "N4", "N3", "N2", "N1"].map((l) => hubRow(l, en)).join("")}</tbody></table></div>
       <script>${HUB_PROGRESS_JS}</script>
       <p class="hub-listen">${en
         ? ckLevels.length ? `🎧 <b><a href="${SITE_PATH}listening/">Listening practice for every level</a>.</b> For real Japanese, the <a href="${podcastUrl(true, "practice-hub")}" target="_blank">Japanese Daily News podcast</a> has a real Japanese news story every day, with transcripts.` : `🎧 <b>Listening questions are planned, not built yet.</b> If you want them, <a href="#feedback" class="fb-open">say so</a> — demand decides what comes first. Meanwhile the <a href="${podcastUrl(true, "practice-hub")}" target="_blank">Japanese Daily News podcast</a> has a real Japanese news story every day, with transcripts.`
@@ -4454,7 +4454,7 @@ ${lessonList}</section>`;
       const en = lang.code === "en", L = (zh, e) => (en ? e : zh), v = langVariant("listening", lang);
       const m = ckHubMeta[lang.code];
       writeLangPage("listening", lang, localizePage(renderQuiz(lang, {
-        ...m,
+        ...m, ogImage: "listening/og-image.png",
         body: `<div class="table-scroll"><table class="hub-table"><tbody>${ORDER.map((l) => row(l, L)).join("")}</tbody></table></div>`,
         about: about(L),
         schema: JSON.stringify([
@@ -4479,7 +4479,7 @@ ${lessonList}</section>`;
     for (const lang of PAGE_LANGS) {
       const en = lang.code === "en", L = (zh, e) => (en ? e : zh), v = langVariant(id, lang), m = metaBy[lang.code];
       writeLangPage(id, lang, localizePage(renderQuiz(lang, {
-        ...m, nav: "",
+        ...m, nav: "", ogImage: `${id}/og-image.png`,
         body: `<div class="table-scroll"><table class="hub-table"><tbody>${ORDER5.map((l) => rowsFor(l, L)).join("")}</tbody></table></div>`,
         about: aboutFor(L),
         schema: JSON.stringify([
@@ -4918,6 +4918,11 @@ Each \`/lessonNN/\` page contains:
     ...(ogLevelCounts.N1 ? [{ slug: "N1", topLabel: "JLPT N1", mainTitle: "N1 文法チェックリスト", sub: `${ogLevelCounts.N1} 课 · 100+ 语法点`, accent: "#e94560" }] : []),
     { slug: "about", topLabel: "About · 关于", mainTitle: "日语语法笔记", sub: "N5 → N1 · Free · Bilingual", accent: "#e94560" },
     { slug: "anki", topLabel: "Anki Decks", mainTitle: "JLPT 文法 卡组", sub: "N5 · N4 · N3 · N2 · N1", accent: "#e94560" },
+    { slug: "practice", topLabel: "JLPT Practice · 做题", mainTitle: "JLPT 練習問題", sub: "N5 → N1 · Listening · Mock tests · Free", accent: "#e94560" },
+    { slug: "listening", topLabel: "JLPT Listening · 听力", mainTitle: "JLPT 聴解練習", sub: "N5 → N1 · 650+ questions · Transcripts", accent: "#e94560" },
+    { slug: "reading", topLabel: "JLPT Reading · 阅读", mainTitle: "JLPT 読解練習", sub: "N5 → N1 · Every format · Translations", accent: "#e94560" },
+    { slug: "vocabulary", topLabel: "JLPT Vocabulary · 词汇", mainTitle: "JLPT 文字・語彙", sub: "N5 → N1 · Kanji · Words · Usage", accent: "#e94560" },
+    { slug: "mock-test", topLabel: "JLPT Mock Tests · 模拟题", mainTitle: "JLPT 模擬試験", sub: "N5 → N1 · Timed · Estimated score", accent: "#e94560" },
     { slug: "guides", topLabel: "Guides · 专题", mainTitle: "易混語法 対比", sub: "は vs が · から vs ので · JLPT 12月", accent: "#e94560" },
   ];
   for (const p of indexOgPages) {
