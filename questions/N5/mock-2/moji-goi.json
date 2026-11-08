@@ -510,7 +510,7 @@
       "en": "It's windy today, so we can't play tennis outside."
     },
     "why": {
-      "zh": "线索：「かぜが（　）」，风大到不能在外面打网球。\n词义：风大说「かぜが つよい」（強い），风小说「かぜが よわい」；中文说“风大”，日语不说「かぜが おおきい」。",
+      "zh": "线索：「かぜが（　）」，风大到不能在外面打网球。\n词义：风大说「かぜが つよい」（強い），风小说「かぜが よわい」；中文说“风大”，日语一般说「つよい」，很少说「かぜが おおきい」。",
       "en": "Clue: 「かぜが（　）」 — wind strong enough to stop outdoor tennis.\nMeaning: strong wind is 「かぜが つよい」 (強い); light wind is 「かぜが よわい」."
     },
     "wrong": [
@@ -573,14 +573,12 @@
     "stem": "あの こうえんは よる くらくて（　）ですから、ひとりで いかないで ください。",
     "options": [
       "わかい",
-      "まずい",
+      "ふるい",
       "つめたい",
       "あぶない"
     ],
     "okj": [
-      "若い",
-      null,
-      "冷たい",
+      "若い","古い","冷たい",
       "危ない"
     ],
     "kj": "あの公園は夜暗くて危ないですから、一人で行かないでください。",
@@ -599,8 +597,8 @@
         "en": "「わかい」 (young) describes people, not a park."
       },
       {
-        "zh": "「まずい」是“难吃”，说食物，不说公园。",
-        "en": "「まずい」 (tastes bad) is for food, not a park."
+        "zh": "「ふるい」是“旧”，公园旧不是劝人晚上别一个人去的理由，和「くらくて」也接不上。",
+        "en": "「ふるい」 (old) is no reason to keep someone from going alone at night, and doesn't fit with 「くらくて」."
       },
       {
         "zh": "「つめたい」是“凉、冷（摸起来）”，说水、饮料，不是劝人别去的理由。",

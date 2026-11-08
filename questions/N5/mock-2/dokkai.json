@@ -99,8 +99,8 @@
             "en": "「だから」 means \"so\", but being small and old is no reason to love the room."
           },
           {
-            "zh": "「そして」是“而且、然后”，前后要意思一致，这里是缺点转到喜欢，要用转折。",
-            "en": "「そして」 means \"and\", for ideas going the same way; here drawbacks turn into love, which needs \"but\"."
+            "zh": "「そして」是“而且、然后”，只是再补充一点；这里前面说缺点，后面却说很喜欢，要用表示转折的词。",
+            "en": "「そして」 means \"and\": it just adds another point. Here drawbacks are followed by loving the room, which needs a word for \"but\"."
           }
         ]
       },
@@ -192,8 +192,8 @@
     "passage": "田中さんへ\n\nあしたから 三日間、国へ かえります。すみませんが、その 間、わたしの へやの 花に 水を あげて ください。一日 一かいで いいです。\nへやの かぎは、今日の よる、田中さんの へやの ポストに 入れます。\n金曜日の よるに かえります。おみやげを 買って きますね。\n\nキム",
     "kj": "田中さんへ\n\n明日から三日間、国へ帰ります。すみませんが、その間、私の部屋の花に水をあげてください。一日一回でいいです。\n部屋の鍵は、今日の夜、田中さんの部屋のポストに入れます。\n金曜日の夜に帰ります。お土産を買ってきますね。\n\nキム",
     "tr": {
-      "zh": "田中先生：\n\n我明天起回国三天。不好意思，这期间请帮我给房间里的花浇水。一天浇一次就可以。\n房间的钥匙今晚我放进您房间的信箱里。\n我星期五晚上回来。我会带礼物回来的。\n\n金",
-      "en": "Mr. Tanaka,\n\nFrom tomorrow I'm going home to my country for three days. Sorry to ask, but while I'm away, could you please water the flowers in my room? Once a day is fine.\nI'll put my room key in your mailbox tonight.\nI'll be back on Friday night. I'll bring you a souvenir!\n\nKim"
+      "zh": "田中：\n\n我明天起回国三天。不好意思，这期间请帮我给房间里的花浇水。一天浇一次就可以。\n房间的钥匙今晚我放进您房间的信箱里。\n我星期五晚上回来。我会带礼物回来的。\n\n金",
+      "en": "Tanaka-san,\n\nFrom tomorrow I'm going home to my country for three days. Sorry to ask, but while I'm away, could you please water the flowers in my room? Once a day is fine.\nI'll put my room key in your mailbox tonight.\nI'll be back on Friday night. I'll bring you a souvenir!\n\nKim"
     },
     "questions": [
       {
@@ -258,7 +258,7 @@
           "駅まで 歩いて 行って、電車に 乗りました。",
           "いつもと 同じ バスに 乗って 行きました。",
           "駅から 学校まで 一時間 歩きました。",
-          null
+          "マリさんと 一緒に 電車で 行きました。"
         ],
         "answer": 0,
         "why": {
@@ -298,7 +298,7 @@
         ],
         "answer": 3,
         "why": {
-          "zh": "依据：老师说「子どもの ときから 毎年 ゆきを たくさん 見ましたから、ゆきは あまり すきじゃ ありません」\n推理：「〜から」前面就是理由：从小每年都看到很多雪，看腻了。\n容易错：公交车不来、下雪天考试，都是诺伊自己的经历，不是老师说的理由。",
+          "zh": "依据：老师说「子どもの ときから 毎年 ゆきを たくさん 見ましたから、ゆきは あまり すきじゃ ありません」\n推理：「〜から」前面就是理由：从小每年都看到很多雪。\n容易错：公交车不来、下雪天考试，都是诺伊自己的经历，不是老师说的理由。",
           "en": "Evidence: The teacher says 「子どもの ときから 毎年 ゆきを たくさん 見ましたから、ゆきは あまり すきじゃ ありません」\nReasoning: What comes before 「〜から」 is the reason: she has seen lots of snow every year since childhood.\nTrap: The bus not coming and the test on a snowy day are Noi's experiences, not the teacher's reason."
         },
         "wrong": [

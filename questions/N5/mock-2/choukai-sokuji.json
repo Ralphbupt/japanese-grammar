@@ -211,8 +211,8 @@
    }
   },
   "why": {
-   "zh": "依据：男的说：「ごちそうさまでした。とても おいしかったです。」\n推理：客人吃完饭道谢、夸饭好吃，做饭的主人回答「それは よかったです」。\n容易错：时机不对——「いただきます」是吃饭前说的；「おいしいです」是吃的人说的，而且时态不对。",
-   "en": "Evidence: The man says: 「ごちそうさまでした。とても おいしかったです。」\nReasoning: The guest thanks her for the meal and praises it; the host replies 「それは よかったです」.\nTrap: wrong moment — 「いただきます」 comes before eating; 「おいしいです」 is the eater's line, in the wrong tense."
+   "zh": "依据：男的说：「ごちそうさまでした。とても おいしかったです。」\n推理：客人吃完饭道谢、夸饭好吃，做饭的主人回答「それは よかったです」。\n容易错：时机不对——「いただきます」是吃饭前说的；「はい、おいしいです」像是在夸自己做的菜，回应别人的道谢不自然。",
+   "en": "Evidence: The man says: 「ごちそうさまでした。とても おいしかったです。」\nReasoning: The guest thanks her for the meal and praises it; the host replies 「それは よかったです」.\nTrap: wrong moment — 「いただきます」 comes before eating; 「はい、おいしいです」 praises her own cooking, an odd reply to thanks."
   },
   "wrong": [
    {
@@ -221,13 +221,12 @@
    },
    null,
    {
-    "zh": "「おいしいです」是吃的人说的，而且饭已经吃完了。",
-    "en": "「おいしいです」 is what the eater says, and the meal is already finished."
+    "zh": "「はい、おいしいです」是夸自己做的菜，回应客人的道谢和夸奖很不自然。",
+    "en": "「はい、おいしいです」 praises her own cooking, an odd reply to a guest's thanks and praise."
    }
   ],
   "traps": [
-   "timing",
-   "tense"
+   "timing"
   ]
  },
  {
