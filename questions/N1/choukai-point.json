@@ -1664,5 +1664,1241 @@
    "mentioned-not-asked",
    "half-right"
   ]
+ },
+ {
+  "id": "n1-ck-217",
+  "type": "point",
+  "scene": "会社で、男の人と女の人が、社内の表彰制度について話しています。",
+  "question": "会社が表彰制度をやめたのはどうしてですか。",
+  "lines": [
+   [
+    "M",
+    "毎年の社長賞、今年からなくなったんだって？"
+   ],
+   [
+    "F",
+    "うん。人事の人に聞いたら、毎年発表の前になると、チームの中で手柄の取り合いみたいになってたらしいの。新しいお客さんを取ってきた人ばかり目立って、その裏で資料を作った人や、トラブルの後始末をした人の名前が、報告から消えちゃうんだって。"
+   ],
+   [
+    "M",
+    "ああ、それはありそうだな。でも、予算を削りたかったっていうのもあるんじゃない？"
+   ],
+   [
+    "F",
+    "賞金なんて大した額じゃなかったし、お金の話は出なかったみたい。ただ、聞いてびっくりしたんだけど、賞を取った人のチームほど、次の年に人が辞めてたんだって。それも本人じゃなくて、周りの人がね。"
+   ],
+   [
+    "M",
+    "選ばれるのが営業の人ばかりだって声もあったよね。"
+   ],
+   [
+    "F",
+    "それなら選び方を変えれば済む話でしょう。会社としては、個人を褒めること自体をやめて、チーム全体の成果を見る仕組みに切り替えるんだって。"
+   ]
+  ],
+  "options": [
+   "賞金の予算を減らすことになったから",
+   "選ばれる人が営業部に偏っていたから",
+   "賞のせいでチーム内の協力が崩れていたから",
+   "賞を取った本人が次々に会社を辞めたから"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "公司里，男人和女人在谈公司内部的表彰制度。",
+    "question": "公司为什么取消了表彰制度？",
+    "lines": [
+     "每年的社长奖，听说从今年起取消了？",
+     "嗯。我问了人事的人，说每年到了公布之前，团队里就像在抢功劳一样。只有拉来新客户的人显眼，背后做资料的人、收拾麻烦的人的名字，就从报告里消失了。",
+     "啊，那倒很有可能。不过，是不是也想削减预算？",
+     "奖金本来就没多少，好像没谈到钱的事。不过听了吓我一跳：越是有人得奖的团队，第二年辞职的人越多。而且不是得奖的本人，是周围的人。",
+     "也有人说被选上的总是销售的人吧。",
+     "那样的话改改评选方法就行了。公司是要连表扬个人这件事本身都取消，改成看整个团队成果的机制。"
+    ],
+    "options": [
+     "因为要削减奖金预算",
+     "因为被选上的人偏向销售部",
+     "因为奖项破坏了团队内部的合作",
+     "因为得奖的本人接连辞职"
+    ]
+   },
+   "en": {
+    "scene": "At a company, a man and a woman are talking about the in-house award scheme.",
+    "question": "Why did the company scrap the award scheme?",
+    "lines": [
+     "I hear the annual president's award has been dropped from this year?",
+     "Yes. HR told me that every year before the announcement, teams practically fought over the credit. Only whoever landed the new client stood out, and the names of people who made the materials or cleaned up the problems behind the scenes vanished from the reports.",
+     "Ah, I can see that. But didn't they also want to cut the budget?",
+     "The prize money was never much, and money apparently never came up. But this shocked me: the teams with winners were the ones losing people the next year. And not the winners themselves — the people around them.",
+     "People also said it always went to sales, didn't they?",
+     "Then you'd just change how winners are chosen. The company is dropping individual praise altogether and switching to a system that looks at team results."
+    ],
+    "options": [
+     "Because the prize budget was being cut",
+     "Because winners were skewed toward sales",
+     "Because the award was undermining teamwork",
+     "Because the winners themselves kept quitting"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的一开始就说：「毎年発表の前になると、チームの中で手柄の取り合いみたいになってたらしいの。」最后说公司改成看「チーム全体の成果」。\n推理：钱的事「出なかった」；偏向销售「選び方を変えれば済む」。真正的原因是奖项让大家抢功劳，幕后的人被埋没——团队合作被破坏了，得奖者团队里的人辞职也是这个结果。\n容易错：后面讲的辞职最抢耳，但辞职的是得奖者周围的人，不是得奖者本人，而且那是结果。",
+   "en": "Evidence: She says at the start 「毎年発表の前になると、チームの中で手柄の取り合いみたいになってたらしいの。」 and ends with the switch to 「チーム全体の成果」.\nReasoning: Money 「出なかった」, and the sales bias 「選び方を変えれば済む」. The real reason is that the award made people grab credit and buried the behind-the-scenes staff — teamwork broke down; people quitting from winners' teams is a result of that.\nTrap: the quitting is the most striking detail, but it was the people around the winners, not the winners themselves, and it is a consequence."
+  },
+  "wrong": [
+   {
+    "zh": "她说「お金の話は出なかったみたい」，奖金本来也不多。",
+    "en": "She says 「お金の話は出なかったみたい」; the prize money was small anyway."
+   },
+   {
+    "zh": "这一点「選び方を変えれば済む話」，不是取消的理由。",
+    "en": "That is 「選び方を変えれば済む話」 — it isn't why the award was scrapped."
+   },
+   null,
+   {
+    "zh": "辞职的是「賞を取った人のチーム」里的人，不是得奖者本人。",
+    "en": "It was people in 「賞を取った人のチーム」 who quit, not the winners themselves."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "half-right"
+  ]
+ },
+ {
+  "id": "n1-ck-218",
+  "type": "point",
+  "scene": "ラジオで、アナウンサーが、プラネタリウムの解説員の女の人に話を聞いています。",
+  "question": "プラネタリウムが解説のない上映を始めたのはどうしてですか。",
+  "lines": [
+   [
+    "M",
+    "最近、解説なしで、ただ星空を映すだけの回を始められたそうですね。解説員の方が足りなくなったとか？"
+   ],
+   [
+    "F",
+    "いえいえ、人手は足りているんです。むしろ解説の回のほうが増えているくらいで。"
+   ],
+   [
+    "M",
+    "では、どうして？"
+   ],
+   [
+    "F",
+    "ある常連の方に、こう言われたんです。「解説を聞いていると、つい名前を覚えようとしてしまって、星を見ている気がしない」って。確かに私たちは、星座の形や神話を伝えるのに一生懸命で、お客様が黙って空を眺める時間を、知らないうちに奪っていたのかもしれません。"
+   ],
+   [
+    "M",
+    "なるほど。"
+   ],
+   [
+    "F",
+    "もちろん、解説を楽しみにしてくださる方も大勢いらっしゃいますから、両方用意することにしたんです。そうしたら意外にも、仕事帰りの方が多くいらっしゃるようになって。お疲れのところ、四十分、ただぼんやり星を見上げて帰られるんですね。"
+   ]
+  ],
+  "options": [
+   "説明なしで星を眺めたいという声があったから",
+   "解説を担当する職員の数が足りなくなったから",
+   "仕事帰りの客を新しく呼び込みたかったから",
+   "星座の名前を覚えたいという客が減ったから"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "广播里，播音员在采访天文馆的女解说员。",
+    "question": "天文馆为什么开始了没有解说的放映？",
+    "lines": [
+     "听说最近开始了没有解说、只放星空的场次。是解说员不够了吗？",
+     "不不，人手是够的。说起来解说的场次反而还增加了。",
+     "那是为什么呢？",
+     "一位常客对我们说：“听着解说，就不由得想去记名字，感觉不是在看星星”。的确，我们一心想讲星座的形状和神话，也许在不知不觉中夺走了客人静静仰望天空的时间。",
+     "原来如此。",
+     "当然，期待听解说的客人也很多，所以决定两种都准备。结果没想到，下班后来的人多了起来。他们拖着疲惫的身体，四十分钟就那么呆呆地仰望星星，然后回家。"
+    ],
+    "options": [
+     "因为有人表示想不听解说看星星",
+     "因为负责解说的职员不够了",
+     "因为想吸引下班后的新客人",
+     "因为想记星座名字的客人少了"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, an announcer is interviewing a female planetarium presenter.",
+    "question": "Why did the planetarium start showings without commentary?",
+    "lines": [
+     "I hear you've started showings with no commentary, just the starry sky. Are you short of presenters?",
+     "Oh no, we have enough staff. If anything, the commentated shows have increased.",
+     "Then why?",
+     "A regular once said to us: 'When I listen to the commentary, I end up trying to memorise names, and it doesn't feel like I'm looking at the stars.' It's true we've been so intent on explaining constellations and myths that we may have been taking away our visitors' time to simply gaze at the sky.",
+     "I see.",
+     "Of course, many people look forward to the commentary, so we decided to offer both. And unexpectedly, lots of people started coming after work. Tired as they are, they spend forty minutes just gazing up at the stars and then go home."
+    ],
+    "options": [
+     "Because people said they wanted to watch the stars without commentary",
+     "Because there weren't enough staff to give commentary",
+     "Because they wanted to draw in people after work",
+     "Because fewer visitors wanted to learn constellation names"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「ある常連の方に、こう言われたんです。『解説を聞いていると、つい名前を覚えようとしてしまって、星を見ている気がしない』って。」\n推理：主持人猜人手不够，她否定了。常客觉得听解说就想记名字，没在看星星；她也反省夺走了客人静静看天的时间。下班族来得多是开始以后「意外にも」出现的结果，不是理由。\n容易错：把结果当理由；把常客的话听成「想记名字的人少了」。",
+   "en": "Evidence: She says 「ある常連の方に、こう言われたんです。『解説を聞いていると、つい名前を覚えようとしてしまって、星を見ている気がしない』って。」\nReasoning: She denies the announcer's guess about staff. A regular felt the commentary made him memorise names instead of looking at the stars, and she reflects that they'd been taking away quiet gazing time. The after-work crowd came 「意外にも」 afterwards — a result, not the reason.\nTrap: taking the result for the reason; mishearing the regular's remark as fewer people wanting names."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "她说「人手は足りているんです」。",
+    "en": "She says 「人手は足りているんです」."
+   },
+   {
+    "zh": "下班的客人是开始以后「意外にも」多起来的，是结果。",
+    "en": "The after-work visitors came 「意外にも」 — a result, not the aim."
+   },
+   {
+    "zh": "常客说的是听解说就会想记名字，不是想记名字的人少了。",
+    "en": "The regular said the commentary made him try to memorise names, not that fewer people want to."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-ck-219",
+  "type": "point",
+  "scene": "ラジオで、アナウンサーが、海外で公演をしている落語家の男の人に話を聞いています。",
+  "question": "落語家は、海外の公演で一番苦労したのは何だと言っていますか。",
+  "lines": [
+   [
+    "F",
+    "海外での落語の公演、やはり言葉の壁が一番大変だったんじゃありませんか。"
+   ],
+   [
+    "M",
+    "それがね、噺は日本語のままで、舞台の横に字幕を出すんです。翻訳は向こうの専門の方がしっかりやってくださるので、そこはほとんど心配いりませんでした。"
+   ],
+   [
+    "F",
+    "では、文化の違いでしょうか。"
+   ],
+   [
+    "M",
+    "着物や長屋の暮らしなんかは、案外すっと受け入れてもらえるんですよ。ただ、笑いのほうは、そうはいかなくてね。字幕は一文ずつまとめて出るでしょう。お客さんは、私が言い終わる前にオチを先に読んで笑っちゃう。こっちが一番いいところで間を取っているのに、その前に客席がどっと沸いて、肝心の一言のときにはシーンとしてる。"
+   ],
+   [
+    "F",
+    "それは、つらいですね。"
+   ],
+   [
+    "M",
+    "ええ。結局、字幕の係の方にお願いして、オチの部分だけは、私の声に合わせて手で出してもらうことにしました。それで、やっと噺になった。"
+   ]
+  ],
+  "options": [
+   "日本語の噺を外国語に訳すこと",
+   "着物や昔の暮らしをわかってもらうこと",
+   "字幕を担当する人を見つけること",
+   "字幕のせいで笑いの間がずれること"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "广播里，播音员在采访一位在海外演出的男落语家。",
+    "question": "落语家说，在海外演出中最辛苦的是什么？",
+    "lines": [
+     "在海外演落语，最难的果然还是语言障碍吧？",
+     "其实呢，段子还是用日语讲，在舞台旁边打字幕。翻译有那边的专业人士认真做，那方面几乎不用担心。",
+     "那么是文化差异吗？",
+     "和服啦、大杂院的生活之类，意外地很容易就被接受了。可笑点那边就没那么顺利了。字幕是一句一句整句打出来的吧。观众在我说完之前，就先读到包袱笑了。我这边在最精彩的地方留着停顿呢，在那之前观众席就哄堂大笑，到了关键那句反倒鸦雀无声。",
+     "那可真难受。",
+     "是啊。最后拜托负责字幕的人，只有包袱那部分配合我的声音手动打出来。这样才总算像个段子了。"
+    ],
+    "options": [
+     "把日语段子翻译成外语",
+     "让观众理解和服和过去的生活",
+     "找负责字幕的人",
+     "因为字幕，笑点的时机错开"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, an announcer is interviewing a male rakugo storyteller who performs abroad.",
+    "question": "What does the storyteller say was hardest about performing abroad?",
+    "lines": [
+     "Performing rakugo abroad, surely the language barrier was the hardest part?",
+     "Well, I tell the stories in Japanese and subtitles are shown beside the stage. Specialists there do the translation carefully, so I hardly had to worry about that.",
+     "Then the cultural differences?",
+     "Kimonos and life in the old tenements were accepted surprisingly readily. The laughs were another story, though. Subtitles appear a whole sentence at a time, you see. The audience read the punchline before I'd finished saying it and laughed. I'd be holding a pause at the best moment, but the house would roar before it, and when the key line came, there was dead silence.",
+     "That must have been painful.",
+     "Yes. In the end I asked the subtitle operator to put up just the punchlines by hand, in time with my voice. Only then did the stories work."
+    ],
+    "options": [
+     "Translating the Japanese stories",
+     "Getting kimonos and old ways of life across",
+     "Finding someone to run the subtitles",
+     "The subtitles throwing off the timing of the laughs"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「ただ、笑いのほうは、そうはいかなくてね。」「お客さんは、私が言い終わる前にオチを先に読んで笑っちゃう。」\n推理：翻译「ほとんど心配いりませんでした」，和服和长屋「すっと受け入れてもらえる」。问题是字幕整句先出，观众提前读到包袱，笑声和他留的停顿错开。最后靠手动打包袱的字幕解决。\n容易错：字幕负责人是解决办法里出现的人，不是难题。",
+   "en": "Evidence: He says 「ただ、笑いのほうは、そうはいかなくてね。」 and 「お客さんは、私が言い終わる前にオチを先に読んで笑っちゃう。」\nReasoning: Translation was 「ほとんど心配いりませんでした」 and kimonos and tenements were 「すっと受け入れてもらえる」. The trouble was whole-sentence subtitles letting people read the punchline early, so the laughs missed his pause. Hand-timed punchline subtitles fixed it.\nTrap: the subtitle operator appears in the solution, not as the problem."
+  },
+  "wrong": [
+   {
+    "zh": "翻译有专业人士做，「ほとんど心配いりませんでした」。",
+    "en": "Translation was in expert hands — 「ほとんど心配いりませんでした」."
+   },
+   {
+    "zh": "和服和长屋的生活「案外すっと受け入れてもらえる」。",
+    "en": "Kimonos and tenement life were 「案外すっと受け入れてもらえる」."
+   },
+   {
+    "zh": "字幕负责人是解决办法里请来帮忙的，没说难找。",
+    "en": "The operator was asked to help in the fix; finding one wasn't said to be hard."
+   },
+   null
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-ck-220",
+  "type": "point",
+  "scene": "スーパーで、店長の女の人と男の店員が、カット野菜の売り上げについて話しています。",
+  "question": "店長は、カット野菜の売り上げが伸びた一番の理由は何だと考えていますか。",
+  "lines": [
+   [
+    "M",
+    "店長、カット野菜、先月から急に売れるようになりましたね。一人暮らしのお客さんが増えたからでしょうか。"
+   ],
+   [
+    "F",
+    "このあたりは前から一人暮らしが多いから、それだけじゃ急に伸びた説明にはならないと思うよ。"
+   ],
+   [
+    "M",
+    "値段を少し下げたのも効いたんですかね。"
+   ],
+   [
+    "F",
+    "下げたのは十円だけだし、隣の店のほうがまだ安いのよ。それより、売れ始めたのって、置き場所を野菜のコーナーから精肉の棚の隣に移してからじゃない？"
+   ],
+   [
+    "M",
+    "あ、そういえば、移したのは先月の頭です。"
+   ],
+   [
+    "F",
+    "お肉を手に取ったついでに、炒め物用の野菜も一緒にかごに入れていく人が多いのよ。夕方のレジを見てると、豚肉とセットで買う人がすごく多いもの。"
+   ],
+   [
+    "M",
+    "なるほど。じゃあ、魚の棚の隣にも、鍋用のものを置いてみましょうか。"
+   ],
+   [
+    "F",
+    "いいわね。"
+   ]
+  ],
+  "options": [
+   "一人暮らしの客が増えてきたから",
+   "肉と一緒に選べる場所に移したから",
+   "前より値段を安くしたから",
+   "鍋用の野菜も並べるようにしたから"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "超市里，女店长和男店员在谈切好的蔬菜的销售额。",
+    "question": "店长认为切好的蔬菜销售额增长的最大原因是什么？",
+    "lines": [
+     "店长，切好的蔬菜从上个月起突然好卖了。是因为独居的客人增加了吗？",
+     "这一带以前就有很多独居的人，光凭这个解释不了为什么突然增长。",
+     "稍微降了点价也起作用了吧？",
+     "只降了十日元，隔壁店还是比我们便宜。比起这个，开始好卖，不是从把摆放位置从蔬菜区移到鲜肉货架旁边以后吗？",
+     "啊，这么说来，挪过去是上个月初。",
+     "拿了肉顺手把炒菜用的蔬菜也放进篮子的人很多。看看傍晚的收银台，和猪肉一起买的人特别多。",
+     "原来如此。那在鱼的货架旁边也放些火锅用的试试吧。",
+     "好啊。"
+    ],
+    "options": [
+     "因为独居的客人增加了",
+     "因为移到了能和肉一起挑选的地方",
+     "因为比以前便宜了",
+     "因为也开始摆火锅用的蔬菜"
+    ]
+   },
+   "en": {
+    "scene": "At a supermarket, the female manager and a male clerk are talking about sales of pre-cut vegetables.",
+    "question": "What does the manager think is the main reason pre-cut vegetable sales rose?",
+    "lines": [
+     "Manager, pre-cut vegetables have suddenly been selling since last month. Is it because more customers live alone?",
+     "Lots of people around here have always lived alone, so that alone doesn't explain a sudden jump.",
+     "Maybe the small price cut helped?",
+     "It was only ten yen, and the shop next door is still cheaper. Rather, didn't they start selling after we moved them from the vegetable section to next to the meat shelves?",
+     "Oh, come to think of it, we moved them at the start of last month.",
+     "Lots of people pick up the meat and pop the stir-fry vegetables in the basket along with it. Watching the tills in the evening, a huge number buy them together with pork.",
+     "I see. Then shall we try putting hotpot vegetables next to the fish too?",
+     "Good idea."
+    ],
+    "options": [
+     "Because more customers live alone",
+     "Because they were moved to where people can pick them with the meat",
+     "Because they were made cheaper",
+     "Because hotpot vegetables were added"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：店长说：「売れ始めたのって、置き場所を野菜のコーナーから精肉の棚の隣に移してからじゃない？」又说买肉的人顺手把炒菜用的蔬菜放进篮子。\n推理：独居的人「前から」就多，解释不了突然增长；降价只有十日元，隔壁更便宜。销量开始涨的时间和挪到鲜肉旁边的时间一致，客人和猪肉一起买。\n容易错：火锅蔬菜是接下来才打算做的事。",
+   "en": "Evidence: The manager says 「売れ始めたのって、置き場所を野菜のコーナーから精肉の棚の隣に移してからじゃない？」 and that people pick up stir-fry vegetables with the meat.\nReasoning: Single households were common 「前から」, so they can't explain a sudden rise; the cut was only ten yen and the shop next door is cheaper. The rise lines up with the move next to the meat, and people buy them with pork.\nTrap: hotpot vegetables are only a plan for the future."
+  },
+  "wrong": [
+   {
+    "zh": "这一带「前から一人暮らしが多い」，解释不了突然增长。",
+    "en": "Singles have lived here 「前から」, so it can't explain the jump."
+   },
+   null,
+   {
+    "zh": "只降了十日元，「隣の店のほうがまだ安い」。",
+    "en": "Only ten yen, and 「隣の店のほうがまだ安い」."
+   },
+   {
+    "zh": "火锅用的是男店员接下来的提议，还没做。",
+    "en": "Hotpot vegetables are the clerk's new idea, not done yet."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-ck-221",
+  "type": "point",
+  "scene": "ラジオで、アナウンサーが、市立図書館を設計した建築家の女の人に話を聞いています。",
+  "question": "建築家が、図書館の中に壁や仕切りを作らなかった一番の理由は何ですか。",
+  "lines": [
+   [
+    "M",
+    "新しい図書館、中に壁がほとんどなくて、とても開放的ですね。広く見せるためですか。"
+   ],
+   [
+    "F",
+    "広々と感じていただけるのはうれしいんですが、狙いはそこではないんです。図書館って、たいていの方は、目当ての本の棚にまっすぐ行って、借りたらすぐ帰りますよね。"
+   ],
+   [
+    "M",
+    "ええ、私もそうです。"
+   ],
+   [
+    "F",
+    "壁で区切ってしまうと、料理の本を借りに来た人は、料理の棚の前しか通らない。でも、仕切りがなければ、途中で歴史の棚や詩の棚が自然と目に入ります。予定していなかった本につい手が伸びる、そういう寄り道を、建物で起こしたかったんです。"
+   ],
+   [
+    "M",
+    "職員の方からは、見渡しやすくて管理が楽になったという声もあるそうですね。"
+   ],
+   [
+    "F",
+    "ええ、それはありがたいおまけでした。子どもの声が響くんじゃないかというご心配もいただきましたが、天井の素材で、音はかなり吸収しています。"
+   ]
+  ],
+  "options": [
+   "館内を実際より広く感じさせたかったから",
+   "目当て以外の本とも出会ってほしかったから",
+   "職員が館内を見渡しやすくしたかったから",
+   "子どもの声が響かないようにしたかったから"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "广播里，播音员在采访设计市立图书馆的女建筑师。",
+    "question": "建筑师在图书馆里不设墙壁和隔断的最大理由是什么？",
+    "lines": [
+     "新图书馆里面几乎没有墙，非常开阔。是为了显得宽敞吗？",
+     "大家觉得宽敞我很高兴，不过目的不在那里。图书馆嘛，大多数人都是直奔要找的书的书架，借完马上就走吧。",
+     "是的，我也是。",
+     "用墙隔开的话，来借烹饪书的人就只经过烹饪书架前。可是没有隔断的话，途中自然会看到历史的书架、诗歌的书架。不由得把手伸向原本没打算借的书——我想用建筑引发这样的绕道。",
+     "听说职员也说视野好、管理变轻松了。",
+     "是的，那是令人感激的附带好处。也有人担心孩子的声音会有回响，不过天花板的材料把声音吸收了不少。"
+    ],
+    "options": [
+     "想让馆内感觉比实际宽敞",
+     "希望读者也能遇到要找的书以外的书",
+     "想让职员容易看到整个馆内",
+     "想让孩子的声音不产生回响"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, an announcer is interviewing the female architect who designed the city library.",
+    "question": "What was the architect's main reason for leaving out walls and partitions inside the library?",
+    "lines": [
+     "The new library has almost no interior walls and feels very open. Is that to make it look spacious?",
+     "I'm glad it feels roomy, but that's not the aim. In a library, most people head straight to the shelf with the book they want and leave as soon as they've borrowed it, don't they?",
+     "Yes, I do that too.",
+     "If you divide it with walls, someone who's come for a cookbook passes only the cookery shelves. But without partitions, the history and poetry shelves naturally catch the eye along the way. I wanted the building itself to cause those detours, where your hand reaches for a book you never planned on.",
+     "I hear staff say it's easy to see across and simpler to manage.",
+     "Yes, that was a welcome bonus. Some worried children's voices would echo, but the ceiling material absorbs a lot of the sound."
+    ],
+    "options": [
+     "To make the interior feel larger than it is",
+     "So people would come across books besides the ones they came for",
+     "So staff could see across the building easily",
+     "To stop children's voices from echoing"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：建筑师说：「予定していなかった本につい手が伸びる、そういう寄り道を、建物で起こしたかったんです。」\n推理：显得宽敞她明确说「狙いはそこではない」；职员容易管理是「ありがたいおまけ」；回响靠天花板材料解决，跟不设墙无关。真正的目的是让人路过别的书架，遇到原本没打算借的书。\n容易错：「おまけ」＝附带的好处，不是理由。",
+   "en": "Evidence: The architect says 「予定していなかった本につい手が伸びる、そういう寄り道を、建物で起こしたかったんです。」\nReasoning: She says plainly that spaciousness is 「狙いはそこではない」; easier supervision was 「ありがたいおまけ」; echo is handled by the ceiling, not by the open plan. The aim was for people to pass other shelves and find books they hadn't planned on.\nTrap: 「おまけ」 = a side benefit, not the reason."
+  },
+  "wrong": [
+   {
+    "zh": "她说「狙いはそこではないんです」。",
+    "en": "She says 「狙いはそこではないんです」."
+   },
+   null,
+   {
+    "zh": "管理轻松只是「ありがたいおまけ」。",
+    "en": "Easier supervision was only 「ありがたいおまけ」."
+   },
+   {
+    "zh": "回响是别人的担心，用天花板材料解决，不是不设墙的理由。",
+    "en": "Echo was others' worry, solved by the ceiling — not why there are no walls."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-ck-222",
+  "type": "point",
+  "scene": "テレビで、インタビュアーが、市民オーケストラの指揮者の男の人に話を聞いています。",
+  "question": "指揮者が、練習で団員に一番求めていることは何ですか。",
+  "lines": [
+   [
+    "F",
+    "市民オーケストラですと、団員の方の腕前もさまざまですよね。まずは楽譜どおりに正確に弾けることを求めていらっしゃるんですか。"
+   ],
+   [
+    "M",
+    "もちろん正確さは大事です。でも、それは各自が家で練習してくることで、合奏の時間に私がうるさく言うことじゃありません。"
+   ],
+   [
+    "F",
+    "では、音量のバランスでしょうか。"
+   ],
+   [
+    "M",
+    "バランスは、結果なんですよ。うまくいかないオーケストラというのは、たいてい全員が自分の楽譜だけを見て、自分の音だけを聞いている。それで、ずれたら私の棒を見ろ、と。でも本当は、隣の人の息づかいや、向こうのチェロの弓の動きを感じていれば、棒なんかなくても合うんです。"
+   ],
+   [
+    "F",
+    "指揮者がいらないみたいに聞こえますが。"
+   ],
+   [
+    "M",
+    "理想を言えばね。だから練習中、私はよく、途中で棒を下ろしてしまうんです。そうすると、みんな慌てて、ほかのパートに耳を澄ませ始める。あれを、いつもやってほしいんです。"
+   ]
+  ],
+  "options": [
+   "楽譜に書かれたとおり正確に弾くこと",
+   "楽器どうしの音量の釣り合いを取ること",
+   "指揮の棒の動きをよく見て合わせること",
+   "周りの奏者を感じ取りながら演奏すること"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "电视上，采访者在采访市民管弦乐团的男指挥。",
+    "question": "指挥在排练时对团员最大的要求是什么？",
+    "lines": [
+     "市民管弦乐团的话，团员的水平参差不齐吧。您首先要求的是能照乐谱准确地演奏吗？",
+     "准确当然重要。不过那是各自在家练好的事，不是我在合奏时间里要啰嗦的。",
+     "那是音量的平衡吗？",
+     "平衡是结果。不顺利的乐团，通常是所有人都只看自己的乐谱、只听自己的声音。然后一错开就说看我的指挥棒。可其实，只要感觉到旁边人的呼吸、对面大提琴运弓的动作，没有指挥棒也能合上。",
+     "听起来好像不需要指挥了。",
+     "说理想的话是这样。所以排练时，我经常中途把指挥棒放下来。这样大家就慌了，开始竖起耳朵听其他声部。我希望他们一直那样做。"
+    ],
+    "options": [
+     "照乐谱写的准确演奏",
+     "让各乐器之间的音量平衡",
+     "仔细看指挥棒的动作来配合",
+     "一边感受周围的演奏者一边演奏"
+    ]
+   },
+   "en": {
+    "scene": "On TV, an interviewer is talking with the male conductor of a community orchestra.",
+    "question": "What does the conductor most ask of his players in rehearsal?",
+    "lines": [
+     "In a community orchestra, the players' skill must vary. Do you first ask them to play exactly as written?",
+     "Accuracy matters, of course. But that's for each of them to practise at home; it's not what I harp on in ensemble time.",
+     "Then the balance of volume?",
+     "Balance is a result. An orchestra that isn't working is usually one where everyone looks only at their own part and listens only to their own sound. Then, when they drift apart, it's 'watch my baton.' But really, if they sense the breathing of the person next to them or the bowing of the cellos across the way, they'll be together without any baton.",
+     "That makes it sound as if you're not needed.",
+     "Ideally, yes. So in rehearsal I often lower the baton midway. Then everyone panics and starts listening hard to the other sections. That's what I want them to do all the time."
+    ],
+    "options": [
+     "Playing exactly what's written",
+     "Balancing the volume between instruments",
+     "Watching the baton closely to stay together",
+     "Playing while sensing the players around them"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：指挥说：「隣の人の息づかいや、向こうのチェロの弓の動きを感じていれば、棒なんかなくても合うんです。」最后说放下指挥棒后大家「ほかのパートに耳を澄ませ始める。あれを、いつもやってほしいんです」。\n推理：准确是各自在家练的事；平衡「は、結果なんですよ」；「私の棒を見ろ」是不顺利的乐团的做法。他要的是一边感受、倾听周围的人一边演奏。\n容易错：把「棒を見ろ」当成他的要求，其实他是在批评。",
+   "en": "Evidence: He says 「隣の人の息づかいや、向こうのチェロの弓の動きを感じていれば、棒なんかなくても合うんです。」 and, after lowering the baton, that players 「ほかのパートに耳を澄ませ始める。あれを、いつもやってほしいんです」.\nReasoning: Accuracy is home practice; balance 「は、結果なんですよ」; 'watch my baton' is what failing orchestras do. He wants them to play while sensing and listening to those around them.\nTrap: taking 「棒を見ろ」 as his demand — he's criticising it."
+  },
+  "wrong": [
+   {
+    "zh": "准确是「各自が家で練習してくること」，不是合奏时的要求。",
+    "en": "Accuracy is 「各自が家で練習してくること」, not his rehearsal demand."
+   },
+   {
+    "zh": "他说平衡「は、結果なんですよ」。",
+    "en": "He says balance 「は、結果なんですよ」."
+   },
+   {
+    "zh": "看指挥棒是不顺利的乐团的做法，他反而会放下指挥棒。",
+    "en": "Watching the baton is what failing orchestras do; he even lowers it."
+   },
+   null
+  ],
+  "traps": [
+   "denied-guess",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n1-ck-223",
+  "type": "point",
+  "scene": "会社で、男の人と女の人が、女の人の引っ越しについて話しています。",
+  "question": "女の人が古い一軒家を借りることにしたのはどうしてですか。",
+  "lines": [
+   [
+    "M",
+    "引っ越したんだって？駅の近くのマンションから、わざわざ古い一軒家に。"
+   ],
+   [
+    "F",
+    "うん。学生のころにやめたチェロ、去年からまた弾いてるの。マンションだと、夜に弾くと下の階から苦情が来るし、昼間は仕事でしょう。今の家は両隣が畑で、一番近い家まで五十メートルくらいあるから。大家さんにも、楽器を弾いていいってちゃんと確認したし。"
+   ],
+   [
+    "M",
+    "へえ。家賃は安くなったの？"
+   ],
+   [
+    "F",
+    "それが、前とほとんど変わらないの。冬はすきま風で寒いし。でもね、住んでみてびっくりしたのは、夜の静けさ。虫の声しか聞こえなくて、最初の晩は、かえって眠れなかったくらい。"
+   ],
+   [
+    "M",
+    "庭もあるんでしょう？通勤はきつくならない？"
+   ],
+   [
+    "F",
+    "庭は草取りが大変なだけ。通勤は三十分延びたけど、電車で楽譜を読めるからいいの。"
+   ]
+  ],
+  "options": [
+   "夜でも気兼ねなく楽器を練習できるから",
+   "前の住まいより家賃が安くなるから",
+   "庭のある家に住んでみたかったから",
+   "駅から離れた静かな所に住みたかったから"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "公司里，男人和女人在谈女人搬家的事。",
+    "question": "女人为什么决定租一栋老房子？",
+    "lines": [
+     "听说你搬家了？特意从车站附近的公寓搬到老的独栋房子。",
+     "嗯。我学生时代放下的大提琴，去年起又开始拉了。住公寓的话，晚上一拉楼下就来投诉，白天又要上班。现在的房子两边都是田，离最近的人家有五十米左右。也跟房东确认过可以拉琴了。",
+     "哦。房租便宜了吗？",
+     "其实和以前差不多。冬天还漏风，冷。不过，住进去才吓了一跳的是晚上的安静。只听得见虫叫，头一晚反而没睡着。",
+     "也有院子吧？通勤不会变辛苦吗？",
+     "院子只是拔草累人。通勤多了三十分钟，不过可以在电车上看乐谱，挺好。"
+    ],
+    "options": [
+     "因为晚上也可以无所顾忌地练琴",
+     "因为房租比以前的住处便宜",
+     "因为想住带院子的房子",
+     "因为想住在离车站远的安静地方"
+    ]
+   },
+   "en": {
+    "scene": "At work, a man and a woman are talking about the woman's move.",
+    "question": "Why did the woman decide to rent an old house?",
+    "lines": [
+     "I hear you moved — from a flat near the station to an old house, of all things.",
+     "Yes. I took up the cello again last year, after giving it up as a student. In the flat, if I played at night the people downstairs complained, and in the day I'm at work. The house has fields on both sides; the nearest neighbour is about fifty metres away. And I checked properly with the landlord that I can play.",
+     "Oh. Is the rent cheaper?",
+     "Actually, it's about the same as before. And it's draughty and cold in winter. But what surprised me once I moved in was how quiet the nights are. All you hear is insects — the first night I actually couldn't sleep.",
+     "There's a garden too, isn't there? And isn't the commute harder?",
+     "The garden is just a lot of weeding. The commute is thirty minutes longer, but I can read scores on the train, so it's fine."
+    ],
+    "options": [
+     "Because she can practise her instrument at night without worrying",
+     "Because the rent is lower than before",
+     "Because she wanted to live in a house with a garden",
+     "Because she wanted a quiet place away from the station"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的一开始就说住公寓「夜に弾くと下の階から苦情が来るし、昼間は仕事でしょう」，现在的房子「一番近い家まで五十メートルくらいある」。\n推理：她重新开始拉大提琴，白天上班只能晚上练，公寓会被投诉，所以选了离邻居远的房子，还跟房东确认过能拉琴。房租「ほとんど変わらない」；院子「草取りが大変なだけ」。\n容易错：「夜の静けさ」是住进去后「びっくりした」的发现，不是搬家的理由；离邻居远是为了不打扰别人。",
+   "en": "Evidence: She says right away that in the flat 「夜に弾くと下の階から苦情が来るし、昼間は仕事でしょう」, while the house is 「一番近い家まで五十メートルくらいある」.\nReasoning: She has taken up the cello again, can only practise at night, and got complaints in the flat — hence a house far from neighbours, with the landlord's OK to play. The rent is 「ほとんど変わらない」; the garden is 「草取りが大変なだけ」.\nTrap: 「夜の静けさ」 is something that surprised her after moving in, not why she moved; the distance is about not disturbing others."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "房租「前とほとんど変わらない」。",
+    "en": "The rent is 「前とほとんど変わらない」."
+   },
+   {
+    "zh": "院子「草取りが大変なだけ」，不是理由。",
+    "en": "The garden is 「草取りが大変なだけ」 — not the reason."
+   },
+   {
+    "zh": "夜里的安静是她住进去以后才发现的，“吓了一跳”说明她不是冲着安静搬的。",
+    "en": "The quiet nights are something she found after moving in — her surprise shows it wasn't why she moved."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-ck-224",
+  "type": "point",
+  "scene": "ラジオで、アナウンサーが、ビルの屋上でミツバチを飼っている男の人に話を聞いています。",
+  "question": "男の人が、今一番気にかけていることは何ですか。",
+  "lines": [
+   [
+    "F",
+    "都会の真ん中でミツバチを飼うというのは、珍しいですね。ご苦労も多いんじゃありませんか。"
+   ],
+   [
+    "M",
+    "そうですね。始めたときからずっと神経を使っているのは、ハチそのものより、むしろ周りの方々のほうなんです。ハチがいると聞くだけで、身構える方は少なくありませんから。"
+   ],
+   [
+    "F",
+    "蜜は十分とれるんですか。病気になったりは？"
+   ],
+   [
+    "M",
+    "街路樹や公園の花が意外と多くて、去年は思っていた以上にとれました。病気も、定期的に巣箱を見ていれば、まず大丈夫です。"
+   ],
+   [
+    "F",
+    "刺されることはないんですか。"
+   ],
+   [
+    "M",
+    "ミツバチは、こちらが何もしなければ、まず刺しません。先月、近くの歩道で人が刺されたと大騒ぎになったんですが、調べてみたらスズメバチで、うちのハチとは関係ありませんでした。それでも、ふだんから近所の方を屋上にお招きして巣箱を見ていただいたり、蜜をお配りしたりしていたおかげで、すぐに信じていただけたんです。一度でも嫌だと思われたら、ここでは続けられませんから。"
+   ]
+  ],
+  "options": [
+   "十分な量の蜜がとれないこと",
+   "ハチが病気にかかってしまうこと",
+   "近所の人に不安を与えてしまうこと",
+   "ハチが道を通る人を刺すこと"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "广播里，播音员在采访在大楼屋顶养蜜蜂的男人。",
+    "question": "男人现在最在意的是什么？",
+    "lines": [
+     "在城市中心养蜜蜂，真少见。辛苦的地方也不少吧？",
+     "是啊。从开始起我一直费心的，与其说是蜜蜂本身，不如说是周围的人。只要听说有蜜蜂就紧张起来的人不少。",
+     "蜜能采到足够多吗？会不会生病？",
+     "行道树和公园的花意外地多，去年比预想的采得还多。生病也是，定期查看蜂箱基本就没问题。",
+     "不会蜇人吗？",
+     "只要我们什么都不做，蜜蜂基本不会蜇人。上个月，附近人行道上有人被蜇，闹得沸沸扬扬，一查是胡蜂，和我的蜜蜂没关系。即便如此，多亏平时就请邻居到屋顶来看蜂箱、把蜜分给大家，大家马上就相信了。只要被人讨厌一次，在这里就做不下去了。"
+    ],
+    "options": [
+     "采不到足够的蜜",
+     "蜜蜂会生病",
+     "让邻居感到不安",
+     "蜜蜂蜇到路过的人"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, an announcer is interviewing a man who keeps honeybees on a building roof.",
+    "question": "What is the man most concerned about now?",
+    "lines": [
+     "Keeping bees in the middle of the city is unusual. It must take a lot of work?",
+     "It does. What I've taken care over from the start is less the bees themselves than the people around me. Plenty of people tense up at the mere mention of bees.",
+     "Can you get enough honey? Do the bees get sick?",
+     "There are surprisingly many street trees and park flowers; last year I got more than I expected. As for illness, if you check the hives regularly, it's almost always fine.",
+     "Don't people get stung?",
+     "Honeybees almost never sting if you leave them alone. Last month there was a big fuss when someone was stung on a nearby pavement, but it turned out to be a hornet, nothing to do with my bees. Even so, because I'd been inviting neighbours up to the roof to see the hives and handing out honey, they believed me straight away. If people turn against it even once, I can't carry on here."
+    ],
+    "options": [
+     "Not getting enough honey",
+     "The bees falling ill",
+     "Making the neighbours uneasy",
+     "The bees stinging passers-by"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的一开始就说：「始めたときからずっと神経を使っているのは、ハチそのものより、むしろ周りの方々のほうなんです。」最后说「一度でも嫌だと思われたら、ここでは続けられませんから」。\n推理：蜜去年比预想的还多；生病「まず大丈夫」。他一直在意的是邻居一听有蜂就紧张，所以平时请邻居来参观、分蜜。被蜇的骚动其实是胡蜂，这件事反而说明让邻居安心的努力起了作用。\n容易错：被蜇的骚动最抢耳，但那是胡蜂，蜜蜂「まず刺しません」。",
+   "en": "Evidence: He says at the outset 「始めたときからずっと神経を使っているのは、ハチそのものより、むしろ周りの方々のほうなんです。」 and ends with 「一度でも嫌だと思われたら、ここでは続けられませんから」.\nReasoning: Honey beat expectations last year; illness is 「まず大丈夫」. What he has always minded is neighbours tensing up at the thought of bees, so he invites them up and hands out honey. The stinging fuss was a hornet, and it shows his efforts to reassure neighbours paid off.\nTrap: the stinging incident is the most striking detail, but it was a hornet; honeybees 「まず刺しません」."
+  },
+  "wrong": [
+   {
+    "zh": "去年「思っていた以上にとれました」。",
+    "en": "Last year he got 「思っていた以上に」."
+   },
+   {
+    "zh": "生病「定期的に巣箱を見ていれば、まず大丈夫」。",
+    "en": "Illness is 「まず大丈夫」 with regular hive checks."
+   },
+   null,
+   {
+    "zh": "被蜇的骚动是胡蜂造成的；他说蜜蜂「まず刺しません」，在意的是邻居的不安。",
+    "en": "The stinging fuss was a hornet; he says honeybees 「まず刺しません」 — it's the neighbours' unease he minds."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n1-ck-225",
+  "type": "point",
+  "scene": "会社で、女の人と男の人が、新しく入れた社内チャットについて話しています。",
+  "question": "男の人は、社内チャットが使われない一番の原因は何だと考えていますか。",
+  "lines": [
+   [
+    "F",
+    "新しいチャット、入れて三か月なのに、全然使われてないね。操作が難しいのかな。"
+   ],
+   [
+    "M",
+    "説明会のあと、使い方はみんなすぐ覚えたよ。若い人なんて、プライベートで似たようなの使ってるし。"
+   ],
+   [
+    "F",
+    "じゃあ、通知が多すぎてうるさいとか？"
+   ],
+   [
+    "M",
+    "通知は自分で切れるからね。……うちの部の場合だけど、部長が相変わらず、大事な指示は全部メールで送ってくるでしょう。"
+   ],
+   [
+    "F",
+    "ああ、確かに。"
+   ],
+   [
+    "M",
+    "そうすると結局、みんなメールを一日中開いてなきゃいけない。チャットもメールも両方見るのは面倒だから、慣れてるほうに戻っちゃうんだよ。上の人が使い始めない限り、変わらないと思うな。"
+   ],
+   [
+    "F",
+    "部長に言ってみる？"
+   ],
+   [
+    "M",
+    "言いにくいけどね。"
+   ]
+  ],
+  "options": [
+   "操作の方法が覚えにくいこと",
+   "通知が多くて仕事の邪魔になること",
+   "使い慣れているのが若い社員だけであること",
+   "管理職が従来の連絡手段を変えないこと"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "公司里，女人和男人在谈新引进的公司内部聊天工具。",
+    "question": "男人认为公司内部聊天工具没人用的最大原因是什么？",
+    "lines": [
+     "新的聊天工具引进三个月了，完全没人用啊。是操作太难吗？",
+     "说明会之后，大家很快就学会用法了。年轻人私下也在用类似的东西。",
+     "那是通知太多太烦？",
+     "通知可以自己关掉嘛。……我们部门的情况是，部长还是老样子，重要的指示全都用邮件发吧。",
+     "啊，确实。",
+     "那样一来，大家结果都得一整天开着邮件。聊天和邮件两边都看太麻烦，就退回到用惯的那边了。只要上面的人不开始用，就不会变吧。",
+     "跟部长说说？",
+     "不好开口啊。"
+    ],
+    "options": [
+     "操作方法难记",
+     "通知太多妨碍工作",
+     "只有年轻员工用得惯",
+     "管理层不改变以往的联络方式"
+    ]
+   },
+   "en": {
+    "scene": "At a company, a woman and a man are talking about the new in-house chat tool.",
+    "question": "What does the man think is the main reason the chat tool isn't used?",
+    "lines": [
+     "The new chat tool has been in for three months, and nobody uses it. Is it hard to operate?",
+     "After the briefing, everyone picked it up right away. The younger staff use similar things privately anyway.",
+     "Then are there too many notifications?",
+     "You can turn notifications off yourself. …In our department, at least, the manager still sends every important instruction by email, right?",
+     "Ah, true.",
+     "So in the end everyone has to keep their email open all day. Checking both chat and email is a hassle, so people slip back to what they're used to. Unless the people at the top start using it, nothing will change.",
+     "Shall we tell the manager?",
+     "It's awkward to bring up, though."
+    ],
+    "options": [
+     "It's hard to learn how to use it",
+     "Its notifications get in the way of work",
+     "Only the younger staff are used to it",
+     "Managers haven't changed how they communicate"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「部長が相変わらず、大事な指示は全部メールで送ってくるでしょう。」「上の人が使い始めない限り、変わらないと思うな。」\n推理：用法大家「すぐ覚えた」；通知「自分で切れる」。部长还用邮件发重要指示，大家只好一整天开着邮件，两边看太麻烦就退回邮件。根源是上面的人不换联络方式。\n容易错：「若い人」只是用来说明大家都会用，不是原因。",
+   "en": "Evidence: He says 「部長が相変わらず、大事な指示は全部メールで送ってくるでしょう。」 and 「上の人が使い始めない限り、変わらないと思うな。」\nReasoning: Everyone 「すぐ覚えた」 how to use it, and notifications 「自分で切れる」. Because the manager still sends key instructions by email, people keep email open all day and drift back to it. The root is that those at the top haven't switched.\nTrap: 「若い人」 is mentioned only to show people can use it, not as the cause."
+  },
+  "wrong": [
+   {
+    "zh": "用法「みんなすぐ覚えた」。",
+    "en": "Everyone 「すぐ覚えた」 how to use it."
+   },
+   {
+    "zh": "通知「自分で切れる」。",
+    "en": "Notifications 「自分で切れる」."
+   },
+   {
+    "zh": "提到年轻人是为了说明大家都会用，不是原因。",
+    "en": "Young staff are mentioned to show it's easy, not as the cause."
+   },
+   null
+  ],
+  "traps": [
+   "denied-guess",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n1-ck-226",
+  "type": "point",
+  "scene": "大学で、女の先生と男の学生が、学生のレポートについて話しています。",
+  "question": "先生は、レポートの何が一番問題だと言っていますか。",
+  "lines": [
+   [
+    "M",
+    "先生、先日のレポート、再提出と言われたんですが、引用が多すぎたんでしょうか。"
+   ],
+   [
+    "F",
+    "引用の量は、あのテーマならあのくらいは必要ですよ。出典もきちんと書いてあったし。"
+   ],
+   [
+    "M",
+    "では、アンケートの人数が少なかったとか……。"
+   ],
+   [
+    "F",
+    "三十人というのは確かに多くはないけど、学部のレポートとしては十分です。ただ、その三十人、全員あなたのサークルの仲間でしょう。それなのに、結論で「今の大学生は」と書いている。"
+   ],
+   [
+    "M",
+    "あ……。"
+   ],
+   [
+    "F",
+    "調べた範囲から言えることと、あなたが言いたいことが、ずれているの。三十人の結果としてなら、とても面白い内容なんですよ。表のまとめ方も見やすかったし。"
+   ],
+   [
+    "M",
+    "では、結論を書き直せば……。"
+   ],
+   [
+    "F",
+    "そう。言える範囲で、言い切ってください。"
+   ]
+  ],
+  "options": [
+   "調べた対象に比べて結論を広げすぎたこと",
+   "ほかの人の文章を引用しすぎたこと",
+   "アンケートに答えた人が少なすぎたこと",
+   "結果をまとめた表がわかりにくかったこと"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "大学里，女老师和男学生在谈学生的报告。",
+    "question": "老师说报告最大的问题是什么？",
+    "lines": [
+     "老师，前几天的报告您让我重交，是引用太多了吗？",
+     "引用的量，那个题目的话需要那么多。出处也写得很规范。",
+     "那是问卷的人数太少……",
+     "三十个人确实不算多，不过作为本科的报告足够了。不过，那三十个人全都是你社团的伙伴吧。可你在结论里写的是“现在的大学生”。",
+     "啊……",
+     "从调查范围能得出的东西，和你想说的东西，对不上。作为三十个人的结果的话，内容很有意思。表格也整理得很清楚。",
+     "那把结论改写一下的话……",
+     "对。在能说的范围内，把话说透。"
+    ],
+    "options": [
+     "相对于调查对象，结论扩大得太过",
+     "引用别人的文章太多",
+     "回答问卷的人太少",
+     "整理结果的表格不好懂"
+    ]
+   },
+   "en": {
+    "scene": "At a university, a female teacher and a male student are talking about the student's report.",
+    "question": "What does the teacher say is the main problem with the report?",
+    "lines": [
+     "Professor, you asked me to resubmit my report. Was it too many quotations?",
+     "For that topic, that many quotations are needed. And you cited your sources properly.",
+     "Then was the survey too small…?",
+     "Thirty isn't many, admittedly, but it's enough for an undergraduate report. But all thirty are friends from your club, aren't they? And yet your conclusion says 'university students today.'",
+     "Oh…",
+     "What your data can support and what you want to say don't match. As results for thirty people, it's really interesting. And the tables were clearly laid out.",
+     "So if I rewrite the conclusion…",
+     "Yes. Say it firmly, within what you can claim."
+    ],
+    "options": [
+     "The conclusion goes far beyond the people surveyed",
+     "Quoting other people's writing too much",
+     "Too few people answered the survey",
+     "The tables of results were hard to follow"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：老师说：「その三十人、全員あなたのサークルの仲間でしょう。それなのに、結論で『今の大学生は』と書いている。」「調べた範囲から言えることと、あなたが言いたいことが、ずれているの。」\n推理：引用量「必要ですよ」；三十人「十分です」；表格「見やすかった」。问题是只调查了社团伙伴，却把结论推到所有大学生。\n容易错：「多くはないけど」只是先承认，后面马上说足够。",
+   "en": "Evidence: She says 「その三十人、全員あなたのサークルの仲間でしょう。それなのに、結論で『今の大学生は』と書いている。」 and 「調べた範囲から言えることと、あなたが言いたいことが、ずれているの。」\nReasoning: The quotations are 「必要ですよ」, thirty is 「十分です」, and the tables were 「見やすかった」. The problem is surveying only club friends but concluding about all students.\nTrap: 「多くはないけど」 is just a concession before she says it's enough."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "引用量「あのくらいは必要ですよ」，出处也规范。",
+    "en": "That many quotations 「必要ですよ」, and sources were cited."
+   },
+   {
+    "zh": "三十人「学部のレポートとしては十分です」。",
+    "en": "Thirty is 「学部のレポートとしては十分です」."
+   },
+   {
+    "zh": "表格「見やすかった」，正好相反。",
+    "en": "The tables were 「見やすかった」 — the opposite."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-ck-227",
+  "type": "point",
+  "scene": "ラジオで、アナウンサーが、写真家の女の人に話を聞いています。",
+  "question": "写真家が、フィルムのカメラを使うようになった一番の理由は何ですか。",
+  "lines": [
+   [
+    "M",
+    "最近、人物の写真はすべてフィルムで撮っていらっしゃるそうですね。やはり、あの独特の色合いがお好きで？"
+   ],
+   [
+    "F",
+    "色は、正直に言うと、今はデジタルでもかなり近いものが出せるんです。"
+   ],
+   [
+    "M",
+    "では、懐かしさのようなものでしょうか。"
+   ],
+   [
+    "F",
+    "私はデジタルから始めた世代なので、懐かしいという感覚はないんですよ。デジタルですと、何百枚でも撮れますよね。それで、撮られる方と話をするより先に、とりあえずシャッターを切ってしまう。あとで選べばいい、と。"
+   ],
+   [
+    "M",
+    "ええ。"
+   ],
+   [
+    "F",
+    "フィルムは一本で三十六枚しかないし、お金もかかる。だから一枚一枚が惜しくて、撮る前にその方とじっくり話すようになったんです。相手の表情がほどけてくるのを待てるようになった。写真が変わったのは、そこからですね。現像に時間がかかるのは、不便ですけど。"
+   ]
+  ],
+  "options": [
+   "フィルムならではの色合いを出したいから",
+   "昔の写真の懐かしさを大切にしたいから",
+   "撮る前に相手と向き合うようになるから",
+   "デジタルより費用を抑えられるから"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "广播里，播音员在采访一位女摄影师。",
+    "question": "摄影师开始用胶片相机的最大理由是什么？",
+    "lines": [
+     "听说您最近人物照片全都用胶片拍。果然是喜欢那种独特的色调？",
+     "色调嘛，说实话，现在用数码也能做出很接近的效果。",
+     "那是一种怀旧感吗？",
+     "我是从数码开始的一代，没有怀旧的感觉。用数码的话，几百张都能拍吧。所以还没和被拍的人说上话，就先按快门了。想着之后再挑就行。",
+     "是的。",
+     "胶片一卷只有三十六张，还花钱。所以每一张都舍不得，开始在拍之前和对方好好聊。能等到对方表情放松下来了。照片就是从那时开始变的。冲洗要花时间，倒是不方便。"
+    ],
+    "options": [
+     "想拍出胶片特有的色调",
+     "想珍惜老照片的怀旧感",
+     "因为拍之前会和对方好好交流",
+     "因为比数码省钱"
+    ]
+   },
+   "en": {
+    "scene": "On the radio, an announcer is interviewing a female photographer.",
+    "question": "What is the photographer's main reason for switching to film cameras?",
+    "lines": [
+     "I hear you now shoot all your portraits on film. Is it that distinctive colour you love?",
+     "To be honest, digital can get very close to that colour these days.",
+     "Then is it a kind of nostalgia?",
+     "I'm from the generation that started on digital, so there's no nostalgia. With digital you can take hundreds of shots, can't you? So you end up pressing the shutter before you've even talked to the person — thinking you can choose later.",
+     "Yes.",
+     "A roll of film has only thirty-six frames, and it costs money. So every frame feels precious, and I started talking properly with people before shooting. I learned to wait until their expression relaxed. That's when my pictures changed. Developing takes time, which is inconvenient, though."
+    ],
+    "options": [
+     "To get the colour only film gives",
+     "To keep the nostalgia of old photographs",
+     "Because it makes her engage with people before shooting",
+     "Because it costs less than digital"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「だから一枚一枚が惜しくて、撮る前にその方とじっくり話すようになったんです。」「写真が変わったのは、そこからですね。」\n推理：色调数码「かなり近いものが出せる」；她是数码一代，「懐かしいという感覚はない」。胶片张数少，舍不得浪费，所以拍前和对方好好聊、等对方表情放松，这才是她用胶片的原因。\n容易错：胶片「お金もかかる」，比数码贵，不是省钱。",
+   "en": "Evidence: She says 「だから一枚一枚が惜しくて、撮る前にその方とじっくり話すようになったんです。」 and 「写真が変わったのは、そこからですね。」\nReasoning: Digital 「かなり近いものが出せる」 colour-wise, and as a digital-native she has 「懐かしいという感覚はない」. With few frames, she won't waste them, so she talks with her subjects and waits for them to relax — that's why she uses film.\nTrap: film 「お金もかかる」 — it costs more, not less."
+  },
+  "wrong": [
+   {
+    "zh": "她说色调数码「かなり近いものが出せる」。",
+    "en": "She says digital 「かなり近いものが出せる」."
+   },
+   {
+    "zh": "她是数码一代，「懐かしいという感覚はない」。",
+    "en": "As a digital-native she has 「懐かしいという感覚はない」."
+   },
+   null,
+   {
+    "zh": "胶片「お金もかかる」，正好相反。",
+    "en": "Film 「お金もかかる」 — the opposite."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-ck-228",
+  "type": "point",
+  "scene": "公民館で、館長の男の人と女の職員が、高齢者向けのスマートフォン講座について話しています。",
+  "question": "館長は、講座の参加者が増えたのはどうしてだと考えていますか。",
+  "lines": [
+   [
+    "F",
+    "スマホ講座、今期は申し込みが去年の倍なんです。チラシを新しくしたのがよかったんでしょうか。"
+   ],
+   [
+    "M",
+    "チラシは確かに見やすくなったけど、申し込んだ人に聞くと、チラシを見て来た人は案外少ないんだよ。"
+   ],
+   [
+    "F",
+    "そうなんですか。じゃあ、回数を月二回に増やしたから……。"
+   ],
+   [
+    "M",
+    "それもあるかもしれないけど、名簿を見るとね、去年来た人がまた来てるんだよ。去年までは、二十人を講師一人で教えていたでしょう。機種がばらばらだから、一人がつまずくと、全員がそこで待たされてた。"
+   ],
+   [
+    "F",
+    "ええ、途中で帰ってしまう方もいました。"
+   ],
+   [
+    "M",
+    "今年は、同じ機種の人どうしで五人ずつの班にして、それぞれに学生のボランティアについてもらってる。置いていかれる人がいなくなったから、「今度は友達を連れてくる」って人が多いんだよ。"
+   ]
+  ],
+  "options": [
+   "講座のチラシをわかりやすく作り直したから",
+   "少人数の班に分けて誰も遅れないようにしたから",
+   "講座を開く回数を月二回に増やしたから",
+   "参加者に友達を誘うように頼んだから"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "公民馆里，男馆长和女职员在谈面向老年人的智能手机讲座。",
+    "question": "馆长认为讲座参加者增加的原因是什么？",
+    "lines": [
+     "智能手机讲座，这一期报名是去年的两倍。是换了新传单的功劳吗？",
+     "传单确实更好看了，不过问了报名的人，看了传单来的人意外地少。",
+     "是吗。那是因为把次数增加到一个月两次……",
+     "可能也有那个原因，不过看名单的话，去年来过的人又来了。到去年为止，是一个讲师教二十个人吧。机型五花八门，一个人卡住，所有人就得在那儿等。",
+     "是的，还有中途就回去的人。",
+     "今年按同样机型的人五个一组，每组配一名学生志愿者。没有掉队的人了，所以很多人说“下次带朋友来”。"
+    ],
+    "options": [
+     "因为把讲座传单改得更易懂了",
+     "因为分成小组，让谁都不掉队",
+     "因为把开课次数增加到每月两次",
+     "因为请参加者邀请朋友"
+    ]
+   },
+   "en": {
+    "scene": "At a community centre, the male director and a female staff member are talking about the smartphone course for older people.",
+    "question": "Why does the director think more people are joining the course?",
+    "lines": [
+     "Sign-ups for the smartphone course are double last year's this term. Was it the new flyer?",
+     "The flyer is certainly clearer, but when I ask people who signed up, surprisingly few came because of it.",
+     "Really? Then because we increased it to twice a month…",
+     "Maybe that too, but if you look at the list, last year's people are coming back. Until last year, one instructor taught twenty people. Their phones were all different, so when one person got stuck, everyone had to wait.",
+     "Yes, some people even left partway through.",
+     "This year we put people with the same model into groups of five, each with a student volunteer. No one gets left behind now, so lots of them say, 'Next time I'll bring a friend.'"
+    ],
+    "options": [
+     "Because the course flyer was made clearer",
+     "Because small groups meant no one fell behind",
+     "Because the course now runs twice a month",
+     "Because participants were asked to invite friends"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：馆长说：「名簿を見るとね、去年来た人がまた来てるんだよ。」又说今年按机型分五人小组、配志愿者，「置いていかれる人がいなくなったから」很多人要带朋友来。\n推理：看了传单来的人「案外少ない」；增加次数「それもあるかもしれない」，但他接着讲的是老学员回来了。以前一个人卡住全班等，有人中途回去；现在分成小组，没人掉队，老学员回头还带朋友。\n容易错：带朋友来是学员自己说的，不是馆方请求的。",
+   "en": "Evidence: The director says 「名簿を見るとね、去年来た人がまた来てるんだよ。」 and that with same-model groups of five and a volunteer each, 「置いていかれる人がいなくなったから」 many plan to bring friends.\nReasoning: Few came via the flyer (「案外少ない」); more sessions 「それもあるかもしれない」, but he goes on to returning participants. Before, one person stuck meant the whole class waited and some left; now, in small groups, no one falls behind, so people return and bring friends.\nTrap: bringing friends is the participants' own idea, not something the centre asked for."
+  },
+  "wrong": [
+   {
+    "zh": "看了传单来的人「案外少ない」。",
+    "en": "Few came because of the flyer — 「案外少ない」."
+   },
+   null,
+   {
+    "zh": "馆长只说「それもあるかもしれない」，关键是老学员回来了。",
+    "en": "He grants only 「それもあるかもしれない」; the key is returning participants."
+   },
+   {
+    "zh": "「友達を連れてくる」是学员自己说的，不是馆方拜托的。",
+    "en": "「友達を連れてくる」 is what participants say themselves, not a request."
+   }
+  ],
+  "traps": [
+   "denied-guess",
+   "twisted"
+  ]
  }
 ]

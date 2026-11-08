@@ -1622,5 +1622,933 @@
    "intent",
    "perspective"
   ]
+ },
+ {
+  "id": "n1-ck-529",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "新人ならいざしらず、入社十年目の君がこんな初歩的なミスをするとはね。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "恐れ入ります。それほどでもありません。",
+   "申し訳ありません。お恥ずかしい限りです。",
+   "ええ、新人には難しいミスですからね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "新人也就罢了，进公司第十年的你居然犯这么基础的错误。"
+    ],
+    "options": [
+     "不敢当。没有那么厉害。",
+     "非常抱歉。真是太丢人了。",
+     "是啊，这对新人来说是很难避免的错误嘛。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "From a new hire, maybe — but from you, ten years in, a beginner's mistake like this?"
+    ],
+    "options": [
+     "Thank you. It's really nothing special.",
+     "I'm very sorry. I'm thoroughly ashamed.",
+     "Yes, it's a hard mistake for a new hire to avoid."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「新人ならいざしらず、入社十年目の君がこんな初歩的なミスをするとはね。」\n推理：「〜ならいざしらず」是“如果是……还情有可原”，后面接“可是你……”，是在责备：老员工不该犯这种低级错误。「〜とはね」带着失望。被批评的女的道歉，说「お恥ずかしい限りです」，最自然。\n容易错：把「とはね」的感叹听成夸奖；以为话题是新人。",
+   "en": "Evidence: The man says: 「新人ならいざしらず、入社十年目の君がこんな初歩的なミスをするとはね。」\nReasoning: 「〜ならいざしらず」 means 'it would be one thing for…, but…' — he is rebuking her: someone ten years in shouldn't make a beginner's mistake. 「〜とはね」 carries his disappointment. She apologises — 「お恥ずかしい限りです」.\nTrap: hearing the exclamation 「とはね」 as praise; thinking the topic is new hires."
+  },
+  "wrong": [
+   {
+    "zh": "这是责备，不是夸奖，「それほどでもありません」用来回应夸奖。",
+    "en": "It's a rebuke, not praise — 「それほどでもありません」 answers a compliment."
+   },
+   null,
+   {
+    "zh": "男的说的是“新人可以原谅，你不行”，话题是她自己的错误，不是新人。",
+    "en": "He means a new hire could be excused but she can't — the topic is her own mistake, not new hires."
+   }
+  ],
+  "traps": [
+   "intent",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-ck-530",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "管理職とは名ばかりで、実際は雑用ばかり押しつけられてるんだよ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "へえ、管理職になると、雑用はしなくていいんだ。",
+   "そうなんだ。仕事が減って楽になったんだね。",
+   "それは気の毒に。肩書きだけってことか。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "说是管理职位，其实只是挂个名，实际上净被塞些杂事。"
+    ],
+    "options": [
+     "哦，当了管理职，就不用干杂事了啊。",
+     "这样啊，工作少了，轻松多了吧。",
+     "那可真够呛。就是只有个头衔啊。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I'm a manager in name only — in practice I just get lumbered with odd jobs."
+    ],
+    "options": [
+     "Oh, so once you're a manager you don't have to do odd jobs.",
+     "I see — so you've got less work and it's easier now.",
+     "That's rotten. So it's just a title."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「管理職とは名ばかりで、実際は雑用ばかり押しつけられてるんだよ。」\n推理：「〜とは名ばかりで」是“名义上是……，实际上并不是”。他在抱怨：头衔是管理职，干的却全是杂事。女的同情他，说「肩書きだけってことか」，最自然。\n容易错：抓住「管理職」以为不用干杂事；把抱怨听成变轻松了。",
+   "en": "Evidence: The man says: 「管理職とは名ばかりで、実際は雑用ばかり押しつけられてるんだよ。」\nReasoning: 「〜とは名ばかりで」 means 'X in name only': he's complaining that he has a manager's title but does nothing but odd jobs. Sympathising — 「肩書きだけってことか」 — fits.\nTrap: latching on to 「管理職」 and assuming no odd jobs; hearing a complaint as 'it's easier now'."
+  },
+  "wrong": [
+   {
+    "zh": "他说的是虽然是管理职，实际净干杂事，正好相反。",
+    "en": "He says that despite the title he does nothing but odd jobs — the opposite."
+   },
+   {
+    "zh": "他是在抱怨杂事多，不是工作少了。",
+    "en": "He's complaining about all the odd jobs, not saying he has less work."
+   },
+   null
+  ],
+  "traps": [
+   "repeat-word",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-ck-531",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "うちの息子、学校から帰ってくるが早いか、ランドセル放り出して遊びに行っちゃうんだよ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "ははは、元気でいいじゃない。遊びたい盛りだもんね。",
+   "えらいね。ちゃんと宿題を済ませてから行くんだ。",
+   "え、学校にランドセルを置いてきちゃったの？"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "我家儿子，一从学校回来，就把书包一扔跑出去玩了。"
+    ],
+    "options": [
+     "哈哈，有精神不是挺好的嘛。正是贪玩的年纪。",
+     "真乖啊。先把作业做完了才出去。",
+     "诶，他把书包落在学校了？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "My son — the moment he's home from school, he throws down his satchel and runs off to play."
+    ],
+    "options": [
+     "Ha, at least he's full of energy. It's the age for playing.",
+     "Good boy — he gets his homework done before he goes.",
+     "What, he left his satchel at school?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「学校から帰ってくるが早いか、ランドセル放り出して遊びに行っちゃうんだよ。」\n推理：「〜が早いか」是“刚一……就……”，说儿子一到家就把书包一扔出去玩，带着点无奈。女的笑着说孩子有精神、正是贪玩的年纪，顺着他的话安慰，最自然。\n容易错：以为先写完作业才出去；「ランドセル」听成落在学校。",
+   "en": "Evidence: The man says: 「学校から帰ってくるが早いか、ランドセル放り出して遊びに行っちゃうんだよ。」\nReasoning: 「〜が早いか」 means 'no sooner… than' — the boy is out playing the moment he's home, and the father sounds a little exasperated. Laughing it off — he's full of energy, it's the age for it — fits.\nTrap: assuming he does homework first; hearing that the satchel was left at school."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "书包一扔就跑出去了，根本没提先写作业。",
+    "en": "He throws his satchel down and runs — nothing about doing homework first."
+   },
+   {
+    "zh": "书包是到家后扔下的，不是落在学校。",
+    "en": "He throws the satchel down at home; he didn't leave it at school."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n1-ck-532",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "課長、お手すきの際で結構ですので、こちらの企画書にお目通しいただけますでしょうか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "わかった。今日中に目を通しておくよ。",
+   "ありがとう。じゃあ、手が空いたら読んでおいてくれる？",
+   "もう全部読み終わったの？早いね。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "科长，等您有空的时候就行，能请您过目一下这份企划书吗？"
+    ],
+    "options": [
+     "好的。今天之内我看一下。",
+     "谢谢。那你有空的时候帮我读一下好吗？",
+     "已经全部读完了？真快啊。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Excuse me, sir — whenever you have a moment, could you look over this proposal?"
+    ],
+    "options": [
+     "All right. I'll go through it today.",
+     "Thanks. Then could you read it when you're free?",
+     "You've read it all already? That was quick."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「お手すきの際で結構ですので、こちらの企画書にお目通しいただけますでしょうか。」\n推理：「お目通しいただく」是请上司“过目”的谦逊说法，「お手すきの際」是“您有空时”。被拜托看企划书的是科长，所以他答应「今日中に目を通しておくよ」，最自然。\n容易错：立场反了——请人看的是女的；「お目通し」以为是她已经读完。",
+   "en": "Evidence: The woman says: 「お手すきの際で結構ですので、こちらの企画書にお目通しいただけますでしょうか。」\nReasoning: 「お目通しいただく」 is the humble way to ask a superior to look something over, and 「お手すきの際」 means 'when you're free'. The section chief is the one asked, so 「今日中に目を通しておくよ」 fits.\nTrap: reversed roles — she is the one asking; taking 「お目通し」 to mean she has finished reading it."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "立场反了：是女的请科长看，不是科长请她看。",
+    "en": "Roles reversed: she is asking the chief to read it, not the other way round."
+   },
+   {
+    "zh": "她是请科长看，自己没说读完了什么。",
+    "en": "She is asking him to read it; she hasn't said she finished reading anything."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "tense"
+  ]
+ },
+ {
+  "id": "n1-ck-533",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "まあ、締め切りをあと一週間延ばしてもらえるなら、引き受けないでもないけどね。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "そうですか。では、今回は諦めます。",
+   "え、もう引き受けてくださったんですか。",
+   "助かります。では、その条件で調整します。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "嗯，要是截止日期能再延一个星期，我也不是不能接。"
+    ],
+    "options": [
+     "这样啊。那这次就算了。",
+     "诶，您已经接下来了吗？",
+     "太感谢了。那我就按这个条件来安排。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Well, if you could push the deadline back another week, I might just take it on."
+    ],
+    "options": [
+     "I see. Then we'll give up this time.",
+     "Oh, you've already taken it on?",
+     "That's a great help. I'll arrange it on those terms."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「締め切りをあと一週間延ばしてもらえるなら、引き受けないでもないけどね。」\n推理：「〜ないでもない」是双重否定，“也不是不……”，虽然勉强，其实是有条件地答应：只要延期一周就接。女的说「その条件で調整します」，接受他的条件，最自然。\n容易错：把双重否定听成拒绝；条件还没谈妥，不是已经接下来了。",
+   "en": "Evidence: The man says: 「締め切りをあと一週間延ばしてもらえるなら、引き受けないでもないけどね。」\nReasoning: 「〜ないでもない」 is a double negative, 'not that I wouldn't' — a grudging yes, on one condition: a week's extension. Agreeing to arrange it on those terms — 「その条件で調整します」 — fits.\nTrap: hearing the double negative as a refusal; the terms aren't settled yet, so he hasn't taken it on."
+  },
+  "wrong": [
+   {
+    "zh": "「引き受けないでもない」是有条件的答应，不是拒绝，没必要放弃。",
+    "en": "「引き受けないでもない」 is a conditional yes, not a refusal — no reason to give up."
+   },
+   {
+    "zh": "他说的是“如果延期就接”，现在还没接下来。",
+    "en": "He'll take it if the deadline moves — he hasn't taken it on yet."
+   },
+   null
+  ],
+  "traps": [
+   "contradiction",
+   "tense"
+  ]
+ },
+ {
+  "id": "n1-ck-534",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "あそこのお店、味もさることながら、器がまた素晴らしいのよ。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "そうか、味はいまひとつなんだね。",
+   "へえ、器まで楽しめるなんて、いいね。",
+   "へえ、器だけで選んだお店なんだ。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "那家店，味道自不必说，餐具也特别好。"
+    ],
+    "options": [
+     "是吗，味道不怎么样啊。",
+     "哦，连餐具都能欣赏，真不错。",
+     "哦，是只看餐具挑的店啊。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "That place — the food's good, of course, but the tableware is something else."
+    ],
+    "options": [
+     "I see — so the food isn't up to much.",
+     "Oh, you get to enjoy the dishes too — nice.",
+     "Oh, so you picked it just for the tableware."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「味もさることながら、器がまた素晴らしいのよ。」\n推理：「〜もさることながら」是“……自不必说，……更……”，先肯定味道好，再说餐具也很出色。男的说「器まで楽しめるなんて」，「まで」表示在味道之外还加上餐具，最自然。\n容易错：把「さることながら」听成否定味道；以为只看餐具。",
+   "en": "Evidence: The woman says: 「味もさることながら、器がまた素晴らしいのよ。」\nReasoning: 「〜もさることながら」 means 'X goes without saying, and Y as well' — the food is good and the tableware is outstanding too. 「器まで楽しめるなんて」 — 「まで」 adding the dishes on top of the food — fits.\nTrap: hearing 「さることながら」 as putting the food down; thinking it's only about the tableware."
+  },
+  "wrong": [
+   {
+    "zh": "「〜もさることながら」是先肯定味道，不是说味道不好。",
+    "en": "「〜もさることながら」 grants that the food is good — it doesn't run it down."
+   },
+   null,
+   {
+    "zh": "味道也好，不是只因为餐具才选的。",
+    "en": "The food is good too — it isn't chosen for the tableware alone."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n1-ck-535",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "十年前は、自分の店を持てる日が来るなんて、想像だにしなかったよ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "そうだよね。想像するのはただだもんね。",
+   "じゃあ、お店を持つのはまだ先なんだ。",
+   "本当におめでとう。夢みたいな話だね。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "十年前，我连想都没想过会有自己开店的一天。"
+    ],
+    "options": [
+     "是啊，想象又不花钱嘛。",
+     "那开店还要等一阵子啊。",
+     "真心恭喜！真像做梦一样啊。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Ten years ago, I never even dreamed I'd have a shop of my own one day."
+    ],
+    "options": [
+     "True — dreaming costs nothing.",
+     "So having a shop is still some way off.",
+     "Congratulations, really. It's like a dream come true."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「十年前は、自分の店を持てる日が来るなんて、想像だにしなかったよ。」\n推理：「〜だにしない」是“连……都不……”，「想像だにしなかった」是“连想都没想过”。说十年前没想到，等于说现在已经开了店，是在感慨。女的祝贺他，并说「夢みたいな話」，呼应他当年连想都不敢想，最自然。\n容易错：抓住「想像」这个词；时态——店已经开了，不是还在以后。",
+   "en": "Evidence: The man says: 「十年前は、自分の店を持てる日が来るなんて、想像だにしなかったよ。」\nReasoning: 「〜だにしない」 means 'not even…', so 「想像だにしなかった」 is 'never even imagined'. Saying he couldn't have imagined it ten years ago means the shop is now real — he is marvelling. Congratulating him and calling it 「夢みたいな話」, echoing that he never dared imagine it, fits.\nTrap: latching on to the word 「想像」; tense — the shop exists now, it isn't still to come."
+  },
+  "wrong": [
+   {
+    "zh": "他是在感慨梦想成真，不是在说想象的事。",
+    "en": "He's marvelling at a dream come true, not talking about daydreams."
+   },
+   {
+    "zh": "「十年前は」没想到，说明现在已经有店了，不是“还早”。",
+    "en": "He couldn't imagine it ten years ago — so he has the shop now; it isn't still ahead."
+   },
+   null
+  ],
+  "traps": [
+   "repeat-word",
+   "tense"
+  ]
+ },
+ {
+  "id": "n1-ck-536",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "部長、先日のトラブルの件では、すっかりお手を煩わせてしまいまして。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "そうか、まだ解決していないのか。",
+   "いや、トラブルのときはお互いさまだよ。",
+   "じゃあ、今度は私が手伝えばいいんだね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "部长，前几天出问题那件事，真是给您添了很多麻烦。"
+    ],
+    "options": [
+     "是吗，还没解决啊。",
+     "哪里，出了问题大家互相帮忙嘛。",
+     "那这次就由我来帮忙吧。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "About the trouble the other day, sir — I'm sorry to have put you to so much bother."
+    ],
+    "options": [
+     "I see — so it still isn't sorted out.",
+     "Not at all. We all help each other when things go wrong.",
+     "Then this time I should be the one to help, right?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「先日のトラブルの件では、すっかりお手を煩わせてしまいまして。」\n推理：「お手を煩わせる」是“让您费心、给您添麻烦”的敬语说法，句尾省略了「申し訳ありません」。事情已经过去（「先日の」），部长已经帮过忙了。部长说「お互いさまだよ」，表示不必在意，最自然。\n容易错：以为问题还没解决；以为部长还没帮忙、现在要去帮。",
+   "en": "Evidence: The woman says: 「先日のトラブルの件では、すっかりお手を煩わせてしまいまして。」\nReasoning: 「お手を煩わせる」 is the respectful way to say 'trouble you', with the apology left unsaid at the end. It is over (「先日の」) and the manager has already helped. Waving it off with 「お互いさまだよ」 fits.\nTrap: thinking the trouble is still going on; thinking he hasn't helped yet and is about to."
+  },
+  "wrong": [
+   {
+    "zh": "她是在为已经过去的事道谢致歉，没说还没解决。",
+    "en": "She is apologising for something that's over; she doesn't say it's unresolved."
+   },
+   null,
+   {
+    "zh": "部长已经帮过忙了，她是在为此致谢，不是请他现在帮忙。",
+    "en": "He has already helped — she is thanking him, not asking him to help now."
+   }
+  ],
+  "traps": [
+   "tense",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n1-ck-537",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "彼女、自分が正しいと思ったら、相手が社長だろうと言ってはばからないからね。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "そうそう。あの度胸は見習いたいよ。",
+   "そうか、社長には何も言えない人なんだ。",
+   "そうなんだ。ずいぶん遠慮深い人なんだね。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "她呀，只要认为自己是对的，哪怕对方是社长也照说不误。"
+    ],
+    "options": [
+     "对对。那份胆量真想学一学。",
+     "这样啊，她对社长什么都不敢说啊。",
+     "是吗，她可真是个很拘谨的人。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Once she thinks she's right, she'll say so without a second thought — even to the president."
+    ],
+    "options": [
+     "Exactly. I wish I had her nerve.",
+     "I see, so she can't say a thing to the president.",
+     "Really? She must be very reserved."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「相手が社長だろうと言ってはばからないからね。」\n推理：「〜てはばからない」是“毫无顾忌地……”，「〜だろうと」是“即使是……也”。她连对社长都敢直说。女的附和并佩服她的胆量，最自然。\n容易错：把「はばからない」听成“不敢”；「社長」这个词让人以为是在社长面前退缩。",
+   "en": "Evidence: The man says: 「相手が社長だろうと言ってはばからないからね。」\nReasoning: 「〜てはばからない」 means 'not hesitate to…', and 「〜だろうと」 'even if it's…'. She speaks her mind even to the president. Agreeing and admiring her nerve fits.\nTrap: hearing 「はばからない」 as 'doesn't dare'; the word 「社長」 suggesting she shrinks before him."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "她是连对社长都敢说，意思正好相反。",
+    "en": "She'll speak up even to the president — the exact opposite."
+   },
+   {
+    "zh": "毫无顾忌地说话，和“拘谨、客气”相反。",
+    "en": "Speaking without holding back is the opposite of reserved."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n1-ck-538",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "これだけの損失を出したんだから、部長も責任を問われずにはすまないでしょうね。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "そうだね。部長は何も問われずに済んで、よかった。",
+   "だろうね。責任を取って、異動ということもありうるな。",
+   "え、君が部長に責任を問うつもり？"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "造成了这么大的损失，部长也免不了要被追究责任吧。"
+    ],
+    "options": [
+     "是啊。部长什么都没被追究，太好了。",
+     "大概吧。说不定会为此负责被调走。",
+     "诶，你打算去追究部长的责任？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "After losses on this scale, the department head can hardly escape being held responsible."
+    ],
+    "options": [
+     "Right. Good thing he got off without any questions.",
+     "I suppose so. He might even be moved as a way of taking responsibility.",
+     "What, you're going to hold him responsible?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「部長も責任を問われずにはすまないでしょうね。」\n推理：「〜ずにはすまない」是“不……就了结不了”，也就是“免不了要……”。她推测部长一定会被追究责任。男的附和「だろうね」，再推想可能被调走，最自然。\n容易错：把「ずにはすまない」和「ずに済む」（不用……就行）弄混；立场——追究责任的不是她本人。",
+   "en": "Evidence: The woman says: 「部長も責任を問われずにはすまないでしょうね。」\nReasoning: 「〜ずにはすまない」 means 'can't get away without…' — she expects the department head to be held responsible. Agreeing with 「だろうね」 and guessing he might be transferred fits.\nTrap: confusing 「ずにはすまない」 with 「ずに済む」 'get away without'; roles — she isn't the one holding him responsible."
+  },
+  "wrong": [
+   {
+    "zh": "「ずにはすまない」是“免不了要被追究”，不是“没被追究”。",
+    "en": "「ずにはすまない」 means he can't escape it — not that he got off."
+   },
+   null,
+   {
+    "zh": "她是在推测部长会被公司追究，不是自己要去追究。",
+    "en": "She's predicting the company will hold him responsible, not planning to do it herself."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n1-ck-539",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "出張にかこつけて、ちゃっかり温泉に寄ってきたんじゃないの？"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "うん、温泉で会議なんて珍しいでしょう。",
+   "そうなの？いいなあ、どこの温泉？",
+   "ばれた？でも、温泉は帰りに一時間だけだよ。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "你是不是借着出差，顺便去泡了温泉？"
+    ],
+    "options": [
+     "嗯，在温泉开会挺少见的吧。",
+     "是吗？真好，哪里的温泉？",
+     "被发现了？不过温泉只是回来的路上泡了一个小时。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Didn't you use the business trip as an excuse to sneak off to a hot spring?"
+    ],
+    "options": [
+     "Yes — a meeting at a hot spring is unusual, isn't it?",
+     "Really? Lucky you — which hot spring?",
+     "Caught me? But it was only an hour, on the way back."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「出張にかこつけて、ちゃっかり温泉に寄ってきたんじゃないの？」\n推理：「〜にかこつけて」是“以……为借口”，「ちゃっかり」是“精明地占便宜”，男的在打趣她借出差去泡温泉。女的承认「ばれた？」，再辩解只泡了一个小时，最自然。\n容易错：以为出差本身就在温泉；立场反了——去出差的是女的。",
+   "en": "Evidence: The man says: 「出張にかこつけて、ちゃっかり温泉に寄ってきたんじゃないの？」\nReasoning: 「〜にかこつけて」 means 'using… as an excuse', and 「ちゃっかり」 'cannily'; he is teasing her for slipping off to a hot spring on a work trip. Owning up — 「ばれた？」 — and pleading it was only an hour fits.\nTrap: thinking the work itself was at the spa; reversed roles — she is the one who went."
+  },
+  "wrong": [
+   {
+    "zh": "温泉是借出差顺便去的，不是在温泉开会。",
+    "en": "The hot spring was a side trip on the excuse of work, not the venue of a meeting."
+   },
+   {
+    "zh": "立场反了：出差去温泉的是女的自己。",
+    "en": "Roles reversed: she is the one who went on the trip."
+   },
+   null
+  ],
+  "traps": [
+   "repeat-word",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n1-ck-540",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "近くまで参りましたので、ご挨拶かたがた、新しい担当の者を連れて伺いました。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "それはご丁寧に。新しいご担当の方ですね。どうぞこちらへ。",
+   "では、新しい担当の方には、のちほどご挨拶に伺います。",
+   "近くにいらっしゃるなら、お迎えに上がりましょうか。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "因为到了附近，所以顺便来问候一下，也带新负责人来拜访您。"
+    ],
+    "options": [
+     "您太客气了。这位就是新的负责人吧。请往这边走。",
+     "那么，我稍后去拜访新的负责人。",
+     "您在附近的话，我去接您吧？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I happened to be nearby, so I've called in to pay my respects and to bring along our new account manager."
+    ],
+    "options": [
+     "How kind of you. So this is your new account manager — please, come this way.",
+     "Then I'll call on your new manager later to say hello.",
+     "If you're nearby, shall I come and pick you up?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「近くまで参りましたので、ご挨拶かたがた、新しい担当の者を連れて伺いました。」\n推理：「〜かたがた」是“顺便……”，「伺いました」说明她已经带着新负责人来了，人就在眼前。男的道谢「それはご丁寧に」，招呼新负责人进来，最自然。\n容易错：立场反了——来问候的是对方；「近くまで」以为人还在路上。",
+   "en": "Evidence: The woman says: 「近くまで参りましたので、ご挨拶かたがた、新しい担当の者を連れて伺いました。」\nReasoning: 「〜かたがた」 means 'while also…', and 「伺いました」 shows she has already arrived with the new manager — they're standing there. Thanking her (「それはご丁寧に」) and showing them in fits.\nTrap: reversed roles — the visitors came to greet him; taking 「近くまで」 to mean she's still on the way."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "是对方带新负责人来问候，新负责人就在眼前，不用另外去拜访。",
+    "en": "The visitors brought the new manager to greet him — he's right there, no need to call on him later."
+   },
+   {
+    "zh": "「伺いました」说明人已经到了，不需要去接。",
+    "en": "「伺いました」 means they've already arrived — no need to pick them up."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "tense"
+  ]
+ },
+ {
+  "id": "n1-ck-541",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "先方に連絡しようにも、肝心の連絡先が分からなくて。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "よかった。じゃあ、もう話はついたんだね。",
+   "え、それなら前任の鈴木さんに聞いたら？",
+   "連絡したくないなら、無理しなくていいよ。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "想联系对方，偏偏最关键的联系方式不知道。"
+    ],
+    "options": [
+     "太好了。那事情已经谈妥了啊。",
+     "诶，那问问前任铃木怎么样？",
+     "不想联系的话，不用勉强。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I'd contact them if I could, but I don't have the one thing I need — their contact details."
+    ],
+    "options": [
+     "Great — so it's all settled, then.",
+     "Oh, then why not ask Suzuki, who had the account before?",
+     "If you don't want to contact them, don't force yourself."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「先方に連絡しようにも、肝心の連絡先が分からなくて。」\n推理：「〜ようにも〜ない」是“想……也没法……”，她想联系，但因为不知道联系方式而联系不上。男的有点意外，接着给她出主意，让她问前任铃木，最自然。\n容易错：以为已经联系上了；把“联系不上”听成“不想联系”。",
+   "en": "Evidence: The woman says: 「先方に連絡しようにも、肝心の連絡先が分からなくて。」\nReasoning: 「〜ようにも〜ない」 means 'want to… but can't': she wants to get in touch but has no contact details. Mild surprise, then suggesting she ask Suzuki, her predecessor, fits.\nTrap: thinking she has already reached them; hearing 'can't' as 'doesn't want to'."
+  },
+  "wrong": [
+   {
+    "zh": "她联系不上对方，事情还没谈。",
+    "en": "She can't reach them, so nothing has been settled."
+   },
+   null,
+   {
+    "zh": "她是想联系却联系不上，不是不想联系。",
+    "en": "She wants to get in touch but can't — it isn't that she doesn't want to."
+   }
+  ],
+  "traps": [
+   "tense",
+   "intent"
+  ]
+ },
+ {
+  "id": "n1-ck-542",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "実物を拝見しないことには、修理できるかどうか、何とも申し上げられないんですが。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "そうですか。修理できないなら、買い替えます。",
+   "では、見ないで直していただけるんですね。",
+   "わかりました。では、週末に持っていきます。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "不看到实物的话，能不能修，我们实在没法说。"
+    ],
+    "options": [
+     "这样啊。修不了的话，我就换新的。",
+     "那就是不用看也能帮我修了吧。",
+     "明白了。那我周末拿过去。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Until we see the item itself, I'm afraid we can't say whether it can be repaired."
+    ],
+    "options": [
+     "I see. If it can't be repaired, I'll buy a new one.",
+     "So you can fix it without seeing it, then.",
+     "All right. I'll bring it in at the weekend."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「実物を拝見しないことには、修理できるかどうか、何とも申し上げられないんですが。」\n推理：「〜ないことには」是“不……的话就（无法）……”，店员的意思是要先看到东西才能判断，实际上是请他把东西拿来。男的说周末拿过去，最自然。\n容易错：以为店员说修不了；把“不看就不能判断”说反。",
+   "en": "Evidence: The woman says: 「実物を拝見しないことには、修理できるかどうか、何とも申し上げられないんですが。」\nReasoning: 「〜ないことには」 means 'unless…, (can't)': she needs to see the item before she can judge — in effect, please bring it in. Saying he'll bring it at the weekend fits.\nTrap: hearing it as 'it can't be repaired'; reversing 'can't judge without seeing it'."
+  },
+  "wrong": [
+   {
+    "zh": "店员没说修不了，只是说看到实物才能判断。",
+    "en": "She didn't say it can't be repaired — only that she must see it first."
+   },
+   {
+    "zh": "她说的是“不看到实物就无法判断”，正好相反。",
+    "en": "She said she can't judge without seeing it — the opposite."
+   },
+   null
+  ],
+  "traps": [
+   "repeat-word",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n1-ck-543",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "あの件なら、言われずとも、とっくに手を打ってあるよ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "え、もう？さすが、手を打つのが早いね。",
+   "じゃあ、急いで手を打たないと。",
+   "え、誰にも言われてないから、まだやってないの？"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "那件事啊，不用你说，我早就安排好了。"
+    ],
+    "options": [
+     "诶，已经做了？不愧是你，动作真快。",
+     "那得赶紧想办法了。",
+     "诶，因为没人跟你说，所以还没做？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "That? No need to tell me — I took care of it ages ago."
+    ],
+    "options": [
+     "Oh, already? Of course — you're quick off the mark.",
+     "Then we'd better do something fast.",
+     "What — nobody told you, so you haven't done it?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「言われずとも、とっくに手を打ってあるよ。」\n推理：「〜ずとも」是“即使不……也”，「言われずとも」是“不用别人说”。「とっくに手を打ってある」是早就采取了措施。女的先吃惊“已经做了？”，再称赞他动作快，最自然。\n容易错：「手を打つ」以为还没做；「言われずとも」的否定听成“没人说所以没做”。",
+   "en": "Evidence: The man says: 「言われずとも、とっくに手を打ってあるよ。」\nReasoning: 「〜ずとも」 means 'even without…', so 「言われずとも」 is 'without being told'. 「とっくに手を打ってある」 — he took steps long ago. Surprise ('already?') and praise for how quick he was fits.\nTrap: thinking it still needs doing; hearing the negative in 「言われずとも」 as 'nobody told me, so I didn't'."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "他早就处理好了，不用再急着想办法。",
+    "en": "He dealt with it long ago — no need to rush now."
+   },
+   {
+    "zh": "「言われずとも」是“不用人说也做了”，他已经做了。",
+    "en": "「言われずとも」 means he did it without being told — it's done."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n1-ck-544",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "発表の途中でパソコンが固まっちゃって、あのときの気まずさといったらなかったよ。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "そうなんだ。気まずくならなくてよかったね。",
+   "え、発表中に？それは冷や汗ものだね。",
+   "へえ、何も言うことがなかったんだ。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "发表到一半电脑死机了，那时候的尴尬简直没法形容。"
+    ],
+    "options": [
+     "这样啊。没弄得尴尬真是太好了。",
+     "诶，偏偏在发表中？那真让人捏把冷汗。",
+     "哦，是没什么可说的啊。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "My laptop froze in the middle of my presentation — you can't imagine how awkward it was."
+    ],
+    "options": [
+     "Oh, good thing it didn't get awkward.",
+     "What, mid-presentation? That would make anyone break into a cold sweat.",
+     "Huh, so there was nothing to say."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「発表の途中でパソコンが固まっちゃって、あのときの気まずさといったらなかったよ。」\n推理：「〜といったらない」是“……得没法形容”，强调极其尴尬。男的说「冷や汗ものだね」，对她的窘境表示同情，最自然。\n容易错：「なかった」听成否定，以为没尴尬；「いったらない」听成“没有可说的”。",
+   "en": "Evidence: The woman says: 「発表の途中でパソコンが固まっちゃって、あのときの気まずさといったらなかったよ。」\nReasoning: 「〜といったらない」 means 'indescribably…' — it was awful. Sympathising with 「冷や汗ものだね」 fits.\nTrap: hearing 「なかった」 as a negative — 'it wasn't awkward'; taking 「いったらない」 as 'nothing to say'."
+  },
+  "wrong": [
+   {
+    "zh": "「といったらない」是强调非常尴尬，不是没尴尬。",
+    "en": "「といったらない」 stresses how awkward it was — not that it wasn't."
+   },
+   null,
+   {
+    "zh": "「〜といったらない」是程度极高，不是“没话可说”。",
+    "en": "「〜といったらない」 means 'beyond words', not 'nothing to say'."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "repeat-word"
+  ]
  }
 ]
