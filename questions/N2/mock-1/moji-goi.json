@@ -763,38 +763,38 @@
   },
   {
     "id": "n2-m1-022",
-    "rev": 2,
+    "rev": 3,
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "大雨のため、今夜予定されていた花火大会は（　）になった。",
+    "stem": "梅雨前線が九州付近に（　）しているため、週末まで雨の日が続く見込みだ。",
     "options": [
+      "停滞",
       "中止",
-      "中断",
       "中退",
       "中継"
     ],
     "answer": 0,
     "tr": {
-      "zh": "因为大雨，原定今晚举行的烟花大会取消了。",
-      "en": "Because of the heavy rain, tonight's planned fireworks display has been cancelled."
+      "zh": "由于梅雨锋停滞在九州附近，预计到周末都将持续下雨。",
+      "en": "With the rainy-season front stalled near Kyushu, rain is expected to continue until the weekend."
     },
     "why": {
-      "zh": "线索：「予定されていた」「大雨のため」——原定的活动还没开始就取消了。\n词义：「中止」（ちゅうし）＝（预定或进行中的事）取消、停止，常说「雨で中止になる」「計画を中止する」。\n辨析：「中断」（ちゅうだん）是进行中的事暂时停下、之后可能继续：「試合が雨で中断する」。",
-      "en": "Clue: 「予定されていた」 with 「大雨のため」 — a planned event called off before it began.\nMeaning: 「中止」 (ちゅうし) is calling off or stopping a planned or ongoing event: 「雨で中止になる」, 「計画を中止する」.\nContrast: 「中断」 (ちゅうだん) is a break in something under way that may resume: 「試合が雨で中断する」."
+      "zh": "线索：主语是「梅雨前線」，「九州付近に（　）している」——锋面停在一个地方不动。\n词义：「停滞」（ていたい）＝停滞、停留不前，常说「前線が停滞する」「景気が停滞する」。",
+      "en": "Clue: the subject is 「梅雨前線」, which 「九州付近に（　）している」 — a front staying put.\nMeaning: 「停滞」 (ていたい) is to stall, stay in one place: 「前線が停滞する」, 「景気が停滞する」."
     },
     "wrong": [
       null,
       {
-        "zh": "「中断」是已经开始的事中途停下，如「試合が雨で中断した」；还没开始的活动用「中止」。",
-        "en": "「中断」 is stopping something already under way (「試合が中断した」); an event not yet begun is 「中止」."
+        "zh": "「中止」是取消预定的活动，主语要是活动，不能说“锋面中止”。",
+        "en": "「中止」 is calling off a planned event; a weather front can't be called off."
       },
       {
-        "zh": "「中退」是\"中途退学\"，如「大学を中退する」。",
-        "en": "「中退」 is dropping out of school (「大学を中退する」)."
+        "zh": "「中退」是中途退学，与天气无关。",
+        "en": "「中退」 is dropping out of school; it has nothing to do with weather."
       },
       {
-        "zh": "「中継」是\"转播\"，如「テレビで中継する」。",
-        "en": "「中継」 is a live broadcast/relay (「テレビで中継する」)."
+        "zh": "「中継」是转播（「生中継」），锋面不能“转播”。",
+        "en": "「中継」 is a broadcast relay (「生中継」); a front can't be relayed."
       }
     ]
   },

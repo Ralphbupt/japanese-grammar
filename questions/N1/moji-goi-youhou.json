@@ -493,40 +493,41 @@
   },
   {
     "id": "n1-mg-514",
+    "rev": 2,
     "type": "youhou",
     "refs": [
       "lesson87#vocab"
     ],
     "difficulty": 2,
-    "stem": "<<心細い>>",
+    "stem": "<<もどかしい>>",
     "options": [
-      "初めての一人暮らしで、夜になるといつも心細かった。",
-      "彼女は心細い性格で、人前で話すのが苦手だ。",
-      "彼の心細い気配りのおかげで、パーティーは大成功だった。",
-      "彼女は心細い字で、小さな手紙を書いた。"
+      "言いたいことがうまく日本語にならず、もどかしい思いをした。",
+      "この服は少しもどかしいので、もう一つ大きいサイズをください。",
+      "彼のもどかしい気配りのおかげで、パーティーは大成功だった。",
+      "彼女はもどかしい字で、小さな手紙を書いた。"
     ],
     "answer": 0,
     "tr": {
-      "zh": "心細い：（没有依靠而）不安、心里没底。正确句：第一次一个人生活，一到晚上总是很不安。",
-      "en": "心細い: feeling helpless, uneasy (with no one to rely on). Correct: Living alone for the first time, I always felt lonely and uneasy at night."
+      "zh": "もどかしい：令人着急、干着急。正确句：想说的话怎么也说不成日语，心里干着急。",
+      "en": "もどかしい: frustrating, impatient at not getting there. Correct: I couldn't put what I wanted to say into Japanese, and it was so frustrating."
     },
     "why": {
-      "zh": "线索：「初めての一人暮らし」「夜になると」，一个人没有依靠，心里不安。\n词义：「心細い」（こころぼそい）＝没有依靠、心里没底、孤单不安，说的是某时的心情而非性格，常说「一人では心細い」「心細い思いをする」。",
-      "en": "Clue: 「初めての一人暮らし」, 「夜になると」 — alone with no one to lean on, feeling uneasy.\nMeaning: 「心細い」 (こころぼそい) is feeling helpless and uneasy for lack of support — a feeling at a given time, not a trait: 「一人では心細い」, 「心細い思いをする」."
+      "zh": "线索：正确句是想说的话「うまく日本語にならず」，事情不如意、心里着急。\n词义：「もどかしい」＝（想做却做不到）干着急、令人焦躁，常说「もどかしい思いをする」「説明がもどかしい」。",
+      "en": "Clue: the right sentence has words that 「うまく日本語にならず」 — wanting to but not managing, and chafing at it.\nMeaning: 「もどかしい」 is frustrating, impatient when something won't go as you want: 「もどかしい思いをする」, 「説明がもどかしい」."
     },
     "wrong": [
       null,
       {
-        "zh": "性格内向应该用「内気な」；「心細い」是一时感到孤单不安，不形容性格。",
-        "en": "A shy personality is 「内気」; 「心細い」 is a passing feeling of helplessness, not a trait."
+        "zh": "衣服尺寸小用「きつい」，「もどかしい」是心情，不形容衣服。",
+        "en": "Tight clothes are 「きつい」; 「もどかしい」 is a feeling, not a fit."
       },
       {
-        "zh": "细致周到应该用「細やかな」；「心細い」是心里没底、不安。",
-        "en": "Attentive care is 「細やかな」; 「心細い」 is feeling forlorn."
+        "zh": "周到的关照用「細やかな」，「もどかしい」带有焦躁的负面意思。",
+        "en": "Thoughtful care is 「細やかな気配り」; 「もどかしい」 is a negative feeling of frustration."
       },
       {
-        "zh": "字迹纤细是「細い字」。",
-        "en": "Thin handwriting is 「細い字」."
+        "zh": "字写得细小用「細い字」「小さな字」，「もどかしい」不形容字迹。",
+        "en": "Fine handwriting is 「細い字」; 「もどかしい」 doesn't describe handwriting."
       }
     ]
   },

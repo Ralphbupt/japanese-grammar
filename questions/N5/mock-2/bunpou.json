@@ -42,95 +42,97 @@
   },
   {
     "id": "n5-m2-102",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson06#2"
     ],
     "difficulty": 1,
-    "stem": "あしたは テストが ありますから、こんばん（　）。",
+    "stem": "あしたは 朝 六時の でんしゃに のりますから、五時に（　）。",
     "options": [
-      "べんきょうしなくても いいです",
-      "べんきょうしなければ なりません",
-      "べんきょうしては いけません",
-      "べんきょうした ことが あります"
+      "おきなくても いいです",
+      "おきなければ なりません",
+      "おきては いけません",
+      "おきた ことが あります"
     ],
     "okj": [
-      "勉強しなくても いいです",
-      "勉強しなければ なりません",
-      "勉強しては いけません",
-      "勉強した ことが あります"
+      "起きなくても いいです",
+      "起きなければ なりません",
+      "起きては いけません",
+      "起きた ことが あります"
     ],
     "answer": 1,
-    "full": "あしたは テストが ありますから、こんばん べんきょうしなければ なりません。",
-    "kj": "明日はテストがありますから、今晩勉強しなければなりません。",
+    "full": "あしたは 朝 六時の でんしゃに のりますから、五時に おきなければ なりません。",
+    "kj": "明日は朝六時の電車に乗りますから、五時に起きなければなりません。",
     "tr": {
-      "zh": "明天有考试，所以今晚必须学习。",
-      "en": "I have a test tomorrow, so I have to study tonight."
+      "zh": "明天要坐早上六点的电车，所以五点必须起床。",
+      "en": "I'm taking the six o'clock train tomorrow morning, so I have to get up at five."
     },
     "why": {
-      "zh": "线索：「テストが ありますから」，因为有考试，今晚的学习是不得不做的事。\n规则：“必须……”用「ない形去掉い＋ければ なりません」：「しない」→「しなければ なりません」。",
-      "en": "Clue: 「テストが ありますから」 — because of the test, studying tonight is something you have to do.\nRule: \"Must ~\" is the ない-form minus い ＋ 「ければ なりません」: 「しない」 → 「しなければ なりません」."
+      "zh": "线索：「六時の でんしゃに のりますから」，因为要赶早班车，五点起床是不得不做的事。\n规则：“必须……”用「ない形去掉い＋ければ なりません」：「おきない」→「おきなければ なりません」。",
+      "en": "Clue: 「六時の でんしゃに のりますから」 — because of the early train, getting up at five is something you have to do.\nRule: \"Must ~\" is the ない-form minus い ＋ 「ければ なりません」: 「おきない」 → 「おきなければ なりません」."
     },
     "wrong": [
       {
-        "zh": "「しなくても いいです」是“不用学”，和“明天有考试”这个理由对不上。",
-        "en": "「しなくても いいです」 (needn't study) doesn't follow from having a test tomorrow."
+        "zh": "「おきなくても いいです」是“不用起床”，和“要坐六点的电车”这个理由对不上。",
+        "en": "「おきなくても いいです」 (needn't get up) doesn't follow from catching a six o'clock train."
       },
       null,
       {
-        "zh": "「しては いけません」是“不许学”，有考试反而不许学，说不通。",
-        "en": "「しては いけません」 (mustn't study) makes no sense before a test."
+        "zh": "「おきては いけません」是“不许起床”，要赶电车反而不许起床，说不通。",
+        "en": "「おきては いけません」 (mustn't get up) makes no sense when you have a train to catch."
       },
       {
-        "zh": "「した ことが あります」讲过去的经历，和「こんばん」（今晚）时间对不上。",
-        "en": "「した ことが あります」 is past experience; it clashes with 「こんばん」 (tonight)."
+        "zh": "「おきた ことが あります」讲过去的经历，和「あした」（明天）时间对不上。",
+        "en": "「おきた ことが あります」 is past experience; it clashes with 「あした」 (tomorrow)."
       }
     ]
   },
   {
     "id": "n5-m2-103",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson05#5"
     ],
     "difficulty": 2,
-    "stem": "わたしは 毎日 シャワーを（　） 学校へ 行きます。",
+    "stem": "わたしは いつも 手を（　） ごはんを 食べます。",
     "options": [
-      "あびながら",
-      "あびてから",
-      "あびる あとで",
-      "あびた まえに"
+      "あらいながら",
+      "あらってから",
+      "あらう あとで",
+      "あらった まえに"
     ],
     "okj": [
-      "浴びながら",
-      "浴びてから",
-      "浴びる 後で",
-      "浴びた 前に"
+      "洗いながら",
+      "洗ってから",
+      "洗う 後で",
+      "洗った 前に"
     ],
     "answer": 1,
-    "full": "わたしは 毎日 シャワーを あびてから 学校へ 行きます。",
-    "kj": "私は毎日シャワーを浴びてから学校へ行きます。",
+    "full": "わたしは いつも 手を あらってから ごはんを 食べます。",
+    "kj": "私はいつも手を洗ってからご飯を食べます。",
     "tr": {
-      "zh": "我每天冲完澡再去学校。",
-      "en": "Every day I take a shower and then go to school."
+      "zh": "我总是先洗手再吃饭。",
+      "en": "I always wash my hands before I eat."
     },
     "why": {
-      "zh": "线索：先冲澡，再去学校，两件事有先后顺序。\n规则：“做完 A 再做 B”用「て形＋から」：「あびて」→「あびてから」。",
-      "en": "Clue: first the shower, then school — two actions in order.\nRule: \"Do A, then B\" is て-form ＋ 「から」: 「あびて」 → 「あびてから」."
+      "zh": "线索：先洗手，再吃饭，两件事有先后顺序。\n规则：“做完 A 再做 B”用「て形＋から」：「あらって」→「あらってから」。",
+      "en": "Clue: first washing hands, then eating — two actions in order.\nRule: \"Do A, then B\" is て-form ＋ 「から」: 「あらって」 → 「あらってから」."
     },
     "wrong": [
       {
-        "zh": "「あびながら」是“一边冲澡一边去学校”，两件事不可能同时做。",
-        "en": "「あびながら」 would mean going to school while showering — impossible."
+        "zh": "「あらいながら」是“一边洗手一边吃饭”，两件事不可能同时做。",
+        "en": "「あらいながら」 would mean eating while washing your hands — impossible."
       },
       null,
       {
-        "zh": "「あとで」前面要用た形（「あびた あとで」），「あびる あとで」不成立。",
-        "en": "「あとで」 takes the た-form (「あびた あとで」); 「あびる あとで」 is wrong."
+        "zh": "「あとで」前面要用た形（「あらった あとで」），「あらう あとで」不成立。",
+        "en": "「あとで」 takes the た-form (「あらった あとで」); 「あらう あとで」 is wrong."
       },
       {
-        "zh": "「まえに」前面要用辞书形（「あびる まえに」），「あびた まえに」不成立。",
-        "en": "「まえに」 takes the dictionary form (「あびる まえに」); 「あびた まえに」 is wrong."
+        "zh": "「まえに」前面要用辞书形（「あらう まえに」），「あらった まえに」不成立。",
+        "en": "「まえに」 takes the dictionary form (「あらう まえに」); 「あらった まえに」 is wrong."
       }
     ]
   },
@@ -347,42 +349,49 @@
   },
   {
     "id": "n5-m2-109",
+    "rev": 2,
     "type": "bunpou",
     "refs": [
       "lesson06#3"
     ],
     "difficulty": 3,
-    "stem": "A「この しゅくだいは あした 出さなければ なりませんか。」\nB「いいえ、（　）。来週でも いいですよ。」",
+    "stem": "A「へやに 入る とき、くつを ぬがなければ なりませんか。」\nB「いいえ、（　）。その まま どうぞ。」",
     "options": [
-      "出さなければ なりません",
-      "出さなくても いいです",
-      "出しましょう",
-      "出した ことが あります"
+      "ぬがなければ なりません",
+      "ぬがなくても いいです",
+      "ぬぎましょう",
+      "ぬいだ ことが あります"
+    ],
+    "okj": [
+      "脱がなければ なりません",
+      "脱がなくても いいです",
+      "脱ぎましょう",
+      "脱いだ ことが あります"
     ],
     "answer": 1,
-    "full": "A「この しゅくだいは あした 出さなければ なりませんか。」 B「いいえ、出さなくても いいです。来週でも いいですよ。」",
-    "kj": "A「この宿題は明日出さなければなりませんか。」\nB「いいえ、出さなくてもいいです。来週でもいいですよ。」",
+    "full": "A「へやに 入る とき、くつを ぬがなければ なりませんか。」 B「いいえ、ぬがなくても いいです。その まま どうぞ。」",
+    "kj": "A「部屋に入るとき、靴を脱がなければなりませんか。」\nB「いいえ、脱がなくてもいいです。そのままどうぞ。」",
     "tr": {
-      "zh": "A：这个作业明天必须交吗？ B：不，不用明天交。下周交也可以。",
-      "en": "A: Do I have to hand in this homework tomorrow? B: No, you don't have to. Next week is fine too."
+      "zh": "A：进房间的时候必须脱鞋吗？ B：不，不用脱。就这样请进。",
+      "en": "A: Do I have to take my shoes off when I go into the room? B: No, you don't have to. Come in as you are."
     },
     "why": {
-      "zh": "线索：A 问“必须交吗”，B 先说「いいえ」，后面又说「来週でも いいですよ」。\n规则：回答“不必……”用「ない形去掉い＋くても いいです」：「出さない」→「出さなくても いいです」。",
-      "en": "Clue: A asks \"must I?\", B says 「いいえ」 and then 「来週でも いいですよ」.\nRule: \"You don't have to ~\" is the ない-form minus い ＋ 「くても いいです」: 「出さない」 → 「出さなくても いいです」."
+      "zh": "线索：A 问“必须脱吗”，B 先说「いいえ」，后面又说「その まま どうぞ」（就这样请进）。\n规则：回答“不必……”用「ない形去掉い＋くても いいです」：「ぬがない」→「ぬがなくても いいです」。",
+      "en": "Clue: A asks \"must I?\", B says 「いいえ」 and then 「その まま どうぞ」 (come in as you are).\nRule: \"You don't have to ~\" is the ない-form minus い ＋ 「くても いいです」: 「ぬがない」 → 「ぬがなくても いいです」."
     },
     "wrong": [
       {
-        "zh": "「出さなければ なりません」是“必须交”，和前面的「いいえ」、后面的「来週でも いい」矛盾。",
-        "en": "「出さなければ なりません」 (must) contradicts 「いいえ」 and 「来週でも いい」."
+        "zh": "「ぬがなければ なりません」是“必须脱”，和前面的「いいえ」、后面的「その まま どうぞ」矛盾。",
+        "en": "「ぬがなければ なりません」 (must) contradicts 「いいえ」 and 「その まま どうぞ」."
       },
       null,
       {
-        "zh": "「出しましょう」是“交吧”，回答不了“必须吗”，也和「来週でも いい」对不上。",
-        "en": "「出しましょう」 (let's hand it in) doesn't answer \"must I?\" and clashes with 「来週でも いい」."
+        "zh": "「ぬぎましょう」是“脱吧”，回答不了“必须吗”，也和「その まま どうぞ」对不上。",
+        "en": "「ぬぎましょう」 (let's take them off) doesn't answer \"must I?\" and clashes with 「その まま どうぞ」."
       },
       {
-        "zh": "「出した ことが あります」讲过去的经历，回答不了“明天必须交吗”。",
-        "en": "「出した ことが あります」 is past experience; it doesn't answer the question."
+        "zh": "「ぬいだ ことが あります」讲过去的经历，回答不了“必须脱吗”。",
+        "en": "「ぬいだ ことが あります」 is past experience; it doesn't answer the question."
       }
     ]
   },
@@ -425,21 +434,22 @@
   },
   {
     "id": "n5-m2-111",
+    "rev": 2,
     "type": "narabe",
     "refs": [
       "lesson05#3"
     ],
     "difficulty": 1,
-    "stem": "A「すみません、この へやで [_] [★] [_] [_] か。」\nB「ええ、どうぞ。」",
+    "stem": "A「すみません、ここに [_] [★] [_] [_] か。」\nB「ええ、どうぞ。」",
     "options": [
-      "とっても",
-      "しゃしんを",
+      "とめても",
+      "じてんしゃを",
       "いい",
       "です"
     ],
     "okj": [
-      "撮っても",
-      "写真を",
+      "止めても",
+      "自転車を",
       null,
       null
     ],
@@ -449,15 +459,15 @@
       2,
       3
     ],
-    "full": "A「すみません、この へやで しゃしんを とっても いいですか。」 B「ええ、どうぞ。」",
-    "kj": "A「すみません、この部屋で写真を撮ってもいいですか。」\nB「ええ、どうぞ。」",
+    "full": "A「すみません、ここに じてんしゃを とめても いいですか。」 B「ええ、どうぞ。」",
+    "kj": "A「すみません、ここに自転車を止めてもいいですか。」\nB「ええ、どうぞ。」",
     "tr": {
-      "zh": "A：不好意思，这个房间里可以拍照吗？ B：可以，请。",
-      "en": "A: Excuse me, may I take pictures in this room? B: Yes, go ahead."
+      "zh": "A：不好意思，可以把自行车停在这里吗？ B：可以，请。",
+      "en": "A: Excuse me, may I park my bicycle here? B: Yes, go ahead."
     },
     "why": {
-      "zh": "线索：B 回答「ええ、どうぞ」，是在允许；A 在问「〜ても いいですか」（可以……吗）。这里的「とっても」是「撮っても」（撮る＋ても），不是“非常”的「とても」。\n怎么排：「とっても」后面接「いい」「です」，再接句尾「か」；宾语「しゃしんを」放在「とっても」前面。顺序：しゃしんを → とっても → いい → です，★ 是「とっても」。\n容易错：把「いい」放在「とっても」前面。「て形＋も」后面才接「いい」。",
-      "en": "Clue: B answers 「ええ、どうぞ」, giving permission, so A is asking 「〜ても いいですか」 (may I ~?). Here 「とっても」 is 「撮っても」 (撮る + ても), not 「とても」 (very).\nOrder: 「とっても」 is followed by 「いい」 and 「です」, then the final 「か」; the object 「しゃしんを」 goes before 「とっても」: しゃしんを → とっても → いい → です. The ★ is 「とっても」.\nTrap: Putting 「いい」 before 「とっても」. 「いい」 comes after て-form ＋ 「も」."
+      "zh": "线索：B 回答「ええ、どうぞ」，是在允许；A 在问「〜ても いいですか」（可以……吗）。\n怎么排：「とめても」后面接「いい」「です」，再接句尾「か」；宾语「じてんしゃを」放在「とめても」前面。顺序：じてんしゃを → とめても → いい → です，★ 是「とめても」。\n容易错：把「いい」放在「とめても」前面。「て形＋も」后面才接「いい」。",
+      "en": "Clue: B answers 「ええ、どうぞ」, giving permission, so A is asking 「〜ても いいですか」 (may I ~?).\nOrder: 「とめても」 is followed by 「いい」 and 「です」, then the final 「か」; the object 「じてんしゃを」 goes before 「とめても」: じてんしゃを → とめても → いい → です. The ★ is 「とめても」.\nTrap: Putting 「いい」 before 「とめても」. 「いい」 comes after て-form ＋ 「も」."
     },
     "wrong": [
       null,
@@ -468,21 +478,22 @@
   },
   {
     "id": "n5-m2-112",
+    "rev": 2,
     "type": "narabe",
     "refs": [
       "lesson15#5"
     ],
     "difficulty": 2,
-    "stem": "きのうは [_] [_] [_] [★]、どこにも 行きませんでした。",
+    "stem": "きのうは [_] [_] [_] [★]、いちにちじゅう うちで ねて いました。",
     "options": [
-      "雨が",
-      "ふって",
+      "かぜを",
+      "ひいて",
       "いた",
       "ので"
     ],
     "okj": [
-      null,
-      "降って",
+      "風邪を",
+      "引いて",
       null,
       null
     ],
@@ -492,15 +503,15 @@
       2,
       3
     ],
-    "full": "きのうは 雨が ふって いたので、どこにも 行きませんでした。",
-    "kj": "昨日は雨が降っていたので、どこにも行きませんでした。",
+    "full": "きのうは かぜを ひいて いたので、いちにちじゅう うちで ねて いました。",
+    "kj": "昨日は風邪を引いていたので、一日中家で寝ていました。",
     "tr": {
-      "zh": "昨天一直在下雨，所以哪儿也没去。",
-      "en": "It was raining yesterday, so I didn't go anywhere."
+      "zh": "昨天感冒了，所以一整天都在家里躺着。",
+      "en": "I had a cold yesterday, so I stayed in bed at home all day."
     },
     "why": {
-      "zh": "线索：后半句「どこにも 行きませんでした」是结果，前面要说原因，用「〜ので」（因为）。\n怎么排：「雨が」接「ふって」，「ふって＋いた」连成「ふって いた」（一直在下），原因说完再接「ので」。顺序：雨が → ふって → いた → ので，★ 是「ので」。\n容易错：把「ので」放在「いた」前面。「ので」接在一句话的最后：「ふって いたので」。",
-      "en": "Clue: 「どこにも 行きませんでした」 is the result, so the first half gives the reason with 「〜ので」 (because).\nOrder: 「雨が」 goes with 「ふって」, 「ふって」 ＋ 「いた」 make 「ふって いた」 (was raining), and 「ので」 closes the reason: 雨が → ふって → いた → ので. The ★ is 「ので」.\nTrap: Putting 「ので」 before 「いた」. 「ので」 comes at the very end of the clause: 「ふって いたので」."
+      "zh": "线索：后半句「いちにちじゅう うちで ねて いました」是结果，前面要说原因，用「〜ので」（因为）。\n怎么排：「かぜを」接「ひいて」（「かぜを ひく」＝感冒），「ひいて＋いた」连成「ひいて いた」，原因说完再接「ので」。顺序：かぜを → ひいて → いた → ので，★ 是「ので」。\n容易错：把「ので」放在「いた」前面。「ので」接在一句话的最后：「ひいて いたので」。",
+      "en": "Clue: 「いちにちじゅう うちで ねて いました」 is the result, so the first half gives the reason with 「〜ので」 (because).\nOrder: 「かぜを」 goes with 「ひいて」 (「かぜを ひく」 = catch a cold), 「ひいて」 ＋ 「いた」 make 「ひいて いた」 (had a cold), and 「ので」 closes the reason: かぜを → ひいて → いた → ので. The ★ is 「ので」.\nTrap: Putting 「ので」 before 「いた」. 「ので」 comes at the very end of the clause: 「ひいて いたので」."
     },
     "wrong": [
       null,

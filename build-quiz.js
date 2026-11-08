@@ -861,6 +861,31 @@ function cues(practice, mocks) {
   return out;
 }
 
+// Mock grammar/vocabulary items whose finished sentence `full` shares too many
+// character bigrams with a practice item of the same level (set Jaccard; a
+// 2026-11-09 review found mock items at 0.43–0.71 that cues()'s 0.8 Dice on
+// the stem missed: same situation, a word or two swapped).
+const FULL_JACCARD_MAX = 0.45;
+function fullCopies(practice, mocks) {
+  const grams = (s) => { const t = plainText(s), g = new Set(); for (let i = 0; i < t.length - 1; i++) g.add(t.slice(i, i + 2)); return g; };
+  const base = practice.qs.filter((q) => q.full && q._kind !== "choukai").map((q) => [q.id, grams(q.full)]).filter(([, g]) => g.size >= 8);
+  const out = [];
+  for (const [name, d] of mocks) for (const q of d.qs) {
+    if (!q.full || q._kind === "choukai" || q._kind === "dokkai") continue;
+    const g = grams(q.full);
+    if (g.size < 8) continue;
+    let best = [0, ""];
+    for (const [pid, pg] of base) {
+      let common = 0;
+      for (const k of g) if (pg.has(k)) common++;
+      const j = common / (g.size + pg.size - common);
+      if (j > best[0]) best = [j, pid];
+    }
+    if (best[0] > FULL_JACCARD_MAX) out.push(`${name} ${q.id} reads like practice ${best[1]} (full, bigram Jaccard ${best[0].toFixed(2)})`);
+  }
+  return out;
+}
+
 module.exports = { buildQuiz, loadLevel, loadDir, shuffled, answerOf, LEVELS, TYPES, MOCK, QUIZ_PUBLIC, QUIZ_LINKS, AUDIO_REQUESTS, ABOVE_LEVEL, aboveLevel, CK_IMG_DIR };
 
 if (require.main === module) {
@@ -885,6 +910,7 @@ if (require.main === module) {
       for (const e of me) console.log("  " + e);
     }
     for (const w of cues(data, mocks)) console.log(`  warning: ${w}`);
+    for (const w of fullCopies(data, mocks)) console.log(`  warning: ${level} ${w}`);
   }
   for (const w of CHOUKAI_WARNINGS.values()) console.log(`  warning: ${w}`);
   if (!total) console.log("No questions yet.");

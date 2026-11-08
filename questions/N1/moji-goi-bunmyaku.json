@@ -37,38 +37,38 @@
   },
   {
     "id": "n1-mg-302",
-    "rev": 2,
+    "rev": 3,
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "（　）発表の新製品の写真が、発売前にネットに流出した。",
+    "stem": "社長の不祥事が明るみに出て、会社の信用は一気に（　）。",
     "options": [
-      "未",
-      "非",
-      "無",
-      "不"
+      "失墜した",
+      "転落した",
+      "衰退した",
+      "低迷した"
     ],
     "answer": 0,
     "tr": {
-      "zh": "尚未发布的新产品照片，在开售前就流到了网上。",
-      "en": "Photos of an as-yet-unannounced product leaked online before the launch."
+      "zh": "社长的丑闻曝光后，公司的信誉一下子扫地。",
+      "en": "When the president's scandal came to light, the company's credibility collapsed overnight."
     },
     "why": {
-      "zh": "线索：「発売前」「流出した」，产品还没正式发布，所以要表示“尚未”的前缀接在「発表」前。\n词义：「未」（み）＝尚未、还没有，多接动作性名词：「未発表」「未定」「未完成」。\n辨析：「不」「非」「無」表示一般的否定或“没有”（不正確・非公開・無料），不含“还没、以后可能会”的意思。",
-      "en": "Clue: 「発売前」, 「流出した」 — the product hadn't been announced yet, so the prefix on 「発表」 has to mean \"not yet\".\nMeaning: 「未」 (み) is \"not yet\", mostly before action nouns: 「未発表」, 「未定」, 「未完成」.\nContrast: 「不」, 「非」 and 「無」 are plain negation or \"without\" (不正確・非公開・無料); none carries the \"not yet, but may later\" sense."
+      "zh": "线索：主语是「会社の信用」，丑闻曝光后「一気に」——信誉一下子丧失。\n词义：「失墜」（しっつい）＝（信用、权威）丧失、扫地，固定搭配「信用が失墜する」「権威を失墜させる」。\n辨析：「転落」是从高处、地位上跌落（「最下位に転落する」），主语是人或排名，不是「信用」。",
+      "en": "Clue: the subject is 「会社の信用」, lost 「一気に」 once the scandal broke.\nMeaning: 「失墜」 (しっつい) is the collapse of trust or authority: 「信用が失墜する」, 「権威を失墜させる」.\nContrast: 「転落」 is falling from a height or a position (「最下位に転落する」); its subject is a person or a ranking, not 「信用」."
     },
     "wrong": [
       null,
       {
-        "zh": "「非」表示“不是、否定某种性质”（非公開・非常識），没有「非発表」。",
-        "en": "「非」 negates a quality (非公開・非常識); there's no 「非発表」."
+        "zh": "「転落」是从高处或地位上跌落（「最下位に転落」），不说「信用が転落する」。",
+        "en": "「転落」 is falling from a height or rank (「最下位に転落」); 「信用が転落する」 isn't said."
       },
       {
-        "zh": "「無」表示“没有某物”（無料・無関係），没有「無発表」。",
-        "en": "「無」 means \"without\" (無料・無関係); there's no 「無発表」."
+        "zh": "「衰退」是产业、国家等慢慢衰落，和「一気に」矛盾，也不接「信用」。",
+        "en": "「衰退」 is a slow decline of an industry or nation; it clashes with 「一気に」 and doesn't take 「信用」."
       },
       {
-        "zh": "「不」表示“不、不好”（不正確・不公平），没有「不発表」。",
-        "en": "「不」 means \"not, un-\" (不正確・不公平); there's no 「不発表」."
+        "zh": "「低迷」是业绩、景气长期不振，不用于信用的丧失。",
+        "en": "「低迷」 is a long slump in sales or the economy, not a loss of trust."
       }
     ]
   },
@@ -110,75 +110,75 @@
   },
   {
     "id": "n1-mg-304",
-    "rev": 2,
+    "rev": 3,
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "ネットで安く買ったバッグは、よく見ると（　）ブランド品だった。",
+    "stem": "謝罪のつもりだった彼の発言は、かえって火に（　）を注ぐ結果となり、批判はさらに強まった。",
     "options": [
-      "偽",
-      "誤",
-      "虚",
-      "反"
+      "油",
+      "水",
+      "炭",
+      "薪"
     ],
     "answer": 0,
     "tr": {
-      "zh": "在网上便宜买的包，仔细一看原来是冒牌货。",
-      "en": "The bag I bought cheaply online turned out, on closer look, to be a fake brand item."
+      "zh": "他本想道歉的发言反而火上浇油，批评声更强烈了。",
+      "en": "Meant as an apology, his remarks only added fuel to the fire, and the criticism grew even louder."
     },
     "why": {
-      "zh": "线索：「安く買った」「よく見ると」，便宜买的包仔细一看，原来是假的名牌货。\n词义：「偽」（にせ）＝假的、仿冒的，接在名词前：「偽ブランド品」「偽札」（にせさつ）；单独成词是「偽物」（にせもの）。",
-      "en": "Clue: 「安く買った」, 「よく見ると」 — cheap online, and on a closer look not the real thing.\nMeaning: 「偽」 (にせ) is fake, counterfeit, placed before a noun: 「偽ブランド品」, 「偽札」 (にせさつ). As a word on its own: 「偽物」 (にせもの)."
+      "zh": "线索：「かえって」「批判はさらに強まった」——让事态更加恶化。\n词义：「火に油を注ぐ」＝火上浇油，使已经激烈的情况更加激烈，是固定惯用句。",
+      "en": "Clue: 「かえって」 and 「批判はさらに強まった」 — the remarks made things worse.\nMeaning: 「火に油を注ぐ」 is to add fuel to the fire, inflaming a situation that is already heated; a fixed idiom."
     },
     "wrong": [
       null,
       {
-        "zh": "「誤」是错误（誤解・誤作動），不表示“假冒”。",
-        "en": "「誤」 is error (誤解・誤作動), not counterfeit."
+        "zh": "「火に水を注ぐ」不是惯用句，而且字面意思是灭火，和「批判はさらに強まった」矛盾。",
+        "en": "「火に水を注ぐ」 isn't an idiom, and pouring water would calm things, which contradicts 「批判はさらに強まった」."
       },
       {
-        "zh": "「虚」是空、不实（虚偽・虚栄），不接「ブランド品」。",
-        "en": "「虚」 is empty or untrue (虚偽・虚栄) and doesn't attach to 「ブランド品」."
+        "zh": "「炭」不能“注”，日语没有「火に炭を注ぐ」这种说法。",
+        "en": "Charcoal can't be poured; 「火に炭を注ぐ」 isn't said."
       },
       {
-        "zh": "「反」是反对、违反（反社会的），没有「反ブランド品」。",
-        "en": "「反」 is anti- (反社会的); there's no 「反ブランド品」."
+        "zh": "「薪」是“添”（「薪をくべる」），不说「注ぐ」，也不是这个惯用句。",
+        "en": "Firewood is added (「薪をくべる」), not poured, and it isn't this idiom."
       }
     ]
   },
   {
     "id": "n1-mg-305",
-    "rev": 2,
+    "rev": 3,
     "type": "bunmyaku",
     "difficulty": 2,
-    "stem": "古い商店街を歩くと、どこか懐かしい生活（　）が漂っている。",
+    "stem": "新しい制度を実施するまでに、解決しなければならない課題が（　）している。",
     "options": [
-      "感",
-      "観",
-      "性",
-      "味"
+      "山積",
+      "充満",
+      "密集",
+      "殺到"
     ],
     "answer": 0,
     "tr": {
-      "zh": "走在老商店街上，处处飘着一种令人怀念的生活气息。",
-      "en": "Walking down the old shopping street, you feel a nostalgic sense of everyday life."
+      "zh": "在实施新制度之前，有待解决的课题堆积如山。",
+      "en": "There's a mountain of issues to resolve before the new system can be put in place."
     },
     "why": {
-      "zh": "线索：「懐かしい生活（　）が漂っている」，飘在空气中的是一种感觉、气息。\n词义：「〜感」（かん）＝给人的感觉、气息：「生活感」「季節感」「高級感」，常说「生活感がある」「高級感のある〜」。\n辨析：「〜観」（かん）同音，但指看法、观念（人生観・価値観），不是能“飘荡”的感觉。",
-      "en": "Clue: 「懐かしい生活（　）が漂っている」 — what hangs in the air is a feeling, an atmosphere.\nMeaning: 「〜感」 (かん) is the feel or impression something gives: 「生活感」, 「季節感」, 「高級感」; 「生活感がある」, 「高級感のある〜」.\nContrast: 「〜観」 (かん) sounds the same but is a view or outlook (人生観・価値観), not a feeling that hangs in the air."
+      "zh": "线索：主语是「課題」，「解決しなければならない課題が（　）している」——要处理的事情堆得很多。\n词义：「山積」（さんせき）＝（问题、工作）堆积如山，固定搭配「課題が山積する」「問題が山積している」。\n辨析：「殺到」是人或申请一下子蜂拥而至（「注文が殺到する」），说的是“涌来”，不是“堆着没解决”。",
+      "en": "Clue: the subject is 「課題」 that still have to be solved — a pile of things waiting.\nMeaning: 「山積」 (さんせき) is (problems, work) piling up: 「課題が山積する」, 「問題が山積している」.\nContrast: 「殺到」 is people or requests rushing in at once (「注文が殺到する」) — pouring in, not sitting unsolved."
     },
     "wrong": [
       null,
       {
-        "zh": "「〜観」是看法、观念（人生観・価値観），「生活観」不能“飘荡”。",
-        "en": "「〜観」 is a view or outlook (人生観・価値観); a view of life can't \"hang in the air\"."
+        "zh": "「充満」是气体、气味充满空间（「煙が充満する」），不接「課題」。",
+        "en": "「充満」 is gas or a smell filling a space (「煙が充満する」); it doesn't take 「課題」."
       },
       {
-        "zh": "「〜性」是性质（安全性・必要性），不说「生活性が漂う」。",
-        "en": "「〜性」 is a property (安全性・必要性); 「生活性が漂う」 isn't said."
+        "zh": "「密集」是房屋、人等密集在一处（「住宅が密集する」），不说课题密集。",
+        "en": "「密集」 is houses or people packed together (「住宅が密集する」), not issues."
       },
       {
-        "zh": "「〜味」是味道、韵味（人間味・面白味），没有「生活味」。",
-        "en": "「〜味」 is a flavour or quality (人間味・面白味); there's no 「生活味」."
+        "zh": "「殺到」是蜂拥而至（「注文が殺到する」），不表示问题堆积未解决。",
+        "en": "「殺到」 is rushing in (「注文が殺到する」), not issues piling up unsolved."
       }
     ]
   },

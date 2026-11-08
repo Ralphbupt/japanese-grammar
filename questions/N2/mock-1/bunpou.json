@@ -1,58 +1,60 @@
 [
   {
     "id": "n2-m1-101",
+    "rev": 2,
     "type": "bunpou",
     "refs": ["lesson60#1"],
     "difficulty": 2,
-    "stem": "失敗を恐れる（　）、新しいことに挑戦できなくなっている若者が多いと言われる。",
+    "stem": "子どもの安全を気にする（　）、外で自由に遊ばせない親も増えているという。",
     "options": ["あまり", "末に", "くせに", "とたんに"],
     "answer": 0,
-    "full": "失敗を恐れるあまり、新しいことに挑戦できなくなっている若者が多いと言われる。",
+    "full": "子どもの安全を気にするあまり、外で自由に遊ばせない親も増えているという。",
     "tr": {
-      "zh": "据说有很多年轻人因为过于害怕失败，变得不敢尝试新事物。",
-      "en": "It's said that many young people fear failure so much that they can no longer try anything new."
+      "zh": "据说因为过于担心孩子的安全、不让孩子在外面自由玩耍的父母也越来越多了。",
+      "en": "Reportedly, more and more parents worry so much about their children's safety that they won't let them play freely outside."
     },
     "why": {
-      "zh": "线索：「失敗を恐れる」是过了头的心情，后面「挑戦できなくなっている」是因此产生的不正常结果。\n规则：动词辞书形（「恐れる」）＋「あまり」＝由于过度……，前面是极端的感情或状态，后面多为不好的结果；名词说「心配のあまり」。\n辨析：「末に」也连接经过和结果，但说的是长时间过程后的结局，接た形或「名词＋の」：「悩んだ末に転職を決めた」；说“过了头”用「あまり」。",
-      "en": "Clue: 「失敗を恐れる」 is a feeling taken too far, and 「挑戦できなくなっている」 is the abnormal result it leads to.\nRule: dictionary form (「恐れる」) ＋ 「あまり」 = so much … that: an extreme feeling or state, usually followed by a bad result; with a noun, 「心配のあまり」.\nContrast: 「末に」 also links a process to an outcome, but it is the end of a long process, after the た-form or noun ＋ 「の」: 「悩んだ末に転職を決めた」. For \"too much\", use 「あまり」."
+      "zh": "线索：「安全を気にする」是过了头的心情，后面「外で自由に遊ばせない」是因此产生的过度结果。\n规则：动词辞书形（「気にする」）＋「あまり」＝由于过度……，前面是极端的感情或状态，后面多为不好的结果；名词说「心配のあまり」。\n辨析：「末に」也连接经过和结果，但说的是长时间过程后的结局，接た形或「名词＋の」：「悩んだ末に転職を決めた」；说“过了头”用「あまり」。",
+      "en": "Clue: 「安全を気にする」 is a worry taken too far, and 「外で自由に遊ばせない」 is the excessive result it leads to.\nRule: dictionary form (「気にする」) ＋ 「あまり」 = so much … that: an extreme feeling or state, usually followed by a bad result; with a noun, 「心配のあまり」.\nContrast: 「末に」 also links a process to an outcome, but it is the end of a long process, after the た-form or noun ＋ 「の」: 「悩んだ末に転職を決めた」. For \"too much\", use 「あまり」."
     },
     "wrong": [
       null,
       {
-        "zh": "「末に」接过去式「た」，表示经过一番努力后的结果，「恐れる末に」接续不对。",
-        "en": "「末に」 follows the past 「た」 form and marks the outcome of a long process; 「恐れる末に」 doesn't work."
+        "zh": "「末に」接过去式「た」，表示经过一番努力后的结果，「気にする末に」接续不对。",
+        "en": "「末に」 follows the past 「た」 form and marks the outcome of a long process; 「気にする末に」 doesn't work."
       },
       {
-        "zh": "「くせに」是“明明……却……”的责备，害怕失败和不敢挑战并不矛盾。",
-        "en": "「くせに」 criticises a contradiction (\"even though\"), but fearing failure and not trying don't contradict."
+        "zh": "「くせに」是“明明……却……”的责备，担心安全和不让孩子出去玩并不矛盾。",
+        "en": "「くせに」 criticises a contradiction (\"even though\"), but worrying about safety and keeping children indoors don't contradict."
       },
       {
-        "zh": "「とたんに」接过去式，表示“刚一……就……”，不能接「恐れる」，也不是瞬间发生的事。",
-        "en": "「とたんに」 follows the past form and means \"the moment …\"; it can't follow 「恐れる」, and nothing sudden happens here."
+        "zh": "「とたんに」接过去式，表示“刚一……就……”，不能接「気にする」，也不是瞬间发生的事。",
+        "en": "「とたんに」 follows the past form and means \"the moment …\"; it can't follow 「気にする」, and nothing sudden happens here."
       }
     ]
   },
   {
     "id": "n2-m1-102",
+    "rev": 2,
     "type": "bunpou",
     "refs": ["lesson59#4"],
     "difficulty": 2,
-    "stem": "今から急いだ（　）、最終電車には間に合わないだろう。",
+    "stem": "今さら新しい参考書を買った（　）、試験まであと三日では読み切れないだろう。",
     "options": ["ところに", "ところを", "ところで", "ところが"],
     "answer": 2,
-    "full": "今から急いだところで、最終電車には間に合わないだろう。",
+    "full": "今さら新しい参考書を買ったところで、試験まであと三日では読み切れないだろう。",
     "tr": {
-      "zh": "就算现在开始赶，也赶不上末班电车了吧。",
-      "en": "Even if we hurry now, we probably won't make the last train."
+      "zh": "事到如今就算买了新的参考书，离考试只剩三天，也读不完吧。",
+      "en": "Even if I bought a new study guide now, with only three days left before the exam I probably couldn't get through it."
     },
     "why": {
-      "zh": "线索：「今から」说明还没开始赶，是假设；后面「間に合わないだろう」推测做了也没用。\n规则：た形（「急いだ」）＋「ところで」＝就算……也没用，后半句多接否定、消极的结论，带放弃的语气。\n辨析：「たところが」也接た形，但叙述已经发生的意外结果：「行ってみたところが、店は休みだった」；「たところで」多为假设，说做了也白做。",
-      "en": "Clue: 「今から」 shows nobody has started hurrying yet, so it's hypothetical, and 「間に合わないだろう」 predicts it won't help.\nRule: た-form (「急いだ」) ＋ 「ところで」 = even if you …, it's no use; the second half is usually negative, with a sense of giving up.\nContrast: 「たところが」 also follows the た-form, but reports an unexpected result that actually happened: 「行ってみたところが、店は休みだった」. 「たところで」 is mostly hypothetical: doing it would be in vain."
+      "zh": "线索：「今さら」说明还没买，是假设；后面「読み切れないだろう」推测买了也没用。\n规则：た形（「買った」）＋「ところで」＝就算……也没用，后半句多接否定、消极的结论，带放弃的语气。\n辨析：「たところが」也接た形，但叙述已经发生的意外结果：「行ってみたところが、店は休みだった」；「たところで」多为假设，说做了也白做。",
+      "en": "Clue: 「今さら」 shows the book hasn't been bought, so it's hypothetical, and 「読み切れないだろう」 predicts it won't help.\nRule: た-form (「買った」) ＋ 「ところで」 = even if you …, it's no use; the second half is usually negative, with a sense of giving up.\nContrast: 「たところが」 also follows the た-form, but reports an unexpected result that actually happened: 「行ってみたところが、店は休みだった」. 「たところで」 is mostly hypothetical: doing it would be in vain."
     },
     "wrong": [
       {
-        "zh": "「たところに」表示“正在那时（有人来了）”，后面要接发生的事，不能接推测“赶不上吧”。",
-        "en": "「たところに」 means \"just then (something happened)\"; it can't lead into a guess like \"we won't make it\"."
+        "zh": "「たところに」表示“正在那时（有人来了）”，后面要接发生的事，不能接推测“读不完吧”。",
+        "en": "「たところに」 means \"just then (something happened)\"; it can't lead into a guess like \"I couldn't get through it\"."
       },
       {
         "zh": "「たところを」后面接「見られる」「助けられる」等直接作用于那个场面的动作，这里不搭。",
@@ -60,8 +62,8 @@
       },
       null,
       {
-        "zh": "「たところが」是“做了之后（意外地）……”，叙述已发生的事，和「今から」「だろう」矛盾。",
-        "en": "「たところが」 reports what actually (unexpectedly) happened, which clashes with 「今から」 and 「だろう」."
+        "zh": "「たところが」是“做了之后（意外地）……”，叙述已发生的事，和「今さら」「だろう」矛盾。",
+        "en": "「たところが」 reports what actually (unexpectedly) happened, which clashes with 「今さら」 and 「だろう」."
       }
     ]
   },
@@ -199,32 +201,33 @@
   },
   {
     "id": "n2-m1-107",
+    "rev": 2,
     "type": "bunpou",
     "refs": ["lesson71#3"],
     "difficulty": 2,
-    "stem": "何時間も迷った（　）、結局何も買わずに店を出た。",
+    "stem": "道に迷って一時間も歩き回った（　）、結局タクシーを呼ぶことになった。",
     "options": ["とたん", "ついでに", "次第", "あげく"],
     "answer": 3,
-    "full": "何時間も迷ったあげく、結局何も買わずに店を出た。",
+    "full": "道に迷って一時間も歩き回ったあげく、結局タクシーを呼ぶことになった。",
     "tr": {
-      "zh": "犹豫了好几个小时，最后什么也没买就离开了商店。",
-      "en": "After dithering for hours, I ended up leaving the shop without buying anything."
+      "zh": "迷了路，转了足足一个小时，最后还是叫了出租车。",
+      "en": "I got lost and wandered around for a whole hour, and in the end I had to call a taxi."
     },
     "why": {
-      "zh": "线索：「何時間も迷った」是漫长的纠结，后面「結局何も買わずに」是不理想的最终结果。\n规则：た形（「迷った」）＋「あげく」＝经过一番折腾，最后……，多用于不好的结果，常和「結局」「散々」搭配。\n辨析：「末に」也表示“经过……最终”，好坏结果都能用：「悩んだ末に留学を決めた」；「あげく」偏向不好的结局，像这里什么也没买。",
-      "en": "Clue: 「何時間も迷った」 is a long spell of dithering, and 「結局何も買わずに」 is an unsatisfying final result.\nRule: た-form (「迷った」) ＋ 「あげく」 = after all that, in the end …, mostly for bad outcomes, often with 「結局」「散々」.\nContrast: 「末に」 also means \"after …, finally\", for good or bad results: 「悩んだ末に留学を決めた」. 「あげく」 leans towards a poor ending, like leaving without buying anything here."
+      "zh": "线索：「一時間も歩き回った」是漫长的折腾，后面「結局タクシーを呼ぶことになった」是不理想的最终结果。\n规则：た形（「歩き回った」）＋「あげく」＝经过一番折腾，最后……，多用于不好的结果，常和「結局」「散々」搭配。\n辨析：「末に」也表示“经过……最终”，好坏结果都能用：「悩んだ末に留学を決めた」；「あげく」偏向不好的结局，像这里白走一小时还得叫车。",
+      "en": "Clue: 「一時間も歩き回った」 is a long, fruitless struggle, and 「結局タクシーを呼ぶことになった」 is an unsatisfying final result.\nRule: た-form (「歩き回った」) ＋ 「あげく」 = after all that, in the end …, mostly for bad outcomes, often with 「結局」「散々」.\nContrast: 「末に」 also means \"after …, finally\", for good or bad results: 「悩んだ末に留学を決めた」. 「あげく」 leans towards a poor ending, like walking for an hour and still needing a taxi here."
     },
     "wrong": [
       {
-        "zh": "「たとたん」是“刚一……就……”，和「何時間も」（好几个小时）的持续时间矛盾。",
-        "en": "「たとたん」 is \"the instant …\", which clashes with 「何時間も」 (for hours)."
+        "zh": "「たとたん」是“刚一……就……”，和「一時間も」（足足一小时）的持续时间矛盾。",
+        "en": "「たとたん」 is \"the instant …\", which clashes with 「一時間も」 (a whole hour)."
       },
       {
-        "zh": "「ついでに」是“顺便”，犹豫不是能顺便做别的事的行为，也和「結局」不搭。",
-        "en": "「ついでに」 is \"while at it\"; hesitating isn't something you do something else alongside, and it doesn't go with 「結局」."
+        "zh": "「ついでに」是“顺便（做另一件事）”，叫出租车不是顺便做的事，也和「結局」不搭。",
+        "en": "「ついでに」 is \"while at it\"; calling a taxi isn't an extra errand done on the side, and it doesn't go with 「結局」."
       },
       {
-        "zh": "「次第」接ます形词干（迷い次第），表示“一……就立刻……”，接续和意思都不对。",
+        "zh": "「次第」接ます形词干（歩き回り次第），表示“一……就立刻……”，接续和意思都不对。",
         "en": "「次第」 takes the masu-stem (「〜次第」 \"as soon as\"), so both the form and the meaning are wrong."
       },
       null
@@ -298,29 +301,30 @@
   },
   {
     "id": "n2-m1-110",
+    "rev": 2,
     "type": "bunpou",
     "refs": ["lesson63#2"],
     "difficulty": 1,
-    "stem": "新製品の発売（　）、本社で記者会見が開かれた。",
+    "stem": "決勝戦の開始（　）、会場では両国の国歌が演奏された。",
     "options": ["に先立って", "に沿って", "を除いて", "にかけては"],
     "answer": 0,
-    "full": "新製品の発売に先立って、本社で記者会見が開かれた。",
+    "full": "決勝戦の開始に先立って、会場では両国の国歌が演奏された。",
     "tr": {
-      "zh": "在新产品发售之前，总公司召开了记者招待会。",
-      "en": "Ahead of the new product's launch, a press conference was held at head office."
+      "zh": "在决赛开始之前，会场演奏了两国国歌。",
+      "en": "Before the final began, both countries' national anthems were played in the stadium."
     },
     "why": {
-      "zh": "线索：「新製品の発売」是主要事件，「記者会見」在它之前先举行，而且是正式的报道文体。\n规则：名词＋「に先立って」＝在……之前（先做准备或相关活动），比「前に」正式，多见于通知、报道。\n辨析：「にあたって」也接这类名词，但强调“在那个时机”：「発売にあたって」＝当发售之际；「に先立って」强调“先于”主要事件。",
-      "en": "Clue: 「新製品の発売」 is the main event, and 「記者会見」 is held before it, in formal news-report style.\nRule: noun ＋ 「に先立って」 = prior to … (doing preparations or related events first); more formal than 「前に」, common in notices and reports.\nContrast: 「にあたって」 takes nouns like this too, but stresses the occasion itself: 「発売にあたって」 = on the occasion of the launch. 「に先立って」 stresses coming before the main event."
+      "zh": "线索：「決勝戦の開始」是主要事件，「国歌が演奏された」在它之前先进行，而且是正式的报道文体。\n规则：名词＋「に先立って」＝在……之前（先做准备或相关仪式），比「前に」正式，多见于通知、报道。\n辨析：「にあたって」也接这类名词，但强调“在那个时机”：「開始にあたって」＝当开始之际；「に先立って」强调“先于”主要事件。",
+      "en": "Clue: 「決勝戦の開始」 is the main event, and the anthems (「国歌が演奏された」) come before it, in formal news-report style.\nRule: noun ＋ 「に先立って」 = prior to … (doing preparations or a related ceremony first); more formal than 「前に」, common in notices and reports.\nContrast: 「にあたって」 takes nouns like this too, but stresses the occasion itself: 「開始にあたって」 = on the occasion of the start. 「に先立って」 stresses coming before the main event."
     },
     "wrong": [
       null,
       {
-        "zh": "「に沿って」是“按照（方針）”，“按照发售召开记者会”不通。",
-        "en": "「に沿って」 means \"in line with (a policy)\"; \"in line with the launch\" makes no sense."
+        "zh": "「に沿って」是“按照（方針）”，“按照决赛开始演奏国歌”不通。",
+        "en": "「に沿って」 means \"in line with (a policy)\"; \"in line with the start of the final\" makes no sense."
       },
       {
-        "zh": "「を除いて」是“除了……以外”，后面要接“其他都……”，不接一次记者会。",
+        "zh": "「を除いて」是“除了……以外”，后面要接“其他都……”，不接一次演奏。",
         "en": "「を除いて」 means \"except for\", which needs an \"everything else\" statement after it."
       },
       {
@@ -454,21 +458,21 @@
   },
   {
     "id": "n2-m1-116",
-    "rev": 2,
+    "rev": 3,
     "type": "narabe",
     "refs": ["lesson65#2"],
     "difficulty": 2,
-    "stem": "毎朝の満員電車は本当につらい。何とかして [_] [_] [★] [_] 考えている。",
-    "options": ["できない", "ものかと", "楽に", "通勤"],
+    "stem": "残業続きで、家族と過ごす時間がほとんどない。どうにかして [_] [_] [★] [_] 考えている。",
+    "options": ["できない", "ものかと", "早く", "帰宅"],
     "order": [2, 3, 0, 1],
-    "full": "毎朝の満員電車は本当につらい。何とかして楽に通勤できないものかと考えている。",
+    "full": "残業続きで、家族と過ごす時間がほとんどない。どうにかして早く帰宅できないものかと考えている。",
     "tr": {
-      "zh": "每天早上的满员电车真是太难受了。我一直在想，有没有什么办法能轻松地通勤呢。",
-      "en": "The packed trains every morning are really hard. I keep wondering whether there's some way I could commute more comfortably."
+      "zh": "一直加班，几乎没有和家人相处的时间。我一直在想，有没有什么办法能早点回家呢。",
+      "en": "With overtime day after day, I hardly have any time with my family. I keep wondering whether there's some way I could get home earlier."
     },
     "why": {
-      "zh": "线索：「何とかして」和「ものかと」呼应，想到「〜ないものか」（能不能……呢，强烈期望）。\n怎么排：「通勤＋できない」连成「通勤できない」（「通勤できる」的否定），「楽に」修饰它，放在最前；「できない」后接「ものかと」，引出「考えている」。顺序：楽に → 通勤 → できない → ものかと，★ 是「できない」。\n容易错：把「楽に」放到「通勤」和「できない」中间。「通勤できない」是「通勤＋できる」的否定，要连在一起。",
-      "en": "Clue: 「何とかして」 goes with 「ものかと」: think 「〜ないものか」 (isn't there some way to …, a strong wish).\nOrder: 「通勤 ＋ できない」 form 「通勤できない」 (the negative of 「通勤できる」), and 「楽に」 modifies it from the front; 「できない」 then takes 「ものかと」, leading into 「考えている」: 楽に → 通勤 → できない → ものかと. The ★ is 「できない」.\nTrap: Slipping 「楽に」 between 「通勤」 and 「できない」. 「通勤できない」 is the negative of 「通勤 ＋ できる」 and stays together."
+      "zh": "线索：「どうにかして」和「ものかと」呼应，想到「〜ないものか」（能不能……呢，强烈期望）。\n怎么排：「帰宅＋できない」连成「帰宅できない」（「帰宅できる」的否定），「早く」修饰它，放在最前；「できない」后接「ものかと」，引出「考えている」。顺序：早く → 帰宅 → できない → ものかと，★ 是「できない」。\n容易错：把「早く」放到「帰宅」和「できない」中间。「帰宅できない」是「帰宅＋できる」的否定，要连在一起。",
+      "en": "Clue: 「どうにかして」 goes with 「ものかと」: think 「〜ないものか」 (isn't there some way to …, a strong wish).\nOrder: 「帰宅 ＋ できない」 form 「帰宅できない」 (the negative of 「帰宅できる」), and 「早く」 modifies it from the front; 「できない」 then takes 「ものかと」, leading into 「考えている」: 早く → 帰宅 → できない → ものかと. The ★ is 「できない」.\nTrap: Slipping 「早く」 between 「帰宅」 and 「できない」. 「帰宅できない」 is the negative of 「帰宅 ＋ できる」 and stays together."
     },
     "wrong": [null, null, null, null]
   },

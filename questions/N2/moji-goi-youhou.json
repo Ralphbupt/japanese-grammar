@@ -886,36 +886,37 @@
   },
   {
     "id": "n2-mg-526",
+    "rev": 2,
     "type": "youhou",
     "difficulty": 2,
-    "stem": "<<夢中>>",
+    "stem": "<<没頭>>",
     "options": [
-      "疲れていたので、夢中で寝てしまい、地震に気がつかなかった。",
-      "彼は夢中な顔で、窓の外をぼんやり見ていた。",
-      "その歌手は今、若者たちの夢中だ。",
-      "子どもたちは、新しいゲームに夢中になっている。"
+      "疲れていたので、没頭して寝てしまい、地震に気がつかなかった。",
+      "彼は没頭な顔で、窓の外をぼんやり見ていた。",
+      "その歌手は今、若者たちの没頭の的だ。",
+      "彼は研究に没頭するあまり、食事をとるのも忘れてしまう。"
     ],
     "answer": 3,
     "tr": {
-      "zh": "夢中：入迷、着迷。正确句：孩子们迷上了新游戏。",
-      "en": "夢中: absorbed, crazy about. Correct: The children are hooked on the new game."
+      "zh": "没頭：埋头、专心致志。正确句：他埋头研究，连饭都忘了吃。",
+      "en": "没頭: absorbed in, immersed. Correct: He gets so absorbed in his research that he forgets to eat."
     },
     "why": {
-      "zh": "线索：正确句是孩子们迷上「新しいゲーム」，构成「〜に夢中になる」。\n词义：「夢中」（むちゅう）＝入迷、全神贯注，常说「〜に夢中になる」；「夢中で〜する」＝拼命、忘我地做，如「夢中で走る」。",
-      "en": "Clue: the right sentence has the children hooked on 「新しいゲーム」, in 「〜に夢中になる」.\nMeaning: 「夢中」 (むちゅう) is absorbed, crazy about: 「〜に夢中になる」. 「夢中で〜する」 is doing something flat out, lost in it: 「夢中で走る」."
+      "zh": "线索：正确句是埋头于「研究」，构成「〜に没頭する」。\n词义：「没頭」（ぼっとう）＝埋头、专心致志，用「〜に没頭する」：「仕事に没頭する」「読書に没頭する」；是サ变动词，不接「な」。",
+      "en": "Clue: the right sentence has him buried in 「研究」, in 「〜に没頭する」.\nMeaning: 「没頭」 (ぼっとう) is to be absorbed in: 「〜に没頭する」 — 「仕事に没頭する」, 「読書に没頭する」. It's a する-verb and never takes 「な」."
     },
     "wrong": [
       {
-        "zh": "睡得很熟是「ぐっすり寝る」，「夢中」不形容睡眠。",
-        "en": "Sleeping soundly is 「ぐっすり寝る」; 「夢中」 doesn't describe sleep."
+        "zh": "睡得很熟是「ぐっすり寝る」，「没頭」不形容睡眠。",
+        "en": "Sleeping soundly is 「ぐっすり寝る」; 「没頭」 doesn't describe sleep."
       },
       {
-        "zh": "发呆的表情是「ぼんやりした顔」，「夢中」不接「な」修饰表情。",
-        "en": "A vacant look is 「ぼんやりした顔」; 「夢中な顔」 isn't said."
+        "zh": "发呆的表情是「ぼんやりした顔」，「没頭」不接「な」。",
+        "en": "A vacant look is 「ぼんやりした顔」; 「没頭な顔」 isn't said."
       },
       {
-        "zh": "年轻人崇拜的对象是「あこがれ」「人気の的」，「夢中」不能当“被迷恋的对象”。",
-        "en": "The object of admiration is 「あこがれ」 or 「人気の的」; 「夢中」 isn't the thing people are crazy about."
+        "zh": "受崇拜的对象是「あこがれの的」，「没頭」是自己埋头做事，不能当对象。",
+        "en": "The object of admiration is 「あこがれの的」; 「没頭」 is one's own absorption, not a target."
       },
       null
     ]

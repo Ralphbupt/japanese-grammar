@@ -6,7 +6,7 @@
       "lesson57#1"
     ],
     "difficulty": 1,
-    "stem": "留学中は 家族に 会えなくて、（　）寂しかった ことか。",
+    "stem": "留学中は家族に会えなくて、（　）寂しかったことか。",
     "options": [
       "どんなに",
       "決して",
@@ -14,7 +14,7 @@
       "別に"
     ],
     "answer": 0,
-    "full": "留学中は 家族に 会えなくて、どんなに 寂しかった ことか。",
+    "full": "留学中は家族に会えなくて、どんなに寂しかったことか。",
     "tr": {
       "zh": "留学期间见不到家人，那有多寂寞啊。",
       "en": "While I was studying abroad I couldn't see my family — you can't imagine how lonely I was."
@@ -46,15 +46,15 @@
       "lesson57#1"
     ],
     "difficulty": 2,
-    "stem": "合格の 通知が 届いた。この 日を 何年（　）。",
+    "stem": "合格の通知が届いた。この日を何年（　）。",
     "options": [
-      "待った ことか",
-      "待った ことが ある",
-      "待つ ことに する",
-      "待った ものか"
+      "待ったことか",
+      "待ったことがある",
+      "待つことにする",
+      "待ったものか"
     ],
     "answer": 0,
-    "full": "合格の 通知が 届いた。この 日を 何年 待った ことか。",
+    "full": "合格の通知が届いた。この日を何年待ったことか。",
     "tr": {
       "zh": "合格通知寄到了。这一天我等了多少年啊。",
       "en": "The pass letter has arrived. I've waited so many years for this day!"
@@ -86,7 +86,7 @@
       "lesson57#1"
     ],
     "difficulty": 1,
-    "stem": "子供の ころ、この 映画を [_] [_] [★] [_] 。",
+    "stem": "子供のころ、この映画を [_] [_] [★] [_] 。",
     "options": [
       "か",
       "見た",
@@ -99,7 +99,7 @@
       3,
       0
     ],
-    "full": "子供の ころ、この 映画を 何度 見た こと か。",
+    "full": "子供のころ、この映画を何度見たことか。",
     "tr": {
       "zh": "小时候这部电影我看了多少遍啊。",
       "en": "As a kid, I watched this film more times than I can count!"
@@ -122,15 +122,15 @@
       "lesson57#2"
     ],
     "difficulty": 1,
-    "stem": "朝から 何も 食べて いないので、お腹が すいて（　）。",
+    "stem": "朝から何も食べていないので、お腹がすいて（　）。",
     "options": [
       "たまらない",
-      "かまわない",
+      "もかまわない",
       "ほしい",
-      "みる"
+      "はいけない"
     ],
     "answer": 0,
-    "full": "朝から 何も 食べて いないので、お腹が すいて たまらない。",
+    "full": "朝から何も食べていないので、お腹がすいてたまらない。",
     "tr": {
       "zh": "从早上起什么都没吃，饿得受不了。",
       "en": "I haven't eaten anything since this morning, so I'm absolutely starving."
@@ -142,16 +142,16 @@
     "wrong": [
       null,
       {
-        "zh": "「（て）かまわない」是“……也没关系”；“饿也没关系”和语境不符。",
-        "en": "「（て）かまわない」 means \"it's fine if…\"; \"it's fine to be hungry\" doesn't fit someone who hasn't eaten all day."
+        "zh": "「てもかまわない」是“……也没关系”，“饿也没关系”和“从早上什么都没吃”接不上。",
+        "en": "「てもかまわない」 means \"it's fine if…\"; \"it's fine to be hungry\" doesn't follow from not having eaten all day."
       },
       {
         "zh": "「てほしい」是希望别人做某事，“希望肚子饿”说不通。",
         "en": "「てほしい」 wants someone else to do something; it makes no sense with being hungry."
       },
       {
-        "zh": "「てみる」是“试着做”，饿不是有意尝试的动作。",
-        "en": "「てみる」 means \"try doing\"; being hungry isn't something you try."
+        "zh": "「てはいけない」是禁止“不许……”，饿不是能被禁止的事。",
+        "en": "「てはいけない」 forbids something; being hungry isn't something you can be forbidden to do."
       }
     ]
   },
@@ -163,36 +163,36 @@
       "lesson57#2"
     ],
     "difficulty": 1,
-    "stem": "来週の 試験の ことが 心配で（　）。夜も よく 眠れない。",
+    "stem": "来週の試験のことが心配で（　）。夜もよく眠れない。",
     "options": [
       "たまらない",
-      "済む",
-      "かまわない",
-      "ほしい"
+      "はいけない",
+      "もいい",
+      "はない"
     ],
     "answer": 0,
-    "full": "来週の 試験の ことが 心配で たまらない。夜も よく 眠れない。",
+    "full": "来週の試験のことが心配でたまらない。夜もよく眠れない。",
     "tr": {
       "zh": "担心下周的考试，担心得受不了，晚上都睡不好。",
       "en": "I'm terribly worried about next week's exam. I can't sleep properly at night."
     },
     "why": {
-      "zh": "线索：后一句「夜もよく眠れない」（晚上都睡不好），说明担心已经到了很严重的程度。\n规则：な形容词或名词用「で」接「たまらない」：「心配でたまらない」，表示感情强到受不了。\n辨析：「心配でたまらない」＝担心得受不了；「〜でもかまわない」＝……也没关系。后者不但缺「も」，意思也和“睡不好”相反。",
-      "en": "Clue: The next sentence, 「夜もよく眠れない」 (I can't even sleep properly), shows how serious the worry is.\nRule: A na-adjective or noun joins 「たまらない」 with 「で」: 「心配でたまらない」, a feeling too strong to bear.\nContrast: 「心配でたまらない」 = worried sick; 「〜でもかまわない」 = it's fine if…. The latter lacks the 「も」 here, and its meaning clashes with not sleeping."
+      "zh": "线索：后一句「夜もよく眠れない」（晚上都睡不好），说明担心已经到了很严重的程度。\n规则：な形容词或名词用「で」接「たまらない」：「心配でたまらない」，表示感情强到受不了。\n辨析：「心配でたまらない」＝担心得受不了；「心配ではない」＝不担心。后面说「夜もよく眠れない」，只能是担心到了极点。",
+      "en": "Clue: The next sentence, 「夜もよく眠れない」 (I can't even sleep properly), shows how serious the worry is.\nRule: A na-adjective or noun joins 「たまらない」 with 「で」: 「心配でたまらない」, a feeling too strong to bear.\nContrast: 「心配でたまらない」 = worried sick; 「心配ではない」 = not worried. The next sentence, 「夜もよく眠れない」, only fits extreme worry."
     },
     "wrong": [
       null,
       {
-        "zh": "「で済む」是“……就能了事”，「心配で済む」说不通，也和“睡不好”接不上。",
-        "en": "「で済む」 is \"get away with\"; 「心配で済む」 makes no sense and doesn't fit losing sleep."
+        "zh": "「心配ではいけない」是“不许担心”，和后面“晚上都睡不好”接不上。",
+        "en": "「心配ではいけない」 would mean \"you mustn't worry\", which doesn't lead into not being able to sleep."
       },
       {
-        "zh": "「てかまわない」是“……也没关系”，和“担心得睡不着”相反。",
-        "en": "「てかまわない」 is \"it's fine if\", the opposite of worrying so much you can't sleep."
+        "zh": "「心配でもいい」是“担心也没关系”，说不出担心到睡不着的程度。",
+        "en": "「心配でもいい」 means \"it's all right to be worried\"; it says nothing about worry so bad you can't sleep."
       },
       {
-        "zh": "「てほしい」是希望别人做某事，「心配でほしい」不成立。",
-        "en": "「てほしい」 is wanting someone to do something; 「心配でほしい」 isn't a sentence."
+        "zh": "「心配ではない」是“不担心”，和后面“晚上都睡不好”矛盾。",
+        "en": "「心配ではない」 means \"I'm not worried\", which contradicts not sleeping at night."
       }
     ]
   },
@@ -208,7 +208,7 @@
       "食べたくて",
       "料理が",
       "たまらない",
-      "国の 母の"
+      "国の母の"
     ],
     "order": [
       3,
@@ -216,7 +216,7 @@
       0,
       2
     ],
-    "full": "最近 国の 母の 料理が 食べたくて たまらない。",
+    "full": "最近国の母の料理が食べたくてたまらない。",
     "tr": {
       "zh": "最近特别想吃老家妈妈做的菜，想得受不了。",
       "en": "Lately I've been dying to eat my mum's cooking back home."
@@ -240,7 +240,7 @@
       "lesson57#3"
     ],
     "difficulty": 2,
-    "stem": "一人で 海外に 行った 娘の ことが 心配で（　）。",
+    "stem": "一人で海外に行った娘のことが心配で（　）。",
     "options": [
       "ならない",
       "かまわない",
@@ -248,7 +248,7 @@
       "ほしい"
     ],
     "answer": 0,
-    "full": "一人で 海外に 行った 娘の ことが 心配で ならない。",
+    "full": "一人で海外に行った娘のことが心配でならない。",
     "tr": {
       "zh": "一个人去了国外的女儿，让我不由得担心。",
       "en": "I can't stop worrying about my daughter, who's gone abroad on her own."
@@ -280,7 +280,7 @@
       "lesson57#3"
     ],
     "difficulty": 2,
-    "stem": "この 歌を 聞くと、学生時代が 懐かし（　）ならない。",
+    "stem": "この歌を聞くと、学生時代が懐かし（　）ならない。",
     "options": [
       "くて",
       "い",
@@ -288,7 +288,7 @@
       "さ"
     ],
     "answer": 0,
-    "full": "この 歌を 聞くと、学生時代が 懐かし くて ならない。",
+    "full": "この歌を聞くと、学生時代が懐かしくてならない。",
     "tr": {
       "zh": "一听到这首歌，就不由得怀念学生时代。",
       "en": "Whenever I hear this song, I can't help feeling nostalgic for my student days."
@@ -320,7 +320,7 @@
       "lesson57#3"
     ],
     "difficulty": 2,
-    "stem": "明日の 面接の [_] [★] [_] [_] 。",
+    "stem": "明日の面接の [_] [★] [_] [_] 。",
     "options": [
       "なって",
       "ならない",
@@ -333,7 +333,7 @@
       0,
       1
     ],
-    "full": "明日の 面接の ことが 気に なって ならない。",
+    "full": "明日の面接のことが気になってならない。",
     "tr": {
       "zh": "明天的面试让我不由得一直放心不下。",
       "en": "I can't stop thinking about tomorrow's interview."
@@ -357,7 +357,7 @@
       "lesson57#4"
     ],
     "difficulty": 1,
-    "stem": "A「すみません、この 席に 座っても（　）。」\nB「ええ、どうぞ。」",
+    "stem": "A「すみません、この席に座っても（　）。」\nB「ええ、どうぞ。」",
     "options": [
       "かまいませんか",
       "いけませんか",
@@ -365,7 +365,7 @@
       "なりませんか"
     ],
     "answer": 0,
-    "full": "A「すみません、この 席に 座っても かまいませんか。」 B「ええ、どうぞ。」",
+    "full": "A「すみません、この席に座ってもかまいませんか。」 B「ええ、どうぞ。」",
     "tr": {
       "zh": "A：不好意思，我可以坐这个座位吗？ B：嗯，请坐。",
       "en": "A: Excuse me, would you mind if I sat here? B: Not at all, go ahead."
@@ -397,7 +397,7 @@
       "lesson57#4"
     ],
     "difficulty": 2,
-    "stem": "サイズさえ 合えば、色は 何色（　）かまいません。",
+    "stem": "サイズさえ合えば、色は何色（　）かまいません。",
     "options": [
       "でも",
       "で",
@@ -405,7 +405,7 @@
       "なら"
     ],
     "answer": 0,
-    "full": "サイズさえ 合えば、色は 何色 でも かまいません。",
+    "full": "サイズさえ合えば、色は何色でもかまいません。",
     "tr": {
       "zh": "只要尺寸合适，颜色什么颜色都可以。",
       "en": "As long as the size fits, any colour is fine."
@@ -450,7 +450,7 @@
       0,
       2
     ],
-    "full": "レポートは 手書き で なくても かまいません。",
+    "full": "レポートは手書きでなくてもかまいません。",
     "tr": {
       "zh": "报告不是手写的也没关系。",
       "en": "Your report doesn't have to be handwritten."
@@ -473,15 +473,15 @@
       "lesson57#5"
     ],
     "difficulty": 1,
-    "stem": "いつもは 自転車で 通勤して いるが、雨の 日は バスで 行く（　）。",
+    "stem": "いつもは自転車で通勤しているが、雨の日はバスで行く（　）。",
     "options": [
-      "ことが ある",
+      "ことがある",
       "ことか",
       "ものか",
-      "わけには いかない"
+      "わけにはいかない"
     ],
     "answer": 0,
-    "full": "いつもは 自転車で 通勤して いるが、雨の 日は バスで 行く ことが ある。",
+    "full": "いつもは自転車で通勤しているが、雨の日はバスで行くことがある。",
     "tr": {
       "zh": "平时骑自行车上班，下雨天有时会坐公交去。",
       "en": "I usually cycle to work, but on rainy days I sometimes take the bus."
@@ -513,7 +513,7 @@
       "lesson57#5"
     ],
     "difficulty": 2,
-    "stem": "日本に 来て もう 5年に なるが、今でも ときどき 道に（　）ことが ある。",
+    "stem": "日本に来てもう5年になるが、今でもときどき道に（　）ことがある。",
     "options": [
       "迷う",
       "迷った",
@@ -521,7 +521,7 @@
       "迷わず"
     ],
     "answer": 0,
-    "full": "日本に 来て もう 5年に なるが、今でも ときどき 道に 迷う ことが ある。",
+    "full": "日本に来てもう5年になるが、今でもときどき道に迷うことがある。",
     "tr": {
       "zh": "来日本已经 5 年了，到现在还时不时会迷路。",
       "en": "I've been in Japan five years now, but I still get lost sometimes."
@@ -553,9 +553,9 @@
       "lesson57#5"
     ],
     "difficulty": 2,
-    "stem": "たまに 寝坊して、[_] [_] [_] [★] 。",
+    "stem": "たまに寝坊して、[_] [_] [_] [★] 。",
     "options": [
-      "ことが ある",
+      "ことがある",
       "食べずに",
       "朝ご飯を",
       "出かける"
@@ -566,7 +566,7 @@
       3,
       0
     ],
-    "full": "たまに 寝坊して、朝ご飯を 食べずに 出かける ことが ある。",
+    "full": "たまに寝坊して、朝ご飯を食べずに出かけることがある。",
     "tr": {
       "zh": "偶尔睡过头，会不吃早饭就出门。",
       "en": "Now and then I oversleep and head out without breakfast."
@@ -590,15 +590,15 @@
       "lesson57#6"
     ],
     "difficulty": 2,
-    "stem": "家族と よく 話し合った（　）、会社を 辞めて 留学する ことに した。",
+    "stem": "家族とよく話し合った（　）、会社を辞めて留学することにした。",
     "options": [
       "結果",
       "せいで",
-      "うちに",
+      "ついでに",
       "くせに"
     ],
     "answer": 0,
-    "full": "家族と よく 話し合った 結果、会社を 辞めて 留学する ことに した。",
+    "full": "家族とよく話し合った結果、会社を辞めて留学することにした。",
     "tr": {
       "zh": "和家人充分商量的结果，决定辞职去留学。",
       "en": "After talking it over carefully with my family, I decided to quit my job and study abroad."
@@ -614,8 +614,8 @@
         "en": "「せいで」 blames a cause for something bad; one's own decision isn't that."
       },
       {
-        "zh": "「うちに」接辞书形、ない形或「ている」，不接「た形」。",
-        "en": "「うちに」 follows the dictionary form, nai-form or 「ている」, not the ta-form."
+        "zh": "「ついでに」是“顺便”，辞职留学这样的大决定不是顺便做的事。",
+        "en": "「ついでに」 means \"while at it\"; quitting a job to study abroad isn't something done in passing."
       },
       {
         "zh": "「くせに」带责备，是说别人“明明……却”，和自己的决定不符。",
@@ -631,7 +631,7 @@
       "lesson57#6"
     ],
     "difficulty": 1,
-    "stem": "健康診断の（　）、少し 血圧が 高い ことが 分かった。",
+    "stem": "健康診断の（　）、少し血圧が高いことが分かった。",
     "options": [
       "結果",
       "ついでに",
@@ -639,7 +639,7 @@
       "せいで"
     ],
     "answer": 0,
-    "full": "健康診断の 結果、少し 血圧が 高い ことが 分かった。",
+    "full": "健康診断の結果、少し血圧が高いことが分かった。",
     "tr": {
       "zh": "体检的结果显示血压有点高。",
       "en": "My health check showed that my blood pressure is a little high."
@@ -674,7 +674,7 @@
     "stem": "何度も [_] [_] [_] [★] 完成した。",
     "options": [
       "繰り返した",
-      "新しい 薬が",
+      "新しい薬が",
       "結果",
       "実験を"
     ],
@@ -684,7 +684,7 @@
       2,
       1
     ],
-    "full": "何度も 実験を 繰り返した 結果 新しい 薬が 完成した。",
+    "full": "何度も実験を繰り返した結果新しい薬が完成した。",
     "tr": {
       "zh": "反复做了很多次实验，结果新药终于研制成功了。",
       "en": "After repeating the experiments many times, the new drug was finally completed."

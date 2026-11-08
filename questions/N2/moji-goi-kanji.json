@@ -181,37 +181,38 @@
   },
   {
     "id": "n2-mg-106",
+    "rev": 2,
     "type": "kanji",
     "difficulty": 1,
-    "stem": "今回の試験の<<範囲>>は第五課までだ。",
+    "stem": "経費を<<削減>>するため、出張の回数を減らした。",
     "options": [
-      "はんい",
-      "ばんい",
-      "はんいん",
-      "はんえい"
+      "さくげん",
+      "しょうげん",
+      "さくけん",
+      "さっげん"
     ],
     "answer": 0,
     "tr": {
-      "zh": "这次考试范围到第五课为止。",
-      "en": "This test covers up to Lesson 5."
+      "zh": "为了削减经费，减少了出差次数。",
+      "en": "To cut costs, we reduced the number of business trips."
     },
     "why": {
-      "zh": "「範（はん）」+「囲（い）」：「はんい」。",
-      "en": "「範」 is はん and 「囲」 is い: はんい."
+      "zh": "「削（さく）」+「減（げん）」：「さくげん」。「経費削減」「人員削減」常一起出现。",
+      "en": "「削」 is さく and 「減」 is げん: さくげん, as in 「経費削減」 and 「人員削減」."
     },
     "wrong": [
       null,
       {
-        "zh": "「範」不浊化，是「はん」。",
-        "en": "「範」 isn't voiced: はん."
+        "zh": "「しょうげん」是「証言」的读音；「削」读「さく」。",
+        "en": "しょうげん is 「証言」; 「削」 is さく."
       },
       {
-        "zh": "「囲」读「い」，后面没有「ん」。",
-        "en": "「囲」 is い, with no ん after it."
+        "zh": "「減」读浊音「げん」，不读「けん」。",
+        "en": "「減」 is voiced: げん, not けん."
       },
       {
-        "zh": "「はんえい」是「反映」的读音；「囲」读「い」。",
-        "en": "はんえい is the reading of 「反映」; 囲 here is い."
+        "zh": "「削減」中间没有促音，是「さく・げん」。",
+        "en": "There's no small っ in 削減: さく・げん."
       }
     ]
   },
@@ -622,8 +623,8 @@
       "en": "I won't make the same mistake again."
     },
     "why": {
-      "zh": "「過ち（あやまち）」：过错。送假名「ち」就是读音的最后一个音。",
-      "en": "「過ち」 is あやまち (a mistake); the okurigana ち is its last sound."
+      "zh": "「過ち（あやまち）」：过错。送假名「ち」就是读音的最后一个音。\n容易错：「誤り（あやまり）」读音只差一个假名，意思也近（错误）。看送假名分：「過ち」→「ち」，「誤り」→「り」。「過ち」偏指道德上、行为上的过失（「過ちを犯す」），「誤り」指答案、判断上的错误（「計算の誤り」）。",
+      "en": "「過ち」 is あやまち (a mistake); the okurigana ち is its last sound.\nTrap: 「誤り」 (あやまり) is one kana away and also means a mistake. The okurigana tells them apart: 「過ち」 ends in ち, 「誤り」 in り. 「過ち」 is a wrong act or moral lapse (「過ちを犯す」); 「誤り」 is an error in an answer or judgement (「計算の誤り」)."
     },
     "wrong": [
       null,
@@ -1228,8 +1229,8 @@
       "en": "Even after moving out, I'm in frequent contact with my mother."
     },
     "why": {
-      "zh": "「頻（ひん）」+「繁（ぱん）」：「ひんぱん」，「繁」在「ん」后变成半浊音「ぱん」。",
-      "en": "「頻」 is ひん and 「繁」 becomes ぱん after ん: ひんぱん."
+      "zh": "「頻（ひん）」+「繁（ぱん）」：「ひんぱん」。「繁」单独读「はん」（「繁栄」「繁華街」），「頻繁」一词习惯读成半浊音「ぱん」，要整词记住，不是通用规则。",
+      "en": "「頻」 is ひん and 「繁」 is ぱん: ひんぱん. 「繁」 is normally はん (「繁栄」, 「繁華街」); ぱん is simply how this word is read, so learn 頻繁 as a whole — it isn't a general rule."
     },
     "wrong": [
       null,
@@ -1242,8 +1243,8 @@
         "en": "「頻」 isn't voiced: ひん."
       },
       {
-        "zh": "「繁」在「ん」后变成「ぱん」，不保持「はん」。",
-        "en": "After ん, 「繁」 changes to ぱん; it doesn't stay はん."
+        "zh": "「繁」平时读「はん」，但「頻繁」这个词固定读「ひんぱん」。",
+        "en": "「繁」 is usually はん, but this word is always read ひんぱん."
       }
     ]
   },
@@ -1501,72 +1502,74 @@
   },
   {
     "id": "n2-mg-143",
+    "rev": 2,
     "type": "kanji",
     "difficulty": 1,
-    "stem": "彼女は社内でも特に<<優秀>>な社員だ。",
+    "stem": "この地域では、絶滅のおそれがある鳥を<<保護>>している。",
     "options": [
-      "ゆしゅう",
-      "ゆうしゅ",
-      "ゆうしゅう",
-      "ようしゅう"
+      "ほうご",
+      "ぼご",
+      "ほご",
+      "ほごう"
     ],
     "answer": 2,
     "tr": {
-      "zh": "她在公司里也是特别优秀的员工。",
-      "en": "She's one of the most capable people in the company."
+      "zh": "这个地区正在保护濒临灭绝的鸟类。",
+      "en": "This area protects birds that are in danger of extinction."
     },
     "why": {
-      "zh": "「優（ゆう）」+「秀（しゅう）」：两个都是长音，「ゆうしゅう」。",
-      "en": "「優」 is ゆう and 「秀」 is しゅう — both long: ゆうしゅう."
+      "zh": "「保（ほ）」+「護（ご）」：两个都是短音，「ほご」。",
+      "en": "「保」 is ほ and 「護」 is ご — both short: ほご."
     },
     "wrong": [
       {
-        "zh": "「優」是长音「ゆう」，不能缩短成「ゆ」。",
-        "en": "「優」 is the long ゆう, not ゆ."
+        "zh": "「保」是短音「ほ」，不拉长成「ほう」。",
+        "en": "「保」 is the short ほ, not ほう."
       },
       {
-        "zh": "「秀」是长音「しゅう」，不能缩短成「しゅ」。",
-        "en": "「秀」 is the long しゅう, not しゅ."
+        "zh": "「保」不浊化，是「ほ」。",
+        "en": "「保」 isn't voiced: ほ."
       },
       null,
       {
-        "zh": "「優」读「ゆう」，不读「よう」。",
-        "en": "「優」 is ゆう, not よう."
+        "zh": "「護」是短音「ご」，不拉长成「ごう」。",
+        "en": "「護」 is the short ご, not ごう."
       }
     ]
   },
   {
     "id": "n2-mg-144",
+    "rev": 2,
     "type": "kanji",
     "difficulty": 2,
-    "stem": "旅行のあいだ、犬を友人に<<預けて>>いる。",
+    "stem": "長い時間をかけて<<築いた>>信頼を、一度の失敗で失いたくない。",
     "options": [
-      "あづけて",
-      "あすけて",
-      "あたえて",
-      "あずけて"
+      "きづいた",
+      "ちくいた",
+      "きついた",
+      "きずいた"
     ],
     "answer": 3,
     "tr": {
-      "zh": "旅行期间，我把狗寄放在朋友那里。",
-      "en": "While I'm travelling, my dog is staying with a friend."
+      "zh": "花了很长时间建立起来的信任，不想因为一次失误就失去。",
+      "en": "I don't want to lose, through one mistake, the trust I spent so long building."
     },
     "why": {
-      "zh": "「預ける（あずける）」：寄存、托付。现代假名写「ず」。",
-      "en": "「預ける」 is あずける: to leave something in someone's care. Modern spelling uses ず."
+      "zh": "「築く」读「きずく」（建立、构筑），常说「信頼を築く」「関係を築く」。",
+      "en": "「築く」 is きずく (to build up): 「信頼を築く」, 「関係を築く」."
     },
     "wrong": [
       {
-        "zh": "现代假名用法写「あずける」，「づ」是旧写法。",
-        "en": "Modern kana spelling is あずける; づ is the old spelling."
+        "zh": "「きづいた」是「気づいた」（察觉到）；「築く」写「ず」：「きずく」。",
+        "en": "きづいた is 「気づいた」 (noticed); 築く is spelled with ず: きずく."
       },
       {
-        "zh": "第二个音是浊音「ず」，不是「す」。",
-        "en": "The second sound is voiced ず, not す."
+        "zh": "「ちく」是「建築」的音读，后接送假名「いた」时用训读「きず」。",
+        "en": "ちく is the on-reading (as in 「建築」); with the kana いた it's the kun-reading きず."
       },
       {
-        "zh": "「あたえる」是「与える」（给予），不是「預ける」。",
-        "en": "あたえる is 「与える」 (to give), not 「預ける」."
+        "zh": "「築く」是浊音「ず」，不是「きつく」。",
+        "en": "築く has a voiced ず; it isn't きつく."
       },
       null
     ]
@@ -1753,36 +1756,37 @@
   },
   {
     "id": "n2-mg-150",
+    "rev": 2,
     "type": "kanji",
     "difficulty": 1,
-    "stem": "写真を<<拡大>>して、細かいところを確認した。",
+    "stem": "雨の中で無理をしたせいで、かぜが<<悪化>>してしまった。",
     "options": [
-      "かくたい",
-      "こうだい",
-      "かくだ",
-      "かくだい"
+      "あくか",
+      "わるか",
+      "おっか",
+      "あっか"
     ],
     "answer": 3,
     "tr": {
-      "zh": "把照片放大，确认了细节。",
-      "en": "I enlarged the photo to check the details."
+      "zh": "因为冒雨硬撑，感冒恶化了。",
+      "en": "I pushed myself in the rain, and my cold got worse."
     },
     "why": {
-      "zh": "「拡（かく）」+「大（だい）」：「かくだい」。",
-      "en": "「拡」 is かく and 「大」 is だい: かくだい."
+      "zh": "「悪（あく）」+「化（か）」，「く」变成促音：「あっか」。对比：「悪口」是训读「わるぐち」。",
+      "en": "「悪」 (あく) ＋ 「化」 (か): the く becomes a small っ — あっか. Compare 「悪口」, read with the kun-reading わるぐち."
     },
     "wrong": [
       {
-        "zh": "「大」读浊音「だい」，不是「たい」。",
-        "en": "「大」 is voiced だい here, not たい."
+        "zh": "「あく」后接「か」时变成促音，读「あっか」，不读「あくか」。",
+        "en": "あく before か becomes あっ: あっか, not あくか."
       },
       {
-        "zh": "「拡」读「かく」；「こうだい」是「広大」（广阔）。",
-        "en": "「拡」 is かく; こうだい is 「広大」 (vast)."
+        "zh": "「わる」是「悪い」的训读，「悪化」是音读词。",
+        "en": "わる is the kun-reading in 「悪い」; 悪化 is an on-reading word."
       },
       {
-        "zh": "「大」读「だい」，不能少了「い」。",
-        "en": "「大」 is だい — the い can't be dropped."
+        "zh": "「悪」在这里读「あ（っ）」，不读「お」（「嫌悪（けんお）」的读法）。",
+        "en": "「悪」 here is あっ, not お (as in 「嫌悪」)."
       },
       null
     ]
@@ -1933,36 +1937,37 @@
   },
   {
     "id": "n2-mg-155",
+    "rev": 2,
     "type": "kanji",
     "difficulty": 1,
-    "stem": "レポートの<<締め切り>>は来週の金曜日だ。",
+    "stem": "医者に勧められて、来月から入院して<<治療>>を受けることになった。",
     "options": [
-      "しめぎり",
-      "しめっきり",
-      "ていきり",
-      "しめきり"
+      "じりょう",
+      "ちりょ",
+      "ちいりょう",
+      "ちりょう"
     ],
     "answer": 3,
     "tr": {
-      "zh": "报告的截止日期是下周五。",
-      "en": "The report is due next Friday."
+      "zh": "在医生的建议下，下个月开始住院接受治疗。",
+      "en": "On the doctor's advice, I'll go into hospital next month for treatment."
     },
     "why": {
-      "zh": "「締め切り（しめきり）」：截止（日期）。「切り」不浊化。",
-      "en": "「締め切り」 is しめきり: the deadline. 「切り」 isn't voiced here."
+      "zh": "「治（ち）」+「療（りょう）」：「ちりょう」。「治」在「政治（せいじ）」里读「じ」，在「治療」里读「ち」。",
+      "en": "「治」 is ち and 「療」 is りょう: ちりょう. 「治」 is じ in 「政治」 but ち in 治療."
     },
     "wrong": [
       {
-        "zh": "「切り」在这里不浊化，读「きり」。",
-        "en": "「切り」 is not voiced here: きり."
+        "zh": "「じ」是「政治」「退治」中的读法，「治療」读「ち」。",
+        "en": "じ is the reading in 「政治」; in 治療 it's ち."
       },
       {
-        "zh": "中间没有促音「っ」。",
-        "en": "There's no small っ in this word."
+        "zh": "「療」是长音「りょう」，不能缩短成「りょ」。",
+        "en": "「療」 is the long りょう, not りょ."
       },
       {
-        "zh": "「締」训读「しめ」；「てい」是音读（「締結」）。",
-        "en": "「締」 here is the kun reading しめ; てい is its on reading (「締結」)."
+        "zh": "「治」读短音「ち」，不拉长。",
+        "en": "「治」 is the short ち."
       },
       null
     ]
@@ -2149,37 +2154,38 @@
   },
   {
     "id": "n2-mg-161",
+    "rev": 2,
     "type": "kanji",
     "difficulty": 1,
-    "stem": "来週、取引先の会社を<<訪問>>する予定だ。",
+    "stem": "来年度から、新しい評価制度を<<導入>>する予定だ。",
     "options": [
-      "ほうもん",
-      "ほもん",
-      "ぼうもん",
-      "ほうぶん"
+      "どうにゅう",
+      "どうにゅ",
+      "とうにゅう",
+      "どうにょう"
     ],
     "answer": 0,
     "tr": {
-      "zh": "下周计划去拜访客户公司。",
-      "en": "Next week I'm due to visit a client's company."
+      "zh": "预计从下一年度起引进新的评价制度。",
+      "en": "A new appraisal system is to be introduced from next fiscal year."
     },
     "why": {
-      "zh": "「訪（ほう）」+「問（もん）」：「ほうもん」。",
-      "en": "「訪」 is ほう and 「問」 is もん: ほうもん."
+      "zh": "「導（どう）」+「入（にゅう）」：「どうにゅう」，两个都是长音。",
+      "en": "「導」 is どう and 「入」 is にゅう — both long: どうにゅう."
     },
     "wrong": [
       null,
       {
-        "zh": "「訪」是长音「ほう」，不能缩短。",
-        "en": "「訪」 is the long ほう — don't shorten it."
+        "zh": "「入」是长音「にゅう」，不能缩短成「にゅ」。",
+        "en": "「入」 is the long にゅう, not にゅ."
       },
       {
-        "zh": "「訪」是清音「ほう」，不是「ぼう」。",
-        "en": "「訪」 is unvoiced ほう, not ぼう."
+        "zh": "「導」是浊音「どう」，不读「とう」。",
+        "en": "「導」 is voiced: どう, not とう."
       },
       {
-        "zh": "「問」读「もん」；「ほうぶん」是「邦文」。",
-        "en": "「問」 is もん; ほうぶん is 「邦文」 (Japanese text)."
+        "zh": "「入」读「にゅう」，不读「にょう」。",
+        "en": "「入」 is にゅう, not にょう."
       }
     ]
   },
@@ -2365,37 +2371,38 @@
   },
   {
     "id": "n2-mg-167",
+    "rev": 2,
     "type": "kanji",
     "difficulty": 1,
-    "stem": "彼女は<<素直>>な性格で、だれからも好かれている。",
+    "stem": "おぼれている子どもを助けた少年の<<勇敢>>な行動が、新聞で紹介された。",
     "options": [
-      "そちょく",
-      "すなを",
-      "すなお",
-      "もとなお"
+      "ゆかん",
+      "ゆうがん",
+      "ゆうかん",
+      "ようかん"
     ],
     "answer": 2,
     "tr": {
-      "zh": "她性格坦率听话，谁都喜欢她。",
-      "en": "She's open and good-natured, and everyone likes her."
+      "zh": "救起溺水儿童的少年的勇敢行为登上了报纸。",
+      "en": "The brave act of the boy who saved a drowning child was reported in the paper."
     },
     "why": {
-      "zh": "「素直」是特殊读法「すなお」：坦率、老实。",
-      "en": "「素直」 has a special reading, すなお: honest, open, good-natured."
+      "zh": "「勇（ゆう）」+「敢（かん）」：「ゆうかん」。「勇」是长音，「敢」不浊化。",
+      "en": "「勇」 is ゆう and 「敢」 is かん: ゆうかん — long ゆう, unvoiced かん."
     },
     "wrong": [
       {
-        "zh": "「素直」不按音读读成「そちょく」。",
-        "en": "「素直」 isn't read by its on readings as そちょく."
+        "zh": "「勇」是长音「ゆう」，不能缩短成「ゆ」。",
+        "en": "「勇」 is the long ゆう, not ゆ."
       },
       {
-        "zh": "最后是「お」，不是「を」。",
-        "en": "It ends in お, not を."
+        "zh": "「敢」不浊化，是「かん」。",
+        "en": "「敢」 isn't voiced: かん."
       },
       null,
       {
-        "zh": "「素直」不分开训读成「もとなお」。",
-        "en": "「素直」 isn't read as separate kun readings, もとなお."
+        "zh": "「ようかん」是点心「羊羹」；「勇」读「ゆう」。",
+        "en": "ようかん is the sweet 「羊羹」; 「勇」 is ゆう."
       }
     ]
   },
@@ -2509,37 +2516,38 @@
   },
   {
     "id": "n2-mg-171",
+    "rev": 2,
     "type": "kanji",
     "difficulty": 1,
-    "stem": "駅で<<偶然>>、昔の友達に会った。",
+    "stem": "彼女は仕事に対する姿勢がまじめで、新人の<<模範>>となっている。",
     "options": [
-      "ぐぜん",
-      "ぐうせん",
-      "ぐうぜん",
-      "ぐうねん"
+      "もばん",
+      "ぼはん",
+      "もはん",
+      "もうはん"
     ],
     "answer": 2,
     "tr": {
-      "zh": "在车站偶然遇到了以前的朋友。",
-      "en": "I ran into an old friend at the station by chance."
+      "zh": "她对工作的态度很认真，成了新人的榜样。",
+      "en": "Her serious attitude to work makes her a model for new staff."
     },
     "why": {
-      "zh": "「偶（ぐう）」+「然（ぜん）」：「ぐうぜん」。",
-      "en": "「偶」 is ぐう and 「然」 is ぜん: ぐうぜん."
+      "zh": "「模（も）」+「範（はん）」：「もはん」。「範」不浊化，「模」读短音「も」。",
+      "en": "「模」 is も and 「範」 is はん: もはん — no voicing, no long vowel."
     },
     "wrong": [
       {
-        "zh": "「偶」是长音「ぐう」，不能缩短。",
-        "en": "「偶」 is the long ぐう — don't shorten it."
+        "zh": "「範」不浊化，是「はん」，不读「ばん」。",
+        "en": "「範」 isn't voiced: はん, not ばん."
       },
       {
-        "zh": "「然」在这里读浊音「ぜん」（如「自然」）。",
-        "en": "「然」 is voiced ぜん here (as in 「自然」)."
+        "zh": "「模」在这里读「も」；「ぼ」是「規模（きぼ）」里的读法。",
+        "en": "「模」 is も here; ぼ is its reading in 「規模」."
       },
       null,
       {
-        "zh": "「然」读「ぜん」或「ねん」（「天然」），这个词里是「ぜん」。",
-        "en": "「然」 is ぜん or ねん (「天然」); in this word it's ぜん."
+        "zh": "「模」是短音「も」，不拉长成「もう」。",
+        "en": "「模」 is the short も, not もう."
       }
     ]
   },

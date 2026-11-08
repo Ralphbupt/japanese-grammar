@@ -253,37 +253,38 @@
   },
   {
     "id": "n2-m2-008",
+    "rev": 2,
     "type": "hyouki",
     "difficulty": 2,
-    "stem": "かぜを<<ふせぐ>>ために、外から帰ったら必ず手を洗っている。",
+    "stem": "試験に落ちて落ち込んでいる友人を<<はげまそう>>と、手紙を書いた。",
     "options": [
-      "坊ぐ",
-      "妨ぐ",
-      "防ぐ",
-      "房ぐ"
+      "勧まそう",
+      "働まそう",
+      "励まそう",
+      "勤まそう"
     ],
     "answer": 2,
     "tr": {
-      "zh": "为了预防感冒，我从外面回来一定洗手。",
-      "en": "To ward off colds, I always wash my hands when I get home."
+      "zh": "为了鼓励因考试落榜而消沉的朋友，我写了一封信。",
+      "en": "I wrote a letter to cheer up a friend who was down after failing an exam."
     },
     "why": {
-      "zh": "「ふせぐ」（防止、预防）写作「防ぐ」，和「予防」「防止」的「防」相同。",
-      "en": "ふせぐ (to prevent) is 「防ぐ」, the same 「防」 as in 「予防」 and 「防止」."
+      "zh": "「はげます」（鼓励）写作「励ます」，和「激励」「励み」的「励」相同。",
+      "en": "はげます (to encourage) is 「励ます」, the same 「励」 as in 「激励」 and 「励み」."
     },
     "wrong": [
       {
-        "zh": "「坊」是「坊や」「寝坊」的「坊」，不能写「ふせぐ」。",
-        "en": "「坊」 is the 坊 of 「寝坊」; it doesn't write ふせぐ."
+        "zh": "「勧」是「勧める（すすめる）」的「勧」（劝），没有「勧ます」。",
+        "en": "「勧」 is in 「勧める」 (すすめる, to recommend); 「勧ます」 isn't a word."
       },
       {
-        "zh": "「妨」是「妨げる（さまたげる）」（妨碍），没有「妨ぐ」这个写法。",
-        "en": "「妨」 is in 「妨げる」 (さまたげる, to hinder); 「妨ぐ」 isn't a word."
+        "zh": "「働」是「働く（はたらく）」的「働」，没有「働ます」。",
+        "en": "「働」 is in 「働く」 (はたらく); 「働ます」 isn't a word."
       },
       null,
       {
-        "zh": "「房」是「冷房」的「房」，不能写「ふせぐ」。",
-        "en": "「房」 is the 房 of 「冷房」; it doesn't write ふせぐ."
+        "zh": "「勤」是「勤める（つとめる）」的「勤」，没有「勤ます」。",
+        "en": "「勤」 is in 「勤める」 (つとめる); 「勤ます」 isn't a word."
       }
     ]
   },

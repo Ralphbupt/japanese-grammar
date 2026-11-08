@@ -1106,37 +1106,38 @@
   },
   {
     "id": "n2-mg-431",
+    "rev": 2,
     "type": "iikae",
     "difficulty": 1,
-    "stem": "一日中歩き回って、<<くたくただ>>。",
+    "stem": "暑い中、一日中歩き回って、すっかり<<ばててしまった>>。",
     "options": [
-      "おなかがすいている",
-      "とても疲れている",
-      "足が痛い",
-      "眠れない"
+      "おなかがすいてしまった",
+      "とても疲れてしまった",
+      "足をけがしてしまった",
+      "眠れなくなってしまった"
     ],
     "answer": 1,
     "tr": {
-      "zh": "走了一整天，累得筋疲力尽。",
-      "en": "I've been walking around all day and I'm worn out."
+      "zh": "大热天里走了一整天，彻底累垮了。",
+      "en": "Walking around all day in the heat, I was completely worn out."
     },
     "why": {
-      "zh": "线索：走了一整天之后的「くたくただ」＝累得筋疲力尽，对应「とても疲れている」。\n词义：「くたくた」＝累得精疲力竭，常说「くたくたに疲れる」「仕事でくたくただ」；也可形容布料、蔬菜软塌塌的。",
-      "en": "Clue: after walking around all day, 「くたくただ」 means worn out, which is 「とても疲れている」.\nMeaning: 「くたくた」 is exhausted: 「くたくたに疲れる」, 「仕事でくたくただ」. It can also describe cloth or vegetables gone limp."
+      "zh": "线索：「暑い中」「一日中歩き回って」之后的「ばてる」＝累垮了，对应「とても疲れてしまった」。\n词义：「ばてる」（口语）＝累得精疲力竭，常说「夏ばて」「暑さでばてる」。",
+      "en": "Clue: after 「暑い中」 and 「一日中歩き回って」, 「ばてる」 means worn out — 「とても疲れてしまった」.\nMeaning: 「ばてる」 (casual) is to be exhausted: 「夏ばて」 (summer fatigue), 「暑さでばてる」."
     },
     "wrong": [
       {
-        "zh": "「おなかがすいている」是饿了，不是累。",
-        "en": "「おなかがすいている」 is hungry, not tired."
+        "zh": "「おなかがすいてしまった」是饿了，不是累。",
+        "en": "「おなかがすいてしまった」 is hungry, not worn out."
       },
       null,
       {
-        "zh": "「足が痛い」只是脚疼，不等于全身疲惫。",
-        "en": "「足が痛い」 is sore feet, not total exhaustion."
+        "zh": "「足をけがしてしまった」是脚受伤，不等于全身疲惫。",
+        "en": "「足をけがしてしまった」 is an injured foot, not exhaustion."
       },
       {
-        "zh": "「眠れない」是睡不着，不是累。",
-        "en": "「眠れない」 is can't sleep — not the same."
+        "zh": "「眠れなくなってしまった」是睡不着，不是累。",
+        "en": "「眠れなくなってしまった」 is not being able to sleep."
       }
     ]
   },
@@ -1178,37 +1179,38 @@
   },
   {
     "id": "n2-mg-433",
+    "rev": 2,
     "type": "iikae",
     "difficulty": 1,
-    "stem": "彼は<<いきなり>>大声を出した。",
+    "stem": "彼はだれにも言わずに、<<ひそかに>>転職の準備を進めていた。",
     "options": [
-      "突然",
+      "こっそりと",
+      "急いで",
       "何度も",
-      "わざと",
-      "後で"
+      "わざと"
     ],
     "answer": 0,
     "tr": {
-      "zh": "他突然大喊了一声。",
-      "en": "He suddenly shouted."
+      "zh": "他没告诉任何人，悄悄地做着跳槽的准备。",
+      "en": "Without telling anyone, he was quietly preparing to change jobs."
     },
     "why": {
-      "zh": "线索：划线的「いきなり」修饰「大声を出した」，没有任何预兆，对应「突然」。\n词义：「いきなり」＝突然、冷不防，多用于口语，常说「いきなり怒り出す」「いきなりドアが開く」。",
-      "en": "Clue: the underlined 「いきなり」 goes with 「大声を出した」 — with no warning — which is 「突然」.\nMeaning: 「いきなり」 is suddenly, out of the blue, mostly in speech: 「いきなり怒り出す」, 「いきなりドアが開く」."
+      "zh": "线索：「だれにも言わずに」，不让别人知道地进行，「ひそかに」＝「こっそりと」。\n词义：「ひそかに」（密かに）＝暗中、悄悄地，常说「ひそかに計画する」「ひそかな楽しみ」。",
+      "en": "Clue: 「だれにも言わずに」 — done without others knowing, so 「ひそかに」 = 「こっそりと」.\nMeaning: 「ひそかに」 (密かに) is secretly, quietly: 「ひそかに計画する」, 「ひそかな楽しみ」 (a secret pleasure)."
     },
     "wrong": [
       null,
       {
-        "zh": "「何度も」是好几次。",
-        "en": "「何度も」 is many times."
+        "zh": "「急いで」是匆忙地，没有“不让人知道”的意思。",
+        "en": "「急いで」 is in a hurry, not in secret."
       },
       {
-        "zh": "「わざと」是故意。",
-        "en": "「わざと」 is on purpose."
+        "zh": "「何度も」是多次，表示次数，不是“悄悄地”。",
+        "en": "「何度も」 is many times — frequency, not secrecy."
       },
       {
-        "zh": "「後で」是之后，不是突然。",
-        "en": "「後で」 is 'later', not 'suddenly'."
+        "zh": "「わざと」是故意地，和“暗中”不同。",
+        "en": "「わざと」 is on purpose, not in secret."
       }
     ]
   },
