@@ -1,6 +1,8 @@
 /* Practice questions — /n5-practice/ and friends.
  *
- * Mounts on <div id="quiz-app" data-level="N5" data-src="/quiz/n5.json?v=…">.
+ * Mounts on <div id="quiz-app" data-level="N5" data-src="/quiz/n5.en.json?v=…">.
+ * The data is per page language (n5.en.json / n5.zh.json): each { zh, en }
+ * pair carries only the page's language, so bi() reads one side.
  * The bundle comes from build-quiz.js (furigana already in the HTML).
  * Everything the reader does stays in this browser (localStorage
  * jp_quiz_v1): answer history, the review list (spaced repetition), the
@@ -22,7 +24,7 @@
   var REVIEW_DAYS = [0, 3, 7];   // review level → days until due; past the last level it's learned
 
   function t(zh, en) { return EN ? en : zh; }
-  function bi(o) { return o ? (EN ? o.en : o.zh) : ''; }
+  function bi(o) { return o ? (EN ? o.en : o.zh) || '' : ''; }
   function now() { return Math.floor(Date.now() / 1000); }
   function today() { var d = new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
   // Explanation text: escaped, with each 「…」 quote marked as Japanese so a
