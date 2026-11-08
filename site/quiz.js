@@ -788,18 +788,20 @@
     toTop();
   }
 
-  // podcast.jpnotes.dev in the reader's language, filtered to the matching
-  // level (N5/N4 → the beginner N5–N4 episodes, N3 and up → N4–N3), with UTM
-  // tags so the podcast's GA counts it (see podcastUrl in build.js).
+  // podcast.jpnotes.dev in the reader's language, with UTM tags so the
+  // podcast's GA counts it (see podcastUrl in build.js). Two shows: Japanese
+  // Daily News filtered to the level (N5/N4 → N5–N4 episodes, N3 and up →
+  // N4–N3), and the all-Japanese 日本語で聞くニュース (N3–N2) — not offered at
+  // N5/N4, listed first at N2/N1.
   function podcastLine() {
-    var lv = /^N[45]$/.test(LEVEL || '') ? 'N5-N4' : 'N4-N3';
-    var u = 'https://podcast.jpnotes.dev/' + (EN ? '' : 'zh/') + '?level=' + lv +
-      '&utm_source=jpnotes&utm_medium=web&utm_campaign=listening&utm_content=listening-result';
-    var lvTxt = lv.replace('-', '–');
-    return '<p class="q-podcast">🎧 ' + t('继续练听力：', 'Keep listening: ') +
-      '<a href="' + u.replace(/&/g, '&amp;') + '" target="_blank" rel="noopener">' +
-      t('每天一则日语新闻（' + lvTxt + '）', 'a Japanese news story every day (' + lvTxt + ')') + '</a>' +
-      t('，逐句讲解，附中文翻译', ', explained sentence by sentence') + '</p>';
+    var lv = /^N[45]$/.test(LEVEL || '') ? 'N5-N4' : 'N4-N3', lvTxt = lv.replace('-', '–');
+    var utm = 'utm_source=jpnotes&utm_medium=web&utm_campaign=listening&utm_content=listening-result';
+    var base = 'https://podcast.jpnotes.dev/' + (EN ? '' : 'zh/');
+    var a = function (u, txt) { return '<a href="' + u.replace(/&/g, '&amp;') + '" target="_blank" rel="noopener">' + txt + '</a>'; };
+    var main = a(base + '?level=' + lv + '&' + utm, t('每天一则日语新闻（' + lvTxt + '，逐句讲解）', 'a Japanese news story every day (' + lvTxt + ', explained)'));
+    var ja = a(base + 'nihongo/?' + utm, t('全日语的「日本語で聞くニュース」（N3–N2）', 'the all-Japanese 日本語で聞くニュース (N3–N2)'));
+    var list = /^N[45]$/.test(LEVEL || '') ? main : /^N[12]$/.test(LEVEL || '') ? ja + t('，或', ', or ') + main : main + t('，或', ', or ') + ja;
+    return '<p class="q-podcast">🎧 ' + t('继续练听力：', 'Keep listening: ') + list + '</p>';
   }
 
   function shareBtn() { return window.jpShare ? '<button class="q-btn" data-act="share">' + t('分享成绩', 'Share my score') + '</button>' : ''; }
