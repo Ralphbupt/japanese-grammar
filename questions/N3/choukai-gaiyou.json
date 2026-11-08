@@ -697,5 +697,491 @@
    "twisted",
    "detail-as-topic"
   ]
+ },
+ {
+  "id": "n3-ck-310",
+  "type": "gaiyou",
+  "scene": "ラジオで料理の先生の女の人が話しています。",
+  "question": "女の人は何について話していますか。",
+  "lines": [
+   [
+    "F",
+    "「冷凍庫に入れておけば安心」と思っている方、多いですよね。でも、ただ入れておくだけだと、味が落ちてしまうんです。大事なのは、買ってきたらすぐ、一回に使う分ずつに分けて、平らにして袋に入れること。平らにすると早く凍るので、おいしさが逃げにくいんです。袋には日付を書いておきましょう。それから、溶かすときは電子レンジより、前の晩に冷蔵庫に移しておくほうがいいですよ。野菜も、安い時にまとめて買って、こうして冷凍しておくと便利です。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "食べ物をおいしく冷凍する方法",
+   "冷蔵庫の中を片付ける方法",
+   "野菜を安く買う方法",
+   "電子レンジの上手な使い方"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "广播里，一位女烹饪老师在讲话。",
+    "question": "女人在讲什么？",
+    "lines": [
+     "很多人觉得「放进冷冻室就放心了」吧。可是光放进去的话，味道会变差。重要的是买回来马上按每次用的量分好，压平装进袋子。压平了冻得快，美味就不容易流失。袋子上写好日期。还有，解冻的时候，比起用微波炉，前一天晚上移到冷藏室更好。蔬菜也是，便宜的时候多买一些，这样冷冻起来很方便。"
+    ],
+    "options": [
+     "把食物冷冻得好吃的方法",
+     "整理冰箱的方法",
+     "便宜买菜的方法",
+     "微波炉的巧妙用法"
+    ]
+   },
+   "en": {
+    "scene": "A woman who teaches cooking is speaking on the radio.",
+    "question": "What is the woman talking about?",
+    "lines": [
+     "A lot of people think that once something's in the freezer, it's safe. But if you just put it in, the flavour suffers. What matters is that as soon as you get home, you divide it into single portions, flatten them and put them in bags. Flat packs freeze quickly, so the flavour doesn't escape as easily. Write the date on the bag. And to thaw it, it's better to move it to the fridge the night before than to use the microwave. Vegetables, too — buy plenty when they're cheap and freeze them like this; it's handy."
+    ],
+    "options": [
+     "How to freeze food so it stays tasty",
+     "How to tidy the fridge",
+     "How to buy vegetables cheaply",
+     "How to use a microwave well"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说「ただ入れておくだけだと、味が落ちてしまうんです。大事なのは……」，接着讲分装、压平、写日期、解冻。\n推理：整段都在讲怎样冷冻才不会让味道变差，这是主题。冷藏室只是解冻时用；买菜便宜、微波炉都是顺带提到的细节。\n容易错：把一句话里的细节当成整段的主题。",
+   "en": "Evidence: She says 「ただ入れておくだけだと、味が落ちてしまうんです。大事なのは……」 and goes on to portioning, flattening, dating and thawing.\nReasoning: The whole talk is about freezing food so it doesn't lose flavour. The fridge comes up only for thawing; cheap vegetables and the microwave are passing details.\nTrap: a detail from one sentence taken as the topic."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "冷藏室只在解冻时提到，没讲怎么整理。",
+    "en": "The fridge comes up only for thawing, not tidying."
+   },
+   {
+    "zh": "「安い時にまとめて買って」只是最后补充的一句。",
+    "en": "「安い時にまとめて買って」 is one line added at the end."
+   },
+   {
+    "zh": "她说解冻时比起微波炉，冷藏更好；不是讲微波炉的用法。",
+    "en": "She says the fridge beats the microwave for thawing — not how to use a microwave."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n3-ck-311",
+  "type": "gaiyou",
+  "scene": "女の人と男の人が、スーパーのセルフレジについて話しています。",
+  "question": "男の人はセルフレジについてどう思っていますか。",
+  "lines": [
+   [
+    "F",
+    "駅前のスーパー、セルフレジが増えたね。使ってる？"
+   ],
+   [
+    "M",
+    "うん。並ばなくていいし、自分のペースでできるから、便利だよ。"
+   ],
+   [
+    "F",
+    "私はまだ使い方がよく分からなくて、店員さんのほうに並んじゃう。"
+   ],
+   [
+    "M",
+    "最初だけだよ。すぐ慣れる。ただ、週末にまとめて買い物するときは使わないな。何十個も自分で読み取るのは時間がかかるし、袋に入れながらだと大変なんだ。"
+   ],
+   [
+    "F",
+    "たしかに、量が多いと大変そう。"
+   ],
+   [
+    "M",
+    "だから、少しのときはセルフ、たくさんのときは普通のレジって決めてるんだ。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "並ばなくていいので、いつも使っている",
+   "使い方が難しいので、普通のレジのほうがいい",
+   "自分のペースでできるので、もっと増えてほしい",
+   "買う物が少ないときは便利だが、多いときは使わない"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "一个女人和一个男人在谈超市的自助收银机。",
+    "question": "男人对自助收银机怎么看？",
+    "lines": [
+     "车站前的超市，自助收银机变多了。你用吗？",
+     "用啊。不用排队，能按自己的节奏来，很方便。",
+     "我还不太会用，总是排到店员那边去。",
+     "只是一开始而已，很快就习惯了。不过周末一次买很多东西的时候我不用。几十件都自己扫很花时间，还要一边装袋，很累。",
+     "确实，东西多的话好像挺累的。",
+     "所以我定好了：东西少用自助，东西多用普通收银台。"
+    ],
+    "options": [
+     "不用排队，所以总是用",
+     "用法难，普通收银台更好",
+     "能按自己的节奏来，希望再多一些",
+     "买得少时方便，买得多时不用"
+    ]
+   },
+   "en": {
+    "scene": "A woman and a man are talking about self-checkouts at supermarkets.",
+    "question": "What does the man think about self-checkouts?",
+    "lines": [
+     "The supermarket by the station has more self-checkouts now. Do you use them?",
+     "Yeah. You don't have to queue and you can go at your own pace, so they're handy.",
+     "I still don't really know how to use them, so I end up queuing for a cashier.",
+     "That's only at first — you'll soon get used to it. But I don't use them when I do the big weekend shop. Scanning dozens of things yourself takes ages, and bagging them as you go is hard work.",
+     "True, it does sound hard with a lot of stuff.",
+     "So my rule is: self-checkout for a few things, a normal till for a lot."
+    ],
+    "options": [
+     "He always uses them because there's no queue",
+     "They're hard to use, so a normal till is better",
+     "He can go at his own pace, so he wants more of them",
+     "Handy for a few items, but he doesn't use them for a lot"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的最后说「少しのときはセルフ、たくさんのときは普通のレジって決めてるんだ」。\n推理：他用不用取决于买的东西多少：少的时候方便，多的时候（周末一次买齐）不用。「並ばなくていい」「自分のペースでできる」是他说的优点，但他没说总用，也没说希望再多；「使い方がよく分からない」是女的的情况。\n容易错：只听到前半的优点，漏掉「ただ」后面的条件。",
+   "en": "Evidence: He ends with 「少しのときはセルフ、たくさんのときは普通のレジって決めてるんだ」.\nReasoning: Whether he uses them depends on how much he buys: handy for a few things, not for the big weekend shop. 「並ばなくていい」 and 「自分のペースでできる」 are plus points he names, but he never says he always uses them or wants more; not knowing how to use them is the woman's problem.\nTrap: hearing only the plus points and missing the condition after 「ただ」."
+  },
+  "wrong": [
+   {
+    "zh": "他周末买很多时「使わない」，不是总用。",
+    "en": "For the big weekend shop he 「使わない」 — not always."
+   },
+   {
+    "zh": "觉得不会用的是女的，男的说「すぐ慣れる」。",
+    "en": "It's the woman who finds them hard; he says 「すぐ慣れる」."
+   },
+   {
+    "zh": "「増えた」是女的说的事实，他没说希望再多。",
+    "en": "「増えた」 is the woman's remark; he never says he wants more."
+   },
+   null
+  ],
+  "traps": [
+   "attitude-combo",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n3-ck-312",
+  "type": "gaiyou",
+  "scene": "大学の授業で、男の先生が話しています。",
+  "question": "先生が一番言いたいことは何ですか。",
+  "lines": [
+   [
+    "M",
+    "授業中、黒板に書いたことを全部きれいにノートに写している人がいますね。まじめなのはいいことです。でも、写すことに一生懸命で、話はあまり聞いていない、ということも多いんじゃないでしょうか。黒板の内容は、授業のあとでホームページに載せますから、写さなくてもかまいません。それより、聞いていて「どうしてだろう」「ここが分からない」と思ったことを、そのときにメモしてください。その疑問を自分で調べたり、私に聞きに来たりすることで、本当に分かるようになるんです。予習も大切ですが、まずはそこから始めてみてください。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "黒板の字をきれいにノートに写してほしい",
+   "分からないと思ったことをメモしてほしい",
+   "授業の前によく予習をしてほしい",
+   "授業の内容はホームページで確認してほしい"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "大学的课堂上，一位男老师在讲话。",
+    "question": "老师最想说的是什么？",
+    "lines": [
+     "上课时，有人把黑板上写的全都工工整整地抄到笔记本上。认真是好事。但是不是常常一心抄写，却没怎么听讲呢？黑板的内容课后我会放到网页上，不抄也没关系。比起抄写，请把听讲时想到的「为什么呢」「这里不懂」当场记下来。自己去查这些疑问，或者来问我，这样才能真正弄懂。预习也很重要，不过请先从这一点开始试试。"
+    ],
+    "options": [
+     "希望把黑板上的字工整地抄到笔记本上",
+     "希望把觉得不懂的地方记下来",
+     "希望课前好好预习",
+     "希望在网页上确认课程内容"
+    ]
+   },
+   "en": {
+    "scene": "A male teacher is speaking in a university class.",
+    "question": "What is the teacher's main point?",
+    "lines": [
+     "In class, some of you copy everything on the board neatly into your notebooks. Being diligent is good. But aren't you often so busy copying that you're not really listening? I put what's on the board on the website after class, so you don't need to copy it. Instead, when something makes you think 'why is that?' or 'I don't get this part' while you're listening, write it down then and there. Looking those questions up yourself or coming to ask me is how you come to really understand. Preparing beforehand matters too, but start with that first."
+    ],
+    "options": [
+     "He wants them to copy the board neatly",
+     "He wants them to note down what they don't understand",
+     "He wants them to prepare well before class",
+     "He wants them to check the class content on the website"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：老师说「それより、聞いていて『どうしてだろう』『ここが分からない』と思ったことを、そのときにメモしてください」。\n推理：前面先否定了一心抄黑板；网页只是「写さなくてもかまいません」的理由；预习「も大切ですが、まずはそこから」，重点还是记下疑问。\n容易错：网页、预习都提到了，但只是铺垫或补充。",
+   "en": "Evidence: He says 「それより、聞いていて『どうしてだろう』『ここが分からない』と思ったことを、そのときにメモしてください」.\nReasoning: He first argues against copying the board; the website is only why 「写さなくてもかまいません」; preparation 「も大切ですが、まずはそこから」 — the point stays noting questions.\nTrap: the website and preparation are mentioned, but only as lead-in or add-on."
+  },
+  "wrong": [
+   {
+    "zh": "老师说「写さなくてもかまいません」，正相反。",
+    "en": "He says 「写さなくてもかまいません」 — the opposite."
+   },
+   null,
+   {
+    "zh": "预习「も大切ですが」，他说先从记疑问开始。",
+    "en": "Preparation 「も大切ですが」 — he says start with noting questions."
+   },
+   {
+    "zh": "网页只是说明不用抄的理由，不是他要强调的。",
+    "en": "The website just explains why copying isn't needed; it isn't his point."
+   }
+  ],
+  "traps": [
+   "twisted",
+   "detail-as-topic"
+  ]
+ },
+ {
+  "id": "n3-ck-313",
+  "type": "gaiyou",
+  "scene": "ラジオで女の人が話しています。",
+  "question": "女の人が一番言いたいことは何ですか。",
+  "lines": [
+   [
+    "F",
+    "最近、遠くに住む友だちに、はがきを書くようになりました。メールなら一分で送れますし、便利なのはよく分かっています。私自身、仕事ではメールばかりです。字もあまり上手じゃありません。それでも、はがきを選んで、何を書こうか考えて、ペンで一字ずつ書いていると、その人のことをずっと考えている自分に気がつくんです。先日、友だちから「冷蔵庫に貼ってあるよ」と返事が来ました。手間がかかる分、気持ちもちゃんと届くんだなと思いました。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "メールは便利だが、気持ちは伝わらない",
+   "字が上手でないと、手紙は書きにくい",
+   "手で書くと、手間の分だけ思いが伝わる",
+   "仕事でもはがきを使うようにしている"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "广播里一个女人在讲话。",
+    "question": "女人最想说的是什么？",
+    "lines": [
+     "最近我开始给住在远方的朋友写明信片了。我很清楚，邮件一分钟就能发出去，很方便。我自己工作上也全是用邮件。字也写得不太好。即便如此，挑明信片、想写什么、用笔一个字一个字地写的时候，会发现自己一直在想着那个人。前几天朋友回信说「贴在冰箱上了哦」。我觉得，正因为费工夫，心意也能好好地传达过去。"
+    ],
+    "options": [
+     "邮件方便，但传达不了心意",
+     "字写得不好，就不好写信",
+     "手写的话，花了多少工夫就能传达多少心意",
+     "工作上也尽量用明信片"
+    ]
+   },
+   "en": {
+    "scene": "A woman is speaking on the radio.",
+    "question": "What is the woman's main point?",
+    "lines": [
+     "Lately I've started writing postcards to friends who live far away. I know perfectly well that email takes a minute and is convenient — at work I use nothing but email myself. And my handwriting isn't great. Even so, when I choose a postcard, think about what to write and write it out with a pen one character at a time, I find I'm thinking about that person the whole time. The other day a friend wrote back: 'It's on my fridge.' I thought: because it takes effort, the feeling really gets through."
+    ],
+    "options": [
+     "Email is convenient but doesn't convey feelings",
+     "It's hard to write letters if your handwriting is poor",
+     "Writing by hand, the effort you put in is what carries the feeling",
+     "She tries to use postcards at work too"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的最后说「手間がかかる分、気持ちもちゃんと届くんだなと思いました」。\n推理：邮件方便、字不好看都是先承认的事，「それでも」之后讲手写的好处，结论是费工夫所以心意能传达。她没说邮件传达不了心意；工作上她「メールばかり」。\n容易错：把「手写更能传达」说歪成「邮件传达不了」。",
+   "en": "Evidence: She ends with 「手間がかかる分、気持ちもちゃんと届くんだなと思いました」.\nReasoning: Email's convenience and her poor handwriting are concessions; after 「それでも」 comes the value of handwriting, ending in: it takes effort, so the feeling gets through. She never says email can't convey feelings; at work she uses 「メールばかり」.\nTrap: twisting 'handwriting conveys more' into 'email conveys nothing'."
+  },
+  "wrong": [
+   {
+    "zh": "她承认邮件方便，但没说邮件传达不了心意。",
+    "en": "She grants email is convenient but never says it conveys nothing."
+   },
+   {
+    "zh": "她说字「あまり上手じゃありません」，但「それでも」在写。",
+    "en": "Her writing is 「あまり上手じゃありません」, yet 「それでも」 she writes."
+   },
+   null,
+   {
+    "zh": "她说工作上「メールばかり」。",
+    "en": "At work she uses 「メールばかり」."
+   }
+  ],
+  "traps": [
+   "twisted",
+   "partial-content"
+  ]
+ },
+ {
+  "id": "n3-ck-314",
+  "type": "gaiyou",
+  "scene": "男の人と女の人が、子どものゲームについて話しています。",
+  "question": "女の人は、子どもがゲームをすることについてどう思っていますか。",
+  "lines": [
+   [
+    "M",
+    "うちの子、毎日ゲームばっかりでさ。目にも悪いし、取り上げようかと思ってるんだ。"
+   ],
+   [
+    "F",
+    "うちも前はそうだったよ。でも、全部やめさせるのはどうかなあ。学校で友だちとゲームの話をするのが楽しいみたいだし。"
+   ],
+   [
+    "M",
+    "でも、放っておいたら何時間でもやるでしょう。"
+   ],
+   [
+    "F",
+    "うん、だから、うちは一日一時間って決めたの。最初はなかなか守れなかったけど、守れた日はシールを貼るようにしたら、だんだん自分で時計を見るようになったよ。"
+   ],
+   [
+    "M",
+    "へえ。"
+   ],
+   [
+    "F",
+    "好きなことを我慢させるより、自分で終わりにできるようになるほうが大事だと思うんだ。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "時間を決めて、自分で守れるようになればいい",
+   "目に悪いので、やめさせたほうがいい",
+   "友だちと話すために、自由にさせたい",
+   "時間を決めても守れないので、意味がない"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "一个男人和一个女人在谈孩子玩游戏的事。",
+    "question": "女人对孩子玩游戏怎么看？",
+    "lines": [
+     "我家孩子每天光玩游戏。对眼睛也不好，我在想要不要没收。",
+     "我家以前也是这样。不过全部不让玩，好像也不太好。他在学校跟朋友聊游戏好像挺开心的。",
+     "可是不管的话，他能玩好几个小时吧。",
+     "嗯，所以我家定了一天一小时。一开始总是做不到，后来做到的那天就贴一张贴纸，他慢慢就会自己看表了。",
+     "哦。",
+     "我觉得比起让他忍着不做喜欢的事，学会自己停下来更重要。"
+    ],
+    "options": [
+     "定好时间，能学会自己遵守就好",
+     "对眼睛不好，最好不让玩",
+     "为了能和朋友聊，想让他随便玩",
+     "定了时间也守不住，没有意义"
+    ]
+   },
+   "en": {
+    "scene": "A man and a woman are talking about children playing video games.",
+    "question": "What does the woman think about children playing video games?",
+    "lines": [
+     "My kid plays games all day, every day. It's bad for the eyes too, so I'm thinking of taking it away.",
+     "Mine was like that too. But I'm not sure about banning it completely. He seems to enjoy talking about games with his friends at school.",
+     "But leave them alone and they'll play for hours.",
+     "Yes, so in our house it's one hour a day. At first he couldn't stick to it, but once I started putting a sticker up on the days he did, he gradually began watching the clock himself.",
+     "Huh.",
+     "I think learning to stop by himself matters more than being made to give up something he likes."
+    ],
+    "options": [
+     "It's fine once there's a time limit the child learns to keep alone",
+     "It's bad for the eyes, so it should be stopped",
+     "She wants to let them play freely so they can talk with friends",
+     "Time limits are pointless because they aren't kept"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说「うちは一日一時間って決めたの」，最后说「自分で終わりにできるようになるほうが大事」。\n推理：她反对全部禁止，也不是放任，而是定好时间让孩子自己遵守。「目に悪い」是男的的看法；和朋友聊游戏只是不全禁的理由；「守れなかった」只是一开始，后来能守了。\n容易错：态度组合：赞成玩，但有条件。",
+   "en": "Evidence: She says 「うちは一日一時間って決めたの」 and ends 「自分で終わりにできるようになるほうが大事」.\nReasoning: She's against a total ban but doesn't let it run free — she sets a limit for the child to keep. 「目に悪い」 is the man's view; talking with friends is only why she won't ban it; 「守れなかった」 was only at first.\nTrap: an attitude combination — yes to games, with a condition."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「目に悪い」「取り上げよう」是男的说的。",
+    "en": "「目に悪い」 and taking it away are the man's words."
+   },
+   {
+    "zh": "她定了一天一小时，不是随便玩。",
+    "en": "She set one hour a day — not free play."
+   },
+   {
+    "zh": "一开始「守れなかった」，后来贴纸以后能自己看表了。",
+    "en": "At first he 「守れなかった」, but with stickers he learned to watch the clock."
+   }
+  ],
+  "traps": [
+   "attitude-combo",
+   "twisted"
+  ]
+ },
+ {
+  "id": "n3-ck-315",
+  "type": "gaiyou",
+  "scene": "テレビで、写真館の男の人が話しています。",
+  "question": "男の人は何について話していますか。",
+  "lines": [
+   [
+    "M",
+    "今は誰でもスマホできれいな写真が撮れますから、町の写真館はずいぶん減りました。うちにも、昔ほどお客さんは来ません。それでも、毎年同じ日に来てくださるご家族がいるんです。最初は赤ちゃんを抱いたご夫婦だけだったのが、何年かたつと子どもが一人増え、やがて子どもがお父さんの背を追い越していく。並べて見ると、その家族が過ごしてきた時間が、一枚ずつ残っているんです。スマホの写真はたくさん撮っても、見返すことはあまりないでしょう。年に一度、家族で一枚だけ、と決めて撮ってみると、きっと宝物になりますよ。"
+   ]
+  ],
+  "spokenOptions": true,
+  "options": [
+   "写真館が少なくなった理由",
+   "スマホで上手に写真を撮るこつ",
+   "家族で毎年写真を撮ることのよさ",
+   "赤ちゃんの写真のきれいな撮り方"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "电视上，一位照相馆的男人在讲话。",
+    "question": "男人在讲什么？",
+    "lines": [
+     "现在谁都能用手机拍出漂亮的照片，所以街上的照相馆少了很多。我们店的客人也没有以前多了。即便如此，还是有每年同一天来的家庭。一开始只是抱着婴儿的夫妇俩，过了几年孩子多了一个，后来孩子的个子超过了爸爸。排在一起看，这家人度过的时光一张一张地留了下来。手机照片拍得再多，也很少回头看吧。定好每年一次、全家只拍一张，试试看，一定会成为宝贝的。"
+    ],
+    "options": [
+     "照相馆变少的原因",
+     "用手机拍好照片的窍门",
+     "全家每年拍照的好处",
+     "把婴儿拍好看的方法"
+    ]
+   },
+   "en": {
+    "scene": "A man who runs a photo studio is speaking on TV.",
+    "question": "What is the man talking about?",
+    "lines": [
+     "These days anyone can take good photos on a phone, so town photo studios have become much rarer. We don't get as many customers as we used to either. Even so, there are families who come on the same day every year. At first it's just a couple holding a baby; a few years on there's another child; and eventually the child grows taller than his father. Lay them side by side and the time that family has spent together is there, one picture at a time. You take lots of phone photos, but you rarely look back at them, do you? Decide on just one family photo a year and try it — it'll become a treasure."
+    ],
+    "options": [
+     "Why photo studios have become rare",
+     "Tips for taking good photos on a phone",
+     "The value of taking a family photo every year",
+     "How to take nice photos of babies"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说「並べて見ると、その家族が過ごしてきた時間が、一枚ずつ残っているんです」，最后说「年に一度、家族で一枚だけ、と決めて撮ってみると、きっと宝物になりますよ」。\n推理：照相馆变少是开头的引子，「それでも」之后讲每年来拍的家庭，结论是推荐每年拍一张全家福。手机只是对比，没教怎么拍；婴儿是那家人照片里的一个细节。\n容易错：开头的话题不一定是主题。",
+   "en": "Evidence: He says 「並べて見ると、その家族が過ごしてきた時間が、一枚ずつ残っているんです」 and ends 「年に一度、家族で一枚だけ、と決めて撮ってみると、きっと宝物になりますよ」.\nReasoning: Fewer studios is the opening hook; after 「それでも」 he talks about families who come yearly and ends by recommending one family photo a year. Phones are a contrast, not a how-to; the baby is a detail in one family's photos.\nTrap: the opening topic isn't necessarily the main point."
+  },
+  "wrong": [
+   {
+    "zh": "照相馆变少只是开头的引子，「それでも」之后才是重点。",
+    "en": "Fewer studios is the opening; the point comes after 「それでも」."
+   },
+   {
+    "zh": "手机只是拿来对比，「見返すことはあまりない」，没讲拍照窍门。",
+    "en": "Phones are a contrast — 「見返すことはあまりない」 — not tips."
+   },
+   null,
+   {
+    "zh": "「赤ちゃんを抱いたご夫婦」只是那家人第一张照片的样子。",
+    "en": "「赤ちゃんを抱いたご夫婦」 is just that family's first photo."
+   }
+  ],
+  "traps": [
+   "detail-as-topic",
+   "partial-content"
+  ]
  }
 ]

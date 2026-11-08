@@ -1154,5 +1154,237 @@
    "perspective",
    "timing"
   ]
+ },
+ {
+  "id": "n4-ck-421",
+  "type": "hatsuwa",
+  "scene": "会社で 仕事が 終わりました。ほかの 人は まだ 仕事を して います。先に 帰ります。ほかの 人に 言います。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "An office in the evening. A young man with his coat on and a bag on his shoulder stands by his desk, bowing slightly toward two coworkers who are still working at their computers.",
+   "arrow": "the young man with the bag"
+  },
+  "options": [
+   "お先に しつれいします。",
+   "どうぞ、お先に 帰って ください。",
+   "ただいま もどりました。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在公司里工作做完了。其他人还在工作。自己先回去，对其他人说。",
+    "question": "怎么说？",
+    "options": [
+     "我先走了。",
+     "请您先回去吧。",
+     "我回来了。"
+    ]
+   },
+   "en": {
+    "scene": "You've finished work at the office. The others are still working. You're leaving first, and you speak to them.",
+    "question": "What do you say?",
+    "options": [
+     "Excuse me for leaving before you.",
+     "Please, go home ahead of me.",
+     "I'm back."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「先に 帰ります。ほかの 人に 言います。」，说话的是要回去的男的。\n推理：比别人先下班时的固定说法是「お先に しつれいします」。\n容易错：「お先に」重复出现——「どうぞ、お先に 帰って ください」是让对方先走；「ただいま もどりました」是外出回到公司时说的。",
+   "en": "Evidence: The scene: 「先に 帰ります。ほかの 人に 言います。」 The speaker is the man leaving.\nReasoning: The set phrase when you leave work before others is 「お先に しつれいします」.\nTrap: 「お先に」 again — 「どうぞ、お先に 帰って ください」 tells someone else to go first; 「ただいま もどりました」 is for coming back to the office."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「どうぞ、お先に 帰って ください」是请对方先回去，立场反了。",
+    "en": "「どうぞ、お先に 帰って ください」 tells the other person to leave first — the wrong way round."
+   },
+   {
+    "zh": "「ただいま もどりました」是外出回来时说的，时机不对。",
+    "en": "「ただいま もどりました」 is said when you come back, not when you leave."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "timing",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n4-ck-422",
+  "type": "hatsuwa",
+  "scene": "旅行で お寺に 来ました。お寺の 前で 自分の 写真を とって ほしいです。近くに いる 人に たのみます。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "In front of a Japanese temple gate. A young woman holds out a smartphone with both hands toward an older man who is walking by, smiling and asking him politely.",
+   "arrow": "the young woman holding out the smartphone"
+  },
+  "options": [
+   "あのう、写真を とりましょうか。",
+   "写真を とって いただけませんか。",
+   "ここで 写真を とっても いいですか。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "旅行时来到一座寺庙。想请人在寺庙前给自己拍张照，拜托附近的人。",
+    "question": "怎么说？",
+    "options": [
+     "那个，我帮您拍照吧？",
+     "能请您帮我拍张照吗？",
+     "这里可以拍照吗？"
+    ]
+   },
+   "en": {
+    "scene": "You're visiting a temple on a trip. You want someone to take your photo in front of it, so you ask a person nearby.",
+    "question": "What do you say?",
+    "options": [
+     "Um, shall I take a photo for you?",
+     "Could you take a photo for me?",
+     "Is it all right to take photos here?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「自分の 写真を とって ほしいです。近くに いる 人に たのみます。」\n推理：请别人为自己做事，用「〜て いただけませんか」。\n容易错：「とりましょうか」是主动提出帮别人拍；「とっても いいですか」是问能不能拍照，都不是请对方帮自己拍。",
+   "en": "Evidence: The scene: 「自分の 写真を とって ほしいです。近くに いる 人に たのみます。」\nReasoning: To ask someone to do something for you, use 「〜て いただけませんか」.\nTrap: 「とりましょうか」 offers to take their photo; 「とっても いいですか」 asks whether photos are allowed — neither asks them to take yours."
+  },
+  "wrong": [
+   {
+    "zh": "「とりましょうか」是主动帮别人拍，立场反了。",
+    "en": "「とりましょうか」 offers to take someone else's photo."
+   },
+   null,
+   {
+    "zh": "「とっても いいですか」是问这里能不能拍照，不是请人帮忙。",
+    "en": "「とっても いいですか」 asks permission to take photos, not for help."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n4-ck-423",
+  "type": "hatsuwa",
+  "scene": "電車の 中で、となりに 立って いる 人の 足を ふんで しまいました。その 人に 言います。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "Inside a crowded train. A man in a suit has accidentally stepped on the foot of a woman standing next to him. She winces slightly, and he turns to her with a surprised, sorry look.",
+   "arrow": "the man in the suit"
+  },
+  "options": [
+   "いいえ、わたしは だいじょうぶですよ。",
+   "もう 少し 気を つけて くださいね。",
+   "あ、すみません。だいじょうぶですか。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在电车里，踩到了站在旁边的人的脚。对那个人说。",
+    "question": "怎么说？",
+    "options": [
+     "没事，我没关系的。",
+     "请再小心一点哦。",
+     "啊，对不起。您没事吧？"
+    ]
+   },
+   "en": {
+    "scene": "On a train, you've stepped on the foot of the person standing next to you. You speak to them.",
+    "question": "What do you say?",
+    "options": [
+     "No, I'm fine.",
+     "Please be a little more careful.",
+     "Oh, I'm sorry. Are you all right?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「足を ふんで しまいました。その 人に 言います。」，说话的是踩了别人的男的。\n推理：自己做错了事，要先道歉，再关心对方：「すみません。だいじょうぶですか」。\n容易错：「わたしは だいじょうぶです」「気を つけて ください」都是被踩的人说的话。",
+   "en": "Evidence: The scene: 「足を ふんで しまいました。その 人に 言います。」 The speaker is the man who stepped on her foot.\nReasoning: You apologise and check on the other person: 「すみません。だいじょうぶですか」.\nTrap: 「わたしは だいじょうぶです」 and 「気を つけて ください」 are both what the person stepped on would say."
+  },
+  "wrong": [
+   {
+    "zh": "「わたしは だいじょうぶです」是被踩的人回应道歉时说的。",
+    "en": "「わたしは だいじょうぶです」 is the reply of the person who was stepped on."
+   },
+   {
+    "zh": "「気を つけて ください」是被踩的人提醒对方的话，立场反了。",
+    "en": "「気を つけて ください」 is what the person stepped on might say — the wrong side."
+   },
+   null
+  ],
+  "traps": [
+   "perspective"
+  ]
+ },
+ {
+  "id": "n4-ck-424",
+  "type": "hatsuwa",
+  "scene": "レストランで ラーメンを 注文しました。でも、店の 人が カレーを 持って 来ました。店の 人に 言います。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A restaurant. A male waiter has just put a plate of curry and rice in front of a woman seated at a table. She holds up the menu and points at a picture of a bowl of ramen on it, looking puzzled.",
+   "arrow": "the seated woman"
+  },
+  "options": [
+   "ご注文は お決まりですか。",
+   "これ、もう 一つ おねがいします。",
+   "あのう、これ、ちがうんですが。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在餐厅点了拉面，可是店员端来了咖喱。对店员说。",
+    "question": "怎么说？",
+    "options": [
+     "您决定点什么了吗？",
+     "这个请再来一份。",
+     "那个，这个不对……"
+    ]
+   },
+   "en": {
+    "scene": "At a restaurant you ordered ramen, but the waiter has brought curry. You speak to the waiter.",
+    "question": "What do you say?",
+    "options": [
+     "Are you ready to order?",
+     "One more of these, please.",
+     "Um, this isn't what I ordered."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「ラーメンを 注文しました。でも、店の 人が カレーを 持って 来ました。」\n推理：上错了菜，要告诉店员「これ、ちがうんですが」（这个不对）。「〜んですが」委婉地说出问题，等对方处理。\n容易错：「ご注文は お決まりですか」是店员说的；「もう 一つ」是想再要一份，意思不对。",
+   "en": "Evidence: The scene: 「ラーメンを 注文しました。でも、店の 人が カレーを 持って 来ました。」\nReasoning: The wrong dish came, so you tell the waiter 「これ、ちがうんですが」. 「〜んですが」 raises the problem gently and leaves it to them.\nTrap: 「ご注文は お決まりですか」 is the waiter's line; 「もう 一つ」 asks for another one."
+  },
+  "wrong": [
+   {
+    "zh": "「ご注文は お決まりですか」是店员问客人的话，立场反了。",
+    "en": "「ご注文は お決まりですか」 is what the waiter asks."
+   },
+   {
+    "zh": "「もう 一つ おねがいします」是再要一份，可是这道菜根本不是她点的。",
+    "en": "「もう 一つ おねがいします」 orders another, but she never ordered this dish."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
  }
 ]

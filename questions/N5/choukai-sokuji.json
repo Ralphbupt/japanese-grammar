@@ -1159,5 +1159,589 @@
    "question-word",
    "repeat-word"
   ]
+ },
+ {
+  "id": "n5-ck-521",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "あ、田中さん。おげんきですか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "はい、げんきです。",
+   "はい、げんきでした。",
+   "いいえ、どう いたしまして。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "啊，田中小姐。你好吗？"
+    ],
+    "options": [
+     "嗯，我很好。",
+     "嗯，以前很好。",
+     "不，不客气。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Oh, Tanaka-san. How are you?"
+    ],
+    "options": [
+     "Yes, I'm fine.",
+     "Yes, I was fine.",
+     "No, you're welcome."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的问：「おげんきですか。」\n推理：问现在身体好不好，用现在式回答「はい、げんきです」。\n容易错：「げんきでした」是过去式；「どう いたしまして」是回应道谢的。",
+   "en": "Evidence: The man asks: 「おげんきですか。」\nReasoning: He asks how she is now, so she answers in the present: 「はい、げんきです」.\nTrap: 「げんきでした」 is past tense; 「どう いたしまして」 answers thanks."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「げんきでした」是过去式，问的是现在。",
+    "en": "「げんきでした」 is past tense; he asks about now."
+   },
+   {
+    "zh": "「どう いたしまして」是别人道谢时的回答。",
+    "en": "「どう いたしまして」 replies to thanks."
+   }
+  ],
+  "traps": [
+   "tense",
+   "timing"
+  ]
+ },
+ {
+  "id": "n5-ck-522",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "山田さん、けっこん、おめでとう ございます。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "はい、おめでとう ございます。",
+   "いいえ、まだ けっこんして いません。",
+   "どうも ありがとう ございます。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "山田先生，恭喜你结婚。"
+    ],
+    "options": [
+     "嗯，恭喜恭喜。",
+     "不，我还没结婚。",
+     "非常感谢。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Yamada-san, congratulations on your wedding."
+    ],
+    "options": [
+     "Yes, congratulations.",
+     "No, I'm not married yet.",
+     "Thank you very much."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「けっこん、おめでとう ございます。」\n推理：别人祝贺自己，回答「ありがとう ございます」表示感谢。\n容易错：照搬「おめでとう ございます」是祝贺别人的话；对方已经在祝贺结婚，说「还没结婚」前后矛盾。",
+   "en": "Evidence: The woman says: 「けっこん、おめでとう ございます。」\nReasoning: When someone congratulates you, you thank them: 「ありがとう ございます」.\nTrap: echoing 「おめでとう ございます」 congratulates her back; saying he isn't married contradicts what she's congratulating."
+  },
+  "wrong": [
+   {
+    "zh": "照搬「おめでとう」，是祝贺别人的话，立场反了。",
+    "en": "Echoing 「おめでとう」 congratulates her — the wrong side."
+   },
+   {
+    "zh": "对方在祝贺他结婚，说还没结婚前后矛盾。",
+    "en": "She's congratulating him on his wedding; denying it contradicts that."
+   },
+   null
+  ],
+  "traps": [
+   "repeat-word",
+   "perspective",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n5-ck-523",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "じゃ、また あした。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "ええ、また あした。",
+   "はい、あしたは 休みでした。",
+   "おかえりなさい。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "那明天见。"
+    ],
+    "options": [
+     "嗯，明天见。",
+     "是的，明天是休息了。",
+     "你回来啦。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Well, see you tomorrow."
+    ],
+    "options": [
+     "Yes, see you tomorrow.",
+     "Yes, tomorrow was a day off.",
+     "Welcome home."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「じゃ、また あした。」\n推理：分别时说明天见，同样回一句「また あした」就可以。\n容易错：「休みでした」是过去式，说的是明天却用了过去式；「おかえりなさい」是迎接回家的人。",
+   "en": "Evidence: The woman says: 「じゃ、また あした。」\nReasoning: Parting with \"see you tomorrow\", you simply say 「また あした」 back.\nTrap: 「休みでした」 puts tomorrow in the past tense; 「おかえりなさい」 welcomes someone home."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「あした」用了过去式「でした」，说不通。",
+    "en": "Past tense 「でした」 with 「あした」 doesn't make sense."
+   },
+   {
+    "zh": "「おかえりなさい」是迎接回家的人，时机不对。",
+    "en": "「おかえりなさい」 welcomes someone home — wrong moment."
+   }
+  ],
+  "traps": [
+   "timing",
+   "tense",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n5-ck-524",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "この へや、ちょっと さむいですね。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "まど、しめましょうか。",
+   "はい、さむかったです。",
+   "ええ、ひろい へやですね。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这个房间有点冷啊。"
+    ],
+    "options": [
+     "我把窗户关上吧？",
+     "是的，以前很冷。",
+     "嗯，房间很大啊。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "This room is a little cold, isn't it?"
+    ],
+    "options": [
+     "Shall I close the window?",
+     "Yes, it was cold.",
+     "Yes, it's a big room."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「この へや、ちょっと さむいですね。」\n推理：说房间冷，其实是希望做点什么，回答「まど、しめましょうか」主动帮忙最自然。\n容易错：「さむかったです」是过去式；「ひろい へや」只接了「へや」这个词。",
+   "en": "Evidence: The woman says: 「この へや、ちょっと さむいですね。」\nReasoning: Saying the room is cold hints that something should be done; offering 「まど、しめましょうか」 is the natural reply.\nTrap: 「さむかったです」 is past tense; 「ひろい へや」 only picks up the word 「へや」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「さむかったです」是过去式，现在正冷。",
+    "en": "「さむかったです」 is past; it's cold now."
+   },
+   {
+    "zh": "只接了「へや」这个词，没有回应冷的问题。",
+    "en": "It just picks up 「へや」 and ignores the cold."
+   }
+  ],
+  "traps": [
+   "intent",
+   "tense",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n5-ck-525",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "すみません、この いす、つかって いますか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "はい、とても いい いすですね。",
+   "いいえ、どうぞ つかって ください。",
+   "はい、いっしょに つかいましょう。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "不好意思，这把椅子有人用吗？"
+    ],
+    "options": [
+     "是的，椅子很好啊。",
+     "没有，请用吧。",
+     "是的，一起用吧。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Excuse me, is anyone using this chair?"
+    ],
+    "options": [
+     "Yes, it's a very nice chair.",
+     "No, please go ahead and use it.",
+     "Yes, let's use it together."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的问：「この いす、つかって いますか。」\n推理：问椅子有没有人用，其实是想用它。没人用就说「いいえ、どうぞ つかって ください」。\n容易错：「いい いす」只接了「いす」；「いっしょに つかいましょう」把问话听成了邀请。",
+   "en": "Evidence: The man asks: 「この いす、つかって いますか。」\nReasoning: Asking if a chair is in use means he wants it. If not, you say 「いいえ、どうぞ つかって ください」.\nTrap: 「いい いす」 just echoes 「いす」; 「いっしょに つかいましょう」 hears an invitation that isn't there."
+  },
+  "wrong": [
+   {
+    "zh": "只接了「いす」这个词，没有回答有没有人用。",
+    "en": "It just echoes 「いす」 without saying whether it's in use."
+   },
+   null,
+   {
+    "zh": "一把椅子不能一起用，而且把问话当成了邀请。",
+    "en": "Two can't share a chair, and it treats the question as an invitation."
+   }
+  ],
+  "traps": [
+   "intent",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n5-ck-526",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "なつ休みは 何を しますか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "なつは あついですね。",
+   "きょねんは 山へ 行きました。",
+   "国へ かえります。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "暑假打算做什么？"
+    ],
+    "options": [
+     "夏天很热啊。",
+     "去年去了山里。",
+     "回国。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "What are you doing for the summer holidays?"
+    ],
+    "options": [
+     "Summer is hot, isn't it?",
+     "Last year I went to the mountains.",
+     "I'm going back to my country."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的问：「なつ休みは 何を しますか。」\n推理：问这个暑假的打算，用将来的事回答「国へ かえります」。\n容易错：「きょねん」是去年的事，时态不对；「なつは あつい」只接了「なつ」。",
+   "en": "Evidence: The woman asks: 「なつ休みは 何を しますか。」\nReasoning: She asks about this summer's plans, so he answers with what he will do: 「国へ かえります」.\nTrap: 「きょねん」 is about last year — wrong time; 「なつは あつい」 only echoes 「なつ」."
+  },
+  "wrong": [
+   {
+    "zh": "只接了「なつ」，没有回答做什么。",
+    "en": "It just picks up 「なつ」 and doesn't say what he'll do."
+   },
+   {
+    "zh": "问的是这个暑假，回答的是去年。",
+    "en": "She asks about this summer; this answers about last year."
+   },
+   null
+  ],
+  "traps": [
+   "tense",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n5-ck-527",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "かわいい お子さんですね。おいくつですか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "二人 います。",
+   "三つ ください。",
+   "五さいです。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "孩子真可爱。几岁了？"
+    ],
+    "options": [
+     "有两个。",
+     "请给我三个。",
+     "五岁。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "What a cute child. How old is she?"
+    ],
+    "options": [
+     "I have two.",
+     "Three, please.",
+     "She's five."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的问：「おいくつですか。」\n推理：说到孩子时「おいくつですか」是问年龄，回答「五さいです」。\n容易错：「二人 います」回答的是有几个孩子；「三つ ください」把「いくつ」当成买东西的个数。",
+   "en": "Evidence: The man asks: 「おいくつですか。」\nReasoning: Said about a child, 「おいくつですか」 asks the age: 「五さいです」.\nTrap: 「二人 います」 answers how many children; 「三つ ください」 takes 「いくつ」 as a number of things to buy."
+  },
+  "wrong": [
+   {
+    "zh": "问的是年龄，不是有几个孩子。",
+    "en": "He asks the age, not how many children."
+   },
+   {
+    "zh": "把「いくつ」听成了买东西的个数。",
+    "en": "It takes 「いくつ」 as a quantity to buy."
+   },
+   null
+  ],
+  "traps": [
+   "question-word",
+   "number"
+  ]
+ },
+ {
+  "id": "n5-ck-528",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "きょうの じゅぎょうは 何時に おわりますか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "1時からです。",
+   "3時ごろです。",
+   "2時間ぐらいです。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "今天的课几点结束？"
+    ],
+    "options": [
+     "一点开始。",
+     "三点左右。",
+     "两个小时左右。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "What time do today's classes finish?"
+    ],
+    "options": [
+     "It starts at one.",
+     "Around three.",
+     "About two hours."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的问：「何時に おわりますか。」\n推理：问几点结束，回答结束的时刻「3時ごろです」。\n容易错：「1時から」是开始的时间；「2時間ぐらい」是开多长时间，不是几点。",
+   "en": "Evidence: The woman asks: 「何時に おわりますか。」\nReasoning: She asks what time it ends, so he gives the end time: 「3時ごろです」.\nTrap: 「1時から」 is the start time; 「2時間ぐらい」 is how long it lasts, not a time of day."
+  },
+  "wrong": [
+   {
+    "zh": "「〜から」是开始的时间，问的是结束。",
+    "en": "「〜から」 gives the start; she asks about the end."
+   },
+   null,
+   {
+    "zh": "「2時間」是时长，问的是几点。",
+    "en": "「2時間」 is a length of time; she asks for a clock time."
+   }
+  ],
+  "traps": [
+   "question-word",
+   "number"
+  ]
+ },
+ {
+  "id": "n5-ck-529",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "にもつ、一つ もちましょうか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "はい、いっしょに もちましょう。",
+   "あ、すみません。おねがいします。",
+   "はい、一つ もちます。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "行李我帮你拿一个吧？"
+    ],
+    "options": [
+     "好，一起拿吧。",
+     "啊，不好意思，麻烦你了。",
+     "好，我拿一个。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Shall I carry one of your bags?"
+    ],
+    "options": [
+     "Yes, let's carry it together.",
+     "Oh, thank you. Yes, please.",
+     "Yes, I'll carry one."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「にもつ、一つ もちましょうか。」\n推理：「〜ましょうか」是主动提出帮忙，接受时说「すみません。おねがいします」。\n容易错：「いっしょに もちましょう」把帮忙听成了邀请；「一つ もちます」是说自己来拿，立场反了。",
+   "en": "Evidence: The man says: 「にもつ、一つ もちましょうか。」\nReasoning: 「〜ましょうか」 offers help; to accept you say 「すみません。おねがいします」.\nTrap: 「いっしょに もちましょう」 hears an invitation instead of an offer; 「一つ もちます」 says she will carry it — the wrong side."
+  },
+  "wrong": [
+   {
+    "zh": "「〜ましょうか」是他主动帮忙，不是邀请一起拿。",
+    "en": "「〜ましょうか」 is his offer to help, not an invitation to carry together."
+   },
+   null,
+   {
+    "zh": "「もちましょうか」是他要帮她拿，回答「一つ もちます」变成自己拿，立场反了。",
+    "en": "He offers to carry it; 「一つ もちます」 has her carrying it instead — the wrong side."
+   }
+  ],
+  "traps": [
+   "intent",
+   "perspective",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n5-ck-530",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "きのうの よる、電話しましたが、いませんでしたね。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "すみません、出かけて いました。",
+   "ええ、電話を かけました。",
+   "いいえ、今 うちに いますよ。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "昨天晚上我打电话了，你不在啊。"
+    ],
+    "options": [
+     "不好意思，我出去了。",
+     "嗯，我打了电话。",
+     "不，我现在在家哦。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I called last night, but you weren't in."
+    ],
+    "options": [
+     "Sorry, I was out.",
+     "Yes, I made a call.",
+     "No, I'm at home now."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「きのうの よる、電話しましたが、いませんでしたね。」\n推理：对方说昨晚打电话你不在，解释当时的情况「出かけて いました」最自然。\n容易错：打电话的是女的，不是男的；「今 うちに います」说的是现在，问的是昨晚。",
+   "en": "Evidence: The woman says: 「きのうの よる、電話しましたが、いませんでしたね。」\nReasoning: She called last night and he wasn't there; explaining 「出かけて いました」 is the natural reply.\nTrap: she made the call, not him; 「今 うちに います」 is about now, not last night."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "打电话的是女的，男的说「我打了」立场反了。",
+    "en": "She made the call; saying he did gets it backwards."
+   },
+   {
+    "zh": "说的是现在，对方问的是昨晚。",
+    "en": "It's about now; she's talking about last night."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "tense"
+  ]
  }
 ]

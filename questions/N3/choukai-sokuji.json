@@ -1504,5 +1504,932 @@
    "perspective",
    "contradiction"
   ]
+ },
+ {
+  "id": "n3-ck-527",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "ちょっと手、貸してくれない？"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "え、手、けがしたの？　大丈夫？",
+   "いいよ。何を手伝えばいい？",
+   "うん、ありがとう。助かったよ。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "能帮我一下吗？"
+    ],
+    "options": [
+     "诶，手受伤了？没事吧？",
+     "好啊。要我帮什么？",
+     "嗯，谢谢，帮大忙了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Can you give me a hand?"
+    ],
+    "options": [
+     "What, you hurt your hand? Are you OK?",
+     "Sure. What should I help with?",
+     "Yeah, thanks. That really helped."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「ちょっと手、貸してくれない？」\n推理：「手を貸す」是惯用说法，＝帮忙，不是真的借手。所以要答应帮忙：「何を手伝えばいい？」＝要我帮什么。\n容易错：按字面理解成手受伤就答偏了；「助かったよ」是被帮的人道谢，而且还没帮就道谢了，立场反了。",
+   "en": "Evidence: The man says: 「ちょっと手、貸してくれない？」\nReasoning: 「手を貸す」 is an idiom for \"help\", not literally lending a hand, so she agrees: 「何を手伝えばいい？」 = \"what should I help with?\"\nTrap: taking 「手」 literally (an injury) misses it; 「助かったよ」 is the helped person's thanks, before anything has even been done — reversed roles."
+  },
+  "wrong": [
+   {
+    "zh": "「手を貸す」是请人帮忙，不是说手受伤了。",
+    "en": "「手を貸す」 asks for help; it says nothing about an injured hand."
+   },
+   null,
+   {
+    "zh": "请人帮忙的是男的，她说「ありがとう。助かったよ」像是自己被帮了，立场反了。",
+    "en": "He's the one asking for help; her 「ありがとう。助かったよ」 sounds as if she'd been helped — reversed roles."
+   }
+  ],
+  "traps": [
+   "intent",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n3-ck-528",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "お先に失礼します。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "お疲れさま。気をつけて帰ってね。",
+   "失礼します。どうぞお入りください。",
+   "いってらっしゃい。早く帰ってきてね。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "我先走了。"
+    ],
+    "options": [
+     "辛苦了。回去路上小心。",
+     "打扰了。请进。",
+     "路上小心，早点回来哦。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I'll be leaving now. (said to those still working)"
+    ],
+    "options": [
+     "Good work today. Get home safe.",
+     "Excuse me. Please come in.",
+     "See you later. Come back soon."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「お先に失礼します。」\n推理：这是下班比别人先走时说的话，留下的人回「お疲れさま」＝辛苦了，再加一句「気をつけて帰ってね」。\n容易错：「失礼します」和「どうぞお入りください」是进门时用的；「いってらっしゃい」是送家人出门，不是下班。",
+   "en": "Evidence: The woman says: 「お先に失礼します。」\nReasoning: This is said when leaving work before others; whoever stays replies 「お疲れさま」 and 「気をつけて帰ってね」.\nTrap: 「失礼します。どうぞお入りください」 belongs to entering a room; 「いってらっしゃい」 sends family off from home, not off from work."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「どうぞお入りください」是请人进来，可她是要回去。",
+    "en": "「どうぞお入りください」 invites someone in, but she's leaving."
+   },
+   {
+    "zh": "「いってらっしゃい」「早く帰ってきてね」是在家送人出门的话，她是下班回家。",
+    "en": "「いってらっしゃい」 and 「早く帰ってきてね」 send someone off from home; she's leaving work for the day."
+   }
+  ],
+  "traps": [
+   "timing",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n3-ck-529",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "田中さん、このプリンター、また紙が詰まってるみたいなんだけど……。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "あ、紙なら、さっき入れておきましたよ。",
+   "じゃあ、プリンターで印刷してもらえますか。",
+   "あ、またですか。ちょっと見てみますね。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "田中，这台打印机好像又卡纸了……"
+    ],
+    "options": [
+     "啊，纸的话我刚才放进去了。",
+     "那能用打印机帮我打印一下吗？",
+     "啊，又卡了？我来看看。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Ms. Tanaka, it looks like this printer's jammed again…"
+    ],
+    "options": [
+     "Oh, I put paper in a moment ago.",
+     "Then could you print it on the printer?",
+     "Oh, again? I'll take a look."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「このプリンター、また紙が詰まってるみたいなんだけど……。」\n推理：「紙が詰まる」＝卡纸，「〜んだけど……」话没说完，是在请她帮忙看看。所以回答「ちょっと見てみますね」。\n容易错：把卡纸听成没纸，回答「さっき入れておきました」；打印机坏了，再叫人用它打印也说不通。",
+   "en": "Evidence: The man says: 「このプリンター、また紙が詰まってるみたいなんだけど……。」\nReasoning: 「紙が詰まる」 = a paper jam, and the trailing 「〜んだけど……」 is a request for help, so she says 「ちょっと見てみますね」.\nTrap: hearing \"out of paper\" leads to 「さっき入れておきました」; asking him to print on a jammed printer makes no sense."
+  },
+  "wrong": [
+   {
+    "zh": "他说的是卡纸（詰まってる），不是没纸，加纸解决不了。",
+    "en": "He said it's jammed (詰まってる), not out of paper; adding paper won't fix it."
+   },
+   {
+    "zh": "打印机卡纸了，还叫他用打印机打印，答非所问。",
+    "en": "The printer is jammed; asking him to print on it doesn't answer anything."
+   },
+   null
+  ],
+  "traps": [
+   "repeat-word",
+   "intent"
+  ]
+ },
+ {
+  "id": "n3-ck-530",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "この前貸した本、どうだった？"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "うん、来週には返せると思う。",
+   "え、本、貸してくれるの？　ありがとう。",
+   "おもしろかった。一晩で読んじゃった。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "上次借你的书，怎么样？"
+    ],
+    "options": [
+     "嗯，我想下周就能还你。",
+     "诶，你要借书给我？谢谢。",
+     "很有意思，一个晚上就看完了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "How was the book I lent you the other day?"
+    ],
+    "options": [
+     "Yeah, I think I can return it next week.",
+     "Oh, you'll lend me a book? Thanks.",
+     "It was interesting. I read it in one night."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的问：「この前貸した本、どうだった？」\n推理：「どうだった？」问的是感想，所以回答「おもしろかった」，再补一句「一晩で読んじゃった」。\n容易错：回答什么时候还书是答非所问；「貸してくれるの？」把已经借出的书当成还没借，时间搞反了。",
+   "en": "Evidence: The woman asks: 「この前貸した本、どうだった？」\nReasoning: 「どうだった？」 asks what he thought, so he says 「おもしろかった」 and adds that he finished it in a night.\nTrap: saying when he'll return it answers a different question; 「貸してくれるの？」 treats a book already lent as not yet lent."
+  },
+  "wrong": [
+   {
+    "zh": "她问的是书怎么样，不是什么时候还。",
+    "en": "She asked how the book was, not when he'll return it."
+   },
+   {
+    "zh": "「この前貸した」是已经借给他了，「貸してくれるの？」时间不对。",
+    "en": "「この前貸した」 means she already lent it; 「貸してくれるの？」 gets the time wrong."
+   },
+   null
+  ],
+  "traps": [
+   "question-word",
+   "tense"
+  ]
+ },
+ {
+  "id": "n3-ck-531",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "明日の会議って、何時からだったっけ？"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "うん、明日の会議は私も出るつもりだよ。",
+   "明日の会議は、たしか十時からだったと思う。",
+   "会議なら、さっき終わったところだよ。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "明天的会是几点开始来着？"
+    ],
+    "options": [
+     "嗯，明天的会我也打算参加。",
+     "明天的会，我记得是十点开始。",
+     "会议的话，刚刚才结束。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "What time does tomorrow's meeting start again?"
+    ],
+    "options": [
+     "Yeah, I'm planning to attend tomorrow's meeting too.",
+     "Tomorrow's meeting starts at ten, I think.",
+     "The meeting just ended a moment ago."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的问：「明日の会議って、何時からだったっけ？」\n推理：「〜っけ」是想不起来、向对方确认。问的是几点，所以回答「たしか十時からだったと思う」。「たしか」＝我记得。\n容易错：说自己也参加是答非所问；会是明天的，「さっき終わった」时间对不上。",
+   "en": "Evidence: The man asks: 「明日の会議って、何時からだったっけ？」\nReasoning: 「〜っけ」 checks something he can't recall; he wants the time, so 「たしか十時からだったと思う」 (たしか = \"if I remember right\").\nTrap: saying she'll attend doesn't give a time; the meeting is tomorrow, so 「さっき終わった」 can't be right."
+  },
+  "wrong": [
+   {
+    "zh": "他问的是几点开始，不是她去不去。",
+    "en": "He asked what time it starts, not whether she's going."
+   },
+   null,
+   {
+    "zh": "会议是明天的，不可能「さっき終わった」。",
+    "en": "The meeting is tomorrow; it can't have 「さっき終わった」."
+   }
+  ],
+  "traps": [
+   "question-word",
+   "tense"
+  ]
+ },
+ {
+  "id": "n3-ck-532",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "お茶、もう一杯いかがですか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "ありがとうございます。じゃあ、もう一杯。",
+   "どうぞ、遠慮しないで召し上がってください。",
+   "じゃあ、私がお茶を入れてきましょうか。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "再来一杯茶怎么样？"
+    ],
+    "options": [
+     "谢谢，那就再来一杯。",
+     "请别客气，尽管喝吧。",
+     "那我去泡茶吧？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Would you like another cup of tea?"
+    ],
+    "options": [
+     "Thank you. Just one more, then.",
+     "Please, don't hold back — help yourself.",
+     "Then shall I go and make the tea?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的问：「お茶、もう一杯いかがですか。」\n推理：「いかがですか」是主人劝客人，客人接受就先道谢，再说「じゃあ、もう一杯」＝那就再来一杯。\n容易错：「召し上がってください」是主人劝客人的话，立场反了；「私がお茶を入れて」是客人反过来要替主人泡茶，不合这个场合。",
+   "en": "Evidence: The woman asks: 「お茶、もう一杯いかがですか。」\nReasoning: 「いかがですか」 is a host's offer; a guest accepting thanks her and says 「じゃあ、もう一杯」 = \"just one more, then.\"\nTrap: 「召し上がってください」 is what the host says — reversed roles; offering to make the tea himself, as the guest, doesn't fit."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「召し上がってください」是主人对客人说的，他是被招待的人。",
+    "en": "「召し上がってください」 is the host's line; he is the one being served."
+   },
+   {
+    "zh": "是她在给他倒茶，他作为客人说要去泡茶，立场反了。",
+    "en": "She is serving him; as the guest, offering to make the tea reverses the roles."
+   }
+  ],
+  "traps": [
+   "perspective"
+  ]
+ },
+ {
+  "id": "n3-ck-533",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "あれ、髪、切った？"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "うん、美容院、駅の近くにあるよ。",
+   "うん、昨日切ったんだ。ちょっと短すぎたかな。",
+   "ほんと？　じゃあ、私も切ってもらおうかな。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "咦，你剪头发了？"
+    ],
+    "options": [
+     "嗯，美发店在车站附近哦。",
+     "嗯，昨天剪的。是不是有点太短了？",
+     "真的？那我也去剪一下吧。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Hey, did you get a haircut?"
+    ],
+    "options": [
+     "Yeah, the hair salon is near the station.",
+     "Yeah, I had it cut yesterday. Is it a bit too short?",
+     "Really? Then maybe I'll get mine cut too."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的问：「あれ、髪、切った？」\n推理：「あれ」表示注意到她变了，他看出她剪了头发。回答「うん、昨日切ったんだ」承认，再问「短すぎたかな」很自然。\n容易错：「美容院、駅の近くにある」说的是店在哪儿，他没问这个；「私も切ってもらおうかな」把剪头发的人当成了他。",
+   "en": "Evidence: The man asks: 「あれ、髪、切った？」\nReasoning: 「あれ」 shows he's noticed a change, so she confirms 「うん、昨日切ったんだ」 and asks if it's too short.\nTrap: 「美容院、駅の近くにある」 says where the salon is, which he didn't ask; 「私も切ってもらおうかな」 treats him as the one who got the haircut."
+  },
+  "wrong": [
+   {
+    "zh": "他问的是剪没剪头发，「美容院、駅の近くにある」说美发店在哪儿，答非所问。",
+    "en": "He asked whether she'd had a haircut; saying where the salon is doesn't answer that."
+   },
+   null,
+   {
+    "zh": "剪头发的是她，「私も」好像是他剪了，立场反了。",
+    "en": "She's the one with the haircut; 「私も」 implies he got one — reversed roles."
+   }
+  ],
+  "traps": [
+   "mentioned-not-asked",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n3-ck-534",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "山田くん、今度の土曜日、引っ越しを手伝ってもらえないかな。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "へえ、もう引っ越したんだ。新しい部屋はどう？",
+   "うん、手伝ってもらえると、すごく助かるよ。",
+   "土曜日か。午後からでもよければ行けるよ。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "山田，这周六能来帮我搬家吗？"
+    ],
+    "options": [
+     "哦，已经搬好了啊。新房间怎么样？",
+     "嗯，有人帮忙的话就太好了。",
+     "周六啊。下午开始也行的话，我能去。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Yamada, could you help me move this Saturday?"
+    ],
+    "options": [
+     "Oh, you've already moved? How's the new place?",
+     "Yeah, it'd be a big help if you could help me.",
+     "Saturday, huh. I can come if the afternoon is OK."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「今度の土曜日、引っ越しを手伝ってもらえないかな。」\n推理：「〜てもらえないかな」是在请他帮忙，所以要回应请求：「午後からでもよければ行けるよ」＝下午开始的话可以去，附带条件地答应。\n容易错：搬家是这周六，「もう引っ越した」时间不对；「手伝ってもらえると助かる」是请人帮忙的一方说的话。",
+   "en": "Evidence: The woman says: 「今度の土曜日、引っ越しを手伝ってもらえないかな。」\nReasoning: 「〜てもらえないかな」 asks a favour, so he answers it: 「午後からでもよければ行けるよ」 — yes, if the afternoon is OK.\nTrap: the move is this Saturday, so 「もう引っ越した」 is the wrong time; 「手伝ってもらえると助かる」 is what the person asking would say."
+  },
+  "wrong": [
+   {
+    "zh": "搬家是这周六的事，还没搬，「もう引っ越した」不对。",
+    "en": "The move is this Saturday — it hasn't happened, so 「もう引っ越した」 is wrong."
+   },
+   {
+    "zh": "「手伝ってもらえると助かる」是需要帮忙的人说的，立场反了。",
+    "en": "「手伝ってもらえると助かる」 is the line of the person who needs help — reversed roles."
+   },
+   null
+  ],
+  "traps": [
+   "tense",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n3-ck-535",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "お弁当、温めますか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "あ、はい、温めてください。",
+   "はい、すぐに温めますね。",
+   "はい、袋は大丈夫です。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "便当要加热吗？"
+    ],
+    "options": [
+     "啊，好的，请帮我热一下。",
+     "好的，马上帮您加热。",
+     "好的，袋子不用了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Shall I heat up your bento?"
+    ],
+    "options": [
+     "Oh, yes, please heat it up.",
+     "Sure, I'll heat it up right away.",
+     "Yes — I don't need a bag."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：店员问：「お弁当、温めますか。」\n推理：这是便利店店员问顾客，要热就说「はい、温めてください」。\n容易错：「すぐに温めますね」是店员的话；「袋は大丈夫です」说的是袋子，店员问的是要不要加热。",
+   "en": "Evidence: The clerk asks: 「お弁当、温めますか。」\nReasoning: A shop clerk asking a customer; if she wants it warm, 「はい、温めてください」.\nTrap: 「すぐに温めますね」 is the clerk's line; 「袋は大丈夫です」 is about a bag, but the clerk asked about heating."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「すぐに温めますね」是店员说的，她是顾客。",
+    "en": "「すぐに温めますね」 is the clerk's line; she is the customer."
+   },
+   {
+    "zh": "店员问的是要不要加热，「袋は大丈夫です」回答的是要不要袋子，答非所问。",
+    "en": "The clerk asked about heating it; 「袋は大丈夫です」 answers about a bag instead."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "mentioned-not-asked"
+  ]
+ },
+ {
+  "id": "n3-ck-536",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "この問題、どうしても分からないんだけど、ちょっと見てくれる？"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "うん、わざわざ見てくれてありがとう。",
+   "どれ？　あ、これ、先週習ったところだよ。",
+   "え、もうできたの？　すごいね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这道题我怎么都不懂，能帮我看一下吗？"
+    ],
+    "options": [
+     "嗯，谢谢你特地帮我看。",
+     "哪道？啊，这是上周学过的地方。",
+     "诶，已经做出来了？好厉害。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I just can't figure out this problem — could you take a look?"
+    ],
+    "options": [
+     "Yeah, thanks for taking the trouble to look at it.",
+     "Which one? Oh, this is what we learned last week.",
+     "What, you've done it already? Amazing."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「この問題、どうしても分からないんだけど、ちょっと見てくれる？」\n推理：她请他帮忙看题，他说「どれ？」接过来看，再告诉她这是上周学过的，自然地开始帮忙。\n容易错：「見てくれてありがとう」是被帮的人说的；她说的是「分からない」，「もうできたの？」当成她已经做出来了。",
+   "en": "Evidence: The woman says: 「この問題、どうしても分からないんだけど、ちょっと見てくれる？」\nReasoning: She asks him to look; 「どれ？」 takes it up and he points out it's last week's material — he's starting to help.\nTrap: 「見てくれてありがとう」 is the helped person's line; she said 「分からない」, so 「もうできたの？」 wrongly assumes she's solved it."
+  },
+  "wrong": [
+   {
+    "zh": "请人看题的是她，他说「見てくれてありがとう」立场反了。",
+    "en": "She's the one asking for a look; his 「見てくれてありがとう」 reverses the roles."
+   },
+   null,
+   {
+    "zh": "她说的是「分からない」（不懂），不是已经做出来了。",
+    "en": "She said 「分からない」 — she can't do it, not that she already has."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n3-ck-537",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "部長、来週の出張の件で、少しお時間よろしいでしょうか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "うん、いいよ。出張の件だね。そこに座って。",
+   "出張なら、来週の月曜日から行ってきます。",
+   "時間なら、もう三時を過ぎてるよ。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "部长，关于下周出差的事，能占用您一点时间吗？"
+    ],
+    "options": [
+     "好，可以。是出差的事吧。坐那儿吧。",
+     "出差的话，我下周一开始去。",
+     "时间的话，已经过三点了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Manager, may I have a moment of your time about next week's business trip?"
+    ],
+    "options": [
+     "Sure. The business trip, right? Have a seat there.",
+     "As for the trip, I'll be going from next Monday.",
+     "The time? It's already past three."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男下属说：「来週の出張の件で、少しお時間よろしいでしょうか。」\n推理：「お時間よろしいでしょうか」是请上司抽时间谈话，部长答应就说「いいよ」，再让他坐下。\n容易错：「お時間」不是问现在几点；要去出差的是下属，「行ってきます」是下属的话，立场反了。",
+   "en": "Evidence: Her subordinate says: 「来週の出張の件で、少しお時間よろしいでしょうか。」\nReasoning: 「お時間よろしいでしょうか」 asks the boss for a few minutes; she agrees with 「いいよ」 and tells him to sit.\nTrap: 「お時間」 isn't asking the time of day; he is the one going on the trip, so 「行ってきます」 is his line, not hers."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "出差的是这位男下属，「来週から行ってきます」是他会说的话。",
+    "en": "He's the one going on the trip; 「来週から行ってきます」 is what he would say."
+   },
+   {
+    "zh": "「お時間よろしいでしょうか」是问能不能谈一下，不是问几点。",
+    "en": "「お時間よろしいでしょうか」 asks if she can spare a moment, not what time it is."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n3-ck-538",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "ごめん、待った？"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "うん、待っててくれてありがとう。",
+   "ううん、待ってないよ。今来たところ。",
+   "じゃあ、あと十分だけ待ってるね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "抱歉，等很久了吗？"
+    ],
+    "options": [
+     "嗯，谢谢你等我。",
+     "没有，没等。我也刚到。",
+     "那我再等十分钟哦。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Sorry — have you been waiting long?"
+    ],
+    "options": [
+     "Yeah, thanks for waiting for me.",
+     "No, I haven't been waiting. I just got here.",
+     "Then I'll wait just ten more minutes."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「ごめん、待った？」\n推理：她迟到了，问他等了没有。「ううん、待ってないよ。今来たところ」＝没等，我也刚到，让她不用在意，是约会时的固定回答。\n容易错：「待っててくれてありがとう」是迟到的人说的；她已经到了，「あと十分待ってる」时间不对。",
+   "en": "Evidence: The woman says: 「ごめん、待った？」\nReasoning: She's arrived late and asks if he waited. 「ううん、待ってないよ。今来たところ」 = \"no, I haven't been waiting, I just got here\" — the stock reply that puts her at ease.\nTrap: 「待っててくれてありがとう」 is the late person's line; she's already here, so \"ten more minutes\" is the wrong time."
+  },
+  "wrong": [
+   {
+    "zh": "「待っててくれてありがとう」是迟到的人对等的人说的，立场反了。",
+    "en": "「待っててくれてありがとう」 is what the late person says — reversed roles."
+   },
+   null,
+   {
+    "zh": "她已经到了，还说「あと十分待ってる」，时间不对。",
+    "en": "She has already arrived, so 「あと十分待ってる」 makes no sense."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "tense"
+  ]
+ },
+ {
+  "id": "n3-ck-539",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "今度の新しい仕事、君に任せてもいいかな。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "新しい仕事、見つかるといいですね。",
+   "はい、ぜひ私に任せてください。",
+   "そうですね。だれに任せましょうか。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这次的新工作，交给你可以吗？"
+    ],
+    "options": [
+     "希望您能找到新工作。",
+     "好的，请一定交给我。",
+     "是啊，交给谁好呢？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Could I leave this new job to you?"
+    ],
+    "options": [
+     "I hope you find a new job.",
+     "Yes, please leave it to me.",
+     "Right. Who should we leave it to?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男上司说：「今度の新しい仕事、君に任せてもいいかな。」\n推理：上司要把新工作交给她，她积极接受：「ぜひ私に任せてください」＝请一定交给我。\n容易错：「新しい仕事」在这里是新的工作任务，不是换工作，「見つかるといいですね」理解错了；他说了「君に」，再问「だれに」前后矛盾。",
+   "en": "Evidence: Her boss says: 「今度の新しい仕事、君に任せてもいいかな。」\nReasoning: He wants to give her the new job, so she takes it on eagerly: 「ぜひ私に任せてください」 = \"please leave it to me.\"\nTrap: 「新しい仕事」 here is a new assignment, not a new employer, so 「見つかるといいですね」 misreads it; he said 「君に」, so asking 「だれに」 contradicts him."
+  },
+  "wrong": [
+   {
+    "zh": "「新しい仕事」是上司要交给她的新任务，不是谁在找工作，「見つかるといいですね」理解错了。",
+    "en": "「新しい仕事」 is a new assignment he's giving her, not a job search — 「見つかるといいですね」 misreads it."
+   },
+   null,
+   {
+    "zh": "他已经说了「君に」（交给你），再问交给谁，前后矛盾。",
+    "en": "He already said 「君に」 — asking who to give it to contradicts that."
+   }
+  ],
+  "traps": [
+   "intent",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n3-ck-540",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "あれ、まだ帰ってなかったの？　もう九時だよ。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "うん、これが終わったら帰るよ。",
+   "うん、九時には帰ってくると思う。",
+   "え、もう帰ったの？　早いね。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "咦，你还没回去？已经九点了。"
+    ],
+    "options": [
+     "嗯，弄完这个就回去。",
+     "嗯，我想九点会回来。",
+     "诶，已经回去了？真早。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Huh, you haven't gone home yet? It's already nine."
+    ],
+    "options": [
+     "Yeah, I'll go once I finish this.",
+     "Yeah, I think I'll be back by nine.",
+     "What, they've already gone home? That's early."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「あれ、まだ帰ってなかったの？　もう九時だよ。」\n推理：她惊讶他还在公司，他解释还在做事：「これが終わったら帰るよ」。\n容易错：「九時には帰ってくる」是在说外出回来的时间，可现在已经九点了；「もう帰ったの？」把还在的他当成了已经走的人。",
+   "en": "Evidence: The woman says: 「あれ、まだ帰ってなかったの？　もう九時だよ。」\nReasoning: She's surprised he's still here; he explains he's finishing something: 「これが終わったら帰るよ」.\nTrap: 「九時には帰ってくる」 is about coming back from an outing — and it's already nine; 「もう帰ったの？」 treats someone who's still here as gone."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "现在已经九点了，而且她问的是他为什么还没走，不是什么时候回来。",
+    "en": "It's already nine, and she's asking why he hasn't left — not when he'll come back."
+   },
+   {
+    "zh": "还没回去的是他自己，「もう帰ったの？」立场反了。",
+    "en": "He's the one still here; 「もう帰ったの？」 gets the roles backwards."
+   }
+  ],
+  "traps": [
+   "tense",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n3-ck-541",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "駅前のパン屋、来月で閉まっちゃうらしいよ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "え、来月オープンするの？　楽しみだね。",
+   "うん、閉まってたから、別の店で買ったよ。",
+   "えー、残念。あそこのパン、好きだったのに。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "听说车站前的面包店下个月就要关门了。"
+    ],
+    "options": [
+     "诶，下个月开业？好期待。",
+     "嗯，关门了，所以我在别的店买的。",
+     "啊，好可惜。我挺喜欢那家的面包的。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I heard the bakery by the station is closing down next month."
+    ],
+    "options": [
+     "Oh, it's opening next month? Can't wait.",
+     "Yeah, it was closed, so I bought some at another shop.",
+     "Oh no, what a shame. I loved their bread."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「駅前のパン屋、来月で閉まっちゃうらしいよ。」\n推理：「来月で閉まる」＝到下个月就关店，「〜ちゃう」带着遗憾。她回答「残念」「好きだったのに」，表达可惜。\n容易错：关门听成开业就完全反了；「閉まってたから」说的是已经关了，可要到下个月才关。",
+   "en": "Evidence: The man says: 「駅前のパン屋、来月で閉まっちゃうらしいよ。」\nReasoning: 「来月で閉まる」 = it closes for good next month, and 「〜ちゃう」 adds regret. She answers 「残念」「好きだったのに」.\nTrap: hearing \"opening\" flips the meaning; 「閉まってたから」 says it's already closed, but that's next month."
+  },
+  "wrong": [
+   {
+    "zh": "他说的是要关门（閉まっちゃう），不是开业。",
+    "en": "He said it's closing (閉まっちゃう), not opening."
+   },
+   {
+    "zh": "关门是下个月的事，现在还开着，「閉まってたから」时间不对。",
+    "en": "It closes next month and is still open; 「閉まってたから」 gets the time wrong."
+   },
+   null
+  ],
+  "traps": [
+   "contradiction",
+   "tense"
+  ]
+ },
+ {
+  "id": "n3-ck-542",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "すみません、この電車、市役所前に止まりますか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "はい、市役所は駅のすぐ前にあります。",
+   "ええ、次の電車は十分後に来ますよ。",
+   "いえ、これは急行なので止まりませんよ。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "不好意思，这趟电车在市政府前站停吗？"
+    ],
+    "options": [
+     "是的，市政府就在车站正前面。",
+     "嗯，下一趟电车十分钟后来。",
+     "不，这是快车，所以不停。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Excuse me, does this train stop at Shiyakusho-mae?"
+    ],
+    "options": [
+     "Yes, the city hall is right in front of the station.",
+     "Yes, the next train comes in ten minutes.",
+     "No, this is an express, so it doesn't stop there."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的问：「この電車、市役所前に止まりますか。」\n推理：问的是这趟车停不停，回答「いえ、これは急行なので止まりませんよ」，连理由也说清楚了。\n容易错：「市役所は駅のすぐ前にあります」说的是市政府在哪儿，答非所问；问的是这趟车，回答下一趟什么时候来也没回答问题。",
+   "en": "Evidence: The woman asks: 「この電車、市役所前に止まりますか。」\nReasoning: She wants to know if this train stops there; 「いえ、これは急行なので止まりませんよ」 answers and gives the reason.\nTrap: 「市役所は駅のすぐ前にあります」 says where the city hall is, which isn't the question; the time of the next train doesn't answer it either."
+  },
+  "wrong": [
+   {
+    "zh": "「はい」后面说的是市政府在哪儿，并没有回答这趟车停不停。",
+    "en": "After 「はい」 he only says where the city hall is; it doesn't answer whether this train stops."
+   },
+   {
+    "zh": "她问的是这趟车停不停，不是下一趟什么时候来。",
+    "en": "She asked whether this train stops there, not when the next one comes."
+   },
+   null
+  ],
+  "traps": [
+   "question-word",
+   "repeat-word"
+  ]
  }
 ]

@@ -1163,5 +1163,937 @@
    "tense",
    "repeat-word"
   ]
+ },
+ {
+  "id": "n4-ck-521",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "ただいま。あー、外は 寒かった。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "おかえり。寒かったでしょう。お茶 いれようか。",
+   "いってらっしゃい。かさを 持って いってね。",
+   "ただいま。ぼくも 今 帰った ところだよ。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "我回来了。啊，外面好冷。"
+    ],
+    "options": [
+     "回来啦。很冷吧。给你泡杯茶吧？",
+     "路上小心。带上伞哦。",
+     "我回来了。我也刚到家。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "I'm home. Ugh, it was cold out there."
+    ],
+    "options": [
+     "Welcome back. Cold, wasn't it? Shall I make some tea?",
+     "See you. Take an umbrella with you.",
+     "I'm home. I just got back too."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「ただいま。あー、外は 寒かった。」\n推理：「ただいま」是回到家时说的，家里的人用「おかえり」回应；接着她说外面冷的话，提出泡茶，很自然。\n容易错：「いってらっしゃい」是送人出门时说的；跟着说「ただいま」是回家的人自己的话。",
+   "en": "Evidence: The woman says: 「ただいま。あー、外は 寒かった。」\nReasoning: 「ただいま」 is what you say coming home; the person at home answers 「おかえり」. Picking up on the cold and offering tea fits.\nTrap: 「いってらっしゃい」 sees someone off; repeating 「ただいま」 is the arriving person's line."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「いってらっしゃい」是对出门的人说的，她是刚回来。",
+    "en": "「いってらっしゃい」 is for someone leaving; she has just come home."
+   },
+   {
+    "zh": "「ただいま」是回家的人说的，不是对回家的人的回应。",
+    "en": "「ただいま」 is said by the one coming home, not as a reply to it."
+   }
+  ],
+  "traps": [
+   "timing",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n4-ck-522",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "たんじょうび おめでとう。これ、プレゼント。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "おめでとう。今年で なんさいに なったの？",
+   "どう いたしまして。気に 入って くれた？",
+   "ありがとう。プレゼント、開けても いい？"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "生日快乐。这个，给你的礼物。"
+    ],
+    "options": [
+     "生日快乐。你今年几岁了？",
+     "不客气。喜欢吗？",
+     "谢谢。礼物可以打开吗？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Happy birthday. Here's a present."
+    ],
+    "options": [
+     "Happy birthday! How old are you this year?",
+     "You're welcome. Do you like it?",
+     "Thank you. Can I open the present?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「たんじょうび おめでとう。これ、プレゼント。」\n推理：今天是女的生日，收到祝福和礼物，应该道谢；「開けても いい？」是收礼时常说的话。\n容易错：「おめでとう」是送祝福的一方说的；「どう いたしまして」「気に 入った？」是送礼的人的话，立场反了。",
+   "en": "Evidence: The man says: 「たんじょうび おめでとう。これ、プレゼント。」\nReasoning: It's her birthday and she's been given a present, so she thanks him; 「開けても いい？」 is what you say on receiving a gift.\nTrap: 「おめでとう」 is the well-wisher's word; 「どう いたしまして」 and 「気に 入った？」 are the giver's lines."
+  },
+  "wrong": [
+   {
+    "zh": "「おめでとう」是男的对她说的，过生日的是她自己，不该再祝贺对方。",
+    "en": "「おめでとう」 is his line — it's her birthday, so she shouldn't congratulate him."
+   },
+   {
+    "zh": "「どう いたしまして」是回应别人道谢的话，「気に 入った？」也是送礼的人问的。",
+    "en": "「どう いたしまして」 answers thanks, and 「気に 入った？」 is what the giver asks."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n4-ck-523",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "先生、おかげさまで 大学に 合格できました。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "そうですか。来年 また がんばって ください。",
+   "おめでとう。毎日 よく がんばりましたね。",
+   "ありがとう ございます。がんばります。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "老师，托您的福，我考上大学了。"
+    ],
+    "options": [
+     "这样啊。明年再加油吧。",
+     "恭喜。你每天都很努力呢。",
+     "谢谢。我会努力的。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Sensei, thanks to you I got into university."
+    ],
+    "options": [
+     "I see. Try again next year.",
+     "Congratulations. You worked hard every day.",
+     "Thank you. I'll do my best."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「おかげさまで 大学に 合格できました。」\n推理：「合格できました」是好消息，老师应该祝贺他。「おかげさまで」是表示感谢的客气话，不是坏消息。\n容易错：把考上听成没考上；道谢和「がんばります」是学生的话，不是老师的。",
+   "en": "Evidence: The man says: 「おかげさまで 大学に 合格できました。」\nReasoning: 「合格できました」 is good news, so the teacher congratulates him. 「おかげさまで」 is a polite thank-you, not bad news.\nTrap: hearing 'passed' as 'failed'; thanking and 「がんばります」 are the student's words, not the teacher's."
+  },
+  "wrong": [
+   {
+    "zh": "「来年 また」是对没考上的人说的，他说的是「合格できました」。",
+    "en": "「来年 また」 is for someone who failed; he says he passed."
+   },
+   null,
+   {
+    "zh": "道谢和「がんばります」是学生的立场；老师听到好消息应该祝贺。",
+    "en": "Thanking and 「がんばります」 is the student's side; the teacher should congratulate him."
+   }
+  ],
+  "traps": [
+   "contradiction",
+   "perspective"
+  ]
+ },
+ {
+  "id": "n4-ck-524",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "ごめんください。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "ごめんなさい。もう しません。",
+   "いらっしゃいませ。なんめいさまですか。",
+   "はい。どちらさまでしょうか。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "有人在家吗？"
+    ],
+    "options": [
+     "对不起，我再也不这样了。",
+     "欢迎光临。请问几位？",
+     "来了。请问是哪位？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Hello, is anyone home?"
+    ],
+    "options": [
+     "I'm sorry. I won't do it again.",
+     "Welcome. How many in your party?",
+     "Yes? Who is it, please?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的在门口说：「ごめんください。」\n推理：「ごめんください」是到别人家门口叫门时说的，主人回应「はい」并问对方是谁「どちらさまでしょうか」。\n容易错：「ごめんなさい」只是发音像，是道歉；「いらっしゃいませ」是店员迎客的话，不是在家里应门。",
+   "en": "Evidence: The woman calls at the door: 「ごめんください。」\nReasoning: 「ごめんください」 is how you call out at someone's door; the person inside answers 「はい」 and asks who it is: 「どちらさまでしょうか」.\nTrap: 「ごめんなさい」 only sounds similar and is an apology; 「いらっしゃいませ」 is a shop greeting, not answering the door at home."
+  },
+  "wrong": [
+   {
+    "zh": "「ごめんなさい」是道歉，和叫门的「ごめんください」只是听起来像。",
+    "en": "「ごめんなさい」 is an apology; it only sounds like 「ごめんください」, a call at the door."
+   },
+   {
+    "zh": "「いらっしゃいませ」和「なんめいさま」是饭店店员的话，这里是在家门口。",
+    "en": "「いらっしゃいませ」 and 「なんめいさま」 are what restaurant staff say, not someone answering their door."
+   },
+   null
+  ],
+  "traps": [
+   "repeat-word",
+   "timing"
+  ]
+ },
+ {
+  "id": "n4-ck-525",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "しつれいします。部長、今 少し よろしいでしょうか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "ええ、どうぞ。何ですか。",
+   "いいえ、しつれいしました。",
+   "はい、よろしく おねがいします。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "打扰了。部长，现在能占用您一点时间吗？"
+    ],
+    "options": [
+     "嗯，请进。什么事？",
+     "不，失礼了。",
+     "好，请多关照。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Excuse me. Do you have a moment, sir?"
+    ],
+    "options": [
+     "Sure, come in. What is it?",
+     "No, excuse me.",
+     "Yes, nice to work with you."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「部長、今 少し よろしいでしょうか。」\n推理：「よろしいでしょうか」是在问现在能不能占用对方一点时间，部长可以就说「ええ、どうぞ」，再问什么事。\n容易错：「しつれいしました」是离开或道歉时说的；「よろしく おねがいします」只是和「よろしい」听起来像。",
+   "en": "Evidence: The man says: 「部長、今 少し よろしいでしょうか。」\nReasoning: 「よろしいでしょうか」 asks whether she has a moment; if she does, she says 「ええ、どうぞ」 and asks what it is.\nTrap: 「しつれいしました」 is said when leaving or apologising; 「よろしく おねがいします」 only sounds like 「よろしい」."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「しつれいしました」是离开房间或道歉时说的，没有回答他的问题。",
+    "en": "「しつれいしました」 is said when leaving or apologising; it doesn't answer his question."
+   },
+   {
+    "zh": "「よろしく おねがいします」是初次见面或拜托时说的，只是和「よろしい」听起来像。",
+    "en": "「よろしく おねがいします」 is for introductions or requests; it only echoes 「よろしい」."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "timing"
+  ]
+ },
+ {
+  "id": "n4-ck-526",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "おそく なって すみません。電車が おくれて しまって。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "いいえ、わたしは おくれて いませんよ。",
+   "いいですよ。まだ 始まって いませんから。",
+   "どう いたしまして。電車は たいへんでしたね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "来晚了，对不起。电车晚点了。"
+    ],
+    "options": [
+     "不，我没有迟到啊。",
+     "没关系。还没开始呢。",
+     "不客气。坐电车真辛苦啊。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Sorry I'm late. The train was delayed."
+    ],
+    "options": [
+     "No, I'm not late.",
+     "That's fine. It hasn't started yet.",
+     "You're welcome. The train must have been tough."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「おそく なって すみません。」\n推理：对方为迟到道歉，回答「いいですよ」表示没关系，再说还没开始，让对方放心。\n容易错：「どう いたしまして」是回应道谢的，不是回应道歉；「わたしは おくれて いません」把对方的事当成了自己的。",
+   "en": "Evidence: The woman says: 「おそく なって すみません。」\nReasoning: She apologises for being late; 「いいですよ」 says it's fine, and 'it hasn't started yet' reassures her.\nTrap: 「どう いたしまして」 answers thanks, not an apology; 「わたしは おくれて いません」 turns her problem into his."
+  },
+  "wrong": [
+   {
+    "zh": "迟到的是女的，男的说自己没迟到，答非所问。",
+    "en": "She is the one who's late; saying he isn't late misses the point."
+   },
+   null,
+   {
+    "zh": "「どう いたしまして」用来回应「ありがとう」，不用来回应道歉。",
+    "en": "「どう いたしまして」 answers thanks, not an apology."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "timing"
+  ]
+ },
+ {
+  "id": "n4-ck-527",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "ごちそうさまでした。とても おいしかったです。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "いただきます。おいしそうですね。",
+   "いいえ、わたしは まだ 食べて いません。",
+   "よかった。また 食べに 来て くださいね。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "我吃好了，谢谢款待。非常好吃。"
+    ],
+    "options": [
+     "我开动了。看起来真好吃。",
+     "不，我还没吃。",
+     "太好了。下次再来吃哦。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Thank you for the meal. It was delicious."
+    ],
+    "options": [
+     "Let's eat. It looks delicious.",
+     "No, I haven't eaten yet.",
+     "I'm glad. Please come and eat again."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「ごちそうさまでした。とても おいしかったです。」\n推理：客人吃完饭道谢，做饭的主人高兴地回应「よかった」，再邀请他下次再来。\n容易错：「いただきます」是吃饭前说的；「まだ 食べて いません」把他的话当成了询问。",
+   "en": "Evidence: The man says: 「ごちそうさまでした。とても おいしかったです。」\nReasoning: A guest thanks the host after the meal; the host is pleased — 「よかった」 — and invites him back.\nTrap: 「いただきます」 is said before eating; 「まだ 食べて いません」 treats his words as a question."
+  },
+  "wrong": [
+   {
+    "zh": "「いただきます」是开始吃饭时说的，他已经吃完了。",
+    "en": "「いただきます」 is said before eating; he has finished."
+   },
+   {
+    "zh": "他不是在问她吃没吃，而是吃完后道谢。",
+    "en": "He isn't asking whether she has eaten; he's thanking her after the meal."
+   },
+   null
+  ],
+  "traps": [
+   "timing",
+   "intent"
+  ]
+ },
+ {
+  "id": "n4-ck-528",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "こちらで めしあがりますか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "はい、どうぞ めしあがって ください。",
+   "いいえ、家に 持って 帰ります。",
+   "いいえ、まだ 食べて いません。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "您在这里吃吗？"
+    ],
+    "options": [
+     "好的，请您慢用。",
+     "不，我带回家。",
+     "不，我还没吃。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Will you be eating here?"
+    ],
+    "options": [
+     "Yes, please enjoy your meal.",
+     "No, I'll take it home.",
+     "No, I haven't eaten yet."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：店员问：「こちらで めしあがりますか。」\n推理：「めしあがる」是「食べる」的尊敬语，店员问在店里吃还是带走。回答「家に 持って 帰ります」就是外带。\n容易错：「めしあがって ください」是店员一方说的敬语；「まだ 食べて いません」把问题听成了“吃过了吗”。",
+   "en": "Evidence: The shop worker asks: 「こちらで めしあがりますか。」\nReasoning: 「めしあがる」 is the honorific of 「食べる」; he's asking 'eat in or take away?'. 「家に 持って 帰ります」 means take away.\nTrap: 「めしあがって ください」 is the server's honorific; 「まだ 食べて いません」 hears the question as 'have you eaten?'."
+  },
+  "wrong": [
+   {
+    "zh": "「めしあがって ください」是请别人吃的敬语，是店员的话，不是客人的回答。",
+    "en": "「めしあがって ください」 is the polite 'please eat' a server says, not the customer's answer."
+   },
+   null,
+   {
+    "zh": "店员问的是在哪里吃，不是吃过没有。",
+    "en": "He asks where she'll eat, not whether she has eaten."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "tense"
+  ]
+ },
+ {
+  "id": "n4-ck-529",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "この しりょう、あしたの かいぎまでに コピーして おいて もらえる？"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "はい、かいぎまでに コピーして おきます。",
+   "はい、もう コピーして もらいました。",
+   "いいえ、かいぎは あしたですよ。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这份资料，能在明天开会之前帮我复印好吗？"
+    ],
+    "options": [
+     "好的，我在开会之前复印好。",
+     "是的，已经请人复印好了。",
+     "不，会议是明天。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Could you copy these documents before tomorrow's meeting?"
+    ],
+    "options": [
+     "Sure, I'll have them copied before the meeting.",
+     "Yes, I've already had them copied.",
+     "No, the meeting is tomorrow."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「コピーして おいて もらえる？」\n推理：「〜て もらえる？」是请求。接受请求时说「コピーして おきます」（我会事先印好），很自然。\n容易错：「コピーして もらいました」是请别人做好了，立场和时态都不对；「かいぎは あしたですよ」用「いいえ」纠正她，但她本来就说的是明天。",
+   "en": "Evidence: The woman says: 「コピーして おいて もらえる？」\nReasoning: 「〜て もらえる？」 is a request. Accepting it with 「コピーして おきます」 (I'll have them ready) is natural.\nTrap: 「コピーして もらいました」 means someone else already did it — wrong side and wrong tense; 「かいぎは あしたですよ」 'corrects' her with 「いいえ」, though she said tomorrow herself."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "她是请他复印，「コピーして もらいました」变成了他请别人复印，而且是过去的事。",
+    "en": "She's asking him to copy them; 「コピーして もらいました」 means someone already did it for him."
+   },
+   {
+    "zh": "她说的就是明天的会议，用「いいえ」纠正她不合理，只是重复了「かいぎ」「あした」。",
+    "en": "She said tomorrow's meeting herself; 「いいえ」 corrects nothing — it just repeats 「かいぎ」 and 「あした」."
+   }
+  ],
+  "traps": [
+   "intent",
+   "perspective",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n4-ck-530",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "あしたからは ちこくしないように して くださいね。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "ええ、きのうも ちこくしましたね。",
+   "はい、あしたは ちこくしても いいです。",
+   "はい。もう ちこくしないように します。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "从明天起请注意不要迟到。"
+    ],
+    "options": [
+     "嗯，昨天也迟到了呢。",
+     "好，明天迟到也可以。",
+     "好的。我以后不会再迟到了。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "From tomorrow, please make sure you're not late."
+    ],
+    "options": [
+     "Yes, I was late yesterday too.",
+     "Yes, it's fine to be late tomorrow.",
+     "Yes. I'll make sure I'm not late again."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「ちこくしないように して くださいね。」\n推理：「〜ないように して ください」是提醒对方注意、别再这样。被提醒的人接受提醒，说「もう ちこくしないように します」，最自然。\n容易错：「きのうも ちこくしました」答的是过去的事；「ちこくしても いいです」是给许可的口气，立场反了。",
+   "en": "Evidence: The woman says: 「ちこくしないように して くださいね。」\nReasoning: 「〜ないように して ください」 tells him to take care not to do it again. Accepting it and promising 「もう ちこくしないように します」 is the natural reply.\nTrap: 「きのうも ちこくしました」 talks about the past; 「ちこくしても いいです」 grants permission — the wrong side."
+  },
+  "wrong": [
+   {
+    "zh": "她在提醒以后的事，回答昨天也迟到了，不是在回应提醒。",
+    "en": "She's warning him about the future; talking about yesterday doesn't respond to it."
+   },
+   {
+    "zh": "「〜ても いいです」是允许别人的说法，被提醒的人不能这样说，意思也反了。",
+    "en": "「〜ても いいです」 grants permission — the wrong person and the opposite meaning."
+   },
+   null
+  ],
+  "traps": [
+   "tense",
+   "perspective",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n4-ck-531",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "すみません、駅までの 道を 教えて いただけませんか。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "はい、きのう 駅の 人に 教えて いただきました。",
+   "すみません、この 辺の 道は よく 知らないんです。",
+   "じゃあ、駅の 前で 待って いて くださいね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "不好意思，能告诉我去车站怎么走吗？"
+    ],
+    "options": [
+     "是的，昨天车站的人告诉我了。",
+     "不好意思，这一带的路我不太清楚。",
+     "那你在车站前面等着吧。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Excuse me, could you tell me the way to the station?"
+    ],
+    "options": [
+     "Yes, a station worker told me yesterday.",
+     "Sorry, I don't really know the streets around here.",
+     "Then please wait in front of the station."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「駅までの 道を 教えて いただけませんか。」\n推理：「〜て いただけませんか」是很客气的请求，他在问路。不知道路的时候，道歉说自己不清楚，是自然的回应。\n容易错：「教えて いただきました」是自己被别人告诉了，立场反了；「駅の 前で 待って いて」把问路当成了约见面。",
+   "en": "Evidence: The man says: 「駅までの 道を 教えて いただけませんか。」\nReasoning: 「〜て いただけませんか」 is a very polite request — he's asking the way. If you don't know, apologising and saying so is natural.\nTrap: 「教えて いただきました」 means someone told her — the wrong side; 'wait at the station' treats it as arranging to meet."
+  },
+  "wrong": [
+   {
+    "zh": "「教えて いただきました」是自己请别人教了，不是回答对方的请求。",
+    "en": "「教えて いただきました」 means someone taught her — it doesn't answer his request."
+   },
+   null,
+   {
+    "zh": "他是在问路，不是约她见面，让他在车站等没有意义。",
+    "en": "He's asking directions, not arranging to meet; telling him to wait at the station makes no sense."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n4-ck-532",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "先生は なんじごろ こちらに いらっしゃいますか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "はい、先生は いらっしゃいません。",
+   "さっきまで ここに いらっしゃいましたよ。",
+   "三時ごろ いらっしゃると 思いますよ。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "老师大概几点会来这里？"
+    ],
+    "options": [
+     "是的，老师不在。",
+     "老师刚才还在这里呢。",
+     "我想大概三点会来。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Around what time will the teacher come here?"
+    ],
+    "options": [
+     "Yes, the teacher isn't here.",
+     "The teacher was here until a moment ago.",
+     "I think the teacher will come around three."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的问：「先生は なんじごろ こちらに いらっしゃいますか。」\n推理：问的是“几点左右来”，回答时间「三時ごろ」最直接。这里的「いらっしゃる」是「来る」的尊敬语。\n容易错：「はい」回答不了「なんじ」这样的疑问词；「さっきまで いらっしゃいました」说的是过去在不在，不是什么时候来。",
+   "en": "Evidence: The woman asks: 「先生は なんじごろ こちらに いらっしゃいますか。」\nReasoning: She asks roughly what time; 「三時ごろ」 gives a time. Here 「いらっしゃる」 is the honorific of 「来る」.\nTrap: 「はい」 can't answer 「なんじ」; 「さっきまで いらっしゃいました」 is about where he was, not when he'll come."
+  },
+  "wrong": [
+   {
+    "zh": "「なんじごろ」问时间，不能用「はい」回答；说老师不在也没回答几点来。",
+    "en": "「なんじごろ」 asks for a time; 「はい」 and 'not here' don't give one."
+   },
+   {
+    "zh": "这里的「いらっしゃる」是“来”，她问的是以后几点来，这个回答说的是刚才在这里。",
+    "en": "Here 「いらっしゃる」 means 'come'; she asks when the teacher will come, not where they were."
+   },
+   null
+  ],
+  "traps": [
+   "question-word",
+   "tense"
+  ]
+ },
+ {
+  "id": "n4-ck-533",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "すみません、この ペン、ちょっと お借りしても いいですか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "どうぞ。その ペン、使って ください。",
+   "いいえ、その ペンは かりて いませんよ。",
+   "はい、お借りします。ありがとう。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "不好意思，这支笔能借我用一下吗？"
+    ],
+    "options": [
+     "请吧，那支笔你用吧。",
+     "不，那支笔我没借啊。",
+     "好，我借一下。谢谢。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Excuse me, may I borrow this pen for a moment?"
+    ],
+    "options": [
+     "Go ahead, use that pen.",
+     "No, I haven't borrowed that pen.",
+     "Yes, I'll borrow it. Thanks."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「この ペン、ちょっと お借りしても いいですか。」\n推理：「お借りしても いいですか」是请求借东西，笔的主人答应时说「どうぞ」。\n容易错：「お借りします」是借东西的人说的；「かりて いません」把请求听成了询问。",
+   "en": "Evidence: The woman says: 「この ペン、ちょっと お借りしても いいですか。」\nReasoning: 「お借りしても いいですか」 asks to borrow something; the owner agrees with 「どうぞ」.\nTrap: 「お借りします」 is the borrower's line; 「かりて いません」 hears the request as a question."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "她是在请求借笔，不是问他有没有借，「かりて いません」答非所问。",
+    "en": "She's asking to borrow it, not asking whether he borrowed it."
+   },
+   {
+    "zh": "「お借りします」「ありがとう」是借东西的人说的，立场反了。",
+    "en": "「お借りします」 and thanks are the borrower's words — the wrong side."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent",
+   "repeat-word"
+  ]
+ },
+ {
+  "id": "n4-ck-534",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "ちょっと しずかに して もらえない？ 今 電話中なの。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "うん、ここは しずかな ところだね。",
+   "あ、ごめん。電話中だったんだね。",
+   "じゃあ、ぼくが 電話して あげようか。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "lines": [
+     "能不能安静一点？我正在打电话。"
+    ],
+    "options": [
+     "嗯，这里真是个安静的地方。",
+     "啊，对不起。原来你在打电话啊。",
+     "那我帮你打电话吧？"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Could you be a bit quieter? I'm on the phone."
+    ],
+    "options": [
+     "Yeah, this is a quiet place.",
+     "Oh, sorry. I didn't realise you were on the phone.",
+     "Then shall I make the call for you?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的说：「ちょっと しずかに して もらえない？ 今 電話中なの。」\n推理：「〜て もらえない？」是请求，她嫌他吵。被请求安静的人，自然先道歉「ごめん」，说自己没发现她在打电话。\n容易错：「しずかな ところ」把请求听成了说这里安静；「電話して あげる」把「電話中」听成了要人帮忙打电话。",
+   "en": "Evidence: The woman says: 「ちょっと しずかに して もらえない？ 今 電話中なの。」\nReasoning: 「〜て もらえない？」 is a request — he's too noisy. The natural reply is to apologise, 「ごめん」, and say he hadn't realised she was on the phone.\nTrap: 「しずかな ところ」 hears the request as a remark about the place; 「電話して あげる」 hears 「電話中」 as asking for a call to be made."
+  },
+  "wrong": [
+   {
+    "zh": "她是请他小声点，不是说这个地方安静。",
+    "en": "She's asking him to be quiet, not saying the place is quiet."
+   },
+   null,
+   {
+    "zh": "她已经在打电话了，问题是他太吵，不用他帮忙打电话。",
+    "en": "She's already on the phone and he's too loud; she doesn't need him to call anyone."
+   }
+  ],
+  "traps": [
+   "repeat-word",
+   "intent"
+  ]
+ },
+ {
+  "id": "n4-ck-535",
+  "type": "sokuji",
+  "lines": [
+   [
+    "M",
+    "この かさ、田中さんが 貸して くれたんだ。"
+   ]
+  ],
+  "respond": "F",
+  "options": [
+   "え、きみが 田中さんに 貸して あげたの？",
+   "そう、田中さんは かさを わすれて きたの？",
+   "田中さん、やさしいね。ちゃんと 返してね。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "lines": [
+     "这把伞是田中借给我的。"
+    ],
+    "options": [
+     "咦，是你借给田中的？",
+     "是吗，田中忘了带伞来？",
+     "田中真好心。要好好还给人家哦。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Tanaka-san lent me this umbrella."
+    ],
+    "options": [
+     "Huh, you lent it to Tanaka-san?",
+     "Oh, did Tanaka-san come without an umbrella?",
+     "Tanaka-san's so kind. Make sure you give it back."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：男的说：「田中さんが 貸して くれたんだ。」\n推理：「〜が 貸して くれた」是田中借给他（他得到了好处）。所以夸田中好心，提醒他还伞，很自然。\n容易错：「貸して あげたの？」把借的方向弄反了；伞是田中借出来的，说田中忘带伞也对不上。",
+   "en": "Evidence: The man says: 「田中さんが 貸して くれたんだ。」\nReasoning: 「〜が 貸して くれた」 means Tanaka lent it to him. Praising Tanaka and reminding him to return it is natural.\nTrap: 「貸して あげたの？」 reverses who lent it; Tanaka lent the umbrella out, so 'Tanaka forgot one' doesn't fit."
+  },
+  "wrong": [
+   {
+    "zh": "「貸して くれた」是田中借给他，「貸して あげた」方向反了。",
+    "en": "「貸して くれた」 means Tanaka lent it to him; 「貸して あげた」 reverses who lent."
+   },
+   {
+    "zh": "伞是田中借出来的，说田中忘了带伞和他的话对不上。",
+    "en": "Tanaka lent the umbrella out; saying Tanaka forgot one doesn't fit."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "repeat-word",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n4-ck-536",
+  "type": "sokuji",
+  "lines": [
+   [
+    "F",
+    "すみません、ここで しゃしんを とっても いいですか。"
+   ]
+  ],
+  "respond": "M",
+  "options": [
+   "もうしわけ ありません。しゃしんは ちょっと……。",
+   "ええ、さっきの しゃしん、きれいに とれましたね。",
+   "はい、ここでは しゃしんを とって いません。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "lines": [
+     "不好意思，这里可以拍照吗？"
+    ],
+    "options": [
+     "非常抱歉，拍照不太方便……",
+     "嗯，刚才的照片拍得很漂亮呢。",
+     "是的，我在这里没有拍照。"
+    ]
+   },
+   "en": {
+    "lines": [
+     "Excuse me, may I take photos here?"
+    ],
+    "options": [
+     "I'm very sorry. Photos are, I'm afraid…",
+     "Yes, that photo came out really nicely.",
+     "Yes, I'm not taking any photos here."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的问：「ここで しゃしんを とっても いいですか。」\n推理：「〜ても いいですか」是请求许可。不允许时，常用「もうしわけ ありません」道歉，再用「ちょっと……」委婉地拒绝。\n容易错：「きれいに とれましたね」是拍完以后的话；「とって いません」把请求许可听成了问他有没有拍。",
+   "en": "Evidence: The woman asks: 「ここで しゃしんを とっても いいですか。」\nReasoning: 「〜ても いいですか」 asks permission. To refuse politely you apologise, 「もうしわけ ありません」, and trail off with 「ちょっと……」.\nTrap: 「きれいに とれましたね」 is said after a photo is taken; 「とって いません」 hears the request as 'did you take any?'."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "「とれましたね」是拍好以后说的，她还没拍，只是在问可不可以拍。",
+    "en": "「とれましたね」 is said after the photo is taken; she's only asking permission."
+   },
+   {
+    "zh": "她问的是能不能拍，不是问他拍没拍。",
+    "en": "She asks whether she may take photos, not whether he took any."
+   }
+  ],
+  "traps": [
+   "intent",
+   "tense"
+  ]
  }
 ]

@@ -1157,5 +1157,294 @@
   "traps": [
    "perspective"
   ]
+ },
+ {
+  "id": "n5-ck-421",
+  "type": "hatsuwa",
+  "scene": "あさ、学校の 前で 先生に 会いました。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A school gate in the morning. A girl student with a school bag bows slightly to a male teacher who is walking in through the gate.",
+   "arrow": "the girl student with the school bag"
+  },
+  "options": [
+   "いってらっしゃい。",
+   "おやすみなさい。",
+   "おはよう ございます。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "早上，在学校门口遇到了老师。",
+    "question": "怎么说？",
+    "options": [
+     "慢走。",
+     "晚安。",
+     "早上好。"
+    ]
+   },
+   "en": {
+    "scene": "In the morning you meet your teacher in front of the school.",
+    "question": "What do you say?",
+    "options": [
+     "Have a good day.",
+     "Good night.",
+     "Good morning."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「あさ、学校の 前で 先生に 会いました」，说话的是背着书包的女学生。\n推理：早上见到人，而且对方是老师，用礼貌的「おはよう ございます」。\n容易错：「いってらっしゃい」是送人出门时说；「おやすみなさい」是睡前说。",
+   "en": "Evidence: The scene: 「あさ、学校の 前で 先生に 会いました」. The speaker is the girl with the school bag.\nReasoning: Meeting someone in the morning — and a teacher — you say the polite 「おはよう ございます」.\nTrap: 「いってらっしゃい」 sees someone off; 「おやすみなさい」 is for bedtime."
+  },
+  "wrong": [
+   {
+    "zh": "「いってらっしゃい」是送别人出门时说的，时机不对。",
+    "en": "「いってらっしゃい」 is for seeing someone off — wrong moment."
+   },
+   {
+    "zh": "「おやすみなさい」是晚上睡觉前说的。",
+    "en": "「おやすみなさい」 is said at night before bed."
+   },
+   null
+  ],
+  "traps": [
+   "timing"
+  ]
+ },
+ {
+  "id": "n5-ck-422",
+  "type": "hatsuwa",
+  "scene": "としょかんで、となりの テーブルの 人が 大きい こえで 話して います。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A library reading room with bookshelves. A man sits at a table with an open book, turning to look at two young people at the next table who are talking loudly and laughing.",
+   "arrow": "the man sitting with the open book"
+  },
+  "options": [
+   "あ、すみません。しずかに します。",
+   "すみません、しずかに して ください。",
+   "ここは とても しずかですね。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在图书馆，旁边桌子的人在大声说话。",
+    "question": "怎么说？",
+    "options": [
+     "啊，对不起。我会安静的。",
+     "不好意思，请安静一点。",
+     "这里很安静啊。"
+    ]
+   },
+   "en": {
+    "scene": "In the library, the people at the next table are talking loudly.",
+    "question": "What do you say?",
+    "options": [
+     "Oh, sorry. I'll be quiet.",
+     "Excuse me, please be quiet.",
+     "It's very quiet here, isn't it?"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「となりの テーブルの 人が 大きい こえで 話して います」，说话的是拿着书的男人。\n推理：别人吵，自己想请对方安静，用请求「〜て ください」：「すみません、しずかに して ください」。\n容易错：「しずかに します」是被提醒的人道歉时说的，立场反了。",
+   "en": "Evidence: The scene: 「となりの テーブルの 人が 大きい こえで 話して います」. The speaker is the man with the book.\nReasoning: Others are noisy and you want them to be quiet, so you ask with 「〜て ください」: 「すみません、しずかに して ください」.\nTrap: 「しずかに します」 is what the noisy people say when told — the wrong side."
+  },
+  "wrong": [
+   {
+    "zh": "「しずかに します」是吵闹的人被提醒后说的话，立场反了。",
+    "en": "「しずかに します」 is what the noisy people would say — the wrong side."
+   },
+   null,
+   {
+    "zh": "旁边正在吵，说「很安静」和情况不符。",
+    "en": "The next table is loud, so calling it quiet doesn't fit."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "n5-ck-423",
+  "type": "hatsuwa",
+  "scene": "バスに のって、駅へ 行きたいです。バスが 来ました。バスの 人に 聞きます。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "A bus stop. A bus has stopped with its front door open. A woman stands at the door, looking up at the male driver sitting inside at the wheel.",
+   "arrow": "the woman standing at the bus door"
+  },
+  "options": [
+   "この バス、駅へ 行きますか。",
+   "はい、駅へ 行きますよ。",
+   "いっしょに 駅へ 行きましょう。"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "想坐公交车去车站。公交车来了。问司机。",
+    "question": "怎么说？",
+    "options": [
+     "这辆车去车站吗？",
+     "对，去车站。",
+     "一起去车站吧。"
+    ]
+   },
+   "en": {
+    "scene": "You want to take a bus to the station. A bus has come. You ask the driver.",
+    "question": "What do you say?",
+    "options": [
+     "Does this bus go to the station?",
+     "Yes, it goes to the station.",
+     "Let's go to the station together."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「駅へ 行きたいです」「バスの 人に 聞きます」，说话的是站在车门口的女人。\n推理：不知道这辆车去不去车站，要问，用疑问句「この バス、駅へ 行きますか」。\n容易错：「はい、駅へ 行きますよ」是司机回答时说的；「行きましょう」是邀请，不是问。",
+   "en": "Evidence: The scene: 「駅へ 行きたいです」「バスの 人に 聞きます」. The speaker is the woman at the bus door.\nReasoning: She doesn't know if the bus goes there, so she asks: 「この バス、駅へ 行きますか」.\nTrap: 「はい、駅へ 行きますよ」 is the driver's answer; 「行きましょう」 is an invitation, not a question."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "这是司机回答时说的话，立场反了。",
+    "en": "That's the driver's answer — the wrong side."
+   },
+   {
+    "zh": "「行きましょう」是邀请对方一起去，不是问路。",
+    "en": "「行きましょう」 invites him along; it doesn't ask anything."
+   }
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n5-ck-424",
+  "type": "hatsuwa",
+  "scene": "友だちと 出かけます。友だちは もう 外に います。でも、あなたは まだ くつを はいて いません。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "M",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "The entrance of a house. A young man sits on the step inside the open front door, hurriedly putting on one shoe. Another young man stands outside the door, waiting.",
+   "arrow": "the young man putting on his shoe"
+  },
+  "options": [
+   "はやく 行きましょう。",
+   "どうぞ、ゆっくり して ください。",
+   "ちょっと まって ください。"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "要和朋友出门。朋友已经在外面了。可是你还没穿好鞋。",
+    "question": "怎么说？",
+    "options": [
+     "快走吧。",
+     "请慢慢来。",
+     "请等一下。"
+    ]
+   },
+   "en": {
+    "scene": "You're going out with a friend. Your friend is already outside, but you haven't put your shoes on yet.",
+    "question": "What do you say?",
+    "options": [
+     "Let's hurry and go.",
+     "Please take your time.",
+     "Please wait a moment."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「友だちは もう 外に います」「まだ くつを はいて いません」，说话的是正在穿鞋的男人。\n推理：自己还没准备好，要请朋友等一下：「ちょっと まって ください」。\n容易错：「ゆっくり して ください」是等人的朋友会说的；「はやく 行きましょう」是催别人。",
+   "en": "Evidence: The scene: 「友だちは もう 外に います」「まだ くつを はいて いません」. The speaker is the man putting on his shoe.\nReasoning: He isn't ready, so he asks his friend to wait: 「ちょっと まって ください」.\nTrap: 「ゆっくり して ください」 is what the waiting friend would say; 「はやく 行きましょう」 hurries someone else."
+  },
+  "wrong": [
+   {
+    "zh": "自己还没穿好鞋，催别人快走不合适。",
+    "en": "He isn't ready himself, so hurrying the other person makes no sense."
+   },
+   {
+    "zh": "「ゆっくり して ください」是在外面等的朋友说的，立场反了。",
+    "en": "「ゆっくり して ください」 is what the friend outside would say — the wrong side."
+   },
+   null
+  ],
+  "traps": [
+   "perspective",
+   "intent"
+  ]
+ },
+ {
+  "id": "n5-ck-425",
+  "type": "hatsuwa",
+  "scene": "友だちと 本を 読んで います。わからない かんじが あります。友だちに 聞きます。",
+  "question": "何と 言いますか。",
+  "lines": [],
+  "respond": "F",
+  "spokenOptions": true,
+  "picture": {
+   "desc": "Two young women sit side by side at a table with one open book between them. The pages show only wavy lines, no real letters. One woman points at a spot on the page and looks at her friend with a puzzled face.",
+   "arrow": "the woman pointing at the book"
+  },
+  "options": [
+   "この かんじ、書きましょうか。",
+   "この かんじは 何と 読みますか。",
+   "この かんじは やさしいですよ。"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "和朋友在看书。有一个汉字不认识。问朋友。",
+    "question": "怎么说？",
+    "options": [
+     "这个汉字，我来写吧？",
+     "这个汉字怎么读？",
+     "这个汉字很简单哦。"
+    ]
+   },
+   "en": {
+    "scene": "You're reading a book with a friend. There's a kanji you don't know. You ask your friend.",
+    "question": "What do you say?",
+    "options": [
+     "Shall I write this kanji?",
+     "How do you read this kanji?",
+     "This kanji is easy."
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：场景是「わからない かんじが あります」「友だちに 聞きます」，说话的是指着书的女人。\n推理：不知道汉字的读法，要问怎么读：「この かんじは 何と 読みますか」。\n容易错：「書きましょうか」是主动帮别人；「やさしいですよ」是会读的人才说的话。",
+   "en": "Evidence: The scene: 「わからない かんじが あります」「友だちに 聞きます」. The speaker is the woman pointing at the book.\nReasoning: She doesn't know the reading, so she asks how to read it: 「この かんじは 何と 読みますか」.\nTrap: 「書きましょうか」 offers help; 「やさしいですよ」 is what someone who can read it would say."
+  },
+  "wrong": [
+   {
+    "zh": "「書きましょうか」是主动提出帮对方写，不是提问。",
+    "en": "「書きましょうか」 offers to write it — it isn't a question."
+   },
+   null,
+   {
+    "zh": "自己不认识这个字，却说它简单，立场反了。",
+    "en": "She doesn't know the kanji, so calling it easy is the other person's line."
+   }
+  ],
+  "traps": [
+   "intent",
+   "perspective"
+  ]
  }
 ]
