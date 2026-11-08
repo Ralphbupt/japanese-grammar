@@ -343,5 +343,939 @@
    }
   },
   "traps": ["done-already", "condition-conflict", "someone-else"]
+ },
+ {
+  "id": "n2-ck-609",
+  "type": "tougou",
+  "scene": "会社で、課長の男の人と女の人、若い男の人の三人が、秋の社内運動会について話しています。",
+  "lines": [
+   [
+    "M1",
+    "今年の運動会、どうしようか。去年は参加者がずいぶん減っただろう。いっそやめちゃおうかって話も出てるんだけど。"
+   ],
+   [
+    "F",
+    "やめるのは、ちょっともったいない気がします。部署が違うと普段話す機会がないですし、ああいう場で顔見知りになっておくと、仕事も頼みやすくなるんですよ。"
+   ],
+   [
+    "M1",
+    "それはそうなんだけど、丸一日、しかも土曜日だからね。休みがつぶれるって、不満の声も多くてさ。"
+   ],
+   [
+    "M2",
+    "あの、平日にやるわけにはいかないんですか。仕事の一つとして。"
+   ],
+   [
+    "M1",
+    "平日に全員が一日抜けるのは、さすがに無理だよ。お客さんからの電話もあるし。"
+   ],
+   [
+    "M2",
+    "じゃあ、運動会じゃなくて、ボウリング大会とか、もっと短く済むものにするのはどうですか。"
+   ],
+   [
+    "F",
+    "うーん、ボウリングだと、一つのレーンに四、五人でしょう。結局、同じ部署の人同士で固まっちゃうと思うんです。運動会は、部署をばらばらにしてチームを作るのがよかったんですよ。"
+   ],
+   [
+    "M1",
+    "なるほどね。……じゃあ、種目もチーム分けも今までどおりにして、時間のほうを削ろう。平日の午後だけなら、交代で電話番を置けば何とかなるだろう。"
+   ],
+   [
+    "F",
+    "それなら、参加する人も増えると思います。"
+   ]
+  ],
+  "question": "社内運動会について、どうすることにしましたか。",
+  "spokenOptions": true,
+  "options": [
+   "参加者が少ないので、今年からやめる",
+   "部署を混ぜたチームで、勤務時間内に行う",
+   "時間の短いボウリング大会に変える",
+   "平日に丸一日かけて行う"
+  ],
+  "answer": 1,
+  "tr": {
+   "zh": {
+    "scene": "在公司，男科长、一位女职员和一位年轻男职员三人在谈秋季公司运动会的事。",
+    "question": "公司运动会决定怎么办？",
+    "lines": [
+     "今年的运动会怎么办？去年参加的人少了很多吧。还有人说干脆取消算了。",
+     "取消的话，我觉得有点可惜。部门不同，平时没机会说话，在那种场合混个脸熟，工作上也更好拜托人。",
+     "话是这么说，可一整天，而且是星期六。好多人抱怨休息日泡汤了。",
+     "那个，不能在工作日办吗？当作工作的一部分。",
+     "工作日全员离开一整天，那肯定不行。还有客户打来的电话呢。",
+     "那不办运动会，改成保龄球大赛之类，时间短一点的怎么样？",
+     "嗯……保龄球的话，一条球道四五个人吧。我觉得最后还是同部门的人凑在一起。运动会好就好在把部门打散组队。",
+     "有道理。……那项目和分组都照旧，把时间砍掉一部分。只在工作日下午的话，轮流留人接电话，应该能应付。",
+     "那样的话，参加的人应该也会多起来。"
+    ],
+    "options": [
+     "参加的人少，从今年起取消",
+     "用打散部门的队伍，在上班时间内举办",
+     "改成时间短的保龄球大赛",
+     "在工作日花一整天举办"
+    ]
+   },
+   "en": {
+    "scene": "At a company, a male section chief, a woman and a young man are talking about the autumn company sports day.",
+    "question": "What did they decide to do about the company sports day?",
+    "lines": [
+     "What shall we do about this year's sports day? Turnout dropped a lot last year, right? Some people are even saying we should just drop it.",
+     "Dropping it seems a bit of a waste. People in different departments normally have no chance to talk, and once you know each other's faces from an event like that, it's easier to ask for help at work.",
+     "That's true, but it's a whole day, and a Saturday at that. Lots of people complain it eats into their day off.",
+     "Um, couldn't we hold it on a weekday? As part of work.",
+     "Everyone leaving for a whole weekday is out of the question. There are calls from customers too.",
+     "Then instead of a sports day, how about something shorter, like a bowling tournament?",
+     "Hmm, with bowling it's four or five to a lane, right? I think people from the same department would end up sticking together. The good thing about the sports day was making teams that mix departments.",
+     "I see. …Then let's keep the events and teams as they are and cut the time instead. If it's just a weekday afternoon, we can manage by having people take turns covering the phones.",
+     "Then I think more people will take part."
+    ],
+    "options": [
+     "Turnout is low, so they'll stop holding it from this year",
+     "Hold it during working hours with teams that mix departments",
+     "Change it to a shorter bowling tournament",
+     "Hold it over a whole weekday"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：课长最后说：「種目もチーム分けも今までどおりにして、時間のほうを削ろう。平日の午後だけなら……何とかなるだろう。」\n推理：取消被女的否定（混部门的交流很宝贵）；保龄球被女的否定（会按部门扎堆）。课长采纳了两个人的观点：保留打散部门组队的形式（女的），放到工作日（年轻人的想法），但只用下午。工作日下午就是上班时间内。\n容易错：工作日“一整天”被课长否定，最后是半天；保龄球是被否定的提议。",
+   "en": "Evidence: The chief ends: 「種目もチーム分けも今までどおりにして、時間のほうを削ろう。平日の午後だけなら……何とかなるだろう。」\nReasoning: The woman rejects dropping it (mixing departments is valuable) and rejects bowling (people would cluster by department). The chief combines both: keep the mixed teams (her point) and move it to a weekday (the young man's idea) but only the afternoon — i.e. during working hours.\nTrap: a whole weekday was ruled out; bowling was rejected."
+  },
+  "wrong": [
+   {
+    "zh": "取消是开头提到的想法，女的反对后，最后决定继续办。",
+    "en": "Dropping it was raised at the start; after the woman objects, they decide to keep it."
+   },
+   null,
+   {
+    "zh": "女的指出保龄球会让同部门的人扎堆，这个提议被否定了。",
+    "en": "The woman points out bowling would let departments cluster, so it's rejected."
+   },
+   {
+    "zh": "课长说工作日全员离开一整天「さすがに無理」，最后只用下午。",
+    "en": "The chief says a whole weekday is 「さすがに無理」; they use only the afternoon."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "not-possible",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n2-ck-610",
+  "type": "tougou",
+  "scene": "大学で、軽音楽サークルの男の学生二人と女の学生が、練習場所について話しています。",
+  "lines": [
+   [
+    "M1",
+    "部室のある建物、来年の春から工事で使えなくなるんだって。練習場所、探さなきゃ。"
+   ],
+   [
+    "F",
+    "駅前の貸しスタジオは？　音もいいし、機材も全部そろってるよ。"
+   ],
+   [
+    "M1",
+    "いいけど、一時間三千円だよ。週二回も借りたら、部費じゃとても足りないって。"
+   ],
+   [
+    "M2",
+    "うちの実家の倉庫、使えるかもしれない。広いし、ただだよ。"
+   ],
+   [
+    "F",
+    "でも、あそこ、住宅街の真ん中でしょ？　ドラムの音なんか、周りに丸聞こえだよ。苦情が来たら、それこそ続けられなくなっちゃう。"
+   ],
+   [
+    "M2",
+    "そうか……。"
+   ],
+   [
+    "M1",
+    "じゃあ、市の公民館は？　音楽室があって、防音もしっかりしてるらしいよ。ただ、空いてるのが平日の夜だけなんだけど。"
+   ],
+   [
+    "M2",
+    "公民館なら、一回五百円ぐらいだろ？"
+   ],
+   [
+    "F",
+    "安いのはいいけど、平日の夜だけじゃねえ。私、バイトの日もあるし……。"
+   ],
+   [
+    "M2",
+    "あ、そういえば、あそこ、毎年秋に地域の音楽祭をやってるじゃん。音楽室を使ってる団体は、ステージに出られるらしいよ。"
+   ],
+   [
+    "F",
+    "え、そうなの？　人前で演奏できる機会なんて、なかなかないもんね。それなら、バイトの日をずらしてでも行きたいな。"
+   ],
+   [
+    "M1",
+    "よし、決まりだね。"
+   ]
+  ],
+  "question": "女の学生が、公民館で練習することに賛成したのはどうしてですか。",
+  "spokenOptions": true,
+  "options": [
+   "防音がしっかりしていて、苦情の心配がないから",
+   "料金が安くて、部費で払えるから",
+   "アルバイトの日を変えなくていいから",
+   "練習の成果を発表する場に出られるから"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "在大学，轻音乐社团的两个男生和一个女生在谈练习场地的事。",
+    "question": "女生为什么赞成在公民馆练习？",
+    "lines": [
+     "听说社团活动室那栋楼明年春天开始施工，不能用了。得找练习的地方了。",
+     "车站前的出租录音室呢？音效好，器材也都齐全。",
+     "好是好，可一小时三千日元。一周借两次的话，社费根本不够。",
+     "我老家的仓库也许能用。又大又不要钱。",
+     "可是，那里在住宅区正中间吧？鼓声什么的，周围全听得见。要是有人投诉，那就真练不下去了。",
+     "也是……。",
+     "那市里的公民馆呢？有音乐室，听说隔音也做得很好。只是空着的只有工作日晚上。",
+     "公民馆的话，一次五百日元左右吧？",
+     "便宜是好，可只有工作日晚上的话……我有时还要打工……。",
+     "啊，对了，那里每年秋天都办社区音乐节吧。听说用音乐室的团体可以上台。",
+     "咦，真的吗？能在别人面前演奏的机会可不多啊。那样的话，就算调开打工的日子我也想去。",
+     "好，就这么定了。"
+    ],
+    "options": [
+     "隔音好，不用担心被投诉",
+     "费用便宜，社费付得起",
+     "不用改打工的日子",
+     "能参加发表练习成果的舞台"
+    ]
+   },
+   "en": {
+    "scene": "At university, two male students and a female student from the pop music club are talking about where to practise.",
+    "question": "Why did the female student agree to practising at the community centre?",
+    "lines": [
+     "Apparently the building with our club room will be closed for construction from next spring. We need to find somewhere to practise.",
+     "What about the rental studio by the station? The sound's good and all the equipment is there.",
+     "Sure, but it's 3,000 yen an hour. If we hire it twice a week, club funds won't come close to covering it.",
+     "We might be able to use the storehouse at my parents' place. It's big, and it's free.",
+     "But that's right in the middle of a residential area, isn't it? The neighbours would hear every bit of the drums. If we got complaints, we really couldn't carry on.",
+     "True…",
+     "Then what about the city community centre? It has a music room, and apparently the soundproofing's good. The only thing is, it's only free on weekday evenings.",
+     "The community centre would be about 500 yen a session, right?",
+     "Cheap is nice, but only weekday evenings… I have part-time work some days…",
+     "Oh, that reminds me — they hold a local music festival there every autumn, don't they? Apparently groups that use the music room can go on stage.",
+     "Really? You don't often get the chance to play in front of people. In that case I'd want to go even if I have to move my shifts.",
+     "Right, that's settled."
+    ],
+    "options": [
+     "The soundproofing is good, so there's no worry about complaints",
+     "It's cheap enough for club funds",
+     "She doesn't have to change her part-time days",
+     "They can perform at a stage to show what they've practised"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：女的听到音乐节后说：「人前で演奏できる機会なんて、なかなかないもんね。それなら、バイトの日をずらしてでも行きたいな。」\n推理：隔音好、便宜她都已经听到了，但仍犹豫：「安いのはいいけど、平日の夜だけじゃねえ」。直到听说用音乐室的团体能上音乐节的舞台，她才同意。让她改变主意的是演出机会。\n容易错：便宜、隔音是公民馆的优点，但不是她赞成的原因；她要调开打工，不是不用改。",
+   "en": "Evidence: After hearing about the festival she says: 「人前で演奏できる機会なんて、なかなかないもんね。それなら、バイトの日をずらしてでも行きたいな。」\nReasoning: She had already heard about the soundproofing and the low price and still hesitated: 「安いのはいいけど、平日の夜だけじゃねえ」. Only the chance to play on the festival stage changes her mind.\nTrap: cheapness and soundproofing are real advantages but not what won her over; she will move her shifts, not keep them."
+  },
+  "wrong": [
+   {
+    "zh": "隔音好是男生1先说的，她听了之后仍然犹豫，可见不是她赞成的原因。",
+    "en": "M1 mentions soundproofing first, and she still hesitates afterwards, so it isn't what persuaded her."
+   },
+   {
+    "zh": "她说「安いのはいいけど」，接着仍在犹豫，便宜没有打动她。",
+    "en": "She says 「安いのはいいけど」 and still hesitates; the price doesn't win her over."
+   },
+   {
+    "zh": "正相反，她说「バイトの日をずらしてでも」要去。",
+    "en": "The opposite: she'll go 「バイトの日をずらしてでも」."
+   },
+   null
+  ],
+  "traps": [
+   "half-right",
+   "mentioned-not-asked",
+   "denied-guess"
+  ]
+ },
+ {
+  "id": "n2-ck-611",
+  "type": "tougou",
+  "scene": "家で、母親と父親と息子が、庭の柿の木をどうするか話しています。",
+  "lines": [
+   [
+    "M1",
+    "庭の柿の木、また隣の家のほうまで枝が伸びちゃってるな。葉っぱが落ちてくるって、お隣さんにも言われたし。いっそ、根元から切っちゃおうか。"
+   ],
+   [
+    "F",
+    "えっ、あれ、この家を建てたときに植えたのよ。毎年、実がなるのを楽しみにしてるのに。"
+   ],
+   [
+    "M2",
+    "じゃあ、伸びた枝だけ切ればいいじゃん。俺、手伝うよ。"
+   ],
+   [
+    "M1",
+    "あの高さだぞ。はしごに上っての作業は、慣れてないと危ないよ。毎年、植木屋さんに頼むしかないかな。"
+   ],
+   [
+    "F",
+    "植木屋さんって、一回三万円ぐらいかかるんでしょう？　毎年となると、けっこうな額よ。"
+   ],
+   [
+    "M1",
+    "うーん、そうなると、やっぱり切っちゃったほうが……。"
+   ],
+   [
+    "F",
+    "そういえば、お隣の佐藤さん、長い柄のついたはさみで、下から枝を切ってたわよ。あれなら、はしごはいらないんじゃない？"
+   ],
+   [
+    "M2",
+    "じゃあ、佐藤さんに頼んで、うちのも切ってもらえば？"
+   ],
+   [
+    "F",
+    "それはだめよ。迷惑かけてるのはこっちなのに、頼めないわよ。"
+   ],
+   [
+    "M2",
+    "ああ、じゃあ同じのを買って、俺がやるよ。下からなら危なくないし。"
+   ],
+   [
+    "M1",
+    "そうか。じゃあ、今度の休みにホームセンターで見てくるか。"
+   ]
+  ],
+  "question": "庭の柿の木をどうすることにしましたか。",
+  "spokenOptions": true,
+  "options": [
+   "地上から届く道具を使って、家族で枝を切る",
+   "毎年、植木屋に頼んで枝を切ってもらう",
+   "隣の人に頼んで、枝を切ってもらう",
+   "隣に迷惑なので、木を根元から切る"
+  ],
+  "answer": 0,
+  "tr": {
+   "zh": {
+    "scene": "在家里，母亲、父亲和儿子在谈院子里的柿子树怎么处理。",
+    "question": "院子里的柿子树决定怎么办？",
+    "lines": [
+     "院子里的柿子树，树枝又伸到邻居家那边了。邻居也说叶子掉过去了。干脆从根上砍掉吧？",
+     "啊？那是盖这房子的时候种的呀。我每年都盼着它结果呢。",
+     "那只把伸出去的树枝剪掉不就行了。我来帮忙。",
+     "那么高哦。爬梯子干活，不熟练的话很危险。看来只能每年请园艺师傅了。",
+     "园艺师傅一次要三万日元左右吧？每年都请的话，可是一笔不小的钱。",
+     "嗯……那样的话，还是砍掉比较……。",
+     "说起来，隔壁的佐藤先生用一把长柄剪刀，从下面剪树枝来着。用那个的话，就不用梯子了吧？",
+     "那请佐藤先生把我们家的也剪了呢？",
+     "那可不行。给人家添麻烦的是我们，怎么好意思请他。",
+     "啊，那买一把一样的，我来剪。从下面剪就不危险了。",
+     "是吗。那下次休息日去家居建材店看看吧。"
+    ],
+    "options": [
+     "用从地面就够得着的工具，家里人自己剪树枝",
+     "每年请园艺师傅来剪树枝",
+     "请邻居帮忙剪树枝",
+     "给邻居添麻烦，所以把树从根上砍掉"
+    ]
+   },
+   "en": {
+    "scene": "At home, a mother, father and son are talking about what to do with the persimmon tree in the garden.",
+    "question": "What did they decide to do with the persimmon tree?",
+    "lines": [
+     "The persimmon tree's branches are reaching over to next door again. The neighbours told us the leaves are falling on their side too. Shall we just cut it down at the base?",
+     "What? We planted that when we built this house. I look forward to the fruit every year.",
+     "Then why not just cut the branches that have grown out? I'll help.",
+     "At that height? Working up a ladder is dangerous if you're not used to it. I suppose we'll have to ask a gardener every year.",
+     "A gardener costs about 30,000 yen a time, doesn't he? Every year, that adds up to quite a lot.",
+     "Hmm, in that case cutting it down would be better after all…",
+     "Come to think of it, Mr Sato next door was cutting branches from the ground with long-handled shears. With those we wouldn't need a ladder, would we?",
+     "Then why don't we ask Mr Sato to cut ours too?",
+     "We can't do that. We're the ones causing them trouble — we can't ask him.",
+     "Oh, then let's buy the same kind and I'll do it. It's not dangerous from the ground.",
+     "I see. Then I'll go and have a look at the home centre on my next day off."
+    ],
+    "options": [
+     "The family will cut the branches with a tool that reaches from the ground",
+     "Have a gardener cut the branches every year",
+     "Ask the neighbour to cut the branches",
+     "Cut the tree down at the base because it bothers the neighbours"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：母亲说：「長い柄のついたはさみで、下から枝を切ってたわよ。あれなら、はしごはいらないんじゃない？」儿子说：「じゃあ同じのを買って、俺がやるよ。」父亲说：「ホームセンターで見てくるか。」\n推理：儿子最早提出自己剪树枝，但因为爬梯子危险被父亲否定；请园艺师傅每年太贵；砍树母亲不同意。长柄剪刀解决了“危险”这个问题，于是回到儿子最初的方案：自己从下面剪。\n容易错：儿子提议请佐藤帮忙剪，被母亲以「迷惑かけてるのはこっちなのに」否定了；最后一句只说去店里看，要从前面的对话推出是买剪刀自己剪。",
+   "en": "Evidence: The mother says: 「長い柄のついたはさみで、下から枝を切ってたわよ。あれなら、はしごはいらないんじゃない？」 The son: 「じゃあ同じのを買って、俺がやるよ。」 The father: 「ホームセンターで見てくるか。」\nReasoning: The son first offered to cut the branches himself, but the father ruled it out as dangerous on a ladder; a gardener every year is too expensive; the mother won't cut the tree down. Long-handled shears remove the danger, so they return to the son's first idea: cut from the ground themselves.\nTrap: the son suggests asking Mr Sato, but the mother rules it out — 「迷惑かけてるのはこっちなのに」; the last line only mentions the shop, so the plan has to be inferred."
+  },
+  "wrong": [
+   null,
+   {
+    "zh": "母亲嫌每年三万日元太贵，这个方案被否定了。",
+    "en": "The mother finds 30,000 yen a year too much, so this is dropped."
+   },
+   {
+    "zh": "儿子提议请佐藤剪，但母亲说给人家添麻烦的是自己家，不能请；剪的是儿子。",
+    "en": "The son suggests asking Mr Sato, but the mother says they're the ones causing trouble and can't ask; the son will cut."
+   },
+   {
+    "zh": "父亲两次想砍树，但母亲反对，最后决定保留。",
+    "en": "The father twice suggests cutting it down, but the mother objects and they keep it."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "someone-else",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n2-ck-612",
+  "type": "tougou",
+  "scene": "旅館で、おかみと男の従業員、アルバイトの女の人が、外国から来たお客さんへの案内について話しています。",
+  "lines": [
+   [
+    "F1",
+    "最近、外国からのお客様が本当に増えたわね。お風呂の入り方とか、朝ごはんの時間とか、うまく伝わってないことがよくあるのよ。"
+   ],
+   [
+    "M",
+    "英語の案内を作りましょうか。部屋に置いておけば、読んでもらえますし。"
+   ],
+   [
+    "F1",
+    "でも、英語が読める方ばかりじゃないのよ。先週は台湾とタイのお客様だったし、何か国語も作るのは大変よ。"
+   ],
+   [
+    "F2",
+    "あの、私が留学していたとき、泊まった宿に、絵だけで説明したカードがあって、すごく分かりやすかったんです。お風呂なら、体を洗ってから湯船に入る絵、とか。"
+   ],
+   [
+    "F1",
+    "それはいいわね。でも、絵なんて誰が描くの？　業者に頼んだら、けっこうかかるでしょう。"
+   ],
+   [
+    "M",
+    "それなら、翻訳の機械はどうですか。話しかけるだけで、いろんな言葉に訳してくれるそうですよ。"
+   ],
+   [
+    "F1",
+    "便利そうだけど、一台十万円近くするんでしょう？　それに、私たちが使いこなせるかしら。忙しい時間に、機械の操作で手間取りたくないのよね。"
+   ],
+   [
+    "F2",
+    "あの、絵でよければ、私、描けますよ。昔から得意なんです。時間も、時計の絵と数字なら、どこの国の人でも分かりますし。"
+   ],
+   [
+    "F1",
+    "あら、そうなの。じゃあ、まずお風呂と朝ごはんの分から、お願いしようかしら。"
+   ]
+  ],
+  "question": "外国から来たお客さんのために、何をすることにしましたか。",
+  "spokenOptions": true,
+  "options": [
+   "英語で書いた案内を部屋に置く",
+   "いろいろな言葉に訳す機械を買う",
+   "文字を使わず、絵で示すカードを作る",
+   "業者に頼んで、外国語の案内を作る"
+  ],
+  "answer": 2,
+  "tr": {
+   "zh": {
+    "scene": "在旅馆，老板娘、一位男员工和一位打工的女生在谈给外国客人的说明。",
+    "question": "为了外国客人，决定做什么？",
+    "lines": [
+     "最近外国客人真是多了啊。泡澡的方法、早饭的时间这些，经常传达不清楚。",
+     "做份英文说明吧？放在房间里，客人就会看了。",
+     "可是不是每位客人都看得懂英文啊。上周来的是台湾和泰国的客人，做好几种语言可就累了。",
+     "那个，我留学的时候，住的旅馆里有只用图画说明的卡片，特别好懂。比如泡澡，就画先洗身体再进浴池。",
+     "这个好。可是图谁来画呀？请专业公司的话，要花不少钱吧。",
+     "那用翻译机怎么样？听说只要对着它说话，就能翻成各种语言。",
+     "听着方便，可一台要将近十万日元吧？而且我们用得好吗？忙的时候，我可不想在操作机器上耽误工夫。",
+     "那个，如果是图的话，我可以画。我从小就擅长。时间的话，画个钟加上数字，哪个国家的人都看得懂。",
+     "哎呀，是吗。那先从泡澡和早饭的部分开始，拜托你吧。"
+    ],
+    "options": [
+     "把英文写的说明放在房间里",
+     "买能翻成各种语言的机器",
+     "做不用文字、用图画表示的卡片",
+     "请专业公司做外语说明"
+    ]
+   },
+   "en": {
+    "scene": "At a Japanese inn, the proprietress, a male employee and a female part-timer are talking about information for guests from abroad.",
+    "question": "What did they decide to do for guests from abroad?",
+    "lines": [
+     "We really have a lot more guests from abroad lately. Things like how to use the bath or what time breakfast is often don't get across.",
+     "Shall I make an English guide? If we leave it in the rooms, they'll read it.",
+     "But not everyone can read English. Last week our guests were from Taiwan and Thailand, and making it in several languages would be a lot of work.",
+     "Um, when I was studying abroad, the inn I stayed at had cards that explained things with pictures only, and they were really clear. For the bath, say, a picture of washing yourself before getting into the tub.",
+     "That's nice. But who would draw the pictures? Asking a company would cost quite a bit.",
+     "Then how about a translation device? Apparently you just speak to it and it translates into all sorts of languages.",
+     "Sounds handy, but they're nearly 100,000 yen each, aren't they? And could we really master it? I don't want to fumble with a machine when we're busy.",
+     "Um, if pictures are OK, I can draw them. I've always been good at it. And for times, a clock picture with numbers is something people from any country understand.",
+     "Oh, really? Then I'll ask you to start with the bath and breakfast ones."
+    ],
+    "options": [
+     "Put a guide written in English in the rooms",
+     "Buy a device that translates into various languages",
+     "Make cards that explain with pictures instead of words",
+     "Have a company make guides in foreign languages"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：打工的女生说：「絵でよければ、私、描けますよ。」老板娘说：「まずお風呂と朝ごはんの分から、お願いしようかしら。」\n推理：英文说明因客人来自多国被否定；图画卡片老板娘一开始就说好，只担心没人画、请公司太贵；翻译机太贵、不会用。后来女生说自己能画，阻碍消失，于是采用了中途提出的图画卡片。\n容易错：图画卡片的方案在中途一度搁置，不是最后一个提议；“请公司”是老板娘担心的花费，并没有采用。",
+   "en": "Evidence: The part-timer says: 「絵でよければ、私、描けますよ。」 The proprietress: 「まずお風呂と朝ごはんの分から、お願いしようかしら。」\nReasoning: The English guide is dropped because guests come from many countries; the picture cards appealed at once, the only worry being who would draw them (a company is costly); the translation device is too expensive and hard to use. When the part-timer offers to draw, the obstacle goes and they adopt the picture cards proposed midway.\nTrap: the picture-card idea was set aside for a while, not the last proposal; using a company was only the cost worry, never adopted."
+  },
+  "wrong": [
+   {
+    "zh": "老板娘说「英語が読める方ばかりじゃない」，英文说明被否定了。",
+    "en": "The proprietress says 「英語が読める方ばかりじゃない」, so the English guide is dropped."
+   },
+   {
+    "zh": "翻译机太贵，老板娘也担心忙的时候不会操作，没有采用。",
+    "en": "The device is too expensive and she fears fumbling with it when busy; not adopted."
+   },
+   null,
+   {
+    "zh": "请公司只是老板娘担心的花费，最后由打工的女生自己画。",
+    "en": "Hiring a company was only her cost worry; the part-timer will draw them herself."
+   }
+  ],
+  "traps": [
+   "half-right",
+   "someone-else",
+   "not-possible"
+  ]
+ },
+ {
+  "id": "n2-ck-613",
+  "type": "tougou",
+  "scene": "マンションの管理組合で、理事長の女の人と、住人の男の人、女の人が、中庭の古い滑り台について話しています。",
+  "lines": [
+   [
+    "F1",
+    "中庭の滑り台、さびがひどくなってきたのよ。このままだと危ないから、どうにかしないと。"
+   ],
+   [
+    "M",
+    "新しいのに取り替えたらどうですか。小さい子どものいる家も、まだけっこうありますし。"
+   ],
+   [
+    "F1",
+    "それがね、見積もりを取ったら、百万円以上かかるのよ。修繕のための積立金は、来年の外壁の工事に使う予定だから、今はそこまで出せないわ。"
+   ],
+   [
+    "F2",
+    "じゃあ、さびを落として、ペンキを塗り直すだけならどうですか。それなら安く済みますよね。"
+   ],
+   [
+    "M",
+    "塗り直しても、中の鉄が弱ってたら意味がないですよ。業者の人も、あと何年もつか分からないって言ってましたし。"
+   ],
+   [
+    "F2",
+    "そっか……。じゃあ、思い切って取ってしまって、そこにベンチを置くのは？　お年寄りも増えてきたし、座っておしゃべりできる場所があったら喜ばれると思います。"
+   ],
+   [
+    "M",
+    "うーん、でも、子どもたちの遊ぶ場所がなくなるのは、かわいそうですよ。"
+   ],
+   [
+    "F1",
+    "そうねえ……。じゃあ、外壁の工事が終わるまでは、滑り台にはロープを張って、使えないようにしておきましょう。そのあとで、新しいのを入れるかどうか、また皆さんで話し合うということで。"
+   ],
+   [
+    "M",
+    "それなら、急いで決めなくて済みますね。"
+   ]
+  ],
+  "question": "滑り台をどうすることにしましたか。",
+  "spokenOptions": true,
+  "options": [
+   "積立金を使って、新しい滑り台に替える",
+   "さびを落として、ペンキを塗り直す",
+   "滑り台を取って、ベンチを置く",
+   "当分は使えなくして、結論は先に延ばす"
+  ],
+  "answer": 3,
+  "tr": {
+   "zh": {
+    "scene": "在公寓管理委员会，女理事长和一位男住户、一位女住户在谈中庭旧滑梯的事。",
+    "question": "滑梯决定怎么办？",
+    "lines": [
+     "中庭的滑梯锈得越来越厉害了。再这样下去很危险，得想想办法。",
+     "换个新的怎么样？家里有小孩的还有不少呢。",
+     "问题是，报价下来要一百多万日元。维修用的公积金打算用在明年外墙的工程上，现在拿不出那么多。",
+     "那只把锈除掉，重新刷漆呢？那样就便宜了吧。",
+     "就算重新刷漆，里面的铁要是不结实了也没用啊。施工的人也说不知道还能撑几年。",
+     "这样啊……。那干脆拆掉，在那儿放张长椅呢？老人也越来越多了，有个能坐着聊天的地方，大家应该会高兴。",
+     "嗯……可是孩子们玩的地方没了，太可怜了。",
+     "是啊……。那在外墙工程结束之前，先在滑梯上拉根绳子，让大家不能用。之后要不要换新的，再请大家一起商量。",
+     "那样的话，就不用急着决定了。"
+    ],
+    "options": [
+     "用公积金换成新滑梯",
+     "除锈后重新刷漆",
+     "拆掉滑梯，放长椅",
+     "暂时停止使用，结论往后推"
+    ]
+   },
+   "en": {
+    "scene": "At an apartment residents' association, the female chair, a male resident and a female resident are talking about the old slide in the courtyard.",
+    "question": "What did they decide to do about the slide?",
+    "lines": [
+     "The slide in the courtyard is getting badly rusted. It's dangerous as it is, so we need to do something.",
+     "Why not replace it with a new one? There are still quite a few households with small children.",
+     "The thing is, the estimate came to over a million yen. The repair reserve fund is earmarked for next year's exterior wall work, so we can't spend that much now.",
+     "Then what about just removing the rust and repainting it? That would be cheap, wouldn't it?",
+     "Even if we repaint it, it's pointless if the steel inside is weak. The contractor said he couldn't tell how many more years it would last.",
+     "I see… Then how about taking it away altogether and putting a bench there? There are more elderly residents now, and I think a place to sit and chat would be welcome.",
+     "Hmm, but it would be a shame for the children to lose their place to play.",
+     "Well… Then until the wall work is finished, let's rope off the slide so it can't be used. After that, we'll all discuss again whether to put in a new one.",
+     "Then we don't have to decide in a hurry."
+    ],
+    "options": [
+     "Use the reserve fund to replace it with a new slide",
+     "Remove the rust and repaint it",
+     "Take the slide away and put a bench there",
+     "Stop its use for now and put off the decision"
+    ]
+   }
+  },
+  "why": {
+   "zh": "依据：理事长最后说：「外壁の工事が終わるまでは、滑り台にはロープを張って、使えないようにしておきましょう。そのあとで、新しいのを入れるかどうか、また皆さんで話し合う」。\n推理：换新的钱不够（公积金要用于外墙）；刷漆没意义（里面的铁可能不行）；拆掉放长椅被男的反对。理事长没有选任何一个提议，而是先拉绳子禁止使用，等外墙工程结束再商量。\n容易错：三个提议都被否定，决定的是“暂缓”；她说之后再商量要不要换新的，并没有决定换。",
+   "en": "Evidence: The chair ends: 「外壁の工事が終わるまでは、滑り台にはロープを張って、使えないようにしておきましょう。そのあとで、新しいのを入れるかどうか、また皆さんで話し合う」.\nReasoning: A new slide is unaffordable (the fund is for the walls); repainting is pointless (the steel may be weak); a bench is opposed by the man. The chair picks none of these: rope it off now and discuss after the wall work.\nTrap: all three proposals are rejected and the decision is to wait; replacing it is only to be discussed later, not decided."
+  },
+  "wrong": [
+   {
+    "zh": "公积金要用在明年的外墙工程，现在拿不出一百多万日元；换不换新的以后再商量。",
+    "en": "The fund is for next year's walls, so they can't spend a million yen now; replacing it will be discussed later."
+   },
+   {
+    "zh": "男的指出里面的铁可能不行，刷漆没有意义。",
+    "en": "The man points out the steel may be weak, so repainting is pointless."
+   },
+   {
+    "zh": "男的反对孩子们失去玩的地方，这个提议没被采纳。",
+    "en": "The man objects that the children would lose their play area; not adopted."
+   },
+   null
+  ],
+  "traps": [
+   "half-right",
+   "not-possible",
+   "condition-conflict"
+  ]
+ },
+ {
+  "id": "n2-ck-614",
+  "type": "tougou",
+  "scene": "大学の生協で、店の人が新入生向けのノートパソコンについて説明しています。そのあと、男の学生と女の学生が話しています。",
+  "lines": [
+   [
+    "F1",
+    "新入生の皆さんにおすすめのノートパソコンを、四つご紹介します。一つ目は「ライト」。重さが一キロを切っていて、毎日持ち歩くにはいちばんです。ただ、画面は少し小さめです。二つ目は「スタミナ」。電池が長持ちで、充電しなくても、朝から晩まで使えます。三つ目は「ワイド」。画面が大きく、図や写真の多い資料を作るのに向いています。その分、重さは二キロ近くあります。四つ目は「スタンダード」。性能は標準的ですが、四つの中でいちばんお求めやすい値段で、さらに四年間、無料で修理を受けられます。"
+   ],
+   [
+    "M",
+    "どれにしようかな。俺、たぶん家でレポートを書くのに使うぐらいで、大学にはあんまり持っていかないと思うんだよね。"
+   ],
+   [
+    "F2",
+    "じゃあ、画面の大きいのは？　見やすいよ。"
+   ],
+   [
+    "M",
+    "うーん、デザインの授業を取るわけじゃないし、そこまではいらないかな。それより俺、前のパソコン、落として壊しちゃってさ。修理代がすごくかかったんだよ。"
+   ],
+   [
+    "F2",
+    "ああ、それなら……。"
+   ],
+   [
+    "M",
+    "うん、値段も手ごろだし、それにする。そっちは？"
+   ],
+   [
+    "F2",
+    "私は毎日持ち歩くつもり。授業が一日に四つある日も多いんだけど、教室にコンセントがあるとは限らないでしょ。"
+   ],
+   [
+    "M",
+    "じゃあ、軽いのがいいんじゃない？"
+   ],
+   [
+    "F2",
+    "軽いのも魅力的なんだけどね。途中で電池が切れちゃったら、ノートも取れないし。少しぐらい重くても、そっちのほうが安心かな。"
+   ]
+  ],
+  "options": [
+   "ライト",
+   "スタミナ",
+   "ワイド",
+   "スタンダード"
+  ],
+  "questions": [
+   {
+    "question": "質問1：男の学生は、どのパソコンを買いますか。",
+    "answer": 3,
+    "why": {
+     "zh": "依据：男生说：「前のパソコン、落として壊しちゃってさ。修理代がすごくかかったんだよ。」又说「値段も手ごろだし、それにする」。\n推理：他吃过修理费的亏，「スタンダード」有四年免费修理，而且四款中最便宜，正对上「値段も手ごろ」。\n容易错：大屏幕的「ワイド」是女生推荐的，他说「そこまではいらない」。",
+     "en": "Evidence: The man says: 「前のパソコン、落として壊しちゃってさ。修理代がすごくかかったんだよ。」 and 「値段も手ごろだし、それにする」.\nReasoning: He paid dearly for repairs before; 「スタンダード」 comes with four years of free repairs and is the cheapest of the four — matching 「値段も手ごろ」.\nTrap: the big-screen 「ワイド」 was the woman's suggestion; he says 「そこまではいらない」."
+    },
+    "wrong": [
+     {
+      "zh": "他几乎不带去学校，不需要轻便的。",
+      "en": "He'll hardly take it to campus, so he doesn't need a light one."
+     },
+     {
+      "zh": "电池耐用是女生在意的，他主要在家用。",
+      "en": "Battery life is the woman's concern; he'll use it mostly at home."
+     },
+     {
+      "zh": "女生推荐大屏幕，他说「そこまではいらないかな」。",
+      "en": "She suggests the big screen; he says 「そこまではいらないかな」."
+     },
+     null
+    ]
+   },
+   {
+    "question": "質問2：女の学生は、どのパソコンを買いますか。",
+    "answer": 1,
+    "why": {
+     "zh": "依据：女生说：「教室にコンセントがあるとは限らないでしょ。」「途中で電池が切れちゃったら、ノートも取れないし。少しぐらい重くても、そっちのほうが安心かな。」\n推理：她每天带着跑，一天常有四节课，又不一定能充电，所以选电池耐用、不充电也能用一整天的「スタミナ」。\n容易错：男生推荐轻的「ライト」，她说有吸引力，但担心电池，「少しぐらい重くても」选另一款。",
+     "en": "Evidence: The woman says: 「教室にコンセントがあるとは限らないでしょ。」 and 「途中で電池が切れちゃったら、ノートも取れないし。少しぐらい重くても、そっちのほうが安心かな。」\nReasoning: She'll carry it daily, often has four classes a day and may not be able to charge, so she picks 「スタミナ」, which runs all day without charging.\nTrap: the man suggests the light 「ライト」; she finds it attractive but worries about the battery and chooses the other 「少しぐらい重くても」."
+    },
+    "wrong": [
+     {
+      "zh": "男生推荐轻的，她却担心电池，说「少しぐらい重くても」也选耐用的。",
+      "en": "The man suggests the light one, but she worries about the battery and accepts 「少しぐらい重くても」."
+     },
+     null,
+     {
+      "zh": "大屏幕的机器将近两公斤，她没有提到需要大屏幕。",
+      "en": "The big-screen model is nearly 2 kg, and she never says she needs a big screen."
+     },
+     {
+      "zh": "免费修理和便宜是男生选择的理由，她在意的是电池。",
+      "en": "Free repairs and price are the man's reasons; she cares about the battery."
+     }
+    ]
+   }
+  ],
+  "tr": {
+   "zh": {
+    "scene": "在大学生协，店员在介绍面向新生的笔记本电脑。之后，男生和女生在说话。",
+    "questions": [
+     "问题1：男生买哪台电脑？",
+     "问题2：女生买哪台电脑？"
+    ],
+    "lines": [
+     "向各位新生推荐四款笔记本电脑。第一款是「ライト」。重量不到一公斤，最适合每天随身携带。只是屏幕稍小。第二款是「スタミナ」。电池耐用，不充电也能从早用到晚。第三款是「ワイド」。屏幕大，适合制作图表和照片多的资料。相应地，重量接近两公斤。第四款是「スタンダード」。性能中规中矩，但是四款中价格最实惠的，而且四年内可以免费维修。",
+     "选哪个好呢。我大概就在家写写报告，不太会带到学校去。",
+     "那大屏幕的呢？看着舒服。",
+     "嗯……我又不上设计课，用不着那么大吧。倒是我之前的电脑摔坏了，修理费花了好多。",
+     "啊，那样的话……。",
+     "嗯，价格也实惠，就选它了。你呢？",
+     "我打算每天带着。一天有四节课的日子很多，教室里又不一定有插座吧。",
+     "那轻的不是挺好吗？",
+     "轻的也很有吸引力啦。可要是中途没电了，笔记都记不了。就算重一点，那款更让人放心吧。"
+    ],
+    "options": [
+     "ライト",
+     "スタミナ",
+     "ワイド",
+     "スタンダード"
+    ]
+   },
+   "en": {
+    "scene": "At the university co-op, a shop assistant is describing laptops for new students. Then a male student and a female student talk.",
+    "questions": [
+     "Question 1: Which laptop will the male student buy?",
+     "Question 2: Which laptop will the female student buy?"
+    ],
+    "lines": [
+     "Here are four laptops we recommend for new students. The first is the Light. It weighs under a kilo, so it's the best for carrying every day. The screen is a little small, though. The second is the Stamina. The battery lasts a long time, so you can use it from morning to night without charging. The third is the Wide. It has a large screen, good for making materials with lots of charts and photos. As a result, it weighs nearly two kilos. The fourth is the Standard. Its performance is average, but it's the most affordable of the four, and it comes with four years of free repairs.",
+     "Which one should I get? I'll probably just use it to write reports at home and won't take it to campus much.",
+     "Then what about the big screen? It's easy on the eyes.",
+     "Hmm, I'm not taking design classes, so I don't need that much. More to the point, I dropped and broke my last laptop. The repair cost a fortune.",
+     "Ah, in that case…",
+     "Yeah, and it's reasonably priced, so I'll get that one. What about you?",
+     "I'm going to carry mine every day. I often have four classes in a day, and there isn't always a socket in the classroom, right?",
+     "Then wouldn't a light one be good?",
+     "The light one's tempting too. But if the battery dies halfway, I can't even take notes. Even if it's a bit heavier, that one feels safer."
+    ],
+    "options": [
+     "Light",
+     "Stamina",
+     "Wide",
+     "Standard"
+    ]
+   }
+  },
+  "traps": [
+   "condition-conflict",
+   "other-option-attribute",
+   "someone-else"
+  ]
+ },
+ {
+  "id": "n2-ck-615",
+  "type": "tougou",
+  "scene": "市の社会福祉協議会で、係の人がボランティア活動について説明しています。そのあと、男の人と女の人が話しています。",
+  "lines": [
+   [
+    "F1",
+    "当センターでは現在、四つの活動でボランティアを募集しています。一つ目は、小学生の宿題を見る「学習サポート」です。毎週水曜日の夕方、市の児童館で行います。二つ目は、一人暮らしのお年寄りのお宅を訪ねて、お話をする「訪問サロン」です。日時は、お年寄りのご都合に合わせて決めます。三つ目は「公園の花の手入れ」。月に一度、日曜日の朝に、皆さんで花を植えたり、草を取ったりします。四つ目は、外国の方の日本語の練習相手になる「日本語カフェ」。毎週土曜日の午後、図書館で開いています。"
+   ],
+   [
+    "M",
+    "退職して時間ができたし、何かやってみようかな。"
+   ],
+   [
+    "F2",
+    "日本語カフェは？　昔、海外で働いてたんだから、外国の人の気持ち、よく分かるでしょう。"
+   ],
+   [
+    "M",
+    "そうなんだけど、土曜の午後は、孫のサッカーの試合を見に行くことが多くてね。"
+   ],
+   [
+    "F2",
+    "ああ、そうか。"
+   ],
+   [
+    "M",
+    "平日なら、いつでも大丈夫なんだ。若いころ、塾で数学を教えてたこともあるし、子どもの相手なら何とかなるかな。"
+   ],
+   [
+    "F2",
+    "いいじゃない。私はね、仕事があるから、平日は無理なのよ。お年寄りのお宅に伺うのもいいなと思ったんだけど、向こうのご都合に合わせるとなると、たぶん平日の昼間になるでしょう。"
+   ],
+   [
+    "M",
+    "そうだろうね。"
+   ],
+   [
+    "F2",
+    "外で体を動かすのも好きだし、月に一回なら、無理なく続けられそう。"
+   ]
+  ],
+  "options": [
+   "学習サポート",
+   "訪問サロン",
+   "公園の花の手入れ",
+   "日本語カフェ"
+  ],
+  "questions": [
+   {
+    "question": "質問1：男の人は、どの活動に参加しますか。",
+    "answer": 0,
+    "why": {
+     "zh": "依据：男的说：「平日なら、いつでも大丈夫なんだ。若いころ、塾で数学を教えてたこともあるし、子どもの相手なら何とかなるかな。」\n推理：周六下午要看孙子比赛，「日本語カフェ」不行。平日都有空，又教过数学，看小学生作业的「学習サポート」（每周三傍晚）正合适。\n容易错：「日本語カフェ」是女的推荐的，因时间冲突被放弃；「訪問サロン」虽然也在平日，但他说的是“陪孩子”。",
+     "en": "Evidence: The man says: 「平日なら、いつでも大丈夫なんだ。若いころ、塾で数学を教えてたこともあるし、子どもの相手なら何とかなるかな。」\nReasoning: Saturday afternoons he watches his grandchild's games, so 「日本語カフェ」 is out. He's free on weekdays and once taught maths, so 「学習サポート」 (Wednesday evenings, helping children with homework) fits.\nTrap: 「日本語カフェ」 was the woman's suggestion, dropped over timing; 「訪問サロン」 is also on weekdays, but he talks about looking after children."
+    },
+    "wrong": [
+     null,
+     {
+      "zh": "他说能应付的是「子どもの相手」，不是陪老人聊天。",
+      "en": "What he says he can handle is 「子どもの相手」, not chatting with the elderly."
+     },
+     {
+      "zh": "赏花的活动是女的要参加的，他没提。",
+      "en": "The flower care is the woman's choice; he doesn't mention it."
+     },
+     {
+      "zh": "「日本語カフェ」在周六下午，和看孙子比赛冲突。",
+      "en": "「日本語カフェ」 is on Saturday afternoons, which clashes with his grandchild's games."
+     }
+    ]
+   },
+   {
+    "question": "質問2：女の人は、どの活動に参加しますか。",
+    "answer": 2,
+    "why": {
+     "zh": "依据：女的说：「平日は無理なのよ。」「外で体を動かすのも好きだし、月に一回なら、無理なく続けられそう。」\n推理：她平日要上班。拜访老人要配合对方时间，多半在平日白天，所以放弃。说明里每月一次、周日早上、在户外种花除草的是「公園の花の手入れ」。\n容易错：她说拜访老人「いいなと思った」，但因时间放弃；「月に一回」「外で体を動かす」要和说明对照才知道指哪个。",
+     "en": "Evidence: The woman says: 「平日は無理なのよ。」 and 「外で体を動かすのも好きだし、月に一回なら、無理なく続けられそう。」\nReasoning: She works on weekdays. Home visits depend on the elderly person's schedule — probably weekday daytime — so she drops them. Once a month, Sunday mornings, outdoors planting and weeding is 「公園の花の手入れ」.\nTrap: she thought home visits 「いいなと思った」 but drops them over timing; 「月に一回」 and 「外で体を動かす」 must be matched against the announcement."
+    },
+    "wrong": [
+     {
+      "zh": "「学習サポート」在周三傍晚，她平日要上班；这是男的要参加的。",
+      "en": "「学習サポート」 is on Wednesday evenings and she works weekdays; it's the man's choice."
+     },
+     {
+      "zh": "她觉得不错，但要配合老人的时间，多半在平日白天，她去不了。",
+      "en": "She liked it, but it would fit the elderly person's schedule — likely weekday daytime — which she can't do."
+     },
+     null,
+     {
+      "zh": "「日本語カフェ」是她推荐给男的的，不是自己要参加的。",
+      "en": "She suggested 「日本語カフェ」 for the man, not for herself."
+     }
+    ]
+   }
+  ],
+  "tr": {
+   "zh": {
+    "scene": "在市社会福利协议会，工作人员在介绍志愿者活动。之后，男人和女人在说话。",
+    "questions": [
+     "问题1：男人参加哪项活动？",
+     "问题2：女人参加哪项活动？"
+    ],
+    "lines": [
+     "本中心目前在为四项活动招募志愿者。第一项是辅导小学生作业的「学習サポート」。每周三傍晚，在市儿童馆进行。第二项是「訪問サロン」，到独居老人家里拜访、陪他们聊天。日期和时间根据老人的方便来定。第三项是「公園の花の手入れ」。每月一次，周日早上，大家一起种花、除草。第四项是给外国人当日语练习对象的「日本語カフェ」。每周六下午在图书馆举办。",
+     "退休了有时间了，去做点什么吧。",
+     "「日本語カフェ」怎么样？你以前在国外工作过，应该很理解外国人的心情吧。",
+     "话是这么说，可周六下午我常去看孙子的足球比赛。",
+     "啊，这样啊。",
+     "工作日的话什么时候都行。我年轻时在补习班教过数学，陪孩子的话应该还应付得来。",
+     "挺好的嘛。我啊，要上班，工作日不行。我觉得去老人家拜访也不错，可要配合对方的时间，多半会在工作日白天吧。",
+     "应该是吧。",
+     "我也喜欢在外面活动身体，一个月一次的话，应该能轻松坚持下去。"
+    ],
+    "options": [
+     "学習サポート（学习辅导）",
+     "訪問サロン（上门聊天）",
+     "公園の花の手入れ（公园花卉养护）",
+     "日本語カフェ（日语咖啡角）"
+    ]
+   },
+   "en": {
+    "scene": "At the city's social welfare council, a staff member is describing volunteer activities. Then a man and a woman talk.",
+    "questions": [
+     "Question 1: Which activity will the man take part in?",
+     "Question 2: Which activity will the woman take part in?"
+    ],
+    "lines": [
+     "Our centre is currently recruiting volunteers for four activities. The first is Study Support, helping primary school children with homework. It takes place every Wednesday evening at the city children's centre. The second is the Visiting Salon, where you visit elderly people living alone and chat with them. Dates and times are set to suit the elderly person. The third is Park Flower Care. Once a month, on a Sunday morning, everyone plants flowers and pulls weeds. The fourth is the Japanese Café, where you become a conversation partner for people from abroad practising Japanese. It's held every Saturday afternoon at the library.",
+     "Now I've retired I have time — maybe I'll try something.",
+     "What about the Japanese Café? You worked abroad, so you'd understand how foreigners feel.",
+     "That's true, but on Saturday afternoons I often go to watch my grandson's football matches.",
+     "Ah, I see.",
+     "Weekdays are fine any time. I taught maths at a cram school when I was young, so I could probably manage with children.",
+     "That's nice. Me, I have work, so weekdays are impossible. I thought visiting elderly people would be nice too, but if it has to suit them, it'll probably be weekday daytime.",
+     "I suppose so.",
+     "I like moving about outdoors, and once a month is something I could keep up without strain."
+    ],
+    "options": [
+     "Study Support",
+     "Visiting Salon",
+     "Park Flower Care",
+     "Japanese Café"
+    ]
+   }
+  },
+  "traps": [
+   "condition-conflict",
+   "someone-else",
+   "mentioned-not-asked"
+  ]
  }
 ]

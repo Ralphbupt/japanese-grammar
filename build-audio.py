@@ -40,6 +40,7 @@ VOICE = "ja-JP-NanamiNeural"
 # rerun. Standalone 町 is まち, in words (町内, 市町村, 町名) ちょう.
 KANJI = r"一-鿿々"
 TTS_READINGS = [
+    (r"悔や", "くや"),                                         # Gemini: きわめば / こやめば (2026-11-09)
     (r"何時(?!間|でも|か(?!ら)|も)", "なんじ"),             # not いつ
     (r"九時間", "きゅうじかん"),                               # not くじかん
     (r"みどり町", "みどりちょう"),                           # place name in an N5 reading
