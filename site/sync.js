@@ -162,7 +162,8 @@
   var API = LOCAL ? 'http://localhost:8788' : 'https://api.jpnotes.dev';
   var CLIENT_ID = SCRIPT && SCRIPT.getAttribute('data-gclient');
   // Sign-in by emailed code: on when the build says so; ?emaillogin=1 shows it before that, for testing.
-  var EMAIL_ON = !!(SCRIPT && SCRIPT.getAttribute('data-email') === '1') || q.get('emaillogin') === '1';
+  if (q.get('emaillogin') === '1') ls.set('jp_acct_email', '1');          // remembered, so it survives following a link
+  var EMAIL_ON = !!(SCRIPT && SCRIPT.getAttribute('data-email') === '1') || ls.get('jp_acct_email') === '1';
   var mailState = { email: '', code: '', sent: false, busy: false, msg: '' };
 
   function acct() { try { return JSON.parse(ls.get('jp_acct')) || {}; } catch (e) { return {}; } }
