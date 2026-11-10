@@ -124,6 +124,9 @@ const SYNC_JS_SRC = fs.readFileSync(path.join(__dirname, "site", "sync.js"), "ut
 const SYNC_JS_HASH = require("crypto").createHash("md5").update(SYNC_JS_SRC).digest("hex").slice(0, 8);
 const GOOGLE_CLIENT_ID = "128997752412-49bo0pmc3ncp8n5esbvcgdsr7ifsg3l3.apps.googleusercontent.com";
 const ACCOUNT_API = "https://api.jpnotes.dev";
+// Sign-in by emailed code (Resend, via the account Worker): false until delivery to
+// QQ / 163 mailboxes has been checked; ?emaillogin=1 shows it on any page meanwhile.
+const EMAIL_LOGIN = false;
 const FEEDBACK_JS_SRC = fs.readFileSync(path.join(__dirname, "site", "feedback.js"), "utf-8");
 const FEEDBACK_JS_HASH = require("crypto").createHash("md5").update(FEEDBACK_JS_SRC).digest("hex").slice(0, 8);
 // Practice / mock test / flashcard pages; QUIZ_PUBLIC and QUIZ_LINKS are set in build-quiz.js.
@@ -131,7 +134,7 @@ const { buildQuiz, loadLevel: loadQuizLevel, LEVELS: QUIZ_LEVELS, TYPES: QUIZ_TY
 const SETTINGS_JS_HASH = require("crypto").createHash("md5").update(fs.readFileSync(path.join(__dirname, "site", "settings-modal.js"))).digest("hex").slice(0, 8);
 // With it, on every page: sign-in and progress sync (site/sync.js), which fills
 // the account part of the settings dialog.
-const SETTINGS_SCRIPT = `<script src="${SITE_PATH}settings-modal.js?v=${SETTINGS_JS_HASH}" defer></script><script src="${SITE_PATH}sync.js?v=${SYNC_JS_HASH}" data-gclient="${GOOGLE_CLIENT_ID}" defer></script>`;
+const SETTINGS_SCRIPT = `<script src="${SITE_PATH}settings-modal.js?v=${SETTINGS_JS_HASH}" defer></script><script src="${SITE_PATH}sync.js?v=${SYNC_JS_HASH}" data-gclient="${GOOGLE_CLIENT_ID}"${EMAIL_LOGIN ? ' data-email="1"' : ""} defer></script>`;
 // Where pages fetch mp3s from: the R2 bucket behind audio.jpnotes.dev (uploaded
 // by tools/audio-sync.py; keys mirror audio/). AUDIO_BASE=/audio builds a site
 // that plays the local copies instead (rsync audio/ into dist/audio/ first),
@@ -5901,6 +5904,10 @@ body.ai-open #tc-ai { border-color: var(--accent); box-shadow: 0 0 0 2px var(--a
 .acct-link { background: none; border: 0; padding: 0; color: var(--text-muted); text-decoration: underline; cursor: pointer; font: inherit; font-size: .85rem; }
 .acct a, .settings-foot a { color: var(--link); }
 .settings-foot { margin: 1rem 0 0; font-size: .82rem; line-height: 1.6; color: var(--text-muted); }
+/* Email-code sign-in */
+.acct-mail { margin-top: .5rem; }
+.acct-input { flex: 1 1 11rem; min-width: 0; background: var(--card-bg); color: inherit; border: 1px solid var(--border); border-radius: var(--radius); padding: .4rem .6rem; font: inherit; font-size: .9rem; }
+.acct-code { flex: 0 1 9rem; letter-spacing: .15em; }
 /* Progress management inside the account block */
 .acct-prog { margin-top: .9rem; padding-top: .8rem; border-top: 1px solid var(--border); }
 .acct-sub .acct-muted { font-weight: 400; font-size: .85rem; margin-left: .4em; }
