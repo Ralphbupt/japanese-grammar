@@ -138,12 +138,11 @@ const SETTINGS_SCRIPT = `<script src="${SITE_PATH}settings-modal.js?v=${SETTINGS
 // for audio that isn't uploaded yet.
 const AUDIO_BASE = (process.env.AUDIO_BASE || "https://audio.jpnotes.dev").replace(/\/$/, "");
 const AUDIO_ORIGIN = /^https?:/.test(AUDIO_BASE) ? " " + new URL(AUDIO_BASE).origin : "";
-// Content-Security-Policy connect-src allowlist. This is the technical
-// guarantee behind the "your key never leaves your browser except to the
-// provider you picked" promise: the browser itself refuses fetch/XHR/beacon
-// to any origin not listed here, even if a script on the page were compromised.
-// Provider hosts are parsed from site/ai-assistant.js so the two stay in sync;
-// localhost/127.0.0.1 on any port covers Ollama, LM Studio and local relays.
+// Content-Security-Policy connect-src allowlist: the browser itself refuses
+// fetch/XHR/beacon to any origin not listed here, even if a script on the page
+// were compromised. The AI host is parsed from site/ai-assistant.js (only the
+// site's own relay since the own-key providers were removed, 2026-11-10);
+// localhost/127.0.0.1 on any port covers the local relay and account worker.
 const AI_PROVIDER_HOSTS = [...new Set(
   [...AI_JS_SRC.matchAll(/(?:base|altBase): '(https?:\/\/[^'/]+)/g)]
     .map(m => m[1]).filter(h => !/localhost|127\.0\.0\.1/.test(h))
