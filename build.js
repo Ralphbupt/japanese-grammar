@@ -2681,20 +2681,20 @@ ${SETTINGS_SCRIPT}`;
   // Practice first: what readers actually use (GA, 2026-11). One row per level
   // with its question / listening counts and the practice pages.
   const roundDown = (n) => (n >= 20 ? Math.floor(n / 10) * 10 + "+" : String(n));
-  const practiceKinds = [["practice", "全部练习题", "All questions"], ["listening", "听力", "Listening"], ["reading", "阅读", "Reading"], ["vocabulary", "词汇", "Vocabulary"], ["mock-test", "模拟考", "Mock test"], ["cards", "语法卡片", "Flashcards"]];
+  const practiceKinds = [["practice", "全部", "All"], ["listening", "听力", "Listen"], ["reading", "阅读", "Read"], ["vocabulary", "词汇", "Vocab"], ["mock-test", "模拟考", "Mock"], ["cards", "卡片", "Cards"]];
   const homePracticeHtml = !quizPages("N5").length ? "" : `
   <section class="home-practice">
     <h2><span class="lang-zh">做题备考</span><span class="lang-en">Practise for the JLPT</span></h2>
     <p class="home-practice-lead"><span class="lang-zh">按真题题型出的练习题、听力和计时模拟考。每题都讲清楚正确答案为什么对、每个错误选项错在哪；做错的题进错题本，过几天再考你。</span><span class="lang-en">Exam-style questions, listening and timed mock tests. Every question explains why the answer is right and what is wrong with each other option; missed ones come back a few days later.</span></p>
     <div class="table-scroll"><table class="practice-index">
-      <thead><tr><th scope="col"><span class="lang-zh">级别</span><span class="lang-en">Level</span></th>${practiceKinds.map((k) => `<th scope="col"><span class="lang-zh">${k[1]}</span><span class="lang-en">${k[2]}</span></th>`).join("")}</tr></thead>
+      <thead><tr><th scope="col"><span class="visually-hidden">Level</span></th>${practiceKinds.map((k) => `<th scope="col"><span class="lang-zh">${k[1]}</span><span class="lang-en">${k[2]}</span></th>`).join("")}</tr></thead>
       <tbody>${QUIZ_LEVELS.filter((lv) => quizPages(lv).length).map((lv) => {
         const qs = loadQuizLevel(lv).qs, pages = quizPages(lv);
         // Each cell says how much is behind the link: questions, or test sets.
         const n = (kind) => qs.filter((q) => q._kind === kind).length;
         const mocks = fs.readdirSync(path.join(__dirname, "questions", lv)).filter((d) => /^mock-\d+$/.test(d) && fs.existsSync(path.join(__dirname, "questions", lv, d, "bunpou.json"))).length;
         const label = { practice: [qs.length, qs.length], listening: [n("choukai"), n("choukai")], reading: [n("dokkai"), n("dokkai")], vocabulary: [n("moji-goi"), n("moji-goi")],
-          "mock-test": [`${mocks} 套`, `${mocks} test${mocks > 1 ? "s" : ""}`], cards: ["背卡片", "Review"] };
+          "mock-test": [`${mocks} 套`, String(mocks)], cards: ["开始", "Go"] };
         const cell = (kind) => { const pg = pages.find((q) => q.href.endsWith(`-${kind}/`)); return pg && label[kind][0] ? `<td><a href="${pg.href}"><span class="lang-zh">${label[kind][0]}</span><span class="lang-en">${label[kind][1]}</span></a></td>` : `<td class="none">–</td>`; };
         return `
         <tr><th scope="row"><span class="level-tag">${lv}</span></th>${practiceKinds.map((k) => cell(k[0])).join("")}</tr>`;
@@ -3623,7 +3623,7 @@ ${AI_SCRIPT}
     const esc = (t) => (t || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
     const card = (l) => {
       const seo = SEO_TITLES[l.id] || {};
-      const tag = seo.level ? `JLPT ${seo.level}` : "JLPT";
+      const tag = seo.level && !/^JLPT/.test(seo.level) ? `JLPT ${seo.level}` : seo.level || "JLPT";
       return `<a class="overview-card" href="${SITE}${l.id}/">
         <div class="overview-card-head"><span class="overview-day">${tag}</span><span class="overview-title">${l.jaTitle}</span></div>
         <p class="guide-card-desc"><span class="lang-zh">${esc(seo.descZh)}</span><span class="lang-en">${esc(seo.desc)}</span></p>
@@ -3829,7 +3829,7 @@ ${CSS}
 .breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 1rem; }
 .breadcrumb a { color: var(--text-muted); text-decoration: none; }
 .breadcrumb .sep { margin: 0 .4em; }
-.about-content h1 { font-size: var(--text-2xl); margin: 0 0 1.5rem; border-bottom: 2px solid var(--ui); padding-bottom: .6rem; }
+.about-content h1 { font-size: var(--text-2xl); margin: 0 0 1.2rem; }
 .about-content h2 { font-size: var(--text-xl); margin: 2.2rem 0 .9rem; color: var(--text-strong); }
 .about-content p, .about-content li { line-height: 1.85; }
 .about-content ul { margin: .6rem 0 .6rem 1.4rem; }
@@ -4907,17 +4907,17 @@ Each \`/lessonNN/\` page contains:
   const ogSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a2e"/>
-      <stop offset="100%" style="stop-color:#16213e"/>
+      <stop offset="0%" style="stop-color:#f6f4ef"/>
+      <stop offset="100%" style="stop-color:#ece8de"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect x="40" y="40" width="1120" height="550" rx="20" fill="none" stroke="#e94560" stroke-width="2" opacity="0.3"/>
-  <text x="600" y="220" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="96" fill="#ffffff" font-weight="bold">日语语法笔记</text>
-  <text x="600" y="320" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="42" fill="#c8c8d8">Japanese Grammar Notes</text>
-  <text x="600" y="400" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="36" fill="#e94560">N5 → N4 → N3 → N2 → N1</text>
-  <text x="600" y="470" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="24" fill="#888888">Free · Bilingual · N5 → N1 · Audio</text>
-  <text x="600" y="550" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="20" fill="#666666">${SITE_HOST}</text>
+  <rect x="40" y="40" width="1120" height="550" rx="20" fill="none" stroke="#b8283f" stroke-width="2" opacity="0.3"/>
+  <text x="600" y="220" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="96" fill="#1a1a2e" font-weight="bold">日语语法笔记</text>
+  <text x="600" y="320" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="42" fill="#4a4740">Japanese Grammar Notes</text>
+  <text x="600" y="400" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="36" fill="#b8283f">N5 → N4 → N3 → N2 → N1</text>
+  <text x="600" y="470" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="24" fill="#605c55">Free · Bilingual · N5 → N1 · Audio</text>
+  <text x="600" y="550" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="20" fill="#605c55">${SITE_HOST}</text>
 </svg>`;
   fs.writeFileSync(path.join(__dirname, "dist/og-image.svg"), ogSvg, "utf-8");
 
@@ -4940,16 +4940,16 @@ Each \`/lessonNN/\` page contains:
     const lessonOgSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a2e"/>
-      <stop offset="100%" style="stop-color:#16213e"/>
+      <stop offset="0%" style="stop-color:#f6f4ef"/>
+      <stop offset="100%" style="stop-color:#ece8de"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect x="40" y="40" width="1120" height="550" rx="20" fill="none" stroke="#e94560" stroke-width="2" opacity="0.3"/>
-  <text x="600" y="180" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="48" fill="#e94560" font-weight="bold">JLPT ${level}</text>
-  <text x="600" y="310" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="64" fill="#ffffff" font-weight="bold">${escJaTitle}</text>
-  <text x="600" y="430" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="32" fill="#c8c8d8">Japanese Grammar Notes</text>
-  <text x="600" y="550" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="20" fill="#666666">${SITE_HOST}</text>
+  <rect x="40" y="40" width="1120" height="550" rx="20" fill="none" stroke="#b8283f" stroke-width="2" opacity="0.3"/>
+  <text x="600" y="180" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="48" fill="#b8283f" font-weight="bold">JLPT ${level}</text>
+  <text x="600" y="310" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="64" fill="#1a1a2e" font-weight="bold">${escJaTitle}</text>
+  <text x="600" y="430" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="32" fill="#4a4740">Japanese Grammar Notes</text>
+  <text x="600" y="550" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="20" fill="#605c55">${SITE_HOST}</text>
 </svg>`;
     await sharp(Buffer.from(lessonOgSvg))
       .resize(1200, 630)
@@ -4967,19 +4967,19 @@ Each \`/lessonNN/\` page contains:
     if (lp.level && ogLevelCounts.hasOwnProperty(lp.level)) ogLevelCounts[lp.level]++;
   }
   const indexOgPages = [
-    { slug: "N5", topLabel: "JLPT N5", mainTitle: "N5 文法チェックリスト", sub: `${ogLevelCounts.N5} 课 · 53+ 语法点`, accent: "#e94560" },
-    { slug: "N4", topLabel: "JLPT N4", mainTitle: "N4 文法チェックリスト", sub: `${ogLevelCounts.N4} 课 · 54+ 语法点`, accent: "#e94560" },
-    { slug: "N3", topLabel: "JLPT N3", mainTitle: "N3 文法チェックリスト", sub: `${ogLevelCounts.N3} 课 · 100+ 语法点`, accent: "#e94560" },
-    { slug: "N2", topLabel: "JLPT N2", mainTitle: "N2 文法チェックリスト", sub: `${ogLevelCounts.N2} 课 · 75+ 语法点`, accent: "#e94560" },
-    ...(ogLevelCounts.N1 ? [{ slug: "N1", topLabel: "JLPT N1", mainTitle: "N1 文法チェックリスト", sub: `${ogLevelCounts.N1} 课 · 100+ 语法点`, accent: "#e94560" }] : []),
-    { slug: "about", topLabel: "About · 关于", mainTitle: "日语语法笔记", sub: "N5 → N1 · Free · Bilingual", accent: "#e94560" },
-    { slug: "anki", topLabel: "Anki Decks", mainTitle: "JLPT 文法 卡组", sub: "N5 · N4 · N3 · N2 · N1", accent: "#e94560" },
-    { slug: "practice", topLabel: "JLPT Practice · 做题", mainTitle: "JLPT 練習問題", sub: "N5 → N1 · Listening · Mock tests · Free", accent: "#e94560" },
-    { slug: "listening", topLabel: "JLPT Listening · 听力", mainTitle: "JLPT 聴解練習", sub: "N5 → N1 · 650+ questions · Transcripts", accent: "#e94560" },
-    { slug: "reading", topLabel: "JLPT Reading · 阅读", mainTitle: "JLPT 読解練習", sub: "N5 → N1 · Every format · Translations", accent: "#e94560" },
-    { slug: "vocabulary", topLabel: "JLPT Vocabulary · 词汇", mainTitle: "JLPT 文字・語彙", sub: "N5 → N1 · Kanji · Words · Usage", accent: "#e94560" },
-    { slug: "mock-test", topLabel: "JLPT Mock Tests · 模拟题", mainTitle: "JLPT 模擬試験", sub: "N5 → N1 · Timed · Estimated score", accent: "#e94560" },
-    { slug: "guides", topLabel: "Guides · 专题", mainTitle: "易混語法 対比", sub: "は vs が · から vs ので · JLPT 12月", accent: "#e94560" },
+    { slug: "N5", topLabel: "JLPT N5", mainTitle: "N5 文法チェックリスト", sub: `${ogLevelCounts.N5} 课 · 53+ 语法点`, accent: "#b8283f" },
+    { slug: "N4", topLabel: "JLPT N4", mainTitle: "N4 文法チェックリスト", sub: `${ogLevelCounts.N4} 课 · 54+ 语法点`, accent: "#b8283f" },
+    { slug: "N3", topLabel: "JLPT N3", mainTitle: "N3 文法チェックリスト", sub: `${ogLevelCounts.N3} 课 · 100+ 语法点`, accent: "#b8283f" },
+    { slug: "N2", topLabel: "JLPT N2", mainTitle: "N2 文法チェックリスト", sub: `${ogLevelCounts.N2} 课 · 75+ 语法点`, accent: "#b8283f" },
+    ...(ogLevelCounts.N1 ? [{ slug: "N1", topLabel: "JLPT N1", mainTitle: "N1 文法チェックリスト", sub: `${ogLevelCounts.N1} 课 · 100+ 语法点`, accent: "#b8283f" }] : []),
+    { slug: "about", topLabel: "About · 关于", mainTitle: "日语语法笔记", sub: "N5 → N1 · Free · Bilingual", accent: "#b8283f" },
+    { slug: "anki", topLabel: "Anki Decks", mainTitle: "JLPT 文法 卡组", sub: "N5 · N4 · N3 · N2 · N1", accent: "#b8283f" },
+    { slug: "practice", topLabel: "JLPT Practice · 做题", mainTitle: "JLPT 練習問題", sub: "N5 → N1 · Listening · Mock tests · Free", accent: "#b8283f" },
+    { slug: "listening", topLabel: "JLPT Listening · 听力", mainTitle: "JLPT 聴解練習", sub: "N5 → N1 · 650+ questions · Transcripts", accent: "#b8283f" },
+    { slug: "reading", topLabel: "JLPT Reading · 阅读", mainTitle: "JLPT 読解練習", sub: "N5 → N1 · Every format · Translations", accent: "#b8283f" },
+    { slug: "vocabulary", topLabel: "JLPT Vocabulary · 词汇", mainTitle: "JLPT 文字・語彙", sub: "N5 → N1 · Kanji · Words · Usage", accent: "#b8283f" },
+    { slug: "mock-test", topLabel: "JLPT Mock Tests · 模拟题", mainTitle: "JLPT 模擬試験", sub: "N5 → N1 · Timed · Estimated score", accent: "#b8283f" },
+    { slug: "guides", topLabel: "Guides · 专题", mainTitle: "易混語法 対比", sub: "は vs が · から vs ので · JLPT 12月", accent: "#b8283f" },
   ];
   for (const p of indexOgPages) {
     const dir = path.join(__dirname, "dist", p.slug);
@@ -4988,16 +4988,16 @@ Each \`/lessonNN/\` page contains:
     const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a2e"/>
-      <stop offset="100%" style="stop-color:#16213e"/>
+      <stop offset="0%" style="stop-color:#f6f4ef"/>
+      <stop offset="100%" style="stop-color:#ece8de"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect x="40" y="40" width="1120" height="550" rx="20" fill="none" stroke="${p.accent}" stroke-width="2" opacity="0.3"/>
   <text x="600" y="200" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="48" fill="${p.accent}" font-weight="bold">${esc(p.topLabel)}</text>
-  <text x="600" y="330" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="80" fill="#ffffff" font-weight="bold">${esc(p.mainTitle)}</text>
-  <text x="600" y="430" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="32" fill="#c8c8d8">${esc(p.sub)}</text>
-  <text x="600" y="550" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="20" fill="#666666">${SITE_HOST}</text>
+  <text x="600" y="330" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="80" fill="#1a1a2e" font-weight="bold">${esc(p.mainTitle)}</text>
+  <text x="600" y="430" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="32" fill="#4a4740">${esc(p.sub)}</text>
+  <text x="600" y="550" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Noto Sans CJK SC, sans-serif" font-size="20" fill="#605c55">${SITE_HOST}</text>
 </svg>`;
     await sharp(Buffer.from(svg))
       .resize(1200, 630)
@@ -5641,10 +5641,28 @@ body.sidebar-collapsed #content.home {
 .hero-note figcaption { margin-top: .9rem; font-size: .88rem; line-height: 1.65; color: var(--text); }
 .hero-note figcaption b { color: var(--accent); margin-right: .5em; font-size: 1.05em; }
 @media (max-width: 860px) {
-  .home-hero { grid-template-columns: 1fr; gap: 1.6rem; padding-top: 1.2rem; }
-  .home-hero h1 { font-size: 1.45rem; }
-  .hero-ja { font-size: 1.3rem; }
+  .home-hero { grid-template-columns: 1fr; gap: 1.4rem; padding: 1rem 0 1.6rem; margin-bottom: 1.6rem; }
+  .home-hero h1 { font-size: 1.4rem; }
+  .home-intro { font-size: .92rem; margin-bottom: 1.1rem; }
+  .hero-note { padding: .8rem 1.1rem 1rem; }
+  .hero-ja { font-size: 1.18rem; line-height: 2.7rem; background-size: 100% 2.7rem; }
+  table.practice-index { font-size: .86rem; table-layout: fixed; width: 100%; }
+  table.practice-index th, table.practice-index td { padding: .55rem .15rem; }
+  table.practice-index thead th { font-size: .68rem; }
+  table.practice-index tbody th, table.practice-index thead th:first-child { width: 2.9rem; }
 }
+/* Phones, every page: the top bar already says where you are */
+@media (max-width: 768px) {
+  h1 { font-size: 1.45rem; margin-bottom: .8rem; }
+  h2 { font-size: 1.25rem; margin-top: 1.8rem; }
+  .breadcrumb, .prev-next-top { display: none !important; }
+  .seo-lead { font-size: .95rem; margin-bottom: 1.2rem; }
+  table.word-table { font-size: .85rem; }
+  table.word-table td:first-child { font-size: 1rem; }
+  table.word-table td:nth-child(2) { white-space: nowrap; font-size: .8rem; }
+  table.word-table th, table.word-table td { padding-left: .45rem; padding-right: .45rem; }
+}
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .home-practice h2 { font-size: 1.35rem; margin: 0 0 .5rem; color: var(--text-strong); }
 .home-practice-lead { color: var(--text-muted); margin: 0 0 1rem; line-height: 1.7; max-width: 46em; }
 /* Practice as the contents page of a workbook: levels down, kinds across */
@@ -5661,27 +5679,18 @@ table.practice-index tbody tr:hover td, table.practice-index tbody tr:hover th {
 .home-levels h2, .home-howto h2 {
   font-size: 1.35rem; margin: 2rem 0 1rem; color: var(--text-strong);
 }
-.level-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.2rem;
-  margin: 1rem 0 2.4rem;
-}
-@media (max-width: 640px) {
-  .level-grid { grid-template-columns: 1fr; }
-}
-.level-card {
-  display: block;
-  padding: 1.4rem 1.6rem;
-  background: var(--card-bg); border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  text-decoration: none; color: inherit;
-  transition: all .2s;
-}
-.level-card:hover { border-color: var(--ui); }
-.level-head { display: flex; align-items: center; gap: .7rem; margin-bottom: .9rem; }
+/* Levels: the next page of the same index, a line each */
+.level-grid { display: grid; grid-template-columns: 1fr; margin: .6rem 0 2.4rem; border-top: 1px solid var(--text-muted); }
+.level-card { display: grid; grid-template-columns: 10.5rem 1fr; gap: .1rem 1.2rem; align-items: baseline; padding: 1rem .2rem; border-bottom: 1px solid var(--border); text-decoration: none; color: inherit; }
+.level-card:hover { background: var(--ui-soft); }
+.level-card:hover h3 { text-decoration: underline; text-underline-offset: 3px; }
+.level-head { grid-row: 1 / span 2; display: flex; align-items: center; gap: .6rem; }
 .level-head .level-tag { margin-bottom: 0; }
-.level-range { font-size: .82rem; color: var(--text-muted); }
+.level-range { font-size: .8rem; color: var(--text-muted); white-space: nowrap; }
+@media (max-width: 640px) {
+  .level-card { grid-template-columns: 1fr; }
+  .level-head { grid-row: auto; margin-bottom: .2rem; }
+}
 /* The seal: a level, stamped in vermilion. The one loud mark on a page. */
 .level-tag, .seal-mark {
   display: inline-block; border: 1.5px solid var(--accent); color: var(--accent); background: none;
@@ -5693,14 +5702,9 @@ table.practice-index tbody tr:hover td, table.practice-index tbody tr:hover th {
   font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, "Noto Serif JP", serif;
 }
 .ico { width: 1em; height: 1em; vertical-align: -.13em; margin-right: .35em; color: var(--text-muted); flex: none; }
-.level-card h3 {
-  font-size: 1.25rem; margin: .2rem 0 .6rem;
-  color: var(--text-strong);
-}
-.level-card p {
-  font-size: 1rem; color: var(--text-muted);
-  line-height: 1.65; margin: 0;
-}
+
+.level-card h3 { font-size: 1.05rem; margin: 0; color: var(--link); }
+.level-card p { font-size: .9rem; color: var(--text-muted); line-height: 1.6; margin: 0; }
 .home-howto p {
   color: var(--text-muted); line-height: 1.75;
   margin: .6rem 0;

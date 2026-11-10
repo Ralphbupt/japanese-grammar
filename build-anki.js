@@ -616,20 +616,20 @@ ${JSON.stringify({
 </script>
 <style>
 :root {
-  --bg: #fafaf8; --text: #2d2d2d; --accent: #e94560;
-  --card-bg: #fff; --border: #e2e2e2; --muted: #666;
+  --bg: #f6f4ef; --text: #2b2a27; --accent: #b8283f; --ui: #1f3d63; --ui-on: #fff;
+  --card-bg: #fbfaf7; --border: #e3dfd5; --muted: #605c55;
 }
 @media (prefers-color-scheme: dark) {
-  :root:not(.theme-light) { --bg: #14141e; --text: #d4d4dc; --card-bg: #1f1f2e; --border: #2d2d44; --muted: #a8a8b8; }
+  :root:not(.theme-light) { --bg: #14141e; --text: #d4d4dc; --card-bg: #1f1f2e; --border: #2d2d44; --muted: #a8a8b8; --accent: #e94560; --ui: #a9c7ee; --ui-on: #10131c; }
 }
-html.theme-dark { --bg: #14141e; --text: #d4d4dc; --card-bg: #1f1f2e; --border: #2d2d44; --muted: #a8a8b8; }
+html.theme-dark { --bg: #14141e; --text: #d4d4dc; --card-bg: #1f1f2e; --border: #2d2d44; --muted: #a8a8b8; --accent: #e94560; --ui: #a9c7ee; --ui-on: #10131c; }
 * { box-sizing: border-box; }
 body { font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "PingFang SC", sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 2.5rem 1.5rem; line-height: 1.75; }
 .container { max-width: 760px; margin: 0 auto; }
-h1 { font-size: 1.8rem; margin: 0 0 .5rem; border-bottom: 2px solid var(--accent); padding-bottom: .6rem; }
+h1 { font-size: 1.8rem; margin: 0 0 .5rem; }
 .subtitle { color: var(--muted); margin-bottom: 2rem; }
 .breadcrumb { font-size: .85rem; color: var(--muted); margin-bottom: 1rem; }
-.breadcrumb a { color: var(--accent); text-decoration: none; }
+.breadcrumb a { color: var(--ui); text-decoration: none; }
 /* Theme + language pills, top right (injected by settings-modal.js). */
 #top-controls { position: fixed; top: .8rem; right: 1.2rem; display: flex; align-items: center; gap: .5rem; z-index: 200; }
 .tc-pill { background: var(--card-bg); color: inherit; font: inherit; font-size: .8rem; padding: .4rem .8rem; border-radius: 8px; border: 1px solid var(--border); box-shadow: 0 2px 10px rgba(0,0,0,.12); cursor: pointer; line-height: 1.2; }
@@ -639,27 +639,27 @@ h2 { font-size: 1.3rem; margin: 2rem 0 1rem; }
 .anki-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; margin: 1.5rem 0 2rem; }
 @media (max-width: 540px) { .anki-grid { grid-template-columns: 1fr; } }
 .anki-card { display: flex; flex-direction: column; padding: 1.2rem 1.4rem; background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; text-decoration: none; color: inherit; transition: all .2s; }
-.anki-card:hover { border-color: var(--accent); box-shadow: 0 4px 18px rgba(233,69,96,.12); transform: translateY(-2px); }
-.anki-level { display: inline-block; padding: .2rem .65rem; background: #d6354c; color: #fff; font-size: .82rem; font-weight: 700; border-radius: 4px; align-self: flex-start; margin-bottom: .8rem; }
+.anki-card:hover { border-color: var(--ui); box-shadow: 0 4px 18px rgba(31,61,99,.12); transform: translateY(-2px); }
+.anki-level { display: inline-block; padding: .22rem .42rem .2rem; border: 1.5px solid var(--accent); color: var(--accent); line-height: 1; font-size: .82rem; font-weight: 700; border-radius: 3px; align-self: flex-start; margin-bottom: .8rem; }
 .anki-title { font-size: 1.1rem; font-weight: 600; margin-bottom: .3rem; }
 .anki-count { color: var(--muted); font-size: .9rem; margin-bottom: .6rem; }
-.anki-dl { color: var(--accent); font-size: .85rem; font-weight: 600; text-decoration: none; display: block; margin-top: .4rem; }
-.anki-dl-primary { background: #d6354c; color: #fff; padding: .5rem .8rem; border-radius: 6px; text-align: center; }
+.anki-dl { color: var(--ui); font-size: .85rem; font-weight: 600; text-decoration: none; display: block; margin-top: .4rem; }
+.anki-dl-primary { background: var(--ui); color: var(--ui-on); padding: .5rem .8rem; border-radius: 6px; text-align: center; }
 .anki-dl-primary:hover { background: #c2304a; }
-.anki-dl-en { background: transparent; color: #d6354c; border: 1.5px solid #d6354c; }
+.anki-dl-en { background: transparent; color: var(--ui); border: 1.5px solid var(--ui); }
 .anki-dl-en:hover { background: rgba(214,53,76,.08); }
 .anki-dl-alt-row { font-size: .8rem; color: var(--muted); margin-top: .4rem; }
 .anki-dl-alt-row .anki-dl-alt { display: inline; }
 .anki-copy { border: 1px dashed var(--border); background: var(--card-bg); color: var(--muted); padding: .4rem .8rem; border-radius: 6px; cursor: pointer; font-size: .8rem; text-align: center; }
-.anki-copy:hover { border-color: var(--accent); color: var(--accent); }
+.anki-copy:hover { border-color: var(--ui); color: var(--ui); }
 .anki-copy.copied { border-color: #4caf50; color: #4caf50; }
 .anki-dl-alt { color: var(--muted); font-weight: 400; font-size: .8rem; }
-.anki-dl-alt:hover { color: var(--accent); }
+.anki-dl-alt:hover { color: var(--ui); }
 ol, ul { padding-left: 1.4rem; }
 ol li, ul li { margin: .5rem 0; }
 code { background: var(--card-bg); border: 1px solid var(--border); padding: .1rem .35rem; border-radius: 3px; font-size: .9em; }
-a { color: var(--accent); }
-.note { background: rgba(233,69,96,.04); border-left: 3px solid var(--accent); padding: .8rem 1.1rem; margin: 1.2rem 0; border-radius: 0 6px 6px 0; }
+a { color: var(--ui); }
+.note { background: var(--card-bg); border-left: 3px solid var(--border); padding: .8rem 1.1rem; margin: 1.2rem 0; border-radius: 0 6px 6px 0; }
 /* Bilingual visibility: same rules as the rest of jpnotes.dev.
    :not(body) is load-bearing — the toggle puts .lang-en on <body> itself,
    and a bare .lang-en rule would display:none the whole page. */
@@ -680,7 +680,7 @@ body.lang-en div.lang-en, body.lang-en p.lang-en, body.lang-en li.lang-en, body.
     <span class="lang-zh">JLPT N5 → N1 共 ${total} 张卡 · 中文版 / English 版两套独立卡组 · .apkg 版含 🔊 例句日语音频 + 挖空练习子卡组 · 支持 AnkiDroid、AnkiMobile · 每张语法点配含义、例句和跳回 jpnotes.dev 详细讲解的链接</span>
     <span class="lang-en">JLPT N5 → N1, ${total} cards · separate Chinese and English editions · .apkg includes 🔊 native-style TTS audio on examples + a cloze-practice subdeck · works with AnkiDroid &amp; AnkiMobile · each card has the grammar point, its meaning, examples, and a link back to the full lesson on jpnotes.dev</span>
   </p>${QUIZ_LINKS ? `
-  <p class="online-cards" style="margin:1rem 0;padding:.7rem 1rem;border:1px solid #e94560;border-radius:8px;">🗂 <span class="lang-zh">不想装 Anki？<a href="/n5-cards/">在浏览器里背 N5 语法卡片</a>——同样的间隔复习，还有填空卡，进度存在本机。</span><span class="lang-en">Don't want to install Anki? <a href="/n5-cards/">Study the N5 grammar cards in your browser</a> — the same spaced repetition, plus fill-in cards, with progress kept on your device.</span></p>` : ""}
+  <p class="online-cards" style="margin:1rem 0;padding:.7rem 1rem;border:1px solid var(--border);border-radius:8px;"><span class="lang-zh">不想装 Anki？<a href="/n5-cards/">在浏览器里背 N5 语法卡片</a>——同样的间隔复习，还有填空卡，进度存在本机。</span><span class="lang-en">Don't want to install Anki? <a href="/n5-cards/">Study the N5 grammar cards in your browser</a> — the same spaced repetition, plus fill-in cards, with progress kept on your device.</span></p>` : ""}
 
   <h2><span class="lang-zh">选择级别下载</span><span class="lang-en">Pick a level to download</span></h2>
   <div class="anki-grid">
