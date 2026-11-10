@@ -18,6 +18,10 @@
   var EN = document.documentElement.getAttribute('data-force-lang') !== 'zh';
   var LESSON_BASE = '/' + (EN ? '' : 'zh/');
   var KEY = 'jp_quiz_v1';
+  // Line icons (the site's one set; .ico is styled globally) for text built here.
+  function ico(d) { return '<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + d + '</svg>'; }
+  var ICO_BOOK = ico('<path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/>');
+  var ICO_EAR = ico('<path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/>');
   // mp3s come from the audio host the build names (R2), or /audio on a local build.
   var AUDIO_BASE = app.getAttribute('data-audio') || '/audio';
   var DAY = 86400;
@@ -547,13 +551,13 @@
     var h = '';
     if (main) {
       var p = D.refs[main];
-      h += '<div class="q-point"><div class="q-point-h"><b>📖 ' + esc(EN ? p.en : p.zh) + '</b>' + pointLink(p, t('回课文看这个语法 →', 'Read it in the lesson →')) + '</div>' +
+      h += '<div class="q-point"><div class="q-point-h"><b>' + ICO_BOOK + esc(EN ? p.en : p.zh) + '</b>' + pointLink(p, t('回课文看这个语法 →', 'Read it in the lesson →')) + '</div>' +
         (p.conj ? '<div class="q-point-row"><span class="q-point-k">' + t('接续', 'Form') + '</span><span>' + (EN ? p.conj.en : p.conj.zh).map(esc).join('<br>') + '</span></div>' : '') +
         (p.ex ? '<div class="q-point-row"><span class="q-point-k">' + t('例句', 'Example') + '</span><span><span lang="ja">' + p.ex.ja + '</span>' + ((EN ? p.ex.en : p.ex.zh) ? '<br><span class="q-muted">' + esc(EN ? p.ex.en : p.ex.zh) + '</span>' : '') + '</span></div>' : '') +
         '</div>';
     }
     var rest = refs.filter(function (r) { return r !== main; });
-    if (rest.length) h += '<p class="q-refs">' + rest.map(function (r) { var p = D.refs[r]; return '📖 ' + pointLink(p, esc(EN ? p.en : p.zh)); }).join(' · ') + '</p>';
+    if (rest.length) h += '<p class="q-refs">' + rest.map(function (r) { var p = D.refs[r]; return ICO_BOOK + pointLink(p, esc(EN ? p.en : p.zh)); }).join(' · ') + '</p>';
     return h;
   }
   function kjHtml(q, passages) {
@@ -789,7 +793,7 @@
 
   // One line for a question in a list: the stem, blanks shown as ＿ / ★.
   function sumLabel(q) {
-    if (isCk(q)) return '🎧 ' + (q.type === 'hatsuwa' ? q.ck.scene : q.ck.question || (q.ck.lines[0] || [])[1] || '');
+    if (isCk(q)) return ICO_EAR + (q.type === 'hatsuwa' ? q.ck.scene : q.ck.question || (q.ck.lines[0] || [])[1] || '');
     return q.type === 'bunshou' ? '<span class="q-pblank">' + q.blank + '</span> ' + D.passages[q.passage].html.split('\n')[0].slice(0, 60) + '…' : stemHtml(q).replace(/<button[^>]*>(★)?<\/button>/g, function (m, st) { return st ? '★' : '＿'; });
   }
 
@@ -825,7 +829,7 @@
     var main = a(base + '?level=' + lv + '&' + utm, t('每天一则日语新闻（' + lvTxt + '，逐句讲解）', 'a Japanese news story every day (' + lvTxt + ', explained)'));
     var ja = a(base + 'nihongo/?' + utm, t('全日语的「日本語で聞くニュース」（N3–N2）', 'the all-Japanese 日本語で聞くニュース (N3–N2)'));
     var list = /^N[45]$/.test(LEVEL || '') ? main : /^N[12]$/.test(LEVEL || '') ? ja + t('，或', ', or ') + main : main + t('，或', ', or ') + ja;
-    return '<p class="q-podcast">🎧 ' + t('继续练听力：', 'Keep listening: ') + list + '</p>';
+    return '<p class="q-podcast">' + ICO_EAR + t('继续练听力：', 'Keep listening: ') + list + '</p>';
   }
 
   function shareBtn() { return window.jpShare ? '<button class="q-btn" data-act="share">' + t('分享成绩', 'Share my score') + '</button>' : ''; }
@@ -852,7 +856,7 @@
       // The grammar point missed most often.
       var cnt = {}; bad.forEach(function (r) { var ref = (Q[r.id].refs || [])[0]; if (ref) cnt[ref] = (cnt[ref] || 0) + 1; });
       var top = Object.keys(cnt).sort(function (a, b) { return cnt[b] - cnt[a]; })[0], p = top && D.refs[top];
-      if (p) h += '<p>📖 ' + t('去复习：', 'Go over: ') + '<a href="' + LESSON_BASE + p.lesson + '/#' + encodeURI(p.slug) + '">' + esc(EN ? p.en : p.zh) + '</a></p>';
+      if (p) h += '<p>' + ICO_BOOK + t('去复习：', 'Go over: ') + '<a href="' + LESSON_BASE + p.lesson + '/#' + encodeURI(p.slug) + '">' + esc(EN ? p.en : p.zh) + '</a></p>';
     } else {
       h += '<p>' + t('全对！', 'All correct!') + '</p>';
     }
@@ -1487,7 +1491,7 @@
     var id = CK.ids[i], q = Q[id], prob = problemOf(sec, id);
     var guess = function (a) { return '<div class="q-actions"><label class="q-guess"><input type="checkbox" data-act="m-guess"' + (a.g ? ' checked' : '') + '> ' + t('猜的', 'Guessing') + '</label></div>'; };
     app.querySelector('.q-ck-now').innerHTML = '<p class="q-prob"><b>' + t('问题 ', 'もんだい') + prob.no + '</b> ' + esc(D.types[prob.type].ja) + ' <small class="q-muted">' + esc(bi(D.types[prob.type])) + '</small><span class="q-qno">' + ckNo(prob, id) + '番 · ' + (i + group.length) + '/' + CK.ids.length + '</span></p>' +
-      ckPlayer(q, true) + '<p class="q-ck-wait q-muted">🎧 ' + t('正在播放…', 'Playing…') + '</p>' +
+      ckPlayer(q, true) + '<p class="q-ck-wait q-muted">' + ICO_EAR + t('正在播放…', 'Playing…') + '</p>' +
       group.map(function (x) { var a = c.answers[x] || {}; return group.length > 1 ? '<div class="q-sub" data-q="' + x + '">' + ckQuestion(Q[x], true, a.c) + guess(a) + '</div>' : ckQuestion(Q[x], true, a.c) + guess(a); }).join('');
     // Each question its own state (cur is the one a tap is in, as for a passage).
     curs = group.length > 1 ? {} : null;
@@ -1683,7 +1687,7 @@
         return '<li><span lang="ja">' + e.ja + '</span>' + audioBtn(e.audio) + '<br><span class="q-muted">' + esc(EN ? e.en : e.zh) + '</span></li>';
       }).join('') + '</ul>';
     }
-    h += '<p class="q-refs">📖 <a href="' + LESSON_BASE + c.lesson + '/" target="_blank" rel="noopener">' + t('看课文', 'Open the lesson') + '</a> · <a href="' + LESSON_BASE + LEVEL.toLowerCase() + '-practice/#lesson=' + c.lesson + '" target="_blank" rel="noopener">' + t('练这一课的题', 'Practice this lesson') + '</a></p>';
+    h += '<p class="q-refs">' + ICO_BOOK + '<a href="' + LESSON_BASE + c.lesson + '/" target="_blank" rel="noopener">' + t('看课文', 'Open the lesson') + '</a> · <a href="' + LESSON_BASE + LEVEL.toLowerCase() + '-practice/#lesson=' + c.lesson + '" target="_blank" rel="noopener">' + t('练这一课的题', 'Practice this lesson') + '</a></p>';
     back.innerHTML = h; back.hidden = false;
     app.querySelector('.q-flash-hint').hidden = true;
     var names = [t('忘了', 'Again'), t('难', 'Hard'), t('记得', 'Good'), t('简单', 'Easy')];

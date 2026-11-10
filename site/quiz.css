@@ -275,6 +275,13 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 
 body.quiz-busy .quiz-about { display: none; }
 .q-okj { color: var(--text-muted); font-size: .85em; margin-left: .2em; }
+/* Phones: the kanji gloss goes under the option instead of squeezing beside it */
+@media (max-width: 600px) {
+  .q-opt:has(.q-okj) { display: grid; grid-template-columns: auto 1fr auto; align-items: center; column-gap: .8rem; row-gap: .1rem; text-align: left; }
+  .q-opt:has(.q-okj) .q-okj { grid-column: 2; grid-row: 2; margin: 0; }
+  .q-opt:has(.q-okj)::after { grid-column: 3; grid-row: 1; margin: 0; }
+  .q-row { padding: .6rem .8rem; }
+}
 .q-kj-label { display: block; font-size: .78rem; color: var(--text-muted); margin-bottom: .1rem; font-family: var(--font-sans, inherit); }
 .q-sub { border-top: 1px solid var(--border); margin-top: 1.2rem; padding-top: 1rem; }
 .q-subno { margin: 0 0 .3rem; font-size: .85rem; font-weight: 600; color: var(--text-muted); }
