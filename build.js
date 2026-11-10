@@ -2487,7 +2487,7 @@ async function main() {
     <button id="settings-btn" type="button" class="nav-tool-btn nav-tool-extra" aria-label="账号与设置 / Account & settings" title="账号与设置 / Account & settings">${ICON_USER}</button>
   </div>
   <div class="nav-scroll">
-  <div class="nav-header"><a href="${SITE_PATH}" style="color:inherit;text-decoration:none;"><span class="seal-mark" aria-hidden="true" lang="ja">文法</span><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a></div>
+  <div class="nav-header"><a href="${SITE_PATH}" style="color:inherit;text-decoration:none;"><span class="seal-mark" aria-hidden="true" lang="ja">文法</span>jpnotes.dev</a></div>
   ${sidebarHtml.join("\n  ")}
   </div>
 </nav>
@@ -3170,7 +3170,7 @@ ${CSS}
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
-    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><a href="${SITE}${lesson.level}/">${GROUP_NAMES[lesson.level] ? `<span class="lang-zh">${groupName(lesson.level, "zh")}</span><span class="lang-en">${groupName(lesson.level, "en")}</span>` : `JLPT ${lesson.level}`}</a><span class="sep">›</span><span class="breadcrumb-current" title="${lesson.jaTitle.replace(/"/g, '&quot;')}">${lesson.jaTitle}</span>
+    <a href="${SITE}">jpnotes.dev</a><span class="sep">›</span><a href="${SITE}${lesson.level}/">${GROUP_NAMES[lesson.level] ? `<span class="lang-zh">${groupName(lesson.level, "zh")}</span><span class="lang-en">${groupName(lesson.level, "en")}</span>` : `JLPT ${lesson.level}`}</a><span class="sep">›</span><span class="breadcrumb-current" title="${lesson.jaTitle.replace(/"/g, '&quot;')}">${lesson.jaTitle}</span>
   </nav>
   <nav class="prev-next prev-next-top" aria-label="lesson navigation top">
     ${prevHtml}
@@ -3266,8 +3266,8 @@ ${APP_PREFS_JS}
     // a page's name in its JSON-LD and breadcrumb schema.
     const [h1Zh, h1En = h1Zh] = lesson.title.split("||").map(t => t.replace(/^Lesson\s+\d+\s*[–—-]\s*/i, "").trim());
     const pageMeta = {
-      en: { title: lessonTitle, desc: lessonDesc, keywords: lessonKeywords, heading: h1En, home: "Japanese Grammar Notes", points: cleanPointsEn },
-      zh: { title: zhTitle, desc: zhDesc, keywords: zhKeywords, heading: h1Zh, home: "日语语法笔记", points: cleanPoints },
+      en: { title: lessonTitle, desc: lessonDesc, keywords: lessonKeywords, heading: h1En, home: "jpnotes.dev", points: cleanPointsEn },
+      zh: { title: zhTitle, desc: zhDesc, keywords: zhKeywords, heading: h1Zh, home: "jpnotes.dev", points: cleanPoints },
     };
     for (const lang of PAGE_LANGS) {
       const lv = langVariant(lesson.id, lang);
@@ -3365,12 +3365,12 @@ html.theme-dark .grammar-pill { background: #25253a; color: #c8c8d4; }
       en: {
         title: `JLPT ${level} Grammar — ${lessons.length} Free Lessons, ${totalPoints}+ Grammar Points with Examples`,
         desc: `Every JLPT ${level} grammar point in ${lessons.length} free lessons: conjugation, meaning, examples with audio, comparisons of confusable grammar, and practice questions.`,
-        name: `JLPT ${level} Grammar`, home: "Japanese Grammar Notes", keywords: `JLPT ${level} grammar, ${level} grammar list, JLPT ${level} grammar points, ${level} Japanese grammar lessons`,
+        name: `JLPT ${level} Grammar`, home: "jpnotes.dev", keywords: `JLPT ${level} grammar, ${level} grammar list, JLPT ${level} grammar points, ${level} Japanese grammar lessons`,
       },
       zh: {
         title: `JLPT ${level} 语法清单 | ${lessons.length} 课 ${totalPoints}+ 语法点速查 - 日语 ${level} 语法总结`,
         desc: `日语 JLPT ${level} 全部语法点速查清单，系统覆盖 ${lessons.length} 课、${totalPoints}+ 语法点的接续规则、含义用法、例句与易错辨析。免费 JLPT ${level} 备考笔记，适合零基础系统学习与考前冲刺复习，每课均含练习题与答案。`,
-        name: `JLPT ${level} 语法清单`, home: "日语语法笔记", keywords: LEVEL_KEYWORDS[level],
+        name: `JLPT ${level} 语法清单`, home: "jpnotes.dev", keywords: LEVEL_KEYWORDS[level],
       },
     };
     const ovOgImage = `${SITE}${level}/og-image.png`;
@@ -3471,7 +3471,7 @@ ${OVERVIEW_CSS}
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
-    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><span>JLPT ${level}</span>
+    <a href="${SITE}">jpnotes.dev</a><span class="sep">›</span><span>JLPT ${level}</span>
   </nav>
   <h1><span class="lang-zh">JLPT ${level} 语法清单 - ${lessons.length} 课 ${totalPoints}+ 语法点速查</span><span class="lang-en">JLPT ${level} Grammar — ${lessons.length} Lessons, ${totalPoints}+ Grammar Points</span></h1>
   <p class="overview-intro"><span class="lang-zh">${LEVEL_INTRO[level]}</span><span class="lang-en">${LEVEL_INTRO_EN[level]}</span></p>${quizPages(level).length ? `
@@ -3539,9 +3539,9 @@ ${AI_SCRIPT}
     const table = (k) => `<div class="table-scroll"><table class="gl-table"><thead><tr><th><span class="lang-zh">语法</span><span class="lang-en">Pattern</span></th><th><span class="lang-zh">意思</span><span class="lang-en">Meaning</span></th><th><span class="lang-zh">课</span><span class="lang-en">Lesson</span></th></tr></thead><tbody>${rows[k].map((r) =>
       `<tr><td><a href="${SITE}${r.id}/#${encodeURIComponent(r.slug)}" lang="ja">${esc(r.pattern)}</a>${r.romaji ? `<span class="gl-romaji lang-en">${esc(r.romaji)}</span>` : ""}</td><td><span class="lang-zh">${esc(r.zh)}</span><span class="lang-en">${esc(r.en)}</span></td><td><a href="${SITE}${r.id}/">${r.lesson}</a></td></tr>`).join("")}</tbody></table></div>`;
     const glMeta = {
-      en: { title: `Japanese Grammar List — All ${total} JLPT N5 to N1 Grammar Points`, desc: `Every Japanese grammar point from JLPT N5 to N1 on one page: ${total} patterns with romaji and meaning, by level, each linking to a full lesson with audio.`, h1: "Japanese Grammar List: JLPT N5 to N1", crumb: "Grammar list", home: "Japanese Grammar Notes",
+      en: { title: `Japanese Grammar List — All ${total} JLPT N5 to N1 Grammar Points`, desc: `Every Japanese grammar point from JLPT N5 to N1 on one page: ${total} patterns with romaji and meaning, by level, each linking to a full lesson with audio.`, h1: "Japanese Grammar List: JLPT N5 to N1", crumb: "Grammar list", home: "jpnotes.dev",
         lead: `All ${total} grammar points taught on this site, from N5 to N1, one row each. Click a pattern for its lesson: how it attaches, what it means, examples with audio and how it differs from look-alikes. For one level as a printable checklist, use the level's checklist page.` },
-      zh: { title: `日语语法大全 — JLPT N5 到 N1 全部 ${total} 个语法点总结`, desc: `日语语法大全：JLPT N5、N4、N3、N2、N1 全部 ${total} 个语法点一页看完，按级别分组，每个语法点附意思并链接到详细讲解（接续、例句带发音、易混辨析）。`, h1: "日语语法大全：JLPT N5 到 N1", crumb: "语法大全", home: "日语语法笔记",
+      zh: { title: `日语语法大全 — JLPT N5 到 N1 全部 ${total} 个语法点总结`, desc: `日语语法大全：JLPT N5、N4、N3、N2、N1 全部 ${total} 个语法点一页看完，按级别分组，每个语法点附意思并链接到详细讲解（接续、例句带发音、易混辨析）。`, h1: "日语语法大全：JLPT N5 到 N1", crumb: "语法大全", home: "jpnotes.dev",
         lead: `本站 N5 到 N1 的全部 ${total} 个语法点，一行一个。点语法名进入对应课文：接续、含义、带发音的例句和易混辨析。想按级别打勾复习，用各级的语法清单。` },
     };
     const renderGl = (lang, m, lv) => `<!DOCTYPE html>
@@ -3593,7 +3593,7 @@ ${OVERVIEW_CSS}
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
-    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><span><span class="lang-zh">语法大全</span><span class="lang-en">Grammar list</span></span>
+    <a href="${SITE}">jpnotes.dev</a><span class="sep">›</span><span><span class="lang-zh">语法大全</span><span class="lang-en">Grammar list</span></span>
   </nav>
   <h1><span class="lang-zh">${zhOr(glMeta, "h1")}</span><span class="lang-en">${glMeta.en.h1}</span></h1>
   <p class="overview-intro"><span class="lang-zh">${glMeta.zh.lead}</span><span class="lang-en">${glMeta.en.lead}</span></p>
@@ -3635,12 +3635,12 @@ ${AI_SCRIPT}
       en: {
         title: "Confusing Japanese Grammar Pairs Explained (は vs が, に vs で …) & JLPT Exam Guide",
         desc: `Free side-by-side guides to the Japanese grammar learners mix up most (は vs が, に vs で, から vs ので …) plus a JLPT December exam guide. ${compareGuides.length} comparisons.`,
-        name: "Guides", home: "Japanese Grammar Notes",
+        name: "Guides", home: "jpnotes.dev",
       },
       zh: {
         title: "日语易混语法对比（は和が、に和で的区别…）& JLPT 考试指南",
         desc: `把最容易混的日语语法放在同一页对比：は和が、に和で、から和ので、ように和ために……每页有判断口诀和自测题，另附 12 月 JLPT 考前指南。共 ${compareGuides.length} 篇对比，免费。`,
-        name: "专题", home: "日语语法笔记",
+        name: "专题", home: "jpnotes.dev",
       },
     };
     const renderGuides = (lang, m, lv) => `<!DOCTYPE html>
@@ -3701,7 +3701,7 @@ ${OVERVIEW_CSS}
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
-    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><span><span class="lang-zh">专题</span><span class="lang-en">Guides</span></span>
+    <a href="${SITE}">jpnotes.dev</a><span class="sep">›</span><span><span class="lang-zh">专题</span><span class="lang-en">Guides</span></span>
   </nav>
   <h1><span class="lang-zh">专题：易混语法对比 &amp; JLPT 考试指南</span><span class="lang-en">Guides: Confusable Grammar Pairs &amp; the JLPT Exam</span></h1>
   <p class="overview-intro"><span class="lang-zh">课程是按级别一课一课讲的；这里换个角度——把最容易混的几组语法放在同一页里对比，配判断口诀和自测题，再加一份 12 月 JLPT 考前指南。</span><span class="lang-en">The lessons go level by level; these pages cut across them. Each puts one set of easily confused patterns side by side with a rule of thumb and a self-test, plus a guide to the December JLPT.</span></p>
@@ -3855,7 +3855,7 @@ html.theme-dark .about-content blockquote { background: var(--ui-soft); color: #
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
-    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span><span><span class="lang-zh">关于本站</span><span class="lang-en">About</span></span>
+    <a href="${SITE}">jpnotes.dev</a><span class="sep">›</span><span><span class="lang-zh">关于本站</span><span class="lang-en">About</span></span>
   </nav>
   <article class="about-content">${aboutHtml}</article>
   ${siteFooterHtml}
@@ -3987,7 +3987,7 @@ ${minifyCss(QUIZ_CSS)}
 ${sidebarMarkupHtml}
 <main id="content">
   <nav class="breadcrumb" aria-label="breadcrumb">
-    <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span>${level ? `<a href="${SITE_PATH}${level}/">${level}</a><span class="sep">›</span>` : ""}<span>${m.crumb}</span>
+    <a href="${SITE}">jpnotes.dev</a><span class="sep">›</span>${level ? `<a href="${SITE_PATH}${level}/">${level}</a><span class="sep">›</span>` : ""}<span>${m.crumb}</span>
   </nav>
   <header class="quiz-head"><h1>${m.h1}</h1><p>${m.lead}</p><p class="quiz-nav">${m.nav}</p></header>
   ${appAttrs === null ? m.body : `<div id="quiz-app" data-level="${level}" data-audio="${AUDIO_BASE}" ${appAttrs}></div>`}${m.about || ""}
