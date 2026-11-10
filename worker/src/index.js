@@ -92,7 +92,7 @@ const FALLBACK_PER_DAY = 1500;                        // requests a day across a
 // opened on localhost can't use the live relay's quota.
 const ORIGIN_RE = /^https:\/\/jpnotes\.dev$/;
 const LOCAL_RE = /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/;
-const QUOTA_GONE = '今天本站的免费额度已用完，明天再来；或在设置里填自己的 API key。 / The site’s free quota for today is used up; come back tomorrow, or add your own API key in settings.';
+const QUOTA_GONE = '今天本站的免费额度已用完，明天再来。 / The site’s free quota for today is used up; come back tomorrow.';
 
 export default {
   async fetch(req, env, ctx) {
@@ -400,7 +400,7 @@ export class Quota {
     const row = this.sql.exec('SELECT day, recent FROM hits WHERE ip = ?', ip).toArray()[0];
     const day = row ? row.day : 0;
     const recent = (row ? JSON.parse(row.recent) : []).filter((t) => now - t < 60000);
-    if (day >= PER_DAY) return Response.json({ ok: false, why: 'ip-day', message: '你今天的 ' + PER_DAY + ' 次免费提问已用完，明天再来；或在设置里填自己的 API key（Groq 的 key 也免费）。 / You have used today\u2019s ' + PER_DAY + ' free questions; come back tomorrow, or add your own API key in settings.' });
+    if (day >= PER_DAY) return Response.json({ ok: false, why: 'ip-day', message: '你今天的 ' + PER_DAY + ' 次免费提问已用完，明天再来。 / You have used today\u2019s ' + PER_DAY + ' free questions; come back tomorrow.' });
     if (recent.length >= PER_MINUTE) return Response.json({ ok: false, why: 'ip-minute', message: '问得太快了，请一分钟后再试。 / Too many questions in a minute; try again shortly.' });
     recent.push(now);
     this.sql.exec('INSERT INTO hits (ip, day, recent) VALUES (?, ?, ?) ON CONFLICT(ip) DO UPDATE SET day = excluded.day, recent = excluded.recent', ip, day + 1, JSON.stringify(recent));

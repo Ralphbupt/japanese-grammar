@@ -140,90 +140,48 @@ The pages are a **static site**: every push to main triggers a GitHub Actions bu
 
 <a id="ai-setup"></a>
 
-## 「问 AI」两分钟上手||"Ask AI" in two minutes
+## 「问 AI」怎么用||How "Ask AI" works
 
 :::zh
-课程页右上角的 🤖 按钮会打开一个侧栏，AI 已经读过这一课，可以直接问；点任意例句后面的「讲解」，它会简明地拆解这句的语法、给出翻译和易错点；在正文里选中一段文字再点「💬 问 AI」，会把这段放进输入框，问什么由你自己写。
+课程页右上角的 🤖 按钮会打开一个侧栏，AI 已经读过这一课，可以直接问；点任意例句后面的「讲解」，它会简明地拆解这句的语法、给出翻译和易错点；在正文里选中一段文字再点「💬 问 AI」，会把这段放进输入框，问什么由你自己写。练习题和模拟题答完后的「🤖 AI 讲解」用的是同一个侧栏。
 
-**打开就能用**：默认使用本站提供的免费模型（Anthropic 的 Claude Haiku 5.5），不用注册、不用 key，每人每天最多 50 次（全站共用一份每日额度）。在中国大陆、香港、澳门等 Claude 不支持的地区，以及额度用完或出错时，由备用模型回答。AI 的回答可能有错，以课文和解析为准。想不限次数或换更强的模型，可以用你自己的 API key，推荐 **Groq**：免费、不用绑卡、回答基本秒出。
+**打开就能用**：默认使用本站提供的免费模型（Anthropic 的 Claude Haiku 5.5），不用注册、不用 key，每人每天最多 50 次（全站共用一份每日额度）。在中国大陆、香港、澳门等 Claude 不支持的地区，以及额度用完或出错时，由备用模型回答。AI 的回答可能有错，以课文和解析为准。
 
-1. 打开 [console.groq.com/keys](https://console.groq.com/keys)，用 Google 或 GitHub 账号登录。
-2. 点 **Create API Key**，起个名字，复制生成的 key（以 `gsk_` 开头）。
-3. 回到任意课程页，点右上 🤖，点「用自己的 API key」，选「Groq」，粘贴 key，点「连接并开始」。
-
-注意别选成 **xAI Grok**，那是马斯克家的付费模型，名字只差一个字母。
-
-**其他免费选择**
-
-- 在国内：**智谱 GLM** 的 glm-4.7-flash 永久免费、不限量，在 [open.bigmodel.cn](https://open.bigmodel.cn/usercenter/proj-mgmt/apikeys) 创建 key。
-- **Google Gemini**：Flash 系列有免费额度，在 [aistudio.google.com](https://aistudio.google.com/apikey) 创建 key。
-- 完全不出本机：装 [Ollama](https://ollama.com)，`ollama pull qwen3:14b`，然后按设置里的提示用 `OLLAMA_ORIGINS=https://jpnotes.dev ollama serve` 启动。本地 14B 模型一个问题要等 30 秒左右，设置里选「快速」可以跳过思考。
-
-**常见问题**
-
-- *提示 429 / rate limit*：Groq 免费档每分钟 8000 token，整课提问一次要 5–6k，所以约一分钟只能问一次。输入框上方的 📎 默认「跟随阅读位置」，只发送你正在看的那一节，字数少得多；也可以手动选某一节。
-- *提示 Failed to fetch*：服务商不允许浏览器直连，或本地 Ollama 没有带 OLLAMA_ORIGINS 启动。换 Groq / OpenRouter 这类明确支持浏览器直连的服务商即可。
-- *换服务商或模型*：点侧栏标题里的模型名，已配置的几家都在菜单里，随时切换；「思考深度」三档也在那里。
-
-你自己的密钥只存在你的浏览器里，不会经过本站，详见下面的隐私说明。
+输入框上方的 📎 决定随问题发给 AI 的范围：默认「跟随阅读位置」，只发送你正在看的那一节；也可以选整课或某一节。
 :::
 
 :::en
-The 🤖 button on every lesson page opens a side panel; the AI has already read the lesson, so just ask. Click "Explain" after any example sentence for a short grammar breakdown with translation and pitfalls, or select any text and click "💬 Ask AI" to put it in the input box and ask your own question.
+The 🤖 button on every lesson page opens a side panel; the AI has already read the lesson, so just ask. Click "Explain" after any example sentence for a short grammar breakdown with translation and pitfalls, or select any text and click "💬 Ask AI" to put it in the input box and ask your own question. "🤖 AI explanation" after a practice or mock test question uses the same panel.
 
-**It works out of the box**: by default it uses a free model this site provides (Anthropic's Claude Haiku 5.5), with no sign-up and no key, up to 50 questions per reader per day (the whole site shares one daily allowance). In regions Claude does not support, or when the allowance runs out or the model fails, a backup model answers. AI answers can be wrong, so trust the notes and explanations first. For no daily limit or a stronger model, use your own API key. **Groq** is the easy choice: free, no card, answers in about a second.
+**It works out of the box**: by default it uses a free model this site provides (Anthropic's Claude Haiku 5.5), with no sign-up and no key, up to 50 questions per reader per day (the whole site shares one daily allowance). In regions Claude does not support, or when the allowance runs out or the model fails, a backup model answers. AI answers can be wrong, so trust the notes and explanations first.
 
-1. Open [console.groq.com/keys](https://console.groq.com/keys) and sign in with Google or GitHub.
-2. Click **Create API Key**, give it a name and copy the key (it starts with `gsk_`).
-3. Back on any lesson page, click 🤖, click "Use your own API key", pick "Groq", paste the key and click "Connect and start".
-
-Do not pick **xAI Grok** by mistake; that is Elon Musk’s paid model, one letter apart.
-
-**Other free options**
-
-- **Google Gemini**: the Flash models have a free tier; create a key at [aistudio.google.com](https://aistudio.google.com/apikey).
-- **OpenRouter**: one key for every model; models ending in `:free` cost nothing (50 requests a day).
-- Fully local: install [Ollama](https://ollama.com), run `ollama pull qwen3:14b`, then start it as the settings hint says with `OLLAMA_ORIGINS=https://jpnotes.dev ollama serve`. A local 14B model takes about 30 s per question; the Quick setting skips its thinking phase.
-
-**Troubleshooting**
-
-- *429 / rate limit*: Groq’s free tier allows 8,000 tokens a minute and a whole-lesson question uses 5–6k, so roughly one question per minute. The 📎 selector above the input defaults to "follow my reading", which sends only the grammar point on screen and uses far fewer tokens; you can also pick a section by hand.
-- *Failed to fetch*: the provider blocks browser calls, or local Ollama was started without OLLAMA_ORIGINS. Switch to a provider that supports browser calls, such as Groq or OpenRouter.
-- *Switching providers or models*: click the model name in the panel header; every provider you have configured is in that menu, along with the three thinking-depth settings.
-
-Your own key never leaves your browser and never passes through this site. See the privacy section below.
+The 📎 selector above the input sets what is sent with your question: by default "follow my reading", only the grammar point on screen; you can also pick the whole lesson or one section.
 :::
 
 <a id="ai-privacy"></a>
 
-## 「问 AI」功能的隐私与安全||"Ask AI" privacy & security
+## 「问 AI」功能的隐私||"Ask AI" privacy
 
 :::zh
-课程页右上角的 🤖「问 AI」侧栏可以把当前课的内容连同你的问题发给一个大模型。它的设计原则是：**本站永远拿不到你的密钥，也不保存你的对话。**
+「问 AI」把当前课的内容连同你的问题发给一个大模型。它的设计原则是：**本站不保存你的问题和回答。**
 
-- **默认的免费模型经过本站中转。** 「本站免费」这一项由一个 Cloudflare Worker（ai.jpnotes.dev）把你的问题和这一课的正文交给 Anthropic 的 Claude，再把回答传回来。如果你所在地区 Claude 不支持，或当天额度用完、出错，会改由 Cloudflare Workers AI 上的模型回答，再不行就由 Groq 或 Cerebras 上的模型回答：都只转发问题和这一课的正文，不附带你的 IP，由这些服务商按各自的隐私政策处理。本站不记录问题、回答，也不开启请求日志；为了每天限次，它只保存 IP 的加盐哈希，按天计数，两天后自动删除；另外只统计每次请求来自哪个按钮（讲解、快捷提问等）和消耗了多少额度，不含内容和 IP。[中转源码](https://github.com/Ralphbupt/japanese-grammar/blob/main/worker/src/index.js)同样公开。不想经过本站，就用你自己的 key。
-- **你自己的 key 不经过本站。** 网站本身是 GitHub Pages 上的静态 HTML。你填的 API key 只存在你这台设备的浏览器里（默认 localStorage；勾选「只在本次会话保存」则关闭标签页即清除）。
-- **用自己的 key 时请求直连服务商。** 提问时，你的浏览器把这一课的正文和你的问题直接发到你选的服务商（Anthropic、OpenAI、DeepSeek、通义千问……或你本机的 Ollama）。中间没有任何中转。
-- **浏览器层面的白名单。** 每个页面都带有 Content-Security-Policy 的 `connect-src` 规则，只允许连接本站、Google Analytics、预设的服务商域名，以及 localhost / 127.0.0.1。即使页面上某段脚本被篡改，浏览器也会拒绝把数据发往白名单之外的任何地址。
-- **明文保护。** 设置里只接受 https:// 或本机地址；把服务商地址改成非官方域名时会显示醒目警告。
-- **自行验证。** 按 F12 打开开发者工具的 Network 面板，再提一个问题：用自己的 key 时你只会看到对该服务商域名的请求。侧栏的[全部源码](https://github.com/Ralphbupt/japanese-grammar/blob/main/site/ai-assistant.js)只有一个文件，欢迎审阅。
-- **本地方案。** 想完全不出本机，用 Ollama / LM Studio 跑本地模型即可，浏览器只会访问 localhost。
+- **回答经过本站中转。** 由一个 Cloudflare Worker（ai.jpnotes.dev）把你的问题和这一课的正文交给 Anthropic 的 Claude，再把回答传回来。如果你所在地区 Claude 不支持，或当天额度用完、出错，会改由 Cloudflare Workers AI 上的模型回答，再不行就由 Groq 或 Cerebras 上的模型回答：都只转发问题和这一课的正文，不附带你的 IP，由这些服务商按各自的隐私政策处理。本站不记录问题、回答，也不开启请求日志；为了每天限次，它只保存 IP 的加盐哈希，按天计数，两天后自动删除；另外只统计每次请求来自哪个按钮（讲解、快捷提问等）和消耗了多少额度，不含内容和 IP。[中转源码](https://github.com/Ralphbupt/japanese-grammar/blob/main/worker/src/index.js)同样公开。
+- **对话只在你的浏览器里。** 每一课的对话记录、练习题的讲解记录都存在这台设备的浏览器里（localStorage），不上传，也不随账号同步；点「清空对话」即删除。
+- **浏览器层面的白名单。** 每个页面都带有 Content-Security-Policy 的 `connect-src` 规则，只允许连接本站自己的服务（AI 中转、账号同步）、Google Analytics 和 Google 登录，以及开发用的 localhost。即使页面上某段脚本被篡改，浏览器也会拒绝把数据发往白名单之外的任何地址。
+- **自行验证。** 按 F12 打开开发者工具的 Network 面板，再提一个问题：你只会看到发往 ai.jpnotes.dev 的请求。侧栏的[全部源码](https://github.com/Ralphbupt/japanese-grammar/blob/main/site/ai-assistant.js)只有一个文件，欢迎审阅。
 
-免费模型的费用为零，由本站承担额度；用自己的 key 时费用由你和服务商结算，本站不参与、不抽成。
+「问 AI」免费，额度由本站承担。早期版本可以填自己的 API key 直连其他服务商；因为没有人使用，这个功能已于 2026 年 11 月移除，之前保存在浏览器里的密钥会在下次打开侧栏时自动清除。
 :::
 
 :::en
-The 🤖 "Ask AI" side panel on lesson pages sends the current lesson plus your question to a large language model. Its design rule: **this site never receives your key and never stores your conversation.**
+"Ask AI" sends the current lesson plus your question to a large language model. Its design rule: **this site does not store your questions or the answers.**
 
-- **The default free model goes through this site's relay.** The "Free" option uses a Cloudflare Worker (ai.jpnotes.dev) that passes your question and the lesson text to Anthropic's Claude and streams the answer back. If Claude isn't supported in your region, or the day's allowance is used up, or it fails, a model on Cloudflare Workers AI answers instead, then one on Groq or Cerebras: in every case only the question and the lesson text are sent, not your IP, and those providers handle the request under their own privacy policies. The relay does not log questions or answers and has request logging turned off; to enforce the daily limit it keeps only a salted hash of your IP, counted per day and deleted after two days. Beyond that it only counts which button each request came from (Explain, quick prompts, …) and how much quota it used — no text, no IP. The [relay source](https://github.com/Ralphbupt/japanese-grammar/blob/main/worker/src/index.js) is public too. To bypass the site entirely, use your own key.
-- **Your own key never touches this site.** The site itself is static HTML on GitHub Pages. Your API key exists only in your browser on your device (localStorage by default; tick "keep for this tab only" and it is cleared when the tab closes).
-- **With your own key, requests go straight to the provider.** When you ask, your browser sends the lesson text and your question straight to the provider you picked (Anthropic, OpenAI, DeepSeek, Qwen… or Ollama on your own machine). Nothing sits in between.
-- **A browser-enforced allowlist.** Every page ships a Content-Security-Policy `connect-src` rule that only permits connections to this site, Google Analytics, the preset provider hosts, and localhost / 127.0.0.1. Even if a script on the page were tampered with, the browser would refuse to send data anywhere else.
-- **No plain-HTTP connections.** Settings accept only https:// or local URLs, and changing a provider's host to a non-official domain shows a prominent warning.
-- **Verify it yourself.** Open DevTools (F12) → Network and ask a question: with your own key, the only requests you will see go to that provider's domain. The panel's [entire source](https://github.com/Ralphbupt/japanese-grammar/blob/main/site/ai-assistant.js) is one file; reviews welcome.
-- **Fully local option.** To keep everything on your machine, run a local model with Ollama or LM Studio; the browser then only talks to localhost.
+- **Answers go through this site's relay.** A Cloudflare Worker (ai.jpnotes.dev) that passes your question and the lesson text to Anthropic's Claude and streams the answer back. If Claude isn't supported in your region, or the day's allowance is used up, or it fails, a model on Cloudflare Workers AI answers instead, then one on Groq or Cerebras: in every case only the question and the lesson text are sent, not your IP, and those providers handle the request under their own privacy policies. The relay does not log questions or answers and has request logging turned off; to enforce the daily limit it keeps only a salted hash of your IP, counted per day and deleted after two days. Beyond that it only counts which button each request came from (Explain, quick prompts, …) and how much quota it used — no text, no IP. The [relay source](https://github.com/Ralphbupt/japanese-grammar/blob/main/worker/src/index.js) is public too.
+- **Conversations stay in your browser.** Each lesson's chat and the log of practice explanations are kept in this device's browser (localStorage); they are not uploaded and an account does not sync them. "Clear chat" deletes them.
+- **A browser-enforced allowlist.** Every page ships a Content-Security-Policy `connect-src` rule that only permits connections to this site's own services (the AI relay, account sync), Google Analytics and Google sign-in, plus localhost for development. Even if a script on the page were tampered with, the browser would refuse to send data anywhere else.
+- **Verify it yourself.** Open DevTools (F12) → Network and ask a question: the only requests you will see go to ai.jpnotes.dev. The panel's [entire source](https://github.com/Ralphbupt/japanese-grammar/blob/main/site/ai-assistant.js) is one file; reviews welcome.
 
-The free model costs you nothing; with your own key, billing is between you and the provider, and this site takes no part and no cut.
+"Ask AI" is free; this site covers the cost. Earlier versions let you add your own API key and talk to other providers directly; nobody used it, so it was removed in November 2026, and a key saved in your browser is deleted the next time you open the panel.
 :::
 
 <a id="account-privacy"></a>
@@ -234,7 +192,7 @@ The free model costs you nothing; with your own key, billing is between you and 
 练习题、模拟题和语法卡片页可以用 Google 账号登录（测试中），登录后做题进度会在你的各个设备之间同步。**登录完全可选：不登录时，进度只存在这个浏览器里，本站的服务器收不到任何东西。**
 
 - **保存什么。** 你的邮箱地址；Google 给这个账号的一串编号（用来认出下次登录的是同一个人）；登录会话（只保存令牌的哈希，180 天后过期）；以及你的做题进度：每题最近几次作答、错题本、每天做了多少题、模拟考成绩和没考完的那一场、语法卡片的复习状态、练习页的几项偏好（每组题数、听力语速等）。为了在合并出错时能恢复，还会保留这份进度最近 3 个旧版本。
-- **不保存什么。** 姓名、头像（Google 会一并发来，本站直接丢弃）；密码（Google 从不把它交给任何网站）；「问 AI」的密钥和对话；IP 地址。这个服务没有开启请求日志。
+- **不保存什么。** 姓名、头像（Google 会一并发来，本站直接丢弃）；密码（Google 从不把它交给任何网站）；「问 AI」的对话；IP 地址。这个服务没有开启请求日志。
 - **存在哪里。** 本站自己的 Cloudflare 数据库（D1，亚太区），只有 api.jpnotes.dev 上的一个 Cloudflare Worker 能读写，[源码](https://github.com/Ralphbupt/japanese-grammar/blob/main/worker/src/account.js)公开。合并两台设备进度的规则在[这个文件](https://github.com/Ralphbupt/japanese-grammar/blob/main/site/sync.js)里。
 - **用来做什么。** 只用来同步进度。不会给你发推广邮件，不会把邮箱或进度交给任何第三方。
 - **Google 能看到什么。** 登录按钮来自 Google 的脚本，只在登录框出现时才加载；Google 会知道你用这个账号登录过 jpnotes.dev，但看不到你的做题进度。
@@ -246,7 +204,7 @@ The free model costs you nothing; with your own key, billing is between you and 
 The practice, mock test and flashcard pages let you sign in with a Google account (in beta) so your progress follows you across devices. **Signing in is optional: without it, progress stays in this browser and this site's server receives nothing.**
 
 - **What is stored.** Your email address; the id number Google assigns to the account (to recognise the same person next time); your sign-in sessions (only a hash of the token, expiring after 180 days); and your progress: the last few answers per question, the review list, how many questions you did each day, mock test results and an unfinished test, flashcard review state, and a few practice settings (set size, listening speed and the like). The three previous versions of that progress are kept as well, to recover from a bad merge.
-- **What is not stored.** Your name and picture (Google sends them along; they are discarded); a password (Google never gives one to any site); "Ask AI" keys or conversations; IP addresses. Request logging is turned off for this service.
+- **What is not stored.** Your name and picture (Google sends them along; they are discarded); a password (Google never gives one to any site); "Ask AI" conversations; IP addresses. Request logging is turned off for this service.
 - **Where.** In this site's own Cloudflare database (D1, Asia-Pacific), readable and writable only by one Cloudflare Worker at api.jpnotes.dev, whose [source](https://github.com/Ralphbupt/japanese-grammar/blob/main/worker/src/account.js) is public. The rules for merging two devices' progress are in [this file](https://github.com/Ralphbupt/japanese-grammar/blob/main/site/sync.js).
 - **What it is used for.** Syncing your progress, nothing else. No marketing email, and neither your address nor your progress is passed to anyone.
 - **What Google sees.** The sign-in button comes from Google's script, loaded only when the sign-in box is shown. Google learns that you signed in to jpnotes.dev with that account; it does not see your progress.
