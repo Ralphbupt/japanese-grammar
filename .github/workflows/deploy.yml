@@ -57,6 +57,11 @@ jobs:
         continue-on-error: true
         run: curl -sf https://jpnotes.dev/sitemap.xml -o prev-sitemap.xml || rm -f prev-sitemap.xml
 
+      # wrangler needs Node 22; the site build above stays on 20.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
       # Uploads only the files that changed. wrangler comes from worker/'s lockfile.
       - name: Deploy to Cloudflare
         working-directory: worker
