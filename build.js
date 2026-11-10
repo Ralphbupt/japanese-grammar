@@ -2487,7 +2487,7 @@ async function main() {
     <button id="settings-btn" type="button" class="nav-tool-btn nav-tool-extra" aria-label="账号与设置 / Account & settings" title="账号与设置 / Account & settings">${ICON_USER}</button>
   </div>
   <div class="nav-scroll">
-  <div class="nav-header"><a href="${SITE_PATH}" style="color:inherit;text-decoration:none;"><span class="seal-mark" aria-hidden="true" lang="ja">文法</span>jpnotes.dev</a></div>
+  <div class="nav-header"><a href="${SITE_PATH}" style="color:inherit;text-decoration:none;"><span class="seal-mark" aria-hidden="true" lang="ja">合格</span>jpnotes.dev</a></div>
   ${sidebarHtml.join("\n  ")}
   </div>
 </nav>
