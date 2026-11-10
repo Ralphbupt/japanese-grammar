@@ -209,13 +209,13 @@
     if (busy) { again = true; return Promise.resolve(); }
     busy = true; again = false;
     setStatus('busy');
-    var tries = 0, st = state();
+    var tries = 0, st = state(), moved = false;      // moved: something actually came down or went up
     function step() {
       var mine = st.get(), merged = merge(mine, remote.data && clone(remote.data));   // a copy: quiz.js will change what it is given
       if (remote.data && !same(merged, mine)) {
         var a = acct();
         if (!a.backup) { ls.set('jp_quiz_v1_backup', JSON.stringify({ at: Date.now(), data: mine })); a.backup = 1; setAcct(a); }
-        st.set(merged);
+        st.set(merged); moved = true;
         // Progress from another device arrived here: the thing accounts are for.
         track('account_merge', { answers: Object.keys(merged.answers || {}).length - Object.keys(mine.answers || {}).length });
       }
@@ -224,12 +224,13 @@
       var send = strip(cur); send.at = cur.at || Date.now();
       return api('PUT', '/sync', { version: remote.version, data: send }).then(function (r) {
         if (r.status === 409) { remote = r.data; if (++tries > 4) throw new Error(t('同步冲突，请稍后再试', 'Sync conflict — try again later')); return step(); }
-        remote = { version: r.data.version, data: clone(send) };
+        remote = { version: r.data.version, data: clone(send) }; moved = true;
       });
     }
     var first = pull || !remote ? api('GET', '/sync').then(function (r) { remote = r.data; }) : Promise.resolve();
     return first.then(step).then(function () {
-      var a = acct(); if (a.token) { a.version = remote.version; a.at = Date.now(); setAcct(a); }
+      // `at`: last check; `moved`: last time progress was transferred, which is what the panel shows.
+      var a = acct(); if (a.token) { a.version = remote.version; a.at = Date.now(); if (moved || !a.moved) a.moved = Date.now(); setAcct(a); }
       setStatus('ok');
     }).catch(function (e) {
       if (acct().token) setStatus('error', e.message);
@@ -247,7 +248,8 @@
   document.addEventListener('visibilitychange', function () {
     if (!acct().token) return;
     if (document.hidden) { if (timer) { clearTimeout(timer); timer = null; sync(); } }
-    else if (Date.now() - lastPull > 60000) pull();          // back on this tab: the other device may have moved on
+    // Back on a practice tab after a while: the other device may have moved on.
+    else if (root.jpQuizState && Date.now() - lastPull > 300000) pull();
   });
 
   // ─── Managing progress: replace it (clear, restore, import), export it ───
@@ -327,7 +329,10 @@
 
   // ─── The account block of the settings dialog ───
   var box = null;
-  function time(ms) { var d = new Date(ms); return ('0' + d.getHours()).slice(-2) + ':' + ('0' + d.getMinutes()).slice(-2); }
+  function time(ms) {
+    var d = new Date(ms), hm = ('0' + d.getHours()).slice(-2) + ':' + ('0' + d.getMinutes()).slice(-2);
+    return d.toDateString() === new Date().toDateString() ? hm : (d.getMonth() + 1) + '/' + d.getDate() + ' ' + hm;
+  }
   function about() { return '<a href="/' + (EN() ? '' : 'zh/') + 'about/#account-privacy">' + t('保存了什么、怎么删除', 'What is stored and how to delete it') + '</a>'; }
   function render() {
     if (!box) return;
@@ -343,7 +348,7 @@
     }
     var line = status.kind === 'busy' ? t('同步中…', 'Syncing…') :
       status.kind === 'error' ? '<span class="acct-err">' + t('同步失败：', 'Sync failed: ') + esc(status.msg) + '</span>' :
-      a.at ? t('进度已同步 ', 'Progress synced ') + time(a.at) : '';
+      a.at ? t('进度已是最新', 'Progress is up to date') + (a.moved ? t(' · 上次更新 ', ' · last change ') + time(a.moved) : '') : '';
     box.innerHTML = '<p class="acct-title">' + esc(a.email) + '</p>' +
       '<p class="acct-muted">' + line + '</p>' +
       '<div class="acct-actions"><button type="button" class="acct-btn" data-acct="sync">' + t('立即同步', 'Sync now') + '</button><button type="button" class="acct-btn" data-acct="out">' + t('退出登录', 'Sign out') + '</button>' +
@@ -396,6 +401,7 @@
       versions = null;
       track('account_view', { signed_in: !!acct().token });
       render();
+      if (acct().token && Date.now() - lastPull > 60000) pull();      // opening the panel checks once
     }
   };
 
@@ -431,8 +437,8 @@
     });
   }
 
-  // Signed in: fetch the server's copy once the page's scripts have run. A
-  // practice page always does; other pages only if the last sync is a minute old.
-  function start() { var a = acct(); if (a.token && (root.jpQuizState || !a.at || Date.now() - a.at > 60000)) pull(); }
+  // Signed in: a practice page fetches the server's copy once its scripts have
+  // run. Other pages change nothing and don't ask; opening the panel does.
+  function start() { if (acct().token && root.jpQuizState) pull(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else setTimeout(start, 0);
 })(typeof window !== 'undefined' ? window : this);
