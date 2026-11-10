@@ -111,14 +111,16 @@ async function userFor(env, provider, who) {
 }
 
 // ─── Email codes ───
+// English by default; a reader on a Chinese page gets the Chinese lines under it.
 function mail(code, zh) {
-  const subject = zh ? `${code} 是你的 jpnotes 登录验证码` : `${code} is your jpnotes sign-in code`;
-  const lines = zh
-    ? [`你的 jpnotes.dev 登录验证码是：${code}`, `${CODE_MINUTES} 分钟内有效。如果不是你本人在登录，忽略这封邮件即可。`]
-    : [`Your sign-in code for jpnotes.dev is: ${code}`, `It is valid for ${CODE_MINUTES} minutes. If you didn't ask for it, you can ignore this email.`];
+  const en = [`Your sign-in code for jpnotes.dev is: ${code}`, `It is valid for ${CODE_MINUTES} minutes. If you didn't ask for it, you can ignore this email.`];
+  const cn = [`你的 jpnotes.dev 登录验证码是：${code}`, `${CODE_MINUTES} 分钟内有效。如果不是你本人在登录，忽略这封邮件即可。`];
+  const big = (line) => line.replace(code, `<b style="font-size:22px;letter-spacing:2px">${code}</b>`);
+  const block = (l) => `<p>${big(l[0])}</p><p style="color:#666;font-size:14px">${l[1]}</p>`;
   return {
-    subject, text: lines.join('\n\n'),
-    html: `<div style="font-family:system-ui,sans-serif;font-size:16px;line-height:1.6;color:#222"><p>${lines[0].replace(code, `<b style="font-size:22px;letter-spacing:2px">${code}</b>`)}</p><p style="color:#666;font-size:14px">${lines[1]}</p></div>`,
+    subject: `${code} is your jpnotes sign-in code`,
+    text: en.join('\n\n') + (zh ? '\n\n' + cn.join('\n\n') : ''),
+    html: `<div style="font-family:system-ui,sans-serif;font-size:16px;line-height:1.6;color:#222">${block(en)}${zh ? `<hr style="border:0;border-top:1px solid #ddd;margin:18px 0">${block(cn)}` : ''}</div>`,
   };
 }
 
