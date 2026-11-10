@@ -67,6 +67,7 @@
     });
     document.querySelectorAll('.js-ruby-toggle').forEach(function (i) { i.checked = !hide; });
     document.querySelectorAll('.js-lang-btn').forEach(function (b) { b.textContent = en ? '中文' : 'EN'; });
+    document.querySelectorAll('.js-lang-set').forEach(function (b) { b.setAttribute('aria-pressed', (b.getAttribute('data-lang') === 'en') === en ? 'true' : 'false'); });
   }
 
   function setTheme(next) {
@@ -285,41 +286,42 @@
       '<div id="settings-box" role="dialog" aria-modal="true" aria-label="账号与设置 / Account & settings">' +
         '<div class="settings-head">' +
           '<h2><span class="lang-zh">账号与设置</span><span class="lang-en">Account &amp; settings</span></h2>' +
+          '<button type="button" class="settings-x" aria-label="关闭 / Close">✕</button>' +
         '</div>' +
-        // Filled by sync.js (window.jpAccount.mount) each time the dialog opens.
+        // Account and progress cards: filled by sync.js (window.jpAccount.mount) each time the dialog opens.
         '<div class="acct" id="acct-slot" hidden></div>' +
-        '<ul class="settings-list">' +
-          '<li class="settings-row settings-row-theme">' +
-            '<div><div class="settings-label"><span class="lang-zh">主题</span><span class="lang-en">Theme</span></div>' +
-            '<div class="settings-desc"><span class="lang-zh">自动：白天纸张、夜间深色，跟随系统</span><span class="lang-en">Auto: paper by day, dark at night, following your system</span></div>' +
-            themeChoicesHtml() + '</div>' +
-          '</li>' +
-          '<li class="settings-row">' +
-            '<div><div class="settings-label"><span class="lang-zh">汉字注音</span><span class="lang-en">Furigana</span></div>' +
-            '<div class="settings-desc"><span class="lang-zh">在日语例句上方显示读音</span><span class="lang-en">Show readings above kanji</span></div></div>' +
-            '<div class="settings-control"><label><input type="checkbox" class="js-ruby-toggle" checked> <span class="lang-zh">显示</span><span class="lang-en">Show</span></label></div>' +
-          '</li>' +
-          '<li class="settings-row">' +
-            '<div><div class="settings-label"><span class="lang-zh">界面语言</span><span class="lang-en">UI language</span></div>' +
-            '<div class="settings-desc"><span class="lang-zh">中文 / English</span><span class="lang-en">Chinese / English</span></div></div>' +
-            '<div class="settings-control"><button type="button" class="js-lang-btn">EN</button></div>' +
-          '</li>' +
-          '<li class="settings-row">' +
-            '<div><div class="settings-label"><span class="lang-zh">分享本页</span><span class="lang-en">Share this page</span></div>' +
-            '<div class="settings-desc"><span class="lang-zh">复制链接，或发到社交平台</span><span class="lang-en">Copy the link or post it</span></div></div>' +
-            '<div class="settings-control"><button type="button" class="js-share-row"><span class="lang-zh">分享</span><span class="lang-en">Share</span></button></div>' +
-          '</li>' +
-        '</ul>' +
-        '<div class="settings-preview">' +
-          '<div class="settings-preview-title"><span class="lang-zh">注音预览</span><span class="lang-en">Furigana preview</span></div>' +
-          '<p><ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby>起きて、<ruby>顔<rp>(</rp><rt>かお</rt><rp>)</rp></ruby>を<ruby>洗<rp>(</rp><rt>あら</rt><rp>)</rp></ruby>います。</p>' +
-        '</div>' +
+        '<section class="acct-card settings-card">' +
+          '<p class="acct-title"><span class="lang-zh">显示</span><span class="lang-en">Display</span></p>' +
+          '<ul class="settings-list">' +
+            '<li class="settings-row settings-row-theme">' +
+              '<div><div class="settings-label"><span class="lang-zh">主题</span><span class="lang-en">Theme</span>' +
+                '<span class="settings-desc"><span class="lang-zh">自动 = 白天纸张、夜间深色</span><span class="lang-en">Auto = paper by day, dark at night</span></span></div>' +
+              themeChoicesHtml() + '</div>' +
+            '</li>' +
+            '<li class="settings-row">' +
+              '<div><div class="settings-label"><span class="lang-zh">汉字注音</span><span class="lang-en">Furigana</span></div>' +
+              // The sample is live: it loses its readings when the switch goes off.
+              '<div class="settings-demo" lang="ja"><ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby>起きて、<ruby>顔<rp>(</rp><rt>かお</rt><rp>)</rp></ruby>を<ruby>洗<rp>(</rp><rt>あら</rt><rp>)</rp></ruby>います。</div></div>' +
+              '<label class="settings-switch"><input type="checkbox" class="js-ruby-toggle" checked aria-label="汉字注音 / Furigana"><span></span></label>' +
+            '</li>' +
+            '<li class="settings-row">' +
+              '<div class="settings-label"><span class="lang-zh">界面语言</span><span class="lang-en">Language</span></div>' +
+              '<div class="settings-seg" role="group"><button type="button" class="js-lang-set" data-lang="zh">中文</button><button type="button" class="js-lang-set" data-lang="en">English</button></div>' +
+            '</li>' +
+          '</ul>' +
+        '</section>' +
+        '<div class="settings-more"><button type="button" class="js-share-row">' + SVG + '<path d="M12 2v13"/><path d="m16 6-4-4-4 4"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/></svg>' +
+          '<span class="lang-zh">分享本页</span><span class="lang-en">Share this page</span></button></div>' +
         // What an account does not carry: said here so nobody expects it to follow them.
-        '<p class="settings-foot"><span class="lang-zh">主题、注音这些偏好，以及「问 AI」的对话和设置，只保存在这个浏览器里，不随账号同步。</span>' +
-          '<span class="lang-en">Theme and furigana preferences, and your "Ask AI" conversations and settings, stay in this browser; an account does not sync them.</span></p>' +
+        '<p class="settings-foot"><span class="lang-zh">显示设置和「问 AI」的对话只保存在这个浏览器里，不随账号同步。</span>' +
+          '<span class="lang-en">Display settings and your "Ask AI" conversations stay in this browser; an account does not sync them.</span></p>' +
       '</div>';
     document.body.appendChild(overlay);
     overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
+    overlay.querySelector('.settings-x').addEventListener('click', close);
+    overlay.querySelectorAll('.js-lang-set').forEach(function (b) {
+      b.addEventListener('click', function () { if ((b.getAttribute('data-lang') === 'en') !== isEnUi()) toggleLang(); });
+    });
     var sr = overlay.querySelector('.js-share-row');
     sr.addEventListener('click', function (e) { e.stopPropagation(); jpShare({ src: 'settings', anchor: sr }); });
     wireControls(overlay);

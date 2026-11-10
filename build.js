@@ -5880,48 +5880,97 @@ body.ai-open #tc-ai { border-color: var(--accent); box-shadow: 0 0 0 2px var(--a
 /* Settings modal */
 #settings-overlay { position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,.45); display: flex; align-items: flex-start; justify-content: center; padding: 10vh 1rem 1rem; }
 #settings-overlay[hidden] { display: none; }
-#settings-box { width: 100%; max-width: 520px; max-height: 80vh; overflow-y: auto; background: var(--card-bg); color: inherit; border: 1px solid var(--border); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); padding: 1.2rem 1.4rem 1rem; }
-.settings-head h2 { margin: 0 0 .35rem; font-size: var(--text-xl); border: none; padding: 0; color: var(--text-strong); }
-.settings-lead { margin: 0 0 1.2rem; color: var(--text-muted); font-size: .9rem; line-height: 1.6; }
-.settings-list { list-style: none; margin: 0; padding: 0; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; background: var(--bg); }
-.settings-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .9rem 1rem; border-bottom: 1px solid var(--border); }
-.settings-row:last-child { border-bottom: none; }
-.settings-label { font-weight: 600; color: var(--text-strong); font-size: .95rem; }
-.settings-desc { font-size: .8rem; color: var(--text-muted); margin-top: .2rem; line-height: 1.45; }
-.settings-control label { cursor: pointer; display: flex; align-items: center; gap: .35rem; white-space: nowrap; }
-#settings-box .js-theme-btn, #settings-box .js-lang-btn { background: var(--card-bg); border: 1px solid var(--border); color: inherit; border-radius: var(--radius); padding: .4rem .85rem; cursor: pointer; font-size: .9rem; min-width: 5rem; }
-#settings-box .js-theme-btn { font-size: 1.05rem; min-width: 2.8rem; }
-.settings-preview { margin-top: 1.2rem; padding: .9rem 1rem; background: var(--word-bg); border-radius: var(--radius-lg); border: 1px solid var(--border); line-height: 2.2; }
-.settings-preview-title { font-size: .72rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: .05em; margin-bottom: .5rem; }
+#settings-box { width: 100%; max-width: 500px; max-height: 84vh; overflow-y: auto; background: var(--card-bg); color: inherit; border: 1px solid var(--border); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); padding: 1.1rem 1.2rem 1.1rem; }
+.settings-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: .9rem; }
+.settings-head h2 { margin: 0; font-size: 1.15rem; border: none; padding: 0; color: var(--text-strong); }
+.settings-x { flex: none; width: 2rem; height: 2rem; border: 0; border-radius: 50%; background: none; color: var(--text-muted); font-size: .95rem; cursor: pointer; }
+.settings-x:hover { background: var(--word-bg); color: var(--text-strong); }
+/* Display: a card like the account ones, its rows separated by hairlines */
+.settings-card { margin-top: .8rem; }
+#settings-box .settings-list { list-style: none; margin: .5rem 0 0; padding: 0; }
+#settings-box .settings-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin: 0; padding: .75rem 0; border-radius: 0; background: none; border-top: 1px solid var(--border); }
+#settings-box .settings-row:last-child { padding-bottom: .1rem; }
+#settings-box .settings-row-theme { display: block; }
+#settings-box .theme-choices { display: grid; grid-template-columns: repeat(5, 1fr); gap: .35rem; }
+#settings-box .theme-choice { justify-content: center; padding: .38rem .2rem; font-size: .82rem; gap: .35rem; min-width: 0; }
+#settings-box .acct-levels li, #settings-box .acct-versions li { margin: 0; }
+.settings-label { font-weight: 600; color: var(--text-strong); font-size: .9rem; }
+.settings-desc { font-weight: 400; font-size: .78rem; color: var(--text-muted); margin-left: .6em; }
+.settings-demo { margin-top: .35rem; font-size: .95rem; line-height: 2; color: var(--text-muted); }
+.settings-switch { flex: none; position: relative; width: 2.6rem; height: 1.5rem; cursor: pointer; }
+.settings-switch input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.settings-switch span { position: absolute; inset: 0; border-radius: 999px; background: var(--border); transition: background .15s; }
+.settings-switch span::after { content: ""; position: absolute; top: 2px; left: 2px; width: calc(1.5rem - 4px); height: calc(1.5rem - 4px); border-radius: 50%; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.3); transition: transform .15s; }
+.settings-switch input:checked + span { background: var(--accent); }
+.settings-switch input:checked + span::after { transform: translateX(1.1rem); }
+.settings-switch input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
+.settings-seg { flex: none; display: inline-flex; padding: 2px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card-bg); }
+.settings-seg button { border: 0; background: none; color: var(--text-muted); padding: .3rem .8rem; border-radius: calc(var(--radius) - 2px); font: inherit; font-size: .85rem; cursor: pointer; }
+.settings-seg button[aria-pressed="true"] { background: var(--word-bg); color: var(--text-strong); font-weight: 600; box-shadow: 0 0 0 1px var(--border); }
+.settings-more { display: flex; justify-content: center; margin-top: .9rem; }
+.settings-more button { display: inline-flex; align-items: center; gap: .45rem; border: 1px solid var(--border); border-radius: 999px; background: none; color: inherit; padding: .4rem 1rem; font: inherit; font-size: .88rem; cursor: pointer; }
+.settings-more button:hover { border-color: var(--accent); }
+.settings-more svg { width: 15px; height: 15px; }
 @media (max-width: 600px) { #settings-overlay { padding: 5vh .6rem 1rem; } }
-/* Account block at the top of the settings dialog (filled by site/sync.js) */
-.acct { margin: 0 0 1.2rem; padding: .9rem 1rem; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--word-bg); }
-.acct-title { font-weight: 700; color: var(--text-strong); margin: 0 0 .35rem; }
-.acct p { margin: .3rem 0; font-size: .9rem; line-height: 1.6; }
+/* Account and progress cards at the top of the settings dialog (filled by site/sync.js) */
+.acct { margin: 0; display: grid; gap: .8rem; }
+.acct-card { padding: 1rem 1.1rem; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--word-bg); }
+.acct-title { font-weight: 700; font-size: 1rem; color: var(--text-strong); margin: 0; }
+.acct-card p { margin: .25rem 0 0; font-size: .88rem; line-height: 1.55; }
+.acct-card p.acct-title { font-size: 1rem; margin: 0; }
 .acct-muted { color: var(--text-muted); }
+.acct-fine { color: var(--text-muted); font-size: .8rem !important; margin-top: .8rem !important; }
 .acct-err { color: var(--accent); }
-.acct-g { min-height: 44px; margin: .6rem 0 .2rem; color-scheme: light; }
-.acct-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .8rem; margin-top: .6rem; }
-.acct-btn, .settings-control button { background: var(--card-bg); border: 1px solid var(--border); color: inherit; border-radius: var(--radius); padding: .4rem .85rem; cursor: pointer; font: inherit; font-size: .9rem; }
+.acct-ok { color: #3fb950; font-weight: 700; }
+.acct a { color: var(--text-muted); text-decoration: underline; text-underline-offset: 2px; }
+.acct a:hover, .acct-link:hover { color: var(--accent); }
+.acct-link { background: none; border: 0; padding: 0; color: var(--text-muted); text-decoration: underline; text-underline-offset: 2px; cursor: pointer; font: inherit; }
+/* Sign in: Google's button, a rule with "or", then one field with its button inside */
+.acct-g { margin-top: .9rem; min-height: 40px; color-scheme: light; }
+.acct-wide { width: 100%; }
+.acct-or { display: flex; align-items: center; gap: .7rem; margin: .8rem 0; color: var(--text-muted); font-size: .8rem; }
+.acct-or::before, .acct-or::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+.acct-field { display: flex; margin-top: .5rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card-bg); overflow: hidden; }
+.acct-field:focus-within { border-color: var(--accent); }
+.acct-field input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; color: inherit; padding: .6rem .8rem; font: inherit; font-size: .92rem; }
+.acct-field input.acct-code { letter-spacing: .25em; font-variant-numeric: tabular-nums; }
+.acct-field button { flex: none; border: 0; border-left: 1px solid var(--border); background: none; color: var(--text-strong); padding: 0 1rem; font: inherit; font-size: .88rem; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.acct-field button:hover { color: var(--accent); }
+.acct-field button.acct-primary { background: var(--accent); color: #fff; border-left-color: var(--accent); }
+.acct-field button[disabled] { opacity: .55; cursor: default; }
+/* Signed in */
+.acct-id { display: flex; align-items: center; gap: .8rem; }
+.acct-id > div { min-width: 0; }
+.acct-id .acct-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.acct-avatar { flex: none; width: 2.4rem; height: 2.4rem; border-radius: 50%; display: grid; place-items: center; background: var(--card-bg); border: 1px solid var(--border); font-weight: 700; color: var(--text-strong); }
+.acct-actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .8rem; }
+.acct-btn, .settings-control button { background: var(--card-bg); border: 1px solid var(--border); color: inherit; border-radius: var(--radius); padding: .42rem .85rem; cursor: pointer; font: inherit; font-size: .88rem; }
 .acct-btn:hover, .settings-control button:hover { border-color: var(--accent); }
-.acct-link { background: none; border: 0; padding: 0; color: var(--text-muted); text-decoration: underline; cursor: pointer; font: inherit; font-size: .85rem; }
-.acct a, .settings-foot a { color: var(--link); }
-.settings-foot { margin: 1rem 0 0; font-size: .82rem; line-height: 1.6; color: var(--text-muted); }
-/* Email-code sign-in */
-.acct-mail { margin-top: .5rem; }
-.acct-input { flex: 1 1 11rem; min-width: 0; background: var(--card-bg); color: inherit; border: 1px solid var(--border); border-radius: var(--radius); padding: .4rem .6rem; font: inherit; font-size: .9rem; }
-.acct-code { flex: 0 1 9rem; letter-spacing: .15em; }
-/* Progress management inside the account block */
-.acct-prog { margin-top: .9rem; padding-top: .8rem; border-top: 1px solid var(--border); }
-.acct-sub .acct-muted { font-weight: 400; font-size: .85rem; margin-left: .4em; }
-.acct-levels { list-style: none; margin: .2rem 0 .1rem; padding: 0; font-size: .9rem; line-height: 1.7; }
-.acct-levels b { display: inline-block; min-width: 2.2em; color: var(--text-strong); }
 .acct-btn[disabled] { opacity: .5; cursor: default; }
-.acct-versions { margin-top: .6rem; }
-.acct-versions ul { list-style: none; margin: .3rem 0 0; padding: 0; }
-.acct-versions li { display: flex; align-items: center; justify-content: space-between; gap: .8rem; padding: .3rem 0; border-top: 1px solid var(--border); font-size: .88rem; }
-.acct-clear { margin-top: .7rem; }
-.acct-scope { background: var(--card-bg); color: inherit; border: 1px solid var(--border); border-radius: var(--radius); padding: .3rem .5rem; font: inherit; font-size: .85rem; }
+.acct-sm { padding: .25rem .65rem; font-size: .82rem; }
+.acct-danger:hover { color: var(--accent); }
+.settings-foot { margin: .8rem 0 0; font-size: .78rem; line-height: 1.6; color: var(--text-muted); text-align: center; }
+.settings-foot a { color: var(--link); }
+/* Progress */
+.acct-head { display: flex; align-items: baseline; justify-content: space-between; gap: .8rem; }
+.acct-head .acct-muted { font-size: .82rem; }
+.acct-levels { list-style: none; margin: .6rem 0 0; padding: 0; font-size: .9rem; }
+.acct-levels li { display: flex; align-items: baseline; gap: .8rem; padding: .32rem 0; border-top: 1px solid var(--border); }
+.acct-levels li:first-child { border-top: 0; }
+.acct-levels b { flex: none; width: 2.2em; color: var(--text-strong); }
+.acct-levels span { color: var(--text-muted); }
+/* (#settings-box: the site-wide details and checklist styles must not reach in here) */
+#settings-box .acct-manage { margin: .7rem 0 0; border: 0; border-top: 1px solid var(--border); border-radius: 0; background: none; padding: .6rem 0 0; }
+.acct-manage summary { cursor: pointer; font-size: .85rem; font-weight: 400; color: var(--text-muted); list-style: none; background: none; border: 0; padding: 0; margin: 0; }
+.acct-manage summary::-webkit-details-marker { display: none; }
+.acct-manage summary::after { content: " ›"; }
+.acct-manage[open] summary::after { content: " ⌄"; }
+.acct-manage summary:hover { color: var(--accent); }
+.acct-versions { margin-top: .7rem; }
+.acct-versions ul { list-style: none; margin: .4rem 0 0; padding: 0; }
+.acct-versions li { display: flex; align-items: center; justify-content: space-between; gap: .8rem; padding: .35rem 0; border-top: 1px solid var(--border); font-size: .86rem; }
+.acct-clear { display: flex; align-items: center; gap: .5rem; margin-top: .8rem; font-size: .85rem; }
+.acct-scope { background: var(--card-bg); color: inherit; border: 1px solid var(--border); border-radius: var(--radius); padding: .25rem .4rem; font: inherit; font-size: .82rem; }
 /* The account buttons carry a dot only when syncing has failed (html.acct-warn,
    set by sync.js): signed in and working shows nothing, so it never nags. */
 html.acct-warn #tc-acct, html.acct-warn #settings-btn, html.acct-warn .m-btn[data-m="settings"] { position: relative; }
