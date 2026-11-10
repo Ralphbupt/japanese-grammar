@@ -1,0 +1,14 @@
+# The site itself: dist/ served as static assets by Cloudflare (no script).
+#   npm run build && npx wrangler deploy -c wrangler.site.toml      (from worker/)
+# Requests for files are free and don't count against the Workers plan.
+# dist/_redirects and dist/_headers (written by build.js) are applied by Cloudflare.
+name = "jpnotes-site"
+compatibility_date = "2026-09-01"
+workers_dev = true          # jpnotes-site.<account>.workers.dev, for checks before a domain is attached
+preview_urls = false
+
+[assets]
+directory = "../dist"
+# /lesson18 → /lesson18/ (served from lesson18/index.html), as on GitHub Pages.
+html_handling = "auto-trailing-slash"
+not_found_handling = "404-page"
