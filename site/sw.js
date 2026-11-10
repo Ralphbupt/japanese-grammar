@@ -1,7 +1,9 @@
 /* jpnotes.dev service worker — long-term caching that GitHub Pages can't do
  * (it serves everything with max-age=600 and the headers can't be changed).
  *
- *   /audio/s{hash}.mp3   cache-first (also /audio/choukai/c{hash}.mp3, listening), kept for good: the file name is a hash of
+ *   audio.jpnotes.dev/s{hash}.mp3   (R2; also q…, p…, choukai/c….mp3, and the
+ *                        same names under /audio/ on a local build)
+ *                        cache-first, kept for good: the file name is a hash of
  *                        the sentence, so a given URL never changes. Range
  *                        requests (Safari's <audio> always sends one) are
  *                        answered with 206 slices of the cached file.
@@ -17,7 +19,8 @@
  */
 'use strict';
 
-var V = 'v1';
+var V = 'v2';
+var AUDIO_HOST = 'https://audio.jpnotes.dev';
 var AUDIO = 'audio-' + V, ASSETS = 'assets-' + V, PAGES = 'pages-' + V;
 var LIMITS = {};
 LIMITS[AUDIO] = 600; LIMITS[ASSETS] = 20; LIMITS[PAGES] = 120;
@@ -50,8 +53,12 @@ async function audio(e) {
   var url = e.request.url, cache = await caches.open(AUDIO);
   var res = await cache.match(url);
   if (!res) {
-    res = await fetch(url);                     // whole file, no Range
-    if (!res.ok) return res;
+    // The whole file, no Range. From the audio host it has to be a CORS
+    // response to be sliced below; `?sw` keeps it apart, in Cloudflare's cache,
+    // from the copy an <audio> tag fetched without an Origin (no CORS headers).
+    // If that fails, the browser's own request goes through untouched.
+    try { res = await fetch(url.indexOf(AUDIO_HOST) === 0 ? url + '?sw' : url); } catch (err) { return fetch(e.request); }
+    if (!res.ok) return url.indexOf(AUDIO_HOST) === 0 ? fetch(e.request) : res;
     e.waitUntil(put(AUDIO, url, res.clone()));
   }
   var range = e.request.headers.get('range');
@@ -111,6 +118,7 @@ self.addEventListener('fetch', function (e) {
   var req = e.request;
   if (req.method !== 'GET') return;
   var url = new URL(req.url);
+  if (url.origin === AUDIO_HOST) { if (/^\/(s|q|p|choukai\/c)[0-9a-f]+\.mp3$/.test(url.pathname)) e.respondWith(audio(e)); return; }
   if (url.origin !== self.location.origin) return;
 
   if (/^\/audio\/(s|q|p|choukai\/c)[0-9a-f]+\.mp3$/.test(url.pathname)) e.respondWith(audio(e));
