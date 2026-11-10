@@ -1168,8 +1168,10 @@
   }
 
   function pause(auto, awayMs) {
-    var c = cur2(); if (!c || c.pauseAt || !c.secStart) return;
-    c.pauseAt = Date.now() - (awayMs || 0); save();
+    // Also called for an attempt that was left paused (page closed or reloaded,
+    // then resumed): the clock is still stopped, so the overlay has to be back.
+    var c = cur2(); if (!c || !c.secStart || app.querySelector('.q-paused')) return;
+    if (!c.pauseAt) { c.pauseAt = Date.now() - (awayMs || 0); save(); }
     ckHold();
     var overlay = document.createElement('div');
     overlay.className = 'q-paused';
@@ -1214,6 +1216,7 @@
     else if (act === 'm-unpause') unpause();
     else if (act === 'm-review') mockReview(k);
     else if (act === 'ck-start') ckItem(CK.i);
+    else if (act === 'ck-skip') { if (CK && CK.wait && !cur2().pauseAt) { CK.wait = Date.now(); ckCount(); } }
     else if (act === 'ck-mark') ckMark(k, +el.getAttribute('data-i'));
     else if (act === 'm-ai') {
       var mq = {}, a2 = M.att.answers[k] || {}, P2 = {};
@@ -1488,7 +1491,12 @@
     var c = cur2();
     if (!CK || !c || c.pauseAt) return;
     var left = CK.wait - Date.now(), el = app.querySelector('.q-ck-wait');
-    if (el) el.textContent = '✎ ' + t('作答时间 ', 'Time to answer: ') + Math.max(0, Math.ceil(left / 1000)) + t(' 秒', ' s');
+    // The countdown, with a way on for a reader who has answered (the real test has none).
+    if (el && left > 0) {
+      if (!el.querySelector('.q-ck-left')) el.innerHTML = '✎ ' + t('作答时间 ', 'Time to answer: ') + '<span class="q-ck-left"></span>' + t(' 秒', ' s') +
+        ' <button class="q-btn" data-act="ck-skip">' + (CK.i + CK.n < CK.ids.length ? t('下一题', 'Next') + ' →' : t('结束听力', 'Finish listening') + ' →') + '</button>';
+      el.querySelector('.q-ck-left').textContent = Math.ceil(left / 1000);
+    }
     if (left > 0) return;
     clearInterval(CK.timer); CK.timer = null; CK.wait = null;
     ckItem(CK.i + CK.n);
