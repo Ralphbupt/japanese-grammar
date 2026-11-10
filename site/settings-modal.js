@@ -47,6 +47,7 @@
   // every change goes through here and repaints both.
   // Lucide line icons, the same set as the sidebar toolbar (assets/icons).
   var SVG = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">';
+  var USER_ICON = SVG + '<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>';
   var THEME_ICONS = {
     dark: SVG + '<path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>',
     light: SVG + '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>',
@@ -147,8 +148,9 @@
     sync();
   }
 
-  // Desktop only (CSS hides it at ≤768px, where the sidebar toolbar + modal
-  // take over): one-click search / AI / theme / furigana / language, top right.
+  // Desktop only (CSS hides it at ≤768px, where the phone top bar takes over):
+  // search / AI / language / account, top right. The account button opens the
+  // dialog below, which also holds theme, furigana and share.
   // ─── Share ───
   // jpShare({ url, title, text, src, anchor }): the system share sheet on touch
   // devices, otherwise a small menu (copy link, X, Weibo, Facebook, LINE) under
@@ -256,16 +258,14 @@
     var hasSearch = document.getElementById('search-btn');
     // Any page that loads the AI panel (lessons, practice pages, and a general mode elsewhere).
     var hasAi = document.querySelector('script[src*="ai-assistant.js"]') && document.getElementById('ai-btn');
-    var hasRuby = document.querySelector('.lesson, #content.home');
     var bar = document.createElement('div');
     bar.id = 'top-controls';
     bar.innerHTML =
       (hasSearch ? '<button type="button" class="tc-pill tc-icon" data-proxy="search-btn" aria-label="搜索 / Search" title="搜索 / Search ( / )">' + hasSearch.innerHTML + '</button>' : '') +
-      (document.getElementById('share-btn') ? '<button type="button" class="tc-pill tc-icon js-share" aria-label="分享 / Share" title="分享 / Share">' + document.getElementById('share-btn').innerHTML + '</button>' : '') +
       (hasAi ? '<button type="button" class="tc-pill tc-icon" id="tc-ai" data-proxy="ai-btn" aria-label="问 AI / Ask AI" title="问 AI / Ask AI">' + document.getElementById('ai-btn').innerHTML + '</button>' : '') +
-      '<button type="button" class="tc-pill tc-icon js-theme-btn" aria-label="主题 / Theme" aria-haspopup="true" aria-expanded="false"></button>' +
-      (hasRuby ? '<label class="tc-pill"><input type="checkbox" class="js-ruby-toggle" checked> <span class="lang-zh">显示读音</span><span class="lang-en">Furigana</span></label>' : '') +
-      '<button type="button" class="tc-pill tc-lang js-lang-btn">EN</button>';
+      '<button type="button" class="tc-pill tc-lang js-lang-btn">EN</button>' +
+      // Account, and with it everything set once and left alone: theme, furigana, share.
+      '<button type="button" class="tc-pill tc-icon" id="tc-acct" data-open-settings aria-label="账号与设置 / Account & settings" title="账号与设置 / Account & settings">' + USER_ICON + '</button>';
     document.body.appendChild(bar);
     // Search and AI keep their single owner: forward the click to the sidebar button.
     bar.querySelectorAll('[data-proxy]').forEach(function (b) {
@@ -275,8 +275,6 @@
       });
     });
     wireControls(bar);
-    var sb = bar.querySelector('.js-share');
-    if (sb) sb.addEventListener('click', function (e) { e.stopPropagation(); jpShare({ src: 'top', anchor: sb }); });
   }
 
   function buildUI() {
@@ -284,11 +282,12 @@
     overlay.id = 'settings-overlay';
     overlay.hidden = true;
     overlay.innerHTML =
-      '<div id="settings-box" role="dialog" aria-modal="true" aria-label="设置 / Settings">' +
+      '<div id="settings-box" role="dialog" aria-modal="true" aria-label="账号与设置 / Account & settings">' +
         '<div class="settings-head">' +
-          '<h2><span class="lang-zh">设置</span><span class="lang-en">Settings</span></h2>' +
-          '<p class="settings-lead"><span class="lang-zh">偏好保存在浏览器本地，不会上传到服务器。</span><span class="lang-en">Preferences are stored locally in your browser.</span></p>' +
+          '<h2><span class="lang-zh">账号与设置</span><span class="lang-en">Account &amp; settings</span></h2>' +
         '</div>' +
+        // Filled by sync.js (window.jpAccount.mount) each time the dialog opens.
+        '<div class="acct" id="acct-slot" hidden></div>' +
         '<ul class="settings-list">' +
           '<li class="settings-row settings-row-theme">' +
             '<div><div class="settings-label"><span class="lang-zh">主题</span><span class="lang-en">Theme</span></div>' +
@@ -305,14 +304,24 @@
             '<div class="settings-desc"><span class="lang-zh">中文 / English</span><span class="lang-en">Chinese / English</span></div></div>' +
             '<div class="settings-control"><button type="button" class="js-lang-btn">EN</button></div>' +
           '</li>' +
+          '<li class="settings-row">' +
+            '<div><div class="settings-label"><span class="lang-zh">分享本页</span><span class="lang-en">Share this page</span></div>' +
+            '<div class="settings-desc"><span class="lang-zh">复制链接，或发到社交平台</span><span class="lang-en">Copy the link or post it</span></div></div>' +
+            '<div class="settings-control"><button type="button" class="js-share-row"><span class="lang-zh">分享</span><span class="lang-en">Share</span></button></div>' +
+          '</li>' +
         '</ul>' +
         '<div class="settings-preview">' +
           '<div class="settings-preview-title"><span class="lang-zh">注音预览</span><span class="lang-en">Furigana preview</span></div>' +
           '<p><ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby>起きて、<ruby>顔<rp>(</rp><rt>かお</rt><rp>)</rp></ruby>を<ruby>洗<rp>(</rp><rt>あら</rt><rp>)</rp></ruby>います。</p>' +
         '</div>' +
+        // What an account does not carry: said here so nobody expects it to follow them.
+        '<p class="settings-foot"><span class="lang-zh">主题、注音这些偏好，以及「问 AI」的对话和设置，只保存在这个浏览器里，不随账号同步。</span>' +
+          '<span class="lang-en">Theme and furigana preferences, and your "Ask AI" conversations and settings, stay in this browser; an account does not sync them.</span></p>' +
       '</div>';
     document.body.appendChild(overlay);
     overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
+    var sr = overlay.querySelector('.js-share-row');
+    sr.addEventListener('click', function (e) { e.stopPropagation(); jpShare({ src: 'settings', anchor: sr }); });
     wireControls(overlay);
     built = true;
   }
@@ -320,6 +329,7 @@
   function open() {
     closeSearch();
     if (!built) buildUI();
+    if (window.jpAccount) window.jpAccount.mount(document.getElementById('acct-slot'));
     overlay.hidden = false;
     document.body.classList.add('settings-open');
     if (window.gaEvent) window.gaEvent('settings_open', {});
@@ -348,9 +358,7 @@
   }
 
   function init() {
-    bindBtn(); buildTopBar();
-    var sb = document.getElementById('share-btn');
-    if (sb) sb.addEventListener('click', function (e) { e.stopPropagation(); jpShare({ src: 'toolbar', anchor: sb }); });
+    buildTopBar(); bindBtn();
   }
   if (document.readyState !== 'loading') init();
   else document.addEventListener('DOMContentLoaded', init);

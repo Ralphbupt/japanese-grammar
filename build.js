@@ -117,7 +117,7 @@ const AI_SCRIPT = `<script src="${SITE_PATH}ai-assistant.js?v=${AI_JS_HASH}" def
 const QUIZ_JS_SRC = fs.readFileSync(path.join(__dirname, "site", "quiz.js"), "utf-8");
 const QUIZ_JS_HASH = require("crypto").createHash("md5").update(QUIZ_JS_SRC).digest("hex").slice(0, 8);
 const QUIZ_CSS = fs.readFileSync(path.join(__dirname, "site", "quiz.css"), "utf-8");
-// Optional sign-in + progress sync on the practice / mock / flashcard pages
+// Optional sign-in + progress sync, on every page
 // (site/sync.js → api.jpnotes.dev, worker/src/account.js). The Google client id
 // is public; the same value is in worker/wrangler.account.toml.
 const SYNC_JS_SRC = fs.readFileSync(path.join(__dirname, "site", "sync.js"), "utf-8");
@@ -129,7 +129,9 @@ const FEEDBACK_JS_HASH = require("crypto").createHash("md5").update(FEEDBACK_JS_
 // Practice / mock test / flashcard pages; QUIZ_PUBLIC and QUIZ_LINKS are set in build-quiz.js.
 const { buildQuiz, loadLevel: loadQuizLevel, LEVELS: QUIZ_LEVELS, TYPES: QUIZ_TYPES, MOCK: QUIZ_MOCK, QUIZ_PUBLIC, QUIZ_LINKS, AUDIO_REQUESTS: QUIZ_AUDIO_REQUESTS, ABOVE_LEVEL, aboveLevel, CK_IMG_DIR: QUIZ_CK_IMG_DIR } = require("./build-quiz");
 const SETTINGS_JS_HASH = require("crypto").createHash("md5").update(fs.readFileSync(path.join(__dirname, "site", "settings-modal.js"))).digest("hex").slice(0, 8);
-const SETTINGS_SCRIPT = `<script src="${SITE_PATH}settings-modal.js?v=${SETTINGS_JS_HASH}" defer></script>`;
+// With it, on every page: sign-in and progress sync (site/sync.js), which fills
+// the account part of the settings dialog.
+const SETTINGS_SCRIPT = `<script src="${SITE_PATH}settings-modal.js?v=${SETTINGS_JS_HASH}" defer></script><script src="${SITE_PATH}sync.js?v=${SYNC_JS_HASH}" data-gclient="${GOOGLE_CLIENT_ID}" defer></script>`;
 // Where pages fetch mp3s from: the R2 bucket behind audio.jpnotes.dev (uploaded
 // by tools/audio-sync.py; keys mirror audio/). AUDIO_BASE=/audio builds a site
 // that plays the local copies instead (rsync audio/ into dist/audio/ first),
@@ -2426,6 +2428,7 @@ async function main() {
   const ICON_SHARE = loadIcon("share.svg");
   const ICON_CHAT = loadIcon("chat.svg");
   const ICON_SETTINGS = loadIcon("settings.svg");
+  const ICON_USER = loadIcon("user.svg");
 
   // ─── Shared sidebar markup ───
   // Used on home, lesson, and level pages so the directory is reachable
@@ -2445,21 +2448,19 @@ async function main() {
   </footer>
   <script src="${SITE_PATH}feedback.js?v=${FEEDBACK_JS_HASH}" defer></script>`;
   // Phones: a top bar (☰ stays the sidebar's own button, at its left end) with
-  // search / AI / share / settings, so they don't hide inside the sidebar.
+  // search / AI / account & settings (which holds share), so they don't hide inside the sidebar.
   const mobileBarHtml = `<div id="m-bar"><a id="m-title" href="${SITE_PATH}"></a>
     <button type="button" class="m-btn" data-m="search" aria-label="搜索 / Search">${ICON_SEARCH}</button>
     <button type="button" class="m-btn" data-m="ai" aria-label="问 AI / Ask AI" hidden>${ICON_CHAT}</button>
-    <button type="button" class="m-btn" data-m="share" aria-label="分享 / Share">${ICON_SHARE}</button>
-    <button type="button" class="m-btn" data-m="settings" aria-label="设置 / Settings">${ICON_SETTINGS}</button>
+    <button type="button" class="m-btn" data-m="settings" aria-label="账号与设置 / Account & settings">${ICON_USER}</button>
   </div>`;
   const sidebarMarkupHtml = `${mobileBarHtml}
 <nav id="sidebar" class="collapsed">
   <div class="nav-tools">
     <button id="menu-toggle" type="button" class="nav-tool-btn" aria-label="显示/收起侧栏 / Toggle sidebar" title="显示/收起侧栏 / Toggle sidebar">${ICON_SIDEBAR}</button>
     <button id="search-btn" type="button" class="nav-tool-btn nav-tool-extra" aria-label="搜索 / Search" title="搜索 / Search ( / )">${ICON_SEARCH}</button>
-    <button id="share-btn" type="button" class="nav-tool-btn nav-tool-extra" aria-label="分享 / Share" title="分享 / Share">${ICON_SHARE}</button>
     <button id="ai-btn" type="button" class="nav-tool-btn nav-tool-extra nav-tool-ai" aria-label="问 AI / Ask AI" title="问 AI / Ask AI">${ICON_CHAT}</button>
-    <button id="settings-btn" type="button" class="nav-tool-btn nav-tool-extra" aria-label="设置 / Settings" title="设置 / Settings">${ICON_SETTINGS}</button>
+    <button id="settings-btn" type="button" class="nav-tool-btn nav-tool-extra" aria-label="账号与设置 / Account & settings" title="账号与设置 / Account & settings">${ICON_USER}</button>
   </div>
   <div class="nav-scroll">
   <div class="nav-header"><a href="${SITE_PATH}" style="color:inherit;text-decoration:none;"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a></div>
@@ -3949,14 +3950,14 @@ ${sidebarMarkupHtml}
     <a href="${SITE}"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a><span class="sep">›</span>${level ? `<a href="${SITE_PATH}${level}/">${level}</a><span class="sep">›</span>` : ""}<span>${m.crumb}</span>
   </nav>
   <header class="quiz-head"><h1>${m.h1}</h1><p>${m.lead}</p><p class="quiz-nav">${m.nav}</p></header>
-  ${appAttrs === null ? m.body : `<div id="quiz-app" data-level="${level}" data-audio="${AUDIO_BASE}" data-gclient="${GOOGLE_CLIENT_ID}" ${appAttrs}></div>`}${m.about || ""}
+  ${appAttrs === null ? m.body : `<div id="quiz-app" data-level="${level}" data-audio="${AUDIO_BASE}" ${appAttrs}></div>`}${m.about || ""}
   <div id="quiz-feedback"></div>
   ${siteFooterHtml}
 </main>
 <script>
 ${APP_PREFS_JS}
 </script>
-${appAttrs === null ? "" : `<script src="${SITE_PATH}quiz.js?v=${QUIZ_JS_HASH}" defer></script><script src="${SITE_PATH}sync.js?v=${SYNC_JS_HASH}" defer></script>`}
+${appAttrs === null ? "" : `<script src="${SITE_PATH}quiz.js?v=${QUIZ_JS_HASH}" defer></script>`}
 ${AI_SCRIPT}
 </body>
 </html>`;
@@ -3991,7 +3992,7 @@ ${AI_SCRIPT}
 <li>${L("<b>按题型练</b>：专攻一种题型，比如排序题（★）或信息检索。", "<b>By question type</b>: drill one format, such as sentence order (★) or information retrieval.")}</li>
 <li>${L("<b>解析</b>：答完立刻看正确答案为什么对、每个错误选项为什么错，并链到讲这个语法点的课文；还可以让 AI 针对你选的选项讲解。", "<b>Explanations</b>: after each answer, why the right option is right and why each wrong one is wrong, with a link to the lesson that teaches the point — and an AI explanation of the option you picked.")}</li>
 <li>${L("<b>错题本</b>：答错、点了「不会」或答对后点「其实是猜的」的题，当天、3 天后、7 天后再考你，答对才移出。", "<b>Review list</b>: questions you miss, mark “I don’t know”, or flag “I guessed” after getting right come back the same day, after 3 days and after 7 days, until you get them right.")}</li>
-<li>${L("进度只保存在这个浏览器里，不用注册。", "Progress stays in this browser; no account needed.")}</li>
+<li>${L("进度保存在这个浏览器里，不用注册；想在手机和电脑之间同步，可以在右上角登录。", "Progress stays in this browser, no account needed; sign in (top right) to sync it across your devices.")}</li>
 </ul>
 <h2>${L("常见问题", "Questions")}</h2>
 <dl>
@@ -4029,7 +4030,7 @@ ${lessonList}${(() => {
 <li>${L("答完马上看正确答案为什么对、每个错误选项为什么错，还可以让 AI 针对你选的选项讲解。", "After each answer, see why the right option is right and why each wrong one is wrong, and ask the AI about the option you picked.")}</li>
 ${reading ? `<li>${L("做完一篇的最后一题后，可以看全文翻译。短文、中篇和长篇还能听全文朗读。", "After the last question on a passage, read the full translation. Most passages can also be played aloud.")}</li>` : ""}
 <li>${L("答错或点了「不会」的题会进错题本，过几天再考你。", "Questions you miss or mark “I don’t know” come back a few days later.")}</li>
-<li>${L("进度只保存在这个浏览器里，不用注册。", "Progress stays in this browser; no account needed.")}</li>
+<li>${L("进度保存在这个浏览器里，不用注册；想在手机和电脑之间同步，可以在右上角登录。", "Progress stays in this browser, no account needed; sign in (top right) to sync it across your devices.")}</li>
 </ul>
 <h2>${L("常见问题", "Questions")}</h2>
 <dl>
@@ -5888,6 +5889,22 @@ body.ai-open #tc-ai { border-color: var(--accent); box-shadow: 0 0 0 2px var(--a
 .settings-preview { margin-top: 1.2rem; padding: .9rem 1rem; background: var(--word-bg); border-radius: var(--radius-lg); border: 1px solid var(--border); line-height: 2.2; }
 .settings-preview-title { font-size: .72rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: .05em; margin-bottom: .5rem; }
 @media (max-width: 600px) { #settings-overlay { padding: 5vh .6rem 1rem; } }
+/* Account block at the top of the settings dialog (filled by site/sync.js) */
+.acct { margin: 0 0 1.2rem; padding: .9rem 1rem; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--word-bg); }
+.acct-title { font-weight: 700; color: var(--text-strong); margin: 0 0 .35rem; }
+.acct p { margin: .3rem 0; font-size: .9rem; line-height: 1.6; }
+.acct-muted { color: var(--text-muted); }
+.acct-err { color: var(--accent); }
+.acct-g { min-height: 44px; margin: .6rem 0 .2rem; color-scheme: light; }
+.acct-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .8rem; margin-top: .6rem; }
+.acct-btn, .settings-control button { background: var(--card-bg); border: 1px solid var(--border); color: inherit; border-radius: var(--radius); padding: .4rem .85rem; cursor: pointer; font: inherit; font-size: .9rem; }
+.acct-btn:hover, .settings-control button:hover { border-color: var(--accent); }
+.acct-link { background: none; border: 0; padding: 0; color: var(--text-muted); text-decoration: underline; cursor: pointer; font: inherit; font-size: .85rem; }
+.acct a, .settings-foot a { color: var(--link); }
+.settings-foot { margin: 1rem 0 0; font-size: .82rem; line-height: 1.6; color: var(--text-muted); }
+/* Signed in: a dot on the account buttons */
+html.acct-in #tc-acct, html.acct-in #settings-btn, html.acct-in .m-btn[data-m="settings"] { position: relative; }
+html.acct-in #tc-acct::after, html.acct-in #settings-btn::after, html.acct-in .m-btn[data-m="settings"]::after { content: ""; position: absolute; top: 5px; right: 5px; width: 7px; height: 7px; border-radius: 50%; background: #3fb950; }
 `);
 
 // ─── JS ───
