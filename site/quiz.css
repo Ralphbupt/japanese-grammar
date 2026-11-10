@@ -13,9 +13,9 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-pre { display: inline-block; padding: 0 .45em; border: 1px solid var(--border); border-radius: 999px; font-size: .85em; color: var(--text-muted); }
 
 .q-btn { display: inline-flex; align-items: center; gap: .4em; padding: .55em 1em; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card-bg); color: var(--text); font: inherit; cursor: pointer; }
-.q-btn:hover:not(:disabled) { border-color: var(--accent); }
+.q-btn:hover:not(:disabled) { border-color: var(--ui); }
 .q-btn:disabled { opacity: .45; cursor: default; }
-.q-btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.q-btn-primary { background: var(--ui); border-color: var(--ui); color: var(--ui-on); font-weight: 600; }
 .q-btn-primary:hover:not(:disabled) { filter: brightness(1.08); }
 .q-btn-big { width: 100%; justify-content: center; min-height: 52px; font-size: 1.05rem; }
 .q-prev { margin-left: .9rem; }
@@ -23,12 +23,12 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 
 .q-today { margin-bottom: 1.6rem; }
 .q-today .q-muted { text-align: center; margin: .5rem 0 0; }
-.q-resume { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; padding: .8rem 1rem; margin-bottom: 1rem; border: 1px solid var(--accent); border-radius: var(--radius); }
+.q-resume { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; padding: .8rem 1rem; margin-bottom: 1rem; border: 1px solid var(--ui); border-radius: var(--radius); }
 .q-sec { margin: 0 0 1.6rem; }
 .q-rows { list-style: none; margin: 0; padding: 0; }
 .q-rows li { margin: 0 0 .4rem; }
 .q-row { display: grid; grid-template-columns: 1fr auto 7.5rem; align-items: center; gap: .8rem; width: 100%; padding: .7rem .9rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card-bg); color: var(--text); font: inherit; text-align: left; cursor: pointer; }
-.q-row:hover { border-color: var(--accent); }
+.q-row:hover { border-color: var(--ui); }
 .q-row small { color: var(--text-muted); font-weight: 400; }
 .q-acc { display: flex; align-items: center; gap: .4rem; justify-content: flex-end; font-size: .88em; font-variant-numeric: tabular-nums; }
 .q-acc-low { color: var(--q-bad); }
@@ -42,7 +42,7 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 
 .q-top { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: .5rem; font-variant-numeric: tabular-nums; }
 .q-progress { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; margin-bottom: 1rem; }
-.q-progress span { display: block; height: 100%; background: var(--accent); transition: width .3s; }
+.q-progress span { display: block; height: 100%; background: var(--ui); transition: width .3s; }
 .q-card { border: 1px solid var(--border); border-radius: var(--radius-xl, 12px); background: var(--card-bg); padding: 1.4rem 1.3rem; }
 .q-stem { font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif; font-size: 1.2rem; line-height: 2.3; margin-bottom: 1.2rem; }
 .q-stem rt, .q-opts rt, .q-pieces rt, .q-full rt { font-family: system-ui, sans-serif; }
@@ -52,7 +52,7 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 
 .q-opts { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; }
 .q-opt { display: flex; align-items: center; gap: .8rem; width: 100%; min-height: 52px; padding: .6rem .9rem; border: 1.5px solid var(--border); border-radius: var(--radius); background: var(--bg); color: var(--text); font: inherit; font-size: 1.08rem; text-align: left; cursor: pointer; }
-.q-opt:hover:not(:disabled) { border-color: var(--accent); }
+.q-opt:hover:not(:disabled) { border-color: var(--ui); }
 .q-opt:disabled { cursor: default; }
 .q-num { flex: none; display: inline-grid; place-items: center; width: 1.6em; height: 1.6em; border-radius: 50%; border: 1px solid var(--border); color: var(--text-muted); font-size: .85em; font-family: system-ui, sans-serif; }
 .q-opt.q-ok { border-color: var(--q-ok); background: var(--q-ok-bg); }
@@ -63,8 +63,8 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-opt.q-bad::after { content: "✗"; margin-left: auto; color: var(--q-bad); font-weight: 700; }
 
 .q-slot { display: inline-flex; align-items: center; justify-content: center; min-width: 3.2em; min-height: 1.9em; margin: 0 .15em; padding: 0 .4em; vertical-align: middle; border: 0; border-bottom: 2px solid var(--text-muted); background: transparent; color: var(--text); font: inherit; line-height: 1.6; cursor: pointer; }
-.q-slot.q-star { color: var(--accent); }
-.q-slot.q-filled { border-bottom-color: var(--accent); }
+.q-slot.q-star { color: var(--ui); }
+.q-slot.q-filled { border-bottom-color: var(--ui); }
 .q-slot.q-star.q-ok { background: var(--q-ok-bg); border-bottom-color: var(--q-ok); }
 .q-slot.q-star.q-bad { background: var(--q-bad-bg); border-bottom-color: var(--q-bad); }
 .q-slot:disabled { cursor: default; }
@@ -135,7 +135,7 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-passage { border: 1px solid var(--border); border-radius: var(--radius); padding: .9rem 1.1rem; margin-bottom: 1.1rem; background: var(--bg); font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif; font-size: 1.05rem; line-height: 2.2; max-height: 55vh; overflow-y: auto; }
 .q-passage p { margin: 0 0 .4rem; }
 .q-pblank { display: inline-grid; place-items: center; min-width: 1.8em; padding: 0 .35em; border: 1.5px solid var(--text-muted); font-family: system-ui, sans-serif; font-weight: 700; font-size: .9em; line-height: 1.5; }
-.q-pblank-on { border-color: var(--accent); color: var(--accent); }
+.q-pblank-on { border-color: var(--ui); color: var(--ui); }
 .q-pblank.q-filled { border-color: var(--q-ok); }
 .q-table { border-collapse: collapse; margin: .4rem 0 .6rem; font-size: .95em; }
 .q-table th, .q-table td { border: 1px solid var(--border); padding: .2rem .7rem; text-align: center; line-height: 1.9; }
@@ -146,7 +146,7 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-set h2 { margin-bottom: .3rem; }
 .q-set p { margin: .3rem 0; }
 .q-set + .q-set { margin-top: 1rem; }
-.q-tag { font-size: .7em; font-weight: 600; padding: .1em .5em; border-radius: 999px; border: 1px solid var(--accent); color: var(--accent); vertical-align: middle; }
+.q-tag { font-size: .7em; font-weight: 600; padding: .1em .5em; border-radius: 999px; border: 1px solid var(--ui); color: var(--ui); vertical-align: middle; }
 .q-tag-new { border-color: var(--border); color: var(--text-muted); }
 .q-plan { width: 100%; margin: .6rem 0 1rem; }
 .q-plan th { text-align: left; font-weight: 600; }
@@ -162,13 +162,13 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .q-sheet-row > span { width: 4.5em; font-size: .85em; color: var(--text-muted); }
 .q-cell { width: 2.2em; height: 2.2em; border: 1.5px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--text); font: inherit; font-size: .85em; cursor: pointer; }
 .q-cell-done { background: var(--surface-2); border-color: var(--text-muted); }
-.q-cell-flag { border-color: var(--accent); box-shadow: inset 0 -3px 0 var(--accent); }
+.q-cell-flag { border-color: var(--ui); box-shadow: inset 0 -3px 0 var(--ui); }
 .q-cell-on { outline: 2px solid var(--link); outline-offset: 1px; }
 .q-prob { display: flex; align-items: baseline; gap: .5rem; margin: 0 0 .8rem; }
 .q-qno { margin-left: auto; font-variant-numeric: tabular-nums; color: var(--text-muted); }
 .q-opt.q-picked { border-color: var(--link); box-shadow: inset 0 0 0 1px var(--link); }
 .q-opt.q-picked .q-num { background: var(--link); border-color: var(--link); color: #fff; }
-.q-flagged { border-color: var(--accent); color: var(--accent); }
+.q-flagged { border-color: var(--ui); color: var(--ui); }
 .q-nav { margin-top: 1.2rem; }
 .q-break { text-align: center; }
 .q-paused { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: 1rem; background: var(--bg); }
@@ -250,13 +250,17 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 @media (min-width: 760px) { .hub-modes { grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); } }
 .hub-modes li { color: var(--text-muted); font-size: .9rem; line-height: 1.6; }
 .hub-modes b { display: block; color: var(--text); font-size: 1rem; margin-bottom: .15rem; }
-.hub-table { width: 100%; table-layout: fixed; border-collapse: separate; border-spacing: 0 .5rem; }
-.hub-table thead th { font-size: .8rem; font-weight: 600; color: var(--text-muted); text-align: left; padding: 0 .4rem; }
-.hub-table tbody th { font-size: var(--text-xl); text-align: left; padding: 0 .6rem 0 .2rem; width: 3.2rem; white-space: nowrap; }
-.hub-table td { padding: 0 .3rem; height: 1px; }   /* lets .hub-go fill the cell, so a row's cards are one height */
-.hub-go { display: flex; flex-direction: column; gap: .1rem; padding: .7rem .9rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card-bg); color: var(--text); text-decoration: none; height: 100%; box-sizing: border-box; }
-.hub-go:hover { border-color: var(--accent); }
-.hub-go b { color: var(--accent); font-size: .95rem; }
+/* A contents page: levels down, kinds of practice across, hairlines between rows */
+.hub-table { width: 100%; table-layout: fixed; border-collapse: collapse; margin-top: 1.2rem; }
+.hub-table th, .hub-table td { border: 0; border-bottom: 1px solid var(--border); background: none !important; }
+.hub-table thead th { font-size: .8rem; font-weight: 500; color: var(--text-muted); text-align: left; padding: 0 .6rem .5rem; border-bottom-color: var(--text-muted); }
+.hub-table tbody th { text-align: left; padding: 0 .6rem 0 0; width: 3.4rem; white-space: nowrap; vertical-align: middle; }
+.hub-table .level-tag { margin: 0; font-size: .85rem; }
+.hub-table td { padding: 0; height: 1px; }   /* lets .hub-go fill the cell */
+.hub-go { display: flex; flex-direction: column; gap: .1rem; padding: .7rem .6rem; color: var(--text); text-decoration: none; height: 100%; box-sizing: border-box; }
+.hub-go:hover { background: var(--ui-soft); }
+.hub-go b { color: var(--link); font-size: .95rem; font-weight: 600; }
+.hub-go:hover b { text-decoration: underline; text-underline-offset: 3px; }
 .hub-go span { color: var(--text-muted); font-size: .85rem; }
 .hub-go .hub-done { color: var(--text); font-size: inherit; }
 .hub-table td.hub-types { color: var(--text-muted); font-size: .85rem; padding: 0 .6rem; height: auto; }
@@ -265,7 +269,7 @@ html.theme-dark #quiz-app { --q-ok: #4cc98a; --q-ok-bg: rgba(76,201,138,.14); --
 .hub-listen b { color: var(--text); }
 
 /* Feedback */
-.q-report .q-btn.q-picked { border-color: var(--accent); color: var(--accent); }
+.q-report .q-btn.q-picked { border-color: var(--ui); color: var(--ui); }
 .q-report-more { margin-top: .6rem; display: grid; gap: .5rem; justify-items: start; }
 .q-report-more textarea { width: 100%; box-sizing: border-box; padding: .5rem .7rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); color: var(--text); font: inherit; resize: vertical; }
 
@@ -289,7 +293,7 @@ body.quiz-busy .quiz-about { display: none; }
 .q-total-line { font-size: .92rem; color: var(--text-muted); margin-bottom: .35rem; }
 .q-total-line b { color: var(--text); margin-right: .3rem; }
 .q-total-bar { height: 6px; border-radius: 3px; background: var(--border); overflow: hidden; }
-.q-total-bar span { display: block; height: 100%; background: var(--accent); }
+.q-total-bar span { display: block; height: 100%; background: var(--ui); }
 .q-ai-more { padding: .35em .8em; font-size: .85em; margin-left: .4rem; }
 .q-listen { margin: .8rem 0 0; }
 .q-rl-more { margin-top: .35rem; }
@@ -303,7 +307,7 @@ body.quiz-busy .quiz-about { display: none; }
 .q-share { margin: .2rem 0 .8rem; }
 .q-set-soon { opacity: .75; border-style: dashed; }
 .q-say { background: none; border: 1px solid var(--border); border-radius: var(--radius-pill); cursor: pointer; font-size: .85rem; padding: .05rem .45rem; margin-left: .3rem; vertical-align: .1em; color: inherit; }
-.q-say:hover { border-color: var(--accent); }
+.q-say:hover { border-color: var(--ui); }
 .q-order { margin: .2rem 0 .6rem; font-size: .95rem; }
 
 /* Listening (聴解): player, picture options, the 発話表現 scene with its arrow, transcript. */
@@ -312,11 +316,11 @@ body.quiz-busy .quiz-about { display: none; }
 .q-ck-bar { flex: 1; height: 6px; border-radius: 3px; background: var(--border); overflow: hidden; }
 .q-ck-bar[data-act] { cursor: pointer; height: 8px; background-clip: content-box; padding: 9px 0; box-sizing: content-box; background-color: transparent; background-image: linear-gradient(var(--border), var(--border)); }
 .q-ck-tool { background: none; border: 1px solid var(--border); border-radius: var(--radius-pill); color: inherit; cursor: pointer; font-size: .82rem; padding: .2rem .55rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
-.q-ck-tool:hover, .q-ck-tool.q-on { border-color: var(--accent); }
-.q-ck-tool.q-on { color: var(--accent); }
+.q-ck-tool:hover, .q-ck-tool.q-on { border-color: var(--ui); }
+.q-ck-tool.q-on { color: var(--ui); }
 .q-ck-head .q-ck-tool { margin-left: .5rem; font-weight: 400; }
-.q-ck-script li.q-ck-cur { background: color-mix(in srgb, var(--accent) 13%, transparent); border-radius: 4px; box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--accent) 13%, transparent); }
-.q-ck-bar span { display: block; width: 0; height: 100%; background: var(--accent); }
+.q-ck-script li.q-ck-cur { background: color-mix(in srgb, var(--ui) 13%, transparent); border-radius: 4px; box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--ui) 13%, transparent); }
+.q-ck-bar span { display: block; width: 0; height: 100%; background: var(--ui); }
 .q-ck-time { font-size: .85rem; color: var(--text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
 /* Phones: the practice player's bar takes its own row under the buttons. */
 @media (max-width: 600px) {
