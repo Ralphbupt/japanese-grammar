@@ -1,0 +1,23 @@
+# The account Worker (api.jpnotes.dev): sign-in and progress sync.
+#   npx wrangler deploy -c wrangler.account.toml
+#   npx wrangler dev -c wrangler.account.toml --port 8788     (pages reach it with ?acct=local)
+#   npx wrangler d1 migrations apply jpnotes-accounts -c wrangler.account.toml --remote
+name = "jpnotes-account"
+main = "src/account.js"
+compatibility_date = "2026-09-01"
+workers_dev = false
+routes = [{ pattern = "api.jpnotes.dev", custom_domain = true }]
+
+# No request logging: emails and progress never land in Cloudflare logs.
+[observability]
+enabled = false
+
+[vars]
+# Public: it is in every page's source. The same value is in build.js (GOOGLE_CLIENT_ID).
+GOOGLE_CLIENT_ID = "128997752412-49bo0pmc3ncp8n5esbvcgdsr7ifsg3l3.apps.googleusercontent.com"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "jpnotes-accounts"
+database_id = "4924e7d8-d0f1-492c-9b51-cec94ef781c0"
+migrations_dir = "migrations-account"
