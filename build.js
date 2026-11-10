@@ -5901,6 +5901,17 @@ body.ai-open #tc-ai { border-color: var(--accent); box-shadow: 0 0 0 2px var(--a
 .acct-link { background: none; border: 0; padding: 0; color: var(--text-muted); text-decoration: underline; cursor: pointer; font: inherit; font-size: .85rem; }
 .acct a, .settings-foot a { color: var(--link); }
 .settings-foot { margin: 1rem 0 0; font-size: .82rem; line-height: 1.6; color: var(--text-muted); }
+/* Progress management inside the account block */
+.acct-prog { margin-top: .9rem; padding-top: .8rem; border-top: 1px solid var(--border); }
+.acct-sub .acct-muted { font-weight: 400; font-size: .85rem; margin-left: .4em; }
+.acct-levels { list-style: none; margin: .2rem 0 .1rem; padding: 0; font-size: .9rem; line-height: 1.7; }
+.acct-levels b { display: inline-block; min-width: 2.2em; color: var(--text-strong); }
+.acct-btn[disabled] { opacity: .5; cursor: default; }
+.acct-versions { margin-top: .6rem; }
+.acct-versions ul { list-style: none; margin: .3rem 0 0; padding: 0; }
+.acct-versions li { display: flex; align-items: center; justify-content: space-between; gap: .8rem; padding: .3rem 0; border-top: 1px solid var(--border); font-size: .88rem; }
+.acct-clear { margin-top: .7rem; }
+.acct-scope { background: var(--card-bg); color: inherit; border: 1px solid var(--border); border-radius: var(--radius); padding: .3rem .5rem; font: inherit; font-size: .85rem; }
 /* The account buttons carry a dot only when syncing has failed (html.acct-warn,
    set by sync.js): signed in and working shows nothing, so it never nags. */
 html.acct-warn #tc-acct, html.acct-warn #settings-btn, html.acct-warn .m-btn[data-m="settings"] { position: relative; }

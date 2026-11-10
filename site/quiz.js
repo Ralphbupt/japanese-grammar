@@ -315,10 +315,7 @@
           'Some ' + LEVEL + ' lessons teach ' + lv + ' grammar early (conditionals, potential, そうだ/ようだ …). Their ' + pre.length + ' questions are left out of the progress and analysis above, and still come up when you practise by lesson.') +
         '</p><button class="q-btn" data-act="pre">' + t('练 ' + lv + ' 预习题', 'Practise the ' + lv + ' preview questions') + ' <span class="q-muted">' + pdone + '/' + pre.length + '</span></button></section>';
     }
-    h += '<details class="q-sec q-settings"><summary>' + t('备份进度', 'Back up progress') + '</summary>' +
-      '<p class="q-muted">' + t('做题记录只存在这个浏览器里。换手机或清缓存前先导出。', 'Your progress lives only in this browser. Export it before switching phones or clearing site data.') + '</p>' +
-      '<button class="q-btn" data-act="export">' + t('导出进度', 'Export progress') + '</button> ' +
-      '<label class="q-btn">' + t('导入进度', 'Import progress') + '<input type="file" accept="application/json" data-act="import" hidden></label></details>';
+    // Export / import / clear live in the account dialog (site/sync.js).
     app.innerHTML = h;
   }
 
@@ -1805,12 +1802,6 @@
     }
     else if (act === 'retry') start('retry', arrange(app._last.bad.map(function (id) { return Q[id]; })));
     else if (act === 'again') { if (app._last.kind === 'retry') startKind('daily'); else startKind(app._last.kind, app._last.label); }
-    else if (act === 'export') {
-      var a = document.createElement('a');
-      a.href = URL.createObjectURL(new Blob([JSON.stringify(S)], { type: 'application/json' }));
-      a.download = 'jpnotes-quiz-' + today() + '.json';
-      a.click();
-    }
   });
   app.addEventListener('change', function (e) {
     var act = e.target.getAttribute('data-act');
@@ -1818,17 +1809,6 @@
     if (sub && curs[sub.getAttribute('data-q')]) cur = curs[sub.getAttribute('data-q')];
     if (act === 'guess') cur.guess = e.target.checked;
     else if (act === 'size') { S.prefs.size = +e.target.value; save(); home(); }
-    else if (act === 'import' && e.target.files[0]) {
-      var fr = new FileReader();
-      fr.onload = function () {
-        try {
-          var s = JSON.parse(fr.result);
-          if (!s || s.v !== 1 || typeof s.answers !== 'object') throw 0;
-          S = s; save(); ALL = D.questions.filter(function (q) { return S.reported.indexOf(q.id) < 0; }); home();
-        } catch (err) { alert(t('这不是有效的进度文件。', 'That isn’t a valid progress file.')); }
-      };
-      fr.readAsText(e.target.files[0]);
-    }
   });
   document.addEventListener('keydown', function (e) {
     if (!cur || cur.mock || e.target.matches('input, textarea, select') || e.metaKey || e.ctrlKey || e.altKey) return;

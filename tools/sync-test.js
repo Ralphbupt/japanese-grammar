@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Unit tests for merge() in site/sync.js: node tools/sync-test.js
 const assert = require("assert");
-const { merge, same } = require("../site/sync.js");
+const { merge, same, without, summary, levelOf } = require("../site/sync.js");
 const base = (o) => Object.assign({ v: 1, answers: {}, review: {}, reported: [], session: null, days: {}, prefs: {}, mock: {}, cards: {}, cardDays: {}, at: 0 }, o);
 const ans = (t, ok, c = 1) => ({ t, c, ok, ms: 1000, g: false, rev: 1 });
 let n = 0;
@@ -108,6 +108,53 @@ test("merging is stable: merging the result with either input again changes noth
 test("fields a newer quiz.js adds survive", () => {
   const m = merge(base({ extra: { x: 1 }, at: 2 }), base({ at: 1 }));
   assert.deepStrictEqual(m.extra, { x: 1 });
+});
+
+test("a higher epoch replaces the other copy whole (clear, restore, import)", () => {
+  const cleared = base({ epoch: 1, answers: { q9: [ans(50, true)] }, at: 9000 });
+  const stale = base({ answers: { q1: [ans(1, false)], q2: [ans(2, true)] }, review: { q1: { lv: 0, due: 1 } }, session: { ids: ["q1"] }, at: 99000 });
+  let m = merge(stale, cleared);                     // another device that still has the old progress
+  assert.deepStrictEqual(Object.keys(m.answers), ["q9"]);
+  assert.deepStrictEqual(m.review, {});
+  assert.strictEqual(m.epoch, 1);
+  assert.deepStrictEqual(m.session, { ids: ["q1"] }, "the device keeps its own unfinished set");
+  m = merge(cleared, stale);                         // the device that cleared, against an old server copy
+  assert.deepStrictEqual(Object.keys(m.answers), ["q9"]);
+  // Same epoch again: back to merging.
+  const later = base({ epoch: 1, answers: { q9: [ans(50, true)], q10: [ans(60, true)] }, at: 9500 });
+  assert.deepStrictEqual(Object.keys(merge(cleared, later).answers).sort(), ["q10", "q9"]);
+});
+
+test("levels: questions and mock sets by id prefix, cards by lesson number", () => {
+  assert.strictEqual(levelOf("n5-l15-012"), "n5");
+  assert.strictEqual(levelOf("n2-mock-2"), "n2");
+  assert.strictEqual(levelOf("18:使役形"), "n4");
+  assert.strictEqual(levelOf("17:x|c"), "n5");
+  assert.strictEqual(levelOf("76:y"), "n1");
+  assert.strictEqual(levelOf("0:z"), "n5");
+  assert.strictEqual(levelOf("weird"), "");
+});
+
+test("clearing one level leaves the others, the settings and the day counts", () => {
+  const s = base({ answers: { "n5-l01-001": [ans(1, true)], "n4-mg-101": [ans(2, false)] }, review: { "n4-mg-101": { lv: 0, due: 2 } },
+    mock: { "n5-mock-1": { current: null, attempts: [{ start: 5 }] }, "n4-mock-1": { current: { start: 9 }, attempts: [] } },
+    cards: { "3:は": { t: 1 }, "20:あげる": { t: 2 }, "20:あげる|c": { t: 3 } }, days: { d: 2 }, prefs: { size: 10 }, reported: ["n4-x"] });
+  const m = without(s, "n4");
+  assert.deepStrictEqual(Object.keys(m.answers), ["n5-l01-001"]);
+  assert.deepStrictEqual(m.review, {});
+  assert.deepStrictEqual(Object.keys(m.mock), ["n5-mock-1"]);
+  assert.deepStrictEqual(Object.keys(m.cards), ["3:は"]);
+  assert.deepStrictEqual(m.days, { d: 2 });
+  assert.deepStrictEqual(m.prefs, { size: 10 });
+  assert.strictEqual(Object.keys(s.answers).length, 2, "the original is not changed");
+  const all = without(s, "all");
+  assert.deepStrictEqual([all.answers, all.review, all.mock, all.cards, all.days], [{}, {}, {}, {}, {}]);
+  assert.deepStrictEqual(all.prefs, { size: 10 });
+  assert.deepStrictEqual(all.reported, ["n4-x"]);
+  const sum = summary(s);
+  assert.deepStrictEqual(sum.levels.n4, { answers: 1, review: 1, mocks: 0, cards: 2 });
+  assert.deepStrictEqual(sum.levels.n5, { answers: 1, review: 0, mocks: 1, cards: 1 });
+  assert.strictEqual(sum.days, 1);
 });
 
 console.log(n + " tests passed");

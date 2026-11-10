@@ -10,11 +10,15 @@
  *   GET    /sync                          → { version, data, updated }  (version 0, data null: nothing saved yet)
  *   PUT    /sync          { version, data }  → { version }, or 409 { version, data } when
  *                                         `version` is not the stored one: merge and retry
+ *   GET    /sync/history                  → { versions: [{ version, saved, answers }] } earlier copies
+ *                                         the reader can go back to, newest first
+ *   GET    /sync/history/N                → { version, saved, data } one of them
  *   DELETE /account                       deletes the user and everything stored for them
  *
  * All but /auth/google need `Authorization: Bearer <token>`. The token is 32
  * random bytes; only its SHA-256 is stored. Stored per user: the email, the
- * Google account id, sessions, the progress JSON and its last few versions.
+ * Google account id, sessions, the progress JSON and earlier copies of it (the
+ * last KEEP_RECENT writes, and the last copy of each of the past KEEP_DAYS days).
  * Nothing else, and no request logging (wrangler.account.toml).
  *
  * Only browsers on jpnotes.dev may call it (CORS + Origin check; localhost
@@ -27,7 +31,8 @@ const LOCAL_RE = /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/;
 const SESSION_DAYS = 180;
 const MAX_DATA = 1800000;        // characters of JSON; a D1 row holds 2 MB
 const WRITES_PER_DAY = 3000;     // per user; the page saves at most every few seconds
-const KEEP_HISTORY = 3;
+const KEEP_RECENT = 3;           // earlier copies kept whatever their age …
+const KEEP_DAYS = 14;            // … plus the last copy of each UTC day, this far back
 const GOOGLE_CERTS = 'https://www.googleapis.com/oauth2/v3/certs';
 const GOOGLE_ISS = ['accounts.google.com', 'https://accounts.google.com'];
 
@@ -127,22 +132,24 @@ async function putSync(env, me, input) {
   if (!Number.isInteger(base) || base < 0 || !data || typeof data !== 'object' || data.v !== 1 || typeof data.answers !== 'object') throw new HttpError(400, 'Not a progress file.');
   const text = JSON.stringify(data);
   if (text.length > MAX_DATA) throw new HttpError(413, 'Progress is too large to sync.');
-  const db = env.DB, day = now().slice(0, 10);
+  const db = env.DB, day = now().slice(0, 10), count = Object.keys(data.answers).length;
   const cur = await db.prepare('SELECT version, data, updated, day, writes FROM progress WHERE user_id = ?').bind(me.userId).first();
   if ((cur ? cur.version : 0) !== base) return { conflict: { version: cur ? cur.version : 0, data: cur ? JSON.parse(cur.data) : null } };
   const writes = cur && cur.day === day ? cur.writes + 1 : 1;
   if (writes > WRITES_PER_DAY) throw new HttpError(429, 'Too many saves today. Syncing resumes tomorrow.');
   if (!cur) {
     // Two first writes at once: the second fails on the primary key and is told to merge.
-    try { await db.prepare('INSERT INTO progress (user_id, version, data, updated, day, writes) VALUES (?, 1, ?, ?, ?, 1)').bind(me.userId, text, now(), day).run(); }
+    try { await db.prepare('INSERT INTO progress (user_id, version, data, updated, day, writes, n) VALUES (?, 1, ?, ?, ?, 1, ?)').bind(me.userId, text, now(), day, count).run(); }
     catch (e) { return { conflict: await getSync(env, me) }; }
     return { version: 1 };
   }
   // The WHERE on version makes the compare-and-set atomic; history first, in one batch.
   const res = await db.batch([
-    db.prepare('INSERT OR REPLACE INTO progress_history (user_id, version, data, saved) SELECT user_id, version, data, updated FROM progress WHERE user_id = ? AND version = ?').bind(me.userId, base),
-    db.prepare('UPDATE progress SET version = version + 1, data = ?, updated = ?, day = ?, writes = ? WHERE user_id = ? AND version = ?').bind(text, now(), day, writes, me.userId, base),
-    db.prepare('DELETE FROM progress_history WHERE user_id = ? AND version <= ?').bind(me.userId, base - KEEP_HISTORY),
+    db.prepare('INSERT OR REPLACE INTO progress_history (user_id, version, data, saved, n) SELECT user_id, version, data, updated, n FROM progress WHERE user_id = ? AND version = ?').bind(me.userId, base),
+    db.prepare('UPDATE progress SET version = version + 1, data = ?, updated = ?, day = ?, writes = ?, n = ? WHERE user_id = ? AND version = ?').bind(text, now(), day, writes, count, me.userId, base),
+    // Thin the earlier copies: the newest few stay, older ones only as the last of their day, nothing past KEEP_DAYS.
+    db.prepare(`DELETE FROM progress_history WHERE user_id = ?1 AND version <= ?2 AND (saved < ?3 OR version NOT IN
+      (SELECT MAX(version) FROM progress_history WHERE user_id = ?1 GROUP BY substr(saved, 1, 10)))`).bind(me.userId, base - KEEP_RECENT, new Date(Date.now() - KEEP_DAYS * 86400e3).toISOString()),
   ]);
   if (!res[1].meta.changes) return { conflict: await getSync(env, me) };
   return { version: base + 1 };
@@ -168,6 +175,16 @@ async function route(req, env, url, local) {
   if (method === 'PUT' && path === '/sync') {
     const out = await putSync(env, me, await body(req, MAX_DATA + 1000));
     return out.conflict ? reply(out.conflict, 409) : reply(out);
+  }
+  if (method === 'GET' && path === '/sync/history') {
+    const rows = await env.DB.prepare('SELECT version, saved, n FROM progress_history WHERE user_id = ? ORDER BY version DESC LIMIT 40').bind(me.userId).all();
+    return reply({ versions: rows.results.map((r) => ({ version: r.version, saved: r.saved, answers: r.n })) });
+  }
+  const hv = /^\/sync\/history\/(\d+)$/.exec(path);
+  if (method === 'GET' && hv) {
+    const row = await env.DB.prepare('SELECT version, saved, data FROM progress_history WHERE user_id = ? AND version = ?').bind(me.userId, +hv[1]).first();
+    if (!row) throw new HttpError(404, 'That copy is no longer kept.');
+    return reply({ version: row.version, saved: row.saved, data: JSON.parse(row.data) });
   }
   if (method === 'DELETE' && path === '/account') {
     await env.DB.batch(['progress_history', 'progress', 'sessions', 'identities'].map((t) => env.DB.prepare(`DELETE FROM ${t} WHERE user_id = ?`).bind(me.userId))
