@@ -4992,6 +4992,9 @@ Each \`/lessonNN/\` page contains:
     };
     walk("");
     if (!rules.includes("/anki /anki/ 301")) rules.push("/anki /anki/ 301");   // written later, by build-anki.js
+    // The home page is one bilingual page at /; there is no /zh/ copy of it, but
+    // people trim a /zh/… address down to /zh/ and should not land on the 404.
+    rules.push("/zh / 302", "/zh/ / 302");
     if (rules.length > 2000) throw new Error(`_redirects: ${rules.length} rules, Cloudflare allows 2,000 static ones`);
     fs.writeFileSync(path.join(dist, "_redirects"), rules.join("\n") + "\n", "utf-8");
     fs.writeFileSync(path.join(dist, "_headers"), "/*\n  X-Content-Type-Options: nosniff\n\n/anki/*.apkg\n  Content-Type: application/octet-stream\n  Content-Disposition: attachment\n", "utf-8");
