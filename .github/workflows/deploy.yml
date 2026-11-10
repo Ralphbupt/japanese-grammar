@@ -1,28 +1,26 @@
-name: Deploy to GitHub Pages
+name: Deploy
+
+# Builds the site and publishes dist/ to Cloudflare, which serves it as static
+# assets (worker/wrangler.site.toml: Worker "jpnotes-site" on jpnotes.dev).
+# Moved off GitHub Pages on 2026-11-10: its deployments had started to stall
+# in "syncing_files" until the action's fixed 10-minute timeout.
+# Secret: CLOUDFLARE_API_TOKEN (Cloudflare's "Edit Cloudflare Workers" template).
 
 on:
   push:
     branches: [main]
-  # Started by the redeploy job below (and usable by hand from the Actions tab).
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: deploy
   cancel-in-progress: true
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    outputs:
-      deploy: ${{ steps.deployment.outcome }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -59,12 +57,14 @@ jobs:
         continue-on-error: true
         run: curl -sf https://jpnotes.dev/sitemap.xml -o prev-sitemap.xml || rm -f prev-sitemap.xml
 
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
-
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      # Uploads only the files that changed. wrangler comes from worker/'s lockfile.
+      - name: Deploy to Cloudflare
+        working-directory: worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          npm ci
+          npx wrangler deploy -c wrangler.site.toml
 
       # Notify Bing/Yandex/etc. of pages changed by this deploy (Google ignores IndexNow).
       # Runs after deploy so the key file at /<key>.txt is already live for
@@ -72,34 +72,3 @@ jobs:
       - name: Ping IndexNow
         continue-on-error: true
         run: node indexnow.mjs
-
-  # GitHub Pages sometimes sits in "syncing_files" until deploy-pages gives up
-  # after its fixed 10 minutes (first seen 2026-11-10, many repositories, status
-  # page green). Re-running does not help: the deployment id is the commit sha,
-  # and a second deployment under a cancelled id never starts. A new commit
-  # does, so when the deploy step of a push fails this pushes an empty one and
-  # starts the workflow on it. Once only: the run it starts is a
-  # workflow_dispatch, which this job skips. A push made with GITHUB_TOKEN
-  # starts no workflow by itself, hence the explicit dispatch.
-  # The empty commit lands on main: `git pull --rebase` before the next push.
-  redeploy:
-    needs: build-and-deploy
-    if: failure() && github.event_name == 'push' && needs.build-and-deploy.outputs.deploy == 'failure'
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      actions: write
-    steps:
-      - uses: actions/checkout@v4
-      - name: Push an empty commit and deploy it
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit --allow-empty -m "Redeploy (Pages deployment timed out)"
-          if git push origin HEAD:main; then
-            gh workflow run deploy.yml --ref main
-          else
-            echo "main has moved on; the newer push deploys instead."
-          fi
