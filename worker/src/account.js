@@ -5,6 +5,8 @@
  * Worker. Client: site/sync.js.
  *
  *   POST   /auth/google   { credential }  Google ID token → { token, email }
+ *   POST   /auth/email/start  { email, lang }   mails a 6-digit code (Resend) → { ok }
+ *   POST   /auth/email/verify { email, code }   → { token, email }
  *   POST   /auth/logout                   ends this session
  *   GET    /me                            → { email }
  *   GET    /sync                          → { version, data, updated }  (version 0, data null: nothing saved yet)
@@ -21,6 +23,13 @@
  * last KEEP_RECENT writes, and the last copy of each of the past KEEP_DAYS days).
  * Nothing else, and no request logging (wrangler.account.toml).
  *
+ * Email codes need the secret RESEND_API_KEY (npx wrangler secret put
+ * RESEND_API_KEY -c wrangler.account.toml) and jpnotes.dev verified as a
+ * sending domain at Resend; without the secret /auth/email/* answers 503.
+ * A code lasts CODE_MINUTES and CODE_TRIES guesses; an address gets one a
+ * minute and EMAILS_PER_DAY a day, a network IP_CODES_PER_DAY a day (the IP is
+ * stored only as a hash salted with the date).
+ *
  * Only browsers on jpnotes.dev may call it (CORS + Origin check; localhost
  * under `wrangler dev` with ALLOW_LOCAL=1 in .dev.vars, where DEV_LOGIN=1 also
  * accepts { dev: "name@example.com" } instead of a Google token, for tests).
@@ -33,6 +42,9 @@ const MAX_DATA = 1800000;        // characters of JSON; a D1 row holds 2 MB
 const WRITES_PER_DAY = 3000;     // per user; the page saves at most every few seconds
 const KEEP_RECENT = 3;           // earlier copies kept whatever their age …
 const KEEP_DAYS = 14;            // … plus the last copy of each UTC day, this far back
+const CODE_MINUTES = 10, CODE_TRIES = 5, EMAILS_PER_DAY = 5, IP_CODES_PER_DAY = 12;
+const MAIL_FROM = 'jpnotes <login@jpnotes.dev>';
+const EMAIL_RE = /^[^\s@<>"',;]{1,64}@[a-z0-9-]+(\.[a-z0-9-]+)+$/i;
 const GOOGLE_CERTS = 'https://www.googleapis.com/oauth2/v3/certs';
 const GOOGLE_ISS = ['accounts.google.com', 'https://accounts.google.com'];
 
@@ -96,6 +108,62 @@ async function userFor(env, provider, who) {
   }
   await db.prepare('INSERT OR IGNORE INTO identities (provider, subject, user_id, created) VALUES (?, ?, ?, ?)').bind(provider, who.sub, user.id, now()).run();
   return user.id;
+}
+
+// ─── Email codes ───
+function mail(code, zh) {
+  const subject = zh ? `${code} 是你的 jpnotes 登录验证码` : `${code} is your jpnotes sign-in code`;
+  const lines = zh
+    ? [`你的 jpnotes.dev 登录验证码是：${code}`, `${CODE_MINUTES} 分钟内有效。如果不是你本人在登录，忽略这封邮件即可。`]
+    : [`Your sign-in code for jpnotes.dev is: ${code}`, `It is valid for ${CODE_MINUTES} minutes. If you didn't ask for it, you can ignore this email.`];
+  return {
+    subject, text: lines.join('\n\n'),
+    html: `<div style="font-family:system-ui,sans-serif;font-size:16px;line-height:1.6;color:#222"><p>${lines[0].replace(code, `<b style="font-size:22px;letter-spacing:2px">${code}</b>`)}</p><p style="color:#666;font-size:14px">${lines[1]}</p></div>`,
+  };
+}
+
+async function emailStart(req, env, input, local) {
+  if (!env.RESEND_API_KEY && !(local && env.DEV_LOGIN === '1')) throw new HttpError(503, 'Email sign-in is not available yet.');
+  const email = String(input.email || '').trim().toLowerCase();
+  if (email.length > 200 || !EMAIL_RE.test(email)) throw new HttpError(400, 'That does not look like an email address.');
+  const db = env.DB, t = Math.floor(Date.now() / 1000), day = now().slice(0, 10);
+  const ip = await sha256(day + '|' + (req.headers.get('CF-Connecting-IP') || '') + '|' + (await sha256('ip' + (env.RESEND_API_KEY || 'dev'))));
+  const [row, net] = await Promise.all([
+    db.prepare('SELECT sent_at, day, sent FROM email_codes WHERE email = ?').bind(email).first(),
+    db.prepare('SELECT n FROM email_ips WHERE day = ? AND ip = ?').bind(day, ip).first(),
+  ]);
+  if (row && t - row.sent_at < 60) throw new HttpError(429, 'A code was just sent. Wait a minute before asking again.');
+  const sent = row && row.day === day ? row.sent : 0;
+  if (sent >= EMAILS_PER_DAY || (net && net.n >= IP_CODES_PER_DAY)) throw new HttpError(429, 'Too many codes today. Try again tomorrow.');
+  const code = String(crypto.getRandomValues(new Uint32Array(1))[0] % 1000000).padStart(6, '0');
+  await db.batch([
+    db.prepare('INSERT OR REPLACE INTO email_codes (email, hash, expires, attempts, sent_at, day, sent) VALUES (?, ?, ?, 0, ?, ?, ?)').bind(email, await sha256(email + '|' + code), t + CODE_MINUTES * 60, t, day, sent + 1),
+    db.prepare('INSERT INTO email_ips (day, ip, n) VALUES (?, ?, 1) ON CONFLICT (day, ip) DO UPDATE SET n = n + 1').bind(day, ip),
+    db.prepare('DELETE FROM email_ips WHERE day < ?').bind(day),
+    db.prepare('DELETE FROM email_codes WHERE expires < ?').bind(t - 86400),
+  ]);
+  if (!env.RESEND_API_KEY) return { ok: true, dev_code: code };          // local tests only (checked above)
+  const m = mail(code, input.lang === 'zh');
+  const res = await fetch('https://api.resend.com/emails', {
+    method: 'POST', headers: { Authorization: 'Bearer ' + env.RESEND_API_KEY, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ from: MAIL_FROM, to: [email], subject: m.subject, text: m.text, html: m.html }),
+  });
+  if (!res.ok) throw new HttpError(502, 'The email could not be sent. Try again in a moment.');
+  return { ok: true };
+}
+
+async function emailVerify(env, input) {
+  const email = String(input.email || '').trim().toLowerCase(), code = String(input.code || '').replace(/\D/g, '');
+  const db = env.DB, t = Math.floor(Date.now() / 1000);
+  const row = await db.prepare('SELECT hash, expires, attempts FROM email_codes WHERE email = ?').bind(email).first();
+  if (!row || row.expires < t || row.attempts >= CODE_TRIES) throw new HttpError(401, 'That code has expired. Ask for a new one.');
+  if (code.length !== 6 || (await sha256(email + '|' + code)) !== row.hash) {
+    await db.prepare('UPDATE email_codes SET attempts = attempts + 1 WHERE email = ?').bind(email).run();
+    throw new HttpError(401, 'Wrong code.');
+  }
+  await db.prepare('DELETE FROM email_codes WHERE email = ?').bind(email).run();
+  const userId = await userFor(env, 'email', { sub: email, email });
+  return { token: await newSession(env, userId), email };
 }
 
 async function newSession(env, userId) {
@@ -165,6 +233,8 @@ async function route(req, env, url, local) {
     const userId = await userFor(env, 'google', who);
     return reply({ token: await newSession(env, userId), email: who.email });
   }
+  if (method === 'POST' && path === '/auth/email/start') return reply(await emailStart(req, env, await body(req, 2000), local));
+  if (method === 'POST' && path === '/auth/email/verify') return reply(await emailVerify(env, await body(req, 2000)));
   const me = await session(req, env);
   if (method === 'GET' && path === '/me') return reply({ email: me.email });
   if (method === 'POST' && path === '/auth/logout') {
@@ -188,7 +258,7 @@ async function route(req, env, url, local) {
   }
   if (method === 'DELETE' && path === '/account') {
     await env.DB.batch(['progress_history', 'progress', 'sessions', 'identities'].map((t) => env.DB.prepare(`DELETE FROM ${t} WHERE user_id = ?`).bind(me.userId))
-      .concat(env.DB.prepare('DELETE FROM users WHERE id = ?').bind(me.userId)));
+      .concat(env.DB.prepare('DELETE FROM users WHERE id = ?').bind(me.userId), env.DB.prepare('DELETE FROM email_codes WHERE email = ?').bind(me.email)));
     return reply({ ok: true });
   }
   throw new HttpError(404, 'Not found.');

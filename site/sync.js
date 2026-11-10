@@ -161,6 +161,9 @@
   var LOCAL = q.get('acct') === 'local' && /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
   var API = LOCAL ? 'http://localhost:8788' : 'https://api.jpnotes.dev';
   var CLIENT_ID = SCRIPT && SCRIPT.getAttribute('data-gclient');
+  // Sign-in by emailed code: on when the build says so; ?emaillogin=1 shows it before that, for testing.
+  var EMAIL_ON = !!(SCRIPT && SCRIPT.getAttribute('data-email') === '1') || q.get('emaillogin') === '1';
+  var mailState = { email: '', code: '', sent: false, busy: false, msg: '' };
 
   function acct() { try { return JSON.parse(ls.get('jp_acct')) || {}; } catch (e) { return {}; } }
   function setAcct(a) {
@@ -342,7 +345,7 @@
       box.innerHTML = '<p class="acct-title">' + t('登录以同步进度', 'Sign in to sync your progress') + '</p>' +
         '<p class="acct-muted">' + t('登录后，做题记录、错题本、模拟考成绩和单词卡会在你的各个设备之间同步。不登录也能照常使用，进度只存在这个浏览器里。',
           'Your answers, review list, mock test results and flashcards then follow you across devices. Without signing in everything works as before, kept in this browser only.') + ' ' + about() + '</p>' +
-        '<div class="acct-g"></div>' + (status.kind === 'error' ? '<p class="acct-err">' + esc(status.msg) + '</p>' : '') + progressHtml();
+        '<div class="acct-g"></div>' + mailHtml() + (status.kind === 'error' ? '<p class="acct-err">' + esc(status.msg) + '</p>' : '') + progressHtml();
       google();
       return;
     }
@@ -355,15 +358,48 @@
       '<button type="button" class="acct-link" data-acct="delete">' + t('删除账号和云端数据', 'Delete account and synced data') + '</button></div>' +
       '<p class="acct-muted">' + about() + '</p>' + progressHtml();
   }
-  function signedIn(r) {
+  // The other way in, for readers who can't reach Google: a 6-digit code by email.
+  function mailHtml() {
+    if (!EMAIL_ON) return '';
+    var m = mailState;
+    return '<div class="acct-mail"><p class="acct-muted">' + t('或者用邮箱登录，我们会发一个 6 位验证码：', 'Or sign in by email; we send a 6-digit code:') + '</p>' +
+      '<div class="acct-actions"><input type="email" class="acct-input" data-mail="email" autocomplete="email" placeholder="you@example.com" value="' + esc(m.email) + '">' +
+      '<button type="button" class="acct-btn" data-acct="mail-send"' + (m.busy ? ' disabled' : '') + '>' + (m.sent ? t('重新发送', 'Send again') : t('发送验证码', 'Send code')) + '</button></div>' +
+      (m.sent ? '<div class="acct-actions"><input type="text" class="acct-input acct-code" data-mail="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="' + t('6 位验证码', '6-digit code') + '" value="' + esc(m.code) + '">' +
+        '<button type="button" class="acct-btn" data-acct="mail-verify"' + (m.busy ? ' disabled' : '') + '>' + t('登录', 'Sign in') + '</button></div>' : '') +
+      (m.msg ? '<p class="' + (m.err ? 'acct-err' : 'acct-muted') + '">' + esc(m.msg) + '</p>' : '') + '</div>';
+  }
+  function mailSend() {
+    var m = mailState;
+    if (!/^\S+@\S+\.\S+$/.test(m.email.trim())) { m.msg = t('请输入邮箱地址。', 'Enter your email address.'); m.err = true; return render(); }
+    m.busy = true; m.msg = ''; render();
+    api('POST', '/auth/email/start', { email: m.email.trim(), lang: EN() ? 'en' : 'zh' }).then(function (r) {
+      m.busy = false; m.sent = true; m.err = false; m.code = r.data.dev_code || '';
+      m.msg = t('验证码已发到 ' + m.email.trim() + '，10 分钟内有效。没收到的话看看垃圾邮件箱。', 'Code sent to ' + m.email.trim() + ', valid for 10 minutes. Check the spam folder if it doesn’t arrive.');
+      track('account_code_sent', {});
+      render();
+      var c = box && box.querySelector('[data-mail="code"]'); if (c) c.focus();
+    }).catch(function (e) { m.busy = false; m.err = true; m.msg = e.message; track('account_login_error', { status: e.status || 0, method: 'email_start' }); render(); });
+  }
+  function mailVerify() {
+    var m = mailState;
+    m.busy = true; m.msg = ''; render();
+    api('POST', '/auth/email/verify', { email: m.email.trim(), code: m.code }).then(function (r) {
+      mailState = { email: '', code: '', sent: false, busy: false, msg: '' };
+      signedIn(r, 'email');
+    }).catch(function (e) { m.busy = false; m.err = true; m.msg = e.status === 401 ? t('验证码不对或已过期。', 'That code is wrong or has expired.') : e.message; track('account_login_error', { status: e.status || 0, method: 'email' }); render(); });
+  }
+  function signedIn(r, method) {
     setAcct({ token: r.data.token, email: r.data.email });
-    track('account_login', { method: 'google', local_answers: Object.keys(state().get().answers || {}).length });
+    track('account_login', { method: method || 'google', local_answers: Object.keys(state().get().answers || {}).length });
     status = { kind: 'idle' };
     pull();
   }
   function onClick(e) {
     var el = e.target.closest('[data-acct]'), act = el && el.getAttribute('data-acct');
     if (act === 'sync') pull();
+    else if (act === 'mail-send') mailSend();
+    else if (act === 'mail-verify') mailVerify();
     else if (act === 'export') exportFile();
     else if (act === 'history') {
       if (versions) { versions = null; render(); return; }
@@ -397,6 +433,11 @@
       if (box !== el) {
         box = el; el.addEventListener('click', onClick);
         el.addEventListener('change', function (e) { if (e.target.hasAttribute('data-acct-file') && e.target.files[0]) importFile(e.target.files[0]); });
+        el.addEventListener('input', function (e) { var k = e.target.getAttribute && e.target.getAttribute('data-mail'); if (k) mailState[k] = e.target.value; });
+        el.addEventListener('keydown', function (e) {
+          var k = e.key === 'Enter' && e.target.getAttribute && e.target.getAttribute('data-mail');
+          if (k) { e.preventDefault(); if (k === 'email') mailSend(); else mailVerify(); }
+        });
       }
       versions = null;
       track('account_view', { signed_in: !!acct().token });
