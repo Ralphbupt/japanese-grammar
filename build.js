@@ -4554,7 +4554,7 @@ ${lessonList}</section>`;
 <ul>
 <li>${L("题目不在练习题库里，按真考的科目顺序出题，每一科单独计时，听力在最后一场。", "The questions aren't in the practice bank. Sections come in the real order, each timed on its own, with listening last.")}</li>
 <li>${L("交卷后才显示答案：估算各科得分，对照总分合格线和每科最低分，再逐题看解析。", "Answers appear only after you submit: an estimated score per section against the pass mark and each section's minimum, then every question explained.")}</li>
-<li>${L("每周会加新的一套。", "A new set is added each week.")}</li>
+<li>${L("新的一套审完、录好音后会加在这里。", "New sets are added here once they have been reviewed and recorded.")}</li>
 </ul>
 <h2>${L("考前怎么用", "How to use them before the exam")}</h2>
 <ol>
