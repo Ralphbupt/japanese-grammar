@@ -1147,6 +1147,28 @@ function langVariant(id, lang) {
 }
 
 // Write a page's copy in `lang` to dist/<dir><id>/index.html.
+// One icon set: the emoji that label practice kinds and dates in generated
+// text become Lucide line icons (the toolbar's set). Only text between tags in
+// <body> is touched, never attributes, <head>, scripts or styles.
+const ICO_SVG = (d) => `<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
+const ICONS = {
+  "✍": ICO_SVG('<path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/>'),
+  "🎧": ICO_SVG('<path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/>'),
+  "⏱": ICO_SVG('<line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/>'),
+  "📖": ICO_SVG('<path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/>'),
+  "🔤": ICO_SVG('<path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/>'),
+  "🗂": ICO_SVG('<path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/>'),
+  "📅": ICO_SVG('<path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/>'),
+};
+const ICON_RE = new RegExp(`(${Object.keys(ICONS).join("|")})\\uFE0F?\\s?`, "gu");
+function iconize(html) {
+  const at = html.search(/<body[\s>]/i);
+  if (at < 0) return html;
+  const body = html.slice(at).replace(/(<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>)|>([^<]+)</gi,
+    (m, block, text) => (block ? block : ">" + text.replace(ICON_RE, (x, e) => ICONS[e]) + "<"));
+  return html.slice(0, at) + body;
+}
+
 function writeLangPage(id, lang, html) {
   const dir = path.join(__dirname, "dist", lang.dir, id);
   fs.mkdirSync(dir, { recursive: true });
@@ -1159,7 +1181,7 @@ function writeLangPage(id, lang, html) {
       ? html.replace(/<meta charset="[^"]*">/i, (m) => `${m}\n${meta}`)
       : html.replace(/<head>/i, `<head>\n${meta}`);
   }
-  fs.writeFileSync(path.join(dir, "index.html"), html, "utf-8");
+  fs.writeFileSync(path.join(dir, "index.html"), iconize(html), "utf-8");
 }
 
 // ─── Furigana via kuroshiro ───
@@ -2465,7 +2487,7 @@ async function main() {
     <button id="settings-btn" type="button" class="nav-tool-btn nav-tool-extra" aria-label="账号与设置 / Account & settings" title="账号与设置 / Account & settings">${ICON_USER}</button>
   </div>
   <div class="nav-scroll">
-  <div class="nav-header"><a href="${SITE_PATH}" style="color:inherit;text-decoration:none;"><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a></div>
+  <div class="nav-header"><a href="${SITE_PATH}" style="color:inherit;text-decoration:none;"><span class="seal-mark" aria-hidden="true" lang="ja">文法</span><span class="lang-zh">日语语法笔记</span><span class="lang-en">Japanese Grammar Notes</span></a></div>
   ${sidebarHtml.join("\n  ")}
   </div>
 </nav>
@@ -2523,7 +2545,8 @@ async function main() {
     var lvl = (path.match(/\\/(N[1-5])(?=\\b|\\/|_)/) || [])[1] || (slug && (slug.match(/^(N[1-5])/) || [])[1]);
     if (lvl) activeWrap = sidebar.querySelector('.nav-group-wrap[data-level="' + lvl + '"]');
   }
-  if (!activeWrap && wraps.length) activeWrap = sidebar.querySelector('.nav-group-wrap[data-level="N5"]') || wraps[0];
+  // Nowhere in particular (the home page): practice is what readers come for.
+  if (!activeWrap && wraps.length) activeWrap = sidebar.querySelector('.nav-group-wrap[data-level="practice"]') || sidebar.querySelector('.nav-group-wrap[data-level="N5"]') || wraps[0];
   wraps.forEach(function(w){ setExpanded(w, w === activeWrap); });
   wraps.forEach(function(w){
     var btn = w.querySelector('.nav-group');
@@ -2658,33 +2681,48 @@ ${SETTINGS_SCRIPT}`;
   // Practice first: what readers actually use (GA, 2026-11). One row per level
   // with its question / listening counts and the practice pages.
   const roundDown = (n) => (n >= 20 ? Math.floor(n / 10) * 10 + "+" : String(n));
+  const practiceKinds = [["practice", "全部练习题", "All questions"], ["listening", "听力", "Listening"], ["reading", "阅读", "Reading"], ["vocabulary", "词汇", "Vocabulary"], ["mock-test", "模拟考", "Mock test"], ["cards", "语法卡片", "Flashcards"]];
   const homePracticeHtml = !quizPages("N5").length ? "" : `
   <section class="home-practice">
     <h2><span class="lang-zh">做题备考</span><span class="lang-en">Practise for the JLPT</span></h2>
-    <p class="home-practice-lead"><span class="lang-zh">按真题题型出的练习题、听力和计时模拟考，每题都讲清楚：正确答案为什么对，每个错误选项错在哪。做错的题会进错题本，过几天再考你。</span><span class="lang-en">Exam-style questions, listening and timed mock tests. Every question explains why the answer is right and what is wrong with each other option. Missed questions come back a few days later.</span></p>
-    <div class="practice-rows">${QUIZ_LEVELS.filter((lv) => quizPages(lv).length).map((lv) => {
-      const qs = loadQuizLevel(lv).qs, ck = qs.filter((q) => q._kind === "choukai").length, rd = qs.length - ck;
-      return `
-      <div class="practice-row">
-        <span class="level-tag">${lv}</span>
-        <span class="practice-count"><span class="lang-zh">${roundDown(rd)} 题${ck ? ` · 听力 ${ck}` : ""}</span><span class="lang-en">${roundDown(rd)} questions${ck ? ` · ${ck} listening` : ""}</span></span>
-        <span class="practice-links">${quizPages(lv).filter((q) => !/-cards\/$/.test(q.href)).map((q) => `<a href="${q.href}"><span class="lang-zh">${q.zh}</span><span class="lang-en">${q.en}</span></a>`).join("")}</span>
-      </div>`;
-    }).join("")}
-    </div>
+    <p class="home-practice-lead"><span class="lang-zh">按真题题型出的练习题、听力和计时模拟考。每题都讲清楚正确答案为什么对、每个错误选项错在哪；做错的题进错题本，过几天再考你。</span><span class="lang-en">Exam-style questions, listening and timed mock tests. Every question explains why the answer is right and what is wrong with each other option; missed ones come back a few days later.</span></p>
+    <div class="table-scroll"><table class="practice-index">
+      <thead><tr><th scope="col"><span class="lang-zh">级别</span><span class="lang-en">Level</span></th>${practiceKinds.map((k) => `<th scope="col"><span class="lang-zh">${k[1]}</span><span class="lang-en">${k[2]}</span></th>`).join("")}</tr></thead>
+      <tbody>${QUIZ_LEVELS.filter((lv) => quizPages(lv).length).map((lv) => {
+        const qs = loadQuizLevel(lv).qs, pages = quizPages(lv);
+        // Each cell says how much is behind the link: questions, or test sets.
+        const n = (kind) => qs.filter((q) => q._kind === kind).length;
+        const mocks = fs.readdirSync(path.join(__dirname, "questions", lv)).filter((d) => /^mock-\d+$/.test(d) && fs.existsSync(path.join(__dirname, "questions", lv, d, "bunpou.json"))).length;
+        const label = { practice: [qs.length, qs.length], listening: [n("choukai"), n("choukai")], reading: [n("dokkai"), n("dokkai")], vocabulary: [n("moji-goi"), n("moji-goi")],
+          "mock-test": [`${mocks} 套`, `${mocks} test${mocks > 1 ? "s" : ""}`], cards: ["背卡片", "Review"] };
+        const cell = (kind) => { const pg = pages.find((q) => q.href.endsWith(`-${kind}/`)); return pg && label[kind][0] ? `<td><a href="${pg.href}"><span class="lang-zh">${label[kind][0]}</span><span class="lang-en">${label[kind][1]}</span></a></td>` : `<td class="none">–</td>`; };
+        return `
+        <tr><th scope="row"><span class="level-tag">${lv}</span></th>${practiceKinds.map((k) => cell(k[0])).join("")}</tr>`;
+      }).join("")}
+      </tbody>
+    </table></div>
   </section>`;
+  // The hero shows what the site is by being it: one sentence, marked the way
+  // a teacher marks a notebook (the grammar point in red, a note beside it).
   const homeMainHtml = `<header class="home-hero">
-    <h1><span class="lang-zh">日语语法笔记 — JLPT N5 到 N1 全部语法</span><span class="lang-en">Japanese Grammar Notes — JLPT N5 to N1</span></h1>
-    <p class="home-intro">
-      <span class="lang-zh">免费、双语（中文 + 日语）的日语语法笔记，从 N5 到 N1 共 <strong>${totalLessons} 课、${totalPoints}+ 语法点</strong>，每课配接续规则、例句、辨析、练习题与间隔复习勾选清单。</span>
-      <span class="lang-en">Free Japanese grammar notes in plain English, covering JLPT N5 → N1 in <strong>${totalLessons} lessons, ${totalPoints}+ grammar points</strong>. Each lesson has conjugation rules, example sentences, side-by-side comparisons of confusable patterns, practice questions, and a spaced-repetition checklist.</span>
-    </p>
-    <div class="home-actions">${quizPages("N5").length ? `
-      <a class="btn-primary" href="practice/"><span class="lang-zh">开始做题</span><span class="lang-en">Start practising</span></a>
-      <a class="btn-secondary" href="lesson01/"><span class="lang-zh">从第 1 课学语法</span><span class="lang-en">Learn from lesson 1</span></a>` : `
-      <a class="btn-primary" href="lesson01/"><span class="lang-zh">从第 1 课开始</span><span class="lang-en">Start with lesson 1</span></a>`}
-      <a class="btn-secondary" href="anki/"><span class="lang-zh">下载 Anki 卡组</span><span class="lang-en">Get the Anki decks</span></a>
+    <div class="hero-copy">
+      <h1><span class="lang-zh">日语语法笔记 — JLPT N5 到 N1 全部语法</span><span class="lang-en">Japanese Grammar Notes — JLPT N5 to N1</span></h1>
+      <p class="home-intro">
+        <span class="lang-zh">免费的 JLPT 语法笔记和题库：<strong>${totalLessons} 课、${totalPoints}+ 语法点</strong>，每个都有接续、例句和易混辨析；学完就做题，听力、阅读、模拟考都有。</span>
+        <span class="lang-en">Free JLPT grammar notes and a question bank: <strong>${totalLessons} lessons, ${totalPoints}+ grammar points</strong>, each with its conjugation, example sentences and the patterns it gets confused with. Then practise: listening, reading and mock tests included.</span>
+      </p>
+      <div class="home-actions">${quizPages("N5").length ? `
+        <a class="btn-primary" href="practice/"><span class="lang-zh">开始做题</span><span class="lang-en">Start practising</span></a>
+        <a class="btn-secondary" href="lesson01/"><span class="lang-zh">从第 1 课学语法</span><span class="lang-en">Learn from lesson 1</span></a>` : `
+        <a class="btn-primary" href="lesson01/"><span class="lang-zh">从第 1 课开始</span><span class="lang-en">Start with lesson 1</span></a>`}
+        <a class="btn-quiet" href="anki/"><span class="lang-zh">Anki 卡组</span><span class="lang-en">Anki decks</span></a>
+      </div>
     </div>
+    <figure class="hero-note">
+      <p class="hero-ja" lang="ja"><ruby>薬<rp>(</rp><rt>くすり</rt><rp>)</rp></ruby>を<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>んだ<strong>のに</strong>、まだ<ruby>痛<rp>(</rp><rt>いた</rt><rp>)</rp></ruby>い。</p>
+      <p class="hero-tr"><span class="lang-zh">明明吃了药，还是疼。</span><span class="lang-en">I took the medicine, and it still hurts.</span></p>
+      <figcaption><b lang="ja">〜のに</b><span class="lang-zh">明明……却……：结果和预想的相反，带着意外或不满。</span><span class="lang-en">even though …: the result goes against what you expected, with surprise or complaint.</span> <a href="lesson15/"><span class="lang-zh">第 15 课</span><span class="lang-en">Lesson 15</span></a></figcaption>
+    </figure>
   </header>${quizPages("N5").length ? progressCardHtml("", QUIZ_LEVELS.flatMap((lv) => quizPages(lv).map((q) => q.href.replace(SITE_PATH, "").replace(/\/$/, "")))) : ""}${homePracticeHtml}
   <section class="home-levels">
     <h2><span class="lang-zh">按级别学习</span><span class="lang-en">Browse by JLPT level</span></h2>
@@ -2850,7 +2888,7 @@ ${AI_SCRIPT}
 </html>`;
 
   fs.mkdirSync(path.join(__dirname, "dist"), { recursive: true });
-  fs.writeFileSync(path.join(__dirname, OUT), fullHtml, "utf-8");
+  fs.writeFileSync(path.join(__dirname, OUT), iconize(fullHtml), "utf-8");
 
   // Write audio request list for build-audio.py
   fs.mkdirSync(path.join(__dirname, "dist"), { recursive: true });
@@ -3114,15 +3152,15 @@ ${CSS}
     margin-left: calc(var(--sidebar-w) + max(0px, (100vw - var(--sidebar-w) - var(--col)) / 2)) !important;
   }
 }
-.back-link { display: block; margin-bottom: 1.5rem; color: var(--accent); text-decoration: none; font-size: 0.9rem; }
+.back-link { display: block; margin-bottom: 1.5rem; color: var(--ui); text-decoration: none; font-size: 0.9rem; }
 .back-link:hover { text-decoration: underline; }
 .breadcrumb { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem; }
 .breadcrumb a { color: var(--text-muted); text-decoration: none; }
-.breadcrumb a:hover { color: var(--accent); text-decoration: underline; }
+.breadcrumb a:hover { color: var(--ui); text-decoration: underline; }
 .breadcrumb .sep { margin: 0 0.4em; }
 .prev-next { display: flex; justify-content: space-between; align-items: flex-start; margin: 2.5rem 0 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); gap: 1rem; }
 .prev-next-top { margin: 0 0 1.75rem; padding: 0 0 1rem; border-top: none; border-bottom: 1px solid var(--border); }
-.pn-link { font-size: 0.9rem; color: var(--accent); text-decoration: none; max-width: 48%; }
+.pn-link { font-size: 0.9rem; color: var(--ui); text-decoration: none; max-width: 48%; }
 .pn-link:hover { text-decoration: underline; }
 .pn-prev { text-align: left; }
 .pn-next { text-align: right; margin-left: auto; }
@@ -3279,9 +3317,9 @@ ${APP_PREFS_JS}
 .overview-intro { font-size: 1rem; line-height: 1.8; color: var(--text); margin: 1rem 0 2rem; padding: 1rem 1.2rem; background: var(--card-bg); border-left: 3px solid var(--word-border); border-radius: 0 var(--radius) var(--radius) 0; }
 .overview-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0 2.5rem; }
 .overview-card { display: block; padding: 1rem 1.2rem; background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius-lg); text-decoration: none; color: inherit; transition: all var(--transition); }
-.overview-card:hover { border-color: var(--accent); box-shadow: var(--shadow-hover); transform: translateY(-1px); }
+.overview-card:hover { border-color: var(--ui); box-shadow: var(--shadow-hover); transform: translateY(-1px); }
 .overview-card-head { display: flex; align-items: baseline; gap: .6rem; margin-bottom: .5rem; }
-.overview-day { font-size: .75rem; font-weight: 700; color: var(--accent); white-space: nowrap; }
+.overview-day { font-size: .75rem; font-weight: 700; color: var(--ui); white-space: nowrap; }
 .overview-title { font-size: .95rem; font-weight: 600; color: var(--text-strong); }
 .overview-points { display: flex; flex-wrap: wrap; gap: .3rem; }
 .grammar-pill { font-size: .75rem; background: #f4f4f4; color: var(--text-muted); padding: .15rem .5rem; border-radius: var(--radius-sm); }
@@ -3289,10 +3327,10 @@ ${APP_PREFS_JS}
 .overview-table th { background: var(--word-bg); font-weight: 600; padding: .5rem .8rem; text-align: left; border: 1px solid var(--border); }
 .overview-table td { padding: .4rem .8rem; border: 1px solid var(--border); }
 .overview-table td:first-child { font-weight: 500; }
-.overview-table a { color: var(--accent); text-decoration: none; }
+.overview-table a { color: var(--ui); text-decoration: none; }
 .overview-table a:hover { text-decoration: underline; }
 .level-stats { display: flex; gap: 2rem; margin: 1rem 0; padding: 1rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-.level-stat strong { display: block; font-size: 1.6rem; color: var(--accent); }
+.level-stat strong { display: block; font-size: 1.6rem; color: var(--text-strong); }
 .level-stat span { font-size: .8rem; color: var(--text-muted); }
 @media (prefers-color-scheme: dark) {
   :root:not(.theme-light) .overview-intro { background: #1f1f2e; color: #c8c8d4; }
@@ -3791,26 +3829,26 @@ ${CSS}
 .breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 1rem; }
 .breadcrumb a { color: var(--text-muted); text-decoration: none; }
 .breadcrumb .sep { margin: 0 .4em; }
-.about-content h1 { font-size: var(--text-2xl); margin: 0 0 1.5rem; border-bottom: 2px solid var(--accent); padding-bottom: .6rem; }
+.about-content h1 { font-size: var(--text-2xl); margin: 0 0 1.5rem; border-bottom: 2px solid var(--ui); padding-bottom: .6rem; }
 .about-content h2 { font-size: var(--text-xl); margin: 2.2rem 0 .9rem; color: var(--text-strong); }
 .about-content p, .about-content li { line-height: 1.85; }
 .about-content ul { margin: .6rem 0 .6rem 1.4rem; }
 .about-content li { margin: .3rem 0; }
-.about-content blockquote { background: rgba(233,69,96,.04); border-left: 3px solid var(--accent); padding: .7rem 1.1rem; margin: 1rem 0; color: var(--text-muted); }
-.about-content a { color: var(--accent); text-decoration: none; }
+.about-content blockquote { background: var(--card-bg); border-left: 3px solid var(--word-border); padding: .7rem 1.1rem; margin: 1rem 0; color: var(--text-muted); }
+.about-content a { color: var(--ui); text-decoration: none; }
 .about-content a:hover { text-decoration: underline; }
 .about-content code { background: var(--code-bg); padding: .1rem .3rem; border-radius: var(--radius-sm); font-size: .9em; }
 .about-content strong { color: var(--text-strong); }
 @media (prefers-color-scheme: dark) {
   :root:not(.theme-light) .about-content h2 { color: #e4e4ec; }
   :root:not(.theme-light) .about-content strong { color: #f0f0f5; }
-  :root:not(.theme-light) .about-content blockquote { background: rgba(233,69,96,.08); color: #b8b8c4; }
+  :root:not(.theme-light) .about-content blockquote { background: var(--ui-soft); color: #b8b8c4; }
 }
 
 /* Manual dark override (toggled via JS, mirrors media query rules) */
 html.theme-dark .about-content h2 { color: #e4e4ec; }
 html.theme-dark .about-content strong { color: #f0f0f5; }
-html.theme-dark .about-content blockquote { background: rgba(233,69,96,.08); color: #b8b8c4; }
+html.theme-dark .about-content blockquote { background: var(--ui-soft); color: #b8b8c4; }
 </style>
 </head>
 <body class="sidebar-collapsed">
@@ -4359,10 +4397,10 @@ ${lessonList}</section>`;
   // said once above the table. "已做" comes from this browser's progress.
   const hubRow = (level, en) => {
     const b = quizBundles[level], lv = level.toLowerCase(), L = (zh, e) => (en ? e : zh);
-    if (!b) return `<tr class="hub-soon"><th scope="row">${level}</th><td colspan="3">${L("准备中", "Coming soon")}</td></tr>`;
+    if (!b) return `<tr class="hub-soon"><th scope="row"><span class="level-tag">${level}</span></th><td colspan="3">${L("准备中", "Coming soon")}</td></tr>`;
     const n = b.practice.questions.length, types = Object.keys(b.practice.types).length;
     const minutes = b.mocks.length ? b.mocks[0].test.sections.reduce((a, x) => a + x.minutes, 0) : 0;
-    return `<tr><th scope="row">${level}</th>
+    return `<tr><th scope="row"><span class="level-tag">${level}</span></th>
       <td><a class="hub-go" href="${SITE_PATH}${lv}-practice/"><b>${L("练习题", "Practice")}</b><span>${L(`${n} 题 · ${types} 种题型`, `${n} questions · ${types} types`)}<span class="hub-done" data-lv="${lv}" data-t="${L(" · 已做 N", " · N done")}" hidden></span></span></a></td>
       ${ckLevels.length ? `<td>${ckLevels.includes(level) ? `<a class="hub-go" href="${SITE_PATH}${lv}-listening/"><b>${L("听力", "Listening")}</b><span>${L(`${new Set(b.practice.questions.filter((q) => b.practice.types[q.type].g === "choukai").map((q) => q.passage || q.id)).size} 段录音`, `${new Set(b.practice.questions.filter((q) => b.practice.types[q.type].g === "choukai").map((q) => q.passage || q.id)).size} recordings`)}</span></a>` : ""}</td>` : ""}
       <td>${b.mocks.length ? `<a class="hub-go" href="${SITE_PATH}${lv}-mock-test/"><b>${L("模拟题", "Mock test")}</b><span>${L(`${b.mocks.length} 套 · ${minutes} 分钟`, `${b.mocks.length} test${b.mocks.length > 1 ? "s" : ""} · ${minutes} min`)}</span></a>` : ""}</td>
@@ -4420,7 +4458,7 @@ ${lessonList}</section>`;
     const ORDER = ["N5", "N4", "N3", "N2", "N1"].filter((l) => stats[l]);
     const row = (level, L) => {
       const x = stats[level], lv = level.toLowerCase();
-      return `<tr><th scope="row">${level}</th>
+      return `<tr><th scope="row"><span class="level-tag">${level}</span></th>
       <td><a class="hub-go" href="${SITE_PATH}${lv}-listening/"><b>${L("听力练习", "Listening practice")}</b><span>${L(`${x.recs} 段录音 · ${x.types.length} 种题型`, `${x.recs} recordings · ${x.types.length} item types`)}</span></a></td>
       <td>${x.mock ? `<a class="hub-go" href="${SITE_PATH}${lv}-mock-test/"><b>${L("模拟题", "Mock test")}</b><span>${L("听力在最后一场", "Listening is the last sitting")}</span></a>` : ""}</td></tr>`;
     };
@@ -4517,7 +4555,7 @@ ${lessonList}</section>`;
     hubPage("reading", {
       en: { title: "JLPT Reading Practice Online — Free N5 to N1 Passages with Translations", desc: `Free JLPT reading practice: ${total} original passages from N5 to N1 in every test format, with full translations and every option explained. No sign-up.`, h1: "JLPT Reading Practice", crumb: "Reading", lead: "Choose your level. Read, answer, then see why each option is right or wrong and read the full translation." },
       zh: { title: "JLPT 阅读练习 - N5 到 N1 免费在线阅读题，带全文翻译", desc: `免费 JLPT 阅读在线练习：N5 到 N1 共 ${total} 篇原创文章，覆盖全部阅读题型，带全文翻译和逐项解析，打开即用，无需注册。`, h1: "JLPT 阅读练习", crumb: "阅读", lead: "选择你的级别。读完作答，再看每个选项为什么对、为什么错，以及全文翻译。" },
-    }, (level, L) => { const x = st[level], lv = level.toLowerCase(); return `<tr><th scope="row">${level}</th>
+    }, (level, L) => { const x = st[level], lv = level.toLowerCase(); return `<tr><th scope="row"><span class="level-tag">${level}</span></th>
       <td><a class="hub-go" href="${SITE_PATH}${lv}-reading/"><b>${L("阅读练习", "Reading practice")}</b><span>${L(`${x.passages} 篇文章 · ${x.qs} 题`, `${x.passages} passages · ${x.qs} questions`)}</span></a></td>
       <td class="hub-types">${typeNames(x.types, L)}</td></tr>`; },
     (L) => `${tipsLink("jlpt-reading-tips", L, "阅读做题技巧：每篇花多少时间、先看题还是先看文章", "Reading tips: time per passage, and whether to read the question first")}<section class="quiz-about">
@@ -4540,7 +4578,7 @@ ${lessonList}</section>`;
     hubPage("vocabulary", {
       en: { title: "JLPT Vocabulary Practice Online — Free N5 to N1 Kanji & Word Questions", desc: `Free JLPT vocabulary practice: ${total} exam-style questions from N5 to N1 on kanji readings, writing, word choice and usage, every option explained. No sign-up.`, h1: "JLPT Vocabulary Practice", crumb: "Vocabulary", lead: "Choose your level. Kanji readings, writing, word choice and usage, each with an explanation for every option." },
       zh: { title: "JLPT 词汇练习 - N5 到 N1 文字词汇在线做题，附解析", desc: `免费 JLPT 文字词汇在线练习：N5 到 N1 共 ${total} 道仿真题，覆盖汉字读音、汉字写法、选词和用法，每个选项都有解析，无需注册。`, h1: "JLPT 词汇练习", crumb: "词汇", lead: "选择你的级别。汉字读音、写法、选词、用法，每个选项都有解析。" },
-    }, (level, L) => { const x = st[level], lv = level.toLowerCase(); return `<tr><th scope="row">${level}</th>
+    }, (level, L) => { const x = st[level], lv = level.toLowerCase(); return `<tr><th scope="row"><span class="level-tag">${level}</span></th>
       <td><a class="hub-go" href="${SITE_PATH}${lv}-vocabulary/"><b>${L("词汇练习", "Vocabulary practice")}</b><span>${L(`${x.qs} 题 · ${x.types.length} 种题型`, `${x.qs} questions · ${x.types.length} types`)}</span></a></td>
       <td><a class="hub-go" href="${SITE_PATH}${lv}-cards/"><b>${L("语法卡片", "Grammar flashcards")}</b><span>${L("每个语法点一张", "one per grammar point")}</span></a></td></tr>`; },
     (L) => `${tipsLink("jlpt-vocabulary-grammar-tips", L, "文字词汇与语法做题技巧：读音陷阱、用法题、排序题★", "Vocabulary & grammar tips: reading traps, usage items, sentence order ★")}<section class="quiz-about">
@@ -4561,9 +4599,9 @@ ${lessonList}</section>`;
       en: { title: "JLPT Mock Test Online — Free Timed N5 to N1 Practice Tests with Scores", desc: "Free timed JLPT mock tests from N5 to N1 in the real format, listening included: an estimated score against the pass marks and every question explained. No sign-up.", h1: "JLPT Mock Tests", crumb: "Mock tests", lead: "A full test in the real order and timing. No answers until you submit; then an estimated score per section against the pass marks." },
       zh: { title: "JLPT 模拟题在线测试 - N5 到 N1 免费计时模考，交卷估分", desc: "免费 JLPT 在线模拟考：N5 到 N1，按真题结构和时间计时，含听力，交卷后估算分数、对照合格线，每道题都有解析，无需注册。", h1: "JLPT 模拟题", crumb: "模拟题", lead: "按真考的顺序和时间完整做一套。交卷前不显示答案；交卷后按科目估分，对照合格线。" },
     }, (level, L) => { const b = quizBundles[level], lv = level.toLowerCase(), cfg = QUIZ_MOCK[level];
-      if (!b.mocks.length) return `<tr class="hub-soon"><th scope="row">${level}</th><td colspan="2">${L("准备中", "Coming soon")}</td></tr>`;
+      if (!b.mocks.length) return `<tr class="hub-soon"><th scope="row"><span class="level-tag">${level}</span></th><td colspan="2">${L("准备中", "Coming soon")}</td></tr>`;
       const minutes = b.mocks[0].test.sections.reduce((a, x) => a + x.minutes, 0);
-      return `<tr><th scope="row">${level}</th>
+      return `<tr><th scope="row"><span class="level-tag">${level}</span></th>
       <td><a class="hub-go" href="${SITE_PATH}${lv}-mock-test/"><b>${L("模拟题", "Mock test")}</b><span>${L(`${b.mocks.length} 套 · ${minutes} 分钟`, `${b.mocks.length} test${b.mocks.length > 1 ? "s" : ""} · ${minutes} min`)}</span></a></td>
       <td class="hub-types">${L(`合格线 ${cfg.pass}/180`, `Pass mark ${cfg.pass}/180`)}</td></tr>`; },
     (L) => `<section class="quiz-about">
@@ -5020,12 +5058,18 @@ const CSS = minifyCss(`
      surface; dark mode switches back to the brighter #e94560. */
   --accent: #b8283f;
   --accent-soft: rgba(233,69,96,.12);
+  /* Red is the teacher's pen: the grammar point being taught, right/wrong
+     marks, the seal. Everything you can click is ink instead: blue-black,
+     the fountain-pen colour, with --ui-on for text set on it. */
+  --ui: #1f3d63;
+  --ui-on: #ffffff;
+  --ui-soft: rgba(31,61,99,.10);
   --card-bg: #fbfaf7;
   --border: #e3dfd5;
   /* Furigana is a reading aid, not emphasis: muted, so red stays on the
      grammar point itself. */
   --ruby-color: var(--text-muted);
-  --link: var(--accent);
+  --link: var(--ui);
   --selection-bg: #b8d4fb;
   --selection-fg: #1a1a2e;
   --word-bg: var(--surface-2);
@@ -5069,7 +5113,7 @@ const CSS = minifyCss(`
   --shadow-sm: 0 1px 3px rgba(0,0,0,.06);
   --shadow-md: 0 2px 12px rgba(0,0,0,.08);
   --shadow-lg: 0 12px 40px rgba(0,0,0,.3);
-  --shadow-hover: 0 4px 18px rgba(233,69,96,.14);
+  --shadow-hover: 0 4px 18px rgba(31,61,99,.14);
 
   --transition: .15s ease;
   --transition-slow: .25s ease;
@@ -5082,6 +5126,7 @@ html.tone-white {
   --surface-2: #f2f2f3; --row-alt: #fafafa; --panel-bg: #f4f6f8; --chip-bg: #eceef1;
 }
 html.tone-sepia {
+  --ui: #2a3f5f;
   --bg: #ece3cf; --card-bg: #f3ecdd; --sidebar-bg: #e3d8c0; --border: #d8ccb2;
   --text: #3a3025; --text-strong: #2a2118; --text-muted: #665846; --text-subtle: #6e604c;
   --sidebar-text: #594c39; --word-bg: #e3d8c0; --word-border: #c2b393; --code-bg: #e3d8c0;
@@ -5111,7 +5156,7 @@ body {
    shows for keyboard users. */
 a:focus-visible, button:focus-visible,
 input:focus-visible, summary:focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--ui);
   outline-offset: 2px;
   border-radius: var(--radius-sm);
 }
@@ -5193,13 +5238,13 @@ input:focus-visible, summary:focus-visible {
   background: var(--sidebar-hover-bg);
 }
 body.settings-open #settings-btn {
-  color: var(--accent);
-  background: rgba(233,69,96,.15);
+  color: var(--ui);
+  background: var(--ui-soft);
 }
 body.ai-open #ai-btn {
-  color: var(--accent);
-  background: rgba(233,69,96,.15);
-  filter: drop-shadow(0 0 3px var(--accent));
+  color: var(--ui);
+  background: var(--ui-soft);
+  filter: drop-shadow(0 0 3px var(--ui));
 }
 /* Shown once ai-assistant.js has run on the page (it adds .has-ai). */
 body:not(.has-ai) .nav-tool-ai {
@@ -5234,7 +5279,7 @@ body:not(.has-ai) .nav-tool-ai {
   color: var(--sidebar-heading); padding: .8rem 1.2rem .4rem;
   font-weight: 700; white-space: nowrap;
 }
-.nav-group:hover { color: var(--accent); }
+.nav-group:hover { color: var(--ui); }
 .nav-caret { font-size: .65rem; opacity: .75; transition: transform var(--transition); }
 .nav-group-wrap.expanded .nav-caret { transform: rotate(90deg); }
 .nav-group-items { display: none; }
@@ -5253,8 +5298,8 @@ body:not(.has-ai) .nav-tool-ai {
 .nav-item:has(.nav-num) { display: flex; gap: .55rem; }
 .nav-num { flex: none; width: 1.3rem; text-align: right; font-variant-numeric: tabular-nums; }
 .nav-item.active {
-  color: var(--sidebar-hover-text); background: rgba(233,69,96,.15);
-  border-left-color: var(--accent);
+  color: var(--sidebar-hover-text); background: var(--ui-soft);
+  border-left-color: var(--ui);
 }
 
 /* Main */
@@ -5287,23 +5332,26 @@ body.lang-en span.lang-en { display: inline; }
 body.lang-en div.lang-en { display: block; }
 
 /* Typography */
-h1 { font-size: var(--text-2xl); margin: 0 0 1.4rem; border-bottom: 2px solid var(--accent); padding-bottom: .6rem; }
+h1 { font-size: var(--text-2xl); line-height: 1.35; margin: 0 0 1.1rem; color: var(--text-strong); }
+/* Prose keeps to about 42 characters a line; tables and diagrams may run the full column. */
+.lesson > p, .lesson > ul, .lesson > ol, .lesson > blockquote, .lesson > h2, .lesson > h3, .lesson > h4 { max-width: 42em; }
 h2 { font-size: var(--text-xl); margin: 2.2rem 0 .9rem; color: var(--text-strong); }
 /* Arriving from a practice question's 📖 link: the grammar point clears the
    phone top bar and flashes once so the eye finds it. */
 h2[id], h3[id] { scroll-margin-top: 4.5rem; }
 h2:target { animation: target-flash 2.4s ease-out; border-radius: 4px; }
-@keyframes target-flash { 0%, 30% { background: color-mix(in srgb, var(--accent) 18%, transparent); } 100% { background: transparent; } }
-@media (prefers-reduced-motion: reduce) { h2:target { animation: none; background: color-mix(in srgb, var(--accent) 12%, transparent); } }
+@keyframes target-flash { 0%, 30% { background: color-mix(in srgb, var(--ui) 18%, transparent); } 100% { background: transparent; } }
+@media (prefers-reduced-motion: reduce) { h2:target { animation: none; background: color-mix(in srgb, var(--ui) 12%, transparent); } }
 h3 { font-size: var(--text-lg); margin: 1.6rem 0 .6rem; }
 h4 { font-size: var(--text-md); margin: 1.3rem 0 .5rem; }
 p { margin: .6rem 0; }
 ul, ol { margin: .5rem 0 .5rem 1.5rem; }
 li { margin: .2rem 0; }
 hr { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+/* A note in the margin: quiet, so the red in the examples around it keeps its meaning */
 blockquote {
-  border-left: 3px solid var(--accent);
-  background: rgba(233,69,96,.04);
+  border-left: 3px solid var(--word-border);
+  background: var(--card-bg);
   padding: .6rem 1rem; margin: .8rem 0;
   font-size: .95rem;
 }
@@ -5372,12 +5420,13 @@ tr:nth-child(even) { background: var(--row-alt); }
 
 /* Word table highlight */
 table.word-table th { background: var(--word-bg); }
-table.word-table td:first-child { font-size: 1.2rem; font-weight: 500; white-space: nowrap; }
+table.word-table td { padding-top: .3rem; padding-bottom: .3rem; vertical-align: top; }
+table.word-table td:first-child { font-size: 1.1rem; font-weight: 500; white-space: nowrap; }
 table.word-table td:nth-child(2) { color: var(--text-muted); }
 table.word-table .pos { font-size: .75em; color: var(--text-muted); border: 1px solid currentColor; border-radius: 3px; padding: 0 .3em; white-space: nowrap; }
 table.word-table .gloss-note { display: block; font-size: .85em; color: var(--text-muted); margin-top: .15em; }
 table.word-table .collocs { display: block; margin-top: .25em; }
-table.word-table .colloc { display: block; font-size: .85em; color: var(--text-muted); line-height: 1.9; }
+table.word-table .colloc { display: block; font-size: .85em; color: var(--text-muted); line-height: 1.7; }
 table.word-table .colloc-ja { font-size: 1.1em; color: var(--text); margin-right: .2em; }
 
 /* Checklist */
@@ -5391,7 +5440,7 @@ table.word-table .colloc-ja { font-size: 1.1em; color: var(--text); margin-right
   flex: 1; height: 6px; background: #e3dfd5; border-radius: var(--radius-sm); overflow: hidden;
 }
 .checklist-progress .progress-fill {
-  height: 100%; background: var(--accent); border-radius: var(--radius-sm); transition: width .3s;
+  height: 100%; background: var(--ui); border-radius: var(--radius-sm); transition: width .3s;
 }
 .checklist-progress .progress-text { white-space: nowrap; font-weight: 500; min-width: 80px; text-align: right; }
 ul:has(input[type="checkbox"]) {
@@ -5406,10 +5455,10 @@ ul:has(input[type="checkbox"]) li:hover { background: var(--surface-2); }
 ul:has(input[type="checkbox"]) li.checked {
   text-decoration: line-through; color: var(--text-subtle);
 }
-ul:has(input[type="checkbox"]) li.checked input[type="checkbox"] { accent-color: var(--accent); }
+ul:has(input[type="checkbox"]) li.checked input[type="checkbox"] { accent-color: var(--ui); }
 input[type="checkbox"] {
   width: 1.1em; height: 1.1em; margin-right: .5em; cursor: pointer;
-  vertical-align: middle; accent-color: var(--accent);
+  vertical-align: middle; accent-color: var(--ui);
 }
 
 /* Code */
@@ -5426,14 +5475,8 @@ code {
 pre code { background: none; padding: 0; }
 
 /* SEO lead paragraph (keyword-rich summary after h1) */
-.seo-lead {
-  font-size: .95rem; color: var(--text-muted);
-  background: var(--card-bg); border-left: 3px solid var(--word-border);
-  padding: .7rem 1rem; margin: 0 0 1.5rem;
-  border-radius: 0 var(--radius) var(--radius) 0;
-  line-height: 1.7;
-}
-.seo-lead strong { color: var(--accent); font-weight: 600; }
+.seo-lead { font-size: 1rem; color: var(--text-muted); margin: 0 0 1.6rem; line-height: 1.75; max-width: 42em; }
+.seo-lead strong { color: var(--text-strong); font-weight: 600; }
 
 /* Lesson meta line (last-updated, reading time) — sits between h1 and seo-lead */
 .lesson-meta {
@@ -5453,14 +5496,14 @@ pre code { background: none; padding: 0; }
   opacity: .5; transition: opacity .2s, border-color .2s;
   -webkit-user-select: none; user-select: none;  /* keep 🔊 out of selections and copies */
 }
-.speak-btn:hover { opacity: 1; border-color: var(--accent); }
-.speak-btn.playing { opacity: 1; border-color: var(--accent); }
+.speak-btn:hover { opacity: 1; border-color: var(--ui); }
+.speak-btn.playing { opacity: 1; border-color: var(--ui); }
 @media (prefers-color-scheme: dark) {
   :root:not(.theme-light) .speak-btn { border-color: #3a3a55; }
-  :root:not(.theme-light) .speak-btn:hover { border-color: var(--accent); }
+  :root:not(.theme-light) .speak-btn:hover { border-color: var(--ui); }
 }
 html.theme-dark .speak-btn { border-color: #3a3a55; }
-html.theme-dark .speak-btn:hover { border-color: var(--accent); }
+html.theme-dark .speak-btn:hover { border-color: var(--ui); }
 
 /* Cross-links */
 .related-grammar {
@@ -5470,15 +5513,15 @@ html.theme-dark .speak-btn:hover { border-color: var(--accent); }
 .related-label { font-weight: 600; color: var(--text-muted); margin-right: .5rem; }
 .quiz-link { margin: 1.4rem 0 .4rem; }
 .level-note { margin: .2rem 0 1rem; font-size: .9em; color: var(--text-muted); }
-.quiz-cta { margin: 2rem 0 1rem; padding: 1rem 1.2rem; border: 1px solid var(--accent); border-radius: var(--radius-lg); background: rgba(127,127,127,.07); }
+.quiz-cta { margin: 2rem 0 1rem; padding: 1rem 1.2rem; border: 1px solid var(--ui); border-radius: var(--radius-lg); background: rgba(127,127,127,.07); }
 .quiz-cta p { margin: 0 0 .7rem; }
-.quiz-cta a { display: inline-block; padding: .45em 1.2em; border-radius: 999px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 700; }
+.quiz-cta a { display: inline-block; padding: .45em 1.2em; border-radius: 999px; background: var(--ui); color: var(--ui-on); text-decoration: none; font-weight: 700; }
 .quiz-cta a:hover { filter: brightness(1.1); }
 .nav-hub { margin: .2rem .6rem .6rem; font-weight: 600; }
-.quiz-link a, .ov-quiz a { display: inline-block; padding: .35em .95em; border: 1px solid var(--accent); border-radius: 999px; color: var(--accent); text-decoration: none; font-size: .92em; }
-.quiz-link a:hover, .ov-quiz a:hover { background: var(--accent); color: #fff; }
+.quiz-link a, .ov-quiz a { display: inline-block; padding: .35em .95em; border: 1px solid var(--ui); border-radius: 999px; color: var(--ui); text-decoration: none; font-size: .92em; }
+.quiz-link a:hover, .ov-quiz a:hover { background: var(--ui); color: var(--ui-on); }
 .ov-quiz { display: flex; flex-wrap: wrap; gap: .5rem; margin: .8rem 0 1.2rem; }
-.jp-progress { display: flex; flex-wrap: wrap; align-items: baseline; gap: .3rem 1rem; margin: 1rem 0; padding: .7rem 1rem; border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: var(--radius); font-size: .92rem; color: var(--text-muted); }
+.jp-progress { display: flex; flex-wrap: wrap; align-items: baseline; gap: .3rem 1rem; margin: 1rem 0; padding: .7rem 1rem; border: 1px solid var(--border); border-left: 3px solid var(--ui); border-radius: var(--radius); font-size: .92rem; color: var(--text-muted); }
 .jp-progress[hidden] { display: none; }
 .jp-progress a { color: var(--text-muted); }
 .jp-progress .jp-prog-go { color: var(--link); font-weight: 700; text-decoration: none; }
@@ -5489,7 +5532,7 @@ html.theme-dark .speak-btn:hover { border-color: var(--accent); }
   text-decoration: none; font-size: .82rem;
   line-height: 1.5;
 }
-.cross-link:hover { background: var(--accent); color: #fff; }
+.cross-link:hover { background: var(--ui); color: var(--ui-on); }
 .cross-link:hover .cross-link-desc,
 .cross-link:hover .cross-link-level { color: rgba(255,255,255,.9); background: none; border-color: rgba(255,255,255,.5); }
 .cross-link-term { font-weight: 600; }
@@ -5514,7 +5557,7 @@ summary {
   padding: .2rem 0;
 }
 
-summary::marker { color: var(--accent); }
+summary::marker { color: var(--ui); }
 summary:hover { color: var(--link); }
 
 /* Page footer */
@@ -5525,7 +5568,7 @@ summary:hover { color: var(--link); }
 }
 .site-footer nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .3rem 1.2rem; }
 .site-footer a { color: inherit; text-decoration: none; white-space: nowrap; }
-.site-footer a:hover { color: var(--accent); }
+.site-footer a:hover { color: var(--ui); }
 .site-footer p { margin: .5rem 0 0; }
 
 /* Narrow screens: no right margin on content */
@@ -5547,7 +5590,7 @@ summary:hover { color: var(--link); }
   .m-btn[hidden] { display: none; }
   .m-btn svg { width: 20px; height: 20px; }
   .m-btn:active { background: var(--chip-bg); }
-  body.ai-open .m-btn[data-m="ai"] { color: var(--accent); }
+  body.ai-open .m-btn[data-m="ai"] { color: var(--ui); }
   /* ☰ sits in the bar's left end: flat, and slides away with it. */
   #sidebar.collapsed #menu-toggle { background: transparent; box-shadow: none; }
   .nav-tools { transition: width var(--transition-slow), transform var(--transition-slow); }
@@ -5575,53 +5618,46 @@ body.sidebar-collapsed #content.home {
   margin-right: auto;
 }
 .home-hero {
-  text-align: center;
-  padding: 2.5rem 1rem 1.8rem;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 2.2rem;
+  display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 2.6rem; align-items: center;
+  padding: 2.2rem 0 2.4rem; border-bottom: 1px solid var(--border); margin-bottom: 2.2rem;
 }
-.home-hero h1 {
-  font-size: 2rem; margin: 0 0 1rem;
-  border: none; padding: 0; color: var(--text-strong);
+.home-hero h1 { font-size: 1.75rem; line-height: 1.35; margin: 0 0 .9rem; border: none; padding: 0; color: var(--text-strong); }
+.home-intro { font-size: .98rem; color: var(--text-muted); margin: 0 0 1.4rem; line-height: 1.75; }
+.home-intro strong { color: var(--text-strong); font-weight: 600; }
+.home-actions { display: flex; align-items: center; gap: .7rem; flex-wrap: wrap; }
+.home-actions a { display: inline-block; padding: .55rem 1.25rem; border-radius: var(--radius); font-size: .95rem; font-weight: 600; text-decoration: none; border: 1px solid transparent; }
+.home-actions .btn-primary { background: var(--ui); border-color: var(--ui); color: var(--ui-on); }
+.home-actions .btn-primary:hover { opacity: .9; }
+.home-actions .btn-secondary { border-color: var(--border); color: var(--text-strong); }
+.home-actions .btn-secondary:hover { border-color: var(--ui); }
+.home-actions .btn-quiet { padding-left: .4rem; padding-right: .4rem; color: var(--link); font-weight: 500; text-decoration: underline; text-underline-offset: 3px; }
+/* The sentence, on ruled paper, marked in red pen */
+.hero-note { margin: 0; padding: 1.1rem 1.5rem 1.2rem; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--card-bg); }
+.hero-ja, .hero-tr { margin: 0; background-image: linear-gradient(to bottom, transparent calc(100% - 1px), var(--border) calc(100% - 1px)); background-repeat: repeat-y; }
+.hero-ja { font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, "Noto Serif JP", "Noto Serif CJK JP", "Source Han Serif JP", serif; font-size: 1.45rem; line-height: 3.1rem; background-size: 100% 3.1rem; color: var(--text-strong); }
+.hero-ja rt { font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; font-size: .42em; }
+.hero-ja strong { color: var(--accent); font-weight: 700; text-decoration: underline wavy var(--accent); text-decoration-thickness: 1.5px; text-underline-offset: .3em; }
+.hero-tr { font-size: .95rem; line-height: 2.3rem; background-size: 100% 2.3rem; color: var(--text-muted); }
+.hero-note figcaption { margin-top: .9rem; font-size: .88rem; line-height: 1.65; color: var(--text); }
+.hero-note figcaption b { color: var(--accent); margin-right: .5em; font-size: 1.05em; }
+@media (max-width: 860px) {
+  .home-hero { grid-template-columns: 1fr; gap: 1.6rem; padding-top: 1.2rem; }
+  .home-hero h1 { font-size: 1.45rem; }
+  .hero-ja { font-size: 1.3rem; }
 }
-.home-intro {
-  font-size: 1rem; color: var(--text-muted);
-  max-width: 680px; margin: 0 auto 1.6rem;
-  line-height: 1.75;
-}
-.home-intro strong { color: var(--accent); font-weight: 600; }
-@media (max-width: 640px) {
-  .home-hero { padding-top: 1.5rem; }
-  .home-hero h1 { font-size: 1.45rem; line-height: 1.5; }
-  .home-intro { font-size: .9rem; }
-}
-.home-actions {
-  display: flex; justify-content: center; gap: .8rem; flex-wrap: wrap;
-  margin: 1.4rem 0 .4rem;
-}
-.home-actions a {
-  display: inline-block; padding: .55rem 1.3rem; border-radius: var(--radius);
-  font-size: .95rem; font-weight: 600; text-decoration: none;
-  border: 1px solid var(--accent);
-}
-/* Same darker red as .level-tag so white text passes AA. */
-.home-actions .btn-primary { background: #d6354c; border-color: #d6354c; color: #fff; }
-.home-actions .btn-primary:hover { background: #c02a40; }
-.home-actions .btn-secondary { color: var(--accent); }
-.home-actions .btn-secondary:hover { background: var(--accent-soft); }
 .home-practice h2 { font-size: 1.35rem; margin: 0 0 .5rem; color: var(--text-strong); }
-.home-practice-lead { color: var(--text-muted); margin: 0 0 1rem; line-height: 1.7; }
-.practice-rows { display: grid; gap: .6rem; margin-bottom: 2.4rem; }
-.practice-row { display: grid; grid-template-columns: auto auto 1fr; align-items: center; gap: .9rem; padding: .7rem 1rem; background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); }
-.practice-row .level-tag { margin: 0; }
-.practice-count { font-size: .9rem; color: var(--text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; min-width: 11.5em; }
-.practice-links { display: flex; flex-wrap: wrap; gap: .3rem 1.1rem; }
-.practice-links a { font-size: .93rem; text-decoration: none; white-space: nowrap; }
-.practice-links a:hover { text-decoration: underline; }
-@media (max-width: 640px) {
-  .practice-row { grid-template-columns: auto 1fr; }
-  .practice-links { grid-column: 1 / -1; }
-}
+.home-practice-lead { color: var(--text-muted); margin: 0 0 1rem; line-height: 1.7; max-width: 46em; }
+/* Practice as the contents page of a workbook: levels down, kinds across */
+table.practice-index { margin: 0 0 2.4rem; font-size: .92rem; border: 0; }
+table.practice-index th, table.practice-index td { border: 0; border-bottom: 1px solid var(--border); padding: .6rem .8rem; background: none !important; text-align: left; white-space: nowrap; }
+table.practice-index thead th { font-size: .8rem; font-weight: 500; color: var(--text-muted); border-bottom-color: var(--text-muted); }
+table.practice-index tbody th { width: 1%; padding-left: 0; }
+table.practice-index .num { text-align: right; font-variant-numeric: tabular-nums; color: var(--text-muted); }
+table.practice-index td a { text-decoration: none; font-weight: 500; }
+table.practice-index td a:hover { text-decoration: underline; text-underline-offset: 3px; }
+table.practice-index td.none { color: var(--text-subtle); }
+table.practice-index .level-tag { margin: 0; }
+table.practice-index tbody tr:hover td, table.practice-index tbody tr:hover th { background: var(--ui-soft) !important; }
 .home-levels h2, .home-howto h2 {
   font-size: 1.35rem; margin: 2rem 0 1rem; color: var(--text-strong);
 }
@@ -5642,19 +5678,21 @@ body.sidebar-collapsed #content.home {
   text-decoration: none; color: inherit;
   transition: all .2s;
 }
-.level-card:hover { border-color: var(--accent); }
+.level-card:hover { border-color: var(--ui); }
 .level-head { display: flex; align-items: center; gap: .7rem; margin-bottom: .9rem; }
 .level-head .level-tag { margin-bottom: 0; }
 .level-range { font-size: .82rem; color: var(--text-muted); }
-.level-tag {
-  display: inline-block;
-  padding: .2rem .65rem;
-  /* Slightly darker than --accent so #fff text passes AA 4.5:1 contrast. */
-  background: #d6354c; color: #fff;
-  font-size: .82rem; font-weight: 700;
-  border-radius: var(--radius-sm); letter-spacing: .05em;
-  margin-bottom: .9rem;
+/* The seal: a level, stamped in vermilion. The one loud mark on a page. */
+.level-tag, .seal-mark {
+  display: inline-block; border: 1.5px solid var(--accent); color: var(--accent); background: none;
+  border-radius: 3px; font-weight: 700; line-height: 1;
 }
+.level-tag { padding: .22rem .42rem .2rem; font-size: .8rem; letter-spacing: .04em; margin-bottom: .9rem; }
+.seal-mark {
+  writing-mode: vertical-rl; margin-right: .55rem; padding: .22rem .16rem; font-size: .62rem; letter-spacing: .08em; vertical-align: -.5em;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, "Noto Serif JP", serif;
+}
+.ico { width: 1em; height: 1em; vertical-align: -.13em; margin-right: .35em; color: var(--text-muted); flex: none; }
 .level-card h3 {
   font-size: 1.25rem; margin: .2rem 0 .6rem;
   color: var(--text-strong);
@@ -5668,7 +5706,7 @@ body.sidebar-collapsed #content.home {
   margin: .6rem 0;
 }
 .home-howto a {
-  color: var(--accent); text-decoration: underline;
+  color: var(--ui); text-decoration: underline;
   text-underline-offset: 2px;
 }
 .home-howto a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
@@ -5699,12 +5737,13 @@ body.sidebar-collapsed #content.home {
     --code-bg: #1f1f2e;
     --ruby-color: #a8a8b8;
     --accent: #e94560;
-    --link: #ff7088;
+    --ui: #a9c7ee; --ui-on: #10131c; --ui-soft: rgba(169,199,238,.14);
+    --link: #a9c7ee;
     --selection-bg: #3b6fd6;
     --selection-fg: #fff;
   }
   /* Accent-colored strong text fails 4.5:1 on dark card surfaces; brighten. */
-  :root:not(.theme-light) .seo-lead strong, :root:not(.theme-light) .home-intro strong { color: #ff7088; }
+  :root:not(.theme-light) .seo-lead strong, :root:not(.theme-light) .home-intro strong { color: var(--text-strong); }
   /* .breadcrumb is defined on each page; override gray contrast for dark. */
   :root:not(.theme-light) .breadcrumb { color: #999 !important; }
   /* .related-label gray on the (red-tinted) related-grammar box was 4.46
@@ -5720,12 +5759,12 @@ body.sidebar-collapsed #content.home {
   :root:not(.theme-light) details { background: #1f1f2e; }
   :root:not(.theme-light) ul:has(input[type="checkbox"]) li:hover { background: #1f1f2e; }
   :root:not(.theme-light) ul:has(input[type="checkbox"]) li.checked { color: #6a6a78; }
-  :root:not(.theme-light) .seo-lead { background: #1f1f2e; color: #c8c8d4; }
+  :root:not(.theme-light) .seo-lead { color: #b4b4c2; }
   :root:not(.theme-light) .lesson-meta { color: #a8a8b8; }
   :root:not(.theme-light) .lesson-meta time { color: #b8b8c4; }
   :root:not(.theme-light) .related-grammar { background: #1b1b28; border-color: var(--border); }
   :root:not(.theme-light) .cross-link { background: #25253a; color: #e4e4ec; }
-  :root:not(.theme-light) .cross-link:hover { background: var(--accent); color: #fff; }
+  :root:not(.theme-light) .cross-link:hover { background: var(--ui); color: var(--ui-on); }
   :root:not(.theme-light) .checklist-progress { background: #1f1f2e; color: #b8b8c4; }
   :root:not(.theme-light) .checklist-progress .progress-bar { background: #2d2d44; }
   /* Home page */
@@ -5762,12 +5801,13 @@ html.theme-dark {
     --code-bg: #1f1f2e;
     --ruby-color: #a8a8b8;
     --accent: #e94560;
-    --link: #ff7088;
+    --ui: #a9c7ee; --ui-on: #10131c; --ui-soft: rgba(169,199,238,.14);
+    --link: #a9c7ee;
     --selection-bg: #3b6fd6;
     --selection-fg: #fff;
   }
 /* Accent-colored strong text fails 4.5:1 on dark card surfaces; brighten. */
-html.theme-dark .seo-lead strong, html.theme-dark .home-intro strong { color: #ff7088; }
+html.theme-dark .seo-lead strong, html.theme-dark .home-intro strong { color: var(--text-strong); }
 /* .breadcrumb is defined on each page; override gray contrast for dark. */
 html.theme-dark .breadcrumb { color: #999 !important; }
 /* .related-label gray on the (red-tinted) related-grammar box was 4.46
@@ -5783,12 +5823,12 @@ html.theme-dark blockquote { background: rgba(233, 69, 96, 0.08); }
 html.theme-dark details { background: #1f1f2e; }
 html.theme-dark ul:has(input[type="checkbox"]) li:hover { background: #1f1f2e; }
 html.theme-dark ul:has(input[type="checkbox"]) li.checked { color: #6a6a78; }
-html.theme-dark .seo-lead { background: #1f1f2e; color: #c8c8d4; }
+html.theme-dark .seo-lead { color: #b4b4c2; }
 html.theme-dark .lesson-meta { color: #a8a8b8; }
 html.theme-dark .lesson-meta time { color: #b8b8c4; }
 html.theme-dark .related-grammar { background: #1b1b28; border-color: var(--border); }
 html.theme-dark .cross-link { background: #25253a; color: #e4e4ec; }
-html.theme-dark .cross-link:hover { background: var(--accent); color: #fff; }
+html.theme-dark .cross-link:hover { background: var(--ui); color: var(--ui-on); }
 html.theme-dark .checklist-progress { background: #1f1f2e; color: #b8b8c4; }
 html.theme-dark .checklist-progress .progress-bar { background: #2d2d44; }
 /* Home page */
@@ -5810,9 +5850,9 @@ html.theme-dark pre code { color: #d4d4dc; }
 #search-input { border: none; outline: none; background: transparent; color: inherit; font-size: 1.05rem; padding: 1rem 1.2rem; border-bottom: 1px solid var(--border); }
 #search-results { list-style: none; margin: 0; padding: .4rem; overflow-y: auto; }
 #search-results a { display: flex; align-items: baseline; gap: .6rem; padding: .55rem .7rem; border-radius: var(--radius-lg); text-decoration: none; color: inherit; }
-#search-results a.sel, #search-results a:hover { background: var(--accent); color: #fff; }
+#search-results a.sel, #search-results a:hover { background: var(--ui); color: var(--ui-on); }
 #search-results a.sel .sr-lvl, #search-results a:hover .sr-lvl { background: rgba(255,255,255,.25); }
-.sr-lvl { flex-shrink: 0; font-size: .7rem; font-weight: 700; background: var(--accent); color: #fff; padding: .1rem .4rem; border-radius: var(--radius-sm); }
+.sr-lvl { flex-shrink: 0; font-size: .7rem; font-weight: 700; background: var(--ui); color: var(--ui-on); padding: .1rem .4rem; border-radius: var(--radius-sm); }
 .sr-title { font-weight: 600; }
 .sr-pts { font-size: .8rem; opacity: .6; margin-left: auto; text-align: right; }
 .search-empty { padding: 1rem 1.2rem; opacity: .6; }
@@ -5833,7 +5873,7 @@ html.theme-dark #search-box { background: #1f1f2e; }
   border: 1px solid var(--border); box-shadow: var(--shadow-sm);
   cursor: pointer; line-height: 1.2;
 }
-.tc-pill:hover { border-color: var(--accent); }
+.tc-pill:hover { border-color: var(--ui); }
 .tc-pill input { margin: 0 .3rem 0 0; vertical-align: -1px; }
 .tc-icon { padding: .38rem .55rem; display: inline-flex; align-items: center; }
 .tc-icon svg, #settings-box .js-theme-btn svg { width: 17px; height: 17px; display: block; }
@@ -5846,8 +5886,8 @@ html.theme-dark #search-box { background: #1f1f2e; }
   padding: .3rem .65rem .3rem .4rem; font: inherit; font-size: .82rem; color: inherit;
   background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius-pill); cursor: pointer;
 }
-.theme-choice:hover { border-color: var(--accent); }
-.theme-choice[aria-checked="true"] { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.theme-choice:hover { border-color: var(--ui); }
+.theme-choice[aria-checked="true"] { border-color: var(--ui); box-shadow: 0 0 0 1px var(--ui); }
 .theme-swatch { width: 1.05rem; height: 1.05rem; border-radius: 50%; border: 1px solid rgba(0,0,0,.25); flex: none; }
 .sw-auto { background: linear-gradient(135deg, #f6f4ef 50%, #14141e 50%); }
 .sw-white { background: #ffffff; }
@@ -5861,19 +5901,19 @@ html.theme-dark #search-box { background: #1f1f2e; }
 }
 #theme-menu .theme-choices { flex-direction: column; margin: 0; }
 #theme-menu .theme-choice { border-color: transparent; border-radius: var(--radius); }
-#theme-menu .theme-choice[aria-checked="true"] { border-color: var(--accent); box-shadow: none; }
+#theme-menu .theme-choice[aria-checked="true"] { border-color: var(--ui); box-shadow: none; }
 .tc-lang { font-weight: 700; }
 /* Share menu (settings-modal.js jpShare): copy link + a few networks; on
    touch devices the system share sheet is used instead. */
 #share-menu { position: fixed; z-index: 1100; min-width: 11rem; background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); padding: .35rem; display: flex; flex-direction: column; }
 #share-menu button, #share-menu a { display: block; text-align: left; padding: .45rem .7rem; border-radius: var(--radius); font: inherit; font-size: .88rem; color: inherit; background: none; border: 0; cursor: pointer; text-decoration: none; }
 #share-menu button:hover, #share-menu a:hover { background: rgba(127,127,127,.16); }
-#share-menu .sm-ok { color: var(--accent); }
+#share-menu .sm-ok { color: var(--ui); }
 #share-menu .sm-hint { font-size: .8rem; color: var(--text-muted); padding: .45rem .7rem; max-width: 15rem; line-height: 1.5; }
 #share-menu .sm-qr { width: 13rem; margin: .5rem auto .2rem; padding: .4rem; background: #fff; border-radius: var(--radius); }
 #share-menu .sm-qr svg { display: block; width: 100%; height: auto; }
 #share-menu .sm-manual { font: inherit; font-size: .8rem; margin: .3rem; padding: .3rem; width: 15rem; }
-body.ai-open #tc-ai { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
+body.ai-open #tc-ai { border-color: var(--ui); box-shadow: 0 0 0 2px var(--ui-soft); }
 @media (min-width: 769px) { .nav-tool-extra { display: none; } }
 @media (max-width: 768px) { #top-controls { display: none; } }
 
@@ -5901,15 +5941,15 @@ body.ai-open #tc-ai { border-color: var(--accent); box-shadow: 0 0 0 2px var(--a
 .settings-switch input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
 .settings-switch span { position: absolute; inset: 0; border-radius: 999px; background: var(--border); transition: background .15s; }
 .settings-switch span::after { content: ""; position: absolute; top: 2px; left: 2px; width: calc(1.5rem - 4px); height: calc(1.5rem - 4px); border-radius: 50%; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.3); transition: transform .15s; }
-.settings-switch input:checked + span { background: var(--accent); }
+.settings-switch input:checked + span { background: var(--ui); }
 .settings-switch input:checked + span::after { transform: translateX(1.1rem); }
-.settings-switch input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
+.settings-switch input:focus-visible + span { outline: 2px solid var(--ui); outline-offset: 2px; }
 .settings-seg { flex: none; display: inline-flex; padding: 2px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card-bg); }
 .settings-seg button { border: 0; background: none; color: var(--text-muted); padding: .3rem .8rem; border-radius: calc(var(--radius) - 2px); font: inherit; font-size: .85rem; cursor: pointer; }
 .settings-seg button[aria-pressed="true"] { background: var(--word-bg); color: var(--text-strong); font-weight: 600; box-shadow: 0 0 0 1px var(--border); }
 .settings-more { display: flex; justify-content: center; margin-top: .9rem; }
 .settings-more button { display: inline-flex; align-items: center; gap: .45rem; border: 1px solid var(--border); border-radius: 999px; background: none; color: inherit; padding: .4rem 1rem; font: inherit; font-size: .88rem; cursor: pointer; }
-.settings-more button:hover { border-color: var(--accent); }
+.settings-more button:hover { border-color: var(--ui); }
 .settings-more svg { width: 15px; height: 15px; }
 @media (max-width: 600px) { #settings-overlay { padding: 5vh .6rem 1rem; } }
 /* Account and progress cards at the top of the settings dialog (filled by site/sync.js) */
@@ -5923,7 +5963,7 @@ body.ai-open #tc-ai { border-color: var(--accent); box-shadow: 0 0 0 2px var(--a
 .acct-err { color: var(--accent); }
 .acct-ok { color: #3fb950; font-weight: 700; }
 .acct a { color: var(--text-muted); text-decoration: underline; text-underline-offset: 2px; }
-.acct a:hover, .acct-link:hover { color: var(--accent); }
+.acct a:hover, .acct-link:hover { color: var(--ui); }
 .acct-link { background: none; border: 0; padding: 0; color: var(--text-muted); text-decoration: underline; text-underline-offset: 2px; cursor: pointer; font: inherit; }
 /* Sign in: Google's button, a rule with "or", then one field with its button inside */
 .acct-g { margin-top: .9rem; min-height: 40px; color-scheme: light; }
@@ -5931,12 +5971,12 @@ body.ai-open #tc-ai { border-color: var(--accent); box-shadow: 0 0 0 2px var(--a
 .acct-or { display: flex; align-items: center; gap: .7rem; margin: .8rem 0; color: var(--text-muted); font-size: .8rem; }
 .acct-or::before, .acct-or::after { content: ""; flex: 1; height: 1px; background: var(--border); }
 .acct-field { display: flex; margin-top: .5rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card-bg); overflow: hidden; }
-.acct-field:focus-within { border-color: var(--accent); }
+.acct-field:focus-within { border-color: var(--ui); }
 .acct-field input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; color: inherit; padding: .6rem .8rem; font: inherit; font-size: .92rem; }
 .acct-field input.acct-code { letter-spacing: .25em; font-variant-numeric: tabular-nums; }
 .acct-field button { flex: none; border: 0; border-left: 1px solid var(--border); background: none; color: var(--text-strong); padding: 0 1rem; font: inherit; font-size: .88rem; font-weight: 600; cursor: pointer; white-space: nowrap; }
-.acct-field button:hover { color: var(--accent); }
-.acct-field button.acct-primary { background: var(--accent); color: #fff; border-left-color: var(--accent); }
+.acct-field button:hover { color: var(--ui); }
+.acct-field button.acct-primary { background: var(--ui); color: var(--ui-on); border-left-color: var(--ui); }
 .acct-field button[disabled] { opacity: .55; cursor: default; }
 /* Signed in */
 .acct-id { display: flex; align-items: center; gap: .8rem; }
@@ -5945,7 +5985,7 @@ body.ai-open #tc-ai { border-color: var(--accent); box-shadow: 0 0 0 2px var(--a
 .acct-avatar { flex: none; width: 2.4rem; height: 2.4rem; border-radius: 50%; display: grid; place-items: center; background: var(--card-bg); border: 1px solid var(--border); font-weight: 700; color: var(--text-strong); }
 .acct-actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .8rem; }
 .acct-btn, .settings-control button { background: var(--card-bg); border: 1px solid var(--border); color: inherit; border-radius: var(--radius); padding: .42rem .85rem; cursor: pointer; font: inherit; font-size: .88rem; }
-.acct-btn:hover, .settings-control button:hover { border-color: var(--accent); }
+.acct-btn:hover, .settings-control button:hover { border-color: var(--ui); }
 .acct-btn[disabled] { opacity: .5; cursor: default; }
 .acct-sm { padding: .25rem .65rem; font-size: .82rem; }
 .acct-danger:hover { color: var(--accent); }
@@ -5965,7 +6005,7 @@ body.ai-open #tc-ai { border-color: var(--accent); box-shadow: 0 0 0 2px var(--a
 .acct-manage summary::-webkit-details-marker { display: none; }
 .acct-manage summary::after { content: " ›"; }
 .acct-manage[open] summary::after { content: " ⌄"; }
-.acct-manage summary:hover { color: var(--accent); }
+.acct-manage summary:hover { color: var(--ui); }
 .acct-versions { margin-top: .7rem; }
 .acct-versions ul { list-style: none; margin: .4rem 0 0; padding: 0; }
 .acct-versions li { display: flex; align-items: center; justify-content: space-between; gap: .8rem; padding: .35rem 0; border-top: 1px solid var(--border); font-size: .86rem; }

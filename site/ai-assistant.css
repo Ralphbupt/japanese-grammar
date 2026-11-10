@@ -2,9 +2,9 @@
 :root { --ai-w: 440px; }
 @media (min-width: 1800px) { :root { --ai-w: 500px; } }
 body.ai-open #ai-btn {
-  color: var(--accent);
-  background: rgba(233,69,96,.15);
-  filter: drop-shadow(0 0 3px var(--accent));
+  color: var(--ui);
+  background: var(--ui-soft);
+  filter: drop-shadow(0 0 3px var(--ui));
 }
 
 #ai-panel {
@@ -29,7 +29,7 @@ body.ai-open #ai-panel { transform: none; visibility: visible; transition: trans
 .ai-title .ai-model { font: inherit; font-weight: 400; color: var(--text-muted); font-size: .72rem; margin-left: .3rem; background: none; border: 1px solid transparent; border-radius: var(--radius-sm); padding: .1rem .35rem; cursor: pointer; flex: 0 1 auto; min-width: 3rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .ai-title .ai-model:hover { border-color: var(--border); color: inherit; }
 /* Phones: the panel fills the screen, so a "‹ 课文" back link replaces the title */
-.ai-back { display: none; font: inherit; font-weight: 600; color: var(--accent); background: none; border: none; padding: .2rem .3rem .2rem 0; cursor: pointer; }
+.ai-back { display: none; font: inherit; font-weight: 600; color: var(--ui); background: none; border: none; padding: .2rem .3rem .2rem 0; cursor: pointer; }
 @media (max-width: 760px) {
   .ai-back { display: inline-block; }
   .ai-name { display: none; }
@@ -40,15 +40,15 @@ body.ai-open #ai-panel { transform: none; visibility: visible; transition: trans
 .ai-menu-head { font-size: .72rem; color: var(--text-muted); padding: .3rem .6rem; }
 .ai-effort-row { display: flex; gap: .3rem; padding: .1rem .4rem .3rem; }
 .ai-effort { flex: 1; text-align: center; font: inherit; font-size: .8rem; font-weight: 400; padding: .35rem .4rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); color: inherit; cursor: pointer; }
-.ai-effort:hover { border-color: var(--accent); }
-.ai-effort.sel { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.ai-effort:hover { border-color: var(--ui); }
+.ai-effort.sel { background: var(--ui); border-color: var(--ui); color: var(--ui-on); font-weight: 600; }
 html.theme-dark .ai-model-menu { background: #1f1f2e; }
 .ai-head-btns { display: flex; gap: .1rem; flex-shrink: 0; }
 .ai-head-btns button {
   background: none; border: none; color: var(--text-muted); cursor: pointer;
   font-size: 1rem; width: 2rem; height: 2rem; border-radius: var(--radius); line-height: 1;
 }
-.ai-head-btns button:hover { background: var(--accent-soft); color: var(--accent); }
+.ai-head-btns button:hover { background: var(--ui-soft); color: var(--ui); }
 
 .ai-msgs { flex: 1; overflow-y: auto; padding: 1rem 1.1rem; display: flex; flex-direction: column; gap: .8rem; overscroll-behavior: contain; }
 .ai-note { color: var(--text-muted); font-size: .82rem; }
@@ -57,7 +57,7 @@ html.theme-dark .ai-model-menu { background: #1f1f2e; }
   text-align: left; background: var(--bg); color: inherit; border: 1px solid var(--border);
   border-radius: var(--radius-lg); padding: .5rem .7rem; cursor: pointer; font: inherit; font-size: .85rem;
 }
-.ai-quick:hover { border-color: var(--accent); color: var(--accent); }
+.ai-quick:hover { border-color: var(--ui); color: var(--ui); }
 
 .ai-msg { max-width: 100%; border-radius: var(--radius-xl); padding: .6rem .9rem; overflow-wrap: anywhere; line-height: 1.9; }  /* room for ruby, so lines don't grow when a reading appears */
 .ai-msg p { margin: 0 0 .4em; }
@@ -68,10 +68,10 @@ html.theme-dark .ai-model-menu { background: #1f1f2e; }
 .ai-msg code { background: var(--code-bg); padding: .05em .3em; border-radius: var(--radius-sm); font-size: .88em; }
 .ai-msg pre { background: var(--code-bg); padding: .6rem .8rem; border-radius: var(--radius); overflow-x: auto; margin: .4em 0; }
 .ai-msg pre code { background: none; padding: 0; }
-.ai-user { align-self: flex-end; background: var(--accent); color: #fff; max-width: 88%; }
+.ai-user { align-self: flex-end; background: var(--ui); color: var(--ui-on); max-width: 88%; }
 .ai-assistant { align-self: stretch; background: var(--bg); border: 1px solid var(--border); }
 .ai-streaming:empty::after, .ai-streaming > :last-child::after {
-  content: '▍'; color: var(--accent); animation: ai-blink 1s steps(2) infinite;
+  content: '▍'; color: var(--ui); animation: ai-blink 1s steps(2) infinite;
 }
 @keyframes ai-blink { 50% { opacity: 0; } }
 .ai-error { background: var(--accent-soft); color: var(--accent); font-size: .82rem; }
@@ -86,12 +86,12 @@ html.theme-dark .ai-model-menu { background: #1f1f2e; }
   padding: .65rem .85rem; border: 1px solid var(--border); border-radius: var(--radius-lg);
   background: var(--bg); color: inherit; min-height: 5rem; max-height: 40vh;
 }
-.ai-input textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.ai-input textarea:focus { outline: none; border-color: var(--ui); box-shadow: 0 0 0 3px var(--ui-soft); }
 .ai-input-row { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
 .ai-input-hint { font-size: .72rem; color: var(--text-muted); }
 .ai-input button {
   height: 2.3rem; padding: 0 1.1rem; flex-shrink: 0; border: none; border-radius: var(--radius-pill);
-  background: var(--accent); color: #fff; font: inherit; font-size: .88rem; font-weight: 600; cursor: pointer; line-height: 1;
+  background: var(--ui); color: var(--ui-on); font: inherit; font-size: .88rem; font-weight: 600; cursor: pointer; line-height: 1;
 }
 .ai-input button:hover { filter: brightness(1.08); }
 .ai-input button.ai-stop { background: var(--text-muted); }
@@ -105,7 +105,7 @@ html.theme-dark .ai-model-menu { background: #1f1f2e; }
   -webkit-user-select: none; user-select: none;
 }
 li:hover .ai-ex-btn { color: var(--text); }
-html .ai-ex-btn.ai-ex-btn:hover { border-color: var(--accent); color: var(--accent); }
+html .ai-ex-btn.ai-ex-btn:hover { border-color: var(--ui); color: var(--ui); }
 html.theme-dark .ai-ex-btn { border-color: #3a3a55; }
 @media (prefers-color-scheme: dark) { :root:not(.theme-light) .ai-ex-btn { border-color: #3a3a55; } }
 
@@ -117,7 +117,7 @@ html.theme-dark .ai-ex-btn { border-color: #3a3a55; }
   white-space: nowrap;
 }
 #ai-sel-chip[hidden] { display: none; }
-#ai-sel-chip:hover { background: var(--accent); }
+#ai-sel-chip:hover { background: var(--ui); }
 
 /* While the panel is open the lesson column is centred in the space that is
    left between the sidebar and the panel (it is normally centred in the whole
@@ -138,10 +138,10 @@ html.theme-dark .ai-ex-btn { border-color: #3a3a55; }
 /* Drag the panel's left edge to resize; double-click resets. */
 .ai-resize { position: absolute; top: 0; left: -4px; width: 9px; height: 100%; cursor: col-resize; z-index: 2; }
 .ai-resize::after { content: ''; position: absolute; top: 0; bottom: 0; left: 4px; width: 1px; background: transparent; transition: background .15s; }
-.ai-resize:hover::after, body.ai-resizing .ai-resize::after { background: var(--accent); }
+.ai-resize:hover::after, body.ai-resizing .ai-resize::after { background: var(--ui); }
 /* A visible grip in the middle of the edge, so the drag is discoverable. */
 .ai-resize::before { content: ''; position: absolute; top: 50%; left: 2px; width: 5px; height: 44px; margin-top: -22px; border-radius: 3px; background: var(--border); transition: background .15s; }
-.ai-resize:hover::before, body.ai-resizing .ai-resize::before { background: var(--accent); }
+.ai-resize:hover::before, body.ai-resizing .ai-resize::before { background: var(--ui); }
 body.ai-resizing { cursor: col-resize; user-select: none; }
 body.ai-resizing #ai-panel, body.ai-resizing #content { transition: none !important; }
 @media (max-width: 1099px) { .ai-resize { display: none; } }
@@ -157,9 +157,9 @@ html.theme-dark .ai-assistant, html.theme-dark .ai-quick, html.theme-dark .ai-in
   overflow: hidden; text-overflow: ellipsis;
 }
 .ai-scope:hover, .ai-scope:focus { border-color: var(--border); outline: none; }
-.ai-scope.ai-scope-narrow { color: var(--accent); font-weight: 600; }
+.ai-scope.ai-scope-narrow { color: var(--ui); font-weight: 600; }
 .ai-clear { flex-shrink: 0; font: inherit; font-size: .72rem; color: var(--text-muted); background: none; border: 1px solid transparent; border-radius: var(--radius-sm); padding: .15rem .4rem; cursor: pointer; white-space: nowrap; }
-.ai-clear:hover { border-color: var(--border); color: var(--accent); }
+.ai-clear:hover { border-color: var(--border); color: var(--ui); }
 .ai-clear[hidden] { display: none; }
 .ai-actions { display: flex; gap: .2rem; margin-top: .4rem; opacity: 0; transition: opacity .15s; }
 .ai-msg:hover .ai-actions, .ai-msg:focus-within .ai-actions, .ai-error .ai-actions { opacity: 1; }
@@ -167,7 +167,7 @@ html.theme-dark .ai-assistant, html.theme-dark .ai-quick, html.theme-dark .ai-in
   font: inherit; font-size: .72rem; color: var(--text-muted); background: none; border: 1px solid transparent;
   border-radius: var(--radius-sm); padding: .15rem .45rem; cursor: pointer;
 }
-.ai-actions button:hover { border-color: var(--border); color: var(--accent); }
+.ai-actions button:hover { border-color: var(--border); color: var(--ui); }
 .ai-error .ai-actions button { color: var(--accent); }
 .ai-msg table { border-collapse: collapse; font-size: .88em; margin: .4em 0; max-width: 100%; }
 .ai-msg th, .ai-msg td { border: 1px solid var(--border); padding: .25em .5em; text-align: left; vertical-align: top; }
