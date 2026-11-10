@@ -430,7 +430,7 @@ const GTAG_DEFERRED = `<script>
   var TID = 'G-D1KNQTFN1R', URL_ = 'https://www.google-analytics.com/g/collect';
   // gtag flags key events itself with _c=1; this sender has to do the same, or
   // GA records them as ordinary events. Keep in step with the GA admin list.
-  var KEY_EVENTS = ['quiz_finish', 'quiz_ai', 'share'];
+  var KEY_EVENTS = ['quiz_finish', 'quiz_ai', 'share', 'account_login'];
   var debug = /[?&]ga_debug\\b/.test(location.search);
   function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } }
   // Own visits stay out of the numbers: only the live host counts (localhost

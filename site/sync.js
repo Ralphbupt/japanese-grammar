@@ -171,6 +171,8 @@
         var a = acct();
         if (!a.backup) { ls.set('jp_quiz_v1_backup', JSON.stringify({ at: Date.now(), data: mine })); a.backup = 1; setAcct(a); }
         st.set(merged);
+        // Progress from another device arrived here: the thing accounts are for.
+        track('account_merge', { answers: Object.keys(merged.answers || {}).length - Object.keys(mine.answers || {}).length });
       }
       var cur = st.get();
       if (remote.data && same(cur, remote.data)) return;
@@ -230,7 +232,7 @@
   }
   function signedIn(r) {
     setAcct({ token: r.data.token, email: r.data.email });
-    track('account_login', { method: 'google' });
+    track('account_login', { method: 'google', local_answers: Object.keys(state().get().answers || {}).length });
     status = { kind: 'idle' };
     pull();
   }
@@ -238,16 +240,18 @@
     var el = e.target.closest('[data-acct]'), act = el && el.getAttribute('data-acct');
     if (act === 'sync') pull();
     else if (act === 'out') {
+      track('account_logout', {});
       api('POST', '/auth/logout').catch(function () {}).then(function () { setAcct(null); remote = null; status = { kind: 'idle' }; render(); });
     } else if (act === 'delete') {
       if (!root.confirm(t('删除账号和云端保存的进度？这个浏览器里的进度会保留。此操作无法撤销。', 'Delete your account and the progress stored online? The progress in this browser stays. This can’t be undone.'))) return;
-      api('DELETE', '/account').then(function () { setAcct(null); remote = null; status = { kind: 'idle' }; render(); }).catch(function (e2) { setStatus('error', e2.message); });
+      api('DELETE', '/account').then(function () { track('account_delete', {}); setAcct(null); remote = null; status = { kind: 'idle' }; render(); }).catch(function (e2) { setStatus('error', e2.message); });
     }
   }
   root.jpAccount = {
     mount: function (el) {
       if (!el) return;
       if (box !== el) { box = el; el.addEventListener('click', onClick); }
+      track('account_view', { signed_in: !!acct().token });
       render();
     }
   };
@@ -274,10 +278,11 @@
       if (!target || acct().token) return;
       root.google.accounts.id.initialize({
         client_id: CLIENT_ID,
-        callback: function (res) { api('POST', '/auth/google', { credential: res.credential }).then(signedIn).catch(function (e) { setStatus('error', e.message); }); }
+        callback: function (res) { api('POST', '/auth/google', { credential: res.credential }).then(signedIn).catch(function (e) { track('account_login_error', { status: e.status || 0 }); setStatus('error', e.message); }); }
       });
       root.google.accounts.id.renderButton(target, { theme: 'outline', size: 'large', text: 'signin_with', shape: 'pill', locale: EN() ? 'en' : 'zh_CN' });
     }).catch(function () {
+      track('account_gsi_fail', {});     // Google unreachable (mainland China, blockers)
       var target = box && box.querySelector('.acct-g');
       if (target) target.innerHTML = '<p class="acct-muted">' + t('Google 登录没能加载（网络访问不了 Google 时无法使用）。', 'Google sign-in didn’t load (it needs access to Google).') + '</p>';
     });
